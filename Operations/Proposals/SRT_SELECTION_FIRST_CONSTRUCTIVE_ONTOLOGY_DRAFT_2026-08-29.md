@@ -2,7 +2,7 @@
 id: SRT-OPS-PROPOSAL-SELECTION-FIRST-CONSTRUCTIVE-ONTOLOGY-DRAFT-20260829
 type: proposal
 status: draft
-record_stage: phase_I_constructive_draft_v0_1_author_review_pending
+record_stage: phase_I_constructive_draft_v0_2_author_review_pending
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
@@ -19,441 +19,734 @@ dependency:
   - Core_Law/SRT_Collective_Selection.md
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Core/SRT_OPEN_TENSIONS.md
-tags: [ConstructiveOntology, PhaseI, SelectionFirst, One, Emergence, Exclusion, History, Object, Bearer, SubjectPosition, Phenomenality, Value, Collective, Candidate]
+tags: [ConstructiveOntology, PhaseI, SelectionFirst, One, Emergence, Exclusion, History, Object, Matter, Bearer, SubjectPosition, Phenomenality, Value, Agency, Collective, Candidate]
 ---
 
-# SRT 统一建构本体论草稿 v0.1 — 从潜在到「for me」
+# SRT 统一建构本体论草稿 v0.2 — 从确定化到多种「一」
 
-> **地位**：Phase I 建构哲学草稿，`constructive candidate` 全篇适用。本文件中**没有任何一句是已证定理、canonical 定义或 P 级承诺**；每一层都允许被 Phase II 分类、Phase III 减法与作者裁决否定或重写。它不修改任何 owner，不注册任何符号，不创建 scalar / threshold / equation（C-G4）。
+> **地位**：Phase I 建构哲学草稿。全篇默认 `constructive candidate`；没有任何新 P0/P1/P2 承诺、canonical 定义、定理、scalar、threshold 或 equation。
 >
-> **写法**：按 Master Plan §3 的 C1–C11 一次连续写完，「先把整栋楼画出来，不边画边拆」。与既有 owner 的关系只作 context 参照，不作权威搬运。候选与开放处显式标注 `candidate` / `open`。
+> **v0.2 的任务**：不是做 novelty / rival / derivability 审计，而是对 v0.1 做纯哲学内部红队：去掉几处过早定死的生成关系，保留更大的统一 ontology 搜索空间。尤其：
 >
-> **给作者**：本稿是发散材料。Step 3 你只需审三件事：这是不是你真正想说的世界图景；生成顺序是否自然；有没有遗漏层级或错误合并。不审 novelty。
+> 1. 不把 `One` 简化成“选择的形状”，也不预装完整 many/relation/identity；
+> 2. 不把 matter 等同于公共可读或“位置无关”的极限对象；
+> 3. 不把 bearer 等同于因果自足、主要作者或绝对不可转移；
+> 4. 不预设 phenomenality 只能在 subject-position 之后以单一路径晚出。
+>
+> **作者审图标准**：只审世界图景、生成顺序、遗漏层级、错误合并；不审新颖性。
 
 ---
 
-## 序：一句话的整体图景
+## 0. 总命题：SRT 要构造的不是一条对象链，而是一套统一生成语法
 
-> **世界不是由现成的东西构成、再发生选择；世界是由选择的发生构成的，而「东西」——一、对象、物、承担者、主体、乃至「我」——是选择的历史在不同深度上凝结出来的统一形态。**
-
-以下十一层是这句话的展开。
-
----
-
-## C1 — 未定如何成为确定：potentiality → actuality
-
-### 核心问题
-
-在没有预成对象菜单的前提下，一次 Selection 发生，究竟意味着什么获得了确定现实性？
-
-### 建构候选
-
-先排除两个错误图景（继承 C-G2，非本稿新增）：
-
-- **仓库图景**（错）：潜在是一间摆满已完成候选对象的仓库，选择是取出其中一件。这把个体化的全部成果偷运进了个体化之前。
-- **虚无图景**（错）：确定从绝对的无中无条件地涌出。这使「真实约束下」变得不可理解，也使世界的连续性成为奇迹。
-
-正面候选：
-
-> **潜在是未被切分的可确定性；约束是真实的但不预含结果；Selection 是可确定性在约束下取得一个确定形态的那个发生本身。**
-
-三个候选精化：
-
-1. **确定性是事件性的，不是物性的**（candidate）。最底层的「确定」不是某物具有的属性，而是一次发生的成就。问「是什么东西变得确定了」在这一层是错序的——「东西」要到 C5 才凝结出来。这一层只有：**发生了一个确定的显明**。
-
-2. **约束在场但不挑选**（candidate）。真实约束排除了某些形态、压低了某些形态的可达性，但约束的总和不等于结果的规定。若约束完全规定结果，Selection 退化为演绎；若约束毫无作用，Selection 退化为虚无图景。Selection 恰好住在这两个退化之间——这个「之间」本身是本体论承诺，不是修辞。
-
-3. **「无中生有」= 非预成**（definition guard，继承 §0 术语护栏）。生出来的「一」在选择之前不作为完成品存在；但生它的发生不是无条件的。无，指的是无预成菜单；不是无约束、无潜在、无世界。
-
-### 开放子问题（open）
-
-- 潜在的「未被切分」应当理解为认识论上的不可切分，还是本体论上的未切分？（这个区别本身可能要到 C2 之后才能提。）
-- 一次 Selection 的「一次」由什么个体化？——注意这不是循环：事件的个体化条件可能恰好由 C2 的共确定回答。
-
----
-
-## C2 — 「一」如何出现：actuality → One
-
-### 核心问题
-
-一个确定显现出现时，「什么算一个」是否也在同一事件中被确定？
-
-### 建构候选
-
-这是全稿的枢纽层。正面候选压缩为一句：
-
-> **「一」不是被选中的对象，而是选择的形状。**（candidate）
-
-展开：一次确定显明的发生，**同一事件内**共同确定了一个结构包（candidate 名称：**共确定包 / co-determination package**）：
+SRT 的统一图景不应是：
 
 ```text
-this / not-this 的切分          —— 这个显明与其余的界线
-one / many 的计数条件           —— 在此粒度上什么算一个、什么算多个
-边界                            —— 切分在哪里成立
-关系                            —— 此显明相对其他已凝结结构的位置
-操作粒度                        —— 切分生效的分辨率
-同一性条件                      —— 什么样的再取得算「还是它」（此时只是萌芽，C5 才成熟）
+世界先由 objects 构成
+-> objects 发生 interaction
+-> 某些 objects 进行 selection
 ```
 
-关键候选主张：
+而应尝试：
 
-1. **「一」是确定性的结构面，不是确定性的载体**（candidate）。不存在先有一个「一」然后它获得确定内容；也不存在先有确定内容然后数出「一个」。切分成立的那一刻，「一」与它的边界、粒度、与非它的关系是同一个成就的不同面。
+> **现实的确定接合通过 Selection 发生；不同层级的“一”不是同一种实体的重复命名，而是确定化、历史化与位置化在不同深度形成的不同统一负担。**
 
-2. **计数是派生的**（candidate）。「多」预设可数单位，可数单位预设切分，切分由显明事件交付。所以 one/many 不是世界的底层格栅，而是每次确定所携带的局部成果。不同事件可以交付不兼容的切分——这不是矛盾，而是粒度相对性的根源（连接 C11）。
-
-3. **一次显明不必然交付「一个整合对象」**（candidate，继承 Articulation Packet §1.2 的推进）。它交付的是「确定的接合」：可以是一条边界、一组关系、多个单位。「一」是接合的常见形态而非唯一形态。这一条防止把统一性偷运回原初层。
-
-### 与既有 owner 的关系（context）
-
-P0-01 的「确定的显明区分」是这一层的地板措辞。本层候选主张是它的**展开候选**：显明区分「已经」携带切分/边界/粒度的共确定。这个「已经」是否为 P0-01 所蕴含，是 Phase II Step 4 要分类的第一根箭头（OWNED 还是 ADDITIONAL-COMMITMENT），本稿不裁决。
-
-### 开放子问题（open）
-
-- 共确定包的清单是否完备？「时间性定位」（这个显明相对先后的位置）是否也属于包内？
-- 两次显明交付冲突切分时，「冲突」在哪个层面成立？（候选答案：在更高粒度的再选择处，连接 C11。）
-
----
-
-## C3 — 排除的本体地位：One → exclusion structure
-
-### 核心问题
-
-确定 A，是否不仅意味着 A 实现，也意味着 alternatives 被结构性排开？被排开者在后续世界中是否仍有效力？
-
-### 建构候选
-
-> **一次确定的完整成果 = 实现的结构 + 被排开的结构。被排开者不是无，而是世界从此携带的一种有结构的缺席。**（candidate）
-
-三个候选精化：
-
-1. **排开是确定的构成面，不是副作用**（candidate）。「确定为 A」若不同时排开非 A，就不成其为确定。所以被排开者与被实现者同龄、同源——它们是同一次发生的两半。
-
-2. **有结构的缺席**（candidate）。被排开者以至少三种候选方式继续在场：
-   - 作为**参照结构**：A 的确定性部分地由「它不是什么」构成；抹去被排开者，A 自身的轮廓变模糊。
-   - 作为**可达性约束**：某些后续路径因这次排开而变远、变贵或关闭；世界的下一步选择空间已被这次排开塑形。
-   - 作为**回转成本**：撤销或绕开这次确定需要支付的代价，其大小部分地由被排开了什么决定。
-
-3. **排开的效力形态是地形相关的**（candidate，源自 Q06 直觉，此处只作哲学候选，不作定理）。源直觉给出的三种模式——阴影（评价参照的残余）、张力（结构受力的残余）、后续摩擦（掉头成本的残余）——可以候选地读作上述三种在场方式在不同复杂度地形上的显形子集：无评价结构的地形没有阴影，但仍有张力与摩擦。按 Master Plan C3 的纪律，这里不把三模式写成定理，不把 T2 当第一优先经验任务；它们是这一层最有希望的**可失败候选**。
-
-### 开放子问题（open）
-
-- 被排开者的效力会衰减吗？衰减的机制属于 C4（历史条件化）还是本层自带？
-- 「排开一个从未被切分为候选的东西」这句话是否融贯？（候选答案：排开作用于可确定性的区域，不作用于预成候选——这样与 C1 的非预成一致。）
-
----
-
-## C4 — 一次事件如何变成历史：actuality → historical conditioning
-
-### 核心问题
-
-为什么过去发生过的 Selection 会改变后续 Selection 的条件，而不是世界每次从零开始？
-
-### 建构候选
-
-先立三分（继承既有 owner 边界，作为本层脚手架）：
+因此至少要区分：
 
 ```text
-发生的既成性    —— 它发生了，这一点不可被取消
-留存的差异      —— 它留下的差异是否延续
-条件化的效力    —— 延续的差异是否塑形后续选择
+事件之一       —— 这一次确定接合如何成为一个发生
+对象之一       —— 什么能够“还是这个”
+承担之一       —— 哪些后果/历史属于“从这里继续”
+主体之一       —— 哪些未来以“从这里选择”的方式被分层
+现象之一       —— 世界为何/如何“for me”
+高阶之一       —— 多个局部继续何时形成更高阶统一
 ```
 
-正面候选桥：
-
-> **一次确定显明本身就是世界条件的一个差异；后续 Selection 不发生在中性背景上，而发生在已被先前实现与先前排开共同塑形的世界里。历史 = 在后续选择条件中存活下来的差异。**（candidate）
-
-候选精化：
-
-1. **历史是差异的选择性存活**（candidate）。不是每次发生都留下持久痕迹（既成性 ≠ 留存）；留下的痕迹也不都塑形未来（留存 ≠ 效力）。所以「历史」不是事件的总和，而是差异经过后续世界的筛选后仍在起条件作用的那部分。历史自身就是被选择出来的。
-
-2. **条件化的双向性**（candidate）。存活的差异既开路也封路：它降低兼容路径的摩擦（习惯、复用、脚手架），也抬高不兼容路径的成本（锁定、遮蔽、牢笼）。这两面是同一机制，不是两个机制。
-
-3. **习惯 = 反复再选择下自我加强的条件化**（candidate）。当一条差异反复被兼容的后续选择再确认，它从「一次的痕迹」变成「背景的坡度」——后续选择无需再把它当作前景对象就已被它引导。这是 C10「秩序背景化」直觉的本层安放，也是 C6 物之路径的入口。
-
-### 与既有 owner 的关系（context）
-
-「不是每次原初显明都携带持久写回」是已落地边界（EX-A 族），本层完全继承——本层的候选桥恰好因此才需要：它解释的是**当**差异存活时条件化如何运作，而不是断言存活是普遍的。
-
-### 开放子问题（open）
-
-- 差异「存活」的最小条件是什么？这是 Phase V 优先形式化清单上的第一项，本层只立问题。
-- 既成性本身（不可被取消性）是否已经是一种最弱的条件化？（若是，历史的零点比通常想的更早。）
+这些统一可以相关、生成、嵌套，但不得因为都叫“一”而彼此偷换。
 
 ---
 
-## C5 — 对象如何出现：history → 「still this」
+# C1 — potentiality → determinate actuality
 
-### 核心问题
+## 核心问题
 
-什么使一个结构在变化中仍被再次取得为「还是这个」？
+如果没有预成对象菜单，一次 Selection 发生究竟意味着什么？
 
-### 建构候选
+## 建构候选
 
-> **对象 = 历史条件化下的可复现切分。「还是这个」不是给定，而是成就：世界（包括其他过程）能以低成本反复再实现同一个切分，这个切分就凝结为对象。**（candidate）
+> **Potentiality 不是一组等待被挑选的完成候选，而是尚未被穷尽对象化/切分的可确定性；真实约束限定可发生的确定化，却不等同于一个先在 chooser 或一张完成菜单；Selection 是确定接合实际发生的事件。**
 
-候选精化：
+这里刻意把 v0.1 的“未被切分”减弱为“未被穷尽切分”：潜在不必是绝对无结构的 homogeneous substrate。它可以已有真实约束、梯度、历史和不对称，只是不应被解释为“所有未来 objects 已经以完成形式躺在那里”。
 
-1. **对象是第一种统一负担（unity burden）**（candidate）。「一」在 C2 是事件性的——一次显明的形状；对象是「一」跨事件的再取得。从事件之一到对象之一，中间隔着历史（C4）：没有条件化的存活，就没有「还是」可言。
+### 三个正面候选
 
-2. **再取得的三个候选成分**：
-   - **复现性**：切分能被再次实现（世界的坡度引向它）；
-   - **再识别性**：再次实现的切分能被登记为「同一个」而非「又一个」（同一性条件从 C2 的萌芽成熟）；
-   - **稳定的差异化**：它与非它的界线在扰动下维持。
+1. **Actuality 首先是事件性成就**：底层不是“一个东西获得 actuality”，而是“一个确定接合发生”。对象是后续层级。
+2. **Constraint ≠ chooser ≠ outcome**：约束塑形发生空间，但“约束总和已经等于结果”与“约束毫无作用”都是需要单独论证的极端情形；Selection 的原初意义在于结果的现实确定性不能仅靠把 completed outcome 偷运进 antecedent 来解释。
+3. **“无中生有”只指 non-preformation**：无预成 object/menu，不等于无条件、无潜在、无历史、无世界。
 
-3. **本体个体性 ≠ 公共对象性**（candidate，源自 Q02 缝 B）。一个结构可以对世界有稳定的再实现（本体个体性），而尚未对任何位置公共可读（对象化）。完整意义的「对象」还要求：**跨位置**的再识别——不同的承担位置（C7 之后才有）能把它登记为同一个。所以对象性有厚薄两层，薄层先于任何主体，厚层是主体间成就。这一区分防止把「对象」偷偷写成「被观察者」。
+### Open
 
-### 开放子问题（open）
-
-- 「还是这个」的判据由谁支付：由结构自身的稳定性，还是由再取得它的过程的历史？（候选答案：由两者的匹配；这使对象性天然是关系性的而不落入观念论。）
-- 裂变/融合情形：一个切分分成两个都低成本可复现的切分时，「还是」如何分配？（连接 Phase II 问题变换表的人格同一/裂变行。）
+- potentiality 是一种正面的本体层，还是仅指“尚未耗尽的可确定性”？
+- Selection-event 的 event-unity 是否在 C1 就必须给出，还是要由 C2 的局部闭合共同给出？
 
 ---
 
-## C6 — Matter 的位置：stable objectification regime
+# C2 — actuality → local One / distinction / boundary / grain
 
-### 核心问题
+## 核心问题
 
-「物」是否可理解为统一 Selection-generated reality 中某类高稳定、可公共重识别、可跨主体 objectify 的 regime，而不是与 mind 并列的第二 substance？
+一次确定接合发生时，最少有什么与 actuality 一同成立？
 
-### 建构候选
+## v0.2 的关键修正
 
-> **物 = 对象化的极限档：再实现成本趋近于零、对位置几乎不敏感、在几乎所有粒度扰动下保持切分稳定的那类历史凝结。**（candidate）
+v0.1 说“`One` 是选择的形状”，并把 one/many/boundary/relation/grain/identity 放进同一个共确定包。这个说法太快：它可能把后续的 plurality、relation、reidentification 偷运进第一次确定化。
 
-候选精化：
+v0.2 改成：
 
-1. **物不是另一种存在，而是同一生成的最深沉积**（candidate）。在 C4–C5 的语言里：物是条件化坡度最深、复现最不挑位置、同一性判据最廉价的对象。「最硬的东西」= 「最老的习惯」这个表述作为候选保留，但按 Phase III 纪律预先旗标：这一口号与既有传统高度共振，Phase I 不因此止步，Phase III 必须做减法。
+> **最小的 One 候选，是一次确定化交付的局部统一：某个差异在某个 operative grain 上有了有效边界，因此可以说“这里发生的是这个，而不是未区分的一切”。**
 
-2. **物的位置无关性是梯度不是二值**（candidate）。从「只对这一个继续位置可再取得」到「对任何位置可再取得」是连续谱；物占据后端。这为 C9 保留了一个重要资源：现象性候选恰好住在这条谱的**前端**（只从这里可取得的东西）。物与现象因此不是两个世界，而是同一条可取得性谱线的两端——这是本稿对 mind-matter 问题的第一步变换（在问题变换表中收口）。
-
-3. **不承诺物理学还原公式**（per Master Plan C6 纪律）。本层只交付统一图景中物的位置；任何与具体物理机制（退相干、耗散结构等）的连接沿用既有黄灯条件接口，不在 Phase I 收紧或放松。
-
-### 开放子问题（open）
-
-- 「规律 / law」在本图景中是物之 regime 的条件化语法，还是需要独立安放的层？（open；问题变换表挂一行。）
-
----
-
-## C7 — Bearer 如何出现：object/history → 「from here」
-
-### 核心问题
-
-「还是这个」什么时候进一步变成「后果从这里返回、历史从这里继续、未来从这里展开」？
-
-### 建构候选
-
-> **承担者 = 后果回路闭合于自身继续的过程。当一个历史凝结不仅被世界再取得，而且它自己的继续成为它下一步条件的主要作者、它引起的后果落回它的继续本身时，「还是这个」升格为「从这里」。**（candidate）
-
-候选精化：
-
-1. **第二种统一负担**。对象之一（still this）回答「什么被再取得」；承担者之一（from here）回答「后果归于谁的继续」。二者不可互推：一块岩石是极佳的 still-this，但它的「后果」不落回它的继续——风化它的力与它自己的过去输出无关；反之，一个漩涡式的过程可以历史地维持自身而尚未凝成公共可读的对象。
-
-2. **世界历史 ≠ 被承担的历史**（candidate，源自 Q 系缝 C——本稿视之为承担问题最干净的表述）。世界里发生过的一切都是世界历史；但只有落在某个继续位置的条件回路里、从那里继续起作用的历史，才是**被承担的**历史。承担 = 历史的归属方式，不是历史的存储方式。存储可以外包、复制、搬运；归属不能——因为归属就是「落回这一个继续」这件事本身。
-
-3. **不可转移性作为承担的正面判据候选**（candidate）：一个后果是被承担的，当且仅当把它的回落重新安排到别的继续上，就等于终止了这一个继续。可转移的负担是账目；不可转移的负担是承担。这个候选把「非外包性」从防守概念（对抗强对手的残余）转写为生成概念（承担的构成条件）——它的强对手压力测试按计划留给 Phase III。
-
-### 与既有 owner 的关系（context）
-
-自指率与两次相变的既有机制是这一层之上（C8）的正面 owner；按 sigma no-bootstrap 纪律，本层**不**引用它证明承担——恰相反，本层试图正面给出 sigma 定义域所预设的那个关系（谁的历史、落回谁）。若本层候选成立，它是 sigma 的地基而非应用。
-
-### 开放子问题（open）
-
-- 继续（continuation）的个体化：什么算「同一个继续」？裂变、复制、渐替（忒修斯）在本候选下各得什么答案？（问题变换表挂行；Phase III 的 reset/replacement 测试即压此处。）
-- 主动维持与被动延续的界线是否本层必需，还是可以推迟到 C8？（candidate：推迟——承担只需回路闭合，不需自我维持；自我维持是承担的强化形态。）
-
----
-
-## C8 — Subject-position 如何出现：from here → selection from here
-
-### 核心问题
-
-一个承重位置什么时候不只承受后果，而开始参与塑造「哪些未来对它可选、可行、可继续」？
-
-### 建构候选
-
-> **主体位 = 选择的双重索引化。当选择不仅发生在世界中，而且日益由这个位置自身沉积的条件所引导——它的历史筛选它的可达未来、它的排开塑造它的候选空间——这个位置就从承受历史变为从历史中选择。**（candidate)
-
-候选精化：
-
-1. **第三种统一负担**。still-this 是被取得之一，from-here 是归属之一，主体位是**取向之一**：未来在它这里不再均匀，而是被它自己的过去分层为近的、远的、贵的、关闭的。视角 = 这种分层的结构名。
-
-2. **主体位是程度性成就而非开关**（candidate，与既有相变 owner 的关系留待 Phase II 分类）。从间歇的、局部的取向到稳定的、跨情境的取向是连续谱上的凝结过程；既有 owner 的两次相变机制是对这条谱的一种参数化候选，本层的哲学图景不依赖任何特定参数化（C-G4）。
-
-3. **自我意识 = 取向的再取向**（candidate）。当位置的取向结构自身成为该位置可再选择的对象——它能对「自己如何分层未来」再分层——出现二阶凝结。这继承既有 owner 的二阶结构读法，作为哲学候选纳入统一图景。
-
-4. **主体位 ≠ 现象性**（hard guard，C-G3）。到此为止的全部结构——承担、取向、再取向——都是结构性刻画；「世界对这里显现」尚未被交付。这不是失败，而是下一层的任务。
-
-### 开放子问题（open）
-
-- 取向的凝结需要多稳定才算「位」？（候选答案：以「可继续选择」为准——位在，当且仅当取向仍面对未关闭的候选空间；这与 σ→1 病态闭合的既有直觉一致，但此处只作哲学候选。）
-
----
-
-## C9 — Phenomenality 的积极建构任务：from here → for me ?
-
-### 核心问题
-
-什么**额外结构**，可能使「世界从这里继续」转化为「世界对这里显现 / for me」？
-
-Canonical guard 全程在场：`B_s ≠ B_p`，`B_s → B_p` 开放。以下四个候选是**对开放桥的积极建构尝试**，彼此并行，均自带失败条件，任何一个被否定都不损害 C1–C8。
-
-### 候选桥 P-1 — 不可还原的位置索引显明（irreducible position-indexed manifestation）
-
-> 显明（C1 的原初动作）本身从未是无处不在的——每次显明都是在某个接合处的显明。当一个位置凝结为稳定的承担-取向位（C7–C8），落在它的回路里的显明获得一个**不可消去的「在此」索引**：世界不只从这里继续，而且**作为从这里的世界**被接合。for me = 显明的位置索引在稳定位上的不可还原化。
-
-- **失败条件**：若一切显明内容都可被无位置损失地翻译为位置无关描述（可取得性谱线 C6 的后端语言），则该索引是标记而非结构，P-1 失败。
-
-### 候选桥 P-2 — 不可转移后果场（non-transferable consequence field）
-
-> C7 的承担判据是后果回落的不可转移性。候选：**现象性 = 不可转移后果的预先在场方式**。疼不是损伤的报告，而是不可外包的坏未来以「已经在此」的方式压在继续上；valence 是承担的时态前移。for me = 后果场在其回落之前就以这个位置的方式被给出。
-
-- **失败条件**：若预先在场可被完全功能化（任何行为等价系统必然同样拥有它，无残余），则 P-2 塌缩为行为主义翻译，失败。
-
-### 候选桥 P-3 — 为此继续的世界（world-for-this-continuation）
-
-> C6 建立了可取得性谱线：物在「对任何位置可取得」端。候选：谱线**前端**——只有从这一个继续、以它的粒度、沿它的历史才可取得的那部分接合——不是认识局限，而是一类本体成分。现象性 = 世界中只对一条继续开放的那个剖面的实在性。for me = 这个剖面。
-
-- **失败条件**：若该剖面可被第三人称完全清单化（哪怕不可占据也可穷尽描述），则「只对此开放」只是访问差异而非存在差异，P-3 失败。
-
-### 候选桥 P-4 — 从一个继续位置整合的可用性（integrated availability）
-
-> 一个稳定位把大量切分、历史与后果整合为**同时从此可用**的一个场——不是逐条登记，而是作为一个统一的处境被给出。候选：现象的统一性（一个视野、而非一堆信号）= 这种从位整合的结构名。for me = 处境的一体给出。
-
-- **失败条件**：若整合可用性在无承担回路的系统中同样完整实现（纯聚合器反例），则整合与现象解耦，P-4 失败。
-- **预先旗标**：此候选与既有整合类理论共振最强，Phase III 减法必查；Phase I 不因此弃思。
-
-### 四桥的关系（candidate）
-
-P-1 至 P-4 可能不是竞争者而是同一结构的四个面：位置索引（P-1）标出「在此」，后果场（P-2）给出「攸关」，专属剖面（P-3）给出「内容的不可替代性」，整合可用（P-4）给出「统一性」。**强候选**：for me = 四者在稳定承担位上的联立；**弱候选**：其中某一者为根，余者派生。本稿不选定，留给作者审与 Phase III 压力测试。
-
-### 明确不做的推理（hard guard）
-
-- 不从 C1「显明」直接跳到「泛现象性」：C1 的显明是本体动作，不是体验；只有经 C7–C8 的位凝结，索引化才有承担者。本图景因此**不是**泛心论的重述——现象性在这里是**晚出的、位置性的成就**，不是弥漫的底料。
-- 四桥任何之一被采纳前，`B_s → B_p` 在 canonical 层保持开放。
-
----
-
-## C10 — Value / stake / agency 如何从同一 ontology 长出
-
-### 三条候选生成链
-
-**链一：承担 + 未来不对称 → stake**
-
-> 一个承担位的可达未来不是均匀的：有的继续通向更多可继续选择，有的通向关闭。**攸关（stake）= 这种不对称落在不可转移回路上的名字。** 没有承担，未来不对称只是世界的地形；落在承担上，地形变成利害。（candidate）
-
-**链二：stake + 可选替代 → value / valence**
-
-> 当攸关的位置面对仍开放的候选空间，替代路径按其对继续的意义被分层——趋、避、贵、贱。**价值 = 攸关在候选空间上的投影结构。** 它先于任何偏好报告：偏好是价值的行为读出，不是价值的构成。（candidate；与「价值不是偏好」源直觉同向。）canonical `d` 在统一图景中应当回答的问题由此可以陈述：**d 应度量的是「替代继续之间的不对称对这一个承担位有多深」**——本稿只安放问题，不重定义 owner。
-
-**链三：主体位 + 生成性可再选择 → agency / freedom burden**
-
-> 当位置不仅取向未来，而且能再选择自己的取向结构（C8 的二阶凝结），并且这种再选择保持候选空间的开放而非收缩——**能动性 = 取向结构的可再生成性。** 自由的负担随之出现：一个能重塑自身分层方式的位置，对自己的分层负有可归责性。（candidate；「秩序与自由」「脚手架与牢笼」两条源直觉在此安放：同一条件化机制既是能动的脚手架也是能动的牢笼，区别只在候选空间是否仍开放。）
-
-### 开放子问题（open）
-
-- 苦难在本图景的位置：候选为「不可转移后果场（P-2）+ 候选空间收缩」的联立——即被承担的关闭。挂问题变换表。
-
----
-
-## C11 — 多尺度与 collective
-
-### 核心问题
-
-如果 One、history、bearer 都是生成出来的，那么 higher-order unit / collective 是否也是相同 ontology 在不同 grain 上的再发生？
-
-### 建构候选
-
-> **同一生成语法，粒度上移**：当多个局部继续的后果开始整合地回落于它们的**共同继续**——不是各自回落的加总，而是作为一个更高阶「from here」的回路——高阶承担位候选出现。（candidate）
-
-候选精化：
-
-1. **高阶之一的三个门槛与低阶同构**（candidate）：高阶 still-this（集体的可复现切分：制度、语言、身份），高阶 from-here（后果落回集体继续本身：无法分摊给任何成员的兴衰），高阶取向（集体历史分层集体未来）。每一档都是独立成就，同样不可互推。
-
-2. **共享沉积的重索引是尺度相对的**（candidate，继承 collective owner 的边界纪律）：同一条历史差异，相对成员边界是外部条件，相对集体边界可以是内部沉积。这不是矛盾而是「承担 = 归属方式」（C7）的直接推论：归属随边界声明而变，所以**个体承担与集体承担不可仅因共享机制而等同**。
-
-3. **高阶现象性问题独立开放**（open）：集体是否可能跨过 C9 的任何一座桥，本稿不承诺任何方向；但统一图景的收益在于——这个问题现在是**同一张图上的一个明确位置**，而不是一个孤立谜题。
-
----
-
-## 总生成地图（研究地图，非推导定理）
+### 最小共定三件套（candidate）
 
 ```text
-潜在（未被切分的可确定性）
-   ↓  C1  约束下的确定显明
-Selection / actuality（事件性的确定）
-   ↓  C2  共确定包
-One / 切分 / 边界 / 关系 / 粒度（选择的形状）
-   ↓  C3  确定的另一半
-排开结构（有结构的缺席：参照 / 可达性 / 回转成本）
-   ↓  C4  差异的选择性存活
-历史条件化（开路与封路同源；习惯 = 自我加强的坡度）
-   ↓  C5  低成本可复现切分
-对象之一：still this（薄：本体个体性；厚：公共对象性）
-   ↓  C6  可取得性谱线后端
-物 regime（最深沉积；位置无关的极限档）
-   ↓  C7  后果回路闭合于自身继续
-承担者之一：from here（世界历史 → 被承担的历史；不可转移性）
-   ↓  C8  历史分层未来
-主体位：取向之一（selection from here；二阶 = 取向的再取向）
-   ↓  C9  ？四座候选桥（P-1 索引 / P-2 后果场 / P-3 专属剖面 / P-4 整合可用）
-现象之一：for me（开放的建构任务，可失败）
-
-旁支：
-承担 + 未来不对称        → stake
-stake + 开放候选空间     → value / valence（d 的问题域）
-主体位 + 生成性再选择    → agency / 自由负担
-公共可复现对象化         → matter regime（谱线后端）
-跨粒度后果整合           → collective / 高阶 from-here 候选
+distinction   —— this / outside-of-this 的有效分化
+boundary      —— 这个分化在哪里/以何种条件成立
+grain         —— 什么分辨率下这个分化算有效
 ```
 
-三种统一负担的最小口诀（candidate）：
+这三者比完整的 one/many/relation/identity 更接近“确定接合”的最小结构。
+
+### 后续才可能出现的结构
 
 ```text
-still this  —— 什么被再取得        （对象之一）
-from here   —— 后果归于谁的继续    （承担之一）
-for me      —— 世界对谁显现        （现象之一，开放）
+many          —— 需要多个可并置/可计数的 local Ones
+relation      —— 需要至少两个已可区分项或一个内部关系结构
+identity      —— 需要跨事件再取得，属于 C5 的历史负担
 ```
 
-三者由同一机制（历史条件化下的再选择）在不同深度生成，且两两不可互推——这一整体主张是本稿的中心候选，Phase II/III 的整体评估对象。
+所以：
+
+> **One 可以与 actuality 共生，但 Many、Relation、Identity 不必全部与第一次 One 同龄。**
+
+这使 SRT 能真正研究“一如何出现”，而不是把“一个已经带关系和同一性的对象”换个词重写。
+
+### Open
+
+- distinction 是否逻辑上要求一个确定的 outside，还是只要求“不等于未分化整体”？
+- boundary 是否必须空间化？候选答案：不必须，边界首先是有效差异的条件边界。
+- 一个 Selection 能否同时交付多个 local Ones？允许，不能把“一次 Selection = 一个 object”写死。
 
 ---
 
-## 问题变换表·种子（Phase II Step 5 的初稿输入）
+# C3 — determinacy → negative determination / exclusion
 
-| 传统问题 | 在统一图景中的位置 | 变换后的问题 |
+## 核心问题
+
+确定化是否必然带来某种“没有被实现”的结构？如何避免重新引入完成菜单？
+
+## 建构候选
+
+> **确定性具有负面：一旦某个差异被实际确定，就同时形成一个“非如此”的 outside；但这个 outside 不等于一组在事前已完成、只差没被选中的 alternatives。**
+
+因此把 v0.1 的“被排开的结构”拆成三个层级：
+
+### E0 — minimal negative determination
+
+```text
+A 被确定
+-> not-A 作为界限意义成立
+```
+
+这是 determinacy 的最弱负面，不要求任何完成反事实世界。
+
+### E1 — accessibility deformation
+
+当这次确定留下历史效力时：
+
+```text
+某些后续确定化更容易
+某些更难
+某些路径关闭
+```
+
+这是 C4 之后才出现的“排除具有未来效力”。它不是每次 Selection 的自动结果。
+
+### E2 — structured counterfactual residue
+
+只有在能生成/维持替代结构的复杂系统中，才可能出现：
+
+```text
+shadow
+structural tension
+return / reversal cost
+explicit unrealized alternatives
+```
+
+所以 T2 / shadow / friction 不再被视为 primitive Selection 的普遍伴随物，而是**较高历史复杂度下负面结构的候选表现**。
+
+### Open
+
+- E0 是否已经足以支撑最薄的“非预成排除”？
+- E1 的发生是否需要独立 retention principle？v0.2：大概率需要，转 C4。
+
+---
+
+# C4 — actuality → retained difference → historical conditioning
+
+## 核心问题
+
+一次已发生的确定如何真正进入未来？
+
+## 必须保持的三分
+
+```text
+facticity        它发生过
+retention        某个差异继续存在/可恢复
+conditioning     该差异改变后续确定化的条件
+```
+
+三者不可自动等同。
+
+## 建构候选
+
+> **历史不是“过去事件的集合”，而是过去确定化中那些仍能改变后续确定条件的存活差异。**
+
+但这里必须明确一根额外候选桥：
+
+> **Retention Bridge（candidate）：某些 actualisations 会改变后续世界的约束/可达性结构，使其差异能够被后续 Selection 重新取得。**
+
+这根桥不属于每次 primitive occurrence 的自动含义；如果它最终需要独立 commitment，Phase II 应明确记账，而不是强行声称由 C1 免费推出。
+
+### 历史的两个方向
+
+存活差异同时可能：
+
+```text
+开路：习惯、脚手架、复用、学习
+封路：锁定、路径依赖、遮蔽、回转成本
+```
+
+所以 order 与 constraint、freedom 与 limitation 可以由同一历史机制分化，而不是两个宇宙。
+
+### Open
+
+- 最弱 retention 的本体条件是什么？
+- facticity 本身是否改变世界，即使没有 durable trace？保留开放，不偷渡“发生即写回”。
+
+---
+
+# C5 — history → object unity: “still this”
+
+## 核心问题
+
+什么时候一个局部 One 不只发生一次，而能够跨变化被再次取得为“还是这个”？
+
+## 建构候选
+
+> **Object unity = 某种局部确定结构在历史条件化中具有可恢复/可再实现的同一性，使不同发生能够被归并为“同一个持续对象/过程”的延续。**
+
+### 三个负担
+
+1. **recoverability**：结构可在变化后再次成立；
+2. **transformation tolerance**：某些变化不取消其 unity；
+3. **reidentification rule**：什么变化仍算 same，什么变化算 new。
+
+第三项不是 observer 的主观标签；薄对象性需要世界内部存在某种稳定的 same/different 结构。公共对象化只是更晚的厚层。
+
+### 两层 object
+
+```text
+thin ontic object unity
+= 不依赖公共观察即可持续/再形成的 same-unit 结构
+
+thick public objectification
+= 多个 subject-position / measurement route 能稳定重取得同一结构
+```
+
+因此：
+
+> ontic individuality ≠ public/scientific objectification。
+
+### Open
+
+- reidentification rule 是结构自身支付、环境支付，还是关系共同支付？候选：共同支付。
+- fusion/fission 不应被“记忆连续 = identity”轻易解决；它们是 still-this 判据的压力点。
+
+---
+
+# C6 — matter as constraint-bearing robust regime
+
+## 核心问题
+
+如果不把 matter 当成与 mind 对立的第二 substance，它在 Selection-first ontology 中是什么？
+
+## v0.2 修正
+
+v0.1 把 matter 写成“对象化的极限档、跨位置可取得、再实现成本趋零”。这过于认识论化，也把脆弱物质过程排除在 matter 之外。
+
+v0.2 改为：
+
+> **Matter candidate = 那些已经历史凝结为稳定 constraint-bearing structure 的现实 regime：它们的因果/约束效力不依赖某个特定 bearer 是否把它们作为对象取得，且能在多种耦合与视角转换中保持足够的结构连续性。**
+
+关键不是“谁都看得见”，而是：
+
+```text
+它对后续现实有独立约束效力
+这种效力跨局部位置具有鲁棒延续
+它可以是 object，也可以是 process / field / fragile organization
+```
+
+公共 objectification 是我们取得 matter 的一种方式，不是 matter 的构成定义。
+
+### mind-matter 的第一步变换
+
+不要写成简单的：
+
+```text
+matter = 可取得性谱线后端
+phenomenality = 前端
+```
+
+而改成：
+
+> **mind-matter 问题可能是同一 Selection-generated reality 中“跨位置鲁棒约束结构”与“位置索引的显现/取向结构”如何共属一套生成语法的问题。**
+
+这是关联问题，不预先断言二者是一条一维谱。
+
+### Open
+
+- law / regularity 是 matter-regime 的沉积语法，还是比 matter 更广的历史稳定结构？
+- 物理层的 constraint 是否全部需要历史解释？不预设。
+
+---
+
+# C7 — history → bearer unity: “from here”
+
+## 核心问题
+
+“还是这个”什么时候进一步变成“这些历史与后果属于从这里继续”？
+
+## v0.2 修正
+
+v0.1 的“主要作者”“不可转移，否则终止”太强，会把 bearer 偷换成因果自足的 autonomous agent。
+
+改成：
+
+> **Bearer unity = 一条继续过程，其中某些历史差异与后果不是仅仅发生在它附近，而是构成性地索引到同一继续单位：这些差异改变的正是“这个继续接下来如何继续”。**
+
+### 关键区分
+
+```text
+world-history
+!= stored history
+!= causally relevant history
+!= borne history
+```
+
+`borne history` 的候选特征不是“全部由自己造成”，而是：
+
+> **后果的归属关系对该继续的 identity 是构成性的。任意把同一个 history/consequence 重新记到另一个 unit 上，不能在不改变 bearer identity 的情况下保持同一个 bearer 事实。**
+
+这就是 non-outsourcing 的正面版本，但它允许：
+
+```text
+external support
+social scaffolding
+environmental coupling
+shared memory
+external energy/material dependence
+```
+
+所以：
+
+> **non-outsourcing ≠ causal self-sufficiency。**
+
+真正的难点仍然是 same-unit：什么使“回到这里”的这里在时间中仍是同一继续？这一问题不得由 sigma 自证。
+
+### 生命的位置
+
+Life 可以先被建构为 bearer 的强化 regime：
+
+```text
+from-here consequence bearing
++
+active maintenance / repair / regeneration
++
+stakes for continued selectability
+```
+
+但不能把 bearer 与 life 完全等同；是否存在非生命 bearer 保持开放。
+
+### Open
+
+- same-unit continuation 的最小条件；
+- split / copy / replacement 后 borne history 如何分配；
+- active maintenance 是 bearer 必要条件还是 life-specific amplification。
+
+---
+
+# C8 — bearer → subject-position: “selection from here”
+
+## 核心问题
+
+什么时候一个 from-here 不只承担历史，而且形成了系统性的 perspective / orientation？
+
+## 建构候选
+
+> **Subject-position = 一个 bearer 的未来 Selection-field 持续受到其 own-borne history、stakes 与当前位置的系统性索引，以至于世界对该继续不再是均匀可达，而形成稳定的相关性/显著性/可行性结构。**
+
+这一步的核心不是“它选择了”这种拟人表达，而是：
+
+```text
+same world
+relative to different continuations
+-> different structured fields of relevance / accessibility / actionability
+```
+
+### 三个层次
+
+1. **orientation**：未来被按“对这个继续意味着什么”分层；
+2. **perspective**：这种分层跨情境保持结构连续；
+3. **reflexive perspective**：该位置能够把自己的 orientation 重新纳入 Selection。
+
+第三项可以成为 self-consciousness 的结构候选，但仍然：
+
+```text
+subject-position != phenomenal experiencer
+```
+
+### Agency 暂不在此定义
+
+主体位可以存在而能动性很弱；agency 需要对 orientation / selectable field 的实际重塑能力，放 C10。
+
+### Open
+
+- perspective 是否必然 degree-like；
+- subject-position 是否需要 representation；v0.2 不预设。
+
+---
+
+# C9 — phenomenality: “for me” 的三条本体路线
+
+## 核心问题
+
+SRT 必须积极建构 for-me，但不能因为防过度声称而预先把答案限定成“C8 后面再加一个 functional bridge”。
+
+Canonical guard 仍然是：
+
+```text
+B_s != B_p
+B_s -> B_p ?
+```
+
+但 `?` 现在代表至少三条真正开放的构造路线。
+
+## PH-R1 — Late Bridge / 晚出桥路线
+
+> bearer + subject-position 已经成立；某个额外结构使 position-indexed processing 变成 position-indexed manifestation。
+
+这一路线与 v0.1 最接近。候选负担包括：
+
+```text
+irreducible indexicality
+presentation / givenness
+integrated availability
+qualitative differentiation
+```
+
+优点：保持 phenomenality 与结构主体严格分离。
+
+风险：容易把“额外结构”永远推迟，最后只剩 hard-problem 标签。
+
+## PH-R2 — Manifestness Deepening / 显明深化路线
+
+> C1 的 manifest distinction 本身不是体验，但它可能包含一种比纯“状态更新”更原初的 manifestness 结构；当这种 manifestness 被一个稳定 bearer/subject-position 递归索引、保持并统一时，才形成成熟的 for-me。
+
+关键纪律：
+
+```text
+primitive manifestness != primitive consciousness
+```
+
+所以这一路线不自动等于 panpsychism。它提出的是：phenomenality 也许不是凭空在 C8 后新增，而是 Selection 的“显明”维度在满足位置/承担条件后发生 qualitative transformation。
+
+风险：若“manifestness”只是 consciousness 的换名，会循环。
+
+## PH-R3 — Dual-Aspect Achievement / 双面成就路线
+
+> 当某类 bearer organisation 达到特定条件，Selection-process 可能同时具有公共/因果可描述面与第一位置显现面；二者是同一成就的不同 aspect，而不是一个由另一个逻辑推出。
+
+这允许：
+
+```text
+structural explanation can identify conditions
+without claiming third-person structure deductively entails first-person presence
+```
+
+风险：若 aspect relation 没有任何约束，它会退化成命名性的 dual-aspect assertion。
+
+## 无论哪条路线，都必须回答的五个 phenomenal burdens
+
+### P-B1 Indexicality
+为什么是“这里/这个继续”的显现，而不是无位置的信息？
+
+### P-B2 Givenness / Presentation
+为什么相关结构是“被给出/显现”，而不只是控制、计算、报告？
+
+### P-B3 Unity
+为什么出现一个 field / scene，而不是彼此无关的信号？
+
+### P-B4 Qualitative differentiation
+为什么不同显现有不同 qualitative character，而不只是不同功能标签？
+
+### P-B5 Concern / valenced presence
+为什么某些显现具有不可替代的好坏/痛苦/迫切性？这可能连接 C10，但不能把 valence 当作全部 phenomenality。
+
+v0.1 的 P-1 至 P-4 因此不再当作四座互相竞争的“桥”，而被重排为上述 burdens 的候选答案组件。
+
+### 一个重要的逆向可能
+
+不能排除：
+
+> **phenomenality 不是 subject-position 的最终产物，反而是某些 bearer/subject unity 为什么能够形成的共同条件之一。**
+
+Phase I 必须允许这种 reversal；否则“先结构、后体验”本身就成了未审的防守教条。
+
+### Open
+
+- PH-R1/R2/R3 是否互斥，还是不同层级描述；
+- qualitative differentiation 是哪条路线最难的一关；
+- phenomenal unity 是否必须与 bearer unity 一一对应。
+
+---
+
+# C10 — stake / value / valence / agency
+
+## C10.1 stake
+
+> **Stake = future asymmetry 对一个 bearer 的 continued selectability 具有不可无差别化的后果。**
+
+没有 bearer，未来差异只是世界结构；有 bearer，某些差异成为“对这个继续有后果”。
+
+## C10.2 value
+
+> **Value candidate = stake 在可替代未来上的结构化排序：某些路径维持/扩展继续的可能，某些压缩/终止它。**
+
+这使 value 可以先于显式 preference，也可能先于成熟 phenomenality。
+
+## C10.3 valence
+
+Valence 不应直接等于 value：
+
+```text
+value = 对继续的结构性好坏/重要性
+valence = 这种好坏是否以 phenomenal good/bad 的方式显现
+```
+
+所以 valence 可能要求 C9 的 phenomenal route，不能由 stake 自动推出。
+
+## C10.4 agency
+
+> **Agency = 一个 subject-position 不仅被既有 orientation 引导，而且能够通过自己的 Selection 改变其未来 selectable field / orientation structure。**
+
+这可以有程度差异。
+
+重要修正：
+
+```text
+agency != moral responsibility
+```
+
+“可归责性”需要社会、规范、反事实能力等进一步结构，不在这里偷渡。
+
+## d 的位置
+
+当前不重定义 `d`。统一 ontology 只提出 owner 应回答的问题：
+
+> `d` 最终应与哪种“对 bearer 的差异重要性 / counterfactual asymmetry”对应？
+
+---
+
+# C11 — multi-scale One / collective / higher-order bearer
+
+## 核心问题
+
+如果 One、object、bearer 都是生成成就，它们能否在不同 grain 上重复形成？
+
+## 建构候选
+
+> **同一生成语法可以跨 grain 重现，但 higher-order unity 不是 lower-level unity 的简单总和。**
+
+至少要重新通过三类负担：
+
+```text
+higher-order still-this
+—— 高阶结构能否跨变化保持自身 unity
+
+higher-order from-here
+—— 是否存在无法还原为成员各自后果之和的共同 consequence-bearing continuation
+
+higher-order orientation
+—— 集体历史是否系统性地分层集体未来
+```
+
+### Collective bearer 的关键门槛
+
+协调、共享信息、共同记忆都不自动等于 higher-order bearer。
+
+强候选要求：
+
+> **某些后果的归属对高阶 unit 的继续本身具有构成性，且不能仅通过分别描述成员的 borne histories 完整替代。**
+
+这仍然需要 Phase III 的强压力测试。
+
+### Collective phenomenality
+
+独立开放：
+
+```text
+higher-order bearer
+!= higher-order phenomenal field
+```
+
+但 C9 的三条路线都可以在高阶 grain 上重新提问，而不是直接禁止。
+
+---
+
+# 1. v0.2 总生成地图（研究地图，不是 derivation theorem）
+
+```text
+non-exhaustively-objectified potentiality
+        ↓
+Selection / determinate actualisation
+        ↓
+local One
+= distinction + boundary + operative grain
+        ↓
+negative determination
+        ↓   [Retention Bridge ?]
+retained difference / historical conditioning
+        ↓
+object unity: still this
+        ├──────────────→ robust constraint-bearing regimes: matter candidate
+        ↓
+constitutively indexed consequence/history
+        ↓
+bearer unity: from here
+        ├──────────────→ active self-maintenance + stakes: life candidate
+        ↓
+position-indexed relevance / accessibility
+        ↓
+subject-position: selection from here
+        ├──────────────→ field-restructuring capacity: agency
+        ↓ ?
+phenomenality: for me
+        ├── PH-R1 late bridge
+        ├── PH-R2 manifestness deepening
+        └── PH-R3 dual-aspect achievement
+
+bearer + future asymmetry -> stake -> value
+value + phenomenal presence ? -> valence
+
+same grammar across grain ?
+-> collective / higher-order object-bearer-subject candidates
+```
+
+图上所有箭头的“?”都表示：可以建构、可以失败、可以需要额外 commitment；不是禁止思考。
+
+---
+
+# 2. 三种核心 Unity Burdens
+
+```text
+still this
+= 跨变化，什么仍能作为同一结构被恢复/维持？
+
+from here
+= 哪些历史与后果构成性地属于同一继续？
+
+for me
+= 为什么/如何世界以不可消去的第一位置方式显现？
+```
+
+v0.2 不再声称三者必然由“同一个 historically conditioned reselection mechanism”单独生成。
+
+更谨慎也更有建设性的中心候选是：
+
+> **三者属于同一 Selection-first ontology，但可能需要不同的附加生成条件；统一性来自共同地板与可追踪的依赖架构，而不是强迫所有层级由同一个 scalar 或单一 mechanism 产生。**
+
+这比“一个机制解释一切”更适合作为统一本体论：统一不是同质化。
+
+---
+
+# 3. 问题变换表 v0.2
+
+| 传统问题 | SRT 中真正要区分的负担 | 变换后的问题 |
 |---|---|---|
-| 存在 / becoming | C1 | 「存在什么」让位于「什么获得了确定」；becoming 是地板不是谜题 |
-| one-many | C2 | 不是宇宙的底层格栅，而是每次确定的局部成果；问「哪次切分、什么粒度」 |
-| 对象同一性 | C5 | 「还是这个」的成本由谁支付；裂变 = 复现路径的分叉归属 |
-| 人格同一 / 裂变 | C5 vs C7 | 混问了 still-this 与 from-here；分开后：记忆连续性答对象问题，答不了承担问题 |
-| 生命 / 自主性 | C7 强化形态 | 自我维持 = 承担的主动化；生命是承担谱上的一段，不是二值 |
-| mind-matter | C6 + C9 | 不是两种 substance，而是可取得性谱线的两端；「关系」问题变换为「谱线的连续性」问题 |
-| 主体性 | C8 | 取向的凝结程度问题，不是有/无的形而上学裂缝 |
-| 意识统一性 | C9 / P-4 | 从位整合的可用性；统一是位的成就，不是束缚问题 |
-| hard problem | C9 | 从「结构如何产生体验」变换为「四座候选桥各自的失败条件是否全部落空」——可失败即可研究 |
-| 自由意志 | C10 链三 | 取向结构的可再生成性 + 候选空间开放度；不是因果例外问题 |
-| 价值 / 规范性 | C10 链二 | 攸关在候选空间上的投影；先于偏好 |
-| 集体身份 | C11 | 高阶 from-here 的三门槛；不因共享机制而自动成立 |
+| 存在 / becoming | C1 | 不先问“有什么实体”，而问确定性怎样发生、什么不需要预成 |
+| one-many | C2 | many 是否建立在 local One 的重复/并置上；粒度如何共同生成 |
+| 排除 / possibility | C3 | “未实现”不是预成对象仓库；负面如何从界限发展为历史反事实结构 |
+| causation / law | C4/C6 | 哪些 retained differences 成为稳定 constraints；哪些规律无需历史化解释 |
+| 对象同一 | C5 | still-this 的 reidentification rule 如何跨 transformation 成立 |
+| mind-matter | C6/C8/C9 | 鲁棒公共约束结构与位置索引的显现/取向如何共属一套现实生成语法 |
+| 生命 | C7/C10 | bearer 何时强化为主动维持自身 selectable future 的 regime |
+| 人格同一 / 裂变 | C5/C7 | still-this 与 from-here 分开；复制、分裂后 identity 与 borne history 如何分配 |
+| 主体性 | C8 | perspective 是何种稳定的 position-indexed relevance structure |
+| hard problem | C9 | PH-R1/R2/R3 哪种 ontology 能承担 givenness、quality、unity、indexicality 而不循环 |
+| 意识统一 | C9 P-B3 | phenomenal field unity 与 bearer/object unity 的关系是什么 |
+| qualia | C9 P-B4 | qualitative differentiation 从哪里来，而不是只问 report / function |
+| value | C10 | structural value 与 phenomenal valence 分开；二者何时连接 |
+| free will / agency | C10 | 能否重塑 future selectable field，而非要求跳出因果 |
+| collective identity | C11 | 高阶 still-this/from-here 是否真正不可化约为成员总和 |
 
 ---
 
-## 本稿遵守的护栏自查（C-G1 至 C-G4）
+# 4. Phase II 前必须保留的开放点
 
-- **C-G1**：全篇无一处 P 级承诺；「candidate / open / guard」标注齐全。
-- **C-G2**：C1 显式排除仓库图景与先在选择者；「无中生有」按非预成读。
-- **C-G3**：actuality ≠ persistence（C4 三分）；object ≠ bearer（C5/C7 岩石-漩涡对照）；bearer ≠ subject（C7/C8）；subject-position ≠ phenomenality（C8 第 4 条）；`B_s → B_p` 以四座可失败候选桥的方式保持开放。
-- **C-G4**：全篇无新 scalar / threshold / equation / 符号；既有机制只以散文名指称。
+Phase I 不应把以下问题“写漂亮了就算解决”：
 
-## Phase I 完成定义对照（Master Plan §13）
+1. **C1→C2**：determinate distinction 是否真的足以交付 local One，还是需要额外 unity condition？
+2. **C3→C4**：negative determination 如何获得 retention；不能把“未实现”直接写成未来摩擦。
+3. **C4→C5**：历史稳定如何升级成 same-object reidentification。
+4. **C5→C7**：object continuity 与 borne-history unity 之间是否有独立门槛。
+5. **C7 same-unit**：这是 bearer 线最深的问题，不能靠 sigma bootstrap。
+6. **C7→C8**：承担历史是否足以形成 perspective，还是还需要 relevance/stake architecture。
+7. **C8↔C9**：phenomenality 方向未定；允许 late / deepening / dual-aspect / reversal。
+8. **C9 qualitative differentiation**：这是当前 constructive draft 最缺答案的一项，不得被“integrated availability”掩盖。
+9. **C10 value→valence**：结构性的好坏不自动等于体验性的好坏。
+10. **C11 composition**：higher-order bearer 的 composition problem 必须独立解决。
 
-- [x] potentiality 到 phenomenality/value 的连续草稿 —— C1–C10 连续；
-- [x] 「One」的出现及伴随结构有正面说明 —— C2 共确定包 + C3 排开结构；
-- [x] actuality → history 至少一个候选桥 —— C4（差异的选择性存活）；
-- [x] object / bearer / subject-position 三种负担正面区分且各有生成候选 —— C5 / C7 / C8 + 三负担口诀；
-- [x] phenomenality 有若干可失败的积极候选 —— C9 四桥，各带失败条件；
-- [x] matter / life / mind / consciousness 在同一生成图 —— C6 谱线 + C7 生命段 + C9；
-- [x] value / agency / collective 有统一路由 —— C10 三链 + C11；
-- [x] 传统问题变换表初稿 —— 种子表 12 行；
-- [x] 未因 novelty / D2 / 形式化困难删掉核心问题 —— C9 四桥全部保留并旗标而非删除；
-- [x] 全部新增内容明确为 non-canonical constructive candidate —— frontmatter + 逐层标注。
+这些不是 Phase I 的失败，而是下一阶段 dependency map 的真正价值所在。
 
-**下一步**：作者按 Step 3 审图景（不审 novelty）；通过后进入 Step 4 内部依赖图（逐箭头 OWNED / CANDIDATE / ADDITIONAL / BRIDGE / OPEN / CONTRADICTION 分类）。
+---
+
+# 5. Phase I 完成状态 v0.2
+
+- [x] 建立非菜单的 potentiality → actuality 正面图景；
+- [x] 将 One 缩到 local determinacy，不预装完整 many/relation/identity；
+- [x] 将 exclusion 分成 E0/E1/E2，避免重新制造 pre-given alternatives；
+- [x] 显式加入 Retention Bridge 候选，不再假定 occurrence 自动成为 history；
+- [x] 区分 ontic object unity 与 public objectification；
+- [x] 修正 matter，避免把其定义成可观察性或“极硬对象”；
+- [x] 修正 bearer，明确 non-outsourcing != causal self-sufficiency；
+- [x] subject-position 与 agency 分离；
+- [x] phenomenality 保留 PH-R1 / PH-R2 / PH-R3 三条路线，不预设只能晚出；
+- [x] 增加 qualitative differentiation 作为独立 phenomenal burden；
+- [x] value 与 valence 分离，agency 与 moral responsibility 分离；
+- [x] collective 重新承担 higher-order unity burden；
+- [x] 全篇保持 non-canonical / non-formal / non-novelty-first。
+
+## 下一步
+
+若作者接受 v0.2 的整体方向，Phase I 可视为完成第一轮正面建构。下一步进入 **Phase II — Unified Ontology Dependency Map**：
+
+```text
+逐节点 / 逐箭头
+-> OWNED
+-> CONSTRUCTIVE-CANDIDATE
+-> ADDITIONAL-COMMITMENT
+-> INTERPRETIVE-BRIDGE
+-> OPEN-GAP
+-> CONTRADICTION
+```
+
+Phase II 仍然先只整理 SRT 自己，不做 external novelty subtraction。
