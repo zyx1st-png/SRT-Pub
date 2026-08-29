@@ -1,7 +1,8 @@
 ---
 id: SRT-OPS-AUDIT-SIGMA-PREMATURE-DEINDEXING-WORKED-EXAMPLE-20260829
 type: audit_record
-status: active_context_example
+status: active
+record_stage: active_context_example
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
