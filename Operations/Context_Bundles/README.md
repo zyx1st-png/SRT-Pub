@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-29
-source_commit: c1a9ff4f
+source_commit: 3c0fe5a9
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
 source_dirty: true
 inputs_digest: 8db5bc0bfdbccc34

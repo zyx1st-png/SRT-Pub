@@ -1,12 +1,12 @@
 ---
 id: SRT-OPS-PROPOSAL-SELECTION-FIRST-CONSTRUCTIVE-COMMITMENTS-CHARTER-20260829
 type: proposal
-status: frozen
+status: archived
 record_stage: reclassified_as_red_team_burden_list
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
-claim_mode: historical_candidate
+claim_mode: proposal
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
