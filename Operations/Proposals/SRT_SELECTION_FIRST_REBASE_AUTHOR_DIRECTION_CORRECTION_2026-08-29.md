@@ -1,12 +1,12 @@
 ---
 id: SRT-OPS-PROPOSAL-SELECTION-FIRST-REBASE-AUTHOR-DIRECTION-CORRECTION-20260829
 type: proposal
-status: superseded
+status: archived
 record_stage: absorbed_into_author_identity_trace
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
-claim_mode: historical_governance
+claim_mode: governance
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
