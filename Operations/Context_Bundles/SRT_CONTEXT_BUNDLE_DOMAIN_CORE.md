@@ -1,15 +1,15 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-29
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-30
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-29
-source_commit: 3c0fe5a9
+generated: 2026-08-30
+source_commit: f5a3f6fd
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
-source_dirty: true
+source_dirty: false
 inputs_digest: 8db5bc0bfdbccc34
 ---
 
@@ -26,10 +26,10 @@ inputs_digest: 8db5bc0bfdbccc34
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-29 |
-| 来源 commit | `3c0fe5a9` |
+| 生成日期 | 2026-08-30 |
+| 来源 commit | `f5a3f6fd` |
 | 来源分支 | `claude/srt-selection-rebase-index-eval-izauq1` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

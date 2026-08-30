@@ -6,10 +6,10 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-29
-source_commit: 3c0fe5a9
+generated: 2026-08-30
+source_commit: f5a3f6fd
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
-source_dirty: true
+source_dirty: false
 inputs_digest: 8db5bc0bfdbccc34
 ---
 
@@ -23,14 +23,14 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 323,163 | ~142,802 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 151,628 | ~71,412 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 68,938 | ~26,653 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 79,522 | ~34,012 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 90,430 | ~33,908 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 61,946 | ~24,571 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 35,661 | ~13,880 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,094 | ~9,383 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 323,164 | ~142,802 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 151,629 | ~71,412 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 68,939 | ~26,653 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 79,523 | ~34,012 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 90,431 | ~33,909 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 61,947 | ~24,572 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 35,662 | ~13,880 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,095 | ~9,383 |
 
 ## 上下文预算
 
@@ -51,7 +51,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 |---|---|---:|---:|---|
 | 骨架路线（裁定定义时用） | `SPINE` | 142,802 | 57,198 | 需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。 |
 | 轻量跨域 | `COMPACTCORE` | 71,412 | 128,588 | 只需领域主线、不需裁定定义时用。 |
-| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 33,908 | 166,092 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
+| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 33,909 | 166,091 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
 | 单域（体量最小者：Core 动力学） | `DOMAIN_CORE` | 9,383 | 190,617 | 最省的一种装法。 |
 
 ### 禁止的组合
@@ -66,8 +66,8 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 |---|---:|:---:|
 | `SPINE` + `DOMAIN_AI` | 169,455 | **超预算** |
 | `SPINE` + `DOMAIN_PHYSICS` | 176,814 | **超预算** |
-| `SPINE` + `DOMAIN_PHILOSOPHY` | 176,710 | **超预算** |
-| `SPINE` + `DOMAIN_NEUROSCIENCE` | 167,373 | **超预算** |
+| `SPINE` + `DOMAIN_PHILOSOPHY` | 176,711 | **超预算** |
+| `SPINE` + `DOMAIN_NEUROSCIENCE` | 167,374 | **超预算** |
 | `SPINE` + `DOMAIN_SPIRITUALITY` | 156,682 | **超预算** |
 | `SPINE` + `DOMAIN_CORE` | 152,185 | 在预算内（但仍不推荐，见下） |
 
