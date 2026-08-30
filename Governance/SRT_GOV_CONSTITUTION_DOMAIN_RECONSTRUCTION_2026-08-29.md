@@ -362,7 +362,95 @@ Superseded intermediate proposal files should be converted to short redirect/his
 
 ---
 
-## 15. Domain breadth stop rule
+## 15. Terminology namespace and rediscovery guard
+
+This gate prevents a live author intuition, a source-recovery paraphrase, or an AI working label from silently becoming a second incompatible definition of an existing SRT term.
+
+It is a **governance rule**, not a theory definition. When a term is already used in Core/Core_Law, book vocabulary, bridge material, or a domain translation, first recover the existing meaning and role before reusing the same word constitutionally.
+
+### 15.1 `Selection` / One-formation boundary
+
+Current Constitution work may ask which prior Selection(s) participated in the formation, stabilization, objectification, history, or continuation of a One.
+
+It must not silently infer:
+
+```text
+One-formation = Selection
+```
+
+or invent `thin Selection / thick Selection` merely to preserve that equation.
+
+Before changing this boundary, retrieve at minimum:
+
+- `Q25_选择广于意识.md` on `Mere Happening` vs `Selection Structure`;
+- `Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md §7/§9/§14` on primitive occurrence vs historically effective formation, write-in, anchoring and borne history.
+
+A later author decision may reopen the terminology, but the current programme does not presume the universal generic-name thesis.
+
+### 15.2 `micro-valence` boundary
+
+Do not use `micro-valence / 微效价` as a name for a pre-bearer field-side local difference or as a synonym for minimum non-neutrality / `epsilon_pg`.
+
+Current source vocabulary places it later:
+
+```text
+manifest interface x embodied position
+-> micro-valence
+```
+
+It is also not, by itself, stake-coupled `d-value`.
+
+Before reusing the term, retrieve:
+
+- `Q14_价值不是偏好.md`;
+- `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md §2.2`.
+
+### 15.3 Author-origin `混沌—存在—秩序` is provenance, not an automatic technical redefinition
+
+The author has supplied a decade-plus origin testimony that SRT began from a strong intuition around `混沌—存在—秩序`, now felt to correspond genealogically to current multiplicity / unity / selection-order questions.
+
+Until a separate author adjudication explicitly reclaims these terms, do not write definition equations such as:
+
+```text
+Chaos := multiplicity
+Existence := One
+Order := sedimented Selection
+Chaos = L0 / Existence = L1 / Order = L2
+Selection = Order
+```
+
+Existing uses are a namespace/history constraint, not proof that the origin intuition is wrong. Relevant prior uses include:
+
+- Core / Reference Dynamics: dynamical chaos / edge-of-chaos usages;
+- `Physics/SRT_Phys_07_Complex_Systems.md`: `Chaos as Hyper-Connectivity` / `Order as Topological Severing` — currently `claim_mode: translation`, `canonical: false`, so this is a domain/translation namespace collision rather than a constitutional veto;
+- `Core_Law/SRT_Core_Text_CN.md`: `秩序 = L1 对被保留的选择沉积的回读命名`, explicitly not an L0 intrinsic property.
+
+The `秩序` collision carries an additional rollback precedent. `Core_Law/SRT_Core_Text_CN.md` records a 2026-08-11 wording repair: the former sentence `所有选择都指向秩序` was replaced because it treated the minimal non-neutral term as a contentful order-drive and conflicted with the file's own hardened account of `秩序` as L1 readback of sedimentation. Therefore any future constitutional reclaim of `秩序` must explicitly adjudicate this precedent before altering a Core/Core_Law owner or restoring order-as-drive language.
+
+### 15.4 Paid-source rediscovery guard
+
+When a dialogue newly derives a structure that resembles an existing paid source/audit result, do not present it as first discovery until the relevant source is checked.
+
+In particular, claims of the form:
+
+```text
+formed / sedimented structure
+-> reshapes what can appear as later options or multiplicity
+```
+
+must first retrieve the existing `Q10 -> Q11` backgrounding / pre-cropping line and the 2026-07-05 vocabulary bridge, including the four option-generation gates (`visible / reachable / low-friction / payable`).
+
+The Constitution may later generalize a perspective grammar above that mechanism, but it must name Q10/Q11 as an existing source instance rather than re-derive it as a new mechanism.
+
+### 15.5 Working labels are not definitions
+
+Temporary dialogue labels such as `O-One / B-One`, `One-for / One-from`, or other AI-generated partitions remain working prompts unless the author explicitly selects them for a constitutional role.
+
+Use source-native distinctions first; do not let a convenient working label acquire definition authority by repetition.
+
+---
+
+## 16. Domain breadth stop rule
 
 Before the first deep well is reviewed, do not launch parallel full programmes in Physics, Biology, AI, Social, Consciousness, Neuroscience and Epistemology.
 
@@ -372,7 +460,7 @@ A second domain opens only after Phase 9 productive-adequacy review.
 
 ---
 
-## 16. Epistemic-privilege boundary
+## 17. Epistemic-privilege boundary
 
 SRT may recognize asymmetric access from different positions.
 
@@ -389,7 +477,7 @@ Any domain that needs standpoint-specific evidential weighting must justify it i
 
 ---
 
-## 17. Merge/readiness criteria for this reconstruction PR
+## 18. Merge/readiness criteria for this reconstruction PR
 
 Before this PR is merge-ready:
 
