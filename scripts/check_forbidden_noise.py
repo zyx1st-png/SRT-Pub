@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Detect forbidden local noise in staged files and working tree."""
+"""Detect forbidden local noise and unresolved merge markers."""
 
 from __future__ import annotations
 
@@ -17,6 +17,12 @@ FORBIDDEN_NAMES = {
 FORBIDDEN_PARTS = {
     "__pycache__",
 }
+
+CONFLICT_MARKER_PREFIXES = (
+    "<<<<<<< ",
+    "||||||| ",
+    ">>>>>>> ",
+)
 
 
 def is_forbidden(rel: str) -> bool:
@@ -41,6 +47,35 @@ def git_lines(*args: str) -> list[str]:
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
     )
+    return [line for line in result.stdout.splitlines() if line.strip()]
+
+
+def tracked_conflict_markers() -> list[str]:
+    """Return tracked text lines that still contain Git conflict markers.
+
+    Do not key on a bare ``=======`` line because Markdown/prose may use it
+    legitimately. The three marker prefixes below are specific enough to catch
+    unresolved Git conflicts while keeping false positives low.
+    """
+    result = subprocess.run(
+        [
+            "git",
+            "grep",
+            "-n",
+            "-I",
+            "-E",
+            r"^(<<<<<<< |\|\|\|\|\|\|\| |>>>>>>> )",
+            "--",
+            ".",
+        ],
+        cwd=ROOT,
+        check=False,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    if result.returncode not in (0, 1):
+        raise RuntimeError(result.stderr.strip() or "git grep failed")
     return [line for line in result.stdout.splitlines() if line.strip()]
 
 
@@ -69,6 +104,9 @@ def main() -> None:
                 errors.append(message)
             else:
                 warnings.append(message)
+
+    for match in tracked_conflict_markers():
+        errors.append(f"unresolved merge marker in tracked text: {match}")
 
     print_summary("forbidden_noise", errors, warnings)
     raise SystemExit(1 if errors else 0)

@@ -797,12 +797,21 @@ def registry_mentions() -> tuple[set[str], set[str]]:
 
 
 def parse_first_sources() -> list[str]:
-    """解析 `SRT_AI_START.md` §2 First Sources 的有序清单。"""
+    """解析 `SRT_AI_START.md` 中「当前 canonical 权威链」的有序清单。
+
+    2026-08-29 的 AI_START 重构把原 §2 `First Sources` 改写为
+    「Current formal/canonical sources remain historically authoritative
+    until audited」区段；两者承担同一契约——按优先级列出当前登记的
+    canonical 权威文件——因此这里按标题文字（而非章节号）定位，重构
+    重新编号时不再断裂。
+    """
     text = read_text("SRT_AI_START.md")
-    start = text.find("## 2. First Sources")
-    end = text.find("## 2A.")
-    if start == -1 or end == -1:
-        fail("锚点缺失：SRT_AI_START.md 中找不到 §2 First Sources 区段")
+    m = re.search(r"^##\s+\d+\.\s+Current formal/canonical sources.*$", text, re.M)
+    if m is None:
+        fail("锚点缺失：SRT_AI_START.md 中找不到当前 canonical 权威链区段")
+    start = m.start()
+    nxt = re.search(r"^##\s+", text[m.end():], re.M)
+    end = m.end() + nxt.start() if nxt else len(text)
     seen: list[str] = []
     # Only the numbered precedence list is unconditional. The prose immediately
     # below it names conditional sources such as OPEN_TENSIONS; treating every
@@ -979,8 +988,8 @@ def check_budgets(out_dir: Path) -> list[str]:
 
 def build_claim_discipline() -> str:
     text = read_text("SRT_AI_START.md")
-    ladder = extract_section(text, r"5\.\s+Claim-Level Guard", "SRT_AI_START.md")
-    protocol = extract_section(text, r"8\.\s+Minimal Answer Protocol", "SRT_AI_START.md")
+    ladder = extract_section(text, r"\d+\.\s+Claim-Level Guard", "SRT_AI_START.md")
+    protocol = extract_section(text, r"\d+\.\s+Minimal [Aa]nswer [Pp]rotocol", "SRT_AI_START.md")
     return (
         "以下两节从 `SRT_AI_START.md` 原样抄入，适用于本包全部内容。\n\n"
         + ladder.replace("## ", "### ", 1)

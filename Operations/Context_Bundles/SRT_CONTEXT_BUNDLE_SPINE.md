@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-26
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-29
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-26
-source_commit: 91f99e3c
-source_branch: claude/workflow-theory-divergence-gate
-source_dirty: false
-inputs_digest: 35eeceafd7b8ebe1
+generated: 2026-08-29
+source_commit: 3c0fe5a9
+source_branch: claude/srt-selection-rebase-index-eval-izauq1
+source_dirty: true
+inputs_digest: 8db5bc0bfdbccc34
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,10 +26,10 @@ inputs_digest: 35eeceafd7b8ebe1
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-26 |
-| 来源 commit | `91f99e3c` |
-| 来源分支 | `claude/workflow-theory-divergence-gate` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-29 |
+| 来源 commit | `3c0fe5a9` |
+| 来源分支 | `claude/srt-selection-rebase-index-eval-izauq1` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,7 +43,7 @@ inputs_digest: 35eeceafd7b8ebe1
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-08-18 |
+| 1 | `SRT_AI_START.md` | 2026-08-29 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-18 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -246,9 +246,11 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 以下两节从 `SRT_AI_START.md` 原样抄入，适用于本包全部内容。
 
-### 5. Claim-Level Guard
+### 15. Claim-Level Guard
 
-Use the claim ladder:
+The P0–P5 ladder remains historical/canonical authority until a separate audit and
+author decision reclassify it (see §6 and `STATUS.md` 当前权威锚点). Reconstructing
+SRT's highest identity as a Constitution does not by itself retire it.
 
 - P0: primitive axiom
 - P1: constitutive theorem
@@ -265,18 +267,21 @@ Do not promote bridge or lab claims into core claims. In particular:
 - ghost-operator universality is a bridge unless separately hardened;
 - AI-domain claims do not define the SRT core.
 
+Owner: `Governance/SRT_CLAIM_LADDER.md`.
+
+### 14. Minimal answer protocol
+
+For non-trivial SRT work:
+
+1. recover current programme identity from `STATUS.md`;
+2. distinguish current historical/canonical authority from prospective Constitution reconstruction;
+3. state whether the claim is Constitution candidate, commentary, domain model, bridge, lab, material evidence or governance;
+4. do not close listed open tensions;
+5. for Constitution, use source recovery + author convergence rather than greenfield generation;
+6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
+7. prefer explicit boundaries to broad unification language.
+
 ---
-
-### 8. Minimal Answer Protocol
-
-When answering about SRT:
-
-1. Name the canonical source you rely on.
-2. State the claim level if hardness matters.
-3. Mark bridge, lab, or companion material explicitly.
-4. If a point is listed in `Core/SRT_OPEN_TENSIONS.md`, do not present it as closed.
-5. For non-trivial questions, name the retrieval route or task profile used.
-6. Prefer short, hard claims over broad unification language unless the question explicitly asks for bridge speculation.
 
 ## §0.4 Manifest 差异报告（本包 vs `CANONICAL_REGISTRY.md`）
 
@@ -429,43 +434,164 @@ When answering about SRT:
 | path | `SRT_AI_START.md` |
 | id | SRT-AI-START |
 | claim_mode | index |
-| status | active_v3 |
+| status | active |
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-08-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CORE-21, SRT-CORE-22, SRT-AGENT-RETRIEVAL-PROFILE]
+**dependency**：[SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-AGENT-RETRIEVAL-PROFILE, SRT-STATUS]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT AI Start
 
-> **Runtime / bootstrap entry only.**
-> This file is not the first source of SRT definitions and must not replace canonical files.
-> Its job is to give AI / agent systems the shortest safe reading path and prevent common misreadings.
+> **Runtime / bootstrap entry only.** This file is not the final source of SRT definitions and must not silently replace canonical files.
+> `AGENTS.md §Session Start` is the single authority for fresh-session read order.
 
----
+## 1. Current one-sentence orientation
 
-## Current bootstrap pointer
+**SRT is currently reconstructing its highest layer as a bearer-involved Constitution: a natural-language perspective framework that reopens what is treated as given; formalization, evidence and proof are performed in domain research after units/boundaries/objectification choices are declared.**
 
-`AGENTS.md §Session Start` is the single authority for fresh-session read order. This file is the minimal theory/runtime guard inside that sequence; it is not the file that owns the sequence itself.
+This is a programme identity/orientation, not a new canonical definition.
 
----
+For current direction read:
 
-## 1. One-Sentence Orientation
+1. `STATUS.md §Fast Status`
+2. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+3. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+4. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
 
-SRT's minimal orientation is: **choice precedes stable existence; reality is the manifestation and convergence of parameterized selection under constraint, friction, and history.**
+## 2. Current identity guard
 
-For formal definitions, do not rely on this sentence. Follow the canonical sources below.
+Do not restart SRT as a project whose highest burden is to derive every domain from a formal P0 theorem ladder.
 
----
+Current working separation:
 
-## 2. First Sources
+```text
+Constitution
+= perspective / author intuition / reader-entry operation / boundary / problem generation
 
-When the same concept appears in multiple files, use this order:
+Domain
+= objectification / formalization / measurement / experiment / statistics / proof / rival comparison
+```
+
+### Constitution non-formalization
+
+Constitution does not use equations, scalar thresholds or fully specified state spaces as constitutional authority.
+
+Reason: formalization is itself an objectification/public-convergence practice that stabilizes unit, boundary, grain, equivalence and normalization so a representation can travel across bearer/time/context. SRT Constitution is currently trying to inspect what such objectification assumes or removes when bearer participation, history attribution and position may be constitutive.
+
+This is **not** a claim that mathematics cannot express indexical/contextual relations.
+
+### Bearer participation guard
+
+```text
+bearer-as-position
+!=
+bearer-as-modeled-variable
+```
+
+Adding `observer`, `agent i`, `theta` or another variable does not by itself reproduce the participation/bearing relation of the phenomenon.
+
+Potential participating bearers may include subject, reader/researcher, organism/process or social/collective unit, but no unit gains subjecthood, phenomenality or epistemic privilege automatically.
+
+### Reflexivity guard
+
+The Constitution has no God-view exemption. It is proposed from a position and is evaluated through cross-position re-enactability plus domain-side productive adequacy.
+
+```text
+position-indexed access
+!= general epistemic privilege
+!= infallibility
+```
+
+### Ontology / methodology guard
+
+Do not conflate:
+
+```text
+A. bearer-/position-indexed relations may be ontologically constitutive
+B. research should preserve participatory/bearer information
+```
+
+If B is claimed, state the preservation reason: a method should not delete a possibly constitutive relation before testing whether it matters.
+
+## 3. Constitution dialogue guard
+
+For substantive Constitution work:
+
+```text
+recover existing repository source
+-> AI divergence
+-> author convergence
+-> repository write
+-> internal red-team
+-> Neighbor Map
+-> author second adjudication
+-> freeze
+```
+
+- no theory write for every live branch;
+- AI agreement is not author convergence;
+- novelty is not a permission gate before author convergence;
+- Neighbor Map after convergence uses `resonance / contrast / pressure / translation`;
+- substantive Constitution theses should have a reader-entry operation;
+- identity remains frozen through Constitution v1 + one domain deep well unless reopen conditions trigger.
+
+## 4. Source recovery before invention
+
+For Constitution work, recover existing value before greenfield writing:
+
+- active 26Q book source intuition;
+- `SRT_Constitution_One_Page_CN.md` / Seven Theses;
+- Chinese Core Text / Euclid;
+- L0 prose;
+- Individuation / Hard Problem / Collective distinctions;
+- SourceCards, readings and patches;
+- 2026-08 source-mining, bearer, sigma and subtraction audits.
+
+Use `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md`.
+
+## 5. Domain research guard
+
+A domain deep well should ask:
+
+```text
+WHO participates?
+GIVEN ONE?
+What objectification/detachment made it public?
+What changes under SRT re-entry?
+Which old problems reorganize?
+Which new problems become visible?
+Can domain methods test them?
+Does the strongest existing framework already provide the same gain?
+```
+
+Before an SRT-sensitive domain formalization, consider a Bearer–Objectification Declaration:
+
+```text
+unit
+boundary
+grain
+equivalence
+normalization
+history loss
+position loss
+bearer substitution
+consequence attribution
+participation
+```
+
+This is a method candidate, not a canonical axiom or universal standard.
+
+## 6. Current formal/canonical sources remain historically authoritative until audited
+
+The 2026-08-29 programme reconstruction is prospective. It does not silently rewrite frozen owners.
+
+When exact **current registered** meanings are required, still follow the existing authority chain:
 
 1. `CANONICAL_REGISTRY.md`
 2. `Governance/SRT_CLAIM_LADDER.md`
@@ -482,146 +608,135 @@ When the same concept appears in multiple files, use this order:
 13. `Core/SRT_Core_21_Formal_Axioms.md`
 14. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 
-Use `Core/SRT_Core_21_Formal_Axioms.md` as a Core_21 routing index and legacy-numbering map, not as the first definition source.
+This list records present repository authority. A later Core/Core_Law role-reclassification audit will decide what should remain constitutional source, commentary, domain formalization, operational proxy or historical formalization.
 
-Use `Core/SRT_OPEN_TENSIONS.md` when a concept is known to be not fully sealed.
+## 7. Symbol quick guard
 
-Use `_SRT_CROSS_DOMAIN_MATRIX.md` when a core term moves across Physics, Neuroscience, Philosophy, Spirituality, AI, or governance contexts.
-
----
-
-## 2A. Retrieval Expansion Guard
-
-Use `_SRT_AGENT_RETRIEVAL_PROFILE.md` before substantial theory advancement, book writing, domain deep-dives, public-facing drafting, material fusion, or repository governance work.
-
-Do not confuse authority with retrieval:
-
-- `canonical: false` means a file must not define or override SRT terms.
-- It does not mean the file has low context value.
-- Bridge, split, annex, Operations, External Convergence, Source Intuition, and Backstage book files may be high-value retrieval context for the right task.
-
-For any non-simple SRT question, route through `_SRT_CONTEXT_ROUTER.md` and, when cross-domain, `_SRT_DEEP_THEORY_MAP.md`.
-
----
-
-## 3. Symbol Quick Guard
-
-> Merged from the former `_SRT_SYMBOL_QUICK_GUARD.md` (2026-07-20). These are fast boundaries and pointers, not definitions; use `_SRT_SYMBOL_TABLE.md` and the canonical anchors when exact definitions, equations, or notation conflicts matter.
-
-| Symbol / term | Fast guard | Definition authority |
+| Symbol / term | Fast guard | Current definition authority |
 |---|---|---|
-| `L_0` | Structured latent possibility, not nothingness and not physical vacuum by default. | `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_SYMBOL_TABLE.md` |
-| `L_1` | Manifest selected actuality / event / state, not merely material objects. Under EX-A, occurrence does not by itself imply persistent anchoring or stable-ISP identity. | `_SRT_SYMBOL_TABLE.md`, Core ontology files |
-| `L_2` | Convergence-history / stable constraint domain; not identical to any one landscape, institution, memory, or scaffold. | `_SRT_SYMBOL_TABLE.md`, `Core/SRT_OPEN_TENSIONS.md` |
-| `Ĝ_θ` | Embodied/parameterized selection or anchoring operator; implementation analogues do not define it. | `Core/SRT_Core_21_Minimal_Axioms.md`, `_SRT_SYMBOL_TABLE.md` |
-| `d` | Scalar summary of stake-coupled concern / irreversible-risk sensitivity by default. Competence, capacity, preference, or distinguishability is not enough. | `_SRT_D_VALUE_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
-| `D_eff` | Geometric capacity proxy / upper-bound candidate, not canonical `d`. | `_SRT_D_VALUE_CANONICAL.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ψ_f` | Payability burden / ontological friction. Fisher geometry, metabolic cost, stress, or pain are conditional projections only. | `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
-| `T_dir` | v0 operational proxy for readability / reorientation of the system's own selection direction; not reward, confidence, semantic valence, or coherence. | `_SRT_T_DIR_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
-| `ε_pg` | L0 minimum non-neutrality postulate; do not identify with consciousness or derive ISP anti-closure from it alone. | `_SRT_SYMBOL_TABLE.md`, Core P0 source; 21C B13 for conditional ISP-level bridge |
-| `ε_reg` | Implementation regularizer; only an analogy/echo of `ε_pg` unless separately argued. | `_SRT_SYMBOL_TABLE.md` |
-| `ε_s` | Stake-threshold bridge for direction-level admission; not stake itself. | `_SRT_SYMBOL_TABLE.md`, `_SRT_D_VALUE_CANONICAL.md` |
-| bare `σ` | Defaults to main-equation state field. Use `σ_sr` for self-reference ratio and `σ_j` for anchoring sub-targets. | `_SRT_SYMBOL_TABLE.md` |
+| `L_0` | historical/current structured latent-possibility construct; do not make it Constitution v1's unquestioned floor | L0 / symbol owners |
+| `L_1` | current manifest selected actuality in existing formal architecture; occurrence != persistence | Core/symbol owners |
+| `L_2` | convergence-history / stable constraint domain in existing architecture | symbol/open-tension owners |
+| `G_hat_theta` | formal role-carrier in current model architecture, not a prior chooser entity | Core_21 / symbol table |
+| `d` | stake-coupled concern / irreversible-risk sensitivity in current canonical system; proxies are conditional | `_SRT_D_VALUE_CANONICAL.md` |
+| `D_eff` | capacity/geometric proxy candidate, not canonical `d` | d owner / 21C |
+| `Psi_f` | payability/friction construct in current canonical system; projections are conditional | `_SRT_PSI_F_CANONICAL.md` |
+| `T_dir` | operational direction-readability proxy, not reward/confidence/valence | `_SRT_T_DIR_CANONICAL.md` |
+| `sigma_sr` | model-local/conventional individuation-related proxy under current owner reading; do not use it to bootstrap bearer identity | Individuation / current sigma decision records |
 
 ### Proxy rule
 
-If a statement says `proxy X = SRT variable Y`, rewrite it unless the canonical file explicitly licenses that identity. Safer forms:
+If a statement says `proxy X = SRT variable Y`, rewrite unless the current owner explicitly licenses identity.
 
-- `X is a candidate proxy for Y under stated conditions.`
-- `X maps to one projection of Y, not to Y itself.`
-- `X supports a bridge/lab hypothesis about Y, not a canonical definition.`
+Safer:
+
+- candidate proxy under declared conditions;
+- one projection, not the thing itself;
+- domain bridge/lab readout, not constitutional definition.
+
+## 8. Pre-objectification / objectification guard
+
+Existing SRT already contains a valuable methodological insight: a complete formal object space cannot be silently used to explain how objects become available as objects.
+
+Current Constitution programme sharpens this:
+
+```text
+bearer-involved / situated process
+-> objectification choices
+-> public/formal model
+```
+
+Do not reverse the explanatory order when the very target is individuation/objectification.
+
+But domain science may legitimately start from a declared object when its research question is already downstream of that objectification.
+
+## 9. Sigma worked-example guard
+
+Use `Operations/Audits/SRT_SIGMA_PREMATURE_DEINDEXING_WORKED_EXAMPLE_2026-08-29.md` as a repository-local warning:
+
+- coordinate sensitivity;
+- trace-attribution ambiguity;
+- provenance/control dissociation;
+- boundary-relative semantics.
+
+Allowed lesson: under-declared bearer/index/objectification choices make a supposedly natural scalar unstable or semantically overloaded.
+
+Forbidden lesson: mathematics cannot model indexicality.
+
+## 10. Existing important theory boundaries still apply
+
+Until separately changed:
+
+- primitive actualisation != persistence;
+- occurrence != stable ISP;
+- object != bearer != subject-position != phenomenality;
+- `B_s != B_p`, `B_s -> B_p ?` remains open;
+- Selection != Agency;
+- sigma cannot bootstrap the bearer domain it presupposes;
+- d/`Psi_f`/`T_dir` proxies must not be silently identified with their measured surrogates;
+- published/submitted manuscripts are protected by the reconstruction carve-out.
+
+Use `Core/SRT_OPEN_TENSIONS.md` when an existing concept is known to remain open.
+
+## 11. Materials and external theory
+
+Pipeline 1 continues.
+
+External theories/sources may function as:
+
+```text
+source-native evidence
+resonance
+contrast
+pressure
+translation
+mechanism example
+domain constraint
+```
+
+They do not prove Constitution.
+
+Do not stop source awareness merely because novelty auditing is paused. After author convergence, identify mature neighbors so SRT can inherit existing arguments and failures.
+
+## 12. Domain increment / subtraction
+
+Subtraction, bounded probes and rival comparison are not discarded.
+
+Their primary future location is:
+
+```text
+Constitution: red-team / anti-overclaim
+Domain: gate on claims that SRT adds something
+Repository: owner/status consistency
+```
+
+A domain is allowed to conclude `SRT adds no increment here`.
+
+## 13. AI-specific guard
+
+AI is one domain/pressure-test site, not the theory's definition engine.
+
+Do not infer subjecthood, stake or consciousness from performance alone. Do not use AI models as the constitutional prototype of bearer unless the author explicitly converges on such a claim after the new workflow.
+
+## 14. Minimal answer protocol
+
+For non-trivial SRT work:
+
+1. recover current programme identity from `STATUS.md`;
+2. distinguish current historical/canonical authority from prospective Constitution reconstruction;
+3. state whether the claim is Constitution candidate, commentary, domain model, bridge, lab, material evidence or governance;
+4. do not close listed open tensions;
+5. for Constitution, use source recovery + author convergence rather than greenfield generation;
+6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
+7. prefer explicit boundaries to broad unification language.
 
 ---
 
-## 4. Core Boundary Reminders
+## 15. Claim-Level Guard
 
-### Pre-objectification guard
-
-Do not demand that SRT begin by defining `L_0`, selection, experience, or reality as mathematical objects. Object specification is already an `L_1/L_2` operation: it selects boundaries, variables, relations, and admissible transformations after some manifestation has occurred. Formal models may describe selected structures and test bridge consequences, but they do not replace the pre-objectifying question SRT is designed to ask.
-
-Preferred reading:
-
-```text
-pre-object field / selection condition
--> manifestation and objectification
--> mathematical or scientific description
-```
-
-Forbidden reversal:
-
-```text
-first define a complete object space
--> then claim to have explained how objects become possible
-```
-
-Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L0_Ontological_Status.md`, `Core_Law/SRT_Selection_Argument.md`.
-
-### `L_2`
-
-For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
-
-### Former Real Choice Moment / RC-A
-
-`P1-T05 Real Choice Moment` is a **former** P1 theorem. RC-A withdrew it from P1; current P1 authority is `Core/SRT_Core_21b_Constitutive_Theorems.md`. Do not infer `no Selection` from script execution, habit replay, gradient following, or `L_2` automation. Selection and Agency are not identical.
-
-The adjacent P1 theorem that remains active is `P1-T06 Stable ISP`; its continued-selectability condition belongs to stable-ISP persistence, not to the definition of a one-shot Selection occurrence. Generative reselectability remains P2/P3 generative-health territory.
-
-For concrete Selection-event audits, load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, and a non-compensation rule. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only a bounded Selection-event candidate. It does not prove agency, subjecthood, consciousness, freedom, moral responsibility, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
-
-Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
-
-### Freedom
-
-Freedom is a downstream agency / normative / generative-health question. Legacy language linking freedom to preservation of “real choice moments” must be read through RC-A and must not be used to define Selection or to exclude scripted / habitual / automated selective processes from Selection ontology.
-
-### Primitive Actualisation / Selectability Boundary
-
-AM-A (author decision, 2026-08-11) fixes actualisation as the irreducible kernel already carried by P0-01. P0-04 is now a declared primitive boundary, not an internal gap closed by `fixed point`, `argmin`, steepest descent, `κ_0`, friction, payability, normalization, or writeback. `\hat G_\theta` is the kernel's formal role-carrier, not a prior entity or its cause. When a file speaks of a selector, chooser, subject, agency, or system-position, still mark whether it is a derived process, stable pattern, or assumed domain interface; none may be smuggled in before primitive selection.
-
-### Existence / Persistence Boundary
-
-EX-A (author decision, 2026-08-11) separates manifest actuality, anchoring persistence, and stable-ISP identity. P0-01 admits a determinate `L_1` event as actual; P0-02 asks whether it remains anchored and constrains later transitions; P1-T06 / ST-A asks whether the same perspective- and history-bearing process is recurrently reconstituted and continued-selectable. The legacy `E = 1 - H(L_1)/H(L_0)` expression is a P2/P3 historical heuristic only: no global `H(L_0^{abs})`, normalization, or quantitative existence index is canonical.
-
-### d-value explanatory-coordinate guard
-
-Do not require canonical `d` to be empirically disjoint from salience, reward, homeostatic error, pain, arousal, or memory strength. These may be local realizations or proxies. Overlap is not reduction. A proxy may be identified with canonical `d` only if it also tracks irreversible stake, consequence return, non-substitutability, and changes in future selection capacity. Route: `_SRT_CROSS_DOMAIN_MATRIX.md §1.1`, `_SRT_D_VALUE_CANONICAL.md`.
-
-### Hard-problem / internal-external guard
-
-Do not treat first-person experience as a hidden object that must be derived from a complete view-from-nowhere description. External description is itself a second situated selection and objectification of an internally borne event. The gap therefore involves selection-position difference and re-objectification, not only bandwidth compression. SRT provides orientation and anchoring for this relation; it does not claim that external language can exhaust or numerically reproduce qualia. Route: `Philosophy/SRT_HardProblem_Epistemology.md §3.1a-§3.4`.
-
-### Value Hiddenness
-
-For value hiddenness and its limits, use `_SRT_T_DIR_CANONICAL.md`.
-
-### `T_dir`
-
-For the distinction between `T_dir` and `d-value`, use `_SRT_T_DIR_CANONICAL.md`.
-
-### `\Psi_f`
-
-For payability and `\Psi_f` usage, use `_SRT_PSI_F_CANONICAL.md`.
-
-### `ε`
-
-Do not identify `ε_pg` with consciousness. Under ST-A, the P1 minimum for a stable ISP is continued selectability through recurrent historical reconstitution. ISP-level anti-closure and generative reselectability are conditional P2/P3 candidates, not a P1 theorem; see `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06 / former P1-T07` and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
-
-### Open-Tension Guard
-
-Before presenting any of the following as closed, check `Core/SRT_OPEN_TENSIONS.md`:
-
-- domain realization and selector individuation downstream of the AM-A / P0-04 primitive boundary;
-- `D_eff -> d_stakes` gate;
-- exact projection status of `Ψ_f`;
-- minimal formalization of `T_dir`;
-- healthy `L_2` support vs lethal `L_2` replacement;
-- stable ISP entry and maintenance.
-
----
-
-## 5. Claim-Level Guard
-
-Use the claim ladder:
+The P0–P5 ladder remains historical/canonical authority until a separate audit and
+author decision reclassify it (see §6 and `STATUS.md` 当前权威锚点). Reconstructing
+SRT's highest identity as a Constitution does not by itself retire it.
 
 - P0: primitive axiom
 - P1: constitutive theorem
@@ -638,48 +753,7 @@ Do not promote bridge or lab claims into core claims. In particular:
 - ghost-operator universality is a bridge unless separately hardened;
 - AI-domain claims do not define the SRT core.
 
----
-
-## 6. File-Type Guard
-
-- `canonical`: definitions and stable anchors.
-- `compact core`: short local reading path, not always final definition.
-- `bridge`: cross-domain mapping, not proof.
-- `lab`: hypothesis, proxy, or test interface.
-- `navigation / registry / index`: route-finding, not theory replacement.
-- `historical / archive`: provenance, not current authority.
-
-If a file is `split`, `annex`, `bridge`, `operations`, or `memory`, do not use it as a first definition source unless a canonical file explicitly points there for that purpose.
-
-That restriction is about definition authority, not retrieval. Use `_SRT_AGENT_RETRIEVAL_PROFILE.md` to decide when these files should still be read as support, provenance, connector-safe copies, or writing context.
-
----
-
-## 7. AI-Specific Guard
-
-AI is a pressure-test and boundary-test domain for SRT. It is not the theory's definition engine.
-
-Current AI claims should preserve both sides:
-
-- negative boundary: performance, language, or optimization does not by itself imply real subjectivity, stake, anchoring, or consciousness;
-- positive test window: SRT may still ask what minimal conditions would suffice for surrogate stake or agentic closure.
-- architecture-state rule: statements about AI `d-value`, burden, subjectivity, or friction must distinguish training-time, inference-time, and persistent-memory / history-bearing deployment. Inference-only conclusions must not be silently generalized.
-- stake-bearing spectrum: use `AI/AI_POSITIONING_NOTE.md` S0-S4 before saying "LLM has `d \approx 0`" or "AI has stake".
-
-Use AI files as domain tests and bridges back to canonical sources, not as primitive theory sources.
-
----
-
-## 8. Minimal Answer Protocol
-
-When answering about SRT:
-
-1. Name the canonical source you rely on.
-2. State the claim level if hardness matters.
-3. Mark bridge, lab, or companion material explicitly.
-4. If a point is listed in `Core/SRT_OPEN_TENSIONS.md`, do not present it as closed.
-5. For non-trivial questions, name the retrieval route or task profile used.
-6. Prefer short, hard claims over broad unification language unless the question explicitly asks for bridge speculation.
+Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 
 
