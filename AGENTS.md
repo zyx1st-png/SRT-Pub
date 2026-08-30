@@ -66,6 +66,16 @@ Before editing theory files, also read:
 1. `Governance/SRT_CANONICAL_FREEZE.md`
 2. `Governance/SRT_EDIT_PROTOCOL.md`
 
+### Frontmatter write ratchet
+
+For any **new or substantially edited ordinary Markdown file**, use one of the repository ratchet status values:
+
+```text
+draft | active | frozen | archived
+```
+
+Do not invent versioned status strings such as `active_v2` or `superseded_input`; put finer lifecycle meaning in a separate field such as `record_stage`. Explicit noncanonical transcript/source-record exceptions are governed by `scripts/check_frontmatter.py`; do not generalize those exceptions to ordinary theory/governance files.
+
 ## Constitution Dialogue Hard Guard
 
 For Constitution work, the default workflow is:
@@ -73,10 +83,11 @@ For Constitution work, the default workflow is:
 ```text
 existing source recovery
 -> AI divergence
+-> Light Neighbor Awareness (read-only; no gate; no repo artifact by default)
 -> author convergence
 -> repository write
 -> internal reflexivity/circularity red-team
--> bounded Neighbor Map
+-> Full Neighbor Map
 -> author second adjudication
 -> Constitution freeze
 ```
@@ -87,7 +98,8 @@ Hard rules:
 - AI-generated alternatives are not author decisions.
 - Two models agreeing is corroboration, not proof and not author convergence.
 - Do not use novelty/prior-art as a permission gate before the author knows what they mean.
-- After convergence, do perform a Neighbor Map to learn mature formulations, objections and failure history.
+- **Light Neighbor Awareness** occurs before convergence only to reduce avoidable rediscovery and improve terminology/problem precision; it is read-only, bounded, does not score novelty, does not recommend keep/drop, and creates no repository artifact by default.
+- **Full Neighbor Map** occurs only after convergence and internal red-team; it uses `resonance / contrast / pressure / translation` for comparative positioning and external legibility, not permission to think.
 - Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
 - Constitution must not use equations/scalars/thresholds/state-space formalisms as constitutional authority.
 - Domain formalization is allowed and encouraged when the domain declares its objectification assumptions.
