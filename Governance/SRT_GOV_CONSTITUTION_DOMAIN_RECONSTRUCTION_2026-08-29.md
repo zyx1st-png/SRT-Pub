@@ -425,7 +425,7 @@ Existing uses are a namespace/history constraint, not proof that the origin intu
 - `Physics/SRT_Phys_07_Complex_Systems.md`: `Chaos as Hyper-Connectivity` / `Order as Topological Severing` — currently `claim_mode: translation`, `canonical: false`, so this is a domain/translation namespace collision rather than a constitutional veto;
 - `Core_Law/SRT_Core_Text_CN.md`: `秩序 = L1 对被保留的选择沉积的回读命名`, explicitly not an L0 intrinsic property.
 
-The `秩序` collision carries an additional rollback precedent. `Core_Law/SRT_Core_Text_CN.md` records a 2026-08-11 wording repair: the former sentence `所有选择都指向秩序` was replaced because it treated the minimal non-neutral term as a contentful order-drive and conflicted with the file's own hardened account of `秩序` as L1 readback of sedimentation. Therefore any future constitutional reclaim of `秩序` must explicitly adjudicate this precedent before altering a Core/Core_Law owner or restoring order-as-drive language.
+The `秩序` collision carries an additional rollback precedent. `Core_Law/SRT_Core_Text_CN.md` records a 2026-08-11 wording repair: the former sentence `所有选择都指向秩序` was replaced because it treated the minimal non-neutral term as a contentful order-drive and conflicted with the file's own hardened account of `秩序` as L1 readback of sedimentation. Any future constitutional reclaim of `秩序` therefore has to adjudicate this precedent explicitly before a Core/Core_Law owner is changed or order-as-drive language is restored.
 
 ### 15.4 Paid-source rediscovery guard
 
