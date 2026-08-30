@@ -4,12 +4,13 @@ type: source_intuition
 status: active
 record_stage: active_author_trace
 date: 2026-08-29
+updated: 2026-08-30
 layer: source
 epistemic_layer: os
 claim_mode: author_intuition
 canonical: false
 ai_do_not_use_for_definition: true
-tags: [Constitution, AuthorTrace, Perspective, Bearer, Objectification, DomainResearch, Methodology]
+tags: [Constitution, AuthorTrace, Perspective, Bearer, Objectification, DomainResearch, Methodology, Multiplicity, Unity, AuthorTestimony]
 ---
 
 # SRT Constitution identity — author source trace (2026-08-29)
@@ -168,3 +169,311 @@ operational definitions allowed
 - 不把所有领域强制翻译成 Selection；
 - 不追溯重写已发表 Frontiers 或已投稿 Adaptive Behavior 稿件；
 - 不因本轮身份重构立即批量删除/重写 Core/Core_Law。
+
+## 10. 第一条 Constitution 的当前作者收敛：先追问 One 之前，而不是只研究 One 之后
+
+作者明确提出：
+
+> **“我们不应该只关注完成的 one 后的表现，而应该追问成为 one 之前的选择。”**
+
+随后对话把这一作者意图拆成三个不同强度，避免再次把 `Selection` 一次性塞入全部 One-formation：
+
+```text
+C  completed One has no explanatory exemption
+
+D1 ask which prior Selection(s) participated in the formation,
+   stabilization, objectification, history or continuation of a One
+
+D2 all One-formation as such is Selection;
+   Selection is the universal generic name of One-formation
+```
+
+当前收敛状态：
+
+- **C：作者方向明确接受。** SRT 不应只从已经完成、已经被当作研究单位的 One 开始。
+- **D1：以有界形式接受。** 面对一个被稳定识别、对象化或由某位置持续承担的 One，要向前追问哪些 Selection 已参与其 unit、boundary、history、continuation 的形成。
+- **D2：继续悬置。** 当前没有作者裁决说“所有 One-formation 都应统称 Selection”。
+
+因此本阶段禁止把作者的研究入口主张静默改写成：
+
+```text
+One-formation = Selection
+```
+
+也禁止用“薄 Selection / 厚 Selection”来绕过已有 Selection 门槛。
+
+## 11. Q25 与 R4-pre 已支付的边界：Mere Happening、historical formation 与 Selection 不得重新混合
+
+本轮回读确认：
+
+- `Q25_选择广于意识.md` 明确允许一种变化“发生了、甚至排开了其他状态”，但如果没有跨过 `排开—定形—写入` 的三步门槛，仍只是 `Mere Happening`，不是该章意义上的 `Selection Structure`。
+- `Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md §7` 已经明确裁过：
+
+```text
+primitive Selection occurrence
+!=
+full historical formation / retained unity
+```
+
+并把 `排开—定形—写入` 优先路由为：
+
+```text
+historically effective selection structure
+or
+stable object / terrain formation
+```
+
+而不是 primitive occurrence 的最薄定义。
+
+同一审计 §9 / §14 还已经保留：
+
+```text
+minimal write-in
+!= anchoring
+!= backgrounding
+
+record exists
+!= record constrains later selection
+!= record becomes default background
+```
+
+以及：
+
+```text
+E1 primitive actualisation -> ? -> historically effective write-in
+E2 historically effective write-in -> ? -> persistent/reidentifiable object
+E3 object/process continuity -> ? -> own-history attribution / bearer admission
+E4 world-historical facticity != candidate-unit borne history
+```
+
+因此这些区分属于**已支付过代价的 source-recovery input**。新 Constitution 可以改变它们的角色，但不得把已经解决过的问题重新包装成第一次发现。
+
+## 12. 从“两个 One”修正为 One 的关系位置：object/interface-for-position 与 continuation-from-position
+
+作者随后提出：
+
+> **“从主体和更小的单元的角度来说，有两种一。作为具有微效价的外部对象化的一。作为具身位维持的具有选择能力的一。”**
+
+经过 Q14 / bearer owner 回读后，当前不把这句话固定成两个互斥本体类别。更稳的作者意图恢复是：一个 One 至少可以从两种**关系位置**被追问。
+
+### 12.1 作为某个位置所面对的 One
+
+问题形式：
+
+> **它如何对一个具身位置成为一个可显现、可遭遇、可对象化的“一”？**
+
+这里涉及的已有源层次包括：
+
+```text
+independent reality
+!= public readable identity
+!= givenness
+```
+
+以及在 bearer 已经在场之后：
+
+```text
+manifest interface
++ embodied position
+-> micro-valence
+```
+
+这不是说 object-One 的本体存在依赖观察者，也不是说微效价是对象向外“发出”的效力。
+
+### 12.2 作为从自身位置继续的 One
+
+问题形式：
+
+> **什么使这个位置自己继续算作“这一个”？**
+
+当前最稳的自然语言入口是：
+
+```text
+consequence returns here
++
+history is written / borne here
++
+this history changes later selectability from here
+```
+
+这里优先使用 `selectability` 而非直接写“选择能力”，以保留仓库既有：
+
+```text
+bearer != selector-position != subject-position != experiencer
+```
+
+因此当前不再使用上一轮临时的 `O-One / B-One` 作为拟技术分类。可保留的核心区别是：
+
+```text
+something-for-this-position
+!=
+continuation-from-this-position
+```
+
+二者天然耦合，但承担不同问题。
+
+## 13. 微效价术语纠错：它在 bearer 侧，不能再拿来命名前 bearer 的场侧差异
+
+Q14 已经把“微效价”定义得很清楚：
+
+> 显现界面与一个具体具身位相遇时出现的最小趋避倾斜，是“这个已显现界面，对我如何”的最小读数。
+
+因此必须保留：
+
+```text
+micro-valence
+!= minimum non-neutrality / epsilon_pg
+!= concern
+!= stake-coupled d-value
+```
+
+准确层级关系是：
+
+```text
+minimum non-neutrality
+= pre-object / no specific bearer / no specific object
+
+micro-valence
+= later, at manifest-interface x embodied-position encounter
+
+stake / d-value
+= later still; cannot be inferred directly from micro-valence
+```
+
+`03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md §2.2` 已经明确禁止把微效价写成 `epsilon_pg` 同义词，也禁止绕过 d-value stake gate。
+
+因此本轮撤回任何“微效价 = 一个无 bearer 的局部场侧作用”的解释，不创造第二套不兼容的“微效价”。
+
+## 14. 作者进一步收敛：SRT 可从“多与一的生成及相互关系”重新理解
+
+作者明确提出：
+
+> **“可以把 SRT 理解为研究多和一（而不是两个一）生成以及相互关系的理论。”**
+
+这一步优先于把 One 固定成两个类别。当前可记录的上位研究问题是：
+
+```text
+多如何形成一？
+一如何继续算作一？
+形成的一如何留下历史并重新塑造后续的多？
+```
+
+这里的“多”暂时使用低负担自然语言，不注册成新的 primitive / state space / technical object。尤其不得把“多”自动读成“一堆已经完成的小 One”。它首先指向：在一个稳定 unit 被给定之前，差异、可能性、关系、路径与形成方向尚未被压成单一研究单位的开放问题。
+
+同样，“一形成后重新塑造后续之多”不是新发现。已有 source 中最成熟的实例之一是：
+
+```text
+Q10 order/backgrounding
+-> Q11 pre-cropping
+-> visible / reachable / low-friction / payable option-generation gates
+```
+
+以及 2026-07-05 bridge 对 `P1-T03 L2 downward constraint` 的登记。新 Constitution 的问题只是：这些 domain/source 机制是否显现了一个更上位、可跨领域重新执行的 perspective grammar；不得把 Q11 本身反升格成 Constitution 总定义。
+
+## 15. 作者原初证词：十多年前的“混沌—存在—秩序”应保留为 identity provenance，而不是立即重定义三个 technical terms
+
+作者在 2026-08-30 明确补充了一条仓库此前没有以这种方式记录的长期源直觉：
+
+> **“我从最开始进入这个理论的研究是从十多年前，当时就有很强的直觉认为我研究的主题是关于混沌、存在和秩序，正好对应目前的多（混沌），一（存在），选择（秩序）。”**
+
+这条材料的证据身份是：
+
+```text
+AUTHOR TESTIMONY / ORIGIN INTUITION
+!= repository-recovered wording
+!= canonical definition
+```
+
+它的权重来自作者本人对理论起源的长期记忆，不应伪装成仓库已有文本，也不应被后来的 formalization 反向抹掉。
+
+当前只记录**谱系对应**，不写定义等号：
+
+```text
+原初“混沌”
+<-> 当前重新出现的 multiplicity / pre-unit question
+
+原初“存在”
+<-> 当前重新出现的 One / unity-establishment question
+
+原初“秩序”
+<-> 当前重新出现的 Selection-history / sedimentation / later-conditioning question
+```
+
+特别注意：作者原话中的“选择（秩序）”当前**不裁成 `Selection = Order`**。Selection 也可能更适合作为连接 multiplicity、unity、history/order 的关系词；这一点仍属待裁决。
+
+### 15.1 为什么暂不把三个原词注册成 Constitution technical vocabulary
+
+仓库已经存在不同层级的技术用法：
+
+- Core / Reference Dynamics 中的 dynamical chaos / edge-of-chaos；
+- `Physics/SRT_Phys_07_Complex_Systems.md` 中 `Chaos as Hyper-Connectivity` / `Order as Topological Severing`，但该文件当前 frontmatter 明确为 `claim_mode: translation`, `canonical: false`；
+- Core Text 另有“秩序 = 观察者对沉积的回读，不是 L0 固有属性”的用法。
+
+因此目前的真实问题是 **namespace / historical objectification collision**，不是作者原初三元被逻辑否决。
+
+当前纪律：
+
+```text
+不写 Chaos := multiplicity
+不写 Existence := One
+不写 Order := sedimented Selection
+不写 Chaos = L0 / Existence = L1 / Order = L2
+```
+
+也不立即修改任何 Core / Physics / Reference Dynamics owner。
+
+更稳的执行方式是：
+
+1. 保留“混沌—存在—秩序”为作者原初 identity provenance；
+2. Constitution 当前继续使用“多 / 一 / 形成 / 历史 / 后果 / 位置”等低负担工作语言；
+3. Constitution v1 形成后，再反问它是否忠实重新表达了这条十多年前的原初三元；
+4. 只有确有必要时，才另行裁决是否 reclaim 三个词，以及 domain technical usages 如何显式限定命名空间。
+
+## 16. 当前可用的生成视角与仍悬置的边界
+
+经过本轮 source recovery + 作者对话，目前最稳的 Constitution-level 工作视角不是一组新公式或新 primitive，而是：
+
+```text
+不要只从 completed One 开始。
+
+追问：
+多如何被收束 / 形成 / 识别为一？
+这个一如何留下、继续、承担历史？
+后果回到哪里？
+形成结果如何退入背景并塑造后来可能出现的多？
+研究者自己的对象化在这条链中做了什么？
+```
+
+Q28 的两条作者源动作仍值得作为恢复资源继续对读：
+
+```text
+写出去
+-> 结果留下、固化为地形、冒充起点
+
+流回来
+-> 后果回到承担位置、把该位置养厚
+```
+
+但当前不把它们升格成 Constitution“双公理”。
+
+### 16.1 仍未裁决
+
+- `Selection` 是否只是多—一生成中的核心关系之一，还是更上位的统一名称；D2 继续悬置。
+- “多”的最低含义如何表达，既不预设完整 unit inventory，又不创造新的前对象本体实体。
+- 多→一 与 已形成结构→后续多 是否为对称运动；当前没有作者裁决。
+- bearer / consequence-return 是否应进入 Constitution 第一条，还是在第一条“取消 Given One 豁免”之后作为下一条 perspective interface。
+- Q28 的“写出去 / 流回来”最终是 Constitution grammar、source commentary，还是只在 domain 中展开。
+- “混沌—存在—秩序”是否最终 reclaim 为 Constitution 用词；当前只保留 author-origin testimony。
+
+## 17. 本次写回边界（2026-08-30）
+
+本次记录只做 source-trace consolidation：
+
+- 不新建 Constitution 正文；
+- 不改 frozen Core/Core_Law owner；
+- 不重定义 `Selection`、`micro-valence`、`epsilon_pg`、`d-value`、`L0/L1/L2`；
+- 不把 Physics translation 内部术语反升格为 Constitution authority；
+- 不把 author testimony 伪装成 repository-recovered source；
+- 不把对话中 AI 的临时 `O-One/B-One`、`thin Selection` 或 `Chaos = multiplicity` 写成理论结论。
+
+下一阶段应从这里恢复作者已收敛内容，再进入 Constitution substantive item 的内部 reflexivity / circularity red-team 与后续作者裁决，而不是重新从长对话中猜测本轮进度。
