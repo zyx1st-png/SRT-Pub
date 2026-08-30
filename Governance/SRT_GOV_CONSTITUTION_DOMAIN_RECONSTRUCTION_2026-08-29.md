@@ -366,7 +366,7 @@ Superseded intermediate proposal files should be converted to short redirect/his
 
 This gate prevents a live author intuition, a source-recovery paraphrase, or an AI working label from silently becoming a second incompatible definition of an existing SRT term.
 
-It is a **governance rule**, not a theory definition. When a term is already used in Core/Core_Law, book vocabulary, bridge material, or a domain translation, first recover the existing meaning and role before reusing the same word constitutionally.
+It is a **governance rule**, not a theory definition. The active author-source record for the present convergence is `01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md`; use that file to recover what the author actually said or left unresolved, and use this gate to constrain how those statements may be reused. When a term is already used in Core/Core_Law, book vocabulary, bridge material, or a domain translation, first recover the existing meaning and role before reusing the same word constitutionally.
 
 ### 15.1 `Selection` / One-formation boundary
 
