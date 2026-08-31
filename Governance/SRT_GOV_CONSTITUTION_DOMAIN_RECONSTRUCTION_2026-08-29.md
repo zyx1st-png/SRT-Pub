@@ -482,7 +482,7 @@ bearerhood           does not derive from   our re-identification cut
 
 Basis: `Operations/Audits/SRT_PH_IND07_OWNER_SUBTRACTION_2026-08-25.md` (observational cuts must not be turned into bearer substances merely because a model uses time-indexed descriptions), and the two separate unresolved links at `Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md` §14 — E2 ends at `persistent/reidentifiable object`, E3 runs from `object/process continuity` to `own-history attribution / bearer admission`.
 
-Item (1) admits both world-side formation and cognitive/public objectification as answer types. It presumes neither that they coincide nor that they exhaust the question. Consequently **the output of (1) does not route the reader to (2) or (3)**: both branches stay open after any (1) answer. This is a property of the sibling structure, not an incompleteness of (1).
+Item (1) admits both world-side formation and cognitive/public objectification as answer types. It presumes neither that they coincide nor that they exhaust the question. Consequently **an answer to (1) does not determine, entail, or close either (2) or (3)**. The two sibling audits remain independently open; whether either applies, and whether it succeeds, must be assessed on its own terms. This is a property of the sibling structure, not an incompleteness of (1).
 
 ### 16.2 No self-exemption for this partition
 
@@ -496,7 +496,9 @@ The three interfaces are themselves a cut. They are the current analytic interfa
 
 ### 16.4 Reopen threshold
 
-Reopening the frozen skeleton requires **all** of:
+**Scope.** This gate freezes only the Constitution-v1 opening skeleton **under the current Constitution + Domain programme identity**. It neither covers nor supersedes the identity-level reopen conditions in `§1` of this document and `§12` of `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`. If programme identity is legitimately reopened under those conditions, the skeleton must be re-adjudicated with it; `§16.4` must not be used to keep the skeleton independently locked across an identity change.
+
+Within that scope, reopening the frozen skeleton requires **all** of:
 
 ```text
 1. a named conflict, with file path and locator, in one of:
