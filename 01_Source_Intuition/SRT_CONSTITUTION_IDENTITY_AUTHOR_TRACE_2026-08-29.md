@@ -427,28 +427,31 @@ Q28 的两条作者源动作仍值得作为恢复资源继续对读：
 
 作者明确撤回了先前带箭头的三层阶梯表述。冻结的两条非蕴含（`re-identifiability` 不蕴含 bearerhood；bearerhood 不由我们的再识别切口推出）及其审计依据记于 `GOV-CONST01 §16.1`。
 
-### 18.2 第一条的 reader-entry operation（programme 五格，`Perspective` 待裁）
+### 18.2 第一条的 reader-entry operation（programme 五格，已齐）
 
-programme 模板是五格（本文件 §2、blueprint、execution plan 三处一致）；`GOV-CONST01 §7` 的四项是**门槛**，不是标准。本节按五格记录，其中第一格尚无作者裁决。
+programme 模板是五格（本文件 §2、blueprint、execution plan 三处一致）；`GOV-CONST01 §7` 的四项是**门槛**，不是标准。五格于 2026-08-31 补齐。
 
 ```text
-Perspective   **待裁**——本条邀请读者从哪里看，尚未收敛。
-              §7 四项门槛已满足，但 programme 五格未齐；
-              进入 Constitution v1 正文前须补。
+Perspective   从你已经在某个位置把一个 One 加以区分、组织和使用的地方看。
 
-悬置的默认   我手里这个"一"不需要为自己的来路负责
+悬置的默认    我手里这个"一"不需要为自己的来路负责
 
-读者动作     第一问：这个"一"从哪儿来？
-             第二问（不给分类清单）：这个答案又把什么当成已经给定了？
+读者动作      第一问：这个"一"从哪儿来？
+              第二问（不给分类清单）：这个答案又把什么当成已经给定了？
 
-变得可见     当前解释自己的给定起点
+变得可见      当前解释自己的给定起点
 
-边界         用于暴露当前解释的给定起点；
-             不要求无限递归，
-             也不要求找到一个完全无前提的终极基础
+边界          用于暴露当前解释的给定起点；
+              不要求无限递归，也不要求找到一个完全无前提的终极基础。
+
+              这里指定的是 reader-side 的分析位置；不因此断言被研究的
+              One 自身具有 perspective 或 bearerhood，也不把这一分析
+              切口当作 One 本身的构成。
 ```
 
 第一条的稳定收益是**纵向的 givenness probe**。它**不承诺**读者通过一次操作必然发现世界侧形成与认知/公共对象化侧的完整分侧——分侧是执行后可能显现的答案范围，不是 reader-entry 的前置门槛。
+
+`Perspective` 格只指定读者从哪里进入本条操作，不承担 SRT 对 perspective 本身的理论主张；后者见 §19。
 
 ### 18.3 探针的 source attribution
 
@@ -478,3 +481,59 @@ Perspective   **待裁**——本条邀请读者从哪里看，尚未收敛。
 第一条允许世界侧来路答案。**当一个世界侧来路答案沿 `Q05` / `Q25` 的 SRT source route 继续展开时，technical Selection 可能进入答案。** 这不预设所有 world-side One-formation 都是 Selection——D2 继续悬置——也不排除答案停在该 route 之外。
 
 因此 `Selection` 虽不出现在第一条的句子里，对外说明时仍应准备好用 `Q25:44` 的门槛正面回答「这不就是 Selection 吗」，而不是回避。
+
+## 19. 2026-08-31 作者裁决：内 / 外是分析切片，不是过程模块
+
+### 19.1 裁决
+
+> Perspective 与 bearer 的「外 / 内」区分，是对**同一持续过程**所作的分析切片：前者关注现实如何从一个位置被组织，后者关注后果与历史如何回到并改变该持续位置。该区分**不主张过程由两个模块构成**；对「同一过程」的划分本身也**不享有免检**。
+
+作者原话（2026-08-31）：
+
+> 「bearer 是对内，perspective 是对外」
+> 「内外是从理解和认知角度（切片）去看的结果，从过程角度来说是一体两面」
+
+### 19.2 记账：哪一层已付，哪一层是本轮推广
+
+```text
+直接治理依据   GOV-CONST01 §16.2
+               analytic cut != ontic module（已冻结）
+
+已有维度实例   Operations/Audits/SRT_PH_IND07_OWNER_SUBTRACTION_2026-08-25.md
+               Obj_t1 / Obj_t2 是 observational cuts，不得因模型使用
+               time-indexed descriptions 就实体化成两个 bearer substances
+               —— 这是时间轴上的实例，不是一般原则的支付
+
+本轮作者推广   inward / outward 分析切片 != 两个过程模块
+               （从时间轴推广到分析方向轴，本轮新增）
+```
+
+`切片` 沿用源头语言（`Q02` 「你拍下任何一张切片，它都不是一个独立完整的对象」），不是新造术语。
+
+本节有意**不**使用「继续生成」——该词属 `Q14` 的价值发生链（「价值是对继续生成的锚定」），本裁决不牵入那条链。
+
+### 19.3 明确不做的事
+
+```text
+不重读 PH-IND02 的 PERS-1 / PERS-2 / PERS-3
+```
+
+`Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` 与本裁决有 source resonance（closure / boundary 作为 perspective 与 bearer tests 的共同前置；PERS-1 为 system-relative 的局部非对称；PERS-2 要求后果回到同一持续 closure）。
+
+但该文件 `claim_level: P3_bridge_hardening`、`canonical_status: non_canonical`，是桥接材料不是定义源。且本裁决只说内 / 外之**分**属于分析，不说内 / 外**条件是否被满足**属于分析——PERS-2 的判据是关于候选系统的事实，不随分析深浅而变。因此本轮**不动** PH-IND02 的 admission architecture。
+
+### 19.4 这条纪律支撑什么、不支撑什么
+
+```text
+支撑   分析边界纪律：不得把为分析而切开的两侧反投射成两个独立生成模块
+
+不支撑 过程本体论：本裁决不主张存在一个名为"统一过程"的基本实体
+```
+
+「同一过程」这个说法本身仍在第一条的射程内——「为什么把这些变化切成一个过程」是合法追问（同 `GOV-CONST01 §16.2` 的 no-self-exemption）。因此本条是读法纪律，不是地基，不得被后续工作当作不可再问的基础。
+
+### 19.5 未入库
+
+Perspective 发生学（利害 / continuation / 非对称 / 选择性组织 / 向外—向内闭环）本轮**不入库**，仍为 author-side candidate。它回答的是「perspective 为何存在」，与 §18.2 的 `Perspective` 格（读者从哪里进入本条操作）不是同一层问题。
+
+再次动它时须点名：`GOV-CONST01 §16.2`、`PH-IND07`、`PH-IND02`（含其 P3 claim level）。
