@@ -427,9 +427,15 @@ Q28 的两条作者源动作仍值得作为恢复资源继续对读：
 
 作者明确撤回了先前带箭头的三层阶梯表述。冻结的两条非蕴含（`re-identifiability` 不蕴含 bearerhood；bearerhood 不由我们的再识别切口推出）及其审计依据记于 `GOV-CONST01 §16.1`。
 
-### 18.2 第一条的 reader-entry operation（按 `§7` 四项）
+### 18.2 第一条的 reader-entry operation（programme 五格，`Perspective` 待裁）
+
+programme 模板是五格（本文件 §2、blueprint、execution plan 三处一致）；`GOV-CONST01 §7` 的四项是**门槛**，不是标准。本节按五格记录，其中第一格尚无作者裁决。
 
 ```text
+Perspective   **待裁**——本条邀请读者从哪里看，尚未收敛。
+              §7 四项门槛已满足，但 programme 五格未齐；
+              进入 Constitution v1 正文前须补。
+
 悬置的默认   我手里这个"一"不需要为自己的来路负责
 
 读者动作     第一问：这个"一"从哪儿来？

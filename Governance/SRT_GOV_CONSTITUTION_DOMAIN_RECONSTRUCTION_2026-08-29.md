@@ -518,6 +518,8 @@ the latest proposal being the latest
 
 Anything resolvable through `Boundary`, expository order, source attribution, or local wording is fixed in place and does not reopen the skeleton.
 
+**Anticipated application, not an added condition.** The one reopen path currently foreseeable is a `§7` failure on interface (2) or (3): if forming one of them yields only a worldview sentence with no executable reader operation, `§7` marks it `proposition_only` and keeps it out of Constitution v1 — which is a named active-governance conflict that makes the frozen three-interface adjudication substantively fail, and therefore already qualifies under the two requirements above. Recording it here so that outcome is met as the rule working, not as an argument about whether the freeze is being circumvented.
+
 Retrospective calibration on the 2026-08-30 red-team, recorded so this threshold is not merely asserted: the ladder-ordering finding cited `PH-IND07` and did reopen the skeleton — correctly admitted. The reader-operation circularity finding cited no owner conflict and was resolved inside the item by redesigning the probe — correctly not admitted.
 
 ---
