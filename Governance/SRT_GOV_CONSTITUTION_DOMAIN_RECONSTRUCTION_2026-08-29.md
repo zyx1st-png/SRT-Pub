@@ -450,7 +450,79 @@ Use source-native distinctions first; do not let a convenient working label acqu
 
 ---
 
-## 16. Domain breadth stop rule
+## 16. Constitution v1 skeleton freeze and reopen threshold
+
+The 2026-08-30 author adjudications fix the opening structure of Constitution v1. This gate protects that structure from latest-idea drift. Wording, boundaries, source attribution and expository order remain freely improvable and are **not** protected by it.
+
+### 16.1 Frozen structure
+
+```text
+suspend the exemption of a completed One
+                |
+                v
+(1) ARTICULATION        what is this One's provenance?
+                |
+        +-------+-------+
+        |               |
+        v               v
+(2) STILL-THIS      (3) OWN-HISTORY
+object-side         bearer-side
+re-identifiability  history / consequence / future-selectability
+                    attribution
+```
+
+(2) and (3) are **siblings, not parent and child**. The numbering is expository and navigational order only; it asserts no ontological generation sequence.
+
+Frozen non-entailments:
+
+```text
+re-identifiability   does not entail        bearerhood
+bearerhood           does not derive from   our re-identification cut
+```
+
+Basis: `Operations/Audits/SRT_PH_IND07_OWNER_SUBTRACTION_2026-08-25.md` (observational cuts must not be turned into bearer substances merely because a model uses time-indexed descriptions), and the two separate unresolved links at `Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md` §14 — E2 ends at `persistent/reidentifiable object`, E3 runs from `object/process continuity` to `own-history attribution / bearer admission`.
+
+Item (1) admits both world-side formation and cognitive/public objectification as answer types. It presumes neither that they coincide nor that they exhaust the question. Consequently **an answer to (1) does not determine, entail, or close either (2) or (3)**. The two sibling audits remain independently open; whether either applies, and whether it succeeds, must be assessed on its own terms. This is a property of the sibling structure, not an incompleteness of (1).
+
+### 16.2 No self-exemption for this partition
+
+The three interfaces are themselves a cut. They are the current analytic interface for reopening the question — not a claim that the world divides into three modules, and not a claim of completeness. A reader may re-run item (1) on this partition itself. This executes the `§5` reflexivity gate rather than declaring it.
+
+### 16.3 Phrasing constraints carried by this freeze
+
+- When a precondition on inquiry is stated, phrase it about **us**, not about the object: "once we have a candidate we can point at and ask about", never "once the One has become talkable". Talkability is a condition on asking, never a constitutive precondition of the One.
+- Do not introduce `界面` as a substitute term for the objectified working surface; it is already load-bearing in the source manifest-interface / micro-valence chain. Use the existing `Q01` language (`截取`, `工作面`).
+- `工作面` also carries an ordinary operations sense elsewhere in the repository ("the surface currently being edited"). This is register polysemy, not a namespace collision, and deliberately does **not** get a `§15` rule; disambiguate locally when precision is needed.
+
+### 16.4 Reopen threshold
+
+**Scope.** This gate freezes only the Constitution-v1 opening skeleton **under the current Constitution + Domain programme identity**. It neither covers nor supersedes the identity-level reopen conditions in `§1` of this document and `§12` of `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`. If programme identity is legitimately reopened under those conditions, the skeleton must be re-adjudicated with it; `§16.4` must not be used to keep the skeleton independently locked across an identity change.
+
+Within that scope, reopening the frozen skeleton requires **all** of:
+
+```text
+1. a named conflict, with file path and locator, in one of:
+   canonical owner / active governance / paid audit
+2. the conflict makes one of the frozen adjudications substantively fail
+```
+
+The following never constitute grounds to reopen:
+
+```text
+better wording
+a cleaner structure
+a new analogy or label
+two models agreeing
+the latest proposal being the latest
+```
+
+Anything resolvable through `Boundary`, expository order, source attribution, or local wording is fixed in place and does not reopen the skeleton.
+
+Retrospective calibration on the 2026-08-30 red-team, recorded so this threshold is not merely asserted: the ladder-ordering finding cited `PH-IND07` and did reopen the skeleton — correctly admitted. The reader-operation circularity finding cited no owner conflict and was resolved inside the item by redesigning the probe — correctly not admitted.
+
+---
+
+## 17. Domain breadth stop rule
 
 Before the first deep well is reviewed, do not launch parallel full programmes in Physics, Biology, AI, Social, Consciousness, Neuroscience and Epistemology.
 
@@ -460,7 +532,7 @@ A second domain opens only after Phase 9 productive-adequacy review.
 
 ---
 
-## 17. Epistemic-privilege boundary
+## 18. Epistemic-privilege boundary
 
 SRT may recognize asymmetric access from different positions.
 
@@ -477,7 +549,7 @@ Any domain that needs standpoint-specific evidential weighting must justify it i
 
 ---
 
-## 18. Merge/readiness criteria for this reconstruction PR
+## 19. Merge/readiness criteria for this reconstruction PR
 
 Before this PR is merge-ready:
 
