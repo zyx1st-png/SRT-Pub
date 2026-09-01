@@ -97,9 +97,10 @@ Hard rules:
 - **No theory write before author convergence.** AI may retrieve and present options, but should not create a Constitution artifact for every live branch.
 - AI-generated alternatives are not author decisions.
 - Two models agreeing is corroboration, not proof and not author convergence.
+- **When mature-domain overlap, neighbor comparison, or cross-domain mapping is in play, use cross-domain ontological unification (U-mode) rather than domain-local novelty maximization; tasks that raise no such question remain in their native task mode and must not be widened merely to manufacture cross-domain mappings. Switch to novelty/increment subtraction (N-mode) only when the active task explicitly requires it.**
 - Do not use novelty/prior-art as a permission gate before the author knows what they mean.
 - **Light Neighbor Awareness** occurs before convergence only to reduce avoidable rediscovery and improve terminology/problem precision; it is read-only, bounded, does not score novelty, does not recommend keep/drop, and creates no repository artifact by default.
-- **Full Neighbor Map** occurs only after convergence and internal red-team; it uses `resonance / contrast / pressure / translation` for comparative positioning and external legibility, not permission to think.
+- **Full Neighbor Map** occurs only after convergence and internal red-team; it uses `resonance / contrast / pressure / translation / realization` for comparative positioning and external legibility, not permission to think.
 - Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
 - Constitution must not use equations/scalars/thresholds/state-space formalisms as constitutional authority.
 - Domain formalization is allowed and encouraged when the domain declares its objectification assumptions.
