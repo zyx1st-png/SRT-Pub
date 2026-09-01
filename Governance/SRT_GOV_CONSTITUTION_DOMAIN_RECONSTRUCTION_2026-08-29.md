@@ -177,6 +177,30 @@ If an item only asserts a worldview sentence and no reader can do anything with 
 
 ## 8. Two-pass neighbor discipline
 
+**Programme objective.** SRT seeks cross-domain ontological unification rather than domain-local novelty maximization.
+
+**Operational U-mode (cross-domain ontological unification)** applies when mature-domain overlap, neighbor comparison, or cross-domain mapping is actually in play. In that context, unless the active task explicitly asks for novelty, originality, prior art, D-track increment, or a domain-specific `SRT adds X` claim, theory-development work should first ask whether the same SRT relation can preserve its semantic core across domain-specific realizations while gaining explanatory compression, transferable distinctions, or reciprocal constraint. Mature-domain overlap is therefore first a mapping / convergence / realization question, not a subtraction result.
+
+Tasks that raise no mature-domain overlap, neighbor-comparison, or cross-domain-mapping question remain in their native task mode and must not be widened merely to manufacture cross-domain mappings.
+
+**N-mode (novelty / increment audit)** is entered only when the active task explicitly requires that comparison. Finding prior art during U-mode does not by itself switch the task into N-mode.
+
+Finding a prior owner during U-mode must still be reported in its source-native vocabulary. Before author convergence, report it under Pass A without Pass-B adjudication; after convergence, position it with the applicable Pass-B relation. **Suppressing a discovered owner is not U-mode compliance.**
+
+U-mode should ask, at minimum:
+
+- what SRT relation is claimed to remain invariant across domains, and where that relation was fixed before the mapping was evaluated;
+- what domain-specific mechanism realizes, constrains, or pressures that relation;
+- what is shared and what must remain domain-specific;
+- what explanatory compression or cross-domain transfer is gained;
+- whether any stronger identity claim is independently warranted.
+
+The proposed invariant must be recoverable from an existing repository owner/source relation or an explicit author-adjudicated formulation **before** the domain match is evaluated. A label coined after seeing the domain match falls under `§15.5` and cannot by itself establish a cross-domain invariant.
+
+This default does not make convergence automatic support and does not authorize a flattening Theory of Everything. Semantic drift, retrospective relabeling, unargued identity and failure to preserve domain-specific mechanisms remain failures of unification.
+
+**Reciprocal constraint is an obligation, not merely a possible gain.** A domain result may narrow, defeat, or require revision of an asserted SRT mapping. If the mapping fails under its own declared conditions, revise or withdraw the SRT-side mapping; if the failure reaches the proposed invariant itself, register pressure on or revise the SRT relation rather than redescribing the domain result as merely a lower-level implementation.
+
 Neighbor work has **two different purposes** and therefore two different passes.
 
 ### Pass A — Light Neighbor Awareness, before author convergence
@@ -195,7 +219,7 @@ Rules:
 - bounded to the few most obvious mature neighbors;
 - no novelty score;
 - no permission gate;
-- no `resonance/contrast/pressure/translation` adjudication yet;
+- no `resonance/contrast/pressure/translation/realization` adjudication yet;
 - no repository artifact by default;
 - report source-native claims in their own vocabulary rather than translating them into SRT.
 
@@ -218,7 +242,20 @@ resonance
 contrast
 pressure
 translation
+realization
 ```
+
+Once Pass B is reached, U-mode outcome routing uses these labels rather than the `§9` increment cases:
+
+- `realization` — an existing domain mechanism or structure plausibly implements / manifests the SRT role while preserving the claimed semantic relation;
+- `translation` — the gain is primarily routing, reframing, or vocabulary alignment; no substantive cross-domain unification gain is claimed;
+- `pressure` — the domain result narrows, challenges, or requires revision of the proposed SRT mapping or its antecedents;
+- `contrast` — the apparent similarity breaks under closer comparison and should not be presented as a realization;
+- `resonance` — there is useful structural proximity, but the evidence does not warrant a stronger mapping claim.
+
+If none is warranted, leave the mapping unresolved and make no realization, identity, support, or superiority claim. `§9` remains the separate N-mode domain-increment gate; its Case A/B/C verdicts are not reused as U-mode verdicts.
+
+When a cross-domain relation needs finer classification, classify it as appropriate among: structural isomorphism, operational homology, shared constraint, explanatory compression, or genuine identity. These are **not asserted as one ordered strength ladder**. Genuine identity carries a stronger ontological burden than a successful projection or mapping, while explanatory compression may itself be a U-mode gain without implying identity. Multiple successful mappings do not establish identity; a genuine identity claim remains possible only with independent argument. This five-way governance vocabulary is adopted from the bounded **SRT-side synthesis** recorded in `Materials/2026/SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md §5.2`; it is not attributed as a source-native Rosenhagen taxonomy and does not elevate that SourceCard's evidence status.
 
 Not purpose:
 
