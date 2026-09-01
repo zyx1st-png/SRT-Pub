@@ -429,6 +429,10 @@ The `秩序` collision carries an additional rollback precedent. `Core_Law/SRT_C
 
 ### 15.4 Paid-source rediscovery guard
 
+For AI-generated Constitution synthesis, owner/source retrieval should normally occur **before** a new structural decomposition, ladder, axis, or named distinction is presented as a fresh candidate. Search both the key terms and the proposed relation before structural synthesis is presented to the author.
+
+This ordering constrains AI synthesis, not author intuition. A spontaneous author formulation does not need prior repository permission. If it arises before retrieval, check owners/source instances before the AI elaborates it into a new structure or presents it as novel. Post-hoc checking remains the fallback, not the primary path.
+
 When a dialogue newly derives a structure that resembles an existing paid source/audit result, do not present it as first discovery until the relevant source is checked.
 
 In particular, claims of the form:
@@ -487,6 +491,8 @@ Item (1) admits both world-side formation and cognitive/public objectification a
 ### 16.2 No self-exemption for this partition
 
 The three interfaces are themselves a cut. They are the current analytic interface for reopening the question — not a claim that the world divides into three modules, and not a claim of completeness. A reader may re-run item (1) on this partition itself. This executes the `§5` reflexivity gate rather than declaring it.
+
+Before **Constitution v1 itself** is frozen, item (1) must be run once on this three-interface partition and the result recorded, including the case where the partition survives unchanged. This is a 2026-09-01 author-added one-time freeze-exit requirement: it operationalizes the existing reflexivity permission; it does not by itself reopen the already frozen opening skeleton, and any substantive change to that skeleton still follows §16.4.
 
 ### 16.3 Phrasing constraints carried by this freeze
 
