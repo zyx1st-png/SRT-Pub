@@ -6,12 +6,11 @@ version: v1
 date: 2026-09-02
 layer: meta
 epistemic_layer: os
-claim_mode: constitutional
+claim_mode: canonical
 canonical: true
 dependency:
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
-  - Operations/SRT_CONSTITUTION_V1_SKELETON_AUTHOR_DECISION_2026-09-02.md
 tags: [Constitution, Perspective, ReaderOperation, V1]
 ---
 
