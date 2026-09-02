@@ -77,10 +77,17 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ## B. 规范辅助层（Canonical Support）
 
-### 5. 七命题宪法摘要层
+### 5. Constitution v1 — active reader-operation core
+- 主文件：`Core_Law/SRT_Constitution_V1.md`
+- status：**active Constitution v1**
+- 角色：固定六条 reader-executable perspective operations 与其边界；Constitution 打开说明义务，不充当 P0/P1 公理集、理论完备性证明或 domain mechanism。
+- 引用规则：凡涉及“什么属于 Constitution”“Constitution 是否要求某个理论答案”“六条接口之间是否构成 ladder / prerequisite”时，优先回链本文件。
+
+### 5a. Seven Theses — retained L1 interface, superseded as active Constitution
 - 文件：`Core_Law/SRT_Constitution_Seven_Theses.md`
-- 角色：为 SRT 提供最短的元理论宪法摘要，用于对外解释、框架比较与自我收口
-- 注意：它是顶层摘要，不替代 `Core_Law/SRT_Reference_Axioms.md`、`Core_Law/SRT_Reference_Ontology.md`、canonical 定义文件或主方程文件
+- status：**superseded_as_active_constitution**
+- 角色：保留为 L1 philosophical interface / commentary，用于保存旧七论框架、历史展开、对外解释与跨框架比较；不再承担 Constitution-level definition authority。
+- 注意：文件内旧“constitutional / top-level / every Thesis derives from L0”措辞只描述该旧架构的历史生成纪律，不得反向定义 Constitution v1，也不得把 Constitution 重新变成 L0 的下游推导层。
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
