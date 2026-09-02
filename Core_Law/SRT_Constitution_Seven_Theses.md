@@ -3,7 +3,8 @@ id: SRT-CONSTITUTION-7THESES
 type: constitution
 tags: [CoreLaw, Constitution, MetaTheory, CanonicalSupport]
 layer: L1
-status: superseded_as_active_constitution
+status: active
+record_stage: superseded_as_active_constitution
 epistemic_layer: os
 claim_mode: canonical
 dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
