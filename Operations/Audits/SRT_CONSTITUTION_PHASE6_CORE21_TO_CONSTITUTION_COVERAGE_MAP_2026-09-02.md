@@ -2,7 +2,7 @@
 id: SRT-CONSTITUTION-PHASE6-CORE21-TO-CONSTITUTION-COVERAGE-MAP-20260902
 type: audit
 status: active
-version: v1
+version: v2
 date: 2026-09-02
 layer: meta
 epistemic_layer: governance
@@ -14,6 +14,8 @@ dependency:
   - Core/SRT_Core_21_Minimal_Axioms.md
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
+  - Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md
+  - 03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
 tags: [Constitution, Phase6, Core21, P0, P1, CoverageMap]
 ---
@@ -145,7 +147,7 @@ This supports the need for the question but does not define a universal re-ident
 
 ### P1-T06
 
-Stable ISP gives a much stronger package：
+Stable ISP has **four** conditions：
 
 ```text
 iterative
@@ -154,25 +156,27 @@ history-bearing
 continued-selectable
 ```
 
-and ST-A requires recurrent reconstitution across a declared perturbation range。
+`bearing the downstream consequences of what it selected` is part of the fourth `continued-selectable` condition, not a fifth independent condition。ST-A also requires recurrent reconstitution across a declared perturbation range。
 
 This is clearly related to `(2)` but must not be collapsed into it：
 
 ```text
-re-identifiability
+successful re-identification
 !=
-Stable ISP / bearer admission
+Stable ISP standing
 ```
 
-The Constitution freeze explicitly preserves：
+and independently the Constitution freeze preserves：
 
 ```text
-bearerhood does not derive from our re-identification cut
+re-identifiability
+does not entail
+bearerhood
 ```
 
 ### Role relation
 
-P1-T06 is therefore best read as a **stronger formal/theory candidate for a specific class of persistent perspective-bearing processes**, not the Constitution answer to identity in general。
+P1-T06 is best read as a **formal-core result-state criterion for the model class SRT calls Stable ISP**。It is not a Constitution answer to identity in general, and current repository routing does not license reading it as universal bearer admission。
 
 ---
 
@@ -208,7 +212,7 @@ Ontological time as accumulated irreversible trace is a stronger temporal theory
 
 ### P1-T06
 
-History-bearing is one condition of Stable ISP, but Constitution `(3)` deliberately keeps historical attribution independent of full bearer admission。
+History-bearing is one condition of Stable ISP。That makes P1-T06 a stronger theory package about a declared process class；it does not erase Constitution `(3)`'s independent attribution burden and does not by itself settle same-bearer numerical identity across arbitrary branching cases。
 
 ### Role relation
 
@@ -220,7 +224,7 @@ P1-T02
 -> stronger theory of time/history depth
 
 P1-T06
--> stronger history-bearing process package
+-> stronger Stable-ISP history-bearing package
 
 Constitution (3)
 -> attribution question none of the above may silently skip
@@ -284,15 +288,7 @@ Re-cut and re-run the attribution.
 
 There is **no dedicated P0/P1 consequence-attribution rule** in 21A/21B。
 
-P1-T06 uses：
-
-```text
-bearing downstream consequences
-history writeback
-continued selectability
-```
-
-but it assumes a declared process and its consequence relation；it does not provide a unique rule for where effects count as landing under alternative boundary/grain/timescale cuts。
+P1-T06 uses consequence-bearing language inside its fourth continued-selectability condition, but it assumes a declared process and its consequence relation；it does not provide a unique rule for where effects count as landing under alternative boundary/grain/timescale cuts。
 
 This is consistent with later sigma-attribution audits that distinguish provenance / endogeneity / dependence / control and find no automatic unique attribution rule。
 
@@ -303,12 +299,20 @@ Constitution `(5)` exposes a real methodological burden that Core21 largely **us
 Therefore：
 
 ```text
-P1-T06 consequence bearing
+P1-T06 consequence-bearing language
 cannot back-define
 Constitution consequence attribution
 ```
 
-and `(5)` success still does not prove P1-T06 stable bearerhood。
+and neither direction should be over-read：
+
+```text
+(5) success
+!= Stable ISP proved
+
+Stable ISP standing
+!= same-bearer numerical identity universally proved
+```
 
 ---
 
@@ -394,7 +398,7 @@ stronger normative/generative conclusion
 constitutive consequence merely because it fits SRT vocabulary
 ```
 
-Both demotions should be treated as precedents for future Phase 6 hardening。
+Both demotions remain useful precedents for future Phase 6 hardening, but they do **not** create a presumption that P1-T06 must also be demoted。
 
 ---
 
@@ -403,10 +407,10 @@ Both demotions should be treated as precedents for future Phase 6 hardening。
 | Constitution probe | Core21 nearest asset | Relation | Does Core21 close it? |
 |---|---|---|---|
 | `(1)` provenance | P0-01 / P0-04 | stronger primitive/formal answer | NO — P0-01 itself has a declared primitive stopping point |
-| `(2)` re-identification | P0-02 / P1-T06 | persistence / stable-ISP answer | NO — re-identification != bearerhood |
+| `(2)` re-identification | P0-02 / P1-T06 | persistence / Stable-ISP answer | NO — re-identification != Stable ISP; bearerhood remains separately guarded |
 | `(3)` own-history | P0-03 / P1-T02 / P1-T06 | trace/time/history-bearing package | NO — attribution remains separate |
 | `(4)` current processability | P1-T03 / 21C B13 | downward constraint / generative rewrite | PARTIAL stronger answer family, domain realization open |
-| `(5)` consequence attribution | P1-T06 bearing language | uses consequence relation | NO dedicated attribution rule |
+| `(5)` consequence attribution | P1-T06 consequence-bearing language | uses consequence relation | NO dedicated attribution rule |
 | `(6)` evaluative re-run | none at P0/P1 | downstream normative theory only | NO, deliberately open |
 
 ---
@@ -439,59 +443,67 @@ The Constitution changes the **burden of admission and explanation**, not the tr
 
 ---
 
-## 12. Highest-pressure current item: P1-T06 Stable ISP
+## 12. P1-T06 correction after owner retrieval
 
-P1-T06 is the one P1 item most likely to be misread as a Constitution-level bearer theorem because it combines：
+An earlier Pass-1 reading treated P1-T06 as the highest-pressure candidate for a C-class bearer-admission review。Owner retrieval does **not** support that escalation。
+
+### Retrieved separation
+
+The active bearer routing explicitly keeps：
 
 ```text
-same process
-perspective
-history
-continued selectability
-consequence bearing
+Persistent Process
+!=
+Bearer
 ```
 
-The new Constitution deliberately distributed these burdens and froze non-entailments between them。
+and routes the burdens separately：
 
-### Current safe reading
+```text
+bearer admission
+-> PH-IND02 / bearer owners
+
+continued selectability / Stable ISP
+-> P1-T06 / individuation owners
+```
+
+The processual-bearer bridge likewise states that its continuity diagnostics do not modify P1-T06 and are not sufficient for same-bearer numerical identity in arbitrary branching/fission cases。
+
+### Current adjudication
+
+Therefore there is **no current C21-1 author gate** merely because P1-T06 conjoins four Stable-ISP conditions。Core is allowed to build stronger conjunctions; the Constitution anti-collapse rule only prevents those conjunctions from being smuggled back into Constitution-level bearer admission without an independent owner relation。
+
+Current safe reading：
 
 ```text
 P1-T06
-= formal-core result-state criterion for the model class SRT calls Stable ISP
-```
+= formal-core result-state criterion
+  for the model class Stable ISP
 
-not：
-
-```text
 P1-T06
-= Constitution has established the universal essence of bearerhood
+!= universal bearer-admission theorem
 ```
 
-### Future author gate C21-1
+### Reopen condition
 
-Later C-class review should decide：
+Reopen P1-T06 only if a concrete active surface is found that says or functionally entails：
 
 ```text
-A. keep P1-T06 as P1 internal formal-core definition/theorem,
-   but explicitly condition it on independently declared bearer/history/consequence relations;
-
-B. reclassify Stable ISP admission itself to P2 conceptual bridge,
-   keeping only a thinner P1 persistence/history result;
-
-C. split definition/result-state criterion from any theorem-level existence or sufficiency claim.
+Stable ISP standing
+=> bearer admission / same-bearer numerical identity
 ```
 
-This is a real theory/claim-hardness decision and should not be made inside the read-only audit。
+Absent that named conflict, no substantive reopen is warranted。
 
 ---
 
-## 13. Second pressure: P0 language after Constitution
+## 13. P0 language after Constitution
 
-### Future architecture gate C21-2
+### Future architecture/status correction
 
 No need to abolish P0/P1 numbering。
 
-But future registry/onboarding should make explicit：
+Future registry/onboarding should make explicit：
 
 ```text
 P0
@@ -507,10 +519,12 @@ This is primarily an architecture/status clarification, not a theory demotion。
 
 ## 14. Audit result
 
-**PASS.**
+**PASS, corrected.**
 
 Core21 remains highly useful after Constitution reconstruction, but its role changes from “upstream constitutional floor” to “structured stronger-answer package”。
 
-The most important unresolved substantive gate is P1-T06 Stable ISP hardness/sufficiency；the most important non-substantive correction is making P0/P1 internal-to-formal-core rather than constitutional rank。
+The prior proposal to send P1-T06 directly to a C-class bearer-admission gate is **withdrawn** after owner retrieval。P1-T06 remains a four-condition Stable-ISP result-state criterion unless a concrete active `Stable ISP -> bearer admission` conflict is found。
+
+The most important non-substantive correction remains making P0/P1 internal-to-formal-core rather than constitutional rank。
 
 No Core21 content or claim level was edited。
