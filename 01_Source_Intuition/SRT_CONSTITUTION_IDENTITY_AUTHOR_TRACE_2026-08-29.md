@@ -1089,3 +1089,419 @@ burden              burden
 后续若要 substantive reopen，继续服从 `GOV-CONST01 §16.4`；programme identity 若按更上位规则合法重开，则 skeleton 随 identity 一并重新 adjudicate。
 
 当前下一步不是继续润色这三条，也不是提前进入 domain deep well，而是回到 active execution plan 的 source-recovery sequence，寻找 Constitution v1 的**下一项 substantive question**。
+
+## 25. 2026-09-02 `(4)`：第四条说明义务的二次裁决记录
+
+本节记录 opening freeze 之后恢复出的下一项 Constitution substantive question。它不是新的 HEF ladder、不是新的本体“方向”、也不是把 Q10–Q11 的预裁剪机制重新发明一次。作者已经接受其 substantive five-grid，并在后续 namespace / Full Neighbor Map 红队后再次接受修正版；**标题仍暂缓，不在本节注册 technical name。**
+
+其 author-source 来路首先来自 §14 已记录的上位问题：
+
+> **“形成的一如何留下历史并重新塑造后续的多？”**
+
+本条只提取其中一个 reader-facing face：当某些差异、方向或路径已经成为当前实际可以比较、行动、推进或分析的东西时，取消“为什么偏偏是这些”对说明义务的豁免。
+
+### 25.1 已裁五格（标题暂缓）
+
+```text
+Perspective
+
+从某些差异、方向或路径
+已经实际成为当前比较、行动、推进或分析的一部分，
+
+而“为什么偏偏是这些”
+被当作无需说明的背景之处看。
+
+
+悬置的默认
+
+当前实际拿来比较、行动、推进或分析的范围，
+可以直接作为起点。
+
+我们只需要解释其中各方向
+后来怎样被比较、保留、排除或推进，
+而不需要解释
+为什么当前实际出现的是这些方向。
+
+
+读者动作
+
+找出当前情形中，
+一个你已经实际拿来比较、行动、
+推进或分析的差异、方向或路径。
+
+第一步：
+
+先不要问为什么后来采用了它、
+走了它、保留了它，
+或者为什么最终没有这样做。
+
+问：
+
+在当前情形中，
+
+哪些关系或条件使它成为
+一个现实可比较、可行动、
+可推进或可分析的方向？
+
+指出你当前实际依赖的关系或条件。
+
+不要预先规定这种关系属于哪一种机制，
+也不要先套用一份固定门槛清单。
+
+第二步：
+
+改变、移除或重新安排
+其中一个当前所依赖的条件。
+
+观察：
+
+哪些原有方向仍然保持为
+现实可比较、可行动、
+可推进或可分析的方向；
+
+哪些不再如此；
+
+以及是否有某些方向
+只在这次改变之后，
+才第一次成为当前现实可处理的方向。
+
+如果当前无法分离出这种依赖，
+把：
+
+“本次尚未分离出
+为什么当前实际出现的是这些方向的依托”
+
+作为合法结果保留。
+
+不要因此把当前可处理的范围
+恢复成一个中立给定；
+
+也不要反过来断言
+一定存在某个尚未发现的隐藏机制；
+
+同样不要由本次未分离出依托，
+推出先前形成或沉积的结构
+没有参与塑造当前
+哪些方向成为现实可处理的方向。
+
+
+变得可见
+
+“后来没有被保留、采用或推进”
+和
+“根本没有成为当前现实可处理的方向”
+不再被自动视为同一件事。
+
+由此可以继续追问：
+
+为什么偏偏是这些差异、方向或路径
+成为当前现实可处理的东西，
+而另一些没有以同样方式出现？
+
+先前形成、沉积或继承下来的结构，
+是否正在参与塑造
+后来什么能够成为现实可处理的方向，
+也由此成为一个可检验的问题。
+
+
+边界
+
+本条不要求存在一张
+完整、预先写好的“所有可能菜单”。
+
+没有在这里成为现实可处理的方向
+does not entail
+它不存在、绝对不可能，
+或在别的位置、尺度、条件下
+也不能成为现实可处理的方向。
+
+本条把
+“为什么当前实际出现的是这些可处理方向”
+作为 reader-side 的分析问题。
+
+不因此断言
+被研究的系统显式表示、枚举、
+命名或意识到了这些方向。
+
+本条也不要求
+现实可处理的东西必须是
+离散、有限、可列举的菜单项。
+
+连续的方向、路径、变化范围或维度
+同样可以接受这一追问。
+
+当前现实可处理的范围发生变化
+does not entail
+Selection occurrence / agency /
+bearerhood / subjecthood / phenomenality.
+
+它也不等于决定论：
+
+先前结构能够约束
+后来什么更容易或更难成为现实可处理的方向，
+不等于它已经决定
+后来最终发生什么。
+
+本条不预设
+所有领域共享同一组普遍条件。
+
+现实可处理的方向更多、范围更开放，
+也不自动意味着
+更自由、更健康或更好的秩序。
+
+这些属于后续
+generative health / re-selectability /
+normative inquiry，
+不是本条的进入条件。
+```
+
+### 25.2 与 `(1)` / `(3)` 的独立性
+
+本条不是把“菜单”重新当作一个 One 再跑 `(1) ARTICULATION`。区分是：
+
+```text
+(1)
+解释一个已经被当成 One 的对象 / 工作面的 provenance
+
+!=
+
+(4)
+在一个当前范围已经实际运作时，
+追问为什么偏偏是这些差异 / 方向 / 路径
+成为现实可比较、可行动、可推进或可分析的东西
+```
+
+因此：
+
+```text
+provenance of a field / working surface
+!=
+why these directions are practically available within it
+```
+
+两者可以互相嵌套，但不是同一个 reader operation。
+
+它也不重复 `(3) OWN-HISTORY`：
+
+```text
+(3)
+为什么这段过去算“这个候选自己的历史”？
+
+!=
+
+(4)
+不先决定这段历史属于谁，
+追问历史形成的结构是否正在改变
+当前哪些方向成为现实可处理的东西
+```
+
+所以 `(4)` 不以 bearerhood 为前置条件。
+
+### 25.3 source chain：Q10 → Q11 → Q24 是实例，不是 Constitution mechanism
+
+当前 source provenance 按已有材料登记为：
+
+```text
+作者 §14
+“形成的一如何留下历史并重新塑造后续的多？”
+
+-> Q10
+order / backgrounding / sedimented terrain
+
+-> Q11
+pre-cropping / option generation
+
+-> Q24
+AI / engineered amplification：地形改写先于意识归属
+
+-> Constitution reader-side question
+为什么偏偏是这些方向成为当前现实可处理的东西？
+```
+
+`Q11_被选择.md` 的 frontmatter 本身把自身定位为 `Q24 工程化放大的供货方`。因此这里把 Q24 记入 source chain，但不由此把 AI 场景升格为 Constitution 定义来源。
+
+`Q10 -> Q11` 与 2026-07-05 vocabulary bridge 已经支付“形成 / 沉积结构会改写后来 option-generation conditions”的 domain-facing source instance；本条不重新发明这个机制。
+
+### 25.4 内部 owner / ladder 边界：reader-side face，不是新 ladder
+
+最相邻的内部 owner 是：
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` 的 `CG-4 / HEF-3`：先前路径可改变后续可达性、转换概率、返回成本、门槛或 candidate generation；
+- `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md §1.1`：`Possibility-space rewriting is an HEF-3 internal discrimination problem, not a new ladder`；
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`：continued selectability 与更强 generative reselectability 分开；
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`：CG-0..CG-4 的 P2/P3 bounded audit apparatus；
+- `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md §2.3`：Q11 的 `可见 / 可达 / 低摩擦 / 可支付` 作为 `P1-T03` downward constraint 的 P2/P3 domain-facing 诊断清单，而非新定理。
+
+因此本条的 Constitution 身份是：**既有 owner 所覆盖问题的一种 reader-side explanatory-burden face**。它不注册：
+
+```text
+new HEF level
+new historical-efficacy ladder
+new ontological direction
+universal four-gate ontology
+```
+
+`HEF-4` 的 rule / institutional-constraint / system-boundary / cross-context path rewrite 也不是本条的前置条件。更强 generator-algebra → HEF-4 解释仍受其已有 dedicated novelty-audit hook 约束；不得由本条绕过。
+
+### 25.5 namespace 修正：不让方便词在相邻 owner 上取得新定义权
+
+本轮 red-team 发现，最初工作稿使用的 `候选 / candidate`、`进入 / entry`、`资格 / qualification` 组合与最相邻 CG owner 发生直接语义碰撞：`SRT_Choice_Generation_Conditions_2026-08-04 §3.1` 已用“候选形成门槛”“一般变化获得进入本审计过程的资格 / 成为选择候选”描述 audit-status promotion。
+
+同时：
+
+- `ENTRY / WHAT-ENTERS` 又与所有 Constitution items 都共享的 `reader-entry operation` 模板词发生相邻冲突；
+- `ELIGIBILITY` 已在 neuroscience hardening 中承担 phase-/history-dependent eligibility 等技术义；
+- `ADMISSION` 已在 bearer / phenomenal admission 邻近问题中承重；
+- `CONSIDERATION`、`AFFORDANCE` 会把 Constitution 条目过早锁进具体成熟邻居。
+
+因此作者接受的修正不是“为同一东西换一个英文技术名”，而是**正文退回普通语言**：`为什么偏偏是这些方向成为当前现实可处理的东西？`
+
+当前 title status：
+
+```text
+title = DEFERRED
+substantive five-grid = ACCEPTED
+```
+
+不得让 `CANDIDATE-ENTRY / ENTRY / WHAT-ENTERS / ELIGIBILITY` 等已否 working labels 因重复使用获得 definition authority。
+
+### 25.6 Full Neighbor Map：八组 competent-reader coordinates
+
+本轮 Full Neighbor Map 沿用 §23.1 的三栏记账：Pass-B outcome、Relation type、Source status 分开；以下邻居均不作为 novelty permission gate。
+
+**Consideration-set formation**
+
+- Pass-B outcome: `resonance + contrast`
+- Relation type: `operational homology`
+- Source status: `peer-reviewed primary literature checked in this pass`
+- 外部锚点：Abaluck & Adams-Prassl, *What do Consumers Consider Before They Choose?* (QJE, 2021)；Kimya, *Choice, Consideration Sets, and Attribute Filters* (AEJ: Microeconomics, 2018)
+
+该传统成熟区分“先形成实际考虑集合”与“再从中选择”。它直接阻断任何“进入考虑范围 != 最终选择”式 novelty claim。但多数模型仍从已定义的 available alternatives / goods universe 中形成 consideration subset，因此不能定义本条；本条明确不要求一张完整先验菜单。
+
+**Option generation**
+
+- Pass-B outcome: `realization + resonance`
+- Relation type: `operational homology`
+- Source status: `peer-reviewed primary literature checked in this pass`
+- 外部锚点：Kalis, Kaiser & Mojzisch (2013), *Why we should talk about option generation in decision-making research*；Kaiser et al. (2013), *The cognitive and neural basis of option generation and subsequent choice*
+
+该邻居明确支付：现实决策中行动 options 往往不是实验者预先给定，而需要在 subsequent choice 之前生成。因此 SRT 不声称发现“choice 之前还有 option generation”；它只把这一类问题抽为可跨域重新执行的说明义务。
+
+**Gibson-line affordance / ecological psychology**
+
+- Pass-B outcome: `realization + pressure`
+- Relation type: `shared constraint`
+- Source status: `mature external framework; orientation / primary classic anchor checked in pass, no new repo source promotion`
+
+该邻居施压的是：什么成为可行动方向可以是 animal–environment / capability-relative relation，而不是内部先枚举一张菜单。它支持本条保留 `不要求系统显式表示、枚举或意识到这些方向`，并阻止把 reader-side probe 误写成 reader-created ontic relation。
+
+**Berio & Musholt — social norms / scripts / affordances**
+
+- Pass-B outcome: `realization + pressure`
+- Relation type: `domain realization / shared constraint`
+- Source status: `repository primary-author preprint full close-read`
+- 主要锚点：`Materials/2026/SRC_2026_08_10_Phil_Berio_Musholt_Norms_Scripts_Social_Affordances.md`
+
+该一手材料明确支持：role / norm / script 可以影响哪些 interpersonal actions 首先成为 salient / soliciting possibilities，而不只影响最后选择哪个。它是社会认知域的强 realization，但 `script != universal Constitution mechanism`。
+
+**Niche construction / ecological inheritance**
+
+- Pass-B outcome: `realization — bounded`
+- Relation type: `shared historical constraint`
+- Source status: `peer-reviewed author literature checked in this pass`
+- 外部锚点：Odling-Smee et al. (2013), *Niche Construction Theory: A Practical Guide for Ecologists*；Laland, Odling-Smee & Endler (2017), *Niche construction, sources of selection and trait coevolution*
+
+该邻居成熟支付：organism activity 可以修改环境并通过 ecological inheritance / altered selection pressures 改变后来 evolution 的条件。因此“过去活动会改变后来 selection conditions”不是 SRT 独有发现；本条只保留 reader-side explanatory burden。
+
+**Deleuze — problem / virtual / actualisation**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `structural proximity / shared constraint`
+- Source status: `repository primary monograph full close-read`
+- 主要锚点：`Materials/2026/SRC_2026_08_11_Philosophy_Deleuze_Difference_Repetition.md`
+
+Deleuze 对 `possible -> realisation` 与 `virtual -> actualisation` 的区分、problem-space priority，以及 stable result can obscure generative conditions 的路线，强烈阻断把“未出现的方向”重新想成一份预制 complete menu 中被藏起来的 item。因此本条第二步保留：改变条件后，观察是否有某些方向**这时才第一次**成为现实可处理的方向。
+
+**Foucault — archaeology / historical conditions of conceptual possibility**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `shared constraint / structural proximity`
+- Source status: `secondary orientation; primary verification pending`
+- repository pending clue：`01_Source_Intuition/BOOK/deep-research-report (0605).md` 已把 Foucault 列为 Q19–Q24 的“一定要查”强对手
+
+当前只使用 competent-reader orientation：archaeology / discursive formations 追问历史规则如何规定某一时期、领域中哪些概念、问题与说法构成可思考空间。它把本条从 human action-menu 扩展到 concept/problem/object formation pressure，但在 primary text 未进入 material pipeline 前不升为 primary-source literature conclusion。
+
+本轮不把 Deleuze 的 virtual/possible 路线写成“对 Foucault 的直接反驳”；二者只作为分别施压的独立邻居。
+
+**Bourdieu — habitus × field**
+
+- Pass-B outcome: `realization + pressure`
+- Relation type: `domain realization / shared constraint`
+- Source status: `primary-author anchor checked externally + existing repository orientation`
+- repo clues：`BOOK_CHAPTER_CARDS_2026-05-22.md` 已写“habitus：倾向在行动之前结构化了感知与行动的范围”；`90_Backstage/Restructure_2026/BOOK_PROJECT/source_map_ch08_choice_operator.md` 已有 `Do not write: SRT = Bourdieu` 护栏
+- primary-author external anchor：Bourdieu, *Outline of a Theory of Practice*, Ch. 2, `Structures and the Habitus`
+
+Bourdieu 的 habitus 作为 durable / transposable dispositions、`structured structures predisposed to function as structuring structures`，成熟支付历史形成的结构如何参与生成 / 组织实践与表征，而无需 conscious rule-following。它是 social-practical realization，不是 SRT identity claim。
+
+### 25.7 Full Neighbor Map 结果与 reader-side wording 修正
+
+八组邻居均未产生：
+
+```text
+mature neighbor
+-> the reader operation in §25.1 fails
+```
+
+它们共同阻断的反而是更强、未经支付的说法：
+
+```text
+SRT first discovers option generation
+SRT first discovers history-shaped possibility spaces
+all possibilities pre-exist as hidden menu items
+all practical availability is internal representation
+social scripts / habitus / affordances / niche construction
+= one universal SRT mechanism
+```
+
+Gibson / social affordance / niche construction 还促成一处局部 wording repair：不把“现实可处理关系本身”说成 reader-side relation；reader-side 的是**问题 / probe 的分析位置**。因此 §25.1 最终采用：
+
+> 本条把“为什么当前实际出现的是这些可处理方向”作为 reader-side 的分析问题。
+
+这与 §18.2 的纪律同构：reader-side analytical position 不推出被研究的关系是由 reader 创造的。
+
+### 25.8 §17 domain breadth guard
+
+本条天然可由河床、生态位、认知、制度、社会脚本、AI 等不同例子重新执行。这里的跨域例子只承担 Constitution 的 `cross-position / cross-domain re-enactability` 与 competent-reader illustration：
+
+```text
+multiple Constitution examples
+!= multiple opened domain deep wells
+```
+
+`GOV-CONST01 §17` 的 domain breadth stop rule 继续有效。正式第二个 domain programme 仍只能在第一个 deep well 完成 Phase 9 productive-adequacy review 后开启；不得把本条举过多个域的例子当作绕过 §17 的先例。
+
+### 25.9 作者二次裁决状态
+
+作者在五格 internal red-team 后先裁决“接受”，随后又接受：
+
+- `candidate / entry / eligibility` 等相邻 namespace 冲突的消歧；
+- 把 owner-side `HEF-3 / HEF-4` 治理注记移出 reader-facing five-grid；
+- null-result 第三条 guard；
+- Q24 补入 source chain；
+- Foucault / Bourdieu 补入 Full Neighbor Map；
+- reader-side wording 修正。
+
+当前状态因此记为：
+
+```text
+(4) substantive reader operation
+-> SECOND ADJUDICATION ACCEPTED
+
+five-grid content
+-> FROZEN at current substantive wording
+
+technical title
+-> DEFERRED / NOT FROZEN
+```
+
+这个 content freeze 不把 §25.6 的邻居 material 写进未来 Constitution 核心正文，也不冻结尚未选择的标题。若未来仅找到更好的无冲突标题，不触发 substantive reopen；若要修改 reader action / Boundary 的实质内容，则重新进入对应 governance gate。
