@@ -26,7 +26,7 @@ tags: [Constitution, AuthorTrace, Perspective, Bearer, Objectification, DomainRe
 3. Constitution 不应尝试形式化。原因不仅是“避免过早承诺”，而是：形式化本身是一种跨 bearer、跨主体、跨时空的公共收敛操作——通过范畴化、粗粒化、归一化、等价化，把不同位置下的发生转换成可共享约束。
 4. SRT 要保留的不是一个被第三人称模型表示的 `bearer variable`，而是 **bearer participation**：主体、读者、研究者、生命过程、社会单元等在相关现象中实际参与选择、承担历史与后果、改变未来可达性的事实。
 5. 因而 SRT 不是站在外部“研究 bearer”；它要让读者/研究者进入一个 bearer-involved 的观察位置，重新问：什么被当作给定？这个“一”如何形成？谁承担它的历史？后果落回哪里？什么未来因此改变？
-6. 传统科学的去位置化、可重复性与形式化并不是错误；它们是强大的公共知识生产方式。SRT 要研究的是：这种“脱产式”对象化如何形成，以及在把结果反过来当成本体起点时遗漏了什么。
+6. 传统科学的去位置化、可重复性与形式化并不是错误；它们是强大的公共知识生产方式。SRT 要研究的是：这种“脱产式”对象化如何形成，以及在把结果反过来当本体起点时遗漏了什么。
 7. 自然语言也会对象化；Constitution 选择自然语言不是因为它“纯粹”，而是为了维持**最低必要对象化**，允许 unit、grain、boundary、state space 等在作者尚未裁决前保持开放。
 8. Constitution 的效力不来自“无位置的绝对证明”，而来自不同 bearer 能否从自己的位置重新执行这种视角转换，并在领域里获得稳定的解释生产力。
 
@@ -866,3 +866,226 @@ OWN-HISTORY probe
 ```
 
 完整 bearer admission、history writeback、future-selectability、continuity 与 non-outsourcing 的更强组合仍留在 Core/Core_Law 与 P3 bridge/domain 分析中接受各自证据、形式化与反例责任。
+
+## 23. 2026-09-02 Phase-4 Full Neighbor Map：开场三接口的外部定位
+
+本节记录的是 `GOV-CONST01 §8` Pass B / execution plan Phase 4 的比较定位，不是 novelty permission gate，也不是外部理论对 Constitution 的授权。三接口正文未因本轮比较而修改。
+
+### 23.1 记账格式
+
+本轮明确把三种信息分栏，不再混写为一套等级：
+
+```text
+Pass-B outcome
+= resonance / contrast / pressure / translation / realization
+
+Relation type
+= structural isomorphism / operational homology /
+  shared constraint / explanatory compression / genuine identity
+
+Source status
+= existing paid audit / primary source /
+  secondary orientation / primary verification pending
+```
+
+`Pass-B outcome` 与 `Relation type` 是不同维度；例如 `pressure + operational homology` 不表示 Pass B 新增了第六种 outcome。
+
+### 23.2 `(1) ARTICULATION`
+
+**Whitehead**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `operational homology / structural proximity`
+- Source status: `existing paid audit`
+- 继承：`Operations/Audits/SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md §0–1`
+
+旧审计已经把 `the many become one`、concrescence、actuality as decision amid potentiality、completed actual occasions becoming data for later occasions列为对 `many -> one` 的第一成熟压力。因此本轮不重跑，也不把“多如何形成一”重新包装成 SRT slogan-level discovery。
+
+当前 Constitution 仍保留的只是 reader-facing 说明义务：面对已经被当成 One 的候选，取消它对 provenance 的解释豁免；这不把 Whitehead 的 actual occasion / feeling / subjective aim 预填进 ARTICULATION。
+
+**Simondon**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `shared constraint`
+- Source status: `primary source / repository full close-read`
+- 主要锚点：`Materials/2026/SRC_2026_06_11_Philosophy_Simondon_Individuation_UMinnesota.md`
+
+仓库已有 A 级一手全书 close-read，明确支付 `individuation before the individual`、preindividual/metastability、operation ↔ structure 与 transduction/history 等压力。Phase 4 因此不再使用较弱二手评注作为 Simondon 主锚点。
+
+该邻居阻断的是：把 ARTICULATION 偷升格为“SRT 独有的 pre-individual ontology”。它不要求修改当前 reader probe。
+
+**Barad**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `shared constraint`
+- Source status: `existing paid audit; external anchors remain orientation-level unless separately primary-verified`
+- 继承：`SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md §2`
+
+既有审计已经支付 `relata / boundary need not pre-exist the differentiating relation or cut` 的压力。本轮只继承这个成熟坐标；它支持 ARTICULATION 继续允许 world-side formation，而不把全部来路缩成 reader-side epistemic objectification。
+
+**Peirce**
+
+- Pass-B outcome: `resonance`
+- Relation type: `shared historical-conditioning grammar`
+- Source status: `existing paid audit`
+- 继承：`SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md §4`
+
+Peirce 的主要压力不与 Whitehead 等位落在 ARTICULATION 本身，而是落在更宽的：
+
+```text
+history
+-> habit / sedimentation
+-> later regularity / constraint
+```
+
+因此“过去沉积成后来约束”也不得被当作 SRT slogan-level discovery；它更多约束三接口之后的 history-to-future 方向。
+
+### 23.3 `(2) STILL-THIS`
+
+**Sortal / diachronic identity**
+
+- Pass-B outcome: `pressure`
+- Relation type: `shared constraint`
+- Source status: `primary / author-text level anchor checked in this pass`
+
+Wiggins 的 `same what?` 压力确认：re-identification 不能脱离所问候选“作为哪一种 thing”的条件而被自动普遍化。它支持现有 Boundary：`不预设所有领域共享一个普遍 identity criterion`，而不提供一个 SRT universal identity criterion。
+
+**Autopoiesis / organizational self-production**
+
+- Pass-B outcome: `realization — bounded`
+- Relation type: `domain realization`
+- Source status: `primary source anchor checked in this pass + existing SRT audit`
+- SRT-side back-reference: `Operations/Audits/SRT_BEARER_FROM_HERE_RESIDUAL_NOVELTY_AUDIT_2026-08-28.md`
+
+Maturana 的一手 formulation 支持：self-production / organizational continuity 可以在 living-system domain 中作为一种 organismic unity / STILL-THIS realization。与此同时，SRT 已有 bearer audit 明确保留：
+
+```text
+organizational unity / autonomy
+!= automatically
+same-unit consequence ownership / bearer closure
+```
+
+因此这个 realization 不关闭 `(3) OWN-HISTORY`。
+
+### 23.4 `(3) OWN-HISTORY`
+
+**Locke**
+
+- Pass-B outcome: `pressure + resonance`
+- Relation type: `shared attribution problem`
+- Source status: `primary text anchor checked in this pass`
+
+Locke 对 same man / same person 的区分以及 consciousness / appropriation 路线提供了成熟的 personal-identity 坐标。它同时暴露经典 circularity risk：不能因为过去已经被记作 / 取作 mine，就让该 attribution 自己证明 attribution。A′ 通过从既有归属判断出发、再追问其实际依托并允许 null result，避开把“mine”当作自证起点。
+
+**Ricoeur**
+
+- Pass-B outcome: `resonance`
+- Relation type: `structural proximity`
+- Source status: `secondary orientation / primary verification pending`
+
+当前只把 `idem / ipse`、narrative attribution / imputability 当 competent-reader orientation；不把 human narrative selfhood 泛化成 universal bearer model，也不把该坐标升格为 source-backed literature conclusion。
+
+**Parfit / fission**
+
+- Pass-B outcome: `pressure`
+- Relation type: `shared constraint`
+- Source status: `primary / author-text level anchor checked in this pass`
+
+fission / division 压力确认：psychological continuation / inheritance 可以分叉，而 strict numerical identity 不能一对多。这直接压实当前 Boundary：
+
+```text
+shared historical inheritance
+ does not establish
+strict same-bearer numerical identity
+```
+
+它不要求把 branching 从 open pressure point 改成已经解决的 bearer theory。
+
+### 23.5 旧 external-audit 队列状态
+
+`SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md §9` 的残余队列不因本轮 Constitution map 被错误清空：
+
+```text
+§9.1 Enactivism / autonomy / organizational closure
+-> NOT DONE by this Phase-4 pass
+```
+
+本轮 autopoiesis 只回答 `(2)` 中 organismic unity 的 bounded realization，不回答“organizational closure 是否已经支付 consequence-bearing bearerhood”。
+
+```text
+§9.4 Personal identity / fission / branching
+-> PARTIALLY EXECUTED
+```
+
+本轮已覆盖 Locke attribution、Ricoeur orientation 与 Parfit fission/numerical-identity pressure；但旧队列中更具体的 `information inheritance vs historical ownership` targeted burden 尚未完整支付，因此不标 DONE。
+
+### 23.6 Phase-4 结果
+
+本轮没有发现：
+
+```text
+mature neighbor
+-> any one of the three reader operations fails
+```
+
+外部压力实际得到的是：
+
+```text
+Whitehead
+-> many -> one is not a novelty claim
+
+Simondon / Barad
+-> generated individuality / boundary are not SRT-exclusive ontology
+
+Wiggins
+-> STILL-THIS cannot presume a universal identity criterion
+
+Maturana
+-> organismic organizational unity can realize a STILL-THIS relation
+   without thereby settling bearerhood
+
+Locke
+-> own-past attribution has mature personal-identity routes
+   without making attribution self-validating
+
+Parfit
+-> continuation / inheritance must remain distinct from strict numerical identity
+```
+
+以上均被 §18 / §21 / §22 已有 Boundary 吸收；无 `GOV-CONST01 §16.4` reopen trigger，三接口正文保持不变。
+
+## 24. 2026-09-02 作者二次裁决：Constitution v1 opening 冻结
+
+作者在 corrected Full Neighbor Map 完成后明确裁决：
+
+> **“接受，冻结开场。”**
+
+因此 Constitution v1 的 opening 在当前 programme identity 下冻结为：
+
+```text
+suspend the exemption of a completed One
+                |
+                v
+(1) ARTICULATION        provenance burden
+                |
+        +-------+-------+
+        |               |
+        v               v
+(2) STILL-THIS      (3) OWN-HISTORY
+re-identification   historical-attribution
+burden              burden
+```
+
+冻结对象包括：
+
+- 三接口的 sibling skeleton；
+- `(1)` 的已裁 reader-entry five-grid（§18.2）；
+- `(2) STILL-THIS` 的已裁 five-grid（§21.1）；
+- `(3) OWN-HISTORY` A′ source-paid attribution probe 的已裁 five-grid（§22.1）；
+- 各自已经登记的 non-entailment / Boundary guards。
+
+本次 freeze **不等于整个 Constitution v1 已完成**，也不把 §23 的 neighbor material 写进未来 Constitution 核心正文。它只意味着：opening 不再因更顺口的措辞、新类比、新邻居或模型共识反复重开。
+
+后续若要 substantive reopen，继续服从 `GOV-CONST01 §16.4`；programme identity 若按更上位规则合法重开，则 skeleton 随 identity 一并重新 adjudicate。
+
+当前下一步不是继续润色这三条，也不是提前进入 domain deep well，而是回到 active execution plan 的 source-recovery sequence，寻找 Constitution v1 的**下一项 substantive question**。
