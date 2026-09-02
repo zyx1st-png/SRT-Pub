@@ -2,7 +2,8 @@
 id: SRT-CANONICAL-REGISTRY
 type: index
 tags: [Canonical, Registry, Definitions, Equations]
-status: active_v1
+status: active
+version: v1
 layer: meta
 claim_mode: canonical
 epistemic_layer: os
