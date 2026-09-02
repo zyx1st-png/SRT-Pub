@@ -531,6 +531,8 @@ The three interfaces are themselves a cut. They are the current analytic interfa
 
 Before **Constitution v1 itself** is frozen, item (1) must be run once on this three-interface partition and the result recorded, including the case where the partition survives unchanged. This is a 2026-09-01 author-added one-time freeze-exit requirement: it operationalizes the existing reflexivity permission; it does not by itself reopen the already frozen opening skeleton, and any substantive change to that skeleton still follows §16.4.
 
+**Freeze-exit execution record:** `01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md §20`. The 2026-09-02 self-application found no `§16.4` conflict; the three-interface partition **survived unchanged**.
+
 ### 16.3 Phrasing constraints carried by this freeze
 
 - When a precondition on inquiry is stated, phrase it about **us**, not about the object: "once we have a candidate we can point at and ask about", never "once the One has become talkable". Talkability is a condition on asking, never a constitutive precondition of the One.
