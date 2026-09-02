@@ -4,7 +4,7 @@ type: source_intuition
 status: active
 record_stage: active_author_trace
 date: 2026-08-29
-updated: 2026-08-30
+updated: 2026-09-02
 layer: source
 epistemic_layer: os
 claim_mode: author_intuition
@@ -537,3 +537,332 @@ Perspective   从你已经在某个位置把一个 One 加以区分、组织和�
 Perspective 发生学（利害 / continuation / 非对称 / 选择性组织 / 向外—向内闭环）本轮**不入库**，仍为 author-side candidate。它回答的是「perspective 为何存在」，与 §18.2 的 `Perspective` 格（读者从哪里进入本条操作）不是同一层问题。
 
 再次动它时须点名：`GOV-CONST01 §16.2`、`PH-IND07`、`PH-IND02`（含其 P3 claim level）。
+
+## 20. 2026-09-02 三接口 partition 的一次性自反检查
+
+按 `GOV-CONST01 §16.2` 的 freeze-exit requirement，对当前三接口 partition 本身重新执行了一次 item (1)。
+
+### 20.1 来路
+
+当前切分可追回：
+
+```text
+作者当前上位问题
+多如何形成一？
+一如何继续算作一？
+形成的一如何留下历史并重新塑造后续的多？
+
++
+
+Q01 §3 givenness / objectification probe
+R4-pre R4-B / R4-C 与 E2 / E3 的独立未解边
+PH-IND07 对 observational cut -> bearer substance 的禁止
+2026-08-30 作者对 ladder -> sibling structure 的裁决
+```
+
+因此 `ARTICULATION / STILL-THIS / OWN-HISTORY` 是当前研究过程中形成的分析工作面，不是无来源的自然分类。
+
+### 20.2 该来路仍预设什么
+
+重新执行第二问后，暴露出的主要给定项是：
+
+- 我们已经有一个可暂时指认并提出问题的 candidate One；
+- provenance / re-identifiability / own-history 可以暂时分开分析；
+- “三接口”是当前工作切片，而非完整世界分类；
+- 为了提出问题，我们允许一种薄的、暂时性的指认，但不把这种 inquiry condition 当成 ontic identity 或 bearer admission。
+
+这些前提均已由 `GOV-CONST01 §16.1–16.3` 的 reader-side / analytic-cut / non-completeness / frozen non-entailment 边界显式限制。
+
+### 20.3 Conflict check 与实际检索范围
+
+本轮针对 `§16.4` 实际复核的主要 surfaces 包括：
+
+```text
+ACTIVE GOVERNANCE
+Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
+§5, §7, §15.4–15.5, §16.1–16.4
+
+SOURCE / AUTHOR TRACE
+01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md §3
+01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md
+01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
+§14, §18–19
+
+PAID AUDIT / OWNER PRESSURE
+Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md
+§13–16
+Operations/Audits/SRT_PH_IND07_OWNER_SUBTRACTION_2026-08-25.md
+Core_Law/SRT_Individuation.md
+Philosophy/patches/SRT_Philosophy_PH_IND04_Object_Bearer_Selector_Subject_Experiencer_NonJump_Ladder_v0_1.md
+
+OBJECT-SIDE NEGATIVE CONTROL
+Materials/2026/SRC_2026_08_08_Cognition_Kibbe_Leslie_Minimal_Object_Representations_Rebuilt.md
+§5–6
+```
+
+未在上述 checked surfaces 中发现满足 `§16.4` 两项条件的具名冲突。
+
+Kibbe–Leslie 在这里仅承担 **object-side negative control**：
+
+```text
+tracking continuity
+!=
+bearer continuity
+```
+
+其 A-class 授权不延伸为“认知科学证明三接口”或“object individuation 证明 bearer / subject individuation”。
+
+### 20.4 结果
+
+```text
+three-interface partition
+-> SURVIVES UNCHANGED
+
+§16.4 reopen
+-> NOT TRIGGERED
+```
+
+本次结果确认的不是“三接口天然存在”，而是：在当前 Constitution v1 的研究入口上，这三个问题仍构成一个有来源、可执行、非穷尽、且尚未被现有 owner / active governance / paid audit 击败的分析切分。
+
+## 21. 2026-09-02 作者裁决：`(2) STILL-THIS`
+
+作者接受 `(2) STILL-THIS` 作为当前 Constitution-v1 开场的 object-side reader interface。它审计的是已经在使用的 re-identification judgment，而不是给出普遍 identity ontology。
+
+### 21.1 五格
+
+```text
+Perspective
+
+从你已经把不同时间、状态或呈现中的候选
+作为“同一个”继续追踪、组织或使用的地方看。
+
+
+悬置的默认
+
+只要我们能够再次指认、追踪、命名或使用它，
+“还是这个”就不需要再说明自己的条件。
+
+
+读者动作
+
+找出两个你已经作为“同一个”来处理，
+但时间、状态或呈现并不相同的实例。
+
+第一步：
+说出你当前的再识别依赖什么。
+
+不要先规定这个根据属于哪一类；
+只指出当前实际使用的关系、判据或依赖。
+
+第二步：
+在实例、比较或反事实变体中，
+改变、移除或扰动其中一个当前再识别所依赖的条件。
+
+观察：
+在哪些变化下，你仍继续把它当作“这个”；
+又在哪个位置，这种再识别开始失效。
+
+
+变得可见
+
+“仍是这个”不再只是无需说明的背景判断。
+
+当前再识别所依赖的关系、
+它能够容纳哪些变化、
+以及它在哪些变化下失效，
+由此成为可以继续追问的问题。
+
+
+边界
+
+当前显出的关系究竟属于哪一层，
+以及我们现有的层级切分是否适用于它，
+不在本条 reader action 中预先决定。
+
+本条不把我们的 re-identification 规则
+定义成候选对象或过程的本体身份。
+
+它不主张 identity 是任意的或由观察者创造的，
+也不预设所有领域共享一个普遍 identity criterion。
+
+它不要求静态不变、材料完全相同、
+属性完全相同或连续可观察，
+也不预设任何特定 continuity relation。
+
+冻结的两条非蕴含继续成立：
+
+re-identifiability
+ does not entail
+bearerhood
+
+bearerhood
+ does not derive from
+our re-identification cut
+
+因此：
+
+successful re-identification
+ does not entail
+own-history / bearerhood / subjecthood.
+
+即使本条成功，
+(3) OWN-HISTORY 仍保持独立开放。
+```
+
+### 21.2 source / owner attribution 与证据等级
+
+本条不是从一个新 identity theory 推导出来的。当前复用与压力来源包括：
+
+- `R4-pre` 的 R4-B 与 E2/E3：public readable object identity、persistent/reidentifiable object 与 bearer-side own-history admission 保持分离；
+- `PH-IND04 / PH-IND05` 的 object/bearer 与 re-identification/numerical-identity non-jump guards；
+- Kibbe–Leslie SourceCard：只作为 A-class **object-side negative control**，不支付 `(2)` 本身作为 Constitution interface 的正面成立；
+- `Neuroscience/patches/SRT_Neuro_NEURAL28_Reidentifiable_Object_Identity_Dynamic_Concept_Index_v0_1.md`：active P3–P4、`canonical: false` 的 implementation bridge，支持“re-identification 不要求静态/连续显式呈现”的压力；其 `Neuroscience/hooks/NEURAL28_Reidentifiable_Object_Identity_Integration_Hook.md` 仍为 `integration_status: pending`，不得把该材料写成已进入 CompactCore/Q02 的 owner；
+- `Physics/patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md`：`canonical: false` 的 physics bridge，提供另一种 domain-local re-identification realization；不作为普遍 identity 定义。
+
+因此 `(2)` 的 Constitution-level角色只是：**把“still this”判断的实际依据、容许变化范围与断裂条件拖到前台**。
+
+### 21.3 `承担 -> 依赖` 的局部措辞修正
+
+早期工作稿曾写“当前实际承担 re-identification 的关系”。本轮改为“再识别依赖什么”。
+
+理由不是宣布“承担”是全库保留词；仓库存在普通动词 register 的合法多义。真正的局部风险是：`Core_Law/SRT_Constitution_Seven_Theses.md` 已把 `Bearing（承担）` 明确用于 selector 与其 selection consequences 的不可约绑定，而 `(2)` 又紧邻 bearer/OWN-HISTORY 且明确阻断 `re-identifiability -> bearerhood`。因此在这个位置继续用“承担”会产生不必要的 bearer-side 语义回流；“依赖”更干净。
+
+## 22. 2026-09-02 作者裁决：`(3) OWN-HISTORY`
+
+作者接受 `(3) OWN-HISTORY` 的 **A′：source-paid attribution probe**。它不在 Constitution 层直接定义 bearer admission；它从一个已经被算作“这个候选自己的历史”的过去出发，追问这个 `own` 判断当前依赖什么，并允许 domain / bearer analysis 在后续支付更强判据。
+
+### 22.1 五格
+
+```text
+Perspective
+
+从你已经把某个过去的发生、后果或改变，
+算作“这个候选自己的历史”的地方看。
+
+
+悬置的默认
+
+只要一件过去已经被写在它名下，
+“这是它自己的历史”
+就不再需要说明这个归属凭什么成立。
+
+
+读者动作
+
+找出一件你目前已经算作
+这个候选“自己的历史”的发生或后果。
+
+第一步：
+问：
+现在有什么——如果有的话——
+使你仍把这件过去算作这个候选后来的条件、
+关系或约束的一部分？
+
+指出你当前实际依赖的关系。
+不要预先规定它必须位于候选内部，
+也不要先把它命名为 same bearer。
+
+第二步：
+改变、切断或重新安排这个关系，
+观察：
+在哪些情况下，
+“这是它自己的历史”仍有依据；
+又在哪些情况下，
+这种归属开始失去依据。
+
+如果当前找不到可追的关系，
+把“当前未找到可追的归属依托”
+作为合法结果保留。
+
+
+变得可见
+
+“发生在过去”、
+“后来仍有效”
+和
+“属于这个候选自己的历史”
+不再被自动视为同一件事。
+
+历史归属实际依赖什么、
+在哪些改变下保持或断裂，
+以及公共意义上的“它的过去”
+是否与 bearer-side borne history 重合，
+由此成为可以继续追问的问题。
+
+更强的结果还可能显出：
+这段历史是否改变了这个候选
+后来面对的可能性或可选择性。
+
+
+边界
+
+找不到当前可追依托，
+不推出：
+
+事件没有发生；
+它绝不可能属于该候选的历史；
+该候选不存在承担位置或不是 bearer。
+
+本条只报告：
+这一次历史归属探针
+目前没有找到可追的依据。
+
+historical facticity
+ does not entail
+current historical efficacy.
+
+不得由状态被恢复成相同，
+推出此前历史已被抹除；
+这也不意味着此前历史现在仍具有可检测效力。
+
+shared historical inheritance
+ does not establish
+strict same-bearer numerical identity.
+
+转移 / 外包和重置 / 恢复
+可以作为历史归属的 pressure tests，
+但不是 bearer 的 Constitution 定义。
+
+分叉是一个已登记的 open pressure point：
+它可以暴露历史继承与 numerical identity 的区别，
+但当前 SRT 不承诺能够给所有 branching case
+提供确定的 bearer verdict。
+
+future-selectability change
+不是进入本接口的前置条件。
+
+即使本条成功找到 bearer-relevant history relation，
+也不因此独立完成完整 bearer admission，
+更不推出 subjecthood / experiencer / phenomenality。
+```
+
+### 22.2 source / owner attribution：A′ 不是新造的“中立探针”
+
+本条明确复用既有 source / bridge / audit 动作，而不是把它们重包装为第一次发现：
+
+- `01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md`：作者源的“流回来”、承受真实后果、位置被历史逐渐“养厚”，以及“不外包”方向语言；
+- `Philosophy/patches/SRT_Philosophy_PH_IND06_Bearer_Concern_Selectability_Relational_Decomposition_v0_1.md §4–5`：P3/non-canonical SRT-side hardening 中“what continuing unit is altered such that q remains part of that unit's later condition and constraints?”与 non-outsourcing / reset pressure；该文件的外部邻近框架比较仍标记 primary-source verification pending，因此这里复用的是其已登记的 **SRT-side internal hardening question**，不是借未核外部比较给 Constitution 授权；
+- `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md §6`：P3/non-canonical bridge 中 `subsystem causal contribution != bearer ownership`，以及从持续改变、later selectable/objectifiable space 到 bearer-level attribution 的同形追问；
+- `Philosophy/patches/SRT_Philosophy_PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination_v0_1.md`：P3/non-canonical hardening 中 historical facticity / efficacy / bearer-indexed history 分层；§4 `state identity != historical identity`；§7–8 qualitative/numerical identity 与 branching/shared-inheritance guards；
+- `Operations/Audits/SRT_R4_PRE_Q01_Q10_SOURCE_INTUITION_DERIVATIONAL_MINING_2026-08-28.md`：R4-C `world-historical facticity != candidate-unit borne history`；
+- `Philosophy/patches/SRT_Philosophy_PH_CONSC05_Phenomenal_Admission_Functionalization_Residual_v0_1.md`：`non-resettable / non-transferable history !-> phenomenality`，用于阻断 `(3)` 向 experiencer/phenomenality 的跳跃。
+
+因此 A′ 与曾讨论的强版本 B 的差别不是“用不用这些 owner”，而是**取用到什么强度**：A′ 把其中部分既有判别动作降格为 Constitution-level attribution probe；它不把 `same-unit consequence return + history-bearing writeback + future-selectability change + boundary continuity + non-outsourcing` 整包升级成 Constitution bearer definition。
+
+### 22.3 null result 与 branching 的读法
+
+`当前未找到可追的归属依托` 是合法结果，不是本体论否决。它既不取消 occurrence，也不单凭一次探针失败否决 candidate bearerhood。
+
+同样，branching 不与 transfer/reset 享有同等已解决地位。`PH-IND05-H` 已明确把 legitimate fission / branching continuation 保留为 P3 individuation open burden；因此在 `(3)` 中使用 branching 的目的，是暴露 `historical inheritance != strict numerical identity`，不是承诺跑完探针即可得到唯一 bearer 判定。
+
+### 22.4 本条明确不做
+
+```text
+OWN-HISTORY probe
+!= complete bearer definition
+!= subjecthood criterion
+!= experiencer criterion
+!= phenomenality proof
+```
+
+完整 bearer admission、history writeback、future-selectability、continuity 与 non-outsourcing 的更强组合仍留在 Core/Core_Law 与 P3 bridge/domain 分析中接受各自证据、形式化与反例责任。
