@@ -1,7 +1,8 @@
 ---
 id: SRT-CONSTITUTION-V1-SKELETON-AUTHOR-DECISION-20260902
 type: author_decision_packet
-status: active_v1
+status: active
+version: v1
 record_stage: constitution_v1_skeleton_freeze
 date: 2026-09-02
 layer: meta
