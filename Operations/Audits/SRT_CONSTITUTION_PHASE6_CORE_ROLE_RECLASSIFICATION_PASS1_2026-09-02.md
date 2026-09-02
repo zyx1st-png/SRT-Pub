@@ -397,7 +397,7 @@ domain formalization
 
 **Reason**：该文件典型体现旧架构“L0 -> Reference formalization -> domain”。A1/A2、causality-as-projection、embodiment、L2 closure、information-existence 等强弱不一，却共居 `axiom_set` surface。新 Constitution 不允许它继续充当 constitutional floor。
 
-**Future action**：`HIGH-PRIORITY ROLE SPLIT AUDIT`。逐 Axiom 分类：formal encoding / conceptual claim / domain bridge / historical expression。当前不改正文。
+**Follow-up**：逐 Axiom 审计已写入 `Operations/Audits/SRT_CONSTITUTION_PHASE6_REFERENCE_AXIOMS_SECTION_AUDIT_2026-09-02.md`。该 pass 暴露 A10 continuation strength、A14 time-model role、A8 life-localization 三个未来 author gates，但没有执行任何理论改写。
 
 ---
 
@@ -457,7 +457,7 @@ retroactive manuscript rewrite
 | `_SRT_D_VALUE_CANONICAL.md` | conceptual bridge | operational proxy; historical formalization | HIGH | protected / split audit later |
 | `_SRT_PSI_F_CANONICAL.md` | conceptual bridge | operational proxy; domain formalization; historical formalization | HIGH | protected / split audit later |
 | `_SRT_T_DIR_CANONICAL.md` | operational proxy | conceptual bridge; legacy expression | HIGH | protected / intra-file split audit |
-| `Core_Law/SRT_Reference_Axioms.md` | historical formalization | conceptual bridge; domain formalization | VERY HIGH | no edit; section audit next |
+| `Core_Law/SRT_Reference_Axioms.md` | historical formalization | conceptual bridge; domain formalization | VERY HIGH | section audit completed; no edit |
 | `Core_Law/SRT_Reference_Ontology.md` | historical formalization | domain formalization; conceptual bridge | VERY HIGH | no edit; section audit next |
 
 ---
@@ -489,9 +489,8 @@ All substantive canonical changes remain separately author-gated.
 
 Recommended order:
 
-1. **Reference Axioms section audit** — classify each A1... item without editing.
-2. **Reference Ontology section audit** — separate ontology-language, historical formalization, domain realization and analogy.
-3. **L0 intra-file audit** — identify source/commentary core vs stronger theory/historical-formalization blocks.
-4. **d / Psi_f / T_dir intra-file audit** — semantic burden vs formalization vs proxy vs governance usage.
-5. **Core 21A/21B theorem-to-Constitution coverage map** — identify which formal claims answer which Constitution probe and which remain independent domain hypotheses.
-6. Only after those maps exist should the author be asked for any actual canonical role change.
+1. **Reference Ontology section audit** — separate ontology-language, historical formalization, domain realization and analogy.
+2. **L0 intra-file audit** — identify source/commentary core vs stronger theory/historical-formalization blocks.
+3. **d / Psi_f / T_dir intra-file audit** — semantic burden vs formalization vs proxy vs governance usage.
+4. **Core 21A/21B theorem-to-Constitution coverage map** — identify which formal claims answer which Constitution probe and which remain independent domain hypotheses.
+5. Only after those maps exist should the author be asked for any actual canonical role change.
