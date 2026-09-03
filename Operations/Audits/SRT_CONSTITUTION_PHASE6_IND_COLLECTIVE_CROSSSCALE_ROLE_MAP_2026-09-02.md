@@ -12,6 +12,7 @@ ai_do_not_use_for_definition: true
 dependency:
   - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md
   - Operations/Audits/SRT_CONSTITUTION_PHASE6_REVIEW_CORRECTIONS_AND_DEFERRAL_RULE_2026-09-02.md
+  - Core_Law/SRT_Constitution_V1.md
   - Core_Law/SRT_Individuation.md
   - Core_Law/SRT_Collective_Selection.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
@@ -233,6 +234,36 @@ measurement and normalization convention
 
 This is especially important when member-level and institution-level consequence attribution diverge。
 
+### `M(t) -> T-SUFF-5` owner route
+
+The collective and suffering owners already define a directional interface, but the role levels must remain explicit：
+
+| Object | Owner role | Current hardness |
+|---|---|---|
+| Def-C-2 `M(t)` | formalizes consequence-return topology under a declared collective cut | Def / P2；concrete measurability unresolved |
+| strong asymmetry / `M_ext` | marks asymmetric return and externalized consequence channels | P2 diagnostic structure；domain readout requires MOC |
+| T-SUFF-5 | interprets that topology at the suffering layer as collective externalization of `S_struct` | P2 |
+| `nu_ext ||M_ext||` in the collective `S` equation | equationizes the T-SUFF-5 coupling | P1-candidate structural form；coefficient remains P2/P3 |
+
+The licensed bridge is therefore：
+
+```text
+declared collective cut
++ independently warranted suffering bearer / S_struct attribution
++ observable consequence-return channels
+-> estimate M(t) / M_ext under MOC
+-> identify the asymmetric externalization topology
+-> project that topology into T-SUFF-5 at the suffering layer
+```
+
+This is a **projection / owner-routing relation**, not an identity or an automatic entailment。`M(t)` can organize who pays and who receives consequence return without by itself establishing suffering；T-SUFF-5 additionally requires a warranted suffering-layer bearer and `S_struct` path mapping。Conversely, T-SUFF-5 does not replace Def-C-2 or make `M(t)` empirically measurable。
+
+Guardrails：
+
+- `M(t)` asymmetry alone does not entail phenomenality, consciousness, moral evil or collective agency；
+- T-SUFF-5 adds suffering semantics；it does not upgrade Def-C-2 above P2 or close the MOC debt；
+- any concrete `nu_ext` value, normalization, threshold or domain identification remains evidence-deferred under the Phase-6 rule。
+
 ---
 
 ## 7. Collective ISP conjunctions are allowed theory work
@@ -412,7 +443,7 @@ The execution-plan seven families now have first-pass role coverage：
 | Core22 equations | covered in overall Pass 1 role map |
 | Individuation / sigma | covered here |
 | d / Psi_f / T_dir | covered |
-| collective formal models | covered here |
+| collective formal models | covered here；`M(t) -> T-SUFF-5` owner route explicit |
 | cross-scale formal bridges | covered here |
 
 This is sufficient for the **first Phase-6 role-map stop**。
@@ -469,4 +500,6 @@ Carry these as **question + evidence needed**, not directional verdicts。
 
 **Phase 6 Pass 1 role-map coverage: COMPLETE.**
 
-This does not mean Core/Core_Law reconstruction is complete。It means the repository now has enough classification to stop broad re-auditing and move to a concentrated author-decision / Phase-7 handoff surface without repeating the Constitution-overpolishing failure at Core level。
+This does not mean Core/Core_Law reconstruction is complete。It means the repository now has enough classification to stop broad re-auditing and move to the Phase-7 handoff without repeating the Constitution-overpolishing failure at Core level。
+
+The Phase-7 handoff is procedural：score candidate domains on all seven execution-plan factors first，then ask the author to choose。Consciousness / neuroscience may enter that comparison as the current leading candidate，but it is **not preselected**。

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-29
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-03
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-29
-source_commit: a39b1228
-source_branch: main
+generated: 2026-09-03
+source_commit: d929149a
+source_branch: constitution-v1-core-20260902
 source_dirty: false
-inputs_digest: 8db5bc0bfdbccc34
+inputs_digest: 1cfdf385b18a4508
 ---
 
 # SRT 物理领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 8db5bc0bfdbccc34
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-29 |
-| 来源 commit | `a39b1228` |
-| 来源分支 | `main` |
+| 生成日期 | 2026-09-03 |
+| 来源 commit | `d929149a` |
+| 来源分支 | `constitution-v1-core-20260902` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
@@ -340,7 +340,7 @@ For non-trivial SRT work:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（83 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（84 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -365,6 +365,7 @@ For non-trivial SRT work:
 - `Core_Law/SRT_Collective_Selection.md`
 - `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
 - `Core_Law/SRT_Constitution_Seven_Theses.md`
+- `Core_Law/SRT_Constitution_V1.md`
 - `Core_Law/SRT_Individuation.md`
 - `Core_Law/SRT_Irreversibility.md`
 - `Core_Law/SRT_L0_Metaphysics.md`

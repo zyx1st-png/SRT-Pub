@@ -3,7 +3,8 @@ id: SRT-CONSTITUTION-7THESES
 type: constitution
 tags: [CoreLaw, Constitution, MetaTheory, CanonicalSupport]
 layer: L1
-status: draft_v1
+status: active
+record_stage: superseded_as_active_constitution
 epistemic_layer: os
 claim_mode: canonical
 dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
@@ -11,16 +12,17 @@ dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-D-VALUE-C
 
 # SRT Seven Theses
 
+> **2026-09-02 status correction**：本文件已被 `Core_Law/SRT_Constitution_V1.md` 取代，不再承担 active Constitution 身份。它保留为 **L1 philosophical interface / commentary**，用于保存七论框架、历史展开与跨框架比较。本文中的“constitutional / top-level”旧措辞必须按这一 status guard 转读，不得反向定义 Constitution v1、其完备性、依赖方向或准入条件。
+>
 > **层级说明**：本文件属于 **L1（接口层）**，是 L0 四命题向哲学论题和跨框架比较的展开。
-> 七论的每一条 Thesis 都应能从 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md) 推导，而不是反过来。
+> “七论的每一条 Thesis 都应能从 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md) 推导”描述的是这份旧七论架构自身的生成纪律；它**不再定义 Constitution 与 L0 的关系**。
 > [R]/[H] 脚注属于框架比较内容，是 L1 的一部分，不构成对 L0 命题的支撑或证明。
 >
-> **Purpose**: This file is the shortest constitutional digest of SRT as a philosophical framework and explanatory metatheory.
-> It is designed for self-alignment, external explanation, and framework comparison.
+> **Purpose**: Retained L1 philosophical interface and historical seven-thesis digest for external explanation and framework comparison. The active Constitution is `Core_Law/SRT_Constitution_V1.md`.
 >
 > **Authority Rule**:
-> - L0 anchor: `Core_Law/SRT_L0_Metaphysics.md`（最底层，四个形而上命题）
-> - This file provides the top-level philosophical summary.
+> - Active Constitution: `Core_Law/SRT_Constitution_V1.md`.
+> - This file is retained as an L1 interface/commentary surface and does not define Constitution-level commitments.
 > - Precise formal definitions defer to `Core_Law/SRT_Reference_Axioms.md`, `Core_Law/SRT_Reference_Ontology.md`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, and `Core/SRT_Core_22_Equations.md`.
 
 ---

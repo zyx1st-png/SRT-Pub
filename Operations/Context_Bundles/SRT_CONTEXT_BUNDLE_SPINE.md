@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-29
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-03
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-29
-source_commit: a39b1228
-source_branch: main
+generated: 2026-09-03
+source_commit: d929149a
+source_branch: constitution-v1-core-20260902
 source_dirty: false
-inputs_digest: 8db5bc0bfdbccc34
+inputs_digest: 1cfdf385b18a4508
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 8db5bc0bfdbccc34
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-29 |
-| 来源 commit | `a39b1228` |
-| 来源分支 | `main` |
+| 生成日期 | 2026-09-03 |
+| 来源 commit | `d929149a` |
+| 来源分支 | `constitution-v1-core-20260902` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -44,7 +44,7 @@ inputs_digest: 8db5bc0bfdbccc34
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-30 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-08-18 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-03 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
@@ -333,7 +333,7 @@ For non-trivial SRT work:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（79 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（80 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -352,6 +352,7 @@ For non-trivial SRT work:
 - `Core_Law/SRT_Collective_Selection.md`
 - `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
 - `Core_Law/SRT_Constitution_Seven_Theses.md`
+- `Core_Law/SRT_Constitution_V1.md`
 - `Core_Law/SRT_Individuation.md`
 - `Core_Law/SRT_Irreversibility.md`
 - `Core_Law/SRT_L1_Formalism.md`
@@ -766,11 +767,11 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | path | `CANONICAL_REGISTRY.md` |
 | id | SRT-CANONICAL-REGISTRY |
 | claim_mode | canonical |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-03 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -846,10 +847,18 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 ## B. 规范辅助层（Canonical Support）
 
-### 5. 七命题宪法摘要层
+### 5. Constitution v1 — active reader-operation core
+- 主文件：`Core_Law/SRT_Constitution_V1.md`
+- status：**active Constitution v1**
+- 角色：固定六条 reader-executable perspective operations 与其边界；Constitution 打开说明义务，不充当 P0/P1 公理集、理论完备性证明或 domain mechanism。
+- 引用规则：凡涉及“什么属于 Constitution”“Constitution 是否要求某个理论答案”“六条接口之间是否构成 ladder / prerequisite”时，优先回链本文件。
+- 边界：它不替代 `Core_Law/SRT_Reference_Axioms.md`、`Core_Law/SRT_Reference_Ontology.md`、canonical 定义文件或主方程文件。
+
+### 5a. Seven Theses — retained L1 interface, superseded as active Constitution
 - 文件：`Core_Law/SRT_Constitution_Seven_Theses.md`
-- 角色：为 SRT 提供最短的元理论宪法摘要，用于对外解释、框架比较与自我收口
-- 注意：它是顶层摘要，不替代 `Core_Law/SRT_Reference_Axioms.md`、`Core_Law/SRT_Reference_Ontology.md`、canonical 定义文件或主方程文件
+- status：**superseded_as_active_constitution**
+- 角色：保留为 L1 philosophical interface / commentary，用于保存旧七论框架、历史展开、对外解释与跨框架比较；不再承担 Constitution-level definition authority。
+- 注意：文件内旧“constitutional / top-level / every Thesis derives from L0”措辞只描述该旧架构的历史生成纪律，不得反向定义 Constitution v1，也不得把 Constitution 重新变成 L0 的下游推导层。
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`

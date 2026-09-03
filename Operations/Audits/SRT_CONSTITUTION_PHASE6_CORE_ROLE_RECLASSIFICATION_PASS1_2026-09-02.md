@@ -14,6 +14,7 @@ dependency:
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
   - Governance/SRT_CANONICAL_FREEZE.md
   - CANONICAL_REGISTRY.md
+  - Core_Law/SRT_Constitution_V1.md
 tags: [Constitution, Phase6, Core, CoreLaw, EpistemicRole, Audit]
 ---
 
@@ -458,7 +459,7 @@ retroactive manuscript rewrite
 | `_SRT_PSI_F_CANONICAL.md` | conceptual bridge | operational proxy; domain formalization; historical formalization | HIGH | protected / split audit later |
 | `_SRT_T_DIR_CANONICAL.md` | operational proxy | conceptual bridge; legacy expression | HIGH | protected / intra-file split audit |
 | `Core_Law/SRT_Reference_Axioms.md` | historical formalization | conceptual bridge; domain formalization | VERY HIGH | section audit completed; no edit |
-| `Core_Law/SRT_Reference_Ontology.md` | historical formalization | domain formalization; conceptual bridge | VERY HIGH | no edit; section audit next |
+| `Core_Law/SRT_Reference_Ontology.md` | historical formalization | domain formalization; conceptual bridge | VERY HIGH | section audit completed; no edit |
 
 ---
 
@@ -466,9 +467,10 @@ retroactive manuscript rewrite
 
 ### Changes now
 
-Only one thing changes at the audit level:
+Two things now change at the audit level:
 
-> We now have a proposed file-role map that can guide the next read-only section audits.
+1. We have a proposed file-role map for the priority families.
+2. The planned read-only section / coverage audits have been completed, including the explicit `M(t) -> T-SUFF-5` owner route in the collective-family map.
 
 ### Does not change now
 
@@ -485,12 +487,14 @@ All substantive canonical changes remain separately author-gated.
 
 ---
 
-## 11. Next read-only passes
+## 11. Pass-1 closure and Phase-7 handoff
 
-Recommended order:
+The planned read-only passes are complete：Reference Axioms，Reference Ontology，L0，`d / Psi_f / T_dir`，Core21-to-Constitution coverage，Individuation / collective models and cross-scale bridges all have role maps。This closes broad Phase-6 re-auditing；it does not authorize any substantive Core/Core_Law rewrite。
 
-1. **Reference Ontology section audit** — separate ontology-language, historical formalization, domain realization and analogy.
-2. **L0 intra-file audit** — identify source/commentary core vs stronger theory/historical-formalization blocks.
-3. **d / Psi_f / T_dir intra-file audit** — semantic burden vs formalization vs proxy vs governance usage.
-4. **Core 21A/21B theorem-to-Constitution coverage map** — identify which formal claims answer which Constitution probe and which remain independent domain hypotheses.
-5. Only after those maps exist should the author be asked for any actual canonical role change.
+Phase 7 must now follow the execution plan in order：
+
+1. score candidate domains on all seven listed factors；
+2. expose the comparison and its evidence gaps；
+3. ask the author to choose one deep well only after scoring。
+
+Consciousness / neuroscience remains a leading candidate for the comparison，but is **not preselected**。
