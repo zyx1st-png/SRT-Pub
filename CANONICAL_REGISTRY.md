@@ -83,6 +83,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - status：**active Constitution v1**
 - 角色：固定六条 reader-executable perspective operations 与其边界；Constitution 打开说明义务，不充当 P0/P1 公理集、理论完备性证明或 domain mechanism。
 - 引用规则：凡涉及“什么属于 Constitution”“Constitution 是否要求某个理论答案”“六条接口之间是否构成 ladder / prerequisite”时，优先回链本文件。
+- 边界：它不替代 `Core_Law/SRT_Reference_Axioms.md`、`Core_Law/SRT_Reference_Ontology.md`、canonical 定义文件或主方程文件。
 
 ### 5a. Seven Theses — retained L1 interface, superseded as active Constitution
 - 文件：`Core_Law/SRT_Constitution_Seven_Theses.md`
