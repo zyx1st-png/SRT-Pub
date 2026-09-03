@@ -2,8 +2,8 @@
 id: SRT-CONSTITUTION-PHASE8-NEUROSCIENCE-DEEP-WELL-CHARTER-20260903
 type: proposal
 status: active
-version: v1
-record_stage: phase8_charter_active_evidence_access_open
+version: v3
+record_stage: phase8_closed_at_8a_phase9_complete
 date: 2026-09-03
 layer: meta
 epistemic_layer: experimental
@@ -31,7 +31,7 @@ tags: [Constitution, Phase8, Neuroscience, DeepWell, RelationalHistory, MatchedS
 
 > **Authorization**: the author selected Neuroscience as the first deep well on 2026-09-03。
 >
-> **Current state**: the study charter is active；the protocol is not locked，preregistered or executed。Evidence access and the strongest-baseline review remain open gates。
+> **Current state**: Phase 8A is complete with a **Case-B** strongest-baseline verdict and `DATA-ACCESS-0 = NO-GO` for the exact charter。The protocol is not locked，preregistered or executed。The adverse result is preserved in the Phase-8A audit；the Phase-9 review closes this well as translation-only and scope-limited。
 >
 > **Single-well rule**: this charter opens one neuroscience question only。It does not open Consciousness，Epistemology，Religion & Spirituality or a general neuroscience-rewrite programme。
 
@@ -199,24 +199,24 @@ item identity
 behavioral accuracy / RT / confidence where available
 ```
 
-### Evidence-access state
+### Evidence-access state after Phase 8A
 
-The repository contains primary-literature evidence packets and draft NEURAL33/34 designs，but no NEURAL34-specific raw-data access record or collaborator authorization has yet been identified。
+The repository contains primary-literature evidence packets and draft NEURAL33/34 designs。Phase 8A located public human intracranial datasets useful for feasibility and negative controls，plus one close associative-memory dataset available only through agreement-based request。No candidate supplies the exact PRE-relation，controlled relation-history and current-state variables under current public access or granted collaborator authorization。
 
 Therefore：
 
 ```text
-DATA-ACCESS-0 = OPEN
+DATA-ACCESS-0 = NO-GO for the exact charter
 protocol freeze = prohibited
 confirmatory execution = prohibited
 ```
 
-Phase 8A must identify one of：
+Reopening the access gate requires one of：
 
 1. a public dataset satisfying the relation-history and PRE/current-state requirements；or
 2. a documented collaborator / clinical data route with governance and ethics constraints。
 
-Published figures or summary statistics can support the baseline review but cannot be presented as a new matched-state execution。If no viable access path exists，the well must stop or be re-chartered before substituting an animal，EEG/fMRI or synthetic system。
+Published figures or summary statistics can support the baseline review but cannot be presented as a new matched-state execution。The exact well is stopped at Phase 8A unless a qualifying access route is obtained。Any substitution of an animal，EEG/fMRI，item-history or synthetic system requires a new author-visible charter rather than a silent downgrade。
 
 ---
 
@@ -324,19 +324,19 @@ the result transfers to AI，society，religion or spiritual practice
 
 ## 8. Ordered execution
 
-### Phase 8A — evidence and access audit
+### Phase 8A — evidence and access audit — COMPLETE
 
-Produce one bounded primary-source / dataset report that：
+The bounded report now records：
 
 1. identifies the strongest baseline families；
 2. returns a provisional Case A/B/C increment verdict；
 3. inventories candidate datasets against required variables；
 4. records licenses，ethics，coverage and missing-variable constraints；
-5. chooses one executable system or stops。
+5. no executable exact system under current access；the well stops at this gate。
 
-### Phase 8B — feasibility and objectification lock
+### Phase 8B — feasibility and objectification lock — NOT AUTHORIZED
 
-If access survives：
+Only if the exact access gate is reopened：
 
 - select one relation measure；
 - simulate or estimate sample / trial / pair feasibility without inspecting confirmatory outcomes；
@@ -351,9 +351,9 @@ Create an immutable protocol and manifest before confirmatory inspection。
 
 Execute once，retain GO / NO-GO / underpowered / uninterpretable outcomes，and prohibit outcome-driven redefinition。
 
-### Phase 9 — productive-adequacy review
+### Phase 9 — productive-adequacy review — COMPLETE
 
-Only after the result ask whether the Constitution changed the Given One productively。Only that review may authorize Epistemology as the next well。
+The review found a translation-only，scope-limited methodological gain and no neuroscience increment claim。It authorizes Epistemology as the next well without transferring neuroscience evidence。
 
 ---
 
@@ -363,9 +363,12 @@ Only after the result ask whether the Constitution changed the Given One product
 first deep well = Neuroscience
 study object = history-conditioned future neural relation identity
 Bearer-Objectification Declaration = drafted
-strongest-baseline audit = open
-data access = open
+strongest-baseline audit = complete；Case B
+data access = NO-GO for exact charter
 protocol lock = not authorized
 experiment execution = not authorized
-Consciousness / Epistemology / Religion & Spirituality work = not opened
+Phase 9 = complete；translation-only + scope-limited
+deep well = closed at Phase 8A
+Epistemology Phase-8 chartering = authorized as the next well
+Consciousness / Religion & Spirituality work = not opened
 ```

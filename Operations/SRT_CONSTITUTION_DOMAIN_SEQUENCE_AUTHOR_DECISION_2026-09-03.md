@@ -2,8 +2,8 @@
 id: SRT-CONSTITUTION-DOMAIN-SEQUENCE-AUTHOR-DECISION-20260903
 type: author_decision_packet
 status: active
-version: v1
-record_stage: first_deep_well_selected_future_sequence_recorded
+version: v2
+record_stage: neuroscience_phase9_complete_epistemology_next
 date: 2026-09-03
 layer: meta
 epistemic_layer: os
@@ -51,8 +51,8 @@ The ordering records authorial direction after the Phase-7 comparison。It does 
 
 | Domain | State | What is authorized now |
 |---|---|---|
-| Neuroscience | **selected / Phase-8 charter authorized** | one bounded study only |
-| Epistemology | queued | retrieval and preservation only；no deep-well execution |
+| Neuroscience | **closed at Phase 8A / Phase 9 complete** | exact access reopening only；no protocol lock or execution |
+| Epistemology | **next selected / chartering authorized** | one bounded Phase-8 charter；no execution before its own gates |
 | Consciousness | queued | retrieval and preservation only；no deep-well execution |
 | Religion & Spirituality | added / queued / unscored | inventory and later scoring only；no deep-well execution |
 
@@ -113,7 +113,9 @@ Religion and spiritual practice may supply domain objects，participant position
 ```text
 Phase 7 = complete
 first author choice = Neuroscience
-Neuroscience Phase 8 = charter stage authorized
-Epistemology / Consciousness / Religion & Spirituality = queued，not open
+Neuroscience Phase 8 = closed at 8A；Case B + DATA-ACCESS NO-GO
+Neuroscience Phase 9 = complete；translation-only + scope-limited
+Epistemology = next selected；Phase-8 chartering authorized
+Consciousness / Religion & Spirituality = queued，not open
 parallel deep wells = prohibited
 ```
