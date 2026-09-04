@@ -1,0 +1,66 @@
+name: Bernays III V Source Probe
+
+on:
+  push:
+    branches:
+      - scratch/bernays-iii-v-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe current RERO PDF source objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          mkdir -p /tmp/bernays_probe
+          probe_pdf() {
+            key="$1"
+            url="$2"
+            expected_pages="$3"
+            expected_first_printed="$4"
+            expected_last_printed="$5"
+            out="/tmp/bernays_probe/${key}.pdf"
+            echo "=== ${key} ==="
+            http=$(curl -L --retry 2 --retry-delay 2 --connect-timeout 20 --max-time 90 -sS -w '%{http_code}' -o "$out" "$url" || true)
+            echo "HTTP_STATUS=${http}"
+            if [ "$http" != "200" ]; then
+              echo "SOURCE_OBJECT_UNAVAILABLE"
+              rm -f "$out"
+              return 0
+            fi
+            echo "SIZE_BYTES=$(stat -c%s "$out")"
+            echo "FILE_TYPE=$(file -b "$out")"
+            echo "SHA256=$(sha256sum "$out" | awk '{print $1}')"
+            pages=$(pdfinfo "$out" | awk -F: '/^Pages:/ {gsub(/ /,"",$2); print $2}')
+            echo "PDF_PAGES=${pages}"
+            echo "EXPECTED_PDF_PAGES=${expected_pages}"
+            echo "--- FIRST PAGE TEXT ---"
+            pdftotext -f 1 -l 1 -layout "$out" - | sed -n '1,35p'
+            echo "--- SECOND PAGE TEXT ---"
+            pdftotext -f 2 -l 2 -layout "$out" - | sed -n '1,35p'
+            echo "--- LAST PAGE TEXT ---"
+            pdftotext -f "$pages" -l "$pages" -layout "$out" - | tail -n 40
+            mkdir -p "/tmp/bernays_probe/${key}_render"
+            pdftoppm -png -r 72 "$out" "/tmp/bernays_probe/${key}_render/page" >/dev/null 2>&1
+            render_count=$(find "/tmp/bernays_probe/${key}_render" -type f -name 'page-*.png' | wc -l)
+            unique_count=$(sha256sum /tmp/bernays_probe/${key}_render/page-*.png | awk '{print $1}' | sort -u | wc -l)
+            echo "RENDERED_PAGES=${render_count}"
+            echo "UNIQUE_RENDER_HASHES=${unique_count}"
+            echo "EXPECTED_PRINTED_BOUNDARY=${expected_first_printed}-${expected_last_printed}"
+            if [ "$pages" = "$expected_pages" ] && [ "$render_count" = "$pages" ] && [ "$unique_count" = "$pages" ]; then
+              echo "STRUCTURAL_PDF_CHECK=PASS"
+            else
+              echo "STRUCTURAL_PDF_CHECK=FAIL"
+            fi
+          }
+
+          probe_pdf "part3" "https://doc.rero.ch/record/290936/files/S0022481200064185.pdf" "26" "65" "89"
+          probe_pdf "part5" "https://doc.rero.ch/record/293193/files/S0022481200062800.pdf" "19" "89" "106"
