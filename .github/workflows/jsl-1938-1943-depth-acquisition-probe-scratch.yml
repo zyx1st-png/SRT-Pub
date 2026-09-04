@@ -1,0 +1,143 @@
+name: JSL 1938-1943 Technical-Depth Acquisition Probe
+
+on:
+  push:
+    paths:
+      - '.scratch/jsl-1938-1943-depth-acquisition-trigger.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Probe only acquisition and source reachability
+        shell: bash
+        run: |
+          python -m pip -q install requests beautifulsoup4
+          python - <<'PY'
+          import csv, json, re, html, unicodedata, requests, time
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+
+          H={'User-Agent':'SRT-control-archive-acquisition/0.1 (scope-driven source reachability audit)'}
+          TSV=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv')
+          rows=list(csv.DictReader(TSV.open(encoding='utf-8'),delimiter='\t'))
+          flagged=[r for r in rows if r['technical_depth_availability']=='technical-depth potentially sufficient']
+          assert len(flagged)==12, len(flagged)
+
+          def clean(s):
+              return re.sub(r'\s+',' ',BeautifulSoup(html.unescape(s or ''),'html.parser').get_text(' ',strip=True)).strip()
+          def norm(s):
+              s=unicodedata.normalize('NFKD',clean(s))
+              s=''.join(c for c in s if not unicodedata.combining(c)).lower()
+              return re.sub(r'[^a-z0-9]+',' ',s).strip()
+          def opening(page):
+              m=re.search(r'\d+',page or '')
+              return m.group(0) if m else ''
+          def yearof(x):
+              for k in ('published-print','published','issued'):
+                  try: return str(x[k]['date-parts'][0][0])
+                  except Exception: pass
+              return ''
+          def req(url, method='get', **kw):
+              try:
+                  r=requests.request(method,url,headers=H,timeout=45,allow_redirects=True,**kw)
+                  return {'ok':True,'status':r.status_code,'url':r.url,'ctype':r.headers.get('content-type',''),'bytes':len(r.content),'body':r.content[:32], 'text':r.text[:500000] if 'text' in r.headers.get('content-type','') or 'html' in r.headers.get('content-type','') else ''}
+              except Exception as e:
+                  return {'ok':False,'error':type(e).__name__+': '+str(e)}
+
+          # Fixed-boundary Crossref corpus, used only to resolve identifiers for the already-flagged acquisition rows.
+          crurl=('https://api.crossref.org/journals/0022-4812/works?'
+                 'filter=from-pub-date:1938-01-01,until-pub-date:1943-12-31&rows=1000')
+          rr=requests.get(crurl,headers=H,timeout=60); rr.raise_for_status()
+          works=rr.json()['message']['items']
+          by_key={}
+          for x in works:
+              title=clean((x.get('title') or [''])[0]); vol=str(x.get('volume') or ''); iss=str(x.get('issue') or ''); page=str(x.get('page') or '')
+              key=(yearof(x),vol,iss,opening(page),norm(title))
+              by_key.setdefault(key,[]).append(x)
+
+          print('FLAGGED_COUNT',len(flagged))
+          output=[]
+          for idx,r in enumerate(flagged,1):
+              key=(r['publication_year'],r['volume'],r['issue'],opening(r['pages']),norm(r['exact_title']))
+              hits=by_key.get(key,[])
+              method='exact_year_vol_issue_opening_title'
+              if len(hits)!=1:
+                  # Conservative fallback: exact normalized title within same year/volume/issue only.
+                  hits=[x for x in works if yearof(x)==r['publication_year'] and str(x.get('volume') or '')==r['volume'] and str(x.get('issue') or '')==r['issue'] and norm(clean((x.get('title') or [''])[0]))==norm(r['exact_title'])]
+                  method='exact_year_vol_issue_title'
+              x=hits[0] if len(hits)==1 else None
+              rec={
+                  'n':idx,'author':r['author'],'title':r['exact_title'],'year':r['publication_year'],'volume':r['volume'],'issue':r['issue'],'pages':r['pages'],
+                  'review_status':r['contemporaneous_review_status'],'crossref_match_count':len(hits),'match_method':method if len(hits)==1 else 'unresolved',
+              }
+              if x:
+                  doi=str(x.get('DOI') or ''); rec['doi']=doi
+                  rec['crossref_url']=str(x.get('URL') or '')
+                  rec['crossref_type']=str(x.get('type') or '')
+                  rec['crossref_links']=[{k:z.get(k) for k in ('URL','content-type','content-version','intended-application')} for z in (x.get('link') or [])]
+                  # DOI landing page / publisher metadata.
+                  if doi:
+                      land=req('https://doi.org/'+doi)
+                      rec['landing']={k:v for k,v in land.items() if k not in ('text','body')}
+                      if land.get('ok') and land.get('text'):
+                          soup=BeautifulSoup(land['text'],'html.parser')
+                          metas={}
+                          for m in soup.find_all('meta'):
+                              name=(m.get('name') or m.get('property') or '').lower(); content=clean(m.get('content') or '')
+                              if name.startswith('citation_') or name in {'dc.title','dc.identifier','og:title'}:
+                                  metas.setdefault(name,[]).append(content)
+                          rec['publisher_meta']={k:v for k,v in metas.items() if k in {'citation_title','citation_author','citation_firstpage','citation_lastpage','citation_pdf_url','citation_public_url','dc.title','dc.identifier','og:title'}}
+                          # Only treat publisher title as verified if exact normalized title matches.
+                          pubtitles=metas.get('citation_title',[])+metas.get('dc.title',[])+metas.get('og:title',[])
+                          rec['publisher_title_exact']=any(norm(t)==norm(r['exact_title']) for t in pubtitles)
+                          pdfs=[]
+                          for u in metas.get('citation_pdf_url',[]):
+                              if u and u not in pdfs: pdfs.append(u)
+                          for z in x.get('link') or []:
+                              u=z.get('URL') or ''
+                              if u and ('pdf' in (z.get('content-type') or '').lower()) and u not in pdfs: pdfs.append(u)
+                          rec['pdf_probes']=[]
+                          for u in pdfs[:4]:
+                              pr=req(u)
+                              ispdf=pr.get('ok') and (pr.get('body') or b'').startswith(b'%PDF')
+                              rec['pdf_probes'].append({'source_url':u,'status':pr.get('status'),'final_url':pr.get('url'),'ctype':pr.get('ctype'),'bytes':pr.get('bytes'),'pdf_magic':bool(ispdf),'error':pr.get('error')})
+                  # OpenAlex identifier-level OA probe; no title search and no candidate inference.
+                  if doi:
+                      oa=req('https://api.openalex.org/works/https://doi.org/'+doi)
+                      if oa.get('ok') and oa.get('status')==200:
+                          try:
+                              j=json.loads(oa['text'])
+                              rec['openalex']={
+                                  'id':j.get('id'),'title':j.get('title'),'is_oa':(j.get('open_access') or {}).get('is_oa'),
+                                  'oa_status':(j.get('open_access') or {}).get('oa_status'),
+                                  'best_oa_location':{k:(j.get('best_oa_location') or {}).get(k) for k in ('landing_page_url','pdf_url','source')},
+                                  'primary_location':{k:(j.get('primary_location') or {}).get(k) for k in ('landing_page_url','pdf_url')},
+                              }
+                              rec['openalex_title_exact']=norm(j.get('title') or '')==norm(r['exact_title'])
+                              oa_pdf=((j.get('best_oa_location') or {}).get('pdf_url') or '')
+                              if oa_pdf:
+                                  pr=req(oa_pdf)
+                                  rec['openalex_pdf_probe']={'source_url':oa_pdf,'status':pr.get('status'),'final_url':pr.get('url'),'ctype':pr.get('ctype'),'bytes':pr.get('bytes'),'pdf_magic':bool(pr.get('ok') and (pr.get('body') or b'').startswith(b'%PDF')),'error':pr.get('error')}
+                          except Exception as e:
+                              rec['openalex_error']=type(e).__name__+': '+str(e)
+              output.append(rec)
+              print('--- RECORD',idx,'---')
+              print(json.dumps(rec,ensure_ascii=False,sort_keys=True))
+              time.sleep(0.2)
+
+          # Acquisition-only summary. No candidate/admission/individuation conclusion.
+          matched=sum(r.get('crossref_match_count')==1 for r in output)
+          publisher_exact=sum(bool(r.get('publisher_title_exact')) for r in output)
+          direct_pdf=sum(any(p.get('pdf_magic') for p in r.get('pdf_probes',[])) for r in output)
+          oa_pdf=sum(bool((r.get('openalex_pdf_probe') or {}).get('pdf_magic')) for r in output)
+          oa=sum(bool((r.get('openalex') or {}).get('is_oa')) for r in output)
+          print('SUMMARY',json.dumps({'flagged':12,'crossref_unique':matched,'publisher_title_exact':publisher_exact,'direct_pdf_magic':direct_pdf,'openalex_is_oa':oa,'openalex_pdf_magic':oa_pdf},sort_keys=True))
+          PY
