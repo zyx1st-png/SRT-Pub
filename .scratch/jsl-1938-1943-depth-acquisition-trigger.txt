@@ -1,0 +1,1 @@
+run acquisition-only probe for the 12 pre-existing technical-depth flags
