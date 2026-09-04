@@ -1,0 +1,159 @@
+name: JSL 1944-1949 Owner Writeback Scratch
+
+on:
+  push:
+    paths:
+      - '.scratch/jsl-1944-1949-owner-writeback-trigger.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  writeback:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
+          fetch-depth: 0
+      - name: Write validated inventory results back to archive owners
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, collections, re
+          from pathlib import Path
+
+          ROOT=Path('Philosophy/Papers/Forcing_CH_Evidence')
+          inv=ROOT/'CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv'
+          rows=list(csv.DictReader(inv.open(encoding='utf-8'),delimiter='\t'))
+          assert len(rows)==714
+          assert all(len(r)==12 for r in rows)
+
+          primary_types={'primary technical publication','correction'}
+          review_types={'review','bibliographical notice / unattributed review'}
+          def group(r):
+              if r['document_type'] in primary_types: return 'primary'
+              if r['document_type'] in review_types: return 'review'
+              return 'other'
+
+          totals=collections.Counter(group(r) for r in rows)
+          assert totals==collections.Counter({'primary':64,'review':580,'other':70}), totals
+          years=collections.Counter(r['publication_year'] for r in rows)
+          assert years==collections.Counter({'1944':90,'1945':51,'1946':104,'1947':125,'1948':185,'1949':159}), years
+          issues=collections.defaultdict(lambda: collections.Counter())
+          for r in rows:
+              k=(int(r['publication_year']),int(r['volume']),int(r['issue']))
+              issues[k]['all']+=1; issues[k][group(r)]+=1
+          assert len(issues)==23
+          assert sum(v['all'] for v in issues.values())==714
+          target_flags=sum(bool(r['target_line_exclusion_status']) for r in rows)
+          tech_nonblank=sum(bool(r['technical_depth_availability']) for r in rows)
+          assert target_flags==1 and tech_nonblank==0
+          assert all(r['full_text_status']=='metadata only; full text not reached' for r in rows)
+          review_status=collections.Counter(r['contemporaneous_review_status'] or '<blank>' for r in rows)
+          assert review_status==collections.Counter({
+              'review-of-record entry reached':561,
+              'review-of-record entry reached; reviewer metadata absent':19,
+              'in-block contemporaneous review entry immediately identified':36,
+              '<blank>':98,
+          }), review_status
+
+          sf=collections.defaultdict(lambda: collections.Counter())
+          for r in rows:
+              sf[r['subfield']]['all']+=1
+              sf[r['subfield']][group(r)]+=1
+
+          def replace_once(text, old, new, label):
+              n=text.count(old)
+              assert n==1, f'{label}: expected one match, got {n}'
+              return text.replace(old,new,1)
+
+          # ---- Coverage log ----
+          p=ROOT/'CONTROL_ARCHIVE_COVERAGE_LOG.md'; text=p.read_text(encoding='utf-8')
+          text=replace_once(text,'updated: 2026-08-14','updated: 2026-09-04','coverage updated')
+          text=replace_once(text,'coverage_state: assembly_in_progress_two_systematic_blocks','coverage_state: assembly_in_progress_three_systematic_blocks','coverage state')
+          old_row='| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records | Six issue/TOC landing records did not load independently; all 773 item full texts remain unreached; JSL 1944–1949 and 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and the full-text layer remain incomplete | **0/67 primary/correction full texts page-verified; 67 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; all remain metadata-only and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; no local full text acquired for this block | Acquire only the 12 functionally flagged primary records and eight immediately linked reviews as a minimal next pass; preserve all candidate and individuation prohibitions. |'
+          new_row=old_row.replace('JSL 1944–1949 and 1956–1963','JSL 1956–1963') + '\n| `COV-JSL-1944-1949-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1944–1949; vols. 9–14 nos. 1–3; **23 issues** | Cambridge all-issues/issue records plus Crossref metadata; 714 deduplicated item records: 64 primary technical publications/corrections, 580 review-of-record entries/notices, and 70 other issue records | All 714 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — issue/item metadata gap closed for the declared block, but the entire full-text and technical-depth layers remain incomplete | **0/64 primary/correction full texts page-verified; 64 metadata-only** | **0/580 review/notice full texts page-verified; 580 metadata-only**; 36 primary/correction rows have an immediately identifiable in-block contemporaneous review entry | **0** records have nonblank technical-depth availability; no six-test audit was run | Publisher metadata and issue pages were reachable, but no complete item full text was acquired in this pass | Preserve the metadata-only boundary; continue only bounded archive assembly. Do not enumerate, score, rank, select, or individuate. |'
+          text=replace_once(text,old_row,new_row,'coverage row')
+          old_stmt='''The archive now has three coverage entries in two provenance modes:\n\n1. the Shen–Stanley–Müller–Montague unit remains **opportunistic** supplied material; its provenance and local capacity statement are unchanged;\n2. `COV-JSL-1950-1955-SYSTEMATIC` is the first bounded serial/year sweep;\n3. `COV-JSL-1938-1943-SYSTEMATIC` is a separate bounded serial/year sweep of the earlier end of the frozen period.\n\nBoth systematic blocks are **systematic_but_incomplete**, not `exhaustive_within_declared_block`. In the 1938–1943 block every issue identity and item-level bibliographic record was reached, but six publisher issue/TOC landing records did not load independently and no item full text was acquired. The new block therefore supports a reproducible metadata-level coverage statement with an explicit publisher-TOC qualification only.\n\nIt is not evidence of exhaustive JSL coverage for 1938–1963, coverage of other logic venues, full-text review coverage, or the absence of further corpus material. JSL 1944–1949 and 1956–1963 remain outside the two systematic blocks.'''
+          new_stmt='''The archive now has four coverage entries in two provenance modes:\n\n1. the Shen–Stanley–Müller–Montague unit remains **opportunistic** supplied material; its provenance and local capacity statement are unchanged;\n2. `COV-JSL-1938-1943-SYSTEMATIC` covers the early end of the frozen period;\n3. `COV-JSL-1944-1949-SYSTEMATIC` closes the intervening JSL issue/item-metadata gap;\n4. `COV-JSL-1950-1955-SYSTEMATIC` covers the next bounded serial/year block.\n\nAll three systematic blocks are **systematic_but_incomplete**, not `exhaustive_within_declared_block`. Together they provide continuous JSL row-level metadata coverage for calendar years **1938–1955: 72 issues and 2,903 deduplicated item rows**. Only the existing 25 items in the 1950–1955 block are page-verified complete; **2,878 rows remain metadata-only**. The 1938–1943 block additionally retains six independently unconfirmed publisher TOCs.\n\nThis closes the JSL 1944–1949 issue/item-metadata gap only. It is not evidence of exhaustive JSL coverage for 1938–1963, coverage of other logic venues, corpus-wide technical depth, full-text review coverage, or the absence of further corpus material. JSL 1956–1963 and every other mathematical-logic venue remain outside the systematic blocks.'''
+          text=replace_once(text,old_stmt,new_stmt,'coverage current statement')
+          text=text.replace('- JSL 1944–1949 and 1956–1963;','- JSL 1956–1963;',1)
+          text=text.replace('Together with the earlier 1950–1955 block, this yields bounded systematic metadata coverage for JSL 1938–1943 and 1950–1955 only. It does not close the 1944–1949 or 1956–1963 gaps and supplies no other-venue coverage.','Together with the 1944–1949 and 1950–1955 blocks, this yields bounded continuous row-level metadata coverage for JSL 1938–1955. It closes the intervening 1944–1949 issue/item-metadata gap, but not the 1956–1963 gap, and supplies no other-venue coverage.',1)
+          text=text.replace('- §2(4) remains partial: six publisher TOCs are independently unconfirmed, two large JSL year gaps remain, and no additional venue has been systematically swept.','- §2(4) remains partial: six publisher TOCs in the 1938–1943 block are independently unconfirmed, JSL 1956–1963 remains unswept, and no additional venue has been systematically swept.',1)
+
+          issue_lines=['| Year | Volume | Issue | All items | Primary/correction | Review/notice | Other |','|---:|---:|---:|---:|---:|---:|---:|']
+          for (y,v,i),c in sorted(issues.items()):
+              issue_lines.append(f"| {y} | {v} | {i} | {c['all']} | {c['primary']} | {c['review']} | {c['other']} |")
+          issue_lines.append(f"| **Total** |  | **23** | **714** | **64** | **580** | **70** |")
+          sf_lines=['| Subfield | Primary/correction | Review-of-record | All records including issue apparatus |','|---|---:|---:|---:|']
+          for name,c in sorted(sf.items(), key=lambda kv:(-kv[1]['all'],kv[0])):
+              sf_lines.append(f"| {name[0].upper()+name[1:]} | {c['primary']} | {c['review']} | {c['all']} |")
+          sf_lines.append('| **Total** | **64** | **580** | **714** |')
+          new_sec='''## 5. `COV-JSL-1944-1949-SYSTEMATIC`\n\n### 5.1 Declared boundary and contact record\n\n| Field | Record |\n|---|---|\n| Swept venue | *The Journal of Symbolic Logic* |\n| Years | 1944–1949 inclusive |\n| Volumes/issues | Vols. 9–13 nos. 1–4 plus vol. 14 nos. 1–3; vol. 14 no. 4 is January 1950 and remains in the 1950–1955 catchment |\n| Issues checked | **23/23** |\n| Item metadata reached | **714** deduplicated rows |\n| Primary/correction metadata | **64**: 62 primary technical publications plus 2 corrections |\n| Review/notice metadata | **580**: 561 attributed reviews plus 19 bibliographical notices/unattributed reviews |\n| Other issue records | **70** |\n| Page-verified full text | **0/714** |\n| Technical-depth availability | **0/714 nonblank** |\n| Immediately linked in-block review status | **36** primary/correction rows mechanically linked to an in-block contemporaneous review entry |\n| Mechanically obvious target-line flag | **1** row; all other target-line fields remain blank and therefore undecided |\n| Block status | **systematic_but_incomplete** |\n\nThe inventory is `CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv`. It preserves metadata-level collection only. Publisher-native issue/section information was used where the Cambridge issue record resolved the item; bibliographic entries not represented as one independent publisher card were typed conservatively from their own title/author metadata. No fuzzy title match was used to promote a record to publisher-native status.\n\n### 5.2 Issue ledger\n\n''' + '\n'.join(issue_lines) + '''\n\n### 5.3 Subfield distribution\n\nSubfields are title-metadata classifications only; ambiguous records remain unclassified.\n\n''' + '\n'.join(sf_lines) + f'''\n\n### 5.4 Review and technical-depth capacity\n\nAll **580** review/notice rows are retained at metadata level. **36** primary/correction rows have an immediately identifiable in-block contemporaneous review entry, but no review or primary full text in this block is page-verified complete. Accordingly this block improves §2(2) discovery capacity only at metadata level; it does not discharge the page-verification requirement.\n\nTechnical-depth availability is **0/714 nonblank**. No removal/replacement test, six-test audit, admission, exclusion, scoring, ranking, selection, or individuation judgement was run. §2(3) is therefore not improved by this block beyond corpus discovery.\n\n### 5.5 Local effect on certificate §2(4)\n\nThis block closes the previously explicit **JSL 1944–1949 issue/item-metadata gap**. Combined with the adjacent systematic blocks, JSL row-level metadata coverage is now continuous from 1938 through 1955: **72 issues, 2,903 rows**. This is still not corpus adequacy: only 25 rows across those 2,903 are page-verified complete, JSL 1956–1963 remains unswept, six 1938–1943 publisher TOCs remain independently unconfirmed, and no second venue has been systematically assembled.\n\nPart II remains **UNATTESTED** and enumeration remains **NO-GO**.\n\n'''
+          text=replace_once(text,'## 5. Logging rule for later assembly',new_sec+'## 6. Logging rule for later assembly','coverage new section')
+          p.write_text(text,encoding='utf-8')
+
+          # ---- Source manifest ----
+          p=ROOT/'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'; text=p.read_text(encoding='utf-8')
+          text=replace_once(text,'updated: 2026-08-14','updated: 2026-09-04','manifest updated')
+          text=replace_once(text,'These records support `COV-JSL-1950-1955-SYSTEMATIC` and `COV-JSL-1938-1943-SYSTEMATIC`.','These records support `COV-JSL-1938-1943-SYSTEMATIC`, `COV-JSL-1944-1949-SYSTEMATIC`, and `COV-JSL-1950-1955-SYSTEMATIC`.','manifest block intro')
+          manifest_sec='''\n### `JSL-CAMBRIDGE-1944-1949-ISSUES`\n\n| Field | Record |\n|---|---|\n| Stable key | `JSL-CAMBRIDGE-1944-1949-ISSUES` |\n| Source | Cambridge Core, *The Journal of Symbolic Logic*, all-issues archive and issue landing records |\n| Stable location | [JSL all-issues archive](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues) |\n| Exact block reached | Vols. 9–13 nos. 1–4 plus vol. 14 nos. 1–3: **23 issues**, calendar years 1944–1949 |\n| Function | Official venue/volume/issue boundary and publisher-native section labels where the issue record resolves the item |\n| Reach status | All 23 issue identities and issue landing records used by the bounded inventory were reached during assembly |\n| Full-text status | **0** item full texts page-verified complete in this block |\n| Granularity note | Publisher issue pages do not always expose one independent UI card per Crossref DOI record. The inventory therefore separates publisher-native section recovery from conservative bibliographic typing instead of forcing a one-card/one-DOI identity. |\n| Limitations | Issue/section metadata does not establish item full text, technical depth, candidate admissibility, or method individuation. |\n\n### `JSL-CROSSREF-1944-1949-METADATA`\n\n| Field | Record |\n|---|---|\n| Stable key | `JSL-CROSSREF-1944-1949-METADATA` |\n| Source | Crossref REST metadata for ISSN `0022-4812`, print dates 1944-01-01 through 1949-12-31 |\n| Exact retrieval | `https://api.crossref.org/journals/0022-4812/works?filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000` |\n| Function | Reproducible row-level author/title/year/volume/issue/page metadata for the 23-issue block |\n| Bounded inventory result | **714 deduplicated bibliographic rows** |\n| Type distribution | 62 primary technical publications; 2 corrections; 561 attributed reviews; 19 bibliographical notices/unattributed reviews; 70 other issue records |\n| Full-text status | Every row is `metadata only; full text not reached` |\n| Technical-depth status | **0/714 nonblank** |\n| Target-line status | **1** mechanically obvious title/metadata flag; blank elsewhere is not a clearance finding |\n| Limitations | Deposited metadata and conservative typing only. No source-level technical inference, candidate judgement, or six-test result is licensed. |\n\n### `JSL-1944-1949-METADATA-RESOLUTION-AUDIT`\n\n| Field | Record |\n|---|---|\n| Stable key | `JSL-1944-1949-METADATA-RESOLUTION-AUDIT` |\n| Function | Records the strict resolution rule used when Cambridge publisher-card granularity and Crossref row granularity differ |\n| Rule | Accept publisher-native section only by exact normalized title, embedded exact title within the same issue card, or unique same-page section; otherwise retain conservative metadata typing |\n| Boundary corrections | Three bibliographic entries initially vulnerable to author-bearing false-primary classification were explicitly retained as reviews; the two distinct p. 139 modal/counterfactual short publications remain primary technical publications |\n| Validation | Final read-only validator: 714 rows, 23 issues, 64 primary/correction, 580 review/notice, 70 other, 0 technical-depth nonblank, 1 mechanically obvious target-line flag, 0 full texts reached |\n| Limitations | This is a metadata-resolution audit, not source verification or a substantive historical verdict. |\n\n'''
+          text=replace_once(text,'## 4. Source-handling limits',manifest_sec+'## 4. Source-handling limits','manifest new sources')
+          p.write_text(text,encoding='utf-8')
+
+          # ---- README ----
+          p=ROOT/'README.md'; text=p.read_text(encoding='utf-8')
+          text=replace_once(text,'updated: 2026-08-14','updated: 2026-09-04','readme updated')
+          old='**Part I fixed, Part II unattested; archive assembly in progress.** The frozen search boundary is unchanged. Two bounded JSL sweeps now give §2(4) reproducible local metadata-level coverage for 1938–1943 and 1950–1955, but both are `systematic_but_incomplete`. The new 1938–1943 block has 24 issue identities and 773 item records, yet six publisher TOCs remain independently unconfirmed and all 773 items are metadata-only; JSL 1944–1949 and 1956–1963 and every other venue remain outside these blocks. §2(3) is not demonstrated. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears'
+          new='**Part I fixed, Part II unattested; archive assembly in progress.** The frozen search boundary is unchanged. Three bounded JSL sweeps now provide continuous row-level metadata coverage for 1938–1955: **72 issues and 2,903 rows** across 1938–1943, 1944–1949, and 1950–1955. All three remain `systematic_but_incomplete`: only the existing 25 items in the 1950–1955 block are page-verified complete, **2,878 rows remain metadata-only**, six 1938–1943 publisher TOCs remain independently unconfirmed, JSL 1956–1963 is unswept, and every other venue remains outside the systematic corpus. §2(3) is not demonstrated. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears'
+          text=replace_once(text,old,new,'readme certificate row')
+          text=text.replace('Cambridge/Crossref/DBLP records for the separate 1938–1943 block are now registered, but they add **0** page-verified texts.','Cambridge/Crossref/DBLP records for 1938–1943 and Cambridge/Crossref metadata-resolution records for 1944–1949 are registered; the two earlier blocks add **0** page-verified texts.',1)
+          text=text.replace('Preserves the first unit as **opportunistic** and separately records two `systematic_but_incomplete` JSL blocks: 1950–1955 (25 issues, 1,416 items, 25 complete texts) and 1938–1943 (24 issues, 773 items, 0 complete texts, six publisher TOC gaps); no global coverage claim','Preserves the first unit as **opportunistic** and separately records three `systematic_but_incomplete` JSL blocks: 1938–1943 (24 issues, 773 items, 0 complete texts, six publisher TOC gaps), 1944–1949 (23 issues, 714 items, 0 complete texts), and 1950–1955 (25 issues, 1,416 items, 25 complete texts); continuous JSL row-level metadata coverage now reaches 1938–1955, with no global adequacy claim',1)
+          invrow='| [CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv](CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv) | Row-level bounded inventory for JSL calendar years 1944–1949, vols. 9–14 nos. 1–3 | 62 primary publications, 2 corrections, 561 attributed reviews, 19 bibliographical notices/unattributed reviews, and 70 other issue records; **714 metadata-only rows**; 36 immediate in-block review links, 0 technical-depth nonblank, and one mechanically obvious target-line title/metadata flag; no admission, scoring, ranking, selection, or individuation fields |\n'
+          marker='| [CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv]'
+          idx=text.index(marker)
+          text=text[:idx]+invrow+text[idx:]
+          p.write_text(text,encoding='utf-8')
+
+          # ---- Adequacy certificate ----
+          p=ROOT/'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'; text=p.read_text(encoding='utf-8')
+          text=replace_once(text,'updated: 2026-08-11','updated: 2026-09-04','certificate updated')
+          insert='''### 3.2 Systematic JSL assembly status — 2026-09-04, no signature\n\nThree bounded serial/year sweeps now provide continuous JSL row-level metadata coverage for **1938–1955**:\n\n- 1938–1943: 24 issues, 773 rows, 0 page-verified complete texts, six publisher TOCs independently unconfirmed;\n- 1944–1949: 23 issues, 714 rows, 0 page-verified complete texts;\n- 1950–1955: 25 issues, 1,416 rows, 25 page-verified complete texts.\n\nCombined: **72 issues, 2,903 rows, 25 page-verified complete texts, 2,878 metadata-only rows**. The 1944–1949 sweep therefore closes the intervening JSL issue/item-metadata gap, but it does not establish technical depth: all 714 rows in that block have blank `technical_depth_availability`, and no six-test audit was run. JSL 1956–1963 remains unswept and no second mathematical-logic venue has been systematically assembled.\n\nEffect on Part II:\n\n- §2(2): improved metadata-level discovery of contemporaneous reviews, but not discharged corpus-wide because page-verified author/review pairs are not available for every future admitted candidate;\n- §2(3): still **UNATTESTED**; the new block adds no demonstrated load-bearing removal/replacement capacity;\n- §2(4): materially improved because the 1938–1955 JSL metadata boundary is now explicit and contiguous, but still **UNATTESTED** because 1956–1963, other venues, full-text depth, and six early publisher TOCs remain open.\n\nNo candidate pool was enumerated. No admission, exclusion, scoring, ranking, selection, or individuation judgement was performed. **Part II remains UNATTESTED and enumeration remains blocked.**\n\n'''
+          text=replace_once(text,'### 3.2 Proposed search venues — to be verified at assembly',insert+'### 3.3 Proposed search venues — to be verified at assembly','certificate status insert')
+          text=replace_once(text,'### 3.3 Known risk to §2(3)','### 3.4 Known risk to §2(3)','certificate renumber')
+          p.write_text(text,encoding='utf-8')
+
+          # ---- Cross-file validation ----
+          cov=(ROOT/'CONTROL_ARCHIVE_COVERAGE_LOG.md').read_text(encoding='utf-8')
+          man=(ROOT/'CONTROL_ARCHIVE_SOURCE_MANIFEST.md').read_text(encoding='utf-8')
+          rd=(ROOT/'README.md').read_text(encoding='utf-8')
+          cert=(ROOT/'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md').read_text(encoding='utf-8')
+          assert 'assembly_in_progress_three_systematic_blocks' in cov
+          assert 'COV-JSL-1944-1949-SYSTEMATIC' in cov
+          assert '72 issues and 2,903' in cov
+          assert 'JSL-CAMBRIDGE-1944-1949-ISSUES' in man and 'JSL-CROSSREF-1944-1949-METADATA' in man
+          assert 'CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv' in rd
+          assert '2,878 metadata-only' in rd
+          assert '### 3.2 Systematic JSL assembly status' in cert
+          assert 'Part II remains UNATTESTED and enumeration remains blocked' in cert
+          assert 'JSL 1944–1949 and 1956–1963 remain outside' not in cov
+          print('WRITEBACK_VALIDATED', totals, years, 'issues',len(issues),'target',target_flags,'tech',tech_nonblank)
+          PY
+
+          changed="$(git status --porcelain)"
+          echo "$changed"
+          test "$(echo "$changed" | sed '/^$/d' | wc -l)" -eq 4
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+          echo "$changed" | grep -F 'Philosophy/Papers/Forcing_CH_Evidence/README.md'
+
+          git config user.name 'zyx1st-png'
+          git config user.email 'zyx1st@gmail.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/README.md
+          git commit -m 'Write back bounded JSL 1944-1949 archive coverage'
+          git push origin HEAD:phase8b/jsl-1944-1949-archive-assembly-20260904
