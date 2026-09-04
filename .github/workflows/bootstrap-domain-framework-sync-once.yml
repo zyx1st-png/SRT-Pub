@@ -1,0 +1,129 @@
+name: Bootstrap Domain Framework Sync Once
+
+on:
+  push:
+    branches:
+      - bootstrap-domain-framework-sync-20260904
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: bootstrap-domain-framework-sync-20260904
+
+      - name: Patch bootstrap routing
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Reuse the already-reviewed Architecture-v2 bootstrap text from the
+          # pre-merge #890 history rather than regenerating it by hand.
+          git show 6164f0e9e04f13b7c459cfc9feeffd1c33f7a9a8:SRT_AI_START.md > SRT_AI_START.md
+
+          python - <<'PY'
+          from pathlib import Path
+
+          # AGENTS: keep the 3-file bootstrap, but make the programme expansion
+          # reach Architecture v2 and the active Domain Framework template first.
+          p = Path('AGENTS.md')
+          s = p.read_text(encoding='utf-8')
+          old = '''4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+6. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+7. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.'''
+          new = '''4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — active post-Constitution architecture.
+5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — compact historical/identity blueprint.
+6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — execution plan as amended by Architecture v2.
+7. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` for new/backfilled domain work.
+8. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`.
+9. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.'''
+          if old not in s:
+              raise SystemExit('AGENTS programme-expansion anchor changed')
+          s = s.replace(old, new, 1)
+          old_guard = '''SRT Constitution
+= bearer-involved perspective framework
+
+Domain research
+= formalization / evidence / proof / testing layer'''
+          new_guard = '''SRT Constitution
+= bearer-involved perspective framework
+
+Domain Reconstruction Framework
+= Constitution × domain starting picture × inherited SRT assets × materials
+  -> problem-space / objectification / bearer-position / problem families / deep-well queue
+
+Domain Theory / Hypothesis / Model
+= mechanisms / formalisms / proxies / candidate explanations
+
+Deep Well / Evidence
+= bounded test / strongest baseline / Case A-B-C / data / proof / archive'''
+          if old_guard not in s:
+              raise SystemExit('AGENTS identity-guard anchor changed')
+          s = s.replace(old_guard, new_guard, 1)
+          p.write_text(s, encoding='utf-8')
+
+          # STATUS: bounded routing/status refresh only; do not rewrite historical
+          # owner sections or canonical status prose.
+          p = Path('STATUS.md')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('updated: 2026-08-29', 'updated: 2026-09-04', 1)
+          s = s.replace('> **最后更新**：2026-08-29', '> **最后更新**：2026-09-04', 1)
+          s = s.replace(
+              '> **当前作者级方向**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`',
+              '> **当前作者级方向**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`',
+              1,
+          )
+          anchor = '> **当前执行计划**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`\n'
+          if anchor not in s:
+              raise SystemExit('STATUS execution-plan anchor changed')
+          s = s.replace(anchor, anchor + '> **当前领域框架模板**：`Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`\n', 1)
+
+          old_flow = '- **领域工作流**：`WHO participates? -> GIVEN ONE -> objectification/detachment -> SRT re-entry -> reorganization -> new problems -> domain test -> domain increment gate`。证明、数学、实验、统计、D2/D3 和 rival comparison 在 domain 侧支付。'
+          new_flow = '- **领域工作流（Architecture v2）**：`select domain -> Pre-framework Material Re-entry -> Domain Reconstruction Framework v0.1 -> author/scope lock -> one bounded deep well -> strongest-baseline / Case A-B-C -> productive adequacy -> Phase 9.5 framework writeback`。Framework 主要承担 Layer B 的领域重组，不因材料进入框架而自动获得 Layer C / Case C。'
+          if old_flow not in s:
+              raise SystemExit('STATUS domain-workflow anchor changed')
+          s = s.replace(old_flow, new_flow, 1)
+
+          old_well = '- **只挖一口深井**：Constitution v1 后先选一个领域做穿，不并行铺开 Physics/Biology/AI/Neuroscience/Consciousness/Social 等全套工作线。Consciousness/Neuroscience 是有积累的候选，但尚未被本状态页预选。'
+          new_well = '- **单主井纪律继续有效**：Neuroscience 第一口井作为 grandfathered pilot 保留其 Case B / access-blocked / translation-only 等记录，并允许按具名条件后续重开；Epistemology 已被作者选为第二口主井，但在继续扩展前先补建其 Domain Reconstruction Framework。不得因新 Layer 2 而并行展开多个主 deep-well programme。'
+          if old_well not in s:
+              raise SystemExit('STATUS single-well anchor changed')
+          s = s.replace(old_well, new_well, 1)
+
+          first = '- 首读顺序唯一权威仍是 `AGENTS.md §Session Start`。\n'
+          amendment = '- **2026-09-04 Architecture v2 已落 main**：Constitution 与具体 deep well 之间新增 `Domain Reconstruction Framework`；Blueprint §6 仍为紧凑历史前身，新/回填领域工作统一使用 active framework template。\n'
+          if amendment not in s:
+              if first not in s:
+                  raise SystemExit('STATUS Fast Status anchor changed')
+              s = s.replace(first, first + amendment, 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Regenerate context bundles
+        run: |
+          set -euo pipefail
+          python scripts/build_srt_context_bundles.py --generated-date 2026-09-04
+          python scripts/test_build_context_bundles.py
+          python scripts/build_srt_context_bundles.py --check
+
+      - name: Commit generated sync
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add SRT_AI_START.md AGENTS.md STATUS.md Operations/Context_Bundles/
+          if git diff --cached --quiet; then
+            echo 'No bootstrap/bundle changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Sync Architecture v2 bootstrap and context bundles'
+          git push origin HEAD:bootstrap-domain-framework-sync-20260904
