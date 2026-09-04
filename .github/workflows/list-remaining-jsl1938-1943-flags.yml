@@ -1,0 +1,38 @@
+name: List Remaining JSL 1938-1943 Flagged Primaries
+
+on:
+  push:
+    branches:
+      - scratch/bernays-saarland-directory-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Print remaining flagged primary acquisition queue
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          p='Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+          with open(p,encoding='utf-8',newline='') as f:
+              rows=list(csv.DictReader(f,delimiter='\t'))
+          flagged=[r for r in rows if r['technical_depth_availability']=='technical-depth potentially sufficient']
+          remaining=[r for r in flagged if r['full_text_status']=='metadata only; full text not reached']
+          verified=[r for r in flagged if r['full_text_status'].startswith('page-verified complete')]
+          print('FLAGGED_TOTAL=',len(flagged))
+          print('FLAGGED_VERIFIED=',len(verified))
+          print('FLAGGED_REMAINING=',len(remaining))
+          for i,r in enumerate(remaining,1):
+              print(f"{i:02d}\t{r['author']}\t{r['exact_title']}\t{r['publication_year']}\tvol.{r['volume']}({r['issue']})\tpp.{r['pages']}\t{r['contemporaneous_review_status']}\t{r['subfield']}")
+          assert len(flagged)==12
+          assert len(verified)==2
+          assert len(remaining)==10
+          PY
