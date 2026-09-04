@@ -1,0 +1,36 @@
+name: Fix JSL Owner Writeback Validator Scratch
+
+on:
+  push:
+    paths:
+      - '.scratch/fix-jsl-owner-writeback-validator-trigger.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: scratch/epistemology-material-scan-20260904
+          fetch-depth: 0
+      - name: Narrow validator fix only
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('.github/workflows/jsl-1944-1949-owner-writeback-scratch.yml')
+          s=p.read_text(encoding='utf-8')
+          old="assert '2,878 metadata-only' in rd"
+          new="assert '2,878 rows remain metadata-only' in rd"
+          assert s.count(old)==1
+          s=s.replace(old,new,1)
+          p.write_text(s,encoding='utf-8')
+          PY
+          git config user.name 'zyx1st-png'
+          git config user.email 'zyx1st@gmail.com'
+          git add .github/workflows/jsl-1944-1949-owner-writeback-scratch.yml
+          git commit -m 'Fix JSL owner writeback validator literal'
+          git push origin HEAD:scratch/epistemology-material-scan-20260904
