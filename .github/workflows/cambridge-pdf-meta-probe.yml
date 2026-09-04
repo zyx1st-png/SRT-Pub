@@ -1,4 +1,4 @@
-name: Cambridge PDF Metadata Probe
+name: Paperzz Bernays Part II Source Probe
 
 on:
   push:
@@ -14,46 +14,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Extract and test Cambridge-declared PDF routes for four 1938 flagged primaries
+      - name: Inspect Paperzz landing and any downloadable source object
         shell: bash
         run: |
           set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          page='https://paperzz.com/doc/7214206/a-system-of-axiomatic-set-theory%E2%80%94part-ii13-4.-the'
+          curl -L --connect-timeout 20 --max-time 90 -A 'Mozilla/5.0' -sS -D /tmp/h.txt -o /tmp/page.html -w 'PAGE_HTTP=%{http_code}\nPAGE_TYPE=%{content_type}\nPAGE_SIZE=%{size_download}\nPAGE_FINAL=%{url_effective}\n' "$page" || true
+          echo "PAGE_FILE=$(file -b /tmp/page.html || true)"
           python - <<'PY'
-          import subprocess,re,html,urllib.parse,os
-          items=[
-            ('CHWISTEK_HETPER','https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/new-foundation-of-formal-metamathematics/81E64DC8298829C660E29B06AFD68CBC'),
-            ('PEPIS','https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/ein-verfahren-der-mathematischen-logik/3A68B8DA77EBE43CB6D09DDE8CF059C1'),
-            ('REACH','https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/name-relation-and-the-logical-antinomies/17107FF2C695CBA62BBEAA9C27F74AB8'),
-            ('FITCH','https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/consistency-of-the-ramified-principia/DE99BD1CD5BC6F11D340837BC157DB50'),
+          from pathlib import Path
+          import re, html, urllib.parse, subprocess, os
+          page='https://paperzz.com/doc/7214206/a-system-of-axiomatic-set-theory%E2%80%94part-ii13-4.-the'
+          s=Path('/tmp/page.html').read_bytes().decode('utf-8','ignore')
+          print('TITLE_PRESENT=', 'A SYSTEM OF AXIOMATIC SET THEORY' in s.upper())
+          candidates=[]
+          pats=[
+              r'href=["\']([^"\']*(?:download|\.pdf)[^"\']*)["\']',
+              r'(https?://[^"\'<> ]+\.pdf[^"\'<> ]*)',
+              r'"(?:downloadUrl|pdfUrl|fileUrl)"\s*:\s*"([^"]+)"',
           ]
-          for key,url in items:
-              print(f'=== {key} ===')
-              out=f'/tmp/{key}.html'
-              fmt='HTML_HTTP=%{http_code} HTML_TYPE=%{content_type} HTML_SIZE=%{size_download} HTML_FINAL=%{url_effective}'
-              cp=subprocess.run(['curl','-L','--connect-timeout','20','--max-time','90','-sS','-A','Mozilla/5.0','-o',out,'-w',fmt,url],capture_output=True,text=True)
+          for pat in pats:
+              for m in re.finditer(pat,s,re.I):
+                  v=html.unescape(m.group(1)).replace('\\/','/')
+                  v=urllib.parse.urljoin(page,v)
+                  if v not in candidates: candidates.append(v)
+          print('CANDIDATE_COUNT=',len(candidates))
+          for i,v in enumerate(candidates[:20],1):
+              print(f'CANDIDATE_{i}={v}')
+              out=f'/tmp/cand{i}.bin'
+              fmt='HTTP=%{http_code} TYPE=%{content_type} SIZE=%{size_download} FINAL=%{url_effective}'
+              cp=subprocess.run(['curl','-L','--connect-timeout','20','--max-time','90','-A','Mozilla/5.0','-sS','-o',out,'-w',fmt,v],capture_output=True,text=True)
               print(cp.stdout.strip())
-              s=open(out,'rb').read().decode('utf-8','ignore') if os.path.exists(out) else ''
-              print('TITLE_MATCH='+str(bool(re.search(r'<title',s,re.I))))
-              candidates=[]
-              pats=[
-                r'<meta[^>]+name=["\']citation_pdf_url["\'][^>]+content=["\']([^"\']+)',
-                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']citation_pdf_url["\']',
-                r'href=["\']([^"\']+\.pdf(?:\?[^"\']*)?)["\']',
-                r'"pdfUrl"\s*:\s*"([^"]+)"',
-                r'"downloadUrl"\s*:\s*"([^"]+\.pdf[^"]*)"',
-              ]
-              for pat in pats:
-                  for m in re.finditer(pat,s,re.I):
-                      v=html.unescape(m.group(1)).replace('\\u002F','/').replace('\\/','/')
-                      v=urllib.parse.urljoin(url,v)
-                      if v not in candidates: candidates.append(v)
-              print('PDF_CANDIDATES='+str(len(candidates)))
-              for i,v in enumerate(candidates[:10],1):
-                  print(f'CANDIDATE_{i}={v}')
-                  bout=f'/tmp/{key}_{i}.bin'
-                  fmt2='PDF_HTTP=%{http_code} PDF_TYPE=%{content_type} PDF_SIZE=%{size_download} PDF_FINAL=%{url_effective}'
-                  cp2=subprocess.run(['curl','-L','--connect-timeout','20','--max-time','90','-sS','-A','Mozilla/5.0','-o',bout,'-w',fmt2,v],capture_output=True,text=True)
-                  print(cp2.stdout.strip())
-                  ft=subprocess.run(['file','-b',bout],capture_output=True,text=True).stdout.strip() if os.path.exists(bout) else 'MISSING'
-                  print('PDF_FILE='+ft)
+              ft=subprocess.run(['file','-b',out],capture_output=True,text=True).stdout.strip() if os.path.exists(out) else 'MISSING'
+              print('FILE='+ft)
+              if 'PDF document' in ft:
+                  sha=subprocess.run(['sha256sum',out],capture_output=True,text=True).stdout.split()[0]
+                  info=subprocess.run(['pdfinfo',out],capture_output=True,text=True).stdout
+                  print('SHA256='+sha)
+                  for line in info.splitlines():
+                      if line.startswith(('Pages:','Title:','Author:')): print(line)
+                  txt=subprocess.run(['pdftotext','-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout
+                  print('ARTICLE_TITLE_MATCH=', 'A SYSTEM OF AXIOMATIC SET THEORY' in txt.upper())
+                  print('BERNAYS_MATCH=', 'BERNAYS' in txt.upper())
+                  print('DOI_MATCH=', '2267281' in txt)
           PY
