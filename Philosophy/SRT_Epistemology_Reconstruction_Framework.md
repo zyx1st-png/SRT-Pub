@@ -306,7 +306,7 @@ candidate enumeration = prohibited
 scoring / ranking = prohibited
 Control A/B selection = prohibited
 control individuation = prohibited
-bounded archive assembly = allowed by Draft #889 Phase-8A pilot, pending clean migration
+Draft #889 pilot records bounded archive assembly = GO; actual archive execution remains paused until clean migration lands
 ```
 
 ### 5.5 Material completeness statement
