@@ -349,6 +349,7 @@ The following primary records are marked only `technical-depth potentially suffi
 | Paul Bernays | “A system of axiomatic set theory. Part V. General set theory (continued)” | 8(4), pp. 89–106 | continuation of the multipart system record | none immediately identified in this block | metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired |
 
 The minimal next acquisition pass is therefore the remaining 11 flagged primary texts plus the eight immediately linked reviews, not the whole 773-item block. Further acquisition would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.
+
 ### 4.6 Access result and explicit not-reached boundaries
 
 The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those publisher/Project-Euclid probes was registered as full text. Separately, the independent Saarland-hosted JSTOR scan for Bernays Part IV was acquired and page-verified as recorded in §4.5 and the source manifest.

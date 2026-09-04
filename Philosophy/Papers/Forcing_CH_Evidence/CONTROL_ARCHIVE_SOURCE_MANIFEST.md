@@ -553,7 +553,7 @@ Issue landing records reached:
 | Reach status | The all-issues archive and all 24 issue identities were reached. Eighteen issue/TOC landing records loaded independently; 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3) repeatedly timed out. |
 | Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |
 | Metadata anomaly | The all-issues archive displays 3(2) as pp. 61–124 while also displaying 3(3) as pp. 97–124. Independently loaded issue records resolve the printed spans as 3(2), pp. 61–96, and 3(3), pp. 97–124. |
-| Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and the entire item full-text layer remain incomplete. The block is therefore `systematic_but_incomplete`. |
+| Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and **772/773** item full texts remain incomplete. The independently acquired Bernays Part IV source does not make the block exhaustive; the block remains `systematic_but_incomplete`. |
 
 Issue landing records contacted:
 
@@ -596,8 +596,8 @@ Issue landing records contacted:
 | Stable key | `JSL-1938-1943-FULLTEXT-ACCESS-PROBE` |
 | Channels contacted | Cambridge issue/item routes, DOI redirects, and Project Euclid item routes linked by DBLP |
 | Result | Sampled Cambridge issue pages showed `Get access` for primary and review items; repeated command-line Cambridge retrieval returned rate limits; a Project Euclid route returned a challenge page. No complete item text was acquired through these probes. |
-| Function | Records the access constraint behind the block's 0 full-text count and prevents metadata contact from being misreported as page verification |
-| Limitations | This is an environment-specific access result, not a claim that the 773 items are unobtainable elsewhere. |
+| Function | Records the publisher/Project-Euclid access constraint behind the block's remaining 772 metadata-only full-text deficits and prevents metadata contact from being misreported as page verification |
+| Limitations | This is an environment-specific access result for those probe channels, not a claim that the remaining 772 metadata-only items are unobtainable elsewhere. Bernays Part IV was subsequently acquired through an independent Saarland-hosted source registered above. |
 
 
 ### `JSL-CAMBRIDGE-1944-1949-ISSUES`
