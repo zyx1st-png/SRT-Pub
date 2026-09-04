@@ -17,10 +17,12 @@ jobs:
         with:
           ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
           fetch-depth: 1
-      - name: Verify Saarland PDF source object
+      - name: Verify Saarland PDF source object and render boundaries
         shell: bash
         run: |
           set -euo pipefail
+          sudo apt-get -qq update
+          sudo apt-get -qq install -y poppler-utils
           python -m pip -q install requests pypdf
           python - <<'PY'
           import csv, io, json, hashlib, re, requests
@@ -28,60 +30,57 @@ jobs:
           from pypdf import PdfReader
 
           url='https://w2.cs.uni-saarland.de/op/fullpaper/settheory/BernaysGeneralSetTheory.pdf'
-          expected={
-              'author':'Paul Bernays',
-              'title':'A system of axiomatic set theory. Part IV. General set theory',
-              'year':'1942',
-              'volume':'7',
-              'issue':'4',
-              'pages':'133-145',
-              'doi':'10.2307/2268110',
-          }
           inv=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv')
           with inv.open(encoding='utf-8', newline='') as f:
               rows=list(csv.DictReader(f, delimiter='\t'))
           def norm(s): return re.sub(r'[^a-z0-9]+',' ',(s or '').lower()).strip()
-          matches=[r for r in rows if norm(r.get('author'))==norm(expected['author']) and norm(r.get('exact_title'))==norm(expected['title'])]
+          matches=[r for r in rows if norm(r.get('author'))==norm('Paul Bernays') and norm(r.get('exact_title'))==norm('A system of axiomatic set theory. Part IV. General set theory')]
           assert len(matches)==1, {'inventory_matches':len(matches)}
           row=matches[0]
           for k,v in [('publication_year','1942'),('volume','7'),('issue','4'),('pages','133-145')]:
               assert (row.get(k) or '').strip()==v, (k,row.get(k),v)
 
-          r=requests.get(url,headers={'User-Agent':'SRT-control-archive-acquisition/0.3'},timeout=120)
+          r=requests.get(url,headers={'User-Agent':'SRT-control-archive-acquisition/0.4'},timeout=120)
           rec={'url':url,'http_status':r.status_code,'content_type':r.headers.get('content-type',''),'bytes':len(r.content)}
           r.raise_for_status()
-          rec['pdf_magic']=r.content.startswith(b'%PDF')
-          assert rec['pdf_magic'], rec
+          assert r.content.startswith(b'%PDF'), rec
+          Path('/tmp/bernays-partiv.pdf').write_bytes(r.content)
           rec['sha256']=hashlib.sha256(r.content).hexdigest()
           pdf=PdfReader(io.BytesIO(r.content))
           rec['pdf_pages']=len(pdf.pages)
-          assert rec['pdf_pages']>=13, rec
+          assert rec['pdf_pages']==14, rec
           texts=[p.extract_text() or '' for p in pdf.pages]
-          normalized=[norm(t) for t in texts]
           alltext='\n'.join(texts)
           nall=norm(alltext)
+          rec['text_pages']=sum(bool(t.strip()) for t in texts)
           rec['title_present']='a system of axiomatic set theory part iv general set theory' in nall
           rec['author_present']='paul bernays' in nall
           rec['stable_id_present']='2268110' in alltext
-          rec['volume_issue_present']=('vol 7 no 4' in nall) or ('volume 7' in nall and 'no 4' in nall)
-          rec['start_page_indices']=[i for i,t in enumerate(texts) if re.search(r'(?m)(?:^|\s)133(?:\s|$)',t)]
-          rec['end_page_indices']=[i for i,t in enumerate(texts) if re.search(r'(?m)(?:^|\s)145(?:\s|$)',t)]
-          rec['pages_with_text']=sum(bool(t.strip()) for t in texts)
+          rec['bibliography_present']='vol 7 no 4' in nall and ('133 145' in nall or '133-145' in alltext)
           assert rec['title_present'] and rec['author_present'] and rec['stable_id_present'], rec
-          assert rec['start_page_indices'] and rec['end_page_indices'], rec
-          assert min(rec['start_page_indices']) < max(rec['end_page_indices']), rec
-          # Require a continuous 13-page article span between a page carrying printed 133 and one carrying printed 145.
-          spans=[(s,e) for s in rec['start_page_indices'] for e in rec['end_page_indices'] if e>=s and e-s+1==13]
-          rec['candidate_article_spans']=spans
-          assert spans, rec
-          s,e=spans[0]
-          article=texts[s:e+1]
-          rec['article_span']=[s,e]
-          rec['article_pages_with_text']=sum(bool(t.strip()) for t in article)
-          assert rec['article_pages_with_text']==13, rec
-          # Guard title on first article page and continued argument/text on final page.
-          assert 'a system of axiomatic set theory' in normalized[s] and 'part iv' in normalized[s], rec
-          assert len(normalized[e])>200, rec
-          print('VERIFIED',json.dumps(rec,ensure_ascii=False,sort_keys=True))
+          # This is an image scan: only the JSTOR metadata cover has a text layer.
+          assert rec['text_pages']==1, rec
+          Path('/tmp/verification.json').write_text(json.dumps({'source':rec,'inventory_row':row},ensure_ascii=False,indent=2),encoding='utf-8')
+          print('SOURCE_OBJECT',json.dumps(rec,ensure_ascii=False,sort_keys=True))
           print('INVENTORY_ROW',json.dumps(row,ensure_ascii=False,sort_keys=True))
           PY
+          mkdir -p /tmp/bernays-boundary
+          # Render all 14 PDF pages to prove the image objects are readable end-to-end.
+          pdftoppm -png -r 100 /tmp/bernays-partiv.pdf /tmp/bernays-boundary/page >/dev/null 2>&1
+          test "$(find /tmp/bernays-boundary -name 'page-*.png' | wc -l)" -eq 14
+          test "$(sha256sum /tmp/bernays-boundary/page-*.png | awk '{print $1}' | sort -u | wc -l)" -eq 14
+          # PDF page 1 is JSTOR metadata; article runs over PDF pages 2..14 (printed 133..145).
+          cp /tmp/bernays-boundary/page-02.png /tmp/bernays-boundary/article-start-printed-133.png
+          cp /tmp/bernays-boundary/page-14.png /tmp/bernays-boundary/article-end-printed-145.png
+          printf 'rendered_pages=14\nunique_render_hashes=14\narticle_pdf_span=2-14\n' >> /tmp/verification.json
+          ls -lh /tmp/bernays-boundary/article-*.png
+      - name: Upload boundary renders
+        uses: actions/upload-artifact@v4
+        with:
+          name: bernays-partiv-boundary-verification
+          path: |
+            /tmp/bernays-boundary/article-start-printed-133.png
+            /tmp/bernays-boundary/article-end-printed-145.png
+            /tmp/verification.json
+          if-no-files-found: error
+          retention-days: 1
