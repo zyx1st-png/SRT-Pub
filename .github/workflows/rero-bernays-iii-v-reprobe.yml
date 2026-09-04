@@ -1,4 +1,4 @@
-name: RERO Bernays III V Reprobe
+name: Kalmar 1939 Cambridge Direct PDF Probe
 
 on:
   push:
@@ -14,48 +14,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reprobe exact currently indexed RERO PDF objects
+      - name: Verify constructed Cambridge direct PDF object for Kalmar 1939
         shell: bash
         run: |
           set -euo pipefail
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          python - <<'PY'
-          import subprocess, os
-          items=[
-            ('BERNAYS_III','https://doc.rero.ch/record/290936/files/S0022481200064185.pdf','A SYSTEM OF AXIOMATIC SET THEORY','65','89'),
-            ('BERNAYS_V','https://doc.rero.ch/record/293193/files/S0022481200062800.pdf','A SYSTEM OF AXIOMATIC SET THEORY','89','106'),
-          ]
-          for key,url,title,pfirst,plast in items:
-              out=f'/tmp/{key}.bin'
-              fmt='HTTP=%{http_code} TYPE=%{content_type} SIZE=%{size_download} FINAL=%{url_effective}'
-              cp=subprocess.run(['curl','-L','--retry','2','--retry-delay','2','--connect-timeout','20','--max-time','90','-sS','-o',out,'-w',fmt,url],capture_output=True,text=True)
-              print(f'=== {key} ===')
-              print('URL='+url)
-              print(cp.stdout.strip())
-              ft=subprocess.run(['file','-b',out],capture_output=True,text=True).stdout.strip() if os.path.exists(out) else 'MISSING'
-              print('FILE='+ft)
-              if 'PDF document' in ft:
-                  sha=subprocess.run(['sha256sum',out],capture_output=True,text=True).stdout.split()[0]
-                  info=subprocess.run(['pdfinfo',out],capture_output=True,text=True).stdout
-                  pages=''
-                  for line in info.splitlines():
-                      if line.startswith('Pages:'):
-                          pages=line.split(':',1)[1].strip()
-                  print('SHA256='+sha)
-                  print('PDFINFO_PAGES='+pages)
-                  first=subprocess.run(['pdftotext','-f','1','-l','2','-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout.replace('\n',' ')[:1800]
-                  print('FIRST_TEXT='+first)
-                  if pages.isdigit():
-                      last=subprocess.run(['pdftotext','-f',pages,'-l',pages,'-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout.replace('\n',' ')[:1400]
-                      print('LAST_TEXT='+last)
-                      subprocess.run(['mkdir','-p',f'/tmp/{key}_render'])
-                      subprocess.run(['pdftoppm','-png','-r','72',out,f'/tmp/{key}_render/page'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-                      renders=subprocess.run(['bash','-lc',f"find /tmp/{key}_render -type f -name 'page-*.png' | wc -l"],capture_output=True,text=True).stdout.strip()
-                      unique=subprocess.run(['bash','-lc',f"sha256sum /tmp/{key}_render/page-*.png | awk '{{print $1}}' | sort -u | wc -l"],capture_output=True,text=True).stdout.strip()
-                      print('RENDER_COUNT='+renders)
-                      print('UNIQUE_RENDER_HASHES='+unique)
-              else:
-                  data=open(out,'rb').read(1800) if os.path.exists(out) else b''
-                  print('BODY_PREFIX='+data.decode('utf-8','ignore').replace('\n',' ')[:1400])
-          PY
+          url='https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A52C0CE45E8EC86E16AB8C3A20390142/S0022481200047903a.pdf/on-the-reduction-of-the-decision-problem-first-paper-ackermann-prefix-a-single-binary-predicate.pdf'
+          out='/tmp/kalmar1939.bin'
+          echo "URL=$url"
+          curl -L --retry 2 --retry-delay 2 --connect-timeout 20 --max-time 120 -A 'Mozilla/5.0' -sS -D /tmp/headers.txt -o "$out" -w 'HTTP=%{http_code}\nTYPE=%{content_type}\nSIZE=%{size_download}\nFINAL=%{url_effective}\n' "$url" || true
+          echo "FILE=$(file -b "$out" || true)"
+          if file -b "$out" | grep -qi 'PDF document'; then
+            echo "SHA256=$(sha256sum "$out" | awk '{print $1}')"
+            pages=$(pdfinfo "$out" | awk -F: '/^Pages:/ {gsub(/ /,"",$2); print $2}')
+            echo "PDFINFO_PAGES=$pages"
+            echo '--- FIRST ---'
+            pdftotext -f 1 -l 2 -layout "$out" - | sed -n '1,45p'
+            echo '--- LAST ---'
+            pdftotext -f "$pages" -l "$pages" -layout "$out" - | tail -n 45
+            mkdir -p /tmp/render
+            pdftoppm -png -r 72 "$out" /tmp/render/page >/dev/null 2>&1
+            echo "RENDER_COUNT=$(find /tmp/render -type f -name 'page-*.png' | wc -l)"
+            echo "UNIQUE_RENDER_HASHES=$(sha256sum /tmp/render/page-*.png | awk '{print $1}' | sort -u | wc -l)"
+            alltext=$(pdftotext -layout "$out" - | tr '\n' ' ')
+            echo "TITLE_MATCH=$(printf '%s' "$alltext" | grep -Fci 'ON THE REDUCTION OF THE DECISION PROBLEM' || true)"
+            echo "AUTHOR_MATCH=$(printf '%s' "$alltext" | grep -Fci 'KALM' || true)"
+          else
+            echo '--- BODY PREFIX ---'
+            head -c 1800 "$out" | tr '\n' ' ' || true
+            echo
+          fi
