@@ -11,12 +11,16 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md
+  - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
+  - Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
 tags: [Constitution, DomainResearch, ExecutionPlan, AuthorConvergence, DeepWell]
 ---
 
 # SRT Constitution + Domain Reconstruction — Execution Plan
+
+> **2026-09-04 architecture amendment:** for post-Constitution Phases 7–10, `SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` controls sequencing. The active domain template is `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`; Blueprint §6 remains the compact historical predecessor rather than the execution template for new/backfilled domain frameworks.
 
 ## 0. Current priority
 
@@ -36,10 +40,13 @@ identity/bootstrap sync
 -> author second adjudication
 -> Constitution v1 freeze
 -> Core/Core_Law role-reclassification audit
--> choose one domain deep well
+-> choose one domain
+-> Pre-framework Material Re-entry + Domain Reconstruction Framework
+-> choose one bounded deep well from that framework
 -> execute domain study
 -> evaluate productive adequacy
--> only then broaden to another domain
+-> Phase 9.5 framework writeback
+-> only then broaden to another domain; cross-domain synthesis still requires two independently usable deep-well results
 ```
 
 This plan is prospective. Existing manuscripts and already-landed historical assets retain their historical status unless separately audited.
@@ -328,7 +335,7 @@ Author chooses after scoring.
 
 ## Phase 8 — domain deep well
 
-Use the seven-step domain template in the blueprint and produce a single coherent study, not scattered patches.
+For new or backfilled post-Constitution domain work, first use `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`; its opening mapping explicitly carries forward Blueprint §6. A deep well is then selected from that framework rather than using the compact Blueprint §6 template directly.
 
 Mandatory pre-model artifact: Bearer–Objectification Declaration.
 
