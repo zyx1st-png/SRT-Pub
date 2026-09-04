@@ -62,7 +62,8 @@ experiments / data / archives / historical tests / Case A-B-C gates
         ↓
 
 LAYER 5 — Productive writeback and eventual cross-domain synthesis
-only after domain-local work has earned reusable structure
+framework writeback occurs after each completed or legitimately blocked deep well;
+cross-domain synthesis does not begin until at least two deep wells have independently produced usable results
 ```
 
 The key correction is the insertion of **Layer 2**.
@@ -466,7 +467,7 @@ Phase 7.5 Pre-framework recovery + Material Re-entry + Domain Reconstruction Fra
 Phase 8   one bounded deep well
 Phase 9   productive-adequacy review
 Phase 9.5 Domain Framework writeback
-Phase 10  next domain, or cross-domain synthesis only when independently earned
+Phase 10  next domain, or cross-domain synthesis only after at least two deep wells have independently produced usable results
 ```
 
 The single-well discipline remains.
@@ -478,6 +479,8 @@ Adding a domain framework does not authorize parallel deep-well execution.
 ## 8. Cross-domain synthesis boundary
 
 Domain Reconstruction Frameworks make later synthesis more disciplined because they provide an intermediate comparison unit.
+
+**Threshold:** framework writeback is allowed after each deep well, but cross-domain synthesis remains blocked until at least **two** deep wells have independently produced usable results, preserving the existing Execution Plan Phase-10 gate.
 
 Future synthesis should compare, for example:
 
