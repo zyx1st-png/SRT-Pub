@@ -1,1 +1,1 @@
-trigger strict JSL 1944-1949 mapping dry-run
+trigger bounded JSL 1944-1949 inventory generation
