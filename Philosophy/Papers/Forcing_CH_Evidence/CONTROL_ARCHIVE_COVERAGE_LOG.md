@@ -28,7 +28,7 @@ Expandable log of corpus contact permitted by `CONTROL_ARCHIVE_ADEQUACY_CERTIFIC
 | `COV-JSL-1955-V20-RECEPTION` | *The Journal of Symbolic Logic* | 1955 / vol. 20, nos. 1–2 | Müller p. 84 joint review and Montague p. 140 technical reconstruction; both complete entries | Remaining reviews/articles in vol. 20; other 1955 review and survey venues; no systematic review-of-record sweep | **opportunistic** — supplied items, not a serial sweep | Not a new primary-publication segment; both reached sources complete for their roles | **complete for the reached Müller entry only**; not exhaustive for JSL or the period | Montague supplies a genuine alternative formulation and contradiction proof, but the unit still lacks a strict removal/replacement record | Local JSTOR page scans only; no proof of exhaustive review coverage | Extend review-of-record coverage across a declared venue/year block and add technically deeper in-window construction records. |
 | `COV-UNIT-JSL-1953-1955-PARADOX-01` | *The Journal of Symbolic Logic* cluster | 1953–1955 / vols. 18 and 20 | Two primary publications + one period joint review + one period technical reconstruction, all page-verified | 1938–1952 and 1956–1963; all other mathematical-logic subfields; other venues; exhaustive survey/review coverage; pre-window Russell/Curry/Quine baselines as independently verified sources | **opportunistic corpus unit** | **2/2 reached primary publications complete** | **1/1 reached joint review complete; globally unswept** | Functional reconstruction and representation comparison available; load-bearing removal capacity remains insufficient | The unit was assembled from supplied material, not discovered through a repeatable systematic sweep | Add only the minimum evidence functions listed in the corpus-unit record §8: subfield/time breadth, review-of-record coverage, technically deep construction detail, and explicit sweep boundaries. |
 | `COV-JSL-1950-1955-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1950–1955; vol. 14 no. 4 boundary catchment plus vols. 15–20, all four issues each; **25 issues** | Official all-issues index and all 25 issue landing records; 1,416 deduplicated item records: 130 primary technical publications/corrections, 1,178 review-of-record entries, and 108 other issue records; 25 page-verified complete texts | 1,391 items remain incomplete at the full-text layer, all metadata-only; complete independent loading of every Cambridge dynamic pagination segment; JSL outside the declared block; all other venues | **systematic_but_incomplete** — no issue or item metadata gap, but paywalls and dynamic-page failures prevent an exhaustive claim | **15/130 primary/correction full texts page-verified; 115 metadata-only** | **10/1,178 review full texts page-verified; 1,168 metadata-only; 0 partial**; metadata-level review coverage demonstrated within this block | 12 primary/correction records marked only `technical-depth potentially sufficient`; all 12 are now page-verified, but no audit test was run | Cambridge login/paywall; intermittent dynamic pagination errors; JSTOR direct item access returned access controls; metadata remained reachable through publisher/Crossref/DBLP records | Retain the explicit full-text limits and define any next bounded venue/year block separately; do not screen, score, rank, select, or individuate any record during acquisition. |
-| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records | Six issue/TOC landing records did not load independently; all 773 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and the full-text layer remain incomplete | **0/67 primary/correction full texts page-verified; 67 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; all remain metadata-only and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; no local full text acquired for this block | Acquire only the 12 functionally flagged primary records and eight immediately linked reviews as a minimal next pass; preserve all candidate and individuation prohibitions. |
+| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records; Bernays Part IV is now page-verified complete | Six issue/TOC landing records did not load independently; 772 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and almost the entire full-text layer remain incomplete | **1/67 primary/correction full texts page-verified; 66 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; **1/12** (Bernays Part IV) is page-verified complete, 11 remain metadata-only, and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; one independent public Saarland scan verified for Bernays Part IV | Continue only bounded acquisition of the remaining flagged records and linked reviews; preserve all candidate and individuation prohibitions. |
 | `COV-JSL-1944-1949-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1944–1949; vols. 9–14 nos. 1–3; **23 issues** | Cambridge all-issues/issue records plus Crossref metadata; 714 deduplicated item records: 64 primary technical publications/corrections, 580 review-of-record entries/notices, and 70 other issue records | All 714 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — issue/item metadata gap closed for the declared block, but the entire full-text and technical-depth layers remain incomplete | **0/64 primary/correction full texts page-verified; 64 metadata-only** | **0/580 review/notice full texts page-verified; 580 metadata-only**; 36 primary/correction rows have an immediately identifiable in-block contemporaneous review entry | **0** records have nonblank technical-depth availability; no six-test audit was run | Publisher metadata and issue pages were reachable, but no complete item full text was acquired in this pass | Preserve the metadata-only boundary; continue only bounded archive assembly. Do not enumerate, score, rank, select, or individuate. |
 
 ## 2. Current coverage statement
@@ -40,7 +40,7 @@ The archive now has four coverage entries in two provenance modes:
 3. `COV-JSL-1944-1949-SYSTEMATIC` closes the intervening JSL issue/item-metadata gap;
 4. `COV-JSL-1950-1955-SYSTEMATIC` covers the next bounded serial/year block.
 
-All three systematic blocks are **systematic_but_incomplete**, not `exhaustive_within_declared_block`. Together they provide continuous JSL row-level metadata coverage for calendar years **1938–1955: 72 issues and 2,903 deduplicated item rows**. Only the existing 25 items in the 1950–1955 block are page-verified complete; **2,878 rows remain metadata-only**. The 1938–1943 block additionally retains six independently unconfirmed publisher TOCs.
+All three systematic blocks are **systematic_but_incomplete**, not `exhaustive_within_declared_block`. Together they provide continuous JSL row-level metadata coverage for calendar years **1938–1955: 72 issues and 2,903 deduplicated item rows**. There are now **26 page-verified complete items** across the three systematic blocks: the existing 25 items in 1950–1955 plus Bernays Part IV in 1938–1943; **2,877 rows remain metadata-only**. The 1938–1943 block additionally retains six independently unconfirmed publisher TOCs.
 
 This closes the JSL 1944–1949 issue/item-metadata gap only. It is not evidence of exhaustive JSL coverage for 1938–1963, coverage of other logic venues, corpus-wide technical depth, full-text review coverage, or the absence of further corpus material. JSL 1956–1963 and every other mathematical-logic venue remain outside the systematic blocks.
 
@@ -254,10 +254,10 @@ No candidate was enumerated, admitted, excluded as a candidate, scored, ranked, 
 | Review and bibliographical-notice records reached | **601**: 595 author-attributed reviews plus 6 entries conservatively typed `bibliographical notice / unattributed review` because reviewer metadata was absent |
 | Primary article metadata reached | **67**: 66 primary technical publications plus 1 correction |
 | Other issue records reached | **105**: covers/front/back matter, citation-linkage matter, association records, meeting reports/notices/abstracts, review indexes, errata, and one bibliography supplement |
-| Full-text availability | **0** page-verified complete texts in this block |
+| Full-text availability | **1** page-verified complete text in this block: Bernays Part IV, separately registered in the source manifest |
 | Partial full-text availability | **0** |
-| Metadata-only items | **773** |
-| Inaccessible/incomplete items | **773 at the complete-full-text layer**. This means full text was not reached in this pass; it does not assert that every item is unavailable from every channel. Six issue/TOC pages also remain unconfirmed by an independently loaded publisher landing record. |
+| Metadata-only items | **772** |
+| Inaccessible/incomplete items | **772 at the complete-full-text layer**, all metadata-only. This means those full texts were not reached in this pass; it does not assert that every item is unavailable from every channel. Six issue/TOC pages also remain unconfirmed by an independently loaded publisher landing record. |
 | Block status | **systematic_but_incomplete** |
 
 The item inventory is `CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv`. It has one row per deduplicated bibliographic item and only the collection fields allowed by the scope lock. The exact Crossref query returned 774 DOI metadata records; one duplicate was collapsed by volume, assigned issue, opening page, and normalized exact title, leaving 773 item rows. Crossref's deposited issue fields were corrected only where a numeric printed page placed the record unambiguously inside the official non-overlapping issue span. Roman-numbered front/back matter retained the deposited issue.
@@ -289,12 +289,12 @@ Cambridge's all-issues archive displays 3(2) as pp. 61–124 while also displayi
 | 1942 | 7 | 1 | 1–48 | 28 | 4 | 19 | 5 | 0 |
 | 1942 | 7 | 2 | 49–104 | 19 | 2 | 14 | 3 | 0 |
 | 1942 | 7 | 3 | 105–132 | 30 | 2 | 25 | 3 | 0 |
-| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 0 |
+| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 1 |
 | 1943 | 8 | 1 | 1–40 | 19 | 3 | 11 | 5 | 0 |
 | 1943 | 8 | 2 | 41–60 | 28 | 1 | 25 | 2 | 0 |
 | 1943 | 8 | 3 | 61–88 | 19 | 1 | 16 | 2 | 0 |
 | 1943 | 8 | 4 | 89–164 | 15 | 3 | 8 | 4 | 0 |
-| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **0** |
+| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **1** |
 
 ### 4.3 Subfield distribution
 
@@ -331,43 +331,45 @@ Accordingly, **review metadata coverage is demonstrated within this block**, but
 
 The following primary records are marked only `technical-depth potentially sufficient`. The flag means that pagination plus a multipart, correction, theorem, or immediately identifiable review chain may support a later removal/replacement audit if the full text is obtained. It is not an admission, comparison, or individuation judgement.
 
-| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review |
-|---|---|---|---|---|
-| L. Chwistek; W. Hetper | “New foundation of formal metamathematics” | 3(1), pp. 1–36 | long formal construction record | W. V. Quine, 3(3), pp. 120–121 |
-| Józef Pepis | “Ein Verfahren der mathematischen Logik” | 3(2), pp. 61–76 | multi-page method record | Paul Bernays, 3(4), pp. 161–162 |
-| K. Reach | “The name relation and the logical antinomies” | 3(3), pp. 97–111 | multi-page construction plus an in-issue correction | Paul Henle, 4(3), p. 134 |
-| Frederic B. Fitch | “The consistency of the ramified Principia” | 3(4), pp. 140–149 | formal consistency construction | Paul Bernays, 4(2), pp. 97–98 |
-| László Kalmár | “On the reduction of the decision problem. First paper. Ackermann prefix, a single binary predicate” | 4(1), pp. 1–9 | explicitly multipart reduction record | Th. Skolem, 4(3), pp. 127–128 |
-| Barkley Rosser | “An informal exposition of proofs of Gödel's theorems and Church's theorem” | 4(2), pp. 53–60 | proof exposition with separately recorded errata | Evert Beth, 4(4), p. 165 |
-| Alonzo Church | “A formulation of the simple theory of types” | 5(2), pp. 56–68 | multi-page formal-system formulation | W. V. Quine, 5(3), pp. 114–115 |
-| J. C. C. McKinsey | “Postulates for the calculus of binary relations” | 5(3), pp. 85–97 | postulate and theorem-chain record | Everett J. Nelson, 5(4), pp. 167–168 |
-| Paul Bernays | “A system of axiomatic set theory—Part II” | 6(1), pp. 1–17 | continuation of a multipart system record | none immediately identified in this block |
-| Paul Bernays | “A system of axiomatic set theory. Part III. Infinity and enumerability. Analysis” | 7(2), pp. 65–89 | continuation with explicit subject divisions | none immediately identified in this block |
-| Paul Bernays | “A system of axiomatic set theory. Part IV. General set theory” | 7(4), pp. 133–145 | continuation of the multipart system record | none immediately identified in this block |
-| Paul Bernays | “A system of axiomatic set theory. Part V. General set theory (continued)” | 8(4), pp. 89–106 | continuation of the multipart system record | none immediately identified in this block |
+**Acquisition writeback, 2026-09-04.** Bernays Part IV was acquired from a currently reachable Saarland-hosted JSTOR scan and verified as a 14-page PDF object: one JSTOR metadata cover plus 13 distinct rendered article pages spanning printed pp. 133–145. SHA-256: `e893e6b6717558f343a03223c640fed11d78d8791f6fce7a9b91b02eb2c2ad93`. This is an access/depth upgrade only; no six-test, component-removal, comparison, admission, or individuation judgement was run. Legacy RERO file endpoints identified for Bernays Parts III and V returned HTTP 410 during the same acquisition pass and therefore do not count as current reproducible full-text sources.
 
-The minimal next acquisition pass is therefore these 12 primary texts plus the eight immediately linked reviews, not the whole 773-item block. Acquiring them would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.
+| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review | Acquisition status |
+|---|---|---|---|---|---|
+| L. Chwistek; W. Hetper | “New foundation of formal metamathematics” | 3(1), pp. 1–36 | long formal construction record | W. V. Quine, 3(3), pp. 120–121 | metadata-only; no current reproducible full-text object acquired in this pass |
+| Józef Pepis | “Ein Verfahren der mathematischen Logik” | 3(2), pp. 61–76 | multi-page method record | Paul Bernays, 3(4), pp. 161–162 | metadata-only; no current reproducible full-text object acquired in this pass |
+| K. Reach | “The name relation and the logical antinomies” | 3(3), pp. 97–111 | multi-page construction plus an in-issue correction | Paul Henle, 4(3), p. 134 | metadata-only; no current reproducible full-text object acquired in this pass |
+| Frederic B. Fitch | “The consistency of the ramified Principia” | 3(4), pp. 140–149 | formal consistency construction | Paul Bernays, 4(2), pp. 97–98 | metadata-only; no current reproducible full-text object acquired in this pass |
+| László Kalmár | “On the reduction of the decision problem. First paper. Ackermann prefix, a single binary predicate” | 4(1), pp. 1–9 | explicitly multipart reduction record | Th. Skolem, 4(3), pp. 127–128 | metadata-only; no current reproducible full-text object acquired in this pass |
+| Barkley Rosser | “An informal exposition of proofs of Gödel's theorems and Church's theorem” | 4(2), pp. 53–60 | proof exposition with separately recorded errata | Evert Beth, 4(4), p. 165 | metadata-only; no current reproducible full-text object acquired in this pass |
+| Alonzo Church | “A formulation of the simple theory of types” | 5(2), pp. 56–68 | multi-page formal-system formulation | W. V. Quine, 5(3), pp. 114–115 | metadata-only; no current reproducible full-text object acquired in this pass |
+| J. C. C. McKinsey | “Postulates for the calculus of binary relations” | 5(3), pp. 85–97 | postulate and theorem-chain record | Everett J. Nelson, 5(4), pp. 167–168 | metadata-only; no current reproducible full-text object acquired in this pass |
+| Paul Bernays | “A system of axiomatic set theory—Part II” | 6(1), pp. 1–17 | continuation of a multipart system record | none immediately identified in this block | metadata-only; no current reproducible full-text object acquired in this pass |
+| Paul Bernays | “A system of axiomatic set theory. Part III. Infinity and enumerability. Analysis” | 7(2), pp. 65–89 | continuation with explicit subject divisions | none immediately identified in this block | metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired |
+| Paul Bernays | “A system of axiomatic set theory. Part IV. General set theory” | 7(4), pp. 133–145 | continuation of the multipart system record | none immediately identified in this block | **page-verified complete** via Saarland-hosted JSTOR scan; printed pp. 133–145 visually verified; source-object hash recorded above |
+| Paul Bernays | “A system of axiomatic set theory. Part V. General set theory (continued)” | 8(4), pp. 89–106 | continuation of the multipart system record | none immediately identified in this block | metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired |
+
+The minimal next acquisition pass is therefore the remaining 11 flagged primary texts plus the eight immediately linked reviews, not the whole 773-item block. Further acquisition would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.
 
 ### 4.6 Access result and explicit not-reached boundaries
 
-The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those probes was registered as full text.
+The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those publisher/Project-Euclid probes was registered as full text. Separately, the independent Saarland-hosted JSTOR scan for Bernays Part IV was acquired and page-verified as recorded in §4.5 and the source manifest.
 
 Explicitly not reached in this sweep:
 
 - independent publisher issue/TOC loading for 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3);
-- any page-verified item full text in the 1938–1943 block;
+- the remaining 772 item full texts in the 1938–1943 block; Bernays Part IV is the sole page-verified complete item;
 - JSL 1956–1963;
 - every mathematical-logic venue other than JSL;
 - any corpus-wide technical or review sufficiency finding.
 
 ### 4.7 Local effect on certificate §2(4)
 
-This block improves §2(4) locally by extending repeatable JSL metadata coverage to the early 1938–1943 boundary: the archive can now state the exact 24-issue universe, retain 773 item records, reproduce the 601-entry review subset, and name the six publisher-TOC and 773 full-text deficits. Together with the 1944–1949 and 1950–1955 blocks, this yields bounded continuous row-level metadata coverage for JSL 1938–1955. It closes the intervening 1944–1949 issue/item-metadata gap, but not the 1956–1963 gap, and supplies no other-venue coverage.
+This block improves §2(4) locally by extending repeatable JSL metadata coverage to the early 1938–1943 boundary: the archive can now state the exact 24-issue universe, retain 773 item records, reproduce the 601-entry review subset, and name the six publisher-TOC and 772 remaining full-text deficits. Together with the 1944–1949 and 1950–1955 blocks, this yields bounded continuous row-level metadata coverage for JSL 1938–1955. It closes the intervening 1944–1949 issue/item-metadata gap, but not the 1956–1963 gap, and supplies no other-venue coverage.
 
 Part II remains unsigned because:
 
-- §2(2) is not established corpus-wide: this entire 773-item block remains metadata-only, including all 67 primary/correction and all 601 review/notice records;
-- §2(3) is not established: the 12 technical-depth flags are acquisition aids only, no full text was reached for them, and none was run through the six tests;
+- §2(2) is not established corpus-wide: **772/773** items in this block remain metadata-only, including 66/67 primary/correction records and all 601 review/notice records; Bernays Part IV is the sole page-verified exception;
+- §2(3) is not established: the 12 technical-depth flags are acquisition aids only; **1/12** (Bernays Part IV) is now page-verified complete, 11 remain metadata-only, and none was run through the six tests;
 - §2(4) remains partial: six publisher TOCs in the 1938–1943 block are independently unconfirmed, JSL 1956–1963 remains unswept, and no additional venue has been systematically swept.
 
 No candidate was enumerated, admitted, excluded as a candidate, scored, ranked, selected, or individuated.
@@ -449,7 +451,7 @@ Technical-depth availability is **0/714 nonblank**. No removal/replacement test,
 
 ### 5.5 Local effect on certificate §2(4)
 
-This block closes the previously explicit **JSL 1944–1949 issue/item-metadata gap**. Combined with the adjacent systematic blocks, JSL row-level metadata coverage is now continuous from 1938 through 1955: **72 issues, 2,903 rows**. This is still not corpus adequacy: only 25 rows across those 2,903 are page-verified complete, JSL 1956–1963 remains unswept, six 1938–1943 publisher TOCs remain independently unconfirmed, and no second venue has been systematically assembled.
+This block closes the previously explicit **JSL 1944–1949 issue/item-metadata gap**. Combined with the adjacent systematic blocks, JSL row-level metadata coverage is now continuous from 1938 through 1955: **72 issues, 2,903 rows**. This is still not corpus adequacy: only 26 rows across those 2,903 are page-verified complete, JSL 1956–1963 remains unswept, six 1938–1943 publisher TOCs remain independently unconfirmed, and no second venue has been systematically assembled.
 
 Part II remains **UNATTESTED** and enumeration remains **NO-GO**.
 
