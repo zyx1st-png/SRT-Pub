@@ -1,0 +1,146 @@
+name: Part IV Coverage Coherence Fix Once
+
+on:
+  push:
+    branches:
+      - scratch/partiv-coherence-fix-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Fix acquisition-ledger schema and all dependent local counts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          p=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md')
+          s=p.read_text(encoding='utf-8')
+
+          def one(text, old, new, label):
+              n=text.count(old)
+              assert n==1, (label, n)
+              return text.replace(old,new,1)
+
+          # A. §4.5: preserve review linkage and add a distinct acquisition-status column.
+          start=s.index('### 4.5 Minimal full-text acquisition list')
+          end=s.index('\n### 4.6 ', start)
+          sec=s[start:end]
+          lines=sec.splitlines()
+          header='| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review |'
+          sep='|---|---|---|---|---|'
+          assert lines.count(header)==1
+          hi=lines.index(header)
+          assert lines[hi+1]==sep
+          lines[hi]='| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review | Acquisition status |'
+          lines[hi+1]='|---|---|---|---|---|---|'
+          row_count=0
+          for i in range(hi+2,len(lines)):
+              line=lines[i]
+              if not line.startswith('| '):
+                  continue
+              cells=[c.strip() for c in line.strip().strip('|').split('|')]
+              if len(cells)!=5:
+                  continue
+              author,title,loc,function,linked=cells
+              status='metadata-only; no current reproducible full-text object acquired in this pass'
+              if author=='Paul Bernays' and 'Part III.' in title:
+                  linked='none immediately identified in this block'
+                  status='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+              elif author=='Paul Bernays' and 'Part IV.' in title:
+                  linked='none immediately identified in this block'
+                  status='**page-verified complete** via Saarland-hosted JSTOR scan; printed pp. 133–145 visually verified; source-object hash recorded above'
+              elif author=='Paul Bernays' and 'Part V.' in title:
+                  linked='none immediately identified in this block'
+                  status='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+              lines[i]='| '+' | '.join([author,title,loc,function,linked,status])+' |'
+              row_count+=1
+          assert row_count==12, row_count
+          sec2='\n'.join(lines)
+          sec2=one(
+              sec2,
+              'The minimal next acquisition pass is therefore these 12 primary texts plus the eight immediately linked reviews, not the whole 773-item block. Acquiring them would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.',
+              'The minimal next acquisition pass is therefore the remaining 11 flagged primary texts plus the eight immediately linked reviews, not the whole 773-item block. Further acquisition would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.',
+              'next acquisition sentence')
+          s=s[:start]+sec2+s[end:]
+
+          # B. §4.1/§4.2 local block counts.
+          s=one(s,'| Full-text availability | **0** page-verified complete texts in this block |','| Full-text availability | **1** page-verified complete text in this block: Bernays Part IV, separately registered in the source manifest |','4.1 full text count')
+          s=one(s,'| Metadata-only items | **773** |','| Metadata-only items | **772** |','4.1 metadata-only count')
+          s=one(s,'| Inaccessible/incomplete items | **773 at the complete-full-text layer**. This means full text was not reached in this pass; it does not assert that every item is unavailable from every channel. Six issue/TOC pages also remain unconfirmed by an independently loaded publisher landing record. |','| Inaccessible/incomplete items | **772 at the complete-full-text layer**, all metadata-only. This means those full texts were not reached in this pass; it does not assert that every item is unavailable from every channel. Six issue/TOC pages also remain unconfirmed by an independently loaded publisher landing record. |','4.1 incomplete count')
+          s=one(s,'| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 0 |','| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 1 |','4.2 issue 7(4) count')
+          s=one(s,'| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **0** |','| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **1** |','4.2 total count')
+
+          # C. §4.6 explicit boundary language: distinguish publisher probes from the independent acquisition.
+          s=one(s,
+              'The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those probes was registered as full text.',
+              'The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those publisher/Project-Euclid probes was registered as full text. Separately, the independent Saarland-hosted JSTOR scan for Bernays Part IV was acquired and page-verified as recorded in §4.5 and the source manifest.',
+              '4.6 access paragraph')
+          s=one(s,'- any page-verified item full text in the 1938–1943 block;','- the remaining 772 item full texts in the 1938–1943 block; Bernays Part IV is the sole page-verified complete item;','4.6 not reached boundary')
+
+          # D. §4.7 certificate-effect statement and blockers.
+          s=one(s,'and name the six publisher-TOC and 773 full-text deficits.','and name the six publisher-TOC and 772 remaining full-text deficits.','4.7 deficit count')
+          s=one(s,
+              '- §2(2) is not established corpus-wide: this entire 773-item block remains metadata-only, including all 67 primary/correction and all 601 review/notice records;',
+              '- §2(2) is not established corpus-wide: **772/773** items in this block remain metadata-only, including 66/67 primary/correction records and all 601 review/notice records; Bernays Part IV is the sole page-verified exception;',
+              '4.7 part ii section 2(2)')
+          s=one(s,
+              '- §2(3) is not established: the 12 technical-depth flags are acquisition aids only, no full text was reached for them, and none was run through the six tests;',
+              '- §2(3) is not established: the 12 technical-depth flags are acquisition aids only; **1/12** (Bernays Part IV) is now page-verified complete, 11 remain metadata-only, and none was run through the six tests;',
+              '4.7 part ii section 2(3)')
+
+          p.write_text(s,encoding='utf-8')
+
+          # E. Strong coherence guards limited to the 1938–1943 section.
+          t=p.read_text(encoding='utf-8')
+          a=t.index('## 4. `COV-JSL-1938-1943-SYSTEMATIC`')
+          b=t.index('\n## 5. `COV-JSL-1944-1949-SYSTEMATIC`',a)
+          q=t[a:b]
+          required=[
+              '| Full-text availability | **1** page-verified complete text in this block:',
+              '| Metadata-only items | **772** |',
+              '| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 1 |',
+              '| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **1** |',
+              '| Acquisition status |',
+              'remaining 11 flagged primary texts plus the eight immediately linked reviews',
+              'legacy RERO file endpoint returned HTTP 410',
+              '**1/12** (Bernays Part IV) is now page-verified complete',
+              '**772/773** items in this block remain metadata-only',
+          ]
+          for x in required:
+              assert x in q, x
+          forbidden=[
+              '| Full-text availability | **0** page-verified complete texts in this block |',
+              '| Metadata-only items | **773** |',
+              'any page-verified item full text in the 1938–1943 block',
+              'this entire 773-item block remains metadata-only',
+              'no full text was reached for them',
+              'these 12 primary texts plus the eight immediately linked reviews',
+              '773 full-text deficits',
+          ]
+          for x in forbidden:
+              assert x not in q, x
+          assert q.count('**page-verified complete** via Saarland-hosted JSTOR scan')==1
+          assert q.count('legacy RERO file endpoint returned HTTP 410')==2
+          assert 'part_ii_attested: false' in t
+          assert 'candidate_enumeration: false' in t
+          print('PARTIV_COVERAGE_COHERENCE_OK')
+          PY
+          git diff --check
+          test "$(git diff --name-only | wc -l)" -eq 1
+          test "$(git diff --name-only)" = 'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md
+          git commit -m 'Archive: make Part IV acquisition ledger internally coherent'
+          git push origin HEAD:phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
