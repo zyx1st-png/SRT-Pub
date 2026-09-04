@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: 4b930b9e
-source_branch: bootstrap-domain-framework-sync-20260904
-source_dirty: false
-inputs_digest: e7effa9e0b88c287
+source_commit: 949eef5b
+source_branch: neuroscience-domain-reconstruction-framework-20260904
+source_dirty: true
+inputs_digest: 4ccea15d87fbc191
 ---
 
 # SRT 核心动力学上下文包
@@ -27,9 +27,9 @@ inputs_digest: e7effa9e0b88c287
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-04 |
-| 来源 commit | `4b930b9e` |
-| 来源分支 | `bootstrap-domain-framework-sync-20260904` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `949eef5b` |
+| 来源分支 | `neuroscience-domain-reconstruction-framework-20260904` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
