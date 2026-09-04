@@ -1,62 +1,103 @@
-name: JSL 1944-1949 Strict Mapping Dry Run
+name: Generate JSL 1944-1949 Inventory Scratch
 
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
-  audit:
+  generate:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
           ref: phase8b/jsl-1944-1949-archive-assembly-20260904
-      - name: Map Crossref rows to publisher sections without fuzzy matching
+          fetch-depth: 0
+      - name: Generate conservative row-level inventory
         shell: bash
         run: |
           python -m pip -q install requests beautifulsoup4
           python - <<'PY'
-          import re, unicodedata, requests, collections
+          import csv, html, re, unicodedata, requests, collections
           from bs4 import BeautifulSoup
-          H={'User-Agent':'SRT-archive-assembly/0.1 (strict metadata mapping)'}
+          from pathlib import Path
+
+          H={'User-Agent':'SRT-archive-assembly/0.2 (fixed-boundary metadata sweep)'}
           BASE='https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues'
+          OUT=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv')
+
+          def clean_text(s):
+              s=BeautifulSoup(html.unescape(s or ''),'html.parser').get_text(' ',strip=True)
+              return re.sub(r'\s+',' ',s).strip()
+
           def norm(s):
-              s=unicodedata.normalize('NFKD',s or '')
+              s=unicodedata.normalize('NFKD',clean_text(s))
               s=''.join(c for c in s if not unicodedata.combining(c)).lower()
               return re.sub(r'[^a-z0-9]+',' ',s).strip()
+
           def npage(s):
-              return (s or '').replace('–','-').replace('—','-').replace(' ','').lower()
+              return clean_text(s).replace('–','-').replace('—','-').replace(' ','').lower()
 
-          # Crossref fixed block
-          u=('https://api.crossref.org/journals/0022-4812/works?'
-             'filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000')
-          rr=requests.get(u,headers=H,timeout=90); rr.raise_for_status()
+          def pub_year(x):
+              for k in ('published-print','published','issued'):
+                  try:
+                      return int(x[k]['date-parts'][0][0])
+                  except Exception:
+                      pass
+              return None
+
+          # ---- Fixed Crossref block ----
+          crurl=('https://api.crossref.org/journals/0022-4812/works?'
+                 'filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000')
+          rr=requests.get(crurl,headers=H,timeout=90); rr.raise_for_status()
+          raw=rr.json()['message']['items']
           xs=[]
-          for x in rr.json()['message']['items']:
-              title=(x.get('title') or [''])[0]
-              auth=[]
+          for x in raw:
+              title=clean_text((x.get('title') or [''])[0])
+              authors=[]
               for a in x.get('author') or []:
-                  nm=' '.join(z for z in [a.get('given',''),a.get('family','')] if z).strip()
-                  if nm: auth.append(nm)
-              xs.append({'vol':str(x.get('volume') or ''),'iss':str(x.get('issue') or ''),'page':npage(x.get('page') or ''),
-                         'title':title,'nt':norm(title),'doi':x.get('DOI') or '','author':'; '.join(auth)})
+                  nm=' '.join(z for z in [clean_text(a.get('given','')),clean_text(a.get('family',''))] if z).strip()
+                  if nm: authors.append(nm)
+              xs.append({
+                  'author':'; '.join(authors), 'title':title, 'nt':norm(title),
+                  'year':pub_year(x), 'vol':str(x.get('volume') or ''), 'iss':str(x.get('issue') or ''),
+                  'page':npage(x.get('page') or ''), 'doi':str(x.get('DOI') or ''),
+              })
 
-          # Publisher issue list
+          # Dedup under the same bounded key used by prior sweep.
+          dedup=[]; seen=set(); duplicates=[]
+          for x in xs:
+              opening=(x['page'].split('-')[0] if x['page'] else '')
+              key=(x['vol'],x['iss'],opening,x['nt'])
+              if key in seen:
+                  duplicates.append(x); continue
+              seen.add(key); dedup.append(x)
+          xs=dedup
+
+          # ---- Cambridge publisher-native issue/section map ----
           ar=requests.get(BASE,headers=H,timeout=90); ar.raise_for_status()
           soup=BeautifulSoup(ar.text,'html.parser'); current=None; found=[]
+          issue_spans={}
           for a in soup.find_all('a'):
               text=' '.join(a.stripped_strings)
               m=re.search(r'(1949-1950|1948|1947|1946|1945|1944)\s*-\s*Volume\s+(14|13|12|11|10|9)',text)
-              if m: current=(m.group(1),m.group(2)); continue
+              if m:
+                  current=(m.group(1),m.group(2)); continue
               im=re.search(r'Issue\s+(\d+)',text); href=a.get('href') or ''
               if current and im and '/issue/' in href:
-                  found.append((current[1],im.group(1),requests.compat.urljoin(BASE,href)))
+                  vol,iss=current[1],im.group(1)
+                  pm=re.search(r'pp\.\s*([ivxlcdm\d]+\s*[–-]\s*[ivxlcdm\d]+)',text,re.I)
+                  if pm: issue_spans[(vol,iss)]=npage(pm.group(1))
+                  found.append((vol,iss,requests.compat.urljoin(BASE,href)))
               if current and re.search(r'1943\s*-\s*Volume\s+8',text): current=None
-          seen=set(); issues=[]
+          seen_issue=set(); issues=[]
           for vol,iss,url in found:
-              if (vol,iss) in seen: continue
-              seen.add((vol,iss))
+              if (vol,iss) in seen_issue: continue
+              seen_issue.add((vol,iss))
               if vol=='14' and iss=='4': continue
               issues.append((vol,iss,url))
+          assert len(issues)==23, f'expected 23 issues, got {len(issues)}'
 
           cards=[]
           for vol,iss,url in issues:
@@ -68,38 +109,200 @@ jobs:
                   p=requests.get(url+f'?pageNum={pn}',headers=H,timeout=90); p.raise_for_status(); ps=BeautifulSoup(p.text,'html.parser')
                   sec=''
                   for el in ps.select('h4.journal-article-listing-type, div.product-listing-with-inputs-content'):
-                      if el.name=='h4': sec=' '.join(el.stripped_strings); continue
+                      if el.name=='h4':
+                          sec=clean_text(' '.join(el.stripped_strings)); continue
                       a=el.select_one('li.title h3 a.part-link')
                       if not a: continue
                       for sup in a.find_all('sup'): sup.decompose()
-                      title=' '.join(a.stripped_strings).strip(); txt=' '.join(el.stripped_strings)
+                      title=clean_text(' '.join(a.stripped_strings)); txt=clean_text(' '.join(el.stripped_strings))
                       pm=re.search(r'\bpp?\.\s*([ivxlcdm\d]+(?:\s*[–-]\s*[ivxlcdm\d]+)?)',txt,re.I)
                       page=npage(pm.group(1)) if pm else ''
                       key=(vol,iss,norm(title),page,sec)
                       if key in seen_cards: continue
                       seen_cards.add(key)
-                      cards.append({'vol':vol,'iss':iss,'title':title,'nt':norm(title),'page':page,'section':sec,'full':txt,'nf':norm(txt)})
+                      cards.append({'vol':vol,'iss':iss,'title':title,'nt':norm(title),'page':page,
+                                    'section':sec,'full':txt,'nf':norm(txt)})
 
           byissue=collections.defaultdict(list)
           for c in cards: byissue[(c['vol'],c['iss'])].append(c)
-          resolved=[]; unresolved=[]
+
+          # Strict section recovery only. No fuzzy title matching.
           for x in xs:
               cs=byissue[(x['vol'],x['iss'])]
+              x['section']=''; x['section_method']='unresolved'
               exact=[c for c in cs if c['nt']==x['nt']]
               if exact and len(set(c['section'] for c in exact))==1:
-                  resolved.append((x,exact[0]['section'],'exact_title')); continue
+                  x['section']=exact[0]['section']; x['section_method']='exact_title'
+                  if not x['page'] and exact[0]['page']: x['page']=exact[0]['page']
+                  continue
               emb=[c for c in cs if x['nt'] and x['nt'] in c['nf']]
               if emb and len(set(c['section'] for c in emb))==1:
-                  resolved.append((x,emb[0]['section'],'embedded_title')); continue
+                  x['section']=emb[0]['section']; x['section_method']='embedded_title'
+                  if not x['page'] and emb[0]['page']: x['page']=emb[0]['page']
+                  continue
               pg=[c for c in cs if x['page'] and c['page']==x['page']]
               if pg and len(set(c['section'] for c in pg))==1:
-                  resolved.append((x,pg[0]['section'],'unique_page_section')); continue
-              unresolved.append((x,[(c['section'],c['title'],c['page']) for c in pg[:5]]))
+                  x['section']=pg[0]['section']; x['section_method']='unique_page_section'
 
-          print('CROSSREF',len(xs),'CARDS',len(cards),'ISSUES',len(issues))
-          print('METHOD_COUNTS',dict(collections.Counter(m for _,_,m in resolved)))
-          print('SECTION_COUNTS',dict(collections.Counter(s for _,s,_ in resolved)))
-          print('RESOLVED',len(resolved),'UNRESOLVED',len(unresolved))
-          for x,hits in unresolved:
-              print('UNRESOLVED',x['vol'],x['iss'],x['page'],x['doi'],repr(x['author']),repr(x['title']),'PAGE_HITS',hits)
+          # ---- Conservative metadata-only document typing ----
+          def citation_shape(title):
+              n=norm(title)
+              markers=0
+              markers += bool(re.search(r'\bvol\b|\bvolume\b',n))
+              markers += bool(re.search(r'\bpp\b|\bpage\b|\bpages\b',n))
+              markers += bool(re.search(r'\bpress\b|\bcompany\b|\bverlag\b|\bhermann\b|\bakademie\b|\bproceedings\b|\bjournal\b|\bannals\b|\bactes\b',n))
+              markers += bool(re.search(r'\b19(?:3[0-9]|4[0-9])\b',n))
+              return markers >= 2
+
+          def other_type(title, author):
+              n=norm(title)
+              if n=='errata' or n.startswith('errata '): return 'errata','title_errata'
+              if 'related citation' in n or 'further citation' in n: return 'citation-linkage matter','title_citation_linkage'
+              if 'index of reviews' in n: return 'review index','title_review_index'
+              if 'abstracts of papers' in n or n=='abstracts': return 'meeting abstracts','title_meeting_abstracts'
+              if 'notice of a meeting' in n or 'meeting of the association' in n and n.startswith('notice'):
+                  return 'meeting/bibliographical notice','title_meeting_notice'
+              if 'meeting of the association' in n or ('meeting' in n and 'association for symbolic logic' in n):
+                  return 'meeting report','title_meeting_report'
+              if any(z in n for z in ['list of officers and members','institutional contributing subscribers','institutional subscribers','elections','association for symbolic logic']):
+                  return 'association record','title_association_record'
+              if n.startswith('problems in symbolic logic') or n=='problems': return 'problem notice','title_problem_notice'
+              if 'additions and corrections to a bibliography' in n: return 'bibliography supplement','title_bibliography_supplement'
+              if 'cover and front matter' in n or 'cover and back matter' in n: return 'cover/front/back matter','title_cover_matter'
+              if citation_shape(title):
+                  return ('review' if author else 'bibliographical notice / unattributed review'),'citation_shape'
+              if author:
+                  return 'primary technical publication','named_author_nonbibliographic'
+              return 'bibliographical notice / unattributed review','unattributed_notice_fallback'
+
+          def doc_type(x):
+              sec=x['section'].lower().strip()
+              n=norm(x['title'])
+              if sec in {'research article','articles'}:
+                  if n.startswith('correction to ') or n.startswith('corrections to '): return 'correction','publisher_primary_correction'
+                  return 'primary technical publication','publisher_primary'
+              if sec=='correction': return 'correction','publisher_correction'
+              if sec in {'reviews','book review'}:
+                  return ('review' if x['author'] else 'bibliographical notice / unattributed review'),'publisher_review'
+              if sec=='errata': return 'errata','publisher_errata'
+              if sec in {'front matter','back matter'}: return 'cover/front/back matter','publisher_matter'
+              if sec in {'abstract','abstracts'}: return 'meeting abstracts','publisher_abstracts'
+              if sec=='other': return other_type(x['title'],x['author'])
+              return other_type(x['title'],x['author'])
+
+          # ---- Title-only subfield classification, old vocabulary ----
+          def subfield(title, dtype):
+              if dtype not in {'primary technical publication','correction','review','bibliographical notice / unattributed review'}:
+                  return 'editorial/association apparatus'
+              n=norm(title)
+              rules=[
+                ('set theory and foundations',[r'\bset theory\b',r'\btheory of sets\b',r'\bsets\b',r'\bset\b',r'\baxiom of choice\b',r'\bcontinuum\b',r'\bcardinal',r'\bordinal',r'\btransfinite',r'\bwell order',r'\bclasses\b',r'\bclass of all']),
+                ('computability, recursion, and decidability',[r'\brecurs',r'\bcomputab',r'\brecursive',r'\bdecision problem\b',r'\bdecidab',r'\bundecidab',r'\bturing\b',r'\beffective procedure']),
+                ('propositional, many-valued, and modal logic',[r'\bpropositional',r'\bproposition',r'\bmodal',r'\bm valued',r'\bmany valued',r'\bintuitionis',r'\bbrouwer',r'\blewis s[0-9]',r'\bimplication',r'\bimplicational']),
+                ('algebraic logic',[r'\bboolean algebra',r'\brelation algebra',r'\balgebra of logic',r'\blattice',r'\bboolean ring']),
+                ('model theory and semantics',[r'\bmodel theory',r'\bmodels?\b',r'\bsemantic',r'\bsatisfi',r'\binterpretation']),
+                ('proof theory and formal systems',[r'\baxiom',r'\baxiomatic',r'\bformal system',r'\bformal logic',r'\bcalculus',r'\bdeduction',r'\bdeductive',r'\bproof',r'\bconsisten',r'\bsyntax',r'\bpredicate logic',r'\bpredicate calculus',r'\bquantif']),
+                ('philosophy, language, and inductive logic',[r'\bphilosoph',r'\bmeaning',r'\blanguage',r'\binducti',r'\bprobab',r'\bconfirmation',r'\btruth',r'\bpositiv',r'\bsemiotic',r'\bnominal',r'\bontology',r'\bmethodolog']),
+              ]
+              for label, pats in rules:
+                  if any(re.search(p,n) for p in pats): return label
+              if re.search(r'\blogic\b|\blogical\b|\blogistik',n): return 'general mathematical logic'
+              return 'unclassified from title metadata'
+
+          def target_flag(title):
+              n=norm(title)
+              obvious=(
+                  'continuum hypothesis' in n or 'generalized continuum' in n or 'continuum problem' in n or 'continuumproblem' in n or
+                  'inner model' in n or
+                  ('axiom of choice' in n and ('consisten' in n or 'set theory' in n)) or
+                  ('independence' in n and ('set theory' in n or 'continuum' in n))
+              )
+              return 'mechanically obvious target-line exclusion from title/metadata' if obvious else ''
+
+          for x in xs:
+              x['document_type'],x['type_rule']=doc_type(x)
+              x['subfield']=subfield(x['title'],x['document_type'])
+              x['review_status']=''
+              if x['document_type']=='review': x['review_status']='review-of-record entry reached'
+              elif x['document_type']=='bibliographical notice / unattributed review': x['review_status']='review-of-record entry reached; reviewer metadata absent'
+              x['target']=target_flag(x['title'])
+
+          # Immediate review links only by normalized exact-title containment; no semantic matching.
+          review_titles=[x['nt'] for x in xs if x['document_type'] in {'review','bibliographical notice / unattributed review'}]
+          for x in xs:
+              if x['document_type'] not in {'primary technical publication','correction'}: continue
+              if len(x['nt']) >= 15 and len(x['nt'].split()) >= 3 and any(x['nt'] in rt for rt in review_titles):
+                  x['review_status']='in-block contemporaneous review entry immediately identified'
+
+          # Sort by year/volume/issue/opening page/title.
+          def roman_or_int(s):
+              m=re.match(r'(\d+)',s or '')
+              return int(m.group(1)) if m else 999999
+          xs.sort(key=lambda x:(x['year'] or 9999,int(x['vol'] or 999),int(x['iss'] or 999),roman_or_int(x['page']),x['nt']))
+
+          cols=['author','exact_title','publication_year','volume','issue','pages','document_type','subfield','contemporaneous_review_status','technical_depth_availability','target_line_exclusion_status','full_text_status']
+          OUT.parent.mkdir(parents=True,exist_ok=True)
+          with OUT.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=cols,delimiter='\t',lineterminator='\n')
+              w.writeheader()
+              for x in xs:
+                  w.writerow({
+                      'author':x['author'],'exact_title':x['title'],'publication_year':x['year'] or '',
+                      'volume':x['vol'],'issue':x['iss'],'pages':x['page'],
+                      'document_type':x['document_type'],'subfield':x['subfield'],
+                      'contemporaneous_review_status':x['review_status'],
+                      'technical_depth_availability':'','target_line_exclusion_status':x['target'],
+                      'full_text_status':'metadata only; full text not reached',
+                  })
+
+          # ---- Production audit ----
+          print('RAW_CROSSREF',len(raw),'DEDUP_ROWS',len(xs),'DUPLICATES_COLLAPSED',len(duplicates))
+          print('ISSUES',len(issues),'CAMBRIDGE_CARDS',len(cards))
+          print('SECTION_METHODS',dict(collections.Counter(x['section_method'] for x in xs)))
+          print('PUBLISHER_SECTIONS',dict(collections.Counter(x['section'] or '<unresolved>' for x in xs)))
+          print('DOCUMENT_TYPES',dict(collections.Counter(x['document_type'] for x in xs)))
+          print('TYPE_RULES',dict(collections.Counter(x['type_rule'] for x in xs)))
+          print('SUBFIELDS',dict(collections.Counter(x['subfield'] for x in xs)))
+          print('REVIEW_STATUS',dict(collections.Counter(x['review_status'] or '<blank>' for x in xs)))
+          print('TARGET_FLAGS',sum(bool(x['target']) for x in xs))
+          print('MISSING_AUTHOR',sum(not x['author'] for x in xs),'MISSING_PAGE',sum(not x['page'] for x in xs))
+          issue_counts=collections.Counter((x['year'],x['vol'],x['iss']) for x in xs)
+          type_by_issue=collections.defaultdict(collections.Counter)
+          for x in xs: type_by_issue[(x['year'],x['vol'],x['iss'])][x['document_type']]+=1
+          for key in sorted(issue_counts,key=lambda z:(z[0],int(z[1]),int(z[2]))):
+              c=type_by_issue[key]
+              prim=c['primary technical publication']+c['correction']
+              rev=c['review']+c['bibliographical notice / unattributed review']
+              other=issue_counts[key]-prim-rev
+              print('ISSUE',*key,'ALL',issue_counts[key],'PRIMARY_CORR',prim,'REVIEW_NOTICE',rev,'OTHER',other,'SPAN',issue_spans.get((key[1],key[2]),''))
+          unresolved=[x for x in xs if x['section_method']=='unresolved']
+          print('STRICT_UNRESOLVED',len(unresolved))
+          for x in unresolved:
+              print('UNRESOLVED_TYPED',x['vol'],x['iss'],x['page'],x['doi'],repr(x['author']),repr(x['title']),'->',x['document_type'],'RULE',x['type_rule'],'SUBFIELD',x['subfield'])
+
+          # Hard guards: fixed boundary, no unknown vocab, no technical-depth screening.
+          assert len(xs)>0 and len(issues)==23
+          assert all(1944 <= int(x['year']) <= 1949 for x in xs)
+          assert all(not x.get('technical_depth_availability') for x in xs)
+          assert not any(x['document_type']=='' for x in xs)
           PY
+
+          python - <<'PY'
+          import csv
+          p='Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv'
+          rows=list(csv.DictReader(open(p,encoding='utf-8'),delimiter='\t'))
+          assert rows and all(len(r)==12 for r in rows)
+          assert all(r['technical_depth_availability']=='' for r in rows)
+          print('TSV_VALIDATED_ROWS',len(rows))
+          PY
+
+          changed="$(git status --porcelain)"
+          echo "$changed"
+          test "$(echo "$changed" | sed '/^$/d' | wc -l)" -eq 1
+          echo "$changed" | grep -F 'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv'
+
+          git config user.name 'zyx1st-png'
+          git config user.email 'zyx1st@gmail.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv
+          git commit -m 'Assemble bounded JSL 1944-1949 archive inventory'
+          git push origin HEAD:phase8b/jsl-1944-1949-archive-assembly-20260904
