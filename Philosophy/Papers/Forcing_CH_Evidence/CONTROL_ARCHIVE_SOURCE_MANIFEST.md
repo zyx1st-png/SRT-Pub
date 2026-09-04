@@ -460,6 +460,24 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 
 The earlier one-page captures for these five entries are superseded by the complete files for current counts. Their prior hashes remain in git history as acquisition provenance; no page image or PDF is committed.
 
+### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`
+
+| Field | Record |
+|---|---|
+| Stable key | `BERNAYS1942-AXIOMATIC-SET-THEORY-IV` |
+| Author | Paul Bernays |
+| Exact title | “A System of Axiomatic Set Theory. Part IV. General Set Theory” |
+| Year | 1942 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 7(4), pp. 133–145 |
+| Stable record | JSTOR 2268110; DOI 10.2307/2268110 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory metadata fields |
+| Acquisition source | Saarland University public scan: `https://w2.cs.uni-saarland.de/op/fullpaper/settheory/BernaysGeneralSetTheory.pdf` |
+| Full-text/page-verification status | **VERIFIED — complete article**. The current source returned HTTP 200 / `application/pdf`, 300,164 bytes, 14 PDF pages. PDF page 1 is the JSTOR metadata cover; PDF pages 2–14 are 13 distinct rendered article pages, visually checked at the boundaries as printed p. 133 and p. 145. SHA-256: `e893e6b6717558f343a03223c640fed11d78d8791f6fce7a9b91b02eb2c2ad93`. |
+| Exact locations used | Entire pp. 133–145 only for completeness/page-boundary verification in this acquisition pass; no substantive passage was selected for a method-identity judgement. |
+| Evidentiary function | Upgrades one acquisition-only technical-depth record from metadata-only to a complete page-verified primary source; establishes access/depth capacity for this record only. |
+| Limitations | No six-test audit, component-removal/replacement analysis, method-family comparison, candidate admission, scoring, ranking, selection, or individuation judgement was performed. The PDF/page images are not committed to the repository. |
+
 ## 3. Systematic-sweep metadata sources
 
 These records support `COV-JSL-1938-1943-SYSTEMATIC`, `COV-JSL-1944-1949-SYSTEMATIC`, and `COV-JSL-1950-1955-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in the corresponding bounded sweep inventory TSV.
@@ -533,7 +551,7 @@ Issue landing records reached:
 | Exact block reached | Vols. 3–8, nos. 1–4: **24 issue identities**, calendar years 1938–1943 |
 | Function | Official venue/volume/issue boundary; printed-page spans; article/review/index section labels; access-state check |
 | Reach status | The all-issues archive and all 24 issue identities were reached. Eighteen issue/TOC landing records loaded independently; 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3) repeatedly timed out. |
-| Full-text status | No item in this block was page-verified complete. Sampled primary/review pages displayed `Get access`; command-line retrieval was rate-limited. |
+| Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |
 | Metadata anomaly | The all-issues archive displays 3(2) as pp. 61–124 while also displaying 3(3) as pp. 97–124. Independently loaded issue records resolve the printed spans as 3(2), pp. 61–96, and 3(3), pp. 97–124. |
 | Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and the entire item full-text layer remain incomplete. The block is therefore `systematic_but_incomplete`. |
 
