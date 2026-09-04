@@ -17,7 +17,7 @@ jobs:
         with:
           ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
           fetch-depth: 1
-      - name: Reuse writeback logic with corrected aggregate guards
+      - name: Reuse writeback logic with corrected aggregate and certificate guards
         shell: bash
         run: |
           set -euo pipefail
@@ -37,9 +37,11 @@ jobs:
           extra="s=one(s,'only 25 rows across those 2,903 are page-verified complete','only 26 rows across those 2,903 are page-verified complete','coverage section 5.5 count')"
           assert code.count(anchor)==1
           code=code.replace(anchor,anchor+'\n'+extra,1)
-          for i,line in enumerate(code.splitlines(),1):
-              print(f'CODELINE {i:03d}: {line}')
-          exec(compile(code,'reused-writeback-v2','exec'),{})
+          old_guard="assert 'part_ii_attested: false' in cert.read_text(encoding='utf-8')"
+          new_guard="assert 'certificate_state: part_i_fixed_part_ii_unattested' in cert.read_text(encoding='utf-8') and '**UNATTESTED**' in cert.read_text(encoding='utf-8') and 'enumeration_permitted: false' in cert.read_text(encoding='utf-8')"
+          assert code.count(old_guard)==1
+          code=code.replace(old_guard,new_guard,1)
+          exec(compile(code,'reused-writeback-v3','exec'),{})
           PY
           allowed=(
             'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
@@ -60,7 +62,8 @@ jobs:
           grep -q $'Paul Bernays\tA system of axiomatic set theory. Part IV. General set theory\t1942\t7\t4\t133-145' "${allowed[0]}"
           grep -q 'page-verified complete' "${allowed[0]}"
           grep -q '26 page-verified complete texts, 2,877 metadata-only rows' "${allowed[3]}"
-          grep -q 'part_ii_attested: false' "${allowed[3]}"
+          grep -q 'certificate_state: part_i_fixed_part_ii_unattested' "${allowed[3]}"
+          grep -q 'enumeration_permitted: false' "${allowed[3]}"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add "${allowed[@]}"
