@@ -1,0 +1,46 @@
+name: Bernays Saarland Directory Probe
+
+on:
+  push:
+    branches:
+      - scratch/bernays-saarland-directory-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enumerate reachable Saarland set-theory archive links
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://w2.cs.uni-saarland.de/op/fullpaper/settheory/'
+          echo "BASE=$base"
+          curl -L --connect-timeout 20 --max-time 90 -sS -D /tmp/h.txt -o /tmp/index.html -w 'HTTP_STATUS=%{http_code}\nCONTENT_TYPE=%{content_type}\nSIZE_DOWNLOAD=%{size_download}\nFINAL_URL=%{url_effective}\n' "$base" || true
+          echo '--- FILE ---'
+          file -b /tmp/index.html || true
+          echo '--- TITLE ---'
+          python - <<'PY'
+          from pathlib import Path
+          import re, html
+          s=Path('/tmp/index.html').read_text('utf-8','ignore')
+          mt=re.search(r'<title[^>]*>(.*?)</title>',s,re.I|re.S)
+          if mt: print(re.sub(r'\s+',' ',html.unescape(mt.group(1))).strip())
+          hrefs=[]
+          for m in re.finditer(r'href=["\']([^"\']+)["\']',s,re.I):
+              v=html.unescape(m.group(1))
+              if v not in hrefs: hrefs.append(v)
+          print('HREF_COUNT='+str(len(hrefs)))
+          for v in hrefs:
+              if any(k in v.lower() for k in ['bernays','settheory','axiom','general','1941','1942','1943']):
+                  print('MATCH='+v)
+          for v in hrefs[:250]:
+              print('HREF='+v)
+          PY
+          echo '--- KNOWN PART IV RECHECK ---'
+          curl -L --connect-timeout 20 --max-time 90 -sS -o /tmp/p4.pdf -w 'P4_HTTP=%{http_code}\nP4_TYPE=%{content_type}\nP4_SIZE=%{size_download}\n' "${base}BernaysGeneralSetTheory.pdf" || true
+          file -b /tmp/p4.pdf || true
