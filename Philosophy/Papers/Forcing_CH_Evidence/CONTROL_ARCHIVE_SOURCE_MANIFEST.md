@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-11
-updated: 2026-08-14
+updated: 2026-09-04
 boundary: "mathematical logic, 1938–1963, outside the CH/forcing/independence line"
 candidate_enumeration: false
 part_ii_attested: false
@@ -462,7 +462,7 @@ The earlier one-page captures for these five entries are superseded by the compl
 
 ## 3. Systematic-sweep metadata sources
 
-These records support `COV-JSL-1950-1955-SYSTEMATIC` and `COV-JSL-1938-1943-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in the corresponding bounded sweep inventory TSV.
+These records support `COV-JSL-1938-1943-SYSTEMATIC`, `COV-JSL-1944-1949-SYSTEMATIC`, and `COV-JSL-1950-1955-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in the corresponding bounded sweep inventory TSV.
 
 ### `JSL-CAMBRIDGE-1950-1955-ISSUES`
 
@@ -580,6 +580,47 @@ Issue landing records contacted:
 | Result | Sampled Cambridge issue pages showed `Get access` for primary and review items; repeated command-line Cambridge retrieval returned rate limits; a Project Euclid route returned a challenge page. No complete item text was acquired through these probes. |
 | Function | Records the access constraint behind the block's 0 full-text count and prevents metadata contact from being misreported as page verification |
 | Limitations | This is an environment-specific access result, not a claim that the 773 items are unobtainable elsewhere. |
+
+
+### `JSL-CAMBRIDGE-1944-1949-ISSUES`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-CAMBRIDGE-1944-1949-ISSUES` |
+| Source | Cambridge Core, *The Journal of Symbolic Logic*, all-issues archive and issue landing records |
+| Stable location | [JSL all-issues archive](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues) |
+| Exact block reached | Vols. 9–13 nos. 1–4 plus vol. 14 nos. 1–3: **23 issues**, calendar years 1944–1949 |
+| Function | Official venue/volume/issue boundary and publisher-native section labels where the issue record resolves the item |
+| Reach status | All 23 issue identities and issue landing records used by the bounded inventory were reached during assembly |
+| Full-text status | **0** item full texts page-verified complete in this block |
+| Granularity note | Publisher issue pages do not always expose one independent UI card per Crossref DOI record. The inventory therefore separates publisher-native section recovery from conservative bibliographic typing instead of forcing a one-card/one-DOI identity. |
+| Limitations | Issue/section metadata does not establish item full text, technical depth, candidate admissibility, or method individuation. |
+
+### `JSL-CROSSREF-1944-1949-METADATA`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-CROSSREF-1944-1949-METADATA` |
+| Source | Crossref REST metadata for ISSN `0022-4812`, print dates 1944-01-01 through 1949-12-31 |
+| Exact retrieval | `https://api.crossref.org/journals/0022-4812/works?filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000` |
+| Function | Reproducible row-level author/title/year/volume/issue/page metadata for the 23-issue block |
+| Bounded inventory result | **714 deduplicated bibliographic rows** |
+| Type distribution | 62 primary technical publications; 2 corrections; 561 attributed reviews; 19 bibliographical notices/unattributed reviews; 70 other issue records |
+| Full-text status | Every row is `metadata only; full text not reached` |
+| Technical-depth status | **0/714 nonblank** |
+| Target-line status | **1** mechanically obvious title/metadata flag; blank elsewhere is not a clearance finding |
+| Limitations | Deposited metadata and conservative typing only. No source-level technical inference, candidate judgement, or six-test result is licensed. |
+
+### `JSL-1944-1949-METADATA-RESOLUTION-AUDIT`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-1944-1949-METADATA-RESOLUTION-AUDIT` |
+| Function | Records the strict resolution rule used when Cambridge publisher-card granularity and Crossref row granularity differ |
+| Rule | Accept publisher-native section only by exact normalized title, embedded exact title within the same issue card, or unique same-page section; otherwise retain conservative metadata typing |
+| Boundary corrections | Three bibliographic entries initially vulnerable to author-bearing false-primary classification were explicitly retained as reviews; the two distinct p. 139 modal/counterfactual short publications remain primary technical publications |
+| Validation | Final read-only validator: 714 rows, 23 issues, 64 primary/correction, 580 review/notice, 70 other, 0 technical-depth nonblank, 1 mechanically obvious target-line flag, 0 full texts reached |
+| Limitations | This is a metadata-resolution audit, not source verification or a substantive historical verdict. |
 
 ## 4. Source-handling limits
 
