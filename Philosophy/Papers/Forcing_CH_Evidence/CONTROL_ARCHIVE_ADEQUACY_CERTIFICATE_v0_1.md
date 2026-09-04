@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-05
-updated: 2026-08-11
+updated: 2026-09-04
 version: v0_1
 certificate_state: part_i_fixed_part_ii_unattested
 boundary_state: fixed_v0_1
@@ -115,7 +115,25 @@ The first assembled record is `CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE
 
 This entry records progress in archive assembly only. It signs no Part II attestation and authorizes no enumeration or later protocol step.
 
-### 3.2 Proposed search venues — to be verified at assembly
+### 3.2 Systematic JSL assembly status — 2026-09-04, no signature
+
+Three bounded serial/year sweeps now provide continuous JSL row-level metadata coverage for **1938–1955**:
+
+- 1938–1943: 24 issues, 773 rows, 0 page-verified complete texts, six publisher TOCs independently unconfirmed;
+- 1944–1949: 23 issues, 714 rows, 0 page-verified complete texts;
+- 1950–1955: 25 issues, 1,416 rows, 25 page-verified complete texts.
+
+Combined: **72 issues, 2,903 rows, 25 page-verified complete texts, 2,878 metadata-only rows**. The 1944–1949 sweep therefore closes the intervening JSL issue/item-metadata gap, but it does not establish technical depth: all 714 rows in that block have blank `technical_depth_availability`, and no six-test audit was run. JSL 1956–1963 remains unswept and no second mathematical-logic venue has been systematically assembled.
+
+Effect on Part II:
+
+- §2(2): improved metadata-level discovery of contemporaneous reviews, but not discharged corpus-wide because page-verified author/review pairs are not available for every future admitted candidate;
+- §2(3): still **UNATTESTED**; the new block adds no demonstrated load-bearing removal/replacement capacity;
+- §2(4): materially improved because the 1938–1955 JSL metadata boundary is now explicit and contiguous, but still **UNATTESTED** because 1956–1963, other venues, full-text depth, and six early publisher TOCs remain open.
+
+No candidate pool was enumerated. No admission, exclusion, scoring, ranking, selection, or individuation judgement was performed. **Part II remains UNATTESTED and enumeration remains blocked.**
+
+### 3.3 Proposed search venues — to be verified at assembly
 
 Recorded as a work order for whoever assembles the archive. **These are venue proposals, not sources**, and none is entered into the evidence base by being named here. Each must be verified to exist, to cover the stated period, and to be reachable before it is relied on.
 
@@ -125,7 +143,7 @@ Recorded as a work order for whoever assembles the archive. **These are venue pr
 
 The §2(2) requirement is the binding constraint on the whole exercise: a candidate for which the *contemporaneous* characterization cannot be recovered is inadmissible under protocol §7.5, however well documented it is in later textbooks.
 
-### 3.3 Known risk to §2(3)
+### 3.4 Known risk to §2(3)
 
 Record depth for the load-bearing test is the likeliest point of failure. Period papers frequently compress construction detail in ways that make it hard to establish whether removing a component destroys or merely degrades a result. If §2(3) cannot be attested for the boundary in Part I, that is a §10 boundary failure and follows §2.5 — not a reason to relax the test.
 
