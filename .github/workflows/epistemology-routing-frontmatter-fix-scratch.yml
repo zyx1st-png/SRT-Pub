@@ -1,0 +1,36 @@
+name: Epistemology Routing Frontmatter Fix Scratch
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: epistemology/framework-routing-sync-20260904
+      - name: Normalize status and version frontmatter
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          edits = [
+              (Path('Philosophy/README.md'), 'status: active_v4\n', 'status: active\nversion: v4\n'),
+              (Path('Philosophy/_PHILOSOPHY_MACHINE_INDEX.md'), 'status: active_v8\n', 'status: active\nversion: v8\n'),
+          ]
+          for p, old, new in edits:
+              s = p.read_text(encoding='utf-8')
+              if old not in s:
+                  raise SystemExit(f'frontmatter anchor missing: {p}')
+              p.write_text(s.replace(old, new, 1), encoding='utf-8')
+          PY
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Philosophy/README.md Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
+          git commit -m "Normalize Philosophy routing frontmatter versions"
+          git push origin HEAD:epistemology/framework-routing-sync-20260904
