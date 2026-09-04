@@ -1,0 +1,54 @@
+name: Church 1940 Source Probe
+
+on:
+  push:
+    branches:
+      - scratch/church1940-source-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify current Church 1940 PDF source object
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          url='https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf'
+          out='/tmp/church-1940.pdf'
+          http=$(curl -L --retry 2 --retry-delay 2 --connect-timeout 20 --max-time 90 -sS -w '%{http_code}' -o "$out" "$url")
+          echo "HTTP_STATUS=${http}"
+          test "$http" = '200'
+          echo "SIZE_BYTES=$(stat -c%s "$out")"
+          echo "FILE_TYPE=$(file -b "$out")"
+          sha=$(sha256sum "$out" | awk '{print $1}')
+          echo "SHA256=${sha}"
+          pages=$(pdfinfo "$out" | awk -F: '/^Pages:/ {gsub(/ /,"",$2); print $2}')
+          echo "PDF_PAGES=${pages}"
+          test "$pages" = '14'
+          echo '--- COVER TEXT ---'
+          pdftotext -f 1 -l 1 -layout "$out" - | sed -n '1,22p'
+          echo '--- FIRST ARTICLE PAGE TEXT ---'
+          pdftotext -f 2 -l 2 -layout "$out" - | sed -n '1,28p'
+          echo '--- LAST ARTICLE PAGE TEXT ---'
+          pdftotext -f 14 -l 14 -layout "$out" - | tail -n 35
+          mkdir -p /tmp/church_render
+          pdftoppm -png -r 72 "$out" /tmp/church_render/page >/dev/null 2>&1
+          render_count=$(find /tmp/church_render -type f -name 'page-*.png' | wc -l)
+          unique_count=$(sha256sum /tmp/church_render/page-*.png | awk '{print $1}' | sort -u | wc -l)
+          echo "RENDERED_PAGES=${render_count}"
+          echo "UNIQUE_RENDER_HASHES=${unique_count}"
+          test "$render_count" = '14'
+          test "$unique_count" = '14'
+          first_text=$(pdftotext -f 2 -l 2 -layout "$out" - | tr '\n' ' ')
+          last_text=$(pdftotext -f 14 -l 14 -layout "$out" - | tr '\n' ' ')
+          echo "$first_text" | grep -Fq 'A FORMULATION OF THE SIMPLE THEORY OF TYPES'
+          echo "$first_text" | grep -Eq '(^|[^0-9])56([^0-9]|$)'
+          echo "$last_text" | grep -Eq '(^|[^0-9])68([^0-9]|$)'
+          echo 'SOURCE_OBJECT_CHECK=PASS'
