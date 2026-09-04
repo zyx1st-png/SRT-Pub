@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: 9e91d804
+source_commit: 37435374
 source_branch: epistemology/framework-routing-sync-20260904
 source_dirty: false
 inputs_digest: e38e301783c61572
@@ -27,7 +27,7 @@ inputs_digest: e38e301783c61572
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-04 |
-| 来源 commit | `9e91d804` |
+| 来源 commit | `37435374` |
 | 来源分支 | `epistemology/framework-routing-sync-20260904` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |

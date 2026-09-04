@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: 9e91d804
+source_commit: 37435374
 source_branch: epistemology/framework-routing-sync-20260904
 source_dirty: false
 inputs_digest: e38e301783c61572
