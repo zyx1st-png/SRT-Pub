@@ -108,9 +108,9 @@ jobs:
               cand=[cards[i] for i in byci[(x['vol'],x['iss'])]]
               embedded=[c for c in cand if x['nt'] and x['nt'] in c['nf']]
               if len(embedded)==1:
-                  resolved[j]=(embedded[0]['section'],'embedded[0]['title'],'embedded[0]['page'],'embedded_text')
+                  c=embedded[0]
+                  resolved[j]=(c['section'],c['title'],c['page'],'embedded_text')
               else:
-                  # page-local fallback only if every matching page card shares one publisher section
                   page_hits=[c for c in cand if x['page'] and (c['page']==x['page'] or x['page'] in c['full'])]
                   secs=sorted(set(c['section'] for c in page_hits if c['section']))
                   if page_hits and len(secs)==1:
