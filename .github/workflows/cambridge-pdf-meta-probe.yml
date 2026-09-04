@@ -1,4 +1,4 @@
-name: Paperzz Bernays Part II Source Probe
+name: Internet Archive JSL 1941 Original Scan Probe
 
 on:
   push:
@@ -14,49 +14,60 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect Paperzz landing and any downloadable source object
+      - name: Query Internet Archive for original JSL 1941 volume/issue scans
         shell: bash
         run: |
           set -euo pipefail
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils >/dev/null
-          page='https://paperzz.com/doc/7214206/a-system-of-axiomatic-set-theory%E2%80%94part-ii13-4.-the'
-          curl -L --connect-timeout 20 --max-time 90 -A 'Mozilla/5.0' -sS -D /tmp/h.txt -o /tmp/page.html -w 'PAGE_HTTP=%{http_code}\nPAGE_TYPE=%{content_type}\nPAGE_SIZE=%{size_download}\nPAGE_FINAL=%{url_effective}\n' "$page" || true
-          echo "PAGE_FILE=$(file -b /tmp/page.html || true)"
           python - <<'PY'
-          from pathlib import Path
-          import re, html, urllib.parse, subprocess, os
-          page='https://paperzz.com/doc/7214206/a-system-of-axiomatic-set-theory%E2%80%94part-ii13-4.-the'
-          s=Path('/tmp/page.html').read_bytes().decode('utf-8','ignore')
-          print('TITLE_PRESENT=', 'A SYSTEM OF AXIOMATIC SET THEORY' in s.upper())
-          candidates=[]
-          pats=[
-              r'href=["\']([^"\']*(?:download|\.pdf)[^"\']*)["\']',
-              r'(https?://[^"\'<> ]+\.pdf[^"\'<> ]*)',
-              r'"(?:downloadUrl|pdfUrl|fileUrl)"\s*:\s*"([^"]+)"',
+          import urllib.parse, urllib.request, json
+          queries=[
+            'title:("Journal of Symbolic Logic") AND year:1941',
+            'title:("Journal of Symbolic Logic") AND (volume:6 OR description:"volume 6")',
+            '"Journal of Symbolic Logic" AND 1941',
+            '"A system of axiomatic set theory" AND Bernays',
+            'identifier:*symbolic*logic* AND 1941',
           ]
-          for pat in pats:
-              for m in re.finditer(pat,s,re.I):
-                  v=html.unescape(m.group(1)).replace('\\/','/')
-                  v=urllib.parse.urljoin(page,v)
-                  if v not in candidates: candidates.append(v)
-          print('CANDIDATE_COUNT=',len(candidates))
-          for i,v in enumerate(candidates[:20],1):
-              print(f'CANDIDATE_{i}={v}')
-              out=f'/tmp/cand{i}.bin'
-              fmt='HTTP=%{http_code} TYPE=%{content_type} SIZE=%{size_download} FINAL=%{url_effective}'
-              cp=subprocess.run(['curl','-L','--connect-timeout','20','--max-time','90','-A','Mozilla/5.0','-sS','-o',out,'-w',fmt,v],capture_output=True,text=True)
-              print(cp.stdout.strip())
-              ft=subprocess.run(['file','-b',out],capture_output=True,text=True).stdout.strip() if os.path.exists(out) else 'MISSING'
-              print('FILE='+ft)
-              if 'PDF document' in ft:
-                  sha=subprocess.run(['sha256sum',out],capture_output=True,text=True).stdout.split()[0]
-                  info=subprocess.run(['pdfinfo',out],capture_output=True,text=True).stdout
-                  print('SHA256='+sha)
-                  for line in info.splitlines():
-                      if line.startswith(('Pages:','Title:','Author:')): print(line)
-                  txt=subprocess.run(['pdftotext','-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout
-                  print('ARTICLE_TITLE_MATCH=', 'A SYSTEM OF AXIOMATIC SET THEORY' in txt.upper())
-                  print('BERNAYS_MATCH=', 'BERNAYS' in txt.upper())
-                  print('DOI_MATCH=', '2267281' in txt)
+          seen={}
+          for q in queries:
+              params={
+                'q':q,
+                'fl[]':['identifier','title','creator','date','year','description','collection','mediatype','access-restricted-item'],
+                'rows':'100','page':'1','output':'json'
+              }
+              # urlencode doseq handles repeated fl[]
+              url='https://archive.org/advancedsearch.php?'+urllib.parse.urlencode(params,doseq=True)
+              print('\n=== QUERY ===',q)
+              print('URL=',url)
+              try:
+                  with urllib.request.urlopen(url,timeout=60) as r:
+                      data=json.load(r)
+              except Exception as e:
+                  print('ERROR=',repr(e)); continue
+              print('NUM_FOUND=',data.get('response',{}).get('numFound'))
+              for d in data.get('response',{}).get('docs',[]):
+                  ident=d.get('identifier')
+                  if not ident: continue
+                  seen[ident]=d
+                  print('ITEM=',json.dumps(d,ensure_ascii=False,sort_keys=True))
+          print('\n=== UNIQUE_ITEMS ===',len(seen))
+          for ident,d in seen.items():
+              text=(' '.join(str(d.get(k,'')) for k in ['title','creator','date','year','description'])).lower()
+              if 'symbolic logic' in text or 'axiomatic set theory' in text or 'bernays' in text:
+                  murl=f'https://archive.org/metadata/{urllib.parse.quote(ident)}'
+                  print('\n--- METADATA',ident,'---')
+                  try:
+                      with urllib.request.urlopen(murl,timeout=60) as r:
+                          md=json.load(r)
+                  except Exception as e:
+                      print('META_ERROR=',repr(e)); continue
+                  meta=md.get('metadata',{})
+                  print('META=',json.dumps({k:meta.get(k) for k in ['identifier','title','creator','date','year','description','collection','mediatype','access-restricted-item']},ensure_ascii=False,sort_keys=True))
+                  files=md.get('files',[])
+                  candidates=[]
+                  for f in files:
+                      name=f.get('name','')
+                      low=name.lower()
+                      if low.endswith(('.pdf','.djvu','.djvu.xml','.text.pdf','.jp2.zip','.scandata.xml')) or 'pdf' in low:
+                          candidates.append({k:f.get(k) for k in ['name','format','size','source','private','restricted','md5','sha1']})
+                  print('FILE_CANDIDATES=',json.dumps(candidates[:80],ensure_ascii=False))
           PY
