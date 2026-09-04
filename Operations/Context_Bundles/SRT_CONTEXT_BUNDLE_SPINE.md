@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: c0d75183
-source_branch: infra/neuroscience-framework-context-bundle-20260904
+source_commit: 9e91d804
+source_branch: epistemology/framework-routing-sync-20260904
 source_dirty: false
-inputs_digest: 4ccea15d87fbc191
+inputs_digest: e38e301783c61572
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 4ccea15d87fbc191
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-04 |
-| 来源 commit | `c0d75183` |
-| 来源分支 | `infra/neuroscience-framework-context-bundle-20260904` |
+| 来源 commit | `9e91d804` |
+| 来源分支 | `epistemology/framework-routing-sync-20260904` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
