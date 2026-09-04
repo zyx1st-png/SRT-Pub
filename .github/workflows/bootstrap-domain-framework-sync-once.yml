@@ -1,10 +1,31 @@
-name: Bootstrap Domain Framework Sync Probe
+name: Bootstrap Domain Framework Sync Once
 
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
-  probe:
+  refresh:
     runs-on: ubuntu-latest
     steps:
-      - run: echo bootstrap-probe-ok
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: bootstrap-domain-framework-sync-20260904
+      - name: Patch bootstrap files
+        run: python .github/bootstrap_domain_framework_sync_once.py
+      - name: Regenerate bundles
+        run: |
+          python scripts/build_srt_context_bundles.py --generated-date 2026-09-04
+          python scripts/test_build_context_bundles.py
+          python scripts/build_srt_context_bundles.py --check
+      - name: Commit refresh
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add SRT_AI_START.md AGENTS.md STATUS.md Operations/Context_Bundles/
+          git diff --cached --quiet && exit 0
+          git commit -m "Sync Architecture v2 bootstrap and context bundles"
+          git push origin HEAD:bootstrap-domain-framework-sync-20260904
