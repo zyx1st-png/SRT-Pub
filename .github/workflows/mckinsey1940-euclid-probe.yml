@@ -1,0 +1,52 @@
+name: McKinsey 1940 Project Euclid Probe
+
+on:
+  push:
+    branches:
+      - scratch/mckinsey1940-euclid-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe Project Euclid legacy object and discover current PDF route
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://projecteuclid.org/euclid.jsl/1183389103'
+          echo "SOURCE_URL=$url"
+          curl -L --connect-timeout 20 --max-time 90 -sS -D /tmp/headers.txt -o /tmp/body.bin -w 'HTTP_STATUS=%{http_code}\nFINAL_URL=%{url_effective}\nCONTENT_TYPE=%{content_type}\nSIZE_DOWNLOAD=%{size_download}\n' "$url" || true
+          echo '--- HEADERS ---'
+          tail -n 80 /tmp/headers.txt || true
+          echo '--- FILE ---'
+          file -b /tmp/body.bin || true
+          if file -b /tmp/body.bin | grep -qi pdf; then
+            echo 'DIRECT_PDF=YES'
+            sha256sum /tmp/body.bin
+            pdfinfo /tmp/body.bin | sed -n '1,30p' || true
+            exit 0
+          fi
+          echo 'DIRECT_PDF=NO'
+          echo '--- HTML TITLE / LINKS ---'
+          python - <<'PY'
+          from pathlib import Path
+          import re, html
+          b=Path('/tmp/body.bin').read_bytes()
+          s=b.decode('utf-8','ignore')
+          mt=re.search(r'<title[^>]*>(.*?)</title>',s,re.I|re.S)
+          if mt: print('TITLE='+re.sub(r'\s+',' ',html.unescape(mt.group(1))).strip())
+          for pat in [r'https?://[^"\'<> ]+\.pdf[^"\'<> ]*', r'href=["\']([^"\']*(?:pdf|download|full)[^"\']*)["\']']:
+              vals=[]
+              for m in re.finditer(pat,s,re.I):
+                  v=m.group(1) if m.groups() else m.group(0)
+                  v=html.unescape(v)
+                  if v not in vals: vals.append(v)
+              for v in vals[:50]: print('CANDIDATE_LINK='+v)
+          for needle in ['Postulates for the calculus of binary relations','2266861','1183389103','challenge','captcha','access denied']:
+              print(f'CONTAINS_{needle[:12].replace(" ","_").upper()}={needle.lower() in s.lower()}')
+          PY
