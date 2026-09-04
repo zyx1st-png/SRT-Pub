@@ -1,0 +1,17 @@
+name: Post-merge Context Bundle Check Scratch
+
+on:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Verify generated context bundles
+        run: |
+          python scripts/test_build_context_bundles.py
+          python scripts/build_srt_context_bundles.py --check
