@@ -2,8 +2,8 @@
 id: SRT-CONSTITUTION-PHASE8-EPISTEMOLOGY-DEEP-WELL-CHARTER-20260904
 type: proposal
 status: active
-version: v2
-record_stage: phase8a_complete_phase8b_archive_assembly_open
+version: v3
+record_stage: phase8a_complete_framework_parented_phase8b_archive_assembly_open
 date: 2026-09-04
 layer: meta
 epistemic_layer: evidence
@@ -13,6 +13,8 @@ canonical: false
 ai_do_not_use_for_definition: true
 domain: epistemology
 dependency:
+  - Philosophy/SRT_Epistemology_Reconstruction_Framework.md
+  - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
   - Operations/SRT_CONSTITUTION_DOMAIN_SEQUENCE_AUTHOR_DECISION_2026-09-03.md
   - Operations/Audits/SRT_CONSTITUTION_PHASE7_DOMAIN_DEEP_WELL_SCORECARD_2026-09-03.md
   - Operations/Audits/SRT_CONSTITUTION_PHASE8A_EPISTEMOLOGY_BASELINE_ARCHIVE_GATE_AUDIT_2026-09-04.md
@@ -30,11 +32,13 @@ tags: [Constitution, Phase8, Epistemology, MathematicalPractice, MethodIndividua
 
 ## When is a mathematical method still the same method?
 
+> **Architecture-v2 parent**: this is a grandfathered **Layer-4 pilot** under `Philosophy/SRT_Epistemology_Reconstruction_Framework.md`, primarily `E2` (method/proof/model identity) + `E4` (historical availability/genealogy), with secondary `E3`/`E6` pressure. It no longer carries the burden of defining the Epistemology domain.
+>
 > **Authorization**: Neuroscience Phase 9 is complete and the author has opened Epistemology as the second sequential deep well.
 >
-> **Current state**: Phase 8A is complete. The strongest-baseline verdict is **UNRESOLVED with high Case-B pressure**; no Case-C content increment is licensed. `ARCHIVE-ENUMERATION-0 = NO-GO`, but bounded archive assembly inside the already frozen boundary is authorized as Phase 8B.
+> **Current state**: Phase 8A is complete. The strongest-baseline verdict is **UNRESOLVED with high Case-B pressure**; no Case-C content increment is licensed. `ARCHIVE-ENUMERATION-0 = NO-GO`. This migrated record makes bounded archive assembly inside the already frozen boundary the Phase-8B next step **once this migration lands on `main`**.
 >
-> **Scope**: one bounded epistemology-of-mathematical-practice question only. This is not a general theory of knowledge, not a philosophy-of-mathematics rewrite, and not a new forcing paper charter.
+> **Scope**: one bounded epistemology-of-mathematical-practice question only. Its parent problem family is supplied by the Epistemology Reconstruction Framework; this charter does not construct the domain worldview. It is not a general theory of knowledge, not a philosophy-of-mathematics rewrite, and not a new forcing paper charter.
 >
 > **Existing asset boundary**: the forcing–CH method-individuation and control-selection protocols predate Constitution v1 and remain independent candidate procedures. Their success may not be retroactively counted as Constitution-generated novelty.
 

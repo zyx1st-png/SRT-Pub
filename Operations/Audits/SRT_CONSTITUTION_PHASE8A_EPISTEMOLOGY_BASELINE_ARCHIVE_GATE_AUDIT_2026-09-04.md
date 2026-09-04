@@ -2,8 +2,8 @@
 id: SRT-CONSTITUTION-PHASE8A-EPISTEMOLOGY-BASELINE-ARCHIVE-GATE-AUDIT-20260904
 type: audit
 status: active
-version: v1
-record_stage: phase8a_complete_increment_unresolved_archive_enumeration_no_go
+version: v2
+record_stage: phase8a_complete_framework_parented_increment_unresolved_archive_enumeration_no_go
 date: 2026-09-04
 layer: meta
 epistemic_layer: evidence
@@ -13,6 +13,8 @@ canonical: false
 ai_do_not_use_for_definition: true
 domain: epistemology
 dependency:
+  - Philosophy/SRT_Epistemology_Reconstruction_Framework.md
+  - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
   - Operations/Proposals/SRT_CONSTITUTION_PHASE8_EPISTEMOLOGY_DEEP_WELL_CHARTER_2026-09-04.md
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
   - Philosophy/Papers/Forcing_CH_Evidence/README.md
@@ -27,11 +29,13 @@ tags: [Constitution, Phase8A, Epistemology, MathematicalPractice, StrongestBasel
 
 ## Method identity across historical and representational change
 
+> **Architecture-v2 status**: grandfathered **Layer-4 audit** under `Philosophy/SRT_Epistemology_Reconstruction_Framework.md`; primary parent families are `E2 + E4`, with secondary `E3 + E6`. The audit preserves the old Phase-8A verdict rather than retrofitting the Framework into its evidence.
+>
 > **Baseline result**: **UNRESOLVED with strong Case-B pressure**. The mature baseline already owns the generic claims that mathematical knowledge is practice- and history-sensitive, that agents and communities matter, that proof/method identity is nontrivial, and that retrospective reconstruction can differ from historical availability. No SRT-specific content increment is established at this stage.
 >
 > **Archive result**: `ARCHIVE-ENUMERATION-0 = NO-GO`. The fixed control archive still has Part II unattested, so candidate enumeration, scoring, ranking, selection and control individuation remain prohibited.
 >
-> **Programme consequence**: the Epistemology well remains open. Corpus assembly inside the already frozen boundary is authorized; another method protocol is not. A Case-C claim is prohibited unless later independently selected controls plus a Constitution differential audit show a bounded gain beyond both the mature baseline and the pre-Constitution protocol.
+> **Programme consequence**: the Epistemology well remains open. On landing of this migration, corpus assembly inside the already frozen boundary is authorized; another method protocol is not. A Case-C claim is prohibited unless later independently selected controls plus a Constitution differential audit show a bounded gain beyond both the mature baseline and the pre-Constitution protocol.
 
 ---
 
