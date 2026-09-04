@@ -1,0 +1,87 @@
+name: JSL Bernays Part IV Saarland Verify Scratch
+
+on:
+  push:
+    branches:
+      - scratch/epistemology-material-scan-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Verify Saarland PDF source object
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip -q install requests pypdf
+          python - <<'PY'
+          import csv, io, json, hashlib, re, requests
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          url='https://w2.cs.uni-saarland.de/op/fullpaper/settheory/BernaysGeneralSetTheory.pdf'
+          expected={
+              'author':'Paul Bernays',
+              'title':'A system of axiomatic set theory. Part IV. General set theory',
+              'year':'1942',
+              'volume':'7',
+              'issue':'4',
+              'pages':'133-145',
+              'doi':'10.2307/2268110',
+          }
+          inv=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv')
+          with inv.open(encoding='utf-8', newline='') as f:
+              rows=list(csv.DictReader(f, delimiter='\t'))
+          def norm(s): return re.sub(r'[^a-z0-9]+',' ',(s or '').lower()).strip()
+          matches=[r for r in rows if norm(r.get('author'))==norm(expected['author']) and norm(r.get('exact_title'))==norm(expected['title'])]
+          assert len(matches)==1, {'inventory_matches':len(matches)}
+          row=matches[0]
+          for k,v in [('publication_year','1942'),('volume','7'),('issue','4'),('pages','133-145')]:
+              assert (row.get(k) or '').strip()==v, (k,row.get(k),v)
+
+          r=requests.get(url,headers={'User-Agent':'SRT-control-archive-acquisition/0.3'},timeout=120)
+          rec={'url':url,'http_status':r.status_code,'content_type':r.headers.get('content-type',''),'bytes':len(r.content)}
+          r.raise_for_status()
+          rec['pdf_magic']=r.content.startswith(b'%PDF')
+          assert rec['pdf_magic'], rec
+          rec['sha256']=hashlib.sha256(r.content).hexdigest()
+          pdf=PdfReader(io.BytesIO(r.content))
+          rec['pdf_pages']=len(pdf.pages)
+          assert rec['pdf_pages']>=13, rec
+          texts=[p.extract_text() or '' for p in pdf.pages]
+          normalized=[norm(t) for t in texts]
+          alltext='\n'.join(texts)
+          nall=norm(alltext)
+          rec['title_present']='a system of axiomatic set theory part iv general set theory' in nall
+          rec['author_present']='paul bernays' in nall
+          rec['stable_id_present']='2268110' in alltext
+          rec['volume_issue_present']=('vol 7 no 4' in nall) or ('volume 7' in nall and 'no 4' in nall)
+          rec['start_page_indices']=[i for i,t in enumerate(texts) if re.search(r'(?m)(?:^|\s)133(?:\s|$)',t)]
+          rec['end_page_indices']=[i for i,t in enumerate(texts) if re.search(r'(?m)(?:^|\s)145(?:\s|$)',t)]
+          rec['pages_with_text']=sum(bool(t.strip()) for t in texts)
+          assert rec['title_present'] and rec['author_present'] and rec['stable_id_present'], rec
+          assert rec['start_page_indices'] and rec['end_page_indices'], rec
+          assert min(rec['start_page_indices']) < max(rec['end_page_indices']), rec
+          # Require a continuous 13-page article span between a page carrying printed 133 and one carrying printed 145.
+          spans=[(s,e) for s in rec['start_page_indices'] for e in rec['end_page_indices'] if e>=s and e-s+1==13]
+          rec['candidate_article_spans']=spans
+          assert spans, rec
+          s,e=spans[0]
+          article=texts[s:e+1]
+          rec['article_span']=[s,e]
+          rec['article_pages_with_text']=sum(bool(t.strip()) for t in article)
+          assert rec['article_pages_with_text']==13, rec
+          # Guard title on first article page and continued argument/text on final page.
+          assert 'a system of axiomatic set theory' in normalized[s] and 'part iv' in normalized[s], rec
+          assert len(normalized[e])>200, rec
+          print('VERIFIED',json.dumps(rec,ensure_ascii=False,sort_keys=True))
+          print('INVENTORY_ROW',json.dumps(row,ensure_ascii=False,sort_keys=True))
+          PY
