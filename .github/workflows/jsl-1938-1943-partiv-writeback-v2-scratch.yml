@@ -37,6 +37,8 @@ jobs:
           extra="s=one(s,'only 25 rows across those 2,903 are page-verified complete','only 26 rows across those 2,903 are page-verified complete','coverage section 5.5 count')"
           assert code.count(anchor)==1
           code=code.replace(anchor,anchor+'\n'+extra,1)
+          for i,line in enumerate(code.splitlines(),1):
+              print(f'CODELINE {i:03d}: {line}')
           exec(compile(code,'reused-writeback-v2','exec'),{})
           PY
           allowed=(
