@@ -14,7 +14,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git checkout 8fd5d637df822e0e469bdc1c796424048b2111f3
+          git fetch origin refs/pull/891/merge
+          git checkout FETCH_HEAD
           mkdir -p /tmp/bundles
           python - <<'PY'
           from pathlib import Path
