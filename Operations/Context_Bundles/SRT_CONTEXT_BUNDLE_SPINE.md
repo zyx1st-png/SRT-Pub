@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: 3231d599
+source_commit: 4b930b9e
 source_branch: bootstrap-domain-framework-sync-20260904
-source_dirty: true
+source_dirty: false
 inputs_digest: e7effa9e0b88c287
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: e7effa9e0b88c287
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-04 |
-| 来源 commit | `3231d599` |
+| 来源 commit | `4b930b9e` |
 | 来源分支 | `bootstrap-domain-framework-sync-20260904` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,7 +43,7 @@ inputs_digest: e7effa9e0b88c287
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-08-30 |
+| 1 | `SRT_AI_START.md` | 2026-09-04 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-03 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -442,7 +442,7 @@ For non-trivial SRT work:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-30 |
+| last_commit | 2026-09-04 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

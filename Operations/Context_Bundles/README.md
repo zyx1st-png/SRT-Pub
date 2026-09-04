@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-04
-source_commit: 3231d599
+source_commit: 4b930b9e
 source_branch: bootstrap-domain-framework-sync-20260904
-source_dirty: true
+source_dirty: false
 inputs_digest: e7effa9e0b88c287
 ---
 
@@ -23,14 +23,14 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 328,921 | ~144,566 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 152,083 | ~71,544 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 69,393 | ~26,785 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 79,977 | ~34,144 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 90,885 | ~34,040 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 62,401 | ~24,703 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,116 | ~14,012 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,549 | ~9,515 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 328,922 | ~144,566 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 152,084 | ~71,544 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 69,394 | ~26,785 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 79,978 | ~34,144 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 90,886 | ~34,040 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 62,402 | ~24,704 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,117 | ~14,012 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,550 | ~9,515 |
 
 ## 上下文预算
 
@@ -67,7 +67,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 | `SPINE` + `DOMAIN_AI` | 171,351 | **超预算** |
 | `SPINE` + `DOMAIN_PHYSICS` | 178,710 | **超预算** |
 | `SPINE` + `DOMAIN_PHILOSOPHY` | 178,606 | **超预算** |
-| `SPINE` + `DOMAIN_NEUROSCIENCE` | 169,269 | **超预算** |
+| `SPINE` + `DOMAIN_NEUROSCIENCE` | 169,270 | **超预算** |
 | `SPINE` + `DOMAIN_SPIRITUALITY` | 158,578 | **超预算** |
 | `SPINE` + `DOMAIN_CORE` | 154,081 | 在预算内（但仍不推荐，见下） |
 
