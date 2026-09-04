@@ -1,0 +1,131 @@
+name: Part IV Final Cross-file Fix Once
+
+on:
+  push:
+    branches:
+      - scratch/partiv-final-crossfile-fix-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Fix final stale summaries and validate all five formal files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+
+          root=Path('Philosophy/Papers/Forcing_CH_Evidence')
+          cov=root/'CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          readme=root/'README.md'
+          man=root/'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+          inv=root/'CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+          cert=root/'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+
+          def one(text, old, new, label):
+              n=text.count(old)
+              assert n==1, (label,n)
+              return text.replace(old,new,1)
+
+          # Coverage: restore Markdown section spacing lost by the schema migration.
+          s=cov.read_text(encoding='utf-8')
+          s=one(s,
+                'It would not authorize the six tests, candidate enumeration, or individuation.\n### 4.6 Access result and explicit not-reached boundaries',
+                'It would not authorize the six tests, candidate enumeration, or individuation.\n\n### 4.6 Access result and explicit not-reached boundaries',
+                'coverage section spacing')
+          cov.write_text(s,encoding='utf-8')
+
+          # README: one archive-record summary still carried the old zero-full-text count.
+          s=readme.read_text(encoding='utf-8')
+          old='| [CONTROL_ARCHIVE_COVERAGE_LOG.md](CONTROL_ARCHIVE_COVERAGE_LOG.md) | Reached/not-reached venue and year ranges, coverage mode, access limits and next corpus actions | Preserves the first unit as **opportunistic** and separately records three `systematic_but_incomplete` JSL blocks: 1938–1943 (24 issues, 773 items, 0 complete texts, six publisher TOC gaps), 1944–1949 (23 issues, 714 items, 0 complete texts), and 1950–1955 (25 issues, 1,416 items, 25 complete texts); continuous JSL row-level metadata coverage now reaches 1938–1955, with no global adequacy claim |'
+          new='| [CONTROL_ARCHIVE_COVERAGE_LOG.md](CONTROL_ARCHIVE_COVERAGE_LOG.md) | Reached/not-reached venue and year ranges, coverage mode, access limits and next corpus actions | Preserves the first unit as **opportunistic** and separately records three `systematic_but_incomplete` JSL blocks: 1938–1943 (24 issues, 773 items, **1 page-verified complete text**, six publisher TOC gaps), 1944–1949 (23 issues, 714 items, 0 complete texts), and 1950–1955 (25 issues, 1,416 items, 25 complete texts); continuous JSL row-level metadata coverage now reaches 1938–1955, with no global adequacy claim |'
+          s=one(s,old,new,'README coverage row')
+          readme.write_text(s,encoding='utf-8')
+
+          # Source manifest: publisher-probe metadata record must not imply the independent acquisition never happened.
+          s=man.read_text(encoding='utf-8')
+          s=one(s,
+                '| Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and the entire item full-text layer remain incomplete. The block is therefore `systematic_but_incomplete`. |',
+                '| Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and **772/773** item full texts remain incomplete. The independently acquired Bernays Part IV source does not make the block exhaustive; the block remains `systematic_but_incomplete`. |',
+                'manifest Cambridge limitation')
+          s=one(s,
+                '| Function | Records the access constraint behind the block\'s 0 full-text count and prevents metadata contact from being misreported as page verification |',
+                '| Function | Records the publisher/Project-Euclid access constraint behind the block\'s remaining 772 metadata-only full-text deficits and prevents metadata contact from being misreported as page verification |',
+                'manifest access-probe function')
+          s=one(s,
+                '| Limitations | This is an environment-specific access result, not a claim that the 773 items are unobtainable elsewhere. |',
+                '| Limitations | This is an environment-specific access result for those probe channels, not a claim that the remaining 772 metadata-only items are unobtainable elsewhere. Bernays Part IV was subsequently acquired through an independent Saarland-hosted source registered above. |',
+                'manifest access-probe limitation')
+          man.write_text(s,encoding='utf-8')
+
+          # Cross-file machine guards.
+          with inv.open(encoding='utf-8',newline='') as f:
+              rows=list(csv.DictReader(f,delimiter='\t'))
+          assert len(rows)==773, len(rows)
+          verified=[r for r in rows if r['full_text_status']=='page-verified complete']
+          metadata=[r for r in rows if r['full_text_status']=='metadata only; full text not reached']
+          flags=[r for r in rows if r['technical_depth_availability']=='technical-depth potentially sufficient']
+          assert len(verified)==1, len(verified)
+          assert len(metadata)==772, len(metadata)
+          assert len(flags)==12, len(flags)
+          assert sum(r['full_text_status']=='page-verified complete' for r in flags)==1
+          v=verified[0]
+          assert v['author']=='Paul Bernays'
+          assert v['exact_title']=='A system of axiomatic set theory. Part IV. General set theory'
+          assert [v['publication_year'],v['volume'],v['issue'],v['pages']]==['1942','7','4','133-145']
+          for title in ['A system of axiomatic set theory. Part III. Infinity and enumerability. Analysis','A system of axiomatic set theory. Part V. General set theory (continued)']:
+              rr=[r for r in rows if r['exact_title']==title]
+              assert len(rr)==1 and rr[0]['full_text_status']=='metadata only; full text not reached', title
+
+          ct=cert.read_text(encoding='utf-8')
+          assert 'Combined: **72 issues, 2,903 rows, 26 page-verified complete texts, 2,877 metadata-only rows**.' in ct
+          assert 'certificate_state: part_i_fixed_part_ii_unattested' in ct
+          assert 'enumeration_permitted: false' in ct
+          assert '**Part II remains UNATTESTED and enumeration remains blocked.**' in ct
+
+          rt=readme.read_text(encoding='utf-8')
+          assert '**26 items are page-verified complete**' in rt and '**2,877 rows remain metadata-only**' in rt
+          assert '1938–1943 (24 issues, 773 items, **1 page-verified complete text**, six publisher TOC gaps)' in rt
+          assert 'Enumeration, scoring, ranking, selection and individuation remain blocked' in rt
+
+          mt=man.read_text(encoding='utf-8')
+          assert '### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`' in mt
+          assert 'SHA-256: `e893e6b6717558f343a03223c640fed11d78d8791f6fce7a9b91b02eb2c2ad93`' in mt
+          assert '| Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |' in mt
+          assert '772/773** item full texts remain incomplete' in mt
+          assert 'candidate_enumeration: false' in mt and 'part_ii_attested: false' in mt
+
+          qt=cov.read_text(encoding='utf-8')
+          assert '| Full-text availability | **1** page-verified complete text in this block:' in qt
+          assert '| Metadata-only items | **772** |' in qt
+          assert '| Acquisition status |' in qt
+          assert 'remaining 11 flagged primary texts plus the eight immediately linked reviews' in qt
+          assert '\n\n### 4.6 Access result' in qt
+          assert 'part_ii_attested: false' in qt and 'candidate_enumeration: false' in qt
+          print('PARTIV_FIVE_FILE_CROSSCHECK_OK')
+          PY
+          git diff --check
+          mapfile -t changed < <(git diff --name-only)
+          printf 'CHANGED\n%s\n' "${changed[@]}"
+          test "${#changed[@]}" -eq 3
+          for f in "${changed[@]}"; do
+            case "$f" in
+              Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md|Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md|Philosophy/Papers/Forcing_CH_Evidence/README.md) ;;
+              *) echo "unexpected path: $f"; exit 1 ;;
+            esac
+          done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${changed[@]}"
+          git commit -m 'Archive: close Part IV acquisition summary inconsistencies'
+          git push origin HEAD:phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
