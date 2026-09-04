@@ -1,0 +1,27 @@
+name: SPINE Merge Diff Probe Once
+
+on:
+  push:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Diff current PR synthetic merge SPINE
+        shell: bash
+        run: |
+          set -euo pipefail
+          git checkout 8fd5d637df822e0e469bdc1c796424048b2111f3
+          mkdir -p /tmp/bundles
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'scripts')
+          import build_srt_context_bundles as B
+          prov = B.read_provenance(Path('Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md'))
+          B.generate(prov, Path('/tmp/bundles'))
+          PY
+          diff -u Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md /tmp/bundles/SRT_CONTEXT_BUNDLE_SPINE.md || true
