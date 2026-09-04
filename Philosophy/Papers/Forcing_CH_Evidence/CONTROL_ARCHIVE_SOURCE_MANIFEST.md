@@ -460,6 +460,24 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 
 The earlier one-page captures for these five entries are superseded by the complete files for current counts. Their prior hashes remain in git history as acquisition provenance; no page image or PDF is committed.
 
+### `CHURCH1940-SIMPLE-TYPES`
+
+| Field | Record |
+|---|---|
+| Stable key | `CHURCH1940-SIMPLE-TYPES` |
+| Author | Alonzo Church |
+| Exact title | “A Formulation of the Simple Theory of Types” |
+| Year | 1940 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 5(2), pp. 56–68 |
+| Stable record | JSTOR 2266170; DOI 10.2307/2266170 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory metadata fields |
+| Acquisition source | University of Chicago course archive hosting a JSTOR scan: `https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf` |
+| Full-text/page-verification status | **VERIFIED — complete article**. The current source returned HTTP 200, 555,577 bytes, 14 PDF pages. PDF page 1 is the JSTOR metadata cover; PDF pages 2–14 are 13 distinct rendered article pages spanning printed pp. 56–68. All 14 rendered-page hashes were distinct. SHA-256: `233840f2a8f99138293e35efed0aecf12a11b7228bfccc2917315e6d0c2dc7a4`. |
+| Exact locations used | Entire pp. 56–68 only for completeness/page-boundary verification in this acquisition pass; no substantive passage was selected for a method-identity judgement. |
+| Evidentiary function | Upgrades one acquisition-only technical-depth record from metadata-only to a complete page-verified primary source; establishes access/depth capacity for this record only. |
+| Limitations | No six-test audit, component-removal/replacement analysis, method-family comparison, candidate admission, scoring, ranking, selection, or individuation judgement was performed. The PDF/page images are not committed to the repository. |
+
 ### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`
 
 | Field | Record |
@@ -551,7 +569,7 @@ Issue landing records reached:
 | Exact block reached | Vols. 3–8, nos. 1–4: **24 issue identities**, calendar years 1938–1943 |
 | Function | Official venue/volume/issue boundary; printed-page spans; article/review/index section labels; access-state check |
 | Reach status | The all-issues archive and all 24 issue identities were reached. Eighteen issue/TOC landing records loaded independently; 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3) repeatedly timed out. |
-| Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |
+| Full-text status | **2** item full texts are now page-verified complete through the separately registered Bernays Part IV and Church 1940 sources; the other 771 rows remain metadata-only |
 | Metadata anomaly | The all-issues archive displays 3(2) as pp. 61–124 while also displaying 3(3) as pp. 97–124. Independently loaded issue records resolve the printed spans as 3(2), pp. 61–96, and 3(3), pp. 97–124. |
 | Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and **772/773** item full texts remain incomplete. The independently acquired Bernays Part IV source does not make the block exhaustive; the block remains `systematic_but_incomplete`. |
 
@@ -596,8 +614,8 @@ Issue landing records contacted:
 | Stable key | `JSL-1938-1943-FULLTEXT-ACCESS-PROBE` |
 | Channels contacted | Cambridge issue/item routes, DOI redirects, and Project Euclid item routes linked by DBLP |
 | Result | Sampled Cambridge issue pages showed `Get access` for primary and review items; repeated command-line Cambridge retrieval returned rate limits; a Project Euclid route returned a challenge page. No complete item text was acquired through these probes. |
-| Function | Records the publisher/Project-Euclid access constraint behind the block's remaining 772 metadata-only full-text deficits and prevents metadata contact from being misreported as page verification |
-| Limitations | This is an environment-specific access result for those probe channels, not a claim that the remaining 772 metadata-only items are unobtainable elsewhere. Bernays Part IV was subsequently acquired through an independent Saarland-hosted source registered above. |
+| Function | Records the publisher/Project-Euclid probe-channel failure for the block; it does not negate complete objects acquired through separately registered independent channels |
+| Limitations | This is an environment-specific result for those probe channels, not a claim that the remaining 771 metadata-only items are unobtainable elsewhere. Bernays Part IV and Church 1940 were acquired through separately registered independent sources above. |
 
 
 ### `JSL-CAMBRIDGE-1944-1949-ISSUES`

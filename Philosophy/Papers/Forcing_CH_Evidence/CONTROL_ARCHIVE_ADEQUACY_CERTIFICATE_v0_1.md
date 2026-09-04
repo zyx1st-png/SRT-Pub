@@ -119,11 +119,11 @@ This entry records progress in archive assembly only. It signs no Part II attest
 
 Three bounded serial/year sweeps now provide continuous JSL row-level metadata coverage for **1938–1955**:
 
-- 1938–1943: 24 issues, 773 rows, **1 page-verified complete text** (Bernays Part IV), 772 metadata-only rows, six publisher TOCs independently unconfirmed;
+- 1938–1943: 24 issues, 773 rows, **2 page-verified complete texts** (Bernays Part IV and Church 1940), 771 metadata-only rows, six publisher TOCs independently unconfirmed;
 - 1944–1949: 23 issues, 714 rows, 0 page-verified complete texts;
 - 1950–1955: 25 issues, 1,416 rows, 25 page-verified complete texts.
 
-Combined: **72 issues, 2,903 rows, 26 page-verified complete texts, 2,877 metadata-only rows**. The 1944–1949 sweep therefore closes the intervening JSL issue/item-metadata gap, but it does not establish technical depth: all 714 rows in that block have blank `technical_depth_availability`, and no six-test audit was run. JSL 1956–1963 remains unswept and no second mathematical-logic venue has been systematically assembled.
+Combined: **72 issues, 2,903 rows, 27 page-verified complete texts, 2,876 metadata-only rows**. The 1944–1949 sweep therefore closes the intervening JSL issue/item-metadata gap, but it does not establish technical depth: all 714 rows in that block have blank `technical_depth_availability`, and no six-test audit was run. JSL 1956–1963 remains unswept and no second mathematical-logic venue has been systematically assembled.
 
 Effect on Part II:
 
