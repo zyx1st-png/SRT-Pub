@@ -1,0 +1,53 @@
+name: JSL 1944-1949 Owner Writeback Runner V2
+
+on:
+  push:
+    paths:
+      - '.scratch/jsl-1944-1949-owner-writeback-v2-trigger.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  writeback:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
+          fetch-depth: 0
+      - name: Execute original writeback block with validator literal corrected in memory
+        shell: bash
+        run: |
+          git fetch origin scratch/epistemology-material-scan-20260904:refs/remotes/origin/scratch/epistemology-material-scan-20260904
+          python - <<'PY'
+          import subprocess, textwrap
+          ref='origin/scratch/epistemology-material-scan-20260904:.github/workflows/jsl-1944-1949-owner-writeback-scratch.yml'
+          src=subprocess.check_output(['git','show',ref],text=True)
+          marker="          python - <<'PY'\n"
+          start=src.index(marker)+len(marker)
+          end=src.index("\n          PY\n",start)
+          code=textwrap.dedent(src[start:end])
+          old="assert '2,878 metadata-only' in rd"
+          new="assert '2,878 rows remain metadata-only' in rd"
+          assert code.count(old)==1
+          code=code.replace(old,new,1)
+          exec(compile(code,'owner_writeback_in_memory.py','exec'),{})
+          PY
+
+          changed="$(git status --porcelain)"
+          echo "$changed"
+          test "$(echo "$changed" | sed '/^$/d' | wc -l)" -eq 4
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+          echo "$changed" | grep -F 'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+          echo "$changed" | grep -F 'Philosophy/Papers/Forcing_CH_Evidence/README.md'
+
+          git config user.name 'zyx1st-png'
+          git config user.email 'zyx1st@gmail.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md \
+                  Philosophy/Papers/Forcing_CH_Evidence/README.md
+          git commit -m 'Write back bounded JSL 1944-1949 archive coverage'
+          git push origin HEAD:phase8b/jsl-1944-1949-archive-assembly-20260904
