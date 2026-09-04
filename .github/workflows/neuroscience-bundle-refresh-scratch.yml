@@ -1,0 +1,30 @@
+name: Neuroscience Bundle Refresh Scratch
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: infra/neuroscience-framework-context-bundle-20260904
+      - name: Regenerate and test context bundles
+        run: |
+          python scripts/build_srt_context_bundles.py --generated-date 2026-09-04
+          python scripts/test_build_context_bundles.py
+          python scripts/build_srt_context_bundles.py --check
+      - name: Commit generated bundles
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Operations/Context_Bundles/
+          git diff --cached --quiet && exit 0
+          git commit -m "Regenerate context bundles for Neuroscience Framework routing"
+          git push origin HEAD:infra/neuroscience-framework-context-bundle-20260904
