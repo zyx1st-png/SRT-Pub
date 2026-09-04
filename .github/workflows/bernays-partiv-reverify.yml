@@ -1,0 +1,39 @@
+name: Bernays Part IV Reverify
+
+on:
+  push:
+    branches:
+      - scratch/bernays-saarland-directory-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reverify exact Part IV source object
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          url='https://w2.cs.uni-saarland.de/op/fullpaper/settheory/BernaysGeneralSetTheory.pdf'
+          curl -L --connect-timeout 20 --max-time 90 -sS -o /tmp/p4.pdf -w 'HTTP=%{http_code}\nTYPE=%{content_type}\nSIZE=%{size_download}\n' "$url"
+          echo "SHA256=$(sha256sum /tmp/p4.pdf | awk '{print $1}')"
+          echo "FILE=$(file -b /tmp/p4.pdf)"
+          pdfinfo /tmp/p4.pdf | sed -n '1,35p'
+          pages=$(pdfinfo /tmp/p4.pdf | awk -F: '/^Pages:/ {gsub(/ /,"",$2); print $2}')
+          mkdir -p /tmp/render
+          pdftoppm -png -r 72 /tmp/p4.pdf /tmp/render/page >/dev/null 2>&1
+          renders=$(find /tmp/render -type f -name 'page-*.png' | wc -l)
+          unique=$(sha256sum /tmp/render/page-*.png | awk '{print $1}' | sort -u | wc -l)
+          echo "PDFINFO_PAGES=$pages"
+          echo "RENDER_COUNT=$renders"
+          echo "UNIQUE_RENDER_HASHES=$unique"
+          echo '--- FIRST TEXT ---'
+          pdftotext -f 1 -l 2 -layout /tmp/p4.pdf - | sed -n '1,40p'
+          echo '--- LAST TEXT ---'
+          pdftotext -f "$pages" -l "$pages" -layout /tmp/p4.pdf - | tail -n 40
