@@ -1,0 +1,90 @@
+name: Epistemology Framework Routing Sync Scratch
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: epistemology/framework-routing-sync-20260904
+      - name: Sync landed pilot status and Philosophy routes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          fw = Path('Philosophy/SRT_Epistemology_Reconstruction_Framework.md')
+          s = fw.read_text(encoding='utf-8')
+          reps = {
+            'record_stage: material_reentry_complete_grandfathered_second_well_parented_pending_889_migration': 'record_stage: material_reentry_complete_grandfathered_second_well_landed_phase8b_archive_assembly_open',
+            'current grandfathered pilot = mathematical method-family identity / forcing–CH, presently in Draft PR #889\npilot Phase-8A standing in #889 = UNRESOLVED + high Case-B pressure; Case C not licensed; archive enumeration NO-GO; bounded archive assembly GO\npilot migration state = parented here conceptually; charter/audit still require clean migration onto current main': 'current grandfathered pilot = mathematical method-family identity / forcing–CH, landed on main via PR #895\npilot Phase-8A standing on main = UNRESOLVED + high Case-B pressure; Case C not licensed; archive enumeration NO-GO; bounded archive assembly GO\npilot migration state = complete; Phase 8B bounded fixed-boundary archive assembly is open',
+            'Draft PR #889 opened a bounded pilot before Architecture v2 inserted Layer 2. Its study question remains usable:': 'Historical Draft PR #889 opened a bounded pilot before Architecture v2 inserted Layer 2. Its valid charter/audit content was cleanly migrated and landed via PR #895. Its study question remains active:',
+            'Draft PR #889 charter + Phase-8A audit | second-well pilot under old direct route | grandfathered Layer-4 records awaiting migration | E2/E4 + E3/E6 | preserve result; re-parent and remove duplicated author-decision diff before merge': 'landed PR #895 charter + Phase-8A audit | second-well pilot originally opened under old direct route | grandfathered Layer-4 records now parented under this Framework | E2/E4 + E3/E6 | preserve result; Phase 8B archive assembly open, enumeration still blocked',
+            'Draft #889 pilot records bounded archive assembly = GO; actual archive execution remains paused until clean migration lands': 'bounded fixed-boundary archive assembly = OPEN on main after PR #895 migration; enumeration / scoring / Control A-B selection / individuation remain blocked pending Part II',
+            'No quantity of SourceCards, patches, archive items or successful forcing analyses licenses **C**. Draft #889 currently records the strongest local verdict as `UNRESOLVED + high Case-B pressure` and `Case C not licensed`.': 'No quantity of SourceCards, patches, archive items or successful forcing analyses licenses **C**. The landed Phase-8A audit records the strongest local verdict as `UNRESOLVED + high Case-B pressure` and `Case C not licensed`.',
+            'status = Draft PR #889, not yet cleanly landed on current main\nparent families = E2 + E4; secondary E3 + E6\nstudy object = mathematical method-family identity\nadversarial test bed = forcing–CH evidence project\ncurrent pilot verdict = UNRESOLVED + high Case-B pressure\nCase C = not licensed\narchive enumeration = NO-GO\nbounded archive assembly = GO in pilot record, pending migration': 'status = LANDED on main via PR #895; grandfathered Layer-4 pilot active\nparent families = E2 + E4; secondary E3 + E6\nstudy object = mathematical method-family identity\nadversarial test bed = forcing–CH evidence project\ncurrent pilot verdict = UNRESOLVED + high Case-B pressure\nCase C = not licensed\narchive enumeration = NO-GO\nbounded archive assembly = OPEN inside the frozen boundary',
+            '[x] grandfathered #889 pilot has explicit parent families E2/E4 (+E3/E6)': '[x] grandfathered pilot migrated via #895 and has explicit parent families E2/E4 (+E3/E6)',
+            'Even before #889 is migrated, its existing Phase-8A draft standing supplies a negative constraint:': 'The landed Phase-8A pilot supplies the following negative constraint:',
+            '### 12.3 Required #889 migration before further theory expansion': '### 12.3 Migration completion and Phase-8B execution gate',
+            'The clean migration should:\n\n1. preserve the charter and Phase-8A audit as historical pilot records;\n2. remove the duplicated author-sequence diff now already landed through #892;\n3. update dependencies to this Framework and Architecture v2;\n4. replace the old charter\'s burden of reconstructing the whole domain with an explicit parent-family declaration `E2 + E4 (+ E3/E6)`;\n5. retain `UNRESOLVED + high Case-B pressure`, `Case C not licensed`, `ARCHIVE-ENUMERATION-0 = NO-GO`, and bounded archive-assembly status without retrospective positive credit;\n6. only then resume JSL/archive work.': 'Migration completed in PR #895:\n\n1. charter and Phase-8A audit were preserved as historical pilot records;\n2. the duplicated author-sequence diff was not migrated because the Neuroscience reopen decision was already on `main`;\n3. dependencies now point to this Framework and Architecture v2;\n4. the pilot is explicitly parented under `E2 + E4 (+ E3/E6)` rather than reconstructing the whole domain;\n5. `UNRESOLVED + high Case-B pressure`, `Case C not licensed`, `ARCHIVE-ENUMERATION-0 = NO-GO`, and bounded archive-assembly GO were preserved without retrospective positive credit.\n\nCurrent execution gate:\n\n```text\nbounded fixed-boundary archive assembly = OPEN\ncandidate enumeration = BLOCKED pending Part II\nscoring / ranking = BLOCKED pending Part II\nControl A/B selection = BLOCKED pending Part II\ncontrol individuation = BLOCKED pending Part II\n```',
+            'active main well = grandfathered method-identity / forcing–CH pilot in Draft #889': 'active main well = grandfathered method-identity / forcing–CH pilot landed via PR #895',
+            'next action = review/land this Framework, then cleanly migrate #889 before resuming Phase-8B archive assembly': 'next action = continue Phase-8B fixed-boundary archive assembly / coverage verification; do not enumerate candidates until Part II is honestly attested'
+          }
+          for old,new in reps.items():
+              if old not in s:
+                  raise SystemExit(f'framework anchor missing: {old[:90]}')
+              s=s.replace(old,new,1)
+          fw.write_text(s,encoding='utf-8')
+
+          mi = Path('Philosophy/_PHILOSOPHY_MACHINE_INDEX.md')
+          m = mi.read_text(encoding='utf-8')
+          m=m.replace('status: active_v7','status: active_v8',1)
+          if '  - Domain-Reconstruction\n' not in m:
+              m=m.replace('  - Public-OnePager\n','  - Public-OnePager\n  - Domain-Reconstruction\n  - Epistemology\n',1)
+          dep='  - SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29\n  - SRT-PHIL-EPISTEMOLOGY-01\n'
+          if dep not in m: raise SystemExit('machine dependency anchor missing')
+          m=m.replace(dep,'  - SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29\n  - SRT-EPISTEMOLOGY-RECONSTRUCTION-FRAMEWORK\n  - SRT-PHIL-EPISTEMOLOGY-01\n',1)
+          old='  interface, phenomenal-structure interface, and public one-pager. It does not define canonical SRT primitives.'
+          new='  interface, phenomenal-structure interface, the Architecture-v2 Epistemology Reconstruction Framework, and public one-pager. It does not define canonical SRT primitives.'
+          if old not in m: raise SystemExit('machine summary anchor missing')
+          m=m.replace(old,new,1)
+          fast='  -> Philosophy/SRT_Phenomenal_Structure_Interface.md\n  -> Philosophy/SRT_HardProblem_Epistemology.md\n'
+          if fast not in m: raise SystemExit('machine fast route anchor missing')
+          m=m.replace(fast,'  -> Philosophy/SRT_Phenomenal_Structure_Interface.md\n  -> Philosophy/SRT_Epistemology_Reconstruction_Framework.md  # Layer-2 domain problem map for epistemology\n  -> Philosophy/SRT_HardProblem_Epistemology.md\n',1)
+          row='| `SRT_HardProblem_Epistemology.md` | hard-problem dissolution and epistemology route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims | active_v1 |'
+          if row not in m: raise SystemExit('machine primary row anchor missing')
+          m=m.replace(row,'| `SRT_Epistemology_Reconstruction_Framework.md` | Architecture-v2 Layer-2 epistemology problem map; E1-E7 families, material re-entry, deep-well queue, and Phase-9.5 writeback boundary | active_v0.1 |\n'+row,1)
+          active='| `SRT_HardProblem_Epistemology.md` | Need hard-problem dissolution, explanatory-gap typing, view-from-nowhere trap, or first/third-person access-route guardrails. |'
+          if active not in m: raise SystemExit('machine active row anchor missing')
+          m=m.replace(active,'| `SRT_Epistemology_Reconstruction_Framework.md` | Need the Architecture-v2 epistemology domain map, objectification/bearer declarations, E1-E7 problem families, or deep-well routing. |\n'+active,1)
+          q='| “How can SRT be tested?” | Public OnePager -> Compact Core v4 §17 -> Objection extension O-Phil-19 -> Core 24 |'
+          if q not in m: raise SystemExit('machine query anchor missing')
+          m=m.replace(q,'| “How should SRT reconstruct epistemology / method identity?” | Epistemology Reconstruction Framework -> relevant E1-E7 family -> selected Layer-3/4 owner; for current method-identity pilot use E2/E4 -> Phase-8 charter/audit |\n'+q,1)
+          mi.write_text(m,encoding='utf-8')
+
+          rd = Path('Philosophy/README.md')
+          r = rd.read_text(encoding='utf-8')
+          r=r.replace('status: active_v3','status: active_v4',1)
+          dep_line='dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STATUS, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]'
+          if dep_line not in r: raise SystemExit('README dependency anchor missing')
+          r=r.replace(dep_line,dep_line[:-1]+', SRT-EPISTEMOLOGY-RECONSTRUCTION-FRAMEWORK]',1)
+          note='> **2026-08-23 NAVE PROCESSUAL-BEARER UPDATE**: For process identity, constraint closure, Markov-blanket individuation, history-constituted continuity, or FEP-as-life-principle questions, cross-read `../03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`. It is a P3 owner-subtracted bridge, not a definition source: HEF grading remains with CompactCore/HCLR01, branching identity remains open under PH-IND05, Nave/Mossio constraint closure is not SRT PCC, and Core14 `T-Scale-04` receives scope/antecedent pressure rather than a falsification claim.\n'
+          if note not in r: raise SystemExit('README note anchor missing')
+          r=r.replace(note,note+'\n> **2026-09-04 EPISTEMOLOGY RECONSTRUCTION UPDATE**: For domain-level questions about knowledge objects, method/proof/model identity, evidence attribution, historical availability, situated inquiry, reasoning/revision, or epistemic institutions, route first through `SRT_Epistemology_Reconstruction_Framework.md`. It is the Architecture-v2 Layer-2 problem map between Constitution and specific epistemic theories/deep wells; it does not replace `SRT_HardProblem_Epistemology.md`, forcing-CH protocols, or mature external epistemology baselines. The current method-identity pilot is parented under E2+E4 (secondary E3+E6).\n',1)
+          pathrow='| 1.6 | `SRT_HardProblem_Epistemology.md` | Hard-problem dissolution route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims. |'
+          if pathrow not in r: raise SystemExit('README path anchor missing')
+          r=r.replace(pathrow,'| 1.55 | `SRT_Epistemology_Reconstruction_Framework.md` | Architecture-v2 Layer-2 problem map for Epistemology; use before defining a new epistemology deep well or treating `SRT_HardProblem_Epistemology.md` / forcing-CH as the whole domain. |\n'+pathrow,1)
+          rd.write_text(r,encoding='utf-8')
+          PY
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Philosophy/SRT_Epistemology_Reconstruction_Framework.md Philosophy/_PHILOSOPHY_MACHINE_INDEX.md Philosophy/README.md
+          git commit -m "Sync Epistemology Framework landing status and routes"
+          git push origin HEAD:epistemology/framework-routing-sync-20260904
