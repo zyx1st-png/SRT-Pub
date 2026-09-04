@@ -1,0 +1,66 @@
+name: JSL 1938-1943 Part IV Writeback V2 Scratch
+
+on:
+  push:
+    branches:
+      - scratch/epistemology-material-scan-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  writeback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Reuse writeback logic with corrected aggregate guards
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch -q origin scratch/epistemology-material-scan-20260904:refs/remotes/origin/scratch/epistemology-material-scan-20260904
+          git show origin/scratch/epistemology-material-scan-20260904:.github/workflows/jsl-1938-1943-partiv-acquisition-writeback-scratch.yml > /tmp/v1.yml
+          python - <<'PY'
+          from pathlib import Path
+          y=Path('/tmp/v1.yml').read_text(encoding='utf-8').splitlines()
+          start=next(i for i,x in enumerate(y) if x.strip()=="python - <<'PY'")
+          end=next(i for i in range(start+1,len(y)) if y[i].strip()=='PY')
+          code='\n'.join((x[10:] if x.startswith('          ') else x) for x in y[start+1:end])+'\n'
+          old="s=one(s,'only 25 rows across those 2,903 are page-verified complete','only **26 rows** across those 2,903 are page-verified complete','certificate total count')"
+          new="s=one(s,'Combined: **72 issues, 2,903 rows, 25 page-verified complete texts, 2,878 metadata-only rows**.','Combined: **72 issues, 2,903 rows, 26 page-verified complete texts, 2,877 metadata-only rows**.','certificate total count')"
+          assert code.count(old)==1
+          code=code.replace(old,new,1)
+          anchor="s=one(s,'Only the existing 25 items in the 1950–1955 block are page-verified complete; **2,878 rows remain metadata-only**.','There are now **26 page-verified complete items** across the three systematic blocks: the existing 25 items in 1950–1955 plus Bernays Part IV in 1938–1943; **2,877 rows remain metadata-only**.','coverage overall counts')"
+          extra="s=one(s,'only 25 rows across those 2,903 are page-verified complete','only 26 rows across those 2,903 are page-verified complete','coverage section 5.5 count')"
+          assert code.count(anchor)==1
+          code=code.replace(anchor,anchor+'\n'+extra,1)
+          exec(compile(code,'reused-writeback-v2','exec'),{})
+          PY
+          allowed=(
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/README.md'
+          )
+          mapfile -t changed < <(git diff --name-only)
+          printf 'CHANGED\n%s\n' "${changed[@]}"
+          test "${#changed[@]}" -eq 5
+          for f in "${changed[@]}"; do
+            ok=0
+            for a in "${allowed[@]}"; do [[ "$f" == "$a" ]] && ok=1; done
+            [[ "$ok" -eq 1 ]] || { echo "unexpected changed path: $f"; exit 1; }
+          done
+          git diff --check
+          grep -q $'Paul Bernays\tA system of axiomatic set theory. Part IV. General set theory\t1942\t7\t4\t133-145' "${allowed[0]}"
+          grep -q 'page-verified complete' "${allowed[0]}"
+          grep -q '26 page-verified complete texts, 2,877 metadata-only rows' "${allowed[3]}"
+          grep -q 'part_ii_attested: false' "${allowed[3]}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${allowed[@]}"
+          git commit -m 'Archive: page-verify Bernays Part IV acquisition'
+          git push origin HEAD:phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
