@@ -12,6 +12,7 @@ ai_do_not_use_for_definition: true
 dependency:
   - Core_Law/SRT_Constitution_V1.md
   - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
+  - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md
   - Operations/_SRT_MATERIAL_PIPELINE.md
 tags: [Template, DomainReconstruction, Materials, SourceCards, DeepWell]
 ---
@@ -19,6 +20,20 @@ tags: [Template, DomainReconstruction, Materials, SourceCards, DeepWell]
 # Template — SRT Domain Reconstruction Framework
 
 > Use one file per active domain. This template organizes the domain problem-space between Constitution v1 and specific deep wells. It is not a domain Constitution and not a domain axiom set.
+>
+> **Template precedence note (2026-09-04):** this is the active expanded successor to `SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md §6 Domain research template` for post-Constitution domain work. The compact §6 template remains historical/summary guidance; use this file for new or backfilled Domain Reconstruction Frameworks.
+
+### Mapping from Blueprint §6
+
+| Blueprint §6 step | Active framework location |
+|---|---|
+| 0 WHO IS IN THE PHENOMENON? | §4 Bearer / position architecture |
+| 1 GIVEN ONE | §1 Given-Ones inventory |
+| 2 OBJECTIFICATION / DETACHMENT | §3 Domain objectification map |
+| 3 SRT RE-ENTRY | §2 Constitution-to-domain translation |
+| 4 REORGANIZATION + 5 NEW PROBLEMS | §7 Domain problem families |
+| 6 DOMAIN TEST | §9 Candidate theories / hypotheses / models + §10 Deep-well queue |
+| 7 DOMAIN INCREMENT GATE | §11 exit gate routes every selected well to strongest-baseline / Case A-B-C adjudication in Layer 4 |
 
 ---
 
@@ -281,6 +296,7 @@ Before a deep well opens, verify:
 [ ] mature neighbors are mapped without novelty gating
 [ ] candidate well has a parent family
 [ ] deep-well question is narrower than the framework
+[ ] each selected/queued well names its strongest-baseline target and explicitly routes any SRT increment claim to Layer-4 Case A/B/C adjudication; Framework placement alone licenses no Case C claim
 ```
 
 If several boxes fail, do not compensate by making the deep-well charter longer.
