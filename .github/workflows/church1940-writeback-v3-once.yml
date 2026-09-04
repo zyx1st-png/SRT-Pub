@@ -1,0 +1,117 @@
+name: Church 1940 Acquisition Writeback V3 Once
+
+on:
+  push:
+    branches:
+      - scratch/church1940-writeback-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  writeback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-church1940-acquisition-20260904
+          fetch-depth: 1
+      - name: Apply Church 1940 single-source acquisition writeback
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+          SHA='233840f2a8f99138293e35efed0aecf12a11b7228bfccc2917315e6d0c2dc7a4'
+          base=Path('Philosophy/Papers/Forcing_CH_Evidence')
+          inv=base/'CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+          cov=base/'CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          man=base/'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+          cert=base/'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+          readme=base/'README.md'
+          def once(s,old,new,label):
+              n=s.count(old); assert n==1, f'{label}: expected 1 occurrence, got {n}'; return s.replace(old,new,1)
+
+          with inv.open(encoding='utf-8',newline='') as f:
+              r=csv.DictReader(f,delimiter='\t'); fields=r.fieldnames; rows=list(r)
+          assert len(rows)==773
+          m=[r for r in rows if r['author']=='Alonzo Church' and r['exact_title'].strip().lower()=='a formulation of the simple theory of types']
+          assert len(m)==1 and m[0]['technical_depth_availability']=='technical-depth potentially sufficient' and m[0]['full_text_status']=='metadata only; full text not reached'
+          m[0]['full_text_status']=f'page-verified complete; UChicago-hosted JSTOR scan verified 2026-09-04; SHA-256 {SHA}'
+          with inv.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields,delimiter='\t',lineterminator='\n'); w.writeheader(); w.writerows(rows)
+
+          s=cov.read_text(encoding='utf-8')
+          pairs=[
+          ('Bernays Part IV is now page-verified complete','Bernays Part IV and Church 1940 are now page-verified complete','coverage entry reached'),
+          ('Six issue/TOC landing records did not load independently; 772 item full texts remain unreached','Six issue/TOC landing records did not load independently; 771 item full texts remain unreached','coverage entry unreached'),
+          ('**1/67 primary/correction full texts page-verified; 66 metadata-only**','**2/67 primary/correction full texts page-verified; 65 metadata-only**','coverage primary count'),
+          ('**1/12** (Bernays Part IV) is page-verified complete, 11 remain metadata-only','**2/12** (Bernays Part IV and Church 1940) are page-verified complete, 10 remain metadata-only','coverage depth count'),
+          ('There are now **26 page-verified complete items** across the three systematic blocks: the existing 25 items in 1950–1955 plus Bernays Part IV in 1938–1943; **2,877 rows remain metadata-only**.','There are now **27 page-verified complete items** across the three systematic blocks: the existing 25 items in 1950–1955 plus Bernays Part IV and Church 1940 in 1938–1943; **2,876 rows remain metadata-only**.','coverage global count'),
+          ('| Full-text availability | **1** page-verified complete text in this block: Bernays Part IV, separately registered in the source manifest |','| Full-text availability | **2** page-verified complete texts in this block: Bernays Part IV and Church 1940, separately registered in the source manifest |','4.1 fulltext'),
+          ('| Metadata-only items | **772** |','| Metadata-only items | **771** |','4.1 metadata'),
+          ('| Inaccessible/incomplete items | **772 at the complete-full-text layer**, all metadata-only.','| Inaccessible/incomplete items | **771 at the complete-full-text layer**, all metadata-only.','4.1 incomplete'),
+          ('| 1940 | 5 | 2 | 45–84 | 42 | 2 | 38 | 2 | 0 |','| 1940 | 5 | 2 | 45–84 | 42 | 2 | 38 | 2 | 1 |','4.2 issue'),
+          ('| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **1** |','| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **2** |','4.2 total')]
+          for old,new,label in pairs: s=once(s,old,new,label)
+          marker='Legacy RERO file endpoints identified for Bernays Parts III and V returned HTTP 410 during the same acquisition pass and therefore do not count as current reproducible full-text sources.\n\n'
+          addition=('**Second acquisition writeback, 2026-09-04.** Church 1940 was acquired from a currently reachable University of Chicago-hosted JSTOR scan and verified as a 14-page PDF object: one JSTOR metadata cover plus 13 distinct rendered article pages spanning printed pp. 56–68. '+f'SHA-256: `{SHA}`. The source returned HTTP 200 and all 14 rendered page hashes were distinct. This is an access/depth upgrade only; no six-test, component-removal, comparison, admission, or individuation judgement was run.\n\n')
+          s=once(s,marker,marker+addition,'4.5 insert Church acquisition')
+          lines=s.splitlines(); n=0
+          for i,line in enumerate(lines):
+              if line.startswith('| Alonzo Church | “A formulation of the simple theory of types” |'):
+                  c=[x.strip() for x in line.strip().strip('|').split('|')]; assert len(c)==6 and c[5]=='metadata-only; no current reproducible full-text object acquired in this pass'
+                  c[5]='**page-verified complete** via UChicago-hosted JSTOR scan; printed pp. 56–68 verified; source-object hash recorded above'; lines[i]='| '+' | '.join(c)+' |'; n+=1
+          assert n==1
+          s='\n'.join(lines)+'\n'
+          for old,new,label in [
+          ('remaining 11 flagged primary texts plus the eight immediately linked reviews','remaining 10 flagged primary texts plus the eight immediately linked reviews','remaining queue'),
+          ('No source reached through those publisher/Project-Euclid probes was registered as full text. Separately, the independent Saarland-hosted JSTOR scan for Bernays Part IV was acquired and page-verified as recorded in §4.5 and the source manifest.','No source reached through those publisher/Project-Euclid probes was registered as full text. Separately, the Saarland-hosted JSTOR scan for Bernays Part IV and the University of Chicago-hosted JSTOR scan for Church 1940 were acquired and page-verified as recorded in §4.5 and the source manifest.','4.6 provenance channels'),
+          ('- the remaining 772 item full texts in the 1938–1943 block; Bernays Part IV is the sole page-verified complete item;','- the remaining 771 item full texts in the 1938–1943 block; Bernays Part IV and Church 1940 are the two page-verified complete items;','4.6 remaining'),
+          ('name the six publisher-TOC and 772 remaining full-text deficits.','name the six publisher-TOC and 771 remaining full-text deficits.','4.7 deficits'),
+          ('**772/773** items in this block remain metadata-only, including 66/67 primary/correction records and all 601 review/notice records; Bernays Part IV is the sole page-verified exception;','**771/773** items in this block remain metadata-only, including 65/67 primary/correction records and all 601 review/notice records; Bernays Part IV and Church 1940 are the two page-verified exceptions;','4.7 partii 2'),
+          ('**1/12** (Bernays Part IV) is now page-verified complete, 11 remain metadata-only, and none was run through the six tests;','**2/12** (Bernays Part IV and Church 1940) are now page-verified complete, 10 remain metadata-only, and none was run through the six tests;','4.7 partii 3')]: s=once(s,old,new,label)
+          cov.write_text(s,encoding='utf-8')
+
+          s=man.read_text(encoding='utf-8')
+          insert='''### `CHURCH1940-SIMPLE-TYPES`\n\n| Field | Record |\n|---|---|\n| Stable key | `CHURCH1940-SIMPLE-TYPES` |\n| Author | Alonzo Church |\n| Exact title | “A Formulation of the Simple Theory of Types” |\n| Year | 1940 |\n| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 5(2), pp. 56–68 |\n| Stable record | JSTOR 2266170; DOI 10.2307/2266170 |\n| Source role | `in-window primary publication` |\n| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory metadata fields |\n| Acquisition source | University of Chicago course archive hosting a JSTOR scan: `https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf` |\n| Full-text/page-verification status | **VERIFIED — complete article**. The current source returned HTTP 200, 555,577 bytes, 14 PDF pages. PDF page 1 is the JSTOR metadata cover; PDF pages 2–14 are 13 distinct rendered article pages spanning printed pp. 56–68. All 14 rendered-page hashes were distinct. SHA-256: `233840f2a8f99138293e35efed0aecf12a11b7228bfccc2917315e6d0c2dc7a4`. |\n| Exact locations used | Entire pp. 56–68 only for completeness/page-boundary verification in this acquisition pass; no substantive passage was selected for a method-identity judgement. |\n| Evidentiary function | Upgrades one acquisition-only technical-depth record from metadata-only to a complete page-verified primary source; establishes access/depth capacity for this record only. |\n| Limitations | No six-test audit, component-removal/replacement analysis, method-family comparison, candidate admission, scoring, ranking, selection, or individuation judgement was performed. The PDF/page images are not committed to the repository. |\n\n'''
+          for old,new,label in [
+          ('### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`\n',insert+'### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`\n','manifest insert Church'),
+          ('| Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |','| Full-text status | **2** item full texts are now page-verified complete through the separately registered Bernays Part IV and Church 1940 sources; the other 771 rows remain metadata-only |','manifest Cambridge count'),
+          ("| Function | Records the publisher/Project-Euclid access constraint behind the block's remaining 772 metadata-only full-text deficits and prevents metadata contact from being misreported as page verification |","| Function | Records the publisher/Project-Euclid probe-channel failure for the block; it does not negate complete objects acquired through separately registered independent channels |",'manifest probe function'),
+          ('| Limitations | This is an environment-specific access result for those probe channels, not a claim that the remaining 772 metadata-only items are unobtainable elsewhere. Bernays Part IV was subsequently acquired through an independent Saarland-hosted source registered above. |','| Limitations | This is an environment-specific result for those probe channels, not a claim that the remaining 771 metadata-only items are unobtainable elsewhere. Bernays Part IV and Church 1940 were acquired through separately registered independent sources above. |','manifest probe limits')]: s=once(s,old,new,label)
+          man.write_text(s,encoding='utf-8')
+
+          s=cert.read_text(encoding='utf-8')
+          s=once(s,'1938–1943: 24 issues, 773 rows, **1 page-verified complete text** (Bernays Part IV), 772 metadata-only rows, six publisher TOCs independently unconfirmed;','1938–1943: 24 issues, 773 rows, **2 page-verified complete texts** (Bernays Part IV and Church 1940), 771 metadata-only rows, six publisher TOCs independently unconfirmed;','certificate block')
+          s=once(s,'Combined: **72 issues, 2,903 rows, 26 page-verified complete texts, 2,877 metadata-only rows**.','Combined: **72 issues, 2,903 rows, 27 page-verified complete texts, 2,876 metadata-only rows**.','certificate total'); cert.write_text(s,encoding='utf-8')
+
+          s=readme.read_text(encoding='utf-8')
+          for old,new,label in [
+          ('**26 items are page-verified complete** (25 in 1950–1955 plus Bernays Part IV in 1938–1943), **2,877 rows remain metadata-only**','**27 items are page-verified complete** (25 in 1950–1955 plus Bernays Part IV and Church 1940 in 1938–1943), **2,876 rows remain metadata-only**','readme procedure total'),
+          ('the 1938–1943 block now adds **1** page-verified text (Bernays Part IV).','the 1938–1943 block now adds **2** page-verified texts (Bernays Part IV and Church 1940).','readme manifest row'),
+          ('1938–1943 (24 issues, 773 items, **1 page-verified complete text**, six publisher TOC gaps)','1938–1943 (24 issues, 773 items, **2 page-verified complete texts**, six publisher TOC gaps)','readme coverage row'),
+          ('772 metadata-only rows plus 1 page-verified complete row; 12 acquisition-only technical-depth flags','771 metadata-only rows plus 2 page-verified complete rows; 12 acquisition-only technical-depth flags','readme inventory row')]: s=once(s,old,new,label)
+          readme.write_text(s,encoding='utf-8')
+
+          with inv.open(encoding='utf-8',newline='') as f: rr=list(csv.DictReader(f,delimiter='\t'))
+          verified=[r for r in rr if r['full_text_status'].startswith('page-verified complete')]; meta=[r for r in rr if r['full_text_status']=='metadata only; full text not reached']; flagged=[r for r in rr if r['technical_depth_availability']=='technical-depth potentially sufficient']; fv=[r for r in flagged if r['full_text_status'].startswith('page-verified complete')]
+          assert len(rr)==773 and len(verified)==2 and len(meta)==771 and len(flagged)==12 and len(fv)==2
+          assert {r['exact_title'] for r in fv}=={'A system of axiomatic set theory. Part IV. General set theory','A formulation of the simple theory of types'}
+          assert any('Part III.' in r['exact_title'] and r['full_text_status']=='metadata only; full text not reached' for r in rr) and any('Part V.' in r['exact_title'] and r['full_text_status']=='metadata only; full text not reached' for r in rr)
+          ct=cert.read_text(encoding='utf-8'); mt=man.read_text(encoding='utf-8'); cv=cov.read_text(encoding='utf-8'); rt=readme.read_text(encoding='utf-8')
+          assert 'certificate_state: part_i_fixed_part_ii_unattested' in ct and 'enumeration_permitted: false' in ct and '**Part II remains UNATTESTED and enumeration remains blocked.**' in ct
+          assert 'candidate_enumeration: false' in mt and 'part_ii_attested: false' in mt and 'candidate_enumeration: false' in cv and 'part_ii_attested: false' in cv
+          assert 'remaining 10 flagged primary texts plus the eight immediately linked reviews' in cv and '27 page-verified complete items' in cv and '2,876 rows remain metadata-only' in cv
+          assert 'CHURCH1940-SIMPLE-TYPES' in mt and SHA in mt and '27 items are page-verified complete' in rt
+          print('CHURCH1940_WRITEBACK_V3_OK')
+          PY
+          git diff --check
+          test "$(git diff --name-only | wc -l)" -eq 5
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv Philosophy/Papers/Forcing_CH_Evidence/README.md
+          git commit -m 'Archive: page-verify Church 1940 acquisition'
+          git push origin HEAD:phase8b/jsl-1938-1943-church1940-acquisition-20260904
