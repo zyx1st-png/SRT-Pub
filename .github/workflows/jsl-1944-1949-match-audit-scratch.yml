@@ -1,35 +1,105 @@
-name: JSL Sweep Taxonomy Profile Scratch
+name: JSL 1944-1949 Strict Mapping Dry Run
 
 on:
   push:
 
 jobs:
-  profile:
+  audit:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
           ref: phase8b/jsl-1944-1949-archive-assembly-20260904
-      - name: Profile existing inventory vocabularies
+      - name: Map Crossref rows to publisher sections without fuzzy matching
         shell: bash
         run: |
+          python -m pip -q install requests beautifulsoup4
           python - <<'PY'
-          import csv, collections, pathlib
-          base=pathlib.Path('Philosophy/Papers/Forcing_CH_Evidence')
-          files=[base/'CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv',base/'CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv']
-          for f in files:
-              rows=list(csv.DictReader(f.open(encoding='utf-8'),delimiter='\t'))
-              print('\nFILE',f.name,'ROWS',len(rows))
-              for col in ['document_type','subfield','contemporaneous_review_status','technical_depth_availability','target_line_exclusion_status','full_text_status']:
-                  c=collections.Counter(r[col] for r in rows)
-                  print('COL',col)
-                  for k,v in c.most_common(): print(v,repr(k))
-              print('OTHER_TYPE_EXAMPLES')
-              for r in rows:
-                  if r['document_type'] not in {'primary technical publication','review'}:
-                      print(repr(r['document_type']),repr(r['exact_title']),r['publication_year'],r['volume'],r['issue'],r['pages'])
-              print('TARGET_EXCLUSION_NONBLANK')
-              for r in rows:
-                  if r['target_line_exclusion_status']:
-                      print(repr(r['target_line_exclusion_status']),repr(r['exact_title']))
+          import re, unicodedata, requests, collections
+          from bs4 import BeautifulSoup
+          H={'User-Agent':'SRT-archive-assembly/0.1 (strict metadata mapping)'}
+          BASE='https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues'
+          def norm(s):
+              s=unicodedata.normalize('NFKD',s or '')
+              s=''.join(c for c in s if not unicodedata.combining(c)).lower()
+              return re.sub(r'[^a-z0-9]+',' ',s).strip()
+          def npage(s):
+              return (s or '').replace('–','-').replace('—','-').replace(' ','').lower()
+
+          # Crossref fixed block
+          u=('https://api.crossref.org/journals/0022-4812/works?'
+             'filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000')
+          rr=requests.get(u,headers=H,timeout=90); rr.raise_for_status()
+          xs=[]
+          for x in rr.json()['message']['items']:
+              title=(x.get('title') or [''])[0]
+              auth=[]
+              for a in x.get('author') or []:
+                  nm=' '.join(z for z in [a.get('given',''),a.get('family','')] if z).strip()
+                  if nm: auth.append(nm)
+              xs.append({'vol':str(x.get('volume') or ''),'iss':str(x.get('issue') or ''),'page':npage(x.get('page') or ''),
+                         'title':title,'nt':norm(title),'doi':x.get('DOI') or '','author':'; '.join(auth)})
+
+          # Publisher issue list
+          ar=requests.get(BASE,headers=H,timeout=90); ar.raise_for_status()
+          soup=BeautifulSoup(ar.text,'html.parser'); current=None; found=[]
+          for a in soup.find_all('a'):
+              text=' '.join(a.stripped_strings)
+              m=re.search(r'(1949-1950|1948|1947|1946|1945|1944)\s*-\s*Volume\s+(14|13|12|11|10|9)',text)
+              if m: current=(m.group(1),m.group(2)); continue
+              im=re.search(r'Issue\s+(\d+)',text); href=a.get('href') or ''
+              if current and im and '/issue/' in href:
+                  found.append((current[1],im.group(1),requests.compat.urljoin(BASE,href)))
+              if current and re.search(r'1943\s*-\s*Volume\s+8',text): current=None
+          seen=set(); issues=[]
+          for vol,iss,url in found:
+              if (vol,iss) in seen: continue
+              seen.add((vol,iss))
+              if vol=='14' and iss=='4': continue
+              issues.append((vol,iss,url))
+
+          cards=[]
+          for vol,iss,url in issues:
+              r=requests.get(url,headers=H,timeout=90); r.raise_for_status(); s=BeautifulSoup(r.text,'html.parser')
+              nums=[int(m.group(1)) for a in s.find_all('a') for m in [re.search(r'[?&]pageNum=(\d+)',a.get('href') or '')] if m]
+              maxp=max(nums) if nums else 1
+              seen_cards=set()
+              for pn in range(1,maxp+1):
+                  p=requests.get(url+f'?pageNum={pn}',headers=H,timeout=90); p.raise_for_status(); ps=BeautifulSoup(p.text,'html.parser')
+                  sec=''
+                  for el in ps.select('h4.journal-article-listing-type, div.product-listing-with-inputs-content'):
+                      if el.name=='h4': sec=' '.join(el.stripped_strings); continue
+                      a=el.select_one('li.title h3 a.part-link')
+                      if not a: continue
+                      for sup in a.find_all('sup'): sup.decompose()
+                      title=' '.join(a.stripped_strings).strip(); txt=' '.join(el.stripped_strings)
+                      pm=re.search(r'\bpp?\.\s*([ivxlcdm\d]+(?:\s*[–-]\s*[ivxlcdm\d]+)?)',txt,re.I)
+                      page=npage(pm.group(1)) if pm else ''
+                      key=(vol,iss,norm(title),page,sec)
+                      if key in seen_cards: continue
+                      seen_cards.add(key)
+                      cards.append({'vol':vol,'iss':iss,'title':title,'nt':norm(title),'page':page,'section':sec,'full':txt,'nf':norm(txt)})
+
+          byissue=collections.defaultdict(list)
+          for c in cards: byissue[(c['vol'],c['iss'])].append(c)
+          resolved=[]; unresolved=[]
+          for x in xs:
+              cs=byissue[(x['vol'],x['iss'])]
+              exact=[c for c in cs if c['nt']==x['nt']]
+              if exact and len(set(c['section'] for c in exact))==1:
+                  resolved.append((x,exact[0]['section'],'exact_title')); continue
+              emb=[c for c in cs if x['nt'] and x['nt'] in c['nf']]
+              if emb and len(set(c['section'] for c in emb))==1:
+                  resolved.append((x,emb[0]['section'],'embedded_title')); continue
+              pg=[c for c in cs if x['page'] and c['page']==x['page']]
+              if pg and len(set(c['section'] for c in pg))==1:
+                  resolved.append((x,pg[0]['section'],'unique_page_section')); continue
+              unresolved.append((x,[(c['section'],c['title'],c['page']) for c in pg[:5]]))
+
+          print('CROSSREF',len(xs),'CARDS',len(cards),'ISSUES',len(issues))
+          print('METHOD_COUNTS',dict(collections.Counter(m for _,_,m in resolved)))
+          print('SECTION_COUNTS',dict(collections.Counter(s for _,s,_ in resolved)))
+          print('RESOLVED',len(resolved),'UNRESOLVED',len(unresolved))
+          for x,hits in unresolved:
+              print('UNRESOLVED',x['vol'],x['iss'],x['page'],x['doi'],repr(x['author']),repr(x['title']),'PAGE_HITS',hits)
           PY
