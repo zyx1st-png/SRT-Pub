@@ -2,7 +2,8 @@
 id: SRT-PHILOSOPHY-README
 type: index
 tags: [Philosophy, Index, Reading Guide, Claim Hygiene]
-status: active_v4
+status: active
+version: v4
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide

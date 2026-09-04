@@ -16,7 +16,8 @@ tags:
   - Public-OnePager
   - Domain-Reconstruction
   - Epistemology
-status: active_v8
+status: active
+version: v8
 layer: meta
 epistemic_layer: bridge
 claim_mode: index
