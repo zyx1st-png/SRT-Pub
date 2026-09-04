@@ -1,23 +1,23 @@
-name: JSL 1944-1949 Cambridge Crossref Match Audit Scratch
+name: JSL 1944-1949 Residual Section Resolver Scratch
 
 on:
   push:
 
 jobs:
-  audit:
+  resolve:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
           ref: phase8b/jsl-1944-1949-archive-assembly-20260904
-      - name: Build publisher-native section map and audit matches
+      - name: Resolve Crossref records embedded inside Cambridge cards
         shell: bash
         run: |
           python -m pip -q install requests beautifulsoup4
           python - <<'PY'
           import re, unicodedata, requests
           from bs4 import BeautifulSoup
-          from collections import Counter, defaultdict
+          from collections import defaultdict, Counter
           from difflib import SequenceMatcher
 
           H={'User-Agent':'SRT-archive-assembly/0.1 (fixed-boundary metadata sweep)'}
@@ -26,22 +26,17 @@ jobs:
           def norm(s):
               s=unicodedata.normalize('NFKD', s or '')
               s=''.join(c for c in s if not unicodedata.combining(c)).lower()
-              s=s.replace('`','').replace('’',"'").replace('“','"').replace('”','"')
               return re.sub(r'[^a-z0-9]+',' ',s).strip()
 
-          # Crossref fixed block
-          url=('https://api.crossref.org/journals/0022-4812/works?'
-               'filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000')
-          rr=requests.get(url,headers=H,timeout=90); rr.raise_for_status()
-          cross=rr.json()['message']['items']
+          crurl=('https://api.crossref.org/journals/0022-4812/works?'
+                 'filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31&rows=1000')
+          raw=requests.get(crurl,headers=H,timeout=90); raw.raise_for_status()
           cr=[]
-          for x in cross:
+          for x in raw.json()['message']['items']:
               title=(x.get('title') or [''])[0]
-              page=str(x.get('page') or '')
-              cr.append({'vol':str(x.get('volume') or ''),'iss':str(x.get('issue') or ''),'page':page,
-                         'title':title,'nt':norm(title),'doi':x.get('DOI') or ''})
+              cr.append({'vol':str(x.get('volume') or ''),'iss':str(x.get('issue') or ''),
+                         'page':str(x.get('page') or ''),'title':title,'nt':norm(title),'doi':x.get('DOI') or ''})
 
-          # Cambridge issue discovery
           allr=requests.get(BASE,headers=H,timeout=90); allr.raise_for_status()
           soup=BeautifulSoup(allr.text,'html.parser')
           current=None; found=[]
@@ -61,7 +56,7 @@ jobs:
               if vol=='14' and iss=='4': continue
               issues.append((vol,iss,u))
 
-          cards=[]; section_counts=Counter(); per_issue=Counter()
+          cards=[]
           for vol,iss,u in issues:
               r=requests.get(u,headers=H,timeout=90); r.raise_for_status()
               s=BeautifulSoup(r.text,'html.parser')
@@ -74,58 +69,65 @@ jobs:
                   current_sec=''
                   for el in ps.select('h4.journal-article-listing-type, div.product-listing-with-inputs-content'):
                       if el.name=='h4':
-                          current_sec=' '.join(el.stripped_strings)
-                          continue
+                          current_sec=' '.join(el.stripped_strings); continue
                       a=el.select_one('li.title h3 a.part-link')
                       if not a: continue
-                      # remove citation/footnote superscripts and take visible title
-                      for sup in a.find_all(['sup']): sup.decompose()
+                      for sup in a.find_all('sup'): sup.decompose()
                       title=' '.join(a.stripped_strings).strip()
                       txt=' '.join(el.stripped_strings)
                       pm=re.search(r'\bpp?\.\s*([ivxlcdm\d]+(?:\s*[–-]\s*[ivxlcdm\d]+)?)',txt,re.I)
-                      page=(pm.group(1).replace(' ','').replace('–','-') if pm else '')
+                      page=pm.group(1).replace(' ','').replace('–','-') if pm else ''
                       key=(norm(title),page,current_sec)
                       if key in seen_card: continue
                       seen_card.add(key)
-                      cards.append({'vol':vol,'iss':iss,'title':title,'nt':norm(title),'page':page,'section':current_sec})
-                      section_counts[current_sec]+=1; per_issue[(vol,iss)]+=1
+                      cards.append({'vol':vol,'iss':iss,'title':title,'nt':norm(title),'page':page,
+                                    'section':current_sec,'full':txt,'nf':norm(txt)})
 
-          print('ISSUES',len(issues),'CROSSREF',len(cr),'CAMBRIDGE_CARDS',len(cards))
-          print('SECTIONS',dict(section_counts))
-          print('PER_ISSUE_CROSSREF_VS_CAMBRIDGE')
-          crn=Counter((x['vol'],x['iss']) for x in cr)
-          for k in sorted(crn,key=lambda z:(int(z[0]),int(z[1]))): print(k,crn[k],per_issue[k])
-
-          # one-to-one match within volume/issue; exact page+high title first, then title exact, then best similarity.
           byci=defaultdict(list)
           for i,c in enumerate(cards): byci[(c['vol'],c['iss'])].append(i)
-          used=set(); matches={}; method=Counter(); scores=[]
+          used=set(); matches={}
           for j,x in enumerate(cr):
               cand=[i for i in byci[(x['vol'],x['iss'])] if i not in used]
               best=None
-              # exact normalized title
               exact=[i for i in cand if cards[i]['nt']==x['nt']]
-              if len(exact)==1: best=exact[0]; meth='title_exact'
+              if len(exact)==1: best=exact[0]
               else:
                   page=[i for i in cand if x['page'] and cards[i]['page']==x['page']]
-                  if len(page)==1:
-                      best=page[0]; meth='page_unique'
+                  if len(page)==1: best=page[0]
                   else:
                       pool=page or cand
-                      scored=[(SequenceMatcher(None,x['nt'],cards[i]['nt']).ratio(),i) for i in pool]
-                      scored.sort(reverse=True)
-                      if scored and scored[0][0]>=0.72:
-                          best=scored[0][1]; meth='similarity'; scores.append(scored[0][0])
+                      scored=sorted([(SequenceMatcher(None,x['nt'],cards[i]['nt']).ratio(),i) for i in pool],reverse=True)
+                      if scored and scored[0][0]>=0.72: best=scored[0][1]
               if best is not None:
-                  used.add(best); matches[j]=best; method[meth]+=1
+                  used.add(best); matches[j]=best
 
-          print('MATCHED',len(matches),'UNMATCHED_CROSSREF',len(cr)-len(matches),'UNMATCHED_CAMBRIDGE',len(cards)-len(used),'METHODS',dict(method))
-          if scores: print('SIMILARITY_MIN',min(scores),'COUNT',len(scores))
-          if len(matches)<len(cr):
-              print('UNMATCHED_CROSSREF_SAMPLE')
-              for j,x in [(j,x) for j,x in enumerate(cr) if j not in matches][:30]: print(x)
-          if len(used)<len(cards):
-              print('UNMATCHED_CAMBRIDGE_SAMPLE')
-              for i,c in [(i,c) for i,c in enumerate(cards) if i not in used][:30]: print(c)
-          print('SECTION_MATCHED_COUNTS',dict(Counter(cards[i]['section'] for i in matches.values())))
+          unresolved=[(j,cr[j]) for j in range(len(cr)) if j not in matches]
+          print('ONE_TO_ONE_UNRESOLVED',len(unresolved))
+          resolved={}; blockers=[]
+          for j,x in unresolved:
+              cand=[cards[i] for i in byci[(x['vol'],x['iss'])]]
+              embedded=[c for c in cand if x['nt'] and x['nt'] in c['nf']]
+              if len(embedded)==1:
+                  resolved[j]=(embedded[0]['section'],'embedded[0]['title'],'embedded[0]['page'],'embedded_text')
+              else:
+                  # page-local fallback only if every matching page card shares one publisher section
+                  page_hits=[c for c in cand if x['page'] and (c['page']==x['page'] or x['page'] in c['full'])]
+                  secs=sorted(set(c['section'] for c in page_hits if c['section']))
+                  if page_hits and len(secs)==1:
+                      resolved[j]=(secs[0],' | '.join(c['title'] for c in page_hits[:3]),' | '.join(c['page'] for c in page_hits[:3]),'page_section')
+                  else:
+                      blockers.append((j,x,[(c['section'],c['title'],c['page']) for c in page_hits[:5]]))
+
+          print('RESIDUAL_RESOLVED',len(resolved),'RESIDUAL_BLOCKERS',len(blockers))
+          for j,x in unresolved:
+              if j in resolved:
+                  sec,ct,cp,meth=resolved[j]
+                  print('RESOLVED',x['vol'],x['iss'],x['page'],x['doi'],repr(x['title']),'SECTION',repr(sec),'METHOD',meth,'CARD',repr(ct),'CARDPAGE',repr(cp))
+          for j,x,hits in blockers:
+              print('BLOCKER',x['vol'],x['iss'],x['page'],x['doi'],repr(x['title']),'PAGE_HITS',hits)
+
+          final_sections=Counter(cards[i]['section'] for i in matches.values())
+          for sec,_,_,_ in resolved.values(): final_sections[sec]+=1
+          print('TOTAL_SECTION_MAPPED',len(matches)+len(resolved),'OF',len(cr))
+          print('FINAL_SECTION_COUNTS',dict(final_sections))
           PY
