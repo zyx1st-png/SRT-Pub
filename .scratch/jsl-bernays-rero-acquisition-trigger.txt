@@ -1,0 +1,1 @@
+verify Bernays parts III-IV-V source objects without committing PDFs
