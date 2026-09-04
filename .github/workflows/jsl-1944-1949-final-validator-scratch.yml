@@ -1,0 +1,68 @@
+name: JSL 1944-1949 Final Inventory Validator Scratch
+
+on:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
+      - name: Validate bounded inventory without mutation
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, collections
+          p='Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv'
+          rows=list(csv.DictReader(open(p,encoding='utf-8'),delimiter='\t'))
+          assert len(rows)==714
+          assert all(len(r)==12 for r in rows)
+          expected={
+            'primary technical publication':62,
+            'review':561,
+            'citation-linkage matter':5,
+            'association record':11,
+            'cover/front/back matter':31,
+            'meeting/bibliographical notice':3,
+            'meeting report':1,
+            'bibliographical notice / unattributed review':19,
+            'errata':12,
+            'review index':3,
+            'correction':2,
+            'meeting abstracts':4,
+          }
+          counts=collections.Counter(r['document_type'] for r in rows)
+          assert dict(counts)==expected, (counts,expected)
+          assert all(r['technical_depth_availability']=='' for r in rows)
+          assert sum(bool(r['target_line_exclusion_status']) for r in rows)==1
+          assert all(r['full_text_status']=='metadata only; full text not reached' for r in rows)
+          years=collections.Counter(r['publication_year'] for r in rows)
+          assert years==collections.Counter({'1944':90,'1945':51,'1946':104,'1947':125,'1948':185,'1949':159}), years
+          issues=collections.Counter((r['publication_year'],r['volume'],r['issue']) for r in rows)
+          assert len(issues)==23
+          review_status=collections.Counter(r['contemporaneous_review_status'] or '<blank>' for r in rows)
+          expected_review={'review-of-record entry reached':561,
+                           'review-of-record entry reached; reviewer metadata absent':19,
+                           'in-block contemporaneous review entry immediately identified':36,
+                           '<blank>':98}
+          assert dict(review_status)==expected_review, (review_status,expected_review)
+          key_expect={
+            'G. F. C. Griss. Idealistische filosofie (Idealistic philosophy). Arnhem1946. 80 pp.':'review',
+            'A. N. Whitehead. Indication, classes, numbers, validation., by A. N. Whitehead, Philosophical Library, New York1947, pp. 313–331.':'review',
+            'A. N. Whitehead. Mathematics. Essays in science and philosophy, by A. N. Whitehead, Philosophical Library, New York1947, pp. 269–288.':'review',
+            'The Problem of Counterfactual Conditionals.':'primary technical publication',
+            'The Problem of Interpreting Modal Logic.':'primary technical publication',
+          }
+          for title,typ in key_expect.items():
+              z=[r for r in rows if r['exact_title']==title]
+              assert len(z)==1 and z[0]['document_type']==typ,(title,z)
+          print('ROWS',len(rows),'ISSUES',len(issues),'YEARS',dict(years))
+          print('DOCUMENT_TYPES',dict(counts))
+          print('REVIEW_STATUS',dict(review_status))
+          print('TECHNICAL_DEPTH_NONBLANK',sum(bool(r['technical_depth_availability']) for r in rows))
+          print('TARGET_FLAGS',sum(bool(r['target_line_exclusion_status']) for r in rows))
+          print('FULL_TEXT_REACHED',sum(r['full_text_status']!='metadata only; full text not reached' for r in rows))
+          print('KEY_BOUNDARIES_OK',len(key_expect))
+          PY
