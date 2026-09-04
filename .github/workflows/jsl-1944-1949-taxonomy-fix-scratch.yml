@@ -1,92 +1,10 @@
-name: JSL 1944-1949 Taxonomy Correction Scratch
+name: JSL 1944-1949 Taxonomy Correction Scratch (disabled)
 
 on:
-  push:
-
-permissions:
-  contents: write
+  workflow_dispatch:
 
 jobs:
-  correct:
+  disabled:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
-          fetch-depth: 0
-      - name: Correct three bibliographic reviews and validate taxonomy
-        shell: bash
-        run: |
-          python - <<'PY'
-          import csv, collections
-          from pathlib import Path
-          p=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv')
-          rows=list(csv.DictReader(p.open(encoding='utf-8'),delimiter='\t'))
-          assert len(rows)==714
-          targets={
-            'G. F. C. Griss. Idealistische filosofie (Idealistic philosophy). Arnhem1946. 80 pp.',
-            'A. N. Whitehead. Indication, classes, numbers, validation., by A. N. Whitehead, Philosophical Library, New York1947, pp. 313–331.',
-            'A. N. Whitehead. Mathematics. Essays in science and philosophy, by A. N. Whitehead, Philosophical Library, New York1947, pp. 269–288.',
-          }
-          hit=[]
-          for r in rows:
-              if r['exact_title'] in targets:
-                  assert r['document_type']=='primary technical publication', (r['exact_title'],r['document_type'])
-                  r['document_type']='review'
-                  r['contemporaneous_review_status']='review-of-record entry reached'
-                  hit.append(r['exact_title'])
-          assert set(hit)==targets, (len(hit),set(hit)^targets)
-
-          # Two genuinely short primary items that share p. 139 remain primary.
-          keep={
-            'The Problem of Counterfactual Conditionals.',
-            'The Problem of Interpreting Modal Logic.',
-          }
-          for title in keep:
-              rs=[r for r in rows if r['exact_title']==title]
-              assert len(rs)==1 and rs[0]['document_type']=='primary technical publication', (title,rs)
-
-          counts=collections.Counter(r['document_type'] for r in rows)
-          expected={
-            'primary technical publication':62,
-            'review':561,
-            'citation-linkage matter':5,
-            'association record':11,
-            'cover/front/back matter':31,
-            'meeting/bibliographical notice':3,
-            'meeting report':1,
-            'bibliographical notice / unattributed review':19,
-            'errata':12,
-            'review index':3,
-            'correction':2,
-            'meeting abstracts':4,
-          }
-          assert dict(counts)==expected, (counts,expected)
-          assert all(r['technical_depth_availability']=='' for r in rows)
-          assert sum(bool(r['target_line_exclusion_status']) for r in rows)==1
-          review_status=collections.Counter(r['contemporaneous_review_status'] or '<blank>' for r in rows)
-          assert review_status['review-of-record entry reached']==561
-          assert review_status['review-of-record entry reached; reviewer metadata absent']==19
-          assert review_status['in-block contemporaneous review entry immediately identified']==36
-          assert review_status['<blank>']==98
-
-          with p.open('w',encoding='utf-8',newline='') as f:
-              w=csv.DictWriter(f,fieldnames=rows[0].keys(),delimiter='\t',lineterminator='\n')
-              w.writeheader(); w.writerows(rows)
-          print('ROWS',len(rows))
-          print('DOCUMENT_TYPES',dict(counts))
-          print('REVIEW_STATUS',dict(review_status))
-          print('TARGET_FLAGS',sum(bool(r['target_line_exclusion_status']) for r in rows))
-          print('TECHNICAL_DEPTH_NONBLANK',sum(bool(r['technical_depth_availability']) for r in rows))
-          PY
-
-          changed="$(git status --porcelain)"
-          echo "$changed"
-          test "$(echo "$changed" | sed '/^$/d' | wc -l)" -eq 1
-          echo "$changed" | grep -F 'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv'
-
-          git config user.name 'zyx1st-png'
-          git config user.email 'zyx1st@gmail.com'
-          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1944_1949_INVENTORY.tsv
-          git commit -m 'Correct bounded JSL 1944-1949 metadata taxonomy'
-          git push origin HEAD:phase8b/jsl-1944-1949-archive-assembly-20260904
+      - run: echo 'Disabled after taxonomy correction landed on the formal Phase-8B branch.'
