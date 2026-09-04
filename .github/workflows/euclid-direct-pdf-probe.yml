@@ -1,0 +1,58 @@
+name: Project Euclid Direct PDF Probe
+
+on:
+  push:
+    branches:
+      - scratch/bernays-saarland-directory-probe-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe direct legacy PDF endpoints for remaining flagged primaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          python - <<'PY'
+          import subprocess, os
+          items=[
+            ('CHWISTEK_HETPER_1938','1183383743','New Foundation of Formal Metamathematics','1','36'),
+            ('PEPIS_1938','1183385430','Ein Verfahren der mathematischen Logik','61','76'),
+            ('REACH_1938','1183385464','The Name Relation and the Logical Antinomies','97','111'),
+            ('FITCH_1938','1183385485','The Consistency of the Ramified Principia','140','149'),
+          ]
+          for key,obj,title,pfirst,plast in items:
+              url=f'https://projecteuclid.org/download/pdf_1/euclid.jsl/{obj}'
+              out=f'/tmp/{key}.bin'
+              fmt="HTTP=%{http_code} TYPE=%{content_type} SIZE=%{size_download} FINAL=%{url_effective}"
+              cp=subprocess.run(['curl','-L','--connect-timeout','20','--max-time','90','-sS','-o',out,'-w',fmt,url],capture_output=True,text=True)
+              print(f'=== {key} ===')
+              print('URL='+url)
+              print(cp.stdout.strip())
+              ft=subprocess.run(['file','-b',out],capture_output=True,text=True).stdout.strip() if os.path.exists(out) else 'MISSING'
+              print('FILE='+ft)
+              if 'PDF document' in ft:
+                  sha=subprocess.run(['sha256sum',out],capture_output=True,text=True).stdout.split()[0]
+                  info=subprocess.run(['pdfinfo',out],capture_output=True,text=True).stdout
+                  pages=''
+                  for line in info.splitlines():
+                      if line.startswith('Pages:'):
+                          pages=line.split(':',1)[1].strip()
+                  print('SHA256='+sha)
+                  print('PDFINFO_PAGES='+pages)
+                  first=subprocess.run(['pdftotext','-f','1','-l','2','-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout.replace('\n',' ')[:1500]
+                  print('FIRST_TEXT='+first)
+                  if pages.isdigit():
+                      last=subprocess.run(['pdftotext','-f',pages,'-l',pages,'-layout',out,'-'],capture_output=True,text=True,errors='ignore').stdout.replace('\n',' ')[:1200]
+                      print('LAST_TEXT='+last)
+              else:
+                  data=open(out,'rb').read(1600) if os.path.exists(out) else b''
+                  print('BODY_PREFIX='+data.decode('utf-8','ignore').replace('\n',' ')[:1200])
+          PY
