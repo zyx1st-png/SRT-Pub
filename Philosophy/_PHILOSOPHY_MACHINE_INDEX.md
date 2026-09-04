@@ -14,7 +14,9 @@ tags:
   - Structural-Turn
   - Automorphism
   - Public-OnePager
-status: active_v7
+  - Domain-Reconstruction
+  - Epistemology
+status: active_v8
 layer: meta
 epistemic_layer: bridge
 claim_mode: index
@@ -36,13 +38,14 @@ dependency:
   - SRT-PHIL-TRADITION-COMPARISON-PH-SS-2026-04-27
   - SRT-PHIL-SUBJECTHOOD-THRESHOLD-INTERFACE-2026-04-27
   - SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29
+  - SRT-EPISTEMOLOGY-RECONSTRUCTION-FRAMEWORK
   - SRT-PHIL-EPISTEMOLOGY-01
   - SRT-PHILOSOPHY-PUBLIC-ONEPAGER-2026-04-27
 machine_summary: >
   Directory-local machine index for the Philosophy folder. Use this file to route SRT philosophy
   queries through the PH-SS hardening sequence, Compact Core v4, axiom guardrails, objection extension,
   ethics guardrails, social/political guardrails, tradition-comparison file, subjecthood threshold
-  interface, phenomenal-structure interface, and public one-pager. It does not define canonical SRT primitives.
+  interface, phenomenal-structure interface, the Architecture-v2 Epistemology Reconstruction Framework, and public one-pager. It does not define canonical SRT primitives.
 ---
 
 # Philosophy Machine Index
@@ -69,6 +72,7 @@ Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
   -> Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md
   -> Philosophy/SRT_Subjecthood_Threshold_Interface.md
   -> Philosophy/SRT_Phenomenal_Structure_Interface.md
+  -> Philosophy/SRT_Epistemology_Reconstruction_Framework.md  # Layer-2 domain problem map for epistemology
   -> Philosophy/SRT_HardProblem_Epistemology.md
   -> Philosophy/SRT_Philosophy_Public_OnePager.md
   -> target owner file
@@ -122,6 +126,7 @@ first/third-person access differences are not automatically metaphysical gaps.
 | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | comparison matrix distinguishing SRT from Kant, phenomenology, Whitehead, pragmatism, constructivism, panpsychism, physicalism, FEP, IIT, GNW, etc. | active_v1 |
 | `SRT_Subjecthood_Threshold_Interface.md` | S0-S6 interface distinguishing selection, anchoring, conscious content, subjecthood, agency, and responsibility-bearing subject; includes depsychologization trap guardrail | active_v1 |
 | `SRT_Phenomenal_Structure_Interface.md` | structural-turn / qualia-space interface distinguishing mathematical model, phenomenal structure, automorphism, conscious content, and subjecthood; introduces stake-gated phenomenal structure | active_v1 |
+| `SRT_Epistemology_Reconstruction_Framework.md` | Architecture-v2 Layer-2 epistemology problem map; E1-E7 families, material re-entry, deep-well queue, and Phase-9.5 writeback boundary | active_v0.1 |
 | `SRT_HardProblem_Epistemology.md` | hard-problem dissolution and epistemology route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims | active_v1 |
 | `SRT_Philosophy_Public_OnePager.md` | public-facing one-page explanation of SRT philosophy; not idealism, not relativism, not panpsychism, still testable | active_v1 |
 
@@ -155,6 +160,7 @@ first/third-person access differences are not automatically metaphysical gaps.
 | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | Need to answer “Is SRT just Kant / phenomenology / Whitehead / constructivism / FEP / IIT / GNW?” |
 | `SRT_Subjecthood_Threshold_Interface.md` | Need to distinguish selection event, `L_1` anchoring, conscious content, subjecthood, agency, and responsibility-bearing subject; use it also when "pure feel" is being detached from access, memory, stake, and bearer continuity. |
 | `SRT_Phenomenal_Structure_Interface.md` | Need to discuss qualia space, structural turn, automorphism, multistable perception, IIT/GNWT/FEP structure, or first-person/third-person bridge without over-reading structure as subjecthood. |
+| `SRT_Epistemology_Reconstruction_Framework.md` | Need the Architecture-v2 epistemology domain map, objectification/bearer declarations, E1-E7 problem families, or deep-well routing. |
 | `SRT_HardProblem_Epistemology.md` | Need hard-problem dissolution, explanatory-gap typing, view-from-nowhere trap, or first/third-person access-route guardrails. |
 | `SRT_Philosophy_Foundations.md` | Need long historical / accumulated argument; beware legacy and duplicate sections. |
 | `_SRT_Phil_Axioms.md` | Need philosophy-domain mapping axioms; read with the PH-SS guardrails companion. |
@@ -189,6 +195,7 @@ first/third-person access differences are not automatically metaphysical gaps.
 | “Does automorphism imply consciousness?” | Phenomenal-structure interface §5/§12 -> Subjecthood interface S0-S6 |
 | “How should SRT read IIT qualia structure?” | Phenomenal-structure interface §6 -> Tradition comparison -> AI consciousness framework |
 | “How should SRT use GNWT / FEP in consciousness?” | Phenomenal-structure interface §7/§8 -> Neuroscience compact cores |
+| “How should SRT reconstruct epistemology / method identity?” | Epistemology Reconstruction Framework -> relevant E1-E7 family -> selected Layer-3/4 owner; for current method-identity pilot use E2/E4 -> Phase-8 charter/audit |
 | “How can SRT be tested?” | Public OnePager -> Compact Core v4 §17 -> Objection extension O-Phil-19 -> Core 24 |
 | “How does SRT treat markets/institutions?” | Public OnePager -> Social Economics Compact Core -> Social-political guardrail -> PH-SS-09/12 |
 | “How does SRT avoid is-ought gap?” | Ethics guardrail -> Objection extension O-Phil-17/20 -> Compact Core §14 |

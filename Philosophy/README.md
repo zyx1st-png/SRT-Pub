@@ -2,13 +2,13 @@
 id: SRT-PHILOSOPHY-README
 type: index
 tags: [Philosophy, Index, Reading Guide, Claim Hygiene]
-status: active_v3
+status: active_v4
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STATUS, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STATUS, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO, SRT-EPISTEMOLOGY-RECONSTRUCTION-FRAMEWORK]
 ---
 
 # SRT Philosophy — Section Guide
@@ -21,6 +21,8 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STAT
 > **2026-04-29 PHENOMENAL STRUCTURE UPDATE**: For qualia-space, automorphism, structural-turn, IIT/GNWT/FEP consciousness-structure, multistable perception, or first-person/third-person bridge questions, route through `SRT_Phenomenal_Structure_Interface.md`. It introduces stake-gated phenomenal structure and stake-gated automorphism as bridge notions, while preserving the subjecthood and consciousness-threshold guardrails.
 
 > **2026-08-23 NAVE PROCESSUAL-BEARER UPDATE**: For process identity, constraint closure, Markov-blanket individuation, history-constituted continuity, or FEP-as-life-principle questions, cross-read `../03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`. It is a P3 owner-subtracted bridge, not a definition source: HEF grading remains with CompactCore/HCLR01, branching identity remains open under PH-IND05, Nave/Mossio constraint closure is not SRT PCC, and Core14 `T-Scale-04` receives scope/antecedent pressure rather than a falsification claim.
+
+> **2026-09-04 EPISTEMOLOGY RECONSTRUCTION UPDATE**: For domain-level questions about knowledge objects, method/proof/model identity, evidence attribution, historical availability, situated inquiry, reasoning/revision, or epistemic institutions, route first through `SRT_Epistemology_Reconstruction_Framework.md`. It is the Architecture-v2 Layer-2 problem map between Constitution and specific epistemic theories/deep wells; it does not replace `SRT_HardProblem_Epistemology.md`, forcing-CH protocols, or mature external epistemology baselines. The current method-identity pilot is parented under E2+E4 (secondary E3+E6).
 
 ## 1. What this section is for
 
@@ -45,6 +47,7 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | 0.3 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 1.5 | `SRT_Phenomenal_Structure_Interface.md` | Bridge for qualia space, phenomenal structure, structural turn, automorphism, IIT/GNWT/FEP structure questions; not a consciousness or subjecthood definition source. |
+| 1.55 | `SRT_Epistemology_Reconstruction_Framework.md` | Architecture-v2 Layer-2 problem map for Epistemology; use before defining a new epistemology deep well or treating `SRT_HardProblem_Epistemology.md` / forcing-CH as the whole domain. |
 | 1.6 | `SRT_HardProblem_Epistemology.md` | Hard-problem dissolution route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims. |
 | 1.7 | `SRT_Philosophy_Agency_Subjecthood_v0_2.md` | Non-canonical synthesis of S5 agency mechanisms and the S5-to-S6 responsibility-position route; the S0-S6 ladder remains owned by the Subjecthood Threshold Interface. |
 | 1.8 | `../03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md` | Nave P3 processual-bearer / constraint-closure / Markov-boundary pressure bridge; route HEF, branching identity, PCC and FEP questions back to their existing owners rather than treating this as a new taxonomy. |
