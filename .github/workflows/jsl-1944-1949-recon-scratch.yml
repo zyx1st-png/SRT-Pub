@@ -1,0 +1,88 @@
+name: JSL 1944-1949 Archive Recon Scratch
+
+on:
+  push:
+
+jobs:
+  recon:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
+      - name: Probe Crossref and Cambridge fixed block
+        shell: bash
+        run: |
+          python -m pip -q install requests beautifulsoup4
+          python - <<'PY'
+          import json, re, requests
+          from collections import Counter, defaultdict
+          from bs4 import BeautifulSoup
+
+          UA = {'User-Agent':'SRT-archive-assembly/0.1 (metadata-only fixed-boundary sweep)'}
+          cr = ('https://api.crossref.org/journals/0022-4812/works'
+                '?filter=from-pub-date:1944-01-01,until-pub-date:1949-12-31'
+                '&rows=1000')
+          r = requests.get(cr, headers=UA, timeout=60)
+          print('CROSSREF_STATUS', r.status_code, 'BYTES', len(r.content))
+          r.raise_for_status()
+          msg = r.json()['message']
+          items = msg['items']
+          print('CROSSREF_TOTAL_RESULTS', msg.get('total-results'), 'RETURNED', len(items))
+
+          dist=Counter()
+          missing=Counter()
+          for x in items:
+              year=None
+              for k in ('published-print','published','issued','created'):
+                  try:
+                      year=x[k]['date-parts'][0][0]
+                      if year: break
+                  except Exception: pass
+              vol=str(x.get('volume',''))
+              issue=str(x.get('issue',''))
+              dist[(year,vol,issue)] += 1
+              for k in ('title','author','volume','issue','page','type','DOI'):
+                  if not x.get(k): missing[k]+=1
+          print('CROSSREF_DISTRIBUTION')
+          for k,v in sorted(dist.items(), key=lambda kv:(str(kv[0][0]),kv[0][1],kv[0][2])):
+              print('DIST', k, v)
+          print('CROSSREF_MISSING', dict(missing))
+          print('CROSSREF_SAMPLE')
+          for x in items[:5]:
+              print(json.dumps({k:x.get(k) for k in ('DOI','title','author','volume','issue','page','type')}, ensure_ascii=False)[:1200])
+
+          url='https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues'
+          c=requests.get(url, headers=UA, timeout=60)
+          print('CAMBRIDGE_ALL_ISSUES_STATUS', c.status_code, 'BYTES', len(c.content))
+          c.raise_for_status()
+          soup=BeautifulSoup(c.text,'html.parser')
+          current=None
+          rec=[]
+          for a in soup.find_all('a'):
+              text=' '.join(a.stripped_strings)
+              m=re.search(r'(1949-1950|1948|1947|1946|1945|1944)\s*-\s*Volume\s+(14|13|12|11|10|9)', text)
+              if m:
+                  current=(m.group(1),int(m.group(2)))
+                  continue
+              href=a.get('href') or ''
+              if current and '/issue/' in href and re.search(r'\bIssue\s+\d+', text):
+                  rec.append((current[0],current[1],text,href))
+              # leave the target block when the next historical volume marker is encountered
+              if current and re.search(r'1943\s*-\s*Volume\s+8', text):
+                  current=None
+          # dedupe preserving order
+          seen=set(); issues=[]
+          for z in rec:
+              if z[3] in seen: continue
+              seen.add(z[3]); issues.append(z)
+          # volume 14 issue 4 is Jan 1950 and must not enter this block
+          issues=[z for z in issues if not (z[1]==14 and re.search(r'Issue\s+4',z[2]))]
+          print('CAMBRIDGE_TARGET_ISSUES', len(issues))
+          for yr,vol,text,href in issues:
+              full=requests.compat.urljoin(url,href)
+              q=requests.get(full,headers=UA,timeout=60)
+              pm=re.search(r'Page\s+1\s+of\s+(\d+)', q.text)
+              print('ISSUE',yr,vol,text,'STATUS',q.status_code,'BYTES',len(q.content),'PAGES',pm.group(1) if pm else '?','URL',full)
+          PY
