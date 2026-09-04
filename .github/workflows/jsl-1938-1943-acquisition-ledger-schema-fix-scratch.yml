@@ -1,0 +1,86 @@
+name: JSL 1938-1943 Acquisition Ledger Schema Fix Scratch
+
+on:
+  push:
+    branches:
+      - scratch/epistemology-material-scan-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Separate linked-review and acquisition-status columns
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md')
+          s=p.read_text(encoding='utf-8')
+          start=s.index('### 4.5 Minimal full-text acquisition list')
+          end=s.index('\n### ', start+10)
+          sec=s[start:end]
+          lines=sec.splitlines()
+          header='| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review |'
+          sep='|---|---|---|---|---|'
+          assert lines.count(header)==1
+          hi=lines.index(header)
+          assert lines[hi+1]==sep
+          lines[hi]=header[:-1]+' Acquisition status |'
+          lines[hi+1]='|---|---|---|---|---|---|'
+          row_count=0
+          for i in range(hi+2,len(lines)):
+              line=lines[i]
+              if not line.startswith('| '):
+                  continue
+              cells=[c.strip() for c in line.strip().strip('|').split('|')]
+              if len(cells)!=5:
+                  continue
+              author,title,loc,function,linked=cells
+              status='metadata-only; no current reproducible full-text object acquired in this pass'
+              if author=='Paul Bernays' and 'Part III.' in title:
+                  linked='none immediately identified in this block'
+                  status='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+              elif author=='Paul Bernays' and 'Part IV.' in title:
+                  linked='none immediately identified in this block'
+                  status='**page-verified complete** via Saarland-hosted JSTOR scan; printed pp. 133–145 visually verified; source-object hash recorded above'
+              elif author=='Paul Bernays' and 'Part V.' in title:
+                  linked='none immediately identified in this block'
+                  status='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+              lines[i]='| '+' | '.join([author,title,loc,function,linked,status])+' |'
+              row_count+=1
+          assert row_count==12, row_count
+          sec2='\n'.join(lines)
+          old='The minimal next acquisition pass is therefore these 12 primary texts plus the eight immediately linked reviews, not the whole 773-item block. Acquiring them would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.'
+          new='The minimal next acquisition pass is therefore the remaining 11 flagged primary texts plus the eight immediately linked reviews, not the whole 773-item block. Further acquisition would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.'
+          assert sec2.count(old)==1
+          sec2=sec2.replace(old,new,1)
+          out=s[:start]+sec2+s[end:]
+          p.write_text(out,encoding='utf-8')
+          # Guards: 6-column table, one verified status, III/V blockers, no permission change.
+          t=p.read_text(encoding='utf-8')
+          sub=t[start:t.index('\n### ',start+10)]
+          assert '| Acquisition status |' in sub
+          assert sub.count('**page-verified complete** via Saarland-hosted JSTOR scan')==1
+          assert sub.count('legacy RERO file endpoint returned HTTP 410')==2
+          assert 'remaining 11 flagged primary texts plus the eight immediately linked reviews' in sub
+          assert 'part_ii_attested: false' in t
+          assert 'candidate_enumeration: false' in t
+          print('LEDGER_SCHEMA_FIX_OK')
+          PY
+          git diff --check
+          test "$(git diff --name-only | wc -l)" -eq 1
+          test "$(git diff --name-only)" = 'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md
+          git commit -m 'Archive: separate acquisition status from review linkage'
+          git push origin HEAD:phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
