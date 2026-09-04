@@ -1,0 +1,80 @@
+name: Epistemology Framework Matrix Fix Scratch
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: epistemology/domain-reconstruction-framework-20260904
+      - name: Add owner-relation field and name checked material logs
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Philosophy/SRT_Epistemology_Reconstruction_Framework.md')
+          s = p.read_text(encoding='utf-8')
+
+          old_log = '| Material Log / recent material indices | checked as provenance/routing surfaces | no log entry is treated as source evidence |'
+          new_log = '| Material Log / recent material indices | checked: `Operations/_SRT_MATERIAL_LOG.md` plus relevant July/August split logs (`2026-07_Part01`, `2026-08_Part02`, `2026-08_Part04`, `2026-08_Part06`) | used to verify Pipeline-1 routing/status; no log entry is treated as source evidence |'
+          if old_log not in s:
+              raise SystemExit('material-log row anchor not found')
+          s = s.replace(old_log, new_log, 1)
+
+          start = s.index('### 5.2 Direct / adjacent SourceCard re-entry matrix')
+          end = s.index('### 5.2a Broad-scan false-positive disposition')
+          block = s[start:end]
+          header = '| Source / asset | Source-native contribution / safe use | Framework slot | Role | Disposition | Reason / blocker |'
+          sep = '|---|---|---|---|---|---|'
+          if header not in block or sep not in block:
+              raise SystemExit('source matrix header anchor not found')
+          block = block.replace(header, '| Source / asset | Source-native contribution / safe use | Framework slot | Role | Owner relation | Disposition | Reason / blocker |', 1)
+          block = block.replace(sep, '|---|---|---|---|---|---|---|', 1)
+
+          owners = {
+              'Frank/Gleiser/Thompson': 'partly owned — broad Philosophy / objectification',
+              'Wolchover / Quanta': 'not an SRT increment question / B-watchlist',
+              'Wayne Wu': 'already owned — PH-AG02',
+              'Amir Sulic': 'already owned — PH-AG03; agency-adjacent',
+              'Ryan Simonelli': 'already owned — PH-SEM01',
+              'Konstantinos Georgatos': 'unresolved overlap; no full-text owner promotion',
+              'Chris Sawyer': 'already owned — governance SUB01',
+              'Raja Rosenhagen': 'unresolved overlap; abstract-only',
+              'Robert DiSalle': 'already owned — PH-METH02',
+              'Jocelyn Wang': 'already owned — PH-MEM01',
+              'Nagase / McDowell': 'already owned — PH-PER01',
+              'Amornbunchornvej': 'partly owned — attention/disagreement patch family',
+              'Quanta — AI reasoning': 'already owned — primary AI material',
+              'Schulte': 'already owned — PH-MR01',
+              'Heil': 'already owned — PH-METH01 / Core bridge hygiene',
+              'Fjelland / IAI': 'not an SRT increment question / B-watchlist',
+          }
+
+          out=[]
+          for line in block.splitlines():
+              if line.startswith('| ') and not line.startswith('| Source / asset') and not line.startswith('|---'):
+                  key = next((k for k in owners if k in line), None)
+                  if key:
+                      parts=line.split('|')
+                      # ['', source, contribution, slot, role, disposition, reason, '']
+                      if len(parts) != 8:
+                          raise SystemExit(f'unexpected matrix row shape: {line}')
+                      parts.insert(5, f' {owners[key]} ')
+                      line='|'.join(parts)
+              out.append(line)
+          block='\n'.join(out)
+          s = s[:start] + block + s[end:]
+          p.write_text(s, encoding='utf-8')
+          PY
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Philosophy/SRT_Epistemology_Reconstruction_Framework.md
+          git commit -m "Complete Epistemology material matrix owner relations"
+          git push origin HEAD:epistemology/domain-reconstruction-framework-20260904
