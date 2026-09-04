@@ -214,7 +214,7 @@ having a reason representation != owning/revising the reason
 | Philosophy claim-status / machine index / hardening index | checked | inherited owners and patch status rerouted below |
 | `Materials/2026/` SourceCards | checked with broad repository scan + manual domain screen | broad scan produced 91 lexical high-ish candidates; only direct/adjacent epistemology materials survive the functional relevance screen below |
 | Philosophy patches / hooks | checked | 63 broad lexical active candidates were screened; only families that change epistemic problem structure are routed below |
-| Material Log / recent material indices | checked: `Operations/_SRT_MATERIAL_LOG.md` plus relevant July/August split logs (`2026-07_Part01`, `2026-08_Part02`, `2026-08_Part04`, `2026-08_Part06`) | used to verify Pipeline-1 routing/status; no log entry is treated as source evidence |
+| Material Log / recent material indices | checked: `Operations/_SRT_MATERIAL_LOG.md` plus relevant split logs across May–August (`2026-05_Part01`, `2026-06_Part01`, `2026-07_Part01`, `2026-08_Part02`, `2026-08_Part04`, `2026-08_Part06`) | used to verify Pipeline-1 routing/status; no log entry is treated as source evidence |
 | forcing–CH evidence directory | checked | all 12 current Markdown assets are inventoried below as one grandfathered evidence project |
 | philosophy / method paper strategies | checked | rerouted as inherited Layer-3/4 projects, not Framework owners |
 | relevant audits / open tensions | checked | #889 Phase-8A standing is preserved as an unmerged pilot record; no Case-C credit imported |
@@ -243,6 +243,7 @@ having a reason representation != owning/revising the reason
 | Schulte — representational gradualism | threshold/adjacent-case pressure separates evidence for representation from ontological degree | E1, E2 | representation / individuation pressure | already owned — PH-MR01 | routed | primary philosophy-of-mind owner retained; no general epistemic threshold claim |
 | Heil — emergence critique | explanatory labels can hide mechanism/implementation burden | E3, E6 | explanation-hygiene pressure | already owned — PH-METH01 / Core bridge hygiene | routed | already owned by PH-METH01/Core bridge hygiene; no new epistemology increment |
 | Fjelland / IAI — disunity of science | public philosophy pressure against globalizing local model success into total ontology | E3, E7 | pluralism / model-reality guardrail | not an SRT increment question / B-watchlist | deferred | `B_watchlist` public commentary; useful only as weak pressure, not baseline authority |
+
 ### 5.2a Broad-scan false-positive disposition
 
 The scratch scan intentionally over-generated 91 lexical candidates because words such as `evidence`, `representation`, `memory`, `measurement`, `logic` and `reason` occur throughout the repository. Those 91 are **not** 91 epistemology materials.
@@ -264,38 +265,38 @@ This category-level exclusion is not evidence erasure: upstream SourceCards and 
 
 Framework integration does **not** mark a pending hook as landed.
 
-| Patch / Hook family | Epistemic contribution | Framework family | Disposition |
-|---|---|---|---|
-| PH-AG02 Knowledge-biased selection | reason-content vs structural bias vs readability/revisability | E6 / E5 | integrated; owner/hook status unchanged |
-| PH-AG03 Constitutive commitment | evidence closure vs action/responsibility/narrative closure | E6 / E5 | routed; agency boundary retained |
-| PH-METH02 Constitutive measurement | identification procedure, invariance, revision, local-validity recovery | E1 / E2 / E3 / E4 | integrated as major inherited methodology bridge |
-| PH-MEM01 Objectification history / understanding | past objectification→historical transformation→future objectification + revisability | E1 / E4 / E6 | integrated; understanding not reduced to memory subsystem |
-| PH-SEM01 Bilateral incompatibility | assertion/denial/open remainder/context repair | E1 / E6 | integrated |
-| PH-METH01 Emergence hygiene | explanation label must cash out mechanism/transition/implementation | E3 / E6 | routed; existing Core landing remains owner |
-| PH-PER01 Perceptual learning | history-conditioned salience / reason availability | E4 / E5 / E6 | routed as adjacent epistemic-access pressure |
-| PH-MR01 Representational gradualism | adjacent-case/threshold audit and representation-evidence distinction | E1 / E2 | routed; primary representation owner retained |
-| PH-ATTN01 attention / disagreement family | engagement/weight/attention may differ without representational deficit | E5 / E6 | routed; no truth-from-attention inference |
-| PH-CONSC02 perspectival gap gate | first/third-person descriptions are situated access differences before metaphysical gap claims | E5; primary Consciousness | deferred to Consciousness for phenomenality; retain only position/access guard |
-| `SRT_HardProblem_Epistemology.md` landed/pending CONSC hooks | historical hard-problem support surface | E5 adjacent | keep as inherited local owner; do not use as general Epistemology Framework |
+| Source / asset | Source-native contribution | Framework slot | Role | Owner relation | Disposition | Reason / blocker |
+|---|---|---|---|---|---|---|
+| PH-AG02 Knowledge-biased selection | reason-content vs structural bias vs readability/revisability | E6 / E5 | reasoning / know-how pressure | already owned — PH-AG02 | integrated | preserve current owner/hook state; no move from efficacy to justification/agency without separate evidence |
+| PH-AG03 Constitutive commitment | evidence closure vs action/responsibility/narrative closure | E6 / E5 | uncertainty / commitment bridge | already owned — PH-AG03 | routed | primary agency/subject burden remains adjacent; no epistemic closure theorem |
+| PH-METH02 Constitutive measurement | identification procedure, invariance, revision, local-validity recovery | E1 / E2 / E3 / E4 | method / measurement anchor | already owned — PH-METH02 | integrated | major inherited methodology bridge; constitutive != arbitrary and redescription != path change |
+| PH-MEM01 Objectification history / understanding | past objectification -> historical transformation -> future objectification + revisability | E1 / E4 / E6 | historical precursor / understanding bridge | already owned — PH-MEM01 | integrated | understanding is not reduced to a memory subsystem; distortion/falsity remain live controls |
+| PH-SEM01 Bilateral incompatibility | assertion/denial/open remainder/context repair | E1 / E6 | inferential / revision structure | already owned — PH-SEM01 | integrated | prevents binary closure overread; semantics does not become ontology |
+| PH-METH01 Emergence hygiene | explanatory label must cash out mechanism/transition/implementation | E3 / E6 | explanation guardrail | already owned — PH-METH01 / Core bridge hygiene | routed | existing Core landing remains owner; not a new epistemology increment |
+| PH-PER01 Perceptual learning | history-conditioned salience / reason availability | E4 / E5 / E6 | learning / access pressure | already owned — PH-PER01 | routed | primary perception/agency burden retained; no truth-from-salience inference |
+| PH-MR01 Representational gradualism | adjacent-case/threshold audit and representation-evidence distinction | E1 / E2 | representation / individuation pressure | already owned — PH-MR01 | routed | primary representation owner retained; no universal epistemic threshold |
+| PH-ATTN01 attention / disagreement family | engagement/weight/attention may differ without representational deficit | E5 / E6 | disagreement / attention pressure | partly owned — attention/disagreement family | routed | no truth-from-attention or shared-basis-from-consensus inference |
+| PH-CONSC02 perspectival gap gate | first/third-person descriptions are situated access differences before metaphysical gap claims | E5; primary Consciousness | position / access guardrail | already owned — Consciousness-facing hook family | deferred | phenomenality burden belongs to future Consciousness Framework; retain only access-position guard |
+| `SRT_HardProblem_Epistemology.md` + landed/pending CONSC hooks | local hard-problem epistemic/support surface | E5 adjacent | inherited local theory asset | already owned — hard-problem project | routed | keep as local owner; explicitly not the general Epistemology Framework |
 
 ### 5.4 Forcing–CH project re-entry matrix
 
 All 12 current Markdown assets under `Philosophy/Papers/Forcing_CH_Evidence/` are preserved as one grandfathered Layer-4 project family.
 
-| Asset | Current role | Framework slot | Disposition |
-|---|---|---|---|
-| `METHOD_INDIVIDUATION_PROTOCOL_v0_1.md` | frozen pre-Constitution candidate method rule | E2 / E4 / E3 | preserve; no Constitution novelty credit |
-| `CONTROL_CASE_SELECTION_PROTOCOL_v0_1.md` | selection-verdict independence | E3 / E6 | preserve; strong anti-confirmation-bias control |
-| `CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md` | Part-I boundary fixed, Part-II unattested | E3 / E4 / E7 | preserve as current archive gate |
-| `CONTROL_ARCHIVE_COVERAGE_LOG.md` | corpus coverage state | E3 / E4 | preserve; assembly evidence, not candidate selection |
-| `CONTROL_ARCHIVE_SOURCE_MANIFEST.md` | fixed 1938–1963 corpus boundary | E3 / E4 | preserve |
-| `CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md` | assembled page-verified corpus unit | E3 / E4 | preserve; no selection verdict |
-| `D03_Goedel_Stage_Baseline.md` | historical stage baseline | E2 / E4 | preserve |
-| `D03_Cohen_Event_Baseline.md` | historical/event baseline | E2 / E4 | preserve |
-| `D05_C5op_Goedel_to_Cohen_Audit.md` | operation-change audit | E2 / E4 | preserve as inherited analysis |
-| `D05_Q3_Semantic_Premise_Typing_Note.md` | semantic premise typing | E1 / E3 | preserve |
-| `D05b_Forcing_Representation_and_Method_Family_Audit.md` | forcing representation/method-family audit | E2 / E3 / E4 | preserve as strongest local method-identity asset |
-| `README.md` | evidence-project navigation | all pilot families | preserve as navigation only |
+| Source / asset | Source-native contribution | Framework slot | Role | Owner relation | Disposition | Reason / blocker |
+|---|---|---|---|---|---|---|
+| `METHOD_INDIVIDUATION_PROTOCOL_v0_1.md` | frozen pre-Constitution candidate method rule and six audit tests | E2 / E4 / E3 | method / protocol asset | already owned — forcing–CH evidence project | preserve | no Constitution novelty credit; independent controls still unpaid |
+| `CONTROL_CASE_SELECTION_PROTOCOL_v0_1.md` | selection-verdict independence and control-selection discipline | E3 / E6 | protocol / anti-confirmation guardrail | already owned — forcing–CH evidence project | preserve | control cases cannot be chosen by desired method verdict |
+| `CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md` | fixed Part-I boundary; Part-II adequacy attestations unpaid | E3 / E4 / E7 | archive gate | already owned — forcing–CH evidence project | preserve | blocks enumeration/scoring/selection until Part II is attested |
+| `CONTROL_ARCHIVE_COVERAGE_LOG.md` | records corpus coverage and gaps | E3 / E4 | evidence / coverage ledger | already owned — forcing–CH evidence project | preserve | assembly evidence only; no candidate verdict |
+| `CONTROL_ARCHIVE_SOURCE_MANIFEST.md` | declares the bounded 1938–1963 source corpus | E3 / E4 | evidence / source manifest | already owned — forcing–CH evidence project | preserve | source boundary does not itself prove adequacy |
+| `CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md` | page-verified contemporaneous corpus unit | E3 / E4 | evidence unit | already owned — forcing–CH evidence project | preserve | demonstrates some source adequacy but not global Part-II coverage |
+| `D03_Goedel_Stage_Baseline.md` | historical-stage baseline for Gödel-side practice | E2 / E4 | historical baseline | already owned — forcing–CH evidence project | preserve | historical reconstruction; not Constitution evidence |
+| `D03_Cohen_Event_Baseline.md` | Cohen-event baseline | E2 / E4 | historical baseline | already owned — forcing–CH evidence project | preserve | historical reconstruction; not Constitution evidence |
+| `D05_C5op_Goedel_to_Cohen_Audit.md` | operation-change audit across the Gödel→Cohen line | E2 / E4 | method-family audit | already owned — forcing–CH evidence project | preserve | inherits method-individuation assumptions and must survive controls |
+| `D05_Q3_Semantic_Premise_Typing_Note.md` | types semantic premises used in the project | E1 / E3 | premise / evidence-typing note | already owned — forcing–CH evidence project | preserve | local typing note, not general epistemology theory |
+| `D05b_Forcing_Representation_and_Method_Family_Audit.md` | strongest local audit of forcing representations versus method-family identity | E2 / E3 / E4 | method / representation audit | already owned — forcing–CH evidence project | preserve | closest local Layer-4 asset; cannot retro-credit Constitution |
+| `README.md` | project navigation and evidence-state summary | all pilot families | navigation | already owned — forcing–CH evidence project | preserve | navigation only; no evidential authority |
 
 Current fixed gate remains:
 
