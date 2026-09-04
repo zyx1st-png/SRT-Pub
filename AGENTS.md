@@ -22,10 +22,12 @@ For a fresh AI session inside this repo, read in this order (3 files):
 
 For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new domain deep-dive**, after the 3-file bootstrap above read:
 
-4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
-5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
-6. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
-7. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.
+4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — active post-Constitution architecture.
+5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — compact historical/identity blueprint.
+6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — execution plan as amended by Architecture v2.
+7. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` for new/backfilled domain work.
+8. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`.
+9. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.
 
 Current identity guard:
 
@@ -33,8 +35,15 @@ Current identity guard:
 SRT Constitution
 = bearer-involved perspective framework
 
-Domain research
-= formalization / evidence / proof / testing layer
+Domain Reconstruction Framework
+= Constitution × domain starting picture × inherited SRT assets × materials
+  -> problem-space / objectification / bearer-position / problem families / deep-well queue
+
+Domain Theory / Hypothesis / Model
+= mechanisms / formalisms / proxies / candidate explanations
+
+Deep Well / Evidence
+= bounded test / strongest baseline / Case A-B-C / data / proof / archive
 ```
 
 Do not restart the older `unified ontology -> local formalization -> D2` sequence as the active programme merely because older proposal files contain it. Do not redesign SRT's identity again before the current identity-freeze reopen conditions are met.
