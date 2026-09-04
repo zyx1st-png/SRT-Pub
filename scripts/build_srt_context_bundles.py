@@ -125,7 +125,7 @@ DOMAINS = {
     "Neuroscience": {
         "title": "神经科学领域",
         "guards": ["Neuroscience/SRT_Neuroscience_Claim_Status.md"],
-        "nav": ["Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md", "Neuroscience/README.md"],
+        "nav": ["Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md", "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md", "Neuroscience/README.md"],
         "cores": [
             "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
             "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
