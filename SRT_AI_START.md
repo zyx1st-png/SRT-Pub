@@ -19,16 +19,20 @@ ai_do_not_use_for_definition: true
 
 ## 1. Current one-sentence orientation
 
-**SRT is currently reconstructing its highest layer as a bearer-involved Constitution: a natural-language perspective framework that reopens what is treated as given; formalization, evidence and proof are performed in domain research after units/boundaries/objectification choices are declared.**
+**SRT is currently reconstructing its highest layer as a bearer-involved Constitution: a natural-language perspective framework that reopens what is treated as given; before a domain jumps to specific data, experiments or formal models, an intermediate Domain Reconstruction Framework should organize that domain's Given Ones, objectification choices, bearer/position roles, inherited SRT assets, relevant materials and stable problem families.**
 
 This is a programme identity/orientation, not a new canonical definition.
 
 For current direction read:
 
 1. `STATUS.md §Fast Status`
-2. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
-3. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
-4. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+2. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
+3. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+5. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+6. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` when opening or backfilling a domain framework
+
+Where Architecture v2 conflicts with the 2026-08-29 blueprint or execution plan on the post-Constitution Phase-7-to-10 sequence, Architecture v2 controls that programme sequencing. Constitution v1, canonical owners, claim ladder, Pipeline 1 source-fidelity rules and manuscript carve-outs are unchanged.
 
 ## 2. Current identity guard
 
@@ -40,9 +44,19 @@ Current working separation:
 Constitution
 = perspective / author intuition / reader-entry operation / boundary / problem generation
 
-Domain
-= objectification / formalization / measurement / experiment / statistics / proof / rival comparison
+Domain Reconstruction Framework
+= Constitution × domain starting picture × inherited SRT assets × materials
+  -> Given-Ones inventory / objectification map / bearer-position architecture /
+     stable problem families / deep-well queue
+
+Domain Theory / Hypothesis / Model
+= mechanisms / formalizations / proxies / candidate explanations
+
+Deep Well / Evidence
+= bounded question / strongest baseline / experiment / data / archive / proof / rival comparison
 ```
+
+The Domain Reconstruction Framework is **not** a Domain Constitution and not a domain axiom system. Its job is to reorganize a domain's problem-space before one specific experiment, dataset or favorite theory carries the whole burden.
 
 ### Constitution non-formalization
 
@@ -121,20 +135,39 @@ For Constitution work, recover existing value before greenfield writing:
 
 Use `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md`.
 
-## 5. Domain research guard
+## 5. Domain reconstruction and deep-well guard
 
-A domain deep well should ask:
+Do not jump directly from Constitution v1 to a specific domain dataset, experiment, proof programme or favored external theory when the domain itself has not yet been reconstructed.
+
+For a newly selected domain, use:
 
 ```text
-WHO participates?
-GIVEN ONE?
-What objectification/detachment made it public?
-What changes under SRT re-entry?
-Which old problems reorganize?
-Which new problems become visible?
-Can domain methods test them?
-Does the strongest existing framework already provide the same gain?
+select domain
+-> Pre-framework Material Re-entry Pass
+-> Domain Reconstruction Framework v0.1
+-> author review / scope lock
+-> choose one deep well from the framework queue
+-> deep-well charter
+-> evidence / strongest baseline
+-> productive-adequacy review
+-> Phase 9.5 framework writeback
 ```
+
+A Domain Reconstruction Framework should answer, before the deep well:
+
+```text
+What does the field already treat as Given Ones?
+How do all six Constitution operations translate into domain-native questions?
+What objectification / detachment practices make the field's public objects possible?
+Who/what occupies measurement, causal, historical, behavioral, consequence and phenomenal roles?
+What stable problem families result?
+Where do inherited SRT domain files belong in the new architecture?
+Where do relevant SourceCards / patches / hooks / evidence packets belong?
+Which mature field traditions already own nearby distinctions?
+Which one bounded question is worth a deep well next?
+```
+
+The framework organizes the question-space. It does not by itself establish a causal mechanism, empirical prediction, privileged formalism or SRT superiority claim.
 
 Before an SRT-sensitive domain formalization, consider a Bearer–Objectification Declaration:
 
@@ -152,6 +185,12 @@ participation
 ```
 
 This is a method candidate, not a canonical axiom or universal standard.
+
+### Pilot / grandfather guard
+
+Deep wells opened before the Domain Reconstruction Layer was inserted remain valid pilot records. Do not erase or retroactively rewrite them as if a framework existed first.
+
+Instead, use their results as inputs when backfilling the parent framework. Adverse, null, translation-only and access-blocked outcomes remain part of the record.
 
 ## 6. Current formal/canonical sources remain historically authoritative until audited
 
@@ -246,7 +285,7 @@ Use `Core/SRT_OPEN_TENSIONS.md` when an existing concept is known to remain open
 
 ## 11. Materials and external theory
 
-Pipeline 1 continues.
+Pipeline 1 continues and remains the source-intake / source-fidelity / material-status owner.
 
 External theories/sources may function as:
 
@@ -262,7 +301,49 @@ domain constraint
 
 They do not prove Constitution.
 
-Do not stop source awareness merely because novelty auditing is paused. After author convergence, identify mature neighbors so SRT can inherit existing arguments and failures.
+### Domain Material Re-entry
+
+Once a domain is selected for reconstruction, already processed material must not remain stranded as passive SourceCards / PatchNotes / Hooks.
+
+Before Framework v0.1, recover and route the relevant:
+
+```text
+01_Source_Intuition / book material
+inherited domain owners / claim-status / compact-core
+Materials/YYYY SourceCards
+domain PatchNotes
+IntegrationHooks / landing ledgers
+Material Log / monthly logs
+domain Context Bundle
+Experiments / evidence packets
+relevant audits / OPEN_TENSIONS
+manuscript-local assets where historically relevant
+```
+
+At minimum, all domain-relevant active `high` / `very_high` SourceCards, active PatchNotes / Hooks, obvious inherited owners and directly relevant experiment/evidence assets need an explicit disposition:
+
+```text
+integrated into framework
+routed to a named problem family / deep well
+deferred with named blocker
+excluded with named reason
+```
+
+Silence is not a disposition.
+
+Preserve Pipeline 1's three-layer discipline:
+
+```text
+A — source-derived claim
+B — SRT-side domain synthesis
+C — discriminating SRT claim, if any
+```
+
+The Domain Reconstruction Framework primarily lives at B. C still requires deep-well/rival evidence.
+
+After each deep well, new materials and changed interpretations write back into the framework during Phase 9.5.
+
+Do not stop source awareness merely because novelty auditing is paused. Framework-level neighbor mapping is for competence and routing; strongest-baseline Case A/B/C adjudication remains a deep-well task.
 
 ## 12. Domain increment / subtraction
 
@@ -272,7 +353,8 @@ Their primary future location is:
 
 ```text
 Constitution: red-team / anti-overclaim
-Domain: gate on claims that SRT adds something
+Domain Framework: owner-routing / mature-neighbor awareness, no novelty permission gate
+Deep Well: gate on claims that SRT adds something
 Repository: owner/status consistency
 ```
 
@@ -289,12 +371,15 @@ Do not infer subjecthood, stake or consciousness from performance alone. Do not 
 For non-trivial SRT work:
 
 1. recover current programme identity from `STATUS.md`;
-2. distinguish current historical/canonical authority from prospective Constitution reconstruction;
-3. state whether the claim is Constitution candidate, commentary, domain model, bridge, lab, material evidence or governance;
-4. do not close listed open tensions;
-5. for Constitution, use source recovery + author convergence rather than greenfield generation;
-6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
-7. prefer explicit boundaries to broad unification language.
+2. read `SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` for current post-Constitution sequencing;
+3. distinguish current historical/canonical authority from prospective Constitution reconstruction;
+4. state whether the claim is Constitution, Domain Framework, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
+5. do not close listed open tensions;
+6. for Constitution, use source recovery + author convergence rather than greenfield generation;
+7. for a newly selected domain, do not open a deep well before the Material Re-entry Pass and Domain Reconstruction Framework unless explicitly handling a grandfathered pilot;
+8. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
+9. after a deep well, route reusable distinctions and adverse results back into the parent framework before broadening;
+10. prefer explicit boundaries to broad unification language.
 
 ---
 

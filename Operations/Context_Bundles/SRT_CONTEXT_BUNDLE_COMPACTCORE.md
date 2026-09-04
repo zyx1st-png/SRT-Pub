@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-03
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-04
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-03
-source_commit: d929149a
-source_branch: constitution-v1-core-20260902
+generated: 2026-09-04
+source_commit: 4b930b9e
+source_branch: bootstrap-domain-framework-sync-20260904
 source_dirty: false
-inputs_digest: 1cfdf385b18a4508
+inputs_digest: e7effa9e0b88c287
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,9 +26,9 @@ inputs_digest: 1cfdf385b18a4508
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-03 |
-| 来源 commit | `d929149a` |
-| 来源分支 | `constitution-v1-core-20260902` |
+| 生成日期 | 2026-09-04 |
+| 来源 commit | `4b930b9e` |
+| 来源分支 | `bootstrap-domain-framework-sync-20260904` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
@@ -278,12 +278,15 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 For non-trivial SRT work:
 
 1. recover current programme identity from `STATUS.md`;
-2. distinguish current historical/canonical authority from prospective Constitution reconstruction;
-3. state whether the claim is Constitution candidate, commentary, domain model, bridge, lab, material evidence or governance;
-4. do not close listed open tensions;
-5. for Constitution, use source recovery + author convergence rather than greenfield generation;
-6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
-7. prefer explicit boundaries to broad unification language.
+2. read `SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` for current post-Constitution sequencing;
+3. distinguish current historical/canonical authority from prospective Constitution reconstruction;
+4. state whether the claim is Constitution, Domain Framework, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
+5. do not close listed open tensions;
+6. for Constitution, use source recovery + author convergence rather than greenfield generation;
+7. for a newly selected domain, do not open a deep well before the Material Re-entry Pass and Domain Reconstruction Framework unless explicitly handling a grandfathered pilot;
+8. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
+9. after a deep well, route reusable distinctions and adverse results back into the parent framework before broadening;
+10. prefer explicit boundaries to broad unification language.
 
 ---
 

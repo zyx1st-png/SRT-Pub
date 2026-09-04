@@ -5,15 +5,16 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-29
+updated: 2026-09-04
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
-> **最后更新**：2026-08-29
-> **当前作者级方向**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+> **最后更新**：2026-09-04
+> **当前作者级方向**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
 > **当前执行计划**：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+> **当前领域框架模板**：`Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`
 > **当前治理**：`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
 > **作者源直觉**：`01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md`
 > **历史条目**：`Operations/Status_History/`
@@ -21,6 +22,7 @@ updated: 2026-08-29
 ## Fast Status
 
 - 首读顺序唯一权威仍是 `AGENTS.md §Session Start`。
+- **2026-09-04 Architecture v2 已落 main**：Constitution 与具体 deep well 之间新增 `Domain Reconstruction Framework`；Blueprint §6 仍为紧凑历史前身，新/回填领域工作统一使用 active framework template。
 - **当前第一优先工作线：SRT Constitution + Domain Reconstruction。** 这是一次理论身份/研究方法重构，不是再造一套新 P0/P1，也不是把 2026-08 的 constructive ontology 继续推成新的公理塔。
 - **身份冻结**：在完成 `Constitution v1 + 一个领域 deep well` 之前，不再因为新表述、新模型或 novelty 焦虑重新定义 SRT 是什么。重开只按 GOV-CONST01 的具名 reopen conditions。
 - **Constitution 定位**：最高层是 bearer-involved perspective framework。它提供结构化视角、reader-entry operation、边界和问题生成方式；**不承担形式证明、方程、scalar threshold 或 state-space ontology 的 constitutional authority**。
@@ -29,9 +31,9 @@ updated: 2026-08-29
 - **反身性**：Constitution 自己也从一个位置写出，不享有 God-view exemption。效力标准是 cross-position re-enactability + domain-side productive adequacy，而不是作者位置的绝对权威。`position-indexed access != general epistemic privilege != infallibility`。
 - **A/B 分离**：`A ontological situatedness` 与 `B participatory methodology` 不得自动互推。B 若成立，必须通过 epistemic-preservation bridge：研究 bearer-constituted phenomena 时，方法不能在检验之前先删除可能构成性的 bearer relation。
 - **Constitution 工作流**：已有仓库/材料源恢复 → AI 发散 → 对话中作者收敛 → 内部 circularity/reflexivity 红队 → Neighbor Map（resonance/contrast/pressure/translation，不作 novelty permission gate）→ 作者二次裁决 → Constitution v1 freeze。
-- **领域工作流**：`WHO participates? -> GIVEN ONE -> objectification/detachment -> SRT re-entry -> reorganization -> new problems -> domain test -> domain increment gate`。证明、数学、实验、统计、D2/D3 和 rival comparison 在 domain 侧支付。
+- **领域工作流（Architecture v2）**：`select domain -> Pre-framework Material Re-entry -> Domain Reconstruction Framework v0.1 -> author/scope lock -> one bounded deep well -> strongest-baseline / Case A-B-C -> productive adequacy -> Phase 9.5 framework writeback`。Framework 主要承担 Layer B 的领域重组，不因材料进入框架而自动获得 Layer C / Case C。
 - **统一性的判据改变**：不要求 `P0 -> Physics/Biology/Mind/Society` 形成一个内部 theorem ladder。多个领域独立使用同一 perspective grammar 后若反复得到可承重的同构结构，统一性才作为下游结果出现。
-- **只挖一口深井**：Constitution v1 后先选一个领域做穿，不并行铺开 Physics/Biology/AI/Neuroscience/Consciousness/Social 等全套工作线。Consciousness/Neuroscience 是有积累的候选，但尚未被本状态页预选。
+- **单主井纪律继续有效**：Neuroscience 第一口井作为 grandfathered pilot 保留其 Case B / access-blocked / translation-only 等记录，并允许按具名条件后续重开；Epistemology 已被作者选为第二口主井，但在继续扩展前先补建其 Domain Reconstruction Framework。不得因新 Layer 2 而并行展开多个主 deep-well programme。
 - **Bearer–Objectification Declaration** 是首个 domain-method candidate：模型/研究在需要 SRT-sensitive claim 时声明 unit、boundary、grain、equivalence、normalization、history loss、position loss、bearer substitution、consequence attribution、participation；先在首个 deep well 实用，不先升格为通用标准。
 - **sigma 三探针的新角色**：作为 `premature de-indexing / under-declared objectification` 的仓库内 worked example。E1 表示敏感、E2/E3 trace attribution 不唯一、E4 provenance/control 分离均保留；不得推成“形式化无法承载 indexicality”。见 `Operations/Audits/SRT_SIGMA_PREMATURE_DEINDEXING_WORKED_EXAMPLE_2026-08-29.md`。
 - **2026-08-29 constructive ontology pass 重新定位**：C1–C11 = Constitution 候选语法；C-ONE/C-RET/C-OBJ/C-BEAR/C-PHEN = red-team burden list；dependency map = 编排辅助；不再作为 `unified ontology -> later formalization` 的 active programme authority。
