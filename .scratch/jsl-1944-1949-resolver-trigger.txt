@@ -1,1 +1,1 @@
-trigger bounded JSL 1944-1949 taxonomy correction
+trigger final JSL 1944-1949 inventory validation
