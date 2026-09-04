@@ -1,0 +1,152 @@
+name: JSL 1938-1943 Part IV Acquisition Writeback Scratch
+
+on:
+  push:
+    branches:
+      - scratch/epistemology-material-scan-20260904
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  writeback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Apply bounded acquisition writeback
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          root=Path('Philosophy/Papers/Forcing_CH_Evidence')
+          inv=root/'CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+          cov=root/'CONTROL_ARCHIVE_COVERAGE_LOG.md'
+          man=root/'CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+          cert=root/'CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+          readme=root/'README.md'
+
+          # 1) Inventory: upgrade exactly one row, preserving all other bytes/rows.
+          text=inv.read_text(encoding='utf-8')
+          lines=text.splitlines(keepends=True)
+          hit=0
+          out=[]
+          for line in lines:
+              raw=line.rstrip('\r\n')
+              nl=line[len(raw):]
+              cols=raw.split('\t')
+              if len(cols)==12 and cols[0]=='Paul Bernays' and cols[1]=='A system of axiomatic set theory. Part IV. General set theory':
+                  assert cols[2:6]==['1942','7','4','133-145'], cols
+                  assert cols[9]=='technical-depth potentially sufficient', cols
+                  assert cols[11]=='metadata only; full text not reached', cols
+                  cols[11]='page-verified complete'
+                  raw='\t'.join(cols)
+                  hit+=1
+              out.append(raw+nl)
+          assert hit==1, hit
+          inv.write_text(''.join(out),encoding='utf-8')
+
+          # Helper for exact one-time replacements.
+          def one(s, old, new, label):
+              n=s.count(old)
+              assert n==1, (label,n)
+              return s.replace(old,new,1)
+
+          # 2) Coverage owner: factual counts + existing acquisition ledger.
+          s=cov.read_text(encoding='utf-8')
+          old_row='| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records | Six issue/TOC landing records did not load independently; all 773 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and the full-text layer remain incomplete | **0/67 primary/correction full texts page-verified; 67 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; all remain metadata-only and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; no local full text acquired for this block | Acquire only the 12 functionally flagged primary records and eight immediately linked reviews as a minimal next pass; preserve all candidate and individuation prohibitions. |'
+          new_row='| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records; Bernays Part IV is now page-verified complete | Six issue/TOC landing records did not load independently; 772 item full texts remain unreached; JSL 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and almost the entire full-text layer remain incomplete | **1/67 primary/correction full texts page-verified; 66 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; **1/12** (Bernays Part IV) is page-verified complete, 11 remain metadata-only, and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; one independent public Saarland scan verified for Bernays Part IV | Continue only bounded acquisition of the remaining flagged records and linked reviews; preserve all candidate and individuation prohibitions. |'
+          s=one(s,old_row,new_row,'coverage main row')
+          s=one(s,'Only the existing 25 items in the 1950–1955 block are page-verified complete; **2,878 rows remain metadata-only**.','There are now **26 page-verified complete items** across the three systematic blocks: the existing 25 items in 1950–1955 plus Bernays Part IV in 1938–1943; **2,877 rows remain metadata-only**.','coverage overall counts')
+          heading='### 4.5 Minimal full-text acquisition list\n\nThe following primary records are marked only `technical-depth potentially sufficient`. The flag means that pagination plus a multipart, correction, theorem, or immediately identifiable review chain may support a later removal/replacement audit if the full text is obtained. It is not an admission, comparison, or individuation judgement.\n'
+          note=heading+'\n**Acquisition writeback, 2026-09-04.** Bernays Part IV was acquired from a currently reachable Saarland-hosted JSTOR scan and verified as a 14-page PDF object: one JSTOR metadata cover plus 13 distinct rendered article pages spanning printed pp. 133–145. SHA-256: `e893e6b6717558f343a03223c640fed11d78d8791f6fce7a9b91b02eb2c2ad93`. This is an access/depth upgrade only; no six-test, component-removal, comparison, admission, or individuation judgement was run. Legacy RERO file endpoints identified for Bernays Parts III and V returned HTTP 410 during the same acquisition pass and therefore do not count as current reproducible full-text sources.\n'
+          s=one(s,heading,note,'coverage acquisition note')
+          ls=s.splitlines()
+          changed={'III':0,'IV':0,'V':0}
+          for i,line in enumerate(ls):
+              if line.startswith('| Paul Bernays |') and 'A system of axiomatic set theory. Part III.' in line:
+                  cells=[c.strip() for c in line.strip().strip('|').split('|')]
+                  assert len(cells)==5, cells
+                  cells[-1]='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+                  ls[i]='| '+' | '.join(cells)+' |'; changed['III']+=1
+              elif line.startswith('| Paul Bernays |') and 'A system of axiomatic set theory. Part IV.' in line:
+                  cells=[c.strip() for c in line.strip().strip('|').split('|')]
+                  assert len(cells)==5, cells
+                  cells[-1]='**page-verified complete** via Saarland-hosted JSTOR scan; printed pp. 133–145 visually verified; source-object hash recorded above'
+                  ls[i]='| '+' | '.join(cells)+' |'; changed['IV']+=1
+              elif line.startswith('| Paul Bernays |') and 'A system of axiomatic set theory. Part V.' in line:
+                  cells=[c.strip() for c in line.strip().strip('|').split('|')]
+                  assert len(cells)==5, cells
+                  cells[-1]='metadata-only; legacy RERO file endpoint returned HTTP 410 on 2026-09-04; no current reproducible full-text object acquired'
+                  ls[i]='| '+' | '.join(cells)+' |'; changed['V']+=1
+          assert changed=={'III':1,'IV':1,'V':1}, changed
+          cov.write_text('\n'.join(ls)+'\n',encoding='utf-8')
+
+          # 3) Source manifest: register the verified source object and update the 1938–43 block status.
+          s=man.read_text(encoding='utf-8')
+          marker='## 3. Systematic-sweep metadata sources\n'
+          assert marker in s
+          assert 'BERNAYS1942-AXIOMATIC-SET-THEORY-IV' not in s
+          entry='''### `BERNAYS1942-AXIOMATIC-SET-THEORY-IV`\n\n| Field | Record |\n|---|---|\n| Stable key | `BERNAYS1942-AXIOMATIC-SET-THEORY-IV` |\n| Author | Paul Bernays |\n| Exact title | “A System of Axiomatic Set Theory. Part IV. General Set Theory” |\n| Year | 1942 |\n| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 7(4), pp. 133–145 |\n| Stable record | JSTOR 2268110; DOI 10.2307/2268110 |\n| Source role | `in-window primary publication` |\n| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory metadata fields |\n| Acquisition source | Saarland University public scan: `https://w2.cs.uni-saarland.de/op/fullpaper/settheory/BernaysGeneralSetTheory.pdf` |\n| Full-text/page-verification status | **VERIFIED — complete article**. The current source returned HTTP 200 / `application/pdf`, 300,164 bytes, 14 PDF pages. PDF page 1 is the JSTOR metadata cover; PDF pages 2–14 are 13 distinct rendered article pages, visually checked at the boundaries as printed p. 133 and p. 145. SHA-256: `e893e6b6717558f343a03223c640fed11d78d8791f6fce7a9b91b02eb2c2ad93`. |\n| Exact locations used | Entire pp. 133–145 only for completeness/page-boundary verification in this acquisition pass; no substantive passage was selected for a method-identity judgement. |\n| Evidentiary function | Upgrades one acquisition-only technical-depth record from metadata-only to a complete page-verified primary source; establishes access/depth capacity for this record only. |\n| Limitations | No six-test audit, component-removal/replacement analysis, method-family comparison, candidate admission, scoring, ranking, selection, or individuation judgement was performed. The PDF/page images are not committed to the repository. |\n\n'''
+          s=s.replace(marker,entry+marker,1)
+          pattern=r'(### `JSL-CAMBRIDGE-1938-1943-ISSUES`\n.*?)(?=\n### `|\n## )'
+          m=re.search(pattern,s,flags=re.S)
+          assert m, '1938 source section missing'
+          sec=m.group(1)
+          full_lines=[x for x in sec.splitlines() if x.startswith('| Full-text status |')]
+          assert len(full_lines)==1, full_lines
+          new_line='| Full-text status | **1** item full text is now page-verified complete through the separately registered Bernays Part IV source; the other 772 rows remain metadata-only |'
+          sec2=sec.replace(full_lines[0],new_line)
+          s=s[:m.start(1)]+sec2+s[m.end(1):]
+          man.write_text(s,encoding='utf-8')
+
+          # 4) Adequacy certificate: factual counts only; Part II remains unattested.
+          s=cert.read_text(encoding='utf-8')
+          s=one(s,'- 1938–1943: 24 issues, 773 rows, 0 page-verified complete texts, six publisher TOCs independently unconfirmed;','- 1938–1943: 24 issues, 773 rows, **1 page-verified complete text** (Bernays Part IV), 772 metadata-only rows, six publisher TOCs independently unconfirmed;','certificate block count')
+          s=one(s,'only 25 rows across those 2,903 are page-verified complete','only **26 rows** across those 2,903 are page-verified complete','certificate total count')
+          cert.write_text(s,encoding='utf-8')
+
+          # 5) Evidence README: keep summary/read-order current.
+          s=readme.read_text(encoding='utf-8')
+          s=one(s,'only the existing 25 items in the 1950–1955 block are page-verified complete, **2,878 rows remain metadata-only**','**26 items are page-verified complete** (25 in 1950–1955 plus Bernays Part IV in 1938–1943), **2,877 rows remain metadata-only**','README total counts')
+          s=one(s,'the two earlier blocks add **0** page-verified texts','the 1944–1949 block adds 0 page-verified texts, while the 1938–1943 block now adds **1** page-verified text (Bernays Part IV)','README manifest summary')
+          # Update the 1938 inventory summary if the exact phrase is present once.
+          old='773 metadata-only rows; 12 acquisition-only technical-depth flags'
+          if old in s:
+              s=one(s,old,'772 metadata-only rows plus 1 page-verified complete row; 12 acquisition-only technical-depth flags', 'README 1938 inventory summary')
+          readme.write_text(s,encoding='utf-8')
+
+          # Final guards.
+          assert 'part_ii_attested: false' in cov.read_text(encoding='utf-8')
+          assert 'part_ii_attested: false' in man.read_text(encoding='utf-8')
+          assert 'part_ii_attested: false' in cert.read_text(encoding='utf-8')
+          assert 'candidate_enumeration: false' in cov.read_text(encoding='utf-8')
+          assert 'candidate_enumeration: false' in man.read_text(encoding='utf-8')
+          print('WRITEBACK_OK')
+          PY
+          allowed=(
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_COVERAGE_LOG.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_SOURCE_MANIFEST.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md'
+            'Philosophy/Papers/Forcing_CH_Evidence/README.md'
+          )
+          mapfile -t changed < <(git diff --name-only)
+          test "${#changed[@]}" -eq 5
+          for f in "${changed[@]}"; do
+            ok=0
+            for a in "${allowed[@]}"; do [[ "$f" == "$a" ]] && ok=1; done
+            [[ "$ok" -eq 1 ]] || { echo "unexpected changed path: $f"; exit 1; }
+          done
+          git diff --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${allowed[@]}"
+          git commit -m 'Archive: page-verify Bernays Part IV acquisition'
+          git push origin HEAD:phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
