@@ -1,0 +1,79 @@
+name: JSL Bernays RERO Acquisition Verify Scratch
+
+on:
+  push:
+    paths:
+      - '.scratch/jsl-bernays-rero-acquisition-trigger.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: phase8b/jsl-1938-1943-technical-depth-acquisition-20260904
+          fetch-depth: 1
+      - name: Verify three public repository PDFs as source objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip -q install requests pypdf
+          python - <<'PY'
+          import io, json, re, hashlib, requests
+          from pypdf import PdfReader
+
+          H={'User-Agent':'SRT-control-archive-acquisition/0.2 (source-object verification)'}
+          items=[
+            {
+              'part':'III','url':'https://doc.rero.ch/record/290936/files/S0022481200064185.pdf',
+              'doi':'10.2307/2266303','title':'A system of axiomatic set theory. Part III. Infinity and enumerability. Analysis',
+              'first':'65','last':'89','expected_pages':25,
+            },
+            {
+              'part':'IV','url':'https://doc.rero.ch/record/299316/files/S0022481200063611.pdf',
+              'doi':'10.2307/2268110','title':'A system of axiomatic set theory. Part IV. General set theory',
+              'first':'133','last':'145','expected_pages':13,
+            },
+            {
+              'part':'V','url':'https://doc.rero.ch/record/293193/files/S0022481200062800.pdf',
+              'doi':'10.2307/2271051','title':'A system of axiomatic set theory. Part V. General set theory (continued)',
+              'first':'89','last':'106','expected_pages':18,
+            },
+          ]
+          out=[]
+          for x in items:
+              r=requests.get(x['url'],headers=H,timeout=120)
+              rec={'part':x['part'],'source_url':x['url'],'http_status':r.status_code,'ctype':r.headers.get('content-type',''),'bytes':len(r.content)}
+              r.raise_for_status()
+              rec['pdf_magic']=r.content.startswith(b'%PDF')
+              assert rec['pdf_magic'],rec
+              rec['sha256']=hashlib.sha256(r.content).hexdigest()
+              pdf=PdfReader(io.BytesIO(r.content))
+              rec['pdf_pages']=len(pdf.pages)
+              assert rec['pdf_pages']==x['expected_pages'],(x['part'],rec['pdf_pages'])
+              texts=[]
+              for p in pdf.pages:
+                  texts.append(p.extract_text() or '')
+              first=texts[0]; last=texts[-1]; alltext='\n'.join(texts)
+              def n(s): return re.sub(r'[^a-z0-9]+',' ',s.lower()).strip()
+              # Source-object identity: title stem, author, DOI, and printed boundary pages.
+              rec['author_present']='paul bernays' in n(alltext)
+              rec['doi_present']=x['doi'] in alltext
+              rec['first_printed_page']=bool(re.search(r'(?m)(?:^|\s)'+re.escape(x['first'])+r'(?:\s|$)',first))
+              rec['last_printed_page']=bool(re.search(r'(?m)(?:^|\s)'+re.escape(x['last'])+r'(?:\s|$)',last))
+              stem=n(x['title']).replace(' continued','')
+              rec['title_identity']=all(z in n(first) for z in ['system of axiomatic set theory','part '+x['part'].lower()])
+              assert rec['author_present'] and rec['doi_present'] and rec['title_identity'],rec
+              assert rec['first_printed_page'] and rec['last_printed_page'],rec
+              # Continuity guard: every PDF page must yield text and printed page boundaries must be monotone-compatible.
+              rec['pages_with_text']=sum(bool(t.strip()) for t in texts)
+              assert rec['pages_with_text']==rec['pdf_pages'],rec
+              rec['first_excerpt']=re.sub(r'\s+',' ',first)[:300]
+              rec['last_excerpt']=re.sub(r'\s+',' ',last)[-300:]
+              out.append(rec)
+              print('VERIFIED',json.dumps(rec,ensure_ascii=False,sort_keys=True))
+          print('SUMMARY',json.dumps({'verified':len(out),'parts':[r['part'] for r in out],'total_pdf_pages':sum(r['pdf_pages'] for r in out)},sort_keys=True))
+          PY
