@@ -1,53 +1,10 @@
-name: JSL 1944-1949 Cambridge Parse Probe Scratch
+name: JSL 1944-1949 Cambridge Parse Probe Scratch (disabled)
 
 on:
-  push:
+  workflow_dispatch:
 
 jobs:
-  probe:
+  disabled:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: phase8b/jsl-1944-1949-archive-assembly-20260904
-      - name: Inspect one Cambridge issue DOM and pagination
-        shell: bash
-        run: |
-          python -m pip -q install requests beautifulsoup4
-          python - <<'PY'
-          import re, requests
-          from bs4 import BeautifulSoup, Tag
-          u='https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/C7EC114A63E9E424D6BA3B4E75A65BAB'
-          h={'User-Agent':'SRT-archive-assembly/0.1'}
-          r=requests.get(u,headers=h,timeout=60); r.raise_for_status()
-          soup=BeautifulSoup(r.text,'html.parser')
-          target=soup.find(string=re.compile(r'A set of axioms for logic'))
-          print('TARGET_FOUND', bool(target))
-          node=target.parent if target else None
-          for depth in range(8):
-              if not isinstance(node,Tag): break
-              print('ANCESTOR',depth,'TAG',node.name,'CLASS',node.get('class'),'ID',node.get('id'))
-              print('TEXT', ' '.join(node.stripped_strings)[:800])
-              node=node.parent
-          print('PAGINATION_LINKS')
-          for a in soup.find_all('a'):
-              txt=' '.join(a.stripped_strings)
-              href=a.get('href') or ''
-              if txt in {'1','2','3','4','Next »','Last'} or 'pageNum' in href:
-                  print('PAG',repr(txt),href)
-          print('HEADINGS_NEAR_CONTENT')
-          for tag in soup.find_all(re.compile('^h[1-6]$')):
-              txt=' '.join(tag.stripped_strings)
-              if txt in {'Research Article','Reviews','Errata','Front matter','Other'} or 'Volume 9 - Issue 1' in txt:
-                  print('H',tag.name,tag.get('class'),repr(txt))
-          # page 2 using discovered href
-          href2=None
-          for a in soup.find_all('a'):
-              if ' '.join(a.stripped_strings)=='2' and a.get('href'):
-                  href2=requests.compat.urljoin(u,a.get('href')); break
-          print('PAGE2_URL',href2)
-          if href2:
-              r2=requests.get(href2,headers=h,timeout=60); print('PAGE2_STATUS',r2.status_code,len(r2.content))
-              s2=BeautifulSoup(r2.text,'html.parser')
-              print('PAGE2_HEADINGS',[(' '.join(t.stripped_strings)) for t in s2.find_all(re.compile('^h[1-6]$')) if ' '.join(t.stripped_strings) in {'Research Article','Reviews','Errata','Front matter','Other'}])
-          PY
+      - run: echo 'Disabled after publisher DOM and section probing completed.'
