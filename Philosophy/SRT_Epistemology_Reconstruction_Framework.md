@@ -3,7 +3,7 @@ id: SRT-EPISTEMOLOGY-RECONSTRUCTION-FRAMEWORK
 type: domain_reconstruction_framework
 status: active
 version: v0_1
-record_stage: material_reentry_complete_grandfathered_second_well_parented_pending_889_migration
+record_stage: material_reentry_complete_grandfathered_second_well_landed_phase8b_archive_assembly_open
 date: 2026-09-04
 layer: meta
 epistemic_layer: os
@@ -43,9 +43,9 @@ framework version = v0.1
 constitutional input = Core_Law/SRT_Constitution_V1.md
 framework status = active Layer-2 reconstruction framework
 active main programme well = Epistemology
-current grandfathered pilot = mathematical method-family identity / forcing–CH, presently in Draft PR #889
-pilot Phase-8A standing in #889 = UNRESOLVED + high Case-B pressure; Case C not licensed; archive enumeration NO-GO; bounded archive assembly GO
-pilot migration state = parented here conceptually; charter/audit still require clean migration onto current main
+current grandfathered pilot = mathematical method-family identity / forcing–CH, landed on main via PR #895
+pilot Phase-8A standing on main = UNRESOLVED + high Case-B pressure; Case C not licensed; archive enumeration NO-GO; bounded archive assembly GO
+pilot migration state = complete; Phase 8B bounded fixed-boundary archive assembly is open
 ```
 
 ### 0.1 Scope
@@ -72,7 +72,7 @@ It does **not** settle:
 
 ### 0.2 Grandfathered second-well boundary
 
-Draft PR #889 opened a bounded pilot before Architecture v2 inserted Layer 2. Its study question remains usable:
+Historical Draft PR #889 opened a bounded pilot before Architecture v2 inserted Layer 2. Its valid charter/audit content was cleanly migrated and landed via PR #895. Its study question remains active:
 
 > **When is a mathematical method still the same method?**
 
@@ -306,7 +306,7 @@ candidate enumeration = prohibited
 scoring / ranking = prohibited
 Control A/B selection = prohibited
 control individuation = prohibited
-Draft #889 pilot records bounded archive assembly = GO; actual archive execution remains paused until clean migration lands
+bounded fixed-boundary archive assembly = OPEN on main after PR #895 migration; enumeration / scoring / Control A-B selection / individuation remain blocked pending Part II
 ```
 
 ### 5.5 Material completeness statement
@@ -341,7 +341,7 @@ C — a discriminating SRT epistemology claim
 
 v0.1 primarily performs **B**.
 
-No quantity of SourceCards, patches, archive items or successful forcing analyses licenses **C**. Draft #889 currently records the strongest local verdict as `UNRESOLVED + high Case-B pressure` and `Case C not licensed`.
+No quantity of SourceCards, patches, archive items or successful forcing analyses licenses **C**. The landed Phase-8A audit records the strongest local verdict as `UNRESOLVED + high Case-B pressure` and `Case C not licensed`.
 
 ---
 
@@ -361,7 +361,7 @@ No quantity of SourceCards, patches, archive items or successful forcing analyse
 | `Forcing_CH_Research_Regime_Staged_Draft_EN.md` | manuscript project | downstream manuscript | E2/E4 | preserve; manuscript success != Constitution evidence |
 | `Forcing_Representation_Method_Family_*` | narrow method-family paper assets | downstream manuscript / analysis | E2/E4 | preserve |
 | `Selection_Event_Audit_Method_Paper_Strategy.md` | SRT method/audit paper strategy | adjacent methodology project | E3/E6 | keep separate from forcing pilot |
-| Draft PR #889 charter + Phase-8A audit | second-well pilot under old direct route | grandfathered Layer-4 records awaiting migration | E2/E4 + E3/E6 | preserve result; re-parent and remove duplicated author-decision diff before merge |
+| landed PR #895 charter + Phase-8A audit | second-well pilot originally opened under old direct route | grandfathered Layer-4 records now parented under this Framework | E2/E4 + E3/E6 | preserve result; Phase 8B archive assembly open, enumeration still blocked |
 
 ---
 
@@ -545,14 +545,14 @@ Listing does not make a candidate true.
 ### 10.1 Grandfathered active pilot — method identity across historical / representational change
 
 ```text
-status = Draft PR #889, not yet cleanly landed on current main
+status = LANDED on main via PR #895; grandfathered Layer-4 pilot active
 parent families = E2 + E4; secondary E3 + E6
 study object = mathematical method-family identity
 adversarial test bed = forcing–CH evidence project
 current pilot verdict = UNRESOLVED + high Case-B pressure
 Case C = not licensed
 archive enumeration = NO-GO
-bounded archive assembly = GO in pilot record, pending migration
+bounded archive assembly = OPEN inside the frozen boundary
 ```
 
 Strongest baseline families:
@@ -608,7 +608,7 @@ Every selected future well must receive a Layer-4 strongest-baseline Case A/B/C 
 [x] inherited SRT assets are assigned Layer-2/3/4 roles
 [x] stable E1–E7 problem families exist
 [x] mature neighbors are mapped without novelty permission gate
-[x] grandfathered #889 pilot has explicit parent families E2/E4 (+E3/E6)
+[x] grandfathered pilot migrated via #895 and has explicit parent families E2/E4 (+E3/E6)
 [x] pilot strongest-baseline target and Constitution differential are explicit
 [x] Framework placement licenses no Case-C claim
 ```
@@ -621,7 +621,7 @@ Every selected future well must receive a Layer-4 strongest-baseline Case A/B/C 
 
 ### 12.1 What can already be written into the parent framework
 
-Even before #889 is migrated, its existing Phase-8A draft standing supplies a negative constraint:
+The landed Phase-8A pilot supplies the following negative constraint:
 
 ```text
 method identity cannot be claimed as a Constitution novelty merely because
@@ -652,16 +652,25 @@ route to unresolved tension
 withdraw
 ```
 
-### 12.3 Required #889 migration before further theory expansion
+### 12.3 Migration completion and Phase-8B execution gate
 
-The clean migration should:
+Migration completed in PR #895:
 
-1. preserve the charter and Phase-8A audit as historical pilot records;
-2. remove the duplicated author-sequence diff now already landed through #892;
-3. update dependencies to this Framework and Architecture v2;
-4. replace the old charter's burden of reconstructing the whole domain with an explicit parent-family declaration `E2 + E4 (+ E3/E6)`;
-5. retain `UNRESOLVED + high Case-B pressure`, `Case C not licensed`, `ARCHIVE-ENUMERATION-0 = NO-GO`, and bounded archive-assembly status without retrospective positive credit;
-6. only then resume JSL/archive work.
+1. charter and Phase-8A audit were preserved as historical pilot records;
+2. the duplicated author-sequence diff was not migrated because the Neuroscience reopen decision was already on `main`;
+3. dependencies now point to this Framework and Architecture v2;
+4. the pilot is explicitly parented under `E2 + E4 (+ E3/E6)` rather than reconstructing the whole domain;
+5. `UNRESOLVED + high Case-B pressure`, `Case C not licensed`, `ARCHIVE-ENUMERATION-0 = NO-GO`, and bounded archive-assembly GO were preserved without retrospective positive credit.
+
+Current execution gate:
+
+```text
+bounded fixed-boundary archive assembly = OPEN
+candidate enumeration = BLOCKED pending Part II
+scoring / ranking = BLOCKED pending Part II
+Control A/B selection = BLOCKED pending Part II
+control individuation = BLOCKED pending Part II
+```
 
 ---
 
@@ -679,12 +688,12 @@ active problem families =
   E6 reasoning/commitment/revision/justification
   E7 public stabilization/infrastructure
 
-active main well = grandfathered method-identity / forcing–CH pilot in Draft #889
+active main well = grandfathered method-identity / forcing–CH pilot landed via PR #895
 primary parent = E2 + E4
 secondary parent = E3 + E6
 pilot standing = unresolved / high Case-B pressure / no Case C / archive-enumeration NO-GO
 material re-entry = complete for v0.1 under functional domain screen; lexical false positives explicitly returned to primary owners
 strongest current SRT contribution = problem routing, objectification/position declaration and differential accounting—not a demonstrated epistemology increment
 strongest external pressure = mature epistemology/history/mathematical-practice traditions already own generic construction, history, situated inquiry, evidence and method-identity concerns
-next action = review/land this Framework, then cleanly migrate #889 before resuming Phase-8B archive assembly
+next action = continue Phase-8B fixed-boundary archive assembly / coverage verification; do not enumerate candidates until Part II is honestly attested
 ```
