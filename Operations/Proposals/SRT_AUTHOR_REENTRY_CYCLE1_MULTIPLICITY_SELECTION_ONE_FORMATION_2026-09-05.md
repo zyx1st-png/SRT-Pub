@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-AUTHOR-REENTRY-CYCLE1-MULTIPLICITY-SELECTION-ONE-FORMATION-20260905
 type: proposal
-status: active_working
+status: active
 record_stage: cycle1_bootstrap_calibration
 date: 2026-09-05
 layer: meta
