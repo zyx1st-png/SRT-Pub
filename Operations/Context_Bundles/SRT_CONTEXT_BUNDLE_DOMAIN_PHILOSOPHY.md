@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: f5bb1965
+source_commit: 4b76c9df
 source_branch: theory/author-reentry-cycle1-one-formation-20260905
 source_dirty: false
 inputs_digest: 10c8811b1d3d1bb0
@@ -27,7 +27,7 @@ inputs_digest: 10c8811b1d3d1bb0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `f5bb1965` |
+| 来源 commit | `4b76c9df` |
 | 来源分支 | `theory/author-reentry-cycle1-one-formation-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |

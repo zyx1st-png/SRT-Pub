@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: f5bb1965
+source_commit: 4b76c9df
 source_branch: theory/author-reentry-cycle1-one-formation-20260905
 source_dirty: false
 inputs_digest: 10c8811b1d3d1bb0
