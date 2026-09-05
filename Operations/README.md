@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
-updated: 2026-08-29
+updated: 2026-09-05
 ---
 
 # SRT Operations Hub
@@ -29,39 +29,80 @@ updated: 2026-08-29
 
 使用原则：
 
-- 用它追溯执行节奏、日志、队列、流程状态与结构治理记录
-- 不用它替代理论主文、canonical 定义或符号规范
-- 若与 `CANONICAL_REGISTRY.md` 或 canonical 文件冲突，以后者为准；当前 programme 的执行顺序以 `STATUS.md` + 具名 active plan 为准
+- 用它追溯执行节奏、日志、队列、流程状态与结构治理记录；
+- 不用它替代理论主文、canonical 定义或符号规范；
+- 若与 `CANONICAL_REGISTRY.md` 或 canonical 文件冲突，以后者为准；
+- 当前 reconstruction 执行顺序以 `AGENTS.md` + 2026-09-05 author-reentry amendment + 具名 active plan 为准；
+- Operations 文件不能把 AI synthesis、historical SRT 或 local pilot result 静默写成作者当前 ontology。
 
 raw session / dialogue compilation / residual archives 已下沉到：
 
 - `Archive/raw_sessions/`
 
-## Current Research Programme — 2026-08-29
+## Current Research Programme — 2026-09-05
 
-当前第一优先工作线是 **SRT Constitution + Domain Reconstruction**：
+当前第一优先工作线是 **SRT Author Re-entry + Ontology Reconstruction**，Constitution v1 与 Domain Reconstruction Layer 保留，但重新定位：
 
-1. `Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — 当前身份级蓝图：Constitution = bearer-involved perspective；Domain = formalization/evidence/testing layer。
-2. `Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — 当前唯一 programme execution plan。
-3. `../Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md` — identity freeze、author convergence、reflexivity、Neighbor Map、domain increment 等治理。
-4. `Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` — 基于原仓库/书稿/材料卡/审计恢复 source intuition 的路由。
-5. `../01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md` — 本轮作者身份与方法直觉源记录；非 canonical。
+1. `../01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md` — 最新作者纠偏：节奏过快；bearer 不是全部 ontology。
+2. `../Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — 当前 scope / pace / sequencing 控制。
+3. `Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — Domain Reconstruction Layer 保留，按 2026-09-05 amendment 收紧解释。
+4. `Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — 历史/补充蓝图，不再以 bearer-totalizing shorthand 单独定义当前 programme。
+5. `Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — 原 execution plan，受 Architecture v2 + 2026-09-05 amendment 修正。
+6. `../Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md` — base governance。
+7. `Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` — v2 模板，已把 author provenance / mature-neighbor adaptation / common-problem extraction 前置。
+8. `Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` — source-intuition recovery route。
+9. `../01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md` — earlier author identity/method trace；非 canonical。
 
-核心工作纪律：
+当前核心工作纪律：
 
 ```text
-existing source recovery
+current author question / intuition
+-> source recovery
 -> AI divergence
--> author convergence
+-> bounded mature-neighbor awareness
+-> author provisional convergence
 -> internal red-team
--> Neighbor Map
--> Constitution v1 freeze
--> Core/Core_Law role audit
--> one domain deep well
--> productive-adequacy review
+-> fuller neighbor adaptation / pressure
+-> common-problem extraction
+-> author second adjudication
+-> only then ontology/interface hardening
+-> only then domain-specific discrimination / Case A-B-C when warranted
 ```
 
-在作者收敛前不为每个分支生成理论文件。Constitution 不把 equations/scalars/state-space formalism 作为 authority；domain 侧形式化继续允许。
+Constitution v1 保持 active/canonical reader-interface prototype，但：
+
+```text
+six reader operations
+!= complete SRT ontology
+```
+
+Bearer / position / participation 保留为重要结构，但：
+
+```text
+bearer problem
+!= whole SRT ontology
+```
+
+当前开放 ontology problem field 可包含 multiplicity / unity / Selection / manifestation / persistence / history-writeback / relation-constraint / bearer-position / future selectability / order-convergence / objectification 等问题，但这些不是新 primitive list、层级或已裁决关系。
+
+### Current deep-well hold
+
+现有两口井保留其历史局部结果：
+
+- Neuroscience：Case B / translation-only / access NO-GO 等继续有效；
+- Epistemology：high Case-B pressure / archive NO-GO / evidence infrastructure 等继续有效。
+
+但二者统一按 **early calibration pilots** 解释，不外推为 mature whole-SRT ontology verdict。
+
+在 author re-entry 至少完成一轮并由作者明确放行之前：
+
+```text
+third main deep well = HOLD
+broad cross-domain synthesis = HOLD
+forced Case A/B/C as ontology-formation engine = PROHIBITED
+```
+
+有 bounded stop condition 的 archive / evidence infrastructure 可继续。
 
 ### Superseded active-plan note
 
@@ -86,19 +127,25 @@ existing source recovery
 8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账；长记录读取从 `Material_Log/README.md` 进入）
 9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线；同样执行 O-track / D-track 双轨判定）
 10. `_SRT_ARTICLE_WORKFLOW.md`（文章写作工作流：LLM 发散 / 作者收敛 / 记录轨迹；`2026-07-02` 战略重心转向社媒文章后新增，Pipeline 5 主模式改由此文件定义）
-11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only；Constitution 对话优先复用此纪律）
+11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only；Constitution / ontology 对话优先复用此纪律）
 12. `.agents/skills/srt-humanization-pipeline/SKILL.md`（公共文本三阶段真人化执行层：`shuorenhua → humanizer-zh → stop-slop → protected-spans 核验`；语言通过不等于发布批准）
 
-## Constitution reconstruction workflow reuse
+## Author-reentry workflow reuse
 
 本轮不另造一套“AI—作者”工作流。优先复用现有 ChoiceMap / Choice Trace 的核心分工：
 
 - AI 可以记录发散选项；
 - 作者选择、跳过项、理由、closure boundary 不由 AI 代填；
 - `intuition_mining` / `decision` 可用独立 trace + pointer 模式；
-- Constitution substantive write 发生在 author convergence 之后。
+- substantive ontology / Constitution write 发生在 author convergence 之后。
 
-新增加的要求是：Constitution convergence 后必须做 reflexivity/internal red-team 与 bounded Neighbor Map，再由作者二次裁决。
+新增要求：
+
+- machine review 按角色分工而不是用模型共识代替裁决；
+- strong neighbor 必须先用其自身语言表达；
+- neighbor pressure 可以改变 / 缩小 SRT；
+- 在提出 SRT solution 前先做 common-problem extraction；
+- 只有 bounded、author-owned SRT response 存在时才要求 D-track / Case A-B-C。
 
 ## Connector / large-file safety
 
@@ -126,7 +173,7 @@ O-track = ontological synthesis
 D-track = discriminating / empirical increment
 ```
 
-在当前 Constitution programme 下，O-track 的读取进一步细分为：source-native fact / Constitution resonance-contrast-pressure / domain mechanism or constraint。没有 D-track 独有增量不自动等于材料价值低；但外部结果不能因被纳入 SRT 结构就写成“证明 Constitution”。只有当 SRT 在具体 domain 声称额外预测、不可还原或经验优越时，才进入 D-track 与 bounded rival comparison。
+在当前 author-reentry programme 下，O-track 更强调：source-native fact / mature-neighbor resonance-contrast-pressure-realization / common-problem relevance / domain mechanism or constraint。没有 D-track 独有增量不自动等于材料价值低；但外部结果不能因被纳入 SRT 结构就写成“证明 Constitution / ontology”。只有当作者已形成具体 bounded SRT response，并声称额外预测、不可还原或经验优越时，才进入 D-track 与 bounded rival comparison。
 
 `Operations/_SRT_MATERIAL_LOG.md` 仍是正式状态台账；任何 patch、hook 或 index 的状态若与台账冲突，以台账为准。
 
@@ -142,16 +189,23 @@ D-track = discriminating / empirical increment
 
 当前安全工作优先级改为：
 
-1. Constitution source recovery / author convergence；
-2. index / link / bootstrap hygiene；
-3. bounded red-team / Neighbor Map；
-4. 后续 Core/Core_Law role-reclassification audit；
-5. 首个 domain deep well 前的 scoped pre-audit。
+1. **author re-entry**：围绕开放 ontology 问题进行作者对话与 source recovery；
+2. **mature-neighbor adaptation**：多个强邻居、强反例、source-native problem framing；
+3. **machine red-team refinement**：内部一致性、strong-neighbor advocate、counterexample、relabeling、hidden commitment、author-intent drift；
+4. **common-problem extraction**：先在非 SRT 语言中识别传统视野的重复困难；
+5. **author second adjudication**：决定是否形成 bounded SRT response；
+6. index / link / bootstrap hygiene；
+7. 后续 Core/Core_Law role-reclassification audit；
+8. bounded archive / evidence infrastructure 只在有明确 stop condition 时继续。
 
-不应直接开始：
+当前不应直接开始：
 
 - 在 Constitution 层移动/创造公式、scalar、threshold；
 - 批量重写 frozen owner；
-- 同时开启多个 domain deep-well programme；
-- 因“邻近理论已有”而阻止 author perspective 形成；
-- 因“SRT 视角好用”而跳过 domain strongest-baseline comparison。
+- 开启第三个 domain main deep well；
+- broad cross-domain synthesis；
+- 把 bearer/objectification 当成全部 ontology；
+- 因“邻近理论已有”而阻止 author intuition 形成；
+- 因“SRT 视角好用”而跳过 mature-neighbor adaptation；
+- 在没有 author-owned SRT response 时强迫 Case A/B/C；
+- 因两个 pilot 都有 Case-B pressure 就把 SRT 总体收缩成 methodology。
