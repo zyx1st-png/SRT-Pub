@@ -11,6 +11,7 @@ ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
   - Core_Law/SRT_Constitution_V1.md
+  - Core_Law/SRT_L0_Metaphysics.md
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
 tags: [AuthorTrace, OntologyReconstruction, Bearer, NeighborPressure, DeepWell, Reentry]
 ---
@@ -20,6 +21,8 @@ tags: [AuthorTrace, OntologyReconstruction, Bearer, NeighborPressure, DeepWell, 
 > **性质**：本文件记录作者对 2026-08-29 至 2026-09-04 Constitution + Domain Reconstruction 执行节奏的两项重大纠偏。它不是新的 SRT ontology 定义，不替代 canonical owner，也不把下列开放问题预先裁成答案。
 >
 > **优先级**：后续 AI、治理与领域工作在解释当前 reconstruction programme 时，必须同时读取本文件。若旧 programme 文件把这里明确纠正的内容写成冻结身份或默认执行顺序，应以本次作者纠偏为准，并由治理层显式修正。
+>
+> **Canonical guard**：本文件重开 programme identity 与 ontology reconstruction，不自动重开当前 canonical owner 已经落地的具体承诺。`Core_Law/SRT_L0_Metaphysics.md` 等 active canonical owners 在被作者明确重开并按既有高风险编辑规则修改之前，继续约束本轮 re-entry。作者当前直觉可以压力测试 canonical commitment，但不能由 AI 或本文件的“开放问题”措辞静默降格它。
 
 ## 1. 重大纠偏一：理论形成被推进得过急、过快
 
@@ -59,7 +62,9 @@ Constitution v1 已经给出成熟 SRT ontology
 作者面对新邻居、新反例、新跨领域摩擦后的当前本体裁决
 ```
 
-AI 可以恢复、发散、比较、红队、代理邻近理论和暴露隐含承诺；AI 不得把历史材料的最顺滑综合当作作者当前 ontology。
+这里必须再区分一类不同对象：**当前仍 active 的 canonical owner 不是普通“历史材料”**。它可以有历史来源，也可以在新的作者裁决下被重开，但在正式重开 / 编辑之前仍是当前约束面，不能仅因进入 author re-entry 就被降格成一个与其他候选对称的旧路线。
+
+AI 可以恢复、发散、比较、红队、代理邻近理论和暴露隐含承诺；AI 不得把历史材料的最顺滑综合当作作者当前 ontology，也不得把 current canonical commitment 静默改写成 `OPEN`。
 
 ### 1.2 当前 Constitution 的正确解释
 
@@ -71,13 +76,16 @@ AI 可以恢复、发散、比较、红队、代理邻近理论和暴露隐含�
 
 六条操作是分析入口，不是完整世界分类；它们能够暴露问题，不自动给出完整本体答案。
 
+本次纠偏的直接病灶不是 Constitution v1 文本本身已经把 bearer 总体化。Constitution v1 自己已有“六条不是自然本体模块”、`re-identifiability != bearerhood` 等边界。被纠正的是 programme shorthand、bootstrap/status 表述以及后续执行路径把 `bearer-involved perspective framework` 过度提升为 SRT 的穷尽性总身份，并在实践中让 bearer/objectification 过度代表全部 ontology reconstruction。
+
 ### 1.3 正确的理论推进顺序
 
 当前理论主线应从“尽快寻找 domain increment”退回到更慢的形成顺序：
 
 ```text
 作者重新进入开放本体问题
--> 恢复已有 source intuition / owner / historical answer
+-> 恢复已有 source intuition / current canonical owner / historical answer
+-> 明确哪些是 current canonical constraint，哪些才是真正 open relation
 -> AI 发散与精细红队
 -> 适配多个成熟邻近理论
 -> 识别这些理论在不同视野下反复遇到的共性问题
@@ -122,17 +130,38 @@ order / convergence / higher-order stabilization
 objectification / public representation
 ```
 
-这些项目之间的关系仍需作者裁决。
+这些“问题轴”并不具有相同 epistemic status。某一轴可以同时包含：当前 canonical constraint、作者新直觉、历史来源、AI 组织和真正未决关系。不得因为它被列入 open problem field，就把其中已经落地的 canonical commitment 拉平为开放候选。
 
-特别保留以下未决边界：
+特别区分以下边界：
 
 ```text
-One-formation = Selection ?                 OPEN
-Selection = Order ?                        OPEN
-Selection 是否需要 pre-existing bearer ?  不预设；历史 SRT 中存在 subjectless Selection 路线
-stabilization -> bearer ?                  不预设
-history / write-back -> own-history ?      不自动等同
-objectification problem = world formation? 不自动等同
+One-formation = Selection ?
+  OPEN：二者的精确关系尚未由本次重构裁决。
+
+Selection 是否需要 pre-existing bearer ?
+  CURRENT CANONICAL = NO。
+  `Core_Law/SRT_L0_Metaphysics.md` §一 / 第一命题当前明确：
+  Selection 是无主语的过程，选择者不是 Selection 的前提。
+  如作者未来要重开这一点，必须显式重开 canonical commitment；
+  本文件不把 bearer-presupposing Selection 恢复成对称候选。
+
+Selection = Order ?
+  作为“当前 canonical 术语是否同一”并非裸 OPEN。
+  `Core_Law/SRT_L0_Metaphysics.md` §一 Gate 0 当前明确：
+  `Order / 秩序` 不在 L0 原生承诺内，`选择趋向秩序` 只在 L1 回读层成立；
+  旧的 L0 order-drive 主句已 replace / superseded。
+  OPEN 的只是更深的问题：Selection、非对称累积、稳定化与后来被回读为
+  order / convergence 的结构之间是否存在需要重新表达的关系；
+  这不自动重开当前 L0/L1 层归属，也不授权 `Selection = Order`。
+
+stabilization -> bearer ?
+  OPEN / 不预设。
+
+history / write-back -> own-history ?
+  OPEN / 不自动等同。
+
+objectification problem = world formation ?
+  OPEN / 不自动等同。
 ```
 
 ### 2.2 当前总问题比 bearer 更大
@@ -180,9 +209,11 @@ bearer/history 切片代表了 SRT ontology 全体
 - 不应由该井替完整 SRT ontology 下结论；
 - 不因缺少 immediate Case C 就把 SRT 总体定位收缩为 methodology。
 
+这不是对负面结果的免疫条款。当前 canonical claims 仍可被独立压力测试，两个 pilot 的不利结果也继续保留。暂停的是“把尚未形成的 whole-SRT ontology 强行继续扩井”，不是暂停外部批评或把未来所有负面结果吸收为“理论还没准备好”。HOLD 的可检查退出条件由治理修正案另行固定。
+
 ## 4. 当前暂停 / 保留边界
 
-在新的 author re-entry + neighbor adaptation + common-problem extraction 至少完成一轮之前：
+在新的 author re-entry + neighbor adaptation + common-problem extraction 满足治理修正案的具名 HOLD exit gate 之前：
 
 ```text
 不自动开启第三口主井
@@ -200,6 +231,7 @@ bearer/history 切片代表了 SRT ontology 全体
 作者对话
 内部 / 外部 red-team
 旧 owner / source recovery
+current canonical constraint audit
 ```
 
 ## 5. 本次纠偏没有裁决什么
@@ -208,10 +240,12 @@ bearer/history 切片代表了 SRT ontology 全体
 
 - SRT 的最终 ontology 名称；
 - `Selection` 的最终上位地位；
-- `L0/L1/L2` 在新 ontology 中的最终角色；
-- `Order` 的最终定义；
+- `L0/L1/L2` 在未来重构 ontology 中的最终角色；
+- `Order` 的最终定义或 Selection 与 higher-order order/convergence 的更深关系；
 - `bearer` 的必要充分条件；
 - 任何新 formalism、scalar、threshold 或 domain prediction；
 - Constitution v1 六条是否最终增删或重新排序。
 
-这些必须在后续作者重入与理论压力中逐步形成，而不是由本次治理纠偏代替。
+这里的“没有裁决”不表示当前 canonical owner 已有承诺自动失效。例如 subjectless Selection 与 Order 非 L0 原生承诺仍按当前 L0 canonical 有效，除非作者明确重开并按既有规则修改其 owner。
+
+这些尚未由 current canonical owner 结清的关系，必须在后续作者重入与理论压力中逐步形成，而不是由本次治理纠偏代替。
