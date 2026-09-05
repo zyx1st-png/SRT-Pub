@@ -1,4 +1,4 @@
-name: Szeged Kalmar Ambiguous PDF Quick Probe
+name: Szeged Kalmar Link Context Mapper
 
 on:
   push:
@@ -14,49 +14,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect ambiguous numeric/generic linked PDFs for exact 1939 target
+      - name: Map each linked PDF to surrounding article-page text
         shell: bash
         run: |
           set -euo pipefail
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils >/dev/null
           python - <<'PY'
-          import urllib.request, os, subprocess, hashlib, json
-          base='https://www.inf.u-szeged.hu/kalmar/pdf/'
-          names=['5.pdf','21.pdf','44.pdf','58.pdf','69.pdf','75.pdf','94.pdf','0224kalmar.pdf',
-                 '2_acta_sci.pdf','14_matfiz_lapok_36.pdf','19_matfiz_lapok_41.pdf','29_acta_sci_math_1.pdf','29_acta_sci_math_2.pdf',
-                 '31_acta_sci_math.pdf','32_acta_sci_math_1.pdf','32_acta_sci_math_2.pdf','34_acta_sci_math.pdf','35_act_sci_math.pdf','38_mat_fiz_lapok.pdf','40_acta_sci_math.pdf','43_mta_fizoszt_52.pdf']
+          import urllib.request, urllib.parse, re, html, json
+          page='https://www.inf.u-szeged.hu/kalmar/pages/munkassaga_cikkek.php'
           ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
-          for i,name in enumerate(names,1):
-              url=base+name; path=f'/tmp/q{i}.pdf'
-              try:
-                  req=urllib.request.Request(url,headers={'User-Agent':ua})
-                  with urllib.request.urlopen(req,timeout=45) as r:
-                      b=r.read()
-                  open(path,'wb').write(b)
-              except Exception as e:
-                  print('ROW=',json.dumps({'name':name,'error':repr(e)},ensure_ascii=False)); continue
-              pdf=b.startswith(b'%PDF')
-              pages=None; text=''; head=''
-              if pdf:
-                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
-                  for line in info.splitlines():
-                      if line.startswith('Pages:'):
-                          try: pages=int(line.split(':',1)[1].strip())
-                          except: pass
-                  try:
-                      text=subprocess.run(['pdftotext','-layout',path,'-'],capture_output=True,text=True,errors='ignore',timeout=45).stdout
-                  except subprocess.TimeoutExpired:
-                      text=subprocess.run(['pdftotext','-layout','-f','1','-l','2',path,'-'],capture_output=True,text=True,errors='ignore').stdout
-                  head=' '.join(text.replace('\x0c',' ').split())[:900]
-              low=text.lower()
-              flags={
-                'target':'on the reduction of the decision problem' in low,
-                'ackermann':'ackermann' in low,
-                'jsl':'symbolic logic' in low,
-                '1939':'1939' in low,
-                'kalmar':'kalm' in low,
-              }
-              print('ROW=',json.dumps({'name':name,'bytes':len(b),'pdf':pdf,'pages':pages,'sha256':hashlib.sha256(b).hexdigest(),'flags':flags,'head':head},ensure_ascii=False))
-              os.remove(path)
+          req=urllib.request.Request(page,headers={'User-Agent':ua})
+          with urllib.request.urlopen(req,timeout=60) as r:
+              raw=r.read().decode('utf-8','ignore')
+          print('HTML_LEN=',len(raw))
+
+          # For each explicit PDF href, capture a wide surrounding window and strip markup.
+          rows=[]
+          for m in re.finditer(r'href=["\']([^"\']*/pdf/[^"\']+\.pdf[^"\']*)["\']',raw,re.I):
+              href=html.unescape(m.group(1))
+              url=urllib.parse.urljoin(page,href)
+              name=urllib.parse.unquote(url.rsplit('/',1)[-1])
+              window=raw[max(0,m.start()-1400):min(len(raw),m.end()+1400)]
+              # retain block separators before stripping tags
+              window=re.sub(r'(?i)<br\s*/?>|</(?:p|li|div|tr|td|h\d)>',' | ',window)
+              text=re.sub(r'<[^>]+>',' ',window)
+              text=html.unescape(text)
+              text=' '.join(text.split())
+              row={'name':name,'url':url,'context':text[:2400]}
+              rows.append(row)
+              print('ROW=',json.dumps(row,ensure_ascii=False))
+
+          print('COUNT=',len(rows))
+          print('\n=== POSSIBLE 1930s / ENGLISH / LOGIC CONTEXTS ===')
+          needles=['1938','1939','1940','decision','ackermann','symbolic','logic','entscheidungsproblem','reduction','predicate']
+          for row in rows:
+              low=row['context'].lower()
+              hit=[n for n in needles if n in low]
+              if hit:
+                  print('CANDIDATE=',json.dumps({'name':row['name'],'hits':hit,'context':row['context']},ensure_ascii=False))
           PY
