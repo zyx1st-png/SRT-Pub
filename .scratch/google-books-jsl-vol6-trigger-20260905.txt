@@ -1,1 +1,1 @@
-trigger HathiTrust exact identifier probe for JSL 1941 volume 6
+trigger alternate Google Books volumes 1-8 access probe
