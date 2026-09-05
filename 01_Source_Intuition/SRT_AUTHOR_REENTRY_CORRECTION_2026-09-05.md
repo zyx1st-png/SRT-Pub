@@ -137,17 +137,25 @@ objectification / public representation
 ```text
 One-formation = Selection ?
   OPEN：二者的精确关系尚未由本次重构裁决。
+  但这不是纯 D 轴：当前 L0 对其中一部分已有 K 约束。
+  `Core_Law/SRT_L0_Metaphysics.md` §一「选择先于存在」/ 第一命题当前要求：
+  对 world-side 的确定显现实在性（determinate manifest actuality），Selection 先于并产生该 actuality。
+  因而“确定显现实在性可先于 / 独立于 Selection”不是当前普通开放候选。
+  OPEN 的仍是 Selection 与更宽的 One-formation 的精确关系，包括 stabilization、
+  re-identification、public/cognitive objectification 等是否以及如何属于同一形成结构。
+  本文件不据此推出 `One-formation = Selection`。
 
 Selection 是否需要 pre-existing bearer ?
   CURRENT CANONICAL = NO。
-  `Core_Law/SRT_L0_Metaphysics.md` §一 / 第一命题当前明确：
+  `Core_Law/SRT_L0_Metaphysics.md` §一「选择不需要选择者」/ 第一命题当前明确：
   Selection 是无主语的过程，选择者不是 Selection 的前提。
   如作者未来要重开这一点，必须显式重开 canonical commitment；
   本文件不把 bearer-presupposing Selection 恢复成对称候选。
 
 Selection = Order ?
   作为“当前 canonical 术语是否同一”并非裸 OPEN。
-  `Core_Law/SRT_L0_Metaphysics.md` §一 Gate 0 当前明确：
+  `Core_Law/SRT_L0_Metaphysics.md` §一「确定化自带非对称走向——L₀ 不是完全中性的」
+  与「主句改写记录（2026-08-11，Gate 0 canonical landing）」当前明确：
   `Order / 秩序` 不在 L0 原生承诺内，`选择趋向秩序` 只在 L1 回读层成立；
   旧的 L0 order-drive 主句已 replace / superseded。
   OPEN 的只是更深的问题：Selection、非对称累积、稳定化与后来被回读为
@@ -246,6 +254,6 @@ current canonical constraint audit
 - 任何新 formalism、scalar、threshold 或 domain prediction；
 - Constitution v1 六条是否最终增删或重新排序。
 
-这里的“没有裁决”不表示当前 canonical owner 已有承诺自动失效。例如 subjectless Selection 与 Order 非 L0 原生承诺仍按当前 L0 canonical 有效，除非作者明确重开并按既有规则修改其 owner。
+这里的“没有裁决”不表示当前 canonical owner 已有承诺自动失效。例如 subjectless Selection、determinate manifest actuality 由 Selection 获得显现实在性、以及 Order 非 L0 原生承诺仍按当前 L0 canonical 有效，除非作者明确重开并按既有规则修改其 owner。
 
 这些尚未由 current canonical owner 结清的关系，必须在后续作者重入与理论压力中逐步形成，而不是由本次治理纠偏代替。
