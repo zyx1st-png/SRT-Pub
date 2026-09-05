@@ -20,16 +20,20 @@ updated: 2026-09-05
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
 > **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **Cycle 1 最新作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS4_2026-09-05.md`
+> **Cycle 2 当前阶段记录与待裁决问题**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_INTERIM_CLOSURE_2026-09-05.md`（§§11–12 为整合复核与下一次作者裁决入口）
 > **历史条目**：`Operations/Status_History/`
 
 ## Fast Status
+
+- **Cycle 2 已形成阶段记录，尚未完成理论收口**：PASS1–PASS4、三轮 strongest-neighbor pressure 与内部 red-team 由现有 #911 保存。当前候选是双侧 Selection 与历史支持/抑制参与 One-formation 的 A+C 生成链；Level 1 仅保留既有审计的 weakened/narrowed provisional judgment，不能把整条链标为作者已裁决。post-red-team 作者二次裁决、独立问题族核验与可信 Level-2 路径仍未支付；第三井与 broad synthesis 继续 HOLD。下一步直接使用 interim closure §12 的具体问题，不重做四轮作者对话，不制造 v3/toy。
+- **Cycle 2 整合复核**：minimum non-neutrality 只约束 primitive actualisation 的实现，不产生/保证第一次发生；当前退居背景不等于永久排除或未来可达性的单调下降。L0 §六与 2026-08-05 显著性/侧抑制源材料已经包含相关双侧关系，应恢复来源连续性；本轮不认领新的双侧机制或改写 canonical。
 
 - 首读顺序唯一权威仍是 `AGENTS.md §Session Start`。
 - **2026-09-04 Architecture v2 继续有效，但受 2026-09-05 修正案控制**：`Domain Reconstruction Framework` 仍位于 Constitution 与具体 deep well 之间；它现在是更宽本体重构流程中的领域问题重组面，不再以 bearer/objectification 或直接增量审计穷尽领域重构。
 - **当前第一优先工作线：SRT Constitution + Domain Reconstruction。** 这是一次理论身份/研究方法重构，不是再造一套新 P0/P1，也不是把 2026-08 的 constructive ontology 继续推成新的公理塔。
 - **身份冻结已按具名条件重开，但 canonical 未整体重置**：2026-09-05 作者在审阅本周期两口井证据后显式重开 programme identity，满足 Blueprint §12(4)。这不自动重开每个 active canonical commitment；具体 owner 在被显式重开并按高风险编辑规则修改前继续约束 re-entry。
 - **K/A/B/C/D 权威分层**：`K=current canonical constraint`、`A=current explicit author intuition/adjudication`、`B=historical/recovered SRT`、`C=AI synthesis`、`D=open pressure`。一个 ontology axis 可以同时含 K 与 D；不得因为“问题场开放”就把 K 静默降成 D。
-- **Cycle 1 当前收口状态（最终 discriminator-or-stop）**：既有四轮 author pass、两轮邻居压力、两轮 red-team、owner/genesis audit、domain pass、v1 toy 与 preregistered shuffled-writeback v2 全部保留。v2 在匹配 recurrence topology/gain、memory、plasticity、history/evidence 数量与环境日程后仍得到 O>D，但普通递归预测器逐状态精确复制（最大误差 4.44e-16），故该操作化塌回 ordinary credit assignment。最终三叉审计：S2a（state-encoded history）被普通 dynamics 吸收；S2b（same-unit consequence closure / non-outsourcing / dynamic boundary）有实质内容但已由 PH-IND02 / PH-IND06 / D2 / PH-IND05 / AICONSC01 等既有 owner 支付；S2c（完整 causal state 之外仍不可约的 token provenance）未获 PASS4 对 numerical identity / copy / fission 的作者授权。**因此 history-localization / shuffled-writeback 作为独立 Level-2 科学路线正式 RETIRED；不做 v3。tested v2 operational partition = collapses to Level 0 / ordinary-learning translation；Level 1 = WEAKENED BUT RETAINED，仅保留“既有 bearer 判据可能参与 Bearer genesis 本身”的 genetic ordering / formation-role reinterpretation；Level 2 = HOLD overall，且本路线已停。** 无 canonical owner edit；#910 继续 Draft/unmerged。若未来继续，必须来自新的作者级区别或新的 downstream consequence，不能靠继续美化 history-routing 模型。
+- **Cycle 1 当前收口状态（最终 discriminator-or-stop）**：既有四轮 author pass、两轮邻居压力、两轮 red-team、owner/genesis audit、domain pass、v1 toy 与 preregistered shuffled-writeback v2 全部保留。v2 在匹配 recurrence topology/gain、memory、plasticity、history/evidence 数量与环境日程后仍得到 O>D，但普通递归预测器逐状态精确复制（最大误差 4.44e-16），故该操作化塌回 ordinary credit assignment。最终三叉审计：S2a（state-encoded history）被普通 dynamics 吸收；S2b（same-unit consequence closure / non-outsourcing / dynamic boundary）有实质内容但已由 PH-IND02 / PH-IND06 / D2 / PH-IND05 / AICONSC01 等既有 owner 支付；S2c（完整 causal state 之外仍不可约的 token provenance）未获 PASS4 对 numerical identity / copy / fission 的作者授权。**因此 history-localization / shuffled-writeback 作为独立 Level-2 科学路线正式 RETIRED；不做 v3。tested v2 operational partition = collapses to Level 0 / ordinary-learning translation；Level 1 = WEAKENED BUT RETAINED，仅保留“既有 bearer 判据可能参与 Bearer genesis 本身”的 genetic ordering / formation-role reinterpretation；Level 2 = HOLD overall，且本路线已停。** 无 canonical owner edit；#910 按后续作者指令整合为非 canonical 研究记录（closure §12）。若未来继续，必须来自新的作者级区别或新的 downstream consequence，不能靠继续美化 history-routing 模型。
 - **Cycle 1 对旧 Individuation 的当前压力**：`Core_Law/SRT_Individuation.md` 的 `theta^trace / theta^ext` 可继续作为已部分个体化过程的 model-local readout，但不能在 genesis 层先把 trace 标成“该 pattern 自己的”再用该比例解释第一个 Bearer；当前更安全方向是先解释 history-localization / One-localization 的出现，再把该比例作为下游读数候选。该压力尚未触发 canonical owner rewrite。
 - **当前 L0 约束仍有效**：`Core_Law/SRT_L0_Metaphysics.md` 继续固定：（1）对 world-side determinate manifest actuality，Selection 先于并产生该 actuality；（2）Selection 为无主语过程，pre-existing bearer/selector 不是前提；（3）`Order/秩序` 不在 L0 原生承诺内，旧 L0 order-drive 主句已 replace/superseded，当前“选择趋向秩序”仅允许 L1 回读。前述三条只是治理摘要，若与 L0 owner 的 `§一「选择先于存在」`、`「选择不需要选择者」`、`第一命题（EX-A／Gate 0 合并口径）`、`主句改写记录` 发生漂移，以 owner 为准。开放的是 Selection 与 broader One-formation / stabilization / objectification / later order-convergence 的更深关系，不是把 K 拉平为普通候选。
 - **Constitution v1 定位**：当前 active reader-interface / perspective-operation prototype。六个 reader operations 继续有效，但 **不等于完整 SRT ontology，也不证明全部未来内容都是 bearer/objectification 内容**；Constitution v1 自身已有 anti-bearer-totalization 边界，本轮主要纠正的是 programme shorthand / bootstrap / execution routing 的过度总体化。
@@ -56,7 +60,7 @@ updated: 2026-09-05
 ## 当前仓库状态
 
 - 单一权威主分支仍为 `main`；根目录治理继续执行 2026-07-20 减负纪律。
-- **Cycle 1 当前工作仍在 Draft PR #910 分支** `theory/author-reentry-cycle1-one-formation-20260905`；closure packet、四次作者 source trace、两轮邻居压力、两轮 red-team、模型与 toy experiment 已持久写入该分支，但 **尚未合并到 `main`**，也未 canonicalize。
+- **Cycle 1 已通过 PR #910 合并到 main**：merge commit `f351f09a37f584344c6306d951ec485c0c545d2a`。四次作者 source trace、邻居/红队压力与负面实验结果全部保留；无 canonical promotion。Cycle 2 的原 stacked PR #911 已改为以 main 为基线，继续作为非 canonical 阶段记录处理；两轮整合都不等于第三井放行。
 - 当前 reconstruction hardening 只改 programme / source / bootstrap / governance/template 层，不在本轮 substantive 改写冻结的 P0/P1/P2 owner 或 L0 owner。
 - `Core_21` 现有 P0/P1/P2-P4、Core_22 equations、d/`Psi_f`/`T_dir`、Individuation/sigma、collective formal assets 继续按原历史/技术角色可检索；是否重分类由后续 role audit 决定。
 - 2026-08-29 Selection-first derivational/subtraction/sigma/bearer 工作已提供大量可复用压力材料；不再以“找到最小 novelty residual”作为当前研究引擎。

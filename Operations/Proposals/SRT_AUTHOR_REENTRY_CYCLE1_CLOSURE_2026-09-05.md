@@ -510,7 +510,7 @@ new downstream consequence, not further embellishment of history routing.
 
 ## 11. Repository / PR state at final Cycle-1 closure
 
-Current working PR:
+Historical PR snapshot at analytical closure (before the later integration instruction):
 
 ```text
 #910
@@ -532,4 +532,22 @@ packet owns current status.
 Cycle 1 is now **closed for this bounded reconstruction question and its attempted
 history-localization scientific route**. The author-owned ontology question is
 preserved, while the failed operational residual is not protected from
-subtraction. The PR remains Draft and unmerged; no canonical landing is implied.
+subtraction. At that analytical closure the PR remained Draft and unmerged;
+no canonical landing was implied.
+
+## 12. Subsequent repository integration instruction — 2026-09-05
+
+The author subsequently instructed: `处理未关闭pr，然后继续推进`, followed
+by `继续`. This authorizes processing the completed open research-record PR;
+it does not supply a new ontology adjudication or reverse the adverse result.
+
+Integration disposition: retain Cycle 1 through existing PR #910 after checks,
+as a noncanonical formation / audit / experiment record. The previous Draft-only
+repository hold is superseded for this integration action. The live GitHub PR
+state is authoritative for whether the merge has completed.
+
+The scientific disposition is unchanged: v2 is ordinary-learning-equivalent;
+the independent history-localization route is retired; Level 1 remains weakened
+genetic reinterpretation; Level 2 overall and the third-main-well gate remain
+on HOLD. Integrating this record neither promotes its claims to canonical status
+nor authorizes a v3 rescue model or substitutes for a second author-reentry cycle.

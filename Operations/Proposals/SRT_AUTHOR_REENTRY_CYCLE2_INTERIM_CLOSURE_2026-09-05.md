@@ -27,6 +27,10 @@ tags: [AuthorReentry, Cycle2, InterimClosure, Selection, ForegroundBackground, O
 
 ## 0. Author scope decision
 
+This section records the original staging decision. The later repository
+integration / bounded continuation instruction is recorded in §§10–12; it does
+not fill the missing post-red-team author adjudication.
+
 On 2026-09-05 the author requested that the present result be written back to the repository and opened as a new PR, while deeper work is deferred to future research.
 
 Therefore the current action is:
@@ -212,8 +216,9 @@ That composite can plausibly reproduce most current phenomenology. It must remai
 After subtraction, the current **A + C** dependency candidate is:
 
 ```text
-minimum non-neutral relational asymmetry
--> primitive / subjectless Selection
+minimum non-neutral relational asymmetry constrains admissible realization;
+primitive / subjectless Selection remains the admitted actualisation primitive
+(the asymmetry does not produce, guarantee or explain its first occurrence)
 
 Selection event itself:
 manifestation / foregrounding
@@ -267,7 +272,7 @@ canonical owner edit:
 NO
 ```
 
-`PROVISIONAL PASS` does not mean novelty, truth, canonicalization or empirical superiority. It means only that the current author-owned dependency ordering is not fully preserved by simple replacement with either named strongest single neighbor inspected so far.
+`PROVISIONAL PASS` does not mean novelty, truth, canonicalization or empirical superiority. It records the prior audit's provisional judgment about the mixed A + C dependency candidate against the named strongest single neighbors inspected so far. The complete ordering is still awaiting post-red-team author adjudication; an author's confirmation of meaning would not by itself prove non-substitutability.
 
 ---
 
@@ -322,7 +327,7 @@ or earn a bounded Level-2 route.
 
 ## 10. Repository / PR disposition
 
-Current intended repository state:
+Historical intended repository state at the original staging decision:
 
 ```text
 Cycle 1:
@@ -336,6 +341,64 @@ reason:
 avoid duplicating all unmerged #910 changes in a second PR to main
 ```
 
-After #910 is merged, the Cycle-2 PR may be retargeted to `main` if its branch history remains compatible.
+The author subsequently requested `处理未关闭pr，然后继续推进` and then `继续`.
+Under that repository-processing instruction, #910 was merged at
+`f351f09a37f584344c6306d951ec485c0c545d2a`; existing #911 was retargeted to
+`main`. This record may be integrated after review/checks as an interim,
+noncanonical research record. Live GitHub state controls merge completion.
+This supersedes the earlier Draft-only repository disposition, not the pending
+theoretical adjudication or scientific HOLD.
 
-No merge, ready-for-review transition or canonicalization is authorized by this interim closure.
+## 11. Integration review and recovered source continuity
+
+This is a bounded current-source audit, not a new model, new author pass or
+independent external-literature adjudication. Historical pressure passes and
+PASS1–PASS4 remain unchanged as formation records. This section controls the
+current interpretation of their compressed arrows and provenance labels.
+
+| Status | Recovered source / item | Current implication |
+|---|---|---|
+| K | `Core_Law/SRT_L0_Metaphysics.md` §六, Selection entry | Manifest/potential differentiation and alternatives remaining future conditions are already canonical constraints; two-sidedness alone is not newly introduced by Cycle 2. |
+| K | Same owner, §六 ε entry and §七 AM-A / Ax-L0-Bootstrap | Minimum non-neutrality constrains realization; it does not derive the first actualisation. The first line of §6 is read accordingly. |
+| A | Cycle-2 PASS1–PASS4 | Mutual support, the relational center-surround analogy, and simultaneous manifestation/suppression are directly traceable author directions. |
+| B | `01_Source_Intuition/Conversations/2026-08-05_SRT_显著性侧抑制与核心直觉思想谱系_对话材料.md` §§二–三 | Existing retrospective source synthesis already discusses the joint formation of a salient content and loss of equal standing for alternatives. It is source continuity, not a new canonical owner or an independently established intellectual genealogy. |
+| C | §6 full chain and the surviving dependency rationale | AI organization of author directions; the complete chain has not received the missing post-red-team author decision. |
+| D | Dependency necessity, reactivation, and the scope of relative suppression | Still open. No new threshold, universal suppression law, sufficient Bearer condition, or Level-2 consequence is supplied here. |
+
+Three concrete pressures should be visible before the next author answer:
+
+1. **Do not equate present backgrounding with permanently reduced future access.**
+   The current L0 owner retains nonmanifest alternatives as future conditions.
+   Whether an event suppresses a direction now, makes it harder to access later,
+   or helps enable its later return must be distinguished. Monotonic loss of
+   future possibilities is not licensed by the word `suppression` alone.
+2. **Do not infer a new explanation from a longer conjunction.** Keeping
+   support, inhibition, history and genesis in one sentence is not enough to
+   establish a changed dependency. After author adjudication, a concrete case
+   must show what relationship is required or ruled out that a fair comparator
+   would treat differently. The existing composite counterexample remains live;
+   no new verdict is assigned by this review.
+3. **Do not count the cycle by its title.** Cycle 2 again targets One /
+   selection-position formation. The HOLD EXIT REVIEW must explicitly assess
+   whether it supplies the required non-redundant, non-bearer-centered problem
+   family, rather than assuming that the number `2` satisfies that condition.
+   The post-red-team author decision and a plausible Level-2 path remain unpaid.
+
+## 12. Prepared next author adjudication — answer not supplied
+
+The next conversation can begin with the following Chinese restatement:
+
+> 在一个完整的“一”形成以前，选择已经同时带来某个方向的显现和其他方向的相对退居背景。反复发生的这些差异留下后果，其中一些后果彼此支持、另一些相对受抑；这种历史关系参与形成后来能继续发生选择的位置。退居背景不等于消失，也不预先断言它以后永远更难回来。
+
+The pending question is whether the author still endorses this narrowed
+formation dependency after the strongest-neighbor and internal-red-team
+pressure, and which relation needs correction if not. This is a restatement
+for adjudication, not an answer attributed to the author.
+
+```text
+post-red-team author answer: NOT YET RECORDED
+current action: source recovery + compatibility repair + question preparation
+new theory / canonical owner edit: NONE
+new experiment / third well: NONE
+Cycle-2 complete-for-HOLD-exit credit: NOT CLAIMED
+```
