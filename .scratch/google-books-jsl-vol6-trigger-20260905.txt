@@ -1,1 +1,1 @@
-trigger exact 9-page Szeged Kalmár sparse first-page OCR
+trigger direct Szeged bibliography item 17 filename probe
