@@ -80,17 +80,6 @@ jobs:
       - name: Check split metadata freshness
         run: uv run python scripts/refresh_split_metadata.py --check
 
-      - name: Regenerate context bundles for synchronization
-        run: uv run python scripts/build_srt_context_bundles.py --generated-date 2026-09-05
-
-      - name: Upload regenerated context bundles
-        uses: actions/upload-artifact@v4
-        with:
-          name: regenerated-context-bundles
-          path: Operations/Context_Bundles/*.md
-          if-no-files-found: error
-          retention-days: 2
-
       - name: Run governance preflight
         id: full_preflight
         shell: bash
