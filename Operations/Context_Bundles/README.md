@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 4b76c9df
+source_commit: 07d7b39f
 source_branch: theory/author-reentry-cycle1-one-formation-20260905
 source_dirty: false
-inputs_digest: 10c8811b1d3d1bb0
+inputs_digest: 223c0dd3cf8b070b
 ---
 
 # SRT 上下文包

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 4b76c9df
+source_commit: 07d7b39f
 source_branch: theory/author-reentry-cycle1-one-formation-20260905
 source_dirty: false
-inputs_digest: 10c8811b1d3d1bb0
+inputs_digest: 223c0dd3cf8b070b
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 10c8811b1d3d1bb0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `4b76c9df` |
+| 来源 commit | `07d7b39f` |
 | 来源分支 | `theory/author-reentry-cycle1-one-formation-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
