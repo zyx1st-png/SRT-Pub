@@ -2,7 +2,7 @@
 id: SRT-OPS-AUTHOR-REENTRY-CYCLE1-CLOSURE-20260905
 type: proposal
 status: active
-record_stage: cycle1_closure_after_recurrence_collapse_v2
+record_stage: cycle1_closure_discriminator_stop_complete
 date: 2026-09-05
 layer: meta
 epistemic_layer: os
@@ -346,9 +346,135 @@ interpretation. These are scoped research judgments, not a new author decision.
 
 ---
 
-## 9. What is resolved versus still open
+## 9. Final discriminator-or-stop audit
 
-### Resolved for Cycle 1 current author direction
+This final bounded analytical check asks whether the author-licensed Pass-4
+`S2/S3 history-constituted One` contains an observable distinction that is not
+already paid for by ordinary causal-state learning or by existing SRT bearer
+owners. It does **not** add a new author claim.
+
+Three readings exhaust the currently supported branch of the question:
+
+### S2a — state-encoded historical constitution
+
+```text
+past Selection / consequence
+-> changes current causal state
+-> current causal state changes later Selection / repair / output
+```
+
+This is causally meaningful but not an independent Cycle-1 discriminator. The
+shuffled-writeback v2 result is exactly reproduced by an ordinary recurrent
+predictor, state by state, and therefore demonstrates that history-conditioned
+regeneration can be fully realized as ordinary stored-state / credit-assignment
+dynamics.
+
+Disposition:
+
+```text
+scientific residual beyond ordinary dynamics: NO
+history-location/writeback route at this reading: RETIRE
+```
+
+### S2b — endogenous consequence closure / attribution architecture
+
+A stronger reading asks not merely where a trace is stored, but which continuing
+unit is changed such that a consequence becomes part of that unit's later
+constraints, repair burden and future selectability. This can include dynamic
+boundary maintenance and pressure against complete outsourcing / checkpoint
+replacement.
+
+That distinction is substantive, but it is **not newly earned by Cycle 1**.
+Existing repository owners already contain the relevant architecture:
+
+```text
+PH-IND02:
+dynamic candidate boundary
++ same-unit consequence return
++ history-bearing writeback
++ future-selectability change
++ continuity
+
+PH-IND06:
+Persistent Process != Bearer
++ non-outsourcing / consequence-closure pressure
+
+D2 / PH-IND05 / AICONSC01:
+reset, replacement, same-unit writeback and bearer-indexed-history tests
+```
+
+Therefore Cycle 1 may retain only a **genetic ordering / formation-role
+reinterpretation** of these already-paid relations:
+
+```text
+not merely:
+Bearer exists -> test whether it bears history
+
+Cycle-1 genetic reading:
+repeated Selection consequences increasingly close on / reconfigure
+one continuing organization
+-> this same-unit bearing relation may participate in Bearer formation itself
+```
+
+This is a Level-1 theoretical re-partition of dependency / formation direction,
+not a new Level-2 scientific discriminator.
+
+### S2c — irreducible token provenance
+
+A still stronger reading would claim that two systems with fully matched causal
+state, dynamics and future inputs remain ontically or empirically different
+because only one token literally underwent the original history.
+
+Cycle 1 does **not** license that move. Pass 4 explicitly did not settle
+numerical identity, copy, fission or branching. No current author statement says
+that complete causal-state copying must leave an independently efficacious
+non-state provenance variable.
+
+Disposition:
+
+```text
+not author-licensed
+not operationalized
+not adopted by AI synthesis
+```
+
+### Final discriminator-or-stop decision
+
+The analytical gate therefore closes as follows:
+
+```text
+S2a: absorbed by ordinary causal-state / credit-assignment dynamics
+S2b: substantive, but already owned by existing SRT bearer machinery;
+     Cycle 1 contributes only genetic ordering / formation-role reinterpretation
+S2c: stronger metaphysical provenance claim not authorized by the author
+
+history-localization / shuffled-writeback as an independent Level-2 route:
+RETIRED
+
+v3 model search merely to preserve a positive discriminator:
+NO
+```
+
+This retirement is scoped. It does not retract the author's Pass-3/Pass-4
+intuition and does not prove that all future bearer science reduces to ordinary
+learning. It says that **this Cycle-1 residual has no presently earned independent
+scientific discriminator after ordinary-learning absorption and internal owner
+subtraction**.
+
+Current Level wording:
+
+```text
+tested v2 operational partition: COLLAPSES TO LEVEL 0 / ordinary-learning translation
+Level 1: WEAKENED BUT RETAINED as a genetic reordering of existing bearer relations
+Level 2: HOLD overall; the history-localization/writeback route is RETIRED
+canonical owner edit: NO
+```
+
+---
+
+## 10. What is resolved versus still open
+
+### Resolved for Cycle 1 current state
 
 ```text
 Selection itself may be bearerless;
@@ -356,27 +482,33 @@ stable Selection is bearer-dependent and graded;
 structure is an achievement of Selection history, not the primitive sediment;
 cognition cannot bootstrap the first Bearer;
 pre-Bearer Selection sedimentation is in 多;
-Bearer transition requires history sedimentation in 一;
+Bearer transition requires the stronger author-licensed history-constituted direction;
 portable causal memory is too weak;
-intended Bearer direction is history-constituted One;
-formation-time D-vs-O testing is author-licensed.
+stable-vs-shuffled writeback produces a real toy difference but is fully ordinary credit assignment;
+non-outsourcing / same-unit consequence closure are stronger bearer pressures but are already existing SRT owners;
+Cycle 1's surviving increment is genetic ordering / formation-role reinterpretation, not a new bearer test;
+history-localization/writeback is retired as an independent Level-2 scientific route;
+no v3 model is warranted on this residual.
 ```
 
-### Still open
+### Still open beyond this retired route
 
 ```text
 what exactly the minimum non-neutrality relation is under current L0-safe wording;
-what dynamics move historical efficacy from 多-side sedimentation into recurrent One-localization;
-how One-localization should be admitted without presupposing the Bearer it is meant to explain;
+what the author ultimately means ontologically by Selection sedimentation in 多 beyond the failed writeback operationalization;
 how copy / fission / branching interact with numerical identity;
-whether any observable S2/S3 distinction can be stated beyond credit assignment; v2 yields no such residual;
+whether a future explicit author adjudication adds a genuinely new relation not already encoded in current bearer owners;
 whether and how the old Individuation sigma model should eventually be rewritten / re-scoped;
-how this bearer-genesis link reconnects to the broader ontology without bearer totalization.
+how bearer genesis reconnects to the broader ontology without bearer totalization.
 ```
+
+These are not instructions to continue the retired model family automatically.
+A new scientific route requires a fresh author-owned distinction or a genuinely
+new downstream consequence, not further embellishment of history routing.
 
 ---
 
-## 10. Repository / PR state at closure
+## 11. Repository / PR state at final Cycle-1 closure
 
 Current working PR:
 
@@ -389,8 +521,15 @@ state: Draft / open
 canonical owner edits: none
 ```
 
-The branch contains four author source traces, two mature-neighbor pressure passes, two red-team passes, owner subtraction, R2/R4 genesis audit, minimal causal model, toy experiment, and this closure packet.
+The branch preserves the full formation trace: four author source passes, two
+mature-neighbor passes, two red-team passes, internal owner subtraction,
+R2/R4 genesis audit, v1 causal model/toy, preregistered shuffled-writeback v2,
+and the adverse recurrence-collapse result.
 
-The original bootstrap proposal remains intentionally preserved as historical process record and is superseded only for **current status** by this file.
+The original bootstrap proposal remains historical process record; this closure
+packet owns current status.
 
-Cycle 1 is therefore **closed as a current-state reconstruction pass but not merged / canonicalized and not complete at Level 2**. The next bounded move is one analytical discriminator-or-stop check: name an observable S2/S3 difference beyond stable credit assignment and stored-state regeneration; absent one, retire this residual as a scientific test route. No v3 experiment or new domain search is implied.
+Cycle 1 is now **closed for this bounded reconstruction question and its attempted
+history-localization scientific route**. The author-owned ontology question is
+preserved, while the failed operational residual is not protected from
+subtraction. The PR remains Draft and unmerged; no canonical landing is implied.
