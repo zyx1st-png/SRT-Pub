@@ -1,1 +1,1 @@
-trigger Szeged Kalmar PDF-link context mapping
+trigger exact 9-page Szeged Kalmár sparse first-page OCR
