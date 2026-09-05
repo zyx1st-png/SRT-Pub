@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 07d7b39f
+source_commit: 8a674873
 source_branch: theory/author-reentry-cycle1-one-formation-20260905
-source_dirty: false
-inputs_digest: 223c0dd3cf8b070b
+source_dirty: true
+inputs_digest: 0b250b6e4f9c8afb
 ---
 
 # SRT 哲学领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 223c0dd3cf8b070b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `07d7b39f` |
+| 来源 commit | `8a674873` |
 | 来源分支 | `theory/author-reentry-cycle1-one-formation-20260905` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

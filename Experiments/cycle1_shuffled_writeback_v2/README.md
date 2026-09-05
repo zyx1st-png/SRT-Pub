@@ -41,3 +41,10 @@ and decision threshold. Reference JSON retains per-seed scores and descriptive
 curves, input/routing hashes, config/runner hashes and numerical control checks.
 Curves cannot rescue a null primary result. The supplied loci and action-bias
 recovery do not establish S2/S3 Bearer genesis or biological self-reconstitution.
+
+
+The pre-run specification/config/code were committed as `8a6748736f254626f421da03bf4bab81b678fe93`.
+Reference outcome: Verdict C. O=0.8758545973, D=0.5049263741; paired difference
+0.3709282232, 95% CI [0.3611285070, 0.3805776018]. Ordinary baseline reproduces
+it with maximum state discrepancy 4.44e-16. Engineering matching passes;
+SRT-specific residual does not survive the recurrence-collapse gate.

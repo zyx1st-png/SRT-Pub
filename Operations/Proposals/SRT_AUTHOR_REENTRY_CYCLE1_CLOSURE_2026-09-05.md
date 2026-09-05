@@ -2,7 +2,7 @@
 id: SRT-OPS-AUTHOR-REENTRY-CYCLE1-CLOSURE-20260905
 type: proposal
 status: active
-record_stage: cycle1_closure_current_state
+record_stage: cycle1_closure_after_recurrence_collapse_v2
 date: 2026-09-05
 layer: meta
 epistemic_layer: os
@@ -52,7 +52,7 @@ Nothing in Cycle 1 reopens those owners.
 
 ---
 
-## 2. Four live author passes — current A-level direction
+## 2. Four live author passes — author direction with provenance boundaries
 
 ### Pass 1 — ontological / cognitive One and recursion
 
@@ -80,7 +80,7 @@ structure is itself an achievement / result of Selection;
 cognitive One cannot precede a sufficiently stable bearer;
 Selection can be bearerless;
 stable Selection is bearer-dependent and graded;
-after bearer formation, cognitive feedback is mechanism-wise similar to Bayesian decision.
+after bearer formation, cognitive feedback is analogous to Bayesian decision; no equivalence established.
 ```
 
 Therefore cognition is not the bootstrap primitive for the first ontological One.
@@ -99,11 +99,13 @@ This moved the formation burden from generic persistence to a change in **where 
 
 ### Pass 4 — portable memory is insufficient
 
-When asked whether causally active portable memory already suffices, or whether stronger history-constituted reconstitution is required, the author chose:
+When asked whether causally active portable memory already suffices, or whether stronger history-constituted reconstitution is required, the author replied literally `b`, selecting the displayed option:
 
 ```text
 B / S2-S3 history-constituted One
 ```
+
+The option content is author-licensed; subsequent formalization remains C/AI synthesis.
 
 Current author-licensed reading:
 
@@ -122,7 +124,7 @@ This still does not define numerical identity, consciousness, autopoiesis, Stabl
 
 ## 3. Current genetic structure after author adjudication
 
-The strongest current bounded structure is:
+The following is C/AI organization of the author-licensed relations, not an author-given complete stage model:
 
 ```text
 minimum non-neutrality
@@ -176,7 +178,7 @@ history-constituted One by itself
 != distinctively SRT
 ```
 
-The surviving Cycle-1 structural residual is narrower:
+The Cycle-1 structural candidate put under v2 pressure was narrower:
 
 ```text
 before Bearer:
@@ -187,7 +189,7 @@ historical efficacy begins recurrently localizing into one emerging One
 and helps reconstitute the position from which later Selection continues
 ```
 
-The candidate transition is **history attribution / localization as part of Bearer genesis**, not memory, history, persistence, autonomy or self-maintenance alone.
+The candidate transition concerns **history attribution / localization as part of Bearer genesis**. Its v2 operational realization is now absorbed by ordinary credit assignment (§8); it must not be called a surviving scientific residual.
 
 ---
 
@@ -263,9 +265,11 @@ This proves only toy causal separability / coherence of history-location channel
 
 ---
 
-## 7. Formation-time discriminator — current strongest downstream consequence
+## 7. Formation-time candidate — tested under the v2 recurrence gate
 
 The Pass-4 `B / S2-S3` adjudication authorizes a more upstream test than fixed-core D2.
+
+Historical test-shape proposal (superseded for operational controls/readout by v2):
 
 Hold approximately matched:
 
@@ -302,30 +306,43 @@ resistance to writeback shuffling
 continued Selection from the reconstituted position
 ```
 
-A positive `O > D` result alone is not SRT-specific; recurrent learning, developmental dynamics, autonomy or process-individuation models may reproduce it.
+A positive `O > D` result alone is not SRT-specific. The v2 run now demonstrates exact ordinary-learning absorption under matched recurrence. Stronger autonomy/developmental controls were not performed and remain unpaid.
 
 ---
 
-## 8. Current Level judgment
+## 8. Current Level judgment after shuffled-writeback v2
+
+Substantive model, provenance check, preregistered rules and bounded neighbor
+supplement: `Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_SHUFFLED_WRITEBACK_MODEL_V2_2026-09-05.md`.
+Executable/reference: `Experiments/cycle1_shuffled_writeback_v2/`.
+Preregistration commit, before any simulation: `8a6748736f254626f421da03bf4bab81b678fe93`.
 
 ```text
-Level 0 vocabulary substitution:
-NO
-
-Level 1 structural / genetic repartition:
-PROVISIONAL PASS
-
-Level 2 distinct scientific discriminator:
-HOLD / NOT YET EARNED
+Verdict C — GENERIC RECURRENCE RESULT
+engineering topology matching: PASS
+full recurrence-collapse Gate 0 survival: NO
+Level 0: COLLAPSED — tested operational partition translates into ordinary learning
+Level 1: WEAKENED — prior provisional PASS is not maintained for this realization
+Level 2: HOLD — this SRT-specific discriminator failed; no promotion
 ```
 
-Why Level 1 survives:
+The sole primary readout was history-conditioned action-bias recovery after a
+common fast-state erasure, over 16 no-evidence steps, 64 fixed paired seeds:
+O=0.8758545973; D=0.5049263741; difference=0.3709282232; preregistered paired
+bootstrap 95% CI=[0.3611285070, 0.3805776018]. The ordinary recurrent predictor
+reproduces the difference, with maximum state error 4.44e-16.
 
-> history writeback moved from a post-formation property of an already declared bearer to an upstream proposed component of Bearer genesis, with a specific pre-Bearer multiplicity-side versus emerging-One localization distinction.
+Both arms have the same recurrent topology/gains, memory and update capacities,
+plasticity, evidence counts and environmental schedule. Only writeback target
+association changes. Equal evidence quantity is not equal retained source
+information: stable association preserves the signal; shuffle mixes opposing
+signals. That explanation absorbs the entire observed effect.
 
-Why Level 2 remains HOLD:
-
-> no domain-native case yet isolates the history-attribution / localization architecture after matching the strongest ordinary memory, plasticity, autonomy, dynamical-developmental and environmental-feedback explanations.
+Supplied addresses and regeneration of learned action bias do not establish
+history-constituted Bearer genesis. Autonomy, full developmental organization
+and biological individuation were not controlled. The author question is
+retained; this operational residual is weakened, not protected by a deeper
+interpretation. These are scoped research judgments, not a new author decision.
 
 ---
 
@@ -352,7 +369,7 @@ what exactly the minimum non-neutrality relation is under current L0-safe wordin
 what dynamics move historical efficacy from 多-side sedimentation into recurrent One-localization;
 how One-localization should be admitted without presupposing the Bearer it is meant to explain;
 how copy / fission / branching interact with numerical identity;
-whether formation-time D-vs-O yields an effect beyond strongest neighbor variables;
+whether any observable S2/S3 distinction can be stated beyond credit assignment; v2 yields no such residual;
 whether and how the old Individuation sigma model should eventually be rewritten / re-scoped;
 how this bearer-genesis link reconnects to the broader ontology without bearer totalization.
 ```
@@ -376,4 +393,4 @@ The branch contains four author source traces, two mature-neighbor pressure pass
 
 The original bootstrap proposal remains intentionally preserved as historical process record and is superseded only for **current status** by this file.
 
-Cycle 1 is therefore **closed as a current-state reconstruction pass but not merged / canonicalized and not complete at Level 2**. The next bounded research move is formation-time D-vs-O matched modeling or a domain-native case, not another broad ontology sweep.
+Cycle 1 is therefore **closed as a current-state reconstruction pass but not merged / canonicalized and not complete at Level 2**. The next bounded move is one analytical discriminator-or-stop check: name an observable S2/S3 difference beyond stable credit assignment and stored-state regeneration; absent one, retire this residual as a scientific test route. No v3 experiment or new domain search is implied.

@@ -2,7 +2,7 @@
 id: SRT-OPS-CYCLE1-SHUFFLED-WRITEBACK-MODEL-V2-20260905
 type: proposal
 status: active
-record_stage: preregistered_before_execution
+record_stage: executed_verdict_c_generic_credit_assignment
 date: 2026-09-05
 layer: meta
 epistemic_layer: bridge
@@ -240,6 +240,58 @@ no canonical owner edit is warranted.
 
 ## 9. Execution record
 
-Pending. Sections 1–8 and executable/config will be committed to the existing
-PR head before the first simulation. Results will be appended here without
-changing the primary readout, seeds, parameters or verdict rules.
+Sections 1–8, runner and config were written to the existing PR head in commit
+`8a6748736f254626f421da03bf4bab81b678fe93` BEFORE the first simulation. The remote
+head and Draft flag were verified, fetched, and the local index was checked
+against that commit before running. The preregistered sections, runner and
+config were not tuned after results. No exploratory parameter/seed runs occurred.
+
+Command (repository root):
+
+```bash
+uv run python Experiments/cycle1_shuffled_writeback_v2/run_shuffled_writeback.py --output Experiments/cycle1_shuffled_writeback_v2/reference_results.json
+```
+
+| Primary result, 64 paired seeds | Value |
+|---|---:|
+| O mean recovery probability | 0.8758545973 |
+| D mean recovery probability | 0.5049263741 |
+| O minus D | 0.3709282232 |
+| Paired bootstrap 95% CI | [0.3611285070, 0.3805776018] |
+| Ordinary baseline O minus D | 0.3709282232 |
+| Maximum candidate/baseline state error | 4.4408920985e-16 |
+| Analytical expected O minus D | 0.3749275117 |
+
+All matching/control assertions passed. The CI clears the fixed .05 threshold.
+The independently implemented baseline reproduces every state to floating-point
+precision. The modest finite-sample difference from the expectation is compatible
+with the preregistered Monte Carlo interval. No extra metric was promoted.
+
+**Verdict C — GENERIC RECURRENCE RESULT.** O and D differ in formation-dependent
+functional recovery under matched recurrence; their difference is completely
+explained by stable source-to-parameter assignment versus shuffled assignment.
+The engineered recovery readout never isolated the stronger S2/S3 relation.
+
+```text
+engineering topology matching: PASS
+history-localization residual survives recurrence-collapse Gate 0: NO
+toy discrimination: POSITIVE
+SRT-specific scientific discriminator in this model: FAIL / NO
+Level 0: COLLAPSED (this operational partition is ordinary-learning translation)
+Level 1: WEAKENED (the upstream author question remains; its v2 realization
+         adds no independent structural partition over the ordinary learner)
+Level 2: HOLD (v2 route failed; no earned distinctiveness or next-gate eligibility)
+```
+
+These are scoped research verdicts, not a new author adjudication and not a
+whole-SRT verdict. Source PASS1–PASS4 and the canonical owners remain unchanged.
+The earlier provisional Level-1 pass must no longer be used as an unconditional
+current endorsement of this operational residual.
+
+**Only worthwhile next bounded move:** a single analytical discriminator-or-stop
+check: can the already author-owned S2/S3 requirement name one observable case
+difference that is not identical to source-to-parameter credit assignment or
+regeneration from stored causal state? If no such difference can be stated,
+retire this residual as a scientific test route; do not build v3 by adding
+mechanisms or search new domains merely to preserve it. No new experiment is
+licensed by this result.
