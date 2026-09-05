@@ -4,7 +4,7 @@ type: audit
 status: active
 date: 2026-09-05
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
