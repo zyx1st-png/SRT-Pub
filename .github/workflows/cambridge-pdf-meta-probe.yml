@@ -1,4 +1,4 @@
-name: Google Books Alternate JSL Copy Probe
+name: Szeged Kalmar Article Archive Probe
 
 on:
   push:
@@ -14,14 +14,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check alternate volumes 1-8 copy access and Part II pages
+      - name: Inspect Kalmar memorial article and PDF links
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import urllib.request, urllib.parse, json, hashlib
-          BOOK='3S0zZuE2hq0C'
+          import urllib.request, urllib.parse, re, html, hashlib
+          from html.parser import HTMLParser
+
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
+          BASE='https://www.inf.u-szeged.hu/kalmar/'
+          pages=[
+            BASE+'pages/munkassaga_cikkek.php',
+            BASE+'pages/munkassaga_bibliografia.php',
+            BASE+'index.php',
+            BASE+'robots.txt',
+            BASE+'sitemap.xml',
+          ]
+
           def get(url):
               req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'*/*'})
               try:
@@ -34,38 +44,77 @@ jobs:
                       except:pass
                   return getattr(e,'code',None),url,'',b
 
-          print('=== API ===')
-          st,final,ct,b=get(f'https://www.googleapis.com/books/v1/volumes/{BOOK}')
-          print('HTTP=',st,'TYPE=',ct,'LEN=',len(b),'FINAL=',final)
-          if b:
-              data=json.loads(b)
-              vi=data.get('volumeInfo',{}); ai=data.get('accessInfo',{})
-              print('TITLE=',vi.get('title'))
-              print('PUBLISHED=',vi.get('publishedDate'))
-              print('PAGECOUNT=',vi.get('pageCount'))
-              print('SOURCE_IDENTIFIERS=',json.dumps(vi.get('industryIdentifiers',[]),ensure_ascii=False))
-              print('ACCESS=',json.dumps({k:ai.get(k) for k in ['country','viewability','embeddable','publicDomain','textToSpeechPermission','webReaderLink']},ensure_ascii=False))
-              print('PDF=',json.dumps(ai.get('pdf',{}),ensure_ascii=False))
+          class LinkParser(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.links=[]; self.cur=None; self.text=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag.lower()=='a':
+                      d=dict(attrs); self.cur=d.get('href'); self.text=[]
+              def handle_data(self,data):
+                  if self.cur is not None: self.text.append(data)
+              def handle_endtag(self,tag):
+                  if tag.lower()=='a' and self.cur is not None:
+                      self.links.append((self.cur,' '.join(''.join(self.text).split())))
+                      self.cur=None; self.text=[]
 
-          print('\n=== SEARCH WITHIN ===')
-          pids=[]
-          for term in ['A system of axiomatic set theory','Bernays','axiomatic set theory']:
-              url=f'https://books.google.com/books?id={BOOK}&jscmd=SearchWithinVolume2&q='+urllib.parse.quote(term)
+          all_links=[]
+          all_html={}
+          print('=== PAGE FETCHES ===')
+          for url in pages:
               st,final,ct,b=get(url)
-              print('TERM=',term,'HTTP=',st,'TYPE=',ct,'LEN=',len(b),'FINAL=',final)
-              txt=b.decode('utf-8','replace')
-              print('HEAD=',repr(txt[:700]))
-              try:
-                  js=json.loads(txt)
-                  print('RESULTS=',js.get('number_of_results'))
-                  for it in js.get('search_results',[])[:10]:
-                      print('RESULT=',json.dumps({k:it.get(k) for k in ['page_id','page_number','snippet_text']},ensure_ascii=False))
-                      if it.get('page_id') and it['page_id'] not in pids:pids.append(it['page_id'])
-              except Exception as e: print('JSON_ERROR=',repr(e))
+              print('\nURL=',url,'HTTP=',st,'TYPE=',ct,'LEN=',len(b),'FINAL=',final,'SHA256=',hashlib.sha256(b).hexdigest() if b else None)
+              text=b.decode('utf-8','ignore')
+              all_html[url]=text
+              print('HEAD=',repr(text[:800]))
+              for needle in ['Ackermann','decision problem','1939','Symbolic Logic','On the reduction']:
+                  print('HAS_'+needle.upper().replace(' ','_')+'=',needle.lower() in text.lower())
+              p=LinkParser(); p.feed(text)
+              for href,label in p.links:
+                  absu=urllib.parse.urljoin(final,html.unescape(href))
+                  all_links.append((url,absu,label))
 
-          print('\n=== PAGE IMAGES ===')
-          for pid in (pids+['PA1','PA2','PA6','PR1'])[:12]:
-              url=f'https://books.google.com/books/content?id={BOOK}&pg={urllib.parse.quote(pid)}&img=1&zoom=2&hl=en'
-              st,final,ct,b=get(url)
-              print('PID=',pid,'HTTP=',st,'TYPE=',ct,'LEN=',len(b),'SHA256=',hashlib.sha256(b).hexdigest() if b else None,'MAGIC=',repr(b[:16]),'FINAL=',final)
+          print('\n=== ALL PDF LINKS ===')
+          pdfs=[]
+          for src,u,label in all_links:
+              if '/kalmar/pdf/' in u.lower() or u.lower().split('?')[0].endswith('.pdf'):
+                  row=(src,u,label)
+                  if row not in pdfs: pdfs.append(row)
+          print('PDF_LINK_COUNT=',len(pdfs))
+          for i,(src,u,label) in enumerate(pdfs,1):
+              print(f'PDF_{i:03d}_URL={u}')
+              print(f'PDF_{i:03d}_LABEL={label!r}')
+              # Context from source HTML around raw URL basename or href.
+              txt=all_html.get(src,'')
+              base=u.rsplit('/',1)[-1]
+              pos=txt.lower().find(base.lower())
+              if pos>=0:
+                  context=re.sub(r'\s+',' ',html.unescape(txt[max(0,pos-500):pos+700]))
+                  context=re.sub(r'<[^>]+>',' ',context)
+                  context=' '.join(context.split())
+                  print(f'PDF_{i:03d}_CTX={context!r}')
+
+          print('\n=== TARGET-LIKE LINKS / CONTEXT ===')
+          target_terms=['ackermann','decision problem','1939','symbolic logic','reduction of the decision']
+          for src,u,label in all_links:
+              combined=(u+' '+label).lower()
+              if any(t in combined for t in target_terms):
+                  print('TARGET_LINK=',u,'LABEL=',repr(label),'SOURCE=',src)
+
+          for src,text in all_html.items():
+              low=text.lower()
+              for needle in ['ackermann prefix','on the reduction of the decision problem','j. symbolic logic 4','1939']:
+                  start=0; n=0
+                  while True:
+                      pos=low.find(needle,start)
+                      if pos<0 or n>=10: break
+                      ctx=re.sub(r'<[^>]+>',' ',html.unescape(text[max(0,pos-600):pos+1000]))
+                      ctx=' '.join(ctx.split())
+                      print('TARGET_CONTEXT_SRC=',src,'NEEDLE=',needle,'CTX=',repr(ctx))
+                      start=pos+len(needle); n+=1
+
+          print('\n=== SAME-SITE ARTICLE/DOWNLOAD LINKS ===')
+          seen=set()
+          for src,u,label in all_links:
+              if u.startswith(BASE) and u not in seen and any(x in u.lower() for x in ['/pdf/','cikk','download','munkassaga']):
+                  seen.add(u); print('SITE_LINK=',u,'LABEL=',repr(label),'SOURCE=',src)
           PY
