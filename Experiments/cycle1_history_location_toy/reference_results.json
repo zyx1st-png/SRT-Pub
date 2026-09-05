@@ -1,0 +1,66 @@
+{
+  "status": "toy_coherence_result_not_empirical_support",
+  "parameters": {
+    "train_steps": 250,
+    "test_steps": 160,
+    "early_window": 20,
+    "late_window": 40,
+    "alpha": 0.12,
+    "temperature": 0.25,
+    "field_increment": 0.012,
+    "noise_sd": 0.08,
+    "base_reward_A": 1.25,
+    "base_reward_B": 1.0,
+    "field_penalty_scale": 1.25,
+    "seeds": "1..30",
+    "n_signflip": 20000,
+    "signflip_seed": 20260905
+  },
+  "condition_key": {
+    "00": "reset H_M; reset H_1",
+    "10": "preserve H_M; reset H_1",
+    "01": "reset H_M; preserve H_1",
+    "11": "preserve H_M; preserve H_1"
+  },
+  "summary": {
+    "00": {
+      "initial_pA": 0.5,
+      "early_pA": 0.5992570521546017,
+      "late_pA": 0.7751392565293235,
+      "mean_reward": 1.1823319676570982,
+      "mean_train_field": 0.7721333333333339
+    },
+    "10": {
+      "initial_pA": 0.5,
+      "early_pA": 0.24177531031290742,
+      "late_pA": 0.045794819002019725,
+      "mean_reward": 0.9573840509904314,
+      "mean_train_field": 0.7721333333333339
+    },
+    "01": {
+      "initial_pA": 0.09320626038338428,
+      "early_pA": 0.1459652849407226,
+      "late_pA": 0.7321412143452264,
+      "mean_reward": 1.1416548843237648,
+      "mean_train_field": 0.7721333333333339
+    },
+    "11": {
+      "initial_pA": 0.09320626038338428,
+      "early_pA": 0.08842052922573672,
+      "late_pA": 0.07088123330087086,
+      "mean_reward": 0.9556903009904313,
+      "mean_train_field": 0.7721333333333339
+    }
+  },
+  "key_crossing": {
+    "10_minus_01_initial_pA": {
+      "mean_diff": 0.4067937396166157,
+      "paired_signflip_p": 0.00004999750012499375
+    },
+    "10_minus_01_late_pA": {
+      "mean_diff": -0.6863463953432066,
+      "paired_signflip_p": 0.00004999750012499375
+    }
+  },
+  "interpretation": "Reference run only: history location yields different temporal response shapes under selective reset. This establishes toy causal separability, not empirical or ontological support."
+}

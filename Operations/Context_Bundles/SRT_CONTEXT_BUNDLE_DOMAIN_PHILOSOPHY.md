@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: c139a969
-source_branch: repair/sigma-scope-current-main-20260905
+source_commit: 157bd098
+source_branch: theory/author-reentry-cycle1-one-formation-20260905
 source_dirty: false
-inputs_digest: bfc9530f4edccc6a
+inputs_digest: 958963a63c475ec1
 ---
 
 # SRT 哲学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: bfc9530f4edccc6a
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `c139a969` |
-| 来源分支 | `repair/sigma-scope-current-main-20260905` |
+| 来源 commit | `157bd098` |
+| 来源分支 | `theory/author-reentry-cycle1-one-formation-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
