@@ -1,1 +1,1 @@
-trigger quick probe for ambiguous Szeged Kalmar PDFs
+trigger Szeged Kalmar PDF-link context mapping
