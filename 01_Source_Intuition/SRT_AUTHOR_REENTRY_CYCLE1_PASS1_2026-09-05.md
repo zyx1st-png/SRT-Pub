@@ -60,6 +60,20 @@ tags: [AuthorTrace, AuthorReentry, Cycle1, Multiplicity, Selection, OneFormation
 
 > **本体上的一形成后影响外部认知上一的定义和持续性，从而影响自身本体一对多的选择和本体一的维系。**
 
+## 即时补充 — cognitive One、ontological One 与 bearer One
+
+作者进一步澄清：
+
+> **这种对外的认知one，反过来也决定了本体的one。因为本体的one本质上是认知one的沉积。但是没有这个本体的bearer one，就没有稳定的选择。**
+
+记录边界：这里第一次明确出现三条作者级关系，需要保留为待压力测试的作者直觉，而不是直接转写成 canonical 定义：
+
+1. 外部 cognitive One 不只是服务 / 反馈 ontological One，也参与决定 ontological One；
+2. ontological One 被作者描述为 cognitive One 的沉积；
+3. stable Selection 又要求一个 ontological bearer One。
+
+这三条共同构成递归依赖，但本轮作者尚未把“沉积”的机制、最初 bearer One 的生成、以及非认知系统中的适用范围完整定义出来。
+
 ---
 
 ## 当前作者材料直接给出的最小结构
@@ -71,26 +85,31 @@ tags: [AuthorTrace, AuthorReentry, Cycle1, Multiplicity, Selection, OneFormation
 Selection 与差异维持相关
 -> determinate actuality 本身不足以成为本体 One
 -> 本体 One 可继续存在 / 维系
+-> stable Selection 需要 ontological bearer One
 
 认知层：
 认知画出边界
 -> 可把 determinate event / unit 作为 One 来处理
 -> 持续性参与认知 One 的形成
 
-跨层反馈：
-认知上的 One 服务本体上的 One
+跨层生成与反馈：
+外部 cognitive One 服务并参与决定 ontological One
+cognitive One 的沉积构成本体 One 的形成来源之一 / 作者当前表述中的本质关系
 本体 One 的形成又影响外部认知对 One 的定义与持续性
 这些认知结构再影响本体 One 面向 many 的 Selection 与自我维系
 ```
 
-这里的箭头仅表示作者回答中已明确出现的关系方向，不代表已证明的生成次序，也不代表作者已经认可任何完整 stage model。
+这里的箭头仅表示作者回答中已明确出现的关系方向，不代表已证明的生成次序，也不代表作者已经认可任何完整 stage model。“构成本体 One 的形成来源之一”是为避免把“本质上是认知 One 的沉积”误读成已经完成严格必要充分条件定义；作者原句本身保留在上一节。
 
 ## 尚未由本轮作者回答解决
 
 1. Q1 中 Selection 之前的 multiplicity 究竟是什么性质，仍未得到足够精确的正面定义。
 2. “本体上维持差异”中的差异是相对于什么而成立：背景、外部环境、历史状态、可替代路径，还是更原初的关系结构，仍待阐明。
 3. determinate actuality 不是本体 One 之后，本体 One 的最低形成条件是什么，尚未完全明确。
-4. “认知上的 One 服务本体上的 One”的适用范围仍待压力测试：是否只适用于具有认知系统/外部观察者的高阶系统，还是可广义化为 representation / model / boundary-maintenance feedback，不能由 AI 预设。
-5. “外部认知”与 One 自身的内部认知/表征是否必须区分，当前仍开放。
+4. 如果 ontological One 本质上是 cognitive One 的沉积，那么最初的 cognitive One / boundary formation 如何发生而不预设一个已经稳定的 bearer One，仍需解释。
+5. “没有 ontological bearer One 就没有 stable Selection”与当前 canonical `Selection does not require a pre-existing selector / bearer` 如何分层兼容，需要明确区分 primordial / event-level Selection 与 stable / iterated Selection，或由作者提出其他更好的分法；不能由 AI 静默解决。
+6. “认知上的 One 服务并决定本体上的 One”的适用范围仍待压力测试：是否只适用于具有认知耦合、社会认知或内部模型的系统，还是可广义化为 representation / model / boundary-maintenance feedback，不能由 AI 预设。
+7. “外部认知”与 One 自身的内部认知/表征是否必须区分，当前仍开放。
+8. “沉积”究竟意味着因果支持、历史累积、边界稳定、资源/行为反馈、制度化、可再识别性，还是其中若干机制的组合，当前仍开放。
 
 这些问题应进入 mature-neighbor pressure 与下一轮作者裁决，而不是由本文件补完。
