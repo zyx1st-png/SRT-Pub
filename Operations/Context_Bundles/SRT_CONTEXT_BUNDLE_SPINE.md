@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: b1f4efdc
-source_branch: governance/post903-canonical-hardening-20260905
+source_commit: c139a969
+source_branch: repair/sigma-scope-current-main-20260905
 source_dirty: false
-inputs_digest: 9ee9795318f6022b
+inputs_digest: bfc9530f4edccc6a
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 9ee9795318f6022b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `b1f4efdc` |
-| 来源分支 | `governance/post903-canonical-hardening-20260905` |
+| 来源 commit | `c139a969` |
+| 来源分支 | `repair/sigma-scope-current-main-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -56,8 +56,8 @@ inputs_digest: 9ee9795318f6022b
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
-| 14 | `Core/SRT_Core_22_Equations.md` | 2026-08-12 |
-| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-08-26 |
+| 14 | `Core/SRT_Core_22_Equations.md` | 2026-09-05 |
+| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-09-05 |
 
 ## §0.2 状态护栏
 
@@ -5406,7 +5406,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-05 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -5445,6 +5445,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 - `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于 `L_0 -> L_1` 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程。
+- **`σ_{sr}` projection scope (S+R truth-up, 2026-08-29)**：本文件只继承 `Core_Law/SRT_Individuation.md §八` 已有地位——`σ_{sr}` 是 P2、规约性的、可被等价形式替换的阶参解释。`T-PROJ-1` / `T-PROJ-1^{coll}` 在给定 `\mathcal F_\sigma` / `\mathcal F_\sigma^{coll}` 后证明条件性投影闭合；它们不把当前 bare-norm 坐标提升为表示不变的自然量，不证明 trace/ext 归属唯一，也不把其数值等同于因果控制或自然相边界。单体与集体同名 `σ` 也不自动意味着相同的 trace 语义；集体 owner 另含 declared-boundary 下 shared `L_2` 的内生性重分类。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -5478,7 +5479,7 @@ L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omeg
 
 > **背景**：SRT 的单算子方程（§0-B, §I）描述单个 $\hat{G}_\theta$ 的动力学。本节将框架扩展到多算子系统，给出集体自由能、个体算子梯度关系与集体 d-value 的形式化。这是集体景观优先性定理（见 `_SRT_VERTICAL_INTEGRATION.md §4.5`）的方程层锚点。
 >
-> **L1 Collective Projection (T-PROJ-1^{coll}, 2026-04-25 H6)**：本节 Eq-Multi-01 / 02 / 03 在 stable collective ISP `\mathcal{P}` 上的四个标量泛函投影 `(σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll})` 在闭包假设 C1^{coll}-C5^{coll}（慢-快分离 / 共享 `L_2` 写回 Markov 闭包 / stable collective ISP 紧性 / 群平均方向投影可分性 / `M(t)` 可测性 MOC 闭包）下严格满足 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 的集体四变量 ODE 系统；详见 §4.7 T-PROJ-1^{coll}。本节为上位本体源头，§4.7 不替代之，只把已隐含的集体子动力学写出。本节 σ_i 为各 ISP 状态场，与集体自指率 `σ_{sr}^{coll}` 是不同对象。
+> **L1 Collective Projection (T-PROJ-1^{coll}, 2026-04-25 H6)**：本节 Eq-Multi-01 / 02 / 03 在 stable collective ISP `\mathcal{P}` 上的四个标量泛函投影 `(σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll})` 在闭包假设 C1^{coll}-C5^{coll}（慢-快分离 / 共享 `L_2` 写回 Markov 闭包 / stable collective ISP 紧性 / 群平均方向投影可分性 / `M(t)` 可测性 MOC 闭包）下严格满足 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 的集体四变量 ODE 系统；详见 §4.7 T-PROJ-1^{coll}。本节为上位本体源头，§4.7 不替代之，只把已隐含的集体子动力学写出。本节 σ_i 为各 ISP 状态场，与集体自指率 `σ_{sr}^{coll}` 是不同对象。**Scope**：这里的“严格满足”是**给定已声明 `\mathcal F_\sigma^{coll}` 后**的动力学闭合；C1^{coll}-C5^{coll} 不证明该 bare-norm 投影的表示不变性、trace/ext 归属唯一性、单体/集体 trace 语义同一或自然相边界。
 
 ### Eq-Multi-01: Collective Free Energy Landscape（集体自由能景观）
 **Formal Definition**: 多算子系统的集体自由能景观是各算子个体摩擦与算子间摩擦的总和：
@@ -5784,7 +5785,7 @@ $$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\
 **Formal Definition**: The trajectory of a selected state is the sum of selection, free-energy descent, and attention modulation.
 $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
 * **Implication**: 现实演化是选择、能量下降与注意调制的合成动力学。
-* **L1 Projection (T-PROJ-1, 2026-04-25 H5)**: 本主方程在 stable ISP P 上的四个标量泛函投影 `(σ_{sr}, d_c, T_{dir}, S)` 在闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）下严格满足 `Core_Law/SRT_L1_Formalism.md §2-§5` 的四变量 ODE 系统；详见 §6 T-PROJ-1。本主方程为上位本体源头，§6 不替代之，只把已隐含的子动力学写出。本节 σ 为状态场，与 `σ_{sr}` 是不同对象（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）。
+* **L1 Projection (T-PROJ-1, 2026-04-25 H5)**: 本主方程在 stable ISP P 上的四个标量泛函投影 `(σ_{sr}, d_c, T_{dir}, S)` 在闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）下严格满足 `Core_Law/SRT_L1_Formalism.md §2-§5` 的四变量 ODE 系统；详见 §6 T-PROJ-1。本主方程为上位本体源头，§6 不替代之，只把已隐含的子动力学写出。本节 σ 为状态场，与 `σ_{sr}` 是不同对象（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）。**Scope**：该结果是**给定已声明 `\mathcal F_\sigma` 后**的投影闭合；C1-C4 不证明 trace/ext 分解唯一、bare norm 跨等价参数表示不变、`σ_{sr}` 等于因果控制份额，或 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
 
 ### Eq-Evo-01b: Metabolic Gain Modulation
 **Formal Definition**: 代谢压力作为演化方程的增益调节项。
@@ -6296,7 +6297,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-26 |
+| last_commit | 2026-09-05 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -6379,11 +6380,11 @@ SRT 主方程的运作机制如下：
 | **ρ_I** | `\rho_I` | Information Density Lower Bound | Positive constant (ρ_I > 0) in conditional strengthening of Cor-Scale-Rhythm-4a: $\dot{I}_{created}^{on} \ge \rho_I \cdot B_\theta$. When this lower bound holds, the entropy bound becomes a product cap δ·B_θ ≤ J_S^max/(k_BT ln2 · ρ_I), equivalently δ·d ≤ J_S^max/(k_BT ln2 · ρ_I · c_B). Not unconditional. | Bits/(Hz·time) | Core; canonical source `SRT_Core_14 Cor-Scale-Rhythm-4a` |
 | **k_n** | `k_n` | Sub-Targets per Layer | Model-local number of anchoring sub-targets {σ_{n,1},…,σ_{n,k_n}} that $\hat{G}_\theta^{(n)}$ is posited to maintain within one on-phase. Its use in T-Scale-Rhythm-5 is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not a global cross-scale invariant. | Integer (≥ 1) | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
 | **τ_switch^min** | `\tau_{switch}^{min}` | Minimum Feasible Switch Time | Model-local lower bound on per-switch duration imposed by a named physical substrate. Its role in Rhythm-5 recursion and any nesting-depth ceiling is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not universal across substrates. | Time | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
-| **σ_{sr}** | `\sigma_{sr}` | Self-Reference Ratio | `σ_{sr} := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖) ∈ [0, 1]`. Scalar projection of `\hat{G}_\theta` onto its own history-derived component vs external-driven component. Distinct from bare `σ` (main-equation state field in `Core/SRT_Core_22_Equations.md`) and from `σ_j` (anchoring sub-target). Introduced in 2026-04-24 L1 round as the `SRT_Individuation.md` order parameter. | Scalar [0,1] | L1; canonical source `Core_Law/SRT_L1_Hardening_Notes.md §1`, `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_L1_Formalism.md §2` |
-| **σ_{sr}^{sub}** | `\sigma_{sr}^{sub}` | Subject-Position Entry Threshold | First phase-transition threshold: above `σ_{sr}^{sub}` an ISP acquires subject-position (operator self-reference sufficient for perspective-bearing). Informal location in `(0, 1)`; concrete value P3/P4 pending. | Scalar | L1 structural hypothesis; specific numerical threshold P3/P4; canonical source `SRT_Individuation.md T-IND-2` |
-| **σ_{sr}^{self}** | `\sigma_{sr}^{self}` | Self-Consciousness Condensation Threshold | Second phase-transition threshold: above `σ_{sr}^{self}` second-order writeback (`θ` about `θ`) condenses, giving self-consciousness as a structural product. Higher than `σ_{sr}^{sub}`. Does not violate L_0 §五意识禁令 (consciousness is structural product not L_0 property). Concrete value P3/P4 pending. | Scalar | L1 structural hypothesis; specific numerical threshold P3/P4; canonical source `SRT_Individuation.md T-IND-3` |
-| **σ_{sr}^{health}** | `\sigma_{sr}^{health}` | Healthy Operating-Point Center | Healthy working region center `σ_{sr}^{health} ∈ (σ_{sr}^{sub}, σ_{sr}^{self})` — balanced self-reference without pathological closure toward `σ_{sr} \to 1`. Typically close to the informal `σ_{sub}^\dagger` in `T_{dir}^{alg}` (`SRT_L1_Formalism.md §3.4`). | Scalar | L1 structural hypothesis; operating-point center, specific value P3/P4; canonical source `SRT_L1_Formalism.md §2.4, §5.3` |
-| **σ_{sr}^{coll}** | `\sigma_{sr}^{coll}` | Collective Self-Reference Ratio | Multi-ISP extension over shared `L_2` field `\mathcal{P}`. Defined in `Core_Law/SRT_Collective_Selection.md §4.1` and its dynamic extension in §4.4.1-§4.4.2. `σ_{sr}^{coll} \to 1` is the collapsed-into-higher-`L_2` pathological limit. | Scalar [0,1] | L1; canonical source `SRT_Collective_Selection.md §4.1, §4.4` |
+| **σ_{sr}** | `\sigma_{sr}` | Self-Reference Ratio | `σ_{sr} := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖) ∈ [0, 1]`. **P2 canonical interpretation:** `SRT_Individuation.md §八` states that the order-parameter choice is conventional and replaceable by an equivalent form. In the current bare-norm realization it is a model-local historical/writeback-balance proxy under a declared trace/ext attribution rule, parameter representation, and norm/metric. | Scalar [0,1] | L1; canonical source `Core_Law/SRT_L1_Hardening_Notes.md §1`, `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_L1_Formalism.md §2`. Not by itself a representation-invariant natural quantity, unique history-attribution theorem, causal-control share, bearer/selector criterion, or proof of a natural phase boundary. Distinct from main-equation state field `σ` and anchoring sub-target `σ_j`. |
+| **σ_{sr}^{sub}** | `\sigma_{sr}^{sub}` | Subject-Position Entry Threshold | First model-coordinate threshold used by the current individuation parameterization for subject-position entry. Concrete value P3/P4 pending. | Scalar | L1 structural hypothesis; current coordinate is conventional/replaceable and does not by itself establish a representation-independent natural phase boundary. The broader question whether P1-T06 has an independently evidenced natural transition boundary remains open. Canonical source `SRT_Individuation.md T-IND-2, §七.8, §八`. |
+| **σ_{sr}^{self}** | `\sigma_{sr}^{self}` | Self-Consciousness Condensation Threshold | Second model-coordinate threshold used by the current σ parameterization for second-order writeback condensation. Higher than `σ_{sr}^{sub}` inside the declared model; concrete value P3/P4 pending. | Scalar | L1 structural hypothesis / P2 strong candidate in the current parameterization. Does not make the bare σ coordinate natural or representation-invariant; phenomenality remains separately open. Canonical source `SRT_Individuation.md T-IND-3, §八`. |
+| **σ_{sr}^{health}** | `\sigma_{sr}^{health}` | Healthy Operating-Point Center | Healthy working-region center inside the declared σ model, tracking balanced self-reference without pathological closure toward `σ_{sr} \to 1`. Typically close to the informal `σ_{sub}^\dagger` in `T_{dir}^{alg}` (`SRT_L1_Formalism.md §3.4`). | Scalar | L1 structural hypothesis; operating-point center, specific value P3/P4 and representation/model-class conditional; not a universal natural constant or standalone health criterion. Canonical source `SRT_L1_Formalism.md §2.4, §5.3`. |
+| **σ_{sr}^{coll}** | `\sigma_{sr}^{coll}` | Collective Self-Reference Ratio | Multi-ISP extension over shared `L_2` field `\mathcal{P}`. The current owner includes boundary-relative reclassification: shared `L_2` is added to collective trace and removed from collective ext because it is no longer new input relative to the declared collective exterior. | Scalar [0,1] | L1 model-local collective historical/endogeneity proxy under declared collective boundary, attribution, representation and norm. Its trace semantics are not automatically identical to individual own-output provenance. `σ_{sr}^{coll} \to 1` remains a model-class collapsed-into-higher-`L_2` indicator, not a representation-independent natural constant, collective-agency criterion, or causal-control share. Canonical source `SRT_Collective_Selection.md §4.1, §4.4, §4.7`. |
 
 ## Governance Tier Layering (GOV-SUB01 Pass 1, 2026-07-16)
 
@@ -6403,7 +6404,7 @@ SRT 主方程的运作机制如下：
 
 **Tier 3 — Domain projections, operational proxies and threshold-bearing hypotheses** (domain realizations, capacity proxies, measurement readouts, and threshold-bearing points):
 
-`D_eff` (d proxy), `ε_reg`, `ε_s`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, `σ_{sr}^{health}`, `κ_{c1}`, `κ_{c1.5}`, `δ`, `ν`, `λ_pred`, `Ṡ_{int}^{on}`, `J_S^{max}`, `δ_{max}^{entropy}`, `B_θ`, `h[A]`, `τ_off^{*}`, `c_B`, `ρ_I`, `k_n`, `τ_switch^{min}`, `τ_fast`, `τ_slow`, `ω_sub`, `η`, `Γ_{\hat{G}}`, `S_crit`, `R_fidelity`, `I_total`, `F_semantic`, `F_base`, `F_SRT`, `Φ_IIT`, `D_max`, `γ_gain`, `δ_D`, `I_rec`, `η_compress`, `θ_semantic`, `D_dev`, `I_int`, `S_c`, `F_Bio`, `ΔR`, `C_int`, `T_immune`, `M`.
+`D_eff` (d proxy), `ε_reg`, `ε_s`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, `σ_{sr}^{health}`, `κ_{c1}`, `κ_{c1.5}`, `δ`, `ν`, `λ_pred`, `Ṡ_{int}^{on}`, `J_S^{max}`, `δ_max^entropy`, `B_θ`, `h[A]`, `τ_off^{*}`, `c_B`, `ρ_I`, `k_n`, `τ_switch^min`, `τ_fast`, `τ_slow`, `ω_sub`, `η`, `Γ_{\hat{G}}`, `S_crit`, `R_fidelity`, `I_total`, `F_semantic`, `F_base`, `F_SRT`, `Φ_IIT`, `D_max`, `γ_gain`, `δ_D`, `I_rec`, `η_compress`, `θ_semantic`, `D_dev`, `I_int`, `S_c`, `F_Bio`, `ΔR`, `C_int`, `T_immune`, `M`.
 
 *Reading rule*: a Tier 3 proxy or threshold must never be cited as if it were the Tier 1 anchor it approximates (e.g. `D_eff` is not `d`; `κ_{c1}` is not `κ_0`). Exact claim level remains source-local; many are P3/P4, but tier placement alone does not assign claim level. Cross-domain ranking of subjecthood, concern, or consciousness from a Tier 3 readout is out of scope for this table.
 
@@ -6421,7 +6422,7 @@ SRT 主方程的运作机制如下：
 9. **ε usage split**：`ε_pg` is the L0 minimum non-neutrality postulate; ISP-level anti-closure ε is a conditional P2/P3 candidate under ST-A, not a P1 corollary; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. They must not be collapsed into one empirical theorem.
 10. **Canonical status split**：`governance-canonical` means repo-wide stabilized usage; `theory-canonical` means core-derived or core-priority definition; `operational proxy` means measurable working readout; `bridge hypothesis` means cross-domain candidate mapping. Do not infer theory-canonical status merely from a symbol-table default, filename, or historical label.
 11. **Ψ_f / Fisher split**：do not write `\Psi_f \equiv g_F` as a literal identity. Use `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta+O(\|d\theta\|^3)` for local cost, or a path functional such as `\Psi_f^{geom}[\gamma]=\int_\gamma\sqrt{g^F_{ij}\dot\theta^i\dot\theta^j}\,dt` when the statistical-manifold projection is valid.
-12. **σ namespace split** (2026-04-24 L1 round, governance-canonical per `Core_Law/SRT_L1_Hardening_Notes.md §1`): bare `σ` defaults to the **main-equation state field** (`Core/SRT_Core_22_Equations.md`); `σ_{sr}` is the self-reference ratio (with subscripts `sub / self / health / coll`); `σ_j` is an anchoring sub-target (`SRT_Core_14 T-Scale-Rhythm-5`). These are three different objects. Any file using σ in a sense other than the main-equation state field must either (a) use the `σ_{sr}` / `σ_j` form explicitly, or (b) carry a file-level symbol namespace note binding bare `σ` to the intended meaning per this rule. Historical files predating 2026-04-24 where bare `σ` means self-reference ratio are being progressively rewritten; in the meantime, read them as `σ_{sr}` when the context is Individuation / Occlusion Dynamics / Suffering / L1 Formalism §2 / Collective Selection §4.
+12. **σ namespace + scope split** (2026-04-24 L1 round; S+R truth-up 2026-08-29): bare `σ` defaults to the **main-equation state field** (`Core/SRT_Core_22_Equations.md`); `σ_{sr}` is the self-reference ratio (with subscripts `sub / self / health / coll`); `σ_j` is an anchoring sub-target (`SRT_Core_14 T-Scale-Rhythm-5`). These are three different objects. Any file using σ in a sense other than the main-equation state field must either (a) use the `σ_{sr}` / `σ_j` form explicitly, or (b) carry a file-level symbol namespace note binding bare `σ` to the intended meaning per this rule. The `σ_{sr}` family also inherits `SRT_Individuation.md §八`: the order-parameter choice is P2, conventional, and replaceable by an equivalent form. The current bare-norm realization requires a declared trace/ext attribution rule, parameter representation, and norm/metric; namespace registration does not make it representation-invariant, uniquely provenance-resolving, a causal-control share, a bearer/selector criterion, or a natural phase coordinate. `σ_{sr}^{coll}` is additionally boundary-relative and may reclassify shared `L_2` as collective trace. Thresholds `sub/self/health` remain model-class coordinates until stronger invariant/natural-boundary evidence is separately established. Historical files predating 2026-04-24 where bare `σ` means self-reference ratio are being progressively rewritten; in the meantime, read them as `σ_{sr}` when the context is Individuation / Occlusion Dynamics / Suffering / L1 Formalism §2 / Collective Selection §4, with this scope rule applied.
 13. **Governance terms are not theory symbols**: `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, `canonical:false`, and related structural-governance vocabulary (defined in `SRT_Glossary_Structural_Governance_Terms.md`) are repository-organisation terms, not canonical mathematical or phenomenological symbols. Do not add them as rows to this table or treat them as carrying theory-canonical status.
 14. **Annex and Operations reference scope**: Non-canonical annex files (`AI/Architecture_Annex/`, `AI/Consciousness_Annex/`, `Physics/QBox_Annex/`, `Physics/Earth_Accretion_Annex/`, etc.) and Operations records (e.g. `Operations/Archive_Records/Closure_Index_2026-04-29.md`, `Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md`) may cite and use symbols defined in this table. They must not introduce new symbol definitions, override existing usage rules, or alter the scope of canonical symbols established here.
 15. **κ namespace split** (GOV-SUB01 Pass 1, 2026-07-16): the glyph `κ` spans two unrelated object families that must not be read as one continuous quantity. (a) `κ_0` (primordial curvature) and `κ(t)` (dynamic L₀ curvature) are **L₀-curvature** objects — canonical source `Core/SRT_Core_12a T-L0-Kappa0 / T-L0-NonStatic`. `κ_0` is carried as a **primordial-curvature candidate**: its in-table structural-prerequisite role is retained, while its ontological status is explicitly open (`Philosophy/SRT_L0_Ontological_Status.md`); the "candidate" label describes this existing status and does **not** downgrade `κ_0` in this pass. (b) `κ_{c1}` and `κ_{c1.5}` are **consciousness-stage phase-transition thresholds** — canonical source `Philosophy/SRT_Consciousness_Conditions.md §三`. As threshold-bearing points their specific values are lab-level (P4) per `Governance/SRT_CLAIM_LADDER.md`, even where a Scope column reads "Core". The two families share no derivation path: an equation over `κ_0` says nothing about `κ_{c1}`, and vice versa. This rule adds the namespace guard and claim-level annotation **only**; it does not rename any symbol and does not modify any equation referencing `κ_0`, `κ(t)`, `κ_{c1}`, or `κ_{c1.5}`. A full `κ_0` / `ε_pg` dependency-graph audit is deferred to GOV-SUB01 Pass 2.
