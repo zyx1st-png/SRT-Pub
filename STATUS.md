@@ -51,6 +51,7 @@ updated: 2026-09-05
 - **已发表/在途稿件 carve-out 保留**：Frontiers 1837760 已正式出版；*Costly Selective Closure* / Adaptive Behavior 已投稿、未外审。新身份不追溯改写其 framing、公式或依赖，除非期刊提出明确要求。
 - **sigma B1 scope truth-up 已完成 current-main clean replacement**：仅同步既有 owner 已声明的 `σ_{sr}` 规约性 / 可替换阶参地位及其 representation、trace/ext attribution、collective-boundary scope；这是 owner-consistency housekeeping，不是新的 sigma 理论，也不得重新成为当前理论主线。
 - Pipeline 1 / SourceCard / Material Log 继续有效：外部材料可提供 factual evidence、resonance、contrast、pressure、mechanism example、domain constraint；不得写成“来源证明 Constitution”。
+- 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
 ## 当前仓库状态
 
