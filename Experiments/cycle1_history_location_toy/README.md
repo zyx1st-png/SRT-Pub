@@ -1,3 +1,20 @@
+---
+id: SRT-EXP-CYCLE1-HISTORY-LOCATION-TOY-README
+type: proposal
+status: active
+record_stage: cycle1_toy_coherence_result
+date: 2026-09-05
+layer: meta
+epistemic_layer: bridge
+claim_mode: experiment_design
+canonical: false
+dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS3_2026-09-05.md
+  - Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_HISTORY_LOCATION_MINIMAL_CAUSAL_MODEL_2026-09-05.md
+  - Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE1_INTERNAL_OWNER_REUSE_AUDIT_2026-09-05.md
+tags: [AuthorReentry, Cycle1, Experiment, HistoryLocation, Multiplicity, Bearer, Reset]
+---
+
 # Cycle 1 history-location toy model
 
 > **Status:** toy causal-coherence test only. It is not empirical support for SRT ontology, does not define Bearer identity, and does not earn Level 2 by itself.
