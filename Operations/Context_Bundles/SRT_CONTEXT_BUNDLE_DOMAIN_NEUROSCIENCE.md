@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 66283f4b
+source_commit: b1f4efdc
 source_branch: governance/post903-canonical-hardening-20260905
 source_dirty: false
-inputs_digest: eb23c24d32d740d2
+inputs_digest: 9ee9795318f6022b
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: eb23c24d32d740d2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `66283f4b` |
+| 来源 commit | `b1f4efdc` |
 | 来源分支 | `governance/post903-canonical-hardening-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 66283f4b
+source_commit: b1f4efdc
 source_branch: governance/post903-canonical-hardening-20260905
 source_dirty: false
-inputs_digest: eb23c24d32d740d2
+inputs_digest: 9ee9795318f6022b
 ---
 
 # SRT 上下文包
