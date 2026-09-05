@@ -13,8 +13,8 @@ dependency: [SRT-L1-FORMALISM]
 # SRT L1 Formalism Split Index Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_L1_Formalism.md`](../SRT_L1_Formalism.md)
-- Source owner bytes: `59897`
-- Source owner SHA-256: `bdf39ef3fd4577da6b6ec1ccad9d00656846c90fff473f3c2d9ae380c82bc224`
+- Source owner bytes: `60932`
+- Source owner SHA-256: `f140ee70c6c4cde70c03e3224e38b6a8485218cc809a1c8fd4aedcc9589b53e5`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
