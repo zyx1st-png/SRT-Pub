@@ -1,1 +1,1 @@
-trigger google books JSL vol.6 bibliographic/source identifier extraction
+trigger HathiTrust exact identifier probe for JSL 1941 volume 6
