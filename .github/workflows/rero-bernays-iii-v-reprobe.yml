@@ -1,4 +1,4 @@
-name: Szeged Kalmar Link Context Mapper
+name: Szeged Kalmar Bibliography Item 17 Probe
 
 on:
   push:
@@ -14,41 +14,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Map each linked PDF to surrounding article-page text
+      - name: Probe likely filenames for bibliography item 17
         shell: bash
         run: |
           set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
           python - <<'PY'
-          import urllib.request, urllib.parse, re, html, json
-          page='https://www.inf.u-szeged.hu/kalmar/pages/munkassaga_cikkek.php'
+          import urllib.request, urllib.parse, hashlib, os, subprocess, json
+          base='https://www.inf.u-szeged.hu/kalmar/pdf/'
           ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
-          req=urllib.request.Request(page,headers={'User-Agent':ua})
-          with urllib.request.urlopen(req,timeout=60) as r:
-              raw=r.read().decode('utf-8','ignore')
-          print('HTML_LEN=',len(raw))
-
-          # For each explicit PDF href, capture a wide surrounding window and strip markup.
-          rows=[]
-          for m in re.finditer(r'href=["\']([^"\']*/pdf/[^"\']+\.pdf[^"\']*)["\']',raw,re.I):
-              href=html.unescape(m.group(1))
-              url=urllib.parse.urljoin(page,href)
-              name=urllib.parse.unquote(url.rsplit('/',1)[-1])
-              window=raw[max(0,m.start()-1400):min(len(raw),m.end()+1400)]
-              # retain block separators before stripping tags
-              window=re.sub(r'(?i)<br\s*/?>|</(?:p|li|div|tr|td|h\d)>',' | ',window)
-              text=re.sub(r'<[^>]+>',' ',window)
-              text=html.unescape(text)
-              text=' '.join(text.split())
-              row={'name':name,'url':url,'context':text[:2400]}
-              rows.append(row)
-              print('ROW=',json.dumps(row,ensure_ascii=False))
-
-          print('COUNT=',len(rows))
-          print('\n=== POSSIBLE 1930s / ENGLISH / LOGIC CONTEXTS ===')
-          needles=['1938','1939','1940','decision','ackermann','symbolic','logic','entscheidungsproblem','reduction','predicate']
-          for row in rows:
-              low=row['context'].lower()
-              hit=[n for n in needles if n in low]
-              if hit:
-                  print('CANDIDATE=',json.dumps({'name':row['name'],'hits':hit,'context':row['context']},ensure_ascii=False))
+          names=[
+            '17.pdf','17_jsl.pdf','17_jsl_39.pdf','17_jsl_1939.pdf','17_jsl_4.pdf','17_jsl_4_1.pdf','17_jsl_4_1_1_9.pdf',
+            '17_j_symbolic_logic.pdf','17_j_symbolic_logic_39.pdf','17_j_symbolic_logic_1939.pdf','17_j_symbolic_logic_4.pdf','17_j_symbolic_logic_4_1.pdf','17_j_symbolic_logic_4_1_1_9.pdf',
+            '17_j_symb_logic.pdf','17_j_symb_log.pdf','17_symbolic_logic.pdf','17_journal_symbolic_logic.pdf','17_journal_of_symbolic_logic.pdf','17_journal_of_symbolic_logic_1939.pdf',
+            '17_kalmar.pdf','17_ackermann.pdf','17_decision_problem.pdf','17_on_the_reduction.pdf','17_on_the_reduction_of_the_decision_problem.pdf'
+          ]
+          def fetch(name):
+              url=base+urllib.parse.quote(name)
+              req=urllib.request.Request(url,headers={'User-Agent':ua,'Accept':'application/pdf,*/*'})
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as r:
+                      b=r.read()
+                      return {'name':name,'url':url,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'bytes':len(b),'body':b}
+              except Exception as e:
+                  b=b''
+                  if hasattr(e,'read'):
+                      try:b=e.read()
+                      except:pass
+                  return {'name':name,'url':url,'status':getattr(e,'code',None),'error':repr(e),'bytes':len(b),'body':b}
+          hits=[]
+          for name in names:
+              r=fetch(name); b=r.pop('body')
+              r['magic']=repr(b[:12]); r['sha256']=hashlib.sha256(b).hexdigest() if b else None
+              r['pdf']=b.startswith(b'%PDF')
+              if r['pdf']:
+                  path='/tmp/item17.pdf'; open(path,'wb').write(b)
+                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
+                  pages=None
+                  for line in info.splitlines():
+                      if line.startswith('Pages:'):
+                          try:pages=int(line.split(':',1)[1].strip())
+                          except:pass
+                  r['pages']=pages
+                  hits.append((name,path,r.copy()))
+              print('PROBE=',json.dumps(r,ensure_ascii=False))
+          print('PDF_HIT_COUNT=',len(hits))
+          for name,path,r in hits:
+              print('PDF_HIT=',json.dumps(r,ensure_ascii=False))
           PY
