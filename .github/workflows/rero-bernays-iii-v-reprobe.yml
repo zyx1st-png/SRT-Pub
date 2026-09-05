@@ -1,4 +1,4 @@
-name: Kalmar 1939 Cambridge Direct PDF Probe
+name: Szeged Kalmar Ambiguous PDF Quick Probe
 
 on:
   push:
@@ -14,34 +14,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify constructed Cambridge direct PDF object for Kalmar 1939
+      - name: Inspect ambiguous numeric/generic linked PDFs for exact 1939 target
         shell: bash
         run: |
           set -euo pipefail
           sudo apt-get update -qq
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          url='https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A52C0CE45E8EC86E16AB8C3A20390142/S0022481200047903a.pdf/on-the-reduction-of-the-decision-problem-first-paper-ackermann-prefix-a-single-binary-predicate.pdf'
-          out='/tmp/kalmar1939.bin'
-          echo "URL=$url"
-          curl -L --retry 2 --retry-delay 2 --connect-timeout 20 --max-time 120 -A 'Mozilla/5.0' -sS -D /tmp/headers.txt -o "$out" -w 'HTTP=%{http_code}\nTYPE=%{content_type}\nSIZE=%{size_download}\nFINAL=%{url_effective}\n' "$url" || true
-          echo "FILE=$(file -b "$out" || true)"
-          if file -b "$out" | grep -qi 'PDF document'; then
-            echo "SHA256=$(sha256sum "$out" | awk '{print $1}')"
-            pages=$(pdfinfo "$out" | awk -F: '/^Pages:/ {gsub(/ /,"",$2); print $2}')
-            echo "PDFINFO_PAGES=$pages"
-            echo '--- FIRST ---'
-            pdftotext -f 1 -l 2 -layout "$out" - | sed -n '1,45p'
-            echo '--- LAST ---'
-            pdftotext -f "$pages" -l "$pages" -layout "$out" - | tail -n 45
-            mkdir -p /tmp/render
-            pdftoppm -png -r 72 "$out" /tmp/render/page >/dev/null 2>&1
-            echo "RENDER_COUNT=$(find /tmp/render -type f -name 'page-*.png' | wc -l)"
-            echo "UNIQUE_RENDER_HASHES=$(sha256sum /tmp/render/page-*.png | awk '{print $1}' | sort -u | wc -l)"
-            alltext=$(pdftotext -layout "$out" - | tr '\n' ' ')
-            echo "TITLE_MATCH=$(printf '%s' "$alltext" | grep -Fci 'ON THE REDUCTION OF THE DECISION PROBLEM' || true)"
-            echo "AUTHOR_MATCH=$(printf '%s' "$alltext" | grep -Fci 'KALM' || true)"
-          else
-            echo '--- BODY PREFIX ---'
-            head -c 1800 "$out" | tr '\n' ' ' || true
-            echo
-          fi
+          python - <<'PY'
+          import urllib.request, os, subprocess, hashlib, json
+          base='https://www.inf.u-szeged.hu/kalmar/pdf/'
+          names=['5.pdf','21.pdf','44.pdf','58.pdf','69.pdf','75.pdf','94.pdf','0224kalmar.pdf',
+                 '2_acta_sci.pdf','14_matfiz_lapok_36.pdf','19_matfiz_lapok_41.pdf','29_acta_sci_math_1.pdf','29_acta_sci_math_2.pdf',
+                 '31_acta_sci_math.pdf','32_acta_sci_math_1.pdf','32_acta_sci_math_2.pdf','34_acta_sci_math.pdf','35_act_sci_math.pdf','38_mat_fiz_lapok.pdf','40_acta_sci_math.pdf','43_mta_fizoszt_52.pdf']
+          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
+          for i,name in enumerate(names,1):
+              url=base+name; path=f'/tmp/q{i}.pdf'
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':ua})
+                  with urllib.request.urlopen(req,timeout=45) as r:
+                      b=r.read()
+                  open(path,'wb').write(b)
+              except Exception as e:
+                  print('ROW=',json.dumps({'name':name,'error':repr(e)},ensure_ascii=False)); continue
+              pdf=b.startswith(b'%PDF')
+              pages=None; text=''; head=''
+              if pdf:
+                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
+                  for line in info.splitlines():
+                      if line.startswith('Pages:'):
+                          try: pages=int(line.split(':',1)[1].strip())
+                          except: pass
+                  try:
+                      text=subprocess.run(['pdftotext','-layout',path,'-'],capture_output=True,text=True,errors='ignore',timeout=45).stdout
+                  except subprocess.TimeoutExpired:
+                      text=subprocess.run(['pdftotext','-layout','-f','1','-l','2',path,'-'],capture_output=True,text=True,errors='ignore').stdout
+                  head=' '.join(text.replace('\x0c',' ').split())[:900]
+              low=text.lower()
+              flags={
+                'target':'on the reduction of the decision problem' in low,
+                'ackermann':'ackermann' in low,
+                'jsl':'symbolic logic' in low,
+                '1939':'1939' in low,
+                'kalmar':'kalm' in low,
+              }
+              print('ROW=',json.dumps({'name':name,'bytes':len(b),'pdf':pdf,'pages':pages,'sha256':hashlib.sha256(b).hexdigest(),'flags':flags,'head':head},ensure_ascii=False))
+              os.remove(path)
+          PY
