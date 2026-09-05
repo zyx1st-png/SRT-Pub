@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 157bd098
-source_branch: theory/author-reentry-cycle1-one-formation-20260905
+source_commit: d16431c3
+source_branch: theory/author-reentry-cycle2-relational-convergence-20260905
 source_dirty: false
-inputs_digest: 958963a63c475ec1
+inputs_digest: fa5a00c73e180615
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 958963a63c475ec1
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-05 |
-| 来源 commit | `157bd098` |
-| 来源分支 | `theory/author-reentry-cycle1-one-formation-20260905` |
+| 来源 commit | `d16431c3` |
+| 来源分支 | `theory/author-reentry-cycle2-relational-convergence-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 

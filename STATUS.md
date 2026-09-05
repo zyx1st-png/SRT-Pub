@@ -20,9 +20,13 @@ updated: 2026-09-05
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
 > **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **Cycle 1 最新作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS4_2026-09-05.md`
+> **Cycle 2 当前阶段记录与待裁决问题**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_INTERIM_CLOSURE_2026-09-05.md`（§§11–12 为整合复核与下一次作者裁决入口）
 > **历史条目**：`Operations/Status_History/`
 
 ## Fast Status
+
+- **Cycle 2 已形成阶段记录，尚未完成理论收口**：PASS1–PASS4、三轮 strongest-neighbor pressure 与内部 red-team 由现有 #911 保存。当前候选是双侧 Selection 与历史支持/抑制参与 One-formation 的 A+C 生成链；Level 1 仅保留既有审计的 weakened/narrowed provisional judgment，不能把整条链标为作者已裁决。post-red-team 作者二次裁决、独立问题族核验与可信 Level-2 路径仍未支付；第三井与 broad synthesis 继续 HOLD。下一步直接使用 interim closure §12 的具体问题，不重做四轮作者对话，不制造 v3/toy。
+- **Cycle 2 整合复核**：minimum non-neutrality 只约束 primitive actualisation 的实现，不产生/保证第一次发生；当前退居背景不等于永久排除或未来可达性的单调下降。L0 §六与 2026-08-05 显著性/侧抑制源材料已经包含相关双侧关系，应恢复来源连续性；本轮不认领新的双侧机制或改写 canonical。
 
 - 首读顺序唯一权威仍是 `AGENTS.md §Session Start`。
 - **2026-09-04 Architecture v2 继续有效，但受 2026-09-05 修正案控制**：`Domain Reconstruction Framework` 仍位于 Constitution 与具体 deep well 之间；它现在是更宽本体重构流程中的领域问题重组面，不再以 bearer/objectification 或直接增量审计穷尽领域重构。
@@ -56,7 +60,7 @@ updated: 2026-09-05
 ## 当前仓库状态
 
 - 单一权威主分支仍为 `main`；根目录治理继续执行 2026-07-20 减负纪律。
-- **Cycle 1 通过现有 PR #910 保存为非 canonical 研究记录**：作者随后要求“处理未关闭pr，然后继续推进”并回复“继续”，允许检查后整合已收口记录；原 Draft-only 仓库处理限制不再作为阻塞。closure packet §12 记录此次整合授权，实时合并状态以 GitHub 为准。四次作者 source trace、邻居/红队压力与负面实验结果全部保留；整合不等于 canonicalize，也不解除第三井 HOLD。
+- **Cycle 1 已通过 PR #910 合并到 main**：merge commit `f351f09a37f584344c6306d951ec485c0c545d2a`。四次作者 source trace、邻居/红队压力与负面实验结果全部保留；无 canonical promotion。Cycle 2 的原 stacked PR #911 已改为以 main 为基线，继续作为非 canonical 阶段记录处理；两轮整合都不等于第三井放行。
 - 当前 reconstruction hardening 只改 programme / source / bootstrap / governance/template 层，不在本轮 substantive 改写冻结的 P0/P1/P2 owner 或 L0 owner。
 - `Core_21` 现有 P0/P1/P2-P4、Core_22 equations、d/`Psi_f`/`T_dir`、Individuation/sigma、collective formal assets 继续按原历史/技术角色可检索；是否重分类由后续 role audit 决定。
 - 2026-08-29 Selection-first derivational/subtraction/sigma/bearer 工作已提供大量可复用压力材料；不再以“找到最小 novelty residual”作为当前研究引擎。
