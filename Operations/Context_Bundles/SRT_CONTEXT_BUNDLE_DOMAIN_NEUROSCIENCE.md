@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-04
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-05
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-04
-source_commit: 37435374
-source_branch: epistemology/framework-routing-sync-20260904
+generated: 2026-09-05
+source_commit: 570ea6b4
+source_branch: theory/author-reentry-governance-correction-20260905
 source_dirty: false
-inputs_digest: e38e301783c61572
+inputs_digest: 7042ec1a3031f50e
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: e38e301783c61572
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-04 |
-| 来源 commit | `37435374` |
-| 来源分支 | `epistemology/framework-routing-sync-20260904` |
+| 生成日期 | 2026-09-05 |
+| 来源 commit | `570ea6b4` |
+| 来源分支 | `theory/author-reentry-governance-correction-20260905` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -240,8 +240,8 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 ### 15. Claim-Level Guard
 
 The P0–P5 ladder remains historical/canonical authority until a separate audit and
-author decision reclassify it (see §6 and `STATUS.md` 当前权威锚点). Reconstructing
-SRT's highest identity as a Constitution does not by itself retire it.
+author decision reclassify it (see §6 and `STATUS.md` current authority anchors). Reconstructing
+SRT's highest identity does not by itself retire it.
 
 - P0: primitive axiom
 - P1: constitutive theorem
@@ -264,16 +264,18 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 For non-trivial SRT work:
 
-1. recover current programme identity from `STATUS.md`;
-2. read `SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` for current post-Constitution sequencing;
-3. distinguish current historical/canonical authority from prospective Constitution reconstruction;
-4. state whether the claim is Constitution, Domain Framework, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
+1. recover current programme direction from the 2026-09-05 author correction + governance amendment; treat stale `STATUS.md` wording as historical until synchronized;
+2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
+3. distinguish current historical/canonical authority from prospective ontology reconstruction;
+4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
 5. do not close listed open tensions;
-6. for Constitution, use source recovery + author convergence rather than greenfield generation;
-7. for a newly selected domain, do not open a deep well before the Material Re-entry Pass and Domain Reconstruction Framework unless explicitly handling a grandfathered pilot;
-8. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
-9. after a deep well, route reusable distinctions and adverse results back into the parent framework before broadening;
-10. prefer explicit boundaries to broad unification language.
+6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
+7. for a newly selected/revised domain, map relevant open ontology questions, strongest neighbors and common residual problem before forcing a deep well;
+8. do not treat bearer/objectification as the whole domain ontology;
+9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
+10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
+11. do not open a third main well until explicit author release;
+12. prefer explicit boundaries to broad unification language.
 
 ---
 
