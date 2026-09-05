@@ -1,4 +1,4 @@
-name: Szeged Kalmar Article Archive Probe
+name: Szeged Kalmar Linked PDF Classifier
 
 on:
   push:
@@ -14,107 +14,125 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect Kalmar memorial article and PDF links
+      - name: Classify all explicitly linked Kalmar archive PDFs
         shell: bash
         run: |
           set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
           python - <<'PY'
-          import urllib.request, urllib.parse, re, html, hashlib
+          import urllib.request, urllib.parse, re, html, os, subprocess, hashlib, json, tempfile
           from html.parser import HTMLParser
 
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
-          BASE='https://www.inf.u-szeged.hu/kalmar/'
-          pages=[
-            BASE+'pages/munkassaga_cikkek.php',
-            BASE+'pages/munkassaga_bibliografia.php',
-            BASE+'index.php',
-            BASE+'robots.txt',
-            BASE+'sitemap.xml',
-          ]
+          PAGE='https://www.inf.u-szeged.hu/kalmar/pages/munkassaga_cikkek.php'
 
-          def get(url):
-              req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'*/*'})
+          def req(url, method='GET'):
+              return urllib.request.Request(url,method=method,headers={'User-Agent':UA,'Accept':'*/*'})
+
+          def fetch(url, out=None, timeout=90):
               try:
-                  with urllib.request.urlopen(req,timeout=60) as r:
-                      b=r.read(); return r.status,r.geturl(),r.headers.get('Content-Type',''),b
+                  with urllib.request.urlopen(req(url),timeout=timeout) as r:
+                      if out:
+                          with open(out,'wb') as f:
+                              while True:
+                                  chunk=r.read(1024*1024)
+                                  if not chunk: break
+                                  f.write(chunk)
+                          return {'ok':True,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'len':os.path.getsize(out)}
+                      b=r.read()
+                      return {'ok':True,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'len':len(b),'body':b}
               except Exception as e:
-                  b=b''
-                  if hasattr(e,'read'):
-                      try:b=e.read()
-                      except:pass
-                  return getattr(e,'code',None),url,'',b
+                  return {'ok':False,'status':getattr(e,'code',None),'error':repr(e),'final':url,'type':'','len':0,'body':b''}
 
-          class LinkParser(HTMLParser):
-              def __init__(self):
-                  super().__init__(); self.links=[]; self.cur=None; self.text=[]
+          class P(HTMLParser):
+              def __init__(self): super().__init__(); self.links=[]; self.cur=None; self.txt=[]
               def handle_starttag(self,tag,attrs):
-                  if tag.lower()=='a':
-                      d=dict(attrs); self.cur=d.get('href'); self.text=[]
+                  if tag.lower()=='a': self.cur=dict(attrs).get('href'); self.txt=[]
               def handle_data(self,data):
-                  if self.cur is not None: self.text.append(data)
+                  if self.cur is not None: self.txt.append(data)
               def handle_endtag(self,tag):
                   if tag.lower()=='a' and self.cur is not None:
-                      self.links.append((self.cur,' '.join(''.join(self.text).split())))
-                      self.cur=None; self.text=[]
+                      self.links.append((self.cur,' '.join(''.join(self.txt).split())))
+                      self.cur=None; self.txt=[]
 
-          all_links=[]
-          all_html={}
-          print('=== PAGE FETCHES ===')
-          for url in pages:
-              st,final,ct,b=get(url)
-              print('\nURL=',url,'HTTP=',st,'TYPE=',ct,'LEN=',len(b),'FINAL=',final,'SHA256=',hashlib.sha256(b).hexdigest() if b else None)
-              text=b.decode('utf-8','ignore')
-              all_html[url]=text
-              print('HEAD=',repr(text[:800]))
-              for needle in ['Ackermann','decision problem','1939','Symbolic Logic','On the reduction']:
-                  print('HAS_'+needle.upper().replace(' ','_')+'=',needle.lower() in text.lower())
-              p=LinkParser(); p.feed(text)
-              for href,label in p.links:
-                  absu=urllib.parse.urljoin(final,html.unescape(href))
-                  all_links.append((url,absu,label))
+          rr=fetch(PAGE)
+          print('INDEX_HTTP=',rr.get('status'),'LEN=',rr.get('len'),'TYPE=',rr.get('type'))
+          page=rr.get('body',b'').decode('utf-8','ignore')
+          p=P(); p.feed(page)
+          links=[]
+          for href,label in p.links:
+              u=urllib.parse.urljoin(PAGE,html.unescape(href))
+              if '/kalmar/pdf/' in u.lower() and u not in [x[0] for x in links]: links.append((u,label))
+          print('LINKED_PDF_COUNT=',len(links))
 
-          print('\n=== ALL PDF LINKS ===')
-          pdfs=[]
-          for src,u,label in all_links:
-              if '/kalmar/pdf/' in u.lower() or u.lower().split('?')[0].endswith('.pdf'):
-                  row=(src,u,label)
-                  if row not in pdfs: pdfs.append(row)
-          print('PDF_LINK_COUNT=',len(pdfs))
-          for i,(src,u,label) in enumerate(pdfs,1):
-              print(f'PDF_{i:03d}_URL={u}')
-              print(f'PDF_{i:03d}_LABEL={label!r}')
-              # Context from source HTML around raw URL basename or href.
-              txt=all_html.get(src,'')
-              base=u.rsplit('/',1)[-1]
-              pos=txt.lower().find(base.lower())
-              if pos>=0:
-                  context=re.sub(r'\s+',' ',html.unescape(txt[max(0,pos-500):pos+700]))
-                  context=re.sub(r'<[^>]+>',' ',context)
-                  context=' '.join(context.split())
-                  print(f'PDF_{i:03d}_CTX={context!r}')
+          exact_hits=[]; suspicious=[]; rows=[]
+          targets={
+            'on_reduction':'on the reduction of the decision problem',
+            'ackermann':'ackermann',
+            'jsl':'journal of symbolic logic',
+            'jsl_short':'symbolic logic',
+            'year1939':'1939',
+            'pages_1_9':'1-9',
+            'kalmar':'kalm',
+          }
 
-          print('\n=== TARGET-LIKE LINKS / CONTEXT ===')
-          target_terms=['ackermann','decision problem','1939','symbolic logic','reduction of the decision']
-          for src,u,label in all_links:
-              combined=(u+' '+label).lower()
-              if any(t in combined for t in target_terms):
-                  print('TARGET_LINK=',u,'LABEL=',repr(label),'SOURCE=',src)
+          for i,(url,label) in enumerate(links,1):
+              name=urllib.parse.unquote(url.rsplit('/',1)[-1])
+              path=f'/tmp/k_{i:03d}.pdf'
+              r=fetch(url,path,timeout=120)
+              magic=b''
+              if os.path.exists(path):
+                  with open(path,'rb') as f: magic=f.read(8)
+              ispdf=magic.startswith(b'%PDF')
+              pages=None; first=''; full=''; titlemeta=''; authormeta=''; sha=None
+              if ispdf:
+                  sha=hashlib.sha256(open(path,'rb').read()).hexdigest()
+                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
+                  for line in info.splitlines():
+                      if line.startswith('Pages:'):
+                          try: pages=int(line.split(':',1)[1].strip())
+                          except: pass
+                      elif line.startswith('Title:'): titlemeta=line.split(':',1)[1].strip()
+                      elif line.startswith('Author:'): authormeta=line.split(':',1)[1].strip()
+                  cmd=['pdftotext','-layout','-f','1','-l',str(min(2,pages or 2)),path,'-']
+                  first=subprocess.run(cmd,capture_output=True,text=True,errors='ignore',timeout=60).stdout
+                  # Only do whole-document extraction for small/moderate PDFs or if first pages look target-like.
+                  lowfirst=first.lower()
+                  first_flags={k:(v in lowfirst) for k,v in targets.items()}
+                  if (pages or 0)<=80 or first_flags['on_reduction'] or first_flags['ackermann'] or first_flags['jsl_short']:
+                      try:
+                          full=subprocess.run(['pdftotext','-layout',path,'-'],capture_output=True,text=True,errors='ignore',timeout=90).stdout
+                      except subprocess.TimeoutExpired:
+                          full=first
+                  else:
+                      full=first
+              low=full.lower()
+              flags={k:(v in low) for k,v in targets.items()}
+              norm=' '.join(first.replace('\x0c',' ').split())[:850]
+              row={
+                'i':i,'name':name,'label':label,'http':r.get('status'),'type':r.get('type'),'bytes':r.get('len'),
+                'pdf':ispdf,'pages':pages,'sha256':sha,'titlemeta':titlemeta,'authormeta':authormeta,
+                'flags':flags,'head':norm
+              }
+              rows.append(row)
+              score=sum(flags.values())
+              exact=flags['on_reduction'] and flags['ackermann'] and flags['jsl_short']
+              if exact: exact_hits.append(row)
+              if score>=2 or exact: suspicious.append(row)
+              print('ROW=',json.dumps(row,ensure_ascii=False))
+              try: os.remove(path)
+              except: pass
 
-          for src,text in all_html.items():
-              low=text.lower()
-              for needle in ['ackermann prefix','on the reduction of the decision problem','j. symbolic logic 4','1939']:
-                  start=0; n=0
-                  while True:
-                      pos=low.find(needle,start)
-                      if pos<0 or n>=10: break
-                      ctx=re.sub(r'<[^>]+>',' ',html.unescape(text[max(0,pos-600):pos+1000]))
-                      ctx=' '.join(ctx.split())
-                      print('TARGET_CONTEXT_SRC=',src,'NEEDLE=',needle,'CTX=',repr(ctx))
-                      start=pos+len(needle); n+=1
+          print('\n=== TARGET SUMMARY ===')
+          print('EXACT_HIT_COUNT=',len(exact_hits))
+          for row in exact_hits: print('EXACT=',json.dumps(row,ensure_ascii=False))
+          print('SUSPICIOUS_COUNT=',len(suspicious))
+          for row in suspicious: print('SUSPICIOUS=',json.dumps(row,ensure_ascii=False))
 
-          print('\n=== SAME-SITE ARTICLE/DOWNLOAD LINKS ===')
-          seen=set()
-          for src,u,label in all_links:
-              if u.startswith(BASE) and u not in seen and any(x in u.lower() for x in ['/pdf/','cikk','download','munkassaga']):
-                  seen.add(u); print('SITE_LINK=',u,'LABEL=',repr(label),'SOURCE=',src)
+          print('\n=== NUMERIC / GENERIC FILE SUMMARY ===')
+          for row in rows:
+              stem=row['name'].rsplit('.',1)[0]
+              if stem.isdigit() or re.fullmatch(r'\d+_\d+',stem) or stem in ['0224kalmar']:
+                  print('GENERIC=',json.dumps(row,ensure_ascii=False))
           PY
