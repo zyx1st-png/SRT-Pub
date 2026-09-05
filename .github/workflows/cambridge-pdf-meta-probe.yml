@@ -1,4 +1,4 @@
-name: Szeged Kalmar Linked PDF Classifier
+name: Szeged Kalmar 9-Page Sparse OCR Probe
 
 on:
   push:
@@ -14,36 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Classify all explicitly linked Kalmar archive PDFs
+      - name: Find exact 9-page scans and OCR only their first pages
         shell: bash
         run: |
           set -euo pipefail
           sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils >/dev/null
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr >/dev/null
           python - <<'PY'
-          import urllib.request, urllib.parse, re, html, os, subprocess, hashlib, json, tempfile
+          import urllib.request, urllib.parse, html, os, subprocess, hashlib, json
           from html.parser import HTMLParser
 
-          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
           PAGE='https://www.inf.u-szeged.hu/kalmar/pages/munkassaga_cikkek.php'
-
-          def req(url, method='GET'):
-              return urllib.request.Request(url,method=method,headers={'User-Agent':UA,'Accept':'*/*'})
-
-          def fetch(url, out=None, timeout=90):
-              try:
-                  with urllib.request.urlopen(req(url),timeout=timeout) as r:
-                      if out:
-                          with open(out,'wb') as f:
-                              while True:
-                                  chunk=r.read(1024*1024)
-                                  if not chunk: break
-                                  f.write(chunk)
-                          return {'ok':True,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'len':os.path.getsize(out)}
-                      b=r.read()
-                      return {'ok':True,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'len':len(b),'body':b}
-              except Exception as e:
-                  return {'ok':False,'status':getattr(e,'code',None),'error':repr(e),'final':url,'type':'','len':0,'body':b''}
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
 
           class P(HTMLParser):
               def __init__(self): super().__init__(); self.links=[]; self.cur=None; self.txt=[]
@@ -56,83 +38,76 @@ jobs:
                       self.links.append((self.cur,' '.join(''.join(self.txt).split())))
                       self.cur=None; self.txt=[]
 
-          rr=fetch(PAGE)
-          print('INDEX_HTTP=',rr.get('status'),'LEN=',rr.get('len'),'TYPE=',rr.get('type'))
-          page=rr.get('body',b'').decode('utf-8','ignore')
-          p=P(); p.feed(page)
+          def download(url,path):
+              req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'application/pdf,*/*'})
+              with urllib.request.urlopen(req,timeout=90) as r:
+                  with open(path,'wb') as f:
+                      while True:
+                          c=r.read(1024*1024)
+                          if not c: break
+                          f.write(c)
+                  return r.status,r.headers.get('Content-Type',''),r.geturl()
+
+          req=urllib.request.Request(PAGE,headers={'User-Agent':UA})
+          with urllib.request.urlopen(req,timeout=60) as r:
+              text=r.read().decode('utf-8','ignore')
+          p=P(); p.feed(text)
           links=[]
           for href,label in p.links:
               u=urllib.parse.urljoin(PAGE,html.unescape(href))
-              if '/kalmar/pdf/' in u.lower() and u not in [x[0] for x in links]: links.append((u,label))
+              if '/kalmar/pdf/' in u.lower() and u not in [x[0] for x in links]:
+                  links.append((u,label))
           print('LINKED_PDF_COUNT=',len(links))
 
-          exact_hits=[]; suspicious=[]; rows=[]
-          targets={
-            'on_reduction':'on the reduction of the decision problem',
-            'ackermann':'ackermann',
-            'jsl':'journal of symbolic logic',
-            'jsl_short':'symbolic logic',
-            'year1939':'1939',
-            'pages_1_9':'1-9',
-            'kalmar':'kalm',
-          }
-
+          nine=[]
           for i,(url,label) in enumerate(links,1):
               name=urllib.parse.unquote(url.rsplit('/',1)[-1])
-              path=f'/tmp/k_{i:03d}.pdf'
-              r=fetch(url,path,timeout=120)
-              magic=b''
-              if os.path.exists(path):
-                  with open(path,'rb') as f: magic=f.read(8)
-              ispdf=magic.startswith(b'%PDF')
-              pages=None; first=''; full=''; titlemeta=''; authormeta=''; sha=None
-              if ispdf:
+              path=f'/tmp/k{i:03d}.pdf'
+              try:
+                  st,ct,final=download(url,path)
+              except Exception as e:
+                  print('DOWNLOAD_ERROR=',name,repr(e)); continue
+              if not open(path,'rb').read(5).startswith(b'%PDF'):
+                  print('NOT_PDF=',name,ct); os.remove(path); continue
+              info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
+              pages=None
+              for line in info.splitlines():
+                  if line.startswith('Pages:'):
+                      try: pages=int(line.split(':',1)[1].strip())
+                      except: pass
+              if pages==9:
                   sha=hashlib.sha256(open(path,'rb').read()).hexdigest()
-                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
-                  for line in info.splitlines():
-                      if line.startswith('Pages:'):
-                          try: pages=int(line.split(':',1)[1].strip())
-                          except: pass
-                      elif line.startswith('Title:'): titlemeta=line.split(':',1)[1].strip()
-                      elif line.startswith('Author:'): authormeta=line.split(':',1)[1].strip()
-                  cmd=['pdftotext','-layout','-f','1','-l',str(min(2,pages or 2)),path,'-']
-                  first=subprocess.run(cmd,capture_output=True,text=True,errors='ignore',timeout=60).stdout
-                  # Only do whole-document extraction for small/moderate PDFs or if first pages look target-like.
-                  lowfirst=first.lower()
-                  first_flags={k:(v in lowfirst) for k,v in targets.items()}
-                  if (pages or 0)<=80 or first_flags['on_reduction'] or first_flags['ackermann'] or first_flags['jsl_short']:
-                      try:
-                          full=subprocess.run(['pdftotext','-layout',path,'-'],capture_output=True,text=True,errors='ignore',timeout=90).stdout
-                      except subprocess.TimeoutExpired:
-                          full=first
-                  else:
-                      full=first
-              low=full.lower()
-              flags={k:(v in low) for k,v in targets.items()}
-              norm=' '.join(first.replace('\x0c',' ').split())[:850]
-              row={
-                'i':i,'name':name,'label':label,'http':r.get('status'),'type':r.get('type'),'bytes':r.get('len'),
-                'pdf':ispdf,'pages':pages,'sha256':sha,'titlemeta':titlemeta,'authormeta':authormeta,
-                'flags':flags,'head':norm
+                  nine.append((i,name,url,label,path,sha,os.path.getsize(path)))
+                  print('NINE_PAGE=',json.dumps({'i':i,'name':name,'label':label,'bytes':os.path.getsize(path),'sha256':sha,'url':url},ensure_ascii=False))
+              else:
+                  os.remove(path)
+
+          print('NINE_PAGE_COUNT=',len(nine))
+          print('\n=== SPARSE FIRST-PAGE OCR ===')
+          for i,name,url,label,path,sha,size in nine:
+              prefix=f'/tmp/render_{i:03d}'
+              cp=subprocess.run(['pdftoppm','-f','1','-singlefile','-r','220','-png',path,prefix],capture_output=True,text=True,timeout=90)
+              png=prefix+'.png'
+              if cp.returncode!=0 or not os.path.exists(png):
+                  print('RENDER_ERROR=',name,cp.stderr[:500]); continue
+              pngsha=hashlib.sha256(open(png,'rb').read()).hexdigest()
+              ocr=subprocess.run(['tesseract',png,'stdout','-l','eng','--psm','6'],capture_output=True,text=True,errors='ignore',timeout=90).stdout
+              norm='\n'.join(line.strip() for line in ocr.splitlines() if line.strip())
+              low=norm.lower()
+              flags={
+                  'title_phrase':'on the reduction of the decision problem' in low,
+                  'decision_problem':'decision problem' in low,
+                  'ackermann':'ackermann' in low,
+                  'symbolic_logic':'symbolic logic' in low,
+                  'kalmar':'kalmar' in low or 'kalmár' in low,
+                  'first_paper':'first paper' in low,
               }
-              rows.append(row)
-              score=sum(flags.values())
-              exact=flags['on_reduction'] and flags['ackermann'] and flags['jsl_short']
-              if exact: exact_hits.append(row)
-              if score>=2 or exact: suspicious.append(row)
-              print('ROW=',json.dumps(row,ensure_ascii=False))
-              try: os.remove(path)
+              print('OCR_CANDIDATE=',json.dumps({
+                  'name':name,'pdf_sha256':sha,'first_png_sha256':pngsha,
+                  'first_png_bytes':os.path.getsize(png),'flags':flags,
+                  'ocr_head':norm[:2500]
+              },ensure_ascii=False))
+              os.remove(path)
+              try: os.remove(png)
               except: pass
-
-          print('\n=== TARGET SUMMARY ===')
-          print('EXACT_HIT_COUNT=',len(exact_hits))
-          for row in exact_hits: print('EXACT=',json.dumps(row,ensure_ascii=False))
-          print('SUSPICIOUS_COUNT=',len(suspicious))
-          for row in suspicious: print('SUSPICIOUS=',json.dumps(row,ensure_ascii=False))
-
-          print('\n=== NUMERIC / GENERIC FILE SUMMARY ===')
-          for row in rows:
-              stem=row['name'].rsplit('.',1)[0]
-              if stem.isdigit() or re.fullmatch(r'\d+_\d+',stem) or stem in ['0224kalmar']:
-                  print('GENERIC=',json.dumps(row,ensure_ascii=False))
           PY
