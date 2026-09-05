@@ -14,6 +14,7 @@ updated: 2026-09-05
 > **最后更新**：2026-09-05
 > **当前作者级方向**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §4–§11`
+> **当前 Author Re-entry Cycle 1**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md`
 > **当前领域框架模板**：`Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
 > **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
@@ -26,6 +27,7 @@ updated: 2026-09-05
 - **当前第一优先工作线：SRT Constitution + Domain Reconstruction。** 这是一次理论身份/研究方法重构，不是再造一套新 P0/P1，也不是把 2026-08 的 constructive ontology 继续推成新的公理塔。
 - **身份冻结已按具名条件重开，但 canonical 未整体重置**：2026-09-05 作者在审阅本周期两口井证据后显式重开 programme identity，满足 Blueprint §12(4)。这不自动重开每个 active canonical commitment；具体 owner 在被显式重开并按高风险编辑规则修改前继续约束 re-entry。
 - **K/A/B/C/D 权威分层**：`K=current canonical constraint`、`A=current explicit author intuition/adjudication`、`B=historical/recovered SRT`、`C=AI synthesis`、`D=open pressure`。一个 ontology axis 可以同时含 K 与 D；不得因为“问题场开放”就把 K 静默降成 D。
+- **Cycle 1 已启动但未完成**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md` 已对 multiplicity / Selection / broader One-formation 做首轮 K/A/B/C/D calibration。当前只确认 status discipline 能容纳 `determinate manifest actuality = K` 与 `Selection <-> broader One-formation = D` 的并存，并暴露“many 可能已偷带 individuation”这一真实问题；live author first pass、strongest-neighbor、common-problem、Level 0/1/2、red-team 与 second author adjudication 均尚未完成。
 - **当前 L0 约束仍有效**：`Core_Law/SRT_L0_Metaphysics.md` 继续固定：（1）对 world-side determinate manifest actuality，Selection 先于并产生该 actuality；（2）Selection 为无主语过程，pre-existing bearer/selector 不是前提；（3）`Order/秩序` 不在 L0 原生承诺内，旧 L0 order-drive 主句已 replace/superseded，当前“选择趋向秩序”仅允许 L1 回读。前述三条只是治理摘要，若与 L0 owner 的 `§一「选择先于存在」`、`「选择不需要选择者」`、`第一命题（EX-A／Gate 0 合并口径）`、`主句改写记录` 发生漂移，以 owner 为准。开放的是 Selection 与 broader One-formation / stabilization / objectification / later order-convergence 的更深关系，不是把 K 拉平为普通候选。
 - **Constitution v1 定位**：当前 active reader-interface / perspective-operation prototype。六个 reader operations 继续有效，但 **不等于完整 SRT ontology，也不证明全部未来内容都是 bearer/objectification 内容**；Constitution v1 自身已有 anti-bearer-totalization 边界，本轮主要纠正的是 programme shorthand / bootstrap / execution routing 的过度总体化。
 - **Constitution v1 的非形式化边界**：当前接口保持最低必要对象化，不用公式/阈值/完整 state space 作为 constitutional floor；这不推出未来更成熟的 SRT ontology 永远不形式化，也不推出数学不能表达 indexicality。领域形式化继续允许并可能反向约束本体重构。
@@ -58,6 +60,21 @@ updated: 2026-09-05
 - 书稿《从存在到秩序》仍以 `01_Source_Intuition/BOOK/Drafts_26Q/` 为唯一当前主线；本轮将其作为 Constitution 源直觉 reservoir，不直接启动全书统一重写。
 - Frontiers `1837760` 当前 bibliographic status = published，DOI `10.3389/fnins.2026.1837760`；APC/费用沟通不改变出版事实。
 - Adaptive Behavior 稿当前 = submitted / not externally reviewed；不得写成 under review。
+
+## Deferred salvage pointers
+
+These pointers preserve discoverability of closed stale branches without reactivating them as current worklines. The branch is only a source reservoir; any future reuse must be transplanted selectively onto current `main` and re-audited under the then-current programme.
+
+- **#834 — Yu subjective-report / LLM-consciousness close read**
+  - branch: `agent/yu-subjective-report-coupling-material`
+  - salvage value: source-native close read; first-party author clarification separation; checkpoint rollback / perfect duplicate / memory-transfer / history-pressure tests; `history-sensitive != bearer-indexed history` guard.
+  - reactivate when: an active consciousness / history / bearer reconstruction cycle directly needs these pressure cases or source evidence.
+  - do not transplant wholesale: old Material Log / STATUS synchronization from the closed PR.
+- **#845 — research-corpus increment / meditation-process-memory materials**
+  - branch: `codex/research-corpus-increment-pr`
+  - salvage value: 86-file first-read ledger plus Laukkonen–Slagter and Fields–Levin SourceCards / source-native notes.
+  - reactivate when: an active meditation / predictive-processing / process-memory / object-process neighbor cycle requires those sources.
+  - do not transplant wholesale: old bundles, STATUS/log state, old `A-class` namespace, or the prior theory adjudication; all theory claims require fresh K/A/B/C/D routing.
 
 ## 当前权威锚点（本 PR 不改）
 
