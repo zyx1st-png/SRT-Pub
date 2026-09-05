@@ -362,6 +362,7 @@ current interpretation of their compressed arrows and provenance labels.
 | K | Same owner, §六 ε entry and §七 AM-A / Ax-L0-Bootstrap | Minimum non-neutrality constrains realization; it does not derive the first actualisation. The first line of §6 is read accordingly. |
 | A | Cycle-2 PASS1–PASS4 | Mutual support, the relational center-surround analogy, and simultaneous manifestation/suppression are directly traceable author directions. |
 | B | `01_Source_Intuition/Conversations/2026-08-05_SRT_显著性侧抑制与核心直觉思想谱系_对话材料.md` §§二–三 | Existing retrospective source synthesis already discusses the joint formation of a salient content and loss of equal standing for alternatives. It is source continuity, not a new canonical owner or an independently established intellectual genealogy. |
+| B | Current `01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md` §3 / note 9, `Q11_被选择.md` §3, and `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md` §2.3 | Existing book/bridge sources already connect sedimented structure to later option generation through visibility, reachability, friction and payability. Their presence is not evidence of a new Cycle-2 mechanism. Book status/manifest were checked before reading current chapters; no archived chapter supplied current wording. |
 | C | §6 full chain and the surviving dependency rationale | AI organization of author directions; the complete chain has not received the missing post-red-team author decision. |
 | D | Dependency necessity, reactivation, and the scope of relative suppression | Still open. No new threshold, universal suppression law, sufficient Bearer condition, or Level-2 consequence is supplied here. |
 
@@ -372,6 +373,10 @@ Three concrete pressures should be visible before the next author answer:
    Whether an event suppresses a direction now, makes it harder to access later,
    or helps enable its later return must be distinguished. Monotonic loss of
    future possibilities is not licensed by the word `suppression` alone.
+   Q10 also uses backgrounding for an effective supporting condition becoming
+   unobtrusive. A relatively suppressed alternative and a background support
+   are not automatically the same relation; Cycle 2 must not switch between
+   these senses merely because both are called `background`.
 2. **Do not infer a new explanation from a longer conjunction.** Keeping
    support, inhibition, history and genesis in one sentence is not enough to
    establish a changed dependency. After author adjudication, a concrete case
