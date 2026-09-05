@@ -17,6 +17,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 > **Role**: L1 formalism hub. Collects the minimal differential dynamics for the four L1 order parameters—individuation self-reference ratio `σ_{sr}` (bare `σ` in this file's §2-§5 equations refers to the self-reference ratio per the namespace note below, **not** to the `Core/SRT_Core_22_Equations.md` main-equation state field), occlusion threshold `d_c`, directional transparency `T_dir` (promoted from algebraic proxy to independent dynamical variable in §3.5, 2026-04-25), and suffering registration `S`—and their coupling structure. Initial round (2026-04-24) covered three variables; `T_dir` ODE closure was the H2 follow-up.
 > **σ 符号命名空间 (governance-canonical, 2026-04-25)**: 本文件 §2–§5 中的 σ / σ_sub / σ_self / σ_health 统一对应 `σ_{sr} / σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`（自指率族，见 `Core_Law/SRT_L1_Hardening_Notes.md §1` 与 `_SRT_SYMBOL_TABLE.md §Usage Rule 12`）。§6"与主方程的关系"中出现的 σ 对应 `Core/SRT_Core_22_Equations.md` 的主方程状态场（不同对象）；该节已在原地显式标注。正文其余处保留历史符号 σ 以便论述流畅。
 > **Claim-level note**：方程本身在当前 draft_v0 状态按 P1-candidate 读；个别 coefficient、阈值与可测化形式按 P2/P3 读；实验代理语句按 P3/P4 下推至 `Neuroscience/` 与 `AI/`。
+> **σ representation-scope truth-up (2026-08-29, S+R)**：本文件继承 `SRT_Individuation.md §八` 的既有地位：`σ_{sr}` 是规约性的、可替换为等价形式的 P2 阶参解释。§2 的 bare-norm 分解与由其得到的 ODE 只在**已声明**的 `θ^{trace}/θ^{ext}` 归属规则、参数表示与 norm/metric 约定下作为 model-local dynamics 成立；本文件不把 bare ratio 提升为表示不变的自然量、唯一历史归属量或因果控制份额。§6 T-PROJ-1 证明的是**给定 `\mathcal F_\sigma` 后**的条件性投影闭合；C1-C4 不提供 `\mathcal F_\sigma` 的 gauge、唯一归属或 invariant metric。§2.5 T-CHI-1 的族内不变性同样以所选 `σ_{sr}` 坐标已良定义为前提；它不单独证明 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP；它们的定义仍以对应 canonical 文件为准。
 > **RC-A r(t) decision (2026-08-18)**：former P1-T05 不再提供 `r(t)` 的上游。局部 subtractive probe 显示原 `+\kappa_r r(t)` 与 `-\mu_r r(t)` 只是附加 pump / relief 通道，删除后四变量 ODE 仍定义良好，核心 T_dir / suffering / lethal-L2 结构仍保留。因此本文件**删除**该全局 `r(t)` 变量及两项，不把它改挂到 Selection simpliciter 或 `\varepsilon_{pg}`，也不为其选择新的 downstream 定义。§3.1 的 `r(d,P,t)` 仅是既有 occlusion threshold 的局部 operational capacity function，不等同于已删除的全局 `r(t)`，不定义 Selection occurrence。
 > **Depends on**：`Core_Law/SRT_Individuation.md`（σ 定义）、`Core_Law/SRT_Occlusion_Dynamics.md`（d_c 定义与 A/B 分期）、`Core_Law/SRT_Suffering.md`（S 定义与两型分类）、`Core/SRT_Core_22_Equations.md`（主动力学方程）。
@@ -534,7 +535,7 @@ $$
 2. **d_c ↑ → d_sig 被切断**：支付项通过指示函数变为零，系统进入 B 期动力学
 3. **S_{sig} 被外部压制（方程外干预）→ S_{str} ↑ 随 \dot{\Delta}_{avail}**：反最小化原则
 4. **D_{trigger} → S_{str} ↓ 但需 I_{window} 同时打开**：解耦触发不是单独作用，需要窗口协同——这对应 `Occlusion_Dynamics` 的强约束
-5. **T_dir 惯性 + ΔΨ_f^{gap} 扣除 → 致命 `L_2`**：当 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 时，T_dir 贴近 `T_dir^{\mathrm{alg}}` 但实支付持续累积；系统无法从 T_dir 读数本身发现债务（§3.5.3 方程化判据）
+5. **T_dir 惯性 + ΔΨ_f^{gap} 扣除 → 致命 `L_2`**：当 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 时，T_dir 贴近 `T_{dir}^{\mathrm{alg}}` 但实支付持续累积；系统无法从 T_dir 读数本身发现债务（§3.5.3 方程化判据）
 
 former P1-T05 所提供的 `S_{str} → T_dir ↓ → r ↓ → S_{sig}` feedback path 已删除；本轮不以新的 downstream rate 替代它。
 
@@ -695,6 +696,7 @@ former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不
 2. **不**证明 χ(σ_{sr}; σ_{sr}^{self}) 跳跃函数族的普适性（C2 闭包之外）
 3. **不**证明 `\Delta\Psi_f^{\mathrm{gap}}` 的算子层定义（`_SRT_T_DIR_CANONICAL.md §5-§6` 现象学分裂仍为依赖）
 4. ~~**不**证明集体版主方程（Eq-Multi-01 / 02 / 03）→ `Collective_Selection §4.4-§4.6` 的对应投影；集体版 T-PROJ-1^{coll} 是后续轮次的扩展任务~~ **已在 H6（2026-04-25）落地**：`Core_Law/SRT_Collective_Selection.md §4.7 T-PROJ-1^{coll}` 给出集体投影定理（C1^{coll}-C5^{coll} 五条闭包，含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为本节 §6 T-PROJ-1
+5. **不**证明 `\mathcal F_\sigma` 的 trace/ext 分解唯一、bare norm 跨等价参数化不变、或其数值等于因果控制份额；这些是所选 σ 表示本身的额外负担，不由 C1-C4 提供。
 
 ### §6.7 T-PROJ-1 的结构性意义
 

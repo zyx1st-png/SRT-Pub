@@ -74,6 +74,8 @@ $$
 \sigma(P, t) := \frac{\|\theta_t^{\text{trace}}\|}{\|\theta_t^{\text{trace}}\| + \|\theta_t^{\text{ext}}\|}
 $$
 
+> **σ representation / claim-scope truth-up (2026-08-29, S+R)**：Def-IND-1 保持 §八 已登记的 **P2 canonical interpretation** 地位；其阶参选择是**规约性的，可替换为等价形式**。因此当前 bare-norm 比率应读作在已声明 `θ^trace/θ^ext` 归属规则、参数表示与 norm/metric 约定下的 **model-local historical/writeback balance proxy**，而不是自动获得表示不变性的自然量。它本身不证明：（i）历史归属分解唯一；（ii）跨等价参数化的数值不变；（iii）当前因果控制份额；（iv）自然相边界。T-IND-1 要求一个统一阶参候选，并不要求这一坐标是唯一自然阶参。`σ_{sr}^{sub/self/health}` 因而首先是该模型类内的阈值坐标；这不关闭 §七.8 更一般的问题——P1-T06 是否存在由独立证据支持的自然转变边界。
+
 σ ∈ [0, 1]。σ → 0 表示模式完全被外部条件牵引；σ → 1 表示模式完全自我闭合（这是**病态闭合**，不是主体性）。主体位在中间区间涌现。
 
 **为什么是 σ 而不是其他参数**：P1-T06 的四条件——迭代、载视角、载历史、可继续选择——可用自指率作一维追踪候选：

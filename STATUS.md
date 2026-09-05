@@ -44,7 +44,7 @@ updated: 2026-09-05
 - **Source Intuition 优先，但 current canonical ≠ historical source**：本轮不是 greenfield。先从 `Drafts_26Q`、早期 Constitution/Seven Theses/Core Text/L0、Individuation/Hard Problem/Collective、SourceCards/readings/patches、2026-08 audits 中恢复材料；其中 active canonical owner 必须标为 K，不能和历史/书稿材料一起降为 B。
 - **Core/Core_Law 暂不批量降格/改写**：后续先做 epistemic-role reclassification audit，区分 canonical constraint、constitutional source/commentary、conceptual bridge、domain model、operational proxy、historical formalization、manuscript dependency、legacy expression。冻结 owner 的 substantive 变化仍走 C-class / B1 等既有规则。
 - **已发表/在途稿件 carve-out 保留**：Frontiers 1837760 已正式出版；*Costly Selective Closure* / Adaptive Behavior 已投稿、未外审。新身份不追溯改写其 framing、公式或依赖，除非期刊提出明确要求。
-- **#869 sigma B1 repair** 可独立机械收尾，不得重新成为当前理论主线。
+- **sigma B1 scope truth-up 已完成 current-main clean replacement**：仅同步既有 owner 已声明的 `σ_{sr}` 规约性 / 可替换阶参地位及其 representation、trace/ext attribution、collective-boundary scope；这是 owner-consistency housekeeping，不是新的 sigma 理论，也不得重新成为当前理论主线。
 - Pipeline 1 / SourceCard / Material Log 继续有效：外部材料可提供 factual evidence、resonance、contrast、pressure、mechanism example、domain constraint；不得写成“来源证明 Constitution”。
 
 ## 当前仓库状态
