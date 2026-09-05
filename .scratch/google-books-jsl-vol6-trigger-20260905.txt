@@ -1,1 +1,1 @@
-trigger Szeged Kalmar 52-linked-PDF classifier for exact 1939 target
+trigger quick probe for ambiguous Szeged Kalmar PDFs
