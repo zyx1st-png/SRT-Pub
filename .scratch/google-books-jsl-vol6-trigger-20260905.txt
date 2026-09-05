@@ -1,1 +1,1 @@
-trigger direct Szeged bibliography item 17 filename probe
+trigger Yale Fitch MS1477 machine-readable archive probe
