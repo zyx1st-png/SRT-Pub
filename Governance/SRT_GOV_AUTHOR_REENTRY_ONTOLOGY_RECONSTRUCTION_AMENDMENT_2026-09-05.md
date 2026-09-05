@@ -186,25 +186,37 @@ Rules:
 - `C` may organize or propose, but may not silently become `A` or `K`;
 - `D` must remain visibly open and must not be manufactured by relabeling a `K` commitment as undecided.
 
-The same ontology axis may contain more than one status. For example, the exact relation between Selection and One-formation may be `D` while some constraints on Selection itself remain `K`.
+The same ontology axis may contain more than one status. For example, the exact relation between Selection and broader One-formation may be `D` while constraints on determinate world-side manifest actuality remain `K`.
 
 ### 3.2 Current L0 constraints that this amendment does not reopen
 
-Under `Core_Law/SRT_L0_Metaphysics.md` as currently canonical:
+The following are **retrieval-aid summaries only**, not second canonical formulations. The authoritative owner is `Core_Law/SRT_L0_Metaphysics.md`; if any summary below ever diverges from that owner, **the canonical owner controls**.
+
+Authoritative locators:
+
+- `§一「选择先于存在」` and `第一命题（EX-A／Gate 0 合并口径）` for determinate manifest actuality and Selection;
+- `§一「选择不需要选择者」` and the same `第一命题` for subjectless Selection;
+- `§一「确定化自带非对称走向——L₀ 不是完全中性的」` plus `主句改写记录（2026-08-11，Gate 0 canonical landing）` for the current L0/L1 Order boundary.
+
+Under that owner as currently canonical:
 
 ```text
-K: Selection does not require a pre-existing bearer / selector.
-   Selection is a subjectless process; selector-patterns are downstream, not prerequisites.
+K summary: For determinate world-side manifest actuality, Selection precedes / produces
+           the actuality. This does not by itself identify broader One-formation with Selection.
 
-K: Order / 秩序 is not a native L0 content commitment.
-   The old L0 order-drive sentence was replaced / superseded at Gate 0;
-   “selection tends to order” is licensed only as an L1 read-back under the current owner.
+K summary: Selection does not require a pre-existing bearer / selector.
+           Selection is a subjectless process; selector-patterns are downstream, not prerequisites.
+
+K summary: Order / 秩序 is not a native L0 content commitment.
+           The old L0 order-drive sentence was replaced / superseded at Gate 0;
+           “selection tends to order” is licensed only as an L1 read-back under the current owner.
 ```
 
 Therefore the following remain legitimate `D` questions without erasing those `K` constraints:
 
 ```text
-D: What is the exact relation between Selection and One-formation?
+D: What is the exact relation between Selection and broader One-formation,
+   including stabilization, re-identification and public/cognitive objectification?
 D: How do Selection, asymmetric accumulation, stabilization and later order/convergence relate?
 D: When and how does a bearer relation emerge downstream?
 ```
@@ -238,7 +250,7 @@ current author question / intuition
 -> internal contradiction / circularity / hidden-premise red-team
 -> fuller neighbor adaptation and pressure
 -> common-problem extraction across the relevant traditions / domains
--> non-substitutability / structural-consequence test
+-> non-substitutability / structural-consequence test against a named strongest neighbor
 -> author second adjudication
 -> only then repository ontology/interface write or domain discrimination
 ```
@@ -262,7 +274,7 @@ author-intent drift checker
 increment / novelty auditor — only when separately authorized
 ```
 
-Agreement among roles/models is not author convergence.
+Agreement among roles/models is not author convergence. A Level-1/2 non-substitutability verdict must be traceable to the named strongest-neighbor record used by the strong-neighbor advocate; do not create a formal fiction of independent sign-off where the same author/AI workflow performed both roles.
 
 ---
 
@@ -304,9 +316,20 @@ Only after this step may SRT propose that one of its reconstructed relations reo
 
 The repository already forbids retrospective relabeling, but a candidate SRT response also needs a **positive non-triviality test**.
 
-Ask:
+Before assigning Level 0/1/2, record this minimum comparison tuple:
 
-> If all SRT vocabulary were replaced with the strongest neighbor's vocabulary, would the problem partition, dependency structure, case classification and downstream questions remain unchanged?
+```text
+strongest neighbor tested =
+source-native neighbor claim =
+why this is the strongest available relevant neighbor =
+specific structural item changed by the SRT candidate =
+```
+
+The `strongest neighbor tested` must be the same named neighbor whose source-native position and strongest objection are visible in the mature-neighbor / strong-neighbor-advocate records. Selecting a weak neighbor merely to obtain Level 1 is invalid.
+
+Then ask:
+
+> If all SRT vocabulary were replaced with that named strongest neighbor's vocabulary, would the problem partition, dependency structure, case classification and downstream questions remain unchanged?
 
 Classify the result:
 
@@ -345,6 +368,7 @@ Do not force a Case A/B/C verdict unless all of the following are true:
 [ ] that solution/distinction is author-owned or explicitly author-adjudicated
 [ ] relevant K constraints are preserved, or a specific K item has been explicitly reopened under canonical rules
 [ ] strongest relevant neighbors have been mapped fairly
+[ ] the named strongest neighbor used for Level adjudication is justified and traceable to the strong-neighbor record
 [ ] the common residual problem has been stated without circularly assuming SRT
 [ ] the candidate response passes the non-substitutability gate at Level 1 or higher
 [ ] a domain-native discriminator or evidential consequence can in principle distinguish the claim
@@ -400,7 +424,7 @@ G. objectification and bearer/position diagnostics
 H. inherited assets / materials / domain mechanisms
 
 I. candidate SRT response
-   only if author-adjudicated; test non-substitutability explicitly
+   only if author-adjudicated; test non-substitutability explicitly against a named strongest neighbor
 
 J. deep-well queue
    only after the above work is mature enough to justify discrimination
@@ -492,9 +516,10 @@ The third-main-well HOLD may not be lifted by the uncheckable statement “the o
     (for example persistence/history/future-selectability or relation/order)
 [ ] each cycle begins with a K/A/B/C/D status audit
 [ ] each cycle states strongest mature-neighbor positions in source-native vocabulary
+[ ] each cycle identifies the named strongest neighbor used for any Level-0/1/2 verdict and why it is strongest available
 [ ] each cycle states a non-SRT common problem, or explicitly records that no common residual survives
 [ ] each cycle records a candidate SRT response or an explicit `none`
-[ ] each candidate response receives a Level 0/1/2 non-substitutability verdict
+[ ] each candidate response receives a Level 0/1/2 non-substitutability verdict against that named strongest neighbor
 [ ] each cycle receives internal red-team + strong-neighbor/counterexample pressure
 [ ] each cycle ends with a recorded second author adjudication
 [ ] unresolved relations and unpaid blockers are named rather than hidden by a maturity label
