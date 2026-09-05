@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: c5d0b492
+source_commit: 570ea6b4
 source_branch: theory/author-reentry-governance-correction-20260905
 source_dirty: false
-inputs_digest: 99e1aef62fb49943
+inputs_digest: 7042ec1a3031f50e
 ---
 
 # SRT 上下文包
