@@ -33,6 +33,20 @@ The source record is `01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-
 
 This amendment changes **programme sequencing and interpretation**, not canonical ontology definitions.
 
+### 0.1 Reopen authority
+
+This amendment is an authorized identity reopen under
+`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md §12`,
+condition **#4**:
+
+> the author explicitly reopens the identity after reviewing evidence from the cycle.
+
+The 2026-09-05 author correction is that explicit reopen after review of the first
+Neuroscience pilot and the ongoing Epistemology pilot. Condition #4 is sufficient for
+this governance action. This amendment does **not** claim that §12 condition #2 has
+independently completed, because the second well remains an open bounded pilot rather
+than a completed second deep-well verdict.
+
 ---
 
 ## 1. Previous identity freeze is no longer an exhaustive identity statement

@@ -341,7 +341,19 @@ method / protocol asset
 author-intuition source
 ```
 
-### 9.3 Source/synthesis/discrimination separation
+### 9.3 Material completeness statement
+
+Write a short explicit statement:
+
+```text
+All domain-relevant active high/very-high SourceCards identified in the checked surfaces
+have a visible disposition in this framework: integrated, routed, deferred-with-blocker,
+or excluded-with-reason.
+```
+
+If not true, name what remains unpaid.
+
+### 9.4 Source/synthesis/discrimination separation
 
 For any material carrying real weight, preserve:
 
