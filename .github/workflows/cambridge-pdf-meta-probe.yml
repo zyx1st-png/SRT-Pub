@@ -1,4 +1,4 @@
-name: Internet Archive JSL 1941 Original Scan Probe
+name: Google Books JSL Vol 6 Page Access Probe
 
 on:
   push:
@@ -14,60 +14,102 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Query Internet Archive for original JSL 1941 volume/issue scans
+      - name: Probe Google Books volume, search-within, and page-image access
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import urllib.parse, urllib.request, json
-          queries=[
-            'title:("Journal of Symbolic Logic") AND year:1941',
-            'title:("Journal of Symbolic Logic") AND (volume:6 OR description:"volume 6")',
-            '"Journal of Symbolic Logic" AND 1941',
-            '"A system of axiomatic set theory" AND Bernays',
-            'identifier:*symbolic*logic* AND 1941',
-          ]
-          seen={}
-          for q in queries:
-              params={
-                'q':q,
-                'fl[]':['identifier','title','creator','date','year','description','collection','mediatype','access-restricted-item'],
-                'rows':'100','page':'1','output':'json'
-              }
-              # urlencode doseq handles repeated fl[]
-              url='https://archive.org/advancedsearch.php?'+urllib.parse.urlencode(params,doseq=True)
-              print('\n=== QUERY ===',q)
-              print('URL=',url)
+          import json, urllib.parse, urllib.request, hashlib, re
+
+          BOOK='kJU0AAAAIAAJ'
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
+
+          def get(url, timeout=60):
+              req=urllib.request.Request(url, headers={'User-Agent':UA,'Accept':'*/*'})
               try:
-                  with urllib.request.urlopen(url,timeout=60) as r:
-                      data=json.load(r)
+                  with urllib.request.urlopen(req, timeout=timeout) as r:
+                      body=r.read()
+                      return {
+                          'ok':True,'status':r.status,'final':r.geturl(),
+                          'type':r.headers.get('Content-Type',''),
+                          'length':len(body),'body':body,
+                          'headers':dict(r.headers.items()),
+                      }
               except Exception as e:
-                  print('ERROR=',repr(e)); continue
-              print('NUM_FOUND=',data.get('response',{}).get('numFound'))
-              for d in data.get('response',{}).get('docs',[]):
-                  ident=d.get('identifier')
-                  if not ident: continue
-                  seen[ident]=d
-                  print('ITEM=',json.dumps(d,ensure_ascii=False,sort_keys=True))
-          print('\n=== UNIQUE_ITEMS ===',len(seen))
-          for ident,d in seen.items():
-              text=(' '.join(str(d.get(k,'')) for k in ['title','creator','date','year','description'])).lower()
-              if 'symbolic logic' in text or 'axiomatic set theory' in text or 'bernays' in text:
-                  murl=f'https://archive.org/metadata/{urllib.parse.quote(ident)}'
-                  print('\n--- METADATA',ident,'---')
-                  try:
-                      with urllib.request.urlopen(murl,timeout=60) as r:
-                          md=json.load(r)
-                  except Exception as e:
-                      print('META_ERROR=',repr(e)); continue
-                  meta=md.get('metadata',{})
-                  print('META=',json.dumps({k:meta.get(k) for k in ['identifier','title','creator','date','year','description','collection','mediatype','access-restricted-item']},ensure_ascii=False,sort_keys=True))
-                  files=md.get('files',[])
-                  candidates=[]
-                  for f in files:
-                      name=f.get('name','')
-                      low=name.lower()
-                      if low.endswith(('.pdf','.djvu','.djvu.xml','.text.pdf','.jp2.zip','.scandata.xml')) or 'pdf' in low:
-                          candidates.append({k:f.get(k) for k in ['name','format','size','source','private','restricted','md5','sha1']})
-                  print('FILE_CANDIDATES=',json.dumps(candidates[:80],ensure_ascii=False))
+                  return {'ok':False,'error':repr(e),'status':getattr(e,'code',None),'body':getattr(e,'read',lambda:b'')() if hasattr(e,'read') else b''}
+
+          print('=== VOLUME API ===')
+          api=f'https://www.googleapis.com/books/v1/volumes/{BOOK}'
+          r=get(api)
+          print('HTTP=',r.get('status'),'TYPE=',r.get('type'),'LEN=',r.get('length'),'FINAL=',r.get('final'))
+          if r.get('ok'):
+              data=json.loads(r['body'])
+              vi=data.get('volumeInfo',{})
+              ai=data.get('accessInfo',{})
+              print('TITLE=',vi.get('title'))
+              print('PUBLISHED=',vi.get('publishedDate'))
+              print('PAGECOUNT=',vi.get('pageCount'))
+              print('ACCESS=',json.dumps({k:ai.get(k) for k in ['country','viewability','embeddable','publicDomain','textToSpeechPermission','webReaderLink']},ensure_ascii=False))
+              print('PDF=',json.dumps(ai.get('pdf',{}),ensure_ascii=False))
+              print('EPUB=',json.dumps(ai.get('epub',{}),ensure_ascii=False))
+
+          print('\n=== SEARCH WITHIN ===')
+          terms=['Bernays','A system of axiomatic set theory','axiomatic set theory','Part II','Received June 12 1940']
+          page_ids=[]
+          for term in terms:
+              q=urllib.parse.quote(term)
+              urls=[
+                  f'https://www.google.com/books?id={BOOK}&jscmd=SearchWithinVolume2&q={q}',
+                  f'https://books.google.com/books?id={BOOK}&jscmd=SearchWithinVolume2&q={q}',
+              ]
+              print('\nTERM=',term)
+              for url in urls:
+                  rr=get(url)
+                  print('URL=',url)
+                  print('HTTP=',rr.get('status'),'TYPE=',rr.get('type'),'LEN=',rr.get('length'),'FINAL=',rr.get('final'),'ERROR=',rr.get('error'))
+                  body=rr.get('body',b'')
+                  if body:
+                      text=body.decode('utf-8','replace')
+                      print('BODY_HEAD=',repr(text[:500]))
+                      try:
+                          js=json.loads(text)
+                          print('JSON_KEYS=',sorted(js.keys()))
+                          print('NUMBER_OF_RESULTS=',js.get('number_of_results'))
+                          for item in js.get('search_results',[])[:20]:
+                              slim={k:item.get(k) for k in ['page_id','page_number','snippet_text','page_url'] if k in item}
+                              print('RESULT=',json.dumps(slim,ensure_ascii=False))
+                              pid=item.get('page_id')
+                              if pid and pid not in page_ids: page_ids.append(pid)
+                      except Exception as e:
+                          print('JSON_PARSE_ERROR=',repr(e))
+                  if rr.get('ok'): break
+
+          print('\nPAGE_IDS=',json.dumps(page_ids))
+
+          print('\n=== BOOK HTML / EMBED METADATA ===')
+          html_url=f'https://books.google.com/books?id={BOOK}&pg=PA1&jscmd=EmbeddedSearchWithinVolume2'
+          rr=get(html_url)
+          print('HTTP=',rr.get('status'),'TYPE=',rr.get('type'),'LEN=',rr.get('length'),'FINAL=',rr.get('final'),'ERROR=',rr.get('error'))
+          html=rr.get('body',b'').decode('utf-8','ignore')
+          for needle in ['pageImage','page_id','PA1','GBS_insertEmbeddedViewer','SearchWithinVolume2','snippet']:
+              print('HAS_'+needle.upper().replace('-','_')+'=',needle.lower() in html.lower())
+          for m in re.finditer(r'https?[^"\'<> ]+books/content[^"\'<> ]+',html,re.I):
+              print('CONTENT_URL_IN_HTML=',m.group(0)[:500])
+
+          print('\n=== PAGE IMAGE PROBES ===')
+          probe_ids=[]
+          for pid in page_ids:
+              if pid not in probe_ids: probe_ids.append(pid)
+          for pid in ['PA1','PA2','PA3','PR1']:
+              if pid not in probe_ids: probe_ids.append(pid)
+          for pid in probe_ids[:15]:
+              for host in ['books.google.com','books.googleusercontent.com']:
+                  url=f'https://{host}/books/content?id={BOOK}&pg={urllib.parse.quote(pid)}&img=1&zoom=2&hl=en'
+                  rr=get(url)
+                  body=rr.get('body',b'')
+                  sig=hashlib.sha256(body).hexdigest() if body else None
+                  print('PAGE=',pid,'HOST=',host,'HTTP=',rr.get('status'),'TYPE=',rr.get('type'),'LEN=',rr.get('length'),'SHA256=',sig,'FINAL=',rr.get('final'),'ERROR=',rr.get('error'))
+                  if body:
+                      print('MAGIC=',repr(body[:24]))
+                  # Do not treat tiny placeholders / HTML as page images.
           PY
