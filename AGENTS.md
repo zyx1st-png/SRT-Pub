@@ -16,37 +16,51 @@ For a fresh AI session inside this repo, read in this order (3 files):
 
 1. `SRT_AI_START.md` — minimal theory/runtime guard; not a definition authority.
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md` — classify the task before choosing context depth.
-3. `STATUS.md §Fast Status` — compact current status and current programme identity.
+3. `STATUS.md §Fast Status` — compact current status; note that the 2026-09-05 author-reentry amendment below supersedes stale bearer-totalizing / direct-to-increment programme wording.
 
-### Current programme expansion — Constitution + Domain Reconstruction
+### Current programme expansion — Author Re-entry + Constitution + Domain Reconstruction
 
-For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new domain deep-dive**, after the 3-file bootstrap above read:
+For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new/revised domain deep-dive**, after the 3-file bootstrap above read:
 
-4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — active post-Constitution architecture.
-5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — compact historical/identity blueprint.
-6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — execution plan as amended by Architecture v2.
-7. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` for new/backfilled domain work.
-8. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`.
-9. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.
+4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md` — latest explicit author correction on pace, author role and bearer scope.
+5. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — current sequencing/interpretation authority for reconstruction.
+6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — retained post-Constitution architecture, read under the 2026-09-05 amendment.
+7. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — compact historical/identity blueprint.
+8. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — execution plan as amended by Architecture v2 and the 2026-09-05 governance correction.
+9. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` for new/backfilled/revised domain work.
+10. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`.
+11. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.
 
 Current identity guard:
 
 ```text
-SRT Constitution
-= bearer-involved perspective framework
+SRT reconstruction
+= author-guided reconstruction of an open ontological problem field
+
+SRT Constitution v1
+= active reader-interface / perspective-operation prototype
+  that opens questions without claiming to exhaust SRT ontology
+
+Bearer / position / participation
+= one important SRT ontology/method problem family,
+  not the whole ontology
 
 Domain Reconstruction Framework
-= Constitution × domain starting picture × inherited SRT assets × materials
-  -> problem-space / objectification / bearer-position / problem families / deep-well queue
+= author/ontology status × domain starting picture × mature-neighbor adaptation
+  × common-problem extraction × Constitution interface × inherited assets/materials
+  -> provisional problem-space / candidate SRT response / eventual deep-well queue
 
 Domain Theory / Hypothesis / Model
 = mechanisms / formalisms / proxies / candidate explanations
 
 Deep Well / Evidence
-= bounded test / strongest baseline / Case A-B-C / data / proof / archive
+= later bounded discrimination / strongest baseline / Case A-B-C / data / proof / archive
+  after a bounded author-owned SRT response actually exists
 ```
 
-Do not restart the older `unified ontology -> local formalization -> D2` sequence as the active programme merely because older proposal files contain it. Do not redesign SRT's identity again before the current identity-freeze reopen conditions are met.
+Do not restart the older `unified ontology -> local formalization -> D2` sequence as the active programme merely because older proposal files contain it. Also do **not** treat the more recent `bearer-involved perspective framework` shorthand as an exhaustive ontology identity. No replacement final identity is authorized yet.
+
+Until the 2026-09-05 author-reentry hold is explicitly lifted, do not open a third main deep well or infer whole-SRT identity from the two early pilots.
 
 Then load conditionally:
 
@@ -85,32 +99,38 @@ draft | active | frozen | archived
 
 Do not invent versioned status strings such as `active_v2` or `superseded_input`; put finer lifecycle meaning in a separate field such as `record_stage`. Explicit noncanonical transcript/source-record exceptions are governed by `scripts/check_frontmatter.py`; do not generalize those exceptions to ordinary theory/governance files.
 
-## Constitution Dialogue Hard Guard
+## Constitution / Ontology Dialogue Hard Guard
 
-For Constitution work, the default workflow is:
+For Constitution or identity-level ontology work, the default workflow is now:
 
 ```text
-existing source recovery
+current author question / intuition
+-> existing source recovery
 -> AI divergence
--> Light Neighbor Awareness (read-only; no gate; no repo artifact by default)
--> author convergence
--> repository write
--> internal reflexivity/circularity red-team
--> Full Neighbor Map
+-> bounded mature-neighbor awareness
+-> author provisional convergence
+-> repository write only for the author-owned provisional result / source trace
+-> internal reflexivity / circularity / hidden-premise red-team
+-> fuller mature-neighbor adaptation and pressure
+-> common-problem extraction across relevant traditions / domains
 -> author second adjudication
--> Constitution freeze
+-> only then ontology/interface hardening or domain discrimination
 ```
 
 Hard rules:
 
-- **No theory write before author convergence.** AI may retrieve and present options, but should not create a Constitution artifact for every live branch.
+- **No theory write before author convergence.** AI may retrieve and present options, but should not create a Constitution/ontology artifact for every live branch.
 - AI-generated alternatives are not author decisions.
 - Two models agreeing is corroboration, not proof and not author convergence.
-- **When mature-domain overlap, neighbor comparison, or cross-domain mapping is in play, use cross-domain ontological unification (U-mode) rather than domain-local novelty maximization; tasks that raise no such question remain in their native task mode and must not be widened merely to manufacture cross-domain mappings. Switch to novelty/increment subtraction (N-mode) only when the active task explicitly requires it.**
+- AI may recover historical SRT, but must not treat the smoothest synthesis of old files as the author's current ontology.
+- **When mature-domain overlap, neighbor comparison, or cross-domain mapping is in play, use cross-domain ontological unification (U-mode) rather than domain-local novelty maximization.** Switch to novelty/increment subtraction (N-mode) only when a bounded author-owned SRT response exists and the active task explicitly requires discrimination.
 - Do not use novelty/prior-art as a permission gate before the author knows what they mean.
-- **Light Neighbor Awareness** occurs before convergence only to reduce avoidable rediscovery and improve terminology/problem precision; it is read-only, bounded, does not score novelty, does not recommend keep/drop, and creates no repository artifact by default.
-- **Full Neighbor Map** occurs only after convergence and internal red-team; it uses `resonance / contrast / pressure / translation / realization` for comparative positioning and external legibility, not permission to think.
+- **Light / bounded Neighbor Awareness** before provisional convergence exists to reduce rediscovery and sharpen the author's problem; it is not a keep/drop gate.
+- **Fuller Neighbor Adaptation** after provisional convergence must be allowed to change, narrow or defeat SRT wording. Use `resonance / contrast / pressure / translation / realization` as appropriate.
+- Before saying `SRT adds X`, first extract the common residual problem in source/domain-native language; do not manufacture a residual by translating every neighbor into SRT vocabulary.
 - Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
+- Constitution v1's six operations are current analysis entrances, **not six exhaustive ontology modules**.
+- Bearer/objectification is one important structural slice, not the whole SRT ontology.
 - Constitution must not use equations/scalars/thresholds/state-space formalisms as constitutional authority.
 - Domain formalization is allowed and encouraged when the domain declares its objectification assumptions.
 
@@ -132,7 +152,7 @@ Hard prohibitions:
 - When archived material is used, label it historical and name the current active file.
 - Do not copy archived prose into the current manuscript without re-deriving it against the current architecture and terminology.
 
-For Constitution source recovery, the current 26Q book is a **source-intuition reservoir**, not automatic canonical authority. Extract perspective operations and author intuitions; do not promote vivid prose directly into Constitution.
+For Constitution / ontology source recovery, the current 26Q book is a **source-intuition reservoir**, not automatic canonical authority. Extract author questions and intuitions; do not promote vivid prose directly into Constitution or ontology.
 
 ## SRT Trigger Words
 
@@ -144,19 +164,19 @@ When the user sends the following trigger words, use the current `SRT/` structur
 | `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身术语、论证与证据强度陪读，不自动写仓库。若后续要求写回，再转 Pipeline 1。 |
 | `材料裁决 <文本/URL/文件>` | 辅助工作流 | 审查第一轮候选接口，区分 source-native fact / Constitution relevance / domain relevance / D-track increment；结果回注 Pipeline 1。 |
 | `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决`。 |
-| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型理论推演回流。当前 Constitution programme 下，优先恢复 author choice / unresolved branch / pressure point；对话本身不建 SourceCard，其中真正承担证据的外部论文需拆出进 Pipeline 1。 |
+| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型理论推演回流。当前 reconstruction programme 下，优先恢复 author choice / unresolved branch / pressure point；对话本身不建 SourceCard，其中真正承担证据的外部论文需拆出进 Pipeline 1。 |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
 | `选题` | Pipeline 5 | 生成当日大众路线 + 精英路线选题 |
 | `论文候选` | Pipeline 2 | 更新候选池与期刊匹配 |
 | `周评` | Pipeline 4 | 执行文档治理 + 理论方向评审 |
-| `对话` | Dialogue Mode | 启动作者发散/收敛对齐模式；若触及 Constitution，遵守 Constitution Dialogue Hard Guard |
+| `对话` | Dialogue Mode | 启动作者发散/收敛对齐模式；若触及 Constitution/ontology，遵守 Constitution / Ontology Dialogue Hard Guard |
 | `学者对话` | Dialogue Mode | 启动学者批判 / red-team 模式 |
 
 执行前：
 
-- 先读 `STATUS.md`
-- 以当前 Constitution execution plan 作为 theory-development programme；日常节奏继续参考 `Operations/_SRT_OPERATIONS_SCHEDULE.md`
+- 先读 `STATUS.md`，并用 2026-09-05 author-reentry amendment 校正其中旧 programme shorthand
+- 以当前 author-reentry amendment + Architecture v2 作为 theory-development programme；日常节奏继续参考 `Operations/_SRT_OPERATIONS_SCHEDULE.md`
 - 材料写回必须读 Material Pipeline、Material Log 与 GOV-SYN01
 
 执行后：
@@ -171,9 +191,12 @@ When the user sends the following trigger words, use the current `SRT/` structur
 - AI 最小首读入口：`SRT_AI_START.md`
 - Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
 - 当前状态面板：`STATUS.md`
-- 当前 programme blueprint：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
-- 当前 programme plan：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
-- 当前 programme governance：`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+- 最新作者纠偏：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
+- 当前 reconstruction amendment：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
+- 当前 post-Constitution architecture：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
+- programme blueprint（历史/补充）：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+- programme plan（受 amendment + Architecture v2 修正）：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+- programme governance base：`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
 - Constitution source recovery：`Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md`
 - 作者身份源记录：`01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md`
 - 停驻内容总索引：`_SRT_PARKED_INDEX.md`
@@ -191,6 +214,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 - `SRT_openclaw/` is retired and should be treated as legacy history.
 - Active workflow docs live under `Operations/` and `Governance/`.
 - The 2026-08-29 Constitution reconstruction is prospective: it does not silently rewrite published/submitted manuscripts or frozen canonical owners.
+- The 2026-09-05 correction changes scope, pace and sequencing; it does not retroactively erase Constitution v1, Domain Frameworks, or adverse deep-well records.
 
 ## ClawX Environment
 
