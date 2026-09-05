@@ -1,4 +1,4 @@
-name: Szeged Kalmar Bibliography Item 17 Probe
+name: Yale Fitch MS1477 Archive Probe
 
 on:
   push:
@@ -14,52 +14,107 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Probe likely filenames for bibliography item 17
+      - name: Inspect Yale ArchivesSpace public routes for Fitch exact article or digital object
         shell: bash
         run: |
           set -euo pipefail
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils >/dev/null
           python - <<'PY'
-          import urllib.request, urllib.parse, hashlib, os, subprocess, json
-          base='https://www.inf.u-szeged.hu/kalmar/pdf/'
-          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
-          names=[
-            '17.pdf','17_jsl.pdf','17_jsl_39.pdf','17_jsl_1939.pdf','17_jsl_4.pdf','17_jsl_4_1.pdf','17_jsl_4_1_1_9.pdf',
-            '17_j_symbolic_logic.pdf','17_j_symbolic_logic_39.pdf','17_j_symbolic_logic_1939.pdf','17_j_symbolic_logic_4.pdf','17_j_symbolic_logic_4_1.pdf','17_j_symbolic_logic_4_1_1_9.pdf',
-            '17_j_symb_logic.pdf','17_j_symb_log.pdf','17_symbolic_logic.pdf','17_journal_symbolic_logic.pdf','17_journal_of_symbolic_logic.pdf','17_journal_of_symbolic_logic_1939.pdf',
-            '17_kalmar.pdf','17_ackermann.pdf','17_decision_problem.pdf','17_on_the_reduction.pdf','17_on_the_reduction_of_the_decision_problem.pdf'
+          import urllib.request, urllib.parse, re, html, json, hashlib
+          from html.parser import HTMLParser
+
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'
+          BASE='https://archives.yale.edu'
+          target='The consistency of the ramified Principia'
+
+          urls=[
+            BASE+'/repositories/12/resources/3369',
+            BASE+'/repositories/12/resources/3369/collection_organization',
+            BASE+'/repositories/12/resources/3369/digital_materials',
+            BASE+'/repositories/12/resources/3369?output=1',
+            BASE+'/repositories/12/resources/3369.pdf',
+            BASE+'/repositories/12/resources/3369.xml',
+            BASE+'/repositories/12/resources/3369/ead',
+            BASE+'/repositories/12/resources/3369/raw',
+            BASE+'/search?q='+urllib.parse.quote(target),
+            BASE+'/search?q='+urllib.parse.quote('Frederic Brenton Fitch'),
+            BASE+'/search?q='+urllib.parse.quote('ramified Principia'),
           ]
-          def fetch(name):
-              url=base+urllib.parse.quote(name)
-              req=urllib.request.Request(url,headers={'User-Agent':ua,'Accept':'application/pdf,*/*'})
+
+          def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'text/html,application/xml,application/json,application/pdf,*/*'})
               try:
-                  with urllib.request.urlopen(req,timeout=30) as r:
+                  with urllib.request.urlopen(req,timeout=60) as r:
                       b=r.read()
-                      return {'name':name,'url':url,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'bytes':len(b),'body':b}
+                      return {'ok':True,'status':r.status,'final':r.geturl(),'type':r.headers.get('Content-Type',''),'body':b,'headers':dict(r.headers.items())}
               except Exception as e:
                   b=b''
                   if hasattr(e,'read'):
                       try:b=e.read()
                       except:pass
-                  return {'name':name,'url':url,'status':getattr(e,'code',None),'error':repr(e),'bytes':len(b),'body':b}
-          hits=[]
-          for name in names:
-              r=fetch(name); b=r.pop('body')
-              r['magic']=repr(b[:12]); r['sha256']=hashlib.sha256(b).hexdigest() if b else None
-              r['pdf']=b.startswith(b'%PDF')
-              if r['pdf']:
-                  path='/tmp/item17.pdf'; open(path,'wb').write(b)
-                  info=subprocess.run(['pdfinfo',path],capture_output=True,text=True,errors='ignore').stdout
-                  pages=None
-                  for line in info.splitlines():
-                      if line.startswith('Pages:'):
-                          try:pages=int(line.split(':',1)[1].strip())
-                          except:pass
-                  r['pages']=pages
-                  hits.append((name,path,r.copy()))
-              print('PROBE=',json.dumps(r,ensure_ascii=False))
-          print('PDF_HIT_COUNT=',len(hits))
-          for name,path,r in hits:
-              print('PDF_HIT=',json.dumps(r,ensure_ascii=False))
+                  return {'ok':False,'status':getattr(e,'code',None),'final':getattr(e,'url',url),'type':'','body':b,'error':repr(e)}
+
+          class P(HTMLParser):
+              def __init__(self): super().__init__(); self.links=[]; self.cur=None; self.txt=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag.lower()=='a': self.cur=dict(attrs).get('href'); self.txt=[]
+              def handle_data(self,data):
+                  if self.cur is not None: self.txt.append(data)
+              def handle_endtag(self,tag):
+                  if tag.lower()=='a' and self.cur is not None:
+                      self.links.append((self.cur,' '.join(''.join(self.txt).split())))
+                      self.cur=None; self.txt=[]
+
+          discovered=[]
+          for url in urls:
+              r=get(url); b=r['body']; txt=b.decode('utf-8','ignore')
+              low=txt.lower()
+              print('\n=== URL ===',url)
+              print('HTTP=',r['status'],'TYPE=',r['type'],'LEN=',len(b),'FINAL=',r['final'],'ERROR=',r.get('error'),'SHA256=',hashlib.sha256(b).hexdigest() if b else None)
+              print('TARGET_TITLE=',target.lower() in low)
+              print('RAMIFIED=', 'ramified' in low, 'PRINCIPIA=', 'principia' in low, 'FITCH=', 'fitch' in low)
+              print('BOX9=', 'box 9' in low or 'box: 9' in low, 'REPRINT=', 'reprint' in low)
+              if txt:
+                  for needle in [target.lower(),'ramified','reprint','articles by fitch','box 9','box 27','box 28','digital object','ead','download']:
+                      pos=0; n=0
+                      while True:
+                          i=low.find(needle,pos)
+                          if i<0 or n>=5: break
+                          ctx=re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',txt[max(0,i-350):i+700])))
+                          print('CTX_NEEDLE=',needle,'CTX=',repr(ctx[:1100]))
+                          pos=i+len(needle); n+=1
+                  p=P();
+                  try:p.feed(txt)
+                  except:pass
+                  for href,label in p.links:
+                      if not href: continue
+                      absu=urllib.parse.urljoin(r['final'],html.unescape(href))
+                      comb=(absu+' '+label).lower()
+                      if any(x in comb for x in ['3369','fitch','ead','xml','pdf','download','digital','reprint','collection_organization']):
+                          row=(absu,label)
+                          if row not in discovered: discovered.append(row)
+              if b.startswith(b'%PDF'): print('PDF_MAGIC_TRUE=1')
+              elif b[:5].lower().startswith(b'<?xml') or '<ead' in low[:3000]: print('XML_EAD_LIKE=1')
+
+          print('\n=== DISCOVERED LINKS ===')
+          for u,label in discovered:
+              print('LINK=',u,'LABEL=',repr(label))
+
+          print('\n=== FOLLOW MACHINE/DOWNLOAD LINKS ===')
+          for u,label in discovered[:80]:
+              lowu=u.lower()
+              if any(x in lowu for x in ['.xml','.pdf','download','ead','digital','collection_organization','archival_object']):
+                  r=get(u); b=r['body']; txt=b.decode('utf-8','ignore'); low=txt.lower()
+                  print('FOLLOW=',u,'HTTP=',r['status'],'TYPE=',r['type'],'LEN=',len(b),'FINAL=',r['final'],'PDF=',b.startswith(b'%PDF'),'TARGET=',target.lower() in low,'RAMIFIED=', 'ramified' in low,'ERROR=',r.get('error'))
+
+          # Probe common Yale/ArchivesSpace JSON-ish endpoints only if public; no auth headers or credential bypass.
+          print('\n=== PUBLIC JSON/API CANDIDATES ===')
+          api_urls=[
+            BASE+'/api/repositories/12/resources/3369',
+            BASE+'/api/resources/3369',
+            BASE+'/repositories/12/resources/3369.json',
+            BASE+'/repositories/12/resources/3369/collection_organization.json',
+          ]
+          for u in api_urls:
+              r=get(u); b=r['body']; txt=b.decode('utf-8','ignore')
+              print('API=',u,'HTTP=',r['status'],'TYPE=',r['type'],'LEN=',len(b),'FINAL=',r['final'],'TARGET=',target.lower() in txt.lower(),'ERROR=',r.get('error'),'HEAD=',repr(txt[:500]))
           PY
