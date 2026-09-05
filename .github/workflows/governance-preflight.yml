@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  refresh-cycle1-bundles:
+  fix-cycle1-frontmatter:
     runs-on: ubuntu-latest
     steps:
       - name: Check out target Cycle 1 branch
@@ -16,19 +16,21 @@ jobs:
           ref: theory/author-reentry-cycle1-one-formation-20260905
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Rebuild deterministic context bundles
+      - name: Fix frontmatter status enum
         shell: bash
         run: |
-          python scripts/build_srt_context_bundles.py
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md')
+          s = p.read_text(encoding='utf-8')
+          old = 'status: active_working\nrecord_stage: cycle1_bootstrap_calibration\n'
+          new = 'status: active\nrecord_stage: cycle1_bootstrap_calibration\n'
+          if old not in s:
+              raise SystemExit('expected Cycle 1 frontmatter status not found')
+          p.write_text(s.replace(old, new, 1), encoding='utf-8')
+          PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add Operations/Context_Bundles
-          if ! git diff --cached --quiet; then
-            git commit -m 'Regenerate context bundles for Author Re-entry Cycle 1 bootstrap'
-            git push origin HEAD:theory/author-reentry-cycle1-one-formation-20260905
-          fi
+          git add Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md
+          git commit -m 'Fix Cycle 1 working-record frontmatter status'
+          git push origin HEAD:theory/author-reentry-cycle1-one-formation-20260905
