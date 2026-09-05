@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-05
-source_commit: 570ea6b4
-source_branch: theory/author-reentry-governance-correction-20260905
+source_commit: b1f4efdc
+source_branch: governance/post903-canonical-hardening-20260905
 source_dirty: false
-inputs_digest: 7042ec1a3031f50e
+inputs_digest: 9ee9795318f6022b
 ---
 
 # SRT 上下文包
@@ -23,14 +23,14 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 334,201 | ~146,182 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 152,421 | ~71,636 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 69,731 | ~26,877 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 80,315 | ~34,236 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 91,987 | ~34,354 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 120,644 | ~41,554 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,454 | ~14,105 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,887 | ~9,607 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 334,191 | ~146,179 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 152,411 | ~71,633 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 69,721 | ~26,874 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 80,305 | ~34,233 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 91,977 | ~34,351 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 120,634 | ~41,551 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,444 | ~14,102 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 21,877 | ~9,604 |
 
 ## 上下文预算
 
@@ -49,27 +49,27 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 路线 | 装载 | 合计 ≈token | 余量 | 用途 |
 |---|---|---:|---:|---|
-| 骨架路线（裁定定义时用） | `SPINE` | 146,182 | 53,818 | 需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。 |
-| 轻量跨域 | `COMPACTCORE` | 71,636 | 128,364 | 只需领域主线、不需裁定定义时用。 |
-| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 34,354 | 165,646 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
-| 单域（体量最小者：Core 动力学） | `DOMAIN_CORE` | 9,607 | 190,393 | 最省的一种装法。 |
+| 骨架路线（裁定定义时用） | `SPINE` | 146,179 | 53,821 | 需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。 |
+| 轻量跨域 | `COMPACTCORE` | 71,633 | 128,367 | 只需领域主线、不需裁定定义时用。 |
+| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 34,351 | 165,649 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
+| 单域（体量最小者：Core 动力学） | `DOMAIN_CORE` | 9,604 | 190,396 | 最省的一种装法。 |
 
 ### 禁止的组合
 
 | 组合 | 合计 ≈token | 为什么禁止 |
 |---|---:|---|
-| SPINE + COMPACTCORE | **217,818** | 旧版曾把它推荐为跨域方案；两包合计已**超出**整个窗口，装不下。 |
+| SPINE + COMPACTCORE | **217,812** | 旧版曾把它推荐为跨域方案；两包合计已**超出**整个窗口，装不下。 |
 
 ### `SPINE` + 各领域包（逐个列出，均不推荐）
 
 | 组合 | 合计 ≈token | 是否在预算内 |
 |---|---:|:---:|
-| `SPINE` + `DOMAIN_AI` | 173,059 | **超预算** |
-| `SPINE` + `DOMAIN_PHYSICS` | 180,418 | **超预算** |
-| `SPINE` + `DOMAIN_PHILOSOPHY` | 180,536 | **超预算** |
-| `SPINE` + `DOMAIN_NEUROSCIENCE` | 187,736 | **超预算** |
-| `SPINE` + `DOMAIN_SPIRITUALITY` | 160,287 | **超预算** |
-| `SPINE` + `DOMAIN_CORE` | 155,789 | **超预算** |
+| `SPINE` + `DOMAIN_AI` | 173,053 | **超预算** |
+| `SPINE` + `DOMAIN_PHYSICS` | 180,412 | **超预算** |
+| `SPINE` + `DOMAIN_PHILOSOPHY` | 180,530 | **超预算** |
+| `SPINE` + `DOMAIN_NEUROSCIENCE` | 187,730 | **超预算** |
+| `SPINE` + `DOMAIN_SPIRITUALITY` | 160,281 | **超预算** |
+| `SPINE` + `DOMAIN_CORE` | 155,783 | **超预算** |
 
 **两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
 

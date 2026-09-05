@@ -11,6 +11,7 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - Core_Law/SRT_Constitution_V1.md
+  - Core_Law/SRT_L0_Metaphysics.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md
   - Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
   - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
@@ -22,7 +23,7 @@ tags: [Template, DomainReconstruction, AuthorReentry, NeighborAdaptation, Common
 
 > Use one file per active domain. This template organizes a domain problem-space between current SRT ontology reconstruction / Constitution v1 and later specific deep wells. It is not a Domain Constitution, not a domain axiom set, and not a mechanism for AI to infer a complete SRT ontology from historical files.
 >
-> **2026-09-05 correction:** Constitution v1 remains the current reader-interface prototype, but the framework must no longer assume that the six Constitution operations, bearer analysis or objectification analysis exhaust SRT ontology. Mature-neighbor adaptation, common-problem extraction and explicit author ownership of any candidate SRT response now precede increment pressure.
+> **2026-09-05 correction:** Constitution v1 remains the current reader-interface prototype, but the framework must no longer assume that the six Constitution operations, bearer analysis or objectification analysis exhaust SRT ontology. Mature-neighbor adaptation, common-problem extraction and explicit author ownership of any candidate SRT response now precede increment pressure. Current canonical owners remain constraints unless explicitly reopened; they are not ordinary historical inputs.
 
 ## Mapping from the earlier template
 
@@ -39,9 +40,9 @@ Given Ones
 But v2 embeds that slice inside a wider reconstruction sequence:
 
 ```text
-author / ontology status
+canonical / author / historical / AI / open status
 -> domain starting picture
--> relevant open SRT ontology questions
+-> relevant SRT ontology questions + Constitution-interface mapping
 -> mature-neighbor adaptation
 -> common-problem extraction
 -> Constitution/interface translation
@@ -49,6 +50,7 @@ author / ontology status
 -> material / inherited asset routing
 -> machine red-team
 -> author-owned candidate SRT response, if any
+-> non-substitutability / structural-consequence test against a named strongest neighbor
 -> domain problem families
 -> eventual deep-well queue
 -> Case A-B-C only when an actual increment claim exists
@@ -70,6 +72,7 @@ State explicitly:
 
 - what this framework covers;
 - what adjacent subdomains it excludes;
+- which inherited SRT files are current canonical constraints;
 - which inherited SRT files are historical inputs rather than current authority;
 - which manuscript-local claims are carve-outs;
 - whether the framework is mainly AI-assisted mapping, has received explicit author review, or contains an author-owned candidate SRT response.
@@ -86,30 +89,41 @@ A polished framework may still have `candidate SRT response = none / open`.
 
 ---
 
-## 1. Author / ontology provenance matrix
+## 1. Ontology provenance / authority matrix
 
-Before organizing the domain, separate where each load-bearing SRT-side item came from.
+Before organizing the domain, separate where each load-bearing SRT-side item came from and what authority it currently has.
 
-Use the following provenance classes:
+Use the following classes:
 
 ```text
-A — explicit current author intuition / adjudication
-B — recovered historical SRT owner / book / prior theory
+K — current canonical constraint / active owner commitment
+A — explicit current author intuition / adjudication not yet silently canonicalized
+B — recovered historical SRT owner / book / prior theory that is not current canonical authority
 C — AI reconstruction / synthesis / working organization
-D — open pressure / unresolved question
+D — open pressure / unresolved relation
 ```
 
-| Item / relation | Provenance A/B/C/D | Source / author decision | Current role | What is NOT yet licensed |
+| Item / relation | Status K/A/B/C/D | Source / author decision | Current role | What is NOT yet licensed |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-Mandatory rule:
+Mandatory rules:
 
-- C may organize the framework;
-- C may not silently become A;
-- B may inform current reconstruction;
-- B may not silently become current author ontology;
-- D must remain visibly open.
+- K constrains the framework until the specific commitment is explicitly reopened and edited under existing canonical rules;
+- A may pressure or explicitly reopen K, but may not silently overwrite it;
+- C may organize the framework but may not silently become A or K;
+- B may inform current reconstruction but may not silently become current author ontology;
+- D must remain visibly open and must not be manufactured by relabeling a K commitment as undecided.
+
+A single ontology axis can contain multiple statuses. Example:
+
+```text
+determinate world-side manifest actuality requires Selection = K under current L0
+exact Selection <-> broader One-formation relation = D
+Selection does not require a pre-existing bearer = K under current L0
+```
+
+For any K summary used in a framework, name the canonical owner and a stable section / heading locator. The summary is a retrieval aid; if it diverges from the owner, the owner controls.
 
 ---
 
@@ -135,7 +149,7 @@ portable public object != ontologically complete by default
 
 ---
 
-## 3. Relevant open SRT ontology questions
+## 3. Relevant SRT ontology questions and Constitution mapping
 
 Select only the ontology questions genuinely relevant to this domain.
 
@@ -154,19 +168,27 @@ order / convergence / higher-order stabilization
 objectification / public representation
 ```
 
-| Open question | Why relevant here | Current SRT source status | Domain-native analogue | Current uncertainty |
-|---|---|---|---|---|
-|  |  | author / historical / AI / open |  |  |
+Do **not** assume every prompt is wholly open. Record the current status and the Constitution interface separately:
 
-Mandatory guard:
+| Ontology question / relation | Status K/A/B/C/D | Current owner / source constraint | Constitution interface(s), if any | What the interface already opens | What remains ontologically unresolved | Domain-native analogue |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
+
+Mandatory guards:
 
 ```text
 relevance in one domain
 !=
 final SRT ontology priority
+
+Constitution interface coverage
+!=
+ontology answer already supplied
 ```
 
-Do not force bearer, Selection, Order, L0/L1/L2 or any other historical SRT term into a domain that has not earned that mapping.
+For example, `ARTICULATION` may reopen a One's provenance without thereby defining the world-side mechanism of broader One-formation; current L0 simultaneously constrains determinate world-side manifest actuality to be Selection-dependent. `STILL-THIS` may expose re-identification dependencies without supplying a final persistence ontology.
+
+Do not force bearer, Selection, Order, L0/L1/L2 or any other SRT term into a domain that has not earned that mapping. Conversely, do not mark a K commitment `OPEN` merely because the wider ontology axis is being revisited.
 
 ---
 
@@ -176,9 +198,9 @@ This section is not a novelty gate and not a bibliography dump.
 
 For each strong mature neighbor, state its position first in source/domain-native vocabulary.
 
-| Tradition / framework | Problem it addresses | What it already explains / owns | Real pressure on SRT | Relation to SRT question | What must remain domain-specific |
-|---|---|---|---|---|---|
-|  |  |  |  | resonance / contrast / pressure / translation / realization / unresolved |  |
+| Tradition / framework | Problem it addresses | What it already explains / owns | Real pressure on SRT | Relation to SRT question | What must remain domain-specific | Strongest-neighbor candidate? Why? |
+|---|---|---|---|---|---|---|
+|  |  |  |  | resonance / contrast / pressure / translation / realization / unresolved |  | yes / no + reason |
 
 Required questions:
 
@@ -187,9 +209,11 @@ What would SRT have to narrow, split, abandon or reformulate if this neighbor is
 Is the similarity structural or only verbal?
 Is a proposed SRT relation genuinely prior to the mapping, or coined after seeing the match?
 What mechanism belongs to the domain/neighbor and must not be appropriated as SRT ontology?
+Which K commitment, if any, is genuinely pressured rather than merely adjacent?
+Which neighbor is currently the strongest available relevant comparator, and why?
 ```
 
-A good neighbor section is allowed to make the SRT framing weaker, smaller or less certain.
+A good neighbor section is allowed to make the SRT framing weaker, smaller or less certain. Do not choose a weak comparator merely to make non-substitutability easier to obtain.
 
 ---
 
@@ -241,6 +265,17 @@ Constitution translation
 = interface / problem-opening analysis
 != complete domain ontology
 ```
+
+`§3` and `§6` may legitimately mention the same topic, but they perform different jobs:
+
+```text
+§3 = what ontological relation is being asked, what authority/status it has,
+     what the Constitution already opens, and what remains unresolved
+
+§6 = execute / translate the reader operation in this domain
+```
+
+Do not duplicate an ontology answer in both sections, and do not re-invent a Constitution reader action in §3.
 
 ---
 
@@ -310,6 +345,7 @@ Mark each as `checked / not applicable / blocked`.
 ```text
 [ ] 01_Source_Intuition / active book material
 [ ] 2026-09-05 author-reentry correction
+[ ] current canonical owners relevant to the selected relation
 [ ] inherited domain owners / claim-status / compact-core
 [ ] Materials/YYYY SourceCards
 [ ] domain PatchNotes
@@ -330,6 +366,7 @@ Mark each as `checked / not applicable / blocked`.
 Allowed roles include:
 
 ```text
+current canonical constraint
 evidence
 mechanism
 pressure
@@ -363,6 +400,8 @@ B — SRT-side synthesis / mapping
 C — discriminating SRT claim, if any
 ```
 
+This A/B/C is a **source/synthesis/discrimination workflow notation**, not the K/A/B/C/D authority notation in §1. Keep the two namespaces explicit.
+
 Framework work may be rich in B while C remains absent.
 
 ---
@@ -373,7 +412,7 @@ Framework work may be rich in B while C remains absent.
 |---|---|---|---|---|---|
 |  |  |  |  |  |  |
 
-Do not let folder location, age or old claim strength decide the new role automatically.
+Do not let folder location, age or old claim strength decide the new role automatically. A current canonical owner is not downgraded to `historical` by entering this table.
 
 ---
 
@@ -384,8 +423,9 @@ Use multiple roles where the question warrants it. One model can perform several
 | Review role | Target | Strongest finding / objection | SRT response status | Author adjudication needed? |
 |---|---|---|---|---|
 | source-recovery auditor |  |  |  | yes / no |
+| canonical-constraint auditor |  |  |  | yes / no |
 | internal-consistency red-team |  |  |  | yes / no |
-| strong-neighbor advocate |  |  |  | yes / no |
+| strong-neighbor advocate | named strongest-neighbor candidate from §4 |  |  | yes / no |
 | counterexample generator |  |  |  | yes / no |
 | relabeling / conceptual-substitution detector |  |  |  | yes / no |
 | hidden-ontology-commitment extractor |  |  |  | yes / no |
@@ -393,11 +433,11 @@ Use multiple roles where the question warrants it. One model can perform several
 | author-intent drift checker |  |  |  | yes / no |
 | increment auditor | only if authorized |  |  | yes / no |
 
-Machine agreement does not close the author column.
+Machine agreement does not close the author column. A Level-1/2 verdict must trace to the named strongest-neighbor candidate used here; this is traceability, not a claim of independent sign-off.
 
 ---
 
-## 12. Candidate SRT response — author ownership required
+## 12. Candidate SRT response — author ownership and non-substitutability required
 
 This section may legitimately remain empty.
 
@@ -406,22 +446,64 @@ This section may legitimately remain empty.
 ```text
 candidate response =
 provenance = explicit author / historical candidate / AI working synthesis / none
+K constraints preserved =
+K constraint explicitly reopened, if any =
 common problem addressed =
 what changes relative to the mature neighbors =
 what remains borrowed / realized / domain-specific =
+strongest neighbor tested =
+source-native neighbor claim =
+why this is the strongest available relevant neighbor =
+specific structural item changed by SRT =
 strongest counterexample =
 current author status = accepted / provisional / rejected / unresolved
+non-substitutability level = 0 / 1 / 2 / not assessed
+structural consequence in domain-native language =
 ```
 
-Hard rule:
+Hard rules:
 
 ```text
 AI working synthesis
 !=
 author-owned SRT ontology
+
+historical fit
+!=
+current canonical authority
 ```
 
 A historical SRT mechanism also does not become the reconstructed answer merely because it fits.
+
+### 12.2 Non-substitutability / structural-consequence test
+
+Before assigning Level 0/1/2, the four strongest-neighbor fields in §12.1 are mandatory. They must refer to the same named neighbor whose source-native account appears in §4 and whose strongest objection is represented by the `strong-neighbor advocate` row in §11.
+
+Selecting a weak neighbor merely to obtain a higher Level is invalid.
+
+Then ask:
+
+> If SRT vocabulary were replaced with that named strongest neighbor's vocabulary, would the problem partition, dependency structure, case classification and downstream questions remain unchanged?
+
+Classify:
+
+```text
+Level 0 — vocabulary substitution
+  no non-trivial structural difference survives
+  -> translation / realization / resonance by default
+
+Level 1 — structural re-partition
+  at least one domain-expressible unit, boundary, identity criterion, dependency,
+  explanatory level, consequence attribution, or equivalence class changes
+  -> candidate substantive SRT response; not yet a novelty claim
+
+Level 2 — downstream consequence
+  Level-1 difference generates a new case distinction, model constraint, evidence demand,
+  intervention/counterfactual difference, or other domain-native discriminator in principle
+  -> may proceed toward N-mode; not automatically Case C
+```
+
+A substantive `candidate SRT response` requires at least Level 1. If Level 0, preserve the result but route it as translation / realization / resonance rather than inventing an independent response.
 
 ---
 
@@ -433,14 +515,17 @@ For each family record:
 
 ```text
 Core question:
-Relevant open ontology question(s):
+Relevant ontology question(s):
+K/A/B/C/D status:
 Constitution interface(s):
 Neighbor pressure:
+Named strongest neighbor tested:
 Common-problem relation:
 Objectification relevance:
 Bearer relevance:
 Inherited assets / materials:
 Candidate SRT response status:
+Non-substitutability level:
 What would count as a domain-local gain:
 What would collapse the family into translation-only or unresolved mapping:
 ```
@@ -463,15 +548,15 @@ The Framework does not make these true by listing them.
 
 ## 15. Deep-well queue
 
-During the 2026-09-05 author-reentry hold, existing historical pilots may be maintained but a new third main well is not authorized.
+During the 2026-09-05 author-reentry hold, existing historical pilots may be maintained but a new third main well is not authorized until the amendment's `§10.1 HOLD EXIT REVIEW` is paid.
 
 For future use after explicit release:
 
-| Candidate well | Parent family | Author-owned SRT response? | Exact bounded question | Domain-native discriminator | Access / evidence state | Strong rivals | Priority rationale |
-|---|---|---|---|---|---|---|---|
-|  |  | yes / no |  |  |  |  |  |
+| Candidate well | Parent family | Author-owned SRT response? | Named strongest neighbor tested | Non-substitutability level | Exact bounded question | Domain-native discriminator | Access / evidence state | Strong rivals | Priority rationale |
+|---|---|---|---|---|---|---|---|---|---|
+|  |  | yes / no |  | 0 / 1 / 2 |  |  |  |  |  |
 
-A `no` in the author-owned-response column blocks an SRT-increment well. It may still support neutral evidence infrastructure or baseline research if separately justified.
+A `no` in the author-owned-response column or a Level-0 response blocks an SRT-increment well. It may still support neutral evidence infrastructure or baseline research if separately justified.
 
 ---
 
@@ -480,10 +565,14 @@ A `no` in the author-owned-response column blocks an SRT-increment well. It may 
 Before a new SRT-increment deep well opens, verify:
 
 ```text
-[ ] author / historical / AI / open provenance is separated
+[ ] K / A / B / C / D authority status is separated
+[ ] any K commitment implicated by the candidate is preserved, or its explicit reopen/edit is named
+[ ] K summaries point to current canonical owner locators and are not treated as second owners
 [ ] Given-Ones inventory exists
-[ ] relevant open SRT ontology questions are named without forcing a total ontology
+[ ] relevant SRT ontology questions are named without forcing a total ontology
+[ ] ontology questions are mapped to Constitution interfaces without treating interfaces as ontology answers
 [ ] strongest mature neighbors have been adapted in their own terms
+[ ] the named strongest neighbor used for Level adjudication is justified and traceable to §4 and §11
 [ ] common residual problem is defensible, or absence is explicitly recorded
 [ ] Constitution operations have domain-native translations
 [ ] objectification diagnostics are used only to their warranted scope
@@ -493,13 +582,15 @@ Before a new SRT-increment deep well opens, verify:
 [ ] machine red-team findings are visible
 [ ] a bounded candidate SRT response exists
 [ ] that response has explicit author ownership / adjudication
+[ ] that response passes non-substitutability at Level 1 or higher
 [ ] the deep-well question is narrower than the framework
 [ ] a domain-native discriminator exists in principle
+[ ] if this is the third main well after the 2026-09-05 HOLD, the amendment §10.1 HOLD EXIT REVIEW is complete
 ```
 
 Only then route an `SRT adds X` claim to strongest-baseline / Case A-B-C adjudication.
 
-If the author-owned response or common-problem gate is unpaid, the correct state is:
+If the author-owned response, common-problem gate, canonical-status audit, strongest-neighbor traceability or non-substitutability gate is unpaid, the correct state is:
 
 ```text
 theory formation / mapping still open
@@ -535,6 +626,8 @@ whole-SRT ontology verdict
 
 unless a future programme explicitly establishes that the tested claim was a mature, author-owned whole-ontology commitment.
 
+Negative results remain pressure. Do not convert this scope guard into an immunity clause or an indefinite “the theory is not ready” escape; use the named HOLD exit / blocker routes when programme exposure is deferred.
+
 ---
 
 ## 18. Current framework summary
@@ -545,11 +638,16 @@ End with a compact machine/human-readable summary:
 domain =
 framework version =
 current maturity =
+K constraints implicated =
 author-owned ontology content present? = yes / no
-relevant open ontology questions =
+relevant ontology questions =
+Constitution interface mapping =
 strongest mature-neighbor pressure =
+named strongest neighbor tested =
+why strongest =
 common residual problem =
 candidate SRT response =
+non-substitutability level = 0 / 1 / 2 / n/a
 bearer relevance =
 objectification relevance =
 active/historical deep well =
