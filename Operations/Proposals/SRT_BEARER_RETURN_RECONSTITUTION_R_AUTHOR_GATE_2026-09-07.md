@@ -289,3 +289,18 @@ The mandatory pass-2 family is Barandiaran & Di Paolo (2014) on habit genealogy 
 > **R-B：** 更进一步——属于这个 Bearer 的后果，必须不可外包地参与下一次 Selection-position 的重构；如果位置可以原样恢复而代价/历史由别处承担，就不算同一 bearer-continuation。
 >
 > **R-C：** 更强——不仅后果改变下一次位置，Selection-position 本身也参与决定哪些后果属于“这个组织”；`from-where` 与 `to-where` 彼此生成并闭合，Bearer 就是在这种互相规定中形成。
+
+---
+
+## 10. Review closure note
+
+The merge review fixes are now explicit in-tree:
+
+```text
+R-A / R-0 label ambiguity: CLOSED
+secondary route ranking vs IRR-B: RECORDED
+habit / sensorimotor-autonomy family: MANDATORY PASS 2 IF POSITIVE R IS SELECTED
+R-specific PASS1 != combined V × C + R strongest-neighbor payment: PRESERVED
+```
+
+This note records review closure only; it does not count as author adjudication or a Level verdict.
