@@ -5,7 +5,7 @@ status: active
 date: 2026-09-07
 layer: source
 epistemic_layer: os
-claim_mode: author_summary
+claim_mode: author_source
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
@@ -20,9 +20,32 @@ tags: [AuthorTrace, AuthorReentry, Bearer, SelectionPosition, VerticalStructure,
 
 # Author Re-entry — Bearer return / reconstitution summary
 
-> **Role:** consolidate the author's 2026-09-07 decisions around functional continuity, higher-order bearer continuity and the recently strengthened vertical / stratified Selection-position structure.
+> **Role:** consolidated landing summary for the author's 2026-09-07 decisions around functional continuity, higher-order bearer continuity, and the recently strengthened vertical / stratified Selection-position structure.
 >
-> **Boundary:** this is an author-source summary, not a canonical bearer definition, not a numerical-identity theorem, and not a Level-1/2 verdict. It also does not silently promote the deeper `from-where / to-where` decomposition unless explicitly marked author-confirmed below.
+> **Boundary:** this is an author-source summary, not a canonical bearer definition, not a numerical-identity theorem, and not a Level-1/2 verdict. It does not silently promote the deeper `from-where / to-where` decomposition.
+
+---
+
+## 0. Routing / provenance control
+
+This file is the **main-tree consolidated summary entry** for the overlapping author-meaning scope prepared in Draft PR #918 during the same session.
+
+```text
+PR #918:
+  process / gate / audit working branch
+  not required as a main-tree dependency for this summary
+
+this file:
+  controls the landed consolidated author-summary scope
+  for B+C + vertical cross-read + integrated reading
+
+already-landed owners / Cycle-2 strengthening:
+  NOT superseded
+```
+
+The relevant B/C option text and the exact machine formulation presented before the second author response are reproduced below so the landed source record is independently auditable even if the process PR is closed without merge.
+
+If a future file intends to replace this summary, it should carry an explicit `supersedes` / `this file controls` routing statement rather than relying on the shared date.
 
 ---
 
@@ -39,35 +62,77 @@ same represented content
 != same organism / subject
 ```
 
-The paper therefore pressures SRT to explain why reusable function or reusable computation is insufficient for continuing One / bearer identity.
+The source pressures SRT to explain why reusable function or reusable computation is insufficient for continuing One / bearer continuity. It does not itself establish an SRT bearer criterion.
 
 ---
 
-## 2. Author decisions recorded in this session
+## 2. PASS1 — B + C selection and vertical cross-read direction
 
-### 2.1 B + C selected
+### 2.1 Exact machine-side options shown before the author response
 
-Author response:
+```text
+FC-B — same-unit consequence-closure continuity
+
+Functional continuity is not sufficient.
+A continuing bearer requires that consequences generated through
+successive realizations non-outsourcably alter / constrain
+one continuing organization, and that later operations issue from
+that consequence-bearing organization.
+
+FC-C — higher-order bearer / migrating functions
+
+Bearer continuity need not track continuity of any one function.
+Functions can appear, disappear, migrate, split or be reused inside
+a higher-order continuing organization.
+The bearer is the continuing organization within which those functions
+are recruited and consequences close.
+```
+
+The machine compressed B+C as:
+
+> Functions may migrate or be reused inside a continuing bearer; what must remain continuous is not a named function or fixed component set, but the organization on which relevant consequences close and from which later Selection continues.
+
+### 2.2 Author response
 
 > **「认同你的b+c，但是可以考虑一下近期写入仓库的垂直结构」**
 
-The explicit `B + C` selection authorizes the following minimum reading:
+This response contains two author actions of different strength.
+
+#### A. B + C
+
+Status:
+
+```text
+AUTHOR-CONFIRMED
+```
+
+Safe minimum reading:
 
 ```text
 functional continuity alone is insufficient for bearer continuity;
 no particular named function is necessary for bearer continuity;
-functions may migrate / be recruited / dropped / reused inside a higher-order bearer;
-load-bearing continuity is sought at the level of one continuing
+functions may be recruited / dropped / migrated / reused inside a higher-order bearer;
+load-bearing continuity is sought at the level of a continuing
 consequence-bearing organization from which later Selection continues.
 ```
 
-This selection does not establish a complete bearer identity criterion.
+#### B. vertical / stratified cross-read
 
-### 2.2 Vertical / stratified structure must be included
-
-The same author response explicitly requires the B+C reading to be cross-read against the recently landed Cycle-2 strengthening:
+Status:
 
 ```text
+AUTHOR-DIRECTED CROSS-READ
+```
+
+The phrase `可以考虑一下` directs the B+C reconstruction to take the recently landed vertical / stratified work into account. It is not, by itself, a new theorem-level confirmation of every machine formulation that may result from that cross-read.
+
+The relevant upstream author-strengthened Cycle-2 claim is:
+
+```text
+scope = selection-position, not all stable existence
+level = sedimentation layer, not single-event layer
+modality = structural necessity relative to current L0 commitments
+
 flat horizontal adjacency / coupling alone is insufficient
 to produce a persisting Selection-position;
 
@@ -76,51 +141,106 @@ must sediment into a persisting foreground/background asymmetry
 before later Selection can repeatedly resume at the same position.
 ```
 
-The landed strengthening remains restricted to:
+### 2.3 Hard inheritance guard on the vertical strengthening
+
+The above Cycle-2 strengthening must be inherited together with its adverse / unresolved status:
 
 ```text
-scope = selection-position
-level = sedimentation layer
-modality = structural necessity relative to current L0 commitments
+prior 2026-09-06 Level-1 PASS - NARROW:
+  DOES NOT automatically carry to the strengthened commitment
+
+strengthened vertical commitment:
+  UNAUDITED AT EVERY LEVEL
+
+strongest-neighbor absorption test:
+  NOT rerun at the strengthened intensity
+
+anti-degeneracy problem:
+  OPEN
+  no author-approved criterion yet prevents collapse
+  from sedimentation-level necessity into event-level analytical truth
 ```
 
-It is not, by itself, a bearer identity theorem.
+Therefore nothing in this summary may cite the older Cycle-2 Level verdict as evidence that the strengthened vertical burden has already passed Level 1.
 
-### 2.3 Integrated reading accepted
+---
 
-After the machine-side reconstruction separated horizontal functional migration, vertical / stratified Selection-position structure and diachronic consequence closure, the author responded:
+## 3. PASS2 — integrated reading accepted in context
+
+### 3.1 Exact machine formulation shown before the author response
+
+After the B+C selection and vertical cross-read, the machine presented the following core interpretation:
+
+```text
+具体功能可以横向迁移；
+前景 / 背景的具体内容也可以变化；
+
+但同一个 Bearer 必须持续重构一个非平面的 Selection-position，
+同时过去的选择后果持续回到并改变这个高阶组织；
+
+因此真正持续的不是：
+固定功能 / 固定成员 / 固定状态 / 固定排序，
+
+而是：
+生成分层位置
++
+承受并吸收自身历史后果
+的高阶组织关系。
+```
+
+The same presentation retained the guards:
+
+```text
+vertical / stratified Selection-position != bearer by itself
+consequence closure != mere stored state / memory
+same function != same bearer
+```
+
+### 3.2 Author response
 
 > **「认同你的理解，可以更深入一点」**
 
-This authorizes the following integrated minimum reading:
+Status of the displayed formulation:
+
+```text
+AUTHOR-ACCEPTED READING
+(machine formulation accepted in context;
+not verbatim author theorem language)
+```
+
+This response is stronger than mere permission to continue: it accepts the displayed integrated understanding as the current working author meaning while authorizing deeper analysis. It does **not** convert the machine wording into a canonical necessary-and-sufficient bearer theorem.
+
+Safe accepted reading:
 
 ```text
 concrete functions may migrate / be recruited / replaced;
 foreground/background contents may change;
 
-same-bearer continuity is not fixed-function continuity;
-it requires continuing reconstitution of a non-flat / stratified
-Selection-position together with historical consequences continuing
-to return to and alter the higher-order organization;
+bearer continuity is not fixed-function continuity;
+continued reconstitution of a non-flat / stratified Selection-position
+is part of the accepted bearer-continuity burden,
+while historical consequences continue to return to and alter
+the higher-order organization;
 
-what continues is therefore an organization relation involving
+what continues is an organization relation involving
 position reconstitution and consequence bearing,
 not a fixed function / member set / state / ranking.
 ```
 
-Guard:
+Important qualification:
 
 ```text
-vertical structure != bearer by itself
-consequence closure != vertical structure
-same function != same bearer
+AUTHOR-ACCEPTED READING
+!= vertical strengthening has passed Level 1
+!= strongest-neighbor non-absorption established
+!= canonical definition
 ```
 
 ---
 
-## 3. Author-confirmed decomposition now safe to use
+## 4. Three relations safe to keep distinct
 
-The following three relations may be kept distinct in current reconstruction:
+The accepted reconstruction may distinguish:
 
 ```text
 HORIZONTAL
@@ -128,20 +248,26 @@ functional topology / role migration / component recruitment
 
 VERTICAL / STRATIFIED
 sedimented foreground-background asymmetry
-that makes a continuing Selection-position possible
+that makes a reconstitutable Selection-position possible
 
 DIACHRONIC
 same-unit consequence return / history writeback / non-outsourcing
 that alters the continuing higher-order organization across time
 ```
 
-The author-confirmed direction is that bearer continuity must not be reduced to the first relation and must take the latter two into account together.
+The author-confirmed / accepted direction is:
+
+```text
+bearer continuity must not be reduced to HORIZONTAL functional continuity;
+VERTICAL and DIACHRONIC relations must be considered together;
+VERTICAL alone remains insufficient for bearer admission.
+```
 
 ---
 
-## 4. What is NOT yet author-confirmed as an exact formulation
+## 5. Deeper formulation remains C / OPEN
 
-The subsequent machine-side deepening introduced a more specific distinction:
+The subsequent machine-side deepening introduced:
 
 ```text
 FROM-WHERE:
@@ -153,7 +279,7 @@ where prior consequences close and become historically load-bearing
 = consequence-bearing organization
 ```
 
-and proposed a recursive coupling:
+and the candidate relation:
 
 ```text
 Selection from P_t
@@ -171,24 +297,35 @@ and
 where its consequences close.
 ```
 
-**Status:** this exact `from-where / to-where` formulation is currently `C / AI reconstruction`, not a separately explicit author adjudication. The author asked for deeper analysis after accepting the integrated architecture, but did not yet explicitly ratify this exact decomposition as a theorem or definition.
+Status:
+
+```text
+C / AI RECONSTRUCTION / OPEN
+not separately author-adjudicated
+not canonical
+not a numerical-identity theorem
+```
+
+The author's request to go deeper authorizes analysis of this possibility, not its automatic promotion.
 
 ---
 
-## 5. Current author-level content boundary
+## 6. Current author-level content boundary
 
-Safe author-level summary:
+Compact safe summary:
 
-> **A continuing bearer is not identified by one fixed function or component set. Concrete functions and foreground/background contents may change. Bearer continuity instead concerns a higher-order organization that continues to bear historical consequences while reconstituting a stratified Selection-position from which later Selection proceeds.**
+> **A continuing bearer is not identified by one fixed function or component set. Concrete functions and foreground/background contents may change. The current author-accepted reading instead treats bearer continuity as involving a higher-order organization that bears historical consequences while reconstituting a stratified Selection-position from which later Selection proceeds.**
 
-Do not extend this summary into:
+Do not extend this into:
 
 ```text
 strict numerical identity solved;
 perfect-copy / fission problem solved;
-vertical structure is sufficient for bearerhood;
+vertical structure sufficient for bearerhood;
 all autonomous systems are bearers;
 all bearers are subjects / experiencers;
+strengthened vertical necessity already Level-1 audited;
+strongest-neighbor absorption already defeated;
 new Level 1 / Level 2 already earned;
 new canonical stage ladder;
 new universal state variable.
@@ -196,9 +333,9 @@ new universal state variable.
 
 ---
 
-## 6. Relation to existing owners
+## 7. Relation to existing owners
 
-The summary inherits, rather than replaces:
+This summary inherits rather than replaces:
 
 ```text
 PH-IND02:
@@ -215,7 +352,7 @@ PH-IND05:
 copying / branching / qualitative similarity do not settle strict same-bearer identity.
 ```
 
-The possible new value is therefore not a new ingredient but a more explicit ordering / repartition among:
+No new ingredient is claimed. The possible value is a more explicit ordering / repartition among:
 
 ```text
 functional realization
@@ -225,15 +362,17 @@ consequence-bearing continuity.
 
 ---
 
-## 7. Current stop rule
+## 8. Current stop rule
 
 ```text
 B+C selection: AUTHOR-CONFIRMED
-vertical-structure inclusion: AUTHOR-CONFIRMED
-integrated position-reconstitution + consequence-bearing reading: AUTHOR-CONFIRMED
+vertical cross-read: AUTHOR-DIRECTED
+upstream vertical strengthening: AUTHOR-CONFIRMED BUT UNAUDITED AT EVERY LEVEL
+integrated machine formulation: AUTHOR-ACCEPTED READING
 from-where / to-where exact decomposition: C / OPEN
+return-reconstitution coupling: C / OPEN
 combined strongest-neighbor test: NOT PAID
-combined Level 0/1/2 verdict: NOT ASSIGNED
+combined Level 0/1/2 verdict: UNASSIGNED
 canonical edit: NO
 new deep well: NO
 HOLD EXIT: unchanged
