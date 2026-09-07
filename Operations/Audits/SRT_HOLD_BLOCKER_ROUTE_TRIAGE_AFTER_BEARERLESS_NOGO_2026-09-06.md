@@ -25,6 +25,23 @@ tags: [HoldExit, RouteTriage, BearerlessActualisation, NonOutsourcing, Irreversi
 # HOLD blocker route triage after bearerless-actualisation NO-GO
 
 > **Role:** close the current consequence-design branch honestly, compare the next two most plausible routes, and state the exact next author gate. This file does not open a well, modify canonical owners, or infer an author answer.
+>
+> **PRE-ADJUDICATION RECORD — DO NOT USE AS THE CURRENT ENTRY POINT (added 2026-09-07).**
+> This file was written **before** the irreversibility author gate was answered. The author
+> subsequently selected **IRR-B**, and a further author ruling then fixed the physical-trigger
+> architecture as **C-primary / A-permitted**. The following statements below are therefore
+> **superseded** and must not be acted on:
+>
+> ```text
+> §2.6  `IRR-B ... NOT YET AUTHOR-OWNED AT THIS PRECISION`   -> author has since selected IRR-B
+> §4    prepared IRR-A/B/C author gate                        -> answered; do not re-ask
+> §5    `irreversibility route: PREPARED AUTHOR GATE, NOT YET POSITIVE`
+>                                                             -> superseded
+> ```
+>
+> Still valid here: the bearerless-actualisation NO-GO, the route ranking rationale, and the
+> route-source history. For the **current** blocker wording and research priority, use
+> `Operations/Audits/SRT_PHYSICAL_TRIGGER_PLURALISM_ARCHITECTURE_AUDIT_2026-09-06.md` §6–§8.
 
 ---
 

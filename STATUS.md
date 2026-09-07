@@ -25,12 +25,15 @@ updated: 2026-09-07
 > **Cycle 2 当前状态控制面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_POST_REDTEAM_CLOSURE_2026-09-06.md`（09-05 interim closure 降为历史 staging 记录）
 > **Cycle 2 最新作者动作**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`
 > **Cycle 3 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE3_CLOSURE_2026-09-06.md`
-> **当前路线分诊**：`Operations/Audits/SRT_HOLD_BLOCKER_ROUTE_TRIAGE_AFTER_BEARERLESS_NOGO_2026-09-06.md`
+> **当前推进入口（blocker 与研究优先级）**：`Operations/Audits/SRT_PHYSICAL_TRIGGER_PLURALISM_ARCHITECTURE_AUDIT_2026-09-06.md` §6–§8
+> **裁决前历史分诊（仅用于路线来源追溯，勿当当前入口）**：`Operations/Audits/SRT_HOLD_BLOCKER_ROUTE_TRIAGE_AFTER_BEARERLESS_NOGO_2026-09-06.md`——该文件写于 IRR 作者裁决**之前**，其 §2.6 仍标 `IRR-B ... NOT YET AUTHOR-OWNED`、§4 仍在准备 IRR-A/B/C 作者门、§5 仍记 `irreversibility route: PREPARED AUTHOR GATE, NOT YET POSITIVE`。**这些状态已被 2026-09-06 的 IRR-B 裁决与随后的物理触发裁决取代**；照其行动会去重问一个已回答的问题。
 > **历史条目**：`Operations/Status_History/`
 
 ## Fast Status
 
-> **本页 2026-09-07 重同步**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以下列具名 closure 文件为准，不要以本页摘要为准。**
+> **本页 2026-09-07 重同步**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure 文件为准，不要以本页摘要为准。**
+>
+> **来源优先规则（勿按日期挑）**：本轮多份记录同日生成，日期不能区分先后。按以下顺序判断——①文件是否自带 `this file controls` / `supersedes` 之类的显式路由声明；②该文件是写在相关**作者裁决之前**还是之后（裁决前的分诊、pressure、prepared-gate 文件不是当前入口）；③其**适用范围**是否覆盖你要问的那件事。三者冲突时以显式取代声明为准。
 
 - **程序级判定：`CONTINUE HOLD — NAMED BLOCKER`（HOLD EXIT REVIEW 1，2026-09-06）。** 两周期 re-entry 负担**已付**（Cycle 1 与 Cycle 3 各计一次 non-redundant credit；Cycle 2 是 meaning cycle，不计入该计数）。未付的是最终放行条件。**第三口主 deep well 与 broad cross-domain synthesis 继续 HOLD。**
 - **当前 blocker（2026-09-06 物理触发裁决后更新过，以更新版为准）**：缺一个有界的、实现特定的 Level-2 realization design——它要能**独立于被检验的后果**先认定一个 Selection candidate，再把一条 author-owned SRT 关系暴露给与具名最强成熟对手的**前瞻性分歧**。该设计可来自物理、生物、认知、AI 或其他领域；**物理被允许但不被特权化**。重跑 HOLD EXIT REVIEW 需先在纸面上同时付 Trigger A（对具名最强邻居守住一处 Level-1 repartition）与 Trigger B（给出具体 Level-2 路径）。

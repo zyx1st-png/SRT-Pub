@@ -90,5 +90,8 @@ HOLD EXIT REVIEW 1、bearerless NO-GO、IRR-B 与物理触发两道作者裁决�
 `§Fast Status` 与指针块。
 
 **教训（供后续 session）**：`STATUS.md` 是人工维护的摘要面，可能落后于 `Operations/` 数天。
-判断 cycle 状态、裁决是否已支付或 Level verdict 时，以最新日期的具名 closure 文件为准
-（这类文件通常自带 `this file controls` 的路由声明），不要以本页摘要为准。
+判断 cycle 状态、裁决是否已支付或 Level verdict 时，以具名 closure 文件为准，不要以本页摘要为准。
+
+**且不要按文件日期挑来源**——本轮多份记录同日生成。按①显式路由声明（`this file controls` /
+`supersedes`）②写在相关作者裁决之前还是之后（裁决前的分诊 / pressure / prepared-gate 文件
+不是当前入口）③适用范围是否覆盖所问事项，三者冲突时以显式取代声明为准。
