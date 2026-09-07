@@ -20,6 +20,8 @@ tags: [AuthorGate, Bearer, ReturnReconstitution, R, NonOutsourcing, Autonomy, Ci
 # Bearer return–reconstitution `R` — author gate
 
 > **Purpose:** present the narrow author decision exposed by the source-native strongest-neighbor pass. No option in this file is an author decision until explicitly selected or reformulated by the author.
+>
+> **Programme routing:** this autonomy-matched / non-outsourcing line is retained as a **secondary / deprioritized route relative to IRR-B**. Preparing this gate does not restore it to first programme priority.
 
 ---
 
@@ -81,6 +83,25 @@ Therefore the author gate is not:
 > “Does history affect later Selection?”
 
 That question is already too generic.
+
+### 2.1 Label guard — `R-A` is not `R-0`
+
+The audit and this author gate use two different labels for two different logical roles:
+
+```text
+R-A = positive weak-coupling claim
+      q_t -> O_t -> P_(t+1)
+      as an SRT increment: DROP / ABSORBED
+
+R-0 = null additional-requirement option
+      V and C may jointly suffice without requiring q_t
+      to help reconstitute P_(t+1)
+      as an author-meaning option: STILL OPEN
+
+R-A != R-0
+```
+
+Absorption of `R-A` therefore does **not** remove `R-0` from the author decision surface and does not force the author to choose `R-B` or `R-C`.
 
 ---
 
@@ -250,9 +271,12 @@ After author selection, governance requires:
 ```text
 selected meaning
 -> circularity / hidden-premise red-team
+-> if R-B or R-C: habit / sensorimotor-autonomy strongest-neighbor pass 2
 -> final strongest-neighbor non-substitutability test
 -> only then Level 0/1/2 assignment
 ```
+
+The mandatory pass-2 family is Barandiaran & Di Paolo (2014) on habit genealogy and Egbert & Barandiaran (2014) on habits as self-sustaining sensorimotor patterns. Their relevance is not pre-judged as absorption; they must be tested because they target the historically sedimented action-organization burden more directly than the 2009 minimal-agency paper.
 
 ---
 

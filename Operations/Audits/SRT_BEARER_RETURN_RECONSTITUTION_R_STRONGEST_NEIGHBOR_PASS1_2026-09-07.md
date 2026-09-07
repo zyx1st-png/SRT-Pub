@@ -25,6 +25,8 @@ tags: [Bearer, ReturnReconstitution, StrongestNeighbor, Autonomy, Enactivism, Or
 > **Role:** pressure the post-#921 local audit relation `R = return–reconstitution coupling` against the strongest mature neighboring account before any author promotion, Level assignment, model, or deep-well move.
 >
 > **Scope discipline:** `R` is not canonical, not an SRT primitive, and not yet a separately author-adjudicated bearer requirement. The strengthened vertical commitment inherited by #921 also remains **UNAUDITED AT EVERY LEVEL** and does not inherit the older Cycle-2 Level-1 verdict.
+>
+> **Programme route rank:** this autonomy-matched / non-outsourcing line is retained as a **secondary / deprioritized route relative to IRR-B** under the current `STATUS.md` routing. This pass does not promote it back to first priority.
 
 ---
 
@@ -455,6 +457,21 @@ new deep well: NO
 HOLD EXIT: unchanged
 ```
 
+### Mandatory strongest-neighbor continuation before any final verdict
+
+The 2009 autonomy paper is a strong first-pass comparator for individuality / adaptivity / self-maintenance, but it is not sufficient to close the narrower history-to-action-organization residual. If the author selects a positive `R` reading (`R-B` or `R-C`), the next strongest-neighbor pass must explicitly test the **habit / sensorimotor-autonomy** family, including at minimum:
+
+- Xabier E. Barandiaran & Ezequiel A. Di Paolo (2014), “A genealogical map of the concept of habit,” *Frontiers in Human Neuroscience* 8:522. DOI `10.3389/fnhum.2014.00522`.
+- Matthew D. Egbert & Xabier E. Barandiaran (2014), “Modeling habits as self-sustaining patterns of sensorimotor behavior,” *Frontiers in Human Neuroscience* 8:590. DOI `10.3389/fnhum.2014.00590`.
+
+These works are mandatory pressure because they directly address historically reinforced, self-sustaining sensorimotor organization and therefore may absorb much more of `R-B` than the 2009 minimal-agency definition alone. This registration does **not** prejudge the result: the remaining question is whether they also pay the specific same-unit consequence-ownership / non-outsourcing relation to later position reconstitution.
+
+```text
+habit / sensorimotor-autonomy pass 2: MANDATORY IF R-B OR R-C IS AUTHOR-SELECTED
+R-specific strongest-neighbor PASS1: COMPLETE
+combined V × C + R strongest-neighbor test: NOT PAID
+```
+
 Next move:
 
-> Ask the author whether the intended deeper relation is no additional R requirement, the minimal non-outsourcable R-B relation, or the stronger reciprocal R-C relation. Only the selected reading may proceed to contradiction / circularity red-team and a final non-substitutability verdict.
+> Ask the author whether the intended deeper relation is no additional R requirement, the minimal non-outsourcable R-B relation, or the stronger reciprocal R-C relation. If `R-0` is selected, no positive `R` increment remains to defend. If `R-B` or `R-C` is selected, run contradiction / circularity red-team **and the mandatory habit / sensorimotor-autonomy pass 2** before any final non-substitutability or Level verdict.
