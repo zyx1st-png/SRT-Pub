@@ -9,7 +9,7 @@ source_date: "2026-08-31 (user filename; no journal/DOI stated on manuscript tit
 date_added: "2026-09-07"
 source_location: "user-supplied PDF: 2026_08_31_survey paper_clean.pdf"
 evidence_level: primary_full_text_preregistered_survey_manuscript_with_reported_open_data_code_and_preregistrations
-reliability_level: high_for_reported_attribution_patterns; bounded_for_metaethical_or_ontological_inference
+reliability_level: high_for_reported_attribution_patterns_within_supplied_manuscript; non_peer_reviewed; external_data_code_and_preregistration_locations_source_reported_not_independently_verified; bounded_for_metaethical_or_ontological_inference
 srt_relevance: high_as_interface_pressure_and_empirical_guardrail
 integration_priority: high
 related_srt_claims:
@@ -51,7 +51,16 @@ Load-bearing anchors:
 - **pp. 13–17, Discussion + limitations:** authors interpret the results as showing consciousness is important but neither strictly necessary nor sufficient for attributed moral status; they explicitly caution that public attitudes do not establish normative obligations, that consciousness was intentionally left undefined, that dilemmas can confound moral status with other considerations, and that the survey does not reveal the full reasoning process behind choices.
 - **pp. 17–19, Methods:** Prolific recruitment, participant exclusions, exploratory/confirmatory split, preregistration sequence, follow-up power analysis, survey structure and mixed-effects/statistical workflow.
 
-The manuscript reports OSF materials/data, GitHub analysis code and preregistrations. This SourceCard records those claims as source-reported; this writeback does not independently verify the external repositories.
+The manuscript reports the following exact external locators:
+
+- OSF data / materials: `https://osf.io/wf7eb`
+- main-survey preregistration: `https://osf.io/x297y`
+- follow-up preregistration: `https://osf.io/2prfx`
+- analysis code: `https://github.com/RonyHirsch/ethics_survey`
+- interactive dataset / visualization site: `https://ronyhirsch.github.io/minds-matter`
+- interactive-site code: `https://github.com/RonyHirsch/minds-matter`
+
+These are **source-reported external locators** from the supplied manuscript. This writeback does not independently verify the repository contents or convert the manuscript into a peer-reviewed publication.
 
 ## 3. Core source claims
 
