@@ -21,9 +21,29 @@ tags: [Bearer, OneFormation, SelectionPosition, VerticalStructure, ConsequenceCl
 
 # Bearer return–reconstitution architecture — summary checkpoint
 
-> **Purpose:** summarize the current post-Osako / post-Cycle-2 reconstruction after the author selected `B+C`, required inclusion of the recently strengthened vertical / stratified structure, and accepted the resulting integrated reading.
+> **Purpose:** summarize the current post-Osako / post-Cycle-2 reconstruction after the author confirmed `B+C`, directed a cross-read with the recently strengthened vertical / stratified structure, and then accepted the resulting integrated machine reading in context.
 >
-> **Status discipline:** author-confirmed content is separated from deeper machine-side synthesis. This document is a noncanonical checkpoint, not a bearer theorem, not a new stage ladder, and not a Level-1/2 verdict.
+> **Status discipline:** author-confirmed, author-directed, author-accepted-machine-reading, and deeper C-level synthesis are kept separate. This document is noncanonical, not a bearer theorem, not a new stage ladder, and not a Level-1/2 verdict.
+
+---
+
+## 0. Routing
+
+For the overlapping 2026-09-07 bearer-continuity summary scope:
+
+```text
+01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_RETURN_RECONSTITUTION_SUMMARY_2026-09-07.md
+= controlling landed author-summary entry
+
+this file
+= controlling landed architecture-summary entry
+
+Draft PR #918
+= process / gate / audit working branch for the same session
+  and is not required as a main-tree dependency once this checkpoint lands
+```
+
+This routing does **not** supersede the already-landed Cycle-2 strengthening, PH-IND owners, or their adverse / open verdicts.
 
 ---
 
@@ -52,7 +72,7 @@ functional continuity
 != bearer continuity
 ```
 
-The reconstruction must explain continuing One / bearer identity without reducing it to stable function, stable module, stable state or analyst-drawn system boundary.
+The reconstruction must explain continuing One / bearer continuity without reducing it to stable function, stable module, stable state, or analyst-drawn system boundary.
 
 ---
 
@@ -62,14 +82,20 @@ The reconstruction must explain continuing One / bearer identity without reducin
 
 Question:
 
-> What functions are currently implemented, by which components, and how may those roles migrate, split, disappear or be recruited?
+> What functions are currently implemented, by which components, and how may those roles migrate, split, disappear, or be recruited?
 
 ```text
 HORIZONTAL
 role / function / component relation
 ```
 
-Author-confirmed consequence:
+Author status:
+
+```text
+B+C: AUTHOR-CONFIRMED
+```
+
+Safe consequence:
 
 ```text
 no particular named function is necessary for bearer continuity;
@@ -82,7 +108,7 @@ Question:
 
 > What makes there be a non-flat position from which later Selection can repeatedly proceed?
 
-Current author-strengthened Cycle-2 structure:
+Current upstream author-strengthened Cycle-2 structure:
 
 ```text
 Selection event
@@ -93,7 +119,31 @@ repeated Selection
 -> persisting / reconstitutable Selection-position
 ```
 
-The continuity is not a fixed ranking. Foreground/background contents may change. What remains load-bearing is the re-generation of stratified selective standing.
+The continuity candidate is not a fixed ranking. Foreground/background contents may change; the live object is the regeneration of stratified selective standing.
+
+#### Hard status guard
+
+The strengthened Cycle-2 commitment carries the following unresolved status and it must not be dropped when used here:
+
+```text
+scope = selection-position
+level = sedimentation layer
+modality = structural necessity relative to current L0 commitments
+
+older 2026-09-06 Level-1 PASS - NARROW:
+  NOT inherited by the strengthened commitment
+
+strengthened commitment:
+  UNAUDITED AT EVERY LEVEL
+
+strongest-neighbor absorption at strengthened intensity:
+  NOT rerun
+
+anti-degeneracy criterion:
+  OPEN / no author-approved version
+```
+
+Thus vertical / stratified structure is available here as an author-strengthened **meaning/dependency pressure**, not as an already-paid Level-1 result.
 
 ### 2.3 Diachronic — consequence / history closure
 
@@ -115,18 +165,32 @@ This is not equivalent to mere state memory or recurrence.
 
 ---
 
-## 3. Author-confirmed integrated architecture
+## 3. Author-status separation on the integrated architecture
 
-The author-confirmed integrated direction is:
+The relevant source summary records three different author statuses:
+
+```text
+B+C decomposition:
+  AUTHOR-CONFIRMED
+
+vertical cross-read into the bearer question:
+  AUTHOR-DIRECTED
+
+full displayed integrated machine formulation:
+  AUTHOR-ACCEPTED READING
+  (accepted in context, not verbatim theorem language)
+```
+
+The accepted reading is:
 
 ```text
 concrete functions may migrate / be recruited / replaced;
 foreground/background contents may change;
 
-same-bearer continuity nevertheless requires
-continuing reconstitution of a non-flat / stratified Selection-position
-+
-past consequences continuing to return to and alter
+bearer continuity is not fixed-function continuity;
+continued reconstitution of a non-flat / stratified Selection-position
+is part of the accepted bearer-continuity burden,
+while past consequences continue to return to and alter
 the higher-order organization;
 
 what continues is an organization relation involving
@@ -142,11 +206,12 @@ consequence closure != vertical structure
 stored history != bearer history
 same function != same bearer
 organization persistence != bearer continuity
+AUTHOR-ACCEPTED READING != Level-1 PASS
 ```
 
 ---
 
-## 4. One and Bearer become more sharply separable
+## 4. One / Selection-position and Bearer become more sharply separable
 
 A useful working distinction is:
 
@@ -160,25 +225,20 @@ become the own-history of the organization
 that must make a later "here" possible again?
 ```
 
-This blocks the shortcut:
+This blocks:
 
 ```text
 stable One = bearer
-```
-
-and also blocks:
-
-```text
 history exists = bearer
 ```
 
-A continuing Selection-position can be a necessary upstream structure without being sufficient for bearer admission.
+A continuing Selection-position can be a necessary upstream burden within the accepted reading without being sufficient for bearer admission.
 
 ---
 
 ## 5. Deeper C-level synthesis — `from-where` / `to-where`
 
-The following decomposition is **machine-side / C**, prepared for later author adjudication.
+The following decomposition remains **machine-side / C**.
 
 ### 5.1 `from-where`
 
@@ -198,7 +258,7 @@ TO-WHERE
   and alter later possibilities
 ```
 
-### 5.3 Candidate recursive coupling
+### 5.3 Candidate recursive chain
 
 ```text
 P_t = current stratified Selection-position
@@ -219,7 +279,7 @@ Deepest current candidate sentence:
 Status:
 
 ```text
-C / AI reconstruction
+C / AI RECONSTRUCTION / OPEN
 not separately author-confirmed
 not canonical
 not a numerical-identity theorem
@@ -229,7 +289,7 @@ not a numerical-identity theorem
 
 ## 6. Genetic consequence — anti-circular bearer formation
 
-The `from-where / to-where` decomposition suggests a way to discuss first bearer formation without presupposing a completed bearer.
+The `from-where / to-where` decomposition suggests a way to discuss first-bearer formation without presupposing a completed bearer.
 
 Bad circular form:
 
@@ -243,7 +303,7 @@ Candidate genetic form:
 
 ```text
 subjectless Selection
--> consequences initially distributed across 多 / relation / environment
+-> consequences initially distributed across 多 / the many / relation / environment
 
 repeated two-sided Selection
 -> stratified selective sedimentation
@@ -254,7 +314,7 @@ consequences generated from that position
    responsible for reconstituting that position
 
 from-where and to-where
--> become progressively coupled
+-> may become progressively coupled
 -> stronger return / reconstitution closure
 -> bearer candidate
 ```
@@ -276,12 +336,12 @@ background content changes
 priority ordering changes
 ```
 
-while bearer continuity may still hold if:
+while the strongest current candidate requires more than co-presence of position and history closure:
 
 ```text
 prior consequences remain load-bearing for the continuing organization
 AND
-those consequences alter how that organization reconstitutes
+those consequences alter / constrain how that organization reconstitutes
 the Selection-position from which later Selection proceeds.
 ```
 
@@ -295,32 +355,68 @@ toward:
 
 ```text
 did consequences from t1 alter the organization
-that had to generate the Selection-position at t2?
+in a way that changed / constrained generation of P_(t+1)?
 ```
 
-This is a relation-of-continuation proposal, not strict numerical identity.
+This remains a relation-of-continuation proposal, not strict numerical identity.
 
 ---
 
-## 8. Candidate V × C case surface
+## 8. Pressure surface — V × C is insufficient without R
 
-To pressure the combined architecture, define only as local bookkeeping:
+The original two-axis bookkeeping exposed useful cases but contained a hidden logical jump: having both `V=1` and `C=1` does **not** establish that the consequence-bearing relation actually participates in reconstituting the next Selection-position.
+
+Define only as local audit bookkeeping:
 
 ```text
 V = reconstitutable vertical / stratified Selection-position
 C = non-outsourcable consequence / history closure
+R = return–reconstitution coupling
 ```
+
+`R` means:
+
+```text
+consequences that close on O_t
+actually alter / constrain
+how P_(t+1) is reconstituted
+```
+
+This `R` is **not** a new canonical variable, primitive, or symbol proposal. It is a temporary pressure label used to avoid conflating coexistence with coupling.
+
+### 8.1 Revised cases
 
 | Case | Shape | Current reading |
 |---|---|---|
 | `V0 C0` | neither stable stratified position nor strong consequence closure | transient / ordinary process candidate |
-| `V1 C0` | stable selective position, but consequences can be reset / outsourced | Selection-position without strong bearer continuity candidate |
-| `V0 C1` | consequence-bearing autonomous organization without the specific stratified-position burden | key strongest-neighbor pressure case |
-| `V1 C1` | stratified position + consequence closure coupled | strongest current bearer-candidate shape |
+| `V1 C0` | reconstitutable selective position, but consequences can be reset / outsourced | Selection-position without strong bearer continuity |
+| `V0 C1` | consequence-bearing autonomous organization without the specific stratified-position burden | **strongest-neighbor / counterexample pressure case; not an admitted SRT bearer under the current accepted reading** |
+| `V1 C1 R0` | stratified position and consequence closure both exist, but the borne consequences do not alter position reconstitution | critical negative control against the core coupling claim |
+| `V1 C1 R1` | stratified position + consequence closure + actual return–reconstitution coupling | strongest current bearer-candidate shape |
 
-The decisive research value lies in whether `V0 C1` and `V1 C1` can be coherently distinguished against mature autonomy / enactivist accounts.
+### 8.2 Why `V0 C1` remains useful despite the accepted V burden
 
-If not, the proposed repartition weakens toward translation.
+`V0 C1` is not being kept as an undecided SRT bearer candidate. Its role is adversarial:
+
+> Can a mature autonomy / enactivist account already justify full individuality for a case with consequence-bearing closure but without the specific SRT vertical burden?
+
+If yes, SRT must explain why that case is still not equivalent to `V1 C1 R1` without merely stipulating its own definition.
+
+Thus `V0 C1` tests non-substitutability of the vertical burden; it does not contradict the current author-accepted reading.
+
+### 8.3 The sharper core contrast
+
+The more direct test of the new synthesis is now:
+
+```text
+V1 C1 R0
+vs
+V1 C1 R1
+```
+
+because this holds the presence of both V and C fixed and varies only whether historical consequence bearing actually changes / constrains the reconstitution of the later Selection-position.
+
+If that contrast does no independent classificatory or intervention work, `return–reconstitution closure` weakens toward relabeling.
 
 ---
 
@@ -367,6 +463,8 @@ return / reconstitution coupling
 
 change case classification in a way not exhausted by generic recurrence or autonomous self-maintenance.
 
+The strengthened vertical claim itself has **not** yet been rerun through strongest-neighbor absorption at its current necessity strength.
+
 ---
 
 ## 10. Anti-degeneracy requirements
@@ -387,7 +485,7 @@ collapse into merely:
 some units have larger weights / activation / access probability
 ```
 
-because ordinary attention, gating, recurrent competition and attractor dynamics already pay that.
+because ordinary attention, gating, recurrent competition, and attractor dynamics already pay that.
 
 ### 10.2 History degeneration
 
@@ -405,12 +503,28 @@ past events are encoded in current state
 
 because Cycle 1 already showed ordinary recurrent learning can absorb that form.
 
-The live burden is relational:
+### 10.3 Coupling degeneration
+
+Do not let:
+
+```text
+R = return–reconstitution coupling
+```
+
+collapse into:
+
+```text
+V and C are both present in the same analyst-drawn system
+```
+
+A valid R claim requires the consequences closed on the candidate organization to make a causal / structural difference to the reconstitution of the later Selection-position.
+
+The live burden is therefore:
 
 ```text
 which unit bears the consequence?
-which unit must reconstitute the next Selection-position?
-do those relations coincide / couple in a case-discriminating way?
+which unit reconstitutes the next Selection-position?
+do the borne consequences alter that reconstitution?
 ```
 
 ---
@@ -477,17 +591,25 @@ from where Selection proceeds
 
 BEARER
 what bears the consequences
-and must participate in reconstituting that position
+and participates in reconstituting that position
 ```
 
-A candidate Level-1 route would require showing that this repartition changes:
+The sharpened candidate is not mere `V + C`, but:
+
+```text
+C-bearing consequences
+-> make a difference to
+next-position reconstitution
+```
+
+A candidate Level-1 route would require showing that this repartition / coupling changes at least one of:
 
 ```text
 unit identity
 boundary assignment
 consequence attribution
 case equivalence
-or intervention demand
+intervention demand
 ```
 
 after strongest-neighbor substitution.
@@ -521,12 +643,12 @@ continuing higher-order organization
 
 +
 
-those consequences alter
-how the organization reconstitutes
-its next Selection-position
+NOT merely V + C coexistence:
+those borne consequences must alter / constrain
+how the later Selection-position is reconstituted
 
 ↓
-return–reconstitution recursive closure
+return–reconstitution coupling candidate
 ↓
 stronger Bearer candidate
 
@@ -541,11 +663,14 @@ without themselves defining bearer identity
 
 ```text
 B+C functional/bearer decomposition: AUTHOR-CONFIRMED
-vertical / stratified inclusion: AUTHOR-CONFIRMED
-integrated position-reconstitution + consequence-bearing burden: AUTHOR-CONFIRMED
+vertical cross-read: AUTHOR-DIRECTED
+upstream strengthened vertical claim: AUTHOR-CONFIRMED / UNAUDITED AT EVERY LEVEL
+integrated machine formulation: AUTHOR-ACCEPTED READING
 from-where / to-where decomposition: C / OPEN
-return–reconstitution recursive closure: C / OPEN
-V x C case surface: C / PRESSURE TOOL
+return–reconstitution coupling: C / OPEN
+V × C + R case surface: C / PRESSURE TOOL
+V0 C1: NEIGHBOR / COUNTEREXAMPLE PRESSURE, NOT ADMITTED BEARER
+V1 C1 R0 vs R1: PRIMARY COUPLING NEGATIVE CONTROL
 combined strongest-neighbor test: NOT PAID
 combined Level 0/1/2: UNASSIGNED
 new mechanism: NO
@@ -555,12 +680,15 @@ new deep well: NO
 HOLD EXIT: unchanged
 ```
 
+---
+
 ## 15. Next valid questions
 
-1. Is the `from-where / to-where` decomposition itself author-correct, or is bearer continuity better described differently?
-2. Can a coherent `V0 C1` case exist, or does mature autonomy theory already imply the relevant vertical selective structure?
+1. Is the exact `from-where / to-where` decomposition author-correct, or is bearer continuity better described differently?
+2. Against mature autonomy / enactivism, can a coherent `V0 C1` case establish why consequence closure alone is insufficient without defining SRT by fiat?
 3. Can `V1 C0` be instantiated without merely relabeling ordinary recurrent control?
-4. What relation makes consequence-bearing and position-reconstitution belong to the same candidate unit without presupposing that unit?
-5. Does the combined repartition survive a source-native strongest-neighbor pass at Level 1?
+4. Can `V1 C1 R0` be coherently separated from `V1 C1 R1`, with matched V and C but different consequence-to-reconstitution coupling?
+5. What relation makes consequence-bearing and position-reconstitution belong to the same candidate unit without presupposing that unit?
+6. Does the combined repartition survive a source-native strongest-neighbor pass at Level 1?
 
 Do not build a toy or open a new deep well before these conceptual gates are paid.
