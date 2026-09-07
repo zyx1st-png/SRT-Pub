@@ -20,6 +20,11 @@ tags: [MaterialPacket, MoralStatus, Consciousness, Attribution, Recognition, Eth
 - Philosophy patch: `Philosophy/patches/SRT_Philosophy_PH_ETH01_Moral_Status_Attribution_Recognition_Separation_v0_1.md`
 - Integration hook: `Philosophy/hooks/PH_ETH01_Moral_Status_Attribution_Recognition_Integration_Hook.md`
 - Material Log: `Operations/Material_Log/2026-09_Part01.md`
+- Root Material Log routing: `Operations/_SRT_MATERIAL_LOG.md`
+- Split index routing: `Operations/Material_Log/README.md`
+- Material registry: `Registries/material_registry.jsonl`
+- Patch registry: `Registries/patch_registry.jsonl`
+- Philosophy domain index: `Philosophy/_SRT_Philosophy_Hardening_Index.md`
 
 ## Pipeline verdict
 
@@ -80,6 +85,23 @@ subjecthood exhaustively settles policy protection
 LLMs are conscious because experienced respondents rate them higher
 valence is the SRT master moral scalar
 ```
+
+## Review closure
+
+The merge review ledger gaps are now closed in-tree:
+
+```text
+2026-09_Part01 root-log registration: CLOSED
+split-index registration: CLOSED
+root statistics: 241 total / 163 A / 67.6% A rate
+material_registry entry: ADDED
+patch_registry entry: ADDED
+PH-ETH01 philosophy domain-index route: ADDED
+source-reported OSF/GitHub locators: EXPLICIT
+non-peer-reviewed reliability qualifier: EXPLICIT
+```
+
+These are routing / evidence-hygiene fixes only. They do not upgrade the source, claim Level 2, or change the non-canonical disposition.
 
 ## Current landing status
 
