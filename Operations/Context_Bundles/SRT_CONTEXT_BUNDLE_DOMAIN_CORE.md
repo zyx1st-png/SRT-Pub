@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-05
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-07
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-05
-source_commit: d16431c3
-source_branch: theory/author-reentry-cycle2-relational-convergence-20260905
+generated: 2026-09-07
+source_commit: a15c0c9fc
+source_branch: claude/status-resync-20260907
 source_dirty: false
-inputs_digest: fa5a00c73e180615
+inputs_digest: d25fa2e55d300ac6
 ---
 
 # SRT 核心动力学上下文包
@@ -26,9 +26,9 @@ inputs_digest: fa5a00c73e180615
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-05 |
-| 来源 commit | `d16431c3` |
-| 来源分支 | `theory/author-reentry-cycle2-relational-convergence-20260905` |
+| 生成日期 | 2026-09-07 |
+| 来源 commit | `a15c0c9fc` |
+| 来源分支 | `claude/status-resync-20260907` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
