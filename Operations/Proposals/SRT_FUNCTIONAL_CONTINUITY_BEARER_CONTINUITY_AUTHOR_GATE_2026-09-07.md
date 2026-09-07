@@ -13,24 +13,22 @@ dependency:
   - Materials/2026/SRC_2026_09_07_Neuro_Osako_Reusable_Modular_Architecture.md
   - Materials/2026/READING_2026_09_07_Osako_Reusable_Modular_Architecture.md
   - Operations/Audits/SRT_OSAKO_REUSABLE_MODULAR_ARCHITECTURE_ROUTING_SUBTRACTION_2026-09-07.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FUNCTIONAL_BEARER_CONTINUITY_PASS1_2026-09-07.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md
-  - Operations/Audits/SRT_FUNCTIONAL_BEARER_VERTICAL_STRUCTURE_CROSSPRESSURE_2026-09-07.md
   - Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_IND06_Bearer_Concern_Selectability_Relational_Decomposition_v0_1.md
-  - Philosophy/patches/SRT_Philosophy_PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination_v0_1.md
   - Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_CLOSURE_2026-09-05.md
   - Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_POST_REDTEAM_CLOSURE_2026-09-06.md
-tags: [AuthorReentry, Bearer, FunctionalContinuity, Computation, OneFormation, StillThis, OwnHistory, ConsequenceAttribution, VerticalStructure]
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FUNCTIONAL_BEARER_CONTINUITY_PASS1_2026-09-07.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FUNCTIONAL_BEARER_CONTINUITY_PASS2_2026-09-07.md
+  - Operations/Audits/SRT_FUNCTIONAL_BEARER_VERTICAL_STRUCTURE_CROSSPRESSURE_2026-09-07.md
+  - Operations/Audits/SRT_FUNCTIONAL_BEARER_FROM_WHERE_TO_WHERE_DEEPENING_2026-09-07.md
+tags: [AuthorReentry, Bearer, FunctionalContinuity, Computation, OneFormation, StillThis, OwnHistory, ConsequenceAttribution, Reconstitution]
 ---
 
-# Functional continuity != bearer continuity — current author-gate state
+# Functional continuity != bearer continuity — author gate and deepening state
 
-> **Role:** current-state packet for the post-Osako functional-continuity / bearer-continuity question after the author's first adjudication.
+> **Role:** current proposal / routing surface for the post-Osako functional-continuity / bearer-continuity line.
 >
-> **Current author result:** `FC-B + FC-C` is author-confirmed. The author additionally required this reading to be cross-pressured against the 2026-09-07「立体结构」/本轮口语「垂直结构」work already landed in Cycle 2.
->
-> **Not canonical:** this file does not define bearer identity, numerical identity, subjecthood, consciousness or a new Selection law. No Level 0/1/2 verdict is assigned to the combined reading yet.
+> **Scope:** distinguish reusable computation / functional-locus continuity from continuing One / bearer continuity without reopening the retired Cycle-1 history-localization route or promoting a neuroscience module into ontology.
 
 ---
 
@@ -47,151 +45,66 @@ same represented content
 != same organism / subject
 ```
 
-The immediate SRT question is therefore not whether a reusable memory module “is a One”, but:
-
-> If content can change, implementation can be multiplexed, and a computation can still be described as the same reusable operation, what additional relation makes later operations belong to the same continuing One / bearer rather than merely instantiate the same function again?
+The paper pays only bounded relations among the first several neural/computational layers. It does not identify a neural subspace or neuronal cluster with a bearer, One, subject, or experiencer.
 
 ---
 
-## 2. Original divergence and author adjudication
+## 2. Author adjudication state
 
-The prepared options were:
+### PASS1 — B + C
 
-```text
-FC-A — functional-position sufficiency
-FC-B — same-unit consequence-closure continuity
-FC-C — higher-order bearer / migrating functions
-FC-D — role / closure co-constitution
-```
-
-The machine-side preferred combination was:
+The author explicitly selected:
 
 ```text
-FC-B + FC-C
+FC-B same-unit consequence-closure continuity
++
+FC-C higher-order bearer with migrating / recruited functions
 ```
 
-compressed as:
-
-> Functions may migrate or be reused inside a continuing bearer; what must remain continuous is not a named function or fixed component set, but the organization on which relevant consequences close and from which later Selection continues.
-
-The author answered:
-
-> **「认同你的b+c，但是可以考虑一下近期写入仓库的垂直结构」**
-
-The exact provenance and limits are recorded in:
-
-`01_Source_Intuition/SRT_AUTHOR_REENTRY_FUNCTIONAL_BEARER_CONTINUITY_PASS1_2026-09-07.md`.
-
-### Author-confirmed minimum
+Therefore the current author-licensed minimum includes:
 
 ```text
 functional continuity alone is insufficient for bearer continuity;
-no particular named function is necessary for bearer continuity;
-functions may be recruited / dropped / migrated / reused inside a higher-order bearer;
-load-bearing continuity is sought in one continuing consequence-bearing organization
-from which later Selection continues.
+no one named function is necessary for bearer continuity;
+functions may migrate / be recruited / dropped / reused inside a higher-order bearer;
+load-bearing continuity is sought at the level of a continuing consequence-bearing organization.
 ```
 
-### Still not author-settled
+### PASS1 vertical-structure instruction
+
+The author additionally required cross-reading against the recently landed Cycle-2「立体结构」work.
+
+That work states, at the sedimentation layer and with scope restricted to Selection-position, that flat horizontal coupling is insufficient and that manifestation/background stratification must sediment into a persisting foreground/background asymmetry before later Selection can repeatedly resume at the same position.
+
+### PASS2 — integrated confirmation
+
+After the cross-pressure, the author explicitly confirmed the integrated reading that:
 
 ```text
-strict numerical identity;
-copy / branching / fission;
-a universal necessary-and-sufficient bearer theorem;
-exact relation between bearer continuity and the recent vertical / stratified structure;
-Level 0/1/2;
-canonical landing.
+concrete functions may migrate;
+foreground/background contents may change;
+
+same bearer continuity nevertheless requires
+continued reconstitution of a non-flat / stratified Selection-position
++
+past consequences continuing to return to and alter the higher-order organization;
+
+what continues is therefore an organization relation combining
+stratified-position reconstitution and historical consequence bearing,
+not fixed function / member / state / ranking.
 ```
+
+This is author meaning / dependency confirmation, not a canonical definition or Level verdict.
 
 ---
 
-## 3. Why the 2026-09-07 vertical / three-dimensional structure matters
+## 3. Existing-owner subtraction remains in force
 
-The relevant already-landed author-strengthening is not generic “hierarchy”. Its bounded claim is:
-
-```text
-scope: selection-position
-level: sedimentation layer
-modality: structural necessity relative to current L0 commitments
-
-flat horizontal adjacency / coupling is insufficient
-to produce a persisting selection-position;
-
-manifestation / latency stratification
-must sediment into a persisting foreground/background asymmetry
-before later Selection can repeatedly resume at the same position.
-```
-
-This matters because B+C by itself could otherwise be over-compressed into:
+Existing owners already block several shortcuts:
 
 ```text
-higher-order container
-+ consequences stay inside
-```
-
-without explaining why later Selection resumes from a stable non-flat position.
-
-The reverse collapse is also forbidden:
-
-```text
-persisting foreground/background asymmetry
-!= bearer by itself
-```
-
-PH-IND02 / PH-IND06 still require consequence-return, history, future-selectability, continuity and non-outsourcing pressure.
-
----
-
-## 4. Current three-relation working reconstruction — C only
-
-The cross-pressure audit currently separates:
-
-### HORIZONTAL — functional topology
-
-```text
-roles / computations / components / couplings
-may migrate, split, be recruited, disappear or be reused.
-```
-
-### VERTICAL / STRATIFIED — Selection-position topology
-
-```text
-manifestation / foregrounding
-relative to
-backgrounding / latency
-
-repeated Selection sedimentation
--> non-flat foreground/background asymmetry
--> persisting Selection-position candidate
-```
-
-### DIACHRONIC — consequence/history closure
-
-```text
-where consequences return;
-which continuing organization is altered;
-where history / repair / cost remain non-outsourcably effective;
-how later selectability changes.
-```
-
-The current machine-side integration is:
-
-> **A stronger bearer candidate is a higher-order consequence-bearing organization that keeps reconstituting a stratified Selection-position while its concrete functions and components may change.**
-
-This sentence is **C / AI reconstruction only**. The author has confirmed B+C and required the vertical cross-read, but has not yet confirmed this full integrated formulation.
-
----
-
-## 5. Internal owner subtraction
-
-Existing owners already pay much of the obvious content:
-
-```text
-PH-IND01:
-tracking / re-identification != bearer continuity
-
 PH-IND02:
-closure / persistence alone != bearer
+closure / boundary / persistence alone != bearer
 same-unit consequence return
 + history-bearing writeback
 + future-selectability change
@@ -200,151 +113,149 @@ same-unit consequence return
 PH-IND06:
 Persistent Process != Bearer
 feedback != same-unit consequence closure
-functional / cognitive extension != bearer extension
-non-outsourcing pressures replacement / checkpoint cases
+non-outsourcing pressures checkpoint / replacement / consequence transfer
 
-PH-IND05 / PH-MEM01:
-copying / branching / objectified history do not settle same-bearer numerical identity
+PH-IND05:
+copy / fission / branching do not collapse into state or functional identity
 ```
 
-Therefore the combined reading cannot claim novelty for any ingredient in isolation.
-
-The potentially live structural question is only the **re-partition and ordering**:
-
-```text
-vertical sedimented selective asymmetry
--> persisting Selection-position
-
-separately:
-same-unit consequence closure
--> bearer pressure
-
-while:
-horizontal functional roles may migrate inside the higher-order organization.
-```
-
-Whether that re-partition survives strongest-neighbor substitution at Level 1 is still open.
+Therefore no new bearer ingredient is claimed merely from B+C or from the vertical structure.
 
 ---
 
-## 6. Strongest-neighbor pressure now changes shape
+## 4. Current three-relation decomposition
 
-After B+C, bare functionalism is no longer the strongest single pressure. The relevant set is:
+The combined author-confirmed line distinguishes:
+
+```text
+HORIZONTAL
+functional topology / role migration / component recruitment
+
+VERTICAL / STRATIFIED
+sedimented foreground-background asymmetry
+that makes a reconstitutable Selection-position possible
+
+DIACHRONIC
+consequence return / history writeback / non-outsourcing
+that alters the continuing higher-order organization across time
+```
+
+The vertical relation is now part of the author-confirmed bearer-continuity burden, but it is not sufficient by itself.
+
+---
+
+## 5. Deepening: `from where` vs `to where`
+
+The latest machine-side deepening separates:
+
+```text
+FROM-WHERE:
+where later Selection resumes from
+= stratified / reconstituted Selection-position
+
+TO-WHERE:
+where prior consequences return and become historically load-bearing
+= consequence-bearing organization
+```
+
+The promising C-level synthesis is:
+
+```text
+Selection from P_t
+-> consequence q_t
+-> q_t alters organization O_t
+-> O_t reconstitutes P_(t+1)
+-> later Selection resumes from P_(t+1)
+```
+
+The deepest candidate relation is therefore:
+
+> the organization that bears the consequences is the organization that must reconstitute the position from which later Selection continues.
+
+Genetically, this suggests asking whether Bearer formation is the gradual coupling of two relations that need not initially coincide:
+
+```text
+where Selection continues from
+and
+where its consequences close.
+```
+
+This is still C / machine reconstruction and is the next author gate.
+
+---
+
+## 6. Anti-circularity guard
+
+Do not explain first Bearer formation by assuming `same-unit consequence return` at the start.
+
+Safer working order:
+
+```text
+pre-bearer subjectless Selection
+-> distributed consequence efficacy / 多
+-> sedimented stratified Selection-position
+-> consequences increasingly modify the organization
+   that reconstitutes that position
+-> stronger return / reconstitution closure
+-> bearer candidate
+```
+
+This is a genetic reconstruction only. It does not reopen the failed Cycle-1 Level-2 history-localization route.
+
+---
+
+## 7. Candidate two-axis discriminator surface
+
+For conceptual pressure only:
+
+```text
+V = reconstitutable stratified Selection-position
+C = non-outsourcable consequence / history closure
+```
+
+```text
+V0 C0  transient process / no bearer pressure
+V1 C0  stable selective position but consequence can be externally reset / outsourced
+V0 C1  autonomous / consequence-bearing organization without the specific stratified Selection-position burden
+V1 C1  strongest current bearer candidate shape
+```
+
+This matrix prepares a possible Level-1 case distinction but does not earn it. `V0 C1` must first be shown coherent, and the strongest mature neighbor must be tested fairly.
+
+---
+
+## 8. Current strongest-neighbor pressure
+
+After B+C + vertical confirmation, bare functionalism is not the strongest comparator.
+
+The fair pressure set is at least:
 
 ```text
 organizational closure / enactivism
--> higher-order autonomous unity, dynamic boundary, functional replacement
-
-adaptive recurrent / competitive dynamics
--> history-shaped attractor structure, gating, competition, role migration
-
-Simondon
--> non-pregiven individuation / transduction / metastability
-
-functionalism / multiple realization
--> same function across changing implementation
-```
-
-The current combined reading is especially vulnerable to a fair composite:
-
-```text
-organizational closure
 +
 adaptive recurrent / competitive dynamics
 ```
 
-because that composite may already reproduce:
+with Simondon as formation pressure and functionalism / multiple realization as a weaker comparator.
 
-```text
-higher-order unity
-+ migrating functions
-+ history-sensitive non-flat state organization
-+ recurrent stabilization.
-```
-
-The future Level-1 question is therefore not “does SRT also have these ingredients?” but whether the **unit / dependency / consequence-attribution partition** remains different after fair substitution.
+The combined route only earns Level 1 if it changes a unit / admission / case classification after that pressure. It only earns Level 2 if a domain-native intervention / counterfactual / evidence demand follows.
 
 ---
 
-## 7. Anti-degeneracy guard
+## 9. Perfect-copy / branching guard
 
-Two reductions must be blocked simultaneously.
-
-### Reduction 1 — vertical structure -> ordinary weighting
-
-Unsafe:
+A perfect copy that duplicates:
 
 ```text
-some states / options have higher weights or activations
--> therefore SRT vertical structure
+functional organization
+vertical / stratified structure
+current causal state
+encoded history
 ```
 
-Ordinary attention, gating, attractor and recurrent dynamics can pay that.
+is not forced into same or different numerical identity by this proposal.
 
-### Reduction 2 — consequence closure -> ordinary state memory
-
-Unsafe:
-
-```text
-past events modify current state
--> therefore same-bearer history closure
-```
-
-Cycle 1 already showed ordinary recurrent learning can absorb that form.
-
-Any future discriminator must therefore concern a change in:
-
-```text
-unit / identity / boundary / consequence attribution
-```
-
-not merely a change in weights, memory traces or functional performance.
-
----
-
-## 8. Replacement / re-instantiation pressure
-
-The combined reading sharpens but does not finish the distinction.
-
-### Same-bearer candidate
-
-```text
-function migrates / implementation changes
-BUT
-prior consequences remain internally load-bearing for the continuing organization
-AND
-those consequences participate in reconstituting the stratified position
-from which later Selection proceeds.
-```
-
-### Mere functional re-instantiation candidate
-
-```text
-same function / same performance returns
-BUT
-old consequences do not need to be borne by the new instance
-as part of its own reconstitution.
-```
-
-Perfect copying remains open. If all current causal state, functional organization and stratified structure are copied, this packet does not invent a hidden token-provenance variable. PH-IND05 branching / consequence-separability pressure still controls.
-
----
-
-## 9. Next author question
-
-The next useful author adjudication is narrower than the original B/C choice:
-
-> **你理解的 bearer continuity，是不是可以这样说：具体功能可以横向迁移，前景/背景的具体内容也可以变化，但同一个 bearer 必须持续重构出一个“非平面”的 Selection-position，同时过去后果持续回到并改变这个高阶组织；所以持续的是“生成分层位置 + 承受历史后果的组织关系”，而不是某个固定功能、固定成员或固定排序？**
-
-Possible correction points if this is too strong:
-
-```text
-- vertical / stratified structure may be only an upstream prerequisite for Selection-position,
-  not part of bearer continuity itself;
-- consequence closure may be sufficient for bearer pressure without continuous vertical reconstitution;
-- the vertical relation may need a different description than foreground/background hierarchy;
-- the higher-order bearer may not be the same object as the Selection-position.
-```
+Once descendants can bear consequences independently, PH-IND05 consequence-separability pressure applies. No hidden token-provenance variable is introduced.
 
 ---
 
@@ -352,13 +263,20 @@ Possible correction points if this is too strong:
 
 ```text
 FC-B + FC-C author adjudication: PAID
-vertical-structure cross-read: REQUIRED / PASS1 EXECUTED
-exact combined formulation: AUTHOR ADJUDICATION NEXT
+vertical-structure cross-read: PAID
+integrated bearer-continuity relation: AUTHOR-CONFIRMED
+from-where / to-where decomposition: C / NEXT AUTHOR GATE
 combined Level 0/1/2: UNASSIGNED
 strongest-neighbor final verdict: NOT YET
 new Cycle number: NO
 new model / experiment: NO
 canonical edit: NO
-Neuroscience deep well reopening: NO
+new deep well: NO
 HOLD EXIT: unchanged
 ```
+
+### Next author question
+
+> **是否可以进一步说：Bearer 形成的关键不是先有一个“同一单位”再把历史写进去，而是两个原本可以分离的关系逐步闭合——“后续选择从哪里继续（from-where）”与“过去选择的后果落到哪里并改变谁（to-where）”。当后果不断回到并改变那个必须重新生成下一次立体 Selection-position 的组织时，才逐渐形成真正的 Bearer；所以 Bearer 的核心不是固定内容，而是“后果回返—位置重构”的闭环。**
+>
+> **同时，这个闭环仍不自动解决 perfect copy / branching 的数值同一性问题。**
