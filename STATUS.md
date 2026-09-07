@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-05
+updated: 2026-09-07
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
-> **最后更新**：2026-09-05
+> **最后更新**：2026-09-07
 > **当前作者级方向**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §4–§11`
 > **当前 Author Re-entry Cycle 1 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_CLOSURE_2026-09-05.md`
@@ -20,13 +20,27 @@ updated: 2026-09-05
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
 > **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **Cycle 1 最新作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS4_2026-09-05.md`
-> **Cycle 2 当前阶段记录与待裁决问题**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_INTERIM_CLOSURE_2026-09-05.md`（§§11–12 为整合复核与下一次作者裁决入口）
+> **当前 HOLD 判定面（程序级）**：`Operations/Audits/SRT_AUTHOR_REENTRY_HOLD_EXIT_REVIEW_2026-09-06.md`（终局式 `CONTINUE HOLD — NAMED BLOCKER`）
+> **当前 blocker 措辞以此为准**：`Operations/Status_History/SRT_STATUS_2026-09-06_PHYSICAL_TRIGGER_PLURALISM.md`（2026-09-06 作者裁决后更新过一次）
+> **Cycle 2 当前状态控制面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_POST_REDTEAM_CLOSURE_2026-09-06.md`（09-05 interim closure 降为历史 staging 记录）
+> **Cycle 2 最新作者动作**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`
+> **Cycle 3 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE3_CLOSURE_2026-09-06.md`
+> **当前路线分诊**：`Operations/Audits/SRT_HOLD_BLOCKER_ROUTE_TRIAGE_AFTER_BEARERLESS_NOGO_2026-09-06.md`
 > **历史条目**：`Operations/Status_History/`
 
 ## Fast Status
 
-- **Cycle 2 已形成阶段记录，尚未完成理论收口**：PASS1–PASS4、三轮 strongest-neighbor pressure 与内部 red-team 由现有 #911 保存。当前候选是双侧 Selection 与历史支持/抑制参与 One-formation 的 A+C 生成链；Level 1 仅保留既有审计的 weakened/narrowed provisional judgment，不能把整条链标为作者已裁决。post-red-team 作者二次裁决、独立问题族核验与可信 Level-2 路径仍未支付；第三井与 broad synthesis 继续 HOLD。下一步直接使用 interim closure §12 的具体问题，不重做四轮作者对话，不制造 v3/toy。
-- **Cycle 2 整合复核**：minimum non-neutrality 只约束 primitive actualisation 的实现，不产生/保证第一次发生；当前退居背景不等于永久排除或未来可达性的单调下降。L0 §六与 2026-08-05 显著性/侧抑制源材料已经包含相关双侧关系，应恢复来源连续性；本轮不认领新的双侧机制或改写 canonical。
+> **本页 2026-09-07 重同步**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以下列具名 closure 文件为准，不要以本页摘要为准。**
+
+- **程序级判定：`CONTINUE HOLD — NAMED BLOCKER`（HOLD EXIT REVIEW 1，2026-09-06）。** 两周期 re-entry 负担**已付**（Cycle 1 与 Cycle 3 各计一次 non-redundant credit；Cycle 2 是 meaning cycle，不计入该计数）。未付的是最终放行条件。**第三口主 deep well 与 broad cross-domain synthesis 继续 HOLD。**
+- **当前 blocker（2026-09-06 物理触发裁决后更新过，以更新版为准）**：缺一个有界的、实现特定的 Level-2 realization design——它要能**独立于被检验的后果**先认定一个 Selection candidate，再把一条 author-owned SRT 关系暴露给与具名最强成熟对手的**前瞻性分歧**。该设计可来自物理、生物、认知、AI 或其他领域；**物理被允许但不被特权化**。重跑 HOLD EXIT REVIEW 需先在纸面上同时付 Trigger A（对具名最强邻居守住一处 Level-1 repartition）与 Trigger B（给出具体 Level-2 路径）。
+- **Cycle 2（One / Selection-position 形成）已收口**：作者 source trace、邻居压力、内部 red-team、post-red-team 二次作者裁决（2026-09-06 作者选 **A**）、post-adjudication subtraction 与 strongest-neighbor consequence pass **全部 COMPLETE**。`Level 1: PASS — NARROW`（授予「参与形成」承诺）、`Level 2: HOLD`、`scientific distinctiveness: NOT ESTABLISHED`。吸收测试结论：公平复合体（Simondon + Luhmann/Spencer-Brown + adaptive coevolutionary dynamics）几乎能复现全部当前可见下游现象，幸存残余是 primitive bearerless Selection 的「放置」。
+- **Cycle 2 的 2026-09-07 强化是一条新承诺，不继承旧 verdict**：作者把其中一条关系从「参与形成」强化为**结构性必要条件**（沉积层／辖域=选择位置／结构性非构成性必然）。这与旧承诺**不是同一命题的强弱两版**，因此 09-06 的 `Level 1: PASS — NARROW` **不为它背书**；该强化承诺目前**在任何 Level 上均未经审计**，且以「已知存在事件层退化风险、尚无公认防退化判据」的状态留档。吸收测试**尚未在该强度上重跑**。
+- **Cycle 3（Selection as creative primitive / Creator-Ground / 连续局部创造）已收口**：三轮作者裁决与二次裁决 COMPLETE。`Cycle-3-specific Level 0: PASS（translation-interpretive clarification）`、`Level 1: NOT NEWLY EARNED`、`Level 2: NOT FOUND`、`scientific distinctiveness: NOT ESTABLISHED`；non-redundant HOLD-exit credit 相对 Cycle 1 计为 YES。
+- **不可撤回性：作者已选 IRR-B**（2026-09-06）。即真正发生过的 Selection 必然在**当前完整因果状态**中留下不可完全抹除的有效差异（局部可恢复、信息可外移，但计入完整相关系统则不可能真正复原）。`IRR-B Level 1: PASS — NARROW`、`IRR-B Level 2: HOLD`。
+- **物理触发：作者已裁 C-primary / A-permitted**（2026-09-06）。不存在 physics-first 或解释中立的 primitive Selection 物理登记基础；有界的领域特定物理准入面可按需开发，但只是下游实现／测试接口。AM-A implementation pluralism 与 PHR-A 解释多元实现架构均保留。**不要求普遍物理触发，不认领普遍物理定律。**
+- **已退役的路线（勿重开）**：bearerless-actualisation 作为 HOLD-exit 路线经测试 **NO-GO**（Barad 吸收 pre-relatum 一侧；物理／完成粒度／测量／意识／AI 各道均未出 Level 2）——**本体保留，仅路线退役**。路线排序现为：IRR-B 最高优先，autonomy-matched / non-outsourcing 次之并降级，bearerless vs Whitehead/Barad 已 DROP。
+- **本轮各线共同的禁止项**：无 canonical owner 改写；不做 toy/model/experiment 以维持正结果；不把 cycle 编号本身当作独立性证据；不因为「问题场开放」把 K 静默降成 D。
 
 - 首读顺序唯一权威仍是 `AGENTS.md §Session Start`。
 - **2026-09-04 Architecture v2 继续有效，但受 2026-09-05 修正案控制**：`Domain Reconstruction Framework` 仍位于 Constitution 与具体 deep well 之间；它现在是更宽本体重构流程中的领域问题重组面，不再以 bearer/objectification 或直接增量审计穷尽领域重构。
