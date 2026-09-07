@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-05
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-07
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-05
-source_commit: d16431c3
-source_branch: theory/author-reentry-cycle2-relational-convergence-20260905
+generated: 2026-09-07
+source_commit: bfd83f8c0
+source_branch: claude/status-resync-20260907
 source_dirty: false
-inputs_digest: fa5a00c73e180615
+inputs_digest: 7538ab0d8a8955c0
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: fa5a00c73e180615
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-05 |
-| 来源 commit | `d16431c3` |
-| 来源分支 | `theory/author-reentry-cycle2-relational-convergence-20260905` |
+| 生成日期 | 2026-09-07 |
+| 来源 commit | `bfd83f8c0` |
+| 来源分支 | `claude/status-resync-20260907` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
