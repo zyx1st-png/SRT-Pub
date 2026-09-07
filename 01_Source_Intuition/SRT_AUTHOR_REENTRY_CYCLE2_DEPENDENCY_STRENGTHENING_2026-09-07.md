@@ -73,7 +73,16 @@ PASS4: 「现有理论中侧抑制并没有作为本体论的基础，
 2026-09-07: 「只有这种立体结构的形成才能产生水平位置的稳定和收敛。」
 ```
 
-作者在这条关系上从未使用「参与」强度；「参与」出自 2026-09-05 interim closure §12 为送审而写的降级措辞。
+关于「参与」一词的准确归属（勿简化）：
+
+```text
+作者自己的表述:  从未使用「参与」强度
+该词的来源:      2026-09-05 interim closure §12 为送审而写的措辞
+但:              作者 2026-09-06 选 A 时，所批准的命题确实含该措辞
+=> 「参与」有作者背书，只是不是作者原创的强度
+```
+
+因此本文件**不主张**「参与」缺乏作者授权；本文件主张的只是：作者本人在这条关系上的历次表述强度高于该措辞。
 
 ---
 
@@ -110,13 +119,6 @@ the manifestation/latency stratification carried by each Selection event
 must sediment into a persisting foreground/background asymmetry
 before later Selection can repeatedly resume at the same position.
 
-discriminator (required, else the claim collapses to the event layer):
-not "a constraint appeared", but
-local independent reachability decreases
-WHILE the whole acquires a viable direction
-no single position could reach on its own.
-  -- 判据来源：01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md 章末注九
-
 guard retained (unchanged from 2026-09-06 closure §5):
 present relative suppression
 != later accessibility decrease
@@ -125,6 +127,34 @@ and A. suppressed competing alternative
 vs B. unobtrusive enabling background
 must not be silently merged.
 ```
+
+### 4.1 退化风险与一个**未获授权**的候选判据（C）
+
+必须显式登记本主张的已知弱点：
+
+> 事件层的显现—潜在分层已由 `Core_Law/SRT_L0_Metaphysics.md` §六「选择」词条写进定义。若本主张被读到事件层，它是分析真、无反例空间。§4 的 `level` 限定是当前唯一的防线，**本文件不附带任何已获授权的防退化判据**。
+
+机器侧曾提出下述候选判据，**作者未就此裁决，本文件不授权、不要求、不视其为本主张的组成部分**：
+
+```text
+[C — machine-side candidate, NOT author-adjudicated, NOT audited]
+not "a constraint appeared", but
+local independent reachability decreases
+WHILE the whole acquires a viable direction
+no single unit could reach on its own.
+```
+
+引用该候选时必须同时带上它的边界：
+
+```text
+来源: 01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md 章末注九
+该注自身的状态: source-intuition 候选；与既有理论对象的关系为「候选映射、尚待验证」
+该注的场景: 单主体地形 -> 多单元代理 的跨尺度接缝（例：多细胞体、音位系统）
+scope 缺口: 该措辞预设可辨认的「单元」及其「独自达成」，
+           而 Cycle-2 讨论的前个体场景中尚无完成的单元
+```
+
+因此当前状态是：**强化主张以「已知存在事件层退化风险、且尚无公认防退化判据」的状态留档。** 这是本记录的已知弱点，不是已解决项。
 
 ---
 
@@ -144,7 +174,11 @@ newly fixed by this round:
   the level at which that necessity is asserted (sedimentation, not event)
   the scope (selection-position, not all stable existence)
   the modality (structural, not constitutive)
-  the discriminator that keeps it out of analytic triviality
+
+still NOT fixed by this round:
+  no authorized anti-degeneracy discriminator (see 4.1);
+  the `level` limitation is currently the only defence against
+  collapse into the analytically true event layer
 ```
 
 ---
@@ -162,28 +196,76 @@ does NOT establish that the composite neighbor fails to absorb the
 does NOT license a new toy / model / experiment;
 does NOT license any canonical owner edit;
 does NOT license writing this into the book manuscript or public content;
-does NOT convert Cycle 2 into a non-redundant HOLD-exit cycle.
+does NOT convert Cycle 2 into a non-redundant HOLD-exit cycle;
+
+does NOT inherit the 2026-09-06 `Level 1: PASS - NARROW` verdict.
+  That verdict was granted to the `participates in forming` commitment.
+  The strengthened commitment is different and is currently
+  UNAUDITED AT EVERY LEVEL. Earlier audit results do not vouch for it.
 ```
 
 作者确认支付的仍然是 **meaning / dependency adjudication**，本轮只是把其中一条关系的强度、层级、辖域与模态钉死。
 
 ---
 
-## 7. 为什么这条强化落在幸存残余上
+## 7. 与 2026-09-06 幸存残余的关系（勿混同）
 
-2026-09-06 closure §3 判定：吸收测试之后幸存的是「把 primitive bearerless Selection 作为先于完整的一的双侧现实化关系」的那个**放置**。
+**先纠正一个容易出现的错误概括。** 不能说「参与已被全额吸收，强化为必要性才保住优先性」。事实是：
 
-「参与」不表达放置的优先性——它与"分层是诸多参与因素之一"相容，而后者正是被复合邻居吸收的读法。「结构性必要条件」表达优先性。因此本轮强化与 §3 的幸存残余指向同一处，不是另起炉灶。
+```text
+2026-09-06 裁决 §3 已把
+  `subjectless Selection precedes a completed One`
+列为独立一行，与 `participates in forming` 那行并列。
+=> 生成顺序/优先性在「参与」强度下就已是明写的作者承诺。
 
-但这不等于强化后的读法能通过吸收测试：**该测试尚未在这一强度上重跑**。这是下一步机器侧工作，不是本文件的结论。
+2026-09-06 closure §3 的幸存残余
+  （primitive bearerless Selection 作为先于完整的一的双侧现实化关系的「放置」）
+也是在「参与」强度下幸存的。
+=> 「放置」并非靠本轮强化才保住。
+```
+
+**因此两者是不同承诺，不是同一承诺的强弱两版：**
+
+```text
+2026-09-06: 保留生成顺序（Selection 先于完整的一）
+2026-09-07: 另外主张沉积结构不可缺少
+```
+
+后者不是前者的推论，前者也不蕴含后者。
+
+**直接后果**：2026-09-06 的 `Level 1: PASS — NARROW` 是发给前者的，**不自动为后者背书**。强化后的主张目前在任何 Level 上均未经审计（见 §6）。同理，closure §3 的吸收测试是在「参与」强度上跑的，**尚未在本强度上重跑**——既不能据此说强化版会被吸收，也不能据此说它不会。
+
+本节只确定两条承诺的关系，不为强化版认领任何既有审计结果。
 
 ---
 
 ## 8. 未回答的开放项
 
-以下两项作者本轮未裁决，不得代答：
+以下各项作者本轮未裁决，不得代答：
 
-1. **反例（Level-2 入口候选）**。被问到"说'只有…才能'时，是否有一个具体的、水平耦合丰富却收敛不出持存位置的情形"，作者本轮未回答。若存在这样的具名情形，它是当前唯一可见的 Level-2 入口候选；若不存在，本条停在结构性必然，不向 Level 2 前进。
+1. **检验方向（含一处已更正的错误）**。机器侧本轮向作者提出的问题形状是「水平耦合丰富、却收敛不出持存位置的具名情形」，作者未回答。**该形状不检验本轮强化的必要性主张**——它与该主张相容，无法证伪它。三类案例必须分开登记，不得互相冒充：
+
+```text
+[i] 耦合失败案例  (H ∧ ¬P)
+    形状: 水平耦合丰富，却未形成持存选择位置
+    检验: §4 claim 的前半（水平耦合本身不充分）
+    不检验: 必要性
+    状态: 本轮已向作者提出，未回答
+
+[ii] 必要性反例  (P ∧ ¬S)      <- 真正检验本轮强化的形状
+    形状: 未形成所主张的持存前景/背景沉积结构，
+          却仍然形成了持存选择位置
+    检验: §4 claim 的后半（沉积分层不可缺少）
+    若找到: 强化主张被证伪，或须进一步收窄
+    状态: 本轮未提出，未回答
+
+[iii] 邻居区分案例
+    形状: 某具体案例上，具名最强邻居与强化后的 SRT 给出不同判断
+    检验: 是否存在 Level-2 相关的 domain-native downstream consequence
+    状态: 本轮未提出，未回答
+```
+
+`[i]` 或 `[ii]` 单独均**不构成 Level 2**：按仓库既有 anti-relabeling 规则，任何 Level verdict 必须绑定具名最强邻居、其 source-native claim，以及 SRT 改变的具体结构项。此前把 `[i]` 记为「当前唯一可见的 Level-2 入口候选」是错误的，已更正。
 
 2. **「遮蔽」的术语碰撞**。作者原句用「遮蔽」指前个体、构成性的相对抑制；而 `Core_Law/SRT_Occlusion_Dynamics.md` 与 `01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md` 的「遮蔽」均指**已成形有限位置**的视域收窄（L0 §六「遮蔽」词条：有限位置的结构性后果）。同一个词一端在解释项、一端在被解释项。需要作者裁决：改口径、换词，还是显式登记为两义。在裁决之前，本文件正文一律使用「相对抑制／背景化」，不使用「遮蔽」承担构成性含义。
 
