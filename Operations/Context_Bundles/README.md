@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-07
-source_commit: a15c0c9fc
+source_commit: bfd83f8c0
 source_branch: claude/status-resync-20260907
 source_dirty: false
-inputs_digest: d25fa2e55d300ac6
+inputs_digest: 7538ab0d8a8955c0
 ---
 
 # SRT 上下文包

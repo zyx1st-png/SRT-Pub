@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-07
-source_commit: a15c0c9fc
+source_commit: bfd83f8c0
 source_branch: claude/status-resync-20260907
 source_dirty: false
-inputs_digest: d25fa2e55d300ac6
+inputs_digest: 7538ab0d8a8955c0
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: d25fa2e55d300ac6
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-07 |
-| 来源 commit | `a15c0c9fc` |
+| 来源 commit | `bfd83f8c0` |
 | 来源分支 | `claude/status-resync-20260907` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
