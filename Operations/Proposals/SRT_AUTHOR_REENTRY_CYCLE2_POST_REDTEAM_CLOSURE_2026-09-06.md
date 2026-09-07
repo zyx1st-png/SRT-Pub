@@ -234,4 +234,6 @@ This question is deliberately non-bearer-centered. It should begin a new author-
 
 The 2026-09-05 interim closure remains a valid historical staging record. For current Cycle-2 status after the 2026-09-06 author adjudication, this file controls.
 
+**2026-09-07 addendum (strength only).** The author subsequently strengthened one link of the confirmed ordering from `participates in forming` to a structurally necessary condition, fixing its level (sedimentation, not event), scope (selection-position) and modality (structural, not constitutive). See `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`. That record changes no Level verdict here: Level 2 remains HOLD, the named blocker remains unpaid, the retired bearerless HOLD-exit route stays retired, and the absorption test of §3 has **not** been rerun at the strengthened reading.
+
 No canonical file is modified by this closure.
