@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # SRT Operations Hub
@@ -39,7 +39,14 @@ raw session / dialogue compilation / residual archives 已下沉到：
 
 - `Archive/raw_sessions/`
 
-## Current Research Programme — 2026-09-05
+## Current collaboration control — 2026-09-08
+
+以 SRT 自身问题组织有界理论形成，吸纳成熟解释并生成新问题和候选结论；不把“邻居留下多少残余”设为默认研究方向。当前行为 owner 为治理修正案 §4.2；它沿用 U-mode / O-track，并限定 Level / N-mode 到实际比较主张。来源、论证、反例与事实约束在所有模式下继续有效。
+
+- 作者原话：`../01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`
+- 实施与验收：`Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`
+
+## Current Research Programme — 2026-09-05, collaboration updated 2026-09-08
 
 当前第一优先工作线是 **SRT Author Re-entry + Ontology Reconstruction**，Constitution v1 与 Domain Reconstruction Layer 保留，但重新定位：
 
@@ -63,10 +70,11 @@ current author question / intuition
 -> author provisional convergence
 -> internal red-team
 -> fuller neighbor adaptation / pressure
--> common-problem extraction
--> author second adjudication
--> only then ontology/interface hardening
--> only then domain-specific discrimination / Case A-B-C when warranted
+-> SRT-led absorption / relational reorganization / new questions and candidate conclusions
+-> source fidelity / inference / counterexample / reciprocal-constraint checks
+-> author second adjudication of substantive meaning / direction
+-> ontology/interface hardening under existing rules
+-> domain-specific discrimination / Case A-B-C only for the relevant comparative claim
 ```
 
 Constitution v1 保持 active/canonical reader-interface prototype，但：
@@ -94,7 +102,7 @@ bearer problem
 
 但二者统一按 **early calibration pilots** 解释，不外推为 mature whole-SRT ontology verdict。
 
-在 author re-entry 至少完成一轮并由作者明确放行之前：
+在治理修正案 §10.1 的 HOLD EXIT REVIEW 完成并由作者明确放行之前（当前具名 blocker 见 STATUS 控制指针）：
 
 ```text
 third main deep well = HOLD
@@ -144,8 +152,8 @@ forced Case A/B/C as ontology-formation engine = PROHIBITED
 - machine review 按角色分工而不是用模型共识代替裁决；
 - strong neighbor 必须先用其自身语言表达；
 - neighbor pressure 可以改变 / 缩小 SRT；
-- 在提出 SRT solution 前先做 common-problem extraction；
-- 只有 bounded、author-owned SRT response 存在时才要求 D-track / Case A-B-C。
+- 从 SRT 根问题出发吸纳并重组已有解释；共同问题可以由重组产生，不要求邻居先留下共同残余；
+- bounded、author-owned SRT response 存在且实际提出比较主张时，才为该主张要求 D-track / Case A-B-C；常规来源、推理与反例检查始终保留。
 
 ## Connector / large-file safety
 
@@ -192,7 +200,7 @@ D-track = discriminating / empirical increment
 1. **author re-entry**：围绕开放 ontology 问题进行作者对话与 source recovery；
 2. **mature-neighbor adaptation**：多个强邻居、强反例、source-native problem framing；
 3. **machine red-team refinement**：内部一致性、strong-neighbor advocate、counterexample、relabeling、hidden commitment、author-intent drift；
-4. **common-problem extraction**：先在非 SRT 语言中识别传统视野的重复困难；
+4. **SRT-led absorption / problem generation**：将成熟解释放入作者问题，说明重组后的新问题、候选结论与推理，保留领域差异和反向约束；
 5. **author second adjudication**：决定是否形成 bounded SRT response；
 6. index / link / bootstrap hygiene；
 7. 后续 Core/Core_Law role-reclassification audit；

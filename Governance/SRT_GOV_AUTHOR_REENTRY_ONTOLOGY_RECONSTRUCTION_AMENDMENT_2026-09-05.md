@@ -3,12 +3,14 @@ id: SRT-GOV-AUTHOR-REENTRY-ONTOLOGY-RECONSTRUCTION-AMENDMENT-20260905
 type: framework
 status: active
 date: 2026-09-05
+updated: 2026-09-08
 layer: meta
 epistemic_layer: os
 claim_mode: governance
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md
   - Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md
   - Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md
@@ -66,6 +68,28 @@ automatic canonical reset
 
 Author intuition may pressure a canonical commitment. AI synthesis, a new framework
 section, or an `OPEN` label may not silently demote it.
+
+---
+
+## 0.3 2026-09-08 collaboration update — effective scope
+
+Author source: `01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`.
+The author requests SRT-led absorption of neighboring theories and generation of new
+questions/conclusions, rather than default domain-local increment hunting.
+
+This update refines the existing U-mode / O-track in place. §4.2 controls the current
+human–AI research workflow. It supersedes blanket readings of §4–§6, the Domain
+Framework §12 and ChoiceMap's owner probe that made a strongest-neighbor residual
+or Level 1 a prerequisite for any substantive theory formation. Those tests remain
+required for the bounded comparative claims to which they actually apply.
+
+Unchanged: K/A/B/C/D, canonical edit discipline, source fidelity, author convergence,
+negative results, historical Level verdicts, and §10.1/§10.2 HOLD gates. SRT's proposed
+methodological reach is an author research position, not proven universal superiority.
+Bounded SRT-led problem reorganization is permitted within the existing allowed work;
+it does not release a broad cross-domain synthesis programme or a third main well.
+
+Execution and later behavioral acceptance: `Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`.
 
 ---
 
@@ -249,10 +273,11 @@ current author question / intuition
 -> author provisional convergence
 -> internal contradiction / circularity / hidden-premise red-team
 -> fuller neighbor adaptation and pressure
--> common-problem extraction across the relevant traditions / domains
--> non-substitutability / structural-consequence test against a named strongest neighbor
--> author second adjudication
--> only then repository ontology/interface write or domain discrimination
+-> SRT-led absorption / relational reorganization and new questions / candidate conclusions
+-> source fidelity, inference, counterexample and reciprocal-constraint checks
+-> author second adjudication of meaning / direction where substantively needed
+-> repository ontology/interface hardening under existing write rules
+-> named-neighbor discrimination only for a scoped comparative claim (§4.2)
 ```
 
 This does not require the author to invent in isolation. It requires AI and sources to **pressure and inform** author judgment rather than substitute for it.
@@ -278,6 +303,70 @@ Agreement among roles/models is not author convergence. A Level-1/2 non-substitu
 
 ---
 
+### 4.2 SRT-led human–AI collaboration — current operating rule
+
+**Research agenda.** Start from an author-owned SRT root question, current commitments
+and unresolved relations. Neighboring theories supply mechanisms, local explanations,
+conceptual distinctions, arguments, evidence and constraints. They need not leave an
+unexplained remainder before SRT may use them. Theories can be absorbed into a proposed
+SRT organization without asserting that SRT derives, contains or replaces them.
+
+**Constructive work.** Reuse U-mode / O-track; do not create another mode, ladder or
+per-turn ledger. In an existing bounded work package, make recoverable:
+
+```text
+SRT root question and author / K constraints
+source-native contribution and applicability
+what is inherited and what relation is reorganized
+new question / candidate conclusion and its premises / inference
+what remains incompatible, open or domain-specific
+counterexample / evidence that could revise the mapping or SRT premise
+author meaning status and next action's connection to the root question
+```
+
+Newly formed questions or conclusions are not automatically literature-novel results.
+Explanatory connection, clarified presuppositions, better questions and justified
+conclusions can be research gains without exclusive mechanisms or predictions.
+Pure relabeling, repeated restatement and unsupported universal inclusion are not gains.
+
+**Comparison trigger.** Run a bounded novelty / non-substitutability / superiority
+comparison when the task explicitly requests it, or when an actual claim asserts
+uniqueness, irreducibility, superiority, or an additional predictive/intervention role.
+Record that claim and comparator; if meaning is still open, identify the burden but
+do not invent an author decision or assign a premature verdict. Do not trigger N-mode
+merely because a source already explains something. Conversely, omitting a label does
+not exempt an actual comparative claim from its burden.
+
+**Universal critical duties.** All substantive claims still face the appropriate logic,
+source, counterexample and factual checks. Necessity requires an argument and exposure
+to counterexamples even if no novelty is claimed. Causal and empirical assertions need
+domain-appropriate evidence. External constraint may revise SRT; 'absorption' cannot
+turn disagreement into automatic confirmation. 'Traditional science/metaphysics' must
+not be treated as one uniform weak rival.
+
+**Author interface.** Use concrete cases and explain additional commitments before
+forcing technical options. Preserve reject-all, hybridization and root reframing.
+Offer recommendations when useful or requested, label them as AI judgment, and ground
+them in the author's question, explanatory value and costs rather than resistance to
+neighbor absorption alone. Do not re-ask settled meaning or routinely seek permission
+for authorized retrieval, formatting and synchronization. New substantive meaning is
+not inferred from 'continue' or contextual acceptance of an earlier formulation.
+
+**Direction and review.** Reuse ChoiceMap root-return triggers and six-round budget;
+one turn's local coherence does not establish relevance to the root. AI handles
+source recovery, constructive synthesis, critical checks and engineering; the author
+owns meaning and direction. Role separation is not independent review. When extra
+review is used, identify actual reviewer/model, input scope, reviewed revision,
+strongest objection and disposition in the existing work package/PR.
+
+**Storage and stopping.** Keep one current controlling work package for one bounded
+question where practical; reuse existing trace/closure routes. A known mechanism can
+remain an explicit premise in a new organization. Stop duplicate packaging where no
+new question, explanation, argument or constraint is produced. State what would
+justify returning; do not strengthen an author commitment merely to preserve novelty.
+
+---
+
 ## 5. Mature-neighbor adaptation now precedes increment pressure
 
 The existing U-mode / N-mode distinction remains valid, but sequencing is tightened.
@@ -297,7 +386,11 @@ The goal is not to accumulate supportive quotations. Neighbor work must be allow
 
 ### 5.1 Common-problem extraction gate
 
-Before claiming a new SRT solution/increment, identify the traditional problem that remains after fair neighbor adaptation.
+Start from the SRT question and examine what source-native theories contribute to it.
+A common problem may connect already-solved local questions, revisit a presupposition,
+or emerge from their relational reorganization. It need not be a gap left by all neighbors.
+When claiming to solve a residual beyond those neighbors, identify that residual after
+fair adaptation; do not use this narrower requirement as a gate on O-track construction.
 
 A useful common problem should be expressible without SRT vocabulary first.
 
@@ -310,11 +403,17 @@ What has each tradition already solved?
 What remains unresolved because of different starting cuts / ontologies / methods?
 ```
 
-Only after this step may SRT propose that one of its reconstructed relations reorganizes or resolves the shared problem.
+An SRT-side organization may itself generate the candidate question. State the question
+in intelligible language, preserve domain differences, and show the inference to any
+proposed conclusion. Failure to find a common residual blocks that residual claim,
+not every use of the established explanations.
 
 ### 5.2 Non-substitutability / structural-consequence gate
 
-The repository already forbids retrospective relabeling, but a candidate SRT response also needs a **positive non-triviality test**.
+The repository forbids retrospective relabeling. For general O-track work, assess the
+constructive payoff and critical duties in §4.2. The following Level test evaluates a
+bounded claim of comparative structural difference or downstream discrimination, not
+the admission of every SRT question, synthesis or substantive candidate response.
 
 Before assigning Level 0/1/2, record this minimum comparison tuple:
 
@@ -351,13 +450,19 @@ Level 2 — downstream consequence
   This may justify entry toward N-mode; it does not by itself establish Case C.
 ```
 
-A candidate response must reach at least **Level 1** before it is described as a substantive SRT reorganization of the common problem. Level 0 may still be useful and should be retained under its correct translation/realization role.
+A claim of substantive structural difference **relative to the named neighbor** requires
+at least Level 1. O-track organization and theory formation do not require that verdict;
+use `not assessed — no comparative claim` when applicable. A scoped Level-0 result
+remains adverse to that asserted difference and cannot be erased by switching modes,
+but does not delete independently justified constructive uses of inherited knowledge.
 
 ---
 
 ## 6. N-mode / Case A-B-C throttle
 
-Case A/B/C remains a legitimate gate on a concrete claim that **SRT adds X**.
+Case A/B/C remains a legitimate gate on a concrete claim that **SRT adds X** beyond a
+bounded rival. Apply the comparison trigger in §4.2; a new question, useful synthesis
+or newly derived conclusion is not automatically an assertion of unique contribution.
 
 It is not the default engine for forming SRT ontology.
 
@@ -424,7 +529,8 @@ G. objectification and bearer/position diagnostics
 H. inherited assets / materials / domain mechanisms
 
 I. candidate SRT response
-   only if author-adjudicated; test non-substitutability explicitly against a named strongest neighbor
+   author-adjudicated meaning plus constructive payoff / critical checks;
+   named-neighbor non-substitutability only for a scoped comparative claim (§4.2)
 
 J. deep-well queue
    only after the above work is mature enough to justify discrimination
@@ -555,14 +661,17 @@ Near-term theory progress should be measured primarily by:
 
 ```text
 quality of recovered author questions
+SRT-led absorption that preserves source meaning and connects explanations
+new questions / justified candidate conclusions and their explicit inference
 clarity of K/A/B/C/D status separation
 strength and fairness of neighbor adaptation
 quality of machine red-team / counterexamples
 identification of recurring cross-theory problems
-non-substitutability of candidate SRT responses
+non-substitutability where a comparative claim is actually made
+root-question relevance and correction of AI-led direction drift
 author adjudication after pressure
 named unresolved blockers and exposure debt
-ability to state an SRT response without merely relabeling a neighbor
+ability to explain the SRT-side constructive payoff without merely relabeling a neighbor
 ```
 
 Deep-well count, archive row count and number of Case-C candidates are secondary during this correction phase.

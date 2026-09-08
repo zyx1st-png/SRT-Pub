@@ -2,10 +2,12 @@
 id: SRT-MATERIAL-PIPELINE
 type: framework
 tags: [Material, Pipeline1, Intake, Writeback, Registry, SourceCard, PatchNote]
-status: active_v2
+status: active
+version: v2
+updated: 2026-09-08
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
 dependency: [SRT-OPERATIONS-README, SRT-MATERIAL-LOG, SRT-MATERIAL-ADJUDICATION-WORKFLOW, SRT-GOV-SYN01-ONTOLOGICAL-SYNTHESIS-DISCRIMINATION]
 ---
 
@@ -141,19 +143,21 @@ Layer C — SRT discriminating claim (if any)
 
 Layer B 可以很强而 Layer C 为空。
 
-### 3.3 Owner-side novelty probe（写回前强制）
+### 3.3 Owner-side novelty probe（写回前强制；内部去重，不是外部思想准入门）
 
 **Source-side 去重不等于 repository-side 新颖性。** 在把任何候选“新增接口 / 新分解 / 新阶梯 / 新 construct / 新 bridge claim”写进仓库前，必须对每条候选增量做一次 **bounded owner-side novelty probe**。目标不是无界递归检索，而是确认仓库现有 owner 是否已经能回答同一个角色问题。
 
 **适用范围与触发词无关（2026-08-26 澄清）**：本 probe 绑定的是**候选增量**，不是 `材料` 触发词。任何来源产生的"新增接口 / 新分解 / 新阶梯 / 新 construct / 新 bridge claim"都必须跑，包括外部模型长对话的产出、ChoiceMap 直觉挖掘 trace、以及作者自己的推演。ChoiceMap trace 的两个调用点见 `_SRT_CHOICEMAP_TRACE_WORKFLOW.md §6.4a`（轮间闸）与 `§9.3`（收尾管线）。
+
+2026-09-08 执行限定：按治理修正案 §4.2，检索的是**仓库已有 owner**，不是裁定外部理论是否给 SRT 留下独有增量。已有内容可继续作为明确引用的前提、机制和关系材料；不新建重复定义，不意味着只能研究减除后的碎片。一个候选组织可以连接多个既有 owner，需说明连接后产生的问题、解释或约束，而非把旧成分当成新发现。外部新颖性/优越性比较仅由实际比较主张或明确任务触发。
 
 最低流程：
 
 1. **先命名最可能的 owner**：canonical owner、现有 bridge、hook、OPEN_TENSIONS、glossary / claim-status 中至少指出 1–3 个最可能落点；
 2. **做有界检索**：至少使用候选术语和一个 role-equivalent 查询（例如不是只搜 `candidate generation`，还要搜“future reachability / rule rewrite / generation condition”）；
 3. **给出 subtraction verdict**：
-   - `already owned` — 不新建平行分类；只作为 source support / hardening / cross-reference；
-   - `partly owned` — 只保留现有 owner 尚不能表达的 residual difference，并明确 owner 边界；
+   - `already owned` — 不新建平行分类；引用为既有前提，可参与有明确问题/解释收益的关系重组；
+   - `partly owned` — 新增内容只归属未被 owner 覆盖的关系；在完整论证中保留并引用继承部分，不把研究方向强制缩成 residual；
    - `reverse constraint` — 若材料主要暴露既有 SRT 前件、范围或桥接表述的问题，优先登记对 owner 的压力，而不是强造正向新理论；
    - `unresolved overlap` — 若无法证明独立增量，路由 `OPEN_TENSIONS` / pending hook，不创建新的 taxonomy / scalar / operator / closure family；
 4. **碰到同名术语必须消歧**：共享词形不能当成共享定义；必须检查 glossary、canonical owner 和历史 bridge 的既有所指；
@@ -166,7 +170,8 @@ Candidate increment:
 Likely owner(s):
 Bounded probe:
 Verdict: already owned / partly owned / reverse constraint / unresolved overlap
-Residual after subtraction:
+Residual after subtraction (new ownership only; may be none):
+Inherited premises / constructive use:
 Forbidden parallel construct:
 ```
 

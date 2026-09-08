@@ -23,7 +23,7 @@ For a fresh AI session inside this repo, read in this order (3 files):
 For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new/revised domain deep-dive**, after the 3-file bootstrap above read:
 
 4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md` — latest explicit author correction on pace, author role and bearer scope.
-5. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — current sequencing/interpretation authority for reconstruction.
+5. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — current sequencing/interpretation authority, including the 2026-09-08 SRT-led collaboration update (§0.3 / §4.2).
 6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md` — retained post-Constitution architecture, read under the 2026-09-05 amendment.
 7. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — compact historical/identity blueprint.
 8. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — execution plan as amended by Architecture v2 and the 2026-09-05 governance correction.
@@ -112,9 +112,11 @@ current author question / intuition
 -> repository write only for the author-owned provisional result / source trace
 -> internal reflexivity / circularity / hidden-premise red-team
 -> fuller mature-neighbor adaptation and pressure
--> common-problem extraction across relevant traditions / domains
--> author second adjudication
--> only then ontology/interface hardening or domain discrimination
+-> SRT-led absorption / relational reorganization / new questions and candidate conclusions
+-> source fidelity, inference, counterexample and reciprocal-constraint checks
+-> author second adjudication of substantive meaning / direction
+-> ontology/interface hardening under existing rules
+-> domain discrimination only for a bounded comparative claim
 ```
 
 Hard rules:
@@ -127,7 +129,11 @@ Hard rules:
 - Do not use novelty/prior-art as a permission gate before the author knows what they mean.
 - **Light / bounded Neighbor Awareness** before provisional convergence exists to reduce rediscovery and sharpen the author's problem; it is not a keep/drop gate.
 - **Fuller Neighbor Adaptation** after provisional convergence must be allowed to change, narrow or defeat SRT wording. Use `resonance / contrast / pressure / translation / realization` as appropriate.
-- Before saying `SRT adds X`, first extract the common residual problem in source/domain-native language; do not manufacture a residual by translating every neighbor into SRT vocabulary.
+- **Start from the SRT root question.** Existing neighbor mechanisms can be inherited and connected; 'already explained elsewhere' is not a reason to remove them from SRT construction or to strengthen an author commitment. Reuse U-mode / O-track; no new mode is created.
+- Before saying `SRT adds X beyond a named rival`, state the comparative claim and source-native comparator. Novelty, irreducibility, superiority or extra predictive/intervention claims trigger the relevant audit even if unlabeled. Ordinary new questions and candidate conclusions do not automatically trigger it.
+- Level 1 is required for an asserted structural difference relative to a named neighbor, not for every substantive O-track response. Check source fidelity, actual explanatory/inferential payoff, counterexamples and empirical claims in either mode; absorption is not proof or immunity.
+- Use concrete cases, explain additional commitments, allow author reframing, and apply ChoiceMap root-return triggers. Do not rank options solely by resistance to neighbor absorption or re-ask settled decisions. Authorized mechanical work stays with AI.
+- Current operational owner: the governance amendment §4.2. Author source: `01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`. Implementation / acceptance: `Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md` (conditional reads; the three-file bootstrap is unchanged).
 - Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
 - Constitution v1's six operations are current analysis entrances, **not six exhaustive ontology modules**.
 - Bearer/objectification is one important structural slice, not the whole SRT ontology.

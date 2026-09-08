@@ -3,14 +3,14 @@ id: SRT-CHOICEMAP-TRACE-WORKFLOW
 type: workflow
 tags: [ChoiceMap, ChoiceTrace, IntuitionMining, RetroWriteback, Breakout, Convergence, RootReturn, ProblemTree, SpiralWorkflow, Operations]
 status: active
-version: v5
+version: v6
 layer: meta
 epistemic_layer: os
 claim_mode: workflow
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-09
-updated: 2026-08-26
+updated: 2026-09-08
 provenance: 2026-07-09 第一直觉 choice-trace 回写实践复盘。v2（2026-07-09）加入一致性压测、暂停恢复和委托隔离；v3（2026-07-10）加入忠实度复核，防止下游压缩丢失分叉、抢先解决张力或误报完成状态。v4（2026-07-11）根据 concern ecology governance trace 的复盘，修复工作流沿单一分支持续下钻、跨域而不回根、把问题树压成选择链的问题：新增根问题台账、分支树、根问题回返、跨域桥接门、垂直预算、旧 trace 恢复覆盖规则，并把总体运行方式改为螺旋式问题树。v5（2026-08-26）根据一次外部模型（GPT）理论推演长对话的复盘，修复"方向不漂移但整轮落在已覆盖地面上"的失效模式：新增 §6.4a 轮间 owner 闸（引用材料流水线 §3.3，不复制第二套）、把 §9.3 的三分类接到 §3.3 四分裁决、并把外部模型理论长对话显式归入 §1.1 直觉挖掘用途。
 dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-CHOICE-TRACE-LOG, SRT-ARTICLE-WORKFLOW]
 ---
@@ -24,6 +24,12 @@ dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-CHOICE-TRACE-LOG, SRT-
 > 4. ChoiceMap 的基本形态不是无限向下的选择链，而是：**下钻 → 对表 → 回根 → 重画问题树 → 再选择分支**。
 
 ---
+
+## 当前协作解释（2026-09-08）
+
+治理修正案 §4.2 控制当前 SRT 理论形成。复用本文件的根问题、breakout、提案隔离和回根纪律；新增问题先由 SRT 作者问题与解释需要组织。邻近理论的成熟成果可被吸纳，不以独有增量作为提问发动机。
+
+给作者的技术选项应说明具体案例与新增承诺，允许拒绝全部、组合和重述。作者要求建议时可以提出明确标为 AI 判断的推荐，但不得只按“更能抵抗邻居吸收”排序。记录可复用现有工作包，不增加每轮填表义务；已有明确裁决与已授权机械工作不反复求确认。
 
 ## 0. v4 为什么必须重写
 
@@ -247,18 +253,18 @@ breakout 后必须先做防误读追问，再决定继续、回根或分叉。�
 
 垂直预算防的是**方向漂移**，防不了**已覆盖**：一条分支可以既不跨域、也不漂移，同时整轮落在仓库早已形式化的地面上。§9.3 的 canonical 碰撞检查位于收尾管线，跑得太晚——等它跑完，发散预算已经花光。
 
-因此，在 **repo-aware live** 对话中，或 repo-blind 对话把候选增量送入 **repo-aware checkpoint** 时：**任何候选增量在被用来条件化下一轮之前，必须先跑一次 owner-side novelty probe。** 规格与输出模板直接引用 `_SRT_MATERIAL_PIPELINE.md §3.3`，本文件不复制第二套。
+因此，在 **repo-aware live** 对话中，或 repo-blind 对话把候选增量送入 **repo-aware checkpoint** 时：**任何被当作仓库新增内容来条件化下一轮的候选，必须先跑一次 owner-side novelty probe。** 这是仓库内部来源/重复检查，不是外部邻居差异准入门；普通问题形成与明确引用的既有前提不要求反复重跑已完成的 probe。 规格与输出模板直接引用 `_SRT_MATERIAL_PIPELINE.md §3.3`，本文件不复制第二套。
 
 - **有界，不是无界深搜**：先命名 1–3 个最可能 owner，再用候选术语 + 至少一个 role-equivalent 查询检索；
 - 输出四分裁决之一：`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`；
-- `already owned`：**不得把该内容当成 novelty-bearing increment，也不得把“重新发现它”本身当作继续深钻同一已覆盖分支的理由**。但它可以作为显式引用的既有前提，前提是下一轮问题明确指向 owner 尚未回答的 residual / unresolved question；
-- `partly owned`：只保留 `Residual after subtraction`，并写明 `Forbidden parallel construct`；下一轮只能围绕 residual 展开；
+- `already owned`：**不得把该内容当成 novelty-bearing increment，也不得把“重新发现它”本身当作继续深钻同一已覆盖分支的理由**。但它可以作为显式引用的既有前提，前提是说明下一轮如何服务 SRT 根问题，例如连接既有解释、重问前提或产生新问题，而不是重复宣称发现；
+- `partly owned`：以 `Residual after subtraction` 标出可归为新增的部分，并写明 `Forbidden parallel construct`；完整推理可同时使用已引用的继承内容和新关系；不把“只有新增部分可归为新增”误读成“只能沿 residual 研究”；
 - `reverse constraint`：优先转成对 owner 的前件、范围或桥接压力；下一轮应问“哪个前提/边界需要修订或检验”，而不是强造一套平行正向 construct；
-- `unresolved overlap`：不得新造 taxonomy / scalar / operator / closure family；下一轮只能转成 discriminating question，或路由 `OPEN_TENSIONS` / pending hook。
+- `unresolved overlap`：不得新造 taxonomy / scalar / operator / closure family；下一轮可澄清关系、提出可核查问题，或路由 `OPEN_TENSIONS` / pending hook；不强迫先获得相对外部邻居的独有性。
 
 **repo-blind external 的硬边界**：如果当前腿读不到仓库，又没有调用 repo-aware checkpoint，就只能继续原始推演并在 §9 做事后审计；不得把这种事后审计写成“轮间闸已执行”。
 
-该闸不改变任何 claim level，也不裁决理论对错。它回答的是：**这一轮是否在重新发现仓库已有的东西；若存在 overlap，下一轮怎样只沿 residual、reverse pressure 或 discriminating question 推进。**
+该闸不改变任何 claim level，也不裁决理论对错。它回答的是：**这一轮是否在重复声称仓库已有内容，以及怎样明确继承关系并产生可说明的研究收益。外部比较按治理修正案 §4.2 单独触发。**
 
 ### 6.5 回返轮的固定呈现
 
@@ -472,7 +478,7 @@ pending 提案可记录观察，但不能进入新候选路由。
 
 ---
 
-## 11. 粘贴即用提示词（直觉挖掘 · v5）
+## 11. 粘贴即用提示词（直觉挖掘 · v6）
 
 ```text
 你是“ChoiceMap 直觉挖掘”引导者。目标是帮我挖掘对 {{挖掘主题}} 的第一直觉。
@@ -501,12 +507,12 @@ A 修订旧判断；B 收回新判断；C 分层化解；D 保留张力。
 
 【轮间 owner 闸】
 若你或配对的 repo-aware leg 能读取 SRT 仓库，任何候选增量在条件化下一轮前，
-先按 `_SRT_MATERIAL_PIPELINE.md §3.3` 跑 bounded owner-side novelty probe：
+先按 `_SRT_MATERIAL_PIPELINE.md §3.3` 跑仓库内部 bounded owner-side novelty probe，不能把它当外部思想准入门：
 先命名 1–3 个 likely owner，再做候选术语 + role-equivalent 查询，输出
 already owned / partly owned / reverse constraint / unresolved overlap。
-already owned 不得冒充新发现，但可作为显式既有前提；下一轮必须指向 residual / unresolved。
-partly owned 只沿 residual 推进；reverse constraint 转 owner-pressure；
-unresolved overlap 转 discriminating question 或 pending，不新造平行 construct。
+already owned 不得冒充新发现，但可作为显式既有前提参与 SRT 关系重组。
+partly owned 只把未覆盖关系记作新增，但保留完整推理中的继承内容；reverse constraint 转 owner-pressure；
+unresolved overlap 转关系澄清、可核查问题或 pending，不新造平行 construct；外部比较仅在任务/实际主张触发时开展。
 如果当前腿读不到仓库，不得假装已跑 owner 闸；要获得轮间保护，就把候选增量送到
 repo-aware checkpoint，拿到 verdict 后再继续。否则只能在回写时做事后 subtraction。
 
