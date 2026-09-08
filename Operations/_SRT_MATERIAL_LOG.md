@@ -61,7 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
 | 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 8 |
-| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 2 |
+| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 3 |
 
 ---
 
@@ -74,7 +74,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-13 | 2026-06-13 | Popular Mechanics + MDPI Universe: *Transfer of Quantum Information and Genesis of Superfluid Vacuum in the Pre-Inflationary Universe* | 与已有动态真空窗口高度邻近，但当前主张涉及 pre-inflationary multiverse / measurement-like collapse / superfluid vacuum genesis，证据与可证伪性不足以支撑正文回写 |
 | 2026-03-13 | 2026-06-13 | New Scientist: *Why cosmology seems to be caught in a vibe shift* | 属于暗能量张力的共同体叙事评论；待更直接的一手结果、参数更新或替代理论落地后重评是否需要写入方法论/治理层 |
 | 2026-03-15 | 2026-06-15 | Zenodo: *The Natural Criticality Hypothesis of Subjective Time — A Neurodynamic Formalization via Action Readiness Density r(t) —* | 相关性通过，但当前属于 Zenodo-only hypothesis preprint；待更完整正文可检、外部讨论或独立实验锚点出现后，再判断 `r(t)` 及“多时间轴收敛=自我稳定”窗口是否值得写入神经机制层 |
-| 2026-03-16 | 2026-06-16 | arXiv: *Spacetime Quasicrystals*（arXiv:`2601.07769v1`） | 相关性通过，但当前仅为 1+1 维 Lorentzian quasicrystal 预印本窗口；待 3+1 维推广、更明确动力学/物质耦合与可检验后果出现后，再判断是否值得写入时空本体层 |
+| 2026-03-16 | 2026-09-16 | arXiv: *Spacetime Quasicrystals*（arXiv:`2601.07769v1`） | 相关性通过，但当前仅为 1+1 维 Lorentzian quasicrystal 预印本窗口；待 3+1 维推广、更明确动力学/物质耦合与可检验后果出现后，再判断是否值得写入时空本体层 |
 | 2026-03-26 | 2026-06-26 | Popular Mechanics + DESI / SPT: *The Universe Got Its Shape From This Elusive Particle’s Gravity* | 相关性通过，但当前核心是 cosmological neutrino-mass / hierarchy inference 的模型敏感张力；待 `DESI + CMB` 多探针结果在先验、扩展模型与同行评审层面更稳定后，再判断是否值得写入物理整合层 |
 | 2026-04-02 | 2026-07-02 | Quanta: *In Expanding de Sitter Space, Quantum Mechanics Gets Even More Elusive* | 当前主要是 de Sitter 可观测量 / 全息重建困难的高质量新闻解释与第一轮扩建输出；待更直接的一手 dS observables / holography / S-matrix 替代表述结果收敛后，再判断是否值得写入 `Physics/_SRT_Phys_Bridge.md` 或 `Physics/SRT_Quant_02_Cosmology.md` |
 | 2026-04-14 | 2026-07-14 | arXiv: *All elementary functions from a single operator*（arXiv:`2603.21852v2`） | 当前增量更稳地落在 `AI-for-Science / low-operator symbolic regression / formula search basis` 工具桥，而不是 `\hat G_\theta` 或 `\Psi_f` 的正文级形式化；待同行评审、补充更深树深/更复杂目标的恢复结果，或真正把 EML 搜索基底接入 SRT 方程发现任务后，再重评是否值得写入 `AI/_SRT_AI_Bridge.md`、`Core/SRT_Core_13a_Operator_Basics.md` 或相关方法附录 |
@@ -97,13 +97,17 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：242 条
-- A（融入）：164 条
+- 总提交：243 条
+- A（融入）：165 条
 - B（观察）：28 条
 - C（拒绝）：50 条
-- 融入率：67.8%
+- 融入率：67.9%
 
 ## Current note
+
+**2026-09-08 Todd / mechanism-realisation hardening:** registered as an A-class bounded governance-method integration. GOV-SUB01 now requires an independently specified physical / operational realiser, bounded rival and held-out intervention with preregistered divergent causal signatures before a surviving SRT term can be described as mechanistically irreducible or physically realised. Same-projection fit, generic disruption and post-hoc mapping repair are explicitly blocked from doing that work. Todd's resource-bounded coupling hypothesis is not adopted as SRT and no canonical claim is promoted.
+
+**2026-09-08 Bowler / NEURAL36:** registered as an A-class bounded neuroscience reverse constraint. Structured history -> recurrent organisation -> attractor / eigenspectrum scaffold -> changed later strategy is treated as generic-dynamics absorption pressure, not SRT evidence. Local support + inhibition, low dimensionality and generalization are insufficient for the stronger Cycle-2 / generative-health burden; pre-One / first Selection-position genesis remains outside the source.
 
 **2026-08-23 Nave / processual bearer / FEP reverse pressure:** registered as an A-class bounded non-canonical P3 O-track synthesis after owner-side subtraction. The correction removes the parallel selectability ladder, routes candidate-generation effects to existing HEF/HCLR owners, keeps branching numerical identity open under PH-IND05, disambiguates Nave/Mossio constraint closure from SRT PCC, and records a P3 scope/antecedent-adequacy pressure on treating Core14's approximately stable Markov-blanket condition as a general biological individuation entrance. D-track is not claimed and no P0/P1 definition is changed.
 
