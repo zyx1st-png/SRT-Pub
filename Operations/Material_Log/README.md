@@ -32,11 +32,11 @@ canonical: false
 | [2026-08_Part04.md](2026-08_Part04.md) | 8 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 + Yashiro NEURAL32 through 2026-08-12 |
 | [2026-08_Part05.md](2026-08_Part05.md) | 5 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 + Deleuze Logic of Sense audit on 2026-08-15 |
 | [2026-08_Part06.md](2026-08_Part06.md) | 8 | August continuation; seven bounded A-class entries through Nave processual-bearer/FEP pressure plus Wyld/SAT B1 translation-only record on 2026-08-24 |
-| [2026-09_Part01.md](2026-09_Part01.md) | 2 | September continuation; Hirschhorn / PH-ETH01 on 2026-09-07 + Bowler / NEURAL36 structured-history absorption pressure on 2026-09-08 |
+| [2026-09_Part01.md](2026-09_Part01.md) | 3 | September continuation; Hirschhorn / PH-ETH01 on 2026-09-07 + Bowler / NEURAL36 structured-history absorption pressure + Todd / GOV-SUB01 realisation hardening on 2026-09-08 |
 
 ## Current note
 
-**2026-09_Part01 current routing:** this is now the current dated continuation and contains two bounded A-class entries: Hirschhorn / PH-ETH01 moral-status attribution hardening and Bowler / NEURAL36 structured-history dynamical-scaffold absorption pressure. `2026-08_Part06.md` remains the immediately preceding August continuation.
+**2026-09_Part01 current routing:** this is now the current dated continuation and contains three bounded A-class entries: Hirschhorn / PH-ETH01 moral-status attribution hardening, Bowler / NEURAL36 structured-history dynamical-scaffold absorption pressure, and Todd / GOV-SUB01 mechanism-realisation / held-out-intervention hardening. `2026-08_Part06.md` remains the immediately preceding August continuation.
 
 `2026-08_Part06.md` was the previous dated continuation and contains seven bounded A-class entries—Nilsson / PH-IND05, Timmons–Brenner / AGING01, Mizrachi–Rottem–Rozenkrantz / attention-immune reweighting, Pio-Lopez–Jawanda–Levin / AGING01 goal-directedness consensus extension, Huerta et al. / vagal-cytokine state-dependent representation, Becker / Aha representational-reconstitution + phenomenal-compression, and Nave / processual bearer + constraint-closure + FEP reverse pressure—plus one B1 translation-only Wyld/SAT acquisition-remainder record added 2026-08-24. `2026-08_Part05.md` remains historically closed at five entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, NEURAL35, and the Deleuze *Logic of Sense* audit-only comparative-philosophy record.
 
