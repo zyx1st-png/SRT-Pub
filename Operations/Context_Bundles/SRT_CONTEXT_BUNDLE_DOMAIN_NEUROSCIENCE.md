@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-07
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-08
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-07
-source_commit: bfd83f8c0
-source_branch: claude/status-resync-20260907
+generated: 2026-09-08
+source_commit: a6e43d52
+source_branch: governance/srt-led-human-ai-collaboration-20260908
 source_dirty: false
-inputs_digest: 7538ab0d8a8955c0
+inputs_digest: bebbe62aef89e554
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 7538ab0d8a8955c0
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-07 |
-| 来源 commit | `bfd83f8c0` |
-| 来源分支 | `claude/status-resync-20260907` |
+| 生成日期 | 2026-09-08 |
+| 来源 commit | `a6e43d52` |
+| 来源分支 | `governance/srt-led-human-ai-collaboration-20260908` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -264,17 +264,17 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 For non-trivial SRT work:
 
-1. recover current programme direction from the 2026-09-05 author correction + governance amendment; treat stale `STATUS.md` wording as historical until synchronized;
+1. recover current direction from `STATUS.md` controlling pointers and the governance amendment, including its 2026-09-08 §4.2 collaboration update; resolve scope through the controlling source rather than dates alone;
 2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
 3. distinguish current historical/canonical authority from prospective ontology reconstruction;
 4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
 5. do not close listed open tensions;
 6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
-7. for a newly selected/revised domain, map relevant open ontology questions, strongest neighbors and common residual problem before forcing a deep well;
+7. for a newly selected/revised domain, begin from relevant SRT questions and inherited resources, absorb source-native explanations, and develop candidate questions/conclusions; comparison and deep-well entry remain conditional;
 8. do not treat bearer/objectification as the whole domain ontology;
 9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
 10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
-11. do not open a third main well until explicit author release;
+11. do not open a third main well until amendment §10.1 HOLD EXIT REVIEW and explicit release; broad cross-domain synthesis remains separately gated;
 12. prefer explicit boundaries to broad unification language.
 
 ---
