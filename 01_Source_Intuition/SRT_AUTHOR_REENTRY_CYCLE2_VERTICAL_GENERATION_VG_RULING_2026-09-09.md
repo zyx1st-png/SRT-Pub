@@ -17,6 +17,8 @@ tags: [AuthorTrace, AuthorReentry, Cycle2, VerticalGeneration, SelectionPosition
 
 # Author Re-entry Cycle 2 — active vertical-generation ruling
 
+> **Forward routing:** this ruling remains the author source for the active-process requirement `VG`. The later same-day clarification `SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_RULING_2026-09-09.md` further specifies what Selection history primarily changes: the pre-object vertical relational field itself, while explicit weight / threshold / probability changes are realization-side consequences or carriers rather than the ontology itself. Read the later ruling for current sedimentation/reconstitution meaning.
+>
 > **Role:** record the author's clarification after the fixed-law attractor fair-proxy prepass.
 >
 > **Boundary:** this is an author-source meaning ruling only. It does not assign Level 1 or Level 2, does not canonically define a new operator or symbol, and does not by itself decide whether attractor dynamics can or cannot satisfy the clarified Selection-position burden.
