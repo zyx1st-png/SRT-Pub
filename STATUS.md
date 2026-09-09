@@ -3,7 +3,7 @@ id: SRT-STATUS
 type: dashboard
 status: active
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: evidence
 updated: 2026-09-09
 ---
