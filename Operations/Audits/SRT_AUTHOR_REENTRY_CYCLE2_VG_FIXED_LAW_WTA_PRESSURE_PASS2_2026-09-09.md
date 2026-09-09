@@ -19,6 +19,8 @@ tags: [AuthorReentry, Cycle2, VerticalGeneration, WTA, CompetitiveSelection, Fix
 
 # Cycle-2 strengthened claim — fixed-law WTA / adaptive-competition pressure pass 2
 
+> **Current routing:** the fixed-law WTA payment of machine-side `VG*` in this file remains current. The later author ruling `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_RULING_2026-09-09.md` narrows this file's second pressure: adaptive parameter writeback alone is no longer sufficient to claim absorption of the author's ontology-level meaning. Current post-ruling machine-side pressure is controlled by `Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_PRESSURE_PASS3_2026-09-09.md`.
+>
 > **Role:** continue the machine-side strongest-neighbor pressure opened in Pass 1 by replacing the generic phrase `active competitive field` with mature, source-native recurrent winner-take-all / competitive-selection mechanisms.
 >
 > **Boundary:** this is a machine-side audit. It does **not** alter the author's meaning of VG or SED-B, does not assign Level 1 or Level 2, does not claim neural mechanisms are the ontology of Selection, and does not authorize a canonical edit or experiment.
@@ -351,11 +353,13 @@ past selective history changes future vertical generation
 
 cannot carry SRT distinctiveness by itself.
 
+> **Post-ruling limitation:** the later author clarification does not revoke these ordinary-dynamics facts. It changes what they are sufficient to absorb. Parameter writeback and recurrent-scaffold change pay a strong realization-side pressure, but they do not by themselves establish that a rival has paid the author-owned ontology-level claim that Selection reconstitutes the pre-object vertical differentiation field. See Pass 3.
+
 ---
 
 ## 6. Residual contraction after Pass 2
 
-This pass removes two tempting stopping points.
+This pass removes one stopping point decisively and puts a second under pressure.
 
 ### Removed stopping point A
 
@@ -365,54 +369,39 @@ VG itself is the residual
 
 No. Fixed-law recurrent competition can pay `VG*` without SED-B.
 
-### Removed stopping point B
+### Pressure point B — historical writeback recursion
 
 ```text
 VG and historical writeback recursively interact
 ```
 
-Not yet. Adaptive / plastic competitive dynamics can pay the generic causal shape of that recursion.
+Adaptive / plastic competitive dynamics can pay a generic parameter-level causal shape of that recursion.
 
-The remaining live question must be narrower.
-
-A machine-side candidate pressure target is:
+After the subsequent author ruling, however, **parameter-level recursion is not automatically identical to the ontology-level target**. Current comparison therefore routes to Pass 3 and its distinction between:
 
 ```text
-Does a Selection consequence merely change parameters inside an already fixed
-candidate/comparison ontology,
+R1* parameter retuning inside a fixed differentiation field
 
-or does it reconstitute the later conditions under which:
-  - something can count as a candidate,
-  - candidates can be compared,
-  - a relational direction can become manifest/backgrounded,
-  - a Selection-position can be regenerated?
+and
+
+R2* reconstitution of the differentiation field itself
 ```
 
-This may be described provisionally as:
-
-```text
-selection-conditioned reconstitution of future admissibility / comparison /
-manifestation conditions
-```
-
-but this phrase is **C-level machine synthesis only**.
-
-It is not an author ruling, not a canonical term, and not yet a Level-1 discriminator.
+Do not use this Pass 2 to claim that R1* alone absorbs R2*.
 
 ---
 
 ## 7. Alignment with the current HOLD blocker
 
-This contraction is useful because it converges with the existing programme blocker rather than opening a parallel route.
+The contraction remains useful because it converges with the existing programme blocker rather than opening a parallel route.
 
-A valid next discrimination would need to:
+A valid next discrimination now needs to:
 
 ```text
 1. independently identify a Selection candidate before the tested consequence;
-2. lock a mature adaptive rival rather than a passive attractor;
+2. lock a mature adaptive / structure-learning rival rather than a passive attractor;
 3. distinguish fast-state dependence from retained writeback;
-4. distinguish parameter learning inside a fixed candidate space from a change in
-   admissibility / comparison / manifestation conditions;
+4. distinguish parameter retuning from field reconstitution;
 5. specify a prospective intervention under which SRT and the rival diverge.
 ```
 
@@ -427,25 +416,19 @@ No new experiment is authorized here.
 
 ---
 
-## 8. Next author question created by the pressure
+## 8. Historical author question and its resolution
 
-The next useful author adjudication is no longer:
-
-> Does Selection-position require active vertical generation?
-
-That is already answered YES.
-
-Nor is it:
-
-> Does historical sedimentation matter?
-
-That is already answered by SED-B.
-
-The new question is:
+This Pass 2 originally asked:
 
 > 当一次 Selection 的后果被“沉积”下来时，你认为它只是改变既有竞争结构中的权重、阈值、吸引域和后续倾向，还是会进一步改变“什么能够成为候选、候选如何被比较、什么能够进入显现/背景关系”的条件本身？
 
-This question should be answered by the author before any stronger ontology wording is written.
+That question has now been answered by the author:
+
+> **selection 之后不只是显性的权重改变，更多的是前对象场（垂直结构）的改变，显性权重只是后果而不是本体。**
+
+Current meaning is controlled by:
+
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_RULING_2026-09-09.md`.
 
 ---
 
@@ -467,13 +450,13 @@ candidate pattern L=YES, VG*=YES, SH=NO: PROVISIONALLY ESTABLISHED
 full author Selection-position counterexample: NOT AUTHOR-ADJUDICATED
 
 VG alone as Level-1 residual: UNDERCUT
-VG + generic writeback recursion as residual: ALSO UNDER STRONG ADAPTIVE-DYNAMICS PRESSURE
+adaptive WTA generic parameter-writeback R1*: NEIGHBOR-PAID
+R1* as full absorption of author ontology: NOT ESTABLISHED
 
-next live candidate:
-  selection-conditioned reconstitution of future
-  admissibility / comparison / manifestation conditions
+current live target:
+  R2* field reconstitution under strongest mature learning / developmental /
+  structure-learning rivals
 
-candidate status: C-LEVEL / OPEN PRESSURE ONLY
 strengthened Level 1: UNASSIGNED
 strengthened Level 2: HOLD / NOT READY
 scientific distinctiveness: NOT ESTABLISHED
