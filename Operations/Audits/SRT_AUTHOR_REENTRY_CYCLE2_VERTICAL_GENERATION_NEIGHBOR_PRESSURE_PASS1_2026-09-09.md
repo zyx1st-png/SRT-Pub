@@ -22,7 +22,7 @@ tags: [AuthorReentry, Cycle2, VerticalGeneration, Attractor, Competition, Foregr
 >
 > **Boundary:** machine-side strongest-neighbor audit only. No Level verdict, canonical edit, or physical implementation claim is made.
 >
-> **Forward routing (2026-09-09):** the generic `active competitive-field rival` opened here is now concretely pressure-tested in `SRT_AUTHOR_REENTRY_CYCLE2_VG_FIXED_LAW_WTA_PRESSURE_PASS2_2026-09-09.md`. Pass 2 should control any later claim about whether mature fixed-law WTA pays the machine-side `VG*` proxy or whether generic `VG -> writeback -> next-VG` remains a plausible residual. This Pass 1 remains the staging record for the V1–V4 criterion and the move away from passive bump attractors.
+> **Forward routing (2026-09-09):** this pass remains the staging record for the V1–V4 `VG*` criterion. The later fixed-law WTA payment is in `SRT_AUTHOR_REENTRY_CYCLE2_VG_FIXED_LAW_WTA_PRESSURE_PASS2_2026-09-09.md`. After the subsequent author clarification that Selection primarily reconstitutes the pre-object vertical field and explicit parameter changes are realization-side consequences rather than the ontology itself, current machine-side interpretation is controlled by `SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_PRESSURE_PASS3_2026-09-09.md`. Do not use this Pass 1 or Pass 2 generic `VG -> writeback -> next-VG` discussion to bypass that later ruling.
 
 ---
 
