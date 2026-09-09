@@ -23,6 +23,8 @@ tags: [AuthorReentry, Cycle2, StrengthenedVertical, StructuralNecessity, AntiDeg
 > **Role:** apply the Bowler generic-dynamics absorption pressure and Todd realisation-gap criterion to the 2026-09-07 author-strengthened Cycle-2 claim **without** changing its author meaning, assigning a new Level, authorizing an experiment, or editing canonical ontology.
 >
 > **Scope discipline:** the strengthened claim remains `AUTHOR-CONFIRMED meaning/dependency` and `UNAUDITED AT EVERY LEVEL` on entry. This file is a readiness / decomposition audit, not the missing strongest-neighbor verdict itself.
+>
+> **Routing discipline:** this audit belongs to the Bowler/Todd material hardening pass because it asks what those two sources change about the burden of proof on an already-existing author claim. It does not create a new Cycle-2 theory branch and does not supersede the controlling Cycle-2 author source or closure.
 
 ---
 
