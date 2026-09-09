@@ -6,11 +6,11 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-08
-source_commit: a6e43d52
+generated: 2026-09-09
+source_commit: cf22501f
 source_branch: governance/srt-led-human-ai-collaboration-20260908
 source_dirty: false
-inputs_digest: bebbe62aef89e554
+inputs_digest: 95181650ef7f9302
 ---
 
 # SRT 上下文包

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-08
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-09
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-08
-source_commit: a6e43d52
+generated: 2026-09-09
+source_commit: cf22501f
 source_branch: governance/srt-led-human-ai-collaboration-20260908
 source_dirty: false
-inputs_digest: bebbe62aef89e554
+inputs_digest: 95181650ef7f9302
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,8 +26,8 @@ inputs_digest: bebbe62aef89e554
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-08 |
-| 来源 commit | `a6e43d52` |
+| 生成日期 | 2026-09-09 |
+| 来源 commit | `cf22501f` |
 | 来源分支 | `governance/srt-led-human-ai-collaboration-20260908` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
