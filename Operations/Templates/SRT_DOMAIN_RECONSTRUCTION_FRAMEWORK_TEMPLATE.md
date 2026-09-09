@@ -4,7 +4,7 @@ type: template
 status: active
 version: v3
 date: 2026-09-05
-updated: 2026-09-08
+updated: 2026-09-09
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -230,12 +230,25 @@ emerge from linking local explanations or revisiting their presuppositions; no c
 failure or unexplained residue is required before an SRT question can be developed.
 Explain the resulting question in language a reader outside SRT can understand.
 
-| Inherited explanation / premise | SRT-side relation reorganized | New question / candidate conclusion | Premises and inference | Domain distinction preserved | Possible reverse constraint |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+| Inherited explanation / premise | SRT-side relation reorganized | New question / candidate conclusion | Premises and inference | Minimum checkable account | Domain distinction preserved | Possible reverse constraint |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
 
 This can be bounded single-question work. It does not authorize a new broad cross-domain
 synthesis programme. Simple vocabulary replacement or unsupported inclusion is not a gain.
+
+For `Minimum checkable account`, follow amendment §4.2: explain the item without
+unexplained SRT labels, locate the inherited source passage, identify what this work
+connects or asks, and locate a concrete case or argument step that makes that work
+inspectable. References to existing paragraphs suffice; do not duplicate the argument.
+Expand the labels and check whether an explicit question, explanation, inference or
+constraint remains. If only names change, record `payoff not established` and reuse or
+revise. A newly posed question need not be solved, and a concept without a conventional
+equivalent may be explained by its role and assumptions. No literature-wide novelty,
+named-neighbor residual or empirical discriminator is required by this field.
+Record self-check / actual reviewer, reviewed scope, objection and disposition in the
+existing review section; self-check is provisional and must not be called independent
+validation.
 
 ### 5.1 Candidate problem, including a common problem where warranted
 

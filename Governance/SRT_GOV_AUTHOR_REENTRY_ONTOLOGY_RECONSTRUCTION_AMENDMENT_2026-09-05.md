@@ -3,7 +3,7 @@ id: SRT-GOV-AUTHOR-REENTRY-ONTOLOGY-RECONSTRUCTION-AMENDMENT-20260905
 type: framework
 status: active
 date: 2026-09-05
-updated: 2026-09-08
+updated: 2026-09-09
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -329,13 +329,34 @@ Explanatory connection, clarified presuppositions, better questions and justifie
 conclusions can be research gains without exclusive mechanisms or predictions.
 Pure relabeling, repeated restatement and unsupported universal inclusion are not gains.
 
+**Minimum checkable account.** Use the existing work package or Domain Framework §5:
+state the question/conclusion without relying on unexplained SRT labels; point to the
+inherited source passage; identify the relation, premise or question introduced in
+this work; and give a concrete case or argument step showing what follows. Re-read the
+account with the labels expanded: if only names change and no question, explanation,
+inference or constraint is made explicit, record `payoff not established` and reuse or
+revise the material. A new question need not already have an answer. Concepts that
+lack a conventional equivalent may be explained through their proposed role and
+assumptions; this is not a requirement to reduce SRT to an existing theory or to show
+a unique prediction. Keep the evidence and objection locators so a reader can check
+the account. The producing AI's assessment remains a provisional self-check, not an
+independent verification; record unresolved objections and actual review disposition.
+
 **Comparison trigger.** Run a bounded novelty / non-substitutability / superiority
 comparison when the task explicitly requests it, or when an actual claim asserts
 uniqueness, irreducibility, superiority, or an additional predictive/intervention role.
 Record that claim and comparator; if meaning is still open, identify the burden but
 do not invent an author decision or assign a premature verdict. Do not trigger N-mode
 merely because a source already explains something. Conversely, omitting a label does
-not exempt an actual comparative claim from its burden.
+not exempt an actual comparative claim from its burden. At work-package review, read
+actual assertions (including summaries), not only mode labels: quote any sentence that
+implies competing approaches cannot explain something, or that SRT alone/better does;
+state its scope and comparison burden. Distinguish attributed author research aims
+from asserted results. Record either the identified claim and action or that no
+comparative assertion was found in the reviewed text, with its revision/section scope.
+If a comparison is due, route it to the scoped audit; unsupported wording may instead
+be withdrawn or retained as an explicitly unverified proposal without erasing a paid
+adverse verdict. This review itself does not force a full novelty search.
 
 **Universal critical duties.** All substantive claims still face the appropriate logic,
 source, counterexample and factual checks. Necessity requires an argument and exposure
@@ -367,7 +388,7 @@ justify returning; do not strengthen an author commitment merely to preserve nov
 
 ---
 
-## 5. Mature-neighbor adaptation now precedes increment pressure
+## 5. Mature-neighbor adaptation for SRT-led construction and conditional comparison
 
 The existing U-mode / N-mode distinction remains valid, but sequencing is tightened.
 
@@ -384,7 +405,7 @@ What recurring difficulty appears across multiple neighboring approaches?
 
 The goal is not to accumulate supportive quotations. Neighbor work must be allowed to **change SRT**.
 
-### 5.1 Common-problem extraction gate
+### 5.1 SRT-led problem generation and conditional common-residual check
 
 Start from the SRT question and examine what source-native theories contribute to it.
 A common problem may connect already-solved local questions, revisit a presupposition,
@@ -392,9 +413,9 @@ or emerge from their relational reorganization. It need not be a gap left by all
 When claiming to solve a residual beyond those neighbors, identify that residual after
 fair adaptation; do not use this narrower requirement as a gate on O-track construction.
 
-A useful common problem should be expressible without SRT vocabulary first.
+Explain the candidate problem without relying on unexplained SRT labels (§4.2).
 
-For example, a candidate should survive questions like:
+When asserting a shared cross-theory difficulty or common residual, ask:
 
 ```text
 Do several mature traditions independently encounter this difficulty?

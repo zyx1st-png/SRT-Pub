@@ -5,20 +5,22 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
-> **最后更新**：2026-09-08
-> **当前作者级方向**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
-> **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §4–§11`
+> **最后更新**：2026-09-09
+> **当前作者级方向（节奏与本体范围）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
+> **当前作者协作方向（SRT 主导吸纳与问题生成）**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`
+> **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §0.3 / §4–§11`
+> **协作优化执行与验收**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`
 > **当前 Author Re-entry Cycle 1 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_CLOSURE_2026-09-05.md`
 > **Cycle 1 bootstrap 历史记录**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md`
 > **当前领域框架模板**：`Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
-> **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
+> **作者源直觉**：以上 09-05 纠偏与 09-08 协作方向源记录按各自范围共同控制；具体理论裁决仍查下方具名控制文件。
 > **Cycle 1 最新作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS4_2026-09-05.md`
 > **当前 HOLD 判定面（程序级）**：`Operations/Audits/SRT_AUTHOR_REENTRY_HOLD_EXIT_REVIEW_2026-09-06.md`（终局式 `CONTINUE HOLD — NAMED BLOCKER`）
 > **当前 blocker 措辞以此为准**：`Operations/Status_History/SRT_STATUS_2026-09-06_PHYSICAL_TRIGGER_PLURALISM.md`（2026-09-06 作者裁决后更新过一次）

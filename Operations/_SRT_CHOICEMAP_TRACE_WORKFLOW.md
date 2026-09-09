@@ -10,8 +10,8 @@ claim_mode: workflow
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-09
-updated: 2026-09-08
-provenance: 2026-07-09 第一直觉 choice-trace 回写实践复盘。v2（2026-07-09）加入一致性压测、暂停恢复和委托隔离；v3（2026-07-10）加入忠实度复核，防止下游压缩丢失分叉、抢先解决张力或误报完成状态。v4（2026-07-11）根据 concern ecology governance trace 的复盘，修复工作流沿单一分支持续下钻、跨域而不回根、把问题树压成选择链的问题：新增根问题台账、分支树、根问题回返、跨域桥接门、垂直预算、旧 trace 恢复覆盖规则，并把总体运行方式改为螺旋式问题树。v5（2026-08-26）根据一次外部模型（GPT）理论推演长对话的复盘，修复"方向不漂移但整轮落在已覆盖地面上"的失效模式：新增 §6.4a 轮间 owner 闸（引用材料流水线 §3.3，不复制第二套）、把 §9.3 的三分类接到 §3.3 四分裁决、并把外部模型理论长对话显式归入 §1.1 直觉挖掘用途。
+updated: 2026-09-09
+provenance: 2026-07-09 第一直觉 choice-trace 回写实践复盘。v2（2026-07-09）加入一致性压测、暂停恢复和委托隔离；v3（2026-07-10）加入忠实度复核，防止下游压缩丢失分叉、抢先解决张力或误报完成状态。v4（2026-07-11）根据 concern ecology governance trace 的复盘，修复工作流沿单一分支持续下钻、跨域而不回根、把问题树压成选择链的问题：新增根问题台账、分支树、根问题回返、跨域桥接门、垂直预算、旧 trace 恢复覆盖规则，并把总体运行方式改为螺旋式问题树。v5（2026-08-26）根据一次外部模型（GPT）理论推演长对话的复盘，修复"方向不漂移但整轮落在已覆盖地面上"的失效模式：新增 §6.4a 轮间 owner 闸（引用材料流水线 §3.3，不复制第二套）、把 §9.3 的三分类接到 §3.3 四分裁决、并把外部模型理论长对话显式归入 §1.1 直觉挖掘用途。v6（2026-09-08；2026-09-09 评审补正）根据作者 SRT 主导协作方向，修复把内部 owner 去重误读成外部独有性门槛、只准沿 residual 推进的失效模式：保留继承前提与完整构造；already owned / partly owned 均须说明下一轮如何服务根问题，避免重新落回已覆盖分支；外部比较按治理修正案 §4.2 条件触发。
 dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-CHOICE-TRACE-LOG, SRT-ARTICLE-WORKFLOW]
 ---
 
@@ -249,16 +249,16 @@ breakout 后必须先做防误读追问，再决定继续、回根或分叉。�
 
 任何活动分支不得连续推进超过 **6 个实质选择轮**而不运行一次根问题回返。张力轮可以与回返轮同一轮执行，但不能替代回返。
 
-### 6.4a 轮间 owner 闸（2026-08-26 新增）
+### 6.4a 轮间 owner 闸（2026-08-26 新增；2026-09-09 按 v6 补正）
 
 垂直预算防的是**方向漂移**，防不了**已覆盖**：一条分支可以既不跨域、也不漂移，同时整轮落在仓库早已形式化的地面上。§9.3 的 canonical 碰撞检查位于收尾管线，跑得太晚——等它跑完，发散预算已经花光。
 
-因此，在 **repo-aware live** 对话中，或 repo-blind 对话把候选增量送入 **repo-aware checkpoint** 时：**任何被当作仓库新增内容来条件化下一轮的候选，必须先跑一次 owner-side novelty probe。** 这是仓库内部来源/重复检查，不是外部邻居差异准入门；普通问题形成与明确引用的既有前提不要求反复重跑已完成的 probe。 规格与输出模板直接引用 `_SRT_MATERIAL_PIPELINE.md §3.3`，本文件不复制第二套。
+因此，在 **repo-aware live** 对话中，或 repo-blind 对话把候选增量送入 **repo-aware checkpoint** 时：**任何被当作仓库新增内容来条件化下一轮的候选，必须先跑一次 owner-side novelty probe。** 这是仓库内部来源/重复检查，不是外部邻居差异准入门；普通问题形成与明确引用的既有前提不要求反复重跑已完成的 probe。规格与输出模板直接引用 `_SRT_MATERIAL_PIPELINE.md §3.3`，本文件不复制第二套。
 
 - **有界，不是无界深搜**：先命名 1–3 个最可能 owner，再用候选术语 + 至少一个 role-equivalent 查询检索；
 - 输出四分裁决之一：`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`；
 - `already owned`：**不得把该内容当成 novelty-bearing increment，也不得把“重新发现它”本身当作继续深钻同一已覆盖分支的理由**。但它可以作为显式引用的既有前提，前提是说明下一轮如何服务 SRT 根问题，例如连接既有解释、重问前提或产生新问题，而不是重复宣称发现；
-- `partly owned`：以 `Residual after subtraction` 标出可归为新增的部分，并写明 `Forbidden parallel construct`；完整推理可同时使用已引用的继承内容和新关系；不把“只有新增部分可归为新增”误读成“只能沿 residual 研究”；
+- `partly owned`：以 `Residual after subtraction` 标出可归为新增的部分，并写明 `Forbidden parallel construct`；完整推理可同时使用已引用的继承内容和新关系；不把“只有新增部分可归为新增”误读成“只能沿 residual 研究”。同样须说明下一轮如何服务 SRT 根问题：继承内容与新关系将澄清哪个前提、连接哪个解释或产生什么问题；仅存在少量 residual 不能作为继续深钻已覆盖分支的理由。若没有可说明的下一步收益，复用已有结果并按 §6 回根或结束该分支；
 - `reverse constraint`：优先转成对 owner 的前件、范围或桥接压力；下一轮应问“哪个前提/边界需要修订或检验”，而不是强造一套平行正向 construct；
 - `unresolved overlap`：不得新造 taxonomy / scalar / operator / closure family；下一轮可澄清关系、提出可核查问题，或路由 `OPEN_TENSIONS` / pending hook；不强迫先获得相对外部邻居的独有性。
 

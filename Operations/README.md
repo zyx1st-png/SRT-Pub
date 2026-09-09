@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # SRT Operations Hub
@@ -56,7 +56,7 @@ raw session / dialogue compilation / residual archives 已下沉到：
 4. `Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md` — 历史/补充蓝图，不再以 bearer-totalizing shorthand 单独定义当前 programme。
 5. `Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md` — 原 execution plan，受 Architecture v2 + 2026-09-05 amendment 修正。
 6. `../Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md` — base governance。
-7. `Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` — v2 模板，已把 author provenance / mature-neighbor adaptation / common-problem extraction 前置。
+7. `Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` — v3 模板，以 SRT 根问题、来源吸纳与可核问题/推理组织工作；共同残余与比较门按实际主张触发。
 8. `Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` — source-intuition recovery route。
 9. `../01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md` — earlier author identity/method trace；非 canonical。
 
