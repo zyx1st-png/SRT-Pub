@@ -2,8 +2,9 @@
 id: SRT-DOMAIN-RECONSTRUCTION-FRAMEWORK-TEMPLATE
 type: template
 status: active
-version: v2
+version: v3
 date: 2026-09-05
+updated: 2026-09-09
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -25,6 +26,8 @@ tags: [Template, DomainReconstruction, AuthorReentry, NeighborAdaptation, Common
 >
 > **2026-09-05 correction:** Constitution v1 remains the current reader-interface prototype, but the framework must no longer assume that the six Constitution operations, bearer analysis or objectification analysis exhaust SRT ontology. Mature-neighbor adaptation, common-problem extraction and explicit author ownership of any candidate SRT response now precede increment pressure. Current canonical owners remain constraints unless explicitly reopened; they are not ordinary historical inputs.
 
+> **2026-09-08 operating update:** the governance amendment §4.2 controls SRT-led absorption and problem/conclusion generation. Source-native explanations may be inherited even when they leave no common residual. A comparative Level is not a general admission gate for a substantive O-track response. Use this template for an actual domain framework, not as a mandatory form for every dialogue turn; retain existing HOLD gates.
+
 ## Mapping from the earlier template
 
 The earlier v1 route remains available as an interface-analysis slice:
@@ -37,20 +40,20 @@ Given Ones
 -> problem families
 ```
 
-But v2 embeds that slice inside a wider reconstruction sequence:
+The current template embeds that slice inside a wider reconstruction sequence (section numbering is for retrieval, not a mandatory per-turn checklist):
 
 ```text
-canonical / author / historical / AI / open status
--> domain starting picture
+SRT root question + canonical / author / historical / AI / open status
 -> relevant SRT ontology questions + Constitution-interface mapping
+-> domain starting picture
 -> mature-neighbor adaptation
--> common-problem extraction
+-> absorption / relational reorganization / new questions and candidate conclusions
 -> Constitution/interface translation
 -> objectification + bearer diagnostics where relevant
 -> material / inherited asset routing
 -> machine red-team
 -> author-owned candidate SRT response, if any
--> non-substitutability / structural-consequence test against a named strongest neighbor
+-> non-substitutability / structural-consequence test only for a scoped comparative claim
 -> domain problem families
 -> eventual deep-well queue
 -> Case A-B-C only when an actual increment claim exists
@@ -61,6 +64,8 @@ canonical / author / historical / AI / open status
 ## 0. Status, scope and maturity
 
 ```text
+SRT root question =
+connection of this domain to the root question =
 domain =
 framework version =
 framework status = draft / active / revised
@@ -217,17 +222,42 @@ A good neighbor section is allowed to make the SRT framing weaker, smaller or le
 
 ---
 
-## 5. Common-problem extraction
+## 5. SRT-led absorption and problem generation
 
-Before proposing an SRT solution, try to state the recurring problem **without SRT vocabulary**.
+Begin from the SRT root question in §0/§3. State the source-native contributions,
+then explain what their proposed organization makes visible. A shared problem may
+emerge from linking local explanations or revisiting their presuppositions; no common
+failure or unexplained residue is required before an SRT question can be developed.
+Explain the resulting question in language a reader outside SRT can understand.
 
-### 5.1 Candidate common problem
+| Inherited explanation / premise | SRT-side relation reorganized | New question / candidate conclusion | Premises and inference | Minimum checkable account | Domain distinction preserved | Possible reverse constraint |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
+
+This can be bounded single-question work. It does not authorize a new broad cross-domain
+synthesis programme. Simple vocabulary replacement or unsupported inclusion is not a gain.
+
+For `Minimum checkable account`, follow amendment §4.2: explain the item without
+unexplained SRT labels, locate the inherited source passage, identify what this work
+connects or asks, and locate a concrete case or argument step that makes that work
+inspectable. References to existing paragraphs suffice; do not duplicate the argument.
+Expand the labels and check whether an explicit question, explanation, inference or
+constraint remains. If only names change, record `payoff not established` and reuse or
+revise. A newly posed question need not be solved, and a concept without a conventional
+equivalent may be explained by its role and assumptions. No literature-wide novelty,
+named-neighbor residual or empirical discriminator is required by this field.
+Record self-check / actual reviewer, reviewed scope, objection and disposition in the
+existing review section; self-check is provisional and must not be called independent
+validation.
+
+### 5.1 Candidate problem, including a common problem where warranted
 
 ```text
 plain-language / domain-native problem =
 traditions in which it recurs =
 what each tradition already solves =
-what appears to remain unresolved =
+what relation / question the reorganization exposes =
+common residual, only if one is claimed =
 ```
 
 ### 5.2 Same problem or false convergence?
@@ -241,7 +271,7 @@ Check:
 [ ] the residual is not manufactured by translating all neighbors into SRT language
 ```
 
-If no defensible common residual exists, record that result and do not manufacture one.
+If no defensible common residual exists, do not manufacture one. This limits the residual claim; established local explanations may still support a justified O-track organization or expose a different SRT question.
 
 ---
 
@@ -437,7 +467,7 @@ Machine agreement does not close the author column. A Level-1/2 verdict must tra
 
 ---
 
-## 12. Candidate SRT response — author ownership and non-substitutability required
+## 12. Candidate SRT response — author ownership, constructive payoff and critical checks
 
 This section may legitimately remain empty.
 
@@ -448,16 +478,15 @@ candidate response =
 provenance = explicit author / historical candidate / AI working synthesis / none
 K constraints preserved =
 K constraint explicitly reopened, if any =
-common problem addressed =
-what changes relative to the mature neighbors =
-what remains borrowed / realized / domain-specific =
-strongest neighbor tested =
-source-native neighbor claim =
-why this is the strongest available relevant neighbor =
-specific structural item changed by SRT =
+SRT root problem addressed =
+inherited explanations / premises =
+relational reorganization and explanatory payoff =
+new question / candidate conclusion and inference =
+what remains borrowed / realized / incompatible / domain-specific =
+comparative claim, if any (not implied by 'new question') =
 strongest counterexample =
 current author status = accepted / provisional / rejected / unresolved
-non-substitutability level = 0 / 1 / 2 / not assessed
+non-substitutability level = 0 / 1 / 2 / not assessed — no comparative claim / pending scoped comparison
 structural consequence in domain-native language =
 ```
 
@@ -477,7 +506,21 @@ A historical SRT mechanism also does not become the reconstructed answer merely 
 
 ### 12.2 Non-substitutability / structural-consequence test
 
-Before assigning Level 0/1/2, the four strongest-neighbor fields in §12.1 are mandatory. They must refer to the same named neighbor whose source-native account appears in §4 and whose strongest objection is represented by the `strong-neighbor advocate` row in §11.
+Apply the comparison trigger in the governance amendment §4.2. Ordinary O-track
+candidate responses are evaluated for source fidelity, explanatory/inferential payoff,
+counterexamples and factual support without requiring a Level verdict. If a bounded
+comparative claim is made, record:
+
+```text
+exact comparative claim / task request =
+strongest neighbor tested =
+source-native neighbor claim =
+why this is the strongest available relevant neighbor =
+specific structural item changed by SRT =
+```
+
+Before assigning Level 0/1/2, these fields must refer to the same named neighbor whose
+source-native account appears in §4 and whose objection is represented in §11.
 
 Selecting a weak neighbor merely to obtain a higher Level is invalid.
 
@@ -503,7 +546,11 @@ Level 2 — downstream consequence
   -> may proceed toward N-mode; not automatically Case C
 ```
 
-A substantive `candidate SRT response` requires at least Level 1. If Level 0, preserve the result but route it as translation / realization / resonance rather than inventing an independent response.
+A claim of substantive structural difference **relative to the named neighbor** requires
+at least Level 1. This requirement does not apply to every substantive O-track response.
+A Level-0 finding remains adverse to the tested difference; inherited explanations can
+still be reused for a separately justified construction. Absence of comparative gain
+does not validate a mapping either: the constructive payoff must be shown.
 
 ---
 
@@ -519,15 +566,15 @@ Relevant ontology question(s):
 K/A/B/C/D status:
 Constitution interface(s):
 Neighbor pressure:
-Named strongest neighbor tested:
-Common-problem relation:
+Named strongest neighbor tested (only for a comparative claim):
+SRT root/common-problem relation and constructive payoff:
 Objectification relevance:
 Bearer relevance:
 Inherited assets / materials:
 Candidate SRT response status:
 Non-substitutability level:
-What would count as a domain-local gain:
-What would collapse the family into translation-only or unresolved mapping:
+What new question, explanation or justified conclusion would count as progress:
+What would invalidate the mapping, repeat existing work, or leave it unresolved:
 ```
 
 Problem families are domain-local organizational labels, not new canonical ontology modules.
@@ -560,7 +607,7 @@ A `no` in the author-owned-response column or a Level-0 response blocks an SRT-i
 
 ---
 
-## 16. Framework exit gate / N-mode throttle
+## 16. SRT-increment-well exit gate / N-mode throttle
 
 Before a new SRT-increment deep well opens, verify:
 
@@ -590,7 +637,7 @@ Before a new SRT-increment deep well opens, verify:
 
 Only then route an `SRT adds X` claim to strongest-baseline / Case A-B-C adjudication.
 
-If the author-owned response, common-problem gate, canonical-status audit, strongest-neighbor traceability or non-substitutability gate is unpaid, the correct state is:
+If these requirements are unpaid for an intended SRT-increment well, that well remains blocked. They do not block properly scoped O-track theory formation. For the unready discrimination route the correct state is:
 
 ```text
 theory formation / mapping still open
@@ -645,7 +692,9 @@ Constitution interface mapping =
 strongest mature-neighbor pressure =
 named strongest neighbor tested =
 why strongest =
-common residual problem =
+SRT root problem / relational reorganization =
+new question / justified candidate conclusion =
+common residual problem, if claimed =
 candidate SRT response =
 non-substitutability level = 0 / 1 / 2 / n/a
 bearer relevance =

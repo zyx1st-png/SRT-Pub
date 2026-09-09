@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-07
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-09
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-07
-source_commit: bfd83f8c0
-source_branch: claude/status-resync-20260907
+generated: 2026-09-09
+source_commit: cf22501f
+source_branch: governance/srt-led-human-ai-collaboration-20260908
 source_dirty: false
-inputs_digest: 7538ab0d8a8955c0
+inputs_digest: 95181650ef7f9302
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 7538ab0d8a8955c0
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-07 |
-| 来源 commit | `bfd83f8c0` |
-| 来源分支 | `claude/status-resync-20260907` |
+| 生成日期 | 2026-09-09 |
+| 来源 commit | `cf22501f` |
+| 来源分支 | `governance/srt-led-human-ai-collaboration-20260908` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -43,7 +43,7 @@ inputs_digest: 7538ab0d8a8955c0
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-09-05 |
+| 1 | `SRT_AI_START.md` | 2026-09-08 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-03 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -273,17 +273,17 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 For non-trivial SRT work:
 
-1. recover current programme direction from the 2026-09-05 author correction + governance amendment; treat stale `STATUS.md` wording as historical until synchronized;
+1. recover current direction from `STATUS.md` controlling pointers and the governance amendment, including its 2026-09-08 §4.2 collaboration update; resolve scope through the controlling source rather than dates alone;
 2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
 3. distinguish current historical/canonical authority from prospective ontology reconstruction;
 4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
 5. do not close listed open tensions;
 6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
-7. for a newly selected/revised domain, map relevant open ontology questions, strongest neighbors and common residual problem before forcing a deep well;
+7. for a newly selected/revised domain, begin from relevant SRT questions and inherited resources, absorb source-native explanations, and develop candidate questions/conclusions; comparison and deep-well entry remain conditional;
 8. do not treat bearer/objectification as the whole domain ontology;
 9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
 10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
-11. do not open a third main well until explicit author release;
+11. do not open a third main well until amendment §10.1 HOLD EXIT REVIEW and explicit release; broad cross-domain synthesis remains separately gated;
 12. prefer explicit boundaries to broad unification language.
 
 ---
@@ -444,7 +444,7 @@ For non-trivial SRT work:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-05 |
+| last_commit | 2026-09-08 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -459,7 +459,7 @@ For non-trivial SRT work:
 
 ## 1. Current one-sentence orientation
 
-**SRT is currently in an author-led ontology re-entry phase. Constitution v1 remains the active natural-language reader-interface prototype, but it does not exhaust SRT ontology; bearer/position is one important structural problem among a wider open field involving multiplicity/unity, Selection/determination, manifestation/One-formation, persistence, history/write-back, relation/constraint, future selectability, order/convergence and objectification. Before new deep wells or Case A/B/C increment pressure, the programme must first adapt SRT questions against mature neighboring theories, extract recurring common problems, and obtain explicit author adjudication of any SRT-side ontological response.**
+**SRT is currently in an author-led ontology re-entry phase. Constitution v1 remains the active natural-language reader-interface prototype, but it does not exhaust SRT ontology; bearer/position is one important structural problem among a wider open field involving multiplicity/unity, Selection/determination, manifestation/One-formation, persistence, history/write-back, relation/constraint, future selectability, order/convergence and objectification. Research starts from SRT questions, absorbs source-native theories into candidate relational organizations, and develops new questions and conclusions under author direction and critical checks. Named-neighbor increment pressure is conditional on the actual comparative claim; new deep wells retain their separate HOLD gates.**
 
 This is a programme orientation, not a new canonical definition or a replacement final ontology label.
 
@@ -467,7 +467,7 @@ For current direction read:
 
 1. `STATUS.md §Fast Status` — historical/current dashboard; correct stale bearer-totalizing or direct-to-increment wording using the next two files.
 2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
-3. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
+3. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — including the 2026-09-08 collaboration update §0.3 / §4.2
 4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
 5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
 6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
@@ -577,9 +577,10 @@ current author question / intuition
 -> author provisional convergence
 -> internal red-team
 -> fuller mature-neighbor adaptation / strongest objections
--> common-problem extraction
--> author second adjudication
--> only then ontology/interface hardening or domain discrimination
+-> SRT-led absorption / relational reorganization / new questions and candidate conclusions
+-> source fidelity / inference / counterexample / reciprocal-constraint checks
+-> author second adjudication of substantive meaning / direction
+-> ontology/interface hardening; conditional domain discrimination
 ```
 
 - no theory write for every live branch;
@@ -587,7 +588,10 @@ current author question / intuition
 - historical source recovery is input, not authority to auto-complete the current ontology;
 - novelty is not a permission gate before author convergence;
 - mature neighbors must be allowed to narrow or change SRT, not merely support it;
-- a common residual problem should be stated in source/domain-native language before SRT claims to solve it;
+- established explanations remain usable construction material; a shared residual is not a prerequisite for O-track work;
+- explain what the SRT organization makes visible and how any conclusion follows;
+- Level-1 / novelty comparison applies to a scoped comparative claim, not every meaningful SRT response;
+- use concrete cases, additional-commitment explanations and ChoiceMap root returns; see amendment §4.2;
 - Constitution v1's six reader operations remain current interfaces but are not six exhaustive ontology modules;
 - no third main deep well until the 2026-09-05 author-reentry hold is explicitly lifted.
 
@@ -816,10 +820,11 @@ For each strong neighbor, ask:
 ```text
 What does it claim in its own vocabulary?
 What problem does it already solve?
-What SRT wording does it pressure or make redundant?
-Where is there real contrast rather than relabeling?
-Which mechanisms must remain domain-specific?
-What common residual problem, if any, remains across multiple traditions?
+How can its established explanation contribute to the SRT root question?
+What relation is reorganized, and what question or conclusion follows?
+What SRT wording does it pressure, and what must remain domain-specific?
+Is the gain supported rather than merely relabeling?
+If a beyond-neighbor claim is made, what exact residual/comparative burden does it carry?
 ```
 
 A neighbor is allowed to force SRT revision.
@@ -862,14 +867,14 @@ Subtraction, bounded probes and rival comparison are not discarded.
 Their primary location is now later in the sequence:
 
 ```text
-Ontology formation: neighbor adaptation / common-problem extraction / red-team; no novelty permission gate
+Ontology formation: SRT-led absorption / problem generation / justified conclusions / critical checks; no novelty permission gate
 Constitution: interface red-team / anti-overclaim
 Domain Framework: owner-routing / mature-neighbor adaptation / common-problem extraction
 Deep Well: gate on a concrete claim that SRT adds something
 Repository: owner/status consistency
 ```
 
-Do not force Case A/B/C unless:
+Apply amendment §4.2: task-requested novelty comparison or an actual uniqueness, irreducibility, superiority or additional predictive/intervention claim triggers the scoped audit. Do not force Case A/B/C unless:
 
 ```text
 bounded SRT response exists
@@ -895,17 +900,17 @@ For identity-level work, separate machine roles when useful: source auditor, int
 
 For non-trivial SRT work:
 
-1. recover current programme direction from the 2026-09-05 author correction + governance amendment; treat stale `STATUS.md` wording as historical until synchronized;
+1. recover current direction from `STATUS.md` controlling pointers and the governance amendment, including its 2026-09-08 §4.2 collaboration update; resolve scope through the controlling source rather than dates alone;
 2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
 3. distinguish current historical/canonical authority from prospective ontology reconstruction;
 4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
 5. do not close listed open tensions;
 6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
-7. for a newly selected/revised domain, map relevant open ontology questions, strongest neighbors and common residual problem before forcing a deep well;
+7. for a newly selected/revised domain, begin from relevant SRT questions and inherited resources, absorb source-native explanations, and develop candidate questions/conclusions; comparison and deep-well entry remain conditional;
 8. do not treat bearer/objectification as the whole domain ontology;
 9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
 10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
-11. do not open a third main well until explicit author release;
+11. do not open a third main well until amendment §10.1 HOLD EXIT REVIEW and explicit release; broad cross-domain synthesis remains separately gated;
 12. prefer explicit boundaries to broad unification language.
 
 ---

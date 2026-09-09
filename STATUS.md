@@ -5,20 +5,22 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-07
+updated: 2026-09-09
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
-> **最后更新**：2026-09-07
-> **当前作者级方向**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
-> **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §4–§11`
+> **最后更新**：2026-09-09
+> **当前作者级方向（节奏与本体范围）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
+> **当前作者协作方向（SRT 主导吸纳与问题生成）**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`
+> **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §0.3 / §4–§11`
+> **协作优化执行与验收**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`
 > **当前 Author Re-entry Cycle 1 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_CLOSURE_2026-09-05.md`
 > **Cycle 1 bootstrap 历史记录**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE1_MULTIPLICITY_SELECTION_ONE_FORMATION_2026-09-05.md`
 > **当前领域框架模板**：`Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md`
 > **当前治理**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
-> **作者源直觉**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
+> **作者源直觉**：以上 09-05 纠偏与 09-08 协作方向源记录按各自范围共同控制；具体理论裁决仍查下方具名控制文件。
 > **Cycle 1 最新作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE1_PASS4_2026-09-05.md`
 > **当前 HOLD 判定面（程序级）**：`Operations/Audits/SRT_AUTHOR_REENTRY_HOLD_EXIT_REVIEW_2026-09-06.md`（终局式 `CONTINUE HOLD — NAMED BLOCKER`）
 > **当前 blocker 措辞以此为准**：`Operations/Status_History/SRT_STATUS_2026-09-06_PHYSICAL_TRIGGER_PLURALISM.md`（2026-09-06 作者裁决后更新过一次）
@@ -30,6 +32,10 @@ updated: 2026-09-07
 > **历史条目**：`Operations/Status_History/`
 
 ## Fast Status
+
+> **2026-09-08 协作方向**：作者要求以 SRT 自身问题吸纳邻近理论、重组关系并形成新问题与候选结论。治理修正案 `§0.3 / §4.2` 控制当前协作方式；具体增量比较仅用于实际比较主张，不以共同残余或 Level 1 作为所有 O-track 回答的准入门。来源、推理、反例与事实检验继续有效。
+> **作者源记录**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`。
+> **执行与验收计划**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`。后续会话效果尚待验收；本轮不裁决 R，不提升 V/Level，不修改以下科学 verdict 或解除 HOLD。
 
 > **本页 2026-09-07 重同步**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure 文件为准，不要以本页摘要为准。**
 >
@@ -58,9 +64,9 @@ updated: 2026-09-07
 - **bearer participation**：SRT 不只在第三人称模型里增加 observer/agent 变量，而是保留主体、读者/研究者、生命过程、社会单元等在相关现象中实际参与、承担历史与后果、改变未来可达性的可能性。`bearer-as-position != bearer-as-modeled-variable`。
 - **反身性**：Constitution 自己也从一个位置写出，不享有 God-view exemption。效力标准是 cross-position re-enactability + domain-side productive adequacy，而不是作者位置的绝对权威。`position-indexed access != general epistemic privilege != infallibility`。
 - **A/B 分离**：`A ontological situatedness` 与 `B participatory methodology` 不得自动互推。B 若成立，必须通过 epistemic-preservation bridge：研究 bearer-constituted phenomena 时，方法不能在检验之前先删除可能构成性的 bearer relation。
-- **当前身份级工作流**：作者问题/直觉 → canonical-constraint audit + source recovery → K/A/B/C/D 分层 → AI divergence → bounded mature-neighbor awareness → 作者 provisional convergence → 内部 red-team → fuller neighbor adaptation/pressure → common-problem extraction → against-a-named-strongest-neighbor 的 non-substitutability / structural-consequence test → 作者二次裁决 → 仅在形成 author-owned bounded response 后才进入 repository ontology/interface write 或 domain discrimination。
-- **领域工作流（template v2）**：`authority/provenance status -> domain starting picture -> ontology question + Constitution mapping -> mature-neighbor adaptation -> common-problem extraction -> Constitution/interface execution -> objectification/bearer diagnostics where relevant -> material routing -> machine red-team -> author-owned candidate response -> named-strongest-neighbor Level 0/1/2 non-substitutability -> problem families -> eventual deep-well queue`。Case A/B/C 只在实际 `SRT adds X` claim 已形成时启动。
-- **anti-relabeling 正面判据**：Level 0 = vocabulary substitution，默认 translation/realization/resonance；Level 1 = SRT 改变 unit/boundary/identity/dependency/level/consequence attribution/equivalence 中至少一项，可称 substantive candidate；Level 2 = 进一步产生 domain-native downstream consequence，可向 N-mode 前进但不自动等于 Case C。每个 Level verdict 必须绑定一个具名 strongest neighbor、其 source-native claim、为什么它是当前最强可得 comparator、以及 SRT 改变的具体 structural item；不能通过挑弱邻居刷 Level 1。
+- **当前身份级工作流**：作者问题/直觉 → canonical-constraint audit + source recovery → K/A/B/C/D 分层 → AI divergence → bounded mature-neighbor awareness → 作者 provisional convergence → 内部 red-team → fuller neighbor adaptation/pressure → SRT-led absorption / 关系重组 / 新问题与候选结论及推理检验 → 作者二次裁决 → 仅在形成 author-owned bounded response 后才进入 repository ontology/interface write 或 domain discrimination。
+- **领域工作流（template v3）**：`SRT root question + authority/provenance -> source-native domain resources -> absorption / relational reorganization -> new questions / candidate conclusions -> critical checks -> author adjudication -> scoped comparative Level test only if claimed -> bounded problem work / separately gated deep-well queue`。Case A/B/C 只在实际 `SRT adds X` claim 已形成时启动。
+- **比较主张的 anti-relabeling 判据（不作为所有 O-track 回答的准入门）**：Level 0 = vocabulary substitution，默认 translation/realization/resonance；Level 1 = SRT 改变 unit/boundary/identity/dependency/level/consequence attribution/equivalence 中至少一项，可称 substantive candidate；Level 2 = 进一步产生 domain-native downstream consequence，可向 N-mode 前进但不自动等于 Case C。每个 Level verdict 必须绑定一个具名 strongest neighbor、其 source-native claim、为什么它是当前最强可得 comparator、以及 SRT 改变的具体 structural item；不能通过挑弱邻居刷 Level 1。
 - **统一性仍是下游问题，但 broad cross-domain synthesis 当前 HOLD**：不要求 `P0 -> Physics/Biology/Mind/Society` 形成内部 theorem ladder；只有在更成熟的 author re-entry 与多个独立领域结果之后，才允许重新判断是否存在可承重的跨域同构结构。
 - **两口井现在是 calibration pilots**：Neuroscience 的 Case B / access NO-GO / translation-only 与 Epistemology 的 high Case-B pressure / archive NO-GO 均保留局部有效性，但不得外推为 whole-SRT ontology verdict。第二井可继续有界证据基础设施；**第三口主 deep well = HOLD**，解除不再只靠“作者觉得成熟”，而需完成 amendment §10.1 的 `HOLD EXIT REVIEW`。
 - **Bearer–Objectification Declaration** 保留为条件性 domain diagnostic：仅当 bearer、position、history attribution、consequence landing 或 public-object construction 对问题负重时使用；它不是完整 ontology checklist，也不是每个领域的强制总框架。
