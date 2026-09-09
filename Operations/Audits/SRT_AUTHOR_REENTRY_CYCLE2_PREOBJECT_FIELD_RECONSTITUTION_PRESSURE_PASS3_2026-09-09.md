@@ -18,7 +18,7 @@ tags: [AuthorReentry, Cycle2, PreObjectField, FieldReconstitution, VerticalGener
 
 # Cycle-2 strengthened claim — pre-object-field reconstitution pressure pass 3
 
-> **Current routing:** this file controls the machine-side interpretation **after** the 2026-09-09 author pre-object-field ruling. Pass 2 remains valid for fixed-law WTA pressure on `VG*`, but its claim that generic parameter writeback is enough to absorb the stronger residual is now narrowed by the author ruling recorded in `SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_RULING_2026-09-09.md`.
+> **Current routing:** this file is the staging audit immediately after the 2026-09-09 author pre-object-field ruling. **Forward routing:** `SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_PRESSURE_PASS4_2026-09-09.md` now controls (a) the R2* strongest-neighbor result against mature structure / representation learning and (b) the correction that `VG -> Selection` must not be read as two separate sequential ontological operations. Pass 3 remains the source of the R1/R2 split and its locked F1-F4 audit roles.
 >
 > **Boundary:** machine-side pressure only. No canonical edit, Level verdict, new primitive, physical field identity, or experiment authorization.
 
@@ -79,12 +79,14 @@ rival has adaptive weight change
 -> rival has already absorbed the clarified sedimentation claim
 ```
 
-The correct status is:
+The correct status at this staging point is:
 
 ```text
 generic parameter writeback: NEIGHBOR-PAID
 pre-object-field reconstitution: STILL OPEN
 ```
+
+Pass 4 subsequently pressure-tests the latter against stronger mature rivals.
 
 ---
 
@@ -204,7 +206,7 @@ description / correlation / parameter fit
 
 ## 6. Revised strongest-neighbor ladder
 
-The pressure sequence is now:
+The pressure sequence at this staging point is:
 
 ```text
 PASSIVE ATTRACTOR
@@ -224,13 +226,13 @@ must be tested against R2* field reconstitution
 -> current live strongest-neighbor tier
 ```
 
-This prevents the audit from stopping too early at ordinary plasticity while also preventing a vocabulary-protected SRT residual.
+Pass 4 executes that last comparison.
 
 ---
 
-## 7. Revised recursive architecture under pressure
+## 7. Revised recursive architecture under pressure — historical staging notation
 
-The author-meaning sequence can now be represented, non-canonically, as:
+This pass originally represented the architecture as:
 
 ```text
 F_t
@@ -243,7 +245,7 @@ Selection_t
 -> realized differentiation
 
 Selection consequence
--> retained reconstitution ΔF_t
+-> retained reconstitution DeltaF_t
 
 F_(t+1) = Reconstitute(F_t, Selection_t, consequence_t)
 
@@ -251,9 +253,7 @@ VG_(t+1)(F_(t+1))
 -> later vertical generation from a historically changed field
 ```
 
-The distinctive burden is **not** the notation or the claim that history changes future dynamics.
-
-The live burden is whether a mature rival can pay the same causal role under source-neutral `R2*` criteria.
+**Forward correction:** Pass 4 controls the interpretation of this notation. Given the 09-07 author-source statement that Selection itself is the simultaneous manifestation / suppression generation, the arrow `VG_t -> Selection_t` must not be read as two independent sequential ontological operations. Pass 4 gives the safer rendering.
 
 ---
 
@@ -291,7 +291,7 @@ No such result is currently established.
 
 ---
 
-## 10. Current disposition
+## 10. Historical staging disposition
 
 ```text
 Scope B: AUTHOR-CONFIRMED
@@ -304,8 +304,8 @@ VG alone as Level-1 residual: UNDERCUT
 adaptive WTA generic parameter writeback R1*: NEIGHBOR-PAID
 R1* as full ontology absorption: REJECTED BY AUTHOR MEANING
 
-R2* field-reconstitution strongest-neighbor test: OPEN
-strong learning / developmental / structure-learning rival: LIVE
+R2* field-reconstitution strongest-neighbor test: ROUTED TO PASS 4
+strong learning / developmental / structure-learning rival: ROUTED TO PASS 4
 
 strengthened Level 1: UNASSIGNED
 strengthened Level 2: HOLD / NOT READY
