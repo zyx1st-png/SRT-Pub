@@ -21,6 +21,8 @@ tags: [AuthorReentry, Cycle2, PEndo, ContinuousAttractor, RingAttractor, Dynamic
 > **Role:** test whether the strongest mature fixed-law attractor family can pay the remaining `P*_endo` side of the live `P*_endo ∧ ¬S_H*(SED-B)` counterexample candidate.
 >
 > **Boundary:** this is an adversarial G0 audit. It does not identify an attractor bump with an SRT Selection-position, does not assign Level 1/2, and does not rewrite canonical ontology. The starred notation remains machine-side only.
+>
+> **Forward routing — 2026-09-09:** the `P*_endo: PROVISIONALLY PAID` result below applies only to the earlier passive-locus proxy. The later author-confirmed `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md` adds the independent active-vertical-generation requirement; current disposition is **REOPENED / INCOMPLETE**, with `Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md §6` controlling the live rival state.
 
 ---
 
