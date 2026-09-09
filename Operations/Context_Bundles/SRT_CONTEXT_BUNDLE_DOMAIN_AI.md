@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-09
-source_commit: cf22501f
-source_branch: governance/srt-led-human-ai-collaboration-20260908
+source_commit: b9b393f0
+source_branch: materials/bowler-structured-experience-20260908
 source_dirty: false
-inputs_digest: 95181650ef7f9302
+inputs_digest: 843ffd60730c7ae8
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 95181650ef7f9302
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-09 |
-| 来源 commit | `cf22501f` |
-| 来源分支 | `governance/srt-led-human-ai-collaboration-20260908` |
+| 来源 commit | `b9b393f0` |
+| 来源分支 | `materials/bowler-structured-experience-20260908` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 

@@ -9,11 +9,12 @@ claim_level: P3/P4_governance
 canonical: false
 source_ids:
   - SRC-2026-07-16-METHOD-SAWYER-SUBTRACTION
+  - SRC-2026-09-08-METHOD-TODD-BAYESIAN-DESCRIPTIONS-REALISATION-GAP
 dependency:
   - SRT-CLAIM-LADDER
   - SRT-EDIT-PROTOCOL
   - SRT-CORE-21-MINIMAL-AXIOMS
-tags: [Governance, SubtractiveAudit, Minimality, VariableAudit, ClaimDiscipline, Falsification, Redundancy]
+tags: [Governance, SubtractiveAudit, Minimality, VariableAudit, ClaimDiscipline, Falsification, Redundancy, MechanismRealisation, HeldOutIntervention]
 ---
 
 # GOV-SUB01 — SRT Subtractive Audit Protocol v0.1
@@ -21,6 +22,8 @@ tags: [Governance, SubtractiveAudit, Minimality, VariableAudit, ClaimDiscipline,
 ## 0. Role and boundary
 
 This protocol turns a limited insight from Chris Sawyer's *Subtraction* into an SRT-safe governance procedure.
+
+> **2026-09-08 mechanism-realisation hardening:** Ian Todd's realisation-gap argument is used here only to strengthen how `E_int / E_cf / E_mech` are earned. A successful description, fit or same-projection prediction does not establish a mechanism. Mechanism-level irreducibility claims must independently nominate a physical / operational realiser and face a held-out intervention on which bounded rival mappings prospectively diverge. This hardening applies symmetrically to SRT and its competitors; it is not evidence that SRT is true.
 
 Adopted insight:
 
@@ -144,6 +147,8 @@ where applicable:
 
 A component may be dispensable for prediction and indispensable for intervention, explanation, phenomenology or normative attribution.
 
+For mechanism-level claims, `E_int / E_cf / E_mech` are not satisfied by correlation, behavioural fit, a shared impairment after generic disruption, or additional data on a projection where the candidate mappings remain observationally equivalent. Use Step 6A.
+
 ---
 
 ## 5. Loss score
@@ -264,6 +269,61 @@ A component is not robustly dispensable until removal is tested across:
 - bearer changes;
 - delayed failure windows.
 
+### Step 6A — Realisation / held-out intervention gate
+
+Use this gate whenever the conclusion would say that a surviving SRT term, variable, relation or mechanism is **mechanistically irreducible, causally identified, empirically superior, or physically realised** rather than merely descriptively useful.
+
+Lock the following before reading the discriminating result:
+
+```text
+1. candidate mapping M
+2. nominated physical / operational realiser R_M
+3. the physical-history equivalence classes that M treats as the same state
+4. bounded rival mapping M'
+5. held-out intervention I* not used to fit, select or repair either mapping
+6. preregistered divergent causal signature and decision margin
+7. task / scale / boundary / horizon / measurement regime to which the verdict applies
+```
+
+A discriminating signature may concern:
+
+```text
+sign
+dose-response
+timing
+mediation pattern
+state transition
+recovery / hysteresis
+or another prospectively locked causal difference
+```
+
+The key test is not whether both mappings fit the same observed projection. It is whether they predict different results under `I*`:
+
+\[
+P(Y\mid do(I^*),M)
+\not\approx
+P(Y\mid do(I^*),M')
+\]
+
+within the declared margin.
+
+If histories grouped into one candidate controller state differ in timing, phase, contact, field structure, bearer relation or another nominated physical distinction **and those differences change the intervention response**, then the proposed state is too coarse for the mechanism claim under that task and horizon. Enriching the mapping after seeing the result creates a new hypothesis; it does not rescue the preregistered mechanism claim.
+
+A generic intervention that breaks a causal medium and impairs every rival establishes causal relevance, not mechanism identity. Prefer interventions that change the nominated relation while preserving the ordinary task and declared channel, or explicitly model unavoidable sensory / plant consequences and test the residual signature.
+
+Interpret every result locally:
+
+```text
+mapping M fails under declared conditions
+!= entire mechanism family is false
+
+mapping M survives one held-out intervention
+!= M is universally realised
+!= SRT primitive is proven
+```
+
+If no feasible held-out intervention makes the candidate and bounded rival predict different causal signatures, classify `E_mech` as unresolved rather than converting same-projection fit into mechanism evidence.
+
 ### Step 7 — Residue classification
 
 Use only the following labels:
@@ -356,6 +416,12 @@ Safety, rights and welfare guardrails require:
 - worst-case analysis;
 - explicit affected-bearer review.
 
+### 7.9 Same-projection equivalence / post-hoc rescue
+
+Do not count more data on the same observable projection as mechanism discrimination when the candidate and rival are already equivalent on that projection.
+
+Do not preserve an original prediction by adding realiser variables, changing factorisation, altering the state partition or broadening the mechanism only after the held-out result is known. Record the repaired mapping as a new hypothesis and test it prospectively.
+
 ---
 
 ## 8. SRT-specific audit matrix
@@ -373,6 +439,16 @@ Remove the word and primitive role of `selection`, retaining only:
 Required question:
 
 > What explanatory, counterfactual or experimental difference remains that is lost without selection language?
+
+If the answer is intended to establish **mechanism-level** or **derivational** indispensability, language deletion is insufficient. Lock a bounded rival (for example an explicit constraint / recurrent-dynamics mapping), nominate the SRT-selection realiser independently, and require a held-out intervention on which the mappings predict different causal signatures. If
+
+\[
+P(Y\mid do(I^*),M_{SRT})
+\approx
+P(Y\mid do(I^*),M_{rival})
+\]
+
+within the declared margin, selection has not earned mechanism-level irreducibility for that target even if SRT remains a useful description.
 
 ### 8.2 L0 / L1 / L2
 
@@ -399,6 +475,8 @@ Required loss:
 
 If those survive unchanged, `d` may be only a relabeling.
 
+A mechanism-level projection additionally owes Step 6A: correlation with a neural, behavioural, metabolic or control variable does not identify that variable as the physical realiser of `d`.
+
 ### 8.4 `Psi_f`
 
 Remove `Psi_f` while retaining optimization loss, Fisher geometry, energetic cost and transition barriers.
@@ -406,6 +484,8 @@ Remove `Psi_f` while retaining optimization loss, Fisher geometry, energetic cos
 Required question:
 
 > Does `Psi_f` identify a cross-domain payability / transition-friction role not exhausted by any one proxy?
+
+A mechanism-level projection additionally owes Step 6A: fit to Fisher geometry, energetic cost, free-energy terms or transition barriers is not by itself a realisation mapping.
 
 ### 8.5 `T_dir`
 
@@ -416,6 +496,8 @@ Required loss:
 - self-readable direction;
 - source discrimination;
 - reorientation based on that reading.
+
+A mechanism-level projection additionally owes Step 6A: a directed-flow, meta-attention or reorientation signal must have a prospectively distinct causal signature before it can be identified as the realiser of `T_dir`.
 
 ### 8.6 Objecthood and reselection
 
@@ -462,6 +544,12 @@ The audit does not decide the naming by itself.
 - Perturbation set P:
 - Evaluation vector E:
 - Threshold tau:
+- Candidate mechanism mapping M:
+- Nominated physical / operational realiser R_M:
+- State-equivalence claim / ignored physical distinctions:
+- Bounded rival mapping M':
+- Held-out intervention I*:
+- Preregistered divergent causal signature / margin:
 
 #### Results
 - single-removal loss:
@@ -469,6 +557,10 @@ The audit does not decide the naming by itself.
 - compensation detected:
 - replacement candidate:
 - joint-removal interactions:
+- held-out intervention result:
+- realiser-specific signature:
+- rival discrimination result:
+- post-hoc mapping change required:
 - bearer/cost relocation:
 - phenomenology loss:
 - safety/normative risk:
@@ -505,6 +597,35 @@ The audit does not decide the naming by itself.
 - the inference from conceptual removability to ontological nonexistence.
 
 The source is therefore integrated as a governance trigger and retained as a warning about subtractive overreach.
+
+---
+
+## 10A. Todd source adoption and boundary map
+
+SourceCard:
+
+```text
+Materials/2026/SRC_2026_09_08_Method_Todd_Bayesian_Descriptions_Realisation_Gap.md
+```
+
+Adopted methodological pressure:
+
+- computational / behavioural description does not by itself identify physical mechanism;
+- a mechanism mapping owes independently specified causal realisers and state-transition roles;
+- same-projection observational equivalence must be broken by a prospectively discriminating intervention rather than by more fit on the same projection;
+- generic disruption establishes causal relevance, not mechanism identity, when all rivals predict impairment;
+- a mapping revised after the held-out result is a new hypothesis;
+- rejection is local to the declared mapping / task / scale / horizon / margin, not a family-wide verdict.
+
+Not adopted as SRT result:
+
+- Todd's resource-bounded coupling hypothesis is not an SRT theorem or established empirical result;
+- Bayesian mechanisms are not ruled out;
+- coupling / dynamical descriptions do not receive a mechanism exemption;
+- formal closure, dimensionality or representation growth do not distinguish SRT from rival mechanism families;
+- Todd does not establish any SRT primitive, `d`, `Psi_f`, `T_dir`, bearer or ontology claim.
+
+The source is integrated only as a governance-method hardening of mechanism attribution.
 
 ---
 

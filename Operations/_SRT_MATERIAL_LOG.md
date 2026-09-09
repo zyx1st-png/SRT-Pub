@@ -61,7 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
 | 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 8 |
-| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 1 |
+| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 3 |
 
 ---
 
@@ -97,13 +97,17 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：241 条
-- A（融入）：163 条
+- 总提交：243 条
+- A（融入）：165 条
 - B（观察）：28 条
 - C（拒绝）：50 条
-- 融入率：67.6%
+- 融入率：67.9%
 
 ## Current note
+
+**2026-09-08 Todd / mechanism-realisation hardening:** registered as an A-class bounded governance-method integration. GOV-SUB01 now requires an independently specified physical / operational realiser, bounded rival and held-out intervention with preregistered divergent causal signatures before a surviving SRT term can be described as mechanistically irreducible or physically realised. Same-projection fit, generic disruption and post-hoc mapping repair are explicitly blocked from doing that work. Todd's resource-bounded coupling hypothesis is not adopted as SRT and no canonical claim is promoted.
+
+**2026-09-08 Bowler / NEURAL36:** registered as an A-class bounded neuroscience reverse constraint. Structured history -> recurrent organisation -> attractor / eigenspectrum scaffold -> changed later strategy is treated as generic-dynamics absorption pressure, not SRT evidence. Local support + inhibition, low dimensionality and generalization are insufficient for the stronger Cycle-2 / generative-health burden; pre-One / first Selection-position genesis remains outside the source.
 
 **2026-08-23 Nave / processual bearer / FEP reverse pressure:** registered as an A-class bounded non-canonical P3 O-track synthesis after owner-side subtraction. The correction removes the parallel selectability ladder, routes candidate-generation effects to existing HEF/HCLR owners, keeps branching numerical identity open under PH-IND05, disambiguates Nave/Mossio constraint closure from SRT PCC, and records a P3 scope/antecedent-adequacy pressure on treating Core14's approximately stable Markov-blanket condition as a general biological individuation entrance. D-track is not claimed and no P0/P1 definition is changed.
 

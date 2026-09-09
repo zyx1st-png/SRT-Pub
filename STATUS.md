@@ -25,7 +25,10 @@ updated: 2026-09-09
 > **当前 HOLD 判定面（程序级）**：`Operations/Audits/SRT_AUTHOR_REENTRY_HOLD_EXIT_REVIEW_2026-09-06.md`（终局式 `CONTINUE HOLD — NAMED BLOCKER`）
 > **当前 blocker 措辞以此为准**：`Operations/Status_History/SRT_STATUS_2026-09-06_PHYSICAL_TRIGGER_PLURALISM.md`（2026-09-06 作者裁决后更新过一次）
 > **Cycle 2 当前状态控制面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE2_POST_REDTEAM_CLOSURE_2026-09-06.md`（09-05 interim closure 降为历史 staging 记录）
-> **Cycle 2 最新作者动作**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`
+> **Cycle 2 强化承诺起点（09-07）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`
+> **Cycle 2 最新作者动作（09-09；当前 meaning routing 以此为准）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md`
+> **Cycle 2 同日前置作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_STRENGTHENED_VERTICAL_SCOPE_B_PASS1_2026-09-09.md`（Scope B）→ `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_SEDIMENTATION_SED_B_RULING_2026-09-09.md`（SED-B）→ VG ruling
+> **Cycle 2 强化承诺当前审计入口**：`Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md`（passive attractor full-proxy 已降级；active competitive-field / VG pressure 为当前入口）
 > **Cycle 3 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE3_CLOSURE_2026-09-06.md`
 > **当前推进入口（blocker 与研究优先级）**：`Operations/Audits/SRT_PHYSICAL_TRIGGER_PLURALISM_ARCHITECTURE_AUDIT_2026-09-06.md` §6–§8
 > **裁决前历史分诊（仅用于路线来源追溯，勿当当前入口）**：`Operations/Audits/SRT_HOLD_BLOCKER_ROUTE_TRIAGE_AFTER_BEARERLESS_NOGO_2026-09-06.md`——该文件写于 IRR 作者裁决**之前**，其 §2.6 仍标 `IRR-B ... NOT YET AUTHOR-OWNED`、§4 仍在准备 IRR-A/B/C 作者门、§5 仍记 `irreversibility route: PREPARED AUTHOR GATE, NOT YET POSITIVE`。**这些状态已被 2026-09-06 的 IRR-B 裁决与随后的物理触发裁决取代**；照其行动会去重问一个已回答的问题。
@@ -36,15 +39,17 @@ updated: 2026-09-09
 > **2026-09-08 协作方向**：作者要求以 SRT 自身问题吸纳邻近理论、重组关系并形成新问题与候选结论。治理修正案 `§0.3 / §4.2` 控制当前协作方式；具体增量比较仅用于实际比较主张，不以共同残余或 Level 1 作为所有 O-track 回答的准入门。来源、推理、反例与事实检验继续有效。
 > **作者源记录**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`。
 > **执行与验收计划**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`。后续会话效果尚待验收；本轮不裁决 R，不提升 V/Level，不修改以下科学 verdict 或解除 HOLD。
-
-> **本页 2026-09-07 重同步**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure 文件为准，不要以本页摘要为准。**
 >
-> **来源优先规则（勿按日期挑）**：本轮多份记录同日生成，日期不能区分先后。按以下顺序判断——①文件是否自带 `this file controls` / `supersedes` 之类的显式路由声明；②该文件是写在相关**作者裁决之前**还是之后（裁决前的分诊、pressure、prepared-gate 文件不是当前入口）；③其**适用范围**是否覆盖你要问的那件事。三者冲突时以显式取代声明为准。
+> **2026-09-09 Cycle-2 routing 重同步**：在 09-07 strengthened dependency 之后，作者已于 09-09 依次确认 **Scope B → SED-B → active vertical generation (VG)**。同日旧 attractor `PROVISIONALLY PAID / ACCEPT` 记录保留为历史 pressure state，但当前处置由 VG ruling 与 `SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md` 控制。**这些 meaning 裁决不授予任何新 Level；strengthened claim 仍为 Level 1 UNASSIGNED / Level 2 HOLD。**
+
+> **本页 2026-09-07 重同步（历史说明）**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure / ruling / audit 文件为准，不要以本页摘要为准。**
+>
+> **来源优先规则（勿按日期挑）**：本轮多份记录同日生成，日期不能区分先后。按以下顺序判断——①文件是否自带 `this file controls` / `supersedes` / `forward routing` 之类的显式路由声明；②该文件是写在相关**作者裁决之前**还是之后（裁决前的分诊、pressure、prepared-gate 文件不是当前入口）；③其**适用范围**是否覆盖你要问的那件事。三者冲突时以显式取代 / 前向路由声明为准。
 
 - **程序级判定：`CONTINUE HOLD — NAMED BLOCKER`（HOLD EXIT REVIEW 1，2026-09-06）。** 两周期 re-entry 负担**已付**（Cycle 1 与 Cycle 3 各计一次 non-redundant credit；Cycle 2 是 meaning cycle，不计入该计数）。未付的是最终放行条件。**第三口主 deep well 与 broad cross-domain synthesis 继续 HOLD。**
 - **当前 blocker（2026-09-06 物理触发裁决后更新过，以更新版为准）**：缺一个有界的、实现特定的 Level-2 realization design——它要能**独立于被检验的后果**先认定一个 Selection candidate，再把一条 author-owned SRT 关系暴露给与具名最强成熟对手的**前瞻性分歧**。该设计可来自物理、生物、认知、AI 或其他领域；**物理被允许但不被特权化**。重跑 HOLD EXIT REVIEW 需先在纸面上同时付 Trigger A（对具名最强邻居守住一处 Level-1 repartition）与 Trigger B（给出具体 Level-2 路径）。
 - **Cycle 2（One / Selection-position 形成）已收口**：作者 source trace、邻居压力、内部 red-team、post-red-team 二次作者裁决（2026-09-06 作者选 **A**）、post-adjudication subtraction 与 strongest-neighbor consequence pass **全部 COMPLETE**。`Level 1: PASS — NARROW`（授予「参与形成」承诺）、`Level 2: HOLD`、`scientific distinctiveness: NOT ESTABLISHED`。吸收测试结论：公平复合体（Simondon + Luhmann/Spencer-Brown + adaptive coevolutionary dynamics）几乎能复现全部当前可见下游现象，幸存残余是 primitive bearerless Selection 的「放置」。
-- **Cycle 2 的 2026-09-07 强化是一条新承诺，不继承旧 verdict**：作者把其中一条关系从「参与形成」强化为**结构性必要条件**（沉积层／辖域=选择位置／结构性非构成性必然）。这与旧承诺**不是同一命题的强弱两版**，因此 09-06 的 `Level 1: PASS — NARROW` **不为它背书**；该强化承诺目前**在任何 Level 上均未经审计**，且以「已知存在事件层退化风险、尚无公认防退化判据」的状态留档。吸收测试**尚未在该强度上重跑**。
+- **Cycle 2 的 strengthened vertical claim 是一条新承诺，不继承旧 verdict**：09-07 作者把其中一条关系从「参与形成」强化为结构性必要条件；09-09 又依次固定 Scope B（只谈内生形成/持续重构的 Selection-position）、SED-B（历史沉积是会改写后续 transition/reconstitution 条件的 retained writeback，而非持续占据一个不对称状态）以及 VG（Selection-position 还要求主动生成/再生成垂直 manifestation/background 结构）。这与旧承诺**不是同一命题的强弱两版**，因此 09-06 的 `Level 1: PASS — NARROW` **不为它背书**；当前 `strengthened Level 1: UNASSIGNED`、`Level 2: HOLD / NOT READY`、`scientific distinctiveness: NOT ESTABLISHED`。passive fixed-law attractor 只支付较弱 locus proxy，已被 VG ruling 降级；当前 strongest-neighbor 压力转向 active competitive/recurrent dynamics 是否能在没有 SED-B writeback 时支付 VG。
 - **Cycle 3（Selection as creative primitive / Creator-Ground / 连续局部创造）已收口**：三轮作者裁决与二次裁决 COMPLETE。`Cycle-3-specific Level 0: PASS（translation-interpretive clarification）`、`Level 1: NOT NEWLY EARNED`、`Level 2: NOT FOUND`、`scientific distinctiveness: NOT ESTABLISHED`；non-redundant HOLD-exit credit 相对 Cycle 1 计为 YES。
 - **不可撤回性：作者已选 IRR-B**（2026-09-06）。即真正发生过的 Selection 必然在**当前完整因果状态**中留下不可完全抹除的有效差异（局部可恢复、信息可外移，但计入完整相关系统则不可能真正复原）。`IRR-B Level 1: PASS — NARROW`、`IRR-B Level 2: HOLD`。
 - **物理触发：作者已裁 C-primary / A-permitted**（2026-09-06）。不存在 physics-first 或解释中立的 primitive Selection 物理登记基础；有界的领域特定物理准入面可按需开发，但只是下游实现／测试接口。AM-A implementation pluralism 与 PHR-A 解释多元实现架构均保留。**不要求普遍物理触发，不认领普遍物理定律。**
