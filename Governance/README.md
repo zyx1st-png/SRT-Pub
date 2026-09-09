@@ -9,7 +9,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # SRT Governance Hub
@@ -22,7 +22,7 @@ updated: 2026-09-05
 
 1. **治理强度跟着活跃度走**。活跃工作线保持硬护栏；休眠层降为带冻结戳的图书馆。
 2. **任何过滤器必须自带回流路径**。下沉必须有具名复活触发条件。
-3. **状态只有一个面**。当前状态唯一入口为 `STATUS.md`；历史进 `Operations/Status_History/`。在 `STATUS.md` 尚未完成 2026-09-05 同步前，fresh session 必须按 `AGENTS.md` 读取 author-reentry amendment 校正旧 programme shorthand。
+3. **状态只有一个面**。当前状态唯一入口为 `STATUS.md`；历史进 `Operations/Status_History/`。本页不维护第二份研究状态；具体问题的当前判定由 `STATUS.md` 指向的具名控制文件解析，治理修正案负责协作与门槛语义。
 4. **导航一进一出**。新增 index/router 时应合并、废除或 repurpose 一个旧入口。
 
 Constitution / ontology reconstruction 继续强调：不要把“治理减负”换成“哲学文档增殖”。2026-09-05 新文件是对现有 GOV-CONST01 的**作者触发 amendment**，不是第二套并行治理系统。
@@ -40,6 +40,10 @@ Constitution / ontology reconstruction 继续强调：不要把“治理减负�
 - 治理文件可以限制 AI/流程如何解释作者裁决，但不得自己生成新的 SRT ontology 定义。
 
 ## Current Programme Control — 2026-09-05
+
+### 2026-09-08 SRT-led collaboration update
+
+作者要求以 SRT 自身问题吸纳邻近理论，形成新问题与结论。现有修正案 §0.3 / §4.2 控制执行：继承机制可参与构造；共同残余和 Level 1 不再是所有 O-track 回答的通用前提。实际独有性、不可还原性、优越性或额外预测/干预主张仍承担相应比较责任。作者原话见 `../01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`；执行验收见 `../Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`。
 
 ### GOV-CONST01 base + Author-Reentry Amendment
 
@@ -63,7 +67,7 @@ Amendment 不新增 ontology claim，主要修正：
 - mature-neighbor adaptation 与 common-problem extraction 前置；
 - 只有存在 bounded、author-owned 的 SRT response 时，才要求 domain increment / Case A-B-C；
 - 两口现有 deep well 解释为局部 calibration pilots，不外推 whole-SRT verdict；
-- 新第三口主井与 broad cross-domain synthesis 暂 HOLD，直到作者完成至少一轮 re-entry 并显式放行。
+- 新第三口主井继续受修正案 §10.1 HOLD EXIT REVIEW 及作者放行约束；broad cross-domain synthesis 仍受 §10.2 独立门槛约束。有界问题重组不自动放行这些 programme。
 
 旧 GOV-CONST01 中仍有效的内容继续保留，包括：
 
@@ -180,9 +184,10 @@ current author question
 -> author provisional convergence
 -> internal red-team
 -> fuller neighbor adaptation / pressure
--> common-problem extraction
--> author second adjudication
--> only then hardening / domain discrimination
+-> SRT-led absorption / relational reorganization / new questions and candidate conclusions
+-> source / inference / counterexample / reciprocal-constraint checks
+-> author second adjudication of substantive meaning / direction
+-> hardening; discrimination only for the relevant comparative claim
 ```
 
 ### Domain-level required discipline
@@ -190,7 +195,7 @@ current author question
 - separate explicit current author intuition, recovered historical SRT, AI synthesis and unresolved pressure;
 - identify only the SRT ontology questions actually relevant to the domain;
 - state strongest neighbors in their own vocabulary before SRT translation;
-- identify the common residual problem before proposing an SRT solution;
+- develop questions and candidate conclusions from SRT-led absorption; require a common residual only when asserting a beyond-neighbor solution to that residual;
 - use objectification / bearer diagnostics only to warranted scope;
 - use the domain’s strongest existing baseline before claiming SRT increment;
 - allow domain to conclude “SRT adds no increment here” once the prerequisites are paid;
