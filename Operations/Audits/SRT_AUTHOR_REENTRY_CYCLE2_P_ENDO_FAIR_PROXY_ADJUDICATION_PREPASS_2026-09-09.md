@@ -13,6 +13,8 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_RETURN_RECONSTITUTION_SUMMARY_2026-09-07.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_STRENGTHENED_VERTICAL_SCOPE_B_PASS1_2026-09-09.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_SEDIMENTATION_SED_B_RULING_2026-09-09.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md
+  - Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md
   - Core_Law/SRT_L0_Metaphysics.md
 tags: [AuthorReentry, Cycle2, SelectionPosition, PEndo, FairProxy, Attractor, AntiCircularity, StrongestNeighbor]
 ---
@@ -22,6 +24,8 @@ tags: [AuthorReentry, Cycle2, SelectionPosition, PEndo, FairProxy, Attractor, An
 > **Role:** determine whether the fixed-law attractor locus identified in Pass 2 is a fair enough machine-side proxy for `Selection-position` to count as a serious G0 counterexample target, without importing SED-B into the target definition.
 >
 > **Boundary:** machine recommendation only. This file does not adjudicate the author's concept, does not canonically define Selection-position, and does not declare strengthened V false.
+>
+> **Forward routing — 2026-09-09:** the `PROVISIONALLY PAID / ACCEPT` disposition in this prepass is historical only. The later author-confirmed `SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md` supplies the independently stated missing property `Q = active vertical generation`; current disposition is therefore **REOPENED / INCOMPLETE**, controlled for this question by `SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md §6`.
 
 ---
 
@@ -332,3 +336,5 @@ strengthened Level 2: HOLD / NOT READY
 canonical edit: NO
 HOLD EXIT: unchanged
 ```
+
+> **Current routing note:** the §7 block above is retained as the historical disposition at the time of this prepass. It is not the current action state after the later same-day author VG clarification; for current routing use `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md` and `Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md §6`.
