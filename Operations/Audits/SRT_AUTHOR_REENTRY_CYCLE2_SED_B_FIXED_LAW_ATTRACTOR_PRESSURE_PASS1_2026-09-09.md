@@ -21,6 +21,8 @@ tags: [AuthorReentry, Cycle2, SEDB, FixedLaw, ContinuousAttractor, NeuralField, 
 > **Role:** apply the author-confirmed Scope B + SED-B rulings to the strongest currently identified mature fixed-law emergent-locus family.
 >
 > **Boundary:** this is a G0 / anti-degeneracy pressure audit only. It does not claim that an attractor bump is an SRT Selection-position, does not assign Level 1 or Level 2, and does not edit canonical ontology.
+>
+> **Forward routing — 2026-09-09:** this pass predates the author's active-vertical-generation clarification. Its fixed-law attractor result remains valid only as a passive-locus / SED-B pressure record; the later `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md` adds the independent active-generation requirement, and `Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md §6` controls the current disposition.
 
 ---
 
