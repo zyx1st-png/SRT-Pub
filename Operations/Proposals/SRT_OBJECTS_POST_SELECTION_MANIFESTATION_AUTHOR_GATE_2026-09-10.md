@@ -13,15 +13,16 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_AS_POST_SELECTION_MANIFESTATION_CANDIDATE_2026-09-10.md
   - Operations/Audits/SRT_OBJECTS_POST_SELECTION_MANIFESTATION_INTERNAL_REDTEAM_PASS14_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md
-tags: [AuthorGate, Objecthood, Manifestation, Selection, L0, PreObjectField, Foreground, Adjudicated]
+tags: [AuthorGate, Objecthood, Manifestation, Selection, L0, PreObjectField, Foreground, Adjudicated, MOBJ-A, MOBJ2-B]
 ---
 
 # Author gate — how strong is the post-Selection manifestation thesis?
 
-## Resolution
+## First-gate resolution
 
 **AUTHOR ADJUDICATED: MOBJ-A.**
 
@@ -62,50 +63,51 @@ not human-observer creation;
 not denial of object reality;
 not claim that L0 or Selection are hidden objects;
 not universal claim that every determinate structure whatsoever is post-Selection objecthood;
-not yet PO-3 / no-state-space-equivalence theorem.
+not an absolute PO-3 / no-state-space-equivalence theorem.
 ```
 
-## MOBJ-B — NOT SELECTED
+## Non-selected first-gate alternatives
 
 ```text
-Every determinate state, event, relation, property, boundary or object whatsoever
-is post-Selection manifestation;
-there is no determinate entity-level content prior to Selection.
+MOBJ-B = NOT SELECTED
+MOBJ-C = NOT SELECTED
 ```
 
-## MOBJ-C — NOT SELECTED
+## Subsequent sequence now completed through second adjudication
+
+After MOBJ-A:
 
 ```text
-Objects may be ontologically complete before Selection;
-SRT only says observers encounter them through a selective foreground interface.
+fuller mature-neighbor pressure = PAID
+MOBJ2-B manifest-interface insufficiency = AUTHOR-SELECTED
+post-second-adjudication ontology/interface hardening = PAID
+MOBJ2-B scoped Level-1 reconsideration = PASS — NARROW / RECOVERED
 ```
 
-## Separate issue remains open
+Second author source:
 
-MOBJ-A does not settle:
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md`
+
+The second-gate meaning is:
 
 ```text
-PO-3:
-Can an arbitrarily rich third-person state-space be ontologically equivalent
-to the pre-object + Selection architecture?
+A model whose primitive interface already consists of determinate observations,
+state variables, action labels or boundaries is downstream of manifestation.
+It may be predictively complete at that interface, but by itself it cannot exhaust
+the genesis of the interface's determinacy.
 ```
 
-Fuller mature-neighbor pressure is now recorded in:
-
-- `Operations/Audits/SRT_MOBJ_A_FULLER_NEIGHBOR_PRESSURE_PASS15_2026-09-10.md`
-
-The required second author adjudication is now open in:
-
-- `Operations/Proposals/SRT_MOBJ_A_SECOND_AUTHOR_GATE_AFTER_FULLER_PRESSURE_2026-09-10.md`
+This does not claim that no possible third-person constitutive formalism can ever model Selection.
 
 ## Current status
 
 ```text
-author gate: ADJUDICATED — MOBJ-A
-fuller neighbor pressure: PAID
-second author gate: OPEN
+MOBJ-A first gate: CLOSED / AUTHOR-SELECTED
+MOBJ2-B second gate: CLOSED / AUTHOR-SELECTED
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+whole-package global non-substitutability: NOT YET ESTABLISHED
+absolute PO-3 theorem: NOT ESTABLISHED
 canonical edit: NO
-Level 1: UNASSIGNED
 Level 2: HOLD
-HOLD EXIT REVIEW 2: NOT YET TRIGGERED
+HOLD EXIT REVIEW 2: NOT TRIGGERED
 ```
