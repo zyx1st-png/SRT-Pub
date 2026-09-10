@@ -18,6 +18,7 @@ dependency:
   - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
   - Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
   - Operations/Audits/SRT_ANTICIPATORY_ACTIVE_PASSIVE_SELECTION_PASS21_2026-09-10.md
+  - Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
@@ -28,12 +29,12 @@ dependency:
   - Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [CurrentPriority, Pass21, Selection, ActiveSelection, PassiveSelection, Survival, Creation, Reconstruction, Anticipation, VerticalStructure, MultiSubjectOrder]
+tags: [CurrentPriority, Pass22, Selection, ActiveSelection, PassiveSelection, Anticipation, Reconstruction, OpenEndedEvolution, NicheConstruction, StructuralRepartition]
 ---
 
-# D3/D4 manifestation reconstruction — controlling handoff through Pass 21
+# D3/D4 manifestation reconstruction — controlling handoff through Pass 22
 
-> **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 21. It does not replace `AGENTS.md §Session Start`, canonical owners, or exact author-source records.
+> **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 22. It does not replace `AGENTS.md §Session Start`, canonical owners, or exact author-source records.
 
 ## 1. Repository state
 
@@ -47,7 +48,7 @@ Level 2: HOLD
 
 ## 2. Current author-owned chain
 
-The author has now fixed these linked corrections:
+The author has fixed these linked rulings:
 
 ```text
 L0 difference / minimum non-neutrality
@@ -81,49 +82,36 @@ active Selection
 = a form of creation and reconstruction
 ```
 
-Exact latest wording:
+Latest exact author wording:
 
 > **「预测是更强的后者。Selection暂停后，不太确定你想表达的意思。我感觉你想表达的意思，我想回答的内容是Selection有主动和被动的区别。被动的选择是一种生存，而主动的选择是一种创造和重构。」**
 
-## 3. Retire the Selection on/off framing
+## 3. Retire the Selection ON/OFF framing
 
-The previous machine gate asked whether a selectable space remains if Selection pauses.
-That was too coarse.
+Do not ask whether Selection simply pauses and whether a selectable space then mysteriously remains.
 
-Current author correction implies:
-
-```text
-Selection should not first be modeled as ON / OFF.
-It has at least a passive-survival mode and an active-creative/reconstructive mode.
-```
-
-Useful machine-side unpacking only:
+Current author correction replaces that coarse gate with a mode distinction:
 
 ```text
-PASSIVE:
-maintains enough of an achieved Selection-position / viable selectable organization
-for continued existence.
-
-ACTIVE:
-creates or reconstructs the selectable organization itself and can prepare / commit
-current organization toward not-yet-actual future continuation(s).
+PASSIVE Selection -> survival / continued existence
+ACTIVE Selection  -> creation / reconstruction
 ```
 
-Do not treat this unpacking as a canonical definition.
+Both can be dynamically active in ordinary language. `Passive` here does not mean inactivity.
 
-## 4. Prediction = anticipatory commitment
+## 4. Prediction = stronger anticipatory commitment
 
-The prior weaker candidate is retired as the full meaning:
+The weaker gloss is no longer sufficient:
 
 ```text
 prediction = merely organizing what remains selectable next
 ```
 
-The author selects the stronger direction:
+The author selected the stronger direction:
 
 ```text
 prediction / anticipation
-= Selection presently prepares / commits toward some possible future continuation(s).
+= Selection presently prepares / commits toward possible not-yet-actual continuation(s).
 ```
 
 Guard:
@@ -134,219 +122,264 @@ anticipatory commitment != conscious forecast by definition
 anticipatory commitment != final cause / fixed telos by definition
 ```
 
-The exact ontology and formalization remain open.
+Exact formalization remains open.
 
-## 5. Passive vs active Selection — current minimum distinction
+## 5. Pass 21 retained — active/passive high-level split
 
 ### Passive Selection
 
 Author wording: **“一种生存”**.
 
-Current safe burden:
+Safe high-level burden:
 
 ```text
-continued Selection can preserve / sustain an already achieved way of existing.
+Selection can preserve / sustain an achieved way of existing.
 ```
-
-This is not inert persistence. Existing SRT life/persistence material already treats continued existence as requiring effective Selection / continued localization.
-
-Do not automatically universalize the life case to every domain.
 
 ### Active Selection
 
 Author wording: **“一种创造和重构”**.
 
-Current safe burden:
+Safe high-level burden:
 
 ```text
-Selection can create / reconstruct the selectable space itself,
+Selection can create / reconstruct the selectable organization itself,
 not merely continue within the current one.
 ```
 
-This is the stronger forward-facing mode and naturally interfaces with anticipatory commitment, but the author has not yet said that anticipation is absent from passive Selection.
+Old SRT already loosely contained `survival-oriented Selection` vs `generative Selection`, but it did not own the current active/passive distinction in this form.
 
-## 6. Internal owner reconciliation
+## 6. Pass 22 — transition criterion under strongest-neighbor pressure
 
-The distinction has partial ancestors but is not already owned in current form.
-
-`Core/SRT_Core_01_Axioms.md` already contains a survival/persistence intuition:
+The immediate machine candidate was:
 
 ```text
-continued effective Selection is required to maintain localized living organization;
-loss of effective Selection is associated there with dissolution/death.
+PASSIVE:
+operate within an achieved selectable organization mainly to preserve continued existence.
+
+ACTIVE:
+make the selectable organization itself a locus of reconstruction,
+changing what can become a future path / possibility.
 ```
 
-`Philosophy/SRT_SocTheory_06_L2_Dynamics.md` explicitly says Selection Capacity is not limited to survival selection and includes generative operations from potential to manifest existence.
+Pass 22 finds this **useful but not novel by itself**.
 
-So older SRT already loosely contained:
+### Ordinary adaptation / learning
+
+Strongly pays internal reweighting and changed future response distributions.
+
+Therefore:
 
 ```text
-survival-oriented Selection
-vs
-generative Selection.
+changes future behavior
+changes weights among future paths
 ```
 
-Pass 21 recovers this but does not claim the old files already defined:
-
-```text
-passive = survival
-active = creation / reconstruction.
-```
-
-No canonical owner is edited in #929.
-
-## 7. Strongest-neighbor pressure after Pass 21
-
-### Autopoiesis / biological autonomy
-
-Strongly pays:
-
-```text
-continued existence through recursive self-production;
-organization maintained by ongoing processes;
-survival is active maintenance, not inert persistence.
-```
-
-Therefore `passive Selection = survival/maintenance` is not novel by itself.
-
-### Active Inference
-
-Strongly pays:
-
-```text
-self-maintenance / self-evidencing;
-future-directed policy selection;
-planning and present action shaped by expected futures.
-```
-
-Therefore maintenance + prediction inside an already defined agent/model interface are not SRT-specific.
-
-### Anticipatory systems
-
-Rosen/Poli-style anticipation strongly pays:
-
-```text
-present state/action can be organized in relation to predicted later states;
-anticipation need not be conscious forecasting.
-```
-
-Therefore stronger future-oriented preparation is not a sufficient SRT residual by itself.
+are too weak.
 
 ### Niche Construction Theory
 
-This is the strongest immediate pressure on the **active** side.
-
-It explicitly treats organisms as active modifiers / co-creators of the selective environments that later act on themselves and others.
-
-Therefore this is not novel by itself:
+Strongly pays:
 
 ```text
-an agent actively creates / modifies the conditions of future selection.
+organisms actively modify selective environments;
+organisms can help create / modify the conditions of later selection;
+modified selective environments can affect self and others.
 ```
 
-### Skilled Intentionality
-
-Retains strong payment for:
+Therefore:
 
 ```text
-first-person selective engagement;
-active contribution to maintaining affordance landscapes;
-participant-side possibility organization.
+ACTIVE = changes future selection conditions
 ```
 
-## 8. What remains live
+is strongly neighbor-paid.
 
-The words `passive`, `active`, `survival`, `creation`, `reconstruction`, and `anticipation` are all strongly neighbor-pressured individually.
+### Anticipatory systems / Active Inference
 
-The current SRT candidate is their placement inside one Selection ontology:
+Strongly pays:
 
 ```text
-subjectless Selection can constitute selectable space / verticality;
-that process can contribute to Selection-position / One formation;
-
-PASSIVE Selection then preserves enough of an achieved selective organization to continue existing;
-ACTIVE Selection creates / reconstructs that organization and can commit toward new future continuations;
-
-active reconstruction can generate a new platform for later passive survival;
-passive survival can preserve a platform from which later active reconstruction becomes possible.
+present organization/action shaped by expected later states;
+future-directed planning / policy selection;
+self-maintenance and anticipation.
 ```
 
-Machine shorthand:
+Therefore generic anticipatory preparation is not sufficient novelty.
+
+### Open-ended evolution / changing phase space
+
+This is the strongest new pressure on the ACTIVE side.
+
+Longo–Montévil–Kauffman / Kauffman–Roli explicitly argue that biological evolution can change the relevant phase space itself, generate new phenotypes / niches / observables, and construct new possibilities that could not be prestated in advance.
+
+Therefore even this strong slogan is not SRT-specific:
 
 ```text
-PASSIVE asks: how can this continue?
-ACTIVE asks: what else can this become / how can its selectable space be remade?
+ACTIVE Selection changes / expands the possibility space itself.
 ```
 
-This shorthand is not author wording, but it is currently the cleanest interpretation of the distinction.
+## 7. Candidate transition criteria after subtraction
 
-## 9. Multi-subject / whole implication
-
-A mature multi-subject order can now be understood as containing both modes:
+These are **machine probes, not author definitions**.
 
 ```text
-PASSIVE multi-subject Selection:
-participants repeatedly sustain viable relations / roles / expectations / shared selectability.
+AP-T1 viability-only vs possibility-reconstruction:
+LIVE BUT TOO BROAD / neighbor-pressured.
 
-ACTIVE multi-subject Selection:
-participants create or reconstruct relations / roles / norms / boundaries / future coordination possibilities.
+AP-T2 selectable-space object shift:
+ACTIVE makes the organization determining later selectability itself a locus of Selection.
+STRONGER, but must not require reflective cognition.
+
+AP-T3 anticipatory self-commitment:
+ACTIVE changes present organization so that a not-yet-actual continuation becomes more realizable,
+while incompatible continuations may be relatively excluded / made costlier.
+LIVE, but anticipation alone is neighbor-paid.
+
+AP-T4 generative novelty:
+ACTIVE makes a previously unavailable continuation selectable.
+TOO STRONG AS UNIVERSAL CRITERION and open-ended-evolution pressure is strong.
+
+AP-T5 recursive level change:
+PASSIVE operates under the current vertical organization;
+ACTIVE recursively acts on the conditions that organize later Selection,
+changing the selector-position / selectable-space relation itself.
+CURRENT STRONGEST MACHINE CANDIDATE.
+AUTHOR STATUS: NOT SELECTED.
 ```
 
-Thus whole-level organization is neither merely preserved nor merely invented.
-It can persist through survival-oriented Selection and transform through creative Selection.
+AP-T5 currently survives best because it does not require ex nihilo novelty, includes reconstruction as well as creation, and connects naturally to anticipatory commitment without requiring reflective consciousness.
 
-Potential SRT explanatory gain:
+## 8. Critical terminology guard
 
-> **The whole exceeds a detached sum of parts because the participants do not only occupy a stable relation network; through passive Selection they keep a shared selectable order alive, and through active Selection they can reconstruct what the whole and its members are able to become.**
-
-This is a candidate framework, not an earned superiority claim.
-
-## 10. Current verdict
+Do not equate `PASSIVE Selection` with:
 
 ```text
-prediction = anticipatory commitment / preparation: AUTHOR-SELECTED
-passive Selection = survival: AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
-active Selection = creation / reconstruction: AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
-Selection on/off persistence gate: RETIRED
+inactivity
+absence of agency
+external determination
+no prediction
+no adaptation
+```
 
-survival / self-maintenance: STRONGLY NEIGHBOR-PAID
-future-directed present action: STRONGLY NEIGHBOR-PAID
-agent-created future selection conditions: STRONGLY NEIGHBOR-PAID
-first-person affordance maintenance: STRONGLY NEIGHBOR-PAID
+A survival-oriented system can regulate, repair, predict threats, learn, and alter behavior while remaining predominantly in the passive-survival mode if those changes remain subordinated to continued viability of the current constituted One / position.
 
-active/passive transition criterion: OPEN
-active/passive distinction at pre-subject L0: OPEN
-anticipation inside passive Selection: OPEN
+Current machine shorthand only:
 
-single Selection ontology spanning constitution + survival + reconstruction:
+```text
+PASSIVE preserves "can continue".
+ACTIVE reconstructs "can become".
+```
+
+## 9. What remains live after Pass 22
+
+The individual component claims are heavily paid:
+
+```text
+survival / self-maintenance: neighbor-paid
+generic future anticipation: neighbor-paid
+changing future selection conditions: neighbor-paid
+changing / expanding possibility space: neighbor-paid
+first-person affordance maintenance: neighbor-paid
+```
+
+The current SRT candidate is instead the genetic continuity of one Selection ontology:
+
+```text
+pre-subject difference
+-> subjectless Selection
+-> constitution of non-flat selectable space / verticality
+-> Selection-position / One formation
+-> positioned Selection
+-> PASSIVE survival of an achieved selectable organization
+-> ACTIVE recursive reconstruction of the conditions organizing later Selection
+-> anticipatory commitment toward not-yet-actual continuations
+-> multi-subject shared selectable-space construction / order.
+```
+
+No single mature comparator inspected so far directly carries this full routing under one constitutive operation. A stitched comparator composite can cover most components, so this remains a structural-repartition candidate rather than a uniqueness theorem.
+
+## 10. Multi-subject / whole implication
+
+A collective can include both modes:
+
+```text
+collective PASSIVE Selection:
+maintain existing viable relations / roles / expectations / shared selectability.
+
+collective ACTIVE Selection:
+participants jointly reconstruct the conditions under which future roles, norms, boundaries,
+positions and coordinated possibilities can become selectable.
+```
+
+The stronger whole/parts candidate is not merely that the whole constrains its parts or has more possibilities.
+
+It is:
+
+> **Selection constitutes positions; positions Select; positioned Selection can recursively reconstruct the future selectable relations among those same or newly constituted positions.**
+
+This remains a candidate explanatory framework, not a demonstrated superiority claim.
+
+## 11. Current verdict
+
+```text
+prediction = anticipatory commitment / preparation:
+AUTHOR-SELECTED
+
+passive Selection = survival:
+AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
+
+active Selection = creation / reconstruction:
+AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
+
+Selection ON/OFF persistence gate:
+RETIRED
+
+PASSIVE = inactivity:
+REJECTED
+
+ACTIVE = more behavior / more energy / ordinary learning:
+REJECTED
+
+ACTIVE = changes future selection conditions:
+NEIGHBOR-PAID BY NICHE CONSTRUCTION
+
+ACTIVE = anticipates future states:
+NEIGHBOR-PAID BY ANTICIPATORY / ACTIVE-INFERENCE FAMILIES
+
+ACTIVE = changes / expands possibility phase space:
+STRONGLY NEIGHBOR-PAID BY OPEN-ENDED-EVOLUTION / ADJACENT-POSSIBLE FAMILIES
+
+AP-T5 recursive change of conditions organizing later Selection:
+CURRENT STRONGEST MACHINE CANDIDATE
+AUTHOR STATUS: NOT SELECTED
+
+single Selection ontology spanning pre-subject constitution -> survival -> active reconstruction:
 LIVE STRUCTURAL REPARTITION CANDIDATE
 
-new Level 1: NOT ASSIGNED
-scientific distinctiveness: NOT ESTABLISHED
-Level 2: HOLD
-HOLD EXIT REVIEW 2: NOT TRIGGERED
-canonical edit: NO
+new Level 1:
+NOT ASSIGNED
+scientific distinctiveness:
+NOT ESTABLISHED
+Level 2:
+HOLD
+HOLD EXIT REVIEW 2:
+NOT TRIGGERED
+canonical edit:
+NO
 ```
 
-## 11. Next bounded burden — APSEL
+## 12. Next bounded author burden
 
-Do not return to the old Selection-pause question and do not broaden the neighbor survey again yet.
+Do not ask whether ACTIVE simply means creating a brand-new possibility; strongest neighbors already pay that in broad form.
 
-Next pressure questions only:
+The next author-facing question is narrower:
 
-```text
-APSEL-1 What is the minimum transition criterion from passive survival to active reconstruction?
-APSEL-2 Does active Selection require creating a genuinely new selectable possibility,
-        or can changing the organization / weighting of existing possibilities qualify?
-APSEL-3 Is anticipatory commitment constitutive of every active Selection or only stronger active forms?
-APSEL-4 Can passive Selection anticipate solely to preserve continued existence?
-APSEL-5 How do passive and active Selection compose across subjects without reducing to
-        familiar maintenance-vs-learning / adaptation-vs-innovation language?
-```
+> **主动 Selection 的最低门槛，是否在于 Selection 开始递归地作用于“决定后续什么能够被选择”的结构本身，而不只是为了维持当前 One 在这个结构中的继续存在？**
 
-These are machine audit questions and must not be silently answered as author intent.
+If confirmed, the next pressure should distinguish this genesis-sensitive transition from ordinary adaptation / learning / niche construction without relying on a third-person behavioral metric.
 
-## 12. Read-forward set
+## 13. Read-forward set
 
 After `AGENTS.md §Session Start`, load:
 
@@ -354,6 +387,7 @@ After `AGENTS.md §Session Start`, load:
 this handoff
 01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md
 Operations/Audits/SRT_ANTICIPATORY_ACTIVE_PASSIVE_SELECTION_PASS21_2026-09-10.md
+Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
 Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
