@@ -1,8 +1,8 @@
 ---
 id: SRT-PROPOSAL-MOBJ-A-SECOND-AUTHOR-GATE-AFTER-FULLER-PRESSURE-20260910
 type: proposal
-status: active
-record_stage: second_author_gate_open
+status: frozen
+record_stage: adjudicated
 date: 2026-09-10
 layer: meta
 epistemic_layer: os
@@ -14,18 +14,36 @@ dependency:
   - Operations/Audits/SRT_MOBJ_A_FULLER_NEIGHBOR_PRESSURE_PASS15_2026-09-10.md
   - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_BARAD_STRONGEST_NEIGHBOR_PASS13_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [SecondAuthorGate, MOBJ-A, Objecthood, Manifestation, StateSpace, PredictiveState, PO-3]
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
+tags: [SecondAuthorGate, MOBJ-A, MOBJ2-B, Objecthood, Manifestation, StateSpace, PredictiveState, PO-3]
 ---
 
 # MOBJ-A — second author gate after fuller neighbor pressure
 
-The first author gate is closed:
+## Gate disposition
+
+The first author gate remains closed:
 
 ```text
 MOBJ-A = AUTHOR-SELECTED
 ```
 
-This second gate does **not** reopen that decision. It asks what stronger consequence, if any, the author intends after Barad + Simondon + phenomenology + predictive-state pressure.
+After fuller Barad + Simondon + phenomenology + predictive-state pressure, the author gave the second adjudication:
+
+> **「认同你的提议」**
+
+The immediately recommended option was **MOBJ2-B — manifest-interface insufficiency**. Therefore:
+
+```text
+MOBJ2-B = AUTHOR-SELECTED
+second author gate = CLOSED
+```
+
+Author source:
+
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md`
+
+---
 
 ## What the fuller pressure established
 
@@ -65,32 +83,7 @@ not the default floor from which that differentiation is explained.
 
 ---
 
-## MOBJ2-A — core explanatory-order thesis only
-
-```text
-MOBJ-A is a core SRT ontological organization:
-manifestation / objecthood is explanandum rather than default.
-
-A scientific or formal model may be predictively complete at its declared level.
-SRT asks a different constitutive question about how the model's determinate
-objects / observables / coordinates became available as such.
-
-No stronger non-equivalence claim is made.
-```
-
-Implication:
-
-```text
-predictive completeness != constitutive explanation
-```
-
-but SRT does not yet claim that a third-person formalism cannot in principle supply both.
-
-Machine assessment: defensible and conservative.
-
----
-
-## MOBJ2-B — manifest-interface insufficiency **[machine recommendation]**
+## Selected option — MOBJ2-B manifest-interface insufficiency
 
 ```text
 Any third-person model whose primitive interface already consists of
@@ -109,60 +102,50 @@ this is NOT:
 no third-person formalism can ever represent constitutive differentiation.
 ```
 
-A more general formalism could in principle model the constitutive process. The claim is only that **starting from already determinate observables cannot, by itself, explain their determinacy without transferring the debt into the primitives**.
-
-Why recommended:
-
-- preserves the author's foreground-bounded observability intuition;
-- survives the predictive-state objection, because PSRs still begin from a declared observation / action interface;
-- avoids turning SRT into an empirical unpredictability doctrine;
-- avoids the absolute claim that all mathematical formalization is ontologically impossible;
-- sharpens the earlier `object-first explanatory debt` into a model-interface test.
+A more general formalism could in principle model the constitutive process. The selected claim is only that **starting from already determinate observables cannot, by itself, explain their determinacy without transferring the debt into the primitives**.
 
 ---
 
-## MOBJ2-C — absolute no-equivalent-third-person-formalism thesis
+## Rejected / non-selected alternatives
+
+### MOBJ2-A — core explanatory-order thesis only
+
+Not selected as the controlling second adjudication. Its conservative distinction remains compatible but does not exhaust the author's chosen stronger direction.
+
+### MOBJ2-C — absolute no-equivalent-third-person-formalism thesis
+
+Not selected.
+
+The repository therefore must not infer:
 
 ```text
-No possible third-person state-space or formal representation,
-no matter how relational, constitutive or non-object-first,
-can ever be ontologically equivalent to L0 + Selection + manifestation.
+no possible formal representation can ever model L0 + Selection;
+formalization is intrinsically post-ontological and impossible;
+empirical unpredictability follows from SRT;
+PO-3 absolute theorem is established.
 ```
-
-This is substantially stronger than current evidence.
-
-It risks:
-
-```text
-unfalsifiable privilege claim;
-confusing objectification of a formal description with impossibility of formalizing constitution;
-turning an explanatory-order thesis into a theorem of representational impossibility.
-```
-
-Machine assessment: **do not adopt at current evidence level**.
 
 ---
 
-## Concrete discriminator among A / B / C
+## Concrete interpretation
 
 Take a model that predicts every future observation perfectly from a relational predictive state.
 
+The selected reading says:
+
 ```text
-A says:
-perfect prediction does not settle the constitutive question;
-no further claim about the model's sufficiency is made.
-
-B says:
 if the model takes its determinate observation alphabet as primitive,
-it cannot by itself explain how that alphabet became determinate;
-it begins downstream of manifestation.
-
-C says:
-even if the model also gives a constitutive account of how observables arise,
-it can never be ontologically equivalent in principle.
+it may be predictively complete at that interface,
+but it does not thereby explain how that alphabet became determinate.
 ```
 
-The current machine recommendation is **MOBJ2-B**.
+The theoretical distinction is therefore:
+
+```text
+predictive / dynamical closure at a manifest interface
+!=
+constitutive closure of manifestation's genesis.
+```
 
 ---
 
@@ -171,10 +154,9 @@ The current machine recommendation is **MOBJ2-B**.
 ```text
 MOBJ-A first author adjudication: CLOSED / SELECTED
 fuller neighbor pressure: PAID
-second author gate: OPEN
-machine recommendation: MOBJ2-B
+MOBJ2-B second author adjudication: CLOSED / SELECTED
 PO-3 absolute theorem: NOT ESTABLISHED
-Level 1: UNASSIGNED pending author meaning and comparison scope
+Level 1: requires scoped reconsideration; no automatic promotion here
 Level 2: HOLD
 canonical edit: NO
 HOLD EXIT REVIEW 2: NOT TRIGGERED
