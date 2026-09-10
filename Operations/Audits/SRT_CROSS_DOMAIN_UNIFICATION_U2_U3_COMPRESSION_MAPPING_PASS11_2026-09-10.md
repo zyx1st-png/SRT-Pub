@@ -19,11 +19,21 @@ tags: [Unification, UMode, U2, U3, ExplanatoryCompression, MappingDiscipline, Ex
 
 # U2 explanatory compression + U3 mapping discipline — Pass 11
 
-> **Runtime mode:** `research_mode = U`.
->
 > **Input:** Pass 10 found a narrow source-neutral cross-domain invariant `I*` across Turing / activator–inhibitor, recurrent WTA and Simondonian transduction.
 >
 > **Boundary:** this pass does not define canonical Selection, Sedimentation, Selection-position, One or Bearer. It asks whether the current SRT organization does real explanatory/diagnostic work beyond the generic invariant, and whether it can exclude bad mappings without inventing a new ontology ladder.
+
+## Runtime mode lock
+
+```text
+research_mode = U
+root_question = does SRT add explanatory/diagnostic compression and disciplined exclusions beyond the narrow cross-domain invariant I*?
+comparative_claim = none
+named_comparator = Turing / recurrent WTA / Simondon as mapping cases; generic process language as redundancy pressure
+n_mode_triggered = false
+```
+
+U-mode is controlling: the task is framework compression and mapping discipline, not a claim that SRT owns a local mechanism unavailable to the compared domains.
 
 ## 0. U1 input retained
 
