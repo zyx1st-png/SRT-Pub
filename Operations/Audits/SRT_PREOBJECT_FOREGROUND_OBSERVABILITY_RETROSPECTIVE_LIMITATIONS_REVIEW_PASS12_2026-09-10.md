@@ -2,6 +2,7 @@
 id: SRT-AUDIT-PREOBJECT-FOREGROUND-OBSERVABILITY-RETROSPECTIVE-LIMITATIONS-REVIEW-PASS12-20260910
 type: audit
 status: active
+record_stage: retrospective_review_updated_after_mobj2b
 date: 2026-09-10
 layer: meta
 epistemic_layer: os
@@ -20,7 +21,9 @@ dependency:
   - Operations/Audits/SRT_IRR_B_GLOBAL_RESIDUE_PHYSICS_LEVEL2_PRESSURE_PASS1_2026-09-06.md
   - Operations/Audits/SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md
   - Operations/Audits/SRT_SELECTION_POSITION_FOREGROUND_OBSERVABILITY_REFRAME_PASS9_2026-09-10.md
-tags: [Retrospective, Limitations, PreObjectField, ForegroundObservability, SelectionPosition, StateSpace, HOLD, Cycle1, Cycle2, Cycle3]
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
+  - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
+tags: [Retrospective, Limitations, PreObjectField, ForegroundObservability, SelectionPosition, StateSpace, HOLD, Cycle1, Cycle2, Cycle3, MOBJ2-B]
 ---
 
 # Retrospective limitation review — pre-object field / foreground-bounded observability
@@ -251,7 +254,7 @@ actualisation != persistence != object != bearer != subject != experiencer.
 
 ### Retrospective correction
 
-The current author priority suggests another candidate axis was under-weighted:
+The current author priority adds an under-weighted axis:
 
 ```text
 pre-object field
@@ -259,318 +262,116 @@ pre-object field
 
 and
 
-observation
-= already downstream of manifestation / foregrounding
+directly observable / model-addressable objecthood
+is already downstream of manifestation.
 ```
 
-That axis is continuous with the repository's own Q03 and selection-realism paper but was not made the controlling novelty / non-substitutability question in the 08-28 audit.
+This does not make the broad anti-object-first slogan novel. It changes which dependency distinction is treated as load-bearing in the current programme.
 
-**Disposition:**
+---
+
+## 5. MOBJ-A / MOBJ2-B adjudication after the retrospective
+
+The author has now selected both:
 
 ```text
-08-28 prior-art subtraction: RETAIN
-residual inventory: INCOMPLETE RELATIVE TO CURRENT AUTHOR PRIORITY
-new D3/D4 axis: ADD TO RE-AUDIT, NOT CLAIM AS NOVEL YET
+MOBJ-A:
+objecthood at a declared level is a post-Selection manifest / foreground achievement.
+
+MOBJ2-B:
+a model whose primitive interface already consists of determinate observations,
+state variables, action labels or boundaries is downstream of manifestation;
+predictive / dynamical completeness at that interface cannot by itself exhaust
+the genesis of the interface's determinacy.
+```
+
+Pass 16 therefore records a narrow structural consequence:
+
+```text
+MOBJ2-B scoped Level 1 = PASS — NARROW / RECOVERED
+```
+
+Scope:
+
+```text
+models whose primitive interface is already determinate / manifest.
+```
+
+This is a recovered / clarified dependency consequence of canonical L0, not a new independent ontology increment and not a global non-substitutability theorem against Barad + Simondon + phenomenology + constitutive formalism.
+
+---
+
+## 6. Retrospective status table
+
+```text
+Cycle-1 recurrence-collapse:
+RETAIN at D1/D2; no pre-object rescue.
+
+Cycle-2 WTA / Turing / adaptive / representation payments:
+RETAIN at D1/D2; D3/D4 theory-wide absorption not licensed by those results alone.
+
+Cycle-3 Whitehead / Barad broad subtraction:
+RETAIN; exact D3/D4 comparison becomes more central.
+
+IRR-B no-hidden-provenance:
+RETAIN; do not turn pre-object history into invisible extra state outside a genuinely complete current causal description.
+
+physical Selection trigger blocker:
+REFRAME; direct pre-Selection observation is not required, but a non-circular empirical proxy / downstream discriminator remains required for Level 2.
+
+Neuroscience / Epistemology adverse pilots:
+RETAIN for the questions actually tested; no automatic theory-wide pre-object failure.
+
+HOLD EXIT REVIEW 1:
+RETAIN.
+
+Level 2:
+HOLD.
 ```
 
 ---
 
-## 5. IRR-B — complete current causal state / global residue
+## 7. Main corrected compression
 
-Historical IRR-B uses a strong discipline:
+The programme should now distinguish these two statements:
 
 ```text
-genuine Selection leaves causally effective residue somewhere in the complete present state / enlarged environment;
-no hidden history beyond a genuinely complete present causal state.
+A. many SRT-shaped observable / dynamical patterns are ordinary and neighbor-paid.
+
+B. the genesis of a determinate manifest interface is thereby explained away.
 ```
 
-### What remains valid
+A is supported in many earlier audits.
 
-At an operational / model layer, this is a useful anti-magic guard. SRT should not claim different futures from two causally identical modeled states merely by attaching an invisible provenance token.
+A does **not** entail B.
 
-### What must now be layer-qualified
-
-The phrase:
+The current SRT core question is therefore not primarily:
 
 ```text
-complete present causal state
+what extra dynamics occur after objects are given?
 ```
 
-cannot silently become an L0 ontological premise if the current core question is whether a **complete objectifiable state-space is itself downstream of Selection**.
-
-Two uses must be separated:
+but:
 
 ```text
-MODEL-COMPLETE STATE
-= complete relative to a declared scientific representation / intervention algebra;
-
-ONTOLOGICALLY COMPLETE PRE-SELECTION STATE
-= claim that reality before Selection is exhaustively objectifiable as a finished state vector.
-```
-
-IRR-B can retain the first without prejudging the second.
-
-Therefore the no-hidden-history discipline survives, but it no longer licenses:
-
-```text
-there must exist a fully objectified complete state description prior to Selection.
-```
-
-**Retrospective disposition:**
-
-```text
-IRR-B anti-hidden-provenance guard: RETAIN
-complete-state language as model-relative: RETAIN / CLARIFY
-complete-state language as L0 ontological exhaustion: NOT LICENSED
-IRR-B Level-1 historical verdict: DO NOT REVERSE
-relation to pre-object ontology: REOPEN
+why is there a determinate manifest object / observation interface at all,
+and what explanatory work is hidden when that interface is treated as the default floor?
 ```
 
 ---
 
-## 6. Physical Selection trigger / Level-2 admission problem
-
-Historical blocker:
+## 8. Current disposition
 
 ```text
-first identify an event as genuine Selection by a non-circular physical admission surface;
-then test a downstream residue / reversal consequence.
-```
-
-This is sound for **empirical discrimination** if `identify` means an operational classification rule.
-
-But the new author priority exposes a possible category error if the requirement is read more strongly:
-
-```text
-observe Selection from outside before Selection has produced an observable foreground.
-```
-
-Under foreground-bounded observability, every empirical admission surface is already a **post-Selection evidence interface**. It cannot be ontologically prior evidence in the same sense that a directly observed pre-existing state variable would be.
-
-Therefore Level-2 work should distinguish:
-
-```text
-ONTOLOGICAL ADMISSION
-what Selection is / why objectifiable determinacy is downstream;
-
-EMPIRICAL PROXY ADMISSION
-what post-Selection foreground/readout pattern licenses a bounded test.
-```
-
-The second may test consequences of the theory without claiming direct observation of L0.
-
-**Retrospective disposition:**
-
-```text
-need for non-circular empirical proxy: RETAIN
-requirement to directly observe pre-Selection ontology: REJECT AS CATEGORY ERROR
-old physical-trigger blocker: REFRAME, not automatically solved
-```
-
----
-
-## 7. Neuroscience / Epistemology adverse pilots
-
-Historical HOLD review preserved:
-
-```text
-Neuroscience: Case B + data-access NO-GO + translation-only / scope-limited
-Epistemology: unresolved + high Case-B pressure + archive-enumeration NO-GO
-```
-
-These are real results about those pilot questions, evidence access and comparison designs.
-
-They should not be rewritten as failures of the pre-object / observability ontology unless those pilots actually tested D3/D4.
-
-**Disposition:**
-
-```text
-pilot adverse results: RETAIN
-use as evidence against framework-level pre-object ontology: NOT LICENSED
-relevance to future U4 transfer tests: POSSIBLE
-```
-
----
-
-## 8. HOLD EXIT REVIEW 1 and broad-synthesis HOLD
-
-Historical HOLD EXIT REVIEW 1 ended:
-
-```text
-CONTINUE HOLD — NAMED BLOCKER
-```
-
-because no author-owned candidate simultaneously had a defensible Level-1 repartition and a credible domain-native Level-2 discriminator path after neighbor subtraction.
-
-### What remains binding
-
-The verdict is still governance-active. This audit does **not** release a third deep well or broad synthesis.
-
-The 2026-09-08 governance update already permits bounded U-mode SRT-led absorption and question generation while explicitly preserving §10.1/§10.2 HOLD gates.
-
-### Why the blocker deserves a new review later
-
-The old blocker was evaluated mainly through:
-
-```text
-local mechanism / downstream discriminator
-```
-
-routes.
-
-The current author priority introduces a different possible Level-1 structural repartition:
-
-```text
-objectifiable / observable determinate state
-is downstream of Selection,
-not the ontological input from which Selection is derived;
-
-direct observability is foreground-bounded;
-pre-object field is not a hidden warehouse of finished state variables.
-```
-
-This is not yet paid against strongest neighbors. But if it survives, it could change the premise under which several prior `no discriminator` judgements were made.
-
-Therefore the correct move is neither:
-
-```text
-HOLD automatically lifted
-```
-
-nor:
-
-```text
-old HOLD makes the new axis irrelevant.
-```
-
-It is:
-
-```text
-prepare HOLD EXIT REVIEW 2 only after D3/D4 strongest-neighbor pressure
-and a non-circular downstream empirical/interface path are stated.
-```
-
-**Retrospective disposition:**
-
-```text
-HOLD EXIT REVIEW 1 historical verdict: RETAIN
-current HOLD: RETAIN
-named blocker scope: MATERIAL NEW RE-AUDIT CANDIDATE
-broad synthesis release: NO
-bounded U-mode cross-domain review: GO under current governance
-```
-
----
-
-## 9. Claim ladder / scientific distinctiveness
-
-The existing rule that empirical / scientific distinctiveness must be paid downstream remains valid.
-
-But one phrase has been too coarse:
-
-```text
-scientific distinctiveness NOT ESTABLISHED
-```
-
-It should not be read as simultaneously deciding:
-
-```text
-local mechanism novelty;
-framework-level ontological distinctiveness;
-empirical predictive distinctiveness;
-explanatory unification value.
-```
-
-Current #928 has already begun separating these dimensions.
-
-Retrospective recommendation:
-
-```text
-DOMAIN-MECHANISM DISTINCTIVENESS
-= often weak / neighbor-paid in tested cases
-
-PRE-OBJECT ONTOLOGICAL DISTINCTIVENESS
-= REOPENED / NOT YET ESTABLISHED
-
-FRAMEWORK-LEVEL UNIFICATION VALUE
-= LIVE WITH PRELIMINARY U1-U3 SUPPORT
-
-EMPIRICAL / PREDICTIVE DISTINCTIVENESS
-= HOLD WHEN CLAIMED
-```
-
----
-
-## 10. Strongest-neighbor re-selection for the new core axis
-
-The next comparison must not use WTA, RL or generic control theory as the principal philosophical rival. Those are useful D1/D2 pressures but begin too late for the core D3/D4 question.
-
-The strongest currently known neighbor set is:
-
-```text
-BARAD
-phenomena / intra-action / agential cut / determinate separability;
-strongest direct pressure on constitution + measurement/objectification.
-
-SIMONDON
-preindividual metastability / transduction / individual-milieu co-genesis;
-strongest pressure on pre-object individuation without finished individual.
-
-WHITEHEAD
-actual occasions / concrescence / actuality from potentiality;
-strong pressure on actualisation-before-enduring-object, weaker on the specific observation-cut issue.
-
-PHENOMENOLOGICAL HORIZON
-manifest object always appears against a non-thematized horizon;
-strong observation-side analogy, but may remain subject-relative and therefore not automatically world-side ontology.
-
-STATE-SPACE / CONTROL / LATENT-MODEL THEORY
-strong reduction pressure on the claim that any apparent background can simply be encoded as hidden state;
-not itself the strongest ontology neighbor.
-```
-
-The key question for each is no longer `can it reproduce the dynamics?` but:
-
-> **Does it treat the complete objectifiable state-space as ontologically prior, or does it also make objectifiable determinacy / observable articulation downstream of a constitutive cut? If the latter, what exactly remains SRT-specific in the foreground/background Selection relation?**
-
----
-
-## 11. Retrospective verdict
-
-The review does **not** overturn the repository's negative discipline. It changes the scope of several conclusions.
-
-```text
-Cycle-1 recurrence negative: RETAIN
-Cycle-2 local mechanism absorption: RETAIN
-Cycle-3 local creative-language subtraction: RETAIN
-IRR-B anti-hidden-provenance guard: RETAIN
-Neuroscience / Epistemology adverse pilots: RETAIN
-HOLD EXIT REVIEW 1: RETAIN
-
-BUT:
-
-using those results to infer that the pre-object / observation ontology
-is substantially absorbed: NOT PAID
-
-pre-object non-objectifiability + foreground-bounded observation
-as the controlling SRT distinction: REOPENED
-
-strongest-neighbor pressure at this exact D3/D4 axis: REQUIRED
-
-Level 1: UNASSIGNED
-Level 2: HOLD
+historical negative findings: PRESERVED
+historical theory-wide overreadings: NARROWED where they exceeded D1/D2
+MOBJ-A: AUTHOR-SELECTED
+MOBJ2-B: AUTHOR-SELECTED
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+whole-package global non-substitutability: NOT YET ESTABLISHED
+absolute PO-3 theorem: NOT ESTABLISHED
 canonical edit: NO
-HOLD EXIT: unchanged
+Level 2: HOLD
+HOLD EXIT REVIEW 1: RETAINED
+HOLD EXIT REVIEW 2: NOT TRIGGERED
 ```
-
-## 12. Main consequence for programme interpretation
-
-The largest retrospective correction is methodological:
-
-```text
-reproducing the observable foreground dynamics
-!=
-reproducing the ontology of how something becomes observable / determinate.
-```
-
-Previous audits were often correct about the first question and then conservative about the whole theory. The new author priority requires a dedicated audit of the second question before those conservative judgements are allowed to stand as theory-wide limitations.
