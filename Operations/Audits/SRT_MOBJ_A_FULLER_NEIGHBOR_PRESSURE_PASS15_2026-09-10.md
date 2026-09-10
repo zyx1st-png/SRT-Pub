@@ -28,6 +28,18 @@ tags: [MOBJ-A, MOBJ2-B, Objecthood, Manifestation, PreObjectField, Barad, Simond
 >
 > **Boundary:** no canonical edit, no automatic Level assignment, no claim that SRT uniquely owns pre-object constitution, and no inference from observability limits to metaphysical impossibility.
 
+## Runtime mode lock
+
+```text
+research_mode = N
+root_question = can the exact MOBJ-A dependency package survive replacement by the strongest constitutive composite rather than only weak state-space rivals?
+comparative_claim = the SRT package may preserve a non-substitutable dependency organization beyond the union of constitutive cut, preindividual individuation, horizon/background, and predictive-state closure
+named_comparator = Barad + Simondon + phenomenological horizon + predictive-state/computational-mechanics composite
+n_mode_triggered = true
+```
+
+This is a bounded comparative pass. Its negative result must route back to the U-mode root question rather than trigger indefinite residual narrowing.
+
 ## 0. Adjudicated SRT claim under pressure
 
 The author selected:
