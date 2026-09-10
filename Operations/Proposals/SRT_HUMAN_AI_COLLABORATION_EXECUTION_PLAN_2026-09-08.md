@@ -3,7 +3,7 @@ id: SRT-HUMAN-AI-COLLABORATION-EXECUTION-PLAN-20260908
 type: proposal
 status: active
 date: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-10
 layer: operations
 epistemic_layer: os
 claim_mode: governance
@@ -34,17 +34,18 @@ dependency:
 | ChoiceMap §6.4a | partly owned 后只许沿 residual 下钻 | 内部去重继续，允许引用既有前提开展关系重组 |
 | Pipeline 1 §3.3 | repository owner 去重易被误当外部新颖性裁决 | 明确内外边界，保留旧知识作为构造材料 |
 | 状态与入口 | 旧摘要易把 HOLD 扩张为所有研究停止 | 区分有界理论形成与新主井/大规模综合 programme 的门槛 |
+| 运行时模式 | 原则已写入治理，但单个工作包可在无显式比较主张时连续滑入 residual hunt | 要求最小 mode header；`neighbor-paid` 后默认回 U-mode；连续两轮只做 residual narrowing 时强制 root-return |
 
 ## 3. 实施批次
 
-| 批次 | 工作及责任 | 完成依据 | 本方案创建时状态 |
+| 批次 | 工作及责任 | 完成依据 | 当前状态 |
 |---|---|---|---|
-| A：本 PR | AI 修改现有入口、治理修正案、ChoiceMap、材料流程与模板；保存作者原话 | diff 中规则一致、现有检查通过、PR 可评审 | 已编入本 PR 的拟议变更；CI 以 PR 实测为准 |
-| B：下一次作者理论会话 | AI 恢复根问题和已付状态；作者决定意义与方向；AI 执行有界吸纳和反例检验 | 一份现有问题工作包中记录研究收益与未决项 | 尚未执行；不要求作者预先选择 R |
-| C：首次复盘 | AI 在两个有界研究工作包完成后，或一次明确方向漂移发生时复盘 | 对照 §6；作者只裁决方向/意义变化 | 尚未触发；不是日程自动化 |
-| D：按实际故障启动 | 若状态错继承、重复提问或多入口漂移继续发生，提出最小机器校验补丁 | 复现一个具名故障并验证修复，不新增手工台账镜像 | 条件性后续；本 PR 不声称已实现 |
+| A：原治理 PR | AI 修改现有入口、治理修正案、ChoiceMap、材料流程与模板；保存作者原话 | diff 中规则一致、现有检查通过、PR 可评审 | 已完成并进入 main |
+| B：作者理论会话 | AI 恢复根问题和已付状态；作者决定意义与方向；AI 执行有界吸纳和反例检验 | 一份现有问题工作包中记录研究收益与未决项 | 已在 PR #928 实际运行；出现模式漂移，见 §6.1 |
+| C：首次复盘 | AI 在两个有界研究工作包完成后，或一次明确方向漂移发生时复盘 | 对照 §6；作者只裁决方向/意义变化 | 已由 PR #928 的连续 residual-hunt 漂移触发 |
+| D：按实际故障启动 | 若状态错继承、重复提问或方向漂移继续发生，提出最小机器校验补丁 | 复现一个具名故障并验证修复，不新增手工台账镜像 | 本次 2026-09-10 补丁执行中：mode lock + neighbor-paid routing + circuit breaker |
 
-本 PR 不批量迁移目录，不新增一套索引/状态系统。GitHub 主分支保护配置作为独立工程事项保留，不能代替本次方向纠偏，也不在本 PR 中声称已启用。
+本方案不批量迁移目录，不新增一套索引/状态系统。GitHub 主分支保护配置作为独立工程事项保留，不能代替本次方向纠偏，也不在本方案中声称已启用。
 
 ## 4. 每个有界研究工作包怎样运行
 
@@ -53,6 +54,32 @@ dependency:
 AI 从当前控制文件恢复：根问题、作者最近有效表达、已有资源、尚未解决的关系、下一步为什么相关。已回答的问题不因换会话而重问。
 
 示例问题：选择、多与一、历史沉积和持续之间的关系如何理解？这只是对已出现问题的恢复，不是预设它们必然构成一个生成顺序。
+
+### 4.1a 运行时模式锁（最小记录，不新增台账）
+
+对 Constitution / ontology / cross-domain theory 的有界工作包，在正文开头或当前控制审计中保留以下最小运行记录：
+
+```text
+research_mode = U | N
+root_question = ...
+comparative_claim = none | <bounded claim>
+named_comparator = none | <named rival>
+n_mode_triggered = false | true
+```
+
+默认规则：
+
+```text
+mature-domain overlap / neighbor mapping / cross-domain synthesis
+-> research_mode = U
+
+explicit uniqueness / irreducibility / superiority / extra prediction or intervention claim
+-> research_mode = N for that bounded claim only
+```
+
+如果 `research_mode = N`，`comparative_claim` 与 `named_comparator` 不得同时为空。缺少这两个项目时，不得仅因“邻居已经解释了某机制”自行进入 residual hunt。
+
+这个 mode header 是当前工作包中的运行记录，不是新 claim ladder、frontmatter 标准或独立治理表。
 
 ### 4.2 吸纳阶段的最小记录
 
@@ -98,22 +125,91 @@ AI 从当前控制文件恢复：根问题、作者最近有效表达、已有�
 
 原有 Level-0/1/2 和 Case A/B/C 只在各自比较范围内使用，不改写历史判定，不改 claim ladder。HOLD 继续约束第三主井与大规模跨域综合 programme；有界问题重组不被偷偷升级为这些 programme。
 
+### 5.1 `NEIGHBOR-PAID` 后的默认路由
+
+当一个成熟邻居已经支付某个局部机制 / 功能角色，而当前没有实际比较主张时，默认动作不是继续追更窄 residual，而是：
+
+```text
+NEIGHBOR-PAID
+-> INHERIT / REALIZATION / REORGANIZATION
+-> 回到 SRT root question
+-> 检查跨域结构、关系重组、新问题、解释压缩或反向约束
+```
+
+只有具名 `comparative_claim` 仍在审计范围内时，才继续：
+
+```text
+NEIGHBOR-PAID
+-> bounded residual / non-substitutability audit
+```
+
+不得把“领域机制非原创”自动提升为“框架被吸收”。同样，不得把“可作为实现”自动写成 SRT 已被证实。
+
+### 5.2 residual-hunt circuit breaker
+
+如果同一根问题连续 **两轮** strongest-neighbor / substitution 工作的唯一新增结果都是：
+
+```text
+neighbor-paid
+-> residual 再缩窄
+```
+
+而没有一个仍然有效的具名比较主张，则必须停止自动下钻并执行 root-return：
+
+```text
+1. 当前 SRT root question 是什么？
+2. 最近两轮邻居正面贡献了哪些可继承机制 / 关系 / 约束？
+3. 把这些贡献并列后，是否出现跨域不变量、解释压缩、新问题或映射冲突？
+4. 当前是否真的存在需要 N-mode 的 bounded comparative claim？
+```
+
+若第 4 项为否，恢复 U-mode。若为是，只允许围绕该具名 claim 继续 N-mode，不得把 N-mode 扩张成整个理论议程。
+
 ## 6. 验收与复盘
 
-### 本 PR 的工程验收
+### 本方案的工程验收
 
-- 作者引文与本次对话逐字一致，实施细则明确标为机器方案。
-- 普通 fresh-session 仍为原三文件入口；新 source/plan 通过现有入口条件加载。
-- 活动模板不再要求所有 O-track 候选先取得相对邻居的 Level 1。
+- 作者引文与对话记录逐字一致，实施细则明确标为机器方案。
+- 普通 fresh-session 仍为原三文件入口；不新增第二套 bootstrap / 状态系统。
+- 活动模板不要求所有 O-track 候选先取得相对邻居的 Level 1。
 - 内部 owner 检索继续防重复，但不剥离整个理论构造中的继承前提。
-- canonical owners、历史 adverse verdict、HOLD 门和 CI 强度不改变；warning baseline 仅删除本 PR 已消除的两条材料流水线告警，不增加例外。
-- PR-local frontmatter、baseline 单调性、完整 preflight、上下文包一致性通过。
+- `research_mode = N` 时必须出现具名比较主张和 comparator；U-mode 不因 `neighbor-paid` 自动转成 residual hunt。
+- canonical owners、历史 adverse verdict、HOLD 门和 CI 强度不改变。
+- PR-local frontmatter、baseline 单调性、完整 preflight、上下文包一致性继续通过。
 
-### 下一次会话的行为验收（本 PR 不预记为通过）
+### 6.1 2026-09-10 具名故障复盘：PR #928 residual-hunt drift
+
+故障范围：PR #928 的 Cycle-2 Passes 2–6。
+
+观察到的执行形状：
+
+```text
+找到 SRT 结构候选
+-> strongest neighbor 支付局部角色
+-> 自动追问“还剩什么 residual”
+-> 再找更强邻居
+-> 再缩 residual
+```
+
+这与 2026-09-08 已有治理方向冲突，因为当时并不存在一个覆盖整个 Cycle-2 工作包的“领域局部机制必须独有”主张。局部 necessity / factual claims 仍应接受反例与来源审查，但 `neighbor-paid` 不应自动把研究议程改写成 novelty maximization。
+
+当前处置：
+
+```text
+Passes 2–6 的局部 subtraction 结果保留；
+不回滚 source-native pressure；
+Pass 7 恢复 U-mode，重写理论价值问题为跨域统一负担；
+本补丁加入 mode lock、neighbor-paid routing 与两轮 circuit breaker。
+```
+
+这是一条执行故障记录，不把此前审计结果宣布无效，也不把作者统一性定位升级成已经验证的框架优势。
+
+### 后续会话的行为验收
 
 | 情境 | 合格行为 |
 |---|---|
-| 邻近理论已解释局部机制 | 忠实继承并问它如何服务 SRT 根问题，不自动停止或强化主张 |
+| 邻近理论已解释局部机制 | 忠实继承并问它如何服务 SRT 根问题；默认 U-mode，不自动继续 residual hunt |
+| 连续两轮只有 `neighbor-paid -> residual narrower` | 触发 §5.2 root-return；无具名比较主张则恢复 U-mode |
 | 仅仅换了术语 | 展开标签后核对来源与具体案例/推理位置；若无可说明的问题、解释、推理或约束，记为收益未建立，复用或修改 |
 | 新概念没有现成领域术语 | 用作用、前提和案例说明；不因缺少现成同义词而否定，也不把命名当作证明 |
 | AI 自评有构造收益 | 留下可核位置、最强异议与处置；自评标为暂定，不写成独立验证 |
@@ -128,6 +224,6 @@ AI 从当前控制文件恢复：根问题、作者最近有效表达、已有�
 
 ## 7. 首次应用与停止边界
 
-当前 R 作者门、强化 V 的未经审计状态、IRR-B programme 排序和历史研究结果继续保留。下一次相关理论会话应先恢复作者的更大问题，核对 R 在其中的作用；本治理 PR 不替作者作 R-0/R-B/R-C 裁决，也不以重新提问为名重开已退役实验。
+当前 R 作者门、强化 V 的未经审计状态、IRR-B programme 排序和历史研究结果继续保留。相关理论会话应先恢复作者的更大问题，核对当前分支在其中的作用；本方案不替作者作未授权的本体裁决，也不以重新提问为名重开已退役实验。
 
-若首次复盘发现方向仍被邻居残余牵引，优先修改具体提问和触发规则；若出现来源失真或过度声称，收紧相应论证。先修复具名失效点，不靠增加整套政策、索引或无限审计轮解决。
+若复盘发现方向仍被邻居残余牵引，先执行 §5.2 并修复具体提问 / mode trigger；若出现来源失真或过度声称，收紧相应论证。先修复具名失效点，不靠增加整套政策、索引或无限审计轮解决。
