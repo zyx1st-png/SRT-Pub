@@ -4,10 +4,10 @@ type: source_intuition
 status: active
 date: 2026-09-10
 layer: source
-epistemic_layer: source
+epistemic_layer: author
 claim_mode: author_intuition
 canonical: false
-ai_do_not_use_for_definition: false
+ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
