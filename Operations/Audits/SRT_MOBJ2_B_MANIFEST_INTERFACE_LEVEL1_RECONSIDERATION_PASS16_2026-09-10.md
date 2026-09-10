@@ -14,8 +14,7 @@ dependency:
   - Operations/Audits/SRT_MOBJ_A_FULLER_NEIGHBOR_PRESSURE_PASS15_2026-09-10.md
   - Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
-  - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
-tags: [MOBJ2-B, ManifestInterface, Level1, ExplanatoryOrder, StateSpace, Retrospective, HOLD]
+tags: [MOBJ2-B, ManifestInterface, Level1, ExplanatoryOrder, StateSpace, Retrospective, HOLD, ClassM]
 ---
 
 # MOBJ2-B manifest-interface insufficiency — scoped Level-1 reconsideration pass 16
@@ -23,6 +22,18 @@ tags: [MOBJ2-B, ManifestInterface, Level1, ExplanatoryOrder, StateSpace, Retrosp
 > **Question:** after the author selected MOBJ2-B, does the claim earn any Level-1 structural repartition, and what previous limitation language must be narrowed?
 >
 > **Boundary:** this is not a literature-novelty claim, not a new local mechanism, not a universal no-formalization theorem, and not a Level-2 result.
+
+## Runtime mode lock
+
+```text
+research_mode = N
+root_question = does MOBJ2-B change explanatory dependency relative to models that take a determinate manifest interface as primitive?
+comparative_claim = manifest-interface-as-achievement is structurally non-equivalent to manifest-interface-as-primitive within the scoped Class-M comparison
+named_comparator = Class M: models taking determinate observations/state/action/boundary primitives as given
+n_mode_triggered = true
+```
+
+N-mode is bounded to this comparison only. It does not license a theory-wide novelty hunt.
 
 ## 0. Author-owned claim now available for audit
 
@@ -120,6 +131,22 @@ or
 
 Move (2) leaves Class M as defined and enters the stronger constitutive-neighbor comparison.
 
+### 3.1 By-construction non-discriminator guard
+
+The result above is a **class-relative explanatory-order result**, not an SRT-vs-neighbor discriminator.
+
+Any theory that independently makes the genesis of a determinate manifest interface part of its explanandum can obtain the same contrast against Class M **by construction**. In particular, this test alone cannot distinguish SRT from a Baradian, Simondonian, phenomenological, or other constitutive account that also refuses to treat the manifest interface as the final explanatory floor.
+
+Therefore:
+
+```text
+Class-M failure to answer manifestation genesis
+!= evidence that SRT uniquely answers manifestation genesis
+!= evidence that SRT beats Barad / Simondon / another constitutive rival.
+```
+
+The genuine comparative burden remains a D3/D4 strongest-constitutive-rival test of the exact SRT dependency package.
+
 ---
 
 ## 4. Structural repartition actually obtained
@@ -174,7 +201,11 @@ all rival formalisms begin after manifestation;
 no formal constitutive model can be ontologically equivalent.
 ```
 
-The Level-1 result, if assigned, must be explicitly restricted to the partition between SRT's upstream constitutive question and **models that take the determinate manifest interface as primitive**.
+The Level-1 result is explicitly restricted to the partition between SRT's upstream constitutive question and **models that take the determinate manifest interface as primitive**.
+
+It must also be propagated with the following qualifier:
+
+> **The Class-M test is non-discriminating among constitutive theories that already make manifestation genesis an explanandum.**
 
 ---
 
@@ -194,7 +225,7 @@ explicit model-interface discriminator
 correction of overly broad readings of earlier D1/D2 negative audits.
 ```
 
-Thus any Level-1 assignment here is a **narrow recovered/clarified Level-1 partition**, not a second independent novelty increment.
+Thus any Level-1 assignment here is a **narrow recovered/clarified Class-M partition**, not a second independent novelty increment.
 
 ---
 
@@ -229,6 +260,8 @@ may support D1/D2 absorption but must not by itself be used as evidence that D3/
 
 This is a scope correction, not a historical reversal.
 
+The detailed retrospective review may cite this pass downstream, but this pass no longer depends on that retrospective file; the audit dependency is intentionally one-way to avoid circular provenance.
+
 ---
 
 ## 8. Level verdict
@@ -261,7 +294,7 @@ This changes explanatory dependency and replacement behavior.
 **Verdict:**
 
 ```text
-LEVEL 1 PASS — NARROW / RECOVERED
+LEVEL 1 PASS — NARROW / RECOVERED / CLASS-M SCOPED
 
 scope:
 models whose primitive interface is already determinate / manifest.
@@ -269,13 +302,18 @@ models whose primitive interface is already determinate / manifest.
 meaning:
 Class-M predictive or dynamical completeness does not substitute for
 an account of the genesis of the interface's determinacy.
+
+critical qualifier:
+this test is non-discriminating among constitutive theories that already
+make manifestation genesis an explanandum.
 ```
 
 Guard:
 
 ```text
 this is NOT a new Level-1 increment independent of canonical L0;
-it is a recovered / clarified structural consequence of that anchor.
+it is a recovered / clarified structural consequence of that anchor;
+it does NOT distinguish SRT from Barad / Simondon / other constitutive rivals by itself.
 ```
 
 For the **global strongest-neighbor composite**:
@@ -299,7 +337,7 @@ No prospective domain-native discriminator yet shows an observable disagreement 
 
 The programme blocker is not removed.
 
-MOBJ2-B now supplies a defensible narrow structural partition, but the second required half remains absent:
+MOBJ2-B now supplies a defensible narrow Class-M structural partition, but the second required half remains absent:
 
 ```text
 credible bounded Level-2 realization
@@ -326,7 +364,8 @@ The next research task is not to force an experiment prematurely. It is to ask w
 ```text
 MOBJ-A: AUTHOR-SELECTED
 MOBJ2-B: AUTHOR-SELECTED
-MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED / CLASS-M SCOPED
+Class-M test vs constitutive theories: NON-DISCRIMINATING BY ITSELF
 whole-package global non-substitutability: NOT YET ESTABLISHED
 historical D1/D2 negatives: PRESERVED
 D3/D4 theory-wide absorption from those negatives: NARROWED / NOT LICENSED
