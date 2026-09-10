@@ -66,12 +66,30 @@ not universal claim that every determinate structure whatsoever is post-Selectio
 not an absolute PO-3 / no-state-space-equivalence theorem.
 ```
 
-## Non-selected first-gate alternatives
+## Non-selected first-gate alternatives — preserved for adjudication provenance
+
+The author's one-letter response `A` is meaningful only relative to the complete option set that was presented. The rejected alternatives are therefore retained verbatim in substance rather than reduced to labels.
+
+### MOBJ-B — NOT SELECTED — universal determinacy thesis
 
 ```text
-MOBJ-B = NOT SELECTED
-MOBJ-C = NOT SELECTED
+Every determinate state, event, relation, property, boundary or object whatsoever
+is post-Selection manifestation;
+there is no determinate entity-level content prior to Selection.
 ```
+
+This was the stronger universalization. Its stated gain was a maximally general Selection-first ontology; its stated risks were scope explosion, self-reference pressure, possible conflict over what minimal determinate structure L0 itself may have, and the need for a much larger canonical/metaphysical audit.
+
+### MOBJ-C — NOT SELECTED — epistemic manifestation thesis only
+
+```text
+Objects may be ontologically complete before Selection;
+SRT only says observers encounter them through a selective foreground interface.
+```
+
+This was the weaker epistemic-only option and would largely collapse the current constitutive direction toward perspectival access / phenomenological appearance / measurement interface.
+
+The non-selection of B/C does not prove their negations as global theorems; it fixes which option controlled this author gate.
 
 ## Subsequent sequence now completed through second adjudication
 
@@ -81,7 +99,7 @@ After MOBJ-A:
 fuller mature-neighbor pressure = PAID
 MOBJ2-B manifest-interface insufficiency = AUTHOR-SELECTED
 post-second-adjudication ontology/interface hardening = PAID
-MOBJ2-B scoped Level-1 reconsideration = PASS — NARROW / RECOVERED
+MOBJ2-B scoped Level-1 reconsideration = PASS — NARROW / RECOVERED / CLASS-M SCOPED
 ```
 
 Second author source:
@@ -103,8 +121,9 @@ This does not claim that no possible third-person constitutive formalism can eve
 
 ```text
 MOBJ-A first gate: CLOSED / AUTHOR-SELECTED
+MOBJ-B / MOBJ-C: NOT SELECTED / FULL OPTION TEXT PRESERVED
 MOBJ2-B second gate: CLOSED / AUTHOR-SELECTED
-MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED / CLASS-M SCOPED
 whole-package global non-substitutability: NOT YET ESTABLISHED
 absolute PO-3 theorem: NOT ESTABLISHED
 canonical edit: NO
