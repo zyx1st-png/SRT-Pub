@@ -5,7 +5,7 @@ status: active
 record_stage: controlling_priority_handoff
 date: 2026-09-10
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: evidence
 canonical: false
 ai_do_not_use_for_definition: true
