@@ -14,6 +14,7 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
   - Operations/Audits/SRT_MOBJ_A_FULLER_NEIGHBOR_PRESSURE_PASS15_2026-09-10.md
   - Operations/Proposals/SRT_MOBJ_A_SECOND_AUTHOR_GATE_AFTER_FULLER_PRESSURE_2026-09-10.md
+  - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md
@@ -264,19 +265,45 @@ This hardening must narrow if a fair rival can show, in source-native terms, tha
 (5) does so without merely translating SRT labels.
 ```
 
-If such a rival supplies an equivalent dependency organization, SRT retains a coherent framework organization but loses the relevant non-substitutability claim.
+If such a rival supplies an equivalent dependency organization, SRT retains a coherent framework organization but loses the relevant global non-substitutability claim.
 
 ---
 
-## 10. Current status
+## 10. Level / HOLD routing after Pass 16
+
+Pass 16 assigned only the following scoped result:
+
+```text
+MOBJ2-B scoped Level 1:
+PASS — NARROW / RECOVERED
+
+scope:
+models whose primitive interface is already determinate / manifest.
+```
+
+This is a recovered / clarified dependency consequence of canonical L0, not a new independent novelty increment.
+
+Still not earned:
+
+```text
+whole-package global non-substitutability;
+absolute PO-3 theorem;
+Level 2 domain-native discriminator;
+HOLD exit.
+```
+
+---
+
+## 11. Current status
 
 ```text
 MOBJ-A: AUTHOR-SELECTED
 MOBJ2-B: AUTHOR-SELECTED
 ontology/interface hardening: PAID at noncanonical level
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+whole-package global non-substitutability: NOT YET ESTABLISHED
 canonical edit: NO
 absolute PO-3 theorem: NOT ESTABLISHED
-Level 1: separate scoped reconsideration required
 Level 2: HOLD
 HOLD EXIT REVIEW 2: NOT TRIGGERED
 ```
