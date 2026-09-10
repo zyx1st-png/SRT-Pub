@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-09
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-10
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-09
-source_commit: b9b393f0
-source_branch: materials/bowler-structured-experience-20260908
+generated: 2026-09-10
+source_commit: 25d39a90
+source_branch: theory/cycle2-vg-wta-pressure-pass2-20260909
 source_dirty: false
-inputs_digest: 843ffd60730c7ae8
+inputs_digest: 329d724e1bb4a542
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 843ffd60730c7ae8
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-09 |
-| 来源 commit | `b9b393f0` |
-| 来源分支 | `materials/bowler-structured-experience-20260908` |
+| 生成日期 | 2026-09-10 |
+| 来源 commit | `25d39a90` |
+| 来源分支 | `theory/cycle2-vg-wta-pressure-pass2-20260909` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
