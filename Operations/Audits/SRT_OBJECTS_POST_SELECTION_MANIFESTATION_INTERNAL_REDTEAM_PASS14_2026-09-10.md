@@ -26,6 +26,18 @@ tags: [Objecthood, Manifestation, Foreground, Background, L0, PreObjectField, Se
 >
 > **Boundary:** this is not a theorem proof, not canonical promotion, and not a Level verdict. The point is to identify what survives after triviality, idealism, strongest-neighbor and state-space pressure.
 
+## Runtime mode lock
+
+```text
+research_mode = U
+root_question = what survives triviality, idealism, regress, neighbor and state-space pressure in the author candidate that objecthood is post-Selection manifestation?
+comparative_claim = none
+named_comparator = Barad / Simondon / phenomenology / maximal state-space as red-team pressures, not one scoped novelty duel
+n_mode_triggered = false
+```
+
+This is an internal red-team/root-question pass. Neighbor material constrains the candidate but does not turn the whole work package into N-mode residual hunting.
+
 ---
 
 ## 0. Candidate under pressure
