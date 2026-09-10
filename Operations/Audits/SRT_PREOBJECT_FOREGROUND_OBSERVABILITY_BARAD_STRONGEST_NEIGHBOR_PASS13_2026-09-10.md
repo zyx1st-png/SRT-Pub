@@ -25,6 +25,18 @@ tags: [PreObjectField, ForegroundObservability, Barad, AgentialRealism, Agential
 >
 > **Boundary:** no Level verdict, no canonical edit, no claim that Barad and SRT are identical, and no inference that empirical non-observability proves ontology.
 
+## Runtime mode lock
+
+```text
+research_mode = N
+root_question = can the pre-object / foreground-observability package survive direct D3/D4 comparison with Barad-like constitutive ontology?
+comparative_claim = Barad may pay broad anti-pregivenness and constitutive determination, but may not fully substitute the exact same-event foreground/background plus later-condition typing
+named_comparator = Karen Barad / agential realism / agential cut
+n_mode_triggered = true
+```
+
+N-mode is bounded to the explicit Barad substitution claim. If the pass only narrows residuals without a live comparative claim, routing must return to U-mode rather than continuing automatically.
+
 ## 0. Claims under test
 
 The re-audit route separated three claims:
