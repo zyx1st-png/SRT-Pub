@@ -2,7 +2,7 @@
 id: SRT-STATUS-20260910-D3-D4-PASS17-MANIFESTATION-NEXT-SESSION-HANDOFF
 type: status_record
 status: active
-record_stage: controlling_priority_handoff
+record_stage: controlling_priority_handoff_review_consolidated
 date: 2026-09-10
 layer: operations
 epistemic_layer: os
@@ -10,61 +10,66 @@ claim_mode: evidence
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
-  - Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_STRONGEST_NEIGHBOR_PASS17_2026-09-10.md
-  - Operations/Audits/SRT_SELECTION_POSITION_EXISTENCE_MULTI_SUBJECT_ORDER_STRONGEST_NEIGHBOR_PASS18_2026-09-10.md
-  - Operations/Audits/SRT_PASS18_COLLECTIVE_OWNER_RECONCILIATION_2026-09-10.md
-  - Operations/Audits/SRT_CROSS_DIMENSIONAL_SELECTABILITY_WHOLE_SURPLUS_STRONGEST_NEIGHBOR_PASS19_2026-09-10.md
-  - Operations/Audits/SRT_PASS19_FIRST_PERSON_ACTIVE_SELECTION_CORRECTION_ADDENDUM_2026-09-10.md
-  - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
-  - Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
-  - Operations/Audits/SRT_ANTICIPATORY_ACTIVE_PASSIVE_SELECTION_PASS21_2026-09-10.md
-  - Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
-  - Operations/Audits/SRT_INTEGRATIVE_WHOLE_JOINT_FUTURE_SELECTABILITY_PASS23_2026-09-10.md
+  - Operations/Audits/SRT_PR929_REVIEW_CONSOLIDATION_2026-09-10.md
+  - Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_HUMAN_AI_CONSTRUCTIVE_INTEGRATION_CORE_2026-09-10.md
   - Operations/Audits/SRT_JOINT_FUTURE_SELECTABILITY_INTEGRATION_DEPENDENCY_PASS24_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md
+  - Operations/Audits/SRT_INTEGRATIVE_WHOLE_JOINT_FUTURE_SELECTABILITY_PASS23_2026-09-10.md
+  - Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
+  - Operations/Audits/SRT_ANTICIPATORY_ACTIVE_PASSIVE_SELECTION_PASS21_2026-09-10.md
+  - Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
+  - Operations/Audits/SRT_CROSS_DIMENSIONAL_SELECTABILITY_WHOLE_SURPLUS_STRONGEST_NEIGHBOR_PASS19_2026-09-10.md
+  - Operations/Audits/SRT_SELECTION_POSITION_EXISTENCE_MULTI_SUBJECT_ORDER_STRONGEST_NEIGHBOR_PASS18_2026-09-10.md
+  - Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_STRONGEST_NEIGHBOR_PASS17_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
+  - Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md
   - Bridge/SRT_Adjacent_Theory_Interface_Index.md
-  - Core/SRT_Core_01_Axioms.md
-  - Philosophy/SRT_SocTheory_06_L2_Dynamics.md
-  - Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [CurrentPriority, Pass24, Selection, ActiveSelection, PassiveSelection, Integration, JointFutureSelectability, WholeGreaterThanParts, MultiSubjectOrder]
+tags: [CurrentPriority, Pass24, ReviewConsolidation, ConstructiveIntegration, Selection, ActiveSelection, PassiveSelection, JointFutureSelectability, WholeGreaterThanParts, MultiSubjectOrder]
 ---
 
-# D3/D4 manifestation reconstruction — controlling handoff through Pass 24 integration map
+# PR #929 controlling handoff — Pass 24 review consolidation / next-session continuation
 
-> **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 24. It does not replace `AGENTS.md §Session Start`, canonical owners, or exact author-source records.
+> **Controlling runtime role:** this is the current continuation handoff for the #929 workline. The filename retains its Pass-17 origin only because `STATUS.md` already routes here; do **not** infer current pass or theory priority from the filename. This content supersedes stale Pass-17 action wording in `STATUS.md §Fast Status` for this workline. It does not replace `AGENTS.md §Session Start`, canonical owners, or exact author-source records.
 
-## 1. Repository state
+## 1. Repository / PR state at consolidation
 
 ```text
 #928: MERGED
 #927: MERGED
-#929: CURRENT DRAFT manifestation / Selection-position / integration workline
+#929: REVIEW-CONSOLIDATED / MERGE-READY SUBJECT TO HEAD CI
+base main: 45016c447d81203840856a82470cf819e4ff7483 at PR start
 canonical edit: NO
+new Level 1: NOT ASSIGNED
 Level 2: HOLD
+HOLD EXIT REVIEW 2: NOT TRIGGERED
+scientific superiority: NOT ESTABLISHED
 ```
 
-## 2. Current author-owned ontology line
+After #929 is merged, a fresh session should verify the actual new `main` SHA and continue from this handoff; do not reopen Pass 17–24 merely because `STATUS.md` still contains older compressed prose.
+
+## 2. Current author-owned ontology direction
 
 ```text
 L0 difference / minimum non-neutrality
 -> subjectless Selection
 -> Selection actively constructs non-flat selectable space / vertical structure
 -> Selection-position / One formation where applicable
--> formed positions later Select from within themselves
--> multi-position Selection can alter / maintain one another's selectability
+-> formed positions can later Select from within their positions
+-> multi-position Selection can alter / maintain one another's later selectability
 -> cross-time / space / position / subject selectability
 -> multi-subject order
 -> third-person observed stability as downstream readout.
 ```
 
-Author definitions / rulings:
+Current author rulings:
 
 ```text
 more stable Selection
@@ -82,312 +87,326 @@ passive Selection
 
 active Selection
 = a form of creation and reconstruction
+
+active Selection minimum threshold
+= Selection begins acting on the organization that determines later selectability itself.
 ```
 
-## 3. Active/passive transition — author accepted
+These are author-level directions / adjudications in their recorded scope, not silent canonical rewrites.
 
-The author accepted the Pass-22 high-level candidate:
+## 3. First-person / third-person correction
 
-> **主动 Selection 的最低门槛，在于 Selection 不再只在既有垂直结构里维持当前 One，而开始作用于“决定以后什么能够被选择”的垂直结构本身。**
+Do not return to the observational-equivalence framing as the ontological centre.
 
-Safe current organization:
+Current direction:
 
 ```text
-PASSIVE Selection:
-primarily sustains the continued existence / viability of the current One
-within an achieved selectable organization.
+pre-subject:
+Selection is subjectless; no pre-existing selector is required.
 
-ACTIVE Selection:
-acts on / reconstructs the organization that determines later selectability itself.
+post-formation:
+formed Selection-positions can participate endogenously in later Selection.
+
+participant-side active Selection
+-> constitutes / maintains selectable relations
+-> third-person stable pattern is downstream evidence / readout.
 ```
 
-Guards:
+`first-person` here means position-indexed endogenous participation at minimum, not necessarily introspection, consciousness, report, or cognitive Bearerhood.
+
+## 4. Human-AI collaboration core — governance landed
+
+The author identified the most valuable recent methodological shift as:
 
 ```text
-PASSIVE != inactivity
-ACTIVE != merely more activity
-ACTIVE != ordinary learning by definition
-ACTIVE != ex nihilo novelty requirement
+defensive comparison
+-> constructive integration
 ```
 
-## 4. Pass 23 methodological redirection — author owned
+Exact source:
+`01_Source_Intuition/SRT_AUTHOR_HUMAN_AI_CONSTRUCTIVE_INTEGRATION_CORE_2026-09-10.md`.
 
-Exact author wording:
+Governance landing:
+`Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md`.
 
-> **「认同 继续 另外我觉得SRT 也是这种整体大于部分 不需要在竞争理论的部分里面去找新颖性。而更应该关注如何整合现有理论，产生共同重构未来可选性的能力。」**
-
-Programme consequence:
+Default theory-building logic is now:
 
 ```text
-DO NOT make isolated concept-level novelty the primary goal.
-DO preserve strongest-neighbor pressure as diagnostic / routing discipline.
-DO integrate mature theories at the interfaces where they explain the most.
-DO test whether composition yields the capacity to jointly reconstruct future selectability.
+start from the SRT root question;
+recover mature theories in source-native form;
+preserve what each already explains well;
+place contributions at their strongest interfaces;
+keep incompatibilities visible;
+reorganize relations;
+ask what new explanatory / inferential / formal / intervention / design capacity the composition enables;
+especially test capacity to jointly reconstruct future selectability;
+use N-mode only for an actual bounded comparative claim.
 ```
 
-SRT itself may therefore be treated as a candidate **whole greater than the sum of theoretical parts**, provided the integration creates a real explanatory / formal / constructive capacity beyond juxtaposition.
+Strongest-neighbor work remains diagnostic / falsificatory / routing discipline. `NEIGHBOR-PAID` is not by itself a command to continue residual hunting.
 
-## 5. Role of strongest-neighbor work after the redirection
-
-Retain all prior payments and negative results.
-
-Neighbor work now primarily serves:
+## 5. Runtime mode chronology — do not fabricate retrospective compliance
 
 ```text
-DIAGNOSIS:
-prevent false novelty;
-identify genuine ownership of mechanisms;
-expose incompatible assumptions;
-preserve source-native semantics.
+Pass 17:
+research_mode = N
+bounded named-neighbor discrimination was active.
 
-ROUTING:
-place mature mechanisms at the correct SRT layer / interface.
+Pass 18-22:
+residual / strongest-neighbor pressure remained dominant in several passes;
+mode bookkeeping and circuit-breaker execution were incomplete.
+This is retained as a real workflow drift, not rewritten away.
+
+Pass 23:
+author explicitly redirected the programme to constructive integration.
+
+Pass 24 / next continuation:
+research_mode = U
+root_question = how Selection-positioned processes can jointly reconstruct future selectability
+comparative_claim = none
+named_comparator = none
+n_mode_triggered = false
 ```
 
-A neighbor can simultaneously defeat a local novelty claim and become a valuable module in the integrated architecture.
+## 6. JFS map — navigation only, not an ontology ladder
 
-## 6. Existing repository integration ancestor
-
-`Bridge/SRT_Adjacent_Theory_Interface_Index.md` already says `interface, not identity` and assigns mature theories bounded roles in the SRT loop.
-
-Current methodological shift:
-
-```text
-old defensive use:
-SRT is not just FEP / IIT / niche construction / enactivism / process philosophy / etc.
-
-new constructive use:
-what does each theory explain best, and how can those mechanisms compose
-into a joint future-selectability architecture?
-```
-
-No Bridge owner is edited in #929.
-
-## 7. Pass 24 — JFS integration dependency stack
-
-Working machine label only:
+Working machine label:
 
 ```text
 JFS = Joint Future-Selectability Reconstruction capacity
 ```
 
-Minimum machine target:
-
-> Multiple formed Selection-positions reciprocally alter the organization of future selectability so that future continuations depend on coordinated changes across positions rather than on each position acting only within its isolated current selectable organization.
-
-Integration stack:
+Current integration nodes cover:
 
 ```text
-JFS-0 pre-object constitution
-  Barad / Simondon pressure
-  -> subjectless Selection / non-flat selectable organization
-
-JFS-1 Selection-position / One formation
-  Simondon pressure
-  -> positional organization from which later Selection can occur
-
-JFS-2 passive viability
-  autopoiesis / biological autonomy / FEP
-  -> preserve "can continue"
-
-JFS-3 active reconstruction
-  niche construction / learning / open-ended evolution
-  -> reconstruct "can become"
-
-JFS-4 anticipatory commitment
-  Rosen-style anticipation / Active Inference
-  -> not-yet-actual continuation reorganizes present Selection
-
-JFS-5 position-indexed participation
-  Skilled Intentionality / participatory sense-making
-  -> Selection enacted from formed positions
-
-JFS-6 reciprocal reconstruction
-  participatory sense-making / niche construction / social-institutional theory
-  -> A's Selection changes B's later selectability and vice versa
-
-JFS-7 multi-subject order
-  interactional autonomy / organizational recursion / multilevel selection
-  -> reciprocal reconstruction becomes re-enterable across time / space / position / subject
-
-JFS-8 optional higher-order admission
-  Core_Law/SRT_Collective_Selection.md / T-COLL-1
-  -> ask separately whether the order becomes a collective Selection unit.
+pre-object constitution;
+Selection-position / One formation;
+passive viability;
+active reconstruction;
+anticipatory commitment;
+position-indexed participation;
+reciprocal reconstruction;
+multi-subject order;
+optional higher-order collective admission.
 ```
 
-## 8. Main integration conflicts to preserve
+The `JFS-0...JFS-8` numbering is **not** a canonical generation ladder, primitive inventory, exhaustive ontology sequence, or universal temporal ordering.
 
-### C1 — agent-first vs subjectless genesis
-
-Active Inference, Skilled Intentionality, niche construction and participatory sense-making are strongest after a formed agent / organism / sense-maker exists.
-
-Do not project them backward into L0 without a bridge.
-
-### C2 — stable One vs ongoing individuation
-
-Use Simondonian pressure to prevent `One` from becoming an immutable substance.
-Read Selection-position as achieved / maintainable positional organization.
-
-### C3 — closure vs creation
-
-Autopoiesis / FEP emphasize maintenance; open-ended evolution emphasizes changing possibility spaces.
-
-Use the author-selected split:
+Later diagrams must distinguish at least:
 
 ```text
-PASSIVE -> survival / continuation
-ACTIVE -> reconstruction / creation
+formation / constitutive dependency;
+recurrent feedback;
+analytic decomposition;
+domain-conditional realization.
 ```
 
-without treating them as mutually exclusive systems.
+Do not infer that all domains instantiate every node or that neighboring theories become SRT by translation.
 
-### C4 — modeled future vs unprestatable novelty
+## 7. Whole > parts / joint reconstruction — current status
 
-Anticipatory / Active-Inference frameworks naturally work with modeled futures.
-Open-ended evolution pressures the assumption that future relevant possibilities can be fully prestated.
+Author-directed target:
 
-Machine candidate only:
+> **产生共同重构未来可选性的能力。**
+
+Current whole-level proposal is conditional:
+
+> A multi-position whole would exceed detached parts in the relevant constructive sense if participant selections jointly make future selectable conditions maintainable, modifiable and reconstructible in ways that depend on more than isolated local action.
+
+Do **not** infer:
 
 ```text
-anticipatory commitment may reorganize present selectability toward a future continuation
-without requiring the final continuation to be exhaustively represented in advance.
+A changes B + B changes A
+=> JFS established.
 ```
 
-AUTHOR STATUS: OPEN.
-
-### C5 — joint order vs collective subject
-
-Keep:
+Distinguish:
 
 ```text
-joint future-selectability / multi-subject order
-!= collective One by default.
+MUTUAL INFLUENCE:
+A and B alter one another's conditions.
+
+MUTUAL ADAPTATION:
+A and B repeatedly adjust to one another.
+
+JOINT RECONSTRUCTION:
+participant contributions make the relation's own future selection conditions maintainable,
+modifiable and re-enterable rather than merely producing reciprocal disturbance.
 ```
 
-## 9. What SRT currently supplies as integration routing
+`joint` does not mean consensus, equality or cooperation by definition. Conflict, inhibition and asymmetry remain admissible; one-sided imposition versus genuinely joint reconstruction is still open.
 
-Candidate routing jobs:
+## 8. Active / passive Selection — preserve author distinction, avoid false binary
+
+Author direction remains:
 
 ```text
-R1 ontological ordering:
-selectable-space constitution before formed-agent choice.
-
-R2 mode distinction:
-survival-facing maintenance vs reconstruction of later selectability.
-
-R3 forward commitment:
-not-yet-actual continuation can reorganize current Selection.
-
-R4 position crossing:
-one position's Selection becomes another position's future selectable condition.
-
-R5 scale composition:
-multi-subject order formation is separate from collective-subject admission.
+passive Selection = survival
+active Selection = creation / reconstruction
 ```
 
-These are candidate SRT integrative contributions, not uniqueness claims.
-
-## 10. Whole > parts — current constructive reading
-
-Object level:
-
-> **A multi-position whole exceeds detached parts when participants can recursively and anticipatorily reconstruct the conditions under which one another — and the whole — will later be able to Select.**
-
-Metatheory level:
-
-> **SRT can exceed a disconnected catalogue of theories if correct interface composition makes cross-level dependencies explainable / modelable / designable that remain disconnected when the theories are used separately.**
-
-The surplus is a **relational / constructive capacity**, not an extra substance and not a novelty slogan.
-
-## 11. Integration success gates
+For machine analysis, do not force implementation cases into mutually exclusive boxes. Track separately:
 
 ```text
-INT-1 preserve source-native roles
-INT-2 no identity-collapse translation
-INT-3 explicit explanatory ordering / presuppositions
-INT-4 check composability across unit / scale / temporality / agency / ontology
-INT-5 preserve passive-vs-active routing
-INT-6 require explanatory / formal / intervention / design surplus beyond juxtaposition
-INT-7 ultimately show how multiple positions jointly alter later selectability
+continuity / survival orientation:
+what One / organization is being kept viable?
+
+reconstruction depth:
+how deeply are the conditions determining later selectability themselves being changed?
 ```
 
-Failure if SRT merely lists theories, renames everything as Selection, hides contradictions, or produces no additional cross-level capability.
+A process can reconstruct deeply in order to survive.
 
-## 12. Current verdict
+## 9. Anticipatory commitment — strong author direction, exact relation still open
+
+Author-selected meaning:
 
 ```text
-prediction = anticipatory commitment / preparation:
-AUTHOR-SELECTED
-
-passive Selection = survival:
-AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
-
-active Selection = creation / reconstruction:
-AUTHOR-SELECTED HIGH-LEVEL DISTINCTION
-
-active Selection minimum transition:
-AUTHOR-ACCEPTED AT HIGH LEVEL
-
-SRT programme orientation:
-AUTHOR-REDIRECTED FROM NOVELTY HUNT TO INTEGRATIVE CONSTRUCTION
-
-SRT as whole > theoretical parts:
-AUTHOR-DIRECTED HIGH-LEVEL ORIENTATION
-
-joint reconstruction of future selectability:
-AUTHOR-NAMED TARGET
-
-JFS stack / routing jobs:
-MACHINE INTEGRATION ARCHITECTURE
-NOT CANONICAL
-
-strongest-neighbor pressure:
-RETAIN AS DIAGNOSTIC / ROUTING DISCIPLINE
-
-integrative explanatory / formal / intervention gain:
-NOT YET EARNED
-
-new Level 1:
-NOT ASSIGNED
-scientific superiority:
-NOT ESTABLISHED
-Level 2:
-HOLD
-HOLD EXIT REVIEW 2:
-NOT TRIGGERED
-canonical edit:
-NO
-new experiment:
-NO
+prediction = stronger anticipatory commitment / preparation
 ```
 
-## 13. Next bounded burden — JFS-CORE
-
-Do not add more theory families first.
-
-Pressure the central bridge:
-
-> **What is the minimum structure by which A's active Selection becomes not merely an external input to B, but part of B's actively reconstructed future selectable space — and vice versa — so that the relation itself acquires a jointly maintainable and reconstructible future?**
-
-This is the bridge from parallel active agents to genuine joint future-selectability.
-
-## 14. Read-forward set
-
-After `AGENTS.md §Session Start`, load:
+Still open:
 
 ```text
-this handoff
-01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md
-Operations/Audits/SRT_INTEGRATIVE_WHOLE_JOINT_FUTURE_SELECTABILITY_PASS23_2026-09-10.md
+whether every active reconstruction requires anticipatory commitment;
+whether anticipation requires internal representation;
+whether direction toward an incompletely prestateable future qualifies;
+how to avoid retrospective teleology.
+```
+
+Do not infer later success as proof that earlier anticipation existed.
+
+## 10. Cross-dimensional selectability — do not scalarize prematurely
+
+Author meaning remains:
+
+```text
+more stable Selection concerns selectability across time / space / position / subject.
+```
+
+Keep machine-side dimensions separately inspectable for now:
+
+```text
+temporal persistence;
+spatial transfer / reach;
+position re-entry;
+cross-subject inheritance / migration;
+reconstructibility under changed conditions;
+handling / suppression of incompatible selections.
+```
+
+No single stability scalar or universal equivalence relation is authorized.
+
+## 11. Current K / A / B / C / D snapshot
+
+### K — retained canonical constraints
+
+```text
+subjectless Selection does not require a pre-existing selector;
+Order is not restored as primitive L0 content;
+determinate world-side manifest actuality remains downstream of Selection under the current L0 owner;
+multi-subject order != collective One automatically;
+T-COLL-1 remains the higher-order collective admission owner;
+canonical owners and historical adverse verdicts remain unchanged.
+```
+
+### A — explicit current author direction
+
+```text
+active selectable-space construction / vertical structure;
+strong anticipatory prediction;
+passive survival vs active creation/reconstruction;
+active threshold at reconstruction of later-selectability organization;
+cross-time / space / position / subject selectability;
+defensive comparison -> constructive integration;
+joint reconstruction of future selectability as target.
+```
+
+### B — inherited resources
+
+```text
+prior Cycle-1/2/3 results and negative experiments;
+future-affordance / future-selectability historical material;
+Adjacent-Theory Interface Index;
+Collective Selection / T-COLL-1;
+paid strongest-neighbor mechanisms and objections.
+```
+
+### C — machine organization
+
+```text
+JFS navigation map;
+routing jobs R1-R5;
+JR examples;
+INT integration gates;
+survival-orientation vs reconstruction-depth analytic separation;
+non-scalar treatment of cross-dimensional stability.
+```
+
+### D — open burdens
+
+```text
+D1 minimum invariant making pre-subject, formed-position and multi-subject uses the same Selection operation;
+D2 Selection-position as a specifically non-flat generative from-where remains under-specified;
+D3 active reconstruction <-> anticipatory commitment necessity / identity relation;
+D4 passive/survival orientation and active/reconstruction depth in mixed cases;
+D5 upgrade from mutual influence / adaptation to genuine joint reconstruction;
+D6 asymmetry / conflict / domination boundary for "joint";
+D7 relation types among JFS nodes;
+D8 dimensions and metrics of cross-dimensional selectability;
+D9 actual integrative explanatory / formal / intervention / design surplus not yet earned.
+```
+
+## 12. Next bounded work — do not widen theory catalogue first
+
+Primary next question — JFS-CORE:
+
+> **What is the minimum structure by which A's active Selection becomes not merely an environmental input to B, but part of B's actively reconstructed future selectable space — and vice versa — so that the relation itself acquires a jointly maintainable and reconstructible future?**
+
+Parallel foundational debt:
+
+> **What minimum relation remains invariant enough across pre-subject Selection, formed-position Selection and multi-subject Selection for all three uses to count as the same ontological operation rather than a family resemblance?**
+
+Also retained, not replaced by JFS-CORE:
+
+```text
+Selection-position non-flat generative from-where:
+STILL UNDER-SPECIFIED / UNPAID SINCE PASS 17.
+```
+
+Do not expand the comparator list or launch a new experiment before one of these bridges is made more precise.
+
+## 13. Merge / next-session guard
+
+#929 may merge once the review-consolidated head passes Governance Preflight and no canonical owner has entered the diff.
+
+After merge, a new theory session should:
+
+```text
+1. follow AGENTS.md §Session Start;
+2. verify current main SHA and that #929 is merged;
+3. load this handoff first for the current workline;
+4. load SRT_PR929_REVIEW_CONSOLIDATION_2026-09-10.md;
+5. load the constructive-integration governance addendum and author source;
+6. load Pass 24 only as a machine integration map, not a ladder;
+7. continue from JFS-CORE or the Selection cross-layer invariant debt;
+8. do not reopen Pass-17 residual hunting;
+9. do not treat author direction as a new canonical definition;
+10. keep Level 2 HOLD and existing HOLD gates unchanged unless separately paid.
+```
+
+## 14. Minimal read-forward set
+
+```text
+Operations/Status_History/SRT_STATUS_2026-09-10_D3_D4_PASS17_MANIFESTATION_NEXT_SESSION_HANDOFF.md
+Operations/Audits/SRT_PR929_REVIEW_CONSOLIDATION_2026-09-10.md
+Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md
+01_Source_Intuition/SRT_AUTHOR_HUMAN_AI_CONSTRUCTIVE_INTEGRATION_CORE_2026-09-10.md
 Operations/Audits/SRT_JOINT_FUTURE_SELECTABILITY_INTEGRATION_DEPENDENCY_PASS24_2026-09-10.md
-Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
+01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md
-Operations/Audits/SRT_ANTICIPATORY_ACTIVE_PASSIVE_SELECTION_PASS21_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
 Bridge/SRT_Adjacent_Theory_Interface_Index.md
-Core/SRT_Core_01_Axioms.md
-Philosophy/SRT_SocTheory_06_L2_Dynamics.md
 Core_Law/SRT_Collective_Selection.md
-Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
-Core_Law/SRT_L0_Metaphysics.md when authority is at issue
+Core_Law/SRT_L0_Metaphysics.md when exact authority is at issue
 ```
