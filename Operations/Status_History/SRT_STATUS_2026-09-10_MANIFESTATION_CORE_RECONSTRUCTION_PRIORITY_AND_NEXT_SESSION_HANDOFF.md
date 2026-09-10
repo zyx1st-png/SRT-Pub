@@ -19,12 +19,15 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
   - Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
   - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
+  - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md
 tags: [CurrentPriority, NextSession, Handoff, Manifestation, PreObjectField, SelectionPosition, MOBJ-A, MOBJ2-B, Reconstruction]
 ---
 
 # Current reconstruction priority / next-session handoff — manifestation before objecthood
 
-> **Controlling runtime role:** this is the compact recovery surface for the current theory-reconstruction priority as of 2026-09-10. It does not replace canonical L0, author-source records, governance, or detailed audits. It tells a fresh session what must be read first and which recent author decisions must not be silently reopened.
+> **Controlling runtime role:** this is the compact conditional recovery surface for the current theory-reconstruction priority as of 2026-09-10. It does not replace canonical L0, author-source records, governance, detailed audits, or `AGENTS.md §Session Start`.
+>
+> **Bootstrap discipline:** `AGENTS.md §Session Start` remains the single authority for fresh-session read order. `STATUS.md §Fast Status` routes theory-advancement sessions here after that bootstrap. This file is therefore a **conditional continuation surface**, not a second bootstrap list.
 >
 > **Primary active workline:** Draft PR #928, branch `theory/cycle2-vg-wta-pressure-pass2-20260909`.
 >
@@ -157,6 +160,8 @@ not the stronger MOBJ-B claim that every determinate feature whatsoever is objec
 Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md`
 
+The adjudicated gate now preserves the full non-selected MOBJ-B/MOBJ-C option texts so the one-letter `A` remains provenance-complete.
+
 ### E. MOBJ2-B is AUTHOR-SELECTED
 
 Author response to the recommended second gate:
@@ -211,8 +216,12 @@ HOLD EXIT REVIEW 1: RETAIN
 
 What is narrowed is only an overreading of those results as if reproducing observable foreground dynamics automatically exhausted the ontology of manifestation's genesis.
 
-Controlling audit:
-`Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md`
+Controlling retrospective surfaces:
+
+- `Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md`
+- `Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md`
+
+The addendum preserves four guards that were compressed from an earlier Pass-12 version: model-complete vs ontologically-complete pre-Selection state, ontological vs empirical proxy admission, the four-way distinctiveness split, and HOLD-EXIT-2 prerequisites.
 
 ## 4. Strongest-neighbor pressure already paid on the new core axis
 
@@ -253,8 +262,12 @@ MOBJ-A = AUTHOR-SELECTED
 MOBJ2-B = AUTHOR-SELECTED
 
 MOBJ2-B scoped Level 1
-= PASS — NARROW / RECOVERED
+= PASS — NARROW / RECOVERED / CLASS-M SCOPED
 scope = models whose primitive interface is already determinate / manifest
+
+critical qualifier:
+Class-M comparison is NON-DISCRIMINATING BY ITSELF among constitutive theories
+that already make manifestation genesis an explanandum.
 
 whole-package global non-substitutability
 = NOT YET ESTABLISHED
@@ -276,6 +289,8 @@ new deep well
 ```
 
 The narrow Level-1 result is a recovered / hardened dependency consequence of current canonical L0 plus an explicit model-interface discriminator. It is not a new independent literature-novel ontology increment.
+
+Most importantly, **it does not distinguish SRT from Barad, Simondon, phenomenology or another constitutive theory merely because those theories also refuse to take manifest-interface genesis as brute**. The next genuine comparative burden is at D3/D4 against the strongest fair constitutive rival.
 
 ## 6. Theory-value positioning that remains part of the priority
 
@@ -344,21 +359,23 @@ local mechanism novelty hunt = not the programme centre
 absolute no-formalization theorem = do not claim
 ```
 
-## 8. Fresh-session read order
+## 8. Conditional continuation set — not a second fresh-session read order
 
-After `AGENTS.md §Session Start`, a new session continuing the current reconstruction should read in this order:
+`AGENTS.md §Session Start` remains the **single** fresh-session ordering authority. After that bootstrap, `STATUS.md §Fast Status` points here when the task is current theory advancement / manifestation / pre-object / Selection-position reconstruction.
+
+For that conditional task only, this handoff routes to the following current controlling set; the list is **not** a replacement bootstrap sequence and no numeric ordering authority is claimed:
 
 ```text
-1. this handoff/status record
-2. current Draft PR #928 metadata + current head
-3. 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
-4. 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
-5. Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
-6. Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
-7. Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
-8. 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
-9. Draft PR #927 only for the controlling consequence/Bearer corrections that are not yet on #928's branch
-10. Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md and canonical Core_Law/SRT_L0_Metaphysics.md whenever authority or promotion is at issue
+current Draft PR #928 metadata + current head
+01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
+01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
+Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
+Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
+Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
+Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md
+01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
+Draft PR #927 only for controlling consequence/Bearer corrections not yet on this branch
+Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md and Core_Law/SRT_L0_Metaphysics.md whenever authority or promotion is at issue
 ```
 
 Do not choose files by date alone; explicit routing and author adjudication control.
@@ -374,11 +391,12 @@ foreground-bounded observability / pre-object priority          YES (#928)
 retrospective D1/D2 vs D3/D4 limitation correction              YES (#928)
 SRT framework-value = cross-domain ontological unification      YES (#928)
 all objects as post-Selection manifestation candidate           YES (#928)
-MOBJ-A first author adjudication                                YES (#928)
+MOBJ-A first author adjudication + full rejected option set     YES (#928)
 fuller Barad/Simondon/phenomenology/predictive-state pressure   YES (#928)
-MOBJ2-B second author adjudication                              YES (#928)
+MOBJ2-B second author adjudication                               YES (#928)
 noncanonical ontology/interface hardening                       YES (#928)
-scoped Level-1 reconsideration                                  YES (#928)
+Class-M-scoped Level-1 reconsideration + non-discriminator guard YES (#928)
+restored retrospective IRR/proxy/distinctiveness/HOLD guards    YES (#928)
 Level-2/HOLD negative guards                                    YES (#928)
 ```
 
@@ -396,4 +414,10 @@ Bearer is downstream / primarily cognitive in the current author routing.
 
 NEXT RESUME QUESTION:
 Can the exact pre-object -> Selection -> foreground/background -> manifest interface -> Selection-position dependency package survive a strongest fair D3/D4 constitutive replacement test strongly enough to generate a disciplined downstream proxy / U4 transfer, without claiming an absolute no-formalization theorem?
+
+LEVEL/HOLD GUARD:
+Class-M scoped Level 1 is a recovered explanatory-order partition only;
+it is non-discriminating among constitutive theories by itself;
+whole-package non-substitutability remains unestablished;
+Level 2 remains HOLD.
 ```
