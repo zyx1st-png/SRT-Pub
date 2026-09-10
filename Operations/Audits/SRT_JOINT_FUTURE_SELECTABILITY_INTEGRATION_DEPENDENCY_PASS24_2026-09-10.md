@@ -2,7 +2,7 @@
 id: SRT-JOINT-FUTURE-SELECTABILITY-INTEGRATION-DEPENDENCY-PASS24-20260910
 type: audit_record
 status: active
-record_stage: integration_dependency_map
+record_stage: integration_dependency_map_review_consolidated
 date: 2026-09-10
 layer: operations
 epistemic_layer: os
@@ -13,15 +13,17 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md
   - Operations/Audits/SRT_INTEGRATIVE_WHOLE_JOINT_FUTURE_SELECTABILITY_PASS23_2026-09-10.md
   - Operations/Audits/SRT_ACTIVE_PASSIVE_SELECTION_TRANSITION_STRONGEST_NEIGHBOR_PASS22_2026-09-10.md
+  - Operations/Audits/SRT_PR929_REVIEW_CONSOLIDATION_2026-09-10.md
+  - Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md
   - Bridge/SRT_Adjacent_Theory_Interface_Index.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [Pass24, IntegrationDependency, JointFutureSelectability, ActiveSelection, PassiveSelection, MultiSubject, Anticipation, Reconstruction]
+tags: [Pass24, IntegrationDependency, JointFutureSelectability, ActiveSelection, PassiveSelection, MultiSubject, Anticipation, Reconstruction, ReviewConsolidation]
 ---
 
 # Pass 24 — integration dependency map for jointly reconstructing future selectability
 
-## 0. Purpose
+## 0. Purpose and runtime mode
 
 Pass 23 changed the programme from a novelty tournament to an integration problem.
 
@@ -30,6 +32,18 @@ Pass 24 asks the constructive question directly:
 > **How can passive survival, active reconstruction, anticipatory commitment, and multi-subject participation be composed so that multiple Selection-positions acquire the capacity to jointly reconstruct future selectability?**
 
 This is a machine integration architecture under the author's direction. It is not canonical theory and does not identify neighboring theories with SRT constructs.
+
+Current runtime mode after the Pass-23 author redirection:
+
+```text
+research_mode = U
+root_question = how Selection-positioned processes can jointly reconstruct future selectability
+comparative_claim = none
+named_comparator = none
+n_mode_triggered = false
+```
+
+Historical note: Passes 18–22 contain genuine residual-hunt drift and incomplete mode bookkeeping. Do not retroactively rewrite those passes as if the current U-mode routing had already been followed perfectly; see `SRT_PR929_REVIEW_CONSOLIDATION_2026-09-10.md`.
 
 ## 1. Target capacity
 
@@ -56,7 +70,27 @@ JFS != mere expansion in number of options
 
 The key is **joint reconstruction of the conditions under which later Selection can occur**.
 
-## 2. Dependency stack
+## 2. Integration nodes, not an ontology ladder
+
+`JFS-0...JFS-8` is a temporary navigation scheme for integration burdens. It is **not** a canonical generation ladder, primitive inventory, exhaustive ontology sequence, or claim that all domains instantiate every node.
+
+The map mixes different edge types that must be distinguished in later work:
+
+```text
+FORMATION / CONSTITUTIVE DEPENDENCY
+one organization is required before another can first appear.
+
+RECURRENT FEEDBACK
+formed processes recursively maintain or reconstruct one another.
+
+ANALYTIC DECOMPOSITION
+burdens are separated for explanation without asserting temporal order.
+
+DOMAIN-CONDITIONAL REALIZATION
+an edge may hold only in a specified biological / cognitive / social / artificial domain.
+```
+
+Do not infer necessity, mutual exclusivity, completeness or universal temporal order from the numbering.
 
 ### JFS-0 — pre-object constitutive differentiation
 
@@ -131,7 +165,7 @@ SRT routing burden:
 PASSIVE Selection = survival-facing maintenance of an achieved selectable organization
 ```
 
-This layer protects `can continue`.
+This node protects `can continue`.
 
 ### JFS-3 — active reconstruction
 
@@ -155,7 +189,9 @@ SRT routing burden:
 ACTIVE Selection = recursive action on the structure determining later selectability
 ```
 
-This layer targets `can become`.
+This node targets `can become`.
+
+Important analytic guard: survival orientation and reconstruction depth are not identical axes. A process may reconstruct deeply **in order to survive**; do not force all cases into mutually exclusive passive/active boxes at the implementation level.
 
 ### JFS-4 — anticipatory commitment
 
@@ -184,7 +220,7 @@ The intended SRT burden is stronger than passive forecast:
 present Selection changes current organization in order to make some not-yet-actual continuation more realizable / supportable.
 ```
 
-Exact ontology remains open.
+Exact ontology remains open. In particular, active reconstruction and anticipatory commitment are related but not yet proven identical or universally necessary for one another.
 
 ### JFS-5 — position-indexed first-person participation
 
@@ -234,10 +270,10 @@ SRT routing burden:
 ```text
 A's active Selection changes B's later selectability;
 B's Selection responds by changing A / C's later selectability;
-relations among positions become themselves selectable / reconstructible.
+relations among positions become candidates for maintenance / reconstruction.
 ```
 
-This is the first layer at which **joint** future reconstruction becomes possible.
+This is the first node at which **joint** future reconstruction becomes possible, but reciprocal condition-change alone does not yet establish joint reconstruction.
 
 ### JFS-7 — multi-subject order
 
@@ -269,6 +305,8 @@ Guard:
 multi-subject order != collective One automatically
 ```
 
+Do not prematurely scalarize the four stability dimensions. Temporal persistence, spatial transfer, position re-entry, cross-subject inheritance and reconstructibility under changed conditions may diverge and should remain separately inspectable.
+
 ### JFS-8 — higher-order collective admission
 
 Question:
@@ -285,45 +323,50 @@ Core_Law/SRT_Collective_Selection.md / T-COLL-1
 
 This is an admission question after order formation, not the primitive explanation of joint future-selectability reconstruction.
 
-## 3. Integration flow
+## 3. Integration flow and typed-edge warning
 
 Current machine integration grammar:
 
 ```text
 JFS-0 constitution
-  ↓
+  -> [formation candidate]
 JFS-1 position formation
-  ↓
+  <-> [recurrent support]
 JFS-2 passive viability
-  ↕
+  <-> [recurrent reconstruction]
 JFS-3 active reconstruction
-  ↔ JFS-4 anticipatory commitment
-  ↓
+  <-> [analytic / possible causal coupling]
+JFS-4 anticipatory commitment
+
+JFS-1 / JFS-3 / JFS-4
+  -> [post-formation participation dependencies, not yet fully typed]
 JFS-5 position-indexed participation
-  ↓
+  -> [candidate reciprocal re-entry]
 JFS-6 reciprocal reconstruction
-  ↓
+  -> [candidate stabilization]
 JFS-7 multi-subject order
-  ↓ optional / gated
+  -> [optional / separately gated admission]
 JFS-8 collective-unit admission
 ```
 
-The important structure is not purely linear.
+This is not a universal temporal sequence.
 
 After JFS-1:
 
 ```text
-PASSIVE preserves a platform for later ACTIVE reconstruction;
-ACTIVE reconstruction creates / alters the platform later PASSIVE processes must preserve.
+PASSIVE can preserve a platform for later ACTIVE reconstruction;
+ACTIVE reconstruction can alter the platform later PASSIVE processes must preserve.
 ```
 
-At JFS-6:
+At JFS-6, current evidence supports only the weaker step:
 
 ```text
-one position's active reconstruction becomes another position's changed selectable condition.
+one position's active reconstruction can become another position's changed selectable condition.
 ```
 
-Therefore a multi-subject whole can recursively reconstruct its own future selectable organization without requiring a mysterious extra substance.
+That is a **necessary precursor**, not yet a sufficient proof, of a jointly reconstructing whole.
+
+A multi-subject whole may count as jointly reconstructing its future selectable organization only if additional JFS-CORE conditions are paid, such as reciprocal re-entry, relation-level maintainability / reconstructibility, genuinely multi-position contribution rather than one-sided imposition, and some form of persistence or recoverability. These are machine probes, not author definitions.
 
 ## 4. Main theory conflicts to preserve, not erase
 
@@ -334,7 +377,7 @@ Active Inference, Skilled Intentionality, niche construction, participatory sens
 usually begin after an agent / organism / sense-maker / ability structure is already available.
 ```
 
-They can strongly populate post-formation layers but cannot be silently projected backward into JFS-0.
+They can strongly populate post-formation nodes but cannot be silently projected backward into JFS-0.
 
 ### Conflict C2 — stable One vs ongoing individuation
 
@@ -350,11 +393,11 @@ Open-ended evolution emphasizes changing possibility spaces.
 Pass 24 uses the author's active/passive distinction to prevent collapse:
 
 ```text
-PASSIVE -> closure / continuation burden
+PASSIVE -> survival / continuation burden
 ACTIVE -> reconstruction / creation burden
 ```
 
-The modes can alternate and recursively support one another.
+The modes can alternate and recursively support one another; implementation cases may mix survival orientation with deep reconstruction.
 
 ### Conflict C4 — model-based anticipation vs unprestatable novelty
 
@@ -409,13 +452,17 @@ vs
 reconstruction of later selectability.
 ```
 
+Do not infer these are mutually exclusive implementation classes.
+
 ### R-3 — forward commitment
 
-Connect active reconstruction to:
+Connect active reconstruction to the open question of how:
 
 ```text
-not-yet-actual continuation influencing present organization.
+not-yet-actual continuation can influence present organization.
 ```
+
+The necessity / identity relation remains open.
 
 ### R-4 — position crossing
 
@@ -424,6 +471,8 @@ Explain how:
 ```text
 one position's Selection changes another position's future selectable conditions.
 ```
+
+Then separately test whether this becomes reciprocal, re-enterable and relation-level reconstructible.
 
 ### R-5 — scale composition
 
@@ -439,24 +488,24 @@ These routing jobs are candidate SRT integrative contributions. They are not uni
 
 ## 6. Joint future-selectability as a whole-level capability
 
-The strongest current integrative statement is:
+Current **conditional candidate**, not an earned conclusion:
 
-> **A multi-position whole gains a distinctive capability when its members can not only preserve a shared order or predict one another, but can recursively and anticipatorily reconstruct the conditions under which each other — and the whole — will later be able to Select.**
+> **A multi-position whole would gain the target JFS capability if its members can not only preserve a shared order or predict one another, but can recursively and anticipatorily reconstruct the conditions under which each other — and the whole — will later be able to Select.**
 
-This gives `whole > parts` a constructive reading:
+This gives `whole > parts` a constructive research target:
 
 ```text
 parts alone:
 local viability + local anticipation + local reconstruction.
 
-integrated whole:
+candidate integrated whole:
 mutual reconstruction of one another's future selectable conditions,
 including future continuations that require coordinated changes across positions.
 ```
 
-The surplus is a **relational capacity**, not an extra substance.
+The proposed surplus is a **relational capacity**, not an extra substance. Whether that capacity has actually been established remains open.
 
-## 7. Three forms of joint reconstruction
+## 7. Three candidate forms of joint reconstruction
 
 Machine decomposition only:
 
@@ -471,17 +520,17 @@ B reciprocally changes conditions for A / C.
 
 ```text
 participants actively suppress or make costly incompatible continuations,
-thereby stabilizing a shared future space.
+thereby potentially stabilizing a shared future space.
 ```
 
 ### JR-3 — role / rule / possibility creation
 
 ```text
 participants jointly create new roles, norms, tools, interfaces, or pathways
-that become future selection conditions for all participants.
+that become future selection conditions for multiple participants.
 ```
 
-These are examples of integration outputs, not a complete ontology.
+These are examples / probes, not a complete ontology and not yet sufficient conditions for JFS.
 
 ## 8. Constructive / design implication
 
@@ -489,7 +538,7 @@ If SRT is to gain more than conceptual breadth, the integration should eventuall
 
 ```text
 maintain viability;
-represent or orient toward future continuations;
+represent or orient toward future continuations where applicable;
 modify their own selectable organization;
 modify one another's selectable conditions;
 create shared constraints and affordances;
@@ -520,7 +569,7 @@ the framework helps construct systems whose members can jointly create future op
 
 Without one of these, the integration remains a literature map rather than a whole greater than its parts.
 
-## 10. Current verdict
+## 10. Current verdict and unpaid burdens
 
 ```text
 active Selection minimum transition:
@@ -531,10 +580,12 @@ AUTHOR-DIRECTED
 
 joint reconstruction of future selectability:
 AUTHOR-NAMED TARGET
+NOT YET ESTABLISHED AS A CAPACITY
 
-Pass-24 JFS stack:
+Pass-24 JFS map:
 MACHINE INTEGRATION ARCHITECTURE
 NOT CANONICAL
+NOT A GENERATION LADDER
 
 neighbor theories:
 TREATED AS STRONG MODULES + CONSTRAINTS, NOT MERELY RIVALS
@@ -542,14 +593,39 @@ TREATED AS STRONG MODULES + CONSTRAINTS, NOT MERELY RIVALS
 concept-level novelty hunt:
 NOT PRIMARY GOAL
 
+constructive-integration governance:
+LANDED
+
 integrative explanatory / formal / intervention gain:
 NOT YET EARNED
+
+Selection-position non-flat generative from-where:
+STILL UNDER-SPECIFIED / UNPAID SINCE PASS 17
+JFS-CORE DOES NOT REPLACE THIS DEBT
+
+Selection cross-layer minimum invariant:
+OPEN
+
+active/passive implementation relation:
+OPEN / NOT FORCED INTO MUTUALLY EXCLUSIVE BINS
+
+anticipatory commitment <-> active reconstruction:
+RELATION OPEN
+
+cross-dimensional stability scalar:
+NOT AUTHORIZED
 
 new Level 1:
 NOT ASSIGNED
 
+scientific superiority:
+NOT ESTABLISHED
+
 Level 2:
 HOLD
+
+HOLD EXIT REVIEW 2:
+NOT TRIGGERED
 
 canonical edit:
 NO
@@ -557,8 +633,30 @@ NO
 
 ## 11. Next bounded burden — JFS-CORE
 
-Before adding more theory families, pressure the centre of the integration:
+Before adding more theory families, pressure the centre of the integration.
+
+First distinguish:
+
+```text
+MUTUAL INFLUENCE:
+A changes B's conditions and B changes A's conditions.
+
+MUTUAL ADAPTATION:
+each repeatedly adjusts to the other.
+
+JOINT RECONSTRUCTION:
+participant contributions make the relation's own future selection conditions maintainable,
+modifiable and re-enterable in a way that is not fully reducible to one-sided imposition.
+```
+
+Then ask:
 
 > **What is the minimum structure by which A's active Selection becomes not merely an environmental input to B, but part of B's actively reconstructed future selectable space — and vice versa — so that the relation itself acquires a jointly maintainable and reconstructible future?**
 
-This is the bridge from parallel active agents to genuine joint future-selectability.
+Do not assume `joint = consensus / equality / cooperation`. Conflict, inhibition and asymmetry remain admissible; the open problem is when asymmetry still belongs to a jointly reconstructed relation versus when one position simply imposes another's future selectable space.
+
+Parallel open burden, not replaced by JFS-CORE:
+
+> **What minimum relation remains invariant enough across pre-subject Selection, formed-position Selection and multi-subject Selection for all three uses to count as the same ontological operation rather than a family resemblance?**
+
+This is the bridge from parallel active agents to genuine joint future-selectability, while keeping the cross-layer meaning of Selection itself under explicit pressure.
