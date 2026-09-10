@@ -19,11 +19,19 @@ tags: [Unification, UMode, U1, CrossDomain, StructuralInvariant, Turing, WTA, Si
 
 # U1 cross-domain structural invariance — Pass 10
 
-> **Runtime mode:** `research_mode = U`.
->
-> **Root question:** can SRT organize recurring Selection / field-reconstitution structures across genuinely different domains into a disciplined ontological unification without first demanding domain-local novelty?
->
 > **Boundary:** this pass tests only `U1 cross-domain structural invariance`. It does not assign Level 1/2, does not claim that Turing / WTA / Simondon are identical to SRT, does not promote a new canonical chain, and does not turn a recurring diagram into evidence by itself.
+
+## Runtime mode lock
+
+```text
+research_mode = U
+root_question = can SRT organize recurring Selection / field-reconstitution structures across genuinely different domains into a disciplined ontological unification without demanding domain-local novelty first?
+comparative_claim = none
+named_comparator = Turing / activator-inhibitor; recurrent WTA; Simondon transduction as source-native mapping cases, not novelty opponents
+n_mode_triggered = false
+```
+
+U-mode is controlling because this pass seeks a source-neutral cross-domain invariant, not an exclusive SRT residual.
 
 ## 0. Why this pass is different from Passes 2–6
 
