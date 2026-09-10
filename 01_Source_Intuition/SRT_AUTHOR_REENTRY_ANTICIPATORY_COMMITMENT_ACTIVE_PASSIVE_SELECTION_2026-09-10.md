@@ -8,7 +8,7 @@ layer: source_intuition
 epistemic_layer: author
 claim_mode: author_source
 canonical: false
-ai_do_not_use_for_definition: false
+ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
