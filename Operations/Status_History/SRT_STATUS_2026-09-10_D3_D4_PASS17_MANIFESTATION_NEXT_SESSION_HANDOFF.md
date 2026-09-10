@@ -16,7 +16,9 @@ dependency:
   - Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_PASS17_AUTHOR_CLARIFICATION_ADDENDUM_2026-09-10.md
   - Operations/Audits/SRT_SELECTION_POSITION_EXISTENCE_MULTI_SUBJECT_ORDER_STRONGEST_NEIGHBOR_PASS18_2026-09-10.md
   - Operations/Audits/SRT_PASS18_COLLECTIVE_OWNER_RECONCILIATION_2026-09-10.md
+  - Operations/Audits/SRT_PASS18_VERTICAL_STRUCTURE_STABILIZED_SELECTION_AUTHOR_ADJUDICATION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_Collective_Tower_Hardening_Notes.md
@@ -25,12 +27,12 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
   - Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [CurrentPriority, NextSession, Handoff, D3, D4, Manifestation, SelectionPosition, Pass17, Pass18, ExistenceFormation, MultiSubjectOrder, CrossScale, CollectiveISP, OwnerReconciliation]
+tags: [CurrentPriority, NextSession, Handoff, D3, D4, Manifestation, SelectionPosition, Pass17, Pass18, VerticalStructure, StabilizedSelection, MultiSubjectOrder, CrossScale, CollectiveISP]
 ---
 
-# D3/D4 manifestation reconstruction — controlling handoff through Pass 18
+# D3/D4 manifestation reconstruction — controlling handoff through Pass 18 author ruling
 
-> **Controlling runtime role:** successor handoff after PR #927 merged. The filename retains its Pass-17 origin for stable STATUS routing, but this content now controls the workline through Pass 18 plus the collective-owner reconciliation. It does not replace `AGENTS.md §Session Start`, canonical owners, author-source records, or earlier historical handoffs.
+> **Controlling runtime role:** successor handoff after PR #927 merged. The filename retains its Pass-17 origin for stable STATUS routing, but this content now controls the workline through Pass 18, collective-owner reconciliation, and the author's vertical-structure / stabilized-selection ruling. It does not replace `AGENTS.md §Session Start`, canonical owners, author-source records, or earlier historical handoffs.
 
 ## 1. Current repository baseline
 
@@ -39,42 +41,43 @@ PR #928: MERGED
 merge commit: e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3
 
 PR #927: MERGED
-merge commit / current main baseline before this workline:
+merge commit / main baseline before this workline:
 45016c447d81203840856a82470cf819e4ff7483
-
-#927 consequence/Bearer closure:
-COMPLETE
 
 PR #929:
 CURRENT DRAFT manifestation / Selection-position workline
 ```
 
-The old handoff wording that described #927 as an open Draft is historical branch-state text and must not be used as current status.
+## 2. Current author-owned theoretical centre
 
-## 2. Current theoretical centre
-
-Core manifestation spine:
+Core manifestation spine remains:
 
 ```text
-L0 / pre-object condition
+L0 / pre-object difference
 -> subjectless Selection
 -> foreground + relative backgrounding
 -> manifest / objectifiable interface
--> Selection-position formation / reconstitution
+-> Selection-position / ontological vertical structure formation
 ```
 
-Latest direct author clarification:
+First author clarification in this workline:
 
 > **「选择位置不光是生成性和自我构建，更多的是存在出现以及多主体秩序的构建。」**
 
-Minimum forward organization:
+Latest controlling author clarification:
+
+> **「L0的差异通过选择获得本体上的垂直结构，这种垂直结构构成了更多差异在更多主体参与下（选择）形成了更稳定的选择从而形成多主体的秩序。」**
+
+Minimum current forward organization:
 
 ```text
-Selection-position
-   -> bears a role in existence / One formation and persistence where applicable
-   -> remains upstream of primarily cognitive Bearer continuity where applicable
-   -> bears a role in relations among multiple positioned subjects / centres
-      -> multi-subject order construction where applicable
+L0 difference / minimum non-neutrality
+-> Selection
+-> ontological vertical structure
+-> that structure becomes part of the conditions for further difference / later Selection
+-> more subjects / selective centres participate through Selection
+-> Selection becomes more relationally stable
+-> multi-subject order forms.
 ```
 
 Current author-controlled boundaries:
@@ -83,18 +86,19 @@ Current author-controlled boundaries:
 MOBJ-A = AUTHOR-SELECTED
 MOBJ2-B = AUTHOR-SELECTED
 consequence = external readout / evidence language, not primitive Selection ontology
-Selection-position = main structural / ontological burden
+Selection-position / vertical structure = structural / ontological burden
 Bearer = primarily downstream cognitive role
-Selection-position existence-formation role = AUTHOR-CONFIRMED AT HIGH LEVEL
-Selection-position multi-subject-order role = AUTHOR-CONFIRMED AT HIGH LEVEL
+existence / One forward role = AUTHOR-CONFIRMED AT HIGH LEVEL
+vertical-structure -> stabilized multi-subject Selection -> order = AUTHOR-CONFIRMED
 exact Bearer <-> Selection-position dependency = OPEN
-exact genetic relation from Selection-position to existing collective-ISP machinery = OPEN
+exact meaning of "more stable Selection" = OPEN
+collective One formation = OPEN / SEPARATE
 ```
 
 Important guard:
 
 ```text
-Selection-position contributes to downstream order construction
+order forms downstream from Selection / vertical structure
 != Order restored as primitive L0 terminal content / drive.
 ```
 
@@ -131,81 +135,46 @@ retained non-manifest potential shaping later formation
 = strongly pressured / likely neighbor-paid in broad form
 ```
 
-The old machine gate `SP-A / SP-B / SP-C` was superseded by the author's broader SP-E / SP-O clarification and must not be asked again.
+The old machine gate `SP-A / SP-B / SP-C` is superseded and must not be asked again.
 
 ## 4. Pass-18 SP-E result — existence formation
 
-Strongest pressure:
+Whitehead + Simondon strongly pay the broad existence burden:
 
 ```text
-Whitehead:
-actual occasion as becoming / concrescence;
-many -> one;
-completed actuality enters later becoming as inherited data.
-
-Simondon:
-individual explained through individuation rather than presupposed;
-individual + milieu co-emerge;
-individuation can remain ongoing;
-achieved structure and retained preindividual reality condition later individuation.
-```
-
-Verdict:
-
-```text
-E1 determinate One / existence as achieved rather than substance:
+E1 determinate One / existence as achieved rather than pregiven substance:
 STRONGLY NEIGHBOR-PAID
 
 E2 persistence / recurrence from achieved organization:
 NEIGHBOR-PAID IN BROAD FORM
 
-E3 achieved structure actively conditioning later becoming:
+E3 achieved structure conditioning later becoming:
 NEIGHBOR-PAID IN BROAD FORM
-
-SP-E high-level author role:
-RETAIN AS SRT ORGANIZATION
-
-SP-E comparative non-substitutability:
-NOT ESTABLISHED
-
-new Level 1 from SP-E:
-NOT ASSIGNED
 ```
 
-Do not use `One is generated`, `existence appears`, `history matters`, or `formation conditions later formation` as sufficient novelty markers.
+Therefore `One is generated`, `existence appears`, `history matters`, and `formation conditions later formation` are not sufficient SRT residuals.
 
 ## 5. Pass-18 SP-O result — multi-subject order
 
 Comparator set:
 
 ```text
-Simondon transindividual / collective individuation:
-collective formation is not adequately a mere aggregation of already-completed isolated subjects.
-
-Luhmann:
-recursive communication / decision operations constitute self-reproducing social systems;
-structures / decision premises condition later operations.
-
-Participatory sense-making:
-autonomous agents can generate interactional organization with relative autonomy;
-interaction reshapes participant-level sense-making.
-
-Adaptive coevolutionary networks:
-state <-> topology coevolution;
-endogenous global organization / role structure;
-global topology conditions later local dynamics.
+Simondon transindividual / collective individuation
++ Luhmann recursive social-system / decision operations
++ participatory sense-making / interactional autonomy
++ adaptive coevolutionary networks
 ```
 
 Verdict:
 
 ```text
-O1 plurality without pre-given finished global order: STRONG PAYMENT
-O2 relations generate / stabilize higher-order organization: STRONG PAYMENT
-O3 higher-order organization changes participant futures: STRONG PAYMENT
-O4 higher-order explanatory autonomy beyond observer summary: STRONG PAYMENT
+plurality without pre-given finished global order: STRONG PAYMENT
+relations generate / stabilize higher-order organization: STRONG PAYMENT
+higher-order organization changes participant futures: STRONG PAYMENT
+higher-order explanatory autonomy beyond observer summary: STRONG PAYMENT
 ```
 
-Therefore these are not sufficient SRT residuals:
+Therefore these are not sufficient SRT residuals by themselves:
 
 ```text
 multi-agent interaction;
@@ -216,9 +185,9 @@ endogenous topology / role structure;
 individual and collective co-development in broad form.
 ```
 
-## 6. Collective-owner reconciliation — crucial correction
+## 6. Collective-owner reconciliation retained
 
-An internal owner check after Pass 18 shows that the apparent `collective One or no collective One?` fork was falsely greenfield.
+Internal owner review recovered an important existing distinction:
 
 `Core_Law/SRT_Collective_Selection.md` already distinguishes:
 
@@ -228,88 +197,96 @@ vs
 conditional higher-order collective ISP.
 ```
 
-`T-COLL-1` already gives downstream standing conditions for when a multi-ISP field counts as a higher-order stable ISP.
+`T-COLL-1` supplies downstream standing conditions for when a multi-ISP organization counts as a higher-order stable ISP.
 
-`Core_Law/SRT_Collective_Tower_Hardening_Notes.md §4.8` already permits a conditional nested tower in which each higher level is made of lower-level collective ISPs satisfying T-COLL-1, with cross-scale coupling.
+`Core_Law/SRT_Collective_Tower_Hardening_Notes.md §4.8` already permits a conditional nested tower with cross-scale coupling.
 
-Therefore both propositions are already represented downstream:
+Therefore:
 
 ```text
-stable multi-subject order can exist without a collective subject;
-under additional conditions a higher-order collective unit can form.
+multi-subject order without collective-subject standing: ALREADY ALLOWED
+conditional higher-order collective unit: ALREADY ALLOWED DOWNSTREAM
 ```
 
-Do NOT ask the author to rediscover that distinction.
-
-At the same time, Phase-6 role audit already classifies collective machinery primarily as a conceptual bridge / collective formal model and warns:
+But Phase-6/Core14 guards remain:
 
 ```text
 cross-scale structural compatibility
-!= demonstrated same mechanism / identity across scales.
+!= demonstrated same mechanism / ontology / identity across scales.
 ```
 
-So the old collective owner does NOT settle the new Selection-position ontology either.
+The old collective machinery is therefore not a genesis definition of the newly clarified Selection-position ontology.
 
-## 7. Current live structural question
+## 7. Author ruling after owner reconciliation
 
-The missing relation is now specifically:
+The previous machine fork `CR-A / CR-B / CR-C` is no longer the current author gate.
+
+The latest author statement fixes a more primitive relation:
 
 ```text
-new Selection-position ontology
--> ?
-existing T-COLL-1 collective-ISP standing / nested-tower machinery
+L0 difference
+-> Selection
+-> ontological verticalization
+-> later selectable difference is structured by prior verticalization
+-> multiple centres participate through Selection
+-> selections become more stable in relation to one another
+-> multi-subject order.
 ```
 
-The substantive question is whether Selection-position supplies a **genesis layer** beneath the existing downstream collective standing model.
-
-Machine-side reconciliation routes:
+Effect on the old CR fork:
 
 ```text
-CR-A GENETIC GROUNDING
-Selection-position ontology supplies the missing genesis account beneath T-COLL-1;
-relations among lower-level positions can constitute a higher-level Selection-position / One,
-and T-COLL-1 becomes a downstream standing / realization criterion.
-
-CR-B SEPARATION
-Selection-position explains local existence formation;
-collective ISP remains a distinct downstream L1/P2 model;
-no recursive Selection-position ontology is asserted.
-
-CR-C CONDITIONAL RECURSION WITH NON-IDENTITY
-most multi-subject order does not become a One;
-under additional constitution conditions some order forms a higher-level Selection-position / One;
-recursive structural analogy is allowed, but same mechanism across scales is not presumed.
+CR-A universal collective-One grounding: NOT AUTHORIZED
+CR-B complete local/collective separation: TOO WEAK
+CR-C conditional collective-One recursion: still compatible as a future possibility,
+but NOT DECIDED by the current ruling.
 ```
 
-Machine consistency assessment:
+Current critical distinction:
 
 ```text
-CR-C = strongest current consistency candidate
-AUTHOR CHOICE = NOT INFERRED
+order formation
+!= collective-ISP admission.
 ```
 
-Why CR-C is the least-disruptive machine fit:
+The author has made **stabilized Selection** the bridge to order, not mandatory collective-subject formation.
 
-1. the collective owner already separates aggregation from collective ISP;
-2. the tower already makes recursion conditional on standing at every level;
-3. Phase-6/Core14 already block automatic cross-scale mechanism identity;
-4. the latest author statement gives Selection-position both existence and multi-subject-order roles but does not say every order is a One or that one unchanged mechanism repeats at every scale.
+## 8. Current live pressure target
 
-## 8. Revised author gate — controlling
+The next comparative target is no longer generic order emergence and no longer `does a collective One form?`.
 
-> **现有 `Collective Selection / T-COLL-1` 已经区分“普通多主体秩序”与“形成高阶 collective ISP”，而 tower 也允许条件性的层层嵌套。现在新的 `Selection-position` 应该怎样与它们衔接：它是否是这些高阶 collective ISP 形成之前更底层的生成基础，即多个位置只有在特定条件下共同形成一个新的高阶 Selection-position / One；还是 collective ISP 只是另一套下游模型，不应把它回溯解释成 Selection-position 的递归生成？**
+The bounded question is:
 
-Do not answer this gate from repository consistency alone.
+> **Can a mature rival reproduce the sequence in which Selection first produces an ontological vertical asymmetry, that asymmetry becomes constitutive of later selectable differences, and participation by multiple selective centres stabilizes Selection itself into multi-subject order — without presupposing either a finished global order or a collective subject?**
 
-If the author chooses a conditional genetic-grounding reading, the next theory task is not another broad neighbor search. It is to specify the **minimum additional constitution condition** separating:
+The phrase needing the next pressure pass is:
 
 ```text
-multi-subject relational order
-from
-collective Selection-position / One formation.
+"more stable Selection"
 ```
 
-Do not circularly reuse current T-COLL-1 standing conditions as the genesis definition without an explicit owner audit.
+Machine-side probes only:
+
+```text
+S-STAB-1 temporal persistence / recurrence
+S-STAB-2 mutual compatibility among selections
+S-STAB-3 reciprocal support + relative inhibition of incompatible continuations
+S-STAB-4 reduced dependence on external coordination / observer-supplied order
+S-STAB-5 shared constraint structure that changes later selectability
+```
+
+These are NOT author-owned definitions and must not be silently selected.
+
+Fair strongest-neighbor resources should be allowed their strongest native versions of:
+
+```text
+Simondon transduction / transindividual individuation;
+Barad reiterative constitution;
+Luhmann recursive operation / system-environment differentiation;
+participatory sense-making / interactional autonomy;
+adaptive coevolutionary network stabilization;
+coordination / convention dynamics with endogenous order.
+```
 
 ## 9. Current verdicts
 
@@ -326,16 +303,19 @@ NOT ESTABLISHED
 SP-O broad comparative distinctiveness:
 NOT ESTABLISHED
 
-conditional higher-order collective unit:
-ALREADY PRESENT IN DOWNSTREAM SRT OWNER
+verticalization -> stabilized multi-subject Selection -> order:
+AUTHOR-CONFIRMED
 
-nested recursive collective tower:
-ALREADY PRESENT AS HARDENING / BRIDGE STRUCTURE
+exact stabilization dependency:
+NOT YET STRONGEST-NEIGHBOR AUDITED AT CURRENT FORMULATION
 
-Selection-position -> collective-ISP genetic relation:
-OPEN / AUTHOR GATE
+multi-subject order = collective One:
+NOT ESTABLISHED
 
-cross-scale mechanism identity:
+collective-One formation:
+OPEN / SEPARATE
+
+new Selection-position -> T-COLL-1 identity:
 NOT ESTABLISHED
 
 new Level 1 against constitutive / collective composite:
@@ -360,9 +340,11 @@ All historical D1/D2 negatives and prior HOLD/blocker records remain valid in th
 
 ## 10. Next valid move
 
-Do not continue automatic residual hunting and do not build a model to rescue SP-E/SP-O.
+Do not ask the old SP-A/B/C or CR-A/B/C forks again.
 
-The next valid move is author adjudication / reframing of §8. After an author-owned genetic relation is fixed, run a bounded owner/substitution pass on that relation only.
+The next valid move is a bounded source-native strongest-neighbor pressure pass on the **stabilization dependency** in §8. It should first determine how much of S-STAB-1...5 mature neighbors already pay, then return only the genuinely unresolved meaning burden to the author.
+
+Do not modify collective canonical owners, open a new deep well, or run HOLD EXIT REVIEW 2 before that pressure is paid.
 
 ## 11. Read-forward set
 
@@ -370,6 +352,8 @@ After `AGENTS.md §Session Start`, load:
 
 ```text
 this handoff
+01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
+Operations/Audits/SRT_PASS18_VERTICAL_STRUCTURE_STABILIZED_SELECTION_AUTHOR_ADJUDICATION_2026-09-10.md
 Operations/Audits/SRT_PASS18_COLLECTIVE_OWNER_RECONCILIATION_2026-09-10.md
 Operations/Audits/SRT_SELECTION_POSITION_EXISTENCE_MULTI_SUBJECT_ORDER_STRONGEST_NEIGHBOR_PASS18_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
@@ -378,10 +362,9 @@ Core_Law/SRT_Collective_Tower_Hardening_Notes.md
 Operations/Audits/SRT_CONSTITUTION_PHASE6_IND_COLLECTIVE_CROSSSCALE_ROLE_MAP_2026-09-02.md
 Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_PASS17_AUTHOR_CLARIFICATION_ADDENDUM_2026-09-10.md
 Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_STRONGEST_NEIGHBOR_PASS17_2026-09-10.md
-Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_INTERNAL_RED_TEAM_PASS1_2026-09-05.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
 Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
 Core_Law/SRT_L0_Metaphysics.md when authority is at issue
 ```
 
-The path name retains `PASS17` for stable routing from `STATUS.md`; the content of this file is the current controlling handoff through Pass 18 and owner reconciliation.
+The path name retains `PASS17` for stable routing from `STATUS.md`; the content is the current controlling handoff through Pass 18 and the latest author ruling.
