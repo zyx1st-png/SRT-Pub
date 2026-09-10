@@ -2,7 +2,7 @@
 id: SRT-STATUS-20260911-SELECTION-VERTICAL-ONE-LINEAGE-HANDOFF
 type: status_record
 status: active
-record_stage: draft_pr_931_current_handoff
+record_stage: draft_pr_931_post_constructive_integration_handoff
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -14,6 +14,7 @@ dependency:
   - Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md
   - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_LINEAGE_INTERNAL_REDTEAM_2026-09-11.md
   - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_OWNER_RECONCILIATION_2026-09-11.md
+  - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_CONSTRUCTIVE_INTEGRATION_PASS1_2026-09-11.md
   - Operations/Status_History/SRT_STATUS_2026-09-10_D3_D4_PASS17_MANIFESTATION_NEXT_SESSION_HANDOFF.md
   - Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
@@ -21,7 +22,7 @@ dependency:
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core_Law/SRT_Individuation.md
   - Core_Law/SRT_Collective_Selection.md
-tags: [CurrentHandoff, PR931, Selection, VerticalStructure, OneFormation, SelectionPosition, Lineage, Reconstitution]
+tags: [CurrentHandoff, PR931, Selection, VerticalStructure, OneFormation, SelectionPosition, Lineage, Reconstitution, ConstructiveIntegration]
 ---
 
 # PR #931 handoff — Selection / vertical structure / One lineage reconstruction
@@ -298,7 +299,132 @@ relation-level vertical organization.
 
 This supports operation-level relational invariance without claiming same mechanism across scales.
 
-## 12. Current full compact map
+## 12. Constructive-integration Pass 1 result
+
+The mature-neighbor pass changes the interpretation of the lineage proposal in an important way.
+
+### Simondon
+
+Strongly pays:
+
+```text
+individual-through-individuation rather than substance-first;
+ongoing / repeated individuation;
+preindividual / metastable openness;
+structure-operation transduction;
+achieved structure participating in later formation;
+psychic / collective individuation beyond isolated finished individuals.
+```
+
+Therefore:
+
+```text
+lineage / re-individuation by itself
+!= SRT local novelty.
+```
+
+### Whitehead
+
+Strongly pays broad forms of:
+
+```text
+actuality as becoming;
+achieved unity rather than enduring substance primitive;
+past completed actuality entering later becoming;
+process / society routes to persistence.
+```
+
+SRT can inherit process pressure but does not inherit panexperiential / universal subject-like occasion commitments.
+
+### Autopoiesis / autonomy
+
+Strongly pays domain-specific forms of:
+
+```text
+organizational self-production;
+operational closure;
+identity through organization despite component turnover;
+boundary / unity maintenance.
+```
+
+This is a strong possible realization of One-like continuation, but current SRT does not make self-maintenance or purely internal causation the universal One definition.
+
+### Luhmann
+
+Strongly pays social / institutional forms of:
+
+```text
+decisions / communications recursively generating further operations;
+decision premises constraining later decisions;
+organizational continuation despite member turnover;
+higher-order social organization without requiring a person-like collective actor.
+```
+
+Therefore relation-level recursive continuation is not reserved to SRT.
+
+### Participatory / interactional theories
+
+Strongly pay broad forms of:
+
+```text
+interaction-level organization;
+participant transformation;
+relative interactional autonomy.
+```
+
+Therefore JFS remains stronger than mere reciprocal influence or interactional organization, but no novelty claim is assigned.
+
+## 13. Resulting constructive division of labor
+
+Do not ask mature theories to disappear before SRT can stand.
+
+Current integration:
+
+```text
+Simondon
+-> formation / ongoing individuation / transduction
+
+Whitehead
+-> process actuality / achieved unity / past-to-later becoming
+
+autopoiesis / autonomy
+-> strong biological / autonomous unity-maintenance realizations
+
+Luhmann
+-> organizational / social recursive continuation and decision-premise writeback
+
+participatory sense-making
+-> interaction-level organization and participant transformation
+```
+
+SRT's current integrative role is the proposed repartition:
+
+```text
+Selection
+= cross-layer operation candidate
+
+vertical structure
+= non-flat selectable organization produced / reconstructed through Selection
+
+One
+= continuation-side reading once that organization gains lineage-indexed reconstitution
+
+ontological Selection-position candidate
+= from-where side of that formation-layer organization
+
+Bearer
+= stronger consequence-return / position-reconstitution closure
+
+JFS
+= joint reconstruction of relation-level future selectability
+
+collective ISP
+= separately gated higher-order perspective-bearing standing.
+```
+
+This is an architectural synthesis, not an empirical or novelty verdict.
+
+## 14. Current full compact map
 
 ```text
 minimum non-neutrality
@@ -339,7 +465,7 @@ collective ISP.
 
 This is a dependency / feedback map, not a universal temporal ladder.
 
-## 13. Current open burdens
+## 15. Current open burdens after constructive integration
 
 Do not silently close:
 
@@ -348,37 +474,48 @@ exact necessary/sufficient One gate;
 strict numerical identity;
 branching identity metaphysics;
 exact terminology relation between ontological Selection-position and subject-position;
-whether lineage-indexed reconstitution is best final wording;
-relation of this proposal to mature process-identity / individuation / autonomy theories;
 formal or empirical realization criteria;
 scientific distinctiveness.
 ```
 
-## 14. Next valid move
-
-Next substantive work should remain U-mode constructive integration:
+A new author-facing issue now replaces the generic mature-neighbor TODO:
 
 ```text
-process identity / persistence theories;
-Simondon-style individuation / transduction;
-autopoiesis / autonomy / organizational closure;
-Whitehead / process continuation where source-use is justified;
-institutional / social reproduction and recognition;
-participatory / relational accounts of jointly maintained order.
+Does One name the continuing vertical organization itself,
+or is One more precisely the continuation-side reading / projection
+of an ongoing Selection-driven individuation process?
 ```
 
-Purpose:
+The current machine preference is the second, because it avoids substance-like reification and integrates Simondon's ongoing individuation pressure more cleanly while preserving the author's One–vertical-structure correspondence.
+
+This preference is C-layer and not author-owned until adjudicated.
+
+## 16. Next valid move
+
+The workline has now reached the **second author adjudication** point required by the ontology workflow.
+
+No further strengthening of the One / vertical-structure identity should be written as author meaning until that adjudication occurs.
+
+Mechanical work may continue:
 
 ```text
-inherit mature mechanisms where useful;
-pressure the lineage relation;
-identify incompatibilities honestly;
-see whether SRT's Selection / verticality / One repartition becomes clearer or must be revised.
+CI / frontmatter / dependency checks;
+STATUS.md current-workline repair;
+PR wording cleanup;
+canonical-diff verification.
 ```
 
-Do not turn this automatically into a residual-novelty hunt. If constructive integration changes the proposed One relation or the scope of `Selection-position`, return that substantive change to the author before harder writeback.
+After author adjudication, valid next work is:
 
-## 15. Merge guard
+```text
+update the C-layer architecture to match the ruling;
+run reciprocal source / inference / counterexample checks;
+then decide whether any ontology/interface hardening is justified.
+```
+
+Do not trigger a new deep well, Level promotion, or HOLD exit from this checkpoint.
+
+## 17. Merge guard
 
 Before merge:
 
@@ -388,5 +525,6 @@ CI green;
 STATUS.md current-workline repair;
 no canonical diff;
 no hidden Level or HOLD change;
-review any terminology that could make One = subject-position by accident.
+review any terminology that could make One = subject-position by accident;
+record the author's second adjudication if substantive One wording changes.
 ```
