@@ -22,6 +22,7 @@ dependency:
   - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
   - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md
   - Operations/Audits/SRT_BEARER_CONSEQUENCE_SUPPORTING_LINE_CLOSURE_2026-09-10.md
+  - Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_CONSTITUTIVE_REPLACEMENT_PASS17_2026-09-10.md
 tags: [CurrentPriority, NextSession, Handoff, Manifestation, PreObjectField, SelectionPosition, MOBJ-A, MOBJ2-B, Reconstruction]
 ---
 
@@ -31,9 +32,9 @@ tags: [CurrentPriority, NextSession, Handoff, Manifestation, PreObjectField, Sel
 >
 > **Bootstrap discipline:** `AGENTS.md §Session Start` remains the single authority for fresh-session read order. `STATUS.md §Fast Status` routes theory-advancement sessions here after that bootstrap. This file is therefore a **conditional continuation surface**, not a second bootstrap list.
 >
-> **Merged primary baseline:** PR #928 `Re-audit SRT core around post-Selection manifestation and manifest-interface insufficiency` was merged on 2026-09-10; merge commit / current baseline at this handoff update is `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`.
+> **Merged baseline:** PR #928 landed the manifestation-core re-audit at `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`; PR #927 then closed the superseded Bearer/consequence supporting line and moved `main` to `45016c447d81203840856a82470cf819e4ff7483`.
 >
-> **Current supporting closure:** Draft PR #927, branch `theory/bearer-rb-pass2-20260908`, is being reduced to the consequence external-readout correction plus a compact Bearer/consequence closure. It is not a competing primary theory workline.
+> **Current primary Draft workline:** PR #930 `Pressure manifestation and Selection-position at D3/D4 against constitutive rivals`, branch `theory/manifestation-selection-position-d3-d4-pass17-20260910`. Pass 17 has reached an explicit **UNANSWERED AUTHOR GATE**; do not silently choose or strengthen beyond it.
 
 ## 1. Current top priority
 
@@ -72,7 +73,7 @@ This chain is a current noncanonical reconstruction organization. Only the named
 
 ### A. Consequence is external readout, not primitive Selection ontology
 
-Author statement from the supporting #927 line:
+Author statement retained through merged PR #927:
 
 > **「后果只是外部观察结果不是本体意义的 selection 核心内容」**
 
@@ -109,7 +110,7 @@ exact Bearer <-> Position stabilization dependency
 
 The crude empirical claim that every ordinary feedback system is fully observable is not retained as a theorem. The deeper issue has been reframed around third-person dynamical closure versus constitutive explanation of the manifest interface.
 
-Controlling main source:
+Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md`
 
 ### C. Pre-object / foreground-bounded observability is a current core-difference priority
@@ -165,8 +166,6 @@ not the stronger MOBJ-B claim that every determinate feature whatsoever is objec
 Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md`
 
-The adjudicated gate preserves the full non-selected MOBJ-B/MOBJ-C option texts so the one-letter `A` remains provenance-complete.
-
 ### E. MOBJ2-B is AUTHOR-SELECTED
 
 Author response to the recommended second gate:
@@ -189,7 +188,7 @@ This is explicitly **not** an absolute impossibility theorem about all third-per
 Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md`
 
-## 3. Retrospective correction that now controls interpretation of earlier limitations
+## 3. Retrospective correction that controls interpretation of earlier limitations
 
 Use four comparison targets and never collapse them:
 
@@ -228,11 +227,11 @@ Controlling retrospective surfaces:
 
 The addendum preserves four guards that were compressed from an earlier Pass-12 version: model-complete vs ontologically-complete pre-Selection state, ontological vs empirical proxy admission, the four-way distinctiveness split, and HOLD-EXIT-2 prerequisites.
 
-## 4. Strongest-neighbor pressure already paid on the new core axis
+## 4. D3/D4 strongest-neighbor pressure now paid through Pass 17
 
-A fresh session must not restart with weak comparisons such as only RL, ordinary feedback, WTA or hidden-state models.
+Weak comparisons such as RL, ordinary feedback, WTA or a hidden-object state-space are no longer adequate.
 
-The stronger comparator set already includes:
+Passes 13–16 established the correct stronger neighborhood:
 
 ```text
 Barad
@@ -249,16 +248,50 @@ predictive-state / computational-mechanics approaches
    not only posited as hidden physical objects
 ```
 
-These comparisons block weak novelty claims such as:
+Pass 17 strengthened the comparison specifically around **Selection-position / recursive from-where formation**. The adversarial composite was allowed to use:
 
 ```text
-SRT alone says objects are not pregiven;
-SRT alone has a preindividual field;
-SRT alone has foreground/background;
-all state-space models presuppose hidden objects.
+Barad
+-> apparatus as constitutive condition + ongoing reconfiguration
+
+Simondon
+-> retained preindividual potential + operation -> structure -> later operation
+
+Husserl / Merleau-Ponty
+-> situated manifestation + horizon + sedimented history / habit
+
+predictive-state / computational mechanics
+-> history-defined, relational, recursively updated operative state
 ```
 
-The live SRT burden is the exact dependency organization, not ownership of those isolated ideas.
+Pass-17 result:
+
+```text
+whole-package D3/D4 non-substitutability:
+NOT ESTABLISHED
+
+strongest adversarial composite substitution:
+PLAUSIBLE ACROSS ALL CURRENTLY EXPLICIT NODES
+
+Selection-position-specific new Level 1:
+NO PASS / UNASSIGNED
+```
+
+Accordingly, the following characterizations are no longer safe as standalone distinctiveness claims:
+
+```text
+Position is history-shaped;
+Position is relational rather than a thing;
+Position conditions what can happen next;
+Position is recursively updated;
+Position does not require a prior human subject;
+Position is associated with foreground/background.
+```
+
+The live burden has moved from isolated node ownership to whether SRT supplies a single constraint-generating dependency / framework compression that cannot be replaced without loss.
+
+Controlling new audit:
+`Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_CONSTITUTIVE_REPLACEMENT_PASS17_2026-09-10.md`
 
 ## 5. Current positive and negative verdicts
 
@@ -274,8 +307,11 @@ critical qualifier:
 Class-M comparison is NON-DISCRIMINATING BY ITSELF among constitutive theories
 that already make manifestation genesis an explanandum.
 
-whole-package global non-substitutability
-= NOT YET ESTABLISHED
+whole-package global / D3-D4 non-substitutability
+= NOT ESTABLISHED
+
+Selection-position-specific new Level 1 after Pass 17
+= NO PASS / UNASSIGNED
 
 absolute PO-3 no-equivalent-third-person-formalism theorem
 = NOT ESTABLISHED
@@ -293,9 +329,9 @@ new deep well
 = NO
 ```
 
-The narrow Level-1 result is a recovered / hardened dependency consequence of current canonical L0 plus an explicit model-interface discriminator. It is not a new independent literature-novel ontology increment.
+The narrow MOBJ2-B Level-1 result remains a recovered / hardened dependency consequence of current canonical L0 plus an explicit model-interface discriminator. It is not a new independent literature-novel ontology increment.
 
-Most importantly, **it does not distinguish SRT from Barad, Simondon, phenomenology or another constitutive theory merely because those theories also refuse to take manifest-interface genesis as brute**. The next genuine comparative burden is at D3/D4 against the strongest fair constitutive rival.
+Most importantly, neither Class-M failure nor the fact that several different traditions are required to assemble the strongest adversarial composite proves SRT whole-package non-substitutability.
 
 ## 6. Theory-value positioning that remains part of the priority
 
@@ -326,62 +362,58 @@ U4 cross-domain transfer = NOT YET PAID
 U5 anti-redundancy / removal = OPEN
 ```
 
-The manifestation / pre-object priority should now organize later U2/U4/U5 work rather than being subordinated to a search for an exclusive local mechanism.
+Pass 17 makes this framework-value route more important, but does not itself pay U2/U4/U5. `Need several neighbors to assemble a replacement` is not by itself proof of SRT compression or indispensability.
 
-## 7. What the next session must treat as the primary work programme
+## 7. Current author boundary — next action must not be AI-selected
 
-Fresh-session continuation should proceed from this priority, not reopen old Bearer/consequence forks.
+Draft PR #930 has reached an unanswered author gate. Do **not** automatically run another narrower residual pass.
 
-Immediate housekeeping before the next theory pass:
+The author must decide which current reading of Selection-position is intended after the strengthened subtraction:
 
 ```text
-close #927 around consequence=external readout
-+
-preserve Bearer cognitive / Selection-position ontological split already on main
-+
-retire superseded branch-stage consequence-bearing / independent-Bearer gates.
+A — STRONGER ONTOLOGICAL NECESSITY
+Every later Selection necessarily proceeds from a Position generated by prior
+constitutive differentiations, and this Position is internally part of the same
+Selection-first dependency rather than an externally supplied context/apparatus/state.
+
+B — FRAMEWORK-UNIFICATION READING
+Selection-position is SRT's unified architecture for a real family of historically
+generated conditioning structures that mature theories partly pay in different
+vocabularies; the main SRT gain is compression / transfer rather than local ontology exclusivity.
+
+C — NARROWER OPEN READING
+Retain Selection-position as an internal candidate but do not yet claim either
+stronger necessity or comparative unification gain; move first to a downstream proxy / U4 transfer question.
 ```
 
-Then primary work:
+These are gate options only. **No option has been selected.**
+
+Route after author answer:
 
 ```text
-P1 harden the exact SRT dependency package:
-L0 / pre-object condition
--> subjectless Selection
--> foreground / relative-background co-differentiation
--> objectifiability / manifest interface
--> Selection-position reconstitution
--> downstream One / Bearer / cognition
+if A:
+pressure necessity / internal-lineage specifically against Barad + Simondon in source-native terms;
 
-P2 pressure the package at the correct D3/D4 level against the strongest fair constitutive rival,
-including a rival formalism that does not simply assume a hidden-object state inventory.
+if B:
+route to U2/U4/U5 framework compression / transfer rather than ontology novelty;
 
-P3 continue the retrospective limitation review only by scope:
-preserve D1/D2 negatives; revise only theory-wide overreadings that exceeded what those tests paid.
+if C:
+keep Selection-position open and formulate a bounded downstream proxy / U4 question;
 
-P4 develop, without forcing a premature experiment, an observable-proxy question for Level 2:
-what downstream pattern / intervention consequence would differ if manifestation is an achieved interface rather than a primitive interface?
-
-P5 continue framework-level U4/U5 work only where it connects directly to the above core question.
-```
-
-Secondary / subordinate work:
-
-```text
-Bearer exact stabilization relation around Selection-position = OPEN
-old consequence-bearing route = DEPRIORITIZED / corrected
-local mechanism novelty hunt = not the programme centre
-absolute no-formalization theorem = do not claim
+in all cases:
+no canonical edit, no HOLD review, no Level-2 promotion without separately paying those burdens.
 ```
 
 ## 8. Conditional continuation set — not a second fresh-session read order
 
 `AGENTS.md §Session Start` remains the **single** fresh-session ordering authority. After that bootstrap, `STATUS.md §Fast Status` points here when the task is current theory advancement / manifestation / pre-object / Selection-position reconstruction.
 
-For that conditional task only, this handoff routes to the following current controlling set; the list is **not** a replacement bootstrap sequence and no numeric ordering authority is claimed:
+For that conditional task only, current continuation should retrieve:
 
 ```text
-merged PR #928 / main baseline e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3
+main baseline after merged #927 = 45016c447d81203840856a82470cf819e4ff7483
+Draft PR #930 / branch theory/manifestation-selection-position-d3-d4-pass17-20260910
+Operations/Audits/SRT_MANIFESTATION_SELECTION_POSITION_D3_D4_CONSTITUTIVE_REPLACEMENT_PASS17_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
 Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
@@ -394,30 +426,31 @@ Operations/Audits/SRT_BEARER_CONSEQUENCE_SUPPORTING_LINE_CLOSURE_2026-09-10.md
 Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md and Core_Law/SRT_L0_Metaphysics.md whenever authority or promotion is at issue
 ```
 
-While Draft PR #927 remains open, the last two #927 files are read from that branch; after merge they become ordinary main supporting records. Do not choose files by date alone; explicit routing and author adjudication control.
+Do not choose files by date alone; explicit routing and author adjudication control.
 
 ## 9. Session-completeness audit
 
-For the **core theoretical content of the present conversation**, the repository / active closure branch now contains explicit records for:
+Current repository / active Draft workline now contains explicit records for:
 
 ```text
-consequence external-readout correction                         YES (#927 closure source)
-Bearer cognitive vs Selection-position ontological split       YES (#928 / main)
-foreground-bounded observability / pre-object priority          YES (#928 / main)
-retrospective D1/D2 vs D3/D4 limitation correction              YES (#928 / main)
-SRT framework-value = cross-domain ontological unification      YES (#928 / main)
-all objects as post-Selection manifestation candidate           YES (#928 / main)
-MOBJ-A first author adjudication + full rejected option set     YES (#928 / main)
-fuller Barad/Simondon/phenomenology/predictive-state pressure   YES (#928 / main)
-MOBJ2-B second author adjudication                               YES (#928 / main)
-noncanonical ontology/interface hardening                       YES (#928 / main)
-Class-M-scoped Level-1 reconsideration + non-discriminator guard YES (#928 / main)
-restored retrospective IRR/proxy/distinctiveness/HOLD guards    YES (#928 / main)
-old Bearer/consequence branch-stage routes closed without re-opening gates YES (#927 closure audit)
-Level-2/HOLD negative guards                                    YES
+consequence external-readout correction                          YES (#927 / main)
+Bearer cognitive vs Selection-position ontological split        YES (#928 / main)
+foreground-bounded observability / pre-object priority           YES (#928 / main)
+retrospective D1/D2 vs D3/D4 limitation correction               YES (#928 / main)
+SRT framework-value = cross-domain ontological unification       YES (#928 / main)
+MOBJ-A first author adjudication                                  YES (#928 / main)
+fuller Barad/Simondon/phenomenology/predictive-state pressure    YES (#928 / main)
+MOBJ2-B second author adjudication                                YES (#928 / main)
+Class-M-scoped Level-1 + non-discriminator guard                 YES (#928 / main)
+restored IRR/proxy/distinctiveness/HOLD guards                   YES (#928 / main)
+old Bearer/consequence branch-stage routes closed                YES (#927 / main)
+strengthened D3/D4 recursive Selection-position replacement      YES (#930 / Pass 17)
+new Selection-position author A/B/C gate prepared                YES (#930 / Pass 17)
+author answer to that gate                                       NO
+Level-2/HOLD negative guards                                     YES
 ```
 
-This audit means the load-bearing recent propositions, corrections, adjudications, pressure results and open guards are recoverable. It does **not** mean every explanatory paraphrase from chat has been copied verbatim, nor does it convert noncanonical material into canonical theory.
+This audit means the load-bearing recent propositions, corrections, adjudications, pressure results and open guards are recoverable. It does **not** convert noncanonical material into canonical theory.
 
 ## 10. Current stop / resume state
 
@@ -426,20 +459,28 @@ CURRENT RECONSTRUCTION PRIORITY:
 manifestation is not the default floor;
 objecthood is a post-Selection achievement at its declared level;
 manifest-interface models are downstream of that constitutive question;
-Selection-position carries the main structural / ontological from-where burden;
-Bearer is downstream / primarily cognitive in the current author routing.
+Selection-position remains the main intended structural / ontological from-where burden;
+Bearer is downstream / primarily cognitive in current author routing.
 
-SUPPORTING CLOSURE:
+PAID SUPPORTING CLOSURE:
 consequence is external readout, not primitive Selection ontology;
-old consequence-bearing / independent-Bearer route is being closed in #927;
+old consequence-bearing / independent-Bearer route is CLOSED through merged #927;
 exact Bearer <-> Selection-position stabilization dependency remains OPEN.
 
+PASS-17 PRESSURE RESULT:
+current explicit Selection-position characterizations do not establish external distinctiveness;
+strongest adversarial composite substitution is plausible across all currently explicit nodes;
+whole-package D3/D4 non-substitutability remains NOT ESTABLISHED;
+possible SRT gain has shifted toward a stronger necessity claim or framework compression/transfer,
+but neither has been author-selected or paid.
+
 NEXT RESUME QUESTION:
-Can the exact pre-object -> Selection -> foreground/background -> manifest interface -> Selection-position dependency package survive a strongest fair D3/D4 constitutive replacement test strongly enough to generate a disciplined downstream proxy / U4 transfer, without claiming an absolute no-formalization theorem?
+author must answer Pass 17 §12 gate — A, B or C — before the workline silently strengthens Selection-position.
 
 LEVEL/HOLD GUARD:
-Class-M scoped Level 1 is a recovered explanatory-order partition only;
-it is non-discriminating among constitutive theories by itself;
+MOBJ2-B Class-M scoped Level 1 remains unchanged;
+no new Selection-position Level 1 is assigned;
 whole-package non-substitutability remains unestablished;
-Level 2 remains HOLD.
+Level 2 remains HOLD;
+HOLD EXIT REVIEW 2 remains NOT TRIGGERED.
 ```
