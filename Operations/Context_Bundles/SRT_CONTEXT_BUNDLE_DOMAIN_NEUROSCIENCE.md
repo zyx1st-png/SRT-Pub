@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-10
-source_commit: 4fa5e294
-source_branch: theory/bearer-rb-pass2-20260908
+source_commit: 56c7b205
+source_branch: theory/d3d4-manifestation-strongest-neighbor-20260910
 source_dirty: false
-inputs_digest: 4885797e898f2cdd
+inputs_digest: 9c884320b97600fc
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 4885797e898f2cdd
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-10 |
-| 来源 commit | `4fa5e294` |
-| 来源分支 | `theory/bearer-rb-pass2-20260908` |
+| 来源 commit | `56c7b205` |
+| 来源分支 | `theory/d3d4-manifestation-strongest-neighbor-20260910` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
