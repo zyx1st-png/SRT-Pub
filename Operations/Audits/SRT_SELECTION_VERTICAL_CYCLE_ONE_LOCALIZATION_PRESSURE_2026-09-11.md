@@ -2,7 +2,7 @@
 id: SRT-AUDIT-SELECTION-VERTICAL-CYCLE-ONE-LOCALIZATION-20260911
 type: audit
 status: active
-record_stage: recursive_architecture_pressure
+record_stage: recursive_architecture_pressure_refined
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -322,39 +322,125 @@ CONTINUATION-UNITY      OPERATIVE LOCUS
 
 This is preferred over the older purely linear diagram.
 
-## 13. Remaining author gate
+## 13. The structure/process fork is itself too coarse
 
-The next substantive author adjudication should not be framed as:
-
-```text
-Is One a structure or a process?
-```
-
-That binary is too coarse.
-
-The sharper fork is:
+An intermediate machine fork asked whether:
 
 ```text
-A — One primarily names the localized continuing vertical organization itself.
+A — One primarily names the localized continuing vertical organization itself;
 
-B — One primarily names the continuation-unity constituted by the recurring
-    Selection-mediated reconstitution of that localized vertical organization.
+B — One primarily names the continuation-unity constituted by recurring
+    Selection-mediated reconstitution of that organization.
 ```
 
-Both preserve the author's One–vertical correspondence. B remains the current machine preference because it avoids snapshot/substance reification while preserving ontological reality.
+Further pressure shows that A and B are not clean alternatives.
 
-This file does not treat continued `继续` instructions as an explicit author selection of A or B.
+If A means a time-slice / snapshot organization, it reifies One too strongly.
+If B means an abstract unity detached from the organization that is continuing, it makes One too relation-thin and risks a new hidden dualism.
 
-## 14. Verdict
+The stronger integrated C-layer candidate is:
+
+> **One is the localized vertical organization insofar as its mode of diachronic existence is Selection-mediated, lineage-relative reconstitution.**
+
+Equivalently:
+
+```text
+One
+!= V_t snapshot
+
+One
+!= abstract continuation relation detached from V
+
+One
+~= process-unit constituted by
+   {time-varying vertical organization + Selection-mediated reconstitution relation}.
+```
+
+The braces are machine exposition only, not a formal tuple definition.
+
+This preserves the author's One–vertical-structure correspondence without forcing a substance/process binary.
+
+## 14. Time-local relation to Selection-position
+
+The integrated candidate also sharpens the One / position relation.
+
+Machine-side bookkeeping only:
+
+```text
+O
+= diachronically continuing vertical process-unit candidate
+
+P_t
+= current operative non-flat locus / cross-section
+  from which Selection proceeds at t
+```
+
+Do not promote `O` or `P_t` here as new canonical symbols.
+
+The relation is:
+
+```text
+recurrent P_t reconstitution
+constitutes / expresses O's continuation
+
+O's accumulated Selection history
+conditions how P_(t+1) can be regenerated.
+```
+
+Thus One and Selection-position are neither simple synonyms nor unrelated sequential entities.
+
+A useful C-layer statement is:
+
+> **One is the diachronic process-unit of a continuing vertical organization; Selection-position is its time-local operative locus insofar as further Selection can proceed from there.**
+
+This remains formation-layer ontology only. A perspective-bearing subject-position requires the separate Individuation / Stable-ISP gate.
+
+## 15. One-formation as recursive localization, not endpoint individuation
+
+Under the integrated candidate, One-formation is not best represented as:
+
+```text
+individuation process
+-> completed One
+-> later change.
+```
+
+Instead:
+
+```text
+Selection / vertical-generation / writeback cycle
+-> recurrent localization of a vertical organization
+-> lineage-relative reconstitution becomes load-bearing
+-> a process-unit can be treated as an ontological One candidate
+-> later Selection continues to regenerate / transform that same process-unit.
+```
+
+Therefore One is not the endpoint of becoming. Its One-ness is sustained through continued vertical reconstitution.
+
+`individuation` remains useful in Simondon comparison, but `vertical reconstitution` / `One-formation` remain the preferred SRT-internal terms at this stage.
+
+## 16. Revised author gate
+
+The earlier A/B fork is retired as the primary author question.
+
+The sharper question for second adjudication is now whether the author accepts this integrated relation:
+
+> **One does not name a static vertical structure or an observer-side unity. It names a localized vertical organization whose continuity consists in Selection-mediated reconstitution relative to its own prior vertical history; Selection-position names the operative locus through which that continuing organization participates in later Selection.**
+
+This file does not infer author acceptance from generic `继续` instructions.
+
+## 17. Verdict
 
 ```text
 simple Selection -> verticality one-way ladder: DEMOTED TO SHORTHAND
 Selection/vertical relation: RECAST AS RECURSIVE CYCLE
 One requires global field memory only: NO
-One as localized lineage-relative vertical reconstitution: STRENGTHENED CANDIDATE
 One as observer-side reading/projection: REJECTED AS PRIMARY WORDING
 One as Simondonian individuation by definition: NO
-B (continuation-unity) vs A (organization itself): AUTHOR GATE OPEN
+structure vs process A/B binary: RETIRED AS TOO COARSE
+One as localized vertical process-unit constituted through lineage-relative reconstitution: CURRENT MACHINE PREFERENCE
+Selection-position as time-local operative locus / aspect: CURRENT MACHINE PREFERENCE
+strict numerical identity: OPEN
 canonical edit: NO
 new Level: NO
 HOLD change: NO
