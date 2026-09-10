@@ -31,6 +31,18 @@ tags: [Retrospective, Limitations, PreObjectField, ForegroundObservability, Sele
 > **Question:** did earlier limitation / absorption judgements accidentally treat reproduction of downstream observable dynamics as reproduction of the SRT pre-object ontology?
 >
 > **Rule:** historical negative results are not deleted. Each is reclassified only by the strongest claim it actually paid.
+>
+> **Provenance note:** this file is now a **post-MOBJ2-B retrospective routing surface**. It may summarize the later Pass-16 verdict, but it does not supply evidence for Pass 16. Pass 16 no longer depends on this file. Detailed distinctions compressed from an earlier Pass-12 version are preserved in `Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md`.
+
+## Runtime mode lock
+
+```text
+research_mode = U
+root_question = which earlier limitation judgments remain valid, and which theory-wide readings exceeded what D1/D2 evidence actually paid?
+comparative_claim = none
+named_comparator = none
+n_mode_triggered = false
+```
 
 ## 0. Review standard
 
@@ -285,10 +297,10 @@ predictive / dynamical completeness at that interface cannot by itself exhaust
 the genesis of the interface's determinacy.
 ```
 
-Pass 16 therefore records a narrow structural consequence:
+Pass 16 records the following **downstream status**, not a premise of this retrospective:
 
 ```text
-MOBJ2-B scoped Level 1 = PASS — NARROW / RECOVERED
+MOBJ2-B scoped Level 1 = PASS — NARROW / RECOVERED / CLASS-M SCOPED
 ```
 
 Scope:
@@ -297,7 +309,14 @@ Scope:
 models whose primitive interface is already determinate / manifest.
 ```
 
-This is a recovered / clarified dependency consequence of canonical L0, not a new independent ontology increment and not a global non-substitutability theorem against Barad + Simondon + phenomenology + constitutive formalism.
+Critical qualifier:
+
+```text
+the Class-M test is non-discriminating among constitutive theories
+that already make manifestation genesis an explanandum.
+```
+
+Thus the result is a recovered / clarified dependency consequence of canonical L0, not a new independent ontology increment and not a global non-substitutability theorem against Barad + Simondon + phenomenology + constitutive formalism.
 
 ---
 
@@ -328,6 +347,10 @@ RETAIN.
 Level 2:
 HOLD.
 ```
+
+Detailed restored distinctions for IRR-B complete-state typing, ontological vs empirical proxy admission, four-way distinctiveness, and HOLD-EXIT-2 triggers are preserved in:
+
+`Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md`.
 
 ---
 
@@ -367,7 +390,8 @@ historical negative findings: PRESERVED
 historical theory-wide overreadings: NARROWED where they exceeded D1/D2
 MOBJ-A: AUTHOR-SELECTED
 MOBJ2-B: AUTHOR-SELECTED
-MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED / CLASS-M SCOPED
+Class-M test vs constitutive theories: NON-DISCRIMINATING BY ITSELF
 whole-package global non-substitutability: NOT YET ESTABLISHED
 absolute PO-3 theorem: NOT ESTABLISHED
 canonical edit: NO
