@@ -3,7 +3,7 @@ id: SRT-AUDIT-MANIFESTATION-SELECTION-POSITION-PASS17-AUTHOR-CLARIFICATION-ADDEN
 type: audit
 status: active
 record_stage: author_clarification_integrated
- date: 2026-09-10
+date: 2026-09-10
 layer: meta
 epistemic_layer: os
 claim_mode: audit
