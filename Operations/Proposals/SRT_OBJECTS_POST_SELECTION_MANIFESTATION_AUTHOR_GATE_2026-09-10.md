@@ -111,7 +111,15 @@ Can an arbitrarily rich third-person state-space be ontologically equivalent
 to the pre-object + Selection architecture?
 ```
 
-The next required stage is fuller mature-neighbor pressure and then a second author adjudication. In particular, comparison must include constitutive-cut, preindividual, horizon/background and predictive-state rivals rather than only object-first state-space models.
+Fuller mature-neighbor pressure is now recorded in:
+
+- `Operations/Audits/SRT_MOBJ_A_FULLER_NEIGHBOR_PRESSURE_PASS15_2026-09-10.md`
+
+The required second author adjudication is now open in:
+
+- `Operations/Proposals/SRT_MOBJ_A_SECOND_AUTHOR_GATE_AFTER_FULLER_PRESSURE_2026-09-10.md`
+
+That second gate distinguishes a conservative explanatory-order reading, a stronger **manifest-interface insufficiency** claim, and an absolute no-formal-equivalence claim.
 
 ---
 
@@ -119,9 +127,10 @@ The next required stage is fuller mature-neighbor pressure and then a second aut
 
 ```text
 author gate: ADJUDICATED — MOBJ-A
+fuller neighbor pressure: PAID
+second author gate: OPEN
 canonical edit: NO
 Level 1: UNASSIGNED
 Level 2: HOLD
 HOLD EXIT REVIEW 2: NOT YET TRIGGERED
-next stage: fuller neighbor pressure -> second author adjudication
 ```
