@@ -79,153 +79,108 @@ For theory advancement, book writing, domain deep-dives, material fusion, public
 
 Before doing substantial pipeline / governance / theory work:
 
-1. Read `Operations/README.md`
-2. Read `Governance/README.md`
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present — absence is normal
-4. Read `HEARTBEAT.md` before heartbeat-style or automation-style work
+- check current `STATUS.md` routing rather than assuming an older pass is still the active entry;
+- respect explicit `forward routing`, `supersedes`, `record_stage`, author adjudication and scope over date-only ordering;
+- when `STATUS.md` names a conditional handoff/current-priority surface, load it **after** the canonical 3-file bootstrap; that handoff does not become a competing fresh-session read-order authority.
 
-Before editing theory files, also read:
+## Research mode discipline
 
-1. `Governance/SRT_CANONICAL_FREEZE.md`
-2. `Governance/SRT_EDIT_PROTOCOL.md`
+The following runtime mode fields are a **required audit discipline for active bounded theory/audit work packages that actually perform Constitution/ontology/cross-domain synthesis or comparative pressure**. Passive source-intuition records, frozen author gates, status handoffs and simple routing records do not each need to duplicate the five-field block.
 
-### Frontmatter write ratchet
-
-For any **new or substantially edited ordinary Markdown file**, use one of the repository ratchet status values:
+For an active bounded work package, record in the existing work package (not a new ledger):
 
 ```text
-draft | active | frozen | archived
+research_mode = U | N
+root_question = ...
+comparative_claim = none | <bounded claim>
+named_comparator = none | <named rival / mapping cases>
+n_mode_triggered = false | true
 ```
 
-Do not invent versioned status strings such as `active_v2` or `superseded_input`; put finer lifecycle meaning in a separate field such as `record_stage`. Explicit noncanonical transcript/source-record exceptions are governed by `scripts/check_frontmatter.py`; do not generalize those exceptions to ordinary theory/governance files.
+Default to `U`. If `research_mode = N`, a bounded comparative claim and named comparator must be present; `neighbor-paid` by itself is not an N-mode trigger.
 
-## Constitution / Ontology Dialogue Hard Guard
+This is presently a **procedural/audit requirement, not a repository-wide frontmatter schema or CI gate**. The bounded work package and its closure/review are responsible for making compliance inspectable. Do not claim automated enforcement unless a checker is later added.
 
-For Constitution or identity-level ontology work, the default workflow is now:
+### Neighbor-paid default route
+
+When a mature neighbor already explains a local mechanism / role and no bounded comparative claim remains active, route:
 
 ```text
-current author question / intuition
--> existing source recovery
--> AI divergence
--> bounded mature-neighbor awareness
--> author provisional convergence
--> repository write only for the author-owned provisional result / source trace
--> internal reflexivity / circularity / hidden-premise red-team
--> fuller mature-neighbor adaptation and pressure
--> SRT-led absorption / relational reorganization / new questions and candidate conclusions
--> source fidelity, inference, counterexample and reciprocal-constraint checks
--> author second adjudication of substantive meaning / direction
--> ontology/interface hardening under existing rules
--> domain discrimination only for a bounded comparative claim
+NEIGHBOR-PAID
+-> INHERIT / REALIZATION / REORGANIZATION
+-> root question
 ```
 
-Hard rules:
+Ask what can be inherited, what relation is reorganized, what cross-domain invariant or new question appears, and what reverse constraint follows. Do not automatically continue residual hunting.
 
-- **No theory write before author convergence.** AI may retrieve and present options, but should not create a Constitution/ontology artifact for every live branch.
-- AI-generated alternatives are not author decisions.
+### Residual-hunt circuit breaker
+
+If two consecutive strongest-neighbor/substitution passes on the same root question produce no new gain except:
+
+```text
+neighbor-paid -> narrower residual
+```
+
+stop automatic narrowing and perform a ChoiceMap/root-return. Continue N-mode only if an explicit bounded comparative claim still requires it; otherwise restore U-mode.
+
+This breaker is auditable from the recorded runtime fields and pass sequence. Until a mechanical checker exists, a closure/review must not describe the breaker as CI-enforced.
+
+## Author Re-entry / ontology dialogue hard rules
+
 - Two models agreeing is corroboration, not proof and not author convergence.
 - AI may recover historical SRT, but must not treat the smoothest synthesis of old files as the author's current ontology.
 - **When mature-domain overlap, neighbor comparison, or cross-domain mapping is in play, use cross-domain ontological unification (U-mode) rather than domain-local novelty maximization.** Switch to novelty/increment subtraction (N-mode) only when a bounded author-owned SRT response exists and the active task explicitly requires discrimination.
-- **Runtime mode lock:** for a bounded Constitution / ontology / cross-domain theory work package, record in the existing work package (not a new ledger) `research_mode = U | N`, `root_question`, `comparative_claim`, `named_comparator`, and `n_mode_triggered`. Default to `U`. If `research_mode = N`, a bounded comparative claim and named comparator must be present; `neighbor-paid` by itself is not an N-mode trigger.
-- **Neighbor-paid default route:** when a mature neighbor already explains a local mechanism / role and no bounded comparative claim remains active, route `NEIGHBOR-PAID -> INHERIT / REALIZATION / REORGANIZATION -> root question`. Ask what can be inherited, what relation is reorganized, what cross-domain invariant or new question appears, and what reverse constraint follows. Do not automatically continue residual hunting.
-- **Residual-hunt circuit breaker:** if two consecutive strongest-neighbor/substitution passes on the same root question produce no new gain except `neighbor-paid -> narrower residual`, stop automatic narrowing and perform a ChoiceMap/root-return. Continue N-mode only if an explicit bounded comparative claim still requires it; otherwise restore U-mode.
 - Do not use novelty/prior-art as a permission gate before the author knows what they mean.
 - **Light / bounded Neighbor Awareness** before provisional convergence exists to reduce rediscovery and sharpen the author's problem; it is not a keep/drop gate.
 - **Fuller Neighbor Adaptation** after provisional convergence must be allowed to change, narrow or defeat SRT wording. Use `resonance / contrast / pressure / translation / realization` as appropriate.
-- **Start from the SRT root question.** Existing neighbor mechanisms can be inherited and connected; 'already explained elsewhere' is not a reason to remove them from SRT construction or to strengthen an author commitment. Reuse U-mode / O-track; no new mode is created.
-- Before saying `SRT adds X beyond a named rival`, state the comparative claim and source-native comparator. Novelty, irreducibility, superiority or extra predictive/intervention claims trigger the relevant audit even if unlabeled. Ordinary new questions and candidate conclusions do not automatically trigger it.
-- Level 1 is required for an asserted structural difference relative to a named neighbor, not for every substantive O-track response. Check source fidelity, actual explanatory/inferential payoff, counterexamples and empirical claims in either mode; absorption is not proof or immunity.
-- Use concrete cases, explain additional commitments, allow author reframing, and apply ChoiceMap root-return triggers. Do not rank options solely by resistance to neighbor absorption or re-ask settled decisions. Authorized mechanical work stays with AI.
-- Current operational owner: the governance amendment §4.2. Author source: `01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`. Implementation / acceptance: `Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md` (conditional reads; the three-file bootstrap is unchanged).
-- Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
-- Constitution v1's six operations are current analysis entrances, **not six exhaustive ontology modules**.
-- Bearer/objectification is one important structural slice, not the whole SRT ontology.
-- Constitution must not use equations/scalars/thresholds/state-space formalisms as constitutional authority.
-- Domain formalization is allowed and encouraged when the domain declares its objectification assumptions.
 
-Use `Operations/_SRT_CHOICE_TRACE_LOG.md` / ChoiceMap discipline for author convergence when practical. AI may record option sets; author choice, skipped mode, reason and closure boundary must not be invented by AI.
+## Current identity / authority discipline
 
-## Book-Writing Hard Guard
+Use K/A/B/C/D explicitly in high-risk theory work:
 
-Any task that reads, revises, continues, audits, or writes back to 《从存在到秩序》 must follow this order before keyword search results are treated as source text:
+```text
+K = current canonical constraint
+A = current explicit author intuition / adjudication
+B = historical / recovered SRT source
+C = AI reconstruction / synthesis
+D = open pressure / unresolved question
+```
 
-1. Read `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`.
-2. Read `01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`.
-3. Load the manifest's active primary file under `01_Source_Intuition/BOOK/Drafts_26Q/`.
-4. Only after the active primary is loaded may `Archive_52Chapter/` or `Archive_Meta/` be opened for historical comparison.
+A current ontology axis may contain both K and D. Do not silently downgrade K to D because the wider problem field is open.
 
-Hard prohibitions:
+The current identity-level workflow is:
 
-- Do not use archived book material as the first or sole source for current wording.
-- Do not infer currentness from keyword density, version suffix, chapter number, or search rank.
-- When archived material is used, label it historical and name the current active file.
-- Do not copy archived prose into the current manuscript without re-deriving it against the current architecture and terminology.
+```text
+current author question / intuition
+-> canonical/source audit
+-> K/A/B/C/D
+-> AI divergence
+-> bounded mature-neighbor awareness
+-> author provisional convergence
+-> internal red-team
+-> fuller mature-neighbor adaptation / strongest objections
+-> common-problem extraction / SRT-led absorption / relational reorganization
+-> non-substitutability / structural consequence where a comparative claim exists
+-> author second adjudication
+-> only then ontology/interface write or conditional domain discrimination
+```
 
-For Constitution / ontology source recovery, the current 26Q book is a **source-intuition reservoir**, not automatic canonical authority. Extract author questions and intuitions; do not promote vivid prose directly into Constitution or ontology.
+AI-generated alternatives are not author decisions. A one-letter author response is adjudication only relative to the complete option set that was actually presented; preserve that option set or a lossless provenance pointer when freezing the gate.
 
-## SRT Trigger Words
+No theory write before author convergence merely because a machine synthesis appears smooth. Same-day status records need explicit control/supersedes/routing and scope; date alone never determines authority.
 
-When the user sends the following trigger words, use the current `SRT/` structure rather than retired `SRT_openclaw/` paths:
+## Canonical / deep-well guard
 
-| Trigger | Pipeline / Mode | Action |
-|--------|------------------|--------|
-| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合，并遵守 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`。先忠实提取 source claim，再区分 Constitution resonance/contrast/pressure、domain mechanism/constraint 与真正 D-track increment。不得把来源写成“证明 Constitution”。 |
-| `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身术语、论证与证据强度陪读，不自动写仓库。若后续要求写回，再转 Pipeline 1。 |
-| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 审查第一轮候选接口，区分 source-native fact / Constitution relevance / domain relevance / D-track increment；结果回注 Pipeline 1。 |
-| `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决`。 |
-| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型理论推演回流。当前 reconstruction programme 下，优先恢复 author choice / unresolved branch / pressure point；对话本身不建 SourceCard，其中真正承担证据的外部论文需拆出进 Pipeline 1。 |
-| `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
-| `内审` | Pipeline 6 | 立即执行每日内部审查 |
-| `选题` | Pipeline 5 | 生成当日大众路线 + 精英路线选题 |
-| `论文候选` | Pipeline 2 | 更新候选池与期刊匹配 |
-| `周评` | Pipeline 4 | 执行文档治理 + 理论方向评审 |
-| `对话` | Dialogue Mode | 启动作者发散/收敛对齐模式；若触及 Constitution/ontology，遵守 Constitution / Ontology Dialogue Hard Guard |
-| `学者对话` | Dialogue Mode | 启动学者批判 / red-team 模式 |
+Current canonical owners, claim ladder, Pipeline 1 source-fidelity rules and manuscript carve-outs remain binding until separately changed through their own governance path.
 
-执行前：
+No current manifestation/pre-object reconstruction result authorizes:
 
-- 先读 `STATUS.md`，并用 2026-09-05 author-reentry amendment 校正其中旧 programme shorthand
-- 以当前 author-reentry amendment + Architecture v2 作为 theory-development programme；日常节奏继续参考 `Operations/_SRT_OPERATIONS_SCHEDULE.md`
-- 材料写回必须读 Material Pipeline、Material Log 与 GOV-SYN01
+```text
+canonical L0 rewrite by implication;
+absolute no-third-person-formalization theorem;
+Level-2 claim without a prospective domain-native discriminator;
+HOLD exit without the named review conditions;
+new deep well solely to protect a positive theory result.
+```
 
-执行后：
-
-- 更新 `STATUS.md` 中的当前执行状态（需要时）
-- 需要留痕时追加到相应 Operations/Governance 台账
-- Pipeline 1 正式状态以 `Operations/_SRT_MATERIAL_LOG.md` 为准
-- 不把 Operations 日志、bridge、patch、hook、split/annex 导航写成新的 Constitution 或 canonical definition
-
-## Canonical Runtime Paths
-
-- AI 最小首读入口：`SRT_AI_START.md`
-- Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- 当前状态面板：`STATUS.md`
-- 最新作者纠偏：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
-- 当前 reconstruction amendment：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
-- 当前 post-Constitution architecture：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
-- programme blueprint（历史/补充）：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
-- programme plan（受 amendment + Architecture v2 修正）：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
-- programme governance base：`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
-- Constitution source recovery：`Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md`
-- 作者身份源记录：`01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md`
-- 停驻内容总索引：`_SRT_PARKED_INDEX.md`
-- 运行层入口：`Operations/README.md`
-- 治理层入口：`Governance/README.md`
-- 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
-- Pipeline 1：`Operations/_SRT_MATERIAL_PIPELINE.md`
-- Material Log：`Operations/_SRT_MATERIAL_LOG.md`
-- Choice trace：`Operations/_SRT_CHOICE_TRACE_LOG.md`
-- 书稿当前状态：`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
-- 书稿机器路由：`01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
-
-## Migration Note
-
-- `SRT_openclaw/` is retired and should be treated as legacy history.
-- Active workflow docs live under `Operations/` and `Governance/`.
-- The 2026-08-29 Constitution reconstruction is prospective: it does not silently rewrite published/submitted manuscripts or frozen canonical owners.
-- The 2026-09-05 correction changes scope, pace and sequencing; it does not retroactively erase Constitution v1, Domain Frameworks, or adverse deep-well records.
-
-## ClawX Environment
-
-- Use local `TOOLS.md` for SRT-specific tool notes.
-- Prefer `uv run python ...` over bare `python` / `python3` / `pip` unless a document explicitly requires otherwise.
+For exact registered meanings, continue to follow `CANONICAL_REGISTRY.md`, `Governance/SRT_CLAIM_LADDER.md`, and the relevant `Core_Law/Core` owners.
