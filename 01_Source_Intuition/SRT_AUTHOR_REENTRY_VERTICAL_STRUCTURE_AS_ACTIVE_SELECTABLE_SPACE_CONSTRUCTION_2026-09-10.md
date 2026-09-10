@@ -12,7 +12,7 @@ ai_do_not_use_for_definition: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_NOT_THIRD_PERSON_STABILITY_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
 tags: [AuthorReentry, Selection, VerticalStructure, SelectableSpace, ActiveConstruction, Maintenance, Prediction, FirstPerson, MultiSubjectOrder]
 ---
 
