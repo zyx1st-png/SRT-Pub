@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-10
-source_commit: 25d39a90
-source_branch: theory/cycle2-vg-wta-pressure-pass2-20260909
+source_commit: 4fa5e294
+source_branch: theory/bearer-rb-pass2-20260908
 source_dirty: false
-inputs_digest: 329d724e1bb4a542
+inputs_digest: 4885797e898f2cdd
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 329d724e1bb4a542
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-10 |
-| 来源 commit | `25d39a90` |
-| 来源分支 | `theory/cycle2-vg-wta-pressure-pass2-20260909` |
+| 来源 commit | `4fa5e294` |
+| 来源分支 | `theory/bearer-rb-pass2-20260908` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
