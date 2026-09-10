@@ -16,18 +16,20 @@ dependency:
   - Operations/Audits/SRT_PASS18_VERTICAL_STRUCTURE_STABILIZED_SELECTION_AUTHOR_ADJUDICATION_2026-09-10.md
   - Operations/Audits/SRT_CROSS_DIMENSIONAL_SELECTABILITY_WHOLE_SURPLUS_STRONGEST_NEIGHBOR_PASS19_2026-09-10.md
   - Operations/Audits/SRT_PASS19_FIRST_PERSON_ACTIVE_SELECTION_CORRECTION_ADDENDUM_2026-09-10.md
+  - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_Collective_Tower_Hardening_Notes.md
   - Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [CurrentPriority, Pass19, FirstPerson, ActiveSelection, SelectionPosition, VerticalStructure, CrossDimensionalSelectability, MultiSubjectOrder]
+tags: [CurrentPriority, Pass19, FirstPerson, ActiveSelection, SelectionPosition, VerticalStructure, SelectableSpace, Prediction, Maintenance, MultiSubjectOrder]
 ---
 
-# D3/D4 manifestation reconstruction — controlling handoff through Pass 19 author correction
+# D3/D4 manifestation reconstruction — controlling handoff through Pass 19 active-selection correction
 
 > **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 19 and the latest author correction. It does not replace `AGENTS.md §Session Start`, canonical owners, or author-source records.
 
@@ -43,169 +45,153 @@ Level 2: HOLD
 
 ## 2. Current author-owned chain
 
-Successive author clarifications now establish:
+The author has now fixed four linked corrections:
+
+1. Selection-position / vertical structure bears existence and multi-subject-order roles.
+2. More stable Selection means cross-time / cross-space / cross-position / cross-subject selectability.
+3. Third-person observed stability is downstream of first-person / position-indexed active Selection.
+4. Vertical structure is **not passive historical sediment**; it is active maintenance, anticipation/prediction, and construction of selectable space — part of the meaning of Selection itself.
+
+Latest exact wording:
+
+> **「垂直结构并不是历史被动沉淀的结果，而是一种维系、预测、主动发生的可选空间的构建。也即是选择的含义。」**
+
+Current minimum chain:
 
 ```text
 L0 difference / minimum non-neutrality
 -> subjectless Selection
--> ontological vertical structure / Selection-position formation
--> later selectability is organized by prior Selection
--> formed centres can participate in later Selection from their own positions
--> these active positioned selections mutually constitute each other's future selectability
--> selectable relations become re-enterable across time / space / position / subject
+-> Selection actively constructs a non-flat selectable space
+-> ontological vertical structure / Selection-position / One formation where applicable
+-> formed positions enact further active Selection from within their positions
+-> Selection maintains / anticipates / reconstructs what remains selectable
+-> multiple positioned centres mutually alter and co-maintain one another's selectability
+-> selectability becomes re-enterable across time / space / position / subject
 -> multi-subject order can form
--> third-person observable stability appears as downstream evidence / readout.
+-> third-person observable stability appears downstream as evidence / readout.
 ```
 
-The current author-owned definition of more stable Selection is:
+## 3. Critical correction: vertical structure is not sediment
+
+Retire as ontological centre:
 
 ```text
-cross-time / cross-space / cross-position / cross-subject selectability.
+past Selection
+-> passive historical sediment
+-> accumulated constraint
+-> later behavior.
 ```
 
-But the latest author correction fixes its explanatory direction:
+Retain only as a downstream descriptive shorthand when needed.
 
-> **「你这一条还是跳入了传统认知的局限性。重点不是两个被观测的结构完全一致，背后的结构是否完全相同，而是这种观测结果不是第三人称稳定性带来的，而是第一人称主动选择的结果。」**
-
-Therefore:
+The author-owned direction is:
 
 ```text
-participant-side active Selection
--> constitutes / maintains selectable relations and order
--> third-person stability is a downstream readout
+Selection
+-> active construction of selectable space
+-> maintenance of selectable organization
+-> forward orientation / prediction of possible continuation
+-> renewed active Selection.
 ```
 
-NOT:
+Therefore history matters because prior Selection actively reorganized later possibility, not because inert residue itself is the source of order.
 
-```text
-third-person stable pattern
--> hidden structural difference
--> inferred active Selection.
-```
+## 4. First-person / subjectless layering
 
-## 3. First-person guard
-
-Do not contradict the canonical L0 commitment that Selection is subjectless and does not require a pre-existing selector.
-
-Current layered reading:
+Do not introduce a pre-existing chooser at L0.
 
 ```text
 pre-subject layer:
-subjectless Selection can precede the first completed One / subject.
+Selection can be subjectless while actively producing non-flat selectable structure.
 
 post-formation layer:
-Selection-position / One formation allows later Selection to be enacted
-from within a formed position / selective centre.
+Selection-position / One formation permits later Selection to be enacted from within a formed position.
 ```
 
-`first-person` here means **position-indexed endogenous participation in Selection**, not necessarily introspective report, human consciousness, or cognitive Bearer status.
+`first-person` means **position-indexed endogenous participation**, not necessarily reflective consciousness or cognitive self-report.
 
-## 4. Pass 17 / 18 / 19 subtraction retained
+Likewise `prediction` is an author term for forward-oriented construction / maintenance of selectable possibility. It is **not yet identified** with Bayesian prediction, predictive processing, active inference, control theory, or conscious expectation.
 
-Retain all previous neighbor payments:
+## 5. Pass 17 / 18 / 19 subtraction retained
+
+Strong mature neighbors already pay broad claims that:
 
 ```text
-foreground/background co-generation alone: not sufficient residual
-retained non-manifest potential: strongly neighbor-paid in broad form
-One / existence generated rather than pregiven: neighbor-paid
-history conditioning later formation: neighbor-paid
-multi-subject endogenous order: neighbor-paid
-collective-to-individual feedback: neighbor-paid
-whole-level constraint topology: neighbor-paid
-whole > sum of parts as slogan: generic / not SRT-specific
+foreground/background difference can be constitutive;
+One / existence can be generated rather than pregiven;
+history can alter later possibility;
+multi-subject order can emerge endogenously;
+collective organization can reshape participant futures;
+whole-level constraint structure can exceed simple aggregation;
+active participation can sustain interactional organization.
 ```
 
-Simondon, Barad, participatory sense-making, adaptive / organizational-closure theories remain strong comparators.
+Therefore none of those alone is an SRT novelty claim.
 
-## 5. Pass-19 machine error and correction
+## 6. Whole > parts — corrected formulation
 
-The earlier VSEL-3 question:
+Do not define the whole mainly as an objective constraint network or passive historical accumulation.
 
-```text
-same observable constraint topology + different Selection history?
-```
+Current SRT candidate:
 
-is retained only as a possible downstream model-discrimination test. It is **not** the ontological centre.
+> **The whole exceeds a detached sum of independently described parts because positioned selective centres actively construct, maintain, anticipate, and mutually reshape a shared selectable space. This whole-level selectable space becomes a condition of later Selection while remaining dependent on continuing Selection by its participants. Third-person stable order is the downstream readout of this active construction.**
 
-The new centre is:
+Thus the surplus of the whole is not a mysterious extra substance and not merely a static network. It is the actively maintained relation by which participants become conditions of one another's future selectability.
 
-```text
-subjectless Selection
--> vertical structure / positioned existence
--> first-person / position-indexed active Selection by formed centres
--> mutual constitution of future selectability
--> participant-re-enterable stability across time / space / position / subject
--> multi-subject order
--> observer-read stability.
-```
-
-The relevant invariance is therefore not observer-invariant state description. It is **participant-re-enterable selective organization**.
-
-## 6. Whole > parts — current SRT candidate
-
-Do not frame the surplus of the whole merely as an objective constraint network discovered by an observer.
-
-Current candidate:
-
-> **The whole exceeds a detached sum of independently described parts because positioned centres actively Select from within their own positions, and those selections recursively constitute and maintain relations of mutual selectability that become conditions for later Selection. The externally observed order is a projection/readout of this participant-enacted structure, not its ontological source.**
-
-This yields a non-mysterious whole/part relation:
-
-```text
-part-level active Selection
--> jointly constituted selectable order
--> that order becomes condition for later participant Selection.
-```
-
-No third-person impossibility theorem is implied. Formal models may represent the relation downstream; they are not thereby its constitutive source.
-
-## 7. Strongest-neighbor pressure is re-ranked
+## 7. Re-ranked strongest-neighbor pressure
 
 ### Simondon
 
-Still strong: individuation / transindividual formation are processual and non-aggregative.
+Strongly pays processual genesis, individuation, transindividual formation, and cross-scale reciprocal structuration.
 
-Live question:
+Do **not** caricature transduction as passive sedimentation.
+
+Live burden:
 
 ```text
-does transindividual individuation make active positioned Selection by formed centres
-constitutive of ongoing multi-subject order,
-or does it pay the burden through a different process ontology?
+Does SRT's Selection add a distinct forward-oriented construction of selectable space,
+or can Simondonian transduction / metastability pay that role without importing a Selection-first ontology?
 ```
 
 ### Barad
 
-Still strong: intra-action is constitutive rather than passive observer registration; agency is not a property of pregiven subjects.
+Strongly pays constitutive intra-action, generated cuts/boundaries, and non-passive agency.
 
-Live question:
+Live burden:
 
 ```text
-does agential realism contain the post-formation participant-positioned
-re-selection layer that SRT now assigns to multi-subject order?
+Does SRT add a post-formation, position-indexed active construction of future selectability
+that is not already substitutable by iterative agential reconfiguration?
 ```
 
 ### Participatory sense-making / enactivism
 
-Now the strongest immediate post-formation comparator because it explicitly treats autonomous agents as active participants whose interaction can have relative autonomy.
+Strongest post-formation comparator for active participant-maintained order.
 
-Likely SRT difference to pressure:
+Likely remaining SRT genetic difference:
 
 ```text
 participatory sense-making normally begins with already-autonomous agents / sense-makers;
-SRT attempts to derive the possibility of positioned first-person participation
-from an earlier subjectless Selection -> vertical structure -> One / position formation sequence.
+SRT attempts to derive positioned active participation from an earlier subjectless Selection
+that itself constructs selectable space and produces vertical structure / positions.
 ```
 
-This is a comparative candidate, not yet an earned Level-1 residual.
+### Predictive / active-inference families
+
+Now relevant because `prediction` is explicit in author language, but no formal identity is authorized.
+
+Do not import Bayesian machinery automatically.
 
 ## 8. Current verdict
 
 ```text
-Pass-19 broad neighbor payments: RETAIN
-third-person observational-equivalence question: DOWNSTREAM ONLY
-participant-enacted stability: AUTHOR-CORRECTED CENTRE
-first-person active Selection after position formation: AUTHOR-CONFIRMED DIRECTION
+passive historical-sediment reading: RETIRED AS ONTOLOGICAL CENTRE
+history-conditioned selectability: RETAIN AS CONSEQUENCE OF ACTIVE SELECTION
+participant-enacted stability: AUTHOR-CONFIRMED
+vertical structure as active selectable-space construction: AUTHOR-CONFIRMED
+prediction / anticipation role: AUTHOR-CONFIRMED TERM, EXACT MECHANISM OPEN
 L0 subjectless Selection: RETAIN
+whole > sum of parts as slogan: GENERIC / NOT SRT-SPECIFIC
 structural repartition candidate: STRENGTHENED
 new Level 1: NOT YET ASSIGNED
 scientific distinctiveness: NOT ESTABLISHED
@@ -214,25 +200,24 @@ HOLD EXIT REVIEW 2: NOT TRIGGERED
 canonical edit: NO
 ```
 
-## 9. Next bounded pressure — FPSEL
+## 9. Next bounded pressure — ASEL
 
-Do not return to observational equivalence or broaden into another general emergence survey.
+Do not return to observational equivalence or passive sediment language.
 
 Next questions:
 
 ```text
-FPSEL-1 What exactly makes post-formation Selection first-person / position-indexed
-         without requiring introspective consciousness?
-FPSEL-2 What ontological work does active positioned Selection do that constitutive
-         relation / transduction / intra-action alone does not?
-FPSEL-3 Is multi-subject order maintained only through continuing active Selection,
-         or can previously generated order persist without current participant selection?
-FPSEL-4 What does participant mutual selectability add beyond organizational constraint closure?
-FPSEL-5 Can participatory sense-making replace the post-formation SRT dependency without
-         changing genesis, unit, or explanatory priority?
+ASEL-1 What exactly is constructed by Selection: alternatives, accessibility ordering,
+       continuation space, or a more primitive selectable field?
+ASEL-2 What does maintenance mean before a cognitive subject exists?
+ASEL-3 What does prediction / anticipation mean ontologically without importing a Bayesian model?
+ASEL-4 What work does Selection do that transduction / intra-action / affordance-field
+       formation / active inference / organizational closure cannot substitute?
+ASEL-5 Under what conditions does an actively constructed selectable space cease to exist
+       if ongoing Selection is withdrawn?
 ```
 
-These are audit-side pressure questions, not author answers.
+These are audit-side pressure questions only.
 
 ## 10. Read-forward set
 
@@ -240,6 +225,8 @@ After `AGENTS.md §Session Start`, load:
 
 ```text
 this handoff
+01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
+Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
 Operations/Audits/SRT_PASS19_FIRST_PERSON_ACTIVE_SELECTION_CORRECTION_ADDENDUM_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
