@@ -17,21 +17,26 @@ dependency:
   - Operations/Audits/SRT_CROSS_DIMENSIONAL_SELECTABILITY_WHOLE_SURPLUS_STRONGEST_NEIGHBOR_PASS19_2026-09-10.md
   - Operations/Audits/SRT_PASS19_FIRST_PERSON_ACTIVE_SELECTION_CORRECTION_ADDENDUM_2026-09-10.md
   - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
+  - Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_EXISTENCE_AND_MULTI_SUBJECT_ORDER_ROLE_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
+  - 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5n_future_affordance.md
+  - SRT_PP_ALIGNMENT_GUIDE.md
+  - Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md
+  - Bridge/SRT_Beautiful_Loop_Active_Inference_Interface.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_Collective_Tower_Hardening_Notes.md
   - Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
   - Core_Law/SRT_L0_Metaphysics.md
-tags: [CurrentPriority, Pass19, FirstPerson, ActiveSelection, SelectionPosition, VerticalStructure, SelectableSpace, Prediction, Maintenance, MultiSubjectOrder]
+tags: [CurrentPriority, Pass20, Selection, VerticalStructure, SelectableSpace, Prediction, Maintenance, Affordance, SkilledIntentionality, ActiveInference, FirstPerson]
 ---
 
-# D3/D4 manifestation reconstruction — controlling handoff through Pass 19 active-selection correction
+# D3/D4 manifestation reconstruction — controlling handoff through Pass 20 ASEL pressure
 
-> **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 19 and the latest author correction. It does not replace `AGENTS.md §Session Start`, canonical owners, or author-source records.
+> **Controlling runtime role:** current successor handoff for Draft PR #929. The filename retains its Pass-17 origin only for stable STATUS routing. This content controls the workline through Pass 20. It does not replace `AGENTS.md §Session Start`, canonical owners, or author-source records.
 
 ## 1. Repository state
 
@@ -43,14 +48,14 @@ canonical edit: NO
 Level 2: HOLD
 ```
 
-## 2. Current author-owned chain
+## 2. Current author-owned centre
 
-The author has now fixed four linked corrections:
+The author has now fixed the following sequence of corrections:
 
 1. Selection-position / vertical structure bears existence and multi-subject-order roles.
 2. More stable Selection means cross-time / cross-space / cross-position / cross-subject selectability.
 3. Third-person observed stability is downstream of first-person / position-indexed active Selection.
-4. Vertical structure is **not passive historical sediment**; it is active maintenance, anticipation/prediction, and construction of selectable space — part of the meaning of Selection itself.
+4. Vertical structure is **not passive historical sediment**; it is active maintenance, prediction/anticipation, and construction of selectable space — part of the meaning of Selection itself.
 
 Latest exact wording:
 
@@ -63,7 +68,7 @@ L0 difference / minimum non-neutrality
 -> subjectless Selection
 -> Selection actively constructs a non-flat selectable space
 -> ontological vertical structure / Selection-position / One formation where applicable
--> formed positions enact further active Selection from within their positions
+-> formed positions enact later Selection from within their own positions
 -> Selection maintains / anticipates / reconstructs what remains selectable
 -> multiple positioned centres mutually alter and co-maintain one another's selectability
 -> selectability becomes re-enterable across time / space / position / subject
@@ -71,167 +76,267 @@ L0 difference / minimum non-neutrality
 -> third-person observable stability appears downstream as evidence / readout.
 ```
 
-## 3. Critical correction: vertical structure is not sediment
+## 3. Critical causal correction
 
-Retire as ontological centre:
+Retired as ontological centre:
 
 ```text
 past Selection
 -> passive historical sediment
 -> accumulated constraint
--> later behavior.
+-> later choice.
 ```
 
-Retain only as a downstream descriptive shorthand when needed.
-
-The author-owned direction is:
+Current author-owned direction:
 
 ```text
 Selection
 -> active construction of selectable space
--> maintenance of selectable organization
--> forward orientation / prediction of possible continuation
--> renewed active Selection.
+-> maintenance / anticipation of possible continuation
+-> renewed Selection
+-> history as downstream temporal consequence / record of this active process.
 ```
 
-Therefore history matters because prior Selection actively reorganized later possibility, not because inert residue itself is the source of order.
+History can remain operationally important, but it is not the source of verticality.
 
-## 4. First-person / subjectless layering
+## 4. Internal recovery from older SRT book drafts
+
+The archived Chapter-08 `v5n_future_affordance` draft already anticipated several components:
+
+```text
+Selection does not begin from a finished menu;
+Selection makes possibilities usable / traversable / maintainable;
+foregrounding changes accessibility of alternatives;
+Selection changes the terrain faced by later Selection.
+```
+
+So the current author clarification is partly a recovery of an older SRT intuition.
+
+However the archived draft centered the future relation on:
+
+```text
+historical writeback / persistence / future-terrain redrawing
+```
+
+and its metadata explicitly contained `affordance_not_prediction`.
+
+Therefore the 2026-09-10 author ruling **supersedes the old causal emphasis**:
+
+```text
+old: history writes back into future terrain;
+current: Selection itself actively constructs / maintains / predicts selectable space,
+         and history follows from that activity.
+```
+
+Do not restore the archived `history first` reading as current theory merely because it is older repo text.
+
+## 5. First-person / subjectless layering
 
 Do not introduce a pre-existing chooser at L0.
 
 ```text
 pre-subject layer:
-Selection can be subjectless while actively producing non-flat selectable structure.
+subjectless Selection can actively produce non-flat selectable structure.
 
 post-formation layer:
-Selection-position / One formation permits later Selection to be enacted from within a formed position.
+Selection-position / One formation permits later Selection to occur from within a formed position.
 ```
 
-`first-person` means **position-indexed endogenous participation**, not necessarily reflective consciousness or cognitive self-report.
+`first-person` means **position-indexed endogenous participation**, not necessarily introspective consciousness.
 
-Likewise `prediction` is an author term for forward-oriented construction / maintenance of selectable possibility. It is **not yet identified** with Bayesian prediction, predictive processing, active inference, control theory, or conscious expectation.
+`prediction` remains author language and is not automatically Bayesian inference, explicit representation, control-theoretic forecasting, or conscious expectation.
 
-## 5. Pass 17 / 18 / 19 subtraction retained
+## 6. Pass 20 strongest-neighbor result
 
-Strong mature neighbors already pay broad claims that:
+### Skilled Intentionality / field of relevant affordances
+
+This is now the strongest immediate comparator for the post-formation side.
+
+It strongly pays:
 
 ```text
-foreground/background difference can be constitutive;
-One / existence can be generated rather than pregiven;
-history can alter later possibility;
-multi-subject order can emerge endogenously;
-collective organization can reshape participant futures;
-whole-level constraint structure can exceed simple aggregation;
-active participation can sustain interactional organization.
+selective engagement with multiple affordances;
+actor's lived / first-person perspective;
+selective openness and action readiness;
+active contribution to maintaining affordances as available in a form of life;
+agent-environment reciprocal reshaping;
+supra-individual affordance landscapes.
 ```
 
-Therefore none of those alone is an SRT novelty claim.
-
-## 6. Whole > parts — corrected formulation
-
-Do not define the whole mainly as an objective constraint network or passive historical accumulation.
-
-Current SRT candidate:
-
-> **The whole exceeds a detached sum of independently described parts because positioned selective centres actively construct, maintain, anticipate, and mutually reshape a shared selectable space. This whole-level selectable space becomes a condition of later Selection while remaining dependent on continuing Selection by its participants. Third-person stable order is the downstream readout of this active construction.**
-
-Thus the surplus of the whole is not a mysterious extra substance and not merely a static network. It is the actively maintained relation by which participants become conditions of one another's future selectability.
-
-## 7. Re-ranked strongest-neighbor pressure
-
-### Simondon
-
-Strongly pays processual genesis, individuation, transindividual formation, and cross-scale reciprocal structuration.
-
-Do **not** caricature transduction as passive sedimentation.
-
-Live burden:
+Therefore these are **not** sufficient SRT novelty claims:
 
 ```text
-Does SRT's Selection add a distinct forward-oriented construction of selectable space,
-or can Simondonian transduction / metastability pay that role without importing a Selection-first ontology?
+first-person active engagement with possibilities;
+possibilities having non-neutral relevance / salience;
+participants maintaining a shared possibility landscape;
+whole-level possibility space exceeding one participant's current field.
 ```
 
-### Barad
-
-Strongly pays constitutive intra-action, generated cuts/boundaries, and non-passive agency.
-
-Live burden:
+Main unpaid difference:
 
 ```text
-Does SRT add a post-formation, position-indexed active construction of future selectability
-that is not already substitutable by iterative agential reconfiguration?
+SIF normally begins with an ecological / sociomaterial affordance landscape,
+abilities in a form of life, and a skilled / autonomous individual.
+
+SRT currently asks how Selection itself participates in constituting
+non-flat selectable space before a finished subject / menu / affordance landscape is assumed.
 ```
 
-### Participatory sense-making / enactivism
+### Active Inference
 
-Strongest post-formation comparator for active participant-maintained order.
-
-Likely remaining SRT genetic difference:
+Strongly pays:
 
 ```text
-participatory sense-making normally begins with already-autonomous agents / sense-makers;
-SRT attempts to derive positioned active participation from an earlier subjectless Selection
-that itself constructs selectable space and produces vertical structure / positions.
+future-directed policy selection;
+prediction / expected futures;
+planning as inference;
+agent self-maintenance / self-evidencing;
+current action shaped by anticipated futures.
 ```
 
-### Predictive / active-inference families
-
-Now relevant because `prediction` is explicit in author language, but no formal identity is authorized.
-
-Do not import Bayesian machinery automatically.
-
-## 8. Current verdict
+Not thereby paid:
 
 ```text
-passive historical-sediment reading: RETIRED AS ONTOLOGICAL CENTRE
-history-conditioned selectability: RETAIN AS CONSEQUENCE OF ACTIVE SELECTION
-participant-enacted stability: AUTHOR-CONFIRMED
-vertical structure as active selectable-space construction: AUTHOR-CONFIRMED
-prediction / anticipation role: AUTHOR-CONFIRMED TERM, EXACT MECHANISM OPEN
-L0 subjectless Selection: RETAIN
-whole > sum of parts as slogan: GENERIC / NOT SRT-SPECIFIC
-structural repartition candidate: STRENGTHENED
-new Level 1: NOT YET ASSIGNED
-scientific distinctiveness: NOT ESTABLISHED
+pre-object constitution of selectable space before model / state / action / policy interface;
+prediction without a pregiven agent / generative model / preferred-outcome structure.
+```
+
+The repo's existing Active Inference source card and PP alignment already place these formalisms downstream of the current pre-object issue.
+
+### Barad / Simondon retained
+
+Barad continues to pay constitutive differentiation / exclusion / non-passive agency strongly.
+
+Simondon continues to pay preindividual metastability / transduction / individuation / transindividual continuation strongly.
+
+Do not claim SRT novelty from `active constitution`, `future potential`, `generation`, or `whole beyond aggregation` alone.
+
+## 7. Strongest fair composite substitution
+
+A mature composite can reproduce many component functions:
+
+```text
+Barad -> pre-subject constitutive differentiation
+Simondon -> individuation / metastable continuation / transindividual formation
+Skilled Intentionality -> first-person selective engagement + affordance maintenance
+Active Inference -> future-directed prediction / planning / self-maintenance
+```
+
+Therefore Pass 20 does **not** support:
+
+```text
+"other theories lack active, future-facing, first-person possibility-space resources."
+```
+
+What remains live is a possible **single-operator structural repartition**:
+
+```text
+subjectless Selection
+-> Selection itself constitutes non-flat selectable space
+-> that constitution contributes to Selection-position / One formation
+-> formed positions continue Selection from within themselves
+-> those selections maintain / anticipate / reshape each other's selectable space
+-> cross-time / space / position / subject order.
+```
+
+No single mature comparator inspected so far directly carries this whole routing under one constitutive operation. A stitched comparator composite can cover much of it; therefore this is a candidate, not an earned uniqueness theorem.
+
+## 8. ASEL verdicts
+
+```text
+ASEL-1 what is constructed?
+AUTHOR: selectable space.
+MACHINE MINIMUM: non-flat organization of what can become available / continue / re-enter.
+Exact ontology: OPEN.
+
+ASEL-2 maintenance before cognitive subject?
+Conscious intention: NO.
+Machine candidate: Selection-produced asymmetry remains operative enough to structure later Selection.
+Author adjudication of this exact wording: OPEN.
+
+ASEL-3 prediction / anticipation?
+Bayesian identity: NO.
+Explicit representation required: NO.
+Two machine candidates remain:
+  PRED-C1 prospective selectability — current Selection organizes what can be selected next.
+  PRED-C2 anticipatory commitment — current Selection partly prepares / commits a continuation relation.
+AUTHOR CHOICE: NOT INFERRED.
+
+ASEL-4 what does Selection add?
+Not active engagement alone; not prediction alone; not possibility landscape alone.
+Live candidate = same Selection relation spans pre-subject selectable-space constitution
+and post-formation position-indexed active maintenance / anticipation.
+
+ASEL-5 persistence if Selection is withdrawn?
+OPEN / AUTHOR GATE.
+```
+
+## 9. Whole > parts after Pass 20
+
+Do not claim uniqueness from:
+
+```text
+participants maintain a supra-individual possibility space.
+```
+
+Skilled Intentionality / enactive social accounts already strongly pressure that claim.
+
+Stronger SRT candidate:
+
+> **The whole-level selectable space is not merely a landscape within which already-formed participants act. SRT proposes that Selection is also implicated in constituting the positions and the non-flat selectable space from which participation becomes possible; later first-person Selection recursively maintains and enlarges that space.**
+
+This is a candidate explanatory advantage, not a demonstrated superiority claim.
+
+## 10. Current verdict
+
+```text
+old future-affordance intuition: PARTLY RECOVERED
+old history-first emphasis: SUPERSEDED BY LATEST AUTHOR CORRECTION
+SIF first-person selective engagement: STRONG PAYMENT
+SIF active affordance maintenance: STRONG PAYMENT
+Active-Inference future prediction / policy selection: STRONG PAYMENT
+Barad pre-subject constitutive differentiation: STRONG PAYMENT
+Simondon preindividual / transindividual generation: STRONG PAYMENT
+
+single Selection relation spanning:
+pre-subject selectable-space constitution
+-> position formation
+-> post-formation first-person active maintenance / anticipation
+= LIVE STRUCTURAL REPARTITION CANDIDATE
+
+new Level 1: NOT ASSIGNED
+scientific distinctiveness: NOT YET ESTABLISHED
 Level 2: HOLD
 HOLD EXIT REVIEW 2: NOT TRIGGERED
 canonical edit: NO
+new deep well / experiment: NO
 ```
 
-## 9. Next bounded pressure — ASEL
+## 11. Next decisive author burden
 
-Do not return to observational equivalence or passive sediment language.
+Do not broaden the neighbor survey again yet.
 
-Next questions:
+The remaining author gate is **prediction + persistence**:
 
-```text
-ASEL-1 What exactly is constructed by Selection: alternatives, accessibility ordering,
-       continuation space, or a more primitive selectable field?
-ASEL-2 What does maintenance mean before a cognitive subject exists?
-ASEL-3 What does prediction / anticipation mean ontologically without importing a Bayesian model?
-ASEL-4 What work does Selection do that transduction / intra-action / affordance-field
-       formation / active inference / organizational closure cannot substitute?
-ASEL-5 Under what conditions does an actively constructed selectable space cease to exist
-       if ongoing Selection is withdrawn?
-```
+> **当 Selection “预测并维系可选空间”时，预测究竟是“当前 Selection 主动组织下一步什么仍然可选”，还是更强的“当前 Selection 已经对某些未来延续作出预先承诺/准备”？以及：如果暂时没有主体正在进行 Selection，这个可选空间是否仍以可重新进入的潜在结构存在，还是它必须依赖持续发生的 Selection 才存在？**
 
-These are audit-side pressure questions only.
+Do not answer this gate from repository consistency alone.
 
-## 10. Read-forward set
+## 12. Read-forward set
 
 After `AGENTS.md §Session Start`, load:
 
 ```text
 this handoff
 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
+Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
 Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5n_future_affordance.md
+SRT_PP_ALIGNMENT_GUIDE.md
+Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md
+Bridge/SRT_Beautiful_Loop_Active_Inference_Interface.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
 Operations/Audits/SRT_PASS19_FIRST_PERSON_ACTIVE_SELECTION_CORRECTION_ADDENDUM_2026-09-10.md
-01_Source_Intuition/SRT_AUTHOR_REENTRY_CROSS_DIMENSIONAL_SELECTABILITY_AND_WHOLE_SURPLUS_2026-09-10.md
-Operations/Audits/SRT_CROSS_DIMENSIONAL_SELECTABILITY_WHOLE_SURPLUS_STRONGEST_NEIGHBOR_PASS19_2026-09-10.md
-01_Source_Intuition/SRT_AUTHOR_REENTRY_L0_DIFFERENCE_VERTICAL_STRUCTURE_MULTI_SUBJECT_ORDER_2026-09-10.md
 Core_Law/SRT_Collective_Selection.md
 Core_Law/SRT_Collective_Tower_Hardening_Notes.md
 Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
