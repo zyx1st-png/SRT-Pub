@@ -14,12 +14,14 @@ dependency:
   - Core_Law/SRT_L0_Metaphysics.md
   - 01_Source_Intuition/SRT_AUTHOR_THEORY_VALUE_UNIFICATION_POSITION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_CONSEQUENCE_EXTERNAL_READOUT_CORRECTION_2026-09-09.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_PREOBJECT_FOREGROUND_OBSERVABILITY_CORE_DISTINCTION_RETROSPECTIVE_TRIGGER_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
   - Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
   - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
   - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md
+  - Operations/Audits/SRT_BEARER_CONSEQUENCE_SUPPORTING_LINE_CLOSURE_2026-09-10.md
 tags: [CurrentPriority, NextSession, Handoff, Manifestation, PreObjectField, SelectionPosition, MOBJ-A, MOBJ2-B, Reconstruction]
 ---
 
@@ -29,9 +31,9 @@ tags: [CurrentPriority, NextSession, Handoff, Manifestation, PreObjectField, Sel
 >
 > **Bootstrap discipline:** `AGENTS.md §Session Start` remains the single authority for fresh-session read order. `STATUS.md §Fast Status` routes theory-advancement sessions here after that bootstrap. This file is therefore a **conditional continuation surface**, not a second bootstrap list.
 >
-> **Primary active workline:** Draft PR #928, branch `theory/cycle2-vg-wta-pressure-pass2-20260909`.
+> **Merged primary baseline:** PR #928 `Re-audit SRT core around post-Selection manifestation and manifest-interface insufficiency` was merged on 2026-09-10; merge commit / current baseline at this handoff update is `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`.
 >
-> **Subordinate / supporting workline:** Draft PR #927, branch `theory/bearer-rb-pass2-20260908`, for the consequence/Bearer corrections that preceded the Position/manifestation reprioritization.
+> **Current supporting closure:** Draft PR #927, branch `theory/bearer-rb-pass2-20260908`, is being reduced to the consequence external-readout correction plus a compact Bearer/consequence closure. It is not a competing primary theory workline.
 
 ## 1. Current top priority
 
@@ -81,9 +83,9 @@ Selection ontology != consequence as such
 consequence / cost / trace / repair = observer-facing result / evidence language
 ```
 
-The older SCB-A primitive-consequence clause is superseded on this point. Do not re-import `consequence-bearing` as the core of primitive Selection.
+The older primitive-consequence / consequence-bearing route is superseded on this point. Do not re-import `consequence-bearing` as the core of primitive Selection.
 
-Controlling #927 source:
+Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_CONSEQUENCE_EXTERNAL_READOUT_CORRECTION_2026-09-09.md`
 
 ### B. Selection-position carries the main structural / ontological specialness; Bearer is primarily cognitive
@@ -106,6 +108,9 @@ exact Bearer <-> Position stabilization dependency
 ```
 
 The crude empirical claim that every ordinary feedback system is fully observable is not retained as a theorem. The deeper issue has been reframed around third-person dynamical closure versus constitutive explanation of the manifest interface.
+
+Controlling main source:
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md`
 
 ### C. Pre-object / foreground-bounded observability is a current core-difference priority
 
@@ -160,7 +165,7 @@ not the stronger MOBJ-B claim that every determinate feature whatsoever is objec
 Controlling source:
 `01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md`
 
-The adjudicated gate now preserves the full non-selected MOBJ-B/MOBJ-C option texts so the one-letter `A` remains provenance-complete.
+The adjudicated gate preserves the full non-selected MOBJ-B/MOBJ-C option texts so the one-letter `A` remains provenance-complete.
 
 ### E. MOBJ2-B is AUTHOR-SELECTED
 
@@ -327,7 +332,17 @@ The manifestation / pre-object priority should now organize later U2/U4/U5 work 
 
 Fresh-session continuation should proceed from this priority, not reopen old Bearer/consequence forks.
 
-Primary work:
+Immediate housekeeping before the next theory pass:
+
+```text
+close #927 around consequence=external readout
++
+preserve Bearer cognitive / Selection-position ontological split already on main
++
+retire superseded branch-stage consequence-bearing / independent-Bearer gates.
+```
+
+Then primary work:
 
 ```text
 P1 harden the exact SRT dependency package:
@@ -366,7 +381,7 @@ absolute no-formalization theorem = do not claim
 For that conditional task only, this handoff routes to the following current controlling set; the list is **not** a replacement bootstrap sequence and no numeric ordering authority is claimed:
 
 ```text
-current Draft PR #928 metadata + current head
+merged PR #928 / main baseline e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3
 01_Source_Intuition/SRT_AUTHOR_REENTRY_OBJECTS_POST_SELECTION_MANIFESTATION_MOBJ_A_ADJUDICATION_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
 Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
@@ -374,33 +389,35 @@ Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2
 Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
 Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_DISTINCTIONS_ADDENDUM_2026-09-10.md
 01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md
-Draft PR #927 only for controlling consequence/Bearer corrections not yet on this branch
+01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_CONSEQUENCE_EXTERNAL_READOUT_CORRECTION_2026-09-09.md
+Operations/Audits/SRT_BEARER_CONSEQUENCE_SUPPORTING_LINE_CLOSURE_2026-09-10.md
 Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md and Core_Law/SRT_L0_Metaphysics.md whenever authority or promotion is at issue
 ```
 
-Do not choose files by date alone; explicit routing and author adjudication control.
+While Draft PR #927 remains open, the last two #927 files are read from that branch; after merge they become ordinary main supporting records. Do not choose files by date alone; explicit routing and author adjudication control.
 
 ## 9. Session-completeness audit
 
-For the **core theoretical content of the present conversation**, the repository now contains explicit records for:
+For the **core theoretical content of the present conversation**, the repository / active closure branch now contains explicit records for:
 
 ```text
-consequence external-readout correction                         YES (#927)
-Bearer cognitive vs Selection-position ontological split       YES (#927 + #928)
-foreground-bounded observability / pre-object priority          YES (#928)
-retrospective D1/D2 vs D3/D4 limitation correction              YES (#928)
-SRT framework-value = cross-domain ontological unification      YES (#928)
-all objects as post-Selection manifestation candidate           YES (#928)
-MOBJ-A first author adjudication + full rejected option set     YES (#928)
-fuller Barad/Simondon/phenomenology/predictive-state pressure   YES (#928)
-MOBJ2-B second author adjudication                               YES (#928)
-noncanonical ontology/interface hardening                       YES (#928)
-Class-M-scoped Level-1 reconsideration + non-discriminator guard YES (#928)
-restored retrospective IRR/proxy/distinctiveness/HOLD guards    YES (#928)
-Level-2/HOLD negative guards                                    YES (#928)
+consequence external-readout correction                         YES (#927 closure source)
+Bearer cognitive vs Selection-position ontological split       YES (#928 / main)
+foreground-bounded observability / pre-object priority          YES (#928 / main)
+retrospective D1/D2 vs D3/D4 limitation correction              YES (#928 / main)
+SRT framework-value = cross-domain ontological unification      YES (#928 / main)
+all objects as post-Selection manifestation candidate           YES (#928 / main)
+MOBJ-A first author adjudication + full rejected option set     YES (#928 / main)
+fuller Barad/Simondon/phenomenology/predictive-state pressure   YES (#928 / main)
+MOBJ2-B second author adjudication                               YES (#928 / main)
+noncanonical ontology/interface hardening                       YES (#928 / main)
+Class-M-scoped Level-1 reconsideration + non-discriminator guard YES (#928 / main)
+restored retrospective IRR/proxy/distinctiveness/HOLD guards    YES (#928 / main)
+old Bearer/consequence branch-stage routes closed without re-opening gates YES (#927 closure audit)
+Level-2/HOLD negative guards                                    YES
 ```
 
-This audit means the load-bearing recent propositions, corrections, adjudications, pressure results and open guards are recoverable from the repository. It does **not** mean every explanatory paraphrase from chat has been copied verbatim, nor does it convert noncanonical material into canonical theory.
+This audit means the load-bearing recent propositions, corrections, adjudications, pressure results and open guards are recoverable. It does **not** mean every explanatory paraphrase from chat has been copied verbatim, nor does it convert noncanonical material into canonical theory.
 
 ## 10. Current stop / resume state
 
@@ -411,6 +428,11 @@ objecthood is a post-Selection achievement at its declared level;
 manifest-interface models are downstream of that constitutive question;
 Selection-position carries the main structural / ontological from-where burden;
 Bearer is downstream / primarily cognitive in the current author routing.
+
+SUPPORTING CLOSURE:
+consequence is external readout, not primitive Selection ontology;
+old consequence-bearing / independent-Bearer route is being closed in #927;
+exact Bearer <-> Selection-position stabilization dependency remains OPEN.
 
 NEXT RESUME QUESTION:
 Can the exact pre-object -> Selection -> foreground/background -> manifest interface -> Selection-position dependency package survive a strongest fair D3/D4 constitutive replacement test strongly enough to generate a disciplined downstream proxy / U4 transfer, without claiming an absolute no-formalization theorem?
