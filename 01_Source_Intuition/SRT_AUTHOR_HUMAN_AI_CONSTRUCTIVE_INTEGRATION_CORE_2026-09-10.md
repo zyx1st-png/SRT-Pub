@@ -8,7 +8,7 @@ layer: source_intuition
 epistemic_layer: author
 claim_mode: author_source
 canonical: false
-ai_do_not_use_for_definition: false
+ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md
