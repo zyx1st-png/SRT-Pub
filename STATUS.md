@@ -12,8 +12,8 @@ updated: 2026-09-10
 
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
 > **最后更新**：2026-09-10
-> **当前理论重构优先级 / 条件加载入口（2026-09-10）**：`Operations/Status_History/SRT_STATUS_2026-09-10_MANIFESTATION_CORE_RECONSTRUCTION_PRIORITY_AND_NEXT_SESSION_HANDOFF.md`。对 theory advancement / author re-entry / manifestation / pre-object / Selection-position 工作，完成 `AGENTS.md §Session Start` 三文件 bootstrap 后优先加载该 handoff；它不是第二套 bootstrap authority。
-> **当前主理论工作线**：PR #928 已于 2026-09-10 合并，`main = e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`；Draft PR #927 当前仅作为 consequence/Bearer supporting closure。#927 收口后，新的主工作线应直接进入 manifestation / Selection-position 的 D3/D4 strongest-neighbor pressure，不再恢复旧 Bearer/consequence residual hunt。
+> **当前理论重构优先级 / 条件加载入口（2026-09-10）**：`Operations/Status_History/SRT_STATUS_2026-09-10_D3_D4_PASS17_MANIFESTATION_NEXT_SESSION_HANDOFF.md`。对 theory advancement / author re-entry / manifestation / pre-object / Selection-position 工作，完成 `AGENTS.md §Session Start` 三文件 bootstrap 后优先加载该 handoff；它不是第二套 bootstrap authority。此前 `SRT_STATUS_2026-09-10_MANIFESTATION_CORE_RECONSTRUCTION_PRIORITY_AND_NEXT_SESSION_HANDOFF.md` 保留为 #927 合并前的历史恢复面。
+> **当前主理论工作线**：PR #927 已于 2026-09-10 合并，`main = 45016c447d81203840856a82470cf819e4ff7483`；当前 Draft PR #929 `Pressure manifestation and Selection-position at D3/D4 against constitutive rivals` 从该 post-#927 baseline 开出。#929 只做 manifestation / Selection-position 的 D3/D4 strongest-neighbor pressure 与状态修复，不恢复旧 Bearer/consequence residual hunt。
 > **当前作者级方向（节奏与本体范围）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **当前作者协作方向（SRT 主导吸纳与问题生成）**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`
 > **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §0.3 / §4–§11`
@@ -30,7 +30,7 @@ updated: 2026-09-10
 > **Cycle 2 强化承诺起点（09-07）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_DEPENDENCY_STRENGTHENING_2026-09-07.md`
 > **Cycle 2 最新作者动作（09-09；当前 meaning routing 以此为准）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md`
 > **Cycle 2 同日前置作者裁决**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_STRENGTHENED_VERTICAL_SCOPE_B_PASS1_2026-09-09.md`（Scope B）→ `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_SEDIMENTATION_SED_B_RULING_2026-09-09.md`（SED-B）→ VG ruling
-> **Cycle 2 强化承诺历史审计入口**：`Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md`（passive attractor full-proxy 已降级；其后 Pass 2–16 与 2026-09-10 handoff 构成当前 continuation；勿把 Pass 1 当作最新总入口）
+> **Cycle 2 强化承诺历史审计入口**：`Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_NEIGHBOR_PRESSURE_PASS1_2026-09-09.md`（passive attractor full-proxy 已降级；其后 Pass 2–Pass 17 与当前 handoff 构成 continuation；勿把 Pass 1 当作最新总入口）
 > **Cycle 3 收口面**：`Operations/Proposals/SRT_AUTHOR_REENTRY_CYCLE3_CLOSURE_2026-09-06.md`
 > **当前推进入口（blocker 与研究优先级）**：`Operations/Audits/SRT_PHYSICAL_TRIGGER_PLURALISM_ARCHITECTURE_AUDIT_2026-09-06.md` §6–§8
 > **裁决前历史分诊（仅用于路线来源追溯，勿当当前入口）**：`Operations/Audits/SRT_HOLD_BLOCKER_ROUTE_TRIAGE_AFTER_BEARERLESS_NOGO_2026-09-06.md`——该文件写于 IRR 作者裁决**之前**，其 §2.6 仍标 `IRR-B ... NOT YET AUTHOR-OWNED`、§4 仍在准备 IRR-A/B/C 作者门、§5 仍记 `irreversibility route: PREPARED AUTHOR GATE, NOT YET POSITIVE`。**这些状态已被 2026-09-06 的 IRR-B 裁决与随后的物理触发裁决取代**；照其行动会去重问一个已回答的问题。
@@ -38,14 +38,14 @@ updated: 2026-09-10
 
 ## Fast Status
 
-> **2026-09-10 manifestation-core 重同步**：当前理论重构重点是 `L0 / pre-object condition -> subjectless Selection -> foreground + relative backgrounding -> manifest/objectifiable interface -> Selection-position -> downstream One/Bearer/cognition`。作者已确认 MOBJ-A（objecthood at a declared level is post-Selection manifestation）与 MOBJ2-B（以已确定 manifest interface 为 primitive 的模型已经位于该构成问题下游）。D1/D2 局部动力学与 state-space 负面结果继续保留，但不得自动外推为 D3/D4 pre-object constitution / manifestation relation 已被吸收。详细恢复面见上方 2026-09-10 handoff。
+> **2026-09-10 D3/D4 Pass-17 重同步**：当前理论重构重点仍是 `L0 / pre-object condition -> subjectless Selection -> foreground + relative backgrounding -> manifest/objectifiable interface -> Selection-position -> downstream One/Bearer/cognition`。Pass 17 对 Barad + Simondon + phenomenology + predictive-state / operational-GPT formalism 做了更强的 D3/D4 替代压力：`foreground/background co-generation` 本身不再足以构成 SRT residual；Simondon 对 individual+milieu co-genesis、retained preindividual potential 与 later individuation conditioning 的支付显著强于此前审计。当前真正 live 的压力点收窄为 `Selection-position` 是否具有超出 metastable milieu / constitutive cut / horizon / relational state 的**非平坦生成性 from-where**；该含义仍 under-specified，等待作者裁决，不由机器代填。
 > **MOBJ2-B Level 路由限制**：`PASS — NARROW / RECOVERED / CLASS-M SCOPED` 仅表示相对于“把 determinate manifest interface 直接当 primitive”的 Class M 存在 dependency repartition；这个测试**按构造本身不能区分** SRT 与同样把 manifestation genesis 当 explanandum 的 Barad / Simondon / 其他 constitutive theories。whole-package global non-substitutability 未建立；Level 2 仍 HOLD。
 >
 > **2026-09-08 协作方向**：作者要求以 SRT 自身问题吸纳邻近理论、重组关系并形成新问题与候选结论。治理修正案 `§0.3 / §4.2` 控制当前协作方式；具体增量比较仅用于实际比较主张，不以共同残余或 Level 1 作为所有 O-track 回答的准入门。来源、推理、反例与事实检验继续有效。
 > **作者源记录**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`。
 > **执行与验收计划**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`。后续会话效果尚待验收；本轮不裁决 R，不提升 V/Level，不修改以下科学 verdict 或解除 HOLD。
 >
-> **2026-09-09 Cycle-2 routing 重同步**：在 09-07 strengthened dependency 之后，作者已于 09-09 依次确认 **Scope B → SED-B → active vertical generation (VG)**。同日旧 attractor `PROVISIONALLY PAID / ACCEPT` 记录保留为历史 pressure state，但当前处置由 VG ruling、已合并的 #928 sequence 与 2026-09-10 handoff 控制。**这些 meaning 裁决本身不授予新 Level；MOBJ2-B 仅有 Class-M scoped recovered Level-1 routing，Level 2 仍 HOLD。**
+> **2026-09-09 Cycle-2 routing 重同步**：在 09-07 strengthened dependency 之后，作者已于 09-09 依次确认 **Scope B → SED-B → active vertical generation (VG)**。同日旧 attractor `PROVISIONALLY PAID / ACCEPT` 记录保留为历史 pressure state，但当前处置由 VG ruling、已合并的 #928/#927 sequence、Pass 17 与当前 handoff 控制。**这些 meaning 裁决本身不授予新 Level；MOBJ2-B 仅有 Class-M scoped recovered Level-1 routing，Level 2 仍 HOLD。**
 
 > **本页 2026-09-07 重同步（历史说明）**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure / ruling / audit 文件为准，不要以本页摘要为准。**
 >
@@ -54,7 +54,7 @@ updated: 2026-09-10
 - **程序级判定：`CONTINUE HOLD — NAMED BLOCKER`（HOLD EXIT REVIEW 1，2026-09-06）。** 两周期 re-entry 负担**已付**（Cycle 1 与 Cycle 3 各计一次 non-redundant credit；Cycle 2 是 meaning cycle，不计入该计数）。未付的是最终放行条件。**第三口主 deep well 与 broad cross-domain synthesis 继续 HOLD。**
 - **当前 blocker（2026-09-06 物理触发裁决后更新过，以更新版为准）**：缺一个有界的、实现特定的 Level-2 realization design——它要能**独立于被检验的后果**先认定一个 Selection candidate，再把一条 author-owned SRT 关系暴露给与具名最强成熟对手的**前瞻性分歧**。该设计可来自物理、生物、认知、AI 或其他领域；**物理被允许但不被特权化**。重跑 HOLD EXIT REVIEW 需先在纸面上同时付 Trigger A（对具名最强邻居守住一处 Level-1 repartition）与 Trigger B（给出具体 Level-2 路径）。
 - **Cycle 2（One / Selection-position 形成）已收口**：作者 source trace、邻居压力、内部 red-team、post-red-team 二次作者裁决（2026-09-06 作者选 **A**）、post-adjudication subtraction 与 strongest-neighbor consequence pass **全部 COMPLETE**。`Level 1: PASS — NARROW`（授予「参与形成」承诺）、`Level 2: HOLD`、`scientific distinctiveness: NOT ESTABLISHED`。吸收测试结论：公平复合体（Simondon + Luhmann/Spencer-Brown + adaptive coevolutionary dynamics）几乎能复现全部当前可见下游现象，幸存残余是 primitive bearerless Selection 的「放置」。
-- **Cycle 2 的 strengthened vertical claim 是一条新承诺，不继承旧 verdict**：09-07 作者把其中一条关系从「参与形成」强化为结构性必要条件；09-09 又依次固定 Scope B（只谈内生形成/持续重构的 Selection-position）、SED-B（历史沉积是会改写后续 transition/reconstitution 条件的 retained writeback，而非持续占据一个不对称状态）以及 VG（Selection-position 还要求主动生成/再生成垂直 manifestation/background 结构）。这与旧承诺**不是同一命题的强弱两版**，因此 09-06 的 `Level 1: PASS — NARROW` **不为它背书**；09-09 strengthened claim 当时为 `Level 1: UNASSIGNED`、`Level 2: HOLD / NOT READY`、`scientific distinctiveness: NOT ESTABLISHED`。其后 #928 将主问题重定位到 D3/D4 manifestation / pre-object constitution；不要把后续 Class-M scoped recovered Level-1 结果回写成对旧 strengthened-V 命题的自动背书。
+- **Cycle 2 的 strengthened vertical claim 是一条新承诺，不继承旧 verdict**：09-07 作者把其中一条关系从「参与形成」强化为结构性必要条件；09-09 又依次固定 Scope B（只谈内生形成/持续重构的 Selection-position）、SED-B（历史沉积是会改写后续 transition/reconstitution 条件的 retained writeback，而非持续占据一个不对称状态）以及 VG（Selection-position 还要求主动生成/再生成垂直 manifestation/background 结构）。这与旧承诺**不是同一命题的强弱两版**，因此 09-06 的 `Level 1: PASS — NARROW` **不为它背书**；09-09 strengthened claim 当时为 `Level 1: UNASSIGNED`、`Level 2: HOLD / NOT READY`、`scientific distinctiveness: NOT ESTABLISHED`。其后 #928 将主问题重定位到 D3/D4 manifestation / pre-object constitution；Pass 17 又进一步表明 foreground/background 与 retained non-manifest potential 在 constitutive composite 下承压。不要把 Class-M scoped recovered Level-1 结果回写成对旧 strengthened-V 命题或 Pass-17 live residual 的自动背书。
 - **Cycle 3（Selection as creative primitive / Creator-Ground / 连续局部创造）已收口**：三轮作者裁决与二次裁决 COMPLETE。`Cycle-3-specific Level 0: PASS（translation-interpretive clarification）`、`Level 1: NOT NEWLY EARNED`、`Level 2: NOT FOUND`、`scientific distinctiveness: NOT ESTABLISHED`；non-redundant HOLD-exit credit 相对 Cycle 1 计为 YES。
 - **不可撤回性：作者已选 IRR-B**（2026-09-06）。即真正发生过的 Selection 必然在**当前完整因果状态**中留下不可完全抹除的有效差异（局部可恢复、信息可外移，但计入完整相关系统则不可能真正复原）。`IRR-B Level 1: PASS — NARROW`、`IRR-B Level 2: HOLD`。
 - **物理触发：作者已裁 C-primary / A-permitted**（2026-09-06）。不存在 physics-first 或解释中立的 primitive Selection 物理登记基础；有界的领域特定物理准入面可按需开发，但只是下游实现／测试接口。AM-A implementation pluralism 与 PHR-A 解释多元实现架构均保留。**不要求普遍物理触发，不认领普遍物理定律。**
@@ -93,8 +93,9 @@ updated: 2026-09-10
 ## 当前仓库状态
 
 - 单一权威主分支仍为 `main`；根目录治理继续执行 2026-07-20 减负纪律。
-- **PR #928 已合并到 main**：merge commit `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`；MOBJ-A / MOBJ2-B、D1/D2 vs D3/D4 retrospective correction、Class-M-scoped Level-1 guard 与 manifestation handoff 已进入当前基线。该合并不解除 Level 2 HOLD，也不建立 whole-package non-substitutability。
-- **Draft PR #927 当前仅做 supporting closure**：只保留 consequence=external readout 的作者纠偏、指向 main 上 Bearer cognitive / Selection-position ontological 裁决，并压缩记录旧 consequence-bearing / independent-Bearer 路线的负面结果与 supersession。不得从 #927 重开 RBH2 gate 或恢复局部 residual hunt。
+- **PR #928 已合并到 main**：merge commit `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`；MOBJ-A / MOBJ2-B、D1/D2 vs D3/D4 retrospective correction、Class-M-scoped Level-1 guard 与 manifestation handoff 已进入基线。该合并不解除 Level 2 HOLD，也不建立 whole-package non-substitutability。
+- **PR #927 已合并到 main**：merge commit `45016c447d81203840856a82470cf819e4ff7483`；consequence=external readout 作者纠偏、Bearer cognitive / Selection-position ontological routing 与旧 consequence-bearing / independent-Bearer 路线收口已进入当前 baseline。
+- **Draft PR #929 为当前 manifestation / Selection-position D3/D4 pressure workline**：从 `45016c447d81203840856a82470cf819e4ff7483` 开出。Pass 17 强化 Barad/Simondon/phenomenology/relational-formal comparator；不赋予新 Level，不解除 HOLD，不修改 canonical；在 Selection-position 更尖锐的 meaning gate 前触发 residual-hunt circuit breaker。
 - **Cycle 1 已通过 PR #910 合并到 main**：merge commit `f351f09a37f584344c6306d951ec485c0c545d2a`。四次作者 source trace、邻居/红队压力与负面实验结果全部保留；无 canonical promotion。Cycle 2 的原 stacked PR #911 已改为以 main 为基线，继续作为非 canonical 阶段记录处理；两轮整合都不等于第三井放行。
 - 当前 reconstruction hardening 只改 programme / source / bootstrap / governance/template 层，不在本轮 substantive 改写冻结的 P0/P1/P2 owner 或 L0 owner。
 - `Core_21` 现有 P0/P1/P2-P4、Core_22 equations、d/`Psi_f`/`T_dir`、Individuation/sigma、collective formal assets 继续按原历史/技术角色可检索；是否重分类由后续 role audit 决定。
