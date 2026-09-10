@@ -15,6 +15,8 @@ dependency:
   - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_BARAD_STRONGEST_NEIGHBOR_PASS13_2026-09-10.md
   - Core_Law/SRT_L0_Metaphysics.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
+  - Operations/Proposals/SRT_MOBJ_A_MOBJ2_B_MANIFESTATION_ONTOLOGY_INTERFACE_HARDENING_2026-09-10.md
+  - Operations/Audits/SRT_MOBJ2_B_MANIFEST_INTERFACE_LEVEL1_RECONSIDERATION_PASS16_2026-09-10.md
 tags: [SecondAuthorGate, MOBJ-A, MOBJ2-B, Objecthood, Manifestation, StateSpace, PredictiveState, PO-3]
 ---
 
@@ -45,44 +47,6 @@ Author source:
 
 ---
 
-## What the fuller pressure established
-
-Strong neighbors already pay much of the broad territory:
-
-```text
-Barad:
-constitutive cut / non-pregiven independent relata / determinate separability
-
-Simondon:
-preindividual -> individuation / transduction / individual as result
-
-phenomenology:
-focal manifestation + horizonal / non-thematic background
-
-predictive-state and computational-mechanics approaches:
-state can be relationally reconstructed from prediction / observation histories
-rather than assumed to be a hidden-object inventory.
-```
-
-Therefore none of the following is sufficient as an SRT-exclusive result:
-
-```text
-objects are not simply pregiven;
-there is a preindividual field;
-foreground has a background;
-state need not be a hidden physical object.
-```
-
-What remains live is the exact explanatory order:
-
-```text
-objecthood / determinate observability
-is downstream of constitutive differentiation,
-not the default floor from which that differentiation is explained.
-```
-
----
-
 ## Selected option — MOBJ2-B manifest-interface insufficiency
 
 ```text
@@ -106,45 +70,63 @@ A more general formalism could in principle model the constitutive process. The 
 
 ---
 
-## Rejected / non-selected alternatives
+## Why this survives the strongest state-space objection
 
-### MOBJ2-A — core explanatory-order thesis only
+Predictive-state and computational-mechanics approaches show that state need not be a hidden physical object. It can be relationally reconstructed from observation histories and predictions.
 
-Not selected as the controlling second adjudication. Its conservative distinction remains compatible but does not exhaust the author's chosen stronger direction.
+That blocks a weak critique of state-space models.
 
-### MOBJ2-C — absolute no-equivalent-third-person-formalism thesis
+But MOBJ2-B asks an earlier question:
 
-Not selected.
+```text
+what makes one determinate observation / action / test / boundary
+available as a primitive interface item in the first place?
+```
 
-The repository therefore must not infer:
+If the answer is simply taken as primitive, predictive closure does not discharge the constitutive debt.
+
+---
+
+## Non-selected alternatives
+
+```text
+MOBJ2-A = NOT SELECTED as controlling second adjudication
+MOBJ2-C = NOT SELECTED
+```
+
+MOBJ2-C's absolute theorem remains forbidden:
 
 ```text
 no possible formal representation can ever model L0 + Selection;
-formalization is intrinsically post-ontological and impossible;
-empirical unpredictability follows from SRT;
-PO-3 absolute theorem is established.
+formalization is intrinsically incapable of constitution;
+empirical unpredictability follows from SRT.
 ```
 
 ---
 
-## Concrete interpretation
+## Post-adjudication result
 
-Take a model that predicts every future observation perfectly from a relational predictive state.
+The governance sequence continued into noncanonical hardening and scoped Level reconsideration.
 
-The selected reading says:
+Current result:
 
 ```text
-if the model takes its determinate observation alphabet as primitive,
-it may be predictively complete at that interface,
-but it does not thereby explain how that alphabet became determinate.
+MOBJ2-B scoped Level 1:
+PASS — NARROW / RECOVERED
+
+scope:
+models whose primitive interface is already determinate / manifest.
 ```
 
-The theoretical distinction is therefore:
+This is not a newly invented independent Level-1 ontology claim. It is a recovered / clarified dependency consequence of canonical L0 and an explicit discriminator against the scoped model class.
+
+Still not established:
 
 ```text
-predictive / dynamical closure at a manifest interface
-!=
-constitutive closure of manifestation's genesis.
+whole-package global non-substitutability;
+absolute PO-3 theorem;
+Level 2 domain-native discriminator;
+HOLD exit.
 ```
 
 ---
@@ -155,8 +137,10 @@ constitutive closure of manifestation's genesis.
 MOBJ-A first author adjudication: CLOSED / SELECTED
 fuller neighbor pressure: PAID
 MOBJ2-B second author adjudication: CLOSED / SELECTED
+ontology/interface hardening: PAID at noncanonical level
+MOBJ2-B scoped Level 1: PASS — NARROW / RECOVERED
+whole-package global non-substitutability: NOT YET ESTABLISHED
 PO-3 absolute theorem: NOT ESTABLISHED
-Level 1: requires scoped reconsideration; no automatic promotion here
 Level 2: HOLD
 canonical edit: NO
 HOLD EXIT REVIEW 2: NOT TRIGGERED
