@@ -37,11 +37,7 @@ The author statement that opened the gate was:
 
 > **「所有对象都是选择后显现的部分，SRT 想把这种显现不当成默认，获得显现之前和 L0 和选择作为显现的要素的视野」**
 
-Pass 14 found the proposition coherent and potentially core after guarding against epistemic triviality, idealism, hidden-substrate regress and one-mechanism universalism.
-
 The adjudicated scope is **objecthood at a declared explanatory level**, not every determinate feature whatsoever.
-
----
 
 ## MOBJ-A — SELECTED
 
@@ -69,15 +65,6 @@ not universal claim that every determinate structure whatsoever is post-Selectio
 not yet PO-3 / no-state-space-equivalence theorem.
 ```
 
-The author thereby adopts the theory-architecture claim:
-
-```text
-manifestation / objecthood is explanandum,
-not an unexplained default floor.
-```
-
----
-
 ## MOBJ-B — NOT SELECTED
 
 ```text
@@ -86,20 +73,12 @@ is post-Selection manifestation;
 there is no determinate entity-level content prior to Selection.
 ```
 
-This stronger universalization is not licensed by the author's `A` response.
-
----
-
 ## MOBJ-C — NOT SELECTED
 
 ```text
 Objects may be ontologically complete before Selection;
 SRT only says observers encounter them through a selective foreground interface.
 ```
-
-This epistemic-only reading is not the selected constitutive direction.
-
----
 
 ## Separate issue remains open
 
@@ -118,10 +97,6 @@ Fuller mature-neighbor pressure is now recorded in:
 The required second author adjudication is now open in:
 
 - `Operations/Proposals/SRT_MOBJ_A_SECOND_AUTHOR_GATE_AFTER_FULLER_PRESSURE_2026-09-10.md`
-
-That second gate distinguishes a conservative explanatory-order reading, a stronger **manifest-interface insufficiency** claim, and an absolute no-formal-equivalence claim.
-
----
 
 ## Current status
 
