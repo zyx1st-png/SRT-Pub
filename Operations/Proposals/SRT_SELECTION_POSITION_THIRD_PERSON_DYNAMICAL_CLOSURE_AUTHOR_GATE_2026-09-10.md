@@ -16,163 +16,86 @@ dependency:
 tags: [AuthorGate, SelectionPosition, ThirdPersonDynamics, Observability, StateSpace, Ontology, Bearer, Cognition]
 ---
 
-# Selection-position vs third-person dynamical closure — author gate
+# Selection-position vs third-person dynamical closure — original author gate
 
-> **Purpose:** return the author's new Position/Bearer layer assignment after control-theoretic observability and state-space elimination pressure.
+> **Routing update 2026-09-10:** this gate is no longer the current author-facing fork in its original form. The author later stated:
 >
-> **Fixed:** the author has already placed the principal structural / ontological specialness on `Selection-position` and Bearer's specialness primarily on the cognitive side. This gate does not reopen that high-level assignment. It asks only what the author's phrase `由外部观测获得完整的动力学` is intended to mean after the observability correction.
+> **「倾向于 B，结合前对象场和 SRT 提出的可观测量是前景/背景化（选择）的前景部分」**
+>
+> Because `倾向于` is provisional and because the clarification materially changes what B means, no original `SPD-B` adjudication is inferred. The current gate is now:
+>
+> `Operations/Proposals/SRT_SELECTION_POSITION_FOREGROUND_OBSERVABILITY_REVISED_AUTHOR_GATE_2026-09-10.md`
 
-## 1. What pressure has established
+## 1. Historical gate state
 
-The following implication is too strong:
+The original pressure established that this implication was too strong:
 
 ```text
 ordinary feedback system
 -> all internal dynamics are reconstructible from external outputs
 ```
 
-Classical observability / realization theory already shows that ordinary feedback systems may contain unobservable states or multiple realization descriptions unless additional conditions are satisfied.
+Classical observability / realization theory shows that ordinary feedback systems may contain unobservable states unless extra conditions hold.
 
-Therefore empirical output-reconstructibility cannot be the core boundary between ordinary feedback and Selection-position.
-
-At the same time, the deeper author intuition remains coherent:
+The original fork therefore offered:
 
 ```text
-without Selection-position
--> third-person state / transition / feedback organization may exhaust
-   the system at the declared dynamical level
+SPD-A
+third-person dynamical closure + ontology-level Position typing
+
+SPD-B
+Selection-position necessarily implies external dynamical incompleteness
+
+SPD-C
+Position fully eliminable into ordinary augmented state-space language
 ```
 
-This is different from saying a practical observer can infer every internal state.
+At that point the machine recommendation was SPD-A.
 
-## 2. SPD-A — third-person dynamical closure, Position as ontological typing
+## 2. Why the original SPD-B wording is now superseded as the current question
+
+The later author clarification does not merely endorse generic empirical unobservability.
+
+It ties the B direction to the SRT manifest/background structure:
 
 ```text
-Without Selection-position,
-the system is exhausted at the declared dynamical level by
-ordinary third-person state / transition / feedback relations.
-
-This does not require every state to be externally observable in practice.
-
-Selection-position is not an extra hidden dynamical state or extra force.
-It is a structural / ontological "from-where" relation:
-what has become the non-flat position from which later Selection continues.
-
-A domain theory may remain predictively / causally complete while
-SRT adds an ontological typing / unification relation.
+pre-object relational field
+-> Selection as foreground/background differentiation
+-> foreground / manifest side is the directly observable side
+-> background / latent relation is not co-manifest in that same event
 ```
 
-Required guard:
+That is a different claim from ordinary hidden state or sensor limitation.
 
-```text
-predictive completeness != ontological completeness
-```
-
-Required anti-redundancy test:
-
-```text
-if replacing Selection-position by ordinary state / latent-state / attractor /
-policy / feedback vocabulary loses no dependency, mapping restriction,
-explanatory compression or cross-domain transfer,
-then Position has not earned framework-level work.
-```
-
-**Machine recommendation: SPD-A.**
-
-Why: it preserves the author's structural-ontology claim without making SRT depend on empirical invisibility or on an extra hidden causal variable.
-
-## 3. SPD-B — Selection-position implies empirical dynamical incompleteness from outside
+Therefore the old wording:
 
 ```text
 A genuine Selection-position necessarily prevents an external observer
 from recovering a complete dynamical description.
 ```
 
-This would make empirical non-observability part of the SRT claim.
+is too coarse to remain the active gate.
 
-Problems:
+## 3. Current routing
 
-```text
-ordinary feedback systems can also be unobservable;
-observability depends on measurement surface;
-non-observability does not identify Selection-position;
-formal observation / identifiability conditions would be required;
-```
-
-**Machine status: HIGH BURDEN / NOT RECOMMENDED.**
-
-## 4. SPD-C — Position is ordinary augmented state
+Use the refined gate instead:
 
 ```text
-Selection-position can be fully replaced by ordinary state-space / hidden-state
-vocabulary with no loss of dependency structure or explanatory work.
+SPD-B* — foreground-bounded ontological observability
 ```
 
-If selected, then:
-
-```text
-Selection-position structural / ontological distinctiveness collapses at this level;
-SRT may still retain broader interpretive value, but not through an independent Position role.
-```
-
-## 5. Bearer routing under any live option
-
-The author's new layer assignment should be preserved:
-
-```text
-Selection-position:
-main structural / ontological specialness
-
-Bearer:
-primarily cognitive continuity / attribution / stabilization role
-```
-
-Do not restore:
-
-```text
-Bearer = consequence-bearing ontological primitive
-```
-
-and do not infer a numerical-identity theorem.
-
-The exact relation in the author's phrase:
-
-```text
-选择不是随意的，对位置的稳定有承担作用
-```
-
-still permits a later narrower clarification of whether stability is carried mainly by:
-
-```text
-repeated Selection;
-Bearer-level cognitive continuity;
-or their reciprocal organization.
-```
-
-No choice is made here.
-
-## 6. Author-facing short form
-
-> 你现在已经把真正的本体特殊性放到 `Selection-position`，而把 Bearer 放到认知性的持续承接这一层。控制理论压力只修正了一点：**传统反馈系统也不一定能从有限外部输出把所有内部状态反演出来**，所以“外部可完整观测”不适合作为分界。
->
-> **SPD-A（推荐）：** 你说的“完整动力学”主要指第三人称动力学闭合——没有 Selection-position 时，给定完整状态、反馈和转移关系，就不再需要一个额外的“从哪里继续选择”的本体关系。即使有 Selection-position，领域动力学仍然可以预测完整；SRT增加的是本体结构的类型和跨领域统一，不是一个额外隐藏变量。
->
-> **SPD-B：** 更强，认为只要有 Selection-position，外部原则上就不可能得到完整动力学。这会把 SRT 推向经验不可观测性，目前证据和控制理论都不支持。
->
-> **SPD-C：** Position 本质上只是一个 hidden state / latent state，加入状态向量以后什么都没损失。若如此，这一层本体特殊性就应放弃。
-
-## 7. Stop rule
+Current status:
 
 ```text
 Selection-position structural / ontological specialness: AUTHOR-CONFIRMED
 Bearer cognitive specialness: AUTHOR-CONFIRMED AT HIGH LEVEL
-strong empirical observability reading: PRESSURED / NOT SAFE
-SPD-A/B/C adjudication: OPEN
-state-space anti-redundancy test: PREPARED
+old crude SPD-B wording: SUPERSEDED AS CURRENT GATE
+SPD-B direction: AUTHOR PROVISIONAL LEANING
+SPD-B* refinement: PREPARED FOR AUTHOR CONFIRMATION
 Level 1: UNASSIGNED
 Level 2: HOLD
-framework-level unification value: LIVE / NOT YET ESTABLISHED
 canonical edit: NO
 new primitive / symbol: NO
 new experiment authorization: NO
 HOLD EXIT: unchanged
+```
