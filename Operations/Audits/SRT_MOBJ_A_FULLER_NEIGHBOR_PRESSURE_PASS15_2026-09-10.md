@@ -2,7 +2,7 @@
 id: SRT-AUDIT-MOBJ-A-FULLER-NEIGHBOR-PRESSURE-PASS15-20260910
 type: audit
 status: active
-record_stage: fuller_neighbor_pressure
+record_stage: fuller_neighbor_pressure_completed
 date: 2026-09-10
 layer: meta
 epistemic_layer: os
@@ -18,7 +18,8 @@ dependency:
   - Core_Law/SRT_L0_Philosophy_Bridge.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md
-tags: [MOBJ-A, Objecthood, Manifestation, PreObjectField, Barad, Simondon, Phenomenology, PredictiveState, ComputationalMechanics, StrongestNeighbor]
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md
+tags: [MOBJ-A, MOBJ2-B, Objecthood, Manifestation, PreObjectField, Barad, Simondon, Phenomenology, PredictiveState, ComputationalMechanics, StrongestNeighbor]
 ---
 
 # MOBJ-A — fuller mature-neighbor pressure pass 15
@@ -387,23 +388,46 @@ proof that no third-person formalism can ever be ontologically equivalent.
 
 ---
 
-## 10. Disposition before second author adjudication
+## 10. Post-pass author disposition
+
+After this pressure, the author explicitly selected the recommended stronger explanatory-order option:
+
+```text
+MOBJ2-B = AUTHOR-SELECTED
+```
+
+Source:
+
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_MOBJ2_B_MANIFEST_INTERFACE_INSUFFICIENCY_ADJUDICATION_2026-09-10.md`
+
+The selected consequence is:
+
+```text
+if a model takes fully determinate observations / state variables / action labels /
+boundaries as primitive, it is already downstream of manifestation;
+therefore predictive / dynamical completeness at that interface cannot by itself
+exhaust the genesis of the interface's determinacy.
+```
+
+This does not establish an absolute no-formalization theorem.
+
+---
+
+## 11. Final disposition of this pass
 
 ```text
 MOBJ-A author meaning: PAID / AUTHOR-SELECTED
-MOBJ-A coherence with canonical L0: STRONG
+MOBJ2-B second adjudication: PAID / AUTHOR-SELECTED
 broad anti-object-first novelty: NEIGHBOR-PAID
 preindividual-before-individual novelty: NEIGHBOR-PAID
 foreground/background novelty: NEIGHBOR-PAID IN BROAD FORM
 hidden-object-state critique: TOO WEAK / DROP
 predictive-state closure challenge: STRONG
 exact SRT dependency package: LIVE
-comparative non-substitutability: NOT YET ESTABLISHED
-PO-3 no-equivalent-third-person-state-space theorem: OPEN
-Level 1 reconsideration: NOT YET AUTHORIZED
+comparative non-substitutability against global strongest composite: NOT YET ESTABLISHED
+absolute PO-3 theorem: NOT ESTABLISHED
+Level 1: routed to scoped reconsideration in Pass 16
 Level 2: HOLD
 canonical edit: NO
 HOLD EXIT REVIEW 2: NOT TRIGGERED
 ```
-
-The next governance step is a second author adjudication on whether MOBJ-A is intended as (a) a core explanatory-order thesis without a universal formal non-equivalence theorem, or (b) the basis for a stronger claim that any model beginning from determinate observables is necessarily downstream and cannot by itself exhaust the pre-object constitution question.
