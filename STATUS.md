@@ -13,7 +13,7 @@ updated: 2026-09-10
 > **角色**：当前状态面板；fresh session 先按 `AGENTS.md §Session Start`，本页 `§Fast Status` 提供当前研究身份与排期。
 > **最后更新**：2026-09-10
 > **当前理论重构优先级 / 条件加载入口（2026-09-10）**：`Operations/Status_History/SRT_STATUS_2026-09-10_MANIFESTATION_CORE_RECONSTRUCTION_PRIORITY_AND_NEXT_SESSION_HANDOFF.md`。对 theory advancement / author re-entry / manifestation / pre-object / Selection-position 工作，完成 `AGENTS.md §Session Start` 三文件 bootstrap 后优先加载该 handoff；它不是第二套 bootstrap authority。
-> **当前主理论工作线**：Draft PR #928 `Re-audit SRT core around post-Selection manifestation and manifest-interface insufficiency`；#927 为 consequence/Bearer 纠偏的 subordinate/supporting workline。
+> **当前主理论工作线**：PR #928 已于 2026-09-10 合并，`main = e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`；Draft PR #927 当前仅作为 consequence/Bearer supporting closure。#927 收口后，新的主工作线应直接进入 manifestation / Selection-position 的 D3/D4 strongest-neighbor pressure，不再恢复旧 Bearer/consequence residual hunt。
 > **当前作者级方向（节奏与本体范围）**：`01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
 > **当前作者协作方向（SRT 主导吸纳与问题生成）**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`
 > **当前执行计划**：`Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md §0.3 / §4–§11`
@@ -45,7 +45,7 @@ updated: 2026-09-10
 > **作者源记录**：`01_Source_Intuition/SRT_AUTHOR_SRT_LED_COLLABORATION_DIRECTION_2026-09-08.md`。
 > **执行与验收计划**：`Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md`。后续会话效果尚待验收；本轮不裁决 R，不提升 V/Level，不修改以下科学 verdict 或解除 HOLD。
 >
-> **2026-09-09 Cycle-2 routing 重同步**：在 09-07 strengthened dependency 之后，作者已于 09-09 依次确认 **Scope B → SED-B → active vertical generation (VG)**。同日旧 attractor `PROVISIONALLY PAID / ACCEPT` 记录保留为历史 pressure state，但当前处置由 VG ruling 与后续 #928 sequence / 2026-09-10 handoff 控制。**这些 meaning 裁决本身不授予新 Level；后续 MOBJ2-B 仅有 Class-M scoped recovered Level-1 routing，Level 2 仍 HOLD。**
+> **2026-09-09 Cycle-2 routing 重同步**：在 09-07 strengthened dependency 之后，作者已于 09-09 依次确认 **Scope B → SED-B → active vertical generation (VG)**。同日旧 attractor `PROVISIONALLY PAID / ACCEPT` 记录保留为历史 pressure state，但当前处置由 VG ruling、已合并的 #928 sequence 与 2026-09-10 handoff 控制。**这些 meaning 裁决本身不授予新 Level；MOBJ2-B 仅有 Class-M scoped recovered Level-1 routing，Level 2 仍 HOLD。**
 
 > **本页 2026-09-07 重同步（历史说明）**：此前面板停在 2026-09-05，未反映 09-06 落地的 Cycle-2 收口、Cycle-3 收口、HOLD EXIT REVIEW 1、bearerless NO-GO 与 IRR/物理触发两道作者裁决。**判断 cycle 状态、裁决是否已支付或 Level verdict 时，一律以上方指针块的具名 closure / ruling / audit 文件为准，不要以本页摘要为准。**
 >
@@ -93,6 +93,8 @@ updated: 2026-09-10
 ## 当前仓库状态
 
 - 单一权威主分支仍为 `main`；根目录治理继续执行 2026-07-20 减负纪律。
+- **PR #928 已合并到 main**：merge commit `e76e4142ef84e98e575b0fd0bc0ac2e7167fe0d3`；MOBJ-A / MOBJ2-B、D1/D2 vs D3/D4 retrospective correction、Class-M-scoped Level-1 guard 与 manifestation handoff 已进入当前基线。该合并不解除 Level 2 HOLD，也不建立 whole-package non-substitutability。
+- **Draft PR #927 当前仅做 supporting closure**：只保留 consequence=external readout 的作者纠偏、指向 main 上 Bearer cognitive / Selection-position ontological 裁决，并压缩记录旧 consequence-bearing / independent-Bearer 路线的负面结果与 supersession。不得从 #927 重开 RBH2 gate 或恢复局部 residual hunt。
 - **Cycle 1 已通过 PR #910 合并到 main**：merge commit `f351f09a37f584344c6306d951ec485c0c545d2a`。四次作者 source trace、邻居/红队压力与负面实验结果全部保留；无 canonical promotion。Cycle 2 的原 stacked PR #911 已改为以 main 为基线，继续作为非 canonical 阶段记录处理；两轮整合都不等于第三井放行。
 - 当前 reconstruction hardening 只改 programme / source / bootstrap / governance/template 层，不在本轮 substantive 改写冻结的 P0/P1/P2 owner 或 L0 owner。
 - `Core_21` 现有 P0/P1/P2-P4、Core_22 equations、d/`Psi_f`/`T_dir`、Individuation/sigma、collective formal assets 继续按原历史/技术角色可检索；是否重分类由后续 role audit 决定。
@@ -116,7 +118,7 @@ These pointers preserve discoverability of closed stale branches without reactiv
   - branch: `codex/research-corpus-increment-pr`
   - salvage value: 86-file first-read ledger plus Laukkonen–Slagter and Fields–Levin SourceCards / source-native notes.
   - reactivate when: an active meditation / predictive-processing / process-memory / object-process neighbor cycle requires those sources.
-  - do not transplant wholesale: old bundles, STATUS/log state, old `A-class` namespace, or the prior theory adjudication; all theory claims require fresh K/A/B/C/D routing.
+  - do not transplant wholesale: old bundles, STATUS/log state, old `A-class` namespace, or the prior theory adjudication; all theory claims require fresh K/A/B/C/D routing。
 
 ## 当前权威锚点（本 PR 不改）
 
