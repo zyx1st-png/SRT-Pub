@@ -55,7 +55,7 @@ edit canonical only after explicit author adjudication.
 
 The strongest current reconstruction no longer prefers a serial `L0 -> L1 -> L2 -> subject` ladder.
 
-It instead uses two coupled axes.
+It instead uses two **analytically distinct but dynamically coupled** axes.
 
 ### Axis A — modal / actualisation
 
@@ -100,6 +100,8 @@ external/environmental
 shared/institutional
 relation-level/collective
 ```
+
+The two axes are **not independent**. Historical writeback reshapes later effective selectability / manifestation conditions; later Selection in turn generates new history. The point of the two-axis retype is to prevent `L2` from being mistaken for a simple third chronological rung, not to deny co-evolution between history and later Selection.
 
 ## 2. Formed continuity / One-function
 
@@ -298,7 +300,7 @@ L2 AS FUNDAMENTAL CO-EQUAL DOMAIN: DOUBTFUL
 L2 AS RETYPED SEDIMENTED CONSTRAINT LAYER / LEGACY LABEL: POSSIBLE
 ```
 
-The deep architecture is better represented as two axes than as a three-rung ladder.
+The deep architecture is better represented as two coupled axes than as a three-rung ladder.
 
 ## 9. Claims currently routed through L2 can be separated
 
@@ -428,6 +430,13 @@ manifest event -> history -> re-entry -> sedimentation
                               OPEN
 ```
 
+Feedback is bidirectional across cycles:
+
+```text
+historical sedimentation -> reshapes later effective selectability;
+later Selection -> generates further history / sedimentation.
+```
+
 Cross-cutting revision:
 
 ```text
@@ -537,4 +546,4 @@ L2 final name/status: OPEN
 subject-position sufficiency: PROVISIONAL
 ```
 
-The next valid move is author adjudication / adversarial pressure on Q20–Q23, not immediate canonical rewrite.
+The next valid move is adversarial pressure and author adjudication on Q20–Q23, not immediate canonical rewrite.
