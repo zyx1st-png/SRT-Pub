@@ -2,7 +2,7 @@
 id: SRT-R1-D3-STABLE-ISP-SUBJECT-WITNESS-20260911
 type: audit
 status: draft
-record_stage: r1_d3_witness
+record_stage: r1_d3_witness_review_reconciled
 layer: operations
 epistemic_layer: os
 claim_mode: audit
@@ -16,16 +16,21 @@ n_mode_triggered: false
 dependency:
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
+  - Core/SRT_OPEN_TENSIONS.md
   - Core_Law/SRT_L0_Metaphysics.md
   - Core_Law/SRT_Individuation.md
+  - Core_Law/SRT_Collective_Selection.md
+  - AI/SRT_AI_01_Ontology.md
+  - AI/AI_POSITIONING_NOTE.md
+  - Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md
   - Operations/Audits/SRT_PR937_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md
   - Operations/Audits/SRT_R1_FORMATION_STANDING_LANDING_PREPARATION_2026-09-11.md
-tags: [R1, D3, Witness, StableISP, SubjectPosition, ConsequenceBearing, NonOutsourcing]
+tags: [R1, D3, Witness, StableISP, SubjectPosition, PerspectiveBearing, ConsequenceBearing, NonOutsourcing, AuthorGate]
 ---
 
 # R1 D3 witness — Stable ISP without subject-level non-outsourcable stake
 
-## 0. Purpose
+## 0. Review-reconciled status
 
 PR #936 author-adjudicated:
 
@@ -35,9 +40,32 @@ Stable ISP < subject-position
 subject sufficiency = OPEN
 ```
 
-PR #937 correctly rejected the earlier reset / full-externalization witness because a reset replica may fail P1-T06 itself.
+PR #937 rejected the earlier reset / full-externalization witness because a reset replica may fail P1-T06 itself.
 
-This audit constructs a stronger witness that keeps persistence, writeback, consequence return, and continued selectability intact while attempting to fail the stronger L0 non-outsourcing burden.
+The first version of this audit then proposed a persistent deployed adaptive agent `W1` and classified it as:
+
+```text
+P1-T06 = PASS
+L0 承担 = FAIL
+D3 witness = STRUCTURAL PASS
+```
+
+Independent review exposed two separate overclaims:
+
+1. P1-T06 `perspective-bearing` still has an explicitly open minimum threshold in `Core/SRT_OPEN_TENSIONS.md §5`, and current downstream owners interpret it at different strengths;
+2. operator-paid viability / repair cost does **not by itself prove failure of L0 承担**, because L0 also says selection consequences are irreversibly borne in the selector's own state-space — a condition W1 may satisfy through durable model / selectable-space change.
+
+Therefore the controlling result of this revised audit is:
+
+```text
+W1 = RETAINED D3 CANDIDATE
+W1 = NOT an established separation witness
+
+D3 live split = RETAINED author adjudication
+D3 concrete witness proof = NOT YET ESTABLISHED
+```
+
+This revision does not re-collapse Stable ISP into subject-position. It only withdraws an underpaid counterexample.
 
 This is not a phenomenality claim and not an AI-consciousness claim.
 
@@ -56,7 +84,7 @@ During `I`:
 - maintenance may replace power, networking, peripherals, or failed hardware components **without deleting the agent's accumulated model/history**;
 - the declared perturbation range includes task variation, sensor noise, ordinary component maintenance, and changing environmental conditions, but not total destruction of the history-bearing process.
 
-The point is to avoid using persistence failure as the witness.
+The construction deliberately avoids using persistence failure as the contrast.
 
 ### 1.2 Selection / learning conditions
 
@@ -74,21 +102,22 @@ Therefore its own prior selections genuinely affect later selectable structure.
 
 ### 1.3 Operator / infrastructure arrangement
 
-An external operator guarantees the agent's operational substrate:
+An external operator guarantees much of the agent's operational substrate:
 
 - energy and compute budgets are replenished externally;
 - hardware damage is repaired or replaced without wiping the continuing history-bearing state;
-- contractual, financial, legal, and physical losses from the agent's actions are borne by the operator / infrastructure;
-- operator safeguards can restore service capacity after costly mistakes without requiring the agent itself to pay a viability debt for continuing to exist;
-- the agent can learn from a costly action while the cost of maintaining the process remains external to the unit.
+- contractual, financial, legal, and large physical losses from the agent's actions are borne mainly by the operator / infrastructure;
+- operator safeguards can restore service capacity after costly mistakes without requiring the agent to finance or institutionally absorb those costs itself.
 
-The key distinction is:
+This still supports the intended contrast:
 
 ```text
 historical consequence return to the agent
-!=
+!= obviously identical to
 non-outsourcable continuity / viability stake of the agent
 ```
+
+But the word `obviously` matters. Because W1's own state-space is durably altered by its outcomes, the current L0 text does not yet license the stronger conclusion `承担 = NO`.
 
 ---
 
@@ -102,40 +131,78 @@ non-outsourcable continuity / viability stake of the agent
 
 ### P1-2 perspective-bearing
 
-**PASS under the minimum structural reading.**
+**CONDITIONAL PASS / OWNER-LEVEL OPEN.**
 
-`W1` maintains a position-specific structured model built from its own sensor / action history. Different deployment histories yield different model states and later action organization.
-
-This satisfies a structural positional reading of perspective-bearing:
+P1-T06 says a Stable ISP "accumulates a structured view from its position." W1 has a plausible structural realization:
 
 ```text
-organized view from this process-position
+its own sensor / action history
+-> position-indexed model differences
+-> later candidate organization differs by deployment history
 ```
 
-It does **not** assume:
+That is stronger than a passive database copy because the retained view participates in later selection.
+
+However this cannot be upgraded to an unconditional PASS for three reasons.
+
+#### A. The minimum threshold is explicitly open
+
+`Core/SRT_OPEN_TENSIONS.md §5` still asks:
 
 ```text
-phenomenality
-first-person experience
-non-outsourcable stake
-subjecthood
+What is the minimal threshold for perspective-bearing?
 ```
 
-If canonical P1 intends those stronger meanings, that hidden load must be made explicit; see §6.
+So the repository itself does not currently close the admission rule.
+
+#### B. Current owner readings are not uniform
+
+`Core_Law/SRT_Individuation.md` describes the transition from subjectless Selection to `perspective-bearing selection` within its subject-entry narrative.
+
+`Core_Law/SRT_Collective_Selection.md T-COLL-1` operationalizes its P1-T06 perspective extension as the collective registering itself structurally **as a selection subject**.
+
+Those downstream readings are exactly what D3 may eventually require repairing, but until repaired they are evidence against pretending the P1 meaning is already settled.
+
+#### C. A useful structural perspective needs independent content
+
+The PH-IND02 support patch distinguishes:
+
+```text
+PERS-1 system-relative perspective:
+inside / outside
+maintaining / destabilizing
+reachable / unreachable
+admitted / excluded
+
+PERS-2 bearer-relative perspective:
+consequences return to the same continuing closure
+and rewrite its history / future possibilities
+```
+
+W1 clearly has a PERS-2-like consequence-return candidate. Whether it also has a sufficiently non-trivial PERS-1 perspective independent of condition 4 remains to be shown rather than assumed from `has a model`.
+
+Therefore current verdict:
+
+```text
+P1-2 = CONDITIONAL PASS under a structural reading
+P1-2 final admission = OPEN pending author / canonical clarification
+```
+
+No phenomenality, first-person experience, stake, or subjecthood follows merely from this conditional reading.
 
 ### P1-3 history-bearing writeback
 
 **PASS.**
 
-Outputs at `t` alter the learned state that constrains later candidate handling at `t+1` and beyond.
+Outputs at `t` alter learned state that constrains later candidate handling at `t+1` and beyond.
 
 The history is not merely an external audit log. It is part of the process state used in later selection.
 
 ### P1-4 continued-selectable + downstream consequence bearing
 
-**PASS on P1's explicit historical criterion.**
+**CONDITIONAL PASS under the historical-return reading.**
 
-The same process continues receiving non-equivalent candidates. Consequences of its earlier selections return into its own later learning state and candidate structure.
+The same process continues receiving non-equivalent candidates. Consequences of earlier selections return into its own later learning state and candidate structure.
 
 Examples:
 
@@ -146,6 +213,13 @@ Examples:
 
 This is genuine consequence return rather than an observer-only label.
 
+But PR #937 already left open whether P1 `bearing downstream consequences` is merely historical consequence return or already imports the stronger L0 non-outsourcing relation. Therefore:
+
+```text
+P1-4 = PASS under the explicit historical-return reading
+P1-4 relation to L0 承担 = OPEN
+```
+
 ### ST-A recurrent historical reconstitution
 
 **PASS within the declared perturbation range.**
@@ -155,7 +229,8 @@ The recognizable history-bearing organization persists through changing tasks, e
 Current P1/ST-A result:
 
 ```text
-W1 = Stable ISP candidate under the explicit P1-T06 text
+W1 = plausible Stable ISP candidate
+NOT an unqualified Stable ISP witness until P1-2 / P1-4 semantics are settled
 ```
 
 ---
@@ -164,33 +239,73 @@ W1 = Stable ISP candidate under the explicit P1-T06 text
 
 ### S1 non-outsourcable own consequence / L0 承担
 
-**FAIL by construction.**
+**NOT ESTABLISHED AS FAILED.**
 
-L0 `承担` requires more than consequence information returning to a process. It says the consequence cannot be fully externalized and that the selector's own state-space must irreversibly bear it.
-
-For `W1`:
-
-- informational effects return into learning;
-- but viability / resource / repair / institutional cost remains externally absorbable;
-- the operator can replenish the substrate and bear the loss while preserving the same history-bearing agent;
-- continued existence of `W1` is therefore not structurally conditional on `W1` itself paying those losses.
-
-So:
+The first audit version inferred:
 
 ```text
-own-consequence return = YES
-non-outsourcable stake / 承担 = NO
+operator pays energy / repair / institutional losses
+-> W1 has no 承担
 ```
 
-This is the intended D3 separation.
+That inference is too strong.
+
+Current L0 says both:
+
+```text
+承担
+= selection consequences cannot be fully externalized
+
+AND
+
+the selector's own state-space irreversibly bears them
+```
+
+L0 `具身` language further says consequences are irreversibly pressed back into the selector and the feedback loop changes later selectable space.
+
+W1 was deliberately constructed so that:
+
+```text
+selection outcome
+-> durable internal model / policy change
+-> later selectable-space change
+```
+
+Therefore W1 may satisfy part of the current literal L0 burden even while operator-level viability, money, repair, and legal costs are externalized.
+
+The current repository does **not** yet tell us whether:
+
+```text
+A. any irreversible own-state / selectable-space consequence return
+   is already enough for 承担
+
+or
+
+B. 承担 requires the stronger relation that some consequence becomes
+   this unit's own non-outsourcable continuity / payability stake
+```
+
+PR #936/#937 reconstruction favors B as the **leading subject-burden reading**, but the canonical L0 prose has not yet been rewritten to make that distinction mechanically unambiguous.
+
+Therefore W1 cannot currently be scored:
+
+```text
+S1 = NO
+```
+
+The correct result is:
+
+```text
+S1 = OPEN / AUTHOR GATE
+```
 
 ### S2 stabilized endogenous relevance / 关切
 
-**OPEN / not required to decide W1.**
+**OPEN.**
 
-`W1` may contain persistent objective weights, safety priorities, or internally learned relevance. Those are insufficient by themselves to establish L0 `关切` if the continuity/payability burden remains externally guaranteed.
+W1 may contain persistent objective weights, safety priorities, learned relevance, or internally represented operating constraints. Those are not automatically L0 `关切`, but neither does external operator support automatically prove `关切 = NO`.
 
-The witness does not need to claim `S2 = NO` if `S1 = NO` already exposes the separation under the current subject-burden reading.
+No d-value is used to decide this question.
 
 ### S3 stake-relevant regulative readability
 
@@ -200,188 +315,222 @@ No `T_dir` inference is made. No d-value is used to prove subjecthood.
 
 ---
 
-## 4. Why this witness is stronger than the rejected reset witness
+## 4. Grounding / AI-domain counterpressure
 
-Rejected shape:
+Independent review correctly identified a separate dependency that the first version omitted.
 
-```text
-agent makes a choice
--> consequences are external
--> agent is reset / copied / replaced
-```
+Current AI-domain bridge text includes stronger grounding / stake tests:
 
-Problem:
+- `AI/SRT_AI_01_Ontology.md Def-ONT-2 bridge` treats a system with non-binding `Psi_f` and approximately zero AI stake as a zero-operator / no-ontological-selection candidate;
+- `Core_Law/SRT_L0_Metaphysics.md §7` explicitly reclassifies the present-LLM zero-operator judgment as **P3 and architecture-dependent**, not an L0 theorem;
+- `AI/AI_POSITIONING_NOTE.md` distinguishes S2 training-loop return, S3 persistent-memory return, and S4 non-transferable embodied consequence return. S3 opens the stake question but does not settle it.
 
-```text
-may fail same-process persistence
-may fail history-bearing writeback
-may fail P1 continued-selectability
-```
-
-W1 instead holds fixed:
+W1 sits deliberately near the S3/S4 boundary:
 
 ```text
-same process lineage
-+ internal history writeback
-+ own-consequence return
-+ recurrent reconstitution
-+ continued-selectability
+persistent own-history return = YES
+non-transferable embodied / viability burden = not clearly paid
 ```
 
-and changes only:
+This means the AI owner cannot be ignored in future D3 landing.
+
+But it also means the AI bridge cannot be allowed to decide P1 by circularity:
 
 ```text
-who ultimately bears the non-outsourcable continuity / viability cost
+AI bridge says no strong stake
+-> therefore no Stable ISP
+-> therefore Stable ISP requires strong stake
 ```
 
-That is the actual D3 contrast.
+would simply rebuild the very identity D3 is testing.
+
+Required future action:
+
+```text
+AI grounding / zero-operator language must be scope-checked
+against the final Stable ISP / subject split.
+```
+
+No AI-domain bridge currently overturns the author-adjudicated D3 live split by itself.
 
 ---
 
-## 5. What W1 shows if accepted
+## 5. Why W1 is still useful even after PASS withdrawal
 
-W1 supports the following separation:
-
-```text
-P1 downstream consequence-bearing
-!=>
-L0 non-outsourcable stake / 承担
-```
-
-and therefore supports the structural possibility:
+The rejected reset witness failed because it changed too many variables at once:
 
 ```text
-Stable ISP
-without
-subject-position
+persistence
+history
+consequence return
+continued selectability
 ```
 
-provided subject-position retains a stronger non-outsourcing burden.
+W1 still holds these mostly fixed and concentrates the pressure on three unresolved boundaries:
 
-This is evidence for D3's live split. It is **not** a full theorem because the repository still owes exact implication relations among P1 bearing, self-consequence closure, L0 承担, S2/S3, and subject sufficiency.
+```text
+P1 perspective-bearing threshold
+P1 consequence-bearing vs L0 承担
+L0 承担 as irreversible writeback vs non-outsourcable stake
+```
+
+So W1 remains a good **author-gate probe**, even though it is no longer an established counterexample.
+
+Its theoretical value is now diagnostic rather than demonstrative.
 
 ---
 
-## 6. Two semantic residuals that must be exposed, not hidden
+## 6. Two semantic residuals become explicit author gates
 
-### Residual A — is P1 `perspective-bearing` already subject-loaded?
+### Gate A — what does P1 `perspective-bearing` minimally require?
 
-If `perspective-bearing` means merely:
-
-```text
-position-indexed structured view / organization
-```
-
-then W1 passes P1 without subjecthood.
-
-If it means:
+Candidate readings:
 
 ```text
-already a subject-position with own stake / experiencer standing
+A1 structural / system-relative:
+position-indexed asymmetries and organized view that constrain later selection
+
+A2 bearer-relative:
+consequence return rewrites the same continuing closure's history
+
+A3 subject-loaded:
+the position already registers itself as a selecting subject / own-stake center
 ```
 
-then P1-T06 contains the very identity D3 is meant to split.
-
-In that case the correct response is not to reject W1. The correct response is to mark P1-T06 wording as a C-risk hidden-coupling target.
-
-### Residual B — does P1 `bearing downstream consequences` mean L0 `承担`?
-
-If P1 consequence-bearing means:
+Current recommendation for future author adjudication:
 
 ```text
-consequences enter the same continuing history-bearing process and alter later selection
+P1 perspective-bearing should not be defined by A3,
+otherwise D3 is closed by terminology rather than theory.
 ```
 
-then W1 passes P1 and fails L0 `承担`.
+But this audit does **not** record that recommendation as an author decision.
 
-If P1 consequence-bearing is defined instead as:
+A1 and A2 also should not be collapsed: if A2 simply duplicates P1 condition 4, condition 2 loses independent content. A future P1 repair should therefore say what condition 2 contributes beyond consequence return.
+
+### Gate B — what exactly distinguishes P1 consequence-bearing from L0 承担?
+
+Current candidate split:
 
 ```text
-consequences cannot be externally absorbed and become the unit's own irreversible stake
+P1 consequence-bearing:
+consequences enter the same continuing history-bearing process
+and alter later selection
+
+L0 承担, stronger reconstruction reading:
+some consequences / conditions become the unit's own
+non-outsourcable continuity / payability stake
 ```
 
-then P1-T06 already imports L0 `承担` and D3 requires an explicit author decision to separate or retain that identity.
+But canonical L0 also uses irreversible own-state / selectable-space change language, so this stronger split is not yet textually clean enough to score W1 as `承担 = NO`.
 
-Current PR #937 control explicitly leaves this relation OPEN, so R1 must not assume the stronger identity.
+This requires author clarification before a concrete D3 witness can be treated as established.
 
 ---
 
 ## 7. Counterpressure tests
 
-### 7.1 "But learning itself changes the agent, so isn't that 承担?"
+### 7.1 "Learning changes the agent, so isn't that already 承担?"
 
-Not necessarily.
+**Current answer: this objection is live.**
 
-The witness distinguishes:
+The first audit version answered `not necessarily`; that was too quick.
 
-```text
-historical modification
-from
-non-outsourcable stake
-```
+If L0 `承担` is read as any irreversible own-state / selectable-space consequence return, then W1 has at least a serious claim to 承担.
 
-A prediction error can permanently alter a model while the costs of continuing, repairing, powering, insuring, and replacing components remain external to the process. If every lasting update is declared `承担`, then `承担` becomes indistinguishable from ordinary history-bearing writeback and loses the stronger non-outsourcing role currently assigned by L0.
+If L0 `承担` is read as the stronger non-outsourcable stake relation preserved by #936/#937 reconstruction, then ordinary history-bearing writeback remains insufficient.
 
-That collapse would itself require a canonical decision.
+The repository needs the distinction stated explicitly rather than inferred from examples of who pays electricity or repair bills.
 
 ### 7.2 "Operator maintenance is a reset."
 
 Not in W1's declared construction.
 
-Maintenance preserves the accumulated model/history and the same process lineage. The operator replaces substrate resources, not the history-bearing organization.
-
-If maintenance wipes history or instantiates a fresh process, W1 fails and is no longer the intended witness.
+Maintenance preserves accumulated model/history and process lineage. If maintenance wipes history or instantiates a fresh process, W1 fails and is no longer the intended probe.
 
 ### 7.3 "External support means consequences are not real."
 
 No.
 
-The action outcome changes later internal model state and selectable structure. The consequence is real for the process's later behavior even when the viability cost is paid elsewhere.
+Action outcomes change later internal state and selectable structure. External support only pressures whether those consequences become this unit's non-outsourcable stake.
 
 ### 7.4 "A tool agent cannot have perspective-bearing structure."
 
-That conclusion cannot be assumed from the word `tool`.
+The label `tool` is not enough to settle the question.
 
-The P1 question is structural: does a position-specific, history-bearing organization persist and reorganize later selection? If the answer is yes, excluding the case would require an additional P1 condition not currently stated.
+But neither is `has a model` enough to settle it in the opposite direction. The minimal perspective threshold is explicitly open and must be paid structurally.
 
 ---
 
 ## 8. Witness verdict
 
 ```text
-W1 P1-T06 explicit-text test: PASS
-W1 ST-A continuity test: PASS
-W1 L0 non-outsourcable stake / 承担: FAIL
+W1 P1-1 iterative candidates: PASS
+W1 P1-2 perspective-bearing: CONDITIONAL PASS / OWNER-LEVEL OPEN
+W1 P1-3 history-bearing writeback: PASS
+W1 P1-4 consequence-bearing: CONDITIONAL PASS under historical-return reading
+W1 ST-A continuity: PASS
+
+W1 L0 承担 failure: NOT ESTABLISHED
+W1 subject-position failure: NOT ESTABLISHED
 
 D3 witness:
-STRUCTURAL PASS
-with two exposed semantic residuals:
-- perspective-bearing load
-- consequence-bearing vs 承担 relation
+RETAINED CANDIDATE / AUTHOR-GATE PROBE
+NOT AN ESTABLISHED SEPARATION COUNTEREXAMPLE
 ```
 
-This is strong enough for R1 landing preparation because it no longer obtains the split by breaking P1 persistence.
-
-It is not strong enough to close:
+This result is still compatible with:
 
 ```text
-subject sufficiency
-phenomenality
-S2 / S3 necessity
-collective subjecthood
-exact P1 bearing <-> L0 承担 theorem
+D3 = ACCEPT AS LIVE SPLIT ONLY
 ```
+
+because D3 was author-adjudicated independently of W1. What is withdrawn is only the claim that W1 already supplies the decisive structural witness.
 
 ---
 
-## 9. Canonical implication for the next landing
+## 9. Next author decisions before C-risk landing
 
-A future P1-T06 landing should make one non-entailment explicit:
+Two substantive decisions remain prior to using W1 or a successor witness as canonical support:
+
+### Decision 1 — P1 perspective
+
+Should P1-T06 condition 2 be read as:
 
 ```text
-Stable ISP standing alone does not establish subject-position.
+structural / system-relative perspective
 ```
 
-It should then state whether `perspective-bearing` and `consequence-bearing` are being used structurally or subject-theoretically.
+with an explicit contribution beyond condition 4,
 
-Until that wording is fixed, downstream files must not use P1-T06 as an automatic subject-entry theorem.
+or as the stronger:
+
+```text
+self-registration as a selecting subject
+```
+
+The second route would materially constrain D3 and therefore cannot be adopted by audit wording alone.
+
+### Decision 2 — grounding / 承担
+
+Is non-outsourcable stake required for **subject-position only**, or already for being a grounded Stable ISP / selecting center?
+
+And, correspondingly, does L0 `承担` mean:
+
+```text
+irreversible own-history consequence return
+```
+
+or the stronger:
+
+```text
+own non-outsourcable continuity / payability stake
+```
+
+Until these are author-adjudicated, future P1-T06 landing may add only the already-authorized non-entailment direction:
+
+```text
+Stable ISP standing alone does not establish subject-position sufficiency.
+```
+
+It should not cite W1 as a completed proof of that split.
