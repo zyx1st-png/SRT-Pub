@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: a4366a1e
-source_branch: theory/generative-ontology-spine-canonical-20260911
+source_commit: 8b391843
+source_branch: ops/post-pr947-spine-status-closeout-20260911
 source_dirty: false
-inputs_digest: 6fc6a29cc261d35b
+inputs_digest: 68dc2c186dbe02ad
 ---
 
 # SRT 哲学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 6fc6a29cc261d35b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `a4366a1e` |
-| 来源分支 | `theory/generative-ontology-spine-canonical-20260911` |
+| 来源 commit | `8b391843` |
+| 来源分支 | `ops/post-pr947-spine-status-closeout-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
