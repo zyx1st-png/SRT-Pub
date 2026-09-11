@@ -4,7 +4,7 @@ type: audit
 status: active
 record_stage: r1_first_canonical_landing_scope
 layer: operations
-epistemic_layer: os
+epistem_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
@@ -119,7 +119,8 @@ No new Level 1 is assigned by this landing. Level 2 remains HOLD.
 - `Core_Law/SRT_L0_Metaphysics.md`: subjectless Selection and finite positionality are already present; no L0 body edit is needed for this first landing.
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md B13`: remains a P2/P3 crosswalk with formed-process / Stable-ISP / generative-health distinctions; no One owner promotion is made.
 - `Core_Law/SRT_Individuation.md`: contains stronger historical subject-entry interpretations. They are recorded as downstream synchronization debt rather than silently treated as P1 authority. This PR must not use that file to override the revised P1-T06 boundary.
-- `CANONICAL_REGISTRY.md`: should route the new P1-T06 boundary explicitly.
+- `CANONICAL_REGISTRY.md`: its current ST-A summary remains compatible with the narrowed P1-T06 boundary; no registry edit is required in this first landing.
+- `Governance/SRT_CLAIM_MODE_AUDIT.md`: it is a dated governance ledger rather than a current canonical definition surface; its older Individuation / subject-entry mapping remains synchronization debt and is not edited in this first landing.
 
 ## 6. Next gate after this landing
 
