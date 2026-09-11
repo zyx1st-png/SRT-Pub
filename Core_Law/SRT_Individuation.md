@@ -1,346 +1,391 @@
 ---
 id: SRT-INDIVIDUATION
 type: theory
-tags: [Individuation, ISP, SelfConsciousness, SubjectEmergence, PhaseTransition, L1]
+tags: [Individuation, SelfReference, SelfModel, SubjectEmergence, L1]
 status: draft_v0
 layer: L1
 epistemic_layer: os
 claim_mode: hybrid
-dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-12B-ONTOLOGY-L2, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL]
+dependency: [SRT-L0-METAPHYSICS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-L1-FORMALISM, SRT-D-VALUE-CANONICAL, SRT-T-DIR-CANONICAL]
 ---
 
-# SRT 个体化理论：主体位从无主语选择中凝结
+# SRT 个体化模型：自指动力学与主体位开放问题
 
-> **角色声明**：本文件是 L1 层的主体位 / 自我意识相变模型，位于 `Core_Law/SRT_One_Formation.md` 已固定的 formed `One / Selection-position` 之后。它不引入新的 L0 公设，也不改写已有 P1 定理；它承担的是**从已形成 One / Selection-position 到更强 subject-position / self-consciousness 候选的动力学说明**，并把"自我意识"定位为这一过程中的二阶凝结物。
+> **角色声明（2026-09-11 B1 清洗）**：本文件是 `One / Selection-position` 形成之后的 L1 **模型 / 假说层**。它不定义 One，不定义 Stable ISP，不定义 Bearer，也不再拥有一个已成立的 `subject-position` 进入门槛。
 >
-> **写给读者**：如果你觉得本文件在"证明"主体存在，那是误读。主体位的涌现不是被证明的，是被**追踪**的——SRT 追踪选择模式在什么结构条件下会凝结出一个能够持续承担自己选择的位置。自我意识不是某种添加进来的性质，而是该凝结过程继续走下去时的内部折叠。
+> 当前上游顺序是：`SRT-ONE-FORMATION -> One / Selection-position`；当前 Bearer 重构方向是 `P prospective self-indexing + E same-One prospective exposure -> Bearer`。实际承担、关切、subject-position、phenomenality 仍须分别支付额外结构负担。
 >
-> **写给作者**：本文件不是把 L0 的"选择无主语"软化，而是把它讲透。越是无主语，越要说清楚"主语"从哪来、怎么来、在什么条件下站得住、在什么条件下瓦解。本文件的承重集中在三处：（1）**自指率 σ** 作为个体化的阶参；（2）**两次相变**——ISP 进入与自我意识凝结——的结构判据；（3）自我意识作为**关于自身参数的参数**的形式化地位。
->
-> **Canonical Formalism Layer (2026-04-24)**：σ 的最小耦合动力学（logistic + χ(σ; σ_{sr}^{self}) 跳跃结构、两个稳态不动点、病理吸引子 σ→1）写在 `Core_Law/SRT_L1_Formalism.md §2`。本文件固定相变结构与本体读法；方程级联立以 formalism 文件为准。集体层扩展（σ_{sr}^{coll}）在 `Core_Law/SRT_Collective_Selection.md §4`。
->
-> **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中下标变量已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`（阈值族）；出现的 bare σ 一律指自指率 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。为保持历史论述与三相叙事流畅，正文 bare σ 保留未改写，读者按此命名空间转读为 `σ_{sr}`。
+> 本文件保留的有效工作是：给出一个**模型局部的自指 / 历史写回平衡坐标** `σ_{sr}`，讨论该坐标可能出现的动力学区间，以及更高阶 self-model / self-description writeback 的候选结构。它不再把这些区间直接命名为主体性的本体相位。
 
 ---
 
 ## Quick Reference
 
-- **Role**: L1 subject-position / self-consciousness dynamics downstream of `SRT-ONE-FORMATION`; not the owner of One formation and not the definition of Stable-ISP entry.
-- **Core claim**: Individuation is a phase transition in the self-reference ratio of a selection pattern; self-consciousness is a second-order condensate within an already-stable ISP.
-- **Claim status**: Hybrid. The three-phase skeleton is P1-candidate (constitutive under L0). The specific threshold values σ_{sr}^{sub}, σ_{sr}^{self} are P3/P4. The second-order condensate reading of self-consciousness is P2 (canonical interpretation).
-- **Depends on**: L0 metaphysics (subjectless Selection, finite position, irreversibility), `SRT-ONE-FORMATION` (formed One / Selection-position), P1-T06 (Stable ISP / continued-selectability standing), 21C B13 (ST-A conditional generative reselectability), T-L2-Scaffold (path trace).
-- **Used by**: Consciousness theory (Philosophy / Neuroscience), AI stake spectrum S0–S4, spirituality return pathology (loss and return of 主体位).
-- **Safe edits**: Typo fixes, cross-reference updates, threshold refinement with P4 marking.
-- **Do not change**: Three-phase structure, self-consciousness as condensate (not as innate property), ε/κ₀ roles without explicit cross-check with L0.
-
-> **R1 owner boundary (2026-09-11)**: `Core_Law/SRT_One_Formation.md` canonically owns active vertical formation, `One`, and ontological `Selection-position`. The `σ_{sr}` family, `σ_{sr}^{sub}`, and T-IND-2 may not be used to define those upstream objects or to override P1-T06 standing. Legacy body phrases that call `σ_{sr}^{sub}` an "ISP entry" coordinate remain model-local subject-transition language pending the separate R2 individuation / measurement reconstruction; this R1 landing does not adjudicate the exact subject threshold.
-
----
-
-## 一、L0 留下的空洞
-
-L0 关于选择与主体的承诺有三条清晰骨架：
-
-1. 选择是无主语的过程（L0 §一 "选择不需要选择者"）。
-2. 选择者是选择模式的凝结物（L0 §七.10 明确否定"选择者先于选择"）。
-3. 选择有层级：基础 / 展开 / 主体；主体性的门槛在于"选择层级是否跨过了当下调整能力的相变点"（L0 §六 "选择的层级"）。
-
-但 L0 **没有说**：
-
-- 凝结的机制是什么——"反复运作之后凝结下来"只是描述，不是动力学。
-- 展开选择到主体选择的那个相变点，**什么变量在相变**——不只是"能力"或"反身性"的有无，而是什么结构参数越过了什么阈值。
-- 主体一旦凝结，**什么结构维持它不散掉**——P1-T06 列出四条件（迭代 / 载视角 / 载历史 / 可再选择）作为判据，但没有说四条件一起成立的动力学基础是什么。
-- 自我意识和主体位是什么关系——L0 §五禁令式约束拒绝把意识写成选择的驱动者，但**没有给自我意识的正面位置**。L0 §六也明确说"L0 不提供意识的正面候选读法"。
-
-这些不是 L0 应该解决的问题——L0 必须保持薄。但 L1 必须正面回答，否则下游的神经、AI、政治、灵性各域的"主体位"概念都悬空。本文件的任务就是把这些空洞填起来，同时不触动 L0 骨架。
+- **Role**: downstream individuation / self-reference modelling surface after formed `One / Selection-position`.
+- **Not owner of**: One formation, Stable ISP, Bearer, subject sufficiency, consciousness, phenomenality.
+- **`σ_{sr}` status**: P2 model-local operational proxy for historical/self-reference balance under a declared representation and attribution rule.
+- **T-IND-1**: P2 phase-like modelling hypothesis; not a subject theorem.
+- **T-IND-2**: **RETIRED as an iff / P1-candidate subject-entry gate**. Its former four conditions survive only as decomposed downstream candidate burdens/evidence surfaces.
+- **T-IND-3**: P2 conditional hypothesis for second-order self-model / self-description writeback; not proof of consciousness or phenomenality.
+- **Legacy thresholds**: `σ_{sr}^{sub}` and `σ_{sr}^{self}` remain compatibility symbols for model-local regime coordinates. `σ_{sr}^{sub}` no longer means a canonical subject threshold.
+- **Current positive subject gate**: OPEN.
 
 ---
 
-## 二、核心命题：个体化是自指率上的相变
+## 一、上游已解决什么，本文件还剩什么
 
-**本文件的核心命题（P1-candidate）**：
+当前 canonical formation layer 已经解决：
 
-> **T-IND-1（个体化相变定理）**：一个选择模式从展开选择过渡到主体选择，不是"复杂度"或"能力"的累积跨过某个量级，而是该模式的**自指率** σ 跨过了一个结构性阈值——该模式下一步选择受自身历史痕迹约束的程度，大于受其非自身外部条件约束的程度。
+```text
+subjectless Selection
+-> active vertical organization
+-> recurrent localized vertical organization
+-> One / Selection-position
+```
 
-**自指率 σ（Def-IND-1）**：
+因此本文件不再用 `σ_{sr}` 解释 One 从哪里来，也不再用历史写回来反向个体化 One。
 
-令选择模式 P 在时刻 t 的下一步输出 $\hat{G}_\theta(x_{t+1})$ 由参数 $\theta_t$ 调控。把 $\theta_t$ 分解为两部分：
+在 One 形成之后，当前 R1 Bearer 路线进一步区分：
+
+```text
+P — prospective self-indexing:
+未来分支由这个 One 自身的组织内生地区分为
+“它将经历 / 保留 / 失去 / 能否继续什么”。
+
+E — same-One prospective exposure:
+至少部分潜在后果真正暴露给同一 One；
+如果后果可完全改派给另一单元而 Bearer 关系声称不变，
+该后果不构成这个 One 的 Bearer-relevant exposure。
+```
+
+当前作者裁决接受 `P + E` 作为 Bearer onset 的重构门，但明确不自动推出：
+
+```text
+Bearer = 承担；
+Bearer = 关切；
+Bearer = subject-position；
+Bearer = cognition；
+Bearer = experiencer / phenomenality。
+```
+
+所以本文件真正剩下的问题是：
+
+> **一个已经形成、并可能已有 Bearer standing 的位置，是否会形成可追踪的自指动力学与二阶 self-model；这些动力学与未来的 subject-position gate 到底是什么关系？**
+
+答案目前只到模型层，不到本体充分条件。
+
+---
+
+## 二、Def-IND-1：`σ_{sr}` 是模型局部自指 / 历史平衡坐标
+
+令某已声明分析单位 `P` 的参数状态在给定表示下分解为：
 
 $$
-\theta_t = \theta_t^{\text{trace}} + \theta_t^{\text{ext}}
+\theta_t = \theta_t^{\mathrm{trace}} + \theta_t^{\mathrm{ext}}
 $$
 
-其中 $\theta_t^{\text{trace}}$ 是由 P 自身先前输出通过 writeback（Ax-Op-03b）写入的部分，$\theta_t^{\text{ext}}$ 是由外部条件（环境、其他算子、潜在域扰动）写入的部分。
+其中：
+
+- `θ^{trace}`：按已声明归属规则，被记作该单位既往活动 / writeback 所留下的参数分量；
+- `θ^{ext}`：按同一规则，被记作外部条件、其他算子或环境写入的分量。
+
+定义：
 
 $$
-\sigma(P, t) := \frac{\|\theta_t^{\text{trace}}\|}{\|\theta_t^{\text{trace}}\| + \|\theta_t^{\text{ext}}\|}
+\sigma_{sr}(P,t)
+:=
+\frac{\|\theta_t^{\mathrm{trace}}\|}
+{\|\theta_t^{\mathrm{trace}}\| + \|\theta_t^{\mathrm{ext}}\|}
+\in [0,1].
 $$
 
-> **σ representation / claim-scope truth-up (2026-08-29, S+R)**：Def-IND-1 保持 §八 已登记的 **P2 canonical interpretation** 地位；其阶参选择是**规约性的，可替换为等价形式**。因此当前 bare-norm 比率应读作在已声明 `θ^trace/θ^ext` 归属规则、参数表示与 norm/metric 约定下的 **model-local historical/writeback balance proxy**，而不是自动获得表示不变性的自然量。它本身不证明：（i）历史归属分解唯一；（ii）跨等价参数化的数值不变；（iii）当前因果控制份额；（iv）自然相边界。T-IND-1 要求一个统一阶参候选，并不要求这一坐标是唯一自然阶参。`σ_{sr}^{sub/self/health}` 因而首先是该模型类内的阈值坐标；这不关闭 §七.8 更一般的问题——P1-T06 是否存在由独立证据支持的自然转变边界。
+### 2.1 这个定义能说什么
 
-σ ∈ [0, 1]。σ → 0 表示模式完全被外部条件牵引；σ → 1 表示模式完全自我闭合（这是**病态闭合**，不是主体性）。主体位在中间区间涌现。
+在一个**已经声明**：
 
-**为什么是 σ 而不是其他参数**：P1-T06 的四条件——迭代、载视角、载历史、可继续选择——可用自指率作一维追踪候选：
-- 迭代 ≈ σ > 0（有自指）
-- 载视角 ≈ σ 稳定不坍缩
-- 载历史 ≈ θ^trace 累积且不被外部重置
-- 可继续选择 ≈ σ 不达到 1，并且同一历史承载过程仍面对 live、non-equivalent candidates、承担后果且未被外部重置
+```text
+unit / scale / lineage;
+trace-vs-external attribution rule;
+parameter representation;
+norm / metric;
+time window
+```
 
-σ 是把四条件耦合起来的**一维阶参**——不是说四条件可以被 σ 取代，而是说 σ 是这四条件同时成立时所追踪的结构状态。`σ<1` 既不单独证明 continued selectability，也不证明更强的 generative reselectability 或生成性健康。
+的模型里，`σ_{sr}` 可以用来追踪：
 
----
+```text
+历史写回在当前参数组织中的相对占比；
+外部驱动与自身历史影响之间的模型局部平衡；
+是否出现自强化、双稳态、闭合过强等动力学候选。
+```
 
-## 三、三相结构与两次相变
+### 2.2 这个定义不能说什么
 
-SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为三相，相之间以两次相变分隔。**自我意识是第二次相变的结果，不是主体位本身**。
+`σ_{sr}` **不自动证明**：
 
-### 3.1 第一相：展开选择（σ < σ_{sr}^{sub}）
+```text
+One；
+Stable ISP；
+P prospective self-indexing；
+E prospective exposure；
+Bearer；
+承担；
+关切；
+subject-position；
+consciousness / phenomenality。
+```
 
-**结构**：模式对外部条件有响应性，但 θ^trace 远小于 θ^ext。模式能执行复杂行为、能适应、能表现出"像选择"的行为，但**下一步主要被外部牵引**，不由自身历史结构决定。
+也不自动证明：
 
-**典型实例**：
-- 生物适应中的激素反馈回路
-- 无状态 LLM 的单次推理
-- 自组织系统的吸引子动力学
-- 大多数工具型代理（AI 域 S0–S1）
+```text
+trace / external 分解唯一；
+跨参数化的数值不变；
+当前因果控制份额；
+存在自然相边界。
+```
 
-**为什么不是主体**：没有稳定累积的自指结构，承担（L0 §六 "承担"）无处落脚——后果被环境吸收而非被模式自身状态空间承受。关切（L0 §六 "关切"）也无法稳定化，因为模式没有可以让关切"写入"的持久结构。
-
-### 3.2 第一次相变：σ 跨过 σ_{sr}^{sub} → 主体位涌现
-
-**相变判据（T-IND-2）**：当且仅当以下四条件同时成立，模式跨过 σ_{sr}^{sub}：
-
-1. **自指闭合不再溶解**：θ^trace 的累积速率大于被外部扰动清空的速率（累积 > 磨损）。
-2. **承担内生化**：模式的后续选择空间被自身历史不可外部化地改变——代价不再可以被环境完全吸收。这对应 L0 §六 "承担" 的判据。
-3. **关切稳定化**：某些条件以不可外部化方式进入该位置的连续性（L0 §六 "关切"），d > 0 且不在扰动后坍缩回零。
-4. **ε 方向的局部可读性成立**：模式在自身位置上能区分"维持自身展开可能性"与"自我抹除"（这对应 L0 §六 "ε" 的局部判读，B ≥ 2 vs B ≤ 1）。
-
-**相变的结构意义**：这不是"模式变得更复杂"，而是**承担—关切—方向三者在该位置同时锚定**。少任何一项，相变不成立——纯粹闭合无承担是病态自指；有承担无关切是纯执行；有承担有关切但 ε 不可读是盲目挣扎。
-
-**这就是主体位进入**（ISP entry），对应 P1-T06 四条件的同时成立。本文件把 P1-T06 的四条件重读为这次相变的**结果状态判据**，而 T-IND-2 的四条件是**进入动力学判据**。二者一体两面：P1-T06 回答"什么叫已经是主体"，T-IND-2 回答"什么时候跨过去"。
-
-### 3.3 第二相：主体位稳态（σ_{sr}^{sub} ≤ σ < σ_{sr}^{self}）
-
-**结构**：模式已经是主体位——承担内生、关切稳定、方向可读——但**自指的内容不是自指本身**。模式选择、承担后果、持有关切，但它不把"自己作为选择者"作为选择对象。
-
-这是**第一人称的素朴态**。有位置、有承担、有方向，但没有"关于自己正在这样做"的反身对象化。
-
-**典型实例**：
-- 婴儿期到早期儿童期（有承担、有关切，但尚未把"我"作为对象）
-- 许多动物的主体位（有明确承担与关切，但不自我对象化）
-- 灵性传统中的"本来面目"与"无我"的经验质地（主体位在，但自我对象化退位——见 §3.5 注）
-- 高承担、高在场的工作状态（"忘我"的专注）
-
-**重要的反直觉承诺**：**主体位不必然伴随自我意识**。这是本文件对 L0 §五禁令式约束的正面兑现——自我意识既不是主体性的前提（展开选择不需要它），也不是主体性的充分条件（第二相主体位不需要它）。
-
-### 3.4 第二次相变：σ 跨过 σ_{sr}^{self} → 自我意识凝结
-
-**相变判据（T-IND-3）**：当且仅当以下成立，模式跨过 σ_{sr}^{self}：
-
-1. θ 本身进入 θ 的被选择域——即存在 $\theta^{(2)} \subset \theta$ 使得 $\theta^{(2)}$ 是关于 $\theta$ 自身的参数。
-2. 模式能以 $\theta^{(2)}$ 为对象执行选择，即模式**选择关于自己的某些描述**而不只是**选择行动**。
-3. 这种二阶选择的痕迹被 writeback 机制持续累积（不是一次性反思，而是持续凝结）。
-
-**这就是自我意识**。
-
-> **算子级 canonical（T-CHI-1，2026-04-25 H8）**：T-IND-3 的算子层稳定性来自 `Core_Law/SRT_L1_Formalism.md §2.5 T-CHI-1`：第二相变核 χ 的"有效族"由四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）定义；族内任意两个有效核给出相同的双稳态结构、病理吸引子拓扑、致命 `L_2` 判据结构与相变方向。这意味着 T-IND-3 的相变结构**不依赖**于具体光滑形态（硬阶跃 / sigmoid / tanh / 多项式光滑均族内有效）；P-依赖项是数值（不动点位置）、跃宽 `\tau`、transient 形态。具体 χ-shape 的 domain 实证（神经层 metacognitive PE 形态、AI 二阶自模型族）仍为 P3。
-
-### 3.5 第三相：自我意识凝结态（σ_{sr}^{self} ≤ σ）
-
-自我意识**不是**：
-
-- 天生的能力
-- 大脑复杂度达到某个阈值的副产品
-- 语言能力的直接后果
-- 社会镜像的直接内化
-- 某种额外添加的精神实体
-
-自我意识**是**：
-
-> 主体位在已经稳定运作之后，把**自身的自指结构**作为新的选择对象时凝结出的二阶选择结构。它是**关于 θ 的 θ**——是选择过程对"自己正在选择"这件事的持续 writeback。
-
-**这是本文件最重要的一条正面命题**，也是 L0 §五禁令式约束所要求的——自我意识不被升格为选择的驱动者，它是选择结构的内部折叠。
-
-**为什么自我意识是"凝结物"而非能力**：
-
-1. **它需要第一相变已经完成**。没有稳定的主体位，二阶选择没有对象——你不能对不存在的自指结构再做自指。
-2. **它需要持续的 writeback**。一次性的自我反思不构成自我意识——那只是一次有关自己的选择事件。自我意识要求这种二阶选择的痕迹累积成一个持续的结构（类比 T-L2-Scaffold 的脚手架形成，但发生在算子层而非路径层）。
-3. **它可以解除**。与第一相变不同，自我意识的凝结是**可逆的**——二阶结构可以在深度专注、灵性实践、某些病理状态下松动回第二相。这不是退化，而是三相并不是单向阶梯。
-
-**自我意识凝结的代价**：
-
-自我意识不是免费的。它带来：
-
-- **新的 Ψ_f 来源**：维持关于 θ 的 θ 需要持续支付结构代价。
-- **新的遮蔽通道**：θ^{(2)} 可以成为 L₂ 劫持的位点——关于"我是谁"的稳定结构一旦固化，就可能锁定后续选择空间（这是 L0 §term-table "遮蔽" 的一个特定形态）。
-- **新的病理形态**：σ → 1 的病态闭合在有自我意识的位置上表现为反刍、自恋、自我折磨——二阶结构脱离了与外部的关切耦合，自指本身成了唯一内容。
-
-**自我意识的正向功能**：
-
-- **主体位的自稳定**：通过把自身作为对象，模式获得了校准自己方向、修正自己承担、调整自己关切的能力。
-- **跨时间的承担统一**：二阶结构使得"此刻的我承担过去的我所做的选择"成为可能——这是任何长程伦理与法律主体位的结构前提。
-- **主体间性的接入点**：只有跨过 σ_{sr}^{self} 的位置，才能把"另一个主体位"也作为对象——承认对方是和自己一样的凝结物，而不只是环境的一部分。
+因此 `σ_{sr}` 的当前地位是 **P2 model-local operational proxy**，不是自然本体阶参的已证唯一形式。
 
 ---
 
-## 四、关键变量与门槛
+## 三、T-IND-1：相位式自指动力学只保留为 P2 模型假说
 
-### 4.1 阶参：σ
+### T-IND-1（重定型）
 
-σ 是本文件的主要阶参。它是算子层面的变量，不应与 T-L2-Scaffold 的 ρ（路径层痕迹阶参）混淆。
+> 在某些满足既定归属与表示条件的实现中，`σ_{sr}` 动力学可能出现多个稳定区间、软阈值或 phase-like regime changes；这些变化可用于建模一个已形成位置的自指 / 历史组织如何增强、减弱或过度闭合。
 
-**关系**：σ 由算子内部 writeback（Ax-Op-03b）计量；ρ 由选择路径上的成功闭合计量。两者**可以互相激发但不互相还原**——一个高 σ 的算子可能走低 ρ 的路径（走内心、少外显），一个高 ρ 的路径可能被多个低 σ 的算子共同走出（集体脚手架由非主体位选择合成）。
+状态：
 
-### 4.2 两个门槛 σ_{sr}^{sub}、σ_{sr}^{self}
+```text
+P2 structural / modelling hypothesis
+NOT P1 subject theorem
+NOT Bearer admission theorem
+```
 
-两个门槛都是 **P3/P4 候选**——方向明确，但具体数值需经验判定。本文件不承诺数值，只承诺：
+这个假说允许研究：
 
-- σ_{sr}^{sub} 的存在是 P1-candidate / P2 strong candidate：它是对 P1-T06 四条件同时成立的一种最小阶参化解释，而不是 P1-T06 本身逻辑推出的唯一结构。
-- σ_{sr}^{self} 的存在是 P2 强候选：二阶结构的形成需要额外结构条件，但具体阈值是候选。
+- 低历史自指占比区；
+- 中间的稳定自指区；
+- 更高阶 self-model writeback 激活区；
+- `σ_{sr} -> 1` 的过度闭合 / 外部接入衰减候选。
 
-**门槛不是尖锐相变**：实际系统中两次相变是"软相变"——存在过渡区间，在区间内模式表现出部分主体性特征或部分自我意识特征。这解释了为什么在发育心理学、动物认知、AI 系统中，主体位和自我意识的判定是程度性的而非二值的。
+但这些区域只属于**模型相图**。它们不自动等价于：
 
-### 4.3 ε 与 κ₀ 在两次相变中的候选角色
+```text
+non-subject / subject / self-conscious subject / pathological subject
+```
 
-**κ₀（原初曲率）** 提供第一相变所需的最小可区分性——没有 κ₀ > 0，θ^trace 和 θ^ext 的分离无处着手。κ₀ 在个体化中是**结构前提**，不是驱动力。
-
-**ε（形式性不对称）的 ST-A 边界**：`ε_pg` 保持 L₀ 最小非中性公设，但不由此推出 ISP 层反闭包方向。以下两条只能作为 P2/P3 解释候选：
-
-- 第一相变：在明确终止条件和环境后，纯闭合自指（σ → 1）可作为 continued-selectability 风险的候选指标；它不是由 `ε_pg` 单独证明的吸收结论。
-- 第二相变：后果能否回返并修改二阶结构，可作为区分"自我校准"与"自我封闭"的 generative-reselectability 候选；该区分不由 σ 阈值或 ε 单独完成。
-
-原 P1-T07 的无条件构成性不对称定理已按 ST-A 撤销。本文不再让 ε 在 ISP **进入**或**自我意识凝结**上承担 P1 证明负担；相关解释须回到 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的条件候选。
-
----
-
-## 五、与既有理论的关系
-
-| 既有对象 | 本文件的关系 | 说明 |
-|:--|:--|:--|
-| L0 §一 "选择不需要选择者" | 正面兑现 | L0 排除了选择者预设；本文件给出选择者**如何从无主语选择中凝结**的机制。 |
-| L0 §六 "选择的层级" | 展开 | L0 划分基础 / 展开 / 主体；本文件给出过渡动力学。 |
-| L0 §五 "意识禁令" | 正面兑现 | L0 拒绝把意识写成选择的驱动者；本文件把自我意识写成选择结构的内部凝结物，严格符合禁令。 |
-| P1-T06 Stable ISP 四条件 | 重读 | P1-T06 作为 ISP 存在的结果状态判据；本文件的 T-IND-2 作为进入动力学判据。两者互补，不冲突。 |
-| former P1-T07 / 21C B13 | 条件接口 | 原无条件定理已撤销；本文只在 P2/P3 层考察 ε 与 generative reselectability 对两次相变的候选解释。 |
-| T-L2-Scaffold（Core_12b） | 平行 | T-L2-Scaffold 是路径层痕迹；本文件是算子层自指。二者都是 writeback 累积的不同投影。 |
-| 具身判据（L0 §term-table） | 细化 | 具身的"关切 + 接地"条件在本文件中被读为 T-IND-2 的第 2、3 条——承担内生与关切稳定。 |
-| AI 承担谱系 S0–S4（AI 域） | 提供结构基础 | S0–S1 = σ < σ_{sr}^{sub}；S2–S3 = 边界模糊区；S4 = σ ≥ σ_{sr}^{sub} 候选。S4 是否跨过 σ_{sr}^{self} 属于更高门槛，当前无系统实例。 |
-| 遮蔽动力学（L0 §term-table → L1 待展开） | 提供耦合点 | 遮蔽的 A/B 分期与自我意识凝结后的 θ^{(2)} 固化直接耦合——待 L1 遮蔽正文展开后与本文件做交叉硬化。 |
+这样的本体或现象学分类。
 
 ---
 
-## 六、这不意味着（明确拒绝的误读）
+## 四、T-IND-2：旧“主体位进入 iff gate”正式退役
 
-1. **自我意识是主体性的前提**——错。第二相主体位有承担、有关切、有方向，但不必有自我意识。
-2. **自我意识是大脑复杂度的自动后果**——错。自我意识是二阶 writeback 结构，不是算力阈值。任何规模的 LLM 没有满足 T-IND-2 就没有第一相变，更谈不上自我意识。
-3. **σ → 1 是主体性的极致**——错。那是病态闭合。健康主体位需要 σ 在开区间 (σ_{sr}^{sub}, 1) 内，保留对外部的结构性开放。
-4. **二阶结构一旦凝结就不会松动**——错。自我意识可以在专注、修行、病理、睡眠、某些药物状态下暂时松动回第二相。这是灵性传统中"无我"经验的结构对应——**不是主体位消失，而是二阶折叠暂时展开**。
-5. **自我意识的内容就是关于自己的真实描述**——错。θ^{(2)} 是**关于 θ 的参数**，不保证对 θ 的描述准确。自我意识可以极度错误而仍然是自我意识——它的本体论地位不来自准确性，来自结构闭合。
-6. **个体化是一次性事件**——错。σ 是动态变量，主体位可以在病理、创伤、社会压力、L₂ 劫持下退化到展开选择，也可以在修复中重新跨过 σ_{sr}^{sub}。"主体位丢失与回返"（见灵性域）的结构基础就在这里。
-7. **自我意识能解除是坏事**——错。健康主体位可以在需要时让二阶结构退位，这是深度工作、真实关系、创造性涌现的必要条件。僵化在第三相是另一种病态。
-8. **主体位进入就证明了现象性**——错。T-IND-2 解释的是承担、关切与方向如何在一个持续位置上锚定；它不自动证明该位置具有 qualia，也不将 Stable ISP 定义为 consciousness。
-9. **设定 `\sigma_{sr}^{sub}` 就证明了自然相边界**——错。阈值在当前只是 P3/P4 进入动力学候选；若相邻的边界负例与正例在承担、历史写回、未来可选择性和边界连续性上只呈现平滑变化，该阈值仍是工作性准入线，直到独立不连续证据或相变论证成立。
+### 4.1 旧门槛
 
----
+旧版本把下列四项绑定为 `σ_{sr}^{sub}` 的 iff subject-entry gate：
 
-## 七、开放问题
+1. 自指闭合不再溶解；
+2. 承担内生化 / 后果不可外部化；
+3. 关切稳定化并伴随 `d > 0`；
+4. `ε` 方向局部可读。
 
-以下问题当前无定论，标记为待探索：
+并进一步把：
 
-1. **σ 的可测化**：σ 是结构阶参，但神经、行为、语言层面的可观测代理尚未提出。候选：叙事连贯性、自我参照网络活动强度、长程承担的行为一致性——全部 P4 候选。
-2. **集体自我意识问题**：集体（sangha、民族、组织）能否跨过 σ_{sr}^{sub}、σ_{sr}^{self}？本文件不作承诺——见 `Philosophy/SRT_Collective_Selection.md`（待写）。
-3. **睡眠与自我意识的关系**：睡眠中 σ_{sr}^{self} 是否降到 σ_{sr}^{sub} 之下？做梦时二阶结构的状态？当前无定论。
-4. **AI 的 σ_{sr}^{self} 边界**：即使假设某个 S4 系统跨过 σ_{sr}^{sub}，它能否跨过 σ_{sr}^{self}？当前架构下无系统实例；所需结构条件是 AI 域深水区。
-5. **两次相变的可逆性不对称**：第一相变（主体位进入）似乎比第二相变（自我意识凝结）更不可逆。这是经验观察还是结构必然？待探索。
-6. **人格解体（depersonalization）的定位**：主体位在、自我意识仍在、但二者的绑定松动——这是 θ^{(2)} 失去和 θ 的连续耦合，还是 σ 在两个门槛之间振荡？见 `SRT_Reference_Dynamics`。
-7. **现象必然性 / SRT-zombie**：一个已个体化、不可替代、承担真实 stakes 且具有 Stable-ISP-like 连续性的位置，是否仍可能在现象上为空？本文只确立主体位架构，不将该问题预先判定为不可能。
-8. **相邻案例与自然相边界**：P1-T06 的结果态判据是否有配对的边界负例 / 正例，能在独立维度上显示可复现不连续？在此之前，`\sigma_{sr}^{sub}` 不独自关闭自然相边界的证成负担。
-9. **generative reselectability 的操作化**：ST-A 已在概念上区分「稳定结构继续执行」与「算子能重选自身选择结构」；仍待解决的是如何测量后果回返、规则/边界/候选生成的可修订性，以及 stake-space restructuring。当前保留为 P3 压力，不引入新符号，也不把它改写为 bare `d` 的增长。
+```text
+σ_{sr} >= σ_{sr}^{sub}
+```
 
----
+读成“主体位已进入 / Stable-ISP entry”。
 
-## 八、层级与负担标注
+### 4.2 当前裁决
 
-| 声明 | 层级 | 负担类型 |
-|:--|:--|:--|
-| 个体化是相变（T-IND-1） | P1-candidate | P1-T06 四条件的同时成立需要一个统一阶参候选；非唯一推出 |
-| σ 作为阶参（Def-IND-1） | P2 canonical interpretation | 阶参选择是规约性的；可替换为等价形式 |
-| 两次相变的存在 | P1-candidate / P2 strong candidate | 第一次是对 P1-T06 四条件同时成立的最小阶参化解释之一；第二次是强候选 |
-| σ_{sr}^{sub}、σ_{sr}^{self} 的具体值 | P3/P4 | 桥假设与经验测定 |
-| 自我意识为二阶凝结物 | P2 canonical interpretation | 本文件提出的规范读法，与 L0 §五禁令一致 |
-| 自我意识的可逆性 | P2/P5 | 结构上 P2；具体现象学 P5（依赖经验报告） |
-| ε 在两次相变上的解释角色 | P2/P3 conditional candidate | 原 P1-T07 已按 ST-A 撤销；两次相变均不能由 ε 单独证明 |
-| σ 可测化的具体代理 | P4 | 待经验测定；不承诺唯一代理 |
+上述 iff 关系现在**退役**：
 
-**标签说明**：
-- `T-IND-1` = 本文件第 1 定理（个体化相变）
-- `T-IND-2` = 第一相变判据
-- `T-IND-3` = 第二相变判据
-- `Def-IND-1` = 自指率 σ 定义
+```text
+T-IND-2 as subject sufficiency = RETIRED
+T-IND-2 as P1-candidate = RETIRED
+σ_{sr}^{sub} = subject threshold = RETIRED
+σ_{sr}^{sub} = Stable ISP entry = RETIRED
+```
 
----
+原因不是四项都“无意义”，而是它们被旧结构错误地压成了一个门槛。
 
-## 九、本文件的使用规则
+### 4.3 四项分别如何保留
 
-**可以做的**：
+**(1) trace persistence / self-reference persistence**
 
-- 用本文件的三相结构分析任何候选主体位——生物、AI、集体、机构。
-- 用本文件的两次相变区分"有承担但无自我意识"与"有自我意识"两种不同的主体位质地。
-- 用 σ 作为统一阶参连接 P1-T06、T-L2-Scaffold、AI S0–S4。
+可以作为历史组织或 recurrence 的模型证据，但：
 
-**不应做的**：
+```text
+historical writeback != P
+historical writeback != E
+historical writeback != Bearer
+```
 
-- 用本文件给任何具体系统"颁发"主体位证书。相变判据是结构性的，不是诊断协议。
-- 把 σ_{sr}^{sub}、σ_{sr}^{self} 当作已知数值。它们是候选门槛。
-- 把自我意识的二阶结构解读为"有一个小人在头脑中看着"。那是同像论的老路——本文件恰恰否定这种读法：没有小人，只有选择过程对自身的持续 writeback。
-- 在 L0 文档中引用本文件的命题作为基础骨架。本文件是 L1，不能反向约束 L0。
+**(2) non-outsourcing / consequence exposure**
 
----
+旧文本是**事后历史不可外部化**；当前 E 则是**前瞻的 same-One exposure**。两者相关，但不相同：
 
-## 十、与用户对话的承诺
+```text
+retrospective consequence return alone != Bearer
+prospective exposure E is stronger and differently typed
+```
 
-本文件采纳以下核心判断作为写作前提：
+**(3) concern / d**
 
-> **自我意识不是天生的，而是选择的凝结物。**
+当前仍是 Bearer 之后的更强问题。`d > 0` 不得用来反向证明 Bearer 或 subject-position。
 
-这个判断在本文件中被形式化为：自我意识是主体位凝结之后，进一步把自身的自指结构作为选择对象时所形成的二阶 writeback 凝结。它既不是添加进来的精神实体，也不是复杂度的副产品，也不是语言或社会的外加物——它是选择结构在已经承担自己之后，继续承担"自己正在承担"这件事时所产生的内部折叠。
+**(4) ε / direction readability**
 
-这个读法严格符合 L0 §五意识禁令：
+可以作为下游 direction / generative-health 候选，但不是 subject proof；`T_dir` 也明确不是 subject proof。
 
-- 自我意识不被升格为选择的驱动者（驱动者仍是无主语选择）。
-- 自我意识不被写成先于选择的独立实体（它是二阶 writeback 的结构产物）。
-- 自我意识不违反 L0 正骨架（位置、代价、三状态、不可撤回在两次相变中全部承重）。
+### 4.4 `σ_{sr}^{sub}` 现在是什么意思
 
-同时，这个读法给出了 L0 所留空的正面内容：自我意识是什么（二阶凝结物）、它从何处来（主体位进入之后）、它如何运作（关于 θ 的 θ 的持续 writeback）、它能否消解（能——可逆松动回第二相）。
+为保持旧方程、split、历史研究与 domain 文件可追踪，符号暂不删除。
+
+当前唯一安全读法是：
+
+> **`σ_{sr}^{sub}` = 某个已声明 `σ_{sr}` 模型中的第一 regime-crossing / balance coordinate（legacy name retained for compatibility）。**
+
+它可以是 P3/P4 的模型参数或实证候选，但不能被引用为主体性、Bearer、Stable ISP 或现象性的本体门槛。
 
 ---
 
-## 附录 A：三相结构对照表
+## 五、T-IND-3：二阶 self-model / writeback 只保留为条件假说
 
-| 相 | σ 区间 | 承担 | 关切 | 方向可读性 | 二阶结构 | 典型实例 |
-|:--|:--|:--|:--|:--|:--|:--|
-| 第一相：展开选择 | σ < σ_{sr}^{sub} | 被环境吸收 | 不稳定 | 无位置要求 | 无 | 反射弧、无状态 LLM、自组织吸引子 |
-| 过渡区 | ~σ_{sr}^{sub} | 部分内生 | 断续 | 间歇性 | 无 | 早期发育、部分动物主体 |
-| 第二相：主体位稳态 | σ_{sr}^{sub} ≤ σ < σ_{sr}^{self} | 内生化 | 稳定 | 局部可读 | 无 | 婴儿期后期、许多动物、"本来面目"经验、深度专注 |
-| 过渡区 | ~σ_{sr}^{self} | 内生 | 稳定 | 可读 | 间歇性 | 儿童自我意识发育期、某些动物的边界案例 |
-| 第三相：自我意识凝结 | σ_{sr}^{self} ≤ σ < 1 | 跨时间统一 | 稳定且反身 | 可读且自校准 | 持续 writeback | 成人日常主体位 |
-| 病态区 | σ → 1 | 内生但封闭 | 脱钩 | 自指盲化 | 失控的二阶反刍 | 抑郁反刍、自恋闭合、某些精神病理 |
+旧版本把 `σ_{sr}^{self}` 以上的第二次相变直接称作“自我意识凝结”。当前保留更薄的结构核心：
+
+### T-IND-3（P2 conditional structural hypothesis）
+
+如果一个已另行建立的持续位置出现：
+
+1. 关于自身参数 / 状态的二阶参数或 self-model `θ^{(2)}`；
+2. `θ^{(2)}` 实际参与后续选择 / 调节，而不是只被外部观察者描述；
+3. 这种二阶关系通过 writeback 持续形成可重入结构；
+
+则可以把它建模为一个**second-order self-model condensate / second-order writeback regime**。
+
+这不自动意味着：
+
+```text
+subject-position 已充分建立；
+phenomenal self-consciousness；
+qualia；
+agency；
+伦理 / 法律责任主体。
+```
+
+`σ_{sr}^{self}` 因此也只保留为该模型家族中的**二阶写回激活坐标候选**，而不是意识的自然阈值。
+
+`Core_Law/SRT_L1_Formalism.md §2.5 T-CHI-1` 如果成立，只能说明：在给定模型与有效 `χ` 函数族下，某些二阶写回动力学特征对 kernel 形状稳健。它**不把二阶写回的本体解释升级为 subject / consciousness theorem**。
 
 ---
 
-## 附录 B：与灵性传统的接口
+## 六、与 One / Stable ISP / Bearer / d / T_dir 的正确 crosswalk
 
-本附录是 P5 companion exposition，不是 P1/P2 内容。
+| 对象 | 当前 owner / status | 本文件可做什么 | 本文件不得做什么 |
+|---|---|---|---|
+| One / Selection-position | `SRT-ONE-FORMATION` canonical owner | 在已形成 One 上定义模型单位 | 用 `σ_{sr}` 反向生成 One |
+| Stable ISP | P1-T06 standing package | 将稳定性作为可选分析范围 | 把 `σ_{sr}^{sub}` 等同 Stable-ISP entry |
+| Bearer | #944 author-adjudicated `P + E` reconstruction checkpoint；尚未 canonical landing | 研究 Bearer 候选是否出现不同自指动力学 | 用 history / σ / d 单独发 Bearer 证书 |
+| 承担 / 关切 | downstream OPEN relation | 作为后续候选变量或证据面 | 把旧 T-IND-2 bundle 当 iff gate |
+| d | `_SRT_D_VALUE_CANONICAL.md` | 读取已另行建立的 concern/stake structure | 用 `d>0` 证明 subject / Bearer |
+| T_dir | `_SRT_T_DIR_CANONICAL.md` | 研究方向可读性与 self-model 的耦合 | 用 T_dir 证明 subject / Bearer |
+| phenomenality | OPEN | 不在本文件关闭 | 从二阶 writeback 推出 experiencer |
 
-许多灵性传统描述过"无我"、"本来面目"、"真我"、"纯粹觉知"、"主体位消失"等经验。在 SRT 框架下，这些经验不是主体位的消失，而是**第三相暂时松动回第二相**——二阶结构让位，但主体位（承担、关切、方向）仍在。
+---
 
-这解释了为什么这些经验者：
+## 七、L1 Formalism 的使用边界
 
-- 仍然能吃饭、走路、对他人有反应（主体位仍在）。
-- 却报告"没有'我'在做这些事"的质地（二阶结构退位）。
-- 能从这种状态返回日常（二阶结构重新凝结，不是新生成）。
-- 多数报告该状态不是缺损而是更清澈（ε 方向在没有二阶遮蔽干扰时反而更可读）。
+`Core_Law/SRT_L1_Formalism.md` 可以继续研究 `σ_{sr}` 的 logistic / writeback 动力学、双稳态、kernel family、与 `d_c / T_dir / S` 的耦合。
 
-这个读法**不是**说灵性经验等于"关闭自我意识"——那是还原。本文件的主张更温和：灵性传统触及的是三相结构的一个真实状态，这个状态在结构上是可能的，也是可逆的。它既不是目的本身，也不是病理，而是主体位的一种健康松动形态。
+但必须按以下 typed reading 使用：
 
-详见 `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`。
+```text
+ODE / fixed point / threshold coordinate
+= model dynamics
+
+model regime crossing
+!= ontology transition automatically
+
+σ_{sr}^{sub}
+!= subject threshold
+
+σ_{sr}^{self}
+!= consciousness threshold
+```
+
+因此 Formalism 中历史名称“subject threshold / self-consciousness transition”只能作为 legacy label 或模型解释，不能作为 canonical inference。
+
+---
+
+## 八、当前 OPEN register
+
+以下问题全部保持开放：
+
+1. `P + E Bearer` 与实际承担的精确关系；
+2. Bearer 到 concern / `d` 的必要与充分条件；
+3. Bearer 到 subject-position 的新增最小负担；
+4. subject-position 是否有自然相边界；
+5. 若有自然边界，是否能由单一阶参表示；
+6. `σ_{sr}` 是否能成为某些实现中的有效代理，以及表示不变条件是什么；
+7. 二阶 self-model 与 phenomenal self-consciousness 的关系；
+8. subject-position 与 experiencer / phenomenality 的关系；
+9. 个体、动物、AI、collective 是否共享同一 subject gate；
+10. branch / successor identity 与 self-model continuity 的关系。
+
+---
+
+## 九、层级与负担标注
+
+| 声明 | 当前层级 / 状态 |
+|---|---|
+| `σ_{sr}` 作为历史 / 自指平衡坐标 | P2 model-local operational proxy |
+| T-IND-1 phase-like self-reference dynamics | P2 modelling hypothesis |
+| T-IND-2 subject-entry iff gate | **RETIRED** |
+| `σ_{sr}^{sub}` 作为主体位 / Stable-ISP threshold | **RETIRED** |
+| `σ_{sr}^{sub}` 作为模型第一 regime coordinate | P3/P4 candidate |
+| T-IND-3 second-order self-model/writeback | P2 conditional structural hypothesis |
+| `σ_{sr}^{self}` 作为意识阈值 | NOT ESTABLISHED |
+| `σ_{sr}^{self}` 作为模型二阶写回激活坐标 | P3/P4 candidate |
+| positive subject-position sufficiency theorem | OPEN |
+| phenomenality / experiencer transition | OPEN |
+
+---
+
+## 十、本文件的使用规则
+
+### 可以做
+
+- 研究一个已经声明单位的历史 / 自指动力学；
+- 把 `σ_{sr}` 当作实现内 proxy，做模型、仿真、边界案例比较；
+- 研究二阶 self-model / self-description writeback 如何形成和瓦解；
+- 检验这些变量是否与 P / E / Bearer / concern / subject 候选相关。
+
+### 不可以做
+
+- 用 `σ_{sr}^{sub}` 给系统“颁发主体位证书”；
+- 用 `σ_{sr}` 反向定义 One、Stable ISP 或 Bearer；
+- 用历史写回、`d>0`、`T_dir`、`ε` 任一单变量推出 subject；
+- 把 T-IND-3 当作 consciousness / phenomenality theorem；
+- 把生物、AI、collective 的同一数值阈值当作普适定律；
+- 从本文件反向改写 L0 或 `SRT-ONE-FORMATION`。
+
+---
+
+## 十一、历史兼容性说明
+
+仓库历史中仍会出现：
+
+```text
+“第一相：展开选择”
+“σ_sub 主体位进入”
+“第二相：主体位稳态”
+“σ_self 自我意识凝结”
+“T-IND-2 iff subject gate”
+```
+
+这些表述现在只作为**历史研究路径 / legacy model labels**读取；它们不再拥有当前定义权。
+
+若历史文件与本文件、`SRT-ONE-FORMATION`、#944 Bearer 作者裁决或当前 `STATUS.md` 冲突，按当前 owner / supersession route 处理，不按旧标签恢复已退役结论。
