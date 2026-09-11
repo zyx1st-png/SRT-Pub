@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 4126a9f2
+source_commit: 342dbd42
 source_branch: theory/generative-ontology-spine-canonical-20260911
-source_dirty: true
+source_dirty: false
 inputs_digest: 40ce726266fd2fee
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 40ce726266fd2fee
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `4126a9f2` |
+| 来源 commit | `342dbd42` |
 | 来源分支 | `theory/generative-ontology-spine-canonical-20260911` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
