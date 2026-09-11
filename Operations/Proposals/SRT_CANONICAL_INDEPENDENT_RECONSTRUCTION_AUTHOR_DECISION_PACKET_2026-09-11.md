@@ -1,7 +1,7 @@
 ---
 id: SRT-CANONICAL-INDEPENDENT-RECONSTRUCTION-AUTHOR-DECISION-PACKET-20260911
 type: proposal
-status: adjudicated
+status: active
 record_stage: author_gate_adjudicated
 date: 2026-09-11
 layer: operations
