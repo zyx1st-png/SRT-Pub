@@ -352,6 +352,10 @@ they may not silently constitute them.
 
 Exact bearer/domain and threshold assignments remain OPEN.
 
+**既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
+
+已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
+
 ---
 
 ## Programme-level verdicts unchanged
