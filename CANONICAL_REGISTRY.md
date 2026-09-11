@@ -185,12 +185,22 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 角色：Physics 板块已形成从量子入口、宇宙学/形式化主干，到复杂性/深本体扩展的完整 compact core 入口层
 - 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力—`Ψ_f`”当前只保留弱场梯度方向相容假说，强版规范实现 / 张量级 GR 重建不得作为已证结论引用
 
+### 13. SRT One Formation（One / Selection-position 形成层 owner）
+- 主文件：`Core_Law/SRT_One_Formation.md`
+- id：`SRT-ONE-FORMATION`
+- layer：L1 / epistemic：os / status：draft_v0 / claim-mode：canonical / claim-level：P1-candidate
+- 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> active vertical organization -> One / Selection-position` 的形成语义；verticality 是 Selection-generated / regenerated 的非平坦组织，不是被动历史沉积；One 只按 D4a 强度固定为 localized、lineage-relative、processual formed unity，其持续为 Selection-mediated recurrent reconstitution；`Selection-position_t` 是同一 continuing One 的 time-local operative from-where
+- 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One
+- 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One
+- 与 Collective 的关系：higher-order / relation-level One 不自动成为 collective ISP；T-COLL-1 保持独立 standing gate
+- 引用规则：涉及 active vertical formation、One、pre-subject ontological Selection-position、history/verticality typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件
+
 ### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 相变理论，填补 L0（选择无主语）与 P1-T06 Stable ISP 之间的过渡空洞；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
-- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学候选**；P1-T06 是 ISP 的**结果状态判据**（continued selectability）。`σ_{sr}<1` 不单独证明该结果，更不证明 21C B13 的 generative reselectability
+- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
 - claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
@@ -271,7 +281,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 1. `CANONICAL_REGISTRY.md`（找入口）
 2. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
-3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义与跨域用法）
+3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core_Law/SRT_One_Formation.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义、形成层 owner 与跨域用法）
 4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
 5. domain claim-status files（防止 bridge / public / clinical / spirituality / AI / physics overclaim）
 6. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释；not final definitions）
@@ -291,6 +301,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - `Claim hardness` → `Governance/SRT_CLAIM_LADDER.md`
 - `Claim-mode downgrade audit` → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - `Open tensions` → `Core/SRT_OPEN_TENSIONS.md`
+- `One / Selection-position formation` → `Core_Law/SRT_One_Formation.md`
 
 这意味着：
 - `AI/SRT_AI_01_Ontology.md` 不再单独承担 d-value 的最终规范权

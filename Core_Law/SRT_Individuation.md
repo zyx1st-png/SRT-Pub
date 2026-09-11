@@ -6,12 +6,12 @@ status: draft_v0
 layer: L1
 epistemic_layer: os
 claim_mode: hybrid
-dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-12B-ONTOLOGY-L2, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL]
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-12B-ONTOLOGY-L2, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL]
 ---
 
 # SRT 个体化理论：主体位从无主语选择中凝结
 
-> **角色声明**：本文件是 L1 层的相变理论，填补 L0（选择无主语）与 P1-T06（稳定 ISP 作为持续视角中心）之间的过渡空洞。它不引入新的 L0 公设，也不改写已有 P1 定理；它承担的是**从无主语选择到载视角选择的动力学说明**，并把"自我意识"定位为这一过程中的二阶凝结物。
+> **角色声明**：本文件是 L1 层的主体位 / 自我意识相变模型，位于 `Core_Law/SRT_One_Formation.md` 已固定的 formed `One / Selection-position` 之后。它不引入新的 L0 公设，也不改写已有 P1 定理；它承担的是**从已形成 One / Selection-position 到更强 subject-position / self-consciousness 候选的动力学说明**，并把"自我意识"定位为这一过程中的二阶凝结物。
 >
 > **写给读者**：如果你觉得本文件在"证明"主体存在，那是误读。主体位的涌现不是被证明的，是被**追踪**的——SRT 追踪选择模式在什么结构条件下会凝结出一个能够持续承担自己选择的位置。自我意识不是某种添加进来的性质，而是该凝结过程继续走下去时的内部折叠。
 >
@@ -25,13 +25,15 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 
 ## Quick Reference
 
-- **Role**: L1 theory of how subjectless selection condenses into perspective-bearing selection; extension (not replacement) of P1-T06 Stable ISP entry conditions.
+- **Role**: L1 subject-position / self-consciousness dynamics downstream of `SRT-ONE-FORMATION`; not the owner of One formation and not the definition of Stable-ISP entry.
 - **Core claim**: Individuation is a phase transition in the self-reference ratio of a selection pattern; self-consciousness is a second-order condensate within an already-stable ISP.
 - **Claim status**: Hybrid. The three-phase skeleton is P1-candidate (constitutive under L0). The specific threshold values σ_{sr}^{sub}, σ_{sr}^{self} are P3/P4. The second-order condensate reading of self-consciousness is P2 (canonical interpretation).
-- **Depends on**: L0 metaphysics (subjectless selection, position, irreversibility), P1-T06 (Stable ISP / continued selectability), 21C B13 (ST-A conditional generative reselectability), T-L2-Scaffold (path trace).
+- **Depends on**: L0 metaphysics (subjectless Selection, finite position, irreversibility), `SRT-ONE-FORMATION` (formed One / Selection-position), P1-T06 (Stable ISP / continued-selectability standing), 21C B13 (ST-A conditional generative reselectability), T-L2-Scaffold (path trace).
 - **Used by**: Consciousness theory (Philosophy / Neuroscience), AI stake spectrum S0–S4, spirituality return pathology (loss and return of 主体位).
 - **Safe edits**: Typo fixes, cross-reference updates, threshold refinement with P4 marking.
 - **Do not change**: Three-phase structure, self-consciousness as condensate (not as innate property), ε/κ₀ roles without explicit cross-check with L0.
+
+> **R1 owner boundary (2026-09-11)**: `Core_Law/SRT_One_Formation.md` canonically owns active vertical formation, `One`, and ontological `Selection-position`. The `σ_{sr}` family, `σ_{sr}^{sub}`, and T-IND-2 may not be used to define those upstream objects or to override P1-T06 standing. Legacy body phrases that call `σ_{sr}^{sub}` an "ISP entry" coordinate remain model-local subject-transition language pending the separate R2 individuation / measurement reconstruction; this R1 landing does not adjudicate the exact subject threshold.
 
 ---
 

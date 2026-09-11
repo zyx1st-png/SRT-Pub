@@ -7,7 +7,7 @@ layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P2-P4
-dependency: [SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+dependency: [SRT-CORE-21A-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Core 21C: Bridge Hypotheses and Canonical Interpretations
@@ -326,6 +326,8 @@ SRT's `L_2` downward constraint is therefore not a separate configurational forc
 1. **Formed process**: a selection organization has become identifiable at all.
 2. **Structurally stable ISP**: the same perspective- and history-bearing organization is recurrently reconstituted across a declared perturbation range. Its P1 minimum is **continued selectability**: it continues to receive live, non-equivalent candidates and to bear the consequences of its selections.
 3. **Generatively healthy ISP**: in addition, consequence return can revise its own comparison rules, boundaries, or candidate-generation conditions. This stronger property is **generative reselectability**.
+
+**R1 One-formation crosswalk (2026-09-11)**: B13's `formed process` is a broad bridge category, not the definition authority for `One` or `Selection-position`. One-specific formation semantics are owned by `Core_Law/SRT_One_Formation.md`. In particular, `One != structurally stable ISP automatically`; B13 continues to own stabilisation / generative-health distinctions only.
 
 Structural stabilisation is therefore not microstate identity, continuous activity, a fixed point, or an attractor label. Generative reselectability is ongoing consequence-sensitive revisability, not total closure followed by an unexplained reopening. It is important for generative health but is neither necessary for every individual selection event nor sufficient by itself to establish health.
 
