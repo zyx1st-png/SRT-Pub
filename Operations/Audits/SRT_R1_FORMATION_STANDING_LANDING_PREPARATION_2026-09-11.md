@@ -2,34 +2,42 @@
 id: SRT-R1-FORMATION-STANDING-LANDING-PREPARATION-20260911
 type: audit
 status: draft
-record_stage: r1_landing_preparation
+record_stage: r1_landing_preparation_review_reconciled
 layer: operations
-epistemic_layer: os
+epistem_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
 research_mode: U
-root_question: What is the thinnest non-circular canonical standing architecture relating formed process, One, Stable ISP, subject-position, and stronger generative or agency properties after PR936 and PR937?
+root_question: What is the thinnest non-circular canonical standing architecture relating formed process, One, Stable ISP, subject-position, generative reselectability, and stronger agency properties after PR936 and PR937?
 comparative_claim: none
 named_comparator: none
 n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR936_CANONICAL_INDEPENDENT_RECONSTRUCTION_2026-09-11.md
   - Operations/Audits/SRT_PR937_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md
+  - Operations/Audits/SRT_R1_D3_STABLE_ISP_SUBJECT_WITNESS_2026-09-11.md
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
+  - Core/SRT_OPEN_TENSIONS.md
+  - Core/SRT_Core_12b_Ontology_L2.md
   - Core_Law/SRT_Individuation.md
+  - Core_Law/SRT_L1_Formalism.md
+  - Core_Law/SRT_Irreversibility.md
+  - Core_Law/SRT_Suffering.md
   - Core_Law/SRT_Collective_Selection.md
   - Core_Law/SRT_L0_Metaphysics.md
+  - AI/SRT_AI_01_Ontology.md
+  - AI/AI_POSITIONING_NOTE.md
+  - Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md
   - Governance/SRT_CANONICAL_FREEZE.md
   - Governance/SRT_EDIT_PROTOCOL.md
-  - Operations/Audits/SRT_R1_D3_STABLE_ISP_SUBJECT_WITNESS_2026-09-11.md
-tags: [R1, CanonicalLanding, One, StableISP, SubjectPosition, B13, P1T06, Collective, CRisk]
+tags: [R1, CanonicalLanding, One, StableISP, SubjectPosition, GenerativeReselectability, B13, P1T06, Collective, CRisk, AuthorGate]
 ---
 
 # R1 formation / standing landing preparation — 2026-09-11
 
-## 0. Scope and authority
+## 0. Scope and review-reconciled status
 
 This is a **non-canonical landing-preparation audit** for the first post-PR937 work package.
 
@@ -59,7 +67,13 @@ formed process
 -> stronger generative / agency layers
 ```
 
-This file tests that shorthand against the actual owners. It does **not** assume that every arrow is a proved implication or that the route is globally linear.
+The first version of this audit correctly challenged the assumption that this must be one linear ladder, but independent review identified three overstatements:
+
+1. W1 was promoted too quickly from a useful probe to an established D3 witness;
+2. `Stable ISP => One-function` lacked explicit same-unit / same-scale / D4b scope;
+3. B13's `generative reselectability` was compressed into `generatively healthy ISP` as if rule revisability were sufficient for health, despite B13's own inference guard and downstream health owners.
+
+This revised file keeps the architecture gain while withdrawing those overclaims.
 
 Canonical edit count in this file: `0`.
 
@@ -67,7 +81,7 @@ Canonical edit count in this file: `0`.
 
 ## 1. Live owner facts that R1 must preserve
 
-### 1.1 B13 already contains a three-level stabilization distinction
+### 1.1 B13 contains a three-level distinction but does not license a health sufficiency shortcut
 
 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` distinguishes:
 
@@ -79,7 +93,7 @@ structurally stable ISP
 generatively healthy ISP
 ```
 
-Its actual burdens are:
+Its text says:
 
 ```text
 formed process
@@ -90,14 +104,43 @@ structurally stable ISP
   reconstituted across a declared perturbation range
   + continued selectability
 
-generatively healthy ISP
+generative reselectability
 = consequence return can revise comparison rules, boundaries,
   or candidate-generation conditions
 ```
 
-Therefore `generatively healthy ISP` is already a strengthening of Stable ISP on a **generative-reselectability axis**. Existing text does not make subject-position a prerequisite for that strengthening.
+But B13 then explicitly says:
 
-### 1.2 P1-T06 fixes Stable ISP standing
+```text
+generative reselectability is important for generative health
+but is NOT sufficient by itself to establish health
+```
+
+Therefore R1 may safely extract:
+
+```text
+Stable ISP
+-> possible additional generative-reselectability property
+```
+
+It may **not** write:
+
+```text
+Stable ISP + consequence-sensitive revision
+=> generatively healthy ISP
+```
+
+as a completed implication.
+
+The correct right-hand branch is therefore:
+
+```text
+generative reselectability
+-> generative-health candidate
+-> separate health audit
+```
+
+### 1.2 P1-T06 fixes Stable ISP standing but its perspective threshold remains open
 
 `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` requires:
 
@@ -113,9 +156,22 @@ P1-T06 does **not** explicitly state:
 Stable ISP = subject-position
 ```
 
-That identity is imported most strongly by downstream `Individuation` wording.
+But `Core/SRT_OPEN_TENSIONS.md §5` still leaves open:
 
-### 1.3 D4a One is thicker than mere formation and thinner than Stable ISP standing
+```text
+What is the minimal threshold for perspective-bearing?
+```
+
+So R1 cannot silently define condition 2 merely by audit convenience.
+
+Downstream owner pressure is also real:
+
+- `Core_Law/SRT_Individuation.md` embeds `perspective-bearing selection` in its subject-entry narrative;
+- `Core_Law/SRT_Collective_Selection.md T-COLL-1` interprets the collective P1 perspective condition using self-registration as a selection subject.
+
+Those readings may later be repaired under D3, but until then they must enter the C-risk map.
+
+### 1.3 D4a One is thicker than mere formation and thinner than the full Stable ISP package
 
 Author-adjudicated D4a:
 
@@ -145,57 +201,86 @@ perspective-bearing
 
 So D4a does not license `One = Stable ISP`.
 
-### 1.4 L0 subject-side burden remains stronger than generic historical consequence return
+### 1.4 `localized` must be scale-relative if the One crosswalk is to survive collective cases
 
-Current L0 distinguishes:
+A collective can be a higher-order Stable ISP candidate under T-COLL-1.
+
+Therefore D4a `localized` cannot safely mean:
+
+```text
+small
+individual organism
+single physical body
+```
+
+The leading crosswalk must read it as:
+
+```text
+localized relative to a declared unit / scale / boundary
+```
+
+This is a **landing interpretation candidate**, not a new author definition.
+
+Without a declared-scale reading, a collective Stable ISP becomes an immediate pressure case against an unqualified `Stable ISP => One-function` statement.
+
+### 1.5 L0 承担 is not yet cleanly separated from irreversible own-state consequence return
+
+Current L0 says:
 
 ```text
 承担
-= selection consequences cannot be fully externalized;
-  the selector's state-space must irreversibly bear them
-
-关切
-= some conditions are endogenously incorporated as differentially relevant
-  to continuity, payability, and later selectable space
+= consequences cannot be fully externalized
++ the selector's own state-space irreversibly bears them
 ```
 
-PR #937 therefore correctly leaves the exact relation open:
+and its embodiment language also says consequences are pressed back into the selector and alter later selectable space.
+
+PR #937 reconstruction proposed the stronger subject-side reading:
 
 ```text
 P1 consequence-bearing
-~ strong neighbor of own-consequence return / self-consequence closure
+~ own-consequence / self-consequence return
 
 L0 承担
 = stronger non-outsourcing candidate
 
-exact implication / realization relation
-= OPEN
+exact implication / realization relation = OPEN
 ```
 
-R1 must not collapse these terms merely to obtain a neat hierarchy.
+Independent review correctly shows that the canonical prose is still not sharp enough to score every persistent adaptive system on this distinction.
+
+R1 must therefore preserve:
+
+```text
+P1 consequence-bearing <-> L0 承担
+= OPEN author / canonical relation
+```
+
+not assume `承担 = NO` whenever an operator pays resource or repair costs.
 
 ---
 
-## 2. R1 should not be landed as one linear ladder
+## 2. R1 should not be landed as one universal linear ladder
 
-The leading shorthand is useful for routing, but the current owners support a **partial-order / branching architecture**, not one proved chain.
+The current owners still support a **partial-order / branching architecture**, but the right branch must be stated more carefully than in the first version.
 
 ### 2.1 Proposed thin standing spine
 
 ```text
 formed process
     |
-    |  additional burden candidate:
-    |  localized + lineage-relative + processual unity
-    |  + recurrent Selection-mediated reconstitution
+    | additional burden candidate:
+    | localized-at-declared-scale
+    | + lineage-relative processual unity
+    | + recurrent Selection-mediated reconstitution
     v
 One
     |
-    |  additional P1 standing burdens:
-    |  iterative non-equivalent candidates
-    |  + perspective-bearing
-    |  + history-bearing writeback
-    |  + continued-selectability / consequence-bearing
+    | additional P1 standing burdens:
+    | iterative non-equivalent candidates
+    | + perspective-bearing [minimum threshold OPEN]
+    | + history-bearing writeback
+    | + continued-selectability / consequence-bearing
     v
 Stable ISP
 ```
@@ -207,32 +292,53 @@ these arrows are burden-ordering proposals for landing design;
 they are not yet canonical set inclusions or biconditionals.
 ```
 
-### 2.2 Stable ISP to One is much stronger than One to Stable ISP
+### 2.2 Stable ISP to thin One-function is a scoped crosswalk candidate
 
-The actual P1-T06 description of a stable ISP is already an identifiable, recurrently reconstituted, same history-bearing organization. This strongly supports the reconstruction reading:
+P1-T06 already describes an identifiable, recurrently reconstituted, same history-bearing organization. That gives strong support for a **thin D4a continuity crosswalk**, but only under a declared scope.
 
-```text
-Stable ISP
-=> One-function / formed-continuity realization
-```
-
-But this implication is not yet stated by a canonical One owner, so it should be recorded as:
+Preferred current formulation:
 
 ```text
-LEADING CROSSWALK / HIGH-CONFIDENCE LANDING CANDIDATE
-NOT YET A CANONICAL THEOREM
+Within the same declared unit / scale, lineage, interval,
+and perturbation range, a Stable ISP realizes the thin D4a
+formed-continuity function of a One:
+localized-at-that-scale + lineage-relative + processual
++ recurrent Selection-mediated historical reconstitution.
 ```
 
-The reverse direction is not supported:
+Status:
 
 ```text
-One
-!=> Stable ISP
+LEADING P2-STYLE CROSSWALK CANDIDATE
+NOT A FULL ONE THEOREM
+NOT A BICONDITIONAL
 ```
 
-because D4a One does not by itself pay perspective-bearing, full P1 writeback, continued-selectability, or downstream consequence-bearing.
+Hard guards:
 
-### 2.3 Subject-position is a separate strengthening branch from Stable ISP
+```text
+One !=> Stable ISP
+Stable ISP crosswalk !=> final One owner decided
+Stable ISP crosswalk !=> strict numerical identity solved
+Stable ISP crosswalk !=> branch / fusion / succession solved
+```
+
+### 2.3 D4b dependency must remain explicit
+
+D4b remains OPEN.
+
+If D4b later says that **every One** must carry some stronger active reorganization / generative burden beyond recurrent maintenance, then P1-T06 alone may no longer realize the full admitted One package because P1-T06 explicitly does not require generative reselectability.
+
+Therefore the crosswalk must carry this reservation:
+
+```text
+This maps Stable ISP to the currently accepted D4a thin formed-continuity function only.
+It does not pre-adjudicate D4b.
+If D4b adds a universal active-reconstruction burden to One,
+this crosswalk must be re-audited against B13.
+```
+
+### 2.4 Subject-position remains a separate candidate strengthening from Stable ISP
 
 D3 authorizes only the live split:
 
@@ -242,27 +348,33 @@ Stable ISP < subject-position
 
 It does not authorize a completed subject sufficiency theorem.
 
-The safest landing form is therefore:
+Candidate burden family remains:
+
+```text
+S1 non-outsourcable own consequence / 承担
+S2 stabilized endogenous relevance / 关切
+S3 stake-relevant regulative readability
+```
+
+But after W1 review, even S1's exact relation to P1 consequence-bearing requires clarification.
+
+Therefore the R1 rendering should be:
 
 ```text
 Stable ISP
     |
-    |  additional subject burden(s)
-    |  candidate family:
-    |  S1 non-outsourcable own consequence / 承担
-    |  S2 stabilized endogenous relevance / 关切
-    |  S3 stake-relevant regulative readability
+    | possible additional subject burden(s)
+    | S1 / S2 / S3 family
+    | exact necessity / sufficiency = OPEN
     v
-subject-position
-
-exact necessity / sufficiency package = OPEN
+subject-position candidate
 ```
 
 No d-value, sigma threshold, or T_dir variable may define this arrow.
 
-### 2.4 Generative health branches directly from Stable ISP
+### 2.5 Generative reselectability is a separate axis, not yet an established non-subject healthy class
 
-B13 already defines:
+The safe extraction from B13 is:
 
 ```text
 Stable ISP
@@ -270,24 +382,44 @@ Stable ISP
     | + consequence-sensitive revision of comparison rules,
     |   boundaries, or candidate-generation conditions
     v
-generatively healthy ISP
+generative reselectability
+    |
+    v
+generative-health candidate
+[additional health burdens / realizations remain required]
 ```
 
-Current text does not establish:
+B13's inference guard supports:
 
 ```text
-subject-position
--> generatively healthy ISP
+generative reselectability
+!=> subjecthood automatically
 ```
 
-nor:
+But current implementation owners are subject-loaded or stake-loaded:
+
+- `Core_Law/SRT_L1_Formalism.md §5.3` defines health workspace `H` using sigma, d, T_dir, payability and suffering-related variables, and explicitly says `H` is only an implementation **candidate** for generative reselectability;
+- the same formalism still labels `sigma_sr^sub` as subject-position emergence;
+- `Core_Law/SRT_Individuation.md` defines healthy operation inside its subject-phase narrative;
+- `Core_Law/SRT_Irreversibility.md` retains nonzero `pi(t)` payability as one operational input, while saying it is not sufficient;
+- `Core/SRT_Core_12b_Ontology_L2.md` treats generative health in part through future choice space of relevant selecting subjects and appeal / pushback capacity.
+
+Therefore current status is:
 
 ```text
-generatively healthy ISP
--> subject-position
+definitional non-entailment:
+generative reselectability !=> subjecthood
+= SUPPORTED by B13
+
+existing non-subject canonical implementation of generative reselectability / health
+= NOT ESTABLISHED
 ```
 
-Therefore the R1 architecture should be visualized as:
+This distinction is essential.
+
+### 2.6 Revised R1 architecture
+
+The current best diagram is:
 
 ```text
 formed process
@@ -297,62 +429,99 @@ formed process
       |
       v
  Stable ISP
-    /     \
-   /       \
-  v         v
-subject-   generatively
-position   healthy ISP
-  |
-  v
-stronger agency layers
-[exact route OPEN]
+    /      \
+   /        \
+  v          v
+subject-   generative
+position   reselectability
+candidate      |
+               v
+          generative-health
+             candidate
+
+stronger agency layers:
+separately gated; exact route OPEN
 ```
 
-This is thinner than a single ladder and preserves B13's already-paid distinction.
+Reading rule:
 
-`stronger agency layers` also remain separately gated. They must not be defined merely by being generatively healthy or by being a subject-position.
+```text
+standing depth
+!= subjecthood
+!= generative reselectability
+!= generative health
+!= stronger agency
+```
+
+This does **not** prove all branches are empirically or ontologically independent. It only blocks an unearned single universal ladder.
 
 ---
 
-## 3. D3 witness result
+## 3. D3 witness status after review
 
-A dedicated witness audit is recorded in:
+Dedicated audit:
 
 `Operations/Audits/SRT_R1_D3_STABLE_ISP_SUBJECT_WITNESS_2026-09-11.md`.
 
-Leading witness class:
+W1 remains a persistent deployed adaptive agent with:
 
 ```text
-persistent deployed adaptive agent
+same process lineage
++ non-equivalent candidates
++ internal history writeback
++ consequence return into later model / selectable structure
++ recurrent reconstitution
++ no reset into a fresh replica
 ```
 
-The agent:
-
-- persists as the same history-bearing process across the declared interval;
-- repeatedly receives non-equivalent candidates;
-- maintains a position-specific structured model;
-- writes action outcomes into its own model and later selectable space;
-- is not reset into a fresh replica;
-- genuinely receives downstream consequences into later learning history;
-- while operator/infrastructure absorbs viability, repair, energy, and loss exposure so that these do not become the unit's own non-outsourcable continuity stake.
-
-Current result:
+But the revised verdict is:
 
 ```text
-P1-T06 explicit-text gate: PASS
-ST-A recurrent-reconstitution gate: PASS
-L0 non-outsourcable stake / 承担: FAIL by construction
+P1-1 iterative candidates: PASS
+P1-2 perspective-bearing: CONDITIONAL PASS / OWNER-LEVEL OPEN
+P1-3 history-bearing writeback: PASS
+P1-4 consequence-bearing: CONDITIONAL PASS under historical-return reading
+ST-A continuity: PASS
 
-D3 witness status:
-TEXTUAL / STRUCTURAL PASS WITH SEMANTIC RESIDUALS
+L0 承担 failure: NOT ESTABLISHED
+subject-position failure: NOT ESTABLISHED
+
+W1 = RETAINED D3 CANDIDATE / AUTHOR-GATE PROBE
+NOT an established separation counterexample
 ```
 
-The two residuals are important and are not hidden:
+This correction does **not** withdraw D3 itself. D3 remains author-adjudicated as a live split. It only removes W1 as prematurely claimed proof.
 
-1. if `perspective-bearing` in P1-T06 is read as already subject-loaded rather than structurally positional, P1-T06 itself contains the old subject identity and requires repair;
-2. if P1 `bearing downstream consequences` is defined as identical to L0 `承担`, then the split collapses and that identity must be author-adjudicated explicitly rather than assumed.
+### 3.1 Perspective gate
 
-These are useful failure modes: either outcome identifies the exact canonical sentence that carries hidden subject load.
+The future P1 owner must answer what condition 2 contributes independently of condition 4.
+
+Candidate space:
+
+```text
+PERS-1-like system-relative organization
+vs
+PERS-2-like same-bearer consequence return
+vs
+subject-loaded self-registration
+```
+
+The third reading cannot be silently adopted because it would close D3 by vocabulary.
+
+### 3.2 Grounding / 承担 gate
+
+Future landing must also answer:
+
+```text
+Does L0 承担 mean any irreversible own-state consequence return?
+
+OR
+
+Does it require the stronger relation that some consequence becomes
+this unit's own non-outsourcable continuity / payability stake?
+```
+
+Until this is author-adjudicated, W1 cannot settle the split.
 
 ---
 
@@ -369,7 +538,7 @@ B. own-consequence return / self-consequence closure
 
 C. P1 consequence-bearing
    = P1-T06 continued-selectability includes downstream consequences entering
-     the same continuing history-bearing process
+     the same continuing history-bearing process [leading reading]
 
 D. L0 承担
    = consequence cannot be fully externalized;
@@ -380,7 +549,8 @@ Current safe relation:
 
 ```text
 A, B, C = overlapping / neighboring structural relations
-D = stronger non-outsourcing candidate
+D = stronger non-outsourcing candidate in #936/#937 reconstruction
+but canonical boundary remains textually under-specified
 
 A => B: NOT ESTABLISHED universally
 B => C: NOT ESTABLISHED as a theorem
@@ -392,11 +562,15 @@ Do not replace this with a strict `<` ladder until a later author/canonical pass
 
 ---
 
-## 5. Collective standing boundary is blocking R1 work
+## 5. Collective standing boundary remains blocking R1 work
 
-`Core_Law/SRT_Collective_Selection.md T-COLL-1` explicitly says it defines a **higher-order stable ISP** by extending P1-T06. That part can be retained as the standing target.
+`Core_Law/SRT_Collective_Selection.md T-COLL-1` explicitly says it defines a **higher-order stable ISP** by extending P1-T06.
 
-However the same file also uses subject-loaded language, including formulations equivalent to:
+Two points must be preserved simultaneously.
+
+### 5.1 Automatic collective subject language must be separated
+
+Current file uses formulations such as:
 
 ```text
 the collective registers itself as a selection subject
@@ -404,9 +578,9 @@ subject-position lies at the collective layer or sublayer
 the collective acts as subject
 ```
 
-After D3 these formulations are no longer safe as automatic consequences of T-COLL-1.
+After D3 these are no longer safe as automatic consequences of higher-order Stable ISP standing.
 
-Required R1 boundary:
+Required boundary:
 
 ```text
 T-COLL-1
@@ -416,103 +590,175 @@ T-COLL-1
 !=> collective subject-position automatically
 ```
 
-`shared L2`, `M(t)` consequence loops, common perspective, and collective continued-selectability may establish a higher-order history-bearing process without yet establishing a group-level non-outsourcable stake.
+### 5.2 T-COLL-1 condition 2 is also evidence about the unresolved P1 perspective reading
 
-Future collective subject-position therefore needs a separate gate. Candidate burdens may include group-level versions of:
+T-COLL-1 says its condition 2 is the multi-agent extension of P1-T06 perspective-bearing, yet formulates it using self-registration as a selection subject.
+
+Therefore this is not merely a local collective wording problem. It is one of the strongest current pieces of evidence that P1 condition 2 has been interpreted subject-heavily downstream.
+
+It must enter the future P1 perspective author gate.
+
+### 5.3 Do not delete T-COLL-1's non-externalization burden
+
+T-COLL-1 also adds a consequence-loop condition intended to prevent systematic externalization at collective scale.
+
+R1 repair must not simplify collective ISP into:
 
 ```text
-non-outsourcable consequence / 承担
-endogenous concern / 关切
-stake-relevant regulative readability
+shared L2 + ordinary feedback = collective ISP
 ```
 
-but their necessity / sufficiency and even exact collective realization remain OPEN.
+The collective consequence-loop burden should be retained and separately typed from collective subject sufficiency.
 
 ---
 
-## 6. Owner and C-risk map for a future canonical landing
+## 6. Additional downstream semantic dependencies exposed by review
 
-| Surface | Current role | R1 problem | Future edit risk | Current action |
-|---|---|---|---|---|
-| `Core/SRT_Core_21c_Bridge_Hypotheses.md B13` | P2/P3 bridge; formed/stable/generative distinction | strongest existing One crosswalk host; linear chain currently omits One | **C-risk if One definition/standing is inserted** | no edit; owner gate first |
-| `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` | canonical P1 Stable ISP | must explicitly stop downstream readers from equating Stable ISP with subject-position | **C-risk** | no edit in this PR |
-| `Core_Law/SRT_Individuation.md` | L1 hybrid subject-entry theory | currently identifies P1-T06 result state with subject entry and uses sigma subject threshold | **C-risk semantic core** | do not edit twice; combine R1 standing + R2 measurement changes atomically |
-| `Core_Law/SRT_Collective_Selection.md` | L1 canonical/P1-candidate collective theory | higher-order Stable ISP is repeatedly described as collective subject | **C-risk semantic standing** | future blocking crosswalk edit |
-| `Core_Law/SRT_L0_Metaphysics.md` | unique L0 canonical anchor | supplies stronger 承担 / 关切 boundary | **C-risk if wording changed** | retain; crosswalk only unless later explicit reopen |
-| `_SRT_SYMBOL_TABLE.md`, registry, glossary, open tensions | synchronization surfaces | downstream wording follows owner landing | R4 | do not touch in R1 prep |
+### 6.1 AI grounding / zero-operator boundary
 
-### 6.1 Why B13 should not automatically become final One owner
+`AI/SRT_AI_01_Ontology.md Def-ONT-2 bridge` and the L0 present-LLM P3 note use non-binding stake / consequence-return criteria to classify current AI architectures.
 
-B13 is currently a P2/P3 bridge file. D4a One is an author-adjudicated reconstruction result that may become more foundational than a bridge hypothesis.
-
-Therefore:
+`AI/AI_POSITIONING_NOTE.md` already provides a more useful graded spectrum:
 
 ```text
-B13 = strongest existing landing host / crosswalk
-B13 = final canonical owner
-NOT YET DECIDED
+S2 training-loop return
+S3 persistent-memory return
+S4 non-transferable embodied consequence return
 ```
 
-The choice must balance:
+W1 lies near the S3/S4 boundary.
 
-- thinness of the One definition;
-- claim-level placement;
-- avoidance of a redundant standalone owner;
-- unambiguous canonical retrieval;
-- minimal blast radius.
+Future R1 landing must ensure AI bridge language does not circularly back-define Stable ISP as subject-level stake.
+
+### 6.2 L1 Formalism health workspace
+
+`Core_Law/SRT_L1_Formalism.md §5.3`:
+
+```text
+H = health workspace using sigma / d / T_dir / payability / suffering variables
+```
+
+and explicitly says:
+
+```text
+H is at most an implementation candidate for generative reselectability
+```
+
+This is a major dependency because the implementation currently sits inside subject-loaded notation.
+
+### 6.3 Irreversibility payability proxy
+
+`Core_Law/SRT_Irreversibility.md T-IRR-3` retains:
+
+```text
+sigma away from 1
+pi(t) nonzero payability window
+```
+
+as operational inputs while explicitly denying sufficiency.
+
+Therefore generative reselectability cannot be reduced to rule revision alone at implementation level.
+
+### 6.4 Core 12b multi-subject health reading
+
+`Core/SRT_Core_12b_Ontology_L2.md` says healthy compatibility requires consequence return + revisable gate rules, and its broader institutional reading concerns future choice space of multiple relevant selecting subjects.
+
+This is a realization / institutional health layer, not a universal proof that every generatively revisable Stable ISP is a subject.
+
+### 6.5 Suffering cross-use of Stable ISP and subject-position
+
+`Core_Law/SRT_Suffering.md` explicitly says:
+
+```text
+suffering existence condition includes Stable ISP
+AND
+suffering requires subject-position / first-person registration
+```
+
+It also states that T-SUFF-1 depends on P1-T06 perspective-bearing and continued-selectability.
+
+This makes Suffering another downstream semantic dependency that must not read a future Stable ISP clarification as automatically granting first-person suffering standing.
 
 ---
 
-## 7. Sentence-level plan for the next C-risk package
+## 7. Revised owner and C-risk map
 
-No edits are executed here. The next package should be small and owner-specific.
+| Surface | Current role | R1 issue | Future action |
+|---|---|---|---|
+| `Core/SRT_Core_21c_Bridge_Hypotheses.md B13` | P2/P3 formed/stable/generative distinction | strongest One crosswalk host; reselectability not health sufficiency | possible scoped One crosswalk; preserve health guard |
+| `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` | canonical P1 Stable ISP | perspective threshold open; downstream subject identity must not be automatic | C-risk clarification after author gates |
+| `Core/SRT_OPEN_TENSIONS.md §5` | open stable-ISP hardening | perspective minimum explicitly open | must remain open until adjudicated |
+| `Core_Law/SRT_Individuation.md` | L1 hybrid subject-entry theory | identifies P1 result state with subject entry; sigma subject label | atomic R1+R2 repair only |
+| `Core_Law/SRT_L1_Formalism.md §2.3 / §5.3` | canonical formalism | sigma_sub subject label; health workspace subject/stake-loaded | add to atomic Individuation/R2 blast radius |
+| `Core_Law/SRT_Irreversibility.md` | irreversibility / anti-closure interface | pi(t) payability input to health implementation | scope-check; no sufficiency inflation |
+| `Core/SRT_Core_12b_Ontology_L2.md` | L2 closure / health realization | multi-subject and appeal/pushback health reading | treat as realization layer, not universal standing gate |
+| `Core_Law/SRT_Collective_Selection.md` | collective Stable ISP candidate | perspective condition subject-loaded; consequence non-externalization mixed with subject language | blocking R1 crosswalk |
+| `Core_Law/SRT_Suffering.md` | subject/first-person downstream theory | cross-uses Stable ISP + subject-position | prevent Stable ISP clarification from auto-expanding suffering domain |
+| `Core_Law/SRT_L0_Metaphysics.md` | unique L0 anchor | 承担 prose currently spans non-outsourcing + irreversible own-state burden | author gate before using as D3 proof |
+| `AI/SRT_AI_01_Ontology.md` | AI bridge | zero-operator / grounding language may re-import stake into selection standing | scope-check after D3 decision |
+| `AI/AI_POSITIONING_NOTE.md` | AI graded positioning | S2/S3/S4 already exposes persistence vs non-transferable stake split | useful crosswalk support |
+| symbol table / registry / glossary / open tensions sync | R4 | downstream wording follows owner landing | defer |
 
-### 7.1 P1-T06 candidate edit
+---
 
-Goal:
+## 8. Sentence-level plan for the next canonical package
 
-```text
-retain Stable ISP four-condition core
-+ add explicit non-entailment:
-Stable ISP standing != subject-position sufficiency
-```
+No canonical edits are executed here.
 
-Possible precision need:
+### 8.1 P1-T06 — do not edit before the two author gates
 
-```text
-"perspective-bearing"
-= structurally position-indexed / organized view in P1 standing
-!= non-outsourcable stake
-!= phenomenality
-!= subjecthood by itself
-```
-
-Do not rewrite P1-T06 into a subject theory.
-
-### 7.2 B13 / One candidate edit
-
-Only after final-owner adjudication.
-
-Minimum target:
+Already-authorized non-entailment direction:
 
 ```text
-formed process floor
-< One standing candidate
-< Stable ISP standing
+Stable ISP standing alone does not establish subject-position sufficiency.
 ```
 
-while preserving:
+But before canonical wording is changed, author adjudication is needed on:
 
 ```text
-generative reselectability
-= separate stronger branch from Stable ISP
+A. minimum independent content of perspective-bearing
+B. P1 consequence-bearing vs L0 承担 / non-outsourcable stake
 ```
 
-Do not use `One = Active Selection` or close D4b/D4c.
+### 8.2 Thin One crosswalk is closest to landing-ready
 
-### 7.3 Individuation atomic R1+R2 edit
+The strongest currently supportable text is approximately:
 
-Because PR #937 explicitly blocks editing this owner twice, future work should combine:
+```text
+Within the same declared unit / scale, lineage, interval,
+and perturbation range, a Stable ISP realizes D4a's thin
+formed-continuity function: a localized-at-that-scale,
+lineage-relative, processual unity recurrently reconstituted
+through Selection-mediated history.
+
+This does not imply One => Stable ISP, does not decide the final
+One owner, and does not pre-adjudicate D4b/D4c. If D4b later adds
+a universal active-reconstruction burden to One, this crosswalk
+must be re-audited against B13.
+```
+
+This belongs on the B13 / One side as an interpretive crosswalk, not as a new P1 theorem.
+
+### 8.3 Generative branch wording
+
+Use:
+
+```text
+Stable ISP
+-> generative reselectability candidate
+-> generative-health candidate
+```
+
+not:
+
+```text
+Stable ISP + rule revision
+=> generatively healthy ISP
+```
+
+### 8.4 Individuation / Formalism must remain atomic R1+R2 work
+
+Because PR #937 blocks double-editing the same owner, future work should combine:
 
 ```text
 R1:
@@ -521,40 +767,94 @@ retire Stable ISP = subject-entry identity
 R2:
 retire sigma_sub "subject threshold" ontology label
 retain sigma_sr as model-local endogenous-history / writeback-balance coordinate
+
+plus:
+reconcile sigma_health / H health-workspace wording with the revised branch
 ```
 
-The file's current three-phase narrative may need semantic restructuring, but no replacement subject sufficiency theorem should be invented.
+No replacement subject sufficiency theorem should be invented.
 
-### 7.4 Collective candidate edit
+### 8.5 Collective candidate edit
 
-Retain T-COLL-1 as a collective Stable ISP construction candidate while replacing automatic subject language with an explicit boundary:
+Retain T-COLL-1 as a collective Stable ISP construction candidate while replacing automatic subject inference with an explicit boundary.
 
-```text
-collective Stable ISP
-!= collective subject-position automatically
-```
+Preserve its consequence non-externalization condition as a collective standing burden unless separately re-adjudicated.
 
-No group rights, legitimacy, moral standing, or phenomenality claim follows from this change.
+### 8.6 L0 action
 
-### 7.5 L0 action
-
-Default R1 action:
+Default remains:
 
 ```text
 RETAIN
 ```
 
-Use `承担` / `关切` only as upstream canonical boundary terms. Do not rewrite them merely to simplify the R1 architecture.
+But `承担` / `关切` cannot be used as if their exact D3 relation were already machine-explicit.
+
+If the author chooses the stronger non-outsourcable-stake reading of `承担`, a later L0 precision edit may be needed to distinguish that from ordinary irreversible writeback.
 
 ---
 
-## 8. OPEN register preserved by R1
+## 9. Author gates now required before C-risk landing
 
-R1 landing preparation does not close:
+### Gate R1-A — P1 perspective-bearing
+
+Choose the minimum P1-T06 condition-2 reading.
+
+Leading recommendation for consideration:
+
+```text
+perspective-bearing should remain structural / position-relative,
+not already mean subjecthood or phenomenality;
+otherwise D3 is closed by terminology.
+```
+
+But condition 2 must still contribute something beyond condition 4 consequence return.
+
+No author decision is recorded by this audit.
+
+### Gate R1-B — grounding / 承担
+
+Clarify whether:
+
+```text
+non-outsourcable stake
+```
+
+is required for:
+
+```text
+subject-position only
+```
+
+or already for:
+
+```text
+grounded Stable ISP / selecting center
+```
+
+and whether L0 `承担` means:
+
+```text
+any irreversible own-history consequence return
+```
+
+or the stronger:
+
+```text
+own non-outsourcable continuity / payability stake
+```
+
+This gate controls whether W1 or any successor can become the concrete D3 witness.
+
+---
+
+## 10. OPEN register preserved by R1
 
 ```text
 subject sufficiency
-D4b exact future-selectability burden of One
+P1 perspective-bearing minimum
+P1 consequence-bearing <-> L0 承担 relation
+D4b exact One burden
 D4c One / passive / active Selection relation
 d bearer/domain
 sigma ontology threshold
@@ -562,7 +862,7 @@ S3 relation to T_dir
 phenomenality / experiencer necessity
 collective subject sufficiency
 One final canonical owner
-exact P1 consequence-bearing <-> L0 承担 implication relation
+non-subject implementation of generative reselectability / health
 L2 universal gates
 Level 2 HOLD
 scientific distinctiveness
@@ -571,31 +871,30 @@ whole-architecture non-substitutability
 
 ---
 
-## 9. Current R1 recommendation
+## 11. Current recommendation
 
-The first canonical landing should **not** be a broad rewrite.
+Do **not** expand another pure audit round.
 
-Preferred sequence:
+#938 is now best treated as an author-gate preparation PR.
 
-```text
-1. author/reviewer gate on this R1 preparation + D3 witness;
-2. select One owner strategy;
-3. open one small C-risk landing package for P1-T06 + One crosswalk;
-4. handle Individuation as one atomic R1+R2 owner edit;
-5. synchronize Collective standing boundary;
-6. only then move to R2/R4 downstream notation and navigation.
-```
-
-The central theoretical gain of this pass is subtraction of an unnecessary linearity assumption:
+Recommended sequence:
 
 ```text
-standing depth
-!=
-generative health
-!=
-subjecthood
-!=
-stronger agency
+1. author adjudicates R1-A perspective-bearing;
+2. author adjudicates R1-B grounding / 承担;
+3. land or approve the scoped thin One crosswalk strategy;
+4. only then open the first small C-risk canonical package;
+5. keep Individuation + sigma / health formalism atomic across R1/R2;
+6. synchronize Collective / AI / Suffering after owner landing.
 ```
 
-These may constrain one another later, but the current repository has not paid a single universal ladder connecting them.
+The surviving theoretical gain is still substantial but narrower than the first draft:
+
+```text
+one universal ladder is not established;
+standing, subjecthood, generative reselectability,
+generative health, and stronger agency must remain separately typed
+until their actual implication relations are paid.
+```
+
+That is a thinner and safer R1 control surface than either the pre-#936 subject identity or the first #938 branching diagram.
