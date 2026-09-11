@@ -10,23 +10,26 @@ updated: 2026-09-11
 
 # SRT 当前状态仪表盘
 
-> **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页 `§Fast Status` 只提供当前 live workline、程序级 verdict 与前向路由，不替代 canonical owners、作者源记录或历史审计。
+> **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页 `§Fast Status` 只提供当前 checkpoint、程序级 verdict 与前向路由，不替代 canonical owners、作者源记录或历史审计。
 >
 > **历史快照**：本页 2026-09-11 重写前的完整旧 dashboard 已逐字保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`；同名 `.md` 为历史指针页。
 
 ## Fast Status
 
-### 1. 当前 live theory workline
+### 1. 当前 landed theory checkpoint
 
 ```text
-base main at #931 start:
-02d23efe8484bb9833b8ebd52320a7a304945e22
-
-current Draft PR:
+merged PR:
 #931 Consolidate Selection, vertical One, Bearer, and position-indexed Active Selection
 
-head branch:
+main after merge:
+87c4b6cfe47fef87aac643376a6ef107624fd33d
+
+source branch:
 theory/selection-vertical-one-lineage-20260911
+
+checkpoint role:
+NONCANONICAL RECONSTRUCTION CONSOLIDATION
 
 research_mode = U
 canonical edit = NO
@@ -37,11 +40,11 @@ scientific distinctiveness = NOT ESTABLISHED
 new deep well = NO
 ```
 
-**当前 handoff：**
+**#931 handoff / historical controlling record：**
 
 `Operations/Status_History/SRT_STATUS_2026-09-11_SELECTION_VERTICAL_ONE_LINEAGE_HANDOFF.md`
 
-**当前 consolidated proposal：**
+**landed consolidated proposal：**
 
 `Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md`
 
@@ -53,9 +56,13 @@ new deep well = NO
 
 `Operations/Audits/SRT_PR931_FORMAL_CONTENT_REVIEW_2026-09-11.md`
 
+**post-review closeout：**
+
+`Operations/Audits/SRT_PR931_POST_REVIEW_CLOSEOUT_2026-09-11.md`
+
 ### 2. 当前理论主轴
 
-当前作者接受并经 terminal pressure 的 noncanonical reconstruction：
+当前作者接受、经 terminal pressure、并已随 #931 合并的 noncanonical reconstruction：
 
 ```text
 minimum non-neutrality / pre-object difference
@@ -98,7 +105,7 @@ position-indexed Active Selection
 = formed Selection-position is load-bearing in the asymmetric actualisation that reconstructs later selectable organization.
 ```
 
-### 3. Latest author adjudications controlling #931
+### 3. Latest author adjudications controlling this checkpoint
 
 Load in this order for current workline meaning:
 
@@ -178,7 +185,7 @@ participant-side / embodied selective engagement;
 interactional / organizational relation-level continuation.
 ```
 
-Current SRT value in #931 is therefore:
+Current SRT value in the #931 checkpoint is therefore:
 
 ```text
 architectural repartition + typed cross-level dependency
@@ -192,24 +199,26 @@ Terminal verdict:
 NO STRUCTURAL CONTRADICTION FOUND THAT REQUIRES REOPENING BROAD THEORY EXPLORATION.
 ```
 
-### 7. Formal Review verdict for #931
+### 7. Formal Review / merge verdict for #931
 
-`Operations/Audits/SRT_PR931_FORMAL_CONTENT_REVIEW_2026-09-11.md` concludes:
+`Operations/Audits/SRT_PR931_FORMAL_CONTENT_REVIEW_2026-09-11.md` and the post-review closeout establish:
 
 ```text
 THEORY DEPENDENCY CONTRADICTION: NONE FOUND
 AUTHOR GATES FOR CURRENT NONCANONICAL PACKAGE: PAID
 TERMINAL STRONGEST-NEIGHBOR PRESSURE: COMPLETE
 CENTRAL WORDING: CONSOLIDATED
-CANONICAL DIFF: NONE AT REVIEW
-CI: GREEN AT REVIEW
+CANONICAL DIFF: NONE
+FINAL GOVERNANCE PREFLIGHT: SUCCESS
+PR #931: MERGED
+MAIN: 87c4b6cfe47fef87aac643376a6ef107624fd33d
 ```
 
 Overall:
 
-> **CONDITIONAL PASS — mature enough for noncanonical consolidation. Do not reopen broad theory exploration unless a real dependency contradiction appears.**
+> **#931 is a landed noncanonical reconstruction checkpoint. Do not reopen broad theory exploration merely to extend this package.**
 
-After this root STATUS repair, rerun final CI / diff checks before merge.
+Any Core / Core_Law / canonical-owner hardening must occur in a separate smaller PR and re-open the appropriate owner / governance gates.
 
 ---
 
@@ -223,7 +232,7 @@ Program-level disposition remains:
 CONTINUE HOLD — NAMED BLOCKER
 ```
 
-No #931 author adjudication changes the HOLD programme state.
+No #931 author adjudication or merge changes the HOLD programme state.
 
 The current programme blocker remains the need for a bounded, implementation-specific Level-2 realization design that can:
 
@@ -257,13 +266,13 @@ Level 1 PASS — NARROW / RECOVERED / CLASS-M SCOPED
 
 It distinguishes SRT only from Class-M approaches that take determinate manifest interface as primitive. It does **not** by construction distinguish SRT from Barad / Simondon / other constitutive theories that also treat manifestation genesis as explanandum.
 
-Do not transfer that Level standing to the new #931 One / Bearer / Active-selection reconstruction.
+Do not transfer that Level standing to the #931 One / Bearer / Active-selection reconstruction.
 
 ### Cycle 2 strengthened vertical claims
 
 2026-09-09 author rulings Scope B → SED-B → active vertical generation remain valid historical / owner context, but their old Level standing is not automatically inherited by #931.
 
-Current #931 uses those materials as inputs to a new noncanonical repartition and does not assign a new Level.
+The #931 checkpoint uses those materials as inputs to a noncanonical repartition and does not assign a new Level.
 
 ### Physical trigger pluralism
 
@@ -287,7 +296,7 @@ Fresh sessions still begin with:
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 3. this `STATUS.md §Fast Status`
 
-For #931 theory work, then load the current handoff named above.
+For interpretation or continuation of the #931 checkpoint, then load the landed handoff / consolidated proposal / terminal pressure named above.
 
 ### Theory advancement
 
@@ -335,18 +344,19 @@ phenomenality / experiencer transition.
 
 ---
 
-## Immediate routing
-
-While #931 remains Draft:
+## Immediate routing after #931
 
 ```text
-1. rerun Governance Preflight on final head;
-2. confirm no hidden canonical / Level / HOLD drift;
-3. if green, merge #931 only as a noncanonical reconstruction checkpoint;
-4. if author later wants owner/canonical integration, open a separate smaller hardening PR.
+#931 is merged as a noncanonical reconstruction checkpoint.
+Do not continue adding theory to the merged package.
+
+Next valid routes are separate worklines:
+A. a small owner/canonical-hardening PR, only if the author explicitly wants integration into Core / Core_Law owners;
+B. a bounded implementation-specific Level-2 realization design under the standing HOLD blocker;
+C. an explicitly new author question / intuition that justifies a new re-entry cycle.
 ```
 
-Do not continue adding new theory branches to #931 unless final review exposes a real contradiction.
+No route above inherits a Level promotion from #931 automatically.
 
 ---
 
@@ -364,4 +374,4 @@ Other historical handoffs / closures remain under:
 
 `Operations/Status_History/`
 
-When historical files conflict with current routing, use the latest explicit author adjudication plus current handoff / consolidated proposal / formal review within their declared scope.
+When historical files conflict with current routing, use the latest explicit author adjudication plus the landed #931 handoff / consolidated proposal / formal review within their declared scope.
