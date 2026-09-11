@@ -1,8 +1,8 @@
 ---
 id: SRT-STATUS-20260911-CANONICAL-HARDENING-NEXT-SESSION-HANDOFF
 type: handoff
-status: active
-record_stage: next_session_handoff
+status: archived
+record_stage: completed_handoff
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -18,16 +18,23 @@ dependency:
   - Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md
   - Operations/Audits/SRT_PR933_AUTHOR_ADJUDICATED_CLOSEOUT_2026-09-11.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md
-tags: [CanonicalHardening, Handoff, PR931, PR933, One, Bearer, ActiveSelection, SecondOrderSelection]
+  - Operations/Audits/SRT_CANONICAL_HARDENING_FINAL_SCOPE_AND_CONCEPT_CROSSWALK_2026-09-11.md
+tags: [CanonicalHardening, Handoff, Archived, PR931, PR933, One, Bearer, ActiveSelection, SecondOrderSelection]
 ---
 
 # Canonical-hardening next-session handoff — 2026-09-11
 
-## 0. Session purpose
+> **ARCHIVED — DO NOT ROUTE AS CURRENT WORK.** The scope audit requested by this handoff has been completed. Current closeout record:
+>
+> `Operations/Audits/SRT_CANONICAL_HARDENING_FINAL_SCOPE_AND_CONCEPT_CROSSWALK_2026-09-11.md`
+>
+> The historical instructions below are retained for provenance only. Do not execute their “next session” routing. The author-authorized next workline after this closeout is a **canonical-independent theory reconstruction audit**.
 
-The next session should **not reopen broad theory exploration**. The immediate task is a bounded **canonical-hardening scope audit** over the landed noncanonical reconstruction from #931, corrected by #933.
+## 0. Historical session purpose — COMPLETED
 
-The objective is to decide, owner by owner:
+The next session was instructed to **not reopen broad theory exploration**. The immediate task was a bounded **canonical-hardening scope audit** over the landed noncanonical reconstruction from #931, corrected by #933.
+
+The objective was to decide, owner by owner:
 
 ```text
 what must enter canonical owners now;
@@ -38,13 +45,15 @@ what wording would overstate evidence, novelty or formal standing.
 
 Do not begin by editing canonical files. Begin by auditing scope and owner fit.
 
-## 1. Live repository baseline
+**Completion note:** this objective is now satisfied by the final scope/crosswalk audit. Its result is `PASS — NO-EXPANSION / CROSSWALK-RECORDED`.
+
+## 1. Historical repository baseline
 
 ```text
 repository:
 zyx1st-png/SRT-Pub
 
-main:
+main at original handoff:
 be3b0d5780eb3e31c1dcc27adf93bdb8c86f9f75
 
 #931:
@@ -59,7 +68,7 @@ MERGED — Claude/GPT-6 external-review reconciliation + author adjudication
 merge = be3b0d5780eb3e31c1dcc27adf93bdb8c86f9f75
 ```
 
-Current programme guards:
+Programme guards carried by the handoff:
 
 ```text
 canonical edit: NO from #931–#933
@@ -71,37 +80,15 @@ whole-architecture non-substitutability: NOT ESTABLISHED
 broad theory exploration: PAUSED
 ```
 
-## 2. Mandatory session start
+## 2. Historical mandatory session start
 
-Follow `AGENTS.md §Session Start` first:
+The original handoff required `AGENTS.md §Session Start`, then the canonical freeze/edit protocol, registry, claim ladder/mode audit, and the #931/#933 reconstruction/reconciliation package before any hardening decision.
 
-1. `SRT_AI_START.md`
-2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-3. `STATUS.md §Fast Status`
+That read-order requirement is preserved as provenance but is no longer a live instruction from this file.
 
-Before any canonical hardening decision, also load:
+## 3. Historical author-adjudicated noncanonical structure
 
-4. `Governance/SRT_CANONICAL_FREEZE.md`
-5. `Governance/SRT_EDIT_PROTOCOL.md`
-6. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
-7. `Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md`
-8. `CANONICAL_REGISTRY.md`
-9. `Governance/SRT_CLAIM_LADDER.md`
-10. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-
-Then load the current reconstruction package in this order:
-
-11. `Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md`
-12. `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`
-13. `Operations/Audits/SRT_PR933_AUTHOR_ADJUDICATED_CLOSEOUT_2026-09-11.md`
-14. `Operations/Audits/SRT_BEARER_ROUTE_SUPERSESSION_RECONCILIATION_2026-09-11.md`
-15. `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md`
-16. `Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md`
-17. `Operations/Audits/SRT_SELECTION_VERTICAL_ONE_TERMINAL_STRONGEST_NEIGHBOR_PRESSURE_2026-09-11.md`
-
-## 3. Author-adjudicated current noncanonical structure
-
-Current accepted reconstruction is:
+The accepted reconstruction recorded by the handoff was:
 
 ```text
 minimum non-neutrality / pre-object difference
@@ -117,7 +104,7 @@ minimum non-neutrality / pre-object difference
 -> JFS / higher-order One / collective ISP under separate downstream gates.
 ```
 
-Current compact typed roles:
+Compact typed roles:
 
 ```text
 One
@@ -145,7 +132,7 @@ position-indexed Active Selection
   + selectable-space change + continued efficacy.
 ```
 
-## 4. Supersession / reconciliation ledger that canonical hardening MUST respect
+## 4. Historical supersession / reconciliation ledger
 
 ### 4.1 Consequence / Bearer
 
@@ -187,122 +174,34 @@ NOT required for generic Active Selection.
 
 Do not silently merge or rename these two concepts.
 
-## 5. Hardening scope audit — recommended owner order
+## 5. Historical owner audit order — COMPLETED
 
-The next session should produce an owner-by-owner matrix before making any edit.
-
-### Owner A — `Core_Law/SRT_L0_Metaphysics.md`
-
-Question:
+The original handoff required owner-by-owner review of:
 
 ```text
-Does #931/#933 require any L0 canonical change at all?
+A — L0 Metaphysics
+B — P0 Minimal Axioms / occurrence-persistence
+C — P1-T06 Stable ISP
+D — Individuation
+E — Bearer / consequence owner vocabulary
+F — Collective Selection / multiscale owners
 ```
 
-Default bias: **NO EDIT unless a direct contradiction or missing controlling primitive is demonstrated.**
+The final scope/crosswalk audit completed that pass and additionally reconciled L0 `承担`, T-IND-2, B13 generative reselectability, Symbol Table Rule 12 and PH-IND04 §6.
 
-Protect:
-
-```text
-Selection precedes completed selector / One;
-subjectless Selection remains possible;
-minimum non-neutrality remains upstream;
-consequence does not become primitive Selection content.
-```
-
-### Owner B — `Core/SRT_Core_21_Minimal_Axioms.md`
-
-Audit whether P0 occurrence/persistence wording needs a narrowly scoped clarification linking:
-
-```text
-event-level actualisation
-!=
-lineage-relative One persistence / reconstitution.
-```
-
-Do not collapse primitive actualisation into stable One.
-
-### Owner C — `Core/SRT_Core_21b_Constitutive_Theorems.md`
-
-Audit whether P1-T06 / stable ISP should remain downstream and untouched, versus receiving a cross-reference guard that:
-
-```text
-One / Selection-position
-!=
-stable ISP
-```
-
-Do not import σ or perspective-bearing criteria backward into thin One formation.
-
-### Owner D — `Core_Law/SRT_Individuation.md`
-
-This is likely the most important hardening owner.
-
-Audit:
-
-```text
-thin ontological One / Selection-position
-vs
-perspective-bearing subject-position;
-lineage-relative reconstitution
-vs
-σ / self-reference ratio;
-One -> Bearer -> subject transitions;
-Active Selection vs second-order Selection crosswalk.
-```
-
-Do not let `Selection-position` silently become synonymous with subject-position.
-
-### Owner E — Bearer / consequence owner locations
-
-Audit current Bearer owner vocabulary against #933 supersession ledger.
-
-Need to decide whether canonical language should introduce:
-
-```text
-history-to-reconstitution bearing
-```
-
-or whether this remains noncanonical until formal cases are stronger.
-
-Default bias: **do not harden Bearer into canonical merely because author-adjudicated noncanonical route exists.**
-
-### Owner F — `Collective Selection` / multiscale owners
-
-Only add guards if required to prevent inference jumps:
-
-```text
-JFS != higher-order One;
-higher-order One != collective ISP;
-relation-level vertical organization != collective subject.
-```
-
-Do not make #931 a collective-subject promotion PR.
-
-## 6. Candidate hardening classes
-
-For every proposed statement, classify it before editing:
+## 6. Historical hardening classes
 
 ```text
 H1 — CANONICAL CLARIFICATION
-Already implicit/consistent in canonical owners; wording reduces ambiguity without adding new ontology.
-
 H2 — CANONICAL NEW RELATION
-Would add a genuinely new dependency or ontological relation; requires explicit author + governance gate and stronger scrutiny.
-
-B — BRIDGE / NONCANONICAL
-Useful organizing relation but not ready for canonical owner.
-
-O — OPEN
-Formal, empirical, identity, scale or neighbor burden still unpaid.
-
-R — REJECT / HISTORICAL
-Superseded wording, old route or terminology that must not be revived.
+B  — BRIDGE / NONCANONICAL
+O  — OPEN
+R  — REJECT / HISTORICAL
 ```
 
-The first hardening pass should prefer **H1 + B + O**, and minimize H2.
+The final audit adds a separate relation-status vocabulary and keeps H1/H2/B/O/R distinct from A/B/C edit risk.
 
-## 7. Known OPEN burdens — do not silently close during hardening
+## 7. Historical OPEN burdens — still not silently closed
 
 ```text
 strict numerical identity;
@@ -320,27 +219,15 @@ Level-2 realization;
 phenomenality / experiencer transition.
 ```
 
-## 8. Neighbor / novelty discipline
+The final audit does not silently close these burdens.
 
-Do not use canonical hardening to manufacture novelty.
+## 8. Historical neighbor / novelty discipline
 
-The #931/#933 package already accepts that mature theories pay substantial local territory:
+The handoff required that hardening not manufacture novelty and that mature-neighbor coverage remain acknowledged. That guard remains valid as a historical discipline and is preserved by the closeout.
 
-```text
-process identity / ongoing individuation;
-organizational closure / autonomy;
-adaptive feedback;
-possibility-space reconstruction;
-interactional organization;
-first-/second-order change analogues;
-formal individuality / temporal information approaches.
-```
+## 9. Historical requested output — COMPLETED
 
-Canonical hardening asks **what SRT must say consistently**, not what only SRT can say.
-
-## 9. Recommended output of the next session before any canonical edit
-
-Produce a table/matrix with at least:
+The requested matrix included:
 
 ```text
 candidate statement
@@ -354,15 +241,12 @@ exact proposed wording
 edit now? YES/NO
 ```
 
-Then ask for / obtain author adjudication on the hardening scope if any H2 or major owner rewrite is proposed.
+The completed final audit records the substantive equivalent plus relation status, edit risk, unresolved burden and re-review conditions.
 
-Only after the scope audit is accepted should a small hardening PR be opened.
-
-## 10. Hard guards for the next PR
+## 10. Historical hard guards — RETAINED
 
 ```text
 Do not reopen #931.
-Do not rewrite all Core/Core_Law files.
 Do not copy the whole #931 proposal into canonical.
 Do not assign a new Level from hardening alone.
 Do not exit Level 2 HOLD.
@@ -373,33 +257,44 @@ Do not merge Active Selection with second-order Selection.
 Do not make Bearer a primitive Selection criterion.
 ```
 
-## 11. Suggested new-session instruction
+## 11. Superseded next-session routing
+
+The old instruction to start another `canonical-hardening` session is **superseded**.
+
+Current route after closeout:
 
 ```text
-@GitHub 继续仓库 `zyx1st-png/SRT-Pub` 的 canonical-hardening 工作。
-
-当前 baseline：
-main = be3b0d5780eb3e31c1dcc27adf93bdb8c86f9f75
-#931 / #932 / #933 均已合并。
-
-开始前按 `AGENTS.md §Session Start` 核验 live main、open PR、STATUS，并读取：
-`Operations/Status_History/SRT_STATUS_2026-09-11_CANONICAL_HARDENING_NEXT_SESSION_HANDOFF.md`。
-
-本轮不要继续开放式理论探索，也不要立即修改 canonical。
-先完成 owner-by-owner canonical-hardening scope audit：
-逐条判定 #931/#933 成果应属于 H1 canonical clarification、H2 canonical new relation、B bridge/noncanonical、O open、R superseded/historical。
-重点核对 L0、P0 occurrence/persistence、Individuation、Bearer、Active vs second-order Selection、Collective Selection owners。
-
-保持：canonical freeze discipline、Level 2 HOLD、scientific distinctiveness NOT ESTABLISHED、whole-package non-substitutability NOT ESTABLISHED。
+CANONICAL-INDEPENDENT THEORY RECONSTRUCTION AUDIT
 ```
 
-## 12. Handoff verdict
+The new audit is theory-first rather than owner-first:
+
+```text
+theory-first
+reconstruction-first
+canonical-lagging
+```
+
+It should reconstruct the minimum current SRT architecture without treating existing canonical completeness or owner compatibility as a prior truth criterion, then map that reconstruction back to canonical as:
+
+```text
+RETAIN
+REWRITE
+DEMOTE
+MERGE / ALIAS
+RETIRE
+ADD
+OPEN
+```
+
+## 12. Archive verdict
 
 ```text
 #931 reconstruction: LANDED / NONCANONICAL
 #933 external-review reconciliation: LANDED / AUTHOR-ADJUDICATED
-broad theory exploration: PAUSED
-next workline: CANONICAL-HARDENING SCOPE AUDIT
-canonical edit at session start: NO
-recommended first action: OWNER-BY-OWNER CLASSIFICATION MATRIX
+canonical-hardening scope audit: COMPLETED
+handoff status: ARCHIVED
+rerun this hardening scope audit: NO
+current closeout authority: Operations/Audits/SRT_CANONICAL_HARDENING_FINAL_SCOPE_AND_CONCEPT_CROSSWALK_2026-09-11.md
+next workline: CANONICAL-INDEPENDENT THEORY RECONSTRUCTION AUDIT
 ```
