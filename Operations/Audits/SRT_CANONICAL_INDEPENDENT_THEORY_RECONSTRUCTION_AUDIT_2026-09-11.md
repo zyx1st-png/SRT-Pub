@@ -2,7 +2,7 @@
 id: SRT-CANONICAL-INDEPENDENT-THEORY-RECONSTRUCTION-AUDIT-20260911
 type: audit
 status: active
-record_stage: reconstruction_open
+record_stage: reconstruction_current_synthesis_after_pass7
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -11,539 +11,527 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_CANONICAL_INDEPENDENT_RECONSTRUCTION_DIRECTION_2026-09-11.md
-  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md
-  - Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_HARDENING_FINAL_SCOPE_AND_CONCEPT_CROSSWALK_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS1_CORE_RETYPING_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS2_POSITION_STAKE_REVISION_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS3_MULTISCALE_CONCERN_L2_RELATIVITY_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS4_ONE_STAKE_L2_REBASE_2026-09-11.md
-  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS5_TWO_AXIS_SUBJECT_SUFFICIENCY_2026-09-11.md
-tags: [CanonicalIndependent, TheoryReconstruction, MinimalArchitecture, One, SelectionPosition, Bearer, StableISP, Sigma, L2, Stake, Collective, TwoAxis]
+  - Operations/Audits/SRT_PR936_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md
+  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS7_OMITTED_SOURCE_OWNER_RECONCILIATION_2026-09-11.md
+  - Operations/Audits/SRT_PR936_PRE_ADJUDICATION_CONTROL_SURFACE_REPAIR_2026-09-11.md
+  - Operations/Proposals/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_AUTHOR_DECISION_PACKET_2026-09-11.md
+  - Core_Law/SRT_L0_Metaphysics.md
+  - Core/SRT_Core_12b_Ontology_L2.md
+  - Core/SRT_Core_21b_Constitutive_Theorems.md
+  - Core_Law/SRT_Individuation.md
+  - _SRT_D_VALUE_CANONICAL.md
+tags: [CanonicalIndependent, TheoryReconstruction, CurrentSynthesis, One, StableISP, SubjectPosition, L2, ActivePassive, Sigma]
 ---
 
-# Canonical-independent theory reconstruction audit — 2026-09-11
+# Canonical-independent theory reconstruction audit — current synthesis — 2026-09-11
 
-> **Role:** reconstruct the minimum current SRT theory architecture before asking how it fits current canonical owners.
+> **Current control surface.** This file replaces the earlier Pass-1-to-Pass-6 machine preferences as the master entry point for PR #936.
 >
-> **Noncanonical status:** active audit / machine reconstruction preference pending author adjudication.
+> Historical Passes 1–6 remain research history. Where they conflict with Pass 7, the pre-adjudication control-surface repair, or the revised decision packet, the later files control.
 >
-> **Author direction:** theory-first / reconstruction-first / canonical-lagging.
+> **No canonical edit is authorized by this file.**
 
-## 0. Method
+## 0. Superseded recommendations
+
+The following earlier machine recommendations are **not current conclusions**:
+
+```text
+Stable ISP + undifferentiated stake
+=> sufficient subject-position;
+
+direction/readability
+= automatically induced by stake;
+
+L2
+= merely sedimented constraint layer;
+
+SRT deep structure
+= newly discovered two-axis replacement of an allegedly serial L0->L1->L2 ontology;
+
+One
+= necessarily active/creative reconstruction of future selectability;
+
+A1-A4
+= one mutually supporting adoption package.
+```
+
+Do not use those claims for reverse mapping.
+
+Current controlling sources:
+
+```text
+Pass 7
++ external-review reconciliation
++ pre-adjudication control-surface repair
++ revised author decision packet.
+```
+
+---
+
+## 1. Method retained
 
 Two opposite errors remain prohibited:
 
 ```text
 canonical conservatism:
-new theory -> preserve old owner wording by default;
+old canonical wording is treated as untouchable truth;
 
 novelty overwrite:
-new language -> assume newer = truer -> overwrite canonical immediately.
+new machine vocabulary is treated as true merely because it is newer/simpler.
 ```
 
-Method:
+Operational method:
 
 ```text
-reconstruct independently first;
-pressure-test roles and dependencies second;
-reverse-map current canonical third;
-edit canonical only after explicit author adjudication.
+reconstruct from strongest author-adjudicated sources and current evidence;
+restore omitted burdens;
+pressure-test typing and dependency;
+prepare narrow author decisions;
+reverse-map canonical only after those decisions;
+edit canonical only in later explicit edit cycles.
 ```
 
-## 1. Reconstruction result after Passes 1–5
+---
 
-The strongest current reconstruction no longer prefers a serial `L0 -> L1 -> L2 -> subject` ladder.
+## 2. Current Selection process grammar
 
-It instead uses two **analytically distinct but dynamically coupled** axes.
-
-### Axis A — modal / actualisation
+Current L0 already owns:
 
 ```text
-minimum non-neutral structural floor
+potential / manifest / stable
+= states/roles of one Selection process,
+not three isolated worlds.
+```
+
+The current reconstruction therefore distinguishes:
+
+```text
+STATE VOCABULARY
+from
+PROCESS GRAMMAR.
+```
+
+Current process grammar candidate:
+
+```text
+minimum non-neutral selectability conditions
         ↓
 subjectless Selection
-= primitive constitutive differentiation
-  [manifest actualisation + relative backgrounding/suppression co-generated]
+        = constitutive differentiation
+        + manifestation/background co-generation
+        + active structuring of further selectability
+        ↓
+result / writeback
+        = selected result alters later effective conditions
+        ↕
+later Selection
+        = operates under those altered conditions
+          and can maintain/reconstruct structured selectability.
 ```
 
-Selection is therefore broader than the manifest side alone.
-
-Current preference rejects both:
+Important author correction retained:
 
 ```text
-Selection = only actualisation
+vertical structure != passive historical sediment;
+history != ontological source of verticality.
 ```
 
-and:
+History matters because prior Selection changes later conditions, but Selection itself carries the active selectable-space burden.
+
+---
+
+## 3. One / formed unity
+
+Current strongest internal architectural need is a real processual formed unity below thicker Stable-ISP / subject gates.
+
+Minimum live core:
 
 ```text
-Selection -> a later separate actualisation event.
+localized
++ lineage-relative
++ recurrently reconstituted
+through Selection-mediated history.
 ```
 
-### Axis B — historical / sedimentation
+Preferred name:
 
 ```text
-manifest result
--> trace / writeback
--> repeated reinforcement / re-entry
--> sedimented scaffold / background constraint
+One
 ```
 
-Generic writeback is thinner than One, Stable ISP or L2-grade scaffold.
-
-The scaffold relation is boundary/scale-relative and can be:
+Current guards:
 
 ```text
-internal
-external/environmental
-shared/institutional
-relation-level/collective
+One != static object
+One != analyst-only functional slot
+One != passive historical residue
+One != Stable ISP
+One != subject-position
+One != phenomenality
 ```
 
-The two axes are **not independent**. Historical writeback reshapes later effective selectability / manifestation conditions; later Selection in turn generates new history. The point of the two-axis retype is to prevent `L2` from being mistaken for a simple third chronological rung, not to deny co-evolution between history and later Selection.
-
-## 2. Formed continuity / One-function
-
-When the historical axis becomes sufficiently localized that later Selection repeatedly reconstitutes the same lineage-relative organization, a formed-continuity function appears:
+Current unresolved issue:
 
 ```text
-repeated Selection / manifestation
-x
-localized historical writeback
--> formed-continuity / One-function
+Does every One merely need ongoing Selection-mediated continuation/maintenance,
+or must every One creatively reconstruct the organization
+that determines its future selectable space?
 ```
 
-Current result:
+That question remains OPEN because the repository separately distinguishes:
 
 ```text
-FUNCTION: strongly indicated
-SEPARATE FINAL CANONICAL NODE: not yet required
-NAME "One": open
+passive Selection = maintenance / survival;
+active Selection = creation / reconstruction.
 ```
-
-Every Stable ISP appears to presuppose this function because Stable ISP already requires the same history-bearing selection center to persist through recurrent historical reconstitution.
-
-Thus:
-
-```text
-Stable ISP => formed-continuity / One-function
-formed-continuity / One-function !=> Stable ISP
-```
-
-`One` is currently best treated as a candidate name for a necessary substructure that can also occur below Stable ISP.
-
-## 3. Selection-position
-
-```text
-Selection-position_t
-= time-local operative aspect of a formed continuing organization
-```
-
-It is load-bearing only when position-specific history has counterfactual efficacy for later:
-
-```text
-reachability
-weighting
-amplification
-suppression
-realization
-```
-
-Current type:
-
-```text
-OPERATIVE ASPECT / POSITION
-not independent ontology object
-```
-
-## 4. Stable ISP
-
-Current minimum standing candidate:
-
-```text
-Stable ISP
-=
-formed-continuity / One-function
-+ structural perspective
-+ integrated history
-+ continued selectability
-```
-
-`structural perspective` means stable position-relative organization of:
-
-```text
-access
-constraint
-history
-candidate differentiation
-```
-
-and does **not** imply phenomenality.
-
-## 5. Subject-position and endogenous stake coupling
-
-Current reconstruction no longer prefers `Stable ISP = subject-position`.
-
-It instead prefers:
-
-```text
-Stable ISP
-+ persistent endogenous stake coupling
--> subject-position candidate
-```
-
-where stake coupling has two faces:
-
-```text
-consequence-facing:
-承担 / non-outsourcing
-= relevant own consequence cannot be fully externalized;
-
-condition-facing:
-关切 / concern
-= some conditions become differentially relevant because they alter
-  that same unit's continuity / payability / later selectable space.
-```
-
-At subject level, `direction` is currently better typed as:
-
-```text
-induced position-relative ordering / readability of continuations
-under structural perspective + stake
-```
-
-rather than a third coequal subject primitive.
-
-This does **not** reduce pre-subject L0 non-neutrality / epsilon direction to stake.
-
-Current Q16 preference:
-
-```text
-Stable ISP + persistent endogenous stake coupling
-=> structural subject-position candidate
-```
-
-with phenomenality still OPEN.
-
-## 6. Sigma
-
-```text
-sigma_sr
-= model-local readout / coordinate
-  of endogenous historical self-conditioning
-```
-
-It should not define the ontology skeleton or subject-position by itself.
-
-Current reverse-map pressure:
-
-```text
-Individuation sigma architecture -> REWRITE / DEMOTE toward model-level tracking
-```
-
-## 7. Stronger revision
-
-Current split:
-
-```text
-second-order Selection
-= stronger PROCESS / OPERATION PATTERN
-  [own-consequence return + comparison-scale rewrite
-   + selectable-space change + continued efficacy]
-
-generative reselectability
-= STABLE CAPACITY / STANDING PROPERTY
-  over an already-Stable ISP
-
-Active Selection
-= broader reconstruction-mode label
-
-W1/W2
-= audit-depth labels
-```
-
-So episodic second-order Selection may occur at formed-continuity level, while generative reselectability remains a stronger stable-capacity claim.
-
-## 8. L2 rebase
-
-Current L2 carries at least two heterogeneous lineages.
-
-Older convergence reading:
-
-```text
-multi-selector stable intersection
--> shared / objective / institutional structure
-```
-
-Later sedimentation reading:
-
-```text
-trace
--> closure
--> repeated reinforcement
--> re-enterable / inheritable / backgrounded constraint
-```
-
-The latter does not require multiple selectors.
 
 Therefore:
 
 ```text
-shared convergence != generic historical sedimentation
+One != Active Selection by definition.
 ```
 
-Current preference:
+`Selection-position_t` remains a candidate operative aspect of One, not a second entity.
+
+---
+
+## 4. Stable ISP and subject-position
+
+Current live split:
 
 ```text
-L2 AS FUNDAMENTAL CO-EQUAL DOMAIN: DOUBTFUL
-L2 AS RETYPED SEDIMENTED CONSTRAINT LAYER / LEGACY LABEL: POSSIBLE
+formed unity / One candidate
+        ↓ stronger standing gates
+Stable ISP candidate
+        ↓ possible additional subject burdens
+structural subject-position candidate
 ```
 
-The deep architecture is better represented as two coupled axes than as a three-rung ladder.
-
-## 9. Claims currently routed through L2 can be separated
-
-### Time
+Stable ISP currently pays at least:
 
 ```text
-time
-= ordering / measure of irreversible historical depth
+iterative recurrence;
+structural perspective;
+history-bearing writeback;
+continued selectability;
+same-process downstream consequence bearing.
 ```
 
-No universal L2 realm is required.
+The current reconstruction does **not** claim a one-line sufficient subject theorem.
 
-### Objectivity
+Candidate subject-level burdens remain separately auditable:
 
 ```text
-objectivity candidate
-= robustness across sufficiently independent positions,
-  interfaces and perturbations,
-  not explained merely by a shared masking constraint.
+S1 non-outsourcable own consequence / 承担
+S2 stabilized endogenous relevance / 关切
+S3 stake-relevant regulative readability
 ```
 
-Shared scaffold can support objectivity-like convergence but does not define objectivity.
-
-### Social convergence
+Umbrella term:
 
 ```text
-multiple positioned selections
-+ interaction
-+ repeated writeback
-+ shared re-entry / inheritance
--> shared sedimented scaffold
+persistent endogenous stake architecture
 ```
 
-### Institution
+is organizational only.
+
+It does not imply:
 
 ```text
-institution
-= durable shared / externalized sedimented constraint scaffold
-  with role inheritance, re-entry and enforcement pathways
+S1 -> S2 -> S3;
+stake alone -> subject-position;
+Stake exists -> the unit can read/regulate by that stake.
 ```
 
-Thus these do not need to remain bundled under one top-level L2 ontology.
+Phenomenality remains separately OPEN.
 
-## 10. One organization vs internal scaffold
+---
 
-The distinction is functional / counterfactual, not spatial.
+## 5. Bearing / consequence crosswalk
 
-Identity-constituting organization:
+Current relation family:
 
 ```text
-remove / disrupt X
--> same-lineage reconstitution fails or identity attribution changes
+history-to-reconstitution bearing
+= any-source change becomes constitutive history of later One reconstitution;
+
+own-consequence return / self-consequence closure
+= a consequence produced through that unit's Selection
+  returns into later reconstitution / selectable condition of that same unit;
+
+P1-T06 downstream consequence bearing
+= closest current canonical neighbor to the own-consequence layer;
+  exact identity with self-consequence closure NOT ESTABLISHED;
+
+L0 承担
+= own consequence becomes non-outsourcable for the selector
+  and cannot be fully externalized.
 ```
 
-Internal scaffold:
+Working strength ordering:
 
 ```text
-remove / alter S
--> transition landscape changes
-but same-unit identity can remain within a declared perturbation range
+history-to-reconstitution bearing
+< own-consequence / self-consequence layer
+< non-outsourcable subject-level 承担
 ```
 
-A structure may migrate between roles across scale or perturbation range.
+This is a reconstruction crosswalk, not a proved theorem.
 
-## 11. Multiscale reuse of the same grammar
+The D3 split needs an explicit witness pressure showing that same-process consequence return can occur without subject-level non-outsourcing.
 
-Relation-level coordination is not automatically a higher-order One.
+---
 
-Current gate:
+## 6. d-value dependency guard
+
+Current d-value language uses a subject in its stake definition:
 
 ```text
-relation-level result
--> relation-level history/writeback
--> later reconstitution of the same relation-level organization
+subject utility gradient;
+subject closure;
+subject irreversible stake.
 ```
 
-Then separately:
+Therefore d-value must not be used to constitute the subject in D3 without circularity.
+
+Current dependency order:
 
 ```text
-higher-order Stable ISP
-requires structural perspective/history/continued selectability;
-
-collective subject-position
-requires separately paid persistent endogenous stake coupling.
+independently declared continuing unit / Stable ISP candidate
+        ↓
+S1-S3 subject burdens tested
+        ↓
+if a stake-coupled subject organization is admitted,
+d-value may serve as downstream summary/readout.
 ```
 
-JFS is currently typed as a possible formation process, not a standing.
-
-## 12. Current sparse architecture
+So:
 
 ```text
-                    MODAL / ACTUALISATION AXIS
-
-minimum non-neutral structural floor
-                ↓
-         subjectless Selection
- [manifest actualisation + relative backgrounding]
-                ↓
-        determinate manifestation
-                │
-                │ trace / writeback
-                ▼
-
-                    HISTORICAL AXIS
-
-manifest event -> history -> re-entry -> sedimentation
-                     │              │
-                     │              └-> scaffold / background constraint
-                     │
-                     └-> localized recurrent reconstitution
-                              ↓
-                      formed-continuity / One-function
-                              ↓
-                       Selection-position_t
-                       [operative aspect]
-                              ↓
-                          Stable ISP
-          [structural perspective + history + continued selectability]
-                              ↓
-                    subject-position candidate
-                  [persistent endogenous stake]
-                    ├── 承担 / non-outsourcing
-                    ├── 关切 / differential relevance
-                    └── induced local direction/readability
-                              ↓
-                    phenomenality / experiencer
-                              OPEN
+d-value -> subject proof
+NO.
 ```
 
-Feedback is bidirectional across cycles:
+If D3 split is later author-adopted, current d-value subject/stake wording becomes a mandatory reverse-map target.
+
+Its pre-stake directional/value-generation chain remains relevant, but identity with T-IND-2 readability remains NOT ESTABLISHED.
+
+---
+
+## 7. Sigma status
+
+Current pressure remains:
 
 ```text
-historical sedimentation -> reshapes later effective selectability;
-later Selection -> generates further history / sedimentation.
+sigma_sr
+= model-local historical/writeback-balance coordinate;
+not a representation-invariant constitutive subject variable.
 ```
 
-Cross-cutting revision:
+If the author later accepts:
 
 ```text
-formed-continuity / One-function
--> episodic second-order Selection may occur;
-
-Stable ISP
--> generative reselectability as stable capacity claim.
+Stable ISP < subject-position,
 ```
 
-## 13. Compression achieved
+then the reverse map must explicitly ask what `sigma_sub` tracks:
 
-The audit no longer prefers reading all of these as independent ontology nodes:
+```text
+formed unity?
+Stable ISP entry?
+subject-position entry?
+only a model-local transition coordinate?
+```
+
+The current `ISP entry = subject entry` phase architecture cannot be presumed to survive unchanged.
+
+No sigma rewrite occurs in PR #936.
+
+---
+
+## 8. L2 current reconstruction direction
+
+Earlier phrase:
+
+```text
+L2 = sedimented constraint layer
+```
+
+is superseded as too passive/thin.
+
+Current leading direction:
+
+```text
+L2-core
+= a scale-relative regime in which prior Selection has become
+  durable, re-enterable background organization
+  through which Selection continues at structural grain,
+  shaping later effective selectability.
+```
+
+Current unresolved gates:
+
+```text
+shareability as universal L2 condition = OPEN
+agency-position allocation as universal L2 condition = OPEN
+low-Psi threshold as representation-invariant definition = NOT ESTABLISHED
+multi-selector convergence = important realization, not yet universal definition
+```
+
+Crucial type distinction:
+
+```text
+One asks:
+what continuing unit is being formed / reconstituted?
+
+L2 asks:
+what Selection-generated organization has become structuralized?
+```
+
+Therefore One and L2 are not fixed sibling stages or a universal hierarchy.
+
+---
+
+## 9. Active / passive Selection remains a separate mode axis
+
+Author source currently distinguishes:
+
+```text
+passive Selection
+= survival / maintenance of achieved selective organization;
+
+active Selection
+= creation / reconstruction of selectable organization.
+```
+
+This axis is not absorbed into the One definition.
+
+Current relation candidate:
 
 ```text
 One
-Selection-position
-Bearer
-Stable ISP
-subject-position
-承担
-关切
-direction
-Active Selection
-second-order Selection
-generative reselectability
-W1/W2
-JFS
-higher-order One
-L2
+= continuing formed unit through which Selection can proceed;
+
+passive/active
+= mode distinction in how that selectable organization is maintained or reconstructed.
 ```
 
-Current type compression:
+Exact scope at pre-subject, One, Stable-ISP and subject levels remains OPEN.
+
+---
+
+## 10. Current typed map
 
 ```text
-One -> formed-continuity function / candidate name
-Selection-position -> operative aspect
-Bearer -> relation family, not object
-Stable ISP -> standing
-subject-position -> Stable ISP + persistent endogenous stake coupling
-承担 / 关切 -> two faces of stake coupling
-direction at subject level -> induced local ordering/readability
-Active -> mode label
-second-order -> process pattern
-generative reselectability -> capacity
-W1/W2 -> audit labels
-JFS -> relation/process
-higher-order One -> same formed-continuity function lifted to relation scale
-L2 -> likely retyped sedimented constraint structure, not peer domain
+minimum non-neutral selectability conditions
+        ↓
+Selection
+[differentiation
+ + manifestation/background co-generation
+ + active selectable-space structuring]
+        ↓
+result / writeback
+        ↕
+later Selection under altered conditions
+        │
+        ├── UNIT FORMATION / RECONSTITUTION
+        │      ↓
+        │     One candidate
+        │      ↓
+        │ Stable ISP candidate
+        │      ↓
+        │ structural subject-position candidate
+        │ [S1 non-outsourcing
+        │  S2 concern
+        │  S3 regulative readability]
+        │      ↓
+        │ phenomenality / experiencer OPEN
+        │
+        └── STRUCTURALIZATION
+               ↓
+              L2-core candidate
+        [Selection continues at structural grain]
 ```
 
-## 14. Reverse-mapping hypotheses — still nonfinal
+Cross-cutting:
 
-| Current canonical item | Current reconstruction pressure |
+```text
+Selection-position = operative-aspect candidate;
+passive/active Selection = mode axis;
+second-order Selection = stronger process pattern;
+generative reselectability = stronger stable-capacity claim;
+JFS = relation-level process, not standing.
+```
+
+---
+
+## 11. Reverse-mapping targets now exposed
+
+| Current canonical / owner | Current pressure |
 |---|---|
-| L0 minimum non-neutrality | RETAIN / possible simplification |
-| primitive Selection | RETAIN central; rewrite relation to actualisation/backgrounding if needed |
-| L1 manifestation | RETAIN, possibly as event/result rather than peer domain ontology |
-| P1-T06 Stable ISP | RETAIN; recognize thinner formed-continuity prerequisite |
-| subject-position = ISP entry language | REWRITE pressure |
-| T-IND-2 triple gate | REWRITE / COMPRESS around persistent endogenous stake coupling |
-| sigma_sr as phase coordinate | DEMOTE / model-level tracking pressure |
-| 承担 | RETAIN / consequence-facing stake relation |
-| 关切 | RETAIN / condition-facing stake relation |
-| d-value | RETAIN as stake-coupled summary/readout; not standalone subject gate |
-| subject-entry direction gate | REWRITE / induced-ordering pressure |
-| current L2 convergence-domain definition | REWRITE / DEMOTE pressure |
-| L2 scaffold/hysteresis mechanisms | RETAIN substantial content under sedimented-constraint architecture |
-| time-as-L2 language | REWRITE / metaphor-demotion pressure |
-| objectivity-through-L2 language | REWRITE as cross-position robustness |
-| social / institutional L2 language | RETYPE as shared scaffold realization |
-| Active Selection | likely bridge / mode label |
-| second-order Selection | RETYPE / OPEN |
-| generative reselectability | RETAIN stronger capacity distinction |
-| collective ISP | RETAIN gate, rewrite scale relation |
+| L0 state/process language | RETAIN core; clarify state vocabulary vs process grammar if author-adopted |
+| primitive Selection | RETAIN central; reconcile active selectable-space burden |
+| P1-T06 Stable ISP | RETAIN standing; audit relation to One and subject split |
+| P1-T06 consequence bearing | CROSSWALK against self-consequence / 承担 |
+| T-IND-1/2 | REWRITE pressure if Stable ISP < subject-position is adopted |
+| sigma_sub / sigma_sr phase architecture | MANDATORY reverse-map target |
+| 承担 / 关切 / readability | RETAIN as independently auditable burdens unless later derived |
+| d-value | RETAIN as downstream readout; subject-language may require type clarification |
+| L2 | RETYPE direction around structural-grain Selection; final universal gates OPEN |
+| Active / Passive Selection | RETAIN as separate mode-axis research line |
+| One | author decision on name / formed-unity status; stronger active burden remains OPEN |
+| Selection-position | operative-aspect candidate; not separate object by default |
+| collective ISP | retain independent scale gates |
 
-## 15. Author-adjudication questions now exposed
+---
+
+## 12. Narrow author gate now ready
+
+Only four narrow decisions are mature enough to ask now:
 
 ```text
-Q20 — Is the two-axis architecture
-      (actualisation axis + historical/sedimentation axis)
-      a better deep structure than L0/L1/L2 serial symmetry?
+D1 — accept explicit state-vocabulary vs process-grammar distinction?
 
-Q21 — Is structural subject-position adequately captured by
-      Stable ISP + persistent endogenous stake coupling,
-      while phenomenality remains separate/open?
+D2 — accept structural-grain Selection as the leading L2 reconstruction direction,
+      while final universal L2 gates remain OPEN?
 
-Q22 — Should One become the canonical name for formed-continuity,
-      or should the function be retained under a thinner term?
+D3 — accept Stable ISP < subject-position as a LIVE SPLIT for reverse mapping,
+      while subject sufficiency remains OPEN?
 
-Q23 — If L2 loses peer-domain status, should the symbol be
-      retained as legacy shorthand, redefined as sedimented constraint layer,
-      or retired from the minimal core?
+D4a — retain `One` as the preferred name for a real processual formed unity?
 ```
 
-## 16. Hard guards
+Not included in the current author gate:
 
 ```text
-canonical edits: NONE in PR #936
-Passes 1–5: machine reconstruction preferences pending author adjudication
-Level 2: HOLD
-scientific distinctiveness: NOT ESTABLISHED
-whole-architecture non-substitutability: NOT ESTABLISHED
-phenomenality / experiencer: OPEN
-One final name/status: OPEN
-L2 final name/status: OPEN
-subject-position sufficiency: PROVISIONAL
+D4b exact minimum future-selectability burden of One = OPEN
+D4c exact One / passive / active Selection relation = OPEN
+subject sufficiency theorem = OPEN
+phenomenality theorem = OPEN
 ```
 
-The next valid move is adversarial pressure and author adjudication on Q20–Q23, not immediate canonical rewrite.
+Current machine maturity:
+
+```text
+D4a strongest
+D1 strong
+D2 directional / scope-open
+D3 live-split only / sufficiency-open
+```
+
+---
+
+## 13. Hard guards
+
+```text
+canonical edits = NONE in PR #936
+Level 2 = HOLD
+scientific distinctiveness = NOT ESTABLISHED
+whole-architecture non-substitutability = NOT ESTABLISHED
+One novelty = NOT ESTABLISHED
+subject novelty = NOT ESTABLISHED
+subject sufficiency theorem = NOT ESTABLISHED
+phenomenality / experiencer transition = OPEN
+```
+
+The next valid move is narrow author adjudication on D1 / D2-direction / D3-split / D4a, not immediate canonical rewrite.
