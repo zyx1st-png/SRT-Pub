@@ -2,7 +2,7 @@
 id: SRT-STATUS-20260911-SELECTION-VERTICAL-ONE-LINEAGE-HANDOFF
 type: status_record
 status: active
-record_stage: draft_pr_931_post_constructive_integration_handoff
+record_stage: draft_pr_931_post_second_author_adjudication_handoff
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -11,25 +11,30 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md
+  - 01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md
   - Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md
   - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_LINEAGE_INTERNAL_REDTEAM_2026-09-11.md
   - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_OWNER_RECONCILIATION_2026-09-11.md
   - Operations/Audits/SRT_SELECTION_VERTICAL_ONE_CONSTRUCTIVE_INTEGRATION_PASS1_2026-09-11.md
-  - Operations/Status_History/SRT_STATUS_2026-09-10_D3_D4_PASS17_MANIFESTATION_NEXT_SESSION_HANDOFF.md
-  - Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md
+  - Operations/Audits/SRT_SELECTION_VERTICAL_CYCLE_ONE_LOCALIZATION_PRESSURE_2026-09-11.md
+  - Operations/Audits/SRT_MULTIPLE_ONE_LOCALIZATION_AND_RELATIVE_VERTICALITY_PRESSURE_2026-09-11.md
+  - Operations/Audits/SRT_CENTER_MULTIPLICITY_VS_ONE_MULTIPLICITY_PRESSURE_2026-09-11.md
+  - Operations/Audits/SRT_ONE_RECONSTITUTION_GRAPH_SCAFFOLD_2026-09-11.md
+  - Operations/Audits/SRT_RELATIVE_CONTINUATION_SEPARABILITY_GENERATION_PRESSURE_2026-09-11.md
+  - Operations/Audits/SRT_ONE_LINEAGE_HISTORY_LOCALIZATION_ANTI_COLLAPSE_GUARD_2026-09-11.md
+  - Operations/Audits/SRT_ONE_ONSET_VS_STABILITY_SPECTRUM_PRESSURE_2026-09-11.md
+  - Operations/Audits/SRT_ONE_NESTING_OVERLAP_AND_ANTI_OVERGENERATION_PRESSURE_2026-09-11.md
   - Core_Law/SRT_L0_Metaphysics.md
-  - Core/SRT_Core_21_Minimal_Axioms.md
-  - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core_Law/SRT_Individuation.md
   - Core_Law/SRT_Collective_Selection.md
-tags: [CurrentHandoff, PR931, Selection, VerticalStructure, OneFormation, SelectionPosition, Lineage, Reconstitution, ConstructiveIntegration]
+tags: [CurrentHandoff, PR931, Selection, VerticalStructure, OneFormation, Multiplicity, Reconstitution, SecondAdjudication]
 ---
 
-# PR #931 handoff — Selection / vertical structure / One lineage reconstruction
+# PR #931 handoff — Selection / vertical structure / One / multiplicity
 
-> **Controlling workline role:** current handoff for Draft PR #931. This record continues the post-#929 U-mode workline. It does not replace `AGENTS.md §Session Start`, canonical owners, or exact author-source records.
+> **Controlling workline role:** current handoff for Draft PR #931 after the author paid the second adjudication gate. This file does not replace `AGENTS.md §Session Start`, canonical owners, or exact author source records.
 
-## 1. Repository state at handoff
+## 1. Live repository state
 
 ```text
 base main at PR start:
@@ -54,410 +59,316 @@ scientific distinctiveness = NOT ESTABLISHED
 new deep well = NO
 ```
 
-`STATUS.md` on the base still contains stale pre-merge #929 wording. That status drift is mechanical debt and should be repaired before #931 is merged; it is not theory evidence and must not be used to override this handoff for the #931 workline.
+`STATUS.md` on base still contains stale pre-merge #929 wording. Repair before merge; do not use the stale dashboard to override this handoff.
 
-## 2. New author-owned input
+## 2. Author inputs now controlling this workline
 
-Exact author statement:
+First author input:
 
 > **「然后我觉得这里的one可以和垂直结构对应起来。」**
 
-Minimum author-owned consequence:
+After red-team, constructive integration, multiple-center pressure and multiplicity reconstruction, the author explicitly replied:
+
+> **「认同，继续」**
+
+The second response is recorded in:
+
+`01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`
+
+Status:
 
 ```text
-One should be reconstructed in direct relation to vertical structure.
+SECOND AUTHOR ADJUDICATION: PAID / ACCEPTED DIRECTION
 ```
 
-The author sentence does not itself decide identity, containment, stabilization, lineage, or sufficient conditions. Those stronger relations remain machine reconstruction unless separately adjudicated.
-
-## 3. Provisional C-layer reconstruction
-
-Current strongest machine organization:
+## 3. Accepted current One / Selection-position direction
 
 ```text
-minimum non-neutrality / pre-object difference
--> subjectless Selection
--> manifestation + relative backgrounding
--> event-level verticalization
--> prior vertical organization re-enters later Selection
--> Selection-mediated lineage reconstitution
--> ontological One / ontological from-where candidate.
-```
+One
+= a localized vertical organization whose diachronic mode of existence
+  is Selection-mediated, lineage-relative reconstitution;
 
-Compact candidate:
-
-```text
-One ~= lineage-indexed vertical organization
-```
-
-Meaning:
-
-> prior Selection-generated vertical organization materially participates in later reconstruction, so later changes can count relative to that continuing lineage rather than as unrelated events or independently regenerated look-alikes.
-
-This is not strict numerical identity.
-
-## 4. One / Selection-position repartition
-
-First-pass candidate:
-
-```text
-lineage-indexed vertical organization
-              /                 \
-             /                   \
-continuation face           operative face
-       One             ontological Selection-position candidate
-```
-
-Questions:
-
-```text
-One:
-what continues?
-
-ontological position:
-from where can later Selection continue?
-```
-
-Owner guard:
-
-```text
-ontological Selection-position candidate
-!= automatically subject-position
-!= perspective-bearing stable ISP.
-```
-
-`SRT_Individuation.md` continues to own the stronger transition into perspective-bearing subject-position / stable ISP entry.
-
-## 5. Bootstrap and recursion — no closed circle
-
-Invalid form:
-
-```text
-One -> Selection -> One.
-```
-
-Current form:
-
-```text
-BOOTSTRAP
-minimum non-neutrality
--> subjectless Selection
--> verticalization
-
-GENESIS
-re-entry / repeated Selection
--> lineage-indexed vertical organization
--> One / ontological from-where candidate
-
-RECURSION
-formed positions
--> later position-conditioned Selection
--> maintenance / reconstruction of later selectability.
-```
-
-The first Selection therefore does not require the One it later helps generate.
-
-## 6. Internal red-team result
-
-Four main edge cases were tested:
-
-```text
-A one-shot irreversible event:
-Selection YES / verticalization YES / One NOT ESTABLISHED.
-
-B major component replacement:
-One continuation remains possible if prior vertical organization participates in later reconstitution.
-
-C externally maintained organization:
-external support does not defeat continuation if it responds to and reconstructs this lineage;
-independent regeneration from a template is not continuation merely because the result looks the same.
-
-D perfect copy / branching:
-multiple continuation branches may inherit the predecessor;
-no unique numerical successor is invented.
-```
-
-Anti-degeneracy results:
-
-```text
-path dependence alone: insufficient
-attractor recurrence alone: insufficient
-self-maintenance / autonomy: possible realization, not universal definition
-observer label / naming alone: insufficient
-cognitive / legal recognition that changes later Selection: possible constitutive support
-```
-
-Wording correction:
-
-```text
-RETIRE:
-endogenous continuation boundary
-
-USE:
-lineage-relative continuation boundary
-```
-
-because continuation can be jointly supported by internal and external processes.
-
-## 7. V / R / L audit shorthand
-
-For pressure only:
-
-```text
-V = genuine Selection-generated vertical organization
-R = prior vertical organization materially re-enters later Selection conditions
-L = later organization is Selection-mediated reconstitution relative to that prior lineage
-
-V + R + L
--> One candidate
+Selection-position
+= the time-local operative non-flat locus through which that continuing
+  vertical organization participates in later Selection.
 ```
 
 Guards:
 
 ```text
-V/R/L are not canonical variables;
-not a proved necessary-and-sufficient theorem;
-not an empirical diagnostic protocol.
+One != vertical snapshot
+One != observer-side label
+One != Bearer
+One != subject-position / stable ISP
+One != stable attractor
+all vertical structure != One
 ```
 
-## 8. Bearer relation remains separate
+The current wording remains noncanonical even though the direction is author-accepted.
 
-Current routing:
+## 4. Recursive Selection / vertical architecture
+
+The old one-way ladder is demoted to shorthand.
+
+Current cycle:
 
 ```text
-One / ontological position:
-why can later Selection continue from here?
+pre-object relational field F_t
+-> active vertical generation VG_t
+-> Selection / asymmetric actualisation S_t
+   (manifestation + relative backgrounding)
+-> retained field reconstitution / writeback W_t
+-> transformed field F_(t+1)
+-> later vertical generation
+-> ...
+```
+
+One-formation does not occur because the whole field has memory. It requires localized lineage-relative vertical reconstitution.
+
+## 5. Minimal One onset versus graded stability
+
+Current C-layer pressure:
+
+```text
+minimal One onset:
+V_t materially participates in reconstituting V_(t+1)
+relative to the same local lineage,
+and V_(t+1) is again an operative non-flat locus for Selection;
+
+One stability:
+graded thereafter.
+```
+
+This preserves the author's earlier ruling:
+
+```text
+稳定是渐进的层次。
+```
+
+Consequences:
+
+```text
+one-shot Selection event -> not yet One;
+short-lived One -> possible;
+indefinite persistence -> not required;
+no scalar stability threshold authorized.
+```
+
+## 6. Multiple centers versus multiple Ones
+
+Current accepted direction includes:
+
+```text
+multiple centers
+!= multiple Ones.
+```
+
+Turing / activator-inhibitor dynamics already pay multiple peaks, endogenous positions and regeneration.
+
+Current stronger machine reconstruction:
+
+```text
+center formation
+-> lineage-sensitive regeneration
+-> differential reconstitution dependence
+-> relative continuation separability
+-> multiple One candidates.
+```
+
+Meaning:
+
+> A-lineage and B-lineage can remain causally coupled while possessing non-identical continuation / transformation / dissolution conditions.
+
+Not required:
+
+```text
+causal isolation;
+spatial separation;
+strict numerical identity;
+Bearer-level consequence ownership.
+```
+
+## 7. How relative continuation separability is generated
+
+Author-owned inputs:
+
+```text
+historical effects can mutually support a forming center;
+mutual support is coupled to relative suppression of competing directions;
+center and edge are co-generated;
+Selection is simultaneous manifestation + relative suppression;
+post-Selection history changes later vertical differentiation conditions.
+```
+
+Current C-layer derivation:
+
+```text
+repeated Selection
+-> some continuation relations mutually support local regeneration
++ incompatible continuations become relatively backgrounded
+-> prior A-history has a specific causal role in regenerating A
+-> prior B-history has a different / non-fully-substitutable causal role in regenerating B
+-> differential reconstitution dependence
+-> relative continuation separability.
+```
+
+This turns continuation boundary into an emergent relation rather than a pre-given object cut.
+
+## 8. History-localization route remains retired
+
+Do not confuse:
+
+```text
+where history is stored
+```
+
+with:
+
+```text
+which historical differences have a non-equivalent causal role
+in reconstituting which lineage.
+```
+
+Cycle-1 shuffled-writeback / history-localization remains scientifically retired after ordinary-recurrence collapse.
+
+Current route:
+
+```text
+history may remain distributed in 多;
+lineage-conditional causal role may still differ for A and B.
+```
+
+This is not a provenance token, new experiment family, Level-2 route or distinctiveness claim.
+
+## 9. One versus Bearer
+
+Cycle-1 author ruling remains controlling:
+
+```text
+before Bearer:
+Selection sedimentation -> 多;
+
+when historical traces sediment in 一:
+一 -> Bearer.
+```
+
+Current reconciliation:
+
+```text
+One:
+field-distributed history can differentially regenerate this local vertical lineage;
 
 Bearer:
-where do consequences return,
-and do those consequences materially alter how the later here is reconstituted?
-```
-
-The 09-07 return–reconstitution architecture is therefore retained downstream rather than replaced.
-
-```text
-One != Bearer
-position != Bearer
-```
-
-## 9. JFS / higher-order One remain orthogonal
-
-Current distinction:
-
-```text
-JFS:
-multiple positions jointly reconstruct relation-level future selectability.
-
-higher-order One:
-relation-level vertical organization acquires its own lineage-indexed reconstitution.
-```
-
-Counterexamples show neither implies the other:
-
-```text
-temporary creative collaboration:
-JFS can be strong while relation-level continuation is weak.
-
-durable centralized institution:
-continuation can be strong while joint reconstruction is weak.
-```
-
-They may reinforce one another dynamically.
-
-## 10. Collective owner remains downstream
-
-Do not bypass T-COLL-1.
-
-```text
-relation-level vertical organization
--> [JFS where present]
--> multi-subject order
--> [lineage standing where present] higher-order ontological One candidate
--> [separate T-COLL-1 standing] collective ISP where admitted.
-```
-
-Institutional continuity or higher-order One therefore does not automatically establish collective perspective or collective subjecthood.
-
-## 11. Current cross-layer Selection candidate
-
-Route A remains the working cross-layer invariant:
-
-> Selection asymmetrically actualises non-equivalent potential relations, co-generating manifestation and relative background while leaving an effective historical difference that conditions later Selection.
-
-What changes across layers is the conditioning organization:
-
-```text
-pre-One:
-minimum non-neutrality;
-
-post-One:
-lineage-indexed vertical position;
-
-multi-position:
-relation-level vertical organization.
-```
-
-This supports operation-level relational invariance without claiming same mechanism across scales.
-
-## 12. Constructive-integration Pass 1 result
-
-The mature-neighbor pass changes the interpretation of the lineage proposal in an important way.
-
-### Simondon
-
-Strongly pays:
-
-```text
-individual-through-individuation rather than substance-first;
-ongoing / repeated individuation;
-preindividual / metastable openness;
-structure-operation transduction;
-achieved structure participating in later formation;
-psychic / collective individuation beyond isolated finished individuals.
+Selection consequences return to / become own-history of the organization
+that must reconstitute the later Selection-position.
 ```
 
 Therefore:
 
 ```text
-lineage / re-individuation by itself
-!= SRT local novelty.
+lineage-relative reconstitution
+<
+return–reconstitution / own-history closure.
 ```
 
-### Whitehead
+## 10. Nesting / overlap / scale
 
-Strongly pays broad forms of:
+The current process-unit reading does not require an exclusive world partition.
+
+Allowed in principle:
 
 ```text
-actuality as becoming;
-achieved unity rather than enduring substance primitive;
-past completed actuality entering later becoming;
-process / society routes to persistence.
+nested Ones;
+overlapping Ones;
+branching lineages;
+merging lineages;
+relation-level higher-order Ones.
 ```
 
-SRT can inherit process pressure but does not inherit panexperiential / universal subject-like occasion commitments.
-
-### Autopoiesis / autonomy
-
-Strongly pays domain-specific forms of:
+But arbitrary analyst grouping is blocked. Each claimed One must pay:
 
 ```text
-organizational self-production;
-operational closure;
-identity through organization despite component turnover;
-boundary / unity maintenance.
+genuine Selection-generated vertical organization
++
+actual lineage-relative reconstitution
++
+renewed operative Selection locus.
 ```
 
-This is a strong possible realization of One-like continuation, but current SRT does not make self-maintenance or purely internal causation the universal One definition.
+Where multiple Ones are claimed, relative continuation differentiability must also be present.
 
-### Luhmann
+Higher-order One remains distinct from collective ISP; T-COLL-1 is still a separate downstream standing gate.
 
-Strongly pays social / institutional forms of:
+## 11. Constructive-integration guard
+
+Do not claim local novelty for:
 
 ```text
-decisions / communications recursively generating further operations;
-decision premises constraining later decisions;
-organizational continuation despite member turnover;
-higher-order social organization without requiring a person-like collective actor.
+process identity;
+ongoing individuation;
+organizational closure;
+recursive decision premises;
+interactional organization;
+local center formation;
+pattern regeneration;
+lineage reconstitution itself.
 ```
 
-Therefore relation-level recursive continuation is not reserved to SRT.
+Simondon, Whitehead, autonomy / autopoiesis, Luhmann, participatory sense-making and ordinary self-organizing dynamics already pay many of these roles strongly in their native domains.
 
-### Participatory / interactional theories
-
-Strongly pay broad forms of:
-
-```text
-interaction-level organization;
-participant transformation;
-relative interactional autonomy.
-```
-
-Therefore JFS remains stronger than mere reciprocal influence or interactional organization, but no novelty claim is assigned.
-
-## 13. Resulting constructive division of labor
-
-Do not ask mature theories to disappear before SRT can stand.
-
-Current integration:
-
-```text
-Simondon
--> formation / ongoing individuation / transduction
-
-Whitehead
--> process actuality / achieved unity / past-to-later becoming
-
-autopoiesis / autonomy
--> strong biological / autonomous unity-maintenance realizations
-
-Luhmann
--> organizational / social recursive continuation and decision-premise writeback
-
-participatory sense-making
--> interaction-level organization and participant transformation
-```
-
-SRT's current integrative role is the proposed repartition:
+Current SRT value here is architectural repartition around:
 
 ```text
 Selection
-= cross-layer operation candidate
-
-vertical structure
-= non-flat selectable organization produced / reconstructed through Selection
-
+vertical organization
 One
-= continuation-side reading once that organization gains lineage-indexed reconstitution
-
-ontological Selection-position candidate
-= from-where side of that formation-layer organization
-
+Selection-position
 Bearer
-= stronger consequence-return / position-reconstitution closure
-
 JFS
-= joint reconstruction of relation-level future selectability
-
+higher-order One
 collective ISP
-= separately gated higher-order perspective-bearing standing.
 ```
 
-This is an architectural synthesis, not an empirical or novelty verdict.
+rather than local residual ownership.
 
-## 14. Current full compact map
+## 12. Current compact map
 
 ```text
-minimum non-neutrality
+minimum non-neutrality / 多
 ↓
-subjectless Selection
+pre-object relational field
 ↓
-manifest / relative background
-= event verticalization
+vertical generation
 ↓
-re-entry
+Selection = manifestation + relative backgrounding
 ↓
-vertical organization
+field writeback / reconstitution
+↺
+repeated cycles
 ↓
-lineage-indexed reconstitution
+local vertical centers
 ↓
-ONE / ONTOLOGICAL FROM-WHERE
+lineage-sensitive regeneration
 ↓
-position-conditioned Selection
+differential reconstitution dependence
 ↓
-maintenance / active reconstruction of later selectability
+relative continuation separability
 ↓
-[consequence-return / reconstitution closure]
-BEARER candidate / stronger subject-side routes where applicable
+ONE(S)
 ↓
-multiple positions
+time-local Selection-position(s)
+↓
+[where consequences become own-history and alter position reconstitution]
+BEARER(S)
+↓
+multiple positions interact
 ↓
 relation-level vertical organization
 ↓
-[joint active reconstruction]
-JFS / multi-subject order
+[JFS where joint reconstruction is present]
 ↓
-[relation-level lineage continuation]
-higher-order One candidate
+[relation-level lineage reconstitution]
+higher-order One
 ↓
 [separate T-COLL-1 standing]
 collective ISP.
@@ -465,66 +376,44 @@ collective ISP.
 
 This is a dependency / feedback map, not a universal temporal ladder.
 
-## 15. Current open burdens after constructive integration
+## 13. Current live pressure
 
-Do not silently close:
+The author second adjudication is paid. The next machine-side burden is narrower:
+
+> **What makes lineage-relative reconstitution sufficiently real to support minimal One-onset without collapsing into ordinary local causal tendency, while keeping stability graded and Bearer own-history downstream?**
+
+Current candidate answer:
 
 ```text
-exact necessary/sufficient One gate;
+prior local vertical organization
+-> materially participates in reconstituting a later local vertical organization
+-> successor again functions as an operative Selection locus.
+```
+
+The relation must be causal / structural, not merely retrospective narrative similarity.
+
+## 14. Open burdens
+
+Keep open:
+
+```text
 strict numerical identity;
 branching identity metaphysics;
-exact terminology relation between ontological Selection-position and subject-position;
-formal or empirical realization criteria;
-scientific distinctiveness.
+formal / empirical realization criteria;
+exact perturbation / counterfactual test for lineage-relative reconstitution;
+scientific distinctiveness;
+canonical hardening.
 ```
 
-A new author-facing issue now replaces the generic mature-neighbor TODO:
-
-```text
-Does One name the continuing vertical organization itself,
-or is One more precisely the continuation-side reading / projection
-of an ongoing Selection-driven individuation process?
-```
-
-The current machine preference is the second, because it avoids substance-like reification and integrates Simondon's ongoing individuation pressure more cleanly while preserving the author's One–vertical-structure correspondence.
-
-This preference is C-layer and not author-owned until adjudicated.
-
-## 16. Next valid move
-
-The workline has now reached the **second author adjudication** point required by the ontology workflow.
-
-No further strengthening of the One / vertical-structure identity should be written as author meaning until that adjudication occurs.
-
-Mechanical work may continue:
-
-```text
-CI / frontmatter / dependency checks;
-STATUS.md current-workline repair;
-PR wording cleanup;
-canonical-diff verification.
-```
-
-After author adjudication, valid next work is:
-
-```text
-update the C-layer architecture to match the ruling;
-run reciprocal source / inference / counterexample checks;
-then decide whether any ontology/interface hardening is justified.
-```
-
-Do not trigger a new deep well, Level promotion, or HOLD exit from this checkpoint.
-
-## 17. Merge guard
+## 15. Merge guard
 
 Before merge:
 
 ```text
-mechanical dependency / frontmatter review;
 CI green;
+frontmatter / dependency checks;
 STATUS.md current-workline repair;
 no canonical diff;
-no hidden Level or HOLD change;
-review any terminology that could make One = subject-position by accident;
-record the author's second adjudication if substantive One wording changes.
+no hidden Level / HOLD change;
+terminology review for accidental One = Bearer / subject-position collapse.
 ```
