@@ -1,0 +1,49 @@
+name: Temporary Canonical Authority Truth-up Batch A
+
+on:
+  push:
+    branches:
+      - ops/canonical-authority-truthup-batch-a-20260911
+
+permissions:
+  contents: write
+
+jobs:
+  truthup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ops/canonical-authority-truthup-batch-a-20260911
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply authority truth-up
+        run: uv run python scripts/tmp_canonical_authority_truthup_batch_a.py
+
+      - name: Regenerate context bundles
+        run: uv run python scripts/build_srt_context_bundles.py
+
+      - name: Commit deterministic changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Core_Law/SRT_Core_Text_CN.md \
+                  Core_Law/SRT_Core_Text_CN_Euclid.md \
+                  Core_Law/SRT_Selection_Argument.md \
+                  D_VALUE_ALIGNMENT.md \
+                  SRT_FAQ_CRITICAL.md \
+                  memory/README.md \
+                  Operations/Context_Bundles/
+          if ! git diff --cached --quiet; then
+            git commit -m "Truth up false canonical metadata batch A"
+            git push origin HEAD:ops/canonical-authority-truthup-batch-a-20260911
+          fi
