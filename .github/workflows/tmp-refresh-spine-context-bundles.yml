@@ -1,0 +1,31 @@
+name: Temporary Spine Context Refresh
+
+on:
+  push:
+    branches:
+      - theory/generative-ontology-spine-canonical-20260911
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: theory/generative-ontology-spine-canonical-20260911
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: uv run python scripts/build_srt_context_bundles.py --generated-date 2026-09-11
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Operations/Context_Bundles/
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh context bundles after spine compression"
+            git push origin HEAD:theory/generative-ontology-spine-canonical-20260911
+          fi
