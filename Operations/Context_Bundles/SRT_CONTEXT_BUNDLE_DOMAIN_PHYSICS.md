@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: f4078962
+source_commit: c1ec8147
 source_branch: theory/canonical-cleanup-b1-individuation-20260911
 source_dirty: true
 inputs_digest: 10f1458910a36d19
@@ -27,7 +27,7 @@ inputs_digest: 10f1458910a36d19
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `f4078962` |
+| 来源 commit | `c1ec8147` |
 | 来源分支 | `theory/canonical-cleanup-b1-individuation-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |

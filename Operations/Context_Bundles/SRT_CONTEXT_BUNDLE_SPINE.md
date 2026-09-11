@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: f4078962
+source_commit: c1ec8147
 source_branch: theory/canonical-cleanup-b1-individuation-20260911
 source_dirty: true
 inputs_digest: 10f1458910a36d19
@@ -27,7 +27,7 @@ inputs_digest: 10f1458910a36d19
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `f4078962` |
+| 来源 commit | `c1ec8147` |
 | 来源分支 | `theory/canonical-cleanup-b1-individuation-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
@@ -46,7 +46,7 @@ inputs_digest: 10f1458910a36d19
 | 1 | `SRT_AI_START.md` | 2026-09-08 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-11 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
-| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
+| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-11 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
@@ -57,7 +57,7 @@ inputs_digest: 10f1458910a36d19
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-09-05 |
-| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-09-05 |
+| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-09-11 |
 
 ## §0.2 状态护栏
 
@@ -1700,7 +1700,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -6325,7 +6325,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-05 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
