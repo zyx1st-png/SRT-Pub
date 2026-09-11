@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
 
       - name: Apply B1 routing cleanup
-        run: uv run python scripts/tmp_cleanup_b1_individuation.py
+        run: uv run python scripts/tmp_cleanup_b1_individuation_v2.py
 
       - name: Regenerate L1 Formalism reading split
         run: |
