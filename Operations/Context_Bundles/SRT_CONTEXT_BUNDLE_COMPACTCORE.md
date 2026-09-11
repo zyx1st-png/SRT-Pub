@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 297f7fd1
-source_branch: ops/pr931-postmerge-status-closeout-20260911
+source_commit: 2d10370c
+source_branch: theory/pr931-external-review-reconciliation-20260911
 source_dirty: false
-inputs_digest: cd8c40f3aeaac5f8
+inputs_digest: a0059b681c629037
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: cd8c40f3aeaac5f8
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `297f7fd1` |
-| 来源分支 | `ops/pr931-postmerge-status-closeout-20260911` |
+| 来源 commit | `2d10370c` |
+| 来源分支 | `theory/pr931-external-review-reconciliation-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
