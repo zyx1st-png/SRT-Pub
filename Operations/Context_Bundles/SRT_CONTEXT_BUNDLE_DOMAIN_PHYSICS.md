@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-10
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-11
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-10
-source_commit: 56c7b205
-source_branch: theory/d3d4-manifestation-strongest-neighbor-20260910
+generated: 2026-09-11
+source_commit: d5a22cb5
+source_branch: theory/selection-vertical-one-lineage-20260911
 source_dirty: false
-inputs_digest: 9c884320b97600fc
+inputs_digest: 2fa4c4f5f4b68d2c
 ---
 
 # SRT 物理领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 9c884320b97600fc
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-10 |
-| 来源 commit | `56c7b205` |
-| 来源分支 | `theory/d3d4-manifestation-strongest-neighbor-20260910` |
+| 生成日期 | 2026-09-11 |
+| 来源 commit | `d5a22cb5` |
+| 来源分支 | `theory/selection-vertical-one-lineage-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
