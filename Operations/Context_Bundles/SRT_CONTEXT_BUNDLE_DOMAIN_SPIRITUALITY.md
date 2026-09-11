@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 297f7fd1
-source_branch: ops/pr931-postmerge-status-closeout-20260911
-source_dirty: false
-inputs_digest: cd8c40f3aeaac5f8
+source_commit: 0f0db81a
+source_branch: theory/pr931-external-review-reconciliation-20260911
+source_dirty: true
+inputs_digest: 6bf5487bc7168dec
 ---
 
 # SRT 灵性领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: cd8c40f3aeaac5f8
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `297f7fd1` |
-| 来源分支 | `ops/pr931-postmerge-status-closeout-20260911` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `0f0db81a` |
+| 来源分支 | `theory/pr931-external-review-reconciliation-20260911` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
