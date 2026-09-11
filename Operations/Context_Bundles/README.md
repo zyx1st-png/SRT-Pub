@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 49c182f6
+source_commit: bc92e801
 source_branch: theory/r1-one-formation-canonical-landing-20260911
 source_dirty: true
-inputs_digest: 8d17f2ca72a3e709
+inputs_digest: e07e0761ff234b0c
 ---
 
 # SRT 上下文包
@@ -23,7 +23,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 341,133 | ~148,494 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 341,143 | ~148,497 |
 | `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 152,663 | ~71,706 |
 | `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 69,973 | ~26,947 |
 | `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 80,557 | ~34,307 |
@@ -49,7 +49,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 路线 | 装载 | 合计 ≈token | 余量 | 用途 |
 |---|---|---:|---:|---|
-| 骨架路线（裁定定义时用） | `SPINE` | 148,494 | 51,506 | 需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。 |
+| 骨架路线（裁定定义时用） | `SPINE` | 148,497 | 51,503 | 需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。 |
 | 轻量跨域 | `COMPACTCORE` | 71,706 | 128,294 | 只需领域主线、不需裁定定义时用。 |
 | 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 34,424 | 165,576 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
 | 单域（体量最小者：Core 动力学） | `DOMAIN_CORE` | 9,677 | 190,323 | 最省的一种装法。 |
@@ -58,18 +58,18 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 组合 | 合计 ≈token | 为什么禁止 |
 |---|---:|---|
-| SPINE + COMPACTCORE | **220,200** | 旧版曾把它推荐为跨域方案；两包合计已**超出**整个窗口，装不下。 |
+| SPINE + COMPACTCORE | **220,203** | 旧版曾把它推荐为跨域方案；两包合计已**超出**整个窗口，装不下。 |
 
 ### `SPINE` + 各领域包（逐个列出，均不推荐）
 
 | 组合 | 合计 ≈token | 是否在预算内 |
 |---|---:|:---:|
-| `SPINE` + `DOMAIN_AI` | 175,441 | **超预算** |
-| `SPINE` + `DOMAIN_PHYSICS` | 182,801 | **超预算** |
-| `SPINE` + `DOMAIN_PHILOSOPHY` | 182,918 | **超预算** |
-| `SPINE` + `DOMAIN_NEUROSCIENCE` | 190,118 | **超预算** |
-| `SPINE` + `DOMAIN_SPIRITUALITY` | 162,669 | **超预算** |
-| `SPINE` + `DOMAIN_CORE` | 158,171 | **超预算** |
+| `SPINE` + `DOMAIN_AI` | 175,444 | **超预算** |
+| `SPINE` + `DOMAIN_PHYSICS` | 182,804 | **超预算** |
+| `SPINE` + `DOMAIN_PHILOSOPHY` | 182,921 | **超预算** |
+| `SPINE` + `DOMAIN_NEUROSCIENCE` | 190,121 | **超预算** |
+| `SPINE` + `DOMAIN_SPIRITUALITY` | 162,672 | **超预算** |
+| `SPINE` + `DOMAIN_CORE` | 158,174 | **超预算** |
 
 **两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
 

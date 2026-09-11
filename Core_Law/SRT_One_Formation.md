@@ -2,7 +2,8 @@
 id: SRT-ONE-FORMATION
 type: theory
 tags: [OneFormation, SelectionPosition, VerticalStructure, Lineage, Reconstitution, L1]
-status: draft_v0
+status: draft
+version: v0
 layer: L1
 epistemic_layer: os
 claim_mode: canonical

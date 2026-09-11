@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 49c182f6
+source_commit: bc92e801
 source_branch: theory/r1-one-formation-canonical-landing-20260911
 source_dirty: true
-inputs_digest: 8d17f2ca72a3e709
+inputs_digest: e07e0761ff234b0c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 8d17f2ca72a3e709
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `49c182f6` |
+| 来源 commit | `bc92e801` |
 | 来源分支 | `theory/r1-one-formation-canonical-landing-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
@@ -44,14 +44,14 @@ inputs_digest: 8d17f2ca72a3e709
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-08 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-03 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-11 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
-| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
+| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
@@ -954,7 +954,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-03 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1140,7 +1140,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 13. SRT One Formation（One / Selection-position 形成层 owner）
 - 主文件：`Core_Law/SRT_One_Formation.md`
 - id：`SRT-ONE-FORMATION`
-- layer：L1 / epistemic：os / status：draft_v0 / claim-mode：canonical / claim-level：P1-candidate
+- layer：L1 / epistemic：os / status：draft / version：v0 / claim-mode：canonical / claim-level：P1-candidate
 - 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> active vertical organization -> One / Selection-position` 的形成语义；verticality 是 Selection-generated / regenerated 的非平坦组织，不是被动历史沉积；One 只按 D4a 强度固定为 localized、lineage-relative、processual formed unity，其持续为 Selection-mediated recurrent reconstitution；`Selection-position_t` 是同一 continuing One 的 time-local operative from-where
 - 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One
 - 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One
@@ -2883,7 +2883,7 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 

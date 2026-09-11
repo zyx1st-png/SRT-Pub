@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 49c182f6
+source_commit: bc92e801
 source_branch: theory/r1-one-formation-canonical-landing-20260911
 source_dirty: true
-inputs_digest: 8d17f2ca72a3e709
+inputs_digest: e07e0761ff234b0c
 ---
 
 # SRT 哲学领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 8d17f2ca72a3e709
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `49c182f6` |
+| 来源 commit | `bc92e801` |
 | 来源分支 | `theory/r1-one-formation-canonical-landing-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |

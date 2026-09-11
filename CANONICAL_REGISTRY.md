@@ -188,7 +188,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 13. SRT One Formation（One / Selection-position 形成层 owner）
 - 主文件：`Core_Law/SRT_One_Formation.md`
 - id：`SRT-ONE-FORMATION`
-- layer：L1 / epistemic：os / status：draft_v0 / claim-mode：canonical / claim-level：P1-candidate
+- layer：L1 / epistemic：os / status：draft / version：v0 / claim-mode：canonical / claim-level：P1-candidate
 - 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> active vertical organization -> One / Selection-position` 的形成语义；verticality 是 Selection-generated / regenerated 的非平坦组织，不是被动历史沉积；One 只按 D4a 强度固定为 localized、lineage-relative、processual formed unity，其持续为 Selection-mediated recurrent reconstitution；`Selection-position_t` 是同一 continuing One 的 time-local operative from-where
 - 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One
 - 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One
