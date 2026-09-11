@@ -5,7 +5,7 @@ status: active
 record_stage: concept_crosswalk_reconciliation
 date: 2026-09-11
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
