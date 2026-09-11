@@ -2,7 +2,7 @@
 id: SRT-AUDIT-ONE-UPSTREAM-BEARER-CIRCULARITY-RESOLUTION-20260911
 type: audit
 status: active
-record_stage: one_upstream_bearer_circularity_resolution
+record_stage: one_upstream_bearer_circularity_resolution_corrected
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -26,27 +26,44 @@ tags: [One, Bearer, Circularity, ConsequenceAttribution, ReturnReconstitution, S
 
 # Upstream One and Bearer circularity resolution
 
-## 1. Old circularity risk
+## 0. Correction note
 
-The 2026-09-07 bearer work already identified a deep candidate:
+The first machine pass used `source-return convergence` too close to the minimum Bearer definition.
+
+Correction:
 
 ```text
-P_t helps determine which consequences accrue as O's own consequences;
+GENERAL BEARING
+does not require that q was caused by the Bearer's own Selection.
+
+SELF-CONSEQUENCE / AGENCY CLOSURE
+does require:
+Selection from O -> q -> q returns to alter O's later reconstitution.
+```
+
+The circularity result survives the correction because the important logical advance is the same:
+
+> **One is independently available before Bearer attribution is tested.**
+
+## 1. Old circularity risk
+
+The 2026-09-07 bearer work identified a deeper candidate:
+
+```text
+P_t helps determine which consequences accrue to O;
 those consequences alter O_t;
 altered O_t reconstitutes P_(t+1).
 ```
 
-But it also correctly flagged a hidden-premise risk:
+It also correctly flagged a hidden-premise risk:
 
 ```text
 if P is used to identify O,
-and O is used to identify which consequences are 'its own',
+and O is used to identify what counts as O-indexed consequence,
 and those consequences are then used to prove continuity of O,
 ```
 
 the bearer account can become circular.
-
-The old R-C route therefore remained deeper but dangerous.
 
 ## 2. New upstream One changes the logical order
 
@@ -64,17 +81,15 @@ At this stage:
 
 ```text
 history may still be distributed in 多;
-consequence ownership / same-unit closure is not required;
+consequence closure is not required;
 Bearer is not yet assumed.
 ```
 
-Therefore the unit `O` can be provisionally individuated by its own continuation recursion before asking whether consequences become `O`-indexed history.
+Therefore the unit `O` can be provisionally individuated by its own continuation recursion before asking which consequences become `O`-indexed history.
 
 This removes the need to use Bearer closure to bootstrap the One that Bearer closure is supposed to belong to.
 
-## 3. Non-circular genetic order
-
-Current preferred order:
+## 3. Corrected non-circular genetic order
 
 ```text
 STEP 1 — ONE FORMATION
@@ -83,68 +98,60 @@ field-side Selection history
 -> continuing One O
 -> current operative Selection-position P_t.
 
-STEP 2 — CONSEQUENCE GENERATION
-Selection from P_t
--> consequence q_t.
+STEP 2 — CONSEQUENCE OCCURS
+q_t may originate from O, another One, or the wider environment.
 
-STEP 3 — RETURN TEST
+STEP 3 — BEARING TEST
 Does q_t materially alter the organization that will reconstitute
 P_(t+1) of the already-identified One O?
 
 STEP 4 — OWN-HISTORY TRANSITION
-If repeated source-specific consequence return becomes load-bearing
-for O's later reconstitution / future selectability,
-then O acquires Bearer standing candidate.
+If q_t becomes history-bearing for O's later reconstitution / future selectability,
+then q_t supports Bearer standing for O.
 ```
 
 The key logical asymmetry is:
 
 ```text
-O exists as a thin continuing One before q_t is classified as borne history.
+O exists as a thin continuing One before q_t is classified as O-indexed history.
 ```
 
-## 4. 'Own consequence' can now be tested rather than assumed
+## 4. Consequence attribution can now be tested rather than assumed
 
 Do not define:
 
 ```text
-q is O's consequence because O bears q.
+q belongs to O because O bears q.
 ```
 
-Instead test two independently staged relations:
-
-### Source relation
+Instead stage the test:
 
 ```text
-Selection producing q issued through P_t of already-formed One O.
+1. independently identify O through One-level continuation recursion;
+2. observe / posit q from any source;
+3. test whether q makes a material difference to reconstitution of O's later operative position;
+4. test whether that difference changes O's future selectability in a history-bearing way.
 ```
 
-### Return relation
+If yes, q can become `O`-indexed history in the relevant causal sense.
 
-```text
-q later makes a material difference to reconstitution of P_(t+1)
-of that same independently tracked One O.
-```
+This is relational attribution, not a storage-location claim.
 
-When both hold repeatedly:
-
-```text
-source_O(q)
-+
-return_to_reconstitution_O(q)
-```
-
-supports the claim that q is becoming part of O's own history.
-
-This is a relational attribution, not a storage-location claim.
-
-## 5. Source-return convergence
+## 5. Source-return convergence retained as a stronger subtype
 
 Machine-side phrase:
 
 > **source-return convergence**
 
-means:
+is retained only for the stronger case:
+
+```text
+Selection from O's operative position
+-> q
+-> q becomes constitutive of O's later operative-position reconstitution.
+```
+
+This is useful for agency / self-consequence pressure because:
 
 ```text
 from-where of Selection
@@ -153,22 +160,7 @@ to-where of its historical consequence
 converge on the same continuing One-lineage.
 ```
 
-This does not mean source and return are spatially inside one box.
-
-It means:
-
-```text
-the Selection issued through O's operative position,
-and its consequence becomes constitutive of O's later operative-position reconstitution.
-```
-
-This is the first point at which the old author phrase
-
-```text
-'历史痕迹沉积在一'
-```
-
-can be interpreted without literal history localization.
+But general Bearer does not require this source match.
 
 ## 6. One-indexed history without physical localization
 
@@ -182,13 +174,13 @@ A-lineage can still be regenerated from distributed historical conditions.
 During Bearer transition:
 
 ```text
-some consequences generated from A
-become specifically constitutive of A's later reconstitution.
+some consequence q — self-generated or external —
+becomes specifically constitutive of A's later reconstitution.
 ```
 
 Thus `history sedimenting in One` can be reconstructed as:
 
-> **a shift in causal attribution / reconstitution dependence from generic field-history to source-return-coupled lineage history.**
+> **a shift in causal attribution / reconstitution dependence from generic field-history to consequence-indexed lineage history.**
 
 Not:
 
@@ -196,7 +188,7 @@ Not:
 history moves physically from outside A into A.
 ```
 
-## 7. R-A / R-B / R-C reconciliation
+## 7. R-A / R-B / R-C reconciliation after correction
 
 The 2026-09-07 strongest-neighbor audit distinguished:
 
@@ -206,7 +198,7 @@ R-B non-outsourcable consequence-to-reconstitution dependence: LIVE
 R-C reciprocal attribution / reconstitution closure: deeper but circularity risk
 ```
 
-The new One architecture changes the status of R-C's circularity risk.
+The new One architecture changes their interpretation.
 
 ### R-A
 
@@ -216,20 +208,21 @@ Still too weak.
 q affects later state
 ```
 
-is ordinary adaptive feedback.
+is ordinary causal feedback.
 
 ### R-B
 
-Remains live and fits the new transition:
+Retained as the strongest generic Bearer route:
 
 ```text
-q generated from O
-becomes non-outsourcably load-bearing in reconstituting O's later position.
+q becomes non-outsourcably load-bearing in reconstituting O's later position.
 ```
+
+No self-source condition is required.
 
 ### R-C
 
-Can now be rewritten more safely:
+Retained as a stronger agency / reciprocal-closure subtype:
 
 ```text
 One O and P_t are already admitted by upstream lineage-relative continuation;
@@ -278,10 +271,16 @@ One
 = closure of continuation / reconstitution relation
 
 Bearer
-= additional closure connecting
-Selection source
+= additional closure in which consequence history
+becomes constitutive of later reconstitution of that One-lineage.
+```
+
+Stronger agency subtype:
+
+```text
+Selection source_O
 -> consequence
--> later reconstitution of the same One-lineage.
+-> consequence alters later reconstitution_O.
 ```
 
 So Bearer is not:
@@ -292,24 +291,24 @@ a more stable One;
 a more autonomous One by definition.
 ```
 
-It is a One with an additional source-return historical closure.
+It is a One with an additional consequence-to-reconstitution closure.
 
 ## 10. Possible gradual transition
 
-Because stability is already author-confirmed as graded, source-return convergence may also deepen gradually:
+Because stability is already author-confirmed as graded, consequence-bearing closure may also deepen gradually:
 
 ```text
-weak / occasional q-return
+weak / occasional consequence writeback
 -> partial One-indexed history
--> repeated non-outsourcable return
+-> repeated non-outsourcable consequence return
 -> deeper Bearer closure.
 ```
 
-But the relation-onset and its later depth should remain distinct:
+But onset and depth remain distinct:
 
 ```text
 Bearer onset candidate
-= first genuine source-return coupling that becomes constitutive of later reconstitution;
+= first genuine consequence-to-reconstitution coupling that becomes constitutive of later reconstitution;
 
 Bearer depth
 = robustness / recurrence / temporal reach / non-outsourcability of that coupling.
@@ -319,24 +318,20 @@ No scalar threshold is authorized.
 
 ## 11. Consequence for multi-One systems
 
-If A and B are already distinct Ones:
+If A and B are already distinct Ones, a consequence q may have several typed relations:
 
 ```text
-Selection_A -> q_A
-```
-
-may produce several possible return structures:
-
-```text
-q_A -> reconstitutes A   : A-bearing candidate
-q_A -> reconstitutes B   : B bears consequence caused by A
-q_A -> reconstitutes AB  : relation-level bearing pressure
-q_A -> dissipates externally: no strong bearer attribution established
+A causes q; A bears q
+A causes q; B bears q
+B causes q; A bears q
+external source causes q; A bears q
+q alters A and B at different scales
+q alters relation-level One AB
 ```
 
 This distinction is only possible because One individuation precedes Bearer attribution.
 
-It also shows:
+It also preserves:
 
 ```text
 who causes
@@ -354,18 +349,19 @@ ONE
 lineage-relative result-to-condition recursion
 ↓
 SELECTION-POSITION P_t
+
+q from any source
 ↓
-Selection from P_t
+BEARING TEST
+q alters reconstitution of same One's P_(t+1)
 ↓
-CONSEQUENCE q_t
-↓
-source-return test
-↓
-q_t alters reconstitution of same One's P_(t+1)
-↓
-repeated One-indexed source-return convergence
+q becomes One-indexed history / future-selectability change
 ↓
 BEARER candidate
+
+optional stronger loop:
+P_t -> Selection -> q -> later P_(t+1)
+= self-consequence / agency closure candidate
 ```
 
 ## 13. Verdict
@@ -375,9 +371,10 @@ old bearer circularity: materially reduced by independent upstream One formation
 One needed before Bearer: YES in current architecture
 own-history can be relational / distributed: YES
 history localization required: NO
+self-source required for generic Bearer: NO
 R-A: remains too weak
-R-B: retained live
-R-C: becomes cleaner after upstream One, still noncanonical
+R-B: retained live generic Bearer route
+R-C: cleaner stronger agency subtype after upstream One
 who causes = who bears: NO
 Bearer = more stable One: NO
 Bearer = subject / experiencer: NO
@@ -389,8 +386,8 @@ scientific distinctiveness: NOT ESTABLISHED
 
 ## 14. Next pressure
 
-The remaining hard question is now sharply stated:
+The remaining hard question is now:
 
-> **What makes source-return convergence belong to the One itself rather than to a larger coupled system that contains the One?**
+> **If nested / overlapping Ones coexist, at which scales does q become constitutive of later reconstitution, and can the same q be genuinely borne at more than one scale?**
 
-That problem should be tested through non-outsourcing, matched unit-boundary redraw, and relation-level cases. The upstream One criterion must remain fixed during that pressure so the unit cannot be redrawn opportunistically after every counterexample.
+The next pressure should keep the independently paid One criterion fixed at each candidate scale so the Bearer unit cannot be opportunistically redrawn after every counterexample.
