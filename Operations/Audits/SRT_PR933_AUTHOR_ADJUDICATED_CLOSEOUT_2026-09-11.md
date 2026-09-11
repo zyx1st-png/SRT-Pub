@@ -116,3 +116,7 @@ PR #933: READY FOR FINAL GOVERNANCE GATE AND MERGE
 ```
 
 This closeout does not promote #931/#933 content into canonical owners. Any canonical integration remains a separate, smaller future workline.
+
+## 8. Final mechanical handoff
+
+The STATUS closeout and context-bundle regeneration were completed on the PR head, and the temporary regeneration workflow was removed from the final diff. The remaining merge condition is the repository's ordinary Governance Preflight on the current author-side head; no governance exception or bypass is authorized.
