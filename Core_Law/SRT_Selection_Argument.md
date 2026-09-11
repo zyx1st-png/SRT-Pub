@@ -5,7 +5,8 @@ tags: [L1, Philosophy, Selection, Existence, Consciousness, Foundation, Defense]
 layer: L1
 epistemic_layer: os
 status: active_v1
-claim_mode: canonical
+claim_mode: companion_exposition
+canonical: false
 dependency: [SRT-L0-METAPHYSICS]
 ---
 
