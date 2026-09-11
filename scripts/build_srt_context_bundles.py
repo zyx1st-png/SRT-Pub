@@ -766,6 +766,7 @@ def build_guardrails() -> str:
 # 出现在嵌套子项里。按"首次出现即归属"去解析会把文件挂到错误条目上。因此归属用下面的
 # 显式表，而**完备性**（哪些没收）用"registry 是否提及该路径"的集合运算——后者可靠。
 SPINE_BUCKETS: dict[str, tuple[str, str]] = {
+    "Core_Law/SRT_Generative_Ontology_Spine.md": ("定义源", "registry §A.0 跨 owner 生成主轴"),
     "_SRT_D_VALUE_CANONICAL.md": ("定义源", "registry §A.1 主锚点"),
     "_SRT_PSI_F_CANONICAL.md": ("定义源", "registry §A.2 主锚点"),
     "_SRT_T_DIR_CANONICAL.md": ("定义源", "registry §A.3 主锚点"),
