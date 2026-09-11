@@ -20,15 +20,17 @@ updated: 2026-09-11
 
 ```text
 latest merged reconstruction checkpoint:
-#931 Consolidate Selection, vertical One, Bearer, and position-indexed Active Selection
-merge = 87c4b6cfe47fef87aac643376a6ef107624fd33d
+#938 Repair R1 around pre-object vertical formation before canonical landing
+merge = 12b38e525470ea56cc1b0ce7da20502efe6743c9
+status = MERGED / NONCANONICAL
 
-post-merge reconciliation checkpoint:
+historical merged checkpoints retained for provenance:
+#931 Consolidate Selection, vertical One, Bearer, and position-indexed Active Selection
 #933 author-adjudicated reviewer reconciliation
 
-current live repair PR:
-#938 Repair R1 around pre-object vertical formation before canonical landing
-status = DRAFT / OPEN / NONCANONICAL
+current phase:
+POST-#938 STATUS / CONTEXT CLOSEOUT
+-> then separate small C-risk canonical landing package
 
 canonical edit in #938 = NO
 new Level 1 = NOT ASSIGNED
@@ -466,7 +468,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#938 remains noncanonical. No current repair file authorizes a canonical rewrite.
+#938 is a merged noncanonical checkpoint. It controls current reconstruction routing within its scope but does not by itself authorize or constitute a canonical rewrite.
 
 ---
 
@@ -506,13 +508,13 @@ collective subject sufficiency.
 ## Immediate routing
 
 ```text
-1. treat #931/#933 as historical noncanonical checkpoints, not current Bearer authority;
+1. treat #938 as the latest merged noncanonical reconstruction checkpoint;
 2. treat #938 author adjudication + final supersession reconciliation as current R1 routing control;
-3. do not reopen broad theory expansion inside #938;
-4. run one independent content re-review of the repaired package;
-5. verify canonical diff = 0 and Governance Preflight = SUCCESS;
-6. if clean, merge #938 as a noncanonical repair checkpoint;
-7. only afterward design a separate small C-risk canonical landing package.
+3. finish post-#938 STATUS / context-bundle freshness closeout without changing theory;
+4. do not reopen broad theory expansion by default;
+5. after mechanical closeout, open a separate small C-risk canonical landing package focused on formation ontology + standing de-coupling;
+6. keep Bearer necessary/sufficient conditions, subjecthood, phenomenality, d/sigma/T_dir and collective subject sufficiency OPEN unless separately adjudicated;
+7. preserve Level 2 HOLD and do not infer scientific distinctiveness from the canonical landing itself.
 ```
 
 ## Historical navigation
