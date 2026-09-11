@@ -13,7 +13,7 @@ dependency:
 tags: [AuthorReentry, CanonicalIndependent, Reconstruction, TheoryFirst, CanonicalLag]
 ---
 
-# Author direction — canonical-independent theory reconstruction — 2026-09-11
+# Author trigger and operationalization — canonical-independent theory reconstruction — 2026-09-11
 
 ## 1. Exact author trigger
 
@@ -21,40 +21,41 @@ Author wording in the initiating conversation:
 
 > **「我感觉之前的 canonical 部分源于前期理论总结，可能存在较大的内外部压力和局限性，所以担心过于考虑 canonical 内容的完备性，影响后续理论完善。」**
 
-This exact wording is the source-level trigger for this workline. The paraphrases below are explanatory expansions only and do not replace the quoted author statement.
+This exact wording is the source-level trigger for this workline.
+
+The operational rules below are machine/governance interpretations adopted for this workline unless separately backed by an exact author quotation or later author adjudication. They do not replace or enlarge the quoted author statement by themselves.
 
 ## 2. Minimum author-owned concern
 
-The current canonical layer was produced from earlier stages of SRT theory summary. Those stages may contain:
+The author concern directly licenses re-examining whether earlier canonical summaries carry:
 
-- substantial internal and external pressure;
 - historical path dependence;
-- local defensive hardening;
+- defensive hardening pressure;
 - premature completeness assumptions;
-- concept packaging that was useful at an earlier stage but may now constrain reconstruction.
+- concept packaging that may now constrain theory improvement.
 
-Therefore treating current canonical completeness or compatibility as the primary constraint may itself obstruct later theory improvement.
+The author concern does **not** by itself settle which current canonical claims are false, obsolete or removable.
 
-## 3. Author direction
+## 3. Operational reconstruction question
 
-The next reconstruction cycle should not begin from the question:
-
-```text
-How can the recent theory be fitted into the current canonical?
-```
-
-It should first ask:
+For this workline, the initiating concern is operationalized as:
 
 ```text
-If SRT were reconstructed today from its strongest current author-adjudicated insights,
-what is the minimum coherent theory architecture?
+Do not begin only from:
+How can recent theory be fitted into current canonical?
+
+First ask:
+If SRT is reconstructed from the strongest current author-adjudicated insights,
+what is the minimum coherent architecture?
 ```
 
-Only after that independent reconstruction should the result be compared against existing canonical.
+Only after that independent reconstruction should the result be reverse-mapped against existing canonical.
 
-## 4. Governance distinction
+This is an operational research policy, not an additional author quotation.
 
-Current working distinction:
+## 4. Operational governance distinction
+
+Working distinction for this audit:
 
 ```text
 canonical authority
@@ -62,24 +63,24 @@ canonical authority
 theory truth priority
 ```
 
-Canonical authority answers:
+Here:
 
 ```text
-What wording does the repository currently treat as its stabilized formal/reference position?
-```
+canonical authority
+= what wording the repository currently treats as stabilized formal/reference position;
 
-Theory truth priority asks:
-
-```text
-What structure is currently best supported by the theory's own internal coherence,
-author intuition, formal pressure, neighboring-theory comparison and reconstruction work?
+theory truth priority
+= what structure is currently best supported by author-adjudicated source,
+  internal coherence, formal pressure, neighboring-theory comparison and reconstruction work.
 ```
 
 During an active reconstruction cycle the two may temporarily diverge.
 
-## 5. Reconstruction posture
+This distinction is a machine/governance operationalization of the author's concern; it is not claimed as a verbatim author thesis.
 
-The next workline should use:
+## 5. Operational reconstruction posture
+
+Use:
 
 ```text
 theory-first
@@ -94,16 +95,16 @@ ignore canonical history;
 ignore later author corrections;
 rewrite canonical immediately;
 author intuition automatically overrides all evidence;
-newer language automatically has higher status;
+newer language automatically has higher status.
 ```
 
-It means current canonical is treated as one major historical/theoretical input to be audited, not as the prior truth constraint that every new relation must preserve.
+It means current canonical is one major historical/theoretical input to be audited, not an untouchable prior truth constraint.
 
-A canonical-independent reconstruction is therefore still required to include the strongest author-adjudicated corrections that post-date older canonical summaries. In particular, omission of a later author correction is not licensed by the phrase `canonical-independent`.
+A canonical-independent reconstruction is still required to include the strongest later author corrections. Omission of a later author correction is not licensed by `canonical-independent`.
 
 ## 6. Required reverse mapping
 
-After a minimum theory skeleton is reconstructed independently, every current canonical object/claim in scope should be mapped as one of:
+After a minimum theory skeleton is reconstructed independently, every current canonical object/claim in scope should later be mapped as one of:
 
 ```text
 RETAIN
@@ -128,14 +129,14 @@ The audit must permit the possibility that:
 
 A new concept should not enter canonical merely because it is useful in reconstruction.
 
-For every candidate addition ask the reverse question:
+For every candidate addition ask:
 
 ```text
 If this relation becomes canonical,
 which older concepts become redundant, narrower, or better treated as aliases/projections?
 ```
 
-Compression is valid only if the displaced burdens are either:
+Compression is valid only if displaced burdens are:
 
 ```text
 explicitly derived;
@@ -146,26 +147,36 @@ or explicitly left OPEN.
 
 A smaller vocabulary is not by itself a more complete theory.
 
-The goal is not maximal concept count. The goal is the smallest architecture that preserves the theory's strongest explanatory and constitutive commitments.
+The goal is the smallest architecture that preserves the strongest explanatory and constitutive commitments.
 
-## 8. Current hard guards retained
+## 8. Hard guards retained
 
-This author direction does not itself change:
+This workline does not itself change:
 
 ```text
 Level 2 = HOLD
 scientific distinctiveness = NOT ESTABLISHED
 whole-architecture non-substitutability = NOT ESTABLISHED
 phenomenality / experiencer transition = OPEN
-canonical files = unchanged until a later explicit author adjudication and edit cycle
+canonical files = unchanged until later explicit author adjudication and edit cycle
 ```
 
-## 9. Immediate authorization
+## 9. Workline authorization scope
 
-Authorized workline:
+The conversation explicitly authorized a:
 
 ```text
 CANONICAL-INDEPENDENT THEORY RECONSTRUCTION AUDIT
 ```
 
-The workline should reconstruct and type the minimum current architecture before proposing any canonical edit, but must continuously reconcile that reconstruction against later author corrections and owner-level burden distinctions before asking for author adoption.
+Operational scope:
+
+```text
+reconstruct and type the minimum current architecture;
+reconcile it against later author corrections and owner-level burdens;
+pressure-test it;
+prepare narrow author decisions;
+do not edit canonical inside this audit PR.
+```
+
+This section records the scope of the requested workline. It does not convert the machine operationalization in §§3–7 into independent author doctrine.
