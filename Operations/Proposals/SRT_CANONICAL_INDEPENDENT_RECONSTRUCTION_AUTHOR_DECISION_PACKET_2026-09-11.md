@@ -2,7 +2,7 @@
 id: SRT-CANONICAL-INDEPENDENT-RECONSTRUCTION-AUTHOR-DECISION-PACKET-20260911
 type: proposal
 status: active
-record_stage: author_gate_revised_after_external_review
+record_stage: author_gate_narrowed_after_second_external_review
 date: 2026-09-11
 layer: operations
 epistemic_layer: os
@@ -13,41 +13,44 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_CANONICAL_INDEPENDENT_RECONSTRUCTION_DIRECTION_2026-09-11.md
   - Operations/Audits/SRT_PR936_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md
   - Operations/Audits/SRT_CANONICAL_INDEPENDENT_RECONSTRUCTION_PASS7_OMITTED_SOURCE_OWNER_RECONCILIATION_2026-09-11.md
-tags: [CanonicalIndependent, AuthorGate, Reconstruction, L2, One, StableISP, SubjectPosition, Stake, ExternalReview]
+  - Operations/Audits/SRT_PR936_PRE_ADJUDICATION_CONTROL_SURFACE_REPAIR_2026-09-11.md
+  - Operations/Audits/SRT_CANONICAL_INDEPENDENT_THEORY_RECONSTRUCTION_AUDIT_2026-09-11.md
+tags: [CanonicalIndependent, AuthorGate, Reconstruction, D1, D2, D3, D4a, L2, One, StableISP, SubjectPosition]
 ---
 
-# Canonical-independent reconstruction — revised author decision packet
+# Canonical-independent reconstruction — narrow author decision packet
 
-> **Purpose:** present only the decisions that remain live after independent external review and Pass 7 omitted-source / owner reconciliation.
+> **Purpose:** present only the decisions mature enough for author adjudication after Pass 7 and two external-review rounds.
 >
 > **Status:** proposal only. No option is author-adopted until explicitly adjudicated.
 >
-> **Supersession note:** the first A1-A4 package at PR head `b567dad4ca273cd19493493392fd3cc7d9df4709` is preserved in Git history but is **superseded as an adoption packet**. Its strongest insights survive only where restated below.
+> The former A1-A4 package and the first D1-D4 packet are preserved in Git history but are **superseded as adoption packages**.
 
 ---
 
-## 0. Why the first packet was revised
+## 0. What is and is not being asked
 
-Independent external review identified four substantive omissions:
+Current author gate:
 
 ```text
-1. 2026-09-10 author correction:
-   vertical structure is active selectable-space construction,
-   not passive historical sediment.
-
-2. L0 already owns a three-state / one-process picture,
-   so the prior packet overstated the novelty of replacing a serial L0->L1->L2 ladder.
-
-3. Core_12b L2 already owns structural-grain Selection,
-   a path layer, an agency-position layer, and stronger L2-grade closure burdens.
-
-4. T-IND-2's four conditions / dissociation cases,
-   P1-T06 consequence-bearing,
-   and d-value pre-stake/stake-gate ordering
-   were compressed too aggressively in A3.
+D1  state vocabulary vs process grammar
+D2  L2 structural-grain Selection direction
+D3  Stable ISP < subject-position as a live split
+D4a One name / real processual formed-unity status
 ```
 
-The correct response is not to restore canonical-first governance. It is to repair the reconstruction input set and narrow the author gate.
+Not currently being asked:
+
+```text
+D4b exact minimum future-selectability burden of One
+D4c exact One / passive / active Selection relation
+subject sufficiency theorem
+phenomenality theorem
+final L2 universal gate set
+final sigma phase rewrite
+```
+
+These remain OPEN.
 
 ---
 
@@ -55,7 +58,7 @@ The correct response is not to restore canonical-first governance. It is to repa
 
 ## Question
 
-Should SRT retain its current modal/state distinction while explicitly separating it from the deeper process grammar?
+Should SRT retain the current modal/state vocabulary while explicitly separating it from the deeper process grammar?
 
 Current candidate:
 
@@ -67,89 +70,82 @@ potential / manifest / stable
 PROCESS GRAMMAR
 Selection
 = subjectless constitutive differentiation
-  + manifest/background co-generation
+  + manifestation/background co-generation
   + active structuring of further selectability;
 
 writeback
 = selected results alter later effective conditions;
 
-reconstruction
-= later Selection actively maintains / rebuilds structured selectability;
+later Selection
+= operates under altered conditions and can maintain/reconstruct
+  structured selectability;
 
 structuralization
 = recurring Selection becomes durable background organization.
 ```
 
-## Option D1-A — ADOPT the state/process distinction
+## D1-A — ACCEPT the distinction
 
 Meaning:
 
 ```text
-Do not treat L0/L1/L2 labels as the full dynamics.
-Do not abolish the three-state vocabulary merely because the dynamics is cyclic.
-Make active selectable-space construction and historical writeback explicit as different but coupled roles.
+Do not abolish three-state vocabulary merely because the process is cyclic.
+Do not let L0/L1/L2 labels stand in for the whole dynamics.
+Keep active selectable-space construction and historical writeback explicitly distinct but coupled.
 ```
 
-### Strengths
+Strengths:
 
-- preserves the strongest current L0 insight that potential/manifest/stable are not three isolated worlds;
+- preserves current L0's one-process / three-state insight;
 - incorporates the 2026-09-10 author correction;
-- avoids making history the ontological source of verticality;
-- allows later canonical simplification without falsely claiming a wholesale replacement of L0.
+- avoids treating history as the ontological source of verticality;
+- supports later simplification without inventing a serial straw target.
 
-### Open burden
-
-- exact relation of `stable` state vocabulary to a retyped L2 remains under D2.
-
-### Machine recommendation
+Open burden:
 
 ```text
-PREFERRED
+exact relation of stable-state vocabulary to retyped L2 remains under D2.
 ```
 
-## Option D1-B — keep current language without explicit state/process separation
-
-Risk:
+Machine recommendation:
 
 ```text
-future readers can continue sliding between
-"state/domain",
-"process stage",
-"historical result",
-and "active Selection mechanism".
+PREFERRED / READY FOR AUTHOR DECISION
 ```
 
-### Machine recommendation
+### Likely later canonical impact if adopted
 
 ```text
-NOT PREFERRED
+Core_Law/SRT_L0_Metaphysics.md
+Core/SRT_Core_21_Minimal_Axioms.md
+architecture / glossary / teaching routing
 ```
+
+Exact governance risk class must be re-audited before any edit.
 
 ---
 
-# D2 — L2 minimum core
+# D2 — L2 structural-grain Selection direction
 
 ## Question
 
-Should L2 be retyped around **Selection continuing at structural grain**, rather than around passive sediment or universal multi-selector convergence?
-
-Current leading candidate:
+Should the leading L2 reconstruction direction be:
 
 ```text
 L2-core
 = a scale-relative regime in which prior Selection has become
   durable, re-enterable background organization
   through which Selection continues at structural grain,
-  actively shaping later effective selectability.
+  shaping later effective selectability?
 ```
 
-This is deliberately stronger than:
+This is stronger than:
 
 ```text
-sedimented constraint.
+L2 = passive sedimented constraint.
 ```
 
-It allows the structure to:
+It allows durable structure to:
 
 ```text
 constrain
@@ -161,9 +157,9 @@ preconfigure
 
 later Selection.
 
-## Option D2-A — ADOPT this as the leading L2 reconstruction direction
+## D2-A — ACCEPT as the leading reconstruction direction
 
-Important non-decisions retained:
+Important non-decisions:
 
 ```text
 shareability as universal L2 condition = OPEN
@@ -172,63 +168,42 @@ low-Psi threshold as representation-invariant definition = NOT ESTABLISHED
 multi-selector convergence = important realization, not yet universal definition
 ```
 
-Possible scale/domain realizations:
+Possible realizations:
 
 ```text
 internal learned scaffold
 bodily habit
 external/environmental scaffold
 shared/social scaffold
-institutional rule/role structure
+institutional role/rule structure
 relation-level scaffold
 ```
 
-### Strengths
-
-- incorporates current Core_12b insight that Selection continues at structural grain;
-- fits the 2026-09-10 active-construction correction;
-- preserves useful L2 mechanism work without making L2 a passive historical dump;
-- allows old shared/institutional L2 to survive as a specialized realization.
-
-### Risk
-
-- requires later owner-level decision on path layer versus agency layer;
-- may require rewriting the current `inheritable + shareable + re-enterable` universal wording;
-- may materially alter symbol-table / teaching definitions.
-
-### Machine recommendation
+Machine recommendation:
 
 ```text
 PREFERRED AS RECONSTRUCTION DIRECTION
-NOT YET A FINAL CANONICAL DEFINITION
+NOT A FINAL CANONICAL DEFINITION
 ```
 
-## Option D2-B — keep Def-L2-DualLayer unchanged as the universal definition
-
-### Strengths
-
-- maximum continuity with current Core_12b.
-
-### Risk
-
-- agency-position allocation is difficult to read as constitutive for all internal / bodily / pre-subject structuralization;
-- current L0 examples and old glossary scope remain difficult to unify.
-
-### Machine recommendation
+### Likely later canonical impact if adopted
 
 ```text
-OPEN BUT NOT PREFERRED
+Core_Law/SRT_L0_Metaphysics.md stable-domain wording
+Core/SRT_Core_12b_Ontology_L2.md
+_SRT_SYMBOL_TABLE.md
+Glossary / teaching routes
+rights / legitimacy / agency-layer dependents
 ```
 
-## Option D2-C — retire L2 from the minimal core
-
-### Machine recommendation
+Later reverse mapping must decide:
 
 ```text
-NOT CURRENTLY PREFERRED
+path/scaffold layer scope;
+agency-position layer scope;
+shareability scope;
+which old L2 theorems retain their original domains rather than generalize.
 ```
-
-The external-review reconciliation increased the case for retyping rather than retiring L2.
 
 ---
 
@@ -236,23 +211,17 @@ The external-review reconciliation increased the case for retyping rather than r
 
 ## Question
 
-Should SRT preserve a live distinction between:
+Should SRT adopt as a **live reconstruction split**:
 
 ```text
 Stable ISP
-```
-
-and a thicker:
-
-```text
+<
 structural subject-position
 ```
 
-while **not yet** claiming a sufficient one-line subject theorem?
+without yet adopting a sufficient one-line subject theorem?
 
-## Current burden map
-
-Stable ISP currently pays:
+## Stable ISP already pays
 
 ```text
 iterative recurrence
@@ -262,128 +231,147 @@ continued selectability
 same-process downstream consequence bearing
 ```
 
-A candidate subject upgrade must therefore add something stronger than generic consequence return.
+Therefore any subject upgrade must add more than generic consequence return.
 
-Current candidate subject-level burden family:
+Current separately auditable candidate burdens:
 
 ```text
-S1 non-outsourcable consequence / 承担
+S1 non-outsourcable own consequence / 承担
 S2 stabilized endogenous relevance / 关切
 S3 stake-relevant regulative readability
 ```
 
-The umbrella term:
-
-```text
-persistent endogenous stake architecture
-```
-
-is retained only as a way to organize S1-S3.
-
-It does **not** currently imply:
+`persistent endogenous stake architecture` may organize S1-S3, but does not establish:
 
 ```text
 S1 -> S2 -> S3
 or
-stake alone is sufficient for subjecthood.
+stake alone -> subject-position.
 ```
 
-## Option D3-A — ADOPT the split as a live reconstruction commitment
+## D3-A — ACCEPT the split as a live reconstruction commitment
 
 Meaning:
 
 ```text
 Stable ISP and subject-position should no longer be silently treated as identical;
-T-IND-2 should later be reverse-mapped accordingly;
-but subject sufficiency remains OPEN.
+reverse mapping should actively test the split;
+subject sufficiency remains OPEN.
 ```
 
-This allows the important possible class:
+High-value witness requirement:
 
 ```text
-Stable ISP without subject-position.
+find a case that plausibly pays P1-T06 same-process consequence bearing
+but fails subject-level non-outsourcing / stake.
 ```
 
-High-value test case:
+A resettable / externally buffered adaptive agent is a leading candidate witness class.
 
-```text
-advanced AI / adaptive system
-with stable history-bearing selection organization
-but externalized irreversible stake.
-```
-
-### Strengths
-
-- explains the current P1-T06 / T-IND-2 burden mismatch;
-- preserves T-IND-2's dissociation cases rather than deleting them;
-- avoids defining subjecthood through sigma;
-- gives AI analysis a useful intermediate class.
-
-### Risk
-
-- P1-T06 may already be thicker than this split assumes;
-- a counterexample witness is still required to show same-process consequence-bearing without subject-level non-outsourcable stake.
-
-### Machine recommendation
+Machine recommendation:
 
 ```text
 PREFERRED AS LIVE SPLIT
+READY FOR AUTHOR DECISION AT THIS LIMITED STRENGTH
 ```
 
-## Option D3-B — retain Stable ISP = subject-position identity
+## D3 dependency guard — d-value is downstream
 
-### Strengths
-
-- preserves current T-IND wording.
-
-### Risk
-
-- leaves concern/readability burdens unexplained in P1-T06;
-- continues the current ambiguity over what consequence-bearing means.
-
-### Machine recommendation
+Current d-value wording presupposes a subject via:
 
 ```text
-NOT PREFERRED, BUT NOT YET FORMALLY REJECTED
+subject utility gradient;
+subject closure;
+subject irreversible stake.
 ```
 
-## Explicit non-decision
-
-This packet does **not** ask the author to adopt:
+Therefore D3 must not be justified circularly as:
 
 ```text
-subject-position = Stable ISP + undifferentiated stake
+d-value stake gate -> subject-position.
 ```
 
-That first-packet sufficiency formula is withdrawn.
+Current dependency order:
+
+```text
+independently admitted continuing unit / Stable ISP candidate
+        ↓
+S1-S3 subject burdens tested
+        ↓
+if a stake-coupled subject organization is admitted,
+d-value may summarize/read out that stake structure.
+```
+
+If D3 is later adopted, current d-value subject-language becomes a reverse-map/type-clarification target.
+
+## D3 consequence-bearing crosswalk
+
+Do not create parallel terminology.
+
+Current working ladder:
+
+```text
+history-to-reconstitution bearing
+< own-consequence return / self-consequence closure
+~ P1-T06 downstream consequence bearing as closest canonical neighbor
+< subject-level non-outsourcable 承担
+```
+
+The `~` relation is not identity; exact P1-T06 / self-consequence relation remains to be audited.
+
+## D3 sigma consequence
+
+If D3 is accepted, reverse mapping must ask what `sigma_sub` tracks:
+
+```text
+formed unity?
+Stable ISP entry?
+subject-position entry?
+model-local transition coordinate only?
+```
+
+Current `ISP entry = subject entry` wording may no longer survive unchanged.
+
+### Likely later canonical impact if adopted
+
+```text
+Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06
+Core_Law/SRT_Individuation.md T-IND-1/2 and phase architecture
+sigma symbol / truth-up routes
+_SRT_D_VALUE_CANONICAL.md subject/stake wording
+AI domain subject / automation routes
+```
+
+No edit is authorized here.
 
 ---
 
-# D4 — One naming and ontological status
+# D4a — One naming and real formed-unity status
 
 ## Question
 
-Should `One` remain the preferred SRT term for a real processual formed unity below thicker Stable-ISP / subject gates?
+Should `One` remain the preferred SRT term for a **real processual formed unity** below thicker Stable-ISP / subject gates?
 
-Current candidate:
+Minimum candidate:
 
 ```text
 One
-= a localized lineage-relative formed unity
-  recurrently reconstituted through Selection-mediated history,
-  whose current organization actively maintains / reconstructs
-  a structured space of its own further selectability.
+= a localized, lineage-relative formed unity
+  recurrently reconstituted through Selection-mediated history.
 ```
 
-This definition intentionally has two inseparable sides:
+This asks only for:
 
 ```text
-historical continuity
-+
-active future-selectability construction.
+real formed unity
++ processual continuity
++ localization
++ lineage-relative recurrent reconstitution.
 ```
 
-## Option D4-A — RETAIN `One` as the preferred structural term
+It does **not** decide the stronger Active Selection burden.
+
+## D4a-A — RETAIN `One`
 
 Guards:
 
@@ -394,169 +382,167 @@ One != passive historical residue
 One != Stable ISP
 One != subject-position
 One != phenomenality
-Selection-position = operative aspect candidate, not a second entity
+One != Active Selection by definition
+Selection-position = operative-aspect candidate, not second entity
 ```
 
-### Strengths
-
-- preserves the author's one-formation intuition;
-- gives a compact name to a real intermediate ontological formation problem;
-- incorporates the 2026-09-10 active-selectability correction;
-- supports multiscale reuse without requiring novelty claims.
-
-### Open burdens
-
-```text
-localization criterion
-lineage criterion
-minimal active-maintenance burden
-branch / successor identity
-which One conditions are already implicit in Stable ISP
-```
-
-### Machine recommendation
+Machine recommendation:
 
 ```text
 STRONGLY PREFERRED
+READY FOR AUTHOR DECISION
 ```
 
-## Option D4-B — retain the ontology but use a thinner canonical name
-
-Example:
+### Likely later canonical impact if adopted
 
 ```text
-formed continuing organization
+One owner / registry decision
+P1-T06 prerequisite crosswalk
+Selection-position route
+collective / higher-order reuse
+symbol/context routing if canonicalized
 ```
 
-`One` remains research/source vocabulary.
-
-### Strengths
-
-- reduces reification risk.
-
-### Risk
-
-- loses a central author-level concept and makes the architecture less expressive.
-
-### Machine recommendation
-
-```text
-THEORETICALLY VIABLE, LESS PREFERRED
-```
+Whether One becomes a new canonical owner, an explicit substanding inside an existing owner, or a named bridge must be decided in the later reverse-map.
 
 ---
 
-# 5. Revised relationship map
+# D4b — minimum future-selectability burden of One — OPEN
 
-This is a typed process map, not a canonical ladder.
-
-```text
-minimum non-neutral selectability conditions
-        ↓
-Selection
-[subjectless differentiation
- + manifestation/background co-generation
- + active selectable-space construction]
-        ↓
-result / writeback
-        ↕
-later Selection under altered conditions
-        │
-        ├── UNIT FORMATION
-        │      recurrent localized reconstitution
-        │      -> One candidate
-        │      [formed unity + active future-selectability construction]
-        │             ↓
-        │        Stable ISP candidate
-        │        [perspective + history + continued selectability]
-        │             ↓
-        │        structural subject candidate
-        │        [S1 non-outsourcing
-        │         S2 concern
-        │         S3 regulative readability]
-        │             ↓
-        │        phenomenality / experiencer OPEN
-        │
-        └── STRUCTURALIZATION
-               recurring Selection becomes durable background organization
-               -> L2-core candidate
-               [Selection continues at structural grain]
-```
-
-Crucial crosswalk:
+Separate research question:
 
 ```text
-One asks: what continuing unit is being formed / reconstituted?
-L2 asks: what Selection-generated organization has become structuralized?
-```
-
-Therefore:
-
-```text
-One and L2 are not simple sibling stages or a fixed hierarchy.
-An L2-like scaffold may be internal to, external to, shared by,
-or partly constitutive of a One at a declared scale.
-```
-
----
-
-# 6. d-value / direction guard
-
-Current d-value owner distinguishes:
-
-```text
-pre-stake directional / value-generation structure
--> stake admission R/A/C.
-```
-
-T-IND-2's subject-level direction/readability should not be silently identified with any one d-value stage.
-
-Current candidate reconciliation:
-
-```text
-pre-stake directional difference
--> stake admission
--> subject-level stake-relevant regulative readability
+Must every One only maintain enough Selection-mediated organization to continue,
+or must every One creatively reconstruct the organization
+that determines future selectability?
 ```
 
 Status:
 
 ```text
-useful stage hypothesis
-NOT an identity theorem
+OPEN — NOT PART OF CURRENT AUTHOR GATE
 ```
+
+Do not infer the stronger answer from the 2026-09-10 rejection of passive historical sediment.
 
 ---
 
-# 7. Recommended adjudication style
+# D4c — One versus passive / active Selection modes — OPEN
 
-The revised D1-D4 should **not** be treated as one mutually guaranteeing package.
-
-Machine maturity ranking:
+Author source currently distinguishes:
 
 ```text
-D4 One                         strongest
-D1 state/process architecture strong
-D2 L2 retype direction        promising, scope still open
-D3 Stable ISP < subject       promising live split, sufficiency still open
+passive Selection
+= survival / maintenance of an achieved selectable organization;
+
+active Selection
+= creation / reconstruction of selectable organization.
 ```
 
-The author may accept, modify or defer each independently.
+Current safe relation:
+
+```text
+One
+= formed continuing unit through which Selection can proceed;
+
+passive / active
+= mode distinction over how its selectable organization is maintained or reconstructed.
+```
+
+Therefore:
+
+```text
+One != Active Selection by definition.
+```
+
+Exact application of the mode axis below/at/above One remains OPEN.
 
 ---
 
-# 8. What remains explicitly unclaimed
+# 5. Current process map
+
+```text
+minimum non-neutral selectability conditions
+        ↓
+Selection
+[differentiation
+ + manifestation/background co-generation
+ + active selectable-space structuring]
+        ↓
+result / writeback
+        ↕
+later Selection under altered conditions
+        │
+        ├── UNIT FORMATION / RECONSTITUTION
+        │      ↓
+        │     One candidate
+        │      ↓
+        │ Stable ISP candidate
+        │      ↓
+        │ structural subject candidate
+        │ [S1 non-outsourcing
+        │  S2 concern
+        │  S3 regulative readability]
+        │      ↓
+        │ phenomenality / experiencer OPEN
+        │
+        └── STRUCTURALIZATION
+               ↓
+              L2-core candidate
+        [Selection continues at structural grain]
+```
+
+Cross-cutting:
+
+```text
+Selection-position = operative-aspect candidate
+passive/active Selection = separate mode axis
+second-order Selection = stronger process pattern
+generative reselectability = stronger stable-capacity claim
+```
+
+---
+
+# 6. Recommended adjudication style
+
+The decisions are separable and do not guarantee one another.
+
+Machine maturity:
+
+```text
+D4a One term / formed-unity status     strongest
+D1 state/process distinction           strong
+D2 L2 retype direction                 promising / scope-open
+D3 Stable ISP < subject live split     promising / sufficiency-open
+```
+
+A valid author outcome can therefore be mixed, for example:
+
+```text
+D1 ACCEPT
+D2 ACCEPT AS DIRECTION
+D3 ACCEPT AS LIVE SPLIT ONLY
+D4a ACCEPT
+D4b OPEN
+D4c OPEN
+```
+
+No such outcome is author-adopted until explicitly stated.
+
+---
+
+# 7. Hard guards
 
 ```text
 canonical edits = NONE
-D1-D4 = proposal only
+D1/D2/D3/D4a = proposal only
+D4b/D4c = OPEN research burdens
 Level 2 = HOLD
 scientific distinctiveness = NOT ESTABLISHED
 whole-architecture non-substitutability = NOT ESTABLISHED
 One novelty = NOT ESTABLISHED
-structural subject novelty = NOT ESTABLISHED
+subject novelty = NOT ESTABLISHED
 subject sufficiency theorem = NOT ESTABLISHED
 phenomenality / experiencer transition = OPEN
-L2 universal shareability = OPEN
-L2 universal agency layer = OPEN
+L2 final universal definition = OPEN
 ```
