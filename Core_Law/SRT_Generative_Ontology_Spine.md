@@ -19,276 +19,170 @@ dependency:
 # SRT Generative Ontology Spine
 ## Selection → Manifestation / Backgrounding → Vertical Formation → One / Selection-position → Bearer
 
-> **Role**: the canonical **cross-owner generative routing spine** for the current SRT ontology reconstruction. It fixes the order, layer boundaries, non-identities and OPEN gates that must be preserved when older canonical and canonical-seeming files are interpreted or revised.
+> **Role**: canonical **cross-owner routing spine** for the current SRT ontology reconstruction. It fixes generative order, layer boundaries, non-identities and OPEN gates.
 >
-> **Not a monolithic definition owner**: local objects remain defined by their proper owners where compatible — L0 by `SRT_L0_Metaphysics`, One / Selection-position by `SRT_One_Formation`, Stable-ISP standing by P1-T06, and domain/model quantities by their own files. This spine owns the **cross-layer order and inference permissions between them**.
+> **Not a monolithic definition owner**: local definitions remain with their proper owners where compatible. This file owns the **cross-layer order and inference permissions** between them.
 >
-> **Author authorization**: the author explicitly selected “new spine first, then old-canonical cleanup” on 2026-09-11. Provenance: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md`.
+> **Author authorization**: 2026-09-11, “new spine first, then old-canonical cleanup.” Provenance: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md`.
 
 ---
 
-## Quick Reference
+## 0. Canonical authority rule
 
-### Canonical formation trunk
-
-```text
-minimum non-neutrality / pre-object difference
--> subjectless Selection
--> manifestation + relative backgrounding
--> active verticalization / non-flat selectable-space construction
--> recurrent / re-entering localized vertical organization
--> One / Selection-position
-```
-
-### Canonical thickening route toward Bearer
+When older canonical or canonical-seeming material conflicts with this file at the **cross-layer inference** level:
 
 ```text
-formed One / Selection-position
-+
-prospective self-indexing P
-+
-same-One prospective exposure E
--> Bearer
+this spine controls current routing;
+compatible local definitions remain valid;
+conflicting older inference becomes cleanup / retyping debt;
+OPEN remains OPEN rather than being filled by an older theorem automatically.
 ```
 
-where:
-
-```text
-P = future branches are differentiated by what this continuing One itself
-    may undergo / preserve / lose / enable / become unable to continue;
-
-E = at least some such potential consequences genuinely expose that same One
-    and cannot be completely reassigned to another unit while claiming the
-    same Bearer relation.
-```
-
-### Typed but not universally mandatory layers
-
-```text
-One-level endogenous perspective
-= the formed One's lineage-conditioned organization itself becomes load-bearing
-  in later manifestation / backgrounding / selectable-space construction.
-
-A1 = Selection / verticality structurally prepares later selectability.
-A2 = a formed position may endogenously prepare / differentiate continuations.
-A3 = future branches become self-indexed for the continuing position -> P.
-```
-
-### Downstream OPEN zone
-
-```text
-Bearer
--> actual 承担 ?
--> concern / 关切 ?
--> agency ?
--> subject-position ?
--> cognition ?
--> phenomenality / experiencer ?
-```
-
-These are **not one automatic ladder**. Each implication remains separately payable unless another canonical owner explicitly closes it.
-
----
-
-## §0. Authority rule — spine before legacy cross-layer inference
-
-This file is canonical at the level of **cross-owner ontology routing**.
-
-Use the following priority rule:
-
-```text
-local owner definition
-+ this spine's cross-layer ordering / non-identity rules
-= valid current reading.
-```
-
-If an older canonical or canonical-seeming surface conflicts with the cross-layer ordering here, then:
-
-```text
-older local wording
--> becomes a cleanup / retyping target;
-
-older theorem name / status / claim_mode
--> does not override this spine merely by being older;
-
-non-conflicting local mathematical / semantic content
--> may remain valid within its proper scope.
-```
-
-This is a **bounded supersession rule**, not permission to ignore all old canonical content.
-
-In particular, the following older inference shapes are not licensed by current routing unless separately re-established:
+The following inference shapes are not licensed unless separately re-established:
 
 ```text
 history / writeback -> source of verticality;
 formed process -> Stable ISP -> subject as a generation law;
 One -> Stable ISP automatically;
 One -> Bearer automatically;
-Stable ISP -> Bearer automatically;
+Stable ISP -> Bearer / subject automatically;
 sigma threshold -> subject ontology;
-d > 0 -> Bearer or subject proof;
-T_dir -> Bearer or subject proof;
-Bearer = 承担 by definition;
-Bearer = concern by definition;
-Bearer = subject / experiencer by definition.
+d > 0 -> Bearer / subject proof;
+T_dir -> Bearer / subject proof;
+Bearer = 承担 / concern / subject / experiencer by definition.
 ```
 
 ---
 
-## §1. Spine architecture — trunk plus typed thickening
+## 1. Current generative architecture
 
-The current ontology should not be represented as one undifferentiated ladder.
-
-It has at least three distinct structures:
+### 1.1 Formation trunk
 
 ```text
-A. formation trunk
-B. endogenous / anticipatory thickening
-C. cross-cutting standing / model surfaces
+G0 minimum non-neutrality / pre-object difference
+-> G1 subjectless Selection
+-> G2 manifestation + relative backgrounding
+-> G3 active verticalization / non-flat selectable-space construction
+-> G4 recurrent / re-entering localized vertical organization
+-> G5 One / Selection-position
 ```
 
-### A. Formation trunk
+### 1.2 Endogenous / anticipatory thickening
 
 ```text
-minimum non-neutrality / pre-object difference
--> subjectless Selection
--> manifestation + relative backgrounding
--> active vertical organization
--> recurrent localized vertical organization
--> One / Selection-position.
+A1 Selection / verticality forward structuring
+   = later selectability is prepared / suppressed / reopened / re-entered.
+
+After G5:
+One-level endogenous perspective
+   = the formed One's own lineage-conditioned organization becomes load-bearing
+     in later manifestation / backgrounding / selectable-space construction.
+
+A2 formed-position internal anticipation
+   = the formed position participates from within its own organization
+     in preparing / differentiating possible continuations.
+
+P prospective self-indexing
+   = future branches differ by what this continuing One itself may
+     undergo / preserve / lose / enable / become unable to continue.
+
+E same-One prospective exposure
+   = at least some such potential consequences genuinely expose the same One
+     and cannot be completely reassigned while claiming the same Bearer relation.
+
+P + E -> Bearer.
 ```
 
-### B. Endogenous / anticipatory thickening
+### 1.3 Downstream OPEN zone
 
 ```text
-Selection / verticality
--> A1 structural forward selectability
-
-formed One / Selection-position
--> possible One-level endogenous perspective
--> possible A2 formed-position internal anticipation
--> P prospective self-indexing
-+ E same-One prospective exposure
--> Bearer.
+Bearer <-> actual 承担 = OPEN
+Bearer -> concern / 关切 = OPEN
+Bearer -> d-positive concern structure = OPEN
+Bearer -> agency = OPEN
+Bearer -> subject-position = OPEN
+Bearer -> cognition = OPEN
+Bearer -> phenomenality / experiencer = OPEN
 ```
 
-The words `possible` above are load-bearing: current SRT does **not** claim every admitted One automatically satisfies the stronger perspective / anticipation standings.
-
-### C. Cross-cutting surfaces
-
-```text
-Stable ISP = stronger recurrent standing test, not formation source;
-history/writeback = condition / result side, not verticality source;
-sigma_sr = downstream model coordinate, not ontology generator;
-d = concern/stake owner, not Bearer/subject generator;
-T_dir = direction-readability owner, not Bearer/subject generator.
-```
+These are not one automatic ladder.
 
 ---
 
-## §2. G0 — minimum non-neutrality / pre-object difference
+## 2. G0 — minimum non-neutrality / pre-object difference
 
-The spine begins from a **minimum non-neutrality / pre-object difference** rather than from a completed object, chooser, subject, agent, observer or semantic goal.
+SRT does not begin from a completed object, chooser, subject, agent or semantic goal.
 
 Minimum commitment:
 
 ```text
-purely featureless neutrality is insufficient as the current SRT starting picture;
-some difference / non-neutrality is available for determination;
-no completed One is presupposed at this point.
+pure featureless neutrality is insufficient as the starting picture;
+some pre-object difference / non-neutrality is available for determination;
+no completed One is presupposed.
 ```
 
-### G0 scope guard
+This spine does **not** re-ratify every historical L0 elaboration merely because it currently sits in the L0 file.
 
-This spine **does not re-ratify every historical L0 elaboration merely because it currently lives in the L0 file**.
-
-In particular, the exact decomposition, independence or necessity of current L0 items such as:
+The exact decomposition, independence or necessity of current items such as:
 
 ```text
 kappa_0;
 epsilon;
 irreversibility;
-legacy concern / embodiment / bearing language;
+legacy 承担 / 关切 / embodiment language;
 legacy subject-selection language
 ```
 
 remains separately auditable.
 
-The spine fixes the generative floor and ordering; it does not grant immunity to older primitive decompositions or downstream terminology that may have been placed too early.
-
 ---
 
-## §3. G1 — subjectless Selection and co-generation of manifestation / backgrounding
+## 3. G1–G3 — subjectless Selection, manifestation/backgrounding, verticality
 
-Selection is upstream of a completed selector.
+Selection is upstream of a completed selector:
 
 ```text
-Selection
-!= an already formed subject choosing from a completed menu.
+Selection != a pre-existing subject choosing from a completed menu.
 ```
 
-At the generative level, Selection is typed as a determination process in which:
+At the generative level, Selection differentiates actuality:
 
 ```text
 some possibility becomes manifest / operative
-while alternatives are relatively backgrounded / suppressed / left non-manifest.
+while alternatives are relatively backgrounded / left non-manifest.
 ```
 
-Therefore manifestation and relative backgrounding are not two independent later events added to an already completed object field. They are two sides of selective differentiation.
+Thus manifestation and relative backgrounding are two sides of selective differentiation, not independent events added later.
 
-### G1 guard
+Selection also generates / regenerates a non-flat relation for later selectability:
+
+```text
+Selection
+-> differentiated manifestation / backgrounding
+-> changed later selectable space.
+```
+
+This is **active verticalization**.
+
+Guards:
 
 ```text
 manifestation != permanent existence;
 backgrounding != annihilation;
 Selection != conscious choice;
-Selection != decision by a pre-existing Bearer;
-Selection != mere observer classification.
+verticality != passive historical sediment;
+path dependence != verticality by definition.
 ```
 
-Domain mechanisms such as competition, inhibition, attractor selection, predictive filtering or symmetry breaking may realize aspects of this organization. No one domain mechanism defines Selection universally.
+Domain mechanisms may realize parts of this structure; no single mechanism is the universal definition.
 
 ---
 
-## §4. G2 — active verticalization / non-flat selectable-space construction
+## 4. G4–G5 — recurrent vertical organization, One, Selection-position
 
-Selection generates / regenerates a **non-flat relation** in which possibilities do not remain equivalent for later manifestation and continuation.
+One-shot verticalization is insufficient for One.
 
-This is the current meaning of active verticalization:
-
-```text
-Selection
--> differentiated manifestation / backgrounding
--> altered later selectable space.
-```
-
-Verticality is therefore an **ongoing source-side organization**, not merely the passive accumulation of earlier traces.
-
-### G2 source / condition distinction
-
-```text
-active vertical generation
-= source / ongoing process side;
-
-history / writeback
-= retained result / condition side.
-```
-
-History can condition later vertical re-generation, but:
-
-```text
-history != ontological source of verticality;
-historical persistence != vertical generation by itself;
-path dependence != One formation by itself.
-```
-
----
-
-## §5. G3 — recurrent localized vertical organization -> One / Selection-position
-
-A one-shot verticalization is not yet a continuing One.
-
-For One formation, the current canonical formation owner requires recurrent lineage-relative reconstitution:
+Current formation sequence:
 
 ```text
 local vertical organization at t
@@ -298,62 +192,69 @@ local vertical organization at t
 -> it can again participate in later Selection.
 ```
 
-Thus:
+Therefore:
 
 ```text
 One
 = localized, lineage-relative, processual formed unity
   continuing through Selection-mediated recurrent reconstitution.
-```
 
-For a continuing One:
-
-```text
 Selection-position_t
-= the time-local operative from-where of that continuing organization.
+= the time-local operative from-where of that continuing One.
 ```
 
-### G3 guards
+Guards:
 
 ```text
 event verticalization != One automatically;
-One != static object token;
+One != static identity token;
 One != observer grouping;
-Selection-position != mere coordinate label;
+Selection-position != coordinate label only;
 One != Stable ISP;
 One != Bearer;
 One != subject-position.
 ```
 
-Local definition authority remains `Core_Law/SRT_One_Formation.md`.
+Detailed local owner: `Core_Law/SRT_One_Formation.md`.
 
 ---
 
-## §6. History is lineage-conditioning, not formation source
+## 5. History / writeback typing
 
-History has a real ontological role, but its role must be typed correctly.
-
-Canonical relation:
+History is real but must not be made the source of what it only conditions.
 
 ```text
 prior Selection
--> retained differences / writeback
+-> retained difference / writeback
 -> changed later conditions
--> changed later reconstitution possibilities.
+-> changed reconstitution possibilities.
 ```
 
-History can therefore become load-bearing for **which lineage continues and how it can be reconstituted**.
-
-But it does not follow that:
+Canonical distinction:
 
 ```text
-history creates Selection;
-history creates verticality by itself;
-history-bearing creates perspective automatically;
-history-to-reconstitution creates Bearer automatically.
+active vertical generation
+= source / ongoing-process side;
+
+history / writeback
+= retained result / condition side.
 ```
 
-The current direction is:
+Therefore:
+
+```text
+history may condition later vertical regeneration;
+history may be load-bearing for lineage continuation;
+
+but
+
+history != source of Selection;
+history != source of verticality by itself;
+history-bearing != perspective automatically;
+history-to-reconstitution != Bearer automatically.
+```
+
+Preferred direction:
 
 ```text
 Selection-generated vertical organization
@@ -361,23 +262,13 @@ Selection-generated vertical organization
 -> continuing One.
 ```
 
-not:
-
-```text
-history
--> verticality
--> One.
-```
-
 ---
 
-## §7. Perspective and anticipation — typed layers, not collapsed synonyms
+## 6. Position, perspective and anticipation
 
-### §7.1 L0 positionality
+### 6.1 L0 positionality
 
 Selection is finite-position-indexed.
-
-This is a necessary locality / index condition, but:
 
 ```text
 position alone
@@ -387,15 +278,15 @@ position alone
 != subjecthood.
 ```
 
-### §7.2 Formed Selection-position
+### 6.2 Formed Selection-position
 
 After One formation, `Selection-position_t` is the operative from-where of the continuing One.
 
-This is an ontological / structural position, not yet a proof of stronger first-person standing.
+It is structural / ontological, not yet a proof of first-person or subject standing.
 
-### §7.3 One-level endogenous perspective
+### 6.3 One-level endogenous perspective
 
-A stronger **One-level perspective** is present when the formed One's own lineage-conditioned organization is itself load-bearing in later:
+A stronger One-level perspective is present when the formed One's own lineage-conditioned organization is itself load-bearing in later:
 
 ```text
 manifestation;
@@ -403,271 +294,163 @@ relative backgrounding;
 selectable-space maintenance / construction.
 ```
 
-This is endogenous participation rather than an observer-assigned coordinate.
-
-Canonical status of this layer:
+Status:
 
 ```text
-One-level endogenous perspective as a distinct typed relation = ACCEPTED;
+this relation as a distinct layer = ACCEPTED;
 every One automatically has it = NOT ESTABLISHED;
-universal sufficiency criterion = OPEN.
+universal sufficiency = OPEN.
 ```
 
-### §7.4 A1 — structural forward selectability
-
-Anticipation is not wholly downstream of Bearer.
-
-At the Selection / verticality level:
+### 6.4 A1 / A2 / P
 
 ```text
-present organization can prepare / preserve / suppress / reopen
-possibilities for later Selection.
+A1 = Selection / verticality structurally prepares later selectability.
+A2 = a formed position may internally prepare / differentiate continuations.
+P  = future branches become differentiated by what this One itself may undergo.
 ```
 
-This is a structural forward burden. It does not require explicit prediction or cognition.
+None of A1 or A2 alone establishes Bearer.
 
-### §7.5 A2 — formed-position internal anticipation
-
-A formed One / Selection-position may participate from within its own organization in preparing or differentiating possible continuations.
-
-```text
-A2
-!= Bearer automatically;
-A2
-!= explicit self-model;
-A2
-!= consciousness.
-```
-
-### §7.6 A3 / P — prospective self-indexing
-
-The stronger self-indexed transition begins when future branches become differentiated in terms of what the continuing One itself may:
-
-```text
-undergo;
-preserve;
-lose;
-enable;
-become unable / able to continue.
-```
-
-This relation is `P — prospective self-indexing`.
-
-P alone is insufficient for Bearer.
+None requires explicit Bayesian prediction, verbal self-model, consciousness or human cognition.
 
 ---
 
-## §8. Bearer — P + E at current canonical semantic strength
+## 7. Bearer — P + E at current canonical semantic strength
 
-The current Bearer onset route is:
+Bearer onset in the current ontology route requires:
 
 ```text
 already admitted One / Selection-position
 +
-P — prospective self-indexing
+P prospective self-indexing
 +
-E — same-One prospective exposure
+E same-One prospective exposure
 -> Bearer.
 ```
 
-### §8.1 P — prospective self-indexing
+### P without E
 
-Future alternatives differ from within the One's own lineage-conditioned organization by what the continuing One itself may undergo / preserve / lose / enable.
-
-### §8.2 E — same-One prospective exposure
-
-At least some branch-dependent potential consequences must genuinely expose that same continuing One.
-
-Operational semantic test:
+Self-relevant prediction, regulation or viability sensitivity can occur while the actual burden is fully externalizable.
 
 ```text
-if the consequence burden can be completely reassigned to another unit
-while the claimed Bearer relation is said to remain unchanged,
-then E has not been established for the original One.
+P alone != Bearer.
 ```
 
-### §8.3 Why P and E are conjunctive
+### E without P
+
+A One can be causally exposed or retrospectively altered without prospectively differentiating branches by what it itself may undergo.
 
 ```text
-P without E
-= prospective self-relevance / regulation may exist without same-One exposure;
-!= Bearer.
-
-E without P
-= causal exposure / retrospective impact may exist without self-indexed
-  prospective differentiation;
-!= Bearer.
+E alone != Bearer.
 ```
 
-Therefore the current semantic gate is conjunctive:
+### E semantic test
 
-```text
-Bearer = formed One satisfying P + E at the current ontology-routing level.
-```
+If a consequence burden can be completely reassigned to another unit while the claimed Bearer relation is said to remain unchanged, E has not been established for the original One.
 
-### §8.4 Bearer strength guard
+### Strength guard
 
-This canonicalization fixes a **semantic / architectural gate**, not a universal empirical or formal necessary-and-sufficient theorem across every possible realization domain.
+This is a **canonical semantic / architectural gate**, not a universal empirically validated or formally proved N&S theorem across every realization domain.
 
 It does not establish:
 
 ```text
-unique numerical Bearer threshold;
-unique Bearer scale;
 agency;
 concern;
 subjecthood;
+cognition;
 consciousness;
 phenomenality;
+unique Bearer scale;
 scientific distinctiveness.
 ```
 
 ---
 
-## §9. Downstream relations remain decomposed
+## 8. Cross-cutting surfaces are not generation stages
 
-Bearer is a new standing, not the automatic collapse of all later SRT concepts.
+### 8.1 Stable ISP
 
-Keep the following relations separate:
-
-```text
-Bearer <-> actual 承担 = OPEN;
-Bearer -> concern / 关切 = OPEN;
-Bearer -> d-positive concern structure = OPEN;
-Bearer -> agency = OPEN;
-Bearer -> subject-position = OPEN;
-Bearer -> cognition = OPEN;
-Bearer -> phenomenality / experiencer = OPEN.
-```
-
-Likewise:
+P1-T06 remains a stronger standing / persistence criterion.
 
 ```text
-actual 承担 != concern automatically;
-concern != subjecthood automatically;
-subjecthood != phenomenality automatically;
-self-model != subjecthood automatically;
-self-model != consciousness automatically.
+Stable ISP != source of One formation;
+Stable ISP != Bearer automatically;
+Stable ISP != subjecthood automatically.
 ```
 
-Cleanup of older files must prefer these OPEN boundaries over preserving an old bundled threshold merely for completeness.
+### 8.2 `sigma_sr`
+
+`σ_sr` belongs to downstream self-reference / writeback modelling.
+
+```text
+model regime / threshold
+!= One / Bearer / subject / phenomenality transition automatically.
+```
+
+### 8.3 d-value
+
+`d` remains owned by `_SRT_D_VALUE_CANONICAL.md`.
+
+This spine does not redefine it, but forbids circular use:
+
+```text
+d > 0 != Bearer proof;
+d > 0 != subject proof;
+capacity proxy != concern proof.
+```
+
+The precise `Bearer -> concern -> d` relation remains OPEN.
+
+### 8.4 T_dir
+
+`T_dir` remains under its own owner.
+
+```text
+T_dir != Bearer proof;
+T_dir != subject proof;
+T_dir != phenomenality proof.
+```
+
+### 8.5 Psi_f / cost
+
+Cost and payability constrain continuation but do not by themselves determine which One is Bearer or which Bearer is subject / phenomenal.
 
 ---
 
-## §10. Cross-cutting surfaces — not stages in the formation chain
+## 9. Cleanup test for older canonical
 
-### §10.1 Stable ISP
+Audit any older canonical / canonical-seeming surface with these questions:
 
-P1-T06 remains a **stronger standing / persistence criterion**.
+1. **Source inversion** — is a downstream state made the source of upstream formation?
+2. **Layer collapse** — are position, perspective, Bearer, 承担, concern, subject or phenomenality identified without extra burden?
+3. **Model-to-ontology jump** — does a threshold / equation / proxy become an ontology gate merely because it is measurable or stable?
+4. **Standing-to-generation jump** — is Stable ISP or persistence used as a formation law?
+5. **History-to-source jump** — is writeback made the source of verticality or Bearer?
+6. **Authority duplication** — does a reader / bridge / FAQ / alignment / domain file redefine an object owned elsewhere?
+7. **Overclaim** — is a P2/P3/model/domain result promoted to universal ontology?
+8. **Redundancy** — can multiple surfaces collapse to one owner + thin crosswalks?
 
-It is not a formation stage that creates One, and it is not a subject-entry theorem.
-
-```text
-Stable ISP standing
-!= source of One formation;
-Stable ISP standing
-!= Bearer automatically;
-Stable ISP standing
-!= subjecthood automatically.
-```
-
-A given implementation may satisfy both One/Bearer relations and Stable-ISP standing, but the relations must be paid independently.
-
-### §10.2 `sigma_sr`
-
-`σ_sr` and its thresholds belong to downstream self-reference / writeback modelling.
-
-They may describe a model regime. They may not back-generate:
+Allowed cleanup outcomes:
 
 ```text
-One;
-Bearer;
-subject-position;
-phenomenality.
+KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN
 ```
 
-### §10.3 d-value
-
-`d` remains owned by its dedicated canonical file.
-
-This spine does not redefine `d`.
-
-But ontology routing forbids:
-
-```text
-d > 0 -> Bearer proof;
-d > 0 -> subject proof;
-capacity proxy -> concern proof;
-modelled concern -> first-person standing proof.
-```
-
-The precise Bearer -> concern -> d relationship remains open for later reconstruction.
-
-### §10.4 T_dir
-
-`T_dir` remains a direction-readability / reorientation object under its own owner.
-
-It is not:
-
-```text
-Bearer proof;
-subject proof;
-phenomenality proof.
-```
-
-### §10.5 Psi_f and cost
-
-`Psi_f` and cost/payability structures can constrain which continuations are possible and sustainable.
-
-They do not by themselves determine:
-
-```text
-which One exists;
-which One is Bearer;
-which Bearer is subject;
-which subject is phenomenal.
-```
+Retiring an old claim does not require inventing a replacement theorem.
 
 ---
 
-## §11. Canonical cleanup test derived from this spine
+## 10. Explicit OPEN register
 
-When reviewing any older canonical / canonical-seeming surface, ask in order:
-
-1. **Source error** — does the file make a downstream state the source of an upstream formation?
-2. **Layer collapse** — does it identify position, perspective, Bearer, 承担, concern, subject or phenomenality without paying the additional relation?
-3. **Model-to-ontology jump** — does a threshold / equation / proxy become an ontology gate merely because it is measurable or mathematically stable?
-4. **Standing-to-generation jump** — does a persistence / Stable-ISP criterion get read as a formation law?
-5. **History-to-source jump** — does retrospective writeback become the source of verticality or Bearer?
-6. **Authority duplication** — does a reader text, bridge, FAQ, alignment file or domain file redefine an object already owned elsewhere?
-7. **Overclaim** — does P2/P3/model/domain evidence get promoted to universal ontology?
-8. **Redundancy** — can several files collapse to one owner + thin crosswalks without losing unique work?
-
-Allowed outcomes:
-
-```text
-KEEP;
-RETYPE;
-DEMOTE;
-RETIRE;
-MERGE;
-SIMPLIFY;
-OPEN.
-```
-
-Cleanup must not invent a replacement theorem merely because an older theorem is retired.
-
----
-
-## §12. Explicit OPEN register
-
-This spine deliberately leaves open:
+This spine leaves open:
 
 ```text
 exact final primitive decomposition of minimum non-neutrality;
 formal N&S theorem for One;
 universal One-level perspective sufficiency;
-unique relation between A2 and One-level perspective;
+exact A2 <-> One-level perspective relation;
 formal cross-domain N&S theorem for P + E Bearer;
 Bearer <-> actual 承担;
 Bearer -> concern / d;
@@ -684,34 +467,26 @@ scientific distinctiveness;
 whole-architecture non-substitutability.
 ```
 
-These are not defects to be silently filled by older canonical material.
+These OPEN items must not be silently closed by older canonical material.
 
 ---
 
-## §13. Citation and research rule
+## 11. Citation rule
 
-Use this file first when the question concerns:
+Use this file first for:
 
-- the current SRT ontology generation order;
-- whether a local owner is being used too early or too strongly;
-- whether history, stability, a model threshold or a proxy is being mistaken for a formation source;
-- the layer relation among Selection-position, perspective, anticipation and Bearer;
-- the current P + E Bearer semantic gate;
-- whether an older canonical claim is compatible with current reconstruction.
+- current SRT ontology generation order;
+- cross-owner layer relations;
+- position / perspective / anticipation / Bearer distinctions;
+- P + E Bearer routing;
+- deciding whether an older canonical claim is overreaching or out of order.
 
-Then follow local owner backlinks for the detailed definition or formalism.
+Then follow the relevant local owner for detailed definitions or formalisms.
 
-For ongoing theory reconstruction:
+For ongoing reconstruction:
 
 ```text
-new generative spine
--> current research constraint;
-
-older conflicting canonical prose
--> audit target, not veto authority;
-
-OPEN gate
--> remains open until separately author-adjudicated and landed.
+new generative spine = current research constraint;
+older conflicting canonical prose = audit target, not veto authority;
+OPEN gate = open until separately author-adjudicated and landed.
 ```
-
-This spine does not by itself promote any domain result, comparative novelty claim, consciousness theory, moral-status claim or empirical hypothesis.
