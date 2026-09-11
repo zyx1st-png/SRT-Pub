@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 1767249c
-source_branch: ops/canonical-authority-truthup-batch-a-20260911
-source_dirty: true
-inputs_digest: 5bf89ee52a74cde5
+source_commit: a4366a1e
+source_branch: theory/generative-ontology-spine-canonical-20260911
+source_dirty: false
+inputs_digest: 6fc6a29cc261d35b
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,10 +27,10 @@ inputs_digest: 5bf89ee52a74cde5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `1767249c` |
-| 来源分支 | `ops/canonical-authority-truthup-batch-a-20260911` |
-| 生成时来源工作树有改动 | 是 |
-| 包含文件数 | 15 |
+| 来源 commit | `a4366a1e` |
+| 来源分支 | `theory/generative-ontology-spine-canonical-20260911` |
+| 生成时来源工作树有改动 | 否 |
+| 包含文件数 | 16 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
 > （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
@@ -45,19 +45,20 @@ inputs_digest: 5bf89ee52a74cde5
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-08 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-11 |
-| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
-| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
-| 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
-| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
-| 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
-| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
-| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
-| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
-| 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
-| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
-| 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
-| 14 | `Core/SRT_Core_22_Equations.md` | 2026-09-05 |
-| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-09-05 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-12 |
+| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
+| 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
+| 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
+| 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
+| 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
+| 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
+| 10 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
+| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
+| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
+| 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
+| 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
+| 15 | `Core/SRT_Core_22_Equations.md` | 2026-09-05 |
+| 16 | `_SRT_SYMBOL_TABLE.md` | 2026-09-05 |
 
 ## §0.2 状态护栏
 
@@ -298,7 +299,7 @@ For non-trivial SRT work:
 
 ### 已收录
 
-**定义源**（10 个）
+**定义源**（11 个）
 
 | 文件 | 分类依据 | registry 提及 | AI_START §2 |
 |---|---|:---:|:---:|
@@ -307,6 +308,7 @@ For non-trivial SRT work:
 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | registry §A.4 分层正文 P1 | ✓ | ✓ |
 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | registry §A.4 分层正文 P2/P3/P4 | ✓ | ✓ |
 | `Core/SRT_Core_22_Equations.md` | registry §A.4b 主锚点 | ✓ | ✓ |
+| `Core_Law/SRT_Generative_Ontology_Spine.md` | registry §A.0 跨 owner 生成主轴 | ✓ | — |
 | `Core_Law/SRT_L0_Metaphysics.md` | AI_START §2 First Sources 第 4 位 | ✓ | ✓ |
 | `_SRT_D_VALUE_CANONICAL.md` | registry §A.1 主锚点 | ✓ | ✓ |
 | `_SRT_PSI_F_CANONICAL.md` | registry §A.2 主锚点 | ✓ | ✓ |
@@ -958,7 +960,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CROSS-DOMAIN-MATRIX, SRT-CORE-22]
+**dependency**：[SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CROSS-DOMAIN-MATRIX, SRT-CORE-22]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -983,6 +985,19 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 本注册表中的大多数条目默认属于 **OS** 或 **Bridge**，用于收口词汇、语法与高阶接口；真正的硬赌点应优先沉淀到实验与假说文件，而不是混在 canonical 锚点里。
 
 ## A. 核心定义层（Definitions）
+
+### 0. Generative Ontology Spine — 跨 owner 生成主轴
+- 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
+- id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
+- layer：L0-L1 / epistemic：os / status：active / version：v0 / claim-mode：canonical
+- 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
+- 当前 trunk：`minimum non-neutrality / pre-object difference -> subjectless Selection -> manifestation + relative backgrounding -> active verticalization -> recurrent localized vertical organization -> One / Selection-position`。
+- 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
+- typed layering：One-level endogenous perspective、A1/A2/A3 anticipation 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。
+- supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
+- 硬边界：history/writeback 不作为 verticality 的本体来源；Stable ISP 不作为 One 的形成源；`sigma_sr` / d / T_dir / Psi_f 不得反向生成 One / Bearer / subject；Bearer 不按定义等同于承担 / concern / subject / experiencer。
+- OPEN：精确 L0 primitive decomposition、One-level perspective 普遍充分性、Bearer↔承担、Bearer→concern/d、agency、positive subject gate、cognition、phenomenality、collective subject sufficiency、new Level、Level 2 均未由本文件自动关闭。
+- 引用规则：涉及当前**生成顺序、跨 owner 层级关系、旧 canonical 是否越权**时先回链本文件；随后再进入 L0、One Formation、P1-T06、d / Psi_f / T_dir 等局部 owner。
 
 ### 1. d-value
 - 主锚点：`_SRT_D_VALUE_CANONICAL.md`
@@ -1232,18 +1247,20 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 当同一概念同时出现在多个文件时，默认优先级如下：
 
 1. `CANONICAL_REGISTRY.md`（找入口）
-2. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
-3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core_Law/SRT_One_Formation.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义、形成层 owner 与跨域用法）
-4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
-5. domain claim-status files（防止 bridge / public / clinical / spirituality / AI / physics overclaim）
-6. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释；not final definitions）
-7. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
-8. 各 split 目录（找导航与局部阅读）
-9. 原始长文（找历史展开与全量语境）
+2. `Core_Law/SRT_Generative_Ontology_Spine.md`（判断跨 owner 生成顺序、非同一性、OPEN gate 与旧 canonical 是否越权）
+3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
+4. `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_One_Formation.md` / `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找兼容于 spine 的局部定义、形成 owner、形式与跨域用法）
+5. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文；不得反向覆盖 spine 的跨层顺序）
+6. domain claim-status files（防止 bridge / public / clinical / spirituality / AI / physics overclaim）
+7. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释；not final definitions）
+8. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
+9. 各 split 目录（找导航与局部阅读）
+10. 原始长文（找历史展开与全量语境）
 
 ## D. 当前收口结论
 
-本轮 governance-canonical 抽离 v1 暂定以下四者为主干用法：
+本轮 governance-canonical 抽离 v1 与 2026-09-11 spine landing 后，主干用法优先包含：
+- `Generative ontology cross-owner order` → `Core_Law/SRT_Generative_Ontology_Spine.md`
 - `d-value` → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` → `_SRT_T_DIR_CANONICAL.md`
@@ -1281,6 +1298,504 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | `Philosophy/SRT_Subjecthood_Threshold_Interface.md` | S0-S6 selection / consciousness / subjecthood / agency / responsibility interface; includes anti-panpsychism and depsychologization guardrails | active_v1 |
 | `Philosophy/SRT_Philosophy_Public_OnePager.md` | public-facing one-page explanation | active_v1 |
 | `Philosophy/PH_SS_Hardening_Audit_2026-04-27.md` | audit record for the 2026-04-27 PH-SS hardening pass | active audit |
+
+
+
+---
+
+## FILE: `Core_Law/SRT_Generative_Ontology_Spine.md`
+
+| 字段 | 值 |
+|---|---|
+| path | `Core_Law/SRT_Generative_Ontology_Spine.md` |
+| id | SRT-GENERATIVE-ONTOLOGY-SPINE |
+| claim_mode | canonical |
+| status | active |
+| epistemic_layer | os |
+| layer | L0-L1 |
+| canonical(字段) | true |
+| last_commit | 2026-09-12 |
+
+**权威判读**：**定义源**——可用于确定 SRT 术语含义。
+
+**dependency**：SRT-L0-METAPHYSICS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER
+
+<!-- 以下为原文逐字保留 -->
+
+# SRT Generative Ontology Spine
+## Selection → Manifestation / Backgrounding → Vertical Formation → One / Selection-position → Bearer
+
+> **Role**: canonical **cross-owner routing spine** for the current SRT ontology reconstruction. It fixes generative order, layer boundaries, non-identities and OPEN gates.
+>
+> **Not a monolithic definition owner**: local definitions remain with their proper owners where compatible. This file owns the **cross-layer order and inference permissions** between them.
+>
+> **Author authorization**: 2026-09-11, “new spine first, then old-canonical cleanup.” Provenance: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md`.
+
+---
+
+## 0. Canonical authority rule
+
+When older canonical or canonical-seeming material conflicts with this file at the **cross-layer inference** level:
+
+```text
+this spine controls current routing;
+compatible local definitions remain valid;
+conflicting older inference becomes cleanup / retyping debt;
+OPEN remains OPEN rather than being filled by an older theorem automatically.
+```
+
+The following inference shapes are not licensed unless separately re-established:
+
+```text
+history / writeback -> source of verticality;
+formed process -> Stable ISP -> subject as a generation law;
+One -> Stable ISP automatically;
+One -> Bearer automatically;
+Stable ISP -> Bearer / subject automatically;
+sigma threshold -> subject ontology;
+d > 0 -> Bearer / subject proof;
+T_dir -> Bearer / subject proof;
+Bearer = 承担 / concern / subject / experiencer by definition.
+```
+
+---
+
+## 1. Current generative architecture
+
+### 1.1 Formation trunk
+
+```text
+G0 minimum non-neutrality / pre-object difference
+-> G1 subjectless Selection
+-> G2 manifestation + relative backgrounding
+-> G3 active verticalization / non-flat selectable-space construction
+-> G4 recurrent / re-entering localized vertical organization
+-> G5 One / Selection-position
+```
+
+### 1.2 Endogenous / anticipatory thickening
+
+```text
+A1 Selection / verticality forward structuring
+   = later selectability is prepared / suppressed / reopened / re-entered.
+
+After G5:
+One-level endogenous perspective
+   = the formed One's own lineage-conditioned organization becomes load-bearing
+     in later manifestation / backgrounding / selectable-space construction.
+
+A2 formed-position internal anticipation
+   = the formed position participates from within its own organization
+     in preparing / differentiating possible continuations.
+
+P prospective self-indexing
+   = future branches differ by what this continuing One itself may
+     undergo / preserve / lose / enable / become unable to continue.
+
+E same-One prospective exposure
+   = at least some such potential consequences genuinely expose the same One
+     and cannot be completely reassigned while claiming the same Bearer relation.
+
+P + E -> Bearer.
+```
+
+### 1.3 Downstream OPEN zone
+
+```text
+Bearer <-> actual 承担 = OPEN
+Bearer -> concern / 关切 = OPEN
+Bearer -> d-positive concern structure = OPEN
+Bearer -> agency = OPEN
+Bearer -> subject-position = OPEN
+Bearer -> cognition = OPEN
+Bearer -> phenomenality / experiencer = OPEN
+```
+
+These are not one automatic ladder.
+
+---
+
+## 2. G0 — minimum non-neutrality / pre-object difference
+
+SRT does not begin from a completed object, chooser, subject, agent or semantic goal.
+
+Minimum commitment:
+
+```text
+pure featureless neutrality is insufficient as the starting picture;
+some pre-object difference / non-neutrality is available for determination;
+no completed One is presupposed.
+```
+
+This spine does **not** re-ratify every historical L0 elaboration merely because it currently sits in the L0 file.
+
+The exact decomposition, independence or necessity of current items such as:
+
+```text
+kappa_0;
+epsilon;
+irreversibility;
+legacy 承担 / 关切 / embodiment language;
+legacy subject-selection language
+```
+
+remains separately auditable.
+
+---
+
+## 3. G1–G3 — subjectless Selection, manifestation/backgrounding, verticality
+
+Selection is upstream of a completed selector:
+
+```text
+Selection != a pre-existing subject choosing from a completed menu.
+```
+
+At the generative level, Selection differentiates actuality:
+
+```text
+some possibility becomes manifest / operative
+while alternatives are relatively backgrounded / left non-manifest.
+```
+
+Thus manifestation and relative backgrounding are two sides of selective differentiation, not independent events added later.
+
+Selection also generates / regenerates a non-flat relation for later selectability:
+
+```text
+Selection
+-> differentiated manifestation / backgrounding
+-> changed later selectable space.
+```
+
+This is **active verticalization**.
+
+Guards:
+
+```text
+manifestation != permanent existence;
+backgrounding != annihilation;
+Selection != conscious choice;
+verticality != passive historical sediment;
+path dependence != verticality by definition.
+```
+
+Domain mechanisms may realize parts of this structure; no single mechanism is the universal definition.
+
+---
+
+## 4. G4–G5 — recurrent vertical organization, One, Selection-position
+
+One-shot verticalization is insufficient for One.
+
+Current formation sequence:
+
+```text
+local vertical organization at t
+-> materially conditions later Selection
+-> later Selection reconstitutes a renewed operative local organization
+-> the renewed organization stands in a lineage relation to the prior one
+-> it can again participate in later Selection.
+```
+
+Therefore:
+
+```text
+One
+= localized, lineage-relative, processual formed unity
+  continuing through Selection-mediated recurrent reconstitution.
+
+Selection-position_t
+= the time-local operative from-where of that continuing One.
+```
+
+Guards:
+
+```text
+event verticalization != One automatically;
+One != static identity token;
+One != observer grouping;
+Selection-position != coordinate label only;
+One != Stable ISP;
+One != Bearer;
+One != subject-position.
+```
+
+Detailed local owner: `Core_Law/SRT_One_Formation.md`.
+
+---
+
+## 5. History / writeback typing
+
+History is real but must not be made the source of what it only conditions.
+
+```text
+prior Selection
+-> retained difference / writeback
+-> changed later conditions
+-> changed reconstitution possibilities.
+```
+
+Canonical distinction:
+
+```text
+active vertical generation
+= source / ongoing-process side;
+
+history / writeback
+= retained result / condition side.
+```
+
+Therefore:
+
+```text
+history may condition later vertical regeneration;
+history may be load-bearing for lineage continuation;
+
+but
+
+history != source of Selection;
+history != source of verticality by itself;
+history-bearing != perspective automatically;
+history-to-reconstitution != Bearer automatically.
+```
+
+Preferred direction:
+
+```text
+Selection-generated vertical organization
+-> history-conditioned recurrent reconstitution
+-> continuing One.
+```
+
+---
+
+## 6. Position, perspective and anticipation
+
+### 6.1 L0 positionality
+
+Selection is finite-position-indexed.
+
+```text
+position alone
+!= formed One
+!= perspective
+!= Bearer
+!= subjecthood.
+```
+
+### 6.2 Formed Selection-position
+
+After One formation, `Selection-position_t` is the operative from-where of the continuing One.
+
+It is structural / ontological, not yet a proof of first-person or subject standing.
+
+### 6.3 One-level endogenous perspective
+
+A stronger One-level perspective is present when the formed One's own lineage-conditioned organization is itself load-bearing in later:
+
+```text
+manifestation;
+relative backgrounding;
+selectable-space maintenance / construction.
+```
+
+Status:
+
+```text
+this relation as a distinct layer = ACCEPTED;
+every One automatically has it = NOT ESTABLISHED;
+universal sufficiency = OPEN.
+```
+
+### 6.4 A1 / A2 / P
+
+```text
+A1 = Selection / verticality structurally prepares later selectability.
+A2 = a formed position may internally prepare / differentiate continuations.
+P  = future branches become differentiated by what this One itself may undergo.
+```
+
+None of A1 or A2 alone establishes Bearer.
+
+None requires explicit Bayesian prediction, verbal self-model, consciousness or human cognition.
+
+---
+
+## 7. Bearer — P + E at current canonical semantic strength
+
+Bearer onset in the current ontology route requires:
+
+```text
+already admitted One / Selection-position
++
+P prospective self-indexing
++
+E same-One prospective exposure
+-> Bearer.
+```
+
+### P without E
+
+Self-relevant prediction, regulation or viability sensitivity can occur while the actual burden is fully externalizable.
+
+```text
+P alone != Bearer.
+```
+
+### E without P
+
+A One can be causally exposed or retrospectively altered without prospectively differentiating branches by what it itself may undergo.
+
+```text
+E alone != Bearer.
+```
+
+### E semantic test
+
+If a consequence burden can be completely reassigned to another unit while the claimed Bearer relation is said to remain unchanged, E has not been established for the original One.
+
+### Strength guard
+
+This is a **canonical semantic / architectural gate**, not a universal empirically validated or formally proved N&S theorem across every realization domain.
+
+It does not establish:
+
+```text
+agency;
+concern;
+subjecthood;
+cognition;
+consciousness;
+phenomenality;
+unique Bearer scale;
+scientific distinctiveness.
+```
+
+---
+
+## 8. Cross-cutting surfaces are not generation stages
+
+### 8.1 Stable ISP
+
+P1-T06 remains a stronger standing / persistence criterion.
+
+```text
+Stable ISP != source of One formation;
+Stable ISP != Bearer automatically;
+Stable ISP != subjecthood automatically.
+```
+
+### 8.2 `sigma_sr`
+
+`σ_sr` belongs to downstream self-reference / writeback modelling.
+
+```text
+model regime / threshold
+!= One / Bearer / subject / phenomenality transition automatically.
+```
+
+### 8.3 d-value
+
+`d` remains owned by `_SRT_D_VALUE_CANONICAL.md`.
+
+This spine does not redefine it, but forbids circular use:
+
+```text
+d > 0 != Bearer proof;
+d > 0 != subject proof;
+capacity proxy != concern proof.
+```
+
+The precise `Bearer -> concern -> d` relation remains OPEN.
+
+### 8.4 T_dir
+
+`T_dir` remains under its own owner.
+
+```text
+T_dir != Bearer proof;
+T_dir != subject proof;
+T_dir != phenomenality proof.
+```
+
+### 8.5 Psi_f / cost
+
+Cost and payability constrain continuation but do not by themselves determine which One is Bearer or which Bearer is subject / phenomenal.
+
+---
+
+## 9. Cleanup test for older canonical
+
+Audit any older canonical / canonical-seeming surface with these questions:
+
+1. **Source inversion** — is a downstream state made the source of upstream formation?
+2. **Layer collapse** — are position, perspective, Bearer, 承担, concern, subject or phenomenality identified without extra burden?
+3. **Model-to-ontology jump** — does a threshold / equation / proxy become an ontology gate merely because it is measurable or stable?
+4. **Standing-to-generation jump** — is Stable ISP or persistence used as a formation law?
+5. **History-to-source jump** — is writeback made the source of verticality or Bearer?
+6. **Authority duplication** — does a reader / bridge / FAQ / alignment / domain file redefine an object owned elsewhere?
+7. **Overclaim** — is a P2/P3/model/domain result promoted to universal ontology?
+8. **Redundancy** — can multiple surfaces collapse to one owner + thin crosswalks?
+
+Allowed cleanup outcomes:
+
+```text
+KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN
+```
+
+Retiring an old claim does not require inventing a replacement theorem.
+
+---
+
+## 10. Explicit OPEN register
+
+This spine leaves open:
+
+```text
+exact final primitive decomposition of minimum non-neutrality;
+formal N&S theorem for One;
+universal One-level perspective sufficiency;
+exact A2 <-> One-level perspective relation;
+formal cross-domain N&S theorem for P + E Bearer;
+Bearer <-> actual 承担;
+Bearer -> concern / d;
+Bearer -> agency;
+positive subject-position gate;
+subject-position -> cognition;
+phenomenality / experiencer transition;
+collective subject sufficiency;
+unique scale of One / Bearer;
+branching identity theorem;
+new Level 1;
+Level 2 / HOLD exit;
+scientific distinctiveness;
+whole-architecture non-substitutability.
+```
+
+These OPEN items must not be silently closed by older canonical material.
+
+---
+
+## 11. Citation rule
+
+Use this file first for:
+
+- current SRT ontology generation order;
+- cross-owner layer relations;
+- position / perspective / anticipation / Bearer distinctions;
+- P + E Bearer routing;
+- deciding whether an older canonical claim is overreaching or out of order.
+
+Then follow the relevant local owner for detailed definitions or formalisms.
+
+For ongoing reconstruction:
+
+```text
+new generative spine = current research constraint;
+older conflicting canonical prose = audit target, not veto authority;
+OPEN gate = open until separately author-adjudicated and landed.
+```
 
 
 
