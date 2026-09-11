@@ -1,0 +1,108 @@
+name: Temporary PR933 Author Closeout
+
+on:
+  push:
+    branches:
+      - theory/pr931-external-review-reconciliation-20260911
+
+permissions:
+  contents: write
+
+jobs:
+  closeout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR933 head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: theory/pr931-external-review-reconciliation-20260911
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Apply author-adjudicated STATUS closeout
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('STATUS.md')
+          s = p.read_text()
+          reps = [
+            (
+              'current main before external-review reconciliation:\n8b066b3d5e670ddd14e1ffe11b7ed0b32698f51d',
+              'baseline main at #933 opening:\n8b066b3d5e670ddd14e1ffe11b7ed0b32698f51d'
+            ),
+            (
+              'post-merge external review:\nClaude + GPT-6 review received 2026-09-11\nreview reconciliation: IN PROGRESS / AUTHOR ADJUDICATION REQUIRED FOR SUBSTANTIVE ROUTING CHANGES',
+              'post-merge external review:\nClaude + GPT-6 review received 2026-09-11\nreview reconciliation: AUTHOR-ADJUDICATED / #933 CONTROLLING POST-MERGE CORRECTION'
+            ),
+            (
+              '- `Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md`\n\nThe four files above are **post-merge machine reconciliation / pressure records**. They do not retroactively turn the original #931 producing workflow into independent review. Where they change substantive author meaning, author adjudication is required before hardening.',
+              '- `Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md`\n\n**author adjudication / closeout:**\n\n- `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`\n- `Operations/Audits/SRT_PR933_AUTHOR_ADJUDICATED_CLOSEOUT_2026-09-11.md`\n\nThe four reconciliation files remain post-merge machine audit/pressure records and do not retroactively turn the original #931 producing workflow into independent review. The two substantive routing questions they exposed were explicitly author-adjudicated on 2026-09-11.'
+            ),
+            (
+              'The `Active Selection` / `second-order Selection` relation is now explicitly crosswalked; they must not be used as silent synonyms.',
+              'The `Active Selection` / `second-order Selection` relation is now explicitly crosswalked and author-adjudicated; they must not be used as silent synonyms.'
+            ),
+            (
+              '### 3. Bearer routing — explicit unresolved/supersession ledger',
+              '### 3. Bearer routing — author-adjudicated supersession ledger'
+            ),
+            (
+              'Post-merge reviewer reconciliation proposes the following **machine routing pending explicit author confirmation**:',
+              'The author explicitly accepted the following routing on 2026-09-11:'
+            ),
+            (
+              '09-10 cognitive-only/exhaustive Bearer layer reading: candidate PARTIAL SUPERSESSION\n09-11 One-first history-to-reconstitution Bearer route: candidate REOPENED NONCANONICAL ROUTE',
+              '09-10 cognitive-only/exhaustive Bearer layer reading: PARTIALLY SUPERSEDED WHEN READ AS EXHAUSTIVE\n09-11 One-first history-to-reconstitution Bearer route: AUTHOR-ACCEPTED REOPENED NONCANONICAL ROUTE'
+            ),
+            (
+              'For #931 meaning, load:\n\n1. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`',
+              'For the current #931 + #933 meaning, load the latest adjudication first:\n\n1. `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`\n2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`'
+            ),
+            (
+              '2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`\n3. `01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_CORRECTED_GATE_ADJUDICATION_2026-09-11.md`\n4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_POSITION_INDEXED_ACTIVE_SELECTION_ADJUDICATION_2026-09-11.md`',
+              '3. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`\n4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_CORRECTED_GATE_ADJUDICATION_2026-09-11.md`\n5. `01_Source_Intuition/SRT_AUTHOR_REENTRY_POSITION_INDEXED_ACTIVE_SELECTION_ADJUDICATION_2026-09-11.md`'
+            ),
+            (
+              '> **#931 is retained as a historical noncanonical checkpoint, but canonical/owner hardening is paused until the post-merge reconciliation package is reviewed and the substantive Bearer/Active routing receives author adjudication.**',
+              '> **#931 is retained as a historical noncanonical checkpoint. #933 is the author-adjudicated post-merge reconciliation layer for the Bearer/Active routing debt. Any canonical/owner hardening remains a separate future workline.**'
+            ),
+            (
+              'exact ontological/cognitive Bearer layering after the 09-11 reopening;',
+              'formal downstream cognitive-Bearer relation beyond the accepted minimal history-to-reconstitution route;'
+            ),
+            (
+              '1. treat #931 as a landed historical noncanonical checkpoint, not a final theory closure;\n2. review the named external-review reconciliation package;\n3. obtain author adjudication on:\n   A. the Bearer supersession/reopening reading;\n   B. Active Selection vs 2026-08-09 second-order Selection relation;\n4. only after that, decide whether any small owner/canonical-hardening PR is justified;\n5. keep Level 2 HOLD and scientific-distinctiveness guards unchanged.',
+              '1. treat #931 as a landed historical noncanonical checkpoint, not a final theory closure;\n2. treat #933 as the author-adjudicated controlling reconciliation for its identified routing debts;\n3. after #933 lands, do not reopen broad theory merely to extend this package;\n4. any owner/canonical hardening must be a separate smaller future PR with its own gates;\n5. keep Level 2 HOLD, whole-package non-substitutability and scientific-distinctiveness guards unchanged.'
+            ),
+            (
+              'Do not reopen broad theory exploration merely to add more concepts. The current task is reconciliation and discriminating pressure.',
+              'Do not reopen broad theory exploration merely to add more concepts. The current reconciliation is closed at the noncanonical level; remaining formal/empirical burdens stay explicitly open.'
+            )
+          ]
+          for old, new in reps:
+              if old not in s:
+                  raise SystemExit(f'missing expected STATUS block: {old[:100]!r}')
+              s = s.replace(old, new, 1)
+          p.write_text(s)
+          PY
+
+      - name: Regenerate context bundles
+        run: uv run python scripts/build_srt_context_bundles.py --generated-date 2026-09-11
+
+      - name: Remove temporary workflow and commit closeout
+        shell: bash
+        run: |
+          git rm .github/workflows/tmp-pr933-author-closeout.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add STATUS.md Operations/Context_Bundles
+          git commit -m "Finalize PR933 author-adjudicated routing and context"
+          git push origin HEAD:theory/pr931-external-review-reconciliation-20260911
