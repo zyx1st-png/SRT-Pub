@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 0cd3f647
-source_branch: ops/post-pr938-status-closeout-20260911
+source_commit: cfa7fe4c
+source_branch: theory/r1-canonical-formation-standing-landing-20260911
 source_dirty: false
-inputs_digest: 7d875fded5ecd275
+inputs_digest: 1ee9590971a8cf85
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 7d875fded5ecd275
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `0cd3f647` |
-| 来源分支 | `ops/post-pr938-status-closeout-20260911` |
+| 来源 commit | `cfa7fe4c` |
+| 来源分支 | `theory/r1-canonical-formation-standing-landing-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -50,7 +50,7 @@ inputs_digest: 7d875fded5ecd275
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
-| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
+| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
@@ -2648,7 +2648,7 @@ This demotion changes epistemic rank, not the intended theoretical meaning of th
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-17 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2794,28 +2794,32 @@ No P1 `Real Choice Moment` theorem remains after RC-A.
 
 ---
 
-## P1-T06: Stable ISP as Persistent Perspective Center
+## P1-T06: Stable ISP Standing and Persistent Perspective
 
-**Lineage**: extracted from former `T-ε-Constitute`.
+**Lineage**: extracted from former `T-ε-Constitute`; R1 standing boundary clarified 2026-09-11 after the author-adjudicated #938 reconstruction repair.
 
-**Statement**: SRT's relevant object is not any one-shot selection event, but a stable ISP: a perspective-bearing, history-bearing process that persists as the same selection center through recurrent historical reconstitution.
+**Statement**: P1-T06 defines a **recurrent standing criterion**, not the definition of `Selection` and not a generation law for upstream formed positional organization. A stable ISP is a perspective-bearing, history-bearing process that persists as the same selection center through recurrent historical reconstitution and remains continued-selectable over a declared interval and perturbation range.
 
 **Stable ISP Definition**: Process `P` is a stable ISP if:
 
 1. It is iterative: over the declared interval, it repeatedly encounters **currently effective, non-equivalent candidates** rather than merely replaying a closed script.
-2. It is perspective-bearing: it accumulates a structured view from its position.
+2. It is perspective-bearing: it accumulates a structured view from its position. **At P1-T06 this is a standing condition; it does not assert that perspective first appears only at Stable-ISP standing.**
 3. It is history-bearing: outputs at `t` constrain `A_{t+1}` with writeback.
-4. It is **continued-selectable**: the same history-bearing process can continue receiving currently effective candidates and bearing the downstream consequences of what it selected.
+4. It is **continued-selectable**: the same history-bearing process can continue receiving currently effective candidates, while consequences of what it selected can return into that same process's later history / selection conditions.
+
+**Consequence-typing guard (R1, 2026-09-11)**: condition 4's downstream consequence relation means consequence return / coupling to the same history-bearing process. It is **not by itself** a sufficient criterion for the separately reconstructed `Bearer` problem, `承担`, non-outsourcable stake, subject-position, consciousness, or phenomenality.
 
 **Terminology guard (RC-A)**: `currently effective` is descriptive scope language, not a new `Live Choice` / `live selection` concept. P1-T06 concerns stable ISP standing, not the definition of Selection itself.
 
 **Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
-**Implication**: Stability is not an arbitrary restriction imposed by the observer. It is the entry condition for any process that can bear a continuous perspective.
+**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`, and it does not decide the canonical owner or necessary-and-sufficient theorem for any thinner formed unity upstream of Stable ISP.
+
+**Implication**: Stability is not an arbitrary restriction imposed by the observer. P1-T06 identifies a **strong persistent-perspective standing** for a recurrent selection process. It does not claim to mark the first ontological appearance of perspective, and Stable-ISP standing does not by itself establish subject-position.
 
 **ST-A boundary**: Continued selectability is the P1 minimum. The stronger property of **generative reselectability**—consequence-sensitive revision of the process's own comparison rules, boundaries, or candidate-generation conditions—is not required to identify every stable ISP and is not a P1 theorem. It is a P2/P3 criterion for generative health in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`. Structural stability therefore does not by itself establish generative health.
 
-**Dynamic Layer**: Why some processes achieve and maintain stable ISP status is treated through `T-L2-Scaffold` in `Core/SRT_Core_12b_Ontology_L2.md` (path-layer trace dynamics) and through the operator-layer self-reference ratio `σ` in `Core_Law/SRT_Individuation.md` (entry-transition dynamics). The four conditions above are the **result-state criterion** for being a stable ISP; `T-IND-2` in the individuation file is the **entry-dynamics criterion** for when a process crosses into that state. Self-consciousness is treated there as a distinct second-order condensate (second phase transition at `σ_self`), not as a precondition for being a stable ISP.
+**Dynamic-layer boundary (R1, 2026-09-11)**: downstream L1 models may propose mechanisms or coordinates for entry into, maintenance of, or departure from Stable-ISP standing. P1-T06 does not by itself authorize any model coordinate—including a `σ` threshold—as the ontological event of formed-position, Stable-ISP, or subject entry. Exact threshold ownership remains separately governed by the relevant L1/formal owner and current OPEN register.
 
 **Precision note (2026-04-21)**: `T-L2-Scaffold` explains how successful stable ISP history can become background scaffold; it does not decide whether that scaffold is healthy support, pathological closure, or lethal `L_2`. Read those distinctions through `Core/SRT_Core_12b_Ontology_L2.md Def-L2-DualLayer / Def-L2-Normative` and `Core/SRT_OPEN_TENSIONS.md §4`.
 

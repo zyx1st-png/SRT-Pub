@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 0cd3f647
-source_branch: ops/post-pr938-status-closeout-20260911
+source_commit: cfa7fe4c
+source_branch: theory/r1-canonical-formation-standing-landing-20260911
 source_dirty: false
-inputs_digest: 7d875fded5ecd275
+inputs_digest: 1ee9590971a8cf85
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 7d875fded5ecd275
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `0cd3f647` |
-| 来源分支 | `ops/post-pr938-status-closeout-20260911` |
+| 来源 commit | `cfa7fe4c` |
+| 来源分支 | `theory/r1-canonical-formation-standing-landing-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
