@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: bc92e801
-source_branch: theory/r1-one-formation-canonical-landing-20260911
+source_commit: 36b3259e
+source_branch: ops/post-pr942-status-closeout-20260911
 source_dirty: true
-inputs_digest: e07e0761ff234b0c
+inputs_digest: 5bf89ee52a74cde5
 ---
 
 # SRT 核心动力学上下文包
@@ -27,8 +27,8 @@ inputs_digest: e07e0761ff234b0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `bc92e801` |
-| 来源分支 | `theory/r1-one-formation-canonical-landing-20260911` |
+| 来源 commit | `36b3259e` |
+| 来源分支 | `ops/post-pr942-status-closeout-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
