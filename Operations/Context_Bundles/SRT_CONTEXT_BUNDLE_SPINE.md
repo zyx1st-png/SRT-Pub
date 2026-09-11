@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 97b4096e
+source_commit: a4366a1e
 source_branch: theory/generative-ontology-spine-canonical-20260911
 source_dirty: false
-inputs_digest: c1ede713e7526008
+inputs_digest: 6fc6a29cc261d35b
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: c1ede713e7526008
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `97b4096e` |
+| 来源 commit | `a4366a1e` |
 | 来源分支 | `theory/generative-ontology-spine-canonical-20260911` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -308,7 +308,7 @@ For non-trivial SRT work:
 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | registry §A.4 分层正文 P1 | ✓ | ✓ |
 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | registry §A.4 分层正文 P2/P3/P4 | ✓ | ✓ |
 | `Core/SRT_Core_22_Equations.md` | registry §A.4b 主锚点 | ✓ | ✓ |
-| `Core_Law/SRT_Generative_Ontology_Spine.md` | frontmatter claim_mode=canonical | ✓ | — |
+| `Core_Law/SRT_Generative_Ontology_Spine.md` | registry §A.0 跨 owner 生成主轴 | ✓ | — |
 | `Core_Law/SRT_L0_Metaphysics.md` | AI_START §2 First Sources 第 4 位 | ✓ | ✓ |
 | `_SRT_D_VALUE_CANONICAL.md` | registry §A.1 主锚点 | ✓ | ✓ |
 | `_SRT_PSI_F_CANONICAL.md` | registry §A.2 主锚点 | ✓ | ✓ |
