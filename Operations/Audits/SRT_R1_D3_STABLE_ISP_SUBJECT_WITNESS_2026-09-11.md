@@ -15,9 +15,11 @@ named_comparator: none
 n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_FIRST_PERSON_BEARER_SUPERSESSION_2026-09-11.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R1_POSITION_PERSPECTIVE_ANTICIPATION_BEARER_2026-09-11.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md
   - Operations/Audits/SRT_R1_FORMATION_STANDING_LANDING_PREPARATION_2026-09-11.md
+  - Operations/Audits/SRT_R1_FINAL_SUPERSESSION_AND_ROUTING_RECONCILIATION_2026-09-11.md
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
   - Core/SRT_OPEN_TENSIONS.md
@@ -208,7 +210,14 @@ After the author correction, use at least this distinction:
 
 ```text
 ONE-LEVEL / STRUCTURAL PERSPECTIVE:
-position-relative asymmetry of a formed vertical organization;
+endogenous participation of a formed One / Selection-position:
+its own lineage-conditioned organization is load-bearing in
+later manifestation, relative backgrounding, and
+maintenance / construction of selectable space.
+
+This is not merely a positional asymmetry or external coordinate;
+position alone != perspective;
+universal sufficiency remains OPEN.
 
 BEARER-LEVEL PERSPECTIVE:
 future consequence becomes related to what the continuing position is to undergo / carry;
@@ -293,8 +302,10 @@ Possible future canonical mappings:
 
 ```text
 P1-PERS-A
-P1 perspective tracks One / Selection-position level
-position-relative vertical asymmetry;
+P1 perspective tracks a formed One / Selection-position
+whose own lineage-conditioned organization is load-bearing
+in later manifestation / relative backgrounding /
+selectable-space maintenance;
 
 P1-PERS-B
 P1 perspective tracks a thicker Bearer-level
