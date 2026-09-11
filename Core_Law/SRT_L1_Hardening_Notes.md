@@ -57,8 +57,8 @@ dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDI
 |---|---|---|---|
 | σ（主方程状态场）| **`σ`**（保留） | `Core/SRT_Core_22_Equations.md` 的状态场 / 收敛变量 | 主动力学方程 |
 | σ（自指率） | **`σ_{sr}`** | self-reference ratio, `∈ [0,1]` | `SRT_Individuation.md`, `SRT_L1_Formalism.md §2` |
-| σ_sub（主体位进入门槛） | **`σ_{sr}^{sub}`** | first phase transition threshold | 同上 |
-| σ_self（自我意识凝结门槛） | **`σ_{sr}^{self}`** | second phase transition threshold | 同上 |
+| σ_sub（legacy 第一模型区坐标） | **`σ_{sr}^{sub}`** | first model-regime balance/crossing coordinate; **retired as canonical subject / Stable-ISP threshold** | `SRT_Individuation.md`, `SRT_L1_Formalism.md §2` |
+| σ_self（二阶 writeback 激活坐标） | **`σ_{sr}^{self}`** | model-local second-order self-model/writeback activation coordinate; not a consciousness threshold | `SRT_Individuation.md`, `SRT_L1_Formalism.md §2` |
 | σ_health（健康工作区中心） | **`σ_{sr}^{health}`** | healthy operating point | 同上 |
 | σ→1 病理区 | **`σ_{sr} \to 1`** | pathological attractor | 同上 |
 | σ^{coll}（集体自指率） | **`σ_{sr}^{coll}`** | collective self-reference ratio | `SRT_Collective_Selection.md §4` |

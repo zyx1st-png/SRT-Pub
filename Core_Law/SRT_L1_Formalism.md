@@ -121,29 +121,32 @@ $$
 \boxed{\;\frac{d\sigma}{dt} \;=\; \frac{1}{T}\Big[\,(1-\sigma)\big(\alpha w \phi(\sigma) - \lambda_{trace} T\sigma\big) \;-\; \sigma\big(\beta i - \lambda_{ext} T(1-\sigma)\big)\,\Big]\;}
 $$
 
-### §2.3 相变结构
+### §2.3 模型稳态 / regime coordinates（B1 语义清洗）
 
-把 `dσ/dt = 0` 作为稳态条件，化简后得到两个关键门槛：
+把 `dσ/dt = 0` 作为**模型稳态条件**，可以定义若干 coordinate；这些 coordinate 属于所声明 `σ_{sr}` 模型，不自动是本体相变。
 
-1. **σ_{sr}^{sub}（主体位涌现）**：使 writeback 速率超过外部输入驱动的最小 σ_{sr} 值。把衰减项与外部项平衡处解出：
+1. **`σ_{sr}^{sub}`（legacy first-regime coordinate）**：保留旧符号以兼容历史方程；它表示 writeback 项与外部输入/衰减项达到所声明平衡关系的模型坐标：
 
    $$
-   \sigma_{sr}^{sub} \;:\; \alpha\,w\,\phi(\sigma_{sr}^{sub}) \;=\; \beta\,i \;+\; \lambda_{trace}\,T\,\sigma_{sr}^{sub}
+   \sigma_{sr}^{sub} : lpha w\phi(\sigma_{sr}^{sub}) = eta i + \lambda_{trace}T\sigma_{sr}^{sub}.
    $$
 
-2. **σ_{sr}^{self}（自我意识凝结）**：使 χ 开始激活二阶写回增益的 σ_{sr} 值。在 §2.1 中显式引入为 `χ` 的跳跃参数；在无外部强驱动情形下，一旦 σ_{sr} 越过 σ_{sr}^{self}，χ 的增益会把稳态推向更高 σ_{sr}，形成第二个稳定不动点。
+   **B1 guard**：该坐标不再称 canonical “主体位涌现门槛”，也不等于 Stable-ISP entry、Bearer onset、承担 / 关切 onset 或 phenomenality threshold。
 
-3. **σ → 1 病理区**：当 `i → 0` 且 `λ_{ext} > λ_{trace}` 时，第二个稳定不动点向 σ = 1 漂移，对应自指过载、扭曲型苦难源。健康主体需要非零 `i`（持续环境接入）作为"稀释项"阻止 σ → 1。
+2. **`σ_{sr}^{self}`（second-order writeback activation coordinate）**：作为 `χ` kernel 的模型参数，可用于研究二阶 self-model/writeback 增益何时被激活。它不自动等于 self-consciousness / consciousness 的自然阈值。
 
-### §2.4 与 T-IND-1 / T-IND-2 的对齐
+3. **`σ_{sr} -> 1` high-self-reference regime**：可以作为外部接入减弱 / self-closure 过强的模型候选区。是否构成病理、遮蔽、subject breakdown 或 suffering，必须分别由相应 owner / domain 证据支付。
 
-- T-IND-1 三相（展开 / 主体位稳态 / 自我意识凝结）对应 σ 相图上的三个区域；
-- T-IND-2 第一相变判据对应 §2.2 方程的 σ_{sr}^{sub} 不动点存在条件；
-- T-IND-3 第二相变判据对应 `χ(σ; σ_{self})` 的激活。
+### §2.4 与 Individuation 的新对齐
 
-所有三个相变都保持为**动力学稳态问题**，不是定义式假设。
+- T-IND-1 现在是 P2 phase-like modelling hypothesis；§2 ODE 可作为它的一个实现模型。
+- former T-IND-2 iff subject gate 已退役；`σ_{sr}^{sub}` 只保留模型 coordinate 意义。
+- T-IND-3 是 P2 conditional second-order self-model/writeback hypothesis；`χ` 激活只承载该模型的二阶 writeback 结构。
+- 所有 fixed point / bifurcation / family-invariance 结果首先是**方程族性质**，不是 One / Stable ISP / Bearer / subject / consciousness 的定义或充分条件。
 
 ### §2.5 T-CHI-1：χ 跳跃函数族的普适性（H8，2026-04-25）
+
+> **B1 ontology guard (2026-09-11)**：本节若证明某个 `χ` family 下的 fixed-point / direction / topology invariance，结论只属于所声明的二阶 writeback **模型族**。历史正文中的 `T-IND-3 / self-consciousness transition` 字样按 legacy model label 读取；它们不把数学 family-invariance 转换成 subjecthood、consciousness 或 phenomenality theorem。
 
 > **Status**：本节把 §2.1 的 `\chi(\sigma; \sigma_{self})` 跳跃函数从"一类光滑阶跃"的现象学描述提升为带四条结构属性的**有效族**定义，并给出族内跨函数的结构不变量定理。**Claim level: P1-candidate**。
 >

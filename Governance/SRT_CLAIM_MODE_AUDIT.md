@@ -89,16 +89,18 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 
 #### SRT-INDIVIDUATION
 
-| Label | Statement | Level |
+| Label | Statement | Level / status |
 |---|---|---|
-| Def-σ | 自指率 `σ := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | Def, P1-candidate as operational proxy |
-| T-IND-1 | 个体化作为相变 | P1-candidate |
-| T-IND-2 | 第一相变（主体位进入）条件 | P1-candidate |
-| T-IND-3 | 第二相变（自我意识凝结）条件 | P2（结构性假说） |
-| σ_sub, σ_self, σ_health 具体数值 / 阈值 | — | P3/P4（未实测，不得引用为定值） |
-| 自我意识 = 关于 θ 的 θ 二阶写回 | — | P2 canonical interpretation |
+| Def-`σ_{sr}` | 历史 / 自指平衡 proxy `‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | P2 model-local operational proxy; representation / attribution dependent |
+| T-IND-1 | phase-like self-reference dynamics may occur | P2 modelling hypothesis; **not** a subject theorem |
+| former T-IND-2 | `σ_{sr}^{sub}` + historical/bearing/concern/direction bundle iff subject entry | **RETIRED as current sufficiency / P1-candidate claim** |
+| `σ_{sr}^{sub}` | first model-regime balance / crossing coordinate (legacy symbol) | P3/P4 candidate; **not** subject / Stable-ISP / Bearer threshold |
+| T-IND-3 | second-order self-model / self-description writeback condensate | P2 conditional structural hypothesis |
+| `σ_{sr}^{self}` | second-order writeback activation coordinate | P3/P4 model-local candidate; **not** consciousness threshold |
+| positive subject-position sufficiency | — | **OPEN** |
+| phenomenality / experiencer transition | — | **OPEN** |
 
-**Downstream rule**：引用 T-IND-1/2 须标 `P1-candidate`；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
+**B1 downstream rule (2026-09-11)**：不得再引用 T-IND-1/2 或 `σ_{sr}^{sub}` 作为 P1-candidate subject-entry theorem。`σ_{sr}` 只在声明 unit / scale / lineage / attribution / representation / metric / time-window 后作为 model-local proxy。T-IND-3 与 `σ_{sr}^{self}` 只允许描述二阶 self-model/writeback 候选；不得据此推出 consciousness / phenomenality。One 回链 `SRT-ONE-FORMATION`；Stable ISP 回链 P1-T06；Bearer 当前路线按 `P+E` author adjudication；Bearer -> bearing / concern / subject 继续 OPEN。
 
 #### SRT-OCCLUSION-DYNAMICS
 
@@ -135,8 +137,8 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 
 | Label | Statement | Level |
 |---|---|---|
-| §2 σ 最小动力学（logistic + χ 跳跃） | — | P1-candidate 结构形式；具体函数族普适性由 §2.5 T-CHI-1 升 P1-candidate（H8） |
-| §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | "有效二阶相变核"四条结构属性 + 族内四个不变量（双稳态 / 病理吸引子 / 致命 `L_2` / 相变方向） | P1-candidate（χ 形式无关性升为定理后果） |
+| §2 `σ_{sr}` 最小动力学（logistic + χ 跳跃） | — | P1-candidate **model/equation structure only**；`σ_{sr}^{sub}` subject-entry semantics 已退役，不能由方程稳态推出 subject / Bearer |
+| §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | 有效 kernel family 下的 fixed-point / topology / direction invariance | P1-candidate mathematical/model-family result；**不提升 T-IND-3 为 subject/consciousness theorem** |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
 | §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
 | §3.5 T_dir 独立 ODE（弛豫 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；former-P1-T05-derived `r(t)` pump 已由 RC-A subtractive probe 删除；其余 κ_* 系数 P2/P3 |

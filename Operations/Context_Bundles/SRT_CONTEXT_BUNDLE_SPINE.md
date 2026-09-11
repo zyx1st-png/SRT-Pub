@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 1767249c
-source_branch: ops/canonical-authority-truthup-batch-a-20260911
+source_commit: f4078962
+source_branch: theory/canonical-cleanup-b1-individuation-20260911
 source_dirty: true
-inputs_digest: 5bf89ee52a74cde5
+inputs_digest: 10f1458910a36d19
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 5bf89ee52a74cde5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `1767249c` |
-| 来源分支 | `ops/canonical-authority-truthup-batch-a-20260911` |
+| 来源 commit | `f4078962` |
+| 来源分支 | `theory/canonical-cleanup-b1-individuation-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
 
@@ -1147,15 +1147,17 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 与 Collective 的关系：higher-order / relation-level One 不自动成为 collective ISP；T-COLL-1 保持独立 standing gate
 - 引用规则：涉及 active vertical formation、One、pre-subject ontological Selection-position、history/verticality typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件
 
-### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+### 13a. SRT 个体化模型（自指动力学 + subject/self-model 开放接口）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
-- layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
-- 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
-- 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
-- claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
-- 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
+- layer：L1 / epistemic：os / status：draft_v0 / claim-mode：hybrid
+- 说明：位于 `SRT-ONE-FORMATION` 已形成 `One / Selection-position` 之后的模型 / 假说层。`σ_{sr}` 只作为已声明 representation / attribution rule 下的 model-local 历史—自指平衡 proxy；它不定义 One、Stable ISP、Bearer 或 subject-position。
+- B1 supersession：former T-IND-2 `σ_{sr}^{sub}` iff subject-entry gate 已退役；`σ_{sr}^{sub}` 只保留为第一模型区 crossing / balance coordinate 的 legacy compatibility symbol（P3/P4），不得再称 canonical 主体位 / Stable-ISP threshold。
+- T-IND-1：P2 phase-like self-reference dynamics hypothesis，不是 subject theorem。
+- T-IND-3：P2 conditional second-order self-model / writeback hypothesis；`σ_{sr}^{self}` 只作为模型内二阶写回激活坐标候选，不证明 consciousness / phenomenality。
+- 当前正向 subject gate：OPEN。当前 Bearer 重构 checkpoint 为作者裁决的 `P prospective self-indexing + E same-One prospective exposure`；Bearer 到承担 / 关切 / subject / experiencer 仍分别 OPEN。
+- 与 P1-T06 的关系：P1-T06 owns Stable-ISP standing；Individuation 不把任何 `σ_{sr}` 阈值等同于 Stable-ISP entry。
+- 引用规则：涉及 `σ_{sr}` 模型、自指动力学、二阶 self-model 候选时回链本文件；涉及 One 回链 `SRT-ONE-FORMATION`，Stable ISP 回链 P1-T06，Bearer 当前重构回链 #944 author adjudication，subject sufficiency 不得引用旧 T-IND-2 作为已成立结论。
 
 ### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）
 - 主文件：`Core_Law/SRT_Occlusion_Dynamics.md`
@@ -1177,15 +1179,16 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - claim-mode 分布：T-SUFF-1/2 为 P1-candidate；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
 - 引用规则：涉及苦难/痛苦/空心感/自我扭曲等概念的结构层定义时，优先回链本文件；规范性评价回 `Philosophy/`，回返路径回 `Spirituality/`，神经实现回 `Neuroscience/`
 
-### 13d. SRT L1 Formalism（σ_{sr} / d_c / T_dir / S 四变量耦合动力学）
+### 13d. SRT L1 Formalism（`σ_{sr}` / d_c / T_dir / S 四变量模型动力学）
 - 主文件：`Core_Law/SRT_L1_Formalism.md`
 - id：`SRT-L1-FORMALISM`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：**§2.5 T-CHI-1（H8，2026-04-25）**给出 χ 跳跃函数族普适性定理：定义"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据结构 / 相变方向均 χ-无关）；T-IND-3 第二相变的算子层稳定性自此为定理后果。**§4.5 T-CHANNEL-1（H9，2026-04-25）**给出 `\mathbb{1}[d \gtrless d_c]` 通道指示函数族普适性定理：定义"有效闭合通道指示族"四条结构属性（Q-univ-1 左饱和 / Q-univ-2 右饱和 / Q-univ-3 单调过渡 / Q-univ-4 d_c 平移性）+ 族内五个不变量（T-SUFF-2 两型分裂 / T-SUFF-4 反最小化 / T-IRR-3.5 单向性 / 致命 `L_2` 判据 / `\mathcal{F}_S` 投影一致性，均 modulo `O(w_{tr})`）；硬指示是 `w_{tr}\to 0` 极限，过渡宽 `w_{tr}>0` 给"濒临崩溃"等过渡现象提供算子层基础。本节为 2026-04-24 轮新增的四个 L1 对象写下最小耦合动力学——个体化自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）、遮蔽阈值 d_c、方向透明度 T_dir（2026-04-25 §3.5 从代数代理升为独立动力学变量）、苦难 S；§2 给 `σ_{sr}` 的 logistic + `χ(σ_{sr}; σ_{sr}^{self})` 跳跃结构、§3 给 d_c 漂移方程（`ρ_local + (σ_{sr}-σ_{sr}^{sub}) + π + I_window`）、§3.5 给 T_dir 五项 ODE（弛豫 + 真实重选泵入 + `\Delta\Psi_f^{\mathrm{gap}}` 扣除 + `S_{str}` 侵蚀 + `s_{ext}` 支架）并给出致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`、§4 把 S 分解为 S_sig / S_str 并写下反最小化原则的方程化、§5 合成四变量耦合系统并刻画病理吸引子 `\mathcal{A}_{path}` 与健康工作区 `\mathcal{H}`、**§6 T-PROJ-1（H5，2026-04-25）**给出四变量系统作为 `Core/SRT_Core_22_Equations.md` Eq-Evo-01/02 严格导出投影的形式化定理：四个标量泛函投影 `\mathcal{F}_X` + 闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）+ source-by-source 对应表 + 证明骨架 + 不证明事项的显式标定
-- 与主方程的关系：本文件是 `Core/SRT_Core_22_Equations.md` 主方程的导出投影，不引入新本体
-- claim-mode 分布：方程结构为 P1-candidate；T-PROJ-1（§6）为 P1-candidate（四变量系统作为主方程导出投影）；T-CHI-1（§2.5，H8）为 P1-candidate（χ 跳跃函数族普适性 + 族内不变量）；T-CHANNEL-1（§4.5，H9）为 P1-candidate（通道指示函数族普适性 + 族内五不变量）；参数阈值（含新 `κ_*` 五项）、具体 domain 代理为 P2/P3；实测与临床/AI 落点为 P3/P4
-- Open pressures：σ 符号冲突已通过 2026-04-25 σ_{sr} 命名空间分离收口（详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；`\dot{\Delta}_{avail}` 已给出第一版算子级定义，剩余债为实证代理、domain 回写与更强形式化封口；χ 跳跃族、多主体扩展（H3 已落，§4.4-§4.6）、阈值固定、FEP 桥接（已落 `Neuroscience/SRT_Clin_02_FEP.md` 翻译表）、L_0 不可逆性**算子级**对齐（H4 已落，`SRT_Irreversibility.md §4.5 T-IRR-3.5`：`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`）、T_dir ODE 算子化（`Θ` 光滑族 / `\Delta\Psi_f^{\mathrm{gap}}` 算子层定义 / `[0,1]` 投影算子 / `κ_{\mathrm{relax}} > κ_{\mathrm{mask}}` 实证窗口）
-- 引用规则：涉及 `σ_{sr}` / d_c / T_dir / S 四变量的**方程级**陈述时优先回链本文件；概念定义仍回链各自 L1 主文（T_dir → `_SRT_T_DIR_CANONICAL.md`）
+- 说明：四变量的最小耦合 formalism / projection hub；方程结构与 family-invariance 命题保持其各自 P1-candidate / P2 / P3 标注，但**数学稳态或 threshold coordinate 不自动获得本体 subject 语义**。
+- `σ_{sr}`：model-local self-reference/history balance proxy。§2 的 `σ_{sr}^{sub}` 现在只解释为第一模型区 balance/crossing coordinate；former subject-entry semantics 已由 B1 退役。
+- `σ_{sr}^{self}` / T-CHI-1：可以研究二阶 self-model/writeback kernel 的模型稳定性；kernel-family 形式稳健性不推出 subjecthood、consciousness 或 phenomenality。
+- d_c / T_dir / S：继续由各自 owner 提供概念定义；本文件只写耦合 / 投影动力学，不得反向用 `σ_{sr}^{sub}` 或任一联立变量构成 subject gate。
+- 与主方程的关系：T-PROJ-1 等仍按其显式 closure assumptions 读取；“projection theorem”只说明给定 projection 定义下的形式关系，不提升下游本体语义。
+- 引用规则：方程级陈述回链本文件；One / Stable ISP / Bearer / subject / d / T_dir / suffering 的概念定义分别回各自 owner / 当前 adjudication。
 
 ### 13e. SRT 集体选择理论（多 ISP 共享 L_2）
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
@@ -1783,16 +1786,18 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 
 #### SRT-INDIVIDUATION
 
-| Label | Statement | Level |
+| Label | Statement | Level / status |
 |---|---|---|
-| Def-σ | 自指率 `σ := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | Def, P1-candidate as operational proxy |
-| T-IND-1 | 个体化作为相变 | P1-candidate |
-| T-IND-2 | 第一相变（主体位进入）条件 | P1-candidate |
-| T-IND-3 | 第二相变（自我意识凝结）条件 | P2（结构性假说） |
-| σ_sub, σ_self, σ_health 具体数值 / 阈值 | — | P3/P4（未实测，不得引用为定值） |
-| 自我意识 = 关于 θ 的 θ 二阶写回 | — | P2 canonical interpretation |
+| Def-`σ_{sr}` | 历史 / 自指平衡 proxy `‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | P2 model-local operational proxy; representation / attribution dependent |
+| T-IND-1 | phase-like self-reference dynamics may occur | P2 modelling hypothesis; **not** a subject theorem |
+| former T-IND-2 | `σ_{sr}^{sub}` + historical/bearing/concern/direction bundle iff subject entry | **RETIRED as current sufficiency / P1-candidate claim** |
+| `σ_{sr}^{sub}` | first model-regime balance / crossing coordinate (legacy symbol) | P3/P4 candidate; **not** subject / Stable-ISP / Bearer threshold |
+| T-IND-3 | second-order self-model / self-description writeback condensate | P2 conditional structural hypothesis |
+| `σ_{sr}^{self}` | second-order writeback activation coordinate | P3/P4 model-local candidate; **not** consciousness threshold |
+| positive subject-position sufficiency | — | **OPEN** |
+| phenomenality / experiencer transition | — | **OPEN** |
 
-**Downstream rule**：引用 T-IND-1/2 须标 `P1-candidate`；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
+**B1 downstream rule (2026-09-11)**：不得再引用 T-IND-1/2 或 `σ_{sr}^{sub}` 作为 P1-candidate subject-entry theorem。`σ_{sr}` 只在声明 unit / scale / lineage / attribution / representation / metric / time-window 后作为 model-local proxy。T-IND-3 与 `σ_{sr}^{self}` 只允许描述二阶 self-model/writeback 候选；不得据此推出 consciousness / phenomenality。One 回链 `SRT-ONE-FORMATION`；Stable ISP 回链 P1-T06；Bearer 当前路线按 `P+E` author adjudication；Bearer -> bearing / concern / subject 继续 OPEN。
 
 #### SRT-OCCLUSION-DYNAMICS
 
@@ -1829,8 +1834,8 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 
 | Label | Statement | Level |
 |---|---|---|
-| §2 σ 最小动力学（logistic + χ 跳跃） | — | P1-candidate 结构形式；具体函数族普适性由 §2.5 T-CHI-1 升 P1-candidate（H8） |
-| §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | "有效二阶相变核"四条结构属性 + 族内四个不变量（双稳态 / 病理吸引子 / 致命 `L_2` / 相变方向） | P1-candidate（χ 形式无关性升为定理后果） |
+| §2 `σ_{sr}` 最小动力学（logistic + χ 跳跃） | — | P1-candidate **model/equation structure only**；`σ_{sr}^{sub}` subject-entry semantics 已退役，不能由方程稳态推出 subject / Bearer |
+| §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | 有效 kernel family 下的 fixed-point / topology / direction invariance | P1-candidate mathematical/model-family result；**不提升 T-IND-3 为 subject/consciousness theorem** |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
 | §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
 | §3.5 T_dir 独立 ODE（弛豫 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；former-P1-T05-derived `r(t)` pump 已由 RC-A subtractive probe 删除；其余 κ_* 系数 P2/P3 |
@@ -6404,8 +6409,8 @@ SRT 主方程的运作机制如下：
 | **k_n** | `k_n` | Sub-Targets per Layer | Model-local number of anchoring sub-targets {σ_{n,1},…,σ_{n,k_n}} that $\hat{G}_\theta^{(n)}$ is posited to maintain within one on-phase. Its use in T-Scale-Rhythm-5 is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not a global cross-scale invariant. | Integer (≥ 1) | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
 | **τ_switch^min** | `\tau_{switch}^{min}` | Minimum Feasible Switch Time | Model-local lower bound on per-switch duration imposed by a named physical substrate. Its role in Rhythm-5 recursion and any nesting-depth ceiling is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not universal across substrates. | Time | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
 | **σ_{sr}** | `\sigma_{sr}` | Self-Reference Ratio | `σ_{sr} := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖) ∈ [0, 1]`. **P2 canonical interpretation:** `SRT_Individuation.md §八` states that the order-parameter choice is conventional and replaceable by an equivalent form. In the current bare-norm realization it is a model-local historical/writeback-balance proxy under a declared trace/ext attribution rule, parameter representation, and norm/metric. | Scalar [0,1] | L1; canonical source `Core_Law/SRT_L1_Hardening_Notes.md §1`, `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_L1_Formalism.md §2`. Not by itself a representation-invariant natural quantity, unique history-attribution theorem, causal-control share, bearer/selector criterion, or proof of a natural phase boundary. Distinct from main-equation state field `σ` and anchoring sub-target `σ_j`. |
-| **σ_{sr}^{sub}** | `\sigma_{sr}^{sub}` | Subject-Position Entry Threshold | First model-coordinate threshold used by the current individuation parameterization for subject-position entry. Concrete value P3/P4 pending. | Scalar | L1 structural hypothesis; current coordinate is conventional/replaceable and does not by itself establish a representation-independent natural phase boundary. The broader question whether P1-T06 has an independently evidenced natural transition boundary remains open. Canonical source `SRT_Individuation.md T-IND-2, §七.8, §八`. |
-| **σ_{sr}^{self}** | `\sigma_{sr}^{self}` | Self-Consciousness Condensation Threshold | Second model-coordinate threshold used by the current σ parameterization for second-order writeback condensation. Higher than `σ_{sr}^{sub}` inside the declared model; concrete value P3/P4 pending. | Scalar | L1 structural hypothesis / P2 strong candidate in the current parameterization. Does not make the bare σ coordinate natural or representation-invariant; phenomenality remains separately open. Canonical source `SRT_Individuation.md T-IND-3, §八`. |
+| **σ_{sr}^{sub}** | `\sigma_{sr}^{sub}` | Legacy First-Regime Coordinate | Model-local balance / regime-crossing coordinate in the `σ_{sr}` self-reference model. **B1 supersession:** retired as a canonical subject-position, Stable-ISP, Bearer, or consciousness threshold. | Model-local threshold coordinate | L1; P3/P4 candidate; legacy symbol retained for compatibility; source `SRT_Individuation.md` / `SRT_L1_Formalism.md §2`. |
+| **σ_{sr}^{self}** | `\sigma_{sr}^{self}` | Second-Order Writeback Coordinate | Model-local activation coordinate for a second-order self-model / writeback kernel. It is **not** an established self-consciousness / consciousness / phenomenality threshold. | Model-local threshold coordinate | L1; P3/P4 candidate; source `SRT_Individuation.md` / `SRT_L1_Formalism.md §2`. |
 | **σ_{sr}^{health}** | `\sigma_{sr}^{health}` | Healthy Operating-Point Center | Healthy working-region center inside the declared σ model, tracking balanced self-reference without pathological closure toward `σ_{sr} \to 1`. Typically close to the informal `σ_{sub}^\dagger` in `T_{dir}^{alg}` (`SRT_L1_Formalism.md §3.4`). | Scalar | L1 structural hypothesis; operating-point center, specific value P3/P4 and representation/model-class conditional; not a universal natural constant or standalone health criterion. Canonical source `SRT_L1_Formalism.md §2.4, §5.3`. |
 | **σ_{sr}^{coll}** | `\sigma_{sr}^{coll}` | Collective Self-Reference Ratio | Multi-ISP extension over shared `L_2` field `\mathcal{P}`. The current owner includes boundary-relative reclassification: shared `L_2` is added to collective trace and removed from collective ext because it is no longer new input relative to the declared collective exterior. | Scalar [0,1] | L1 model-local collective historical/endogeneity proxy under declared collective boundary, attribution, representation and norm. Its trace semantics are not automatically identical to individual own-output provenance. `σ_{sr}^{coll} \to 1` remains a model-class collapsed-into-higher-`L_2` indicator, not a representation-independent natural constant, collective-agency criterion, or causal-control share. Canonical source `SRT_Collective_Selection.md §4.1, §4.4, §4.7`. |
 

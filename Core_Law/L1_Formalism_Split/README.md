@@ -10,15 +10,15 @@ canonical: false
 dependency: [SRT-L1-FORMALISM]
 ---
 
-# SRT L1 Formalism Split Index Split Index
+# SRT L1 Formalism: Minimal Coupled Dynamics for σ_{sr}, d_c, T_dir, and S Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_L1_Formalism.md`](../SRT_L1_Formalism.md)
-- Source owner bytes: `60932`
-- Source owner SHA-256: `f140ee70c6c4cde70c03e3224e38b6a8485218cc809a1c8fd4aedcc9589b53e5`
+- Source owner bytes: `61751`
+- Source owner SHA-256: `2e46e5573af4d4d611b413eeeefb07c29edfd39ab6289eef6525091624bbcfd4`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT L1 Formalism: Minimal Coupled Dynamics for σ_{sr}, d_c, T_dir, and S | 27602 | `efbc22519e1d` |
-| 01 | [`01_Part02.md`](01_Part02.md) | §4.5 T-CHANNEL-1：通道指示函数族普适性（H9，2026-04-25） | 32469 | `23a342f9751e` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT L1 Formalism: Minimal Coupled Dynamics for σ_{sr}, d_c, T_dir, and S | 30243 | `77bbdbf87acf` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §4.5 T-CHANNEL-1：通道指示函数族普适性（H9，2026-04-25） | 32203 | `8e7d0a264071` |
