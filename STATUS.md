@@ -28,7 +28,7 @@ merged theory checkpoint:
 status closeout:
 #932 Close PR #931 status routing after merge
 
-current main before external-review reconciliation:
+baseline main at #933 opening:
 8b066b3d5e670ddd14e1ffe11b7ed0b32698f51d
 
 checkpoint role:
@@ -36,7 +36,7 @@ NONCANONICAL RECONSTRUCTION CONSOLIDATION
 
 post-merge external review:
 Claude + GPT-6 review received 2026-09-11
-review reconciliation: IN PROGRESS / AUTHOR ADJUDICATION REQUIRED FOR SUBSTANTIVE ROUTING CHANGES
+review reconciliation: AUTHOR-ADJUDICATED / #933 CONTROLLING POST-MERGE CORRECTION
 
 research_mode = U
 canonical edit = NO
@@ -72,7 +72,12 @@ new deep well = NO
 - `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md`
 - `Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md`
 
-The four files above are **post-merge machine reconciliation / pressure records**. They do not retroactively turn the original #931 producing workflow into independent review. Where they change substantive author meaning, author adjudication is required before hardening.
+**author adjudication / closeout:**
+
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`
+- `Operations/Audits/SRT_PR933_AUTHOR_ADJUDICATED_CLOSEOUT_2026-09-11.md`
+
+The four reconciliation files remain post-merge machine audit/pressure records and do not retroactively turn the original #931 producing workflow into independent review. The two substantive routing questions they exposed were explicitly author-adjudicated on 2026-09-11.
 
 ### 2. 当前理论主轴 — #931 landed reading
 
@@ -119,9 +124,9 @@ Active Selection
   own-consequence return + comparison-scale rewrite + selectable-space change + continued efficacy.
 ```
 
-The `Active Selection` / `second-order Selection` relation is now explicitly crosswalked; they must not be used as silent synonyms.
+The `Active Selection` / `second-order Selection` relation is now explicitly crosswalked and author-adjudicated; they must not be used as silent synonyms.
 
-### 3. Bearer routing — explicit unresolved/supersession ledger
+### 3. Bearer routing — author-adjudicated supersession ledger
 
 Controlling historical sequence:
 
@@ -144,13 +149,13 @@ new upstream One / Selection-position architecture proposed;
 a new Bearer gate was explicitly accepted by the author with "认同，然后继续。"
 ```
 
-Post-merge reviewer reconciliation proposes the following **machine routing pending explicit author confirmation**:
+The author explicitly accepted the following routing on 2026-09-11:
 
 ```text
 09-09 primitive-consequence rejection: RETAIN
 #927 old consequence-bearing programme closure: RETAIN
-09-10 cognitive-only/exhaustive Bearer layer reading: candidate PARTIAL SUPERSESSION
-09-11 One-first history-to-reconstitution Bearer route: candidate REOPENED NONCANONICAL ROUTE
+09-10 cognitive-only/exhaustive Bearer layer reading: PARTIALLY SUPERSEDED WHEN READ AS EXHAUSTIVE
+09-11 One-first history-to-reconstitution Bearer route: AUTHOR-ACCEPTED REOPENED NONCANONICAL ROUTE
 old R-B / R-C labels as automatically live owner routes: WITHDRAW
 ```
 
@@ -164,12 +169,13 @@ The proposed ontological burden is the **history-to-reconstitution dependence** 
 
 ### 4. Current author adjudications and earlier source-intuition that must be cross-read
 
-For #931 meaning, load:
+For the current #931 + #933 meaning, load the latest adjudication first:
 
-1. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`
-2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`
-3. `01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_CORRECTED_GATE_ADJUDICATION_2026-09-11.md`
-4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_POSITION_INDEXED_ACTIVE_SELECTION_ADJUDICATION_2026-09-11.md`
+1. `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`
+2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`
+3. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`
+4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_CORRECTED_GATE_ADJUDICATION_2026-09-11.md`
+5. `01_Source_Intuition/SRT_AUTHOR_REENTRY_POSITION_INDEXED_ACTIVE_SELECTION_ADJUDICATION_2026-09-11.md`
 
 Mandatory backward reconciliation sources:
 
@@ -324,7 +330,7 @@ STATUS navigation loss: DEBT CONFIRMED
 
 Therefore:
 
-> **#931 is retained as a historical noncanonical checkpoint, but canonical/owner hardening is paused until the post-merge reconciliation package is reviewed and the substantive Bearer/Active routing receives author adjudication.**
+> **#931 is retained as a historical noncanonical checkpoint. #933 is the author-adjudicated post-merge reconciliation layer for the Bearer/Active routing debt. Any canonical/owner hardening remains a separate future workline.**
 
 ---
 
@@ -479,7 +485,7 @@ strict numerical identity;
 unique post-branch successor;
 formal necessary-and-sufficient One theorem;
 formal sufficient Bearer theorem;
-exact ontological/cognitive Bearer layering after the 09-11 reopening;
+formal downstream cognitive-Bearer relation beyond the accepted minimal history-to-reconstitution route;
 full Agency gate;
 formal / empirical representation-invariant W1-W2 criteria;
 scale attribution under tightly coupled nested Ones;
@@ -496,15 +502,13 @@ phenomenality / experiencer transition.
 
 ```text
 1. treat #931 as a landed historical noncanonical checkpoint, not a final theory closure;
-2. review the named external-review reconciliation package;
-3. obtain author adjudication on:
-   A. the Bearer supersession/reopening reading;
-   B. Active Selection vs 2026-08-09 second-order Selection relation;
-4. only after that, decide whether any small owner/canonical-hardening PR is justified;
-5. keep Level 2 HOLD and scientific-distinctiveness guards unchanged.
+2. treat #933 as the author-adjudicated controlling reconciliation for its identified routing debts;
+3. after #933 lands, do not reopen broad theory merely to extend this package;
+4. any owner/canonical hardening must be a separate smaller future PR with its own gates;
+5. keep Level 2 HOLD, whole-package non-substitutability and scientific-distinctiveness guards unchanged.
 ```
 
-Do not reopen broad theory exploration merely to add more concepts. The current task is reconciliation and discriminating pressure.
+Do not reopen broad theory exploration merely to add more concepts. The current reconciliation is closed at the noncanonical level; remaining formal/empirical burdens stay explicitly open.
 
 ---
 

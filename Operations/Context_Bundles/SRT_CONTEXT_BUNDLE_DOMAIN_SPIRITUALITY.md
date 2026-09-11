@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 2d10370c
+source_commit: 0f0db81a
 source_branch: theory/pr931-external-review-reconciliation-20260911
-source_dirty: false
-inputs_digest: a0059b681c629037
+source_dirty: true
+inputs_digest: 6bf5487bc7168dec
 ---
 
 # SRT 灵性领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: a0059b681c629037
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `2d10370c` |
+| 来源 commit | `0f0db81a` |
 | 来源分支 | `theory/pr931-external-review-reconciliation-20260911` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
