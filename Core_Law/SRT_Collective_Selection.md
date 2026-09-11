@@ -7,16 +7,17 @@ layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P1-candidate
-dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-L1-FORMALISM, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-L1-FORMALISM, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Collective Selection: Multi-ISP Co-Selection and Shared L_2 Dynamics
 
 > **Role**: L1 canonical theory of collective selection. Fixes the structural object behind multi-ISP selection under shared `L_2`: when does a group of stable ISPs constitute a higher-order selection unit, when is it merely an aggregation, and under what conditions does shared `L_2` produce genuine co-selection versus externalization patterns.
 > **Claim-level note**：本文大多为 P1-candidate 结构性读法；集体 ISP 判据、co-selection 条件、三类退化形式按 P2 读；政治/制度/历史判断按 P3/P4，必须下推到 `Philosophy/` 与 `Philosophy/Social_Economics_*` 既有文件。
-> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP、Selection occurrence 或 agency；它们的定义与判定仍以对应 canonical / downstream owner 为准。
+> **Does not define**：`One / Selection-position`、`d-value`、`\Psi_f`、`T_dir`、stable ISP、Selection occurrence 或 agency；它们的定义与判定仍以对应 canonical / downstream owner 为准。
 > **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T06 stable ISP 与 absorption remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
 > **RC-A boundary (2026-08-18)**：former P1-T05 / Real Choice Moment 不再承担集体 Selection 或 collective-ISP 的定义权。T-COLL-1 的 stable-ISP extension 回链 P1-T06；脚本、制度自动化、投票或共识本身既不能证明更强 agency，也不能反推“没有 Selection”。
+> **R1 One-formation boundary (2026-09-11)**：`Core_Law/SRT_One_Formation.md` owns `One / Selection-position`. Relation-level or higher-order One language does **not** establish collective ISP automatically; T-COLL-1 remains the separate collective Stable-ISP standing gate. Shared `L_2`, `M(t)`, or collective `σ_{sr}^{coll}` therefore do not back-define One formation.
 > **Relation**: This file does not replace `Philosophy/SRT_Political_Philosophy.md`、`Philosophy/SRT_Social_Economics.md`、`Spirituality/SRT_Spirituality_Community_and_Sangha.md`；它在它们**之前**，固定"多主体共选作为结构对象是什么"的 L1 读法。规范性与制度判断仍在上述 domain 文件。
 >
 > **σ 符号命名空间（governance-canonical, 2026-04-25, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中集体自指率符号已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{coll}` 族（含 `σ_{sr,sub}^{coll}, σ_{sr,health}^{coll}` 等派生标记），是个体自指率 `σ_{sr}` 的多主体场扩展。与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 是**不同对象**。少数遗留的 `σ^{coll}` 历史符号在前向引用与跨文件桥接段落中保留，读者按此命名空间转读。

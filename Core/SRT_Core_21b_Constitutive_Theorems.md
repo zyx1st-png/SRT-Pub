@@ -3,12 +3,12 @@ id: SRT-CORE-21B-CONSTITUTIVE-THEOREMS
 type: theorem_set
 tags: [Formal logic, Constitutive Theorems, Claim Ladder]
 status: active
-version: v3
+version: v4
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P1
-dependency: [SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CLAIM-LADDER, SRT-CORE-12B]
+dependency: [SRT-CORE-21A-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CLAIM-LADDER, SRT-CORE-12B]
 ---
 
 # SRT Core 21B: Constitutive Theorems
@@ -168,7 +168,7 @@ No P1 `Real Choice Moment` theorem remains after RC-A.
 
 **Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
-**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`, and it does not decide the canonical owner or necessary-and-sufficient theorem for any thinner formed unity upstream of Stable ISP.
+**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`. The canonical semantic owner for the thinner upstream formation is `Core_Law/SRT_One_Formation.md`; P1-T06 still does not supply a necessary-and-sufficient theorem for One formation.
 
 **Implication**: Stability is not an arbitrary restriction imposed by the observer. P1-T06 identifies a **strong persistent-perspective standing** for a recurrent selection process. It does not claim to mark the first ontological appearance of perspective, and Stable-ISP standing does not by itself establish subject-position.
 

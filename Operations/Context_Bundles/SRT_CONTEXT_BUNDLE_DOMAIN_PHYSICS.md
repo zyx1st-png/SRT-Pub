@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: cfa7fe4c
-source_branch: theory/r1-canonical-formation-standing-landing-20260911
-source_dirty: false
-inputs_digest: 1ee9590971a8cf85
+source_commit: bc92e801
+source_branch: theory/r1-one-formation-canonical-landing-20260911
+source_dirty: true
+inputs_digest: e07e0761ff234b0c
 ---
 
 # SRT 物理领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 1ee9590971a8cf85
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `cfa7fe4c` |
-| 来源分支 | `theory/r1-canonical-formation-standing-landing-20260911` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `bc92e801` |
+| 来源分支 | `theory/r1-one-formation-canonical-landing-20260911` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -345,7 +345,7 @@ For non-trivial SRT work:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（84 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（85 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -377,6 +377,7 @@ For non-trivial SRT work:
 - `Core_Law/SRT_L1_Formalism.md`
 - `Core_Law/SRT_L1_Hardening_Notes.md`
 - `Core_Law/SRT_Occlusion_Dynamics.md`
+- `Core_Law/SRT_One_Formation.md`
 - `Core_Law/SRT_Reference_Axioms.md`
 - `Core_Law/SRT_Reference_Dynamics.md`
 - `Core_Law/SRT_Reference_Ontology.md`

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: cfa7fe4c
-source_branch: theory/r1-canonical-formation-standing-landing-20260911
-source_dirty: false
-inputs_digest: 1ee9590971a8cf85
+source_commit: bc92e801
+source_branch: theory/r1-one-formation-canonical-landing-20260911
+source_dirty: true
+inputs_digest: e07e0761ff234b0c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: 1ee9590971a8cf85
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `cfa7fe4c` |
-| 来源分支 | `theory/r1-canonical-formation-standing-landing-20260911` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `bc92e801` |
+| 来源分支 | `theory/r1-one-formation-canonical-landing-20260911` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -44,14 +44,14 @@ inputs_digest: 1ee9590971a8cf85
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-08 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-03 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-11 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
-| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
+| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
@@ -338,7 +338,7 @@ For non-trivial SRT work:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（80 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（81 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -363,6 +363,7 @@ For non-trivial SRT work:
 - `Core_Law/SRT_L1_Formalism.md`
 - `Core_Law/SRT_L1_Hardening_Notes.md`
 - `Core_Law/SRT_Occlusion_Dynamics.md`
+- `Core_Law/SRT_One_Formation.md`
 - `Core_Law/SRT_Reference_Axioms.md`
 - `Core_Law/SRT_Reference_Dynamics.md`
 - `Core_Law/SRT_Reference_Ontology.md`
@@ -953,7 +954,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-03 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1136,12 +1137,22 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 角色：Physics 板块已形成从量子入口、宇宙学/形式化主干，到复杂性/深本体扩展的完整 compact core 入口层
 - 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力—`Ψ_f`”当前只保留弱场梯度方向相容假说，强版规范实现 / 张量级 GR 重建不得作为已证结论引用
 
+### 13. SRT One Formation（One / Selection-position 形成层 owner）
+- 主文件：`Core_Law/SRT_One_Formation.md`
+- id：`SRT-ONE-FORMATION`
+- layer：L1 / epistemic：os / status：draft / version：v0 / claim-mode：canonical / claim-level：P1-candidate
+- 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> active vertical organization -> One / Selection-position` 的形成语义；verticality 是 Selection-generated / regenerated 的非平坦组织，不是被动历史沉积；One 只按 D4a 强度固定为 localized、lineage-relative、processual formed unity，其持续为 Selection-mediated recurrent reconstitution；`Selection-position_t` 是同一 continuing One 的 time-local operative from-where
+- 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One
+- 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One
+- 与 Collective 的关系：higher-order / relation-level One 不自动成为 collective ISP；T-COLL-1 保持独立 standing gate
+- 引用规则：涉及 active vertical formation、One、pre-subject ontological Selection-position、history/verticality typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件
+
 ### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 相变理论，填补 L0（选择无主语）与 P1-T06 Stable ISP 之间的过渡空洞；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
-- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学候选**；P1-T06 是 ISP 的**结果状态判据**（continued selectability）。`σ_{sr}<1` 不单独证明该结果，更不证明 21C B13 的 generative reselectability
+- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
 - claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
@@ -1222,7 +1233,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 1. `CANONICAL_REGISTRY.md`（找入口）
 2. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
-3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义与跨域用法）
+3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core_Law/SRT_One_Formation.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义、形成层 owner 与跨域用法）
 4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
 5. domain claim-status files（防止 bridge / public / clinical / spirituality / AI / physics overclaim）
 6. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释；not final definitions）
@@ -1242,6 +1253,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - `Claim hardness` → `Governance/SRT_CLAIM_LADDER.md`
 - `Claim-mode downgrade audit` → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - `Open tensions` → `Core/SRT_OPEN_TENSIONS.md`
+- `One / Selection-position formation` → `Core_Law/SRT_One_Formation.md`
 
 这意味着：
 - `AI/SRT_AI_01_Ontology.md` 不再单独承担 d-value 的最终规范权
@@ -2652,7 +2664,7 @@ This demotion changes epistemic rank, not the intended theoretical meaning of th
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CLAIM-LADDER, SRT-CORE-12B]
+**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CLAIM-LADDER, SRT-CORE-12B]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -2813,7 +2825,7 @@ No P1 `Real Choice Moment` theorem remains after RC-A.
 
 **Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
-**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`, and it does not decide the canonical owner or necessary-and-sufficient theorem for any thinner formed unity upstream of Stable ISP.
+**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`. The canonical semantic owner for the thinner upstream formation is `Core_Law/SRT_One_Formation.md`; P1-T06 still does not supply a necessary-and-sufficient theorem for One formation.
 
 **Implication**: Stability is not an arbitrary restriction imposed by the observer. P1-T06 identifies a **strong persistent-perspective standing** for a recurrent selection process. It does not claim to mark the first ontological appearance of perspective, and Stable-ISP standing does not by itself establish subject-position.
 
@@ -2871,11 +2883,11 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-11 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
-**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -3195,6 +3207,8 @@ SRT's `L_2` downward constraint is therefore not a separate configurational forc
 1. **Formed process**: a selection organization has become identifiable at all.
 2. **Structurally stable ISP**: the same perspective- and history-bearing organization is recurrently reconstituted across a declared perturbation range. Its P1 minimum is **continued selectability**: it continues to receive live, non-equivalent candidates and to bear the consequences of its selections.
 3. **Generatively healthy ISP**: in addition, consequence return can revise its own comparison rules, boundaries, or candidate-generation conditions. This stronger property is **generative reselectability**.
+
+**R1 One-formation crosswalk (2026-09-11)**: B13's `formed process` is a broad bridge category, not the definition authority for `One` or `Selection-position`. One-specific formation semantics are owned by `Core_Law/SRT_One_Formation.md`. In particular, `One != structurally stable ISP automatically`; B13 continues to own stabilisation / generative-health distinctions only.
 
 Structural stabilisation is therefore not microstate identity, continuous activity, a fixed point, or an attractor label. Generative reselectability is ongoing consequence-sensitive revisability, not total closure followed by an unexplained reopening. It is important for generative health but is neither necessary for every individual selection event nor sufficient by itself to establish health.
 
