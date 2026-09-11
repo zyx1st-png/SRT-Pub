@@ -12,7 +12,7 @@ updated: 2026-09-11
 
 > **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页 `§Fast Status` 只提供当前 live workline、程序级 verdict 与前向路由，不替代 canonical owners、作者源记录或历史审计。
 >
-> **历史快照**：本页 2026-09-11 重写前的完整旧 dashboard 已原样保存为 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.md`。
+> **历史快照**：本页 2026-09-11 重写前的完整旧 dashboard 已逐字保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`；同名 `.md` 为历史指针页。
 
 ## Fast Status
 
@@ -135,6 +135,10 @@ JFS = higher-order One: NO
 higher-order One = collective ISP: NO
 strict numerical identity solved: NO
 ```
+
+**既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
+
+- 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
 ### 5. W1 / W2 status
 
@@ -348,9 +352,13 @@ Do not continue adding new theory branches to #931 unless final review exposes a
 
 ## Historical navigation
 
-For pre-#931 detailed state, use:
+For pre-#931 detailed state, use the pointer page:
 
 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.md`
+
+The byte-preserving raw snapshot is:
+
+`Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`
 
 Other historical handoffs / closures remain under:
 
