@@ -5,7 +5,8 @@ tags: [FAQ, Philosophy, Defense]
 status: v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: companion_exposition
+canonical: false
 dependency: []
 ---
 

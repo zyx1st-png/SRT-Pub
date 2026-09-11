@@ -5,7 +5,8 @@ tags: [CoreLaw, Argument, SelfContained, Chinese]
 layer: L1
 epistemic_layer: os
 status: draft_v1
-claim_mode: canonical
+claim_mode: companion_exposition
+canonical: false
 dependency: [SRT-L0-METAPHYSICS]
 ---
 
