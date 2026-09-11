@@ -55,6 +55,10 @@ SPINE_BUNDLE_NAME = "SRT_CONTEXT_BUNDLE_SPINE.md"
 SPINE = [
     "SRT_AI_START.md",
     "CANONICAL_REGISTRY.md",
+    # 2026-09-11: cross-owner generative order now has its own canonical spine.
+    # It must be loaded before claim-ladder/local owners so older canonical text
+    # cannot silently override current formation / bearing routing.
+    "Core_Law/SRT_Generative_Ontology_Spine.md",
     "Governance/SRT_CLAIM_LADDER.md",
     "Governance/SRT_CLAIM_MODE_AUDIT.md",
     "Core_Law/SRT_L0_Metaphysics.md",
