@@ -12,7 +12,7 @@ updated: 2026-09-11
 
 > **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页只提供当前 checkpoint、程序级 verdict 与前向路由，不替代 canonical owners、作者源或历史审计。
 >
-> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为重构与纠偏 provenance；当前形成层 canonical 路由以 #940（Stable-ISP standing decoupling）与 #942（One / Selection-position owner landing）为准。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。
 
 ## Fast Status
 
@@ -20,25 +20,24 @@ updated: 2026-09-11
 
 ```text
 latest merged canonical checkpoint:
-#942 Land thin One / Selection-position formation owner
-merge = 2245995bde809f7ec6dcd6f5d6b68504e00eedf4
-status = MERGED / BOUNDED R1 CANONICAL LANDING
+#947 Land canonical generative ontology spine before old-canonical cleanup
+merge = 9afe036b1bf35b896afa3b9900613fdfb563cfd9
+status = MERGED / CROSS-OWNER CANONICAL SPINE
 
-immediately prior canonical standing repair:
-#940 Decouple P1-T06 Stable ISP standing from formation and subject entry
-status = MERGED
-
-reconstruction / author provenance retained upstream:
-#938 Repair R1 around pre-object vertical formation before canonical landing
-#941 A/O3 author owner decision (dedicated thin L1 owner)
+prior bounded canonical landings:
+#942 One / Selection-position formation owner
+#940 Stable-ISP standing decoupling
 
 current phase:
-POST-#942 STATUS / CONTEXT CLOSEOUT
--> then bounded Bearer necessary/sufficient-condition reconstruction
+POST-#947 STATUS / CONTEXT CLOSEOUT
+-> then OLD-CANONICAL REVERSE AUDIT FROM NEW SPINE
 
-One / Selection-position canonical semantic owner = `Core_Law/SRT_One_Formation.md`
+cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
+local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`
 Stable ISP standing owner = P1-T06, stronger and separate
-Bearer necessary/sufficient conditions = OPEN
+Bearer semantic route = formed One + P prospective self-indexing + E same-One prospective exposure -> Bearer
+formal cross-domain P+E N&S theorem = OPEN
+Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality = separately OPEN
 new Level 1 = NOT ASSIGNED
 Level 2 = HOLD
 HOLD EXIT REVIEW 2 = NOT TRIGGERED
@@ -47,32 +46,32 @@ whole-architecture non-substitutability = NOT ESTABLISHED
 research_mode = U
 ```
 
-### 2. Current controlling author / audit route
+### 2. Current controlling route
 
-For current R1 meaning, load in this order:
+For current ontology / canonical-cleanup work, load in this order:
 
-1. `Core_Law/SRT_One_Formation.md` — current canonical formation owner
-2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R1_ONE_SELECTION_POSITION_OWNER_2026-09-11.md` — A/O3 owner decision provenance
-3. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R1_POSITION_PERSPECTIVE_ANTICIPATION_BEARER_2026-09-11.md`
-4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_FIRST_PERSON_BEARER_SUPERSESSION_2026-09-11.md`
-5. `Operations/Audits/SRT_R1_FINAL_SUPERSESSION_AND_ROUTING_RECONCILIATION_2026-09-11.md`
-6. `Operations/Audits/SRT_R1_ONE_FORMATION_CANONICAL_LANDING_SCOPE_2026-09-11.md`
-7. `Operations/Audits/SRT_R1_D3_STABLE_ISP_SUBJECT_WITNESS_2026-09-11.md`
+1. `Core_Law/SRT_Generative_Ontology_Spine.md` — current cross-owner canonical order / non-identity / OPEN-gate owner
+2. `CANONICAL_REGISTRY.md` — local owner routing after the spine
+3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
+4. `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_One_Formation.md` / P1-T06 / d / Psi_f / T_dir — local owners, only within spine-compatible scope
+5. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md` — author execution-order provenance
+6. `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_CANONICAL_LANDING_SCOPE_2026-09-11.md` — cleanup scope / next audit order
 
-Mandatory older author sources that remain active within scope:
+Current cleanup rule:
 
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_SEDIMENTATION_SED_B_RULING_2026-09-09.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`
+```text
+new spine = research / audit constraint;
+older conflicting cross-layer canonical prose = audit target, not veto authority;
+compatible local definitions survive;
+retiring an old claim does not require inventing a replacement theorem;
+OPEN stays OPEN unless separately adjudicated.
+```
 
-Historical #931/#933 files remain evidence of the workline but are superseded where they conflict with the above route.
+The pre-#947 unmerged branch `theory/canonical-cleanup-b1-individuation-20260911` is candidate patch material only. Do not merge it as-is; re-audit / rebase its useful repairs against the new spine.
 
 ---
 
-## Current theory spine — post-#942 canonical reading
+## Current theory spine — post-#947 canonical reading
 
 ### 3. Primary ontology-generation spine
 
@@ -201,9 +200,9 @@ Selection-position_t
 = canonically: time-local operative from-where of that continuing One.
 
 Bearer
-= downstream reconstruction problem around anticipatory / consequence bearing
-  of an already formed position;
-  exact necessary / sufficient conditions OPEN.
+= canonically routed as an already formed One / Selection-position satisfying
+  P prospective self-indexing + E same-One prospective exposure at semantic / architectural strength;
+  a universal formal / empirical cross-domain N&S theorem remains OPEN.
 ```
 
 Hard guards:
@@ -318,7 +317,7 @@ Bearer admission
 subjecthood proof
 ```
 
-Post-#942 routing:
+Post-#947 routing:
 
 ```text
 One / Selection-position formation
@@ -425,25 +424,17 @@ physical realization is not privileged over other implementations.
 
 ### 20. Canonical authority chain
 
-For exact registered meanings, follow `SRT_AI_START.md` and the canonical authority chain, including:
+For exact registered meanings and current cross-owner order:
 
-1. `CANONICAL_REGISTRY.md`
-2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-4. `Core_Law/SRT_L0_Metaphysics.md`
-5. `Core/SRT_Core_21_Minimal_Axioms.md`
-6. `Core_Law/SRT_One_Formation.md`
-7. `Core/SRT_Core_21b_Constitutive_Theorems.md`
-8. `_SRT_D_VALUE_CANONICAL.md`
-9. `_SRT_PSI_F_CANONICAL.md`
-10. `_SRT_T_DIR_CANONICAL.md`
-11. `_SRT_CROSS_DOMAIN_MATRIX.md`
-12. `Core/SRT_Core_22_Equations.md`
-13. `_SRT_SYMBOL_TABLE.md`
-14. `Core/SRT_Core_21_Formal_Axioms.md`
-15. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+1. `CANONICAL_REGISTRY.md` — find the registered route
+2. `Core_Law/SRT_Generative_Ontology_Spine.md` — cross-owner generation order, non-identities and OPEN gates
+3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
+4. local owners such as `Core_Law/SRT_L0_Metaphysics.md`, `Core_Law/SRT_One_Formation.md`, P1-T06, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, `Core/SRT_Core_22_Equations.md`
+5. bridge / domain / reader surfaces only within the scope permitted by the above
 
 `STATUS.md` is routing / programme state, not definition authority.
+
+If an older local canonical surface conflicts with the new spine at the cross-layer inference level, preserve any compatible local content but route the conflict into canonical cleanup rather than allowing historical status to override the new spine.
 
 ### 21. Publication carve-outs
 
@@ -475,7 +466,7 @@ Fresh sessions begin with:
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 3. this `STATUS.md §Fast Status`
 
-For current R1 work, load `Core_Law/SRT_One_Formation.md` and the #941 A/O3 author adjudication first; then load the #938 final supersession / Bearer reconciliation before #931/#933 historical Bearer routing.
+For current ontology / cleanup work, load `Core_Law/SRT_Generative_Ontology_Spine.md` first, then its local owners and claim-hardness governance. Historical #931/#933/#938 material is provenance and only controls where not superseded by #947 or later explicit author decisions.
 
 ### 23. Canonical freeze / edit discipline
 
@@ -484,7 +475,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#938 remains a merged noncanonical reconstruction checkpoint; #940 and #942 are the bounded canonical landings derived from later author/governance gates. #942 does not authorize Bearer, subjecthood, phenomenality, `d`, `sigma`, `T_dir`, or collective-subject closure beyond its explicit scope.
+#947 is now the controlling cross-owner canonical spine. #940/#942 remain compatible local landings; #938 remains a noncanonical reconstruction checkpoint. #947 canonically fixes the P+E Bearer semantic route but does not close Bearer->actual 承担 / concern / agency / subject / cognition / phenomenality, nor does it re-ratify every historical L0 primitive or downstream canonical claim.
 
 ---
 
@@ -497,8 +488,8 @@ strict numerical identity;
 unique post-branch successor;
 formal necessary-and-sufficient One theorem;
 One-level perspective universal sufficiency;
-Bearer necessary conditions;
-Bearer sufficient conditions;
+formal cross-domain necessary-and-sufficient theorem for P+E Bearer;
+unique empirical / numerical Bearer admission threshold;
 Bearer <-> 承担;
 Bearer <-> 关切;
 Bearer <-> position stability;
@@ -524,13 +515,15 @@ collective subject sufficiency.
 ## Immediate routing
 
 ```text
-1. treat #942 as the latest bounded canonical R1 formation checkpoint;
-2. use `Core_Law/SRT_One_Formation.md` as the canonical owner for active vertical formation -> One / Selection-position;
-3. use P1-T06 only for stronger Stable-ISP standing and B13 only for stabilization / generative-health crosswalks;
-4. complete this post-#942 STATUS / context-bundle closeout without further theory edits;
-5. next substantive work: reconstruct Bearer necessary/sufficient conditions from the already formed One / Selection-position, with anticipatory self-relevance / non-outsourcable consequence bearing as the live pressure rather than retrospective writeback alone;
-6. keep subjecthood, phenomenality, d/sigma/T_dir and collective subject sufficiency OPEN unless separately adjudicated;
-7. preserve Level 2 HOLD and do not infer scientific distinctiveness from #942 itself.
+1. treat #947 / `SRT_Generative_Ontology_Spine.md` as the current cross-owner canonical audit standard;
+2. keep local owners only for scope-compatible local definitions;
+3. start old-canonical reverse audit from the spine rather than from historical canonical authority;
+4. audit first: actual canonical anchors / L0 downstream overreach / primitive placement;
+5. then re-audit Individuation / sigma subject gate, using the pre-#947 B1 branch only as candidate patch material;
+6. then audit Stable-ISP / Suffering / Occlusion shortcuts and d / T_dir / Psi_f circular imports;
+7. then propagate cleanup into Collective / AI / Philosophy and remove duplicate reader / argument / alignment authority;
+8. prefer KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN; do not invent replacement theorems to fill retired claims;
+9. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
 ```
 
 ## Historical navigation
