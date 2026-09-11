@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 0f0db81a
-source_branch: theory/pr931-external-review-reconciliation-20260911
-source_dirty: true
-inputs_digest: 6bf5487bc7168dec
+source_commit: 156c4dbf2
+source_branch: HEAD
+source_dirty: false
+inputs_digest: 924427b8bed84f30
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: 6bf5487bc7168dec
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `0f0db81a` |
-| 来源分支 | `theory/pr931-external-review-reconciliation-20260911` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `156c4dbf2` |
+| 来源分支 | `HEAD` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

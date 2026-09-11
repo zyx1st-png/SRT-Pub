@@ -10,333 +10,357 @@ updated: 2026-09-11
 
 # SRT 当前状态仪表盘
 
-> **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页 `§Fast Status` 只提供当前 checkpoint、程序级 verdict 与前向路由，不替代 canonical owners、作者源记录或历史审计。
+> **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页只提供当前 checkpoint、程序级 verdict 与前向路由，不替代 canonical owners、作者源或历史审计。
 >
-> **历史快照**：本页 2026-09-11 重写前的完整旧 dashboard 已逐字保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`；同名 `.md` 为历史指针页。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933 的旧路由继续作为历史记录保留，但不再优先于本页明确列出的 #938 修复控制面。
 
 ## Fast Status
 
-### 1. 当前 landed checkpoint + post-merge review state
+### 1. 当前工作状态
 
 ```text
-merged theory checkpoint:
+latest merged reconstruction checkpoint:
 #931 Consolidate Selection, vertical One, Bearer, and position-indexed Active Selection
+merge = 87c4b6cfe47fef87aac643376a6ef107624fd33d
 
-#931 merge:
-87c4b6cfe47fef87aac643376a6ef107624fd33d
+post-merge reconciliation checkpoint:
+#933 author-adjudicated reviewer reconciliation
 
-status closeout:
-#932 Close PR #931 status routing after merge
+current live repair PR:
+#938 Repair R1 around pre-object vertical formation before canonical landing
+status = DRAFT / OPEN / NONCANONICAL
 
-baseline main at #933 opening:
-8b066b3d5e670ddd14e1ffe11b7ed0b32698f51d
-
-checkpoint role:
-NONCANONICAL RECONSTRUCTION CONSOLIDATION
-
-post-merge external review:
-Claude + GPT-6 review received 2026-09-11
-review reconciliation: AUTHOR-ADJUDICATED / #933 CONTROLLING POST-MERGE CORRECTION
-
-research_mode = U
-canonical edit = NO
+canonical edit in #938 = NO
 new Level 1 = NOT ASSIGNED
 Level 2 = HOLD
 HOLD EXIT REVIEW 2 = NOT TRIGGERED
 scientific distinctiveness = NOT ESTABLISHED
-architecture-level non-substitutability = NOT ESTABLISHED
-new deep well = NO
+whole-architecture non-substitutability = NOT ESTABLISHED
+research_mode = U
 ```
 
-**#931 handoff / historical controlling record：**
+### 2. Current controlling author / audit route
 
-`Operations/Status_History/SRT_STATUS_2026-09-11_SELECTION_VERTICAL_ONE_LINEAGE_HANDOFF.md`
+For current R1 meaning, load in this order:
 
-**landed consolidated proposal：**
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R1_POSITION_PERSPECTIVE_ANTICIPATION_BEARER_2026-09-11.md`
+2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_FIRST_PERSON_BEARER_SUPERSESSION_2026-09-11.md`
+3. `Operations/Audits/SRT_R1_FINAL_SUPERSESSION_AND_ROUTING_RECONCILIATION_2026-09-11.md`
+4. `Operations/Audits/SRT_R1_FORMATION_STANDING_LANDING_PREPARATION_2026-09-11.md`
+5. `Operations/Audits/SRT_R1_D3_STABLE_ISP_SUBJECT_WITNESS_2026-09-11.md`
 
-`Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md`
+Mandatory older author sources that remain active within scope:
 
-**terminal strongest-neighbor pressure：**
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_SEDIMENTATION_SED_B_RULING_2026-09-09.md`
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_VERTICAL_GENERATION_VG_RULING_2026-09-09.md`
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md`
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md`
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_ANTICIPATORY_COMMITMENT_ACTIVE_PASSIVE_SELECTION_2026-09-10.md`
+- `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`
 
-`Operations/Audits/SRT_SELECTION_VERTICAL_ONE_TERMINAL_STRONGEST_NEIGHBOR_PRESSURE_2026-09-11.md`
+Historical #931/#933 files remain evidence of the workline but are superseded where they conflict with the above route.
 
-**formal content review / closeout：**
+---
 
-- `Operations/Audits/SRT_PR931_FORMAL_CONTENT_REVIEW_2026-09-11.md`
-- `Operations/Audits/SRT_PR931_POST_REVIEW_CLOSEOUT_2026-09-11.md`
+## Current theory spine — repaired #938 reading
 
-**post-merge named external-review reconciliation：**
-
-- `Operations/Audits/SRT_PR931_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md`
-- `Operations/Audits/SRT_BEARER_ROUTE_SUPERSESSION_RECONCILIATION_2026-09-11.md`
-- `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md`
-- `Operations/Audits/SRT_W2_STATE_AUGMENTATION_AND_CASE_PRESSURE_2026-09-11.md`
-
-**author adjudication / closeout:**
-
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`
-- `Operations/Audits/SRT_PR933_AUTHOR_ADJUDICATED_CLOSEOUT_2026-09-11.md`
-
-The four reconciliation files remain post-merge machine audit/pressure records and do not retroactively turn the original #931 producing workflow into independent review. The two substantive routing questions they exposed were explicitly author-adjudicated on 2026-09-11.
-
-### 2. 当前理论主轴 — #931 landed reading
-
-The #931 checkpoint remains landed and noncanonical:
+### 3. Primary ontology-generation spine
 
 ```text
 minimum non-neutrality / pre-object difference
 -> subjectless Selection
 -> manifestation + relative backgrounding
--> vertical field writeback / reconstitution
--> repeated cycles
--> localized lineage-relative result-to-condition recursion
+-> active verticalization / non-flat selectable-space construction
+-> recurrent / re-entering localized vertical organization
 -> One / Selection-position
--> downstream history-to-reconstitution bearing where separately paid
--> post-formation position-indexed Active Selection where the formed from-where is load-bearing in organizational reconstruction
--> multiscale / relation-level reconstruction
--> JFS / higher-order One / collective ISP under separate gates.
 ```
 
-Current compact roles after reviewer pressure:
+This is the current primary reconstruction axis.
+
+Do **not** use as primary generation laws:
+
+```text
+history-bearing -> verticality
+history-to-reconstitution -> Bearer
+formed process -> One -> Stable ISP -> subject-position
+```
+
+### 4. History / verticality typed separation
+
+Current controlling SED-B / VG distinction:
+
+```text
+SED-B / historical writeback
+= result / condition side:
+  prior Selection leaves retained history-conditioned differences
+  that alter later transition / reconstitution conditions.
+
+VG / active vertical generation
+= source / ongoing-process side:
+  Selection generates / regenerates the non-flat relation through which
+  manifestation and relative backgrounding occur.
+```
+
+Therefore:
+
+```text
+history != ontological source of verticality
+historical writeback != Selection-position
+historical writeback may condition later vertical re-generation / reconstitution
+```
+
+History remains important for continuation and lineage without becoming the source of verticality.
+
+### 5. Positionality and Selection-position
+
+Three burdens must remain distinct:
+
+```text
+L0 positionality:
+Selection is necessarily indexed to a finite position.
+
+formed Selection-position:
+an already formed vertical organization / One has a time-local operative from-where.
+
+stronger first-person bearing direction:
+future alternatives become different in what this continuing position itself
+is expected to undergo / preserve / lose / enable.
+```
+
+Guards:
+
+```text
+position alone != perspective
+Selection-position standing != Bearer automatically
+Selection-position standing != first-person bearing automatically
+first-person bearing != subjecthood automatically
+```
+
+### 6. Perspective layering
+
+Current One-level direction:
+
+```text
+One-level perspective candidate
+= the lineage-conditioned organization of a formed One / Selection-position
+  is itself load-bearing in later manifestation, relative backgrounding,
+  and maintenance / construction of selectable space.
+```
+
+This is endogenous participation, not an external coordinate description.
+
+Current status:
+
+```text
+One-level perspective can exist: YES / reconstruction direction
+all Ones automatically have it: NOT ESTABLISHED
+full sufficient condition: OPEN
+```
+
+Bearer-level perspective is a thicker downstream research direction in which future branches become related to what the continuing position itself is to undergo / preserve / lose / enable.
+
+Phenomenal / experiencer perspective remains separately OPEN.
+
+### 7. Anticipation layering
+
+Anticipation must not be moved entirely downstream to Bearer.
+
+```text
+A1 Selection / verticality forward structuring:
+future selectable space is actively constructed / maintained / kept re-enterable.
+
+A2 formed-position internal anticipation:
+a formed One / Selection-position participates from within its own organization
+in preparing / differentiating possible continuations.
+
+A3 Bearer research direction:
+future branches become non-neutral in terms of what this position itself
+will undergo / preserve / lose / enable.
+```
+
+None of A1–A3 automatically means Bayesian prediction, explicit cognitive modelling, consciousness or phenomenality.
+
+### 8. One / Selection-position / Bearer current layering
 
 ```text
 One
-= continuing localized vertical process-unit candidate;
+= continuing localized vertical process-unit / formed unity candidate.
 
 Selection-position_t
-= time-local operative from-where candidate;
+= time-local operative from-where of that continuing organization.
 
 Bearer
-= NOT a primitive Selection criterion;
-  current #931 candidate asks whether an underlying downstream change becomes
-  constitutive history for later reconstitution of an already-admitted One;
+= downstream reconstruction problem around anticipatory bearing
+  of an already formed position;
+  exact necessary / sufficient conditions OPEN.
+```
+
+Hard guards:
+
+```text
+One != Bearer
+Selection-position != Bearer
+history-bearing != Bearer
+own-history writeback != bearing
+being affected != bearing
+feedback != bearing
+Bearer != 承担 by definition
+Bearer != subject
+Bearer != experiencer
+```
+
+---
+
+## Supersession ledger for #931 / #933
+
+### 9. What remains retained
+
+Retain from #931/#933 within scope:
+
+```text
+pre-object difference -> subjectless Selection;
+manifestation + relative backgrounding;
+active vertical organization;
+One / Selection-position distinction;
+lineage-relative reconstitution;
+distributed history / no mandatory centralized history store;
+who causes != who bears;
+being affected != bearing;
+feedback != bearing;
+state change != own-history writeback;
+W2 happened to O != O actively Selected;
+Active Selection != second-order Selection;
+multiscale standing must be paid independently at each claimed scale.
+```
+
+### 10. What is demoted / retyped
+
+```text
+history-to-reconstitution dependence
+-> retrospective integration / continuity evidence relation;
+   necessary role for Bearer = OPEN;
+   sufficient Bearer status = WITHDRAWN.
 
 self-consequence closure
-= Selection_O -> downstream effect -> later reconstitution_O;
-  stronger typed relation only, NOT full Agency theorem;
+-> retrospective self-effect closure relation;
+   possible future input to Bearer research = OPEN;
+   no longer ordered as > generic Bearer.
 
-Active Selection
-= broader reconstruction-mode candidate;
-  post-formation claim requires position-indexed participation in organizational writeback;
+matched-history tests
+-> retrospective dependence tests only;
+   no Bearer score by themselves.
 
-2026-08-09 second-order Selection
-= stronger historical specialization candidate requiring
-  own-consequence return + comparison-scale rewrite + selectable-space change + continued efficacy.
+PH-IND02 PERS-2
+-> retrospective consequence/history relation family;
+   no longer a Bearer admission gate.
 ```
 
-The `Active Selection` / `second-order Selection` relation is now explicitly crosswalked and author-adjudicated; they must not be used as silent synonyms.
-
-### 3. Bearer routing — author-adjudicated supersession ledger
-
-Controlling historical sequence:
+### 11. What is retired as current admission logic
 
 ```text
-2026-09-09:
-consequence is external/observer-facing result language,
-NOT primitive Selection ontology or Selection admission criterion.
-
-2026-09-10:
-Selection-position carries the main structural/ontological burden;
-Bearer described as primarily cognitively special;
-exact Bearer <-> Position relation left OPEN.
-
-#927 closure:
-old consequence-bearing ontology programme CLOSED;
-reopening requires a fresh author question rooted in the current architecture.
-
-2026-09-11 #931:
-new upstream One / Selection-position architecture proposed;
-a new Bearer gate was explicitly accepted by the author with "认同，然后继续。"
+history-to-reconstitution = Bearer definition: RETIRED
+first constitutive history coupling = Bearer onset: RETIRED
+SC > generic Bearer: RETIRED
+old R-B / R-C as live Bearer owner routes: RETIRED
+presence / absence of constitutive historical writeback -> Bearer YES / NO: RETIRED
 ```
 
-The author explicitly accepted the following routing on 2026-09-11:
+The historical author acceptance of the earlier gate remains part of the research record; its current sufficiency status is superseded by the later author adjudication.
+
+### 12. W2 cases E / F current reading
+
+Historical descriptions remain useful, but Bearer verdicts are superseded.
 
 ```text
-09-09 primitive-consequence rejection: RETAIN
-#927 old consequence-bearing programme closure: RETAIN
-09-10 cognitive-only/exhaustive Bearer layer reading: PARTIALLY SUPERSEDED WHEN READ AS EXHAUSTIVE
-09-11 One-first history-to-reconstitution Bearer route: AUTHOR-ACCEPTED REOPENED NONCANONICAL ROUTE
-old R-B / R-C labels as automatically live owner routes: WITHDRAW
+Case E:
+no constitutive later-history relation for the named perturbation
+-> retrospective history-to-reconstitution relation = NO
+-> Bearer = NOT ESTABLISHED BY THIS TEST
+
+Case F:
+persistent lineage-indexed history-to-reconstitution relation
+-> retrospective relation = YES / candidate as separately scoped
+-> Bearer = NOT ESTABLISHED BY THIS TEST
 ```
 
-Do not write this as:
+Thus neither absence nor presence of that retrospective relation is currently a sufficient Bearer classifier.
+
+---
+
+## Stable ISP / B13 / measurement routing
+
+### 13. Stable ISP and B13
+
+P1-T06 Stable ISP and B13 remain important canonical neighbors, but no longer organize the ontology-generation spine.
+
+Use them for:
 
 ```text
-consequence moved back into primitive Selection ontology.
+standing / persistence / perspective / history / consequence crosswalks
 ```
 
-The proposed ontological burden is the **history-to-reconstitution dependence** underlying an observer-facing consequence/effect label.
-
-### 4. Current author adjudications and earlier source-intuition that must be cross-read
-
-For the current #931 + #933 meaning, load the latest adjudication first:
-
-1. `01_Source_Intuition/SRT_AUTHOR_REENTRY_PR931_EXTERNAL_REVIEW_RECONCILIATION_ADJUDICATION_2026-09-11.md`
-2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_STRUCTURE_CORRESPONDENCE_2026-09-11.md`
-3. `01_Source_Intuition/SRT_AUTHOR_REENTRY_ONE_VERTICAL_MULTIPLICITY_SECOND_ADJUDICATION_2026-09-11.md`
-4. `01_Source_Intuition/SRT_AUTHOR_REENTRY_BEARER_CORRECTED_GATE_ADJUDICATION_2026-09-11.md`
-5. `01_Source_Intuition/SRT_AUTHOR_REENTRY_POSITION_INDEXED_ACTIVE_SELECTION_ADJUDICATION_2026-09-11.md`
-
-Mandatory backward reconciliation sources:
-
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_CONSEQUENCE_EXTERNAL_READOUT_CORRECTION_2026-09-09.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_SELECTION_POSITION_ONTOLOGY_AND_BEARER_COGNITIVE_ROLE_2026-09-10.md`
-- `Operations/Audits/SRT_BEARER_CONSEQUENCE_SUPPORTING_LINE_CLOSURE_2026-09-10.md`
-- `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md`
-
-Supporting 2026-09-10 author directions remain active within their scope:
-
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_VERTICAL_STRUCTURE_AS_ACTIVE_SELECTABLE_SPACE_CONSTRUCTION_2026-09-10.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_FIRST_PERSON_ACTIVE_SELECTION_STABILITY_CORRECTION_2026-09-10.md`
-- `01_Source_Intuition/SRT_AUTHOR_REENTRY_ACTIVE_SELECTION_AND_INTEGRATIVE_WHOLE_FUTURE_SELECTABILITY_2026-09-10.md`
-
-### 5. Current accepted guards
+Do not use them for:
 
 ```text
-all vertical structure = One: NO
-One = static snapshot: NO
-One = observer label / projection: NO
-One = Bearer: NO
-consequence = primitive Selection ontology: NO
-consequence = Selection admission criterion: NO
-Bearer = Agency: NO
-Agency = Active Selection: NO
-Bearer requires self-caused consequence: NO for the #931 generic candidate
-self-consequence required for 2026-08-09 second-order Selection gate: YES
-feedback = Bearer: NO
-state change = own-history writeback: NO
-self-consequence closure = full Agency theorem: NO
-Active Selection = second-order Selection: NO
-Active Selection = ordinary learning by label alone: NO
-Active Selection requires consciousness / reflective intention: NO
-meta-selector required: NO
-field-indexed Selection excludes position-indexed Selection: NO
-ordinary dynamics excluded from Selection: NO
-JFS = higher-order One: NO
-higher-order One = collective ISP: NO
-strict numerical identity solved: NO
+verticality generation
+Bearer admission
+subjecthood proof
 ```
 
-**既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
+Scoped candidate retained:
 
-- 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
+```text
+within declared same unit / scale / lineage / interval / perturbation range,
+Stable ISP may realize D4a's thin formed-continuity function.
+```
 
-### 6. W1 / W2 — post-review correction
+This is not a reverse implication, generation law or full One theorem.
+
+### 14. W1 / W2
 
 W1/W2 remain machine audit labels only.
 
 ```text
 W1 configuration writeback
-= change under broadly preserved later-selectability organization;
+= change under broadly preserved later-selectability organization.
 
 W2 organizational writeback
 = change in relations that generate, admit, suppress, reach,
 bound or reconstitute later continuations.
 ```
 
-Post-review representation-invariance guard:
+Representation-invariance guard remains:
 
 ```text
-W1/W2 MUST follow the causal/organizational role of the changed relation;
-it MUST NOT depend on whether a model encodes that relation as
-state / parameter / slow variable / weight / "structure".
+W1/W2 follow causal / organizational role,
+not whether a model calls the variable state / parameter / weight / structure.
 ```
 
-State-vector augmentation alone cannot create or erase W2 standing.
+W2 does not decide Bearer by itself.
 
-Worked separation now recorded:
+### 15. d / sigma / T_dir
+
+Continue to preserve:
 
 ```text
-One + transient perturbation with no constitutive later-history writeback
--> One may continue
--> Bearer relative to that perturbation: NO
-
-externally imposed W2-like reprogramming of O
--> W2 happened to O
--> Active_O: NO unless O's own current Selection-position is load-bearing
+d-value != subject proof
+sigma threshold != ontology event by itself
+T_dir != subject proof
+measurement variables may read declared structures;
+they may not silently constitute them.
 ```
 
-Fire/flame/hurricane remain edge cases, not automatic admissions.
+Exact bearer/domain and threshold assignments remain OPEN.
 
-### 7. Mature-neighbor / contribution status after external review
+**既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
 
-The terminal pass remains useful as a local-mechanism inheritance map, but its post-merge reading is tightened.
-
-Strongly mature-theory-paid local territory includes:
-
-```text
-process identity / ongoing individuation;
-organizational closure / autonomy;
-adaptive feedback and consequence-sensitive change;
-future-directed action / anticipation;
-modification of future selective conditions;
-changing possibility spaces;
-participant-side / embodied selective engagement;
-interactional / organizational relation-level continuation;
-operation <-> structure recursion;
-first-/second-order change analogues in learning/control traditions.
-```
-
-Current safe SRT status is:
-
-```text
-candidate architecture / repartition: RETAIN FOR TESTING
-local mechanism novelty: NOT ESTABLISHED
-whole-architecture non-substitutability: NOT ESTABLISHED
-scientific distinctiveness: NOT ESTABLISHED
-```
-
-Do **not** infer that the architecture belongs uniquely to SRT merely because local mechanisms were inherited.
-
-Future formal One pressure should explicitly include mature mathematical individuality frameworks rather than treating `One` formalization as greenfield.
-
-### 8. External review provenance
-
-The original #931 internal red-team, terminal pressure and formal review were producing-workflow self-checks. They were useful but were **not independent external review**.
-
-Actual named post-merge external model review now recorded:
-
-```text
-Claude — supplied by author on 2026-09-11
-GPT-6 — supplied by author on 2026-09-11
-```
-
-See:
-`Operations/Audits/SRT_PR931_EXTERNAL_REVIEW_RECONCILIATION_2026-09-11.md`
-
-This satisfies the governance requirement to identify actual reviewer/model, reviewed scope, strongest objection and disposition when external review is used.
-
-### 9. Formal Review / merge verdict — preserved but narrowed
-
-#931 remains a successfully merged noncanonical checkpoint:
-
-```text
-CANONICAL DIFF: NONE
-FINAL GOVERNANCE PREFLIGHT: SUCCESS
-PR #931: MERGED
-PR #932: MERGED
-```
-
-But post-merge external review found reconciliation debt that the original formal review did not catch:
-
-```text
-Bearer prior-ruling reconciliation: DEBT CONFIRMED
-Active vs second-order Selection crosswalk: DEBT CONFIRMED
-W2 state-augmentation / representation invariance: DEBT CONFIRMED
-review provenance labeling: DEBT CONFIRMED
-STATUS navigation loss: DEBT CONFIRMED
-```
-
-Therefore:
-
-> **#931 is retained as a historical noncanonical checkpoint. #933 is the author-adjudicated post-merge reconciliation layer for the Bearer/Active routing debt. Any canonical/owner hardening remains a separate future workline.**
+已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
 ---
 
-## Programme-level verdicts that remain unchanged
+## Programme-level verdicts unchanged
 
-### HOLD
+### 16. HOLD
 
 ```text
 CONTINUE HOLD — NAMED BLOCKER
@@ -351,7 +375,7 @@ The blocker remains a bounded implementation-specific Level-2 realization design
 
 Physics is permitted but not privileged.
 
-### IRR-B
+### 17. IRR-B
 
 > Genuine Selection leaves an incompletely erasable effective difference somewhere in the current complete relevant causal state; local restoration / information relocation may occur, but the complete relevant system cannot truly return to the same pre-Selection state.
 
@@ -360,21 +384,17 @@ IRR-B Level 1: PASS — NARROW
 IRR-B Level 2: HOLD
 ```
 
-### MOBJ2-B / manifestation routing
+### 18. MOBJ2-B
 
 ```text
 Level 1 PASS — NARROW / RECOVERED / CLASS-M SCOPED
 ```
 
-It distinguishes SRT only from Class-M approaches that take determinate manifest interface as primitive. It does not by construction distinguish SRT from Barad / Simondon / other constitutive theories that also treat manifestation genesis as explanandum.
+It distinguishes SRT only from Class-M approaches that take the determinate manifest interface as primitive. It does not by itself distinguish SRT from constitutive theories such as Barad / Simondon.
 
-Do not transfer that Level standing to the #931 One / Bearer / Active-selection reconstruction.
+Do not transfer that Level standing to One / Bearer / Active Selection reconstruction.
 
-### Cycle 2 strengthened vertical claims
-
-2026-09-09 author rulings Scope B -> SED-B -> active vertical generation remain valid historical / owner context, but their old Level standing is not automatically inherited by #931.
-
-### Physical trigger pluralism
+### 19. Physical trigger pluralism
 
 ```text
 no physics-first universal primitive Selection registration is required;
@@ -384,11 +404,11 @@ physical realization is not privileged over other implementations.
 
 ---
 
-## Current authority / manuscript anchors restored after STATUS compression
+## Authority / publication guards
 
-### Canonical authority chain
+### 20. Canonical authority chain
 
-For exact current registered meanings, use the authority chain already declared by `SRT_AI_START.md`:
+For exact registered meanings, follow `SRT_AI_START.md` and the canonical authority chain, including:
 
 1. `CANONICAL_REGISTRY.md`
 2. `Governance/SRT_CLAIM_LADDER.md`
@@ -405,14 +425,14 @@ For exact current registered meanings, use the authority chain already declared 
 13. `Core/SRT_Core_21_Formal_Axioms.md`
 14. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 
-`STATUS.md` is routing / programme state, not a replacement definition authority.
+`STATUS.md` is routing / programme state, not definition authority.
 
-### Manuscript / publication carve-outs
+### 21. Publication carve-outs
 
 ```text
 Book mainline:
 01_Source_Intuition/BOOK/Drafts_26Q/
-= current book source-intuition mainline; do not silently launch a full-book rewrite from #931.
+= current book source-intuition mainline; no automatic full-book rewrite from #938.
 
 Frontiers manuscript 1837760:
 PUBLISHED
@@ -420,27 +440,16 @@ DOI 10.3389/fnins.2026.1837760
 
 Costly Selective Closure / Adaptive Behavior:
 SUBMITTED / NOT EXTERNALLY REVIEWED
-Do not describe it as "under review" unless the status changes.
+Do not describe it as "under review" unless status changes.
 ```
 
-Reconstruction does not retroactively rewrite published/submitted manuscript framing unless separately authorized or required by the venue.
-
-### Historical salvage pointers retained
-
-The pre-#931 STATUS snapshot retains two explicitly useful closed-PR salvage routes:
-
-```text
-#834 — Yu subjective-report / LLM-consciousness close read
-#845 — research-corpus increment / meditation-process-memory materials
-```
-
-These are **salvage/navigation pointers only**, not reopened PRs or current theory authority. Use the pre-#931 snapshot for their detailed branch/file notes.
+Reconstruction does not retroactively rewrite published/submitted framing unless separately authorized or required.
 
 ---
 
 ## Current collaboration / governance routing
 
-### Session start
+### 22. Session start
 
 Fresh sessions begin with:
 
@@ -448,35 +457,20 @@ Fresh sessions begin with:
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 3. this `STATUS.md §Fast Status`
 
-For #931 interpretation, load the landed proposal plus the post-merge reviewer reconciliation files before treating the Bearer/Active wording as settled.
+For current R1 work, load the #938 author adjudication and final supersession reconciliation **before** #931/#933 historical Bearer routing.
 
-### Theory advancement
+### 23. Canonical freeze / edit discipline
 
-Current governance remains controlled by:
-
-- `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
-- `Governance/SRT_GOV_CONSTRUCTIVE_INTEGRATION_COLLABORATION_ADDENDUM_2026-09-10.md`
-
-Current collaboration mode:
-
-```text
-defensive comparison -> constructive integration
-```
-
-Role separation inside one producing workflow is not independent review. Named external review must record reviewer/model, scope, strongest objection and disposition.
-
-### Canonical freeze / edit discipline
-
-Before any canonical theory edit, load and obey:
+Before any canonical theory edit, load:
 
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-No file in the current reviewer-reconciliation package edits canonical theory owners.
+#938 remains noncanonical. No current repair file authorizes a canonical rewrite.
 
 ---
 
-## What is intentionally OPEN after external review
+## OPEN register
 
 Do not silently close:
 
@@ -484,16 +478,27 @@ Do not silently close:
 strict numerical identity;
 unique post-branch successor;
 formal necessary-and-sufficient One theorem;
-formal sufficient Bearer theorem;
-formal downstream cognitive-Bearer relation beyond the accepted minimal history-to-reconstitution route;
-full Agency gate;
-formal / empirical representation-invariant W1-W2 criteria;
+One-level perspective universal sufficiency;
+Bearer necessary conditions;
+Bearer sufficient conditions;
+Bearer <-> 承担;
+Bearer <-> 关切;
+Bearer <-> position stability;
+Bearer <-> cognition;
+Bearer <-> subject-position;
+phenomenality / experiencer transition;
+formal / empirical representation-invariant W1/W2 criteria;
 scale attribution under tightly coupled nested Ones;
 whole-architecture non-substitutability;
 scientific distinctiveness;
 Level-2 realization;
 canonical owner hardening;
-phenomenality / experiencer transition.
+D4b;
+D4c;
+d bearer/domain;
+sigma ontology threshold;
+S3 / T_dir relation;
+collective subject sufficiency.
 ```
 
 ---
@@ -501,20 +506,18 @@ phenomenality / experiencer transition.
 ## Immediate routing
 
 ```text
-1. treat #931 as a landed historical noncanonical checkpoint, not a final theory closure;
-2. treat #933 as the author-adjudicated controlling reconciliation for its identified routing debts;
-3. after #933 lands, do not reopen broad theory merely to extend this package;
-4. any owner/canonical hardening must be a separate smaller future PR with its own gates;
-5. keep Level 2 HOLD, whole-package non-substitutability and scientific-distinctiveness guards unchanged.
+1. treat #931/#933 as historical noncanonical checkpoints, not current Bearer authority;
+2. treat #938 author adjudication + final supersession reconciliation as current R1 routing control;
+3. do not reopen broad theory expansion inside #938;
+4. run one independent content re-review of the repaired package;
+5. verify canonical diff = 0 and Governance Preflight = SUCCESS;
+6. if clean, merge #938 as a noncanonical repair checkpoint;
+7. only afterward design a separate small C-risk canonical landing package.
 ```
-
-Do not reopen broad theory exploration merely to add more concepts. The current reconciliation is closed at the noncanonical level; remaining formal/empirical burdens stay explicitly open.
-
----
 
 ## Historical navigation
 
-For pre-#931 detailed state, use:
+Pre-#931 snapshot:
 
 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.md`
 
@@ -522,8 +525,6 @@ Byte-preserving raw snapshot:
 
 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`
 
-Other historical handoffs / closures remain under:
+Other historical handoffs remain under `Operations/Status_History/`.
 
-`Operations/Status_History/`
-
-When historical files conflict, do not resolve by date alone: separate current canonical K, explicit author A, historical B, machine C and open D; apply explicit supersession/reopening records within their declared scope.
+When historical files conflict, do not resolve by date alone: separate current canonical K, explicit author A, historical B, machine C and open D; apply explicit supersession records within their declared scope.
