@@ -4,7 +4,7 @@ type: audit
 status: active
 record_stage: r1_first_canonical_landing_scope
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
