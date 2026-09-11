@@ -17,18 +17,19 @@ dependency:
   - Core_Law/SRT_Individuation.md
   - Core_Law/SRT_Collective_Selection.md
   - _SRT_SYMBOL_TABLE.md
+  - Philosophy/patches/SRT_Philosophy_PH_IND04_Object_Bearer_Selector_Subject_Experiencer_NonJump_Ladder_v0_1.md
   - Operations/Proposals/SRT_SELECTION_VERTICAL_ONE_LINEAGE_RECONSTRUCTION_2026-09-11.md
   - Operations/Audits/SRT_BEARER_ROUTE_SUPERSESSION_RECONCILIATION_2026-09-11.md
   - Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md
   - Operations/Status_History/SRT_STATUS_2026-09-11_CANONICAL_HARDENING_NEXT_SESSION_HANDOFF.md
-tags: [CanonicalHardening, ScopeAudit, Crosswalk, One, Bearer, SelectionPosition, ActiveSelection, SecondOrderSelection, Sigma, Simplification]
+tags: [CanonicalHardening, ScopeAudit, Crosswalk, One, Bearer, SelectionPosition, ActiveSelection, SecondOrderSelection, Sigma, Reconstruction]
 ---
 
 # Canonical hardening final scope and concept crosswalk — 2026-09-11
 
 > **Role:** final owner-by-owner scope audit for the #931/#933 reconstruction package after post-merge external review. This file is noncanonical and does not define SRT terms.
 >
-> **Primary result:** this hardening pass does **not** require a canonical theory-content edit. The correct closeout is to preserve current canonical owners, record the new crosswalk and unresolved burdens, and defer concept compression to a separate future owner-simplification cycle.
+> **Primary result:** this hardening pass does **not** require a canonical theory-content edit. The correct closeout is to preserve current canonical owners, record the crosswalk and unresolved burdens, and pass the remaining structural questions into a separate canonical-independent theory reconstruction audit rather than treating current canonical as the truth-priority constraint.
 
 ## 1. Hard guards retained
 
@@ -64,14 +65,14 @@ B — bridge / interface / routing change;
 C — canonical theory-definition or core-owner semantic change.
 ```
 
-`H1` does not imply `A`: a clarification can still require a C-class edit if it changes a canonical body or introduces noncanonical vocabulary into an owner.
+`H1` does not imply `A`: a clarification can still require a C-class edit if it changes a canonical body or imports noncanonical vocabulary into an owner.
 
 ## 3. Relation-status vocabulary
 
 Do not collapse the following into a generic `NO`:
 
 ```text
-IDENTITY REJECTED
+IDENTITY REJECTED AS CURRENTLY DEFINED
 NON-ENTAILMENT / INSUFFICIENT CONDITION
 IDENTITY NOT ESTABLISHED
 PROVISIONAL RELATION
@@ -79,47 +80,48 @@ OPEN
 SUPERSEDED
 ```
 
-This distinction is required for future machine reading.
+`IDENTITY REJECTED AS CURRENTLY DEFINED` means the two current definitions have incompatible admission conditions. It does **not** prohibit a future author-authorized unification that explicitly rewrites one or both definitions through the appropriate C-class process.
 
 ## 4. Final owner-by-owner matrix
 
 | Candidate statement | Current authority / anchor | Class | Relation status | Strongest conflict / pressure | Unpaid burden / re-review trigger | Edit risk if canonicalized now | Edit now? |
 |---|---|---:|---|---|---|---:|---:|
-| Selection precedes completed selector / One; primitive Selection remains subjectless | `SRT_L0_Metaphysics.md`; P0-01/P0-04 | H1 | ESTABLISHED CANONICAL BOUNDARY | none from #931/#933 | none | C if body rewritten redundantly | NO |
+| Selection precedes completed selector / One; primitive Selection remains subjectless | L0 §一 / first proposition; P0-01; P0-04 primitive-boundary subsection | H1 | ESTABLISHED CANONICAL BOUNDARY | none from #931/#933 | none | C if body rewritten redundantly | NO |
 | Minimum non-neutrality remains upstream of formed One / subject-position | L0 + Gate-0 owners | H1 | ESTABLISHED CANONICAL BOUNDARY | do not import later semantic content into L0 | none | C | NO |
-| Manifest event actuality != anchoring persistence != Stable ISP | P0-02; symbol-table L1 usage; P1-T06 | H1 | IDENTITY REJECTED / NON-ENTAILMENT | new One language must not back-define primitive actualisation | none | C if restated in frozen owners | NO |
+| Manifest event actuality, anchoring persistence, and Stable ISP are not interchangeable | P0-02; symbol-table L1 usage; P1-T06 | H1 | IDENTITY REJECTED / NON-ENTAILMENT | new One language must not back-define primitive actualisation | none | C if restated in frozen owners | NO |
 | Manifestation + relative backgrounding as co-generated structure | #931 reconstruction | B | PROVISIONAL RELATION | neighboring constitution/process theories pay substantial local territory | owner and necessity still open | C | NO |
 | Consequence as primitive Selection content or admission criterion | 2026-09-09 author correction; #933 reconciliation | R | SUPERSEDED / REJECTED | would undo controlling correction | no reopen trigger in current programme | C | NO |
 | One = localized continuing vertical process-unit through lineage-relative reconstitution | #931 proposal / author re-entry record | H2/O | PROVISIONAL; FORMAL SUFFICIENCY NOT ESTABLISHED | identity under branching, short-lived cases, scale nesting | explicit author canonical intent + owner fit + identity/reconstitution gate | C | NO |
-| Selection-position_t = time-local operative from-where of a continuing One | #931 proposal | H2/O | PROVISIONAL; IDENTITY WITH SUBJECT-POSITION REJECTED | canonical `subject-position` is perspective/stake-bearing and thicker | owner/terminology split + formal load-bearing criterion | C | NO |
+| Selection-position_t = time-local operative from-where of a continuing One | #931 proposal | H2/O | PROVISIONAL; IDENTITY WITH SUBJECT-POSITION REJECTED AS CURRENTLY DEFINED | current subject-position owner requires the thicker ISP-entry package | owner/terminology split + formal load-bearing criterion | C | NO |
 | One and Selection-position are continuation/operative aspects of one vertical organization | #931 reconstruction | H2/O | PROVISIONAL RELATION | may over-fix aspect identity before branching/scale questions close | author canonical intent + identity/scale audit | C | NO |
 | Continuing organization / One is sufficient for Stable ISP or subject-position | P1-T06; Individuation | H1 | NON-ENTAILMENT | Stable ISP independently requires iterative + perspective-bearing + history-bearing + continued-selectable standing | already paid | C if new One vocabulary inserted | NO |
-| `history-to-reconstitution bearing` = downstream change becomes constitutive history for later reconstitution of an already-admitted One | #933 Bearer reconciliation | B/H2 | AUTHOR-ACCEPTED NONCANONICAL RELATION | must not be confused with L0 `承担` | formal sufficient gate + canonical owner + author promotion decision | C | NO |
-| `history-to-reconstitution bearing` = L0 `承担` | L0 `承担`; #933 reconciliation | O | IDENTITY NOT ESTABLISHED; CURRENT READ = NOT IDENTICAL | L0 `承担` binds selector to its own consequence and non-outsourcing; generic bearing permits change from any source | only reopen if author explicitly wants a unified relation and source-condition rewrite | C, high risk | NO |
-| `self-consequence closure` | #933 reconstruction | B/O | STRONGER THAN GENERIC BEARING; RELATION TO `承担` OPEN | structurally near own-consequence return but does not by itself pay stake/subject standing | determine whether it is prerequisite, implementation, or partial realization of `承担` | C | NO |
-| Bearer = One / subject / experiencer | #931/#933 + prior individuation work | R/H1 guard | IDENTITY REJECTED | collapses ontology and subject layers | none | C | NO |
+| `history-to-reconstitution bearing` = downstream change becomes constitutive history for later reconstitution of an already-admitted One | #933 Bearer reconciliation | B/H2 | AUTHOR-ACCEPTED NONCANONICAL RELATION | must not be confused with L0 `承担` | formal sufficient gate + owner + author promotion decision | C | NO |
+| `history-to-reconstitution bearing` and L0 `承担` are the same relation | L0 `承担`; T-IND-2; #933 reconciliation | O | IDENTITY REJECTED AS CURRENTLY DEFINED; UNIFICATION OPEN | generic bearing permits change from any source; current `承担` binds a selector to its own consequence and non-outsourcing/internalisation | reopen only if author explicitly requests unification and C-class source-condition/layer rewrite | C, high risk | NO |
+| `self-consequence closure` and L0 `承担` are the same relation | #933 reconstruction; L0 `承担`; T-IND-2 | B/O | IDENTITY NOT ESTABLISHED | both use own-consequence return, but current `承担` is also a subject-vs-unfolded-selection boundary marker and includes non-outsourcing/internalisation | decide whether SC can hold while consequences remain externally absorbable; if yes SC is thinner than `承担`; if no SC may already approach the subject-entry burden | C | NO |
+| Bearer = One / subject / experiencer | #931/#933 + prior individuation work | R/H1 guard | IDENTITY REJECTED AS CURRENTLY DEFINED | collapses ontology and subject layers | none | C | NO |
 | Old R-B / R-C labels remain live ontology owners | #933 supersession reconciliation | R | SUPERSEDED | original route was closed by #927 | no current reopen | B/C | NO |
 | Position-indexed Active Selection = broad post-formation reconstruction-mode category | #931/#933 | B | PROVISIONAL RELATION | W2-like reconstruction alone does not establish One/agency/subject | formal criterion + owner + cases | C | NO |
-| Active Selection = second-order Selection | #933 crosswalk | R | IDENTITY REJECTED | second-order retains own-consequence + comparison-scale requirements | none | C | NO |
+| Active Selection = second-order Selection | #933 crosswalk | R | IDENTITY REJECTED AS CURRENTLY DEFINED | second-order retains own-consequence + comparison-scale requirements | none | C | NO |
 | second-order Selection candidate ⊂ Active Selection candidate | #933 crosswalk | B/O | PROVISIONAL SUBSET | only valid where formed-position standing and stronger gates are independently paid | formal scope / counterexamples | C | NO |
-| second-order Selection = B13 generative reselectability | B13 + #933 crosswalk | O | IDENTITY NOT ESTABLISHED; STRONG STRUCTURAL OVERLAP | object type and standing differ: second-order is a stronger selection/reconstruction pattern; B13 is generatively healthy ISP capacity above Stable ISP | determine implementation/constitutive relation and required Stable-ISP standing | C | NO |
+| second-order Selection = B13 generative reselectability | B13 + #933 crosswalk | O | IDENTITY NOT ESTABLISHED; STRONG STRUCTURAL OVERLAP | B13 defines a stronger consequence-sensitive revisability property relevant to generative health, but explicitly says it is not sufficient by itself for health; #933 additionally relocates second-order Selection under a formed-One/Active route | audit whether #933's downward relocation is justified; determine object-type, Stable-ISP standing, and implementation/constitutive relation | C | NO |
 | second-order Selection may implement / realize generative reselectability in an already-Stable ISP | B13 + #933 | B/O | PROVISIONAL IMPLEMENTATION RELATION | cannot infer from lexical overlap | explicit owner crosswalk + case/formal audit | C | NO |
 | W1/W2 are canonical primitives | #933 W2 audit | R | REJECTED | representation/state-augmentation invariance unresolved | representation-invariant formal criterion | C | NO |
 | W1/W2 as audit-depth labels | #933 W2 audit | B | BOUNDED AUDIT LANGUAGE | storage/parameter naming must not determine classification | stronger formalization only if later needed | B | NO canonical edit |
-| `sigma_sr` is by itself a bearer/selector/subject criterion | symbol table Rule 12; Individuation truth-up | R/H1 | INSUFFICIENT CONDITION / REJECTED AS STANDALONE CRITERION | coordinate is model-local historical/writeback-balance proxy | none | C | NO |
+| `sigma_sr` is by itself a bearer/selector criterion | symbol table Rule 12 | R/H1 | INSUFFICIENT CONDITION / REJECTED AS STANDALONE CRITERION | coordinate is model-local historical/writeback-balance proxy | none | C | NO |
+| `sigma_sr` is by itself a sufficient subject-position criterion | Individuation T-IND-1/T-IND-2 + 2026-08-29 truth-up | O | OWNER-INTERNAL TENSION / NOT CLEANLY ESTABLISHED | T-IND still narrates subject transition through a sigma threshold, while the truth-up says the coordinate is conventional/model-local and does not replace the full gate | canonical-independent reconstruction must decide whether sigma is constitutive, tracking-only, or one realization of a deeper transition variable | C | NO |
 | `sigma_sr` may track pre-subject historical self-conditioning / trace contribution | PH-IND04 + current sigma truth-up | O | OPEN | must not be upgraded into a One-formation theorem | model-class scope, attribution, and relation to thin One | C | NO |
 | `sigma_sr` is forbidden in every generic process-continuity analysis | no canonical owner | O | NOT ESTABLISHED | would prematurely close the preceding open direction | explicit future audit only | C | NO |
 | JFS / relation-level reconstruction by multiple positioned selections | #931 reconstruction | B/O | PROVISIONAL | neighboring interactional/collective organization accounts pay local territory | scale attribution + relation owner | C | NO |
-| higher-order One automatically implies collective ISP / collective subject | T-COLL-1 + #931 owner reconciliation | R/H1 guard | NON-ENTAILMENT / IDENTITY REJECTED | T-COLL-1 remains independent admission owner | none | C if restated with new vocabulary | NO |
+| higher-order One automatically implies collective ISP / collective subject | T-COLL-1 + #931 owner reconciliation | R/H1 guard | NON-ENTAILMENT | T-COLL-1 remains independent admission owner | none | C if restated with new vocabulary | NO |
 | relation-level organization can be studied prior to collective ISP admission | #931 reconstruction | B | PROVISIONAL | must not bypass shared perspective/history/continued-selectability gates | scale/identity audit | C | NO |
 | strict numerical identity / unique post-branch successor | handoff open-burden ledger | O | OPEN | branching and lineage criteria unresolved | formal identity framework | C | NO |
 | scientific distinctiveness / whole-package non-substitutability | programme status | O | NOT ESTABLISHED | strongest-neighbor pressure remains live | independent comparative burden | n/a | NO |
 
-## 5. Crosswalk decisions that this pass closes
+## 5. Crosswalks recorded by this pass
 
-### 5.1 Generic bearing is not L0 `承担`
+### 5.1 Generic bearing vs L0 `承担`
 
-Current safest typed reading:
+Current definitions differ in source condition and layer burden:
 
 ```text
 history-to-reconstitution bearing
@@ -132,28 +134,37 @@ self-consequence closure
 
 L0 承担
 = selector and its own consequence are structurally bound such that
-  the cost/consequence cannot be fully externalized and changes the
-  selector's own state/selection space.
+  the consequence/cost cannot be fully externalized and changes the
+  selector's own state/selection space;
+  it is also one boundary marker between subject Selection and unfolded Selection.
 ```
 
-Therefore:
+Therefore the current verdict is:
 
 ```text
-history-to-reconstitution bearing != L0 承担
+history-to-reconstitution bearing vs L0 承担:
+IDENTITY REJECTED AS CURRENTLY DEFINED
+because the source/admission conditions differ;
+
+future unification:
+OPEN only under explicit author intent + C-class rewrite.
 ```
 
-Current relation between `self-consequence closure` and `承担`:
+The relation between `self-consequence closure` and `承担` remains open. The decisive layer question is:
 
 ```text
-strong structural neighbor / possible prerequisite or partial realization;
-identity NOT ESTABLISHED.
+Can a One still in an unfolded-selection stage satisfy self-consequence closure
+while the consequence remains externally absorbable?
 ```
 
-No L0 edit follows.
+If YES, self-consequence closure is thinner than `承担`.
+If NO because SC already requires non-outsourcing/internalisation, it may approach the current subject-entry burden and cannot be treated as a neutral pre-subject relation without further reconciliation.
 
-### 5.2 Second-order Selection is not automatically B13 generative reselectability
+No L0 edit follows in this pass.
 
-Current safest typed reading:
+### 5.2 Second-order Selection vs B13 generative reselectability
+
+Current safest reading:
 
 ```text
 second-order Selection
@@ -162,40 +173,49 @@ second-order Selection
   + selectable-space change + continued efficacy;
 
 generative reselectability
-= stronger capacity/standing of an already-Stable ISP in which
-  consequence return can revise comparison rules, boundaries,
-  or candidate-generation conditions.
+= stronger consequence-sensitive revisability property of an already-Stable ISP,
+  relevant to generative health but explicitly neither sufficient by itself
+  to establish health nor required for every Stable ISP.
 ```
 
-They overlap strongly, but the object type and standing differ.
+The structural overlap is strong, but identity is not established.
 
-Therefore:
+The main unresolved pressure is not merely lexical. The 2026-08-09 second-order route already lived in a historically conditioned / continued-selectable / stake-bearing neighborhood, while #933 places it under the broader post-formed-One Active route. The next reconstruction audit should therefore test whether #933's downward relocation is actually justified.
+
+Current verdict:
 
 ```text
-identity = NOT ESTABLISHED
-structural overlap = STRONG
-possible implementation/realization relation = OPEN
+identity: NOT ESTABLISHED
+structural overlap: STRONG
+#933 downward relocation: OPEN FOR RE-AUDIT
+possible implementation/realization relation: OPEN
 ```
 
-No B13 or P1-T06 edit follows.
+No B13 or P1-T06 edit follows in this pass.
 
-### 5.3 Sigma scope remains narrow but not globally prohibited
+### 5.3 Sigma scope: settled floors and unresolved owner tension
 
-Current canonical floor:
+Settled floor from Symbol Table Rule 12:
 
 ```text
 sigma_sr
 = model-local historical/writeback-balance proxy;
-!= representation-invariant natural quantity;
-!= standalone bearer/selector/subject criterion;
-!= proof of a natural phase boundary.
+not a representation-invariant natural quantity;
+not by itself a bearer/selector criterion;
+not proof of a natural phase boundary.
 ```
 
-This pass does **not** convert the session-local instruction
-`do not import sigma backward into thin One formation`
-into a universal canonical ban.
+However, current Individuation still narrates the transition to subject Selection through `sigma_sr` crossing a structural threshold. The 2026-08-29 truth-up simultaneously says the coordinate is conventional, replaceable and model-local.
 
-The narrower research possibility remains open:
+Therefore this pass does **not** claim that `sigma_sr` is already settled as a non-subject criterion. Instead it records an owner-internal tension:
+
+```text
+Is sigma constitutive of subject-position entry,
+a model-local tracker of a deeper transition,
+or one realization among several possible coordinates?
+```
+
+The narrower research possibility also remains open:
 
 ```text
 sigma_sr may track historical self-conditioning / trace contribution
@@ -206,31 +226,59 @@ without thereby defining One, Bearer, Selection-position, or subjecthood.
 
 ## 6. Why the previously proposed H1 owner guards are not landed
 
-### 6.1 Individuation
+These guards were proposed during the assistant-led pre-PR scope discussion and were not themselves landed as a repository proposal. Their rejection is recorded here so the negative result is not lost.
+
+### 6.1 Individuation guard — NOT LANDED
 
 A generic guard that mere persistence/reconstitution does not establish subject-position is already paid by P1-T06 + T-IND-2.
 
 Adding phrases such as `operative from-where` would import the noncanonical `Selection-position` concept into a canonical owner through a negative sentence. That is not a clean no-new-commitment clarification and would be C-class in practice.
 
-Verdict:
-
-```text
-Core_Law/SRT_Individuation.md canonical content edit: NO FOR THIS PASS
-```
-
-### 6.2 Collective Selection
+### 6.2 Collective Selection guard — NOT LANDED
 
 T-COLL-1 already prevents consensus, institution, shared L2, or organization alone from automatically establishing a collective ISP.
 
 Adding JFS / higher-order One phrasing would give noncanonical reconstruction terms a canonical foothold without changing the existing admission gate.
 
-Verdict:
+## 7. External review trace and disposition
+
+This closeout incorporates two author-supplied external-model review passes.
+
+### 7.1 GPT-6 review of the pre-PR scope analysis
 
 ```text
-Core_Law/SRT_Collective_Selection.md canonical content edit: NO FOR THIS PASS
+reviewer/model: GPT-6 (author-supplied evaluation in chat)
+input scope: assistant's first owner-by-owner hardening analysis before PR #935
+strongest objections:
+- H1 entries needed explicit textual basis and no-new-commitment reasoning;
+- held H2 entries needed concrete unpaid burdens and re-review triggers;
+- identity rejection, non-entailment, and not-established statuses must be separated.
+disposition: ACCEPTED
 ```
 
-## 7. Final canonical owner verdict
+Result: this audit uses typed relation statuses and explicit reopen burdens rather than generic `NO` labels.
+
+### 7.2 Claude review of initial PR #935
+
+```text
+reviewer/model: Claude (author-supplied review in chat)
+reviewed version: PR #935 initial head fa549e9cad3422539d75308465fbdc564413738b
+input scope: initial closeout audit plus current canonical anchors / handoff routing
+strongest objections:
+- #934 handoff remained active and would rerun the closed workline;
+- relation vocabulary was inconsistent, especially bearing vs 承担 and CROSSWALK-CLOSED;
+- L0 承担 / T-IND-2 layer burden was under-accounted;
+- Stable ISP / subject-position simplification was presented too assertively and without author source;
+- B13 was overstated as a health standing;
+- sigma subject-criterion language exceeded the Symbol Table floor;
+- collective architecture was drawn as a false serial chain;
+- external-review provenance was missing.
+disposition: MOSTLY ACCEPTED WITH ONE CORRECTION
+```
+
+Correction to the review: P0-04 is not unrelated to subjectless Selection. Its `Primitive Boundary: Selectability Without a Prior Chooser` subsection explicitly says no prior chooser is required and selector/subject/agent/stable operator-pattern are downstream. The primary ontological anchor is nevertheless sharpened to L0 §一 / first proposition, with P0-01/P0-04 retained as formal support.
+
+## 8. Final canonical owner verdict for this hardening pass
 
 ```text
 Core_Law/SRT_L0_Metaphysics.md:              NO EDIT
@@ -242,125 +290,106 @@ Core_Law/SRT_Collective_Selection.md:         NO EDIT
 _SRT_SYMBOL_TABLE.md:                         NO EDIT
 ```
 
-This is a substantive hardening result, not an absence of result: the pass closes several inference routes while declining to manufacture canonical changes where current owners already suffice.
+This is a bounded hardening verdict, not a claim that current canonical is complete, optimal, or truth-prioritized.
 
-## 8. Separate future cycle: canonical concept compression / owner simplification
+## 9. Author-authorized next workline: canonical-independent theory reconstruction audit
 
-The recent reconstruction suggests that SRT can become simpler if canonical owners are reduced to a smaller number of standing/transition concepts while research terms remain in bridge/audit layers.
+The earlier assistant-generated `canonical concept compression / owner simplification` agenda is **not** adopted as an authoritative next workline. Its S1-S4 suggestions are downgraded to candidate pressures only.
 
-This is **not authorized by this hardening pass**. It should be a separate C-class owner-reorganization cycle.
+The author has now explicitly redirected the programme:
 
-### S1 — Stable ISP / subject-position / ISP entry de-duplication
+```text
+current canonical may reflect an earlier theoretical summary,
+including historical external/internal pressures and local limitations;
+therefore preserving canonical completeness must not constrain later theory improvement.
+```
 
-Candidate simplification:
+Next work should therefore begin from theory structure rather than owner compatibility:
+
+```text
+theory-first
+reconstruction-first
+canonical-lagging
+```
+
+The next audit should ask, independently of current owner boundaries:
+
+```text
+What are the minimum ontological objects?
+What are relations rather than objects?
+What are processes rather than standings?
+What are role/readout names rather than independent ontology?
+What are model-local proxies rather than constitutive variables?
+Which current canonical concepts would survive if SRT were rewritten today?
+Which would be rewritten, demoted, merged, or retired?
+Which recent reconstruction relations are genuinely missing from the old canonical skeleton?
+```
+
+Only after that reconstruction should the result be mapped back against current canonical as:
+
+```text
+RETAIN
+REWRITE
+DEMOTE
+MERGE / ALIAS
+RETIRE
+ADD
+OPEN
+```
+
+This next workline is active, not parked; therefore no `_SRT_PARKED_INDEX.md` entry is created for the superseded S1-S4 agenda.
+
+## 10. Candidate pressures to carry into the next audit — AI hypotheses, not author-adjudicated conclusions
+
+The following are allowed as hypotheses to test, not as a preset target architecture:
+
+```text
+- Stable ISP / subject-position / ISP-entry may contain naming or standing duplication;
+- P1-T06 / T-IND / sigma_sr may need their constitutive-vs-tracking hierarchy re-audited;
+- continued vs generative reselectability may benefit from one clearer owner ladder;
+- One / Selection-position / bearing / Active / second-order / JFS may include mechanisms or aspects that should not all become canonical ontology nodes;
+- current canonical may itself contain historical overcommitments that should be rewritten or demoted.
+```
+
+For S1 specifically, do **not** presuppose that subject-position is merely an interpretive reading of Stable ISP. Current T-IND-2 says subject-position entry corresponds to the P1-T06 conditions. The correct reconstruction question is whether these names refer to the same standing, and if so which should be the primary name.
+
+## 11. Non-serial multiscale caution
+
+Do not use the following as a required ladder:
 
 ```text
 Stable ISP
-= primary structural standing term;
-
-subject-position
-= L1 interpretive / role reading of a Stable ISP as a perspective-bearing position;
-
-ISP entry / subject-position entry
-= transition into that standing, not a third ontology object.
+-> generatively reselectable ISP
+-> collective Stable ISP
 ```
 
-Burden before edit:
-
-- verify every canonical use of `subject-position`, `Stable ISP`, `ISP entry`;
-- preserve phenomenality/experiencer OPEN status;
-- preserve T-IND-2 as entry-dynamics rather than a duplicate standing definition.
-
-### S2 — P1-T06 / Individuation / `sigma_sr` owner hierarchy simplification
-
-Candidate hierarchy:
-
-```text
-P1-T06
-= what counts as Stable ISP standing;
-
-Individuation / T-IND
-= how such standing may arise dynamically;
-
-sigma_sr
-= one replaceable model-local coordinate for tracking that transition.
-```
-
-This would reduce historical wording that makes the sigma coordinate look more constitutive than the current truth-up permits.
-
-### S3 — Continued vs generative reselectability as one owned strength ladder
-
-Preserve the distinction but reduce duplicate descriptions elsewhere:
+T-COLL-1 does not require generative reselectability as a prerequisite for collective admission. A safer pressure map is branched:
 
 ```text
 formed process
--> structurally stable ISP / continued selectability
--> generatively healthy ISP / generative reselectability
-```
-
-B13 / P1-T06 should remain the principal owner pair for this ladder unless a later owner audit decides otherwise.
-
-### S4 — Do not create additional canonical ontology levels from current research vocabulary
-
-Default simplification bias:
-
-```text
-One
-Selection-position
-history-to-reconstitution bearing
-self-consequence closure
-Active Selection
-second-order Selection
-W1/W2
-JFS
-higher-order One
-```
-
-remain research / reconstruction vocabulary unless a later audit proves that a concept carries a distinct canonical burden that cannot be expressed by existing owners.
-
-The target is:
-
-```text
-canonical nodes remain sparse;
-bridge/audit vocabulary carries mechanism and comparison detail.
-```
-
-## 9. Compact target architecture for future simplification audit
-
-A possible future compression target, not a current canonical rewrite:
-
-```text
-subjectless Selection
--> actualisation / manifestation
--> historical reconstitution
--> formed continuing organization
 -> Stable ISP
-   [perspective + history + continued selectability]
--> generatively reselectable ISP
--> higher-scale / collective Stable ISP
-   only where the same admission burdens are independently repaid.
+   |-> stronger generative-reselectability question
+   `-> collective / higher-scale admission question under its own gate
 ```
 
-This target does **not** decide whether `One` should eventually become the canonical name for `formed continuing organization`; that remains an H2/O question.
+Neither branch is promoted by this audit.
 
-## 10. Re-review triggers
+## 12. Re-review triggers for held canonical relations
 
-Do not reopen a held candidate merely because it is useful explanatory language.
-
-A held H2/O relation should return to canonical review only when the relevant combination is present:
+A held H2/O relation should return to canonical review only after the independent reconstruction has decided that the relation actually belongs in the minimal theory skeleton and the relevant burdens are then paid:
 
 ```text
 explicit author canonical intent
-+ identified canonical owner
++ theory-structural necessity or justified role
 + dependency / type boundary resolved
 + supersession conflict reconciled
 + claim level assigned
-+ strongest-neighbor / formal burden paid to the level appropriate to the claim.
++ strongest-neighbor / formal burden appropriate to the claim.
 ```
 
-Empirical evidence is required where the claim is empirical; it is not a generic substitute for ontology/typing work.
+Canonical compatibility is a downstream reconciliation step, not the prior truth criterion for the next workline.
 
-## 11. Final verdict
+## 13. Final verdict
 
 ```text
 canonical theory-content edits in this pass: 0
@@ -372,5 +401,8 @@ scientific distinctiveness: NOT ESTABLISHED
 whole-architecture non-substitutability: NOT ESTABLISHED
 
 hardening result:
-PASS — NO-EXPANSION / CROSSWALK-CLOSED / SIMPLIFICATION-DEFERRED
+PASS — NO-EXPANSION / CROSSWALK-RECORDED
+
+next workline:
+AUTHOR-AUTHORIZED CANONICAL-INDEPENDENT THEORY RECONSTRUCTION AUDIT
 ```
