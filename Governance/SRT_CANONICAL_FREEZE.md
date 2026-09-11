@@ -25,6 +25,7 @@ updated: 2026-06-05
 
 以下文件默认不做无明确授权的正文重写：
 
+- `Core_Law/SRT_Generative_Ontology_Spine.md`
 - `Core_Law/SRT_L0_Metaphysics.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
@@ -41,6 +42,7 @@ updated: 2026-06-05
 - 允许修 typo、断链、格式错误
 - 不允许静默改定义、改判据、改 canonical 优先级
 - 若必须改正文，需明确标注为高风险编辑
+- 跨 owner 的生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为当前优先路由；旧 anchor 的局部定义只在与该 spine 兼容的范围内继续有效，冲突的跨层推论进入 cleanup / retyping，而不是自动反向约束当前 reconstruction
 
 ## B. 可改但必须 cross-check 的核心主文
 

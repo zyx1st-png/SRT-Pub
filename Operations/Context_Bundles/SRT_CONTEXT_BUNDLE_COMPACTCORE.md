@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-11
-source_commit: 1767249c
-source_branch: ops/canonical-authority-truthup-batch-a-20260911
+source_commit: 4126a9f2
+source_branch: theory/generative-ontology-spine-canonical-20260911
 source_dirty: true
-inputs_digest: 5bf89ee52a74cde5
+inputs_digest: 40ce726266fd2fee
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: 5bf89ee52a74cde5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-11 |
-| 来源 commit | `1767249c` |
-| 来源分支 | `ops/canonical-authority-truthup-batch-a-20260911` |
+| 来源 commit | `4126a9f2` |
+| 来源分支 | `theory/generative-ontology-spine-canonical-20260911` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
@@ -351,7 +351,7 @@ For non-trivial SRT work:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（77 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（78 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -373,6 +373,7 @@ For non-trivial SRT work:
 - `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
 - `Core_Law/SRT_Constitution_Seven_Theses.md`
 - `Core_Law/SRT_Constitution_V1.md`
+- `Core_Law/SRT_Generative_Ontology_Spine.md`
 - `Core_Law/SRT_Individuation.md`
 - `Core_Law/SRT_Irreversibility.md`
 - `Core_Law/SRT_L0_Metaphysics.md`
