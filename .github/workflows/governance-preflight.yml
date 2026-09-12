@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   r2b-closeout:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/theory/r2b-bearer-semantic-quarantine-20260912'
+    if: github.ref == 'refs/heads/theory/r2b-bearer-semantic-quarantine-20260912'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
