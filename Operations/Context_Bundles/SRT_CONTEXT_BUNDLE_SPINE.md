@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-11
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-12
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-11
-source_commit: 8b391843
-source_branch: ops/post-pr947-spine-status-closeout-20260911
+generated: 2026-09-12
+source_commit: 34f404c8
+source_branch: governance/r2a-authority-truth-up-20260912
 source_dirty: false
-inputs_digest: 68dc2c186dbe02ad
+inputs_digest: 4b280f6cdae8db23
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 68dc2c186dbe02ad
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-11 |
-| 来源 commit | `8b391843` |
-| 来源分支 | `ops/post-pr947-spine-status-closeout-20260911` |
+| 生成日期 | 2026-09-12 |
+| 来源 commit | `34f404c8` |
+| 来源分支 | `governance/r2a-authority-truth-up-20260912` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -43,8 +43,8 @@ inputs_digest: 68dc2c186dbe02ad
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-09-08 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-11 |
+| 1 | `SRT_AI_START.md` | 2026-09-12 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-12 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-12 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -295,29 +295,29 @@ For non-trivial SRT work:
 >
 > 本包是 **人工选择的高优先级 canonical 骨架**，不是定义权的完备闭包。
 > 下面的分类是**生成器的判断**，不是 registry 的原话；每行都附依据供复核。
-> 「registry 提及」「AI_START §2」两列是机械判定的事实。
+> 「registry 提及」「Registry §C」两列是机械判定的事实。
 
 ### 已收录
 
 **定义源**（11 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `Core/SRT_Core_21_Formal_Axioms.md` | registry §A.4 主锚点（公理路由索引） | ✓ | ✓ |
 | `Core/SRT_Core_21_Minimal_Axioms.md` | registry §A.4 分层正文 P0 | ✓ | ✓ |
 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | registry §A.4 分层正文 P1 | ✓ | ✓ |
 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | registry §A.4 分层正文 P2/P3/P4 | ✓ | ✓ |
 | `Core/SRT_Core_22_Equations.md` | registry §A.4b 主锚点 | ✓ | ✓ |
-| `Core_Law/SRT_Generative_Ontology_Spine.md` | registry §A.0 跨 owner 生成主轴 | ✓ | — |
-| `Core_Law/SRT_L0_Metaphysics.md` | AI_START §2 First Sources 第 4 位 | ✓ | ✓ |
+| `Core_Law/SRT_Generative_Ontology_Spine.md` | registry §A.0 跨 owner 生成主轴 | ✓ | ✓ |
+| `Core_Law/SRT_L0_Metaphysics.md` | registry §C local-owner layer | ✓ | ✓ |
 | `_SRT_D_VALUE_CANONICAL.md` | registry §A.1 主锚点 | ✓ | ✓ |
 | `_SRT_PSI_F_CANONICAL.md` | registry §A.2 主锚点 | ✓ | ✓ |
-| `_SRT_SYMBOL_TABLE.md` | AI_START §2 First Sources；符号与记号的定义权 | ✓ | ✓ |
+| `_SRT_SYMBOL_TABLE.md` | symbol owner；Registry/local routing as applicable | ✓ | — |
 | `_SRT_T_DIR_CANONICAL.md` | registry §A.3 主锚点 | ✓ | ✓ |
 
 **治理护栏**（3 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `Governance/SRT_CLAIM_LADDER.md` | registry §B.5b；P0–P5 硬度阶梯 | ✓ | ✓ |
 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | registry §B.5c；降级台账 | ✓ | ✓ |
@@ -325,14 +325,20 @@ For non-trivial SRT work:
 
 **导航**（2 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `CANONICAL_REGISTRY.md` | 权威层级注册表本身 | ✓ | ✓ |
 | `SRT_AI_START.md` | AI 最小首读入口，frontmatter 自标 ai_do_not_use_for_definition | — | — |
 
 ### 未收录支持文件
 
-`SRT_AI_START.md` §2 First Sources **已全部收录**（14 条，且全部指向存在的文件）。
+**Registry §C priority 点名、文件存在、但本包未收（5 个）**——回答涉及它们时本包不足以裁定：
+
+- `Core_Law/SRT_One_Formation.md`
+- `Core/SRT_Core_14_Dynamics_Scaling.md`
+- `Core_Law/SRT_Reference_Dynamics.md`
+- `AI/SRT_AI_01_Ontology.md`
+- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
@@ -447,7 +453,7 @@ For non-trivial SRT work:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-08 |
+| last_commit | 2026-09-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -698,24 +704,11 @@ Bounded archive/evidence work may continue. A third main well is on hold until e
 
 The 2026-08-29 programme reconstruction and 2026-09-05 sequencing correction are prospective. They do not silently rewrite frozen owners.
 
-When exact **current registered** meanings are required, still follow the existing authority chain:
+When exact **current registered** meanings are required, do **not** maintain or infer a second complete authority chain from this bootstrap file. Follow `CANONICAL_REGISTRY.md §C` as the single complete citation-priority owner.
 
-1. `CANONICAL_REGISTRY.md`
-2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-4. `Core_Law/SRT_L0_Metaphysics.md`
-5. `Core/SRT_Core_21_Minimal_Axioms.md`
-6. `Core/SRT_Core_21b_Constitutive_Theorems.md`
-7. `_SRT_D_VALUE_CANONICAL.md`
-8. `_SRT_PSI_F_CANONICAL.md`
-9. `_SRT_T_DIR_CANONICAL.md`
-10. `_SRT_CROSS_DOMAIN_MATRIX.md`
-11. `Core/SRT_Core_22_Equations.md`
-12. `_SRT_SYMBOL_TABLE.md`
-13. `Core/SRT_Core_21_Formal_Axioms.md`
-14. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+For current cross-owner ontology generation order, non-identities, and OPEN routing, consult `Core_Law/SRT_Generative_Ontology_Spine.md` after the Registry and before compatible local owners. Local owners retain their detailed definitions only where compatible with that routing.
 
-This list records present repository authority. A later Core/Core_Law role-reclassification audit will decide what should remain constitutional source, commentary, domain formalization, operational proxy or historical formalization.
+This runtime entry is a projection of the Registry, not an independent authority list. A later Core/Core_Law role-reclassification audit may still retype local owners without changing this single-source rule.
 
 ## 7. Symbol quick guard
 
@@ -956,7 +949,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-11 |
+| last_commit | 2026-09-12 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -993,7 +986,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 trunk：`minimum non-neutrality / pre-object difference -> subjectless Selection -> manifestation + relative backgrounding -> active verticalization -> recurrent localized vertical organization -> One / Selection-position`。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
-- typed layering：One-level endogenous perspective、A1/A2/A3 anticipation 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。
+- typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
 - 硬边界：history/writeback 不作为 verticality 的本体来源；Stable ISP 不作为 One 的形成源；`sigma_sr` / d / T_dir / Psi_f 不得反向生成 One / Bearer / subject；Bearer 不按定义等同于承担 / concern / subject / experiencer。
 - OPEN：精确 L0 primitive decomposition、One-level perspective 普遍充分性、Bearer↔承担、Bearer→concern/d、agency、positive subject gate、cognition、phenomenality、collective subject sufficiency、new Level、Level 2 均未由本文件自动关闭。
@@ -1396,7 +1389,7 @@ E same-One prospective exposure
    = at least some such potential consequences genuinely expose the same One
      and cannot be completely reassigned while claiming the same Bearer relation.
 
-P + E -> Bearer.
+formed One / Selection-position + P + E -> Bearer.
 ```
 
 ### 1.3 Downstream OPEN zone

@@ -88,14 +88,15 @@ Use when the user asks to develop, harden, test, critique, extend, or repair SRT
 Read:
 
 1. `CANONICAL_REGISTRY.md`
-2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-4. `_SRT_CONTEXT_ROUTER.md`
-5. `_SRT_DEEP_THEORY_MAP.md`
-6. the route's Primary files
-7. the route's Secondary files when domain depth is needed
-8. `Core/SRT_OPEN_TENSIONS.md`
-9. the relevant coverage index when the route may miss support files
+2. `Core_Law/SRT_Generative_Ontology_Spine.md` when the task touches ontology order, formation, position/perspective/Bearer routing, or old-canonical cleanup
+3. `Governance/SRT_CLAIM_LADDER.md`
+4. `Governance/SRT_CLAIM_MODE_AUDIT.md`
+5. `_SRT_CONTEXT_ROUTER.md`
+6. `_SRT_DEEP_THEORY_MAP.md`
+7. the route's Primary files
+8. the route's Secondary files when domain depth is needed
+9. `Core/SRT_OPEN_TENSIONS.md`
+10. the relevant coverage index when the route may miss support files
 
 Important:
 

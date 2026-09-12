@@ -59,6 +59,11 @@ def main() -> None:
         registry_cmd.append("--strict")
     steps.append(("registry consistency", registry_cmd))
 
+    if (ROOT / "scripts" / "check_authority_routing.py").is_file():
+        steps.append(
+            ("authority-routing consistency", [python, "scripts/check_authority_routing.py"])
+        )
+
     if (ROOT / "scripts" / "check_material_log_consistency.py").is_file():
         steps.append(
             ("material log consistency", [python, "scripts/check_material_log_consistency.py"])

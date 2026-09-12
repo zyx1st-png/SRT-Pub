@@ -65,19 +65,15 @@ For current bootstrap, read `AGENTS.md`, then load this file only when file rout
 
 ## Authority Order
 
-默认权威顺序：
+本索引**不维护第二套完整 canonical 引用优先级**。完整的当前 citation priority 唯一回链：
 
-1. `CANONICAL_REGISTRY.md`
-2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-4. `Core_Law/SRT_L0_Metaphysics.md`
-5. `_SRT_D_VALUE_CANONICAL.md`
-6. `_SRT_PSI_F_CANONICAL.md`
-7. `_SRT_T_DIR_CANONICAL.md`
-8. `_SRT_CROSS_DOMAIN_MATRIX.md`
-9. `_SRT_SYMBOL_TABLE.md`
-10. `Core/SRT_Core_21_Formal_Axioms.md`
-11. `Core/SRT_Core_22_Equations.md`
+`CANONICAL_REGISTRY.md §C`
+
+涉及跨 owner 的本体生成顺序、非同一性、OPEN gate 与 old-canonical cleanup 时，按以下权威关系判读：
+
+`CANONICAL_REGISTRY.md` → `Core_Law/SRT_Generative_Ontology_Spine.md` → compatible local owners
+
+本页其余 anchor / entrypoint 清单只用于机器路由与 owner 定位，不构成另一套优先级链。
 
 以下层默认不承担最终定义权：
 
@@ -101,6 +97,8 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - manifest → `_SRT_MANIFEST.yaml`
 
 ## Canonical Theory Anchors
+
+> **Routing inventory only.** 以下条目帮助定位局部 owner；其排列不构成 citation-priority order。 完整优先级仍以 `CANONICAL_REGISTRY.md §C` 为唯一 owner，跨 owner 本体关系先经过 `Core_Law/SRT_Generative_Ontology_Spine.md`。
 
 - L0 → `Core_Law/SRT_L0_Metaphysics.md`
 - Chinese core text candidate → `Core_Law/SRT_Core_Text_CN_Euclid.md`

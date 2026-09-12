@@ -48,7 +48,7 @@ SPINE_BUNDLE_NAME = "SRT_CONTEXT_BUNDLE_SPINE.md"
 
 # 骨架：**人工选择的高优先级 spine**，不是定义权的完备闭包。
 #
-# 收录依据是 `SRT_AI_START.md` §2 First Sources 与 `CANONICAL_REGISTRY.md` §A/§B，
+# 收录依据是 `SRT_AI_START.md` §2 Registry §C priority 与 `CANONICAL_REGISTRY.md` §A/§B，
 # 但 registry 列名的文件有 90 余个，本表只取其中一部分。哪些收了、哪些没收、各自在
 # registry 里的角色，由 §0.4 的 manifest 差异报告逐条列出——那份报告是本包对
 # "完备性"的唯一诚实交代，不要用本表的长度替代它。
@@ -68,7 +68,7 @@ SPINE = [
     # 「收摘要、漏 Reference」是不自洽的；把摘要一并移出后，骨架只留真正的 canonical
     # 定义锚点（d / Ψ_f / T_dir / Core_21* / Core_22 / 符号表）与治理护栏，自洽且更瘦。
     # 三者都在 §0.4「未收录支持文件」里逐条列名并说明关系，不是被悄悄丢掉。
-    # 三者均不在 AI_START §2 First Sources 内，故 First Sources 覆盖率不受影响。
+    # 三者均不在 Registry §C Registry §C priority 内，故 Registry §C priority 覆盖率不受影响。
     "Core/SRT_Core_21_Formal_Axioms.md",
     "Core/SRT_Core_21_Minimal_Axioms.md",
     "Core/SRT_Core_21b_Constitutive_Theorems.md",
@@ -80,7 +80,7 @@ SPINE = [
     "Core/SRT_Core_22_Equations.md",
     "_SRT_SYMBOL_TABLE.md",
     # OPEN_TENSIONS is a conditional source in SRT_AI_START ("when a concept is known
-    # to be not fully sealed"), not one of §2 First Sources. Its full text now exceeds
+    # to be not fully sealed"), not one of §2 Registry §C priority. Its full text now exceeds
     # 20K estimated tokens and would push the definition spine over the reserved budget.
     # The spine keeps fail-loud status guard extracts and lists OPEN_TENSIONS explicitly
     # in §0.4; deep/open-pressure work must load the owner separately rather than silently
@@ -775,8 +775,8 @@ SPINE_BUCKETS: dict[str, tuple[str, str]] = {
     "Core/SRT_Core_21b_Constitutive_Theorems.md": ("定义源", "registry §A.4 分层正文 P1"),
     "Core/SRT_Core_21c_Bridge_Hypotheses.md": ("定义源", "registry §A.4 分层正文 P2/P3/P4"),
     "Core/SRT_Core_22_Equations.md": ("定义源", "registry §A.4b 主锚点"),
-    "Core_Law/SRT_L0_Metaphysics.md": ("定义源", "AI_START §2 First Sources 第 4 位"),
-    "_SRT_SYMBOL_TABLE.md": ("定义源", "AI_START §2 First Sources；符号与记号的定义权"),
+    "Core_Law/SRT_L0_Metaphysics.md": ("定义源", "registry §C local-owner layer"),
+    "_SRT_SYMBOL_TABLE.md": ("定义源", "symbol owner；Registry/local routing as applicable"),
     "Core/SRT_OPEN_TENSIONS.md": ("治理护栏", "registry §A.4c；未闭合登记，claim_mode: open"),
     "_SRT_CROSS_DOMAIN_MATRIX.md": ("治理护栏", "registry §A.4d 自称 governance-canonical usage layer"),
     "Governance/SRT_CLAIM_LADDER.md": ("治理护栏", "registry §B.5b；P0–P5 硬度阶梯"),
@@ -801,33 +801,30 @@ def registry_mentions() -> tuple[set[str], set[str]]:
     return exists, found - exists
 
 
-def parse_first_sources() -> list[str]:
-    """解析 `SRT_AI_START.md` 中「当前 canonical 权威链」的有序清单。
+def parse_authority_sources() -> list[str]:
+    """从唯一完整 owner `CANONICAL_REGISTRY.md §C` 解析当前 citation-priority 路径。
 
-    2026-08-29 的 AI_START 重构把原 §2 `First Sources` 改写为
-    「Current formal/canonical sources remain historically authoritative
-    until audited」区段；两者承担同一契约——按优先级列出当前登记的
-    canonical 权威文件——因此这里按标题文字（而非章节号）定位，重构
-    重新编号时不再断裂。
+    R2-A 起，runtime/bootstrap 文件只投影 Registry，不再维护第二份完整 authority chain。
+    因此 context-bundle manifest 也必须直接读 Registry。这里保留 §C 的顺序，并把同一
+    优先级行中的多个路径按出现顺序展开；非路径条目不强造为文件。
     """
-    text = read_text("SRT_AI_START.md")
-    m = re.search(r"^##\s+\d+\.\s+Current formal/canonical sources.*$", text, re.M)
+    text = read_text("CANONICAL_REGISTRY.md")
+    m = re.search(r"^##\s+C\.\s+当前 canonical 引用优先级\s*$", text, re.M)
     if m is None:
-        fail("锚点缺失：SRT_AI_START.md 中找不到当前 canonical 权威链区段")
-    start = m.start()
+        fail("锚点缺失：CANONICAL_REGISTRY.md 中找不到 §C 当前 canonical 引用优先级")
     nxt = re.search(r"^##\s+", text[m.end():], re.M)
     end = m.end() + nxt.start() if nxt else len(text)
+    section = text[m.end():end]
+
     seen: list[str] = []
-    # Only the numbered precedence list is unconditional. The prose immediately
-    # below it names conditional sources such as OPEN_TENSIONS; treating every
-    # backticked path in the section as a mandatory spine member defeats that
-    # distinction and makes the budget contract depend on optional deep reads.
-    numbered = re.findall(r"^\d+\.\s+`([^`]+\.md)`", text[start:end], re.M)
-    for path in numbered:
-        if path not in seen:
-            seen.append(path)
+    for line in section.splitlines():
+        if not re.match(r"^\d+\.\s+", line):
+            continue
+        for path in re.findall(r"`([^`]+\.md)`", line):
+            if path not in seen:
+                seen.append(path)
     if not seen:
-        fail("锚点缺失：SRT_AI_START.md §2 中解析不到任何路径")
+        fail("锚点缺失：CANONICAL_REGISTRY.md §C 中解析不到任何 .md 路径")
     return seen
 
 
@@ -855,7 +852,7 @@ BUNDLE_KIND_BLURB = {
 
 def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
     mentioned, broken = registry_mentions()
-    first_sources = parse_first_sources()
+    first_sources = parse_authority_sources()
 
     rows: dict[str, list[str]] = {}
     for path in bundled:
@@ -869,7 +866,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
         ">",
         f"> 本包是 {BUNDLE_KIND_BLURB[kind]}。",
         "> 下面的分类是**生成器的判断**，不是 registry 的原话；每行都附依据供复核。",
-        "> 「registry 提及」「AI_START §2」两列是机械判定的事实。",
+        "> 「registry 提及」「Registry §C」两列是机械判定的事实。",
         "",
         "### 已收录",
         "",
@@ -880,13 +877,13 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
         parts += [
             f"**{bucket}**（{len(rows[bucket])} 个）",
             "",
-            "| 文件 | 分类依据 | registry 提及 | AI_START §2 |",
+            "| 文件 | 分类依据 | registry 提及 | Registry §C |",
             "|---|---|:---:|:---:|",
             *sorted(rows[bucket]),
             "",
         ]
 
-    # First Sources 拆成三态：已收录 / 存在但未收 / 路径失效。
+    # Registry §C priority 拆成三态：已收录 / 存在但未收 / 路径失效。
     fs_missing = [p for p in first_sources
                   if p not in bundled and (REPO_ROOT / p).is_file()]
     fs_broken = [p for p in first_sources if not (REPO_ROOT / p).is_file()]
@@ -895,7 +892,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
     parts += ["### 未收录支持文件", ""]
     if fs_broken:
         parts += [
-            f"**⚠ 高严重度：`SRT_AI_START.md` §2 First Sources 中有 {len(fs_broken)} 条路径"
+            f"**⚠ 高严重度：`SRT_AI_START.md` §2 Registry §C priority 中有 {len(fs_broken)} 条路径"
             "指向不存在的文件**——这类条目既收不进来，也不该被算作「已覆盖」：",
             "",
             *[f"- `{p}`" for p in fs_broken],
@@ -903,7 +900,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
         ]
     if fs_missing:
         parts += [
-            f"**First Sources 点名、文件存在、但本包未收（{len(fs_missing)} 个）**"
+            f"**Registry §C priority 点名、文件存在、但本包未收（{len(fs_missing)} 个）**"
             "——回答涉及它们时本包不足以裁定：",
             "",
             *[f"- `{p}`" for p in fs_missing],
@@ -911,7 +908,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
         ]
     if not fs_broken and not fs_missing:
         parts += [
-            f"`SRT_AI_START.md` §2 First Sources **已全部收录**（{len(first_sources)} 条，"
+            f"`SRT_AI_START.md` §2 Registry §C priority **已全部收录**（{len(first_sources)} 条，"
             "且全部指向存在的文件）。",
             "",
         ]

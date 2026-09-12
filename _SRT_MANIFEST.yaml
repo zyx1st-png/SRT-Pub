@@ -38,6 +38,7 @@ runtime:
   memory_readme: "memory/README.md"
 
 canonical_anchors:
+  generative_spine: "Core_Law/SRT_Generative_Ontology_Spine.md"
   l0: "Core_Law/SRT_L0_Metaphysics.md"
   claim_ladder: "Governance/SRT_CLAIM_LADDER.md"
   d_value: "_SRT_D_VALUE_CANONICAL.md"

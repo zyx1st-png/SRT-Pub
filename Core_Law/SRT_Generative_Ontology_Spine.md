@@ -90,7 +90,7 @@ E same-One prospective exposure
    = at least some such potential consequences genuinely expose the same One
      and cannot be completely reassigned while claiming the same Bearer relation.
 
-P + E -> Bearer.
+formed One / Selection-position + P + E -> Bearer.
 ```
 
 ### 1.3 Downstream OPEN zone

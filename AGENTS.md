@@ -18,6 +18,8 @@ For a fresh AI session inside this repo, read in this order (3 files):
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md` — classify the task before choosing context depth.
 3. `STATUS.md §Fast Status` — compact current status; note that the 2026-09-05 author-reentry amendment below supersedes stale bearer-totalizing / direct-to-increment programme wording.
 
+Authority routing is single-source: use `CANONICAL_REGISTRY.md §C` for the complete current citation priority. When adjudicating cross-owner ontology generation order, non-identities, OPEN gates or old-canonical overreach, use `Core_Law/SRT_Generative_Ontology_Spine.md` as the cross-owner owner before compatible local owners. `STATUS.md` may specify a task-local working read sequence; that sequence is not a second citation-priority chain. Do not reconstruct a competing complete authority chain in runtime files.
+
 ### Current programme expansion — Author Re-entry + Constitution + Domain Reconstruction
 
 For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new/revised domain deep-dive**, after the 3-file bootstrap above read:
@@ -197,6 +199,8 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 ## Canonical Runtime Paths
 
+- 完整 canonical 引用优先级唯一 owner：`CANONICAL_REGISTRY.md §C`
+- 跨 owner 本体生成主轴：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - AI 最小首读入口：`SRT_AI_START.md`
 - Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
 - 当前状态面板：`STATUS.md`
