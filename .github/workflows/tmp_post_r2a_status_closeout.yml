@@ -20,6 +20,8 @@ jobs:
       - name: Merge live main and patch STATUS only
         shell: bash
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin main
           git merge --no-edit origin/main
           python - <<'PY'
@@ -103,8 +105,6 @@ jobs:
           p.write_text(text, encoding='utf-8')
           PY
           rm .github/workflows/tmp_post_r2a_status_closeout.yml
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add STATUS.md .github/workflows/tmp_post_r2a_status_closeout.yml
           git diff --cached --check
           git commit -m "Refresh STATUS after R2-A authority closeout"
