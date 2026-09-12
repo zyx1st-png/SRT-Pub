@@ -56,7 +56,7 @@ test = test.replace('first_sources', 'authority_sources')
 test = test.replace('First Sources', 'Registry §C authority sources')
 test = test.replace('First Source', 'Registry §C authority source')
 test = test.replace('AI_START §2 Registry §C authority sources 全部落入 SPINE',
-                    'Registry §C 明示的文件型 authority 全部落入 SPINE')
+                    'Registry §C authority projection 顺序与 SPINE 一致')
 test = test.replace('''    check("Registry §C authority sources 解析非空", len(authority_sources) >= 10, f"got {len(authority_sources)}")
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 ''', '''    check("Registry §C authority sources 解析非空", len(authority_sources) >= 10,
@@ -69,10 +69,21 @@ test = test.replace('''    check("Registry §C authority sources 解析非空", 
 test = test.replace('''    missing_fs = [p for p in authority_sources
                   if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
     check("Registry §C authority sources 全部落入 SPINE", not missing_fs, f"缺 {missing_fs}")
-''', '''    missing_authority = [p for p in authority_sources
+''', '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
+    projected_positions = [B.SPINE.index(p) for p in projected_authority]
+    check("Registry §C authority projection 顺序与 SPINE 一致",
+          projected_positions == sorted(projected_positions),
+          f"projection={projected_authority}")
+''', 1)
+test = test.replace('''    missing_authority = [p for p in authority_sources
                          if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
     check("Registry §C 明示的文件型 authority 全部落入 SPINE",
           not missing_authority, f"缺 {missing_authority}")
+''', '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
+    projected_positions = [B.SPINE.index(p) for p in projected_authority]
+    check("Registry §C authority projection 顺序与 SPINE 一致",
+          projected_positions == sorted(projected_positions),
+          f"projection={projected_authority}")
 ''', 1)
 tp.write_text(test, encoding="utf-8")
 
