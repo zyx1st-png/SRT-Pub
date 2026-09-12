@@ -8,12 +8,14 @@ epistemic_layer: os
 claim_mode: governance
 canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
-updated: 2026-06-05
+updated: 2026-09-12
 ---
 
 # SRT Canonical Freeze
 
 > 2026-06-05 scope note: this file is an edit-safety policy. It does not define SRT terms and does not replace `CANONICAL_REGISTRY.md`, `_SRT_SYMBOL_TABLE.md`, or current manuscript files.
+>
+> **2026-09-12 R2-C calibration:** freeze class controls **edit safety only**. It does not by itself upgrade epistemic truth, P-level, theorem status, programme Level standing, scientific distinctiveness, or canonical claim hardness. A file may therefore be Freeze A while its positive architecture remains `draft / P1-candidate`, or Freeze B while remaining a registered downstream hybrid model.
 
 本文件用于明确：
 
@@ -27,6 +29,7 @@ updated: 2026-06-05
 
 - `Core_Law/SRT_Generative_Ontology_Spine.md`
 - `Core_Law/SRT_L0_Metaphysics.md`
+- `Core_Law/SRT_One_Formation.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_T_DIR_CANONICAL.md`
@@ -43,6 +46,7 @@ updated: 2026-06-05
 - 不允许静默改定义、改判据、改 canonical 优先级
 - 若必须改正文，需明确标注为高风险编辑
 - 跨 owner 的生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为当前优先路由；旧 anchor 的局部定义只在与该 spine 兼容的范围内继续有效，冲突的跨层推论进入 cleanup / retyping，而不是自动反向约束当前 reconstruction
+- `Core_Law/SRT_One_Formation.md` 的 Freeze-A 仅保护其已登记的 local canonical semantic owner 角色；其 `status: draft` 与 `claim_level: P1-candidate` 不因本列表而升级
 
 ## B. 可改但必须 cross-check 的核心主文
 
@@ -51,6 +55,7 @@ updated: 2026-06-05
 - `Core_Law/SRT_Core_Text_CN_Euclid.md`
 - `Core_Law/SRT_Core_Text_CN.md`
 - `Core_Law/SRT_Selection_Argument.md`
+- `Core_Law/SRT_Individuation.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 - `AI/SRT_AI_01_Ontology.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
@@ -64,6 +69,7 @@ updated: 2026-06-05
 - 先核 `_SRT_SYMBOL_TABLE.md`
 - 先核对应 canonical 文件
 - 再核本文件在主入口层中的角色
+- `Core_Law/SRT_Individuation.md` 保持 downstream hybrid subject-position / self-consciousness model；其 Freeze-B 只要求 cross-check，不关闭 `sigma_sr` / subject-entry / threshold reconstruction debt
 
 ## C. 运行 / 导航 / 状态文件
 
