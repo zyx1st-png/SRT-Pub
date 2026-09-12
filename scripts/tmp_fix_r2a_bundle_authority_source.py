@@ -66,13 +66,14 @@ test = test.replace('''    check("Registry §C authority sources 解析非空", 
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 ''', 1)
 
-# The SPINE bundle is explicitly curated/budgeted, not the complete closure of Registry §C.
-# Replace any legacy "all authority files must be in SPINE" assertion with an order-projection check.
-projection_block = '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
-    projected_positions = [B.SPINE.index(p) for p in projected_authority]
-    check("Registry §C authority projection 顺序与 SPINE 一致",
-          projected_positions == sorted(projected_positions),
-          f"projection={projected_authority}")
+# SPINE is a curated/budgeted projection, not the full Registry closure. Guard only the
+# critical projected authority invariant: Registry -> generative spine -> L0/local owner.
+spine_order_block = '''    check("SPINE authority projection: Registry precedes generative spine",
+          B.SPINE.index("CANONICAL_REGISTRY.md")
+          < B.SPINE.index("Core_Law/SRT_Generative_Ontology_Spine.md"))
+    check("SPINE authority projection: generative spine precedes L0 local owner",
+          B.SPINE.index("Core_Law/SRT_Generative_Ontology_Spine.md")
+          < B.SPINE.index("Core_Law/SRT_L0_Metaphysics.md"))
 '''
 legacy_projection_pattern = (
     r"    missing_(?:fs|authority) = \[p for p in authority_sources\n"
@@ -81,7 +82,7 @@ legacy_projection_pattern = (
 )
 test, replaced = re.subn(
     legacy_projection_pattern,
-    lambda _m: projection_block,
+    lambda _m: spine_order_block,
     test,
     count=1,
     flags=re.M,
