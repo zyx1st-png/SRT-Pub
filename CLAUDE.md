@@ -19,16 +19,7 @@
 
 ## 权威层级
 
-默认优先级：
-
-1. [CANONICAL_REGISTRY.md](CANONICAL_REGISTRY.md)
-2. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
-3. [_SRT_D_VALUE_CANONICAL.md](_SRT_D_VALUE_CANONICAL.md)
-4. [_SRT_PSI_F_CANONICAL.md](_SRT_PSI_F_CANONICAL.md)
-5. [_SRT_T_DIR_CANONICAL.md](_SRT_T_DIR_CANONICAL.md)
-6. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
-7. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)
-8. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
+本兼容层**不维护第二套完整权威链**。精确的当前引用优先级唯一回链 [CANONICAL_REGISTRY.md](CANONICAL_REGISTRY.md) §C。涉及跨 owner 的本体生成顺序、非同一性与 OPEN gate 时，在 Registry 之后优先读取 [Core_Law/SRT_Generative_Ontology_Spine.md](Core_Law/SRT_Generative_Ontology_Spine.md)，再进入兼容的局部 owner。
 
 以下文件不是最终定义源：
 

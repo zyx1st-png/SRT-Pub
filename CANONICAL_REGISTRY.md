@@ -39,7 +39,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 trunk：`minimum non-neutrality / pre-object difference -> subjectless Selection -> manifestation + relative backgrounding -> active verticalization -> recurrent localized vertical organization -> One / Selection-position`。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
-- typed layering：One-level endogenous perspective、A1/A2/A3 anticipation 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。
+- typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
 - 硬边界：history/writeback 不作为 verticality 的本体来源；Stable ISP 不作为 One 的形成源；`sigma_sr` / d / T_dir / Psi_f 不得反向生成 One / Bearer / subject；Bearer 不按定义等同于承担 / concern / subject / experiencer。
 - OPEN：精确 L0 primitive decomposition、One-level perspective 普遍充分性、Bearer↔承担、Bearer→concern/d、agency、positive subject gate、cognition、phenomenality、collective subject sufficiency、new Level、Level 2 均未由本文件自动关闭。
