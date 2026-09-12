@@ -23,7 +23,7 @@ dependency:
 >
 > **Not a monolithic definition owner**: local definitions remain with their proper owners where compatible. This file owns the **cross-layer order and inference permissions** between them.
 >
-> **Author authorization**: 2026-09-11, “new spine first, then old-canonical cleanup.” Provenance: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md`.
+> **Author authorization**: 2026-09-11, “new spine first, then old-canonical cleanup.” Provenance: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md`. R2-B Bearer strength / legacy-reading calibration was author-adjudicated 2026-09-12 in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2B_BEARER_SEMANTIC_QUARANTINE_2026-09-12.md`.
 
 ---
 
@@ -345,13 +345,42 @@ A One can be causally exposed or retrospectively altered without prospectively d
 E alone != Bearer.
 ```
 
-### E semantic test
+### E consistency / non-outsourcing test
 
-If a consequence burden can be completely reassigned to another unit while the claimed Bearer relation is said to remain unchanged, E has not been established for the original One.
+The current non-outsourcing counterfactual is a **consistency / exclusion test** for an E attribution:
+
+```text
+if a consequence burden can be completely reassigned to another unit
+while the claimed Bearer relation is said to remain unchanged,
+E has not been established for the original One.
+```
+
+This test does **not** by itself provide a complete independently applicable positive admission procedure for E. In particular, the current canonical route does not yet settle all admissible counterfactual reassignments, One-preservation conditions under reassignment, assessment scale, positive establishment rule, or cross-domain transfer conditions.
+
+Therefore:
+
+```text
+E as semantic relation in the current P+E Bearer route = RETAINED;
+current non-outsourcing counterfactual = consistency / exclusion test;
+independently applicable positive E admission / establishment criterion = OPEN.
+```
+
+### Legacy `bearer` quarantine
+
+Unless a later authoritative crosswalk explicitly retypes a claim, a pre-#947 occurrence of `bearer` / `same-bearer` is **legacy bearer-language only**.
+
+```text
+legacy bearer-language
+!= post-#947 typed Bearer automatically;
+legacy bearer-language
+!= contradiction with post-#947 typed Bearer automatically.
+```
+
+Its relation to the current typed Bearer remains unresolved until claim-by-claim reverse audit. No bulk token replacement, automatic equivalence, automatic contradiction, or inheritance of old Bearer verdicts is licensed by terminology alone.
 
 ### Strength guard
 
-This is a **canonical semantic / architectural gate**, not a universal empirically validated or formally proved N&S theorem across every realization domain.
+This is a **canonical semantic / architectural routing gate** and an author-adjudicated reconstruction direction, not a universal empirically validated or formally proved N&S theorem across every realization domain and not yet a validated cross-domain classifier.
 
 It does not establish:
 
@@ -451,6 +480,7 @@ exact final primitive decomposition of minimum non-neutrality;
 formal N&S theorem for One;
 universal One-level perspective sufficiency;
 exact A2 <-> One-level perspective relation;
+independently applicable positive E admission / establishment criterion;
 formal cross-domain N&S theorem for P + E Bearer;
 Bearer <-> actual 承担;
 Bearer -> concern / d;
@@ -482,6 +512,21 @@ Use this file first for:
 - deciding whether an older canonical claim is overreaching or out of order.
 
 Then follow the relevant local owner for detailed definitions or formalisms.
+
+For Bearer citations:
+
+```text
+formed One / Selection-position + P + E -> Bearer
+may be cited as current canonical routing and author-adjudicated reconstruction strength;
+
+it may not be cited as an established universal theorem,
+a validated cross-domain classifier,
+or a completed independently applicable admission procedure
+unless a later owner separately lands that stronger result.
+
+pre-#947 `bearer` / `same-bearer` language remains quarantined
+until an authoritative claim-by-claim crosswalk retypes it.
+```
 
 For ongoing reconstruction:
 
