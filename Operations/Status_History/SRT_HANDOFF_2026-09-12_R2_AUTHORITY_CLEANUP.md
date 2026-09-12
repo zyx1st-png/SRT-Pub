@@ -10,132 +10,81 @@ ai_do_not_use_for_definition: true
 date: 2026-09-12
 ---
 
-# SRT session handoff — R2 authority cleanup
+# SRT session handoff — post-R2-A authority closeout
 
-> Snapshot only. Re-fetch live `main`, open PRs and `STATUS.md` before acting. This file records session state; it does not change canonical authority or close any theory gate.
+> Noncanonical session handoff. `STATUS.md` remains the current programme-state owner. A fresh session must re-fetch live `main`, current PR states and `STATUS.md` before acting. This file records the closeout path; it does not itself close R2-B, R2-C, #949 or any L0 gate.
 
-## 1. Live baseline at handoff
+## 1. Verified baseline before #953 closeout merge
 
 ```text
 repository = zyx1st-png/SRT-Pub
-main = 421edf1f47b414eb527beb18eafb1a2093ae30d9
-main latest record = retrospective independent review of PR #947
+#951 = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
+#952 = MERGED / e33476e06de3471d11c1994595669552764983ab
+#953 = post-R2-A STATUS / handoff closeout PR; verify live state before use
+#949 = OPEN / DRAFT; creator–AI final-skeleton alignment gate before any L0 canonical rewrite
 ```
 
-`STATUS.md` on `main` is still dated 2026-09-11 and still describes the post-#947/#948 phase. It has not yet been refreshed for #949–#952.
+#951 closed the retrospective provenance calibration. #952 then closed the bounded R2-A authority-propagation work after independent final-head review and a clean Governance Preflight.
 
-## 2. Open PRs that control the next step
-
-### PR #951 — record-layer author-adjudication calibration
+## 2. R2 grouping after #952
 
 ```text
-state = OPEN / DRAFT
-scope = one audit file only
-purpose = fold the accepted author calibration of #950 into the retrospective #947 review record
+R2-A = F1 / F4 / F6 / F8 / F10 / F11 = COMPLETE
+R2-B = F2 / F5 / F9 = NEXT UNOPENED GATE / NOT STARTED IN THIS CLOSEOUT
+R2-C = F3 / F7 = SEPARATE / NOT STARTED
 ```
 
-Required grouping in the final record:
+Do not merge these groups back into one undifferentiated cleanup pass.
+
+## 3. What R2-A now establishes
+
+- `CANONICAL_REGISTRY.md §C` is the sole owner of the complete current cross-owner citation-priority chain.
+- `Core_Law/SRT_Generative_Ontology_Spine.md` owns cross-owner generation order, non-identities and OPEN-gate routing.
+- compatible local owners retain their local detailed definitions; the Spine is not a replacement for every local owner.
+- `Core_Law/SRT_One_Formation.md` is a local One / Selection-position elaboration within the Spine-compatible route, not a second owner of the whole formation order.
+- the quotable Bearer shortcut restores the formed-One / Selection-position precondition, but does **not** decide the R2-B theorem / criterion problem.
+- the SPINE context bundle is a curated high-priority skeleton, not a claim of complete authority closure; Registry-§C sources outside the bundle remain visible.
+- A1 / A2 / P / E cleanup in R2-A is provenance / label alignment, not a new ontology theorem.
+
+## 4. #952 independent-review record
+
+Initial final-head review of #952 found two R2-A propagation gaps:
+
+1. `_SRT_INDEX.md` still carried a competing complete authority order and omitted the Spine from that order;
+2. `AGENTS.md` and `STATUS.md` used apparently conflicting Registry / Spine load-order language without distinguishing citation authority from task-local read sequence.
+
+The repair was bounded to R2-A:
+
+- `_SRT_INDEX.md` now redirects the complete priority chain to Registry §C and marks its later anchor list as routing inventory only;
+- `AGENTS.md` now separates citation-priority authority from a task-local working read sequence;
+- `scripts/check_authority_routing.py` guards `_SRT_INDEX.md` against regression.
+
+Final reviewed #952 head:
 
 ```text
-R2-A = F1 / F4 / F6 / F8 / F10 / F11
-R2-B = F2 / F5 / F9
-R2-C = F3 / F7
+head = a7785fd64a013a3d3a8ae20baed28994ca6466cb
+Governance Preflight = PASS
+independent final-head verdict = PASS
+merge = e33476e06de3471d11c1994595669552764983ab
 ```
 
-The record must keep these calibrations:
+## 5. Current theory / gate guards
 
-- `482 bearer files` = legacy occurrence surface, not 482 proven contradictions;
-- pre-#947 `bearer` must not be auto-read as post-#947 P+E `Bearer`;
-- retyping is claim-by-claim, never bulk replacement;
-- #947 canonical routing is LANDED; runtime authority propagation was incomplete;
-- no L0 canonical rewrite is authorized before the #949 creator–AI final-skeleton alignment gate.
+The semantic formation route remains bounded by the post-#947 Spine and compatible local owners. R2-A does not promote downstream Bearer claims.
 
-Before merge: verify the current final head and current Governance Preflight result again; do not rely on an earlier green run if the head changed.
-
-### PR #952 — R2-A authority truth-up
+Keep OPEN unless separately adjudicated:
 
 ```text
-state = OPEN / DRAFT
-head branch = governance/r2a-authority-truth-up-20260912
-snapshot head = fb1dec33377b97a6d48d919e8eef99b0eb9204ea
-scope = F1 / F4 / F6 / F8 / F10 / F11 only
-merge posture = DO NOT FAST-MERGE
+formal cross-domain P+E necessary-and-sufficient Bearer theorem;
+legacy bearer -> post-#947 Bearer equivalence;
+E as independently applicable admission criterion;
+Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality;
+whole-architecture non-substitutability;
+scientific distinctiveness;
+Level 2 realization.
 ```
 
-Implemented direction:
-
-- `CANONICAL_REGISTRY.md §C` is the only complete citation-priority owner;
-- runtime/bootstrap surfaces may point to or project Registry, but must not maintain another complete competing chain;
-- cross-owner ontology routing remains `Registry -> Generative Ontology Spine -> compatible local owners`;
-- `One_Formation` is local One-formation elaboration within the spine, not a second owner of the whole formation order;
-- the quotable Bearer shortcut restores the formed-One / Selection-position precondition;
-- context-bundle authority parsing reads Registry §C directly;
-- a permanent authority-routing regression checker is included;
-- SPINE remains a curated/budgeted projection, not a false complete closure.
-
-The branch's own full preflight passed before the Draft PR was opened, but #952 still requires an independent content review of the final head before merge.
-
-## 3. Work not yet authorized / not yet started
-
-Do not skip ahead from this handoff:
-
-```text
-R2-B = Bearer semantic quarantine / claim-hardness cleanup
-  F2 legacy bearer disambiguation
-  F5 E consistency-test vs independently applicable criterion
-  F9 routing strength vs theorem strength
-
-R2-C = supersession infrastructure
-  F3 per-claim retyping ledger
-  F7 local-owner authority / freeze typing
-```
-
-These come after R2-A is independently reviewed and dispositioned.
-
-## 4. L0 hard gate
-
-PR #949 established the B+ research direction, but the final L0 skeleton is not yet authorized for canonical rewrite.
-
-Preferred current architecture remains:
-
-```text
-L0:
-minimum non-neutrality / pre-object difference
--> subjectless active Selection
--> manifestation + relative backgrounding
--> active verticalization / non-flat differentiation
-+ finite positionality
-+ minimal historical asymmetry / non-equivalence to never-occurrence
-
-then downstream:
-verticality + recurrence / re-entry / lineage -> One / Selection-position
-formed One + P + E -> Bearer routing direction
-Bearer -> 承担 / concern / agency / subject / cognition / phenomenality = separately OPEN
-```
-
-Critical distinctions:
-
-- L0 activity != agency / volition / subject initiative;
-- L0 active verticalization != recurrent formed vertical organization != One;
-- κ₀ / ε / cost / P0-04 are not automatically retained as independent L0 primitives;
-- minimal historical asymmetry should not be inflated into a strong physical irreversibility / Landauer / granular-time theorem.
-
-Before any L0 canonical rewrite, perform the creator–AI final-skeleton alignment gate from #949. Do not infer final author commitment from B+ shorthand, review consensus, repository smoothness, or absence of objections.
-
-## 5. Exact next-session route
-
-```text
-1. AGENTS.md §Session Start bootstrap.
-2. Re-fetch live main, STATUS.md and open PRs.
-3. Inspect #951 final head + latest Governance Preflight.
-4. If #951 is clean and matches the grouping above, merge/close out its provenance layer.
-5. Rebase or re-audit #952 against the resulting main if needed.
-6. Perform independent content review of #952 final head.
-7. Resolve review findings; only then decide whether R2-A merges.
-8. Do not start R2-B or L0 canonical rewrite before those gates are cleared.
-```
-
-## 6. Programme guards
+Programme guards:
 
 ```text
 new Level 1 = NOT ASSIGNED
@@ -144,3 +93,32 @@ scientific distinctiveness = NOT ESTABLISHED
 whole-architecture non-substitutability = NOT ESTABLISHED
 research_mode = U
 ```
+
+## 6. L0 hard gate remains #949
+
+#949 records B+ as an author-selected reconstruction direction, not a final canonical L0 skeleton.
+
+Before any rewrite of `Core_Law/SRT_L0_Metaphysics.md`, complete the creator–AI final-skeleton alignment cycle specified by #949 and obtain explicit creator adjudication of the final skeleton. Do not infer that authorization from B+ shorthand, review consensus, repository smoothness or absence of objections.
+
+Current guard remains:
+
+```text
+L0 canonical rewrite = HOLD
+```
+
+## 7. Exact fresh-session route from this closeout
+
+```text
+1. Execute `AGENTS.md §Session Start` bootstrap.
+2. Re-fetch live main, `STATUS.md §Fast Status` and current open PRs.
+3. Verify #953 disposition and #949 live state.
+4. Read this handoff only as provenance for the R2-A closeout.
+5. If the next programme step is R2-B, scope it strictly to F2 / F5 / F9.
+6. Do not mix R2-C F3 / F7 into that pass without a separate gate.
+7. Do not begin L0 canonical rewrite before #949 creator–AI final-skeleton alignment is explicitly completed.
+8. Old-canonical reverse audit remains queued after the separately governed R2 groups, per current STATUS.
+```
+
+## 8. Nonblocking editorial debt
+
+Some generated provenance wording around historical `SRT_AI_START.md §2` / `Registry §C` labels remains mechanically awkward. It is editorial cleanup debt, not an R2-A merge gate, and should not be used to reopen already-closed authority semantics.
