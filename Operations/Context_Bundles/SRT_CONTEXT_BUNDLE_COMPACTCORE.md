@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-12
-source_commit: c9d763d6
-source_branch: governance/r2c-supersession-ledger-freeze-gate-20260912
+source_commit: f5134e16
+source_branch: theory/owner-landing-scope-audit-20260913
 source_dirty: false
-inputs_digest: 73bee957978c5c05
+inputs_digest: a3dd6cd005a34ac1
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: 73bee957978c5c05
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-12 |
-| 来源 commit | `c9d763d6` |
-| 来源分支 | `governance/r2c-supersession-ledger-freeze-gate-20260912` |
+| 来源 commit | `f5134e16` |
+| 来源分支 | `theory/owner-landing-scope-audit-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
