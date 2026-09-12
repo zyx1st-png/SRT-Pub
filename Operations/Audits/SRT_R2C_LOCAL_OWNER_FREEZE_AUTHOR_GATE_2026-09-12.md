@@ -2,10 +2,10 @@
 id: SRT-R2C-LOCAL-OWNER-FREEZE-AUTHOR-GATE-20260912
 type: audit
 status: active
-record_stage: author_gate_ready
+record_stage: author_gate_adjudicated
 date: 2026-09-12
 layer: operations
-epistemic_layer: os
+epistem_layer: os
 claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
@@ -14,6 +14,7 @@ root_question: How should local-owner edit safety be typed after the frozen gene
 dependency:
   - Operations/Audits/SRT_R2C_SUPERSESSION_INFRASTRUCTURE_2026-09-12.md
   - Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Core_Law/SRT_One_Formation.md
   - Core_Law/SRT_Individuation.md
@@ -24,11 +25,11 @@ tags: [R2C, AuthorGate, Freeze, OneFormation, Individuation, Supersession]
 
 # R2-C author gate — local-owner authority / freeze typing
 
-> **Role:** present the minimum author decision required to close F7 after F3 ledger infrastructure has been opened. This file does not infer an answer from the author's instruction to continue, from prior owner adjudication, or from repository consistency.
+> **Role:** record the minimum author decision required to close F7 after F3 ledger infrastructure was opened. The author explicitly selected **A** on 2026-09-12; authoritative provenance is `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md`.
 
-## 1. What is already fixed
+## 1. What was already fixed
 
-The following are not being re-voted here:
+The following were not re-voted here:
 
 ```text
 SRT_Generative_Ontology_Spine = frozen cross-owner routing owner;
@@ -40,7 +41,7 @@ R2-A = COMPLETE;
 R2-B = COMPLETE.
 ```
 
-F7 asks only how edit-safety / freeze typing should match those already established roles.
+F7 asked only how edit-safety / freeze typing should match those already established roles.
 
 ---
 
@@ -64,15 +65,13 @@ AND
 it still requires protected or cross-checked editing because other owners route to it.
 ```
 
-The author decision should therefore choose edit-safety without silently changing P-level, Level standing, theorem status or scientific distinctiveness.
+The author decision therefore selects edit-safety without silently changing P-level, Level standing, theorem status or scientific distinctiveness.
 
 ---
 
-## 3. Options
+## 3. Options presented
 
-### A — split edit-safety by owner role **[RECOMMENDED]**
-
-Adjudicate:
+### A — split edit-safety by owner role **[AUTHOR-SELECTED]**
 
 ```text
 1. Accept `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md`
@@ -93,56 +92,30 @@ Adjudicate:
    it does not upgrade canonical truth, P-level, theorem status or Level standing.
 ```
 
-**Why A is preferred:** it resolves the true asymmetry without freezing unresolved Individuation claims as A-level anchors and without weakening the already-established One owner.
-
-**Landing after A:** edit `Governance/SRT_CANONICAL_FREEZE.md`, resolve ledger rows `R2C-008/009`, update STATUS and required generated bundles. No theory body edit is required.
+**Author result:** ACCEPTED. Landing is bounded to governance / ledger / STATUS / generated propagation; no theory body edit is required.
 
 ---
 
 ### B — protect One Formation only; leave Individuation explicitly OPEN / unlisted
 
-Adjudicate:
-
-```text
-One_Formation -> Freeze A;
-Individuation freeze class -> OPEN / unlisted pending later subject reconstruction.
-```
-
-**Advantage:** narrower change and maximum flexibility for subject reconstruction.
-
-**Cost:** subject-position questions still route to a major local model whose edit-safety class remains outside both A and B. This is explicit rather than accidental, but less tidy than A.
-
-**Landing after B:** edit freeze governance for One Formation, record Individuation `OPEN` in the ledger, update STATUS / bundles. F7 may be considered closed only if the author explicitly accepts OPEN/unlisted as the intended current typing.
+Not selected.
 
 ---
 
 ### C — ledger only; defer F7
 
-Adjudicate:
-
-```text
-F3 ledger = ACCEPT;
-freeze lists unchanged;
-F7 remains OPEN;
-R2-C remains incomplete.
-```
-
-**Advantage:** no authority-safety mutation before further subject work.
-
-**Cost:** the frozen spine continues to delegate detailed One semantics to an unfrozen local owner, leaving the exact F7 inconsistency in place.
+Not selected.
 
 ---
 
-## 4. What no option here may do
-
-This gate does not authorize:
+## 4. What this adjudication does not authorize
 
 ```text
 changing One_Formation from P1-candidate to P1 theorem;
 changing Individuation into the owner of One;
 closing a positive subject-position criterion;
 repairing sigma_sr / sigma_sr^sub thresholds;
-starting old-canonical reverse audit beyond imported ledger rows;
+starting old-canonical reverse audit claim edits inside the R2-C landing;
 rewriting L0;
 closing Bearer -> 承担 / concern / agency / subject / cognition / phenomenality;
 new Level 1;
@@ -153,20 +126,13 @@ whole-architecture non-substitutability.
 
 ---
 
-## 5. Author gate
+## 5. Final author gate result
 
 ```text
-A — accept F3 ledger;
-    One_Formation -> Freeze A without claim-strength promotion;
-    Individuation -> Freeze B as downstream hybrid model;
-    freeze strength != claim strength.                 [RECOMMENDED]
-
-B — accept F3 ledger;
-    One_Formation -> Freeze A;
-    Individuation -> explicitly OPEN / unlisted pending subject reconstruction.
-
-C — accept F3 ledger only;
-    defer all F7 freeze changes and keep R2-C open.
+A = AUTHOR-ACCEPTED
+F3 ledger = ACCEPTED
+One_Formation = Freeze A / claim strength unchanged
+Individuation = Freeze B / downstream hybrid / reconstruction debt remains OPEN
+freeze strength != claim strength
+R2-C F3/F7 = COMPLETE after bounded governance landing
 ```
-
-No answer is inferred in this file.
