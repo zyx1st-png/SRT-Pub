@@ -1,0 +1,124 @@
+name: R2-B closeout helper
+
+on:
+  push:
+    branches:
+      - theory/r2b-bearer-semantic-quarantine-20260912
+
+permissions:
+  contents: write
+
+jobs:
+  closeout:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Patch STATUS for R2-B
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('STATUS.md')
+          s = p.read_text()
+          old = '''### 0. R2-A authority-cleanup closeout — 2026-09-12
+
+```text
+#951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
+#952 R2-A authority truth-up = MERGED / e33476e06de3471d11c1994595669552764983ab
+R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
+R2-B F2/F5/F9 = NEXT UNOPENED GATE / NOT STARTED BY THIS CLOSEOUT
+R2-C F3/F7 = SEPARATE / NOT STARTED
+#949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD
+```'''
+          new = '''### 0. R2-B Bearer semantic quarantine — 2026-09-12
+
+```text
+#951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
+#952 R2-A authority truth-up = MERGED / e33476e06de3471d11c1994595669552764983ab
+R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
+#954 R2-B Bearer semantic quarantine = AUTHOR OPTION A ACCEPTED / BOUNDED CANONICAL LANDING
+R2-B F2/F5/F9 = COMPLETE IN THIS LANDING
+R2-C F3/F7 = NEXT SEPARATE GATE / NOT STARTED
+#949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD
+```'''
+          if old not in s:
+              raise SystemExit('Fast Status R2-A block not found')
+          s = s.replace(old, new, 1)
+          old2 = '''current phase:
+R2-A AUTHORITY PROPAGATION = COMPLETE
+R2-B (F2/F5/F9) = NEXT UNOPENED GATE / NOT STARTED IN THIS CLOSEOUT
+R2-C (F3/F7) = SEPARATE / NOT STARTED
+OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-A/B/C
+#949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD'''
+          new2 = '''current phase:
+R2-A AUTHORITY PROPAGATION = COMPLETE
+R2-B (F2/F5/F9) = COMPLETE / AUTHOR A / BOUNDED LANDING IN #954
+R2-C (F3/F7) = NEXT SEPARATE GATE / NOT STARTED
+OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-C
+#949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD'''
+          if old2 not in s:
+              raise SystemExit('current phase block not found')
+          s = s.replace(old2, new2, 1)
+          old3 = '''Bearer semantic route = formed One + P prospective self-indexing + E same-One prospective exposure -> Bearer
+formal cross-domain P+E N&S theorem = OPEN
+Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality = separately OPEN'''
+          new3 = '''Bearer semantic route = formed One + P prospective self-indexing + E same-One prospective exposure -> Bearer
+current E non-outsourcing counterfactual = consistency / exclusion test
+independently applicable positive E admission / establishment criterion = OPEN
+pre-#947 bearer / same-bearer mapping = LEGACY QUARANTINE / CLAIM-BY-CLAIM ONLY
+P+E canonical routing strength != universal theorem / validated cross-domain classifier strength
+formal cross-domain P+E N&S theorem = OPEN
+Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality = separately OPEN'''
+          if old3 not in s:
+              raise SystemExit('Bearer status block not found')
+          s = s.replace(old3, new3, 1)
+          old4 = '''Bearer
+= canonically routed as an already formed One / Selection-position satisfying
+  P prospective self-indexing + E same-One prospective exposure at semantic / architectural strength;
+  a universal formal / empirical cross-domain N&S theorem remains OPEN.'''
+          new4 = '''Bearer
+= canonically routed as an already formed One / Selection-position satisfying
+  P prospective self-indexing + E same-One prospective exposure at semantic / architectural strength;
+  the current E non-outsourcing counterfactual is a consistency / exclusion test;
+  an independently applicable positive E admission criterion remains OPEN;
+  pre-#947 bearer-language is quarantined pending claim-by-claim retyping;
+  a universal formal / empirical cross-domain N&S theorem remains OPEN.'''
+          if old4 not in s:
+              raise SystemExit('Bearer layering block not found')
+          s = s.replace(old4, new4, 1)
+          p.write_text(s)
+          PY
+      - name: Record clean source commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add STATUS.md
+          git commit -m 'Refresh STATUS for R2-B Bearer closeout'
+      - name: Regenerate context bundles
+        run: |
+          python scripts/build_srt_context_bundles.py
+      - name: Remove helper and commit generated propagation
+        run: |
+          rm .github/workflows/r2b-closeout-helper.yml
+          git add STATUS.md Operations/Context_Bundles .github/workflows/r2b-closeout-helper.yml
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit'
+          else
+            git commit -m 'Regenerate context bundles after R2-B landing'
+          fi
+      - name: Run governance preflight
+        run: |
+          python scripts/governance_preflight.py
+      - name: Push closeout
+        run: |
+          git push origin HEAD:theory/r2b-bearer-semantic-quarantine-20260912
