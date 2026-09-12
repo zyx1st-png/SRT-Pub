@@ -2,7 +2,7 @@
 id: SRT-R2C-SUPERSESSION-INFRASTRUCTURE-20260912
 type: audit
 status: active
-record_stage: independent_audit_author_gate_preparation
+record_stage: author_a_governance_landing_ready
 date: 2026-09-12
 layer: operations
 epistemic_layer: os
@@ -13,6 +13,8 @@ research_mode: U
 root_question: What minimum supersession infrastructure closes R2-C F3/F7 without beginning the old-canonical reverse audit or promoting draft local-owner claims?
 dependency:
   - Operations/Audits/SRT_PR947_RETROSPECTIVE_INDEPENDENT_REVIEW_2026-09-12.md
+  - Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - CANONICAL_REGISTRY.md
   - Governance/SRT_CANONICAL_FREEZE.md
@@ -26,8 +28,10 @@ tags: [R2C, Supersession, RetypingLedger, Freeze, LocalOwner, OneFormation, Indi
 # R2-C independent audit — supersession infrastructure
 
 > **Scope:** R2-C only: `F3` per-claim supersession ledger and `F7` local-owner authority / freeze typing. This record does not begin the old-canonical reverse audit, does not alter L0, does not satisfy #949, and does not assign any new Level.
+>
+> **Author outcome:** option **A** was explicitly selected on 2026-09-12. See `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md`. The bounded landing therefore accepts the ledger, protects `SRT_One_Formation` as Freeze A without claim-strength promotion, and places `SRT_Individuation` in Freeze B while keeping subject-entry / sigma reconstruction OPEN.
 
-## 1. Live gate verified
+## 1. Live gate verified at audit start
 
 Baseline at audit start:
 
@@ -38,237 +42,171 @@ R2-B = COMPLETE / #954 merged
 R2-C F3/F7 = NEXT SEPARATE GATE / NOT STARTED
 old-canonical reverse audit = AFTER R2-C
 #949 = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
-L0 rewrite = HOLD
+L0 canonical rewrite = HOLD
 ```
 
-The only open PR at audit start is #949, whose scope is the creator–AI final-skeleton gate for later L0 work. It is not an R2-C implementation vehicle.
+The retrospective review assigned:
+
+```text
+F3 = create per-claim retyping ledger using
+     KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN
+
+F7 = decide local-owner authority / freeze typing through that ledger,
+     not by ad hoc promotion.
+```
 
 ---
 
-## 2. F3 finding — the repository has dispositions but no per-claim working ledger
+## 2. F3 finding — supersession needs a claim ledger, not another owner
 
-The post-#947 repository already uses the disposition vocabulary:
+The spine already says conflicting old cross-layer inference becomes cleanup / retyping debt. STATUS already contains several paid dispositions. The missing infrastructure was a stable place where each specific claim can be tracked from source through adjudication to implementation.
 
-```text
-KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN
-```
+The ledger must not become a shadow canonical layer.
 
-and `STATUS.md` already contains a small supersession summary for #931/#933. But there is no stable per-claim surface recording:
+Required distinction:
 
 ```text
-which source claim is being judged;
-where it occurs;
-what exact cross-owner conflict or compatibility is alleged;
-which disposition was selected;
-which current owner controls the replacement / surviving reading;
-who authorized the disposition;
-whether implementation has actually landed.
+ledger row != definition;
+proposed disposition != author adjudication;
+author adjudication != implementation landing;
+implementation landing != theorem promotion.
 ```
 
-That gap matters because the spine's rule
+Therefore the minimum F3 artifact is:
+
+`Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md`
+
+with stable row IDs and the spine §9 disposition vocabulary.
+
+### F3 result
 
 ```text
-older conflicting cross-layer inference -> cleanup / retyping debt
+F3 infrastructure = SOUND / ACCEPTED BY AUTHOR A;
+ledger authority = audit-only / noncanonical;
+reverse-audit claim editing = NOT STARTED by this landing.
 ```
-
-is otherwise invocable without an auditable adjudication trail.
-
-### F3 required properties
-
-The ledger should therefore:
-
-1. be **audit / governance infrastructure, not a definition owner**;
-2. use a stable per-claim ID;
-3. preserve the original source path and anchor;
-4. record the normalized claim rather than merely a token occurrence;
-5. type the conflict / compatibility against the current spine and local owner;
-6. restrict final dispositions to the seven §9 verbs;
-7. separate **decision state** from **implementation state**;
-8. preserve explicit author / canonical provenance;
-9. allow `OPEN` as a legitimate result rather than forcing replacement theory;
-10. forbid bulk `bearer` token migration after R2-B's legacy quarantine.
-
-### Recommended F3 artifact
-
-```text
-Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md
-```
-
-The ledger is intentionally under `Operations/Audits/`: it records adjudication and implementation state but cannot overrule a canonical owner by itself.
 
 ---
 
-## 3. F7 finding — freeze strength and claim strength are currently conflated by omission
+## 3. F7 finding — the problem is edit safety, not claim hardness
 
-### 3.1 `SRT_One_Formation.md`
-
-Current frontmatter / registry typing:
+Current asymmetry before this landing:
 
 ```text
-status = draft
-claim_mode = canonical
-claim_level = P1-candidate
-role = thin L1 canonical semantic owner for One / Selection-position formation
+Freeze-A cross-owner spine
+-> delegates detailed One formation semantics to
+Core_Law/SRT_One_Formation.md
+
+but
+
+SRT_One_Formation
+= registered canonical semantic owner
+= status: draft
+= claim_level: P1-candidate
+= no Freeze A/B position.
 ```
 
-The registry explicitly routes One / Selection-position definition questions to it. The frozen cross-owner spine also delegates detailed One formation semantics to it.
+This is an edit-safety mismatch. It does **not** imply that One Formation should be promoted to theorem status.
 
-But `Governance/SRT_CANONICAL_FREEZE.md` lists the spine in Freeze A and does **not** list `SRT_One_Formation.md` in A or B.
-
-This creates the exact F7 asymmetry:
+`SRT_Individuation.md` is structurally different:
 
 ```text
-frozen cross-owner owner
--> delegates detail to
-unfrozen local canonical semantic owner.
+status: draft_v0
+claim_mode: hybrid
+role: downstream subject-position / self-consciousness model
+legacy subject-entry / sigma threshold debt remains explicitly unresolved.
 ```
 
-The clean repair is **not** to promote `P1-candidate` into a theorem. Freeze is edit-safety, not epistemic truth.
+Protecting it as Freeze A would overprotect unresolved downstream content. Leaving it entirely untyped would also leave a major registered downstream model without a declared cross-check class.
 
-### 3.2 `SRT_Individuation.md`
-
-Current typing:
+Therefore the clean split is:
 
 ```text
-status = draft_v0
-claim_mode = hybrid
-role = downstream subject-position / self-consciousness model
+One Formation -> Freeze A / edit protection only / P1-candidate unchanged;
+Individuation -> Freeze B / downstream hybrid / reconstruction space preserved.
 ```
-
-The registry already says:
-
-```text
-One_Formation owns formed One / Selection-position;
-P1-T06 owns stronger Stable-ISP standing;
-Individuation is downstream and may not use sigma_sr / sigma_sr^sub to define One.
-```
-
-Its own R1 boundary note says legacy subject-entry / ISP-entry language remains pending later reconstruction. It therefore still needs controlled mutability.
-
-Freezing it as an A-level canonical anchor would protect unresolved legacy language too strongly. Leaving it completely untyped, however, fails to distinguish a major core L1 model from ordinary freely editable text.
 
 ---
 
-## 4. Key governance distinction
+## 4. Critical non-equivalence
 
-R2-C should explicitly separate two axes:
-
-```text
-Axis 1 — authority / claim hardness
-canonical semantic owner | hybrid model | P1-candidate | P2 | P3/P4 | OPEN ...
-
-Axis 2 — edit-safety / freeze class
-Freeze A | Freeze B | runtime / navigation | unlisted
-```
-
-These axes are not equivalent.
-
-Therefore:
+The R2-C decision must preserve:
 
 ```text
-Freeze A does not mean theorem;
-Freeze B does not mean noncanonical;
-draft status does not mean freely rewritable if the file is already a registered semantic owner;
-canonical semantic ownership does not require promoting every positive claim to P1 theorem status.
+freeze class != epistemic truth;
+freeze class != P-level;
+freeze class != theorem status;
+freeze class != programme Level standing;
+freeze class != scientific distinctiveness.
 ```
 
-This distinction resolves F7 without a hidden claim-strength ratchet.
+This is the main protection against governance-driven theory ratcheting.
 
 ---
 
-## 5. Recommended F7 disposition
+## 5. Author-adjudicated landing
 
-### Option A — split edit-safety by owner role **[RECOMMENDED]**
-
-```text
-SRT_One_Formation.md
-- authority: KEEP current local canonical semantic owner role;
-- claim hardness: KEEP status=draft, claim_level=P1-candidate;
-- freeze: RETYPE -> Freeze A;
-- reason: frozen spine delegates current One definition here, so silent rewrites must require explicit authorization.
-
-SRT_Individuation.md
-- authority: KEEP / RETYPE only as downstream hybrid subject-position model already described by registry;
-- claim hardness: unchanged; no subject theorem promotion;
-- freeze: RETYPE -> Freeze B;
-- reason: important core L1 model requiring cross-check, but unresolved sigma / subject-entry language must remain reconstructible.
-```
-
-Add one governance note:
+Author option A authorizes only:
 
 ```text
-freeze class controls edit safety only and does not upgrade P-level, canonical truth, theorem status or Level standing.
+ACCEPT  Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md
+
+Governance/SRT_CANONICAL_FREEZE.md:
+  One_Formation -> Freeze A
+  Individuation -> Freeze B
+  explicit freeze-strength != claim-strength rule
+
+ledger:
+  R2C-008 / R2C-009 -> AUTHOR-ACCEPTED / LANDED
+
+STATUS / generated context bundles:
+  R2-C complete
+  old-canonical reverse audit = next separate programme step
 ```
 
-### Option B — protect One owner only; leave Individuation explicitly OPEN
-
-```text
-One_Formation -> Freeze A;
-Individuation freeze classification -> OPEN / unlisted pending subject reconstruction.
-```
-
-This is defensible and narrower, but it leaves a major downstream local model outside A/B even though the registry routes subject-position questions to it.
-
-### Option C — ledger only; defer F7
-
-```text
-create F3 ledger;
-leave freeze lists untouched;
-F7 remains OPEN;
-R2-C remains incomplete.
-```
-
-This is maximally conservative but does not close the current programme gate.
+No theory body rewrite is part of R2-C.
 
 ---
 
-## 6. F3 seed policy
+## 6. Hard scope guards
 
-The initial ledger may import only dispositions that are **already paid** by current author/canonical state. Importing them is not a new reverse audit.
-
-Safe initial rows include the already-recorded #931/#933 supersessions:
+R2-C does not authorize:
 
 ```text
-history-to-reconstitution = Bearer definition -> RETIRE;
-first constitutive history coupling = Bearer onset -> RETIRE;
-SC > generic Bearer -> RETIRE;
-self-consequence closure as a relation -> RETYPE as retrospective self-effect closure;
-matched-history tests -> RETYPE as retrospective dependence tests;
-PH-IND02 PERS-2 -> RETYPE as retrospective consequence/history relation family.
-```
-
-F7 rows should remain `OPEN / AUTHOR GATE` until the author selects an option.
-
----
-
-## 7. What R2-C does not authorize
-
-Even if Option A is selected, R2-C still does not itself authorize:
-
-```text
-claim-by-claim old-canonical reverse audit beyond imported already-adjudicated rows;
+old-canonical reverse-audit claim edits inside this landing;
 L0 canonical rewrite;
-Individuation subject-threshold repair;
-Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality closure;
-formal P+E N&S theorem;
-independently applicable E admission criterion;
+#949 satisfaction;
+One Formation theorem promotion;
+Individuation / sigma subject-threshold closure;
+Bearer -> 承担 / concern / agency / subject / cognition / phenomenality closure;
 new Level 1;
 Level 2 exit;
 scientific distinctiveness;
 whole-architecture non-substitutability.
 ```
 
-After R2-C closes, the old-canonical reverse audit may begin from the spine / ledger, with L0 body rewriting still blocked by #949.
-
 ---
 
-## 8. Independent verdict
+## 7. Exit condition
+
+R2-C closes when all are true:
 
 ```text
-F3 = READY TO LAND as audit infrastructure;
-F7 = AUTHOR DECISION REQUIRED;
-recommended author choice = A;
-canonical theory edit = NOT REQUIRED for the gate itself;
-freeze/governance edit = HOLD pending explicit author adjudication;
-R2-C = NOT YET CLOSED;
+F3 ledger exists and is explicitly noncanonical;
+F7 author decision recorded;
+freeze policy implements the selected split;
+ledger rows record the landed state;
+STATUS routes the reverse audit next;
+context bundles are fresh;
+governance preflight passes on the final head.
+```
+
+At that point:
+
+```text
+R2-A = COMPLETE
+R2-B = COMPLETE
+R2-C = COMPLETE
+old-canonical reverse audit = NEXT SEPARATE PROGRAMME STEP
+#949 remains required before any L0 canonical rewrite
 ```
