@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-11
+updated: 2026-09-12
 ---
 
 # SRT 当前状态仪表盘
@@ -16,10 +16,22 @@ updated: 2026-09-11
 
 ## Fast Status
 
+### 0. R2-A authority-cleanup closeout — 2026-09-12
+
+```text
+#951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
+#952 R2-A authority truth-up = MERGED / e33476e06de3471d11c1994595669552764983ab
+R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
+R2-B F2/F5/F9 = NEXT UNOPENED GATE / NOT STARTED BY THIS CLOSEOUT
+R2-C F3/F7 = SEPARATE / NOT STARTED
+#949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD
+```
+
 ### 1. 当前工作状态
 
 ```text
-latest merged canonical checkpoint:
+latest merged ontology-formation checkpoint:
 #947 Land canonical generative ontology spine before old-canonical cleanup
 merge = 9afe036b1bf35b896afa3b9900613fdfb563cfd9
 status = MERGED / CROSS-OWNER CANONICAL SPINE
@@ -29,8 +41,12 @@ prior bounded canonical landings:
 #940 Stable-ISP standing decoupling
 
 current phase:
-POST-#947 STATUS / CONTEXT CLOSEOUT
--> then OLD-CANONICAL REVERSE AUDIT FROM NEW SPINE
+R2-A AUTHORITY PROPAGATION = COMPLETE
+R2-B (F2/F5/F9) = NEXT UNOPENED GATE / NOT STARTED IN THIS CLOSEOUT
+R2-C (F3/F7) = SEPARATE / NOT STARTED
+OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-A/B/C
+#949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+L0 canonical rewrite = HOLD
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
 local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`
@@ -47,6 +63,8 @@ research_mode = U
 ```
 
 ### 2. Current controlling route
+
+> `CANONICAL_REGISTRY.md §C` is the single owner of complete citation priority. The list below is a **task-local working read sequence**, not a second authority chain; cross-owner adjudication still resolves through Registry §C -> Generative Ontology Spine -> compatible local owners.
 
 For current ontology / canonical-cleanup work, load in this order:
 
@@ -475,7 +493,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#947 is now the controlling cross-owner canonical spine. #940/#942 remain compatible local landings; #938 remains a noncanonical reconstruction checkpoint. #947 canonically fixes the P+E Bearer semantic route but does not close Bearer->actual 承担 / concern / agency / subject / cognition / phenomenality, nor does it re-ratify every historical L0 primitive or downstream canonical claim.
+#947 remains the semantic cross-owner canonical spine. #952 now closes the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #940/#942 remain compatible local landings; #938 remains a noncanonical reconstruction checkpoint. Neither #951 nor #952 closes Bearer->actual 承担 / concern / agency / subject / cognition / phenomenality, nor do they authorize an L0 canonical rewrite.
 
 ---
 
@@ -513,6 +531,8 @@ collective subject sufficiency.
 ---
 
 ## Immediate routing
+
+> **2026-09-12 R2-A closeout override:** the legacy reverse-audit queue below remains useful as the eventual audit path, but it is not the immediate next execution sequence. R2-B (`F2/F5/F9`) and R2-C (`F3/F7`) must be separately closed before that reverse audit proceeds. This closeout does not enter either group. #949 creator–AI final-skeleton alignment still precedes any L0 canonical rewrite.
 
 ```text
 1. treat #947 / `SRT_Generative_Ontology_Spine.md` as the current cross-owner canonical audit standard;
