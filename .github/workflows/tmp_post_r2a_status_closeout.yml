@@ -105,7 +105,8 @@ jobs:
           p.write_text(text, encoding='utf-8')
           PY
           rm .github/workflows/tmp_post_r2a_status_closeout.yml
-          git add STATUS.md .github/workflows/tmp_post_r2a_status_closeout.yml
+          rm -f .post_r2a_closeout_trigger
+          git add STATUS.md .github/workflows/tmp_post_r2a_status_closeout.yml .post_r2a_closeout_trigger
           git diff --cached --check
           git commit -m "Refresh STATUS after R2-A authority closeout"
 
