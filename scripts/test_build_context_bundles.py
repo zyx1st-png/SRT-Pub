@@ -330,16 +330,20 @@ def test_context_budget() -> None:
 
 def test_manifest_completeness() -> None:
     """manifest 差异报告必须把「未收录」讲清楚，且不得声称自己是完备闭包。"""
-    first_sources = B.parse_first_sources()
+    authority_sources = B.parse_authority_sources()
     mentioned, _broken = B.registry_mentions()
-    check("First Sources 解析非空", len(first_sources) >= 10, f"got {len(first_sources)}")
+    check("Registry §C authority sources 解析非空", len(authority_sources) >= 10,
+          f"got {len(authority_sources)}")
+    check("Registry §C 把 generative spine 放在 local owners 之前",
+          authority_sources.index("Core_Law/SRT_Generative_Ontology_Spine.md")
+          < authority_sources.index("Core_Law/SRT_L0_Metaphysics.md"))
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 
     # 每个骨架文件都要有分类依据，不能落进兜底。
     for path in B.SPINE:
         check(f"SPINE_BUCKETS 覆盖 {path}", path in B.SPINE_BUCKETS)
 
-    check("SPINE 含 CLAIM_MODE_AUDIT（First Sources 第 3 位）",
+    check("SPINE 含 CLAIM_MODE_AUDIT（Registry §C authority sources 第 3 位）",
           "Governance/SRT_CLAIM_MODE_AUDIT.md" in B.SPINE)
 
     # 七命题摘要与两个 Reference 文件为预算原因移出，但必须在未收录清单里可见——
@@ -354,9 +358,12 @@ def test_manifest_completeness() -> None:
     check("OPEN_TENSIONS 在 manifest 差异报告中显式列名",
           "Core/SRT_OPEN_TENSIONS.md" in report_now)
 
-    missing_fs = [p for p in first_sources
-                  if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
-    check("AI_START §2 First Sources 全部落入 SPINE", not missing_fs, f"缺 {missing_fs}")
+    check("SPINE authority projection: Registry precedes generative spine",
+          B.SPINE.index("CANONICAL_REGISTRY.md")
+          < B.SPINE.index("Core_Law/SRT_Generative_Ontology_Spine.md"))
+    check("SPINE authority projection: generative spine precedes L0 local owner",
+          B.SPINE.index("Core_Law/SRT_Generative_Ontology_Spine.md")
+          < B.SPINE.index("Core_Law/SRT_L0_Metaphysics.md"))
 
     report = B.build_manifest_report(B.SPINE)
     check("报告声明本包不是完备闭包",
@@ -475,15 +482,15 @@ def test_broken_registry_paths_surface() -> None:
             check(f"报告点名失效路径 {p}", f"`{p}`" in report)
     check("报告区分「文件存在但未收」", "文件存在、但本包未收" in report)
 
-    # 失效的 First Source 不得被算作「已全部收录」。
-    real = B.parse_first_sources
-    B.parse_first_sources = lambda: real() + ["Core_Law/__does_not_exist__.md"]
+    # 失效的 Registry §C authority source 不得被算作「已全部收录」。
+    real = B.parse_authority_sources
+    B.parse_authority_sources = lambda: real() + ["Core_Law/__does_not_exist__.md"]
     try:
         r2 = B.build_manifest_report(B.SPINE)
-        check("失效 First Source 不被算作已全部收录", "已全部收录" not in r2)
-        check("失效 First Source 被点名", "__does_not_exist__" in r2)
+        check("失效 Registry §C authority source 不被算作已全部收录", "已全部收录" not in r2)
+        check("失效 Registry §C authority source 被点名", "__does_not_exist__" in r2)
     finally:
-        B.parse_first_sources = real
+        B.parse_authority_sources = real
 
 
 def run() -> None:

@@ -255,24 +255,11 @@ Bounded archive/evidence work may continue. A third main well is on hold until e
 
 The 2026-08-29 programme reconstruction and 2026-09-05 sequencing correction are prospective. They do not silently rewrite frozen owners.
 
-When exact **current registered** meanings are required, still follow the existing authority chain:
+When exact **current registered** meanings are required, do **not** maintain or infer a second complete authority chain from this bootstrap file. Follow `CANONICAL_REGISTRY.md §C` as the single complete citation-priority owner.
 
-1. `CANONICAL_REGISTRY.md`
-2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-4. `Core_Law/SRT_L0_Metaphysics.md`
-5. `Core/SRT_Core_21_Minimal_Axioms.md`
-6. `Core/SRT_Core_21b_Constitutive_Theorems.md`
-7. `_SRT_D_VALUE_CANONICAL.md`
-8. `_SRT_PSI_F_CANONICAL.md`
-9. `_SRT_T_DIR_CANONICAL.md`
-10. `_SRT_CROSS_DOMAIN_MATRIX.md`
-11. `Core/SRT_Core_22_Equations.md`
-12. `_SRT_SYMBOL_TABLE.md`
-13. `Core/SRT_Core_21_Formal_Axioms.md`
-14. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+For current cross-owner ontology generation order, non-identities, and OPEN routing, consult `Core_Law/SRT_Generative_Ontology_Spine.md` after the Registry and before compatible local owners. Local owners retain their detailed definitions only where compatible with that routing.
 
-This list records present repository authority. A later Core/Core_Law role-reclassification audit will decide what should remain constitutional source, commentary, domain formalization, operational proxy or historical formalization.
+This runtime entry is a projection of the Registry, not an independent authority list. A later Core/Core_Law role-reclassification audit may still retype local owners without changing this single-source rule.
 
 ## 7. Symbol quick guard
 

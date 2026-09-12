@@ -32,9 +32,9 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
 
 ---
 
-## §0. Formation order
+## §0. Local One-formation elaboration
 
-The canonical order is:
+Within the cross-owner trunk fixed by `Core_Law/SRT_Generative_Ontology_Spine.md`, the local One-formation segment is:
 
 ```text
 subjectless Selection
@@ -44,7 +44,7 @@ subjectless Selection
 -> stronger downstream standing / bearing / subject relations where separately paid.
 ```
 
-This order preserves the L0 rule that Selection does not require a pre-existing chooser. `One` is therefore not a hidden agent standing behind Selection and is not the cause required to start Selection.
+This local elaboration preserves the L0 rule that Selection does not require a pre-existing chooser. `One` is therefore not a hidden agent standing behind Selection and is not the cause required to start Selection.
 
 ---
 
