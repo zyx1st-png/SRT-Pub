@@ -26,8 +26,9 @@ R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
 R2-B F2/F5/F9 = COMPLETE IN THIS LANDING
 #955 R2-C supersession infrastructure = AUTHOR OPTION A ACCEPTED / BOUNDED GOVERNANCE LANDING
 R2-C F3/F7 = COMPLETE IN THIS LANDING
-OLD-CANONICAL REVERSE AUDIT = NEXT SEPARATE PROGRAMME STEP / NOT STARTED BY #955
-#949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+#956 creator–AI minimal-skeleton alignment checkpoint = OPEN DRAFT / CURRENT THEORY-MAINLINE CHECKPOINT
+#949 B+ creator–AI gate = OPEN DRAFT / PROCEDURAL PREDECESSOR / PROVENANCE
+OLD-CANONICAL REVERSE AUDIT = SEPARATE PROGRAMME STEP / NOT STARTED / MUST NOT DRIVE THEORY BEFORE WHOLE-SKELETON AUTHOR ADJUDICATION
 L0 canonical rewrite = HOLD
 ```
 
@@ -47,8 +48,9 @@ current phase:
 R2-A AUTHORITY PROPAGATION = COMPLETE
 R2-B (F2/F5/F9) = COMPLETE / AUTHOR A / BOUNDED LANDING IN #954
 R2-C (F3/F7) = COMPLETE / AUTHOR A / BOUNDED GOVERNANCE LANDING IN #955
-OLD-CANONICAL REVERSE AUDIT = NEXT SEPARATE PROGRAMME STEP / NOT STARTED BY #955
-#949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
+#956 CREATOR–AI MINIMAL-SKELETON ALIGNMENT = OPEN DRAFT / CURRENT THEORY-MAINLINE CHECKPOINT
+#949 B+ CREATOR–AI GATE = PROCEDURAL PREDECESSOR / PROVENANCE
+OLD-CANONICAL REVERSE AUDIT = SEPARATE LATER PROGRAMME STEP / DO NOT USE AS THEORY-FORMATION ENGINE BEFORE WHOLE-SKELETON ADJUDICATION
 L0 canonical rewrite = HOLD
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
@@ -83,20 +85,23 @@ For current ontology / canonical-cleanup work, load in this order:
 2. `CANONICAL_REGISTRY.md` — local owner routing after the spine
 3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
 4. `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_One_Formation.md` / P1-T06 / d / Psi_f / T_dir — local owners, only within spine-compatible scope
-5. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md` — author execution-order provenance
-6. `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_CANONICAL_LANDING_SCOPE_2026-09-11.md` — cleanup scope / next audit order
+5. `01_Source_Intuition/SRT_AUTHOR_AI_ALIGNMENT_CHECKPOINT_MINIMAL_GENERATIVE_SKELETON_2026-09-12.md` — current creator–AI source / alignment checkpoint; noncanonical
+6. `Operations/Audits/SRT_CREATOR_AI_MINIMAL_SKELETON_ALIGNMENT_CHECKPOINT_2026-09-12.md` — AI pressure / canonical-tension map for #956; noncanonical
+7. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_SPINE_FIRST_CANONICAL_CLEANUP_2026-09-11.md` — author execution-order provenance
+8. `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_CANONICAL_LANDING_SCOPE_2026-09-11.md` — cleanup scope / historical next-audit order
 
 Current cleanup rule:
 
 ```text
-new spine = research / audit constraint;
-older conflicting cross-layer canonical prose = audit target, not veto authority;
+new spine = current canonical research / audit constraint;
+#956 = current noncanonical theory-mainline alignment checkpoint / pressure source;
+older conflicting cross-layer canonical prose = future audit target, not veto authority;
 compatible local definitions survive;
 retiring an old claim does not require inventing a replacement theorem;
 OPEN stays OPEN unless separately adjudicated.
 ```
 
-The pre-#947 unmerged branch `theory/canonical-cleanup-b1-individuation-20260911` is candidate patch material only. Do not merge it as-is; re-audit / rebase its useful repairs against the new spine.
+The pre-#947 unmerged branch `theory/canonical-cleanup-b1-individuation-20260911` is candidate patch material only. Do not merge it as-is; re-audit / rebase its useful repairs against the eventual creator-adjudicated whole skeleton and current canonical owners.
 
 ---
 
@@ -114,6 +119,8 @@ minimum non-neutrality / pre-object difference
 ```
 
 This is now the current primary formation axis; its `active vertical organization -> One / Selection-position` semantics are canonically owned by `Core_Law/SRT_One_Formation.md`, while stronger standing remains downstream.
+
+**#956 alignment pressure, noncanonical:** the current creator–AI checkpoint is testing a thinner reconstruction in which `Oriented Openness` is an admission condition, manifestation/backgrounding/primitive verticality may be constitutive readings of one Selection event, effective retention/re-entry is separated from minimal ontic update, One uses an admission-plus-strength architecture, and full relational `Position` may belong downstream under One–Many multiplicity. These are current theory-mainline pressures, not replacements for the canonical route above.
 
 Do **not** use as primary generation laws:
 
@@ -151,7 +158,7 @@ History remains important for continuation and lineage without becoming the sour
 
 ### 5. Positionality and Selection-position
 
-Three burdens must remain distinct:
+Three burdens must remain distinct under the current canonical route:
 
 ```text
 L0 positionality:
@@ -173,6 +180,8 @@ Selection-position standing != Bearer automatically
 Selection-position standing != first-person bearing automatically
 first-person bearing != subjecthood automatically
 ```
+
+**#956 alignment pressure, noncanonical:** current author–AI reconstruction distinguishes `primitive verticality`, `locus / lineage anchor`, `relational Position`, and `subject-position`; the exact retyping of canonical `Selection-position` is OPEN and no owner is edited by #956.
 
 ### 6. Perspective layering
 
@@ -250,6 +259,8 @@ Bearer != 承担 by definition
 Bearer != subject
 Bearer != experiencer
 ```
+
+**#956 alignment pressure, noncanonical:** Bearer is currently being reconstructed as an admission gate of a Formed One into same-One-indexed open futurity, with post-admission prospective-bearing thickness / profile; `Bearer != Concern` remains protected.
 
 ---
 
@@ -400,6 +411,8 @@ they may not silently constitute them.
 
 Exact bearer/domain and threshold assignments remain OPEN.
 
+**#956 d-value pressure, noncanonical:** the current creator–AI checkpoint explores whether d is more fundamentally related to the effective independent dimensionality of an active One–Many consequence / Selection coupling. `_SRT_D_VALUE_CANONICAL.md` remains the current owner; its scalar risk/stake-gradient definition is not edited here, and any future retyping must separately reconcile its `D_eff`, `d_stakes`, consequence-return and non-substitutability infrastructure.
+
 **既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
 
 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
@@ -498,7 +511,7 @@ Fresh sessions begin with:
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 3. this `STATUS.md §Fast Status`
 
-For current ontology / cleanup work, load `Core_Law/SRT_Generative_Ontology_Spine.md` first, then its local owners and claim-hardness governance. Historical #931/#933/#938 material is provenance and only controls where not superseded by #947 or later explicit author decisions.
+For current ontology work, load #956's source checkpoint after the current canonical route and keep its AI audit separate from author-owned meaning. Historical #931/#933/#938/#949 material remains provenance and only controls where not superseded by later explicit author decisions or current owners.
 
 ### 23. Canonical freeze / edit discipline
 
@@ -507,7 +520,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#947 remains the semantic cross-owner canonical spine. #952 now closes the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #940/#942 remain compatible local landings; #938 remains a noncanonical reconstruction checkpoint. Neither #951 nor #952 closes Bearer->actual 承担 / concern / agency / subject / cognition / phenomenality, nor do they authorize an L0 canonical rewrite.
+#947 remains the semantic cross-owner canonical spine. #952 closes the R2-A authority-propagation layer; #954/#955 close the current Bearer-semantic and local-owner freeze infrastructure. #956 does not change any canonical owner: it records the current creator–AI alignment and exposes future owner-pressure points. Neither #956 nor #949 authorizes an L0 canonical rewrite.
 
 ---
 
@@ -539,25 +552,31 @@ D4c;
 d bearer/domain;
 sigma ontology threshold;
 S3 / T_dir relation;
-collective subject sufficiency.
+collective subject sufficiency;
+#956 Oriented Openness final terminology / primitive decomposition;
+#956 S1 vs S2 retention boundary;
+#956 One admission positive criterion / strength representation;
+#956 relational Position retyping;
+#956 d-value retyping;
+#956 Concern gate / profile;
+#956 Agency / Cognition / positive Subject-position gates.
 ```
 
 ---
 
 ## Immediate routing
 
-> **2026-09-12 post-R2-C override:** R2-A, R2-B and R2-C are complete. The old-canonical reverse audit is now the next separate programme step and must use `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md` claim by claim. This #955 closeout does not itself begin claim edits. #949 creator–AI final-skeleton alignment still precedes any L0 canonical rewrite.
+> **2026-09-12 creator–AI alignment override:** #956 is the current theory-mainline checkpoint. Continue creator–AI alignment toward a revised whole skeleton before allowing the old-canonical reverse audit to become the theory-driving standard. Reverse audit remains a separate later execution programme; when resumed, it should use the final creator-adjudicated skeleton plus current canonical owners claim by claim rather than treating the provisional B+ or current old-canonical surface as the final theory judge.
 
 ```text
-1. treat #947 / `SRT_Generative_Ontology_Spine.md` as the current cross-owner canonical audit standard;
-2. keep local owners only for scope-compatible local definitions;
-3. start old-canonical reverse audit from the spine rather than from historical canonical authority;
-4. audit first: actual canonical anchors / L0 downstream overreach / primitive placement;
-5. then re-audit Individuation / sigma subject gate, using the pre-#947 B1 branch only as candidate patch material;
-6. then audit Stable-ISP / Suffering / Occlusion shortcuts and d / T_dir / Psi_f circular imports;
-7. then propagate cleanup into Collective / AI / Philosophy and remove duplicate reader / argument / alignment authority;
-8. prefer KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN; do not invent replacement theorems to fill retired claims;
-9. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
+1. treat #947 / `SRT_Generative_Ontology_Spine.md` as the current cross-owner canonical constraint until explicitly edited;
+2. use #956 as the current noncanonical creator–AI alignment checkpoint and resume from its OPEN pressure register;
+3. next theory pressure = Concern admission + profile, especially valence direction/conflict, breadth vs intensity, and relation to d-value;
+4. continue whole-skeleton deletion / counterexample / mature-neighbor pressure without silently promoting AI synthesis;
+5. creator explicitly adjudicates the revised whole skeleton before canonical landing;
+6. only after that, resume old-canonical reverse audit using `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md` claim by claim;
+7. then scope bounded canonical landing PRs for L0 / One / Position / Bearer / d owners as actually required;
+8. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
 ```
 
 ## Historical navigation
