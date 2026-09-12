@@ -33,6 +33,10 @@ require("_SRT_AGENT_RETRIEVAL_PROFILE.md", "Core_Law/SRT_Generative_Ontology_Spi
 require("AGENTS.md", "完整 canonical 引用优先级唯一 owner")
 require("AGENTS.md", "跨 owner 本体生成主轴")
 
+require("_SRT_INDEX.md", "CANONICAL_REGISTRY.md §C")
+require("_SRT_INDEX.md", "Core_Law/SRT_Generative_Ontology_Spine.md")
+forbid("_SRT_INDEX.md", "默认权威顺序：")
+
 require("CANONICAL_REGISTRY.md", "A1/A2/P/E")
 forbid("CANONICAL_REGISTRY.md", "A1/A2/A3 anticipation")
 
