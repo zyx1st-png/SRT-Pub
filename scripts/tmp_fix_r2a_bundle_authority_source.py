@@ -55,8 +55,7 @@ test = test.replace('parse_first_sources', 'parse_authority_sources')
 test = test.replace('first_sources', 'authority_sources')
 test = test.replace('First Sources', 'Registry §C authority sources')
 test = test.replace('First Source', 'Registry §C authority source')
-test = test.replace('AI_START §2 Registry §C authority sources 全部落入 SPINE',
-                    'Registry §C authority projection 顺序与 SPINE 一致')
+
 test = test.replace('''    check("Registry §C authority sources 解析非空", len(authority_sources) >= 10, f"got {len(authority_sources)}")
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 ''', '''    check("Registry §C authority sources 解析非空", len(authority_sources) >= 10,
@@ -66,25 +65,30 @@ test = test.replace('''    check("Registry §C authority sources 解析非空", 
           < authority_sources.index("Core_Law/SRT_L0_Metaphysics.md"))
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 ''', 1)
-test = test.replace('''    missing_fs = [p for p in authority_sources
-                  if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
-    check("Registry §C authority sources 全部落入 SPINE", not missing_fs, f"缺 {missing_fs}")
-''', '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
+
+# The SPINE bundle is explicitly curated/budgeted, not the complete closure of Registry §C.
+# Replace any legacy "all authority files must be in SPINE" assertion with an order-projection check.
+projection_block = '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
     projected_positions = [B.SPINE.index(p) for p in projected_authority]
     check("Registry §C authority projection 顺序与 SPINE 一致",
           projected_positions == sorted(projected_positions),
           f"projection={projected_authority}")
-''', 1)
-test = test.replace('''    missing_authority = [p for p in authority_sources
-                         if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
-    check("Registry §C 明示的文件型 authority 全部落入 SPINE",
-          not missing_authority, f"缺 {missing_authority}")
-''', '''    projected_authority = [p for p in authority_sources if p in B.SPINE]
-    projected_positions = [B.SPINE.index(p) for p in projected_authority]
-    check("Registry §C authority projection 顺序与 SPINE 一致",
-          projected_positions == sorted(projected_positions),
-          f"projection={projected_authority}")
-''', 1)
+'''
+legacy_projection_pattern = (
+    r"    missing_(?:fs|authority) = \[p for p in authority_sources\n"
+    r"(?:.*\n){1,3}?"
+    r"    check\([^\n]*SPINE[^\n]*\)\n"
+)
+test, replaced = re.subn(
+    legacy_projection_pattern,
+    lambda _m: projection_block,
+    test,
+    count=1,
+    flags=re.M,
+)
+if replaced != 1:
+    raise SystemExit(f"legacy SPINE completeness assertion replacement failed: {replaced}")
+
 tp.write_text(test, encoding="utf-8")
 
 print("R2-A bundle authority source + tests migrated to CANONICAL_REGISTRY §C")
