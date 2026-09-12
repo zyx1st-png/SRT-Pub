@@ -35,7 +35,7 @@ new_func = '''def parse_authority_sources() -> list[str]:
 
 '''
 pattern = r"def parse_first_sources\(\) -> list\[str\]:\n.*?(?=^def \w+\()"
-text, n = re.subn(pattern, new_func, text, count=1, flags=re.M | re.S)
+text, n = re.subn(pattern, lambda _m: new_func, text, count=1, flags=re.M | re.S)
 if n != 1:
     raise SystemExit(f"parse_first_sources function boundary replacement failed: {n}")
 
