@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-12
-source_commit: 34f404c8
-source_branch: governance/r2a-authority-truth-up-20260912
+source_commit: 502380b0
+source_branch: status/r2a-session-handoff-20260912
 source_dirty: false
-inputs_digest: 4b280f6cdae8db23
+inputs_digest: 066815456e736196
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 4b280f6cdae8db23
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-12 |
-| 来源 commit | `34f404c8` |
-| 来源分支 | `governance/r2a-authority-truth-up-20260912` |
+| 来源 commit | `502380b0` |
+| 来源分支 | `status/r2a-session-handoff-20260912` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
