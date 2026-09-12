@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-12
-source_commit: 2ebe55a5
-source_branch: theory/post957-spine-landing-20260913
+source_commit: 9383d7c4
+source_branch: theory/post959-l0-thinning-20260913
 source_dirty: false
-inputs_digest: c4c24424beeaaa1f
+inputs_digest: 28963c37e2a19db0
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: c4c24424beeaaa1f
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-12 |
-| 来源 commit | `2ebe55a5` |
-| 来源分支 | `theory/post957-spine-landing-20260913` |
+| 来源 commit | `9383d7c4` |
+| 来源分支 | `theory/post959-l0-thinning-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
