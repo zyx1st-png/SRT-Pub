@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-11
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-12
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-11
-source_commit: 8b391843
-source_branch: ops/post-pr947-spine-status-closeout-20260911
+generated: 2026-09-12
+source_commit: 34f404c8
+source_branch: governance/r2a-authority-truth-up-20260912
 source_dirty: false
-inputs_digest: 68dc2c186dbe02ad
+inputs_digest: 4b280f6cdae8db23
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 68dc2c186dbe02ad
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-11 |
-| 来源 commit | `8b391843` |
-| 来源分支 | `ops/post-pr947-spine-status-closeout-20260911` |
+| 生成日期 | 2026-09-12 |
+| 来源 commit | `34f404c8` |
+| 来源分支 | `governance/r2a-authority-truth-up-20260912` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -285,19 +285,19 @@ For non-trivial SRT work:
 >
 > 本包是 **单领域支持包**（claim-status 护栏 + 导航 + CompactCore），**不含定义源**。
 > 下面的分类是**生成器的判断**，不是 registry 的原话；每行都附依据供复核。
-> 「registry 提及」「AI_START §2」两列是机械判定的事实。
+> 「registry 提及」「Registry §C」两列是机械判定的事实。
 
 ### 已收录
 
 **治理护栏**（1 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | frontmatter claim_mode=audit | ✓ | — |
 
 **展开层**（4 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `Neuroscience/README.md` | frontmatter claim_mode=- | — | — |
 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | frontmatter claim_mode=bridge | ✓ | — |
@@ -306,28 +306,33 @@ For non-trivial SRT work:
 
 **导航**（1 个）
 
-| 文件 | 分类依据 | registry 提及 | AI_START §2 |
+| 文件 | 分类依据 | registry 提及 | Registry §C |
 |---|---|:---:|:---:|
 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | frontmatter type=index / claim_mode=navigation | ✓ | — |
 
 ### 未收录支持文件
 
-**First Sources 点名、文件存在、但本包未收（14 个）**——回答涉及它们时本包不足以裁定：
+**Registry §C priority 点名、文件存在、但本包未收（19 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
+- `Core_Law/SRT_Generative_Ontology_Spine.md`
 - `Governance/SRT_CLAIM_LADDER.md`
 - `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - `Core_Law/SRT_L0_Metaphysics.md`
-- `Core/SRT_Core_21_Minimal_Axioms.md`
-- `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- `Core_Law/SRT_One_Formation.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_T_DIR_CANONICAL.md`
 - `_SRT_CROSS_DOMAIN_MATRIX.md`
-- `Core/SRT_Core_22_Equations.md`
-- `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
+- `Core/SRT_Core_22_Equations.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- `Core/SRT_Core_14_Dynamics_Scaling.md`
+- `Core_Law/SRT_Reference_Dynamics.md`
+- `AI/SRT_AI_01_Ontology.md`
+- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
