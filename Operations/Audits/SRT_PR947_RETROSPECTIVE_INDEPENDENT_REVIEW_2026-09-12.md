@@ -2,7 +2,7 @@
 id: SRT-PR947-RETROSPECTIVE-INDEPENDENT-REVIEW-20260912
 type: audit
 status: active
-record_stage: retrospective_independent_review
+record_stage: retrospective_independent_review_author_adjudicated
 date: 2026-09-12
 layer: operations
 epistemic_layer: os
@@ -22,14 +22,16 @@ dependency:
   - Core_Law/SRT_One_Formation.md
   - Core/SRT_Core_21b_Constitutive_Theorems.md
   - SRT_AI_START.md
-tags: [PR947, RetrospectiveReview, GenerativeSpine, CanonicalAuthority, Routing, CleanupDebt, Governance]
+tags: [PR947, PR950, RetrospectiveReview, AuthorAdjudication, GenerativeSpine, CanonicalAuthority, Routing, CleanupDebt, Governance]
 ---
 
 # PR #947 — retrospective independent review
 
 > **Scope:** independent post-merge review of PR #947 (`Land canonical generative ontology spine before old-canonical cleanup`, merged 2026-09-11, 15 files, +1453/-121). The review re-derives what #947 claimed from the repository itself rather than from the PR description, and asks what landing the spine **before** cleanup left unpaid.
 >
-> **This record is not:** an author adjudication, a canonical file, a Level assignment, or authorization to close any OPEN gate. It proposes dispositions; it does not apply them. No canonical, routing or governance file was edited by this review — the findings below touch C-risk authority surfaces and belong to author adjudication, not to the reviewer.
+> **This record is not:** a canonical file, a Level assignment, or authorization to close any OPEN gate. The findings propose dispositions; they do not apply them. No canonical, routing or governance file was edited by this review — the findings touch C-risk authority surfaces and belong to author adjudication, not to the reviewer.
+>
+> **`§4a` carries the author adjudication on this review** (2026-09-12: ACCEPT with two reading calibrations and the R2-A/B/C sequencing). It adjudicates how to read this record; it is not a canonical edit either, and it does not satisfy the #949 creator–AI final-skeleton alignment gate.
 
 ---
 
@@ -97,18 +99,20 @@ This is exactly the shape the spine's own `§9` cleanup test #6 names (*authorit
 
 **Proposed disposition:** RETYPE `§6` to defer to `CANONICAL_REGISTRY.md §C` instead of restating a parallel chain. (Owner-level edit — author adjudication required.)
 
-### F2 — `Bearer` became a canonical typed term over ~480 files of legacy usage (HIGH)
+### F2 — `Bearer` became a canonical typed term over a large legacy occurrence surface (HIGH)
 
 #947 canonicalizes `Bearer` as a specific gate (`One + P + E`) and simultaneously states `Bearer != 承担 / concern / subject / experiencer by definition`. But:
 
-- 482 markdown files use the word `bearer` in the pre-spine sense (`same-bearer stake`, `bearer consequence return`, `已建立的 bearer`);
+- 482 markdown files contain the token `bearer` in pre-#947 usage (`same-bearer stake`, `bearer consequence return`, `已建立的 bearer`);
 - `SRT_Glossary.md` has **no** `Bearer` entry at all (last touched 2026-08-18, #830);
 - `_SRT_SYMBOL_TABLE.md` has no row for it;
 - no legacy-reading rule was published.
 
-So after #947 the token is a live homonym with no disambiguation rule, in the one area the spine most wants precision. Note the failure mode is not that downstream files overclaim — the sampled ones are heavily guarded — it is that their guards are written against the *older* sense and now read ambiguously.
+So after #947 the token is a live homonym with no disambiguation rule, in the one area the spine most wants precision. The failure mode is not that downstream files overclaim — the sampled ones are heavily guarded — it is that their guards are written against the *older* sense and now read ambiguously.
 
-**Proposed disposition:** add a Bearer disambiguation entry (spine `§7` note or `SRT_Glossary.md`) fixing how pre-#947 `bearer` occurrences are to be read until retyped.
+**Reading calibration (author adjudication, 2026-09-12 — see `§4a`):** `482` is a **legacy occurrence surface, not a count of 482 proven live contradictions**. Two rules follow and bind any later pass: pre-#947 `bearer` occurrences must **not** be auto-read as the post-#947 P + E `Bearer` type, and retyping proceeds **claim by claim during reverse audit**, never by bulk replacement.
+
+**Proposed disposition:** publish a Bearer disambiguation / quarantine rule (spine `§7` note or `SRT_Glossary.md`) fixing how pre-#947 `bearer` occurrences are read until each is individually retyped.
 
 ### F3 — Supersession was declared without a conflict inventory (MEDIUM-HIGH)
 
@@ -194,27 +198,58 @@ Net effect on `main` is clean and preflight passed on the final head, so this is
 ## 4. Overall judgment
 
 ```text
-mechanical execution      = SOUND (reproducible, no leakage, all PR claims verified)
-theory-side fidelity      = SOUND (P+E faithful to author option B; no live contradiction
-                            found at P1-T06, One_Formation or the guarded Individuation note)
-authority landing         = INCOMPLETE (one competing chain still ships in bootstrap read #1)
-supersession mechanism    = DECLARED BUT UNTRACKED (no per-claim conflict register)
-term hygiene              = UNPAID (Bearer homonym across ~480 files, no reading rule)
+mechanical execution          = SOUND (reproducible, no leakage, all PR claims verified)
+theory-side fidelity          = SOUND (P+E faithful to author option B; no live contradiction
+                                found at P1-T06, One_Formation or the guarded Individuation note)
+canonical routing landing     = LANDED (registry §A.0 / §C, freeze list A, SPINE bundle)
+runtime authority propagation = INCOMPLETE (a competing chain still ships in bootstrap read #1)
+supersession mechanism        = DECLARED BUT UNTRACKED (no per-claim conflict register)
+term hygiene                  = UNPAID (Bearer homonym, no reading rule)
 ```
 
-The spine-first order was the right call and the file itself is well built — it is thin, it types its layers, and it keeps OPEN open rather than filling gaps with older theorems. What it has not yet earned is the authority it declares: it says "cite this file first", and the repository's own first-read file still says otherwise. Until F1 and F2 are paid, the spine is canonical by registration but not yet canonical in practice.
+The spine-first order was the right call and the file itself is well built — it is thin, it types its layers, and it keeps OPEN open rather than filling gaps with older theorems.
+
+**How this judgment is to be read (author adjudication, 2026-09-12):** #947's **canonical routing authority is landed and is not invalidated by this review**. What this review identifies is unpaid **propagation, disambiguation and claim-hardness debt** around that landing — not a defect in the routing authority itself. Concretely: the spine says "cite this file first", and one runtime surface (`SRT_AI_START.md §6`) still says otherwise; that is a propagation gap to close, not grounds to reopen the landing.
+
+## 4a. Author adjudication on this review (2026-09-12)
+
+**Verdict: ACCEPT** as the missing independent-review provenance for #947, with two interpretation calibrations for downstream use:
+
+1. **F2 scope** — `482 files` is a legacy occurrence surface, not 482 proven live contradictions. Pre-#947 `bearer` must not be auto-read as the post-#947 P + E `Bearer` type; retyping is claim-by-claim during reverse audit, not bulk replacement. (Folded into `F2` above.)
+2. **Judgment framing** — the spine's canonical routing is landed; runtime authority propagation is incomplete. The review does not invalidate #947's routing authority; it identifies unpaid propagation, disambiguation and claim-hardness debt. (Folded into `§4` above.)
+
+Authorized next sequencing: **R2-A** grouped authority truth-up → **R2-B** Bearer semantic quarantine → **R2-C** supersession infrastructure. See `§5`.
+
+**Hard constraint:** no L0 canonical rewrite is authorized before the creator–AI final-skeleton alignment gate recorded in PR #949. That gate also requires that AI must not infer final author commitment from B+ shorthand, review consensus, repository smoothness, or absence of objections — this review's ACCEPT is review provenance and does **not** satisfy it.
+
+Provenance: author review on PR #950, 2026-09-12 (repository OWNER). Scope note: that review adjudicates how to read *this* record and fixes the R2 grouping. If the R2-A/B/C sequencing is to act as programme authority beyond this record, it needs its own `01_Source_Intuition/` author-adjudication source; this review does not create one.
+
+---
 
 ## 5. Recommended order
 
-Ahead of the reverse audit queued in `STATUS.md`, because each one changes what that audit finds:
+Grouped per the `§4a` adjudication. All three groups sit ahead of the old-canonical reverse audit queued in `STATUS.md`, because each changes what that audit finds.
 
-1. **F1** — remove the competing chain in `SRT_AI_START.md §6` (highest leverage, smallest edit).
-2. **F11** — add the authority-chain consistency check, so F1/F4/F10 cannot silently recur.
-3. **F2** — publish the `Bearer` legacy-reading rule before the reverse audit touches ~480 files carrying the old sense.
-4. **F3** — open the per-claim retyping ledger; it is the reverse audit's working surface.
-5. **F4, F5, F8, F9** — one small spine/registry correction pass (all are wording-level).
-6. **F6, F7, F10** — local-owner retyping and freeze-status decisions.
-7. only then continue the old-canonical reverse audit from the spine, in the order `STATUS.md` already records.
+**R2-A — authority truth-up** (`F1 / F4 / F6 / F8 / F10 / F11`)
+
+1. **F1 / F10** — remove competing complete authority chains from runtime/bootstrap surfaces; `CANONICAL_REGISTRY.md §C` remains the only complete citation-priority owner.
+2. **F4** — align current anticipation labels to `A1 / A2 / P / E`; keep historical `A3` as provenance only.
+3. **F6** — retype `One_Formation` as local formation elaboration within the cross-owner spine, not a second owner of the complete canonical order.
+4. **F8** — restore the formed-One precondition in the quotable Bearer shortcut.
+5. **F11** — add an authority-routing consistency check so the propagation class cannot silently recur.
+
+**R2-B — Bearer semantic quarantine** (`F2 / F5 / F9`)
+
+6. **F2** — publish the legacy-reading / quarantine rule before touching the occurrence surface; retype claim by claim, never in bulk.
+7. **F5** — treat the current E wording as a consistency/coherence test rather than pretending an independently applicable E criterion is already established; the latter remains OPEN for later creator–AI alignment.
+8. **F9** — distinguish canonical routing strength from theorem truth: P+E is the current author-adjudicated reconstruction direction / routing gate, while a universal N&S theorem remains OPEN.
+
+**R2-C — supersession infrastructure** (`F3 / F7`)
+
+9. **F3** — open the per-claim retyping ledger on the `§9` vocabulary (`KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN`); it is the reverse audit's working surface.
+10. **F7** — decide local-owner authority/freeze typing through that ledger rather than by ad hoc promotion.
+
+**Then** continue the old-canonical reverse audit from the spine, in the order `STATUS.md` records — subject to the `§4a` hard constraint: no L0 canonical rewrite before the #949 creator–AI final-skeleton alignment gate.
 
 ## 6. Re-audit closed by this review
 
