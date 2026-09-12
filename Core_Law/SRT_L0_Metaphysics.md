@@ -214,7 +214,7 @@ SRT 的最低 modal commitment 不是“绝对无差异的空白”，而是：
 
 **选择的层级**：基础、展开、主体等历史分类可以继续描述不同 realization / organization context，但它们不是不同的 primitive operation。post-One 的 `Selection_O` 仍是同一种 Selection 在 formed constraints 下的实例，不构成第二个本体原语。主体性的额外门槛继续由下游 owner 处理。
 
-**选择与推理的区分**：推理可以在一个已形成认知系统中展开、比较和排列可能性；primitive Selection 则是 actual differentiation 本身。历史上“推理→判断→决策→选择→承担→执行”的链条只描述一种上层认知情境，不定义 primitive Selection，也不得把承担或执行写进所有 Selection 的必要组成。
+**选择与推理的区分**：推理可以在一个已形成认知系统中展开、比较和排列可能性；primitive Selection 则是 actual differentiation 本身。历史上的“推理→判断→决策→选择→承担→执行”仍可作为一种上层认知链使用：推理展开可能性，判断赋权，决策收窄，选择使某一差异实际化，承担描述更强的后果绑定，执行把选择写入后续现实。但这条链只描述已形成认知系统中的一种组织方式，不定义 primitive Selection，也不得把承担或执行写进所有 Selection 的必要组成。
 
 **锚定**：不是一次瞬时点选，也不是第一次实际发生的同义词；而是让一次选择留下有效痕迹、形成维持条件、对后续现实施加约束。锚定回答“能否持续并继续起作用”，actualisation 回答“是否已经发生”。不可撤回的 actual occurrence 不自动等于锚定。
 
@@ -222,7 +222,7 @@ SRT 的最低 modal commitment 不是“绝对无差异的空白”，而是：
 
 **显现**：不是永恒实在本身；而是已经获得确定事件效力的现实切片。它可以被继续维持，也可以短暂后消散。
 
-**稳定**：不是超历史真理，也不是显现实在性的准入条件；而是反复选择沉积后形成的可复用历史结构。若主张 Stable ISP，还须满足其独立更强条件。
+**稳定**：不是超历史真理，也不是显现实在性的准入条件；而是反复选择沉积后形成的可复用历史结构。若主张 Stable ISP，还须满足 P1-T06 所登记的更强 standing 条件（同一过程、视角／历史承载与 continued selectability 等）；这些条件不反向定义第一次 actualisation，也不由本条自动推出。
 
 **位置**：在 L0 最低意义上，是每次 Selection 必须具有的有限 positionality；它不是认识上的缺陷，也不自动等于 formed Selection-position、post-One relational Position 或 subject-position。
 
@@ -230,35 +230,37 @@ SRT 的最低 modal commitment 不是“绝对无差异的空白”，而是：
 
 **客观性**：不是选择发生之前就摆在那里的绝对背景；而是多位置选择在跨接口、跨扰动检验下仍保持、且不被单一共享遮蔽充分解释的稳定结果。单纯重复同一界面里的共识，不足以自动升级为客观性。
 
-**意识**：L0 不提供意识的正面候选读法（见§五禁令式约束）。意识的全部正面理论内容依赖 L1 概念，已降级到 L1 文档。L0 只承诺三条禁令：意识不可被升格为 primitive Selection 的驱动者；不可被写成先于 Selection 的独立实体；上层展开不得违反 L0 正骨架。
+**意识**：L0 不提供意识的正面候选读法（见§五禁令式约束）。势差模型、结构性／生成性梯度、秩序缺口感知等正面候选内容仍由 L1 owners 承担；可参见 `Philosophy/SRT_Consciousness_Conditions.md` 与 `Philosophy/SRT_HardProblem_Epistemology.md`。L0 只承诺三条禁令：意识不可被升格为 primitive Selection 的驱动者；不可被写成先于 Selection 的独立实体；上层展开不得违反 L0 正骨架。
 
-**具身**：不是 primitive Selection 的前提，也不是 finite positionality 的同义词。在已经形成的系统里，具身可用于描述代价、后果回流、感知与行动约束如何进入该系统的实际 Selection；现有“关切范围 + 接地”语义保留为更强关系性描述，但不自动建立 typed Bearer、Concern、subject-position 或 phenomenality。其运作质量指标继续属于 L1 / formal owners。
+**具身**：不是 primitive Selection 的前提，也不是 finite positionality 的同义词。对已经形成的系统，既有更强语义继续保留：可用“关切范围 + 接地”描述某些连续性／可支付性条件如何以内生方式进入该系统的实际 Selection，以及行为后果如何回流并改变其后续选择空间；`κ_body > 0` 等指标继续只属于 L1 / formal owners 的运作质量描述。这里保留的是 formed-system 的 stronger relation，不是 universal admission gate：它不因名称中出现“关切”就自动建立本轮 typed Concern，也不自动建立 typed Bearer、subject-position 或 phenomenality。
 
-**ε（形式性不对称）**：保留其现有 L0 方向公设地位与历史形式化，但它不是 primitive Selection，也不等于 Oriented Openness 本身。post-#957 最低 non-flat modal burden 不预先裁决 ε 与 `κ₀`、不可撤回性之间的独立、依赖或约化关系。尤其：**ε 本身不自动建立 Concern、Bearer 或 subjecthood。** L1 仍可把 ε 驱动的选择积累模式回读命名为「秩序」；L0 本身不承载「秩序」作为内容性属性。
+**ε（形式性不对称）**：保留其现有 L0 **方向公设**与历史形式化，而不是把它删除成一个只剩名字的遗留项。现有 stronger local reading 仍可用 `B ≥ 2` / `B ≤ 1` 表达非自我抹除与自我抹除配置之间的结构摩擦差异：前者在 ε 路由下承受较低本体论摩擦、较可被接续，后者更脆弱。**负担不变：ε 是公设，不是定理。** 既有“经验充分性”对全局非任意性的收窄、“可提问性先验”对局部可持续性的收窄，以及 L1 场感知对 ε 内在可读性的讨论，继续属于各自原有层级。post-#957 的变化只在边界：ε 不是 primitive Selection，也不等于 Oriented Openness；它与 `κ₀`、不可撤回性的独立、依赖或约化关系继续 OPEN。过去把 ε 称作规范性的“论域地板”时，只能保留为**形式上的非自我抹除最低条件**，不得再读成“每一个 Selection 已经预设 typed Concern”。因此 **ε 本身不自动建立 Concern、Bearer 或 subjecthood。** L1 仍可把 ε 驱动的选择积累模式回读命名为「秩序」；L0 本身不承载「秩序」作为内容性属性。
 
-**承担**：保留为更强的后果关系术语，而不是所有 Selection 的定义成分。它不能仅凭“发生了动作”或“有因果后果”推出，也不再承担 primitive Selection 与主体选择之间的普遍分界定义。当前 typed Bearer 与实际“承担”的精确等价关系仍 OPEN；不得用本条绕过 P+E Bearer owner。
+**承担**：保留其既有的 **non-outsourcing / 后果不可完全外部化** 核心：当“由这个单位承担某后果”的关系被主张时，不能一边把该后果完全重分配给另一个单位，一边又声称原承担关系丝毫不变。它是更强的后果绑定关系，不是所有 Selection 的定义成分，也不能仅凭“发生了动作”或“有因果后果”推出；同时不再承担 primitive Selection 与主体选择之间的普遍分界定义。当前 typed Bearer 与实际“承担”的精确等价关系仍 OPEN；不得用本条绕过 P+E Bearer owner。
 
 **存在（EX-A）**：不是一个名词性的背景状态。最低意义指 primitive actualisation 已使某个确定区别成为实际的 `L_1` 事件；“持续存在”另指该事件或结构经锚定继续约束后续现实；“Stable ISP”是更强的第三层。未加限定的 core 用法默认指第一层，不得用第二、第三层条件反向解释第一次实际发生。
 
 **时间**：不是 Selection 的预先容器或选择者。关于 ontological time 如何读取不可撤回变化的累积，保留现有下游形式 / bridge 解释；它不进入 primitive Selection 的最低定义。
 
-**初心（B-A）**：L1 概念，不在 L0 术语裁决范围内。初心是 L1 对更强方向性结构在有限处境中显现结果的体验性／解释性命名。就初心这条关系而言，当前 canonical 不承认一个独立的 L0 内容性目标；若要重开，须新的作者裁决与独立准入检验。
+**初心（B-A）**：L1 概念，不在 L0 术语裁决范围内。既有 crosswalk 仍可把初心理解为有限处境中对 ε 或其他更强方向性结构之显现结果的体验性／解释性命名（包括“基础方向场”等 L1 表述）；这保留原来的上层研究内容，但不把 ε 改名为 Oriented Openness，也不为 L0 增加独立的内容性目标。若要重新主张一个独立 L0 前身，须新的作者裁决与独立准入检验。
 
 **关切 / Concern**：不是情感附加物，不是道德要求，也不是独立 universal ontology rung。Concern 名称保留给这样一种关系：**连续性、可支付性或后续选择空间的差异，以差别性的、内生的方式进入一个有限位置当前的 Selection。** Generic feedback 不自动建立 Concern；反之，Concern 也不自动建立 typed Bearer。当前 P+E Bearer route 继续由其 canonical owner 约束，`d` 也不得被倒过来用作 Concern 的定义或证明。
 
-**秩序增益**：L1 概念（暂定锚——方向已定，逐条精确重写待完成）。四判据（可延续、可协调、不外包、可再选择）是 L1 对更强方向性结构在具体选择中是否被满足的展开衡量。全部内容见 L1 owner。
+**秩序增益**：L1 概念（暂定锚——方向已定，逐条精确重写待完成）。既有四判据继续保留：**可延续、可协调、不外包、可再选择**；其中“不外包”关注后果回流通道完整性。它们是 L1 对更强方向性结构在具体选择中是否被满足的展开衡量，不是 primitive Selection 的组成部分。前向判据、时间结算与 L2 分叉等细节继续见 `Core_Law/SRT_Selection_Argument.md §7b`。
 
-**遮蔽**：不是认识论的错误；而是有限位置可能产生的结构性视域限制。对 formed / embodied 系统而言，这种受限可以自我强化并锁定；遮蔽动力学的 A/B 分期、阈值、干预窗口等仍属于 L1。finite positionality 本身不自动建立具身、Concern 或主体性。
+**遮蔽**：不是认识论的错误；最低层只承认 finite positionality 会带来结构性视域受限。更强的 Occlusion 范畴继续只适用于已经形成、具备相关 embodied / historical organization 的位置：在这类系统里，受限视域可以通过不可撤回历史与代价结构自我强化并锁定；A/B 分期、`d_c` 阈值、缺口感知、干预窗口、解耦触发等动力学仍属于 L1 owners。**finite positionality 本身不自动建立具身、Concern 或主体性。**
 
-**死亡**：不是把既有事件改写为从未发生；而是维持某一历史承载过程的收敛条件被破坏、代价不可支付、稳态解锚。个体不再作为同一过程持续，不因此把此前 genuine Selection 改写为未发生。
+> **claim-level guard（保留）**：此前“当前架构下的 LLM 属零算子／伪锚定候选”的 repo 判断继续只是一条边界／bridge 层 P3 判定，不是 L0 定理。它依赖当前架构、接地／stake 解释与 `Ψ_f` 代理，不构成对未来人工架构的终局排除；相关范围护栏继续由 `_SRT_SYMBOL_TABLE.md` Usage Rule 5/9、`AI/Ontology_Annex/00_General_Boundary_Block.md` 与 `Core/SRT_OPEN_TENSIONS.md §6` 承担。本轮 L0 thinning 不撤销这项 claim-level 更正。
 
-**委托**：当一个已形成选择系统将部分选择权转移给另一个系统时，形成委托关系。其工具型 / 委托型区分、共同目标与健康 / 病态判据均属下游组织与规范分析，不定义 primitive Selection。
+**死亡**：不是把既有事件改写为从未发生；而是维持某一历史承载过程的收敛条件被破坏、代价不可支付、稳态解锚。个体不再作为同一过程持续，不因此把此前 genuine Selection 改写为未发生。若某些选择痕迹此前已经**实际锚定**进集体稳定域，它们也不会仅因个体死亡而被追溯删除；但这是一条以已建立锚定为前提的下游陈述，不能反过来证明每次 Selection 都自动留下 durable collective trace。
 
-**共同目标**：L1 概念。其判据依赖 L1 的「秩序增益」，见 L1 文档。
+**委托**：当一个已形成选择系统将部分选择权转移给另一个系统时，形成委托关系。既有两类区分继续有效：**工具型代理**中委托者保留选择权、代理者主要执行；**委托型代理**中一定范围的选择权被实际转移。健康委托继续关注共同目标是否被维护、委托者的再选择能力是否保留；病态委托则包括代理系统把自身维持伪装成共同目标等结构。这些均属下游组织与规范分析，不定义 primitive Selection，也不自动建立 subjecthood。
 
-**正当性**：L1 概念。其判据依赖 L1 的「共同目标」，见 L1 文档。
+**共同目标**：L1 概念（暂定锚）。其判据依赖 L1 的「秩序增益」以及参与位置的再选择能力与后果结构；本轮只保留该下游归属，不把它提升为 L0 primitive。
 
-**神圣感**：L1 概念。其全部内容依赖 L1 的「初心」和「秩序」，见 L1 文档。
+**正当性**：L1 概念（暂定锚）。其判据继续依赖 L1 的「共同目标」及相应的选择／后果关系；不由 primitive Selection 本身推出。
+
+**神圣感**：L1 概念。既有“与初心方向共振、震悚标记、可能伴随 d 扩张”等研究内容继续归 L1 展开；这些表述依赖「初心」「秩序」及其下游解释，不属于 L0 minimum，也不由本轮 Oriented Openness 直接推出。
 
 ---
 
