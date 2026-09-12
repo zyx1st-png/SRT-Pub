@@ -2,7 +2,7 @@
 id: SRT-CANONICAL-RETYPE-LEDGER
 type: audit
 status: active
-record_stage: initialized_for_r2c
+record_stage: r2c_author_a_landed
 layer: operations
 epistemic_layer: os
 claim_mode: audit
@@ -14,6 +14,7 @@ dependency:
   - CANONICAL_REGISTRY.md
   - Governance/SRT_CANONICAL_FREEZE.md
   - Operations/Audits/SRT_PR947_RETROSPECTIVE_INDEPENDENT_REVIEW_2026-09-12.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md
   - STATUS.md
 tags: [RetypingLedger, Supersession, ReverseAudit, CanonicalCleanup, R2C]
 ---
@@ -54,6 +55,14 @@ no bulk replacement or token-level migration is permitted;
 retyping is claim-by-claim only.
 ```
 
+R2-C author-A governance rule:
+
+```text
+Freeze A / B are edit-safety classifications;
+they do not upgrade P-level, theorem status, programme Level standing,
+or scientific distinctiveness.
+```
+
 ## 1. Required row fields
 
 | Field | Meaning |
@@ -83,14 +92,14 @@ These rows do **not** begin a new reverse audit. They import dispositions alread
 | R2C-006 | PH-IND02 PERS-2; `STATUS.md §10` | PERS-2 functions as a Bearer admission gate | over-strong | RETYPE | retrospective consequence/history relation family | post-#947 author/canonical state | IMPORTED-ALREADY-LANDED | LANDED | No current admission-gate status |
 | R2C-007 | `Core_Law/SRT_One_Formation.md` + Registry §13 | One / Selection-position detailed formation semantics live in One Formation | compatible with spine delegation | KEEP | `SRT-ONE-FORMATION` local canonical semantic owner | R1 author owner adjudication + registry | IMPORTED-ALREADY-LANDED | LANDED | `P1-candidate` remains; no theorem promotion |
 
-## 3. R2-C F7 rows — author gate pending
+## 3. R2-C F7 rows — author option A landed
 
-These rows are intentionally unresolved until explicit author adjudication.
+Author adjudication: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R2C_FREEZE_SPLIT_2026-09-12.md`.
 
 | Ledger ID | Source / anchor | Normalized claim | Current relation | Disposition | Current owner / target reading | Decision authority | Decision state | Implementation state | Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| R2C-008 | `Governance/SRT_CANONICAL_FREEZE.md` vs Registry §13 | One Formation is a registered canonical semantic owner delegated to by a Freeze-A spine but has no freeze classification | edit-safety mismatch | OPEN | candidate: Freeze A while preserving `status: draft`, `claim_level: P1-candidate` | AUTHOR REQUIRED | OPEN | NOT-STARTED | Freeze protection must not ratchet claim hardness |
-| R2C-009 | `Governance/SRT_CANONICAL_FREEZE.md` vs Registry §13a | Individuation is a major downstream hybrid subject model but has no A/B freeze classification | mutability class ambiguous | OPEN | candidates: Freeze B; explicit OPEN/unlisted; Freeze A not recommended | AUTHOR REQUIRED | OPEN | NOT-STARTED | Must preserve later subject-entry / sigma reconstruction space |
+| R2C-008 | `Governance/SRT_CANONICAL_FREEZE.md` vs Registry §13 | One Formation is a registered canonical semantic owner delegated to by a Freeze-A spine but had no freeze classification | edit-safety mismatch | KEEP | One Formation remains local canonical semantic owner; Freeze A added | 2026-09-12 author option A | AUTHOR-ACCEPTED | LANDED | `status: draft` / `P1-candidate` unchanged; Freeze A is edit protection only |
+| R2C-009 | `Governance/SRT_CANONICAL_FREEZE.md` vs Registry §13a | Individuation is a major downstream hybrid subject model but had no A/B freeze classification | mutability class ambiguous | RETYPE | Freeze B downstream hybrid model; later subject-entry / sigma reconstruction remains OPEN | 2026-09-12 author option A | AUTHOR-ACCEPTED | LANDED | Freeze B is cross-check protection, not theorem or subject-threshold ratification |
 
 ## 4. Reverse-audit admission rule
 
@@ -115,9 +124,10 @@ For C-risk canonical edits, the normal edit protocol still applies.
 ## 6. Programme guards
 
 ```text
-F3 ledger infrastructure = OPENED by this file;
-F7 = AUTHOR GATE PENDING;
-old-canonical reverse audit = NOT STARTED beyond imported already-paid rows;
+F3 ledger infrastructure = ACCEPTED / ACTIVE;
+F7 local-owner freeze typing = AUTHOR A / LANDED;
+R2-C F3/F7 = COMPLETE after STATUS / generated propagation;
+old-canonical reverse audit = NEXT SEPARATE PROGRAMME STEP / not started by this landing;
 L0 canonical rewrite = HOLD behind #949;
 new Level 1 = NOT ASSIGNED;
 Level 2 = HOLD;
