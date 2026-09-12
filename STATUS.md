@@ -16,7 +16,7 @@ updated: 2026-09-12
 
 ## Fast Status
 
-### 0. R2-B Bearer semantic quarantine — 2026-09-12
+### 0. R2-C supersession infrastructure — 2026-09-12
 
 ```text
 #951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
@@ -24,7 +24,9 @@ updated: 2026-09-12
 R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
 #954 R2-B Bearer semantic quarantine = AUTHOR OPTION A ACCEPTED / BOUNDED CANONICAL LANDING
 R2-B F2/F5/F9 = COMPLETE IN THIS LANDING
-R2-C F3/F7 = NEXT SEPARATE GATE / NOT STARTED
+#955 R2-C supersession infrastructure = AUTHOR OPTION A ACCEPTED / BOUNDED GOVERNANCE LANDING
+R2-C F3/F7 = COMPLETE IN THIS LANDING
+OLD-CANONICAL REVERSE AUDIT = NEXT SEPARATE PROGRAMME STEP / NOT STARTED BY #955
 #949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
 L0 canonical rewrite = HOLD
 ```
@@ -44,13 +46,17 @@ prior bounded canonical landings:
 current phase:
 R2-A AUTHORITY PROPAGATION = COMPLETE
 R2-B (F2/F5/F9) = COMPLETE / AUTHOR A / BOUNDED LANDING IN #954
-R2-C (F3/F7) = NEXT SEPARATE GATE / NOT STARTED
-OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-C
+R2-C (F3/F7) = COMPLETE / AUTHOR A / BOUNDED GOVERNANCE LANDING IN #955
+OLD-CANONICAL REVERSE AUDIT = NEXT SEPARATE PROGRAMME STEP / NOT STARTED BY #955
 #949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
 L0 canonical rewrite = HOLD
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
 local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`
+One Formation freeze class = A / EDIT-SAFETY ONLY / `draft`, `P1-candidate` UNCHANGED
+Individuation freeze class = B / downstream hybrid / subject-entry and sigma reconstruction remain OPEN
+freeze class != epistemic truth / P-level / theorem status / programme Level standing
+canonical retype ledger = `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md` / noncanonical per-claim working surface
 Stable ISP standing owner = P1-T06, stronger and separate
 Bearer semantic route = formed One + P prospective self-indexing + E same-One prospective exposure -> Bearer
 current E non-outsourcing counterfactual = consistency / exclusion test
@@ -540,7 +546,7 @@ collective subject sufficiency.
 
 ## Immediate routing
 
-> **2026-09-12 R2-A closeout override:** the legacy reverse-audit queue below remains useful as the eventual audit path, but it is not the immediate next execution sequence. R2-B (`F2/F5/F9`) and R2-C (`F3/F7`) must be separately closed before that reverse audit proceeds. This closeout does not enter either group. #949 creator–AI final-skeleton alignment still precedes any L0 canonical rewrite.
+> **2026-09-12 post-R2-C override:** R2-A, R2-B and R2-C are complete. The old-canonical reverse audit is now the next separate programme step and must use `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md` claim by claim. This #955 closeout does not itself begin claim edits. #949 creator–AI final-skeleton alignment still precedes any L0 canonical rewrite.
 
 ```text
 1. treat #947 / `SRT_Generative_Ontology_Spine.md` as the current cross-owner canonical audit standard;
