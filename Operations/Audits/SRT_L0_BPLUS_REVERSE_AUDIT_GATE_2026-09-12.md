@@ -13,41 +13,85 @@ date: 2026-09-12
 
 ## 0. Purpose
 
-This audit applies the post-#947 canonical generative spine to the historical L0/P0 surfaces after the author selected **B+**:
+This audit applies the post-#947 canonical generative spine to the historical L0/P0 surfaces after the author selected **B+**, while recording that B+ is **not yet the final L0 skeleton**.
+
+Current reconstruction direction:
 
 ```text
-thin L0
-+ L0 difference / minimum non-neutrality
-+ subjectless generative Selection
-+ manifestation/backgrounding
-+ active verticalization
+L0 difference / minimum non-neutrality
+⊣ subjectless primitive Selection
+Selection ⇒ manifestation + relative backgrounding
+Selection ⇒ active verticalization / non-flat selectable-space relation
 + finite positionality
 + minimum historical asymmetry
 ```
 
 No canonical theory file is edited in this gate.
 
+Before any C-risk L0 rewrite, two additional controls are mandatory:
+
+```text
+A. #947 retrospective independent review + contradiction/routing reconciliation;
+B. creator–AI final-skeleton alignment + explicit creator adjudication.
+```
+
 ## 1. Why B+ is preferable to A or legacy C
 
 ### Against A — too thin
 
-A version that retained only difference + Selection while moving verticalization and historical asymmetry downstream would understate the current SRT ontology. The #947 spine already treats manifestation/backgrounding and active verticalization as constitutive parts of the formation trunk. If L0 is the metaphysical root, it should preserve that generative grammar rather than becoming a static precondition statement.
+A version that retained only difference + Selection while moving manifestation/backgrounding and verticalization downstream would understate the current SRT ontology. The #947 spine treats selective differentiation and active verticalization as constitutively important to the formation route. If L0 is the metaphysical root, it should preserve the minimum generative grammar rather than become a static precondition statement.
 
 ### Against legacy C — too thick
 
-The current historical L0 carries many downstream or formal commitments: `kappa_0`, `epsilon`, strong irreversibility claims, Stable ISP references, embodiment, concern, 承担, subject-selection, consciousness-function claims, AI classifications, occlusion, delegation, legitimacy, and other reader-level material. Keeping all of this as L0 would let earlier speculative structure continue to veto the newer spine.
+The historical L0 carries many downstream or formal commitments: `kappa_0`, `epsilon`, strong irreversibility claims, Stable ISP references, embodiment, concern, 承担, subject-selection, consciousness-function claims, AI classifications, occlusion, delegation, legitimacy, and other reader-level material. Keeping all of this as L0 would let earlier speculative structure continue to veto the newer spine.
 
-B+ therefore keeps the **generative minimum** while reopening the independent necessity of historical primitives and downstream concepts.
+B+ therefore keeps the **generative minimum as a provisional candidate skeleton** while reopening the independent necessity of historical primitives and downstream concepts.
 
-## 2. Proposed L0 semantic kernel
+## 2. Relation typing — do not read every arrow as derivation or temporal succession
+
+Use the following distinctions during hardening:
+
+```text
+⊣ = prerequisite / admission condition
+⇒ = constitutive consequence / same-event implication
+→ = generative / process order where a real transition is claimed
++ = additional burden / condition
+```
+
+In particular:
+
+```text
+minimum non-neutrality ⊣ Selection
+```
+
+means that pure featureless neutrality is not the SRT starting picture. It does **not** mean:
+
+```text
+pre-object difference causally derives actualisation;
+non-neutrality is sufficient to make Selection occur.
+```
+
+Primitive Selection remains separately admitted unless the creator later changes that architecture.
+
+Likewise:
+
+```text
+Selection ⇒ manifestation + relative backgrounding
+Selection ⇒ active verticalization
+```
+
+need not describe three temporally separate events. They may be distinct constitutive aspects of one selective differentiation.
+
+## 3. Provisional L0 semantic kernel
 
 ```text
 L0-DIFF
-There is minimum pre-object difference / non-neutrality sufficient for determination;
+There is minimum pre-object difference / non-neutrality available as an admission condition for determination;
 pure featureless neutrality is not the SRT starting picture.
 
 L0-SEL
 Selection is a subjectless generative process, not an act requiring a prior chooser.
+Its occurrence is not derived here from L0-DIFF.
 
 L0-MB
 Selection co-generates manifestation and relative backgrounding;
@@ -64,10 +108,12 @@ This does not yet imply formed Selection-position / One.
 L0-HIST
 Occurred selective differentiation is not equivalent to “never occurred”.
 Retained difference may condition later Selection.
-This is only minimum historical asymmetry, not a full physical theory of irreversibility.
+This is minimum historical asymmetry, not a full physical or causal irreversibility theorem.
 ```
 
-## 3. Important split: verticalization vs formed vertical organization
+These nodes are **provisional candidates for creator–AI alignment**, not yet final L0 primitives.
+
+## 4. Important split: verticalization vs formed vertical organization
 
 This is the key anti-collapse rule:
 
@@ -78,7 +124,7 @@ L0 active verticalization
 != Selection-position as continuing One
 ```
 
-L0 carries the **generation of non-flat selective relation**.
+L0 may carry the **generation of non-flat selective relation**.
 `Core_Law/SRT_One_Formation.md` carries the stronger burden of recurrent localized organization, lineage, and One / Selection-position.
 
 Therefore neither of these is licensed:
@@ -88,14 +134,23 @@ any vertical differentiation -> One
 any active Selection -> One
 ```
 
-## 4. Important split: activity vs agency
+Before L0-VERT is canonically retained, it still needs:
+
+```text
+- positive semantic criterion;
+- at least one non-case;
+- explicit distinction from pre-given non-flat landscape / passive path dependence;
+- treatment of mature mechanisms such as hysteresis / attractors / niche construction as inheritance, realization, contrast, or pressure rather than automatic rivals.
+```
+
+## 5. Important split: activity vs agency
 
 At L0:
 
 ```text
 activity = Selection itself does constitutive work;
-              it differentiates, manifests/backgrounds,
-              and changes later selectable-space relations.
+           it differentiates, manifests/backgrounds,
+           and changes later selectable-space relations.
 ```
 
 This is not:
@@ -112,9 +167,9 @@ second-order Selection.
 
 Recommended wording in future canonical cleanup: **active / generative Selection** and **active verticalization**, not `agency`.
 
-## 5. Historical L0 claims: first-pass disposition
+## 6. Historical L0 claims: first-pass disposition
 
-### KEEP / SIMPLIFY
+### KEEP / SIMPLIFY CANDIDATES
 
 - Selection precedes completed objecthood / chooser.
 - subjectless Selection.
@@ -125,11 +180,11 @@ Recommended wording in future canonical cleanup: **active / generative Selection
 - negative guard: stability alone does not prove subjecthood.
 - negative guard: consciousness / subject / agent cannot be presupposed as the source of primitive Selection.
 
-### RETYPE / MOVE DOWNSTREAM
+### RETYPE / MOVE DOWNSTREAM CANDIDATES
 
 - recurrent stability / Stable ISP detail -> P1-T06.
 - One / Selection-position detail -> `SRT_One_Formation.md`.
-- embodiment as concern + grounding + non-outsourcable consequence -> downstream Bearer / embodiment reconstruction.
+- embodiment as concern + grounding + non-outsourcable consequence -> downstream reconstruction.
 - cognitive chain `reasoning -> judgment -> decision -> Selection -> 承担 -> execution` -> cognition / agency layer, not L0.
 - positive consciousness-function language -> L1+.
 - occlusion dynamics -> L1.
@@ -146,14 +201,22 @@ Do not automatically keep these as independent L0 primitives merely because they
 - P0-04 operator well-formedness;
 - strong granular / spacetime / Landauer irreversibility explanations.
 
-Each must answer:
+Each must answer a deletion test:
 
 ```text
-Does removing this item destroy the B+ generative grammar?
-Or can it be retyped as one realization / formalization / downstream condition?
+Does removing this item destroy the minimum generative grammar?
+Does it add a genuinely distinct primitive burden?
+Can its explanatory work be inherited by another retained node?
+Can it be retyped as formalization / realization / downstream condition?
 ```
 
-## 6. P0 reverse pressure
+Possible dispositions:
+
+```text
+KEEP | MERGE | MOVE DOWNSTREAM | OPEN | RETIRE
+```
+
+## 7. P0 reverse pressure
 
 ### P0-01
 
@@ -165,16 +228,21 @@ The occurrence / persistence split remains useful, but Stable-ISP detail is down
 
 ### P0-03
 
-Candidate KEEP-AS-THIN-HISTORICAL-ASYMMETRY, with substantial simplification.
-
-The L0/P0 burden should be no stronger than:
+Do not silently identify three different burdens:
 
 ```text
-occurred selective differentiation cannot simply be identified with never-occurrence;
-retained difference can alter later conditions.
+H0 minimal historical asymmetry:
+occurred != never occurred.
+
+H1 retained causal efficacy:
+a trace/difference still changes later relevant conditions.
+
+IRR-B stronger bounded claim:
+under declared complete-relevant-state conditions,
+Selection leaves an incompletely erasable effective difference.
 ```
 
-A stronger universal physical irreversibility theorem is not licensed by B+.
+B+ directly needs only H0 as a candidate L0 minimum. H1 and IRR-B require their own scope and proof status. Thinning L0 must not silently demote or erase the existing bounded IRR-B result; instead, it should stop deriving that stronger result automatically from the L0 minimum.
 
 ### P0-04
 
@@ -182,9 +250,9 @@ Strong candidate for DEMOTION / RETYPE.
 
 “Operator well-formedness” appears to be a requirement for **formal discourse about Selection**, not necessarily an ontological primitive of Selection itself. B+ can remain intelligible without treating a formal operator signature as part of the metaphysical ground.
 
-This should be pressure-tested before canonical edit.
+This must be pressure-tested before canonical edit.
 
-## 7. What B+ does to `kappa_0`, `epsilon`, and cost
+## 8. `kappa_0`, `epsilon`, and cost
 
 B+ does not require immediate deletion. It changes their burden of proof.
 
@@ -198,35 +266,127 @@ Could survive as a later directional / anti-closure / normative candidate, but t
 
 ### cost
 
-Some notion of constraint / non-free transition may remain important, but “cost” can be a realization vocabulary rather than a distinct primitive. B+ does not yet decide this.
+Some notion of constraint / non-free transition may remain important, but “cost” may be realization vocabulary rather than a distinct primitive. B+ does not yet decide this.
 
-## 8. Next canonical cleanup order
+## 9. Creator–AI final-skeleton alignment gate
 
-Recommended sequence:
+This is a mandatory author gate, not an optional presentation step.
+
+The purpose is to prevent this sequence:
 
 ```text
-C1. Rewrite / thin `Core_Law/SRT_L0_Metaphysics.md` to B+ grammar.
-C2. Reconcile `Core/SRT_Core_21_Minimal_Axioms.md` with the thinned L0.
-C3. Decide P0-03 thin historical asymmetry wording.
-C4. Pressure-test / likely demote P0-04 operator well-formedness.
-C5. Re-audit kappa_0 / epsilon / cost as independent primitives.
-C6. Only then return to Individuation / sigma subject gate cleanup.
+author gives compressed intuition
+-> AI produces smooth ontology
+-> repository coherence is mistaken for author agreement
+-> canonical landing occurs before the creator recognizes the final theory as their own intended structure.
 ```
 
-This order prevents old P0 formalism from re-importing discarded L0 commitments during downstream cleanup.
-
-## 9. Current verdict
+Required cycle:
 
 ```text
-AUTHOR ROUTE = B+
+1. AI presents the smallest typed L0 skeleton, including relation types.
+2. For each node, AI presents:
+   - what it asserts;
+   - what it does NOT assert;
+   - deletion consequence;
+   - nearest overlap / possible merge;
+   - strongest counterexample or mature-neighbor pressure;
+   - hidden primitive burden.
+3. Creator explains each retained node in the creator's own language.
+4. AI restates the creator's meaning without repository interpolation.
+5. Creator explicitly marks mismatch if the restatement is wrong.
+6. Repeat until the creator accepts the meaning, not merely the wording.
+7. Creator classifies every candidate node:
+   KEEP | MERGE | MOVE DOWNSTREAM | OPEN | RETIRE.
+8. AI rebuilds the entire skeleton from those decisions.
+9. Creator adjudicates the whole rebuilt skeleton, including order and relation types.
+10. Only then may a C-risk canonical L0 rewrite begin.
+```
+
+Mandatory questions for each candidate node:
+
+```text
+Why must this be L0?
+What breaks if it is deleted?
+Is it distinct from the previous and next node?
+Is the relation prerequisite, constitutive, generative, or merely correlative?
+Does it require an extra primitive?
+What downstream claims must remain forbidden even if this node is kept?
+What remains OPEN?
+```
+
+Failure exits:
+
+```text
+creator says “not my meaning” -> return to restatement;
+no clean counterexample between two nodes -> consider MERGE;
+node survives only because older canonical says so -> REOPEN, not KEEP;
+neighbor already supplies the mechanism -> INHERIT / REALIZATION unless a bounded comparative claim remains;
+creator remains uncertain -> OPEN / PARK, not forced closure.
+```
+
+Required output before C1:
+
+| Candidate | Creator meaning | Relation type | Keep/merge/move/open/retire | Why | Non-case / pressure | Remaining OPEN |
+|---|---|---|---|---|---|---|
+| L0-DIFF | pending alignment | pending | pending | pending | pending | pending |
+| L0-SEL | pending alignment | pending | pending | pending | pending | pending |
+| L0-MB | pending alignment | pending | pending | pending | pending | pending |
+| L0-VERT | pending alignment | pending | pending | pending | pending | pending |
+| L0-POS | pending alignment | pending | pending | pending | pending | pending |
+| L0-HIST | pending alignment | pending | pending | pending | pending | pending |
+| `kappa_0` | pending alignment | pending | pending | pending | pending | pending |
+| `epsilon` | pending alignment | pending | pending | pending | pending | pending |
+| cost | pending alignment | pending | pending | pending | pending | pending |
+| P0-04 | pending alignment | pending | pending | pending | pending | pending |
+
+No row may be silently filled by AI as an author decision.
+
+## 10. Revised work order
+
+The earlier plan to rewrite L0 immediately after #949 is withdrawn.
+
+Current sequence:
+
+```text
+R1. Retrospective independent review of #947 at its landed content.
+R2. Reconcile entry routing and known direct contradictions:
+    AI_START / AGENTS as needed;
+    Individuation;
+    OPEN_TENSIONS;
+    Symbol Table;
+    P+E claim hardness.
+R3. Harden #949 candidate relations:
+    arrow typing;
+    G0 non-causation of Selection;
+    G3 positive criterion + non-case;
+    H0/H1/IRR-B separation;
+    deletion tests for kappa_0 / epsilon / cost / P0-04.
+R4. Run creator–AI final-skeleton alignment gate.
+R5. Creator explicitly adjudicates the rebuilt whole L0 skeleton.
+C1. Rewrite / thin `Core_Law/SRT_L0_Metaphysics.md` to that final skeleton.
+C2. Reconcile `Core/SRT_Core_21_Minimal_Axioms.md` with the thinned L0.
+C3. Independent review of the C-risk landing + Registry / Freeze / symbol / context synchronization.
+C4. Only then resume downstream canonical cleanup.
+```
+
+One / perspective and P / E independence remain important theory questions, but they do not have to be fully solved before the bounded L0 cleanup unless the final L0 skeleton depends on them.
+
+## 11. Current verdict
+
+```text
+AUTHOR ROUTE = B+ / ACCEPTED RECONSTRUCTION DIRECTION
+FINAL L0 SKELETON = NOT YET ADJUDICATED
 
 L0 should be thin but generative, not static.
-L0 retains difference, subjectless Selection, manifestation/backgrounding,
+Current candidates retain difference, subjectless Selection, manifestation/backgrounding,
 active verticalization, finite positionality, and minimum historical asymmetry.
 
 formed vertical organization / One remains downstream;
 agency remains downstream;
 legacy kappa_0 / epsilon / cost / operator primitives are REOPENED, not automatically retained.
+
+NO CANONICAL L0 REWRITE BEFORE CREATOR–AI FINAL-SKELETON ALIGNMENT.
 ```
 
 No Level change. No novelty promotion. No Bearer/subject closure.
