@@ -7,9 +7,41 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
+  refresh-context-bundles:
+    if: github.event_name == 'pull_request' && github.head_ref == 'theory/post957-spine-landing-20260913'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR head with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Regenerate context bundles
+        run: python scripts/build_srt_context_bundles.py
+
+      - name: Commit generated bundles when stale
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Operations/Context_Bundles/
+          if git diff --cached --quiet; then
+            echo 'Context bundles already fresh.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh generated context bundles after Spine landing'
+          git push origin HEAD:${{ github.head_ref }}
+
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
