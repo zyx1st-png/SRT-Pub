@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-12
-source_commit: f5134e16
-source_branch: theory/owner-landing-scope-audit-20260913
+source_commit: 2ebe55a5
+source_branch: theory/post957-spine-landing-20260913
 source_dirty: false
-inputs_digest: a3dd6cd005a34ac1
+inputs_digest: c4c24424beeaaa1f
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: a3dd6cd005a34ac1
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-12 |
-| 来源 commit | `f5134e16` |
-| 来源分支 | `theory/owner-landing-scope-audit-20260913` |
+| 来源 commit | `2ebe55a5` |
+| 来源分支 | `theory/post957-spine-landing-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
