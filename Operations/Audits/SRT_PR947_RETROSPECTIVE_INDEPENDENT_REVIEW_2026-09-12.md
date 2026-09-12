@@ -155,7 +155,7 @@ They are compatible — the spine's `G2` is folded into `Def-OF-1`, `G0` sits in
 
 The spine is in freeze list A. Its named local owner for One formation, `Core_Law/SRT_One_Formation.md`, is `status: draft`, `claim_level: P1-candidate`, and appears in **neither** freeze list A nor B — so the file the frozen routing spine points at for "detailed definitions" is freely rewritable. `Core_Law/SRT_Individuation.md` (`status: draft_v0`, `claim_mode: hybrid`) is likewise unlisted.
 
-**Proposed disposition:** decide the freeze status of the local owners the spine delegates to; at minimum add `One_Formation` to list B.
+**Proposed disposition:** decide the freeze / authority typing of the local owners the spine delegates to. Per the `§5` R2-C assignment this decision runs **through the retyping ledger**, not by ad hoc promotion — so `One_Formation` gains a freeze-list position as a recorded ledger disposition, not as a standalone edit.
 
 ### F8 — A quotable shortcut inside the anti-shortcut file (LOW-MEDIUM)
 
