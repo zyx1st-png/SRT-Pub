@@ -45,4 +45,4 @@ jobs:
           git add -A
           git commit -m "Regenerate context bundles and remove R2-A helpers"
           git push origin governance/r2a-authority-truth-up-20260912
-# final-trigger
+# final-trigger-2
