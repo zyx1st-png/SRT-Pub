@@ -16,14 +16,15 @@ updated: 2026-09-12
 
 ## Fast Status
 
-### 0. R2-A authority-cleanup closeout — 2026-09-12
+### 0. R2-B Bearer semantic quarantine — 2026-09-12
 
 ```text
 #951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
 #952 R2-A authority truth-up = MERGED / e33476e06de3471d11c1994595669552764983ab
 R2-A F1/F4/F6/F8/F10/F11 = COMPLETE
-R2-B F2/F5/F9 = NEXT UNOPENED GATE / NOT STARTED BY THIS CLOSEOUT
-R2-C F3/F7 = SEPARATE / NOT STARTED
+#954 R2-B Bearer semantic quarantine = AUTHOR OPTION A ACCEPTED / BOUNDED CANONICAL LANDING
+R2-B F2/F5/F9 = COMPLETE IN THIS LANDING
+R2-C F3/F7 = NEXT SEPARATE GATE / NOT STARTED
 #949 creator–AI final-skeleton alignment = OPEN DRAFT / REQUIRED BEFORE ANY L0 CANONICAL REWRITE
 L0 canonical rewrite = HOLD
 ```
@@ -42,9 +43,9 @@ prior bounded canonical landings:
 
 current phase:
 R2-A AUTHORITY PROPAGATION = COMPLETE
-R2-B (F2/F5/F9) = NEXT UNOPENED GATE / NOT STARTED IN THIS CLOSEOUT
-R2-C (F3/F7) = SEPARATE / NOT STARTED
-OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-A/B/C
+R2-B (F2/F5/F9) = COMPLETE / AUTHOR A / BOUNDED LANDING IN #954
+R2-C (F3/F7) = NEXT SEPARATE GATE / NOT STARTED
+OLD-CANONICAL REVERSE AUDIT = QUEUED AFTER R2-C
 #949 creator–AI final-skeleton gate = REQUIRED BEFORE ANY L0 CANONICAL REWRITE
 L0 canonical rewrite = HOLD
 
@@ -52,6 +53,10 @@ cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.m
 local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`
 Stable ISP standing owner = P1-T06, stronger and separate
 Bearer semantic route = formed One + P prospective self-indexing + E same-One prospective exposure -> Bearer
+current E non-outsourcing counterfactual = consistency / exclusion test
+independently applicable positive E admission / establishment criterion = OPEN
+pre-#947 bearer / same-bearer mapping = LEGACY QUARANTINE / CLAIM-BY-CLAIM ONLY
+P+E canonical routing strength != universal theorem / validated cross-domain classifier strength
 formal cross-domain P+E N&S theorem = OPEN
 Bearer -> actual 承担 / concern / agency / subject / cognition / phenomenality = separately OPEN
 new Level 1 = NOT ASSIGNED
@@ -220,6 +225,9 @@ Selection-position_t
 Bearer
 = canonically routed as an already formed One / Selection-position satisfying
   P prospective self-indexing + E same-One prospective exposure at semantic / architectural strength;
+  the current E non-outsourcing counterfactual is a consistency / exclusion test;
+  an independently applicable positive E admission criterion remains OPEN;
+  pre-#947 bearer-language is quarantined pending claim-by-claim retyping;
   a universal formal / empirical cross-domain N&S theorem remains OPEN.
 ```
 
