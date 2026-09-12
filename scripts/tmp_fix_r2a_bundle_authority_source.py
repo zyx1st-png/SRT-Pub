@@ -22,10 +22,6 @@ old = '''def parse_first_sources() -> list[str]:
     nxt = re.search(r"^##\\s+", text[m.end():], re.M)
     end = m.end() + nxt.start() if nxt else len(text)
     seen: list[str] = []
-    # Only the numbered precedence list is unconditional. The prose immediately
-    # below it names conditional sources such as OPEN_TENSIONS; treating every
-    # backticked path in the section as a mandatory spine member defeats that
-    # distinction and makes the budget contract depend on optional deep reads.
     numbered = re.findall(r"^\\d+\\.\\s+`([^`]+\\.md)`", text[start:end], re.M)
     for path in numbered:
         if path not in seen:
@@ -66,7 +62,6 @@ new = '''def parse_authority_sources() -> list[str]:
 if old not in text:
     raise SystemExit("parse_first_sources anchor not found")
 text = text.replace(old, new, 1)
-
 text = text.replace('"Core_Law/SRT_L0_Metaphysics.md": ("定义源", "AI_START §2 First Sources 第 4 位"),',
                     '"Core_Law/SRT_L0_Metaphysics.md": ("定义源", "registry §C local-owner layer"),')
 text = text.replace('"_SRT_SYMBOL_TABLE.md": ("定义源", "AI_START §2 First Sources；符号与记号的定义权"),',
@@ -104,6 +99,14 @@ if old_test not in test:
 test = test.replace(old_test, new_test, 1)
 test = test.replace('check("SPINE 含 CLAIM_MODE_AUDIT（First Sources 第 3 位）",',
                     'check("SPINE 含 CLAIM_MODE_AUDIT（Registry §C claim-hardness layer）",')
+test = test.replace('''    missing_fs = [p for p in first_sources
+                  if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
+    check("AI_START §2 First Sources 全部落入 SPINE", not missing_fs, f"缺 {missing_fs}")
+''', '''    missing_authority = [p for p in authority_sources
+                         if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
+    check("Registry §C 明示的文件型 authority 全部落入 SPINE",
+          not missing_authority, f"缺 {missing_authority}")
+''', 1)
 tp.write_text(test, encoding="utf-8")
 
 print("R2-A bundle authority source + tests migrated to CANONICAL_REGISTRY §C")
