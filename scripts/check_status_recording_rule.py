@@ -50,8 +50,14 @@ PROSE_CYCLE = re.compile(
 REQUIRED_RULE_TEXT = ("记录口径", "未合并 PR 号不得充当状态 owner")
 
 # `build_srt_context_bundles.py` guard_dqo() extracts the d/q/o embargo sentence
-# from between these markers. The anchor was already lost twice (ed20ccf, 156c4db).
+# from between these markers. They now live with the guardrail's governance owner;
+# the anchor was lost twice (ed20ccf, 156c4db) while it sat in the dashboard.
+GUARDRAIL_OWNER = "Governance/SRT_DOWNSTREAM_GUARDRAILS.md"
 REQUIRED_ANCHORS = ("SRT-GUARDRAIL:DQO-BEGIN", "SRT-GUARDRAIL:DQO-END")
+
+# STATUS keeps a pointer to the owner, so the guardrail stays findable from the
+# dashboard without the dashboard being its source.
+REQUIRED_STATUS_POINTER = "Governance/SRT_DOWNSTREAM_GUARDRAILS.md"
 
 # Section numbers are cited from outside and must not be renumbered:
 # `Operations/Audits/SRT_CANONICAL_RETYPE_LEDGER.md` rows R2C-001..006 cite
@@ -62,8 +68,12 @@ CITED_SECTIONS = (
 )
 
 
-def scan(text: str) -> list[str]:
-    """Return every recording-rule violation in `text`, most specific first."""
+def scan(text: str, owner_text: str | None = None) -> list[str]:
+    """Return every recording-rule violation in `text`, most specific first.
+
+    `owner_text` is the downstream-guardrail owner's content; pass None to skip
+    the cross-file anchor check (tests that only exercise STATUS-local rules).
+    """
     problems: list[str] = []
 
     for i, line in enumerate(text.splitlines(), 1):
@@ -87,9 +97,18 @@ def scan(text: str) -> list[str]:
         if needle not in text:
             problems.append(f"{STATUS}: the recording rule was dropped: missing {needle!r}")
 
-    for marker in REQUIRED_ANCHORS:
-        if marker not in text:
-            problems.append(f"{STATUS}: generator anchor removed: missing {marker}")
+    if REQUIRED_STATUS_POINTER not in text:
+        problems.append(
+            f"{STATUS}: the d/q/o guardrail pointer was dropped: "
+            f"missing {REQUIRED_STATUS_POINTER!r}"
+        )
+
+    if owner_text is not None:
+        for marker in REQUIRED_ANCHORS:
+            if marker not in owner_text:
+                problems.append(
+                    f"{GUARDRAIL_OWNER}: generator anchor removed: missing {marker}"
+                )
 
     for heading in CITED_SECTIONS:
         if heading not in text:
@@ -102,7 +121,10 @@ def scan(text: str) -> list[str]:
 
 
 def main() -> None:
-    problems = scan((ROOT / STATUS).read_text(encoding="utf-8"))
+    problems = scan(
+        (ROOT / STATUS).read_text(encoding="utf-8"),
+        (ROOT / GUARDRAIL_OWNER).read_text(encoding="utf-8"),
+    )
     if problems:
         print("status recording rule: FAIL")
         for item in problems:

@@ -414,11 +414,7 @@ they may not silently constitute them.
 
 Exact bearer/domain and threshold assignments remain OPEN.
 
-**既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
-
-<!-- SRT-GUARDRAIL:DQO-BEGIN — `scripts/build_srt_context_bundles.py` 的 guard_dqo() 按本标记对抽取下面这句；删除、改写或拆开标记会让 context bundle 生成直接失败（此前该锚点丢失过两次，见 ed20ccf / 156c4db）。 -->
-已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
-<!-- SRT-GUARDRAIL:DQO-END -->
+**既有 d/q/o 下游护栏（继续有效）**：owner 为 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md` §G-DQO，禁运原句与解除条件以该文件为准；本页不再持有该句，也不再作为生成器抽取源。
 
 ---
 

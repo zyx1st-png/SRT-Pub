@@ -35,16 +35,19 @@ FAILURES: list[str] = []
 # A frame carrying everything the whole-file requirements need, so a case only
 # ever fails on the line under test.
 FRAME = """记录口径 ... 未合并 PR 号不得充当状态 owner
-<!-- SRT-GUARDRAIL:DQO-BEGIN -->
-已加下游护栏：...
-<!-- SRT-GUARDRAIL:DQO-END -->
+d/q/o 护栏 owner = Governance/SRT_DOWNSTREAM_GUARDRAILS.md
 ### 10. What is demoted / retyped
 ### 11. What is retired as current admission logic
 """
 
+OWNER = """<!-- SRT-GUARDRAIL:DQO-BEGIN -->
+已加下游护栏：...
+<!-- SRT-GUARDRAIL:DQO-END -->
+"""
+
 
 def case(label: str, line: str, should_fail: bool) -> None:
-    problems = C.scan(FRAME + line + "\n")  # FRAME satisfies every whole-file rule
+    problems = C.scan(FRAME + line + "\n", OWNER)  # FRAME/OWNER satisfy every whole-file rule
     failed = bool(problems)
     if failed != should_fail:
         want = "FAIL" if should_fail else "PASS"
@@ -79,14 +82,16 @@ case("explicit opt-out marker",
      "CURRENT TARGET OWNER = #964 <!-- status-lint:allow -->", False)
 
 # -- whole-file requirements -------------------------------------------------
-if not C.scan(FRAME.replace("SRT-GUARDRAIL:DQO-BEGIN", "gone")):
-    FAILURES.append("a removed generator anchor did not fail")
-if not C.scan(FRAME.replace("记录口径", "gone")):
+if not C.scan(FRAME, OWNER.replace("SRT-GUARDRAIL:DQO-BEGIN", "gone")):
+    FAILURES.append("a removed generator anchor in the guardrail owner did not fail")
+if not C.scan(FRAME.replace("Governance/SRT_DOWNSTREAM_GUARDRAILS.md", "gone"), OWNER):
+    FAILURES.append("a dropped guardrail pointer in STATUS did not fail")
+if not C.scan(FRAME.replace("记录口径", "gone"), OWNER):
     FAILURES.append("a dropped recording rule did not fail")
-if not C.scan(FRAME.replace("### 10. What is demoted / retyped", "### 9. Demoted")):
+if not C.scan(FRAME.replace("### 10. What is demoted / retyped", "### 9. Demoted"), OWNER):
     FAILURES.append("a renumbered externally cited section did not fail")
-if C.scan(FRAME):
-    FAILURES.append(f"the clean frame should pass: {C.scan(FRAME)}")
+if C.scan(FRAME, OWNER):
+    FAILURES.append(f"the clean frame should pass: {C.scan(FRAME, OWNER)}")
 
 if FAILURES:
     print("test_check_status_recording_rule: FAIL")
