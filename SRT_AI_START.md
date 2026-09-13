@@ -23,18 +23,7 @@ ai_do_not_use_for_definition: true
 
 This is a programme orientation, not a new canonical definition or a replacement final ontology label.
 
-For current direction read:
-
-1. `STATUS.md §Fast Status` — historical/current dashboard; correct stale bearer-totalizing or direct-to-increment wording using the next two files.
-2. `01_Source_Intuition/SRT_AUTHOR_REENTRY_CORRECTION_2026-09-05.md`
-3. `Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md` — including the 2026-09-08 collaboration update §0.3 / §4.2
-4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md`
-5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
-6. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
-7. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
-8. `Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md` when opening, backfilling or revising a domain framework
-
-Where the 2026-09-05 amendment conflicts with the older programme shorthand or sequencing, the amendment controls current reconstruction interpretation. Architecture v2 remains active for the Domain Reconstruction Layer except where the amendment tightens author/neighbor/common-problem prerequisites. Constitution v1, canonical owners, claim ladder, Pipeline 1 source-fidelity rules and manuscript carve-outs are unchanged.
+Current status and author decisions are resolved through `STATUS.md §Fast Status` controlling pointers. `AGENTS.md §Session Start` owns conditional reads; do not start a second bootstrap from this page. Historical programme documents are interpreted under the 2026-09-05 governance amendment and subsequent scoped author adjudications.
 
 ## 2. Current identity guard
 
@@ -127,33 +116,7 @@ Neither A nor B defines the whole SRT ontology.
 
 ## 3. Constitution / ontology dialogue guard
 
-For substantive identity-level work:
-
-```text
-current author question / intuition
--> recover existing repository source
--> AI divergence
--> bounded mature-neighbor awareness
--> author provisional convergence
--> internal red-team
--> fuller mature-neighbor adaptation / strongest objections
--> SRT-led absorption / relational reorganization / new questions and candidate conclusions
--> source fidelity / inference / counterexample / reciprocal-constraint checks
--> author second adjudication of substantive meaning / direction
--> ontology/interface hardening; conditional domain discrimination
-```
-
-- no theory write for every live branch;
-- AI agreement is not author convergence;
-- historical source recovery is input, not authority to auto-complete the current ontology;
-- novelty is not a permission gate before author convergence;
-- mature neighbors must be allowed to narrow or change SRT, not merely support it;
-- established explanations remain usable construction material; a shared residual is not a prerequisite for O-track work;
-- explain what the SRT organization makes visible and how any conclusion follows;
-- Level-1 / novelty comparison applies to a scoped comparative claim, not every meaningful SRT response;
-- use concrete cases, additional-commitment explanations and ChoiceMap root returns; see amendment §4.2;
-- Constitution v1's six reader operations remain current interfaces but are not six exhaustive ontology modules;
-- no third main deep well until the 2026-09-05 author-reentry hold is explicitly lifted.
+Use `AGENTS.md §Constitution / Ontology Dialogue Hard Guard` and the governance amendment §4.2 for author convergence, U/N-mode, neighbor adaptation and HOLD gates. These protect substantive decisions; they do not require repeated approval for authorized mechanical work.
 
 ## 4. Source recovery before invention
 
@@ -445,20 +408,14 @@ For identity-level work, separate machine roles when useful: source auditor, int
 
 ## 14. Minimal answer protocol
 
-For non-trivial SRT work:
+For substantive SRT answers:
 
-1. recover current direction from `STATUS.md` controlling pointers and the governance amendment, including its 2026-09-08 §4.2 collaboration update; resolve scope through the controlling source rather than dates alone;
-2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
-3. distinguish current historical/canonical authority from prospective ontology reconstruction;
-4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
-5. do not close listed open tensions;
-6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
-7. for a newly selected/revised domain, begin from relevant SRT questions and inherited resources, absorb source-native explanations, and develop candidate questions/conclusions; comparison and deep-well entry remain conditional;
-8. do not treat bearer/objectification as the whole domain ontology;
-9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
-10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
-11. do not open a third main well until amendment §10.1 HOLD EXIT REVIEW and explicit release; broad cross-domain synthesis remains separately gated;
-12. prefer explicit boundaries to broad unification language.
+1. Use the selected retrieval profile and current STATUS controlling sources. Architecture v2 is conditional on domain framework work, not every technical task.
+2. Resolve definitions through Registry §C and compatible owners; distinguish author intuition, candidate reconstruction, canonical claim, bridge/model, evidence and governance.
+3. Check the relevant owner boundaries and OPEN tensions before claiming closure. Use source-native evidence and allow counterexamples to change the answer.
+4. For ontology/Constitution work, preserve author convergence and U/N-mode. An asserted comparative gain requires its bounded claim and comparator; ordinary O-track work has no novelty permission gate.
+5. Apply domain/deep-well gates only when that programme is in scope. Pilot results do not establish whole-SRT identity.
+6. Complete the requested answer or edit, report relevant evidence and remaining gaps, and avoid re-asking settled decisions.
 
 ---
 

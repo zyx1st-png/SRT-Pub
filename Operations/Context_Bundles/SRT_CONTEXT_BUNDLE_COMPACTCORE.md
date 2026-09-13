@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 325fbaf0
-source_branch: ops/post-pr961-status-closeout-20260913
-source_dirty: false
-inputs_digest: 1e3cb558b00725aa
+source_commit: 0d17abd4
+source_branch: main
+source_dirty: true
+inputs_digest: ae73d6632804403e
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,9 +27,9 @@ inputs_digest: 1e3cb558b00725aa
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `325fbaf0` |
-| 来源分支 | `ops/post-pr961-status-closeout-20260913` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `0d17abd4` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -98,7 +98,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 #### USAGE POLICY — 使用规则
 
-*授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
+*授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §14 / §15*
 
 - 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。
 - Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level anti-closure 按 P2/P3 conditional candidate 引用。
@@ -237,7 +237,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 | 正文写法 | 实际所指 |
 |---|---|
 | `Core_21_Formal_Axioms.md` | Core/SRT_Core_21_Formal_Axioms.md |
-| `_SRT_SYMBOL_QUICK_GUARD.md` | SRT_AI_START.md §3（已于 2026-07-20 并入，原文件不再存在） |
+| `_SRT_SYMBOL_QUICK_GUARD.md` | SRT_AI_START.md §7（已于 2026-07-20 并入，原文件不再存在） |
 
 #### USAGE POLICY — 使用规则
 
@@ -275,20 +275,14 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 ### 14. Minimal answer protocol
 
-For non-trivial SRT work:
+For substantive SRT answers:
 
-1. recover current direction from `STATUS.md` controlling pointers and the governance amendment, including its 2026-09-08 §4.2 collaboration update; resolve scope through the controlling source rather than dates alone;
-2. read Architecture v2 under that amendment for the retained Domain Reconstruction Layer;
-3. distinguish current historical/canonical authority from prospective ontology reconstruction;
-4. state whether the claim is author intuition, open ontology problem, Constitution interface, Domain Framework synthesis, domain model/hypothesis, Deep Well/evidence, bridge/lab, material evidence or governance;
-5. do not close listed open tensions;
-6. for ontology / Constitution work, use author re-entry + source recovery + mature-neighbor pressure rather than greenfield or historical-file auto-completion;
-7. for a newly selected/revised domain, begin from relevant SRT questions and inherited resources, absorb source-native explanations, and develop candidate questions/conclusions; comparison and deep-well entry remain conditional;
-8. do not treat bearer/objectification as the whole domain ontology;
-9. for domain increment, use Case A/B/C only after a bounded author-owned SRT response exists;
-10. preserve the two existing deep wells as local calibration pilots; do not infer whole-SRT identity from them;
-11. do not open a third main well until amendment §10.1 HOLD EXIT REVIEW and explicit release; broad cross-domain synthesis remains separately gated;
-12. prefer explicit boundaries to broad unification language.
+1. Use the selected retrieval profile and current STATUS controlling sources. Architecture v2 is conditional on domain framework work, not every technical task.
+2. Resolve definitions through Registry §C and compatible owners; distinguish author intuition, candidate reconstruction, canonical claim, bridge/model, evidence and governance.
+3. Check the relevant owner boundaries and OPEN tensions before claiming closure. Use source-native evidence and allow counterexamples to change the answer.
+4. For ontology/Constitution work, preserve author convergence and U/N-mode. An asserted comparative gain requires its bounded claim and comparator; ordinary O-track work has no novelty permission gate.
+5. Apply domain/deep-well gates only when that programme is in scope. Pilot results do not establish whole-SRT identity.
+6. Complete the requested answer or edit, report relevant evidence and remaining gaps, and avoid re-asking settled decisions.
 
 ---
 

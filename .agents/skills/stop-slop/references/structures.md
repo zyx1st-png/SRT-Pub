@@ -1,5 +1,7 @@
 # Structures to Avoid
 
+These patterns merit review when they are empty or repetitive. They do not override meaning, attribution, user scope, technical register or deliberate voice.
+
 ## Binary Contrasts
 
 These create false drama. State the point directly.
@@ -18,7 +20,7 @@ These create false drama. State the point directly.
 | "is about X but not Y" | False distinction |
 | "not just X but also Y" | Additive hedge |
 
-**Instead:** State Y directly. "The problem is Y." "Y matters here." Drop the negation entirely.
+**Instead:** State Y directly only when the negation adds no meaningful boundary. Retain genuine contrasts and exclusions.
 
 ## Negative Listing
 
@@ -77,7 +79,7 @@ Giving inanimate things human verbs. Complaints don't "become" fixes. Bets don't
 | "the data tells us" | Data sits there. Someone reads it and draws a conclusion. |
 | "the market rewards" | Markets don't reward. Buyers pay for things. |
 
-**Instead:** Name the human. "The team fixed it that week" beats "the complaint becomes a fix." If no specific person fits, use "you" to put the reader in the seat.
+**Instead:** Name an actor only when the source supports that attribution. Systems and natural processes can be valid subjects; never invent a human actor or substitute “you” for an unknown one.
 
 ## Narrator-from-a-Distance
 
@@ -94,7 +96,7 @@ Floating above the scene instead of putting the reader in it.
 
 ## Passive Voice
 
-Every sentence needs a subject doing something. Passive voice hides the actor and drains energy.
+Passive voice merits revision when it obscures known, relevant responsibility. It is valid in technical and academic descriptions and when the actor is unknown or immaterial.
 
 | Pattern | Fix |
 |---------|-----|
@@ -119,10 +121,10 @@ Wh- openers become a crutch. "What makes this hard is..." becomes "The constrain
 
 | Pattern | Fix |
 |---------|-----|
-| Three-item lists | Use two items or one |
+| Forced three-item lists | Remove filler; retain every substantive category |
 | Questions answered immediately | Let questions breathe or cut them |
 | Every paragraph ends punchily | Vary endings |
-| Em-dashes | Remove. Use commas or periods. No em dashes at all. |
+| Overused em-dashes | Adjust punctuation where it aids reading; retain functional dashes and quotes |
 | Staccato fragmentation | Don't stack short punchy sentences |
 | "Not always. Not perfectly." | Hedging disguised as reassurance |
 
@@ -131,4 +133,4 @@ Wh- openers become a crutch. "What makes this hard is..." becomes "The constrain
 | Pattern | Problem |
 |---------|---------|
 | Lazy extremes (every, always, never, everyone, everybody, nobody) | False authority. Use specifics instead of sweeping claims. |
-| All adverbs (-ly words, "really," "just," "literally," "genuinely," "honestly," "simply," "actually") | Empty emphasis. See phrases.md for full list. |
+| Empty intensifiers | Remove only empty emphasis; preserve meaningful qualifiers. See phrases.md. |

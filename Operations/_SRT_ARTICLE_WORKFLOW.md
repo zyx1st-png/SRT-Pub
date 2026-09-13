@@ -2,14 +2,14 @@
 id: SRT-ARTICLE-WORKFLOW
 type: framework
 tags: [Article, Writing, Media, Workflow, ChoiceMap, Divergence, Convergence]
-status: active_v2
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: proposal
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-02
-revised: 2026-07-03
+revised: 2026-09-13
 provenance: 战略转移对话（书稿冻结后重心转向社媒文章）；v2 由 2026-07-03「信息=选择的锚定」实测一整篇（dogfeed）回写
 dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, 01_Source_Intuition/BOOK/TASTE]
 ---
@@ -18,7 +18,9 @@ dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG
 
 > **性质与边界（先读）**
 > - 本文件是**运行层工作流**，不是 canonical，不定义任何 SRT 术语。所有理论概念以 canonical 为准。
-> - 本工作流服务的战略判断：**书稿已冻结为武器库（RC1-candidate），真正的战场是社媒文章。** 书稿内部自洽性不再是当前重心。
+> - 本工作流服务作者主导的社媒文章锻造；2026-07 的战略判断是历史背景。当前研究方向由 STATUS 控制指针决定，书稿状态由 BOOK_CURRENT_STATUS 与 active manifest 决定。
+> - 以下固定层序、停等作者选择与零成文约定适用于作者主导模式。用户明确要求其他写作任务时按其请求执行；已给出的选择和校准稿授权不重新询问。作者原话、实质裁决与发布边界仍保留。
+> - Paste-ready prompts 按当前 AGENTS.md 和治理修正案解释。特别是“增量”检查只约束实际比较主张，不能将邻居重合自动判成所有文章命题无价值。
 > - 本工作流不追求学术承认，目标是大众认知层的传播；但**不因此放松 claim ladder**——把 P3 桥接假设写成已证定律，一次被抓，反噬的是整个武器库的可信度。
 
 > **v2 变更（2026-07-03，由一次完整 dogfeed 回写）**：v1 的发散是**一次性平铺**（角度池/知识点入口），实测中退化成"搬运仓库内容"，且直接跳到写作手法层。v2 修正六处：①发散改为**分层递归**，层序锁死 `思路结构 → 理论内容 → 写作手法`（手法最后）；②发散**前**新增「命题锻造」闸——先把主张锻死再生成结构；③理论内容层强制 canonical 核对（防幻觉）；④新增「一文一刀：折入 vs 另开」决策；⑤明确「校准稿」例外；⑥轨迹台账记录**被剪枝的分支与事后讨还**。
@@ -74,7 +76,7 @@ dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG
 (1) 它是"不是X而是Y"的对撞，还是"不只是X"的增补？
     （对撞极易被懂行的人一句话打穿；先逼作者选定这一点）
 (2) 核心概念是不是只给某个常识换了名（循环/同义反复）？
-    多出来的增量，一句话能说清吗？说不清=没有硬核。
+    说明实际推理或解释作用；只有声称超越具名邻居时才要求比较增量。
 (3) 招牌证据能不能被对手的现成框架直接吸收？
     （能吸收 = 没证倒任何人，只是重新描述）
 (4) 命题内部有没有两个方向被焊在一句里而没分清？
@@ -142,7 +144,7 @@ dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG
 规则：
 
 - **先核对，再落笔。** 每引一个机件（算子 / 方程 / 实验钩 / claim），核对 canonical 源；拿不准标 `NEEDS_RETRIEVAL`，作者或 LLM 检索后再用。**宁可少给，不许编造。**
-- **标 claim level。** P0/P1 定理、P2/P3 桥接假设、B 类观察材料、domain/companion 展开——各是什么级别，写清。文章里不得越级（见 §8 诊断）。
+- **标 claim level。** 以 `Governance/SRT_CLAIM_LADDER.md` 为准，区分公理、构成定理、canonical 解释、桥接映射、实验假说与 companion 展开；材料 A/B/C 裁决不是 P 级。文章里不得越级（见 §8 诊断）。
 - **公式不裸抛。** 面向半技术读者时，canonical 公式最多进脚注；正文用白话读法（如 d → "对不可逆风险的敏感度 / 攸关"）。它是理论定义，不是实测量。
 - **给懂行读者的"雷"要提前拆。** 若命题会碰到读者熟悉的成熟结果（如朗道尔原理之于"信息不可撤回"），在这一层就查好 canonical 的处理方式并标好 claim 红线（"定位它，不是驳倒它"）。
 
@@ -196,7 +198,7 @@ dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG
 
 诊断清单固定包含：
 
-- **claim ladder 核查**：有没有把 P2/P3 桥接假设、B 类观察材料写成已证定律 / 已验证物理。越级即标红。（对齐 `Governance/SRT_CLAIM_LADDER.md`）
+- **claim ladder 核查**：有没有把 canonical 解释、桥接映射、实验假说或观察材料写成已证定律 / 已验证物理。越级即标红。（对齐 `Governance/SRT_CLAIM_LADDER.md`）
 - **术语与 canonical 一致性**：`d-value / Ψ_f / T_dir / L0-L1-L2` 等表述是否与 canonical 冲突。
 - **懂行读者的雷**：碰到成熟结果（朗道尔、香农、IIT…）时，是否守住"定位它、不驳倒它"的 claim 红线。
 - **母题塌缩检查**：某节是否已堆 ≥3 个 SRT 核心术语（`SRT_TOPIC_ARTICLE_INDEX.md` 塌缩信号）。
