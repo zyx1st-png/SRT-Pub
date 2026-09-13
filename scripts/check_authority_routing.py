@@ -33,6 +33,13 @@ require("_SRT_AGENT_RETRIEVAL_PROFILE.md", "Core_Law/SRT_Generative_Ontology_Spi
 require("AGENTS.md", "完整 canonical 引用优先级唯一 owner")
 require("AGENTS.md", "跨 owner 本体生成主轴")
 
+# STATUS.md is a runtime file: AGENTS.md allows it a task-local working read
+# sequence (§2) but forbids reconstructing a competing complete authority chain.
+# It carried a five-level chain in §20 — a lossy copy of Registry §C's ten —
+# until that section was reduced to an owner pointer.
+require("STATUS.md", "CANONICAL_REGISTRY.md §C")
+forbid("STATUS.md", "### 20. Canonical authority chain")
+
 require("_SRT_INDEX.md", "CANONICAL_REGISTRY.md §C")
 require("_SRT_INDEX.md", "Core_Law/SRT_Generative_Ontology_Spine.md")
 forbid("_SRT_INDEX.md", "默认权威顺序：")

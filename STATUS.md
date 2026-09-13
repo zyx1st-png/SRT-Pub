@@ -466,15 +466,14 @@ physical realization is not privileged over other implementations.
 
 ## Authority / publication guards
 
-### 20. Canonical authority chain
+### 20. Authority routing — pointer only
 
-For exact registered meanings and current cross-owner order:
+For exact registered meanings and current cross-owner order, read the owners directly:
 
-1. `CANONICAL_REGISTRY.md` — find the registered route
-2. `Core_Law/SRT_Generative_Ontology_Spine.md` — cross-owner generation order, non-identities and OPEN gates
-3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
-4. local owners such as `Core_Law/SRT_L0_Metaphysics.md`, `Core_Law/SRT_One_Formation.md`, P1-T06, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, `Core/SRT_Core_22_Equations.md`
-5. bridge / domain / reader surfaces only within the scope permitted by the above
+- `CANONICAL_REGISTRY.md §C` — **single owner of the complete current citation priority** (10 levels, from registry entry through split navigation)
+- `Core_Law/SRT_Generative_Ontology_Spine.md` — cross-owner generation order, non-identities and OPEN gates
+
+**This page does not restate that chain.** `AGENTS.md` states the rule: `STATUS.md` may specify a task-local working read sequence — that is §2 above, and it is explicitly not a second citation-priority chain — but a competing complete authority chain must not be reconstructed in a runtime file. The five-level list that stood here was a lossy copy of Registry §C's ten, so removing it drops no routing information.
 
 `STATUS.md` is routing / programme state, not definition authority.
 
