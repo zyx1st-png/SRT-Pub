@@ -224,13 +224,24 @@ future selectable space is actively constructed / maintained / kept re-enterable
 A2 formed-position internal anticipation:
 a formed One / Selection-position participates from within its own organization
 in preparing / differentiating possible continuations.
-
-A3 Bearer research direction:
-future branches become non-neutral in terms of what this position itself
-will undergo / preserve / lose / enable.
 ```
 
-None of A1–A3 automatically means Bayesian prediction, explicit cognitive modelling, consciousness or phenomenality.
+None of A1 / A2 automatically means Bayesian prediction, explicit cognitive modelling, consciousness or phenomenality.
+
+**There is no current third anticipation level.** `CANONICAL_REGISTRY.md §A.0`
+retires historical `A3` to an R1 gate lineage label only — not a current canonical
+token — and this page carried it as one until 2026-09-13. The block it carried
+restated the Bearer gate's `P`, which is owned elsewhere:
+
+```text
+formed-position anticipation != P automatically;   (Spine §6.3)
+P != Bearer without E.                             (Spine §6.3, §7)
+```
+
+Owner for `P` / `E`: `Core_Law/SRT_Generative_Ontology_Spine.md §7`. This page does
+not restate the Bearer gate. Whether historical `A3` and `P` are the same item is
+**not settled here** — see
+`Operations/Audits/SRT_STATUS_A3_RETIRED_TOKEN_EXTRACTION_2026-09-13.md`.
 
 ### 8. One / Selection-position / Bearer current layering
 

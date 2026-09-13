@@ -89,6 +89,10 @@ chain and the W1/W2 ownership found in the previous two rounds.
 `A3` has to stop being presented as a current token first, and the checker should
 cover STATUS as it now does for the authority chain.
 
+> **Executed 2026-09-13**, as the one item here that does not wait on §5:
+> `Operations/Audits/SRT_STATUS_A3_RETIRED_TOKEN_EXTRACTION_2026-09-13.md`.
+> §7's A-versus-B routing question below is untouched and still the author's.
+
 Note what the Registry's `A1/A2/P/E` is and is not. Spine §6.3 states it as a
 chain of non-identities:
 

@@ -40,6 +40,16 @@ require("AGENTS.md", "跨 owner 本体生成主轴")
 require("STATUS.md", "CANONICAL_REGISTRY.md §C")
 forbid("STATUS.md", "### 20. Canonical authority chain")
 
+# Retired-token guard. CANONICAL_REGISTRY.md §A.0 demotes historical `A3` to an R1
+# gate lineage label, and the Registry itself is guarded below; STATUS carried it
+# as a current third anticipation level until 2026-09-13. What is banned is the
+# *current framing*, not the token: `A3` is a live symbol in several unrelated
+# namespaces (L1 hardening assumptions A1-A3, Reference Axioms A3, AI agency A3),
+# and `historical A3 = lineage label only` must stay sayable on this page.
+forbid("STATUS.md", "A3 Bearer research direction")
+forbid("STATUS.md", "A1/A2/A3")
+forbid("STATUS.md", "A1\u2013A3")  # en dash, as the retired line was written
+
 require("_SRT_INDEX.md", "CANONICAL_REGISTRY.md §C")
 require("_SRT_INDEX.md", "Core_Law/SRT_Generative_Ontology_Spine.md")
 forbid("_SRT_INDEX.md", "默认权威顺序：")
