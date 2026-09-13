@@ -21,7 +21,7 @@ dependency:
 
 > **Role**: canonical **cross-owner routing spine**. It fixes cross-layer order, non-identities and OPEN gates; local definitions remain with their registered owners where compatible.
 >
-> **Author authorization**: original spine-first landing, 2026-09-11; post-#956 whole-skeleton adjudication merged in #957; bounded landing scope merged in #958. Final author provenance: `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md`.
+> **Author authorization**: original spine-first landing, 2026-09-11; post-#956 whole-skeleton adjudication merged in #957; bounded landing scope merged in #958. Final author provenance: `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md`. Post-One synchronization scope: `Operations/Audits/SRT_POST_ONE_GENERATIVE_SPINE_BOUNDED_SYNC_SCOPE_2026-09-13.md`.
 
 ---
 
@@ -78,15 +78,15 @@ One
 Expanded formation relation:
 
 ```text
-Selection-generated organization_t
--> conditions later Selection_(t+1)
--> Selection_(t+1) generates organization_(t+1)
--> organization_(t+1) can again carry the relevant conditioning role.
+Selection-generated vertical organization_t
+-> materially conditions later Selection_(t+1)
+-> Selection_(t+1) generates renewed vertical organization_(t+1)
+-> renewed vertical organization_(t+1) can again carry the relevant conditioning role.
 ```
 
-This is **role recurrence**, not a token-identity theorem. It does not establish same token, same spatial position, a completed lineage theorem, closure, autopoiesis, or a universal N&S One classifier.
+This is **role recurrence of Selection-generated vertical organization**, not a token-identity theorem and not generic process recurrence. It does not establish same token, same spatial position, a completed lineage theorem, closure, autopoiesis, or a universal N&S One classifier. Detailed relative continuation separability, formed locality and onset semantics remain with the local One owner.
 
-The universal formation route **stops at One**. Under the current local One owner, formed `Selection-position` remains an operative co-aspect of a continuing One; it is not promoted here into a second universal endpoint or an additional formation rung.
+The universal formation route **stops at One**. Under the current local One owner, formed `Selection-position` remains an operative co-aspect of an already formed One; it is not promoted here into a second universal endpoint or an additional formation rung.
 
 Bearer, Concern, `d`, agency, cognition, subject-position, phenomenality and higher-order One are not additional universal formation stages.
 
@@ -97,7 +97,7 @@ Core_Law/SRT_L0_Metaphysics.md
 = L0 non-neutrality, finite positionality, irreversibility and current Concern terminology;
 
 Core_Law/SRT_One_Formation.md
-= detailed One / Selection-position semantics until its later bounded landing;
+= post-#970 detailed One / Selection-position and vertical-reconstitution semantics;
 
 _SRT_D_VALUE_CANONICAL.md
 = d owner;
@@ -175,18 +175,18 @@ One-shot Selection / verticalization is insufficient for One formation.
 Cross-owner minimum:
 
 ```text
-organization_t generated through Selection
--> conditions Selection_(t+1)
--> Selection_(t+1) generates organization_(t+1)
--> organization_(t+1) can again carry the relevant conditioning role.
+Selection-generated vertical organization_t
+-> materially conditions Selection_(t+1)
+-> Selection_(t+1) generates renewed vertical organization_(t+1)
+-> renewed vertical organization_(t+1) can again carry the relevant conditioning role.
 ```
 
-What must recur at this level is the **conditioning role** through later Selection.
+What must recur at this level is the **conditioning role of Selection-generated vertical organization** through later Selection. Generic causal recurrence, persistence or repeated similarity is not sufficient merely by recurring.
 
 Do not infer from this alone:
 
 ```text
-organization_t = organization_(t+1) numerically;
+vertical organization_t = vertical organization_(t+1) numerically;
 position_t = position_(t+1);
 pre-given same lineage;
 closed self-maintenance;
@@ -197,12 +197,13 @@ a mature boundary.
 
 Exact unit identification, boundary, strict identity and branching / merging identity remain OPEN.
 
-The formed-result category of the universal route is **One**. `Core_Law/SRT_One_Formation.md` remains the detailed local owner and currently co-types formed `Selection-position`; its lineage / identity wording is reconciled only in that later owner landing.
+The formed-result category of the universal route is **One**. `Core_Law/SRT_One_Formation.md` is the post-#970 detailed local owner. It treats lineage as downstream continuity-description language rather than an admission premise, while exact identity / boundary / branch-merge attribution remain OPEN.
 
 Guards:
 
 ```text
 event-level verticality != One automatically;
+generic causal recurrence != One automatically;
 ordinary path dependence != One automatically;
 role recurrence != token identity;
 One != Stable ISP / Bearer / subject / consciousness / phenomenality.
@@ -257,11 +258,11 @@ finite positionality
 != subjecthood.
 ```
 
-Finite positionality supplies locality / finitude, not cross-time identity.
+Finite positionality supplies event-local indexing / finitude, not formed locality or cross-time identity.
 
 ### 6.2 Formed Selection-position
 
-Under the current local One owner, `Selection-position_t` is the time-local operative from-where of a continuing formed organization. Exact One / Selection-position semantics remain with that owner until its bounded landing.
+Under the post-#970 local One owner, `Selection-position_t` is the time-local operative from-where of an already formed One in a particular Selection. Detailed One / Selection-position semantics remain with that owner.
 
 ### 6.3 Stronger perspective / anticipation
 
@@ -409,7 +410,6 @@ exact Oriented Openness inheritance / decomposition;
 formal N&S One theorem;
 exact One boundary / unit identification;
 strict and branch / merge identity;
-local One-owner lineage wording reconciliation;
 universal One-level perspective sufficiency;
 positive E establishment;
 formal cross-domain P+E Bearer theorem;
@@ -479,7 +479,7 @@ For One:
 
 ```text
 this spine owns cross-owner role-regenerative routing;
-Core_Law/SRT_One_Formation.md remains detailed local owner until separately landed;
+Core_Law/SRT_One_Formation.md is the post-#970 detailed local One / Selection-position owner;
 this spine is not a universal N&S One theorem.
 ```
 
