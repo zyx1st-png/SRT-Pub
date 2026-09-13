@@ -14,7 +14,7 @@ updated: 2026-09-13
 >
 > **记录口径（2026-09-13 起）**：本页记录**已落地事实**，以及由已落地治理 / 作者裁决支持的**当前 programme state**——两者都属于当前状态面板的职责（`AGENTS.md` 执行后条目、`Governance/SRT_EDIT_PROTOCOL.md` 留痕位置表）。但**不得把未合并 PR 自身的 lifecycle 写成仓库当前事实**：`#N = DRAFT / ACTIVE / WAITING CI` 属于那个 PR，不属于本页。进行中的 owner cycle 以 **owner 文件或 bounded work package** 指称，未合并 PR 号不得充当状态 owner。原因：#959 与 #961 两轮都在各自 landing PR 内部把该 PR 写成 ACTIVE，合并当天本页即失真。本条由 `scripts/check_status_recording_rule.py` 强制（本行含反例文本，故带豁免标记）。<!-- status-lint:allow -->
 >
-> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。下一只 bounded owner cycle 指向 One Formation，但尚未开启 canonical edit。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。post-#970 whole-spine consistency review 判定 L0 / Bearer / Stable ISP / Individuation 不因本轮自动触发 canonical edit；下一 bounded work 指向 Generative Ontology Spine 的小型 post-One 同步审议。
 
 ## Fast Status
 
@@ -33,13 +33,16 @@ R2-C F3/F7 = COMPLETE IN THIS LANDING
 #958 owner landing scope = MERGED / 2676f20b3ec0c34120870a1a191ce5969f16d45f
 #959 post-#957 Generative Ontology Spine landing = MERGED / 981d544804f935a6399fd3a309dadefc51d8ea5c
 #961 L0 targeted thinning = MERGED / 5591c793cd985729a228a22da3a3c8c5fb7a7453
+#969 vertical-background author checkpoint = MERGED / 345412f627acd17cf0185547b48e34791cd0a9d4
+#970 One Formation vertical-reconstitution landing = MERGED / 0b4ba7dd6a818b70e8cebd7b7f4c681218ef5606
 #949 = SUPERSEDED LIVE GATE / PROVENANCE ONLY
 #956 = SUPERSEDED INTERMEDIATE CHECKPOINT / PROVENANCE ONLY
 BROAD L0 / MULTI-OWNER CANONICAL REWRITE = NO
 OWNER-BY-OWNER CANONICAL LANDING = ACTIVE
 FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
-NEXT TARGET OWNER = `Core_Law/SRT_One_Formation.md` / OWNER CYCLE NOT YET OPEN
+THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
+NEXT BOUNDED WORK PACKAGE = `Core_Law/SRT_Generative_Ontology_Spine.md` / ONE-FORMATION FOLLOW-UP SPINE SYNC REVIEW / NOT YET OPEN
 ```
 
 ### 1. 当前 programme state 与 owner 指针
@@ -53,10 +56,11 @@ prior bounded canonical landings:
 
 current phase:
 OLD-CANONICAL REVERSE AUDIT = RETYPED INTO BOUNDED OWNER-BY-OWNER LANDING
-current L0 scope audit = `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md`
+current One landing audit = `Operations/Audits/SRT_ONE_FORMATION_VERTICAL_RECONSTITUTION_CANONICAL_LANDING_SCOPE_2026-09-13.md`
+post-One consistency review = `Operations/Audits/SRT_POST970_ONE_LANDING_WHOLE_SPINE_CONSISTENCY_REVIEW_2026-09-13.md`
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
-local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`
+local One / Selection-position owner = `Core_Law/SRT_One_Formation.md` / post-#970 v1 landed
 One Formation freeze class = A / EDIT-SAFETY ONLY / `draft`, `P1-candidate` UNCHANGED
 Individuation freeze class = B / downstream hybrid / subject-entry and sigma reconstruction remain OPEN
 freeze class != epistemic truth / P-level / theorem status / programme Level standing
@@ -127,7 +131,7 @@ finite-position-indexed subjectless Selection
 One
 ```
 
-The universal formation route now stops at **One**. `Core_Law/SRT_One_Formation.md` remains the local owner for detailed One / Selection-position semantics until its later bounded landing; it may not restore Selection-position as a second universal endpoint merely by local wording.
+The universal formation route now stops at **One**. `Core_Law/SRT_One_Formation.md` is now the post-#970 v1 local owner for detailed One / Selection-position semantics; formed `Selection-position` remains the operative co-aspect of an already formed One and is not a second universal endpoint.
 
 Do **not** use as primary generation laws:
 
@@ -236,11 +240,12 @@ None of A1–A3 automatically means Bayesian prediction, explicit cognitive mode
 
 ```text
 One
-= canonically: localized, lineage-relative, processual formed unity
-  continuing through Selection-mediated recurrent reconstitution.
+= canonically: formed process-unity carried by a relatively separable
+  Selection-mediated vertical reconstitution path;
+  exact identity / boundary remain OPEN.
 
 Selection-position_t
-= canonically: time-local operative from-where of that continuing One.
+= canonically: time-local operative from-where of an already formed One.
 
 Bearer
 = canonically routed as an already formed One / Selection-position satisfying
@@ -496,7 +501,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#959 is the current semantic cross-owner canonical spine. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 has completed the bounded L0 owner cycle. The next bounded owner is One Formation, but no One canonical edit is opened by this closeout. No checkpoint or local landing authorizes a broad multi-owner rewrite.
+#959 remains the current semantic cross-owner canonical spine. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review; it is not yet open. No checkpoint or local landing authorizes a broad multi-owner rewrite.
 
 ---
 
@@ -538,18 +543,15 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-13 post-#961 closeout:** #959 completed the first bounded post-#957 landing and #961 completed the second, targeted at L0. This closeout opens no new canonical theory edit. The next bounded owner is **One Formation**, to be handled in a separate owner cycle.
+> **2026-09-13 post-One closeout:** #970 completed the third bounded owner landing, targeted at One Formation. This closeout opens no new downstream owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review.
 
 ```text
-1. treat the landed scope audits as completed provenance, not active theory gates: `Operations/Audits/SRT_POST957_GENERATIVE_SPINE_LANDING_SCOPE_2026-09-13.md` (#959) and `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md` (#961);
-2. next target owner: `Core_Law/SRT_One_Formation.md`, but owner cycle = NOT YET OPEN;
-3. before editing One, run a bounded scope/read audit against #957, #959 and merged #961;
-4. pressure role recurrence / lineage-presupposition thinning without pre-closing exact One identity or boundary criteria;
-5. do not pull P0, d, Bearer, subject or phenomenality definitions into the One cycle merely for convenience;
-6. keep current P+E Bearer semantics unchanged unless its own later owner cycle is separately opened;
-7. keep Concern relational and do not infer a universal Concern↔Bearer nesting from the L0 landing;
-8. Bearer placement/crosswalk and d owner remain later bounded cycles only if still required;
-9. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
+1. treat the One landing audit and post-One consistency review as completed routing provenance;
+2. next bounded work package: `Core_Law/SRT_Generative_Ontology_Spine.md` follow-up sync review / NOT YET OPEN;
+3. constrain that review to post-One semantic/routing synchronization already identified by the consistency audit;
+4. do not automatically open L0, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;
+5. keep current P+E Bearer semantics unchanged unless a later owner cycle is separately opened;
+6. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
 ```
 
 ## Historical navigation
