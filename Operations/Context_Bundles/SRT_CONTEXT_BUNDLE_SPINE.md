@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 064c3c2a
-source_branch: codex/astra-instruction-audit-20260913
-source_dirty: true
-inputs_digest: ad92370838182bf3
+source_commit: 8c9daa85
+source_branch: theory/one-formation-vertical-reconstitution-landing-20260913
+source_dirty: false
+inputs_digest: 35c621bde9099da7
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: ad92370838182bf3
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `064c3c2a` |
-| 来源分支 | `codex/astra-instruction-audit-20260913` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8c9daa85` |
+| 来源分支 | `theory/one-formation-vertical-reconstitution-landing-20260913` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -44,7 +44,7 @@ inputs_digest: ad92370838182bf3
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-13 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-12 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-13 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-13 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -900,7 +900,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-12 |
+| last_commit | 2026-09-13 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -933,9 +933,9 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L1 / epistemic：os / status：active / version：v0 / claim-mode：canonical
+- layer：L0-L1 / epistemic：os / status：active / version：v1 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
-- 当前 trunk：`minimum non-neutrality / pre-object difference -> subjectless Selection -> manifestation + relative backgrounding -> active verticalization -> recurrent localized vertical organization -> One / Selection-position`。
+- 当前 trunk：`non-flat / non-neutral openness -> finite-position-indexed subjectless Selection (= actual differentiation = manifestation / relative backgrounding = primitive verticality as same-event structural reading) --[regenerative formation]--> One`。Universal formation route stops at One；formed `Selection-position` 仅作为 continuing One 的 operative co-aspect，不是第二 universal endpoint。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
 - typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
@@ -1099,12 +1099,13 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 13. SRT One Formation（One / Selection-position 形成层 owner）
 - 主文件：`Core_Law/SRT_One_Formation.md`
 - id：`SRT-ONE-FORMATION`
-- layer：L1 / epistemic：os / status：draft / version：v0 / claim-mode：canonical / claim-level：P1-candidate
-- 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> active vertical organization -> One / Selection-position` 的形成语义；verticality 是 Selection-generated / regenerated 的非平坦组织，不是被动历史沉积；One 只按 D4a 强度固定为 localized、lineage-relative、processual formed unity，其持续为 Selection-mediated recurrent reconstitution；`Selection-position_t` 是同一 continuing One 的 time-local operative from-where
-- 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One
-- 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One
-- 与 Collective 的关系：higher-order / relation-level One 不自动成为 collective ISP；T-COLL-1 保持独立 standing gate
-- 引用规则：涉及 active vertical formation、One、pre-subject ontological Selection-position、history/verticality typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件
+- layer：L1 / epistemic：os / status：draft / version：v1 / claim-mode：canonical / claim-level：P1-candidate
+- 说明：薄层 canonical semantic owner，固定 `subjectless Selection -> event-level active verticalization -> Selection-mediated vertical reconstitution -> relatively separable formed process-unity -> One` 的形成语义；One 在 D4a 强度上是由相对可分的 Selection-mediated vertical reconstitution path 所承载的 formed process-unity。locality / relative separability 是形成属性而非预设边界，lineage 是形成后的 continuity-description language 而非准入前提；`Selection-position_t` 是 already formed One 在具体 Selection 中的 time-local operative from-where，不是第二 universal endpoint。
+- 与 P1-T06 的关系：本文在形成层上游；P1-T06 仍只负责更强 Stable ISP standing。`One != Stable ISP`，且 P1-T06 不反向定义 One；generic persistence / self-maintenance / ordinary path dependence 不自动构成 One。
+- 与 Individuation / Bearer 的关系：formed Selection-position 不自动推出 perspective-bearing subject-position、Bearer、first-person bearing、consciousness 或 phenomenality；Bearer 仍服从 `formed One / Selection-position + P + E -> Bearer`；`σ_{sr}` / `d` / `T_dir` 不得反向定义 One。
+- 与 Collective 的关系：higher-order / relation-level One 不自动成为 collective ISP；T-COLL-1 保持独立 standing gate。
+- OPEN：formal N&S One theorem、exact unit / boundary、strict numerical identity、branch / merge identity、relative-separability formal / operational criterion、universal One-level perspective sufficiency 仍未关闭。
+- 引用规则：涉及 active vertical formation、Selection-mediated vertical reconstitution、generated locality / relative separability、One、formed-One operative Selection-position、history/verticality/sedimentation typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件。
 
 ### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
 - 主文件：`Core_Law/SRT_Individuation.md`
