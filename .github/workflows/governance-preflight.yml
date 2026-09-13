@@ -7,9 +7,62 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
+  post972-status-closeout:
+    if: github.event_name == 'pull_request' && github.head_ref == 'ops/post972-trunk-closeout-selection-handoff-20260913'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Truth up STATUS after canonical trunk sync
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('STATUS.md')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+              "#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。post-#970 whole-spine consistency review 判定 L0 / Bearer / Stable ISP / Individuation 不因本轮自动触发 canonical edit；下一 bounded work 指向 Generative Ontology Spine 的小型 post-One 同步审议。":
+              "#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。下一实质工作转入非 canonical Selection primitive strongest-rival / non-substitutability research。",
+              "#970 One Formation vertical-reconstitution landing = MERGED / 0b4ba7dd6a818b70e8cebd7b7f4c681218ef5606\n#949 = SUPERSEDED LIVE GATE / PROVENANCE ONLY":
+              "#970 One Formation vertical-reconstitution landing = MERGED / 0b4ba7dd6a818b70e8cebd7b7f4c681218ef5606\n#972 post-One Generative Spine synchronization = MERGED / d29f2d59482ca6f87386f0344d81a6b3b375650d\n#949 = SUPERSEDED LIVE GATE / PROVENANCE ONLY",
+              "NEXT BOUNDED WORK PACKAGE = `Core_Law/SRT_Generative_Ontology_Spine.md` / ONE-FORMATION FOLLOW-UP SPINE SYNC REVIEW / NOT YET OPEN":
+              "CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT\nNEXT RESEARCH WORK PACKAGE = SELECTION PRIMITIVE STRONGEST-RIVAL / NONCANONICAL / AUTHOR GATE NOT YET REACHED",
+              "post-One consistency review = `Operations/Audits/SRT_POST970_ONE_LANDING_WHOLE_SPINE_CONSISTENCY_REVIEW_2026-09-13.md`":
+              "post-One consistency review = `Operations/Audits/SRT_POST970_ONE_LANDING_WHOLE_SPINE_CONSISTENCY_REVIEW_2026-09-13.md`\npost-Spine closeout / Selection handoff = `Operations/Audits/SRT_POST972_CANONICAL_TRUNK_CLOSEOUT_SELECTION_HANDOFF_2026-09-13.md`",
+              "#959 remains the current semantic cross-owner canonical spine. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review; it is not yet open. No checkpoint or local landing authorizes a broad multi-owner rewrite.":
+              "#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is noncanonical Selection primitive strongest-rival research.",
+              "> **2026-09-13 post-One closeout:** #970 completed the third bounded owner landing, targeted at One Formation. This closeout opens no new downstream owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review.\n\n```text\n1. treat the One landing audit and post-One consistency review as completed routing provenance;\n2. next bounded work package: `Core_Law/SRT_Generative_Ontology_Spine.md` follow-up sync review / NOT YET OPEN;\n3. constrain that review to post-One semantic/routing synchronization already identified by the consistency audit;\n4. do not automatically open L0, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;\n5. keep current P+E Bearer semantics unchanged unless a later owner cycle is separately opened;\n6. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.\n```":
+              "> **2026-09-13 post-#972 closeout:** the bounded post-One Spine synchronization is complete and the canonical trunk reaches its current cleanup stop condition. No downstream owner cycle is opened by this closeout. The next substantive work is a noncanonical Selection primitive strongest-rival / non-substitutability audit.\n\n```text\n1. treat the One landing, post-One consistency review and post-One Spine sync audit as completed routing provenance;\n2. pause further canonical owner cleanup by default;\n3. next research work package: Selection primitive strongest-rival / noncanonical;\n4. compare against the strongest fair composite rival without pre-given objects, chooser or completed option menu;\n5. test same-event manifest / relative-background verticality and vertical reconstitution, not generic horizontal recurrence;\n6. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;\n7. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;\n8. stop for author adjudication only when the rival audit reaches a genuine metaphysical fork.\n```",
+          }
+
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'missing expected STATUS block: {old[:100]!r}')
+              text = text.replace(old, new, 1)
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit STATUS when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- STATUS.md; then
+            echo "STATUS already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add STATUS.md
+          git commit -m "ops: close canonical trunk sync in STATUS"
+          git push origin HEAD:${{ github.head_ref }}
+
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
