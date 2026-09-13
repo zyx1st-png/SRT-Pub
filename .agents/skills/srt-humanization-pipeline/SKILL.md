@@ -1,6 +1,6 @@
 ---
 name: srt-humanization-pipeline
-description: 对 SRT-Pub 中的中文或英文文章、公共内容、书稿试写和说明文执行可复用的三阶段真人化流程：先用 shuorenhua 做场景诊断与保真轻改，再用 humanizer-zh 调整结构和节奏，最后用 stop-slop 做残留模板审计，并核对数字、链接、标题、引文和理论边界。触发：三步去 AI 味、文章真人化、按三个技能优化、humanization pipeline、发布前语言清理、评价或复核 AI 写作纹理。
+description: 对 SRT-Pub 文本执行明确要求的三阶段真人化或复核，依次初诊轻改、结构节奏编辑、残留终审，并核验事实与理论边界。用于“三步去 AI 味”“按三个技能优化”；普通短句润色不自动开启全流程。
 ---
 
 # SRT Humanization Pipeline
@@ -9,28 +9,20 @@ description: 对 SRT-Pub 中的中文或英文文章、公共内容、书稿试�
 
 ## 依赖与读取顺序
 
-开始前完整读取：
+按阶段读取对应技能；已读且未变化的文件复用：
 
 1. `../shuorenhua/SKILL.md`
 2. `../humanizer-zh/SKILL.md`
 3. `../stop-slop/SKILL.md`
 
-按任务需要读取三项技能直接链接的 references。中文长文默认至少读取：
-
-- `../shuorenhua/references/protected-spans.md`
-- `../shuorenhua/references/positive-style.md`
-- `../shuorenhua/references/operation-manual.md`
-- `../shuorenhua/references/structures.md`
-- `../shuorenhua/references/phrases-zh.md`
-- `../shuorenhua/references/scene-guardrails.md`
-- `../stop-slop/references/phrases.md`
-- `../stop-slop/references/structures.md`
+References 仅按实际问题读取。复杂引文/数字先读 shuorenhua 的 protected-spans；结构或节奏问题读相应 patterns/structures；词表用于疑难残留，不默认加载全部材料。
 
 若目标是公开发布，再读取仓库根目录下的 `05_Public_Release/PUBLIC_GUARDRAILS.md`；涉及书稿公共内容时，同时读取 `01_Source_Intuition/BOOK/BOOK_PUBLIC_CONTENT_STRATEGY_2026-06-12.md`。这些文件只负责发布边界，不定义理论。
 
 ## 不可变规则
 
 - 三阶段必须按顺序执行，不并行为一次泛化润色。
+- Scope 继承用户已有授权，贯穿三阶段。只有缺失的实质选择才需询问；某处需要新材料时完成其余有依据的编辑，明确留下缺口。
 - 先保真，后去味；任何风格收益都不能覆盖事实、数字、日期、单位、专名、归属、引用、链接、代码、字段、路径和发布状态。
 - 不新增原文没有的事实、来源、个人经历或作者态度。
 - 不把 bridge、lab、public 或 open tension 语言升级为 canonical 结论。
@@ -59,7 +51,7 @@ description: 对 SRT-Pub 中的中文或英文文章、公共内容、书稿试�
 
 1. 按 `shuorenhua` 判 Tier、档位和 scope。
 2. 优先处理开场套话、总结提示腔、旁白层、商业或工程表演腔、无源权威铺垫和语域混搭。
-3. 长文 `bounded` 模式不擅自删除有信息的整句，不重排段落。纯空句进入待确认清单。
+3. 长文 `bounded` 模式不删实句、不并句、不重排。纯空句依用户已有授权删除；未授权时保留在稿中并列待确认项。
 4. 回读 protected spans，形成 Pass 1。
 
 阶段出口：事实、术语或责任主体一旦漂移，回退并修复后才能进入下一阶段。
@@ -74,7 +66,7 @@ description: 对 SRT-Pub 中的中文或英文文章、公共内容、书稿试�
 4. 不用第一人称、口头禅、错别字或伪造细节制造“人味”。
 5. 再次核对主张等级、证据边界和 protected spans，形成 Pass 2。
 
-阶段出口：如果更自然只能靠新增材料或改变论证顺序，停止并请求作者补充或授权。
+阶段出口：超出 scope 或需要新增材料的部分保留并说明缺口；继续完成其他编辑。已有结构调整授权时无需再问，但不得补造材料。
 
 ## 阶段 3：stop-slop 终审
 
@@ -111,7 +103,7 @@ uv run python .agents/skills/srt-humanization-pipeline/scripts/audit_text.py BEF
 
 ## 输出合同
 
-默认返回：
+默认简述结果、保真核验与文件；三阶段记录可合并为短段。用户要求详细报告时可用：
 
 ```text
 场景 / scope：

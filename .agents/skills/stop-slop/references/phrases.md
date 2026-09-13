@@ -1,5 +1,7 @@
 # Phrases to Remove
 
+Apply these suggestions only to empty rhetoric. Preserve facts, attribution, uncertainty, technical terms and user-requested voice.
+
 ## Throat-Clearing Openers
 
 Remove these announcement phrases. State the content directly.
@@ -52,7 +54,7 @@ Replace with plain language.
 
 ## Adverbs
 
-Kill all adverbs. No -ly words. No softeners, no intensifiers, no hedges.
+Remove adverbs only when they add empty emphasis. Keep those specifying uncertainty, frequency, manner or logical scope; -ly endings alone are not a problem.
 
 Specific offenders:
 

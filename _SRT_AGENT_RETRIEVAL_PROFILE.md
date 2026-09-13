@@ -2,7 +2,7 @@
 id: SRT-AGENT-RETRIEVAL-PROFILE
 type: retrieval_profile
 tags: [AI, Agent, Retrieval, Context, Codex, ChatGPT, ClaudeCode, BookWriting]
-status: active_v2
+status: active
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -10,7 +10,7 @@ canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-CONTEXT-ROUTER, SRT-LONGFORM-SPLITS]
 ai_role: context_expansion_contract
 ai_priority: 2
-updated: 2026-07-12
+updated: 2026-09-13
 ---
 
 # SRT Agent Retrieval Profile
@@ -46,7 +46,11 @@ Search rank, keyword density, file version suffixes, and old chapter numbering d
 
 After the minimal bootstrap, an agent must classify the task before deciding context depth.
 
-Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here.
+Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here. For the STATUS bootstrap step, consume the current-state surface through §0–§2 (landing ledger, programme state / owner pointers, controlling route); later STATUS theory/history sections are conditional context rather than universal fresh-session input.
+
+Select only the applicable profile and its task-relevant references. Ordinary Git, tooling or typo work does not become a theory task merely because this is an SRT repository. Reuse already-read unchanged context; old audits and full-domain maps are conditional, not universal prerequisites.
+
+Compression must not erase execution semantics. If an owning workflow or skill defines an ordered gate, stop condition, failure behavior or edit boundary, follow it explicitly rather than reconstructing a shorter substitute from model capability.
 
 After the minimal guard files are loaded:
 
@@ -55,7 +59,7 @@ After the minimal guard files are loaded:
 3. Load current-status or active-construction routing needed for the task.
 4. Load retrieval context needed for depth.
 5. If the route touches a long file, use `LONGFORM_SPLITS.md` and the relevant split README first.
-6. If the task is conceptual, cross-domain, or non-trivial, use `_SRT_CONTEXT_ROUTER.md`.
+6. For substantive conceptual or cross-domain SRT questions, use `_SRT_CONTEXT_ROUTER.md`.
 7. Check open tensions or claim-status boundaries before making strong claims.
 8. State whether each important file is being used as canonical, current manuscript, bridge, support, evidence, backstage context, historical material, or operations provenance.
 
@@ -85,18 +89,18 @@ Output rule:
 
 Use when the user asks to develop, harden, test, critique, extend, or repair SRT.
 
-Read:
+Read in this order, stopping when the active task is adequately grounded:
 
-1. `CANONICAL_REGISTRY.md`
-2. `Core_Law/SRT_Generative_Ontology_Spine.md` when the task touches ontology order, formation, position/perspective/Bearer routing, or old-canonical cleanup
-3. `Governance/SRT_CLAIM_LADDER.md`
-4. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-5. `_SRT_CONTEXT_ROUTER.md`
-6. `_SRT_DEEP_THEORY_MAP.md`
-7. the route's Primary files
-8. the route's Secondary files when domain depth is needed
-9. `Core/SRT_OPEN_TENSIONS.md`
-10. the relevant coverage index when the route may miss support files
+1. current `STATUS.md` §0–§2 for programme state, current owner and route;
+2. the latest relevant author adjudication / bounded work package named by current provenance when substantive meaning is in play;
+3. `CANONICAL_REGISTRY.md`;
+4. `Core_Law/SRT_Generative_Ontology_Spine.md` when the task touches ontology order, formation, position/perspective/Bearer routing, OPEN gates or old-canonical cleanup;
+5. the compatible local owner(s) for the target concept;
+6. `Governance/SRT_CLAIM_LADDER.md` and `Governance/SRT_CLAIM_MODE_AUDIT.md` when claim hardness matters;
+7. `_SRT_CONTEXT_ROUTER.md`, `_SRT_DEEP_THEORY_MAP.md`, route Primary files and route Secondary files only to the depth required by the question;
+8. `Core/SRT_OPEN_TENSIONS.md` and the relevant coverage index when unresolved edges or missing support files matter.
+
+The 2026-09-05 author-reentry correction and reconstruction amendment remain important programme/governance context, but they are **conditional rather than automatic prefaces to every current owner edit**. Load them when scope/pace, collaboration, U/N-mode, Domain Reconstruction, deep-well/HOLD gates or programme interpretation is actually at issue. Current bounded owner work should not be forced to traverse the full older programme corpus before reading its live adjudication and owner.
 
 Important:
 
@@ -111,22 +115,16 @@ Use when the user asks to read, write, revise, structure, polish, continue, comp
 
 #### Mandatory currentness route
 
-Read in this order:
+Follow `AGENTS.md §Book-Writing Hard Guard`: book status → active manifest → selected active primary, before archive comparison. Writing/revision/translation and literary or structural review also load `01_Source_Intuition/BOOK/TASTE.md`.
 
-1. `README.md`
-2. `START_HERE.md`
-3. `01_Source_Intuition/README.md`
-4. `01_Source_Intuition/INDEX.md`
-5. `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
-6. `01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
-7. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md`
-8. the current primary chapter under `01_Source_Intuition/BOOK/Drafts_26Q/` selected by the manifest
-9. `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` when wording or terminology matters
-10. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md` only for its retained content cards and six-beam references, not as the current structural view
-11. `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` and `BOOK_CHAPTER_CARDS_2026-05-22.md` when chapter-sequence or problem-chain history matters
-12. `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
-13. relevant formal anchors only as accuracy guardrails, not prose style
-14. relevant backstage pass notes when the task mentions consistency, style, or chapter sequence
+After resolving the active primary, add only context required by the task:
+
+- Orientation: `README.md`, `START_HERE.md`, `01_Source_Intuition/README.md`, `01_Source_Intuition/INDEX.md`.
+- Architecture: `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md`.
+- Wording: `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`.
+- Historical sequence: `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md` (retained content cards only), `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` and `BOOK_CHAPTER_CARDS_2026-05-22.md` under the book directory.
+- Omission/continuity audits: `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md` and relevant backstage notes.
+- Accuracy: relevant formal anchors, never as prose-style authority.
 
 #### Archive hard guard
 
@@ -249,10 +247,9 @@ Read:
 2. `Governance/README.md`
 3. `Governance/SRT_CANONICAL_FREEZE.md`
 4. `Governance/SRT_EDIT_PROTOCOL.md`
-5. `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
-6. `LONGFORM_SPLITS.md`
-7. `_SRT_INDEX.md`
-8. `_SRT_CONTEXT_ROUTER.md`
+5. `LONGFORM_SPLITS.md` and `Operations/Archive_Records/Large_File_Audit_2026-05-09.md` when long-file routing or historical size debt is relevant
+6. `_SRT_INDEX.md` when entrypoint/registry relations change
+7. `_SRT_CONTEXT_ROUTER.md` only when conceptual routing changes
 
 Rule:
 
@@ -266,8 +263,8 @@ Rule:
 
 When using GitHub, ChatGPT repo connectors, Claude Code context tools, or any tool that may truncate or rank files:
 
-1. Check `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`.
-2. Check `LONGFORM_SPLITS.md`.
+1. Detect truncated results; fetch missing portions before relying on their contents.
+2. For long files, check `LONGFORM_SPLITS.md`; the historical large-file audit is optional context for routing gaps.
 3. Prefer the split README for long owner files.
 4. Read the owner file when exact wording or local line context is needed.
 5. Treat search as discovery, not authority resolution.
@@ -314,20 +311,3 @@ Do not ignore these merely because they are not canonical:
 - `_SRT_*_COVERAGE_INDEX.md` files for valuable but easy-to-miss files.
 - `Operations/Material_Log/` for material provenance and integration history.
 - domain claim-status files for anti-overclaiming boundaries.
-
----
-
-## 6. Minimal Agent Workflow
-
-For any non-trivial request:
-
-1. Classify the task profile.
-2. Load authority anchors.
-3. Load current-status / active-construction routing.
-4. Load retrieval context.
-5. Use split routes for large files.
-6. Check open tensions or claim status before making strong claims.
-7. State the role of important sources.
-8. For book work, verify that no archived file has silently displaced the current primary.
-
-This is the intended fix for both major retrieval failure modes: over-suppressing valuable non-canonical context and over-promoting highly searchable historical material.

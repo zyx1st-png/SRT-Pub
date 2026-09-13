@@ -4,7 +4,7 @@
 
 ## Tier 1: Replace by default
 
-These words appear 5–20x more often in AI text than human text. Replace by default, but allow exceptions per misfire protection rules (see `severity.md`).
+These are editorial signals, not measured authorship indicators. Use context and the protection rules in `severity.md`; preserve literal technical meaning and meaningful qualifiers.
 
 ### Throat-clearing openers
 - Here's the thing
@@ -106,9 +106,9 @@ Keep literal technical uses in graph, network, routing, or pathfinding contexts.
 - As we'll see
 - Here is a/an
 
-## Tier 2: Flag when 2+ appear in same paragraph
+## Tier 2: Inspect distracting clusters
 
-Legitimate individually, clustering signals AI.
+Legitimate individually; distracting repetition may merit editing, not an authorship verdict.
 
 - harness, navigate, foster, elevate, unleash
 - resonate, revolutionize, underpin, nuanced, crucial
@@ -118,7 +118,7 @@ Legitimate individually, clustering signals AI.
 
 ## Tier 3: Flag at high density only
 
-Common words, only problematic at high density. Thresholds: 3+ in short text (<200 words), 5+ in medium text (200–1000 words), >0.5% in long text (>1000 words). See `severity.md` for details.
+Common words need attention only when repetition distracts. See `severity.md`; no fixed frequency establishes an authorship or deletion verdict.
 
 - significant, innovative, effective, dynamic
 - scalable, compelling, unprecedented, exceptional
@@ -127,7 +127,7 @@ Common words, only problematic at high density. Thresholds: 3+ in short text (<2
 
 ## Adverbs (-ly words)
 
-Most -ly adverbs are filler. Delete or rephrase:
+Inspect for empty emphasis, but retain uncertainty, frequency, manner and scope. The following are contextual signals, not an automatic deletion list:
 
 - really, just, literally, genuinely, honestly
 - deeply, truly, fundamentally, essentially

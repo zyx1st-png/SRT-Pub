@@ -1,59 +1,37 @@
-# Before/After Examples
+# Before/after examples
 
-## Example 1: Throat-Clearing + Binary Contrast
+Synthetic examples of scoped editing. Preserve quantifiers, uncertainty, attribution and substantive list items.
 
-**Before:**
-> "Here's the thing: building products is hard. Not because the technology is complex. Because people are complex. Let that sink in."
+## Empty opener
 
-**After:**
-> "Building products is hard. Technology is manageable. People aren't."
+Before: Here's the thing: the export failed twice yesterday.
 
-**Changes:** Removed opener, binary contrast structure, and emphasis crutch. Direct statements.
+After: The export failed twice yesterday.
 
----
+## Quantifier preservation
 
-## Example 2: Filler + Unnecessary Reassurance
+Before: It turns out that most teams struggle with alignment.
 
-**Before:**
-> "It turns out that most teams struggle with alignment. The uncomfortable truth is that nobody wants to admit they're confused. And that's okay."
+After: Most teams struggle with alignment.
 
-**After:**
-> "Teams struggle with alignment. Nobody admits confusion."
+Do not turn “most” into all teams.
 
-**Changes:** Cut hedging ("most"), removed throat-clearing phrases, deleted permission-granting ending.
+## Necessary uncertainty
 
----
+Before: It is important to note that the timeout may be network-related.
 
-## Example 3: Business Jargon Stack
+After: The timeout may be network-related.
 
-**Before:**
-> "In today's fast-paced landscape, we need to lean into discomfort and navigate uncertainty with clarity. This matters because your competition isn't waiting."
+“May” carries uncertainty; retain it.
 
-**After:**
-> "Move faster. Your competition is."
+## Valid system subject
 
-**Changes:** Eliminated jargon entirely. Core message in six words.
+Before and after: The gateway returns 504 when the upstream request times out.
 
----
+No human subject needs to be invented.
 
-## Example 4: Dramatic Fragmentation
+## Substantive list and contrast
 
-**Before:**
-> "Speed. Quality. Cost. You can only pick two. That's it. That's the tradeoff."
+Before and after: Check latency, error rate, and memory usage. Correlation does not establish causation.
 
-**After:**
-> "Speed, quality, cost—pick two."
-
-**Changes:** Single sentence. No performative emphasis.
-
----
-
-## Example 5: Rhetorical Setup
-
-**Before:**
-> "What if I told you that the best teams don't optimize for productivity? Here's what I mean: they optimize for learning. Think about it."
-
-**After:**
-> "The best teams optimize for learning, not productivity."
-
-**Changes:** Direct claim. No rhetorical scaffolding.
+Three checks and a negative boundary are meaningful; do not remove either for stylistic uniformity.

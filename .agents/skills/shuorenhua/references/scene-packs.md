@@ -1,6 +1,6 @@
 # Scene Packs / 可直接发场景包
 
-Scene Packs 是面向可发布文本的子场景策略。它不替代 [场景禁改表](./scene-guardrails.md)、[Protected Spans](./protected-spans.md) 或 `Tier` 判断；只要文本本身像 README、release note、forum post 或 issue reply，就进一步判断“这段应该像哪一种发布文本”。
+Scene Packs 是按需使用的语体参考，不代表发布批准。它不替代 [场景禁改表](./scene-guardrails.md) 或 [Protected Spans](./protected-spans.md)。以下示例使用显式提供的合成背景；不要从示例借用功能、测试结果、完成状态或未来承诺。
 
 使用顺序：
 
@@ -48,6 +48,8 @@ Before:
 
 > 在 AI 全面重塑开发范式的今天，我们打造了一款真正面向未来的中文表达优化工具，深度赋能开发者的内容生产链路。
 
+已提供背景：工具名为“说人话”，是中文优先的 rewrite skill，清理套话、表演感和工程师腔，目标文本为 README、release note、issue 回复和日常协作文本。
+
 After:
 
 > `说人话` 是一个中文优先的 rewrite skill，用来把 AI 写出来的套话、表演感和工程师腔改回自然表达。适合 README、release note、issue 回复和日常协作文本。
@@ -88,6 +90,8 @@ After:
 Before:
 
 > 本次版本是一次面向真实场景的系统性升级，感谢所有用户的持续支持，让我们共同见证中文 AI 写作体验的全新跃迁。
+
+已提供变更记录（合成，非本项目实绩）：新增 scene-packs 参考；benchmark 增加 8 条场景回归；新增本轮复核结果文件。
 
 After:
 
@@ -132,6 +136,8 @@ Before:
 
 > 折腾这个工具一个月后，我深刻意识到，中文 AI 写作治理不是一次简单的词表扩张，而是一场围绕真实表达场景的系统性重塑。
 
+已提供作者观察：README、release note、issue 回复和论坛帖都属公开文本，但需要不同改法。
+
 After:
 
 > 做这个工具一个月后，我发现光删词表不够。README、release note、issue 回复和论坛帖看起来都是“公开文本”，但改法其实不一样。
@@ -174,4 +180,6 @@ Before:
 
 After:
 
-> 收到，这个 case 我能复现。它属于 `docs` 场景里的误杀，下一版先补一条 SNF；如果现有规则已经能放行，就只加回归用例。
+> 收到反馈，后续版本会继续改进相关能力。
+
+编辑备注：原文未提供复现结果、原因或排期；这些需维护者补充，不能在润色中写成“我能复现”或“下一版先补测试”。
