@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 36addfd6
+source_commit: ce0053a1
 source_branch: claude/status-file-optimization-qmg9ar
 source_dirty: false
-inputs_digest: a6a715bc24f1911f
+inputs_digest: 869ffe2cdaae2a9d
 ---
 
 # SRT 上下文包
