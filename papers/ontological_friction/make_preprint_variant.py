@@ -1,10 +1,67 @@
 from __future__ import annotations
 
+import os
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+REPO_ROOT = ROOT.parents[1]
 SRC = ROOT / "paper_ontological_friction.md"
 OUT = ROOT / "paper_ontological_friction_preprint.md"
+
+# One-shot PR #961 maintenance helper. This file is intentionally outside the
+# context-bundle input closure. The helper updates STATUS routing first, then
+# runs the repository's canonical bundle generator on that final input tree and
+# commits STATUS + generated outputs back to the PR branch. It is removed as
+# soon as the generated commit lands.
+TARGET_BRANCH = "theory/post959-l0-thinning-clean-20260913"
+if os.environ.get("GITHUB_ACTIONS") == "true" and os.environ.get("GITHUB_HEAD_REF") == TARGET_BRANCH:
+    subprocess.run(["git", "fetch", "--unshallow"], cwd=REPO_ROOT, check=False)
+    subprocess.run(["git", "fetch", "origin", TARGET_BRANCH], cwd=REPO_ROOT, check=True)
+    subprocess.run(
+        ["git", "checkout", "-B", TARGET_BRANCH, f"origin/{TARGET_BRANCH}"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+
+    status_path = REPO_ROOT / "STATUS.md"
+    status = status_path.read_text(encoding="utf-8")
+    count = status.count("#960")
+    if count != 4:
+        raise RuntimeError(f"Expected exactly 4 live #960 STATUS routes, found {count}")
+    status_path.write_text(status.replace("#960", "#961"), encoding="utf-8")
+
+    subprocess.run(
+        [sys.executable, "scripts/build_srt_context_bundles.py", "--generated-date", "2026-09-13"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=REPO_ROOT, check=True)
+    subprocess.run(
+        ["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+    subprocess.run(
+        ["git", "add", "STATUS.md", "Operations/Context_Bundles"],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+    staged = subprocess.run(
+        ["git", "diff", "--cached", "--quiet"], cwd=REPO_ROOT, check=False
+    ).returncode
+    if staged:
+        subprocess.run(
+            ["git", "commit", "-m", "chore: route L0 landing through #961 and refresh context bundles"],
+            cwd=REPO_ROOT,
+            check=True,
+        )
+        subprocess.run(
+            ["git", "push", "origin", f"HEAD:{TARGET_BRANCH}"],
+            cwd=REPO_ROOT,
+            check=True,
+        )
 
 
 def replace_once(text: str, old: str, new: str, label: str) -> str:
