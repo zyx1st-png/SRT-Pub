@@ -60,8 +60,9 @@ Merge criterion: critical execution semantics may be A or B, not C. The second p
 - All nine skill frontmatter/name/description checks passed in the original audit pass. Claude `argument-hint` retained under its platform schema rather than removed to fit the Codex-only validator.
 - All 23 relative Markdown links in the skill trees resolved, including the new humanizer patterns reference.
 - git diff --check and authority-routing consistency passed before the cross-model follow-up.
-- Context bundles were regenerated from changed sources; freshness verified all nine generated package files byte-for-byte in the original pass. Builder regression tests passed.
+- Context bundles were regenerated from changed sources in the original pass; the cross-model follow-up changes only retrieval/compatibility/skill/audit files outside the bundle input closure, so no second regeneration is required.
 - Complete governance preflight on a detached, clean baseline passed; after incorporating remote main `2d3d9e47`, clean-worktree governance preflight with `--strict-split-metadata` also passed.
+- Final PR head after the cross-model semantic-retention pass: Governance Preflight run `34764115906` / run #2017 = `success`.
 - Existing report-only NODE-BOOK-BACKFLOW warning remains. No warning-baseline expansion or unrelated cleanup was made.
 - Independent read-only audit covered 14 original references and five Claude skill entrypoints, and its high-confidence findings were addressed.
 - A second independent scenario exercise could not run because the subagent hit an account usage limit. It is not counted as passed.
