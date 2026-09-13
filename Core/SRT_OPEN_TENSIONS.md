@@ -159,6 +159,7 @@ The unresolved issue is the minimum acceptable formalization:
 - Is `T_dir` a scalar, a relation, or an accessibility function?
 - Does "readability" require conscious access, reportability, behavioral reorientation, or only internal self-model update?
 - How does `T_dir` avoid collapsing into semantic confidence, valence, or reward alignment?
+- **`S3` / `T_dir` relation** — how the S3 process-level stability class relates to `T_dir`, if at all. Carried here from `STATUS.md §OPEN register` (item S27) by `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`, unchanged and **not closed**. Recorded with its `S3 /` prefix intact: `Core_Law/SRT_One_Formation.md §7` carries a differently worded `T_dir relation`, and the two have not been adjudicated as the same question.
 
 The value-hiddenness claim is philosophically central, but its formal load must not outrun the current variable.
 

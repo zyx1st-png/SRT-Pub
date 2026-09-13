@@ -380,25 +380,7 @@ Do not infer `One -> Stable ISP`, `Stable ISP -> full One theorem`, or subjectho
 
 ### 14. W1 / W2
 
-W1/W2 remain machine audit labels only.
-
-```text
-W1 configuration writeback
-= change under broadly preserved later-selectability organization.
-
-W2 organizational writeback
-= change in relations that generate, admit, suppress, reach,
-bound or reconstitute later continuations.
-```
-
-Representation-invariance guard remains:
-
-```text
-W1/W2 follow causal / organizational role,
-not whether a model calls the variable state / parameter / weight / structure.
-```
-
-W2 does not decide Bearer by itself.
+Owner: `Operations/SRT_W1_W2_WRITEBACK_AUDIT_LABELS.md`. 标签定义、表示不变性护栏与 `W2 != Bearer` 硬限制以该文件为准；本页不再定义它们，也不再作为该类型学的事实 owner。
 
 ### 15. d / sigma / T_dir
 
@@ -466,15 +448,14 @@ physical realization is not privileged over other implementations.
 
 ## Authority / publication guards
 
-### 20. Canonical authority chain
+### 20. Authority routing — pointer only
 
-For exact registered meanings and current cross-owner order:
+For exact registered meanings and current cross-owner order, read the owners directly:
 
-1. `CANONICAL_REGISTRY.md` — find the registered route
-2. `Core_Law/SRT_Generative_Ontology_Spine.md` — cross-owner generation order, non-identities and OPEN gates
-3. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
-4. local owners such as `Core_Law/SRT_L0_Metaphysics.md`, `Core_Law/SRT_One_Formation.md`, P1-T06, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, `Core/SRT_Core_22_Equations.md`
-5. bridge / domain / reader surfaces only within the scope permitted by the above
+- `CANONICAL_REGISTRY.md §C` — **single owner of the complete current citation priority** (10 levels, from registry entry through split navigation)
+- `Core_Law/SRT_Generative_Ontology_Spine.md` — cross-owner generation order, non-identities and OPEN gates
+
+**This page does not restate that chain.** `AGENTS.md` states the rule: `STATUS.md` may specify a task-local working read sequence — that is §2 above, and it is explicitly not a second citation-priority chain — but a competing complete authority chain must not be reconstructed in a runtime file. The five-level list that stood here was a lossy copy of Registry §C's ten, so removing it drops no routing information.
 
 `STATUS.md` is routing / programme state, not definition authority.
 
@@ -521,37 +502,36 @@ Before any canonical theory edit, load:
 
 ## OPEN register
 
+> **Programme-level verdicts only.** The ontology OPEN items this page used to carry moved to their owners on 2026-09-13 under `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`. **Nothing was closed in that move**: every item is recorded unchanged in its receiving surface.
+
 Do not silently close:
 
 ```text
-Oriented Openness <-> kappa_0 / epsilon / irreversibility exact inheritance;
-irreversible occurrence -> durable / localized / recurrent historical efficacy;
-finite positionality <-> formation locus / post-One Position / subject-position;
-Concern <-> typed Bearer exact implication / equivalence;
-strict numerical identity;
-unique post-branch successor;
-formal necessary-and-sufficient One theorem;
-One-level perspective universal sufficiency;
-formal cross-domain necessary-and-sufficient theorem for P+E Bearer;
-unique empirical / numerical Bearer admission threshold;
-Bearer <-> 承担;
-Bearer <-> 关切;
-Bearer <-> position stability;
-Bearer <-> cognition;
-Bearer <-> subject-position;
-phenomenality / experiencer transition;
-formal / empirical representation-invariant W1/W2 criteria;
-scale attribution under tightly coupled nested Ones;
 whole-architecture non-substitutability;
 scientific distinctiveness;
-Level-2 realization;
-Bearer canonical ownership / sufficiency hardening;
-D4b;
-D4c;
-d bearer/domain;
-sigma ontology threshold;
-S3 / T_dir relation;
-collective subject sufficiency.
+Level-2 realization.
+```
+
+`new Level 1 = NOT ASSIGNED` and `Level 2 = HOLD` are carried in §1 with the rest of programme state.
+
+Everything else is held by its owner — read them there, not here:
+
+```text
+cross-owner ontology OPEN gates      -> `Core_Law/SRT_Generative_Ontology_Spine.md` §9
+One / Selection-position local OPEN  -> `Core_Law/SRT_One_Formation.md` §7
+symbol / formalism hardening ledger  -> `Core/SRT_OPEN_TENSIONS.md`
+collective higher-order realization  -> `Core_Law/SRT_Collective_Selection.md` §9
+W1 / W2 audit labels                 -> `Operations/SRT_W1_W2_WRITEBACK_AUDIT_LABELS.md`
+```
+
+Two facts about the move that a reader of the owners alone would not see:
+
+```text
+former S04 + S12 = ONE record, now Spine §9 `Bearer <-> Concern / 关切`;
+merging two records did not close the question — it stays OPEN.
+
+Bearer admission threshold + Bearer <-> position stability
+= PROVISIONAL routing in Spine §9 while Bearer canonical ownership is itself OPEN.
 ```
 
 ---

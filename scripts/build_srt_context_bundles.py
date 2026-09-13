@@ -191,7 +191,7 @@ FORBIDDEN_LOADOUTS: list[tuple[str, list[str], str]] = [
 
 PATH_SHORTHANDS = {
     "Core_21_Formal_Axioms.md": "Core/SRT_Core_21_Formal_Axioms.md",
-    "_SRT_SYMBOL_QUICK_GUARD.md": "SRT_AI_START.md §3（已于 2026-07-20 并入，原文件不再存在）",
+    "_SRT_SYMBOL_QUICK_GUARD.md": "SRT_AI_START.md §7（已于 2026-07-20 并入，原文件不再存在）",
 }
 
 
@@ -536,7 +536,7 @@ def guard_p1_t07() -> Guardrail:
             "- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、"
             "metastability 或 `σ<1` 单独推出 anti-closure。"
         ),
-        policy_source="`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8",
+        policy_source="`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §14 / §15",
     )
 
 

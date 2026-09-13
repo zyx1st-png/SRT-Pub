@@ -578,6 +578,7 @@ $$
 5. **跨尺度嵌套**：Late-stage candidate material is preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`; it is P1-candidate only under strong closure assumptions and is not part of the minimal canonical definition. 剩余开放点：具体塔层数 domain 实证、跨尺度 `M^{(n\to n+1)}` MOC 多层版本、跨层耦合边界条件
 6. **历史层面 generative reselectability**：其在长时间尺度上如何演化？文明兴衰能否在明确比较基线后部分读为后果回返或规则修订失败？
 7. **集体四变量耦合动力学**：§4.4 给出第一遍形式，仍待封口——(a) `w_i(t)` 从 `M(t)` 推导的正当性；(b) `T_{dir}^{alg,coll}` 中光滑阶跃的普适族；(c) `\Delta\Psi_f^{gap,coll}` 作为集体层对象的可操作定义（当前仅给出"叙事舒适 vs 真实支付"的现象学读法）；(d) 向下反馈 §4.5 是否穷尽；(e) 仍保留的新集体系数 `\lambda_M, \gamma_{asym}, \kappa_{mask}^{coll}, \nu_{ext}` 的实证窗口
+8. **紧耦合嵌套 One 的 scale attribution —— higher-order realization 部分**：在多个 One 紧耦合嵌套时，后果与 standing 应归到哪一层？本条由 `STATUS.md §OPEN register` 依 `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md` 迁入，原样保留、**未关闭**。只有 higher-order realization 一半落在本文件；local formation / unit 问题归 `Core_Law/SRT_One_Formation.md §7`，cross-layer non-identity gate 归 `Core_Law/SRT_Generative_Ontology_Spine.md §9`——本文件不定义 `One / Selection-position`（见开头 R1 One-formation boundary），因此不得据本条反推 One 的形成或单位划分。与第 5 条跨尺度嵌套相邻但不同：第 5 条问塔层形式化，本条问归属。
 
 ---
 

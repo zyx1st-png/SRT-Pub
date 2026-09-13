@@ -237,11 +237,18 @@ sigma ontology threshold;
 d bearer/domain;
 T_dir relation;
 collective subject sufficiency;
+scale attribution under tightly coupled nested Ones — local formation / unit question;
 phenomenality;
 scientific distinctiveness;
 new Level assignment;
 Level 2 / HOLD exit.
 ```
+
+The scale-attribution line arrived from `STATUS.md §OPEN register` under
+`Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`,
+unchanged and **not closed**. Only the local formation / unit half sits here: the
+cross-layer non-identity gate stays with `Core_Law/SRT_Generative_Ontology_Spine.md`
+§9 and higher-order realization with `Core_Law/SRT_Collective_Selection.md`.
 
 Those questions require separate author and governance gates.
 
