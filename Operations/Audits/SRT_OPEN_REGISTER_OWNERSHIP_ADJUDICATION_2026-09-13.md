@@ -14,6 +14,7 @@ comparative_claim: none
 named_comparator: null
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md
   - Operations/Audits/SRT_OPEN_REGISTER_RECONCILIATION_PREAUDIT_2026-09-13.md
   - STATUS.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -32,10 +33,11 @@ tags: [OpenRegister, Ownership, Adjudication, StatusContraction]
 > implementation constraints those answers carry. It authorizes the migration; it
 > does not perform it, and it **closes no OPEN item**.
 >
-> **Provenance**: the author adjudicated in session on 2026-09-13 by adopting the
-> external review's five recommendations (「我认同gpt的」). The recommendations
-> are relayed below as the content of that decision; the decision itself is the
-> author's. Per `AGENTS.md`, AI-generated alternatives are not author decisions
+> **Provenance**: the author-layer record is
+> `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md`
+> (`epistemic_layer: author`), which carries the author's statement verbatim and
+> the authorized-landing / non-authorization lists. This file is the governance
+> record of that decision, not its source. Per `AGENTS.md`, AI-generated alternatives are not author decisions
 > and two models agreeing is not author convergence — this record exists because
 > the author, not a reviewer, chose.
 
@@ -117,15 +119,20 @@ re-flatten a layering the architecture keeps apart.
 ## A5 — STATUS keeps programme verdicts and pointers
 
 ```text
-STATUS OPEN content after migration =
-  Level 2 = HOLD
-  new Level 1
-  scientific distinctiveness
-  whole-architecture non-substitutability
+STATUS programme-level content after migration =
+  Level 2 = HOLD                            (§1, with the rest of programme state)
+  new Level 1                               (§1)
+  scientific distinctiveness                (§OPEN register)
+  whole-architecture non-substitutability   (§OPEN register)
+  Level-2 realization                       (§OPEN register)
   + pointers to Spine §9 / local owners / hardening ledger
 ```
 
-No duplicated ontology OPEN register remains on the dashboard.
+Read "programme-level content", not "OPEN content": the verdicts are split across
+two sections by what they are. `Level 2 = HOLD` and `new Level 1 = NOT ASSIGNED`
+are current programme state and stay in §1; the three that are genuinely open
+questions stay in the OPEN register. No duplicated ontology OPEN register remains
+on the dashboard.
 
 ## What this adjudication does not decide
 

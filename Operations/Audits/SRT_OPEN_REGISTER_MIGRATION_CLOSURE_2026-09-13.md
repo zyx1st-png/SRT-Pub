@@ -14,6 +14,7 @@ comparative_claim: none
 named_comparator: null
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md
   - Operations/Audits/SRT_OPEN_REGISTER_RECONCILIATION_PREAUDIT_2026-09-13.md
   - Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md
   - STATUS.md

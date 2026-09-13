@@ -6,9 +6,11 @@ layer: operations
 epistemic_layer: os
 claim_mode: machine
 canonical: false
-dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-STATUS]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-AUDIT-OPEN-REGISTER-OWNERSHIP-ADJUDICATION-20260913]
 provenance:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md
   - Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md
+  - STATUS.md  # historical source of the labels; not a runtime dependency
 updated: 2026-09-13
 tags: [MachineAudit, Writeback, Taxonomy, W1, W2]
 ---
@@ -31,7 +33,8 @@ a dashboard whose own §20 states it is routing / programme state and **not a
 definition authority**. The typology therefore had no owner while the dashboard
 acted as one.
 
-`Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md` §A3
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md` §A3,
+recorded in `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`,
 adjudicated that W1/W2 leave `STATUS.md` without being promoted into Spine
 canonical, and land here as a noncanonical machine/audit taxonomy owner.
 
@@ -39,7 +42,9 @@ canonical, and land here as a noncanonical machine/audit taxonomy owner.
 merge, retire or repurpose an old one. **The entry retired here is `STATUS.md
 §14`'s de-facto ownership of the typology**: that section now carries a pointer
 to this file and no longer defines the labels. This file is the 一进; that
-retirement is the 一出.
+retirement is the 一出. `STATUS.md` is therefore recorded above as the labels'
+**historical source, not a runtime dependency**: a file that has just taken
+ownership away from the dashboard must not then depend on it.
 
 ## The labels
 
