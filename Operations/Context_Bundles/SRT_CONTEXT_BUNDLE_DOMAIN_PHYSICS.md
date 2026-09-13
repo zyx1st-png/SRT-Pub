@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 8c9daa85
-source_branch: theory/one-formation-vertical-reconstitution-landing-20260913
+source_commit: dd89ba05
+source_branch: theory/post-one-spine-sync-20260913
 source_dirty: false
-inputs_digest: 35c621bde9099da7
+inputs_digest: 39e8740593266483
 ---
 
 # SRT 物理领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 35c621bde9099da7
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `8c9daa85` |
-| 来源分支 | `theory/one-formation-vertical-reconstitution-landing-20260913` |
+| 来源 commit | `dd89ba05` |
+| 来源分支 | `theory/post-one-spine-sync-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
