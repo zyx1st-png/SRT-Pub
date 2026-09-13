@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 325fbaf0
-source_branch: ops/post-pr961-status-closeout-20260913
+source_commit: ce0053a1
+source_branch: claude/status-file-optimization-qmg9ar
 source_dirty: false
-inputs_digest: 1e3cb558b00725aa
+inputs_digest: 869ffe2cdaae2a9d
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,13 +27,13 @@ inputs_digest: 1e3cb558b00725aa
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `325fbaf0` |
-| 来源分支 | `ops/post-pr961-status-closeout-20260913` |
+| 来源 commit | `ce0053a1` |
+| 来源分支 | `claude/status-file-optimization-qmg9ar` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
-> （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
 > 因此改动其中任何一项都会被发现。
 >
 > `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
@@ -57,7 +57,7 @@ inputs_digest: 1e3cb558b00725aa
 >
 > **每条护栏分三段，权威等级不同，请分别对待**：
 >
-> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `STATUS.md` 按锚点逐字抽取的原文。
+> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md` 按锚点逐字抽取的原文。
 >   锚点若失效，生成脚本直接失败而不会产出缺护栏的包。
 > - **GENERATED INTERPRETATION** — **生成器的归纳，不是来源原文**。它压缩了上面的抽取内容，
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
@@ -99,7 +99,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**来自 `STATUS.md`（2026-07-25 条目）**：
+**来自 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md` §G-DQO**：
 
 > 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
@@ -111,7 +111,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 #### USAGE POLICY — 使用规则
 
-*授权依据：`STATUS.md` 2026-07-25 条目所记的下游护栏裁决*
+*授权依据：`Governance/SRT_DOWNSTREAM_GUARDRAILS.md` §G-DQO 所记的 2026-07-25 下游护栏裁决*
 
 - 不要从外部对话材料把三轴引入回答。
 - 不要据此改写 `d` 的定义。

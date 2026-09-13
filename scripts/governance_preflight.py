@@ -64,6 +64,19 @@ def main() -> None:
             ("authority-routing consistency", [python, "scripts/check_authority_routing.py"])
         )
 
+    if (ROOT / "scripts" / "test_check_status_recording_rule.py").is_file():
+        steps.append(
+            (
+                "status recording rule checker tests",
+                [python, "scripts/test_check_status_recording_rule.py"],
+            )
+        )
+
+    if (ROOT / "scripts" / "check_status_recording_rule.py").is_file():
+        steps.append(
+            ("status recording rule", [python, "scripts/check_status_recording_rule.py"])
+        )
+
     if (ROOT / "scripts" / "check_material_log_consistency.py").is_file():
         steps.append(
             ("material log consistency", [python, "scripts/check_material_log_consistency.py"])

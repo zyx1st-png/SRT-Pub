@@ -95,6 +95,7 @@ Amendment 不新增 ontology claim，主要修正：
 3. `SRT_HARNESS_TESTS.md`
 4. `SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
 5. `SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md`
+6. `SRT_DOWNSTREAM_GUARDRAILS.md` — 下游传播限制 owner（哪些内容在裁决前不得进入书稿 / 公共内容 / bridge / 论文）。限制生效不等于被限制的问题已裁决。
 
 ### Claim Discipline
 

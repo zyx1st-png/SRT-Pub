@@ -318,12 +318,16 @@ def working_tree_dirty() -> bool:
 # --------------------------------------------------------------------------
 # 输入闭包与内容摘要
 # --------------------------------------------------------------------------
-# 生成结果不只依赖正文文件：§0.2 护栏读 STATUS.md 与两份审计，§0.4 读 registry 与
+# 生成结果不只依赖正文文件：§0.2 护栏读下游护栏 owner 与两份审计，§0.4 读 registry 与
 # AI_START，输出形态还取决于生成脚本本身。只对正文列表做校验，会漏掉这些隐式输入。
 GENERATOR_SELF = "scripts/build_srt_context_bundles.py"
 ACTIVE_THEORY_MANIFEST = "Operations/Audits/data/srt_active_theory_nodes.json"
 GUARDRAIL_SOURCES = [
-    "STATUS.md",
+    # STATUS.md is deliberately absent: it is the repository's highest-churn file,
+    # and having its bytes in the digest meant a status-only edit invalidated all
+    # nine bundles. The d/q/o guardrail it used to carry now lives under its own
+    # governance owner below.
+    "Governance/SRT_DOWNSTREAM_GUARDRAILS.md",
     "CANONICAL_REGISTRY.md",
     "SRT_AI_START.md",
     "Core/SRT_Core_21b_Constitutive_Theorems.md",
@@ -379,7 +383,7 @@ def inputs_digest() -> str:
 
     这才是"包是否与来源一致"的判据。此前用的是 commit 祖先关系，有两个毛病：
     squash / rebase 合并会重写或丢弃该 commit，导致合并后 main 上 `--check` 必红；
-    而且祖先关系只覆盖显式正文列表，改 STATUS.md、审计文件或生成脚本都绕得过去。
+    而且祖先关系只覆盖显式正文列表，改护栏来源、审计文件或生成脚本都绕得过去。
     内容摘要与合并策略无关，且覆盖全部输入。
     """
     h = hashlib.sha256()
@@ -424,7 +428,7 @@ def verify_provenance(prov: Provenance) -> None:
     if prov.digest != current:
         fail(
             f"输入闭包摘要不一致：包记录 `{prov.digest}`，当前为 `{current}`。\n"
-            "  说明生成脚本、护栏来源（STATUS.md / 审计文件）或某个正文文件在生成之后\n"
+            "  说明生成脚本、护栏来源（治理护栏 owner / 审计文件）或某个正文文件在生成之后\n"
             "  发生过改动，包已过期。请重新运行生成脚本并提交。"
         )
 
@@ -537,18 +541,27 @@ def guard_p1_t07() -> Guardrail:
 
 
 def guard_dqo() -> Guardrail:
-    src = "STATUS.md"
+    src = "Governance/SRT_DOWNSTREAM_GUARDRAILS.md"
     text = read_text(src)
-    m = re.search(r"已加下游护栏[：:][^。]*。", text)
+    # 按显式标记对抽取，而不是搜一句中文自然语言：该锚点此前住在 STATUS.md 里，
+    # 被状态面板重写冲掉过两次（ed20ccf / 156c4db），每次都要单独一个 commit 加回来。
+    m = re.search(
+        r"<!--\s*SRT-GUARDRAIL:DQO-BEGIN.*?-->\s*(.+?)\s*<!--\s*SRT-GUARDRAIL:DQO-END\s*-->",
+        text,
+        re.S,
+    )
     if not m:
-        fail(f"锚点缺失：{src} 中找不到 d/q/o 下游护栏原句")
+        fail(
+            f"锚点缺失：{src} 中找不到 SRT-GUARDRAIL:DQO-BEGIN/END 标记对。\n"
+            "  d/q/o 下游禁运句必须留在这对标记之间；编辑该治理文件时不要删掉标记。"
+        )
 
     return Guardrail(
         gid="G2",
         title="`d`/`q`/`o` 三轴处于禁运状态",
         severity="中",
         affected="`_SRT_D_VALUE_CANONICAL.md` 的 `d` 定义，以及任何涉及 `q` / `o` 的表述",
-        extracts=[(f"来自 `{src}`（2026-07-25 条目）", m.group(0).strip())],
+        extracts=[(f"来自 `{src}` §G-DQO", m.group(1).strip())],
         interpretation=(
             "2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴，"
             "台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与 "
@@ -561,7 +574,7 @@ def guard_dqo() -> Guardrail:
             "- 不要据此改写 `d` 的定义。\n"
             "- 禁运范围按上述原句：书稿、公共内容、bridge、论文。"
         ),
-        policy_source="`STATUS.md` 2026-07-25 条目所记的下游护栏裁决",
+        policy_source="`Governance/SRT_DOWNSTREAM_GUARDRAILS.md` §G-DQO 所记的 2026-07-25 下游护栏裁决",
     )
 
 
@@ -1091,7 +1104,7 @@ inputs_digest: {prov.digest}
 | 包含文件数 | {len(files)} |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
-> （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
 > 因此改动其中任何一项都会被发现。
 >
 > `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
@@ -1110,7 +1123,7 @@ inputs_digest: {prov.digest}
 >
 > **每条护栏分三段，权威等级不同，请分别对待**：
 >
-> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `STATUS.md` 按锚点逐字抽取的原文。
+> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md` 按锚点逐字抽取的原文。
 >   锚点若失效，生成脚本直接失败而不会产出缺护栏的包。
 > - **GENERATED INTERPRETATION** — **生成器的归纳，不是来源原文**。它压缩了上面的抽取内容，
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
@@ -1324,7 +1337,7 @@ uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
 全部正文），再按既有产出 frontmatter 记录的 provenance 重新生成到临时目录逐字比对。
 唯一的固定参数是 `--generated-date`，且它只是日期标签，不声称内容来源。
 
-护栏层按锚点抽取自 `Operations/` 审计台账与 `STATUS.md`。**任一锚点失效，脚本会
+护栏层按锚点抽取自 `Operations/` 审计台账与 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md`。**任一锚点失效，脚本会
 直接以非零码退出**，而不会产出一个缺护栏的包。P1-T07 若日后被修订，脚本同样会
 失败，强制复核该护栏是否仍适用——这是刻意的防漂移设计。
 
