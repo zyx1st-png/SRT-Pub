@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-12
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-13
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-12
-source_commit: 9383d7c4
-source_branch: theory/post959-l0-thinning-20260913
-source_dirty: false
-inputs_digest: 28963c37e2a19db0
+generated: 2026-09-13
+source_commit: 712ca73b
+source_branch: theory/post959-l0-thinning-clean-20260913
+source_dirty: true
+inputs_digest: ad02fcfbc9cbe74a
 ---
 
 # SRT 核心动力学上下文包
@@ -26,10 +26,10 @@ inputs_digest: 28963c37e2a19db0
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-12 |
-| 来源 commit | `9383d7c4` |
-| 来源分支 | `theory/post959-l0-thinning-20260913` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-09-13 |
+| 来源 commit | `712ca73b` |
+| 来源分支 | `theory/post959-l0-thinning-clean-20260913` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
