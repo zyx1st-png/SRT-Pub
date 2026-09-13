@@ -55,4 +55,4 @@ Manual contract walkthrough (not an independent runtime test): source reading an
 
 ## Remaining scope
 
-The patch is local and uncommitted on main. Local ignored artifacts remain intact. Review this diff before any separately requested integration. This report records instruction engineering, not a new SRT theory or author decision.
+At audit completion the patch was local and uncommitted on main. The author subsequently requested a PR: the scoped patch is committed on `codex/astra-instruction-audit-20260913`, with remote main through `2d3d9e47` incorporated. Generated context-package conflicts were resolved by regeneration from the merged sources. Local ignored and unrelated untracked artifacts remain intact and outside the PR. PR creation does not authorize merging it. This report records instruction engineering, not a new SRT theory or author decision.
