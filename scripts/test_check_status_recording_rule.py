@@ -66,6 +66,8 @@ case("next-owner key with a PR number appended",
      "NEXT TARGET OWNER = `Core_Law/SRT_One_Formation.md` / #964", True)
 case("in-flight cycle named by PR number in prose",
      "The active owner cycle is now **#964 One Formation thinning**.", True)
+case("next cycle named by PR number in prose",
+     "The next owner cycle is **#964 One Formation**.", True)
 case("waiting-on-CI lifecycle",
      "#964 = WAITING CI", True)
 

@@ -40,9 +40,12 @@ PR_REF = re.compile(r"#\d{2,}")
 PR_AS_OWNER = re.compile(r"^(CURRENT|ACTIVE|NEXT)[A-Z0-9 _/()-]*=.*#\d{2,}")
 
 # The same claim as prose — the shape the #961 Immediate routing override used:
-# "The active owner cycle is now **#961 L0 targeted thinning**".
+# "The active owner cycle is now **#961 L0 targeted thinning**". `next` is in the
+# alternation for the same reason it is in PR_AS_OWNER: a structured
+# `NEXT TARGET OWNER = ... / #964` already fails, so the prose form of the same
+# claim must fail too, or the rule means different things in two notations.
 PROSE_CYCLE = re.compile(
-    r"(active|current)[^\n]{0,40}(owner cycle|bounded landing)[^\n]{0,40}#\d{2,}",
+    r"(active|current|next)[^\n]{0,40}(owner cycle|bounded landing)[^\n]{0,40}#\d{2,}",
     re.I,
 )
 

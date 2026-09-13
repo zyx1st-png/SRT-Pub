@@ -56,7 +56,7 @@ Every `STATUS.md` OPEN item, with where else the same question is recorded and a
 | S01 | Oriented Openness ↔ κ₀ / ε / irreversibility exact inheritance | yes (P01) | – | yes | SPINE (L0 owner also states it) |
 | S02 | irreversible occurrence → durable / localized / recurrent historical efficacy | yes (§5) | – | – | SPINE (L0 owner also states it) |
 | S03 | finite positionality ↔ formation locus / post-One Position / subject-position | yes (§6) | – | – | SPINE |
-| S04 | Concern ↔ typed Bearer exact implication / equivalence | yes (P10) | – | – | SPINE — same question as S12 |
+| S04 | Concern ↔ typed Bearer exact implication / equivalence | yes (P10) | – | – | SPINE — possible overlap with S12; AUTHOR ADJUDICATION REQUIRED |
 | S05 | strict numerical identity | yes (P04) | yes | – | SPINE |
 | S06 | unique post-branch successor | yes (P04) | yes | – | SPINE |
 | S07 | formal necessary-and-sufficient One theorem | yes (P02) | yes | – | SPINE |
@@ -64,7 +64,7 @@ Every `STATUS.md` OPEN item, with where else the same question is recorded and a
 | S09 | formal cross-domain N&S theorem for P+E Bearer | yes (P08) | – | – | SPINE |
 | **S10** | **unique empirical / numerical Bearer admission threshold** | – | – | – | **ORPHAN** |
 | S11 | Bearer ↔ 承担 | yes (P09) | – | yes (L0 词条) | SPINE |
-| S12 | Bearer ↔ 关切 | yes (P10) | – | – | SPINE — same question as S04 |
+| S12 | Bearer ↔ 关切 | yes (P10) | – | – | SPINE — possible overlap with S04; AUTHOR ADJUDICATION REQUIRED |
 | **S13** | **Bearer ↔ position stability** | – | – | – | **ORPHAN** |
 | S14 | Bearer ↔ cognition | partial (P14 is `subject-position → cognition`) | yes | – | SPINE — wording differs, adjudicate |
 | S15 | Bearer ↔ subject-position | partial (P13 is a positive gate) | yes | yes | SPINE — wording differs, adjudicate |
@@ -74,7 +74,7 @@ Every `STATUS.md` OPEN item, with where else the same question is recorded and a
 | S19 | whole-architecture non-substitutability | yes (P21) | – | yes | PROGRAMME (STATUS keeps) |
 | S20 | scientific distinctiveness | yes (P20) | yes | – | PROGRAMME (STATUS keeps) |
 | S21 | Level-2 realization | yes (P19) | yes | – | PROGRAMME (STATUS keeps) |
-| S22 | Bearer canonical ownership / sufficiency hardening | – | yes | – | SPINE — it is an ownership question, Spine §7 routes Bearer |
+| S22 | Bearer canonical ownership / sufficiency hardening | – | yes | – | OWNER-ROUTING OPEN — current route = Spine §7; final semantic ownership NOT ADJUDICATED |
 | S23 | D4b | – | yes | – | LOCAL — `SRT_One_Formation.md` |
 | S24 | D4c | – | yes | – | LOCAL — `SRT_One_Formation.md` |
 | S25 | d bearer/domain | yes (P16 `bare-d retyping`) | yes | yes (§1 `d` / `D_eff`) | TENSIONS primary; `_SRT_D_VALUE_CANONICAL.md` is the definition owner |
@@ -82,7 +82,9 @@ Every `STATUS.md` OPEN item, with where else the same question is recorded and a
 | S27 | S3 / T_dir relation | – | yes | yes (§3 `T_dir`) | TENSIONS; `_SRT_T_DIR_CANONICAL.md` is the definition owner |
 | S28 | collective subject sufficiency | yes (P17) | yes | – | SPINE |
 
-Spine items with no STATUS counterpart — these are already single-owned and need no migration: `exact One boundary / unit identification`, `local One-owner lineage wording reconciliation`, `positive E establishment` (echoed in `STATUS §1` prose, not in its register), `Bearer ↔ agency`, `Concern ↔ agency`, `new Level 1`.
+Spine items with **no direct STATUS-register counterpart**: `exact One boundary / unit identification`, `local One-owner lineage wording reconciliation`, `positive E establishment` (echoed in `STATUS §1` prose, not in its register), `Bearer ↔ agency`, `Concern ↔ agency`, `new Level 1`.
+
+「没有对应行」不等于「已单一 owner」。按本文件自己的规则，措辞不同不足以判定是不是同一问题，所以这一组同样未经裁决。已知的具体待核例子：Spine 的 `new Level 1` 与 One Formation §7 的 `new Level assignment` / `Level 2 / HOLD exit` 可能是同一问题的三种写法，也可能不是。单一 owner 的标记只能在四面 cross-check 并经裁决之后给出。
 
 ## 3. Orphans — the reason this cannot be a delete
 
