@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 76f1f395
-source_branch: theory/post959-l0-thinning-clean-20260913
+source_commit: 325fbaf0
+source_branch: ops/post-pr961-status-closeout-20260913
 source_dirty: false
-inputs_digest: ad02fcfbc9cbe74a
+inputs_digest: 1e3cb558b00725aa
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: ad02fcfbc9cbe74a
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `76f1f395` |
-| 来源分支 | `theory/post959-l0-thinning-clean-20260913` |
+| 来源 commit | `325fbaf0` |
+| 来源分支 | `ops/post-pr961-status-closeout-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
