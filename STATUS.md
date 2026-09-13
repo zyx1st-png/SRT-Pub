@@ -12,11 +12,13 @@ updated: 2026-09-13
 
 > **角色**：fresh session 当前状态入口。先执行 `AGENTS.md §Session Start` 的三文件 bootstrap；本页只提供当前 checkpoint、程序级 verdict 与前向路由，不替代 canonical owners、作者源或历史审计。
 >
+> **记录口径（2026-09-13 起）**：本页记录**已落地事实**，以及由已落地治理 / 作者裁决支持的**当前 programme state**——两者都属于当前状态面板的职责（`AGENTS.md` 执行后条目、`Governance/SRT_EDIT_PROTOCOL.md` 留痕位置表）。但**不得把未合并 PR 自身的 lifecycle 写成仓库当前事实**：`#N = DRAFT / ACTIVE / WAITING CI` 属于那个 PR，不属于本页。进行中的 owner cycle 以 **owner 文件或 bounded work package** 指称，未合并 PR 号不得充当状态 owner。原因：#959 与 #961 两轮都在各自 landing PR 内部把该 PR 写成 ACTIVE，合并当天本页即失真。本条由 `scripts/check_status_recording_rule.py` 强制（本行含反例文本，故带豁免标记）。<!-- status-lint:allow -->
+>
 > **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。下一只 bounded owner cycle 指向 One Formation，但尚未开启 canonical edit。
 
 ## Fast Status
 
-### 0. Post-#957 whole-skeleton checkpoint — 2026-09-13
+### 0. Landing ledger — 已落地事实（2026-09-13）
 
 ```text
 #951 retrospective provenance closeout = MERGED / 62707551602a9d56ac9ec898ea6a66f098b5e543
@@ -33,41 +35,24 @@ R2-C F3/F7 = COMPLETE IN THIS LANDING
 #961 L0 targeted thinning = MERGED / 5591c793cd985729a228a22da3a3c8c5fb7a7453
 #949 = SUPERSEDED LIVE GATE / PROVENANCE ONLY
 #956 = SUPERSEDED INTERMEDIATE CHECKPOINT / PROVENANCE ONLY
-BROAD CANONICAL REWRITE = NO
+BROAD L0 / MULTI-OWNER CANONICAL REWRITE = NO
 OWNER-BY-OWNER CANONICAL LANDING = ACTIVE
 FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 NEXT TARGET OWNER = `Core_Law/SRT_One_Formation.md` / OWNER CYCLE NOT YET OPEN
-Level 2 = HOLD
 ```
 
-### 1. 当前工作状态
+### 1. 当前 programme state 与 owner 指针
 
 ```text
-latest merged whole-skeleton author checkpoint:
-#957 Record post-#956 whole-skeleton minimal ontology checkpoint
-merge = b17d4e6d36ee31e2cfbf465e0578c95be450b97b
-status = MERGED / NONCANONICAL AUTHOR BASELINE
-
-latest merged cross-owner canonical spine:
-#959 Land post-#957 minimal routing in the Generative Ontology Spine
-merge = 981d544804f935a6399fd3a309dadefc51d8ea5c
-status = MERGED / POST-#957 CROSS-OWNER CANONICAL SPINE
+merge facts / sha / landing completion = §0 landing ledger above; not restated here.
 
 prior bounded canonical landings:
 #942 One / Selection-position formation owner
 #940 Stable-ISP standing decoupling
 
 current phase:
-R2-A AUTHORITY PROPAGATION = COMPLETE
-R2-B (F2/F5/F9) = COMPLETE / AUTHOR A / BOUNDED LANDING IN #954
-R2-C (F3/F7) = COMPLETE / AUTHOR A / BOUNDED GOVERNANCE LANDING IN #955
-WHOLE-SKELETON CREATOR-AI ALIGNMENT = COMPLETE IN MERGED #957
 OLD-CANONICAL REVERSE AUDIT = RETYPED INTO BOUNDED OWNER-BY-OWNER LANDING
-BROAD L0 / MULTI-OWNER CANONICAL REWRITE = PROHIBITED
-FIRST BOUNDED LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
-SECOND BOUNDED LANDING = COMPLETE IN #961 / L0 TARGETED THINNING
-NEXT BOUNDED LANDING = One Formation / NOT YET OPEN
 current L0 scope audit = `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md`
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
@@ -431,7 +416,9 @@ Exact bearer/domain and threshold assignments remain OPEN.
 
 **既有 d/q/o 下游护栏（生成器锚点，继续有效）**：
 
+<!-- SRT-GUARDRAIL:DQO-BEGIN — `scripts/build_srt_context_bundles.py` 的 guard_dqo() 按本标记对抽取下面这句；删除、改写或拆开标记会让 context bundle 生成直接失败（此前该锚点丢失过两次，见 ed20ccf / 156c4db）。 -->
 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
+<!-- SRT-GUARDRAIL:DQO-END -->
 
 ---
 
@@ -521,11 +508,7 @@ Reconstruction does not retroactively rewrite published/submitted framing unless
 
 ### 22. Session start
 
-Fresh sessions begin with:
-
-1. `SRT_AI_START.md`
-2. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-3. this `STATUS.md §Fast Status`
+Fresh-session read order has a single owner: `AGENTS.md §Session Start`. This page neither restates nor extends it.
 
 For current ontology / cleanup work, load the merged #957 final author adjudication and landing-scope audit first as noncanonical constraints, then `Core_Law/SRT_Generative_Ontology_Spine.md` and its local owners. Historical #931/#933/#938/#949/#956 material is provenance and controls only where not superseded by #947/#957 or later explicit author decisions.
 
@@ -582,7 +565,7 @@ collective subject sufficiency.
 > **2026-09-13 post-#961 closeout:** #959 completed the first bounded post-#957 landing and #961 completed the second, targeted at L0. This closeout opens no new canonical theory edit. The next bounded owner is **One Formation**, to be handled in a separate owner cycle.
 
 ```text
-1. treat `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md` as completed #961 scope provenance, not an active theory gate;
+1. treat the landed scope audits as completed provenance, not active theory gates: `Operations/Audits/SRT_POST957_GENERATIVE_SPINE_LANDING_SCOPE_2026-09-13.md` (#959) and `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md` (#961);
 2. next target owner: `Core_Law/SRT_One_Formation.md`, but owner cycle = NOT YET OPEN;
 3. before editing One, run a bounded scope/read audit against #957, #959 and merged #961;
 4. pressure role recurrence / lineage-presupposition thinning without pre-closing exact One identity or boundary criteria;

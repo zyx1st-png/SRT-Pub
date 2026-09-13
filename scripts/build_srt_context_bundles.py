@@ -539,16 +539,25 @@ def guard_p1_t07() -> Guardrail:
 def guard_dqo() -> Guardrail:
     src = "STATUS.md"
     text = read_text(src)
-    m = re.search(r"已加下游护栏[：:][^。]*。", text)
+    # 按显式标记对抽取，而不是搜一句中文自然语言：该锚点此前被状态面板重写
+    # 冲掉过两次（ed20ccf / 156c4db），每次都要单独一个 commit 加回来。
+    m = re.search(
+        r"<!--\s*SRT-GUARDRAIL:DQO-BEGIN.*?-->\s*(.+?)\s*<!--\s*SRT-GUARDRAIL:DQO-END\s*-->",
+        text,
+        re.S,
+    )
     if not m:
-        fail(f"锚点缺失：{src} 中找不到 d/q/o 下游护栏原句")
+        fail(
+            f"锚点缺失：{src} 中找不到 SRT-GUARDRAIL:DQO-BEGIN/END 标记对。\n"
+            "  d/q/o 下游禁运句必须留在这对标记之间；改写状态面板时不要删掉标记。"
+        )
 
     return Guardrail(
         gid="G2",
         title="`d`/`q`/`o` 三轴处于禁运状态",
         severity="中",
         affected="`_SRT_D_VALUE_CANONICAL.md` 的 `d` 定义，以及任何涉及 `q` / `o` 的表述",
-        extracts=[(f"来自 `{src}`（2026-07-25 条目）", m.group(0).strip())],
+        extracts=[(f"来自 `{src}` §15 的 `SRT-GUARDRAIL:DQO` 锚点", m.group(1).strip())],
         interpretation=(
             "2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴，"
             "台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与 "
@@ -561,7 +570,7 @@ def guard_dqo() -> Guardrail:
             "- 不要据此改写 `d` 的定义。\n"
             "- 禁运范围按上述原句：书稿、公共内容、bridge、论文。"
         ),
-        policy_source="`STATUS.md` 2026-07-25 条目所记的下游护栏裁决",
+        policy_source="`STATUS.md` §15 `SRT-GUARDRAIL:DQO` 锚点所记的 2026-07-25 下游护栏裁决",
     )
 
 
