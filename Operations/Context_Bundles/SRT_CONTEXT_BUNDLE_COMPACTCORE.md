@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: 712ca73b
+source_commit: 76f1f395
 source_branch: theory/post959-l0-thinning-clean-20260913
-source_dirty: true
+source_dirty: false
 inputs_digest: ad02fcfbc9cbe74a
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: ad02fcfbc9cbe74a
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `712ca73b` |
+| 来源 commit | `76f1f395` |
 | 来源分支 | `theory/post959-l0-thinning-clean-20260913` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
