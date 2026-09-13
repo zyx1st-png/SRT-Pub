@@ -7,87 +7,9 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  post970-status-closeout:
-    if: github.event_name == 'pull_request' && github.head_ref == 'ops/post970-one-landing-closeout-20260913'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out PR head
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref }}
-
-      - name: Truth up STATUS after One Formation landing
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path('STATUS.md')
-          text = path.read_text(encoding='utf-8')
-
-          replacements = [
-              (
-                  '#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。下一只 bounded owner cycle 指向 One Formation，但尚未开启 canonical edit。',
-                  '#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。post-#970 whole-spine consistency review 判定 L0 / Bearer / Stable ISP / Individuation 不因本轮自动触发 canonical edit；下一 bounded work 指向 Generative Ontology Spine 的小型 post-One 同步审议。'
-              ),
-              (
-                  '#961 L0 targeted thinning = MERGED / 5591c793cd985729a228a22da3a3c8c5fb7a7453\n',
-                  '#961 L0 targeted thinning = MERGED / 5591c793cd985729a228a22da3a3c8c5fb7a7453\n#969 vertical-background author checkpoint = MERGED / 345412f627acd17cf0185547b48e34791cd0a9d4\n#970 One Formation vertical-reconstitution landing = MERGED / 0b4ba7dd6a818b70e8cebd7b7f4c681218ef5606\n'
-              ),
-              (
-                  'SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS\nNEXT TARGET OWNER = `Core_Law/SRT_One_Formation.md` / OWNER CYCLE NOT YET OPEN',
-                  'SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS\nTHIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION\nNEXT BOUNDED WORK PACKAGE = `Core_Law/SRT_Generative_Ontology_Spine.md` / POST-#970 BOUNDED SYNC REVIEW / NOT YET OPEN'
-              ),
-              (
-                  'current L0 scope audit = `Operations/Audits/SRT_POST959_L0_THINNING_LANDING_SCOPE_2026-09-13.md`',
-                  'current One landing audit = `Operations/Audits/SRT_ONE_FORMATION_VERTICAL_RECONSTITUTION_CANONICAL_LANDING_SCOPE_2026-09-13.md`\npost-One consistency review = `Operations/Audits/SRT_POST970_ONE_LANDING_WHOLE_SPINE_CONSISTENCY_REVIEW_2026-09-13.md`'
-              ),
-              (
-                  'local One / Selection-position owner = `Core_Law/SRT_One_Formation.md`',
-                  'local One / Selection-position owner = `Core_Law/SRT_One_Formation.md` / post-#970 v1 landed'
-              ),
-              (
-                  'The universal formation route now stops at **One**. `Core_Law/SRT_One_Formation.md` remains the local owner for detailed One / Selection-position semantics until its later bounded landing; it may not restore Selection-position as a second universal endpoint merely by local wording.',
-                  'The universal formation route now stops at **One**. `Core_Law/SRT_One_Formation.md` is now the post-#970 v1 local owner for detailed One / Selection-position semantics; formed `Selection-position` remains the operative co-aspect of an already formed One and is not a second universal endpoint.'
-              ),
-          ]
-
-          changed = False
-          for old, new in replacements:
-              if old in text:
-                  text = text.replace(old, new, 1)
-                  changed = True
-              elif new not in text:
-                  raise SystemExit(f'Neither old nor new STATUS form found: {old[:80]!r}')
-
-          if 'NEXT TARGET OWNER = `Core_Law/SRT_One_Formation.md` / OWNER CYCLE NOT YET OPEN' in text:
-              raise SystemExit('stale One next-owner routing remains')
-          if 'until its later bounded landing' in text:
-              raise SystemExit('stale pre-One landing wording remains')
-
-          if changed:
-              path.write_text(text, encoding='utf-8')
-          PY
-
-      - name: Commit STATUS when changed
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add STATUS.md
-          if git diff --cached --quiet; then
-            echo 'STATUS already post-970 current.'
-            exit 0
-          fi
-          git commit -m 'ops: close out One Formation landing in STATUS'
-          git push origin HEAD:${{ github.head_ref }}
-
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
