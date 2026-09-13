@@ -14,7 +14,7 @@ updated: 2026-09-13
 >
 > **记录口径（2026-09-13 起）**：本页记录**已落地事实**，以及由已落地治理 / 作者裁决支持的**当前 programme state**——两者都属于当前状态面板的职责（`AGENTS.md` 执行后条目、`Governance/SRT_EDIT_PROTOCOL.md` 留痕位置表）。但**不得把未合并 PR 自身的 lifecycle 写成仓库当前事实**：`#N = DRAFT / ACTIVE / WAITING CI` 属于那个 PR，不属于本页。进行中的 owner cycle 以 **owner 文件或 bounded work package** 指称，未合并 PR 号不得充当状态 owner。原因：#959 与 #961 两轮都在各自 landing PR 内部把该 PR 写成 ACTIVE，合并当天本页即失真。本条由 `scripts/check_status_recording_rule.py` 强制（本行含反例文本，故带豁免标记）。<!-- status-lint:allow -->
 >
-> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。post-#970 whole-spine consistency review 判定 L0 / Bearer / Stable ISP / Individuation 不因本轮自动触发 canonical edit；下一 bounded work 指向 Generative Ontology Spine 的小型 post-One 同步审议。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。下一实质工作转入非 canonical Selection primitive strongest-rival / non-substitutability research。
 
 ## Fast Status
 
@@ -35,6 +35,7 @@ R2-C F3/F7 = COMPLETE IN THIS LANDING
 #961 L0 targeted thinning = MERGED / 5591c793cd985729a228a22da3a3c8c5fb7a7453
 #969 vertical-background author checkpoint = MERGED / 345412f627acd17cf0185547b48e34791cd0a9d4
 #970 One Formation vertical-reconstitution landing = MERGED / 0b4ba7dd6a818b70e8cebd7b7f4c681218ef5606
+#972 post-One Generative Spine synchronization = MERGED / d29f2d59482ca6f87386f0344d81a6b3b375650d
 #949 = SUPERSEDED LIVE GATE / PROVENANCE ONLY
 #956 = SUPERSEDED INTERMEDIATE CHECKPOINT / PROVENANCE ONLY
 BROAD L0 / MULTI-OWNER CANONICAL REWRITE = NO
@@ -42,7 +43,8 @@ OWNER-BY-OWNER CANONICAL LANDING = ACTIVE
 FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
-NEXT BOUNDED WORK PACKAGE = `Core_Law/SRT_Generative_Ontology_Spine.md` / ONE-FORMATION FOLLOW-UP SPINE SYNC REVIEW / NOT YET OPEN
+CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
+NEXT RESEARCH WORK PACKAGE = SELECTION PRIMITIVE STRONGEST-RIVAL / NONCANONICAL / AUTHOR GATE NOT YET REACHED
 ```
 
 ### 1. 当前 programme state 与 owner 指针
@@ -58,6 +60,7 @@ current phase:
 OLD-CANONICAL REVERSE AUDIT = RETYPED INTO BOUNDED OWNER-BY-OWNER LANDING
 current One landing audit = `Operations/Audits/SRT_ONE_FORMATION_VERTICAL_RECONSTITUTION_CANONICAL_LANDING_SCOPE_2026-09-13.md`
 post-One consistency review = `Operations/Audits/SRT_POST970_ONE_LANDING_WHOLE_SPINE_CONSISTENCY_REVIEW_2026-09-13.md`
+post-Spine closeout / Selection handoff = `Operations/Audits/SRT_POST972_CANONICAL_TRUNK_CLOSEOUT_SELECTION_HANDOFF_2026-09-13.md`
 
 cross-owner generative routing owner = `Core_Law/SRT_Generative_Ontology_Spine.md`
 local One / Selection-position owner = `Core_Law/SRT_One_Formation.md` / post-#970 v1 landed
@@ -501,7 +504,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#959 remains the current semantic cross-owner canonical spine. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review; it is not yet open. No checkpoint or local landing authorizes a broad multi-owner rewrite.
+#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is noncanonical Selection primitive strongest-rival research.
 
 ---
 
@@ -543,15 +546,17 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-13 post-One closeout:** #970 completed the third bounded owner landing, targeted at One Formation. This closeout opens no new downstream owner cycle. The next bounded work package is a small Generative Ontology Spine follow-up synchronization review.
+> **2026-09-13 post-#972 closeout:** the bounded post-One Spine synchronization is complete and the canonical trunk reaches its current cleanup stop condition. No downstream owner cycle is opened by this closeout. The next substantive work is a noncanonical Selection primitive strongest-rival / non-substitutability audit.
 
 ```text
-1. treat the One landing audit and post-One consistency review as completed routing provenance;
-2. next bounded work package: `Core_Law/SRT_Generative_Ontology_Spine.md` follow-up sync review / NOT YET OPEN;
-3. constrain that review to post-One semantic/routing synchronization already identified by the consistency audit;
-4. do not automatically open L0, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;
-5. keep current P+E Bearer semantics unchanged unless a later owner cycle is separately opened;
-6. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned.
+1. treat the One landing, post-One consistency review and post-One Spine sync audit as completed routing provenance;
+2. pause further canonical owner cleanup by default;
+3. next research work package: Selection primitive strongest-rival / noncanonical;
+4. compare against the strongest fair composite rival without pre-given objects, chooser or completed option menu;
+5. test same-event manifest / relative-background verticality and vertical reconstitution, not generic horizontal recurrence;
+6. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;
+7. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;
+8. stop for author adjudication only when the rival audit reaches a genuine metaphysical fork.
 ```
 
 ## Historical navigation
