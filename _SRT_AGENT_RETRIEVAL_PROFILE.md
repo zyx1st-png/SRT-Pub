@@ -46,9 +46,11 @@ Search rank, keyword density, file version suffixes, and old chapter numbering d
 
 After the minimal bootstrap, an agent must classify the task before deciding context depth.
 
-Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here.
+Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here. For the STATUS bootstrap step, consume the current-state surface through §0–§2 (landing ledger, programme state / owner pointers, controlling route); later STATUS theory/history sections are conditional context rather than universal fresh-session input.
 
 Select only the applicable profile and its task-relevant references. Ordinary Git, tooling or typo work does not become a theory task merely because this is an SRT repository. Reuse already-read unchanged context; old audits and full-domain maps are conditional, not universal prerequisites.
+
+Compression must not erase execution semantics. If an owning workflow or skill defines an ordered gate, stop condition, failure behavior or edit boundary, follow it explicitly rather than reconstructing a shorter substitute from model capability.
 
 After the minimal guard files are loaded:
 
@@ -87,18 +89,18 @@ Output rule:
 
 Use when the user asks to develop, harden, test, critique, extend, or repair SRT.
 
-Read:
+Read in this order, stopping when the active task is adequately grounded:
 
-1. `CANONICAL_REGISTRY.md`
-2. `Core_Law/SRT_Generative_Ontology_Spine.md` when the task touches ontology order, formation, position/perspective/Bearer routing, or old-canonical cleanup
-3. `Governance/SRT_CLAIM_LADDER.md`
-4. `Governance/SRT_CLAIM_MODE_AUDIT.md`
-5. `_SRT_CONTEXT_ROUTER.md`
-6. `_SRT_DEEP_THEORY_MAP.md`
-7. the route's Primary files
-8. the route's Secondary files when domain depth is needed
-9. `Core/SRT_OPEN_TENSIONS.md`
-10. the relevant coverage index when the route may miss support files
+1. current `STATUS.md` §0–§2 for programme state, current owner and route;
+2. the latest relevant author adjudication / bounded work package named by current provenance when substantive meaning is in play;
+3. `CANONICAL_REGISTRY.md`;
+4. `Core_Law/SRT_Generative_Ontology_Spine.md` when the task touches ontology order, formation, position/perspective/Bearer routing, OPEN gates or old-canonical cleanup;
+5. the compatible local owner(s) for the target concept;
+6. `Governance/SRT_CLAIM_LADDER.md` and `Governance/SRT_CLAIM_MODE_AUDIT.md` when claim hardness matters;
+7. `_SRT_CONTEXT_ROUTER.md`, `_SRT_DEEP_THEORY_MAP.md`, route Primary files and route Secondary files only to the depth required by the question;
+8. `Core/SRT_OPEN_TENSIONS.md` and the relevant coverage index when unresolved edges or missing support files matter.
+
+The 2026-09-05 author-reentry correction and reconstruction amendment remain important programme/governance context, but they are **conditional rather than automatic prefaces to every current owner edit**. Load them when scope/pace, collaboration, U/N-mode, Domain Reconstruction, deep-well/HOLD gates or programme interpretation is actually at issue. Current bounded owner work should not be forced to traverse the full older programme corpus before reading its live adjudication and owner.
 
 Important:
 
