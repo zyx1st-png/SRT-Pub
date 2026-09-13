@@ -28,8 +28,8 @@ if os.environ.get("GITHUB_ACTIONS") == "true" and os.environ.get("GITHUB_HEAD_RE
     status_path = REPO_ROOT / "STATUS.md"
     status = status_path.read_text(encoding="utf-8")
     count = status.count("#960")
-    if count != 4:
-        raise RuntimeError(f"Expected exactly 4 live #960 STATUS routes, found {count}")
+    if count != 8:
+        raise RuntimeError(f"Expected exactly 8 live #960 STATUS routes, found {count}")
     status_path.write_text(status.replace("#960", "#961"), encoding="utf-8")
 
     subprocess.run(
