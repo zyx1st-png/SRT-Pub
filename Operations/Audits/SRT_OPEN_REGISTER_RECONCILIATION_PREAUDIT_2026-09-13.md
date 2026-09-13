@@ -41,9 +41,11 @@ Measured on `0d17abd4` (post-#962 `main`).
 | `STATUS.md §OPEN register` | 28 | dashboard; the page states it is "routing / programme state, not definition authority" |
 | `Core_Law/SRT_Generative_Ontology_Spine.md §9` | 21 | cross-owner generation order / non-identity / OPEN gates |
 | `Core_Law/SRT_One_Formation.md §7` | 17 | local One / Selection-position owner |
-| `Core/SRT_OPEN_TENSIONS.md` | ~14 pressure points + per-symbol sections | **`claim_mode: open`; self-described "hardening ledger"** — the repository already has a dedicated OPEN owner |
+| `Core/SRT_OPEN_TENSIONS.md` | ~14 pressure points + per-symbol sections | **`claim_mode: open`; self-described "hardening ledger"** — the repository already has a dedicated OPEN hardening ledger / surface |
 
-The fourth one matters most. `SRT_OPEN_TENSIONS.md` is not a stray list: it carries `d`, `Ψ_f`, `T_dir`, Stable-ISP boundary and ε normativity in a three-part form (Current state / Problem point / Future hardening direction) far richer than the one-line versions on the other three surfaces. Any plan that routes owner-local OPEN items "to their owners" has to decide whether that means this ledger or each owner's own §OPEN.
+The fourth one matters most — but note the wording: a dedicated OPEN **surface**, not the declared **owner** of anyone else's OPEN items. Its own self-description is a hardening ledger of current unresolved pressure points, which establishes that it is purpose-built for OPEN questions, not that other surfaces' OPEN items belong to it. That routing decision is §5's first question.
+
+`SRT_OPEN_TENSIONS.md` is not a stray list: it carries `d`, `Ψ_f`, `T_dir`, Stable-ISP boundary and ε normativity in a three-part form (Current state / Problem point / Future hardening direction) far richer than the one-line versions on the other three surfaces. Any plan that routes owner-local OPEN items "to their owners" has to decide whether that means this ledger or each owner's own §OPEN.
 
 No surface declares itself the owner of the others, and no two lists agree on wording. `CANONICAL_REGISTRY.md §C` owns citation priority but does not assign OPEN ownership.
 
