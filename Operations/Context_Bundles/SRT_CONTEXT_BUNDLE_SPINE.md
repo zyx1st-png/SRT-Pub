@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-13
-source_commit: ce0053a1
+source_commit: c96c497d
 source_branch: claude/status-file-optimization-qmg9ar
 source_dirty: false
-inputs_digest: 869ffe2cdaae2a9d
+inputs_digest: 80e491f7fea0212f
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 869ffe2cdaae2a9d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-13 |
-| 来源 commit | `ce0053a1` |
+| 来源 commit | `c96c497d` |
 | 来源分支 | `claude/status-file-optimization-qmg9ar` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -1724,8 +1724,40 @@ collective subject sufficiency;
 new Level 1;
 Level 2 / HOLD exit;
 scientific distinctiveness;
-whole-architecture non-substitutability.
+whole-architecture non-substitutability;
+finite positionality <-> formation locus / post-One Position / subject-position;
+Bearer <-> cognition;
+Bearer <-> subject-position;
+unique empirical / numerical Bearer admission threshold;
+Bearer <-> position stability;
+Bearer canonical ownership / sufficiency hardening;
+scale attribution across tightly coupled nested Ones — cross-layer non-identity gate only.
 ```
+
+The last seven arrived from `STATUS.md §OPEN register` under
+`Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`. They
+are recorded here unchanged and **none of them is closed**. Some carry
+qualifications that the listing alone does not show:
+
+```text
+unique empirical / numerical Bearer admission threshold = PROVISIONAL ROUTING
+Bearer <-> position stability                          = PROVISIONAL ROUTING
+```
+
+Both are Bearer hardening. `Bearer canonical ownership / sufficiency hardening`
+is itself open, so routing them here is **where they are recorded until that
+question is settled, not a finding that this spine owns Bearer**. Adjudicating
+the ownership item by pointing at this routing would close it with itself.
+
+```text
+scale attribution across tightly coupled nested Ones:
+this spine holds the cross-layer non-identity gate only.
+local formation / unit question    -> `Core_Law/SRT_One_Formation.md`
+higher-order realization           -> `Core_Law/SRT_Collective_Selection.md`
+```
+
+That split follows the receiving files' own declared boundaries;
+`SRT_Collective_Selection.md` states it does not define `One / Selection-position`.
 
 ---
 
