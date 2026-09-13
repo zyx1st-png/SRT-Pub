@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-12
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-13
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-12
-source_commit: 2ebe55a5
-source_branch: theory/post957-spine-landing-20260913
+generated: 2026-09-13
+source_commit: 76f1f395
+source_branch: theory/post959-l0-thinning-clean-20260913
 source_dirty: false
-inputs_digest: c4c24424beeaaa1f
+inputs_digest: ad02fcfbc9cbe74a
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: c4c24424beeaaa1f
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-12 |
-| 来源 commit | `2ebe55a5` |
-| 来源分支 | `theory/post957-spine-landing-20260913` |
+| 生成日期 | 2026-09-13 |
+| 来源 commit | `76f1f395` |
+| 来源分支 | `theory/post959-l0-thinning-clean-20260913` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
