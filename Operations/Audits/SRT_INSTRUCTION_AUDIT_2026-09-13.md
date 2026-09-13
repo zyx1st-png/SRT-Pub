@@ -46,6 +46,7 @@ AGENTS: 235 → 100 lines. Nine skill entrypoints: 36,731 → 13,598 characters 
 - Context bundles regenerated from changed sources; freshness verified all nine generated package files byte-for-byte. Builder regression tests passed.
 - Complete governance preflight on a detached, clean baseline: failures=0.
 - Complete governance preflight with the scoped tracked patch and new skill reference applied to that clean worktree: failures=0; frontmatter new warnings=0.
+- After incorporating remote main `2d3d9e47`, clean-worktree governance preflight with `--strict-split-metadata` passed (failures=0), as did PR-local frontmatter, baseline monotonicity (added=0), all nine context-package freshness checks and diff whitespace checks.
 - Original local worktree preflight: failures=1 in frontmatter. Its new warnings concern pre-existing ignored local files: exports, virtualenv/cache documentation and local runtime overlays. No warning-baseline expansion or unrelated cleanup was made.
 - Existing report-only NODE-BOOK-BACKFLOW warning remains. Editing the five tracked .claude skill files also produces nonblocking local-noise warnings; the checker reports errors=0.
 - Independent read-only audit covered 14 original references and five Claude skill entrypoints, and its high-confidence findings were addressed.
