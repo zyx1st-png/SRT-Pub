@@ -139,7 +139,7 @@ def test_fail_loud() -> None:
         ("audit status block", "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md",
          B.guard_p1_t07),
         ("theorem body", "Core/SRT_Core_21b_Constitutive_Theorems.md", B.guard_p1_t07),
-        ("STATUS embargo", "STATUS.md", B.guard_dqo),
+        ("d/q/o embargo", "Governance/SRT_DOWNSTREAM_GUARDRAILS.md", B.guard_dqo),
         ("hook audit table", "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
          B.guard_hooks),
         ("claim ladder section", "SRT_AI_START.md", B.build_claim_discipline),
@@ -420,17 +420,22 @@ def test_provenance_is_content_digest() -> None:
     """真实性判据必须是输入闭包的内容摘要，且不得依赖 commit 祖先关系。
 
     祖先校验在 squash / rebase 合并下必然失效（那个 commit 会被重写或丢弃），
-    属于"PR 内绿、合入即红"。而且它只覆盖显式正文列表，改 STATUS.md、审计文件或
+    属于"PR 内绿、合入即红"。而且它只覆盖显式正文列表，改护栏来源、审计文件或
     生成脚本都绕得过去。"""
     inputs = B.all_inputs()
     check("输入闭包非空", len(inputs) > 20, f"got {len(inputs)}")
 
     # 隐式输入必须在闭包内——这些是旧版漏掉的。
-    for path in (B.GENERATOR_SELF, "STATUS.md",
+    for path in (B.GENERATOR_SELF, "Governance/SRT_DOWNSTREAM_GUARDRAILS.md",
                  "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md",
                  "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
                  "CANONICAL_REGISTRY.md", "SRT_AI_START.md"):
         check(f"输入闭包含 {path}", path in inputs)
+
+    # 反向固定：STATUS.md 是仓库里 churn 最高的文件，把它的字节算进摘要意味着
+    # 一次纯状态更新就让九个包全部过期。d/q/o 护栏迁出后它不再是护栏来源，
+    # 也就不该回到闭包里。
+    check("输入闭包不含 STATUS.md", "STATUS.md" not in inputs)
     for path in B.SPINE:
         check(f"输入闭包含正文 {path}", path in inputs)
 
