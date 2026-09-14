@@ -73,17 +73,28 @@ version: 6.0 (Hybrid Constitution)
 
 ## 元公理对（Meta-Axiom Pair）
 
-> 以下两条是所有形式公理的**前置哲学前提**，不由形式公理推导，而是使形式公理得以成立的基础。它们不能被证伪，但可以被替代——替代它们将产生与 SRT 根本不同的理论。
+> **2026-09-14 Selection-totality override**：本节只固定形式层如何服从当前 L0 / Spine。任何较早的 `κ₀`、`ε_pg`、`Align` 或 `Ĝ_θ` 强读法，都不得反向定义 primitive Selection。
 
-**MA-1（原初方向性 / Primordial Directionality）**：不存在"第一次选择发生在什么时刻"——时间是选择事件的副产品，不先于选择（Ax-L0-Bootstrap-C2）。但 L₀ 不是完全对称的：存在不可约的原初曲率 $\kappa_0 > 0$，使 $\hat{G}^*$ 的不动点得以成立，这是选择得以发生的结构前提，不是历史积累的结果（T-L0-Kappa0）。
+**MA-1（选择一元生成 / Selection-totality）**：SRT 的 primitive 不是“潜在域 + 一个后来执行选择的算子”，而是 Selection 本身作为现实的生成方式。最低分析负担仍分为 O0（开放 / 非最大中性）与 S0（实际化），但两者是同一 primitive Selection 的共原初分面，不是两个机制。
 
-$$\boxed{\text{没有第一时刻，但有原初方向}}$$
+```text
+O0 before S0: NO
+S0 before O0: NO
+κ₀ causes first Selection: NO
+ε_pg defines O0: NO
+```
 
-**MA-2（有界视角主义 / Bounded Perspectivalism）**：不存在从所有视角之外看 L₀ 的"绝对真理"。所有算子 $\hat{G}_\theta$ 都是对 L₀ 的视角性压缩，具身约束使任何算子都无法获得无视角的完整读取（Ax-Core-A4）。但视角并非等价：$\theta$ 与 L₀ 原初曲率 $\kappa_0$ 的**对齐度** $\mathrm{Align}(\theta, \kappa_0)$ 可比较，对齐度更高的视角追踪 L₀ 的不可逆结构更精确，d 值（Ax-ONT-3）正是对齐度的操作化度量。
+`κ₀`、`ε_pg` 与其他方向 / 代价结构可继续作为更强形式 realization 候选；它们相对于 primitive non-flatness 的必要性与继承关系另行裁决。
 
-$$\boxed{\text{没有绝对无视角真理，但有更高对齐度的视角}}$$
+**MA-2（有限位置 / Bounded Positionality）**：primitive Selection 是有限位置索引的，但有限位置不等于已经形成的具身算子、One、Selection-position、Bearer 或主体。`Ĝ_θ`、`Align(θ,κ₀)`、d-value 等只在其各自已声明的 formed / formal / domain realization 中使用；它们不构成 primitive Selection 的先在视角者。
 
-* **Cross-ref**: Ax-Core-A1（选择优先性）; Ax-Core-A4（具身约束）; T-Core-A1C2（L₀ 最小非中性）; `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 形式化）; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`（时间无前序性）; `D_VALUE_ALIGNMENT §4.4`（d 作为对齐度）; `Philosophy/SRT_HardProblem_Epistemology.md §一`（SRT 认识论地位：认知操作系统与可供性标准）; `Philosophy/SRT_HardProblem_Epistemology.md §二`（Ax-F-05 与 MA-2 张力消解）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，MA-1/MA-2 与 L₀ 实在性的结构一致性）。
+```text
+finite positionality != prior operator entity;
+finite positionality != formed evaluative standpoint;
+formed operator perspective may be compared only under its declared model.
+```
+
+* **Cross-ref**: `Core_Law/SRT_L0_Metaphysics.md`; `Core/SRT_Core_21_Minimal_Axioms.md`; `Core_Law/SRT_Generative_Ontology_Spine.md`; `Core/SRT_Core_12a_Ontology_L0L1.md`.
 
 ---
 
@@ -92,29 +103,40 @@ $$\boxed{\text{没有绝对无视角真理，但有更高对齐度的视角}}$$
 
 ## I. Ontological Trinity (本体论三位一体)
 
-### Ax-Core-A1: Existential Priority
-**Formal Definition**: Existence is the image of selection on the latent domain.
-$$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
-$$\exists x \iff x \in \mathrm{Image}(\hat{G}_\theta[L_0])$$
-* **Implication**: 存在并非背景，而是选择行为输出的结果。
+### Ax-Core-A1: Selection-Actuality Identity
+**Canonical Definition**: determinate manifest existence is the actuality aspect of Selection, not an ontically different product emitted by an operator acting on a prior warehouse.
 
-### T-Core-A1C1: Non-Ergodic Presence
-**Deductive Statement**: In non-ergodic systems, presence is restricted to selected states.
-$$\text{Presence}(σ) \iff σ \in \hat{G}_\theta[L_0]$$
-* **Implication**: 未被选择的状态仍停留于潜在叠加态，缺乏当下性。
+```text
+manifest existence
+= Selection under determinate actuality.
+```
 
-### T-Core-A1C2: Proto-Gradient of L₀（L₀ 的最小非中性）
-**Deductive Statement**: The latent domain L₀ is not neutral; it carries a minimum broken symmetry — a formal asymmetry favouring non-self-erasing configurations. It is **not** a content-level gradient pointing at "order".
-$$L_0 \neq \text{symmetric}: \quad \nabla_{\text{non-self-erasure}}(L_0) \equiv \varepsilon_{pg} > 0$$
-$$P(\text{selection} \to \sigma_{B \geq 2}) > P(\text{selection} \to \sigma_{B \leq 1})$$
-* **Implication**: 选择不在完全对称的空间中发生；L₀ 具有最小非中性，其内容是**保留后续兼容选择的配置（选后分叉数 $B \geq 2$）承受更低的本体论摩擦、更可被接续**，自我抹除配置（$B \leq 1$）相反。「偏向秩序」是 L₁ 对这条不对称之累积结果的回读命名，不是 L₀ 自带的内容性倾向。
-* **推导来源**：从 A1（"选择先于存在"）+ L₀ 的最小非中性可推导，不是新增公设。**注意**：本条早期版本把推导来源写作「L₀ 形而上学第一命题（"选择内在地趋向秩序"）」，该表述已被 2026-04-11 硬化裁决取代（见下方精确化注），不再作为可独立引用的命题存在。
-* **边界**：proto-gradient 是 L₀ 的最小结构偏置，**不是**丰富的价值地图（那需要 L₁），**不是**吸引子（吸引子由选择历史涌现），**也不是**预置在 L₀ 中的先验目标（`Core_Law/SRT_L0_Metaphysics.md §七.11 潜在域预置论`明确排除该读法）；只是：使非自我抹除方向上的累积为结构真，而非随机偶然。
-* **与 T_dir 的连接**：proto-gradient 是 T_dir 的本体论地基——T_dir 度量的正是系统对自身 proto-gradient 方向的可读性（见 `_SRT_T_DIR_CANONICAL.md §2, §12`）；d > 0 是访问 proto-gradient 的必要条件，但 d > 0 不自动推出 T_dir > 0。
-* **精确化注（2026-04-11 硬化；2026-08-11 已写入主句）**：ε 的正确刻画是**形式性不对称**，而非内容性的「朝向秩序」梯度。精确表述：局部可扩展性非零的配置（选后分叉数 $B \geq 2$，即后续兼容选择仍不止一种）在 L₀ 中具有更高结构权重，相较于自我抹除配置（$B \leq 1$，在发生时消去后续选择可能性）。「秩序」是 L₁ 观察者对 ε 所产生的选择积累模式的**回读命名**，L₀ 本身不承载「秩序」作为内容性属性。**2026-08-11 处置**：本注此前只是追加在旧主句之后，旧主句（"a proto-gradient biasing selection toward order" / "选择内在地偏向秩序方向" / "使『选择趋向秩序』为结构真"）仍可被独立检索和引用；现已按本注改写主句，旧表述 **superseded**，不再作为可引用断言存在。历史记号 $\nabla_{\text{order}}$ 是 $\nabla_{\text{non-self-erasure}}$ 的简写，遇到旧文件中的该记号仍按此读。
-* **记号区分注（2026-04-14）**：本条目的 $\varepsilon$ 此后记为 $\varepsilon_{pg}$（proto-gradient），与 Ax-Op-03 竞争归一化公式中的正则化常数 $\varepsilon_{reg}$ 区分。$\varepsilon_{reg}$ 可被读作 $\varepsilon_{pg}$ 在具体算子实现层的回声——当所有竞争输入归零时，算子仍有非零输出倾向，这与 L₀ 的非自我抹除偏置在形式上同构——但此同构是**结构类比**，不是**本体论等同**。升级为硬联结需要独立论证（当前无）。见 `_SRT_SYMBOL_TABLE.md`。
-* **与节律/振动的关系注（2026-04-14）**：$\varepsilon_{pg}$ 是静态方向底板，不自带时间频率或原初振荡。宇宙中节律的普遍性不来自 L₀ 的先验周期性，而来自有限算子在 $\Psi_f$ 预算约束下的分时实现——连续密集锚定的总代价超出 $E_{avail}$ 时，间歇/脉冲化成为通用可行策略。$\varepsilon_{pg}$ 给方向，$\Psi_f$ 给代价，节律来自有限算子在代价约束下对方向的分时实现。见 T-Scale-Rhythm-1。
-* **与“原初意识”的关系注（2026-04-14）**：$\varepsilon_{pg}$ **不是意识本身**，而是意识在 \(L_0\) 侧的最薄方向种子。若使用“原初意识”一词，当前更稳的定义应是：\(\varepsilon_{pg}\) 经由非平凡 \(\hat{G}_\theta\) 在 \(L_1\) 中被锚定，并伴随 \(\Psi_f>0\)、\(d>0\) 与最小 \(L_2\) 稳定闭合后，形成的最薄主观切片（bare-consciousness-side unfolding）。因此，原初意识是 \(\varepsilon_{pg}\) 在 \(L_1\) 层的展开，**不是** \(\varepsilon_{pg}\) 与 consciousness 的直接同一。见 `Philosophy/SRT_Consciousness_Conditions.md` 与 `Core/SRT_Core_12b_Ontology_L2.md §κ_{c1}`。
+Where a declared formal model uses `Ĝ_θ`, range / image notation is allowed only as a representation of realised actuality in that model. It is not the metaphysical definition of primitive Selection.
+
+* **Implication**: “Selection precedes existence” is pedagogical ordering, not primitive chronology or a factory/product relation.
+
+### T-Core-A1C1: Model-Relative Presence
+**Scoped Statement**: in a declared non-ergodic model, current presence may be represented by the states realised / operative under that model's Selection map.
+
+$$\text{Presence}_{M}(σ) \iff σ \in \mathrm{Realized}_{M}(\text{Selection})$$
+
+This does **not** entail that every non-manifest alternative is a completed object stored in an absolute latent inventory. Selection-relative background / unexhausted openness is sufficient at the metaphysical level.
+
+### T-Core-A1C2: Minimum Non-Flatness Boundary
+**Canonical Boundary**: primitive Selection is not maximally indifferent / role-flat, but this minimum non-flatness does not by itself specify a continuation, non-self-erasure, option-count, value or moral gradient.
+
+```text
+primitive non-flatness: YES;
+B >= 2 primitively preferred over B <= 1: NO;
+continuation preference at O0: NO;
+terminal Selection defective: NO;
+ε_pg = O0 by definition: NO;
+ε_pg as universal T_dir ground: NO.
+```
+
+Historical `ε_pg` proto-gradient formulas remain lineage / stronger-realization material unless separately re-established under their own owner. Their exact inheritance from primitive non-flatness is OPEN.
+
+`T_dir` must therefore take any reference direction from an independently typed downstream relation; this theorem no longer supplies a universal hidden value direction.
 
 ### T-Core-A1C3: Cross-Scale Continuity of G（G 的跨尺度连续性）
 **新增（2026-04-08）**：对 G 的本体论地位的跨尺度澄清。
