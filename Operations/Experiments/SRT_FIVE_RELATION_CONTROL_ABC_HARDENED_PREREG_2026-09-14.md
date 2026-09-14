@@ -1,7 +1,8 @@
 ---
 id: SRT-EXP-FIVE-RELATION-CONTROL-ABC-HARDENED-PREREG-20260914
 type: experiment_spec
-status: preregistered_hardened
+status: active
+record_stage: preregistered_hardened
 date: 2026-09-14
 layer: meta
 epistemic_layer: research_program
