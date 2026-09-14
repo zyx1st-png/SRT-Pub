@@ -19,7 +19,7 @@ tags: [Experiment, Selection, Standing, Shaping, Bearing, Revision, ControlA, Co
 
 # Five-relation minimum tool — original Control A / B preregistration
 
-> **SUPERSEDED:** use `Operations/Experiments/SRT_FIVE_RELATION_CONTROL_ABC_HARDENED_PREREG_2026-09-14.md` for current execution. This file is provenance only.
+> **SUPERSEDED:** use `Operations/Experiments/SRT_FIVE_RELATION_CONTROL_ABC_HARDENED_PREREG_2026-09-14.md` for current execution. This file remains provenance only.
 
 Original intent:
 
@@ -28,7 +28,7 @@ Control A — matched performance with different consequence/revision topology;
 Control B — matched standing/shaping with different generator-revision access.
 ```
 
-Strongest-rival review later changed execution status to:
+Strongest-rival review changed execution status:
 
 ```text
 Control A = retain after stricter matching;
