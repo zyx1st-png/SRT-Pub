@@ -76,6 +76,7 @@ Read:
 - `Operations/Audits/SRT_SELECTION_TOTALITY_SPINE_RETYPING_MATRIX_2026-09-14.md`
 - `Operations/Audits/SRT_SELECTION_TOTALITY_P0_REFERENCE_CONSISTENCY_MATRIX_2026-09-14.md`
 - `Operations/Audits/SRT_SELECTION_TOTALITY_10_OWNER_PRELANDING_INDEPENDENT_REVIEW_2026-09-14.md`
+- `Operations/Audits/SRT_SELECTION_TOTALITY_WAVE_B_INDEPENDENT_REVIEW_2026-09-15.md`
 
 Independent pre-landing result:
 
@@ -114,7 +115,7 @@ Canonical migration has already landed in:
 
 Wave A normal Governance Preflight passed after deterministic context-bundle regeneration.
 
-### Wave B — owner edits landed; derivative closure pending
+### Wave B — owner edits landed, independent review = REVISE
 
 Atomic Wave B semantic-owner commit:
 
@@ -130,28 +131,60 @@ It edits exactly:
 
 Temporary write-workflow / patch-helper machinery has been removed; the normal governance workflow is restored.
 
-Normal Governance Preflight after Wave B showed:
+Normal Governance Preflight after Wave B showed base main, PR-local frontmatter and baseline monotonicity PASS, with split freshness failing for three derived reading surfaces. Do **not** close those derivatives yet: the independent semantic review found a blocking Core01 half-migration that should be repaired first.
+
+Independent Wave B verdict:
 
 ```text
-base main governance: PASS
-PR-local frontmatter: PASS
-frontmatter baseline monotonicity: PASS
-split freshness: FAIL only for three regenerated-reading surfaces
+Core12a: PASS as formal / realization owner
+Reference Axioms: PASS with current scope guard
+Reference Ontology: PASS with current scope guard
+Reference Dynamics: PASS with current scope guard
+Core01: REVISE / BLOCKING RESIDUALS
+Wave B overall: REVISE
+Wave C: HOLD
 ```
 
-Pending real split/body closure:
+Blocking Core01 residuals include:
+
+```text
+A4 still back-defines all Selection through embodied G-hat / hardware;
+A5 still identifies L2 fixed points with Normative Closure;
+A6 still presents information integration as universal existence criterion;
+A7 still makes Fitness the objective of Selection;
+A10 still asserts universal eternal L0 latent trace / spiritual-topology consequence;
+A12 still derives all operators from a primordial operator entity;
+A11C1 still carries theorem-strength consciousness bridge language.
+```
+
+Required bounded repair remains inside the existing Core01 primary owner; do not expand the 10-owner scope.
+
+Minimum direction:
+
+```text
+A4 -> formed / embodied operator finitude;
+A5 -> retained historical efficacy; fixed point = strong stabilization realization;
+A6 -> information-integration realization hypothesis;
+A7 -> domain-specific fitness-guided formed-operator hypothesis;
+A8/A9 -> scoped bridge / realization hypotheses;
+A10 -> conditional retained history; universal eternal imprint withdrawn / OPEN;
+A11 -> model-scoped friction / stability relation;
+A12 -> formed-operator continuity hypothesis, no primordial operator entity;
+A11C1 -> conditional consciousness bridge hypothesis.
+```
+
+Only after this Core01 repair passes independent diff review should the derived closure run:
 
 - `Core/Axioms_Split/`
 - `Core/Ontology_L0L1_Split/`
 - `Core_Law/Reference_Dynamics_Split/`
+- context bundles.
 
-The repository already provides the deterministic generator `scripts/create_reading_split.py`; use it rather than metadata-only refresh or hand editing.
-
-Then regenerate / check context bundles with `scripts/build_srt_context_bundles.py`, rerun the normal Governance Preflight, and only then perform the independent Wave B semantic review.
+The repository already provides deterministic `scripts/create_reading_split.py`; use it rather than metadata-only refresh or hand editing.
 
 ### Wave C — not started
 
-Do not start until Wave B closure and independent content review pass.
+Do not start until Wave B semantic repair, derivative closure and independent content review pass.
 
 Planned bounded Wave C owners:
 
@@ -180,8 +213,6 @@ Do not lower author gates, canonical routing, freshness checks, warning baseline
 
 Generated surfaces must be rebuilt by their owning deterministic generator. Metadata-only freshness or manual hash repair is not an acceptable substitute.
 
-The exact Wave B closure command chain has been recorded in the #976 Conversation.
-
 ## Stop / next gate
 
 Theory discovery for this adjustment remains at stop condition.
@@ -191,9 +222,12 @@ Do not reopen primitive ontology exploration or expand the primary owner set wit
 Next bounded action:
 
 ```text
-full-worktree Wave B derivative closure
+full-worktree / Codex Core01 A4-A12 semantic repair
+-> independent Core01 diff review
+-> regenerate three split surfaces
+-> regenerate / check context bundles
 -> normal Governance Preflight green
--> independent Wave B semantic review
+-> final Wave B semantic review
 -> only then decide whether Wave C may start.
 ```
 
