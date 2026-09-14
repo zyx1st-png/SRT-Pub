@@ -14,59 +14,46 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_DIRECTION_2026-09-14.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_POST_FABLE_2026-09-14.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md
-  - Operations/Audits/SRT_POST_FABLE_RECONSTRUCTION_GATE_2026-09-14.md
-  - Operations/Audits/SRT_PRIMITIVE_GENERATIVITY_CONSTITUTIVE_NORMATIVITY_PRESSURE_TEST_2026-09-14.md
-  - Operations/Audits/SRT_PRIMITIVE_GENERATIVITY_HUME_DISSOLUTION_AUTHOR_GATE_2026-09-14.md
   - Operations/Audits/SRT_GENERATIVITY_FIRST_NORMATIVITY_PRESSURE_TEST_2026-09-14.md
   - Operations/Audits/SRT_RECURRENT_GENERATIVITY_OWNER_PLACEMENT_AUDIT_2026-09-14.md
-tags: [Handoff, Ground, PrimitiveGenerativity, HumeGap, Generativity, CrossPosition]
+  - Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_WHOLE_POSITION_PRESSURE_TEST_2026-09-14.md
+  - Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md
+tags: [Handoff, Ground, PrimitiveGenerativity, HumeGap, Generativity, CrossPosition, WholePosition, AuthorGate]
 ---
 
 # Session continuation
 
-Continue PR #976 on branch `theory/ground-cycle-preobject-differentiation-20260914`.
+Continue Draft PR #976 on branch `theory/ground-cycle-preobject-differentiation-20260914`.
 
 ## Controlling read order
 
 Read first:
 
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
-- `Operations/Audits/SRT_GENERATIVITY_FIRST_NORMATIVITY_PRESSURE_TEST_2026-09-14.md`;
-- `Operations/Audits/SRT_RECURRENT_GENERATIVITY_OWNER_PLACEMENT_AUDIT_2026-09-14.md`.
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`
+2. `Operations/Audits/SRT_GENERATIVITY_FIRST_NORMATIVITY_PRESSURE_TEST_2026-09-14.md`
+3. `Operations/Audits/SRT_RECURRENT_GENERATIVITY_OWNER_PLACEMENT_AUDIT_2026-09-14.md`
+4. `Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_WHOLE_POSITION_PRESSURE_TEST_2026-09-14.md`
+5. `Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md`
 
-Then use the earlier records as historical reconstruction context:
+Earlier post-Fable / primitive-generativity records remain historical reconstruction context, but do not override the newer generativity-first author direction.
 
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_DIRECTION_2026-09-14.md`;
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_POST_FABLE_2026-09-14.md`;
-- `Operations/Audits/SRT_POST_FABLE_RECONSTRUCTION_GATE_2026-09-14.md`;
-- `Operations/Audits/SRT_PRIMITIVE_GENERATIVITY_CONSTITUTIVE_NORMATIVITY_PRESSURE_TEST_2026-09-14.md`;
-- `Operations/Audits/SRT_PRIMITIVE_GENERATIVITY_HUME_DISSOLUTION_AUTHOR_GATE_2026-09-14.md`.
-
-The earlier author-gate preparation is no longer controlling where it grounds O1/O2 primarily in consequence-bearing standing or non-outsourcing. The newer author adjudication shifts the reconstruction to a **generativity-first** basis.
-
-## Author direction now fixed
+## Author direction already fixed
 
 Preserve all of the following:
 
 - minimum non-neutrality and actualising Selection are co-primitive burdens of generativity;
-- do not model them as a temporal sequence; time is not pregiven at the primitive layer;
-- primitive directionality is not identical with fixed-position `good / bad`;
-- `better / worse` is position-relative, while primitive directionality is more basic than any one fixed position;
-- a sufficiently justified whole may later become an evaluative position / scale, but this is still an open research programme;
-- for an already formed position, continuation that preserves / enlarges its participation in genuine generative Selection can carry a position-relative structural preference;
-- do not project that formed-position preference backward into a primitive universal continuation bias;
-- do not restore the old strong epsilon theorem;
-- consequence-bearing and non-outsourcing are not the primitive ground of normativity;
-- their importance is derivative from how they preserve, weaken, close, outsource, or hollow out Selection as ontic generation;
-- distinguish a genuine Selection event from a recurrent generative position: terminal Selection can remain genuine;
-- rebuild O1 around position-relative generative strengthening / weakening using non-evaluative structural predicates first;
-- rebuild responsibility from the relation between attributable generative participation and later participation in the reality partly generated;
-- do not define `ought` as retrieval of the one accurate pregiven option;
-- continue the Hume project as `Dissolution Rather Than Derivation`, now on a generativity-first basis.
+- they are not temporally ordered; time is not pregiven at the primitive layer;
+- O0 primitive directionality is more basic than fixed-position good / bad;
+- better / worse is position-relative;
+- formed-position continuation can carry a position-relative generative preference without restoring primitive strong epsilon;
+- consequence-bearing / non-outsourcing are derivative diagnostics, not the primitive ground of normativity;
+- a genuine Selection event does not require continuation; terminal Selection remains possible;
+- O1 should be rebuilt around position-relative generative strengthening / weakening;
+- responsibility should be rebuilt from attributable generative participation plus stronger agency conditions;
+- ought is not retrieval of one correct pregiven option;
+- Hume remains `Dissolution Rather Than Derivation`.
 
-## Current strongest noncanonical reconstruction
-
-Use the following distinction as the present machine-side working model:
+## Current machine-side architecture
 
 ```text
 G-event
@@ -77,78 +64,90 @@ G-position
   partly transformed by prior Selection
 ```
 
-Candidate structural dimensions for recurrent generativity:
+Recurrent generativity remains a cross-owner relation:
 
 ```text
-G1 selective efficacy
-G2 re-entry of generated difference
-G3 reorganisation of the same formed position
-G4 renewed genuine selectivity rather than externally fixed execution
+Selection -> event-level actualising efficacy;
+One / Selection-position -> formed attribution and re-entry path;
+Stable ISP -> stronger recurrent / continued-selectable standing;
+generative reselectability / B13 -> stronger rule / boundary / candidate-generation revision;
+Bearer -> prospective stake route;
+agency -> stronger responsibility route.
 ```
 
-Owner-placement result:
+Do not invent a new universal ontology layer unless owner pressure later requires it.
+
+## New cross-position result awaiting author adjudication
+
+The new pressure test recommends:
 
 ```text
-G1 event-level efficacy -> Selection semantics;
-G1 formed attribution -> One / Selection-position;
-G2 weak re-entry -> One-compatible;
-G2 same-position recurrence -> stronger continuity needed;
-G3 strong reorganisation -> not One, not guaranteed by Stable ISP;
-G3 closest current research carrier -> generative reselectability / B13 health layer;
-G4 recurrent standing -> Stable ISP;
-G4 event authenticity -> Selection criteria;
-Bearer -> stronger prospective stake route, not universal O1 ground;
-agency -> stronger responsibility route, not implied by Selection-position.
+G1 no automatic global standpoint;
+G2 no primitive position privilege;
+G3 whole-position must be ontologically formed, not declared;
+G4 whole-relative better/worse may be real but is not automatically sovereign over members;
+G5 relational generativity is not additive;
+G6 generative substitution / objectification is a distinct structural failure mode;
+G7 cross-position comparison begins as a partial order, not a universal scalar;
+G8 preserve-every-position morality is rejected;
+G9 actualisation closure != generative closure;
+G10 generative non-usurpation is promising as a research direction only.
 ```
 
-Therefore recurrent generativity is presently best treated as a **cross-owner relation**, not a new universal ontological layer.
-
-Current safe status:
+Hard-case guards already tested:
 
 ```text
-O0 primitive non-maximal indifference:
+parental / educational temporary constraint != usurpation automatically;
+surgery / pathology shows local O1 != moral standing;
+self-sacrifice is possible;
+irreversible commitment can be generative;
+domination can be locally generative while relationally substitutive;
+collective emergency may justify scoped asymmetry without creating permanent sovereignty;
+terminal Selection remains genuine.
+```
+
+## Current status
+
+```text
+O0 primitive directional generativity:
   author-fixed direction / positive formulation still under reconstruction
 
-formed-position-relative continuation / generativity preference:
-  accepted as legitimate direction
+O1a local position-relative generative better/worse:
+  strong candidate
 
-O1 local better/worse-for:
-  strong constitutive candidate when indexed to independently specified
-  recurrent generative relations
+O1b cross-position relational typing:
+  strong candidate
 
-O1 relational / multi-position ordering:
-  OPEN
+O1c whole-relative better/worse:
+  candidate only after independent whole-position gate
 
-O2-R answerability:
-  strong constitutive candidate from generative source-role + later uptake / participation,
-  but full responsibility still needs stronger agency conditions
+O2a answerability / responsibility:
+  candidate after stronger agency conditions
 
-O2-D determinate action-guiding ought:
-  OPEN
+O2b normative constraint on how positions rewrite shared generative relations:
+  promising research direction via anti-objectification / non-usurpation
 
-whole-relative ordering:
-  OPEN
+O2c all-things-considered conflict resolution across real positions and scales:
+  OPEN / HOLD
 
 full Hume dissolution:
   OPEN
+
+canonical landing:
+  HOLD
 ```
 
-## Next task
+## Next gate
 
-Do **not** resume canonical landing yet.
+Do **not** edit canonical yet.
 
-The next bounded theory task is now:
+Next step is author adjudication of `SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md`.
 
-> What relation among multiple generative positions can make wider-scope `better / worse` non-arbitrary without simply privileging survival, equal preservation, maximum option count, maximum local generativity, the largest scale, or a hidden moral goal?
+If accepted, create a noncanonical author adjudication and only then reassess:
 
-Pressure-test at least:
-
-1. local generativity that destroys other positions;
-2. nested positions where the larger scale depends on lower-scale Selection;
-3. local sacrifice for a larger relation;
-4. predatory / malignant / coercive generators;
-5. whether `协调 / 不外包 / 可再选择` are diagnostics of a deeper cross-position relation rather than the normative foundation themselves;
-6. what qualifies a whole as a genuine evaluative position rather than an observer-chosen aggregate;
-7. whether cross-position generative compatibility can support stronger O2 without becoming an optimization rule over pregiven options.
+1. whether O1a/O1b are stable enough for an owner-level landing matrix;
+2. whether whole-position needs a dedicated owner gate or can inherit One / Collective Selection routing;
+3. whether O2b should become a separate research line from O2c;
+4. how existing `协调 / 不外包 / 可再选择`, political legitimacy, domination, rights and collective-selection bridge material should inherit the new grounding without being promoted to primitive morality.
 
 No canonical edit is authorized by this handoff.
