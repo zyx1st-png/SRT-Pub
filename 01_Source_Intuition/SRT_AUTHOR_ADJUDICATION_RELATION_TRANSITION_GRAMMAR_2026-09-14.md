@@ -1,3 +1,28 @@
+---
+id: SRT-AUTHOR-ADJUDICATION-RELATION-TRANSITION-GRAMMAR-20260914
+type: source_intuition
+status: active
+record_stage: legacy_recovery_relation_transition_author_adjudication
+layer: source
+epistemic_layer: author
+claim_mode: author_adjudication
+canonical: false
+ai_do_not_use_for_definition: true
+date: 2026-09-14
+research_mode: U
+root_question: What relation-transition burden from legacy SRT should survive without expanding the five-relation ontology?
+comparative_claim: none
+named_comparator: null
+n_mode_triggered: false
+dependency:
+  - Operations/Audits/SRT_LEGACY_RECOVERY_MINIMALITY_M0_M2_2026-09-14.md
+  - Operations/Audits/SRT_LEGACY_RECOVERY_TRANSITION_PRESSURE_PASS_2026-09-14.md
+  - Core_Law/SRT_One_Formation.md
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - Core/SRT_Core_21c_Bridge_Hypotheses.md
+tags: [AuthorAdjudication, LegacyRecovery, RelationTransition, Standing, Shaping, Objecthood]
+---
+
 # SRT Author Adjudication — Relation Transition Grammar
 
 Date: 2026-09-14  
