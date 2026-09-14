@@ -16,8 +16,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          # Full history is required for changed-file attribution, base-health
-          # comparison, baseline monotonicity, and context-bundle provenance.
           fetch-depth: 0
 
       - name: Set up uv
@@ -27,6 +25,19 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+
+      - name: Generate context bundles for artifact export
+        if: github.event_name == 'pull_request'
+        run: uv run python scripts/build_srt_context_bundles.py
+
+      - name: Upload generated context bundles
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-context-bundles
+          path: Operations/Context_Bundles/
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Check base main governance health
         id: base_governance
