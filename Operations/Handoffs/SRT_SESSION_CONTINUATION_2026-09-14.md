@@ -18,7 +18,9 @@ dependency:
   - Operations/Audits/SRT_RECURRENT_GENERATIVITY_OWNER_PLACEMENT_AUDIT_2026-09-14.md
   - Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_WHOLE_POSITION_PRESSURE_TEST_2026-09-14.md
   - Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md
-tags: [Handoff, Ground, PrimitiveGenerativity, HumeGap, Generativity, CrossPosition, WholePosition, AuthorGate]
+  - Operations/Audits/SRT_GENERATIVE_NON_USURPATION_CONSTITUTIVE_OUGHT_PRESSURE_TEST_2026-09-14.md
+  - Operations/Audits/SRT_GENERATIVE_NON_USURPATION_CONSTITUTIVE_OUGHT_AUTHOR_GATE_2026-09-14.md
+tags: [Handoff, Ground, PrimitiveGenerativity, HumeGap, Generativity, CrossPosition, WholePosition, NonUsurpation, ConstitutiveOught, AuthorGate]
 ---
 
 # Session continuation
@@ -34,6 +36,8 @@ Read first:
 3. `Operations/Audits/SRT_RECURRENT_GENERATIVITY_OWNER_PLACEMENT_AUDIT_2026-09-14.md`
 4. `Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_WHOLE_POSITION_PRESSURE_TEST_2026-09-14.md`
 5. `Operations/Audits/SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md`
+6. `Operations/Audits/SRT_GENERATIVE_NON_USURPATION_CONSTITUTIVE_OUGHT_PRESSURE_TEST_2026-09-14.md`
+7. `Operations/Audits/SRT_GENERATIVE_NON_USURPATION_CONSTITUTIVE_OUGHT_AUTHOR_GATE_2026-09-14.md`
 
 Earlier post-Fable / primitive-generativity records remain historical reconstruction context, but do not override the newer generativity-first author direction.
 
@@ -77,9 +81,9 @@ agency -> stronger responsibility route.
 
 Do not invent a new universal ontology layer unless owner pressure later requires it.
 
-## New cross-position result awaiting author adjudication
+## Cross-position package still awaiting explicit author adjudication
 
-The new pressure test recommends:
+The previous author gate recommends:
 
 ```text
 G1 no automatic global standpoint;
@@ -91,20 +95,70 @@ G6 generative substitution / objectification is a distinct structural failure mo
 G7 cross-position comparison begins as a partial order, not a universal scalar;
 G8 preserve-every-position morality is rejected;
 G9 actualisation closure != generative closure;
-G10 generative non-usurpation is promising as a research direction only.
+G10 generative non-usurpation remains a research direction, not a universal moral theorem.
 ```
 
-Hard-case guards already tested:
+The user has not yet supplied an explicit accept / reject adjudication of G1-G10 in repository-governance terms. Do not silently convert them into author-fixed claims.
+
+## New non-usurpation pressure result
+
+Conditional on the generativity-first and cross-position reconstruction, the strongest current machine-side result is:
 
 ```text
-parental / educational temporary constraint != usurpation automatically;
-surgery / pathology shows local O1 != moral standing;
-self-sacrifice is possible;
-irreversible commitment can be generative;
-domination can be locally generative while relationally substitutive;
-collective emergency may justify scoped asymmetry without creating permanent sovereignty;
-terminal Selection remains genuine.
+participant-status consistency:
+A relation cannot coherently count Y as a load-bearing generative participant
+while recurrently replacing the Selection contribution by which Y participates.
 ```
+
+This supports a three-way O2 split:
+
+```text
+O2-C
+constitutive ought / relation-integrity norm
+
+O2-A
+attributable answerability under stronger agency conditions
+
+O2-M
+all-things-considered moral / deontic conflict resolution
+```
+
+Current disposition:
+
+```text
+O2-C: STRONG CANDIDATE
+O2-A: STRONG CANDIDATE / AGENCY-GATED
+O2-M: OPEN
+```
+
+A limited dominance rule is also a strong candidate:
+
+```text
+If two feasible transitions accomplish the same declared task,
+and one is no worse for every admitted constitutive position / relation
+while strictly reducing unnecessary generative substitution for at least one,
+with no independently established higher-order loss,
+then the less-usurping transition structurally dominates.
+```
+
+Where real tradeoffs remain, STOP rather than invent a hidden scalar.
+
+## Anti-objectification refinement
+
+Current strongest research direction:
+
+```text
+generative objectification
+=
+a relation continues to count Y as a participant
+while Y's effective future source-role is recurrently displaced to X or another source.
+```
+
+This is a structural participant-status failure candidate.
+
+Do not equate it automatically with complete moral wrongness.
+
+Delegation, formation, emergency asymmetry, irreversible commitment, transformation and terminal Selection remain possible when correctly typed.
 
 ## Current status
 
@@ -116,19 +170,22 @@ O1a local position-relative generative better/worse:
   strong candidate
 
 O1b cross-position relational typing:
-  strong candidate
+  strong candidate / author gate pending
 
 O1c whole-relative better/worse:
   candidate only after independent whole-position gate
 
-O2a answerability / responsibility:
+O2-C constitutive relation-integrity norm:
+  strong candidate / new author gate pending
+
+O2-A answerability / responsibility:
   candidate after stronger agency conditions
 
-O2b normative constraint on how positions rewrite shared generative relations:
-  promising research direction via anti-objectification / non-usurpation
-
-O2c all-things-considered conflict resolution across real positions and scales:
+O2-M all-things-considered conflict resolution:
   OPEN / HOLD
+
+partial Hume constitutive dissolution:
+  strengthened candidate
 
 full Hume dissolution:
   OPEN
@@ -141,13 +198,22 @@ canonical landing:
 
 Do **not** edit canonical yet.
 
-Next step is author adjudication of `SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md`.
+There are now two related machine-prepared author gates:
 
-If accepted, create a noncanonical author adjudication and only then reassess:
+1. `SRT_CROSS_POSITION_GENERATIVITY_AUTHOR_GATE_2026-09-14.md` — G1-G10;
+2. `SRT_GENERATIVE_NON_USURPATION_CONSTITUTIVE_OUGHT_AUTHOR_GATE_2026-09-14.md` — N1-N10.
 
-1. whether O1a/O1b are stable enough for an owner-level landing matrix;
-2. whether whole-position needs a dedicated owner gate or can inherit One / Collective Selection routing;
-3. whether O2b should become a separate research line from O2c;
-4. how existing `协调 / 不外包 / 可再选择`, political legitimacy, domination, rights and collective-selection bridge material should inherit the new grounding without being promoted to primitive morality.
+The N-gate narrows G10 and should not be read as silently adjudicating G1-G10.
+
+If the author accepts the package, create a noncanonical author adjudication first, then reassess owner-level landing scope for:
+
+```text
+O1a / O1b;
+whole-position routing;
+O2-C / O2-A / O2-M separation;
+anti-objectification / generative substitution;
+inheritance into current coordination / non-outsourcing / reselectability,
+political legitimacy, domination, rights and collective-selection bridge material.
+```
 
 No canonical edit is authorized by this handoff.
