@@ -8,11 +8,12 @@ from model import load_config, run_control_a, run_control_b
 
 
 def config():
-    return load_config(ROOT / "config_frozen_draft.json")
+    return load_config(ROOT / "config_frozen_v1.json")
 
 
 def test_control_a_pre_shift_is_exactly_matched():
     c = config()
+    # Engineering/pilot seeds only; confirmatory 62000+ seeds stay untouched by tests.
     for seed in [51001, 51007, 52000, 52031]:
         ext = run_control_a(seed, "externalized", c)
         ret = run_control_a(seed, "returned_revision", c)
@@ -36,7 +37,6 @@ def test_control_b_generator_revision_changes_generator():
 
 
 def test_toy_model_makes_no_bearer_claim():
-    # Semantic guard: the code API uses topology/position terminology only.
     text = (ROOT / "model.py").read_text(encoding="utf-8")
-    assert "SRT Bearers" in text  # explicit denial in docstring
+    assert "not SRT Bearers" in text
     assert "run_bearer" not in text
