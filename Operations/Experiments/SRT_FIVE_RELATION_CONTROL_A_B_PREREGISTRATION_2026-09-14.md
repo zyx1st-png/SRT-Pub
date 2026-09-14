@@ -1,7 +1,8 @@
 ---
 id: SRT-EXP-FIVE-RELATION-CONTROL-A-B-PREREG-20260914
 type: experiment_spec
-status: superseded_by_hardened_abc
+status: archived
+record_stage: superseded_by_hardened_abc
 date: 2026-09-14
 layer: meta
 epistemic_layer: research_program
