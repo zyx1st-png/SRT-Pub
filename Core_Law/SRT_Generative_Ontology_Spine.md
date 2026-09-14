@@ -1,10 +1,10 @@
 ---
 id: SRT-GENERATIVE-ONTOLOGY-SPINE
 type: theory
-tags: [Ontology, GenerativeSpine, Selection, Manifestation, Verticality, One, Perspective, Anticipation, Bearer]
+tags: [Ontology, GenerativeSpine, Selection, Manifestation, History, One, Position, Bearer, Normativity]
 status: active
-version: v1
-layer: L0-L1
+version: v2
+layer: L0-L2
 epistemic_layer: os
 claim_mode: canonical
 claim_level: mixed_P0_P1_candidate_open
@@ -17,237 +17,248 @@ dependency:
 ---
 
 # SRT Generative Ontology Spine
-## Non-flat openness → finite-position-indexed Selection → regenerative formation → One
+## One Selection reality, many typed structural modes
 
-> **Role**: canonical **cross-owner routing spine**. It fixes cross-layer order, non-identities and OPEN gates; local definitions remain with their registered owners where compatible.
+> **Role**: canonical cross-owner routing spine. It fixes cross-owner ontology routing, structural non-identities and OPEN gates. Local owners retain detailed admission criteria where compatible.
 >
-> **Author authorization**: original spine-first landing, 2026-09-11; post-#956 whole-skeleton adjudication merged in #957; bounded landing scope merged in #958. Final author provenance: `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md`. Post-One synchronization scope: `Operations/Audits/SRT_POST_ONE_GENERATIVE_SPINE_BOUNDED_SYNC_SCOPE_2026-09-13.md`.
+> **2026-09-14 Selection-totality landing**: author-adjudicated direction is recorded in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_TOTALITY_NONFLAT_MONISM_2026-09-14.md`. This v2 replaces the earlier master picture `modal condition -> primitive operation -> formed result` with a non-flat Selection-mode architecture. The change unifies ontic reading without collapsing downstream gates.
 
 ---
 
 ## 0. Authority and inference rule
 
-At the **cross-owner inference** level:
+At cross-owner level:
 
 ```text
-this spine controls routing;
+Selection is reality's one generative mode;
+structural roles / organizations / relations of Selection are many;
 compatible local definitions survive;
 conflicting excess inference becomes cleanup / retyping debt;
 OPEN remains OPEN until separately landed.
 ```
 
-Do not infer automatically:
+Permanent anti-tautology rule:
 
 ```text
-history / writeback -> source of Selection or verticality;
-manifestation -> backgrounding -> verticality as successive primitive stages;
-finite positionality -> One / perspective / Bearer / subject;
-One -> Stable ISP / Bearer / subject;
-Stable ISP -> Bearer / subject;
-d > 0 or T_dir -> Bearer / subject;
-Bearer = 承担 / Concern / subject / experiencer;
-Bearer -> Concern;
-Concern -> Bearer.
-```
-
----
-
-## 1. Universal formation route
-
-At routing strength, the minimum architecture is:
-
-```text
-[modal condition]
-non-flat / non-neutral openness
-(Oriented Openness as the current reconstruction label)
-
-        ->
-
-[primitive generative operation]
-finite-position-indexed subjectless Selection
-= actual differentiation
-= manifestation / relative backgrounding
-= event-level / primitive verticality as structural reading
-
-        -- regenerative formation -->
-
-[formed result]
-One
-```
-
-Expanded formation relation:
-
-```text
-Selection-generated vertical organization_t
--> materially conditions later Selection_(t+1)
--> Selection_(t+1) generates renewed vertical organization_(t+1)
--> renewed vertical organization_(t+1) can again carry the relevant conditioning role.
-```
-
-This is **role recurrence of Selection-generated vertical organization**, not a token-identity theorem and not generic process recurrence. It does not establish same token, same spatial position, a completed lineage theorem, closure, autopoiesis, or a universal N&S One classifier. Detailed relative continuation separability, formed locality and onset semantics remain with the local One owner.
-
-The universal formation route **stops at One**. Under the current local One owner, formed `Selection-position` remains an operative co-aspect of an already formed One; it is not promoted here into a second universal endpoint or an additional formation rung.
-
-Bearer, Concern, `d`, agency, cognition, subject-position, phenomenality and higher-order One are not additional universal formation stages.
-
-### Local-owner boundary
-
-```text
-Core_Law/SRT_L0_Metaphysics.md
-= L0 non-neutrality, finite positionality, irreversibility and current Concern terminology;
-
-Core_Law/SRT_One_Formation.md
-= post-#970 detailed One / Selection-position and vertical-reconstitution semantics;
-
-_SRT_D_VALUE_CANONICAL.md
-= d owner;
-
-P1-T06
-= stronger Stable-ISP standing owner.
-```
-
----
-
-## 2. Modal condition — non-flat openness
-
-Cross-owner minimum:
-
-```text
-pure featureless neutrality is insufficient;
-reality is open to determination but not maximally flat / equivalent;
-no completed object, chooser, subject, agent, One or option menu is presupposed.
-```
-
-`Oriented Openness` names this modal role in the current reconstruction. It is not defined here as a prior substance, event, probability distribution, vector field, completed option space, teleological destination or second generative operation.
-
-Exact inheritance / thinning of current L0 items such as `kappa_0`, `epsilon`, irreversibility, 承担 and 关切 remains a later L0-owner question.
-
----
-
-## 3. Primitive Selection — one event, multiple readings
-
-Selection is upstream of a completed selector and is **finite-position-indexed**.
-
-```text
-Selection
-= subjectless actual differentiation:
-  a determinate actuality becomes manifest / operative
-  while what is not manifest in the same way is relatively backgrounded.
+Selection-totality = ontology routing;
+Selection-totality != sufficient proof premise.
 ```
 
 Therefore:
 
 ```text
-actual differentiation;
-manifestation / relative backgrounding;
-event-level / primitive verticality
+same ontic generative mode
+!= same structural role;
+
+structural non-identity
+!= different ontic substance.
 ```
 
-are constitutive readings of the **same Selection event**, not separate universal operations.
+Never infer merely from `X is Selection` that X is One, Stable ISP, Bearer, Agency, subject, conscious, valuable or legitimate. Each stronger term must pay its own typed burden.
 
-The verticality reading is structural non-flatness: manifest / operative and relatively backgrounded are not equivalent with respect to the realized event. Selection may alter later selectability, but persistence / durable history is not thereby added to the primitive event definition.
+Retain these anti-jump rules:
+
+```text
+history / writeback -> source of primitive Selection: NO;
+finite positionality -> One / Bearer / subject: NO;
+One -> Stable ISP / Bearer / subject: NO;
+Stable ISP -> Bearer / subject: NO;
+Bearer -> Concern / Agency / subject: NO;
+actual occurrence -> value / legitimacy: NO.
+```
+
+---
+
+## 1. Master ontology reading — Selection-totality, not an ontic ladder
+
+The canonical master reading is:
+
+```text
+Selection reality
+├─ open / non-preclosed / non-flat aspect
+├─ actualising event-cut / determinate manifestation
+├─ retained historical efficacy, where established
+├─ recurrent self-conditioning / One formation
+│  └─ formed operative locality / Selection-position
+├─ stronger recurrent standing / Stable ISP
+├─ prospective self-exposure / Bearer
+├─ reflexive condition-rewriting / Agency
+└─ Selection constraining Selection / normativity routing
+```
+
+This is a **typed structural map**, not a claim that every Selection must pass through every branch or stage.
+
+The map asserts one generative mode with distinguishable organizations. It does not introduce a substance called `Selection-stuff`, and it does not erase differences among event, history, formation, standing, bearing, agency and normativity.
+
+### Formation-route boundary
+
+Within the universal formation problem handled by this spine, the first universal formed recurrent organization is **One**. Stronger standing, bearing and agency remain separately gated.
+
+So replace the older shorthand `the universal route stops at One` with:
+
+> **One is the first universal formed recurrent Selection-organization admitted by this formation route; reality does not stop at One, and downstream standing is not automatic.**
+
+---
+
+## 2. Primitive Selection — one reality, two co-primitive analytic burdens
+
+Primitive Selection is subjectless and finite-position-indexed.
+
+At minimum:
+
+```text
+primitive Selection
+= reality under actual generative differentiation.
+```
+
+Two co-primitive analytic burdens are required:
+
+```text
+O0 — non-maximal indifference / openness
+= Selection reality is not exhausted by completed determinate actuality
+  and is not fully preclosed by an already-given outcome structure;
+
+S0 — actualising Selection
+= a finite-position-indexed determinate difference becomes manifest / operative
+  together with Selection-relative backgrounding.
+```
+
+Hard guard:
+
+```text
+O0 before S0: NO;
+S0 before O0: NO;
+O0 causes S0: NO;
+S0 produces O0: NO.
+```
+
+O0 and S0 are two irreducible analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances.
+
+`Oriented Openness` may continue as a routing label for the O0 face. It is not a prior field, container, option menu, probability distribution, vector toward an endpoint, semantic order, moral value or continuation preference.
+
+Exact inheritance of `kappa_0`, `epsilon_pg`, irreversibility and stronger formal realizations remains separately owned and OPEN where not already adjudicated.
+
+---
+
+## 3. Actualising Selection and existence
+
+An actualising Selection event is:
+
+```text
+finite-position-indexed subjectless actual differentiation
+= determinate manifestation
+= relative backgrounding
+= event-level verticality as structural reading.
+```
+
+These are readings of the same event, not successive universal operations.
+
+Canonical existence reading:
+
+```text
+manifest existence
+= Selection under determinate actuality.
+```
+
+Pedagogical phrases such as `Selection produces existence` are allowed only if they do not imply a factory/product ontology in which Selection happens first and deposits an independently different ontic material called existence.
 
 Guards:
 
 ```text
 Selection != conscious choice;
+Selection != correct-option retrieval;
 manifestation != permanent existence;
 backgrounding != annihilation;
-finite position != formed One / perspective / subjecthood;
-verticality != passive sediment;
-Selection occurrence != anchoring persistence automatically.
+finite position != formed One / Selection-position / subject-position;
+Selection occurrence != anchoring persistence.
 ```
 
-### Selection under formed constraints
+### Primitive Selection vs formal operator
 
-Later Selection may be conditioned by a formed One / Selection-position.
+```text
+primitive Selection != Ghost Operator / G-hat_theta.
+```
 
-> **Selection under formed constraints remains the same primitive kind of Selection; this spine introduces no second universal operation.**
-
-This is a type-continuity rule, not a new formal symbol and not a claim that primitive Selection already presupposes a One.
+A formal or embodied operator may model a formed or domain-specific Selection organization. It must not be back-read as the prior chooser or ontic cause required for primitive Selection to exist.
 
 ---
 
-## 4. Regenerative formation and One
+## 4. History — prior Selection remaining effective
 
-One-shot Selection / verticalization is insufficient for One formation.
+History / writeback is not a second ontic material and is not automatically produced as durable history by every Selection event.
 
-Cross-owner minimum:
-
-```text
-Selection-generated vertical organization_t
--> materially conditions Selection_(t+1)
--> Selection_(t+1) generates renewed vertical organization_(t+1)
--> renewed vertical organization_(t+1) can again carry the relevant conditioning role.
-```
-
-What must recur at this level is the **conditioning role of Selection-generated vertical organization** through later Selection. Generic causal recurrence, persistence or repeated similarity is not sufficient merely by recurring.
-
-Do not infer from this alone:
-
-```text
-vertical organization_t = vertical organization_(t+1) numerically;
-position_t = position_(t+1);
-pre-given same lineage;
-closed self-maintenance;
-autopoiesis;
-life;
-a mature boundary.
-```
-
-Exact unit identification, boundary, strict identity and branching / merging identity remain OPEN.
-
-The formed-result category of the universal route is **One**. `Core_Law/SRT_One_Formation.md` is the post-#970 detailed local owner. It treats lineage as downstream continuity-description language rather than an admission premise, while exact identity / boundary / branch-merge attribution remain OPEN.
-
-Guards:
-
-```text
-event-level verticality != One automatically;
-generic causal recurrence != One automatically;
-ordinary path dependence != One automatically;
-role recurrence != token identity;
-One != Stable ISP / Bearer / subject / consciousness / phenomenality.
-```
-
----
-
-## 5. History / writeback typing
+Canonical routing:
 
 ```text
 prior Selection
--> consequences / retained differences may alter later conditions
--> later Selection may proceed under changed conditions.
-```
-
-Keep distinct:
-
-```text
-Selection / active differentiation
-= primitive generative-operation side;
-
-history / writeback
-= retained-result / condition side when retention is established.
+-> may leave retained differences
+-> where retention is established, those differences materially alter later Selection conditions
+-> prior Selection is then historically effective in later Selection.
 ```
 
 Therefore:
 
 ```text
-history may condition regenerative formation;
-history != source of Selection or verticality;
-primitive Selection != durable history by definition;
-history-bearing != perspective automatically;
-history-to-reconstitution != Bearer automatically.
+history
+= prior Selection remaining materially effective in later Selection conditions,
+  where such efficacy is established.
 ```
 
-This spine does not settle the exact L0 irreversibility / P0 occurrence-persistence reconciliation and does not infer that every Selection automatically yields durable, localized or recurrently effective history.
+Keep distinct:
+
+```text
+actual occurrence
+!= durable / localized history;
+
+irreversible ontic non-equivalence
+!= anchoring
+!= recurrent historical efficacy.
+```
+
+History can condition later Selection without becoming the source of primitive Selection itself.
 
 ---
 
-## 6. Positionality, perspective and anticipation
+## 5. Recurrent Selection organization and One
+
+One-shot Selection is insufficient for One formation.
+
+Cross-owner minimum remains:
+
+```text
+Selection-generated organization_t
+-> materially conditions later Selection_(t+1)
+-> later Selection generates renewed organization_(t+1)
+-> renewed organization can again carry the relevant conditioning role
+-> recurrent non-equivalent reconstitution can support relative continuation separability
+-> One.
+```
+
+Metaphysical reading:
+
+> **One is not a second ontic material added after Selection. One is Selection acquiring a relatively separable recurrent self-conditioning organization.**
+
+This compression does not replace `Core_Law/SRT_One_Formation.md`, which remains the detailed local owner.
+
+Keep:
+
+```text
+Selection event != One;
+generic causal recurrence != One;
+ordinary path dependence != One;
+role recurrence != token identity;
+One != Stable ISP / Bearer / subject / consciousness / phenomenality.
+```
+
+Exact One boundary, unit identification, strict identity and branch / merge attribution remain OPEN.
+
+---
+
+## 6. Selection-position, perspective and anticipation
 
 ### 6.1 Finite positionality
 
-Selection is finite-position-indexed.
+Every primitive Selection is finite-position-indexed.
 
 ```text
 finite positionality
@@ -258,15 +269,23 @@ finite positionality
 != subjecthood.
 ```
 
-Finite positionality supplies event-local indexing / finitude, not formed locality or cross-time identity.
+Finite positionality supplies event-local finitude / indexing, not formed locality or cross-time identity.
 
 ### 6.2 Formed Selection-position
 
-Under the post-#970 local One owner, `Selection-position_t` is the time-local operative from-where of an already formed One in a particular Selection. Detailed One / Selection-position semantics remain with that owner.
+For an already formed One, `Selection-position_t` is the time-local operative `from-where` through which that recurrent Selection organization participates in current Selection.
 
-### 6.3 Stronger perspective / anticipation
+Metaphysical reading:
 
-A stronger One-level perspective may be present when the formed One's organization is load-bearing in later manifestation / backgrounding / selectable-space organization. Every One having such perspective is **NOT ESTABLISHED**.
+```text
+Selection-position
+= formed operative locality of recurrent Selection;
+!= an independently prior selector object.
+```
+
+### 6.3 Perspective and anticipation
+
+A stronger One-level perspective may be present when the formed organization is load-bearing in later manifestation, backgrounding or selectable-space organization. Universal sufficiency remains NOT ESTABLISHED.
 
 Keep separate:
 
@@ -281,15 +300,33 @@ P
 != Bearer without E.
 ```
 
-None of these relations requires explicit Bayesian prediction, verbal self-model, human cognition, consciousness or phenomenality by definition.
+---
+
+## 7. Stronger recurrent standing — Stable ISP
+
+Stable ISP is not a new ontic material and is not the cause of One formation.
+
+At routing strength:
+
+```text
+Stable ISP
+= stronger recurrent standing of a formed Selection organization,
+  including the conditions owned by P1-T06.
+```
+
+P1-T06 remains the detailed standing owner. This spine does not weaken its recurrent historical reconstitution, perspective/history-bearing and continued-selectability burdens.
+
+```text
+One != Stable ISP;
+Stable ISP != Bearer;
+Stable ISP != subjecthood automatically.
+```
 
 ---
 
-## 7. Bearer — post-One P + E route retained
+## 8. Bearer — prospective self-exposure remains separately gated
 
-Bearer is **not** part of the universal formation route. It is a separately gated prospective standing relation for an already formed One / Selection-position.
-
-Current canonical route remains exactly:
+The canonical Bearer route remains:
 
 ```text
 formed One / Selection-position + P + E -> Bearer.
@@ -307,180 +344,182 @@ E same-One prospective exposure
   and cannot be completely reassigned while claiming the same Bearer relation.
 ```
 
+Metaphysical reading:
+
+> **Bearer is a formed Selection organization under independently gated prospective self-exposure, not a new material added to One.**
+
+Keep exactly:
+
 ```text
 P alone != Bearer;
-E alone != Bearer.
+E alone != Bearer;
+Bearer -/> Concern automatically;
+Bearer -/> Agency automatically;
+Bearer -/> subjecthood / cognition / phenomenality automatically.
 ```
 
-The non-outsourcing counterfactual remains a **consistency / exclusion test** for E, not a complete positive admission procedure.
-
-```text
-E semantic relation = RETAINED;
-positive independently applicable E establishment = OPEN.
-```
-
-### Bearer / Concern / Agency guard
-
-No universal theorem is licensed in either direction:
-
-```text
-Bearer -> Concern / 关切;
-Concern / 关切 -> Bearer.
-```
-
-Nor is `Bearer -> Concern -> Agency` a universal ladder. Current L0 Concern terminology remains under its local owner; agency is separately gated downstream work.
-
-### Legacy Bearer quarantine
-
-Pre-#947 `bearer` / `same-bearer` language is legacy bearer-language unless later claim-by-claim retyped.
-
-```text
-legacy bearer-language
-!= current typed Bearer automatically;
-legacy bearer-language
-!= contradiction automatically.
-```
-
-The P+E route is canonical semantic / architectural routing, not yet a universal empirical or formal cross-domain N&S theorem. It does not establish Concern, agency, subjecthood, cognition, consciousness, phenomenality, unique Bearer scale or scientific distinctiveness.
+The non-outsourcing counterfactual remains a consistency / exclusion test for E, not a complete positive admission procedure. Positive independently applicable E establishment remains OPEN.
 
 ---
 
-## 8. Non-stage downstream / cross-cutting surfaces
+## 9. Agency and reflexive condition-rewriting
 
-These surfaces are not a second ontology ladder.
+Agency is downstream and separately gated.
 
-```text
-post-One relational Position
-!= L0 finite positionality
-!= formed Selection-position
-!= subject-position;
-
-Concern
-= not a universal stage after Bearer;
-
-`d`
-= owned by `_SRT_D_VALUE_CANONICAL.md`, not a formation stage;
-
-agency
-= not inferred automatically from Bearer or Concern;
-
-cognition / subject-position / phenomenality / higher-order One
-= separately gated downstream or higher-order problems.
-```
-
-Retain cross-cutting guards:
+At cross-owner routing strength only:
 
 ```text
-Stable ISP != source of One formation / Bearer / subjecthood automatically;
-model threshold / sigma_sr != ontology transition automatically;
-d > 0 != Bearer / subject proof;
-T_dir != Bearer / subject / phenomenality proof;
-Psi_f / cost != Bearer / subject proof.
+Agency
+= a stronger Selection organization capable of participating in the rewriting
+  of conditions of its own and/or relational future Selection,
+  once the relevant agency burdens are independently paid.
 ```
+
+This does not make all Selection agentic.
+
+```text
+Selection-totality -/> pan-agency;
+Selection-totality -/> pan-consciousness.
+```
+
+Cognition, subject-position, phenomenality and experiencer status remain separately gated downstream questions.
 
 ---
 
-## 9. Cleanup and OPEN register
+## 10. Selection reflexivity and normativity routing
 
-When auditing older surfaces, check for:
+Normativity is not primitive moral content attached to occurrence.
+
+Permanent guards:
 
 ```text
-source inversion;
-same-event splitting;
-finite-position / Selection-position / relational-Position collapse;
-standing-to-generation jumps;
-history-to-source jumps;
-identity smuggling from recurrence;
-post-One ladder smuggling;
-model-to-ontology jumps;
-authority duplication;
-overclaim / redundancy.
+primitive Selection != ought;
+actual occurrence != correctness;
+actual occurrence != legitimacy;
+continuation != goodness;
+more options != better;
+more Selection != better.
 ```
 
-Allowed cleanup outcomes:
+Current routing is:
 
 ```text
-KEEP | RETYPE | DEMOTE | RETIRE | MERGE | SIMPLIFY | OPEN
+formed-position Selection
+-> O1 indexed generative comparison may become possible;
+
+relation-transforming Selection
+-> O2-C constitutive relation-integrity constraints may become possible;
+
+agency-qualified relation-transforming Selection
+-> O2-A answerability may become possible;
+
+O2-M all-things-considered cross-position conflict
+= OPEN / HOLD.
 ```
 
-This spine leaves open:
+Core source-condition claim:
+
+> **Selection is the ontological source-condition of normativity because formed and relational Selection can alter the conditions under which Selection itself proceeds; no primitive moral content is thereby placed at O0.**
+
+This spine routes the relation only. Detailed O1 / O2-C / O2-A semantics remain with their appropriate downstream owner / future landing.
+
+---
+
+## 11. L0 / L1 / L2 aspect routing
+
+At cross-owner metaphysical strength:
 
 ```text
-exact Oriented Openness inheritance / decomposition;
+L0-side
+= Selection in its open / non-preclosed generative aspect relative to determinate actuality;
+
+L1-side
+= Selection under determinate manifestation / actuality;
+
+L2-side
+= prior Selection remaining effective as retained constraint / sediment / history on later Selection.
+```
+
+These are not three ontic substances or warehouses.
+
+Formal domain objects named `L0`, `L1` and `L2` may remain useful in scoped models. Their exact equations and realization semantics are owned by the relevant formal / reference owners and must not back-define this metaphysical routing.
+
+---
+
+## 12. Facet-before-kind governance guard
+
+Before adding a new ontological noun, require:
+
+```text
+1. state the distinct structural burden;
+2. test whether it is a mode / organization / relation / stage of Selection;
+3. create a new ontic kind only if that mode reading fails under explicit argument.
+```
+
+This is an anti-objectification and anti-concept-inflation burden rule. It is not a proof that no further ontic distinction can ever be justified.
+
+If a proposed concept adds no independently stateable burden beyond `Selection occurred`, merge, demote or remove it rather than retaining a pseudo-layer.
+
+---
+
+## 13. OPEN register
+
+This spine leaves open, among other existing gates:
+
+```text
+exact formalization of Selection-totality;
+exact L0/L1/L2 aspect-vs-domain crosswalk;
+exact primitive Selection vs operator-carrier formalization;
 formal N&S One theorem;
 exact One boundary / unit identification;
 strict and branch / merge identity;
 universal One-level perspective sufficiency;
 positive E establishment;
 formal cross-domain P+E Bearer theorem;
-Bearer <-> actual 承担;
-Bearer <-> Concern / 关切;
-Bearer <-> agency;
-Concern <-> agency;
+Bearer <-> Concern / Agency / cognition / subject-position;
 positive subject-position gate;
-subject-position -> cognition;
 phenomenality / experiencer transition;
-bare-d retyping;
 collective subject sufficiency;
+exact normativity owner placement / O1-O2-C formal landing;
+O2-M cross-position moral conflict;
+epsilon_pg / kappa0 inheritance into stronger formed asymmetries;
 new Level 1;
 Level 2 / HOLD exit;
 scientific distinctiveness;
-whole-architecture non-substitutability;
-finite positionality <-> formation locus / post-One Position / subject-position;
-Bearer <-> cognition;
-Bearer <-> subject-position;
-unique empirical / numerical Bearer admission threshold;
-Bearer <-> position stability;
-Bearer canonical ownership / sufficiency hardening;
-scale attribution across tightly coupled nested Ones — cross-layer non-identity gate only.
+whole-architecture non-substitutability.
 ```
 
-The last seven arrived from `STATUS.md §OPEN register` under
-`Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`. They
-are recorded here unchanged and **none of them is closed**. Some carry
-qualifications that the listing alone does not show:
-
-```text
-unique empirical / numerical Bearer admission threshold = PROVISIONAL ROUTING
-Bearer <-> position stability                          = PROVISIONAL ROUTING
-```
-
-Both are Bearer hardening. `Bearer canonical ownership / sufficiency hardening`
-is itself open, so routing them here is **where they are recorded until that
-question is settled, not a finding that this spine owns Bearer**. Adjudicating
-the ownership item by pointing at this routing would close it with itself.
-
-```text
-scale attribution across tightly coupled nested Ones:
-this spine holds the cross-layer non-identity gate only.
-local formation / unit question    -> `Core_Law/SRT_One_Formation.md`
-higher-order realization           -> `Core_Law/SRT_Collective_Selection.md`
-```
-
-That split follows the receiving files' own declared boundaries;
-`SRT_Collective_Selection.md` states it does not define `One / Selection-position`.
+Existing OPEN items not contradicted here remain OPEN even if omitted from this compact list.
 
 ---
 
-## 10. Citation rule
+## 14. Citation rule
 
 Use this file first for:
 
-- current cross-owner formation order and non-identities;
-- modal-condition / primitive-operation / regenerative-relation / formed-result typing;
-- same-event Selection / manifestation-backgrounding / verticality routing;
-- finite positionality vs formed Selection-position routing;
-- the rule that universal formation ends at One;
-- P + E Bearer routing and its non-nesting with Concern / agency.
+- Selection-totality cross-owner ontology routing;
+- structural-mode non-identities;
+- primitive Selection vs actualising event-cut vs recurrent organization;
+- history as retained Selection efficacy;
+- One / Stable ISP / Bearer / Agency cross-owner routing;
+- Selection-reflexivity as the source-condition route to normativity;
+- L0/L1/L2 aspect-level routing;
+- facet-before-kind guard.
 
-Then follow local owners for detailed definitions.
+Then follow local owners for detailed definitions and admission criteria.
 
 For One:
 
 ```text
-this spine owns cross-owner role-regenerative routing;
-Core_Law/SRT_One_Formation.md is the post-#970 detailed local One / Selection-position owner;
-this spine is not a universal N&S One theorem.
+Core_Law/SRT_One_Formation.md
+= detailed One / Selection-position owner.
+```
+
+For Stable ISP:
+
+```text
+P1-T06
+= stronger recurrent-standing owner.
 ```
 
 For Bearer:
@@ -489,13 +528,11 @@ For Bearer:
 formed One / Selection-position + P + E -> Bearer.
 ```
 
-This is current canonical routing / author-adjudicated reconstruction strength, not an established universal theorem, validated cross-domain classifier or completed positive admission procedure.
-
 For ongoing landing:
 
 ```text
 this Spine = current cross-owner canonical routing authority;
 compatible local detail = retained;
-conflicting excess inference = bounded cleanup debt;
+conflicting excess inference = bounded cleanup / retyping debt;
 OPEN = open until separately adjudicated and landed.
 ```
