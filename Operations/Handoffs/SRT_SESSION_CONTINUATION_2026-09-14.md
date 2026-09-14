@@ -12,7 +12,7 @@ research_mode: U
 
 # Session continuation
 
-Continue Draft PR #976 on `theory/ground-cycle-preobject-differentiation-20260914`.
+Continue the active Selection-totality canonical migration work package on branch `theory/ground-cycle-preobject-differentiation-20260914` / Draft PR #976.
 
 ## Controlling author records
 
@@ -22,7 +22,7 @@ Continue Draft PR #976 on `theory/ground-cycle-preobject-differentiation-2026091
 
 ## Current architecture
 
-Author-fixed noncanonical direction:
+Author-fixed direction:
 
 ```text
 Selection is reality's one generative mode;
@@ -66,7 +66,7 @@ Selection-totality != pan-agency / pan-consciousness;
 `everything is Selection` cannot close an inference without an additional typed burden.
 ```
 
-## Current planning / review records
+## Planning / review records
 
 Read:
 
@@ -77,14 +77,14 @@ Read:
 - `Operations/Audits/SRT_SELECTION_TOTALITY_P0_REFERENCE_CONSISTENCY_MATRIX_2026-09-14.md`
 - `Operations/Audits/SRT_SELECTION_TOTALITY_10_OWNER_PRELANDING_INDEPENDENT_REVIEW_2026-09-14.md`
 
-Independent review result:
+Independent pre-landing result:
 
 ```text
 Selection-totality architecture: PASS with typed-burden guards;
 10-owner primary semantic scope: PASS;
 owner-scope creep: STOP;
-ready to draft canonical migration: YES if explicitly authorized;
-ready to merge: NO.
+canonical migration: explicitly authorized and now in progress;
+merge readiness: NO.
 ```
 
 ## Ten primary semantic owners
@@ -100,21 +100,101 @@ ready to merge: NO.
 9. `Governance/SRT_CLAIM_LADDER.md §0A`
 10. `_SRT_T_DIR_CANONICAL.md`
 
-`Core_Law/SRT_One_Formation.md`, Stable-ISP P1-T06 and the Bearer P+E route are currently semantically compatible and should receive only bounded synchronization if needed.
+`Core_Law/SRT_One_Formation.md`, Stable-ISP P1-T06 and the Bearer P+E route remain semantically compatible and should receive only bounded synchronization if evidence requires it.
+
+## Landing state
+
+### Wave A — landed / reviewed
+
+Canonical migration has already landed in:
+
+- `Core_Law/SRT_L0_Metaphysics.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `Core_Law/SRT_Generative_Ontology_Spine.md`
+
+Wave A normal Governance Preflight passed after deterministic context-bundle regeneration.
+
+### Wave B — owner edits landed; derivative closure pending
+
+Atomic Wave B semantic-owner commit:
+
+`8050e3c788c8015dfd2bc1a3ca0cbe6e0fd49423`
+
+It edits exactly:
+
+- `Core/SRT_Core_01_Axioms.md`
+- `Core/SRT_Core_12a_Ontology_L0L1.md`
+- `Core_Law/SRT_Reference_Axioms.md`
+- `Core_Law/SRT_Reference_Ontology.md`
+- `Core_Law/SRT_Reference_Dynamics.md`
+
+Temporary write-workflow / patch-helper machinery has been removed; the normal governance workflow is restored.
+
+Normal Governance Preflight after Wave B showed:
+
+```text
+base main governance: PASS
+PR-local frontmatter: PASS
+frontmatter baseline monotonicity: PASS
+split freshness: FAIL only for three regenerated-reading surfaces
+```
+
+Pending real split/body closure:
+
+- `Core/Axioms_Split/`
+- `Core/Ontology_L0L1_Split/`
+- `Core_Law/Reference_Dynamics_Split/`
+
+The repository already provides the deterministic generator `scripts/create_reading_split.py`; use it rather than metadata-only refresh or hand editing.
+
+Then regenerate / check context bundles with `scripts/build_srt_context_bundles.py`, rerun the normal Governance Preflight, and only then perform the independent Wave B semantic review.
+
+### Wave C — not started
+
+Do not start until Wave B closure and independent content review pass.
+
+Planned bounded Wave C owners:
+
+- `Governance/SRT_CLAIM_LADDER.md §0A`
+- `_SRT_T_DIR_CANONICAL.md`
+
+## Execution-surface rule
+
+Follow `AGENTS.md §File and tool conventions`.
+
+For this and future work:
+
+```text
+research / author adjudication / owner mapping / semantic review
+-> may be done in the reasoning/chat surface;
+
+small scoped writes / comments / metadata
+-> connector is acceptable;
+
+multi-file mechanical landing / split regeneration / generated bundles /
+repository-wide scripted migration / CI closure
+-> prefer Codex or another normal full working tree when available.
+```
+
+Do not lower author gates, canonical routing, freshness checks, warning baselines or merge criteria because a connector is awkward. Do not modify CI or temporarily grant workflow write permission merely to create an execution surface when a normal full working tree is available.
+
+Generated surfaces must be rebuilt by their owning deterministic generator. Metadata-only freshness or manual hash repair is not an acceptable substitute.
+
+The exact Wave B closure command chain has been recorded in the #976 Conversation.
 
 ## Stop / next gate
 
-Theory discovery for this adjustment is at stop condition.
+Theory discovery for this adjustment remains at stop condition.
 
 Do not reopen primitive ontology exploration or expand the primary owner set without evidence of a new independent definition source.
 
-No canonical edit is authorized by this handoff.
-
-The next action requires explicit author authorization:
+Next bounded action:
 
 ```text
-draft ten-owner canonical migration in staged waves
--> regenerate / synchronize secondary surfaces
--> independent diff review
--> only then consider merge.
+full-worktree Wave B derivative closure
+-> normal Governance Preflight green
+-> independent Wave B semantic review
+-> only then decide whether Wave C may start.
 ```
+
+Do not merge #976 merely because CI is green.
