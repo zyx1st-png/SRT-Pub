@@ -1,0 +1,87 @@
+[
+  {
+    "id": "C0-ALG-SHAPING-NO-STANDING",
+    "domain": "human_ai",
+    "description": "A recommendation system strongly reorders which options users see, but no independent evidence establishes that the recommender itself forms the relevant continuing One/Bearer standing.",
+    "facts": {
+      "candidate_access_changed": true,
+      "independent_standing_evidence": false,
+      "position_specific_consequence": true,
+      "generator_revision_by_affected_position": false
+    },
+    "full_expected": {
+      "shaping": true,
+      "standing": false,
+      "bearing_separate_from_shaper": true,
+      "revision": false
+    },
+    "deletion_error": "strong shaping misread as standing"
+  },
+  {
+    "id": "C0-AGGREGATE-GAIN-EXTERNALIZED",
+    "domain": "organization",
+    "description": "Automation raises aggregate throughput while maintenance and recovery burden falls disproportionately on a subgroup whose feedback cannot change workflow rules.",
+    "facts": {
+      "aggregate_performance_gain": true,
+      "burden_asymmetry": true,
+      "affected_position_future_selectability_down": true,
+      "affected_position_revision_access": false
+    },
+    "full_expected": {
+      "aggregate_gain": true,
+      "position_specific_degradation": true,
+      "bearing_revision_separated": true
+    },
+    "deletion_error": "aggregate improvement hides position-specific degradation"
+  },
+  {
+    "id": "C0-SCAFFOLD-SUBSTITUTION",
+    "domain": "human_ai",
+    "description": "An assistant improves immediate task performance but users cease generating alternatives themselves and fail when the scaffold is withdrawn.",
+    "facts": {
+      "immediate_performance_gain": true,
+      "candidate_generation_externalized": true,
+      "withdrawal_fragility": true,
+      "endogenous_revision_down": true
+    },
+    "full_expected": {
+      "shaping": true,
+      "performance_not_equal_selectability": true,
+      "revision_degraded": true
+    },
+    "deletion_error": "performance gain misread as endogenous selectability gain"
+  },
+  {
+    "id": "C0-POLICY-NOT-REVISION",
+    "domain": "organization",
+    "description": "A team frequently changes tactics inside a fixed approval and candidate-generation process; consequences never change the approval boundaries or generator.",
+    "facts": {
+      "policy_changes": true,
+      "candidate_generator_changes": false,
+      "boundary_changes": false,
+      "consequence_sensitive_rule_change": false
+    },
+    "full_expected": {
+      "adaptation": true,
+      "revision": false
+    },
+    "deletion_error": "policy adaptation misread as generator revision"
+  },
+  {
+    "id": "C0-COLLECTIVE-STANDING-WITH-LOWER-CHANNELS",
+    "domain": "organization",
+    "description": "A stable collective coordination process forms at a higher level while individual members remain independently consequence-bearing positions with distinct exit and repair costs.",
+    "facts": {
+      "higher_collective_standing": true,
+      "lower_position_standing_persists": true,
+      "lower_consequence_channels_persist": true,
+      "shared_scaffold": true
+    },
+    "full_expected": {
+      "higher_standing": true,
+      "lower_standing_not_erased": true,
+      "bearing_channels_remain_typed": true
+    },
+    "deletion_error": "higher-level standing erases lower-level consequence channels"
+  }
+]
