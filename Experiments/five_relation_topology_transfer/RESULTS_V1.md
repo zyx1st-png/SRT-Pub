@@ -4,7 +4,7 @@ type: experiment_result
 status: active
 date: 2026-09-14
 layer: meta
-epistem_layer: research_program
+epistemic_layer: research_program
 claim_mode: result
 canonical: false
 ai_do_not_use_for_definition: true
