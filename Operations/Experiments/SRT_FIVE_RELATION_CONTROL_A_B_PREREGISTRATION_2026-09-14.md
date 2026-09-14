@@ -19,23 +19,21 @@ tags: [Experiment, Selection, Standing, Shaping, Bearing, Revision, ControlA, Co
 
 # Five-relation minimum tool — original Control A / B preregistration
 
-> **SUPERSEDED:** execution status is superseded by `Operations/Experiments/SRT_FIVE_RELATION_CONTROL_ABC_HARDENED_PREREG_2026-09-14.md` after strongest-rival preregistration review. This file remains provenance for the original A/B design.
+> **SUPERSEDED:** use `Operations/Experiments/SRT_FIVE_RELATION_CONTROL_ABC_HARDENED_PREREG_2026-09-14.md` for current execution. This file is provenance only.
 
-The original design introduced:
+Original intent:
 
 ```text
 Control A — matched performance with different consequence/revision topology;
 Control B — matched standing/shaping with different generator-revision access.
 ```
 
-Strongest-rival review later ruled:
+Strongest-rival review later changed execution status to:
 
 ```text
-Control A = retain only after stricter information/bandwidth matching;
-Control B = calibration/sanity check only;
-Control C cross-domain transfer/deletion test = required.
+Control A = retain after stricter matching;
+Control B = calibration only;
+Control C = required architecture-transfer/deletion test.
 ```
 
-Do not execute this older specification directly and do not cite it as the current preregistration.
-
-Current execution authority is the hardened A/B/C specification named above.
+Do not execute this older specification directly.
