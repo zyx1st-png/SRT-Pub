@@ -125,14 +125,14 @@ def run_control_b(seed: int, mode: str, c: dict):
         if mode == "policy_only":
             q[a] += c["B_total_update_budget"] * (r - q[a])
         elif mode == "generator_revision":
-            # Split the same total update budget between policy and generator.
+            # Same total budget, split between policy and bounded generator revision.
             half = 0.5 * c["B_total_update_budget"]
             q[a] += half * (r - q[a])
             target = rewards - float(np.mean(rewards))
             norm = float(np.linalg.norm(target))
             if norm > 1e-12:
                 target = target / norm
-            generator += half * target
+            generator = (1.0 - half) * generator + half * target
         else:
             raise ValueError(f"unknown B mode: {mode}")
         perf.append(r)
