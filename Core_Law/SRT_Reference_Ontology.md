@@ -622,3 +622,5 @@ $$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
 ## 【理论边界/防误用声明】
 - 不采纳“外部状态先于一切选择边界而独立完备给定”的推论。  
 - 不采纳“统计边界足以推出意识本体”的推论。  
+
+<!-- Selection-totality scope marker (2026-09-14): primitive ontology is owned by SRT_L0_Metaphysics.md / SRT_Generative_Ontology_Spine.md; this file remains a formal / realization interface. -->
