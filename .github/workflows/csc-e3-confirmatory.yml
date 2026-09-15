@@ -1,0 +1,65 @@
+name: CSC E3 confirmatory run
+
+on:
+  push:
+    branches:
+      - experiment/csc-v17-consequence-recovery-e3-20260915
+
+permissions:
+  contents: read
+
+jobs:
+  confirmatory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked runtime dependency
+        run: pip install numpy==2.5.3
+      - name: Recheck preregistered invariants
+        working-directory: papers/costly_selective_closure_supplement
+        run: python test_consequence_recovery_invariants.py
+      - name: Record execution environment
+        run: |
+          python --version | tee /tmp/csc-e3-environment.txt
+          python -c 'import numpy as np; print("numpy", np.__version__)' | tee -a /tmp/csc-e3-environment.txt
+          uname -a | tee -a /tmp/csc-e3-environment.txt
+          git rev-parse HEAD | tee -a /tmp/csc-e3-environment.txt
+      - name: Run preregistered confirmatory seeds 1..30
+        working-directory: papers/costly_selective_closure_supplement
+        run: python run_consequence_recovery.py | tee /tmp/csc-e3-confirmatory.log
+      - name: Verify result structure without changing analysis
+        working-directory: papers/costly_selective_closure_supplement
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('results/consequence_recovery_results.json')
+          d = json.loads(p.read_text())
+          assert d['locked_design']['failure_penalty'] == 0.0
+          assert d['locked_design']['recovery_latencies'] == {'k0':0,'k2':2,'k5':5,'k10':10}
+          assert d['locked_design']['fixed_horizon'] == 50
+          assert d['locked_design']['immediate_rescue_energy'] == 6.0
+          assert d['locked_design']['seeds'] == list(range(1,31))
+          assert len(d['runs']) == 120
+          for c in ['k0','k2','k5','k10']:
+              runs = [r for r in d['runs'] if r['condition'] == c]
+              assert len(runs) == 30
+              assert [r['seed'] for r in runs] == list(range(1,31))
+              assert all(r['post_len'] == 50.0 for r in runs)
+          assert d['secondary_common_state_probe']['bank_size'] == 2000
+          print('PASS: confirmatory result structure matches preregistration')
+          PY
+      - name: Upload immutable confirmatory artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: csc-e3-confirmatory-results
+          path: |
+            papers/costly_selective_closure_supplement/results/consequence_recovery_results.json
+            papers/costly_selective_closure_supplement/EXPERIMENT3_CONSEQUENCE_RECOVERY_PREREGISTRATION.md
+            /tmp/csc-e3-confirmatory.log
+            /tmp/csc-e3-environment.txt
+          retention-days: 7
