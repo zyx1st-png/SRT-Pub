@@ -1,15 +1,15 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-14
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-15
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-14
-source_commit: 6ba5fee3
+generated: 2026-09-15
+source_commit: f50782de
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: false
+source_dirty: true
 inputs_digest: e71e376091b727b1
 ---
 
@@ -26,10 +26,10 @@ inputs_digest: e71e376091b727b1
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-14 |
-| 来源 commit | `6ba5fee3` |
+| 生成日期 | 2026-09-15 |
+| 来源 commit | `f50782de` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
