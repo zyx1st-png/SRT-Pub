@@ -1,0 +1,62 @@
+name: CSC v18 evidence-led artifact check
+
+on:
+  push:
+    branches:
+      - publication/csc-artificial-life-v18-e1e2e3-20260915
+
+permissions:
+  contents: read
+
+jobs:
+  artifact-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build v18 submission artifact
+        working-directory: papers
+        run: python build_artificial_life_v18_submission.py
+      - name: Check word count and evidence retention
+        working-directory: papers
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          p = Path('CostlySelectiveClosure_v18_ArtificialLife_submission.md')
+          t = p.read_text(encoding='utf-8')
+          n = len(re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*", t))
+          assert 6000 <= n <= 12000, n
+          assert 'Repository note.' not in t
+          assert 'Experiment 2: persistent non-terminal metabolic impairment' in t
+          assert 'Experiment 3: fully reversible recovery latency' in t
+          assert 'rho = +0.0548074683' in t
+          assert 'rho = -0.7037203560' in t
+          assert 'consequence architecture' in t.lower()
+          assert 'scalar vulnerability' in t.lower()
+          print('PASS: v18 word count', n)
+          PY
+      - name: Check reference closure at first-author level
+        working-directory: papers
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          t = Path('CostlySelectiveClosure_v18_ArtificialLife_submission.md').read_text(encoding='utf-8')
+          body, refs = t.split('\n## References\n', 1)
+          refs = refs.split('\n## Appendix A.', 1)[0]
+          entries = [x for x in refs.splitlines() if x.startswith('- ')]
+          unused = []
+          for e in entries:
+              m = re.match(r'- ([A-Za-zÀ-ÖØ-öø-ÿ\-]+)', e)
+              if not m:
+                  continue
+              surname = m.group(1)
+              if surname not in body:
+                  unused.append(surname)
+          if unused:
+              raise SystemExit('references whose first-author surname is absent from body: ' + ', '.join(unused))
+          print('PASS: all reference first authors appear in body; entries=', len(entries))
+          PY
