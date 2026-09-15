@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
-from src import csc_consequence_scope as e4
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE / "src"))
+
+import csc_consequence_scope as e4  # noqa: E402
 
 
 def main():
@@ -15,7 +19,7 @@ def main():
         "lr_w": 0.04,
         "gamma": 0.97,
     }
-    out = Path(__file__).resolve().parent / "results" / "consequence_scope_results.json"
+    out = HERE / "results" / "consequence_scope_results.json"
     payload = e4.run_confirmatory(cfg, e4.CONFIRMATORY_SEEDS, out)
     print(json.dumps({
         "primary_scope_test": payload["primary_scope_test"],
