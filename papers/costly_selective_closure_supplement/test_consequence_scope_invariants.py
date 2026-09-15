@@ -1,9 +1,15 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 import numpy as np
 
-from src import csc_experiment as ce
-from src import csc_consequence_scope as e4
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE / "src"))
+
+import csc_experiment as ce  # noqa: E402
+import csc_consequence_scope as e4  # noqa: E402
 
 
 def assert_close_policy(a, b, tol=1e-10):
@@ -54,14 +60,13 @@ def test_exact_timer_semantics():
     for latency in (2, 5, 10):
         for scope in e4.SCOPES:
             env = force_failure(scope, latency)
-            expected_inactive = [True] * latency
             seen = []
             for _ in range(latency):
                 active = env.active_mask().copy()
                 seen.append(bool(not active[0]))
                 actions = np.array([2 if not active[0] else 1, 2 if not active[1] else 1], dtype=int)
                 env.step(actions, active, False)
-            assert seen == expected_inactive
+            assert seen == [True] * latency
             assert env.active_mask()[0]
             if scope == "shared":
                 assert env.active_mask()[1]
@@ -71,19 +76,22 @@ def test_shared_refresh_on_recovery_depletion():
     rng = np.random.default_rng(33)
     env = e4.ConsequenceScopeEnv("shared", 5, rng)
     env.reset()
-    env.energy[:] = [0.2, 1.1]
+    env.energy[:] = [0.2, 0.4]
     active = env.active_mask().copy()
-    env.step(np.array([0, 1], dtype=int), active, False)
+    _r, done, failed, _cats, _m, _e = env.step(np.array([0, 1], dtype=int), active, False)
+    assert not done
+    assert 0 in failed
     assert env.recovery_remaining.tolist() == [5, 5]
-    # On the next shared forced-Rest step, agent 1 is allowed to deplete;
-    # it must be rescued and the shared timer refreshed rather than terminate.
+
+    # Force a later depletion while shared recovery is active; this must rescue
+    # only the actually depleted unit and refresh the common recovery timer.
+    env.energy[1] = 0.1
     active = env.active_mask().copy()
     _r, done, failed, _cats, _m, _e = env.step(np.array([2, 2], dtype=int), active, False)
     assert not done
-    if failed:
-        for i in failed:
-            assert env.energy[i] == ce.E_0
-        assert env.recovery_remaining.tolist() == [5, 5]
+    assert 1 in failed
+    assert env.energy[1] == ce.E_0
+    assert env.recovery_remaining.tolist() == [5, 5]
 
 
 def test_fixed_horizon_and_no_termination():
