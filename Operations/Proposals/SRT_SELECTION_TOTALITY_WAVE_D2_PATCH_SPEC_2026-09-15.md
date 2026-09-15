@@ -13,7 +13,7 @@ date: 2026-09-15
 
 ## 0. Execution contract
 
-This is the single mechanical execution source for Wave D2 semantic landing.
+This is the single mechanical execution source for Wave D2 semantic landing **once the author separately authorizes D2 execution**. This document being ready does not itself mean that semantic landing has started.
 
 Before editing, read:
 
@@ -26,7 +26,7 @@ Before editing, read:
 
 Before semantic landing, recheck live main. If main has changed any D2 owner or its direct current authority dependencies since the verified material-only divergence, STOP and re-audit.
 
-Authorized semantic files are exactly:
+Authorized **candidate scope for a later D2 landing** is exactly:
 
 ```text
 _SRT_D_VALUE_CANONICAL.md
@@ -443,7 +443,7 @@ After semantic PASS:
 
 ## 9. Landing discipline
 
-Recommended commits:
+Recommended commits after separate execution authorization:
 
 ```text
 Truth-up Wave D2 formal consumers
@@ -453,7 +453,10 @@ Regenerate Wave D2 derivatives
 Do not enter D3 after a self-reported green D2. D2 requires an independent final semantic review.
 
 ```text
-D2 LANDING AUTHORIZED BY THIS SPEC: YES, WITH GATES
+D2 PRELANDING REVIEW: PASS
+D2 EXACT PATCH SPEC: READY
+D2 SEMANTIC LANDING: NOT STARTED
+D2 EXECUTION AUTHORIZATION: NOT YET GIVEN IN THIS GATE
 D3: HOLD
 MERGE #976: NO
 ```
