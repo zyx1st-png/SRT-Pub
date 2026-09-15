@@ -77,6 +77,8 @@ Read:
 - `Operations/Audits/SRT_SELECTION_TOTALITY_P0_REFERENCE_CONSISTENCY_MATRIX_2026-09-14.md`
 - `Operations/Audits/SRT_SELECTION_TOTALITY_10_OWNER_PRELANDING_INDEPENDENT_REVIEW_2026-09-14.md`
 - `Operations/Audits/SRT_SELECTION_TOTALITY_WAVE_B_INDEPENDENT_REVIEW_2026-09-15.md`
+- `Operations/Audits/SRT_SELECTION_TOTALITY_CORE01_SECOND_PASS_ADDENDUM_2026-09-15.md`
+- `Operations/Proposals/SRT_CORE01_SELECTION_TOTALITY_CORRECTIVE_PATCH_SPEC_2026-09-15.md`
 
 Independent pre-landing result:
 
@@ -148,13 +150,16 @@ Wave C: HOLD
 Blocking Core01 residuals include:
 
 ```text
+T-Core-A1C3 still gives theorem-strength cross-scale G / κ / consciousness continuity;
 A4 still back-defines all Selection through embodied G-hat / hardware;
 A5 still identifies L2 fixed points with Normative Closure;
 A6 still presents information integration as universal existence criterion;
 A7 still makes Fitness the objective of Selection;
 A10 still asserts universal eternal L0 latent trace / spiritual-topology consequence;
 A12 still derives all operators from a primordial operator entity;
-A11C1 still carries theorem-strength consciousness bridge language.
+A11C1 still carries theorem-strength consciousness bridge language;
+Part A index still carries legacy labels / strengths that must match the repaired body;
+Part B needs an explicit legacy-context guard so retrieval cannot restore old strong claims.
 ```
 
 Required bounded repair remains inside the existing Core01 primary owner; do not expand the 10-owner scope.
@@ -162,6 +167,7 @@ Required bounded repair remains inside the existing Core01 primary owner; do not
 Minimum direction:
 
 ```text
+A1C3 -> cross-scale formed-operator realization hypothesis; κ / consciousness phase map = bridge/model only;
 A4 -> formed / embodied operator finitude;
 A5 -> retained historical efficacy; fixed point = strong stabilization realization;
 A6 -> information-integration realization hypothesis;
@@ -170,8 +176,12 @@ A8/A9 -> scoped bridge / realization hypotheses;
 A10 -> conditional retained history; universal eternal imprint withdrawn / OPEN;
 A11 -> model-scoped friction / stability relation;
 A12 -> formed-operator continuity hypothesis, no primordial operator entity;
-A11C1 -> conditional consciousness bridge hypothesis.
+A11C1 -> conditional consciousness bridge hypothesis;
+Part A index -> synchronized labels / strengths;
+Part B -> legacy-context guard only; no full rewrite.
 ```
+
+Core01 corrective acceptance is C1-C14 across the patch spec plus second-pass addendum.
 
 Only after this Core01 repair passes independent diff review should the derived closure run:
 
@@ -222,8 +232,9 @@ Do not reopen primitive ontology exploration or expand the primary owner set wit
 Next bounded action:
 
 ```text
-full-worktree / Codex Core01 A4-A12 semantic repair
--> independent Core01 diff review
+full-worktree / Codex Core01 A1C3 + A4-A12 semantic repair
+-> synchronize Part A index + Part B legacy guard
+-> independent Core01 diff review against C1-C14
 -> regenerate three split surfaces
 -> regenerate / check context bundles
 -> normal Governance Preflight green
