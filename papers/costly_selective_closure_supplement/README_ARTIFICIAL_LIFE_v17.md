@@ -39,7 +39,7 @@ vs
 cheap-restoration / resettable condition
 ```
 
-The matched real-stake and resettable regimes share the programmed reward function, observations, energy dynamics, policy architecture, training schedule, and seeds. Their programmed regime difference is the depletion transition: terminate versus restore.
+The matched real-stake and resettable regimes share the programmed reward function, observation space and feature specification, energy dynamics, policy architecture, training schedule, and seeds. Their programmed regime difference is the depletion transition: terminate versus restore.
 
 The experiment does **not** independently manipulate or validate B, M, and H. Those remain dimensions of the broader heuristic.
 
@@ -72,9 +72,11 @@ The following existing assets remain authoritative for reproducing the reported 
 
 The historical `figure1_framework.*` and its generator retain the v16 notation and are **not used by the v17 manuscript candidate**.
 
-## 5. Double-blind distribution
+## 5. Review distribution
 
-For double-blind review, distribute the supplement without Git history and without an identity-bearing repository link. The historical root README already records the exact and qualitative reproduction requirements; this v17 note should be included alongside it or used as the submission-facing entry note.
+For journal review, provide the supplement as a static review package or through an access route that does not expose reviewer identity through logs or permissions. Do not require reviewers to authenticate through an identity-bearing repository workflow.
+
+The historical root README contains the exact and qualitative reproduction requirements. This v17 note should be included alongside it or used as the submission-facing entry note.
 
 ## 6. Empirical scope guard
 
