@@ -44,3 +44,5 @@ jobs:
           if missing:
               raise SystemExit(2)
           PY
+
+# second push after workflow creation; no manuscript content changed
