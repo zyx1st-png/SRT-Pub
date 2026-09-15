@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: 71d3b604
+source_commit: fadbf819
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: eed997cf26bb7f9b
+inputs_digest: c12607536210a3e2
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: eed997cf26bb7f9b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `71d3b604` |
+| 来源 commit | `fadbf819` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
