@@ -25,7 +25,7 @@ jobs:
           cp papers/CostlySelectiveClosure_v18_ArtificialLife_submission.md /tmp/csc-v18-submission/
           cp papers/CostlySelectiveClosure_v18_ArtificialLife_COVER_LETTER.md /tmp/csc-v18-submission/
           cp papers/CostlySelectiveClosure_v18_ARTIFICIAL_LIFE_READINESS_GATE.md /tmp/csc-v18-submission/
-          cp papers/costly_selective_closure_supplement/figures/figure1_design_v17.svg /tmp/csc-v18-submission/figures/
+          cp papers/costly_selective_closure_supplement/figures/figure1_design_v18.svg /tmp/csc-v18-submission/figures/
           cp papers/costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg /tmp/csc-v18-submission/figures/
       - uses: actions/upload-artifact@v4
         with:
