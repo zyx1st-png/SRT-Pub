@@ -80,7 +80,9 @@ Likewise, restricted action availability is a mature decision-process problem. S
 
 The additional question raised by this programme concerns **scope**. A consequence may be borne only by the unit that crosses a failure threshold, or it may alter the future available to partners, collectives, or higher-level organizations. In social and collective systems, this distinction can change incentives even when immediate reward tables are unchanged. A partner's continued viability can become instrumentally relevant when the partner's failure reduces one's own continuation opportunities.
 
-The present paper does not claim that this general idea is new. Its empirical contribution is more specific: after a large terminal-versus-restore effect and two failed preregistered generalizations, Experiment 4 prospectively manipulates the scope of the *same non-terminal recovery burden* and tests whether learned cooperation changes.
+The generic proposition that **shared consequence can promote cooperation is not new**. Tampuu et al. (2017), for example, used a cooperative two-agent Pong reward scheme in which both players were penalized whenever the ball left play regardless of which player missed; this team-scoped consequence encouraged the agents to keep the ball in play collaboratively. In *Artificial Life*, Scott and Pitt (2023) explicitly study cooperative-survival games in which no one survives unless everyone survives, linking collective survival dependence to self-organization in artificial societies. These precedents rule out priority claims for shared penalty, shared fate, or cooperative survival as such.
+
+The contribution here is narrower. Tampuu et al. change event rewards, whereas Experiment 4 holds the immediate reward table fixed and changes who temporarily loses normal action opportunity after a failure. Scott and Pitt study richer collective-survival systems with several resource and governance mechanisms, whereas the present programme uses a small matched RL testbed to decompose one initially large terminal-versus-restore effect. The novelty claim therefore lies in the **E1–E4 controlled decomposition**—including two preregistered unfavorable generalization tests and a later preregistered scope discriminator—not in the idea that team-level or shared consequences can support cooperation.
 
 ## 3. Conceptual Motivation: Describing Failure Consequences
 
@@ -322,7 +324,7 @@ The original scalar-like vulnerability term is not retained. E2, E3, and E4 toge
 
 ### 6.8 Relation to precariousness, mortality, and individuality
 
-The consequence-scope result should not be confused with a new definition of precariousness. Enactive precariousness concerns richer organizational dependence than this small RL testbed. What E4 contributes is a controlled demonstration that organizational **scope** of a failure consequence can change learned social policy even when the same recovery mechanism is used.
+The consequence-scope result should not be confused with a new definition of precariousness. Enactive precariousness concerns richer organizational dependence than this small RL testbed. Nor is the generic cooperation benefit of shared consequence new: team-scoped penalties already appear in multi-agent reinforcement learning (Tampuu et al., 2017), and interdependent cooperative survival is already an explicit Artificial Life topic (Scott & Pitt, 2023). The present contribution is the controlled decomposition that identifies a modest scope effect after preserving two failed preregistered generalizations.
 
 This makes the result relevant to individuality and collective organization. A failure can be local to one component, or it can change the future available to a larger unit. When the latter occurs, maintaining another agent may become instrumentally relevant to one's own continuation. The present paper demonstrates only a modest version of that logic, but it provides a concrete experimental handle on a question often left implicit in artificial systems.
 
@@ -370,7 +372,15 @@ The reproduction package preserves the Experiment 1 code and fixed result files;
 
 Experiment 1 retains its historical two-sample label-permutation analysis. A separate post-hoc paired sign-flip sensitivity audit is reproduced directly from the committed outcomes without retraining or replacing the historical result.
 
-Experiments 2, 3, and 4 use **timestamped repository preregistrations**, not third-party preregistration services. In each case the locked design commit predates confirmatory implementation/execution. Experiment 4's first and only confirmatory run and artifact are additionally identified by run/artifact IDs and SHA-256 hashes in the repository adjudication record.
+Experiments 2, 3, and 4 use **timestamped repository preregistrations**, not third-party preregistration services. The exact locked-design commits are:
+
+```text
+Experiment 2: 5852e60d82efc14748ae3478ee2400b4d3600839
+Experiment 3: 0c599c14ea24196c6e2d411ecd0e4e17124f18f1
+Experiment 4: 66cb46c45e99c5535c1f63b9c200ff9dbe911506
+```
+
+In each case the locked design commit predates confirmatory implementation/execution. Experiment 4's first and only confirmatory run and artifact are additionally identified by run/artifact IDs and SHA-256 hashes in the repository adjudication record.
 
 The historical code uses the regime label `real` for the Experiment 1 terminal condition. The manuscript uses **terminal** to avoid implying that one software condition possesses metaphysically "real" stakes.
 
@@ -382,24 +392,19 @@ OpenAI ChatGPT was used during the September 2026 revision process for literatur
 
 ## References
 
-- Aguilera, M., Millidge, B., Tschantz, A., & Buckley, C. L. (2022). How particular is the physics of the free energy principle? *Physics of Life Reviews, 40*, 24–50.
-- Beer, R. D. (1995). A dynamical systems perspective on agent-environment interaction. *Artificial Intelligence, 72*(1–2), 173–215.
-- Beer, R. D. (2004). Autopoiesis and cognition in the Game of Life. *Artificial Life, 10*(3), 309–326.
 - Beer, R. D., & Di Paolo, E. A. (2023). The theoretical foundations of enaction: Precariousness. *BioSystems, 223*, 104823. https://doi.org/10.1016/j.biosystems.2022.104823
 - Boutilier, C., Cohen, A., Daniely, A., Hassidim, A., Mansour, Y., Meshi, O., Mladenov, M., & Schuurmans, D. (2018). Planning and learning with stochastic action sets. In *Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence* (pp. 4674–4682). https://doi.org/10.24963/ijcai.2018/650
-- Chan, B. W.-C. (2019). Lenia: Biology of artificial life. *Complex Systems, 28*(3), 251–286.
 - Chandak, Y., Theocharous, G., Metevier, B., & Thomas, P. S. (2020). Reinforcement learning when all actions are not always available. *Proceedings of the AAAI Conference on Artificial Intelligence, 34*(04), 3381–3388. https://doi.org/10.1609/aaai.v34i04.5740
 - Chen, S., & Chen, T. (2026). Synthetic Linguistic Agency: How an Embodied Mortal Agent Learns Linguistic Affordances through Consequential Social Experience. *arXiv preprint arXiv:2608.27843*.
 - Damiano, L., & Stano, P. (2020). On the "life-likeness" of synthetic cells. *Frontiers in Bioengineering and Biotechnology, 8*, 953. https://doi.org/10.3389/fbioe.2020.00953
 - Di Paolo, E. A. (2005). Autopoiesis, adaptivity, teleology, agency. *Phenomenology and the Cognitive Sciences, 4*(4), 429–452.
 - Egbert, M. D., & Barandiaran, X. E. (2011). Quantifying normative behavior and precariousness in adaptive agency. In *Advances in Artificial Life (ECAL 2011)* (pp. 210–217).
-- Friston, K. J. (2013). Life as we know it. *Journal of the Royal Society Interface, 10*(86), 20130475.
 - Hisaki, Y., & Ono, I. (2024). RVI-SAC: Average reward off-policy deep reinforcement learning. In *Proceedings of the 41st International Conference on Machine Learning* (PMLR 235, pp. 18352–18373).
-- Kirchhoff, M. D., Parr, T., Palacios, E., Friston, K. J., & Kiverstein, J. (2018). The Markov blankets of life: Autonomy, active inference and the free energy principle. *Journal of the Royal Society Interface, 15*(138), 20170792.
 - Korecki, M., Carissimo, C., & Lund, T. (2023). aRtificiaL death: learning from stories of failure. *Proceedings of the 2023 Conference on Artificial Life*, 41. https://doi.org/10.1162/isal_a_00633
 - Maturana, H. R., & Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. Reidel.
 - Moreno, A., & Mossio, M. (2015). *Biological Autonomy: A Philosophical and Theoretical Enquiry*. Springer.
-- Raja, V., Valluri, D., Baggs, E., Chemero, A., & Anderson, M. L. (2021). The Markov blanket trick: On the scope of the free energy principle and active inference. *Physics of Life Reviews, 39*, 49–72.
+- Scott, M., & Pitt, J. (2023). Interdependent Self-Organizing Mechanisms for Cooperative Survival. *Artificial Life, 29*(2), 198–234. https://doi.org/10.1162/artl_a_00403
+- Tampuu, A., Matiisen, T., Kodelja, D., Kuzovkin, I., Korjus, K., Aru, J., Aru, J., & Vicente, R. (2017). Multiagent cooperation and competition with deep reinforcement learning. *PLOS ONE, 12*(4), e0172395. https://doi.org/10.1371/journal.pone.0172395
 - Williams, R. J. (1992). Simple statistical gradient-following algorithms for connectionist reinforcement learning. *Machine Learning, 8*, 229–256.
 - Witkowski, O., & Schwitzgebel, E. (2024). The ethics of life as it could be: Do we have moral obligations to artificial life? *Artificial Life, 30*(2), 193–215. https://doi.org/10.1162/artl_a_00436
 
@@ -427,12 +432,12 @@ Held-out policies from bank-generation seeds `1001–1010`, disjoint from evalua
 
 ## Appendix B. Experiment 2 Confirmatory Guard
 
-Experiment 2 preregistered ordered damage-persistence conditions, paired seeds `1–30`, its blocked-by-seed primary test, significance rule, and `+0.10` endpoint threshold before confirmatory execution. Its first confirmatory artifact is preserved. No post-result retuning replaced the no-support outcome.
+Experiment 2 preregistered ordered damage-persistence conditions, paired seeds `1–30`, its blocked-by-seed primary test, significance rule, and `+0.10` endpoint threshold before confirmatory execution. Its locked design commit is `5852e60d82efc14748ae3478ee2400b4d3600839`. The first confirmatory artifact is preserved. No post-result retuning replaced the no-support outcome.
 
 ## Appendix C. Experiment 3 Confirmatory Guard
 
-Experiment 3 was separately preregistered after the Experiment 2 result. Before confirmatory seeds `1–30` were run, latency levels `0/2/5/10`, fixed 50-step horizon, immediate rescue, zero new failure penalty, eligible-step primary endpoint, blocked-by-seed permutation test, common-state secondary probe, and `+0.10` endpoint threshold were locked. The first confirmatory artifact is preserved. The observed negative direction is reported without reversing the preregistered positive hypothesis after seeing the data.
+Experiment 3 was separately preregistered after the Experiment 2 result. Before confirmatory seeds `1–30` were run, latency levels `0/2/5/10`, fixed 50-step horizon, immediate rescue, zero new failure penalty, eligible-step primary endpoint, blocked-by-seed permutation test, common-state secondary probe, and `+0.10` endpoint threshold were locked at commit `0c599c14ea24196c6e2d411ecd0e4e17124f18f1`. The first confirmatory artifact is preserved. The observed negative direction is reported without reversing the preregistered positive hypothesis after seeing the data.
 
 ## Appendix D. Experiment 4 Confirmatory Guard
 
-Experiment 4 was preregistered after the E1–E3 mechanism audit and before implementation or confirmatory execution. It locked individual versus shared scope, nonzero latencies `2/5/10`, new seeds `101..130`, fixed 50-step horizon, immediate rescue, zero failure penalty, fixed-horizon return normalization and gradient scaling, a common 2,000-state frozen-policy primary endpoint, latency-collapsed paired sign-flip inference, and the `+0.10` strong-effect threshold. The first and only confirmatory run produced Outcome B: positive but modest scope support. No second confirmatory run or parameter retuning is permitted under that preregistration.
+Experiment 4 was preregistered after the E1–E3 mechanism audit and before implementation or confirmatory execution at commit `66cb46c45e99c5535c1f63b9c200ff9dbe911506`. It locked individual versus shared scope, nonzero latencies `2/5/10`, new seeds `101..130`, fixed 50-step horizon, immediate rescue, zero failure penalty, fixed-horizon return normalization and gradient scaling, a common 2,000-state frozen-policy primary endpoint, latency-collapsed paired sign-flip inference, and the `+0.10` strong-effect threshold. The first and only confirmatory run produced Outcome B: positive but modest scope support. No second confirmatory run or parameter retuning is permitted under that preregistration.
