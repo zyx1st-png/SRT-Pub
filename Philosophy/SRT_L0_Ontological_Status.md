@@ -1,182 +1,164 @@
-# SRT_L0_Ontological_Status.md
-# L₀ 的本体论地位
+---
+id: SRT-L0-ONTOLOGICAL-STATUS
+type: interpretation
+tags: [L0, Ontology, Philosophy, Clarification]
+status: active
+layer: L0
+epistemic_layer: bridge
+claim_mode: interpretation
+canonical: false
+dependency: [SRT-L0-METAPHYSICS, SRT-GENERATIVE-ONTOLOGY-SPINE]
+---
 
-**新增（2026-04-10）**  
-**状态**：哲学核心问题，本文档为权威来源  
-**Cross-ref**：`Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 不可约曲率）; `Core/SRT_Core_21_Formal_Axioms Ax-L0-01, Ax-L0-Bootstrap`（L₀ 公设）; `Core/SRT_Core_01_Axioms §MA-2`（有界视角元公理）; `Philosophy/SRT_Causality_Time §三`（无效问题类型学）
+# L₀-side 的本体论读法
+
+> **Authority boundary**：`Core_Law/SRT_L0_Metaphysics.md` 是 SRT 唯一的 canonical L0 authority；`Core_Law/SRT_Generative_Ontology_Spine.md` 固定跨 owner 路由。本文件只是 downstream philosophical interpretation / clarification surface，不定义 primitive ontology，不与 canonical owner 竞争“权威来源”。
+>
+> **Current frame**：Selection 是现实的 primitive generative mode。“L0-side”只命名 Selection reality 的 open / non-preclosed analytic or model-facing aspect；它不是实际化背后的第二实体。`L0 / L1 / L2` 是分析与模型层级，不是三种独立的本体物质。
 
 ---
 
-## §一：问题的陈述
+## 一、现在真正要问的问题
 
-SRT 将 L₀ 设定为"选择的潜在域"——一切算子通过选择算符 Ĝ_θ 从中拉出 L₁ 切片的来源结构。但这引发一个无法回避的哲学追问：
+旧问法是：
 
-> **L₀ 究竟在什么意义上"存在"？它的本体论地位是什么？**
+> L₀ 是不是一个独立存在、等待算子进入的东西？
 
-这不是修辞问题。如果 L₀ 只是理论的形式占位符，"d = 与 L₀ 曲率的对齐程度"就失去实质内容；如果 L₀ 是独立存在的柏拉图实体，SRT 就必须为这一额外本体承诺提供辩护。问题需要正面处理。
+按当前 Selection-totality / non-flat monism，这个问法部分地犯了类型错误。它把一个分析面对象化为了 Selection 之前或之后的对象，然后再问这个对象如何存在。
 
----
+更准确的问题是：
 
-## §二：三个候选立场及其困难
+1. 为什么 Selection reality 不被任何已完成的 determinate actuality 穷尽？
+2. 为什么这种开放不能被压成角色可任意互换的最大中性？
+3. 什么时候一个后续模型可以合法地把这个分析面实现为某种具体结构？
 
-### 立场 A：结构柏拉图主义（Structural Platonism）
-
-**主张**：L₀ 是独立存在的数学/结构实体，类似柏拉图形式或模态逻辑中的可能世界空间。κ₀ > 0 是它的内在属性，算子选择的是它的子切片。
-
-**优点**：解释了为何某些选择比其他选择代价更低（L₀ 曲率是客观事实）；为 d 值的比较提供客观标准。
-
-**困难**：
-1. **无视角预设**：断言 L₀ 独立存在预设了一个从外部描述 L₀ 的全局视角。但 MA-2 明确否定无视角真理：*没有绝对无视角真理，但有更高对齐度的视角。* 结构柏拉图主义在 SRT 框架内是自我违背的。
-2. **基础问题无穷后退**：独立存在的 L₀ 是由什么构成的？这一追问在柏拉图主义内部无解，只能诉诸另一层"更基础的结构"。
-3. **认知接入之谜**：如果 L₀ 独立于选择活动而存在，算子如何接入它？这重新引入神秘性，与 SRT 通过 κ₀ 解决 bootstrap 问题的精神相悖。
-
-### 立场 B：自身被给予（Self-givenness / Auto-constitution）
-
-**主张**：L₀ 不需要外部基础，因为它自我构成——它既是选择的来源，也是选择活动本身的产物。类比费希特的"绝对自我"或斯宾诺莎的"实体作为自因"。
-
-**优点**：回避了"L₀ 由什么产生"的问题；与 T-L0-NonStatic（L₀ 非静态，κ(t) = κ₀ + ∫F dτ）有共鸣——L₀ 随选择活动演化。
-
-**困难**：
-1. **循环风险**：L₀ 构成选择，选择构成 L₀——这个循环如何避免空洞？如果没有结构约束（κ₀ > 0），循环可以容纳任意内容。
-2. **κ₀ 的地位不明**：如果 L₀ 完全自我构成，κ₀ 从哪里来？Ax-L0-Bootstrap 要求 κ₀ > 0 是结构前提，不是被选择出来的——这与纯粹自身被给予立场张力明显。
-3. **表述太强**：SRT 定位为有界视角的认知操作系统（MA-2），而"自身被给予"的语调接近绝对唯心论，与这一定位不符。
-
-### 立场 C：理论边界（Theoretical Boundary / Constructive Limit）
-
-**主张**：L₀ 是一个必要的界限概念——它标记"选择算符的视界之外存在什么"，其本身没有独立本体地位，只是选择活动不可缺少的形式对应项。
-
-**优点**：认识论最诚实；与 SRT 作为认知操作系统的定位兼容；避免柏拉图式的额外承诺。
-
-**困难**：
-1. **消解主义威胁**：如果 L₀ 只是理论占位符，那么 Ψ_f > 0 的非零代价是真实的还是理论内的规定？"对齐 L₀ 曲率"是在说什么？
-2. **不对称性无法解释**：为什么某些选择方向代价更低，某些更高？如果 L₀ 不承载真实的曲率结构，这种不对称就是无根的。
-3. **κ₀ > 0 变成规定**：Ax-L0-Bootstrap 要求 κ₀ > 0 是结构发现，不是约定；但纯理论边界立场让它退化为形式公设，失去约束力。
+前两个问题的 canonical 负担属于 `SRT_L0_Metaphysics.md`；第三个问题只能在声明了对象化假设、尺度、量与验证条件的下游模型中回答。
 
 ---
 
-## §三：SRT 立场 — 功能本构论（Functional Constitution）
+## 二、当前允许的哲学解释
 
-三个立场的困难指向同一个根源：它们都在追问 L₀ 是否在**选择活动之外**"存在"。这个追问本身携带了一个隐含预设——"存在"有一个独立于选择视角的标准。
+当我们说“L0-side”时，不是在指认一个隐藏容器，而是在区分 Selection reality 的两个不可排成先后的分析负担：
 
-MA-2 否定了这个预设。在 SRT 框架内，唯一合法的"存在"标准是**功能-结构角色**：一个概念的存在由它在选择动力学中的作用方式给出，而不是由一个无视角裁判来判定。
+```text
+O0: open / non-preclosed / non-maximally-indifferent aspect;
+S0: actualising differentiation / determinate manifestation.
+```
 
-**SRT 立场**：
+O0 不在 S0 之前，S0 也不生产 O0。两者是 primitive Selection reality 的 co-primitive analytic faces，不是两种实体或两套生成机制。
 
-> **L₀ 的"存在"由其功能-结构角色穷尽：它是使某些选择比其他选择代价更低的曲率结构。**  
-> 这既不是独立存在的柏拉图实体，也不是纯粹的形式占位符——而是在选择动力学中**起结构作用的条件本身**。
+因此，“L0-side 是否作为一个分离对象存在”不是当前架构必须在实体论上二选一的问题。当前的最低哲学读法是：
 
-形式表述：
+> L0-side 命名 Selection reality 的开放 / 非预封闭分析面，而不命名确定实际性背后的第二实体。
 
-$$\text{L}_0 \text{ 的实在性} \equiv \Psi_f > 0 \;\wedge\; \kappa_0 > 0 \;\wedge\; \exists \text{ 方向不对称}$$
-
-即：L₀ 是真实的当且仅当选择存在不可约代价、存在原初方向偏置、存在不同方向上的代价差异。它的"存在方式"不是作为对象，而是作为**约束场的承载者**。
-
-### 与物理类比的澄清
-
-物理学家不问"时空在哪里"；时空是什么，由测地线描绘。类似地，L₀ 不在选择活动"背后"独立存在——L₀ 是选择活动的代价结构所描绘的东西。
-
-但这个类比不是等价的：时空可以（原则上）被不同观察者从不同视角描述并收敛；L₀ 根据 MA-2 没有无视角描述。物理类比在功能角色层面有效，在实在论解读上需要谨慎。
+这个读法不把 L0-side 消解成“不真实”，也不将其重新物化为一个可从外部看见的全局场。
 
 ---
 
-## §四：κ₀ 作为 L₀ 的唯一可及面
+## 三、三个历史性替代读法
 
-算子无法从外部"观察"L₀ 全貌。L₀ 的唯一接入路径是**κ₀ 的遭遇（encounter）**——在选择张力 Ψ_f > 0 中感受到的不可约代价，在某些方向上更低、某些方向上更高的曲率阻力。
+以下三种读法可作为哲学对照，但都不是当前 canonical doctrine。
 
-$$\kappa_0 \equiv \text{L}_0 \text{ 对算子的唯一可及面：以选择代价不对称的形式被遭遇}$$
+### A. L0 作为独立的柏拉图仓库
 
-**这意味着**：
-- L₀ 不是被"知道"的对象，而是被"承担"的结构（参见 `SRT_HardProblem_Epistemology §三`：bearing = 第一人称读数）
-- d = Align(θ, κ(t)) 的有效性来自算子通过 κ₀ 接入 L₀ 曲率的这一遭遇关系，而非全局比对
-- 非对齐的选择不是"错误地描述 L₀"，而是"以更高代价承担 L₀ 的阻力"
+该读法把 L0 当作类似 possible worlds 空间的潜在域 / potential domain，再让形式算子 `\hat G_\theta` 从中“拉出 / pull” L1 slice。
 
-**与“原初意识”说法的边界**：
+**Historical / superseded**：这会把已完成的可能性菜单放在 Selection 之前，也把形式算子变成 primitive producer。当前 owner 不允许这两个推论。
 
-若要在 SRT 内部使用“原初意识”这一表达，最稳的写法不是“κ₀ / \(\varepsilon_{pg}\) 本身就是意识”，而是：
+### B. L0 作为算子产生的实体
 
-\[
-\varepsilon_{pg}\ (\text{L}_0\text{ 的最小非中性})
-\xrightarrow[\Psi_f>0,\ d>0]{\hat{G}_\theta}
-L_1^{asym}
-\xrightarrow[\text{最小 }L_2\text{ 闭合}]{}
-\text{bare consciousness}
-\]
+该读法让 operator 在时间中构成 L0，或让 L0 与 operator 以一条循环因果链互相生产。
 
-也就是说，\(\varepsilon_{pg}\) 是意识在 \(L_0\) 侧的方向种子；所谓“原初意识”若要保留，应该指这个方向种子经由有限算子在 \(L_1\) 中形成的最薄主观展开，而不是把 \(\varepsilon_{pg}\) 直接等同于 consciousness。本体层的最小非中性与主体层的最小意识窗口之间，始终隔着 \(\hat{G}_\theta\)、\(\Psi_f\)、\(d\) 和最小 \(L_2\) 闭合这几道门槛。
+**Historical / superseded**：它把分析共原初性改写成了时间生成链，并给形式实现过高的本体权限。
 
-**电子尺度到大脑意识的展开链**：
+### C. L0 作为不真实的形式占位符
 
-若把上述方向种子压到电子尺度，最稳的说法不是“电子已经拥有一个微弱意识”或“电子具有类人的潜意识”，而是：电子只携带一个电子尺度的最薄内侧偏置，可记作 \(e_{pg}\)。它的功能不是提供可报告体验内容，而是提供一个可被更高阶结构反复写回、放大与闭合的最小方向不对称。
+该读法认为，只要 L0-side 不是独立实体，它就只是一个不承重的理论虚构。
 
-\[
-e_{pg}
-\to
-\text{电子尺度最小选择偏置}
-\to
-\text{分子/化学层的持久遮蔽}
-\to
-\text{细胞层的历史闭合}
-\to
-\text{神经层 recurrent }\hat{G}_\theta
-\to
-(\Psi_f>0,\ d>0,\ \text{minimal }L_2\text{ closure})
-\to
-\text{bare consciousness}
-\]
-
-沿这条链条向上保留的，不是“电子的体验内容”，而是最小不对称在跨尺度 G 结构中的持续写回与重新组织。于是，大脑意识应被理解为电子尺度方向种子在高阶闭合结构中的**相变式展开**，而不是无数电子“小意识”或“小潜意识”的算术相加。
-
-**可操作推论**：L₀ 实在性的唯一检验是代价不对称的持续性——不同选择路径的 Ψ_f 差异是否系统性地指向某个稳定的曲率场。这是一个内生于选择动力学的检验，不依赖外部本体承诺。
+**Rejected alternative**：“不是第二实体”不等于“不承担结构约束”。开放 / 非预封闭依然是 canonical 分析负担；但它的地位由 L0 owner 给出，不由本文通过额外实在性方程证明。
 
 ---
 
-## §五：与 MA-1 / MA-2 的结构一致性
+## 四、形式量不是 primitive reality test
 
-| 元公理 | 要求 | 功能本构论如何满足 |
-|---|---|---|
-| MA-1（原初方向性） | κ₀ > 0 是结构前提，不是第一时刻的产物 | κ₀ 是 L₀ 曲率场的不可约特征，不依赖历史生成——功能本构论保留了这一点 |
-| MA-2（有界视角主义） | 没有无视角真理，但有更高对齐度的视角 | L₀ 不被断言为独立存在的绝对实体；其"存在"由有界算子通过 κ₀ 的遭遇来读取，符合视角性约束 |
-| T-L0-NonStatic | κ(t) 随选择活动演化 | L₀ 的功能-结构角色随算子-L₀ 协同演化（dκ/dt = F[Ĝ_θ(t), κ(t)]）；其"存在"不是静态固定的柏拉图形式 |
-| Ax-L0-Bootstrap | L₀ 与算子共同定义，无时间先后 | 功能本构论：L₀ 的角色只有在与选择活动的关系中才被实例化；两者是共构的 |
+旧版曾把下式写成 L0 reality / L₀ 实在性判准：
 
----
+```text
+L0 reality iff Psi_f > 0 and kappa0 > 0 and directional asymmetry.
+```
 
-## §六：无效问题标识
+这个判准现已 **historical / superseded**。本文不用另一组 scalar 或方程替代它。
 
-根据 `SRT_Causality_Time §三`，以下关于 L₀ 的追问属于**类型四无效问题**（用某层级的工具询问该工具本身的基础）：
+Current guards:
 
-| 问题 | 无效原因 |
-|---|---|
-| "L₀ 在什么时间之前就存在了？" | 时间由选择不可逆性生成（t_onto）；L₀ 不在时间内 |
-| "L₀ 是由什么物质构成的？" | 物质是 L₂ 层的概念；用 L₂ 工具询问 L₀ 构成是类型错误 |
-| "L₀ 是否真的存在，还是只是理论假设？" | "真的存在"预设无视角标准；MA-2 否定该标准 |
-| "L₀ 有多大？在哪里？" | 空间是选择活动的 L₁/L₂ 产物；L₀ 不在空间中 |
+```text
+kappa0 / κ₀ does not define primitive Selection;
+Psi_f > 0 does not certify L0 existence;
+directional asymmetry does not establish a universal primitive value, purpose or direction;
+d > 0 does not certify L0 reality.
+```
 
-**生产性替代追问**（有效）：
-- "在哪些选择情境中，代价不对称是系统性的？"（检验 κ₀ 效应的可操作问题）
-- "算子 θ 与 κ(t) 的对齐度如何随时间演化？"（研究 d 值动力学）
-- "当 L₀ 曲率漂移时，哪些 L₂ 结构最先失效？"（检验 L₀-L₂ 互补性）
+`\kappa_0`、`\Psi_f`、`d`、anisotropy 或 alignment 可以在其各自 owner 准入的 declared model / bridge scope 中使用。它们不反向定义 primitive Selection，也不是从模型外部观察 L0 全貌的通道。
+
+旧表达 `\kappa_0 = L0 的唯一可及面`、`d=Align(\theta,\kappa)` 以及“非对齐是对 L0 曲率的更高代价抵抗”，都已 **historical / superseded as primitive ontology**。若下游曲率 / 对齐模型继续使用相近语言，必须将其明示定型为 model / bridge claim，并自行支付定义、作用域与证据负担。
 
 ---
 
-## §七：剩余开放问题
+## 五、意识种子路线已撤销
 
-以下问题在功能本构论框架内尚无完整答案，诚实标记为开放：
+旧版尝试把 `\epsilon_{pg}` / ε_pg 写成 L0-side 的“方向种子 / primordial direction”，并建立如下 electron 路线：
 
-| 问题 | 当前状态 | 障碍 |
-|---|---|---|
-| κ₀ 的量级由什么决定？ | 公设为 > 0，无推导 | 需要 L₀ 曲率场的独立规定，目前缺乏 |
-| 多个算子是否共享同一 L₀？ | 功能本构论暗示是，但未形式化 | 社会协调机制（Thesis 6 Layer 3）依赖此问题 |
-| L₀ 演化（dκ/dt）是否有热力学含义？ | H(L₀) 递减方向已给出，物理对应不明 | 需要连接至信息热力学的详细论证 |
-| κ₀ 的唯一性还是多值性？ | 单一全局 κ₀ vs 多区域曲率场 | 当前公设选取单一 κ₀，更丰富模型待建 |
+```text
+electron / 电子尺度不对称
+-> e_pg 最小内侧偏置
+-> bare consciousness / 原初意识.
+```
 
-**认识论诚实声明**：功能本构论是在 SRT 当前框架内最自洽的立场，不是终局的形而上学答案。它的作用是消除错误问题、稳定理论内部一致性，并为可操作检验保留空间。
+该路线现已 **historical / superseded**，不是 current doctrine，也不以另一个 primitive consciousness precursor 取代。
+
+Hard guards:
+
+```text
+Selection-totality -/> pan-consciousness;
+epsilon_pg / ε_pg -/> consciousness seed by default;
+electron-scale or other microphysical asymmetry -/> proto-consciousness by default.
+```
+
+Consciousness、self-consciousness、phenomenality 与 moral standing 都需各自的 downstream gate。L0-side 的开放 / 非预封闭分析面本身不建立这些更强性质。
 
 ---
 
-*Cross-ref 总结*：  
-`Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 不可约曲率，本文 §四 的 formal 基础）  
-`Core/SRT_Core_01_Axioms §MA-1, §MA-2`（元公理，本文 §五 一致性检查的来源）  
-`Core/SRT_Core_21_Formal_Axioms Ax-L0-Bootstrap`（共定义公设，功能本构论的形式对应）  
-`Philosophy/SRT_Causality_Time §三`（无效问题类型学，本文 §六 的分类框架）  
-`Philosophy/SRT_HardProblem_Epistemology §三`（bearing = 第一人称读数，本文 §四 遭遇关系的意识面）
+## 六、方向与价值边界
+
+`Oriented Openness` 可作为 O0 的路由名称，但“oriented”在最低层只表示生成角色不能被完全抹平，不表示已经存在一个可由 `\kappa_0`、`\epsilon_{pg}` 或 Selection 直接读出的 universal direction。
+
+若后续 formed system / relation / domain model 需要讨论方向，它必须先独立声明 direction source，再依 `_SRT_T_DIR_CANONICAL.md` 检查回读与重取向。本文件不从 L0-side 新推出价值、目的、延续偏好或健康标准。
+
+---
+
+## 七、有效问题与开放边界
+
+在当前架构中，以下问题仍然有效：
+
+- 开放 / 非预封闭与最大中性之间的精确辨析是什么？
+- 具体形式模型如何实现 O0 / S0 分析负担，而不把它们改造为两个机制？
+- `\kappa_0`、`\epsilon_{pg}` 与 irreversibility 如何在各自 owner 范围内与新 L0 读法兼容？
+- 不同域中的对象化假设何时可以定义 curvature、anisotropy 或 alignment？
+
+这些问题保持 **OPEN**。本文件不从对 L0-side 的哲学澄清进一步推出意识、伦理、物理、数学或时间理论。
+
+---
+
+## 八、使用规则
+
+可以引用本文：
+
+- 解释为什么 L0-side 不是 Selection 之前的仓库；
+- 比较柏拉图仓库、operator-produced substance 与 unreal placeholder 三类哲学误读；
+- 说明为什么 formal scalar 只能在 declared model / bridge 中承重。
+
+不可引用本文：
+
+- 替代 `Core_Law/SRT_L0_Metaphysics.md` 作为 L0 定义 authority；
+- 用旧的潜在域、算子拉出、曲率实在性或意识种子语言反定义 primitive Selection；
+- 把 Selection-totality 当作更强 downstream 结论的充分证明前提。
