@@ -3,7 +3,7 @@ id: SRT-SELECTION-TOTALITY-WAVE-D2-CORE22-CORRECTIVE-PATCH-SPEC-20260915
 type: proposal
 status: active
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: proposal
 canonical: false
 date: 2026-09-15
