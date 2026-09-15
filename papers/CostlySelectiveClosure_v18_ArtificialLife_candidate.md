@@ -162,7 +162,7 @@ The historical Experiment 1 result files were analysed with a two-sided **two-sa
 
 A third historical **simulated-stake** condition remains restore-based while adding a mortality cue and an additional represented-danger penalty. It is auxiliary and is not treated as part of the clean two-condition causal contrast.
 
-![Experiment 1 design](costly_selective_closure_supplement/figures/figure1_design_v17.svg)
+![Experiment 1 design](costly_selective_closure_supplement/figures/figure1_design_v18.svg)
 
 **Figure 1.** Experiment 1. Terminal and restore conditions share the same reward and observation specification but differ in the depletion transition. The historical simulated-stake condition is auxiliary.
 
