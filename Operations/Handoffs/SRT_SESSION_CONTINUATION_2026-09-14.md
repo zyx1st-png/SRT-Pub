@@ -159,7 +159,8 @@ A10 still asserts universal eternal L0 latent trace / spiritual-topology consequ
 A12 still derives all operators from a primordial operator entity;
 A11C1 still carries theorem-strength consciousness bridge language;
 Part A index still carries legacy labels / strengths that must match the repaired body;
-Part B needs an explicit legacy-context guard so retrieval cannot restore old strong claims.
+Part B and its connector-reachable shards still need local legacy-context guards;
+bottom Formalization Summary / Mechanism Explanation still restate superseded strong claims and must be locally marked legacy.
 ```
 
 Required bounded repair remains inside the existing Core01 primary owner; do not expand the 10-owner scope.
@@ -178,10 +179,11 @@ A11 -> model-scoped friction / stability relation;
 A12 -> formed-operator continuity hypothesis, no primordial operator entity;
 A11C1 -> conditional consciousness bridge hypothesis;
 Part A index -> synchronized labels / strengths;
-Part B -> legacy-context guard only; no full rewrite.
+Part B -> general + local legacy-context guards, no full rewrite;
+Formalization Summary / Mechanism Explanation -> local supersession markers.
 ```
 
-Core01 corrective acceptance is C1-C14 across the patch spec plus second-pass addendum.
+Core01 corrective acceptance is C1-C16 across the patch spec plus second-pass addendum.
 
 Only after this Core01 repair passes independent diff review should the derived closure run:
 
@@ -233,8 +235,8 @@ Next bounded action:
 
 ```text
 full-worktree / Codex Core01 A1C3 + A4-A12 semantic repair
--> synchronize Part A index + Part B legacy guard
--> independent Core01 diff review against C1-C14
+-> synchronize Part A index + distributed Part B legacy guards + bottom summary markers
+-> independent Core01 diff review against C1-C16
 -> regenerate three split surfaces
 -> regenerate / check context bundles
 -> normal Governance Preflight green
