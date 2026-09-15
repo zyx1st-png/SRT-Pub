@@ -9,6 +9,8 @@ OUT = PAPERS / "CostlySelectiveClosure_v17_ArtificialLife_submission.md"
 
 AI_DISCLOSURE = """## AI Assistance Disclosure\n\nOpenAI ChatGPT was used as an editorial and research-assistance tool during manuscript development, including literature discovery, structural critique, language revision, and consistency checking across manuscript, code descriptions, and reported results. The tool did not serve as an author. The author independently checked the cited sources, version-controlled experimental code, analyses, and manuscript claims and takes full responsibility for the content. The reported numerical results come from the committed experimental runs described in the reproduction package rather than from generative-model output.\n\n"""
 
+SUBMISSION_DATA_NOTE = """For review, the reproduction package should be uploaded with the manuscript or provided through a reviewer-safe access route that does not identify individual reviewers through permissions or access logs. The package contains the experiment code, fixed result files, statistical procedures, seeds, figure-generation scripts, and the locked environment used for exact reproduction of the common-state probe.\n"""
+
 
 def strip_frontmatter(text: str) -> str:
     if not text.startswith("---\n"):
@@ -27,6 +29,32 @@ def strip_repository_note(text: str) -> str:
         count=1,
         flags=re.S,
     )
+
+
+def normalize_data_availability(text: str) -> str:
+    start = text.find("## Data and Code Availability\n")
+    end = text.find("\n## References\n", start)
+    if start == -1 or end == -1:
+        raise RuntimeError("Data and Code Availability block not found")
+
+    existing = text[start:end]
+    first_para_match = re.search(
+        r"## Data and Code Availability\n\n(.*?)(?=\n\n)",
+        existing,
+        flags=re.S,
+    )
+    if not first_para_match:
+        raise RuntimeError("primary data/code paragraph not found")
+
+    primary = first_para_match.group(1).strip()
+    replacement = (
+        "## Data and Code Availability\n\n"
+        + primary
+        + "\n\n"
+        + SUBMISSION_DATA_NOTE.strip()
+        + "\n"
+    )
+    return text[:start] + replacement + text[end:]
 
 
 def inject_ai_disclosure(text: str) -> str:
@@ -63,6 +91,9 @@ def validate(text: str) -> None:
         "Ψ_f",
         "CostlySelectiveClosure_v16.md",
         "Adaptive Behavior v16",
+        "v16 Adaptive Behavior",
+        "v17-specific supplement note",
+        "historical supplement README",
     ]
     for item in forbidden:
         if item in text:
@@ -82,6 +113,7 @@ def main() -> None:
     text = SRC.read_text(encoding="utf-8")
     text = strip_frontmatter(text)
     text = strip_repository_note(text)
+    text = normalize_data_availability(text)
     text = inject_ai_disclosure(text)
     text = text.lstrip()
     validate(text)
