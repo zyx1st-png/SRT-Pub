@@ -406,7 +406,6 @@ OpenAI ChatGPT was used during the September 2026 revision process for literatur
 ## References
 
 - Aguilera, M., Millidge, B., Tschantz, A., & Buckley, C. L. (2022). How particular is the physics of the free energy principle? *Physics of Life Reviews, 40*, 24–50.
-- Baltieri, M., & Suzuki, K. (2026). Mathematical approaches to the study of agents. *Philosophical Transactions of the Royal Society B* (to appear).
 - Beer, R. D. (1995). A dynamical systems perspective on agent-environment interaction. *Artificial Intelligence, 72*(1–2), 173–215.
 - Beer, R. D. (2004). Autopoiesis and cognition in the Game of Life. *Artificial Life, 10*(3), 309–326.
 - Beer, R. D., & Di Paolo, E. A. (2023). The theoretical foundations of enaction: Precariousness. *BioSystems, 223*, 104823. https://doi.org/10.1016/j.biosystems.2022.104823
