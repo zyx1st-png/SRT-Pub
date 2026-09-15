@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: fac06c3b
+source_commit: 6eb6907a
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: 1f2fc349662d57b2
+inputs_digest: 963eb88c428d5353
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 1f2fc349662d57b2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `fac06c3b` |
+| 来源 commit | `6eb6907a` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |
@@ -51,7 +51,7 @@ inputs_digest: 1f2fc349662d57b2
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-14 |
 | 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-14 |
-| 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-11 |
+| 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
 | 10 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
 | 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-15 |
 | 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
@@ -3413,7 +3413,7 @@ Use `Core_Law/SRT_L0_Metaphysics.md` for the metaphysical anchor and `Core_Law/S
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-11 |
+| last_commit | 2026-09-15 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3448,6 +3448,8 @@ $$
 C_H(A \to B) \equiv P(B \,|\, A,\, L_2)
 $$
 
+**Scope**: This statement applies in a declared retained-history / converged-constraint regime in which the relevant `L_2` structure has been independently admitted. `L_2` is an analytic/model-facing aspect of the same Selection reality, not a universal pre-existing ontic container in which causality already lives.
+
 **Implication**: Causality is a projected structure inside the convergence domain, not an ontological primitive prior to selection.
 
 **Layer Note**: This theorem defines **horizontal causality** inside `L_2`. It does not replace vertical constitution across `L_0 -> L_1 -> L_2`.
@@ -3460,19 +3462,46 @@ $$
 
 **Lineage**: former `Ax-F-03b`.
 
-**Formal Definition**: The flow of time is not background evolution but the historical record left by continuous anchoring in `L_2`.
+**Title note**: The historical title is retained for citation stability. The P1 theorem no longer identifies time universally with a memory horizon or continuously retained `L_2` record.
+
+**P1 Statement — occurrence asymmetry**: Once an actual Selection has occurred, later reality is not ontically identical to the counterfactual in which that Selection never occurred.
+
+```text
+occurred != never-occurred;
+occurred -/> later-readable trace;
+occurred -/> durable or localized memory;
+occurred -/> retained historical efficacy;
+occurred -/> automatic L2 object.
+```
+
+This is an asymmetric facticity floor. It does not require the event to remain readable, causally active or represented in a later local structure.
+
+**History boundary**: A historical record is present only where prior Selection remains materially effective in later Selection conditions and that retained efficacy is independently established. Path dependence, anchoring persistence, learning/writeback residue and durable memory are stronger model/domain claims.
+
+**Conditional formalization — model/domain scope**: In a declared regime where anchoring, operator attribution and retained historical efficacy have independently been established, the earlier expression may define a model-specific historical/ontological-time measure:
 
 $$
 t_{\text{onto}} \equiv \int \|\hat{G}_\theta(s)\| ds
 $$
 
-**Implication**: If no selection leaves irreversible trace, time loses SRT's ontological direction and becomes only a parametric ordering tool.
+The equation is not an unconditional P1 identity and does not create a universal time scalar. Its metric, attribution, retention rule and horizon belong to the declared formalization.
+
+**Time distinctions**:
+
+```text
+parametric ordering
+!= occurrence non-equivalence
+!= retained historical record
+!= model-specific ontological-time measure.
+```
+
+The exact universal theory of time remains **OPEN**. Absence of durable trace or `L_2` retention does not imply that no Selection occurred or that occurrence asymmetry disappears.
 
 **Time Layer Note**: This theorem concerns **ontological time**. Parametric time `t` in equations remains a mathematical ordering variable and does not by itself carry the ontological claim.
 
 **Cross-ref**: `Philosophy/SRT_Causality_Time.md §二`; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`.
 
-**L1 Expansion**: `Core_Law/SRT_Irreversibility.md` Def-IRR-2 / T-IRR-1（学习不可逆的非对称 `Ψ_f` 支付）把 `L_0` 不可逆性从 P1-T02 的推论展开为可引用 L1 层；热力学二律与 FEP 自由能最小化**不**由此获得反向定义权。
+**L1 Boundary**: `Core_Law/SRT_Irreversibility.md` separates occurrence non-equivalence from durable trace, path dependence, absorbing dynamics and `\Psi_f` accumulation. Its T-IRR-1 learning/writeback material is a conditional P2/P3 model candidate, not a universal expansion of P1-T02. No universal monotonic `\Psi_f` stock or time arrow follows from this theorem.
 
 ---
 
@@ -3488,7 +3517,9 @@ $$
 
 **Implication**: Sedimented convergence structures are not inert records. They feed back as real constraints on future selection.
 
-**Boundary**: Domain-specific readings of `C_{L_2}` belong to bridge or lab files. This theorem only fixes the constitutive role of `L_2` constraint.
+**Retention Boundary**: `L_2` here means an admitted retained/sedimented structure whose material efficacy in later Selection conditions has been established. P1-T03 does not imply that every Selection automatically creates an `L_2` object, that every past event remains active, or that every event produces a persistent constraint.
+
+**Boundary**: Domain-specific readings of `C_{L_2}` belong to bridge or lab files. This theorem only fixes the constitutive role of an admitted `L_2` constraint.
 
 ---
 
@@ -3600,7 +3631,14 @@ No P1 `Real Choice Moment` theorem remains after RC-A.
 
 **What remains open**: A conditional anti-closure result may be recoverable only after (i) a stability semantics is chosen, (ii) an `ε`-neutral kernel is independently defined, and (iii) absorption or comparative closure risk is proved for that kernel over a declared horizon and environment. The current candidate lives at P2/P3 in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`; it must not be cited as P1.
 
-**`ε_pg` boundary**: `ε_pg` remains an `L_0` structural postulate and scalar seed. ST-A does not derive an ISP-level anti-closure direction from it, nor from irreversibility alone.
+**`ε_pg` boundary**: `ε_pg` is a separately owned formal / model-facing quantity where independently admitted. P1-T07 does not derive an ISP-level anti-closure direction from it, nor from irreversibility alone. Its exact inheritance from primitive Selection remains separately governed / **OPEN**.
+
+```text
+epsilon_pg -/> universal primitive direction;
+epsilon_pg -/> continuation preference;
+epsilon_pg -/> health or goodness;
+epsilon_pg -/> consciousness seed.
+```
 
 **Audit trail**: `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`; `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`.
 
