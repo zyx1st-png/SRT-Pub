@@ -1,0 +1,34 @@
+name: CSC v18 apply reviewer-pressure revision
+
+on:
+  push:
+    branches:
+      - publication/csc-artificial-life-v18-e1e2e3-20260915
+
+permissions:
+  contents: write
+
+jobs:
+  revise:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install figure dependency
+        run: pip install matplotlib==3.10.6
+      - name: Apply text revision
+        run: python papers/apply_v18_pressure_fixes.py
+      - name: Generate evidence figure
+        working-directory: papers/costly_selective_closure_supplement
+        run: python generate_v18_evidence_summary.py
+      - name: Commit revised manuscript and figure
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/CostlySelectiveClosure_v18_ArtificialLife_candidate.md
+          git add papers/costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg
+          git add papers/costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.png
+          git commit -m "paper: foreground evidence and add v18 consequence figure"
+          git push origin HEAD:publication/csc-artificial-life-v18-e1e2e3-20260915
