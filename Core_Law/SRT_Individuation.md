@@ -236,6 +236,31 @@ non-self-erasure -/> primitive value.
 | phenomenality / SRT-zombie | OPEN | subject-position 不自动建立 qualia |
 | collective subject sufficiency | OPEN | 不能把单体模型类比当作证明 |
 
+### Generative reselectability operationalization — OPEN / P3
+
+Stable execution / recurrent standing 不自动等于 generative reselectability。当前仍需在 P3 层操作化：
+
+- consequence return 如何被区分和测量；
+- comparison rules / boundaries 是否可被后续历史重写；
+- candidate-generation conditions 是否可被重构；
+- stake-space restructuring 如何与既有 stake 强度变化区分并测量。
+
+Hard guards:
+
+```text
+generative reselectability -/> subject-position theorem;
+generative reselectability -/> Bearer theorem;
+generative reselectability -/> consciousness theorem;
+generative reselectability -/> Agency theorem by itself;
+generative reselectability != bare d growth;
+generative reselectability != d;
+generative reselectability != sigma;
+generative reselectability != T_dir;
+generative reselectability != primitive Selection property.
+```
+
+这一条只恢复已有的操作化负担，不新增 canonical symbol、universal scalar、natural threshold，也不新建 subject、Bearer、consciousness 或 Agency gate。
+
 ---
 
 ## 九、使用规则

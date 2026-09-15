@@ -23,7 +23,7 @@ landing_ledger:
     blocked_by: "Future choice-generation synthesis may add the distinction outcome selection / modulation / transductive restructuring and link H3/I5 comparison-scale rewriting; do not turn these local modes into new canonical stages."
   - target: "Core_Law/SRT_Individuation.md"
     state: landed
-    anchor: "9. **generative reselectability 的操作化**"
+    anchor: "### Generative reselectability operationalization — OPEN / P3"
   - target: "Core/SRT_Core_13a_Operator_Basics.md"
     state: pending
     blocked_by: "Future operator hardening may state that a current operator can be historically sedimented structure as well as current operation, but must preserve P0-04 origin-of-selectability exposure and current canonical operator definitions."

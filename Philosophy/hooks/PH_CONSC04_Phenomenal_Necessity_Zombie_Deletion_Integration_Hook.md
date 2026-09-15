@@ -30,7 +30,7 @@ landing_ledger:
     anchor: "### Status Update (2026-08-11: phenomenality and adjacent-case guards)"
   - target: "Core_Law/SRT_Individuation.md"
     state: landed
-    anchor: "8. **主体位进入就证明了现象性**"
+    anchor: "| phenomenality / SRT-zombie | OPEN | subject-position 不自动建立 qualia |"
   - target: "AI/AI_POSITIONING_NOTE.md"
     state: pending
     blocked_by: "Future AI synthesis may use Z4/Z6 as complementary report/self-model versus non-transferable-bearing controls; no consciousness verdict follows automatically."
