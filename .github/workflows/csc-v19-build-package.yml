@@ -1,9 +1,9 @@
 name: CSC v19 one-shot build and package
 
 on:
-  push:
+  pull_request:
     branches:
-      - publication/csc-artificial-life-v19-consequence-scope-20260915
+      - research/csc-consequence-scope-mechanism-audit-20260915
     paths:
       - '.github/workflows/csc-v19-build-package.yml'
 
@@ -12,11 +12,13 @@ permissions:
 
 jobs:
   build:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - uses: actions/setup-python@v5
         with:
@@ -110,7 +112,7 @@ The report records mechanical packaging checks only. Scientific claims remain go
           cp papers/costly_selective_closure_supplement/figures/figure2_evidence_summary_v19.svg /tmp/csc-v19-reviewer-package/supplement/figures/
 
           cat > /tmp/csc-v19-reviewer-package/README.md <<'EOF'
-# Reviewer reproduction package — CSC v19
+# Reviewer reproduction package - CSC v19
 
 This static package accompanies the manuscript **Who Bears Failure? Consequence Scope and Terminality in Survival-Coupled Artificial Agents**.
 
@@ -143,6 +145,8 @@ EOF
           retention-days: 30
 
       - name: Commit permanent build products
+        env:
+          HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
@@ -153,5 +157,5 @@ EOF
             echo 'No permanent build products changed.'
           else
             git commit -m 'publication: record v19 build and E1-E4 evidence figure'
-            git push
+            git push origin HEAD:"${HEAD_BRANCH}"
           fi
