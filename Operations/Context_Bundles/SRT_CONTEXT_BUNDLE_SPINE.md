@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: 02b4ec32
+source_commit: 71d3b604
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: 3c18c2afd4ad3e82
+inputs_digest: eed997cf26bb7f9b
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 3c18c2afd4ad3e82
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `02b4ec32` |
+| 来源 commit | `71d3b604` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |
@@ -44,7 +44,7 @@ inputs_digest: 3c18c2afd4ad3e82
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-13 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-13 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-15 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-14 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -56,9 +56,9 @@ inputs_digest: 3c18c2afd4ad3e82
 | 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-09-15 |
-| 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
+| 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-09-15 |
 | 15 | `Core/SRT_Core_22_Equations.md` | 2026-09-05 |
-| 16 | `_SRT_SYMBOL_TABLE.md` | 2026-09-05 |
+| 16 | `_SRT_SYMBOL_TABLE.md` | 2026-09-15 |
 
 ## §0.2 状态护栏
 
@@ -900,7 +900,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-13 |
+| last_commit | 2026-09-15 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -915,6 +915,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - canonical 文件优先短、稳、少歧义
 - 长文负责展开、推导、接口批次与历史沉积
 - split 文件负责导航，不替代 canonical 定义
+- 本页是 router：它压缩并指向当前 owner，不以注册或摘要创建第二份定义 authority
 
 ## 0. 定位说明（Epistemic Note）
 
@@ -935,7 +936,8 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
 - layer：L0-L1 / epistemic：os / status：active / version：v1 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
-- 当前 trunk：`non-flat / non-neutral openness -> finite-position-indexed subjectless Selection (= actual differentiation = manifestation / relative backgrounding = primitive verticality as same-event structural reading) --[regenerative formation]--> One`。Universal formation route stops at One；formed `Selection-position` 仅作为 continuing One 的 operative co-aspect，不是第二 universal endpoint。
+- 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
+- 分层护栏：primitive Selection 在规范上无内容；existence 是 Selection under determinate actuality；history 只在 prior Selection 的效力被保留并建立时进入路由。`L_0 / L_1 / L_2` 是 analytic / model-facing aspects，不是三种 ontic substances；primitive Selection 不等于 formed `\hat{G}`。Normativity routes 需分别定型，O2-M 保持 OPEN。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
 - typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
@@ -955,10 +957,10 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 ### 3. T_dir（方向透明度）与价值遮蔽
 - 主锚点：`_SRT_T_DIR_CANONICAL.md`
-- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述；它尚不是 theory-canonical 形式基础
+- 说明（Part I §1-§10）：`T_dir` 是 formed system / relation / model 相对于 independently typed、declared direction signal 的 self-readability / reorientation v0 operational proxy；它尚不是 theory-canonical 形式基础。无 declared direction 时，该 claim 中的 `T_dir` 不准入／未定义；`T_dir > 0` 不建立 good、legitimacy、generative health 或 O2-M。
 - 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）；这些段落按 bridge / theory-clarifying 读，不因文件名而升级为 core theorem
 - 引用规则：涉及方向透明度、意义感/虚无感的 SRT 机制解释、致命 L₂、价值遮蔽、三层价值结构、价值归纳、吸引子动力学时优先回链本文件
-- 与 d-value 的关系：d 是 T_dir 的必要条件；两者独立，不互相替代
+- 与 d-value 的关系：d / T_dir 的精确必要性或充分性在 owner 未独立建立时只能按 model / bridge scope 读；两者独立，不互相替代。Wave D2 仍需独立复审将该关系当作 universal law 的旧公式 consumer。
 
 ### 4. Core Axioms
 - 主锚点：`Core/SRT_Core_21_Formal_Axioms.md`
@@ -975,7 +977,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 4b. Core Equations
 - 主锚点：`Core/SRT_Core_22_Equations.md`
 - 说明：主动力学方程、热力学与稳定性方程主入口
-- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件
+- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件；但局部方程语义仍从属于当前 symbol / owner typing，不得以旧 `κ_0` 或 `T_dir` 公式反向恢复 primitive authority。Wave D2 将独立复审这些 consumer，D1 不预判其余方程。
 
 ### 4c. Core Open Tensions
 - 主文件：`Core/SRT_OPEN_TENSIONS.md`
@@ -984,7 +986,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 ### 4d. Cross-Domain Usage Matrix
 - 主文件：`_SRT_CROSS_DOMAIN_MATRIX.md`
-- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵是 governance-canonical usage layer，不新增 theory-canonical 定义
+- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵只汇总当前 owner-approved usage，不能因重复注册而把 `ε_pg`、`κ_0`、T_dir direction 或 domain proxy 升格为 primitive / theory-canonical 定义
 - 引用规则：跨域使用上述概念时，先检查 canonical 用法、allowed projection 与 forbidden shortcut
 
 ## B. 规范辅助层（Canonical Support）
@@ -1004,7 +1006,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
-- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A Gate 0 是唯一 admission / type authority**。当前结果只压缩为：`κ_0 / ε_pg / B-count` ordering 不因 symbol registration 或从 O0 继承而获得 primitive status，它们与更强 realization 及 primitive non-flatness 的精确关系保持 OPEN。规则内容、对象分类与准入／回读条件一律以 §0A 为准，本注册表不复述。
 - 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针。B-A 的术语 owner 是 `Core_Law/SRT_L0_Metaphysics.md` 初心词条；C-A 的 scope owner 是 `_SRT_D_VALUE_CANONICAL.md §5b` 与 Claim Ladder §0A。Symbol Table Rules 17／18 只登记 no-new-symbol／no-alias 与作用域护栏；CΨ 仍开放
 
 ### 5c. Claim-Mode Audit
@@ -6126,7 +6128,7 @@ $$\text{Freedom} \propto \text{preservation of formed-system reorientation momen
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-15 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -6136,7 +6138,7 @@ $$\text{Freedom} \propto \text{preservation of formed-system reorientation momen
 
 # SRT Cross-Domain Usage Matrix
 
-> **Role**: v0 governance matrix. This file does not define new theory. It fixes compact governance-canonical usage rules so domain files do not upgrade projections, proxies, or bridges into core claims.
+> **Role**: v0 governance matrix. This file summarizes current owner-approved usage and does not define new theory. It cannot upgrade a registered symbol, operational proxy, domain projection or bridge to primitive / theory-canonical status by repetition.
 
 ## 0. Status Legend
 
@@ -6162,7 +6164,7 @@ Historical labels and filenames do not override this table. If an older file sti
 
 ### 1.1 Explanatory-coordinate guard
 
-`d` need not be treated as a newly discovered empirical variable that must be mutually exclusive with salience, reward, homeostatic error, pain, arousal, or memory strength. It is first a unifying explanatory coordinate for how minimum non-neutrality unfolds into concern, stake, consequence return, and changes in future selectability within a finite operator.
+`d` need not be treated as a newly discovered empirical variable that must be mutually exclusive with salience, reward, homeostatic error, pain, arousal, or memory strength. It is first a unifying explanatory coordinate for stake-coupled concern, consequence return and future-selectability effects in formed systems. This matrix does not derive `d` from O0, `ε_pg`, primitive non-neutrality or primitive Selection.
 
 Existing observables may overlap with, partially realize, or serve as local proxies for `d` in a stated system and scale. Such overlap is not by itself a reduction or refutation of `d`. The burden of additional validation arises only when a local observable is claimed to exhaust or directly measure canonical `d`; then it must cover irreversible stake, consequence return, non-substitutability, and effects on future selection capacity.
 
@@ -6186,23 +6188,25 @@ local proxy explains a phenomenon != local proxy exhausts d's ontological role
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | v0 operational proxy for readability of current selection direction | internal access / reorientation proxy | completed formal ontology of value |
-| Physics | generally not a physics variable | observer-position readability only if explicitly scoped | physical directionality equals value direction |
-| Neuroscience | directional access / reorientation capacity | reportability, action revision, integration proxy | confidence, valence, or reward = `T_dir` |
-| Philosophy / Political | visibility of value / legitimacy direction through institutions | deliberative correction, public reason proxy | order condition directly proves political legitimacy |
-| Spirituality | return-direction readability | shoshin / practice-direction proxy | strong experience means high `T_dir` |
-| AI | boundary-test variable, architecture-state marked | self-monitoring proxy only | explanation fluency or memory persistence implies direction transparency |
+| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal | internal access / reorientation proxy after direction admission | intrinsic Selection direction; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
+| Physics | generally not a physics variable; physical directionality does not automatically supply the declared direction | observer-position readability only if direction and model are independently typed | physical directionality equals value direction or automatically admits `T_dir` |
+| Neuroscience | model-scoped access / reorientation relative to an independently typed direction | reportability, action revision or integration may proxy the functional under a declared model | confidence, valence, reward or reportability = `T_dir`; proxy supplies its own direction |
+| Philosophy / Political | readability of declared relational / normative criteria | deliberative correction or public-reason proxy after criterion admission | `T_dir` validates the criterion; order/readability directly proves political legitimacy |
+| Spirituality | readability / reorientation relative to a declared practice or relational direction | shoshin / practice-direction proxy with explicit criterion | strong experience establishes direction truth, value or high `T_dir` |
+| AI | architecture-state-marked self-monitoring / reorientation relative to a declared objective or criterion | architecture-specific functional proxy | self-report, explanation fluency or memory persistence establishes `T_dir` or supplies a legitimate direction |
+
+No independently typed, declared direction means `T_dir` is undefined / not admitted for that claim; an admitted but inaccessible direction may yield `T_dir = 0`. The matrix never validates the declared direction itself.
 
 ## 4. `ε`
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | `ε_pg` = L0 minimum non-neutrality postulate; ISP-level anti-closure ε = ST-A conditional P2/P3 candidate; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure comparison only when stability semantics, neutral baseline, environment, horizon, and proof/model are declared | treat ISP anti-closure as a P1 corollary, or collapse all ε symbols into one empirical constant or one theory-canonical object |
-| Physics | only as implementation or regularization term unless tied to core source | regulator / residual asymmetry proxy | direct empirical theorem from `ε_pg` |
-| Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves L0 proto-gradient |
-| Philosophy / Political | minimum asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy by itself |
-| Spirituality | minimal openness / non-closure proxy | practice gate or humility floor | spiritual openness proves core ε |
-| AI | anti-closure or stake-gate design question | surrogate stake threshold candidate | anti-closure text behavior or refusal style equals `ε_pg` |
+| Core | `ε_pg` = registered stronger-asymmetry / anti-erasure realization candidate, with exact inheritance from primitive non-flatness OPEN; ISP anti-closure = ST-A conditional P2/P3 candidate; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure comparison only when stability semantics, neutral baseline, environment, horizon and proof/model are declared | `ε_pg` or B-count preference as primitive Selection direction; ε grounds legitimacy; collapse all ε symbols into one object |
+| Physics | implementation / regularization / declared asymmetry-model use only | regulator / residual-asymmetry proxy | physical use back-proves primitive `ε_pg` or universal direction |
+| Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves primitive non-neutrality or `ε_pg` admission |
+| Philosophy / Political | model-level asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy or value by itself |
+| Spirituality | declared-practice openness / non-closure proxy | practice gate or humility floor | spiritual openness proves primitive ε or universal direction |
+| AI | anti-closure or stake-gate design question | surrogate stake-threshold candidate | anti-closure text behavior or refusal style equals or proves `ε_pg` |
 
 ## 5. Standing Rule
 
@@ -7114,7 +7118,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-05 |
+| last_commit | 2026-09-15 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -7128,23 +7132,25 @@ SRT 主方程的运作机制如下：
 >
 > **Governance boundary**: Terms such as `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, and `canonical:false` are structural governance vocabulary (see `SRT_Glossary_Structural_Governance_Terms.md`); they are not canonical mathematical symbols and do not appear in this table's symbol rows. Non-canonical annexes and Operations records may reference symbols defined here but must not redefine them.
 > **Proxy boundary**: This table records canonical symbol usage plus governed projections. It does not license domain formulas to redefine `d`, `Ψ_f`, suffering/pain, Fisher, Landauer, or AI consciousness; use `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `Core_Law/SRT_Suffering.md`, and the relevant claim-status file when a row points to a proxy.
+> **Admission boundary (2026-09-15)**: symbol registration is not primitive admission. Primitive/L0-side admissibility is governed solely by `Governance/SRT_CLAIM_LADDER.md §0A` together with the current L0 / Generative Ontology Spine owners; this table cannot promote a model, realization candidate, proxy or lineage symbol by registering it.
+> **Aspect boundary**: `L_0 / L_1 / L_2` are analytic / model-facing aspects of the one Selection ontology, not three ontic substances or a compulsory three-stage product pipeline.
 
 | Symbol | LaTeX | Name | Atomic Definition | Dimensions/Units | Scope / Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **L₀** | `L_0` | Latent Domain | Set of all unselected possibilities (structured potentiality, not nothingness). | Thin: structural potentiality space (measure/cardinality unfixed at core level) | Core, universal. **Domain projection**: the `∞-dim Hilbert space` reading is a physics / statistics bridge realization, **not** the universal atomic definition — see `Physics/_SRT_Phys_Bridge.md`, `Physics/SRT_Quant_00_Intro.md`; thin structural home `Core_Law/SRT_L0_Metaphysics.md`. |
-| **L₁** | `L_1` | Manifest Domain | Selected manifest actuality: a determinate event or reality slice produced by primitive actualisation. | Thin: manifest actuality / reality slice (domain-dependent realization) | Core, universal. **EX-A**: event actuality does not by itself imply anchoring persistence, structural stability, or stable-ISP identity. **Domain projection**: the `4D spacetime + qualia` reading is a physics (spacetime) + phenomenology (qualia) bridge realization, **not** the universal atomic definition — see `Core/SRT_Core_12a_Ontology_L0L1.md` (spacetime emergence), `Philosophy/SRT_HardProblem_Epistemology.md` (qualia); thin structural home `Core_Law/SRT_L0_Metaphysics.md`. |
-| **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
-| **Ĝ** | `\hat{G}` | Ghost Operator | Formal role-carrier for the primitive selection / actualisation mapping $L_0 \to L_1$. | Operator | AM-A: not a prior entity or the cause of actualisation; domain implementations are plural and cannot redefine the P0 kernel. Never use plain `G` for this. |
-| **Ĝ†** | `\hat{G}^\dagger` | Reverse-Writing Operator (Adjoint) | Formal role-carrier for the **gated** history-writeback mapping $L_1 \to L_2$: $\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$, firing **iff** $\Psi_f(\hat{G}_\theta[L_0]) < \Psi_{thresh}$. | Operator (adjoint of $\hat{G}_\theta$ under the non-commutative reading) | Core; canonical source `Core/SRT_Core_12b_Ontology_L2.md` **Ax-L2-06b**; writeback-magnitude law `Core/SRT_Core_13a_Operator_Basics.md` **Ax-Op-03b**; consumed by `Def-PathTrace` / `T-L2-Scaffold` (`ρ(p,t)` row). **The threshold gate is part of the axiom, not an optional qualifier** — see also the `SRT_Core_12b` Precision Note (2026-04-21) on not collapsing trace / minimal closure / L₂-grade closure / scaffold. Mirrors the `Ĝ` AM-A caution: formal role-carrier, not a prior entity and not the cause of the writeback. `Ĝ†_{encoding} = Ĥ ∘ Ĝ†_θ` (Ax-L2-06c) is a neuro domain realization, not a redefinition. Never use plain `G†` or an ad-hoc writeback symbol for this. |
+| **L₀** | `L_0` | Open / Non-Preclosed Aspect | Model-facing notation for Selection's open / non-preclosed aspect before determinate actuality in the representation at hand. It is not a pregiven completed set, inventory or warehouse of all possibilities. | Analytic / model-facing aspect; no measure or cardinality fixed by registration | Metaphysical authority remains `Core_Law/SRT_L0_Metaphysics.md` under `Core_Law/SRT_Generative_Ontology_Spine.md`. **Domain projection**: an `∞`-dimensional Hilbert space or another declared state space is a physics / statistics realization, not the universal atomic definition. |
+| **L₁** | `L_1` | Determinate-Actuality / Manifest Aspect | Model-facing notation for Selection under determinate actuality / manifestation; not a product chosen by a prior chooser. | Thin: manifest actuality / reality slice (domain-dependent realization) | Core-facing analytic aspect. **EX-A**: manifest event actuality does not by itself imply anchoring persistence, structural stability, or stable-ISP identity. Domain realizations do not replace `Core_Law/SRT_L0_Metaphysics.md` or the Generative Ontology Spine. |
+| **L₂** | `L_2` | Retained Historical-Efficacy / Stabilized-Constraint Aspect | Model-facing notation for retained or sedimented historical efficacy and stabilized constraints where such retention is established. | Realization-dependent; no universal manifold fixed by registration | Selection occurrence does not automatically establish L₂-grade retained history, durable trace or stabilization. Local L₂ models must state their retention / writeback conditions. |
+| **Ĝ** | `\hat{G}` | Ghost Operator | Formal / formed / model-level role-carrier for a declared Selection realization; an $L_0 \to L_1$ form is a model representation, not the metaphysical definition of primitive Selection. | Operator / model role | Primitive Selection is not `Ĝ`; `Ĝ` is neither a prior chooser nor the cause of actualisation. Domain implementations are plural. Never use plain `G` for this. |
+| **Ĝ†** | `\hat{G}^\dagger` | Reverse-Writing Operator (Adjoint) | Formal role-carrier for a **gated, declared** history-writeback model $L_1 \to L_2$: $\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$ when that model's admission conditions are met. | Operator (adjoint of $\hat{G}_\theta$ under the declared non-commutative model) | Core model source `Core/SRT_Core_12b_Ontology_L2.md` **Ax-L2-06b**; writeback-magnitude source `Core/SRT_Core_13a_Operator_Basics.md` **Ax-Op-03b**. Registration does not imply that every Selection produces retained history. Mirrors the `Ĝ` caution: formal role-carrier, not a prior entity or cause. `Ĝ†_{encoding} = Ĥ ∘ Ĝ†_θ` is a neuro realization. Never use plain `G†` or an ad-hoc writeback symbol for this. |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
 | **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; geometric, Fisher, vector, and gate readings require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; `Def-d-canonical` is the core-facing anchor, while scalar default / vector / gate rules are governance-canonical usage controls; do not mix scalar `d`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation |
 | **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; Fisher geometry may induce local second-order proxy `δΨ_f^{geom}=1/2 dθ^T g_F dθ+O(||dθ||^3)` and path functionals, but `Ψ_f ≡ g_F` is never a literal scalar-tensor identity; metabolic readings are budget/load projections only under stated conditions; domain projections do not become theory-canonical by reuse |
-| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy / constrained readability-reorientation functional for a system's own current selection direction. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`; not a completed ontological foundation and not semantic valence, reward, coherence, or confidence |
+| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy / constrained readability-reorientation functional for a formed system's access to an independently typed, declared direction signal. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`. No declared direction means `T_dir` is undefined / not admitted for that claim; `T_dir > 0` does not establish good, legitimacy, generative health or O2-M. Not valence, reward, confidence or semantic coherence. |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
 | **ω_sub** | `\omega_{sub}` | Subjective Frequency | Refresh rate of selection cycles. | Hz | Neuro/phenomenology |
 | **η** | `\eta` | Operator Viscosity | Transition resistance of $\hat{G}$ states. | Scalar ($0 \to \infty$) | Low/high regimes discussed clinically |
-| **Γ_Ĝ** | `\Gamma_{\hat{G}}` | Operator Refresh Rate | Frequency of full $L_0 \to L_1 \to L_2$ cycles. | Hz | Often near gamma-band hypotheses |
+| **Γ_Ĝ** | `\Gamma_{\hat{G}}` | Operator Refresh Rate | Frequency of a declared model's $L_0 \to L_1 \to L_2$ cycle where L₂ retention has independently been established. | Hz | Neuro/phenomenology hypothesis; not evidence that every Selection produces L₂-grade history |
 | **S_crit** | `S_{\text{crit}}` | Cognitive Entropy Threshold | Entropy limit before degraded operator mode. | Entropy units | Neuro/clinical |
 | **R_fidelity** | `R_{\text{fidelity}}` | Reality Fidelity | Rendering fidelity of $L_1$ under metabolic constraints. | Scalar (0-1) | Neuro/clinical |
 | **I_total** | `I_{\text{total}}` | Total Information Flux | Sum of sensory-channel information throughput. | Bits/s | Neuro |
@@ -7168,22 +7174,22 @@ SRT 主方程的运作机制如下：
 | **C_int** | `C_{\text{int}}` | Integration Capacity | Capacity to integrate altered-state content. | Scalar | Clinical/spirituality |
 | **T_immune** | `T_{\text{immune}}` | Immune Threshold | Immune-mediated sensory gating threshold. | Threshold | Neuroimmune |
 | **M** | `M` | Modality Set | Weighted sensory modality vector. | Vector | Neuro |
-| **κ₀** | `\kappa_0` | Primordial Curvature | Irreducible minimum curvature of L₀; κ₀ > 0 is a structural prerequisite (not historically generated). Provides directionality bias for all selection operators. Ψ_f^min = f(κ₀). | Scalar (curvature) | Core; canonical source `Core/SRT_Core_12a T-L0-Kappa0`; ontological status `Philosophy/SRT_L0_Ontological_Status.md` |
-| **κ(t)** | `\kappa(t)` | Dynamic L₀ Curvature | Time-evolving L₀ curvature: κ(t) = κ₀ + ∫F[Ĝ_θ(τ), κ(τ)]dτ. L₀ is non-static; operators and curvature co-evolve. | Scalar (curvature) | Core; canonical source `Core/SRT_Core_12a T-L0-NonStatic` |
+| **κ₀** | `\kappa_0` | Kappa-0 Curvature / Anisotropy Floor Candidate | Conditional model / realization candidate for a minimum curvature, anisotropy floor or related non-flat realization when explicitly declared. | Scalar in a declared curvature model | Not primitive by inheritance from O0; necessity and exact relation to primitive non-flatness remain OPEN. It does not cause first Selection or supply a universal value / order direction. Historical model sources remain `Core/SRT_Core_12a T-L0-Kappa0`; admission is governed by the current L0 / Spine owners and Gate 0. |
+| **κ(t)** | `\kappa(t)` | Dynamic Curvature Candidate | In a declared curvature / co-evolution model, a time-varying realization may be written $κ(t) = κ_0 + \int F[\hat{G}_\theta(\tau), \kappa(\tau)]d\tau$. | Scalar in the declared model | Model / realization scoped; registration does not establish a universal evolving L0 curvature field. Historical model source `Core/SRT_Core_12a T-L0-NonStatic`. |
 | **d_mobile** | `d_{\text{mobile}}` | Re-alignment Capacity | Operator's capacity to re-orient θ as attractors migrate; proportional to d · rank_eff(I_F(θ)) / (Hysteresis(L₂)·C_r) subject to χ_payable gate. High d + d_mobile ≈ 0 = frozen state (pathological). | Scalar (≥ 0) | Core; canonical source `SRT_Core_22 Eq-DValue-Mobile-1`; map `Core/SRT_Core_12b §Consciousness-2D-Map` |
-| **d_max** | `d_{\text{max}}` | Maximum Effective d-value | Upper bound on d: min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀). Two independent bottlenecks: Fisher rank (informational) and stability budget (dynamical). dim(Θ) alone does NOT determine d_max. | Scalar | Core; canonical source `SRT_Core_22 Eq-DValue-Max-1` |
+| **d_max** | `d_{\text{max}}` | Maximum Effective d-value | In the declared Core22 candidate model, an upper bound is written min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀). The model compares informational and dynamical bottlenecks; dim(Θ) alone does not determine d_max. | Scalar in that model | Conditional equation consumer `SRT_Core_22 Eq-DValue-Max-1`; this row does not make κ₀ primitive or establish the equation universally. Wave D2 independently reviews its current semantics. |
 | **χ_payable** | `\chi_{\text{payable}}` | Payability Gate | Internal three-condition conjunction: signal > threshold ∧ dΨ_f/dt payable ∧ below collapse threshold. Fully endogenous; gates d_mobile. When χ_payable = 0, d_mobile = 0 regardless of d. | Boolean gate | Core; canonical source `SRT_Core_22 Def-Payable-Chi-1` |
 | **κ_{c1}** | `\kappa_{c1}` | Bare Consciousness Threshold | Layer 1 consciousness condition: d ≥ d_min ∧ L₂ stable closure. Bare consciousness (not quality). Does NOT include d_mobile > 0. | Phase transition point | Bridge-Lab threshold; specific numerical threshold P3/P4; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
 | **κ_{c1.5}** | `\kappa_{c1.5}` | Consciousness Activity Threshold | Layer 2 consciousness condition: d_mobile > 0. Marks transition from bare consciousness to active consciousness. Frozen state sits between κ_{c1} and κ_{c1.5}. | Phase transition point | Bridge-Lab threshold; specific numerical threshold P3/P4; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
 | **t_onto** | `t_{\text{onto}}` | Ontological Time | t_onto ≡ ∫‖Ĝ_θ(s)‖ds; generated by selection irreversibility. Distinct from parametric time t (mathematical ordering tool). Ontological time is a derived quantity, not a background container. | Integral measure | Core; canonical source `Philosophy/SRT_Causality_Time.md §二`; formal `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T02` |
-| **C_H** | `C_H` | Horizontal Causality | C_H(A→B) ≡ P(B\|A,L₂); L₂-layer temporal causality (empirical, dependent on L₂ structure). Distinct from vertical causality (L₀ ⊨ L₁ ⊨ L₂ structural constitution). | Conditional probability | Core; canonical source `Philosophy/SRT_Causality_Time.md §一`; formal `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T01` |
-| **ε_pg** | `\varepsilon_{pg}` | Proto-Gradient (L₀ Minimum Non-Neutrality) | ∇_{non-self-erasure}(L₀) ≡ ε_pg > 0; formal asymmetry favouring configurations with branching number B ≥ 2 over self-erasing ones (B ≤ 1). NOT a content-level "toward order" gradient; "order" is an L₁ observer's read-back label. **Level distinction (ST-A, 2026-08-11)**: ε_pg remains an L₀ structural postulate and scalar seed; it does not by itself determine an ISP-level anti-closure direction. The former `T-ε-Constitute / P1-T07` derivation has been demoted because irreversibility establishes absorption after closure but not neutral-kernel absorption. ISP-level anti-closure is now a conditional P2/P3 candidate requiring declared stability semantics, an independently defined neutral kernel, environment, horizon, and proof. | Scalar (> 0) | Core; canonical source `SRT_Core_01 T-Core-A1C2`; P1 demotion record `Core/SRT_Core_21b_Constitutive_Theorems.md former P1-T07`; conditional bridge `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` |
+| **C_H** | `C_H` | Horizontal Causality | $C_H(A\to B) \equiv P(B\mid A,L_2)$; temporal causality inside a declared L₂-bearing model, conditional on L₂ retention having been established. | Conditional probability | Model / bridge scoped; registration does not make L₂ an automatic product of Selection. Historical sources: `Philosophy/SRT_Causality_Time.md §一`; `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T01`. |
+| **ε_pg** | `\varepsilon_{pg}` | Proto-Gradient / Minimum-Non-Neutrality Realization Candidate (legacy namespace) | Registered lineage symbol for a stronger-asymmetry / anti-erasure realization candidate. Its exact relation to primitive Selection, O0 and primitive non-flatness remains OPEN unless independently re-established. | Scalar in a declared realization | Registration is not primitive admission: `ε_pg` does not define O0, establish `B >= 2` over `B <= 1` as a primitive preference, or supply universal T_dir / value direction. Former P1-T07 remains demoted; ISP anti-closure is a conditional P2/P3 candidate requiring declared stability semantics, neutral kernel, environment, horizon and proof. |
 | **ε_reg** | `\varepsilon_{reg}` | Operator Regularizer | Positive constant in divisive normalization: [Ĝ_θ(x)]_i = x_i^n / (ε_reg + Σ W_{ij} x_j^n). Prevents singularity at zero input; maintains minimum non-zero operator response. May be read as implementation-layer echo of ε_pg (structural analogy, not ontological identity — independent argument required to upgrade). | Scalar (> 0) | Core; canonical source `SRT_Core_13a Ax-Op-03` |
 | **ρ(p,t)** | `\rho(p,t)` | Path Trace Density | **Derivation status: induced historical functional, NOT a new ontological primitive.** ρ(p,t) is a coarse-grained intermediate-layer order parameter induced by existing SRT quantities: ρ(p,t) ≡ ∫_{-∞}^{t} e^{-λ_d(t-s)} · 𝟙[Ψ_f(p,s) < Ψ_thresh] · w(p,s) ds. Induced-quantity chain: Ψ_f trajectory (Ax-F-12) → Ax-L2-06b gate → writeback events → ρ(p,t) → Ψ_f^compat reduction, d_accessible^compat amplification (T-L2-Scaffold). NOT a static function of current Ψ_f (would lose historical/hysteretic character). λ_d = decay rate; w(p,s) = writeback weight from Ax-L2-06b/Ax-Op-03b. Scaffold threshold ρ* (empirically measurable): when ρ > ρ*, path p transitions from foreground event to background L₂ scaffolding. | Scalar (≥ 0); historical functional of Ψ_f trajectory | Core; canonical source `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold Def-PathTrace` |
 | **ΔΨ_f^op** | `\Delta\Psi_f^{op}` | Operator-Relative Competitive Friction Increment | Fast-timescale component of competitive friction, cue-sensitive. Formally: ΔΨ_f^op(x,t,θ) is the operator-parameter-dependent competitive suppression increment updated by Ax-Op-03b Layer 1 writeback. **Timescale**: round-level (fast). **Cue dependence**: strong (depends on W_ij structure activated by current cue family). **Sign**: asymptotically ≥ 0; short-time transient negative values permitted (fast facilitation window, Lemma-FFSI). **Induced from**: divisive normalization (Ax-Op-03) + competitive writeback (Ax-Op-03b Layer 1). Supports T-Op-SIAM Claims 1' (via T-Comp-Suppress 乙₁+乙₂), 3a (cue-relative persistence), 4a (priming window, when ΔΨ_f^op < 0 transiently). | Signed scalar; asymptotically ≥ 0 | Core; canonical source `Core/SRT_Core_13a Def-Psi-Split` (2026-04-17) |
 | **ΔΨ_f^field** | `\Delta\Psi_f^{field}` | Field-Level Landscape Curvature Friction | Slow-timescale component of competitive friction, cue-weakly-dependent. Formally: ΔΨ_f^field(x,t) is the landscape curvature friction increment from Co-Evo-1 κ(t) accumulation. **Timescale**: slow (Co-Evo-1 stabilization τ_stable). **Cue dependence**: weak (κ(t) is not cue-specific). **Constraint**: ΔΨ_f^field ≥ 0 always (Co-Evo-1 deposition is irreversible). **Activation**: near-zero before Co-Evo-1 stabilization threshold is crossed; accumulated thereafter via κ(t) → Ψ_f^field coupling. Supports T-Op-SIAM Claims 3b (asymptotic cue-independence, conditional) and enables 乙₃ (trans-cue intrinsic suppression, conditional). | Scalar (≥ 0) | Core; canonical source `Core/SRT_Core_13a Def-Psi-Split` (2026-04-17); mechanism `Core/SRT_Core_12b Co-Evo-1` |
 | **τ_fast, τ_slow** | `\tau_{fast},\, \tau_{slow}` | Lemma-FFSI Dual Timescale Parameters | Timescale pair for Fast-Facilitation/Slow-Inhibition dual-timescale model (Lemma-FFSI). τ_fast: facilitation decay time (fast); τ_slow: competitive inhibition accumulation time (slow). **Required condition**: τ_fast ≪ τ_slow for nonmonotonic onset. Crossover time t* ≈ τ_fast · ln(a·τ_slow / b·τ_fast) where a = facilitation amplitude, b = inhibition amplitude. Maps to: τ_fast ↔ ΔΨ_f^op transient negative window; τ_slow ↔ competitive writeback accumulation (Ax-Op-03b Layer 1) or Co-Evo-1 onset. Empirically anchored (Johnson & Anderson 2004). | Time constants; τ_fast ≪ τ_slow | Core; canonical source `Core/SRT_Core_13a Lemma-FFSI` (2026-04-17) |
-| **ε_s** | `\varepsilon_s` | Minimum Stake Threshold | Direction-level threshold for counting a distinguishable Fisher eigendirection as genuinely stake-coupled. A direction v_i with coupling strength s_i enters the effective stake-bearing spectrum only if s_i > ε_s. **NOT stake itself** — it is the minimum coupling strength required for a direction to count as genuinely risk-bearing. Gate function: g_i = max(0, (s_i − ε_s)/(1 − ε_s)); gated eigenvalue: λ̃_i = λ_i · g_i; stake-gated effective dimension: D_stake = (Σλ̃_i)²/Σ(λ̃_i)². Three-way distinction: ε_pg = L₀ minimum non-neutrality floor (ontological layer); ε_reg = implementation-layer regularizer (operator layer); ε_s = direction-level stake threshold (spectral bridge layer). | Scalar (0,1) or positive threshold | Core; proposed bridge term for d-value spectral proxy. See `D_VALUE_ALIGNMENT.md §4.5`; `_SRT_D_VALUE_CANONICAL.md §2b`. |
+| **ε_s** | `\varepsilon_s` | Minimum Stake Threshold | Direction-level threshold for counting a distinguishable Fisher eigendirection as genuinely stake-coupled. A direction v_i with coupling strength s_i enters the effective stake-bearing spectrum only if s_i > ε_s. **NOT stake itself** — it is the minimum coupling strength required for a direction to count as genuinely risk-bearing. Gate function: g_i = max(0, (s_i − ε_s)/(1 − ε_s)); gated eigenvalue: λ̃_i = λ_i · g_i; stake-gated effective dimension: D_stake = (Σλ̃_i)²/Σ(λ̃_i)². Three-way distinction: ε_pg is a registered stronger-asymmetry / anti-erasure realization candidate; ε_reg is an implementation regularizer; ε_s is a stake-threshold bridge. | Scalar (0,1) or positive threshold | Core; proposed bridge term for d-value spectral proxy. See `D_VALUE_ALIGNMENT.md §4.5`; `_SRT_D_VALUE_CANONICAL.md §2b`. |
 | **δ** | `\delta` | Duty Cycle | δ_j ≡ (1/T)∫A_j(t)dt; fraction of time an operator actively maintains anchoring target σ_j. Bounded above by Ψ_f budget and below by looseness penalty. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **ν** | `\nu` | Switching Density | ν_j ≡ N_{switch,j}/T; number of anchoring state flips per unit time. Same δ with different ν corresponds to qualitatively different schedules. Bounded above by Ψ_f^{switch} budget. | Hz | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling beats the declared periodic-vs-random schedule comparison in T-Scale-Rhythm-3; no optimum over every admissible schedule is implied. | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
@@ -7213,11 +7219,11 @@ SRT 主方程的运作机制如下：
 
 `L_0`, `L_1`, `L_2`, `\hat{G}`, `θ`, `d`, `Ψ_f`, `T_dir`.
 
-**Tier 2 — Internal structural quantities, admitted postulates and derived constructs** (internal to the theory, induced from or built on Tier 1; carried at their own claim level):
+**Tier 2 — Registered internal model / realization candidates and derived constructs** (carried at their own claim level; registration here does not establish primitive admission or universal derivation):
 
 `κ_0`, `κ(t)`, `ε_pg`, `ρ(p,t)`, `t_onto`, `C_H`, `σ_{sr}`, `σ_{sr}^{coll}`, `d_mobile`, `d_max`, `χ_payable`, `ΔΨ_f^{op}`, `ΔΨ_f^{field}`, `Ω`, `Ω_mis`, `μ`, `S_strength`.
 
-*Note*: `κ_0` and `ε_pg` are placed here as admitted-postulate / structural constructs. Their claim status is **unchanged** by this pass (see Usage Rule 15 and the deferred Pass-2 dependency-graph audit); tiering them does not downgrade them and does not assign them a residue label.
+*Note*: `κ_0` and `ε_pg` are placed here as registered model / stronger-realization candidates. Their necessity and exact inheritance from primitive non-flatness remain OPEN; tier placement neither admits them as primitives nor forbids their later independent re-establishment.
 
 **Tier 3 — Domain projections, operational proxies and threshold-bearing hypotheses** (domain realizations, capacity proxies, measurement readouts, and threshold-bearing points):
 
@@ -7229,24 +7235,24 @@ SRT 主方程的运作机制如下：
 
 ## Usage Rules
 1. Never use `G` (gravity constant) to refer to `\hat{G}` (Ghost Operator).
-2. `L_0` is not "nothingness"; it is structured potentiality.
+2. `L_0` is neither "nothingness" nor a pregiven possibility warehouse; use it only as the model-facing open / non-preclosed aspect described in the L₀ row, under the current L0 / Spine owners.
 3. Use `\Psi_f` for ontological friction; reserve `\Phi` for IIT context only.
 4. Use `\Omega` for consistency and `\Omega_{\text{mis}}` for mismatch to avoid symbol collision.
 5. In AI / pure `L_2` contexts, prefer "`\Psi_f` is non-binding to the system" over the blunt shorthand `\Psi_f = 0`, unless you are explicitly discussing an idealized limit.
 6. When discussing classical objectivity, prefer `\Delta\Psi_f^{readout}\to 0` over "object-maintenance friction vanishes".
 7. **d usage split**：bare `d` means scalar summary by default. Use `d-vector` only for conditional distribution / component expansion, and use `d-gate` only as a judgment tool for stake admission. These three are not interchangeable definitions.
-8. **T_dir usage split**：`T_dir` is a v0 operational proxy for directional readability. Do not use it as a completed formal object, as semantic valence, or as confidence.
-9. **ε usage split**：`ε_pg` is the L0 minimum non-neutrality postulate; ISP-level anti-closure ε is a conditional P2/P3 candidate under ST-A, not a P1 corollary; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. They must not be collapsed into one empirical theorem.
+8. **T_dir usage split**：`T_dir` is a v0 operational proxy for formed-system self-readability / reorientation relative to an independently typed, declared direction signal. With no declared direction it is undefined / not admitted for that claim. Do not use it as a completed formal object, semantic valence, confidence, value / legitimacy validator, generative-health score or O2-M route.
+9. **ε usage split**：`ε_pg` is a registered stronger-asymmetry / anti-erasure realization candidate whose primitive inheritance remains OPEN; ISP-level anti-closure ε is a conditional P2/P3 candidate under ST-A, not a P1 corollary; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. Registration does not admit primitive status, and the three symbols must not be collapsed into one empirical theorem.
 10. **Canonical status split**：`governance-canonical` means repo-wide stabilized usage; `theory-canonical` means core-derived or core-priority definition; `operational proxy` means measurable working readout; `bridge hypothesis` means cross-domain candidate mapping. Do not infer theory-canonical status merely from a symbol-table default, filename, or historical label.
 11. **Ψ_f / Fisher split**：do not write `\Psi_f \equiv g_F` as a literal identity. Use `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta+O(\|d\theta\|^3)` for local cost, or a path functional such as `\Psi_f^{geom}[\gamma]=\int_\gamma\sqrt{g^F_{ij}\dot\theta^i\dot\theta^j}\,dt` when the statistical-manifold projection is valid.
 12. **σ namespace + scope split** (2026-04-24 L1 round; S+R truth-up 2026-08-29): bare `σ` defaults to the **main-equation state field** (`Core/SRT_Core_22_Equations.md`); `σ_{sr}` is the self-reference ratio (with subscripts `sub / self / health / coll`); `σ_j` is an anchoring sub-target (`SRT_Core_14 T-Scale-Rhythm-5`). These are three different objects. Any file using σ in a sense other than the main-equation state field must either (a) use the `σ_{sr}` / `σ_j` form explicitly, or (b) carry a file-level symbol namespace note binding bare `σ` to the intended meaning per this rule. The `σ_{sr}` family also inherits `SRT_Individuation.md §八`: the order-parameter choice is P2, conventional, and replaceable by an equivalent form. The current bare-norm realization requires a declared trace/ext attribution rule, parameter representation, and norm/metric; namespace registration does not make it representation-invariant, uniquely provenance-resolving, a causal-control share, a bearer/selector criterion, or a natural phase coordinate. `σ_{sr}^{coll}` is additionally boundary-relative and may reclassify shared `L_2` as collective trace. Thresholds `sub/self/health` remain model-class coordinates until stronger invariant/natural-boundary evidence is separately established. Historical files predating 2026-04-24 where bare `σ` means self-reference ratio are being progressively rewritten; in the meantime, read them as `σ_{sr}` when the context is Individuation / Occlusion Dynamics / Suffering / L1 Formalism §2 / Collective Selection §4, with this scope rule applied.
 13. **Governance terms are not theory symbols**: `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, `canonical:false`, and related structural-governance vocabulary (defined in `SRT_Glossary_Structural_Governance_Terms.md`) are repository-organisation terms, not canonical mathematical or phenomenological symbols. Do not add them as rows to this table or treat them as carrying theory-canonical status.
 14. **Annex and Operations reference scope**: Non-canonical annex files (`AI/Architecture_Annex/`, `AI/Consciousness_Annex/`, `Physics/QBox_Annex/`, `Physics/Earth_Accretion_Annex/`, etc.) and Operations records (e.g. `Operations/Archive_Records/Closure_Index_2026-04-29.md`, `Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md`) may cite and use symbols defined in this table. They must not introduce new symbol definitions, override existing usage rules, or alter the scope of canonical symbols established here.
-15. **κ namespace split** (GOV-SUB01 Pass 1, 2026-07-16): the glyph `κ` spans two unrelated object families that must not be read as one continuous quantity. (a) `κ_0` (primordial curvature) and `κ(t)` (dynamic L₀ curvature) are **L₀-curvature** objects — canonical source `Core/SRT_Core_12a T-L0-Kappa0 / T-L0-NonStatic`. `κ_0` is carried as a **primordial-curvature candidate**: its in-table structural-prerequisite role is retained, while its ontological status is explicitly open (`Philosophy/SRT_L0_Ontological_Status.md`); the "candidate" label describes this existing status and does **not** downgrade `κ_0` in this pass. (b) `κ_{c1}` and `κ_{c1.5}` are **consciousness-stage phase-transition thresholds** — canonical source `Philosophy/SRT_Consciousness_Conditions.md §三`. As threshold-bearing points their specific values are lab-level (P4) per `Governance/SRT_CLAIM_LADDER.md`, even where a Scope column reads "Core". The two families share no derivation path: an equation over `κ_0` says nothing about `κ_{c1}`, and vice versa. This rule adds the namespace guard and claim-level annotation **only**; it does not rename any symbol and does not modify any equation referencing `κ_0`, `κ(t)`, `κ_{c1}`, or `κ_{c1.5}`. A full `κ_0` / `ε_pg` dependency-graph audit is deferred to GOV-SUB01 Pass 2.
+15. **κ namespace split** (GOV-SUB01 Pass 1; Selection-totality truth-up 2026-09-15): the glyph `κ` spans two unrelated object families that must not be read as one continuous quantity. (a) `κ_0` and `κ(t)` belong only to explicitly declared curvature / anisotropy realization models at current strength. `κ_0` is a Class-B conditional model / realization candidate, not a structural prerequisite or universal direction source by registration; `κ(t)` is model-scoped and does not establish a universal evolving L0 field. Their necessity and exact relation to primitive non-flatness remain OPEN and must be resolved through the current L0 owner plus Gate 0. (b) `κ_{c1}` and `κ_{c1.5}` are separate consciousness-stage phase-transition thresholds from `Philosophy/SRT_Consciousness_Conditions.md §三`; their specific values are P4. An equation over `κ_0` says nothing about `κ_{c1}` or `κ_{c1.5}`, and vice versa. This rule changes no glyph or local equation; it governs namespace and admission only.
 
-16. **Gate 0 — L₀ contentless structurality boundary** (adopted 2026-08-11): **pointer only.** Whether a given object may sit at bare `L_0` is a **type** question, not a symbol question, and is decided solely by **`Governance/SRT_CLAIM_LADDER.md §0A`** — the single primary authority for the rule, its object classes, and its admission and read-back conditions. This table does **not** restate that rule and must not be cited in its place. Symbol users touching `L_0`, `κ_0`, `ε_pg`, or any quantity defined over `L_0` must take the type verdict from §0A. Adjudication record: `Operations/Proposals/SRT_GATE0_L0_CONTENTLESS_STRUCTURALITY_DECISION_2026-08-11.md`. This entry adds no symbol, no definition, and no claim level, and Gate 0 itself carries no P-level.
+16. **Gate 0 — L₀ contentless structurality boundary** (adopted 2026-08-11): **pointer only.** Whether a given object may sit at bare `L_0` is a **type** question, not a symbol question, and is decided solely by **`Governance/SRT_CLAIM_LADDER.md §0A`** — the single primary authority for the rule, its object classes, and its admission and read-back conditions. At current strength, `κ_0`, `ε_pg`, B-count orderings and model gradients sit in Class B / the admission gap unless independently established. This sentence is a result pointer, not a duplicate rule; this table must not be cited in place of §0A. Gate 0 itself carries no P-level and this entry adds no symbol or definition.
 
-17. **B-A — Shoshin strict-layering guard** (author-decided 2026-08-12): this decision deliberately adds **no symbol**. `ε_pg` remains the registered L₀ minimum-non-neutrality postulate and must not be renamed, aliased, or cited as an independent “Shoshin precursor.” 「初心 / Shoshin」begins at L₁ as P2 read-back / interpretation or P5 phenomenology; any `argmin`, `∇F`, or horizon-bearing form is a declared domain bridge / proxy and cannot define L₀. Canonical term authority: `Core_Law/SRT_L0_Metaphysics.md` 初心词条; decision record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. This guard does not decide the `κ_0 / ε_pg` dependency (Rule 15). Global-optimum scope is now governed separately by Rule 18 / C-A.
+17. **B-A — Shoshin strict-layering guard** (author-decided 2026-08-12; Selection-totality truth-up 2026-09-15): this decision deliberately adds **no symbol**. `ε_pg` remains a registered namespace / lineage symbol; registration does not establish primitive admission, an L0 minimum-non-neutrality postulate, or an independent “Shoshin precursor.” 「初心 / Shoshin」begins at L₁ as P2 read-back / interpretation or P5 phenomenology; any `argmin`, `∇F`, or horizon-bearing form is a declared domain bridge / proxy and cannot define L₀. Canonical term authority: `Core_Law/SRT_L0_Metaphysics.md` 初心词条; decision record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. The necessity and exact `κ_0 / ε_pg` inheritance relation remain OPEN under Rule 15 and Gate 0. Global-optimum scope is governed separately by Rule 18 / C-A.
 
 18. **C-A — global-optimum scope guard** (author-decided 2026-08-12): this decision adds **no symbol** and does not repurpose `\Omega`. Bare `\Omega` remains Ontological Consistency under Rule 4; it must not be reused for a reachable-path set, a theological source horizon, or a global optimum. A model-local optimum must state the finite position, reachable／admissible domain, comparison rule or functional, horizon, constraints, and failure conditions; write those indices locally rather than registering a repo-wide optimum glyph. Regulative horizons are non-attainable L₁/P2 or P5 language; finite attractors remain P3/P4 model objects. A universe-wide semantic／evaluative optimum is not a current positive SRT object. Technical “global optimum” usage remains valid inside a fully declared optimization problem and does not license universe-wide or normative extrapolation. Decision record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. C-A does not decide the separate `Ψ_f → 0` valence question (CΨ).
 
@@ -7259,7 +7265,7 @@ SRT 主方程的运作机制如下：
 |---|---|---|---|
 | **规范定义** | $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ | 算子对不可逆风险的效用敏感度梯度 | `_SRT_D_VALUE_CANONICAL.md` Def-d-canonical |
 | **几何容量 proxy** | $D_{eff}(I_F(\theta)) = (\operatorname{tr} I_F)^2 / \operatorname{tr}(I_F^2)$ | Fisher 信息矩阵的有效维度上界；不等于规范 d | `_SRT_D_VALUE_CANONICAL.md` Def-D_eff; `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11` |
-| **几何底座** | $d(\theta) \propto \operatorname{Align}(\theta, \kappa(t))$ | d 是 θ 参数空间与 L₀ 曲率场的对齐程度；解释"为什么 ∂U/∂S 是正确量" | `D_VALUE_ALIGNMENT.md §4.4`（新增 2026-04-10） |
+| **几何模型候选** | $d(\theta) \propto \operatorname{Align}(\theta, \kappa(t))$ | 仅在已声明的曲率／对齐 bridge model 中作为 d 的候选实现；不解释或替代 canonical d，也不赋予 `κ(t)` primitive direction authority | `D_VALUE_ALIGNMENT.md §4.4`（bridge / model scoped） |
 
 *规范来源*：`_SRT_D_VALUE_CANONICAL.md`；`D_eff` 为 proxy / capacity upper bound，不再与规范 d 同级。
 
