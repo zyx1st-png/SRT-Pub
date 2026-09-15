@@ -94,24 +94,45 @@ Permanent publication assets include:
 - `papers/build_artificial_life_v18_submission.py`
 - `papers/costly_selective_closure_supplement/audit_e1_paired_sensitivity.py`
 - `papers/costly_selective_closure_supplement/generate_v18_evidence_summary.py`
+- `papers/costly_selective_closure_supplement/figures/figure1_design_v18.svg`
 - `papers/costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg`
 
-The submission builder hard-fails on superseded v17 framing and on the old incorrect wording that described the historical E1 main test as paired sign-flip inference.
+The submission builder hard-fails on superseded v17 framing, on the old incorrect wording that described the historical E1 main test as paired sign-flip inference, and on reintroduction of the v17 Figure 1 path.
 
 Latest full statistical-transparency artifact check before the final two-sentence scope tightening: Actions run `34969917124` = SUCCESS. The subsequent scope tightening changed two framing sentences only, and the builder passed again at 6,956 words.
 
+## Reviewer-facing manuscript packaging QA
+
+The reviewer-facing manuscript was regenerated after replacing the historical Experiment 1 design figure with the v18-aligned source.
+
+```text
+Figure 1 source = figure1_design_v18.svg / PASS
+Figure 1 terminology = Terminal condition / Restore condition / E0 / PASS
+legacy Figure 1 '(real-stake)' label = ABSENT
+Figure 2 = PASS
+final reviewer-facing PDF pages = 17
+DOCX render visual QA = PASS / all 17 pages inspected
+independent PDF render verification = PASS
+PDF preflight = 17 pages / openable / unencrypted / non-scanned
+clipping or overlap = NONE FOUND
+broken glyphs or black boxes = NONE FOUND
+```
+
+The Figure 1 packaging correction changes presentation only; it does not change the experiment, numerical results, statistical analyses, or scientific claims.
+
 ## Governance
 
-Publication reconstruction remains stacked on the completed E1/E2/E3 evidence branch. Temporary execution/check workflows and one-time patch scripts are removed after use. Final Governance Preflight must be green on the latest clean head before merge.
+Publication reconstruction remains stacked on the completed E1/E2/E3 evidence branch. Temporary execution/check workflows and one-time patch scripts have been removed after use. The clean publication diff contains only permanent manuscript, builder, audit, figure-generation, figure-source, cover-letter, and readiness assets.
+
+Governance Preflight must be green on the latest clean head before merge. The immediately preceding clean packaging head passed Governance Preflight run `34971857900` / run number `2318`; any later readiness-only commit must receive its own green rerun before merge.
 
 ## Remaining submission mechanics
 
-The scientific/content gate no longer requires a new experiment. Remaining work is mechanical publication packaging:
+The scientific/content gate and reviewer-facing manuscript PDF gate no longer require a new experiment or manuscript rewrite. Remaining work is journal-upload mechanics only:
 
-- generate the final reviewer-facing PDF from the guarded v18 submission artifact;
-- perform visual/typographic QA and final APA-format spot check;
-- prepare reviewer-safe supplementary upload/package;
-- verify manuscript/cover-letter metadata in the submission system.
+- prepare or verify the reviewer-safe supplementary upload/package;
+- verify manuscript/cover-letter metadata in the submission system;
+- perform the actual journal submission only after explicit author authorization.
 
 These mechanics should not be used to reopen the scientific claim unless they expose a concrete inconsistency.
 
@@ -125,7 +146,9 @@ STATISTICAL TRANSPARENCY = PASS
 STRONGEST-NEIGHBOR SURVIVAL = PASS / NARROW
 ARTIFICIAL LIFE FIT = STRONG PASS
 NEW EXPERIMENT REQUIRED BEFORE SUBMISSION = NO
-CONTENT READINESS = READY FOR AUTHOR SUBMISSION PACKAGING
+CONTENT READINESS = PASS
+REVIEWER-FACING PDF QA = PASS / 17 PAGES
+MANUSCRIPT PACKAGING = PASS
 MERGE #981 = HOLD / AUTHOR DECISION
-JOURNAL SUBMISSION = NOT PERFORMED
+JOURNAL SUBMISSION = NOT PERFORMED / AUTHOR DECISION REQUIRED
 ```
