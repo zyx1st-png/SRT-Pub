@@ -8,6 +8,7 @@ SRC = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_submission.md"
 TITLE = "# Who Bears Failure? Consequence Scope and Terminality in Survival-Coupled Artificial Agents"
 NOVELTY_AUDIT = PAPERS / "CostlySelectiveClosure_v19_STRONGEST_NEIGHBOR_AUDIT.md"
+EVIDENCE_FIGURE = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v19.svg"
 
 E2_PREREG = "5852e60d82efc14748ae3478ee2400b4d3600839"
 E3_PREREG = "0c599c14ea24196c6e2d411ecd0e4e17124f18f1"
@@ -31,6 +32,21 @@ def strip_repository_note(text: str) -> str:
         count=1,
         flags=re.S,
     )
+
+
+def insert_evidence_figure(text: str) -> str:
+    if EVIDENCE_FIGURE in text:
+        return text
+    marker = "| E4 | same temporary recovery, scope manipulated | failed agent only vs both agents | shared > individual, modest preregistered effect |\n\nThree claims follow."
+    if marker not in text:
+        raise RuntimeError("could not locate v19 integrated-evidence insertion point")
+    insertion = (
+        "| E4 | same temporary recovery, scope manipulated | failed agent only vs both agents | shared > individual, modest preregistered effect |\n\n"
+        f"![Integrated E1-E4 evidence]({EVIDENCE_FIGURE})\n\n"
+        "**Figure 2.** Integrated evidence across E1-E4. E1-E3 points show condition means with +/- 1 SD from the committed result records; these panels summarize different interventions and are not intended as a shared severity axis. E4 instead shows all 30 latency-collapsed shared-minus-individual frozen-policy effects together with the preregistered paired 95% bootstrap interval. Confirmatory inference follows the experiment-specific tests reported above.\n\n"
+        "Three claims follow."
+    )
+    return text.replace(marker, insertion, 1)
 
 
 def word_count(text: str) -> int:
@@ -66,15 +82,15 @@ def validate(text: str) -> None:
         "who bears failure-triggered future opportunity loss",
         "terminality still contains additional causal structure",
         "does not require an immediate Experiment 5",
-        # Strongest-neighbor / novelty boundary guards.
         "Tampuu et al. (2017)",
         "Scott and Pitt (2023)",
         "shared consequence",
         "not new",
-        # Repository preregistration provenance must be reviewer-visible.
         E2_PREREG,
         E3_PREREG,
         E4_PREREG,
+        EVIDENCE_FIGURE,
+        "**Figure 2.** Integrated evidence across E1-E4.",
     ]
     for item in required:
         if item not in text:
@@ -100,6 +116,8 @@ def validate(text: str) -> None:
 
     if not NOVELTY_AUDIT.is_file():
         raise RuntimeError("v19 strongest-neighbor audit is missing")
+    if not (PAPERS / EVIDENCE_FIGURE).is_file():
+        raise RuntimeError("v19 E1-E4 evidence SVG is missing")
 
     keyword_line = next(
         (line for line in text.splitlines() if line.startswith("**Keywords**:")), None
@@ -122,6 +140,7 @@ def main() -> None:
     text = SRC.read_text(encoding="utf-8")
     text = strip_frontmatter(text)
     text = strip_repository_note(text)
+    text = insert_evidence_figure(text)
     text = text.lstrip()
     validate(text)
     OUT.write_text(text, encoding="utf-8")
