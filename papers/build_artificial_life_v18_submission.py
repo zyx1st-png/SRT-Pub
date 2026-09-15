@@ -7,6 +7,11 @@ PAPERS = Path(__file__).resolve().parent
 SRC = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_submission.md"
 DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure1_design_v17.svg"
+EVIDENCE_FIGURE = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg"
+EVIDENCE_FIRST_TITLE = (
+    "# Failure Is Not One-Dimensional: Terminality, Persistent Damage, "
+    "and Recovery Architecture in Artificial Agents"
+)
 
 
 def strip_frontmatter(text: str) -> str:
@@ -34,6 +39,7 @@ def word_count(text: str) -> int:
 
 def validate(text: str) -> None:
     required = [
+        EVIDENCE_FIRST_TITLE,
         "## Abstract",
         "## 1. Introduction",
         "## 4. Experimental Programme",
@@ -48,6 +54,9 @@ def validate(text: str) -> None:
         "## Appendix C. Experiment 3 Confirmatory Guard",
         "**Keywords**:",
         DESIGN_FIGURE,
+        EVIDENCE_FIGURE,
+        "**Experiment 1 was not preregistered**",
+        "timestamped repository preregistrations",
         "rho = +0.0548074683",
         "rho = -0.7037203560",
     ]
@@ -65,6 +74,8 @@ def validate(text: str) -> None:
         "cheap restoration lowers operational V",
         "Only the final hypothesis receives direct support",
         "most important next experiment is also clear",
+        "# Costly Selective Closure: Terminal Failure, Persistent Damage, and Recovery Architecture in Artificial Agents",
+        "Terminal failure strongly stabilizes costly cooperation relative to cheap restoration",
     ]
     for item in forbidden:
         if item in text:
@@ -79,16 +90,10 @@ def validate(text: str) -> None:
     if not (5 <= len(keywords) <= 6):
         raise RuntimeError(f"Artificial Life expects 5–6 keywords; found {len(keywords)}")
 
-    # Evidence-led publication guard: E2/E3 cannot be omitted from the final text.
-    evidence_markers = [
-        "Experiment 2: persistent non-terminal metabolic impairment",
-        "Experiment 3: fully reversible recovery latency",
-        "PRIMARY H1",
-    ]
-    # The exact heading text is sufficient for the first two; the third may be
-    # expressed narratively rather than as a result-file key.
-    if evidence_markers[0] not in text or evidence_markers[1] not in text:
-        raise RuntimeError("v18 submission must retain both preregistered follow-ups")
+    if "Experiment 2: persistent non-terminal metabolic impairment" not in text:
+        raise RuntimeError("v18 submission must retain Experiment 2")
+    if "Experiment 3: fully reversible recovery latency" not in text:
+        raise RuntimeError("v18 submission must retain Experiment 3")
 
 
 def main() -> None:
