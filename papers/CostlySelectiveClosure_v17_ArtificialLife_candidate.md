@@ -22,7 +22,7 @@ zyx1st@gmail.com
 
 Artificial life still lacks a shared operational grammar for comparing degrees of life-likeness across very different substrates. Existing approaches emphasize reproduction, metabolism, autopoiesis, autonomy, adaptive regulation, or precariousness, but these concepts do not by themselves provide a common experimental profile for comparing systems that are differently buffered, historically constrained, and exposed to failure. This paper proposes **costly selective closure** (CSC) as a four-dimensional heuristic organized around **selective breadth**, **maintenance burden**, **historical retention**, and **irreversible vulnerability**. A CSC profile is meaningful only relative to a declared organizational unit, boundary, timescale, and recovery regime; the four dimensions are not assumed to be orthogonal and are not combined into a universal scalar score.
 
-We then test one dimension, irreversible vulnerability, in a controlled two-agent reinforcement-learning environment. The primary contrast holds reward, observations, energy dynamics, architecture, schedule, and seeds fixed while changing the depletion transition: either the current episode-token terminates or it is cheaply restored. After a cooperation bonus is withdrawn, mutual cooperation averages **0.55 under terminal failure versus 0.04 under cheap restoration across 30 paired seeds** (`p < 0.0001`). The gap survives removal of the explicit death penalty, appears as a dose-response across one to unbounded lives, persists across a payoff sweep, and remains large when frozen policies are evaluated on identical common-support states. The experiment therefore shows that terminate-versus-restore is a causal design variable for learned policy in this survival-coupled testbed. CSC interprets that contrast as one operational probe of vulnerability; it does not claim that this single experiment validates the full four-dimensional heuristic or defines life.
+We then test one dimension, irreversible vulnerability, in a controlled two-agent reinforcement-learning environment. The primary contrast holds the reward function, observation specification, energy dynamics, architecture, schedule, and seeds fixed while changing the depletion transition: either the current episode-token terminates or it is cheaply restored. After a cooperation bonus is withdrawn, mutual cooperation averages **0.55 under terminal failure versus 0.04 under cheap restoration across 30 paired seeds** (`p < 0.0001`). The gap survives removal of the explicit death penalty, appears as a dose-response across one to unbounded lives, persists across a payoff sweep, and remains large when frozen policies are evaluated on identical common-support states. The experiment therefore shows that terminate-versus-restore is a causal design variable for learned policy in this survival-coupled testbed. CSC interprets that contrast as one operational probe of vulnerability; it does not claim that this single experiment validates the full four-dimensional heuristic or defines life.
 
 **Keywords**: costly selective closure, artificial life, life-likeness, irreversible vulnerability, reinforcement learning, self-maintenance
 
@@ -30,7 +30,7 @@ We then test one dimension, irreversible vulnerability, in a controlled two-agen
 
 Artificial life is both a constructive science and a philosophical method. It does not only ask what life is; it asks which organizational properties must be built, varied, and maintained for life-like phenomena to appear. That makes comparison central. A useful framework should be broad enough to compare software, embodied agents, continuous cellular automata, protocell-like models, and biological organisms while remaining specific enough to generate experimental manipulations.
 
-No single existing criterion cleanly fills that role. Reproduction captures evolutionary persistence but excludes sterile organisms and dormant phases. Metabolism captures energetic openness but is not by itself sufficient for individuality or adaptive organization. Autopoiesis and biological autonomy place self-production and constraint closure at the center of living organization (Maturana & Varela, 1980; Moreno & Mossio, 2015). Enactive approaches add adaptivity and precariousness, emphasizing that regulation matters because a system can fail in ways relevant to its continued organization (Di Paolo, 2005; Egbert & Barandiaran, 2011). Active-inference and related agent formalisms provide broad mathematical descriptions of adaptive systems, but a generic formal description does not by itself settle whether a concrete implementation is locally self-maintaining, externally buffered, cheaply restorable, or exposed to irreversible loss (Friston, 2013; Kirchhoff et al., 2018; Raja et al., 2021; Aguilera et al., 2022; Baltieri & Suzuki, 2026).
+No single neighboring approach is designed specifically as a cross-substrate experimental profile of this kind. Reproduction captures evolutionary persistence but excludes sterile organisms and dormant phases. Metabolism captures energetic openness but is not by itself sufficient for individuality or adaptive organization. Autopoiesis and biological autonomy place self-production and constraint closure at the center of living organization (Maturana & Varela, 1980; Moreno & Mossio, 2015). Enactive approaches add adaptivity and precariousness, emphasizing that regulation matters because a system can fail in ways relevant to its continued organization (Di Paolo, 2005; Egbert & Barandiaran, 2011). Active-inference and related agent formalisms provide broad mathematical descriptions of adaptive systems, but a generic formal description does not by itself settle whether a concrete implementation is locally self-maintaining, externally buffered, cheaply restorable, or exposed to irreversible loss (Friston, 2013; Kirchhoff et al., 2018; Raja et al., 2021; Aguilera et al., 2022; Baltieri & Suzuki, 2026).
 
 The present proposal is deliberately narrower than a new definition of life. It asks whether artificial-life research would benefit from a profile that makes four questions explicit across systems:
 
@@ -77,6 +77,8 @@ The same level discipline applies to biological cases. A virion, infected cell, 
 
 ## 3. Costly Selective Closure as a Profile Heuristic
 
+For present purposes, **costly selective closure** denotes the degree to which a declared organizational unit maintains a selective mode of coupling under its own maintenance burden, retained historical constraint, and exposure to non-trivially reversible failure. The term names the profile problem; it is not a claim that all four dimensions reduce to one mechanism.
+
 ### 3.1 Profile declaration
 
 A CSC claim is well formed only after four contextual commitments are declared:
@@ -118,7 +120,7 @@ The distinction is graded. The experimental question is therefore not whether a 
 
 ### 4.1 Question and design
 
-The experiment asks a narrow causal question: **when reward, observations, resource dynamics, architecture, schedule, and random seeds are held fixed, does changing depletion from terminal failure to cheap restoration change the learned policy?**
+The experiment asks a narrow causal question: **when the reward function, observation specification, resource dynamics, architecture, schedule, and random seeds are held fixed, does changing depletion from terminal failure to cheap restoration change the learned policy?**
 
 Two independent policies are trained with REINFORCE (Williams, 1992) in a symmetric two-agent survival environment. Each policy receives 12 observation features, uses a 16-unit hidden layer, and chooses among three actions: `cooperate`, `solo`, or `rest`. Immediate rewards follow a Prisoner's-Dilemma ordering: temptation `1.4` > mutual cooperation `1.0` > mutual defection `0.6` > sucker `0.0`. The energy economy creates a different long-horizon structure: only mutual cooperation yields net-positive energy, whereas mutual defection slowly starves both agents.
 
@@ -127,13 +129,13 @@ Training runs for 1000 episodes with a mutual-cooperation bonus, followed by 300
 1. **terminal-run condition** (used below as the shorthand **real-stake** condition): depletion ends the current episode-token;
 2. **resettable condition**: depletion restores the agent to full energy and the run continues.
 
-These two regimes have the same programmed reward function, observations, energy dynamics, policy architecture, training schedule, and seeds. The only programmed regime difference is the depletion transition: terminate versus restore. That intervention necessarily changes subsequent return length and state occupancy; those changes are the mechanism of the intervention, not hidden nuisance variables.
+These two regimes have the same programmed reward function, observation space and feature specification, energy dynamics, policy architecture, training schedule, and seeds. The only programmed regime difference is the depletion transition: terminate versus restore. That intervention necessarily changes subsequent return length and state occupancy; those changes are the mechanism of the intervention, not hidden nuisance variables.
 
 A third **simulated-stake** condition is auxiliary rather than part of the matched causal contrast. It remains resettable while adding a mortality cue and an additional represented-danger reward penalty, testing whether explicit representation of danger can substitute for removal of cheap restoration.
 
 ![Experimental design](costly_selective_closure_supplement/figures/figure2_design.png)
 
-**Figure 1.** Experimental design. The real-stake and resettable regimes share the same reward and observation structure and differ in the depletion transition: terminate versus restore. Simulated-stake is an auxiliary condition that remains resettable while adding a mortality cue and additional represented-danger penalty.
+**Figure 1.** Experimental design. The real-stake and resettable regimes share the same reward and observation specification and differ in the depletion transition: terminate versus restore. Simulated-stake is an auxiliary condition that remains resettable while adding a mortality cue and additional represented-danger penalty.
 
 ### 4.2 Main result
 
@@ -192,7 +194,7 @@ The cases below are not measurements and are not rankings. They illustrate how t
 | embodied autopoietic or evolved agent | moderate | positive | positive | positive | stronger coupling of regulation and continuation |
 | resettable RL episode-token | task-dependent | externally buffered | controller-lineage history persists | low under cheap restore | behavior can be rich while token failure is reversible |
 | biological organism | broad and multiscale | positive and ongoing | strongly embodied | substantial at organism level | paradigm case of tightly coupled maintenance and consequence |
-| free virion | narrow at virion level | largely externalized | genomic / structural | structural but not self-maintenance-based | separates inherited organization from active self-maintenance |
+| free virion | narrow at virion level | minimal at virion level; replication host-dependent | genomic / structural | structural but not self-maintenance-based | separates inherited organization from active self-maintenance |
 | dormant spore | reduced active coupling | reduced during dormancy | high reactivation capacity | phase-dependent | shows that profiles can change across life-cycle phase |
 
 ### 5.1 Game of Life and Lenia
@@ -272,9 +274,9 @@ The result should not be inflated into a claim that episode termination creates 
 
 ## Data and Code Availability
 
-The existing anonymized reproduction package contains the experiment code, fixed result files, statistical tests, and figure-generation scripts. The real-stake versus resettable comparison is the primary matched contrast; simulated-stake is auxiliary. The package records seeds and the software environment used for exact reproduction of the common-state probe. For double-blind review, the package should be distributed without Git history or identity-bearing repository links.
+The existing anonymized reproduction package contains the experiment code, fixed result files, statistical tests, and figure-generation scripts. The real-stake versus resettable comparison is the primary matched contrast; simulated-stake is auxiliary. The package records seeds and the software environment used for exact reproduction of the common-state probe.
 
-The historical supplement README retains the notation used by the v16 Adaptive Behavior submission. A v17-specific supplement note maps that historical notation to the manuscript-local B/M/H/V terminology without changing the code or committed experimental results.
+For review, the supplement should be provided in a form that does not expose reviewer identity through access logs or permissions. The historical supplement README retains the notation used by the v16 Adaptive Behavior submission. A v17-specific supplement note maps that historical notation to the manuscript-local B/M/H/V terminology without changing the code or committed experimental results.
 
 ## References
 
@@ -297,7 +299,6 @@ The historical supplement README retains the notation used by the v16 Adaptive B
 - Moreno, A., & Mossio, M. (2015). *Biological Autonomy: A Philosophical and Theoretical Enquiry*. Springer.
 - Prusiner, S. B. (1998). Prions. *Proceedings of the National Academy of Sciences, 95*(23), 13363–13383.
 - Raja, V., Valluri, D., Baggs, E., Chemero, A., & Anderson, M. L. (2021). The Markov blanket trick: On the scope of the free energy principle and active inference. *Physics of Life Reviews, 39*, 49–72.
-- Terry, J. K., et al. (2021). PettingZoo: Gym for multi-agent reinforcement learning. *Advances in Neural Information Processing Systems, 34*.
 - Williams, R. J. (1992). Simple statistical gradient-following algorithms for connectionist reinforcement learning. *Machine Learning, 8*, 229–256.
 
 ## Appendix: Experimental Details
