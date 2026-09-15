@@ -8,6 +8,7 @@ SRC = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_submission.md"
 TITLE = "# Who Bears Failure? Consequence Scope and Terminality in Survival-Coupled Artificial Agents"
 NOVELTY_AUDIT = PAPERS / "CostlySelectiveClosure_v19_STRONGEST_NEIGHBOR_AUDIT.md"
+ARCHITECTURE_FIGURE = "costly_selective_closure_supplement/figures/figure1_experiment_architectures_v19.svg"
 EVIDENCE_FIGURE = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v19.svg"
 
 E2_PREREG = "5852e60d82efc14748ae3478ee2400b4d3600839"
@@ -32,6 +33,21 @@ def strip_repository_note(text: str) -> str:
         count=1,
         flags=re.S,
     )
+
+
+def insert_architecture_figure(text: str) -> str:
+    if ARCHITECTURE_FIGURE in text:
+        return text
+    marker = "The programme should therefore be read as discovery followed by successive prospectively constrained discrimination tests, not as one prospectively preregistered four-experiment study.\n\n### 4.2 Experiment 1: terminal failure versus restoration"
+    if marker not in text:
+        raise RuntimeError("could not locate v19 architecture-figure insertion point")
+    insertion = (
+        "The programme should therefore be read as discovery followed by successive prospectively constrained discrimination tests, not as one prospectively preregistered four-experiment study.\n\n"
+        f"![E1-E4 experimental architectures]({ARCHITECTURE_FIGURE})\n\n"
+        "**Figure 1.** Experimental architecture across E1-E4. E1 bundles dyad-level episode termination with loss of future within-token return; E2 holds the horizon fixed while impairing internal energy acquisition; E3 localizes temporary loss of normal action opportunity to the failed agent; E4 keeps the non-terminal recovery mechanism but compares individual with shared action-opportunity consequence scope. The sequence progressively narrows the mechanism question rather than treating the four interventions as points on one severity scale.\n\n"
+        "### 4.2 Experiment 1: terminal failure versus restoration"
+    )
+    return text.replace(marker, insertion, 1)
 
 
 def insert_evidence_figure(text: str) -> str:
@@ -89,7 +105,9 @@ def validate(text: str) -> None:
         E2_PREREG,
         E3_PREREG,
         E4_PREREG,
+        ARCHITECTURE_FIGURE,
         EVIDENCE_FIGURE,
+        "**Figure 1.** Experimental architecture across E1-E4.",
         "**Figure 2.** Integrated evidence across E1-E4.",
     ]
     for item in required:
@@ -116,8 +134,10 @@ def validate(text: str) -> None:
 
     if not NOVELTY_AUDIT.is_file():
         raise RuntimeError("v19 strongest-neighbor audit is missing")
+    if not (PAPERS / ARCHITECTURE_FIGURE).is_file():
+        raise RuntimeError("v19 architecture Figure 1 is missing")
     if not (PAPERS / EVIDENCE_FIGURE).is_file():
-        raise RuntimeError("v19 E1-E4 evidence SVG is missing")
+        raise RuntimeError("v19 E1-E4 evidence Figure 2 is missing")
 
     keyword_line = next(
         (line for line in text.splitlines() if line.startswith("**Keywords**:")), None
@@ -140,6 +160,7 @@ def main() -> None:
     text = SRC.read_text(encoding="utf-8")
     text = strip_frontmatter(text)
     text = strip_repository_note(text)
+    text = insert_architecture_figure(text)
     text = insert_evidence_figure(text)
     text = text.lstrip()
     validate(text)
