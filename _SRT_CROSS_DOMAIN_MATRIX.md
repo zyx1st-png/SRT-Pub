@@ -11,7 +11,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 
 # SRT Cross-Domain Usage Matrix
 
-> **Role**: v0 governance matrix. This file does not define new theory. It fixes compact governance-canonical usage rules so domain files do not upgrade projections, proxies, or bridges into core claims.
+> **Role**: v0 governance matrix. This file summarizes current owner-approved usage and does not define new theory. It cannot upgrade a registered symbol, operational proxy, domain projection or bridge to primitive / theory-canonical status by repetition.
 
 ## 0. Status Legend
 
@@ -37,7 +37,7 @@ Historical labels and filenames do not override this table. If an older file sti
 
 ### 1.1 Explanatory-coordinate guard
 
-`d` need not be treated as a newly discovered empirical variable that must be mutually exclusive with salience, reward, homeostatic error, pain, arousal, or memory strength. It is first a unifying explanatory coordinate for how minimum non-neutrality unfolds into concern, stake, consequence return, and changes in future selectability within a finite operator.
+`d` need not be treated as a newly discovered empirical variable that must be mutually exclusive with salience, reward, homeostatic error, pain, arousal, or memory strength. It is first a unifying explanatory coordinate for stake-coupled concern, consequence return and future-selectability effects in formed systems. This matrix does not derive `d` from O0, `ε_pg`, primitive non-neutrality or primitive Selection.
 
 Existing observables may overlap with, partially realize, or serve as local proxies for `d` in a stated system and scale. Such overlap is not by itself a reduction or refutation of `d`. The burden of additional validation arises only when a local observable is claimed to exhaust or directly measure canonical `d`; then it must cover irreversible stake, consequence return, non-substitutability, and effects on future selection capacity.
 
@@ -61,23 +61,25 @@ local proxy explains a phenomenon != local proxy exhausts d's ontological role
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | v0 operational proxy for readability of current selection direction | internal access / reorientation proxy | completed formal ontology of value |
-| Physics | generally not a physics variable | observer-position readability only if explicitly scoped | physical directionality equals value direction |
-| Neuroscience | directional access / reorientation capacity | reportability, action revision, integration proxy | confidence, valence, or reward = `T_dir` |
-| Philosophy / Political | visibility of value / legitimacy direction through institutions | deliberative correction, public reason proxy | order condition directly proves political legitimacy |
-| Spirituality | return-direction readability | shoshin / practice-direction proxy | strong experience means high `T_dir` |
-| AI | boundary-test variable, architecture-state marked | self-monitoring proxy only | explanation fluency or memory persistence implies direction transparency |
+| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal | internal access / reorientation proxy after direction admission | intrinsic Selection direction; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
+| Physics | generally not a physics variable; physical directionality does not automatically supply the declared direction | observer-position readability only if direction and model are independently typed | physical directionality equals value direction or automatically admits `T_dir` |
+| Neuroscience | model-scoped access / reorientation relative to an independently typed direction | reportability, action revision or integration may proxy the functional under a declared model | confidence, valence, reward or reportability = `T_dir`; proxy supplies its own direction |
+| Philosophy / Political | readability of declared relational / normative criteria | deliberative correction or public-reason proxy after criterion admission | `T_dir` validates the criterion; order/readability directly proves political legitimacy |
+| Spirituality | readability / reorientation relative to a declared practice or relational direction | shoshin / practice-direction proxy with explicit criterion | strong experience establishes direction truth, value or high `T_dir` |
+| AI | architecture-state-marked self-monitoring / reorientation relative to a declared objective or criterion | architecture-specific functional proxy | self-report, explanation fluency or memory persistence establishes `T_dir` or supplies a legitimate direction |
+
+No independently typed, declared direction means `T_dir` is undefined / not admitted for that claim; an admitted but inaccessible direction may yield `T_dir = 0`. The matrix never validates the declared direction itself.
 
 ## 4. `ε`
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | `ε_pg` = L0 minimum non-neutrality postulate; ISP-level anti-closure ε = ST-A conditional P2/P3 candidate; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure comparison only when stability semantics, neutral baseline, environment, horizon, and proof/model are declared | treat ISP anti-closure as a P1 corollary, or collapse all ε symbols into one empirical constant or one theory-canonical object |
-| Physics | only as implementation or regularization term unless tied to core source | regulator / residual asymmetry proxy | direct empirical theorem from `ε_pg` |
-| Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves L0 proto-gradient |
-| Philosophy / Political | minimum asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy by itself |
-| Spirituality | minimal openness / non-closure proxy | practice gate or humility floor | spiritual openness proves core ε |
-| AI | anti-closure or stake-gate design question | surrogate stake threshold candidate | anti-closure text behavior or refusal style equals `ε_pg` |
+| Core | `ε_pg` = registered stronger-asymmetry / anti-erasure realization candidate, with exact inheritance from primitive non-flatness OPEN; ISP anti-closure = ST-A conditional P2/P3 candidate; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure comparison only when stability semantics, neutral baseline, environment, horizon and proof/model are declared | `ε_pg` or B-count preference as primitive Selection direction; ε grounds legitimacy; collapse all ε symbols into one object |
+| Physics | implementation / regularization / declared asymmetry-model use only | regulator / residual-asymmetry proxy | physical use back-proves primitive `ε_pg` or universal direction |
+| Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves primitive non-neutrality or `ε_pg` admission |
+| Philosophy / Political | model-level asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy or value by itself |
+| Spirituality | declared-practice openness / non-closure proxy | practice gate or humility floor | spiritual openness proves primitive ε or universal direction |
+| AI | anti-closure or stake-gate design question | surrogate stake-threshold candidate | anti-closure text behavior or refusal style equals or proves `ε_pg` |
 
 ## 5. Standing Rule
 

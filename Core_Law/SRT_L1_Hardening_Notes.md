@@ -13,7 +13,7 @@ dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDI
 # SRT L1 Hardening Notes: Targeted Resolutions of 2026-04-24 Open Pressures
 
 > **Role**: Targeted hardening notes for the four highest-leverage Open Pressures across the 2026-04-24 L1 round. Each section gives a first-pass operator-level or operational definition for a previously-informal object, so that the P1-candidate theorems in the six L1 theory/formalism canonical reference files can be jointly criticized and tested rather than drift independently.
-> **Claim-level note**：本文件所有内容按 P1-candidate / P2 读；硬化案本身不自动让被硬化的上游命题升级到 P1——它只把该命题能被升级检查的路径打开。
+> **Claim-level note**：本文件内容按各节标注的 P1-candidate / P2 读；其中 §2 T-DELTA-1 的完整投影模型在 Wave D2 后默认按 P2 formal candidate 读。硬化案本身不自动让被硬化的上游命题或其模型前件升级到 P1。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP；它们的定义仍以对应 canonical 为准。
 > **Depends on**：同 2026-04-24 round six L1 theory/formalism canonical reference files。
 > **Relation**: This file does not replace the Open Pressures sections in the six L1 reference files; it complements them by offering first-pass hardening. Unresolved items remain open in those files. This preserves the round distinction: six L1 reference files + one hardening notes file = seven `Core_Law/` files total.
@@ -85,6 +85,8 @@ dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDI
 
 ## §2. `\dot{\Delta}_{avail}` 的算子级定义
 
+> **Wave D2 scope guard (2026-09-15)**：本节的 residual decomposition 是在选定 open-state representation 与模型几何中的条件性构造，不是 primitive ontology。`T_{dir}` 分量只在 direction 已被独立声明并准入模型后定义；`L_0` 标签只表示该模型中的残差分量，不是原始压力、价值梯度或方向来源。缺少任一分量的准入条件时，应缩减投影族，而不是把该分量设为零或由其它变量代造。
+
 ### 问题再陈述
 
 `SRT_Suffering.md §1 Def-SUFFERING` 给出：
@@ -105,22 +107,24 @@ $$
 
 （在算子空间为仿射结构的前提下；若非仿射，取最接近的差结构，留为开放点。）
 
-`\Delta(\cdot, \cdot)` 定义为 `\hat{R}` 的**三成分摘要范数**：
+在三个分量均已定义的声明模型中，`\Delta(\cdot, \cdot)` 可写为 `\hat{R}` 的**条件性三成分摘要范数**：
 
 $$
-\Delta(P, t) := \underbrace{w_{dir}\cdot\|\hat{R}\|_{T_{dir}}}_{\text{direction-readability gap}} + \underbrace{w_{pay}\cdot\|\hat{R}\|_{\Psi_f}}_{\text{payability gap}} + \underbrace{w_{L_0}\cdot\|\hat{R}\|_{L_0}}_{\text{L}_0\text{ residual pressure}}
+\Delta(P, t) := \underbrace{w_{dir}\cdot\|\hat{R}\|_{T_{dir}}}_{\text{declared-direction readability gap}} + \underbrace{w_{pay}\cdot\|\hat{R}\|_{\Psi_f}}_{\text{payability gap}} + \underbrace{w_{L_0}\cdot\|\hat{R}\|_{L_0}}_{\text{declared open-state residual}}
 $$
 
 三项的算子层候选：
 
-1. **`\|\hat{R}\|_{T_{dir}}`**：`\hat{R}` 在 T_dir 可读性子空间的投影范数，对应"我感知得到我未走的方向"的清晰度。取 `T_{dir}^{actual} - T_{dir}^{available}` 的绝对值作为初始代理
+1. **`\|\hat{R}\|_{T_{dir}}`**：仅在 direction 已独立声明并准入模型后，取 `\hat{R}` 在该 declared-direction readability 分量上的投影范数；`|T_{dir}^{actual} - T_{dir}^{available}|` 只能作同一 direction 下的初始代理。无 direction 准入时该分量未定义并从分解中省略，不取零
 2. **`\|\hat{R}\|_{\Psi_f}`**：`\hat{R}` 在 `\Psi_f` 可支付子空间的投影范数，对应"我未走那条路，所需支付我尚未支付"的累积。取 `\Psi_f^{available} - \Psi_f^{actual paid}` 的正部
-3. **`\|\hat{R}\|_{L_0}`**：`\hat{R}` 在 L_0 残余压力子空间的投影范数，对应"底层选择压力未被路径消化"的累积。取 `L_0` 候选状态中未进入 L_1 兑现的那部分压力范数
+3. **`\|\hat{R}\|_{L_0}`**：`\hat{R}` 在选定 open-state representation 中的声明残差分量，用于摘要尚未兑现但仍可接入的候选。它不指称 primitive `L_0` 压力、价值梯度或方向仓库，也不由 `\varepsilon_{pg}` 自动给出
+
+若仅部分分量满足准入条件，则求和只遍历已定义的投影集合 `\mathcal K_M \subseteq \{dir,pay,L_0\}`；这仍允许 non-`T_{dir}` subsystem 独立分析。
 
 时间导数：
 
 $$
-\dot{\Delta}_{avail}(t) = \frac{d}{dt}\Delta(P, t) = \sum_k w_k \frac{d}{dt}\|\hat{R}\|_k
+\dot{\Delta}_{avail}(t) = \frac{d}{dt}\Delta(P, t) = \sum_{X\in\mathcal K_M}\left[\dot w_X\|\hat{R}\|_X + w_X\frac{d}{dt}\|\hat{R}\|_X\right]
 $$
 
 **重要**：`\dot{\Delta}_{avail}` 不是 S 的时间导数；它是**驱动 S 的失配源项**。S 自己的时间导数还要减去消化、支付、重选（见 `SRT_L1_Formalism.md §4`）。
@@ -129,8 +133,8 @@ $$
 
 T-SUFF-4 要求：当 `S_{sig}` 被外部抑制（不改变可打开结构），`\dot{\Delta}_{avail}` 不变，结果转入 `S_{str}`。
 
-三成分分解下此结论保持：
-- `T_{dir}` 投影、`\Psi_f` 投影、`L_0` 残余投影都是**结构性的**（取决于可打开结构 `\hat{G}_\theta^{available}`），不由当前登记登通道决定
+条件性分解下此结论保持：
+- 已准入的 `T_{dir}` 投影、`\Psi_f` 投影与 open-state residual 投影都是声明模型中的**结构性分量**（取决于可打开结构 `\hat{G}_\theta^{available}`），不由当前登记通道决定；其中任何一项都不因此获得 primitive standing
 - 关闭登记通道（抑制 `S_{sig}`）仅改变 `\dot{\Delta}_{avail}` 如何被消化，不改变其值
 
 因此 `\dot{\Delta}_{avail}` 在结构空间不变前提下守恒的结论在本硬化下仍然成立。
@@ -142,9 +146,9 @@ T-SUFF-4 要求：当 `S_{sig}` 被外部抑制（不改变可打开结构），
 - 三子空间是否正交？若不正交，加权范数的内积结构需要进一步规定
 - 与具体测量（神经、行为、语言）的映射：暂按 P3 候选读法，见 §4 FEP 桥接
 
-### T-DELTA-1：`\dot{\Delta}_{avail}` 算子级定理（H7，2026-04-25）
+### T-DELTA-1：`\dot{\Delta}_{avail}` 条件性算子模型（H7，2026-04-25；Wave D2 truth-up 2026-09-15）
 
-> **Status**：本节把 §2 的三成分分解从 P1-candidate 第一遍**结构形式**升为带显式算子空间假设 A1-A3 的 P1-candidate **形式定理**。**Claim level: P1-candidate**（与 §2 主体同级，但带显式可证伪假设）。
+> **Status**：本节把 §2 的条件性分解写成带显式算子空间假设 A1-A3 的可证伪形式 / 模型定理。**Default claim level: P2**；只有在具体 domain 中独立固定 direction admission、open-state representation、投影几何与权重来源后，才可审计更强的局部 standing。该形式不能把自身前件反向升级为 P1。
 >
 > **Closes**：`SRT_L1_Formalism.md §7` Open Pressure 2（"`\dot{\Delta}_{avail}` 的正式化"）。
 
@@ -155,7 +159,7 @@ T-SUFF-4 要求：当 `S_{sig}` 被外部抑制（不改变可打开结构），
 | 编号 | 假设 | 失效后果 |
 |---|---|---|
 | **A1** | **仿射结构假设**：`\mathrm{Op}(P)` 在 stable-ISP 邻域内具有仿射结构，使得算子差 `\hat{G}_1 \ominus \hat{G}_2` 是切空间元素 `T_{\hat{G}_2}\mathrm{Op}(P)` | A1 失效则 `\hat{R}` 退化为定性方向感，三成分分解仅在拓扑类层面成立（降为 P3 现象学） |
-| **A2** | **三子空间近似正交**：`T_{dir}, \Psi_f, L_0` 三子空间在 `T_{\hat{G}_2}\mathrm{Op}(P)` 上近似正交（残余交叉项为 `o(1)`） | A2 失效则需引入显式内积 `g_{ij}`，三成分加权升为带交叉项的二次型；`\Delta` 仍可定义但形式更复杂 |
+| **A2** | **已准入投影分量的近似正交**：模型 M 中实际定义的投影集合 `\mathcal K_M \subseteq \{dir,pay,L_0\}` 在 `T_{\hat{G}_2}\mathrm{Op}(P)` 上近似正交（残余交叉项为 `o(1)`）；`dir` 仅在 direction admission 后进入 `\mathcal K_M` | A2 失效则需引入显式内积 `g_{ij}`，已准入分量的加权升为带交叉项的二次型；`\Delta` 仍可定义但形式更复杂 |
 | **A3** | **权重的赌注决定性**：`w_{dir}(P,t), w_{pay}(P,t), w_{L_0}(P,t)` 由 P 在 t 的赌注结构（参见 `_SRT_D_VALUE_CANONICAL.md` Eq-Bridge-D-01 stake-gated d）决定，不依赖外部规约选择 | A3 失效则权重退化为外部建模选择，`\Delta` 失去主体内在性，降为 P2 operational proxy |
 
 #### `\hat{G}_\theta^{available}` 与 `\hat{G}_\theta^{actual}` 的算子层定义
@@ -170,7 +174,7 @@ $$
 
 其中：
 
-- `结构上可达` 指 P 在 t 的位置上不被 `L_2` scaffold 压灭、不被 `Ψ_f` 透支阻断、不在 `L_0` 不可逆吸收态投影下的所有候选算子
+- `结构上可达` 指在模型 M 选定的 open-state representation 中，P 在 t 的位置上不被 `L_2` scaffold 压灭、也不被 `Ψ_f` 透支阻断的候选算子；这不是从 primitive `L_0` 仓库或方向场读取候选
 - `θ-相容` 指算子 `\hat{G}` 的应用不会立即违反 `θ` 张量惯性约束（Eq-Evo-02b）
 - 上确界 `\sup` 在 A1 仿射结构下取作切空间锥的最大方向
 
@@ -184,15 +188,15 @@ $$
 
 #### 三个投影算子的算子级定义
 
-定义三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 作用在切空间 `T_{\hat{G}_\theta^{actual}}\mathrm{Op}(P)` 上：
+在相应对象均已准入模型时，可定义至多三个近似正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 作用在切空间 `T_{\hat{G}_\theta^{actual}}\mathrm{Op}(P)` 上：
 
 | 投影 | 算子级定义 | 几何对应 |
 |---|---|---|
-| `\Pi_{T_{dir}}` | 沿"算子方向可读性"维度的正交投影；与 `T_{dir}` 投影 `\mathcal{F}_T`（`Core_Law/SRT_L1_Formalism.md §6.2`）的微分共享方向场 | "我感知得到我未走的方向"清晰度 |
+| `\Pi_{T_{dir}}` | 仅在 direction 已独立声明并准入后，沿该 declared-direction readability 维度投影；与条件性 `\mathcal{F}_T`（`Core_Law/SRT_L1_Formalism.md §6.2`）共享模型方向场 | 相对于已声明方向的可读性差异；不生成或验证方向 |
 | `\Pi_{\Psi_f}` | 沿"支付能力"维度的正交投影；由 `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 的局部正交基张成 | "我未走那条路所需支付的累积" |
-| `\Pi_{L_0}` | 沿"L_0 残余压力"维度的正交投影；由 L₀ `\varepsilon_{pg}` 公设的 P-本地化候选场张成（本地化形式开放） | "底层选择压力未被路径消化的累积"；非 former P1-T07 hierarchy 后果 |
+| `\Pi_{L_0}` | 沿模型 M 的 declared open-state residual 维度投影；其基由所选 representation 给出，不能由 `\varepsilon_{pg}` 公设直接张成 | 尚未兑现但仍可接入的模型残差；不是 primitive 压力、价值梯度或方向来源 |
 
-A2 假设保证三个投影近似互斥；非正交残余以 `o(1)` 修正项进入。
+A2 假设只保证 `\mathcal K_M` 中已定义投影近似互斥；非正交残余以 `o(1)` 修正项进入。无 direction 准入时 `\Pi_{T_{dir}}` 不在 `\mathcal K_M` 中，而不是零投影。
 
 三成分分量：
 
@@ -202,22 +206,24 @@ $$
 
 #### T-DELTA-1 陈述
 
-**陈述（P1-candidate）**：在 stable ISP P 上，若假设 A1、A2、A3 成立，则
+**陈述（条件性形式 / 模型定理，默认 P2）**：在 stable ISP P 上，若假设 A1、A2、A3 成立，并已声明模型 M 的投影集合 `\mathcal K_M`，则
 
 $$
-\boxed{\;\Delta(P, t) \;=\; w_{dir}(P, t)\|\hat{R}\|_{T_{dir}} \;+\; w_{pay}(P, t)\|\hat{R}\|_{\Psi_f} \;+\; w_{L_0}(P, t)\|\hat{R}\|_{L_0} \;+\; o(1)\;}
+\boxed{\;\Delta(P, t) \;=\; \sum_{X\in\mathcal K_M} w_X(P,t)\|\hat{R}\|_X \;+\; o(1)\;}
 $$
 
 且其时间导数
 
 $$
-\dot{\Delta}_{avail}(P, t) \;=\; \sum_{X\in\{dir, pay, L_0\}} \dot{w}_X(P,t)\|\hat{R}\|_X + w_X(P,t)\frac{d}{dt}\|\hat{R}\|_X
+\dot{\Delta}_{avail}(P, t) \;=\; \sum_{X\in\mathcal K_M} \left[\dot{w}_X(P,t)\|\hat{R}\|_X + w_X(P,t)\frac{d}{dt}\|\hat{R}\|_X\right]
 $$
+
+`dir \in \mathcal K_M` 当且仅当 direction 已被独立声明并准入；否则该分量未定义并从求和中省略。此形式不从 `d`、`d_c`、`σ_{sr}`、`\varepsilon_{pg}` 或代数结构生成方向。
 
 **关键性质**：
 
 1. **`\dot{\Delta}_{avail}` 不由 `S_{sig}` 登记通道决定**——这是 A1-A3 下"可打开结构变化率不可被 L_1 通道开关影响"的算子级证明，对应 T-SUFF-4 反最小化原则与 T-IRR-4 的算子层根据。
-2. **`\dot{\Delta}_{avail}` 的方向**——其各分量的符号由 `\|\hat{R}\|_X` 的几何变化（赌注接入新维度 / 路径关闭旧维度）决定，不被建模者选择。
+2. **`\dot{\Delta}_{avail}` 的符号是表示相对的**——在已声明模型、direction（若适用）、投影几何与 criterion 固定后，各分量符号由 `\|\hat{R}\|_X` 的几何变化决定，不能在同一模型内任意指定；这不意味着模型发现了 primitive、唯一或普遍正当的方向。
 3. **`\Delta` 与 `\hat{R}` 等价**（在 A1-A3 下）——T-PROJ-1 的 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` 即是本节 `\Delta` 在希尔伯特结构 `H_P` 下的范数读法；二者在 A1-A3 + C1-C4 同时成立时等价。
 
 #### 与下游已有命题的算子级一致性
@@ -226,7 +232,7 @@ $$
 |---|---|
 | `SRT_Suffering.md` Def-SUFFERING `S = \Delta(\hat{G}^{actual}, \hat{G}^{available})` | `\Delta` 现在是带显式算子空间假设的可证伪定义，不是抽象差函数 |
 | `SRT_L1_Formalism.md §4.2` 信号型 ODE `\mu_\Delta\dot{\Delta}_{avail}` 项 | `\dot{\Delta}_{avail}` 的算子级表达式 + A1-A3 失效边界 |
-| `SRT_L1_Formalism.md §6 T-PROJ-1` 投影 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` | `\hat{R}` 的算子级定义即 `\mathcal{F}_S` 的算子级展开；C4（方向投影可分性）↔ A2（三子空间近似正交）一致 |
+| `SRT_L1_Formalism.md §6 T-PROJ-1` 投影 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` | `\hat{R}` 的算子级定义即 `\mathcal{F}_S` 的条件性展开；direction 已准入时 C4 与 A2 中的 `dir` 分量协调，无 direction 时两边均省略该分支 |
 | `SRT_L1_Formalism.md §4.3` `\nu_{block}\mathbb{1}[d\le d_c]S_{sig}` 的 `\nu_{block} = \eta\varepsilon_{pg}\kappa_{\Psi_f}`（T-IRR-3.5）| `\kappa_{\Psi_f}` 在本节即 `\partial\|\hat{R}\|_{\Psi_f}/\partial t$ 单位面积转化系数；A3 给 `w_{pay}` 的赌注决定性即 `κ_{\Psi_f}` 的 P-本地化根据 |
 | `SRT_L1_Formalism.md §4.4` 反最小化原则 | `\dot{\Delta}_{avail}` 不由登记通道决定 → 抑制 `S_{sig}` 不改变 `\dot{\Delta}_{avail}`，新失配进入 `S_{str}` |
 
@@ -242,7 +248,7 @@ $$
 
 #### 升 P1 路径
 
-本节升 P1 需要：(a) A1 仿射结构在更广 stable-ISP 域上的验证（或非仿射域的明确边界）；(b) A2 三子空间正交性的实证窗口指定；(c) A3 权重赌注决定性与 `_SRT_D_VALUE_CANONICAL` Eq-Bridge-D-01 的 source-by-source 对位完成。
+本节如要在具体 domain 取得强于默认 P2 的局部 standing，需要：(a) 独立声明 direction admission（仅当包含 `T_{dir}` 分量）与 open-state representation；(b) 验证 A1 仿射结构或标明非仿射边界；(c) 指定 A2 已准入投影分量近似正交的实证窗口；(d) 完成 A3 权重与 `_SRT_D_VALUE_CANONICAL` Eq-Bridge-D-01 的 source-by-source 对位。形式闭合本身不构成 P1 升级。
 
 ---
 
@@ -356,7 +362,7 @@ $$
 ### 5.1 claim-level
 
 - §1 σ 符号约定：**governance-canonical usage**。不改变任何理论命题，只收紧符号
-- §2 `\dot{\Delta}_{avail}` 三成分分解：**P1-candidate**（与 `SRT_Suffering.md` 原命题同级），因为它给了结构定义而不是测量值
+- §2 `\dot{\Delta}_{avail}` 投影分解：**conditional formal/model theorem；默认 P2 formal candidate**。只有在具体 domain 中独立固定 direction（若适用）、residual representation、projection geometry 与 stake weighting 后，才可审计更强的局部 standing
 - §3 `M(t)` 可测性 MOC：**P2 operational proxy**；MOC-1/2/3 各项都是工作性代理，不是最终结构定义
 - §4 FEP 翻译表：**P3 bridge hypothesis**，严格单向，不反向定义苦难
 

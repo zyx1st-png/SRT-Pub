@@ -15,6 +15,7 @@ dependency: [SRT-CORE-000, SRT-CORE-BRIDGE, SRT-CORE-21]
 > 所有引用 d-value 的文档应以本文件为规范锚点。
 
 > **Canonical status note（2026-04-23）**：本文件同时承担两种功能：`Def-d-canonical` 是 core-facing anchor；bare `d` 标量默认、`d-vector` / `d-gate` 分写规则与跨域引用顺序是 governance-canonical usage controls。`D_eff`、Fisher 读数与其他域内量表是 operational proxy，只有满足 stake-coupling 与后果回流条件时才可近似 canonical `d`。
+> **Selection-totality / Wave-D2 scope guard（2026-09-15）**：本文件拥有 d-value，不拥有 direction source。在已声明模型中，`d` 关系可以约束 stake-coupled concern、execution、maintenance 或 reorientation，但 `d` 不创造准入 `T_dir` 所需的 independently typed direction。当前没有 universal `d -> T_dir` 必要或充分关系；script / habit / `L_2` automation 也不因本文件而取消 Selection occurrence。本文件中较早的方向、曲率与容量公式用语必须按当前 symbol / owner typing 读为 declared model / realization，不得反向建立 primitive authority。
 
 ---
 
@@ -586,14 +587,18 @@ SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** �
 
 | | d-value | T_dir |
 |:-|:-------|:------|
-| **度量** | 关切范围 / 有效维度 / 风险梯度 | 系统对自身选择秩序方向的可读性 |
+| **度量** | 关切范围 / 有效维度 / 风险梯度 | formed system 对 independently typed、declared direction signal 的可读与重取向能力 |
 | **canonical 文件** | 本文件 | `_SRT_T_DIR_CANONICAL.md` |
 
-**因果关系**：
-$$d = 0 \implies T_{dir} = 0$$
-$$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
+**有界关系**：当前没有 universal `d -> T_dir` necessity theorem。`T_dir` 的准入首先需要 independently typed、declared direction signal；只有在声明模型内，`d` 才可以约束 stake-coupled access、execution 或 reorientation capacity。精确 `d / T_dir` 关系在 owners 独立建立前保持 model / bridge scoped。
 
-d 是 T_dir 的**必要条件，不是充分条件**。T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界；不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
+```text
+no declared direction -> T_dir undefined / not admitted, regardless of d;
+declared direction + inaccessible signal -> T_dir may be 0 even when d > 0;
+T_dir > 0 -> neither a universal d value nor validation of the direction.
+```
+
+T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界。不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
 
 **不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
 
@@ -601,20 +606,20 @@ d 是 T_dir 的**必要条件，不是充分条件**。T_dir 的其余准入与�
 
 ## §9 d-value 的锻炼与萎缩机制（2026-04-02 新增）
 
-> **核心修正**：致命 L₂ 对 d-value 的压低，具体机制是通过消灭选择时刻使 d-value 失去锻炼机会，而非直接抑制 d。d-value 是需要使用才能维持的能力。
+> **当前有界读法**：在 bearer / agency / decision 模型中，替代式 `L_2` 可通过减少 stake-coupled revision / reselection 机会使 d-related capacity 失去练习；这不等于消灭 Selection occurrence。d-value 是否维持或萎缩，必须绑定到声明的 stake、consequence return 与 revision / reselection 条件。
 
 ### 机制链
 
 ```
-替代式 L₂ 消灭选择时刻
+替代式 L₂ 在声明模型中减少 stake-coupled revision / reselection 机会
     ↓
 d-value 未被 stake-coupled concern / consequence-return 条件实际调用；这不等同于“无 Selection”
     ↓
 d-value 萎缩（不用则退）
     ↓
-即使 L₂ 被移除，系统也无力直接从 L₀ 选择
+即使 L₂ 支架被移除，系统也可能暂时缺乏 stake-coupled revision / reselection capacity
     ↓
-必须依赖更多替代式 L₂ 来填补方向感
+可能更依赖替代式 L₂ 来维持既有脚本或方向感
     ↓
 d-value 进一步萎缩……（自强化依赖环）
 ```
@@ -623,24 +628,24 @@ d-value 进一步萎缩……（自强化依赖环）
 
 **d-value 的直接抑制**（已在 §5 描述）：致命 L₂ 通过占据关切带宽、压缩可用维度来降低 d-value 的即时可用性。
 
-**d-value 的萎缩**（本节新增）：替代式 L₂ 通过消灭选择时刻，使 d-value 失去被锻炼的机会，导致长期容量下降。即使 L₂ 压力临时解除，萎缩后的 d-value 也无法立即恢复。
+**d-value 的萎缩**（本节新增）：在特定 bearer / agency / decision 模型中，替代式 L₂ 可通过持续减少 stake-coupled revision / reselection 机会，使 d-related capacity 失去练习并导致长期容量下降。这是条件性机制，不是 `L_2 automation -> no Selection` 的普遍律。
 
 两者的关系：直接抑制是急性效应，萎缩是慢性积累效应。慢性萎缩比急性抑制更难逆转，因为它改变的是系统的基础选择容量，而非当下的带宽占用。
 
 ### 选择时刻与 d-value 的连接
 
-**选择时刻**（见 `_SRT_T_DIR_CANONICAL.md §21`）是系统与 L₀ 直接接触、真实地从可能性中凝定方向的瞬间。
+**选择时刻**在本节只是 bearer / agency / decision 模型中重新打开 stake-coupled revision 或 reselection 的 episode，不是与“L₀ 可能性仓库”直接接触的本体定义。
 
-- 每次真实的选择时刻发生：d-value 被激活使用，可维持乃至发展
-- 每次选择时刻被 L₂ 替代：d-value 未被激活，逐渐萎缩
+- 当 episode 真正调用 stake、consequence return 与 revision / reselection：d-related capacity 可被练习、维持或发展
+- 当自动化或 scaffolded `L_2` 在某个模型中持续减少这些机会：d-related capacity 可能萎缩，但自动化过程仍可包含真正 Selection occurrence
 
-**推论**：辅助式 L₂（保护选择时刻）在不牺牲 d-value 的条件下降低摩擦；替代式 L₂（消灭选择时刻）以 d-value 的长期容量为代价换取即时摩擦消除。
+**推论（条件性）**：辅助式 L₂ 可在降低摩擦的同时保留 stake-coupled revision / reselection；替代式 L₂ 只有在声明的 stake 与 consequence-return 条件下减少这类机会时，才可能带来 d-related capacity 的长期代价。这不用 `d` 定义 Selection occurrence。
 
 ### 与 T_dir 的关系
 
-d-value 萎缩 → 即使 proto-gradient 可读，系统也缺乏足够的选择维度来响应它 → T_dir 即使上升，也无法转化为有效的选择行动。
+在某个 direction 已被独立准入之后，`d` 可在声明模型中作为系统能否针对该方向行动、维持或重取向的一项 stake-coupled capacity 约束。
 
-因此：d-value 是 T_dir 工作的**执行容量**。T_dir 告诉系统方向在哪里，d-value 决定系统能否沿那个方向真正选择。两者独立但协同：d > 0 是 T_dir > 0 的必要条件（§8），d 的容量上限约束了 T_dir 可以实际发挥的作用。
+`T_dir` 追踪的是对已声明方向的 access / readability / reorientation，不是方向的存在或真理；`d` 不创造该方向。本节不建立 universal `d / T_dir` necessity。两者仍不同：`d != T_dir`。
 
 ---
 
@@ -738,11 +743,11 @@ $$\text{d扩展} \xrightarrow{\text{必然}} \text{对更高阶结构的自发�
 
 $$\boxed{d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\Big)}$$
 
-两个独立瓶颈：
+本式仅在独立声明 compatible `κ₀`-like realization、单位与作用域的模型中准入；没有该实现时，`Eq-DValue-Max-1` 不适用。在该声明模型内有两个独立瓶颈：
 - **信息瓶颈**：`rank_eff(I_F(θ))` — Fisher 矩阵的有效秩，由算子参数化能力决定
-- **稳定性瓶颈**：`Ψ_f^budget / κ₀` — 可用摩擦预算除以原初曲率；κ₀ 越大，可承载对齐方向越少
+- **稳定性瓶颈**：`Ψ_f^budget / κ₀` — 可用摩擦预算除以模型内每方向有效稳定／曲率／维持代价参数；κ₀ 不选择、排序、赋值或合法化方向
 
-**关键推论**：`dim(Θ)`（参数维数）提升的是潜在上限，真实 d_max 由两个瓶颈中的较小值决定，不可仅用参数量判断 d 上限。
+**关键推论（模型内）**：`dim(Θ)`（参数维数）只提升信息容量候选上限；声明模型中的 candidate `d_max` 由两个瓶颈中的较小值限制。这不建立 universal consciousness ceiling、subject threshold、value direction 或 primitive ontology law。
 
 *权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`
 
@@ -750,9 +755,9 @@ $$\boxed{d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\the
 
 $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$$
 
-**语义**：当 L₀ 曲率漂移（吸引子迁移），算子 θ 重新对准的速度与容量。与 d 的区别：
-- $d$：当前对齐的 L₀ 方向数（快照）
-- $d_{\text{mobile}}$：当这些方向漂移时，θ 跟上的能力（动力学）
+**语义**：在声明的 attractor / curvature realization model 中，当可达方向漂移时，算子 θ 重新对准的速度与容量。与 d 的区别：
+- $d$：当前 stake-coupled 对齐的模型内摘要（快照）
+- $d_{\text{mobile}}$：当已声明的可达方向漂移时，θ 跟上的能力（动力学）
 
 **感到 ≠ 能动**：高 d 算子在 χ_payable = 0 时，d_mobile = 0——感知到拉力但支付能力为零，无法行动。
 
@@ -764,10 +769,10 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 
 | | d | d_max | d_mobile |
 |---|---|---|---|
-| **本质** | 当前对齐深度（快照） | 结构允许的对齐上限 | 重新对齐的动力学能力 |
-| **决定因素** | Fisher 有效秩 + L₀ 曲率历史 | rank_eff + Ψ_f 预算/κ₀ | d × rank_eff / (L₂ 刚性 × C_r) × χ_payable |
-| **可为 0** | 是（算法/晶体态） | 否（κ₀ > 0 保证下限 > 0） | 是（冻结态） |
-| **意识相关** | κ_{c1} 要求 d ≥ d_min | 设定意识可到达的天花板 | κ_{c1.5} 要求 d_mobile > 0 |
+| **本质** | stake-coupled 当前摘要（快照） | 声明模型中的 candidate capacity bound | 重新对齐的动力学能力 |
+| **决定因素** | canonical risk/stake relation；proxy 须独立准入 | rank_eff + Ψ_f 预算/模型内 κ₀ | d × rank_eff / (L₂ 刚性 × C_r) × χ_payable |
+| **可为 0** | 是 | 由声明模型与参数决定；无 compatible κ₀ 时本式不适用 | 是（冻结态） |
+| **意识相关** | 只按独立 owner 的条件性模型读 | 不单独设定 universal consciousness ceiling | 只按独立 owner 的条件性模型读 |
 
 *Cross-ref*：`Philosophy/SRT_Consciousness_Conditions.md §三`（三层意识结构）；`Core/SRT_Core_12b §Consciousness-2D-Map`（二维拓扑）。
 

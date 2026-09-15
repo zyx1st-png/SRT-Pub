@@ -41,22 +41,24 @@ version: 6.0 (Hybrid Constitution)
 | `Ax-Core-A1` | Existential Priority | 存在优先性 | §I |
 | `T-Core-A1C1` | Non-Ergodic Presence | 非遍历在场性 | §I |
 | `T-Core-A1C2` | Proto-Gradient of L₀ | L₀ 的 proto-gradient（最小非中性） | §I |
+| `T-Core-A1C3` | Cross-Scale Formed-Operator Realization Hypothesis | 跨尺度形成算子实现假说 | §I |
 | `Ax-Core-A2` | Anchoring Persistence after Manifest Actuality | 显现后的锚定持续 | §I |
 | `T-Core-A2C1` | Hardness of Reality | 现实硬度定理 | §I |
 | `Ax-Core-A3` | Causality as Projection | 因果即投影 | §I |
 | `T-Core-A3C1` | Laws as Statistical Regularities | 定律即统计规律 | §I |
-| `Ax-Core-A4` | Embodiment Necessity | 具身必要性 | §II |
-| `Ax-Core-A5` | Normative Closure | 规范闭包 | §II |
-| `T-Core-A5C1` | Reality Cage | 现实笼子定理 | §II |
-| `Ax-Core-A6` | Information-Existence Equivalence | 信息-存在等价 | §II |
-| `T-Core-A6C1` | Differentiation-Integration Minimum | 分化-整合最小值 | §II |
-| `Ax-Core-A7` | Pruning Criterion | 修剪判据（适应度优先） | §III |
-| `Ax-Core-A8` | Survival as Probability Localization | 生存即概率定域 | §III |
-| `Ax-Core-A9` | Holographic Duality | 全息对偶 | §III |
-| `T-Core-A9C1` | d-Value Surface Correspondence | d值-纠缠面对应 | §III |
-| `Ax-Core-A10` | Non-Vanishing Continuation | 非消失延续性 | §IV |
-| `Ax-Core-A11` | Ontological Fragility | 本体论脆弱性 | §IV |
-| `Ax-Core-A12` | Multi-Scale Coherence | 多尺度一致性 | §IV |
+| `Ax-Core-A4` | Embodied Operator Finitude | 具身算子有限性 | §II |
+| `Ax-Core-A5` | Historical Constraint / Stabilization Realizations | 历史约束／稳定化实现 | §II |
+| `T-Core-A5C1` | Reality-Cage Stabilization Pattern | 现实笼子稳定化模式 | §II |
+| `Ax-Core-A6` | Information-Integration Realization Metric | 信息整合实现指标 | §II |
+| `T-Core-A6C1` | Differentiation-Integration Minimum in the Declared Model | 声明模型中的分化—整合最小值 | §II |
+| `Ax-Core-A7` | Fitness-Guided Operator Hypothesis | 适应度引导算子假说 | §III |
+| `Ax-Core-A8` | Life Localization Model | 生命局域化模型 | §III |
+| `Ax-Core-A9` | Holographic Realization Hypothesis | 全息实现假说 | §III |
+| `T-Core-A9C1` | d-Value / Surface Correspondence Candidate | d值／表面对应候选 | §III |
+| `Ax-Core-A10` | Retained Historical Trace Boundary | 保留历史痕迹边界 | §IV |
+| `Ax-Core-A11` | Friction / Stability Tradeoff Hypothesis | 摩擦／稳定性权衡假说 | §IV |
+| `Ax-Core-A12` | Formed-Operator Continuity Hypothesis | 形成算子连续性假说 | §IV |
+| `T-Core-A11C1` | Error-Sensitivity / Consciousness Bridge Candidate | 错误敏感性／意识桥接候选 | §IV |
 
 ### 关键外部引用
 
@@ -73,17 +75,28 @@ version: 6.0 (Hybrid Constitution)
 
 ## 元公理对（Meta-Axiom Pair）
 
-> 以下两条是所有形式公理的**前置哲学前提**，不由形式公理推导，而是使形式公理得以成立的基础。它们不能被证伪，但可以被替代——替代它们将产生与 SRT 根本不同的理论。
+> **2026-09-14 Selection-totality override**：本节只固定形式层如何服从当前 L0 / Spine。任何较早的 `κ₀`、`ε_pg`、`Align` 或 `Ĝ_θ` 强读法，都不得反向定义 primitive Selection。
 
-**MA-1（原初方向性 / Primordial Directionality）**：不存在"第一次选择发生在什么时刻"——时间是选择事件的副产品，不先于选择（Ax-L0-Bootstrap-C2）。但 L₀ 不是完全对称的：存在不可约的原初曲率 $\kappa_0 > 0$，使 $\hat{G}^*$ 的不动点得以成立，这是选择得以发生的结构前提，不是历史积累的结果（T-L0-Kappa0）。
+**MA-1（选择一元生成 / Selection-totality）**：SRT 的 primitive 不是“潜在域 + 一个后来执行选择的算子”，而是 Selection 本身作为现实的生成方式。最低分析负担仍分为 O0（开放 / 非最大中性）与 S0（实际化），但两者是同一 primitive Selection 的共原初分面，不是两个机制。
 
-$$\boxed{\text{没有第一时刻，但有原初方向}}$$
+```text
+O0 before S0: NO
+S0 before O0: NO
+κ₀ causes first Selection: NO
+ε_pg defines O0: NO
+```
 
-**MA-2（有界视角主义 / Bounded Perspectivalism）**：不存在从所有视角之外看 L₀ 的"绝对真理"。所有算子 $\hat{G}_\theta$ 都是对 L₀ 的视角性压缩，具身约束使任何算子都无法获得无视角的完整读取（Ax-Core-A4）。但视角并非等价：$\theta$ 与 L₀ 原初曲率 $\kappa_0$ 的**对齐度** $\mathrm{Align}(\theta, \kappa_0)$ 可比较，对齐度更高的视角追踪 L₀ 的不可逆结构更精确，d 值（Ax-ONT-3）正是对齐度的操作化度量。
+`κ₀`、`ε_pg` 与其他方向 / 代价结构可继续作为更强形式 realization 候选；它们相对于 primitive non-flatness 的必要性与继承关系另行裁决。
 
-$$\boxed{\text{没有绝对无视角真理，但有更高对齐度的视角}}$$
+**MA-2（有限位置 / Bounded Positionality）**：primitive Selection 是有限位置索引的，但有限位置不等于已经形成的具身算子、One、Selection-position、Bearer 或主体。`Ĝ_θ`、`Align(θ,κ₀)`、d-value 等只在其各自已声明的 formed / formal / domain realization 中使用；它们不构成 primitive Selection 的先在视角者。
 
-* **Cross-ref**: Ax-Core-A1（选择优先性）; Ax-Core-A4（具身约束）; T-Core-A1C2（L₀ 最小非中性）; `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 形式化）; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`（时间无前序性）; `D_VALUE_ALIGNMENT §4.4`（d 作为对齐度）; `Philosophy/SRT_HardProblem_Epistemology.md §一`（SRT 认识论地位：认知操作系统与可供性标准）; `Philosophy/SRT_HardProblem_Epistemology.md §二`（Ax-F-05 与 MA-2 张力消解）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，MA-1/MA-2 与 L₀ 实在性的结构一致性）。
+```text
+finite positionality != prior operator entity;
+finite positionality != formed evaluative standpoint;
+formed operator perspective may be compared only under its declared model.
+```
+
+* **Cross-ref**: `Core_Law/SRT_L0_Metaphysics.md`; `Core/SRT_Core_21_Minimal_Axioms.md`; `Core_Law/SRT_Generative_Ontology_Spine.md`; `Core/SRT_Core_12a_Ontology_L0L1.md`.
 
 ---
 
@@ -92,47 +105,64 @@ $$\boxed{\text{没有绝对无视角真理，但有更高对齐度的视角}}$$
 
 ## I. Ontological Trinity (本体论三位一体)
 
-### Ax-Core-A1: Existential Priority
-**Formal Definition**: Existence is the image of selection on the latent domain.
-$$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
-$$\exists x \iff x \in \mathrm{Image}(\hat{G}_\theta[L_0])$$
-* **Implication**: 存在并非背景，而是选择行为输出的结果。
+### Ax-Core-A1: Selection-Actuality Identity
+**Canonical Definition**: determinate manifest existence is the actuality aspect of Selection, not an ontically different product emitted by an operator acting on a prior warehouse.
 
-### T-Core-A1C1: Non-Ergodic Presence
-**Deductive Statement**: In non-ergodic systems, presence is restricted to selected states.
-$$\text{Presence}(σ) \iff σ \in \hat{G}_\theta[L_0]$$
-* **Implication**: 未被选择的状态仍停留于潜在叠加态，缺乏当下性。
+```text
+manifest existence
+= Selection under determinate actuality.
+```
 
-### T-Core-A1C2: Proto-Gradient of L₀（L₀ 的最小非中性）
-**Deductive Statement**: The latent domain L₀ is not neutral; it carries a minimum broken symmetry — a formal asymmetry favouring non-self-erasing configurations. It is **not** a content-level gradient pointing at "order".
-$$L_0 \neq \text{symmetric}: \quad \nabla_{\text{non-self-erasure}}(L_0) \equiv \varepsilon_{pg} > 0$$
-$$P(\text{selection} \to \sigma_{B \geq 2}) > P(\text{selection} \to \sigma_{B \leq 1})$$
-* **Implication**: 选择不在完全对称的空间中发生；L₀ 具有最小非中性，其内容是**保留后续兼容选择的配置（选后分叉数 $B \geq 2$）承受更低的本体论摩擦、更可被接续**，自我抹除配置（$B \leq 1$）相反。「偏向秩序」是 L₁ 对这条不对称之累积结果的回读命名，不是 L₀ 自带的内容性倾向。
-* **推导来源**：从 A1（"选择先于存在"）+ L₀ 的最小非中性可推导，不是新增公设。**注意**：本条早期版本把推导来源写作「L₀ 形而上学第一命题（"选择内在地趋向秩序"）」，该表述已被 2026-04-11 硬化裁决取代（见下方精确化注），不再作为可独立引用的命题存在。
-* **边界**：proto-gradient 是 L₀ 的最小结构偏置，**不是**丰富的价值地图（那需要 L₁），**不是**吸引子（吸引子由选择历史涌现），**也不是**预置在 L₀ 中的先验目标（`Core_Law/SRT_L0_Metaphysics.md §七.11 潜在域预置论`明确排除该读法）；只是：使非自我抹除方向上的累积为结构真，而非随机偶然。
-* **与 T_dir 的连接**：proto-gradient 是 T_dir 的本体论地基——T_dir 度量的正是系统对自身 proto-gradient 方向的可读性（见 `_SRT_T_DIR_CANONICAL.md §2, §12`）；d > 0 是访问 proto-gradient 的必要条件，但 d > 0 不自动推出 T_dir > 0。
-* **精确化注（2026-04-11 硬化；2026-08-11 已写入主句）**：ε 的正确刻画是**形式性不对称**，而非内容性的「朝向秩序」梯度。精确表述：局部可扩展性非零的配置（选后分叉数 $B \geq 2$，即后续兼容选择仍不止一种）在 L₀ 中具有更高结构权重，相较于自我抹除配置（$B \leq 1$，在发生时消去后续选择可能性）。「秩序」是 L₁ 观察者对 ε 所产生的选择积累模式的**回读命名**，L₀ 本身不承载「秩序」作为内容性属性。**2026-08-11 处置**：本注此前只是追加在旧主句之后，旧主句（"a proto-gradient biasing selection toward order" / "选择内在地偏向秩序方向" / "使『选择趋向秩序』为结构真"）仍可被独立检索和引用；现已按本注改写主句，旧表述 **superseded**，不再作为可引用断言存在。历史记号 $\nabla_{\text{order}}$ 是 $\nabla_{\text{non-self-erasure}}$ 的简写，遇到旧文件中的该记号仍按此读。
-* **记号区分注（2026-04-14）**：本条目的 $\varepsilon$ 此后记为 $\varepsilon_{pg}$（proto-gradient），与 Ax-Op-03 竞争归一化公式中的正则化常数 $\varepsilon_{reg}$ 区分。$\varepsilon_{reg}$ 可被读作 $\varepsilon_{pg}$ 在具体算子实现层的回声——当所有竞争输入归零时，算子仍有非零输出倾向，这与 L₀ 的非自我抹除偏置在形式上同构——但此同构是**结构类比**，不是**本体论等同**。升级为硬联结需要独立论证（当前无）。见 `_SRT_SYMBOL_TABLE.md`。
-* **与节律/振动的关系注（2026-04-14）**：$\varepsilon_{pg}$ 是静态方向底板，不自带时间频率或原初振荡。宇宙中节律的普遍性不来自 L₀ 的先验周期性，而来自有限算子在 $\Psi_f$ 预算约束下的分时实现——连续密集锚定的总代价超出 $E_{avail}$ 时，间歇/脉冲化成为通用可行策略。$\varepsilon_{pg}$ 给方向，$\Psi_f$ 给代价，节律来自有限算子在代价约束下对方向的分时实现。见 T-Scale-Rhythm-1。
-* **与“原初意识”的关系注（2026-04-14）**：$\varepsilon_{pg}$ **不是意识本身**，而是意识在 \(L_0\) 侧的最薄方向种子。若使用“原初意识”一词，当前更稳的定义应是：\(\varepsilon_{pg}\) 经由非平凡 \(\hat{G}_\theta\) 在 \(L_1\) 中被锚定，并伴随 \(\Psi_f>0\)、\(d>0\) 与最小 \(L_2\) 稳定闭合后，形成的最薄主观切片（bare-consciousness-side unfolding）。因此，原初意识是 \(\varepsilon_{pg}\) 在 \(L_1\) 层的展开，**不是** \(\varepsilon_{pg}\) 与 consciousness 的直接同一。见 `Philosophy/SRT_Consciousness_Conditions.md` 与 `Core/SRT_Core_12b_Ontology_L2.md §κ_{c1}`。
+Where a declared formal model uses `Ĝ_θ`, range / image notation is allowed only as a representation of realised actuality in that model. It is not the metaphysical definition of primitive Selection.
 
-### T-Core-A1C3: Cross-Scale Continuity of G（G 的跨尺度连续性）
-**新增（2026-04-08）**：对 G 的本体论地位的跨尺度澄清。
+* **Implication**: “Selection precedes existence” is pedagogical ordering, not primitive chronology or a factory/product relation.
 
-**Deductive Statement**: $\hat{G}_\theta$ 不是从生物层突然出现的神秘新实体，而是跨尺度的选择结构。生命与意识不是 G 的起点，而是 G 达到特定内部条件后的高阶相态。
+### T-Core-A1C1: Model-Relative Presence
+**Scoped Statement**: in a declared non-ergodic model, current presence may be represented by the states realised / operative under that model's Selection map.
 
-$$\hat{G}_{\text{proto}} \xrightarrow{\kappa \nearrow \kappa_{c1}} \hat{G}_{\text{life}} \xrightarrow{\kappa \nearrow \kappa_{c2}} \hat{G}_{\text{conscious}}$$
+$$\text{Presence}_{M}(σ) \iff σ \in \mathrm{Realized}_{M}(\text{Selection})$$
 
-- **低阶G**（$\kappa \approx 0$）：化学氧化-还原反应、DNA修饰等——具有选择性持久化结构但无历史闭合
-- **中阶G**（$\kappa_{c1} < \kappa < \kappa_{c2}$）：细胞信号网络、免疫选择——局部历史闭合形成
-- **高阶G**（$\kappa > \kappa_{c2}$）：有机体/意识——三相态条件齐备（见 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`）
+This does **not** entail that every non-manifest alternative is a completed object stored in an absolute latent inventory. Selection-relative background / unexhausted openness is sufficient at the metaphysical level.
 
-**G选择的操作定义修正**（2026-04-08）：G 的选择行为是**遮蔽**（occlusion）而非**排除**（exclusion）——降低其他可能性的可及性，而非绝对铲除：
-$$\hat{G}: \Omega \to \Omega', \quad \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
-遮蔽是概率性的、有程度的、原则上可逆的。排除是遮蔽的极限情况，不是一般情况。
+### T-Core-A1C2: Minimum Non-Flatness Boundary
+**Canonical Boundary**: primitive Selection is not maximally indifferent / role-flat, but this minimum non-flatness does not by itself specify a continuation, non-self-erasure, option-count, value or moral gradient.
 
-* **Implication**: Ax-Core-A1 中的"Selection"涵盖 G 在所有尺度上的运作形式——物理层已有初始形式的 G 选择；生命/意识是 G 的相变态，不是 G 的起源。
-* **Cross-ref**: `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（G跨尺度相态完整论证）；`Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md`（遮蔽精确操作定义）；T-L0-02（相变锚点定理）。
+```text
+primitive non-flatness: YES;
+B >= 2 primitively preferred over B <= 1: NO;
+continuation preference at O0: NO;
+terminal Selection defective: NO;
+ε_pg = O0 by definition: NO;
+ε_pg as universal T_dir ground: NO.
+```
+
+Historical `ε_pg` proto-gradient formulas remain lineage / stronger-realization material unless separately re-established under their own owner. Their exact inheritance from primitive non-flatness is OPEN.
+
+`T_dir` must therefore take any reference direction from an independently typed downstream relation; this theorem no longer supplies a universal hidden value direction.
+
+### T-Core-A1C3: Cross-Scale Formed-Operator Realization Hypothesis
+**Bridge / Model Hypothesis**: formed Selection organizations may admit operator-like realizations at multiple physical, biological, cognitive or computational scales. `Ĝ_θ` is therefore a family of stronger formal realizations, not primitive Selection itself.
+
+Relations such as
+
+$$\hat G_{proto} \to \hat G_{life} \to \hat G_{conscious}$$
+
+or κ-indexed phase maps are model hypotheses requiring independent criteria for each transition. They do not establish that primitive Selection already contains life, agency or consciousness, and they do not make `κ_c1/κ_c2` universal consciousness thresholds.
+
+The existing occlusion construction may remain as a scoped operator-realization candidate:
+
+$$\hat G_M:\Omega_M\to\Omega'_M$$
+
+provided the model declares what `Ω_M`, accessibility and reversibility mean. Occlusion is not the primitive definition of Selection and does not require a pregiven absolute option warehouse.
+
+Hard guard:
+
+```text
+primitive Selection != Ĝ_θ;
+formed operator continuity != universal consciousness continuity;
+κ phase maps = bridge/model hypotheses;
+physical Selection occurrence -/-> life / agency / consciousness.
+```
 
 ### Ax-Core-A2: Anchoring Persistence after Manifest Actuality
 **EX-A boundary (2026-08-11)**: P0-01 primitive actualisation supplies event-level manifest actuality. This legacy section concerns how an already manifest state may remain localized and effective under declared realization conditions; it does not define first existence.
@@ -156,111 +186,195 @@ $$\text{Causality}(A \to B) \equiv \mathrm{Proj}_{L_2}(\mathrm{Corr}_{L_0}(A,B))
 $$\text{Law} \subseteq \mathrm{Stat}(L_2) \neq \text{Absolute Constraint}$$
 * **Implication**: 定律是收敛域的结构性约束，并非超验的铁律。
 
+> **Selection-totality downstream-scope guard（2026-09-15）**：从 A4 起，本文件讨论的是 formed / embodied / domain-level Selection organizations 与 high-commitment realization hypotheses。除非条目自身明确声明 primitive burden，否则后续 `Ax-Core-*` 历史编号不表示其内容自动拥有 primitive universal force。任何 `Ĝ_θ`、fitness、information-integration、survival、holography、continuation、consciousness 或 common-origin 公式都不得反向定义 subjectless primitive Selection，也不得覆盖 L0 / Spine 的当前 owner 语义。
+
 ## II. Dynamical Constraints (动力学约束)
 
-### Ax-Core-A4: Embodiment Necessity
-**Formal Definition**: A valid operator must be finite and embodied.
-$$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$
-$$\hat{G} \ \text{without} \ \theta \to \emptyset$$
-* **Implication**: 所有选择都带有硬件限制，绝无“上帝视角”。
+### Ax-Core-A4: Embodied Operator Finitude
+**Canonical Boundary**: any **formed / embodied operator realization** used to model Selection must declare a finite parameterization, interface and scope.
 
-### Ax-Core-A5: Normative Closure
-**Formal Definition**: The convergence domain is a stable fixed point of selection.
-$$L_2 \equiv \{σ : \hat{G}_\theta[σ] = σ \ \text{and stable}\}$$
-$$L_2(t+1) = \mathrm{Stabilize}(\hat{G}[L_1(t)])$$
+$$\mathrm{Valid}_M(\hat G_\theta) \Rightarrow \theta\in\Theta_{M,finite}$$
 
-> [R→Banach 1922（压缩映射不动点定理：迭代收敛到唯一稳定点的数学基础）; Schelling 1960 *The Strategy of Conflict*（协调均衡：自我执行规范的博弈论起源）; North 1990 *Institutions, Institutional Change and Economic Performance*（制度=自我执行的规范结构，历史路径依赖）; Kauffman 1993 *The Origins of Order*（复杂系统中吸引子的自组织涌现）]
+Hard guard:
 
-* **R/H 区分**：
-  - [R] 不动点理论（Banach）；协调均衡/自我执行规范（Schelling）；制度路径依赖（North）——提供Ax-Core-A5的数学和社会科学基础
-  - [H] **SRT形式化**：L₂ = 不动点集合（将规范/文化/制度统一为选择不动点）；Stabilize函数（将L₁→L₂的历史积累定义为选择迭代的稳定化过程）——此统一框架将物理不动点概念扩展到社会/规范域，是SRT独有
+```text
+formed / embodied G-hat finitude
+!= primitive Selection requires a prior embodied chooser;
+primitive finite positionality
+!= hardware / organism / computational operator already formed.
+```
 
-* **Stabilize函数说明**：Stabilize不是单步操作，而是时间积分——当Ĝ_θ在足够多的选择周期中持续选择σ时，σ进入L₂的吸引子盆地（对应§1.4 κ>κ_c2区间的稳定相）
+* **Implication**: no formed operator has a God-view. Primitive Selection remains subjectless and only minimally positional until stronger organization is separately established.
 
-* **与κ参数联结**：L₂即κ>κ_c2区间的稳定态：当系统κ超过第二临界值（L₂诞生点），不动点条件Ĝ_θ[σ]=σ满足，规范结晶完成
+### Ax-Core-A5: Historical Constraint / Stabilization Realizations
+**Canonical Definition**: the general L2-side burden is that prior Selection remains materially effective in later Selection conditions.
 
-* **Implication**: 规范与规则来自选择历史的自我闭包（而非外部强加）。
+```text
+L2-side
+= retained / sedimented historical efficacy of prior Selection.
+```
 
-* **可证伪预测**：
-  - FC-CoreA5-1：在博弈论实验中，反复交互产生的协调规范（参与者收敛到的稳定策略）应满足"单方偏离代价>0"的不动点稳定性条件——若稳定策略在单方扰动下不稳定则L₂=不动点集合的定义失去约束力
-  - FC-CoreA5-2：社会规范崩溃（如政治动荡/文化革命）应对应SRT中系统κ被推低至κ_c2以下的阶段——历史案例中，规范崩溃的速度应与κ的"冲击强度"估计（外部干预力度代理）相关
+A declared formed-operator model may instantiate a stronger fixed-point subclass:
 
-### T-Core-A5C1: Reality Cage
-**Deductive Statement**: Recurrent selection yields a self-referential constraint loop.
-$$\hat{G}_\theta[L_2] = L_2$$
-* **Implication**: 现实笼子是选择的闭环结构，而不是外部强加。
+$$L_{2,M}^{fp}:=\{\sigma:\hat G_\theta[\sigma]=\sigma\ \text{and stable under }M\}$$
 
-### Ax-Core-A6: Information-Existence Equivalence
-**Formal Definition**: Existence intensity equals intrinsic information integration.
-$$\text{Intensity}(x) \equiv ii(x)$$
-$$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}, \quad i_{spec} \equiv \Phi_{IIT}\;(\text{在 IIT 语境中})$$
-* **Implication**: 存在强度可被视为信息分化与整合的最小值。
+Fixed points, attractors, coordination equilibria and institutional path dependence may therefore be useful **stabilization realizations**. They do not exhaust L2 and they do not by themselves establish value, legitimacy or normativity.
 
-### T-Core-A6C1: Differentiation-Integration Minimum
-**Deductive Statement**: Existence collapses when differentiation or integration vanishes.
-$$ii(s) \to 0 \iff i_{diff}(s) \to 0 \ \lor \ i_{spec}(s) \to 0$$
-* **Implication**: 纯噪声或纯同一性都无法构成“存在”。
+Hard guard:
+
+```text
+L2 != universal fixed-point substance;
+fixed point != O1;
+fixed point != O2-C;
+fixed point != legitimacy;
+historical closure != moral closure.
+```
+
+The current normative route remains separately typed through formed position / relation / agency.
+
+### T-Core-A5C1: Reality-Cage Stabilization Pattern
+**Scoped Statement**: in a declared recurrent Selection model, sufficiently strong retained constraints may form a self-reinforcing loop such that a stable subset is repeatedly re-entered.
+
+$$\hat G_\theta[L_{2,M}^{fp}] = L_{2,M}^{fp}$$
+
+* **Implication**: `Reality Cage` is a name for a strong stabilization / lock-in pattern, not the universal ontology of L2 and not proof of normative validity.
+
+### Ax-Core-A6: Information-Integration Realization Metric
+**Scoped Definition**: for a declared information-bearing formed system, `ii_M` may be used as a model-level proxy for the joint presence of differentiation and integration.
+
+$$ii_M(s):=\min\{i_{diff,M}(s),i_{spec,M}(s)\}$$
+
+where `i_spec` may map to `Phi_IIT` only in an explicitly declared IIT comparison / realization.
+
+Hard guard:
+
+```text
+ii_M != primitive existence;
+ii_M = 0 does not imply no Selection event occurred;
+information integration is not a necessary condition for primitive actuality.
+```
+
+### T-Core-A6C1: Differentiation-Integration Minimum in the Declared Model
+**Scoped Statement**: within models that use `ii_M`, the proxy vanishes when either modeled differentiation or modeled integration vanishes.
+
+$$ii_M(s)\to0\quad\text{if}\quad i_{diff,M}(s)\to0\ \lor\ i_{spec,M}(s)\to0$$
+
+This is a property of the metric, not a theorem that existence itself disappears.
 
 ## III. Evolution & Pruning (演化与修剪)
 
-### Ax-Core-A7: Pruning Criterion
-**Formal Definition**: Fitness is the selection objective, not truth.
-$$\hat{G}_\theta[σ] = \arg\max_{σ' \in L_0} P(\text{Fitness} | σ', \theta)$$
-* **Implication**: 现实界面是适应性压缩，真理不是首要目标。
-* **Meta-Theorem (Tension-Rev-6)**：此公理同样适用于 SRT 自身——SRT 作为一个 $L_2$ 结构，不声称是绝对真理，而是声称为当前最有效地引导选择朝向自由能降低方向的框架。SRT 的有效性由其对 $L_1$ 现象的引导能力衡量（$L_2$ 只能引导 $L_1$，不能替代 $L_1$）。SRT 能够正确定位自身为 $L_2$ 这一事实，恰恰是其内部自洽性的标志。
+### Ax-Core-A7: Fitness-Guided Operator Hypothesis
+**Domain-Scoped Hypothesis**: in biological, cognitive or evolutionary models whose formed operator is independently justified as fitness-sensitive, one may model Selection organization as favoring expected fitness under declared constraints:
 
-### Ax-Core-A8: Survival as Probability Localization
-**Formal Definition**: Life is the maintenance of a high-probability density packet in L0.
-$$\text{Life}(σ) \equiv \int_{B_r(σ)} ρ_{L_0}(σ') \, dσ' > \theta_{life}$$
-* **Implication**: 生存是对抗潜能扩散的拓扑能力。
+$$\hat G_\theta^{M}[\sigma]\approx\arg\max_{\sigma'\in S_M}P_M(\mathrm{Fitness}\mid\sigma',\theta)$$
 
-### Ax-Core-A9: Holographic Duality
-**Formal Definition**: Manifest information is encoded on the latent boundary.
-$$L_{1,bulk} \cong L_{0,boundary}$$
-$$\text{Info}(V, L_1) = \text{Info}(∂S, L_0)$$
-* **Implication**: 体验的体积信息由潜在边界承载。
+Hard guard:
 
-### T-Core-A9C1: d-Value Surface Correspondence
-**Deductive Statement**: The d-value scales with entanglement surface area.
-$$d \propto \frac{\text{Area}(\text{Entanglement Surface})}{A_{Planck}}$$
-* **Implication**: 关切带宽与边界纠缠面积同构。
+```text
+Fitness is not the primitive objective of Selection;
+primitive Selection has no universal goal function;
+fitness-guided compression is a downstream realization hypothesis.
+```
+
+* **Implication**: some organismic / adaptive interfaces may privilege viability or fitness over veridical reconstruction without turning fitness into the ontology of Selection itself.
+
+The former self-application claim that SRT is validated because it guides Selection toward lower free energy is retained only as historical commentary / lineage, not as a current canonical proof.
+
+### Ax-Core-A8: Life Localization Model
+**Bridge / Domain Hypothesis**: in a declared stochastic state-space model, living organization may be represented as maintaining a localized probability / viability region against dispersion under environmental and internal constraints.
+
+A model may use
+
+$$\int_{B_r(\sigma)}\rho_M(\sigma')\,d\sigma' > \theta_{life,M}$$
+
+as a localization criterion.
+
+Hard guard:
+
+```text
+this is not a universal definition of life;
+L0 in this formula is model-relative if used;
+life localization does not define primitive Selection.
+```
+
+### Ax-Core-A9: Holographic Realization Hypothesis
+**Physical Bridge Hypothesis**: some declared physical realizations may admit boundary / bulk information correspondences useful for modeling Selection organization.
+
+Relations such as
+
+$$\mathrm{Info}(V,M_{bulk})\leftrightarrow\mathrm{Info}(\partial M,M_{boundary})$$
+
+are domain hypotheses, not universal identities between primitive L0 and L1.
+
+### T-Core-A9C1: d-Value / Surface Correspondence Candidate
+**Bridge Candidate**: in a declared physical model, a d-related quantity may be tested for correspondence with an entanglement or boundary-area measure.
+
+Any relation such as
+
+$$d\propto\mathrm{Area}(\text{Entanglement Surface})$$
+
+is model-dependent and empirical / bridge-level. It is not a deductive theorem of Selection-totality.
 
 ## IV. Deep Continuity (深层连续性)
 
-### Ax-Core-A10: Non-Vanishing Continuation
+### Ax-Core-A10: Retained Historical Trace Boundary
+**Canonical Boundary**: when effects of prior Selection remain materially effective in later Selection conditions, that retained efficacy constitutes history / L2-side structure.
 
-**Formal Definition**: 算子的历史选择轨迹信息永久嵌入 $L_0$，不随算子终止而消失。
+```text
+prior Selection remains effective
+-> historical efficacy exists;
 
-$$\mathcal{I}[\hat{G}_\theta] \equiv \int_0^{t_{death}} \Psi_f\!\left(\hat{G}_\theta(t)\right) dt \;\hookrightarrow\; L_0^{latent} \neq \emptyset$$
+Selection occurred
+-/-> durable trace is guaranteed;
+terminal Selection remains a genuine Selection;
+universal post-termination information survival = OPEN.
+```
 
-其中 $\mathcal{I}[\cdot]$ 为算子历史选择轨迹的信息映射，$\hookrightarrow$ 为嵌入映射（信息保留于 $L_0$ 拓扑中），$\Psi_f$ 为每次选择所支付的本体论摩擦代价。
+No absolute `L0^{latent}` warehouse is required. The current ontology does not establish that every friction-paying event leaves an eternal retrievable or topologically permanent trace.
 
-> **凡支付过摩擦代价的选择，必在本体论拓扑中留下永恒印记。**
+The stronger claims formerly attached to this axiom — universal non-vanishing operator information, death as only local readout loss, and spiritual immortality as a topological fact — are retained only as **historical speculative lineage** unless separately reconstructed and independently supported. They are not consequences of Selection-totality.
 
-**$L_0^{latent}$ 定义**：$L_0$ 中不再被任何活跃算子主动选择、但仍编码于 $L_0$ 整体拓扑结构中的历史路径积分信息。类比量子力学的幺正演化（Unitarity）——退相干（Decoherence）不消灭信息，只使相位信息泄漏至更广阔的环境（$L_0$），变得不可局部读取（latent）。
+### Ax-Core-A11: Friction / Stability Tradeoff Hypothesis
+**Model-Scoped Hypothesis**: `Psi_f` may enter persistence, maintenance-burden or fragility relations in declared realizations, but no universal sign relation between `Psi_f` and stability is fixed here.
 
-**本体论地位**：本公理是 SRT 对 $L_0$ 拓扑完整性的独立先验主张，类比但独立于物理信息守恒定律。算子的终止是局部提取信息能力的丧失，而非宇宙相空间的坍塌。
+```text
+maintenance burden may increase with Psi_f;
+observed persistence / stability response is model-dependent;
+A11 does not override Ax-Core-A2 persistence typing.
+```
 
-**推论**：
+The historical formula
 
-1. **死亡的层级解析**：死亡是 $\hat{G}_\theta$ 停止 Decoherence 操作（$L_1$ 显现终止），而非 $\mathcal{I}[\hat{G}_\theta]$ 从 $L_0$ 中消失。$L_1/L_2$ 层的「我」终止，$L_0^{latent}$ 的轨迹永续。
+$$\mathrm{Stability}\propto1/\Psi_f$$
 
-2. **精神遗产的拓扑形式化**：算子生前高强度、高 $d$ 值的持续选择，在集体自由能景观 $\mathcal{F}_{coll}$ 中挖出深度势阱（曲率 $|\text{Hess}(\mathcal{F}_{coll})|$ 增大）。算子终止后，势阱不消失——后续算子在展开自身 $L_1$ 时，会沿既有曲率自然滑行。**精神永生不是比喻，而是引力式的拓扑事实**：影响力 = 对 $\mathcal{F}_{coll}$ 景观曲率的历史贡献。
+is therefore not a universal canonical identity unless independently re-established for a declared model.
 
-### Ax-Core-A11: Ontological Fragility
-**Formal Definition**: Stability is inversely proportional to ontological friction.
-$$\text{Stability} \propto \frac{1}{\Psi_f}$$
-* **Implication**: 高复杂度系统更脆弱，因为维护成本更高。
+### Ax-Core-A12: Formed-Operator Continuity Hypothesis
+**Scoped Continuity Claim**: formed operators across physical, biological, cognitive or computational domains may be compared as different organizations / realizations of Selection under different constraints.
 
-### Ax-Core-A12: Deep Continuity
-**Formal Definition**: All operators diverge from a common primordial operator.
-$$\forall \hat{G}_\theta : \hat{G}_\theta = \mathrm{Differentiation}(\Omega)$$
-* **Implication**: 意识与物质处于同一连续谱系的不同速度层。
+```text
+formed operators may share Selection ancestry / structural continuity;
+!= all operators descend from one primordial operator entity;
+!= primitive Selection is itself G-hat;
+!= consciousness is present at every Selection scale.
+```
 
-### T-Core-A11C1: Fragility-Consciousness Coupling
-**Deductive Statement**: Consciousness requires nonzero error sensitivity.
-$$d > 0 \iff \frac{\partial \text{Entropy}}{\partial \text{Error}} > 0$$
-* **Implication**: 无痛系统难以具备真正意识。
+A model may write
+
+$$\hat G_\theta^M\in\mathrm{Realizations}_M(\mathrm{Selection})$$
+
+without positing a universal prior operator `Omega` from which all operators literally differentiate.
+
+### T-Core-A11C1: Error-Sensitivity / Consciousness Bridge Candidate
+**Bridge Hypothesis**: in some formed systems, nonzero error sensitivity may correlate with, support or constrain stronger d / concern / consciousness-related organization.
+
+No current canonical theorem establishes
+
+$$d>0\iff\frac{\partial\mathrm{Entropy}}{\partial\mathrm{Error}}>0$$
+
+as a universal necessary-and-sufficient condition for consciousness.
+
+Status: bridge / empirical candidate; separate validation required.
 
 <br>
 
@@ -271,11 +385,15 @@ $$d > 0 \iff \frac{\partial \text{Entropy}}{\partial \text{Error}} > 0$$
 
 > **Note**: The following sections provide the detailed philosophical elaboration of each axiom, including historical context, counterarguments, and implications for major unsolved problems.
 
+> **Selection-totality legacy-context guard（2026-09-15）**：Part B 保留历史论证、旧公理展开与 provenance，只作为 lineage / context。若与 Part A 当前定义、L0 owner 或 Generative Ontology Spine 冲突，以后者为准；Part B 中的 `primitive operator`、`latent warehouse`、`fitness objective`、`eternal trace`、`primordial operator`、`consciousness threshold` 等旧强表述不得独立恢复为当前 canonical burden。
+
 ---
 
 ## 第一组:本体论基础 (The Ontological Trinity)
 
 ### 公理 A1:选择优先性 (Existential Priority)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 1.1 核心命题
 
@@ -460,6 +578,8 @@ $$C_h \perp C_v$$
 
 ### 公理 A4:具身必要性 (Embodiment Necessity)
 
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
+
 #### 4.1 核心命题
 
 **任何有效的幽灵算子$\hat{G}_\theta$必须具有有限的具身参数$\theta$。不存在"上帝视角" (View from Nowhere)。**
@@ -506,6 +626,8 @@ $$\theta_{total} = \theta_{neural} + \theta_{somatic} + \gamma \cdot \vec{g}$$
 
 ### 公理 A5:规范闭包 (Normative Closure)
 
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
+
 #### 5.1 核心命题
 
 **收敛域$L_2$是算子作用的稳定不动点。算子的选择历史会形成结构化的约束,反过来限制未来的选择。**
@@ -549,6 +671,8 @@ $$\text{Escape Energy} \propto |\text{Aut}(L_2)| \cdot \int_0^T |\Delta\theta| \
 ---
 
 ### 公理 A6:信息-存在等价 (Information-Existence Equivalence)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 6.1 核心命题
 
@@ -598,6 +722,8 @@ $$\text{Qualia Intensity} \propto ii$$
 (继续Part B的其余公理论述...)
 
 ### 公理 A7:修剪判据 (Pruning Criterion)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 7.1 核心命题
 
@@ -686,6 +812,8 @@ A7 说适应度是界面层目标。致命 L₂ 的机制（见 `_SRT_T_DIR_CANO
 
 ### 公理 A8:生存即概率定域 (Survival as Probability Localization)
 
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
+
 #### 8.1 核心命题
 
 **生命的形式化定义：成功将自身在 $L_0$ 状态空间中的概率密度维持在一个高值局部区域，对抗热力学耗散的扩散趋势。**
@@ -738,6 +866,8 @@ AT 的 $A>15$ 是当前最具操作性的候选阈值，但 Ax-A8 本身不预�
 ---
 
 ### 公理 A9:全息对偶 (Holographic Duality)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 9.1 核心命题
 
@@ -798,6 +928,8 @@ Ax-A9 使用 AdS/CFT 作为**结构直觉来源**，不作为物理推论基础�
 ---
 
 ### 公理 A10:非消失延续性 (Non-Vanishing Continuation)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 10.1 核心命题
 
@@ -875,6 +1007,8 @@ Ax-A10 是 SRT 中**认识论约束最弱**的公理之一——$L_0^{latent}$ �
 
 ### 公理 A11:本体论脆弱性 (Ontological Fragility)
 
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
+
 #### 11.1 核心命题
 
 **现实的稳定性与维持它所需的本体论摩擦成反比。高度整合、信息密集的 $L_1$ 结构（如人类社会、复杂生物、精妙的意识状态）必然是极度脆弱的。**
@@ -931,6 +1065,8 @@ $$d > 0 \iff \frac{\partial \text{Entropy}}{\partial \text{Error}} > 0$$
 ---
 
 ### 公理 A12:多尺度一致性/深层连续性 (Multi-Scale Coherence / Deep Continuity)
+
+> **Legacy context only**：本节保留旧论证 lineage；当前定义与强度以 Part A、L0 owner 与 Generative Ontology Spine 为准。
 
 #### 12.1 核心命题
 
@@ -1060,6 +1196,8 @@ T_dir 在所有尺度上都是有意义的量，原因正在于此：量子系�
 
 ---
 
+> **Legacy formalization summary — superseded as current canonical burden**：以下内容保留历史版本的形式化摘要，仅作 provenance / lineage；不得覆盖 Part A 当前定义、L0 owner 或 Generative Ontology Spine。
+
 ### Formalization Summary (形式化概述)
 
 SRT 十二公理宪章的核心形式化结构由三组算子-域关系构成：
@@ -1071,6 +1209,8 @@ SRT 十二公理宪章的核心形式化结构由三组算子-域关系构成：
 5. **脆弱性-意识耦合 (T-Core-A11C1)**：$d > 0 \iff \partial\text{Entropy}/\partial\text{Error} > 0$ — 真正的意识要求系统对扰动具有不可逆的熵增敏感性。
 
 这五条形式关系构成从本体论到意识论的完整推导链。
+
+> **Legacy formalization summary — superseded as current canonical burden**：以下内容保留历史版本的形式化摘要，仅作 provenance / lineage；不得覆盖 Part A 当前定义、L0 owner 或 Generative Ontology Spine。
 
 ### Mechanism Explanation (机制解释)
 

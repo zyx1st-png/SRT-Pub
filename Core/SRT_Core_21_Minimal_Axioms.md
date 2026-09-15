@@ -1,8 +1,9 @@
 ---
 id: SRT-CORE-21A-MINIMAL-AXIOMS
 type: axiom_set
-tags: [Formal logic, Axioms, Minimal Core, Claim Ladder]
-status: active_v1
+tags: [Formal logic, Axioms, Minimal Core, Selection]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -11,181 +12,320 @@ dependency: [SRT-CORE-21, SRT-CLAIM-LADDER, SRT-L0-METAPHYSICS, SRT-SYMBOL-TABLE
 ---
 
 # SRT Core 21A: Minimal Axioms
+## P0 after Selection-totality retyping
 
-> **Role**: This file contains only the strict P0 primitive axioms required for the SRT core to stand.
-> It does not carry constitutive theorems, canonical interpretations, bridge mappings, lab hypotheses, or domain expositions.
-
-## Quick Reference
-
-- Claim level: **P0 = Primitive axiom**
-- Numbering note: `P0-00` is a vocabulary gate / preface, not an additional substantive axiom.
-- Source lineage: split from `Core/SRT_Core_21_Formal_Axioms.md`
-- Governing ladder: `Governance/SRT_CLAIM_LADDER.md`
-- Companion layers:
-  - `Core/SRT_Core_21b_Constitutive_Theorems.md`
-  - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-
-## Inclusion Rule
-
-A claim belongs here only if all four conditions hold:
-
-1. Without it, SRT loses its core grammar.
-2. It does not depend on a domain bridge such as AI, neuroscience, spirituality, physics, or social theory.
-3. It does not depend on an empirical threshold, external model, or comparative mapping.
-4. It is not better treated as a theorem derived from the SRT core.
-
-When in doubt, demote to `P1` or below.
+> **Role**: strict P0 / formal-admission surface. This file does not replace the L0 metaphysical owner. It states the minimum burdens without turning a formal state space or operator into a prior ontic chooser.
 
 ---
 
-## Selection-First Framing Note (Non-Axiom)
+## Quick Reference
 
-SRT does not treat stable reality as a pre-given set of objects to which selection is later applied. Its starting point is selection-first: latent possibilities become manifest through constrained selection, and repeated manifestations harden into future constraints. The theory's cross-scale explanatory power comes from this floor replacement, not from an unrestricted claim to explain everything.
+Current P0 commitments:
 
-**Boundary**: This note frames the P0 set but does not add a new primitive axiom. It should not be cited as proof that all prior ontologies are false; rather, it marks the SRT departure from object-first ontology.
+```text
+P0-01 Selection is primitive actualising generativity;
+P0-02 determinate actuality != anchoring persistence;
+P0-03 genuine occurrence is not ontically identical to never-occurrence;
+P0-04 any formal operator representation of Selection must be well formed,
+      but no operator object is required as a prior chooser.
+```
+
+Selection-totality guard:
+
+```text
+one primitive generative mode
+!= one undifferentiated structure.
+```
+
+Nothing in this P0 set entails One, Stable ISP, Bearer, Agency, consciousness or morality.
+
+---
+
+## Inclusion Rule
+
+A substantive claim belongs at P0 only if:
+
+1. without it SRT loses its minimum Selection grammar;
+2. it does not depend on a domain bridge or empirical threshold;
+3. it is not a downstream formation / standing / bearing theorem;
+4. it cannot be represented more safely as a scoped formal realization.
+
+When in doubt, demote below P0.
+
+---
+
+## Selection-Totality Framing Note (Non-Axiom)
+
+SRT does not start with a stable inventory of objects or a warehouse of latent finished possibilities to which Selection is later applied.
+
+Current framing:
+
+```text
+Selection reality is open beyond any completed actuality;
+actualising Selection institutes determinate manifestation;
+retained effects of prior Selection may constrain later Selection.
+```
+
+The same ontic generative mode can therefore appear under distinct structural burdens without becoming structurally flat.
+
+This note frames the P0 set; it is not an additional axiom.
 
 ---
 
 ## P0-00: Formal Vocabulary Gate (Preface)
 
-SRT minimally works with:
+The symbols remain useful, but their minimum semantics are retyped:
 
-- `L_0`: latent / unselected possibility domain.
-- `L_1`: manifest / selected reality slice.
-- `L_2`: convergence / sedimented selection-history domain.
-- `\hat{G}_\theta`: embodied selection / anchoring operator.
-- `\Psi_f`: ontological friction / payability burden.
-- `d-value`: existential stake radius / risk-coupled concern bandwidth.
+```text
+L0
+= open / non-preclosed generative aspect or model-facing regime of Selection
+  relative to determinate actuality;
 
-This is a vocabulary gate, not an additional substantive axiom. Canonical definitions remain distributed through:
+L1
+= determinate manifest actuality aspect / regime of Selection;
 
-- `Core_Law/SRT_L0_Metaphysics.md`
-- `_SRT_SYMBOL_TABLE.md`
-- `_SRT_D_VALUE_CANONICAL.md`
-- `_SRT_PSI_F_CANONICAL.md`
-- `_SRT_T_DIR_CANONICAL.md`
+L2
+= retained or sedimented Selection efficacy that constrains later Selection,
+  where such historical efficacy is established;
 
-**P0 purity note**: `P0-00` keeps a P0-style number only because it fixes the notation required to read the P0 set. It should not be cited as a separate axiom or as an independent theoretical burden.
+G-hat_theta
+= formal / embodied Selection carrier in a declared model,
+  not primitive Selection itself.
+```
+
+`Psi_f`, `d`, `T_dir`, `kappa`, `epsilon` and other quantities keep their registered owner meanings. None is introduced here as the cause or essence of primitive Selection.
+
+P0-00 is a vocabulary preface, not an independent substantive axiom.
 
 ---
 
-## P0-01: Primacy of Selection
+## P0-01: Primacy of Selection / Primitive Actualisation
 
-**Lineage**: former `Ax-F-01`.
+**Primitive claim**:
 
-**Formal Definition**: Selection precedes existence; existence is an image of selection.
+> **Selection is the irreducible actualising generativity of SRT. Determinate manifest actuality is Selection under an actualised event-cut, not a product standing outside Selection.**
 
-$$
-\exists x \iff x \in \mathrm{Range}(\hat{G})
-$$
+Minimum event role:
 
-**Implication**: Existence is not a passive background given in advance. It is what appears as the output of selection / anchoring.
+```text
+actualising Selection
+= finite-position-indexed subjectless determinate differentiation
+  with Selection-relative manifestation / backgrounding.
+```
 
-### P0-01 AM-A Precision: Primitive Actualisation Kernel
+Therefore:
 
-At P0, actualisation is the irreducible kernel already carried by the selection primitive: non-objectified potential, under real constraints, acquires a determinate manifest distinction. This fixes the minimum constitutive role; it does not presuppose a menu of completed latent objects and does not derive the transition from a prior non-selective mechanism.
+```text
+manifest existence
+= determinate-actuality aspect of Selection.
+```
 
-`\hat{G}_\theta` is the formal role-carrier for this primitive transition. It is not a prior entity that causes selection, and the equation above does not explain actualisation by renaming it as an operator output.
+This is not a temporal statement that Selection first exists and later creates another ontic material called existence.
 
-**Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
+### Formal representation guard
 
-### P0-01 / D2 Boundary — PD-A (2026-08-17)
+Where a domain / formal model legitimately uses an operator representation, one may write forms such as:
 
-P0-01 is retained as SRT's explicit Selection-first metaphysical primitive. **It is not required to generate a domain-level D2 contrast by itself as a condition of remaining P0.** This is a claim-level boundary, not an exemption from scientific discipline.
+```text
+actual state lies in the realized range of a declared G-hat model.
+```
 
-- Correct: `Within SRT, Selection is primitive.`
-- Incorrect: `Empirical data have proved Selection is ontologically primitive.`
-- Correct: a downstream P3/P4 derivation may support SRT scientifically if it prospectively disagrees with a frozen bounded rival and survives D2/D3 testing.
-- Incorrect: a successful downstream proxy or prediction directly proves the P0 ontology.
+Historical compact equations such as
 
-If mature downstream work remains empirically equivalent to bounded rivals, the required conclusion is that **SRT's Selection-first ontology lacks established empirical distinctiveness in those tested regimes**. That result constrains scientific superiority claims and may motivate a future redundancy / fruitfulness / architecture review; it does not by itself falsify or mechanically demote P0-01.
+```text
+exists x iff x in Range(G-hat)
+```
 
-The corresponding governance rule is `Governance/SRT_CLAIM_LADDER.md §1A`; author record: `Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md`.
+are therefore **representation-level glosses**, not universal metaphysical proofs that primitive Selection is an operator transforming a prior inventory.
+
+### Primitive boundary
+
+P0-01 does not specify:
+
+- a prior chooser;
+- a completed option set;
+- a probability distribution;
+- a particular substrate;
+- a stable operator object;
+- a goal, value or preferred endpoint;
+- the reason why a specific A rather than B manifests.
+
+Specific determination remains local to actual Selection relations.
 
 ---
 
 ## P0-02: Manifest Actuality / Anchoring Persistence Boundary
 
-**Lineage**: former `Ax-F-02`.
+P0-01 gives event-level determinate actuality.
 
-**Author decision**: `Existence = EX-A` (2026-08-11).
+P0-02 fixes the non-identity:
 
-**Primitive boundary**: P0-01 fixes the minimum admission condition for existence in SRT: a non-objectified potential difference acquires determinate manifest actuality as an `L_1` event. P0-02 separates that event-level actuality from the downstream question of **anchoring persistence**—the degree to which the event leaves trace, forms maintenance conditions, and continues constraining later transitions.
+```text
+actual occurrence
+!= anchoring persistence
+!= durable objecthood
+!= Stable ISP.
+```
 
-An event may therefore be actual without already being a persistent object, a recurrently stable organization, or a stable ISP. Persistent objecthood requires additional anchoring and maintenance; stable ISP status additionally requires the P1-T06 identity, perspective, history, and continued-selectability conditions.
+An event may be actual without already becoming a persistent object, recurrent organization or Stable ISP.
 
-**Legacy-formula demotion**: The former compact expression `E = 1 - H(L_1)/H(L_0)` is no longer a P0 formula or a quantitative readout. Under PC-A, no global measure or entropy over `L_0^{abs}` is defined, and EX-A does not adopt a replacement normalization. The expression survives only as historical intuition for comparative anchoring and is governed at P2/P3 by `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B14`.
+Persistent objecthood requires additional anchoring / maintenance. Stable ISP additionally requires the stronger standing conditions owned by P1-T06.
 
-**Boundary**: Do not infer persistence from occurrence, structural stability from persistence, or stable-ISP identity from a durable record alone. Conversely, loss of persistence does not make the earlier event never have occurred; P0-03 preserves its historical trace.
+Conversely, later loss of persistence does not turn the earlier event into never-occurrence.
 
----
+### L1 notation guard
 
-## P0-03: Irreversible Selection Trace
-
-**Lineage**: distilled from former `Ax-F-03b` and the core SRT claim that selection is not a reversible readout.
-
-**Minimal Claim**: Once a selection is anchored into `L_1` and leaves history in `L_2`, it cannot be treated as never having occurred. Any reversal is itself a new selection event with its own trace.
-
-**Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and any stable history-bearing organization collapse into reversible bookkeeping.
-
-**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, agency, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and historically effective selection to be more than reversible bookkeeping. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
-
-**Boundary**: The fuller ontological-time expression is not primitive here; it is carried as a P1 theorem in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+Phrases such as `anchored into L1` are model / routing shorthand. They must not be read as movement of a substance from an L0 container into an L1 container.
 
 ---
 
-## P0-04: Operator Well-Formedness
+## P0-03: Irreversible Ontic Occurrence
 
-**Lineage**: former Part B `A4` ("dynamics definability").
+**Minimal claim**:
 
-**Minimal Claim**: `\hat{G}_\theta` must be a well-formed selection operator over an admissible state space. It must be sufficiently definable for SRT claims to have an object.
+> Once a genuine Selection has actually occurred, the resulting reality is not ontically identical to the counterfactual in which that Selection never occurred.
 
-Legacy compact form:
+Any later reversal, cancellation or reconfiguration is itself further Selection; it does not retroactively make the earlier occurrence equal to never-occurrence.
 
-$$
-\hat{G}_\theta : S \to S
-$$
+Permanent boundary:
 
-**Implication**: SRT cannot make formal claims about selection if the selection operator is undefined, non-addressable, or outside any admissible state space.
+```text
+irreversible ontic non-equivalence
+!= durable trace
+!= localized memory
+!= anchoring persistence
+!= recurrent historical efficacy.
+```
 
-**Boundary**: This does not assert a specific implementation of `\hat{G}_\theta`; implementation details belong to bridge, domain, or lab layers.
+Therefore P0-03 does **not** require every Selection to leave a durable L2 record.
 
-### P0-04 Primitive Boundary: Selectability Without a Prior Chooser
+When prior Selection does remain materially effective in later Selection conditions, that stronger relation may be described as historically effective Selection / L2-side sedimentation under its owner.
 
-> **Level**: P0 primitive boundary, author decision AM-A (2026-08-11).
-
-P0-01 supplies the primitive actualisation kernel; P0-04 supplies the minimum well-formed formal carrier required to make claims about it. AM-A deliberately does **not** derive the first possibility of selecting from a prior non-selective ground. This is a declared stopping point of the current P0 architecture, not a gap that a fixed-point symbol, least-friction path, or downstream mechanism may be said to have closed.
-
-No prior chooser is required: a selector, subject, agent, or stable operator-pattern is downstream of primitive selection. This negative result follows from the ordering fixed by P0-01; it is not a theorem that an operator object already exists inside `L_0`.
-
-Current dependency split:
-
-| Claim type | Relation to P0-04 |
-|---|---|
-| primitive actualisation and its formal role | fixed by P0-01 plus P0-04; not derived from a non-selective predecessor |
-| gradients, cost, payability, normalization, closure, trace, irreversibility, and `L_1/L_2` anchoring | enabling conditions, realization constraints, or postconditions according to their own claim level; none alone causes the P0 kernel |
-| claims about `d`, `Ψ_f`, `T_dir`, reorientation, concern, agency, or subject-like selection | downstream of primitive actualisation; they do not define its origin |
-| bridge claims about physics, biology, AI, spirituality, society, or political agency | may instantiate or constrain the kernel, but must not be back-cited as its universal derivation |
-
-Therefore, files may cite P0-04 as a primitive boundary or formal admission condition. They must not cite a downstream bridge, fixed point, `argmin`, or minimum-friction path as if it had derived the primitive. A future AM-B-style meta-theory may challenge this stopping point, but it would require a new author decision and the missing non-circular proof obligations; it is not current SRT canonical.
+Terminal Selection remains genuine.
 
 ---
 
-## Demoted From The Old "Minimal Core"
+## P0-04: Formal Selection-Representation Well-Formedness
 
-The former hybrid `Core_21` placed several claims beside the primitive axioms. In the claim ladder they are now separated:
+P0-04 is a **formal admission guard**, not a second ontic primitive.
 
-| Former item | New role | New home |
-|---|---:|---|
-| `Ax-F-03` causality as projection | P1 constitutive theorem | `Core/SRT_Core_21b_Constitutive_Theorems.md` |
-| `Ax-F-03b` ontological time expression | P1 constitutive theorem | `Core/SRT_Core_21b_Constitutive_Theorems.md` |
-| `Ax-F-04` information-existence equivalence | P2 canonical interpretation / P3 bridge when formalized through external information theory | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-05` fitness beats truth | P3/P4 bridge hypothesis | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-06` assembly threshold | P4 lab / empirical threshold hypothesis | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-07` holographic duality | P3/P4 bridge hypothesis | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-09` scale consistency | P3 bridge mapping | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-11` ghost operator universality | P3 high-ambition bridge | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-12` Fisher-form `\Psi_f` generativity | P2/P3 mixed canonical interpretation / bridge | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `Ax-F-13` strong information-creation unification | P2/P3 mixed canonical interpretation / bridge | `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
+If an SRT argument uses a formal operator, transition relation, state space or Selection carrier, that representation must be well formed enough for the claim to have a determinate object.
 
-This demotion changes epistemic rank, not the intended theoretical meaning of those claims.
+For a declared operator model one may use:
+
+```text
+G-hat_theta : S -> S
+```
+
+or another explicitly typed mapping appropriate to the model.
+
+But:
+
+```text
+G-hat_theta != primitive Selection;
+formal state space != prior ontic warehouse;
+well-formed operator != prior chooser.
+```
+
+No selector, subject, agent or stable operator-pattern is required before primitive Selection.
+
+Attention, intention, agency, embodied parameters, normalization, cost, gradients, fixed points and readout rules belong to stronger realization / domain layers unless independently established at the relevant claim level.
+
+---
+
+## P0 Non-Flatness Boundary
+
+The L0 owner requires primitive Selection reality to be open but not maximally flat / indifferent.
+
+At P0 this means only:
+
+```text
+primitive generativity cannot be completely reduced to a role-interchangeable,
+maximally indifferent occurrence relation while preserving the same actualising differentiation.
+```
+
+It does **not** mean:
+
+```text
+B>=2 is primitively better than B<=1;
+continuation is primitively preferred;
+terminal Selection is defective;
+order / value / moral good is present at P0.
+```
+
+Exact inheritance of `epsilon_pg`, `kappa0` and other stronger formal asymmetries remains separately owned.
+
+---
+
+## P0 Position Boundary
+
+Primitive Selection is finite-position-indexed.
+
+But:
+
+```text
+finite positionality
+!= formed One
+!= formed Selection-position
+!= Bearer
+!= Agent
+!= subject-position.
+```
+
+Any stronger identity, perspective, bearing or agency claim must pay its own downstream burden.
+
+---
+
+## P0 Normativity Boundary
+
+P0 carries no primitive moral ranking.
+
+```text
+Selection occurred
+-/> Selection was correct;
+-/> Selection was legitimate;
+-/> continuation is good;
+-/> more options are better.
+```
+
+The current normativity route is downstream of formed positions / relations and stronger agency gates.
+
+---
+
+## Demoted / Downstream Material
+
+The following remain outside strict P0 unless separately re-adjudicated:
+
+- causality as projection;
+- ontological-time formalisms beyond occurrence non-equivalence;
+- information-existence equivalence;
+- fitness-beats-truth bridges;
+- assembly thresholds;
+- holographic mappings;
+- cross-scale phase / universality claims;
+- Fisher-form `Psi_f` generativity;
+- strong information-creation unification;
+- fixed-point / attractor models of L2;
+- attention / intention / Agency models of `G-hat_theta`.
+
+Their prior historical placement does not let them back-define P0.
+
+---
+
+## Permanent P0 Guards
+
+Reject any reading that implies:
+
+```text
+primitive Selection requires a prior possibility inventory;
+primitive Selection requires a prior Ghost Operator;
+L0/L1/L2 are three substances;
+actual occurrence automatically persists;
+every Selection automatically creates durable history;
+finite positionality is already subject-position;
+Selection-totality implies pan-agency or pan-consciousness;
+primitive Selection contains moral value;
+formal realization proves the metaphysical primitive.
+```
+
+Use `Core_Law/SRT_L0_Metaphysics.md` for the metaphysical anchor and `Core_Law/SRT_Generative_Ontology_Spine.md` for cross-owner structural routing.

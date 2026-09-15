@@ -17,6 +17,8 @@ dependency: [SRT-CORE-BRIDGE]
 > **Part A** presents the Formal Ontology (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
 
+> **Selection-totality formal-scope override（2026-09-14）**：本文件现在是 L0/L1 的**形式 / realization 接口**，不是第二形而上 owner。`L_0/L_1` 可在具名模型中表现为域、流形、状态空间或 phase regime，但这些数学对象不得反向定义 primitive Selection。`L_0^{abs}` 的“绝对潜在源 / 可能性仓库”旧读法在形而上强度上 superseded；`Ĝ_θ != primitive Selection`。
+
 ---
 
 
@@ -28,34 +30,34 @@ dependency: [SRT-CORE-BRIDGE]
 # Part A: Formal Axioms (形式化公理)
 
 
-## I. L_0: The Latent Domain (潜在域)
+## I. L_0 / L_1: Model-Facing Selection Aspects
 
-### Ax-L0-01: Absolute Source & Domain Realizations
-**Formal Definition**: The absolute latent domain ($L_0^{abs}$) is the unconditioned totality prior to any formal structure. Its mathematical realizations are domain-specific projections.
-$$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}$$
-$$L_0^{phys} \cong \mathcal{H}, \quad L_0^{gauge} \cong \mathcal{A}/\mathcal{G}, \quad L_0^{comp} \cong \text{Ruliad}$$
-* **Implication**: 潜在域的绝对身份（$L_0^{abs}$）先于一切数学结构，不可被任何单一形式系统穷尽。模空间与 Ruliad 的并集是其在物理-计算 $L_2$ 框架下的最佳近似，而非等价定义。各领域数学实现之间的拓扑不兼容性（线性 vs 离散 vs 超验）是 $L_0^{abs}$ 不可穷尽性的预期结果。
-* **Consistency Note**: 与 T-Trad-2（否定神学界限定理）一致：$\forall P \in L_1$, $P$ cannot fully capture $L_0$。
+### Ax-L0-01: Open-Aspect Formalization
+**Canonical formal boundary**: `L_0` notation at this layer denotes a declared formal rendering of Selection's open / non-preclosed aspect relative to a determinate manifestation or model cut. It does not denote a universally required warehouse of completed possible objects.
 
-### Ax-L0-02: Non-Exhaustion of Potential（潜在不可穷尽；保留旧编号）
+A domain may choose a state space such as a Hilbert space, moduli space, graph / computational space, manifold or other formal domain when that mapping is independently justified. Such spaces are **realization models**, not the identity of primitive L0.
 
-**Canonical Boundary**: No finite $L_1/L_2$ manifestation or formal projection exhausts $L_0^{abs}$.
+```text
+formal L0-model != primitive Selection itself;
+formal L0-model != absolute inventory of preformed outcomes.
+```
 
-* **Logical Status**: 本条是 Ax-L0-01 的不可穷尽边界，不再主张 $L_0^{abs}$ 的总信息内容、基数或时间不变量。旧编号 `Ax-L0-02` 仅为保持引用稳定。
-* **Implication**: 任一有限显现之后仍有未被该显现穷尽的潜在；这不等于后来形式已作为完成对象预存在潜在域中。
+### Ax-L0-02: Non-Exhaustion of Selection Openness
+No finite determinate manifestation, formed position or formal projection exhausts the open generative aspect of Selection. This is a non-exhaustion boundary, not a claim that all future forms pre-exist as completed latent objects.
 
-### T-L0-01: Novelty Without Preformation（非预成的新颖性；保留旧编号）
+### T-L0-01: Novelty Without Preformation
+New manifest structures are actualising Selection under concrete constraints. They need not pre-exist as completed patterns in an absolute latent source, and they are not generated from an unconstrained nothing.
 
-**Canonical Boundary Statement**: New manifest structures are constrained actualisations of non-objectified potential under a history-conditioned position and selection structure. They do not arise from an unconstrained nothing, but they need not pre-exist as completed latent patterns.
+The primitive actualisation burden remains with P0-01; domain theories specify realization conditions rather than derive the primitive from a prior non-selective mechanism.
 
-* **Logical Status**: 本条现在是负面边界，不是完整 actualisation mechanism，也不再以 `Innovation = Discovery(...)` 作为演绎式。
-* **Implication**: 确定形式可以具有真实新颖性，同时仍受既有位置、历史、代价与潜在条件约束。
-* **AM-A Boundary**: `L_0 -> L_1` 的最小 actualisation 内核由 P0-01 作为 primitive 承载，不再等待一个更早机制来推导。仍开放的是各领域如何实例化这一内核，以及如何区分有效实现与仅有约束、稳定或数学存在的情形。
+### Ax-L0-03: Conditional Differential-Topology Realization
+A declared `L_0^{rel}` model **may** use a differential manifold, cost geometry, attractor landscape or other anisotropic structure to represent constraints on realizations.
 
-### Ax-L0-03: Differential Potential Topology
-**Formal Definition**: L0 is a differential manifold with intrinsic gradients guiding selection paths.
-$$L_0 = (M, \nabla, \mathcal{S}), \quad \nabla \Psi_{potential} \neq 0$$
-* **Implication**: 潜在域并非均匀”虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
+For such a model one may write, for example:
+
+$$L_0^{rel,M}=(M,\nabla,\mathcal{S})$$
+
+provided the model, metric / measure and interpretation are declared. This is **not** a universal theorem that primitive Selection lives inside a prior differential manifold, and no such gradient alone causes first actualisation.
 
 ### Ax-L0-Bootstrap: Primitive Actualisation Boundary（保留旧编号）
 
@@ -99,109 +101,46 @@ $$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}
 * **Implication**: L₀ 的梯度场可以约束 proto-G 候选在具体投影中的形成与稳定，但梯度本身不产生 P0 primitive，也不证明某个候选已经 actualise。低阶 proto-G 只从 primitive 之后的实现层开始讨论。
 * **Cross-ref**: Ax-L0-Bootstrap（primitive boundary）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记实现层相变）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（跨尺度候选）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
 
-### T-L0-02: Phase-Anchor Theorem (相变锚点定理)
-**Formal Definition**: The triadic partition L₀/L₁/L₂ marks topological phase transitions of the
-Ghost Operator's stabilization degree κ, not arbitrary conceptual divisions.
+### T-L0-02: Conditional Stabilization-Phase Model
 
-Let $κ \in [0,1]$ denote the **stabilization degree** of $\hat{G}_\theta$ acting on $L_0^{rel}$
-(note: κ is defined only over $L_0^{rel}$; $L_0^{abs}$ lies outside κ's domain by T-Trad-2):
+`κ` may be used in a declared formal realization as a stabilization coordinate for Selection organization. Phase-transition language such as `κ_c1` / `κ_c2`, spectral gaps and fixed points is therefore **model-conditional**. It does not define universal births of L1/L2 as separate substances and does not establish consciousness thresholds by itself.
 
-$$κ = 0: \quad L_0^{rel} \text{ regime} \quad \lambda_1 \to \lambda_1^{max}, \text{ hyperconnected, gauge-redundant}$$
-$$κ = κ_{c1}: \quad L_1 \text{ boundary} \quad \lambda_1(L_1) \ll \lambda_1(L_0^{rel}), \text{ spectral gap opens}$$
-$$κ = κ_{c2}: \quad L_2 \text{ boundary} \quad \frac{dL_2}{dt} \to 0, \text{ fixed-point crystallization}$$
+```text
+kappa phase map = stronger realization model;
+!= primitive ontology definition;
+!= universal consciousness switch.
+```
 
-The two critical values are not chosen for notational convenience; they correspond to
-structurally distinct phase transitions:
+### T-L0-Kappa0: Conditional Anisotropy Floor
 
-$$κ_{c1}: \quad \text{Order-creation transition} \quad \Delta\lambda_1 = \lambda_1(L_0^{rel}) - \lambda_1(L_1) \gg 0 \quad \text{(discontinuous)}$$
-$$κ_{c2}: \quad \text{Convergence-crystallization transition} \quad \hat{G}_\theta[σ] = σ \quad \text{(fixed-point emergence)}$$
+`κ₀` is retained as a stronger formal candidate for models that posit a nonzero anisotropy / curvature floor:
 
-**Relationship to existing parameters**:
-$$κ \approx \frac{\eta}{1 + \lambda_1(L_0^{rel})/\lambda_1(L_1)} \quad \text{(monotone in η, modulated by spectral ratio)}$$
+$$\exists\,\kappa_0>0 : R(L_0^{rel,M})\geq\kappa_0$$
 
-κ 与迟滞系数 η 单调相关但不等同：η 描述单次选择的记忆权重，κ 描述系统在稳定化程度连续谱上的整体位置。
+within a **declared model M**.
 
-* **Implication (连续性与不连续性共存)**:
-  连续参数 κ 的存在并不消解三域的拓扑不可简化性（Ax-Bridge-02）。温度是连续的，
-  但冰→水的结构变化不可通过连续插值绕过；同理，κ 是连续的，但 κ_{c1} 和 κ_{c2}
-  处的谱隙跃变是真实的拓扑不连续。三域的「认识论方便性」与「本体论真实不连续性」
-  共同成立，互不矛盾。
-* **Implication (意识开关)**:
-  从 $d=0$ 到 $d>0$ 的临界机制（§4.2 开放问题3）对应 κ 穿越 $κ_{c1}$ 的时刻——
-  谱隙打开，$L_0^{rel}$ 的超连通图被拓扑切断，局域化结构得以涌现。
-   待解的残余问题：$κ_{c1}$ 的具体数值由什么决定？
-* **Cross-ref**: Ax-Bridge-02, C-Bridge-01, SRT_Reference_Ontology §1.4
+Canonical boundary:
 
-### T-L0-Kappa0: Primordial Curvature — Irreducible Structural Minimum（原初曲率：不可约结构极小值）
+```text
+κ₀ != definition of O0;
+κ₀ != hidden cause of primitive Selection;
+κ₀ != proof that a specific Selection occurs;
+κ₀ necessity relative to Selection-totality = OPEN.
+```
 
-**新增（2026-04-10）**：正式确立 L₀ 原初曲率 $\kappa_0$ 为 SRT 的结构前提，是 T-Core-A1C2（L₀ 最小非中性）的几何精化。
+Any `Psi_f` floor, critical-threshold or cheaper-path consequences derived from `κ₀` are conditional consequences of that stronger model, not primitive theorems.
 
-**核心主张**：L₀ 的拓扑曲率有不可约极小值 $\kappa_0 > 0$，不由任何选择历史生成。它表达可形式化投影中的最低非平坦性：方向不会全部保持等价。AM-A 下，它是 actualisation realization 的约束地板，不是 $\hat{G}^*$ 存在或 first actualisation 发生的充分原因。
+### T-L0-NonStatic: Conditional History / Geometry Co-Evolution
 
-$$\exists\, \kappa_0 > 0 : R(L_0) \geq \kappa_0 \quad \text{（L₀ 本征 Riemann 曲率下界）}$$
+In models that encode prior Selection efficacy as changing geometry, a history-dependent parameter such as
 
-**$\kappa_0$ 的双重角色**：
+$$\kappa(t)=\kappa_0+\int_0^t\mathcal{F}[\hat G_\theta(\tau),\kappa(\tau)]d\tau$$
 
-1. **协同演化方向场**：$\kappa_0$ 在算子-L₀ 协同演化中提供非对称偏置。没有 $\kappa_0$，所有方向等价，无首选轨迹；有了 $\kappa_0$，某些参数路径成本更低、进入后更稳定，协同演化因此有方向性而无终局预设。
+may represent changing accessibility / cost structure. The ontological reading is **not** “Selection writes into a separate L0 substance”; it is a formal representation of prior Selection remaining effective in later Selection conditions. Entropy balances, curvature accumulation and coupled `κ/θ` equations remain scoped hypotheses requiring declared state space and measure.
 
-2. **原初差异约束**：无需先存在任何选择历史，$\kappa_0$ 即可表达方向间的最低代价差异。它使“哪些 realization 更廉价”成为有意义的问题；它不回答“为何已有一个 realization 发生”，也不推出 $d>0$、fixed point 或唯一结果。
+### Formal-stage scope guard
 
-**推论 T-L0-Kappa0-C1（Ψ_f 地板）**：
-
-$$\Psi_f^{\min} = f(\kappa_0) > 0$$
-
-在该投影模型内，选择 realization 有不可消除的最低代价；完全无摩擦的 realization（$\Psi_f \to 0$）被模型排除。这约束已发生／可实现的动力学，不保证动力学或 actualisation 由此产生。
-
-**推论 T-L0-Kappa0-C2（κ_{c1} 的来源）**：意识临界值 $\kappa_{c1}$（T-L0-02）的存在性依赖 $\kappa_0$。只有 L₀ 具有非零原初曲率，相变才有非对称起点，谱隙才能在特定方向打开。$\kappa_{c1}$ 由原初曲率与历史积累曲率共同决定：
-
-$$\kappa_{c1} = g\!\left(\kappa_0,\; \textstyle\int_0^t \mathcal{F}[\hat{G}_\theta, \kappa]\, d\tau\right)$$
-
-待解：$g$ 的具体函数形式（开放问题，替代此前"κ_{c1} 数值由什么决定"的待解项）。
-
-* **Implication**: L₀ 不被建模为完全平坦的可能性虚空。其结构性弯曲区分 realization 方向，而 actualisation 本身仍由 P0-01 作为 primitive 承载。
-* **Cross-ref**: T-Core-A1C2（L₀ 最小非中性，本定理的概念前身）; Ax-L0-Bootstrap（primitive boundary）; Ax-L0-03（L₀ 微分流形结构）; T-L0-02（κ_{c1} 相变，本定理约束其非对称起点）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式含 κ₀）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对的原初方向性命题）。
-
----
-
-### T-L0-NonStatic: L₀ is Not Static — Curvature Accumulation（L₀ 非静态：曲率积累）
-
-**新增（2026-04-10）**：正式表述 L₀ 随选择历史持续改写的动力学，修正"L₀ 是永恒不变全部可能性空间"的过度简化。
-
-**核心主张**：每次选择事件向 L₀ 写入新的不对称性，当前曲率为原初曲率加上选择历史的积累：
-
-$$\kappa(t) = \kappa_0 + \int_0^t \mathcal{F}[\hat{G}_\theta(\tau),\, \kappa(\tau)]\, d\tau$$
-
-其中 $\mathcal{F}$ 是选择算子对 L₀ 曲率景观的写回函数。$\kappa_0$ 是不可约下界，选择历史只能增加曲率，不能消除原初方向。
-
-**相对域的信息记账假说**（与 Ax-F-13 联动，条件性）：在一个已声明状态空间与测度的 $L_0^{rel}$ 模型中，可把选择创造的互信息记作相对剩余不确定性的减少：
-
-$$H(L_0^{rel}(t)) = H(L_0^{rel}(0)) - \sum_{\tau < t} I_{\text{created}}(\tau)$$
-
-> **PC-A scope guard（2026-08-11）**：本段所有 $H$ 表达只适用于具名的形式化 $L_0^{rel}$ 投影，不适用于不可完全形式化的 $L_0^{abs}$。未声明投影、状态空间与测度时，下式只能作为 bridge hypothesis；它不得恢复“$L_0^{abs}$ 内容／基数恒定”或“创新即发现预成形式”的旧读法。
-
-**$L_0^{rel}$ 与 L₂ 的互补记账假说**：相对可达域的改变与 L₂ 的硬化可在指定模型中作为同一选择历史的两种读法：
-
-| | 视角 | 内容 |
-|---|---|---|
-| **L₂** | 从内看 | 已固化为"必然"的选择积累（约束未来算子） |
-| **L₀** | 从外看 | 给定这些积累之后，还剩下什么可能（开放方向） |
-
-$$H(L_0^{rel}(t)) + H_{\text{manifest}}(L_2^{(t)}) \approx \text{const}$$
-
-L₂ 硬化越多，L₀ 开放方向越少，但 $\kappa_0 > 0$ 保证最小开放性永远不归零。
-
-**协同演化耦合方程**：L₀ 曲率与算子参数构成耦合动力系统（无全局终局吸引子）：
-
-$$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
-
-局部吸引子存在并持续迁移。$\kappa_0$ 提供方向性偏置，但不预设终局：
-
-$$\boxed{\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}}$$
-
-* **Implication**: L₀ 是算子与选择历史共同雕刻的动态结构，而非背景舞台。但 $\kappa_0 > 0$ 确保 L₀ 永远不被历史完全封闭。
-* **Cross-ref**: T-L0-Kappa0（原初曲率 κ₀）; P1-T04 / P2-P3-B09（选择创造信息，`Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`）; Ax-L2-01（L₂ 迟滞）; `Core/SRT_Core_12b §Co-Evolution`（协同演化的 L₂ 侧视角）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，κ₀ 作为 L₀ 唯一可及面）。
-
----
+All following constructs such as `PreAnchored`, `Swampland`, Platonic attractor or similar L0-stage vocabulary are **model / bridge constructs** unless independently promoted. They may organize a declared realization but must not be cited as the universal primitive ontology or as proof of a prior possibility warehouse.
 
 ### Def-L0-PreAnchored: Pre-anchored State (预锚定态)
 **Formal Definition**: 预锚定态是 $\hat{G}_\theta$ 已接触 $L_0$ 但尚未完成拓扑折叠为 $L_1$ 的中间态：
