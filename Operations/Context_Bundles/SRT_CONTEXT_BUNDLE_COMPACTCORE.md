@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: f881923c
+source_commit: fac06c3b
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: e5ad002b6116e942
+inputs_digest: 1f2fc349662d57b2
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,7 +27,7 @@ inputs_digest: e5ad002b6116e942
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `f881923c` |
+| 来源 commit | `fac06c3b` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
