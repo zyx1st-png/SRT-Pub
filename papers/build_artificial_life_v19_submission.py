@@ -65,7 +65,7 @@ def validate(text: str) -> None:
         "strong-support threshold",
         "who bears failure-triggered future opportunity loss",
         "terminality still contains additional causal structure",
-        "E5 is not required",
+        "does not require an immediate Experiment 5",
         # Strongest-neighbor / novelty boundary guards.
         "Tampuu et al. (2017)",
         "Scott and Pitt (2023)",
