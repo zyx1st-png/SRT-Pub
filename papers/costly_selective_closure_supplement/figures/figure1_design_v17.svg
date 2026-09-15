@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+  <title id="title">CSC v17 experimental design</title>
+  <desc id="desc">Shared experimental setup branches into a terminal-run real-stake condition and a resettable condition. Their primary matched contrast is terminate versus restore. Simulated-stake is an auxiliary resettable condition with a mortality cue and represented-danger penalty.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+    <style>
+      .title{font:700 34px Arial,Helvetica,sans-serif;fill:#111}
+      .heading{font:700 30px Arial,Helvetica,sans-serif}
+      .body{font:24px Arial,Helvetica,sans-serif;fill:#111}
+      .small{font:21px Arial,Helvetica,sans-serif;fill:#555}
+      .italic{font:italic 20px Arial,Helvetica,sans-serif;fill:#777}
+      .label{font:700 26px Arial,Helvetica,sans-serif;fill:#111}
+    </style>
+  </defs>
+  <rect width="1600" height="960" fill="#fff"/>
+
+  <rect x="330" y="58" width="940" height="126" rx="12" fill="#eef3f8" stroke="#444" stroke-width="3"/>
+  <text x="800" y="108" text-anchor="middle" class="title">Shared setup</text>
+  <text x="800" y="143" text-anchor="middle" class="body">same reward function, observation specification,</text>
+  <text x="800" y="174" text-anchor="middle" class="body">energy dynamics, policy architecture, schedule, and seeds</text>
+
+  <line x1="690" y1="184" x2="525" y2="270" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="910" y1="184" x2="1075" y2="270" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="220" y="230" width="1160" height="270" fill="none" stroke="#666" stroke-width="3" stroke-dasharray="10 7"/>
+
+  <rect x="280" y="270" width="430" height="175" rx="9" fill="#edf4fb" stroke="#1f6aa5" stroke-width="3"/>
+  <text x="495" y="320" text-anchor="middle" class="heading" fill="#1f6aa5">Terminal-run</text>
+  <text x="495" y="356" text-anchor="middle" class="heading" fill="#1f6aa5">(real-stake)</text>
+  <text x="495" y="402" text-anchor="middle" class="body">depletion terminates</text>
+  <text x="495" y="432" text-anchor="middle" class="body">the episode-token</text>
+
+  <rect x="890" y="270" width="430" height="175" rx="9" fill="#fcf0eb" stroke="#b94b32" stroke-width="3"/>
+  <text x="1105" y="338" text-anchor="middle" class="heading" fill="#b94b32">Resettable</text>
+  <text x="1105" y="402" text-anchor="middle" class="body">depletion -&gt; cheap restore</text>
+  <text x="1105" y="432" text-anchor="middle" class="body">to E<tspan baseline-shift="sub" font-size="17">0</tspan>; run continues</text>
+
+  <text x="800" y="485" text-anchor="middle" class="label">Primary matched contrast: terminate vs restore</text>
+
+  <line x1="800" y1="500" x2="800" y2="610" stroke="#999" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <text x="975" y="545" class="italic">adds representational</text>
+  <text x="975" y="571" class="italic">changes to resettable</text>
+
+  <rect x="410" y="620" width="780" height="190" rx="9" fill="#fafafa" stroke="#888" stroke-width="3" stroke-dasharray="10 7"/>
+  <text x="800" y="690" text-anchor="middle" class="heading" fill="#555">Simulated-stake (auxiliary)</text>
+  <text x="800" y="758" text-anchor="middle" class="body">resettable + mortality cue + additional represented-danger penalty 1.5</text>
+
+  <text x="800" y="885" text-anchor="middle" class="small">Only the depletion transition differs in the primary comparison; simulated-stake is not a matched third arm.</text>
+</svg>
