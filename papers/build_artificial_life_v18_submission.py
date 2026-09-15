@@ -6,7 +6,7 @@ from pathlib import Path
 PAPERS = Path(__file__).resolve().parent
 SRC = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_submission.md"
-DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure1_design_v17.svg"
+DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure1_design_v18.svg"
 EVIDENCE_FIGURE = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg"
 E1_SENSITIVITY_AUDIT = "costly_selective_closure_supplement/audit_e1_paired_sensitivity.py"
 EVIDENCE_FIRST_TITLE = (
@@ -86,6 +86,7 @@ def validate(text: str) -> None:
         "Terminal failure strongly stabilizes costly cooperation relative to cheap restoration",
         "two-sided paired sign-flip permutation test at the 20,000-resample resolution floor",
         "The paired difference is approximately `0.511`, with the two-sided paired sign-flip",
+        "costly_selective_closure_supplement/figures/figure1_design_v17.svg",
     ]
     for item in forbidden:
         if item in text:
@@ -93,6 +94,8 @@ def validate(text: str) -> None:
 
     if not (PAPERS / E1_SENSITIVITY_AUDIT).is_file():
         raise RuntimeError("v18 E1 sensitivity audit script is missing")
+    if not (PAPERS / DESIGN_FIGURE).is_file():
+        raise RuntimeError("v18 Experiment 1 design figure is missing")
 
     keyword_line = next(
         (line for line in text.splitlines() if line.startswith("**Keywords**:")), None
