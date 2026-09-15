@@ -20,3 +20,5 @@ jobs:
       - name: Run invariant-only suite
         working-directory: papers/costly_selective_closure_supplement
         run: python test_consequence_scope_invariants.py
+
+# rerun after import-path-only repair; no confirmatory seeds are used here
