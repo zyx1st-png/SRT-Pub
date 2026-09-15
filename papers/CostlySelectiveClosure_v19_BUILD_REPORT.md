@@ -11,15 +11,16 @@ This report records mechanical publication checks for the v19 candidate. It does
 
 ## 1. Submission builder
 
-The current `papers/build_artificial_life_v19_submission.py` was executed against the current v19 manuscript after the strongest-neighbor and preregistration-provenance revisions.
+The current `papers/build_artificial_life_v19_submission.py` was executed against the current v19 manuscript after the strongest-neighbor and preregistration-provenance revisions. After the verified E1-E4 Figure 2 link/caption was inserted into the reviewer-facing build, the guarded submission text was re-counted.
 
 ```text
 submission builder = PASS
-approximate guarded word count = 7557
+approximate guarded word count = 7630
 Artificial Life 6,000-12,000 Article range = PASS
 keywords = 6 / PASS
 required v19 hard guards = PASS
 superseded v18 / scalar-V wording guards = PASS
+Figure 2 insertion = PASS
 ```
 
 The first attempted execution exposed one guard-only wording mismatch: the builder required the literal phrase `E5 is not required`, while the manuscript correctly said `does not require an immediate Experiment 5`. The guard was corrected to the actual manuscript wording; no scientific claim or result changed.
