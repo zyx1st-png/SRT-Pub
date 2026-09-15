@@ -7,6 +7,11 @@ PAPERS = Path(__file__).resolve().parent
 SRC = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v19_ArtificialLife_submission.md"
 TITLE = "# Who Bears Failure? Consequence Scope and Terminality in Survival-Coupled Artificial Agents"
+NOVELTY_AUDIT = PAPERS / "CostlySelectiveClosure_v19_STRONGEST_NEIGHBOR_AUDIT.md"
+
+E2_PREREG = "5852e60d82efc14748ae3478ee2400b4d3600839"
+E3_PREREG = "0c599c14ea24196c6e2d411ecd0e4e17124f18f1"
+E4_PREREG = "66cb46c45e99c5535c1f63b9c200ff9dbe911506"
 
 
 def strip_frontmatter(text: str) -> str:
@@ -61,6 +66,15 @@ def validate(text: str) -> None:
         "who bears failure-triggered future opportunity loss",
         "terminality still contains additional causal structure",
         "E5 is not required",
+        # Strongest-neighbor / novelty boundary guards.
+        "Tampuu et al. (2017)",
+        "Scott and Pitt (2023)",
+        "shared consequence",
+        "not new",
+        # Repository preregistration provenance must be reviewer-visible.
+        E2_PREREG,
+        E3_PREREG,
+        E4_PREREG,
     ]
     for item in required:
         if item not in text:
@@ -76,10 +90,16 @@ def validate(text: str) -> None:
         "cheap restoration lowers operational V",
         "Only the final hypothesis receives direct support",
         "more difficult recovery\n=> greater effective vulnerability\n=> more stable costly cooperation",
+        "first demonstration that shared consequences",
+        "first demonstration of shared consequence",
+        "first demonstration of cooperative survival",
     ]
     for item in forbidden:
         if item in text:
             raise RuntimeError(f"v19 submission contains superseded/internal residue: {item}")
+
+    if not NOVELTY_AUDIT.is_file():
+        raise RuntimeError("v19 strongest-neighbor audit is missing")
 
     keyword_line = next(
         (line for line in text.splitlines() if line.startswith("**Keywords**:")), None
