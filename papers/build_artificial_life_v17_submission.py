@@ -11,6 +11,9 @@ AI_DISCLOSURE = """## AI Assistance Disclosure\n\nOpenAI ChatGPT (OpenAI; access
 
 SUBMISSION_DATA_NOTE = """For review, the reproduction package should be uploaded with the manuscript or provided through a reviewer-safe access route that does not identify individual reviewers through permissions or access logs. The package contains the experiment code, fixed result files, statistical procedures, seeds, figure-generation scripts, and the locked environment used for exact reproduction of the common-state probe.\n"""
 
+OLD_DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure2_design.png"
+V17_DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure1_design_v17.svg"
+
 
 def strip_frontmatter(text: str) -> str:
     if not text.startswith("---\n"):
@@ -29,6 +32,14 @@ def strip_repository_note(text: str) -> str:
         count=1,
         flags=re.S,
     )
+
+
+def normalize_figure_refs(text: str) -> str:
+    if OLD_DESIGN_FIGURE not in text:
+        raise RuntimeError("historical design-figure reference missing from source")
+    if not (PAPERS / V17_DESIGN_FIGURE).exists():
+        raise RuntimeError(f"v17 design figure missing: {V17_DESIGN_FIGURE}")
+    return text.replace(OLD_DESIGN_FIGURE, V17_DESIGN_FIGURE, 1)
 
 
 def normalize_data_availability(text: str) -> str:
@@ -79,6 +90,7 @@ def validate(text: str) -> None:
         "## References",
         "## Appendix: Experimental Details",
         "**Keywords**:",
+        V17_DESIGN_FIGURE,
     ]
     for item in required:
         if item not in text:
@@ -94,6 +106,7 @@ def validate(text: str) -> None:
         "v16 Adaptive Behavior",
         "v17-specific supplement note",
         "historical supplement README",
+        OLD_DESIGN_FIGURE,
     ]
     for item in forbidden:
         if item in text:
@@ -113,6 +126,7 @@ def main() -> None:
     text = SRC.read_text(encoding="utf-8")
     text = strip_frontmatter(text)
     text = strip_repository_note(text)
+    text = normalize_figure_refs(text)
     text = normalize_data_availability(text)
     text = inject_ai_disclosure(text)
     text = text.lstrip()
