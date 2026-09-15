@@ -1,0 +1,80 @@
+from pathlib import Path
+
+p = Path(__file__).resolve().parent / 'CostlySelectiveClosure_v18_ArtificialLife_candidate.md'
+t = p.read_text(encoding='utf-8')
+
+replacements = [
+    (
+        '# Costly Selective Closure: Terminal Failure, Persistent Damage, and Recovery Architecture in Artificial Agents',
+        '# Failure Is Not One-Dimensional: Terminality, Persistent Damage, and Recovery Architecture in Artificial Agents',
+    ),
+    (
+        '''Artificial-life research often compares systems that look similarly adaptive while differing sharply in what must be maintained, what history remains effective, and what happens when regulation fails. This paper develops **costly selective closure** (CSC) as a comparison protocol rather than a definition or scalar score of life. The revised protocol profiles **selective breadth**, **maintenance burden**, and **historical retention**, while treating **failure consequence architecture** as a structured descriptor indexed to a declared organizational unit, boundary, timescale, and recovery regime. The consequence term is deliberately not reduced to a single vulnerability or recoverability axis.
+
+The empirical programme shows why this distinction is necessary. In Experiment 1, two matched REINFORCE agents experienced the same reward function, observation specification, energy dynamics, architecture, schedule, and paired seeds, but energy depletion either terminated the current episode-token or restored the depleted agent. After withdrawal of a cooperation bonus, mutual cooperation averaged **0.55 under terminal failure versus 0.04 under restoration across 30 paired seeds** (`p < 0.0001`). The contrast survived a zero-penalty ablation, a one-to-unbounded-lives gradient, a payoff sweep, and a frozen-policy common-state probe. However, two preregistered follow-ups did not generalize this effect in the predicted direction. Experiment 2 kept all episodes at 50 steps and varied the persistence of non-terminal metabolic impairment; the predicted positive recoverability gradient was not supported (`rho = 0.055`, `p = 0.071`; `tau_inf - tau0 = 0.0059`, 95% CI `[-0.0292, 0.0443]`). Experiment 3 imposed fully reversible recovery periods of 0, 2, 5, or 10 forced-Rest steps after depletion. Its preregistered positive hypothesis also failed; instead the ordered association was strongly negative (`rho = -0.704`, `p = 0.00005`), with `k10 - k0 = -0.0373` (95% CI `[-0.0990, -0.0028]`). A common-state frozen-policy probe showed the same negative direction.
+
+Together, the experiments reject a simple interpretation in which terminality, persistent impairment, and recovery burden are interchangeable points on one vulnerability scale. The strongest result is narrower: **failure consequences are architecture-specific design variables, and apparently similar forms of “greater consequence” can produce null, positive, or opposite policy effects depending on how they alter continuation, action availability, interaction, and return structure**. CSC uses this result to motivate explicit declaration and decomposition of consequence architecture rather than a universal life-likeness score.''',
+        '''Artificial-life comparisons often treat mortality, persistent damage, and difficult recovery as if they lay on a common axis of failure consequence. This paper tests that assumption in a survival-coupled multiagent reinforcement-learning system and uses the results to revise **costly selective closure** (CSC), a comparison protocol rather than a definition or scalar score of life. CSC requires an explicit organizational unit, boundary, timescale, and recovery regime; the evidence-led revision retains selective breadth, maintenance burden, and historical retention as descriptive questions but treats **failure consequence architecture** as structured rather than one-dimensional.
+
+Experiment 1 compared matched REINFORCE agents whose energy depletion either terminated the current episode-token or restored the depleted agent. After withdrawal of a cooperation bonus, mutual cooperation averaged **0.55 under terminal failure versus 0.04 under restoration across 30 paired seeds** (`p < 0.0001`), with the separation surviving a zero-penalty ablation, a lives-budget gradient, a payoff sweep, and a frozen-policy common-state probe. Two later, separately repository-preregistered follow-ups then tested generalizations of that interpretation. Experiment 2 held episode length fixed and varied persistence of non-terminal metabolic impairment; the predicted positive gradient was not supported (`rho = 0.055`, `p = 0.071`; `tau_inf - tau0 = 0.0059`, 95% CI `[-0.0292, 0.0443]`). Experiment 3 imposed fully reversible recovery periods of 0, 2, 5, or 10 forced-Rest steps. Its preregistered positive hypothesis also failed; the observed ordered association was instead negative (`rho = -0.704`, `p = 0.00005`), with `k10 - k0 = -0.0373` (95% CI `[-0.0990, -0.0028]`). A common-state frozen-policy probe showed the same direction.
+
+The three interventions therefore do not behave like interchangeable points on one vulnerability or recoverability scale. The supported conclusion is narrower: **terminal failure, persistent impairment, and temporary recovery latency are distinct consequence architectures whose learning effects depend on how they alter continuation, action availability, interaction, and return structure**. The result motivates decomposition of failure consequences rather than a universal life-likeness score or a rule that “more consequence” necessarily produces stronger commitment.''',
+    ),
+    (
+        '''The sequence of experiments is intentionally asymmetric. Experiment 1 established the original phenomenon. Experiments 2 and 3 were designed afterward as **preregistered attempts to generalize its interpretation**. They are not presented as independent discoveries selected after inspection of favorable outcomes.''',
+        '''The sequence of experiments is intentionally asymmetric. **Experiment 1 was not preregistered**; it established the original phenomenon and motivated the subsequent causal-decomposition questions. Experiments 2 and 3 were designed only after Experiment 1 was known, and each was separately preregistered in a timestamped repository commit before its confirmatory implementation/execution on seeds `1..30`. These repository preregistrations constrain the follow-up hypotheses and analyses, but they do not turn the full E1/E2/E3 programme into a prospectively preregistered study. The follow-ups are therefore interpreted as preregistered tests of specific generalizations from an earlier observed result.''',
+    ),
+    (
+        '''Terminal failure strongly stabilizes costly cooperation relative to cheap restoration in the reported survival-coupled REINFORCE environment, and that result survives multiple robustness checks.''',
+        '''Terminal failure produces much higher post-withdrawal costly cooperation than cheap restoration in the reported survival-coupled REINFORCE environment, and that contrast survives multiple robustness checks.''',
+    ),
+    (
+        '''First, all experiments use one small REINFORCE architecture. They do not establish algorithm-general effects. Actor-critic or average-reward methods could respond differently, particularly because bootstrapping changes how terminal and continuing transitions enter value targets.''',
+        '''First, Experiment 1 was not preregistered. Experiments 2 and 3 were formulated after its result was known and were then separately locked in timestamped repository commits before confirmatory execution. Their preregistration strengthens the follow-up tests but does not provide prospective confirmation of the entire experimental sequence.
+
+Second, all experiments use one small REINFORCE architecture. They do not establish algorithm-general effects. Actor-critic or average-reward methods could respond differently, particularly because bootstrapping changes how terminal and continuing transitions enter value targets.''',
+    ),
+    ('Second, the environment hand-designs the survival coupling.', 'Third, the environment hand-designs the survival coupling.'),
+    ('Third, episode-token termination is not controller destruction.', 'Fourth, episode-token termination is not controller destruction.'),
+    ('Fourth, cooperation is attractor-sensitive across seeds.', 'Fifth, cooperation is attractor-sensitive across seeds.'),
+    ('Fifth, Experiment 3’s forced-Rest manipulation bundles several effects.', 'Sixth, Experiment 3’s forced-Rest manipulation bundles several effects.'),
+]
+
+for old, new in replacements:
+    count = t.count(old)
+    if count != 1:
+        raise SystemExit(f'expected exactly one target, found {count}: {old[:100]!r}')
+    t = t.replace(old, new, 1)
+
+data_marker = '''The reproduction package contains the Experiment 1 code and fixed result files, the preregistrations and first confirmatory result artifacts for Experiments 2 and 3, statistical procedures, invariant tests, and figure-generation assets. Experiment 2 and Experiment 3 preserve their first confirmatory outcomes and their preregistration provenance; no unfavorable result was replaced by a tuned rerun.'''
+if t.count(data_marker) != 1:
+    raise SystemExit('data availability marker not unique')
+t = t.replace(
+    data_marker,
+    data_marker + '''\n\nThe Experiment 2 and Experiment 3 preregistrations are **timestamped repository preregistrations**, not registrations in a third-party preregistration service. In each case the locked design commit predates the confirmatory implementation/execution record retained in the repository.''',
+    1,
+)
+
+evidence_bridge = '''The evidence therefore rejects the simple bridge:
+
+```text
+more difficult recovery
+=> greater effective vulnerability
+=> more stable costly cooperation
+```
+
+No such one-dimensional implication survives all three tests.'''
+if t.count(evidence_bridge) != 1:
+    raise SystemExit('evidence bridge not unique')
+t = t.replace(
+    evidence_bridge,
+    '''![Seed-level evidence across E1/E2/E3](costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg)
+
+**Figure 2.** Seed-level post-withdrawal cooperation across the three consequence interventions. Points are the 30 paired seeds; boxes summarize the seed distributions and open diamonds mark arithmetic means. E1 shows the terminal-versus-restore contrast. E2 and E3 show the two separately repository-preregistered follow-ups. The figure is descriptive; confirmatory inference follows the pre-specified tests reported in Sections 5.3 and 5.4.
+
+''' + evidence_bridge,
+    1,
+)
+
+p.write_text(t, encoding='utf-8')
+print('PASS: evidence-first v18 text edits applied')
