@@ -15,6 +15,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.rcParams["svg.fonttype"] = "none"
+
 HERE = Path(__file__).resolve().parent
 RESULTS = HERE / "results"
 FIGURES = HERE / "figures"
