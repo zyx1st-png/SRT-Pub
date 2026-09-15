@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: fadbf819
+source_commit: f881923c
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: c12607536210a3e2
+inputs_digest: e5ad002b6116e942
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: c12607536210a3e2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `fadbf819` |
+| 来源 commit | `f881923c` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |
@@ -6726,27 +6726,40 @@ $$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0
 - [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的四判据事后结算。
 - [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准；当前可候选地映射为冲突场景下的事件内偏好翻转、EEG/readiness-potential 时窗、以及跨试次的选择带宽变化。
 
-* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（$\Psi_f$ 代价签名的基础定义）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
+* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（只在已声明 reference trajectory / mismatch functional 的模型中使用的 $\Psi_f$ 代价签名 proxy）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 
-### Eq-Force-01: Ontological Friction
-**Formal Definition**: Friction measures resistance against the natural latent trajectory.
-$$\Psi_f \propto \int (L_1 - L_0^{natural})^2 \, dt$$
-* **Implication**: 选择越偏离潜在域自然路径，摩擦越高。
+### Eq-Force-01: Conditional Reference-Trajectory Friction Proxy
+
+> **Status**: conditional formal / model proxy（P3），不是 `\Psi_f` 的 canonical definition。Canonical semantics remain owned by `_SRT_PSI_F_CANONICAL.md`。
+
+只有当模型 $M$ 独立声明 reference trajectory / baseline $r_M(t)$，并给出单位与作用域相容的 mismatch functional $\mathcal{D}_M$ 时，才可写：
+
+$$\Psi_f^{(ref,M)} \propto \int \mathcal{D}_M\!\bigl(L_1(t), r_M(t)\bigr) \, dt$$
+
+这里的 $r_M$ 与 $\mathcal{D}_M$ 是该声明模型的局部占位记号，不是新增 canonical symbols。无 declared reference trajectory 或 compatible mismatch functional 时，Eq-Force-01 不准入。
+
+* **Boundary**: reference trajectory $\neq$ primitive `L_0` direction；低 mismatch / 低 friction 不推出 good、legitimate、healthy 或 O2-M，也不为 primitive Selection 提供 natural / value / order direction。
 
 ### Eq-Pain-01: Hazard / Pain-Risk Proxy
 **Proxy Definition**: A pain-risk / hazard proxy can track the temporal derivative of a `Ψ_f`-related friction signal under a stated measurement window.
 $$\text{PainRisk}^{proxy}(t) \approx h(t) \sim \frac{d\Psi_f^{proxy}}{dt}$$
 * **Implication**: 某些痛苦风险可与摩擦变化率相关，而非静态误差；这不是 canonical `pain = dΨ_f/dt` 或 `suffering = Ψ_f`。结构性 suffering 以 `Core_Law/SRT_Suffering.md` 为准。
 
-### Eq-Friction-Comp: 计算本体论摩擦 (Computational Ontological Friction)
-**Formal Definition**: 两个潜在状态之间的最小本体论摩擦下界，受限于转换的幺正电路复杂度。
-$$\Psi_f^{(comp)}(L_0^A \to L_0^B) \geq \lambda \cdot \min\{C(U) \mid U|L_0^A\rangle \approx |L_0^B\rangle\}$$
-其中 $C(U)$ 是最小量子门电路深度，$\lambda > 0$ 是复杂度-摩擦耦合常数。
-* **Source**: 灵感来自 Henry Yuen 的全量子复杂性理论，该理论确立了 Uhlmann 变换作为纯量子态转换的规范硬度基准。
-* **Implication**: $L_0$ 不是无结构的混沌池，而是拥有严格的度量几何。状态演化的物理阻力源于量子态之间不可约的“Uhlmann变换代价”。这桥接了计算机科学中的电路复杂度下界与热力学中的不可逆阻力。
-* **Cross-ref**: Eq-Force-01 (热力学 $\Psi_f$)；Ax-Int-2 (Penrose 门槛)。
+### Eq-Friction-Comp: 计算摩擦桥接候选 (Computational Friction Bridge Candidate)
+
+> **Status**: physics / quantum-state-space bridge candidate（P3/P4）。本式只在独立声明的 quantum / computational / model state space 中成立，不是关于 primitive `L_0` 的 formal implication。
+
+对该模型中的端点态 $|A_M\rangle$ 与 $|B_M\rangle$，可提出局部 bridge inequality：
+
+$$\Psi_f^{(comp,M)}(A_M \to B_M) \geq \lambda_M \cdot \min\{C_M(U) \mid U|A_M\rangle \approx |B_M\rangle\}$$
+
+其中 $C_M(U)$ 是声明电路模型中的 quantum-gate complexity，$\lambda_M > 0$ 是该模型的 complexity–friction coupling。$A_M$、$B_M$、$C_M$ 与 $\lambda_M$ 均为局部模型记号，不新增 canonical symbols。
+
+* **Source**: 该候选受 quantum circuit complexity / Uhlmann-transformation cost 研究启发；来源相似性不证明其 `\Psi_f` 映射或下界在任意物理域成立。
+* **Boundary**: $|A_M\rangle$ 与 $|B_M\rangle$ 默认不是 primitive `L_0` states。局部 quantum / computational metric geometry 不推出 primitive `L_0` 是 Hilbert / state manifold 或具有 universal metric geometry；circuit complexity 也不提供 primitive Selection direction、value 或 order。
+* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md`（$\Psi_f$ owner）；Eq-Force-01（条件性 reference-mismatch proxy）；Ax-Int-2（Penrose 门槛）。
 
 ### Eq-Select-Thermo: 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics)
 **Formal Definition**: 宏观秩序增长率受到选择功率减去摩擦代价与噪声熵的上限约束。
@@ -6891,9 +6904,9 @@ EX-A 后，A2 处理的是显现后的锚定持续，A11 处理本体论脆弱�
 
 #### §X.2 Computational Friction as Lower Bound (作为下界的计算摩擦)
 
-计算本体论摩擦 (Eq-Friction-Comp) 揭示了深刻的内涵：改变现实的阻力不仅源于热力学，还源于**计算的不可约性**。当算子 $\hat{G}_\theta$ 试图从一个潜在构型 $L_0^A$ 转移到另一个 $L_0^B$ 时，它必须克服的最小摩擦受限于所需幺正变换的电路复杂度下界。
+Eq-Friction-Comp 是一个 physics / quantum-state-space bridge candidate：在独立声明的量子／计算状态空间与电路模型中，从 $|A_M\rangle$ 转到 $|B_M\rangle$ 的候选摩擦下界可由所需幺正变换的电路复杂度约束。这里的端点、metric 与 complexity 都是模型对象，不是 primitive `L_0` 状态或几何。
 
-这意味着宇宙自身的“计算预算”限制了哪些现实是可达的。黑洞的霍金辐射之所以在计算上难以解码，并不是因为我们缺乏技术，而是因为 Uhlmann 变换代价代表了本体论摩擦的一个不可约下界——作为选择者的宇宙拥有最大的带宽，而黑洞使其饱和。
+在具体量子模型中，这类 complexity lower bound 可以作为可达转换成本的局部 bridge hypothesis。它不证明宇宙是选择者、不把 quantum Hilbert structure 提升为 `L_0` ontology，也不把黑洞解码困难直接等同于 canonical `\Psi_f`；这些映射若要成立，仍需独立的物理模型与证据。
 
 #### §X.3 The Protocol Layer (协议层)
 
@@ -7015,9 +7028,9 @@ $$
    $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
    含义：现实状态 $\sigma$ 的演化由选择算子 $\hat{G}_\theta$ 的投影、自由能梯度下降 $\nabla F$ 以及注意调制 $A$ 三者合成驱动。这是 SRT 动力学的第一性方程。
 
-2. **Ontological Friction (Eq-Force-01)**:
-   $$\Psi_f \propto \int (L_1 - L_0^{natural})^2 \, dt$$
-   含义：本体论摩擦 $\Psi_f$ 度量 $L_1$ 被选择态偏离 $L_0$ 自然轨迹的累积阻力代价。
+2. **Conditional Reference-Trajectory Friction Proxy (Eq-Force-01)**:
+   $$\Psi_f^{(ref,M)} \propto \int \mathcal{D}_M\!\bigl(L_1(t), r_M(t)\bigr) \, dt$$
+   含义：只有在模型 $M$ 已独立声明 reference trajectory $r_M$ 与 compatible mismatch functional $\mathcal D_M$ 时，本式才给出一个累积 mismatch / friction proxy；它不是 canonical `\Psi_f` 定义，也不建立 primitive `L_0` natural direction。无该声明时 Eq-Force-01 不准入。
 
 3. **Constitutional Inequality (Eq-Select-Thermo)**:
    $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
@@ -7033,7 +7046,7 @@ SRT 主方程的运作机制如下：
 
 - **选择算子 $\hat{G}_\theta$ 的角色**：$\hat{G}_\theta$ 将潜在域 $L_0$ 的可能性空间投影到被选择的现实 $L_1$，受协议层 $\Pi$（可行转移核）约束。$\theta$ 参数编码了具身历史（感知阈值、信念网络、创伤印记），决定了选择的偏置方向。$\hat{G}_\theta$ 在快变量 $\sigma$ 上实施即时选择（Eq-Evo-01），同时其参数 $\theta$ 作为慢变量在学习、摩擦梯度与稳态回弹三力下缓慢演化（Eq-Evo-02）。
 
-- **摩擦 $\Psi_f$ 的双重功能**：$\Psi_f$ 既是选择的代价度量（偏离自然轨迹的阻力），也是系统稳定性的信号源。痛苦风险可由 `Ψ_f`-related proxy 的时间导数建模（Eq-Pain-01），即某些摩擦变化率信号，而非静态误差；不得读成 canonical pain/suffering 定义。$\Psi_f$ 还拥有计算下界（Eq-Friction-Comp），由量子电路复杂度给出，确保 $L_0$ 状态转换具有不可约的物理阻力。
+- **摩擦 $\Psi_f$ 的条件性形式接口**：canonical `\Psi_f` 语义仍由 `_SRT_PSI_F_CANONICAL.md` 掌握。Eq-Force-01 只在 declared reference trajectory / mismatch functional 下提供模型内累积 mismatch proxy；低 friction 不验证方向、健康或正当性。痛苦风险可由 `Ψ_f`-related proxy 的时间导数建模（Eq-Pain-01），而非由静态误差定义。Eq-Friction-Comp 另是量子／计算状态空间中的局部 bridge inequality；其 circuit-complexity 下界不证明 primitive `L_0` 具有状态空间、Hilbert 或 metric geometry。
 
 - **d-value 与选择开放性**：d-value 作为选择考量范围的度量，调控 $\hat{G}_\theta$ 的选择带宽。高 $d$ 意味着更开放的 $L_0$ 采样，对应更丰富的经验分化与更高的拓扑秩序参数 $q_{topo}$（Section VII）；低 $d$ 则趋向封闭式语法同构（如恒温器），此时 $\Psi_f \approx 0$。
 

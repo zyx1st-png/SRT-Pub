@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-15
-source_commit: fadbf819
+source_commit: f881923c
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: c12607536210a3e2
+inputs_digest: e5ad002b6116e942
 ---
 
 # SRT 灵性领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: c12607536210a3e2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-15 |
-| 来源 commit | `fadbf819` |
+| 来源 commit | `f881923c` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
