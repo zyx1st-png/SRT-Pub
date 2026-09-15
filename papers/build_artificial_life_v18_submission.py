@@ -8,6 +8,7 @@ SRC = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_candidate.md"
 OUT = PAPERS / "CostlySelectiveClosure_v18_ArtificialLife_submission.md"
 DESIGN_FIGURE = "costly_selective_closure_supplement/figures/figure1_design_v17.svg"
 EVIDENCE_FIGURE = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v18.svg"
+E1_SENSITIVITY_AUDIT = "costly_selective_closure_supplement/audit_e1_paired_sensitivity.py"
 EVIDENCE_FIRST_TITLE = (
     "# Failure Is Not One-Dimensional: Terminality, Persistent Damage, "
     "and Recovery Architecture in Artificial Agents"
@@ -55,8 +56,15 @@ def validate(text: str) -> None:
         "**Keywords**:",
         DESIGN_FIGURE,
         EVIDENCE_FIGURE,
+        E1_SENSITIVITY_AUDIT,
         "**Experiment 1 was not preregistered**",
         "timestamped repository preregistrations",
+        "two-sample label-permutation test",
+        "paired sign-flip sensitivity analysis",
+        "post-hoc statistical sensitivity",
+        "p = 0.0000499975",
+        "24 of 30 paired differences are positive",
+        "25 of 30 paired differences positive",
         "rho = +0.0548074683",
         "rho = -0.7037203560",
     ]
@@ -76,10 +84,15 @@ def validate(text: str) -> None:
         "most important next experiment is also clear",
         "# Costly Selective Closure: Terminal Failure, Persistent Damage, and Recovery Architecture in Artificial Agents",
         "Terminal failure strongly stabilizes costly cooperation relative to cheap restoration",
+        "two-sided paired sign-flip permutation test at the 20,000-resample resolution floor",
+        "The paired difference is approximately `0.511`, with the two-sided paired sign-flip",
     ]
     for item in forbidden:
         if item in text:
             raise RuntimeError(f"v18 submission contains superseded/internal residue: {item}")
+
+    if not (PAPERS / E1_SENSITIVITY_AUDIT).is_file():
+        raise RuntimeError("v18 E1 sensitivity audit script is missing")
 
     keyword_line = next(
         (line for line in text.splitlines() if line.startswith("**Keywords**:")), None
