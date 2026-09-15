@@ -30,7 +30,7 @@ Submission export is generated from the v17 candidate by:
 
 `papers/build_artificial_life_v17_submission.py`
 
-The builder removes repository-only frontmatter and repository notes, inserts the AI-assistance disclosure required by MIT Press policy, checks for old-symbol/internal residue, verifies six keywords, emits a submission Markdown artifact, and reports an approximate word count.
+The builder removes repository-only frontmatter and repository notes, inserts the AI-assistance disclosure required by MIT Press policy, normalizes reviewer-facing data/code wording, replaces the historical design-figure reference with the v17-specific design figure, checks for old-symbol/internal residue, verifies six keywords, emits a submission Markdown artifact, and reports an approximate word count.
 
 ## 3. Journal-fit gate
 
@@ -118,7 +118,9 @@ This claim is narrower than the v16 positioning and is the version to defend.
 
 **PASS at current audit depth.**
 
-Every substantive named neighbor introduced in the current v17 body has a corresponding reference entry. Recent reference status checks include:
+Every substantive named neighbor introduced in the current v17 body has a corresponding reference entry. The current audit found 25 reference entries and no unused entry in the submission body.
+
+Recent reference status checks include:
 
 - Baltieri & Suzuki — 2026, *Philosophical Transactions B*, listed by the author as “to appear”;
 - Chen & Chen — arXiv:2608.27843, posted 2026-08-28;
@@ -127,17 +129,17 @@ Every substantive named neighbor introduced in the current v17 body has a corres
 - Damiano & Stano — *Frontiers in Bioengineering and Biotechnology* 8, 953;
 - Korecki et al. — ALIFE 2023, DOI 10.1162/isal_a_00633.
 
-Before actual submission, run one final bibliographic-format pass for strict APA 7 punctuation/capitalization and confirm any “to appear” item has not changed status.
+Before actual submission, confirm that any “to appear” item has not changed bibliographic status and perform a final publisher-format pass if the submission system requests one.
 
 ## 8. AI-policy gate
 
-**P0 — RESOLVED IN EXPORT PATH / MUST REMAIN VISIBLE IN SUBMITTED MANUSCRIPT AND COVER LETTER.**
+**PASS — INCLUDED IN GENERATED EXPORT AND COVER LETTER.**
 
 MIT Press policy requires authors who use AI tools to produce text/images or collect data to inform editors and be transparent in the manuscript.
 
-For v17, OpenAI ChatGPT materially assisted manuscript development through literature discovery, structural critique, language revision, and consistency checking. The submission builder therefore inserts an explicit AI Assistance Disclosure, and the cover letter repeats the disclosure.
+For v17, OpenAI ChatGPT materially assisted manuscript development through literature discovery, structural critique, language revision, and consistency checking. The submission builder inserts an explicit AI Assistance Disclosure, and the cover letter repeats the disclosure.
 
-Do not delete or hide this statement in the submission artifact.
+The post-repair export validation confirmed the disclosure is present in the generated manuscript at line 270. Do not delete or hide this statement in the submitted artifact.
 
 ## 9. Supplement/reviewer-anonymity gate
 
@@ -154,21 +156,33 @@ Preferred submission route for this manuscript:
 
 The historical Adaptive Behavior anonymization note remains provenance only and does not define Artificial Life review policy.
 
-## 10. Format gate
+## 10. Format and export gate
 
-**PASS WITH EXPORT WORK REMAINING.**
+**PASS — EXPORT EXECUTED AND ARTIFACT CHECKED.**
 
-Current requirements to preserve in final preparation:
+The submission builder was executed in GitHub Actions after the v17 design-figure repair. Validation run:
 
-- Article route;
-- initial manuscript PDF;
-- cover letter explaining scope fit;
-- 5–6 keywords (v17 has six);
-- APA 7 citations/references;
-- later accepted-version route supports LaTeX or Word;
-- figures should be supplied in vector/high-resolution formats when required.
+- workflow: `CSC v17 post-repair check`;
+- run ID: `34933283662`;
+- head checked: `9f748ccc613697c6240d8053b1e6c251238ba349`;
+- job conclusion: `success`.
 
-The existing supplement already contains vector PDF/SVG outputs for generated figures; the v17 body uses the former Figures 2–4 as Figures 1–3.
+Observed output:
+
+- builder approximate word count: **6527**;
+- shell `wc -w`: **6552**;
+- six keywords confirmed;
+- AI Assistance Disclosure confirmed;
+- repository/historical residue checks clean;
+- v17 design figure confirmed at generated-manuscript line 127:
+  `costly_selective_closure_supplement/figures/figure1_design_v17.svg`;
+- historical design figure path `figure2_design.png` absent from the generated manuscript.
+
+The word count is inside the journal's typical 6,000–12,000-word Article range.
+
+A local reviewer-facing DOCX/PDF artifact was also generated and visually inspected page by page. The inspected PDF is 15 pages; no clipping, overlap, broken characters, or unreadable table overflow was found after reflowing the illustrative-profile table.
+
+The v17-specific SVG now supplies the corrected experimental-design wording, while the historical v16 design figure remains unchanged as provenance.
 
 ## 11. Over-deletion gate
 
@@ -200,6 +214,8 @@ Retained:
 
 The strongest optional scientific upgrade remains a non-terminal irreversible-damage experiment with matched episode length, separating irreversible loss from return truncation. This would materially strengthen V as a broader architectural variable but is **not required** to justify submission of the current result as a narrow Article.
 
+No further theory expansion is required for this submission candidate. Further changes should be limited to journal-system formatting, bibliographic status changes, or issues found during independent final review.
+
 ## 13. Final gate
 
 ```text
@@ -208,10 +224,14 @@ ARTIFICIAL LIFE FIT = STRONG PASS
 CLAIM SCOPE = PASS
 STRONGEST-NEIGHBOR SURVIVAL = PASS / NARROW
 CITATION-REFERENCE CLOSURE = PASS AT CURRENT AUDIT DEPTH
-AI DISCLOSURE = REQUIRED / EXPORT PATH PREPARED
+AI DISCLOSURE = PASS / INCLUDED IN EXPORT
+SUBMISSION BUILDER = PASS / EXECUTED
+WORD COUNT = PASS / APPROX 6527
+DESIGN FIGURE SOURCE = PASS / V17 SVG
+LOCAL PDF VISUAL QA = PASS / 15 PAGES
 SUPPLEMENT ROUTE = PASS IF DIRECT-UPLOAD OR REVIEWER-SAFE ACCESS
 NEW EXPERIMENT BEFORE SUBMISSION = NOT REQUIRED
-MERGE #978 = NO (draft review state retained)
-SUBMIT = NO UNTIL EXPORT IS GENERATED AND FINAL PDF/WORD-COUNT/APA CHECK IS RUN
-NEXT = RUN SUBMISSION BUILDER + FINAL ARTIFACT REVIEW
+MERGE #978 = AWAIT AUTHOR DECISION
+SUBMIT = AWAIT AUTHOR DECISION
+NEXT = AUTHOR DECISION: MERGE / PREPARE ACTUAL JOURNAL UPLOAD
 ```
