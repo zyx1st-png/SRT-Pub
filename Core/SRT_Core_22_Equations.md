@@ -36,11 +36,11 @@ dependency: [SRT-CORE-21]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-- 本方程层默认假定 P0-04 所需的 admissible selection operator 已给定；它不推出 selectability 的起源。
+- 本方程层只在已准入的 formed / model realization 内，假定一个可用的 formal role-carrier `\hat{G}_\theta` 已给定。这不表示 primitive Selection 由该算子生成或与其同一，也不推出 selectability 的起源。
 - `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
 - **Wave-D2 authority truth-up（2026-09-15）**：当前 symbol / claim typing 覆盖较早的方程解释。本文件中的 `\kappa_0` 不因注册或从 O0 / Selection 继承而成为 primitive；当它进入方程时，只能表示独立声明的 curvature / anisotropy / per-direction-cost realization parameter。本文件中没有任何方程可以用 `\kappa_0` 提供 universal value / order direction。
-- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于 `L_0 -> L_1` 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程。
+- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于已声明模型中 analytic `L_0 -> L_1` interface 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程，也不反向定义 primitive Selection。
 - **`σ_{sr}` projection scope (S+R truth-up, 2026-08-29)**：本文件只继承 `Core_Law/SRT_Individuation.md §八` 已有地位——`σ_{sr}` 是 P2、规约性的、可被等价形式替换的阶参解释。`T-PROJ-1` / `T-PROJ-1^{coll}` 在给定 `\mathcal F_\sigma` / `\mathcal F_\sigma^{coll}` 后证明条件性投影闭合；它们不把当前 bare-norm 坐标提升为表示不变的自然量，不证明 trace/ext 归属唯一，也不把其数值等同于因果控制或自然相边界。单体与集体同名 `σ` 也不自动意味着相同的 trace 语义；集体 owner 另含 declared-boundary 下 shared `L_2` 的内生性重分类。
 # Part A: Formal Axioms (形式化公理)
 
@@ -48,10 +48,13 @@ dependency: [SRT-CORE-21]
 ## 0-B. Protocol and Foundation (协议与基础)
 
 ### Def-Protocol-1: Protocol Layer Π (协议层 Π)
-**Formal Definition**: 约束 $\hat{G}_\theta$ 选择空间的容许转移核集合：
-$$\hat{G}_\theta : (L_0, \Pi) \to L_1$$
-其中 $\Pi$ 是从 $L_0$ 到 $L_1$ 的可行转移集 / 约束核。
-* **Implication**: 物理模型中的“简单局部规则”属于 $\Pi$，其本身是一个收敛的 $L_2$-约束（由高阶相互作用/选择固化而来），而不是“无条件的背景”。这是 SRT 抵御自下而上物理主义还原的最强界面：**涌现仅发生在被选择的 $\Pi$ 内部。**
+> **Status**: conditional formed / model transition interface。它不是 primitive ontology 的生成图。
+
+**Formal Definition**: 给定一个已准入的 formed / model selection process $M$，协议约束该模型内可容许的状态更新：
+$$\sigma' = \hat{G}_{\theta,M}[\sigma;\Pi_M]$$
+其中 $\Pi_M$ 是现有 $\Pi$ 在声明模型 $M$ 中的转移 / realization constraint interface；$M$ 下标只标记局部作用域，不新增 canonical symbol。
+* **Boundary**: $\hat{G}_{\theta,M}$ 是已形成动力学的 formal role-carrier，不生成 primitive Selection。本式也不把 `L_0 / L_1` 建立成两个 primitive ontic containers，不把 Selection 定义为从预存可能性仓库到现实的算子投影。
+* **Implication**: 物理模型中的简单局部规则可编入 $\Pi_M$ 作为模型约束。Def-Protocol-1 本身不裁定这些规则的本体起源，也不把所有局部物理规则自动归为宇宙尺度的 $L_2$ 产物；更强的历史沉积读法须由具名 owner 另行建立。
 * **Cross-ref**: Ax-Core-A5 (规范闭包)；T-Core-02 ($L_2$ 作为不动点)。
 
 ### Def-Protocol-2: Absolute-vs-Relative Constraint Split（新增）
@@ -65,11 +68,10 @@ $$\hat{G}_\theta : (L_0, \Pi) \to L_1$$
 
 ### Def-Protocol-3: Methodological Closure Guard（方法论闭包护栏，新增）
 \[
-\mathcal{M}_{empirical}: (L_1,L_{2,\theta})\to \text{validated regularities}
+\mathcal{M}_{empirical}: (L_1,L_{2,\theta})_M\to \text{validated regularities}_M
 \]
-其中 \(\mathcal{M}_{empirical}\) 是实验方法对可观测层的闭包映射。
-* **Implication**：\(\mathcal{M}_{empirical}\) 的成功仅证明 \(L_1\!-
-L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omega\) 逻辑层的本体论否定。
+其中 \(\mathcal{M}_{empirical}\) 表示实验方法对模型 $M$ 内已声明可观测变量与历史稳定变量的闭包；此处 `L_1 / L_{2,\theta}` 只是这些模型变量的 analytic / model-facing labels。
+* **Implication**：\(\mathcal{M}_{empirical}\) 的成功仅证明该声明模型内规律可复现；它不由此裁定 primitive Selection 的形而上地位，也不把 `L_0` 实体化为隐藏 inventory，或恢复一个独立 primordial `\Omega` owner / logical substance。
 
 ## 0-C. Multi-Operator Coupled Equations（多算子耦合方程）
 
@@ -164,7 +166,7 @@ a_i(\theta,L_2)^n
 }
 $$
 
-This is an implementation-level normalization proxy for embodied `Ĝθ`: it models candidate activation, competition, and response compression. It does not define the Ghost Operator in full; canonical `Ĝθ` remains the abstract `L_0 -> L_1` selection operator.
+This is an implementation-level normalization proxy for embodied `Ĝθ`: it models candidate activation, competition, and response compression. It does not define primitive Selection. Here `Ĝθ` remains a formal / formed / model-level role-carrier for a declared Selection realization; an `L_0 -> L_1` form is analytic interface notation, not a metaphysical source-to-product map.
 
 ### Eq-Bridge-L2-01: L2 Path-Trace Writeback
 
@@ -198,7 +200,7 @@ L_1'
 }
 $$
 
-This bridge-level loop reads `L_0 -> L_1` as the information-geometric frontier, `L_1 -> L_2` as complex-systems sedimentation, and `L_2 -> L_1` as constraint feedback into future selection. It does not replace core ontology.
+This bridge-level loop reads a declared model's analytic `L_0 -> L_1` interface as an information-geometric frontier, `L_1 -> L_2` as complex-systems sedimentation, and `L_2 -> L_1` as constraint feedback into later state updates. Its arrows describe a formed / realization model: they neither sample a primitive `L_0` inventory nor produce primitive Selection, and they do not replace core ontology.
 
 ### Boundary Notes
 
@@ -226,7 +228,7 @@ $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(
 
 **$\kappa_0$ 的角色边界**：在该模型内，$\kappa_0$ 只进入每方向成本项。它不选择、排序、赋值或合法化方向，不导致 first Selection，也不建立 primitive non-flatness。
 
-**Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是 `L_0 -> L_1` selection frontier 上的 Fisher-capacity proxy；它给出可分辨方向上限，不自动给出 stake-coupled canonical `d`。只有满足 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling / consequence-writeback 条件时，才可作为 `d` 的近似读数。
+**Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是已声明模型中 analytic `L_0 -> L_1` interface 上的 Fisher-capacity proxy；它给出可分辨方向上限，不把 `L_0` 读为预存状态仓库，也不自动给出 stake-coupled canonical `d`。只有满足 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling / consequence-writeback 条件时，才可作为 `d` 的近似读数。
 
 **两个瓶颈的失效形态**：
 
@@ -380,9 +382,11 @@ $$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\
 ## I. Evolution Dynamics (演化动力学)
 
 ### Eq-Evo-01: Ghost Evolution Equation
-**Formal Definition**: The trajectory of a selected state is the sum of selection, free-energy descent, and attention modulation.
+> **Status**: formed / model dynamics equation for an admitted realized system. It does not define primitive Selection or the metaphysical production of actuality.
+
+**Formal Definition**: Within that declared realization, the trajectory of a selected model state is represented by the sum of a formal Selection role-carrier, free-energy descent, and attention modulation.
 $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
-* **Implication**: 现实演化是选择、能量下降与注意调制的合成动力学。
+* **Implication**: 在该已准入模型中，状态更新由 formed `\hat{G}_\theta` role-carrier、能量下降与注意调制合成表示。`\hat{G}_\theta` 项不从 primitive `L_0` 制造 actuality；方程级动力学位于 ontology admission 之后。
 * **L1 Projection (T-PROJ-1, 2026-04-25 H5; Wave D2 scope note 2026-09-15)**: 本主方程在 stable ISP P 上只对已独立准入的标量泛函给出条件性模型投影。含 `T_{dir}` 的四变量版本要求 independently typed declared direction、`T_dir` admission 与 C1-C4；无 direction 时省略该分支并分析已声明的 non-`T_dir` subsystem，不把 `T_{dir}` 置零。详见 `Core_Law/SRT_L1_Formalism.md §6 T-PROJ-1`。本节不生成、排序或验证方向。σ 为状态场，与 `σ_{sr}` 是不同对象；C1-C4 也不证明 trace/ext 分解唯一、bare norm 跨等价参数表示不变、`σ_{sr}` 等于因果控制份额，或 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
 
 ### Eq-Evo-01b: Metabolic Gain Modulation
@@ -406,8 +410,8 @@ $$\frac{d\theta}{dt} = \underbrace{\gamma \cdot A[\sigma, \text{Target}]}_{\text
 
 * **Implication**: 具身参数在三力之间调整——学习推动适应，摩擦梯度约束漂移，稳态反作用力维持平衡。
 
-* **推论（戒断机制 / Withdrawal Mechanism）** [H]：当外部 $\text{Input}_{L_1}$ 突然归零时，第三项的负反馈瞬间失效，但 $\theta$ 具有迟滞性（Hysteresis）。残留的 $\theta^{-}$ 偏置直接作用于 $L_0$，导致 $\hat{G}_\theta$ 生成"反向体验"（痛苦/焦虑）。
-  - **因果路径精确化**：$\theta^-$（残留参数偏置）→ $\hat{G}_{\theta^-}$ 的L₀选择偏向"缺失输入的预期态"→ 实际L₁输入（= 0）与预期之间的Ψ_f差距极大→ 体验为强烈的剥夺性痛苦/焦虑（高Ψ_f的主观对应）。这是戒断反应的SRT物理本质。
+* **推论（戒断机制 / Withdrawal Mechanism）** [H]：当外部 $\text{Input}_{L_1}$ 突然归零时，第三项的负反馈瞬间失效，但 $\theta$ 具有迟滞性（Hysteresis）。在该戒断模型中，残留的 $\theta^{-}$ 偏置改变 formed $\hat{G}_\theta$ role-carrier 的局部更新偏向，可形成"反向体验"的候选模型；它不是对 primitive `L_0` 的直接作用。
+  - **因果路径精确化**：$\theta^-$（残留参数偏置）→ $\hat{G}_{\theta^-}$ 对"缺失输入的预期态"产生模型内更新偏向→ 实际 L₁ 输入（= 0）与预期之间的 `\Psi_f`-related mismatch proxy 增大→ 形成强烈剥夺性痛苦/焦虑的候选说明。这是可证伪的域内机制假说，不是 primitive ontology 结论。
   - **预测**：戒断症状强度 ∝ $|\theta^-|$（θ残留偏置量），可通过行为/生理戒断反应严重程度与baseline L₁刺激强度的相关来验证。
 
 **证伪条件**：① 若具有明显θ迟滞（如长期用药后突然停药）的个体戒断症状强度与 $|\theta^-|$ 无相关，则戒断机制推论失效；② 若第二项（摩擦梯度）在实验中被操纵（改变L₂势能景观刚性）不影响 $d\theta/dt$ 的漂移约束，则Φ(θ)的有效性需重新评估。
@@ -679,7 +683,7 @@ Eq-Friction-Comp 是一个 physics / quantum-state-space bridge candidate：在�
 
 #### §X.3 The Protocol Layer (协议层)
 
-$\Pi$ 的引入解决了 SRT 中一个长期存在的歧义：物理定律“居于”何处？它们既不是外部强加的，也不是任意的约定。$\Pi$ 将其形式化为**可行转移核 (feasible transition kernel)**——选择博弈中允许的移动集合。至关重要的是，$\Pi$ 本身也是一个 $L_2$ 产物：它是通过宇宙尺度的迭代被选择和固化下来的。这意味着物理规则并未超出 SRT 的范围，而是其最古老且最坚固的 $L_2$ 结构之一——所有后续选择都必须服从的协议。
+$\Pi$ 的方程层功能是解决一个有界模型问题：在一个已准入的 formed / realization process 中，哪些状态更新可被当作可行转移？因此 $\Pi_M$ 可在具名模型 $M$ 中表示 **feasible transition kernel / admissibility constraint**。Def-Protocol-1 不因此裁定物理规则的本体起源：某些域内约束可被独立建模为历史沉积的 $L_2$ 结果，某些则可在该模型中当作 $\Pi_{abs}$ 下限；但本节不把所有局部物理规则自动声称为宇宙迭代固化的 $L_2$ 产物。
 
 
 ### Eq-Frame-01: Frame-First Normalization
@@ -693,7 +697,7 @@ $$
 $$
 \mathcal{O} = g\big(L_1\mid L_0,\hat{G}_\theta,\mathcal{F}_{spacetime}\big)
 $$
-其中“全状态空间”外部记号（如 \(\Omega\), \(S\)）在 SRT 写入统一映射为 \(L_0\)。
+此式只是声明 frame / apparatus 后的 model-facing reparameterization。外部理论的“全状态空间”记号（如 \(\Omega\), \(S\)）不自动等同或统一映射为 \(L_0\)；若一个具名 bridge 保留 \(L_0\) 坐标，它只标记该表示中 open / non-preclosed 的 analytic aspect，而状态空间结构归属于外部模型本身。
 
 
 ## 参数注册表（Parameter Registry, v2）
@@ -795,7 +799,7 @@ $$
 
 1. **Ghost Evolution Equation (Eq-Evo-01)**:
    $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
-   含义：现实状态 $\sigma$ 的演化由选择算子 $\hat{G}_\theta$ 的投影、自由能梯度下降 $\nabla F$ 以及注意调制 $A$ 三者合成驱动。这是 SRT 动力学的第一性方程。
+   含义：在一个已准入的 formed / realization model 内，状态 $\sigma$ 的更新由 formal `\hat{G}_\theta` role-carrier、自由能梯度下降 $\nabla F$ 与注意调制 $A$ 合成表示。本式是 equation-layer 的 formed / model dynamics equation，不是 primitive Selection 的第一性本体定义；$\hat{G}_\theta$ 项不从 primitive `L_0` 制造 actuality。
 
 2. **Conditional Reference-Trajectory Friction Proxy (Eq-Force-01)**:
    $$\Psi_f^{(ref,M)} \propto \int \mathcal{D}_M\!\bigl(L_1(t), r_M(t)\bigr) \, dt$$
@@ -813,11 +817,11 @@ $$
 
 SRT 主方程的运作机制如下：
 
-- **选择算子 $\hat{G}_\theta$ 的角色**：$\hat{G}_\theta$ 将潜在域 $L_0$ 的可能性空间投影到被选择的现实 $L_1$，受协议层 $\Pi$（可行转移核）约束。$\theta$ 参数编码了具身历史（感知阈值、信念网络、创伤印记），决定了选择的偏置方向。$\hat{G}_\theta$ 在快变量 $\sigma$ 上实施即时选择（Eq-Evo-01），同时其参数 $\theta$ 作为慢变量在学习、摩擦梯度与稳态回弹三力下缓慢演化（Eq-Evo-02）。
+- **选择算子 $\hat{G}_\theta$ 的角色**：$\hat{G}_\theta$ 是 formed / model operator representation；它描述一个已准入的 Selection organization 如何在 $\Pi_M$ 与具身 / 历史参数 $\theta$ 下更新或实现模型状态。primitive Selection $\neq \hat{G}_\theta$；该算子不从一个独立 `L_0` 容器抽取或投影 actuality。$\theta$ 可编码模型内的感知阈值、信念网络与创伤印记，从而影响局部更新偏向，但不提供 universal primitive direction。$\hat{G}_\theta$ 在 Eq-Evo-01 中是快状态更新的 role-carrier，而 $\theta$ 在 Eq-Evo-02 中作为慢变量演化。
 
 - **摩擦 $\Psi_f$ 的条件性形式接口**：canonical `\Psi_f` 语义仍由 `_SRT_PSI_F_CANONICAL.md` 掌握。Eq-Force-01 只在 declared reference trajectory / mismatch functional 下提供模型内累积 mismatch proxy；低 friction 不验证方向、健康或正当性。痛苦风险可由 `Ψ_f`-related proxy 的时间导数建模（Eq-Pain-01），而非由静态误差定义。Eq-Friction-Comp 另是量子／计算状态空间中的局部 bridge inequality；其 circuit-complexity 下界不证明 primitive `L_0` 具有状态空间、Hilbert 或 metric geometry。
 
-- **d-value 与选择开放性**：d-value 作为选择考量范围的度量，调控 $\hat{G}_\theta$ 的选择带宽。高 $d$ 意味着更开放的 $L_0$ 采样，对应更丰富的经验分化与更高的拓扑秩序参数 $q_{topo}$（Section VII）；低 $d$ 则趋向封闭式语法同构（如恒温器），此时 $\Psi_f \approx 0$。
+- **d-value 与形成系统的考量范围**：canonical `d` 按 `_SRT_D_VALUE_CANONICAL.md` 表示 stake-coupled consideration / irreversible-risk sensitivity 的摘要，不度量对 primitive `L_0` 仓库的 sampling breadth。只在 stake-coupling、consequence return 与 proxy regime 已声明时，较高或较低 `d` 才可以约束 formed-system 内的考量 / revision / access / effective participation 广度；它不自动推出更高 $q_{topo}$ 或生成健康。当前也没有 universal low-`d` $\to \Psi_f \approx 0$ law；任何 `d`--`\Psi_f` 关系都必须保持 model / domain / bridge scoped 并回链两者 owner。
 
 - **快-慢耦合与相变**：$\sigma$（快）与 $\theta$（慢）构成耦合动力系统（Eq-Evo-03），在宪法不等式（Eq-Select-Thermo）的约束下运行。当选择功率低于摩擦加噪声阈值时，系统发生秩序崩溃（相变），表现为范式转移或存在性危机。
 
