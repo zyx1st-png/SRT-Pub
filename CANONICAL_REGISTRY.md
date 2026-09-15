@@ -17,6 +17,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - canonical 文件优先短、稳、少歧义
 - 长文负责展开、推导、接口批次与历史沉积
 - split 文件负责导航，不替代 canonical 定义
+- 本页是 router：它压缩并指向当前 owner，不以注册或摘要创建第二份定义 authority
 
 ## 0. 定位说明（Epistemic Note）
 
@@ -37,7 +38,8 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
 - layer：L0-L1 / epistemic：os / status：active / version：v1 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
-- 当前 trunk：`non-flat / non-neutral openness -> finite-position-indexed subjectless Selection (= actual differentiation = manifestation / relative backgrounding = primitive verticality as same-event structural reading) --[regenerative formation]--> One`。Universal formation route stops at One；formed `Selection-position` 仅作为 continuing One 的 operative co-aspect，不是第二 universal endpoint。
+- 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
+- 分层护栏：primitive Selection 在规范上无内容；existence 是 Selection under determinate actuality；history 只在 prior Selection 的效力被保留并建立时进入路由。`L_0 / L_1 / L_2` 是 analytic / model-facing aspects，不是三种 ontic substances；primitive Selection 不等于 formed `\hat{G}`。Normativity routes 需分别定型，O2-M 保持 OPEN。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
 - typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
@@ -57,10 +59,10 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 3. T_dir（方向透明度）与价值遮蔽
 - 主锚点：`_SRT_T_DIR_CANONICAL.md`
-- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述；它尚不是 theory-canonical 形式基础
+- 说明（Part I §1-§10）：`T_dir` 是 formed system / relation / model 相对于 independently typed、declared direction signal 的 self-readability / reorientation v0 operational proxy；它尚不是 theory-canonical 形式基础。无 declared direction 时，该 claim 中的 `T_dir` 不准入／未定义；`T_dir > 0` 不建立 good、legitimacy、generative health 或 O2-M。
 - 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）；这些段落按 bridge / theory-clarifying 读，不因文件名而升级为 core theorem
 - 引用规则：涉及方向透明度、意义感/虚无感的 SRT 机制解释、致命 L₂、价值遮蔽、三层价值结构、价值归纳、吸引子动力学时优先回链本文件
-- 与 d-value 的关系：d 是 T_dir 的必要条件；两者独立，不互相替代
+- 与 d-value 的关系：d / T_dir 的精确必要性或充分性在 owner 未独立建立时只能按 model / bridge scope 读；两者独立，不互相替代。Wave D2 仍需独立复审将该关系当作 universal law 的旧公式 consumer。
 
 ### 4. Core Axioms
 - 主锚点：`Core/SRT_Core_21_Formal_Axioms.md`
@@ -77,7 +79,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 ### 4b. Core Equations
 - 主锚点：`Core/SRT_Core_22_Equations.md`
 - 说明：主动力学方程、热力学与稳定性方程主入口
-- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件
+- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件；但局部方程语义仍从属于当前 symbol / owner typing，不得以旧 `κ_0` 或 `T_dir` 公式反向恢复 primitive authority。Wave D2 将独立复审这些 consumer，D1 不预判其余方程。
 
 ### 4c. Core Open Tensions
 - 主文件：`Core/SRT_OPEN_TENSIONS.md`
@@ -86,7 +88,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 4d. Cross-Domain Usage Matrix
 - 主文件：`_SRT_CROSS_DOMAIN_MATRIX.md`
-- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵是 governance-canonical usage layer，不新增 theory-canonical 定义
+- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵只汇总当前 owner-approved usage，不能因重复注册而把 `ε_pg`、`κ_0`、T_dir direction 或 domain proxy 升格为 primitive / theory-canonical 定义
 - 引用规则：跨域使用上述概念时，先检查 canonical 用法、allowed projection 与 forbidden shortcut
 
 ## B. 规范辅助层（Canonical Support）
@@ -106,7 +108,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
-- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A Gate 0 是唯一 admission / type authority**。当前结果只压缩为：`κ_0 / ε_pg / B-count` ordering 不因 symbol registration 或从 O0 继承而获得 primitive status，它们与更强 realization 及 primitive non-flatness 的精确关系保持 OPEN。规则内容、对象分类与准入／回读条件一律以 §0A 为准，本注册表不复述。
 - 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针。B-A 的术语 owner 是 `Core_Law/SRT_L0_Metaphysics.md` 初心词条；C-A 的 scope owner 是 `_SRT_D_VALUE_CANONICAL.md §5b` 与 Claim Ladder §0A。Symbol Table Rules 17／18 只登记 no-new-symbol／no-alias 与作用域护栏；CΨ 仍开放
 
 ### 5c. Claim-Mode Audit
