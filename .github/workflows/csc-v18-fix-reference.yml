@@ -1,0 +1,32 @@
+name: CSC v18 remove unused reference
+
+on:
+  push:
+    branches:
+      - publication/csc-artificial-life-v18-e1e2e3-20260915
+
+permissions:
+  contents: write
+
+jobs:
+  fix-reference:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove unused Baltieri reference only
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('papers/CostlySelectiveClosure_v18_ArtificialLife_candidate.md')
+          t = p.read_text(encoding='utf-8')
+          line = '- Baltieri, M., & Suzuki, K. (2026). Mathematical approaches to the study of agents. *Philosophical Transactions of the Royal Society B* (to appear).\n'
+          if t.count(line) != 1:
+              raise SystemExit('expected exactly one Baltieri reference line')
+          p.write_text(t.replace(line, ''), encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/CostlySelectiveClosure_v18_ArtificialLife_candidate.md
+          git commit -m "paper: remove unused Baltieri reference from v18"
+          git push origin HEAD:publication/csc-artificial-life-v18-e1e2e3-20260915
