@@ -20,7 +20,7 @@ zyx1st@gmail.com
 
 ## Abstract
 
-Artificial-life comparisons often treat mortality, persistent damage, and difficult recovery as if they lay on a common axis of failure consequence. This paper tests that assumption in a survival-coupled multiagent reinforcement-learning system and uses the results to revise **costly selective closure** (CSC), a comparison protocol rather than a definition or scalar score of life. CSC requires an explicit organizational unit, boundary, timescale, and recovery regime; the evidence-led revision retains selective breadth, maintenance burden, and historical retention as descriptive questions but treats **failure consequence architecture** as structured rather than one-dimensional.
+Mortality, persistent damage, and difficult recovery can all be described informally as making failure more consequential, but it is not clear that they lie on a common ordered axis. This paper tests that assumption in a survival-coupled multiagent reinforcement-learning system and uses the results to revise **costly selective closure** (CSC), a comparison protocol rather than a definition or scalar score of life. CSC requires an explicit organizational unit, boundary, timescale, and recovery regime; the evidence-led revision retains selective breadth, maintenance burden, and historical retention as descriptive questions but treats **failure consequence architecture** as structured rather than one-dimensional.
 
 Experiment 1 compared matched REINFORCE agents whose energy depletion either terminated the current episode-token or restored the depleted agent. After withdrawal of a cooperation bonus, mutual cooperation averaged **0.55 under terminal failure versus 0.04 under restoration across 30 paired seeds** (`p < 0.0001`), with the separation surviving a zero-penalty ablation, a lives-budget gradient, a payoff sweep, and a frozen-policy common-state probe. Two later, separately repository-preregistered follow-ups then tested generalizations of that interpretation. Experiment 2 held episode length fixed and varied persistence of non-terminal metabolic impairment; the predicted positive gradient was not supported (`rho = 0.055`, `p = 0.071`; `tau_inf - tau0 = 0.0059`, 95% CI `[-0.0292, 0.0443]`). Experiment 3 imposed fully reversible recovery periods of 0, 2, 5, or 10 forced-Rest steps. Its preregistered positive hypothesis also failed; the observed ordered association was instead negative (`rho = -0.704`, `p = 0.00005`), with `k10 - k0 = -0.0373` (95% CI `[-0.0990, -0.0028]`). A common-state frozen-policy probe showed the same direction.
 
@@ -66,7 +66,7 @@ Likewise, Experiment 3 does not claim novelty for restricted action availability
 
 ### 2.3 The remaining gap
 
-The remaining comparative gap is narrower and more methodological. Artificial-life discussions often move between statements such as:
+The remaining comparative gap is narrower and more methodological. Cross-substrate artificial-life comparisons can involve statements such as:
 
 - this agent can die;
 - this process is resettable;
