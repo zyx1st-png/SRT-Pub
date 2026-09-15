@@ -61,7 +61,7 @@ def validate(text: str) -> None:
         "timestamped repository preregistrations",
         "two-sample label-permutation test",
         "paired sign-flip sensitivity analysis",
-        "post-hoc statistical sensitivity",
+        "This sensitivity analysis is post-hoc",
         "p = 0.0000499975",
         "24 of 30 paired differences are positive",
         "25 of 30 paired differences positive",
