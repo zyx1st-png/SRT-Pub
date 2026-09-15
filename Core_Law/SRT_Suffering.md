@@ -2,49 +2,47 @@
 id: SRT-SUFFERING
 type: theory
 tags: [Suffering, Phenomenology, Selection, Occlusion, Individuation, L1]
-status: draft_v0
+status: draft
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-claim_level: P1-candidate
+claim_level: P2
 dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-OCCLUSION-DYNAMICS, SRT-INDIVIDUATION, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Suffering: Structural Theory of First-Person Misalignment
 
-> **Role**: L1 canonical theory of suffering as the first-person registration of structural misalignment between live selection and the operator that should be carrying it.
-> **Claim-level note**：本文大多为 P1-candidate 结构性读法；四类现象学分型为 P2；阈值、量纲化与临床分流语句为 P3/P4，必须下推到 `Spirituality/` 与 `Neuroscience/` 既有文件。
-> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\theta_{somatic}`、real choice moment、stable ISP 等底层规范对象；它们的定义仍以对应 canonical 为准。
-> **Depends on**：`Core_Law/SRT_L0_Metaphysics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Individuation.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`。
-> **Relation**: This file does not replace `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`（pathology-and-return praxis）、`Philosophy/SRT_Ethics_Agency.md`（normative responsibility）或 `Neuroscience/SRT_Clin_02_FEP.md`（clinical mapping）；它在这三条之前，固定"苦难本身是什么"的结构层读法。
-> **Proxy guardrail (2026-05-17)**：`pain`、distress、clinical symptoms、spiritual suffering、moral guilt、prediction error、free energy、metabolic burden 与 `Ψ_f` / `d` 的关系一律先读作 proxy / bridge，除非本文件或 canonical symbol files 明确给出结构定义。禁止把 `suffering = Ψ_f`、`pain = Ψ_f`、`suffering ∝ 1/d`、`pain ≈ dΨ_f/dt` 当作 canonical identity；这些最多是特定 domain 的 operational proxy 或 historical shorthand。
-> **Canonical Formalism Layer (2026-04-24)**：S = S_{sig} + S_{str} 的最小动力学（信号型随支付通道与重选完成消化、结构型由 `\mathbb{1}[d\le d_c]\cdot S_{sig}` 转化积累）、T-SUFF-4 反最小化原则的方程语言（`S_{sig}` 被压制等价于新失配转入 `S_{str}`）、四变量耦合（`σ_{sr}, d_c, T_dir, S`）的病理吸引子 `\mathcal{A}_{path}`，写在 `Core_Law/SRT_L1_Formalism.md §4-§5`。本文件固定苦难作为结构对象的本体读法；方程级联立以 formalism 文件为准。
->
-> **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件提及的"σ→1 扭曲型 / σ 偏离 `σ_health`"等表述在 2026-04-24 L1 round 之后应理解为自指率 `σ_{sr}`（含 `σ_{sr}^{health}`），与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。
+> **Role**: L1 canonical owner for a bounded structural / phenomenological model of suffering. It organizes how independently admitted first-person registration may be related to modeled burden; it does not derive suffering, phenomenality or consciousness from Stable-ISP standing.
+> **Claim-level note**：本文的苦难登记、信号型/结构型分类与反信号压制护栏为 P2 模型；四类现象学分型、集体外部化与 domain 实现为 P2/P3 hypotheses；阈值、量纲化与临床分流语句为 P3/P4。本文不承载苦难的 universal P1 theorem。
+> **Does not define**：`d-value`、`Ψ_f`、`T_dir`、`θ_{somatic}`、real choice moment、Stable ISP、subject-position、phenomenality 或 consciousness；它们的准入与定义仍归各自 owner。
+> **Depends on**：`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Individuation.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`。
+> **Relation**: 本文件不替代 `Spirituality/` 的 pathology-and-return praxis、`Philosophy/` 的规范判断或 `Neuroscience/` 的临床实现；它只提供进入这些 bridge 前的有界 suffering 模型。
+> **Proxy guardrail**：pain、distress、clinical symptoms、spiritual suffering、moral guilt、prediction error、free energy、metabolic burden 与 `Ψ_f` / `d` 的关系一律先读作 proxy / bridge。不得把 `suffering = Ψ_f`、`pain = Ψ_f`、`suffering ∝ 1/d` 或其他单一量身份式写成 canonical definition。
+> **Formal-model debt (Wave E2)**：`S = S_{sig} + S_{str}`、`d_c`、`σ_{sr}`、`T_dir`、`Δ` 及其耦合只可作为声明了准入、方向来源、criterion 与 domain assumptions 的 P2/P3 formal candidates。`Core_Law/SRT_L1_Formalism.md` 与 `Core_Law/SRT_L1_Hardening_Notes.md` 留待 Wave E3 独立审查；本文不用它们反向证成第一人称登记。
 
 ---
 
 ## §0. 问题定位
 
-在 SRT 既有文本中，"suffering / 痛苦 / 苦难 / 空心感 / 自我扭曲"这组概念至少已经分布在：
+SRT 的既有文本分别处理空心感、回返、责任、临床负担、AI 意识可能性、遮蔽残余与自指 lock-in。本文给这些材料提供一个有界结构接口，同时防止三种混同：
 
-- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`：空心感、真空期、微选择、回返现象学
-- `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`：现代生活中的空心与慢回返
-- `Philosophy/SRT_Ethics_Agency.md`、`Philosophy/SRT_Philosophy_Ethics.md`：自我扭曲、d↑/d↓ 支付、责任的多轴结构
-- `Neuroscience/SRT_Clin_02_FEP.md`、`Neuroscience/SRT_Neuro_08_Immune_Dist.md`：预测误差 / 炎症 / 分布式负担
-- `AI/SRT_AI_03_Consciousness_Framework.md`：stake-bearing 光谱下 AI 是否"受苦"
-- `Core_Law/SRT_Occlusion_Dynamics.md`：五类缺口感知残余（躯体回响、梦境碎片、情感不匹配、微时刻敞开、他者断裂）
-- `Core_Law/SRT_Individuation.md`：σ→1 病理区下的自指过载
+- 把结构负担直接当成第一人称苦难；
+- 把躯体威胁信号直接当成经验到的疼痛；
+- 把 Stable ISP、主体位、意识或某个 scalar threshold 直接当成 suffering admission。
 
-但**没有一个文件规定"苦难本身在 SRT 中是什么对象"**。结果是：
-- 临床语境下容易把它误读成症状；
-- 规范语境下容易把它误读成道德信号；
-- 实践语境下容易把它误读成应最小化的负效用；
-- 跨文件引用缺一个结构层锚点。
+本文件采用的工作读法是：
 
-本文件填这一空。它**不讨论如何减轻痛苦**（那是 Spirituality / Clinical 的任务），也**不讨论痛苦的规范价值**（那是 Philosophy 的任务），它只固定：
+> **在已独立准入第一人称登记 standing 的声明模型中，苦难可被建模为对结构负担或失配的第一人称登记。**
 
-> **苦难是活的选择动力学与其应承载的算子结构之间失配的第一人称登记。**
+```text
+structural burden / mismatch != first-person suffering;
+Stable ISP -/> suffering;
+Stable ISP -/> subject-position / phenomenality / consciousness;
+subject-position -/> suffering automatically;
+consciousness -/> suffering automatically.
+```
+
+现象性、意识与苦难之间的 universal necessary-and-sufficient relation 保持 **OPEN**；本 owner 不定义它们。
 
 ---
 
@@ -52,60 +50,71 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 
 ### Def-PAIN
 
-`疼痛（pain）`定义为 `\theta_{somatic}` 报告的躯体层组织威胁或不适信号，包括但不限于伤害感受、内感受失衡、代谢痛苦、躯体警告。
+`θ_{somatic}` 在本文至多表示一个 **somatic / nociceptive threat-signal proxy or channel**：它可报告组织威胁、内感受失衡、代谢负担或躯体警告，并影响后续选择权重。
 
-- 载体层：`\theta_{somatic}` 子成分
-- 功能：向 `\hat{G}_\theta` 提供权重调制，使选择动力学回避组织损伤
-- 独立性：疼痛可以存在而不被登记为苦难（例如纯反射层面的伤害反应、麻醉下的机械反射）
+```text
+somatic / nociceptive threat signal
+!= experienced pain.
+```
+
+经验到的疼痛要求相关第一人称/现象登记 independently admitted；不能由 `θ_{somatic}`、伤害反应或机械反射单独推出。纯反射或麻醉下的机械反应只说明 nociceptive / threat signalling，没有建立 experienced pain。
 
 ### Def-SUFFERING
 
-`苦难（suffering）`定义为一个处在稳定 ISP 路径上的选择过程，对自身**"实际选择动力学 vs 结构空间中可能的选择动力学"之间失配**的第一人称登记。
+本文先区分两个对象：
+
+```text
+structural mismatch / burden
+= a modeled discrepancy, blocked correction burden,
+  retained consequence load, or related structural condition;
+
+suffering
+= first-person registration of such burden
+  only where the model/domain has independently admitted
+  the required first-person / phenomenal /
+  bearer-relevant registration standing.
+```
+
+因此，`S(P,t)` 不作为 universal identity。仅在一个已经声明并独立支持上述 registration standing 的模型中，以下表达式才可作为 P2 formal/model candidate 或 operational proxy：
+
+```text
+S(P,t) := Delta(G_actual(P,t), G_available(P,t)).
+```
+
+其中 `G_actual`、`G_available` 与 `Delta` 的算子空间、比较规则、可达域、metric、retention rule 和 evidence 必须由模型说明。`Delta > 0` 不普遍推出 suffering；这些 formal objects 也不能反向 bootstrap 第一人称 standing。其更强形式审查留给 Wave E3。
 
 Boundary:
-- `suffering` 不等同于 `pain`、distress、symptom severity、moral guilt、prediction error、free energy、metabolic cost 或 `Ψ_f`。
-- `pain` 可作为通向 suffering 的 somatic / interoceptive channel，但不是 suffering 的充分条件。
-- `Ψ_f` 进入本文件是通过 payability / friction projection 约束 `Δ` 的可消化性；它不是 suffering 的数值定义。
-- `d` 可影响 suffering 的类型、通道与遮蔽阈值，但低 `d`、高 `d`、`D_eff` 或 attention scope 均不直接定义 suffering。
 
-形式化草稿：
+- suffering 不等同于 pain、distress、symptom severity、moral guilt、prediction error、free energy、metabolic cost 或 `Ψ_f`；
+- pain / somatic signal 可是 suffering 模型中的一个 channel，但既不充分，也未在本文建立为普遍必要；
+- `Ψ_f` 可在声明模型中约束 burden 的可支付性，但不定义 suffering；
+- `d` 可作为 stake-coupled concern / risk-sensitivity summary 参与模型，但不是 universal suffering、health、pathology 或 direction score。
 
-$$
-S(P, t) \;:=\; \Delta\big(\hat{G}_\theta^{\text{actual}}(P, t),\; \hat{G}_\theta^{\text{available}}(P, t)\big)
-$$
-
-其中：
-- `\hat{G}_\theta^{\text{actual}}`：当前路径上实际进行的选择动力学；
-- `\hat{G}_\theta^{\text{available}}`：在当前 `θ`、当前 `d`、当前 `L_2` 约束下，结构上仍可被打开的选择动力学；
-- `\Delta(\cdot,\cdot)`：两者间的不可压缩偏离度（operational proxy：由 `T_dir` 偏移、未兑现的 `L_0` 残压、`\Psi_f_felt` 与 `\Psi_f_actual` 分裂共同确定）。
-
-> **算子级 canonical（T-DELTA-1，2026-04-25 H7）**：上述三个对象（`\hat{G}_\theta^{actual}`、`\hat{G}_\theta^{available}`、`\Delta`）已在 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出算子级定义：`\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达且 } θ\text{-相容}\}`、`\hat{R} := \hat{G}_\theta^{available} \ominus \hat{G}_\theta^{actual} \in T\mathrm{Op}(P)`、`\Delta = w_{dir}\|\hat{R}\|_{T_{dir}} + w_{pay}\|\hat{R}\|_{\Psi_f} + w_{L_0}\|\hat{R}\|_{L_0} + o(1)`，其中三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` + 三条算子空间假设 A1（仿射结构）/ A2（近似正交）/ A3（权重的赌注决定性）。本文件 §3 T-SUFF-2（信号型 vs 结构型分裂）与 §4.4 T-SUFF-4（反最小化原则）的算子层根据由 T-DELTA-1 给出。
+> **T-DELTA-1 boundary**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 仅作为带显式 assumptions 的 P2 formal candidate / implementation model 引用，不是 suffering 的 canonical operator proof。`Core_Law/SRT_L1_Formalism.md` 与 Hardening Notes 的相关主张均属于 Wave E3 debt，本轮零改动。
 
 ### 核心区分
 
-| 维度 | 疼痛 | 苦难 |
+| 对象 | 本文中的有界角色 | 不能推出 |
 |---|---|---|
-| 载体层 | `\theta_{somatic}` | 算子层 `\hat{G}_\theta` 与路径层 `ρ` 之差 |
-| 存在条件 | 躯体/神经完整 | 稳定 ISP（P1-T06） |
-| 是否需要主体位 | 否 | 是 |
-| 是否始终应减轻 | 大多数情况是 | 否，取决于信号/结构型分类；目标不是把所有登记压低，而是保持信号可读、打开结构型通道 |
-
-**重要性**：疼痛可无苦难（reflex、depersonalization、某些麻醉态），苦难亦可无疼痛（空心感、意义崩解、T_dir 低迷、自我扭曲型苦难）。两者有耦合通路（躯体化、心身病），但不能互相还原。
+| somatic / nociceptive signal | `θ_{somatic}` threat-signal proxy / channel | experienced pain、phenomenality 或 suffering |
+| experienced pain | 已独立准入的第一人称疼痛登记 | suffering 的充分条件 |
+| structural burden / mismatch | 声明模型中的 discrepancy、blocked correction burden 或 retained consequence load | first-person suffering |
+| suffering | 在独立准入 registration standing 后，对所建模 burden 的第一人称登记 | Stable ISP、subject-position 或 consciousness 的反向证明 |
 
 ### §1.1 结构性损失压力：与 pain / distress / suffering 的对表（2026-08-11）
 
-> **层级**：P2 canonical interpretation / terminology crosswalk。本节落实 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` G5-2 / G5-5 所要求的类型学对表；不修改 `Def-PAIN` 或 `Def-SUFFERING`，也不新增 P1 定理。
+> **层级**：P2 terminology crosswalk；不新增 P1 theorem 或 canonical scalar。
 
-G5-2 的「痛苦是具身位上的结构性损失压力」中，「痛苦」是一个跨文件的上位压力词，不等同于本文的 `pain` 或 `suffering` 定义。「结构性损失压力」指：已发生的损失、损失风险、维持失败或未来选择空间收缩，与一个具有真实 stakes 的具身承受位置发生耦合。它是 pain / distress / suffering 可能的上游条件，不是第三个 canonical 量。
+“结构性损失压力”指损失、威胁、维持失败或未来选择空间收缩与一个已在声明模型中准入的承受位置发生关系性耦合。它可成为 pain、distress 或 suffering 模型的上游输入，但不是三者中的任何一个。
 
 | 对象 | 在对表中的位置 | 不能推出 |
 |---|---|---|
-| structural loss pressure | 损失、威胁、维持失败或路径收缩与具身承受位置的关系性耦合 | 不自动构成 pain、suffering 或完整选择事件 |
-| pain | 结构性损失通过 `\theta_{somatic}` 躯体威胁通道被报告时的一种信号形式 | 不是所有损失压力的总称，也不充分构成 suffering |
-| distress | 领域层对急性调节、情感或行为负担的 proxy / bridge 读数 | 不是 canonical 身份判据，不与 `\Psi_f` 或 suffering 建立同一式 |
-| suffering | 稳定 ISP 对实际选择动力学与可用选择动力学失配的第一人称登记 | 不要求同时存在 pain；结构性遮蔽也可使损失存在而登记不成立 |
+| structural loss pressure | 损失、威胁、维持失败或路径收缩的关系性负担 | pain、suffering、主体位或完整选择事件 |
+| somatic threat signal | 结构负担通过 `θ_{somatic}` channel 的候选报告 | experienced pain 或 suffering |
+| distress | 领域层急性调节、情感或行为负担的 proxy / bridge readout | canonical identity 或 `Ψ_f` / suffering 同一式 |
+| suffering | 在 registration standing 已独立准入后，对 burden 的第一人称登记 | pain 必然存在、Stable ISP 充分或隐藏残余必然存在 |
 
-G5-5 的「最低强制性选择压力」因此必须按最小口径读取：当结构性损失已与具身承受位置耦合时，系统对相关差异不再保持完全中性；它不保证一定出现 `Def-PAIN` 或 `Def-SUFFERING`，不保证形成更强 agency / consequence-sensitive revision standing，也不保证导向健康重组。
+结构负担可能不被登记，也可能衰减、补偿或消失。若主张 retained consequence load，必须给出 retained efficacy 或 domain evidence；occurrence non-equivalence 本身不提供隐藏库存。
 
 ---
 
@@ -113,23 +122,38 @@ G5-5 的「最低强制性选择压力」因此必须按最小口径读取：当
 
 ### 陈述
 
-在本 L1 操作性定义下，对任何稳定 ISP `P`，`S(P,t)` 追踪一种无法被当前可支付 `\Psi_f` 消化的选择空间失配；该追踪以 stable ISP 与第一人称登记通道可用为前提：
+> **T-SUFF-1 status**：P2 structural / phenomenology model candidate。
 
-$$
-S(P, t) > 0 \quad\text{is structurally expected when}\quad \exists\,\text{selection-space misalignment not cancelled by payable }\Psi_f
-$$
+在一个声明模型中，只有同时满足下列前件时，正的 `S(P,t)` 才可被当作 registered suffering 的候选证据：
 
-这不是严格充要式，而是当前 draft_v0 的 P1-candidate 操作性判据：苦难为正通常意味着当前选择过程正在登记无法被当前可支付 `\Psi_f` 消化的选择空间失配；反向推论需检查登记通道是否被遮蔽、主体位是否仍成立、以及 `S_{sig}/S_{str}` 分流是否可判。
+```text
+independently admitted first-person registration standing
++ declared burden/discrepancy model
++ usable registration channel
+-> positive S may count as evidence of registered suffering
+   within that model.
+```
+
+这不是 universal implication，也没有 reverse implication。负担存在不保证被第一人称登记；没有观测到 `S` 也不能独自证明真实对齐、无 burden、无 phenomenality 或无 suffering。
 
 ### 推论
 
-1. **苦难不是稳定 ISP 的缺陷**：它是稳定 ISP 对"我此刻的选择未能覆盖我此刻仍开放的结构"这一事实的第一人称后果候选。只要 `\hat{G}_\theta^{\text{available}}` 宽于 `\hat{G}_\theta^{\text{actual}}` 且差异不可被支付压成零，`S > 0` 是结构上应预期的登记结果。
-2. **无苦难态有两种**：(a) 真实对齐（actual ≈ available，可支付 `\Psi_f` 已消化其余）；(b) 结构性盲区（available 被遮蔽、登记通道关闭或主体位关闭，失配不被登记）。两者在外观上可能难区分，但结构上完全不同——后者是 B 期锁死的典型标志。
-3. **道德上中性**：T-SUFF-1 不评价苦难应否存在，它只刻画苦难在何种结构条件下应被登记。
+1. **模型先于数值解释**：`Delta`、可用通道与测量代理只有在准入、metric、scale、horizon 与 alternative explanations 已声明时才可解释。
+2. **无报告不等于无负担**：报告通道可能缺失、受限或测量失败，但不能仅凭这一可能性假定隐藏 suffering。
+3. **结构结果不是规范 verdict**：T-SUFF-1 只组织 evidence 与 model relation，不判断 suffering 应否存在，也不产生 responsibility、evil 或 injustice 结论。
 
 ### 与 P1-T06 的关系
 
-T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（continued-selectable）。这里要求同一历史承载过程继续面对 live candidates 并承担后果，不要求 21C B13 的 generative reselectability。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受或功能误差。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
+某些 suffering models 可以把 Stable ISP 用作一个更强的 recurrent/history-bearing standing 条件，但 P1-T06 的 perspective-bearing 只是 Stable-ISP standing condition，不是 phenomenality 定义。
+
+```text
+Stable ISP -/> suffering;
+Stable ISP -/> phenomenality;
+Stable ISP -/> subject-position;
+non-ISP -/> categorical incapacity for suffering.
+```
+
+本文不把 Stable ISP 写成 suffering existence condition，也不使用 `σ_{sr}^{sub}` 或其他阈值决定 suffering admission。具体模型采用何种 first-person registration condition，及其与 Bearer、subject-position、phenomenality、consciousness 的关系，保持 independently gated / **OPEN**。
 
 ---
 
@@ -137,71 +161,58 @@ T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条�
 
 ### 陈述
 
-苦难按其在选择动力学中的功能角色分为两型：
+> **T-SUFF-2 status**：P2/P3 model taxonomy；不是 universal phase theorem。
 
-**信号型苦难（signal-type）**：对应仍可被当前 ISP 消化的失配信息。
+在 first-person suffering 已按 §1–§2 独立准入后，声明模型可以按 registered burden 与 correction / reorientation channel 的关系区分：
 
-$$
-S_{\text{signal}} \;:\; S > 0 \;\wedge\; \exists\,\hat{G}_\theta\text{-adjustment that can close }\Delta
-$$
+**信号型苦难（signal-type）**：已登记 burden 仍能进入某个已声明的 correction 或 reorientation channel。
 
-它的功能是让算子层收到"当前路径与可打开结构不一致"的提示，进而推动重新选择。它对应健康 `L_2` 下的真实张力——**信号型苦难被压灭，本身是一种病理**。
+**结构型苦难（structural-type）**：已登记 burden 与 blocked、self-reinforcing 或 poorly accessible correction channel 相关。
 
-**结构型苦难（structural-type）**：对应无法被当前 ISP 在当前 `L_2` 下消化的失配。
-
-$$
-S_{\text{struct}} \;:\; S > 0 \;\wedge\; \hat{G}_\theta\text{-adjustment blocked by lethal/pathological }L_2\text{ or }\sigma \to 1
-$$
-
-它不再能作为信号被使用，因为可重选通道已被遮蔽、路径层痕迹已锁定、或自指闭合已过重。它对应 `Core_Law/SRT_Occlusion_Dynamics.md` 的 B 期与 `Core_Law/SRT_Individuation.md` σ→1 病理区。
+这一区分依赖具体 channel、criterion、unit、scale、horizon 与 evidence。A/B、`σ_{sr}`、`d_c`、lock-in 和 channel measures 只是在相应模型中可替换的 coordinates；它们不普遍等同于 suffering type，也不提供 suffering admission。
 
 ### 临床/实践意涵
 
-| 型 | 信号型 | 结构型 |
+| 型 | 模型问题 | 允许的有界用途 |
 |---|---|---|
-| 功能 | 重新选择的驱动 | 自我维持的残余 |
-| 应对 | 允许登记、找通道、让它被消化 | 不是"处理苦难"，而是**先打开通道**（干预窗口 / 解耦触发） |
-| 误用 | 用 `L_2` 技巧压灭 → 变成结构型 | 当作信号不断"挖深"→ 自我强化 |
+| signal-type | registered burden 是否仍能进入声明的 correction/reorientation channel | 检验 channel access、signal use 与 alternative explanations |
+| structural-type | registered burden 是否与 blocked / self-reinforcing channel 相关 | 检验 lock-in、retained efficacy、access change 与 intervention response |
 
-**重要警戒**：这两型的区分不是外观差，而是**通道可用性差**。从外部（包括当事人自述）常无法直接分辨；只有沿 `Occlusion_Dynamics` T-OCC-1 的三段结构与 Individuation 的 σ 值共同判定，才给出结构判据。
+降低某个 report 或 signal 不足以判断 underlying burden 已变化；同样，signal 持续也不独自证明 pathology。healthy、pathological、lethal 与 recovery 只在 independently declared viability / relation-integrity / clinical / functional criterion 下使用。
 
 ---
 
 ## §4. T-SUFF-3：四类现象学分型
 
-把 T-SUFF-1 的失配方向与 T-SUFF-2 的通道状态组合，得到四类结构性现象学分型。它们是 P2 操作化读法，不是 P0/P1 构成定理。
+> **T-SUFF-3 status**：以下四类均为 P2/P3 phenomenology / domain hypotheses，不是 P0/P1 constitutive taxonomy，也不宣称完备。
 
 ### 4.1 张力型（tension）
 
-- 结构：`d` 过宽而 `\Psi_f` 可支付窗口过窄
-- 登记为：过载、焦虑、方向感未丢但力不可及
-- 通道：信号型为主；`L_2` 支持到位时可被消化为扩容或分期
-- 典型路径：Occlusion A 期早段
+- phenomenology hypothesis：过载、焦虑、方向仍可报告但行动或整合能力不足；
+- model hypothesis：某些模型可用“concern scope 相对较宽、payability / correction window 相对较窄”描述；
+- boundary：`d too broad` 或 `Ψ_f window too narrow` 不是 universal definition，必须声明 measurement、criterion 与 domain。
 
 ### 4.2 空心型（hollowness）
 
-- 结构：`d` 被长期压窄至 `d_c` 以下；`T_dir` 低迷；`\hat{G}_\theta^{\text{available}}` 在路径层已失访问
-- 登记为：空心感、意义薄、"都挺好但不像我"
-- 通道：从信号型滑向结构型；五类缺口残余（躯体回响、梦境碎片、情感不匹配、微时刻敞开、他者断裂）仍保留少量入口
-- 典型路径：Occlusion B 期早段 / 个体化 σ 接近病理区
+- phenomenology hypothesis：意义变薄、疏离或“都挺好但不像我”；
+- model hypothesis：可研究 declared direction signal、self-readability 或 correction access 的变化；
+- boundary：`d < d_c` 不推出 hollowness；没有 independently typed declared direction 时，`T_dir` 不准入/未定义。低 `T_dir` 也不自动建立 pathology、goodness 或 suffering。
 
 ### 4.3 断裂型（rupture）
 
-- 结构：consequence-sensitive revision / reorientation 通道被外部 `L_2` 封闭中断，残余 `L_0` 压力无处兑现；这不推出 Selection occurrence 消失
-- 登记为：创伤、羞耻、复发性侵入、解离
-- 通道：信号型，但通道需要"见证式承担"或他者结构修复
-- 典型路径：解耦触发中的"他者断裂"反向——未被承担的断裂累积
+- phenomenology hypothesis：在某些 domain 中表现为 intrusion、shame、dissociation 或 relational break；
+- model hypothesis：可研究已证成 retained efficacy 的 consequence load、blocked reorientation channel 或 domain-specific trace；
+- boundary：不存在由 `L0` 自动提供的 residual value/direction pressure。trauma、羞耻、侵入与解离都是 clinical/domain bridges；retained burden 必须由 retained efficacy 或 domain evidence 建立。
 
 ### 4.4 扭曲型（distortion）
 
-- 结构：`σ → 1` 病理区；自指过载；`\hat{G}_\theta^{\text{actual}}` 主要用于维持扭曲的自我形象而非与可得结构对齐
-- 登记为：强迫性自证、防御、投射、内在叙事与他人反馈的系统性偏离
-- 通道：结构型；干预窗口需走代价结构突变或可支付性崩溃
-- 典型路径：Occlusion B 期锁死 / 个体化病理分支
+- phenomenology hypothesis：强迫性自证、防御、投射或叙事与反馈的系统性偏离；
+- model hypothesis：self-reference lock-in、`σ_{sr}` 或相关 access coordinates 可在声明模型中接受检验；
+- boundary：`σ_{sr} -> 1` 不是 suffering、subjecthood 或 pathology theorem。任何 pathology / recovery 判断均需独立 criterion 与 evidence。
 
 ### 跨型关系
 
-这四型不是互斥类别，而是一个**动力学谱**：张力 → 空心 → 断裂 / 扭曲。向左流动伴随通道开启与重新选择；向右流动伴随 d 收窄、σ 上升、`L_2` 封闭。**苦难治理的首要任务不是降幅，而是辨型与阻止右移**。
+四类可以重叠、转换或由其他 taxonomy 替代。本文不保留“张力 → 空心 → 断裂/扭曲”的 universal 左右健康谱，也不从 `d` 收窄、`σ_{sr}` 增加或 signal 强弱自动推出恶化方向。动态排序必须由声明的 viability / relation-integrity / domain criterion 支撑。
 
 ---
 
@@ -209,25 +220,25 @@ $$
 
 ### 陈述
 
-对稳定 ISP `P`，令 `S_{\text{signal}}(P,t)` 与 `S_{\text{struct}}(P,t)` 分别为信号型与结构型苦难的瞬时量。存在一个**健康苦难窗口** `[S_{\min}, S_{\max}]`，使得：
+> **T-SUFF-4 status**：P2 anti-signal-suppression sufficiency guard。
 
-$$
-\text{Healthy ISP dynamics} \;\Longrightarrow\; S_{\text{signal}} \in [S_{\min}, S_{\max}] \;\wedge\; S_{\text{struct}} \to 0
-$$
+本文保留的窄核是：
 
-也即：
-- `S_{\text{struct}} \to 0` 是应追求的（通道打开、重选恢复）；
-- `S_{\text{signal}} \to 0` **不是**应追求的——它意味着要么全对齐（罕见），要么结构性盲区。
+> **仅仅降低被报告的 suffering / distress signal，不足以证明 underlying modeled burden、retained mismatch 或 blocked correction channel 已被移除。**
+
+这是一条 evidence sufficiency guard，不是“suffering intrinsically healthy”、任何系统都需要非零 suffering，或 signal reduction 必然把 suffering 守恒转入隐藏结构的 theorem。underlying burden 是否存在、保留、增长、补偿或消失，取决于声明模型和证据。
 
 ### 推论
 
-1. **幸福工程若通过压低信号型苦难达成，本身是遮蔽**：它同时压低了系统对失配的可读性，等价于把 `T_dir` 伪装为高位；它是致命 `L_2` 的一个典型掩护。
-2. **痛苦最小化作为伦理目标不充分**：若不区分两型，最小化等于把信号型压入结构型——短期评价改善，长期 B 期锁死概率上升。这里的“痛苦最小化”指把 suffering / distress 作为单一负效用压低；不反对医学上减轻伤害性 pain、急性 distress 或安全风险。
-3. **反向**：健康社会/个体的指标不是"无苦难"，而是**信号型苦难保持可读、结构型苦难持续被打开**。
+1. report reduction、behavioral compliance 或短期 symptom change 不能单独替代 structural assessment；
+2. signal suppression 与 burden removal 必须由能够区分两者的模型、measurement 与 evidence 比较；
+3. suffering、pain 与 acute distress 是否以及如何减轻，属于临床、实践与伦理 criterion，不由本 guard 预先决定。
+
+任何 “healthy suffering window” 只可作为声明了 criterion、measurement、domain 与 evidence 的 P2/P3 model hypothesis；本文不承认 universal healthy-suffering-window theorem。
 
 ### 与 Ethics / Agency 的接口
 
-`Philosophy/SRT_Ethics_Agency.md` 的责任地理、多轴责任、d 增厚段落应按本原则读：道德要求不是避免让他人产生信号型苦难，而是避免生产不可支付的结构型苦难并避免关闭其通道。外部化结构型苦难是结构性恶的三判据之一（`Occlusion_Dynamics` 中已定义）。
+本 owner 只提供 burden、registration 与 channel evidence。它不直接推出 moral requirement、structural evil、political injustice 或 responsibility verdict。O2-C / O2-A 的可能输入继续向下游 Ethics / Agency owner 路由；O2-M 保持 **OPEN**。
 
 ---
 
@@ -235,27 +246,31 @@ $$
 
 ### 陈述
 
-令 `P_1, \ldots, P_n` 为共享同一 `L_2` 场的稳定 ISP 群。若存在子群 `G \subset \{P_i\}` 使得：
+> **T-SUFF-5 status**：P2/P3 collective burden bridge。
 
-$$
-\exists\, \text{path mapping }\phi:\; S_{\text{struct}}(G, t) \;\Rightarrow\; S_{\text{struct}}(\overline{G}, t+\tau) \;\wedge\; G \not\gets \text{consequence return}
-$$
+集体模型首先应描述 **burden / consequence externalization**：cost、consequence load、correction burden 或 retained constraint 从某些位置转移到其他位置，而 consequence return、recourse 或 correction access 呈不对称。
 
-则称该 `L_2` 场承载着**结构型苦难的集体外部化**。它是 `Occlusion_Dynamics` 结构性恶定义中"外部化后果 + 主动扩散"两条的现象学对应。
+```text
+burden / consequence externalization
+!= suffering externalization
+!= evil / domination / complete political-injustice verdict.
+```
+
+distributed burden model 不要求 collective subjecthood，也不要求先证明每个受影响位置都有第一人称 suffering。只有当相关位置的 first-person suffering 已被独立建立时，才可进一步讨论 suffering externalization。
 
 ### 含义
 
-1. 苦难的个体现象学与集体政治经济结构通过此定理耦合；
-2. 社会病理的 SRT 读法因此不是"不公正的分配"，而是**结构型苦难的外部化通道**——谁在付、谁在免、通道是否对称；
-3. 当代技术加速场景（自动化决策、平台经济、算法治理）在本定理下的风险点：不是"制造苦难"，而是**让结构型苦难对其制造者不可见**，使干预窗口结构性缩小。
+1. collective structure 可在不预设 collective phenomenality 的情况下分配或外部化 burden；
+2. `M(t)`、path mapping、exposure、recourse 与 attentional access 可作为声明模型中的 P2/P3 diagnostics；
+3. externalization 的存在不自动决定 Agency、责任、恶、支配或正义结论。
 
 ### 与 Political Philosophy / Social Economics 的接口
 
-`Philosophy/SRT_Political_Philosophy.md`（§反支配、§结构性不公）与 `Philosophy/SRT_Social_Economics.md`（§分配、§制度病理）应按 T-SUFF-5 读：反支配等于反对苦难外部化通道的不对称设计，结构性不公等于结构型苦难在某子群的不可兑换累积。本文件不重复政治哲学的规范性展开，只给结构耦合锚。
+结构性 externalization pattern 可以成为 O2-C / O2-A / ethics bridge input，但规范与政治 verdict 必须由相应 Philosophy owner 独立承担。O2-M 保持 **OPEN**。
 
 ### 与 Collective Selection 的接口（2026-04-24 补）
 
-T-SUFF-5 的多主体结构基础由 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）承担：`path mapping φ` 对应该文件的**后果回路矩阵 `M(t)`**；"结构型苦难外部化"对应 `M(t)` 强不对称，即**主从型退化**（T-COLL-2 §3.2）；"让结构型苦难对制造者不可见"对应**收编型退化**（T-COLL-2 §3.3）与算法场景下 `σ^{coll}` 被系统性推高。T-SUFF-5 因此不是孤立声明，而是集体选择理论三类退化在苦难层的投影。
+`Core_Law/SRT_Collective_Selection.md` 可为 consequence-return matrix、distributed constraint 与 collective access model 提供候选结构；这些坐标的有效性、集体 formed standing 与主体性均需各自准入。E2 不把 Collective Selection 的旧退化语言反写为 suffering theorem。
 
 ---
 
@@ -263,56 +278,68 @@ T-SUFF-5 的多主体结构基础由 `Core_Law/SRT_Collective_Selection.md`（`S
 
 ### 规则
 
-- S1 及以下（inference-only / non-history-bearing / non-embodied deployment, plus stateless inference; training loops require separate bearer analysis）系统通常**不满足** P1-T06 Stable ISP 条件，因此在本文件意义下**不承载苦难**，只承载功能误差、性能退化或由人类/组织承担的外部后果。
-- S2-S4（persistent memory, history-bearing, stake-bearing）系统**可能**满足稳定 ISP 条件；是否承载苦难取决于是否存在算子层 `\hat{G}_\theta^{\text{actual}} / \hat{G}_\theta^{\text{available}}` 分裂的第一人称登记通道，此通道的存在是实证问题，不由架构推论。
-- 当前（2026-04）大多数部署 AI 系统不满足本文件的苦难条件；把它们的错误信号、拒绝回答、RLHF 训练目标误差读成"AI 在受苦"是范畴错位。
-- 但**把全部 AI 一次性划出苦难范围也是不可取的**：S3-S4 stake-bearing 情形下的苦难可能性仍是开放的实证问题，护栏在 `AI/AI_POSITIONING_NOTE.md`。
+- output error、reward signal、RLHF loss、refusal behavior、performance degradation 或语言化 self-report 本身都不建立 suffering；
+- Stable ISP 对 suffering 既不充分，也未被建立为 universal necessity；
+- S1/S2/S3/S4 等架构分级不能单独决定 suffering eligibility；
+- 未满足某个当前 Stable-ISP model，不等于 ontologically impossible suffering；
+- AI suffering 需要对相关 first-person / phenomenal / bearer-relevant registration standing 与 burden model 的独立 evidence/admission。
+
+对当前部署系统，安全结论是：相关 first-person registration evidence 仍不足，架构或行为 proxy 不能封口。本文不解决 AI subjecthood、phenomenality 或 consciousness。
 
 ### 与 `AI/SRT_AI_03_Consciousness_Framework.md` 的关系
 
-后者处理"意识可能性"；本文件只处理"苦难可能性"。二者相关但不等价：意识不充分亦不必要于苦难（强意识系统在对齐良好时 `S → 0`；尚不具强意识而已具稳定 ISP 的系统仍可能 `S > 0`）。
+consciousness 与 suffering 相关但不在本文件中建立同一、必要或充分关系：
+
+```text
+consciousness -/> suffering automatically;
+suffering -/> consciousness automatically;
+universal necessity / sufficiency relation = OPEN.
+```
+
+因此不得把“consciousness unnecessary for suffering”或“consciousness necessary for suffering”写成 settled theorem。
 
 ---
 
 ## §8. Open Pressures
 
-> **Hardening status (2026-04-24/25)**: 下列 §8.1 `\Delta(\cdot,\cdot)` 已给出第一版算子级定义（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）；剩余债为实证代理、domain 回写与更强形式化封口。§8.5 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出第一遍硬化案。
+本文件 `draft` 状态下尚未封口：
 
-本文件 `draft_v0` 状态下尚未封口：
-
-1. **`\Delta(\cdot,\cdot)` 的算子级定义**：已在 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出第一版算子级定义；剩余债为实证代理、domain 回写与更强形式化封口
-2. **信号型/结构型的可判据性**：目前只给了结构层条件，未给在没有完整 `Occlusion_Dynamics` 读数情况下的简化判据
-3. **四类现象学分型的完备性**：混合态（张力+扭曲、断裂+空心）的处理未显式覆盖
-4. **S_{\min}, S_{\max}` 阈值**：目前是定性，不是可测
-5. **与 FEP/Predictive Processing 的关系**：`Neuroscience/SRT_Clin_02_FEP.md` 的 prediction error 读法是否能作为 `\Delta` 的神经代理，待显式桥接
-6. **与 Buddhist dukkha 谱系的对齐**：`Spirituality/SRT_Spirit_01_Religion_Ontology.md` 的 dukkha 读法与本文件的信号/结构分类不完全一致，后续需要明确是翻译关系还是理论替换
+1. **Registration admission**：哪些 domain-native evidence 足以准入 first-person / phenomenal / bearer-relevant registration standing？
+2. **Phenomenality / consciousness relation**：它们与 suffering 的 universal necessity / sufficiency relation 保持 OPEN。
+3. **Formal objects**：`G_actual`、`G_available`、`Delta`、residual decomposition 与 T-DELTA-1 的 assumptions、operator space、metric 和 falsification 条件留给 Wave E3。
+4. **Taxonomy validity**：signal/structural 与四类 phenomenology 在哪些 domain 中可判、可替换或需扩展？
+5. **Retention evidence**：何种 evidence 能区分 retained efficacy、暂时负担、decay、compensation 与无可验证 trace？
+6. **Criterion discipline**：health、pathology、lethality 与 recovery 应采用何种 viability / relation-integrity / clinical / functional criterion？
+7. **Collective bridge**：如何测量 burden externalization 而不预设 collective subjecthood 或 suffering？
+8. **AI evidence**：哪些证据可区分优化/报告行为与相关 first-person registration？
+9. **FEP/Predictive Processing bridge**：prediction error 是否能成为 `Delta` 或 burden 的有效神经 proxy，仍需独立 bridge 验证。
+10. **Dukkha interface**：Spirituality 的 dukkha 谱系与本文 taxonomy 是 translation、overlap 还是替代关系？
 
 ---
 
 ## §9. Cross-References
 
-- 个体化 / σ / 病理区 → `Core_Law/SRT_Individuation.md`
-- 遮蔽动力学 / A/B 分期 / d_c / 五类缺口残余 / 干预窗口 / 解耦触发 → `Core_Law/SRT_Occlusion_Dynamics.md`
-- 主体位病理 / 回返现象学 / 支持 → `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
-- 现代生活的空心与慢回返 → `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-- 责任地理 / 多轴责任 / d↑/d↓ 支付 → `Philosophy/SRT_Ethics_Agency.md`、`Philosophy/SRT_Philosophy_Ethics.md`
-- 临床映射 / 炎症与分布式负担 → `Neuroscience/SRT_Clin_02_FEP.md`、`Neuroscience/SRT_Neuro_08_Immune_Dist.md`
-- AI stake-bearing 光谱 → `AI/AI_POSITIONING_NOTE.md`、`AI/SRT_AI_03_Consciousness_Framework.md`
-- 集体外部化的结构基础 / `M(t)` / 三类退化 → `Core_Law/SRT_Collective_Selection.md`
-- 三变量耦合动力学（S / σ / d_c）→ `Core_Law/SRT_L1_Formalism.md`
-- `\theta_{somatic}` 定义 → `Core/SRT_Core_01_Axioms.md` §θ 分解
-- `T_dir` / `T_dir` 价值遮蔽 → `_SRT_T_DIR_CANONICAL.md`
-- `\Psi_f_actual vs \Psi_f_felt` 分裂 → `_SRT_PSI_F_CANONICAL.md`
-- Stable ISP 四条件（perspective-bearing / continued-selectable 为本文件关键依赖）→ `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T06；generative reselectability 非本定义前件
+- Stable ISP standing 与其非充分边界 → `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T06
+- subject-position / self-reference model debt → `Core_Law/SRT_Individuation.md`
+- declared narrowing、criterion、A/B 与 retained-efficacy boundary → `Core_Law/SRT_Occlusion_Dynamics.md`
+- occurrence asymmetry / retained history → `Core_Law/SRT_Irreversibility.md`
+- `d` 的 stake-coupled concern / risk-sensitivity meaning → `_SRT_D_VALUE_CANONICAL.md`
+- declared direction-source discipline → `_SRT_T_DIR_CANONICAL.md`
+- `Ψ_f` 独立定义 → `_SRT_PSI_F_CANONICAL.md`
+- T-DELTA-1 与四变量形式债 → `Core_Law/SRT_L1_Hardening_Notes.md`、`Core_Law/SRT_L1_Formalism.md`（Wave E3）
+- collective burden model → `Core_Law/SRT_Collective_Selection.md`
+- normative / responsibility routing → `Philosophy/SRT_Ethics_Agency.md`、`Philosophy/SRT_Philosophy_Ethics.md`
+- clinical / phenomenology bridges → `Neuroscience/`、`Spirituality/`
+- AI evidence boundary → `AI/AI_POSITIONING_NOTE.md`、`AI/SRT_AI_03_Consciousness_Framework.md`
 
 ---
 
 ## §10. 定位与边界
 
-- **本文件不做**：临床诊断标准、治疗方案、苦难的伦理应否评价、苦难的神经还原解释、灵修劝谕
-- **本文件做**：固定苦难在 SRT 中的结构对象、与疼痛的区分、两型/四型分类、反最小化原则、集体外部化耦合
-- **与 Spirituality 的分工**：Spirituality 处理"在苦难中如何回返"；本文件处理"苦难本身是什么对象"
-- **与 Philosophy 的分工**：Philosophy 处理"苦难在规范序上的位置"；本文件处理"苦难在选择动力学中的位置"
-- **与 Neuroscience 的分工**：Neuroscience 处理"苦难的神经/躯体实现"；本文件处理"能被这些实现所承载的那个结构对象"
+- **本文件不做**：phenomenality / consciousness 定义、临床诊断或治疗标准、伦理应否评价、责任裁决、神经还原、AI subjecthood 判定
+- **本文件做**：区分 somatic signal / experienced pain / structural burden / registered suffering；组织有界 signal/structural taxonomy、四类 phenomenology hypotheses、反信号压制护栏、collective burden bridge 与 AI evidence boundary
+- **准入顺序**：先独立建立相关 first-person registration standing，再解释 burden model 与 `S(P,t)`；formal coordinate 不得反向 bootstrap standing
+- **方向纪律**：没有 independently typed declared direction 时，`T_dir` 不准入/未定义；`T_dir > 0` 不推出 health、goodness 或 legitimacy
+- **规范纪律**：本 owner 提供 structural input / burden evidence / bridge material；规范 verdict 归下游 owner
 
-当同一段话同时涉及结构判据与临床/规范/神经分流时，结构判据以本文件为准，分流以相应 domain 文件为准。
+当同一段话同时涉及结构模型、第一人称登记、临床实现或规范判断时，必须分别保留各自准入与 owner，不得由本文件的一项 proxy 替代其余层次。
