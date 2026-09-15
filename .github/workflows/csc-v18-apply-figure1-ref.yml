@@ -1,0 +1,31 @@
+name: CSC v18 apply Figure 1 reference switch
+
+on:
+  push:
+    branches:
+      - publication/csc-artificial-life-v18-e1e2e3-20260915
+
+permissions:
+  contents: write
+
+jobs:
+  revise:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Switch manuscript Figure 1 reference
+        run: python papers/apply_v18_figure1_ref.py
+      - name: Build guarded submission artifact
+        working-directory: papers
+        run: python build_artificial_life_v18_submission.py
+      - name: Commit manuscript reference switch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/CostlySelectiveClosure_v18_ArtificialLife_candidate.md
+          git commit -m "paper: use v18-aligned Experiment 1 design figure"
+          git push origin HEAD:publication/csc-artificial-life-v18-e1e2e3-20260915
