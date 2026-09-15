@@ -133,7 +133,7 @@ It edits exactly:
 
 Temporary write-workflow / patch-helper machinery has been removed; the normal governance workflow is restored.
 
-Normal Governance Preflight after Wave B showed base main, PR-local frontmatter and baseline monotonicity PASS, with split freshness failing for three derived reading surfaces. Do **not** close those derivatives yet: the independent semantic review found a blocking Core01 half-migration that should be repaired first.
+Normal Governance Preflight after Wave B shows base main, PR-local frontmatter and baseline monotonicity PASS, with split freshness failing for three derived reading surfaces. Do **not** close those derivatives yet: the independent semantic review found a blocking Core01 half-migration that should be repaired first.
 
 Independent Wave B verdict:
 
@@ -147,45 +147,54 @@ Wave B overall: REVISE
 Wave C: HOLD
 ```
 
-Blocking Core01 residuals include:
+Blocking / corrective Core01 scope now includes:
 
 ```text
-T-Core-A1C3 still gives theorem-strength cross-scale G / κ / consciousness continuity;
-A4 still back-defines all Selection through embodied G-hat / hardware;
-A5 still identifies L2 fixed points with Normative Closure;
-A6 still presents information integration as universal existence criterion;
-A7 still makes Fitness the objective of Selection;
-A10 still asserts universal eternal L0 latent trace / spiritual-topology consequence;
-A12 still derives all operators from a primordial operator entity;
-A11C1 still carries theorem-strength consciousness bridge language;
-Part A index still carries legacy labels / strengths that must match the repaired body;
-Part B and its connector-reachable shards still need local legacy-context guards;
-bottom Formalization Summary / Mechanism Explanation still restate superseded strong claims and must be locally marked legacy.
+T-Core-A1C3 theorem-strength cross-scale G / κ / consciousness continuity;
+A4 embodied G-hat / hardware back-definition of all Selection;
+A5 fixed-point Normative Closure as general L2;
+A6 information integration as universal existence criterion;
+A7 Fitness as universal Selection objective;
+A8/A9 universal life / holography definitions;
+A10 universal eternal L0 latent trace / spiritual-topology consequence;
+A11 universal friction/stability sign;
+A12 primordial operator entity;
+A11C1 theorem-strength consciousness/error-sensitivity bridge;
+Part A index/body routing mismatch after repair;
+Part B retrieval risk from old strong claims;
+late Formalization Summary / Mechanism Explanation still stating the old ontology as current summary.
 ```
 
 Required bounded repair remains inside the existing Core01 primary owner; do not expand the 10-owner scope.
 
-Minimum direction:
+The controlling execution source is now the completed:
+
+`Operations/Proposals/SRT_CORE01_SELECTION_TOTALITY_CORRECTIVE_PATCH_SPEC_2026-09-15.md`
+
+It contains exact replacement text, index targets, retrieval-safety banners, grep checks and the full C1-C16 acceptance gate.
+
+Core01 corrective acceptance:
 
 ```text
-A1C3 -> cross-scale formed-operator realization hypothesis; κ / consciousness phase map = bridge/model only;
-A4 -> formed / embodied operator finitude;
-A5 -> retained historical efficacy; fixed point = strong stabilization realization;
-A6 -> information-integration realization hypothesis;
-A7 -> domain-specific fitness-guided formed-operator hypothesis;
-A8/A9 -> scoped bridge / realization hypotheses;
-A10 -> conditional retained history; universal eternal imprint withdrawn / OPEN;
-A11 -> model-scoped friction / stability relation;
-A12 -> formed-operator continuity hypothesis, no primordial operator entity;
-A11C1 -> conditional consciousness bridge hypothesis;
-Part A index -> synchronized labels / strengths;
-Part B -> general + local legacy-context guards, no full rewrite;
-Formalization Summary / Mechanism Explanation -> local supersession markers.
+C1  primitive Selection does not require formed hardware / G-hat;
+C2  L2 generality = retained historical efficacy, not fixed-point normativity;
+C3  information integration is not primitive existence criterion;
+C4  fitness is not universal Selection objective;
+C5  life / holography remain domain hypotheses;
+C6  event occurrence does not guarantee eternal trace;
+C7  no primordial operator entity is required;
+C8  consciousness bridge claims are not theorem-strength by inheritance;
+C9  IDs remain stable where practical;
+C10 no new primitive ontology layer is introduced;
+C11 G-hat cross-scale continuity does not become a primitive Selection theorem;
+C12 consciousness / κ phase mapping is explicitly model / bridge scoped;
+C13 Part A index matches repaired active headings and strengths;
+C14 Part B cannot override Part A / L0 / Spine through legacy retrieval;
+C15 every connector-reachable major legacy Part B section carries a local legacy-context banner;
+C16 bottom Formalization Summary / Mechanism Explanation cannot be read as current canonical summaries.
 ```
 
-Core01 corrective acceptance is C1-C16 across the patch spec plus second-pass addendum.
-
-Only after this Core01 repair passes independent diff review should the derived closure run:
+Only after Core01 passes C1-C16 should the derived closure run:
 
 - `Core/Axioms_Split/`
 - `Core/Ontology_L0L1_Split/`
@@ -235,7 +244,8 @@ Next bounded action:
 
 ```text
 full-worktree / Codex Core01 A1C3 + A4-A12 semantic repair
--> synchronize Part A index + distributed Part B legacy guards + bottom summary markers
+-> synchronize Part A index
+-> add Part B distributed legacy guards + bottom summary supersession markers
 -> independent Core01 diff review against C1-C16
 -> regenerate three split surfaces
 -> regenerate / check context bundles
