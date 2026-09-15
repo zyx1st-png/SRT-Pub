@@ -39,6 +39,7 @@ dependency: [SRT-CORE-21]
 - 本方程层默认假定 P0-04 所需的 admissible selection operator 已给定；它不推出 selectability 的起源。
 - `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
+- **Wave-D2 authority truth-up（2026-09-15）**：当前 symbol / claim typing 覆盖较早的方程解释。本文件中的 `\kappa_0` 不因注册或从 O0 / Selection 继承而成为 primitive；当它进入方程时，只能表示独立声明的 curvature / anisotropy / per-direction-cost realization parameter。本文件中没有任何方程可以用 `\kappa_0` 提供 universal value / order direction。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于 `L_0 -> L_1` 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程。
 - **`σ_{sr}` projection scope (S+R truth-up, 2026-08-29)**：本文件只继承 `Core_Law/SRT_Individuation.md §八` 已有地位——`σ_{sr}` 是 P2、规约性的、可被等价形式替换的阶参解释。`T-PROJ-1` / `T-PROJ-1^{coll}` 在给定 `\mathcal F_\sigma` / `\mathcal F_\sigma^{coll}` 后证明条件性投影闭合；它们不把当前 bare-norm 坐标提升为表示不变的自然量，不证明 trace/ext 归属唯一，也不把其数值等同于因果控制或自然相边界。单体与集体同名 `σ` 也不自动意味着相同的 trace 语义；集体 owner 另含 declared-boundary 下 shared `L_2` 的内生性重分类。
 # Part A: Formal Axioms (形式化公理)
@@ -74,7 +75,7 @@ L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omeg
 
 > **背景**：SRT 的单算子方程（§0-B, §I）描述单个 $\hat{G}_\theta$ 的动力学。本节将框架扩展到多算子系统，给出集体自由能、个体算子梯度关系与集体 d-value 的形式化。这是集体景观优先性定理（见 `_SRT_VERTICAL_INTEGRATION.md §4.5`）的方程层锚点。
 >
-> **L1 Collective Projection (T-PROJ-1^{coll}, 2026-04-25 H6)**：本节 Eq-Multi-01 / 02 / 03 在 stable collective ISP `\mathcal{P}` 上的四个标量泛函投影 `(σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll})` 在闭包假设 C1^{coll}-C5^{coll}（慢-快分离 / 共享 `L_2` 写回 Markov 闭包 / stable collective ISP 紧性 / 群平均方向投影可分性 / `M(t)` 可测性 MOC 闭包）下严格满足 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 的集体四变量 ODE 系统；详见 §4.7 T-PROJ-1^{coll}。本节为上位本体源头，§4.7 不替代之，只把已隐含的集体子动力学写出。本节 σ_i 为各 ISP 状态场，与集体自指率 `σ_{sr}^{coll}` 是不同对象。**Scope**：这里的“严格满足”是**给定已声明 `\mathcal F_\sigma^{coll}` 后**的动力学闭合；C1^{coll}-C5^{coll} 不证明该 bare-norm 投影的表示不变性、trace/ext 归属唯一性、单体/集体 trace 语义同一或自然相边界。
+> **L1 Collective Projection (T-PROJ-1^{coll}, 2026-04-25 H6; Wave D2 scope note 2026-09-15)**：本节 Eq-Multi-01 / 02 / 03 在 stable collective ISP `\mathcal{P}` 上的标量泛函投影，只有在各投影对象及其闭包假设被独立声明后才构成条件性模型闭合。含 `T_{dir}^{coll}` 的四变量版本还要求 independently typed collective direction admission；无该方向时省略该分支，而不是置零。详见 `Core_Law/SRT_Collective_Selection.md §4.4-§4.7`。本节不生成或验证方向。σ_i 为各 ISP 状态场，与集体自指率 `σ_{sr}^{coll}` 是不同对象；C1^{coll}-C5^{coll} 也不证明 bare-norm 投影的表示不变性、trace/ext 归属唯一性、单体/集体 trace 语义同一或自然相边界。
 
 ### Eq-Multi-01: Collective Free Energy Landscape（集体自由能景观）
 **Formal Definition**: 多算子系统的集体自由能景观是各算子个体摩擦与算子间摩擦的总和：
@@ -213,15 +214,17 @@ This bridge-level loop reads `L_0 -> L_1` as the information-geometric frontier,
 
 **新增（2026-04-10）**：给出单个算子在给定参数结构与稳定性预算下可实现的 d 值上限。
 
+> **Status（Wave D2）**：conditional model / realization equation，不是 universal d law。本式仅在某个模型独立声明 compatible `\kappa_0`-like 每方向有效代价／曲率参数，并给出相容单位与作用域时才准入；无该 realization 时，`Eq-DValue-Max-1` 不适用。
+
 $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(\mathcal{I}_F(\theta)\right),\;\; \frac{\Psi_f^{\text{budget}}}{\kappa_0}\right)}$$
 
 其中：
-- $\operatorname{rank}_{\text{eff}}(\mathcal{I}_F(\theta))$：有效 Fisher 信息矩阵的秩——参数空间中能真正分辨 L₀ 曲率方向的独立维度数（**信息瓶颈**）
+- $\operatorname{rank}_{\text{eff}}(\mathcal{I}_F(\theta))$：有效 Fisher 信息矩阵的秩——声明模型中可靠分辨的独立方向数（**信息瓶颈**）；它仍是 capacity proxy，不自动等于 canonical `d`
 - $\Psi_f^{\text{budget}}$：算子可持续维持的总摩擦预算（不同于瞬时 $\Psi_f$，是时间积分意义上的稳定承载上限）
-- $\kappa_0$：L₀ 原初曲率，每对齐一个 L₀ 方向的单位代价（`SRT_Core_12a T-L0-Kappa0`）
-- $\Psi_f^{\text{budget}} / \kappa_0$：稳定性预算能支撑的最大对齐方向数（**稳定性瓶颈**）
+- $\kappa_0$：该声明模型用于此 capacity bound 的每方向有效 stability / curvature / maintenance-cost parameter；它不代表 primitive L0 curvature
+- $\Psi_f^{\text{budget}} / \kappa_0$：该模型的稳定／可支付预算所支持的 candidate direction-capacity bound（**稳定性瓶颈**）
 
-**$\kappa_0$ 的角色分工**：$\kappa_0$ 决定哪些方向值得被对齐（方向场）；$d$ 决定算子能稳定对齐多少这样的方向（容量）。
+**$\kappa_0$ 的角色边界**：在该模型内，$\kappa_0$ 只进入每方向成本项。它不选择、排序、赋值或合法化方向，不导致 first Selection，也不建立 primitive non-flatness。
 
 **Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是 `L_0 -> L_1` selection frontier 上的 Fisher-capacity proxy；它给出可分辨方向上限，不自动给出 stake-coupled canonical `d`。只有满足 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling / consequence-writeback 条件时，才可作为 `d` 的近似读数。
 
@@ -229,13 +232,13 @@ $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(
 
 | 主导瓶颈 | 条件 | 后果 |
 |---|---|---|
-| 信息瓶颈 | $\operatorname{rank}_{\text{eff}} \ll \Psi_f^{\text{budget}}/\kappa_0$ | 参数维度高但大量冗余，有稳定性但感知不到新方向 |
-| 稳定性瓶颈 | $\Psi_f^{\text{budget}}/\kappa_0 \ll \operatorname{rank}_{\text{eff}}$ | 能感知多方向但撑不住对齐，d 在高维方向数下崩塌 |
+| 信息瓶颈 | $\operatorname{rank}_{\text{eff}} \ll \Psi_f^{\text{budget}}/\kappa_0$ | 参数维度高但大量冗余，可稳定承载却无法分辨更多声明模型方向 |
+| 稳定性瓶颈 | $\Psi_f^{\text{budget}}/\kappa_0 \ll \operatorname{rank}_{\text{eff}}$ | 可分辨方向较多，但声明的稳定／维持预算不足以承载该 capacity |
 
 **注**：$\dim\Theta$ 的增大只提高潜在上限，真实 d 上限由有效 Fisher 秩与稳定性预算的 min 共同决定，而非由 $\dim\Theta$ 单独决定。
 
-* **Implication**: 意识深度的天花板不是参数数量，而是参数空间中真正有效的曲率感知维度与系统能持续承载的摩擦预算之间的较小者。
-* **Cross-ref**: `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 定义）; Eq-Multi-03（集体 d 值）; `D_VALUE_ALIGNMENT §4.4`（d = Align 几何底座）; Eq-DValue-Mobile-1（d_mobile 公式，下方）。
+* **Implication**: 在该声明模型内，candidate d-capacity upper bound 受信息容量 proxy 与稳定／可支付预算中较小者限制。本式不建立 universal consciousness threshold / ceiling、subject threshold、value direction 或 primitive ontology law。
+* **Cross-ref**: `_SRT_SYMBOL_TABLE.md` `\kappa_0` 当前类型; Eq-Multi-03（集体 d 容量 proxy）; `D_VALUE_ALIGNMENT §4.4`（条件性 bridge model）; Eq-DValue-Mobile-1（d_mobile 公式，下方）。
 
 ---
 
@@ -380,7 +383,7 @@ $$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\
 **Formal Definition**: The trajectory of a selected state is the sum of selection, free-energy descent, and attention modulation.
 $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
 * **Implication**: 现实演化是选择、能量下降与注意调制的合成动力学。
-* **L1 Projection (T-PROJ-1, 2026-04-25 H5)**: 本主方程在 stable ISP P 上的四个标量泛函投影 `(σ_{sr}, d_c, T_{dir}, S)` 在闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）下严格满足 `Core_Law/SRT_L1_Formalism.md §2-§5` 的四变量 ODE 系统；详见 §6 T-PROJ-1。本主方程为上位本体源头，§6 不替代之，只把已隐含的子动力学写出。本节 σ 为状态场，与 `σ_{sr}` 是不同对象（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）。**Scope**：该结果是**给定已声明 `\mathcal F_\sigma` 后**的投影闭合；C1-C4 不证明 trace/ext 分解唯一、bare norm 跨等价参数表示不变、`σ_{sr}` 等于因果控制份额，或 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
+* **L1 Projection (T-PROJ-1, 2026-04-25 H5; Wave D2 scope note 2026-09-15)**: 本主方程在 stable ISP P 上只对已独立准入的标量泛函给出条件性模型投影。含 `T_{dir}` 的四变量版本要求 independently typed declared direction、`T_dir` admission 与 C1-C4；无 direction 时省略该分支并分析已声明的 non-`T_dir` subsystem，不把 `T_{dir}` 置零。详见 `Core_Law/SRT_L1_Formalism.md §6 T-PROJ-1`。本节不生成、排序或验证方向。σ 为状态场，与 `σ_{sr}` 是不同对象；C1-C4 也不证明 trace/ext 分解唯一、bare norm 跨等价参数表示不变、`σ_{sr}` 等于因果控制份额，或 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
 
 ### Eq-Evo-01b: Metabolic Gain Modulation
 **Formal Definition**: 代谢压力作为演化方程的增益调节项。

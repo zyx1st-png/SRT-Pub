@@ -16,9 +16,10 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 > **Role**: L1 formalism hub. Collects the minimal differential dynamics for the four L1 order parameters—individuation self-reference ratio `σ_{sr}` (bare `σ` in this file's §2-§5 equations refers to the self-reference ratio per the namespace note below, **not** to the `Core/SRT_Core_22_Equations.md` main-equation state field), occlusion threshold `d_c`, directional transparency `T_dir` (promoted from algebraic proxy to independent dynamical variable in §3.5, 2026-04-25), and suffering registration `S`—and their coupling structure. Initial round (2026-04-24) covered three variables; `T_dir` ODE closure was the H2 follow-up.
 > **σ 符号命名空间 (governance-canonical, 2026-04-25)**: 本文件 §2–§5 中的 σ / σ_sub / σ_self / σ_health 统一对应 `σ_{sr} / σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`（自指率族，见 `Core_Law/SRT_L1_Hardening_Notes.md §1` 与 `_SRT_SYMBOL_TABLE.md §Usage Rule 12`）。§6"与主方程的关系"中出现的 σ 对应 `Core/SRT_Core_22_Equations.md` 的主方程状态场（不同对象）；该节已在原地显式标注。正文其余处保留历史符号 σ 以便论述流畅。
-> **Claim-level note**：方程本身在当前 draft_v0 状态按 P1-candidate 读；个别 coefficient、阈值与可测化形式按 P2/P3 读；实验代理语句按 P3/P4 下推至 `Neuroscience/` 与 `AI/`。
+> **Claim-level note**：除另行标注的条件性模型分支外，方程结构在当前 draft_v0 状态按 P1-candidate 读；个别 coefficient、阈值与可测化形式按 P2/P3 读；实验代理语句按 P3/P4 下推至 `Neuroscience/` 与 `AI/`。`T_dir` ODE 与含它的 T-PROJ-1 全四变量版本默认是 direction-admitted model 中的 P2 formal candidate，不因代数闭合自动升 P1。
 > **σ representation-scope truth-up (2026-08-29, S+R)**：本文件继承 `SRT_Individuation.md §八` 的既有地位：`σ_{sr}` 是规约性的、可替换为等价形式的 P2 阶参解释。§2 的 bare-norm 分解与由其得到的 ODE 只在**已声明**的 `θ^{trace}/θ^{ext}` 归属规则、参数表示与 norm/metric 约定下作为 model-local dynamics 成立；本文件不把 bare ratio 提升为表示不变的自然量、唯一历史归属量或因果控制份额。§6 T-PROJ-1 证明的是**给定 `\mathcal F_\sigma` 后**的条件性投影闭合；C1-C4 不提供 `\mathcal F_\sigma` 的 gauge、唯一归属或 invariant metric。§2.5 T-CHI-1 的族内不变性同样以所选 `σ_{sr}` 坐标已良定义为前提；它不单独证明 `σ_{sr}^{sub/self}` 是表示无关的自然相边界。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP；它们的定义仍以对应 canonical 文件为准。
+> **Wave-D2 direction-admission guard（2026-09-15）**：本文件的 `T_dir` 分支仅在 `_SRT_T_DIR_CANONICAL.md` 所要求的 independently typed、declared direction signal 已存在并且 `T_dir` 已在模型 `M` 中准入时成立。无该方向时，`T_dir` 与 `T_dir^{alg}` 是 undefined / not admitted，不是默认置零；仍可分析剩余的 non-T_dir subsystem。本文件不创造、排序或验证 direction。
 > **RC-A r(t) decision (2026-08-18)**：former P1-T05 不再提供 `r(t)` 的上游。局部 subtractive probe 显示原 `+\kappa_r r(t)` 与 `-\mu_r r(t)` 只是附加 pump / relief 通道，删除后四变量 ODE 仍定义良好，核心 T_dir / suffering / lethal-L2 结构仍保留。因此本文件**删除**该全局 `r(t)` 变量及两项，不把它改挂到 Selection simpliciter 或 `\varepsilon_{pg}`，也不为其选择新的 downstream 定义。§3.1 的 `r(d,P,t)` 仅是既有 occlusion threshold 的局部 operational capacity function，不等同于已删除的全局 `r(t)`，不定义 Selection occurrence。
 > **Depends on**：`Core_Law/SRT_Individuation.md`（σ 定义）、`Core_Law/SRT_Occlusion_Dynamics.md`（d_c 定义与 A/B 分期）、`Core_Law/SRT_Suffering.md`（S 定义与两型分类）、`Core/SRT_Core_22_Equations.md`（主动力学方程）。
 > **Relation**: This file is the **minimal formal coupling layer** for previously defined L1 objects. It does not introduce new ontology; it writes their dynamics down so the draft_v0 theories can be jointly tested rather than independently drifted.
@@ -31,7 +32,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 - `SRT_Individuation.md` 给出 σ(P,t) ∈ [0, 1]，自指率
 - `SRT_Occlusion_Dynamics.md` 给出 d_c(P,t)，遮蔽阈值
-- `_SRT_T_DIR_CANONICAL.md` 给出 T_dir(P,t) ∈ [0, 1]，方向透明度（本文件 §3.5 把它从代数代理升为独立动力学变量）
+- `_SRT_T_DIR_CANONICAL.md` 给出准入后的 T_dir(P,t) ∈ [0, 1]，方向透明度（本文件 §3.5 只在 declared-direction 模型中为其给出条件性动力学）
 - `SRT_Suffering.md` 给出 S(P,t) ≥ 0，结构性失配登记
 
 这四者目前都是 operational proxy，需要写成可联解的动力学。风险：
@@ -40,7 +41,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 2. **耦合丢失**：σ↑ 与 d_c↑ 与 S_{str}↑ 在理论直觉上强耦合，但结构上没有写下来；
 3. **T_dir 作为纯代数代理时的致命 `L_2` 盲点**：若 T_dir 瞬时等于 `T_{dir}^{\mathrm{alg}}`，则系统无法方程化"可读性本身也可以是伪造"这一 `_SRT_T_DIR_CANONICAL.md` 洞见。§3.5 加入独立 ODE 正是解决此盲点。
 
-本文件只做一件事：**给这四个变量写下最小耦合动力学**，让它们从 P1-candidate 有路径升到 P1。
+本文件只做一件事：**给已准入的变量写下最小耦合动力学**，使其结构与条件可被检验；无 direction 时保留 non-`T_dir` subsystem。形式闭合本身不把模型前件升级为 P1。
 
 本文件**不做**：
 
@@ -60,7 +61,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 | `d_{narrow}(P,t)` | 健康窄化上界（高于此 d 为通常运行） | `[d_c, d_max]` | 同上 |
 | `ρ(p,t)` | 路径层痕迹密度 | `≥ 0` | `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold` |
 | `Ψ_f(P,t)` | 本体论摩擦 / 可支付性代价 | `≥ 0` | `_SRT_PSI_F_CANONICAL.md` |
-| `T_dir(P,t)` | 方向透明度 | `[0, 1]` | `_SRT_T_DIR_CANONICAL.md` |
+| `T_dir(P,t)` | 对已声明方向的 access / readability / reorientation | direction 准入后为 `[0, 1]`；否则 undefined / not admitted | `_SRT_T_DIR_CANONICAL.md` |
 | `S(P,t)` | 苦难结构性登记 | `≥ 0` | `SRT_Suffering.md` |
 | `S_{sig}, S_{str}` | 信号型与结构型苦难 | `≥ 0`, `S = S_{sig} + S_{str}` | 同上 |
 | `θ_t^{trace}` | 历史累积算子分量（内源） | `≥ 0` 范数 | Individuation §Def-σ |
@@ -70,7 +71,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 | `π(t)` | 可支付性 / Ψ_f 支付率 | `≥ 0` | `_SRT_PSI_F_CANONICAL.md` |
 | `s_{ext}(t)` | 健康 `L_2` 外部支持率 | `≥ 0` | Suffering §支持机制 |
 | `\Delta\Psi_f^{\mathrm{gap}}(t)` | `Ψ_{f,actual} - Ψ_{f,felt}` 差（隐性债务） | `≥ 0` | `_SRT_PSI_F_CANONICAL.md §10`, `_SRT_T_DIR_CANONICAL.md §5-§6` |
-| `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)` | T_dir 的代数目标值（见 §3.4） | `[0, 1]` | 本文件 §3.4 |
+| `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)` | 已准入 direction 下的 model-local accessibility / readability 目标；不是 direction source | direction 准入后为 `[0, 1]`；否则 undefined / not admitted | 本文件 §3.4 |
 | `\kappa_{\mathrm{relax}}, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` | T_dir ODE 四项系数（§3.5） | `≥ 0` | 本文件 §3.5 |
 | `λ_*` | 对应分量的自然衰减率 | `≥ 0` | 常数或慢变 |
 
@@ -285,36 +286,38 @@ $$
 
 即当支付与干预等恢复通道塌向零而 d_c 持续被推高，则进入 B 期锁死。这里的 local capacity 描述是 occlusion operationalization，不对 Selection 本体作正负判决。
 
-### §3.4 T_dir 的代数目标值
+### §3.4 T_dir 的条件性代数目标值
 
-T_dir 的**瞬时代数目标值**（algebraic target）由 `d / d_c / σ` 给出：
+前提是 `declared direction exists + T_dir admitted in model M`。在此前提下，`d / d_c / σ` 可参数化 `T_dir` 的**model-local 瞬时 accessibility / readability 目标**：
 
 $$
 T_{dir}^{\mathrm{alg}}(t) \;:=\; \Theta\!\left(\frac{d - d_c}{d_{narrow} - d_c}\right) \cdot (1 - |\sigma - \sigma_{sub}^\dagger|)
 $$
 
-其中 `\Theta` 是光滑阶跃函数（早期版本 `\Theta(x) = \mathrm{clip}(x, 0, 1)`；二阶光滑族参数化留作 Open Pressure），`σ_{sub}^\dagger` 是最优主体位 σ 值（非 0 非 1 的中间稳态）。T_dir^{alg} 同时对 d 通道与 σ 健康度敏感，与 `_SRT_T_DIR_CANONICAL.md` Part I "value occlusion thesis" 一致。
+其中 `\Theta` 是光滑阶跃函数（早期版本 `\Theta(x) = \mathrm{clip}(x, 0, 1)`；二阶光滑族参数化留作 Open Pressure），`σ_{sub}^\dagger` 是该模型声明的中间工作点（非 0 非 1）。准入 direction 后，`d / d_c / σ` 只调制对该方向的 access / readability / reorientation target；本式不创造、排序、验证或发现方向。无 declared direction 时，该表达式不准入为 `T_dir^{alg}`。
 
 **但 T_dir 并不瞬时等于 T_dir^{alg}**：方向可读性具有自身惯性，依赖 `L_2` 沉积节律与信任累积——这要求 T_dir 有独立 ODE，见 §3.5。
 
-### §3.5 T_dir 作为独立动力学变量（四变量闭合项，2026-04-25；RC-A subtractive sync 2026-08-18）
+### §3.5 T_dir 作为条件性独立动力学变量（四变量闭合项，2026-04-25；RC-A subtractive sync 2026-08-18；Wave D2 truth-up 2026-09-15）
 
-> **立场**：本小节把 T_dir 从"算法代理"升为"带惯性与独立源项的 L1 动力学变量"，与 `σ, d_c, S` 一起构成四变量闭合系统。这是 `SRT_CLAIM_MODE_AUDIT.md §6.4` 升 P1 检查单第 9 项（`T_dir` 最小 ODE）的第一遍交付。
+> **立场**：本小节在 direction 已独立声明并准入后，把 T_dir 写成带惯性的 model-local access / readability 变量；它不成为 direction source。与 `σ, d_c, S` 合成的四变量闭合只在该模型前提内成立，默认按 P2 formal candidate 读。
 >
 > **RC-A subtraction**：former P1-T05 派生的 `+\kappa_r r(t)` 不是四变量闭合所必需，且已失去合法上游；本轮直接删除，不设 replacement term。
+>
+> **Admission precondition（Wave D2）**：本节保留的 ODE 只是 `declared direction exists + T_dir admitted in model M` 时的 candidate access / readability dynamics。所有项只调制相对于该方向的 access / reorientation，不提供 direction ontology。
 
 #### §3.5.1 最小 ODE
 
 $$
-\boxed{\;\frac{dT_{dir}}{dt} \;=\; \underbrace{-\,\kappa_{\mathrm{relax}} \cdot \bigl(T_{dir} - T_{dir}^{\mathrm{alg}}(t)\bigr)}_{\text{relaxation toward d/σ readability}} \;-\; \underbrace{\kappa_{\mathrm{mask}} \cdot \Delta\Psi_f^{\mathrm{gap}}(t)}_{\text{actual-vs-felt friction gap}} \;-\; \underbrace{\kappa_{S} \cdot S_{str}(t)}_{\text{structural suffering opacifies direction}} \;+\; \underbrace{\kappa_{\mathrm{sup}} \cdot s_{ext}(t)}_{\text{healthy } L_2 \text{ scaffolding}} \;$}
+\boxed{\;\frac{dT_{dir}}{dt} \;=\; \underbrace{-\,\kappa_{\mathrm{relax}} \cdot \bigl(T_{dir} - T_{dir}^{\mathrm{alg}}(t)\bigr)}_{\text{relaxation toward model-local readability}} \;-\; \underbrace{\kappa_{\mathrm{mask}} \cdot \Delta\Psi_f^{\mathrm{gap}}(t)}_{\text{actual-vs-felt access gap}} \;-\; \underbrace{\kappa_{S} \cdot S_{str}(t)}_{\text{structural suffering modulates access}} \;+\; \underbrace{\kappa_{\mathrm{sup}} \cdot s_{ext}(t)}_{\text{declared-model } L_2 \text{ scaffolding}} \;$}
 $$
 
 其中：
 
 - `\kappa_{\mathrm{relax}}`：弛豫率；控制 T_dir 追上代数目标的速率。**大于** 0 且通常**小于** d / σ 通道自身变化率（这正是 T_dir 具有惯性的形式根据）
 - `\Delta\Psi_f^{\mathrm{gap}}(t) := \Psi_{f,actual}(t) - \Psi_{f,felt}(t) \ge 0`：本体论摩擦的**实支付-感知**差，来自 `_SRT_PSI_F_CANONICAL.md §10` 与 `_SRT_T_DIR_CANONICAL.md §5–§6`。非零差意味着系统在"不知道自己在付"——这是 T_dir 的**隐性侵蚀项**，即使 `T_dir^{\mathrm{alg}}` 高也会把 T_dir 往下拖
-- `S_{str}(t)`：来自 §4.3；结构型苦难侵蚀方向可读性（扭曲 / 断裂感 / 空心都直接降低自身选择秩序的第一人称可见性）
-- `s_{ext}(t)`：健康 `L_2` 外部支持率；可以**暂时**把 T_dir 抬起，但本身不改变 `T_dir^{\mathrm{alg}}`，只是补偿性支架
+- `S_{str}(t)`：来自 §4.3；在声明的 pathology model 中，结构型苦难可降低对既定 criterion 的 access / readability / reorientation
+- `s_{ext}(t)`：该模型中的 `L_2` 外部支持率；可以**暂时**把 T_dir 抬起，但本身不改变 `T_dir^{\mathrm{alg}}`，只是补偿性支架；“支持”是相对于已声明 criterion 的模型语义
 
 **边界**（governance-canonical）：T_dir ∈ [0, 1] 由以下隐式投影保证——此 ODE 在 `\{T_{dir} = 0\}` 与 `\{T_{dir} = 1\}` 处应配合投影算子 `\Pi_{[0,1]}`，具体形式（硬截断 vs 光滑 sigmoid 重参化）留作 Open Pressure。
 
@@ -326,23 +329,23 @@ $$
 
 #### §3.5.3 致命 `L_2` 的方程化判据
 
-`_SRT_T_DIR_CANONICAL.md` "lethal `L_2`" 条件可写为：
+`_SRT_T_DIR_CANONICAL.md` "lethal `L_2`" 条件可在已准入 direction 的声明 pathology model 中写为：
 
 $$
 \mathrm{lethal\;} L_2 \;\Longleftrightarrow\; \bigl(T_{dir}^{\mathrm{alg}} \text{ 持续高}\bigr) \;\wedge\; \bigl(\Delta\Psi_f^{\mathrm{gap}} \text{ 持续累积}\bigr) \;\wedge\; \bigl(\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}\bigr)
 $$
 
-第三个条件是关键：当遮蔽扣除率**慢于**弛豫追赶率时，T_dir 视觉上仍然贴近 `T_dir^{\mathrm{alg}}`，系统**看不到**自己的债务；此时 T_dir 是致命的，不是保护性的。这正式化了"可读性本身也可以是陷阱"这一 `_SRT_T_DIR_CANONICAL.md` 洞见。
+第三个条件描述：当遮蔽扣除率**慢于**弛豫追赶率时，T_dir 视觉上仍然贴近 `T_dir^{\mathrm{alg}}`，但该模型认定的债务不可读。这只是相对于 declared criterion 的 apparent access：高或稳定 `T_dir` 不证明该 criterion 是 good、legitimate、healthy 或 morally authoritative。本判据在 direction 准入和模型假设之外不具 universal 效力。
 
 #### §3.5.4 与主方程的兼容
 
-T_dir 仍然是主方程的**导出投影**而非独立本体：
+direction 已准入时，T_dir 仍只是主方程的**条件性导出投影**而非独立本体：
 
 - 弛豫项把它系到 (d, σ) → 主方程 `\hat{G}_\theta[\sigma]` 与 `\nabla C_{L_2}` 的联合投影
 - `\Delta\Psi_f^{\mathrm{gap}}` 来自主方程 `\nabla F` 项的实支付-感知分裂
 - `S_{str}` 来自主方程收敛过程中失配登记
 
-这保证四变量系统不引入新本体。删除 former-P1-T05 的附加 pump 不影响这一兼容关系。
+这保证已准入的 T_dir 分支不引入新本体。无 declared direction 时应删去／边缘化该分支，而不是填入 `T_dir = 0` 来强行闭合；删除 former-P1-T05 的附加 pump 不影响其他已声明子系统。
 
 ---
 
@@ -364,11 +367,11 @@ $$
 \boxed{\;\frac{dS_{sig}}{dt} \;=\; \underbrace{\mu_{\Delta}\cdot\dot{\Delta}_{avail}(t)}_{\text{new misalignment}} \;-\; \underbrace{\mu_\pi \cdot \pi(t) \cdot \mathbb{1}[d > d_c]}_{\text{payable channel open}} \;-\; \underbrace{\mu_{sup} \cdot s_{ext}(t)}_{\text{healthy L_2 support}}\;}
 $$
 
-- `\dot{\Delta}_{avail}(t)`："可打开结构"的新变化（环境扰动、θ 演化、`L_0` 残压上升）
+- `\dot{\Delta}_{avail}(t)`："可打开结构"的新变化（环境扰动、θ 演化、声明 open-state representation 中的残差变化）
 - 指示函数 `\mathbb{1}[d > d_c]`：支付通道仅在非 B 期有效
 - `s_{ext}(t)`：来自健康 `L_2` 的外部支持率（不是替代，是降阻）
 
-> **算子级 canonical（T-DELTA-1，2026-04-25 H7）**：本式中的 `\dot{\Delta}_{avail}` 不是抽象差函数。其算子级定义、三成分分解 `w_{dir}\|\hat{R}\|_{T_{dir}} + w_{pay}\|\hat{R}\|_{\Psi_f} + w_{L_0}\|\hat{R}\|_{L_0}` 与可证伪算子空间假设 A1（仿射结构）/ A2（三子空间近似正交）/ A3（权重的赌注决定性）见 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`。`\dot{\Delta}_{avail}` 不由 `S_{sig}` 登记通道决定——这是 T-SUFF-4 反最小化原则与 T-IRR-4 的算子层根据。
+> **条件性算子模型（T-DELTA-1，2026-04-25 H7；Wave D2 truth-up）**：本式中的 `\dot{\Delta}_{avail}` 不是抽象差函数。其算子级定义与投影分解仅在所有纳入的 projection、residual representation 与 geometry 已独立声明时按 conditional formal/model theorem / P2 formal candidate 读；只有纳入 `T_dir` 分量时才额外要求 direction admission。详见 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`。这不降级本文件中与 T_dir 分支无关的局部方程。
 
 ### §4.3 结构型动力学
 
@@ -381,7 +384,7 @@ $$
 - `D_{trigger}(t)`：四类解耦触发（见证式承担、可支付性崩溃、直接 ε 接触、生命阶段相变）的总冲量
 - 最后一项要求 `π(t)` 与 `I_{window}(t)` **同时**非零——对应 Occlusion 理论强调的"B 期不是靠单一支付可解"
 
-> **算子级 canonical（T-IRR-3.5，2026-04-25 H4；ST-A source correction 2026-08-11）**：本式中的 `\nu_{block}` 采用条件性本地模型 `\nu_{block}(P, t) := \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)`，不是 former P1-T07 hierarchy 的构成性本地化。`\nu_{block} > 0` 是带三个独立前件的条件性结论 `(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件（**P1-candidate**）。单向性中「不可写为 `S_{sig} \rightleftharpoons S_{str}`」这一层另根于 P0-03 / T-IRR-2 的吸收后不可自动恢复。三因子核定见 `Core_Law/SRT_Irreversibility.md §4.5`。
+> **条件性本地模型（T-IRR-3.5，2026-04-25 H4；Wave D2 truth-up）**：本式中的 `\nu_{block}(P, t) := \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)` 不是 former P1-T07 hierarchy 的构成性本地化。`\varepsilon_{pg}` 必须先被独立准入为该模型的 realization parameter，不得从 O0 / Selection primitive inheritance 获得。只有三个前件都已在模型中准入时，`(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0` 才是一个代数结论。代数正性不自动使其成为 P1-candidate；claim strength 由最弱的独立前件／模型地位封顶。单向性中「不可写为 `S_{sig} \rightleftharpoons S_{str}`」一层另根于 P0-03 / T-IRR-2 的吸收后不可自动恢复。
 
 ### §4.4 T-SUFF-4 反最小化原则的方程语言
 
@@ -449,7 +452,7 @@ $$
 
 (iii) **T-IRR-3.5 阻塞转化项的单向性**：`\nu_{block}\psi(d; d_c)S_{sig}` 转 `S_{str}` 单向（不可自动双向化）的结论保持，因为单向性来自 P0-03 / T-IRR-2 的吸收后不可自动恢复，而非 `\psi` 的不连续性。
 
-(iv) **致命 `L_2` 判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`**（§3.5.3）：判据结构与 `\psi` 选择无关，仅依赖 `\psi` 在 `d \approx d_c` 域的非零（保证 `\nu_{block}\psi` 项有效）。
+(iv) **条件性致命 `L_2` 判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`**（§3.5.3）：只在 direction 已准入的声明 pathology model 内，判据结构与 `\psi` 选择无关；它不验证 declared criterion，也不在模型外取得 universal 效力。
 
 (v) **`\mathcal{F}_S` 投影分裂（T-PROJ-1, §6.5 第 4 项）**：`\hat{R}` 在 `\bar{\psi}` / `\psi` 投影下分裂为 `S_{sig}` / `S_{str}` 两路的算子级一致性保持；C3 闭包条件（stable-ISP 紧性）保证投影积分有意义。
 
@@ -465,11 +468,11 @@ T-SUFF-4 的核心是 `\dot{\Delta}_{avail}` 守恒（H7 T-DELTA-1）+ 通道总
 
 **(iii) T-IRR-3.5 单向性**：
 
-`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的非零正性是**带前件的条件性结论**：`(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件，即 **P1-candidate**。反向通道的不存在另有独立根据（P0-03 / T-IRR-2 absorption remainder）。两者均不由 former P1-T07 证成。`\psi` 只是吸收态邻域投影的具体候选写法；从硬指示到光滑指示只把"硬边界"换为"过渡区域"，但 B 期邻域是否为真正吸收态仍需具体模型证明。
+`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的非零正性只是**带已准入前件的条件性代数结论**：`\varepsilon_{pg}` 必须先被独立准入为声明模型的 realization parameter，不从 O0 / Selection 继承；然后 `(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`。代数正性不使该关系自动升为 P1-candidate，claim strength 由最弱的独立前件／模型地位封顶。反向通道的不存在另有独立根据（P0-03 / T-IRR-2 absorption remainder）。`\psi` 只是吸收态邻域投影的具体候选写法；B 期邻域是否为真正吸收态仍需具体模型证明。
 
 **(iv) 致命 `L_2` 判据**：
 
-`\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 来自 §3.5 T_dir ODE 的相对系数比较，与 `\psi` 通道指示无直接耦合。`\psi` 通过 `\Delta\Psi_f^{\mathrm{gap}}` 间接进入 T_dir ODE，但 `\Delta\Psi_f^{\mathrm{gap}}` 在 `d \approx d_c` 邻域的连续性由 Q-univ-3 单调过渡保证。
+在 direction 已准入的声明 pathology model 内，`\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 来自 §3.5 T_dir ODE 的相对系数比较，与 `\psi` 通道指示无直接耦合。`\psi` 通过 `\Delta\Psi_f^{\mathrm{gap}}` 间接进入 T_dir ODE，但 `\Delta\Psi_f^{\mathrm{gap}}` 在 `d \approx d_c` 邻域的连续性由 Q-univ-3 单调过渡保证；这仍不赋予 direction 或 criterion 正当性。
 
 **(v) `\mathcal{F}_S` 投影一致性**：
 
@@ -515,7 +518,7 @@ T-PROJ-1 §6.2 把 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` 按 `\mathbb{1}[d \gtrles
 
 ## §5. 四变量耦合总方程
 
-把 §2-§4（含 §3.5 T_dir 独立 ODE）合成一个四变量耦合系统（P 固定；显式耦合项粗体；T_dir 项浅灰注释）：
+当 `declared direction exists + T_dir admitted in model M` 时，可把 §2-§4（含 §3.5 T_dir 条件性 ODE）合成一个四变量耦合系统（P 固定；显式耦合项粗体；T_dir 项浅灰注释）：
 
 $$
 \begin{aligned}
@@ -529,13 +532,15 @@ $$
 
 （严格计数为五个标量方程，因为 S 被分为 `S_{sig}` 与 `S_{str}` 两个子通道；"四变量"按宏观变量计为 σ / d_c / T_dir / S，其中 S 自然分裂为两型。）
 
+无 direction 准入时，不得为了闭合而填入 `T_dir = 0`；应删去／边缘化 T_dir 方程及相关项，分析剩余已声明的 non-T_dir subsystem。
+
 ### §5.1 关键耦合路径
 
 1. **σ → d_c → S_{str}**：自指闭合推高遮蔽阈值，阻断支付通道，信号型苦难转结构型。这是扭曲型苦难（T-SUFF-3.4）的方程化路径
 2. **d_c ↑ → d_sig 被切断**：支付项通过指示函数变为零，系统进入 B 期动力学
 3. **S_{sig} 被外部压制（方程外干预）→ S_{str} ↑ 随 \dot{\Delta}_{avail}**：反最小化原则
 4. **D_{trigger} → S_{str} ↓ 但需 I_{window} 同时打开**：解耦触发不是单独作用，需要窗口协同——这对应 `Occlusion_Dynamics` 的强约束
-5. **T_dir 惯性 + ΔΨ_f^{gap} 扣除 → 致命 `L_2`**：当 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 时，T_dir 贴近 `T_{dir}^{\mathrm{alg}}` 但实支付持续累积；系统无法从 T_dir 读数本身发现债务（§3.5.3 方程化判据）
+5. **T_dir 惯性 + ΔΨ_f^{gap} 扣除 → 条件性致命 `L_2` 模型**：在 direction 已准入的模型中，当 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 时，T_dir 贴近 `T_{dir}^{\mathrm{alg}}` 但该模型的实支付继续累积；这不验证 declared criterion（§3.5.3）
 
 former P1-T05 所提供的 `S_{str} → T_dir ↓ → r ↓ → S_{sig}` feedback path 已删除；本轮不以新的 downstream rate 替代它。
 
@@ -547,23 +552,23 @@ $$
 \mathcal{A}_{path} \;:\; \sigma \to 1,\; d_c \to d_{max},\; T_{dir} \to T_{dir}^{\mathrm{alg}} \text{ 但 } \Delta\Psi_f^{\mathrm{gap}} > 0 \text{ 累积}, \; S_{str} > 0 \text{ 定常}, \; S_{sig} \to 0
 $$
 
-这是 **B 期 + σ→1 + 外观无信号型痛苦 + 可读性被伪造维持** 的联合吸引子。它对应：
+在已准入 direction 的声明 pathology model 中，这是 **B 期 + σ→1 + 外观无信号型痛苦 + apparent readability 被维持** 的联合吸引子。它对应：
 - Occlusion B 期锁死
 - Individuation 病理分支
 - Suffering 结构型主导但外观平静
-- T_dir 致命 `L_2`（§3.5.3 判据）——方向感不低，但不来自可靠的代价可见性
+- T_dir 条件性致命 `L_2` 模型（§3.5.3）——对 declared criterion 的 apparent access 不低，但该模型的代价可见性不足
 
 这正是本轮四理论共同诊断的**静默型致命 `L_2`**。方程化意义：系统稳态**不意味着健康稳态**，它可能是病理吸引子上的稳态。T_dir 加入四变量系统之后，病理吸引子的关键判据**不是 T_dir 低**，而是 `T_dir - T_dir^{\mathrm{alg}}` 平稳但 `\Delta\Psi_f^{\mathrm{gap}}` 持续增加。
 
 ### §5.3 健康工作区
 
-健康工作区 `\mathcal{H}`：
+在已准入 direction 的声明模型中，候选健康工作区 `\mathcal{H}`：
 
 $$
 \mathcal{H} \;:\; \sigma \in (\sigma_{sub}^\dagger \pm \delta),\; d > d_{narrow},\; T_{dir} \approx T_{dir}^{\mathrm{alg}} \text{ 且 } \Delta\Psi_f^{\mathrm{gap}} \to 0,\; S_{sig} \in [S_{min}, S_{max}],\; S_{str} \to 0
 $$
 
-关键观察：`\mathcal{H}` 不是单点吸引子，而是一个持续由外部接入 `i(t)`、可支付性 `\pi(t)`、低实-感 `Ψ_f` gap 与必要时的 `D_{trigger}` 等既有通道共同维持的区域。删除 former-P1-T05 的 `r(t)` 后，这个工作区仍由现有变量定义良好。
+关键观察：`\mathcal{H}` 不是单点吸引子，而是一个持续由外部接入 `i(t)`、可支付性 `\pi(t)`、低实-感 `Ψ_f` gap 与必要时的 `D_{trigger}` 等既有通道共同维持的模型区域。“健康”只相对于已声明 criterion，T_dir 不验证它；无 direction 准入时，不使用含 T_dir 的该定义。
 
 按 ST-A，该工作区至多是 generative reselectability 的实现候选，不是 P1 反闭合必要性的方程证明；更强的 consequence-sensitive rule revisability 仍需由 21C B13 独立审计，不能从 `\mathcal{H}` 或 Selection occurrence 直接推出。
 
@@ -571,7 +576,7 @@ $$
 
 ## §6. 与已有主方程的关系：T-PROJ-1 投影定理
 
-> **Status (2026-04-25 H5; RC-A source correction 2026-08-18)**：本节把"四变量系统是主方程的导出投影"作为**带条件证明的形式定理**。former P1-T05 的 `r(t)` 投影项已因上游撤销而删除；其余投影结构不依赖该项。
+> **Status (2026-04-25 H5; RC-A source correction 2026-08-18; Wave D2 truth-up 2026-09-15)**：本节把“已准入变量系统是主方程的导出投影”写成**条件性形式 / 模型定理**。含 `T_dir` 的全四变量版本还要求 direction admission，默认按 P2 formal candidate 读；无 direction 时只保留已定义的投影子集。former P1-T05 的 `r(t)` 投影项已因上游撤销而删除。
 
 ### §6.1 主方程与 L1 四变量的对接
 
@@ -585,7 +590,7 @@ $$
 
 （本节为消除符号冲突把主方程态场写作 `\sigma_M`；本文件其它处的 σ 仍指自指率 `σ_{sr}`，按 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 转读。）
 
-**问题陈述**：本文件 §2-§5 的四变量系统 `(σ_{sr}, d_c, T_{dir}, S)` 是否是主方程 `(\sigma_M, \theta)` 动力学的**严格导出投影**？
+**问题陈述**：在 direction 已被独立声明并准入模型 M 时，本文件 §2-§5 的四变量系统 `(σ_{sr}, d_c, T_{dir}, S)` 是否是主方程 `(\sigma_M, \theta)` 动力学的条件性导出投影？若无 direction 准入，只问不含 `T_{dir}` 的已声明子系统是否闭合；不得以 `T_{dir}=0` 代替缺失的方向对象。
 
 ### §6.2 投影算子的形式定义
 
@@ -613,10 +618,10 @@ $$
 **`T_{dir}` 投影**
 
 $$
-\mathcal{F}_T(\sigma_M, \theta) \;:=\; \cos\angle\bigl(\hat{G}_\theta[\sigma_M],\;\nabla_{L_0}\mathrm{Order}[\sigma_M]\bigr) \cdot \mathbb{1}\bigl[\mathrm{Anchor}_{L_0}(P, t)\bigr]
+\mathcal{F}_T(\sigma_M, \theta) \;:=\; \mathrm{Dir}(\Delta\hat{G}_\theta,t) \cdot R_{self}(P,t) \cdot A_{reorient}(P,t)
 $$
 
-`T_{dir}` 是"算子选择方向"与"L_0 选择秩序方向"的余弦对齐，在 anchoring 活跃时计入。`\Delta\Psi_f^{\mathrm{gap}}` 对应该余弦的实-感分裂误差（`\nabla F[\sigma_M]` 的不可读分量）。
+这里的 `\mathrm{Dir}(\Delta\hat{G}_\theta,t)` 必须先由模型相对于已声明 direction 给出；`R_{self}` 与 `A_{reorient}` 只限制该方向的自我相关可读性与重定向接入。若没有已声明 direction，`\mathcal{F}_T` 未定义并从投影族中省略，而不是取零。`d`、`d_c`、`σ_{sr}` 与 `L_0` 标签均不生成、排序或正当化该方向；`\Delta\Psi_f^{\mathrm{gap}}` 只在同一已声明方向下表示实—感接入误差。
 
 **`S` 投影**
 
@@ -636,7 +641,7 @@ $$
 \frac{d\mathcal{F}_X}{dt} \;=\; \langle\,\partial_{\sigma_M}\mathcal{F}_X,\; \dot\sigma_M\,\rangle + \langle\,\partial_\theta\mathcal{F}_X,\; \dot\theta\,\rangle
 $$
 
-把 Eq-Evo-01 与 Eq-Evo-02 代入，逐项展开 `\hat{G}_\theta - \nabla F - \lambda\nabla C_{L_2}` 与 `\gamma A - \delta\partial_\theta\Phi - k(\mathrm{Input}_{L_1}-\mathrm{Baseline})`，对每个 `X \in \{σ_{sr}, d_c, T_{dir}, S\}` 给出 ODE 形式。
+把 Eq-Evo-01 与 Eq-Evo-02 代入，逐项展开 `\hat{G}_\theta - \nabla F - \lambda\nabla C_{L_2}` 与 `\gamma A - \delta\partial_\theta\Phi - k(\mathrm{Input}_{L_1}-\mathrm{Baseline})`。direction 已准入时，对每个 `X \in \{σ_{sr}, d_c, T_{dir}, S\}` 给出 ODE 形式；否则只对已定义的 non-`T_{dir}` 投影分量应用链式法则。
 
 ### §6.4 闭包假设（Closure Assumptions）
 
@@ -647,13 +652,13 @@ $$
 | **C1** | **慢-快分离**：`θ` 与 `\sigma_M` 在不同时间尺度演化（`\dot\theta` 在 `\sigma_M` 收敛时间尺度上近似常数） | Eq-Evo-03 快-慢系统结构本身 |
 | **C2** | **`L_2` 写回的 Markov 闭包**：`\dot{\theta}^{\mathrm{trace}}` 仅依赖当前 `(σ_{sr}, ρ_{local})`，不显式依赖更高阶 `L_2` 历史 | Eq-Bridge-L2-01 写回方程的结构（写回是当前选择的函数，迹是过去选择的累积投影） |
 | **C3** | **Stable-ISP 紧性**：四个泛函 `\mathcal{F}_X` 在 P 的 stable-ISP 邻域内有界且 Lipschitz | P1-T06 stable ISP 四条件保证邻域紧致与可重选 |
-| **C4** | **方向投影的可分性**：`T_{dir}` 投影里的余弦角与 `\sigma_M` 的纵向幅度近似可分，使 `\dot{T}_{dir}` 不显式依赖 `\|\sigma_M\|` 高阶项 | Eq-Bridge-IG-01 信息几何 Fisher 形式给的局部正交分解 |
+| **C4** | **条件性方向投影的可分性**：在 direction 已独立声明并准入后，`\mathrm{Dir}(\Delta\hat{G}_\theta,t)` 与 `\sigma_M` 的纵向幅度近似可分，使 `\dot{T}_{dir}` 不显式依赖 `\|\sigma_M\|` 高阶项 | 声明模型中的局部几何假设；Eq-Bridge-IG-01 可提供一种 realization，但不生成方向 |
 
 **关键**：C1-C4 不是无代价假设——它们对应 §7 Open Pressures 中的具体未封口项（χ 跳跃族普适性、`\Delta\Psi_f^{\mathrm{gap}}` 算子化、阈值实证窗口）。当某条假设在特定 domain 失效时，对应的 L1 ODE 在该 domain 失去严格投影地位、降为 P3 现象学代理。
 
 ### §6.5 T-PROJ-1：四变量系统的投影定理
 
-**陈述（P1-candidate）**：在 stable ISP P 上，若闭包假设 C1-C4 成立，则
+**陈述（条件性形式 / 模型定理，默认按 P2 读）**：在 stable ISP P 上，若 direction 已被独立声明并准入模型 M，且闭包假设 C1-C4 成立，则
 
 $$
 \boxed{\;\frac{d\mathcal{F}_X}{dt}\bigg|_{\text{Eq-Evo-01,02}} \;\overset{C1\text{-}C4}{=}\; \mathrm{RHS}_X^{\text{§2-§5}} \;+\; O(\eta)\;}
@@ -661,6 +666,8 @@ $$
 $$
 
 其中 `\mathrm{RHS}_X^{\text{§2-§5}}` 是本文件 §2.2 / §3.2 / §3.5 / §4.2-§4.3 的 ODE 右端，`O(\eta)` 是闭包高阶残差（C1-C4 失效时的修正项；当 C1-C4 严格成立时 `\eta = 0`）。
+
+若无 direction 准入，定理域相应缩减：从 `X` 与 `\mathrm{RHS}_X` 中省略 `T_{dir}` 分支并检验剩余子系统。该情形不是把 `T_{dir}` 或 `\mathcal F_T` 设为零。
 
 **逐项对应**：
 
@@ -671,7 +678,7 @@ $$
 | `\sigma_{sr}` 外部驱动项 `\beta i` | Eq-Evo-02 稳态反冲项 `k(\mathrm{Input}_{L_1} - \mathrm{Baseline})` | C1 |
 | `d_c` 漂移项 `\gamma_\rho \rho_{local}` | `\nabla^2 C_{L_2}` 沿 `ρ_{local}` 方向的累积 | C3 |
 | `d_c` 漂移项 `\gamma_\sigma \max(0, σ_{sr}-σ_{sr}^{sub})` | `\nabla^2 C_{L_2}` 在 `\theta^{trace}` 占优区的局部刚化 | C2 + C3 |
-| `T_{dir}` 弛豫项 `-\kappa_{\mathrm{relax}}(T_{dir} - T_{dir}^{\mathrm{alg}})` | `\hat{G}_\theta` 与 `\nabla_{L_0}\mathrm{Order}` 的余弦角对 `(d, σ_{sr})` 的代数依赖 | C4 |
+| `T_{dir}` 弛豫项 `-\kappa_{\mathrm{relax}}(T_{dir} - T_{dir}^{\mathrm{alg}})` | 相对于已声明 direction 的 `\mathrm{Dir}(\Delta\hat{G}_\theta,t) R_{self} A_{reorient}` 的条件性接入动力学；`(d,d_c,σ_{sr})` 只调制接入 | C4 + direction admission |
 | `T_{dir}` 扣除项 `-\kappa_{\mathrm{mask}}\Delta\Psi_f^{\mathrm{gap}}` | `\nabla F[\sigma_M]` 中实-感分裂部分（不可读分量） | C4 |
 | `S_{sig}` 新失配项 `\mu_\Delta \dot{\Delta}_{avail}` | `\|\hat{R}\|_{H_P}` 在 `d > d_c` 投影 | C3 |
 | `S_{str}` 阻塞转化项 `\nu_{block}\mathbb{1}[d\le d_c]S_{sig}` | `\|\hat{R}\|_{H_P}` 在 `d \le d_c` 投影；`ν_{block}` 由 T-IRR-3.5 给出独立前件的条件模型 | C3 + T-IRR-3.5 |
@@ -684,7 +691,7 @@ former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不
 
 2. **d_c 项**：`\dot{\mathcal{F}}_d = \alpha_d \cdot \dot{\mathrm{tr}\,(\nabla^2 C_{L_2})^{-1}}`。`\nabla^2 C_{L_2}` 由 Eq-Bridge-L2-01 的 sediment-rate-and-stiffness 关系决定；其漂移率在 C3 下分解为 `ρ_{local}` 项 + `(σ_{sr}-σ_{sr}^{sub})` 项 + 干预窗口项 - 衰减项，即 §3.2 形式。
 
-3. **T_{dir} 项**：`\dot{\mathcal{F}}_T` 来自余弦角的导数；C4 保证横纵分离，使该导数分解为弛豫项（向代数目标 `T_{dir}^{\mathrm{alg}}`）+ 实-感分裂扣除项 + 结构型苦难侵蚀项 + 健康 `L_2` 支架项，即 RC-A subtractive sync 后的 §3.5 四项 ODE。
+3. **T_{dir} 项**：仅在 direction admission 成立时，`\dot{\mathcal{F}}_T` 来自已声明方向下的 readability / reorientation-access 泛函；C4 保证局部可分，使该导数分解为弛豫项（向条件性代数目标 `T_{dir}^{\mathrm{alg}}`）+ 实—感接入扣除项 + 结构型苦难调制项 + 声明模型中的 `L_2` 支架项，即 RC-A subtractive sync 后的 §3.5 四项 ODE。该推导不生成、排序或验证方向；无 direction 时本项省略。
 
 4. **S 项**：`\dot{\mathcal{F}}_S` 来自 `\|\hat{R}\|_{H_P}` 的链式导数；按 `\mathbb{1}[d > d_c]` / `\mathbb{1}[d \le d_c]` 投影分裂为 `S_{sig}` / `S_{str}` 两路；T-IRR-3.5 给出 `ν_{block}` 的条件性算子表达式。反向通道不自动存在根于 P0-03 / T-IRR-2，而正向系数的正性依赖 T-IRR-3.5 的三个前件；均非 former P1-T07 hierarchy 的后果。
 
@@ -702,18 +709,18 @@ former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不
 
 | 主张 | 升级前 | 升级后 |
 |---|---|---|
-| 四变量系统**没有引入新本体** | 陈述（§6 paragraph） | 定理后果（C1-C4 + 投影构造） |
-| 四变量系统**是主方程的导出** | 陈述 | C1-C4 满足时严格成立的恒等式（modulo `O(\eta)`）|
-| 主方程层 → 四变量层不需要额外 axiom | 隐含 | `\mathcal{F}_X` 投影算子 + Eq-Evo-01/02 的链式法则 |
+| 条件性四变量系统**没有引入新本体** | 陈述（§6 paragraph） | 在 direction admission 与 C1-C4 已声明时的模型后果；未新增方向本体 |
+| 四变量系统**是主方程的条件性导出** | 陈述 | direction admission + C1-C4 满足时成立的模型恒等式（modulo `O(\eta)`）|
+| 主方程层 → 四变量层需要哪些额外条件 | 隐含 | `\mathcal{F}_X` 投影算子 + direction admission + C1-C4 + Eq-Evo-01/02 的链式法则 |
 | 四变量 ODE 系数与主方程参数的关系 | 未给 | §6.5 表格给出 source-by-source 对应（系数本身仍为 P3）|
 
-**P1-candidate 地位的根据**：T-PROJ-1 把"四变量是主方程投影"从 modeling claim 升为 P1-candidate 定理；要升 P1，仍需把 C1-C4 中每一条与对应 Open Pressure（`\Delta\Psi_f^{\mathrm{gap}}` 算子化、χ 普适性、阈值实证窗口、集体版投影）逐条收口。删除 former-P1-T05 的无源项不改变本节整体 `P1-candidate` standing。
+**当前地位**：T-PROJ-1 是带 direction admission 与 C1-C4 的条件性形式 / 模型定理，默认按 P2 读；它不能把声明模型的方向、表示或闭包条件反向升级为 P1。更强局部 standing 需要在具体 domain 中分别固定 direction、投影几何与 C1-C4，并完成对应 Open Pressure（`\Delta\Psi_f^{\mathrm{gap}}` 算子化、χ 普适性、阈值实证窗口、集体版投影）的审计。删除 former-P1-T05 的无源项不改变这一边界。
 
 ---
 
 ## §7. Open Pressures
 
-> **Hardening status (2026-04-25; ST-A source correction 2026-08-11; RC-A r(t) correction 2026-08-18)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化已通过 H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）的 A1-A3 算子空间假设 + 三投影算子升 P1-candidate 收口；**§7.3 χ 跳跃函数族普适性已通过 H8（本文件 §2.5 T-CHI-1）"有效二阶相变核"四条属性 + 族内不变量定理收口**；§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出翻译表；§7.7 `L_0` 不可逆算子级对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5` 给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的条件性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理在 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造；集体版投影 T-PROJ-1^{coll} 在 `Core_Law/SRT_Collective_Selection.md §4.7`（H6，2026-04-25）给出 C1^{coll}-C5^{coll}**。Former P1-T05 派生的全局 `r(t)` 及其两个 ODE 项已删除，不作为待重新定义的 open pressure。
+> **Hardening status (2026-04-25; ST-A source correction 2026-08-11; RC-A r(t) correction 2026-08-18; Wave D2 truth-up 2026-09-15)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 已由 H7 写成 A1-A3 下的条件性算子模型，但 projection set、direction admission 与 open-state representation 仍须独立声明，默认 P2；**§7.3 χ 跳跃函数族普适性已通过 H8（本文件 §2.5 T-CHI-1）“有效二阶相变核”四条属性 + 族内不变量定理收口**；§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出翻译表；§7.7 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 只作为独立准入前件下的条件模型读取；§7.8 T_dir ODE 与 §6 T-PROJ-1 全四变量版本均以 direction admission 为前提。Former P1-T05 派生的全局 `r(t)` 及其两个 ODE 项已删除，不作为待重新定义的 open pressure。
 
 本 draft_v0 状态下尚未封口：
 
@@ -745,7 +752,7 @@ former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不
 
 ## §9. 定位与使用规则
 
-- **本文件做**：σ / d_c / T_dir / S 四变量的最小耦合动力学；病理吸引子与健康工作区的结构刻画；反最小化原则的方程化；致命 `L_2` 的可读性层方程化判据
+- **本文件做**：σ / d_c / S 与准入后 T_dir 的最小耦合动力学；条件性病理吸引子与健康工作区的结构刻画；反最小化原则的方程化；声明模型内致命 `L_2` 的可读性层判据
 - **本文件不做**：具体 domain 的参数固定、临床量表、实验设计、AI 实现细节；不定义 Selection occurrence 或 agency
 - **引用规则**：涉及四变量耦合、病理吸引子、健康工作区、致命 `L_2` 方程化判据的**方程级**陈述时，优先回链本文件；涉及四变量**概念**定义时，优先回链各自的 L1 主文件（T_dir → `_SRT_T_DIR_CANONICAL.md`）
-- **不得**把本文件的方程读成已经过实证检验的定量定律——它是 P1-candidate 结构形式化，是让 draft_v0 文件能够**联合被批评与修正**的手段
+- **不得**把本文件的方程读成已经过实证检验的定量定律，也不得以代数闭合升级 direction 或模型前件；它们是让 draft_v0 文件能够**联合被批评与修正**的结构形式化
