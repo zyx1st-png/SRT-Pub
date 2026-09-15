@@ -1,0 +1,23 @@
+name: CSC E2 invariant checks
+
+on:
+  push:
+    branches:
+      - experiment/csc-v17-recoverability-e2-20260915
+
+permissions:
+  contents: read
+
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install numpy
+      - name: Run invariant-only validation
+        working-directory: papers/costly_selective_closure_supplement
+        run: python test_recoverability_invariants.py
