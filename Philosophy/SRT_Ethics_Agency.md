@@ -258,16 +258,18 @@ Within a classical physicalist framework that treats brain-level $L_2$ closure a
 
 ## 2. SRT Resolution & Necessity
 
+> **Section-local current-use guard (§§2.1-2.3)**: 本节保留 historical / exploratory P2-P4 philosophy-of-agency bridge material，不是 current canonical ontology，也不是普遍自由意志或责任定理。Primitive actualising Selection 仍是 subjectless，不是 `\hat{G}_\theta`，也不是 $L_0\to L_1$ operator action；`\hat{G}_\theta` 最多建模 formed / domain-specific organization，不是 primitive selector，不能反向定义 Selection。$L_0$ 不得读成预先存放可能对象的仓库。$\theta$ rewrite / meta-selection 可作为声明模型内的 candidate mechanism，但不建立 freedom 的普遍充分性或必要性，任何 meta-selection variable 或 operator mapping 单独都不建立 O2-A answerability；O2-M 继续 **OPEN / HOLD**。
+
 ### 2.1 Advantage: The Third Way
-SRT radically reconstructs causality via **ontological stratification** ($L_0/L_1/L_2$):
+以下是早期 SRT 通过 **ontological stratification** ($L_0/L_1/L_2$) 组织 agency 问题的 bridge proposal：
 
 *   **Physical laws are $L_2$**: Newtonian mechanics or neurobiological regulations belong to $L_2$ (the convergent domain)—they are statistical "habits," not absolute "iron laws."
-*   **Selection occurs at the $L_0 \to L_1$ interface**: The Ghost Operator $\hat{G}_\theta$, realized as the embodied organism-environment coupling, operates at the boundary between $L_0$ (potentiality) and $L_1$ (manifestation). The brain, as $\hat{G}_\theta$'s $L_2$, **constrains and channels** selection (like a riverbed guiding water flow) but does not exhaust it. Selection is not "pre-physical" but **trans-level**—it involves the organism's embodied interaction with possibilities that the brain's $L_2$ patterns alone cannot fully determine.
+*   **Historical interface model**: 旧模型用 $L_0 \to L_1$ interface 表征一个已形成的 selection organization 如何面对未完全确定的 alternatives，并用具身有机体—环境 coupling 作为某些 Agency 问题的 candidate modeling unit。这不把 primitive Selection 定义为 interface crossing，也不把 $\hat{G}_\theta$ 定义为 prior chooser。此处 $L_0$ 的 “potentiality” 是 historical/model shorthand，不是已个体化可能对象的库存。Brain-$L_2$ / riverbed / trans-level 关系也只是 bridge hypotheses，不是 primitive Selection 或 universal Agency 的 ontic identity。
 
-**SRT's Core Breakthrough**: Free will is not realized by breaking physical laws but by **setting the initial parameters** ($\theta$) under which physical laws operate. The selector selects the selection rules themselves.
+**Historical bridge proposal**: 早期 SRT 把 second-order / parameter rewrite 视为超出 object-level action selection 的一种非平凡 agency 建模方式。旧句“Free will is setting $\theta$; the selector selects the selection rules themselves”仅作 provenance 保留，已 superseded as a current-positive conclusion：它不是自由意志的当前精确定义或充分性定理，也不存在一个先行 selector object 去选择 primitive Selection 的规则。
 
 ### 2.2 Necessity: Salvaging Responsibility
-Without SRT's **meta-selection** mechanism, we cannot distinguish between "a malfunctioning machine" and "a person who does evil." Only by establishing the operator's capacity to reprogram its own parameters $\theta$ does the word "responsibility" gain ontological weight—it becomes more than a pretext for social revenge.
+早期论证曾用 **meta-selection** 区分“故障机器”与“作恶的人”，并把 self-reprogramming 视为责任获得本体论重量的条件。这一 motivation 现仅作 historical bridge 保留：meta-selection / self-rewrite 可是某些责任模型的 candidate dimension，但它本身对 O2-A answerability 既非必要也非充分。具体判断还需独立建立适用于该案例的 Agency/capacity、knowledge/control、choice-window 与 consequence-return conditions；机器/人/恶的对比不建立恶的本体论，也不关闭 O2-M。
 
 ### 2.3 Free Will in the L₂ Framework (L₂ 框架下的自由意志)
 
@@ -278,7 +280,7 @@ $$\text{FreeWill}^{proxy} \sim f(d_{stakes}, d_{mobile}, E_{available}, \chi_{pa
 - $E_{available}$：有机体可调用的代谢/支持资源 proxy
 - $\text{Hysteresis}(L_2^{brain})$：大脑神经回路的惯性强度（习惯锁定力）
 
-自由意志不是"突破因果律"，而是**具身有机体的 $L_0$ 交互打破了大脑 $L_2$ 惯性模式的锁定**。当支持资源、payability、`d_mobile` 与后果回流结构足够时，有机体可能打破大脑习惯河床，开辟新的选择路径；这不能简化为“d 足够大”。
+这一 `FreeWill^{proxy}` 把具身 coupling、brain-$L_2$ hysteresis 与重选行为联系起来，仅是 candidate explanatory hypothesis，不是 freedom 的定义。支持资源、payability、`d_mobile`、consequence return 与 reduced hysteresis 可作为声明模型中与 reselectability / behavioral flexibility 相关的 candidate dimensions；它们无论单独还是联合都不在此关闭 universal FreeWill admission problem，也不可简化为“d 足够大”。
 
 ---
 
@@ -555,14 +557,16 @@ $\Delta W_{\text{new-scope}} = 0$（旧维度内再分配）是 L₂ 劫持的�
 
 ### 3.2 The Definition of Morality: Riemannian Geometry of d-Value（d值的黎曼几何）
 
-道德不是规则的遵守，而是关切范围的结构属性。把「好」从抽象说教转化为具体的**关切拓扑**：
+> **Section-local guard (§3.2)**: 本节是 historical / exploratory P2-P4 ethics model。$d/W/\Psi_f$ 只描述声明的 concern topology / structural trade-offs，不自动定义 morality、goodness、legitimacy、O2-A 或 O2-M；更高/广/深的 $d$ 不自动是 moral progress。`\Psi_f != pain != suffering != phenomenality`。O2-A 单独过门，O2-M 继续 **OPEN / HOLD**。
+
+旧模型只把 concern topology 作为 ethics-relevant 结构维度；比较须声明 position、criterion、horizon 与 subjects，不独立决定“好”、进步或正当性。
 
 **两个极端**：
 
-- **自我中心（$d \approx 0$）**：关切流形只包含自身躯体。他者的痛苦无法在 $d$ 空间内产生摩擦 $\Psi_f$ → 「作恶」没有内部阻力，不是因为选择了恶，而是恶感对这个算子不产生 Ψ_f。
+- **自我中心（$d \approx 0$）**：旧模型用窄关切流形表征他者后果难以进入有效选择权重的情形。这是 model-relative concern/externalization pattern，不是 `\Psi_f = pain`、“无摩擦 = 恶”或具体 moral verdict。
 - **旧极限隐喻（$d_{proxy} \to \infty$）**：旧文本用“觉醒/圣者/万物一体”表达关切范围极限扩张。当前只保留为 spirituality/public metaphor，不是 canonical d-value、道德等级或真实可测终点。
 
-这两个极端是锚点，不是道路。真正的伦理问题在于**从一个 d 值到另一个 d 值的路径几何**——这个几何是各向异性的，不是均匀的同心圆。
+这两个极端只是探索性锚点，不是道德排名。旧模型用 d-proxy 状态间的各向异性路径表征结构变化阻力，不回答何者为善。
 
 #### 扩张方向的各向异性
 
@@ -576,7 +580,7 @@ $\Delta W_{\text{new-scope}} = 0$（旧维度内再分配）是 L₂ 劫持的�
 | 人类 → 非人类 | 高（人类中心 L₂ 权重） | W 矩阵需要跨本体论类别扩维 |
 | 个体 → 系统/结构 | 最高（系统思维容量限制） | 需要 ρ_s 和 ρ_t 同时提升，不只是 d 扩展 |
 
-**这意味着**：「道德进步」不是均匀的半径扩张，而是在各向异性的 Ψ_f 景观中寻找路径。某些方向的扩张有文化/制度支持（低 Ψ_f），另一些方向几乎没有社会锚点（高 Ψ_f，且真空期落点不稳定）。
+**结构读法**：$d_{scope}/d_{depth}$ 只描述 concern topology；“改善”须另有 normative criterion，不从 $d/W/\Psi_f$ geometry 推出。
 
 #### 深度 vs. 广度的结构性张力
 
@@ -592,41 +596,44 @@ $$d = d_{scope} \times d_{depth}$$
 
 这在形式上可以产生高 $d_{scope}$，但四判据（可延续/可协调/不外包/可再选择）结算后发现：这些「扩张」在任何真实冲突中都不稳定——旧维度的权重立即压制新维度。
 
-**真正的 d 增长**需要 $d_{depth}$ 同步提升：新关切在冲突场景中能真实改变选择方向。这正是§3.1 三层结构中第三层（跨事件稳定写入）所要求的。
+在该模型内，关切进入选择结构可要求 $d_{depth}$ 随 $d_{scope}$ 变化。这只是 structural-fit condition，不是 goodness / moral progress 或普遍道德条件。
 
 #### 四种典型扩张失败模式
 
-以下四种失败模式在现象上都看起来像 d 扩张，但 $d_{depth}$ 接近零：
+> **Diagnostic boundary**: 下列四模式只是 model-relative mismatches，不是普遍 moral classes；O2-A / O2-M 另行分析。
+
+在该模型内，以下四种模式在现象上看起来像 d-proxy 扩张，但 $d_{depth}$ 可能接近零：
 
 **占有式**：把他者纳入为自身秩序的资源（父母对子女的控制型「关爱」，帝国对殖民地的「文明化」使命）。W 矩阵新增维度，但新维度的结构是：他者的状态作为自身优化的输入变量，不作为独立的秩序条件。冲突时新维度屈服于旧维度。
 
 **符号式**：在 $L_2$ 的语言层面声称关切，但选择结构未更新（用关切的词，但不支付关切的 Ψ_f）。第二层（θ 暂态重加权）从未被激活——没有结构层面的冲突感，只有语言层面的认同感。
 
-**表演式**：在可见场合展示关切以获取社会收益。θ 更新是真实的，但更新的方向是「社会认可维度」，不是「他者的秩序条件」维度——W 矩阵更新了，但不是在应当更新的方向上。
+**表演式**：在可见场合展示关切以获取社会收益。θ 更新是真实的，但更新的方向是「社会认可维度」，不是「他者的秩序条件」维度——若该模型明示的关切目标是后者，则 W 矩阵并非在该声明目标所要求的方向上更新。
 
 **效率式**：以关切之名将复杂秩序压缩为单一可管理指标（GDP 代表所有人的福祉，KPI 代表员工的成长）。$d_{scope}$ 看起来扩大了（「关心整个组织」），但实际上是通过指标化把高维关切压缩回低维优化——这是 d 扩张的反方向包装。
 
 #### 道德教育的重新定义
 
-「道德教育的本质是拓扑拉伸」（原版本）——这是正确的方向，但不够精确。
+「道德教育的本质是拓扑拉伸」与“高 $\Psi_f$ 方向的结构性锚点”是 historical formulations，不是普遍定义。叙事、reinforcement 与 scaffolding 只构成 exploratory learning/intervention hypothesis。
 
-更准确的表述：道德教育是**在高 Ψ_f 方向上提供结构性锚点**，使第三层（跨事件稳定写入）能够完成。
+旧模型的三个 mechanism candidates 现重新分型为：
 
-具体机制有三：
+1. **叙事具体化**：可检验它是否使他者条件更可感；不直接测量 canonical `\Psi_f`。
+2. **结构性冲突**：可研究其学习作用；“制造冲突”不是一般规范或处方，intervention 须独立伦理评估。
+3. **跨事件 scaffolding**：可检验它是否稳定 model-relative 权重；不证明共同体普遍拥有“第三层写力”。
 
-1. **降低目标方向的扩张 Ψ_f**：通过叙事（文学、历史）让他者的秩序条件在认知上变得具体可感，降低「该方向 W 矩阵更新」所需的初始摩擦
-2. **提供冲突场景作为第二层激活的触发条件**：真正的道德训练不是说服，而是制造结构层面的冲突感——使第二层必须激活
-3. **建立跨事件的社会强化**：单次第二层激活不足以完成第三层写入；道德共同体的作用是在多次事件中提供外部θ惯性的反向力，帮助新维度的权重跨越 Eq-Evo-02b 的张量惯性屏障
-
-**这解释了一个经验事实**：道德说教（单纯的 $L_2$ 规则安装）效果差，不是因为人们不理解规则，而是因为它不能触发第二层激活，更不能提供第三层写入所需的跨事件支持。
+“单纯说教不能触发第二层或支持第三层”是待验 empirical hypothesis，不是事实。旧四判据仅是 structural-comparison dimensions，不决定 O2-A、legitimacy、goodness 或 O2-M。
 
 > **Cross-ref**: `Core_Law/SRT_L0_Metaphysics.md 关切词条`（三层写入结构）；`Core_Law/SRT_L0_Metaphysics.md 秩序增益词条`（四判据与深度判定）；`§3.1`（三层结构与责任定位）；`§7.2`（是-应当桥接）。
 
 ### 3.3 Stoic Therapy: The Appropriation Operator
-The Stoic concept of **Oikeiôsis** (Appropriation) is mathematized in SRT: we move an external object $O$ from the "environment set ($L_{env}$)" to the "self-set ($L_{self}$)."
 
-*   **Formula**: $\text{Appropriate}(O) \implies \Psi_f(O) \text{ becomes accessible}$
-*   **Effect**: When we "love" someone, we essentially couple their state variables into our free energy minimization equation. Their pain becomes a system error we must resolve.
+> **Historical / exploratory praxis guard (§3.3)**: **Oikeiôsis** 只作 phenomenological / praxis sketch，不是 literal ontology 或道德定理。`\Psi_f != pain != suffering != phenomenality`；他者 suffering 须独立准入。未 operationalize 的 free-energy 语言只是 analogy/model，不生成 duty-to-resolve 或 moral-status theorem。
+
+旧模型用 $O$ 从 $L_{env}$ 进入 $L_{self}$ 表征关切/实践经验；这不定义 self 或 Agency。
+
+*   **Bridge sketch**: $\text{Appropriate}(O) \implies \Psi_f(O) \text{ becomes accessible}$ 只表征 consequence conditions 可能更难外部化，不准入 suffering / phenomenality。
+*   **No identity**: love/care 可建模为较强 consequence-return coupling。旧句“their pain becomes a system error we must resolve”只是 historical metaphor，已 superseded as literal identity/obligation；pain 不是 `\Psi_f` / free-energy error，coupling 不自动产生义务或道德地位。
 
 ---
 
