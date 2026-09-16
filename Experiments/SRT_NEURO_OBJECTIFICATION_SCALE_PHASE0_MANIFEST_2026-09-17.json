@@ -1,0 +1,85 @@
+{
+  "phase0_id": "SRT-NEURO-OBJECTIFICATION-SCALE-PHASE0-20260917",
+  "created": "2026-09-17",
+  "status": "locked_not_executed",
+  "paper": {
+    "title": "Single-cell resolution functional networks during unconsciousness are segregated into spatially intermixed modules",
+    "doi": "10.1016/j.celrep.2025.116902"
+  },
+  "source_replication_package": {
+    "data_doi": "10.5281/zenodo.17667863",
+    "expected_archive_name_from_source_readme": "mouse_data.zip",
+    "archive_sha256": null,
+    "archive_bytes": null,
+    "materialized": false,
+    "actual_file_inventory": []
+  },
+  "source_code": {
+    "repository": "https://github.com/oizumi-lab/mouse_network_2P",
+    "commit": "90e1c7dc5823f9d413b1bddf5c649ec87d6598a3",
+    "modified_for_phase0": false
+  },
+  "phase1_full_dataset": {
+    "repository": "RIKEN CBS Data Sharing Platform",
+    "version": "3.0",
+    "doi": "10.60178/cbs.20260708-001",
+    "allowed_in_phase0": false
+  },
+  "runtime": {
+    "required_family": "MATLAB-compatible runtime capable of executing the pinned source code",
+    "actual_runtime": null,
+    "toolbox_versions": {},
+    "available_in_current_agent_environment": false
+  },
+  "locked_source_parameters": {
+    "input_signal": "smoothed_spike",
+    "correlation": "corrcoef(dataMat')",
+    "correlation_transform_for_binary_threshold": "abs(corrMat)",
+    "network_type": "binary",
+    "louvain_iterations_per_parameter": 200,
+    "louvain_seed_root": 12345,
+    "single_cell_density_grid": [0.008, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.15, 0.2, 0.25, 0.3],
+    "coarse_density_grid": [0.05, 0.1, 0.15, 0.2, 0.25, 0.3],
+    "direct_scale_comparison_density": 0.05,
+    "sleep_window_frames": 1500,
+    "anesthesia_window_frames": 2900,
+    "coarse_neighbor_levels": [2, 5, 10, 20, 40, 80, 160],
+    "r0b_prespecified_coarse_neighbor_level": 40
+  },
+  "acceptance": {
+    "primary_q_absolute_tolerance": 0.000001,
+    "diagnostic_q_absolute_tolerance_ceiling": 0.0001,
+    "community_integer_label_identity_required": false,
+    "r0_pass_requires": [
+      "materialization_integrity_complete",
+      "r0a_regeneration_without_unexplained_discrepancy",
+      "r0b_recalculation_within_declared_tolerance_or_resolved_equivalence",
+      "qualitative_source_scale_conclusion_preserved"
+    ]
+  },
+  "r0a": {
+    "status": "not_run",
+    "targets": [
+      "Fig3 single-cell modularity state comparison",
+      "Fig7 modularity contrast across coarse-graining"
+    ],
+    "outputs": []
+  },
+  "r0b": {
+    "status": "not_run",
+    "targets": [
+      "sleep single-cell recalculation",
+      "sleep N_neighbors=40 recalculation",
+      "anesthesia single-cell recalculation",
+      "anesthesia N_neighbors=40 recalculation"
+    ],
+    "outputs": []
+  },
+  "verdict": "UNASSIGNED",
+  "phase1_authorized": false,
+  "notes": [
+    "Phase 0 uses the official paper replication package; RIKEN v3.0 is reserved for Phase 1.",
+    "No SRT-facing interpretation is authorized before an R0 verdict.",
+    "No archive checksum or file inventory is fabricated before materialization."
+  ]
+}
