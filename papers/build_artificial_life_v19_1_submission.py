@@ -11,6 +11,27 @@ FIG1 = "costly_selective_closure_supplement/figures/figure1_experiment_architect
 FIG2 = "costly_selective_closure_supplement/figures/figure2_evidence_summary_v19_1.svg"
 EXPLORATORY = "costly_selective_closure_supplement/results/consequence_scope_E4_individual_latency_exploratory.json"
 
+AI_DISCLOSURE_OLD = (
+    "OpenAI ChatGPT was used during the September 2026 revision process for literature organization, "
+    "manuscript restructuring, wording assistance, code-review support, experimental-governance checks, "
+    "consistency review, and post-hoc analysis scripting. Reported confirmatory numerical results derive "
+    "from committed experiment code and preserved result artifacts rather than from generative-model output. "
+    "The author determined the hypotheses, approved the preregistrations, accepted unfavorable confirmatory "
+    "outcomes, verified claims against preserved outputs, and takes responsibility for the manuscript."
+)
+
+AI_DISCLOSURE_SUBMISSION = (
+    "OpenAI ChatGPT (OpenAI; including GPT-5.6 Sol; accessed September 16, 2026) was used for literature "
+    "organization, manuscript restructuring, wording assistance, code-review support, experimental-governance "
+    "checks, consistency review, and post-hoc analysis scripting. Anthropic Claude (Anthropic; accessed "
+    "September 2026; exact model version not retained in the project record) was used as an independent "
+    "manuscript-critique tool during revision. Neither system is an author. Reported confirmatory numerical "
+    "results derive from committed experiment code and preserved result artifacts rather than from generative-model "
+    "output. The author determined the hypotheses, approved the preregistrations, accepted unfavorable confirmatory "
+    "outcomes, verified claims and citations, made the final interpretive decisions, and takes responsibility for "
+    "the manuscript."
+)
+
 
 def strip_frontmatter(text: str) -> str:
     if not text.startswith("---\n"):
@@ -29,6 +50,12 @@ def strip_repository_note(text: str) -> str:
         count=1,
         flags=re.S,
     )
+
+
+def patch_ai_disclosure(text: str) -> str:
+    if AI_DISCLOSURE_OLD not in text:
+        raise RuntimeError("could not locate internal v19.1 AI disclosure for submission patch")
+    return text.replace(AI_DISCLOSURE_OLD, AI_DISCLOSURE_SUBMISSION, 1)
 
 
 def word_count(text: str) -> int:
@@ -59,6 +86,9 @@ def validate(text: str) -> None:
         "29/30",
         "+0.02998",
         "rho = -0.494",
+        "OpenAI ChatGPT (OpenAI; including GPT-5.6 Sol; accessed September 16, 2026)",
+        "Anthropic Claude (Anthropic; accessed September 2026; exact model version not retained in the project record)",
+        "Neither system is an author.",
         EXPLORATORY,
         FIG1,
         FIG2,
@@ -76,6 +106,7 @@ def validate(text: str) -> None:
         "scope can explain only",
         "scope explains only",
         "the current evidence supports an additive or interacting role",
+        "> **Repository note.**",
     ]
     for item in forbidden:
         if item in text:
@@ -97,15 +128,21 @@ def validate(text: str) -> None:
     if "not a preregistered replication" not in text:
         raise RuntimeError("must preserve exploratory latency boundary")
 
+    wc = word_count(text)
+    if not (6000 <= wc <= 12000):
+        raise RuntimeError(f"Artificial Life Article word-count guard failed: {wc}")
+
 
 def main() -> None:
     text = SRC.read_text(encoding="utf-8")
     text = strip_frontmatter(text)
-    text = strip_repository_note(text).lstrip()
+    text = strip_repository_note(text)
+    text = patch_ai_disclosure(text).lstrip()
     validate(text)
     OUT.write_text(text, encoding="utf-8")
     print(f"wrote {OUT.relative_to(PAPERS.parent)}")
     print(f"submission-word-count (approx): {word_count(text)}")
+    print("journal_submission=NOT_PERFORMED")
 
 
 if __name__ == "__main__":
