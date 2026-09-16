@@ -61,7 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
 | 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 8 |
-| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 5 |
+| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 7 |
 
 ---
 
@@ -97,13 +97,15 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：245 条
-- A（融入）：165 条
+- 总提交：247 条
+- A（融入）：167 条
 - B（观察）：30 条
 - C（拒绝）：50 条
-- 融入率：67.3%
+- 融入率：67.6%
 
 ## Current note
+
+**2026-09-16 Kiyooka / Oomoto objectification-scale benchmark:** two A-class non-canonical neuroscience records added. Kiyooka et al. provide a peer-reviewed empirical constraint that state-dependent network modularity and module spatial organization change with declared analysis scale; Oomoto et al. expose the underlying reusable single-cell dataset and multiple processed representations. The resulting `SRT_NEURO_OBJECTIFICATION_SCALE_STABILITY_BENCHMARK_v0_1.md` is a separate N3/N5 objectification benchmark with source-replication and anti-HARKing gates. It does not reverse the Phase-8 `DATA-ACCESS-0 = NO-GO`, does not reopen NEURAL34, and creates no SRT scale/objectification scalar or canonical claim.
 
 **2026-09-08 Todd / mechanism-realisation hardening:** registered as an A-class bounded governance-method integration. GOV-SUB01 now requires an independently specified physical / operational realiser, bounded rival and held-out intervention with preregistered divergent causal signatures before a surviving SRT term can be described as mechanistically irreducible or physically realised. Same-projection fit, generic disruption and post-hoc mapping repair are explicitly blocked from doing that work. Todd's resource-bounded coupling hypothesis is not adopted as SRT and no canonical claim is promoted.
 
