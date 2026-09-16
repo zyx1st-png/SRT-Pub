@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+  <rect width="1200" height="430" fill="white"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+    .title { font-size: 18px; font-weight: 700; }
+    .ptitle { font-size: 14px; font-weight: 700; }
+    .small { font-size: 10px; }
+    .label { font-size: 11px; }
+    .axis { stroke: #333; stroke-width: 1; }
+    .grid { stroke: #ddd; stroke-width: 0.8; }
+    .mark { fill: #222; }
+    .muted { fill: #666; }
+    .iqr { stroke: #222; stroke-width: 3; }
+    .median { stroke: #111; stroke-width: 2; }
+    .ci { stroke: #111; stroke-width: 2; }
+  </style>
+
+  <text x="600" y="28" text-anchor="middle" class="title">E1-E4 evidence: large terminal phenomenon, failed scalar generalizations, modest scope effect</text>
+
+  <!-- Panel 1 -->
+  <g transform="translate(35,65)">
+    <rect x="0" y="0" width="255" height="275" fill="none" stroke="#333"/>
+    <text x="127.5" y="-15" text-anchor="middle" class="ptitle">E1: terminal vs restore</text>
+    <text x="8" y="18" class="small">endpoint mean cooperation; scale 0–0.60</text>
+    <line x1="38" y1="38" x2="38" y2="230" class="axis"/>
+    <line x1="38" y1="230" x2="235" y2="230" class="axis"/>
+    <g class="small">
+      <text x="32" y="234" text-anchor="end">0.0</text>
+      <text x="32" y="170" text-anchor="end">0.2</text>
+      <text x="32" y="106" text-anchor="end">0.4</text>
+      <text x="32" y="42" text-anchor="end">0.6</text>
+    </g>
+    <line x1="38" y1="166" x2="235" y2="166" class="grid"/>
+    <line x1="38" y1="102" x2="235" y2="102" class="grid"/>
+    <circle cx="95" cy="54.6" r="6" class="mark"/>
+    <circle cx="180" cy="218.3" r="6" class="mark"/>
+    <text x="95" y="250" text-anchor="middle" class="label">Terminal</text>
+    <text x="180" y="250" text-anchor="middle" class="label">Restore</text>
+    <text x="95" y="270" text-anchor="middle" class="small">mean 0.548; 17/30 &gt; 0.5</text>
+    <text x="180" y="270" text-anchor="middle" class="small">mean 0.0367</text>
+  </g>
+
+  <!-- Panel 2 -->
+  <g transform="translate(330,65)">
+    <rect x="0" y="0" width="255" height="275" fill="none" stroke="#333"/>
+    <text x="127.5" y="-15" text-anchor="middle" class="ptitle">E2: impairment duration</text>
+    <text x="8" y="18" class="small">median + IQR; magnified floor scale 0–0.007</text>
+    <line x1="38" y1="38" x2="38" y2="230" class="axis"/>
+    <line x1="38" y1="230" x2="235" y2="230" class="axis"/>
+    <g class="small">
+      <text x="32" y="234" text-anchor="end">0</text>
+      <text x="32" y="179" text-anchor="end">.002</text>
+      <text x="32" y="124" text-anchor="end">.004</text>
+      <text x="32" y="69" text-anchor="end">.006</text>
+    </g>
+    <g>
+      <line x1="68" y1="186.1" x2="68" y2="81.9" class="iqr"/><line x1="59" y1="153.2" x2="77" y2="153.2" class="median"/>
+      <line x1="112" y1="186.1" x2="112" y2="88.7" class="iqr"/><line x1="103" y1="139.5" x2="121" y2="139.5" class="median"/>
+      <line x1="156" y1="184.7" x2="156" y2="65.4" class="iqr"/><line x1="147" y1="136.7" x2="165" y2="136.7" class="median"/>
+      <line x1="200" y1="186.1" x2="200" y2="77.7" class="iqr"/><line x1="191" y1="136.7" x2="209" y2="136.7" class="median"/>
+    </g>
+    <g class="label">
+      <text x="68" y="250" text-anchor="middle">0</text><text x="112" y="250" text-anchor="middle">5</text><text x="156" y="250" text-anchor="middle">15</text><text x="200" y="250" text-anchor="middle">inf</text>
+    </g>
+    <text x="127.5" y="270" text-anchor="middle" class="small">&gt;0.5 seeds: 2/30, 1/30, 3/30, 1/30</text>
+  </g>
+
+  <!-- Panel 3 -->
+  <g transform="translate(625,65)">
+    <rect x="0" y="0" width="255" height="275" fill="none" stroke="#333"/>
+    <text x="127.5" y="-15" text-anchor="middle" class="ptitle">E3: individual recovery latency</text>
+    <text x="8" y="18" class="small">median + IQR; magnified floor scale 0–0.007</text>
+    <line x1="38" y1="38" x2="38" y2="230" class="axis"/>
+    <line x1="38" y1="230" x2="235" y2="230" class="axis"/>
+    <g class="small">
+      <text x="32" y="234" text-anchor="end">0</text>
+      <text x="32" y="179" text-anchor="end">.002</text>
+      <text x="32" y="124" text-anchor="end">.004</text>
+      <text x="32" y="69" text-anchor="end">.006</text>
+    </g>
+    <g>
+      <line x1="68" y1="186.1" x2="68" y2="81.9" class="iqr"/><line x1="59" y1="153.2" x2="77" y2="153.2" class="median"/>
+      <line x1="112" y1="215.7" x2="112" y2="155.9" class="iqr"/><line x1="103" y1="201.8" x2="121" y2="201.8" class="median"/>
+      <line x1="156" y1="230" x2="156" y2="214.6" class="iqr"/><line x1="147" y1="222.3" x2="165" y2="222.3" class="median"/>
+      <line x1="200" y1="230" x2="200" y2="230" class="iqr"/><line x1="191" y1="230" x2="209" y2="230" class="median"/>
+    </g>
+    <g class="label">
+      <text x="68" y="250" text-anchor="middle">k0</text><text x="112" y="250" text-anchor="middle">k2</text><text x="156" y="250" text-anchor="middle">k5</text><text x="200" y="250" text-anchor="middle">k10</text>
+    </g>
+    <text x="127.5" y="270" text-anchor="middle" class="small">&gt;0.5 seeds: 2/30, 3/30, 1/30, 1/30</text>
+  </g>
+
+  <!-- Panel 4 -->
+  <g transform="translate(920,65)">
+    <rect x="0" y="0" width="245" height="275" fill="none" stroke="#333"/>
+    <text x="122.5" y="-15" text-anchor="middle" class="ptitle">E4: shared − individual scope</text>
+    <text x="8" y="18" class="small">paired delta; DIFFERENT axis −0.06 to +0.30</text>
+    <line x1="38" y1="38" x2="38" y2="230" class="axis"/>
+    <line x1="38" y1="198" x2="225" y2="198" class="axis"/>
+    <g class="small">
+      <text x="32" y="234" text-anchor="end">−.06</text>
+      <text x="32" y="202" text-anchor="end">0</text>
+      <text x="32" y="149" text-anchor="end">.10</text>
+      <text x="32" y="96" text-anchor="end">.20</text>
+      <text x="32" y="43" text-anchor="end">.30</text>
+    </g>
+    <line x1="120" y1="191.6" x2="120" y2="169.3" class="ci"/>
+    <line x1="112" y1="191.6" x2="128" y2="191.6" class="ci"/>
+    <line x1="112" y1="169.3" x2="128" y2="169.3" class="ci"/>
+    <polygon points="120,177 126,183 120,189 114,183" class="mark"/>
+    <line x1="104" y1="192.9" x2="136" y2="192.9" class="median"/>
+    <text x="120" y="250" text-anchor="middle" class="label">mean +0.030</text>
+    <text x="120" y="266" text-anchor="middle" class="small">95% CI [+0.012,+0.054]</text>
+    <text x="120" y="282" text-anchor="middle" class="small">median +0.0095; 29/30 positive</text>
+  </g>
+
+  <text x="600" y="385" text-anchor="middle" class="label">E2/E3 medians and IQRs are shown on magnified floor scales because rare high-cooperation attractors make mean ± SD misleading.</text>
+  <text x="600" y="405" text-anchor="middle" class="small">Panels use explicitly different y-scales; confirmatory inference is experiment-specific and should not be read from visual distances across panels.</text>
+</svg>
