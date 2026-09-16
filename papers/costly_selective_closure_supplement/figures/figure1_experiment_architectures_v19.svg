@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+<rect width="100%" height="100%" fill="white"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+.h { font-size: 17px; font-weight: bold; }
+.t { font-size: 14px; font-weight: bold; }
+.b { font-size: 12px; }
+.s { font-size: 11px; }
+.box { fill: none; stroke: #333; stroke-width: 1.2; }
+.thin { stroke: #555; stroke-width: 1.2; fill: none; }
+.dash { stroke: #777; stroke-width: 1.1; stroke-dasharray: 5 4; fill: none; }
+</style>
+<text x="600" y="27" text-anchor="middle" class="h">E1-E4 manipulate different parts of the failure transition</text>
+<rect x="35" y="55" width="265" height="300" class="box"/>
+<text x="167" y="80" text-anchor="middle" class="t">E1: Terminal vs restore</text>
+<text x="167" y="102" text-anchor="middle" class="s">failure event: energy depletion</text>
+<rect x="67" y="128" width="80" height="38" rx="4" class="box"/>
+<rect x="187" y="128" width="80" height="38" rx="4" class="box"/>
+<text x="107" y="152" text-anchor="middle" class="b">Agent A</text>
+<text x="227" y="152" text-anchor="middle" class="b">Agent B</text>
+<path d="M107 166 L107 205" class="thin"/>
+<path d="M227 166 L227 205" class="thin"/>
+<text x="167" y="198" text-anchor="middle" class="s">one agent depletes</text>
+<path d="M167 205 L167 232" class="thin"/>
+<path d="M167 232 L112 258" class="thin"/>
+<path d="M167 232 L222 258" class="thin"/>
+<text x="91" y="280" text-anchor="middle" class="b">Terminal</text>
+<text x="91" y="299" text-anchor="middle" class="s">episode ends</text>
+<text x="91" y="315" text-anchor="middle" class="s">for both agents</text>
+<text x="243" y="280" text-anchor="middle" class="b">Restore</text>
+<text x="243" y="299" text-anchor="middle" class="s">failed agent → E0</text>
+<text x="243" y="315" text-anchor="middle" class="s">episode continues</text>
+<text x="167" y="341" text-anchor="middle" class="s">changes continuation + return length</text>
+<rect x="325" y="55" width="265" height="300" class="box"/>
+<text x="457" y="80" text-anchor="middle" class="t">E2: Persistent impairment</text>
+<text x="457" y="102" text-anchor="middle" class="s">fixed 50-step horizon; immediate rescue</text>
+<rect x="370" y="130" width="175" height="42" rx="4" class="box"/>
+<text x="457" y="155" text-anchor="middle" class="b">depletion → E0 rescue</text>
+<path d="M457 172 L457 205" class="thin"/>
+<rect x="370" y="205" width="175" height="54" rx="4" class="box"/>
+<text x="457" y="228" text-anchor="middle" class="b">ENERGY_GAIN × 0.75</text>
+<text x="457" y="247" text-anchor="middle" class="s">for τ = 0, 5, 15, ∞</text>
+<path d="M457 259 L457 290" class="thin"/>
+<text x="457" y="310" text-anchor="middle" class="s">normal actions remain available</text>
+<text x="457" y="328" text-anchor="middle" class="s">reward-bearing time remains</text>
+<text x="457" y="345" text-anchor="middle" class="s">direct consequence is internal-state damage</text>
+<rect x="615" y="55" width="265" height="300" class="box"/>
+<text x="747" y="80" text-anchor="middle" class="t">E3: Individual recovery</text>
+<text x="747" y="102" text-anchor="middle" class="s">fixed 50-step horizon; immediate rescue</text>
+<rect x="655" y="128" width="80" height="38" rx="4" class="box"/>
+<rect x="775" y="128" width="80" height="38" rx="4" class="box"/>
+<text x="695" y="152" text-anchor="middle" class="b">failed agent</text>
+<text x="815" y="152" text-anchor="middle" class="b">partner</text>
+<path d="M695 166 L695 215" class="thin"/>
+<path d="M815 166 L815 215" class="thin"/>
+<rect x="650" y="215" width="90" height="52" rx="4" class="box"/>
+<rect x="770" y="215" width="90" height="52" rx="4" class="box"/>
+<text x="695" y="238" text-anchor="middle" class="b">forced Rest</text>
+<text x="695" y="256" text-anchor="middle" class="s">k = 0,2,5,10</text>
+<text x="815" y="238" text-anchor="middle" class="b">acts normally</text>
+<text x="815" y="256" text-anchor="middle" class="s">unless it fails</text>
+<text x="747" y="303" text-anchor="middle" class="s">lost action opportunity is primarily local</text>
+<text x="747" y="322" text-anchor="middle" class="s">later audit: decision-count update confound</text>
+<rect x="905" y="55" width="260" height="300" class="box"/>
+<text x="1035" y="80" text-anchor="middle" class="t">E4: Consequence scope</text>
+<text x="1035" y="102" text-anchor="middle" class="s">same recovery mechanism; new seeds 101-130</text>
+<text x="1035" y="130" text-anchor="middle" class="b">Individual scope</text>
+<rect x="935" y="145" width="80" height="42" rx="4" class="box"/>
+<rect x="1055" y="145" width="80" height="42" rx="4" class="box"/>
+<text x="975" y="171" text-anchor="middle" class="s">failed: Rest</text>
+<text x="1095" y="171" text-anchor="middle" class="s">partner: acts</text>
+<text x="1035" y="219" text-anchor="middle" class="b">Shared scope</text>
+<rect x="935" y="234" width="80" height="42" rx="4" class="box"/>
+<rect x="1055" y="234" width="80" height="42" rx="4" class="box"/>
+<text x="975" y="260" text-anchor="middle" class="s">failed: Rest</text>
+<text x="1095" y="260" text-anchor="middle" class="s">partner: Rest</text>
+<path d="M1015 255 L1055 255" class="dash"/>
+<text x="1035" y="307" text-anchor="middle" class="s">k = 2,5,10; fixed-horizon update</text>
+<text x="1035" y="326" text-anchor="middle" class="s">primary endpoint: common 2,000-state probe</text>
+<text x="1035" y="345" text-anchor="middle" class="s">isolates a bounded action-opportunity scope effect</text>
+<text x="600" y="392" text-anchor="middle" class="b">The programme moves from a bundled terminal intervention to progressively narrower non-terminal discriminators.</text>
+<text x="600" y="414" text-anchor="middle" class="s">E4 does not reproduce terminality; it tests whether who bears temporary loss of normal action opportunity matters.</text>
+</svg>
