@@ -17,31 +17,31 @@ url: "https://doi.org/10.64898/2026.06.10.731488"
 date_published: "2026-06-12"
 date_added: "2026-09-16"
 evidence_level: preprint_primary_full_text_mouse_laminar_electrophysiology
-reliability_level: medium_high_for_reported_association_and_rate_vs_temporal_dissociation; limited_for_causal_gamma_mechanism_and_cross_domain_generalization
-srt_relevance: high_as_source_specific_realization_of_existing_relational_neural_bridge_and_as_guardrail_against_gain_only_readings
-integration_priority: medium_high
+reliability_level: medium_for_reported_task_associations; low_medium_for_rate_vs_temporal_separation; limited_for_causal_gamma_history_or_consciousness_inference
+srt_relevance: moderate_as_guardrail_against_rate_gain_gamma_selection_history_one_and_consciousness_overread
+integration_priority: low_medium
 related_srt_claims:
-  - neural_selection_before_representation
-  - component_state_vs_organizational_state
-  - transient_distributed_coordination
-  - history_conditioned_future_selectability
-  - salience_vs_d_value
-  - NEURAL33
-  - NEURAL34
-tags: [auditory-cortex, saliency, gamma, theta-gamma, spike-field-coupling, temporal-coordination, firing-rate, spatial-tuning, reward-history, distributed-representation]
+  - attentional_prioritization_vs_mean_firing_gain
+  - temporal_coordination_not_selection
+  - NEURAL33_boundary
+  - NEURAL34_match_failure
+  - salience_reward_not_d_value_identity
+  - one_formation_boundary
+  - consciousness_synchrony_guardrail
+tags: [auditory-cortex, saliency, gamma, theta-gamma, spike-field-coupling, temporal-coordination, firing-rate, spatial-tuning, task-engagement, guardrail]
 ---
 
 # SourceCard: Irani-Cereceda et al. — auditory spatial saliency through temporal coordination
 
-## 1. One-line summary
+## 1. Archive summary
 
-Irani-Cereceda et al. report that behaviorally relevant sound locations in mouse primary auditory cortex are preferentially expressed through **gamma-band synchronization, spike-field coupling, theta-gamma coupling, improved response reliability, and sharper spatial tuning without a consistent population-level firing-rate gain**; the effect generalizes to neutral probe sounds presented from the reward-associated location during active task engagement.
+Irani-Cereceda et al. report that, during an active auditory task in mice, sounds presented from the currently reward-associated spatial location show stronger gamma-range temporal coordination, spike-field coupling, response reliability and sharper spatial tuning, while a consistent population-level mean firing-rate gain is not observed. The effect extends from the rewarded pure tone to unrewarded AM broadband probe stimuli presented from the same location and is not reported during passive listening.
 
-For SRT, the paper is useful mainly as a **source-specific realization and guardrail** for already-owned neuroscience bridge claims: neural functional organization is not exhausted by component activity magnitude, and prior relevance history can alter how later matched-category sensory input is organized. It does not establish a new SRT construct.
+For SRT this is retained as a **B2 guardrail-only source**, not as reinforcement of `NEURAL33` or `NEURAL34`. The experiment does not isolate durable history-conditioned organization, does not meet the current `NEURAL34` matched-state hierarchy, does not separate salience from reward/stake well enough to serve as a `d-value` negative control, and does not test One formation or consciousness.
 
 ---
 
-## 2. Source boundary and evidence anchors
+## 2. Source boundary and load-bearing anchors
 
 Primary source:
 
@@ -52,256 +52,223 @@ Evidence status:
 ```text
 primary full-text preprint
 not peer reviewed in the supplied version
+mouse A1 laminar electrophysiology
+17 mice
+no causal gamma / optogenetic manipulation in the reported experiments
 ```
 
-Load-bearing source anchors from the supplied 25-page PDF:
+Load-bearing anchors from the supplied 25-page PDF:
 
-- **p.1 Summary:** behaviorally relevant sound locations selectively increase response reliability, temporal precision and spike-field coupling to gamma oscillations even for unrewarded sounds; the authors frame gamma-mediated synchronization as a mechanism by which spatial relevance reshapes auditory encoding.
-- **pp.3-4 / Fig.1 and Fig.2 setup:** head-fixed mice learned a rewarded 10 kHz tone at a fixed 90° location; neutral speech-envelope AM broadband-noise probes were then presented from four spatial locations in passive and active blocks. This design lets the authors ask whether spatial relevance generalizes to neutral sounds rather than simply tracking reward delivery or licking.
-- **pp.5-7 / Fig.3:** active engagement increases alpha-beta and gamma power, but spatial location significantly modulates gamma rather than alpha-beta power. Gamma is strongest in superficial A1 channels and tracks stimulus temporal structure. Theta-gamma phase-amplitude coupling is stronger in the active block and spatially biased toward the rewarded location.
-- **pp.7-9 / Fig.4:** spike-phase coupling in the gamma range increases during active engagement and is strongest for sounds at the rewarded location; the effect is absent in the passive block. Stronger gamma coupling is associated with higher trial-to-trial response reliability at the rewarded location.
-- **pp.9-11 / Fig.5:** population firing-rate modulation is heterogeneous, with increases and decreases balancing at population level and no robust location-specific gain account. Stronger gamma coupling is instead associated with narrower receptive fields and tuning closer to the rewarded location.
-- **pp.11-14 Discussion:** the authors interpret the result as temporal coordination / dynamic routing of distributed auditory representations rather than simple rate gain. They explicitly place the effect in value-driven saliency and top-down / predictive-coding-compatible frameworks.
-- **pp.13-14 limitations:** selective attention versus general arousal is not fully disentangled; there is no direct behavioral readout of spatial discrimination improvement; the experiment does not establish whether the task-dependent gamma synchronization is generated locally in A1 or inherited from higher-order inputs. The authors call for cell-type-specific and causal circuit tests.
+- **p.1 Summary:** behaviorally relevant sound locations are associated with increased response reliability, temporal precision and gamma-related spike-field coupling even for unrewarded sounds; the authors interpret this as temporal coordination rather than a simple firing-rate gain account.
+- **pp.3-4 and Methods pp.15-16:** training establishes the auditory go/no-go lick/reward contingency, but the spatial reward rule relevant to this recording paradigm is implemented in the active recording blocks. The rewarded 10 kHz sound is fixed at the 90° contralateral location; unrewarded AM broadband probes are presented across multiple locations. The AM probes are not novel neutral stimuli in the strong sense: they are familiar unrewarded/no-go stimuli.
+- **p.3 / recording design:** active and passive block order is counterbalanced, but the principal results are reported by pooled condition rather than by a residual/carry-over analysis testing whether active exposure changes a later matched passive state.
+- **pp.5-7 / Fig.3:** active engagement is associated with alpha-beta and gamma changes; spatial location modulates gamma measures, and theta-gamma coupling is stronger in the active condition around the rewarded location.
+- **pp.7-9 / Fig.4:** gamma-range spike-field coupling is stronger during active engagement and is strongest around the rewarded location; stronger coupling is associated with higher trial-to-trial reliability.
+- **pp.9-11 / Fig.5:** firing-rate changes are heterogeneous and the population analysis does not show a consistent location-specific mean gain; neurons with stronger gamma coupling are also more narrowly spatially tuned.
+- **pp.13-14 / stated limitations:** attention and arousal are not fully disentangled; there is no direct spatial-discrimination behavioral readout; the source of the task-dependent gamma organization may be local or inherited from higher-order inputs; causal necessity/sufficiency of gamma is not established.
 
 ---
 
-## 3. Core source claims
+## 3. What the source supports
 
-### 3.1 Behavioral relevance can be expressed through temporal coordination without consistent firing-rate gain
+### 3.1 Active task prioritization is associated with temporal coordination
 
-The strongest source-level dissociation is:
-
-```text
-behaviorally relevant location
--> stronger gamma / spike-field temporal coordination
--> higher trial reliability and sharper spatial tuning
-
-while
-
-consistent population-level firing-rate gain
-= not observed
-```
-
-The paper therefore supports the bounded claim that local or population firing magnitude alone does not exhaust the neural variables relevant to context-sensitive sensory prioritization.
-
-### 3.2 The relevant effect generalizes beyond the rewarded stimulus identity
-
-The rewarded event is a pure tone, whereas the principal neutral probes are unrewarded AM broadband sounds. Neutral probes from the reward-associated spatial location nevertheless show enhanced temporal coordination in the active context.
-
-Safe source-level reading:
+Safe source-level statement:
 
 ```text
-learned behavioral relevance of a spatial location
-can alter later processing of neutral sensory events at that location
+within the active task,
+current spatial relevance / reward association
+is associated with stronger temporal coordination,
+response reliability and tuning changes,
+without an observed consistent population mean firing-rate gain.
 ```
 
-Blocked source overreach:
+This is an association statement. The study does not establish that gamma coordination causes the prioritization effect.
+
+### 3.2 The spatial priority generalizes across stimulus identity within the active task
+
+The rewarded event is a 10 kHz tone, whereas the probe stimuli are unrewarded AM broadband sounds. The probes presented from the rewarded location show the same direction of enhanced temporal coordination.
+
+Safe compression:
 
 ```text
-reward history alone proves durable L2-like writeback
+current task-defined spatial priority
+can generalize from the rewarded stimulus
+across unrewarded probe identity.
 ```
 
-The paper shows history-conditioned saliency and later processing, not the full SRT history / sedimentation architecture.
-
-### 3.3 Distributed representation can be reorganized relationally
-
-The authors argue that auditory spatial information is represented in broadly tuned, overlapping populations rather than a sharply topographic cortical map. Their results support a mechanism in which temporally coordinated distributed ensembles can transiently prioritize behaviorally relevant locations.
-
-Safe source-level abstraction:
+Blocked reading:
 
 ```text
-component activation magnitude
-!=
-complete organizational state
+pre-existing learned reward-location history
+-> durable later relational disposition
 ```
 
-This is an implementation-level result, not an ontological proof that relations are prior to components.
+The supplied design does not establish that stronger history claim. It does not isolate a matched later state after the reward-location rule is removed, and it does not analyze persistent carry-over in a way that would support `NEURAL34`-style history attribution.
 
-### 3.4 Gamma is a candidate mechanism, not a demonstrated universal cause
+### 3.3 The firing-rate result is a bounded null-style dissociation, not an equivalence proof
 
-The study is correlational / observational at the circuit-mechanism level. It does not causally perturb gamma synchronization and does not establish gamma as necessary or sufficient for the behavioral relevance effect.
+The paper reports no consistent population-level location-specific mean firing-rate gain. That supports a useful caution against reducing task-related prioritization to mean rate alone.
 
-Therefore:
+It does **not** establish:
 
 ```text
-gamma synchronization = candidate circuit mechanism
-not
-proven universal selection mechanism
+firing-rate information = absent;
+firing-rate model = equivalent across conditions;
+temporal coordination causally replaces firing rate.
 ```
+
+No equivalence test or matched decoding comparison is reported in the supplied manuscript.
 
 ---
 
-## 4. Evidence / method
+## 4. Design limitations that matter for SRT use
 
-The study uses laminar electrophysiology in mouse A1 during passive versus task-engaged auditory spatial conditions.
+The following are load-bearing for interpretation rather than minor caveats:
 
-Key design features include:
+1. **Reward location is never swapped.** The rewarded sound remains at the 90° contralateral location, which is also a strongly driven location for right A1. Behavioral relevance is therefore not cleanly separated from location-specific sensory drive.
+2. **Arousal is not fully separable from spatial relevance.** The pupil analysis includes a location effect and a location-by-condition interaction in the small pupil subset; the authors themselves discuss transient arousal at salient spatial input.
+3. **Active versus passive is not a matched-state history comparison.** Task state, arousal and oscillatory power differ, so the design does not satisfy even `NEURAL34` Match-1 (`mean firing / power / task / arousal matched`).
+4. **No durable history residual is measured.** Counterbalanced active/passive order does not by itself establish carry-over, and the paper does not report a dedicated post-active passive residual analysis.
+5. **The firing-rate conclusion is based on absence of a robust population gain effect.** No equivalence test or decoding-based demonstration shows that rate information is absent or interchangeable.
+6. **Some inferential claims are narrower than the prose summary suggests.** The rewarded-location PPC effect is frequency-bounded, the passive/active contrast is partly argued through significant-versus-nonsignificant results rather than a direct interaction test, and the manuscript does not provide a direct behavioral readout of improved spatial discrimination.
+7. **Trial density is limited.** The supplied Methods report a small number of probe repetitions per speaker/envelope combination, and the stated rewarded-trial count is not obviously reconcilable with the described insertion frequency without additional clarification.
 
-1. **Reward-location learning** — a 10 kHz pure tone is associated with reward at one fixed spatial location.
-2. **Neutral spatial probes** — unrewarded AM broadband sounds are presented from multiple locations, allowing reward/motor confounds to be reduced when comparing neutral probe processing.
-3. **Laminar LFP + spike recording** — 4-shank, 32-channel arrays span cortical depth.
-4. **Temporal coordination measures** — gamma power, theta-gamma phase-amplitude coupling and spike-field pairwise phase consistency are analyzed alongside firing rate.
-5. **Representational quality measures** — trial-to-trial response similarity and spatial receptive-field metrics are related to coupling strength.
-
-A total of 17 transgenic mice were used. No optogenetic manipulation was performed in these experiments despite the lines being selected for later optogenetic work.
-
----
-
-## 5. Limits
-
-The supplied preprint does **not** establish:
-
-- peer-reviewed replication;
-- causal necessity or sufficiency of gamma synchronization;
-- a unique contribution of attention independent of arousal;
-- a direct improvement in spatial discrimination behavior caused by the measured temporal coordination;
-- whether the relevant gamma organization originates locally in A1 or arrives through top-down pathways;
-- a general principle that all neural selection is temporally synchronized;
-- that value-driven saliency is SRT `d-value`;
-- that reward history is SRT `L2` by identity;
-- that coherent functional ensembles satisfy the SRT One formation gate;
-- that gamma, theta-gamma coupling, saliency, binding or dynamic routing are SRT Selection itself.
+These limitations do not erase the reported association; they lower the strength of any mechanistic or SRT-specific inference.
 
 ---
 
-## 6. SRT relevance
+## 5. SRT guardrails
 
-### 6.1 Existing bridge support: organizational state beyond firing magnitude
+### 5.1 `NEURAL33`: adjacent example, not evidence reinforcement
 
-This source independently realizes a distinction already made in NEURAL33:
+`NEURAL33` explicitly states that its useful increment is **not generic synchrony**. Its stronger package combines distributed co-ripple coordination, single-neuron timing, working-memory load, relation repetition and behavioral association, with a relation-level residual beyond component magnitude.
 
-```text
-component / local activity variables
-!=
-organizational / relational state
-```
+This preprint instead provides local A1 LFP/spike-field temporal coordination plus tuning/reliability associations. It is therefore best treated as an adjacent mature-neuroscience example for the modest guard:
 
-The new source-specific value is modality and task context: in auditory spatial saliency, temporal organization predicts reliability / tuning even though a consistent population rate-gain account is absent.
+> **Task-related attentional prioritization need not appear as a consistent population mean firing-rate gain.**
 
-This is useful support for the neuroscience-facing guard:
+It does not add the stronger `NEURAL33` relational reinstatement burden.
 
-> **Selective neural organization need not be monotonic in local or population firing magnitude.**
+### 5.2 `NEURAL34`: current design fails the matched-state burden
 
-It does not warrant a new neural-selection variable.
-
-### 6.2 Existing bridge support: history-conditioned future organization
-
-The reward-associated spatial location changes later neutral-probe processing. This is compatible with the already-owned NEURAL34 structure:
+The current `NEURAL34` protocol requires, at minimum:
 
 ```text
-past history
--> altered response / relational disposition
--> current opportunity / context
--> realized coordination
+Match-1 = mean firing / power / task / arousal matched
 ```
 
-The paper adds an auditory saliency realization, not a new history ontology.
+The Irani-Cereceda active/passive comparison does not satisfy that condition. It therefore cannot be counted as evidence that history retains relation-specific predictive value after current-state controls.
 
-### 6.3 Guardrail value: salience / reward relevance are not `d-value`
+The owner-side evidence base also already includes Duncan et al. 2023 as a more direct learned-priority example in which a neutral probe exposes selection-history priority. The probe-priority motif is therefore not a new residual created by this source.
 
-The paper provides a clean example of reward-conditioned saliency and processing priority that can be described without establishing SRT stake / bearer / future-selectability burden.
+### 5.3 Reward / salience cannot be used here as a `d-value` negative control
 
-Therefore it is useful as a negative control for:
+The source does not license either identity:
 
 ```text
-reward relevance != salience != d-value
+salience = d-value
+reward = d-value
 ```
 
-The source itself does not discuss canonical SRT `d`.
+But it is also **not a clean negative control for `d-value`**, because the mice are water-restricted and reward/stake-related variables covary with the salient location/task rule. The experiment does not independently hold stake/reward constant while varying salience.
 
-### 6.4 Guardrail value: transient coherence is not One
+The existing CompactCore distinction remains sufficient:
 
-The paper's language of coherent functional ensembles, temporal binding and dynamic routing does not show the SRT One requirement of recurrent role-bearing reconstitution / regenerative formation.
+> **Salience makes a signal noticeable; d-value makes a signal matter.**
 
-Safe use:
+No new `d-value` guardrail or revival path is created here.
+
+### 5.4 Temporal coordination does not test One formation
+
+The relevant One owner defines One through a relatively separable **Selection-mediated vertical reconstitution path** in which prior Selection-generated vertical organization materially enters later Selection conditions and is recurrently regenerated.
+
+An already formed organism's transient neural ensemble coordination is downstream of that admission problem. Therefore:
 
 ```text
-transient synchrony + functional coherence
-!= sufficient One evidence
+transient gamma / spike-field coherence
+!= evidence for One formation
 ```
 
-This is SRT-side boundary work, not a conclusion of the source authors.
+This source does not need a Bearer-like "role-bearing" gloss to make that point.
+
+### 5.5 Temporal binding here is not consciousness evidence
+
+The manuscript contains no consciousness contrast, no report/no-report manipulation directed at phenomenality, and no evidence that its gamma coordination is sufficient for unified experience.
+
+Accordingly it must **not** be used as support for phase-synchrony / coherence claims in `Ax-CONSC-MECH-3` or `T-FIELD-1` without a separate consciousness-specific evidential bridge.
 
 ---
 
-## 7. Owner-side novelty probe
+## 6. Owner-side subtraction
 
 ```text
-Candidate increment:
-  auditory-saliency realization of relational temporal organization beyond firing-rate gain;
-  reward-location history affecting later neutral-probe coordination;
-  source-specific gamma / theta-gamma / spike-field example for existing bridge guards.
+Potential-looking increment:
+  auditory spatial prioritization
+  + gamma / theta-gamma / spike-field coordination
+  + unrewarded probe generalization
+  + no consistent population mean firing-rate gain.
 
-Likely owner(s):
-  Neuroscience/patches/SRT_Neuro_NEURAL33_Distributed_Ripple_Relational_Reinstatement_v0_1.md
-  Neuroscience/patches/SRT_Neuro_NEURAL34_History_Conditioned_Relational_Possibility_v0_1.md
-  Neuroscience/SRT_Neural_Mechanisms_CompactCore.md
-  _SRT_D_VALUE_CANONICAL.md only as a non-identity guard; no owner edit proposed.
-
-Bounded probe:
-  searched gamma / synchronization / temporal coordination / theta-gamma;
-  searched firing-rate residual / relation-level organization;
-  checked NEURAL33 organizational-state and relational-residual claims;
-  checked NEURAL34 history-conditioned relational possibility and matched-state logic;
-  checked current CompactCore gain / gating / stabilization wording.
-
-Verdict:
-  already owned + source-specific realization + guardrail support.
+Subtraction:
+  generic oscillatory coordination is a mature N3 neighbor;
+  NEURAL33 already owns the stronger component-state != organizational-state burden;
+  NEURAL34 already owns the matched-state history test and already contains Duncan et al. 2023 for learned-priority / probe logic;
+  CompactCore already owns gain as one candidate mechanism rather than the identity of attention or salience;
+  CompactCore already owns salience != d-value;
+  One owner already blocks one-shot / downstream mechanism from One formation;
+  consciousness/field owners already make synchrony claims, so this source requires a non-promotion guard rather than reinforcement.
 
 Residual after subtraction:
-  no new SRT construct. The bounded residual is empirical breadth:
-  an auditory spatial-saliency paradigm in which behavioral relevance is carried by temporal coordination,
-  response reliability and tuning rather than a consistent population firing-rate gain,
-  with neutral probes inheriting location-level relevance.
+  one source-specific auditory example showing that active task prioritization can covary with temporal coordination and representational reliability without an observed consistent mean population firing-rate gain.
 
-Inherited premises / constructive use:
-  NEURAL33: component state != organizational state;
-  NEURAL34: history can alter later relational realization probability;
-  CompactCore: neural manifestation / anchoring proxy is not reducible to stronger activity;
-  d owner: salience / reward remain non-identical to d-value.
-
-Forbidden parallel construct:
-  no new NEURAL number;
-  no temporal-coordination scalar;
-  no gamma = Selection identity;
-  no saliency = verticality or d-value identity;
-  no coherent ensemble = One identity.
+Verdict:
+  B2 guardrail-only.
+  No A-conversion route is currently identified.
 ```
 
 ---
 
-## 8. Pipeline 1 disposition
+## 7. Pipeline 1 disposition
 
 ```text
 Verdict:
-  B1 for future NEURAL33 / NEURAL34 evidence reinforcement and matched-history experiment design;
-  B2 for gamma / saliency / One / d-value non-identity guardrails.
-
-Contribution route:
-  O-track = bounded realization / reverse-constraint support only;
-  D-track = none / not claimed.
+  B2 = guardrail-only.
 
 Current writeback:
   SourceCard + Material Log only.
 
+O-track:
+  no owner reinforcement claim;
+  bounded source-specific boundary / mature-neighbor example only.
+
+D-track:
+  none / not claimed.
+
 No current landing target:
-  do not edit Neural CompactCore, prediction table, canonical owner, or create a new PatchNote / Hook under the active synthesis-target freeze.
+  no new NEURAL number;
+  no PatchNote / Hook;
+  no Neural CompactCore edit;
+  no prediction-table edit;
+  no canonical owner edit.
 ```
 
-Revival triggers:
+### Revival triggers
 
-1. `NEURAL33` / `NEURAL34` or the Neural CompactCore is explicitly reopened for synthesis;
-2. a peer-reviewed version or causal gamma / circuit manipulation materially changes the mechanism evidence;
-3. the matched-current-input / different-history P4 workline is revised and needs an auditory saliency implementation / negative control;
-4. a future `d-value` hardening pass needs a reward-salience negative control.
+Material remains parked unless one of the following named events occurs:
+
+1. **reward-location swap / counterbalancing replication** appears, or a reanalysis directly separates location-specific sensory drive from task relevance;
+2. **persistent carry-over / residual analysis** is reported after the reward-location rule is removed, with current task/arousal/power substantially matched;
+3. `NEURAL33` / `NEURAL34` is explicitly reopened **after** the first-well Case-B constraint and third-well HOLD are revisited, and a new dataset satisfies the relevant relation/history discriminator rather than only generic synchrony;
+4. a peer-reviewed or causal circuit version materially changes the mechanism evidence enough to reopen the source classification.
+
+A future `d-value` hardening pass alone is **not** a revival trigger for this source, because reward/stake and salience are not independently manipulated here.
 
 ---
 
-## 9. Suggested future use
+## 8. Safe future citation
 
-If a future neuroscience synthesis is explicitly reopened, the safest native sentence is:
+If this paper is cited in future neuroscience prose, the safe use is narrow:
 
-> **Selective neural organization can be realized through context-sensitive temporal coordination among distributed units, with changes in reliability and tuning even when no consistent population firing-rate gain is present.**
+> **In one mouse A1 preprint, active task-related spatial prioritization was associated with stronger gamma-related temporal coordination, response reliability and sharper tuning without an observed consistent population mean firing-rate gain.**
 
-This should be used as a neuroscience bridge statement only. The source does not validate SRT ontology or establish gamma as the neural identity of Selection.
+Do not extend that sentence into `history -> relational disposition`, `gamma = Selection`, `salience = d-value`, `coherence = One`, or `synchrony = consciousness` without independent evidence.
