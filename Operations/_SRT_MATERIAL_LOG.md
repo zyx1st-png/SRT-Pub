@@ -61,7 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
 | 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 8 |
-| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 4 |
+| 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 5 |
 
 ---
 
@@ -97,20 +97,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：244 条
+- 总提交：245 条
 - A（融入）：165 条
-- B（观察）：29 条
+- B（观察）：30 条
 - C（拒绝）：50 条
-- 融入率：67.6%
-
-## Current note
-
-**2026-09-08 Todd / mechanism-realisation hardening:** registered as an A-class bounded governance-method integration. GOV-SUB01 now requires an independently specified physical / operational realiser, bounded rival and held-out intervention with preregistered divergent causal signatures before a surviving SRT term can be described as mechanistically irreducible or physically realised. Same-projection fit, generic disruption and post-hoc mapping repair are explicitly blocked from doing that work. Todd's resource-bounded coupling hypothesis is not adopted as SRT and no canonical claim is promoted.
-
-**2026-09-08 Bowler / NEURAL36:** registered as an A-class bounded neuroscience reverse constraint. Structured history -> recurrent organisation -> attractor / eigenspectrum scaffold -> changed later strategy is treated as generic-dynamics absorption pressure, not SRT evidence. Local support + inhibition, low dimensionality and generalization are insufficient for the stronger Cycle-2 / generative-health burden; pre-One / first Selection-position genesis remains outside the source.
-
-**2026-08-23 Nave / processual bearer / FEP reverse pressure:** registered as an A-class bounded non-canonical P3 O-track synthesis after owner-side subtraction. The correction removes the parallel selectability ladder, routes candidate-generation effects to existing HEF/HCLR owners, keeps branching numerical identity open under PH-IND05, disambiguates Nave/Mossio constraint closure from SRT PCC, and records a P3 scope/antecedent-adequacy pressure on treating Core14's approximately stable Markov-blanket condition as a general biological individuation entrance. D-track is not claimed and no P0/P1 definition is changed.
-
-**2026-08-23 Becker / Aha / phenomenal-compression:** retained as a bounded non-canonical P3/P4 A-class package under a named Consolidation Phase exception. Source-level claims now carry section/figure anchors; the material registry and neuroscience route are explicit; the dialogue-generated theory is kept in one philosophy hook rather than duplicated across the close-read index. D-track remains prospective only, and no canonical or dormant synthesis owner is opened.
-
-**2026-08-19 Huerta / vagal cytokine representation:** retained as a bounded non-canonical P3/P4 state-dependent peripheral-representation bridge. The source-backed increment is not merely that the vagus carries inflammatory information: nodose neurons form distinguishable cytokine response patterns, and DSS colitis changes the response geometry itself—baseline recruitment rises while spontaneous amplitude falls, TNF/IL-10 evoked responses fall without a comparable IL-1β amplitude reduction, and cytokine cluster separability deteriorates. The O-track value is a missing interface layer between bodily state and central processing plus a correction against one-scalar inflammation framing. D-track is not established: day-14 persistence occurs while colon length is still abnormal, so matched-present-state / different-history remains prospective. The stronger bearer-specific future-consequence test remains P4 and must be compared against frozen richer history/active-inference rivals. No canonical owner or dormant neuroscience synthesis target is edited in this pass.
+- 融入率：67.3%
