@@ -15,7 +15,7 @@ claim_mode: independent_review
 E3-A SEMANTIC LANDING: FINAL PASS
 E3-A SPLIT DERIVATIVE CLOSURE: FINAL PASS
 NEW THEORY BLOCKER: NONE
-E3-B: HOLD UNTIL CURRENT-BASE GOVERNANCE REVALIDATION
+E3-B: HOLD UNTIL PRELANDING / AUTHOR AUTHORIZATION
 MERGE #976: NO
 ```
 
@@ -111,7 +111,7 @@ f30e43467f87
 
 The shards are regenerated reading aids with `canonical: false`; they carry post-E3-A owner text and do not create independent semantic authority.
 
-## 4. Governance result on execution base
+## 4. Governance result on PR stored base
 
 Remote Governance Preflight for the final derivative head:
 
@@ -122,16 +122,22 @@ head 75991c9510017afcd9e62db4d7033b791f9d553d
 conclusion SUCCESS
 ```
 
-This success was produced from the PR event whose base checkpoint was the earlier main line.
+Later review/control-plane run #2404 also succeeded, but its GitHub Actions payload explicitly still reported the PR base SHA as:
+
+```text
+a149e4ed930c652dbb03311804c1398828d54681
+```
+
+Therefore neither run is described here as current-live-main revalidation. They establish governance health relative to the PR's stored base event snapshot.
 
 ## 5. Live-main divergence after execution
 
-During / after E3-A execution, live `main` advanced independently through the Costly Selective Closure / Artificial Life publication chain.
+During / after E3-A execution, live `main` advanced independently through the Costly Selective Closure / Artificial Life publication chain and closeout records.
 
-Latest verified live main at this review:
+Latest verified live main during follow-up prelanding:
 
 ```text
-df4b233c4ab029bfe97b48aa94a510607456557c
+24d4a794df10995a7baaa64e647275e37985efce
 ```
 
 Comparison from the earlier checkpoint
@@ -140,7 +146,7 @@ Comparison from the earlier checkpoint
 a149e4ed930c652dbb03311804c1398828d54681
 ```
 
-to current live main shows publication-chain additions under `papers/` / `papers/costly_selective_closure_supplement/` and no edits to:
+to that live-main state shows publication-chain additions under `papers/` / `papers/costly_selective_closure_supplement/` plus `Operations/Audits/CSC_V19_MAIN_LANDING_CLOSEOUT_2026-09-16.md`, and no edits to:
 
 ```text
 Core_Law/SRT_L1_Formalism.md
@@ -163,16 +169,28 @@ Therefore:
 
 ```text
 semantic overlap with E3-A: NO
-publication-chain divergence: YES
+semantic overlap with planned E3-B owner: NO
+publication/closeout divergence: YES
 ```
 
 No rebase/merge is authorized merely to remove commit-distance divergence.
 
-## 6. Current-base revalidation gate
+## 6. Future execution gate under base divergence
 
-Because run #2395 predates the newest live-main publication merges, the next PR-side control-plane commit must be used to obtain a fresh Governance Preflight against the then-current main state before E3-B semantic execution is authorized.
+Because GitHub PR workflow payloads are still carrying the older stored base SHA, future semantic execution must not rely on a green PR run alone as proof of latest-main non-overlap.
 
-This is a governance revalidation requirement, not a theory blocker and not a request to rebase automatically.
+Instead, at session start:
+
+```text
+fetch latest live main
+inspect main-only delta since the last verified checkpoint
+verify no overlap with the authorized owner / authority dependencies
+run repository base-main health / local governance checks as specified by AGENTS
+```
+
+If live main touches the relevant semantic surface, STOP rather than auto-rebase.
+
+If divergence remains publication-only / non-overlapping, bounded branch work may continue without an automatic rebase; final merge reconciliation remains a later explicit gate.
 
 ## 7. Final disposition
 
@@ -182,7 +200,7 @@ E3-A semantic scope = CLOSED
 E3-A deterministic split closure = CLOSED
 
 E3-B read-only prelanding = ALLOWED
-E3-B semantic execution = HOLD pending current-base governance revalidation + exact spec
+E3-B semantic execution = NOT AUTHORIZED until exact spec + author authorization
 
 E4+ = HOLD
 MERGE #976 = NO
