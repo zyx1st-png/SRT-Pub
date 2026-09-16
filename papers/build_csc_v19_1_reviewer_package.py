@@ -154,7 +154,7 @@ def validate_payload(payload: dict[str, bytes]) -> None:
         "Who Bears Failure? Consequence Scope and Terminality in Survival-Coupled Artificial Agents",
         "post-hoc exploratory only",
         "does not claim that Experiment 4 quantitatively explains a fraction",
-        "E4 first-confirmatory artifact",
+        "E4 FULL FIRST-CONFIRMATORY ARTIFACT",
     ]
     for phrase in required_readme:
         if phrase not in readme:
