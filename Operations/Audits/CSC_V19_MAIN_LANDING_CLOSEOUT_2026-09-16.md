@@ -2,8 +2,11 @@
 id: CSC-V19-MAIN-LANDING-CLOSEOUT-2026-09-16
 type: publication_landing_closeout
 status: active
+layer: operations
+epistemic_layer: os
 canonical: false
 claim_mode: evidence
+ai_do_not_use_for_definition: true
 updated: 2026-09-16
 ---
 
