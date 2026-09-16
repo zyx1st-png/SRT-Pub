@@ -2,13 +2,14 @@
 id: SRT-ETHICS-AGENCY
 type: theory
 tags: [Ethics, Agency, FreeWill, Responsibility, Hybrid]
-status: bridge_realign_v1
+status: active
+version: bridge_realign_v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 canonical: false
 claim_level: P2-P4
-dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics]
+dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-SUFFERING, SRT-OCCLUSION-DYNAMICS, SRT-IRREVERSIBILITY]
 ---
 
 # SRT Philosophy Part 2: Ethics & Agency (Hybrid Edition)
@@ -36,13 +37,17 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 
 This file is no longer a canonical definition authority. It is a high-value ethics/agency bridge and historical-formal workspace.
 
+> **2026-09-16 current-authority override (controlling throughout this file)**: This owner is an active, non-canonical P2-P4 bridge/history surface. Cross-owner authority runs from `Core_Law/SRT_Generative_Ontology_Spine.md` and the compatible local owners into this file, never in reverse. **Primitive Selection is not `\hat{G}_\theta`**; exact Agency sufficiency remains OPEN / not established; and **O2-M remains OPEN / HOLD**. Formulas and named `Ax-*` / `T-*` handles below do not by themselves define primitive Selection, Agency, freedom, responsibility, suffering, health, legitimacy or O2-M. Older stronger prose is retained only for history and retrieval where locally marked; when it conflicts with current authority it is superseded as an active SRT conclusion. No legacy passage may be used to back-define or override a canonical owner.
+
 Canonical anchors:
 
+- `Core_Law/SRT_Generative_Ontology_Spine.md` for cross-owner Selection / One / Stable ISP / Bearer / Agency routing and O1 / O2-C / O2-A / O2-M separation.
 - `Core_Law/SRT_Individuation.md` for subject-position / consequence-return structure.
 - `_SRT_D_VALUE_CANONICAL.md` for `d-value`, `D_eff`, `d_stakes`, and `d_mobile`.
 - `_SRT_PSI_F_CANONICAL.md` for `Ψ_f` as payability burden / ontological friction.
-- `Core_Law/SRT_Suffering.md` for suffering as structural object.
-- `Core_Law/SRT_Occlusion_Dynamics.md` for occlusion and responsibility staging.
+- `Core_Law/SRT_Suffering.md` for independently admitted suffering registration and its typed structural models, not a direct ethics theorem.
+- `Core_Law/SRT_Occlusion_Dynamics.md` for conditional occlusion structures and model stages, not an evil or responsibility verdict.
+- `Core_Law/SRT_Irreversibility.md` for the bounded occurrence / retained-history / termination interface.
 - `01_Source_Intuition/BOOK/BOOK_CANONICAL_ALIGNMENT_MAP.md` for the current book-chain guardrail.
 
 Downgrade rules:
@@ -51,7 +56,7 @@ Downgrade rules:
 - `Agency ≈ d · A`, `FreeWill ∝ d · E / Hysteresis`, and similar formulas are proxy sketches only.
 - `d-value` expansion is not moral growth, love, saintliness, or universal benevolence.
 - `Ψ_f` is not pain, prediction error, metabolic cost, Fisher metric, or Landauer cost.
-- Agency requires payability, consequence return, and reselectable mobility; high `d` with low `d_mobile` may indicate frozen concern rather than freedom.
+- Payability, consequence return and reselectable mobility are useful bridge / operational candidate dimensions for evaluating agency-like organization; they are not asserted here as the exact universal necessary-and-sufficient Agency theorem. High `d` with low `d_mobile` may indicate frozen concern rather than freedom.
 
 ---
 
@@ -63,20 +68,21 @@ Downgrade rules:
 
 ## Canonical Cross-Link: Occlusion Dynamics
 
-- 本文件涉及遮蔽、d 收窄、B 期锁死、缺口感知、干预窗口、解耦触发与结构性恶的段落（§3.1d Integration Note、§7 Deep Implications、§Multiaxial Responsibility、§Integration Note 2026-04-18/2026-04-19 等），结构层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）。
-- 本文件负责能动性/责任的规范性展开；A/B 分期、d_c 阈值语义、五类缺口残余、四类干预窗口、四类解耦触发、恶的三判据结构性定义不在本文件重复，以 canonical 为准。
+- 本文件涉及遮蔽、`d` 收窄、A/B-like regimes、缺口感知、干预窗口、解耦触发与 harmful-action analysis 的段落，结构/model 层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）。其阶段、阈值、残余与 intervention / decoupling structures 是有声明条件的 P2/P3 model / bridge structures。
+- 阶段归属本身不决定责任；propagating-occlusion / externalization pattern 只有在另行声明关系、agency、scope 与规范判据后才能进入伦理分析。不存在当前有效的 `evil iff ...` 定理。
+- 控制区分为 `O2-C != O2-A != O2-M`：结构完整性、agency-qualified answerability 与 all-things-considered moral adjudication 不得互相替代；`O2-M` 继续 **OPEN / HOLD**。
 
 ## Canonical Cross-Link: Suffering Theory
 
-- 本文件涉及自我扭曲、痛苦、责任地理、d↑/d↓ 不确定性支付等段落中对苦难作为结构对象的引用，结构层回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
-- 本文件负责苦难在规范序上的责任与能动性读法；疼痛 vs 苦难的范畴区分、信号型 vs 结构型两型、四类现象学分型、反最小化原则与集体外部化耦合由 canonical 承担。
-- 特别：T-SUFF-4 反最小化原则是"痛苦最小化作为伦理目标不充分"的结构层根据，本文件的规范论述应与之一致，不得独立降级或架空。
+- 本文件涉及自我扭曲、痛苦、责任地理、`d↑/d↓` 与 payability 的段落时，回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。苦难只有在第一人称 / phenomenal registration standing 被独立准入后才能进入本文件的伦理讨论；structural burden、signal proxy 或 Stable ISP 均不能自行产生 suffering 或 phenomenality。
+- `S_sig` / `S_str` 等 signal / structural proxy distinctions 不证明第一人称经验；signal suppression 也不证明 hidden suffering 被守恒或转移。
+- “痛苦最小化是否充分”可保留为在 suffering 已准入、目标与边界已声明时的 ethics bridge question；它不是从旧 T-SUFF-4 直接推出的 universal P1 moral theorem。
 
 ## Canonical Cross-Link: Irreversibility (Termination Interface)
 
-- 本文件涉及死亡、终止、不可逆伤害、责任在 `L_0` 不可逆下的形态、学习作为单向沉淀等段落，结构层回链 `Core_Law/SRT_Irreversibility.md`（`SRT-IRREVERSIBILITY`）。
-- 本文件负责规范性读法（责任、悼、复仇、恢复、善后）；T-IRR-1 学习不可逆的非对称 `Ψ_f` 支付、T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类）、**终止 ≠ 暂停**、T-IRR-4 苦难在 `L_0` 不可逆下不可无代价消除，均由 canonical 承担，不在本文件重写。
-- 特别：本文件不得把"死亡"与"系统暂停/休眠/冻存"混读；T-IRR-2 严格区分终止与暂停的本体论地位。
+- 本文件涉及学习、终止、损失、悼、恢复或善后时，结构层回链 `Core_Law/SRT_Irreversibility.md`（`SRT-IRREVERSIBILITY`）。Primitive occurrence non-equivalence 不自动建立 retained history；T-IRR-1 现为有条件的 P2/P3 writeback / learning model。
+- Termination 必须相对于已声明的 lineage、transition system 与 boundary 判读，并与 pause、reset、reconstruction 或 new lineage 分开；它不是 unrestricted generic death theorem。
+- 本文件只有在 identity、retention、suffering 与 responsibility gates 分别建立后，才可讨论 loss / termination 的伦理后果。旧 T-IRR-1 / T-IRR-2 / T-IRR-4 的 universal `Ψ_f` payment、death 或 suffering-cost 读法已 superseded，不得由本文件恢复。
 
 ## PH-SS Guardrail Pointer
 
@@ -102,7 +108,7 @@ Core guardrails:
 ### Ax-Ag-1: Agent as Instantiated Operator（bridge handle）
 行动者可被建模为具身算子在 $L_0 \to L_1$ 上的局部实现。
 $$\text{Agent}^{proxy} \sim \hat{G}_\theta: L_0 \to L_1$$
-*   **Boundary**: 这是 agency bridge handle，不是主体或选择算子的 canonical 定义。新版书稿卷三优先读法为：主体是后果能回来的承重位置，而非先验实体。
+*   **Boundary**: 这是 legacy/domain operator proxy，不是主体或选择算子的 canonical 定义。它不定义 primitive Selection，不建立 prior selector object，也不建立 universal Agency、subjecthood 或 Bearer standing；任何更强 Agency 读法都须独立支付相应 burdens。
 
 ### Ax-Ag-2: Agency Capacity（proxy sketch, downgraded）
 旧式写法把能动性强度近似为 $d$ 值与汇编指数 $A$ 的乘积。当前仅保留为 proxy sketch：
@@ -122,14 +128,14 @@ $$P_{action}(\theta, t) = \alpha(\theta) \cdot \mathbb{E}_{\hat{G}_\theta}\!\lef
 - $\Psi_f^{proxy}(X)$：执行行动 $X$ 的可支付负担 / 本体论摩擦 proxy，随行动规模、结构改写深度与支持条件非线性变化；
 - $\beta(\theta)$：算子对摩擦的敏感度。旧式 $\beta(\theta) \propto 1/d$ 只能作为历史启发式；当前不得推出“d-value 越宽越不敏感、越愿意支付高代价”。真实 agency 还取决于 `d_mobile`、payability、支持结构与后果回流。
 
-**行动触发条件**：$P_{action}(\theta, t) > 0$
+**声明模型内的行动启动条件**：$P_{action}(\theta, t) > 0$。这只是该 P3/P4 sketch 中的 action-initiation condition，不是 agency 或 free choice 的普遍物理必要条件。
 
 **推论**：
 
 - **行动迟滞的去道德化**：$P_{action} \leq 0$ 是结构/情境结果，不是道德缺陷。干预路径：① 重建意义连接与未来可选择窗口；② 降低行动启动的 `Ψ_f` proxy 或提供外部脚手架；③ 提升 `d_mobile` 与可支付重选通道，而不是简单“提升 d-value”。
-- **抑郁的物理模型**：$d$-value 收缩 → $L_0^{(d)}$ 积分域收缩 → $\mathbb{E}[R]$ 骤降 → $P_{action} \leq 0$。「什么都不想做」是探照灯照不到远处奖励的物理结果，而非意志力缺陷；
+- **抑郁的候选 bridge hypothesis（P4）**：可检验某些 `d`-proxy 收缩、可达奖励表征与 $P_{action}$ 变化是否相关；这不是抑郁的物理身份、诊断标准、充分/必要条件或治疗定理。
 - **殉道者/英雄的旧解释（降级）**：不得写成“极高 d-value → $\beta(\theta) \to 0$”。更安全的说法是：某些主体在特定价值/身份/共同体结构下拥有较强 payability 与 consequence-return coupling；这不证明高 d 自动带来高 agency。
-- **相容论（Compatibilism）的 SRT 实现**：$P_{action} > 0$ 仅是行动的**物理必要条件**，而非充分因。势能差决定「引擎是否能打火」；打火后的具体选择方向，由 $\hat{G}_\theta$ 的 J 层判断决定（参见 T-ARCH-1）。物理约束行动的可能空间，J 层决定行动的具体内容——道德责任保留在 J 层，不被势能物理化所消解。
+- **相容论 bridge sketch**：在这份声明模型中，$P_{action} > 0$ 只表示一种启动条件；J-layer 可用于表征 decision content。J-layer modeling 本身不建立 O2-A responsibility，物理/模型层级也不能自动定位责任。
 
 ## II. Responsibility & Friction
 
@@ -138,17 +144,17 @@ $$P_{action}(\theta, t) = \alpha(\theta) \cdot \mathbb{E}_{\hat{G}_\theta}\!\lef
 $$R^{proxy}_{total} \sim f\left(\int \Psi_f^{proxy} dt,\ 	ext{choice window},\ 	ext{knowledge},\ 	ext{consequence return},\ d_{mobile}\right)$$
 *   **Boundary**: 责任不是摩擦积分本身；责任判断必须检查可选择性、知识条件、后果回流、遮蔽阶段和可支付重选通道。
 
-### Ax-Ag-5: Pathology as Parameter Distortion
-病理状态是 $\theta$ 的扭曲与摩擦预期放大。
+### Ax-Ag-5: Parameter-Distortion Hypothesis (P4 bridge)
+历史模型把某些临床/功能变化表征为 $\theta$ 的偏移与摩擦预期放大：
 $$\theta' = \theta + \Delta\theta, \quad \mu_{expect} \gg 1$$
-*   **Implication**: 抑郁与躁狂可被解释为选择参数的动力学失衡。
+*   **Boundary**: `\theta` / `\mu_{expect}` 是候选 model coordinates；抑郁或躁狂不能由这些变量识别、诊断或穷尽解释。本节不许可临床充分/必要条件、治疗选择或疗效推论。
 
 ## III. Derived Theorems
 
-### T-Ag-1: Metastable Selection Window
-有效自由选择仅发生在亚稳态窗口。
+### T-Ag-1: Metastable Selection Window（historical P3/P4 candidate handle）
+旧式候选方程为：
 $$\text{FreeChoice} \iff S(t) \in W_{meta}$$
-*   **Implication**: “失控”与“机械化”是窗口外的动力学状态。
+*   **Current boundary**: `FreeChoice iff ...` 只保留为 legacy candidate equation，不是 universal equivalence。Metastability 可在声明模型中作为一种 enabling condition，但不能自行准入 freedom，也未建立为最终自由理论的普遍必要条件。
 
 ### T-Ag-2: d-Value Expansion as Moral Growth（deprecated bridge handle）
 旧式写法“道德成长等价于关切维度稳定扩张”现已降级。
@@ -170,15 +176,17 @@ $$\frac{d}{dt} d_{proxy} > 0 \not\Rightarrow \int \Psi_f d\mu \uparrow$$
 
 ### Ax-Agency-1: The Operator as Agent (算子即行动者)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+> **Historical / superseded for active ontology**: the formula and prose in this subsection preserve an older operator-first model. Primitive actualising Selection is subjectless; `\hat{G}_\theta` may model a formed or domain-specific Selection organization, but is neither a prior chooser nor a universal Agency admission criterion.
+
 An "Agent" is defined as an instantiated Operator $\hat{G}_\theta$ capable of selecting $L_1$ from $L_0$.
 $$ \text{Agent} \equiv \hat{G}_\theta : L_0 \to L_1 $$
-*   **Implication**: Agency is not "outside" physics, but the "selection" function *within* ontology.
+*   **Legacy implication**: This historical formulation does not define primitive Selection or establish Agency, subjecthood or Bearer standing.
 
 ### Ax-Agency-2: Meta-Selection (Free Will) (元选择即自由意志)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 Free Will was previously modeled as second-order parameter modification. Current boundary: this is only a bridge handle.
 $$ \text{FreeWill}^{proxy} \sim \hat{G}_{self}[\theta] \rightarrow \theta' $$
-*   **Mechanism boundary**: Do not posit a Meta-Ghost. Agency requires living subject-position, payability, consequence return, and reselectable mobility; second-order rewrite alone can be pathological optimization.
+*   **Mechanism boundary**: Do not posit a Meta-Ghost. Payability, consequence return and reselectable mobility remain candidate bridge dimensions rather than an exact universal Agency theorem; second-order rewrite alone does not establish freedom or Agency.
 
 ## II. Responsibility & Friction (责任与摩擦)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -278,12 +286,14 @@ $$\text{FreeWill}^{proxy} \sim f(d_{stakes}, d_{mobile}, E_{available}, \chi_{pa
 
 ### 3.1 The Operational Mechanism of Free Will: Meta-Selection and the Three-Layer Structure（元选择与三层结构）
 
+> **Current-use guard**: 本节保留一个 historical P2-P4 meta-selection / layered-rewrite model。它不是 current canonical FreeWill theorem；任何层级或变量都不能自行准入 Agency、freedom 或 O2-A responsibility。
+
 自由意志不是对具体行动 $A$ 的选择（后者通常是自动的 $L_1$ 反应），而是对**生成行动的参数 $\theta$ 本身的选择**。
 
 $$\text{Free Will} \neq \text{Select}(Action)$$
 $$\text{Free Will} = \text{Select}(Character) = \hat{G}_{meta}[\theta \to \theta']$$
 
-这个框架是正确的，但过于简化——它把「重写 θ」描述为一次性事件，实际上 θ 的真实改写是一个分层过程，且自由意志的有效行使对应的是其中特定的一层。
+这段历史框架把「重写 θ」描述为一次性事件；下文保留其分层展开作为可检验 bridge hypothesis，而不是 current universal account。
 
 #### 三层结构（精确版）
 
@@ -317,15 +327,15 @@ L₂ 劫持也能触发第二层的表面感受（强烈的内部摩擦感，「
 
 $\Delta W_{\text{new-scope}} = 0$（旧维度内再分配）是 L₂ 劫持的形式标记。这对应「假戒烟」：把对烟的依附转移到了替代品（糖、手机）上，θ 的关切结构没有改变，只是优化对象换了。
 
-#### 责任的精确定位
+#### 责任定位的历史候选模型
 
-自由意志的三层结构直接改变了责任归属的精度：
+这个三层模型曾被用于细化责任归属候选：
 
 - **第一层失败**（行为未改变）：通常不是意志问题，而是行动势能（Ax-Ag-3，$P_{action} \leq 0$）或 θ 张量惯性太强
 - **第二层未激活**（元层门控无响应）：可能是 d 值不足（景观太窄，感知不到秩序缺口），或遮蔽已进入 B 阶段
 - **第二层激活但第三层未写入**：这是自由意志真正起作用的位置——反复激活但最终失败，通常说明 θ 张量惯性（旧信念网络权重）过强，需要结构性干预而非单纯意志力
 
-真正的道德责任在于**是否主动参与了第二层的激活**，以及**是否主动维持了足够的感知条件（不进入 B 阶段遮蔽）使第二层激活成为可能**。
+旧式结论把“真正的道德责任”定位在是否主动参与第二层激活、是否维持相关感知条件。该定位现为 **historical ethics hypothesis**，不是普遍责任规则：任何 layer variable、A/B stage 或 activation pattern 都不能自行建立或取消责任。O2-A-style answerability 仍需独立建立适用于具体案件的 Agency/capacity、knowledge、control、choice-window、consequence-return 与 reselectability conditions；本文件不把这些维度封闭成新的充分必要定理。
 
 > **Cross-ref**: `Core/SRT_Core_22_Equations.md Eq-Evo-03b`（选择内再入通道）；`Eq-Evo-03c`（d 值三层前向判据）；`Eq-Evo-02b`（θ 张量惯性）；§6.4（遮蔽与道德责任的接口）。
 
@@ -623,16 +633,18 @@ The Stoic concept of **Oikeiôsis** (Appropriation) is mathematized in SRT: we m
 ## 4. Costs & Risks
 
 ### 4.1 The Cost of Freedom: Existential Anxiety
-Accepting SRT's free will model means accepting **absolute responsibility**. Since $\theta$ is rewritable, we can no longer shift blame to biological families, genes, or social environment ($L_2$).
+The earlier claim that accepting SRT meant accepting **absolute responsibility** is a historical/existential overstatement and is superseded as a current conclusion. Rewritability may increase some forms of answerability only where capacity, knowledge, control, Agency and consequence-return burdens are independently met. Biology, genes, developmental history and social environment may constrain those capacities and therefore may condition responsibility; none is made universally decisive here.
 
-*   **Risk**: This extreme sense of responsibility may lead to "existential collapse" (Sartrean Nausea)—the vertigo of facing infinite possibilities.
+*   **Historical risk note**: The superseded absolute-responsibility framing may produce “existential collapse” language—the vertigo of facing seemingly infinite possibilities.
 
 ### 4.2 The Cognitive Cost: Rethinking the Brain's Ontological Status
-We must relinquish the assumption that the brain *is* the selector. SRT identifies the brain as **$L_2$ of the biological $\hat{G}_\theta$**—the crystallized history of past selections (synaptic weights, circuit architectures, default mode patterns). As $L_2$, brain dynamics are **causally closed**: fully describable by neuroscience without invoking non-physical inputs.
+> **P3/P4 philosophy-of-neuroscience bridge**: The mappings in this subsection are candidate modeling stances, not canonical identities or settled neuroscience results.
 
-The true $\hat{G}_\theta$ is the **whole embodied organism-environment coupling**—sensorimotor loops, metabolic processes, immune responses, and their interface with physical $L_0$. Free will is not realized by the brain "receiving signals from $L_0$," but by the embodied organism's interaction with the world **breaking the $L_2$ inertia** of habitual neural patterns.
+One historical bridge models the brain as **$L_2$ of a biological $\hat{G}_\theta$**—a representation of retained organization such as synaptic weights, circuit architectures and default-mode patterns. `brain = L2` is not an ontology identity, and this file does not establish that brain dynamics are exhaustively causally closed.
 
-This challenges reductionism not by violating physical closure, but by showing that the brain alone (as $L_2$) cannot account for the full selection process—the organism-in-world is the irreducible unit.
+A broader **whole embodied organism-environment coupling**—sensorimotor loops, metabolic processes, immune responses and environmental interaction—may be the useful modeling unit for some Agency questions. It is not “the true `\hat{G}_\theta`” by canonical identity and does not by itself establish freedom.
+
+This bridge motivates tests of whether brain-only descriptions suffice for a declared explanatory target. It does not establish as an empirical theorem that the brain alone cannot account for all Selection, nor that organism-in-world is universally irreducible.
 
 ---
 
@@ -657,7 +669,7 @@ This challenges reductionism not by violating physical closure, but by showing t
 
 ### 5.3 Open Questions
 *   **Boundary**: Where is the physical limit of `D_eff` / attention / regulation proxy? Does the hardware of the human brain constrain specific d-value proxies without defining canonical d?
-*   **AI Ethics**: Can we construct architectures on silicon substrates that can perceive $\Psi_f$? If AI cannot feel ontological friction, can it possess true morality?
+*   **AI Ethics — OPEN**: Can silicon systems instantiate any relevant `\Psi_f`-related model relation, and what independent evidence would be required for phenomenality, suffering, Agency or moral status? `\Psi_f` is not felt suffering by definition; its availability or absence does not settle phenomenality or moral status, and AI class membership settles none of these gates.
 
 ---
 
@@ -665,28 +677,30 @@ This challenges reductionism not by violating physical closure, but by showing t
 
 ### 6.1 "Ought Implies Can" (Kant)
 **Classical Version**: If you ought to do $X$, you must be able to do $X$.
-**SRT Precision**: 
+**Ethics bridge candidate**:
 $$ \text{Ought}(\sigma) \implies \exists \theta_{accessible} : P(\sigma|\theta) > \epsilon $$
 
-You cannot be morally obligated to actualize states unreachable from your current $\theta$-manifold. Moral demands that ignore embodiment constraints are **ontologically incoherent**.
+Under a declared responsibility/ought framework, demands outside the relevant accessible capacity may fail that framework's answerability condition. This capacity-sensitive proposal is not primitive ontology, does not settle a concrete responsibility verdict, and does not close O2-M.
 
 ### 6.2 "Laziness" vs. Depression
 **Common Judgment**: "You're lazy because you lack discipline."
-**SRT Diagnosis**: 
+**Historical/testable P4 bridge hypothesis**:
 $$ \mu_{eff} = \frac{\langle \Psi_f \rangle_{anticipated}}{E_{available}} \to \infty $$
 
-In depression, the perceived friction coefficient $\mu_{eff}$ is pathologically amplified. Simple actions (like brushing teeth) are assigned catastrophic energy costs by distorted $L_2$ priors. This is **computational bankruptcy**, not moral weakness.
+The legacy model asks whether some depressive presentations involve increased anticipated-cost proxies relative to available support. `\mu_{eff}\to\infty` and “computational bankruptcy” are modeling metaphors, not a diagnosis, clinical identity, or sufficient/necessary theorem.
 
-**New Therapeutic Target**: Lower $\mu_{eff}$ by recalibrating $L_2$ priors (CBT, medication) AND rebuild $L_1^{future}$ meaning-structures (existential therapy).
+**Clinical boundary**: References to CBT, medication or existential therapy are historical illustrations of distinct intervention levels, not treatment advice or evidence of efficacy. Any clinical use requires independent psychiatric/neuroscience validation and professional assessment.
 
 ### 6.3 Agent Causation（能动者因果）
 
 **问题**：行动者如何在不违反物理因果律的情况下成为自身行动的"无前因原因"？
 
-**SRT 回答**（精确版，2026-03-31 修订）：
+> **Current-authority override**: 以下 `Agent = \hat{G}_\theta` 区块是 historical operator-model text，已 superseded for active ontology。Primitive actualising Selection is subjectless；`\hat{G}_\theta` 最多建模 formed/domain-specific Selection organization，不是 primitive Selection 所需的 prior chooser 或 ontic cause，也不建立 universal Agency。
+
+**Historical SRT answer**（2026-03-31 preserved text）：
 $$\text{Agent} = \hat{G}_\theta : L_0 \to L_1$$
 
-行动者不破坏物理定律——而是通过将 $L_0$ 坍缩为特定 $L_1$ 配置来**选择哪些定律被实例化**。
+旧文说行动者通过将 $L_0$ 坍缩为特定 $L_1$ 配置来“选择哪些定律被实例化”。这一说法不再被许可为 current canonical ontology；本节只保留它作为 provenance。
 
 ---
 
@@ -734,7 +748,7 @@ $$\text{有效梯度} = f(\text{感觉强度} \times \text{校正后可信度} \
 
 **自由意志的精确位置**：
 
-自由在 SRT 中最多等于：
+历史 bridge hypothesis 把 freedom 与不封死未来的 vertical rewrite 联系起来：
 
 > 在垂直因果发生时，重写没有封死未来，反而保留或打开了更大的再选择空间。
 
@@ -744,55 +758,27 @@ $$\text{病理式垂直因果} \not\supset \text{自由}$$
 
 这比"自由意志 vs 决定论"的传统框架硬得多——它要求具体检验重写的结果是打开还是封死再选择空间。
 
+> **Current boundary**: Reselectability 可作为声明模型中的 candidate dimension，但既非 freedom 的充分条件，也未建立为最终理论的普遍必要条件；这里没有 current canonical FreeWill admission theorem。
+
 ---
 
 ### 6.4 The Problem of Evil: Occlusion All the Way Down（恶的问题：遮蔽到底）
 
-#### 传统框架的困境
+> **Current-authority override**: 本节只保存 historical / exploratory ethics hypothesis。Occlusion 可作为 harmful/actionable cases 的一个 structural contributor，但 stage membership 不决定 responsibility；旧的 exhaustive evil ontology、唯一解释框架和阶段式责任分配均已 superseded。`O2-C != O2-A != O2-M`，且 `O2-M` 继续 **OPEN / HOLD**。
 
-「恶」在标准道德框架里是一个独立范畴：存在某些行为，其施害者知道在做什么、可以不这样做、却依然选择了伤害——这才构成真正的恶。这个结构依赖三个条件：意图性（知道）、可选择性（可以不这样）、主动选择（仍然选了）。
+#### Historical argument retained
 
-如果这三个条件中任何一个缺失，「恶」通常被降格为「错误」「病理」「无知」。但「真正的恶」作为独立范畴，保留了那种面对完整信息仍主动选择伤害的可能性。
+传统框架把“真正的恶”组织为：施害者知道、可以不做，却仍主动伤害。旧 SRT 随后主张“真正的恶”这一独立范畴在本体论上不存在，并把所有“看起来是恶”的行为归入遮蔽。这两项穷尽性结论均不再是 active SRT conclusion；E5 也不以另一套最终恶理论替代它们。
 
-SRT 的主张：**这个范畴在本体论上不存在**。这不是道德相对主义，而是一个结构性论断。
+旧模型区分两类路线：被动遮蔽用 access/knowledge 的景观局限解释伤害；主动深化遮蔽用 A→B-like narrowing 追问 earlier access、self-modification 与 consequence return。它还把“知道但仍然做”解释为规范声明与真实关切结构分裂，或已有 `d`-like access 被局部压制。这些路线保留为研究假设，但：
 
-#### 遮蔽作为唯一解释框架
+- `d` / `\Psi_f` 不是 knowledge、intent 或 moral status 的身份式；
+- passive / A-like / B-like 标签既不自动建立也不自动取消责任；
+- O2-A 仍须独立检查 Agency/capacity、knowledge、control、choice-window、consequence-return 与 reselectability；
+- legacy 四判据只在声明 position、criterion 与 horizon 后提供结构比较输入，不关闭 O2-M；
+- occlusion-inspired intervention 只是待检验假设，不生成临床、法律或政策处方。
 
-所有「看起来是恶」的行为，在 SRT 里都落入遮蔽的某种状态：
-
-**被动遮蔽**（景观太窄，看不到伤害）：施害者真实的 d 值低于感知到秩序缺口所需的阈值。他们的关切范围不包含受害者的秩序条件，因此伤害对他们而言不是「在做坏事」，而是「在做一件对自己有利的事」。这不是伪善，而是真实的景观局限。道德上不能要求他们「知道但仍然做」，因为他们确实不知道——不是假装不知道，而是他们的关切结构里没有那个维度。
-
-**主动遮蔽深化**（A→B 阶段，主动压缩秩序缺口感知能力）：这是 SRT 伦理学最复杂的情况。施害者在某个时间点上曾经有足够的 d 值感知到秩序缺口，但通过持续的固化选择主动将其压缩——选择不去感知，选择合理化，选择缩小景观。这一过程有主动性，因此有道德责任，但责任的对象不是具体的伤害行为，而是**对自身感知能力的主动破坏**。
-
-关键区分：
-
-| 情况 | 描述 | 责任定位 |
-|-----|-----|---------|
-| 被动遮蔽 | d 值先天或结构性低于阈值 | 无行为责任；干预路径是扩景观 |
-| A 阶段遮蔽 | d < d_max(θ)，固化选择压制秩序缺口信号 | 对遮蔽本身的选择有责任 |
-| B 阶段遮蔽 | d < d_c 且方向向量漂移，感知能力本身被压缩 | 责任追溯到 A→B 的过渡选择；B 阶段行为的直接责任因感知能力受损而减弱 |
-
-#### 「知道但仍然做」的重新解读
-
-标准「恶」概念的核心案例：有人「知道」这样做是错的，但还是做了。SRT 的解读：
-
-这种情况下，「知道」意味着什么？通常指：L₂ 层有一个规范性声明（「伤害他人是错的」），但 d 值不包含受害者的实际秩序条件。这不是「知道但仍然选择」，而是**L₂ 符号和真实的 d 值扩张之间的分裂**——符号式假关切的标准形态。声称知道但行为不一致，说明关切没有真正写入选择结构，而不是说明存在纯粹的恶意。
-
-真正的「知道」在 SRT 里意味着：受害者的秩序条件已经进入施害者的关切结构（d 值已写入），伤害对施害者而言产生真实的 Ψ_f（摩擦代价）。在这种情况下「仍然选择」意味着 L₂ 的局部吸引子（利益、恐惧、习惯）足以压过这个摩擦——这是**遮蔽对已有 d 值的局部压制**，仍在遮蔽框架内，不需要引入独立的「恶」范畴。
-
-#### 为什么这不是道德相对主义
-
-排除「恶作为独立范畴」不等于「一切行为都同等」。SRT 保留了比「恶」更精确的区分：
-
-1. **遮蔽深度的差异**：景观越窄，伤害力越不被看见；主动深化遮蔽的行为比被动遮蔽更有道德重量。
-2. **对遮蔽本身的责任**：选择缩窄景观是真实的道德责任点，即使具体伤害行为的责任被遮蔽状态稀释。
-3. **四判据仍然有效**：某个行为是否可延续、可协调、不外包、可再选择，仍然是客观的结构判断。「这个行为更接近秩序」和「这个行为更远离秩序」是有客观方向的，与是否存在「恶」作为独立范畴无关。
-
-移除「恶」范畴的实践后果：**干预逻辑的根本性转变**。如果伤害行为来自遮蔽，惩罚（增加摩擦代价）不能扩大景观，只能压制行为而不改变结构。真正的干预是扩景观——而被动遮蔽和主动深化遮蔽需要不同的干预逻辑（参见 L0 遮蔽词条末尾的注记）。
-
-> **[S]** 「恶不存在为独立范畴」的论断来自 `Core_Law/SRT_L0_Metaphysics.md` 遮蔽词条。
-> **[H]** B 阶段遮蔽对直接责任的稀释程度，依赖 d_c 的量化校准（暂定锚）——当前为结构性论断，具体责任分层待与法律和临床框架对接。
-> **Cross-ref**: L0 遮蔽词条；`Core_Law/SRT_Core_Text_CN.md §⑧`；`Eq-Evo-03c`（d 值三层写入结构与道德成长的形式对应）。
+> **Historical provenance**：早先“恶不存在为独立范畴”的论证曾回链旧 L0 遮蔽词条；该来源不再赋予 current-positive standing。A/B-like evidence 如何进入责任评估仍是 domain-native validation question。
 
 ---
 
@@ -808,6 +794,8 @@ When we love someone, our $\theta$ parameters become **entangled** with theirs. 
 > **Formula role**: phenomenological model. The `Ψ_f → ∞` divergence language captures the felt impossibility of grief resolution; it is not a literal divergence claim. Do not read poetic infinity here as a mathematical proof. See also `SRT_Ethics_PH_SS_Guardrails.md`.
 
 ### 7.2 The Is-Ought Bridge: Dissolution Rather Than Derivation（消解而非推导）
+
+> **Historical / exploratory ethics argument**: 本节保留旧 is-ought dissolution 路线供研究与追溯，不作为 current canonical derivation。Primitive Selection 不携带 ought；actual occurrence 不等于 correctness、legitimacy 或 goodness；O1、O2-C、O2-A 不能替代 O2-M，而 O2-M 保持 OPEN / HOLD。
 
 #### 7.2.1 休谟问题的隐含前提
 
@@ -849,7 +837,7 @@ SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出
 
 **在 L1/L2 层重新出现**：具体内容受有限位置的遮蔽约束，具体的「在这个情境中哪个方向更接近秩序」仍需通过四判据在具体情境中结算。这不是道德命令，而是「在这个位置上，哪种选择方向使选择过程本身能持续展开」的结构判断。
 
-**四判据因此不是外来的规范规则**（2026-07-05 由三判据升为四判据，新增③不外包；见 `Core_Law/SRT_Selection_Argument.md §7b.2`），而是「使选择过程本身能持续展开」的结构条件的表达式：
+旧论证把四判据描述为“使选择过程本身能持续展开”的结构条件（2026-07-05 由三判据升为四判据，新增③不外包；见 `Core_Law/SRT_Selection_Argument.md §7b.2`）：
 
 | 判据 | 结构含义 |
 |------|---------|
@@ -858,7 +846,7 @@ SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出
 | 不外包 | 不把代价转嫁到无反馈通道的位置——后果须回到能修正它的位置 |
 | 可再选择 | 不过早锁定——保持潜在域对未来选择的开放 |
 
-这四条不是道德哲学从外部施加的限制，而是任何试图持续展开的选择过程的内在结构要求。违反它们不是「犯了道德错误」，而是选择过程在侵蚀自身的继续条件。
+Current use 只能在声明 unit、position、criterion 与 horizon 后把这四条作为 structural comparison candidates。它们不是 primitive ontology、普遍必要条件或 O2-M solver；违反其中一项也不能独立决定 all-things-considered moral verdict。
 
 > **FEP 暗室问题的补充**：当 $d > 0$ 时，与他者建立连接实际上是在更大尺度上分散熵增风险，是自由能最小化的更优解——这是四判据（尤其可协调）的热力学映射，而非独立论证。详见 `SRT_FEP_Comparison.md`。
 
@@ -880,13 +868,17 @@ SRT resolves the free will paradox not by denying physics but by **relocating** 
 **Classical View**: Freedom is often framed as breaking deterministic chains (impossible on that framing).
 **SRT View（current bridge）**: Freedom is a payably reselectable constraint rewrite that keeps or reopens future selection space; mere parameter setting is insufficient.
 
-The cost may appear as **ontological friction** $\Psi_f$ proxies—resistance, distress, metabolic/control load, or social cost. Pain is not `Ψ_f` itself and is not proof of genuine agency; agency requires payability, consequence return, and reselectable mobility.
+The cost may appear as **ontological friction** $\Psi_f$ proxies—resistance, distress, metabolic/control load, or social cost. Pain is not `Ψ_f` itself and is not proof of genuine agency; payability, consequence return and reselectable mobility are candidate dimensions rather than an exact universal Agency test.
 
-**Final Axiom**: 
+**Historical bridge summary, not a final axiom**:
 $$ \text{Freedom requires payable responsibility; responsibility may involve suffering, but suffering is neither sufficient nor required as proof of freedom.} $$
+
+This formula is retained as a research prompt. It does not establish freedom, responsibility or suffering and must not be used as a necessary-and-sufficient theorem.
 
 
 ## Neuro-Constraint on Agency: Inflammation Burden
+> **P3/P4 clinical-neuroscience bridge**: The following is a testable assessment proposal, not a diagnostic criterion, direct responsibility mapping or treatment recommendation.
+
 当神经炎症与白质微结构损伤共同上升时，个体的决策带宽与情绪调节能力会受限，
 应将“能动性评估”与生理负荷状态联合建模，而非仅按行为结果归因。
 
@@ -896,6 +888,8 @@ $$ \text{Freedom requires payable responsibility; responsibility may involve suf
 
 
 ## Multiaxial Responsibility in Psychiatric Conditions
+> **P3/P4 bridge boundary**: No psychiatric diagnosis maps directly to moral failure or a responsibility class. Clinical and physiological variables may constrain capacity assessment but do not by themselves determine O2-A responsibility; this section creates no medical advice.
+
 针对精神分裂谱系，SRT 建议将能动性评估拆分为多轴：
 1) 神经化学轴（多巴胺/谷氨酸等）；
 2) 发育-结构轴；
@@ -906,171 +900,9 @@ $$ \text{Freedom requires payable responsibility; responsibility may involve suf
 
 ---
 
-## Integration Note (2026-04-18): Selection, Freedom, and Answer Outsourcing
+## Integration-note deduplication pointers
 
-本轮 bridge 反向合并到主文档后的最小补充是：**元选择回答“参数能否被改写”，但真正的自由还要求这种改写没有退化为旧 `L_2` 的更高阶自我优化。**
+- The 2026-04-18 “Selection, Freedom, and Answer Outsourcing” note is preserved in full at §3.1b and is governed there as a historical bridge hypothesis.
+- The 2026-04-19 “Subject-Position, Label Substitution, and the Return of g” note is preserved in full at §3.1c. Its `g` / label / pain / reselectability language remains historical bridge material and does not by itself establish Agency, freedom, health or responsibility.
 
-### 1. 补充判据：自由不只是高阶改写
-
-现有 Ax-Agency-2 / Ax-FreeWill-1 已经把自由意志定义为对 `θ` 的二阶改写。这一点保持不变。
-
-但现在需要补上一个方向性判据：
-
-> **某次高阶改写之所以算自由，不只是因为它是二阶的，而是因为它重新打开了被既有 `L_2` 压扁的 `L_0`。**
-
-若改写只是让主体：
-- 更快适应模板
-- 更高效维持既有结构
-- 更熟练地压制异样与痛苦
-
-那么它仍属旧 `L_2` 的高阶优化，而不是真正自由。
-
-### 2. 健康更新与病理更新的根本区别
-
-健康的怀疑与病理性的怀疑，最根本的区别不在内容，而在于：
-
-> **是否仍在进行选择。**
-
-若选择仍活着：
-- 当前地板不被无条件相信
-- 稳定未必自动等于对
-- 痛苦、异样、空心感仍可作为 `L_0` 入口保留
-
-若选择已经丢失：
-- 主体必须无条件依附某块地板
-- 稳定被神圣化
-- 更新退化为既有 `L_2` 的维护
-
-### 3. 选择丢失的最早信号
-
-最早信号不是公开教条化，而是：
-
-> **任何来自 `L_0` 的痛苦、异样与空心感，都被过快翻译回既有 `L_2` 模板。**
-
-于是：
-- 解释先发生
-- 入口还没活起来就已被封死
-- 选择开始死亡
-
-### 4. 选择仍活着的最小动作
-
-这轮对话给出的最小动作不是：
-- 立刻看清初心
-- 立刻获得新答案
-- 立刻完成重建
-
-而只是：
-
-> **不立刻回到旧模板。**
-
-这是选择保存自身的最小动作。
-
-### 5. AI / 搜索引擎与现代能动性危机
-
-AI / 搜索真正危险的地方，不首先在于它们可能给错答案，而在于：
-
-> **它们可能给出无选择参与的正确答案。**
-
-这类答案在认识上可能为真，却在生成上危险，因为它让主体绕过：
-- 异样
-- 悬置
-- 再选择
-- 重建地板
-
-从而直接得到一个外部 `L_2`。
-
-因此，AI / 搜索的健康角色应是：
-- 材料
-- 镜子
-- 扰动
-- 候选脚手架
-
-而不是过早充当地板。
-
-> **压缩表述**：Agency dies not first when the subject stops thinking, but when the subject stops selecting and begins to receive ready-made floors too quickly.
-
----
-
-## Integration Note (2026-04-19): Subject-Position, Label Substitution, and the Return of g
-
-本轮反向合并补上的最小主张是：**选择之死的更深层，不只是停止怀疑，而是主体位 `g` 被标签代言；而回返的第一修复，不是获得新身份，而是救回主体位本身。**
-
-### 1. 最深病理：主体位 `g` 被标签取代
-
-主体位 `g` 最深的病理不是被直接抹除，而是：
-
-> **被标签取代。**
-
-也就是说：
-- 形式上仍在“选择”
-- 但“谁在选”这个问题被过早改写成
-- **“这是哪一类人”**
-
-于是：
-- 感受退化为角色信号
-- 再选择退化为标签内部优化
-- 历史经验不断被回收为标签自证材料
-
-### 2. 标签最早如何代言 `g`
-
-标签最早不是通过直接定义“你是谁”来代言 `g`，而是通过：
-
-> **先行解释压力与痛苦。**
-
-原本可能指向：
-- 方向失真
-- 主体位受损
-- 旧地板失效
-
-的信号，会被迅速翻译为：
-- 角色代价
-- 职责负担
-- 成功副作用
-- 成熟代价
-
-因此：
-
-> **标签最早不是抢走行动权，而是抢走痛苦的解释权。**
-
-### 3. 最先该保护的不是能力，而是位置本身
-
-感受能力、再选择能力、主体位三者都需要保护；但最早、也最根本要保护的，是：
-
-> **主体位本身。**
-
-因为：
-- 感受能力是报警位
-- 再选择能力是操作位
-- 主体位是本体位
-
-若主体位被替代，则：
-- 感受能力会退化为可被角色管理的数据
-- 再选择能力会退化为模板内部的局部优化
-
-### 4. 回返初心的第一修复动作
-
-因此，主体位重新取得解释权后的第一转向，不是获得一个新身份，而是：
-- 不再让标签自动解释压力与痛苦
-- 不再让“我这种人”替代“我在此处如何选择”
-- 重新让活的主体位承担解释权
-
-这时才可能出现后续操作性转向：
-
-> **我要在有限的 `θ` 下，纳入更多考量（`d↑`），做出更好的选择。**
-
-这里的“更好”不是旧 `L_2` 里的局部优化，而是：
-- 长时段上总体 `Ψ_f` 更低
-- 不压缩未来再选择空间
-- 更少压扁选择主体本身
-
-### 5. 与现有 Agency 主轴的关系
-
-这一补充不是替代既有“二阶改写 = 自由”的定义，而是把自由的操作条件再往前推进了一层：
-- 不是所有高阶改写都是真自由
-- 不是所有“还能选”都意味着主体位还活着
-- 真正的 Agency 还要求：
-  - `g` 未被标签接管
-  - 痛苦仍保留入口功能
-  - 再选择未退化成标签内部优化
-
-> **压缩表述**：The deepest death of agency is not that selection disappears, but that the living subject-position is replaced by a label that explains pain in its place.
+These pointers remove duplicated copies only; they do not retire the retained arguments or upgrade their standing.
