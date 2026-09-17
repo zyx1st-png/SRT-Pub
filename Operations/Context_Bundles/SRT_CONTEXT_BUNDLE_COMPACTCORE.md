@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-17
-source_commit: 2a0622f6
+source_commit: 78113251
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: true
-inputs_digest: 54868c5b506246a7
+source_dirty: false
+inputs_digest: 71a5cde1812d8822
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,9 +27,9 @@ inputs_digest: 54868c5b506246a7
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-17 |
-| 来源 commit | `2a0622f6` |
+| 来源 commit | `78113251` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -55,8 +55,8 @@ inputs_digest: 54868c5b506246a7
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
-| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
-| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-18 |
+| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
+| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
@@ -3560,11 +3560,11 @@ Minimal statement:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-27 |
+| last_commit | 2026-09-17 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
-**dependency**：SRT-SOC-ECONOMICS, SRT-PHIL-FOUNDATIONS-COMPACT-CORE, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, Core_Law/SRT_Collective_Selection, Core_Law/SRT_Occlusion_Dynamics
+**dependency**：SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-SOC-ECONOMICS, SRT-PHIL-FOUNDATIONS-COMPACT-CORE, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, Core_Law/SRT_Collective_Selection, Core_Law/SRT_Occlusion_Dynamics
 
 <!-- 以下为原文逐字保留 -->
 
@@ -3573,7 +3573,8 @@ Minimal statement:
 > **定位**：本文件是 `SRT_Social_Economics.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把社会建构、行为经济学、博弈论、制度经济学与价值论统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留经典思想家对应、历史案例、制度跃迁与大量社会科学展开。  
-> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。市场、货币、价格、制度效率和信任降低摩擦都必须接受 friction-export、future-selectability、exit/correction、consequence-return 等检验。
+> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。Friction-export、future-selectability、exit/correction、consequence-return 只是独立声明的政治／伦理框架内的候选评估维度，不是新的合法性 solver。
+> **Current authority**：Generative Ontology Spine 与当前 Collective Selection、`L_2`、`d / Psi_f / T_dir` 及 E6 ethics 边界向下游约束本 bridge，不反向。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`；high `d` 不赋予政治权威或优越 standing。
 
 ## 1. 核心问题
 
@@ -3594,7 +3595,7 @@ social reality != social legitimacy
 institutional persistence != political justification
 market selection != moral truth
 money / price != final value
-low friction != justice unless hidden Psi_f is not exported
+low friction -/> justice; generic burden / cost / friction proxy != canonical Psi_f automatically
 ```
 
 ---
@@ -3639,7 +3640,7 @@ recognition -> repetition -> symbolic encoding -> enforcement -> memory -> conse
 
 Guardrail:
 
-> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden `Psi_f` or narrowing future selectability.
+> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden burdens or narrowing future selectability.
 
 ### 3.2 Money as L2 Metric
 \[
@@ -3665,7 +3666,7 @@ Guardrail:
 
 Guardrail:
 
-> Efficient selection is not automatically legitimate selection. Ask who pays the `Psi_f` that makes the market look efficient.
+> Efficient selection is not automatically legitimate selection. A declared framework may ask who bears the burden / cost that makes the market look efficient; those costs are not canonical `Psi_f` automatically.
 
 ### 3.4 Bubble as L2 Overfit
 \[
@@ -3746,15 +3747,15 @@ SRT 在这里最强的一步是：
 
 Guardrail:
 
-> Shared `d-value` recognition is morally relevant, but legitimacy still requires future-selectability, non-exported friction, and correction channels.
+> Shared `d-value` recognition may be morally relevant inside a declared framework, but it neither settles standing nor defines legitimacy. Future-selectability, burden distribution and correction remain candidate lenses.
 
 ### 6.4 Dehumanization
 \[
-Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
+\text{Concern-exclusion candidate}(i\to j) : d_i[\theta_j] \to 0
 \]
 
 最压缩句子：
-> **去人化就是把他人从自己的选择考量范围里抹掉。**
+> **这一历史模型描述对他人关切的收窄；它不自动判定去人身份、道德 standing、政治排除或暴力许可。**
 
 Extended reading:
 
@@ -3774,7 +3775,7 @@ Extended reading:
 
 Guardrail:
 
-> Institution = structured constraint. Legitimacy = structured constraint that remains corrigible, non-occlusive, and future-selectability-preserving.
+> Institution = structured constraint. Legitimacy remains an evaluative question under a declared framework; corrigibility, non-occlusion and future-selectability are candidate evidence dimensions, not its definition.
 
 ### 7.2 Path Dependence
 \[
@@ -3787,15 +3788,15 @@ SRT 把路径依赖重写为：
 
 ### 7.3 Inclusive vs Extractive Institutions
 压缩含义：
-- 包容性制度 = 高 d-value 的制度化表达
-- 榨取性制度 = 低 d-value 的制度化表达
+- 历史／候选解读：包容性制度可表现为较宽的关切范围
+- 历史／候选解读：榨取性制度可表现为较窄的关切范围
 
 最短结论：
-> **制度差异，本质上是社会选择范围差异的长期固化。**
+> **这是一种社会经济学候选模型，不是包容／榨取的定义，也不由 `d` 直接产生合法性判准。**
 
 Guardrail:
 
-> Do not infer inclusion or legitimacy from declared values. Test whether affected subjects can revise rules, exit without destruction, make costs visible, and alter gate conditions.
+> Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
 **Closure-pathology alignment (2026-04-21)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能只是 pseudo-open，而不是结构上开放。
 
@@ -3808,22 +3809,20 @@ Guardrail:
 G_{agency}=\text{Gini}(d_i)
 \]
 
-SRT 的重写是：
-> **不平等不仅是财富分布不均，更是选择带宽与现实塑形能力分布不均。**
+候选重写：
+> **该模型研究财富、选择带宽与现实塑形能力的分布关系；`G_{agency}` 不是不平等、moral standing 或合法性的普遍定义。**
 
 ### 8.2 Trust as Friction Reduction
 \[
 \text{Trust}=\arg\min(\Psi_f,S_{soc})
 \]
 
-最压缩句子：
-> **信任的深层作用，是降低交易摩擦与社会熵。**
-
-这使信任不再只是道德词，而成为社会系统效率的本体论基础。
+候选读法：
+> **信任可能降低某些交易摩擦与社会熵代理量；该式是待操作化模型，不是正义或合法性结论。**
 
 Guardrail:
 
-> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Always ask whether `Psi_f` is truly reduced or merely exported.
+> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Generic cost reduction or export is not canonical `Psi_f` automatically.
 
 ---
 
@@ -3835,11 +3834,11 @@ Guardrail:
 2. **价值、货币与市场都不是最终实在，而是社会选择的稳定化指标与过程。**
 3. **行为经济学偏差的深层根源，是 `d-value` 有限与解锚代价高。**
 4. **博弈、信任、道德与去人化都可被重写为多主体选择范围如何彼此纳入或排除。**
-5. **制度的本质，是某类社会选择结构被长期固化；包容性与榨取性的差异，本质上是 d-value 的制度化差异。**
+5. **制度可被描述为长期固化的社会选择约束；把包容／榨取与 `d` 联系起来只是候选解释，不是定义或政治判决。**
 
 Addendum:
 
-> These five claims are descriptive / diagnostic unless legitimacy tests are explicitly passed. Social `L_2` can be real, efficient, and stable while still being ethically or politically pathological.
+> These five claims are descriptive or candidate diagnostics. No fixed SRT legitimacy test battery is supplied here, and an ethical or political verdict requires an independently declared framework.
 
 ---
 
@@ -3867,11 +3866,11 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-17 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
-**dependency**：SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-POLITICAL-PHILOSOPHY, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
+**dependency**：SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-POLITICAL-PHILOSOPHY, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
 
 <!-- 以下为原文逐字保留 -->
 
@@ -3885,6 +3884,7 @@ Addendum:
 > **回链头部**：本文是 Philosophy domain exposition / bridge support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 或 `Philosophy/SRT_Philosophy_Ethics.md`。本文命题主要为 P2/P3，少量制度判准与阈值为 P4。  
 > **Guardrail pointer (ST-A corrected 2026-08-11)**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。Reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 是 P2/P3 规范审计条件，不是由结构稳定推出的 P1 必要充分判据；ST-A 本身不建立合法性结论。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
+> **Wave E7 current-use guard**：本文的公式、“六句话”和比较都是 P2–P4 候选政治哲学模型，不是 SRT-wide doctrine。`O2-C != O2-A != O2-M`，`O2-M = OPEN / HOLD`；high `d` 不赋予政治权威、合法性、代表权或优越 standing。
 
 ## 1. 核心问题
 
@@ -3896,21 +3896,21 @@ SRT 的压缩回答是：
 
 - 政治 = 多主体共同现实选择的组织形式
 - 国家 = 集体选择的 `L_2` 基础设施
-- 合法性 = 可持续共同选择
-- 权利 = 防止现实定义权被封闭性垄断的高阶约束
-- 民主 = 对代理者 `d` 倾向的低精度后验验证
+- 合法性：独立声明框架下的评价问题；可持续共同选择是候选模型
+- 权利：防现实定义权封闭的候选政治哲学重构
+- 民主：把投票视为 `d` 倾向低精度后验校准的历史／候选模型
 
 > **Level**: governance / bridge. The legitimacy ladder is: order condition → institutional type judgment → delegation legitimacy → political legitimacy. Do not infer legitimacy directly from `L_1/L_2` stability; missing middle criteria must be written as conditional diagnostics.
 
 Middle criteria:
 
-| Criterion | Minimum question | Shortcut blocked |
+| Candidate lens | Diagnostic question | Shortcut blocked |
 |---|---|---|
 | Institutional type | Is this a floor, gate, delegation, monopoly, emergency tool, or pathological closure? | Stability → legitimacy. |
 | Delegation legitimacy | Are scope, duration, review, and revocation specified? | "Represents the people" without audit. |
 | Consequence-return symmetry | Do costs and risks return to decision sites? | Efficiency while exporting `Psi_f^{maint}`. |
 | Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as substantive revision / agency. |
-| Friction-export test | Who pays the `Psi_f` that makes the order look stable or efficient? | Low visible friction → justice. |
+| Burden-export test | Who bears the cost / friction proxy that makes the order look stable or efficient? | Low visible friction → justice; generic cost → canonical `Psi_f`. |
 | Future-selectability test | Does the order preserve future selectable possibilities for affected agents? | Stable order → legitimate order. |
 
 ---
@@ -3954,7 +3954,7 @@ Guardrail:
 
 Guardrail:
 
-> The state is an `L_2` infrastructure, not a self-justifying subject. Its legitimacy depends on whether affected agents retain revision, exit, contestation, and consequence-return channels.
+> The state is an `L_2` infrastructure, not a self-justifying subject. A declared framework may evaluate revision, exit, contestation and consequence-return as candidate evidence; no conjunction here defines legitimacy.
 
 ---
 
@@ -3962,50 +3962,48 @@ Guardrail:
 
 ### 3.1 Legitimacy as Sustainable Co-Selection
 \[
-\text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
+\text{Legitimacy-model}_{candidate} \propto \operatorname{CoSelect}\big(\Theta,\, B^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
 
 最短理解：
-> **合法性不是谁天然占有真理，而是制度是否让更多主体在更长时间内，以更低的不对称摩擦进入共同现实生成，并保留再选择能力。**
+> **该历史／候选模型把共同参与、负担分配和再选择能力当作合法性的候选证据；它不是定义、测量公式或充要条件。**
 
 Guardrail:
 
-> `Psi_f^{asym}` must mean real asymmetry reduction, not hidden transfer of cost to less visible agents. `C_{reselect}` must mean material access to reselection, not nominal participation.
+> In this candidate model, burden asymmetry and material reselection access require operational proxies; neither generic cost nor nominal participation may be silently upgraded into canonical `Psi_f` or legitimacy.
 
-### 3.2 Freedom as Access to Reality-Shaping
+### 3.2 Candidate Freedom-as-Access Reconstruction
 \[
-\text{Freedom}_\theta \equiv \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
+\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
 \]
 
 最短说法：
-> **自由不是选项数量，而是主体能否真实进入共同现实塑造。**
+> **本候选重构把自由的一部分理解为主体能否进入共同现实塑造；它不是自由的普遍定义。**
 
-### 3.3 Equality as Non-Monopoly of Visibility and Entry
+### 3.3 Candidate Equality-as-Non-Monopoly Reconstruction
 \[
-\text{Equality}_{political} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
+\text{Equality-model}_{candidate} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
 \]
 
-压缩含义：
-- 平等首先不是结果一致
-- 而是现实定义权不能长期被封闭性垄断
+压缩含义：本候选模型把现实定义权的长期封闭性垄断视为平等审查信号，而不是平等的完整定义。
 
 ### 3.4 Rights as Anti-Monopoly Constraints
 \[
-\text{Rights} \equiv \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
+\text{Rights-model}_{candidate} := \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
 \]
 
 最压缩句子：
-> **权利是为防止现实定义权被锁死，而必须稳定化的高阶约束。**
+> **这是一种候选权利重构：用高阶约束防止现实定义权被锁死；它不从本体论自动生成权利。**
 
 Guardrail:
 
-> Rights are not merely symbolic recognition. They must protect real reselection capacity: access, appeal, revision, exit, and consequence-return.
+> In this candidate rights reconstruction, access, appeal, revision, exit and consequence return are possible design dimensions, not universal rights conditions.
 
 ---
 
 ## 4. 结构性不公、制度与民主
 
-### 4.1 Structural Justice as Explore-Budget Symmetry
+### 4.1 Candidate Structural-Justice Diagnostic
 \[
 \mathcal{J}_{struct} \sim \mathrm{Var}_{group}\!\left(\int \Psi_f^{maint}dt\right)
 \]
@@ -4014,11 +4012,11 @@ Guardrail:
 \]
 
 最短解释：
-> **不公不只是不平均，而是某些群体长期被压在高维护摩擦、低探索预算状态。**
+> **本候选诊断关注某些群体是否长期处于高维护负担、低探索预算状态；该模型不自动给出正义、合法性或行动判决。**
 
 Guardrail:
 
-> Structural justice must ask whether visible order is maintained by exporting `Psi_f^{maint}` to specific groups.
+> A declared framework may ask whether visible order is maintained by exporting burdens to specific groups; generic burden is not canonical `Psi_f^{maint}` automatically.
 
 ### 4.2 Institutional Health Criterion
 \[
@@ -4026,32 +4024,30 @@ Guardrail:
 \]
 
 最压缩句子：
-> **健康制度不仅要稳定，还要扩大社会可行选择空间，并保留纠错与再选择能力。**
+> **该模型把可行选择空间、负担和纠错通道作为“制度健康”的候选诊断维度，不将健康与合法性或善同义。**
 
 Guardrail:
 
-> Stability without reselection capacity is not institutional health; it may be pseudo-open closure.
+> Within this model, stability without reselection capacity may be investigated as pseudo-open closure; that diagnosis does not settle legitimacy or goodness.
 
-### 4.3 Democracy as Posterior Validation of d-Tendency
+### 4.3 Historical / Candidate Democracy-as-d-Calibration Model
 \[
 \text{Vote} \approx \text{posterior validation of } d_{tendency}
 \]
 
 最短解释：
-> **民主不是神秘地产生真理，而是在有限条件下，对“谁仍在整合更宽关切范围”进行低精度持续校准。**
+> **该候选模型把投票研究为有限条件下的低精度后验信号；它不定义民主、政治真理或代表授权。**
 
 Guardrail:
 
-> If voting becomes manipulable noise, ritual participation, or non-updating signal, SRT should narrow this claim to procedural anti-monopoly rather than `d` calibration.
+> If voting becomes manipulable noise, ritual participation, or a non-updating signal, this candidate claim should be narrowed to procedural anti-monopoly rather than `d` calibration.
 
-### 4.4 Multi-Center Governance
+### 4.4 Multi-Center Governance Hypothesis / Design Candidate
 \[
 \operatorname{Polycentricity} \uparrow \Rightarrow \operatorname{CaptureRisk} \downarrow \;\land\; \operatorname{CorrectionChannels} \uparrow
 \]
 
-压缩含义：
-- 多中心治理不是装饰
-- 而是反 capture、反现实定义权集中化的结构条件
+压缩含义：多中心治理可作为反 capture、增加纠错通道的设计候选；该公式是待检验假说，不是普遍制度要求。
 
 ---
 
@@ -4059,23 +4055,23 @@ Guardrail:
 
 ### 5.1 Emergency Legitimacy
 \[
-\text{Emergency legitimacy} \iff \text{minimum necessary interruption preserving } C_{FBC}
+\text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
 \]
 
 最短句子：
-> **危机中的决断合法性不来自决断者意志，而来自其是否以最小必要方式保全更多构成性存在与未来分支。**
+> **在独立声明的应急规范框架内，“最小必要阻断”可作为候选 safeguard；SRT 本体论不单独决定应急权力的合法性。**
 
 Guardrail:
 
-> Emergency power must specify scope, duration, review, revocation, consequence-return, and restoration of reselection channels.
+> A declared emergency framework may use scope, duration, review, revocation, consequence return and restoration of reselection channels as candidate safeguards.
 
 ### 5.2 Politics as L2 Disease or Healthy Floor
-SRT 对政治最强的诊断，是区分：
+本候选政治诊断区分：
 - **健康 `L_2`**：托举 consequence-sensitive revision / reorientation
 - **致命 `L_2`**：制造参与感并替代这些 downstream agency channels；自动化本身不等于 `no Selection`
 
 最短说法：
-> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让受影响主体失去实质性的 revision / exit / reorientation 通道时。**
+> **Candidate warning:** 秩序若自我绝对化并压缩受影响主体的 revision / exit / reorientation 通道，可触发政治病理审查；这不是完整病理定义、合法性判决或 `O2-M` verdict。
 
 ### 5.3 Revolution-Relapse Theorem
 \[
@@ -4088,7 +4084,7 @@ SRT 对政治最强的诊断，是区分：
 
 Guardrail:
 
-> A change of rulers is not a change of gate rules. Political transformation requires altered reselection capacity, cost distribution, and consequence-return structure.
+> A change of rulers is not a change of gate rules. Reselection capacity, cost distribution and consequence return are candidate transformation diagnostics, not a mandate or complete political verdict.
 
 ---
 
@@ -4119,14 +4115,14 @@ SRT 不等于：
 
 1. **政治不是围绕既成实体分配资源，而是多主体共同现实选择的组织形式。**
 2. **国家、法律、人民与制度都不是先验本体，而是 `L_1/L_2` 的历史沉积结果。**
-3. **合法性来自可持续共同选择：更多主体、较低不对称摩擦、较高再选择能力。**
-4. **自由、平等与权利的核心，不是抽象名目，而是防止现实定义权被长期垄断。**
-5. **结构性不公首先表现为维护摩擦、探索预算与恢复能力的跨群体不对称。**
+3. **可持续共同选择是一个候选合法性模型，不是通用定义。**
+4. **防止现实定义权被长期垄断，是解读自由、平等与权利的候选框架。**
+5. **负担、探索预算与恢复能力的跨群体不对称，是结构性不公的候选诊断线索。**
 6. **政治病理的关键形态之一，是 `L_2` 从地板变成方向，从托举 consequence-sensitive revision / reorientation 变成替代这些 downstream agency channels；这不定义 Selection 是否发生。**
 
 Addendum:
 
-> These claims are diagnostic unless legitimacy tests are explicitly passed. Political `L_2` can be real, stable, and efficient while still pathological if it blocks reselection, exports friction, or separates power from consequence return.
+> These claims are candidate diagnostics under a declared framework. No fixed SRT test battery is necessary or jointly sufficient for legitimacy, justice, pathology, rights, or required action.
 
 ---
 
@@ -4154,7 +4150,7 @@ Addendum:
    - 若成立需撤回什么：撤回 vote-as-`d` calibration language and keep democracy as procedural anti-monopoly only.
 
 3. Institutions preserve formal reselection while materially blocking it.
-   - 当前承受方式：rights and legitimacy require access, correction, and consequence-return channels, not nominal participation.
+   - 当前承受方式：a declared framework may treat access, correction, and consequence-return as candidate evidence rather than equating nominal participation with legitimacy.
    - 若成立需撤回什么：撤回 legitimacy claims for systems that satisfy procedure while compressing real reselection capacity.
 
 4. Political legitimacy may require norm sources not reducible to SRT order structure.
