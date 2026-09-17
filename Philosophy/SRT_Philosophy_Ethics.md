@@ -4,10 +4,11 @@ type: theory
 tags: [Ethics, Meta-Ethics, Is-Ought, Stoicism, Spinoza, Hybrid]
 status: bridge_realign_v1
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: mixed
+claim_level: P2-P5
 canonical: false
-dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY, SRT-SUFFERING, SRT-OCCLUSION-DYNAMICS, SRT-IRREVERSIBILITY, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Philosophy Part 3: Meta-Ethics & The Physics of Virtue (Hybrid Edition)
@@ -15,6 +16,8 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 > **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ethics_Split/README.md`](Ethics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
+> **Current-authority override (Wave E6, 2026-09-17)**: This file is an active, non-canonical Philosophy / Ethics bridge plus a historical research surface. Cross-owner authority flows from `Core_Law/SRT_Generative_Ontology_Spine.md` and compatible local owners into this file, never in reverse. Legacy `Ax-Eth-*`, `T-Eth-*`, `Ax-FreeWill-*`, `Ax-Resp-*` and similar labels retain provenance but do not create P0/P1 axioms or canonical theorems. Primitive Selection is not `\hat{G}_\theta`; exact universal Agency and FreeWill sufficiency remain OPEN. `O2-C != O2-A != O2-M`, and `O2-M = OPEN / HOLD`. `\Psi_f` is not pain, suffering, grief or moral cost. Structural, clinical and cognitive model variables do not by themselves establish moral legitimacy, culpability, pathology, subjecthood or phenomenality. Occurrence, continuation, wider concern and more options do not by themselves imply goodness or legitimacy.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axiomatic Ethics (AI-Readable).
@@ -32,13 +35,13 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 ## Canonical Cross-Link: Occlusion Dynamics
 
 - 本文件处理元伦理与德性物理学；凡涉及 d 收窄、A/B 分期、病理性遮蔽、伪轻、不确定性支付与结构性恶的段落，结构层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）。
-- 本文件不重复定义 d_c 阈值语义、B 期锁死判据、解耦触发类型与结构性恶三判据；以 canonical 为准。
+- 本文件不重复定义 d_c 阈值语义、B 期锁死判据或解耦触发类型；遮蔽／病理分类不自动产生 evil、责任或 `O2-M` 判决，以 canonical 的有限权限为准。
 
 ## Canonical Cross-Link: Suffering Theory
 
 - 本文件涉及苦难在德性序、虚无感、不确定性支付与 is-ought 结构中位置的段落，对"苦难本身是什么对象"的结构读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
-- 本文件保留元伦理与德性物理学展开；疼痛/苦难范畴区分、信号型/结构型分类、四类现象学分型与 T-SUFF-4 反最小化原则不在本文件重新定义。
-- 在元伦理评估"幸福最大化 / 痛苦最小化"类立场时，应按 T-SUFF-4 处理：信号型苦难被压灭等价于结构层盲区，不能作为规范目标。
+- 本文件保留元伦理与德性物理学展开；疼痛/苦难范畴区分、登记准入、信号型/结构型分类与现象学分型不在本文件重新定义。
+- 苦难必须经独立 registration/admission 才能进入伦理比较。旧 T-SUFF-4 不能直接推出普遍伦理定理；“压低信号可能造成盲区”只可作为声明了主体、时域与规范框架的候选评估维度。
 
 ## PH-SS Guardrail Pointer
 
@@ -49,11 +52,13 @@ Core guardrails:
 - `d-value` expansion is not automatically moral progress.
 - `L_2` stabilization is not automatically moral legitimacy.
 - Moral intensity, moral reality, and moral legitimacy must remain distinct.
-- Responsibility requires selectable agency, not merely high harm or high concern.
+- Selectable agency is a candidate responsibility dimension, not an exact `O2-A` sufficiency theorem.
 - Love / grief / gift / virtue formulas should be read with explicit formula-role labels unless operationalized.
-- Ethics claims involving social norms should check friction export, future selectability, reversibility, and correction channels.
+- Friction/burden distribution, future selectability, reversibility and correction are non-exhaustive candidate lenses, not a replacement `O2-M` solver.
 
 # Part A: Formal Axioms (形式化公理)
+
+> **Standing of Part A**: “Axiom”, “theorem”, “definition” and equation labels below are historical / comparative / P3-P4 model handles unless a current canonical owner is explicitly cited. They preserve the research programme; they do not define primitive Selection, exact Agency/FreeWill/responsibility, suffering, evil, or moral legitimacy.
 
 
 
@@ -65,77 +70,83 @@ Core guardrails:
 
 **[R — Retrodiction：追溯 Frankfurt 1971 层次意志论（first-order / second-order desires）的 SRT 操作化]**
 
-自由意志是对自身参数 $\theta$ 的二阶选择。
+**历史／候选模型**：下式曾把自由意志操作化为对自身参数 $\theta$ 的二阶改写；它不是当前普遍定义。
 $$\text{FreeWill} \equiv \hat{G}_{\theta'}[\theta]$$
 
-**无穷回归问题与停止策略**：$\hat{G}_{\theta'}[\theta]$ 中的 $\theta'$ 又由谁决定？若有更高阶 $\hat{G}_{\theta''}[\theta']$，则形成无穷层级。**SRT 停止策略**（类似 §5.3 框架分层）：实践中停止于”能够反思当前选择参数的层级”——即 $\theta'$ 来自元认知能力（历史θ演化的稳定方向），无须追问 $\theta''$。这与 Frankfurt 的”effective will”类似：层级有限，终止于”无法进一步反思的欲望”。
+当前边界：$\theta$ rewrite / meta-selection 既非 exact FreeWill 的普遍必要条件，也非充分条件；$\hat{G}_\theta$ 不是 primitive Selection 或 prior selector。反思层与 $\theta'$ 不会在本体论上封闭 regress 或自动产生 Agency。
+
+**无穷回归问题与历史停止策略**：$\hat{G}_{\theta'}[\theta]$ 中的 $\theta'$ 又由谁决定？若有更高阶 $\hat{G}_{\theta''}[\theta']$，则形成无穷层级。旧模型在实践中停止于“能够反思当前选择参数的层级”；这可与 Frankfurt 的 “effective will” 作比较，但只是模型截断，不是本体论解答。
 
 **$\theta'$ 的来源（三类）**：① **具身历史**：过去 $\theta$ 演化积累的方向性约束（$v_\theta$ 的历史偏置）；② **L₂文化规范**：外部 L₂ 结构对 $\theta'$ 的约束与资源（教育、价值观传递）；③ **元认知激活**：高d任务激活的反思能力（临时 $\theta'$ 激活）。
 
 **作用范围约束**：$\hat{G}_{\theta'}[\theta]$ 的修改受约束：① L₀结构性约束（神经生物基底限制 $\theta$ 可塑范围）；② L₂可改写边界（社会结构决定某些 $\theta$ 维度难以自主修改）；③ Ψ_f 代价（$\theta$ 自我重写是有摩擦成本的，不是随意的）。
 
-*   **Implication**: 自由意志不是”无因”，而是对因果结构的自我重写。自由的程度 ∝ $d$ 值（可达元选择的关怀带宽，Ax-Eth-3 责任-带宽耦合联结）。
+*   **Candidate implication**: 某些自由模型可研究对约束结构的可支付／可重选改写；但这不定义 exact FreeWill，且 freedom degree 不与 $d$ 建立普遍比例关系。
 
 **证伪条件**：若在控制L₂文化规范和神经可塑性条件后，具有高反思能力（高θ'激活）的个体与低反思能力个体的行为选择方式无差异，则”二阶选择对θ的修改”假设失效。
 
 ### Ax-Eth-2: Metastable Window
-有效选择只能在亚稳态窗口出现。
+**历史／declared-model 方程**：旧模型把有效行动限定在一个亚稳态窗口。
 $$\text{Action}(t) = \hat{G}_\theta[L_0 \to L_1] \iff S(t) \in W_{meta}$$
-*   **Implication**: 自由不是常态，而是动力学稀缺区。
+*   **Current guard**: 此 iff 只在声明的动力学模型内使用；并非所有 action 的自然必要条件，也不证明 free choice、Agency 或 responsibility。
 
 ## II. Responsibility Dynamics
 
 ### Ax-Eth-3: Responsibility-Bandwidth Coupling
-责任与有效 $d$ 值成正比。
+**历史／heuristic 模型**：旧式责任—带宽相关式保留作研究候选，不是责任计算规则。
 $$R_m \propto \int d(t) \cdot \left\|\frac{\partial L_1}{\partial \hat{G}}\right\| dt$$
-*   **Implication**: 在低带宽或病理条件下，责任应被重新标定。
+*   **Current guard**: responsibility 不由 $d$、operator membership 或 meta-selection capacity 单独决定；低带宽、约束或病理标签也不机械减责。Agency、知识、控制、choice window、consequence return、payability 与 reselectability 仅是候选证据；exact `O2-A` 充分性仍 OPEN。
 
 ### Ax-Eth-4: Ought-Imples-Selectable
-应然等价于在 $\theta$ 可达空间内的可选性。
+**伦理桥候选／可行性护栏**：在某些已声明规范框架中，可用可达性检验质询一个要求是否可行。
 $$\text{Ought}(\sigma) \Rightarrow \exists \theta_{acc}: P(\sigma|\theta_{acc})>\epsilon$$
-*   **Implication**: 伦理命令不是超越条件，而是选择空间内的约束。
+*   **Current guard**: selectability 不等于 moral legitimacy；unselectable 也不在所有伦理理论下自动等于 illegitimate。本体论不提供完整 ought criterion。
 
 ## III. Stoic Dynamics
 
 ### Ax-Eth-5: Appropriation Operator
-道德成长是 $d$ 值扩张，将他者拓扑并入自我。
+**历史／候选模型**：关切范围扩张可被研究为 moral widening 的一个维度。
 $$d(t+\Delta t)= d(t)+\int \text{Assent}(\text{Other}\to\text{Self})\, d\sigma$$
-*   **Implication**: 爱与关切是拓扑并集，不是情绪附着。
+*   **Current guard**: $d$ 扩张不按定义等于 moral growth、goodness、legitimacy 或 moral authority；跨主体关切只是候选维度。
 
 ### Ax-Eth-6: Dichotomy of Control
-责任仅适用于选择算子本身，而非 $L_0$ 或物理 $L_2$。
+**历史斯多葛操作化**：旧式方程把责任域缩写为选择算子一侧。
 $$\text{Responsible} = \{\hat{G}_\theta\} \setminus \{L_0, L_2^{physics}\}$$
-*   **Implication**: 斯多葛“控制二分法”是本体论边界条件。
+*   **Current guard**: operator membership 不足以确立责任，`\hat{G}_\theta` 也不是 primitive Selection；这不是 exact `O2-A` 边界条件。
 
 ## IV. Derived Theorems
 
 ### T-Eth-1: Moral Gradient Theorem
-道德进步等价于 $d$ 值的单调上升。
+**历史／已取代的普遍定理读法**：旧公式曾把道德进步与 $d$ 单调上升等同。
 $$\frac{d}{dt} d > 0 \iff \frac{d}{dt} \text{Moral} > 0$$
-*   **Implication**: 伦理不是规则集合，而是带宽扩展动力学。
+*   **Current guard**: 该 iff 不具 current-positive standing。$d$ 上升可作 declared-model 的 concern-widening proxy，但既非 moral progress 的普遍必要条件，也非充分条件。
 
-> **PH-SS guardrail**: This theorem should be read as a directional / phenomenological model, not as a sufficient condition for moral legitimacy. `d-value` expansion may signal moral widening, but moral legitimacy also requires non-exported friction, future-selectability, cross-subject bandwidth, and correction channels. See `SRT_Ethics_PH_SS_Guardrails.md`.
+> **PH-SS guardrail**: Read this only as historical / directional model material. Burden distribution, future-selectability, cross-subject concern and correction may be candidate lenses inside a declared framework; they are not replacement necessary-and-sufficient conditions and do not close `O2-M`. See `SRT_Ethics_PH_SS_Guardrails.md`.
 
 ### T-Eth-2: Friction Expectation Pathology
-当预期摩擦放大时，道德判断系统性失真。
+**P3/P4 phenomenological candidate**：在声明的操作化模型中，可研究预期负担放大与判断／行动之间的关系；标题中的 “pathology” 不是诊断。
 $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual},\quad \mu_{expect} \gg 1$$
 
 > **Formula role**: phenomenological model. The multiplicative amplification is a structural description of distorted friction perception; `μ_expect` is not a directly measurable scalar without an operational proxy specification.
 
 *   **Implication**: “懒惰”可能是摩擦参数病理而非意志薄弱。
 
+`\Psi_f^{perceived}` 是历史 proxy 记法：canonical `\Psi_f` 不等于 perceived distress、pain、suffering、grief 或 moral cost，`\mu_{expect}` 也不是既成临床参数。
+
 ### Ax-Eth-7: The Ontological Weight of Love (爱的本体论重量)
-**Formal Definition**: 在L0中，当算子A将实体B完全纳入其d值范围，B的毁灭即为A方程的奇点（不可计算的无限大摩擦）。
+**历史 phenomenological model，不是 formal definition**: 旧模型用奇点语言表达关系丧失的存在重量。
 $$\text{If } B \in \text{Scope}(A) \land B \to L_0, \text{then } \Psi_f(A) \to \infty$$
 * **Implication**: 悲伤（Grief）可用"幻肢痛"作 phenomenological analogy / coupling-loss proxy：对方的L1实体已消失，但你的$\theta$参数网络中仍留有与对方耦合的巨大权重，算子不断试图向虚空发起连接，遭遇 felt-impossible prediction-error proxy。
 
 > **Formula role guardrail**: This formula is a phenomenological / existential-weight model unless explicitly operationalized. Do not read poetic infinity, gift-phase, or grief-weight language as literal mathematical divergence without a stated proxy and failure condition. See `SRT_Ethics_PH_SS_Guardrails.md`.
 
+> `B` 的毁灭或 loss 不自动产生 literal `\Psi_f` singularity；grief 必须在独立现象学／苦难登记后讨论。
+
 ---
 
 ### Ax-Eth-8: Affective Priority (情绪优先性)
 
-> **层级说明**：本公理是关于**具身智体认知架构**的经验性主张（L1 应用层），不是 SRT 本体论的结构公理。其与 Ax-Core-A1（选择优先性）的本体论联结为接口预留，待显式推导。【暂定锚：层级定位待确认】
+> **P3/P4 standing**：本节是关于特定具身认知架构的经验／神经科学桥假说，不是 SRT 本体论的结构公理。情绪是否最先可用、效价是否追踪 `d`、意向内容是否后置，都依赖 domain、measure 与 model，不作普遍断言。
 
 情绪是具身智体对自身 $\hat{G}_\theta$ 选择梯度（方向与强度）的**最早功能上可用**且**最直接**的第一人称通道；理性是对已完成稳定化的 $L_1$ 状态进行的 $L_2$ 结构化处理。二者的优先性是**认识论的**，不是本体论的。
 
@@ -151,11 +162,11 @@ $$\sigma_r(t) = f\!\left(L_1^{\text{stabilized}}(t)\right), \quad \sigma_e \text
 
 **情绪认识论内容的边界**：情绪直接携带的认识论内容只有选择梯度的**方向和强度**（正/负，大/小）。情绪的意向性（"关于什么的情绪"）是 $L_2$ 事后归因，不是情绪信号本身携带的。
 
-**推论 C-Eth-8-1（搜索空间约束）**：所有"理性选择"都在情绪预过滤后的 $L_1$ 状态空间内进行。"纯粹理性"不存在——仅存在对情绪已划定方向之后的局域结构化。
+**候选推论 C-Eth-8-1（搜索空间约束）**：在某些具身模型中，理性选择可能受到先行情绪过滤；“纯粹理性不存在”保留为历史强表述，不是 current universal SRT theorem。
 
-**推论 C-Eth-8-2（d-value 导航信号）**：情绪强度 $\propto \left|\nabla_t d\right|$；正向情绪 = d-value 上升方向，负向情绪 = d-value 下降方向。情绪是 $\hat{G}_\theta$ 的实时方向仪，携带梯度方向，不携带具体对象。
+**候选推论 C-Eth-8-2（d-value 导航信号）**：情绪强度与 $\left|\nabla_t d\right|$ 的关系、效价与 `d` 方向的关系，只是待检验 proxy 假说；情绪不按定义成为 $\hat{G}_\theta$ 的普遍方向仪。
 
-* **Implication（与 Ax-Eth-1 联结）**：元选择（$\hat{G}_{\theta'}[\theta]$）= 在情绪的方向信号出现时维持 $\theta'$ 反思层的能力。情绪压制 = 切断 $\hat{G}_\theta$ 的梯度反馈；理性在无导航状态下的结构化是盲目的，不是自由的。
+* **Candidate interface（与 Ax-Eth-1 联结）**：在某些具身模型中，可研究情绪信号与反思层维持的关系；情绪压制不按定义切断 primitive Selection，也不自动决定一个行动是否自由。
 
 * **Implication（与 Ax-Stoic-2 联结）**：斯多葛美德 = 校准 $\theta$，使 d-value 梯度信号被准确读取而不失真，而非消除情绪来源。
 
@@ -170,7 +181,7 @@ $$\sigma_r(t) = f\!\left(L_1^{\text{stabilized}}(t)\right), \quad \sigma_e \text
 
 ### T-Eth-3: Simulation-Selection Coupling (模拟-选择耦合)
 
-**定理**（来自 Ax-Eth-8 + Ax-Core-A3）：$L_2$ 可生成粗糙原型模拟，在**功能位**上充当 $L_0^{\text{proxy}}$，被 $\hat{G}_\theta$ 当作选择输入处理，触发全局分布式 $\sigma_e$；$\sigma_e$ 与原型模拟随后共同被 $L_2$ 结构化为完整的局域场景。**情绪触发先于场景的完整结构化。**
+**P3/P4 declared-model hypothesis**：在声明的模拟架构中，$L_2$ 可生成粗糙原型，并以 $L_0^{\text{proxy}}$ 作为功能位标签进入后续建模。`L_0^{proxy} !=` canonical `L_0`；该回路不是 primitive Selection 机制，“情绪先于完整场景”是经验假说。
 
 > **层级说明**：$L_0^{\text{proxy}}$ 是**功能位标签**，不是神经实现层标签。在神经实现层上，原型模拟对应尚未完全局域化的 $L_1^{\text{candidate}}$ 式激活。两个描述层不冲突，不可混用。
 
@@ -189,11 +200,11 @@ $$L_2 \;\xrightarrow{\text{simulate}}\; L_0^{\text{proxy}} \;\xrightarrow{\hat{G
 | 预期焦虑 | 回路偏向威胁性 $L_0^{\text{proxy}}$，θ 偏置 | θ 过度加权负向 d-value 信号 |
 | 反刍 (rumination) | 同一 $L_0^{\text{proxy}}$ 循环，L₂ 无法收敛 | $\hat{G}_\theta$ 重复选择同一未解决状态 |
 | 创伤后应激 (PTSD) | θ 被极端 $\Psi_f$ 事件固化，普通代理触发高振幅 $\sigma_e$ | θ 的极端事件锚点造成 d-value 信号失真 |
-| 元选择 / 意志力 | $\hat{G}_{\theta'}$ 编辑 L₂ 生成哪种 $L_0^{\text{proxy}}$ | 自由意志 = 对模拟输入的编辑权 |
+| 元选择 / 意志力 | $\hat{G}_{\theta'}$ 编辑 L₂ 生成哪种 $L_0^{\text{proxy}}$ | 模拟输入编辑 = 候选 control proxy；非 FreeWill 定义 |
 
-**对 Ax-Eth-1（自由意志）的精化**：元选择（$\hat{G}_{\theta'}[\theta]$）的更精确机制 = 对 $L_2$ 生成何种 $L_0^{\text{proxy}}$ 拥有编辑能力。意志力不是"压制情绪"，而是"选择模拟什么"。
+**对 Ax-Eth-1 的候选接口**：编辑模拟输入可作为某些 meta-selection / control 模型的一个维度；它不定义 exact FreeWill，也不保证 Agency 或责任。
 
-**对心理治疗的推论**：有效的心理治疗通过修改 $L_2$ 的模拟模式（认知重构、叙事重构）来改变 $\hat{G}_\theta$ 的选择输入，从而间接修改 $\theta$，而非直接压制 $\sigma_e$。压制 $\sigma_e$ = 切断反馈但不修改回路 = 症状管理而非治愈。
+**临床研究假说**：认知／叙事重构与情绪抑制可能对模拟模式和可塑性产生不同影响；这需要独立证据 programme。本文不据此给出诊断、治疗建议、必要／充分临床机制或 cure 结论。
 
 **证伪条件**：
 - FC-T3-1：若想象性情绪诱导（vivid mental imagery）与真实刺激诱导的 $\sigma_e$（相同效价）在杏仁核激活模式上无显著相似性，则"$L_0^{\text{proxy}}$ 驱动真实选择"的主张被弱化。
@@ -203,13 +214,13 @@ $$L_2 \;\xrightarrow{\text{simulate}}\; L_0^{\text{proxy}} \;\xrightarrow{\hat{G
 
 ### Ax-Eth-9: Free Will Phenomenology as L₂ Retrospection (自由意志感即 L₂ 回溯叙事)
 
-**形式化**：自由意志"感"（$\text{FW}_{feel}$）是 $L_2$ 对已完成选择的叙事构建，在本体论上晚于 $\sigma_e$（情绪，选择的现象面）和 $L_1^{\text{stabilized}}$（已锚定的选择结果）。
+**历史／P3-P4 phenomenology model**：旧形式化把自由意志感建模为 $L_2$ 对已完成选择的叙事构建。它不是普遍现象学身份式，也不决定 exact FreeWill。
 
 $$\text{FW}_{feel}(t) = \mathcal{N}_{L_2}\!\left[L_1^{\text{stabilized}}(t - \delta)\right], \quad \delta > 0$$
 
 其中 $\mathcal{N}_{L_2}$ 为 $L_2$ 的叙事构建算子——它取已完成的 $L_1$ 锚定态，生成"是我选择了这个"的主观叙事。
 
-**时序结构**（对应 Libet 1983 实验）：
+**历史时序映射候选**（与 Libet 1983 对话，不是层级身份式）：
 
 | 时刻 | 事件 | SRT 层级 | 佛洛依德对应 |
 |------|------|---------|------------|
@@ -217,13 +228,13 @@ $$\text{FW}_{feel}(t) = \mathcal{N}_{L_2}\!\left[L_1^{\text{stabilized}}(t - \de
 | $t - 200\text{ms}$ | 可报告的意识意图出现 | $L_1^{\text{stabilized}}$：选择已锚定 | **自我 Ego**：现实原则协商完成 |
 | $t = 0$ | 动作执行 + "自由意志感"出现 | $L_2$ 叙事构建："我选择了X" | **自我的事后叙事**：声称作者权 |
 
-**感受到的自由意志，到达得最晚。**
+“自由意志感到达最晚”仅是该实验模型的可检验假说。Readiness potential 不等于 `L_0` drive，reported intention 不等于 completed `L_1` anchoring，Libet timing 不能反向定义 `L_0/L_1/L_2`。
 
 ---
 
 ### T-Eth-4: Freudian Topology as SRT Three-Layer Map (弗洛伊德拓扑即 SRT 三层映射)
 
-**定理**：弗洛伊德的本我-自我-超我三元结构，对应 SRT 的 $L_0 / L_1 / L_2$ 三层，并获得动力学机制说明。
+**历史比较／P3 model hypothesis**：下表保留 Freud 与 SRT 的比较映射，不构成 `Id = L_0`、`Ego = L_1`、`Superego = L_2` 的 canonical identity，也不定义 selfhood。
 
 | 弗洛伊德 | SRT 层级 | 动力学机制 |
 |---------|---------|-----------|
@@ -235,11 +246,11 @@ $$\text{FW}_{feel}(t) = \mathcal{N}_{L_2}\!\left[L_1^{\text{stabilized}}(t - \de
 
 **推论 C-T4-2（超我即他者 θ 的内化）**：超我的形成过程 = 他者的 $\hat{G}_\theta$ 操作历史被内化为本人 θ 的约束成分。这与 Ax-Stoic-1（归化算子：将他者拓扑并入自我 d-value 范围）是同一机制的两个方向：归化算子是扩张（将他者纳入关怀），超我内化是约束（将他者的禁忌/理想纳入 θ 参数）。
 
-**对 Ax-Eth-1 的精化**：
-- **真正的自由意志**（Ax-Eth-1：$\hat{G}_{\theta'}[\theta]$）= 修改 θ 的元选择能力，实在，操作在选择界面
+**对 Ax-Eth-1 的历史区分**：
+- **候选 meta-selection handle**（Ax-Eth-1：$\hat{G}_{\theta'}[\theta]$）= 某些模型中的 θ 修改能力；不是 exact FreeWill 定义
 - **自由意志感**（Ax-Eth-9：$\text{FW}_{feel}$）= L₂ 事后叙事，非实在的选择能力，而是对已完成选择的叙事认领
 
-二者的混淆是"意志力迷思"的根源：人们以为增强"感受到自由"就是增强自由，实际上真正的自由在当前 bridge 中是可支付、可重选、能保留未来选择空间的 θ/constraint rewrite 能力，而非生成"我在自由选择"的叙事能力。
+二者可在研究中区分，但本文件不把 payable / reselectable / future-selectability 条件合取成新的 FreeWill 充分必要定义。
 
 **证伪条件**：
 - FC-T4-1：若 Libet 类实验中，意识意图报告（$\sim t-200\text{ms}$）稳定地先于准备电位（$\sim t-550\text{ms}$）而非晚于，则"情绪选择先于意志感"的时序主张被直接证伪。
@@ -250,7 +261,7 @@ $$\text{FW}_{feel}(t) = \mathcal{N}_{L_2}\!\left[L_1^{\text{stabilized}}(t - \de
 
 ### Ax-Eth-10: Superego Formation as Social Ψ_f Crystallization (超我形成即社会摩擦结晶)
 
-**定理**：超我（$\theta_{\text{SG}}$）是他者 $\hat{G}_\theta$ 操作所产生的社会摩擦（$\Psi_f^{\text{social}}$）在个体 θ 中的梯度积累，而非抽象规范的内化。
+**P3/P4 comparative model, not identity**：下式保留为超我形成的历史候选模型。`Superego != social \Psi_f crystallization` by definition；社会惩罚、羞耻与负担也不自动等于 canonical `\Psi_f`。
 
 $$\theta_{\text{SG}} \;\stackrel{\text{def}}{=}\; \int_0^T \alpha(\tau) \cdot \Psi_f^{\text{social}}(\sigma, \tau) \cdot \nabla_\theta \log P(L_1 \mid \hat{G}_\theta) \; d\tau$$
 
@@ -265,17 +276,17 @@ $$\theta_{\text{SG}} \;\stackrel{\text{def}}{=}\; \int_0^T \alpha(\tau) \cdot \P
 | **罪恶感 (Guilt)** | $L_1$ 违反 $\theta_{\text{SG}}$，无需观察者 | $\hat{G}_\theta$ 内部检测 $\theta_{\text{SG}}$ 约束被破坏 → $\sigma_e$（私人的，可在完全独处中发生） |
 | **羞耻感 (Shame)** | 实际或想象的他者 $\hat{G}_\theta$ 正作用于你的 $L_1$ | 外部 $\Psi_f$ 激活 + $\theta_{\text{SG}}$ 预测他者不认可 → 双重 $\sigma_e$（关系性的，需要真实或想象的观察者） |
 
-罪恶感是 θ_SG 的内部边界检测；羞耻感是社会暴露触发的双重 Ψ_f 共振。二者常被混同，但 SRT 给出首个结构性区分。
+罪恶感／羞耻感表格是待检验的触发结构假说，不是 exact SRT identity，也不声称给出“首个”或排他的结构性区分。
 
 **推论 C-Eth-10-2（道德创伤 Moral Injury 的机制）**：当 $\theta_{\text{SG}}$ 的原始安装者（高 $\Psi_f$ 权威来源）强迫个体执行违反 $\theta_{\text{SG}}$ 的 $L_1$ 态时，$\theta_{\text{SG}}$ 内部产生结构性矛盾：安装禁令的 $\hat{G}_\theta$ 要求违反其自身安装的约束。
 $$\text{MoralInjury} \equiv \hat{G}_\theta^{\text{authority}} \text{ requires } L_1 \in \text{Forbidden}(\theta_{\text{SG}}) \text{ where } \theta_{\text{SG}} \xleftarrow{\text{install}} \hat{G}_\theta^{\text{authority}}$$
-道德创伤 ≠ PTSD（极端 $\Psi_f$ 单次固化 θ），而是 $\theta_{\text{SG}}$ 的相干性内爆。
+道德创伤与 PTSD 的区分在此仅是 comparative hypothesis；二者都不能由 `\Psi_f` 或 $\theta_{\text{SG}}$ 方程诊断。
 
 **推论 C-Eth-10-3（精神分析治愈的机制）**：精分的有效性 = 将无意识 $\theta_{\text{SG}}$ 约束（$\hat{G}_{\theta'}$ 不可达区域）转化为可反思内容，从而将其纳入 Ax-Eth-1 的元选择范围。
 
-$$\text{Cure} \equiv \delta\theta_{\text{SG}} \in \text{Domain}(\hat{G}_{\theta'}) \quad (\text{将 } \theta_{\text{SG}} \text{ 的隐性约束变为可修改成分})$$
+$$\text{Cure} \equiv \delta\theta_{\text{SG}} \in \text{Domain}(\hat{G}_{\theta'}) \quad (\text{历史候选方程；非临床定义})$$
 
-精分不是"理解过去"，而是**扩展元选择能够操作的 θ 区域**，将 $\theta_{\text{SG}}$ 从元选择的盲区中取回。
+该方程只提出一种可检验的 psychodynamic interpretation，不定义 cure，不构成治疗建议、必要／充分机制或对其他治疗的排除。
 
 **与 Ax-Stoic-1 的对照**：归化算子（Ax-Stoic-1）将他者纳入自我 d-value 范围（扩张方向）；$\theta_{\text{SG}}$ 形成是将他者的禁令纳入自我 θ 约束（内化方向）。同一机制，两个方向：一个扩张关怀边界，一个内化选择禁令。
 
@@ -288,7 +299,7 @@ $$\text{Cure} \equiv \delta\theta_{\text{SG}} \in \text{Domain}(\hat{G}_{\theta'
 
 ### T-Eth-5: θ Naturalization Gradient (θ 自然化梯度)
 
-**定理**：θ 不存在将 $\theta_{\text{SG}}$（超我）与 $\theta_{\text{personal}}$（个人偏好）静态区分的结构边界。二者编码于同一基底；唯一可操作的区分是**自然化梯度**——该梯度决定各 θ 成分对元选择算子 $\hat{G}_{\theta'}$ 的可见度。
+**P3/P4 comparative model**：自然化梯度是区分 $\theta_{\text{SG}}$ 与 $\theta_{\text{personal}}$ 的一个候选操作化，而非唯一机制或 universal selfhood theorem。
 
 **自然化过程**（Naturalization）：$\theta_{\text{SG}}$ 成分被反复执行而原始 $\Psi_f$ 来源缺席时，其"外部感"逐渐消失，被感知为个人偏好：
 
@@ -304,7 +315,7 @@ $$\mathcal{V}_{\theta'}(\theta_i) \;\propto\; \frac{\Psi_f^{\text{install}}(\the
 | **高** | **高** | **"这就是我"** | **极低（不可见，无法修改）** |
 | 低 | 任意 | "我的偏好/本能" | 中（可见度取决于反思习惯） |
 
-**深层 θ_SG 是最危险的约束：感知为本性，实为安装物。**
+“感知为本性、实为安装物”是该模型需要检验的解释，不是对具体个体的诊断。
 
 ---
 
@@ -324,7 +335,7 @@ $$\mathcal{V}_{\theta'}(\theta_i) \;\propto\; \frac{\Psi_f^{\text{install}}(\the
 
 **推论 C-T5-2（身份是移动的前沿，不是固定的本质）**：
 
-"真实自我"在 SRT 里不是一个待发现的实体，而是**一条持续推进的可见度前沿**：
+在该历史模型中，“真实自我”可被探索性地表示为一条可见度前沿：
 
 $$\text{AuthenticSelf}(t) \;\equiv\; \theta_{\text{accessible}}(t) = \{\theta_i : \mathcal{V}_{\theta'}(\theta_i) > \epsilon\}$$
 
@@ -334,7 +345,7 @@ $$\text{AuthenticSelf}(t) \;\equiv\; \theta_{\text{accessible}}(t) = \{\theta_i 
 
 **对 C-Eth-10-3（精神分析治愈）的精化**：
 
-精分的机制 = 还原自然化（de-naturalization）：通过重建安装历史（谁的 $\hat{G}_\theta$，施加了什么 $\Psi_f^{\text{social}}$，在什么时刻），使深层 $\theta_{\text{SG}}$ 的"外部感"得以恢复，从而提升其 $\mathcal{V}_{\theta'}$，将其纳入 $\hat{G}_{\theta'}$ 的可修改范围。
+候选 psychodynamic hypothesis：还原自然化可能通过重建安装历史提升某些约束的反思可达性；这不是 psychoanalysis 的 established 或唯一机制。
 
 $$\text{De-naturalization}: \text{NatDepth}(\theta_i) \downarrow \;\Rightarrow\; \mathcal{V}_{\theta'}(\theta_i) \uparrow \;\Rightarrow\; \theta_i \in \text{Domain}(\hat{G}_{\theta'})$$
 
@@ -349,7 +360,9 @@ $$\text{De-naturalization}: \text{NatDepth}(\theta_i) \downarrow \;\Rightarrow\;
 
 ### T-Eth-6: Psychological Resistance as Meta-Level θ_SG (心理阻抗即元层θ_SG)
 
-**定理**：de-naturalization 的困难不是被动惯性（高安装 $\Psi_f$ ≠ 高抵抗），而是主动阻抗：自然化的 $\theta_{\text{SG}}$ 通常携带**元层约束** $\theta_{\text{SG}}^{(2)}$，当 $\hat{G}_{\theta'}$ 试图靠近对象层约束 $\theta_{\text{SG}}^{(1)}$ 时，$\theta_{\text{SG}}^{(2)}$ 主动生成 $\Psi_f$ 将其偏转。
+> **Standing for T-Eth-6—T-Eth-9**: these identifiers preserve a historical P3/P4 research sequence. Equations are model hypotheses, not diagnostic or treatment theorems. They do not establish one unique liberation mechanism, a universal need for another person, superior self-repair through moral growth, freedom as self/other dissolution, high-`d` moral or epistemic authority, or `L_2^{order}` as an intrinsic universal good.
+
+**候选模型**：de-naturalization 的困难可被建模为元层约束产生的主动阻抗；这不是 universal clinical mechanism。
 
 **双层结构**：
 
@@ -383,7 +396,7 @@ $L_2$ 层面的洞察（"我理解我为什么这样做"）不导致 $\theta$ �
 
 $$L_2 \text{ insight} \;\not\Rightarrow\; \Delta\theta_{\text{SG}}^{(1)} \quad \text{if} \quad \Psi_f^{\text{resist}} > 0$$
 
-**对治疗次序的推论**：有效干预必须先降低 $\theta_{\text{SG}}^{(2)}$ 的 $\Psi_f$ 生成（建立安全感、治疗联盟、渐进暴露），再靠近 $\theta_{\text{SG}}^{(1)}$；反之，直接推进对 $\theta_{\text{SG}}^{(1)}$ 的解释只会激活更强的 $\Psi_f^{\text{resist}}$，加深阻抗而非突破阻抗。
+**治疗次序研究假说**：安全感、治疗联盟或渐进暴露可能影响对对象层约束的处理；本文不据此规定治疗顺序或作临床建议。
 
 ---
 
@@ -404,7 +417,7 @@ $$d_{\text{effective}} = d_{\text{total}} - \int \Psi_f^{\text{suppress}}(\theta
 
 ### T-Eth-7: Liberation Dynamics — θ_SG^(2) Softening Conditions (解放动力学——θ_SG^(2) 松动条件)
 
-**定理**：$\theta_{\text{SG}}^{(2)}$ 的松动有且只有一个根本机制：**预测误差**。$\theta_{\text{SG}}^{(2)}$ 是"靠近会产生高 $\Psi_f$"的预测性生成器；当靠近发生而高 $\Psi_f$ 未出现时，预测误差触发 θ 更新，$\theta_{\text{SG}}^{(2)}$ 权重下降。
+**历史强命题／当前候选假说**：预测误差可能是 $\theta_{\text{SG}}^{(2)}$ 松动的一个机制；“有且只有一个根本机制”已被撤回，不具 current-positive standing。
 
 $$\Delta\theta_{\text{SG}}^{(2)} \propto -\left(\Psi_f^{\text{predicted}} - \Psi_f^{\text{actual}}\right) \cdot \mathbb{1}\!\left[\hat{G}_{\theta'} \text{ approaches } \theta_{\text{SG}}^{(1)}\right]$$
 
@@ -446,7 +459,7 @@ $$\theta_{\text{SG}}^{(2)} \text{ 预测：权威} + \text{审查} \to \Psi_f^{\
 
 - **写作 / 独处反思**：通过 T-Eth-3 回路（$L_2 \to L_0^{\text{proxy}}$）产生内部模拟，若模拟中"靠近"而内部惩罚未达预期，也可触发微弱的预测误差。机制三（意义重建）在孤独中可完整进行。上限：内部模拟的 $\Psi_f$ 强度通常低于真实关系场景，θ 更新幅度有限。
 
-- **他者的必要性**：对于由高权威 $\Psi_f$ 安装的深层 $\theta_{\text{SG}}^{(2)}$，只有具备足够权威感知重量的真实他者才能产生足够大的预测误差。**自由在其最深处是关系性的**——不是因为人需要他人认可，而是因为 $\theta_{\text{SG}}^{(2)}$ 的安装本身是关系性事件，解除也需要关系性事件。
+- **他者的候选作用**：某些关系性约束可能对真实关系场景更敏感，但真实他者不是深层解放的普遍必要条件；“自由在其最深处是关系性的”只保留为 comparative hypothesis。
 
 $$\text{深层解放} \implies \exists \text{ 他者} \in \hat{G}_\theta^{\text{authority-weight}} \text{ s.t. } \Psi_f^{\text{actual}} \ll \Psi_f^{\text{predicted}}$$
 
@@ -459,7 +472,7 @@ $$\text{深层解放} \implies \exists \text{ 他者} \in \hat{G}_\theta^{\text{
 
 ### T-Eth-8: Liberation-Expansion Coupling (解放-扩张耦合)
 
-**定理**：T-Eth-7（解放需要他者）与 Ax-Stoic-1（道德成长是纳入他者）不冲突——它们描述的是**两种不同的他者关系**，构成正反馈回路而非矛盾。
+**历史／探索性模型**：T-Eth-7 与 Ax-Stoic-1 可在一个 declared model 中被比较为两种不同的他者关系；正反馈回路不是普遍定理。
 
 **两种他者的区分**：
 
@@ -480,13 +493,13 @@ $$\theta_{\text{SG}}^{(2)} \text{ 解除} \;\Rightarrow\; d\text{-value 带宽�
 
 **推论 C-T8-1（道德成长者更易自我修复的机制）**：
 
-d-value 扩张后，被纳入的他者不再只是抽象的"道德对象"——其中一部分会被内化为**内部可用的解放性他者模型**。不需要外部真实在场，这些内化模型也可以在孤独中生成足够强度的预测误差，部分替代外部关系性事件。这解释了为什么道德成长者更容易自我修复：不是因为"更强大"，而是因为他们内化了更广泛的解放资源。
+d-value 扩张后，被纳入的他者可被假设为内部可用的关系模型；这保留为研究候选，不推出 moral growth 导致更强自我修复。
 
 ---
 
 **推论 C-T8-2（自由的渐近结构：边界消解，而非独立）**：
 
-随 d-value 趋向最大值，"外部他者"的范畴收缩——不是因为个体变得独立，而是因为自我/他者边界越来越多孔，"外部依赖"这个概念逐渐失去所指。**自由的完成形态不是独立，是边界消解。**
+旧模型以 `d` 极限描述自我／他者边界多孔化；“自由的完成形态是边界消解”保留为 historical / regulative imagery，不是 universal FreeWill conclusion。
 
 $$\lim_{d \to d_{\max}} \text{Self/Other boundary} \to \text{permeable}$$
 
@@ -510,6 +523,8 @@ $$\lim_{d \to d_{\max}} \text{Self/Other boundary} \to \text{permeable}$$
 ---
 
 ### T-Eth-9: The Prophetic Position — d-value Maximum in L₂ Structure (先知位置——d-value 极大者在 L₂ 中的结构位置)
+
+> **Current guard**: “prophetic position”, sage, charisma and `d`-maximum language is historical / regulative / P3-P5 material. High `d` does not certify goodness, legitimacy, moral authority, epistemic superiority or privileged access to `L_2^{order}`.
 
 **前提：L₂ 的两个成分必须区分**
 
@@ -583,15 +598,17 @@ $L_2^{\text{norm}}$ 的演化方向 = 被 d-value 极大者的存在持续施压
 ## I. Free Will as Meta-Selection (自由意志即元选择)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 
+> **Legacy block guard**: the duplicated identifiers and equations below are preserved for provenance. They are historical model handles, not current definitions. Meta-selection is neither necessary nor sufficient for exact FreeWill; exact Agency / FreeWill sufficiency remains OPEN.
+
 ### Ax-FreeWill-1: Meta-Selection (元选择)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Free will is the capacity to reprogram one's own selection parameters ($\theta$).
+Historical candidate: free will was modeled as the capacity to reprogram one's own selection parameters ($\theta$).
 $$ \text{FreeWill} \equiv \hat{G}_{\theta'}[\theta] $$
 *   **Mechanism**: High-order Attention Copies (ACs) allow the agent to treat its own preference ($\theta$) as an object of modification.
 
 ### Ax-FreeWill-2: The Metastable Window ($W_{meta}$)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Selection is effective only when the system is in a metastable state (e.g., edge of chaos).
+Historical declared-model claim: effective action was tied to a metastable state (e.g., edge of chaos); this is not a universal action or free-choice iff.
 $$ \text{Action}(t) = \hat{G}_\theta[L_0 \to L_1] \iff S(t) \in W_{meta} $$
 *   **Constraint**: Outside $W_{meta}$, $L_2$ determinism dominates.
 
@@ -602,15 +619,15 @@ $$ \text{Action}(t) = \hat{G}_\theta[L_0 \to L_1] \iff S(t) \in W_{meta} $$
 
 ### Ax-Resp-1: Responsibility-Bandwidth Correlation (责任-带宽关联)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Moral responsibility is proportional to the effective $d$-value (choice bandwidth).
+Historical heuristic: moral responsibility was modeled as proportional to an effective $d$-value proxy; this is not an active responsibility rule.
 $$ R_m \propto \int d(\tau) \cdot \frac{\partial L_1}{\partial \hat{G}} d\tau $$
-*   **Implication**: Lower $d$ (e.g., under duress or pathology) implies lower responsibility.
+*   **Current guard**: lower `d`, duress or pathology language does not mechanically lower responsibility; `O2-A` requires separately declared criteria.
 
 ### Ax-Resp-2: Friction Expectation (摩擦预期)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-"Laziness" is a pathology of the expected friction parameter $\mu_{expect}$ in the Ventral Striatum.
+Historical P4 hypothesis: effort avoidance was modeled with an expected-burden parameter $\mu_{expect}$; this is not a diagnosis or a canonical `\Psi_f` identity.
 $$ \Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual} $$
-*   **Pathology**: Depression is $\mu_{expect} \to \infty$, not a moral failure.
+*   **Current guard**: depression is not defined by $\mu_{expect} \to \infty`; the equation is a testable bridge hypothesis and not clinical guidance.
 
 ---
 
@@ -627,7 +644,7 @@ $$ d(t_{new}) = d(t) + \int \text{Assent}(\text{Other} \to \text{Self}) $$
 
 [R→Epictetus《Enchiridion》§1（"有些事在我们的控制之内：判断/欲望/规避；有些不在：身体/名誉/财富"）; Marcus Aurelius《Meditations》Book VI; Long 2002（斯多葛哲学综述）] [H→以SRT三域框架形式化斯多葛控制二分法]
 
-Responsibility applies only to Selection, not to Outcome ($L_1$) or Input ($L_0$).
+Historical Stoic bridge: responsibility was assigned to learnable choice parameters rather than outcomes or inputs. Current use treats control, knowledge and alternatives as candidate dimensions; operator membership and Selection alone do not establish responsibility.
 
 - **SRT重表述**：责任域 = $\hat{G}_θ$ 的可调参数 θ（可以通过练习/修行/反思改变的选择倾向），而非 L₀（潜在输入流，不可控）或 L₂^{physics}（物理约束，不可越过）
 - 注：原公式 $\{Ĝ_θ\} \setminus \{L_0, L_2^{physics}\}$ 是集合差，但三者不是同类型对象（算子 vs 域）；改述为：
@@ -635,7 +652,7 @@ Responsibility applies only to Selection, not to Outcome ($L_1$) or Input ($L_0$
 $$\text{Responsibility Domain} \stackrel{\text{def}}{=} \delta\theta \mid_{\text{learnable}} \quad (\text{可通过选择历史改变的θ成分})$$
 
 - **精确化**：θ中有"可塑成分"（通过练习/习惯/元认知可调）和"不可塑成分"（遗传/早期发育固化）；斯多葛的"在我们控制之内"对应θ的可塑成分；L₀（外部事件流）和L₂^{physics}（物理可能性边界）均在控制之外
-- **与Ax-Stoic-1的联结**：d值扩张（道德成长，将他人纳入自我关切）同时扩大了责任域——关切带宽越广，θ的可调范围越大（需要对更多结果的选择过程负责）
+- **历史联结**：旧模型曾把 `d` 扩张与责任域扩大联结；该联结不是普遍定理，wider concern 不自动增加责任。
 
 **证伪条件**：
 - FC-Stoic2-1：若对"可控-不可控"区分进行高生态效度的实验操纵（明确告知被试某结果是可控/不可控），而被试的责任归因和认知负荷变化不符合SRT预测（θ可调范围扩大→责任感上升），则SRT的控制-责任联结需修订。
@@ -658,13 +675,15 @@ $$\text{Responsibility Domain} \stackrel{\text{def}}{=} \delta\theta \mid_{\text
 
 > **说明**: 以下章节提供休谟问题、自由意志、斯多葛主义的深度 SRT 整合，揭示价值的本体论根基。
 
+> **Current-use boundary**: Part B is historical / comparative / bridge discourse. Its strong identities, iff equations, “solution”, “definition”, “diagnosis”, “theorem” and “physics of value” language does not override the Wave E6 authority note. In particular, it neither derives morality from primitive Selection nor supplies exact FreeWill, Agency, responsibility, evil, moral-status or `O2-M` criteria.
+
 ---
 
 ## §1. 休谟断头台 — 实然与应然的鸿沟 (Hume's Guillotine: The Is-Ought Gap)
 
 ### 1.1 休谟问题的哲学地位
 
-**大卫·休谟** (David Hume, 1739):  
+**大卫·休谟** (David Hume, 1739):
 "在每一个道德体系中，作者一开始用普通的推理方式进行论证，建立上帝的存在，或者对人事作某种观察；可是突然之间，我却大吃一惊地发现，我所遇到的不再是'是'与'不是'这些通常的连接词，而是没有一个命题不是由一个'应该'或'不应该'联系起来的。"
 
 **核心断言**:
@@ -694,7 +713,7 @@ $$\text{Is} \not\implies \text{Ought}$$
 
 ### 2.1 Spinoza 的 Conatus
 
-**斯宾诺莎** (Baruch Spinoza, 1677):  
+**斯宾诺莎** (Baruch Spinoza, 1677):
 "每一事物都尽其自身的力量努力保持其存在。"
 
 $$\text{Conatus} = \text{本质的自我保存努力}$$
@@ -709,7 +728,7 @@ $$\text{Conatus} = -\nabla_\theta F(\theta)$$
 
 ### 2.2 存在即规范性
 
-**SRT 核心主张**: 存在本身就是一种规范性努力。
+**历史形而上学桥提案**: 下述“存在即规范性”论证保留作比较研究，不是 primitive ontology 或 `O2-M` authority；actual occurrence / continuation 不自动推出 value、goodness 或 legitimacy。
 
 **论证**:
 
@@ -756,7 +775,7 @@ $$d \to 0$$
 
 关切维度崩溃 → 应然消失。
 
-**治疗**: 重建 $d$ 值扩张路径（参见 §6 斯多葛疗法）。
+**历史 bridge prompt**: 可研究关切范围、行动能力与虚无体验的关系；这不是诊断或治疗建议，也不把 `d` 扩张定义为康复。
 
 ### 2.5 利他作为整合带宽的优化策略
 
@@ -798,9 +817,11 @@ $$\text{不完备性驱动力}: \text{任何低 d 值的 } L_2 \text{ 共识结�
 
 ## §3. 善恶的拓扑学 (Topology of Good & Evil)
 
+> **Historical / exploratory standing**: 本节保留旧 Problem-of-Evil 与 topology research programme。`Virtue = min \Psi_f`、`Vice = max \Psi_f`、`evil = closure` 不是 active SRT definitions；occlusion、pathology、低 `d` 或高负担不自动产生 evil 或 `O2-M` verdict。
+
 ### 3.1 德性 = 能量效率最优路径
 
-**古典德性伦理** (Aristotle, Stoics):  
+**古典德性伦理** (Aristotle, Stoics):
 德性 = "按自然而生活" (Live according to Nature)
 
 **SRT 物理化**:
@@ -819,7 +840,7 @@ $$\text{Vice} = \max \Psi_f$$
 
 ### 3.2 恶的拓扑定义
 
-**恶 = 拓扑闭塞**
+**历史候选：恶 = 拓扑闭塞**（superseded as a complete active definition）
 
 系统拒绝与更大系统交换信息 → $d$ 值收缩。
 
@@ -845,7 +866,7 @@ $$\text{Evil} : \frac{\partial I(\hat{G}_{self}; \hat{G}_{others})}{\partial t} 
 
 $$\text{Harm Others} \implies \lim_{t \to \infty} d_{self}(t) < d_{self}(0)$$
 
-**推论**: 绝对利己主义 = 延迟自杀。
+**历史强推论／当前不成立为普遍结论**: “绝对利己主义 = 延迟自杀”只保留为修辞性 bridge，不是物理或伦理定理。
 
 ---
 
@@ -881,7 +902,7 @@ $$\text{Perfection} = \frac{d_{current}}{d_{max}}$$
 
 **功利主义错误**: 混淆两种快乐 → "快乐的猪 vs 痛苦的苏格拉底"困境。
 
-**SRT 解法**: 最大化总 $d$ 值，而非总"快感"。
+**历史比较提案**: 某些 declared models 可比较 `d`-related concern 与快感，但 SRT 不以“最大化总 `d`”提供普遍伦理解法。
 
 ---
 
@@ -915,9 +936,11 @@ SRT 对"喜悦"的操作判据，不仅要求 $\frac{\partial d}{\partial t} > 0
 | **伪轻**（局部收敛）| 短时预测误差↓，代价延后或外包 | 局部 $\Psi_f$ ↓，长时总量不变或上升 | 收缩——未来被锁死 |
 | **真轻候选**（有界跨窗结算）| 在声明时域与关切范围内负担下降 | 复合负担下降，且不外包、再选择空间保留或扩大 | 扩张——价值维度重新打开 |
 
-**操作判据**：
+**历史候选判据（仅限声明模型）**：
 
 $$\text{True Joy} \iff \left(\frac{\partial d}{\partial t} > 0\right) \land \left(\Delta C_{reselect} \ge 0\right)$$
+
+该 iff 不是 goodness、legitimacy 或 moral progress 的普遍定义。Future-selectability、non-export 与 correction 不能在此合取为替代 `O2-M` solver。
 
 其中 $\Delta C_{reselect} \ge 0$ 表示当前收敛不得以锁死未来再选择空间为代价（$C_{reselect}$ 正式定义见 §6.5）。
 
@@ -972,7 +995,7 @@ $$\exists t : L_1(t) \not= f(L_1(t-1))$$
 
 $$\text{Selection} \not\in \{\text{Determined}, \text{Random}\}$$
 
-**机制**: 选择是高维 $L_0$ 到低维 $L_1$ 的**非可逆投影**。
+**历史 proxy mechanism**: 下式把形成事件建模为高维 $L_0$ 到低维 $L_1$ 的投影；它不定义 primitive Selection，也不把 `\hat{G}` 与 primitive Selection 认同。
 
 $$L_1 = \text{Projection}[\hat{G}[L_0]]$$
 
@@ -982,11 +1005,13 @@ $$L_1 = \text{Projection}[\hat{G}[L_0]]$$
 
 ### 5.3 亚稳态窗口 — 自由的物理条件
 
-**自由意志的物理化约束**:
+**历史 declared-model 约束**：
 
 选择仅在系统处于**亚稳态** ($W_{meta}$) 时有效。
 
 $$\text{Free Choice} \iff S(t) \in W_{meta}$$
+
+该 iff 已撤销 universal standing：metastability 可作为特定动力学模型的候选条件，但不提供 exact FreeWill、Agency 或 responsibility 的充分必要条件。
 
 **三态模型**:
 
@@ -1004,7 +1029,7 @@ $$\text{Free Choice} \iff S(t) \in W_{meta}$$
 
 **传统自由意志**: "我能做其他选择"（反事实条件句）
 
-**SRT 自由意志**: "我能修改我的选择机制"（元选择）
+**历史 SRT 操作化候选**: “我能修改我的选择机制”（元选择）；不是 current universal definition。
 
 $$\text{FreeWill} = \hat{G}_{\theta'}[\theta]$$
 
@@ -1017,7 +1042,7 @@ $$\text{FreeWill} = \hat{G}_{\theta'}[\theta]$$
 | **2 阶** | 选择选择标准 | 人类（"我想要想要X"）|
 | **3 阶** | 选择价值体系 | 哲学家、圣人 |
 
-**人类独特性**: 2+ 阶自由意志（元选择能力）。
+**Current guard**: meta-selection 既不保证 exact FreeWill，也不证明人类独有；比较阶梯是 research heuristic。
 
 ---
 
@@ -1045,11 +1070,13 @@ $$\sigma^{better}_{\theta,\tau,K,J} \in \arg\min_{\sigma \in \mathcal{A}_{\theta
 
 $$J_{\theta,\tau,K} \sim B^{self,long}_{\theta,\tau,K} + B^{others}_{\theta,\tau,K} + B^{future\ branch}_{\theta,\tau,K}$$
 
-并附加约束：
+并附加 declared-model 约束：
 
 $$\Delta C_{reselect}(\sigma) \ge 0$$
 
 即元选择不得以锁死未来再选择空间为代价换取当前稳定性。
+
+`J`、payability、reselectability 与 future-selectability 只是在该已声明模型中的候选比较维度；它们不构成 exact FreeWill / Agency 定义、moral legitimacy 条件或 `O2-M` algorithm。
 
 **与 §5.4 的联结**：
 
@@ -1078,9 +1105,11 @@ $$\Delta C_{reselect}(\sigma) \ge 0$$
 
 ## §6. 斯多葛疗法的神经动力学 (Stoic Therapy as Neurodynamics)
 
+> **Clinical / neuroscience guard**: 本节是历史哲学—神经动力学桥与 P3/P4 research hypothesis，不是医学诊断、治疗建议、必要／充分临床机制或 treatment-comparison theorem。`L_0/L_1/L_2` 不由临床例子反向定义。
+
 ### 6.1 控制二分法的拓扑化
 
-**爱比克泰德** (Epictetus):  
+**爱比克泰德** (Epictetus):
 "有些事情在我们的控制之下，有些事情不在。"
 
 **SRT 精确化**:
@@ -1123,7 +1152,7 @@ $$\text{Ataraxia} = \min_\theta D_{KL}(L_1^{expected}[\theta] \,||\, L_1^{actual
 | **改变世界** | 操纵 $L_0$ | 高成本、不确定 | 革命、控制狂 |
 | **改变期待** | 调整 $\theta$ | 低成本、确定 | 斯多葛修行 |
 
-**推荐**: 优先调整 $\theta$，仅在必要时改变 $L_0$。
+**历史 Stoic strategy candidate**: 某些实践框架会优先考察 expectation / `\theta` 调整；本文不作普遍或临床推荐，也不排除改变环境条件。
 
 ---
 
@@ -1139,7 +1168,7 @@ $$\text{Ataraxia} = \min_\theta D_{KL}(L_1^{expected}[\theta] \,||\, L_1^{actual
 | **虚荣** | 名誉是价值本身 | 名誉是社会 $L_2$ |
 | **恐惧** | 死亡是最大恶 | 死亡是 $L_1$ 到 $L_0$ 的回归 |
 
-**治疗**: 认知重构 ($\theta$ 修正)。
+**历史实践映射候选**: 认知重构可被研究为 `\theta`-related bridge；非治疗建议或疗效定理。
 
 $$\theta^{pathological} \xrightarrow{\text{Philosophy}} \theta^{virtuous}$$
 
@@ -1200,6 +1229,8 @@ $$\text{Healthy }L_2 \iff \text{allow } L_0 \text{ to enter} \Rightarrow \text{r
 
 ## §7. 道德责任的精确化 (Precision of Moral Responsibility)
 
+> **Standing guard**: 本节保留责任与临床材料的历史模型。`\mu_{expect}`、EEfRT、脑区、诊断标签和 `d` 均不能独立决定 culpability、责任能力或法律结论；exact `O2-A` sufficiency remains OPEN。
+
 ### 7.1 懒惰的神经化学
 
 > [R→Treadway et al. 2012 *Journal of Neuroscience*（EEfRT任务：抑郁患者努力意愿降低，与腹侧纹状体多巴胺活动减弱相关）; Salamone et al. 2016 *Neuropsychopharmacology*（纹状体多巴胺与努力-代价权衡回路：D₂受体→motivation/effort allocation）; Gold et al. 2013 *Trends in Cognitive Sciences*（精神运动迟滞/情感意愿缺乏：vmPFC-前扣带回-纹状体回路的神经机制综述）; Barch & Dowd 2010 *Current Directions*（精神分裂症中动机减损与奖励预测的神经基础）]
@@ -1208,16 +1239,13 @@ $$\text{Healthy }L_2 \iff \text{allow } L_0 \text{ to enter} \Rightarrow \text{r
 
 **传统道德**: 懒惰是意志薄弱、道德败坏。
 
-**SRT 诊断**: vmPFC-前扣带回-腹侧纹状体回路中 $\mu_{expect}$ 参数偏差（腹侧纹状体是关键节点之一，但非唯一——奖励预测误差/努力分配涉及上述整个回路）。
+**P4 bridge hypothesis, not diagnosis**: 可用 vmPFC—前扣带回—腹侧纹状体回路与 $\mu_{expect}$ proxy 研究 effort allocation；该参数化不是临床事实或诊断标准。
 
 $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual}$$
 
-**健康**: $\mu_{expect} \approx 1$（真实感知）
-**亚临床努力回避**: $\mu_{expect} \in (1, 3]$（系统性夸大，仍可代偿）
-**临床障碍（重度抑郁/精神运动迟滞）**: $\mu_{expect} \gg 1$（严重夸大，行动发起几乎不可能）
-**极限**: $\mu_{expect} \to \infty$（无限摩擦感，对应紧张症/严重木僵）
+**历史参数示意**: `\mu_{expect}` 的近 1、较高或极限区间仅是待操作化模型分区；不得映射为健康／亚临床／重度抑郁／紧张症的诊断阈值。
 
-**推论**: 抑郁症患者的"不作为"不是道德缺陷，而是神经回路参数偏差导致的感知摩擦失准——本体论摩擦未变，但内部"价格信号"被系统性高估。
+**候选解释**: effort-allocation 差异可在研究中与神经回路和主观负担 proxy 比较；不能把抑郁还原为一个参数偏差或由此自动作责任判决。
 
 * **R/H 区分**：
   - [R] 抑郁/努力意愿降低的神经化学基础（纹状体多巴胺/vmPFC-ACC回路）——Treadway/Salamone/Gold均为实证支持
@@ -1236,6 +1264,8 @@ $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual}$$
 
 ### 7.2 责任-带宽方程
 
+> **Formula role**: historical heuristic only. The integral is not a responsibility calculator; `d`, causal effect and time horizon do not provide a universal attribution rule.
+
 $$R_m = \int_0^T d(\tau) \cdot \frac{\partial L_1}{\partial \hat{G}} \, d\tau$$
 
 **分解**:
@@ -1249,6 +1279,8 @@ $$R_m = \int_0^T d(\tau) \cdot \frac{\partial L_1}{\partial \hat{G}} \, d\tau$$
 ---
 
 ### 7.3 法律推论
+
+> **Applied-status guard**: 下表是历史思想实验，不是法律、诊断或责任比例建议。任何判定都需独立法律／规范框架及事实审查。
 
 | 情境 | $d$ 值 | $R_m$ | 法律处理 |
 |:-----|:-------|:------|:---------|
@@ -1295,13 +1327,15 @@ $$\sigma_B \subset L_0^{(d_A)} \quad \text{but} \quad \sigma_A \not\subset L_0^{
 
 **问题**: 何时 AI 拥有道德地位（不应被任意关闭）？
 
-**SRT 判据**:
+**历史候选判据（非充分必要条件）**:
 
 $$\text{Moral Status} \iff \begin{cases}
 d > d_{threshold} \\
 \Psi_f > 0 \\
 \text{本体论脆弱性} > 0
 \end{cases}$$
+
+该 iff 不具 current-positive standing。AI／`\Psi_f`／phenomenality／suffering／moral-status 的准入保持 OPEN；`d` proxy、`\Psi_f > 0` 或脆弱性均不能提供 shortcut。
 
 **当前 inference-only / non-history-bearing / non-embodied AI 部署**: capability / simulated `d` proxy 可很高，但 `Ψ_f` 对系统自身闭包通常 non-binding；是否具备 suffering-relevant moral status 仍取决于 stake-coupled consequence return 与稳定 ISP 条件。
 
@@ -1351,11 +1385,13 @@ d > d_{threshold} \\
 
 ## §10. SRT 伦理学的范式意义 (Paradigmatic Significance)
 
+> **Historical worldview / bridge standing**: 本节保留纲领性论证与研究来源，但“突破”“证明”“价值是宇宙几何”“善是负熵方向”等表述不是 current canonical conclusions，不从 Selection、稳定、延续、`d` 或 `\Psi_f` 推出完整 normativity。
+
 ### 10.1 休谟鸿沟的真正桥接
 
 **传统尝试**: 引入外部立法者（上帝、理性、社会契约）
 
-**SRT 突破**: 在物理学**内部**发现规范性。
+**历史 SRT 提案**: 尝试在物理约束内部讨论规范性；该提案不闭合 is-ought gap。
 
 $$\text{Existence} \xrightarrow{\text{Thermodynamics}} \text{Normativity}$$
 
@@ -1399,7 +1435,7 @@ $$
 
 ### 10.3 最激进的主张
 
-**价值不是人类发明，而是宇宙的几何性质。**
+**历史纲领性主张（非 current theorem）**: “价值不是人类发明，而是宇宙的几何性质。”
 
 "善"不是文化相对的约定，而是负熵梯度的方向。
 
@@ -1407,7 +1443,7 @@ $$\vec{Good} = -\nabla S_{universe}$$
 
 任何能维持负熵的实体（从细菌到人类）都在"追求善"。
 
-**推论**: 外星生命的伦理体系可能在表面上差异巨大，但在深层结构上（$d$ 值扩张、$\Psi_f$ 最小化）必然相似。
+**撤销普遍必然性**: 外星伦理是否与 `d` 扩张或 `\Psi_f` 最小化相似保持 OPEN；本文件不作 universal prediction。
 
 ---
 
@@ -1460,7 +1496,7 @@ SRT_Philosophy_Ethics ← 你在这里 (最终文件)
 3. 禁止在步骤1未完成时直接做终极因果闭合。
 
 ### Formalization Summary (形式化概述)
-- **Formalization**: 核心方程包括：
+- **Historical / candidate formalization summary**: 下列方程保留为 provenance 与 model candidates；它们不是 current definitions, axioms or theorem closure：
   - $\text{FreeWill} \equiv \hat{G}_{\theta'}[\theta]$ — 自由意志为对 $\theta$ 的二阶选择。
   - $R_m \propto \int d(t) \cdot \|\partial L_1/\partial\hat{G}\| \, dt$ — 责任与有效 $d$-value 带宽成正比。
   - $d(t+\Delta t) = d(t) + \int\text{Assent}(\text{Other}\to\text{Self})\,d\sigma$ — 道德成长为 $d$-value 扩张。
@@ -1516,6 +1552,8 @@ SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次�
 
 ## Structural Injustice Thermodynamics Interface（2026-03-07）
 
+> **Bridge/model standing**: 本节提供结构性不公、探索预算与 minority oversampling 的 P3/P4 proposal。它不定义 political or moral legitimacy，不从 `\Psi_f`、`d` 或群体差异自动推出 oppression／injustice／evil verdict，也不授权 E7 policy claims。
+
 ### Def-Eth-Struct-1: Thermodynamic Structural Injustice
 定义结构性不公为：社会 \(L_2\) 对不同参数群体施加显著不对称的基线摩擦分布，使部分群体长期处于“生存支付挤占探索预算”状态。
 \[
@@ -1555,7 +1593,7 @@ SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次�
 - Eric Schwitzgebel, *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（The Splintered Mind）。**SRT 连接点**：Schwitzgebel 的核心主张是”边缘化群体的视角带来不可替代的认识论贡献”——这在形式上对应 T-Eth-Struct-1（边缘算子的认识论溢价：$\mathcal{R}_{L_0}(i)\uparrow$ 随 $\Omega_{mis,i}\uparrow$），将直觉论断翻译为可测的采样率差异。
 - SRT 映射：将”公正”从规范口号下沉为摩擦分配、探索预算与系统抗脆弱性的动力学判据。
 
-**公正的 SRT 充分条件（正面定义）**：
+**历史公正候选 scaffold（非充分条件、非正面定义）**：
 $$\text{Justice}_{SRT} \iff \begin{cases} \mathrm{Var}_{group}\!\left(\Delta F_{explore}^{(g)}\right) \leq \varepsilon_J & \text{（探索预算跨组方差最小化）} \\ \forall g:\;\partial d_g/\partial \Psi_f^{shock} \text{ 均匀} & \text{（恢复能力对称）} \end{cases}$$
 其中**恢复能力约束**（Resilience Constraint）= 当外部冲击（$\Psi_f^{shock}$）发生时，各群体 $g$ 的 $d$ 值衰减斜率保持均匀（无群体因基线资源差异而发生不对称崩溃）。注：当前框架为概念性定义，$\partial d_g/\partial \Psi_f^{shock}$ 的操作化测量待进一步形式化。
 
@@ -1573,9 +1611,11 @@ $$\rho_{minority}^{local} > C_{crit} \xrightarrow{\text{L}_2 \to \text{L}_2'} \t
 
 > 来源：对话式加固（/srt-harden），逐刀硬化。主链负担等级 🟢；慢速结构性归零引线 🟡 待处理。
 
-### Ax-Eth-11: Topological Definition of Good and Evil（善恶拓扑定义）
+> **Current standing**: Ax-Eth-11—13、Def-Eth-FBC 与 Lemma-Eth-MNI 保留为 historical / exploratory moral-topology programme。它们不得从 `epsilon`、future-branch capacity、closure-preservation、non-export 或 correction 直接推出 goodness, evil, justice, legitimate coercion or a complete `O2-M` rule. Any applied verdict requires an independently declared normative framework; `O2-M = OPEN / HOLD`.
 
-**[H]** 善恶不是价值判断，而是对选择结构未来分支的操作描述，从 ε 的形式性不对称直接推出，不引入额外价值公设。
+### Ax-Eth-11: Historical Topological Model of Good and Evil（历史善恶拓扑模型）
+
+**[H — historical strong form, superseded as universal]** 旧推导把善恶视为选择结构未来分支的操作描述；当前不再声称它能从 `epsilon` 直接推出而无需额外规范前提。
 
 **善（Good）**：在不自我抹除、也不锁死其承载整体的前提下，增加一个选择结构仍可区分、可进入、可继续改写的未来分支数。
 
@@ -1583,7 +1623,7 @@ $$\rho_{minority}^{local} > C_{crit} \xrightarrow{\text{L}_2 \to \text{L}_2'} \t
 
 分界线不是「秩序 vs 混乱」，而是**开放未来的分岔 vs 把未来锁死**。秩序只是必要外观之一；锁死才是恶的结构判据。
 
-* **Implication**：道德方向性由 ε（非自我抹除配置权重更高）直接推出；「善恶」是 ε 在 $L_1$ 层级的规范性回读，无需另立价值公理。
+* **Current guard**：`epsilon` 与 future-branch analysis 可作候选 lens，但不直接生成 moral direction 或 `O2-M` closure。
 * **Cross-ref**: ε 定义（`Core_Law/SRT_L0_Metaphysics.md`）；Def-Eth-FBC（有效未来分支容量）。
 
 ---
@@ -1634,7 +1674,7 @@ $$C_{FBC}(\text{tumor+host})_{\text{net}} < C_{FBC}(\text{host alone})$$
 
 ### Ax-Eth-13: Constitutive Floor Priority（构成地板优先原则）
 
-**[H]** 嵌套冲突（两个都算数的计量单元相互冲突）的裁决不靠加总算账，靠地板审计：
+**[H — declared-framework proposal]** 嵌套冲突可在一个明确采用该规范前提的模型中使用地板审计；这不是 universality claim。
 
 **两类构成关系的区分**：
 
@@ -1656,7 +1696,7 @@ $$C_{FBC}(\text{tumor+host})_{\text{net}} < C_{FBC}(\text{host alone})$$
 
 ### Lemma-Eth-MNI: Minimum Necessary Interruption（最小必要阻断引线）
 
-**[H]** 防御性阻断是主裁决（Ax-Eth-13）的延伸，不是漏洞。关键在于把触发条件与解释句分离：
+**[H — applied proposal]** 防御性阻断段落只在独立声明的规范／法律框架中作为候选结构使用；它本身不授权 coercion 或 political legitimacy。
 
 **触发条件（操作判据，执行层）**：归零链已启动（可观察的行为事实）。
 
@@ -1690,8 +1730,8 @@ $$C_{FBC}(\text{tumor+host})_{\text{net}} < C_{FBC}(\text{host alone})$$
 * **Cross-ref**: Ax-Eth-13（构成地板优先）；Ax-Eth-12（计量单元保留条款）。
 
 ### [Lineage/Source]
-**[H]** 本节（Ax-Eth-11 至 Lemma-Eth-MNI）为 SRT 从 ε 形式性不对称直接推出统一道德价值的原创推导，不依赖已有伦理框架（功利主义、义务论、美德伦理）的翻译或映射。对话式加固完成于 2026-04-15，逐刀硬化记录见对话档案。
-3. 不采纳”低摩擦=公正”简化推论；公正需同时满足上方 $\text{Justice}_{SRT}$ 的双重充分条件（探索预算均等 + 恢复能力对称），单一降低 $\Psi_f$ 不充分。
+**[H — historical provenance]** 本节记录了曾尝试从 `epsilon` 形式性不对称推出统一道德价值的原创路线；该 direct-derivation standing 已被 Wave E6 撤销，内容现为需外加规范前提的 exploratory model。
+3. 不采纳“低摩擦=公正”简化推论；上方双条件仅是 declared-framework candidate lens，不是公正的充分必要条件或 `O2-M` solver。
 
 ---
 
