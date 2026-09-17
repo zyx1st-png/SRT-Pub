@@ -296,7 +296,9 @@ SRT ethics becomes stronger when it says:
 ```text
 Norms can be real without being good.
 Values can be intense without being legitimate.
-Responsibility requires selectable agency.
+Inside a declared normative framework, Agency standing, knowledge, control, selectable alternatives,
+consequence return, payability, and reselectability may serve as candidate evidence for responsibility;
+none is universally necessary or sufficient, and exact O2-A admission remains OPEN.
 Future-selectability, burden distribution, and correction channels can be useful candidate lenses
 inside a declared normative framework; they do not define moral progress or legitimacy.
 Love and grief can carry ontological weight without requiring literal mathematical infinity.

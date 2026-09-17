@@ -201,7 +201,7 @@ Does the obligation preserve more futures than it destroys?
 
 ### 9. Responsibility / repair
 
-Responsibility should be distributed across family roles, institutions, welfare systems, and those with capacity to relieve burden.
+Under a declared care-ethics or responsibility framework, responsibility may be distributed across family roles, institutions, welfare systems, and those with capacity to relieve burden.
 
 ### 10. Improvement
 
@@ -271,11 +271,11 @@ Shame, fear, status loss, mistrust, anxiety, future avoidance.
 
 ### 8. Future selectability
 
-Good discipline expands future self-regulation. Bad discipline narrows identity into “bad student.”
+A future-selectability lens may favor discipline that expands future self-regulation and question discipline that narrows identity into “bad student.”
 
 ### 9. Responsibility / repair
 
-Student responsibility depends on age, alternatives, understanding, and capacity for re-selection. Teacher/institution responsibility includes proportionality and repair pathway.
+A declared responsibility framework may weigh age, alternatives, understanding, and capacity for re-selection when assigning student responsibility. It may assign teachers and institutions duties of proportionality and a repair pathway.
 
 ### 10. Improvement
 
@@ -343,11 +343,11 @@ Hidden cost may be paid by families, low-status patients, overworked clinicians,
 
 ### 8. Future selectability
 
-Triage should preserve the greatest possible future selectability without erasing individual dignity.
+A future-selectability lens may favor triage that preserves future selectability without erasing individual dignity.
 
 ### 9. Responsibility / repair
 
-Individual clinicians should not absorb all culpability when scarcity and protocol constraints are institutional. Repair includes review, explanation, compensation, and system redesign.
+Under a declared medical responsibility framework, institutional scarcity and protocol constraints may count against assigning all culpability to individual clinicians. That framework may favor review, explanation, compensation, and system redesign as repair pathways.
 
 ### 10. Improvement
 
@@ -424,7 +424,7 @@ Does it also preserve caregiver futures?
 
 ### 9. Responsibility / repair
 
-Responsibility is distributed across family, institution, medical system, policy, and community support. Culpability should account for structural blockage and unpayable friction.
+Under a declared care-ethics or responsibility framework, responsibility may be distributed across family, institution, medical system, policy, and community support. A candidate culpability lens may weigh structural blockage and unpayable friction.
 
 ### 10. Improvement
 
@@ -498,7 +498,7 @@ A candidate future-selectability lens asks whether the recommendation system exp
 
 ### 9. Responsibility / repair
 
-Responsibility lies primarily with platform designers, deployers, policy owners, and incentive structures. Users have some responsibility, but their selectable space is engineered.
+A declared platform responsibility framework may assign primary responsibility to platform designers, deployers, policy owners, and incentive structures. It may also assign users some responsibility while weighing how their selectable space is engineered.
 
 ### 10. Improvement
 
@@ -582,7 +582,7 @@ A candidate repair/future-selectability lens asks whether shaming repairs harm o
 
 ### 9. Responsibility / repair
 
-The accused may bear responsibility if agency and norm access were present. The crowd/platform also bears responsibility for proportionality, verification, and repair channels.
+A declared restorative, rights-based, or other responsibility framework may weigh independently established Agency standing and norm access when assigning responsibility to the accused. It may also assign the crowd or platform responsibility for proportionality, verification, and repair channels.
 
 ### 10. Improvement
 
@@ -667,7 +667,7 @@ Use the AI agency note:
 AI-A0 / AI-A1 / AI-A2 / AI-A3?
 ```
 
-For current systems, responsibility usually routes to:
+For current systems, a declared AI-ethics or responsibility framework may route responsibility among:
 
 ```text
 developer;
