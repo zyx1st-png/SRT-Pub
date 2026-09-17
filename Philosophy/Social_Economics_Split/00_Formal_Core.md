@@ -12,6 +12,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 # SRT Social Economics (Hybrid Edition)
 
+> **Wave E7 derivative guard**：本页只是 `../SRT_Social_Economics.md` 的 legacy navigation derivative，owner 优先。Ax-Eco / T-Eco 标签与公式均按历史／候选 P2–P4 bridge 模型读取，不是 canonical 定义或规范定理。High `d`、低摩擦、效率、稳定性或市场结果不产生 moral standing、权利、合法性或政治权威；generic burden / cost 不自动是 canonical `Psi_f`；`O2-M = OPEN / HOLD`。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
@@ -53,15 +54,15 @@ $$\text{Bubble} \iff \partial_t L_2 \gg \partial_t L_1$$
 
 ## III. Inequality & Trust
 
-### Ax-Eco-5: Inequality of Agency
-不平等是选择带宽的不均匀分布。
+### Ax-Eco-5: Candidate Agency-Inequality Model
+本候选模型研究选择带宽与不平等的可能关系，不把 `d` 差异直接当作道德或政治判决。
 $$G_{agency}=\text{Gini}(d_i)$$
-*   **Implication**: 贫富差异是 $d$ 值差异的外显。
+*   **Candidate implication**: `G_{agency}` 是研究性代理量，不定义贫富差异、standing 或合法性。
 
-### Ax-Eco-6: Trust as Friction Reduction
-信任降低交易摩擦与系统熵。
+### Ax-Eco-6: Candidate Trust / Friction Model
+该式把信任与交易摩擦、系统熵作候选关联。
 $$\text{Trust} = \arg\min(\Psi_f, S_{soc})$$
-*   **Implication**: 信任是经济效率的本体论基础。
+*   **Candidate implication**: 信任可能降低某些操作性摩擦；低摩擦不等于正义或合法性。
 
 ## IV. Derived Theorems
 

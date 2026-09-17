@@ -14,6 +14,7 @@ canonical: false
 
 > 角色：`SRT_Political_Philosophy.md` 的导航性拆分页。  
 > 不替代主文；用于局部阅读、引用与后续扩写。
+> **Wave E7 derivative guard**：owner 优先。本页的 floor-priority、emergency、closure 与 relapse 内容是 P2–P4 候选 safeguard / structural warning，不由 SRT ontology 单独决定 legitimacy、pathology、required action 或 `O2-M`。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`。
 
 ## 1. Constitutive Floor Priority
 \[
@@ -24,20 +25,19 @@ canonical: false
 - 在嵌套冲突中，优先保护使闭合得以继续存在的地板
 - 而不是只保护更高层扩张能力
 
-## 2. Emergency Legitimacy
+## 2. Candidate Emergency-Legitimacy Safeguard
 \[
-\text{Emergency legitimacy} \iff \text{minimum necessary interruption preserving } C_{FBC}
+\text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
 \]
 
 最短理解：
-- 危机中的决断合法性不来自人格、意志或主权神学
-- 它只来自：是否以最小必要方式保全更多构成性存在与未来分支
+- 在独立声明的应急规范框架内，最小必要阻断可作为候选 safeguard；SRT ontology 不单独决定应急权力合法性
 
 ## 3. Exception Is Not Self-Justifying
 最短理解：
 - SRT 承认例外状态不可消除
 - 但拒绝例外永久化、人格化与神圣化
-- 一旦危机逻辑变成常态合法性，政治病理就形成了
+- 危机逻辑常态化可触发政治病理候选审查；它不是完整病理定义或自动 verdict
 
 ## 4. Political Lethal L2
 最短理解：
