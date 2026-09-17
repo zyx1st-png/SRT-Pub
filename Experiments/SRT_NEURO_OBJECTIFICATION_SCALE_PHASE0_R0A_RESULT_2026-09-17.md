@@ -3,7 +3,7 @@ id: SRT-NEURO-OBJECTIFICATION-SCALE-PHASE0-R0A-RESULT-20260917
 type: experiment_result
 status: active
 version: v0_1
-record_stage: phase0_r0a_numeric_reconstruction_complete_native_runtime_pending
+record_stage: phase0_r0a_numeric_reconstruction_complete_native_runtime_unavailable_r0b_recorded_separately
 date: 2026-09-17
 layer: operations
 epistemic_layer: experimental
@@ -23,7 +23,7 @@ tags: [Neuroscience, Phase0, R0A, Replication, Modularity, CoarseGraining, Repro
 
 > **Scope**: reconstruct the source paper's Fig. 3 / Fig. 7 modularity comparisons from the released `results/` MATLAB files, using the aggregation and paired-test logic in the pinned author code.
 >
-> **Boundary**: this is **not yet full R0A native-runtime completion** because the unmodified MATLAB scripts were not executed in a MATLAB-compatible runtime. It is a numerical reconstruction from the released author result matrices. R0B remains unrun.
+> **Boundary**: this is **not full R0A native-runtime completion** because the unmodified MATLAB scripts were not executed in a MATLAB-compatible runtime. It is a numerical reconstruction from the released author result matrices. R0B was subsequently completed under the compatibility-runtime conditions documented in `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE0_R0B_RESULT_2026-09-17.md`.
 
 ## 1. Input received
 
@@ -175,7 +175,7 @@ R0A numerical reconstruction: PASS
 R0A qualitative Fig.3 result: PASS
 R0A qualitative Fig.7 result: PASS
 R0A native unmodified MATLAB-script execution: NOT RUN
-R0A overall status: NUMERIC-PASS / NATIVE-PENDING
+R0A overall status: NUMERIC-PASS / NATIVE-UNAVAILABLE
 ```
 
 No full `R0-PASS` may be assigned from this result alone.
@@ -228,10 +228,10 @@ smoothed_spike -> correlation -> K=0.05 binary graph -> 200 Louvain runs -> max-
 
 for single-cell and the predeclared `N_neighbors = 40` coarse level.
 
-Until that recalculation is completed:
+The recalculation was completed and is recorded separately. The current Phase 0 state is:
 
 ```text
-R0 verdict = UNASSIGNED
+R0 verdict = R0-PARTIAL
 Phase 1 authorized = NO
 ```
 

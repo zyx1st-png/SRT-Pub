@@ -3,7 +3,7 @@ id: SRT-NEURO-OBJECTIFICATION-SCALE-PHASE0-REPLICATION
 type: experiment_execution
 status: active
 version: v0_1
-record_stage: phase0_locked_execution_pending_runtime
+record_stage: phase0_r0b_complete_native_runtime_unavailable
 date: 2026-09-17
 layer: operations
 epistemic_layer: experimental
@@ -270,15 +270,15 @@ source code commit pinned: YES
 source analysis parameters audited: YES
 source replication data DOI identified: YES
 execution manifest created: YES
-source archive materialized in current execution environment: NO
+source archive materialized in current execution environment: YES
 MATLAB-compatible runtime available in current execution environment: NO
 R0A run: NO
-R0B run: NO
-R0 verdict: UNASSIGNED
+R0B run: YES (Octave compatibility runtime; not native MATLAB)
+R0 verdict: R0-PARTIAL
 Phase 1 authorized: NO
 ```
 
-The current environment can lock and audit the source pipeline but cannot honestly assign an empirical replication verdict until the Zenodo package is materialized and the MATLAB pipeline is executed. This is an execution limitation, not evidence for or against the source result.
+The official Zenodo package was materialized and all four prespecified R0B targets were completed under an Octave compatibility runtime. The current environment lacks MATLAB, so the native unmodified MATLAB-script requirement remains unresolved; this is an execution limitation, not evidence for or against the source result.
 
 ## 9. Result writeback contract
 
