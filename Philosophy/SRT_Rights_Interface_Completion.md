@@ -7,7 +7,7 @@ layer: L1
 epistemic_layer: bridge
 claim_mode: hardening
 claim_level: P2-P4
-dependency: [SRT-RIGHTS-CALIBRATION-HARDENING, SRT-POLITICAL-PHILOSOPHY, SRT-POLITICAL-RIGHTS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CLOSURE-COMPAT-HARDENING]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-RIGHTS-CALIBRATION-HARDENING, SRT-POLITICAL-PHILOSOPHY, SRT-POLITICAL-RIGHTS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CLOSURE-COMPAT-HARDENING]
 created: 2026-04-25
 ---
 
@@ -18,27 +18,29 @@ created: 2026-04-25
 > **Status**: This is a P2/P3 hardening completion with P4 operational candidates. It is not a P0/P1 core axiom source and should not override canonical definitions of `d`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or the claim ladder.
 >
 > **Relation to previous file**: `Philosophy/SRT_Rights_Calibration_Hardening.md` defines the calibration frame. This file closes the remaining chain: old-right blindness, first interface-right set, internal structure, conflict rule, irreversible compression, rollback, and doubt guardrails.
+>
+> **Wave E7 role guard**: This file is a candidate interface-right architecture under a declared rights theory. SRT ontology does not establish rights, duties, entitlements, restrictions, remedies, political priority, or update authority by itself. The five named interfaces, their triggers/remedies, and the conflict/restriction rules below are framework proposals, not universal SRT conclusions. High `d` does not confer political priority, standing or authority.
 
 ---
 
 ## 0. Final Chain in One Line
 
-Existing rights are historical `L_2` approximations of high-`d` protection. SRT does not replace them; it provides calibration interfaces when old rights cannot see, explain, or repair new `L_2` agency structures that transfer `\Psi_f`, block consequence-return, compress reselection capacity, and prevent high-`d` directions from reaching threshold rules.
+The candidate framework reads existing rights as historical `L_2` approximations and proposes calibration interfaces when old rights may not see, explain, or repair new `L_2` agency structures. Generic burden transfer is not canonical `Psi_f` automatically, and no diagnostic conjunction here generates a right by itself.
 
 Chinese compressed form:
 
-> **旧权利是历史 `L_2` 对高 `d` 保护的近似；SRT 不替代旧权利，而在旧权利失明处生成校准接口。**
+> **候选解释：旧权利可被读作历史 `L_2` 对选择保护的近似；SRT 不替代旧权利，声明的权利框架可在旧权利出现结构盲点时考虑校准接口。**
 
 Operational chain:
 
 ```text
 new / intensified L2 agency structure
-→ hidden Ψ_f transfer
+→ hidden burden / cost transfer (not canonical Ψ_f automatically)
 → consequence-return failure
 → reselection-capacity compression
 → blocked high-d direction
 → T3 rights-update tension
-→ K1-K4 calibration duty
+→ K1-K4 candidate calibration response
 → U1-U4 update ladder
 → old-right blindness test
 → interface-right activation or generation
@@ -48,7 +50,7 @@ new / intensified L2 agency structure
 
 ## 1. Rights Interface Principle
 
-SRT interface rights are neither replacements for traditional rights nor mere subordinate supplements. They are calibration interfaces generated where old rights cannot adequately express or repair reselection-capacity loss caused by new or intensified `L_2` agency structures.
+The five SRT interface rights are candidate rights proposals rather than ontology-generated entitlements. Within a declared rights theory, they may serve as calibration interfaces where old rights cannot adequately express or repair reselection-capacity loss caused by new or intensified `L_2` agency structures.
 
 ### Def-Rights-Interface
 
@@ -70,13 +72,13 @@ Compressed rules:
 
 ### Anti-expansion rule
 
-Do not generate a new interface right merely because a new harm exists. First test whether old rights can express and repair the tension. New rights appear only when old rights are structurally blind.
+Within this proposal, a new harm alone is insufficient reason to propose a new interface right. Old-right blindness is a candidate diagnostic, not a universal legal or moral test.
 
 ---
 
 ## 2. Old-Right Blindness Test
 
-Old-right blindness should not be defined by the absence of a statute or by a single failed remedy. It appears only when traditional rights language fails at the level of object, mechanism, and repair.
+Within this candidate proposal, old-right blindness is not inferred from the absence of a statute or from a single failed remedy. A declared framework may register it when traditional rights language appears unable to address object, mechanism, and repair together.
 
 ### Def-OldRight-Blindness
 
@@ -94,7 +96,7 @@ Compressed rule:
 
 Full rule:
 
-> **Traditional rights require SRT interface-right intervention only when they cannot express reselection loss, cannot identify the `L_2` agency mechanism producing that loss, and cannot provide structural repair beyond individual compensation or symbolic recognition.**
+> **Candidate gate:** a declared rights framework may consider an SRT interface-right proposal only when traditional rights appear unable to express reselection loss, identify the relevant `L_2` agency mechanism, or provide structural repair beyond individual compensation or symbolic recognition. This gate neither creates a right nor compels intervention.
 
 ### Boundary rule
 
@@ -105,9 +107,9 @@ Full rule:
 
 ---
 
-## 3. First Set of SRT Interface Rights
+## 3. First Set of Candidate SRT Interface-Rights Proposals
 
-The first interface-right set should be small and structurally necessary. The current hardening pass keeps five rights.
+This proposal keeps a small first set of five candidate interface rights; their necessity, adoption, and legal standing remain matters for the declared rights framework and institutional process.
 
 Compressed slogan:
 
@@ -115,7 +117,7 @@ Compressed slogan:
 
 | Interface right | Core protected object | Main pathology blocked |
 |---|---|---|
-| Consequence-accounting right | affected subjects' real consequences, burdens, and `\Psi_f` costs | being affected but not counted |
+| Consequence-accounting right | affected subjects' real consequences and burden / cost proxies | being affected but not counted |
 | Threshold-accountability right | gate rules that decide access, visibility, allocation, evaluation, or rule-influence | treating outcomes while hiding thresholds |
 | Reselection-capacity protection right | exit, revision, reorganization, and re-entry into selection | surface freedom with structural lock-in |
 | Agency-transparency right | who selects, ranks, filters, evaluates, or allocates for whom | hiding agency behind technology, procedure, or neutrality claims |
@@ -134,11 +136,11 @@ Two candidates remain extension clauses rather than independent first-set rights
 
 ### 4.1 Consequence-accounting right
 
-**Definition**: Subjects whose future choice-space is materially rewritten by an `L_2` agency structure have a right for their consequences, burdens, and `\Psi_f` costs to be recorded, counted, and capable of affecting the structure's operation when relevant.
+**Candidate provision**: A declared rights framework may grant subjects whose future choice-space is materially rewritten an interface for consequences and burden / cost proxies to be recorded, counted and capable of affecting operation when relevant.
 
 **Trigger**: the subject bears structural consequences but the structure treats those consequences as noise, private failure, or non-input.
 
-**Minimum remedy**: establish an effective input path. Mere complaint logging is insufficient unless it can alter operational or threshold parameters.
+**Candidate minimum remedy**: establish an effective input path; the declared framework determines whether complaint logging is sufficient.
 
 **Misuse boundary**: consequence-accounting does not mean every expressed preference directly changes rules.
 
@@ -146,11 +148,11 @@ Two candidates remain extension clauses rather than independent first-set rights
 
 ### 4.2 Threshold-accountability right
 
-**Definition**: When an `L_2` agency structure persistently decides who may enter, be seen, receive resources, be evaluated, or affect rules, relevant subjects may demand explanation, review, and possible revision of the threshold rules.
+**Candidate provision**: A declared rights framework may provide explanation, review and possible revision of threshold rules when an `L_2` agency structure persistently controls entry, visibility, resources, evaluation or rule access.
 
 **Trigger**: outcomes are contestable but the gate logic producing outcomes is not contestable.
 
-**Minimum remedy**: identify threshold variables, review their legitimacy, and create a channel for revision when T2/T3 tension appears.
+**Candidate minimum remedy**: identify threshold variables and provide a review / revision channel when the declared framework recognizes T2/T3 tension.
 
 **Misuse boundary**: professional or safety thresholds may exist, but their scope, purpose, duration, and reviewability cannot be hidden behind authority alone.
 
@@ -158,11 +160,11 @@ Two candidates remain extension clauses rather than independent first-set rights
 
 ### 4.3 Reselection-capacity protection right
 
-**Definition**: Subjects should not be locked inside an `L_2` selection environment such that they lose meaningful exit, revision, reorganization, or re-entry capacity.
+**Candidate provision**: A declared rights framework may protect subjects against losing meaningful exit, revision, reorganization or re-entry capacity inside an `L_2` selection environment.
 
 **Trigger**: nominal choice remains while the ability to reselect the menu, gate, or agent relation is compressed.
 
-**Minimum remedy**: preserve at least one real layer of reselection: exit path, revision path, or reorganization path, depending on the compression level.
+**Candidate minimum remedy**: preserve a real layer of exit, revision or reorganization appropriate to the framework and case.
 
 **Misuse boundary**: this right does not eliminate all commitment, contract, discipline, or durable institution. It blocks irreversible lock-in without rollback interface.
 
@@ -170,11 +172,11 @@ Two candidates remain extension clauses rather than independent first-set rights
 
 ### 4.4 Agency-transparency right
 
-**Definition**: Any structure that selects, filters, ranks, recommends, evaluates, excludes, or allocates opportunities on behalf of affected subjects must make its agency status visible: who acts, for whom, under what authorization, with what boundary, and through what consequence-return path.
+**Candidate provision**: A declared rights framework may require a structure that selects, filters, ranks, recommends, evaluates, excludes or allocates opportunities to make its agency status sufficiently visible for review.
 
 **Trigger**: agency is hidden behind neutrality, algorithm, workflow, administrative procedure, market necessity, or technical inevitability.
 
-**Minimum remedy**: disclose enough structural information for consequence-accounting and threshold-accountability to function. Full technical exposure is not always required.
+**Candidate minimum remedy**: disclose enough structural information for the proposed consequence-accounting and threshold-accountability interfaces to function; full technical exposure is not presumed.
 
 **Misuse boundary**: transparency does not mean unlimited disclosure of trade secrets, security-sensitive details, or personal data. It means sufficient structural visibility to review agency and threshold effects.
 
@@ -182,11 +184,11 @@ Two candidates remain extension clauses rather than independent first-set rights
 
 ### 4.5 High-d consequence-access right
 
-**Definition**: Consequence directions carrying broader subject-scope, longer time-scale, or higher irreversibility must not be systematically excluded by lower-`d` gate structures from threshold review.
+**Candidate provision**: A declared rights framework may protect threshold-review access for consequence directions with broader subject scope, longer time scale or higher irreversibility.
 
 **Trigger**: long-term, wide-scope, or irreversible consequences are blocked by short-term efficiency, local performance, click-rate, status preservation, or narrow institutional incentives.
 
-**Minimum remedy**: create a high-`d` process capable of consequence collection, conflict integration, threshold revision, and reflexive calibration.
+**Candidate minimum remedy**: consider a process for consequence collection, conflict integration, threshold revision and reflexive calibration.
 
 **Misuse boundary**: high-`d` access belongs to high-`d` consequence structures and process capacity, not to self-certified elite identity. No subject may monopolize consequence definition by claiming high-`d` status.
 
@@ -232,20 +234,20 @@ Interpretation note: reselection-capacity protection is not merely the final ste
 
 ## 6. Conflict Principle among Interface Rights
 
-Interface rights can conflict. SRT should not declare one interface right absolutely supreme in the abstract.
+Candidate interface rights can conflict; this proposal does not declare any one of them absolutely supreme.
 
 ### Def-MinCompression-Rollback
 
-When interface rights conflict, choose the arrangement that causes the least irreversible compression of relevant subjects' future reselection capacity while preserving the greatest possible consequence-return and rollback capacity.
+When candidate interface rights conflict, minimum irreversible compression and maximum rollbackability may be used as one adjudication principle inside the declared framework; they are not the unique SRT solution.
 
 Compressed rules:
 
 - **最小不可逆压缩 + 最大可回滚性。**
 - **能少锁就少锁，能回滚就不封死。**
 
-### Three conditions for legitimate restriction
+### Three candidate safeguards for restriction
 
-Any restriction of an interface right must pass three checks:
+Within this framework, a proposed restriction may be tested for necessity, minimality and rollbackability. These are candidate safeguards, not universal legitimacy conditions:
 
 | Check | Question |
 |---|---|
@@ -258,10 +260,10 @@ Any restriction of an interface right must pass three checks:
 | Conflict | SRT handling |
 |---|---|
 | transparency vs safety / trade secret | disclose enough structural information for threshold review; full technical exposure is not automatically required |
-| consequence accounting vs low-`d` noise | all relevant consequences must enter through filters; not all inputs directly revise gates |
-| threshold accountability vs expertise | expert thresholds may exist, but their reasons and scope must be reviewable |
+| consequence accounting vs low-`d` noise | a declared framework may route relevant consequences through filters; not all inputs directly revise gates |
+| threshold accountability vs expertise | a declared framework may preserve expert thresholds while making reasons and scope reviewable |
 | high-`d` access vs ordinary affected subjects | high-`d` directions may reach gates, but cannot monopolize consequence definition |
-| reselection capacity vs stability | necessary lock-in may exist, but must preserve rollback interfaces |
+| reselection capacity vs stability | necessary lock-in may exist; rollback interfaces are a candidate safeguard |
 
 ---
 
@@ -295,13 +297,13 @@ Sharper slogan:
 
 Rule:
 
-> **I1 usually requires U1/U2; I2 requires at least U2; I3 usually requires U3, and severe I3 may trigger U4.**
+> **Candidate correspondence:** I1 may prompt consideration of U1/U2; I2 may prompt U2; I3 may prompt U3, and a severe I3 diagnosis may prompt review of U4. No step is automatic.
 
 ---
 
 ## 8. Rollbackability Model
 
-Maximum rollbackability is the positive counterpart of minimum irreversible compression. It does not mean all rules are instantly revocable or that institutions cannot bind. It means each layer of lock-in must preserve a corresponding rollback interface.
+Within this candidate framework, maximum rollbackability is the positive counterpart of minimum irreversible compression. It does not mean all rules are instantly revocable or that institutions cannot bind; corresponding rollback interfaces are proposed safeguards rather than universal requirements.
 
 ### R-Ladder
 
@@ -319,20 +321,20 @@ Compressed rule:
 
 SRT does not reject all lock-in. Contracts, education, care, safety systems, ecological rules, medical protocols, and political institutions require some stability. The question is whether the lock-in is matched by rollback interfaces.
 
-> **合法锁定不是没有约束，而是锁定必须保留对应层级的回滚接口。**
+> **在本候选框架内，与锁定层级对应的回滚接口可作为限制正当性的证据，但不是普遍定义。**
 
 Examples:
 
-- A platform may have rules, but must preserve alternative paths, threshold review, and agency supervision.
-- A school may have evaluation standards, but must preserve appeals, standard revision, and evaluator accountability.
-- An AI system may assist or delegate, but must preserve opt-out, explanation / review, and authorization reset.
-- A family may protect a child, but should progressively let the child's consequences return and reshape agency boundaries.
+- A declared framework may ask a platform to preserve alternative paths, threshold review and agency supervision.
+- A declared framework may ask a school to preserve appeals, standard revision and evaluator accountability.
+- A declared framework may ask an AI system to preserve opt-out, explanation / review and authorization reset.
+- A declared care framework may favor progressively returning a child's consequences into agency-boundary review.
 
 ---
 
 ## 9. High-d Safeguards
 
-High-`d` consequence-access is the most powerful and most dangerous of the first five interface rights. It must be guarded against elite capture.
+High-`d` consequence-access is a powerful and risky candidate provision. It carries an explicit anti-elite guard: a high-`d` claim does not confer political priority, standing, office, entitlement or authority.
 
 ### Guardrail 1: high-d is not identity
 
@@ -340,19 +342,19 @@ High-`d` is not a title, credential, office, class position, or moral rank. It i
 
 ### Guardrail 2: high-d attaches to consequence structure and process capacity
 
-A high-`d` claim must show a broader consequence structure and a process capable of integrating it.
+A high-`d` claim must show a broader consequence structure and a process capable of integrating it to count within this candidate model; even then it gains no automatic political priority.
 
 ### Guardrail 3: high-d cannot silence low-power consequence input
 
-Ordinary or weak subjects may not have direct threshold-revision authority, but their consequences must still be counted.
+Within a declared framework, ordinary or weak subjects' consequences may be required to enter review even when threshold-revision authority is separately allocated.
 
-### Guardrail 4: high-d process must be reflexively reviewable
+### Guardrail 4: candidate high-d process is reflexively reviewable
 
 A high-`d` process that refuses review becomes low-`d` domination disguised as long-term wisdom.
 
 Compressed rule:
 
-> **高 `d` 触达的是后果方向，不是身份特权；高 `d` 必须经由过程生成，并接受反身校准。**
+> **在本候选模型中，高 `d` 指向后果结构而非身份特权；即使过程与反身校准证据成立，也不产生政治 priority、standing 或 authority。**
 
 ---
 
@@ -368,7 +370,7 @@ Ask:
 - Is the agency human, institutional, algorithmic, procedural, or hybrid?
 - Is it visible as agency, or disguised as neutral process?
 
-### Step 2: Is there hidden `\Psi_f` transfer?
+### Step 2: Is there hidden burden / cost transfer?
 
 Ask:
 
@@ -406,7 +408,7 @@ Ask:
 - T2: structural tension;
 - T3: rights-update tension.
 
-### Step 7: What calibration duty follows?
+### Step 7: What candidate calibration response might follow?
 
 - K1: explanation;
 - K2: consequence recount;
@@ -451,7 +453,7 @@ A platform ranks merchants, creators, or workers through opaque algorithmic visi
 ### SRT diagnosis
 
 1. `L_2` agency structure exists: ranking / recommendation / traffic allocation selects for users and allocates opportunity.
-2. `\Psi_f` transfer exists: merchants or creators pay uncertainty, adaptation cost, and visibility volatility.
+2. Burden / cost transfer may exist: merchants or creators pay uncertainty, adaptation cost, and visibility volatility. These proxies are not canonical `Psi_f` automatically.
 3. Consequence return is weak: feedback may be logged but often does not alter threshold logic.
 4. Reselection compression appears:
    - I1 if exit destroys livelihood;
@@ -476,11 +478,11 @@ If long-term ecosystem health or broad affected-subject futures are blocked from
 
 ### Interface rights activated
 
-- agency-transparency right: platform must make agency status visible;
-- consequence-accounting right: merchant / creator / worker burden must count;
-- threshold-accountability right: gate logic must be reviewable;
-- high-`d` consequence-access right: ecosystem-level consequences must enter review;
-- reselection-capacity protection right: affected subjects should not be locked into opaque gate dependence without rollback paths.
+- candidate agency-transparency provision: the framework may require visible agency status;
+- candidate consequence-accounting provision: the framework may require merchant / creator / worker burdens to count;
+- candidate threshold-accountability provision: the framework may require gate review;
+- candidate high-`d` consequence-access provision: the framework may admit ecosystem-level consequences to review;
+- candidate reselection-capacity provision: the framework may protect affected subjects against opaque gate dependence without rollback paths.
 
 ---
 
@@ -491,7 +493,7 @@ If long-term ecosystem health or broad affected-subject futures are blocked from
 | SRT as rights calibration, not replacement | closed for hardening | future rhetorical / publication form |
 | Reality-tension criterion | closed for hardening | operational thresholds |
 | T0-T3 ladder | closed for hardening | empirical indicators |
-| K1-K4 calibration duties | closed for hardening | institutional carriers |
+| K1-K4 candidate responses | bounded for this proposal | institutional carriers and normative admission |
 | U1-U4 update ladder | closed for hardening | domain-specific triggers |
 | Old-right blindness test | closed for hardening | case mapping |
 | Five interface rights | closed as first set | legal translation and priority refinements |
@@ -515,26 +517,26 @@ Answer: It does not turn SRT into a partisan political program. The chain remain
 
 ### Doubt 2: Does high-d consequence-access become elitism?
 
-Answer: Only if high-`d` is misread as identity. This completion pass explicitly blocks that. High-`d` is a process-generated selection capacity, not a credential or status. It must include consequence collection, conflict integration, threshold revision, and reflexive calibration.
+Answer: Only if high-`d` is misread as identity. This completion pass explicitly blocks that. Here high-`d` is a candidate process model, not a credential or status, and it never confers political priority, standing or authority.
 
 ### Doubt 3: Will new rights proliferate endlessly?
 
-Answer: No. The old-right blindness test and new-right gate block uncontrolled expansion. New rights appear only when old rights cannot see the object, mechanism, and remedy of reselection-capacity loss caused by new `L_2` agency structures.
+Answer: No automatic expansion follows. The old-right-blindness diagnostic and new-right gate are candidate safeguards against uncontrolled proliferation. Any new right still requires independent normative and institutional admission.
 
 ### Doubt 4: Does reselection-capacity protection undermine all stable institutions?
 
-Answer: No. SRT allows legitimate lock-in. The condition is not zero constraint, but corresponding rollback interface: path rollback, rule rollback, or agency rollback depending on the compression layer.
+Answer: No universal verdict follows. A declared framework may permit some lock-in and ask whether a corresponding rollback interface—path, rule, or agency rollback—should be available for the relevant compression layer.
 
 ### Doubt 5: Does this conflict with the older `d-tendency` authorization model?
 
-Answer: It refines it. `d-tendency` remains a statistical bridge for authorization, but it must not become identity. It must be revalidated through concrete selection fields and high-`d` process generation.
+Answer: It offers a candidate refinement. `d-tendency` remains a statistical bridge and never grants authorization by itself; it must not become identity and may be reassessed through concrete selection fields and declared institutional procedures.
 
 ### Doubt 6: Is this too abstract to apply?
 
-Answer: The diagnostic checklist and platform case show the chain can be applied. The next hardening step should be domain mapping: platform governance, AI delegation, education evaluation, medical / elder-care decision systems, and family-care structures.
+Answer: The diagnostic checklist and platform case illustrate possible application. A later research step may test domain mappings in platform governance, AI delegation, education evaluation, medical / elder-care decision systems, and family-care structures.
 
 ---
 
 ## 14. Final Compact Statement
 
-> **SRT interface rights are not a replacement for traditional rights but calibration interfaces generated where traditional rights become structurally blind. Old-right blindness requires object blindness, mechanism blindness, and remedy blindness: the old system cannot see reselection-capacity loss, cannot identify the `L_2` gate or agency structure causing it, and cannot restore consequence-return or rollback. The first interface-right set contains five rights: consequence-accounting, threshold-accountability, reselection-capacity protection, agency-transparency, and high-`d` consequence-access. These rights form a core-process structure: reselection capacity is the purpose; agency transparency is the prerequisite; consequence accounting is the input; threshold accountability is the mechanism; high-`d` access is direction calibration. When interface rights conflict, SRT uses the principle of minimum irreversible compression and maximum rollbackability. Irreversible compression has three layers: exit, revision, and reorganization. Rollbackability has three corresponding layers: path rollback, rule rollback, and agency rollback. High-`d` access must remain process-based rather than identity-based. This completes the current rights-calibration chain as a stable P2/P3 hardening architecture with P4 implementation questions.**
+> **Candidate proposal under a declared rights framework:** interface rights may serve as calibration bridges where traditional rights appear unable to address object, mechanism, and remedy together. The five named interfaces, the old-right-blindness diagnostic, the minimum-irreversible-compression / maximum-rollbackability conflict lens, and the I/R ladders are non-exhaustive design candidates—not ontology-generated rights, duties, restrictions, remedies, or a uniquely correct solver. Generic burden is not canonical `Psi_f` automatically. High `d` remains process-relative and confers no political priority, standing, legitimacy, or authority. Adoption and adjudication require independent normative and institutional admission.

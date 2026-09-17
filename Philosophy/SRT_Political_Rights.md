@@ -7,16 +7,17 @@ layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 canonical: false
-dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS]
 created: 2026-04-06
 ---
 
 # SRT 政治权利理论：权利、授权与d值的选择论基础
 
 > **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
-> **目的**：从SRT第一性原理推导权利的本体论定义，建立以决策d值为核心的授权合法性框架，并分析其对民主制度的含义。
+> **当前目的**：保留并检验一套历史／候选的 SRT-informed 权利与委托模型，而非从 SRT 第一性原理推出权利或授权合法性。
 > 本文件是2026-04-06会话中形成的核心理论推进的正式回写。
 > 与 `Philosophy/SRT_Social_Economics.md` 为兄弟关系：后者处理市场与经济不平等，本文件处理政治权利与制度授权。
+> **Wave E7 authority guard**：Generative Ontology Spine 和当前 `d / Psi_f / T_dir` owners 向下游约束本 bridge。High `d` 不赋予合法性、授权、公职、代表权或优越政治 standing；`d`-tendency 只是候选统计构造。
 > **Canonical Collective Selection Layer (2026-04-24; RC-A sync 2026-08-18)**：本文把投票读为 d 倾向后验验证、把制度读为三层（公检法 / 监督 / 授权）结构——这些在结构层回链 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）。投票本身不证明 collective agency；T-COLL-4 仅可作为 downstream consequence-sensitive revision / agency audit input，`A_{\mathcal{P}}`、`M(t)` 返回与非脚本化等信号不得反向定义 Selection 或追加为 T-COLL-1 的硬条件。制度是集体 ISP 的**器官**不是主体。本文件保留权利与授权的规范性 P2/P3/P4 论述，但集体 ISP standing 与三类退化判据不在本文件重复定义。
 
 ---
@@ -25,26 +26,28 @@ created: 2026-04-06
 
 SRT现有框架描述了选择的范围（d值）、代价（Ψ_f）和方向可读性（T_dir），但缺少对以下问题的系统性处理：
 
-- **权利从何而来**：权利不是自然给定的，也不是纯粹约定俗成的——它有选择论的内在结构
+- **权利如何被建模**：权利可否被一套选择论 bridge 框架解读，而不宣称本体论自动生成权利
 - **代理的合法性基础**：谁有权代替他人做决策？合法性的判断标准是什么？
 - **现有授权体系的失效机制**：为什么金钱和政治地位作为授权依据会系统性地偏离"初心"？
 - **制度设计的SRT含义**：什么样的授权结构能让系统选择压力朝向最大秩序？
 
 ---
 
-## §1 权利的SRT定义：合法化的代理选择
+## §1 权利的历史／候选 SRT 模型：合法化的代理选择
 
-> **核心定位**：权利不是抽象的道德实体，而是**合法化的代理选择**——允许一部分选择对其他选择进行代理的社会结构。
+> **候选定位**：在一个已声明的权利／委托理论内，权利可被建模为“合法化的代理选择”。这不是权利的普遍本体论定义。
 
 每一个活选择（L₁层算子）都在自身的关切范围内做决策。权利的出现意味着：
 
-$$\text{权利} \equiv \text{将选择}\ \sigma_A\ \text{的部分代理委托给}\ \sigma_B\ \text{的合法化机制}$$
+$$\text{Rights-model}_{candidate} := \text{将选择}\ \sigma_A\ \text{的部分代理委托给}\ \sigma_B\ \text{的框架化机制}$$
 
 **历史合法性**：金钱和政治地位作为代理依据，在社会复杂度较低时有一定的信噪比——它们粗略地对应于某种资源整合和信息聚合能力。但随着社会复杂度增加，这种对应关系的精度下降，噪声超过信号。
 
-**深层合法性**：代理的真正合法性应与社会发展的方向一致——即指向最大秩序的方向（见 `_SRT_T_DIR_CANONICAL.md §19`）。这个方向上的合法性判据，不是金钱或地位，而是**决策整合关切范围的宽度与深度**，即决策的d值。
+**候选委托启发式**：历史模型尝试以决策整合关切范围的宽度与深度评估委托适配。该模型需要独立规范前提，不以 `T_dir` 或 `d` 为合法性来源。
 
-$$\text{代理合法性} \propto \frac{d_{actual}(decision)}{d_{required}(decision\ scope)}$$
+$$\text{proxy-legitimacy heuristic}_{historical} \propto \frac{d_{actual}(decision)}{d_{required}(decision\ scope)}$$
+
+> This ratio is a historical / research heuristic under a declared normative model. It does not grant authorization or representation rights, and high `d` is neither necessary nor sufficient for legitimacy.
 
 ---
 
@@ -82,7 +85,7 @@ $$d_{tendency}(S) \equiv \mathbb{E}_{\sigma \sim S}\left[d(\sigma)\right] \pm \t
 
 关键性质：
 
-1. **大样本收敛**：单次决策的d值受情境影响，噪声大。跨越足够多的决策，d倾向分布收敛，提供可操作的授权依据
+1. **候选大样本估计**：单次决策的d值受情境影响，噪声大。跨决策分布可作研究性统计构造，但不提供政治权威或授权资格。
 2. **d倾向 ≠ 固有属性**：d倾向是统计量，不是主体的本质。同一主体在不同时期、不同条件下d倾向可以变化
 3. **d倾向 ≠ 聪明程度**：认知能力影响在特定域内能整合什么，d倾向描述的是习惯性整合多宽的关切范围——两者相关但不等同
 4. **抗捕获性**：d-mimicry（假装高d倾向）是L₂积累行为，在大样本下自我消耗，真实d倾向最终浮现
@@ -110,10 +113,10 @@ $$d_{tendency}(S) \equiv \mathbb{E}_{\sigma \sim S}\left[d(\sigma)\right] \pm \t
 → 调整授权范围和程度
 ```
 
-**授权动态校准原则**：
+**授权动态校准候选机制**（非 SRT 定理）：
 
-$$d_{actual}\ \text{持续高于}\ d_{required} \Rightarrow \text{授权扩大}$$
-$$d_{actual}\ \text{持续低于}\ d_{required} \Rightarrow \text{授权收缩}$$
+$$d_{actual}\ \text{持续高于}\ d_{required} \leadsto \text{候选授权复核信号}$$
+$$d_{actual}\ \text{持续低于}\ d_{required} \leadsto \text{候选授权复核信号}$$
 
 ---
 
@@ -127,7 +130,7 @@ $$d_{actual}\ \text{持续低于}\ d_{required} \Rightarrow \text{授权收缩}$
 
 **维度二：时间尺度**
 
-$$d_{required}(decision) \propto \text{决策后果的时间尺度}$$
+$$d_{required}(decision) \propto \text{决策后果的时间尺度}\quad\text{(candidate design heuristic)}$$
 
 | 决策类型 | 时间尺度 | d阈值要求 |
 |---------|---------|---------|
@@ -138,15 +141,15 @@ $$d_{required}(decision) \propto \text{决策后果的时间尺度}$$
 
 **维度三：不可逆程度**
 
-高不可逆决策的授权错误代价极大，所需d阈值应更高，且需要更长的d倾向观测窗口才能授权。
+在本候选模型中，高不可逆决策可触发更严格的审查与更长观测窗口；这不是 universal `d` threshold，也不由 high `d` 自动产生授权。
 
-> **最优粒度原则**：授权粒度应与决策作用域的L₁结构边界对齐，不应以行政便利性为划分依据。
+> **候选粒度启发式**：所声明的委托框架可考虑授权粒度与决策作用域边界的对齐，而非把它当作 SRT 命令。
 
 ---
 
 ## §6 投票作为d倾向的后验验证机制
 
-> **投票的SRT重新定位**：投票不是偏好聚合机制，而是被代理群体对代理者d倾向的**大样本后验验证**。
+> **投票的历史／候选 SRT 模型**：投票可被研究为被代理群体对代理者 `d` 倾向的低精度后验信号。这不定义投票、民主合法性或代表授权。
 
 **运作机制**：
 
@@ -177,7 +180,7 @@ $$d_{required}(decision) \propto \text{决策后果的时间尺度}$$
 
 ## §7 现有民主的SRT定位：低精度实现
 
-> 现有民主制度是d倾向动态验证机制的**低精度实现**，不是任意约定，也不是完善体系。
+> 把现有民主制度读作 `d` 倾向动态验证的低精度实现，是一种历史／候选比较理论，不是 SRT 对民主或任何政体的背书。
 
 **精度不足的系统性来源**：
 
@@ -194,7 +197,7 @@ $$d_{required}(decision) \propto \text{决策后果的时间尺度}$$
 
 这不是道德问题，是**筛选机制的动力学问题**：吸引子方向错误。
 
-**现有民主 vs SRT框架**：
+**现有民主 vs 历史／候选 SRT 委托模型**：
 
 | 要素 | 现有民主 | SRT框架 |
 |------|---------|---------|
@@ -204,16 +207,16 @@ $$d_{required}(decision) \propto \text{决策后果的时间尺度}$$
 | 验证信号 | Ψ_f_felt（主观感受） | Ψ_f_actual后验 + Ψ_f_felt |
 | 时间覆盖 | 选举周期（4-8年） | 系统性覆盖长时间尺度 |
 
-**历史合法性的继承**：现有体系不是纯噪音，它积累了一些真实的d信号。SRT的处理：
+**历史启发式的继承**：下列映射只记录候选先验与校正思路，不验证任何制度或主体的合法性：
 
 $$\text{历史合法性（金钱/地位）} \to \text{保留为低精度先验}$$
 $$\text{d倾向评估} \to \text{作为高精度校正层叠加}$$
 
 ---
 
-## §8 民主的升级路径：验证精度与授权粒度
+## §8 民主的候选设计路径：验证精度与授权粒度
 
-**升级方向不是推翻民主，而是补上结构性缺失的层**。
+本节不主张推翻、升级或选择某一政体；它列出历史／候选模型中的结构缺口与设计假说。
 
 **结构性缺口**：长时间尺度决策的验证失效
 
@@ -227,20 +230,20 @@ $$\text{d倾向评估} \to \text{作为高精度校正层叠加}$$
 
 **制度升级含义**：
 
-1. **Ψ_f_actual追踪与授权结构性连接**：长期后果追踪（生态审计、债务可持续性、社会信任测量）应与授权续期直接挂钩，而非仅作建议
+1. **候选后果追踪与授权连接**：一个已声明的治理框架可研究将长期后果代理指标与授权复核连接，不把它当作普遍要求
 
-2. **时间层级化的授权结构**：不同时间尺度决策需要不同授权周期，较长时间尺度的层级对较短时间尺度有约束权，而非相反
+2. **时间层级化的授权结构候选**：声明的框架可研究不同时间尺度的审查周期；该设计不从 SRT 自动获得约束权
 
 3. **d倾向观测窗口与授权时间尺度匹配**：
-   > 授权前的d倾向观测窗口必须与决策后果的时间尺度可比。
+   > 在本候选模型内，`d` 倾向观测窗口可与决策后果的时间尺度比较；它不产生授权资格。
 
-   高时间尺度、高不可逆的决策授权，需要至少部分可比时间段的d倾向记录（决策记录，非简历资质）
+   高时间尺度、高不可逆的决策可在该候选模型中要求更长记录，但此记录不构成授权资格或 high-`d` entitlement
 
 ---
 
-## §9 三层制度结构
+## §9 三层制度结构候选
 
-> **状态**：方向稳定，机制细节为开放问题（见§10）
+> **状态**：历史／候选制度模型，机制与规范采纳均为开放问题（见§10）；不背书、排序或要求任何现实制度。
 
 **层级分工**：
 
@@ -252,26 +255,26 @@ $$\text{d倾向评估} \to \text{作为高精度校正层叠加}$$
 
 **监督机构的三个结构性特征**（防d倾向退化）：
 
-1. **推理链公开可审计**：每一个追踪决定和授权调整建议必须留下完整的关切范围记录，让全社会成为分布式d验证者
+1. **候选公开审计保障**：所声明框架可要求追踪决定和授权调整建议留下关切范围记录
 
-2. **结构性利益隔离**：监督者的Ψ_f结构与被监督对象的Ψ_f结构在制度层面保持独立，防止监管捕获（L₂耦合）
+2. **候选结构性利益隔离**：声明的框架可研究监督者与被监督对象之间的利益／负担代理量分离，以降低监管捕获；generic cost 不自动是 canonical `Psi_f`
 
-3. **自反性要求**：监督机构自身必须适用它对他人使用的同一套d验证框架；自身决策对自身标准的违反在公开记录中可见
+3. **候选自反性保障**：所声明框架可要求监督机构对自身适用同类审计并保留可见记录
 
 **递归终止逻辑**：
 
 ```
 监督机构 ← 三个结构性特征（自我约束）
          ← 公检法（L₁硬性边界，全社会可见，递归终止层）
-         ← 文明尺度Ψ_f_actual（终极后验，慢但真实）
+         ← 长时间尺度 consequence proxy（候选后验；非 canonical Psi_f 自动）
 ```
 
-公检法作为终止层的逻辑：其失效是整个社会中可见度最高的Ψ_f穿透型事件，全体社会成员都是其d验证者，无需专门上级监督机构。
+历史模型曾把公检法设作递归终止层；当前仅保留为待检验的制度设计候选，不声称社会成员的 `d` 验证或某种 `Psi_f` 事件足以建立该安排的合法性。
 
 **完整结构图**：
 
 ```
-文明尺度Ψ_f_actual（终极后验）
+长时间尺度 consequence proxy（候选后验）
             ↕
 公检法（L₁边界，递归终止层）
             ↕ 授权来源 + 边界约束

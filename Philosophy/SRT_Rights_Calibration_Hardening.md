@@ -7,7 +7,7 @@ layer: L1
 epistemic_layer: bridge
 claim_mode: hardening
 claim_level: P2-P4
-dependency: [SRT-POLITICAL-PHILOSOPHY, SRT-POLITICAL-RIGHTS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CLOSURE-COMPAT-HARDENING]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-POLITICAL-PHILOSOPHY, SRT-POLITICAL-RIGHTS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CLOSURE-COMPAT-HARDENING]
 created: 2026-04-25
 ---
 
@@ -19,39 +19,41 @@ created: 2026-04-25
 > **Scope**: rights as historical approximation, SRT as calibration rather than replacement, reality-tension triggers, T3 calibration procedure, K4 update ladder, new-right generation gates, and high-d as coupled selection capacity.
 >
 > **Claim-level note**: The conceptual frame is P2/P3. Operational thresholds, institutional mechanisms, and empirical tests are P4 unless separately hardened.
+>
+> **Wave E7 role guard**: This file is a P2–P4 rights-calibration design proposal under a declared normative framework. SRT ontology does not by itself generate rights, duties, political update authority, or `O2-M` verdicts. High `d` does not confer office, authorization, legitimacy, priority, or superior standing.
 
 ---
 
 ## 0. Compressed Thesis
 
-SRT does not replace existing rights systems by theoretical fiat. Existing rights systems should be read as historically sedimented `L_2` approximations of high-`d` selection protection. SRT enters such systems through explanatory power and gains update authority only through demonstrated problem-solving power: by diagnosing hidden `\Psi_f` transfer, consequence-return failure, reselection-capacity compression, and blocked high-`d` directions.
+SRT does not replace existing rights systems by theoretical fiat. Reading existing rights systems as historically sedimented `L_2` approximations of high-`d` selection protection is a candidate interpretive hypothesis, not their true essence. Explanatory or problem-solving success may make SRT relevant to rights design; it does not grant political update authority. Hidden labor, waiting, shame, uncertainty, risk and opportunity loss are burden / cost proxies, not canonical `Psi_f` automatically.
 
 Chinese compressed form:
 
-> **现有权利体系是历史 `L_2` 对高 `d` 选择保护的沉积近似。SRT 不以理论身份取代它，而是以解释力进入，以解决力校准，以高 `d` 对齐推动权利结构更新。**
+> **候选解释：现有权利体系可被读作历史 `L_2` 对高 `d` 选择保护的沉积近似。SRT 不以理论身份取代它；在明确声明的权利框架内，解释力与问题解决能力至多提供校准建议的相关性，高 `d` 不产生更新授权。**
 
 Short slogans:
 
 - **Rights are historical approximations of high-`d` protection.**
 - **SRT is a calibration mechanism, not a replacement regime.**
-- **Explanatory power grants entry; problem-solving power grants update authority.**
-- **解释力给进入权，解决力给更新权。**
+- **Explanatory and problem-solving power may support design relevance; neither grants political authority.**
+- **解释力与解决力可提供设计相关性，不产生政治授权。**
 
 ---
 
 ## 1. Rights as Historical Approximation of High-d Protection
 
-Existing value and rights systems should not be treated as mere error or obsolete ideology. They are historical `L_2` deposits that partially protect high-`d` selection conditions: life, dignity, liberty, equality, due process, property, speech, association, and procedural review all function as partial constraints against the complete monopolization of reality-definition power.
+This candidate interpretation does not treat existing value and rights systems as mere error or obsolete ideology. It reads them as historical `L_2` deposits that may partially protect high-`d` selection conditions: life, dignity, liberty, equality, due process, property, speech, association, and procedural review can function as partial constraints against the complete monopolization of reality-definition power.
 
 However, these rights systems are approximations, not final alignments. They emerged under historical selection conditions that did not fully include newer `L_2` agency structures such as algorithmic recommendation, platform governance, automated scoring, AI delegation, data extraction, and invisible gatekeeping systems.
 
 Therefore:
 
-> **Existing rights are not wrong; they are low-resolution approximations under new `L_2` pressures.**
+> **Candidate reading: existing rights may be incomplete, historically situated approximations under new `L_2` pressures.**
 
 SRT's role is to increase the resolution of rights diagnosis by asking:
 
-1. who pays hidden `\Psi_f` for the structure's stability;
+1. who bears hidden burden / cost / friction for the structure's stability;
 2. whose consequences fail to return to the decision site;
 3. whose reselection capacity is compressed;
 4. which high-`d` direction cannot enter threshold rules.
@@ -62,7 +64,7 @@ SRT's role is to increase the resolution of rights diagnosis by asking:
 
 SRT must not claim political or rights authority merely because it has a deeper ontology. Theory-identity does not grant rule-authority.
 
-SRT can only enter existing value systems through explanatory success and gain update authority through problem-solving success.
+SRT may become relevant to existing value systems through explanatory and problem-solving success, but theory success does not confer political authority or a right to update institutions.
 
 ### 2.1 Entry through explanatory power
 
@@ -77,7 +79,7 @@ SRT earns entry when it explains tensions that existing rights languages handle 
 
 ### 2.2 Update through solving power
 
-SRT earns update authority only when it provides lower-friction and higher-reselection solutions:
+Within a declared framework, SRT may earn design relevance when it provides lower-burden and higher-reselection proposals:
 
 - upgrading complaint channels into consequence-return mechanisms;
 - converting feedback into threshold-review rather than comfort patches;
@@ -93,21 +95,21 @@ Compressed rule:
 
 ## 3. Reality-Tension Criterion
 
-SRT should not call every conflict, dissatisfaction, or pain a rights-level tension. A stricter criterion is required.
+This proposal does not classify every conflict, dissatisfaction, or pain as a rights-level tension. A declared framework may use a stricter candidate diagnostic.
 
 ### Def-RTension: Reality Tension
 
-A reality tension occurs when an existing `L_2` agency structure maintains its own stability by transferring `\Psi_f` burdens to relevant subjects, blocking their consequences from returning, compressing their reselection capacity, and preventing high-`d` directions from entering threshold rules.
+As an exploratory diagnostic, a reality tension may be registered when an existing `L_2` agency structure maintains stability by transferring burdens to relevant subjects, blocking consequence return, compressing reselection capacity, and excluding wider-scope directions from threshold rules. This conjunction does not itself create a right, duty, or political-action requirement.
 
 Formula-like compressed form:
 
 ```text
-Reality tension = Ψ_f transfer + consequence-return failure + reselection compression + blocked high-d direction
+Reality-tension candidate = burden/cost proxy transfer + consequence-return failure + reselection compression + blocked wider-scope direction
 ```
 
 Chinese compressed form:
 
-> **现实张力 = `\Psi_f` 转嫁 + 后果不返回 + 再选择压缩 + 高 `d` 被阻断。**
+> **候选现实张力模型 = burden / cost proxy 转嫁 + 后果不返回 + 再选择压缩 + wider-scope consequence 被阻断。**
 
 Even shorter:
 
@@ -126,9 +128,9 @@ Reality tension should be handled as a graded trigger, not an all-or-nothing cat
 | Level | Name | Condition | SRT judgment |
 |---|---|---|---|
 | T0 | Local dissatisfaction | pain, complaint, conflict, or dislike | not yet an SRT structural tension |
-| T1 | Friction imbalance | hidden or asymmetric `\Psi_f` transfer appears | starts structural diagnosis |
-| T2 | Structural tension | `\Psi_f` transfer + consequence-return failure + reselection compression | enters institutional diagnosis |
-| T3 | Rights-update tension | T2 + blocked high-`d` direction | enters rights calibration zone |
+| T1 | Friction imbalance | hidden or asymmetric burden / cost transfer appears | candidate structural-diagnosis signal |
+| T2 | Structural tension | burden transfer + consequence-return failure + reselection compression | candidate institutional-diagnosis signal |
+| T3 | Rights-update tension | T2 + blocked wider-scope direction | candidate rights-calibration signal |
 
 Compressed rule:
 
@@ -140,7 +142,7 @@ Or:
 
 ### Boundary rule
 
-T3 does not create a right to immediate overthrow. It creates a right to force calibration.
+T3 creates neither a right to overthrow nor a right to force calibration. Inside a declared rights framework it may trigger a proposal for calibration review.
 
 ---
 
@@ -148,28 +150,28 @@ T3 does not create a right to immediate overthrow. It creates a right to force c
 
 When T3 is triggered, the existing `L_2` agency structure does not lose all legitimacy immediately. Instead, it acquires a graded burden of calibration.
 
-### K-Ladder: Calibration Duties after T3
+### K-Ladder: Candidate Calibration Responses after T3
 
-| Stage | Duty | Core question | Result |
+| Stage | Candidate response | Core question | Possible result |
 |---|---|---|---|
-| K1 | Explanation duty | Why are the current threshold rules set this way? | existing `L_2` cannot remain silent |
-| K2 | Consequence-recount duty | Who pays hidden `\Psi_f` and whose consequences were excluded? | hidden burdens re-enter the account |
-| K3 | Threshold-review duty | Do current rules compress reselection capacity? | the gate itself becomes reviewable |
-| K4 | Update duty | If high-`d` blockage persists, what must change? | rule update or agency restructuring |
+| K1 | Explanation proposal | Why are the current threshold rules set this way? | candidate request for reasons |
+| K2 | Consequence-recount proposal | Who bears hidden burden / cost and whose consequences were excluded? | hidden burdens may re-enter the account |
+| K3 | Threshold-review proposal | Do current rules compress reselection capacity? | candidate review of the gate |
+| K4 | Update proposal | If wider-scope consequence blockage persists, what change might be considered? | candidate rule update or agency restructuring |
 
 Compressed rule:
 
-> **T3 不是革命许可，而是校准强制。**
+> **T3 不是革命许可；在声明的权利框架内，它至多支持校准审查提案。**
 
 Full statement:
 
-> **When T3 rights-update tension appears, the existing `L_2` agency structure must explain its threshold rules, recount excluded consequences, review whether it compresses reselection capacity, and update rules or agency positions if blocked high-`d` directions persist.**
+> **Within a declared rights framework, a T3 diagnostic may support requests to explain threshold rules, recount excluded consequences, review reselection compression, and consider rule or agency updates. These are candidate procedures, not duties entailed by SRT ontology alone.**
 
 ---
 
-## 6. K4 Update Ladder
+## 6. K4 Candidate Update Ladder
 
-K4 should not be read as one-step revolution. Updates should scale with the stubbornness and depth of the tension.
+K4 is not a one-step revolution rule. A declared framework may scale candidate updates with the persistence and depth of the diagnosed tension.
 
 | Level | Update form | Trigger | SRT judgment |
 |---|---|---|---|
@@ -184,17 +186,17 @@ Compressed rule:
 
 ### Boundary rule
 
-U1 cannot by itself solve T3. If T3 persists after parameter repair, the structure must move to U2 or beyond.
+Within this design proposal, persistent T3 after parameter repair may justify considering U2 or beyond; SRT does not mandate escalation.
 
 ---
 
 ## 7. New-Right Generation Gate
 
-New rights must not be generated merely because there is new suffering. Otherwise, rights language inflates without structural discipline.
+Within this proposal, new suffering alone is insufficient to propose a new interface right. Any right still requires independent normative and institutional admission.
 
 ### Def-NewRight-Gate
 
-A new SRT rights category may be proposed only when all three conditions are satisfied:
+M1–M3 are candidate criteria for proposing an interface right inside this framework, not universal necessary or sufficient conditions for generating rights:
 
 | Gate | Question | Function |
 |---|---|---|
@@ -241,19 +243,19 @@ Or:
 
 ### Consequence-accounting for all relevant subjects
 
-All relevant affected subjects must have their consequences counted when their future choice-space is rewritten by an `L_2` agency structure.
+A declared rights framework may require consequences of relevant affected subjects to be counted when their future choice-space is rewritten by an `L_2` agency structure.
 
 This does not mean all subjects have equal threshold-revision authority.
 
 ### Threshold access for high-d directions
 
-High-`d` directions must be able to reach threshold review when they carry broader, longer, or more irreversible consequence structures than the existing gate can process.
+A declared framework may favor threshold-review access for broader, longer, or more irreversible consequence structures than an existing gate can process.
 
 This does not mean a high-`d` claimant may monopolize consequence definition.
 
 Correct balance:
 
-> **所有相关主体的后果必须入账；高 `d` 选择能力负责把这些后果整合进门槛更新。**
+> **在已声明的权利框架内，可要求相关主体的后果进入评审；高 `d` 只是候选整合维度，不赋予政治优先性或门槛控制权。**
 
 ---
 
@@ -299,11 +301,11 @@ Chinese compressed form:
 
 ## 10. High-d Process Generation Model
 
-A high-`d` process requires at least four links. Missing any one link creates predictable pathologies.
+The candidate high-`d` process model uses four links. Missing one weakens this model's diagnostic claim; it does not automatically establish political pathology.
 
 | Link | Function | Prevents |
 |---|---|---|
-| G1 Consequence collection | gather real burdens, hidden `\Psi_f`, and reselection losses from relevant subjects | invisible burden and false stability |
+| G1 Consequence collection | gather real burdens, cost proxies, and reselection losses from relevant subjects | invisible burden and false stability |
 | G2 Conflict integration | distinguish high-`d` signals from low-`d` noise, short-term pressure, or captured feedback | emotional aggregation and private-interest capture |
 | G3 Threshold revision | translate integrated consequences into gate-rule review or update | expression without structural change |
 | G4 Reflexive calibration | make the high-`d` process itself reviewable and correctable | new elite closure or procedural self-sacralization |
@@ -314,7 +316,7 @@ Compressed rule:
 
 ### Anti-fake-high-d guardrail
 
-A claimed high-`d` process must fail if it cannot:
+A claimed high-`d` process fails this candidate process model if it cannot:
 
 1. bind itself to consequences;
 2. integrate more than its own interest;
@@ -334,7 +336,7 @@ The dialogue closes the conceptual frame, but several implementation layers rema
 
 ### OQ-1. Operational thresholds for high-d process sufficiency
 
-Current stabilization: high-`d` process requires consequence collection, conflict integration, threshold revision, and reflexive calibration.
+Current candidate model: a high-`d` process may be assessed through consequence collection, conflict integration, threshold revision, and reflexive calibration; this model confers no political authority.
 
 Open layer: define minimal sufficiency indicators for each step.
 
@@ -347,16 +349,16 @@ Candidate future metrics:
 
 ### OQ-2. Distinction between high-d direction and high-d selection capacity
 
-Current stabilization:
+Current candidate distinction:
 
-- high-`d` direction = broader, longer, or more irreversible consequence structure that should enter gate review;
+- high-`d` direction = broader, longer, or more irreversible consequence structure that a declared framework may consider in gate review;
 - high-`d` selection capacity = the subject-process ability to integrate such consequences into threshold revision.
 
 Open layer: formalize their relation without turning high-`d` direction into moral absolutism or high-`d` capacity into elite identity.
 
 ### OQ-3. Mapping new-right candidates onto existing rights
 
-Current stabilization: new rights require M1 + M2 + M3.
+Current candidate gate: M1 + M2 + M3 may be used to screen proposals, but the conjunction is neither universally necessary nor jointly sufficient for a right.
 
 Open layer: build a mapping table for specific domains:
 
@@ -372,7 +374,7 @@ The mapping should first test whether old rights can absorb the tension before p
 
 ### OQ-4. Institutional carriers of K1-K4
 
-Current stabilization: T3 forces explanation, recounting, review, and update.
+Current candidate model: a declared framework may use T3 to request explanation, recounting, review, or update.
 
 Open layer: identify institutional carriers for each domain.
 
@@ -394,7 +396,7 @@ Current stabilization: `d` is decision / selection-event related; subject `d-ten
 
 Hardening addition:
 
-> **Subject `d-tendency` must not be used as an identity label. It is a provisional statistical proxy that must be revalidated through concrete selection fields and high-`d` process generation.**
+> **Subject `d-tendency` is not an identity label or authorization source. It is a provisional statistical proxy that a declared framework may reassess through concrete selection fields and institutional procedures.**
 
 Open layer: specify when `d-tendency` may safely guide authorization scope and when it must yield to process-based reassessment.
 
@@ -415,4 +417,4 @@ Do not promote this file to P0/P1 without separate canonical review.
 
 ## 13. Final Compact Block
 
-> **Existing rights systems are historically sedimented `L_2` approximations of high-`d` selection protection. SRT does not replace them by theoretical fiat; it enters through explanatory power and gains calibration authority only through problem-solving power. A reality tension appears when an `L_2` agency structure preserves stability by transferring `\Psi_f` burdens, blocking consequence-return, compressing reselection capacity, and preventing high-`d` directions from entering threshold rules. Such tension is graded: T0 local dissatisfaction, T1 friction imbalance, T2 structural tension, and T3 rights-update tension. T3 does not authorize revolution; it triggers calibration duties: explanation, consequence recounting, threshold review, and update. K4 updates scale from parameter repair to threshold rewrite, agency-layer restructuring, and finally new-right generation. New rights require a new `L_2` agency structure, insufficiency of old rights, and inexpressible reselection loss. SRT new rights protect reselection capacity and high-`d` consequence-return, not arbitrary desire. High-`d` is not an identity label but a coupled selection capacity generated through consequence collection, conflict integration, threshold revision, and reflexive calibration.**
+> **Candidate proposal under a declared rights framework:** existing rights systems may be read as historically sedimented `L_2` approximations of selection protection. SRT does not replace them or acquire calibration authority by theoretical fiat. Generic burden transfer is not canonical `Psi_f` automatically. The T/K/U ladders are exploratory diagnostics and response options: they create no automatic right, duty, escalation, update authority, or `O2-M` verdict. A new-right proposal still requires independent normative and institutional admission; no conjunction in this file is universally necessary or jointly sufficient. High `d` is not an identity label and confers no office, priority, legitimacy, or authority.

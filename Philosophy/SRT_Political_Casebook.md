@@ -21,6 +21,7 @@ canonical: false
 priority: high
 date: 2026-04-27
 dependency:
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
   - Philosophy/SRT_Social_Political_PH_SS_Guardrails.md
   - Philosophy/SRT_Ethics_Casebook.md
   - Philosophy/SRT_Subjecthood_Threshold_Interface.md
@@ -28,14 +29,17 @@ dependency:
   - Core/SRT_Validation_Template.md
   - SRT_Terminology_Consistency_Audit.md
 machine_summary: >
-  Applied political and institutional casebook for SRT. It turns collective L2, institutional legitimacy,
-  hidden Psi_f, friction export, future selectability, appeal/correction channels, consequence return,
+  P3-P5 applied political and institutional diagnostic scaffold for SRT. It treats institutional legitimacy
+  as a declared-framework evaluative question and uses burden/cost proxies, future selectability,
+  appeal/correction channels, consequence return,
   and repair paths into a reusable diagnostic template. Initial cases include bureaucratic process,
   market platform, school system, medical institution, eldercare institution, local government procedure,
   algorithmic governance, and workplace hierarchy.
 ---
 
 # SRT Political / Institutional Casebook
+
+> **Wave E7 applied-framework guard**: This P3–P5 casebook does not define canonical political primitives or universal institutional legitimacy. Every case verdict requires an independently declared normative / political framework. The listed SRT-informed lenses are non-exhaustive; none is universally necessary and they are not jointly sufficient. Generic labor, waiting, shame, uncertainty, risk, opportunity loss and social cost are burden / cost / friction proxies, not canonical `Psi_f` unless bearer, scope, closure, consequence-return and payability semantics are independently established.
 
 > **Purpose**: Turn SRT social and political guardrails into concrete institutional diagnosis.  
 > **Status**: Applied political philosophy bridge / casebook. It does not define canonical political primitives.  
@@ -50,7 +54,7 @@ SRT political philosophy should not confuse:
 ```text
 institutional reality      = a structure is real as collective L2;
 institutional efficiency   = a structure processes selections quickly or cheaply;
-institutional legitimacy   = a structure preserves affected subjects' future selectability, avoids hidden friction export, and provides correction / repair.
+institutional legitimacy   = an evaluative question under the declared framework; future-selectability, burden distribution, correction, appeal, consequence return and repair are candidate lenses, not the definition.
 ```
 
 Guardrail:
@@ -84,7 +88,7 @@ Who gets to select, classify, approve, deny, rank, punish, reward, or define the
 
 Who gains speed, profit, authority, stability, legitimacy, or reduced local friction?
 
-### 5. Who pays hidden Psi_f?
+### 5. Who bears hidden burden / cost / friction?
 
 Who absorbs paperwork, waiting, shame, uncertainty, appeal burden, lost options, risk, or emotional labor?
 
@@ -100,7 +104,7 @@ Can affected people challenge, revise, exit, appeal, or repair the selection?
 
 Do decision-makers receive consequences from bad selections, or are consequences exported to weaker actors?
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
 Does the structure pass:
 
@@ -111,9 +115,9 @@ Does the structure pass:
 - dignity / subjecthood protection test;
 - repair-path test?
 
-### 10. Repair path
+### 10. Candidate repair path
 
-What redesign would reduce hidden friction, restore selectability, or improve legitimacy?
+What redesign might reduce hidden burden, restore selectability, or support the declared framework's aims?
 
 ### 11. Failure / narrowing condition
 
@@ -148,7 +152,7 @@ Clerks, departments, platform forms, approval officials, policy rules, and docum
 
 The institution gains standardization, risk reduction, auditability, and local friction reduction.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Applicants pay waiting, uncertainty, repeated visits, document collection cost, shame, lost work time, and translation between lived reality and official categories.
 
@@ -158,17 +162,17 @@ A successful process may expand access. A failed or opaque process narrows futur
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy depends on whether the person can know why they were rejected, correct errors, appeal, or receive guidance.
+Under a declared framework, reasons, error correction, appeal and guidance may count as candidate evidence.
 
 ### 8. Consequence return
 
 If staff or departments face no consequence for opaque rejection while applicants absorb all costs, friction is exported downward.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-A bureaucratic process is legitimate when standardization does not erase subjecthood and when affected people have correction pathways.
+A declared framework may regard non-erasure of subjecthood and effective correction pathways as reasons supporting legitimacy; they do not decide it universally.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - one-time document list;
 - rejection reason codes;
@@ -210,7 +214,7 @@ The platform controls visibility, pricing affordances, search ranking, penalties
 
 The platform benefits from scale, standardization, data capture, and reduced transaction friction. Some users benefit from convenience.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Sellers, drivers, creators, or small merchants may pay with algorithmic uncertainty, rating anxiety, forced discounting, opaque penalties, and appeal burden.
 
@@ -220,17 +224,17 @@ The platform may expand market access while narrowing actual autonomy through de
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires meaningful appeal, explainable penalties, portable reputation, and non-destructive exit options.
+A declared framework may treat meaningful appeal, explainable penalties, portable reputation and non-destructive exit as candidate evidence.
 
 ### 8. Consequence return
 
 If platform design errors hurt workers/users while the platform captures profit and avoids repair, consequence return is broken.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-A platform can be real and efficient while illegitimate if it exports risk and friction to dependent participants.
+A platform can be real and efficient without thereby being legitimate. Under a declared framework, exported risk and burden to dependent participants may weigh against legitimacy.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - penalty explanations;
 - appeal SLA;
@@ -272,7 +276,7 @@ Teachers, administrators, exams, curriculum standards, and ranking systems selec
 
 The school gains order, measurement, comparability, and administrative control. Some students gain recognition and opportunity.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Students who do not fit the default selection categories may pay shame, anxiety, identity narrowing, exclusion, or learned helplessness.
 
@@ -282,17 +286,17 @@ A good school expands future selectability. A bad system hardens early labels in
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires feedback, appeal, alternative paths, support, and distinction between behavior, ability, and identity.
+A declared framework may count feedback, appeal, alternative paths, support and distinctions among behavior, ability and identity as candidate evidence.
 
 ### 8. Consequence return
 
 If institutional rankings damage students while the school treats metrics as neutral, consequences are exported to children and families.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-Education is legitimate when sorting remains revisable and when discipline / ranking increase future agency rather than freeze identity.
+A declared framework may favor revisable sorting and discipline / ranking that supports future agency rather than freezing identity; these features do not universally settle legitimacy.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - restorative discipline;
 - growth-based assessment;
@@ -335,7 +339,7 @@ Doctors, insurers, triage staff, diagnostic codes, hospital policy, and payment 
 
 Institutions gain standardization, risk management, throughput, reimbursement control, and liability protection.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Patients and families pay navigation burden, waiting, uncertainty, cost shock, repeated explanation, misclassification, and emotional stress.
 
@@ -345,17 +349,17 @@ Medical systems can preserve life and agency, but opaque rules can narrow future
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires second opinions, complaint channels, billing review, informed consent, and understandable explanations.
+A declared framework may use second opinions, complaint channels, billing review, informed consent and understandable explanations as candidate evidence.
 
 ### 8. Consequence return
 
 If clinical or billing decisions harm patients while institutions face little correction pressure, friction is exported.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-A medical institution is legitimate when protocol efficiency remains subordinate to patient dignity, correction, and care access.
+A declared framework may favor subordinating protocol efficiency to patient dignity, correction and care access; this does not constitute a universal legitimacy theorem.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - patient navigator;
 - transparent billing;
@@ -397,27 +401,27 @@ Managers, care staff, medical staff, family members, subsidy rules, and institut
 
 Institutions gain routine efficiency, service standardization, staffing predictability, and compliance documentation.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Elders may pay with loneliness, loss of agency, invisibility, bodily discomfort, or inability to correct routines. Staff may pay burnout. Families may pay guilt and coordination burden.
 
 ### 6. Future selectability
 
-Care should preserve remaining agency, dignity, social connection, and bodily comfort. Bad routines convert vulnerability into passive management.
+Within a declared care framework, preserving remaining agency, dignity, social connection and bodily comfort may be favored; routines that convert vulnerability into passive management warrant review.
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires elder voice, family feedback, complaint channel, staff escalation, and individualized correction.
+A declared framework may count elder voice, family feedback, complaint channels, staff escalation and individualized correction as candidate evidence.
 
 ### 8. Consequence return
 
 If poor routines are hidden by paperwork while elders absorb the lived consequences, consequence return is broken.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-Eldercare is legitimate when standardization does not erase personhood and when repair channels are real.
+A declared framework may regard non-erasure of personhood and real repair channels as reasons supporting legitimacy; they do not define it.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - individualized care plan;
 - elder preference records;
@@ -459,7 +463,7 @@ Departments, officials, digital portals, inspectors, policy interpretation, and 
 
 Government gains order, compliance, auditability, and risk control. Citizens/businesses gain service only if they can navigate the process.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Citizens or small businesses may pay compliance burden, repeated visits, unclear requirements, lost time, informal dependence, and opportunity loss.
 
@@ -469,17 +473,17 @@ Good procedure expands public trust and opportunity. Bad procedure narrows civic
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires clear rules, reasons for denial, appeal, service assistance, and correction of official error.
+A declared framework may treat clear rules, reasons for denial, appeal, service assistance and official-error correction as candidate evidence.
 
 ### 8. Consequence return
 
-If citizens absorb all errors while officials only protect procedural safety, legitimacy is weakened.
+If citizens absorb all errors while officials only protect procedural safety, a declared framework may treat that asymmetry as evidence against legitimacy.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-Public procedure is legitimate when administrative order remains answerable to citizen future-selectability.
+A declared framework may favor administrative order answerable to citizen future-selectability; this condition does not universally decide legitimacy.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - one-window guidance;
 - public checklist;
@@ -521,7 +525,7 @@ Model designers, data pipelines, thresholds, deployment institutions, and review
 
 Institutions gain speed, scale, consistency, and reduced local labor.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Affected people may pay appeal burden, opacity, misclassification, reputational harm, lost access, or forced compliance with categories they cannot inspect.
 
@@ -531,17 +535,17 @@ Algorithmic governance can expand access if fair and correctable. It narrows fut
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires explainability, contestability, correction, human review, and repair for erroneous classifications.
+A declared framework may count explainability, contestability, correction, human review and repair for errors as candidate evidence.
 
 ### 8. Consequence return
 
 If model errors harm individuals while the institution captures efficiency benefits, consequence return is broken.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-Algorithmic governance is legitimate only when selection power is matched by correction power, auditability, and repair responsibility.
+A declared framework may require selection power to be matched by correction power, auditability and repair responsibility; SRT ontology alone does not establish this as a universal legitimacy condition.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - audit trail;
 - model card;
@@ -585,7 +589,7 @@ Managers, HR, metrics, informal networks, and organizational culture select who 
 
 Leadership gains coordination, accountability, and strategic control. High-status employees may gain opportunity.
 
-### 5. Who pays hidden `Psi_f`?
+### 5. Who bears hidden burden / cost / friction?
 
 Lower-status workers may pay emotional labor, overtime, self-silencing, role ambiguity, career risk, and hidden coordination cost.
 
@@ -595,17 +599,17 @@ Good hierarchy creates skill growth and coordinated agency. Bad hierarchy narrow
 
 ### 7. Exit / appeal / correction channel
 
-Legitimacy requires grievance channels, transparent evaluation, anti-retaliation norms, promotion clarity, and workload correction.
+A declared framework may count grievance channels, transparent evaluation, anti-retaliation norms, promotion clarity and workload correction as candidate evidence.
 
 ### 8. Consequence return
 
 If managers export costs to workers while metrics reward apparent efficiency, the hierarchy is friction-exporting.
 
-### 9. Legitimacy judgment
+### 9. Framework-relative legitimacy assessment
 
-Workplace hierarchy is legitimate when authority is linked to responsibility, repair, and worker future-selectability.
+A declared framework may favor linking authority to responsibility, repair and worker future-selectability; that linkage does not define legitimacy universally.
 
-### 10. Repair path
+### 10. Candidate repair path
 
 - workload audit;
 - transparent promotion criteria;
@@ -623,7 +627,7 @@ If organizational justice theory fully explains the case, SRT contributes a unif
 
 ## 10. Summary diagnostic table
 
-| Case | Stabilized L2 | Hidden `Psi_f` risk | Selectability risk | Main repair path |
+| Case | Stabilized L2 | Hidden burden / cost risk | Selectability risk | Candidate repair path |
 |---|---|---|---|---|
 | Bureaucratic process | forms / approvals | paperwork and waiting burden | blocked access | guided correction / appeal |
 | Market platform | ranking / rules | algorithmic uncertainty | dependency / lock-in | transparency / appeal / portability |
@@ -643,7 +647,7 @@ SRT political diagnosis asks:
 ```text
 Who selects?
 Who benefits?
-Who pays hidden Psi_f?
+Who bears hidden burden / cost / friction, without assuming canonical Psi_f?
 Who can appeal or correct?
 Whose future selectability expands or narrows?
 Do consequences return to decision-makers?
@@ -656,4 +660,4 @@ The central political guardrail is:
 collective L2 reality does not equal political legitimacy.
 ```
 
-A system is politically stronger when selection power, consequence return, correction power, and repair obligation are aligned.
+Under a declared framework, alignment among selection power, consequence return, correction power, and repair responsibility may count as candidate evidence in a political assessment; it does not define legitimacy or responsibility universally.
