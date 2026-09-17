@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-09-15
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-09-17
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-15
-source_commit: 6eb6907a
+generated: 2026-09-17
+source_commit: 2a0622f6
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: true
-inputs_digest: 963eb88c428d5353
+inputs_digest: 54868c5b506246a7
 ---
 
 # SRT 哲学领域上下文包
@@ -26,8 +26,8 @@ inputs_digest: 963eb88c428d5353
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-15 |
-| 来源 commit | `6eb6907a` |
+| 生成日期 | 2026-09-17 |
+| 来源 commit | `2a0622f6` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
@@ -43,7 +43,7 @@ inputs_digest: 963eb88c428d5353
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-12 |
+| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-09-17 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-09-04 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -458,11 +458,11 @@ For substantive SRT answers:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-17 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -473,6 +473,8 @@ For substantive SRT answers:
 > **Default level**: philosophical interpretation P2/P3; comparative bridge P3; operational proxy P4; public slogan / existential metaphor P5.
 
 This file consolidates high-risk phrase hygiene. It does not replace the PH-SS guardrail files; it is the first stop for metaphor/proxy overclaim checks.
+
+> **Controlling governance boundary (Wave E6)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible owners. It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`; exact universal Agency and FreeWill sufficiency remain OPEN. Its safer phrases are claim-hygiene replacements, not new positive definitions.
 
 ---
 
@@ -526,7 +528,7 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 > high `d` automatically implies moral legitimacy;
 > sage / awakened / high-d labels certify moral authority.
 
-**Guardrail**: use `d^{regulative}` or “wider consequence-bearing” unless a finite proxy is supplied. Moral legitimacy still requires non-exported friction, future selectability, affected-agent correction, and occlusion tests.
+**Guardrail**: use `d^{regulative}` or “wider consequence-bearing” unless a finite proxy is supplied. Burden distribution, future selectability, affected-agent correction and occlusion checks are non-exhaustive candidate ethical lenses inside a declared framework, not universal requirements or a complete legitimacy test.
 
 ### 2.3 `Ψ_f` as pain, grief, prediction error, moral cost, or language collapse
 
@@ -579,7 +581,7 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 > moral legitimacy follows automatically from structural coupling;
 > high-`d` agents can override lower-`d` agents by superior access.
 
-**Guardrail**: moral legitimacy requires affected-agent selectability, non-coercion, correction channels, and anti-domination constraints. Coupling is not justification.
+**Guardrail**: affected-agent selectability, non-coercion, correction channels and anti-domination are candidate evaluative dimensions in declared frameworks. They do not define moral legitimacy; coupling is not justification.
 
 ### 2.6 “Selection creates reality” / “mind creates reality”
 
@@ -641,7 +643,7 @@ Preferred compact formulation:
 | “`Ψ_f -> infinity`” | literal divergence | “felt impossibility / phenomenological divergence / unpayable-friction proxy” |
 | “grief pain is phantom limb pain” | biological identity overclaim | “grief can be modeled by phantom-limb analogy or coupling-loss proxy” |
 | “morality becomes physical self-preservation” | reduction of normativity | “coupling can make harm feedback salient; legitimacy still requires ethical tests” |
-| “freedom = modifying θ” | arbitrary parameter setting | “freedom is payably reselectable constraint rewrite that preserves future selectability” |
+| “freedom = modifying θ” | arbitrary parameter setting | “payable / reselectable constraint rewrite and preserved future-selectability are candidate dimensions for some freedom or agency models; they do not define exact FreeWill or Agency” |
 | “mind creates reality” | idealism | “manifestation depends on constrained selection plus resistance and stabilization” |
 | “No Body => No Semantics” | collapses all semantic competence into embodiment | “direct embodiment is not required for relational/inferential semantics; situated and stake-bearing significance require stronger coupling and consequence-return evidence” |
 | “language does not describe reality” | turns anti-referential critique into anti-realism | “language is not exhausted by description; it also generates and propagates context-sensitive conditions for interpretation and action” |
