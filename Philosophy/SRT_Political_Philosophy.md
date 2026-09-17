@@ -99,7 +99,7 @@ Core guardrails:
 
 > **Formula role**: historical / candidate bridge model, not a definition, measurement formula or necessary-and-sufficient theorem. `B^{asym}` denotes an operational burden proxy; it is not canonical `Psi_f` automatically. See `SRT_Social_Political_PH_SS_Guardrails.md`.
 
-* **Implication**：SRT 对合法性的优先判准不是”谁先天有权”，而是”制度是否减少封闭垄断并保留再选择能力”。
+* **Implication**：这一候选模型优先考察制度是否减少封闭垄断并保留再选择能力；这些维度不构成 SRT-wide 合法性判准。
 * **Candidate-lens clause**：Institutional type, delegation, consequence return and reselection/correction may be examined before using this model. They are neither universal necessary conditions nor jointly sufficient for legitimacy.
 
 ### Ax-Pol-4: People as Dynamic L2-Bound Collective
@@ -107,7 +107,7 @@ Core guardrails:
 \[
 \text{People}(t) \equiv \{\hat G_{\theta_i}\}_{i\in\Theta} \;\text{ under shared }\; L_2^{political}(t)
 \]
-* **Implication**：人民不是政治的形而上学起点，而是政治选择历史的结果；因此“人民意志”必须经由程序与可修正结构来读取，不能直接被任何单一主体占有。
+* **Implication**：人民不是政治的形而上学起点，而是政治选择历史的结果；在声明的反垄断／委托框架内，程序与可修正结构可作为读取“人民意志”的候选证据，任何单一主体的占有主张不自动获得代表授权。
 
 ## II. Freedom, Equality, Rights
 
@@ -167,26 +167,26 @@ Core guardrails:
 \[
 \text{Vote} \approx \text{posterior validation of } d_{tendency}
 \]
-* **Implication**：投票之所以重要，不是因为它神秘地产生真理，而是因为它为“谁仍在整合更宽关切范围”提供了低精度但必要的校准通道。
+* **Implication**：这一历史／候选模型把投票视为关于 wider-scope consequence integration 的低精度信号之一；它既非必要校准通道，也不产生真理、合法性或授权。
 
 ### Ax-Pol-12: Multi-Center Governance Hypothesis / Design Candidate
 当政治问题跨尺度、跨时间、跨领域展开时，单一中心会系统性过载并提高被 capture 的概率；多中心治理是降低现实定义权垄断的结构性需要。
 \[
 \operatorname{Polycentricity} \uparrow \Rightarrow \operatorname{CaptureRisk} \downarrow \;\land\; \operatorname{CorrectionChannels} \uparrow
 \]
-* **Implication**：分权、多中心、联邦化、地方试验与可回滚改革，不只是技术安排，而是 SRT 的反封闭结构要求。
+* **Implication**：在声明的政治框架内，分权、多中心、联邦化、地方试验与可回滚改革可作为反封闭设计候选；SRT ontology 不要求或排序这些制度。
 
 ## IV. Crisis, Sovereignty, Emergency
 
-### Ax-Pol-13: Constitutive Floor Priority in Political Conflict
-在嵌套政治冲突中，优先保护使闭合得以继续存在的构成地板，而不是仅扩展更高层支架的能力。
+### Ax-Pol-13: Candidate Constitutive-Floor Priority Model
+在声明的政治框架内，嵌套政治冲突可把保护使闭合得以继续存在的构成地板作为候选维度，与扩展更高层支架的能力共同接受评估。
 \[
 \text{Priority} \Rightarrow \text{protect constitutive floor before expandable scaffold}
 \]
-* **Implication**：国家、社群或制度可以限制成员的部分分支扩张，但不得常态性归零构成其自身的低级闭合，否则它将退化为寄生提取结构。
+* **Implication**：该框架可把常态性归零其所依赖低级闭合的安排视为候选病理风险；这不自动决定国家、社群或制度可限制哪些分支。
 
 ### Lemma-Pol-1: Candidate Emergency-Legitimacy Safeguard
-例外状态中的政治决断，其合法性不来自决断者意志本身，而来自其是否以“最小必要阻断”方式保全更多构成性存在与未来分支容量。
+在独立声明的应急规范框架内，“最小必要阻断”与对构成性存在、未来分支容量的保护可作为候选 safeguard；该模型不定义例外状态决断的合法性来源。
 \[
 \text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
 \]
@@ -291,8 +291,8 @@ SRT 的重写是：人民不是先验本体，而是：
 这点很重要。因为它意味着：
 
 - 人民意志不能被任何单一主体直接占有
-- 所谓“代表人民”，必须经过程序和反馈的不断验证
-- 一旦某个主体宣称自己是人民的天然发言人，政治病理就开始了
+- 在声明的反垄断／委托框架内，“代表人民”的主张可接受程序、反馈、作用域与撤销机制的持续复核
+- 自称人民的天然发言人可被该框架视为候选风险证据，但这一主张本身不自动完成政治病理或合法性判决
 
 ### 2.3 主权不是本体，而是现实定义权的稳定占位
 
@@ -529,7 +529,7 @@ SRT 不能简单说“阶级是历史偶然，所以不重要”；也不能直�
 
 ### 6.3 d 值扩张不能只靠统治者觉悟
 
-这里必须明确：SRT 虽然允许“窄 d → 扩 d”作为伦理成长路径，但在政治结构上，**不能把反压迫寄托为统治阶级自然觉悟。**
+这一候选政治分析不把反压迫寄托为统治阶级自然扩展 `d` 的必然结果；伦理成长语言不提供政治机制或行动要求。
 
 因为只要制度结构继续奖励：
 
@@ -575,7 +575,7 @@ SRT 吸收社会主义最强的洞见：
 
 ## 7. 国家、法律与制度：SRT 为什么既反乌托邦去国家，也反全能国家
 
-> **Local standing**：本节比较与制度方向是候选政治理论分析，不背书、反对或排序任何现实政体；SRT ontology 不单独决定国家、法律或制度的正当性。
+> **Local standing**：本节比较与制度设计只提供候选政治／制度研究方向，不背书、反对或排序任何现实政体；SRT ontology 不单独决定国家、法律或制度的正当性。
 
 ### 7.1 国家不可被简单取消
 
@@ -638,7 +638,7 @@ SRT 吸收社会主义最强的洞见：
 - 保留再选择能力
 - 降低现实定义权集中
 
-的结构要求。
+的候选研究问题。
 
 ---
 
@@ -723,13 +723,13 @@ SRT 的确会承认：
 - 哪些未来分支会被永久锁死
 - 是否还能保住继续选择的地板
 
-### 9.2 但危机中的权威只能是功能性授权
+### 9.2 应急框架中的功能性委托候选
 
-这里必须非常明确：
+在一个另行声明的应急规范框架内，可以考察：
 
-- 紧急状态中的权威可以扩大
-- 但其合法性不能从功能或 SRT 本体论自动推出
-- 不是来自人格、意志或神秘主权
+- 功能性、限域、临时且可回交的委托，是否比人格化或神秘主权更适合作为候选安排
+- 任何权限变化仍需独立授权；危机或 SRT ontology 本身不扩张权威
+- 合法性来源仍由声明的规范／政治框架判定，不能从功能、人格、意志或本体论自动推出
 
 更精确地说：
 
@@ -935,7 +935,7 @@ SRT 在这里的护栏非常关键：
 
 > 本节是独立声明政治框架内的候选设计镜头，不是 SRT-wide 政治纲领、命令或制度排名。
 
-如果把前面的理论压缩成可操作方向，SRT 的政治哲学最小纲领大概可以写成下面八条。
+如果把前面的理论压缩成待检验的研究方向，这一候选政治框架可以列出下面八个设计镜头；它们不是 SRT-wide 最小纲领。
 
 ### 12.1 保全构成地板
 声明的框架可把避免常态性归零其所依赖的低级闭合作为候选 safeguard。
@@ -968,7 +968,7 @@ SRT 在这里的护栏非常关键：
 为了防误用，最后必须把边界说清楚。
 
 ### 13.1 它不是一套现成立法细则
-SRT 提供的是生成语法与制度方向，不是立刻可套用的完整政体蓝图。
+本文提供的是生成语法与候选制度研究方向，不是立刻可套用的完整政体蓝图或 SRT-wide programme。
 
 ### 13.2 它不是任何现存体制的自动背书
 因为任何体制都可能在某些层面更开放，在另一些层面更封闭。
@@ -1061,9 +1061,9 @@ SRT 承认大规模现实生成需要 `L_2` 地板，只是否定地板的自神
 1. 本文是 SRT 与政治哲学的主线桥接文件，不构成 core primitive axiom 或 constitutive theorem 的新增来源。
 2. 本文中的制度设计、时间尺度分层、监督结构、多中心治理等命题主要属于 P3/P4：它们是强桥接与方向性建议，不是无需外部校准的自然定律。
 3. 不采纳“高整合能力 = 天然统治资格”的 technocratic 误读；不采纳“更高 d 的主体可绕过程序直接代理他人现实”的父爱主义误读。
-4. 不采纳“国家天然不正当”或“国家天然神圣”的两极推论；国家的正当性取决于其作为 `L_2` 基础设施时是否保留真实选择与再选择。
+4. 不采纳“国家天然不正当”或“国家天然神圣”的两极推论；一个声明的政治框架可把国家作为 `L_2` 基础设施时是否保留真实选择与再选择，作为候选正当性证据而非充分判据。
 5. 不采纳“结构性压迫会因为统治者自然扩张 d 值而自动消失”的乐观主义；制度若继续奖励窄 `d` 与现实定义权集中，压迫会持续再生产。
-6. 危机、战争、反恐、革命与例外状态不得把本文件中的“构成地板优先 / 最小必要阻断”解释成无限授权；其合法性只覆盖阻断所必需的部分，并以危机后回交程序结构为边界。
+6. 危机、战争、反恐、革命与例外状态不得把本文件中的“构成地板优先 / 最小必要阻断”解释成无限授权；在声明的应急框架内，最小范围与危机后回交可作为候选 safeguard，但不定义授权合法性。
 
 ## [Lineage/Source]
 

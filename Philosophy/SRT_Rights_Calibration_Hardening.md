@@ -113,11 +113,11 @@ Chinese compressed form:
 
 Even shorter:
 
-> **SRT 意义上的现实张力，是 `L_2` 稳定性与高 `d` 后果返回之间的失配。**
+> **候选诊断把 `L_2` 稳定性与 wider-scope consequence return 之间的失配视为现实张力信号；它不定义 canonical `d`，也不自动触发权利更新。**
 
 ### Boundary rule
 
-A complaint is not yet a reality tension. A local cost increase is not yet a rights-calibration trigger. A subjective feeling of unfairness is not enough. SRT-level diagnosis begins only when a structure's stability depends on hidden burden transfer, return-path failure, and loss of reselection capacity.
+A complaint is not yet a reality tension. A local cost increase is not yet a rights-calibration trigger. A subjective feeling of unfairness is not enough. Inside this exploratory model, hidden burden transfer, return-path failure, and loss of reselection capacity are candidate evidence for closer diagnosis; their conjunction is not a universal threshold or a self-executing rights verdict.
 
 ---
 
@@ -134,11 +134,11 @@ Reality tension should be handled as a graded trigger, not an all-or-nothing cat
 
 Compressed rule:
 
-> **`\Psi_f` 转嫁启动诊断，后果不返回与再选择压缩构成结构张力，高 `d` 被阻断才触发权利更新。**
+> **Burden / cost / friction proxy 转嫁、后果不返回与再选择压缩可支持结构诊断；wider-scope consequence blockage 只支持在已声明权利框架内提出校准审查。**
 
 Or:
 
-> **摩擦失衡是信号，后果断返是病灶，再选择压缩是结构伤，高 `d` 阻断是权利更新触发点。**
+> **这些维度是候选诊断证据，不是自动升级、权利生成或授权规则。**
 
 ### Boundary rule
 
@@ -148,7 +148,7 @@ T3 creates neither a right to overthrow nor a right to force calibration. Inside
 
 ## 5. T3 Calibration Procedure
 
-When T3 is triggered, the existing `L_2` agency structure does not lose all legitimacy immediately. Instead, it acquires a graded burden of calibration.
+When a declared framework registers T3 candidate evidence, the existing `L_2` agency structure does not thereby lose legitimacy or acquire an ontology-imposed duty. The framework may instead open a graded calibration review.
 
 ### K-Ladder: Candidate Calibration Responses after T3
 
@@ -175,14 +175,14 @@ K4 is not a one-step revolution rule. A declared framework may scale candidate u
 
 | Level | Update form | Trigger | SRT judgment |
 |---|---|---|---|
-| U1 | Parameter repair | local `\Psi_f` excess | symptom relief |
-| U2 | Threshold rewrite | high-`d` consequences blocked by gate rules | minimum effective T3 update |
-| U3 | Agency-layer restructuring | existing agents persistently block consequence-return | changes who may represent `L_2` selection |
-| U4 | New-right generation | old rights language cannot express the new tension | generates a new protected selection-domain interface |
+| U1 | Parameter-repair proposal | local burden / cost proxy appears excessive | candidate symptom-focused response |
+| U2 | Threshold-review proposal | wider-scope consequences appear blocked by gate rules | candidate review of threshold design |
+| U3 | Agency-layer review proposal | existing agents appear to block consequence return persistently | candidate review of delegation or representation arrangements |
+| U4 | New-interface-right proposal | old rights language appears unable to express the diagnosed tension | candidate for separate normative and institutional admission |
 
 Compressed rule:
 
-> **小张力修参数，大张力改门槛，顽固张力换代理，新型张力生权利。**
+> **U1–U4 是可供已声明框架比较的设计响应；诊断强度不自动决定升级、换代理或生成权利。**
 
 ### Boundary rule
 
@@ -206,11 +206,11 @@ M1–M3 are candidate criteria for proposing an interface right inside this fram
 
 Compressed rule:
 
-> **新权利不是因新痛苦而生成，而是因新型 `L_2` 代理结构造成了旧权利无法表达的再选择能力损失。**
+> **新型 `L_2` 代理结构、旧权利不足与难以表达的再选择损失，可共同支持提出新权利候选；它们不生成权利。**
 
 Operational rule:
 
-> **旧权利能表达，就解释旧权利；旧权利能修复，就更新旧权利；只有旧权利无法承载新型 `L_2` 张力，才生成新权利。**
+> **本筛选模型先比较旧权利解释与修复路径；若仍无法承载新型 `L_2` 张力，可提出新权利候选，并交由独立规范与制度程序决定。**
 
 Examples of possible new-right candidates, not yet final canonical rights:
 
@@ -226,20 +226,20 @@ These are candidate interfaces. They should not be treated as a closed bill of r
 
 ---
 
-## 8. Protected Object of SRT New Rights
+## 8. Candidate Protected Objects for New-Rights Proposals
 
-SRT new rights do not primarily protect arbitrary desires, unlimited preference satisfaction, or any self-declared discomfort. They protect two coupled structures:
+Within this declared design proposal, a new-right candidate may prioritize two coupled structures rather than treating arbitrary desire, unlimited preference satisfaction, or any self-declared discomfort as sufficient:
 
 1. **reselection capacity** of relevant affected subjects;
 2. **high-`d` consequence-return channels** into threshold update.
 
 Compressed rule:
 
-> **SRT 新权利保护的不是任意欲望，而是再选择能力；不是任意反馈，而是高 `d` 后果返回。**
+> **候选架构优先考察再选择能力与 wider-scope consequence return；这不是新权利的本质定义。**
 
 Or:
 
-> **众主体保再选择，高 `d` 方向入门槛。**
+> **可把相关主体的再选择与 wider-scope consequence review 作为候选保护维度。**
 
 ### Consequence-accounting for all relevant subjects
 
@@ -259,19 +259,19 @@ Correct balance:
 
 ---
 
-## 9. High-d as Coupled Selection Capacity
+## 9. Candidate Process Model for Wider-Scope Selection Capacity
 
-This section corrects a common misuse risk: high-`d` must not become an identity label, elite title, certification, or social rank.
+This section preserves a historical process-model handle while correcting a common misuse risk: it does not define canonical `d`, and high-`d` language must not become an identity label, elite title, certification, social rank, or authorization source.
 
-### Def-Highd-CoupledCapacity
+### Def-Highd-CoupledCapacity (historical candidate handle)
 
-High-`d` is not an external label. It is a coupled selection capacity generated in concrete tension fields through subject capacity and calibration process.
+This candidate model treats wider-scope selection capacity as a coupling of subject capacities and review processes in concrete tension fields. It is a deliberative/process hypothesis, not a definition of canonical `d`, political standing, or authority.
 
 Compressed statements:
 
-- **High-`d` is capacity, not title.**
-- **高 `d` 是选择能力，不是头衔。**
-- **高 `d` 不是“谁有资格”，而是“谁能承载更大选择后果”。**
+- **In this candidate model, wider-scope capacity is a process property, not a title.**
+- **这里的高 `d` 语言是过程／审议模型，不是身份或资格。**
+- **它提出如何考察更宽后果整合，不决定谁有权触达门槛。**
 
 ### Three distinctions
 
@@ -295,7 +295,7 @@ subject capacity + consequence-return procedure + reflexive review mechanism
 
 Chinese compressed form:
 
-> **高 `d` 不是某个人天然拥有，而是在主体能力与校准过程之间被持续生成。**
+> **候选假说：wider-scope consequence integration 可由主体能力与可复核过程的耦合支持；这不定义 canonical `d`。**
 
 ---
 
@@ -398,7 +398,7 @@ Hardening addition:
 
 > **Subject `d-tendency` is not an identity label or authorization source. It is a provisional statistical proxy that a declared framework may reassess through concrete selection fields and institutional procedures.**
 
-Open layer: specify when `d-tendency` may safely guide authorization scope and when it must yield to process-based reassessment.
+Open layer: test whether any validated `d-tendency` proxy adds information to a separately justified delegation decision, and specify its failure conditions. The proxy cannot itself guide or expand authorization scope.
 
 ---
 
