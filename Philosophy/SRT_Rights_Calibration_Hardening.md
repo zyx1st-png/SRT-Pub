@@ -312,7 +312,7 @@ The candidate high-`d` process model uses four links. Missing one weakens this m
 
 Compressed rule:
 
-> **高 `d` 不是被任命出来的，而是在后果采集、冲突整合、门槛修订与反身校准中生成的。**
+> **在本候选过程模型中，后果采集、冲突整合、门槛修订与反身校准可作为 wider-scope consequence integration 的研究维度；它们不定义 canonical `d`。**
 
 ### Anti-fake-high-d guardrail
 
@@ -324,7 +324,7 @@ A claimed high-`d` process fails this candidate process model if it cannot:
 
 Compressed rule:
 
-> **不能承担后果、不能整合他者、不能审查自身者，不得触达门槛。**
+> **在已声明框架内，若候选过程无法承担后果、整合相关他者或接受反身审查，这可作为反对其 threshold-access proposal 的证据；该诊断本身不决定 political standing、access 或 authorization。**
 
 This guardrail should be read as a process test, not an identity test.
 
