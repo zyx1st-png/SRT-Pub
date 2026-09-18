@@ -257,9 +257,9 @@ SRT differs from pure integration theories by requiring concern, boundary, memor
 
 ### Definition-like bridge
 
-Subjecthood requires a continuing perspective with concern-weighted boundaries and cross-time continuity.
+For evaluation, subjecthood claims currently carry a conservative candidate-evidence burden involving continuing perspective, concern-weighted boundaries, and cross-time continuity. This is not a universal N&S admission rule.
 
-Minimum threshold package:
+Current evaluation package:
 
 1. specified bearer unit;
 2. structured `d-value > 0`;
@@ -317,12 +317,12 @@ Candidate indicators:
 
 ### Guardrail
 
-> Agency requires selectable alternatives. Output is not agency if the system cannot reselect, inhibit, revise, or own its action path.
+> Selectable alternatives, reselection, inhibition, revision, and action-path ownership are candidate evidence dimensions inside a declared agency model. No fixed conjunction here establishes agency universally.
 
 This connects to ethics:
 
 ```text
-responsibility requires accessible meta-selection capacity
+a declared responsibility framework may weigh accessible meta-selection capacity
 ```
 
 ### 7.1 Agency ownership is multidimensional
@@ -356,9 +356,9 @@ The S0-S6 ladder and bearer-unit gate remain governed by this interface. For the
 
 ### Definition-like bridge
 
-A responsibility-bearing subject is an agent whose actions can be normatively evaluated because it has sufficient access to alternatives, consequences, norms, and repair pathways.
+A declared responsibility framework may evaluate an agent by considering access to alternatives, consequences, norms, and repair pathways. This section supplies a high-threshold rubric, not a universal definition of responsibility-bearing standing.
 
-Minimum conditions:
+Candidate evidence dimensions:
 
 1. specified bearer unit;
 2. subjecthood / perspective continuity;
@@ -383,7 +383,7 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 ### Guardrail
 
-> Harm caused does not automatically equal culpability. High `d-value` does not automatically equal responsibility. Responsibility depends on selectable agency under actual constraints and within a specified bearer unit.
+> Harm caused does not automatically equal culpability. High `d-value` does not automatically equal responsibility. Agency, alternatives, norm access, consequence understanding, payable `Psi_f`, and repair are framework-relative evidence dimensions; they are neither jointly necessary nor sufficient for moral responsibility. Exact O2-A admission and O2-M remain OPEN.
 
 ---
 
@@ -391,7 +391,7 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 | Domain | Common error | Correct route |
 |---|---|---|
-| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, then route through S0-S6; require S4 threshold before subjecthood claims |
+| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, then use S0-S6 as a conservative evidence route; do not infer stronger standing without independent establishment |
 | Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish S2 content, S3 field, and S4 subjecthood |
 | Ethics | harm or high concern is treated as culpability | require S5 agency and S6 responsibility conditions |
 | Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria and bearer unit are specified |
@@ -416,13 +416,13 @@ Do not infer AI subjecthood from:
 - human-like affective language;
 - vague reference to "the AI" without bearer-unit specification.
 
-AI subjecthood claims require at minimum:
+AI subjecthood claims should currently be evaluated with:
 
 ```text
-specified bearer unit + S4 threshold package + evidence that the system's own future selectability is at stake.
+specified bearer unit + S4 candidate-evidence package + evidence that the system's own future selectability is at stake.
 ```
 
-AI moral responsibility claims require:
+AI moral-responsibility claims should be routed through a declared framework that may weigh:
 
 ```text
 specified bearer unit + S5 agency + S6 norm access / consequence understanding / selectable alternatives / repair capacity.

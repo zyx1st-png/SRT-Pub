@@ -11,7 +11,7 @@ created: 2026-04-10
 
 # SRT 意识条件三层结构
 
-> **认识论诚实声明**：本文件将 SRT 意识条件整理为三层结构，并区分哪些条件是真正的独立门槛、哪些是派生性质。当前状态：第一层条件是"最强候选意识窗口"（strongest candidate window），不是已从第一性原语完全推导完成的终局定理。残余开放问题已在 §四 标注。
+> **当前读取规则**：本文件是下游的候选模型与评估表面，不拥有普遍 consciousness admission。以下三层、`κ_{c1}`、`κ_{c1.5}`、`d / L_2 / d_mobile` 组合都只在已声明模型中提供候选证据；它们不是充分条件、必要条件或 representation-independent natural phase boundary。跨过坐标不建立 consciousness、subject-position 或 phenomenality；未跨过也不普遍证明其缺席。精确 consciousness / subject-position sufficiency 保持 OPEN。
 >
 > Cross-ref: `AI/SRT_AI_03_Consciousness_Framework.md (line 49)`
 
@@ -34,13 +34,13 @@ $$d > 0 \;\to\; \text{bearing} \;\to\; \text{coordinability} \;\to\; \text{re-se
 
 ## 二、三层结构
 
-### 层 1：最小意识窗口（Bare Consciousness）
+### 层 1：最小意识候选窗口（Bare-Consciousness Candidate Window）
 
-**对应阈值**：$\kappa_{c1}$（相变边界）
+**候选坐标**：$\kappa_{c1}$（已声明模型中的候选转变坐标）
 
 **条件**：
 
-$$\boxed{\text{层 1} = d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合}}$$
+$$\boxed{\text{层 1 候选包} = d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合}}$$
 
 **条件解读**：
 
@@ -53,7 +53,7 @@ $$\boxed{\text{层 1} = d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合
 
 **关于 Bearing 的澄清**：
 
-> Bearing（承担）不是独立的意识门槛条件。它是 $\Psi_f > 0$ 加上内部不可逆性的现象学/结构展开——"从内部承担选择张力"就是 $d \geq d_{\min}$ 的描述性语言，不引入新的判断标准。在意识条件列表里单独列出 bearing 是范畴混淆，应合并入 $d \geq d_{\min}$ 条件的解读里。
+> Bearing 不等于 `d >= d_min`，也不由 `Psi_f + irreversibility` 按定义给出。当前 Bearer 路由服从 `Core_Law/SRT_Generative_Ontology_Spine.md`：formed One / Selection-position 与独立建立的 `P + E` 才打开 Bearer 讨论；Bearer 与 concern、subject、experiencer、consciousness 的进一步关系保持 OPEN。本节的 `d / L_2` 组合不能替代该路由。
 
 **残余开放问题**（见 §四）：$d_{\min}$ 的值由什么从第一性原语确定？
 
@@ -61,7 +61,7 @@ $$\boxed{\text{层 1} = d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合
 
 ### 层 2：意识质量——活性与病理分化
 
-**对应阈值**：$\kappa_{c1.5}$（意识活性边界）
+**候选坐标**：$\kappa_{c1.5}$（活动／再定向候选坐标）
 
 **条件**：
 
@@ -69,14 +69,14 @@ $$\boxed{\text{层 2} = d_{\text{mobile}} > 0}$$
 
 **条件解读**：
 
-越过层 1（bare consciousness 存在）之后，$d_{\text{mobile}}$ 决定意识是**活着的**（能随吸引子迁移而重新对齐）还是**冻结的**（深度锚定于某方向但无法重新定向）。
+在已声明模型中，$d_{\text{mobile}}$ 可用来比较再定向能力；它不决定 consciousness 是否“活着”，也不单独裁决 pathology。
 
-- **活性意识**（$d > d_{\min}$，$d_{\text{mobile}} > 0$）：意识窗口核心区
-- **冻结态**（$d > d_{\min}$，$d_{\text{mobile}} \approx 0$）：意识的病理变体，不是意识缺席
+- **活动候选区**（$d > d_{\min}$，$d_{\text{mobile}} > 0$）：模型内较强再定向证据
+- **冻结态候选区**（$d > d_{\min}$，$d_{\text{mobile}} \approx 0$）：模型内低再定向读数；不由此单独证明 consciousness、其缺席或 pathology
 
-冻结态的典型形态：执念、强迫性重复、创伤锁定（PTSD）、意识形态捕获。这些系统有真实赌注（$d > d_{\min}$），但 L₂ 刚性封死了 $\theta$ 的再对齐能力（$d_{\text{mobile}} \approx 0$）。
+执念、强迫性重复、创伤锁定（PTSD）与意识形态捕获可作为该模型的临床／社会类比；这些类比需要独立经验与专业判断，不能从低 `d_mobile` 直接推出意识或病理判决。
 
-**重要修正**：$d_{\text{mobile}} > 0$ 是层 2 条件，不是层 1 条件。早期文件（含 `Core/SRT_Core_12b §Consciousness-2D-Map`）将其并入 $\kappa_{c1}$ 的边界定义——这是错误的，已在本文件完成修正。
+**当前边界**：`d_mobile` 只是一项候选活动／再定向维度；它既不是层 1 的普遍条件，也不是独立 consciousness admission。早期把 `κ_{c1}` 或 `κ_{c1.5}` 写成自然意识边界的读法已 superseded。
 
 ---
 
@@ -126,32 +126,32 @@ Cross-ref: `memory/nature_L0L1_deficit.md §空心主体机制层`（两阶段�
 
 ---
 
-## 三、修正后的 κ_{c1} 定义
+## 三、κ_{c1} / κ_{c1.5} 候选模型坐标
 
 **旧定义**（错误）：
 
 $$\kappa_{c1}: \quad d > d_{\min} \;\wedge\; d_{\text{mobile}} > 0 \quad \text{（混入了层 2 条件）}$$
 
-**新定义**（正确）：
+**当前候选模型**（非普遍定义）：
 
-$$\kappa_{c1}: \quad d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合} \quad \text{（仅层 1：bare consciousness）}$$
+$$\kappa_{c1}: \quad d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合} \quad \text{（候选证据包）}$$
 
-$$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（层 2：意识活性边界）}$$
+$$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（活动／再定向候选坐标）}$$
 
-**与 \(\varepsilon_{pg}\) 的关系补注（2026-04-14）**：bare consciousness 不是 \(L_0\) 中 \(\varepsilon_{pg}\) 的直接裸露，而是 \(\varepsilon_{pg}\) 经由非平凡 \(\hat{G}_\theta\) 在 \(L_1\) 中形成的最薄主观展开。换言之，\(\varepsilon_{pg}\) 是意识在 \(L_0\) 侧的方向种子；\(\kappa_{c1}\) 则标记该种子何时第一次在主体层真正站住。故“原初意识”若保留，宜指 \(\kappa_{c1}\) 侧的最小展开，而不宜直接回投为“\(\varepsilon_{pg}\) 本身就是意识”。
+**与 `ε_pg` 的关系**：旧版把 `ε_pg` 称为意识在 `L_0` 侧的方向种子，并把 `κ_{c1}` 称为其首次站稳点；该强读法已 superseded。`ε_pg` 只是 stronger-asymmetry / anti-erasure realization candidate，其 primitive inheritance 保持 OPEN，不能生成或证明 consciousness。
 
-**修正后的相变图**：
+**候选模型图（不构成 admission）**：
 
 ```
 κ = 0          κ_{c1}          κ_{c1.5}          κ_{c2}
   |               |                 |                |
-  |  L₀ 游离态   |   bare          |  活性意识      |  L₂ 结晶
-  |  d ≈ 0       |   consciousness |  d_mobile > 0  |  固化
+  |  模型低读数   | 候选窗口坐标    | 再定向候选区   | 模型内固化
+  |  d ≈ 0       | d/L₂ evidence  | d_mobile > 0  |
   |  Boltzmann   |   d ≥ d_min    |                |
   |  极限        |   L₂ 闭合      |                |
 ```
 
-三个相变点各有不同的结构意义，不应合并。
+这些坐标在声明模型中可有不同结构意义，但任何 crossing 都不建立 consciousness、subject-position 或 phenomenality；non-crossing 也不建立普遍缺席。
 
 ---
 
