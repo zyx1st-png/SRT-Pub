@@ -155,7 +155,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 主文件：`Philosophy/SRT_Political_Rights.md`
 - id：`SRT-POLITICAL-RIGHTS`
 - layer：L1 / epistemic：bridge / status：draft_v1
-- 说明：从SRT第一性原理推导权利的本体论定义；建立以决策d值为核心的授权合法性框架；分析投票作为d倾向后验验证的机制；提出三层制度结构（公检法/监督机构/授权主体）
+- 说明：Political Rights 是 L1 bridge / candidate political model。它通过声明的 framework-relative diagnostics 研究权利、delegation 与 voting；d-based authorization 与 voting calibration 仅是历史 / candidate models，不是从 SRT 第一性原理推导出的政治权利本体论、政治 standing 或 legitimacy。
 - 与SRT-SOC-ECONOMICS的关系：兄弟关系，后者处理市场与经济不平等，本文件处理政治权利与制度授权
 - 重要追加：d值范畴澄清（决策属性非主体属性）已同步写入 `_SRT_D_VALUE_CANONICAL.md §范畴边界`
 - 开放问题：监督机构自身d验证完整机制、d倾向准入窗口规格（见文件§10）

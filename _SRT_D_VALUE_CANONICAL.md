@@ -716,28 +716,26 @@ $$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
 
 **Cross-ref**: `Core/SRT_Core_PhaseState_TripleCondition.md §5`；`Core/SRT_Core_NormativeGradient.md §6`。
 
-### §10.4 d 值在社会delegation场景中的显现（2026-04-10 新增）
+### §10.4 d 值在社会 delegation 场景中的显现（social-delegation candidate bridge）
 
 > **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
+>
+> **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
 
-**d扩展作为社会自发支撑的机制基础**：
+在声明的社会 delegation 模型中，d 扩展可以作为一个可观察的候选维度，研究它是否与自发支撑、脚手架撤回或协调变化共同出现：
 
-$$\text{d扩展} \xrightarrow{\text{必然}} \text{对更高阶结构的自发支撑}$$
+$$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
 
-个体G对集体高阶结构的自发支撑不是义务，而是d扩展后的自然产物。d不足时需要外部脚手架（引导性delegation）；d充分扩展后，外部G退出，底层自发支撑实现。
+这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
 
-**d轨迹作为delegation合法性的验证信号**：
+**d 轨迹作为候选观察信号**：
 
-社会层面的d值判断系统以被干预G群体的d轨迹为核心信号：
+| d 轨迹 | 声明模型中的候选读法 | 边界 |
+|---|---|---|
+| 被干预群体 d 在可观测时间窗内增长 | 可作为干预目标改善的一个候选信号 | 不等于 legitimacy、moral progress 或 real uplift |
+| 被干预群体 d 停滞或收缩，介入方 d 扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture 的普遍判决 |
 
-| d轨迹 | 解读 |
-|---|---|
-| 被干预群体d在可观测时间窗内增长 | 引导性介入（真实提升方向） |
-| 被干预群体d停滞或收缩，介入方d扩展 | 方向截获（殖民/威权结构） |
-
-历史上的殖民主义、威权主义和宗教征服 = d的转移（被干预者d压缩，介入者d扩展），而非d的净增长。SRT的判断标准：d净量变化，不是分布变化。
-
-**d在多G协调场景中的显现**：共享L0/L1结构为多G提供d兼容性下限（可能性条件）；跨G残差张力驱动d轨迹向更高阶协调方向调整（动力学机制）。
+历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 d 的分布或净量变化单独定义其道德或政治结论。三项指标、reselectability、d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
 
 **Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
 

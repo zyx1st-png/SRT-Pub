@@ -73,6 +73,8 @@ $$R_{ij} = \min(d_i[j], d_j[i])$$
 
 ### T-Soc-1: Alienation Theorem (异化定理)
 
+> **Scope guard（WTC-70）**：本节是声明式社会模型中的 proxy / candidate diagnostic。`d` 不是 Agency；`d_i · γ_i` 不是全理论的 Agency 定义；`Rigidity(L_2) > Agency` 不是对主体异化的普遍充分条件。它只在明确声明的操作化模型与时间窗内提供可检验的方向性假设。
+
 > **[R]** 异化概念：Marx（1844《经济学哲学手稿》，劳动者与劳动产品/类本质的分离）、Weber（铁笼/形式合理性压制实质合理性）、Bourdieu（惯习与场域失配导致失语）——均为R基础。**[H]** SRT 将异化形式化为 θ-空间的动力学过载条件，并给出双干预靶点的精确操作化。
 
 **Formal Definition**:
@@ -85,7 +87,7 @@ $$
 $$
 其中：
 - **$\eta(L_2)$**（**[H — 操作化候选]**）：系统的迟滞系数（Hysteresis，→ `SRT_Social_MacroDynamics.md` §6.5），度量制度/文化网络抵抗拓扑更新的硬度。操作化候选：① 制度变革频率的倒数（制度越少更新 → η越高）；② 跨阶层流动率的倒数（社会固化 → η高）；③ 媒体多样性指数的倒数（信息生态封闭 → η高）。与 $\eta_{visc}$（→ SRT_Core_12b §L₂机制）的联结：$\eta(L_2) \approx \Psi_f^{harden}/\Psi_f^{baseline}$（硬化摩擦/基线摩擦比值）。
-- **$P_{adapt}^{(i)}$**（**[H — 操作化候选]**）：个体的可塑性带宽（Plasticity Bandwidth），近似定义为 $P_{adapt}^{(i)} \equiv d_i \cdot \gamma_i$（个体的关切维度上限 $d_i$ 与其参数更新率 $\gamma_i$ 的乘积）。$\gamma_i$ 操作化候选：认知弹性测试分数（WCST持久性错误的倒数）；θ更新速率 = 态度/行为改变量/暴露时间（追踪研究）。
+- **$P_{adapt}^{(i)}$**（**[H — 操作化候选]**）：在声明的社会模型中，一个可塑性带宽 proxy，可近似写作 $P_{adapt}^{(i)} \equiv d_i \cdot \gamma_i$（模型内的关切维度摘要与参数更新率的乘积）。这不是 Agency 的理论定义；$\gamma_i$ 的测量仍需独立操作化，例如认知弹性测试分数或追踪研究中的态度/行为改变量。
 - **$H \to 0$（输出熵趋零）的实验代理**：行为多样性指数下降（相同场景下应对策略趋同）；创造性输出减少（原创想法数量/质量）；自我报告"无选项感"量表（如CORE量表异化分量表）。
 
 **Mechanism & Implication (机制与推论)**：
@@ -95,7 +97,7 @@ $$
 
 > **P_adapt精度边界**：$P_{adapt}^{(i)} \equiv d_i \cdot \gamma_i$ 为线性乘积近似。边界情况：(1) 当 $d_i \to 0$（极端封闭/抑郁状态），$P_{adapt} \to 0$，任何 $\gamma_i$ 提升均无效（需先提升 $d_i$）；(2) 当 $\gamma_i \to \infty$（过高学习率/高冲动性），$P_{adapt}$ 并不单调增加，过快更新可能破坏L₂稳定性（需引入上界约束 $\gamma_i \leq \gamma_{max}$）。乘积形式仅在 $d_i \in (d_{min}, d_{max})$ 且 $\gamma_i$ 有界时有效。
 
-*(在 $\eta \gg P_{adapt}$ 的压倒性系统不等式面前，任何要求个体"自我调节"或"提高主观能动性"的干预，在物理上都是无效的。)*
+> 在声明模型中，$\eta \gg P_{adapt}$ 可作为“结构刚性超过当前适应 proxy”的候选诊断；它不自动给出主体异化、Agency 缺失或某种普遍干预结论。
 
 > * **FC-Soc1-1**（证伪条件）：若η(L₂)高的社会（社会流动率下四分位，跨≥20国比较）中个体行为多样性指数（如职业轨迹熵/文化消费多样性）在控制经济水平（人均GDP）后与η低社会无显著差异（Cohen's d < 0.2），则T-Soc-1的η→H↓中心联结失效，η效应可能由经济因素完全中介。
 > * **FC-Soc1-2**（证伪条件）：若UBI实验组（≥12个月，≥200人）在控制收入效应后（与等额有条件转移对照组比较），行为多样性/自主创业率/学习新技能频率没有显著高于对照组（p>0.05），则"UBI→d值释放→P_adapt↑"的因果链受质疑，效应可能纯属收入而非具身安全感的d值解放。
@@ -177,17 +179,17 @@ $$ L_2(t+1) = \text{Integrate}(L_1(t)); \quad L_1(t) = \hat{G}_{\theta(L_2)}(L_0
 
 ### T-Soc-1: 异化定理 (Alienation)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-当 $L_2$ 的硬度超过个体 $\hat{G}_i$ 的能动性时，产生异化（主体丧失对现实结构的选择权）。
+在声明的社会模型中，当 $L_2$ 的刚性 proxy 超过个体适应 / 更新 proxy 时，可以把结构性异化风险作为候选诊断；这不等于主体必然丧失选择权，也不把 `d` 直接定义为 Agency。
 
 **操作化定义**：
 - $\text{Rigidity}(L_2) \equiv P_{L_2}$：$L_2$ 可塑性代价（Ax-L2-04）；等价地，$\text{Hardness}(L_2) \propto \|\mathcal{C}\|_\infty$（网络连接谱最大特征值，Ax-TOPO-1）。Rigidity 越高，改变 $L_2$ 所需 $\Psi_f$ 越大。
-- $\text{Agency}(\hat{G}_i) \equiv d_i \cdot \left\|\partial\theta_i/\partial\text{PredError}\right\|$：个体 $d$ 值（关切带宽）与 $\theta$ 参数更新速率的乘积——能看到更多（$d_i$ 大）且能学习更快的算子抵抗力更强。
+- $d_i \cdot \left\|\partial\theta_i/\partial\text{PredError}\right\|$：一个声明式社会模型中的 candidate adaptation / resistance proxy；它不定义 $\text{Agency}(\hat{G}_i)$，也不意味着更高 $d_i$ 就普遍具有更强 Agency。
 
-$$\text{Alienation}_i \Leftarrow \text{Rigidity}(L_2) > \text{Agency}(\hat{G}_i)$$
+$$\text{CandidateAlienationRisk}_i \Leftarrow \text{Rigidity}(L_2) > d_i \cdot \text{UpdateRate}_i$$
 
-> **说明（⟸ 而非 ⟺）**：Rigidity > Agency 是异化的**充分条件**（可以从此推出主体感受到选择丧失），但不是必要条件——某些异化状态（如意识形态认同导致的自愿服从）即使 Agency 足够也可能出现。故将双条件降级为单向蕴含。
+> **说明**：上式只是模型内的方向性候选诊断，不是异化的普遍充分条件或必要条件。某些异化状态可能在该 proxy 较高时仍出现，是否存在主体层选择丧失需独立建立。
 >
-> **与 Def-L2-Normative 的关系**：T-Soc-1 是个体层异化；Def-L2-Normative 的**退化 L₂**（$dS/dt < 0$）是集体层异化——当 $L_2$ 开始系统性压缩种群选择空间，即集体版本的 Rigidity > Agency。个体层和集体层异化相互强化：退化 $L_2$ 削弱各个 $d_i$（选择带宽被压缩），进一步降低 Agency，加速走向绝境。
+> **与 Def-L2-Normative 的关系**：T-Soc-1 是个体层异化的候选模型；Def-L2-Normative 的**退化 L₂**（$dS/dt < 0$）可作为集体层结构压缩的候选指标。个体层和集体层的相互强化仍需在声明模型与数据中检验，不能由 $d$ 自动推出 Agency 或主体结论。
 > **Cross-ref**: Ax-L2-04（可塑性阈值）→ `Core/SRT_Core_12b_Ontology_L2.md §Ax-L2-04`；Def-L2-Normative（退化 L₂）→ `Core/SRT_Core_12b_Ontology_L2.md §III`。
 
 ### T-Soc-2: 革命动力学 (Revolution Dynamics)
@@ -434,7 +436,7 @@ $$S_{opt} = f(d_{avg}, \text{External Threat}, \text{Technology})$$
 
 ---
 
-### 6.2 民主的熵稳定条件
+### 6.2 民主的熵稳定条件（历史 / 经验候选模型）
 
 > [R→Schmitt 1922 *Politische Theologie*（例外状态理论：危机/战时的"主权决断"导致法制暂停→威权收敛，民主脆弱性的政治理论基础）; Acemoglu & Robinson 2006 *Economic Origins of Dictatorship and Democracy*（民主-威权转换的政治经济学：外部冲击/战争威胁作为威权化驱动因素的跨国实证）; Gurr 1970 *Why Men Rebel*（政治不稳定的社会熵模型：社会系统在高应力下的结构简化）; Dahlberg & Linde 2021 *Government and Opposition*（战时民主压缩实证：COVID-19期间行政权集中化的跨国比较）]
 
@@ -442,7 +444,7 @@ $$S_{opt} = f(d_{avg}, \text{External Threat}, \text{Technology})$$
 - [R] 例外状态下的威权化历史规律（Schmitt/Acemoglu/Gurr）；战时/危机下民主压缩的实证研究（Dahlberg&Linde COVID-19数据）
 - [H] **SRT熵稳定形式化**：将民主稳定条件映射为dS_soc/dt≈0且S_soc∈[S_min,S_max]；冲击→降熵方程[H]
 
-民主制度要求：
+以下条件只可作为历史 / 经验研究中的候选模型，不是民主的必要或充分条件，也不定义政治合法性：
 
 $$\frac{dS_{soc}}{dt} \approx 0 \quad \text{且} \quad S_{soc} \in [S_{min}, S_{max}]$$
 
@@ -457,7 +459,7 @@ $$S(t+1) = S(t) - \alpha \Delta E_{shock}$$
 
 这解释了"民主国家在战时趋向威权"的历史规律（实证基础：WWII/911后/COVID-19期间的跨国民主压缩数据，Dahlberg&Linde 2021）。
 
-**与SRT参数联结**：威权化=S_soc骤降↔κ升至κ_c2以上（L₂固化）→OAI↑（Def-L2-OAI-1）→恢复民主所需的ΔE_barrier升高；见§3.1现实迟滞。
+**与SRT参数联结**：在声明的历史 / 经验模型中，可检验威权化与 $S_{soc}$ 变化、$\kappa$ 或 $L_2$ 固化 proxy 的关联；这些关联不是政治合法性的本体论判据。
 
 **可证伪预测**：
 - FC-DemocEntropy1-1：跨国面板数据中，外部冲击强度（战争/疫情严重程度）与民主压缩幅度（ΔS_soc）的相关应为正；且α（降熵速率）应与前期S_soc水平负相关（初始熵越高的民主体→降熵更缓慢，即健康民主更有韧性）——若ΔS_soc与冲击强度无关则SRT熵冲击机制失败
@@ -465,16 +467,16 @@ $$S(t+1) = S(t) - \alpha \Delta E_{shock}$$
 
 ---
 
-## §7. 道德进步的 d 值理论 (Moral Progress via d-Expansion)
+## §7. 道德进步的 d 值候选假设 (Candidate Moral-Progress Hypothesis)
 
 ### 7.1 道德相对主义的困境
 
 如果道德只是 $L_2$ 的文化惯例，我们如何批判纳粹或奴隶制？
 
-**SRT 解答**:  
-道德进步不是发现"绝对真理"，而是 **$d$ 值的系统性扩张**：
+**候选历史 / 伦理研究假设**：
+更广的已承认关切范围可以作为声明规范框架中的一个研究维度；但 **$d$ 扩张本身不建立道德进步、善或 O2-M**：
 
-$$\text{Moral Progress} \equiv \lim_{t \to \infty} d(t) \to \infty$$
+$$\text{CandidateConcernExpansion}(t) := d(t)\ \text{trajectory under a declared model}$$
 
 | 时代 | $d$ 值范围 | 道德边界 |
 |:-----|:-----------|:---------|
@@ -484,17 +486,16 @@ $$\text{Moral Progress} \equiv \lim_{t \to \infty} d(t) \to \infty$$
 | **全球化时代** | $d \approx 10^9$ | 关心全人类 |
 | **未来?** | $d^{regulative} \to \infty$ | 更少排除有情众生的后果 |
 
-**关键预测**:  
-道德进步与 $d$ 值扩张同步。任何试图"回归传统道德"的运动，本质是**试图压缩 $d$ 值**。
+**边界**：$d$ 轨迹可进入历史 / 伦理比较，但不自动与道德进步单调对应；“回归传统”也不能仅凭 $d$ 变化被定义为道德压缩或倒退。
 
 ---
 
 ### 7.2 可证伪判据
 
-如果 SRT 道德理论正确，应观测到：
+若将其作为候选历史 / 伦理模型，可检验：
 
 1. **历史趋势**: 随时间推移，纳入道德关切的实体范围扩大（女性、儿童、动物、AI？）
-2. **教育效应**: 高等教育应提升 $d$ 值，从而扩大道德圈
+2. **教育效应候选**: 在声明的测量模型中，高等教育可能与更广的关切范围相关；该相关不等于道德进步证明
 3. **神经相关**: fMRI 研究应发现道德关切激活的脑区与 $d$ 值相关区域重叠
 
 **反例**:  
@@ -567,13 +568,13 @@ _SRT_Soc_Axioms ← 你在这里
 - **社会事实 $L_1^{social}$**：交叠选择的稳定交集，在 $L_1$ 层呈现为"客观"现实。
 - **制度 (Institution)**：$L_2$ 吸引子景观中的势能谷，由对称群大小与支持者数量共同决定硬度。
 - **承认算子 $R_{ij}$**：两算子 $d$ 值的最小互投，社会合作的最低拓扑通道。
-- **道德进步**：$d$ 值随时间单调扩张，纳入更广范围的有情众生。
+- **道德进步候选维度**：在声明规范框架中，更广的关切范围 / $d$ 轨迹可作为历史与伦理研究维度；$d$ 扩张本身不定义道德进步、善或 O2-M。
 
 ### Formalization Summary (形式化概述)
 
 - 集体算子：$\hat{G}_{social} = \mathcal{C}(\{\hat{G}_i\}_{i=1}^N)$，社会是高阶选择算子的涌现态。
 - 结构-行动循环：$L_2(t+1) = \text{Stabilize}(L_1(t));\; L_1(t) = \hat{G}_{\theta(L_2)}(L_0)$，结构与行动互为因果。
-- 异化判据：$\text{Alienation} \iff \text{Hardness}(L_2) > P_{L_2}^{(i)}$，异化是结构刚性超过个体可塑性阈值的函数。
+- 异化候选诊断：声明模型中的 `Hardness(L_2) > P_{adapt}^{(i)}` 可作为结构性异化风险 proxy；它不是普遍充分条件，且 $d$ 不是 Agency。
 - 承认通道：$R_{ij} = \min(d_i[j], d_j[i])$，去人化等同于通道断裂。
 
 ### Mechanism Explanation (机制解释)
@@ -581,7 +582,7 @@ _SRT_Soc_Axioms ← 你在这里
 - $\hat{G}_\theta$ 在 $L_0$ 中执行选择产生 $L_1$；多算子 $L_1$ 交集经统计稳定后沉淀为 $L_2$（制度、规范）。
 - $L_2$ 反过来约束各算子的 $\theta$ 参数空间，形成"结构-行动"耦合回路（Ax-Soc-3）。
 - 当 $L_2$ 刚性过高，个体 $\hat{G}_i$ 无法在 $L_0$ 中探索新可能性，$\Psi_f$ 累积至异化阈值。
-- $d$ 值扩张通过归化（Oikeiôsis）将他者纳入关切范围，降低系统总摩擦，推动道德进步。
+- $d$ 值扩张可在声明规范框架中作为“更广关切”的一个候选维度研究；它不单独推出道德进步、善或 O2-M。
 - 革命是 $L_0$ 潜能突破僵化 $L_2$ 的相变事件，社会拓扑在临界点重排。
 
 ## 【理论边界/防误用声明】
