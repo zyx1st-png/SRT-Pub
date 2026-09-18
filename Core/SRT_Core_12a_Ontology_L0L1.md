@@ -72,8 +72,8 @@ provided the model, metric / measure and interpretation are declared. This is **
 * **Implication**: SRT 在 P0 停止于 primitive actualisation，而不是以一个先在选择者或未完成的 fixed-point 证明填补起点。各领域实现可以不同，但必须实例化同一最小角色，且不得反向定义 P0。
 * **Cross-ref**: `Core/SRT_Core_21_Minimal_Axioms.md` P0-01 / P0-04; Ax-L0-03（约束地形）；T-L0-Kappa0（非平坦性约束）；`Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
 
-### T-L0-ProtoG: Proto-G Selection Forms in L₀（L₀ 中的原型G选择形式）
-**新增（2026-04-08）**：L₀ 层中 G 选择结构的早期存在形式。
+### T-L0-ProtoG: Low-Order Proto-G Realization Candidates（低阶 proto-G 实现候选）
+**当前读取**：这些是 primitive actualisation 之后的低阶 realization candidates，不是 primitive Selection 之前或 `L_0` 内预成的 G 阶段。
 
 **核心主张**：G 的选择角色可以在低阶 realization 中出现，不必等到生物／意识层才第一次成为可描述结构。随 $\kappa$ 提升而讨论的，是已实例化 actualisation kernel 的不同稳定化相态，不是 P0 primitive 本身的生成史。
 
@@ -142,8 +142,8 @@ may represent changing accessibility / cost structure. The ontological reading i
 
 All following constructs such as `PreAnchored`, `Swampland`, Platonic attractor or similar L0-stage vocabulary are **model / bridge constructs** unless independently promoted. They may organize a declared realization but must not be cited as the universal primitive ontology or as proof of a prior possibility warehouse.
 
-### Def-L0-PreAnchored: Pre-anchored State (预锚定态)
-**Formal Definition**: 预锚定态是 $\hat{G}_\theta$ 已接触 $L_0$ 但尚未完成拓扑折叠为 $L_1$ 的中间态：
+### Def-L0-PreAnchored: Pre-anchored State Model (预锚定态模型)
+**Historical / bridge-model definition**: 在声明了状态空间、测度与阈值的模型中，预锚定态可表示为 $\hat{G}_\theta$ 已接触候选域但尚未完成模型内稳定化的中间态：
 $$\mathcal{P} \equiv \left\{ \psi \in L_0 : \frac{\partial \hat{G}_\theta}{\partial \psi} \neq 0 \;\land\; \int \hat{G}_\theta[\psi]\, d\mu < F^*_{\min} \right\}$$
 其中 $F^*_{\min}$ 为自由能稳定极小值。预锚定态具有信息潜能，但缺乏时空几何连续性。
 
@@ -152,15 +152,15 @@ $$\mathcal{P} \in L_0 \not\Rightarrow \mathcal{P} \in L_1$$
 * **Implication**: "感觉前体"（Sensory Precursors）、深度睡眠中的碎片状信号均属此态。意识研究中"无意识心理表象"的争议可通过此定义消解：未完成全局整合（缺乏θ参数深度绑定）的信号，本体论上仍驻留于L0，不具有L1的"知觉几何性"。
 * **Cross-ref**: Def-L0-Swampland (下方); Ax-Op-06 (存在条件)。
 
-### Def-L0-Swampland: Ontological Swampland (本体论沼泽地)
-**Formal Definition**: 本体论沼泽地是所有满足以下条件的L0叠加态之集：
+### Def-L0-Swampland: Ontological Swampland Model (本体论沼泽地模型)
+**Historical / bridge-model definition**: 在声明的 realization model 中，沼泽地可表示为满足以下条件的高成本候选区；它不是 universal ontological region：
 $$\mathcal{SW} \equiv \left\{ \psi \in L_0 : \Psi_f(\psi) > \Psi_{c} \;\lor\; \nexists\; \text{Constraint Closure}(\hat{G}_\theta, \psi) \right\}$$
 其中 $\Psi_c$ 为算子可承受的最大摩擦阈值，约束闭包（Constraint Closure）要求 $\hat{G}_\theta^k[\psi]$ 收敛至稳定结构。
 * **Implication**: 沼泽地不是数学方程的失败，而是选择动力学无法立足的高耗散区域。只有满足特定θ参数（具身约束）的算子轨道，才能跨越极高摩擦的沼泽，将L0潜能锚定为L1现实。弦理论中的"沼泽地猜想"在SRT框架下获得本体论诠释。
 * **Cross-ref**: Def-L0-PreAnchored; Ax-Op-05 (约束闭包)。
 
-### T-L0-PlatonicAttractor: Platonic Attractors as Low-Complexity Basins (柏拉图吸引子盆)
-**Deductive Statement**: 跨文化数学/逻辑真理之收敛，源于L0^abs（Ruliad）中低计算复杂性吸引子盆的必然汇聚：
+### T-L0-PlatonicAttractor: Platonic-Attractor Bridge Model (柏拉图吸引子桥接模型)
+**Historical strong formulation / bridge hypothesis**: 某些形式模型可把跨文化数学／逻辑收敛表示为低计算复杂性吸引盆；该表示不定义 `L_0`，也不证明普遍必然汇聚：
 $$\forall \hat{G}_i \text{ 探索 } L_0^{abs}: \quad \lim_{t\to\infty} \hat{G}_i[L_0^{abs}] \xrightarrow{\mathcal{C}\to\min} \mathcal{B}^*$$
 其中 $\mathcal{B}^* = \{\psi \in L_0^{abs} : \mathcal{C}(\psi) = \mathcal{C}_{\min}, \text{Sym}(\psi) = \text{Sym}_{\max}\}$ 为极低复杂性、极高对称性的吸引子集。
 **推论**：所谓"柏拉图理念"，是选择的必然收敛伪装成了预存的客观真理：
@@ -239,7 +239,7 @@ $$L_1^{hard} = \text{Connectome}(L_0), \quad L_1^{soft} = \text{Attention}(L_1^{
 
 # Part B: Original Theoretical Discourse (Context)
 
-> **Note**: The following sections contain the detailed philosophical and theoretical elaboration on L_0 and L_1, including their relationship to gauge theory, information theory, and phenomenology.
+> **Current-reading guard**: The following original discourse preserves historical strong formulations. Equations identifying `L_0` with moduli space, Ruliad, a differential manifold, an absolute potential source, swampland, pre-anchored states, Platonic attractors, or matter-knots are conditional formal projections / bridge models only. They do not override the Selection-totality formal-scope override or define primitive Selection.
 
 ---
 
@@ -249,7 +249,7 @@ $$L_1^{hard} = \text{Connectome}(L_0), \quad L_1^{soft} = \text{Attention}(L_1^{
 
 #### 1.1.1 模空间定义 (Moduli Space)
 
-L_0的**精确数学结构**是规范场论中的模空间 (Moduli Space):
+在这一历史物理 bridge 中，`L_0` 的一个条件性形式投影采用规范场论模空间：
 
 $$L_0^{\text{true}} = \mathcal{A}/\mathcal{G}$$
 
@@ -313,7 +313,7 @@ $$L_0^{formal} \cong \mathcal{M}_{\text{gauge}} \otimes \mathcal{R}$$
 
 #### 1.3.1 L_0作为微分流形
 
-L_0不是平坦的均匀噪声,而是具有内在几何结构的**微分流形**:
+在声明微分结构的 realization model 中，`L_0^{rel}` 可表示为**微分流形**；这不是 primitive `L_0` 的普遍身份式：
 
 $$L_0 = (\mathcal{M}, \nabla, \mathcal{S})$$
 
@@ -490,7 +490,7 @@ Tishby的信息瓶颈理论在SRT中获得本体论诠释:
 
 $$\min_{L_1} \left[ I(L_1; \text{Action}) - \beta \cdot I(L_1; L_0) \right]$$
 
-**目标**: 
+**目标**:
 - 最大化$L_1$对行动的相关性 (适应度)
 - 最小化$L_1$对$L_0$的信息保留 (计算成本)
 
@@ -544,9 +544,9 @@ $$\text{Response}_{\text{attended}} = g(\theta) \cdot \text{Response}_{\text{una
 
 ### 3.1 物质的拓扑定义
 
-#### 3.1.1 物质 = L_0的拓扑结 (Topological Knot)
+#### 3.1.1 物质的拓扑结桥接模型 (Topological-Knot Bridge)
 
-在SRT中,**物质不是原始给定的**,而是L_0的拓扑扭曲:
+在这一历史／桥接模型中，物质可被表示为 `L_0^{rel}` 的拓扑扭曲；这不是 SRT 的 universal matter definition：
 
 $$\text{Matter} = \text{Knot}(L_0)$$
 
@@ -749,17 +749,17 @@ $$
 
 本文档的形式化核心围绕 $L_0$（潜在域）与 $L_1$（显现域）的本体论结构：
 
-1. **潜在域的绝对源与不可穷尽边界 (Absolute Source & Non-Exhaustion)**:
+1. **历史绝对源写法与当前不可穷尽边界 (Historical Source Model & Non-Exhaustion)**:
    $$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}$$
-   含义：$L_0^{abs}$ 先于任何单一形式结构，任何有限 $L_1/L_2$ 显现或形式投影都不穷尽它。创新是受位置、历史、代价与潜在条件约束的确定化，不是无约束的“从无到有”，也不是对预先完成形式的单纯照明。
+   当前含义：该公式只保存历史 source-model；有效边界是任何有限显现或形式投影不穷尽 primitive Selection 的开放面。它不建立 absolute possibility warehouse。
 
 2. **选择方程与本体论迟滞 (Selection & Hysteresis)**:
    $$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta \cdot L_1(t-\Delta t)$$
    含义：显现域是 $\hat{G}_\theta$ 的即时选择与历史记忆项 $\eta$ 的加权混合。$\eta$ 过小导致现实碎片化，过大导致僵化。
 
-3. **相变锚点定理 (Phase-Anchor Theorem, T-L0-02)**:
+3. **条件性相变坐标模型 (Conditional Phase-Coordinate Model, T-L0-02)**:
    $$\kappa_{c1}: \Delta\lambda_1 \gg 0 \;(\text{秩序创生}), \quad \kappa_{c2}: \hat{G}_\theta[\sigma]=\sigma \;(\text{不动点结晶})$$
-   含义：三域划分 $L_0/L_1/L_2$ 不是任意分类，而是稳定化参数 $\kappa$ 在两个临界值处的拓扑相变。
+   含义：在已声明 stabilization model 中，`κ` 可组织 phase comparison；它不普遍生成 `L_1/L_2`、subjecthood、consciousness 或 order creation。
 
 4. **压缩效率与现实性判据 (Interface Axioms)**:
    $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}, \quad \text{Real}(\sigma) \iff S(\sigma) - \alpha A(\sigma) > T_{threshold}$$
@@ -795,7 +795,7 @@ $$\text{CR}(d) \propto 1 - e^{-\alpha d}, \quad \alpha > 0$$
 
 即使完成打捞，$L_1$ 的存续仍需抗耗散能力。$\kappa$ 参数定义系统在稳定化连续谱上的位置（$\kappa$ 与迟滞系数 $\eta$ 单调相关但不等同：$\eta$ 描述单次记忆权重，$\kappa$ 描述整体相态位置）。
 
-**意识涌现临界点 $\kappa_{c1}$**：当 $\kappa$ 越过 $\kappa_{c1}$ 时，系统的**谱隙（Spectral Gap）打开**——基态与第一激发态之间出现能量差 $\Delta E > 0$，系统获得拓扑保护，微小的 $L_0$ 涨落不再能摧毁当前 $L_1$ 结构。（$\kappa_{c1}$ 为系统特定值，依赖于 $\Psi_f$ 与 $d$ 的组合，不独立于 SRT 参数；精确关系待形式化。）
+**候选稳定化坐标 $\kappa_{c1}$**：在声明谱隙模型中，越过该坐标可作为拓扑保护／稳定化的候选证据。它不建立 consciousness、subject-position 或 phenomenality，未跨越也不证明其缺席；精确关系待形式化。
 
 > **谱隙直觉类比**：想象系统的「能量阶梯」。谱隙为零时，环境任何微小热力学扰动都能将系统踢出当前状态（无法维持稳定 $L_1$）；谱隙打开后，必须跨越特定能量阈值才能破坏当前状态——正是这种保护，让转瞬即逝的 $L_0$ 潜能固化为能够被体验的、稳定的 $L_1$ 现实片段，「连续的主观当下」因此得以诞生。
 
