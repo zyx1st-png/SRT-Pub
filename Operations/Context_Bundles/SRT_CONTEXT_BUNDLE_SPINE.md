@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-18
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-18
-source_commit: 56ea70fe
+generated: 2026-09-19
+source_commit: 1ea224d4
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 4b758347326f22f7
+inputs_digest: 119fa9612b5fdfc2
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,8 +26,8 @@ inputs_digest: 4b758347326f22f7
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-18 |
-| 来源 commit | `56ea70fe` |
+| 生成日期 | 2026-09-19 |
+| 来源 commit | `1ea224d4` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -44,7 +44,7 @@ inputs_digest: 4b758347326f22f7
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-13 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-18 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-19 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-14 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -53,7 +53,7 @@ inputs_digest: 4b758347326f22f7
 | 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-14 |
 | 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
 | 10 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
-| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-18 |
+| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-19 |
 | 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-09-15 |
 | 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-09-15 |
@@ -900,7 +900,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1053,7 +1053,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 主文件：`Philosophy/SRT_Political_Rights.md`
 - id：`SRT-POLITICAL-RIGHTS`
 - layer：L1 / epistemic：bridge / status：draft_v1
-- 说明：从SRT第一性原理推导权利的本体论定义；建立以决策d值为核心的授权合法性框架；分析投票作为d倾向后验验证的机制；提出三层制度结构（公检法/监督机构/授权主体）
+- 说明：Political Rights 是 L1 bridge / candidate political model。它通过声明的 framework-relative diagnostics 研究权利、delegation 与 voting；d-based authorization 与 voting calibration 仅是历史 / candidate models，不是从 SRT 第一性原理推导出的政治权利本体论、政治 standing 或 legitimacy。
 - 与SRT-SOC-ECONOMICS的关系：兄弟关系，后者处理市场与经济不平等，本文件处理政治权利与制度授权
 - 重要追加：d值范畴澄清（决策属性非主体属性）已同步写入 `_SRT_D_VALUE_CANONICAL.md §范畴边界`
 - 开放问题：监督机构自身d验证完整机制、d倾向准入窗口规格（见文件§10）
@@ -4072,7 +4072,7 @@ This summary is a reading guide, not an additional axiom.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -4787,28 +4787,26 @@ $$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
 
 **Cross-ref**: `Core/SRT_Core_PhaseState_TripleCondition.md §5`；`Core/SRT_Core_NormativeGradient.md §6`。
 
-### §10.4 d 值在社会delegation场景中的显现（2026-04-10 新增）
+### §10.4 d 值在社会 delegation 场景中的显现（social-delegation candidate bridge）
 
 > **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
+>
+> **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
 
-**d扩展作为社会自发支撑的机制基础**：
+在声明的社会 delegation 模型中，d 扩展可以作为一个可观察的候选维度，研究它是否与自发支撑、脚手架撤回或协调变化共同出现：
 
-$$\text{d扩展} \xrightarrow{\text{必然}} \text{对更高阶结构的自发支撑}$$
+$$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
 
-个体G对集体高阶结构的自发支撑不是义务，而是d扩展后的自然产物。d不足时需要外部脚手架（引导性delegation）；d充分扩展后，外部G退出，底层自发支撑实现。
+这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
 
-**d轨迹作为delegation合法性的验证信号**：
+**d 轨迹作为候选观察信号**：
 
-社会层面的d值判断系统以被干预G群体的d轨迹为核心信号：
+| d 轨迹 | 声明模型中的候选读法 | 边界 |
+|---|---|---|
+| 被干预群体 d 在可观测时间窗内增长 | 可作为干预目标改善的一个候选信号 | 不等于 legitimacy、moral progress 或 real uplift |
+| 被干预群体 d 停滞或收缩，介入方 d 扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture 的普遍判决 |
 
-| d轨迹 | 解读 |
-|---|---|
-| 被干预群体d在可观测时间窗内增长 | 引导性介入（真实提升方向） |
-| 被干预群体d停滞或收缩，介入方d扩展 | 方向截获（殖民/威权结构） |
-
-历史上的殖民主义、威权主义和宗教征服 = d的转移（被干预者d压缩，介入者d扩展），而非d的净增长。SRT的判断标准：d净量变化，不是分布变化。
-
-**d在多G协调场景中的显现**：共享L0/L1结构为多G提供d兼容性下限（可能性条件）；跨G残差张力驱动d轨迹向更高阶协调方向调整（动力学机制）。
+历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 d 的分布或净量变化单独定义其道德或政治结论。三项指标、reselectability、d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
 
 **Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
 
