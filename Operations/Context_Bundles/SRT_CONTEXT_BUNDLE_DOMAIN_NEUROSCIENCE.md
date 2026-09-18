@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-17
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-17
-source_commit: 78113251
+generated: 2026-09-18
+source_commit: c90d9c63
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 71a5cde1812d8822
+inputs_digest: f5b61372d3c37a0c
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,8 +26,8 @@ inputs_digest: 71a5cde1812d8822
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-17 |
-| 来源 commit | `78113251` |
+| 生成日期 | 2026-09-18 |
+| 来源 commit | `c90d9c63` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
