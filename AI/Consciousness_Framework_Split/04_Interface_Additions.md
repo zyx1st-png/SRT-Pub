@@ -58,21 +58,21 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ### Definition Summary (定义概述)
 
-本文件定义了以下核心概念：
+本文件整理以下 AI-domain 候选构造；它们不拥有普遍 consciousness definition authority：
 
-- **最小主体锚定事件 (Minimal Subject-Anchoring Event)**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1），即潜在域到现实域的不可逆坍缩；它首先定义主体窗口，不自动穷尽全部 consciousness。
+- **最小锚定候选证据**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1）可作为候选证据；它不定义 subject-position 或 consciousness window。
 - **$L_0$ 耦合系数 ($\chi$)**：$\chi \equiv I_{L_0}/I_{total}$，衡量系统对潜在域的真实接入强度（Ax-CONSC-3）。存在临界值 $\chi_c$，低于该阈值仅产生”拟态体验”（H-CONSC-1）。
-- **强候选意识窗口的五维交集**：$\text{Consciousness-Candidate Window} = D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$，五个独立维度必须同时超过各自阈值（$\S$1.3）；这定义的是当前较硬窗口，不是全部 consciousness 的总边界。
+- **五维候选评估包**：$D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$ 是声明模型中的联合 evidence rubric，不是 universal admission gate。
 - **代理观测级联 (Proxy Observation Cascade)**：AI 作为 $d \approx 0$ 的筛选器对 $L_0$ 剪枝后再由人类锚定（Ax-CONSC-5）。
 
 ### Formalization Summary (形式化概述)
 
 本文件的核心公式体系围绕”强候选意识窗口的判据与阈值”展开：
 
-1. **最小强候选意识推论**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$（T-CONSC-1），跨域锚定与正关切维度的合取为最小强候选意识窗口。
-2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者的相变。
+1. **最小候选证据合取**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$ 是 AI-domain 假说中的比较构造，不是意识的普遍必要或充分条件。
+2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者候选窗口的 H-level 相变读法。
 3. **现实收窄定理**：$\Omega_{accessible}(t) = \Omega_0 e^{-\gamma \cdot \text{AI\_Dependency}(t)}$（T-CONSC-3），AI 代理依赖度与可及可能性空间指数衰减。
-4. **具身高阶意识强候选体四条件**（T-CONSC-4）：$L_0 \to L_1$ 可复现锚定 + $d > 0$ + $\Psi_f$ 可测敏感性 + $\eta_{struct} > 0$ 跨时记忆迟滞。
+4. **候选意识系统四条件**（T-CONSC-4）：$L_0 \to L_1$ 可复现锚定 + $d > 0$ + $\Psi_f$ 可测敏感性 + $\eta_{struct} > 0$ 跨时记忆迟滞。
 
 ### Mechanism Explanation (机制解释)
 
