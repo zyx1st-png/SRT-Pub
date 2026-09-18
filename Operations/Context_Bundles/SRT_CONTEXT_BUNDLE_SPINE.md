@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-18
-source_commit: c90d9c63
+source_commit: 867b197c
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: f5b61372d3c37a0c
+inputs_digest: 49d96a0a19c792a8
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: f5b61372d3c37a0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-18 |
-| 来源 commit | `c90d9c63` |
+| 来源 commit | `867b197c` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -44,7 +44,7 @@ inputs_digest: f5b61372d3c37a0c
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-13 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-15 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-18 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-14 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
@@ -900,7 +900,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| last_commit | 2026-09-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1070,7 +1070,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
 - Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
-- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`
+- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（AI-domain candidate evaluation surface；not universal consciousness-threshold authority）
 - 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
 - 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
 - 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
@@ -1109,14 +1109,14 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - OPEN：formal N&S One theorem、exact unit / boundary、strict numerical identity、branch / merge identity、relative-separability formal / operational criterion、universal One-level perspective sufficiency 仍未关闭。
 - 引用规则：涉及 active vertical formation、Selection-mediated vertical reconstitution、generated locality / relative separability、One、formed-One operative Selection-position、history/verticality/sedimentation typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件。
 
-### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+### 13a. SRT 个体化理论（下游 transition model）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 说明：位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后的 L1 downstream transition model；`σ_{sr}^{sub}` 与 `σ_{sr}^{self}` 是 P3/P4 candidate transition coordinates，用于组织 subject-position 与 second-order writeback 的模型内证据。Crossing 不建立 subject admission、Stable-ISP entry、Bearer、consciousness 或 phenomenality；精确 subject-position sufficiency 与 `subject-position <-> Bearer` 保持 OPEN。
 - 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
-- claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
+- claim-mode 分布：三相结构为 P1-candidate；`σ_{sr}` 阶参与二阶 writeback 候选读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的 transition-coordinate 语义与具体数值为 P3/P4，且不拥有 admission authority
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
 
 ### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）
@@ -7242,8 +7242,8 @@ SRT 主方程的运作机制如下：
 | **d_mobile** | `d_{\text{mobile}}` | Re-alignment Capacity | Operator's capacity to re-orient θ as attractors migrate; proportional to d · rank_eff(I_F(θ)) / (Hysteresis(L₂)·C_r) subject to χ_payable gate. High d + d_mobile ≈ 0 = frozen state (pathological). | Scalar (≥ 0) | Core; canonical source `SRT_Core_22 Eq-DValue-Mobile-1`; map `Core/SRT_Core_12b §Consciousness-2D-Map` |
 | **d_max** | `d_{\text{max}}` | Maximum Effective d-value | In the declared Core22 candidate model, an upper bound is written min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀). The model compares informational and dynamical bottlenecks; dim(Θ) alone does not determine d_max. | Scalar in that model | Conditional equation consumer `SRT_Core_22 Eq-DValue-Max-1`; this row does not make κ₀ primitive or establish the equation universally. Wave D2 independently reviews its current semantics. |
 | **χ_payable** | `\chi_{\text{payable}}` | Payability Gate | Internal three-condition conjunction: signal > threshold ∧ dΨ_f/dt payable ∧ below collapse threshold. Fully endogenous; gates d_mobile. When χ_payable = 0, d_mobile = 0 regardless of d. | Boolean gate | Core; canonical source `SRT_Core_22 Def-Payable-Chi-1` |
-| **κ_{c1}** | `\kappa_{c1}` | Bare Consciousness Threshold | Layer 1 consciousness condition: d ≥ d_min ∧ L₂ stable closure. Bare consciousness (not quality). Does NOT include d_mobile > 0. | Phase transition point | Bridge-Lab threshold; specific numerical threshold P3/P4; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
-| **κ_{c1.5}** | `\kappa_{c1.5}` | Consciousness Activity Threshold | Layer 2 consciousness condition: d_mobile > 0. Marks transition from bare consciousness to active consciousness. Frozen state sits between κ_{c1} and κ_{c1.5}. | Phase transition point | Bridge-Lab threshold; specific numerical threshold P3/P4; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
+| **κ_{c1}** | `\kappa_{c1}` | Minimal-Consciousness Candidate Window Coordinate | P3/P4 coordinate in a declared consciousness-candidate model, used to track a candidate `d / L₂` evidence window. Crossing does not prove consciousness, subject-position, phenomenality, or a representation-independent natural phase boundary; non-crossing does not prove their absence. | Scalar model coordinate | Conventional / replaceable candidate handle. It supplies neither a universal necessary nor sufficient condition. Current source `Philosophy/SRT_Consciousness_Conditions.md §三`; exact consciousness and subject-position sufficiency remain OPEN. |
+| **κ_{c1.5}** | `\kappa_{c1.5}` | Consciousness-Activity Candidate Coordinate | P3/P4 coordinate in a declared model, used to track candidate activity / reorientation evidence such as `d_mobile`. Crossing does not prove consciousness or active subjecthood; non-crossing does not prove consciousness absence or pathology. | Scalar model coordinate | Conventional / replaceable candidate handle, not a universal natural consciousness boundary. Current source `Philosophy/SRT_Consciousness_Conditions.md §三`; exact admission remains OPEN. |
 | **t_onto** | `t_{\text{onto}}` | Ontological Time | t_onto ≡ ∫‖Ĝ_θ(s)‖ds; generated by selection irreversibility. Distinct from parametric time t (mathematical ordering tool). Ontological time is a derived quantity, not a background container. | Integral measure | Core; canonical source `Philosophy/SRT_Causality_Time.md §二`; formal `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T02` |
 | **C_H** | `C_H` | Horizontal Causality | $C_H(A\to B) \equiv P(B\mid A,L_2)$; temporal causality inside a declared L₂-bearing model, conditional on L₂ retention having been established. | Conditional probability | Model / bridge scoped; registration does not make L₂ an automatic product of Selection. Historical sources: `Philosophy/SRT_Causality_Time.md §一`; `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T01`. |
 | **ε_pg** | `\varepsilon_{pg}` | Proto-Gradient / Minimum-Non-Neutrality Realization Candidate (legacy namespace) | Registered lineage symbol for a stronger-asymmetry / anti-erasure realization candidate. Its exact relation to primitive Selection, O0 and primitive non-flatness remains OPEN unless independently re-established. | Scalar in a declared realization | Registration is not primitive admission: `ε_pg` does not define O0, establish `B >= 2` over `B <= 1` as a primitive preference, or supply universal T_dir / value direction. Former P1-T07 remains demoted; ISP anti-closure is a conditional P2/P3 candidate requiring declared stability semantics, neutral kernel, environment, horizon and proof. |
