@@ -172,7 +172,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
 - Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
-- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`
+- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（AI-domain candidate evaluation surface；not universal consciousness-threshold authority）
 - 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
 - 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
 - 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
@@ -211,14 +211,14 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - OPEN：formal N&S One theorem、exact unit / boundary、strict numerical identity、branch / merge identity、relative-separability formal / operational criterion、universal One-level perspective sufficiency 仍未关闭。
 - 引用规则：涉及 active vertical formation、Selection-mediated vertical reconstitution、generated locality / relative separability、One、formed-One operative Selection-position、history/verticality/sedimentation typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件。
 
-### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+### 13a. SRT 个体化理论（下游 transition model）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 说明：位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后的 L1 downstream transition model；`σ_{sr}^{sub}` 与 `σ_{sr}^{self}` 是 P3/P4 candidate transition coordinates，用于组织 subject-position 与 second-order writeback 的模型内证据。Crossing 不建立 subject admission、Stable-ISP entry、Bearer、consciousness 或 phenomenality；精确 subject-position sufficiency 与 `subject-position <-> Bearer` 保持 OPEN。
 - 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
-- claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
+- claim-mode 分布：三相结构为 P1-candidate；`σ_{sr}` 阶参与二阶 writeback 候选读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的 transition-coordinate 语义与具体数值为 P3/P4，且不拥有 admission authority
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
 
 ### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）
