@@ -132,7 +132,7 @@ O0 causes S0: NO;
 S0 produces O0: NO.
 ```
 
-O0 and S0 are two irreducible analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances.
+O0 and S0 are two co-primitive analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances. This records the current burden separation: `O0 -> S0` reduction and `S0 -> O0` reduction are both NOT ESTABLISHED, while mutual irreducibility is NOT PROVEN.
 
 `Oriented Openness` may continue as a routing label for the O0 face. It is not a prior field, container, option menu, probability distribution, vector toward an endpoint, semantic order, moral value or continuation preference.
 
