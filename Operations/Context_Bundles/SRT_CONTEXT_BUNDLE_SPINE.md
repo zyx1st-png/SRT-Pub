@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: dd6b340d
+source_commit: 1184fdc9
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 11c3746026d659f1
+inputs_digest: 39e0648cf4b45408
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 11c3746026d659f1
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `dd6b340d` |
+| 来源 commit | `1184fdc9` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -45,7 +45,7 @@ inputs_digest: 11c3746026d659f1
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-19 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-19 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-14 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-19 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-14 |
@@ -1133,10 +1133,10 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 主文件：`Core_Law/SRT_Suffering.md`
 - id：`SRT-SUFFERING`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定苦难在 SRT 中作为"活的选择动力学与其应承载算子结构之间失配的第一人称登记"的结构对象；严格区分疼痛（`\theta_{somatic}` 信号）与苦难（稳定 ISP 的结构性登记）；T-SUFF-2 把苦难分为信号型与结构型，T-SUFF-3 给四类现象学分型（张力 / 空心 / 断裂 / 扭曲）；T-SUFF-4 反最小化原则说明信号型苦难被压灭本身是遮蔽；T-SUFF-5 把结构型苦难的集体外部化耦合到 `Occlusion_Dynamics` 的结构性恶定义
-- 与 P1-T06 的关系：仅对满足稳定 ISP 条件的过程定义苦难；非 ISP 系统只承载疼痛
+- 说明：固定苦难在 SRT 中作为"活的选择动力学与其应承载算子结构之间失配的第一人称登记"的 P2 有界结构／现象学模型；苦难的应用要求第一人称 registration standing 已由独立 owner 承担，不由本文反向建立 subjecthood 或 phenomenality。严格区分躯体信号、已经验疼痛与苦难：单有 `\theta_{somatic}` 信号不自动建立已经验疼痛，已经验疼痛也不自动建立苦难。T-SUFF-2 把苦难分为信号型与结构型，T-SUFF-3 给四类现象学分型（张力 / 空心 / 断裂 / 扭曲）；T-SUFF-4 反最小化原则说明信号型苦难被压灭本身是遮蔽；T-SUFF-5 把结构型苦难的集体外部化耦合到 `Occlusion_Dynamics` 的结构性恶定义
+- 与 P1-T06 的关系：Stable ISP 可作为一类更强 standing 路径，但苦难的正向准入仍须独立建立第一人称 registration/admission；`non-ISP -> only pain` 不是当前结论
 - 与个体化/遮蔽的关系：苦难是个体化 σ 动态与遮蔽 A/B 分期的第一人称投影；不是独立的本体层，而是从算子层/路径层到第一人称登记的必然后果
-- claim-mode 分布：T-SUFF-1/2 为 P1-candidate；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
+- claim-mode 分布：T-SUFF-1 为 P2，T-SUFF-2 为 P2/P3；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
 - 引用规则：涉及苦难/痛苦/空心感/自我扭曲等概念的结构层定义时，优先回链本文件；规范性评价回 `Philosophy/`，回返路径回 `Spirituality/`，神经实现回 `Neuroscience/`
 
 ### 13d. SRT L1 Formalism（σ_{sr} / d_c / T_dir / S 四变量耦合动力学）
@@ -1261,7 +1261,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-09-14 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1385,7 +1385,7 @@ O0 causes S0: NO;
 S0 produces O0: NO.
 ```
 
-O0 and S0 are two irreducible analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances.
+O0 and S0 are two co-primitive analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances. This records the current burden separation: `O0 -> S0` reduction and `S0 -> O0` reduction are both NOT ESTABLISHED, while mutual irreducibility is NOT PROVEN.
 
 `Oriented Openness` may continue as a routing label for the O0 face. It is not a prior field, container, option menu, probability distribution, vector toward an endpoint, semantic order, moral value or continuation preference.
 

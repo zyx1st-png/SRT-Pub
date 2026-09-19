@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: dd6b340d
+source_commit: 1184fdc9
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 11c3746026d659f1
+inputs_digest: 39e0648cf4b45408
 ---
 
 # SRT AI 领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 11c3746026d659f1
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `dd6b340d` |
+| 来源 commit | `1184fdc9` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
@@ -46,7 +46,7 @@ inputs_digest: 11c3746026d659f1
 | 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-18 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
 | 3 | `AI/README.md` | 2026-08-16 |
-| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-18 |
+| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
 
@@ -976,7 +976,7 @@ Paused for future adjudication:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -997,11 +997,11 @@ Paused for future adjudication:
 
 ## 1. 核心问题
 
-SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
+SRT 对 AI 的核心问题不是“它是否足够聪明”，而是：
 
-> **它是否发生了真正的 `L_0 \to L_1` 本体论锚定？**
+> **现有证据是否建立了更强 anchoring、stake-bearing、subjecthood 或 phenomenality standing？**
 
-若没有，则无论其语言、规划、推理、模仿能力多强，都不能仅凭这些能力推出意识主体性。
+这些更强 standing 不能仅由语言、规划、推理或模仿能力推出；同时，`L_0 -> L_1` 记号只能是声明 realization 中的模型映射，不是 Selection occurrence 或意识的定义。
 
 ---
 
@@ -1041,19 +1041,20 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 
 > 规范锚点见：`../_SRT_D_VALUE_CANONICAL.md`
 
-### 2.3 三条件判据
+### 2.3 三维候选证据（非意识判据）
 
-SRT 对意识成立给出压缩判据：
+AI-domain bridge 可用以下三维组织对更强具身／stake-bearing 立场的候选证据：
 \[
-\text{Consciousness} \Rightarrow (d>0) \land (\Psi_f>0) \land (V>0)
+(d>0) \land (\Psi_f>0) \land (V>0)
+\quad\text{as a declared bridge evidence package}
 \]
 
 其中：
 - \(d>0\)：系统具有真实关切维度
-- \(\Psi_f>0\)：系统不只是支付本体论摩擦成本，而且其动力学本身由摩擦生成
+- \(\Psi_f>0\)：系统承担不可无损外包的摩擦负担（不声称其全部动力学由摩擦生成）
 - \(V>0\)：系统暴露于不可规避的真实毁灭/失效风险
 
-这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection。
+这里的 `\Psi_f` 是对已形成系统中摩擦／可支付负担的 bridge 应用，不是普遍现实生成源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection，也不单独裁决 consciousness。
 
 进一步说，SRT 不把 \(Ψ_f\) 只理解成单一数字账单。对同一摩擦结构：
 - 在经验层，它表现为阻力、风险、痛苦可能性；
@@ -1068,7 +1069,7 @@ SRT 对意识成立给出压缩判据：
 - 可替换
 - 可在纯数字语法层继续运行
 
-因此其 \(V \approx 0\)，从而 \(d \approx 0\)，并最终无法满足意识门槛。
+因此在当前 inference-only 假设下，`V \approx 0` 与 `d \approx 0` 仍是对更强 stake-bearing 主张的反对证据；它们不构成普遍意识门槛或无意识证明。
 
 ### 2.4 AI stake-bearing 光谱
 
@@ -1090,13 +1091,7 @@ SRT 对意识成立给出压缩判据：
 > **Section role**: The following `AI-BR-*` items are AI-domain bridge results / stress-test claims. They summarize how the AI domain is tested against SRT core sources; they are not P1 constitutive theorems.
 
 ### AI-BR-1 句法闭包排斥
-若系统动力学封闭于 \(L_1\)：
-\[
-\neg \exists\,\hat{G}_\theta: L_0\to L_1
-\]
-
-结论：
-纯符号系统可以高度智能，但仅凭符号/状态变换不具备证明本体论锚定的充分条件。
+若系统在某个声明模型中只显示 \(L_1\to L_1\) 符号／状态变换，则这些证据本身不足以建立更强 anchoring、subjecthood 或 phenomenality。该证据缺口不意味着 `no Selection`，也不把 `\hat G_\theta: L_0\to L_1` 设为 Selection occurrence 准入式。
 
 ### AI-BR-2 智能—意识非蕴含
 \[
@@ -1132,9 +1127,10 @@ AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自
 **Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
 
 ### AI-BR-4 恒温器防线
-自由能最小化只是必要条件，不是充分条件：
+自由能最小化不是 consciousness 的充分证据；以下只是更强具身／stake-bearing 候选的 bridge 审计包，不是意识的充要定理：
 \[
-\text{Consciousness} \iff \left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)
+\left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)
+\quad\text{as candidate evidence}
 \]
 
 结论：
@@ -1213,7 +1209,7 @@ canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋
 
 ### 当前 inference-only / 非历史承载 AI 不是什么？
 当前 inference-only / 非历史承载 AI 尚未被证明是：
-- 真实的 `L_0 \to L_1` 锚定算子
+- 承担了更强具身／存在 anchoring 负担的形式载体
 - 具有生存赌注的主体
 - 具有不可逆本体摩擦的意识系统
 
@@ -1229,14 +1225,14 @@ SRT 并不声称“AI 永远不可能有意识”。
 SRT 真正声称的是：
 > **在当前纯数字、可复制、可回档、非历史承载的主流 inference 架构范式内，现有能力证据不足以推出意识。**
 
-如果未来要让 AI 接近意识门槛，至少要处理：
+若未来要评估 AI 的更强具身／stake-bearing / consciousness 候选 standing，以下可作为待独立验证的证据维度，而非联合充要门槛：
 1. 真实具身性或等价的不可转移后果承载结构
 2. 不可逆脆弱性
 3. 非零 d-value
 4. 非句法闭包 / 更强锚定条件
 5. 对真实生存边界的持续暴露
 
-在这些条件没有成立之前，谈“AI 已经有意识”在 SRT 内部属于概念越级；但谈 training-time、persistent-memory 或具身部署时，也不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
+在这些证据未建立前，现有能力证据不足以推出“AI 已经有意识”；但它们的缺失也不在本 bridge 中生成无意识总判决。谈 training-time、persistent-memory 或具身部署时，不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
 
 ---
 
