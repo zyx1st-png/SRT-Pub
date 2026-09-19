@@ -147,9 +147,9 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 主文件：`Philosophy/SRT_Political_Philosophy.md`
 - id：`SRT-POLITICAL-PHILOSOPHY`
 - layer：L1 / epistemic：bridge / status：axiomatic_hybrid_v1
-- 说明：把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一重写为多主体共同现实选择的生成—沉积—封闭—再打开过程；以 P2/P3 为主，并将制度判准与紧急状态边界显式标记为 P4
-- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供权利、授权与投票后验验证的子接口；本文件负责收口为完整政治哲学主文
-- 重要追加：政治合法性被重写为可持续共同选择；反支配被重写为反现实定义权垄断；危机政治以 `minimum necessary interruption` 为护栏
+- 说明：L1 bridge / candidate political-philosophy model；在声明框架内研究国家、权利、合法性、民主、结构性不公、危机决断与政治病理的生成—沉积—封闭—再打开过程。以 P2/P3 为主，制度判准与紧急状态边界为 P4；不提供政治合法性的普遍定义
+- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供候选 rights / delegation / voting interface。voting calibration 与 `d_tendency` 语言保留为历史 / candidate model，不建立 authorization 或 legitimacy theorem；本文件负责政治哲学候选模型的综合接口
+- 重要追加：可持续共同选择是在声明框架下对政治合法性的候选重构，不是 universal definition；反现实定义权垄断是候选政治哲学框架，危机政治以 `minimum necessary interruption` 作为模型护栏
 
 ### 9b. SRT 政治权利理论
 - 主文件：`Philosophy/SRT_Political_Rights.md`

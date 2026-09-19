@@ -44,13 +44,13 @@ d 在不同发展阶段可作为 delegation 诊断中的一个候选变量，但
 
 这些是可检验的候选阶段描述，不是 d 的普遍发展律。自发支撑是否出现，不能仅由 d 扩展推出。
 
-### 1.3 历史重构：殖民主义、威权主义与宗教征服
+### 1.3 历史候选解释：殖民主义、威权主义与宗教征服
 
-历史上的殖民主义、威权主义和宗教征服，在SRT框架中的精确描述不是"假装提升"，而是**方向截获**：
+在已声明的历史 / 经验模型中，殖民主义、威权主义和宗教征服可作为 intervention lock-in、proxy-chain distortion、burden asymmetry 或 direction-capture risk 的候选案例研究；这不是 SRT ontology 给出的精确分类：
 
-> 外部G介入机制本身可以是真实的（代理结构、组织动员、知识传递），但方向校准被外部G的利益捕获，指向的是殖民者/精英/宗教体系自身d的扩展，而非被干预G群体d的扩展。**结构对，校准错。**
+> 在声明模型中，外部 G 的代理结构、组织动员或知识传递可以与锁定、proxy-chain distortion 或负担不对称同时出现。被干预群体与介入方的 `d_tendency` 或 normalized proxy 轨迹可贡献证据，但必须满足同域同尺度或显式 normalization / mapping rule；轨迹本身不决定 uplift 或 capture。
 
-这个重构的重要性在于：它把问题从道德谴责转移到机制分析——同样的delegation结构，校准方向决定了它是提升还是截获。这意味着SRT需要一个与外部G利益无关的校准系统。
+这一候选解释用于提出可检验的机制问题，而不把历史分类、道德判断或政治合法性压缩成 d 分布或方向校准。相关判断仍需独立历史证据与已声明的 evaluative framework；本 P3/P4 模型不输出 O2-M，也不由 SRT ontology 单独裁定 uplift、capture、authorization 或 legitimacy。
 
 ---
 

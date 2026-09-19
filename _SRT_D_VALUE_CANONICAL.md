@@ -721,21 +721,23 @@ $$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
 > **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
 >
 > **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
+>
+> **Category / comparison guard（WTC-84）**：canonical `d` 属于 decision / Selection event，不是个人或群体的固有属性。群体层面的 bare `d` 不是 canonical shorthand；只有明示为 decision-event `d` distribution、`d_tendency` trajectory 或 declared normalized proxy 时才可使用。跨群体或介入方比较必须位于同一 domain、同一 scale，或给出显式 normalization / mapping rule。
 
-在声明的社会 delegation 模型中，d 扩展可以作为一个可观察的候选维度，研究它是否与自发支撑、脚手架撤回或协调变化共同出现：
+在声明的社会 delegation 模型中，decision-event `d` distribution、`d_tendency` trajectory 或 declared `d` proxy 可以作为候选观察维度，研究它们是否与自发支撑、脚手架撤回或协调变化共同出现：
 
 $$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
 
 这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
 
-**d 轨迹作为候选观察信号**：
+**类型化 d 轨迹作为候选观察信号**：
 
-| d 轨迹 | 声明模型中的候选读法 | 边界 |
+| 类型化轨迹 | 声明模型中的候选读法 | 边界 |
 |---|---|---|
-| 被干预群体 d 在可观测时间窗内增长 | 可作为干预目标改善的一个候选信号 | 不等于 legitimacy、moral progress 或 real uplift |
-| 被干预群体 d 停滞或收缩，介入方 d 扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture 的普遍判决 |
+| 被干预群体的 decision-event `d` distribution 或 `d_tendency` 在可观测时间窗内变化 | 可作为干预目标是否改善的一个候选信号 | 不等于 legitimacy、authorization、moral progress 或 real uplift |
+| 在同域同尺度或已声明归一化下，被干预群体的 `d_tendency` / proxy 停滞或收缩，而介入方对应轨迹扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture、uplift 或 coordination direction 的判决 |
 
-历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 d 的分布或净量变化单独定义其道德或政治结论。三项指标、reselectability、d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
+`d_tendency` 或 proxy 比较本身不推出 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 decision-event `d` distribution、`d_tendency` 或 proxy 的分布、轨迹或净量变化单独定义其道德或政治结论。三项指标、reselectability、类型化 d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
 
 **Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
 
