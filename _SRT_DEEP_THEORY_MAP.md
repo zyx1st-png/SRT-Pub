@@ -287,7 +287,7 @@ When does selection become conscious, and how do integration, access, stake, and
 
 ### Boundary
 
-Consciousness is not reducible to IIT, GNW, attention, reportability, or integration alone. SRT requires selection, anchoring, stake, and payability relations. Graphify consciousness pages are support-only.
+Consciousness is not reducible to IIT, GNW, attention, reportability, or integration alone. In declared SRT evaluation models, selection, anchoring, stake, and payability relations may supply candidate evidence; no conjunction here is a universal necessary, sufficient, or biconditional admission rule. Exact consciousness and phenomenality sufficiency remain OPEN. Graphify consciousness pages are support-only.
 
 ---
 

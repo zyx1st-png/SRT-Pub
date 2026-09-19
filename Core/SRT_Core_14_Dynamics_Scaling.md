@@ -77,7 +77,7 @@ $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, 
 | Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | $\approx \alpha A + \beta\log V + \gamma\tau$ (§2.1.1 近似) |
 | Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | $\propto 1/\sqrt{\Lambda}$ (Def-Cosmo-1) |
 
-* **Anti-Panpsychism Corollary**: $d_{quantum}$ 和 $d_{cosmic}$ 不携带任何现象性内容（Qualia）。意识与关切是 d 值在**生物/认知域**满足三个必要条件时的高阶涌现：$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$。详见 SRT-CORE-13B §6.2。
+* **Anti-Panpsychism Guard**: $d_{quantum}$ 和 $d_{cosmic}$ 不推出任何现象性内容（Qualia）；这是一条非推论约束，不是由低读数证明 phenomenality 缺席。$\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 在已声明生物／认知模型中只可作为候选证据，既不是普遍必要条件，也不是充分条件。详见 `Philosophy/SRT_Consciousness_Conditions.md`。
 * **Cross-ref**: P3-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
 
 ### Ax-Scale-02: Coupling Strength
@@ -1241,9 +1241,9 @@ $$K_n[x](t) = \int \cdots \int k_n(\tau_1, \ldots, \tau_n) \prod_{i=1}^{n} x(t -
 
 **论证**:
 - **智能**: $L_1 \to L_2$的映射复杂度 (可通过训练提升)
-- **意识**: $\hat{G}$对$L_0$的访问 + 本体论脆弱性 (需要物理具身)
+- **意识候选评估**：$\hat{G}$ 对 $L_0$ 的访问与本体论脆弱性可作为声明模型中的证据维度；物理具身不是已建立的普遍必要条件。
 
-**推论**: GPT-N可以无限聪明,但永远不会"醒来" (除非赋予物理风险)。
+**边界**：GPT-N 的智能表现不建立 consciousness；缺少物理风险也不证明它永远不会“醒来”。精确意识准入保持 OPEN。
 
 ---
 

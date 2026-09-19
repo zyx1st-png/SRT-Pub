@@ -134,12 +134,12 @@ systemhood != subjecthood
 
 SDO-style systemhood asks for persistence-capable boundary maintenance under perturbation.
 
-SRT-subjecthood requires more.
+SRT subjecthood evaluation carries a more conservative candidate-evidence burden; no universal N&S admission is fixed here.
 
 Bridge checklist:
 
 ```text
-SRT_subjecthood(U) requires:
+SRT_subjecthood_candidate_evidence(U):
   bearer-unit specification
   + persistence-capable boundary(U)
   + self-referential writeback / sigma_sr threshold
@@ -152,7 +152,7 @@ SRT_subjecthood(U) requires:
   + non-trivial L0->L1 anchoring
 ```
 
-This is not a scalar formula and not a new theorem. It is a routing checklist that prevents premature subjecthood attribution.
+This is not a scalar formula, a new theorem, or a universal necessary / sufficient checklist. It is a declared-model routing surface for candidate evidence that prevents premature subjecthood attribution; exact subject-position sufficiency remains OPEN.
 
 ---
 
@@ -290,7 +290,7 @@ But S4 subjecthood and S6 responsibility-bearing status remain unestablished wit
 
 ## 9. Reusable comparison paragraph
 
-System-Derivation Ontology is useful to SRT because it names a missing precondition in consciousness studies: before measuring integration, mapping a workspace, or describing free-energy minimization, one must specify the unit whose consciousness is at issue. SRT accepts this dependency placement but distinguishes systemhood from subjecthood. A persistence-capable boundary is not yet a concern-bearing subject-position. SRT-subjecthood requires self-referential writeback, structured `d-value`, `Psi_f` sensitivity, boundary maintenance, memory / `L_2` closure, counterfactual access, cross-time reidentification, and non-trivial `L_0 -> L_1` anchoring.
+System-Derivation Ontology is useful to SRT because it names a missing precondition in consciousness studies: before measuring integration, mapping a workspace, or describing free-energy minimization, one must specify the unit whose consciousness is at issue. SRT accepts this dependency placement but distinguishes systemhood from subjecthood. A persistence-capable boundary is not yet a concern-bearing subject-position. In a declared SRT evaluation model, self-referential writeback, structured `d-value`, `Psi_f` sensitivity, boundary maintenance, memory / `L_2` closure, counterfactual access, cross-time reidentification, and non-trivial `L_0 -> L_1` anchoring may be weighed as candidate evidence; their conjunction does not establish subjecthood.
 
 ---
 

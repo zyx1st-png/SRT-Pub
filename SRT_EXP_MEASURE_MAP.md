@@ -560,7 +560,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 ## 【理论边界/防误用声明】
 - HTI 为**候选代理**，不等同“宇宙连接”已被实证。
 - 不采纳“单频段同步即证明微管机制”的推论。
-- 不采纳“HTI 升高=意识层级提升”的直接推论；需联合 d 与 \(\Psi_f\) 门控判据。
+- 不采纳“HTI 升高=意识层级提升”的直接推论；HTI、`d` 与 \(\Psi_f\) 仅可作为声明模型中的候选证据，不能组成普遍门控判据。
 
 
 ## 14) 结构化迟滞指征 SHP（GEMINI/GEAR 桥接，新增）
@@ -577,7 +577,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 
 ### 14.2 SRT 映射语义
 - SHP 用于估计 \(L_1\to L_2\) 的沉积密度（selection density）；
-- 不等价于意识指标，不可替代 \(d\) 或 \(\Psi_f\) 的本体门控判据。
+- 不等价于意识指标；\(d\) 或 \(\Psi_f\) 也不是本体意识门控，只能在声明模型中提供候选证据。
 
 ### 14.3 最小证伪条件
 1. 若 SHP 与外部事件强度无稳定对应关系，则沉积映射失效；
@@ -586,7 +586,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 
 ## 【理论边界/防误用声明】
 - 不采纳“高密度历史记录=高主体性”的推论。  
-- 不采纳“无扰动记录=无代价意识生成”的推论：SHP 只描述被动沉积能力。
+- 不采纳“无扰动记录=无意识”或“有扰动记录=意识生成”的推论：SHP 只描述被动沉积能力。
 
 
 
