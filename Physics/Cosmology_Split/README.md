@@ -1,23 +1,25 @@
 ---
 id: SRT-PHYS-COSMO-SPLIT-INDEX
 type: index
-tags: [Split, Navigation, Longform]
+tags: [Split, Navigation, Longform, ConnectorSafety]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: navigation
+claim_mode: evidence
 canonical: false
-dependency: [SRT-PHYSICS-CLAIM-STATUS, ]
+dependency: [SRT-PHYS-COSMO]
 ---
 
-# SRT-PHYS-COSMO Split Index
+# SRT Physics: Thermodynamics, Time & Cosmology (Hybrid Edition) Split Index
 
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Physics_Cosmology.md`](../SRT_Physics_Cosmology.md)
-- Source owner bytes: `93472`
-- Source owner SHA-256: `e49b514f92e3671fd6f55c7801ea2df06964ea99ef5d7b29c1a9e81e20421be4`
-- 00_Foundations_and_Axioms：[`00_Foundations_and_Axioms.md`](00_Foundations_and_Axioms.md)
-- 01_Thermo_Time_Gravity_Cosmology：[`01_Thermo_Time_Gravity_Cosmology.md`](01_Thermo_Time_Gravity_Cosmology.md)
-- 02_Cosmology_Extensions：[`02_Cosmology_Extensions.md`](02_Cosmology_Extensions.md)
-- 03_Microgravity_and_Advanced_Claims：[`03_Microgravity_and_Advanced_Claims.md`](03_Microgravity_and_Advanced_Claims.md)
-- 04_Symbols_and_Interfaces：[`04_Symbols_and_Interfaces.md`](04_Symbols_and_Interfaces.md)
+- Source owner bytes: `93497`
+- Source owner SHA-256: `6a58065aad6726613cee1294ee1af517cbad1879da97ec82435169a1a384bd3b`
+- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
+- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
+
+| Part | File | Starts with | Bytes | SHA-256 prefix |
+|---:|---|---|---:|---|
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Thermodynamics, Time & Cosmology (Hybrid Edition) | 32966 | `9c2bbc3aa4f5` |
+| 01 | [`01_Part02.md`](01_Part02.md) | Def-Cosmo-1 [D1.7.1]: Gravitational d-value (引力 $d$ 值) | 32919 | `4daf7fdae3ef` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 5.1.4 装配理论与时间的物理尺寸 | 28957 | `157ff1aad833` |
