@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: 1184fdc9
+source_commit: f5d7b3f5
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 39e0648cf4b45408
+inputs_digest: ddb8b7b5cbb7f18e
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,7 +27,7 @@ inputs_digest: 39e0648cf4b45408
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `1184fdc9` |
+| 来源 commit | `f5d7b3f5` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
@@ -49,7 +49,7 @@ inputs_digest: 39e0648cf4b45408
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-08-18 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-19 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
@@ -60,7 +60,7 @@ inputs_digest: 39e0648cf4b45408
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
-| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
+| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-19 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-18 |
 
 ## §0.2 状态护栏
@@ -1924,7 +1924,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2110,10 +2110,14 @@ SRT 试图把暗物质和暗能量重写为：
 这篇最容易被误读的地方是：
 - 把“宇宙尺度 d”误当成“宇宙主体意识”
 
-SRT 的边界非常明确：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+SRT 的边界是非蕴含而不是替代阈值：
+
+```text
+cosmic / quantum d-like capacity proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
+
+本 Physics translation 不拥有 consciousness / phenomenality 准入权；相关 standing 保持独立 gated / OPEN。
 
 因此：
 - 量子尺度可有带宽，不等于有体验
@@ -5162,7 +5166,7 @@ The stop rule should be applied at every phase. A practice should pause or narro
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -5358,12 +5362,10 @@ F_{boundary}(\tau)\le U_{survival}(d)
 SRT 在 `Core 14` 中最容易被误读的地方，是把 d 的跨尺度统一误读成“跨尺度意识统一”。
 
 SRT 的压缩立场是：
-- d 是跨尺度数学标尺
+- 跨尺度可比较的是具名 capacity / structure proxy，不自动是 canonical stake-coupled `d`
 - 意识不是跨尺度默认属性
-- 只有当以下条件同时满足时，才有意识相关成立：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+- proxy compatibility、`d`、`\Psi_f` 或 formed `\hat G` 的单项与合取均不在本文件建立 consciousness
+- consciousness / phenomenality admission 由独立 owner 承担，exact sufficiency 保持 OPEN
 
 所以：
 - 量子可有相干带宽，不等于有主观体验

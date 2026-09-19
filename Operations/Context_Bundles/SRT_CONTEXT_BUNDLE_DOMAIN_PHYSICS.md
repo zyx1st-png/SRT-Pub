@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: 1184fdc9
+source_commit: f5d7b3f5
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 39e0648cf4b45408
+inputs_digest: ddb8b7b5cbb7f18e
 ---
 
 # SRT 物理领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 39e0648cf4b45408
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `1184fdc9` |
+| 来源 commit | `f5d7b3f5` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
@@ -49,7 +49,7 @@ inputs_digest: 39e0648cf4b45408
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-08-18 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-19 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
@@ -1676,7 +1676,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1862,10 +1862,14 @@ SRT 试图把暗物质和暗能量重写为：
 这篇最容易被误读的地方是：
 - 把“宇宙尺度 d”误当成“宇宙主体意识”
 
-SRT 的边界非常明确：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+SRT 的边界是非蕴含而不是替代阈值：
+
+```text
+cosmic / quantum d-like capacity proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
+
+本 Physics translation 不拥有 consciousness / phenomenality 准入权；相关 standing 保持独立 gated / OPEN。
 
 因此：
 - 量子尺度可有带宽，不等于有体验
