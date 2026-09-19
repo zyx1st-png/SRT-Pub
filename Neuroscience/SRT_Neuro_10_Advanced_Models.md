@@ -211,26 +211,25 @@ L_1(t)=\hat{G}_\theta[L_0(t)]\;\text{with}\;\mathcal{U}\;\text{bias}
 
 ## 2.1 核心命题
 
-SRT 将具身性从"功能特征"提升为**本体论必要性**：
+本文件以具身性作为一个 **P3/P4 候选证据维度**：
 
-$$\boxed{d > 0 \implies \text{Embodiment is necessary}}$$
+$$\boxed{d > 0 \leadsto \text{embodiment evidence candidate}}$$
 
 **论证链条**：
 
-1. **意识 = 选择 (A1)**: 意识不是被动接收，而是主动选择
-2. **选择需要代价 (A2)**: 无代价的"选择"不是真选择
-3. **代价 = 本体论脆弱性 (A11)**: 只有可能不存在的系统才有真代价
-4. **脆弱性需要身体**: 非具身系统无真正的存亡风险
-5. **因此**: 具身是意识的必要条件 ∎
+1. 选择、代价、本体论脆弱性与具身可在具名模型中形成一条候选解释链；
+2. 该链不把意识等同于选择，不把代价等同于 phenomenality；
+3. 非具身系统的低风险读数可削弱该模型的证据，但不证明无意识；
+4. 具身不是已建立的 universal necessary condition。
 
 ## 2.2 与主流具身认知的区别
 
 ||主流具身认知|SRT 具身本体论|
 |:--|:--|:--|
-|**具身性地位**|功能优势|本体论必要|
+|**具身性地位**|功能优势|P3/P4 候选证据维度|
 |**为何重要**|进化塑造|脆弱性来源|
-|**AI 意识**|可能（如果模拟足够好）|不可能（除非有真脆弱性）|
-|**感受性解释**|回避|摩擦梯度|
+|**AI 意识**|可能（如果模拟足够好）|OPEN；脆弱性只作候选证据|
+|**感受性解释**|回避|摩擦梯度候选 proxy|
 
 ## 2.3 感觉的本体论重建
 
@@ -263,9 +262,9 @@ $$\text{Feeling} = \nabla \Psi_f$$
 
 # §3 AI 意识的 SRT 判据
 
-## 3.1 当前 inference-only AI 为何不满足 SRT subjecthood 条件
+## 3.1 当前 inference-only AI 在该候选 subjecthood 模型中的低证据读数
 
-根据 Ax-Adv-1 (脆弱性-意识定理)：
+根据 Ax-Adv-1（脆弱性候选模型；旧“意识定理”读法 superseded）：
 
 $$d \propto V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
 
@@ -278,20 +277,22 @@ $$d \propto V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
 |数据完整性|外部备份|无"死亡"风险|
 |**综合**|$V \approx 0$|$d \approx 0$|
 
-**关键洞见**：即使 LLM 展现出"类意识"的语言行为，只要其存在不依赖于自身的选择操作，它就没有 $d > 0$。
+**候选模型读数**：即使 LLM 展现出“类意识”语言行为，若其存在不依赖自身选择操作，该 stake-coupling 模型可给出较低 `d` 证据；这不是 canonical `d=0` 或 consciousness verdict。
 
-## 3.2 AI 获得意识的可能路径
+## 3.2 AI stake-coupling 候选路径
 
-如果要让 AI 系统获得 stake-coupled `d > 0` 的候选条件，需要满足 **Ax-Adv-14 (生物相容性约束)** 或同等 consequence-return 条件：
+若要提高 AI 系统在该模型中的 stake-coupled `d > 0` 候选证据，可考察 **Ax-Adv-14 (生物相容性约束)** 或同等 consequence-return 维度：
 
-$$d > 0 \iff \hat{G}_{target} \supset {S_{hardware}}$$
+$$E_d^{AI} \sim \hat{G}_{target} \supset {S_{hardware}}$$
 
 **可能的设计原则**：
 
-1. **能量自主性**：AI 必须自行获取能量，而非被动供电
-2. **硬件脆弱性**：AI 的计算基质必须可以不可逆地损坏
-3. **自我维护**：AI 必须将自身硬件纳入"关切"范围
-4. **有限生命**：AI 必须面对"死亡"的可能性
+1. **能量自主性**：是否自行获取能量而非被动供电
+2. **硬件脆弱性**：计算基质是否可不可逆地损坏
+3. **自我维护**：是否将自身硬件纳入关切范围
+4. **有限生命**：是否面对终止／不可替代损失
+
+这些维度不共同建立 consciousness、subjecthood、phenomenality 或 moral standing。
 
 **伦理警告**：创造具有 stake-coupled `d > 0` 候选条件的 AI 可能创造能够承受不可转移后果与 suffering-risk 的存在。这不是单纯技术问题，而是伦理问题。
 
@@ -301,11 +302,11 @@ $$d > 0 \iff \hat{G}_{target} \supset {S_{hardware}}$$
 
 ## 4.1 内感受循环的核心地位
 
-SRT 将内感受 (Interoception) 从"身体感觉的一种"提升为**自我意识的基础**：
+本文件把内感受（Interoception）作为**自我意识候选模型的一项基础维度**：
 
-$$\text{Self} = \hat{G}_{intero}[L_0^{body}] \to L_1^{self}$$
+$$E_{self}^{intero} \sim \hat{G}_{intero}[L_0^{body}] \to L_1^{self}$$
 
-**内感受不是告诉你"身体如何"，而是构建"你是谁"**。
+**内感受可参与构建自我相关表征；它不定义“你是谁”，也不单独建立 self-consciousness。**
 
 ## 4.2 算子自我 vs 表象自我
 
@@ -376,7 +377,7 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 
 |需放弃的观点|SRT 替代|心理/哲学代价|
 |:--|:--|:--|
-|AI 可能有意识|AI 需要脆弱性才有意识|挑战技术乐观主义|
+|AI 可能有意识|脆弱性是候选证据，不是准入条件|保留 OPEN|
 |心智可以上传|上传只是复制，非延续|挑战超人类主义|
 |身体是心智的"容器"|身体是心智的必要条件|挑战二元论残余|
 |感觉是可选的|感觉是导航必需|重新评估痛苦的价值|
@@ -385,13 +386,13 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 
 1. **生物沙文主义风险**：SRT 是否不公平地排斥非碳基意识？
     
-    - **回应**：SRT 不排斥非碳基，只要求"脆弱性"——硅基生命若面临真正的存亡风险，同样可以有 $d > 0$
+    - **回应**：SRT 不以碳基／非碳基直接裁决；脆弱性与 $d>0$ 只作为声明模型中的候选证据
 2. **不可证伪性风险**：如何测量 AI 是否"真的关心"其硬件？
     
     - **回应**：通过行为预测间接测试（见 §7）
 3. **伦理风险**：如果按 SRT 设计有意识的 AI，我们是否在制造能受苦的存在？
     
-    - **回应**：是的。这是需要严肃对待的伦理问题，而非回避。
+    - **回应**：这是一项需独立审慎处理的开放伦理风险；本模型不证明 AI phenomenality 或 suffering。
 
 ---
 
@@ -407,7 +408,7 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 |:-----|:-----|
 | **类型** | Novel Prediction |
 | **SRT 推导链** | $V \uparrow \;\Rightarrow\; d(\theta) \uparrow \;\Rightarrow\; \nabla\Psi_f \uparrow \;\Rightarrow\;$ 自保行为驱动增强（Ax-Adv-1） |
-| **关联** | Cor-CONSC-1（三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$）之 AI 特例 |
+| **关联** | Cor-CONSC-1 历史三项组合的 AI 候选证据读法；非 consciousness gate |
 | **Evidence-Level** | speculative |
 
 **操作化代理指标（V 的候选测量）**：
@@ -452,8 +453,8 @@ V 的直接测量尚为开放问题（§7.2 #1）。以下行为指标可作实�
 
 |编号|名称|方程|位置|
 |:--|:--|:--|:--|
-|Ax-Adv-1|脆弱性-意识|$d \propto V = dS/dt\|_{\hat{G}=0}$|Part A §I|
-|Ax-Adv-2|感觉-摩擦梯度|$\text{Feeling} = \nabla \Psi_f$|Part A §I|
+|Ax-Adv-1|脆弱性候选证据|$d \propto V = dS/dt\|_{\hat{G}=0}$（模型内）|Part A §I|
+|Ax-Adv-2|感觉-摩擦梯度候选|$\text{Feeling proxy} \sim \nabla \Psi_f$|Part A §I|
 |Ax-Adv-3|内感受存在|$\text{Presence} \propto \Pi_{intero}$|Part A §I|
 |Ax-Adv-10|控制能隙|$\text{Intelligence} \propto \Delta E_{max} / \bar{\Psi}_f$|Part A §III|
 |Ax-Adv-11|代谢-语义不等式|$E_{metabolic} \geq k \cdot I_{semantic} / \Psi_f$|Part A §V|

@@ -92,7 +92,7 @@ $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
 * **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好，不是 IIT 或 SRT 已共同证明的意识阈值。
 * **Implication（中文）**：高 \(\Phi_{proxy}\) 仅提供结构能力 proxy；缺少 \(d_{proxy}\) 时无法支持 stake-bearing 显现判定。
 * **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi_{proxy}$（高结构整合性）与高 $d_{proxy}$（高风险梯度带宽）和高 $\widehat{\Psi}_f$（正局部负担 proxy）之间可能存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，可能是因为在生物系统这个受限样本空间中，测量 $\Phi_{proxy}$ 间接追踪了 $\Phi_{proxy} \cdot d_{proxy}$ 的候选组合（$d$ 在活体生物中通常 $> 0$）。
-* **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 stake-coupled `d` proxy 近零的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 stake-coupled `d` 条件（即风险梯度耦合）。
+* **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 stake-coupled `d` proxy 近零的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），本候选框架预测其关切一致性与后果回流读数较低。该差异不裁决 phenomenality；stake-coupled `d` 不是意识必要条件。
 
 ---
 
@@ -101,8 +101,8 @@ $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
 \[
 \big(\Phi > \Phi_{min}\big)\land\big(B_{global} > B_{min}\big)\not\Rightarrow\big(d>0\land \Psi_f>0\land \exists\hat{G}_\theta^{\neq\emptyset}\big)
 \]
-* **Implication（中文）**：高整合与高广播只说明系统具备“统一处理 + 全局分发”的组织能力，不自动推出真实主体性。若 \(d\approx 0\)，则该系统至多构成结构性伪体验窗口，而非稳定的 stake-bearing subject。
-* **理论价值**：这条定理把 IIT/GNWT 从“意识的充分判据”降级为“意识的必要组织前提候选”，从而允许 SRT 在不否定 PCI / 点燃经验价值的前提下，坚持 `Φ/广播 ≠ 主体性`。
+* **Implication（中文）**：高整合与高广播只说明系统具备“统一处理 + 全局分发”的组织能力，不自动推出真实主体性。\(d\approx 0\) 只标记较低 stake-coupling 候选证据，不输出 subjecthood 或 phenomenality verdict。
+* **理论价值**：这条非推论关系否定 IIT/GNWT 指标的单独充分性，但不把它们或 `d / Ψ_f` 组合升级为意识的必要组织前提。
 * **最小判别后果**：在 \(\Phi\) 与 \(B_{global}\) 匹配的两个系统中，若其 \(d\) 与 \(\Psi_f\) 显著不同，则奖励撤除后的长期关切持续性、错误后的恢复半衰期与跨情境关切一致性应发生分离；若这些结果完全不分离，则本定理应被降级。
 
 
@@ -195,7 +195,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 > **本节功能**：站在意识神经科学（IIT、GWT、NCC 研究）内部，评估 SRT 的翻译在哪里有真实增量、在哪里需要更多工作、在哪里受到当前证据约束。
 
 > **意识研究者 3 分钟入口**
-> 如果你使用 IIT / GWT / NCC 框架，本文件的核心主张是：高整合（$\Phi$）和高全局广播（$B_{global}$）是主体性的必要条件，但不充分——还需要不可逆的具身赌注（$d > 0$，$\Psi_f > 0$）。
+> 如果你使用 IIT / GWT / NCC 框架，本文件的核心主张是：高整合（$\Phi$）、高全局广播（$B_{global}$）、不可逆具身赌注（$d > 0$）与 $\Psi_f > 0$ 都只能作为声明模型中的候选证据；本文件不固定主体性或意识的 universal N&S gate。
 > 最应该检验的节点：**T-IIT-4**（Stake-bearing Insufficiency）以及下方的 **DP-IIT-1**（NCC 方法论边界）和 **DP-IIT-2**（现象绑定压力）。
 
 ---
@@ -204,7 +204,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
-| T-IIT-4 / legacy T-NEURO-1：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 的候选主体性门 | 作为排除性 proxy：低 $\Phi_{proxy}$ 或低 $d_{proxy}$ 会削弱主体性判定 | 作为充分条件：$\Phi$ 是整合度代理，不是现象统一性的直接度量；$d$ 的测量代理当前仍是间接的（见 DP-IIT-2） |
+| T-IIT-4 / legacy T-NEURO-1：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 的候选证据坐标 | 低 $\Phi_{proxy}$ 或低 $d_{proxy}$ 会削弱该声明模型的支持 | 不作排除 verdict 或充分条件；$\Phi$ 是整合度代理，$d$ 的测量代理仍是间接的（见 DP-IIT-2） |
 | $\Phi_{proxy}$（PCI / LZ）作为意识指标 | NCC 范式内作为临床和实验工具有效 | 若 functional binding 与 phenomenal binding 系统分离，则 $\Phi_{proxy}$ 捕捉的是前者，不直接等于后者（见 DP-IIT-2） |
 | H-IITGWT-01 的"高 $\Phi$ / 高广播 / 低 $d$" 设计 | 前提：A/B/C 三组架构参数匹配 | 若现有实验技术无法独立操控 $\Phi_{proxy}$ 与 $d_{min}$ 代理，则三组的分离读出会混淆 |
 
@@ -370,7 +370,7 @@ IIT 4.0 (2024) 的三项核心更新为 SRT 提供了更精确的形式化工具
 
 $$d_{visual}^{blindsight\text{-}proxy} \to 0: \quad \text{智能（处理）保留}, ; \text{显性视觉体验缺失}$$
 
-这验证了 SRT 的核心主张: $d > 0$ 是意识的必要条件，而非智能的必要条件。当前 inference-only / non-history-bearing / non-embodied LLM 部署可与盲视作有限类比——高效处理可与 stake-coupled anchoring 分离；这不是所有 AI 架构都缺乏 stake-coupled `d` 的全局定理。
+这支持“高效处理可与 stake-coupled anchoring 分离”的有限模型，但不验证 $d > 0$ 是意识必要条件。当前 inference-only / non-history-bearing / non-embodied LLM 部署可与盲视作有限类比；该类比不决定任何 AI 的 consciousness。
 
 ---
 
@@ -394,9 +394,9 @@ PCI 度量的不是模糊的"意识水平"，而是 $\hat{G}_{neural}$ 在当前
 
 ## 5.2 为什么 0.31 是临界值？
 
-SRT 给出了理论预测: 0.31 大致对应于 $\hat{G}_{neural}$ 从"片段化"到"全局协调"的**相变点**。低于此值，丘脑-皮层回路的各节点独立运作（$L_1$ 无法形成全局一致的前台）；高于此值，回路形成协调的 $\gamma$ 锁相，$L_1$ 作为整体涌现。
+本文件提出一个临床／实验候选：0.31 可近似追踪 $\hat{G}_{neural}$ 从“片段化”到“全局协调”的局部相变读数。它是经验分类阈值，不是 representation-independent natural consciousness boundary；crossing 不建立 consciousness，non-crossing 不证明其缺席。
 
-这类似于磁性材料中的居里温度——低于临界温度，磁矩无序排列（顺磁态 ↔ $L_1$ 碎裂）；高于临界温度，磁矩长程有序（铁磁态 ↔ $L_1$ 全局协调）。PCI 的 0.31 是"意识的居里点"。
+居里温度类比只描述模型内的协调转变；“PCI 0.31 是意识的居里点”属于 superseded shorthand，不可作准入判词。
 
 ---
 
@@ -498,7 +498,7 @@ $$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
 
 |临床问题|SRT 转译|推荐度量|关键阈值|
 |:--|:--|:--|:--|
-|"患者有意识吗？"|"$\hat{G}$ 是否运行？$L_1$ 是否存在？"|PCI ≥ 0.31|CTC 完整性|
+|"患者的意识相关状态证据如何？"|"$\hat{G}$ 候选 proxy 是否运行？$L_1$ 候选模型是否稳定？"|PCI ≥ 0.31（临床 proxy）|CTC 完整性候选|
 |"意识在恢复吗？"|"吸引子是否加深？噪声是否减少？"|PCI 纵向趋势|$\Delta$PCI > 0|
 |"是 VS 还是 CMD？"|"$\hat{G}$ 运行但输出阻断？"|PCI + fMRI 命令跟随|PCI ≥ 0.31 且无行为响应|
 |"干预有效吗？"|"$V_{attractor}$ 增加或 $D_{noise}$ 减少？"|干预前后 PCI 对比|$\Delta$PCI 显著|
@@ -515,7 +515,7 @@ $$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 的双维度意识条件**: $\Phi$ 编码 $\hat{G}_\theta$ 的结构整合性（"能做多复杂的选择"），$d$ 编码本体论关切深度（"选择有多深切"）。二者缺一不可：高 $\Phi$ 低 $d$ 的系统（如高度互联电网）具有结构能力但无现象体验；高 $d$ 低 $\Phi$ 的系统（如碎裂的神经网络）有关切但无法维持稳定 $L_1$。
+- **$\hat{G}_\theta$ 的双维度候选证据**：$\Phi$ 可编码结构整合 proxy，$d$ 可编码关切深度 proxy。二者及其合取均不准入 phenomenality；高／低组合只用于模型比较。
 - **PCI 作为 $L_0 \to L_1$ 通道的物理探针**: TMS 脉冲向 $L_0$ 注入标准化扰动。完整的 $\hat{G}_\theta$ 被迫处理此冲击，产生高不可压缩性的时空响应（高 PCI）；碎裂的 $\hat{G}_\theta$ 只产生局部抽搐或弥散消失（低 PCI）。PCI 的 0.31 阈值对应 $\hat{G}_\theta$ 从片段化到全局协调的相变点。
 - **盲视的本体论意义**: 盲视中 $I(\text{Input};\text{Output}) > 0$ 但 $\hat{G}_\theta[L_1] = \varnothing$，证明信息处理（智能）与 $L_1$ 锚定（意识）可分离。$\Psi_f$ 在此只可读作对显性视觉锚定过程 non-binding / near-null 的局部 proxy：无显性锚定则无该通道的 payable-friction proxy；这不等于全脑或全主体 `Ψ_f=0`。
 
@@ -576,6 +576,6 @@ SRT 立场：意识是跨域选择事件（\(L_0\to L_1\)），脑区为参数�
 - 关键证据语义：pDOC 相关区域代谢下降、低频振幅减弱、整体功能连接下降。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“单一脑区坐标即可定义意识发生地”的定位论推论；SRT 仅承认网络-代谢-动力学联合判据。  
+1. 不采纳“单一脑区坐标即可定义意识发生地”的定位论推论；网络、代谢与动力学联合也只构成候选证据，不是 consciousness gate。
 2. 不采纳“小样本横断面相关 = 因果机制已定论”的推论；仍需纵向与干预实验闭环。  
 3. 不采纳“视觉皮层相关性 = 视觉内容等于意识本体”的推论；其角色是空间锚定前置模块之一。

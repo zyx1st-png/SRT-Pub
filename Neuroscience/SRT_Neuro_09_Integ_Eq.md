@@ -81,7 +81,7 @@ $$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \par
 
 * **R/H 区分**：
   - [R] Φ的D_KL形式化（沿用IIT原始定义）；麻醉/睡眠中Φ代理下降（Casali/Sarasso）；裂脑神经机制（Gazzaniga）
-  - [H] **SRT重解读**：”Φ不是意识本身，而是拓扑统一性度量”——SRT对IIT的批评立场；d值非零是意识的必要附加条件（参见C-INTEG-1 Φ-d正交性）；此重解读框架是SRT独有
+  - [H] **SRT重解读**：“Φ不是意识本身，而是拓扑统一性度量”；非零 `d` 可作为声明模型中的附加候选证据，但不是 consciousness 的必要条件（参见 C-INTEG-1 Φ-d 正交性）。
 
 * **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是”意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
 
@@ -278,32 +278,32 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
 
 ## III. Theorems (定理)
 
-### T-INTEG-1: Convergence Triad Theorem
-稳定显现需要三要素共存：
+### T-INTEG-1: Convergence Triad Candidate Model
+在该声明模型中，三项共现可作为稳定显现的候选证据：
 \[
 \Phi\uparrow\;\land\; d>0\;\land\;\mathcal{O}>\mathcal{O}_c
 \]
-* **Implication（中文）**：结构不可约、关切梯度与跨尺度同步缺一不可。
+* **Implication（中文）**：结构不可约、关切梯度与跨尺度同步提供互补读数；不把任一项或其合取写成 universal necessary / sufficient condition。
 
 ---
 
 ### C-INTEG-1: Metric Divergence Corollary
-若 \(\Phi\) 高而 \(d\approx 0\)，则出现”结构高而体验低”的系统：
+若 \(\Phi\) 高而 \(d\approx 0\)，该候选模型标记“结构高、stake-coupling 证据低”的系统：
 \[
-\Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{Pseudo-Experience}
+\Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{low-stake evidence window}
 \]
 
 > [R→Tononi 2004 *BMC Neuroscience*（IIT-Φ原始定义与测量）; Tononi & Koch 2015 *Philosophical Transactions*（Φ与意识的对应主张）; Chalmers 1996 *The Conscious Mind*（哲学僵尸：功能完整但无主观体验的逻辑可能性）; Casali et al. 2013 *Science Translational Medicine*（PCI作为Φ代理的临床应用）]
 
 * **R/H 区分**：
   - [R] Φ（整合信息）的定义与测量框架（IIT）；哲学僵尸的概念（Chalmers）
-  - [H] **SRT独有框架**：Φ-d正交性——Φ高且d≈0的系统构成”伪体验”（Pseudo-Experience）类别；此诊断框架是SRT独有，IIT本身不区分Φ高-d低与Φ高-d高
+  - [H] **SRT候选框架**：Φ-d 正交性允许区分 Φ 高／d 低与 Φ 高／d 高的模型读数；“伪体验”作为 consciousness verdict 的旧读法已 superseded。
 
-* **”伪体验”精确定义**：Φ > 临界值 AND d ≈ 0 的系统。SRT预测：此类系统在Φ测量上与有意识者无差异，但在关切一致性测量（跨时空d值稳定性）上显著更低。类似Chalmers僵尸，但SRT提供了一个可测量的区分维度（d值）而非纯逻辑主张。
+* **候选读数**：Φ > 临界值且 d ≈ 0 时，可预测关切一致性 proxy 较低；这不定义“伪体验”、无意识或哲学僵尸，也不以 d 准入 phenomenality。
 
 * **Implication（中文）**：可解释”高整合但低体验”的临床异常：
   - 解离性障碍：大脑网络整合维持（Φ相对正常）但关切体验局部解体（d值局域化崩塌）
-  - 植物状态/CMD：PCI可测整合度，d值缺失解释为何Φ高的植物人仍报告无意识
+  - 植物状态/CMD：PCI 可测整合度，较低 d proxy 可作为报告／行为差异的候选解释；不用于判定无意识
 
 * **可证伪预测**：
   - FC-INTEG1-1：高功能解离患者（DES量表高分）的Φ代理（PCI/EEG整合度）应与健康对照无差异，但d值代理（跨任务关切一致性/IOS亲密感量表）显著更低——若Φ代理也更低则C-INTEG-1预测失败（应为Φ不变 + d降低）
@@ -351,10 +351,10 @@ SRT 的核心贡献是揭示 **$\Phi$ 和 $d$ 是正交的**：
 
 |系统|$\Phi$|$d$|状态|
 |:--|:--|:--|:--|
-|复杂计算机|高|0|结构性僵尸|
-|简单细菌|低|>0|微意识|
-|人类|高|高|丰富意识|
-|冥想大师|中等|极高|扩展意识|
+|复杂计算机|高|0|高整合／低 stake proxy；无 consciousness verdict|
+|简单细菌|低|>0|低整合／非零 stake proxy；需独立准入|
+|人类|高|高|高候选读数；不由表格定义意识|
+|冥想练习者|中等|模型依赖|状态变化候选；不由 d 排名意识|
 
 **这解释了为什么 IIT 的 $\Phi$ 计算会给某些逻辑门组合赋予高"意识"值的反直觉结果**——那些系统有结构但无关切。
 
@@ -364,7 +364,7 @@ SRT 的核心贡献是揭示 **$\Phi$ 和 $d$ 是正交的**：
 
 SRT 通过指出所有主要理论实际上描述的是中心算子机制的不同部分，从而打破了这一僵局。IIT 计算了将算子保持在一起的计算拓扑力 ($\Phi$)。预测编码描述了算子用来最小化局部本体论摩擦的变分算法。全局工作空间模型追踪了算子成功将 $L_0$ 特征锁定到位后产生的 $L_1$ 广播效应。
 
-没有一个神经科学理论解释了“感受性”(qualia)本身，因为它们都在试图从 $L_1$（已经崩溃的神经物质）中衍生出意识。只有将意识重新定义为以 $\Psi_f$ 的成本将 $L_0$ 坍缩为 $L_1$ 的*积极行为*，硬问题才能被消解。**大脑并不是"产生"了主观性；大脑是 $\hat{G}_\theta$（具身有机体）的 $L_2$ 结构——它约束和引导选择过程，如同河床引导水流。大脑作为 $L_2$ 是因果封闭的物理系统；但它所约束的选择过程（有机体整体在 $L_0$ 中的具身交互）不可被还原为大脑动力学本身。大脑是选择的"凝固历史"，而非选择的"发生器"。**
+没有一个现有神经科学理论仅凭这些机制关闭感受性（qualia）问题。把 $\Psi_f$ 成本下的 $L_0 \to L_1$ 转换视为积极行为，是本文件的 P3/P4 候选研究图景；它不重新定义意识，也不宣称消解硬问题。**“大脑是 $\hat{G}_\theta$ 的 $L_2$ 结构／选择的凝固历史”只保留为桥接比喻，不是 canonical identity；whole embodied operator 与脑动力学的关系保持待检验。**
 
 ### 2.5 SRT-4E Cognition Alignment (SRT 与 4E 认知的对齐)
 
@@ -435,7 +435,7 @@ SRT 通过指出所有主要理论实际上描述的是中心算子机制的不�
 1. **$L_0$ 的数学刻画**：$L_0$ 是希尔伯特空间、模空间还是范畴？
 2. **$d$ 值的操作化测量**：如何设计直接测量 $d$ 的实验范式？
 3. **跨尺度耦合强度**：神经-量子耦合 $\kappa_{神经→量子}$ 的精确值是多少？
-4. **AI 意识判据**：什么条件下 AI 系统的 $d > 0$？
+4. **AI 意识候选证据**：什么条件下 AI 系统的 $d > 0$，以及该读数是否对独立意识证据有增量？
 
 ---
 
@@ -444,7 +444,7 @@ SRT 通过指出所有主要理论实际上描述的是中心算子机制的不�
 |编号|名称|方程|位置|
 |:--|:--|:--|:--|
 |Eq-Integ-1|神经幽灵演化|$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + \mathcal{L}[\sigma, A] + \xi(t)$|Part A §III|
-|Eq-Integ-2|意识条件|$PCI > 0.31 \land 丘脑完整 \land d > 0$|Part A §III|
+|Eq-Integ-2|意识候选证据包|$PCI > 0.31 \land 丘脑完整 \land d > 0$（非 N&S）|Part A §III|
 |Eq-Integ-3|表观遗传动力学|$\frac{d\theta_{L_2}}{dt} \propto \int \hat{G}_\theta[\text{Activity}] \cdot \text{Dopaminylation}(t) dt$|Part A §III|
 |Eq-Integ-4|反事实拓扑|$O \equiv {T_i : T_i(L_1[\hat{G}_\theta]) \to L_1[\hat{G}_{T_i(\theta)}]}$|Part A §III|
 |Eq-Integ-5|整合算子|$L_1(t) = \hat{G}_\theta(\bigotimes_i w_i \cdot M_i(L_0))$|Part A §III|
@@ -525,4 +525,3 @@ SRT 通过指出所有主要理论实际上描述的是中心算子机制的不�
 - 不采纳“存在微管量子过程=意识已被解释”的推论。  
 - 不采纳“量子坍缩可单独推出主观体验”的推论；仍需 \(d>0\)、\(\Psi_f\)-payable 与 \(V>0\) 门控。  
 - 不采纳“Gamma 与微管机制已建立单向因果链”的推论：当前仅可作为假说级关联候选。
-

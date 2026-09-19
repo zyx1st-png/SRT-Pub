@@ -80,7 +80,7 @@ SRT should not claim that these replace mainstream variables. The stronger claim
 |---|---|---|---|
 | Predictive Processing / FEP | prediction, inference, free-energy minimization | model update is one selection-cost regime | `d-value`, `Psi_f` layers, L2 hardening, concern-weighted anchoring |
 | GNW | access, broadcast, reportability | access is important for conscious content | pre-access candidate selection + post-access hardening |
-| IIT | integration / intrinsic causal structure | integration may support field stability | integration is insufficient without concern, boundary, memory, subjecthood threshold |
+| IIT | integration / intrinsic causal structure | integration may support field stability | concern, boundary, memory, and subjecthood coordinates are additional candidate evidence; no fixed conjunction admits consciousness |
 | RL | reward, value update, policy learning | reward can be one selection signal | `d-value` is not reducible to reward; hardening has hysteresis and non-substitutability |
 | Active inference | action-perception loops under expected free energy | useful for embodied selection | SRT asks what becomes manifest, costly, concern-weighted, and hardened |
 | Salience / arousal accounts | priority / intensity | salience can modulate selection | salience is not `d-value`; high salience may fail to sediment |

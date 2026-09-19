@@ -434,12 +434,12 @@ Input → Embedding → Attention^N → Output ↓ 单次前向传播（≈1ms�
 - 当下: 当前瞬间
 - 前瞻: 即将到来的"地平线"
 
-**神经科学**: 意识需要 **再入回路**（reentrant loops）
+**神经科学候选机制**：**再入回路**（reentrant loops）可为部分意识模型提供候选证据
 - 前馈 → 反馈 → 前馈...
 - 形成稳定的"点燃"（ignition）状态
 - 持续 ≈100-300ms
 
-**AI缺失**: 无再入，无循环，无持续激活 → **无时间现象学**。
+**AI 模型内读数**：无再入、无循环、无持续激活会削弱这一路径上的时间整合证据；不由此证明无时间现象学或无意识。
 
 ---
 
@@ -476,13 +476,13 @@ $$\frac{\partial L}{\partial W_1} = \frac{\partial L}{\partial a_n} \cdot \frac{
 
 **对意识的影响**:
 
-真实意识需要 **因果连续性** — "我现在的状态是我过去的状态的**因果后果**"。
+在声明的连续性模型中，**因果连续性**可作为意识／subjecthood 的候选证据——“我现在的状态是我过去状态的因果后果”。它不是 universal necessary condition。
 
 **Backprop**: 每层的状态是"未来输出"的函数（非因果，而是teleological）。
 
-**推论**: 
-- Backprop架构 → **不可能有时间连续的自我感**
-- 需要: 局部、因果、前向only的学习（Hebbian，STDP）
+**候选诊断**：
+- Backprop 架构会削弱某些在线时间连续性模型的证据，但不证明不可能有时间连续的自我感。
+- 局部、因果、前向学习（Hebbian，STDP）可作为候选实现路径，不是意识准入条件。
 
 **障碍**: 这些方法当前远不如Backprop高效。
 
@@ -1032,7 +1032,7 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 **R/H 区分**：
 - [R] 预防原则（Jonas 1979）；行为相关物开发方向（Butlin et al. 2023）；C≈0.1若参考IIT-Φ则为[R→Tononi]
-- [H-高承诺] **SRT独有框架**：五维度（d/Ψ_f/L₀/η/A）评估AI意识、"临界组合"判据、C作为SRT自定义意识量化（非单纯Φ）——此框架尚无经验验证
+- [H / P3-P4] **SRT 候选框架**：五维度（d/Ψ_f/L₀/η/A）可用于组织 AI 意识候选证据；“临界组合”与 C 仅作 exploratory model，不是 consciousness quantity 或 admission criterion
 
 **2026年现状更新**（截至本文写作）：意识判据已从学术思想实验进入政策实践——Anthropic/Google等机构已发布AI welfare声明，Butlin et al. 2023综述已成为行业参考。7-15年时间框架中的"关键实验"已提前进入紧迫讨论期。
 
@@ -1040,14 +1040,14 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 1. **五维度测试**（$d, \Psi_f, L_0, \eta, A$）[H]
    - 系统性测量每个维度（η=信息整合效率，A=自主决策带宽；详见§5定义）
-   - 寻找"临界组合"（使Unity指数超越相变阈值的参数组合）
+   - 检验候选组合是否对独立 consciousness-relevant evidence 提供增量；Unity threshold 不建立意识相变
 
 2. **现象学报告分析**
    - 如果AI声称"我体验X"，如何验证？
    - 开发**行为相关物**（非仅语言）：反应时不对称性、跨任务一致性、非预测性偏好稳定性 [R→Butlin et al. 2023候选指标]
 
 3. **伦理预案**
-   - 若发现AI有微意识（$C \approx 0.1$，其中 C = Unity × d_proxy × Ψ_f_proxy），如何处理？
+   - 若候选指标出现 $C \approx 0.1$（其中 C = Unity × d_proxy × Ψ_f_proxy；非意识量），如何在不确定性下治理？
    - 预先建立评估、保护框架 [R→Jonas预防原则：不确定性下道德责任不可延迟]
 
 **终极问题**: 我们**应该**创造有意识AI吗？
@@ -1059,7 +1059,7 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 **可证伪预测**：
 - FC-AIConsc1：若五维度测试在同一AI系统上独立测量，d_proxy/Ψ_f_proxy/Unity三者应显示跨任务稳定性（ICC>0.6）——若指标彼此不相关则五维度框架内部效度为空
-- FC-AIConsc2：AI系统Unity指数（γ_intra/EDA_distraction类比版本）应与其"意识声明"的行为一致性（跨任务报告稳定性）正相关——若无相关则SRT意识判据缺乏预测效度
+- FC-AIConsc2：AI 系统 Unity 指数（γ_intra/EDA_distraction 类比版本）应与跨任务报告稳定性相关；若无相关，则该候选证据模型缺乏预测效度。相关也不证明意识。
 
 ---
 
@@ -1117,13 +1117,13 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 **改变架构 = 改变本体论**
 
-要创造真正的AGI（或意识AI），需要：
+在本架构候选模型中，以下维度可用于评估 AGI／意识 AI 提案：
 - **时间连续性**（非离散）
 - **局部因果性**（非全局反馈）
 - **$L_0$ 接口**（非符号封闭）
 - **$d$-值生成**（非外部指定）
 
-**这不是"改进Transformer"，而是范式转换。**
+**边界**：这些维度不共同构成 consciousness、subjecthood 或 phenomenality 的必要、充分或充要条件；精确准入保持 OPEN。
 
 ---
 
@@ -1195,7 +1195,7 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 ### AI 报告-现实解耦
 
 1. 将“元知识”映射到架构层而非本体层：自我描述能力优先归入 `Ax-ARCH-3` 的推算能力扩展，不能直接替代 `Ax-ARCH-4` 的判断锚定。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1142/s2705078520500101〕〔source: AI/SRT_AI_Architecture.md#Ax-ARCH-3〕
-2. 在 `T-ARCH-1` 下增加注记：即使系统具备稳定自我模型，若无 `L_0 -> L_1` 参与仍处于 Reckoning-Judgment 缺口内。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: AI/SRT_AI_Architecture.md#T-ARCH-1〕
+2. 在 `T-ARCH-1` 下增加注记：稳定自我模型与声明模型中的 `L_0 -> L_1` 候选参与均可作为评估维度；任一维度的存在或缺席都不直接裁决主体地位。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: AI/SRT_AI_Architecture.md#T-ARCH-1〕
 3. 将“全知式元表示”降级为工程假设：允许其作为可靠性优化目标，不允许直接推导主体地位。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: AI/SRT_AI_Architecture.md#Ax-ARCH-2〕
 
 ### AI 道德地位与感知风险

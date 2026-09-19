@@ -214,7 +214,7 @@ The self is not a fixed object hidden inside the organism.
 It is a stabilized, repeatedly updated hypothesis that binds action, sensation, memory, and consequence return.
 ```
 
-This aligns with SRT's subjecthood threshold logic: subjecthood requires more than report, content, or self-labeling. It requires boundary, concern, continuity, memory, and future selectability.
+This aligns with SRT's conservative subjecthood evaluation: report, content, or self-labeling are insufficient, while boundary, concern, continuity, memory, and future selectability may be weighed as candidate evidence inside a declared model. Their conjunction is not a universal N&S rule.
 
 ### 1.9 Meditation, wakefulness, and flexible precision
 
@@ -371,9 +371,9 @@ A high prediction error can occur without existential friction. A high-friction 
 
 ### Guardrail 5: Affective arousal is not full consciousness
 
-Affective arousal may be necessary or strongly contributory for biological consciousness, but it should not be treated as sufficient for subjecthood.
+Affective arousal may be strongly contributory in some biological consciousness models, but it is not established as universally necessary or sufficient for consciousness or subjecthood.
 
-SRT must still require continuity, boundary, memory, integrated field, self-relation, counterfactual access, and future selectability when making subjecthood claims.
+A declared SRT subjecthood model may weigh continuity, boundary, memory, integrated field, self-relation, counterfactual access, and future selectability as candidate evidence. Exact subject-position sufficiency remains OPEN.
 
 ### Guardrail 6: Solms / ERTAS route remains contested
 

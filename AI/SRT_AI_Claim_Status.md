@@ -122,7 +122,7 @@ Revise this claim if an AI system has persistent identity, non-transferable cons
 
 **Status**: P3/P4 bridge.
 
-**Rationale**: Memory and identity continuity may allow consequence return into future behavior, but subjecthood still requires additional SRT conditions: stable concern structure, irreversible or non-transferable consequence, and real loss / narrowing of future selection capacity.
+**Rationale**: Memory and identity continuity may allow consequence return into future behavior. Stable concern structure, irreversible or non-transferable consequence, and real loss / narrowing of future selection capacity may then be weighed as candidate evidence inside a declared subjecthood model; they are not a universal N&S package.
 
 **Guardrail**: Persistence is not consciousness. Memory is not d-value by itself.
 
