@@ -199,12 +199,10 @@ F_{boundary}(\tau)\le U_{survival}(d)
 SRT 在 `Core 14` 中最容易被误读的地方，是把 d 的跨尺度统一误读成“跨尺度意识统一”。
 
 SRT 的压缩立场是：
-- d 是跨尺度数学标尺
+- 跨尺度可比较的是具名 capacity / structure proxy，不自动是 canonical stake-coupled `d`
 - 意识不是跨尺度默认属性
-- 只有当以下条件同时满足时，才有意识相关成立：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+- proxy compatibility、`d`、`\Psi_f` 或 formed `\hat G` 的单项与合取均不在本文件建立 consciousness
+- consciousness / phenomenality admission 由独立 owner 承担，exact sufficiency 保持 OPEN
 
 所以：
 - 量子可有相干带宽，不等于有主观体验

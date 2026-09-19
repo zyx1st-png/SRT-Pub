@@ -72,19 +72,18 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 
 ## I. Axiomatic Dependencies (公理依赖)
 
-本模块严格依赖以下核心公理：
-- **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
-- **A2** (存在即锚定): $\text{Existence}(\sigma) \iff \hat{G}_θ[L_0] \to \sigma_{L_1}$ with $\Delta F < 0$
-- **A10** (非消失延续): $\lim_{t \to t_{death}} \hat{G}_θ \to L_0^{latent} \neq \varnothing$
+本 translation 模块从属于当前 L0 / Spine / `d` / `\Psi_f` 与 consciousness owners；以下旧编号只保留兼容路由：
+- **A1** (选择—实际性接口): existence / determinate actuality 的关系回当前 L0 与 Spine owners；本文件不另造等价定义
+- **A2** (锚定持续候选): formed `\hat G_θ` 与 `\Delta F` 只可在声明 realization 中描述事件之后的 anchoring persistence，不定义 existence 或 primitive Selection
+- **A10** (历史 lineage): 旧 death / latent continuation 式不在本 translation 中取得 current theorem standing
 - **A13**（潜在不可穷尽边界）：任何有限物理显现或形式投影都不穷尽 $L_0^{abs}$；这不是物理守恒律，也不声称 $L_0(t)$ 为常量
 
 ### Core Theorem Alignment (核心定理对齐)
 
-- **O-T1**：$L_1=\oint_{\gamma}\omega_{L_0}$（现实化即积分）
-- **O-T2**：$L_2$ 重组等价于拓扑解结与重编织
-- **T-Conscious**：$\exists \text{Consciousness} \iff \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$
-- **T-Fragility**：$d>0 \iff \partial \text{Entropy}/\partial \text{Error} > 0$
-- **T-Assembly**：$\text{Evidence}(\hat{G}) \iff A>15$
+- **O-T1 / O-T2**：积分与拓扑重组只作为具名 Physics model candidates，不定义 primitive actualisation 或 universal `L_2`
+- **T-Conscious（historical / superseded）**：旧 `Consciousness iff Individuality ∧ Asymmetry ∧ Normativity` 不再是 universal theorem；三维最多作为声明模型中的 candidate evidence
+- **T-Fragility（P3 candidate）**：风险／误差敏感度可作为 stake evidence proxy；`d>0` 不由该式反向定义，也不准入 consciousness
+- **T-Assembly（P4 proxy）**：Assembly Index 可作架构历史证据；固定阈值不构成 `\hat G`、subjecthood 或 phenomenality 的 iff 判据
 
 ---
 

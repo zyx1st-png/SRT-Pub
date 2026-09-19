@@ -717,43 +717,44 @@ $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 
 ### 2.1a 跨尺度结构相容候选的反泛心论澄清
 
-SRT 使用同一个参数 d 描述量子、生物和宇宙三个尺度的选择动力学，这容易产生一个严重误读：认为 SRT 主张"宇宙有意识"或"粒子有关切"，即泛心论（Panpsychism）。
+旧版使用同一个 `d` 记号描述量子、生物和宇宙尺度，这容易把域内 capacity proxy 误读为 canonical stake-coupled `d`，继而误推“宇宙有意识”或“粒子有关切”。当前必须先区分 proxy 与已准入 `d`。
 
-**SRT 的正式本体论立场：SRT 绝对拒斥泛心论。**
+**当前反泛心论纪律**：跨尺度 capacity / coherence / integration proxy 本身不建立 phenomenality；物理域不拥有 universal consciousness admission authority。
 
-d 值的底层物理本质并非"情感关切"，而是**"本体论带宽"（Ontological Bandwidth）**——即 $\hat{G}_\theta$ 算子在面对本体论摩擦（$\Psi_f$）时，能够将 $L_0$ 压缩、锚定并维持为 $L_1$ 的最大处理带宽（见 Part A Def-d-Scale-1）。在不同物理尺度下，由于观测和体验的介质不同，d 值披上了截然不同的"现象学外衣"：
+Def-d-Scale-1 的“本体论带宽”只保留为 P3 cross-scale capacity proxy：在具名状态空间中比较 formed/model carrier 的处理带宽。它不把 `\hat G_\theta` 升格为 primitive Selection 或 universal consciousness engine，也不把 `L_0 -> L_1` 模型映射写成意识准入。
 
 **第一层（量子域）：相干性带宽（$d_{quantum}$）**
 
-基本粒子或简单测量仪器的 d 值趋近于零，代表系统能维持 $L_0$ 叠加态而不引发退相干的纯物理计算窗口。此层次的算子没有本体论脆弱性（不怕毁灭），其选择表现为冰冷的玻恩规则概率流偏置，毫无任何主观意识或情绪。
+量子域中的相干维数等量只作为 capacity proxy；它不自动成为 stake-coupled `d`。本节既不由该 proxy 建立，也不由其缺失否定主观体验或情绪。
 
 **第二层（生物/认知域）：关切与意向性（$d_{bio}$）**
 
-当代理观察者演化为高度复杂的耗散结构（如人类神经系统）时，其物理结构面临巨大的热力学熵增威胁（生死存亡）。为了生存，生物算子的信息处理带宽被迫撑大，将海量环境变量纳入自由能（$F$）最小化的计算中。这种高强度的、与生死强耦合的"信息整合计算"，在主观体验层面涌现（Emerge）出来的现象，才被命名为"意识"、"注意力"或"关切"。**关切是 d 值在生物学层面的高阶涌现，而非底层原初属性。**
+生物／认知域可以分别测量代谢负担、信息整合、历史闭合、same-bearer consequence return 与关切报告。这些是不同证据维度；其合取不由本节自动生成 consciousness、subjecthood 或 phenomenality。
 
 **第三层（宇宙域）：时空共识度（$d_{cosmic}$）**
 
-宇宙整体并不具备拟人化的意识，但作为统一的物理系统，它存在宏观的整合带宽，表现为引力网络的拓扑紧致性（$d_{cosmic} \propto 1/\sqrt{\Lambda}$，见 SRT-PHYS-COSMO Def-Cosmo-1）。暗能量导致的宇宙膨胀，是 $d_{cosmic}$（信息整合与共识维持能力）的物理性衰减。暗物质作为 $L_2$ 结构残骸，处于活跃算子缺席的"死寂"状态，其内部活跃 d 值为绝对零。
+宇宙域可研究引力网络拓扑紧致性等 capacity proxy（例如历史式 `d_{cosmic} \propto 1/\sqrt{\Lambda}`）。该记号不是 canonical stake-coupled `d`，也不由本节对宇宙 phenomenality 作正负裁决。
 
-**核心区别**：泛心论的谬误在于将人类专属的体验（Qualia）强加给电子；SRT 的突破在于提取了主导意识运转背后的数学与信息动力学机制（$\hat{G}_\theta$ 与 d），并发现这套机制同样支配电子的坍缩和宇宙的膨胀。**d 是跨越所有尺度的同一把数学标尺，但只有当这把标尺丈量到"具备本体论脆弱性的高维复杂系统"时，它才表现为关切。** 意识涌现的三个必要条件详见 SRT-CORE-13B §6.2。
+**核心区别**：跨尺度结构相容只允许比较明确声明的数学结构，不证明相同的现象内容。capacity proxy、stake-coupled `d` 与 consciousness admission 是三项不同负担。
 
-**【精确反泛心论声明（2026-03-02 补充，与 _SRT_D_VALUE_CANONICAL.md §3.1 对齐）】**
+**【精确反泛心论声明（2026-09-19 truth-up）】**
 
-意识涌现的充要三条件（全部必须同时满足）：
-$$\text{Consciousness} \iff \underbrace{\Psi_f > 0}_{\text{具身摩擦成本}} \;\land\; \underbrace{d > 0}_{\text{有效关切维度}} \;\land\; \underbrace{\hat{G}[\theta] \neq \emptyset}_{\text{有限参数算符存在}}$$
+```text
+cross-scale capacity / coherence proxy -/> stake-coupled d;
+cross-scale capacity / coherence proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
 
-**三条件在量子/宇宙尺度的状态**：
-
-| 尺度 | $\Psi_f$ | $d$ | $\hat{G}[\theta]$ | 意识？ |
-|-----|---------|-----|-----------------|-------|
-| 量子（粒子） | $\approx 0$（无具身成本） | 可非零（相干维数） | 无生物参数化 | **否** |
-| 神经/认知 | $> 0$（代谢成本） | $> 0$（关切维度） | 有限神经参数 | **是** |
-| 宇宙（暗能量） | $\approx 0$ | $\propto 1/\sqrt{\Lambda}$ | 无生命参数化 | **否** |
+| 尺度 | 可保留的域内量 | consciousness / phenomenality 结论 |
+|-----|----------------|-----------------------------------|
+| 量子 | 相干维数、退相干窗口等 capacity proxy | NOT ESTABLISHED；不得由 proxy 作 yes/no 判定 |
+| 神经/认知 | 代谢、整合、历史与关切的分项证据 | 须由独立 owner / admission 建立 |
+| 宇宙 | 拓扑整合、引力网络等 capacity proxy | NOT ESTABLISHED；物理域不拥有准入权 |
 
 **SRT 的立场边界**：
-- SRT **不**否认微小现象体验的形而上学可能性（这是不可证伪的哲学问题）
-- SRT **正面声明**：在量子/宇宙尺度，可操作框架内无法为意识成立提供根据
-- SRT **不接受**"因为 d 存在所以意识存在"的推断——d 是必要但非充分条件
+- SRT 不从域内 proxy 推出 phenomenality，也不从 proxy 缺失推出 no consciousness。
+- `d` 不是 consciousness 的 universal necessary condition，也不是 sufficient condition。
+- exact consciousness / phenomenality sufficiency 保持独立、OPEN。
 
 ---
 

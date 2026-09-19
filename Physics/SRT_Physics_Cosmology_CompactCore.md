@@ -188,10 +188,14 @@ SRT 试图把暗物质和暗能量重写为：
 这篇最容易被误读的地方是：
 - 把“宇宙尺度 d”误当成“宇宙主体意识”
 
-SRT 的边界非常明确：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+SRT 的边界是非蕴含而不是替代阈值：
+
+```text
+cosmic / quantum d-like capacity proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
+
+本 Physics translation 不拥有 consciousness / phenomenality 准入权；相关 standing 保持独立 gated / OPEN。
 
 因此：
 - 量子尺度可有带宽，不等于有体验

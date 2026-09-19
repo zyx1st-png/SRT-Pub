@@ -171,14 +171,14 @@ Each comparison should answer five things:
 ### What SRT adds
 
 - `L_2`：把规范、习惯、制度和共识硬化纳入同一结构（Enactivism 擅长描述当下生成过程，但对制度层固化机制不够明确）
-- `Ψ_f`：把生成的代价与赌注条件显式化。**注**：Enactivism 已有代谢代价概念（自创生需要能量维持），Ψ_f 的真正新增在于**本体论摩擦**（跨层级现实化的阻力，不只是物理能量代价，而是把 $L_0$ 可能性锚定为 $L_1$ 现实的结构性阻力）——两者是不同量纲的代价。
-- `d-value`：把主体性与单纯组织闭包区分开来（闭包系统不一定有关切带宽；d > d_UAL 是”关切主体”的额外要求）
+- `Ψ_f`：在声明 bearer / payability 模型中，可把不可无损外包的负担作为 candidate evidence；它不由本 comparison 自动成为 stake、subjecthood 或 consciousness 门槛。
+- `d-value`：在 owner-approved admission 下可组织 stake-coupled concern 的候选证据；`d > d_{UAL}` 不是“关切主体”的 universal requirement。
 
 ### Decisive question
 
 **什么把”能自我维持的系统”与”对存在具有真实关切的主体”区分开来？**
 
-**SRT 答案**：$d > d_{UAL} \land \Psi_f > 0$（Cor-CONSC-1）——系统不仅维持操作闭包，还须具有超过意识下限的关切带宽，并需承担跨层锚定的本体论摩擦代价。满足 autopoiesis 是必要条件，但不充分；满足 $d > d_{UAL}$ 且 $\Psi_f > 0$ 才进入”真实关切”区间。
+**SRT 的候选比较问题**：在已声明的 stake / bearer 模型中，`d`、`\Psi_f`、后果回流、历史连续与可重组性分别提供多少独立证据？Autopoiesis、concern、subjecthood 与 consciousness 必须分开定型；本 comparison 不用 `d > d_{UAL} \land \Psi_f > 0` 准入“真实关切”，也不拥有 universal threshold authority。
 
 ---
 

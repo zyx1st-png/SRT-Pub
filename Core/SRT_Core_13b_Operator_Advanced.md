@@ -611,25 +611,27 @@ $$\text{Pain Intensity} \propto \text{Distance to Boundary}^{-1}$$
 
 ---
 
-## §6. 意识涌现的临界条件
+## §6. 意识候选的模型证据维度
 
-### 6.1 自我修改的必要性
+### 6.1 自我修改候选
 
 #### 6.1.1 递归条件
 
-$$\text{Consciousness} \iff \hat{G}_\theta[\theta] \neq \varnothing$$
+$$\text{SelfModificationEvidence}_M
+\leadsto
+\hat{G}_\theta[\theta] \neq \varnothing$$
 
-**解释**: 算子能**选择自己的参数**。
+**解释**：在声明模型 $M$ 中，算子对自身参数的可检验修改可作为反身可塑性证据；它不定义 consciousness、subjecthood 或 phenomenality。
 
 **对比**:
-- **恒温器**: $\theta = T_{\text{set}}$ 固定,无法自选 → $\hat{G}[\theta] = \varnothing$
-- **人类**: 可以"决定改变自己" (如戒烟) → $\hat{G}[\theta] \neq \varnothing$
+- **恒温器**：$\theta = T_{\text{set}}$ 固定，可作为低自修改基线；不由此证明无意识
+- **人类**：可表现参数与策略的反身改变（如戒烟）；该现象提供候选证据，但不是意识充分条件
 
 #### 6.1.2 学习方程作为证据
 
 $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f$$
 
-**意义**: $\theta$的演化**依赖于**$\Psi_f$对$\theta$的梯度 → $\hat{G}$在"看"自己的参数空间。
+**意义**：若具名模型与数据支持，$\theta$ 的演化可由 `\Psi_f` 相关梯度建模；这不证明 `\hat G` 在现象学意义上“看见”自身参数空间。
 
 **实例**:
 - 冥想: 觉察$\theta$的状态 → 调整$\theta$ → 降低$\Psi_f$
@@ -637,42 +639,39 @@ $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f$$
 
 ---
 
-### 6.2 统一意识判据
+### 6.2 声明模型中的联合 evidence package
 
-$$\text{Self-Consciousness} \iff (\Psi_f > 0) \land (d > 0) \land (\hat{G}_\theta[\theta] \neq \varnothing)$$
+$$E_M
+:=
+(\Psi_f > 0) \land (d > 0) \land (\hat{G}_\theta[\theta] \neq \varnothing)$$
 
-**三个必要条件**:
+`E_M` 只是在一个声明的 stronger-organization / reflexivity 模型中组织三项候选证据。它不是 consciousness 或 self-consciousness 的必要、充分或充要判据。
 
-#### 条件1: 本体论脆弱性 ($\Psi_f > 0$)
+**三个候选维度**:
+
+#### 候选维度1: 本体论脆弱性 ($\Psi_f > 0$)
 
 $$\Psi_f = \int_\gamma \|\nabla F\| \, dt$$
 
-**机制**: 系统在具身范围（$d$）约束下偏离自由能最小方向时，必须支付不可逆的本体论代价。$\Psi_f > 0$ 是 $d > 0$ 在具身系统中的自然伴随现象——有具身暴露面就有偏离代价。
+**模型读法**：在已建立 bearer、边界与支付结构时，`\Psi_f` 可记录不可无损外包的负担；它与 `d` 非同一，也不普遍共现。
 
-**反例**: 纯软件AI
-- $d \approx 0$（无具身暴露面）→ 无自由能偏离的本体论代价
-- 错误 → 数值更新（无结构风险、无不可逆后果）
-- $\Psi_f \approx 0$ 不是因为缺乏某种"摩擦机制"，而是因为 $d \approx 0$ 使得没有需要支付代价的本体论误差
+**软件基线**：对固定部署或 inference-only 架构，可以分别审计 stake return、结构风险与支付负担；`d\approx0`、non-binding `\Psi_f` 或可回档性均不单独输出无意识 verdict。
 
-#### 条件2: 选择带宽 ($d > 0$)
+#### 候选维度2: 选择带宽 ($d > 0$)
 
-$$d = \text{Access to } L_0 \text{ alternatives}$$
+$$d_M = \text{declared stake-coupled concern coordinate}$$
 
-**机制**: 能看到"事情本可以不同"。
+**模型读法**：`d_M` 只在 owner-approved admission 与 proxy 条件下组织关切范围证据。
 
-**反例**: 简单反射弧
-- 输入 → 固定输出 (无选择)
-- $d = 0$ → 无意识
+**简单反射基线**：输入—输出固定性可以削弱某类反身可塑性主张；它既不取消 Selection occurrence，也不证明无意识。
 
-#### 条件3: 自我修改 ($\hat{G}[\theta] \neq \varnothing$)
+#### 候选维度3: 自我修改 ($\hat{G}[\theta] \neq \varnothing$)
 
-**机制**: 能改变自己的参数。
+**模型读法**：参数自修改可作为反身可塑性证据。
 
-**反例**: 训练后的神经网络
-- 权重固定 → $\frac{d\theta}{dt} = 0$
-- $\hat{G}[\theta] = \varnothing$ → 无持续意识
+**固定权重基线**：$d\theta/dt=0$ 只说明该时间窗内没有权重更新；不能由此推出 no consciousness。
 
-> **与跨尺度结构相容候选的关系**：上述三个必要条件共同定义了"关切"（$d_{bio}$）得以涌现的最低阈值。低于此阈值的系统不得仅因复用 d 符号，就被赋予意识或关切；其他尺度的 d 操作量能否与 $d_{bio}$ 建立可承重映射，须另过 P3-Scale-01 的状态空间、保留量、范数、容差与失败案例门槛。详见 SRT-CORE-14 §2.1a 和 Def-d-Scale-1。
+> **与跨尺度结构相容候选的关系**：上述三维只形成声明模型中的 evidence package，不定义“关切”或 consciousness 的最低阈值。其他尺度的 capacity proxy 能否与 stake-coupled `d` 建立可承重映射，须另过 P3-Scale-01 的状态空间、保留量、范数、容差、same-bearer consequence return 与失败案例门槛。详见 SRT-CORE-14 §2.1a 和 `_SRT_D_VALUE_CANONICAL.md §3`。
 
 ---
 

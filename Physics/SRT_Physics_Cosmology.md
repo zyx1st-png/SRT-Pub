@@ -461,7 +461,7 @@ $$ \Lambda_{eff} = \text{L}_0\text{ Permeation Pressure} $$
 $$ d_{cosmic} \propto \frac{1}{\sqrt{\Lambda}} $$
 暗能量主导可解释为宇宙整体 $d$ 值的衰减。
 
-> **Anti-Panpsychism Note**: $d_{cosmic}$ 度量的是宇宙维持信息共识的拓扑相干带宽——即 $\hat{G}_{cosmic}$ 能够维持时空统一性的物理范围——不携带任何形式的意识或情感内容。暗物质作为 $L_2$ 结构残骸（T-Cosmo-2），其内部不存在活跃的 $\hat{G}$ 操作，活跃 d 值为绝对零。意识是 d 值在满足三个必要条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$）的高复杂度生物系统中的高阶涌现。详见 SRT-CORE-13B §6.2 和 SRT-CORE-14 Def-d-Scale-1。
+> **Anti-Panpsychism Note（2026-09-19 truth-up）**: `$d_{cosmic}` 只是在声明 cosmology translation 中追踪拓扑相干／整合带宽的 domain proxy，不自动成为 canonical stake-coupled `d`。cosmic / quantum capacity proxy 不推出 phenomenality；同样，`\Psi_f > 0`、`d > 0` 与 formed `\hat G[\theta]` 的单项或合取也不是本文可用的 universal consciousness necessary / sufficient condition。本 Physics owner 不对宇宙、量子或生物系统作 consciousness yes/no admission；相关 standing 须回独立 consciousness / phenomenality owners。
 
 ### T-Cosmo-4: Neutrino Messenger Window (中微子信使窗口)
 这条材料真正加固的，不是“中微子很神秘”的叙事，而是宇宙学共识并不只靠电磁表面图像建立；对高遮蔽、致密、瞬变源区，我们需要一条低耦合的补充观测通道。
