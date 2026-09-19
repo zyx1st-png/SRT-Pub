@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: 1ea224d4
+source_commit: 26837c50
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 119fa9612b5fdfc2
+inputs_digest: 2a5000f39481ccd1
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 119fa9612b5fdfc2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `1ea224d4` |
+| 来源 commit | `26837c50` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -1045,9 +1045,9 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 主文件：`Philosophy/SRT_Political_Philosophy.md`
 - id：`SRT-POLITICAL-PHILOSOPHY`
 - layer：L1 / epistemic：bridge / status：axiomatic_hybrid_v1
-- 说明：把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一重写为多主体共同现实选择的生成—沉积—封闭—再打开过程；以 P2/P3 为主，并将制度判准与紧急状态边界显式标记为 P4
-- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供权利、授权与投票后验验证的子接口；本文件负责收口为完整政治哲学主文
-- 重要追加：政治合法性被重写为可持续共同选择；反支配被重写为反现实定义权垄断；危机政治以 `minimum necessary interruption` 为护栏
+- 说明：L1 bridge / candidate political-philosophy model；在声明框架内研究国家、权利、合法性、民主、结构性不公、危机决断与政治病理的生成—沉积—封闭—再打开过程。以 P2/P3 为主，制度判准与紧急状态边界为 P4；不提供政治合法性的普遍定义
+- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供候选 rights / delegation / voting interface。voting calibration 与 `d_tendency` 语言保留为历史 / candidate model，不建立 authorization 或 legitimacy theorem；本文件负责政治哲学候选模型的综合接口
+- 重要追加：可持续共同选择是在声明框架下对政治合法性的候选重构，不是 universal definition；反现实定义权垄断是候选政治哲学框架，危机政治以 `minimum necessary interruption` 作为模型护栏
 
 ### 9b. SRT 政治权利理论
 - 主文件：`Philosophy/SRT_Political_Rights.md`
@@ -4792,21 +4792,23 @@ $$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
 > **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
 >
 > **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
+>
+> **Category / comparison guard（WTC-84）**：canonical `d` 属于 decision / Selection event，不是个人或群体的固有属性。群体层面的 bare `d` 不是 canonical shorthand；只有明示为 decision-event `d` distribution、`d_tendency` trajectory 或 declared normalized proxy 时才可使用。跨群体或介入方比较必须位于同一 domain、同一 scale，或给出显式 normalization / mapping rule。
 
-在声明的社会 delegation 模型中，d 扩展可以作为一个可观察的候选维度，研究它是否与自发支撑、脚手架撤回或协调变化共同出现：
+在声明的社会 delegation 模型中，decision-event `d` distribution、`d_tendency` trajectory 或 declared `d` proxy 可以作为候选观察维度，研究它们是否与自发支撑、脚手架撤回或协调变化共同出现：
 
 $$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
 
 这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
 
-**d 轨迹作为候选观察信号**：
+**类型化 d 轨迹作为候选观察信号**：
 
-| d 轨迹 | 声明模型中的候选读法 | 边界 |
+| 类型化轨迹 | 声明模型中的候选读法 | 边界 |
 |---|---|---|
-| 被干预群体 d 在可观测时间窗内增长 | 可作为干预目标改善的一个候选信号 | 不等于 legitimacy、moral progress 或 real uplift |
-| 被干预群体 d 停滞或收缩，介入方 d 扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture 的普遍判决 |
+| 被干预群体的 decision-event `d` distribution 或 `d_tendency` 在可观测时间窗内变化 | 可作为干预目标是否改善的一个候选信号 | 不等于 legitimacy、authorization、moral progress 或 real uplift |
+| 在同域同尺度或已声明归一化下，被干预群体的 `d_tendency` / proxy 停滞或收缩，而介入方对应轨迹扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture、uplift 或 coordination direction 的判决 |
 
-历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 d 的分布或净量变化单独定义其道德或政治结论。三项指标、reselectability、d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
+`d_tendency` 或 proxy 比较本身不推出 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 decision-event `d` distribution、`d_tendency` 或 proxy 的分布、轨迹或净量变化单独定义其道德或政治结论。三项指标、reselectability、类型化 d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
 
 **Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
 

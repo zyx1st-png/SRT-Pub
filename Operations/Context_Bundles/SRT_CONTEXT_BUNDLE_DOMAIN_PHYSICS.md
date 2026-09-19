@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: 1ea224d4
+source_commit: 26837c50
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 119fa9612b5fdfc2
+inputs_digest: 2a5000f39481ccd1
 ---
 
 # SRT 物理领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 119fa9612b5fdfc2
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `1ea224d4` |
+| 来源 commit | `26837c50` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
