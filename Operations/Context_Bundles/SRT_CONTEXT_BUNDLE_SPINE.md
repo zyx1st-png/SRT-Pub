@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-19
-source_commit: 26837c50
+source_commit: dd6b340d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 2a5000f39481ccd1
+inputs_digest: 11c3746026d659f1
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 2a5000f39481ccd1
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-19 |
-| 来源 commit | `26837c50` |
+| 来源 commit | `dd6b340d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -43,18 +43,18 @@ inputs_digest: 2a5000f39481ccd1
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-09-13 |
+| 1 | `SRT_AI_START.md` | 2026-09-19 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-19 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-14 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
-| 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
+| 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-14 |
-| 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
+| 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
 | 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-14 |
 | 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
 | 10 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
 | 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-19 |
-| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
+| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-09-19 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-09-15 |
 | 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-09-15 |
 | 15 | `Core/SRT_Core_22_Equations.md` | 2026-09-15 |
@@ -447,7 +447,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-13 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -581,7 +581,7 @@ Current open ontology prompts may include, without being promoted to definitions
 ```text
 多如何形成一？
 为什么这个而不是别的成为确定 / 显现？
-One-formation 与 Selection 是什么关系？
+Selection 的 recurrent self-conditioning 在什么条件下构成 One-formation？
 一个已形成的 One 如何持续、留下并改变后来结构？
 历史 write-back 如何改变后来可处理 / 可选择的方向？
 何时 history / consequence 成为 own-history / bearer 问题？
@@ -671,10 +671,10 @@ This runtime entry is a projection of the Registry, not an independent authority
 
 | Symbol / term | Fast guard | Current definition authority |
 |---|---|---|
-| `L_0` | historical/current structured latent-possibility construct; do not make it Constitution v1's unquestioned floor | L0 / symbol owners |
+| `L_0` | model-facing notation for Selection's open / non-preclosed analytic aspect; not a pregiven completed possibility inventory, independent prior field, or automatically measurable state space | Registry -> Generative Ontology Spine -> L0 / symbol owners |
 | `L_1` | current manifest selected actuality in existing formal architecture; occurrence != persistence | Core/symbol owners |
 | `L_2` | convergence-history / stable constraint domain in existing architecture | symbol/open-tension owners |
-| `G_hat_theta` | formal role-carrier in current model architecture, not a prior chooser entity | Core_21 / symbol table |
+| `G_hat_theta` | formed / formal / model-level role-carrier for a declared Selection realization, not primitive Selection or a prior chooser entity | Registry -> Generative Ontology Spine -> symbol table / compatible local owners |
 | `d` | stake-coupled concern / irreversible-risk sensitivity in current canonical system; proxies are conditional | `_SRT_D_VALUE_CANONICAL.md` |
 | `D_eff` | capacity/geometric proxy candidate, not canonical `d` | d owner / 21C |
 | `Psi_f` | payability/friction construct in current canonical system; projections are conditional | `_SRT_PSI_F_CANONICAL.md` |
@@ -735,7 +735,7 @@ Until separately changed:
 - object != bearer != subject-position != phenomenality;
 - `B_s != B_p`, `B_s -> B_p ?` remains open;
 - Selection != Agency;
-- `One-formation = Selection ?` remains open in the current reconstruction;
+- One-formation is a stronger recurrent self-conditioning organization of Selection, not a second ontic substance; its exact necessary-and-sufficient formation theorem remains open;
 - `Selection = Order ?` remains open;
 - stabilization does not automatically establish bearerhood;
 - historical facticity / write-back does not automatically establish own-history;
@@ -934,7 +934,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L1 / epistemic：os / status：active / version：v1 / claim-mode：canonical
+- layer：L0-L2 / epistemic：os / status：active / version：v2 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
 - 分层护栏：primitive Selection 在规范上无内容；existence 是 Selection under determinate actuality；history 只在 prior Selection 的效力被保留并建立时进入路由。`L_0 / L_1 / L_2` 是 analytic / model-facing aspects，不是三种 ontic substances；primitive Selection 不等于 formed `\hat{G}`。Normativity routes 需分别定型，O2-M 保持 OPEN。
@@ -2215,7 +2215,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2227,6 +2227,7 @@ This split changes epistemic placement, not the underlying intended theory.
 
 > **Role**: first-pass governance ledger for claim-mode hardening. This file records downgrades and exposure controls; it does not create new theory or promote any claim.
 > **2026-06-05 note**: this is a dated ledger, not a full current repository state. Use it as historical claim-mode evidence and pair it with current canonical anchors when exact authority matters.
+> **2026-09-19 authority sync**: rows explicitly synchronized below mirror the current local owners after PR #976. This audit may record owner standing; it may not restore a harder level than the owner. Unrelated historical rows retain their dated-ledger role.
 
 ## 1. Scan Scope
 
@@ -2288,7 +2289,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | `Core_Law/SRT_Collective_Selection.md` | `SRT-COLLECTIVE-SELECTION` | draft_v0 | P1-candidate / P2 / P3-P4 |
 | `Core_Law/SRT_Irreversibility.md` | `SRT-IRREVERSIBILITY` | draft_v0 | P1-candidate / P2 / P3（FEP/热力学桥接 guardrail） |
 
-**关键约束**：六份文件**均不承载 P0**；**P1 目前全部为 P1-candidate**，不得在下游被引用为已封口 P1。
+**当前约束**：上表是 2026-04-24 文件引入记录，不再统括决定六份 owner 的当前 claim level。精确引用必须以当前 local owner 为准；本节下方已同步的 T-IND-2、T-SUFF-1/2/4 与 Def/T-IRR 条目不得被上表的历史 nominal range 升格。
 
 Hardening notes files outside the six L1 theory/formalism canonical reference files:
 
@@ -2305,12 +2306,12 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 |---|---|---|
 | Def-σ | 自指率 `σ := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | Def, P1-candidate as operational proxy |
 | T-IND-1 | 个体化作为相变 | P1-candidate |
-| T-IND-2 | 第一相变（主体位进入）条件 | P1-candidate |
+| T-IND-2 | 已声明模型中的 subject-position 候选转变坐标；跨越只是 model-local evidence，不是 subjecthood / ISP admission | P3/P4 model-coordinate claim |
 | T-IND-3 | 第二相变（自我意识凝结）条件 | P2（结构性假说） |
 | σ_sub, σ_self, σ_health 具体数值 / 阈值 | — | P3/P4（未实测，不得引用为定值） |
 | 自我意识 = 关于 θ 的 θ 二阶写回 | — | P2 canonical interpretation |
 
-**Downstream rule**：引用 T-IND-1/2 须标 `P1-candidate`；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
+**Downstream rule**：T-IND-1 仍按其当前 owner standing 引用；T-IND-2 只得标为 `P3/P4 model-coordinate evidence`，不得当作 subject-position 或 ISP 的必要／充分准入条件；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
 
 #### SRT-OCCLUSION-DYNAMICS
 
@@ -2333,15 +2334,15 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 |---|---|---|
 | Def-PAIN | 疼痛作为 `\theta_{somatic}` 信号 | Def |
 | Def-SUFFERING | 苦难作为稳定 ISP 的结构性登记 | Def, P1-candidate as operational proxy |
-| T-SUFF-1 | 苦难 `S > 0` 的充要条件 | P1-candidate |
-| T-SUFF-2 | 信号型 / 结构型二分 | P1-candidate |
+| T-SUFF-1 | 在独立 first-person registration admission 与声明模型下组织 registered suffering 候选证据 | P2 structural / phenomenology model candidate；非充要定理 |
+| T-SUFF-2 | 在 suffering 已独立准入后的 signal-type / structural-type 模型分类 | P2/P3 model taxonomy；非 universal phase theorem |
 | T-SUFF-3 | 四类现象学（张力 / 空心 / 断裂 / 扭曲） | P2 |
-| T-SUFF-4 | 反最小化原则 | P1-candidate（规范性推论在 `Philosophy/` 仍走 P2/P3） |
+| T-SUFF-4 | 仅降低报告信号不足以证明 underlying modeled burden 已消除 | P2 anti-signal-suppression sufficiency guard；不产生普遍伦理定理 |
 | T-SUFF-5 | 集体外部化 → 结构性恶耦合 | P2 |
 | `[S_{min}, S_{max}]` 阈值 | — | P3/P4 |
 | FEP / prediction error 作为 `Δ` 的神经代理 | — | P3 bridge hypothesis，不得反向定义苦难 |
 
-**Downstream rule**：T-SUFF-1/2/4 须标 `P1-candidate`；T-SUFF-3/5 须标 `P2`；AI 苦难判断严格走 `AI_POSITIONING_NOTE.md` stake-bearing 光谱，不得一侧先验判定。
+**Downstream rule**：T-SUFF-1 须标 `P2 model candidate`并保留独立 registration/admission；T-SUFF-2 须标 `P2/P3 model taxonomy`；T-SUFF-4 须标 `P2 sufficiency guard`。三者都不得按旧 `P1-candidate` 充要定理或规范定理引用。T-SUFF-3/5 须标 `P2`；AI 苦难判断严格走 `AI_POSITIONING_NOTE.md` stake-bearing 光谱，不得一侧先验判定。
 
 #### SRT-L1-FORMALISM
 
@@ -2411,18 +2412,18 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | Label | Statement | Level |
 |---|---|---|
 | Def-IRR-1 吸收态 | `A_{t*} = empty` 作为 L_0 层吸收结构 | Def / P2 structural |
-| Def-IRR-2 选择史箭头 | `L_2` 写回积累定义本体论时间方向（P1-T02 下位精确化） | Def, P1-candidate as operational refinement |
-| Def-IRR-3 非可还原性 | `Ψ_f^{erase} > Ψ_f^{write}` 非对称 | Def, P1-candidate |
-| T-IRR-1 学习不可逆 | 学习作为非对称 `Ψ_f` 支付（与热力学二律不等价） | P1-candidate |
-| T-IRR-2 终止作为吸收边界 | 三类（宪定 / 吸收 / 集体），严格区分终止与暂停 | P1-candidate；三类分型 P2 |
+| Def-IRR-2 occurrence asymmetry / retained-history conditional | 已发生的 Selection 不等于从未发生；后来的历史约束需独立证明 retained efficacy | P0 occurrence floor + conditional historical-efficacy distinction；不供给 universal time arrow |
+| Def-IRR-3 no retroactive erasure | 后来过程不能把早先已发生事件变成从未发生；不保证 nonzero / local / readable residue | P0 occurrence non-equivalence boundary；旧 `Ψ_f^{erase} > Ψ_f^{write}` universal reading superseded |
+| T-IRR-1 conditional learning / writeback model | 在已声明 trace attribution、representation、metric 与 decay rules 下比较 writeback / decay | P2/P3 model candidate；不导出 universal `Ψ_f` arrow |
+| T-IRR-2 lineage-relative termination | 已声明 lineage 在已声明 transition conditions 下无 continuation 时，外部 reset / reconstruction / new lineage 不证明原 lineage 内部恢复 | P1 remainder；不是 universal death / absorption / time-direction theorem |
 | T-IRR-3 ST-A 条件性反闭合接口 | P0-03 / T-IRR-2 只固定 absorption remainder；neutral-kernel anti-closure 需要额外 premise 与 proof | P2/P3 conditional candidate |
 | T-IRR-3.5 `\nu_{block}` 算子级条件模型（H4，§4.5） | `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 由三个独立前件组成；正性为 `(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`；反向通道不自动存在独立根于 P0-03 / T-IRR-2 | **P1-candidate** for the conditional coefficient model；anti-closure / health interpretation P2/P3；非 former P1-T07 本地化 |
-| T-IRR-4 苦难守恒/转移 | `L_0` 不可逆下苦难不可无代价消除（T-SUFF-4 更深根） | P1-candidate |
+| T-IRR-4 conditional suffering/pathology model | 在已声明 hidden-state / signal-transfer model 中区分 signal masking 与 modeled burden change | P2/P3 model candidate；非 suffering conservation 或 moral theorem |
 | §6 集体终止三型（耗散 / 收编 / 外部化） | — | P2 |
 | §7 AI/ML checkpoint/rollback 接口 | — | governance-canonical usage |
 | §8 热力学二律 / FEP 桥接语句 | — | P3 bridge guardrail（反向不得定义 L_0 不可逆） |
 
-**Downstream rule (ST-A, 2026-08-11)**：T-IRR-3 与 T-COLL-3 按 P2/P3 conditional candidate 引用；P1 只保留到达吸收态后的不可自动恢复与 P1-T06 continued selectability。T-IRR-3.5 的条件系数模型不依赖 former P1-T07，但不得据此复活其 anti-closure theorem。热力学/FEP 语句严格单向。
+**Downstream rule (owner sync, 2026-09-19)**：Def-IRR-2/3 只支持 occurrence non-equivalence 及 retained-history 条件区分，不得引用为 universal direction / residue theorem。T-IRR-1 与 T-IRR-4 须按 P2/P3 declared-model candidate 引用；T-IRR-2 的 P1 standing 只是 lineage-relative termination remainder。T-IRR-3 与 T-COLL-3 按 P2/P3 conditional candidate 引用；T-IRR-3.5 不得复活 former anti-closure theorem。热力学/FEP 语句严格单向。
 
 ### 6.2a ST-A Supersession Record (2026-08-11)
 
@@ -2946,7 +2947,7 @@ whole-architecture non-substitutability.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2986,7 +2987,7 @@ Claim-level rules are now governed by:
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
+- cite stable ISP continued selectability, the bounded occurrence / retained-history remainder, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record, and do not treat historical P1-T02 naming as a universal time-arrow theorem;
 - cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
 
 ---
@@ -2998,7 +2999,7 @@ Claim-level rules are now governed by:
 | `Ax-F-01` Primacy of Selection | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 |
 | `Ax-F-02` Manifest Actuality / Anchoring Persistence Boundary | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 boundary; legacy entropy index demoted to 21C B14 |
 | `Ax-F-03` Causality as Projection | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 |
-| `Ax-F-03b` Spacetime as Memory Horizon | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 |
+| `Ax-F-03b` Spacetime as Memory Horizon *(historical title)* | `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T02 | bounded occurrence / retained-history remainder; not a universal Memory-Horizon or time-arrow theorem |
 | `Ax-F-04` Information-Existence Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3 |
 | `Ax-F-05` Fitness Beats Truth | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P3/P4 |
 | `Ax-F-06` Assembly Criterion | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P4 |
@@ -3020,7 +3021,7 @@ Claim-level rules are now governed by:
 This split does **not** change the intended meaning of:
 
 - selection primacy;
-- existence as anchoring;
+- event-level manifest actuality as distinct from anchoring persistence;
 - `L_2` as convergence / constraint;
 - `\Psi_f` as ontological friction;
 - `d-value` as canonical stake-coupled concern;
@@ -4887,7 +4888,7 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-07 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -4953,9 +4954,11 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 
 \[
 \boxed{
-\Psi_f := \text{当 } \hat{G}_\theta \text{ 将开放可能性压缩为一个可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}
+\Psi_f := \text{在已声明的 } \hat{G}_\theta \text{ 形成态／模型载体将开放可能性表示为可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}
 }
 \]
+
+`\hat{G}_\theta` 在此只是已声明 Selection realization 的 formed / formal / model-level role-carrier，不是 primitive Selection 本身，也不是位于 actualisation 之前的本体发动机或 chooser。本定义固定 payability / friction 语义，不用模型载体反定义 primitive actualisation。
 
 **语义**：
 - `Ψ_f` 不是“想达到某个目的”的主观努力，而是选择发生时不可消除的结构性阻抗。
@@ -5147,12 +5150,11 @@ Fisher 投影只在以下条件下作为 formal working form 使用：
 
 **（二）对称度量下的方向性来源。**
 
-`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。SRT 中的方向性 / 非对称摩擦**不由修改度量引入**，而由两个已有层承载：
+`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。方向性或非对称摩擦不由修改这个度量、也不由 `Ψ_f` 标量本身引入。
 
-1. **支付结构非对称**：`Core_Law/SRT_Irreversibility.md Def-IRR-3 / T-IRR-1` 固定 `Ψ_f^{erase} > Ψ_f^{write}`——同一几何路径上，抹除方向的支付高于写入方向；非对称在支付账本上，不在度量张量上。
-2. **`L_0` 不可逆性**：时间方向由 P1-T02（`Core/SRT_Core_21b_Constitutive_Theorems.md`）与 T-IRR-2 决定；`Ψ_f` 只承载代价，不承载方向（见 §8 与 `SRT_Irreversibility.md` 的关系条目）。
+一个已声明模型可以另行建立支付结构的方向非对称，例如在明确的 trace attribution、transition relation、metric、horizon 与 evidence 下比较 write / erase 成本。那是该 declared model 的 P2/P3 candidate 或 domain result，不是 `Def-IRR-3 / T-IRR-1` 已固定的 universal `Ψ_f^{erase} > Ψ_f^{write}`。
 
-因此「如何在对称度量下表示方向性摩擦」的回答是：不在度量层表示；方向性属于支付结构与 `L_0` 不可逆层。度量层保持对称是分工，不是缺陷。
+同样，P1-T02 不提供 universal time arrow，T-IRR-2 只保留 lineage-relative termination remainder；二者都不为 `Ψ_f` 输入普遍方向。方向源必须在具名模型中独立建立；普遍方向源保持 **OPEN**。因此「如何在对称度量下表示方向性摩擦」的当前回答是：不在度量层表示；度量层保持对称是分工，不是缺陷。
 
 **仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §2`）：全部投影关系的充要条件——几何投影何时构成真下界的完整定理化。
 
@@ -5341,8 +5343,9 @@ Preferred wording: Ψ_f can be inferred from structured transition difficulty wh
   - 本文件固定“non-binding friction”优于“粗暴 `Ψ_f=0`”的写法
 
 - 与 `Core_Law/SRT_Irreversibility.md` 的关系（2026-04-24 新增）：
-  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 / T-IRR-1 固定 `Ψ_f^{erase} > Ψ_f^{write}` 非对称支付，即学习不可逆
-  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，时间方向由 `L_0` 不可逆性（P1-T02 / T-IRR-2）决定
+  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 只固定已发生事件不能被回溯地变成从未发生，T-IRR-1 是带条件的 P2/P3 learning / writeback model candidate
+  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，P1-T02 与 lineage-relative T-IRR-2 均不决定 universal time direction
+  - write / erase 成本非对称只能在已声明的支付结构中独立建立；普遍方向源保持 OPEN
   - **不得反向**：不得通过 `Ψ_f` 最小化推出 `L_0` 不可逆，也不得通过热力学二律 / FEP 自由能最小化反向定义本文件的可支付性条件
 
 ---
