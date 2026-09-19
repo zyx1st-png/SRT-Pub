@@ -67,9 +67,11 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 \[
 \boxed{
-\Psi_f := \text{当 } \hat{G}_\theta \text{ 将开放可能性压缩为一个可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}
+\Psi_f := \text{在已声明的 } \hat{G}_\theta \text{ 形成态／模型载体将开放可能性表示为可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}
 }
 \]
+
+`\hat{G}_\theta` 在此只是已声明 Selection realization 的 formed / formal / model-level role-carrier，不是 primitive Selection 本身，也不是位于 actualisation 之前的本体发动机或 chooser。本定义固定 payability / friction 语义，不用模型载体反定义 primitive actualisation。
 
 **语义**：
 - `Ψ_f` 不是“想达到某个目的”的主观努力，而是选择发生时不可消除的结构性阻抗。
@@ -261,12 +263,11 @@ Fisher 投影只在以下条件下作为 formal working form 使用：
 
 **（二）对称度量下的方向性来源。**
 
-`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。SRT 中的方向性 / 非对称摩擦**不由修改度量引入**，而由两个已有层承载：
+`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。方向性或非对称摩擦不由修改这个度量、也不由 `Ψ_f` 标量本身引入。
 
-1. **支付结构非对称**：`Core_Law/SRT_Irreversibility.md Def-IRR-3 / T-IRR-1` 固定 `Ψ_f^{erase} > Ψ_f^{write}`——同一几何路径上，抹除方向的支付高于写入方向；非对称在支付账本上，不在度量张量上。
-2. **`L_0` 不可逆性**：时间方向由 P1-T02（`Core/SRT_Core_21b_Constitutive_Theorems.md`）与 T-IRR-2 决定；`Ψ_f` 只承载代价，不承载方向（见 §8 与 `SRT_Irreversibility.md` 的关系条目）。
+一个已声明模型可以另行建立支付结构的方向非对称，例如在明确的 trace attribution、transition relation、metric、horizon 与 evidence 下比较 write / erase 成本。那是该 declared model 的 P2/P3 candidate 或 domain result，不是 `Def-IRR-3 / T-IRR-1` 已固定的 universal `Ψ_f^{erase} > Ψ_f^{write}`。
 
-因此「如何在对称度量下表示方向性摩擦」的回答是：不在度量层表示；方向性属于支付结构与 `L_0` 不可逆层。度量层保持对称是分工，不是缺陷。
+同样，P1-T02 不提供 universal time arrow，T-IRR-2 只保留 lineage-relative termination remainder；二者都不为 `Ψ_f` 输入普遍方向。方向源必须在具名模型中独立建立；普遍方向源保持 **OPEN**。因此「如何在对称度量下表示方向性摩擦」的当前回答是：不在度量层表示；度量层保持对称是分工，不是缺陷。
 
 **仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §2`）：全部投影关系的充要条件——几何投影何时构成真下界的完整定理化。
 
@@ -455,8 +456,9 @@ Preferred wording: Ψ_f can be inferred from structured transition difficulty wh
   - 本文件固定“non-binding friction”优于“粗暴 `Ψ_f=0`”的写法
 
 - 与 `Core_Law/SRT_Irreversibility.md` 的关系（2026-04-24 新增）：
-  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 / T-IRR-1 固定 `Ψ_f^{erase} > Ψ_f^{write}` 非对称支付，即学习不可逆
-  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，时间方向由 `L_0` 不可逆性（P1-T02 / T-IRR-2）决定
+  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 只固定已发生事件不能被回溯地变成从未发生，T-IRR-1 是带条件的 P2/P3 learning / writeback model candidate
+  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，P1-T02 与 lineage-relative T-IRR-2 均不决定 universal time direction
+  - write / erase 成本非对称只能在已声明的支付结构中独立建立；普遍方向源保持 OPEN
   - **不得反向**：不得通过 `Ψ_f` 最小化推出 `L_0` 不可逆，也不得通过热力学二律 / FEP 自由能最小化反向定义本文件的可支付性条件
 
 ---

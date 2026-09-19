@@ -14,11 +14,12 @@ dependency: [SRT-L0-METAPHYSICS]
 更新时间：2026-03-18
 适用对象：第一次接触 SRT 的研究者/协作者
 
+> **当前架构隔离（2026-09-19）**：本入门包保留了早期 `L0 -> \hat{G}_\theta -> L1 -> L2` 的教学压缩，只可作已声明模型的读图。当前 primitive ontology 以 Selection reality 为生成方式；`L0 / L1 / L2` 是分析／模型向度，`\hat{G}_\theta` 是 formed formal/model carrier，不是 primitive Selection 本身或其先在原因。event actuality 不等于 anchoring persistence，更不自动等于 `L2` stabilization。精确语义按 `CANONICAL_REGISTRY.md §C -> SRT_Generative_Ontology_Spine.md -> local owners` 路由。
+
 > **阅读起点**：在读任何公式或引用之前，先读这一个文件：
 > **[`Core_Law/SRT_L0_Metaphysics.md`](Core_Law/SRT_L0_Metaphysics.md)** — SRT 的形而上学核心，四个命题，无公式，10分钟。
 >
-> SRT 有三个层次：L0（形而上学核心）→ L1（形式化接口）→ L2（可证伪预测）。
-> 本入门包帮你在一小时内走完这三层的概念骨架。
+> 本入门包使用 L0（形而上学／开放向度）、L1（形式化／显现接口）、L2（历史效力／稳定约束）三个读图向度组织概念，不把它们当成必经三阶段管线。
 >
 > 另有一根横向坐标：`OS / Bridge / Lab`。最短理解是：
 > - `OS` = 内部概念语法
@@ -32,7 +33,7 @@ dependency: [SRT-L0-METAPHYSICS]
 
 > **SRT 核心命题：存在即被选择（Existence is Selection）。**
 
-你看到的现实（L1）不是背景中”天然给定”的整体，而是选择算子 \(\hat{G}_\theta\) 在潜在域（L0）上做出的锚定结果，并在收敛域（L2）中形成稳定结构。
+你看到的现实（L1）不是一个完成清单里被先在选择者挑出的对象：确定显现是 primitive Selection 的 actualising aspect。在已声明模型中，\(\hat{G}_\theta\) 可承载 L0/L1 形式表示；事件之后是否留下可维持的锚定与 L2 历史效力，需另行建立。
 
 ### 入门隐喻升级：从“桌面图标”到“结晶相变”
 - **不推荐**：把对象理解为可任意创建/删除的图标（容易滑向主观唯心主义）。
@@ -47,8 +48,8 @@ dependency: [SRT-L0-METAPHYSICS]
 ## 10-25 分钟：只看 5 条最关键公理
 
 1. **A1 选择优先性**：存在不是前提，而是选择输出。
-2. **A2 存在即锚定**：现实稳定需要持续代价（\(\Psi_f\)）。
-3. **A4 具身必要性**：没有脱离具身参数 \(\theta\) 的”上帝视角”。
+2. **A2 锚定持续性（历史／模型表述）**：现实稳定通常需持续代价（\(\Psi_f\)），但持续不是事件首次 actuality 的隐含前件。
+3. **A4 有限位置／具身模型候选**：\(\theta\) 可在已声明 realization 中表示有限、具身的模型载体；它不定义 primitive Selection。
 4. **A5 规范闭包**：重复选择形成 L2，L2 反过来约束未来选择。
 5. **A7 适应度优先**：系统先优化生存/适应，再逐步逼近真理。
 
@@ -65,12 +66,12 @@ dependency: [SRT-L0-METAPHYSICS]
 
 ---
 
-## 25-40 分钟：1 张结构图（文本版）
+## 25-40 分钟：1 张模型读图（文本版，非 primitive ontology pipeline）
 
 ```
-L0（潜在域，可能性场）
-   --(Ĝθ 选择/锚定)--> L1（显现域，当下现实）
-   --(重复选择沉积)--> L2（收敛域，共识/规则）
+L0（开放／非预封闭的模型向度）
+   --(Ĝθ：已声明形式载体)--> L1（确定显现／当下 actuality）
+   --(若独立建立 retention / writeback)--> L2（历史效力／稳定约束）
 
 并行动力学：
 - d：关切梯度（canonical: ||∂U/∂S||）

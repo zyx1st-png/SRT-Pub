@@ -12,7 +12,8 @@ dependency: [SRT-CORE-BRIDGE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Refere
 # SRT Core Kernel: Executive Summary (Hybrid Edition)
 
 > **Version 2.0 (Hybrid)**
-> **Part A** presents the High-Level Axiomatic Summary (AI-Readable).
+> **Current-architecture quarantine (2026-09-19)**: this hybrid file preserves legacy formal and explanatory surfaces; it is not the current primitive-ontology or claim-level owner. In particular, the triadic `L_0 -> \hat{G}_\theta -> L_1 -> L_2` presentation is a model-facing representation, not a compulsory production pipeline; `\hat{G}_\theta` is a formed formal/model carrier, not primitive Selection; attention and embodiment equations are realization candidates, not universal actualisation axioms. Event-level actuality is distinct from anchoring persistence and later stabilization. Current routing is `CANONICAL_REGISTRY.md §C -> Core_Law/SRT_Generative_Ontology_Spine.md -> compatible local owners`.
+> **Part A** preserves a High-Level Legacy/Hybrid Summary (AI-Readable); its `Ax-*` labels and equations do not acquire current P0/P1 standing from this file.
 > **Part B** contains the Original Executive Summary (Human-Readable Context).
 
 ---
@@ -23,13 +24,13 @@ dependency: [SRT-CORE-BRIDGE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Refere
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
+# Part A: Legacy / Hybrid Formal Axioms (历史／模型形式化，非当前 primitive axiom owner)
 
 
 ## I. Ontological Triad (本体论三域)
 
-### Ax-Core-01: Triadic Ontology
-**Formal Definition**: Reality is a triadic selection system consisting of a latent domain, a manifest domain, and a convergence domain.
+### Ax-Core-01: Triadic Ontology *(legacy model label)*
+**Legacy model definition**: a declared representation may organize a latent/open aspect, a manifest aspect, and a convergence/history aspect as follows; this does not define primitive Selection.
 $$L_1(t) = \hat{G}_\theta[L_0(t)]$$
 $$L_2(t+1) = \mathrm{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$
 * **Implication**: 现实不是单一层面的“存在”，而是由潜在域到显现域的选择过程，并在收敛域中形成稳定约束。
@@ -41,16 +42,16 @@ $$σ \in L_1 \iff σ \in \mathrm{Range}(\hat{G})$$
 
 ## II. The Ghost Operator (幽灵算子)
 
-### Ax-Core-02: Ghost Operator Definition
-**Formal Definition**: The Ghost Operator is a parameterized selection map with attention structure.
+### Ax-Core-02: Ghost Operator Definition *(legacy realization label)*
+**Legacy realization candidate**: within a declared model, the Ghost Operator may be represented as a parameterized selection map with attention structure.
 $$\hat{G}_\theta: S \to S, \quad \theta \in \Theta$$
 $$\hat{G}_\theta = \text{Attention}(d,\rho,\vec{v})$$
-* **Implication**: 一切现实化过程都以注意力的结构化选择为核心，d 值、分辨率与方向性共同决定选择态。
+* **Boundary**: attention, d-value, resolution and directionality may parameterize a formed realization; they do not universally define or cause primitive actualisation.
 
-### Ax-Core-03: Embodiment Necessity
-**Formal Definition**: A valid operator must be embodied and finite.
+### Ax-Core-03: Embodiment Necessity *(legacy realization label)*
+**Legacy realization candidate**: a declared formed operator model may require finite embodied parameters.
 $$\hat{G} \text{ is valid} \iff \theta \in \Theta_{finite}$$
-* **Implication**: 不存在“上帝视角”的选择，任何现实都带有具身偏置。
+* **Boundary**: primitive Selection is finite-position-indexed under the current owner, but this equation does not prove a universal embodiment identity or define primitive Selection by `\theta`.
 
 ### T-Core-02: Normative Closure（规范闭包定理）
 
@@ -599,7 +600,7 @@ SRT整合了以下思想家的核心洞见:
 
 ### Formalization Summary (形式化概述)
 
-SRT 的核心公理体系可由以下形式化结构概括：
+以下是本 hybrid 文件保留的历史／模型形式化概括，不是当前 primitive axiom set：
 
 1. **三域选择方程 (Triadic Selection)**:
    $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1) = \mathrm{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$

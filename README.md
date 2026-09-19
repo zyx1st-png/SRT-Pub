@@ -8,30 +8,32 @@ SRT begins from a reversal:
 
 SRT 是一个以“选择先于稳定存在”为核心命题的理论框架。它试图把本体论、意识、AI、物理、神经机制、社会秩序、价值与实验接口放到同一套选择—锚定—收敛框架下理解。
 
+> **Current-architecture guard (2026-09-19)**: primitive Selection is reality's generative mode. `L0 / L1 / L2` are analytic / model-facing aspects, not three substances or a compulsory production pipeline; `\hat{G}_θ` is a formed formal/model carrier, not primitive Selection or its prior cause. Event-level actuality is distinct from later anchoring persistence and stabilization. Exact routing follows `CANONICAL_REGISTRY.md §C -> Core_Law/SRT_Generative_Ontology_Spine.md -> compatible local owners`.
+
 ## 30 秒版
 
 - **SRT asks how possibilities become realities.**
-- **Reality is selected under constraint, stabilized through history, and tested by resistance.**
+- **Determinate actuality occurs through primitive Selection; persistence and stabilization require additional historical conditions.**
 - Selection is broad; consciousness is thresholded.
 - Stability is not legitimacy.
 - What becomes real must pay cost, survive resistance, and leave consequences.
 
 Minimal notation:
 
-- `L0` = latent possibilities.
-- `L1` = manifest selection.
-- `L2` = stabilized convergence.
-- `\hat{G}_θ` = embodied selection / anchoring operator.
+- `L0` = open / non-preclosed model-facing aspect, not a completed possibility inventory.
+- `L1` = determinate-actuality / manifest aspect; occurrence does not imply persistence.
+- `L2` = retained historical efficacy / stabilized constraint where independently established.
+- `\hat{G}_θ` = formed formal/model carrier for a declared Selection realization.
 - `d-value`, `Ψ_f`, and `T_dir` name stake, payability / friction, and directional readability.
 
 SRT is not "mind creates reality," not relativism, and not panpsychism. It is a selection-first theory of constrained reality formation.
 
 ```mermaid
 flowchart LR
-  L0["L0 潜在域"] --> G["Ĝ_θ 选择/锚定"]
-  G --> L1["L1 显现域"]
-  L1 --> L2["L2 收敛域"]
-  L2 --> G
+  S["primitive Selection reality"] --> L1["L1 确定显现"]
+  L1 -. "retention conditions" .-> L2["L2 历史效力/稳定约束"]
+  G["Ĝ_θ: declared model carrier"] -. "model representation" .-> L1
+  L2 -. "downstream constraint" .-> G
 ```
 
 ## The book: *From Existence to Order* / 《从存在到秩序》
