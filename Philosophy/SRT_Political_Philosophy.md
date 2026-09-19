@@ -8,7 +8,7 @@ epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P2-P4
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-PHIL-ETHICS]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-PHIL-ETHICS, SRT-PHILOSOPHY-CLAIM-STATUS, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27]
 see_also: [SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-PHIL-ETHICS]
 created: 2026-04-22
 ---
@@ -21,6 +21,7 @@ created: 2026-04-22
 > **Claim-level note**：本文以 P2/P3 为主：政治本体论与规范解释主要为 canonical interpretation / bridge mapping；制度判准、阈值、操作化候选与失效条件属于 P4。不得将本文中的政治制度设计句子反向升级为 P0/P1 core axiom。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 与上述说明一致；本文件是 Philosophy 主文，不是 core definition source。
 > **Canonical Collective Selection Layer (2026-04-24; ST-A correction 2026-08-11; RC-A sync 2026-08-18)**：本文涉及“多主体共同现实选择”、合法性、反支配、结构性不公、危机决断与民主等 P2/P3 政治哲学读法，结构层回链 `Core_Law/SRT_Collective_Selection.md`。T-COLL-1、三类退化、ST-A 条件性 T-COLL-3 与降级后的 T-COLL-4 不在本文件重新定义。集体四变量 ODE、申诉／轮替／异议通道、`M(t)` 或 `ΔR_future` 只能提供 generative-reselectability、consequence-sensitive revision 与外部化风险的候选审计信号；它们不自动构成 Selection、collective agency 或合法性的必要充分条件，也不能从结构稳定直接推出规范正当性。具体制度判断继续按 P3/P4 读。本文若保留旧版“真实选择时刻”措辞，只能按 downstream freedom / agency shorthand 读取，不得反向定义 Selection ontology。
+> **Wave E7 current-use guard**：本文是 active non-canonical political-philosophy bridge / historical research surface。`Ax-Pol` / theorem / definition 标签只是 P2–P4 model handles，除非另行被权威 owner 批准。本文不为 SRT 整体定义合法性、权利、正义、民主或政治权威。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`。High `d` 不赋予政治权威、合法性、代表权或优越 standing。
 
 > **Version 1.0 (Hybrid)**
 > **Part A** presents the Political Axioms & Criteria (AI-readable).
@@ -45,8 +46,8 @@ Core guardrails:
 - Institutional persistence is not political justification.
 - Market selection is not moral truth.
 - Money / price is an `L_2` metric, not final value.
-- Low friction is not justice unless hidden `Psi_f` is not exported.
-- Legitimacy requires reselection capacity, consequence-return symmetry, non-exported friction, exit/correction channels, and future-selectability.
+- Low friction does not imply justice; generic burden / cost does not equal canonical `Psi_f` automatically.
+- A declared framework may use reselection, consequence return, burden distribution, exit/correction and future-selectability as non-exhaustive candidate lenses; no conjunction here defines legitimacy.
 
 ## Legitimacy Ladder (秩序条件到正当性的推理阶梯)
 
@@ -55,17 +56,17 @@ Core guardrails:
 1. **秩序条件**：某个 `L_2` structure stabilizes coordination or lowers local friction.
 2. **制度类型判断**：该 structure 是地板、门控、委托、垄断、应急装置，还是病理闭包。
 3. **委托关系正当性**：被影响主体是否保留可追责、可修正、可退出或可再选择的通道。
-4. **政治正当性**：只有当前三层都可说明时，才能讨论 legitimacy；缺少中间判据时，表述必须写成 conditional / diagnostic，不得从 `L_1` 或 `L_2` 稳定性直接推出正当性。
+4. **政治正当性**：始终是所声明规范／政治框架内的评价问题；前三层只提供候选证据，不构成普遍必要或充分条件。
 
 ### Middle Criteria for the Ladder
 
 这些判据不是新的 core axiom，而是防止把稳定秩序偷渡成政治正当性的 P3/P4 检查层。
 
-| Middle criterion | Question | Minimum pass condition | Forbidden shortcut |
+| Candidate middle lens | Question | Candidate evidence | Forbidden shortcut |
 |---|---|---|---|
 | Institutional type judgment | This `L_2` is doing what kind of work: floor, gate, delegation, monopoly, emergency interruption, or pathological closure? | The file names the institution type before evaluating legitimacy. | "It coordinates, therefore it is legitimate." |
 | Delegation legitimacy | Who authorized whom to select, enforce, or speak for others, and on what scope? | Delegation has scope, duration, revocation, and review channels. | "Representative language" without audit or revocation. |
-| Consequence-return symmetry | Do consequences return to the decision site, or are costs exported to less powerful subjects? | Hidden maintenance friction and downstream risk are traceable back to decision makers. | Efficiency claims that ignore who pays `\Psi_f^{maint}`. |
+| Consequence-return symmetry | Do consequences return to the decision site, or are costs exported to less powerful subjects? | Hidden burden and downstream risk are traceable back to decision makers. | Efficiency claims that call generic cost canonical `\Psi_f`. |
 | Reselection / exit / correction | Can affected subjects reopen, exit, appeal, correct, or revise the `L_2` structure? | At least one real correction channel exists beyond nominal participation. | Formal procedure treated as real choice when it cannot change outcomes. |
 
 **Use rule**：若中间判据不足，只能写“this order stabilizes coordination” or “this institution may be useful under conditions”，不得写成“this order is politically legitimate.”
@@ -90,48 +91,48 @@ Core guardrails:
 \]
 * **Implication**：国家的本体论角色更接近“选择基础设施”而非“终极价值实体”；国家可以是健康地板，也可以退化为自我绝对化的 `L_2`。
 
-### Ax-Pol-3: Legitimacy as Sustainable Co-Selection
+### Ax-Pol-3: Historical / Candidate Legitimacy-as-Co-Selection Model
 政治合法性不是单一点源（传统、多数、效率、革命叙事），而是多主体在可承受摩擦下持续参与共同现实塑造，并对结果形成可稳定接受的过程。
 \[
-\text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
+\text{Legitimacy-model}_{candidate} \propto \operatorname{CoSelect}\big(\Theta,\, B^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
 
-> **Formula role**: bridge model. This is a structural diagnostic, not a measurement formula. `CoSelect`, `Ψ_f^{asym}`, and `C_{reselect}` require operational proxies before being applied as empirical tests. Low friction alone is not legitimacy if hidden `Ψ_f` is exported. See `SRT_Social_Political_PH_SS_Guardrails.md`.
+> **Formula role**: historical / candidate bridge model, not a definition, measurement formula or necessary-and-sufficient theorem. `B^{asym}` denotes an operational burden proxy; it is not canonical `Psi_f` automatically. See `SRT_Social_Political_PH_SS_Guardrails.md`.
 
-* **Implication**：SRT 对合法性的优先判准不是”谁先天有权”，而是”制度是否减少封闭垄断并保留再选择能力”。
-* **Middle-condition clause**：`CoSelect` must pass the institutional-type, delegation, consequence-return, and reselection/correction checks above. Friction reduction or coordination stability alone is not sufficient for legitimacy.
+* **Implication**：这一候选模型优先考察制度是否减少封闭垄断并保留再选择能力；这些维度不构成 SRT-wide 合法性判准。
+* **Candidate-lens clause**：Institutional type, delegation, consequence return and reselection/correction may be examined before using this model. They are neither universal necessary conditions nor jointly sufficient for legitimacy.
 
 ### Ax-Pol-4: People as Dynamic L2-Bound Collective
 “人民”不是天然同质的实体，而是被同一组 `L_2` 约束、叙事、制度接口和共同风险暂时绑定起来的动态集体。
 \[
 \text{People}(t) \equiv \{\hat G_{\theta_i}\}_{i\in\Theta} \;\text{ under shared }\; L_2^{political}(t)
 \]
-* **Implication**：人民不是政治的形而上学起点，而是政治选择历史的结果；因此“人民意志”必须经由程序与可修正结构来读取，不能直接被任何单一主体占有。
+* **Implication**：人民不是政治的形而上学起点，而是政治选择历史的结果；在声明的反垄断／委托框架内，程序与可修正结构可作为读取“人民意志”的候选证据，任何单一主体的占有主张不自动获得代表授权。
 
 ## II. Freedom, Equality, Rights
 
-### Ax-Pol-5: Freedom as Access to Reality-Shaping
+### Ax-Pol-5: Candidate Freedom-as-Access Reconstruction
 自由不是单纯“免于干预”，而是主体能以可实现方式进入共同现实塑造过程，而非被结构性排除在外。
 \[
-\text{Freedom}_\theta \equiv \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
+\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
 \]
 * **Implication**：若主体在名义上可发声，但在信息、资源、程序、时间或身份上无法进入共同现实塑造，则其自由在 SRT 意义上仍不足。
 
-### Ax-Pol-6: Equality as Non-Monopoly of Visibility and Entry
+### Ax-Pol-6: Candidate Equality-as-Non-Monopoly Reconstruction
 政治平等首先不是结果完全相同，而是对“谁能被看见、谁能进入、谁能定义问题”的长期非垄断。
 \[
 \text{Equality}_{political} \Rightarrow \neg \operatorname{Monopoly}\big(\text{visibility}, \text{entry}, \text{problem-definition}\big)
 \]
 * **Implication**：形式平等若不改变进入与可见度结构，仍可能是高 `\Psi_f` 的伪开放。
 
-### Ax-Pol-7: Rights as Anti-Monopoly Constraints on Reality Definition
-权利是 `L_2` 中的高阶保护性约束，用于防止任何主体或结构垄断现实定义权，并保护他者继续选择的资格。
+### Ax-Pol-7: Candidate Rights-as-Anti-Monopoly Reconstruction
+在这一候选重构中，权利被建模为 `L_2` 中的高阶保护性约束，用于防止现实定义权的垄断。
 \[
-\text{Rights} \equiv \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
+\text{Rights-model}_{candidate} := \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
 \]
-* **Implication**：权利不是抽象悬空物，也不是纯粹国家赏赐；它们是在共同现实生成中，为防止选择资格被锁死而必须稳定化的约束。
+* **Implication**：这一候选模型说明了权利如何可以保护选择资格；它不声称这是权利的唯一来源或普遍本质。
 
-### Ax-Pol-8: Domination as Unilateral Rewrite Capacity
+### Ax-Pol-8: Candidate Domination Diagnostic
 支配（domination）不是单纯权力更大，而是某主体能在缺乏对等程序约束的情况下，单边改写他人的现实位置与未来分支。
 \[
 \text{Domination}(i \to j) \equiv \operatorname{RewriteCapacity}_{i\to j}^{unilateral} \uparrow
@@ -140,7 +141,7 @@ Core guardrails:
 
 ## III. Justice, Institutions, Democracy
 
-### Ax-Pol-9: Structural Justice as Explore-Budget Symmetry
+### Ax-Pol-9: Candidate Structural-Justice Diagnostic
 公正首先不是抽象赞许，而是跨群体维护摩擦、探索预算与恢复能力的不对称被系统性压低。
 \[
 \mathcal{J}_{struct} \sim \mathrm{Var}_{group}\!\left(\int \Psi_f^{maint}dt\right)
@@ -150,7 +151,7 @@ Core guardrails:
 \]
 * **Implication**：当某些群体长期处于“生存支付挤占探索预算”状态时，政治秩序即使形式稳定，也可被判定为结构性不公。
 
-### Ax-Pol-10: Institutional Health Criterion
+### Ax-Pol-10: Model-Relative Institutional-Health Diagnostic
 政治制度的健康性，不只看是否稳定或高效，而要看它是否同时扩展社会可行选择空间并降低集体景观的病理性摩擦。
 \[
 \frac{dS_{social}}{dt} \ge 0 \quad \land \quad \frac{d\mathcal{F}_{collective}^{social}}{dt} \le 0
@@ -159,37 +160,37 @@ Core guardrails:
 \[
 \Delta C_{reselect} \ge 0
 \]
-* **Implication**：只会自我维持、却不断压缩成员未来可再选择空间的制度，是病理闭合，而非健康 `L_2`。
+* **Implication**：在本候选模型中，压缩未来可再选择空间可触发病理调查；它不自动完成合法性、善或 `O2-M` 判决。
 
-### Ax-Pol-11: Democracy as d-Tendency Validation under Bounded Conditions
+### Ax-Pol-11: Historical / Candidate Democracy-as-d-Calibration Model
 民主不宜被压成“偏好加总机器”；其更深层功能是：在有限信息条件下，对代理者的 `d` 倾向进行周期性后验验证，并动态调整授权。
 \[
 \text{Vote} \approx \text{posterior validation of } d_{tendency}
 \]
-* **Implication**：投票之所以重要，不是因为它神秘地产生真理，而是因为它为“谁仍在整合更宽关切范围”提供了低精度但必要的校准通道。
+* **Implication**：这一历史／候选模型把投票视为关于 wider-scope consequence integration 的低精度信号之一；它既非必要校准通道，也不产生真理、合法性或授权。
 
-### Ax-Pol-12: Multi-Center Governance as Anti-Capture Requirement
+### Ax-Pol-12: Multi-Center Governance Hypothesis / Design Candidate
 当政治问题跨尺度、跨时间、跨领域展开时，单一中心会系统性过载并提高被 capture 的概率；多中心治理是降低现实定义权垄断的结构性需要。
 \[
 \operatorname{Polycentricity} \uparrow \Rightarrow \operatorname{CaptureRisk} \downarrow \;\land\; \operatorname{CorrectionChannels} \uparrow
 \]
-* **Implication**：分权、多中心、联邦化、地方试验与可回滚改革，不只是技术安排，而是 SRT 的反封闭结构要求。
+* **Implication**：在声明的政治框架内，分权、多中心、联邦化、地方试验与可回滚改革可作为反封闭设计候选；SRT ontology 不要求或排序这些制度。
 
 ## IV. Crisis, Sovereignty, Emergency
 
-### Ax-Pol-13: Constitutive Floor Priority in Political Conflict
-在嵌套政治冲突中，优先保护使闭合得以继续存在的构成地板，而不是仅扩展更高层支架的能力。
+### Ax-Pol-13: Candidate Constitutive-Floor Priority Model
+在声明的政治框架内，嵌套政治冲突可把保护使闭合得以继续存在的构成地板作为候选维度，与扩展更高层支架的能力共同接受评估。
 \[
 \text{Priority} \Rightarrow \text{protect constitutive floor before expandable scaffold}
 \]
-* **Implication**：国家、社群或制度可以限制成员的部分分支扩张，但不得常态性归零构成其自身的低级闭合，否则它将退化为寄生提取结构。
+* **Implication**：该框架可把常态性归零其所依赖低级闭合的安排视为候选病理风险；这不自动决定国家、社群或制度可限制哪些分支。
 
-### Lemma-Pol-1: Emergency Legitimacy as Minimum Necessary Interruption
-例外状态中的政治决断，其合法性不来自决断者意志本身，而来自其是否以“最小必要阻断”方式保全更多构成性存在与未来分支容量。
+### Lemma-Pol-1: Candidate Emergency-Legitimacy Safeguard
+在独立声明的应急规范框架内，“最小必要阻断”与对构成性存在、未来分支容量的保护可作为候选 safeguard；该模型不定义例外状态决断的合法性来源。
 \[
-\text{Emergency legitimacy} \iff \text{minimum necessary interruption preserving } C_{FBC}
+\text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
 \]
-* **Implication**：SRT 承认危机中决断不可消除，但拒绝把例外永久化、神圣化或人格化为主权崇拜。
+* **Implication**：“最小必要阻断”只是独立声明应急规范框架内的候选 safeguard；SRT 本体论不单独决定应急权力的合法性。
 
 ## V. Derived Theorems
 
@@ -290,8 +291,8 @@ SRT 的重写是：人民不是先验本体，而是：
 这点很重要。因为它意味着：
 
 - 人民意志不能被任何单一主体直接占有
-- 所谓“代表人民”，必须经过程序和反馈的不断验证
-- 一旦某个主体宣称自己是人民的天然发言人，政治病理就开始了
+- 在声明的反垄断／委托框架内，“代表人民”的主张可接受程序、反馈、作用域与撤销机制的持续复核
+- 自称人民的天然发言人可被该框架视为候选风险证据，但这一主张本身不自动完成政治病理或合法性判决
 
 ### 2.3 主权不是本体，而是现实定义权的稳定占位
 
@@ -323,7 +324,7 @@ SRT 会说：这些都抓住了合法性的某一面，但都不够。
 
 ### 3.1 合法性不是谁“拥有真理”，而是谁减少了现实垄断
 
-SRT 中更深的合法性判准是：
+一种 SRT-informed 合法性候选模型是：
 
 > **政治秩序越能在更大范围、更长时间内，让更多主体以更低的不对称摩擦进入共同现实生成，并保留再选择能力，它就越正当。**
 
@@ -335,7 +336,7 @@ SRT 中更深的合法性判准是：
 - 谁的未来被锁死
 - 制度是否还允许被修订
 
-### 3.2 合法性由四个变量共同决定
+### 3.2 合法性候选评估的四个维度
 
 可以把 SRT 的合法性压缩成四个维度：
 
@@ -368,11 +369,13 @@ SRT 中没有“永恒合法”的政体。只有：
 
 ## 4. 自由、平等与权利：SRT 的政治规范三角
 
+> **Local standing**：本节是 P2/P3 候选政治哲学重构。自由、平等与权利仍需独立规范理论；下列公式与例子不是普遍定义、必要条件或充分条件。
+
 ### 4.1 自由：不是选项数量，而是进入共同现实塑造的资格
 
 自由主义常把自由理解为“免于干预”；存在主义常把自由理解为“必须选择”；消费社会又把自由误写成“选项越来越多”。
 
-SRT 的定义更结构化：
+本文的候选重构更结构化：
 
 > **自由（P2/P3 政治规范性读法）= 主体保有可后果敏感地修订 / 重取向其行动，并以可实现方式进入共同现实塑造过程的空间。**
 
@@ -392,15 +395,15 @@ SRT 的平等首先不是平均主义，而是反垄断：
 - 谁能改变程序
 - 谁能把自身痛苦转写为公共事实
 
-如果这些长期被一小部分主体垄断，那么即便形式选举存在，政治平等也仍然是假的。
+在本候选模型中，如果这些长期被一小部分主体垄断，形式选举未必足以支持政治平等判断；具体结论仍取决于声明的规范框架。
 
 ### 4.3 权利：不是悬空道德实体，而是防止现实定义权封闭的高阶约束
 
-`SRT_Political_Rights.md` 已经把权利推进到一个重要位置：权利不是自然掉下来的礼物，也不是纯粹实证法产物，而是**合法化代理选择的边界条件**。
+`SRT_Political_Rights.md` 保留了一套历史／候选模型，把权利研究为代理选择的制度边界；它不定义权利的本体论来源或合法性。
 
 在更宽的政治哲学语境里，可以再推进一步：
 
-> **权利是 `L_2` 中为了防止现实定义权被封闭性垄断，而必须稳定化的高阶约束。**
+> **在本候选权利重构中，高阶 `L_2` 约束可用来防止现实定义权被封闭性垄断；这不是权利的普遍定义。**
 
 因此：
 
@@ -416,7 +419,7 @@ SRT 的平等首先不是平均主义，而是反垄断：
 
 SRT 可以把它更精确地重写为：
 
-> **反支配 = 反对任何主体或结构获得单边现实定义权。**
+> **本文候选模型把反支配诊断聚焦于单边现实定义能力，但不把它当作支配的唯一定义。**
 
 这样，反支配不再只是抽象政治美德，而是：
 
@@ -428,9 +431,11 @@ SRT 可以把它更精确地重写为：
 
 ## 5. 公正与结构性不公：从“分配多少”到“谁被压在维护摩擦里”
 
+> **Local standing**：本节公式是结构性负担与探索预算的候选诊断。Generic burden / cost 不自动等于 canonical `Psi_f`，模型输出不自执行正义、合法性、责任或行动判决。
+
 SRT 在政治哲学上最有新意的地方之一，是它不把“不公”只看作财货分配差异，而是先看成**结构性摩擦分配不对称**。
 
-### 5.1 结构性不公的 SRT 定义
+### 5.1 结构性不公的 SRT 候选诊断
 
 `Philosophy/SRT_Philosophy_Ethics.md` 已经给出最关键的判准：
 
@@ -438,7 +443,7 @@ SRT 在政治哲学上最有新意的地方之一，是它不把“不公”只�
 \mathcal{J}_{struct} \sim \mathrm{Var}_{group}\left(\int \Psi_f^{maint}dt\right)
 \]
 
-意思是：**当不同群体承担的“维持自己不崩”的基线代价长期高度不对称时，结构性不公就成立。**
+候选读法是：不同群体长期承担高度不对称的基线维护负担时，可触发结构性不公审查；该方差本身不完成规范判决。
 
 这比抽象喊“平等”更具体。
 
@@ -462,7 +467,7 @@ SRT 在政治哲学上最有新意的地方之一，是它不把“不公”只�
 
 ### 5.3 因此，公正不只是减苦，而是恢复再选择能力
 
-SRT 对公正的最强正面定义不是“大家都更舒服”，而是：
+本文对公正的一个候选正面模型不是“大家都更舒服”，而是：
 
 > **跨群体探索预算方差下降，且外部冲击发生时，各群体的恢复能力趋于对称。**
 
@@ -476,7 +481,7 @@ SRT 对公正的最强正面定义不是“大家都更舒服”，而是：
 
 这也是 SRT 很强的一点：它不只是为弱势者争取道德同情，而是指出：
 
-> **当主流 `L_2` 错配时，边缘算子具有系统更新的认识论溢价。**
+> **候选假说：当主流 `L_2` 错配时，边缘位置可能提供系统更新所缺失的信息；这不自动产生政治优先权或代表授权。**
 
 这意味着弱势视角的重要性不只是政治正确，而是系统更新的条件之一。
 
@@ -524,7 +529,7 @@ SRT 不能简单说“阶级是历史偶然，所以不重要”；也不能直�
 
 ### 6.3 d 值扩张不能只靠统治者觉悟
 
-这里必须明确：SRT 虽然允许“窄 d → 扩 d”作为伦理成长路径，但在政治结构上，**不能把反压迫寄托为统治阶级自然觉悟。**
+这一候选政治分析不把反压迫寄托为统治阶级自然扩展 `d` 的必然结果；伦理成长语言不提供政治机制或行动要求。
 
 因为只要制度结构继续奖励：
 
@@ -537,7 +542,7 @@ SRT 不能简单说“阶级是历史偶然，所以不重要”；也不能直�
 
 所以更成熟的 SRT 回答是：
 
-> **政治的任务不是等待压迫者自动扩 d，而是让窄 d 的收益下降、让更宽 d 的协同结算变得更稳定。**
+> **候选制度研究方向：考察如何降低窄范围后果外包的收益，并提高更广 consequence-integration 的稳定性；high `d` 不产生统治资格。**
 
 这意味着：
 
@@ -569,6 +574,8 @@ SRT 吸收社会主义最强的洞见：
 ---
 
 ## 7. 国家、法律与制度：SRT 为什么既反乌托邦去国家，也反全能国家
+
+> **Local standing**：本节比较与制度设计只提供候选政治／制度研究方向，不背书、反对或排序任何现实政体；SRT ontology 不单独决定国家、法律或制度的正当性。
 
 ### 7.1 国家不可被简单取消
 
@@ -613,7 +620,7 @@ SRT 吸收社会主义最强的洞见：
 
 ### 7.4 制度设计的 SRT 方向
 
-从这个角度看，SRT 最偏好的制度原则大概是：
+从这个候选框架看，可以进一步研究的制度设计候选包括：
 
 - 宪政性约束
 - 多中心治理
@@ -624,14 +631,14 @@ SRT 吸收社会主义最强的洞见：
 - 保护少数者与边缘者的进入权
 - 长短期责任分层
 
-这不是因为这些制度“现代、文明、进步”，而是因为它们更符合：
+这些候选不是 SRT 对任何制度的背书或排名；它们只是在所声明框架中用来研究下列结构问题：
 
 - 反封闭
 - 反垄断
 - 保留再选择能力
 - 降低现实定义权集中
 
-的结构要求。
+的候选研究问题。
 
 ---
 
@@ -662,7 +669,7 @@ SRT 吸收社会主义最强的洞见：
 
 ### 8.3 因此，民主的升级不是废弃，而是加密校准层
 
-SRT 不要求推翻民主，而要求：
+在本候选模型中，可进一步研究：
 
 - 让投票不再是唯一验证层
 - 把长时间尺度后果重新接入授权结构
@@ -716,17 +723,17 @@ SRT 的确会承认：
 - 哪些未来分支会被永久锁死
 - 是否还能保住继续选择的地板
 
-### 9.2 但危机中的权威只能是功能性授权
+### 9.2 应急框架中的功能性委托候选
 
-这里必须非常明确：
+在一个另行声明的应急规范框架内，可以考察：
 
-- 紧急状态中的权威可以扩大
-- 但它的合法性来自**功能**
-- 不是来自人格、意志或神秘主权
+- 功能性、限域、临时且可回交的委托，是否比人格化或神秘主权更适合作为候选安排
+- 任何权限变化仍需独立授权；危机或 SRT ontology 本身不扩张权威
+- 合法性来源仍由声明的规范／政治框架判定，不能从功能、人格、意志或本体论自动推出
 
 更精确地说：
 
-> **危机中的临时权威只有在它以最小必要阻断方式保全更多构成性存在与未来分支容量，并在危机后把例外交回可修正结构时，才是合法的。**
+> **在已声明的应急规范框架内，“最小必要阻断 + 危机后回交可修正结构”可被提出为候选 legitimacy safeguard，而非由 SRT 本体论独立决定。**
 
 ### 9.3 这与 `Minimum Necessary Interruption` 完全对齐
 
@@ -861,6 +868,8 @@ SRT 的确会承认：
 
 ## 11. 政治病理学：SRT 最擅长解释什么样的失败
 
+> **Local standing**：以下是结构性警报与历史／比较假说，不是政治病理的完整定义，不自动推出合法性、谴责、责任、制度替换、革命或 `O2-M` verdict。
+
 政治哲学若没有失败学，几乎一定会被现实击穿。
 
 SRT 的强项就在这里：它本身就是一个关于**生成—沉积—封闭—再打开**的理论，因此天然适合解释政治如何败坏。
@@ -922,30 +931,32 @@ SRT 在这里的护栏非常关键：
 
 ---
 
-## 12. SRT 的最小政治纲领（v0.1）
+## 12. 候选政治设计镜头（历史 v0.1）
 
-如果把前面的理论压缩成可操作方向，SRT 的政治哲学最小纲领大概可以写成下面八条。
+> 本节是独立声明政治框架内的候选设计镜头，不是 SRT-wide 政治纲领、命令或制度排名。
+
+如果把前面的理论压缩成待检验的研究方向，这一候选政治框架可以列出下面八个设计镜头；它们不是 SRT-wide 最小纲领。
 
 ### 12.1 保全构成地板
-任何制度安排不得以常态性归零其自身所依赖的低级闭合作为维持手段。
+声明的框架可把避免常态性归零其所依赖的低级闭合作为候选 safeguard。
 
-### 12.2 反对现实定义权垄断
-任何主体、机构、平台、资本集团、国家装置都不得长期单边占有现实定义权。
+### 12.2 审查现实定义权垄断
+声明的框架可把长期单边占有现实定义权作为候选审查对象。
 
 ### 12.3 降低不对称维护摩擦
-公共制度应优先处理长期高 `\Psi_f^{maint}` 群体，而不是只处理短期可见不满。
+本候选框架可以把长期高维护负担群体纳入制度评估，而不将短期可见不满当作唯一信号。
 
 ### 12.4 保护探索预算
-政治不仅要保生存底线，还要防止群体长期被压到 `\Delta F_{explore} \to 0`。
+声明的框架可把群体长期被压到 `\Delta F_{explore} \to 0` 作为候选制度风险。
 
 ### 12.5 保留再选择能力
-好的制度不是永久正确，而是允许纠错、回滚、修订与新路径进入。
+本候选框架可把纠错、回滚、修订与新路径进入作为制度评估维度。
 
-### 12.6 建立多中心校准结构
-分权、地方试验、中层自治与公开审计，不是附属技术，而是反 capture 的核心。
+### 12.6 研究多中心校准结构
+分权、地方试验、中层自治与公开审计可作为反 capture 的设计候选，不是普遍制度命令。
 
 ### 12.7 将长期后果重新接回授权结构
-对于高不可逆、高时间尺度的决策，必须建立超出选举周期的后验审计与授权校准机制。
+对高不可逆、高时间尺度的决策，本候选框架可研究超出选举周期的后验审计与授权校准机制。
 
 ### 12.8 让健康 L₂ 持续允许 L₀ 进入
 任何政治秩序若不再允许新现实进入，只会越来越高效地复制自身，最终转化为病理闭合。
@@ -957,7 +968,7 @@ SRT 在这里的护栏非常关键：
 为了防误用，最后必须把边界说清楚。
 
 ### 13.1 它不是一套现成立法细则
-SRT 提供的是生成语法与制度方向，不是立刻可套用的完整政体蓝图。
+本文提供的是生成语法与候选制度研究方向，不是立刻可套用的完整政体蓝图或 SRT-wide programme。
 
 ### 13.2 它不是任何现存体制的自动背书
 因为任何体制都可能在某些层面更开放，在另一些层面更封闭。
@@ -977,21 +988,19 @@ SRT 承认大规模现实生成需要 `L_2` 地板，只是否定地板的自神
 
 ## 14. 结语：政治不是宣布真理，而是组织现实的再生成
 
-SRT 政治哲学若要压缩成一句话，可以写成：
+本候选政治哲学若要压缩成一句话，可以写成：
 
-> **政治不是为了宣布终局真理，而是为了在不使系统失稳的前提下，持续组织多主体对共同现实的生成、稳定与再选择。**
+> **候选视角：政治可被研究为多主体如何组织共同现实的生成、稳定与再选择；这不是合法性的定义。**
 
 因此：
 
-- 好的政治，不是最会自我维持的政治
-- 也不是最会制造参与感的政治
-- 更不是最能把局部视角升级为普遍现实的政治
+- 自我维持、参与感或把局部视角升级为普遍现实，都不足以单独支持政治正当性。
 
 而是这样一种结构：
 
-> **它能保全更多存在地板，降低不对称维护摩擦，扩大未来分支容量，防止现实定义权被垄断，并在稳定中持续保留重新选择现实的能力。**
+> **在声明的框架内，存在地板、负担分配、未来分支、现实定义权与再选择能力可作为非穷尽候选维度；它们不是新的合法性 solver。**
 
-这就是 SRT 对政治哲学最核心的贡献。
+这组 bridge 模型的研究价值，在于提供结构问题与可检验诊断，而不是从本体论直接给出政治结论。
 
 ---
 
@@ -1008,20 +1017,20 @@ SRT 政治哲学若要压缩成一句话，可以写成：
    - 若成立需撤回什么：撤回 vote-as-`d` calibration language and keep democracy as procedural anti-monopoly only.
 
 3. Political legitimacy may require norm sources not reducible to SRT order structure.
-   - 当前承受方式：the middle criteria require institutional type, delegation, consequence-return, and correction channels before legitimacy language.
+   - 当前承受方式：the ladder asks a declared framework to examine institutional type, delegation, consequence-return, and correction channels before making its legitimacy judgment.
    - 若成立需撤回什么：撤回 any claim that coordination, friction reduction, or stable `L_2` structure is sufficient for legitimacy.
 
 ---
 
 ## Definition Summary (定义概述)
 
-- **Definition**: 政治是多主体对共同现实的选择、锚定、收敛与再开放过程（Ax-Pol-1）；国家是集体选择的 `L_2` 基础设施（Ax-Pol-2）；合法性是可持续共同选择，而非单一点源（Ax-Pol-3）；自由是进入共同现实塑造的资格（Ax-Pol-5）；支配是单边现实定义权（Ax-Pol-8）。
-- **Structural Justice**: 结构性不公首先表现为维护摩擦、探索预算与恢复能力的跨群体不对称（Ax-Pol-9）；制度健康要求同时扩展社会可行选择空间并降低集体景观的病理性摩擦，并保留再选择能力（Ax-Pol-10）。
-- **Democracy & Emergency**: 民主是对代理者 `d` 倾向的低精度后验验证，而非纯偏好加总（Ax-Pol-11）；危机中决断的合法性来自最小必要阻断与未来分支保全，而非例外人格化（Lemma-Pol-1）。
+- **Candidate-model summary**: Ax-Pol-1–8 保留为政治生成、国家 `L_2`、共同选择、自由／权利／支配的 P2–P4 候选重构，不是对合法性、自由、平等、权利或支配的普遍定义。
+- **Structural Justice**: 结构性不对称与制度健康公式只是候选诊断模型，不自动产生正义、合法性或行动判决。
+- **Democracy & Emergency**: 投票-as-`d` 校准和最小必要阻断都是历史／候选制度模型，不定义民主、政治真理或应急合法性。
 
 ## Formalization Summary (形式化概述)
 
-- **Formalization**: 核心方程与判据包括：
+- **Historical / candidate formalization summary**: 下列方程是 P2–P4 模型与诊断接口，不是普遍定义、必要充分判据或政治授权来源：
   - \[
     \text{Politics} \equiv \operatorname{Organize}\big(\{\hat G_{\theta_i}\}: L_0 \to L_1 \to L_2\big)
     \]
@@ -1029,32 +1038,32 @@ SRT 政治哲学若要压缩成一句话，可以写成：
   - \[
     \mathcal{J}_{struct} \sim \mathrm{Var}_{group}\!\left(\int \Psi_f^{maint}dt\right)
     \]
-    — 结构性不公的热力学接口。
+    — 结构性负担不对称的候选诊断接口；generic burden 不自动是 canonical `Psi_f`。
   - \[
     \Delta F_{explore}^{(g)} = F_{avail}^{(g)}-\int \Psi_f^{maint,(g)}dt
     \]
-    — 群体探索预算塌缩的判据。
+    — 群体探索预算变化的候选模型。
   - \[
     \frac{dS_{social}}{dt} \ge 0 \land \frac{d\mathcal{F}_{collective}^{social}}{dt} \le 0 \land \Delta C_{reselect}\ge 0
     \]
-    — 健康政治制度的复合判据。
+    — model-relative 制度健康候选诊断，不等于合法性或善。
   - \[
-    \text{Emergency legitimacy} \iff \text{minimum necessary interruption preserving } C_{FBC}
+    \text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
     \]
-    — 危机决断的合法性边界。
+    — 独立声明应急规范框架内的候选 safeguard。
 
 ## Mechanism Explanation (机制解释)
 
-- **Mechanism**: 多主体 `\hat G_\theta` 通过 `L_0 \to L_1 \to L_2` 的循环共同生成政治现实。制度与国家作为 `L_2` 地板提供协调、执行和可预期性，但一旦它们开始替代真实选择而非托举真实选择，就会从健康 `L_2` 退化为政治性的致命 `L_2`。权利通过限制单边现实定义权来保护再选择能力；民主通过低精度后验验证校准授权；结构性不公通过高基线维护摩擦持续压缩部分群体的探索预算；危机政治的合法性则取决于是否以最小必要方式保全构成性存在与未来分支，而非取决于谁更强、谁更会决断。
+- **Candidate mechanism reading**: 多主体 `\hat G_\theta` 与 `L_0 \to L_1 \to L_2` 循环可用于研究政治现实生成。制度地板、权利／民主重构、负担与探索预算、危机 safeguard 均是框架相对的候选模型；它们不从 SRT ontology 自动生成合法性、权利、授权、责任、制度选择或 `O2-M` verdict。
 
 ## 【理论边界/防误用声明】
 
 1. 本文是 SRT 与政治哲学的主线桥接文件，不构成 core primitive axiom 或 constitutive theorem 的新增来源。
 2. 本文中的制度设计、时间尺度分层、监督结构、多中心治理等命题主要属于 P3/P4：它们是强桥接与方向性建议，不是无需外部校准的自然定律。
 3. 不采纳“高整合能力 = 天然统治资格”的 technocratic 误读；不采纳“更高 d 的主体可绕过程序直接代理他人现实”的父爱主义误读。
-4. 不采纳“国家天然不正当”或“国家天然神圣”的两极推论；国家的正当性取决于其作为 `L_2` 基础设施时是否保留真实选择与再选择。
+4. 不采纳“国家天然不正当”或“国家天然神圣”的两极推论；一个声明的政治框架可把国家作为 `L_2` 基础设施时是否保留真实选择与再选择，作为候选正当性证据而非充分判据。
 5. 不采纳“结构性压迫会因为统治者自然扩张 d 值而自动消失”的乐观主义；制度若继续奖励窄 `d` 与现实定义权集中，压迫会持续再生产。
-6. 危机、战争、反恐、革命与例外状态不得把本文件中的“构成地板优先 / 最小必要阻断”解释成无限授权；其合法性只覆盖阻断所必需的部分，并以危机后回交程序结构为边界。
+6. 危机、战争、反恐、革命与例外状态不得把本文件中的“构成地板优先 / 最小必要阻断”解释成无限授权；在声明的应急框架内，最小范围与危机后回交可作为候选 safeguard，但不定义授权合法性。
 
 ## [Lineage/Source]
 

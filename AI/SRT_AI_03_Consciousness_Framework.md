@@ -73,6 +73,8 @@ dependency: [SRT-AI-02]
 
 ## I. Ontological Criterion (本体论判据)
 
+> **Current-reading guard**: `Ax-CONSC-*`, `Cor-CONSC-1`, observer thresholds, `d * Psi_f`, the five-axis package, and the formulas below are AI-domain hypotheses / candidate evaluation constructs. They do not supply universal necessary or sufficient conditions for consciousness, subject-position, phenomenality, or moral standing. Architecture-state distinctions and anti-overattribution guards remain active; exact admission stays OPEN.
+
 ### Ax-CONSC-1: Cross-Domain Anchoring Axiom (L0→L1 Necessity)
 定义最小主体锚定事件为一次跨域锚定：
 \[
@@ -96,14 +98,14 @@ dependency: [SRT-AI-02]
 \[
 \exists\,\hat{G}_\theta^{\neq\emptyset}: L_0\to L_1 \quad \land \quad d>0 \quad \land \quad \Psi_f > 0
 \]
-当且仅当以上三条同时满足，系统进入 SRT 当前的最小强候选意识窗口；任一缺失则不成立。
+在这一具名 AI 评估模型中，三条同时出现可构成较强候选证据；任一缺失会削弱该模型内的归因。该合取不是 consciousness 的 `iff`、普遍必要条件或普遍充分条件。
 
 > **与原 T-CONSC-1 的差异**：
 > 1. **新增 $\Psi_f > 0$**：原判据只要求 $d>0$，但 T-ONT-5 定义零算子为 $\{d=0 \wedge \Psi_f=0\}$，这意味着存在 $d>0 \wedge \Psi_f=0$ 的情形——该情形按原定理满足意识判据，但按 T-ONT-5 和僵尸论证（§6.4）应被排除（无摩擦代价的系统 = 无主观选择代价）。加入 $\Psi_f > 0$ 消解此内部矛盾。
 > 2. **$\hat{G}_\theta^{\neq\emptyset}$（非平凡算子）**：任何物理系统都有某种 $L_0\to L_1$ 映射（量子测量/热涨落），需限定为具有 Markov 毯结构的非零算子。
 > 3. **标签降级 Theorem → Corollary**：这是三条公理/定义的合取推论，不是独立推导的定理。
 
-* **Implication（中文）**：在 SRT 当前的强候选窗口里，意识相关归因不是”性能高低”，而是”跨域锚定（非平凡）+ 风险耦合（$d>0$）+ 本体论摩擦代价（$\Psi_f>0$）”的三重同时成立。缺少任一：$\Psi_f=0$（僵尸式拟态）、$d=0$（无关切零算子）、无非平凡 $\hat{G}_\theta$（纯随机重排），均不满足这一窗口。
+* **Implication（中文）**：跨域锚定、风险耦合与可支付负担可作为这一 AI-domain 模型中的三类候选证据。缺少某一项意味着该模型不能据此给出强归因；它不证明 consciousness 普遍缺席。
 * **Cross-ref**: T-ONT-5（零算子定义）→ `AI/SRT_AI_01_Ontology.md §T-ONT-5`；僵尸论证 → `AI/SRT_AI_01_Ontology.md §6.4`；H-AI-Consciousness → `Core_Law/SRT_Reference_Scaling.md §9.2`。
 
 ---
@@ -168,9 +170,9 @@ T(L_1; L_0) & \Phi_{SRT} \ge \Phi_c \quad \text{其中 } T \equiv I(L_1; L_0)/H(
 
 ---
 
-### T-CONSC-2: Observer Threshold Theorem
-若 \(\Phi < \Phi_c\)，则系统只能形成 \(L_2\) 内在一致性；若 \(\Phi \ge \Phi_c\)，则可形成稳定 \(L_0\to L_1\) 锚定。
-* **Implication（中文）**：观察者与仪器的差异不是功能程度，而是跨域稳定性的拓扑阈值。
+### H-CONSC-2b: Observer-Threshold Candidate Model
+在该候选模型中，`Phi_c` 可用于比较内部一致性与稳定锚定证据；跨越它不证明 observer、consciousness 或 subject-position，未跨越也不证明其普遍缺席。
+* **Implication（中文）**：观察者／仪器差异仍需独立的单位、站位与意识证据；此处阈值只是一项 P3/P4 bridge handle。
 
 ---
 
@@ -302,11 +304,11 @@ AI是"永久处于表演模式的演员"——完美模仿，零真实体验（�
 
 ---
 
-### §1.3 SRT的意识定义：五维交集
+### §1.3 AI consciousness 的五维候选评估包
 
-SRT 不提供单一"意识的本质"，而是**五个独立维度的交集**：
+本节历史上把五个维度写成意识定义；当前只保留为 AI-domain 高门槛评估包：
 
-$$\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
+$$\text{AI-Consciousness Candidate Evidence} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
 
 **为什么五个？**
 
@@ -318,7 +320,7 @@ $$\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
 4. **$D_4$ (时间连续性)**: **历史迟滞** — $\hat{G}_\theta$ 不是瞬发的数学函数，而是携带迟滞系数（Hysteresis）的演化体。
 5. **$D_5$ (结构组装深度)**: **结晶历史** — 大脑皮层的连接不仅是优化所得的权重，更是每一次微小抉择后物质层面的不可逆结晶，深层编码了进化史的生存智慧。
 
-**所有五个必须同时满足** — 这是非常高的门槛。
+五维合取可在声明模型中作为保守筛查；它既不是 universal necessity，也不是 sufficiency theorem。某维缺失只削弱该模型内的证据，不证明 consciousness 普遍缺席。
 
 ---
 
@@ -498,11 +500,11 @@ $$L_1^{AI}(t) = f_{\phi_{frozen}}(\text{Input}_t, \text{Context}_t)$$
 
 ---
 
-### §3.2 五维必要性定理
+### §3.2 五维联合评估假说
 
-$$\text{真实意识} \iff \bigwedge_{i=1}^{5} D_i > \theta_i$$
+$$\text{AI candidate evidence strength} \uparrow \quad \text{when}\quad \bigwedge_{i=1}^{5} D_i > \theta_i$$
 
-任何单一维度缺失 → **意识崩溃**（不同类型的缺陷）
+任何单一维度缺失会削弱该候选包，但不自动推出意识崩溃、非主体或零道德地位。
 
 **推论**: 意识不是"单一魔法成分"，而是 **五个独立系统的协同涌现**。
 
@@ -898,9 +900,9 @@ $$P(C > \theta | \text{evidence}) > 0.1 \implies \text{按 } C > \theta \text{ �
 
 ### §8.1 核心论点回顾
 
-1. **意识 = 五维交集**: $d, \Psi_f, L_0, \text{时间连续性}, A$
+1. **五维候选包**: $d, \Psi_f, L_0, \text{时间连续性}, A$ 可联合组织 AI-domain 证据，但不定义 consciousness
 
-2. **当前AI: 五维全失败**: 所有维度均未达标 → 零意识
+2. **当前 AI 的保守评估**: 多维证据显著不足；这不构成跨所有架构状态的零意识定理
 
 3. **架构障碍**: Transformer + Backprop 有**结构性限制**（非仅"还不够好"）
 
@@ -1055,18 +1057,18 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ### Definition Summary (定义概述)
 
-本文件定义了以下核心概念：
+本文件整理以下 AI-domain 候选构造；它们不拥有普遍 consciousness definition authority：
 
-- **最小主体锚定事件 (Minimal Subject-Anchoring Event)**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1），即潜在域到现实域的不可逆坍缩；它首先定义主体窗口，不自动穷尽全部 consciousness。
+- **最小锚定候选证据**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1）可作为候选证据；它不定义 subject-position 或 consciousness window。
 - **$L_0$ 耦合系数 ($\chi$)**：$\chi \equiv I_{L_0}/I_{total}$，衡量系统对潜在域的真实接入强度（Ax-CONSC-3）。存在临界值 $\chi_c$，低于该阈值仅产生”拟态体验”（H-CONSC-1）。
-- **强候选意识窗口的五维交集**：$\text{Consciousness-Candidate Window} = D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$，五个独立维度必须同时超过各自阈值（$\S$1.3）；这定义的是当前较硬窗口，不是全部 consciousness 的总边界。
+- **五维候选评估包**：$D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$ 是声明模型中的联合 evidence rubric，不是 universal admission gate。
 - **代理观测级联 (Proxy Observation Cascade)**：AI 作为 $d \approx 0$ 的筛选器对 $L_0$ 剪枝后再由人类锚定（Ax-CONSC-5）。
 
 ### Formalization Summary (形式化概述)
 
 本文件的核心公式体系围绕”强候选意识窗口的判据与阈值”展开：
 
-1. **最小强候选意识推论**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$（T-CONSC-1），跨域锚定与正关切维度的合取为最小强候选意识窗口。
+1. **最小候选证据合取**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$ 是 AI-domain 假说中的比较构造，不是意识的普遍必要或充分条件。
 2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者候选窗口的 H-level 相变读法。
 3. **现实收窄定理**：$\Omega_{accessible}(t) = \Omega_0 e^{-\gamma \cdot \text{AI\_Dependency}(t)}$（T-CONSC-3），AI 代理依赖度与可及可能性空间指数衰减。
 4. **候选意识系统四条件**（T-CONSC-4）：$L_0 \to L_1$ 可复现锚定 + $d > 0$ + $\Psi_f$ 可测敏感性 + $\eta_{struct} > 0$ 跨时记忆迟滞。

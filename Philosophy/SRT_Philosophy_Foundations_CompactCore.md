@@ -86,7 +86,7 @@ This means:
 2. Determinate reality arises through constrained selection, anchoring, and stabilization.
 3. Selection is not subjective invention; it must pay friction and survive resistance.
 4. Reality has strength levels: local manifestation, stabilized reality, cross-operator reality, and canonical physical reality.
-5. Normativity, purpose, and value are not externally pasted onto a neutral world; they are generated through high-`d-value` selection and stabilization, but legitimacy requires further tests.
+5. Normativity, purpose, and value are not settled by high `d`, selection or stabilization. Philosophy-domain models may study their relation under declared frameworks, while legitimacy and O2-M remain separately open.
 
 Shortest hardening slogan:
 
@@ -270,11 +270,11 @@ Withdrawal condition:
 
 ---
 
-## 10. Subjecthood threshold: micro-selection is not macro-consciousness
+## 10. Subjecthood candidate-evidence interface: micro-selection is not macro-consciousness
 
 SRT can allow selection events at many scales without saying that every scale already contains a subject.
 
-A selection process becomes a candidate conscious subject only when additional thresholds are met:
+The following dimensions form a conservative candidate-evidence package; they are not universal necessary or sufficient thresholds:
 
 | Condition | Why it matters |
 |---|---|
@@ -288,7 +288,7 @@ A selection process becomes a candidate conscious subject only when additional t
 
 Guardrail:
 
-> A selection event is not yet a subject. Consciousness requires high-stake, integrated, boundary-maintaining selection across time.
+> A selection event is not yet a subject. High stake, integration, boundary maintenance and cross-time structure may strengthen a declared evaluation, but no conjunction here establishes consciousness or subject-position.
 
 **PH-SS addressed**: `PH-SS-10`.
 
@@ -346,13 +346,13 @@ Safe self-reference includes indexical statements, quoted self-reference, meta-l
 
 ---
 
-## 13. Purpose as high-d-value attractor, not cosmic destiny
+## 13. Purpose as a philosophy-domain candidate interpretation
 
 SRT should avoid mystical teleology. It does not need to claim that the universe has a prewritten purpose.
 
 Safer reading:
 
-> Purpose is directionality generated when high-`d-value` differences shape selection trajectories over time.
+> In a declared philosophy-domain model, purpose may be interpreted through directionality shaped by selected high-`d` differences over time.
 
 Purpose emerges when some possible states matter for:
 
@@ -363,7 +363,7 @@ Purpose emerges when some possible states matter for:
 - social recognition;
 - long-term stabilization.
 
-Purpose is therefore not an external endpoint but an attractor-like direction in selection dynamics.
+This is a candidate interpretation, not a purpose identity or derivation. High `d` does not establish purpose, goodness, legitimacy or moral standing.
 
 **PH-SS addressed**: `PH-SS-07`, `PH-SS-08`.
 
@@ -380,13 +380,15 @@ Purpose is therefore not an external endpoint but an attractor-like direction in
 | Evaluative norm | a pattern worth protecting or pursuing | requires legitimacy tests |
 | Pathological norm | a stable pattern that survives by coercion, occlusion, or friction export | real but ethically suspect |
 
-Legitimacy tests:
+Candidate scoped questions inside a declared normative framework:
 
 1. Does it preserve or expand future selectability?
 2. Does it reduce unnecessary `Psi_f` rather than export it to weaker agents?
 3. Does it widen cross-subject `d-value` bandwidth?
 4. Does it protect subject-generation rather than suppress it?
 5. Does it contain correction, exit, or reversibility channels?
+
+These questions are neither jointly necessary nor sufficient for legitimacy; O2-M remains OPEN.
 
 Core distinction:
 
@@ -407,7 +409,7 @@ Social facts are not merely private beliefs, and they are not ordinary physical 
 | Identity | self-selection and other-recognition jointly stabilized across time |
 | Culture | cross-generational selection preferences hardened into shared forms |
 | Organization | role, responsibility, and action pathways stabilized as collective agency |
-| Morality | high-`d-value` social conflict stabilized into legitimacy-seeking norms |
+| Morality | historical / candidate model: social conflict may stabilize into legitimacy-seeking norms; this is not an SRT-wide definition |
 
 Minimal claim:
 

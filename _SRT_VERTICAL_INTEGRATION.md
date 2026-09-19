@@ -12,6 +12,8 @@ dependency: [SRT-CORE-BRIDGE, SRT-CORE-14, SRT-D-VALUE-CANONICAL]
 # SRT 纵向整合框架（Vertical Integration Framework）
 
 > **目的**：为量子→神经→行为→社会各层之间建立明确的算符合成规则和耦合强度规范，填补"各层单独定义但无组合规则"的结构性缺口。
+>
+> **Current-architecture / bridge guard (2026-09-19)**: this file is a legacy hybrid cross-scale framework. Its `L_0 -> \hat{G}_\theta -> L_1 -> L_2`, operator-composition, attention/embodiment and friction equations are declared model/bridge candidates, not primitive ontology. `\hat{G}_\theta` is a formed formal/model carrier rather than primitive Selection; event actuality is distinct from anchoring persistence and retained history. `\Psi_f` retains its canonical friction/payability role, while “friction is all dynamics' generative source” is only the existing P2/P3-B08 bridge hypothesis. Current authority routes through `CANONICAL_REGISTRY.md §C` and the Generative Ontology Spine.
 
 ---
 
@@ -22,7 +24,7 @@ SRT 各层算符已分别形式化（物理、神经、行为、社会），但�
 1. **算符合成**：$\hat{G}_{社会}$ 如何由 $\hat{G}_{神经}$ 的集体涌现构成？
 2. **d-value 的层次关系**：个体 $d_i$ 与集体 $d_{collective}$ 的本体论关系是什么？（不是"如何加总"，而是"截面与景观"的关系——见 §4）
 3. **L₂ 垂直传递**：神经层的 $L_2$（突触权重）与社会层的 $L_2$（规范）是否同一？
-4. **Ψ_f 跨层转化**：量子去相干的 $\Psi_f$ 与认知决策成本的 $\Psi_f$ 可比吗？（是否也是所有动力学的生成来源？——见 §8）
+4. **Ψ_f 跨层转化**：量子去相干的 $\Psi_f$ 与认知决策成本的 $\Psi_f$ 可比吗？（“所有动力学的生成来源”只作 P2/P3-B08 bridge hypothesis 检验——见 §8）
 
 ---
 
@@ -181,14 +183,14 @@ $$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\
 
 **跨层可比性**：在同一层内（如不同个体的认知 $\Psi_f$ proxy）可比；跨层（量子 $\Psi_f$ vs 认知 $\Psi_f$）数值和单位不可比。更稳的共同项不是同一 Fisher 长度数值，而是系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。
 
-**Ax-F-12 补充（摩擦的双重视角）**：$\Psi_f$ 的函数角色不只是"维持现实的成本"（微观锚定视角），还是**所有动力学的生成来源**（宏观生成视角）：
+**Ax-F-12 历史补充（P2/P3-B08 摩擦生成 bridge hypothesis）**：$\Psi_f$ 的 canonical 角色是 friction / payability burden。把算子间摩擦建模为动力学生成源，是可在具名域内检验的 P2/P3 bridge reading，不是普遍生成定理：
 
 | 视角 | 描述 | 对应层级 |
 |:-----|:-----|:---------|
 | 微观锚定视角 | 支付 $\Psi_f$ 才能将 $L_0$ 锚定为 $L_1$（A2、A11） | 单算子内部 |
-| 宏观生成视角 | $\Psi_f(\hat{G}_i, \hat{G}_j)$ 是算子间动力学的生成源（A16/Ax-F-12） | 多算子交互 |
+| 宏观候选视角 | 已声明模型可把 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 作为算子间动力学的 P2/P3 候选生成项（P2/P3-B08） | 多算子交互 |
 
-两者相容：进入摩擦流（微观）= 进入动力学生成过程（宏观）。算子间 $\Psi_f$ 的累积即是 $F_{collective}$ 景观的构成方式（Eq-Multi-01，见 §4.5）。
+两者不能以等号直接合并。微观 payability 负担是 canonical 用法；算子间 $\Psi_f$ 累积构成 $F_{collective}$ 景观的读法只在 Eq-Multi-01 等已声明模型前提内成立（见 §4.5）。
 
 ---
 
@@ -237,19 +239,19 @@ $$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\
 | 统计 | 归一化 | 维持选择测度在选择流形上的一致性 | 信息几何路径长度（Fisher 度量积分） |
 | 跨尺度 | 粗粒化 | 高层 $\hat{G} = \Lambda \circ \hat{G}_{low} \circ \Lambda^{-1}$（重整化投影） | 信息压缩损失（$H(\hat{G}_{n+1}) \leq H(\hat{G}_n)$） |
 
-**关键含义**：这不是"数学形式相似"的类比关系——幽灵算子 $\hat{G}_\theta$ 就是现实的选择结构，上述现象是这个结构在不同尺度的物理实现形式。
+**当前含义**：幽灵算子 $\hat{G}_\theta$ 是已声明 Selection realization 的 formed formal/model carrier，不是 primitive Selection 本身。上表只组织候选的跨尺度实现映射，既不证明它们同构，也不使某一域的机制成为 universal Selection definition。
 
 **Bridge boundary（2026-04-24 sync）**：上表中的每一行都是实现层接口，不是对 `\hat{G}_\theta` 的完整定义。尤其是神经侧抑制 / 归一化只覆盖候选竞争与压缩，不能替代 candidate activation、threshold / global availability、plastic writeback，也不能把 neural implementation 反向写成 Ghost Operator 的全部本体论。
 
-### §8.2 Ψ_f 作为生成性原理
+### §8.2 Ψ_f 作为生成性原理（P2/P3 bridge hypothesis）
 
-**概念升格**：$\Psi_f$ 在 SRT 中的角色从"维持锚定的成本"升格为"所有动力学的生成来源"。
+**等级边界**：$\Psi_f$ 在 canonical 中保持为 friction / payability construct。“算子间摩擦生成动力学”只是 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08` 的已有模型候选，不是概念升格或 universal source theorem。
 
 两个视角相容而不相同：
-- **微观视角（原有）**：每个算子支付 $\Psi_f$ 才能将选择态从 $L_0$ 锚定到 $L_1$
-- **宏观视角（新增）**：所有动力学都是算子间 $\Psi_f$ 摩擦的展开形式
+- **微观／可支付视角（canonical）**：在已声明 realization 中，formed carrier 必须能承担其 $\Psi_f$ 负担；这不把摩擦变成 primitive actualisation 的原因
+- **宏观候选视角（P2/P3）**：具名动力学可候选地建模为算子间 $\Psi_f$ 摩擦的展开形式
 
-$$\text{所有动力学} = \Psi_f(\hat{G}_i, \hat{G}_j) \text{ 的不同尺度形态}$$
+$$\text{已声明域动力学} \;\overset{\text{P2/P3 candidate}}{\sim}\; \Psi_f(\hat{G}_i, \hat{G}_j) \text{ 的模型化尺度形态}$$
 
 | 动力学类型 | 算子间摩擦表达式 |
 |-----------|----------------|
@@ -258,7 +260,7 @@ $$\text{所有动力学} = \Psi_f(\hat{G}_i, \hat{G}_j) \text{ 的不同尺度�
 | 文化变迁 | $\Psi_f(L_{2,A}, L_{2,B})$：两套社会规范结构的摩擦驱动制度演化 |
 | 免疫应答 | $\Psi_f(\hat{G}_{self}, \hat{G}_{foreign})$：自身算子与外来算子的摩擦驱动边界识别 |
 
-**推论**：没有 $\Psi_f$，就没有动力学；没有动力学，就没有现实的生成。摩擦不是存在的障碍——摩擦是存在得以展开的机制。
+**候选推论边界**：对某一 declared model，若其动力学项已独立建立为算子间摩擦，`\Psi_f` 可组织该模型的生成过程。这不推出“无 $\Psi_f$ 即无任何动力学”，也不把摩擦定义为所有存在的普遍发动机。
 
 ---
 

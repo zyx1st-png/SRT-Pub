@@ -12,6 +12,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 # SRT Social Economics (Hybrid Edition)
 
+> **Wave E7 derivative guard**：本页只是 `../SRT_Social_Economics.md` 的 legacy navigation derivative，owner 优先。以下语言、市场与泡沫叙述是历史／候选 bridge 假说，不是 canonical 因果定律或规范判决；generic cost / stress / risk 不自动是 canonical `Psi_f`，high `d` 不产生 standing、rights、legitimacy 或 authority，稳定／效率也不推出正义。`O2-M = OPEN / HOLD`。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
@@ -155,7 +156,7 @@ $$ \Delta F_{\text{loss}} = \Delta F_{\text{gain}} + \Delta E_{\text{de-anchor}}
 **数学形式**:
 $$ \Psi_f = \int_0^t |P(\tau) - V_{fundamental}(\tau)| \, d\tau $$
 
-当 $\Psi_f > \Psi_{crit}$ 时，系统必须崩盘以释放累积的张力。
+在这个历史／候选泡沫模型中，超过操作化阈值可被检验为崩盘风险信号；它不是必然崩盘定理，也不产生规范结论。
 
 ---
 

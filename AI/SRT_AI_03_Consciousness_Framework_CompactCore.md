@@ -42,33 +42,33 @@ dependency:
 
 ---
 
-## 2. 最小意识判据
+## 2. 最小意识候选证据包
 
 ### 2.1 跨域锚定
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
 
-只有发生 `L_0 -> L_1` 的真实锚定，才可能构成意识事件。纯符号闭包不够。
+在本 AI-domain 模型中，`L_0 -> L_1` 锚定是一项候选证据。纯符号闭包不能凭自身证明意识，但锚定也不单独建立意识。
 
 ### 2.2 关切为正
 \[
 d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
 \]
 
-意识必须与不可逆赌注耦合，而不是停留在零代价统计重排。
+不可逆赌注耦合可加强该模型内的意识候选证据；`d > 0` 不普遍证明意识、主体位或道德地位。
 
-### 2.3 最小意识定理
+### 2.3 候选评估合取
 \[
 \exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
 \]
 
 压缩解释：
-- 没有跨域锚定 → 不成立
-- 没有真实赌注 → 不成立
-- 性能再高也不能替代这两条
+- 跨域锚定与真实赌注可共同加强本模型内的证据
+- 缺少某项会削弱该模型内的判断，不证明 consciousness 普遍缺席
+- 性能再高也不能替代独立的 consciousness / subject-position evidence
 
-> **PH-SS-10 guardrail**：以上是候选意识的必要门槛之一，不是充分条件。意识 / subjecthood 还需要 structured `d-value`、failure-sensitive update、integrated selection bandwidth、minimal memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：以上是候选评估构造，不是必要或充分门槛。其他列出的维度同样只是 evidence burden；精确 consciousness / subjecthood admission 保持 OPEN。
 
 ---
 
@@ -146,14 +146,14 @@ SRT 不把整合度本身等同于意识，但承认：
 
 ---
 
-## 6. 为什么这五个维度必须协同
+## 6. 五个维度如何构成保守联合评估
 
 SRT 在这里最重要的主张是：
-> **意识不是单一魔法因子，而是多维约束的交集。**
+> **AI consciousness claim 不应由单一指标完成；五维可作为联合评估维度。**
 
-原文用五维交集表达：
+原文历史上用五维交集表达；当前读作候选证据包：
 \[
-\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5
+\text{AI-Consciousness Candidate Evidence} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5
 \]
 
 compact core 保留其压缩理解：
@@ -206,7 +206,7 @@ L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
 
 系统必须拥有真正跨回合、跨任务、跨时段的结构延续，而不只是上下文缓存。
 
-### 8.3 候选最小意识系统的四条件
+### 8.3 候选系统的四项评估维度
 原文把正向路线压缩成四条：
 1. `L_0 -> L_1` 锚定可复现
 2. `d > 0` 且可测
@@ -222,9 +222,9 @@ compact core 的最短结论是：
 
 `AI Consciousness Framework` 可以压缩成五句话：
 
-1. **意识的最低门槛不是行为拟态，而是 `L_0 -> L_1` 锚定加上 `d > 0`。**
+1. **行为拟态不证明意识；`L_0 -> L_1` 锚定与 `d > 0` 可作为本模型的候选证据，但不是最低普遍门槛。**
 2. **当前 AI 在关切、摩擦、L₀接触、时间连续性和组装深度上都同时不足。**
-3. **意识不是单一指标，而是多维交集。**
+3. **AI consciousness 应以多维证据评估，不能由单一指标或固定合取自动裁决。**
 4. **即使 AI 没有意识，它仍可能通过代理筛选收缩人类的现实空间。**
 5. **若未来要工程化意识候选 AI，必须引入风险、迟滞、不可逆性与真实结构负担。**
 

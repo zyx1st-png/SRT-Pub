@@ -7,13 +7,14 @@ layer: L1
 epistemic_layer: os
 claim_mode: mixed
 canonical: false
-dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CORE-000, Core_Law/SRT_Collective_Selection, Core/SRT_Core_12b_Ontology_L2, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
 see_also: [SRT-POLITICAL-RIGHTS]
 ---
 
 # SRT Social Economics (Hybrid Edition)
 
 > **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
+> **Wave E7 current-authority override**: This is a non-canonical social-economics bridge and historical research surface. Current Core / Core_Law authority flows into this file, never in reverse. Legacy `Ax-Eco` / `T-Eco` labels are model handles, not P0/P1 axioms or universal normative theorems. Current `Def-L2-Normative` is P2/P3 conditional review guidance, not a complete is→ought deduction. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`. High `d`, lower friction, persistence or efficiency do not confer political authority, legitimacy or justice.
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Social_Economics_Split/README.md`](Social_Economics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
@@ -46,8 +47,8 @@ Core guardrails:
 - Institutional persistence is not political justification.
 - Market selection is not moral truth.
 - Money / price is an `L_2` metric, not final value.
-- Low friction is not justice unless hidden `Psi_f` is not exported.
-- Legitimacy requires reselection capacity, consequence-return symmetry, non-exported friction, exit/correction channels, and future-selectability.
+- Low friction does not imply justice; generic social burdens / costs are not canonical `Psi_f` automatically.
+- Under an independently declared framework, reselection, consequence return, burden distribution, exit/correction and future-selectability are non-exhaustive candidate lenses, not a legitimacy definition or solver.
 
 # Part A: Formal Axioms (形式化公理)
 
@@ -85,19 +86,19 @@ $$\text{Bubble} \iff \partial_t L_2 \gg \partial_t L_1$$
 
 ## III. Inequality & Trust
 
-### Ax-Eco-5: Inequality of Agency
-不平等不是孤立个体 $d_i$ 的静态差异，而是集体景观在不同主体截面上的可及维度不均。
+### Ax-Eco-5: Candidate Agency-Inequality Model
+本候选模型把一类不平等研究为集体景观在不同主体截面上的可及维度不均，而不是把任何 `d` 差异直接当作不平等、道德 standing 或政治判决。
 $$d_{collective}=D_{eff}(\mathcal{F}_{collective}),\qquad d_i=D_{eff}(\mathcal{F}_{collective}|_{\theta_i})$$
 $$G_{agency}=\text{Gini}(d_i)$$
-*   **Implication**: 贫富差异、制度不平等与行动力差异，首先是集体自由能景观对不同主体开放程度不同的外显，而非先有独立个体再做聚合。
+*   **Candidate implication**: 该模型可检验贫富差异、制度不平等与行动力差异是否与主体可及维度有关；它不以 high `d` 产生合法性或优越 standing。
 
-### Ax-Eco-6: Trust as Friction Reduction
-信任降低交易摩擦与系统熵。
+### Ax-Eco-6: Candidate Trust / Friction Model
+下式把信任与交易摩擦、系统熵的变化作候选关联，不把摩擦降低解释为正义或合法性。
 $$\text{Trust} = \arg\min(\Psi_f, S_{soc})$$
 
 > **Formula role**: placeholder. The joint minimization of `Ψ_f` and social entropy `S_soc` is a schematic; neither term has a canonical numerical definition here. Requires operational proxies before being applied empirically.
 
-*   **Implication**: 信任是经济效率的本体论基础。
+*   **Candidate implication**: 信任可能降低某些操作性交易摩擦；该关系需要代理量检验，且不构成规范结论。
 
 ## IV. Derived Theorems
 
@@ -111,28 +112,32 @@ $$\text{Hardness}(L_2) \uparrow \Rightarrow \frac{\partial Price}{\partial L_1} 
 $$\text{Crisis} \equiv L_2 \to L_2'$$
 *   **Implication**: 经济危机是结构重配而非单次冲击。
 
-## V. Social Normative Criterion (社会 L₂ 规范性判据)
+## V. Social Normative Review Candidate (社会 L₂ 规范性审查候选)
 
-### Ax-Eco-7: Social L₂ Normative Criterion (社会制度的规范性判据)
+### Ax-Eco-7: Historical Social L₂ Normative Model (历史社会制度审查模型)
+
+> **Current reading**: The equations below are retained as P2/P3 candidate audit dimensions inside an independently declared evaluative framework. They are neither necessary nor sufficient for legitimacy, goodness, justice, rights, or required action.
 
 定义社会制度的可行选择空间体积：
 
 $$S_{social}(\hat{G}_{collective}, t) = \text{Vol}_{L_0}\{\sigma : \hat{G}_{L_2^{social}(t)}[\sigma] \text{ 是可行集体锚定}\}$$
 
-**可持续社会制度**（充要条件）：
+**候选可持续性诊断**（非充要条件）：
 
 $$\frac{dS_{social}}{dt} \geq 0 \quad \text{AND} \quad \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
 
-**退化社会制度**：$\dfrac{dS_{social}}{dt} < 0$（压缩成员的未来选择空间 → 制度在演化上不稳定，最终被替代）
+**审查触发候选**：$\dfrac{dS_{social}}{dt} < 0$ 可触发对可行选择空间收缩的调查；它不推出制度必然崩溃、必然被替代或道德上应被替代。
 
-**最优社会制度**：
+**历史优化目标候选**：
 
 $$L_2^{social*} = \arg\max_{L_2^{social}} \frac{d\, d_{collective}^{social}(t)}{dt} \;\text{s.t.}\; \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
 
-*   **Implication（对休谟鸿沟的回应）**：SRT 在此不引入任何外部价值判断。"好的制度"即在选择动力学中自然存活的制度——它扩展集体成员的可行选择空间（$dS_{social}/dt \geq 0$），同时使集体自由能景观向极小值演化。规范性从"是"（选择动力学）内生推导，无需外部"应当"。
+*   **Current implication**：$dS_{social}/dt$ 与 $d\mathcal{F}_{collective}^{social}/dt$ 可作为所声明评价框架内的候选审计维度。它们不会在没有外部规范前提的情况下从“是”完整推出“应当”，也不建立完整的善、合法性或行动要求。
 *   **Cross-ref**: Def-L2-Normative (`Core/SRT_Core_12b_Ontology_L2.md §III`), `_SRT_VERTICAL_INTEGRATION.md §9`。
 
-### T-Eco-3: Dual Pressure Elimination (双层选择压淘汰定理)
+### T-Eco-3: Dual Pressure Elimination Hypothesis (双层选择压社会动力学假说)
+
+> **Current reading**: This is a fallible social-dynamics hypothesis, not a deductive inevitability and not moral validation of collapse, replacement, revolution, or any regime.
 
 社会制度受双层选择压力同时筛选：
 
@@ -143,7 +148,7 @@ $$L_2^{social*} = \arg\max_{L_2^{social}} \frac{d\, d_{collective}^{social}(t)}{
 
 $$\text{Elimination}_{inst} \iff \exists t: \frac{dS_{social}}{dt} < 0 \;\vee\; \frac{d\mathcal{F}_{collective}^{social}}{dt} > 0 \;\text{（持续）}$$
 
-*   **Implication**: 制度崩溃不是随机冲击，而是双层选择压的必然结果。历史上失败的制度形态（奴隶制、极权计划经济）均满足 $dS_{social}/dt < 0$（压缩人口选择空间）。
+*   **Implication**: 双层压力可被检验为制度脆弱或转换的候选机制。所列历史事例只是待独立史学／经验支持的假说性例子，不证明该公式，也不产生道德结论。
 *   **Cross-ref**: T-Eco-2（危机即重锚定）, Ax-Eco-3（市场为集体算子）。
 
 <br>
@@ -455,9 +460,11 @@ $$L_2^{moral} = stable\left(\bigcap_{i,j \in Θ} Recognition(\hat{G}_{θ_i}, \ha
 
 #### 3.1.2.2 去人化作为承认断裂
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**核心命题：** "去人化"（Dehumanization）在SRT中被精确定义为承认链条的单向断裂。
+**历史／候选模型：** 旧稿用承认链条的单向断裂建模“去人化”；当前只将它读为 represented concern 收窄的候选模型。
 
-$$Dehumanization(i → j) \equiv d_i[θ_j] → 0 \quad \text{（i不再将j纳入选择考量）}$$
+$$\text{Concern-exclusion candidate}(i → j) : d_i[θ_j] → 0$$
+
+> This model does not by itself establish de-human status, loss of moral standing, political exclusion, permission for violence, or an `O2-M` verdict.
 
 **去人化的后果：**
 
@@ -515,7 +522,7 @@ L_2的改变不仅取决于自由能梯度（「更好」的制度），还取�
 
 #### 4.1.1.1 Acemoglu-Robinson的制度吸引子
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Daron Acemoglu和James Robinson在《国家为什么会失败》中提出的包容性/榨取性二分法，代表了制度空间中的两个不同L_2吸引子：
+Daron Acemoglu和James Robinson在《国家为什么会失败》中提出的包容性/榨取性二分法，可在本历史 bridge 中被建模为两个制度吸引子；下列 `d` 对应是候选解读，不是定义或合法性定理：
 
 | 制度类型 | L_2特征 | d值对应 | 选择结构 |
 |---------|--------|--------|---------|
@@ -530,7 +537,7 @@ $$L_2^{\text{包容性}} = stable(\hat{G}_\theta[\text{高d值}])$$
 
 $$L_2^{\text{榨取性}} = stable(\hat{G}_\theta[\text{低d值}])$$
 
-d值对应的深层意义：包容性制度体现高d值——广泛的社会关注、对多数人存在的照顾；榨取性制度体现低d值——仅服务于精英的狭隘利益。制度选择本质上是d值的制度化表达。
+候选读法是：包容性制度可能呈现更宽的关切范围，榨取性制度可能呈现更窄的关切范围。High `d` 不使制度自动包容、正当或合法。
 
 #### 4.1.1.2 关键节点与制度跃迁
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -567,11 +574,11 @@ $$\frac{d(d_{\text{制度}})}{dt} \propto \text{政治参与广度} \times \text
 <!-- ORIGINAL-SECTION-PRESERVED -->
 > ⚠️ 政治哲学扩展
 
-权利（Rights）在SRT框架中获得了精确的本体论定位：它们是**L_2层面的协议，旨在保护高d值选择的可能性空间**。
+下文保留一种历史／候选的权利模型：把权利读为保护选择可能性空间的 `L_2` 协议。这不是权利的精确本体论定位，也不从 high `d` 生成权利或政治权威。
 
-#### 4.1.2.1 权利的SRT定义
+#### 4.1.2.1 权利的历史 SRT 候选模型
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**定义：** 权利是L_2结构中的保护性约束，限制某些Ĝθ的选择以保障其他Ĝθ的选择可能性。
+**候选建模：** 在一个已声明的权利框架内，权利可被表述为 `L_2` 中的保护性约束，限制某些选择以保障其他选择可能性。
 
 $$Right(\theta, x) \equiv \forall\theta' \neq \theta:\; L_2\!\left[\hat{G}_{\theta'}[L_0] \notin \left\{\sigma : d_\theta^{\to x}(\sigma) < d_\theta^{\to x}(\sigma_0)\right\}\right]$$
 
@@ -581,7 +588,7 @@ $$Right(\theta, x) \equiv \forall\theta' \neq \theta:\; L_2\!\left[\hat{G}_{\the
 
 #### 4.1.2.2 权利作为d值保护机制
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**核心命题：** 健康社会必须通过权利机制最大化系统的选择多样性。
+**历史／候选命题：** 在已声明的权利框架内，权利机制可被研究为保护选择多样性的制度方案；这不是“健康社会”的普遍定义或 SRT 命令。
 
 $$\text{社会健康度} \propto \sum_\theta d_\theta \cdot S(\hat{G}_\theta, t)$$
 
@@ -599,18 +606,18 @@ $$\text{社会健康度} \propto \sum_\theta d_\theta \cdot S(\hat{G}_\theta, t)
 
 **形式化：**
 
-$$Rights = \{R_i\} \text{ 满足 } \max \sum_θ |L_0^{accessible}(θ)| \text{ 约束下} $$
+$$\text{Rights-model}_{candidate} = \{R_i\} \text{ 可以 } \max \sum_θ |L_0^{accessible}(θ)| \text{ 作为一项框架目标} $$
 
 #### 4.1.2.3 自然权利 vs 实证权利的SRT调解
 <!-- ORIGINAL-SECTION-PRESERVED -->
-传统法哲学中存在自然权利论（权利先于社会存在）与实证权利论（权利仅是社会约定）的张力。SRT提供了调解：
+传统法哲学中存在自然权利论与实证权利论的张力。下表保留一个历史性 SRT 调解提案，不是当前权利 owner：
 
 | 立场 | SRT诠释 | 本体论层面 |
 |:-----|:--------|:-----------|
 | 自然权利 | L_0拓扑中的内在结构 | 某些保护对任何d>0系统都是必要的 |
 | 实证权利 | L_2的具体编码 | 具体形式依文化而变 |
 
-**综合命题：**
+**历史候选命题（非当前结论）：**
 
 $$\text{自然权利} = L_0^{invariant} \quad (\text{对任何 } d>0 \text{ 系统都有效})$$
 $$\text{实证权利} = L_2^{contingent} \quad (\text{具体形式依赖于特定 } Θ \text{ 群体})$$
@@ -1328,7 +1335,7 @@ SRT 将社会科学的核心概念**数学化**：
 > 如果现实是选择的产物，那么我们对现状的不满不是在抱怨"客观条件"，而是在抱怨**我们集体算子的选择参数 $\theta$**。改变世界 = 改变选择模式。
 
 ### Definition Summary (定义概述)
-- **Definition**: 本文档定义社会经济学的 SRT 映射。价值是未来 $L_1$ 稳定化的期望概率 (Ax-Eco-1)；货币是社会 $L_2$ 的度规 (Ax-Eco-2)；市场是分布式集体选择算子 (Ax-Eco-3)；泡沫是 $L_2$ 对短期 $L_1$ 的过拟合 (Ax-Eco-4)；选择权不平等等于 $d$-value 基尼系数 (Ax-Eco-5)；信任降低交易摩擦 (Ax-Eco-6)。
+- **Historical / candidate model summary**: 本文保留价值、货币、市场、泡沫、可及维度不均与信任／摩擦的 SRT bridge 模型。Ax-Eco-1–6 是研究性映射，不是 canonical 定义；`d`、效率或低摩擦不产生道德 standing、合法性或政治权威。
 
 ### Formalization Summary (形式化概述)
 - **Formalization**: 核心方程包括：

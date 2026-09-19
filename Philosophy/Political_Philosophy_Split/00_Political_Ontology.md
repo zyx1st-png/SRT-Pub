@@ -14,6 +14,7 @@ canonical: false
 
 > 角色：`SRT_Political_Philosophy.md` 的导航性拆分页。  
 > 不替代主文；用于局部阅读、引用与后续扩写。
+> **Wave E7 derivative guard**：owner 优先。本页是 P2–P4 历史／候选政治哲学导航，不定义 legitimacy、rights、justice、democracy、political pathology、authority 或 `O2-M`。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`；high `d` 不赋予政治 standing 或 authority。
 
 ## 1. Politics as Collective Reality-Selection
 \[
@@ -32,7 +33,7 @@ canonical: false
 最短理解：
 - 国家不是终极价值本体
 - 国家首先是共同现实的选择基础设施
-- 它可以是健康地板，也可以退化为自我绝对化的 `L_2`
+- 它可被候选模型评估为地板或自我绝对化的 `L_2`；该评估不自动建立合法性或政治病理 verdict
 
 ## 3. People as Dynamic L2-Bound Collective
 \[
@@ -53,7 +54,7 @@ canonical: false
 最短理解：
 - 国家、法律、传统、制度都应先读作地板
 - 地板不是方向
-- 当地板冒充方向时，政治病理开始形成
+- 当地板冒充方向时，可触发政治病理候选审查；它不是完整病理定义或 `O2-M` verdict
 
 ## Back-links
 - 主文：[`../SRT_Political_Philosophy.md`](../SRT_Political_Philosophy.md)

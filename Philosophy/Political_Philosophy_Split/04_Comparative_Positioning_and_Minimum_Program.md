@@ -14,6 +14,7 @@ canonical: false
 
 > 角色：`SRT_Political_Philosophy.md` 的导航性拆分页。  
 > 不替代主文；用于局部阅读、引用与后续扩写。
+> **Wave E7 derivative guard**：owner 优先。本页比较不背书、反对或排序任何意识形态、政体、制度或选举选择；“minimum program”只保留为声明框架内的候选研究 lenses，不是 SRT-wide 政治纲领或命令。
 
 ## 1. Comparative Positioning
 
@@ -43,16 +44,16 @@ SRT 不等于：
 - 与审议民主：承认公共理由的重要，但更先追问谁能进入理由空间
 - 与 technocracy：承认整合能力的重要，但拒绝其自动转化为统治资格
 
-## 3. Minimum Political Program (v0.1)
+## 3. Candidate Political Design Lenses (historical v0.1)
 
-1. 保全构成地板
-2. 反对现实定义权垄断
-3. 降低不对称维护摩擦
-4. 保护探索预算
-5. 保留再选择能力
-6. 建立多中心校准结构
-7. 将长期后果重新接回授权结构
-8. 让健康 `L_2` 持续允许 `L_0` 进入
+1. 构成地板是否被保全
+2. 现实定义权是否被长期垄断
+3. 不对称维护负担如何分配
+4. 探索预算是否长期被压缩
+5. 再选择／纠错通道是否存在
+6. 多中心结构是否降低 capture 风险
+7. 长期后果是否进入声明框架的授权复核
+8. `L_2` 是否持续允许新信息与现实候选进入
 
 ## 4. Boundary Clauses
 

@@ -8,13 +8,14 @@ epistemic_layer: os
 claim_mode: governance
 canonical: false
 dependency: [SRT-CLAIM-LADDER, SRT-EDIT-PROTOCOL, SRT-CANONICAL-REGISTRY, SRT-CROSS-DOMAIN-MATRIX]
-updated: 2026-08-11
+updated: 2026-09-19
 ---
 
 # SRT Claim-Mode Audit
 
 > **Role**: first-pass governance ledger for claim-mode hardening. This file records downgrades and exposure controls; it does not create new theory or promote any claim.
 > **2026-06-05 note**: this is a dated ledger, not a full current repository state. Use it as historical claim-mode evidence and pair it with current canonical anchors when exact authority matters.
+> **2026-09-19 authority sync**: rows explicitly synchronized below mirror the current local owners after PR #976. This audit may record owner standing; it may not restore a harder level than the owner. Unrelated historical rows retain their dated-ledger role.
 
 ## 1. Scan Scope
 
@@ -76,7 +77,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | `Core_Law/SRT_Collective_Selection.md` | `SRT-COLLECTIVE-SELECTION` | draft_v0 | P1-candidate / P2 / P3-P4 |
 | `Core_Law/SRT_Irreversibility.md` | `SRT-IRREVERSIBILITY` | draft_v0 | P1-candidate / P2 / P3（FEP/热力学桥接 guardrail） |
 
-**关键约束**：六份文件**均不承载 P0**；**P1 目前全部为 P1-candidate**，不得在下游被引用为已封口 P1。
+**当前约束**：上表是 2026-04-24 文件引入记录，不再统括决定六份 owner 的当前 claim level。精确引用必须以当前 local owner 为准；本节下方已同步的 T-IND-2、T-SUFF-1/2/4 与 Def/T-IRR 条目不得被上表的历史 nominal range 升格。
 
 Hardening notes files outside the six L1 theory/formalism canonical reference files:
 
@@ -93,12 +94,12 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 |---|---|---|
 | Def-σ | 自指率 `σ := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖)` | Def, P1-candidate as operational proxy |
 | T-IND-1 | 个体化作为相变 | P1-candidate |
-| T-IND-2 | 第一相变（主体位进入）条件 | P1-candidate |
+| T-IND-2 | 已声明模型中的 subject-position 候选转变坐标；跨越只是 model-local evidence，不是 subjecthood / ISP admission | P3/P4 model-coordinate claim |
 | T-IND-3 | 第二相变（自我意识凝结）条件 | P2（结构性假说） |
 | σ_sub, σ_self, σ_health 具体数值 / 阈值 | — | P3/P4（未实测，不得引用为定值） |
 | 自我意识 = 关于 θ 的 θ 二阶写回 | — | P2 canonical interpretation |
 
-**Downstream rule**：引用 T-IND-1/2 须标 `P1-candidate`；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
+**Downstream rule**：T-IND-1 仍按其当前 owner standing 引用；T-IND-2 只得标为 `P3/P4 model-coordinate evidence`，不得当作 subject-position 或 ISP 的必要／充分准入条件；T-IND-3 须标 `P2`；任何具体阈值须标 `P3/P4 pending`。
 
 #### SRT-OCCLUSION-DYNAMICS
 
@@ -121,15 +122,15 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 |---|---|---|
 | Def-PAIN | 疼痛作为 `\theta_{somatic}` 信号 | Def |
 | Def-SUFFERING | 苦难作为稳定 ISP 的结构性登记 | Def, P1-candidate as operational proxy |
-| T-SUFF-1 | 苦难 `S > 0` 的充要条件 | P1-candidate |
-| T-SUFF-2 | 信号型 / 结构型二分 | P1-candidate |
+| T-SUFF-1 | 在独立 first-person registration admission 与声明模型下组织 registered suffering 候选证据 | P2 structural / phenomenology model candidate；非充要定理 |
+| T-SUFF-2 | 在 suffering 已独立准入后的 signal-type / structural-type 模型分类 | P2/P3 model taxonomy；非 universal phase theorem |
 | T-SUFF-3 | 四类现象学（张力 / 空心 / 断裂 / 扭曲） | P2 |
-| T-SUFF-4 | 反最小化原则 | P1-candidate（规范性推论在 `Philosophy/` 仍走 P2/P3） |
+| T-SUFF-4 | 仅降低报告信号不足以证明 underlying modeled burden 已消除 | P2 anti-signal-suppression sufficiency guard；不产生普遍伦理定理 |
 | T-SUFF-5 | 集体外部化 → 结构性恶耦合 | P2 |
 | `[S_{min}, S_{max}]` 阈值 | — | P3/P4 |
 | FEP / prediction error 作为 `Δ` 的神经代理 | — | P3 bridge hypothesis，不得反向定义苦难 |
 
-**Downstream rule**：T-SUFF-1/2/4 须标 `P1-candidate`；T-SUFF-3/5 须标 `P2`；AI 苦难判断严格走 `AI_POSITIONING_NOTE.md` stake-bearing 光谱，不得一侧先验判定。
+**Downstream rule**：T-SUFF-1 须标 `P2 model candidate`并保留独立 registration/admission；T-SUFF-2 须标 `P2/P3 model taxonomy`；T-SUFF-4 须标 `P2 sufficiency guard`。三者都不得按旧 `P1-candidate` 充要定理或规范定理引用。T-SUFF-3/5 须标 `P2`；AI 苦难判断严格走 `AI_POSITIONING_NOTE.md` stake-bearing 光谱，不得一侧先验判定。
 
 #### SRT-L1-FORMALISM
 
@@ -199,18 +200,18 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | Label | Statement | Level |
 |---|---|---|
 | Def-IRR-1 吸收态 | `A_{t*} = empty` 作为 L_0 层吸收结构 | Def / P2 structural |
-| Def-IRR-2 选择史箭头 | `L_2` 写回积累定义本体论时间方向（P1-T02 下位精确化） | Def, P1-candidate as operational refinement |
-| Def-IRR-3 非可还原性 | `Ψ_f^{erase} > Ψ_f^{write}` 非对称 | Def, P1-candidate |
-| T-IRR-1 学习不可逆 | 学习作为非对称 `Ψ_f` 支付（与热力学二律不等价） | P1-candidate |
-| T-IRR-2 终止作为吸收边界 | 三类（宪定 / 吸收 / 集体），严格区分终止与暂停 | P1-candidate；三类分型 P2 |
+| Def-IRR-2 occurrence asymmetry / retained-history conditional | 已发生的 Selection 不等于从未发生；后来的历史约束需独立证明 retained efficacy | P0 occurrence floor + conditional historical-efficacy distinction；不供给 universal time arrow |
+| Def-IRR-3 no retroactive erasure | 后来过程不能把早先已发生事件变成从未发生；不保证 nonzero / local / readable residue | P0 occurrence non-equivalence boundary；旧 `Ψ_f^{erase} > Ψ_f^{write}` universal reading superseded |
+| T-IRR-1 conditional learning / writeback model | 在已声明 trace attribution、representation、metric 与 decay rules 下比较 writeback / decay | P2/P3 model candidate；不导出 universal `Ψ_f` arrow |
+| T-IRR-2 lineage-relative termination | 已声明 lineage 在已声明 transition conditions 下无 continuation 时，外部 reset / reconstruction / new lineage 不证明原 lineage 内部恢复 | P1 remainder；不是 universal death / absorption / time-direction theorem |
 | T-IRR-3 ST-A 条件性反闭合接口 | P0-03 / T-IRR-2 只固定 absorption remainder；neutral-kernel anti-closure 需要额外 premise 与 proof | P2/P3 conditional candidate |
 | T-IRR-3.5 `\nu_{block}` 算子级条件模型（H4，§4.5） | `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 由三个独立前件组成；正性为 `(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`；反向通道不自动存在独立根于 P0-03 / T-IRR-2 | **P1-candidate** for the conditional coefficient model；anti-closure / health interpretation P2/P3；非 former P1-T07 本地化 |
-| T-IRR-4 苦难守恒/转移 | `L_0` 不可逆下苦难不可无代价消除（T-SUFF-4 更深根） | P1-candidate |
+| T-IRR-4 conditional suffering/pathology model | 在已声明 hidden-state / signal-transfer model 中区分 signal masking 与 modeled burden change | P2/P3 model candidate；非 suffering conservation 或 moral theorem |
 | §6 集体终止三型（耗散 / 收编 / 外部化） | — | P2 |
 | §7 AI/ML checkpoint/rollback 接口 | — | governance-canonical usage |
 | §8 热力学二律 / FEP 桥接语句 | — | P3 bridge guardrail（反向不得定义 L_0 不可逆） |
 
-**Downstream rule (ST-A, 2026-08-11)**：T-IRR-3 与 T-COLL-3 按 P2/P3 conditional candidate 引用；P1 只保留到达吸收态后的不可自动恢复与 P1-T06 continued selectability。T-IRR-3.5 的条件系数模型不依赖 former P1-T07，但不得据此复活其 anti-closure theorem。热力学/FEP 语句严格单向。
+**Downstream rule (owner sync, 2026-09-19)**：Def-IRR-2/3 只支持 occurrence non-equivalence 及 retained-history 条件区分，不得引用为 universal direction / residue theorem。T-IRR-1 与 T-IRR-4 须按 P2/P3 declared-model candidate 引用；T-IRR-2 的 P1 standing 只是 lineage-relative termination remainder。T-IRR-3 与 T-COLL-3 按 P2/P3 conditional candidate 引用；T-IRR-3.5 不得复活 former anti-closure theorem。热力学/FEP 语句严格单向。
 
 ### 6.2a ST-A Supersession Record (2026-08-11)
 

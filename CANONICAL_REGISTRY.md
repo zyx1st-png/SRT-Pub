@@ -17,6 +17,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - canonical 文件优先短、稳、少歧义
 - 长文负责展开、推导、接口批次与历史沉积
 - split 文件负责导航，不替代 canonical 定义
+- 本页是 router：它压缩并指向当前 owner，不以注册或摘要创建第二份定义 authority
 
 ## 0. 定位说明（Epistemic Note）
 
@@ -35,9 +36,10 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L1 / epistemic：os / status：active / version：v1 / claim-mode：canonical
+- layer：L0-L2 / epistemic：os / status：active / version：v2 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
-- 当前 trunk：`non-flat / non-neutral openness -> finite-position-indexed subjectless Selection (= actual differentiation = manifestation / relative backgrounding = primitive verticality as same-event structural reading) --[regenerative formation]--> One`。Universal formation route stops at One；formed `Selection-position` 仅作为 continuing One 的 operative co-aspect，不是第二 universal endpoint。
+- 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
+- 分层护栏：primitive Selection 在规范上无内容；existence 是 Selection under determinate actuality；history 只在 prior Selection 的效力被保留并建立时进入路由。`L_0 / L_1 / L_2` 是 analytic / model-facing aspects，不是三种 ontic substances；primitive Selection 不等于 formed `\hat{G}`。Normativity routes 需分别定型，O2-M 保持 OPEN。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
 - typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
 - supersession：旧文件若在**跨层推论**上与本 spine 冲突，旧推论转为 cleanup / retyping target；局部数学或语义内容在不冲突范围内继续有效。
@@ -57,10 +59,10 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 3. T_dir（方向透明度）与价值遮蔽
 - 主锚点：`_SRT_T_DIR_CANONICAL.md`
-- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述；它尚不是 theory-canonical 形式基础
+- 说明（Part I §1-§10）：`T_dir` 是 formed system / relation / model 相对于 independently typed、declared direction signal 的 self-readability / reorientation v0 operational proxy；它尚不是 theory-canonical 形式基础。无 declared direction 时，该 claim 中的 `T_dir` 不准入／未定义；`T_dir > 0` 不建立 good、legitimacy、generative health 或 O2-M。
 - 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）；这些段落按 bridge / theory-clarifying 读，不因文件名而升级为 core theorem
 - 引用规则：涉及方向透明度、意义感/虚无感的 SRT 机制解释、致命 L₂、价值遮蔽、三层价值结构、价值归纳、吸引子动力学时优先回链本文件
-- 与 d-value 的关系：d 是 T_dir 的必要条件；两者独立，不互相替代
+- 与 d-value 的关系：d / T_dir 的精确必要性或充分性在 owner 未独立建立时只能按 model / bridge scope 读；两者独立，不互相替代。Wave D2 仍需独立复审将该关系当作 universal law 的旧公式 consumer。
 
 ### 4. Core Axioms
 - 主锚点：`Core/SRT_Core_21_Formal_Axioms.md`
@@ -77,7 +79,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 ### 4b. Core Equations
 - 主锚点：`Core/SRT_Core_22_Equations.md`
 - 说明：主动力学方程、热力学与稳定性方程主入口
-- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件
+- 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件；但局部方程语义仍从属于当前 symbol / owner typing，不得以旧 `κ_0` 或 `T_dir` 公式反向恢复 primitive authority。Wave D2 将独立复审这些 consumer，D1 不预判其余方程。
 
 ### 4c. Core Open Tensions
 - 主文件：`Core/SRT_OPEN_TENSIONS.md`
@@ -86,7 +88,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 4d. Cross-Domain Usage Matrix
 - 主文件：`_SRT_CROSS_DOMAIN_MATRIX.md`
-- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵是 governance-canonical usage layer，不新增 theory-canonical 定义
+- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵只汇总当前 owner-approved usage，不能因重复注册而把 `ε_pg`、`κ_0`、T_dir direction 或 domain proxy 升格为 primitive / theory-canonical 定义
 - 引用规则：跨域使用上述概念时，先检查 canonical 用法、allowed projection 与 forbidden shortcut
 
 ## B. 规范辅助层（Canonical Support）
@@ -106,7 +108,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
-- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A Gate 0 是唯一 admission / type authority**。当前结果只压缩为：`κ_0 / ε_pg / B-count` ordering 不因 symbol registration 或从 O0 继承而获得 primitive status，它们与更强 realization 及 primitive non-flatness 的精确关系保持 OPEN。规则内容、对象分类与准入／回读条件一律以 §0A 为准，本注册表不复述。
 - 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针。B-A 的术语 owner 是 `Core_Law/SRT_L0_Metaphysics.md` 初心词条；C-A 的 scope owner 是 `_SRT_D_VALUE_CANONICAL.md §5b` 与 Claim Ladder §0A。Symbol Table Rules 17／18 只登记 no-new-symbol／no-alias 与作用域护栏；CΨ 仍开放
 
 ### 5c. Claim-Mode Audit
@@ -145,15 +147,15 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 主文件：`Philosophy/SRT_Political_Philosophy.md`
 - id：`SRT-POLITICAL-PHILOSOPHY`
 - layer：L1 / epistemic：bridge / status：axiomatic_hybrid_v1
-- 说明：把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一重写为多主体共同现实选择的生成—沉积—封闭—再打开过程；以 P2/P3 为主，并将制度判准与紧急状态边界显式标记为 P4
-- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供权利、授权与投票后验验证的子接口；本文件负责收口为完整政治哲学主文
-- 重要追加：政治合法性被重写为可持续共同选择；反支配被重写为反现实定义权垄断；危机政治以 `minimum necessary interruption` 为护栏
+- 说明：L1 bridge / candidate political-philosophy model；在声明框架内研究国家、权利、合法性、民主、结构性不公、危机决断与政治病理的生成—沉积—封闭—再打开过程。以 P2/P3 为主，制度判准与紧急状态边界为 P4；不提供政治合法性的普遍定义
+- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供候选 rights / delegation / voting interface。voting calibration 与 `d_tendency` 语言保留为历史 / candidate model，不建立 authorization 或 legitimacy theorem；本文件负责政治哲学候选模型的综合接口
+- 重要追加：可持续共同选择是在声明框架下对政治合法性的候选重构，不是 universal definition；反现实定义权垄断是候选政治哲学框架，危机政治以 `minimum necessary interruption` 作为模型护栏
 
 ### 9b. SRT 政治权利理论
 - 主文件：`Philosophy/SRT_Political_Rights.md`
 - id：`SRT-POLITICAL-RIGHTS`
 - layer：L1 / epistemic：bridge / status：draft_v1
-- 说明：从SRT第一性原理推导权利的本体论定义；建立以决策d值为核心的授权合法性框架；分析投票作为d倾向后验验证的机制；提出三层制度结构（公检法/监督机构/授权主体）
+- 说明：Political Rights 是 L1 bridge / candidate political model。它通过声明的 framework-relative diagnostics 研究权利、delegation 与 voting；d-based authorization 与 voting calibration 仅是历史 / candidate models，不是从 SRT 第一性原理推导出的政治权利本体论、政治 standing 或 legitimacy。
 - 与SRT-SOC-ECONOMICS的关系：兄弟关系，后者处理市场与经济不平等，本文件处理政治权利与制度授权
 - 重要追加：d值范畴澄清（决策属性非主体属性）已同步写入 `_SRT_D_VALUE_CANONICAL.md §范畴边界`
 - 开放问题：监督机构自身d验证完整机制、d倾向准入窗口规格（见文件§10）
@@ -170,7 +172,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
 - Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
-- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`
+- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（AI-domain candidate evaluation surface；not universal consciousness-threshold authority）
 - 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
 - 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
 - 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
@@ -209,14 +211,14 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - OPEN：formal N&S One theorem、exact unit / boundary、strict numerical identity、branch / merge identity、relative-separability formal / operational criterion、universal One-level perspective sufficiency 仍未关闭。
 - 引用规则：涉及 active vertical formation、Selection-mediated vertical reconstitution、generated locality / relative separability、One、formed-One operative Selection-position、history/verticality/sedimentation typing 与 One/Stable-ISP/subject/Bearer 分界时，优先回链本文件。
 
-### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+### 13a. SRT 个体化理论（下游 transition model）
 - 主文件：`Core_Law/SRT_Individuation.md`
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：L1 主体位 / 自我意识相变模型，位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 说明：位于 `SRT-ONE-FORMATION` 已形成 One / Selection-position 之后的 L1 downstream transition model；`σ_{sr}^{sub}` 与 `σ_{sr}^{self}` 是 P3/P4 candidate transition coordinates，用于组织 subject-position 与 second-order writeback 的模型内证据。Crossing 不建立 subject admission、Stable-ISP entry、Bearer、consciousness 或 phenomenality；精确 subject-position sufficiency 与 `subject-position <-> Bearer` 保持 OPEN。
 - 与 One Formation / P1-T06 的关系：本文件只承担下游 subject-position / self-consciousness 动力学候选；`SRT-ONE-FORMATION` owns formed One / Selection-position，P1-T06 owns stronger Stable-ISP standing。`σ_{sr}` / `σ_{sr}^{sub}` 不定义 One，也不单独证明 Stable ISP 或 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
-- claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
+- claim-mode 分布：三相结构为 P1-candidate；`σ_{sr}` 阶参与二阶 writeback 候选读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的 transition-coordinate 语义与具体数值为 P3/P4，且不拥有 admission authority
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
 
 ### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）

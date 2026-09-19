@@ -12,6 +12,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 # SRT Social Economics (Hybrid Edition)
 
+> **Wave E7 derivative guard**：本页只是 `../SRT_Social_Economics.md` 的 legacy navigation derivative，owner 优先。以下社会、语言、承认、制度与权利材料保留为历史／候选研究模型；`d`、`Psi_f`、reselection、future-selectability 或 dynamics 不构成 universal moral/political solver。High `d` 不赋予 standing、rights、legitimacy 或 authority；generic burden / cost 不自动是 canonical `Psi_f`；`O2-M = OPEN / HOLD`。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
@@ -286,9 +287,11 @@ $$L_2^{moral} = stable\left(\bigcap_{i,j \in Θ} Recognition(\hat{G}_{θ_i}, \ha
 
 #### 3.1.2.2 去人化作为承认断裂
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**核心命题：** "去人化"（Dehumanization）在SRT中被精确定义为承认链条的单向断裂。
+**历史／候选模型：** 旧稿把“去人化”建模为承认链条的单向断裂；当前只把它读作 represented concern 收窄的候选模型。
 
-$$Dehumanization(i → j) \equiv d_i[θ_j] → 0 \quad \text{（i不再将j纳入选择考量）}$$
+$$\text{Concern-exclusion candidate}(i → j) : d_i[θ_j] → 0$$
+
+> 该式不自动判定 de-human status、moral standing、政治排除、暴力许可或 `O2-M`。
 
 **去人化的后果：**
 
@@ -346,7 +349,7 @@ L_2的改变不仅取决于自由能梯度（「更好」的制度），还取�
 
 #### 4.1.1.1 Acemoglu-Robinson的制度吸引子
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Daron Acemoglu和James Robinson在《国家为什么会失败》中提出的包容性/榨取性二分法，代表了制度空间中的两个不同L_2吸引子：
+Daron Acemoglu和James Robinson在《国家为什么会失败》中提出的包容性／榨取性二分法，可在本历史 bridge 中被研究为两个制度吸引子；下列 `d` 对应是候选解释，不是定义或合法性定理：
 
 | 制度类型 | L_2特征 | d值对应 | 选择结构 |
 |---------|--------|--------|---------|
@@ -361,7 +364,7 @@ $$L_2^{\text{包容性}} = stable(\hat{G}_\theta[\text{高d值}])$$
 
 $$L_2^{\text{榨取性}} = stable(\hat{G}_\theta[\text{低d值}])$$
 
-d值对应的深层意义：包容性制度体现高d值——广泛的社会关注、对多数人存在的照顾；榨取性制度体现低d值——仅服务于精英的狭隘利益。制度选择本质上是d值的制度化表达。
+候选读法是：包容性制度可能呈现更宽的关切范围，榨取性制度可能呈现更窄的关切范围。High `d` 不使制度自动包容、正当或合法。
 
 #### 4.1.1.2 关键节点与制度跃迁
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -394,15 +397,15 @@ $$\frac{d(d_{\text{制度}})}{dt} \propto \text{政治参与广度} \times \text
 
 制度的d值倾向于随政治参与的扩大和权力的分散而增加。
 
-### 4.1.2 权利的本体论地位
+### 4.1.2 权利的历史／候选 bridge 模型
 <!-- ORIGINAL-SECTION-PRESERVED -->
 > ⚠️ 政治哲学扩展
 
-权利（Rights）在SRT框架中获得了精确的本体论定位：它们是**L_2层面的协议，旨在保护高d值选择的可能性空间**。
+下文保留把权利读作保护选择可能性空间的 `L_2` 协议模型；它不是权利的精确本体论定位，也不从 high `d` 生成权利或政治权威。
 
-#### 4.1.2.1 权利的SRT定义
+#### 4.1.2.1 权利的历史 SRT 候选模型
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**定义：** 权利是L_2结构中的保护性约束，限制某些Ĝθ的选择以保障其他Ĝθ的选择可能性。
+**候选建模：** 在一个已声明的权利框架内，权利可被表述为 `L_2` 中的保护性约束；这不是普遍定义。
 
 $$Right(θ, x) \equiv L_2[\text{禁止任何 } θ' \text{ 执行 } \hat{G}_{θ'}[¬x(θ)]]$$
 
@@ -410,7 +413,7 @@ $$Right(θ, x) \equiv L_2[\text{禁止任何 } θ' \text{ 执行 } \hat{G}_{θ'}
 
 #### 4.1.2.2 权利作为d值保护机制
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**核心命题：** 健康社会必须通过权利机制最大化系统的选择多样性。
+**历史／候选命题：** 声明的权利框架可研究权利机制是否保护选择多样性；这不是“健康社会”的定义或 SRT 命令。
 
 $$\text{社会健康度} \propto \sum_θ d_θ × \text{可访问的 } L_0^θ$$
 
@@ -426,11 +429,11 @@ $$\text{社会健康度} \propto \sum_θ d_θ × \text{可访问的 } L_0^θ$$
 
 **形式化：**
 
-$$Rights = \{R_i\} \text{ 满足 } \max \sum_θ |L_0^{accessible}(θ)| \text{ 约束下} $$
+$$\text{Rights-model}_{candidate} = \{R_i\} \text{ 可以 } \max \sum_θ |L_0^{accessible}(θ)| \text{ 作为一项框架目标} $$
 
 #### 4.1.2.3 自然权利 vs 实证权利的SRT调解
 <!-- ORIGINAL-SECTION-PRESERVED -->
-传统法哲学中存在自然权利论（权利先于社会存在）与实证权利论（权利仅是社会约定）的张力。SRT提供了调解：
+传统法哲学中存在自然权利论与实证权利论的张力。下表保留一个历史性 SRT 调解提案，不是当前权利 owner：
 
 | 立场 | SRT诠释 | 本体论层面 |
 |:-----|:--------|:-----------|
@@ -442,7 +445,7 @@ $$Rights = \{R_i\} \text{ 满足 } \max \sum_θ |L_0^{accessible}(θ)| \text{ �
 $$\text{自然权利} = L_0^{invariant} \quad (\text{对任何 } d>0 \text{ 系统都有效})$$
 $$\text{实证权利} = L_2^{contingent} \quad (\text{具体形式依赖于特定 } Θ \text{ 群体})$$
 
-核心人权（生命、自由、尊严）之所以"自然"，是因为任何足够高d值的系统都会"发现"它们是维持选择多样性的必要条件。它们不是先验给定，而是选择动力学的**吸引子**。
+旧稿把核心人权解释为选择动力学吸引子；当前只保留为历史／候选命题。它不从 high `d` 推出自然权利、普遍必要条件或政治授权。
 
 ---
 

@@ -138,7 +138,7 @@ Current open ontology prompts may include, without being promoted to definitions
 ```text
 多如何形成一？
 为什么这个而不是别的成为确定 / 显现？
-One-formation 与 Selection 是什么关系？
+Selection 的 recurrent self-conditioning 在什么条件下构成 One-formation？
 一个已形成的 One 如何持续、留下并改变后来结构？
 历史 write-back 如何改变后来可处理 / 可选择的方向？
 何时 history / consequence 成为 own-history / bearer 问题？
@@ -228,10 +228,10 @@ This runtime entry is a projection of the Registry, not an independent authority
 
 | Symbol / term | Fast guard | Current definition authority |
 |---|---|---|
-| `L_0` | historical/current structured latent-possibility construct; do not make it Constitution v1's unquestioned floor | L0 / symbol owners |
+| `L_0` | model-facing notation for Selection's open / non-preclosed analytic aspect; not a pregiven completed possibility inventory, independent prior field, or automatically measurable state space | Registry -> Generative Ontology Spine -> L0 / symbol owners |
 | `L_1` | current manifest selected actuality in existing formal architecture; occurrence != persistence | Core/symbol owners |
 | `L_2` | convergence-history / stable constraint domain in existing architecture | symbol/open-tension owners |
-| `G_hat_theta` | formal role-carrier in current model architecture, not a prior chooser entity | Core_21 / symbol table |
+| `G_hat_theta` | formed / formal / model-level role-carrier for a declared Selection realization, not primitive Selection or a prior chooser entity | Registry -> Generative Ontology Spine -> symbol table / compatible local owners |
 | `d` | stake-coupled concern / irreversible-risk sensitivity in current canonical system; proxies are conditional | `_SRT_D_VALUE_CANONICAL.md` |
 | `D_eff` | capacity/geometric proxy candidate, not canonical `d` | d owner / 21C |
 | `Psi_f` | payability/friction construct in current canonical system; projections are conditional | `_SRT_PSI_F_CANONICAL.md` |
@@ -292,7 +292,7 @@ Until separately changed:
 - object != bearer != subject-position != phenomenality;
 - `B_s != B_p`, `B_s -> B_p ?` remains open;
 - Selection != Agency;
-- `One-formation = Selection ?` remains open in the current reconstruction;
+- One-formation is a stronger recurrent self-conditioning organization of Selection, not a second ontic substance; its exact necessary-and-sufficient formation theorem remains open;
 - `Selection = Order ?` remains open;
 - stabilization does not automatically establish bearerhood;
 - historical facticity / write-back does not automatically establish own-history;

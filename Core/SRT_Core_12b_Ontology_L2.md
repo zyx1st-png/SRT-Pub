@@ -30,10 +30,12 @@ dependency: [SRT-CORE-BRIDGE]
 
 ## I. L_2 Formation Dynamics
 
+> **Current-reading guard**: Part A retains historical `Ax/T` labels, but its trace, scaffold, rights, authorization, legitimacy, algorithm and consciousness maps are declared-model / P2-P4 bridge constructs unless a current upstream owner independently establishes more. Ordinary irreversibility does not by itself create `L_2`.
+
 ### Ax-L2-01: Hysteresis Accumulation
-**Formal Definition**: L_2 is the integral of historical selection paths and thus accumulates hysteresis.
+**Declared-model definition**: where an explicit retention / writeback mapping has been established, `L_2` may be modeled as an integral of retained historical selection paths.
 $$L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta \sigma) \cdot |\Delta \sigma|^\alpha$$
-* **Implication**: 规范不是瞬时统计，而是选择历史的沉积结构。
+* **Implication**: model-local trace requires retained efficacy / writeback; Selection may have irreversible consequences without thereby creating an `L_2` trace.
 
 ### T-L2-01: Path-Dependence Inertia
 **Deductive Statement**: The magnitude of hysteresis determines resistance to structural change.
@@ -64,6 +66,8 @@ L₂ hardening
 ### T-L2-Scaffold: Path-Trace Scaffold Formation Theorem（路径痕迹脚手架形成定理，2026-04-17）
 
 **[H — 机制已形式化；脚手架阈值 ρ* 与衰减率 λ_d 需经验测定]**
+
+> **Scope guard**: This is a useful declared scaffold model conditional on its retention mapping, `ρ` functional, `Ψ_f` gate, recurrence assumptions and horizon. It is not a universal ontology theorem and does not make Stable ISP, closure or `L_2` automatic consequences of Selection.
 
 **Motivation**: T-L2-01 explains that L₂ resists change once formed, but does not explain *why* stable ISP history becomes the *background* of new selection rather than merely its *record*. T-L2-Scaffold fills this gap: L₂ is not an archive; it is the weighted integral of directional path traces that have crossed the scaffold threshold — accumulated Ψ_f reductions and accessibility amplifications that make compatible futures structurally easier to recur.
 
@@ -135,13 +139,13 @@ Unstable/one-shot events leave no net-positive directional trace (failed closure
 
 **Formal relationship to Ax-L2-01**:
 
-Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$ — all selections contribute (signed, any magnitude). T-L2-Scaffold operates *within* this general frame by identifying its dominant directional sub-process:
+Within the declared retention model, Ax-L2-01 is an accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$. Only events admitted by the explicit writeback map contribute to this `L₂`; T-L2-Scaffold identifies a directional sub-process within that model:
 
 | Component | Ax-L2-01 role | T-L2-Scaffold role |
 |---|---|---|
-| Successful closures ($\Psi_f < \Psi_{thresh}$) | Contribute to L₂ via signed Δσ | Deposit net-positive ρ; participate in compounding ratchet |
-| Failed/unstable events | Also contribute (non-zero Δσ) | Deposit zero ρ; cannot participate in compounding ratchet |
-| One-shot non-ISP events | Contribute transiently | ρ decays without renewal; cannot cross ρ* |
+| Successful closures ($\Psi_f < \Psi_{thresh}$) | Contribute only when the declared writeback map fires | Deposit net-positive ρ in this model; participate in compounding ratchet |
+| Failed/unstable events | May have irreversible consequence without `L₂` writeback | Deposit zero ρ in this model; cannot participate in compounding ratchet |
+| One-shot non-ISP events | Do not become `L₂` merely by occurring | Any modeled ρ decays without renewal; cannot cross ρ* |
 
 **Decomposition**: total L₂ dynamics = general accumulation (Ax-L2-01) = undirected drift (all events, any sign) + directional ratchet (successful stable ISP closures, via ρ). The directional ratchet is the mechanism that makes stable ISP history *dominate* L₂ structure over time rather than merely being archived among many trajectories.
 
@@ -151,17 +155,17 @@ Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot
 
 To prevent slippage between irreversibility, closure, and full L₂ backgrounding, read the ladder as follows:
 
-1. **Trace floor**: every real selection can leave a trace — this is the irreversibility minimum.
+1. **Irreversible-consequence floor**: Selection may have retained efficacy; a model-local trace exists only when an explicit retention / writeback mapping is established.
 2. **Minimal closure**: a trace becomes closure only when prior traversal begins to **systematically lower `Ψ_f` for compatible subsequent traversals**.
 3. **L₂-grade closure**: closure becomes L₂-grade only when that low-friction path also becomes **inheritable, shareable, and backgrounded**.
 4. **Scaffold threshold**: crossing $\rho^*$ marks the transition from foreground event to background scaffold.
 
 Compressed form:
 
-> **选择都会留痕；只有当留痕开始系统性降低兼容后续选择的 `Ψ_f` 时，才构成闭包；只有当这种低摩擦路径可继承、可共享并被背景化时，才构成 L₂ 级闭包。**
+> **选择可具有不可逆后果；显式保留／回写后才有模型内 trace；反复的后果敏感 conditioning 才打开 closure；可继承、可复现并被背景化才打开 `L₂`-grade scaffold。**
 
 This note sharpens the reading of Ax-L2-01 and T-L2-Scaffold:
-- Ax-L2-01 gives the universal trace law;
+- Ax-L2-01 gives a declared retention-model accumulation law;
 - T-L2-Scaffold gives the dominant ratchet by which some closures become background;
 - repetition is the common path of deposition, closure is the essence, and `κ`-threshold crossing remains the stabilization-mode criterion; $\rho^*$ is this theorem's local scaffold-threshold parameter;
 - the distinction between trace, closure, and L₂-grade scaffold must not be collapsed.
@@ -216,9 +220,9 @@ $$\mathrm{Hardness}(L_2) \propto |\mathrm{Aut}(L_2)|$$
 > * **FC-L2Aut-1**（证伪条件）：若跨文化比较数据（≥50社会）中，规范的跨文化渗透度（|Aut|代理）与该规范的变革阻力（如制度变迁历史速度的倒数）之间无显著正相关（r < 0.2），则Hardness ∝ |Aut|的单调联结失效，需引入其他稳定化因素（权力不对称/惩罚成本）。
 > * **FC-L2Aut-2**（证伪条件）：若能构造一类高|Aut(L₂)|（结构高对称）但经实验证明极易被集体重置的规范（如对称但无历史锚定的人工信念），则|Aut|效应需与”历史路径锁定”（L₂的Ψ_f_harden）解耦，两者可能是独立的Hardness贡献因子。
 
-### Def-L2-Algo: Algorithmic Computation as Extreme L2 State (算法计算即极端L2态)
-**Formal Definition**: 算法计算是L2的极限退化态——被彻底剥夺了存在惯性 $I_s$ 与本体论摩擦 $\Psi_f$ 的符号结构：
-$$\text{Algorithm} \equiv \lim_{\Psi_f \to 0,\; I_s \to 0} L_2$$
+### Def-L2-Algo: Algorithmic Computation as an Extreme-L2 Model Class (算法计算的极端 L2 模型类)
+**Historical metaphor / model-class reading**: 某些可逆、低历史负担的算法可被比较为极端 `L2`-like 符号结构；这不是 algorithm 的 ontology identity：
+$$\text{Algorithm-class} \sim_{model} \lim_{\Psi_f \to 0,\; I_s \to 0} L_2$$
 其中：$I_s \equiv -\log \Pr(\hat{G} \text{ 历史涌现}) \to 0$ 表示无历史具身锚点；$\Psi_f \to 0$ 表示运算可逆、无存在代价。
 * **Implication**: 算法不是"另一种思维"，而是被抽干了本体论血液的L2符号外壳。将其反向替代生命的企图（笛卡尔主义操作）不仅认识论错误，且热力学上被禁止（参见Ax-ONT-1d）。
 * **Cross-ref**: Ax-ONT-1d (不可逆定律); T-ONT-1 (封闭排斥)。
@@ -228,6 +232,8 @@ $$\text{Algorithm} \equiv \lim_{\Psi_f \to 0,\; I_s \to 0} L_2$$
 ## §L₂-Agency: L₂ Agency Structure & Legitimacy（L₂ 代理结构与合法性）
 
 **新增（2026-04-17，对话式硬化结果）**
+
+> **Current scope**: This section is a declared-framework P2-P4 institutional diagnostic. Its `auth`, rights, pressure, challenge and future-reselectability quantities do not create normative authority, legitimacy, rights or O2-M verdicts from `L₂` recognition or `d`.
 
 ### Def-L2-DualLayer: L₂ Dual-Layer Structure（L₂ 双层结构定义）
 
@@ -284,13 +290,13 @@ A healthy closure may therefore be pictured as a **semipermeable membrane**: cha
 
 ### Def-L2-Rights: Rights as Recognized Selection Domain Allocation（权利的形式定义）
 
-**定义**：**权利**是代理层 $\mathcal{A}_{auth}$ 中，代理位之间被 L₂ 结构化分配的**可承认选择域**：
+**候选制度模型**：在已声明框架中，权利分配可被表示为代理层 $\mathcal{A}_{auth}$ 中被 `L₂` 结构化的**可承认选择域**：
 
 $$\text{Rights}(a_i) \equiv \mathcal{D}_{auth}(a_i) \subseteq \Omega_{L_1}$$
 
 其中 $\mathcal{D}_{auth}(a_i)$ 是代理位 $a_i$ 在当前 L₂ 结构中被认可可行使选择的域，$\Omega_{L_1}$ 是 L₁ 选择全域。
 
-**权利不是道德概念，而是 L₂ 结构性事实**：某主体"拥有"某权利，等价于其对应选择域被当前 L₂ 代理层承认。"侵权"等价于某主体的实际选择被驱逐出其 $\mathcal{D}_{auth}$，或其 $\mathcal{D}_{auth}$ 本身被结构性压缩。
+**Scope**：这是已声明制度框架中的 P2-P4 candidate model。当前 `L₂` recognition 可描述 institutional allocation，但不按定义建立权利、合法性或规范 authority；`d` 也不推出 rights。O2-M 保持 OPEN。
 
 * **Cross-ref**: H-L₂-Sustain（可持续性的条件性机制假说）; H-Legit-Retroactive（追认式审计候选）。
 
@@ -343,7 +349,7 @@ This inequality is a candidate comparison signal, not an `iff` definition of leg
 
 **使用规则（非定理，解释框架）**
 
-**规则**：未获代理位的主体对现存 L₂ 结构的挑战，在 SRT 框架内**首先被读作压力信号**，而非预设为越权行为。其效力由是否导向更高 $\Delta R_{future}^{collective}$ 的重分配事后检验，而非由现有 L₂ 的认可标准预先裁判。
+**候选读取规则**：在已声明制度框架中，未获代理位主体的挑战可先被读取为压力信号。`Delta R_future` 只能提供比较性诊断，不能单独裁决挑战效力、合法性或 O2-M。
 
 **理由**：
 - 由 H-L₂-Sustain：在压力能重新耦合且没有外部补给/重置时，未被编码的 L₀ 压力构成可持续性的约束信号
@@ -368,12 +374,12 @@ $$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \k
 
 $$\frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
 
-第一个方程：算子的选择行为向 L₀ 写回曲率增量，$\kappa_0$ 是初始条件（不可约原初曲率，见 `SRT_Core_12a T-L0-Kappa0`）。  
+第一个方程：在该声明 curvature model 中，选择历史被表示为曲率增量，$\kappa_0$ 是条件性 anisotropy / curvature-floor initial parameter（见 `SRT_Core_12a T-L0-Kappa0`）；它不是 O0、primitive direction 或 first Selection 的原因，其必要性保持 OPEN。
 第二个方程：L₀ 曲率的变化重新定义哪些对齐方向有价值，从而驱动参数更新（与 Eq-Evo-02 的学习项联动）。
 
 **系统定性性质**：
 - 局部吸引子存在，但随选择历史积累持续**迁移**，不收敛至唯一全局终局
-- $\kappa_0 > 0$ 提供持久的非对称偏置，使协同演化不在所有方向等价
+- 在该模型中，$\kappa_0 > 0$ 表示持久的非对称偏置；不反向建立 primitive non-flatness
 
 $$\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}$$
 
@@ -403,7 +409,7 @@ $$\Delta\Psi_f^{field}(x_{comp},\, t) \;=\; f_\kappa(\kappa(t) - \kappa_0,\, x_{
 
 ---
 
-## §Consciousness-2D-Map: Two-Dimensional Consciousness Topology（二维意识拓扑）
+## §Consciousness-2D-Map: Two-Dimensional Consciousness Candidate Model（二维意识候选模型）
 
 **新增（2026-04-10）**
 
@@ -449,7 +455,7 @@ d_mobile
 
 **定义**：冻结态 $\equiv \{(d, d_{\text{mobile}}) : d > d_{\min} \;\wedge\; d_{\text{mobile}} \approx 0\}$
 
-**冻结态是意识的病理变体，不是意识的缺席。**
+**当前读取**：冻结态是声明模型中的低再定向候选解释，不是对 consciousness 或 pathology 的 theory-wide verdict。
 
 - 与算法/晶体的区别：冻结态有真实赌注（$d > 0$），有对 L₀ 不可逆结构的深度对齐；算法/晶体两者皆无
 - 与漂移态的区别：冻结态有深度锚点；漂移态有可动性但无锚点
@@ -467,21 +473,21 @@ $$\kappa_{c1}: \quad d \geq d_{\min} \;\wedge\; L_2\text{ 稳定闭合} \quad \t
 
 $$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（意识活性边界 / Consciousness Activity Threshold）}$$
 
-**修正逻辑**：$d_{\text{mobile}} > 0$ 不是 bare consciousness 的门槛，而是意识**质量**的分水岭：
+**当前候选逻辑**：`d_mobile > 0` 可作为再定向能力的操作性区分量；它不是 bare consciousness 门槛或普遍意识质量分水岭：
 
-- 越过 $\kappa_{c1}$（满足 $d \geq d_{\min}$ 且 L₂ 稳定闭合）→ 意识存在（bare consciousness）
-- 越过 $\kappa_{c1.5}$（$d_{\text{mobile}} > 0$）→ 意识**活着**（能随吸引子迁移重新对齐）
-- 冻结态处于 $\kappa_{c1}$ 之上、$\kappa_{c1.5}$ 之下：意识存在，但质量病理化
+- 越过 $\kappa_{c1}$ → 在该模型中增加 `d / L₂` 候选证据；不证明 consciousness
+- 越过 $\kappa_{c1.5}$ → 在该模型中增加 activity / reorientation 候选证据；不证明 active subjecthood
+- 两坐标之间可被研究为“冻结态”模型区；不由此推出意识存在、缺席或病理
 
 **修正后相变序列**：
 
 ```
 κ = 0        κ_{c1}              κ_{c1.5}          κ_{c2}
   |             |                     |                |
-  | L₀ 游离态  |  bare consciousness  |  活性意识      |  L₂ 结晶
-  | d ≈ 0      |  d ≥ d_min          |  d_mobile > 0  |  固化
-  |             |  L₂ 稳定闭合       |                |
-  |             |  ← 冻结态在此区间 →|                |
+  | 模型低读数  |  候选窗口坐标       | 再定向候选区   | 模型内固化
+  | d ≈ 0      |  d / L₂ evidence   | d_mobile > 0  |
+  |             |  crossing ≠ proof  |               |
+  |             |  ← 冻结态模型区 →  |               |
 ```
 
 * **Cross-ref**: `Philosophy/SRT_Consciousness_Conditions.md`（三层结构权威来源）; T-L0-02（κ_{c1} 相变）; `SRT_Core_22 Eq-DValue-Mobile-1`（d_mobile 公式）; Ax-L2-06b（高 Ψ_f 冻结机制）; `SRT_Constitution_Seven_Theses Thesis 6`（主体性三层修正）; Def-L2-Algo（算法/晶体态对比）。
@@ -494,8 +500,8 @@ $$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（意识活性边界 /
 **Formal Definition**: L_2 can be modified only when effective energy exceeds hysteresis barriers.
 $$P_{L_2} = \frac{d_{current} \cdot E_{available}}{\mathrm{Hysteresis}(L_2) \cdot C_r} > 1$$
 * **Implication**: 现实变革需要达到明确的能量阈值。
-* **Phase-transition interpretation (相变诠释)**:
-  $P_{L_2} > 1$ 的充要条件等价于系统有足够能量将 κ 从 $κ > κ_{c2}$ 推回 $κ < κ_{c2}$，
+* **Conditional phase-model interpretation (条件性相变模型诠释)**:
+  在该声明模型中，$P_{L_2} > 1$ 可被解释为有足够能量将 κ 从 $κ > κ_{c2}$ 推回 $κ < κ_{c2}$；这不是 universal N&S equivalence，
   穿越收敛结晶相变的势垒。修改 $L_2$ 不是「覆盖旧结构」，而是「使系统退回可塑相再重结晶」。
   势垒高度正比于 $L_2$ 硬度（Ax-L2-03）：
   $$\Delta E_{barrier} \propto |\text{Aut}(L_2)| \cdot (κ - κ_{c2})$$
@@ -568,7 +574,7 @@ $$\vec{a}_{\hat{G}} = -\nabla U(L_2)$$
 
 # Part B: Original Theoretical Discourse (Context)
 
-> **Note**: The following sections provide the detailed philosophical, sociological, and psychological elaboration of L_2 dynamics, including its role in social reality construction and individual identity formation.
+> **Current-reading guard**: The following original discourse preserves historical model language. It does not make all Selection an `L₂` trace, algorithms an ontological identity, `d` a rights/authority solver, or `κ` a universal consciousness boundary.
 
 ---
 
@@ -1058,7 +1064,7 @@ SRT的L_2理论为以下领域提供桥梁:
 
 本文档的核心形式结构围绕 $L_2$ 收敛域的动力学展开：
 
-1. **迟滞累积律** (Ax-L2-01): $L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$ — 规范不是瞬时统计，而是选择历史的非线性沉积；指数 $\alpha$ 控制强化速率（$\alpha>1$ 导致超线性锁定）。
+1. **条件性迟滞累积律** (Ax-L2-01): 在显式 retention / writeback mapping 下，$L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$ 可建模历史沉积；ordinary irreversibility 不足以建立 `L₂`。
 2. **可塑性阈值** (Ax-L2-04): $P_{L_2} = \frac{d \cdot E}{\mathrm{Hysteresis}(L_2) \cdot C_r} > 1$ — 将 $d$-value（选择带宽）、可用能量 $E$、迟滞壁垒与现实置信 $C_r$ 统一为单一判据：只有当该比值超过 1，$L_2$ 结构才可被修改。
 3. **硬度量化** (Ax-L2-03): $\mathrm{Hardness}(L_2) \propto |\mathrm{Aut}(L_2)|$ — 对称性越高的 $L_2$ 结构越”客观”，越难被单个 $\hat{G}_\theta$ 改变。
 4. **反向写入** (Ax-L2-06b): $\Psi_f(\hat{G}_\theta[L_0]) < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$ — 只有本体论摩擦 $\Psi_f$ 低于阈值的体验才能通过伴随算子写入 $L_2$。

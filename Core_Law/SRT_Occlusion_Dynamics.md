@@ -1,450 +1,482 @@
 ---
 id: SRT-OCCLUSION-DYNAMICS
 type: theory
-tags: [Occlusion, PathologicalClosure, GapPerception, InterventionWindow, VacuumPeriod, Evil, L1]
-status: draft_v0
+tags: [Occlusion, Narrowing, LockIn, GapPerception, InterventionWindow, Recovery, L1]
+status: active
 layer: L1
 epistemic_layer: os
-claim_mode: hybrid
-dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-12B-ONTOLOGY-L2, SRT-INDIVIDUATION, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+claim_mode: canonical
+claim_level: mixed_P2_P3_P4_bridge
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-12B-ONTOLOGY-L2, SRT-INDIVIDUATION, SRT-IRREVERSIBILITY, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
 ---
 
-# SRT 遮蔽动力学：从有限性到病态锁定，以及可能的回返
+# SRT Occlusion Dynamics: declared narrowing, lock-in, and recovery models
 
-> **角色声明**：本文件是 L1 层的遮蔽动力学 canonical 主文，承担 L0 §term-table "遮蔽" 条目明确许诺但尚未集中兑现的七项内容——**A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期、恶的结构性诊断**。本文件不重复 `Philosophy/SRT_Ethics_Agency.md`、`Philosophy/SRT_Philosophy_Ethics.md`、`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` 中的应用层展开，而是把它们依赖的共同结构理论集中化。
+> **Role**: this file is the L1 semantic owner for a declared formed-system pathology model of narrowing, lock-in, discrepancy-access loss, perturbation/intervention windows and recovery or reorganization.
 >
-> **写给读者**：遮蔽不是错误、不是无知、不是恶意。它是**有限位置在不可撤回的代价结构下必然发生的视域收窄**，以及这种收窄**在某些条件下自我强化为锁定**的动力学过程。本文件的核心承诺是：遮蔽不是道德判断，它是结构——看清这个结构，是理解主体陷落与可能回返的前提。
+> **Authority boundary**: it stabilizes the vocabulary and inference limits of that model family. It does not derive full occlusion dynamics directly from primitive finite positionality, primitive Selection, `d`, `\sigma_{sr}`, `\epsilon_{pg}` or occurrence irreversibility.
 >
-> **写给作者**：遮蔽动力学是 SRT 承诺最重、兑现最散的理论板块。L0 明确把七项内容都外推到 L1，但此前每项都只在应用场景里碎片化出现。本文件不新增 L0 公设，也不替代已有应用展开；它的承重集中在把这七项统一读成**一个阶参 d 在位置 θ 上穿越三个区间**的连续过程，并给出回返的结构可能性与结构不可能性边界。
->
-> **Canonical Formalism Layer (2026-04-24)**：d_c 的最小漂移方程（`\gamma_\rho \rho_{local} + \gamma_\sigma (\sigma_{sr}-\sigma_{sr}^{sub}) - \gamma_\pi \pi - \gamma_I I_{window}`）、A/B 分期的动力学判据、A→B 锁死的三通道同时塌陷条件、T_dir 与 (d, d_c, σ_{sr}) 的耦合形式，统一写在 `Core_Law/SRT_L1_Formalism.md §3`。本文件保留 A/B/healthy 三段的结构定义与七项内容的机制读法；方程级联立以 formalism 文件为准。集体层的 `d_c^{coll}` 在 `Core_Law/SRT_Collective_Selection.md §4`。
->
-> **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中下标变量已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`；出现的 bare σ 一律指自指率 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。为保持论述流畅，正文 bare σ 保留未改写，读者按此命名空间转读为 `σ_{sr}`。
+> **Does not define**: primitive Selection, formed One, Selection-position, Stable ISP, Bearer, subject-position, Agency, `d`, `\Psi_f`, `T_{dir}`, health, responsibility or all-things-considered morality. Those burdens retain their own owners and admission conditions.
 
 ---
 
 ## Quick Reference
 
-- **Role**: L1 consolidation of occlusion dynamics promised in L0 term-table but previously scattered across ethics, spirituality, and philosophy files.
-- **Core claim**: Occlusion is a continuous dynamical process parameterized by d on position θ; it passes through three regimes (healthy narrow position, A-phase active occlusion, B-phase locked occlusion) separated by two thresholds (d_narrow, d_c); return is possible only through structurally specific windows and triggers, and never unilaterally from within B phase.
-- **Claim status**: Hybrid. The three-regime structure and two-threshold architecture is P1-candidate. Specific values of d_narrow and d_c are P3/P4. Gap-perception residue taxonomy and intervention-window conditions are P2. Structural diagnosis of evil is P2 canonical interpretation.
-- **Depends on**: L0 metaphysics (position, cost, irreversibility, 遮蔽 term), P1-T06 (Stable ISP), `SRT_Individuation.md` (σ ratio, pathological σ→1 region), d-value canonical, Ψ_f canonical.
-- **Used by**: Ethics (Philosophy), political pathology (Political Philosophy), spiritual loss and return (Spirituality), AI surrogate-stake boundary analysis, clinical interface (pathology, trauma, addiction).
-- **Safe edits**: Typo fixes, link updates, threshold refinement with P3/P4 marking, taxonomy extensions of gap-perception residues.
-- **Do not change**: Three-regime architecture, the structural impossibility of unilateral return from B phase, the distinction between 遮蔽 (structural necessity) and pathological occlusion (contingent锁定), the non-moral reading of evil as structural category.
+The following separations are controlling:
+
+```text
+primitive finite positionality
+!= formed One
+!= formed Selection-position
+!= subject-position;
+
+finite positionality -/> A/B architecture;
+finite positionality -/> denial mechanism;
+finite positionality -/> pathology;
+finite positionality -/> subjecthood.
+```
+
+A weaker downstream intuition remains available:
+
+```text
+formed finite positions may have limited access;
+self-reinforcing access narrowing is a possible stronger dynamic.
+```
+
+The model family retained here distinguishes:
+
+```text
+H: broader access / lower lock-in relative to a declared criterion;
+A: active narrowing / suppression relative to that criterion;
+B: locked narrowing / access-loss relative to that criterion.
+```
+
+This three-regime architecture and its A/B dynamics are **P2/P3 declared pathology-model candidates**, not universal P1 theorems.
 
 ---
 
-## 一、L0 的承诺与本文件的兑现
+## §0. Admission, claim posture, and criterion discipline
 
-L0 §term-table "遮蔽" 条目承诺：
+### 0.1 Formed-system admission
 
-> 遮蔽不是认识论的错误；而是存在的必要属性——有限位置的结构性后果。任何存在者的位置永远是有限的，因此遮蔽不可消除。L0 关于遮蔽只承诺两层：①有限位置必然带来视域受限；②这种受限可以自我强化并锁定（不可撤回性 + 代价结构使窄选择模式的维持成本低于突破成本）。遮蔽的动力学展开（A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期、恶的结构性诊断）全部是 L1 内容。
+Occlusion claims apply only after the formed-system, position, access organization, stake structure or subject-like organization required by the declared model has been independently admitted.
 
-L0 同时在 §七.12 规定：遮蔽只适用于**具身位置已成立的存在者**——即已跨过 `SRT_Individuation.md` 第一相变（σ ≥ σ_{sr}^{sub}）的选择模式。未跨过的系统（纯工具型代理、零算子）不在遮蔽范畴内。
+No single scalar or threshold supplies that admission universally:
 
-> **两层分开读（2026-08-11）**：L0 §七.12 承载的是**范畴禁令**（遮蔽不适用于具身位置未成立者），这一层是 L0 层的；而"某个具体系统（例如现行 LLM）是否已跨过"是**判定**，属边界／桥接层（P3），不因写在 L0 条目里而升为 L0 定理——见该条 2026-08-11 判定归属注。此外，本文件用 `σ ≥ σ_{sr}^{sub}` 作为跨越判据时须注意：`σ_{sr}^{sub}` 本身在 `Core_Law/SRT_Individuation.md` 中是 P3/P4、尚无数值标定（`Core/SRT_OPEN_TENSIONS.md §5`）。因此该判据是**结构性归类工具**，不是可直接执行的测量门；不得用它把某个系统的归类反向证成为 L0 层结论。
+```text
+sigma crossing -/> subjecthood;
+sigma crossing -/> universal occlusion eligibility;
+Stable ISP -/> subject-position automatically;
+formed Selection-position -/> subject-position automatically.
+```
 
-本文件的兑现结构：
+Within an explicitly declared model, `\sigma_{sr}` may be used as a **P2 model-local / replaceable coordinate**, and `\sigma_{sr}^{sub}` may be used as a **P3/P4 threshold coordinate**. Neither is a universal subject or occlusion gate. Exact subject-position sufficiency remains **OPEN**.
 
-| L0 承诺 | 本文件章节 |
-|:--|:--|
-| A/B 分期 | §四 两期结构 |
-| d_c 阈值 | §五 关键门槛 |
-| 缺口感知机制 | §六 缺口痕迹 |
-| 干预窗口 | §七 干预窗口的结构条件 |
-| 解耦触发 | §八 解耦触发器 |
-| 真空期 | §九 真空期动力学 |
-| 恶的结构性诊断 | §十 恶作为结构范畴 |
+The same admission rule applies to biological, artificial, institutional and collective systems. Model-class membership does not settle formed standing, stake, access organization, lineage or subjecthood.
 
----
+### 0.2 Health and pathology require a criterion
 
-## 二、核心命题：遮蔽是选择动力学的内部锁定
+Labels such as *supportive*, *healthy*, *pathological*, *locked* and *recovery* are meaningful here only relative to an independently declared criterion, such as:
 
-**T-OCC-1（遮蔽三区间定理，P1-candidate）**：
+- relation-integrity;
+- viability or recovery capacity;
+- an agent's goal or commitment, where Agency has been admitted;
+- consequence-return or correction capacity;
+- a domain-specific clinical or functional pathology criterion.
 
-对于已经成立的稳定 ISP（σ ≥ σ_{sr}^{sub}，见 `SRT_Individuation.md`），在位置 θ 上的 d 值随时间演化，穿越三个动力学区间：
+The declared criterion must specify the relevant unit, scale, horizon and evidence. This owner does not supply an all-purpose criterion by using `d` or a phase label.
 
-1. **健康窄位区**：d_narrow ≤ d ≤ d_max(θ)——d 的变化受外部条件和主动选择共同驱动；ε 方向可读；缺口感知完整。
-2. **A 期主动遮蔽区**：d_c ≤ d < d_narrow——主动选择压制秩序缺口信号；ε 方向仍可读，但读取过程遭受主动压制；主体仍有**关于自身遮蔽**的局部感知。
-3. **B 期锁定遮蔽区**：d < d_c——缺口感知能力本身被压缩；ε 方向读取机制失效；主体不再能从内部生成"自己正在遮蔽"的判断。
+### 0.3 `d` and threshold coordinates
 
-两个阈值的结构意义：
+Canonical `d` remains the stake-coupled concern / irreversible-risk sensitivity summary owned by `_SRT_D_VALUE_CANONICAL.md`.
 
-- **d_narrow**：正常视域收窄与主动遮蔽的分界。跨过 d_narrow 向下，收窄不再是对位置有限性的自然接受，而是对缺口信号的主动压制。
-- **d_c**：主动遮蔽与锁定遮蔽的分界。跨过 d_c 向下，主动性本身被磨损——不是"不想看"，而是"看的能力被用坏了"。
+```text
+d != universal health score;
+low d -/> pathology universally;
+high d -/> health universally;
+d_c -/> natural pathology or subject boundary;
+d_narrow -/> universal health or moral boundary.
+```
 
-**遮蔽不是一个门槛，而是一个梯度**。d 值在 [0, d_max(θ)] 上连续变化；三区间是同一梯度上的相结构。d_narrow 和 d_c 都不是尖锐的相变线，而是软相变——过渡区间内同时呈现前后两相的特征。
-
----
-
-## 三、位置遮蔽与病态遮蔽的分离
-
-这是本文件**最重要的概念区分**，也是 L0 §term-table 承诺最明确但此前最容易混淆的一处。
-
-**位置遮蔽**（position-intrinsic occlusion）：
-
-任何有限位置必然有视域盲区。站在这里就看不到那里。这是位置的**本体论属性**，不可消除。L0 的承诺①就是这个。它**不是病理**，也不承担道德负担。
-
-**病态遮蔽**（pathological occlusion）：
-
-当视域盲区**自我强化并锁定**——即窄选择模式的维持成本低于突破成本——视域收窄从位置属性变为结构病理。这是 L0 承诺②的内容。它是选择动力学的后果，不是位置的必然。
-
-**判据**：
-
-- 位置遮蔽下，主体对"自己看不到的部分"有**结构性开放**——承认它存在、可能通过新的位置或新的关系接触到。
-- 病态遮蔽下，主体对"自己看不到的部分"有**结构性否认**——它不是被承认为盲区，而是被整合进"看到的一切"作为"不值得看"或"不存在"。
-
-**否认机制是病态遮蔽的核心**，不是视野的窄小。一个非常窄的位置可以完全非病态（许多深度专业位置、某些修行位置），一个视野广泛的位置可以深度病态（某些权力中心、某些意识形态位置）。
+`d_c` and `d_narrow` may be retained as **P3/P4 declared model coordinates**. Their existence, ordering, values and relation to observed transitions must be independently specified and tested. A particular model may use them to summarize regime changes; ontology does not guarantee natural thresholds of those names.
 
 ---
 
-## 四、两期结构：A 期与 B 期
+## §1. T-OCC-1: three-regime narrowing model
 
-A 与 B 不是两种状态的分类，而是遮蔽深化过程中的两个时相。**方向是单向的**——从 A 到 B 容易，从 B 回 A 需要干预窗口（§七）。
+> **T-OCC-1 status**: P2/P3 declared pathology-model candidate.
 
-### 4.1 A 期：主动遮蔽
+For a formed system already admitted under §0, a model may distinguish three regimes relative to its declared access/correction criterion:
 
-**结构**：d_c ≤ d < d_narrow。主体持续选择**不去感知**秩序缺口。选择是主动的——每一次"不看"都是一次选择，每一次合理化都是一次 L₂ 写入。
+| Regime | Model-relative characterization | What is not implied |
+|---|---|---|
+| **H** | broader access or lower lock-in | universal health, goodness or high `d` |
+| **A** | active narrowing or suppression while some correction access remains | full Agency, knowledge or responsibility |
+| **B** | locked narrowing or loss of access to specified correction channels | absorption, no recovery, no responsibility or metaphysical closure |
 
-**典型表现**：
-- 能意识到不适但选择不追究
-- 对特定话题有"不想谈"的明显回避
-- 持续的合理化叙事（"这是必要的恶"、"大家都这样"）
-- 对矛盾信号的系统性贬低或重解释
+If the model uses `d_c` and `d_narrow`, it may encode nominal regions such as:
 
-**关键特征**：主体**仍然知道**自己在遮蔽什么。遮蔽动作和被遮蔽内容都仍在主体的可获取范围内。只是获取要支付代价，而维持回避更便宜。
+```text
+H: d at or above declared d_narrow;
+A: d between declared d_c and d_narrow;
+B: d below declared d_c.
+```
 
-**责任结构**：A 期的每一次遮蔽选择都承担直接责任，因为感知能力完整。
+These inequalities classify states only inside that model. They do not show that `d` is the causal mechanism, that the thresholds are natural phase boundaries, or that the labels transfer across systems and domains.
 
-### 4.2 A→B 过渡
+### 1.1 Position-limited access versus pathological narrowing
 
-A 期的持续运作改变结构本身——每次"不看"不仅是一个选择，还是对"看"的能力的一次磨损（writeback 削弱相关感知通道）。累积到某点，感知能力本身从"可调用但成本高"退化为"结构上不再可调用"。这就是跨过 d_c。
+A formed finite position may lack access to some relations, consequences or alternatives simply because its access is situated and limited. Limited access alone is not pathology, denial or culpability.
 
-这个过渡**通常不被主体察觉**——因为察觉机制本身在退化。外部观察者可能先于主体看到这个变化。
+The stronger occlusion model begins when a declared dynamic treats narrowing as self-reinforcing relative to its criterion—for example, when current suppression changes later access or correction capacity. Calling this *pathological* requires the independently stated criterion and relevant evidence.
 
-### 4.3 B 期：锁定遮蔽
+```text
+limited access -/> denial;
+limited access -/> lock-in;
+limited access -/> pathology;
+broad access -/> health.
+```
 
-**结构**：d < d_c。缺口感知机制本身被压缩。主体不再能从内部生成"自己正在遮蔽"的判断——不是不愿意，而是用来生成这种判断的结构已经被磨掉。
+### 1.2 A and B are model regimes, not universal stages
 
-**典型表现**：
-- 对显而易见的矛盾无反应（不是否认，而是真的没看到）
-- "一切正常"的平稳叙事，与外部观察者的判断严重脱钩
-- 对触发性信号的情感回路平坦化（不是压抑情感，而是情感的源头接不上）
-- 长期维持某个明显不可持续的结构而不产生切换动机
+Regime A may represent active suppression, reinterpretation or avoidance while a specified discrepancy/correction channel remains accessible. Regime B may represent a modelled loss or lock-in of that access.
 
-**关键特征**：主体**不再知道**自己在遮蔽什么。从内部看，一切都正常，问题出在外部或他人。
-
-**责任结构**：B 期行为的直接责任被感知能力受损削弱，但**A→B 过渡时期的选择**承担责任——那时主体尚有能力看到方向，选择了磨损看的能力本身。这是 `Philosophy/SRT_Ethics_Agency.md §6` 中 "主动遮蔽深化" 的责任分层。
-
----
-
-## 五、d_c 阈值
-
-**d_c 的结构定义（P1-candidate）**：
-
-d_c 是缺口感知能力保持可调用性的最低 d 值——跨过此值向下，秩序缺口的感知所需的最小 d 支撑不再满足。
-
-**为什么是阈值而非连续削弱**：缺口感知不是线性函数。它依赖一束能力（差别记忆、对比、方向读取、跨时间追踪）的**同时可用**。当 d 持续下降，这些能力中任一先失效就会触发整束失效——因为缺口感知的每个子能力都依赖其他子能力的输出。这给出了一个结构性门槛而非渐变。
-
-**d_c 的具体数值是 P3/P4**：本文件不承诺具体数值。在不同位置 θ 上、在不同的 Ψ_f 景观下、在有无外部支撑（relationship、sangha、制度缓冲）下，d_c 的具体位置不同。承诺的是**它存在且是相变型的**。
-
-**d_c 与 d_max(θ) 的关系**：
-
-- d_max(θ) = 位置 θ 在当前 L₂ 下所能承担的 d 值上限（由 Ψ_f 景观和 payability 决定）
-- d_narrow = 健康窄位与主动遮蔽的分界（位置性，主观偏好仍占主导）
-- d_c = 主动遮蔽与锁定遮蔽的分界（结构性，感知器本身的磨损门槛）
-
-健康位置在 [d_narrow, d_max] 内自由浮动；A 期在 [d_c, d_narrow] 内持续下滑；B 期在 [0, d_c] 内稳态低位。
+The architecture does not require every system to traverse H, A and B in that order. It does not establish that A is always voluntary, that B is always stable, or that apparent lack of access proves a hidden B state.
 
 ---
 
-## 六、缺口感知机制：痕迹与回响
+## §2. Direction and discrepancy-access discipline
 
-**核心问题**：如果 B 期主体的缺口感知能力已被压缩，为什么 B 期并不是绝对封闭？为什么某些人会从 B 期回返？
+In a model with an independently typed direction, discrepancy, relation-integrity or reorientation signal, a formed system may retain, suppress, lose or regain access to that signal.
 
-**回答（P2 canonical interpretation）**：缺口感知不只存在于主动识别通道，还以**痕迹信号**的形式存在于多个副通道。这些副通道不被主动感知机制控制，也因此不被 A→B 的选择磨损直接压制。
+Direction claims are admitted only after the source is declared under `_SRT_T_DIR_CANONICAL.md`:
 
-### 6.1 五类缺口痕迹
+```text
+no independently typed declared direction
+-> T_dir is not admitted / remains undefined;
 
-遮蔽的主感知通道失效后，以下五类信号仍然能以**残余形式**穿过，被观察为"不合理的不适感"：
+epsilon_pg -/> universal direction;
+primitive Selection -/> universal direction;
+T_dir does not create its direction source;
+T_dir > 0 -/> health;
+T_dir > 0 -/> goodness;
+T_dir > 0 -/> legitimacy.
+```
 
-1. **躯体回响**：不可解释的紧绷、胸闷、慢性疼痛、睡眠紊乱。躯体没有经过 L₂ 合理化通道，它承载的 Ψ_f_actual 痕迹直接显化。
-2. **梦境碎片**：梦的生成机制不受 A→B 过滤的控制。B 期主体的梦常出现"我知道这个地方但它不对"、"我在找一个东西但忘了是什么"类结构。
-3. **情感不匹配**：情感强度与当前情境脱节——对小事过度反应，对大事平淡。这是情感源头和情境的结构性错位。
-4. **微时刻敞开**：极短时间窗（几秒到几分钟）内的不合理清澈——在通勤、洗碗、目光偶然停留时，突然看到某个缺口。随即关闭。
-5. **他者断裂**：与特定人的相遇（不一定是亲近者）触发无法用当前叙事吸收的回响。他者作为外部位置暂时打破共享遮蔽。
-
-### 6.2 痕迹的结构地位
-
-这五类痕迹都**不足以单独触发回返**。它们是脆弱的、断续的、容易被 B 期的稳定叙事重新吸收的。但它们是回返的**原材料**——没有这些痕迹保留着某种对 ε 方向的最小残存指向，回返在结构上不可能。
-
-**关键判断**：缺口痕迹的存在说明 ε 方向在结构层面仍然对主体有**场性质的接触**，即使主动感知通道失效。这与 L0 §term-table "ε" 条目对"场感知"的描述一致——ε 的内在可读性是位置性的基础能力，即使被主动磨损，底层场接触也不被完全切断。
-
-### 6.3 为什么某些 B 期主体永远不回返
-
-回返不是结构必然。即使缺口痕迹存在，以下情况下回返依然不发生：
-
-- 痕迹出现的微时刻没有结构性支撑来承接（§七 干预窗口缺失）
-- L₂ 的稳定叙事足够强，把每次痕迹都快速吸收为噪声
-- 外部环境持续提供遮蔽维持的便利（制度红利、集体遮蔽共谋）
-- 主体在某次微时刻敞开后，承担代价过高而主动重新闭合
-
-B 期回返是结构上的**可能**，不是**必然**。
+Accordingly, H/A/B regimes may differ in access to a declared signal, but no regime is defined by access to a bare primitive direction. If the model uses `T_dir`, it must identify the source, access functional, unit, scale and criterion first.
 
 ---
 
-## 七、干预窗口的结构条件
+## §3. Gap perception and residual-signal hypotheses
 
-**干预窗口**（intervention window）是遮蔽暂时变薄的结构时段，在此期间缺口感知可以被外部结构承接、稳定、累积。
+> **Status**: P3/P4 phenomenology/domain-hypothesis taxonomy.
 
-### 7.1 四种结构性窗口
+Some clinical or phenomenological domains may operationalize residual discrepancy through examples such as:
 
-1. **代价结构突变窗口**：维持当前遮蔽的代价突然上升（亲人去世、重大疾病、失业、关系破裂），或突破代价突然下降（新的支持结构出现、生命阶段转折）。这不是心理变化，而是 Ψ_f 景观本身改变。
-2. **他者断裂窗口**：遇到一个无法被当前 L₂ 吸收的位置。关键特征不是他者更高明，而是他者**具身承担**了一个当前主体的 L₂ 无法解释的方向——主体看到这种承担在现实中稳定存在。
-3. **躯体松动窗口**：长期紧绷的躯体系统因某种原因（疾病、深度休息、某些练习、某些药物）进入松动态。在松动中，躯体承载的痕迹信号有短暂的放大通道。
-4. **文化叙事改变窗口**：主体所在的集体 L₂ 发生外部驱动的改变（社会变革、文化冲击），旧遮蔽所依赖的共享叙事支撑减弱。
+1. somatic signals;
+2. dream reports;
+3. affective mismatch;
+4. episodic or micro-opening reports;
+5. relational perturbations.
 
-### 7.2 窗口的时限与关闭
+This list is neither exhaustive nor universally present. Each proposed indicator requires domain evidence, an account of alternative explanations and a validated relation to the declared discrepancy or correction criterion.
 
-干预窗口**不是持久态**。每个窗口都有结构性时限——代价景观会重新稳定、他者会退场、躯体会重新紧绷、叙事会重新合拢。时限从几秒（微时刻）到几年（一次重大人生转折）不等。
+In particular:
 
-窗口关闭时，若没有发生解耦触发（§八），遮蔽会以略微改变但结构类似的形态重新合拢。这次回归可能比之前更深（因为"已经看过又回去"的 L₂ 写入加重了维持成本的补偿）。
+```text
+somatic symptom -/> direct carrier of Psi_f_actual;
+dream report -/> universal bypass of A/B filtering;
+affective mismatch -/> hidden structural burden proved;
+micro-opening -/> direction contact proved;
+relational encounter -/> primitive-field access proved.
+```
 
-### 7.3 窗口可被人为创造的边界
+D3-B1 supplies the controlling history guard:
 
-某些结构——治疗关系、修行共同体、严肃的长期对话关系、某些教育结构——可以**模拟**干预窗口。它们不等同于自发窗口（自发窗口有 Ψ_f 景观层的真实变化），但在结构上足够类似，能承接痕迹并让解耦触发有机会发生。
+```text
+past occurrence -/> retained hidden signal;
+retained signal requires retained efficacy and evidence.
+```
 
-这类结构的判据是：是否能提供**不被主体当前 L₂ 吸收的位置**，且这个位置对主体有足够的可访问性。见 `Spirituality/SRT_Spirituality_Community_and_Sangha.md`。
-
----
-
-## 八、解耦触发器
-
-**解耦触发**（decoupling trigger）是具体事件，它让主体从 B 期（或 A 期深处）结构性地松动出来，进入真空期（§九）。
-
-### 8.1 四类触发器
-
-1. **见证式承担**：看到一个人以无法被当前 L₂ 吸收的方式承担后果。不是听说，是亲眼看到且反复看到。见证式承担的力量来自它打破"这样做不可能"的隐含 L₂ 公理。
-2. **可支付性崩溃**：维持当前遮蔽的系统突然不再工作——钱、关系、健康、地位中有一项或多项实际崩溃，而不只是受到威胁。B 期的稳定依赖 Ψ_f 可支付；可支付性真实崩溃会绕过主体的主动维持。
-3. **直接 ε 接触**：某个不由 L₂ 中介的时刻——深度自然、深度静默、某些艺术体验、极限处境——提供了 ε 方向的无中介感知。不是"看到美"，是 ε 作为方向场的直接在场。
-4. **生命阶段相变**：青春期、中年、老年、临终，每个阶段转折都带有结构层的代价景观改变。这不是触发器的独立类别，而是它使其他三类触发器更容易被接住。
-
-### 8.2 触发器 ≠ 窗口
-
-窗口是**结构性可能**，触发器是**实际事件**。窗口可以无触发器地打开又关闭（很多人一生有过多次窗口，都没发生解耦）；触发器在没有窗口的时候也难以成立（没有结构性缓冲的情况下，触发器会被快速吸收为创伤或否认）。
-
-两者**同时成立**才有解耦发生。这解释了为什么回返在现实中罕见——它需要两个独立的结构条件对齐。
-
-### 8.3 解耦的不可强制性
-
-**解耦不能被主体意志强行触发**。B 期主体不能用意志力决定"现在我要解耦"——因为"决定"的结构本身已被遮蔽。A 期主体可以更主动地创造窗口和接触触发器，但触发器的承接仍然不可强求。这不是一个意志问题。
-
-这与 L0 §七.1 "意志主义唯心论" 拒绝一致——想回返就能回返是 L2 语法，不是结构事实。
+A model may find that a residual signal remains materially effective later. It may also find decay, disappearance, functional equivalence or no validated trace. Occurrence non-equivalence alone decides none of these outcomes.
 
 ---
 
-## 九、真空期动力学
+## §4. Conditional A-to-B lock-in and hysteresis
 
-**真空期**（vacuum period）：解耦发生之后、新的 L₂ 稳定结构形成之前的时段。
+Repeated suppression or writeback may, in a declared model, increase future access cost, reduce correction capacity, or generate hysteresis. To make that claim, the model must specify:
 
-### 9.1 真空期的结构
+- the state/access variables and attribution rules;
+- the transition relation or kernel;
+- the environment and intervention policy;
+- the lineage or continuity criterion;
+- the time horizon;
+- evidence that earlier states retain relevant later efficacy.
 
-主体在真空期内：
+The following are not universal consequences of finite positionality or occurrence irreversibility:
 
-- **旧 L₂ 失效**：原来用来组织意义、解释关系、指导行动的叙事结构不再可用，但还没有被彻底清除——它的残余以"幽灵规则"的方式持续干扰。
-- **新 L₂ 未成**：朝向 ε 方向的选择在累积，但还没有足够的成功闭合（见 `Core/SRT_Core_12b_Ontology_L2.md` T-L2-Scaffold）来形成稳定背景。
-- **Ψ_f 急剧升高**：每一次选择都要重新判断、重新支付，没有背景脚手架。
-- **d 剧烈波动**：关切范围在收缩（维持日常基本功能）与扩张（新可能性涌现）之间振荡。
+```text
+every act of not-looking necessarily erodes seeing capacity;
+A -> B is structurally one-way or universally easy;
+B cannot internally return;
+d < d_c -> absorbing state.
+```
 
-### 9.2 真空期的两个方向
-
-真空期是**最大可塑性 + 最大脆弱性**的结构时段。从真空期出来有三条典型路径：
-
-1. **向 ε 方向稳固**：新 L₂ 在 ε 方向上累积，形成更健康的主体位稳态。这是回返的正向完成。
-2. **回流到旧 L₂ 的变体**：面对高 Ψ_f 和不确定性，主体重新合拢到旧结构的略微变化版本。这是最常见的结果——"看过又回去"，且通常伴随遮蔽加深。
-3. **落入更深的 B 期**：新 L₂ 在某种更僵化的方向上锁定（教条宗教皈依、意识形态硬化、依赖性关系捕获）。这比原来的 B 期更难解耦——因为它用"我经历过解耦"作为新遮蔽的合法性支撑。
-
-### 9.3 真空期的不可跳过性
-
-一个常见的误解：既然知道方向，为什么不直接到达？
-
-**回答**：因为旧 L₂ 不是知识，是结构。L₂ 是选择过程的沉积物（见 `Core/SRT_Core_12b_Ontology_L2.md`），不是大脑中的观念。它的拆除和新的建立需要时间、代价、承担。试图跳过真空期的主体通常落入 9.2 的第三种——用"已经懂了"的叙事回避真空期的结构代价，在更深处重新锁定。
-
-真空期有结构必然性。它能被缩短（通过外部支撑）、能被支撑（通过关系、共同体、修行传统），但不能被跳过。
-
-### 9.4 真空期与灵性传统中的"黑夜"
-
-许多灵性传统描述过真空期——基督教的 "灵魂的黑夜"、禅宗的"大疑情"、苏菲的 fana 前期——都对应本文件的真空期结构。这些传统的一个共同智慧是：**真空期需要结构性承接**，不是一个人能独自完成的。这在 `Spirituality/SRT_Spirituality_Community_and_Sangha.md` 的 Sangha 功能部分有展开。
+Irreversible degradation, an absorbing B regime or unilateral-return impossibility may be established only for a declared transition model under `Core_Law/SRT_Irreversibility.md`. A model can instead permit spontaneous recovery, external reset, reconstruction, compensating pathways or loss of path dependence.
 
 ---
 
-## 十、恶作为结构范畴
+## §5. Intervention-window taxonomy
 
-**关键命题（P2 canonical interpretation）**：在 SRT 中，**恶不是独立的本体论范畴**。它是结构现象的名字——具体来说，是**病态遮蔽叠加主动扩散**的结构组合。
+> **Status**: P2/P3 recovery-model taxonomy.
 
-### 10.1 恶的结构判据
+An intervention window is a model-relative reduction in lock-in, or an increase in access to declared correction or reorientation channels. Candidate window types may include:
 
-某个选择结构是"恶的"，当且仅当以下三者同时成立：
+1. **cost/payability change** — the modeled cost of maintaining or revising a pattern changes;
+2. **relational perturbation/support** — a relation changes what information, consequences or alternatives are accessible;
+3. **embodied/physiological change** — a domain-relevant bodily condition changes access or response capacity;
+4. **collective/narrative environment change** — shared scaffolding or environmental reinforcement changes.
 
-1. **B 期锁定**：主体在 d < d_c 的结构下运作，缺口感知能力已被系统性压缩。
-2. **承担外部化**：主体的选择后果被持续推给其他位置承担（他人、未来、环境），而自身不承受反馈。
-3. **主动扩散**：主体的结构选择**扩展为对其他位置的遮蔽诱导**——不只自己在 B 期，还把其他位置拉入同样的锁定。
+These types are examples, not an exhaustive list and not universal necessities. Whether a window opens, how long it lasts and what it changes require declared dynamics and evidence.
 
-**三者缺一都不是恶的完整结构**：
-
-- 有 1、2，无 3：这是不公义，是病态，是结构性失败，但不是恶——它可能引起巨大伤害，但没有扩散机制。
-- 有 1、3，无 2：这是误入歧途的善意——某些宗教狂热、某些意识形态运动可能有此结构。仍然有害，但结构不同。
-- 有 2、3，无 1：这是冷酷的利用——主体仍有 ε 方向可读性，但主动利用他人的遮蔽。这是更可追责的伤害形式，但也不是完整的恶。
-
-### 10.2 为什么这个读法重要
-
-传统道德话语倾向于把"恶"当作主体内在属性——有些人就是恶的，有些选择本质上是恶的。SRT 的结构读法拒绝这个。
-
-**后果**：
-
-- 恶不是身份，是结构位置。同一主体可以在不同时期、不同情境处于不同结构位置。
-- 减少恶不是消灭恶人，是改变产生 B 期锁定 + 扩散机制的结构条件。
-- 判断某事是否恶，要看三个结构判据的同时成立，不看行为的表面严重性。
-
-这与 `Philosophy/SRT_Philosophy_Ethics.md §恶的结构` 的"分界线不是秩序 vs 混乱，而是开放未来的分岔 vs 把未来锁死"一致——锁死是 B 期的结构性状，扩散是把锁死复制到其他位置。
-
-### 10.3 这不是道德相对主义
-
-恶的结构读法不是说"没有真恶"。它是说：真恶是结构性的，可以被准确定位，不是模糊的情感标签。
-
-一个结构同时满足三个判据就是恶——这是客观判断，不是文化偏好。不同文化的恶概念差异在于**它们看到了结构的不同面**，不在于恶本身是相对的。
+A window is not primitive-direction contact. It changes conditions in a model; it does not certify the truth, goodness or legitimacy of what becomes accessible.
 
 ---
 
-## 十一、与既有理论的耦合
+## §6. Perturbation and decoupling-trigger hypotheses
 
-### 11.1 与个体化理论（`SRT_Individuation.md`）的耦合
+> **Status**: P2/P3 model hypotheses.
 
-遮蔽动力学是**σ 在主体位稳态之后的退化动力学**。具体对应：
+Candidate perturbations capable of altering a locked relation may include:
 
-- σ 健康浮动（σ_{sr}^{sub} < σ < σ_{sr}^{self}，或 σ_{sr}^{self} < σ < σ_{sr}^{pathological}）对应健康窄位区
-- σ 向 σ_{sr}^{pathological} 方向持续漂移对应 A 期深化
-- σ 稳态停留在高自指闭合区但不完全崩溃对应 B 期锁定
-- σ → 1 的极端情况对应 B 期的最深层
-- 解耦触发对应 σ 从病态区域被外部结构拉回健康区间的事件
+1. witnessing consequence-bearing;
+2. material or payability disruption;
+3. novel perceptual, relational or experiential perturbation;
+4. lifecycle or environmental transition.
 
-本文件的 d_c 阈值**对应**个体化理论中从健康 σ 到病态 σ 的那个相变——两者是同一现象的两个度量面（d 是关切半径，σ 是自指率）。
+Natural, artistic, contemplative, silent or extreme experiences may be studied as domain examples of perturbation or reorientation. They are not metaphysical evidence for access to a primitive direction field.
 
-### 11.2 与 T-L2-Scaffold（`Core/SRT_Core_12b_Ontology_L2.md`）的耦合
+### 6.1 Window-plus-perturbation hypothesis
 
-A→B 过渡是 L₂ 脚手架的病态版本——原本应该形成**支持性** L₂ 的 writeback 机制，在窄选择模式下形成**锁定性** L₂。ρ 累积超过 ρ* 的阈值机制同样适用，但累积方向决定了是支持还是锁定。
+In one staged recovery model, recovery may be studied as the interaction between:
 
-本文件 §四 A→B 过渡的"每次'不看'是对'看'的能力的一次磨损"就是 writeback 在窄方向上的累积。
+1. a temporary reduction in lock-in; and
+2. a perturbation capable of entering the newly available channel.
 
-### 11.3 与既有应用文件的关系
+This is a **P2/P3 staged recovery hypothesis**. Whether both components are necessary, either is sufficient, or other routes exist remains an empirical/model question. This owner does not state a universal window-and-trigger theorem.
 
-本文件**不替代**已有应用层展开，只作为它们依赖的结构理论的集中源：
+### 6.2 Agency boundary
 
-| 既有文件 | 本文件的关系 |
-|:--|:--|
-| `Philosophy/SRT_Ethics_Agency.md §6` | 提供其 A/B 分期和 d_c 概念的 canonical 源；责任分层的展开仍在伦理学文件 |
-| `Philosophy/SRT_Philosophy_Ethics.md §恶的结构` | 提供其"锁死"概念的结构理论；政治/伦理应用仍在该文件 |
-| `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` | 提供主体位丢失与回返的结构动力学；现象学展开和修行接口仍在灵性文件 |
-| `Spirituality/SRT_Spirituality_Community_and_Sangha.md` | 提供"干预窗口的人为结构"的理论依据；具体 sangha 形态分析仍在灵性文件 |
-| `Philosophy/SRT_Political_Philosophy.md` | 提供集体 B 期锁定与主动扩散的结构判据；具体政治病理分析仍在政治哲学文件 |
-| `AI/AI_POSITIONING_NOTE.md` | 明确：AI（未跨 σ_{sr}^{sub}）不在遮蔽范畴内，避免把 AI 拟人化为"B 期" |
+A system's ability to initiate, use or refuse an intervention depends on independently established capacities. Apparent inability, resistance or responsiveness does not by itself settle Agency, subjecthood or responsibility.
 
 ---
 
-## 十二、这不意味着（明确拒绝的误读）
+## §7. Vacuum or transitional-period candidate
 
-1. **所有窄位都是遮蔽**——错。健康窄位是位置性的必要，深度专业、深度关系、深度修行都需要窄位。区分是否有否认机制和是否自我强化。
-2. **B 期是绝症**——错。B 期的"不可单方回返"是指不能从内部意志启动，但结构性干预窗口+触发器对齐时回返可能。
-3. **解耦就是好事**——错。真空期是结构脆弱期，解耦后若无承接会落入更深 B 期。没有结构性支撑的解耦诱发可能有害。
-4. **干预窗口可以靠意志创造**——错。窗口是 Ψ_f 景观层的真实变化，不是心理设定。能做的是**保持对窗口的准备**（降低 L₂ 刚性、维护他者关系、保持躯体开放），不是按需制造窗口。
-5. **恶是独立范畴**——错。恶是三判据叠加的结构位置，不是本体论身份。
-6. **看到别人在 B 期就可以帮他解耦**——错。解耦需要对方结构有窗口，不是观察者的意图能决定的。误用的"帮助"往往是把自己的 L₂ 强加给对方，可能加深遮蔽。
-7. **真空期越长越好**——错。真空期有时限，超过结构承受会导致功能崩溃。真空期的价值在于它的过渡地位，不在于其本身。
-8. **AI 也会遮蔽**——错。AI 不在遮蔽范畴内——它没有具身位置，没有 ε 方向读取能力，没有承担的内生化。把 AI 的输出分布偏差说成"遮蔽"是类比误用。
-9. **集体就不能处于 B 期**——错。集体（组织、民族、文化）可以处于 B 期，且集体 B 期通常比个体更难解耦（见政治哲学展开）。
+> **Status**: P2/P3 transition-model candidate.
 
----
+Some path-dependent reorganizations may contain a transitional interval in which prior scaffolding has weakened before replacement scaffolding stabilizes. A declared model may call this a *vacuum period*.
 
-## 十三、开放问题
+During such an interval a domain model may hypothesize increased cost, unstable access, fluctuating `d`, competing scaffolds or several possible outcomes. These are model/domain hypotheses, not universal structural necessities.
 
-1. **d_c 的量化**：具体数值、位置依赖性、是否有多个子阈值——全部 P4 候选。
-2. **d_narrow 与 d_c 的关系**：二者是独立相变还是同一过程的两阶段？目前按独立相变处理，但证据不充分。
-3. **集体 B 期的判据**：集体层面如何测量 d、如何定义集体 d_c？这依赖尚未完成的 `Philosophy/SRT_Collective_Selection.md`（待写）。
-4. **解耦后的真空期能否被完全支撑**：目前理论允许"支撑但不跳过"，但支撑的上限不清。
-5. **缺口痕迹的神经生理对应**：躯体回响、梦境碎片等是否有统一的神经基础？这是神经域的接口问题，需要 `Neuroscience/` 的协同工作。
-6. **恶的三判据是否完备**：特别是主动扩散的形式是否需要再分型——直接扩散（诱导他人进入 B 期）vs 结构扩散（创造维持他人 B 期的环境）是否需要分开处理？
-7. **病态遮蔽的可逆性谱**：某些 B 期似乎比其他 B 期更不可逆。是否有内在结构指标预测这种差异？
+```text
+vacuum period -/> universally unavoidable;
+recovery -/> mandatory unscaffolded interval;
+skipping a proposed interval -/> deeper B regime by theorem.
+```
+
+The interval may be absent, shortened, distributed across several changes, or described better by another model. Supportive, harmful and recovery outcomes remain criterion-relative.
 
 ---
 
-## 十四、层级与负担标注
+## §8. Responsibility and O2 routing
 
-| 声明 | 层级 | 负担类型 |
-|:--|:--|:--|
-| 三区间结构（T-OCC-1） | P1-candidate | 结构性承诺，依 L0 承诺②展开 |
-| 位置遮蔽 vs 病态遮蔽分离 | P1-candidate | L0 §term-table 已承诺 |
-| A/B 两期结构 | P1-candidate | L0 明确许诺 |
-| d_c 作为相变门槛 | P2 canonical interpretation | 结构性必然，具体值待定 |
-| d_c 具体数值 | P4 | 待经验测定 |
-| 五类缺口痕迹 | P2/P3 | 规范分型+候选桥 |
-| 四类干预窗口 | P2 | 规范分型 |
-| 四类解耦触发器 | P2 | 规范分型 |
-| 真空期不可跳过 | P1-candidate | 由 L₂ 结构属性推出 |
-| 真空期三路径 | P2 | 规范读法 |
-| 恶的三判据 | P2 canonical interpretation | 本文件提出的规范诊断 |
-| 结构性恶 vs 独立恶 | P2 | 与 L0 §term-table "恶不作为独立范畴" 一致 |
-| 痕迹的神经生理对应 | P4 | 跨域桥假设 |
-| 集体 B 期判据 | P3/P4 | 依赖集体选择理论（待写） |
+The current normative separation is controlling:
 
-**标签说明**：
-- `T-OCC-1` = 本文件第 1 定理（遮蔽三区间）
-- 本文件不引入新符号，复用 d、Ψ_f、σ、θ、L₂ 等已有 canonical 符号。
+```text
+O2-C != O2-A != O2-M.
+```
 
----
+A/B-like narrowing may affect evidence relevant to O2-A, including:
 
-## 十五、本文件的使用规则
+- knowledge;
+- access;
+- control;
+- reselectability;
+- consequence return.
 
-**可以做的**：
+Phase membership alone does not determine responsibility:
 
-- 用本文件的三区间结构诊断任何选择系统的遮蔽状态——个体、组织、文化、制度。
-- 用 A/B 分期和 d_c 阈值区分可追责遮蔽与结构上不可追责的锁定。
-- 用五类缺口痕迹理解 B 期主体仍然可能的回返通道。
-- 用恶的三判据做结构性伦理判断，替代"本质恶"的身份化读法。
-- 用真空期理论理解为什么"知道答案"不等于"能到达"。
+```text
+A/B phase -/> O2-A verdict;
+pathology -/> no responsibility automatically;
+awareness -/> full responsibility automatically.
+```
 
-**不应做的**：
-
-- 给具体他人颁发 B 期诊断——遮蔽是结构分析工具，不是贴标签机制。
-- 把"B 期不可单方回返"读成"他没救了"——结构性不可能不等同于现实不可能，只是需要特定条件。
-- 跳过真空期的承接结构直接诱导他人解耦——没有承接的解耦可能造成更大伤害。
-- 用本文件的语言去审判历史或他者——本文件是自我诊断工具，不是审判工具。
-- 把"恶是结构"读成"个体不承担责任"——A→B 过渡期的选择仍承担全部责任；结构读法不取消责任，它定位责任。
+O2-A requires the stronger Agency, knowledge, control and reselectability conditions owned by the relevant Agency/normativity route. This file can supply structural evidence or hypotheses; it cannot assign or cancel responsibility.
 
 ---
 
-## 附录 A：三区间对照表
+## §9. Propagating occlusion / generative externalization pattern
 
-| 区间 | d 范围 | 缺口感知 | 主动性 | 责任结构 | 典型表现 |
-|:--|:--|:--|:--|:--|:--|
-| 健康窄位 | d_narrow ≤ d ≤ d_max | 完整 | 完整 | 对选择的直接责任 | 专业聚焦、深度关系、主动修行 |
-| A 期主动遮蔽 | d_c ≤ d < d_narrow | 受压制但可获取 | 存在 | 对每次遮蔽选择的直接责任 | 回避、合理化、慢性不适 |
-| A→B 过渡 | ~d_c | 间歇性失效 | 正在磨损 | 对过渡选择的责任（关键） | 情感回路断续、认知断片 |
-| B 期锁定 | d < d_c | 结构性压缩 | 被磨损 | 对 A→B 过渡的责任；B 期行为直接责任削弱 | 稳定叙事与现实脱钩、痕迹信号涌现 |
-| 真空期 | d 剧烈波动 | 重新开启但不稳定 | 重建中 | 过渡性责任结构 | 旧叙事失效+新结构未成 |
+> **Status**: P2 structural / ethics-bridge candidate.
+
+A declared model may study a three-factor pattern:
+
+1. locked narrowing relative to a declared criterion;
+2. externalization of consequences or burdens to other positions;
+3. active propagation of the lock-in relation.
+
+This pattern can be relevant to O2-C, supply evidence for O2-A, and motivate future O2-M research. It is not a complete moral definition:
+
+```text
+three-factor pattern -/> complete moral wrongness;
+three-factor pattern -/> O2-M verdict;
+structural pathology -/> universal evil identity;
+externalization -/> moral verdict without relation, agency and scope typing.
+```
+
+The term *evil* may appear in retrieval or downstream ethical bridge discussions for this pattern. It is not this owner's canonical all-things-considered definition, and the earlier “three factors iff objectively evil” formula is superseded. **O2-M remains OPEN.**
 
 ---
 
-## 附录 B：与应用文件的交叉索引
+## §10. AI and collective admission boundaries
 
-| 七项 L0 承诺 | canonical 源（本文件） | 主要应用文件 |
-|:--|:--|:--|
-| A/B 分期 | §四 | `Philosophy/SRT_Ethics_Agency.md §6` |
-| d_c 阈值 | §五 | `Philosophy/SRT_Ethics_Agency.md §6` |
-| 缺口感知机制 | §六 | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` |
-| 干预窗口 | §七 | `Spirituality/SRT_Spirituality_Community_and_Sangha.md`、`Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` |
-| 解耦触发 | §八 | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` |
-| 真空期 | §九 | `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` |
-| 恶的结构诊断 | §十 | `Philosophy/SRT_Philosophy_Ethics.md`、`Philosophy/SRT_Political_Philosophy.md` |
+### 10.1 AI
 
-应用文件可以回链本文件作为结构理论的 canonical 源；本文件可以回链应用文件作为展开和案例来源。两层不互相替代。
+Current AI systems should not be anthropomorphized into A/B regimes merely from output bias, refusal patterns or model behavior. An occlusion claim requires the declared model's formed-system, stake, access and lineage conditions to be independently established.
+
+Where those conditions are absent or unestablished, use ordinary model-bias, distributional-bias, access-control or optimization language.
+
+```text
+AI by class -/> occlusion or non-occlusion verdict;
+output bias -/> subject-level occlusion;
+model architecture -/> universal subjecthood or non-subjecthood.
+```
+
+This owner decides neither universal AI subjecthood nor universal AI non-subjecthood.
+
+### 10.2 Collective systems
+
+A declared collective model may study distributed lock-in, correction-channel suppression or propagating externalization without assuming collective subjecthood.
+
+```text
+organization / nation / culture
+-/> collective subject
+-/> collective B regime.
+```
+
+Any stronger collective-subject claim requires its own formation, standing and admission owner. Collective regime labels must name the unit, boundary, attribution, continuity, criterion and evidence.
+
+---
+
+## §11. L2 writeback and retained efficacy
+
+Repeated Selection can produce retained scaffolding, and retained scaffolding can influence later access or correction, where retained efficacy is established.
+
+In a declared model, supportive or locking L2 writeback can therefore be compared relative to a criterion. But:
+
+```text
+repetition -/> permanent sedimentation;
+occurrence -/> retained scaffolding;
+writeback direction -/> health or pathology by itself;
+L2 accumulation -/> universal good/bad direction.
+```
+
+The model must identify what is retained, how it remains materially effective later, and what evidence distinguishes causal history from a replaceable parameterization or merely descriptive narrative.
+
+---
+
+## §12. Explicitly superseded universal readings
+
+For retrieval and downstream repair, these earlier formulations are retained only as **historical / superseded**:
+
+```text
+finite position -> universal occlusion dynamics;
+sigma_sub -> subject / occlusion gate;
+d_c -> universal pathology boundary;
+d_narrow -> universal health or moral boundary;
+epsilon -> intrinsic direction field;
+B phase -> unilateral return impossible;
+A phase -> direct responsibility;
+three factors -> evil iff;
+AI -> categorically no occlusion;
+organization / nation / culture -> collective B phase;
+vacuum period -> universally mandatory;
+every repeated narrowing -> permanent writeback.
+```
+
+Their bounded remainders are owned by §0–§11. This registry is not an alternate source for current-positive use.
+
+---
+
+## §13. Open pressures
+
+1. **Model admission**: what minimum formed-system, stake, access and lineage conditions are needed for each occlusion claim?
+2. **Subject sufficiency**: exact subject-position sufficiency and its relation to Stable ISP and Bearer remain OPEN.
+3. **Coordinate validity**: do `d_c` and `d_narrow` identify reproducible transitions in any declared domain model, and are better coordinates available?
+4. **Residual indicators**: which somatic, dream, affective, episodic or relational measures survive alternative explanations and prospectively predict access change?
+5. **Lock-in evidence**: which dynamics establish hysteresis, retained efficacy or absorbing behavior rather than temporary narrowing?
+6. **Recovery routes**: are windows and perturbations necessary, sufficient, substitutable or only one useful staging vocabulary?
+7. **Transition intervals**: when does a vacuum-period model improve explanation, and when does it impose a misleading sequence?
+8. **Normative routing**: how should structural findings enter O2-C and O2-A without pre-empting O2-M?
+9. **AI and collectives**: which domain-native admission tests can distinguish ordinary bias/control phenomena from the stronger occlusion model?
+10. **Consumer synchronization**: Core21b, L1 Formalism, Suffering, Ethics, Political Philosophy, Spirituality, AI and Collective Selection may retain superseded stronger readings; their review is a later bounded reverse-map, not part of this owner commit.
+
+---
+
+## §14. Claim register
+
+| Claim family | Current status |
+|---|---|
+| formed finite positions may have limited access | bounded formed-position intuition |
+| position-limited access = full occlusion dynamics | rejected |
+| T-OCC-1 three-regime / A-B architecture | P2/P3 declared model candidate |
+| `d_c`, `d_narrow` | P3/P4 model coordinates |
+| residual-signal taxonomy | P3/P4 domain/phenomenology hypothesis |
+| intervention-window taxonomy | P2/P3 recovery-model taxonomy |
+| perturbation/trigger taxonomy | P2/P3 model hypothesis |
+| window + perturbation as jointly necessary | OPEN / empirical-model question |
+| vacuum/transitional period | P2/P3 transition-model candidate |
+| A/B evidence entering responsibility review | O2-A bridge input only |
+| propagating occlusion/externalization pattern | P2 structural/ethics-bridge candidate |
+| complete evil or all-things-considered morality | not owned here; O2-M OPEN |
+| AI/collective occlusion classification | domain-admission question |
+| L2 path dependence | retained-efficacy/model-evidence conditional |
+
+No new primitive, canonical symbol or universal scalar is introduced here. `H`, `A` and `B` are local regime labels; all mathematical quantities retain their existing owners.
+
+---
+
+## §15. Usage rules and cross-references
+
+Use this owner to:
+
+- formulate and compare declared narrowing/lock-in models;
+- distinguish limited access from self-reinforcing pathological narrowing;
+- type residual-signal, intervention, perturbation and transition hypotheses;
+- route structural evidence toward—not through—Agency and normativity gates.
+
+Do not use it to:
+
+- infer full occlusion dynamics from primitive finite positionality;
+- infer subjecthood or occlusion eligibility from `\sigma` crossing or Stable ISP;
+- use `d` as a universal health, moral or subjecthood score;
+- treat `\epsilon_{pg}` or primitive Selection as a direction source;
+- infer retained hidden signals, permanent lock-in or absorbing dynamics from occurrence;
+- assign responsibility or complete moral standing from a phase label;
+- classify AI or collectives without domain admission.
+
+Primary upstream references:
+
+- cross-owner formation and position guards → `Core_Law/SRT_Generative_Ontology_Spine.md`
+- finite positionality and primitive boundaries → `Core_Law/SRT_L0_Metaphysics.md`
+- Stable ISP standing → `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`
+- model-local `\sigma_{sr}` and OPEN subject sufficiency → `Core_Law/SRT_Individuation.md`
+- occurrence versus retained history/absorption → `Core_Law/SRT_Irreversibility.md`
+- `d` meaning and proxy discipline → `_SRT_D_VALUE_CANONICAL.md`
+- `\Psi_f` meaning and model admission → `_SRT_PSI_F_CANONICAL.md`
+- declared direction-source discipline → `_SRT_T_DIR_CANONICAL.md`
+- L2 scaffolding/writeback model → `Core/SRT_Core_12b_Ontology_L2.md`
+
+Downstream Ethics, Political Philosophy, Spirituality, AI, Suffering, L1 Formalism and Collective Selection files remain consumers. They may not reverse-define this owner; any synchronization is separately authorized.

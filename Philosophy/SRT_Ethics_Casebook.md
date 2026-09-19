@@ -22,16 +22,16 @@ canonical: false
 priority: high
 date: 2026-04-27
 dependency:
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
   - Philosophy/SRT_Ethics_PH_SS_Guardrails.md
   - Philosophy/SRT_Subjecthood_Threshold_Interface.md
   - AI/SRT_AI_Agency_Responsibility_Note.md
   - Core/SRT_Validation_Template.md
   - SRT_Terminology_Consistency_Audit.md
 machine_summary: >
-  Applied ethics casebook for SRT. It turns moral reality, moral intensity, moral legitimacy,
-  hidden Psi_f, future selectability, responsibility, culpability, and repair into a reusable
-  diagnostic template. Initial cases include family obligation, school discipline, medical triage,
-  eldercare responsibility, algorithmic recommendation, public shaming, and AI tool misuse.
+  Applied P3-P5 ethics casebook. It supplies framework-relative, non-exhaustive prompts about
+  moral reality, intensity, burden distribution, future selectability, responsibility and repair.
+  It does not define moral legitimacy, responsibility, Psi_f transfer, or an O2-M procedure.
 ---
 
 # SRT Ethics Casebook
@@ -39,6 +39,8 @@ machine_summary: >
 > **Purpose**: Turn SRT ethics guardrails into usable case diagnostics.  
 > **Status**: Applied ethics bridge / casebook. It does not define canonical moral primitives.  
 > **Use rule**: Use this file to analyze concrete ethical cases without collapsing moral reality, moral intensity, and moral legitimacy.
+
+> **Controlling applied-framework guard (Wave E6)**: this is a P3-P5 diagnostic scaffold downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and the ethics guardrail owner. Its lenses are framework-relative prompts, not universal necessary conditions, not jointly sufficient, and not a verdict algorithm. Every case-level verdict requires an independently declared normative criterion/framework. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`. Meta-selection, high `d`, generic burden, occlusion or pathology does not automatically establish responsibility, legitimacy, suffering, evil, or an `O2-M` result.
 
 ---
 
@@ -49,7 +51,9 @@ SRT ethics should keep three things separate:
 ```text
 moral reality      = a norm / value is socially or personally real as L2 constraint;
 moral intensity    = how much d-value / concern-weight it carries;
-moral legitimacy   = whether it preserves future selectability, avoids friction export, and allows correction / repair.
+moral legitimacy   = the evaluative question under the independently declared normative framework;
+                     future-selectability, burden distribution, correction and repair are candidate
+                     SRT-informed lenses, not the definition.
 ```
 
 Guardrail:
@@ -91,7 +95,7 @@ What norms are actually operative, whether or not they are legitimate?
 
 ### 6. Moral legitimacy
 
-Does the structure pass:
+Which candidate, non-exhaustive lenses are relevant under the declared framework?
 
 - future-selectability test;
 - friction-export test;
@@ -99,9 +103,9 @@ Does the structure pass:
 - subjecthood-protection test;
 - reversibility / repair test?
 
-### 7. Hidden Psi_f
+### 7. Hidden burden / cost / friction proxy
 
-Who pays invisible cost, emotional burden, compliance labor, shame, risk, or transition friction?
+Who pays invisible cost, emotional burden, compliance labor, shame, risk, opportunity loss, or transition friction? Do not label these `Psi_f` unless canonical payability semantics plus the bearer, scope, closure and consequence-return relation are established in the declared case model.
 
 ### 8. Future selectability
 
@@ -109,14 +113,16 @@ Whose future options expand? Whose future options narrow?
 
 ### 9. Responsibility / culpability / repair
 
-Use:
+Use these as heuristic questions, not arithmetic or universal verdict rules:
 
 ```text
-moral weight      ~ affected future-selectability
-responsibility    ~ accessible meta-selection capacity
-culpability       ~ responsibility - structural blockage - unpayable friction
-repair obligation ~ capacity to reduce future harm / restore selectability
+moral weight      ~ ask whose declared interests and futures are affected
+responsibility    ~ ask about Agency standing, knowledge, control and alternatives
+culpability       ~ ask how the declared framework treats structural constraints
+repair obligation ~ ask about relation, capacity, consequence return and repair pathways
 ```
+
+Meta-selection capacity alone is not responsibility. Structural blockage or an unpayable burden does not mechanically subtract culpability, and repair capacity does not mechanically define obligation.
 
 ### 10. What would improve the structure?
 
@@ -161,7 +167,7 @@ The obligation can be real as `L2`: it constrains choices through shame, expecta
 
 ### 6. Moral legitimacy
 
-A family obligation is more legitimate when:
+Under some declared care-ethics or fairness frameworks, candidate considerations supporting the obligation may include:
 
 ```text
 care burden is shareable;
@@ -171,23 +177,23 @@ care receiver's dignity is protected;
 repair and reciprocity channels exist.
 ```
 
-It is less legitimate when:
+Candidate considerations against it may include:
 
 ```text
-one person pays hidden Psi_f;
+one person bears hidden burden / cost;
 care is coerced by shame;
 structural alternatives are blocked;
 refusal destroys belonging;
 the caregiver's life trajectory collapses.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 Often paid as time, lost opportunities, emotional exhaustion, guilt, health cost, career interruption.
 
 ### 8. Future selectability
 
-SRT asks:
+One candidate future-selectability lens asks:
 
 ```text
 Does the obligation preserve more futures than it destroys?
@@ -195,7 +201,7 @@ Does the obligation preserve more futures than it destroys?
 
 ### 9. Responsibility / repair
 
-Responsibility should be distributed across family roles, institutions, welfare systems, and those with capacity to relieve burden.
+Under a declared care-ethics or responsibility framework, responsibility may be distributed across family roles, institutions, welfare systems, and those with capacity to relieve burden.
 
 ### 10. Improvement
 
@@ -246,7 +252,7 @@ The rule is real if it shapes behavior, punishment, expectation, and reputation.
 
 ### 6. Moral legitimacy
 
-Legitimacy depends on whether discipline:
+Under a declared normative framework, candidate lenses for discipline include whether it:
 
 ```text
 restores future selectability;
@@ -257,19 +263,19 @@ provides appeal / explanation;
 distinguishes mistake from identity condemnation.
 ```
 
-Illegitimate discipline exports `Psi_f` by turning institutional order into shame, learned helplessness, or identity damage.
+A framework may criticize discipline that displaces burden into shame, learned helplessness, or identity damage; this is not automatic `Psi_f` transfer or a self-executing SRT verdict.
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 Shame, fear, status loss, mistrust, anxiety, future avoidance.
 
 ### 8. Future selectability
 
-Good discipline expands future self-regulation. Bad discipline narrows identity into “bad student.”
+A future-selectability lens may favor discipline that expands future self-regulation and question discipline that narrows identity into “bad student.”
 
 ### 9. Responsibility / repair
 
-Student responsibility depends on age, alternatives, understanding, and capacity for re-selection. Teacher/institution responsibility includes proportionality and repair pathway.
+A declared responsibility framework may weigh age, alternatives, understanding, and capacity for re-selection when assigning student responsibility. It may assign teachers and institutions duties of proportionality and a repair pathway.
 
 ### 10. Improvement
 
@@ -281,7 +287,7 @@ Student responsibility depends on age, alternatives, understanding, and capacity
 
 ### 11. Failure / narrowing condition
 
-If standard restorative justice explains the same pattern, SRT's contribution is the formal link between `L2` discipline, hidden `Psi_f`, and future selectability.
+If standard restorative justice explains the same pattern, SRT's contribution should be narrowed to a candidate map of `L2` discipline, hidden burden, and future selectability.
 
 ---
 
@@ -319,7 +325,7 @@ Protocols are real as `L2` because they structure who receives care first.
 
 ### 6. Moral legitimacy
 
-Legitimate triage must check:
+Within a declared medical-ethics framework, candidate triage checks include:
 
 ```text
 transparent criteria;
@@ -331,17 +337,17 @@ burden sharing;
 clinician moral injury support.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 Hidden cost may be paid by families, low-status patients, overworked clinicians, or those excluded by opaque criteria.
 
 ### 8. Future selectability
 
-Triage should preserve the greatest possible future selectability without erasing individual dignity.
+A future-selectability lens may favor triage that preserves future selectability without erasing individual dignity.
 
 ### 9. Responsibility / repair
 
-Individual clinicians should not absorb all culpability when scarcity and protocol constraints are institutional. Repair includes review, explanation, compensation, and system redesign.
+Under a declared medical responsibility framework, institutional scarcity and protocol constraints may count against assigning all culpability to individual clinicians. That framework may favor review, explanation, compensation, and system redesign as repair pathways.
 
 ### 10. Improvement
 
@@ -393,7 +399,7 @@ Care arrangements become real `L2` when schedules, payments, roles, and routines
 
 ### 6. Moral legitimacy
 
-A care system is legitimate when it:
+Within a declared care-ethics or justice framework, candidate considerations include whether the system:
 
 ```text
 preserves dignity;
@@ -403,13 +409,13 @@ protects the elder's remaining future selectability;
 does not convert vulnerability into institutional invisibility.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 May appear as caregiver burnout, staff overload, elder loneliness, paperwork burden, medical navigation cost, and emotional guilt.
 
 ### 8. Future selectability
 
-SRT asks:
+One candidate future-selectability lens asks:
 
 ```text
 Does the care structure preserve agency appropriate to the elder's condition?
@@ -418,7 +424,7 @@ Does it also preserve caregiver futures?
 
 ### 9. Responsibility / repair
 
-Responsibility is distributed across family, institution, medical system, policy, and community support. Culpability should account for structural blockage and unpayable friction.
+Under a declared care-ethics or responsibility framework, responsibility may be distributed across family, institution, medical system, policy, and community support. A candidate culpability lens may weigh structural blockage and unpayable friction.
 
 ### 10. Improvement
 
@@ -432,7 +438,7 @@ Responsibility is distributed across family, institution, medical system, policy
 
 ### 11. Failure / narrowing condition
 
-If care ethics and welfare policy analysis fully explain outcomes, SRT's added value is a structured map of `L2` routines, hidden `Psi_f`, and future-selectability preservation.
+If care ethics and welfare policy analysis fully explain outcomes, SRT's added value is a structured map of `L2` routines, hidden burden, and future-selectability preservation.
 
 ---
 
@@ -471,28 +477,28 @@ The algorithm is real `L2` if it constrains future visibility and choice.
 
 ### 6. Moral legitimacy
 
-Legitimacy depends on whether the system:
+Within a declared platform-ethics framework, candidate lenses include whether the system:
 
 ```text
 protects future selectability;
 avoids addictive closure;
 keeps correction / appeal available;
 exposes ranking logic where appropriate;
-prevents hidden Psi_f export to users or creators;
+prevents hidden burden / cost displacement to users or creators;
 avoids dehumanizing d-exclusion.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 User attention fatigue, creator anxiety, social polarization, misinformation correction burden, compulsive scrolling, reduced alternative path visibility.
 
 ### 8. Future selectability
 
-SRT asks whether the recommendation system expands meaningful options or narrows users into hardened loops.
+A candidate future-selectability lens asks whether the recommendation system expands meaningful options or narrows users into hardened loops.
 
 ### 9. Responsibility / repair
 
-Responsibility lies primarily with platform designers, deployers, policy owners, and incentive structures. Users have some responsibility, but their selectable space is engineered.
+A declared platform responsibility framework may assign primary responsibility to platform designers, deployers, policy owners, and incentive structures. It may also assign users some responsibility while weighing how their selectable space is engineered.
 
 ### 10. Improvement
 
@@ -545,7 +551,7 @@ The shame is real if it alters reputation, employment, belonging, safety, or fut
 
 ### 6. Moral legitimacy
 
-Public condemnation is more legitimate when:
+Under a declared restorative, rights-based or other normative framework, candidate considerations supporting public condemnation may include:
 
 ```text
 facts are reliable;
@@ -556,27 +562,27 @@ appeal / correction exists;
 the target is not reduced to permanent identity condemnation.
 ```
 
-It is less legitimate when it becomes:
+Candidate considerations against it may include:
 
 ```text
-friction export;
+burden / cost displacement;
 status performance;
 permanent social death;
 fact-free amplification;
 collective cruelty.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 Mental health cost, reputation destruction, fear culture, audience moral fatigue, bystander silence.
 
 ### 8. Future selectability
 
-SRT asks whether shaming repairs harm and protects future selectability, or whether it narrows everyone into fear and rigidity.
+A candidate repair/future-selectability lens asks whether shaming repairs harm or narrows everyone into fear and rigidity.
 
 ### 9. Responsibility / repair
 
-The accused may bear responsibility if agency and norm access were present. The crowd/platform also bears responsibility for proportionality, verification, and repair channels.
+A declared restorative, rights-based, or other responsibility framework may weigh independently established Agency standing and norm access when assigning responsibility to the accused. It may also assign the crowd or platform responsibility for proportionality, verification, and repair channels.
 
 ### 10. Improvement
 
@@ -629,7 +635,7 @@ The AI system is a real constraint if it shapes decisions, access, classificatio
 
 ### 6. Moral legitimacy
 
-Legitimacy requires:
+Within a declared AI-ethics framework, candidate deployment checks include:
 
 ```text
 human/institutional answerability;
@@ -637,17 +643,17 @@ transparent oversight;
 appeal / correction channel;
 audit trail;
 proportional deployment;
-hidden Psi_f analysis;
+hidden burden / cost analysis;
 no false transfer of responsibility onto the AI.
 ```
 
-### 7. Hidden `Psi_f`
+### 7. Hidden burden / cost / friction proxy
 
 Users may pay with confusion, appeal burden, misclassification cost, reputational harm, lost access, or forced compliance with opaque systems.
 
 ### 8. Future selectability
 
-SRT asks:
+One candidate future-selectability lens asks:
 
 ```text
 Does AI deployment expand user options, or lock people into opaque selections they cannot challenge?
@@ -661,7 +667,7 @@ Use the AI agency note:
 AI-A0 / AI-A1 / AI-A2 / AI-A3?
 ```
 
-For current systems, responsibility usually routes to:
+For current systems, a declared AI-ethics or responsibility framework may route responsibility among:
 
 ```text
 developer;
@@ -690,7 +696,7 @@ If ordinary product liability and AI ethics frameworks fully explain responsibil
 
 ## 9. Summary diagnostic table
 
-| Case | Main `L2` | Hidden `Psi_f` risk | Future-selectability question | Repair target |
+| Case | Main `L2` | Hidden burden / cost risk | Future-selectability question | Repair target |
 |---|---|---|---|---|
 | Family obligation | kinship duty | caregiver burnout / guilt | does duty preserve both elder and caregiver futures? | shared burden / respite |
 | School discipline | authority / order | shame / identity narrowing | does punishment teach re-selection? | restorative path |
@@ -709,7 +715,7 @@ SRT ethics becomes practical when it asks:
 ```text
 What L2 is operating?
 Who carries d-value?
-Who pays hidden Psi_f?
+Who bears hidden burden / cost, and has canonical `Psi_f` actually been established?
 Whose future selectability expands or narrows?
 Can the structure be corrected, appealed, exited, or repaired?
 ```
@@ -725,5 +731,7 @@ Was the system stable?
 but to ask:
 
 ```text
-Was the stabilized structure legitimate, or did it merely export friction and narrow futures?
+Under the declared normative framework, how do burden distribution and narrowed futures bear on the legitimacy question?
 ```
+
+These questions remain candidate lenses. They do not close `O2-M`, and they do not replace ordinary ethical reasoning or the framework that supplies the criterion of judgment.

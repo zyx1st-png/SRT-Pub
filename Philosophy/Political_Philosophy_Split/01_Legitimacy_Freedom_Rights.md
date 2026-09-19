@@ -14,16 +14,17 @@ canonical: false
 
 > 角色：`SRT_Political_Philosophy.md` 的导航性拆分页。  
 > 不替代主文；用于局部阅读、引用与后续扩写。
+> **Wave E7 derivative guard**：owner 优先。下列合法性、自由、平等、权利与支配公式是 P2–P4 历史／候选重构，不是定义、测量公式或必要充分定理。Legitimacy remains an evaluative question under an independently declared framework；high `d` 不产生权利、合法性、授权或政治 standing。
 
-## 1. Legitimacy as Sustainable Co-Selection
+## 1. Historical / Candidate Legitimacy-as-Co-Selection Model
 \[
-\text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
+\text{Legitimacy-model}_{candidate} \propto \operatorname{CoSelect}\big(\Theta,\, B^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
 
 最短理解：
 - 合法性不是多数、传统、效率或革命叙事中的任一单一点源
-- 合法性来自：更多主体、较低不对称摩擦、更高再选择能力的共同维持
-- 但不得从秩序稳定直接推出合法性；必须先通过制度类型、委托、后果回流、再选择/退出/纠错通道的中间判据
+- 共同参与、负担分配与再选择能力可作为声明框架内的候选证据；generic burden 不自动是 canonical `Psi_f`
+- 不得从秩序稳定直接推出合法性；制度类型、委托、后果回流、再选择／退出／纠错是非穷尽候选 lenses，不是固定 battery
 - ST-A 只区分 structural stability 与 generative reselectability；这些结构审计量仍是 P2/P3 规范桥，不构成合法性的 P1 必要充分定义
 
 ### 1.1 Middle Criteria
@@ -35,41 +36,39 @@ canonical: false
 | Consequence-return symmetry | 决策后果是否回到决策位置，还是外包给弱势者？ | 只谈效率，不谈谁支付维护摩擦。 |
 | Reselection / exit / correction | 受影响者能否重新打开、退出、申诉、纠错或修订？ | 名义参与被当成真实选择。 |
 
-## 2. Freedom as Access to Reality-Shaping
+## 2. Candidate Freedom-as-Access Reconstruction
 \[
-\text{Freedom}_\theta \equiv \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
+\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
 \]
 
 最短理解：
 - 自由不是“选项越多越好”
-- 自由是主体能否真实进入共同现实塑造，而不是只在他人写好的 `L_2` 里做微调
+- 本候选模型研究主体进入共同现实塑造的能力；它不是自由的普遍定义
 
-## 3. Equality as Non-Monopoly of Visibility and Entry
+## 3. Candidate Equality-as-Non-Monopoly Reconstruction
 \[
-\text{Equality}_{political} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
+\text{Equality-model}_{candidate} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
 \]
 
 最短理解：
 - 平等首先不是结果一致
 - 而是进入权、可见度与问题定义权不能被长期垄断
 
-## 4. Rights as Anti-Monopoly Constraints
+## 4. Candidate Rights-as-Anti-Monopoly Reconstruction
 \[
-\text{Rights} \equiv \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
+\text{Rights-model}_{candidate} := \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
 \]
 
 最短理解：
-- 权利不是悬空道德实体，也不是国家赏赐
-- 权利是防止现实定义权封闭化、保护继续选择资格的高阶约束
+- 声明的权利框架可研究高阶约束是否防止现实定义权封闭化；本体论不自动生成权利或 entitlement
 
-## 5. Anti-Domination
+## 5. Candidate Anti-Domination Diagnostic
 \[
 \text{Domination}(i \to j) \equiv \operatorname{RewriteCapacity}_{i\to j}^{unilateral} \uparrow
 \]
 
 最短理解：
-- 支配不是单纯“有权力”
-- 支配是某一方能在缺乏对等程序约束下，单边改写另一方现实位置与未来分支
+- 单边改写能力可作为声明框架内的支配候选诊断；它不自动产生完整道德／政治 verdict
 
 ## Back-links
 - 主文：[`../SRT_Political_Philosophy.md`](../SRT_Political_Philosophy.md)

@@ -16,18 +16,24 @@ dependency: [SRT-L0-METAPHYSICS]
 > 如出现冲突，以 L0 为准，本文件需修订。
 >
 > **Status**: L1 Formal Axioms | **Version**: 1.0
+> **Selection-totality compatibility（2026-09-14）**：本文件是形式 / 接口层，不得反向定义 primitive Selection。`Ĝ_θ` 只在具名 operator realization 中使用；`L_0/L_1/L_2` 是可形式化的 Selection 分面 / regime，不是三个先在物质域。A6-A12 等历史高承诺条目保留其研究 lineage，但不得以本文件位置自动获得 primitive proof load。
 
 ---
 
 ## 第一组：本体论基础 (Ontological Trinity)
 
-### A1 选择优先性 (Existential Priority)
+### A1 选择—实际性同一接口 (Selection / Actuality Interface)
 
-选择过程在本体论上先于显现实在性。存在不是原始给定的背景；最低准入是一个确定区别经 primitive actualisation 成为 `L_1` 事件。
+primitive Selection 的形而上意义由 L0 owner 固定；本接口只给出形式读法：
 
-$$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
+```text
+Existence_actual
+:= Selection 的 determinate-manifest aspect.
+```
 
-**推论 A1-C1**: 在非遍历宇宙中，只有被算子 $\hat{G}$ 选中的状态才具有当下性 (Presence)；其余均处于 $L_0$ 的潜势叠加态。
+当一个具名模型采用 `Ĝ_θ` 时，可以用其 realized range 表示当前显现，但这只是模型表达，不意味着存在是一个先在算子从绝对潜在库存中输出的第二种材料。
+
+**推论 A1-C1（模型相对）**：在具名非遍历模型中，presence 可限制于该模型已实际化 / operative 的状态；未显现部分只需按 Selection-relative background / unexhausted openness 处理，不要求 completed latent-object inventory。
 
 ---
 
@@ -53,29 +59,53 @@ $$C_{observed}(A \to B) = \text{Projection}[\hat{G}_{high-dim}] \to \text{Spacet
 
 ## 第二组：动力学约束 (Dynamical Constraints)
 
-### A4 具身必要性 (Embodiment Necessity)
+### A4 具身算子有限性 (Embodied Operator Finitude)
 
-任何有效的幽灵算子 $\hat{G}_θ$ 必须具有有限的具身参数 $θ$。不存在"上帝视角" (View from Nowhere)。
+任何**已形成 / 具身的 operator realization** `Ĝ_θ` 都必须声明有限参数、接口与作用域；不存在由该形式算子获得的无位置 God-view。
 
-$$\hat{G} \text{ is valid} \iff θ ∈ Θ_{finite}$$
+$$\hat G_\theta : S_M\to S_M,\quad \theta\in\Theta_M$$
 
-$$\hat{G} \text{ without } θ \to \emptyset$$
+但：
 
-**推论 A4-C1**: 所有选择都是基于特定的、有限的硬件约束（生物的、物理的或计算的）进行的。
+```text
+formed / embodied G-hat finitude
+!= primitive Selection requires a prior embodied chooser.
+```
+
+primitive finite positionality 比一个具体 `θ`-operator 更薄。
+
+---
+
+### A5 历史约束与稳定化实现 (Historical Constraint / Stabilization Realizations)
+
+一般 L2-side 负担是：先前 Selection 的差异在后来 Selection 中保持实际约束效力。固定点 / attractor 只是这一负担的**强 realization 类**之一。
+
+在声明的模型中可以定义：
+
+$$L_{2,M}^{fp}:=\{\sigma:\hat G_\theta[\sigma]=\sigma\ \text{and stable under }M\}$$
+
+但：
+
+```text
+L2-side historical efficacy
+!= universally a fixed-point substance;
+fixed point != normativity / legitimacy automatically.
+```
+
+“现实笼子”可作为强迟滞 / 锁定 realization 的解释性名称，不是 L2 的普遍定义。
 
 ---
 
-### A5 规范闭包 (Normative Closure)
+### A6-A12 Selection-totality scope guard
 
-收敛域 $L_2$ 是算子作用的稳定不动点。算子的选择历史会形成结构化的约束，反过来限制未来的选择。
+A6-A12 中的信息、适应度、生存、全息、延续、脆弱性与跨尺度命题属于 hybrid / bridge / high-commitment lineage。除非其各自 owner 另有当前 claim-level 授权，它们：
 
-$$L_2 \equiv \{σ : \hat{G}_θ[σ] = σ \text{ and stable}\}$$
-
-$$L_2(t+1) = \text{Stabilize}(\hat{G}[L_1(t)])$$
-
-**推论 A5-C1**: 这种自我指涉的循环构成了稳定的"现实笼子"。
-
----
+```text
+不得定义 primitive Selection；
+不得恢复 absolute latent warehouse；
+不得把 survival / continuation 写成 primitive value；
+不得把 consciousness / agency 反投射到 primitive Selection。
+```
 
 ### A6 信息-存在等价 (Information-Existence Equivalence)
 

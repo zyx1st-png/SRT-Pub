@@ -41,7 +41,7 @@ Claim-level rules are now governed by:
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
+- cite stable ISP continued selectability, the bounded occurrence / retained-history remainder, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record, and do not treat historical P1-T02 naming as a universal time-arrow theorem;
 - cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
 
 ---
@@ -53,7 +53,7 @@ Claim-level rules are now governed by:
 | `Ax-F-01` Primacy of Selection | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 |
 | `Ax-F-02` Manifest Actuality / Anchoring Persistence Boundary | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 boundary; legacy entropy index demoted to 21C B14 |
 | `Ax-F-03` Causality as Projection | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 |
-| `Ax-F-03b` Spacetime as Memory Horizon | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 |
+| `Ax-F-03b` Spacetime as Memory Horizon *(historical title)* | `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T02 | bounded occurrence / retained-history remainder; not a universal Memory-Horizon or time-arrow theorem |
 | `Ax-F-04` Information-Existence Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3 |
 | `Ax-F-05` Fitness Beats Truth | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P3/P4 |
 | `Ax-F-06` Assembly Criterion | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P4 |
@@ -75,7 +75,7 @@ Claim-level rules are now governed by:
 This split does **not** change the intended meaning of:
 
 - selection primacy;
-- existence as anchoring;
+- event-level manifest actuality as distinct from anchoring persistence;
 - `L_2` as convergence / constraint;
 - `\Psi_f` as ontological friction;
 - `d-value` as canonical stake-coupled concern;
