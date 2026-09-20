@@ -497,7 +497,38 @@ O -> later component / process constraints
 
 Bowler pays R1b/R1c under an exogenous early-training clamp; synergetics supplies an endogenous circular-causality exemplar. These are not equivalent maintenance modes.
 
-Phase E.6 — NEXT: candidate-selection audit for one genuinely different domain realization of R1c. Requirements: not another RNN spectral variant; source-native R1b/R1c already present; independent perturbation possible; maintenance provenance explicit; no O4 / transfer target yet; GRG must change a control / distinction before result inspection.
+Phase E.6 — non-RNN R1c candidate-selection audit: COMPLETE.
+
+Selected bounded realization candidate:
+
+~~~text
+HKB / human bimanual coordination dynamics
+~~~
+
+This is an execution-routing choice, not a theory-winner or novelty claim.
+
+Source-native decomposition:
+
+~~~text
+component limb dynamics
+!= external control parameter (cycling / pacing frequency)
+!= maintained relative-phase coordination O
+!= mechanical perturbation operator
+!= relaxation / stability / phase-transition consequence
+~~~
+
+Maintenance provenance = mixed / coupled: the coordinative relation is generated and maintained by the coupled organismic system under externally controlled pacing / instruction conditions.
+
+Cross-realization revision:
+
+~~~text
+R1b/R1c formation may be historical / sedimented
+OR continuously regenerated in the current coupled process.
+~~~
+
+The minimum causal burden is not historical storage; it is maintained generative organization that participates in later transition dynamics.
+
+Phase E.7 — NEXT: HKB source/protocol-access feasibility audit only. Close-read the full perturbation method where accessible, reconstruct exact variables/intervention/relaxation metrics, check data access, and freeze failure conditions. New data collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
