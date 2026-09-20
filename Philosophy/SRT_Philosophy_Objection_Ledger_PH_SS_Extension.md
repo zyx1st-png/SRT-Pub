@@ -371,7 +371,7 @@ If selection is everywhere, and consciousness is selection, then SRT becomes pan
 
 ### SRT response
 
-Selection event is not subjecthood. Consciousness requires threshold conditions:
+Selection event is not subjecthood. A declared consciousness / subjecthood model may weigh these candidate evidence dimensions:
 
 1. structured `d-value > 0`;
 2. failure-sensitive update;
@@ -380,6 +380,8 @@ Selection event is not subjecthood. Consciousness requires threshold conditions:
 5. boundary maintenance;
 6. counterfactual access;
 7. cross-time reidentification.
+
+The list is neither universally necessary nor sufficient. Exact consciousness and subject-position sufficiency remain OPEN.
 
 ### Narrowing / withdrawal condition
 
@@ -523,7 +525,7 @@ Psi_f is typed, not equivocal;
 purpose is attractor-like, not cosmic destiny;
 d-value is existential stake, not preference;
 society is collective L2, not mere belief;
-consciousness is thresholded, not universal;
+consciousness does not follow from universal selection, and exact sufficiency remains open;
 validation is structural, not evasive;
 truth is constrained alignment, not arbitrary selection.
 ```

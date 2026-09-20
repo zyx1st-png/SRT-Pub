@@ -317,11 +317,11 @@ If legitimacy conditions are absent, keep the claim as descriptive social ontolo
 
 ### Definition-like guardrail
 
-> A selection event is not yet a subject. Consciousness requires high-stake, integrated, boundary-maintaining selection across time.
+> A selection event is not yet a subject. High-stake, integrated, boundary-maintaining selection across time may supply candidate evidence inside a declared consciousness / subjecthood model; it is not a universal requirement.
 
-### Threshold conditions
+### Candidate evidence dimensions
 
-A selection process becomes a candidate conscious subject only when additional thresholds are met:
+A declared model may evaluate a candidate conscious subject using the following dimensions. Their conjunction is neither universally necessary nor sufficient, and exact subject-position sufficiency remains OPEN:
 
 | Condition | Why it matters |
 |---|---|
@@ -331,7 +331,7 @@ A selection process becomes a candidate conscious subject only when additional t
 | minimal memory / `L_2` closure | traces stabilize across time |
 | boundary maintenance | self-relevant and non-self-relevant perturbations are distinguished |
 | counterfactual access | the system can track alternatives |
-| cross-time reidentification | continuity is sufficient for a subject-like trajectory |
+| cross-time reidentification | continuity may support a subject-like trajectory without establishing one |
 
 ### Use rule
 
@@ -405,5 +405,5 @@ selection is manifestational, not temporal;
 reality is layered, not flat;
 Psi_f is typed, not equivocal;
 L2 is real, not automatically good;
-selection is broad, consciousness is thresholded.
+selection is broad, consciousness does not follow from selection, and exact sufficiency remains open.
 ```

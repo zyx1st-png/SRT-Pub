@@ -220,10 +220,10 @@ $$ \text{Selection}(Reality) = f(Q_{microtubules}, \text{Intent}) $$
 **量子相干量定义**：此处 $Q \equiv \tau_{coh}/\tau_{deco}$，即生物系统中维持相干的实际时间与退相干时标之比（无量纲）；$Q \in [0, 1]$（$Q=1$ 为完全相干，$Q=0$ 为经典极限）。
 
 存在临界量子相干水平 $T_c \in (0,1)$（Orch-OR 框架内）：
-$$ Q > T_c \implies \text{主体拥有连续选择能力（Orch-OR：微管维持相干完成客观坍缩）} $$
-$$ Q < T_c \implies \text{选择机制断裂，意识中断（Orch-OR：相干性崩溃阻断选择整合）} $$
+$$ Q > T_c \leadsto \text{Orch-OR 模型中的连续选择候选证据} $$
+$$ Q < T_c \leadsto \text{Orch-OR 模型中的低相干读数} $$
 
-> **Orch-OR 依赖声明**：「$Q < T_c \Rightarrow$ 意识中断」依赖 Orch-OR 全套假设（微管量子计算、客观引力坍缩），与 SRT 基础框架（意识 = $\Psi_f$ 相变 + d 值涌现，不要求量子相干性）的推导路径不同。在 SRT 的退相干规范框架（Ax-Exp-03）下，$Q < T_c$ 仅意味着 pointer basis 提前固定，不直接导致意识中断。
+> **Orch-OR 依赖声明**：历史式「$Q < T_c \Rightarrow$ 意识中断」已 superseded；即使在 Orch-OR 全套假设下，`Q` crossing 也只能作为模型内候选证据，不建立或排除 consciousness。在 SRT 的退相干框架（Ax-Exp-03）下，$Q < T_c$ 仅意味着 pointer basis 提前固定。
 >
 > **Cross-ref**（规范路径）：`Neuroscience/SRT_Neuro_08_Immune_Dist.md §Ax-Exp-03`；$T_c$ 的可测代理：EEG gamma 带去同步（退相干替代指标）。
 
@@ -236,7 +236,7 @@ $$ \tau_{collapse} \approx \frac{\hbar}{E_G} $$
 任何生物系统的 d 值受此坍缩时间的反比约束：
 $$ d_{bio} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar} $$
 * **Implication**: 引力是生物 d 值的硬性物理天花板。能够延长 $\tau_{collapse}$（如微管保护量子相干性）的结构，直接扩大了算子可用的选择带宽。
-* **Anti-Panpsychism Note**: 此处 $d_{bio}$ 是相干性整合带宽（$d_{quantum}$），不携带任何主观体验内容。关切（concern）是 d 值在高度复杂的生物系统中满足意识涌现条件后的高阶涌现。见 SRT-CORE-13B §6.2。
+* **Anti-Panpsychism Note**: 此处 $d_{bio}$ 是相干性整合带宽（$d_{quantum}$）；它不推出主观体验。复杂生物系统中的 concern / consciousness 必须独立评估，不能由 `d` 或旧“意识涌现条件”准入。
 * **Cross-ref**: Def-Cosmo-1 [D1.7.1] in SRT-PHYS-COSMO（宏观引力 d 值）; Ax-BQ-1 [A1.5.1]; SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
 
 ---

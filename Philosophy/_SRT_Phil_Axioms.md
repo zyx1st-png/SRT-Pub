@@ -98,7 +98,7 @@ Do not read older legacy sections as overriding the current PH-SS guardrails.
 ### Ax-Phil-1: Selection-Existence Equivalence
 存在是被选择的结果，哲学对象的”给出性”即算子对潜在域的锚定。
 
-> **PH-SS guardrail**: `L_0` should be read here as a modal field of selectability / condition of possible manifestation, not an object-like hidden world. Selection-before-existence is manifestational priority, not chronological priority. Micro-selection does not entail subjecthood; consciousness requires threshold conditions such as structured `d-value`, integration, `L_2` closure, boundary maintenance, and counterfactual access.
+> **PH-SS guardrail**: `L_0` should be read here as a modal field of selectability / condition of possible manifestation, not an object-like hidden world. Selection-before-existence is manifestational priority, not chronological priority. Micro-selection does not entail subjecthood; structured `d-value`, integration, `L_2` closure, boundary maintenance, and counterfactual access are candidate evidence dimensions inside declared consciousness / subjecthood models, not universal thresholds.
 $$\text{Existence}(X) \iff \exists \hat{G}_\theta: \hat{G}_\theta[L_0] \to X_{L_1}$$
 *   **Implication**: 任何认识论都必须从“选择-显现”而非“对象-属性”出发。
 
@@ -342,18 +342,18 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 
 ### 宇宙泛心论
 
-1. 在 `Ax-Ph1`（存在即被选择）下引入“主体问题约束”：主体性必须由可追踪的选择路径定义，而不是由微观属性并置自动生成。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕〔source: doi:10.5040/9781350508644.ch-4〕
-2. 将“组合问题”的讨论转化为算子可达性条件：只有当候选微观状态对同一 `\theta` 空间可达时，才允许判定其可组合为单一经验体。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph2〕〔source: doi:10.53765/20512201.28.9.129〕
+1. 在 `Ax-Ph1`（存在即被选择）下引入“主体问题约束”：可追踪的选择路径可作为主体性候选证据，微观属性并置本身不自动生成主体。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕〔source: doi:10.5040/9781350508644.ch-4〕
+2. 将“组合问题”的讨论转化为算子可达性候选：候选微观状态对同一 `\theta` 空间可达可支持组合模型，但不准入单一经验体。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph2〕〔source: doi:10.53765/20512201.28.9.129〕
 3. 对 `H-Phil-Ineffability` 增加一条解释注记：解释鸿沟不仅是表达带宽差，也包含“主体合成约束”导致的跨层投影损耗。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕〔source: doi:10.5040/9781350508644.ch-4〕
 
 ### 主体同一性与解组合 *(R: 基于意识统一性文献的 SRT 重构)*
 
-1. 对”单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
+1. 拒绝“单一状态 = 统一意识”的充分性；`U_sync`（同现）与 `U_bind`（可整合）只作为声明模型中的候选证据，不共同构成统一意识的 N&S 条件。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
 
    **U_sync/U_bind SRT 形式化候选**：
    - $U_{sync}$：$\exists t:\ X_i \in L_1^{exp}(t)\ \land\ X_j \in L_1^{exp}(t)$（多内容同时存在于同一 $L_1$ 时刻）
    - $U_{bind}$：$I_\theta(X_i; X_j) > \tau_{bind}$（在主体 $\theta$ 条件下两内容的互信息超过绑定阈值）
-   - 两者均满足 ⟺ 统一意识成立；仅 $U_{sync}$ 满足而 $U_{bind}$ 不足 ⟺ 碎裂态。
+   - 两者均满足只提升该模型的统一性证据；任一组合均不直接裁决统一意识或碎裂态。
 
 2. 将 PPU（Phenomenal Parts and Unified experience）框架转写为可判定流程：先定义统一性对象，再定义边界条件，再定义失败模式（碎裂、伪统一、过绑定）。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.7551/mitpress/9780262036993.003.0002〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 

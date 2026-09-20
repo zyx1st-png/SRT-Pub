@@ -77,10 +77,10 @@ SRT asks: how do latent possibilities become manifest realities and then harden 
 | Pragmatism | truth and meaning relate to action and consequences | usefulness becomes constrained alignment under resistance | anti-relativist friction, E1-E4 reality strength | “SRT is just pragmatism.” |
 | Constructivism | reality is partially constructed | construction becomes constrained selection, not arbitrary making | `Psi_f`, cross-operator correction, `L_2` path-dependence | “SRT collapses into relativism.” |
 | Social construction theory | institutions and facts are stabilized socially | social facts become collective `L_2` | friction export, consequence return, legitimacy tests | “SRT is just Berger/Luckmann.” |
-| Panpsychism | micro-to-macro continuity question matters | micro-selection is not automatically consciousness | subjecthood threshold: d + integration + memory + boundary + counterfactual access | “SRT is panpsychism.” |
+| Panpsychism | micro-to-macro continuity question matters | micro-selection is not automatically consciousness | subjecthood candidate evidence: d + integration + memory + boundary + counterfactual access; no fixed gate | “SRT is panpsychism.” |
 | Physicalism | physical `L_2` descriptions are powerful | physical description does not exhaust manifest anchoring | operator-relative `L_1`, selection cost, layered reality | “SRT adds unnecessary ontology.” |
 | FEP / predictive processing | updating, self-maintenance, and model correction matter | prediction/update becomes one selection-cost regime | `d-value`, `L_2` hardening, normativity, selected existence | “SRT is just FEP with new words.” |
-| IIT | integration matters for consciousness | integration is not sufficient for subjecthood | concern-weighted anchoring and subjecthood threshold | “SRT repeats IIT.” |
+| IIT | integration matters for consciousness research | integration is not sufficient for subjecthood | concern-weighted anchoring and subjecthood candidate coordinates | “SRT repeats IIT.” |
 | GNW / global workspace | access and reportability matter | access is not the same as anchoring | pre-access selection + post-access `L_2` sedimentation | “SRT is just GNW extension.” |
 | Wittgenstein / language-games | language stabilizes forms of life | language-games become `L_2` constraint systems | `L_0/L_1` pre-language anchoring and `Psi_f` cost | “SRT is just language-game theory.” |
 | Deleuze / difference philosophy | difference and becoming are primary | difference becomes selectable latent structure | operator, cost, stabilization, withdrawal conditions | “SRT is just Deleuzian potentiality.” |
@@ -265,7 +265,7 @@ selection event != subject
 
 **What SRT adds**
 
-Subjecthood threshold:
+Subjecthood candidate evidence dimensions:
 
 - structured `d-value`;
 - failure-sensitive update;
@@ -277,7 +277,7 @@ Subjecthood threshold:
 
 **Guardrail**
 
-SRT does not need to claim that everything is conscious. It can say selection is widespread while consciousness requires thresholded integration.
+SRT does not need to claim that everything is conscious. It can say selection is widespread while consciousness does not follow from selection; integration and the listed dimensions remain model-local candidate evidence.
 
 ---
 
@@ -338,7 +338,7 @@ SRT should distinguish itself from FEP by making predictions about concern-weigh
 IIT is right that integration matters and that consciousness should not be reduced to outward behavior.
 
 **What SRT rewrites**  
-SRT treats integration as one condition for stable anchoring, not as sufficient consciousness.
+SRT treats integration as one candidate dimension for stable anchoring, not as a necessary or sufficient condition for consciousness.
 
 ```text
 integration -> candidate support for thick L1 / subjecthood, not sufficient proof
@@ -349,7 +349,7 @@ integration -> candidate support for thick L1 / subjecthood, not sufficient proo
 - `d-value` as concern / stake;
 - `Psi_f` as anchoring friction;
 - `L_2` sedimentation;
-- subjecthood threshold beyond integration.
+- subjecthood candidate coordinates beyond integration, without a closed admission threshold.
 
 **Guardrail**
 
@@ -435,7 +435,7 @@ No. SRT accepts model updating but adds latent selectability, concern, manifesta
 
 ### “Is SRT just IIT?”
 
-No. SRT accepts integration as relevant but not sufficient; subjecthood requires concern, boundary, memory, and cross-time stabilization.
+No. SRT accepts integration as relevant but not sufficient; concern, boundary, memory, and cross-time stabilization are additional candidate evidence, not a replacement universal subjecthood gate.
 
 ### “Is SRT just GNW?”
 

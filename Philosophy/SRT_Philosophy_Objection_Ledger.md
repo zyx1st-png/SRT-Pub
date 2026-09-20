@@ -56,7 +56,7 @@ A good new claim should answer:
 |---|---|---|---|---|
 | O-Phil-1 | Physicalist reduction | `L_1` has nontrivial status beyond `L_2` description | SRT becomes unnecessary metaphysics | Specify what physical description misses: manifestation, anchoring, first-person access, or update cost |
 | O-Phil-2 | Subjective idealism collapse | selection-first ontology | SRT sounds like “mind creates reality” | Keep `Filter–Resistance Duality` explicit: `theta` filters, `Psi_f` resists |
-| O-Phil-3 | Panpsychist combination | micro-selection vs macro-subjecthood | SRT inherits combination problem | Require `d-value`, integration, closure, and subject-boundary criteria before subjecthood |
+| O-Phil-3 | Panpsychist combination | micro-selection vs macro-subjecthood | SRT inherits combination problem | Treat `d-value`, integration, closure, and subject-boundary measures as declared-model candidate evidence; do not infer subjecthood |
 | O-Phil-4 | Sophisticated representationalism | anti-representational / protocol-first language | SRT attacks a strawman | Admit representation where specificity, invariance, and downstream use explain success |
 | O-Phil-5 | Language expansion | explanatory gap / ineffability | “Ineffability” becomes obsolete | Type the gap into interface insufficiency, compression, and high-cost approximation |
 | O-Phil-6 | Formal self-reference | paradox as boundary failure | SRT ignores existing logic | Restrict target to unstratified closure attempts, not all self-reference |

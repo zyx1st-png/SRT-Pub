@@ -87,9 +87,9 @@ It asks how determinate realities stabilize, and then asks what they cost, who c
 
 SRT distinguishes broad selection from consciousness.
 
-Many systems select, filter, stabilize, or respond. That does not mean every system is conscious. Consciousness, in SRT's public framing, is thresholded: it appears only when selection enters concern, burden, consequence return, self-modulation, and directional readability strongly enough to form a lived window.
+Many systems select, filter, stabilize, or respond. That does not mean every system is conscious. Concern, burden, consequence return, self-modulation, and directional readability are candidate evidence dimensions in SRT's public framing; no fixed conjunction here establishes a lived window, and exact consciousness sufficiency remains open.
 
-Selection is broad; consciousness is thresholded.
+Selection is broad; consciousness does not follow from selection.
 
 ## Why it matters for AI and consciousness
 
@@ -119,4 +119,4 @@ This matters for value because value is not just preference. A society can rewar
 
 If you want one safe summary:
 
-> SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice, consciousness is thresholded, and stability is not legitimacy.
+> SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice, does not entail consciousness, and stability is not legitimacy.

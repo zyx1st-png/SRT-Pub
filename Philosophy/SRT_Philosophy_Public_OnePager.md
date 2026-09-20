@@ -183,7 +183,7 @@ A system can select without being conscious.
 A system can process information without being a subject.  
 A system can act without being morally responsible.
 
-Subjecthood requires stronger conditions:
+Subjecthood claims carry a stronger, framework-declared candidate-evidence burden:
 
 - structured concern or `d-value`;
 - memory across time;
@@ -195,7 +195,7 @@ Subjecthood requires stronger conditions:
 
 So SRT can say:
 
-> Selection is broad; consciousness is thresholded.
+> Selection is broad; consciousness does not follow from selection, and its exact sufficiency remains OPEN.
 
 This is especially important for AI. A chatbot can produce self-reports without automatically being a subject.
 
@@ -272,7 +272,7 @@ SRT should be tested similarly:
 | `Psi_f` / friction | reaction time, error, transition cost, model-update path, resistance to reframing |
 | `d-value` / concern | non-substitutability, cost willing to bear, identity impact, memory persistence, action change |
 | `L2` hardening | path dependence, hysteresis, habit automation, institutional persistence, resistance to violation |
-| subjecthood threshold | boundary maintenance, memory, counterfactual access, failure-sensitive updating, cross-time continuity |
+| subjecthood candidate evidence | boundary maintenance, memory, counterfactual access, failure-sensitive updating, cross-time continuity; no fixed N&S gate |
 
 Minimum scientific standard:
 
@@ -357,7 +357,7 @@ Use carefully:
 - A world is a history of stabilized selections.
 - What matters is what changes future selectability.
 - Norms can be real without being good.
-- Selection is broad; consciousness is thresholded.
+- Selection is broad; consciousness does not follow from selection, and exact consciousness sufficiency remains open.
 - Truth is stable alignment under resistance.
 - SRT is not mind over matter; it is selection under constraint.
 
