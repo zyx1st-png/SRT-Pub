@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / AUTHOR CONVERGENCE RECORDED 2026-09-20 / PHASE C INTERNAL RED-TEAM NEXT
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / PHASE C RED-TEAM PASS1 COMPLETE / AUTHOR SECOND ADJUDICATION ON GENERATIVE-EXPECTATION TYPING NEXT
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -75,14 +75,12 @@ canonical edit from this programme = NO.
 Next sequence:
 
 ```text
-Phase C internal red-team:
-anti-tautology
--> anti-reduction
--> anti-relativism / anti-anti-realism
--> anti-teleology / normativity
+Phase C internal red-team Pass 1 = COMPLETE:
+`Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md`
 
-then:
-distributed-neighbor extraction
+next:
+author second adjudication of generative-expectation typing
+-> distributed-neighbor extraction
 -> one bounded transfer pilot
 -> only then canonical reassessment.
 ```
