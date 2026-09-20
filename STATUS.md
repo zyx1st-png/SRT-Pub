@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-13
+updated: 2026-09-20
 ---
 
 # SRT 当前状态仪表盘
@@ -14,7 +14,7 @@ updated: 2026-09-13
 >
 > **记录口径（2026-09-13 起）**：本页记录**已落地事实**，以及由已落地治理 / 作者裁决支持的**当前 programme state**——两者都属于当前状态面板的职责（`AGENTS.md` 执行后条目、`Governance/SRT_EDIT_PROTOCOL.md` 留痕位置表）。但**不得把未合并 PR 自身的 lifecycle 写成仓库当前事实**：`#N = DRAFT / ACTIVE / WAITING CI` 属于那个 PR，不属于本页。进行中的 owner cycle 以 **owner 文件或 bounded work package** 指称，未合并 PR 号不得充当状态 owner。原因：#959 与 #961 两轮都在各自 landing PR 内部把该 PR 写成 ACTIVE，合并当天本页即失真。本条由 `scripts/check_status_recording_rule.py` 强制（本行含反例文本，故带豁免标记）。<!-- status-lint:allow -->
 >
-> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。下一实质工作转入非 canonical Selection primitive strongest-rival / non-substitutability research。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。#976 已于 2026-09-20 合并 Ground / pre-object L0 whole-tree reconstruction。随后作者在 post-#976 对话中把下一研究主线重定向为 noncanonical Generative Relational Grammar (GRG) programme：从 Selection 作为 non-flat generative change 出发，整合跨主体 / 跨领域经验与成熟邻居作为 reciprocal constraints；winner-style strongest-neighbor novelty audit 不再是当前 root question。
 
 ## Fast Status
 
@@ -44,8 +44,50 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = SELECTION PRIMITIVE STRONGEST-RIVAL / NONCANONICAL / AUTHOR GATE NOT YET REACHED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / AUTHOR CONVERGENCE RECORDED 2026-09-20 / PHASE C INTERNAL RED-TEAM NEXT
 ```
+
+### 0.5 Post-#976 GRG programme routing — 2026-09-20
+
+Author source:
+`01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md`
+
+Programme architecture:
+`Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md`
+
+Continuation handoff:
+`Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
+
+Current programme reading:
+
+```text
+Selection = non-flat generative change / differentiation at programme level;
+objects / symbols / laws = useful finite objectification slices, not final ontology floor;
+unification target = generative relational grammar (GRG), not one replacement universal law;
+civilizational "big data" = cross-position / cross-domain accumulated experience + extracted regularities;
+mature neighbors = distributed contributors / reciprocal constraints by default;
+SRT = self-revising grammar-learning architecture;
+generative expectation = author-proposed source line of normativity;
+full moral ought / universal value weights = OPEN;
+canonical edit from this programme = NO.
+```
+
+Next sequence:
+
+```text
+Phase C internal red-team:
+anti-tautology
+-> anti-reduction
+-> anti-relativism / anti-anti-realism
+-> anti-teleology / normativity
+
+then:
+distributed-neighbor extraction
+-> one bounded transfer pilot
+-> only then canonical reassessment.
+```
+
+Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
 
 ### 1. 当前 programme state 与 owner 指针
 
