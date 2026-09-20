@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT 核心动力学上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
@@ -43,7 +43,7 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-19 |
+| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-20 |
 
 ## §0.2 状态护栏
 
@@ -443,7 +443,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -526,7 +526,7 @@ d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}
 最重要的边界是：
 > d 是跨尺度数学标尺，不等于跨尺度意识赋值。
 
-只有在生物/认知域满足充要三条件时，d 才表现为意识相关关切，而不是纯数学量。
+在声明的生物/认知模型中，d、`\Psi_f` 与 formed `\hat G` 可作意识相关关切的候选证据维度；它们的合取不是普遍必要、充分或充要条件。
 
 ---
 
@@ -658,7 +658,7 @@ SRT 的压缩立场是：
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**
 
 ---
 

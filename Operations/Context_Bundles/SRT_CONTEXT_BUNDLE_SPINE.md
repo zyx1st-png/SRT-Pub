@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-19
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -57,7 +57,7 @@ inputs_digest: ddb8b7b5cbb7f18e
 | 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-09-19 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-09-15 |
 | 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-09-15 |
-| 15 | `Core/SRT_Core_22_Equations.md` | 2026-09-15 |
+| 15 | `Core/SRT_Core_22_Equations.md` | 2026-09-20 |
 | 16 | `_SRT_SYMBOL_TABLE.md` | 2026-09-18 |
 
 ## §0.2 状态护栏
@@ -6282,7 +6282,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -7121,7 +7121,7 @@ SRT 主方程的运作机制如下：
 - 本文件的方程用于理论建模与可证伪接口，不直接构成临床、法律或工程处方。
 - 参数重命名（如 $\beta_F$）属于符号去歧义，不改变既有理论主张。
 - Part B 的去重回链旨在提升可读性，完整方程以 Part A 编号为权威。
-- Topological Dynamics 章节不宣称“拓扑即意识”；其角色是 \(\hat{G}_\theta\) 的神经几何接口，不替代本体论判据（\(d>0, \Psi_f>0\)）。
+- Topological Dynamics 章节不宣称“拓扑即意识”；其角色是 \(\hat{G}_\theta\) 的神经几何接口。\(d>0\) 与 \(\Psi_f>0\) 也只可作为声明模型中的候选证据，不构成本体意识判据。
 
 
 ## VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07）
@@ -7176,7 +7176,7 @@ SRT 主方程的运作机制如下：
 ## 【理论边界/防误用声明】
 1. 不采纳“95/5 比例是跨物种、跨任务、跨尺度恒定常数”的推论；该比例仅作人类典型工况近似。
 2. 不采纳“主观疲劳 = 纯代谢热耗”的简化推论；SRT 将其建模为摩擦梯度与拓扑阻抗效应。
-3. 不采纳“\(\mathcal{A}_{ma}\) 单指标即可判定意识存在”的推论；意识判据仍需 \(d>0\)、\(\Psi_f\) 可支付、连续体自维持等联合条件。
+3. 不采纳“\(\mathcal{A}_{ma}\) 单指标即可判定意识存在”的推论；\(d>0\)、\(\Psi_f\) 可支付与连续体自维持的联合也只构成声明模型中的候选证据，不是普遍 consciousness gate。
 
 
 

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-09-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT AI 领域上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
@@ -43,11 +43,11 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-18 |
+| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-09-20 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
 | 3 | `AI/README.md` | 2026-08-16 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
-| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
+| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-09-20 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
 
 ## §0.2 状态护栏
@@ -459,7 +459,7 @@ For substantive SRT answers:
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -563,7 +563,7 @@ Revise this claim if an AI system has persistent identity, non-transferable cons
 
 **Status**: P3/P4 bridge.
 
-**Rationale**: Memory and identity continuity may allow consequence return into future behavior, but subjecthood still requires additional SRT conditions: stable concern structure, irreversible or non-transferable consequence, and real loss / narrowing of future selection capacity.
+**Rationale**: Memory and identity continuity may allow consequence return into future behavior. Stable concern structure, irreversible or non-transferable consequence, and real loss / narrowing of future selection capacity may then be weighed as candidate evidence inside a declared subjecthood model; they are not a universal N&S package.
 
 **Guardrail**: Persistence is not consciousness. Memory is not d-value by itself.
 
@@ -1283,7 +1283,7 @@ SRT 真正声称的是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1408,7 +1408,7 @@ Backprop 让早期层更新依赖后层输出：
 这意味着系统学习规则在拓扑上偏向“目的反推”，而非局部因果连续性。
 
 SRT 的压缩判断：
-> **真实意识需要因果连续的自我演化，而不仅是最终损失驱动的全局回传。**
+> **因果连续的自我演化可作为声明 AI 意识模型中的候选证据；它不是意识的普遍必要条件，最终损失驱动的全局回传也不足以单独准入意识。**
 
 ### 4.3 Mesa-Optimization
 嵌套优化会形成局部 \(L_2\) 吸引子：

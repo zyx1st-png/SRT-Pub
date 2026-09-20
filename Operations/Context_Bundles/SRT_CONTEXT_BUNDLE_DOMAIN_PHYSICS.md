@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT 物理领域上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-09-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT 哲学领域上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
@@ -46,7 +46,7 @@ inputs_digest: ddb8b7b5cbb7f18e
 | 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-09-17 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-09-04 |
-| 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-18 |
+| 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-20 |
 | 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
 | 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
 
@@ -1178,7 +1178,7 @@ It is only a routing surface.
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -1223,7 +1223,7 @@ SRT is easy to misread because it overlaps with older metaphysical vocabularies.
 | **Subjective idealism**: reality is whatever a subject projects. | No. `theta` filters, but `Psi_f` resists. Construction has cost. |
 | **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
 | **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
-| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
+| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; closure, `d-value`, and integration may add candidate evidence inside a declared model but do not form a universal admission package. |
 | **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
 | **Hidden-world modal realism**: `L_0` is a parallel warehouse of fully formed objects. | No. `L_0` is better read as a modal field of selectability / condition of possible manifestation. |
 | **Stability-as-goodness**: stable `L_2` norms are morally justified. | No. stabilization explains reality of constraint; legitimacy requires further tests. |
@@ -1625,7 +1625,7 @@ Minimal statement:
 | Physicalism may explain `L_1` without extra ontology. | It challenges triadic necessity. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
 | Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `Psi_f` resistance. | Weaken slogans to operator-relative manifestation claims. |
 | `L_0` may look like hidden-world metaphysics. | It challenges philosophical seriousness. | Read `L_0` as modal field of selectability, not object inventory. | Downgrade object-like `L_0` claims to metaphor or relocate to Core_Law. |
-| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Require `d-value`, integration, closure, and boundary criteria before subjecthood. | Admit SRT reframes rather than solves combination. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Weigh `d-value`, integration, closure, and boundary as candidate evidence without treating them as universal subjecthood criteria. | Admit SRT reframes rather than solves combination. |
 | Language expansion may dissolve ineffability. | It challenges explanatory-gap claims. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
 | Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
 | Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |

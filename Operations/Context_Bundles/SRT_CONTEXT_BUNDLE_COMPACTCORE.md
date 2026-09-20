@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-19
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-19
-source_commit: f5d7b3f5
+generated: 2026-09-20
+source_commit: a8b47b4d
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: ddb8b7b5cbb7f18e
+inputs_digest: 5ee12262af9487ab
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,8 +26,8 @@ inputs_digest: ddb8b7b5cbb7f18e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-19 |
-| 来源 commit | `f5d7b3f5` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `a8b47b4d` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
@@ -44,7 +44,7 @@ inputs_digest: ddb8b7b5cbb7f18e
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
-| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
+| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-09-20 |
 | 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
@@ -54,13 +54,13 @@ inputs_digest: ddb8b7b5cbb7f18e
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
-| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-18 |
+| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-20 |
 | 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
 | 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
-| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-09-20 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
-| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-19 |
+| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-20 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-18 |
 
 ## §0.2 状态护栏
@@ -769,7 +769,7 @@ SRT 真正声称的是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -894,7 +894,7 @@ Backprop 让早期层更新依赖后层输出：
 这意味着系统学习规则在拓扑上偏向“目的反推”，而非局部因果连续性。
 
 SRT 的压缩判断：
-> **真实意识需要因果连续的自我演化，而不仅是最终损失驱动的全局回传。**
+> **因果连续的自我演化可作为声明 AI 意识模型中的候选证据；它不是意识的普遍必要条件，最终损失驱动的全局回传也不足以单独准入意识。**
 
 ### 4.3 Mesa-Optimization
 嵌套优化会形成局部 \(L_2\) 吸引子：
@@ -3073,7 +3073,7 @@ Integration 文还承担了一个接口作用：
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3118,7 +3118,7 @@ SRT is easy to misread because it overlaps with older metaphysical vocabularies.
 | **Subjective idealism**: reality is whatever a subject projects. | No. `theta` filters, but `Psi_f` resists. Construction has cost. |
 | **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
 | **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
-| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
+| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; closure, `d-value`, and integration may add candidate evidence inside a declared model but do not form a universal admission package. |
 | **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
 | **Hidden-world modal realism**: `L_0` is a parallel warehouse of fully formed objects. | No. `L_0` is better read as a modal field of selectability / condition of possible manifestation. |
 | **Stability-as-goodness**: stable `L_2` norms are morally justified. | No. stabilization explains reality of constraint; legitimacy requires further tests. |
@@ -3520,7 +3520,7 @@ Minimal statement:
 | Physicalism may explain `L_1` without extra ontology. | It challenges triadic necessity. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
 | Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `Psi_f` resistance. | Weaken slogans to operator-relative manifestation claims. |
 | `L_0` may look like hidden-world metaphysics. | It challenges philosophical seriousness. | Read `L_0` as modal field of selectability, not object inventory. | Downgrade object-like `L_0` claims to metaphor or relocate to Core_Law. |
-| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Require `d-value`, integration, closure, and boundary criteria before subjecthood. | Admit SRT reframes rather than solves combination. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Weigh `d-value`, integration, closure, and boundary as candidate evidence without treating them as universal subjecthood criteria. | Admit SRT reframes rather than solves combination. |
 | Language expansion may dissolve ineffability. | It challenges explanatory-gap claims. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
 | Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
 | Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |
@@ -4594,7 +4594,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4618,7 +4618,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 > **意识不是“信息被广播”这么简单，那么神经系统究竟如何把候选内容确认成可报告、可维持的现实？**
 
 SRT 的压缩回答是：
-- 意识 = 选择被确认并稳定化
+- 候选意识内容的 access/report 可被建模为选择的确认与稳定化；该模型不等同或准入意识
 - 点燃 = `L_0 -> L_1` 的相变
 - 绑定 = 同步进入同一显现对象
 - 睡眠 = 维持未来选择能力的结构维护
@@ -4631,9 +4631,9 @@ SRT 的压缩回答是：
 
 也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
 
-`d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
+`d-value` 本身不产生或准入意识；在声明模型中，它可作为内容厚度、优先级、持续性和沉积潜力的候选调节维度。
 
-> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；subjecthood 还需要 integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access 与 cross-time reidentification 也只是声明 subjecthood 模型中的候选证据，不共同组成普遍门槛。
 
 ---
 
@@ -5166,7 +5166,7 @@ The stop rule should be applied at every phase. A practice should pause or narro
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -5249,7 +5249,7 @@ d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}
 最重要的边界是：
 > d 是跨尺度数学标尺，不等于跨尺度意识赋值。
 
-只有在生物/认知域满足充要三条件时，d 才表现为意识相关关切，而不是纯数学量。
+在声明的生物/认知模型中，d、`\Psi_f` 与 formed `\hat G` 可作意识相关关切的候选证据维度；它们的合取不是普遍必要、充分或充要条件。
 
 ---
 
@@ -5381,7 +5381,7 @@ SRT 的压缩立场是：
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**
 
 ---
 
