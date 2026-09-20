@@ -15,6 +15,7 @@ named_comparator: none
 n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_PROGRAMME_POSITION_ANTIOBJECTIFICATION_TO_CROSSDOMAIN_RESEARCH_2026-09-13.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md
   - Governance/SRT_GOV_AUTHOR_REENTRY_ONTOLOGY_RECONSTRUCTION_AMENDMENT_2026-09-05.md
@@ -117,13 +118,29 @@ Target: position as operative generative relation, not coordinate label.
 
 Guard: index variable != formed position.
 
-### G7 — consequence exposure and generative expectation
+### G7 — consequence exposure, generative expectation and anticipatory realization
 
-Question: when do generated consequences return to the same formed relation / position strongly enough to constrain expectations about further generation?
+Second author adjudication: B+C, asymmetric / layered.
 
-Target: connect generativity, anticipation and normativity without collapsing them.
+Working split:
 
-Guard: prediction != normativity automatically; exposure != full moral standing.
+- G7a — consequence exposure / return: what generated consequences re-enter the same formed relation / position?
+- G7b — structural generative expectation (B): what continuation / transformation is immanently implied by the typed generative relation?
+- G7c — formed-locus anticipatory realization (C): how is that direction embodied, enacted, inherited or modelled from a formed locus?
+  - C0 = embodied / enacted anticipation;
+  - C1 = model-mediated anticipation.
+- G7d — indexed normative comparison: relative to an admitted position / relation / scale, does the trajectory strengthen, preserve, weaken, substitute, hollow out or destroy the relevant generative relation / capacity?
+
+Target: connect generativity, anticipation and normativity without collapsing structural direction into prediction.
+
+Guards:
+
+- B does not require an explicit predictive model.
+- C is downstream of enough formed organization to make anticipation operative from somewhere.
+- C0/C1 != consciousness or phenomenality.
+- prediction != normativity automatically.
+- exposure != full moral standing.
+- G7d != full moral legitimacy.
 
 ### G8 — reconstructive Selection
 
@@ -216,6 +233,11 @@ For each neighbor or domain result, record:
 8. failure condition.
 
 Overlap is useful evidence only when source fidelity and reciprocal constraint are preserved.
+
+Phase D Pass 1 is recorded in:
+`Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`.
+
+Its first transfer-worthy neutral candidate is GRG-R1 — retained-organization re-entry. This does not promote GRG-R1 to canonical status or a universal law.
 
 ## 6. GRG extraction rule
 
@@ -400,13 +422,15 @@ Phase A — author convergence record: COMPLETE in the 2026-09-20 source record.
 
 Phase B — GRG Programme v0.1: THIS FILE.
 
-Phase C — internal red-team: NEXT.
+Phase C — internal red-team Pass 1: COMPLETE.
 
-Phase D — distributed-neighbor extraction map: AFTER Phase C.
+Author second adjudication — generative expectation typing: COMPLETE / B+C ASYMMETRIC-LAYERED.
 
-Phase E — one bounded transfer pilot: AFTER the grammar relation used in the pilot is frozen.
+Phase D — distributed-neighbor extraction Pass 1: COMPLETE.
 
-Phase F — canonical reassessment: HOLD until Phases C–E produce a real reason to edit canonical owners.
+Phase E — NEXT: freeze GRG-R1 in a bounded pilot charter, then run one bounded transfer pilot before target-result inspection.
+
+Phase F — canonical reassessment: HOLD until the bounded transfer pilot produces a real owner-level reason to edit canonical owners.
 
 ## 17. No-write zones for this programme stage
 
