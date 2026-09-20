@@ -2,7 +2,7 @@
 id: SRT-CORE-13A-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,6 +20,6 @@ dependency: [SRT-CORE-13A]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 13A: Ghost Operator Basics (Hybrid Edition) | 29939 | `6f8b15b883f8` |
-| 01 | [`01_Part02.md`](01_Part02.md) | T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理） | 31201 | `3d2ac07f4699` |
-| 02 | [`02_Part03.md`](02_Part03.md) | 3.3 具身的三重维度 | 25878 | `7ad6d4f74712` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 13A: Ghost Operator Basics (Hybrid Edition) | 29936 | `32c0af42dd4a` |
+| 01 | [`01_Part02.md`](01_Part02.md) | T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理） | 31198 | `e9e47632966a` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 3.3 具身的三重维度 | 25875 | `34cf0bc4d785` |

@@ -2,7 +2,7 @@
 id: SRT-AI-ONTOLOGY-GENERAL-BOUNDARY-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,5 +20,5 @@ dependency: [SRT-AI-01]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition) | 33139 | `c738ba721fd4` |
-| 01 | [`01_Part02.md`](01_Part02.md) | §2.2 为什么 d=0 导致"无关切" | 20736 | `684fd0403263` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition) | 33136 | `0907b87e18f6` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §2.2 为什么 d=0 导致"无关切" | 20733 | `96fe43c31f17` |

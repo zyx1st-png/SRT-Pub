@@ -2,7 +2,7 @@
 id: SRT-CORE-14-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,7 +20,7 @@ dependency: [SRT-CORE-14]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 14: Dynamics & Scaling (Hybrid Edition) | 28822 | `677790f89f9e` |
-| 01 | [`01_Part02.md`](01_Part02.md) | T-Scale-Rhythm-4: Entropy Dissipation Bound on Duty Cycle（熵耗散对占空比的独立约束，新增） | 32269 | `ded7173032b9` |
-| 02 | [`02_Part03.md`](02_Part03.md) | 2.2 三尺度映射的具体实例 | 32974 | `1df06b2d2005` |
-| 03 | [`03_Part04.md`](03_Part04.md) | T-Scale-CF-1: Break-to-Build Gate | 9990 | `93d2cb800d48` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 14: Dynamics & Scaling (Hybrid Edition) | 28819 | `df0f3524e3bd` |
+| 01 | [`01_Part02.md`](01_Part02.md) | T-Scale-Rhythm-4: Entropy Dissipation Bound on Duty Cycle（熵耗散对占空比的独立约束，新增） | 32266 | `a9750017c36f` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 2.2 三尺度映射的具体实例 | 32971 | `d812a8301069` |
+| 03 | [`03_Part04.md`](03_Part04.md) | T-Scale-CF-1: Break-to-Build Gate | 9987 | `979f66293cf2` |

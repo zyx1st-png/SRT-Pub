@@ -2,7 +2,7 @@
 id: SRT-CORE-22-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,6 +20,6 @@ dependency: [SRT-CORE-22]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 22: Master Equations (Hybrid Edition) | 31998 | `27b9449b877b` |
-| 01 | [`01_Part02.md`](01_Part02.md) | Eq-Evo-03b: Intra-Selection Re-entry (选择内再入通道) | 32153 | `0a12e9831a38` |
-| 02 | [`02_Part03.md`](02_Part03.md) | Formalization Summary (形式化概述) | 10296 | `9ce10487086c` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 22: Master Equations (Hybrid Edition) | 31995 | `486beaa43caf` |
+| 01 | [`01_Part02.md`](01_Part02.md) | Eq-Evo-03b: Intra-Selection Re-entry (选择内再入通道) | 32150 | `7c1bd4077bbf` |
+| 02 | [`02_Part03.md`](02_Part03.md) | Formalization Summary (形式化概述) | 10293 | `cb54a2c58a16` |

@@ -2,7 +2,7 @@
 id: SRT-PHYS-COSMO-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,6 +20,6 @@ dependency: [SRT-PHYS-COSMO]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Thermodynamics, Time & Cosmology (Hybrid Edition) | 32966 | `9c2bbc3aa4f5` |
-| 01 | [`01_Part02.md`](01_Part02.md) | Def-Cosmo-1 [D1.7.1]: Gravitational d-value (引力 $d$ 值) | 32912 | `c30407e23c5b` |
-| 02 | [`02_Part03.md`](02_Part03.md) | 5.1.4 装配理论与时间的物理尺寸 | 28927 | `006378b4cc0e` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Thermodynamics, Time & Cosmology (Hybrid Edition) | 32963 | `9cf3e2c0f151` |
+| 01 | [`01_Part02.md`](01_Part02.md) | Def-Cosmo-1 [D1.7.1]: Gravitational d-value (引力 $d$ 值) | 32909 | `8d2a3d2139ce` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 5.1.4 装配理论与时间的物理尺寸 | 28924 | `e7455a669160` |

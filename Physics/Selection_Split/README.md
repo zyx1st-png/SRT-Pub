@@ -2,7 +2,7 @@
 id: SRT-QUANT-01-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,5 +20,5 @@ dependency: [SRT-QUANT-01]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Quantum Mechanics: Selection & Measurement (Hybrid Edition) | 33346 | `2fe64f255556` |
-| 01 | [`01_Part02.md`](01_Part02.md) | 1.3 普朗克意识时间 ($t_Ψ$) | 24917 | `da2c022d9ab5` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Quantum Mechanics: Selection & Measurement (Hybrid Edition) | 33343 | `b87502165dad` |
+| 01 | [`01_Part02.md`](01_Part02.md) | 1.3 普朗克意识时间 ($t_Ψ$) | 24914 | `dff8593e0740` |

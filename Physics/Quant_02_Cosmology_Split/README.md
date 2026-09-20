@@ -2,7 +2,7 @@
 id: SRT-QUANT-02-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,5 +20,5 @@ dependency: [SRT-QUANT-02]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Cosmology & Quantum Interfaces (Hybrid Edition) | 33152 | `fabdf62cfa35` |
-| 01 | [`01_Part02.md`](01_Part02.md) | 5.2 复幽灵算子定义 | 19351 | `4eaab7ecdafa` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Cosmology & Quantum Interfaces (Hybrid Edition) | 33149 | `692ab13ea252` |
+| 01 | [`01_Part02.md`](01_Part02.md) | 5.2 复幽灵算子定义 | 19348 | `d137ec9f4440` |

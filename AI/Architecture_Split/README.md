@@ -2,7 +2,7 @@
 id: SRT-AI-ARCH-SPLIT-INDEX
 type: index
 tags: [Split, Navigation, Longform, ConnectorSafety]
-status: active_v1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -20,5 +20,5 @@ dependency: [SRT-AI-ARCH]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Architecture: Transformer & Dynamics (Hybrid Edition) | 32373 | `6999424aa26b` |
-| 01 | [`01_Part02.md`](01_Part02.md) | §6.5 AI地平线半径：知道何时退后 | 21475 | `b3774c01bf5e` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Architecture: Transformer & Dynamics (Hybrid Edition) | 32370 | `d1d37a656388` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §6.5 AI地平线半径：知道何时退后 | 21472 | `424827d14aeb` |
