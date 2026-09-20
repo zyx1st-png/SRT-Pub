@@ -239,6 +239,11 @@ Phase D Pass 1 is recorded in:
 
 Its first transfer-worthy neutral candidate is GRG-R1 — retained-organization re-entry. This does not promote GRG-R1 to canonical status or a universal law.
 
+The first bounded neuroscience transfer pilot is now COMPLETE and returned PILOT-NULL:
+`Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md`.
+
+The pilot rejected the tempting mapping `context-decodable subspace = causal retained organization O` under its preregistered targeted-withdrawal versus random-subspace and magnitude-matched-noise controls. GRG-R1 remains a research candidate; this O-identification strategy does not.
+
 ## 6. GRG extraction rule
 
 A candidate GRG relation must not be created after seeing one matching example and then declared universal.
@@ -428,9 +433,11 @@ Author second adjudication — generative expectation typing: COMPLETE / B+C ASY
 
 Phase D — distributed-neighbor extraction Pass 1: COMPLETE.
 
-Phase E — NEXT: freeze GRG-R1 in a bounded pilot charter, then run one bounded transfer pilot before target-result inspection.
+Phase E — first bounded GRG-R1 neuroscience transfer pilot: COMPLETE / PILOT-NULL.
 
-Phase F — canonical reassessment: HOLD until the bounded transfer pilot produces a real owner-level reason to edit canonical owners.
+Phase E.1 — NEXT: productive-adequacy / revision pass on what qualifies retained organization O before any v0.2 pilot. Do not tune v0.1 into success.
+
+Phase F — canonical reassessment: HOLD. The null produced a programme-method revision but no owner-level reason to edit canonical ontology.
 
 ## 17. No-write zones for this programme stage
 
