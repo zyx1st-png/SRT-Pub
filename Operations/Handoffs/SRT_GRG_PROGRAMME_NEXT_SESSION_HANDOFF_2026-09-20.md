@@ -152,9 +152,23 @@ Phase D distributed-neighbor extraction Pass 1 is COMPLETE in:
 
 `Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
 
-NEXT = freeze one neutral relation, GRG-R1 retained-organization re-entry, in a bounded transfer-pilot charter; derive the neuroscience-native design changes before inspecting target results.
+The first bounded GRG-R1 neuroscience transfer pilot is COMPLETE.
 
-Do not reopen whole-package strongest-neighbor competition.
+Result:
+`Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md`
+
+~~~text
+verdict = PILOT-NULL
+eligible S = 12/12
+eligible D = 12/12
+median C_R = 0.000719 < 0.03
+median C_N = -0.152512 < 0.03
+decoder-defined context subspace as causal retained organization O = NOT SUPPORTED
+semantic drift = NO
+canonical edit = NO
+~~~
+
+NEXT = productive-adequacy / revision pass. Ask what source-native property should qualify O before transfer if decodability is insufficient. Do not tune v0.1 into success and do not reopen whole-package strongest-neighbor competition.
 
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -197,9 +211,11 @@ GRG-R1 != downward extra force
 GRG-R1 != universal Selection definition
 ~~~
 
-## 6. First transfer pilot gate
+## 6. First transfer pilot result and revision gate
 
 Do not open a new broad deep well.
+
+The v0.1 pilot is permanently NULL. Any future v0.2 requires a new visible charter and preregistration. The immediate task is not a rerun; it is to compare stronger pre-target O criteria from Bowler-style recurrent dynamical mediation, synergetic order-parameter logic and Simondonian operation-structure recurrence.
 
 Preferred first bounded pilot remains an existing neuroscience surface, likely lateral inhibition / recurrent-history / objectification, because it can test whether GRG changes a domain question before result inspection.
 
