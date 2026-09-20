@@ -27,7 +27,7 @@ dependency: [SRT-NEURO-MECH-001]
 - Depends on: `SRT-NEURO-MECH-001`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
 - Used by: neuroscience compact core, consciousness-window discussion, and cross-domain consciousness comparisons.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of mechanism boundaries.
-- Do not change: Threshold logic, d / `Ψ_f` dependencies, or consciousness-mechanism framing in ways that conflict with upstream canonical anchors.
+- Do not change: Candidate gate models, d / `Ψ_f` evidence relations, or consciousness-research framing in ways that conflict with upstream canonical anchors; none is a universal admission rule.
 
 ## Terminology Alignment (术语与原始意图对齐)
 
@@ -38,9 +38,9 @@ dependency: [SRT-NEURO-MECH-001]
 ## Current Reading Map
 
 - **Canonical dependencies**: `SRT-NEURO-MECH-001` (`SRT_Neural_Mechanisms.md`), `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
-- **Primary SRT claims in this file**: Ignition candidate gate (Ax-CONSC-MECH-1); re-entrant selection axiom; binding as attractor stabilization; sleep as deselection / L2 writeback; consciousness-window threshold claims.
+- **Primary SRT claims in this file**: Ignition/report candidate model (Ax-CONSC-MECH-1); re-entrant selection axiom; binding as attractor stabilization; sleep as deselection / L2 writeback; declared-model consciousness-window evidence hypotheses.
 - **Bridge/interface sections in this file (Part B)**: Comparisons with GWT (Dehaene/Changeux), IIT, higher-order theories, and binding debate. These sections are **future Annex extraction candidates** for PR-B (Neuroscience_Annex/). Do not move them in this PR.
-- **Do not move in this PR**: All Ax-CONSC-MECH-* axioms; ignition gate formula; `d`/`Ψ_f` threshold dependencies; consciousness-window minimum criteria.
+- **Do not move in this PR**: All Ax-CONSC-MECH-* identifiers; ignition candidate formula; `d`/`Ψ_f` evidence relations; consciousness-window candidate coordinates.
 
 ## Dependency Map
 
@@ -75,7 +75,7 @@ dependency: [SRT-NEURO-MECH-001]
 \mathcal{A}(\sigma)\ge \tau_{ignite}\quad\land\quad \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
 * **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好，不是已证明的神经定理；加法门与概率门仍是可用替代模型。
-* **Implication（中文）**：点燃不是“更强激活”，而是候选内容在整合度 proxy 与关切梯度 proxy 的共同约束下被稳定选入。本文不把该条件写成“当且仅当”。
+* **Implication（中文）**：该式只建模候选内容在整合度 proxy 与关切梯度 proxy 下的稳定与报告读数。本文不把该条件写成“当且仅当”，也不由点燃、整合、`d` 或 `Ψ_f` 准入意识；精确充分性保持 OPEN。
 
 ---
 
@@ -289,7 +289,7 @@ D_{align}\downarrow \Rightarrow P(\text{report})\downarrow
 
 # Part B: Original Theoretical Discourse (Context)
 
-> **Note**: 以下各节以中文撰写，为 Part A 形式化公理提供理论语境、哲学论证和研究方向。
+> **Historical / superseded reading guard**: 以下各节保留早期理论语境、比较与研究方向。其中任何未限定的意识 / phenomenality / subjecthood 等同、必要性、充分性、门槛或缺席判定均不是当前 SRT 结论。可复用内容最多是声明模型中的候选证据；精确充分性保持 OPEN。
 
 ---
 
@@ -428,7 +428,7 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 同时需要边界约束，避免术语外推过度：
 
 - **约束 B1（术语分层）**：对单细胞/组织层的 “sentience/experience” 仅按功能性 valence 调节解释，不直接等同于可报告主观体验。
-- **约束 B2（阈值分层）**：将“基础生命调节”与“现象意识”区分为不同 \(d\) 区间；可报告意识仍需满足全局整合与递归稳定条件（如 \(d \ge d_{UAL}\)）。
+- **约束 B2（候选坐标分层）**：基础生命调节与现象意识不可由同一 `d` 轴直接等同；全局整合、递归稳定与 \(d \ge d_{UAL}\) 只可作为声明模型中的可报告意识候选证据，不是 universal gate。
 - **约束 B3（证据分层）**：当前文献主要提供框架级整合与跨研究证据，不应被表述为单一决定性实验结论。
 
 ## 2.7 意识状态转移驱动补丁（Frontiers 2026）
@@ -604,7 +604,7 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 
 **算子短路**: $L_0^{cue} \xrightarrow{\text{直接}} L_2^{habit}$（屏蔽 $\hat{G}_\theta$）
 
-当 $L_2^{habit}$ 足够强且 $\hat{G}_\theta$ 注意力不足时，行为可以**架空意识选择**。
+当 $L_2^{habit}$ 足够强且 $\hat{G}_\theta$ 注意力不足时，行为可在该模型中绕开显性报告／反思性选择路径；这不决定 consciousness 是否存在。
 
 这解释了为什么：
 

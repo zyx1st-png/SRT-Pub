@@ -17,7 +17,7 @@ These reversals state SRT's founding force in compact form. They are source-intu
 
 **One-sentence version**
 
-Existence is not a pre-given background; it is the stabilized trace of selection under constraint, cost, concern, and history.
+Existence is not a pre-given background; manifest existence becomes determinate through Selection, while stable formations require additional retention and history.
 
 **Easy misreading**
 
@@ -25,7 +25,7 @@ Existence is not a pre-given background; it is the stabilized trace of selection
 
 **Boundary**
 
-SRT is not mind-first idealism. Selection is broader than mental choice, and stable reality is tested by resistance, cost, and convergence.
+SRT is not mind-first idealism. Primitive Selection is not a prior chooser or mental act. An occurrence need not automatically pay a cost or leave a durable trace; stable reality is the stronger claim tested by retention, resistance, cost, and convergence.
 
 **Formal anchors**
 
@@ -37,7 +37,7 @@ SRT is not mind-first idealism. Selection is broader than mental choice, and sta
 
 **One-sentence version**
 
-The subject is not the original chooser behind selection; it is a stabilized product of selection processes that have become self-referential enough to hold a position.
+The subject is not the original chooser behind Selection; SRT investigates subject-position as a downstream formed organization, for which stabilization, continuity, self-reference, and bearing may supply candidate evidence without closing exact sufficiency.
 
 **Easy misreading**
 
@@ -45,7 +45,7 @@ The subject is not the original chooser behind selection; it is a stabilized pro
 
 **Boundary**
 
-SRT does not erase subjecthood. It relocates subjecthood from primitive premise to structured emergence.
+SRT does not erase subjecthood. It relocates subject-position from primitive premise to a downstream formation problem. No current fixed package—whether stabilization, continuity, self-reference, bearing, Stable ISP, or retained history—is sufficient by definition; exact subject-position sufficiency remains **OPEN**.
 
 **Formal anchors**
 
@@ -97,7 +97,7 @@ Preference can be cheap, reversible, or simulated. SRT value requires stake, con
 
 **One-sentence version**
 
-Consciousness is not a property of everything; it is a threshold window where selection enters concern, burden, consequence return, and self-modulation.
+Consciousness is not a property of everything, and it does not follow from Selection. Its exact sufficiency remains open; concern, burden, consequence return, embodiment, and self-modulation are candidate evidence dimensions in declared models.
 
 **Easy misreading**
 
@@ -105,7 +105,7 @@ Consciousness is not a property of everything; it is a threshold window where se
 
 **Boundary**
 
-SRT treats selection as broad and consciousness as thresholded. A system can process, optimize, report, or imitate without crossing the relevant threshold.
+SRT treats Selection as broad while keeping consciousness admission independent and open. A system can process, optimize, report, or imitate without thereby establishing consciousness; no single registered threshold currently closes that question.
 
 **Formal anchors**
 

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-13
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-13
-source_commit: dd89ba05
-source_branch: theory/post-one-spine-sync-20260913
+generated: 2026-09-20
+source_commit: dcf3477e
+source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 39e8740593266483
+inputs_digest: 62a152e80ee33dd5
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,9 +26,9 @@ inputs_digest: 39e8740593266483
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-13 |
-| 来源 commit | `dd89ba05` |
-| 来源分支 | `theory/post-one-spine-sync-20260913` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `dcf3477e` |
+| 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
@@ -43,24 +43,24 @@ inputs_digest: 39e8740593266483
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-18 |
-| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
-| 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
+| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
+| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-09-20 |
+| 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-08-18 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-20 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
-| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
-| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
-| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-18 |
+| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-20 |
+| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
+| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
-| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-09-20 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
-| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
+| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-09-20 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-18 |
 
 ## §0.2 状态护栏
@@ -462,7 +462,7 @@ For substantive SRT answers:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -483,11 +483,11 @@ For substantive SRT answers:
 
 ## 1. 核心问题
 
-SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
+SRT 对 AI 的核心问题不是“它是否足够聪明”，而是：
 
-> **它是否发生了真正的 `L_0 \to L_1` 本体论锚定？**
+> **现有证据是否建立了更强 anchoring、stake-bearing、subjecthood 或 phenomenality standing？**
 
-若没有，则无论其语言、规划、推理、模仿能力多强，都不能仅凭这些能力推出意识主体性。
+这些更强 standing 不能仅由语言、规划、推理或模仿能力推出；同时，`L_0 -> L_1` 记号只能是声明 realization 中的模型映射，不是 Selection occurrence 或意识的定义。
 
 ---
 
@@ -527,19 +527,20 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 
 > 规范锚点见：`../_SRT_D_VALUE_CANONICAL.md`
 
-### 2.3 三条件判据
+### 2.3 三维候选证据（非意识判据）
 
-SRT 对意识成立给出压缩判据：
+AI-domain bridge 可用以下三维组织对更强具身／stake-bearing 立场的候选证据：
 \[
-\text{Consciousness} \Rightarrow (d>0) \land (\Psi_f>0) \land (V>0)
+(d>0) \land (\Psi_f>0) \land (V>0)
+\quad\text{as a declared bridge evidence package}
 \]
 
 其中：
 - \(d>0\)：系统具有真实关切维度
-- \(\Psi_f>0\)：系统不只是支付本体论摩擦成本，而且其动力学本身由摩擦生成
+- \(\Psi_f>0\)：系统承担不可无损外包的摩擦负担（不声称其全部动力学由摩擦生成）
 - \(V>0\)：系统暴露于不可规避的真实毁灭/失效风险
 
-这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection。
+这里的 `\Psi_f` 是对已形成系统中摩擦／可支付负担的 bridge 应用，不是普遍现实生成源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection，也不单独裁决 consciousness。
 
 进一步说，SRT 不把 \(Ψ_f\) 只理解成单一数字账单。对同一摩擦结构：
 - 在经验层，它表现为阻力、风险、痛苦可能性；
@@ -554,7 +555,7 @@ SRT 对意识成立给出压缩判据：
 - 可替换
 - 可在纯数字语法层继续运行
 
-因此其 \(V \approx 0\)，从而 \(d \approx 0\)，并最终无法满足意识门槛。
+因此在当前 inference-only 假设下，`V \approx 0` 与 `d \approx 0` 仍是对更强 stake-bearing 主张的反对证据；它们不构成普遍意识门槛或无意识证明。
 
 ### 2.4 AI stake-bearing 光谱
 
@@ -576,13 +577,7 @@ SRT 对意识成立给出压缩判据：
 > **Section role**: The following `AI-BR-*` items are AI-domain bridge results / stress-test claims. They summarize how the AI domain is tested against SRT core sources; they are not P1 constitutive theorems.
 
 ### AI-BR-1 句法闭包排斥
-若系统动力学封闭于 \(L_1\)：
-\[
-\neg \exists\,\hat{G}_\theta: L_0\to L_1
-\]
-
-结论：
-纯符号系统可以高度智能，但仅凭符号/状态变换不具备证明本体论锚定的充分条件。
+若系统在某个声明模型中只显示 \(L_1\to L_1\) 符号／状态变换，则这些证据本身不足以建立更强 anchoring、subjecthood 或 phenomenality。该证据缺口不意味着 `no Selection`，也不把 `\hat G_\theta: L_0\to L_1` 设为 Selection occurrence 准入式。
 
 ### AI-BR-2 智能—意识非蕴含
 \[
@@ -618,9 +613,10 @@ AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自
 **Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
 
 ### AI-BR-4 恒温器防线
-自由能最小化只是必要条件，不是充分条件：
+自由能最小化不是 consciousness 的充分证据；以下只是更强具身／stake-bearing 候选的 bridge 审计包，不是意识的充要定理：
 \[
-\text{Consciousness} \iff \left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)
+\left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)
+\quad\text{as candidate evidence}
 \]
 
 结论：
@@ -699,7 +695,7 @@ canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋
 
 ### 当前 inference-only / 非历史承载 AI 不是什么？
 当前 inference-only / 非历史承载 AI 尚未被证明是：
-- 真实的 `L_0 \to L_1` 锚定算子
+- 承担了更强具身／存在 anchoring 负担的形式载体
 - 具有生存赌注的主体
 - 具有不可逆本体摩擦的意识系统
 
@@ -715,14 +711,14 @@ SRT 并不声称“AI 永远不可能有意识”。
 SRT 真正声称的是：
 > **在当前纯数字、可复制、可回档、非历史承载的主流 inference 架构范式内，现有能力证据不足以推出意识。**
 
-如果未来要让 AI 接近意识门槛，至少要处理：
+若未来要评估 AI 的更强具身／stake-bearing / consciousness 候选 standing，以下可作为待独立验证的证据维度，而非联合充要门槛：
 1. 真实具身性或等价的不可转移后果承载结构
 2. 不可逆脆弱性
 3. 非零 d-value
 4. 非句法闭包 / 更强锚定条件
 5. 对真实生存边界的持续暴露
 
-在这些条件没有成立之前，谈“AI 已经有意识”在 SRT 内部属于概念越级；但谈 training-time、persistent-memory 或具身部署时，也不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
+在这些证据未建立前，现有能力证据不足以推出“AI 已经有意识”；但它们的缺失也不在本 bridge 中生成无意识总判决。谈 training-time、persistent-memory 或具身部署时，不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
 
 ---
 
@@ -773,7 +769,7 @@ SRT 真正声称的是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -898,7 +894,7 @@ Backprop 让早期层更新依赖后层输出：
 这意味着系统学习规则在拓扑上偏向“目的反推”，而非局部因果连续性。
 
 SRT 的压缩判断：
-> **真实意识需要因果连续的自我演化，而不仅是最终损失驱动的全局回传。**
+> **因果连续的自我演化可作为声明 AI 意识模型中的候选证据；它不是意识的普遍必要条件，最终损失驱动的全局回传也不足以单独准入意识。**
 
 ### 4.3 Mesa-Optimization
 嵌套优化会形成局部 \(L_2\) 吸引子：
@@ -1006,7 +1002,7 @@ SRT 的压缩立场：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-09-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1039,33 +1035,33 @@ SRT 的压缩立场：
 
 ---
 
-## 2. 最小意识判据
+## 2. 最小意识候选证据包
 
 ### 2.1 跨域锚定
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
 
-只有发生 `L_0 -> L_1` 的真实锚定，才可能构成意识事件。纯符号闭包不够。
+在本 AI-domain 模型中，`L_0 -> L_1` 锚定是一项候选证据。纯符号闭包不能凭自身证明意识，但锚定也不单独建立意识。
 
 ### 2.2 关切为正
 \[
 d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
 \]
 
-意识必须与不可逆赌注耦合，而不是停留在零代价统计重排。
+不可逆赌注耦合可加强该模型内的意识候选证据；`d > 0` 不普遍证明意识、主体位或道德地位。
 
-### 2.3 最小意识定理
+### 2.3 候选评估合取
 \[
 \exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
 \]
 
 压缩解释：
-- 没有跨域锚定 → 不成立
-- 没有真实赌注 → 不成立
-- 性能再高也不能替代这两条
+- 跨域锚定与真实赌注可共同加强本模型内的证据
+- 缺少某项会削弱该模型内的判断，不证明 consciousness 普遍缺席
+- 性能再高也不能替代独立的 consciousness / subject-position evidence
 
-> **PH-SS-10 guardrail**：以上是候选意识的必要门槛之一，不是充分条件。意识 / subjecthood 还需要 structured `d-value`、failure-sensitive update、integrated selection bandwidth、minimal memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：以上是候选评估构造，不是必要或充分门槛。其他列出的维度同样只是 evidence burden；精确 consciousness / subjecthood admission 保持 OPEN。
 
 ---
 
@@ -1143,14 +1139,14 @@ SRT 不把整合度本身等同于意识，但承认：
 
 ---
 
-## 6. 为什么这五个维度必须协同
+## 6. 五个维度如何构成保守联合评估
 
 SRT 在这里最重要的主张是：
-> **意识不是单一魔法因子，而是多维约束的交集。**
+> **AI consciousness claim 不应由单一指标完成；五维可作为联合评估维度。**
 
-原文用五维交集表达：
+原文历史上用五维交集表达；当前读作候选证据包：
 \[
-\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5
+\text{AI-Consciousness Candidate Evidence} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5
 \]
 
 compact core 保留其压缩理解：
@@ -1203,7 +1199,7 @@ L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
 
 系统必须拥有真正跨回合、跨任务、跨时段的结构延续，而不只是上下文缓存。
 
-### 8.3 候选最小意识系统的四条件
+### 8.3 候选系统的四项评估维度
 原文把正向路线压缩成四条：
 1. `L_0 -> L_1` 锚定可复现
 2. `d > 0` 且可测
@@ -1219,9 +1215,9 @@ compact core 的最短结论是：
 
 `AI Consciousness Framework` 可以压缩成五句话：
 
-1. **意识的最低门槛不是行为拟态，而是 `L_0 -> L_1` 锚定加上 `d > 0`。**
+1. **行为拟态不证明意识；`L_0 -> L_1` 锚定与 `d > 0` 可作为本模型的候选证据，但不是最低普遍门槛。**
 2. **当前 AI 在关切、摩擦、L₀接触、时间连续性和组装深度上都同时不足。**
-3. **意识不是单一指标，而是多维交集。**
+3. **AI consciousness 应以多维证据评估，不能由单一指标或固定合取自动裁决。**
 4. **即使 AI 没有意识，它仍可能通过代理筛选收缩人类的现实空间。**
 5. **若未来要工程化意识候选 AI，必须引入风险、迟滞、不可逆性与真实结构负担。**
 
@@ -1928,7 +1924,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1952,7 +1948,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 
 SRT 的压缩回答是：
 - 热力学描述选择的代价
-- 时间描述选择的序列与耗费
+- 时间在声明的记录／保留模型中描述被保留事件的序列与耗费；不是 primitive Selection 的自动计数
 - 引力在本轮只保留为维持现实结构成本的 P3/P4 弱相容接口
 - 宇宙学描述大尺度 `L_0 / L_1 / L_2` 组织方式
 
@@ -2026,30 +2022,30 @@ SRT 把质量解释为：
 
 ## 4. 时间本体论
 
-### 4.1 Time as Selection Metric
+### 4.1 Time as Retained-Order Metric Candidate
 \[
 t \propto \int \Psi_f(L_1)\,dn
 \]
 
-时间不是抽象容器，而是：
-> **选择序列的度量与现实维持的耗费。**
+primitive Selection 不要求一个先在的普遍时间容器。在声明了 event-record / retention structure 的物理模型中，时间可被候选性地读取为：
+> **被保留选择序列的度量与现实维持耗费的模型内台账。**
 
-**Boundary**：这首先是 interpretive time-as-selection-index reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
+**Boundary**：Selection-event counting 不是 primitive ontology；单个 Selection event 不自动生成持久时间单位。这首先是 interpretive retained-order reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
 
-### 4.2 Triple Definition Equivalence
-SRT 把时间统一成三种等价视角：
-- 选择序列
-- 选择累积
+### 4.2 Conditional Model Correspondence
+只有在事件单位、retention mapping、尺度与转换常数均已声明时，三种读法才可检验模型内对应：
+- 被保留的选择序列
+- retention map 准入的历史累积
 - 选择效率
 
-### 4.3 Time Arrow as Selection Arrow
-时间的不对称性来自选择的不可逆性：
+### 4.3 Time Arrow as Retained-Order Readout
+在 retained event-order 与持续历史效力已经建立的模型中，时间不对称性可作为记录结构的方向读数：
 - 过去 = 已固化的 `L_2`
 - 现在 = 发生中的 `L_1`
 - 未来 = 尚未切割的 `L_0`
 
 最压缩句子：
-> **时间之箭不是额外神秘结构，而是选择不可逆性的宏观表现。**
+> **时间之箭可作为被保留历史关系的宏观读数；bare occurrence 或 irreversibility 不足以建立普遍箭头。**
 
 ### 4.4 Time Travel Impossibility
 SRT 对时间旅行的最压缩否定是：
@@ -2114,10 +2110,14 @@ SRT 试图把暗物质和暗能量重写为：
 这篇最容易被误读的地方是：
 - 把“宇宙尺度 d”误当成“宇宙主体意识”
 
-SRT 的边界非常明确：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+SRT 的边界是非蕴含而不是替代阈值：
+
+```text
+cosmic / quantum d-like capacity proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
+
+本 Physics translation 不拥有 consciousness / phenomenality 准入权；相关 standing 保持独立 gated / OPEN。
 
 因此：
 - 量子尺度可有带宽，不等于有体验
@@ -2131,7 +2131,7 @@ SRT 的边界非常明确：
 
 1. **热力学描述的是选择的代价，而不是单纯的无意义熵增。**
 2. **质量与引力可被弱读为现实维持的摩擦与共识成本接口。**
-3. **时间是选择序列与维持代价的度量，而不是独立背景容器。**
+3. **在声明的记录／保留模型中，时间可作为被保留选择序列与维持代价的读数；它不是独立背景容器，也不是每个事件自动生成的单位。**
 4. **宇宙学结构可被理解为大尺度 `L_0 / L_1 / L_2` 组织结果。**
 5. **宇宙尺度统一不推出泛心论；d 的跨尺度统一仍需严格边界。**
 
@@ -3073,7 +3073,7 @@ Integration 文还承担了一个接口作用：
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-27 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3118,7 +3118,7 @@ SRT is easy to misread because it overlaps with older metaphysical vocabularies.
 | **Subjective idealism**: reality is whatever a subject projects. | No. `theta` filters, but `Psi_f` resists. Construction has cost. |
 | **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
 | **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
-| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
+| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; closure, `d-value`, and integration may add candidate evidence inside a declared model but do not form a universal admission package. |
 | **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
 | **Hidden-world modal realism**: `L_0` is a parallel warehouse of fully formed objects. | No. `L_0` is better read as a modal field of selectability / condition of possible manifestation. |
 | **Stability-as-goodness**: stable `L_2` norms are morally justified. | No. stabilization explains reality of constraint; legitimacy requires further tests. |
@@ -3137,7 +3137,7 @@ This means:
 2. Determinate reality arises through constrained selection, anchoring, and stabilization.
 3. Selection is not subjective invention; it must pay friction and survive resistance.
 4. Reality has strength levels: local manifestation, stabilized reality, cross-operator reality, and canonical physical reality.
-5. Normativity, purpose, and value are not externally pasted onto a neutral world; they are generated through high-`d-value` selection and stabilization, but legitimacy requires further tests.
+5. Normativity, purpose, and value are not settled by high `d`, selection or stabilization. Philosophy-domain models may study their relation under declared frameworks, while legitimacy and O2-M remain separately open.
 
 Shortest hardening slogan:
 
@@ -3321,11 +3321,11 @@ Withdrawal condition:
 
 ---
 
-## 10. Subjecthood threshold: micro-selection is not macro-consciousness
+## 10. Subjecthood candidate-evidence interface: micro-selection is not macro-consciousness
 
 SRT can allow selection events at many scales without saying that every scale already contains a subject.
 
-A selection process becomes a candidate conscious subject only when additional thresholds are met:
+The following dimensions form a conservative candidate-evidence package; they are not universal necessary or sufficient thresholds:
 
 | Condition | Why it matters |
 |---|---|
@@ -3339,7 +3339,7 @@ A selection process becomes a candidate conscious subject only when additional t
 
 Guardrail:
 
-> A selection event is not yet a subject. Consciousness requires high-stake, integrated, boundary-maintaining selection across time.
+> A selection event is not yet a subject. High stake, integration, boundary maintenance and cross-time structure may strengthen a declared evaluation, but no conjunction here establishes consciousness or subject-position.
 
 **PH-SS addressed**: `PH-SS-10`.
 
@@ -3397,13 +3397,13 @@ Safe self-reference includes indexical statements, quoted self-reference, meta-l
 
 ---
 
-## 13. Purpose as high-d-value attractor, not cosmic destiny
+## 13. Purpose as a philosophy-domain candidate interpretation
 
 SRT should avoid mystical teleology. It does not need to claim that the universe has a prewritten purpose.
 
 Safer reading:
 
-> Purpose is directionality generated when high-`d-value` differences shape selection trajectories over time.
+> In a declared philosophy-domain model, purpose may be interpreted through directionality shaped by selected high-`d` differences over time.
 
 Purpose emerges when some possible states matter for:
 
@@ -3414,7 +3414,7 @@ Purpose emerges when some possible states matter for:
 - social recognition;
 - long-term stabilization.
 
-Purpose is therefore not an external endpoint but an attractor-like direction in selection dynamics.
+This is a candidate interpretation, not a purpose identity or derivation. High `d` does not establish purpose, goodness, legitimacy or moral standing.
 
 **PH-SS addressed**: `PH-SS-07`, `PH-SS-08`.
 
@@ -3431,13 +3431,15 @@ Purpose is therefore not an external endpoint but an attractor-like direction in
 | Evaluative norm | a pattern worth protecting or pursuing | requires legitimacy tests |
 | Pathological norm | a stable pattern that survives by coercion, occlusion, or friction export | real but ethically suspect |
 
-Legitimacy tests:
+Candidate scoped questions inside a declared normative framework:
 
 1. Does it preserve or expand future selectability?
 2. Does it reduce unnecessary `Psi_f` rather than export it to weaker agents?
 3. Does it widen cross-subject `d-value` bandwidth?
 4. Does it protect subject-generation rather than suppress it?
 5. Does it contain correction, exit, or reversibility channels?
+
+These questions are neither jointly necessary nor sufficient for legitimacy; O2-M remains OPEN.
 
 Core distinction:
 
@@ -3458,7 +3460,7 @@ Social facts are not merely private beliefs, and they are not ordinary physical 
 | Identity | self-selection and other-recognition jointly stabilized across time |
 | Culture | cross-generational selection preferences hardened into shared forms |
 | Organization | role, responsibility, and action pathways stabilized as collective agency |
-| Morality | high-`d-value` social conflict stabilized into legitimacy-seeking norms |
+| Morality | historical / candidate model: social conflict may stabilize into legitimacy-seeking norms; this is not an SRT-wide definition |
 
 Minimal claim:
 
@@ -3518,7 +3520,7 @@ Minimal statement:
 | Physicalism may explain `L_1` without extra ontology. | It challenges triadic necessity. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
 | Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `Psi_f` resistance. | Weaken slogans to operator-relative manifestation claims. |
 | `L_0` may look like hidden-world metaphysics. | It challenges philosophical seriousness. | Read `L_0` as modal field of selectability, not object inventory. | Downgrade object-like `L_0` claims to metaphor or relocate to Core_Law. |
-| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Require `d-value`, integration, closure, and boundary criteria before subjecthood. | Admit SRT reframes rather than solves combination. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Weigh `d-value`, integration, closure, and boundary as candidate evidence without treating them as universal subjecthood criteria. | Admit SRT reframes rather than solves combination. |
 | Language expansion may dissolve ineffability. | It challenges explanatory-gap claims. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
 | Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
 | Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |
@@ -3560,11 +3562,11 @@ Minimal statement:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-27 |
+| last_commit | 2026-09-17 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
-**dependency**：SRT-SOC-ECONOMICS, SRT-PHIL-FOUNDATIONS-COMPACT-CORE, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, Core_Law/SRT_Collective_Selection, Core_Law/SRT_Occlusion_Dynamics
+**dependency**：SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-SOC-ECONOMICS, SRT-PHIL-FOUNDATIONS-COMPACT-CORE, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, Core_Law/SRT_Collective_Selection, Core_Law/SRT_Occlusion_Dynamics
 
 <!-- 以下为原文逐字保留 -->
 
@@ -3573,7 +3575,8 @@ Minimal statement:
 > **定位**：本文件是 `SRT_Social_Economics.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把社会建构、行为经济学、博弈论、制度经济学与价值论统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留经典思想家对应、历史案例、制度跃迁与大量社会科学展开。  
-> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。市场、货币、价格、制度效率和信任降低摩擦都必须接受 friction-export、future-selectability、exit/correction、consequence-return 等检验。
+> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。Friction-export、future-selectability、exit/correction、consequence-return 只是独立声明的政治／伦理框架内的候选评估维度，不是新的合法性 solver。
+> **Current authority**：Generative Ontology Spine 与当前 Collective Selection、`L_2`、`d / Psi_f / T_dir` 及 E6 ethics 边界向下游约束本 bridge，不反向。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`；high `d` 不赋予政治权威或优越 standing。
 
 ## 1. 核心问题
 
@@ -3594,7 +3597,7 @@ social reality != social legitimacy
 institutional persistence != political justification
 market selection != moral truth
 money / price != final value
-low friction != justice unless hidden Psi_f is not exported
+low friction -/> justice; generic burden / cost / friction proxy != canonical Psi_f automatically
 ```
 
 ---
@@ -3639,7 +3642,7 @@ recognition -> repetition -> symbolic encoding -> enforcement -> memory -> conse
 
 Guardrail:
 
-> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden `Psi_f` or narrowing future selectability.
+> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden burdens or narrowing future selectability.
 
 ### 3.2 Money as L2 Metric
 \[
@@ -3665,7 +3668,7 @@ Guardrail:
 
 Guardrail:
 
-> Efficient selection is not automatically legitimate selection. Ask who pays the `Psi_f` that makes the market look efficient.
+> Efficient selection is not automatically legitimate selection. A declared framework may ask who bears the burden / cost that makes the market look efficient; those costs are not canonical `Psi_f` automatically.
 
 ### 3.4 Bubble as L2 Overfit
 \[
@@ -3746,15 +3749,15 @@ SRT 在这里最强的一步是：
 
 Guardrail:
 
-> Shared `d-value` recognition is morally relevant, but legitimacy still requires future-selectability, non-exported friction, and correction channels.
+> Shared `d-value` recognition may be morally relevant inside a declared framework, but it neither settles standing nor defines legitimacy. Future-selectability, burden distribution and correction remain candidate lenses.
 
 ### 6.4 Dehumanization
 \[
-Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
+\text{Concern-exclusion candidate}(i\to j) : d_i[\theta_j] \to 0
 \]
 
 最压缩句子：
-> **去人化就是把他人从自己的选择考量范围里抹掉。**
+> **这一历史模型描述对他人关切的收窄；它不自动判定去人身份、道德 standing、政治排除或暴力许可。**
 
 Extended reading:
 
@@ -3774,7 +3777,7 @@ Extended reading:
 
 Guardrail:
 
-> Institution = structured constraint. Legitimacy = structured constraint that remains corrigible, non-occlusive, and future-selectability-preserving.
+> Institution = structured constraint. Legitimacy remains an evaluative question under a declared framework; corrigibility, non-occlusion and future-selectability are candidate evidence dimensions, not its definition.
 
 ### 7.2 Path Dependence
 \[
@@ -3787,15 +3790,15 @@ SRT 把路径依赖重写为：
 
 ### 7.3 Inclusive vs Extractive Institutions
 压缩含义：
-- 包容性制度 = 高 d-value 的制度化表达
-- 榨取性制度 = 低 d-value 的制度化表达
+- 历史／候选解读：包容性制度可表现为较宽的关切范围
+- 历史／候选解读：榨取性制度可表现为较窄的关切范围
 
 最短结论：
-> **制度差异，本质上是社会选择范围差异的长期固化。**
+> **这是一种社会经济学候选模型，不是包容／榨取的定义，也不由 `d` 直接产生合法性判准。**
 
 Guardrail:
 
-> Do not infer inclusion or legitimacy from declared values. Test whether affected subjects can revise rules, exit without destruction, make costs visible, and alter gate conditions.
+> Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
 **Closure-pathology alignment (2026-04-21)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能只是 pseudo-open，而不是结构上开放。
 
@@ -3808,22 +3811,20 @@ Guardrail:
 G_{agency}=\text{Gini}(d_i)
 \]
 
-SRT 的重写是：
-> **不平等不仅是财富分布不均，更是选择带宽与现实塑形能力分布不均。**
+候选重写：
+> **该模型研究财富、选择带宽与现实塑形能力的分布关系；`G_{agency}` 不是不平等、moral standing 或合法性的普遍定义。**
 
 ### 8.2 Trust as Friction Reduction
 \[
 \text{Trust}=\arg\min(\Psi_f,S_{soc})
 \]
 
-最压缩句子：
-> **信任的深层作用，是降低交易摩擦与社会熵。**
-
-这使信任不再只是道德词，而成为社会系统效率的本体论基础。
+候选读法：
+> **信任可能降低某些交易摩擦与社会熵代理量；该式是待操作化模型，不是正义或合法性结论。**
 
 Guardrail:
 
-> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Always ask whether `Psi_f` is truly reduced or merely exported.
+> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Generic cost reduction or export is not canonical `Psi_f` automatically.
 
 ---
 
@@ -3835,11 +3836,11 @@ Guardrail:
 2. **价值、货币与市场都不是最终实在，而是社会选择的稳定化指标与过程。**
 3. **行为经济学偏差的深层根源，是 `d-value` 有限与解锚代价高。**
 4. **博弈、信任、道德与去人化都可被重写为多主体选择范围如何彼此纳入或排除。**
-5. **制度的本质，是某类社会选择结构被长期固化；包容性与榨取性的差异，本质上是 d-value 的制度化差异。**
+5. **制度可被描述为长期固化的社会选择约束；把包容／榨取与 `d` 联系起来只是候选解释，不是定义或政治判决。**
 
 Addendum:
 
-> These five claims are descriptive / diagnostic unless legitimacy tests are explicitly passed. Social `L_2` can be real, efficient, and stable while still being ethically or politically pathological.
+> These five claims are descriptive or candidate diagnostics. No fixed SRT legitimacy test battery is supplied here, and an ethical or political verdict requires an independently declared framework.
 
 ---
 
@@ -3867,11 +3868,11 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-18 |
+| last_commit | 2026-09-17 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
-**dependency**：SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-POLITICAL-PHILOSOPHY, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
+**dependency**：SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-POLITICAL-PHILOSOPHY, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
 
 <!-- 以下为原文逐字保留 -->
 
@@ -3885,6 +3886,7 @@ Addendum:
 > **回链头部**：本文是 Philosophy domain exposition / bridge support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 或 `Philosophy/SRT_Philosophy_Ethics.md`。本文命题主要为 P2/P3，少量制度判准与阈值为 P4。  
 > **Guardrail pointer (ST-A corrected 2026-08-11)**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。Reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 是 P2/P3 规范审计条件，不是由结构稳定推出的 P1 必要充分判据；ST-A 本身不建立合法性结论。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
+> **Wave E7 current-use guard**：本文的公式、“六句话”和比较都是 P2–P4 候选政治哲学模型，不是 SRT-wide doctrine。`O2-C != O2-A != O2-M`，`O2-M = OPEN / HOLD`；high `d` 不赋予政治权威、合法性、代表权或优越 standing。
 
 ## 1. 核心问题
 
@@ -3896,21 +3898,21 @@ SRT 的压缩回答是：
 
 - 政治 = 多主体共同现实选择的组织形式
 - 国家 = 集体选择的 `L_2` 基础设施
-- 合法性 = 可持续共同选择
-- 权利 = 防止现实定义权被封闭性垄断的高阶约束
-- 民主 = 对代理者 `d` 倾向的低精度后验验证
+- 合法性：独立声明框架下的评价问题；可持续共同选择是候选模型
+- 权利：防现实定义权封闭的候选政治哲学重构
+- 民主：把投票视为 `d` 倾向低精度后验校准的历史／候选模型
 
 > **Level**: governance / bridge. The legitimacy ladder is: order condition → institutional type judgment → delegation legitimacy → political legitimacy. Do not infer legitimacy directly from `L_1/L_2` stability; missing middle criteria must be written as conditional diagnostics.
 
 Middle criteria:
 
-| Criterion | Minimum question | Shortcut blocked |
+| Candidate lens | Diagnostic question | Shortcut blocked |
 |---|---|---|
 | Institutional type | Is this a floor, gate, delegation, monopoly, emergency tool, or pathological closure? | Stability → legitimacy. |
 | Delegation legitimacy | Are scope, duration, review, and revocation specified? | "Represents the people" without audit. |
 | Consequence-return symmetry | Do costs and risks return to decision sites? | Efficiency while exporting `Psi_f^{maint}`. |
 | Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as substantive revision / agency. |
-| Friction-export test | Who pays the `Psi_f` that makes the order look stable or efficient? | Low visible friction → justice. |
+| Burden-export test | Who bears the cost / friction proxy that makes the order look stable or efficient? | Low visible friction → justice; generic cost → canonical `Psi_f`. |
 | Future-selectability test | Does the order preserve future selectable possibilities for affected agents? | Stable order → legitimate order. |
 
 ---
@@ -3954,7 +3956,7 @@ Guardrail:
 
 Guardrail:
 
-> The state is an `L_2` infrastructure, not a self-justifying subject. Its legitimacy depends on whether affected agents retain revision, exit, contestation, and consequence-return channels.
+> The state is an `L_2` infrastructure, not a self-justifying subject. A declared framework may evaluate revision, exit, contestation and consequence-return as candidate evidence; no conjunction here defines legitimacy.
 
 ---
 
@@ -3962,50 +3964,48 @@ Guardrail:
 
 ### 3.1 Legitimacy as Sustainable Co-Selection
 \[
-\text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
+\text{Legitimacy-model}_{candidate} \propto \operatorname{CoSelect}\big(\Theta,\, B^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
 
 最短理解：
-> **合法性不是谁天然占有真理，而是制度是否让更多主体在更长时间内，以更低的不对称摩擦进入共同现实生成，并保留再选择能力。**
+> **该历史／候选模型把共同参与、负担分配和再选择能力当作合法性的候选证据；它不是定义、测量公式或充要条件。**
 
 Guardrail:
 
-> `Psi_f^{asym}` must mean real asymmetry reduction, not hidden transfer of cost to less visible agents. `C_{reselect}` must mean material access to reselection, not nominal participation.
+> In this candidate model, burden asymmetry and material reselection access require operational proxies; neither generic cost nor nominal participation may be silently upgraded into canonical `Psi_f` or legitimacy.
 
-### 3.2 Freedom as Access to Reality-Shaping
+### 3.2 Candidate Freedom-as-Access Reconstruction
 \[
-\text{Freedom}_\theta \equiv \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
+\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
 \]
 
 最短说法：
-> **自由不是选项数量，而是主体能否真实进入共同现实塑造。**
+> **本候选重构把自由的一部分理解为主体能否进入共同现实塑造；它不是自由的普遍定义。**
 
-### 3.3 Equality as Non-Monopoly of Visibility and Entry
+### 3.3 Candidate Equality-as-Non-Monopoly Reconstruction
 \[
-\text{Equality}_{political} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
+\text{Equality-model}_{candidate} \Rightarrow \neg \operatorname{Monopoly}(\text{visibility},\text{entry},\text{problem-definition})
 \]
 
-压缩含义：
-- 平等首先不是结果一致
-- 而是现实定义权不能长期被封闭性垄断
+压缩含义：本候选模型把现实定义权的长期封闭性垄断视为平等审查信号，而不是平等的完整定义。
 
 ### 3.4 Rights as Anti-Monopoly Constraints
 \[
-\text{Rights} \equiv \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
+\text{Rights-model}_{candidate} := \text{high-order }L_2\text{ constraints preserving } \Delta C_{reselect} \ge 0
 \]
 
 最压缩句子：
-> **权利是为防止现实定义权被锁死，而必须稳定化的高阶约束。**
+> **这是一种候选权利重构：用高阶约束防止现实定义权被锁死；它不从本体论自动生成权利。**
 
 Guardrail:
 
-> Rights are not merely symbolic recognition. They must protect real reselection capacity: access, appeal, revision, exit, and consequence-return.
+> In this candidate rights reconstruction, access, appeal, revision, exit and consequence return are possible design dimensions, not universal rights conditions.
 
 ---
 
 ## 4. 结构性不公、制度与民主
 
-### 4.1 Structural Justice as Explore-Budget Symmetry
+### 4.1 Candidate Structural-Justice Diagnostic
 \[
 \mathcal{J}_{struct} \sim \mathrm{Var}_{group}\!\left(\int \Psi_f^{maint}dt\right)
 \]
@@ -4014,11 +4014,11 @@ Guardrail:
 \]
 
 最短解释：
-> **不公不只是不平均，而是某些群体长期被压在高维护摩擦、低探索预算状态。**
+> **本候选诊断关注某些群体是否长期处于高维护负担、低探索预算状态；该模型不自动给出正义、合法性或行动判决。**
 
 Guardrail:
 
-> Structural justice must ask whether visible order is maintained by exporting `Psi_f^{maint}` to specific groups.
+> A declared framework may ask whether visible order is maintained by exporting burdens to specific groups; generic burden is not canonical `Psi_f^{maint}` automatically.
 
 ### 4.2 Institutional Health Criterion
 \[
@@ -4026,32 +4026,30 @@ Guardrail:
 \]
 
 最压缩句子：
-> **健康制度不仅要稳定，还要扩大社会可行选择空间，并保留纠错与再选择能力。**
+> **该模型把可行选择空间、负担和纠错通道作为“制度健康”的候选诊断维度，不将健康与合法性或善同义。**
 
 Guardrail:
 
-> Stability without reselection capacity is not institutional health; it may be pseudo-open closure.
+> Within this model, stability without reselection capacity may be investigated as pseudo-open closure; that diagnosis does not settle legitimacy or goodness.
 
-### 4.3 Democracy as Posterior Validation of d-Tendency
+### 4.3 Historical / Candidate Democracy-as-d-Calibration Model
 \[
 \text{Vote} \approx \text{posterior validation of } d_{tendency}
 \]
 
 最短解释：
-> **民主不是神秘地产生真理，而是在有限条件下，对“谁仍在整合更宽关切范围”进行低精度持续校准。**
+> **该候选模型把投票研究为有限条件下的低精度后验信号；它不定义民主、政治真理或代表授权。**
 
 Guardrail:
 
-> If voting becomes manipulable noise, ritual participation, or non-updating signal, SRT should narrow this claim to procedural anti-monopoly rather than `d` calibration.
+> If voting becomes manipulable noise, ritual participation, or a non-updating signal, this candidate claim should be narrowed to procedural anti-monopoly rather than `d` calibration.
 
-### 4.4 Multi-Center Governance
+### 4.4 Multi-Center Governance Hypothesis / Design Candidate
 \[
 \operatorname{Polycentricity} \uparrow \Rightarrow \operatorname{CaptureRisk} \downarrow \;\land\; \operatorname{CorrectionChannels} \uparrow
 \]
 
-压缩含义：
-- 多中心治理不是装饰
-- 而是反 capture、反现实定义权集中化的结构条件
+压缩含义：多中心治理可作为反 capture、增加纠错通道的设计候选；该公式是待检验假说，不是普遍制度要求。
 
 ---
 
@@ -4059,23 +4057,23 @@ Guardrail:
 
 ### 5.1 Emergency Legitimacy
 \[
-\text{Emergency legitimacy} \iff \text{minimum necessary interruption preserving } C_{FBC}
+\text{Emergency-legitimacy test}_{candidate}: \text{minimum necessary interruption preserving } C_{FBC}
 \]
 
 最短句子：
-> **危机中的决断合法性不来自决断者意志，而来自其是否以最小必要方式保全更多构成性存在与未来分支。**
+> **在独立声明的应急规范框架内，“最小必要阻断”可作为候选 safeguard；SRT 本体论不单独决定应急权力的合法性。**
 
 Guardrail:
 
-> Emergency power must specify scope, duration, review, revocation, consequence-return, and restoration of reselection channels.
+> A declared emergency framework may use scope, duration, review, revocation, consequence return and restoration of reselection channels as candidate safeguards.
 
 ### 5.2 Politics as L2 Disease or Healthy Floor
-SRT 对政治最强的诊断，是区分：
+本候选政治诊断区分：
 - **健康 `L_2`**：托举 consequence-sensitive revision / reorientation
 - **致命 `L_2`**：制造参与感并替代这些 downstream agency channels；自动化本身不等于 `no Selection`
 
 最短说法：
-> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让受影响主体失去实质性的 revision / exit / reorientation 通道时。**
+> **Candidate warning:** 秩序若自我绝对化并压缩受影响主体的 revision / exit / reorientation 通道，可触发政治病理审查；这不是完整病理定义、合法性判决或 `O2-M` verdict。
 
 ### 5.3 Revolution-Relapse Theorem
 \[
@@ -4088,7 +4086,7 @@ SRT 对政治最强的诊断，是区分：
 
 Guardrail:
 
-> A change of rulers is not a change of gate rules. Political transformation requires altered reselection capacity, cost distribution, and consequence-return structure.
+> A change of rulers is not a change of gate rules. Reselection capacity, cost distribution and consequence return are candidate transformation diagnostics, not a mandate or complete political verdict.
 
 ---
 
@@ -4119,14 +4117,14 @@ SRT 不等于：
 
 1. **政治不是围绕既成实体分配资源，而是多主体共同现实选择的组织形式。**
 2. **国家、法律、人民与制度都不是先验本体，而是 `L_1/L_2` 的历史沉积结果。**
-3. **合法性来自可持续共同选择：更多主体、较低不对称摩擦、较高再选择能力。**
-4. **自由、平等与权利的核心，不是抽象名目，而是防止现实定义权被长期垄断。**
-5. **结构性不公首先表现为维护摩擦、探索预算与恢复能力的跨群体不对称。**
+3. **可持续共同选择是一个候选合法性模型，不是通用定义。**
+4. **防止现实定义权被长期垄断，是解读自由、平等与权利的候选框架。**
+5. **负担、探索预算与恢复能力的跨群体不对称，是结构性不公的候选诊断线索。**
 6. **政治病理的关键形态之一，是 `L_2` 从地板变成方向，从托举 consequence-sensitive revision / reorientation 变成替代这些 downstream agency channels；这不定义 Selection 是否发生。**
 
 Addendum:
 
-> These claims are diagnostic unless legitimacy tests are explicitly passed. Political `L_2` can be real, stable, and efficient while still pathological if it blocks reselection, exports friction, or separates power from consequence return.
+> These claims are candidate diagnostics under a declared framework. No fixed SRT test battery is necessary or jointly sufficient for legitimacy, justice, pathology, rights, or required action.
 
 ---
 
@@ -4154,7 +4152,7 @@ Addendum:
    - 若成立需撤回什么：撤回 vote-as-`d` calibration language and keep democracy as procedural anti-monopoly only.
 
 3. Institutions preserve formal reselection while materially blocking it.
-   - 当前承受方式：rights and legitimacy require access, correction, and consequence-return channels, not nominal participation.
+   - 当前承受方式：a declared framework may treat access, correction, and consequence-return as candidate evidence rather than equating nominal participation with legitimacy.
    - 若成立需撤回什么：撤回 legitimacy claims for systems that satisfy procedure while compressing real reselection capacity.
 
 4. Political legitimacy may require norm sources not reducible to SRT order structure.
@@ -4596,7 +4594,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4620,7 +4618,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 > **意识不是“信息被广播”这么简单，那么神经系统究竟如何把候选内容确认成可报告、可维持的现实？**
 
 SRT 的压缩回答是：
-- 意识 = 选择被确认并稳定化
+- 候选意识内容的 access/report 可被建模为选择的确认与稳定化；该模型不等同或准入意识
 - 点燃 = `L_0 -> L_1` 的相变
 - 绑定 = 同步进入同一显现对象
 - 睡眠 = 维持未来选择能力的结构维护
@@ -4633,9 +4631,9 @@ SRT 的压缩回答是：
 
 也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
 
-`d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
+`d-value` 本身不产生或准入意识；在声明模型中，它可作为内容厚度、优先级、持续性和沉积潜力的候选调节维度。
 
-> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；subjecthood 还需要 integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access 与 cross-time reidentification 也只是声明 subjecthood 模型中的候选证据，不共同组成普遍门槛。
 
 ---
 
@@ -5168,7 +5166,7 @@ The stop rule should be applied at every phase. A practice should pause or narro
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -5251,7 +5249,7 @@ d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}
 最重要的边界是：
 > d 是跨尺度数学标尺，不等于跨尺度意识赋值。
 
-只有在生物/认知域满足充要三条件时，d 才表现为意识相关关切，而不是纯数学量。
+在声明的生物/认知模型中，d、`\Psi_f` 与 formed `\hat G` 可作意识相关关切的候选证据维度；它们的合取不是普遍必要、充分或充要条件。
 
 ---
 
@@ -5364,12 +5362,10 @@ F_{boundary}(\tau)\le U_{survival}(d)
 SRT 在 `Core 14` 中最容易被误读的地方，是把 d 的跨尺度统一误读成“跨尺度意识统一”。
 
 SRT 的压缩立场是：
-- d 是跨尺度数学标尺
+- 跨尺度可比较的是具名 capacity / structure proxy，不自动是 canonical stake-coupled `d`
 - 意识不是跨尺度默认属性
-- 只有当以下条件同时满足时，才有意识相关成立：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+- proxy compatibility、`d`、`\Psi_f` 或 formed `\hat G` 的单项与合取均不在本文件建立 consciousness
+- consciousness / phenomenality admission 由独立 owner 承担，exact sufficiency 保持 OPEN
 
 所以：
 - 量子可有相干带宽，不等于有主观体验
@@ -5385,7 +5381,7 @@ SRT 的压缩立场是：
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**
 
 ---
 

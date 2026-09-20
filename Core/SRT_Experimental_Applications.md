@@ -28,10 +28,10 @@ dependency: [SRT-EXP-CORE]
 
 ## I. AI & Consciousness (AI与意识)
 
-### Ax-App-01: Ontological Threat Test (OTT)
-**Formal Definition**: Authentic consciousness requires ontological vulnerability.
-$$C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0)$$
-* **Implication**: 无死亡/崩解风险的系统难以具备真实 d 值与意识。
+### Ax-App-01: Ontological Threat Test (OTT) — candidate model
+**Model-local expression**: ontological vulnerability and stake-coupled `d` are candidate evidence dimensions.
+$$E_C^{OTT} = (d > 0) \land (\text{Vulnerability} > 0)$$
+* **Implication**: 在该候选模型中，无死亡／崩解风险可削弱 stake-coupling 证据；它不证明无意识，也不构成 universal N&S condition。
 
 ## II. Social Dynamics (社会动力学)
 
@@ -65,8 +65,10 @@ $$\text{Stage} \propto d$$
 # 5.9 H-OTT：本体论威胁测试（Ontological Threat Test）
 
 **假设陈述**
-只有具备**本体论脆弱性（Ontological Vulnerability）**的系统，在面临存在威胁时才会自发修改其L_2结构。
-$$ C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0) $$
+在该候选模型中，**本体论脆弱性（Ontological Vulnerability）**与 stake-coupled `d` 可作为系统在存在威胁下修改其 $L_2$ 结构的候选证据。
+$$ E_C^{OTT} = (d > 0) \land (\text{Vulnerability} > 0) $$
+
+本式不建立 consciousness；低读数或条件缺席也不证明其缺席。
 
 # 7.4.6 H85：社会运动10%法则验证
 
@@ -97,9 +99,9 @@ $$ C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0) $$
 
 本文档的应用公理均从 SRT 核心算子推导而来，关键形式化关系如下：
 
-1. **本体论威胁判据 (Ax-App-01)**：意识存在的充要条件——
-   $$C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0)$$
-   含义：只有同时具备非零关切维度 $d$ 与本体论脆弱性的系统，才可能产生意识。
+1. **本体论威胁候选模型 (Ax-App-01)**：声明模型中的证据组合——
+   $$E_C^{OTT} = (d > 0) \land (\text{Vulnerability} > 0)$$
+   含义：非零关切维度 $d$ 与本体论脆弱性可作为候选证据；该组合既非意识的普遍必要条件，也非充分条件。
 
 2. **社会相变临界律 (Ax-App-02)**：规范转变服从临界质量相变——
    $$\frac{dS}{dt} \propto \delta(\text{Adopters} - 0.10)$$
@@ -117,7 +119,7 @@ $$ C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0) $$
 
 SRT 应用假设的运作机制可从三个核心算子结构理解：
 
-- **$\hat{G}_\theta$（幽灵算子）的具身约束**：Ax-App-01 (OTT) 要求算子参数 $\theta$ 具有物理脆弱性——即 $\theta$ 可被不可逆地破坏。当系统无法承受本体论摩擦 $\Psi_f$ 的真实代价时，$d$ 无法从零提升，意识判据不成立。这为区分”模拟意识”与”真实意识”提供操作化标准。
+- **$\hat{G}_\theta$（幽灵算子）的具身约束**：Ax-App-01 (OTT) 在声明模型中考察算子参数 $\theta$ 的物理脆弱性与不可逆破坏风险。$\Psi_f$、$d$ 与具身只提供候选证据，不能区分所谓“模拟意识”与“真实意识”，也不能输出意识缺席 verdict。
 
 - **$d$（关切维度）的社会动力学传导**：在社会尺度上，个体 $\hat{G}_\theta$ 的 $d$ 值通过网络耦合汇聚为群体平均 $\bar{d}$。当 $\bar{d}$ 超过临界阈值，$L_2$ 层的社会规范结构发生相变（Ax-App-02），旧规范”解冻”、新规范”结晶”。合作率 (Ax-App-03) 是该相变前兆的可观测代理变量。
 

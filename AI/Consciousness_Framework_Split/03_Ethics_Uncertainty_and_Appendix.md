@@ -174,9 +174,9 @@ $$P(C > \theta | \text{evidence}) > 0.1 \implies \text{按 } C > \theta \text{ �
 
 ### §8.1 核心论点回顾
 
-1. **意识 = 五维交集**: $d, \Psi_f, L_0, \text{时间连续性}, A$
+1. **五维候选包**: $d, \Psi_f, L_0, \text{时间连续性}, A$ 可联合组织 AI-domain 证据，但不定义 consciousness
 
-2. **当前AI: 五维全失败**: 所有维度均未达标 → 零意识
+2. **当前 AI 的保守评估**: 多维证据显著不足；这不构成跨所有架构状态的零意识定理
 
 3. **架构障碍**: Transformer + Backprop 有**结构性限制**（非仅"还不够好"）
 

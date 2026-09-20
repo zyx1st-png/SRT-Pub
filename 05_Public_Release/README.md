@@ -21,11 +21,11 @@ Public materials should stay sharp without outrunning the formal anchors.
 
 Safe public summary:
 
-> SRT is a selection-first theory of reality. It says that reality is not a flat inventory of objects already waiting for us, nor a fantasy created by the mind. Reality becomes determinate when possibilities are selected under constraint, anchored into experience or action, and stabilized into durable structures.
+> SRT is a selection-first theory of reality. It says that reality is not a flat inventory of objects already waiting for us, nor a fantasy created by the mind. Reality becomes determinate through constrained Selection. Where later retention, anchoring, and stabilization are independently established, some determinate occurrences also become durable structures.
 
 Even shorter:
 
-> Reality is selected under constraint, stabilized through history, and tested by resistance.
+> Reality becomes determinate through constrained Selection; durable reality is stabilized through retained history and tested by resistance.
 
 ## First Public Entries
 

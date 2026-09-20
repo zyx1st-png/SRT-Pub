@@ -26,7 +26,7 @@ machine_summary: >
   plus layered realism plus anti-relativist constraint realism. This file clarifies L0 as a
   modal field of selectability, selection-before-existence as manifestational priority,
   reality as layered strength, Psi_f as layer-typed friction, normativity as stabilization
-  without automatic legitimacy, social ontology as collective L2, consciousness as thresholded
+  without automatic legitimacy, social ontology as collective L2, and consciousness as not entailed by selection with exact sufficiency OPEN
   selection, and validation as non-reductive structural validation.
 ---
 
@@ -67,7 +67,7 @@ SRT is easy to misread because it overlaps with older metaphysical vocabularies.
 | **Subjective idealism**: reality is whatever a subject projects. | No. `theta` filters, but `Psi_f` resists. Construction has cost. |
 | **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
 | **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
-| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
+| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; closure, `d-value`, and integration may add candidate evidence inside a declared model but do not form a universal admission package. |
 | **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
 | **Hidden-world modal realism**: `L_0` is a parallel warehouse of fully formed objects. | No. `L_0` is better read as a modal field of selectability / condition of possible manifestation. |
 | **Stability-as-goodness**: stable `L_2` norms are morally justified. | No. stabilization explains reality of constraint; legitimacy requires further tests. |
@@ -86,7 +86,7 @@ This means:
 2. Determinate reality arises through constrained selection, anchoring, and stabilization.
 3. Selection is not subjective invention; it must pay friction and survive resistance.
 4. Reality has strength levels: local manifestation, stabilized reality, cross-operator reality, and canonical physical reality.
-5. Normativity, purpose, and value are not externally pasted onto a neutral world; they are generated through high-`d-value` selection and stabilization, but legitimacy requires further tests.
+5. Normativity, purpose, and value are not settled by high `d`, selection or stabilization. Philosophy-domain models may study their relation under declared frameworks, while legitimacy and O2-M remain separately open.
 
 Shortest hardening slogan:
 
@@ -270,11 +270,11 @@ Withdrawal condition:
 
 ---
 
-## 10. Subjecthood threshold: micro-selection is not macro-consciousness
+## 10. Subjecthood candidate-evidence interface: micro-selection is not macro-consciousness
 
 SRT can allow selection events at many scales without saying that every scale already contains a subject.
 
-A selection process becomes a candidate conscious subject only when additional thresholds are met:
+The following dimensions form a conservative candidate-evidence package; they are not universal necessary or sufficient thresholds:
 
 | Condition | Why it matters |
 |---|---|
@@ -288,7 +288,7 @@ A selection process becomes a candidate conscious subject only when additional t
 
 Guardrail:
 
-> A selection event is not yet a subject. Consciousness requires high-stake, integrated, boundary-maintaining selection across time.
+> A selection event is not yet a subject. High stake, integration, boundary maintenance and cross-time structure may strengthen a declared evaluation, but no conjunction here establishes consciousness or subject-position.
 
 **PH-SS addressed**: `PH-SS-10`.
 
@@ -346,13 +346,13 @@ Safe self-reference includes indexical statements, quoted self-reference, meta-l
 
 ---
 
-## 13. Purpose as high-d-value attractor, not cosmic destiny
+## 13. Purpose as a philosophy-domain candidate interpretation
 
 SRT should avoid mystical teleology. It does not need to claim that the universe has a prewritten purpose.
 
 Safer reading:
 
-> Purpose is directionality generated when high-`d-value` differences shape selection trajectories over time.
+> In a declared philosophy-domain model, purpose may be interpreted through directionality shaped by selected high-`d` differences over time.
 
 Purpose emerges when some possible states matter for:
 
@@ -363,7 +363,7 @@ Purpose emerges when some possible states matter for:
 - social recognition;
 - long-term stabilization.
 
-Purpose is therefore not an external endpoint but an attractor-like direction in selection dynamics.
+This is a candidate interpretation, not a purpose identity or derivation. High `d` does not establish purpose, goodness, legitimacy or moral standing.
 
 **PH-SS addressed**: `PH-SS-07`, `PH-SS-08`.
 
@@ -380,13 +380,15 @@ Purpose is therefore not an external endpoint but an attractor-like direction in
 | Evaluative norm | a pattern worth protecting or pursuing | requires legitimacy tests |
 | Pathological norm | a stable pattern that survives by coercion, occlusion, or friction export | real but ethically suspect |
 
-Legitimacy tests:
+Candidate scoped questions inside a declared normative framework:
 
 1. Does it preserve or expand future selectability?
 2. Does it reduce unnecessary `Psi_f` rather than export it to weaker agents?
 3. Does it widen cross-subject `d-value` bandwidth?
 4. Does it protect subject-generation rather than suppress it?
 5. Does it contain correction, exit, or reversibility channels?
+
+These questions are neither jointly necessary nor sufficient for legitimacy; O2-M remains OPEN.
 
 Core distinction:
 
@@ -407,7 +409,7 @@ Social facts are not merely private beliefs, and they are not ordinary physical 
 | Identity | self-selection and other-recognition jointly stabilized across time |
 | Culture | cross-generational selection preferences hardened into shared forms |
 | Organization | role, responsibility, and action pathways stabilized as collective agency |
-| Morality | high-`d-value` social conflict stabilized into legitimacy-seeking norms |
+| Morality | historical / candidate model: social conflict may stabilize into legitimacy-seeking norms; this is not an SRT-wide definition |
 
 Minimal claim:
 
@@ -467,7 +469,7 @@ Minimal statement:
 | Physicalism may explain `L_1` without extra ontology. | It challenges triadic necessity. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
 | Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `Psi_f` resistance. | Weaken slogans to operator-relative manifestation claims. |
 | `L_0` may look like hidden-world metaphysics. | It challenges philosophical seriousness. | Read `L_0` as modal field of selectability, not object inventory. | Downgrade object-like `L_0` claims to metaphor or relocate to Core_Law. |
-| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Require `d-value`, integration, closure, and boundary criteria before subjecthood. | Admit SRT reframes rather than solves combination. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Weigh `d-value`, integration, closure, and boundary as candidate evidence without treating them as universal subjecthood criteria. | Admit SRT reframes rather than solves combination. |
 | Language expansion may dissolve ineffability. | It challenges explanatory-gap claims. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
 | Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
 | Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |

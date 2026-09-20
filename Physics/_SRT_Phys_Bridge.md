@@ -162,14 +162,16 @@ $$ L_{classical} = \arg\min_{\sigma \in L_0} \Psi_f(\sigma) $$
 > **Level**: hypothesis / bridge. This is not derived from L0/L1 as a physics theorem.
 
 Current split:
-- **Interpretive selection-index reading**: time may be read as the ordinal / historical index of irreversible selection events. This is a bridge interpretation of selection priority.
-- **Physical discrete-time hypothesis**: a stronger claim would identify those indices with an actual Planck-scale discrete temporal substrate. The repo does not currently derive or specify that substrate.
+- **Declared retained-order bridge**: in a declared physical model where event records are retained and materially condition later states, H-Phys-2 may discretize that retained event-order as a historical index. This is a historical bridge hypothesis, not a consequence of primitive Selection.
+- **Physical discrete-time hypothesis**: a stronger claim would identify those model-local indices with an actual Planck-scale discrete temporal substrate. The repo does not currently derive or specify that substrate; physical discreteness remains an independent empirical hypothesis.
+
+Not every Selection event yields a durable time atom, and no universal `Selection event -> time unit` mapping is established.
 
 Candidate notation for the strong version:
 $$ t_n \equiv n \cdot \tau_{Planck} \quad \text{where } \tau_{Planck} = \sqrt{\frac{\hbar G}{c^5}} $$
 *   **Connection**: This uses Core Axiom A1 (Selection Priority) as interpretive support only; it does not turn Planck time into a derived SRT tick.
-*   **Phase Link (T-Phase-1)**: $v_{sub} = \dot{\phi}/\phi_0$ 将“选择节拍”与主观时间速率绑定。
-*   **Empirical boundary**: FERMI / LIV constraints bear on specified dispersion-producing discrete-spacetime models. H-Phys-2 has not specified such a dispersion model, so those constraints pressure strong physical discretization but do not directly test the interpretive selection-index reading.
+*   **Phase Link (T-Phase-1)**: in the strong declared model, $v_{sub} = \dot{\phi}/\phi_0$ may relate its retained-order ticks to a candidate subjective-time rate; this is not a primitive event/time identity.
+*   **Empirical boundary**: FERMI / LIV constraints bear on specified dispersion-producing discrete-spacetime models. H-Phys-2 has not specified such a dispersion model, so those constraints pressure strong physical discretization but do not directly test the declared retained-order bridge.
 
 ### T-Phys-3 [T1.4.3]: Conservation from Symmetry (Noether-SRT 守恒定理)
 Physical conservation laws are direct consequences of the symmetries of the $L_2$ structure—invariants under $\hat{G}$ operations.
@@ -294,7 +296,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 
 ### DP-PHYS-2：H-Phys-2 的经验压力
 
-**挑战来源**：H-Phys-2 把时间写成离散的选择序列 $t_n \equiv n \cdot \tau_{Planck}$，每个"时钟节拍"是一次选择事件。如果被升级为物理离散时空主张，它会获得潜在经验内容：离散时空可能对不同能量光子的传播速度产生频散效应。
+**挑战来源**：H-Phys-2 的强物理版本把已保留的事件次序写成 $t_n \equiv n \cdot \tau_{Planck}$ 的离散序列。如果它进一步声称这些模型内索引对应实在的普朗克尺度时钟节拍，就会获得潜在经验内容：某些离散时空模型可能对不同能量光子的传播速度产生频散效应。
 
 **经验状态**：FERMI/LAT 对 GRB 090510（Abdo et al., *Nature*, 462, 2009）的分析显示，不同能量的光子几乎同时到达，把线性洛伦兹不变性破坏系数约束到 $\xi_1 < 0.1$（普朗克单位）。后续 GRB 数据进一步收紧了这一限制。
 
@@ -302,8 +304,9 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 
 **当前 SRT 的诚实回答**：
 - H-Phys-2 没有指定具体的频散模型，因此无法直接被 FERMI 数据证伪
-- 更准确的读法：H-Phys-2 是 L₀ 第一命题（选择产生存在）在时间概念上的 bridge 投影——"每次不可撤回选择对应一个时间原子"。这是诠释性的，不是量子引力领域意义上的经验预测
-- 结论：H-Phys-2 保持 hypothesis / bridge 地位，不得回升为推导定理
+- 更准确的读法：H-Phys-2 是一个历史性 bridge hypothesis；它只在具名物理模型已经建立记录保留与后续效力时，尝试将 retained event-order 离散化
+- primitive Selection 不推出时间离散性；不是每次 Selection 都产生耐久的 time atom，也没有建立普遍的 `event -> time` 映射
+- 物理离散性、普朗克尺度时序与可检验频散仍是独立经验假说；H-Phys-2 保持 hypothesis / bridge 地位，不得回升为推导定理
 
 ---
 

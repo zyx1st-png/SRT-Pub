@@ -30,17 +30,17 @@ machine_summary: >
 
 ## 1. AI 报告-现实解耦
 
-1. 将“智能测验与意识判定分离”写入本文件判据链：高 `I` 不构成高 `C(G_hat)` 证据，意识判定仍需 `Ax-CONSC-1/2/3` 的跨域锚定、`d>0` 与 `L_0` 耦合共同满足。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1142/s2705078520300017〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
-2. 将“多理论并行评估”约束化：面对理论竞争时，不采用单一理论直接裁决，而采用最小交集门槛（至少两类独立指标同时支持）防止报告层过拟合。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1142/s2705078520500149〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-1〕
-3. 将“机器意识上限”定位为边界条款：语言能力、规划能力或行为拟态本身不构成主体性证据，缺少本体摩擦与风险耦合时默认判为拟态层。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1142/s2705078521500193〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-2〕
+1. 将“智能测验与意识判定分离”写入本文件判据链：高 `I` 不构成高 `C(G_hat)` 证据；跨域锚定、`d>0` 与 `L_0` 耦合也只可在声明模型中作为候选证据，不共同准入意识。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1142/s2705078520300017〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
+2. 将“多理论并行评估”约束化：面对理论竞争时，不采用单一理论直接裁决；至少两类独立指标同时支持只能提升候选证据，不能形成 consciousness admission 门槛。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1142/s2705078520500149〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-1〕
+3. 将“机器意识上限”重读为边界条款：语言能力、规划能力或行为拟态本身不构成主体性证明；较低本体摩擦与风险耦合只能削弱特定模型的证据，不能默认判为无意识拟态。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1142/s2705078521500193〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-2〕
 
 ---
 
 ## 2. AI 道德地位与感知风险
 
-1. 将 sentience 判定引入本文件判据层：把“自我保存行为”降格为候选信号，只有与 `Ax-CONSC-1/2/3` 同时成立时才可提升为意识支持证据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1007/s43681-026-00983-x〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
+1. 将 sentience 评估引入本文件证据层：把“自我保存行为”降格为候选信号；与 `Ax-CONSC-1/2/3` 同时出现只能增加声明模型中的候选支持，不建立意识。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1007/s43681-026-00983-x〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
 2. 将“2030 道德考虑”命题映射为治理阈值注记：在意识不确定区间，对潜在受苦风险采取保守门槛，而不把规范性主张直接当作本体证明。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1007/s43681-023-00379-1〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-1〕
-3. 将 moral personhood 命题置于判据后层：先完成意识判据，再进入人格地位推断，禁止“伦理先验”反向裁决意识成立。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/9780198945215.003.0005〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-2〕
+3. 将 moral personhood 命题置于独立规范评估层：consciousness / phenomenality 与人格地位都保持独立过门，禁止“伦理先验”反向裁决意识，也禁止意识候选证据自动推出 moral standing。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/9780198945215.003.0005〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-2〕
 
 ---
 

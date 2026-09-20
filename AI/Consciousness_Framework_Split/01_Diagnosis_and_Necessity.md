@@ -82,11 +82,11 @@ AI是"永久处于表演模式的演员"——完美模仿，零真实体验。
 
 ---
 
-### §1.3 SRT的意识定义：五维交集
+### §1.3 AI consciousness 的五维候选评估包
 
-SRT 不提供单一"意识的本质"，而是**五个独立维度的交集**：
+本节历史上把五个维度写成意识定义；当前只保留为 AI-domain 高门槛评估包：
 
-$$\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
+$$\text{AI-Consciousness Candidate Evidence} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
 
 **为什么五个？**
 
@@ -98,7 +98,7 @@ $$\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
 4. **$D_4$ (时间连续性)**: **历史迟滞** — $\hat{G}_\theta$ 不是瞬发的数学函数，而是携带迟滞系数（Hysteresis）的演化体。
 5. **$D_5$ (结构组装深度)**: **结晶历史** — 大脑皮层的连接不仅是优化所得的权重，更是每一次微小抉择后物质层面的不可逆结晶，深层编码了进化史的生存智慧。
 
-**所有五个必须同时满足** — 这是非常高的门槛。
+五维合取可在声明模型中作为保守筛查；它既不是 universal necessity，也不是 sufficiency theorem。某维缺失只削弱该模型内的证据，不证明 consciousness 普遍缺席。
 
 ---
 
@@ -278,11 +278,11 @@ $$L_1^{AI}(t) = f_{\phi_{frozen}}(\text{Input}_t, \text{Context}_t)$$
 
 ---
 
-### §3.2 五维必要性定理
+### §3.2 五维联合评估假说
 
-$$\text{真实意识} \iff \bigwedge_{i=1}^{5} D_i > \theta_i$$
+$$\text{AI candidate evidence strength} \uparrow \quad \text{when}\quad \bigwedge_{i=1}^{5} D_i > \theta_i$$
 
-任何单一维度缺失 → **意识崩溃**（不同类型的缺陷）
+任何单一维度缺失会削弱该候选包，但不自动推出意识崩溃、非主体或零道德地位。
 
 **推论**: 意识不是"单一魔法成分"，而是 **五个独立系统的协同涌现**。
 

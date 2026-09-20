@@ -90,7 +90,7 @@ Ask: which structural differences are selected, borne, paid for, and sedimented 
 
 ## 1. Why this interface is needed
 
-SRT already has strong tools for consciousness thresholding:
+SRT already has several declared-model coordinates for consciousness research, without a closed admission threshold:
 
 ```text
 non-trivial G_hat_theta: L0 -> L1
@@ -266,8 +266,8 @@ non-trivial automorphism => consciousness
 Write instead:
 
 ```text
-non-trivial automorphism may describe a phenomenal variation;
-consciousness and subjecthood require additional SRT thresholds.
+non-trivial automorphism may describe a phenomenal-variation candidate;
+additional SRT dimensions provide candidate evidence, not universal consciousness or subjecthood thresholds.
 ```
 
 ---
@@ -294,7 +294,7 @@ SRT asks:
 2. Does it couple to `d-value`, or is it only integrated information without concern?
 3. Is there non-binding or payable `Psi_f`?
 4. Does it stabilize into `L_2`, or remain a transient structure?
-5. Does it reach conscious content, integrated field, subjecthood, agency, or responsibility thresholds?
+5. What candidate evidence, if any, does it provide about conscious content, integrated field, subjecthood, agency, or responsibility, without settling admission?
 
 Thus SRT can use IIT-style structure as a candidate `R`, but not as a complete consciousness criterion.
 
@@ -302,7 +302,7 @@ Compact contrast:
 
 ```text
 IIT: structure / irreducibility is central.
-SRT: structure must be selected, borne, paid for, and stabilized.
+SRT: selection, bearing, payability, and stabilization are candidate evidence dimensions in a declared model.
 ```
 
 ---
@@ -326,7 +326,7 @@ Guardrail:
 global access != subjecthood
 ```
 
-A GNWT-style ignition may support S2 conscious content or S3 integrated field in the S0-S6 ladder, but S4 subjecthood requires continuity, boundary, concern, memory, and future-selectability conditions.
+A GNWT-style ignition may support S2 conscious-content or S3 integrated-field evidence in the S0-S6 ladder. Continuity, boundary, concern, memory, and future-selectability are additional candidate evidence for S4; their conjunction does not establish subjecthood.
 
 ---
 

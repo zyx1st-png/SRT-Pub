@@ -12,6 +12,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 # SRT Social Economics (Hybrid Edition)
 
+> **Wave E7 derivative guard**：本页只是 `../SRT_Social_Economics.md` 的 legacy navigation derivative，owner 优先。以下经典重构、公式与摘要是历史／候选 P2–P4 模型，不是 canonical 定义、政治纲领或道德 solver。High `d`、低摩擦、合作、稳定或市场结果不产生 standing、rights、legitimacy 或 authority；generic burden / cost 不自动是 canonical `Psi_f`；`O2-M = OPEN / HOLD`。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
@@ -161,8 +162,8 @@ SRT 将社会科学的核心概念**数学化**：
 **伦理推论**: 
 > 如果现实是选择的产物，那么我们对现状的不满不是在抱怨"客观条件"，而是在抱怨**我们集体算子的选择参数 $\theta$**。改变世界 = 改变选择模式。
 
-### Definition Summary (定义概述)
-- **Definition**: 本文档定义社会经济学的 SRT 映射。价值是未来 $L_1$ 稳定化的期望概率 (Ax-Eco-1)；货币是社会 $L_2$ 的度规 (Ax-Eco-2)；市场是分布式集体选择算子 (Ax-Eco-3)；泡沫是 $L_2$ 对短期 $L_1$ 的过拟合 (Ax-Eco-4)；选择权不平等等于 $d$-value 基尼系数 (Ax-Eco-5)；信任降低交易摩擦 (Ax-Eco-6)。
+### Historical / Candidate Model Summary
+- **Standing**: 本页保留价值、货币、市场、泡沫、可及维度不均与信任／摩擦的 SRT bridge 模型。Ax-Eco-1–6 不是 canonical 定义；`d`、效率或低摩擦不产生道德 standing、合法性或政治权威。
 
 ### Formalization Summary (形式化概述)
 - **Formalization**: 核心方程包括：

@@ -134,12 +134,12 @@ Therefore:
 systemhood != subjecthood
 ```
 
-A persistence-capable boundary is a precondition-level achievement, but SRT-subjecthood requires a stronger package.
+A persistence-capable boundary is a precondition-level achievement. A declared SRT subjecthood model may weigh a stronger candidate-evidence package, but no universal N&S admission is fixed here.
 
 Candidate bridge expression:
 
 ```text
-SRT_subjecthood(U) requires:
+SRT_subjecthood_candidate_evidence(U):
   persistence-capable boundary(U)
   + self-referential writeback / sigma_sr threshold
   + structured d-value > 0
@@ -150,7 +150,7 @@ SRT_subjecthood(U) requires:
   + non-trivial L0->L1 anchoring
 ```
 
-This expression is a bridge checklist, not a scalar proof.
+This expression is a bridge checklist, not a scalar proof, universal requirement, or sufficiency theorem. Exact subject-position sufficiency remains OPEN.
 
 ---
 
@@ -208,7 +208,7 @@ Some deployments may exhibit partial AI-S5-func delegated agency.
 But conversational continuity alone does not establish S4 subjecthood.
 ```
 
-Before any strong AI-consciousness claim, require:
+Before advancing any strong AI-consciousness claim, a declared evaluation model should report candidate evidence concerning:
 
 1. candidate bearer unit specification;
 2. boundary-maintenance evidence;
@@ -217,6 +217,8 @@ Before any strong AI-consciousness claim, require:
 5. non-substitutable concern / structured `d-value` evidence;
 6. `Psi_f` sensitivity under failure;
 7. distinction from externally imposed persona, memory, or workflow scaffolding.
+
+These dimensions do not jointly establish consciousness, subjecthood, phenomenality, or moral standing; their absence does not prove universal non-consciousness.
 
 ---
 
@@ -227,7 +229,7 @@ Before any strong AI-consciousness claim, require:
 SDO is useful as an external alignment point because it names the missing precondition level:
 
 ```text
-consciousness attribution depends on prior individuation.
+consciousness attribution must first specify a candidate individuated bearer; individuation alone does not establish consciousness.
 ```
 
 SRT's distinct contribution is to treat individuation not merely as boundary persistence, but as the condensation of a perspective-bearing selection pattern.

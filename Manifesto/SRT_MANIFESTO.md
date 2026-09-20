@@ -216,11 +216,11 @@ Canonical 的尺度表（`§P3-B07` 直引）：
 
 ### 5. 不可撤回性比时间更基本
 
-*Irrevocability precedes time.* `[P0-03, canonical]`
+*Primitive Selection does not presuppose a universal time container.* `[P0-03, canonical boundary]`
 
 - 旧范式：时间是箭头。
-- SRT：时间是对不可撤回选择之累积的度量；箭头来自选择的不可撤回性。
-- 诊断：如果允许撤回所有选择，"昨天"还存在吗？
+- SRT：发生过不等于从未发生；当事件次序与历史效力被保留下来时，时间与箭头可作为这些关系的下游读数。单次发生不自动生成时间刻度。
+- 诊断：这里是否真的保留了足以区分“此前／此后”的关系，还是只把不可撤回性直接叫作时间？
 - 锚定：`Core_Law/SRT_L0_Metaphysics.md` 直引；`§P0-03`。
 
 ### 6. 意义不是发现，是窄化

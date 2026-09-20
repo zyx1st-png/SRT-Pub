@@ -1,29 +1,31 @@
 ---
 id: SRT-CORE-PHASESTATE
-type: definition
+type: model
 tags: [PhaseState, HistoryClosure, NormativeGradient, SelfWriteback, Life, Consciousness]
-status: hardened_v1
+status: active
+version: phase_state_candidate_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-DS-11]
+epistemic_layer: bridge
+claim_mode: mixed
+canonical: false
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-D-VALUE-CANONICAL, SRT-CORE-13A, SRT-CORE-DS-11]
 hardened: 2026-04-08
 ---
 
-# SRT 高阶相态三条件（Triple Condition for High-Order Phase State）
+# SRT 高阶相态三维候选（Triple-Dimension Candidate for High-Order Phase State）
 
-> **地位说明**
-> 本文件将 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md` 中硬化的
-> 三相态条件从 Annex 层提升至 Core 层，作为生命/意识判定标准的规范定义。
-> 所有引用"为什么G在生命层不同于物理层"的文件应以本文件为锚点。
+> **Current-status truth-up（2026-09-19）**
+> 本文件保留内部历史闭合、规范梯度与自写回强度作为一个声明的高阶组织相态模型。三者可用于比较更强组织、可塑性与历史承载的候选证据，不是生命、subjecthood、phenomenality 或 consciousness 的 universal admission authority。`G` 在此只是 formed/model carrier；operator phase state 不等于 consciousness。任何意识准入仍须由独立 owner 与证据承担。
 
 ---
 
 ## 1. 核心主张
 
-$$\text{生命/意识} \neq \text{G的起点} \quad \text{而是} \quad \text{G达到三条件后的高阶相态}$$
+$$\text{HighOrderPhaseEvidence}_M
+\leadsto
+\text{HistoryClosure}_M \land \text{NormativeGradient}_M \land \text{SelfWriteback}_M$$
 
-G（选择算子）是跨尺度的选择结构，在物理层已以低阶形式存在（proto-G）。生命与意识是 G 的相变状态——当 G 同时满足以下三个条件时发生相变：
+该式只组织模型 $M$ 中的三个诊断维度。它不把 primitive Selection 等同于 `G`，也不从三维合取推出生命、主体位置或意识。
 
 ---
 
@@ -96,30 +98,30 @@ T-L0-02 用 κ（稳定化程度）描述三域相变。三相态条件对应κ�
 
 | κ 阶段 | G形态 | 三条件状态 |
 |---|---|---|
-| $\kappa \approx 0$ | proto-G（物理层）| 三条件均未满足 |
-| $\kappa_{c1}$ 附近 | 低阶G（细胞/分子）| 历史闭合开始形成 |
-| $\kappa_{c1} < \kappa < \kappa_{c2}$ | 中阶G（有机体）| 历史闭合+规范梯度，自写回强度弱 |
-| $\kappa > \kappa_{c2}$ | 高阶G（意识）| 三条件齐备，完整相态 |
+| $\kappa \approx 0$ | 模型中的低稳定化 regime | 三维证据均未建立 |
+| $\kappa_{c1}$ 附近 | 历史闭合候选窗口 | 历史闭合开始形成 |
+| $\kappa_{c1} < \kappa < \kappa_{c2}$ | 中间组织 regime | 历史闭合+规范梯度，自写回强度弱 |
+| $\kappa > \kappa_{c2}$ | 高阶组织候选 regime | 三维证据齐备；不自动准入 consciousness |
 
 ---
 
-## 5. 与意识三充要条件的关系
+## 5. 与 consciousness evidence 的有界关系
 
-`_SRT_D_VALUE_CANONICAL.md §3.1` 的意识三条件：
-$$\text{Consciousness} \iff \Psi_f > 0 \;\land\; d > 0 \;\land\; \hat{G}[\theta] \neq \emptyset$$
+`_SRT_D_VALUE_CANONICAL.md §3/§5` 明确规定：`d` 不是意识仪表，`d / \Psi_f / \hat G` 的单项或合取均不构成 consciousness 的 universal necessary、sufficient 或 iff condition。
 
-三相态条件是该框架的**内部机制补充**，不是替代：
+因此，本模型只保留下列候选对应：
 
-| 意识条件 | 三相态条件的对应 |
-|---|---|
-| $d > 0$（有关切维度）| 历史闭合 + 规范梯度 → d 有实质内容 |
-| $\Psi_f > 0$（有摩擦成本）| 自写回强度 → 选择有真实代价 |
-| $\hat{G}[\theta] \neq \emptyset$（有参数化算子）| 三条件合并保证算子的参数化是非空的 |
+| 候选证据维度 | 可研究的模型关系 | 不推出 |
+|---|---|---|
+| 历史闭合 + 规范梯度 | 已声明 bearer / stake 模型中的持续组织与方向敏感度 | `d` admission、subjecthood、consciousness |
+| 自写回强度 | 后续可及域是否被同一系统的先前过程改变 | `\Psi_f` standing、phenomenality |
+| formed `\hat G[\theta]` | 参数化 realization 是否存在 | primitive Selection 或意识准入 |
 
 ---
 
 ## 6. 边界说明
 
 - 三个相变点（历史闭合形成、规范梯度出现、自写回强度达阈值）的量化标准是 SRT 当前开放变量。
-- 本文件不主张三条件是意识的充分条件——它们是 G 从低阶向高阶相变的**必要结构条件**；完整的意识充要条件还需 `_SRT_D_VALUE_CANONICAL.md §3.1` 的三项。
+- 三维合取不是 consciousness 的普遍必要、充分或充要条件；exact sufficiency 保持 OPEN。
+- phase-state standing、operator standing、subject-position 与 phenomenality 必须分开定型。
 - "自写回强度不足 = 成瘾结构"是说明性类比，不是临床诊断定义。

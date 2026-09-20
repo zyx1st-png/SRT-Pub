@@ -139,7 +139,7 @@ $$ \hat{G}_\theta^{trigger} = \begin{cases}
 
 **参数操作化候选**：
 - $\mathcal{F}_c$：对应 Penrose $E_G$ 临界能量 $\approx E_P^2/m$（$E_P$ = 普朗克能量，$m$ = 叠加质量差），可从 GRPO/CausalGRW 实验设计中推算数量级。
-- $d_{min}$：候选 = $d_{UAL}$（→ Cor-CONSC-1），即意识主体维持选择主动性所需最低关切带宽；此值将”主动选择”与”延迟叠加”分开。
+- $d_{min}$：本物理触发模型中的候选坐标；不得等同 $d_{UAL}$ 或意识主体的最低带宽。它只在具名模型中区分“主动选择”与“延迟叠加”，不建立 consciousness / subjecthood。
 - $\mathcal{F}_{ont}^{cap}$：系统在时间窗 $\Delta t$ 内可支付的最大摩擦量，候选操作化为代谢率代理（生物系统：ATP 水解速率；工程系统：功耗密度/散热极限）。
 
 **⚠️ 量纲注意（降级为结构类比）**：$\mathcal{F}_{ont}$ 量纲为**能量**（J），而 SRT 框架中 $\Psi_f = \int_\gamma \sqrt{g_{ij}\dot\theta^i\dot\theta^j}\,dt$ 量纲为 **Fisher 几何作用量**（无量纲或信息比特）。两者不可直接等同，而是**结构类比**——均为”维持非坍缩叠加的代价函数”，存在比例映射 $\mathcal{F}_{ont} = \lambda \cdot \Psi_f$（$\lambda$ 含量纲转换系数，待实验确定）。”就是同一个东西”的强等同应降级为”在物理层的对应实现”。

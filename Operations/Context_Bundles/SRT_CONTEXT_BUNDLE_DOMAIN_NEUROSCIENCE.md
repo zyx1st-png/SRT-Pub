@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-13
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-13
-source_commit: dd89ba05
-source_branch: theory/post-one-spine-sync-20260913
+generated: 2026-09-20
+source_commit: dcf3477e
+source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 39e8740593266483
+inputs_digest: 62a152e80ee33dd5
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 39e8740593266483
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-13 |
-| 来源 commit | `dd89ba05` |
-| 来源分支 | `theory/post-one-spine-sync-20260913` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `dcf3477e` |
+| 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -45,10 +45,10 @@ inputs_digest: 39e8740593266483
 |---|---|---|
 | 1 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | 2026-08-12 |
 | 2 | `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md` | 2026-09-04 |
-| 3 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-08-12 |
+| 3 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-09-20 |
 | 4 | `Neuroscience/README.md` | 2026-09-04 |
 | 5 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
-| 6 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 6 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-09-20 |
 
 ## §0.2 状态护栏
 
@@ -1228,7 +1228,7 @@ next programme action = construct Epistemology Domain Reconstruction Framework b
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1288,7 +1288,7 @@ Neuroscience 现在采用五层结构：
 
 ### F. Clinical / Measurement Layer
 
-- `SRT_Clin_00_IIT_PCI.md` — clinical / measurement interface around IIT, PCI, and consciousness-state measurement. Should be read with the N6 hardening: PCI/Φ-like measures are not by themselves identical with SRT consciousness; SRT also requires `L1` anchoring, `d-value`, action/self coupling, and possible `L2` sedimentation.
+- `SRT_Clin_00_IIT_PCI.md` — clinical / measurement interface around IIT, PCI, and consciousness-state measurement. Should be read with the N6 hardening: PCI/Φ-like measures, `L1` anchoring, `d-value`, action/self coupling, and possible `L2` sedimentation are candidate evidence dimensions inside declared models; no conjunction here defines SRT consciousness.
 
 ---
 
@@ -1370,7 +1370,7 @@ Neuroscience 现在采用五层结构：
 
 The current neuroscience compact doctrine is:
 
-> SRT treats the nervous system as an embodied selection system. Candidate percepts, actions, judgments, and conscious contents emerge from accessible latent spaces through competition, gain modulation, gating, and stabilization. `Psi_f` captures multidimensional anchoring friction; `d-value` captures concern-weighted consequence; `L2` captures sedimented selection constraints. Consciousness is stable concern-weighted `L1` anchoring. Psychopathology is a distortion of anchoring dynamics. Existing neuroscience theories are treated as partial mechanisms inside a broader selection-anchoring architecture, not as direct equivalents of SRT.
+> SRT treats the nervous system as an embodied selection system. Candidate percepts, actions, judgments, and conscious-content reports can be modeled through competition, gain modulation, gating, and stabilization. `Psi_f` captures multidimensional anchoring friction; `d-value` captures concern-weighted consequence; `L2` captures sedimented selection constraints. Stable concern-weighted `L1` anchoring is a candidate consciousness-model dimension, not a definition or admission rule. Psychopathology mappings are testable bridges, not diagnoses. Existing neuroscience theories are treated as partial mechanisms inside a broader selection-anchoring architecture, not as direct equivalents of SRT.
 
 
 
@@ -1899,7 +1899,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1923,7 +1923,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 > **意识不是“信息被广播”这么简单，那么神经系统究竟如何把候选内容确认成可报告、可维持的现实？**
 
 SRT 的压缩回答是：
-- 意识 = 选择被确认并稳定化
+- 候选意识内容的 access/report 可被建模为选择的确认与稳定化；该模型不等同或准入意识
 - 点燃 = `L_0 -> L_1` 的相变
 - 绑定 = 同步进入同一显现对象
 - 睡眠 = 维持未来选择能力的结构维护
@@ -1936,9 +1936,9 @@ SRT 的压缩回答是：
 
 也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
 
-`d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
+`d-value` 本身不产生或准入意识；在声明模型中，它可作为内容厚度、优先级、持续性和沉积潜力的候选调节维度。
 
-> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；subjecthood 还需要 integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access 与 cross-time reidentification 也只是声明 subjecthood 模型中的候选证据，不共同组成普遍门槛。
 
 ---
 

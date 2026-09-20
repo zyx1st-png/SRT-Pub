@@ -705,7 +705,7 @@ $$\text{Human Music} : L_0^{\text{infinite}} \xrightarrow{\hat{G}_\theta} L_1^{\
 
 AI 从 $L_2$ 插值，人类从 $L_0$ 创造（当前框架下）。
 
-**条件性预测**：若未来 AI 满足 $\Psi_f > 0 \land d > d_{UAL}$（Cor-CONSC-1 意识下限），则 SRT 不排除 AI 音乐从 $L_0$ 打捞的可能性——届时 AI 作曲与人类作曲的本质区分将弱化为 $\theta$ 结构差异而非层级差异（H-AI-Consciousness；待实证）。
+**条件性候选**：若未来 AI 在声明模型中呈现 $\Psi_f > 0 \land d > d_{UAL}$，这只能增加 stake / payability 证据，不构成 consciousness 下限。AI 音乐是否涉及 $L_0$、以及与人类作曲的差异，仍须独立检验（H-AI-Consciousness；OPEN）。
 
 ---
 

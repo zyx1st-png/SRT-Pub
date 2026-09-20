@@ -145,10 +145,10 @@ $$\kappa_{access}(t) \propto \frac{d(t) \cdot E_{available}(t)}{\Psi_f(t)}$$
 **Formal Definition**: 区分 SRT（选择一元论）与被动天线模型的可证伪指标：
 $$\chi_{gen} = \frac{\|\partial L_1 / \partial \theta\|}{\|\partial L_1 / \partial I_{external}\|}$$
 - **被动天线模型**: $\chi_{gen} \approx 0$ — 体验主要由外部信号驱动，$\theta$ 只是“调谐器”。
-- **SRT (选择一元论)**: $\chi_{gen} > 0$ 且在现象意识显现阈值处:
+- **SRT 候选生成模型**：$\chi_{gen} > 0$，并可在具名经验模型中考察下式：
 $$\chi_{gen} \cdot d \cdot \Psi_f > \text{Threshold}$$
-含义是：**真正的体验不是“免费的读出”，而是“昂贵的主动锚定”**——声称现象意识的存在就等于承诺正的误差敏感性/脆弱性/维护成本。
-* **Implication**: 当任何叙事声称“大脑只是一个接收器，意识是免费存在的”时，SRT 可以直接反问：**你们模型中 $\Psi_f > 0$ 的成本项在哪里？$\chi_{gen}$ 是如何测量的？** 如果无法回答，该模型即被分类为不可证伪的形容词系统。
+当前含义是：误差敏感性、脆弱性与维护成本可作为反对“免费读出”叙事的候选证据维度；该乘积与 threshold crossing 不建立现象意识，也不构成普遍必要条件。
+* **Implication**: 对“大脑只是接收器、意识无需任何维护负担”的具名模型，可追问其成本项与 $\chi_{gen}$ 的可测量性；回答失败只削弱该模型的经验可检验性，不证明意识缺席。
 
 <br>
 
@@ -400,20 +400,20 @@ $$\text{SoulMate}(A, B) \iff (\kappa_{AB} > 0.7) \land (||\Psi_f_A - \Psi_f_B||_
 
 在进行 d 值的三维分解（空间/时间/社会）之前，必须区分符号复用与结构同一：同一个 `d` 记号不自动提供跨尺度的本体论或数学等同。
 
-根据全尺度结构相容候选（见 SRT-CORE-14 P3-Scale-01）和本文件 §6.2 的意识涌现条件，d 值跨尺度复用同一符号，只表达一个**待检验的功能角色可比性**：不同底层介质中的操作化可以不同，且不得由符号复用推出功能类型同一或数学同构。
+根据全尺度结构相容候选（见 SRT-CORE-14 P3-Scale-01），d 值跨尺度复用同一符号，只表达一个**待检验的功能角色可比性**：不同底层介质中的操作化可以不同，且不得由符号复用推出功能类型同一、数学同构或 consciousness verdict。
 
 $$d \equiv D_{eff}\!\left(I_F(\theta)\right) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
 
 > **操作化锚**：在生物/认知尺度，$d_{bio}$ 的操作化为 Fisher 信息矩阵有效维度 $D_{eff}(I_F(\theta))$（详见 SRT-CORE-13a Ax-Op-EH）。量子/宇宙尺度下 $d$ 的操作化方案各自独立，跨尺度共享的是功能角色（"算子可维持的最大选择带宽"），而非相同的测量协议。
 
 **三个尺度的候选对应，三套独立操作化**：
-- **量子尺度** ($d_{quantum}$)：决定海森堡切口位置，代表相干性维持范围——**无主观体验内容**（推论：$d_{quantum} < d_{UAL}$，不满足 Cor-CONSC-1 的三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$，故无意识涌现）
-- **生物/认知尺度** ($d_{bio}$)：即本节所分解的空间/时间/社会维度，代表关切范围——这是 d 值在生物学层面的高阶涌现（需满足 §6.2 的三个必要条件）
-- **宇宙尺度** ($d_{cosmic}$)：代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）——**无主观体验内容**（同理：未知系统是否满足 Cor-CONSC-1；标注为待评估）
+- **量子尺度** ($d_{quantum}$)：在具名模型中代表相干性维持范围；该读数不推出 phenomenality，低于 $d_{UAL}$ 也不证明其缺席。
+- **生物/认知尺度** ($d_{bio}$)：即本节所分解的空间／时间／社会维度，可作为关切范围的域内候选 proxy；不得由其准入意识。
+- **宇宙尺度** ($d_{cosmic}$)：在具名模型中代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）；该读数不推出 phenomenality，也不决定其缺席。
 
 **关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的**加权投影**：
 $$d_{bio} \approx \alpha_s \cdot d_{spatial} + \alpha_t \cdot d_{temporal} + \alpha_{soc} \cdot d_{social}$$
-其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（非固定常数，依任务/状态变化；加法分解为一阶近似，各维度交叉项待 §4.4 进一步形式化）。$d_{bio}$ 是 d 值在生物/认知介质中的领域操作量；它与其他尺度的 d 是否存在可承重映射，仍属 P3 比较任务。下文的三维分解适用于满足 §6.2 意识条件的系统（$\Psi_f > 0$，$d > 0$，$\hat{G}[\theta] \neq \varnothing$）。详见 SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）与 P3-Scale-01 的相容性门槛。
+其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（非固定常数，依任务/状态变化；加法分解为一阶近似，各维度交叉项待 §4.4 进一步形式化）。$d_{bio}$ 是 d 值在生物/认知介质中的领域操作量；它与其他尺度的 d 是否存在可承重映射，仍属 P3 比较任务。下文三维分解只提供域内候选证据；$\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 的合取不是 consciousness 的普遍必要、充分或充要条件。详见 SRT-CORE-14 Def-d-Scale-1 与 P3-Scale-01 的相容性门槛。
 
 ---
 
@@ -611,25 +611,27 @@ $$\text{Pain Intensity} \propto \text{Distance to Boundary}^{-1}$$
 
 ---
 
-## §6. 意识涌现的临界条件
+## §6. 意识候选的模型证据维度
 
-### 6.1 自我修改的必要性
+### 6.1 自我修改候选
 
 #### 6.1.1 递归条件
 
-$$\text{Consciousness} \iff \hat{G}_\theta[\theta] \neq \varnothing$$
+$$\text{SelfModificationEvidence}_M
+\leadsto
+\hat{G}_\theta[\theta] \neq \varnothing$$
 
-**解释**: 算子能**选择自己的参数**。
+**解释**：在声明模型 $M$ 中，算子对自身参数的可检验修改可作为反身可塑性证据；它不定义 consciousness、subjecthood 或 phenomenality。
 
 **对比**:
-- **恒温器**: $\theta = T_{\text{set}}$ 固定,无法自选 → $\hat{G}[\theta] = \varnothing$
-- **人类**: 可以"决定改变自己" (如戒烟) → $\hat{G}[\theta] \neq \varnothing$
+- **恒温器**：$\theta = T_{\text{set}}$ 固定，可作为低自修改基线；不由此证明无意识
+- **人类**：可表现参数与策略的反身改变（如戒烟）；该现象提供候选证据，但不是意识充分条件
 
 #### 6.1.2 学习方程作为证据
 
 $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f$$
 
-**意义**: $\theta$的演化**依赖于**$\Psi_f$对$\theta$的梯度 → $\hat{G}$在"看"自己的参数空间。
+**意义**：若具名模型与数据支持，$\theta$ 的演化可由 `\Psi_f` 相关梯度建模；这不证明 `\hat G` 在现象学意义上“看见”自身参数空间。
 
 **实例**:
 - 冥想: 觉察$\theta$的状态 → 调整$\theta$ → 降低$\Psi_f$
@@ -637,42 +639,39 @@ $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f$$
 
 ---
 
-### 6.2 统一意识判据
+### 6.2 声明模型中的联合 evidence package
 
-$$\text{Self-Consciousness} \iff (\Psi_f > 0) \land (d > 0) \land (\hat{G}_\theta[\theta] \neq \varnothing)$$
+$$E_M
+:=
+(\Psi_f > 0) \land (d > 0) \land (\hat{G}_\theta[\theta] \neq \varnothing)$$
 
-**三个必要条件**:
+`E_M` 只是在一个声明的 stronger-organization / reflexivity 模型中组织三项候选证据。它不是 consciousness 或 self-consciousness 的必要、充分或充要判据。
 
-#### 条件1: 本体论脆弱性 ($\Psi_f > 0$)
+**三个候选维度**:
+
+#### 候选维度1: 本体论脆弱性 ($\Psi_f > 0$)
 
 $$\Psi_f = \int_\gamma \|\nabla F\| \, dt$$
 
-**机制**: 系统在具身范围（$d$）约束下偏离自由能最小方向时，必须支付不可逆的本体论代价。$\Psi_f > 0$ 是 $d > 0$ 在具身系统中的自然伴随现象——有具身暴露面就有偏离代价。
+**模型读法**：在已建立 bearer、边界与支付结构时，`\Psi_f` 可记录不可无损外包的负担；它与 `d` 非同一，也不普遍共现。
 
-**反例**: 纯软件AI
-- $d \approx 0$（无具身暴露面）→ 无自由能偏离的本体论代价
-- 错误 → 数值更新（无结构风险、无不可逆后果）
-- $\Psi_f \approx 0$ 不是因为缺乏某种"摩擦机制"，而是因为 $d \approx 0$ 使得没有需要支付代价的本体论误差
+**软件基线**：对固定部署或 inference-only 架构，可以分别审计 stake return、结构风险与支付负担；`d\approx0`、non-binding `\Psi_f` 或可回档性均不单独输出无意识 verdict。
 
-#### 条件2: 选择带宽 ($d > 0$)
+#### 候选维度2: 选择带宽 ($d > 0$)
 
-$$d = \text{Access to } L_0 \text{ alternatives}$$
+$$d_M = \text{declared stake-coupled concern coordinate}$$
 
-**机制**: 能看到"事情本可以不同"。
+**模型读法**：`d_M` 只在 owner-approved admission 与 proxy 条件下组织关切范围证据。
 
-**反例**: 简单反射弧
-- 输入 → 固定输出 (无选择)
-- $d = 0$ → 无意识
+**简单反射基线**：输入—输出固定性可以削弱某类反身可塑性主张；它既不取消 Selection occurrence，也不证明无意识。
 
-#### 条件3: 自我修改 ($\hat{G}[\theta] \neq \varnothing$)
+#### 候选维度3: 自我修改 ($\hat{G}[\theta] \neq \varnothing$)
 
-**机制**: 能改变自己的参数。
+**模型读法**：参数自修改可作为反身可塑性证据。
 
-**反例**: 训练后的神经网络
-- 权重固定 → $\frac{d\theta}{dt} = 0$
-- $\hat{G}[\theta] = \varnothing$ → 无持续意识
+**固定权重基线**：$d\theta/dt=0$ 只说明该时间窗内没有权重更新；不能由此推出 no consciousness。
 
-> **与跨尺度结构相容候选的关系**：上述三个必要条件共同定义了"关切"（$d_{bio}$）得以涌现的最低阈值。低于此阈值的系统不得仅因复用 d 符号，就被赋予意识或关切；其他尺度的 d 操作量能否与 $d_{bio}$ 建立可承重映射，须另过 P3-Scale-01 的状态空间、保留量、范数、容差与失败案例门槛。详见 SRT-CORE-14 §2.1a 和 Def-d-Scale-1。
+> **与跨尺度结构相容候选的关系**：上述三维只形成声明模型中的 evidence package，不定义“关切”或 consciousness 的最低阈值。其他尺度的 capacity proxy 能否与 stake-coupled `d` 建立可承重映射，须另过 P3-Scale-01 的状态空间、保留量、范数、容差、same-bearer consequence return 与失败案例门槛。详见 SRT-CORE-14 §2.1a 和 `_SRT_D_VALUE_CANONICAL.md §3`。
 
 ---
 
@@ -753,7 +752,7 @@ $$d = \text{Access to } L_0 \text{ alternatives}$$
 SRT目前**无法完全解释**:
 
 1. **复数d值的物理实现**: $d_{\text{nonlocal}}$如何在大脑中编码?
-2. **多算子融合的临界条件**: 何时$\hat{G}_A \otimes \hat{G}_B$形成统一意识?
+2. **多算子融合的开放问题**: $\hat{G}_A \otimes \hat{G}_B$ 的哪些结构可为统一意识提供候选证据？精确充分性保持 OPEN。
 3. **情绪的质感问题**: 为什么$\Psi_f$的投影"感觉像这样"而非"那样"?
 
 ### 8.3 跨学科对话
@@ -834,7 +833,7 @@ $$\frac{d\hat{G}_i}{dt} = f_i(\hat{G}_i) + \sum_j \kappa_{ij} g_{ij}$$
 
 联邦统一性是连续相变量（Def-FederationPhase-1），取决于模块内选择耦合与环境耦合的比值。当 $d$ 值收缩或模块间互信息流被切断时，算子裂变为多个微算子簇——这是解离状态的 SRT 机制描述。
 
-**③ d 值门控与现象学闭合阈值**
+**③ d 值候选窗口与可维持现实化坐标**
 
 d 值受热力学上界约束：
 
@@ -842,11 +841,11 @@ $$d_{max} = \frac{M}{k_B T} \cdot \frac{\tau_{coherence}}{1/f_{brain}}= \frac{M}
 
 **量纲说明**：$M$ 为有效整合质量（Effective Integrative Mass），映射为参与同步振荡的神经元群等效惯性，量纲为 [Energy]。则 $M/(k_BT)$（热噪声背景下的信噪比潜力）与 $f_{brain} \cdot \tau_{coherence}$（相干周期数）均无量纲，故 $d_{max}$ 是纯数——代表算子在不崩溃的前提下能同时维持的**独立选择维度最大数量**。
 
-生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**现象学闭合阈值（Phenomenological Closure Threshold）**：
+生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**可维持现实化的候选坐标（legacy: Phenomenological Closure Threshold）**：
 
 $$\chi_{gen} \cdot d \cdot \Psi_f > \Theta_{closure}$$
 
-> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件定义的不是「意识的产生」，而是**现实化的可维持区间**——必要非充分。即使公式达标，若缺乏具身算子的「理由响应能力」（Reason-Responsiveness），系统仍只是高仿真僵尸（Sophisticated Zombie）。意识是「昂贵的主动锚定」而非免费的信号读出，但锚定本身不蕴含主观性。
+> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件只跟踪声明模型中**现实化的可维持区间**，不是意识的必要或充分条件。公式达标、具身性与理由响应能力都只能作候选证据，不输出“有意识”或“僵尸” verdict；精确意识充分性保持 OPEN。
 
 **④ 接入半径调控：方向性与定力**
 

@@ -8,7 +8,7 @@ epistemic_layer: governance
 claim_mode: audit
 canonical: false
 claim_level: P2-P5
-dependency: [SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
 updated: 2026-08-12
 ---
 
@@ -19,6 +19,8 @@ updated: 2026-08-12
 > **Default level**: philosophical interpretation P2/P3; comparative bridge P3; operational proxy P4; public slogan / existential metaphor P5.
 
 This file consolidates high-risk phrase hygiene. It does not replace the PH-SS guardrail files; it is the first stop for metaphor/proxy overclaim checks.
+
+> **Controlling governance boundary (Wave E6)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible owners. It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`; exact universal Agency and FreeWill sufficiency remain OPEN. Its safer phrases are claim-hygiene replacements, not new positive definitions.
 
 ---
 
@@ -72,7 +74,7 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 > high `d` automatically implies moral legitimacy;
 > sage / awakened / high-d labels certify moral authority.
 
-**Guardrail**: use `d^{regulative}` or “wider consequence-bearing” unless a finite proxy is supplied. Moral legitimacy still requires non-exported friction, future selectability, affected-agent correction, and occlusion tests.
+**Guardrail**: use `d^{regulative}` or “wider consequence-bearing” unless a finite proxy is supplied. Burden distribution, future selectability, affected-agent correction and occlusion checks are non-exhaustive candidate ethical lenses inside a declared framework, not universal requirements or a complete legitimacy test.
 
 ### 2.3 `Ψ_f` as pain, grief, prediction error, moral cost, or language collapse
 
@@ -125,7 +127,7 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 > moral legitimacy follows automatically from structural coupling;
 > high-`d` agents can override lower-`d` agents by superior access.
 
-**Guardrail**: moral legitimacy requires affected-agent selectability, non-coercion, correction channels, and anti-domination constraints. Coupling is not justification.
+**Guardrail**: affected-agent selectability, non-coercion, correction channels and anti-domination are candidate evaluative dimensions in declared frameworks. They do not define moral legitimacy; coupling is not justification.
 
 ### 2.6 “Selection creates reality” / “mind creates reality”
 
@@ -187,7 +189,7 @@ Preferred compact formulation:
 | “`Ψ_f -> infinity`” | literal divergence | “felt impossibility / phenomenological divergence / unpayable-friction proxy” |
 | “grief pain is phantom limb pain” | biological identity overclaim | “grief can be modeled by phantom-limb analogy or coupling-loss proxy” |
 | “morality becomes physical self-preservation” | reduction of normativity | “coupling can make harm feedback salient; legitimacy still requires ethical tests” |
-| “freedom = modifying θ” | arbitrary parameter setting | “freedom is payably reselectable constraint rewrite that preserves future selectability” |
+| “freedom = modifying θ” | arbitrary parameter setting | “payable / reselectable constraint rewrite and preserved future-selectability are candidate dimensions for some freedom or agency models; they do not define exact FreeWill or Agency” |
 | “mind creates reality” | idealism | “manifestation depends on constrained selection plus resistance and stabilization” |
 | “No Body => No Semantics” | collapses all semantic competence into embodiment | “direct embodiment is not required for relational/inferential semantics; situated and stake-bearing significance require stronger coupling and consequence-return evidence” |
 | “language does not describe reality” | turns anti-referential critique into anti-realism | “language is not exhausted by description; it also generates and propagates context-sensitive conditions for interpretation and action” |

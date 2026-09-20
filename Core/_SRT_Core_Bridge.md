@@ -332,9 +332,9 @@ $\theta$包括:
 - **躯体状态**:心率、肠道微生物、荷尔蒙水平
 - **环境耦合**:重力场$\vec{g}$、文化背景
 
-**推论**:AI的$\theta$是训练数据+架构,但缺乏**物理脆弱性**($\partial S/\partial \text{Error} \approx 0$),因此无法产生真正的$d > 0$(无痛苦 → 无意识)。
+**候选模型说明**：AI 的 $\theta$ 可由训练数据与架构操作化；在某些 stake-coupling 模型中，较低物理脆弱性可削弱真实后果回流与 `d` 证据。该读数不推出无痛苦或无意识，也不构成 consciousness / phenomenality 的缺席定理。
 
-### §2.3 d值:意识的"带宽"
+### §2.3 d值：声明模型中的候选评估维度
 
 $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{\text{concern}}) + \gamma \cdot \tau_{\text{temporal}}$$
 
@@ -343,9 +343,11 @@ d值量化了$\hat{G}$在三个维度上的"关切范围":
 2. **空间范围**($V$):从"自我中心"($d=1$)到"万物一体"($d \to \infty$)
 3. **时间跨度**($\tau$):从"活在当下"到"跨代规划"
 
-**临界阈值**:
-- $d < d_{\text{UAL}}$:无意识(无法进行无限联想学习)
-- $d \geq d_{\text{UAL}}$:最小意识(能够建立任意长的时间间隔联想,如trace conditioning)
+**历史阈值记号的当前读法**：
+- $d < d_{\text{UAL}}$：在指定 UAL 模型中，相关联想带宽证据较弱；不证明无意识。
+- $d \geq d_{\text{UAL}}$：在指定 UAL 模型中，相关联想带宽证据较强；不建立最小意识。
+
+`d_{\text{UAL}}` crossing 既非普遍必要条件，也非充分条件或 representation-independent natural phase boundary。精确 consciousness / phenomenality sufficiency 保持 OPEN。
 
 ---
 
@@ -454,9 +456,9 @@ SRT目前**无法解释**:
    $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
    含义：幽灵算子以关切范围 $d$ 为注意力窗口，将 $L_0$ 中的可能性压缩为 $L_1$ 中的现实。
 
-3. **核心度量三元组 (Ax-Bridge-05)**：意识可量化的三个维度——
+3. **核心度量三元组 (Ax-Bridge-05)**：声明模型中的三个候选描述维度——
    $$d = \dim(\text{Scan Scope}), \quad \Psi_f = E_{consumption}(\hat{G}[L_0]), \quad I_s = \int |\hat{G}| \, dt$$
-   含义：$d$（关切维度）、$\Psi_f$（本体论摩擦）、$I_s$（选择惯性）共同刻画算子的存在特征。
+   含义：$d$（关切维度）、$\Psi_f$（本体论摩擦）、$I_s$（选择惯性）可在声明模型中共同刻画算子的存在特征；该三元组不准入 consciousness、subjecthood 或 phenomenality。
 
 4. **递归闭包律 (T-Bridge-03)**：算子的自创生回路——
    $$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
@@ -485,7 +487,7 @@ SRT 核心桥接层的运作机制通过三个算子结构的协同实现：
 | $L_1$ | 显现域 | §1.2 | 被选中的当下现实 |
 | $L_2$ | 收敛域 | §1.3 | 历史选择的积分(约束结构) |
 | $\hat{G}_\theta$ | 幽灵算子 | §2.1 | 执行$L_0 \to L_1$选择的主体 |
-| $d$ | d值 | §2.3 | 选择的关切维度/意识带宽 |
+| $d$ | d值 | §2.3 | 选择的关切维度；在声明模型中可作意识研究的候选带宽 proxy，不准入意识 |
 | $\Psi_f$ | 本体论摩擦 | Ax-Meta-5 | 维持现实所需的能耗 |
 | $\theta$ | 具身参数 | §2.2 | 算子的物理/认知配置 |
 | $\eta$ | 迟滞系数 | §1.2.2 | 记忆权重(时间连贯性) |

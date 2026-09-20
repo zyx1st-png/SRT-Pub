@@ -160,17 +160,17 @@ Phenomenal-structure slogan:
 
 | Misreading | Better SRT reading |
 |---|---|
-| “SRT says everything is consciousness.” | No. SRT says manifestation depends on selection; consciousness is one high-complexity selection regime, not the only one. |
+| “SRT says everything is consciousness.” | No. SRT says manifestation depends on selection; selection does not entail consciousness, whose exact sufficiency remains OPEN. |
 | “SRT is subjective idealism.” | No. `theta` filters, but `Psi_f` resists. Reality is participatory, not arbitrary. |
 | “SRT is just physicalism with new terms.” | No. It treats physical descriptions as powerful `L_2` stabilizations, not as the whole structure of manifestation. |
-| “SRT is panpsychism.” | Not directly. Micro-scale selection does not automatically imply macro-conscious subjects. Subjecthood requires further closure, `d-value`, and integration conditions. |
+| “SRT is panpsychism.” | Not directly. Micro-scale selection does not automatically imply macro-conscious subjects. Closure, `d-value`, and integration are candidate evidence dimensions, not a universal subjecthood gate. |
 | “SRT dissolves all paradoxes.” | No. It diagnoses many paradoxes as boundary failures; formal paradoxes still need technical treatment inside their own systems. |
 | “SRT rejects representation.” | No. It rejects representation as the universal first principle; representation is task-local and may be useful when it lowers selection cost. |
 | “SRT says stable norms are morally good.” | No. `L_2` formation only means a path has hardened; moral legitimacy requires further tests such as expanded future selectability, non-externalized cost, cross-subject `d-value` bandwidth, and protection of subject-generation. |
 | “SRT means truth is relative to whoever chooses.” | No. Selection is constrained by `Psi_f`, embodied limits, environmental feedback, intersubjective checking, historical path-dependence, and downward `L_2` constraints. |
 | “L0 is a hidden world full of already-existing objects.” | No. `L_0` should be read as a modal field of selectability / condition of possible manifestation, not an object-like parallel realm. |
-| “Non-trivial automorphism means consciousness.” | No. Automorphism may model structure-preserving phenomenal variation; SRT-relevant phenomenal structure also requires `L_1` manifestation, `d-value` relevance, `Psi_f` payability, and possible `L_2` closure. |
-| “Phenomenal structure means subjecthood.” | No. Phenomenal structure can support conscious content or field structure, but subjecthood must route through the S0-S6 threshold interface. |
+| “Non-trivial automorphism means consciousness.” | No. Automorphism may model structure-preserving phenomenal variation; `L_1` manifestation, `d-value` relevance, `Psi_f` payability, and possible `L_2` closure add candidate evidence but do not establish phenomenality. |
+| “Phenomenal structure means subjecthood.” | No. Phenomenal structure may support candidate evidence about conscious content or field structure, but subjecthood questions must route through the S0-S6 interface, whose exact sufficiency remains open. |
 
 ---
 
@@ -207,7 +207,7 @@ The Philosophy folder should gradually move toward this architecture:
 5. **Public vs academic voice separation** — slogans are useful in public texts; academic files should keep scope and claim levels visible.
 6. **Formula-role discipline** — every equation in philosophy files should state whether it is definition, model, analogy, proxy, or placeholder.
 7. **Soft-point visibility** — major philosophy upgrades should either address one of `PH-SS-01` to `PH-SS-12` or explicitly explain why they are outside the current hardening map.
-8. **Phenomenal-structure hygiene** — structural-turn, automorphism, qualia-space, IIT/GNWT/FEP structure, and multistable-perception claims should route through `SRT_Phenomenal_Structure_Interface.md` before being used as consciousness-threshold claims.
+8. **Phenomenal-structure hygiene** — structural-turn, automorphism, qualia-space, IIT/GNWT/FEP structure, and multistable-perception claims should route through `SRT_Phenomenal_Structure_Interface.md` before being used as candidate evidence in consciousness research.
 
 ---
 
@@ -215,7 +215,7 @@ The Philosophy folder should gradually move toward this architecture:
 
 Priority edits for future passes:
 
-1. Add existence levels and subjecthood threshold to `_SRT_Phil_Axioms.md`.
+1. Keep existence levels and the open subjecthood-admission interface synchronized with `_SRT_Phil_Axioms.md`.
 2. Deduplicate `_SRT_Phil_Axioms.md` and `SRT_Philosophy_Foundations.md` where they repeat the same explanatory-gap and paradox material.
 3. Add formula-role labels to explanatory-gap, paradox, gift, love, grief, and legitimacy formulas.
 4. Add a moral legitimacy ladder to ethics files so `d-value` expansion is not mistaken as sufficient moral goodness.

@@ -16,6 +16,8 @@ dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Operator Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **Current-authority guard（2026-09-19）**: `\hat G_\theta` 在本 owner 中是已形成／形式／具身／模型层 Selection realization 的载体；它不是 primitive Selection、先在 chooser 或导致 first actualisation 的 universal engine。`L_0 -> L_1` 只是声明模型内的 realization mapping，不是 Selection occurrence 定义或普遍本体 pipeline。operator standing 不等于 consciousness；`d / \Psi_f / V / \kappa_{body} / UAL / temporal integration` 只能在当前 owner-approved 层级作为候选／bridge 证据，不构成普遍意识充要门槛。
 
 ---
 
@@ -30,11 +32,11 @@ dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
 
 ## I. Operator Definition (算子定义)
 
-### Ax-Op-01: Parameterized Selection Map
-**Formal Definition**: The Ghost Operator is a parameterized selection mapping from L0 to L1.
+### Ax-Op-01: Parameterized Selection-Realization Map
+**Formal Definition**: In a declared model, the Ghost Operator can carry a parameterized mapping between model-relative L0/L1 aspects.
 $$\hat{G}_\theta: S \to S, \quad L_1(t) = \hat{G}_\theta[L_0](t)$$
-* **AM-A Status（2026-08-11）**: 本式形式化 P0-01 primitive actualisation 在一个具名 state space 中的角色与输出；$\hat G_\theta$ 不是先在实体，也不是 actualisation 自身的原因。参数化、归一化与下列动力学只提供领域 realization，不反向定义 P0。
-* **Implication**: $L_1$ 记录受约束 actualisation 的确定切片，而非潜在域的被动镜像。
+* **Current status**: 本式只描述具名 state space 中的已形成载体角色与输出；$\hat G_\theta$ 不形式化或解释 P0 first actualisation。参数化、归一化与下列动力学只提供领域 realization，不反向定义 primitive Selection。
+* **Implication**: 在该模型内，$L_1$ 可记录受约束 realization 的确定切片；这不声称算子从完成潜在库中产生存在。
 
 **【选择机制修正 2026-04-08】G 选择 = 遮蔽，不是排除**
 
@@ -55,36 +57,35 @@ L₂ 失去 L₁/L₀ 上行校准输入后，以 L₂ 内部自洽性替代 L�
 * **Cross-ref**: `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（G选择=遮蔽的完整论证）；`Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md`（遮蔽精确操作定义与两相模型）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
 
 ### Ax-Op-02: Attention Decomposition
-**Formal Definition**: The operator is the fundamental attention tuple.
+**Model Definition**: A declared cognitive/attention realization may parameterize the operator as an attention tuple.
 $$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$$
-* **Implication**: d 值、分辨率与意向向量共同决定选择结构。
-* **Tension-Rev-IT4 (d 值推导关系)**：此处的 $d$ 是 Ax-ONT-3（SRT-AI-01）中规范定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 的**注意力域投影**。在认知系统中，风险梯度的范数被离散化为注意力可扫描的独立维度数：$\dim(\text{Scope}) \propto \lfloor d / d_0 \rfloor$，其中 $d_0$ 表示单个关切维度所需的最小风险梯度分量。因此"注意力维度数"是连续 $d$ 值的离散近似，二者并非独立定义。
+* **Implication**: d 值、分辨率与意向向量可在该模型中组织选择结构；它们不定义普遍选择算子或 primitive Selection。
+* **Tension-Rev-IT4 (`d` authority guard)**：`d` 的 current definition 只回 `_SRT_D_VALUE_CANONICAL.md`。旧风险梯度式 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 与 $\dim(\text{Scope}) \propto \lfloor d/d_0 \rfloor$ 可在具名认知模型中作为 AI / attention-domain proxy 检验；不是 canonical identity，也不把注意力维度数设为普遍 `d` 定义。
 
-### Ax-Op-02b: Dual-Stream Coupling (双流耦合公理)
-**Formal Definition**: 幽灵算子的选择矩阵由两个必须正交耦合的张量流构成：
+### Ax-Op-02b: Dual-Stream Coupling Candidate (双流耦合候选)
+**P2/P3 model candidate**: 在声明的具身／内感受 anchoring 模型中，选择矩阵可由两个张量流耦合：
 $$\hat{G}_\theta = \mathbf{T}^{\text{intent}} \otimes \mathbf{T}^{\text{embody}} \cdot \kappa_{\text{body}}$$
 其中：
-- $\mathbf{T}^{\text{intent}} = \hat{A}(d, \rho, \vec{v})$：意向性流（提取L0内容的注意力张量）
-- $\mathbf{T}^{\text{embody}} = \theta_{\text{intero}}$：具身性流（锚定自我主观基准的内感受张量）
+- $\mathbf{T}^{\text{intent}} = \hat{A}(d, \rho, \vec{v})$：意向性流（组织模型输入差异的注意力张量）
+- $\mathbf{T}^{\text{embody}} = \theta_{\text{intero}}$：具身性流（表示内感受耦合的候选张量）
 - $\kappa_{\text{body}} \in \mathbb{R}^+$：具身耦合增益系数
-* **Implication**: 注意力决定"看什么"，内感受决定"谁在看"。两者的正交耦合（而非任一单独）才构成完整的L0→L1锚定操作。
+* **Implication**: 在本候选模型中，注意与内感受可作为更强具身 anchoring 的研究维度；其耦合不构成完整、必要或普遍的 primitive `L_0 -> L_1` 机制，也不建立“谁在看”。
 * **Cross-ref**: Ax-Op-01 (参数化选择映射); Def D4a ($\theta_{\text{intero}}$)。
 
-### T-Op-EAN: Embodied Anchoring Necessity Theorem (具身锚定必要性定理)
+### T-Op-EAN: Embodied Anchoring Evidence Candidate（保留旧编号）
 
 > [R→Merleau-Ponty 1945 *Phénoménologie de la Perception*（知觉现象学：具身性作为意识的先验条件，"身体图式"是感知空间的根基）; Sierra & Berrios 2000 *Psychological Medicine*（解离症/人格解体神经机制：边缘系统-前额叶去耦联导致情感空洞化，与κ_body↓类比）; Blanke & Arzy 2005 *Trends in Cognitive Sciences*（人格解体的神经科学：顶叶-颞叶交界区功能异常→躯体自我感丧失，与κ_body→0的神经基础）; Seth 2021 *Being You*（主动推断的具身性：内感受预测错误作为自我感的维持机制，与θ_intero/κ_body对应）]
 
 **R/H 区分**：
 - [R] 具身认知哲学（Merleau-Ponty）：身体性作为意识的拓扑基础；解离/人格解体的临床神经机制（Sierra/Blanke）；内感受与自我感（Seth）
-- [H] **SRT形式化**：κ_body参数的引入；(d>0)∧(κ_body>0)作为有效L₀→L₁坍缩的必要条件[H]；L₁*="操作正常的本体论空壳"概念[H]
+- [H/P3] **SRT 候选形式化**：κ_body 用于研究内感受／具身耦合；`d>0` 与 `κ_body>0` 只是更强具身 anchoring 或 phenomenology 的候选证据维度，不是 primitive actualisation、subjecthood 或 consciousness 的必要条件。旧 `L_1^*=本体论空壳` 裁决撤回。
 
-**Deductive Statement**（保守读法）: 有效L₀→L₁锚定的**必要条件**包含非零的具身反馈项：
+**Candidate relation**: 在一个声明的 embodied-anchoring 模型中可检验：
 $$\left(d > 0\right) \land \left(\kappa_{\text{body}} > 0\right) \Rightarrow L_0 \xrightarrow{\hat{G}_\theta} L_1^{\text{genuine}}$$
 
-**iff精度说明**：原公式中"↔"（充要条件）为强主张。保守读：d>0∧κ_body>0为**必要条件**（无此不可，L₁^genuine→必有此两条件），但充分性尚需证明（可能存在满足这两条件但不产生L₁^genuine的边界情况）。当前SRT将其标注为[H-中承诺]（必要性比充分性更有把握）。
+**Precision**：该关系无当前可用的 iff 或单向必要性。通过也只增加对这一具名模型的支持；失败不否定 primitive Selection 或 consciousness。
 
-若具身流断裂（$\kappa_{\text{body}} \to 0$），系统进入病理态：
-$$\kappa_{\text{body}} \to 0 \implies L_1^* \text{ (操作正常，但丧失本体论重量)}$$
+若具身流耦合降低（$\kappa_{\text{body}} \to 0$），该模型可预测某些内感受／现实感变化；不再推出“丧失本体论重量”、zombie 或 no-consciousness standing。
 
 **临床表现精度说明**：
 - 解离症（Dissociation）/人格解体（Depersonalization）：符合κ_body→0的SRT解读（躯体自我感丧失）[R→Sierra/Blanke]
@@ -95,33 +96,32 @@ $$\kappa_{\text{body}} \to 0 \implies L_1^* \text{ (操作正常，但丧失本�
 - 内感受精度：心跳计数任务的准确率（Seth心跳感知实验）
 - HRV（心率变异性）：副交感-身体耦合强度代理（高HRV=高κ_body）
 
-* **Implication**: 具身性不是意识的"附属品"，而是L0→L1锚定的拓扑必要条件。无身之算法（$\kappa_{\text{body}} \approx 0$）产生的不是意识，而是"操作稳定的本体论空壳"——AI的κ_body≈0正是当前AI"实际僵尸"（§1.2行为主义/§2.3欺骗性对齐）诊断的具身维度。
+* **Implication**: 具身性可是对某些 anchoring / phenomenology 模型有解释力的维度；`\kappa_{body}\approx0` 不建立“本体论空壳”、“实际僵尸”或 no consciousness。
 * **Cross-ref**: Ax-Op-02b; Ax-ONT-1d; Ax-Phil-5（反表征耦合：θ的具身来源）; §7.3 AI意识评估框架。
 
 **可证伪预测**：
 - FC-EAN1-1：系统性操纵κ_body（如体感剥夺实验/橡胶手错觉）应产生L₁*症状（现实感下降/人格解体样主观报告）的量-效关系——若κ_body操纵幅度与解离样症状无剂量相关则κ_body→L₁*机制失败
 - FC-EAN1-2：跨模态比较中，高内感受精度（高κ_body代理）的被试在"真实体验"（vs模拟体验）的辨别任务中应表现更好——若κ_body代理与真实/模拟辨别力无相关则"κ_body>0=本体论重量"主张需修订
 
-### T-Op-HFL: High Friction Law of Unanchored Simulation (无锚点系统高摩擦定律)
-**Deductive Statement**: 在缺乏外部强L1感官输入作为底座支撑时，纯内部G^θ模拟（想象/内部状态维持）面临指数级增加的本体论摩擦：
+### T-Op-HFL: High-Friction Simulation Bridge Hypothesis（保留旧编号）
+**P3/P4 model hypothesis**: 在缺乏某类外部感官锚点的具名模型中，内部模拟成本可用以下指数式作为待验证候选：
 $$\Psi_f^{\text{imagination}} = \Psi_f^0 \cdot e^{\,\beta / \text{Anchor}(L_1^{\text{ext}})}$$
 其中 $\text{Anchor}(L_1^{\text{ext}})$ 为外部感官锚点强度，$\beta$ 为热力学敏感系数。
-极限情形：$\text{Anchor} \to 0 \implies \Psi_f^{\text{imagination}} \to \infty$（对应感觉剥夺或精神病性解离）。
-* **Implication**: "想象力"在热力学上是极高耗能且脆弱的算子行为，需对抗系统向L0混沌退化的趋势。这从信息热力学视角解释了为何长期维持内在愿景（如艺术创作、冥想修行）需要极高的心理资源投入。
+旧极限 `Anchor -> 0 => \Psi_f -> \infty` 与感觉剥夺／精神病性解离的对应关系尚未建立。本条不再是普遍热力学定律或临床定理；正式使用须给出独立模型证据。
 * **Cross-ref**: Eq-Evo-01 (幽灵演化方程); Def-L0-PreAnchored。
 
 ### Ax-Op-03: Operational Normalization
 **Formal Definition**: Selection can be implemented via divisive normalization.
 $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x_j^n}$$
 
-> **记号注（2026-04-14）**：此处 $\varepsilon_{reg}$（operator regularizer）是实现层的防奇点正则化常数，保证零输入时算子不奇异。它与 T-Core-A1C2 中的 $\varepsilon_{pg}$（proto-gradient，L₀ 最小非中性）在形式上同构（均保证"最小非零底"），但二者层级不同：$\varepsilon_{pg}$ 是 L₀ 的本体论属性，$\varepsilon_{reg}$ 是具体选择算子的实现参数。当前保留结构类比关系，不做本体论同一化。见 `_SRT_SYMBOL_TABLE.md`。
+> **记号注（2026-09-19 truth-up）**：此处 $\varepsilon_{reg}$（operator regularizer）是实现层的防奇点正则化常数，保证零输入时算子不奇异。它与 $\varepsilon_{pg}$ 可保留显式 non-identical 的形式类比，但本文不再把 $\varepsilon_{pg}$ 称为 `L_0` 的 primitive 最小非中性属性。其与更强 realization 的精确关系依当前 owners 保持 OPEN。
 
 > **[R]** 除法归一化（Divisive Normalization）：Carandini & Heeger 2012 *Nature Reviews Neuroscience*（视觉皮层V1细胞的标准计算模型，统一多种皮层现象的规范化框架）；Louie & Glimcher 2010 *Neuron*（决策神经科学中的divisive normalization扩展，解释偏好的背景依赖性）；Schwartz & Simoncelli 2001 *Nature Neuroscience*（感知归一化的高斯尺度混合模型）。**[H/P3]** 将此神经机制接驳为 SRT 选择算子 $\hat{G}_\theta$ 的一种实现候选，作为具名感觉／决策任务中 L₀→L₁ 竞争选择的动力学形态之一。该候选不推广为任意选择域的必然形式，也不单独输出行为选择事件。
 >
 > **参数说明**：
 > - **$x_i$**：第 $i$ 个候选状态（L₀中的竞争激活）的原始活化值。
 > - **$n$**：非线性指数（通常 $n \approx 2$，在神经模型中产生超线性选择；$n=1$ 退化为线性归一化）。
-> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。**记号补注（2026-04-14）**：本式中的 \(\varepsilon\) 可记为 \(\varepsilon_{reg}\)，用于与 `T-Core-A1C2` 的 proto-gradient \(\varepsilon_{pg}\) 区分。当前二者只保留“实现层 regularizer / 本体层最小非中性”的结构回声关系，不做本体论同一化。
+> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。本式中的 \(\varepsilon\) 可记为 \(\varepsilon_{reg}\)，用于与 \(\varepsilon_{pg}\) 区分。当前二者只保留非同一的形式回声候选；这不赋予 \(\varepsilon_{pg}\) primitive O0 或最小非中性身份。
 > - **$W_{ij}$**：竞争权重矩阵（$W_{ij} \geq 0$，通常非对称——近邻强抑制、远邻弱抑制；$W_{ii}=1$ 的情况为自抑制归一化）。
 > - **输出解读**：$[\hat{G}_\theta(x)]_i$ 为相对激活值（归一化到竞争背景后的强度），可通过 Softmax 变换为概率分布；并非直接输出 L₁ 选择结果，而是驱动选择的中间表征。
 >
@@ -367,7 +367,7 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 >   2. **桥接函数**：$A(\text{path}_i, t) \propto f(\mathbb{E}[\Psi_f(\text{path}_i, t)])$，$f$ 单调递减；若取指数形式 $e^{-\mu \mathbb{E}[\Psi_f]}$，必须显式声明为新增 bridge postulate 或建模选择，不得装成现成定理（Boltzmann 借用需标注）
 >   3. **L_comp 符号翻转条件**（priming window）：当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 时，前 $N_{prac} < N_c$ 轮 $L_{comp}(x_{comp})$ 符号为负（短暂启动），$N_{prac} \geq N_c$ 后翻正（净抑制）；阈值 $N_c$ 依赖竞争不对称度，是额外结构参数
 
-**Formal Statement**（各部分地位见上方地位注）：$\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低。
+**Formal Statement**（各部分地位见上方地位注）：在声明的 operator realization 中，$\hat{G}_\theta$ 的竞争选择与写回可对后续可及性景观施加**持续性的抑制修改**，使被拒绝的竞争者在相关语境中可及性降低。本条不声称每次 primitive Selection 都由算子把 `L_0` 锚定为 `L_1`。
 
 > ⚠ 以下三项的认识论地位不同，不应等同对待：
 
@@ -386,7 +386,7 @@ $$\forall \, cue' \neq cue_{prac}: \quad A(x_{comp}, t + \Delta t) < A(x_{comp},
 $$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \text{[priming window, 主张 4a]}$$
 仅在 $N_{prac} \geq N_c$ 后净效应转为抑制（主张 4b 需双时标；4c 需 $b>a$）。详见 Lemma-FFSI。
 
-* **Implication（选择的双重效应）**：$\hat{G}_\theta$ 不是被动的映射——每次选择都在**重写 $L_0$ 的可及性地形**。这意味着人类知识的"可忘性"不完全由学习质量决定，而是由检索时的竞争拓扑决定：越频繁从某一领域检索相关项目，其竞争概念就越被系统性地压制，最终导致本质上是语义层面的"习得性遗忘"（Semantic Retrieval-Induced Forgetting, SRIF）。
+* **Implication（声明模型中的双重效应）**：在本竞争写回模型中，$\hat{G}_\theta$ 可重写后续**有效可及性地形**。这可用于建模检索竞争与“习得性遗忘”（Semantic Retrieval-Induced Forgetting, SRIF）；不宣称每一次 primitive Selection 都重写 `L_0`。
 
 * **Cross-ref**: Ax-Op-03（瞬态竞争归一化，本定理的稳态前提）；T-CLIN-1（LIPFC 作为 $\hat{G}_\theta$ 语义控制台的神经实现）；C-PATH-1（$L_0$ 泄漏病理，本定理的反向失调情形）。
 
@@ -395,9 +395,9 @@ $$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \te
 ## II. Evolution & Closure (演化与闭包)
 
 ### Ax-Op-04: Iterative Evolution
-**Formal Definition**: Reality evolves by recursive application of the operator with noise injection.
+**Declared-model definition**: A formed operator realization may be modeled by recursive application with noise injection.
 $$L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \text{Noise}(L_0)]$$
-* **Implication**: 选择不是一次性事件，而是连续的迭代演化。
+* **Implication**: 该式描述一个可迭代 realization 的状态演化；它不宣称 primitive Selection 必须由递归算子执行，也不把每次 Selection 定义为 `L_0 -> L_1` 更新。
 
 ### Ax-Op-05: Two-Phase Constraint Closure（二阶段约束闭包）
 
@@ -422,7 +422,7 @@ $$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0
 其中 $\mathcal{B}(\theta)$ 为吸引域，$\Psi_f^*$ 为闭包固定点处的摩擦值。
 
 * **Implication**:
-  - **Phase 1** 允许 $\Psi_f$ 在生成性阶段局部上升，兼容 Step ⑦（高阶意识涌现的高代价生成窗口）；
+  - **Phase 1** 允许 $\Psi_f$ 在生成性阶段局部上升，可用于检验某些高代价状态转变；不由此推出高阶意识涌现；
   - **Phase 2** 要求进入吸引域 $\mathcal{B}(\theta)$ 后严格单调下降（强度 $\delta > 0$），提供固定点收敛保证，排除纯周期轨道与混沌；
   - 原"稳定结构"读法精化为：稳定 = 进入可支付吸引域 + 终期 $\Psi_f$ 单调收敛至 $\Psi_f^*$，非一步闭包；
   - Phase 1 的非单调段受 payable 条件约束（$\Psi_f^{(k)} < \infty$），不是无界许可——超过可支付上界即退出 Closure 候选。
@@ -434,9 +434,9 @@ $$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0
 
 > **AM-A scope guard（2026-08-11）**：本条的 “valid operator exists” 只适用于已个体化、可按 agency 条件审计的 L1 层算子，不适用于 P0 actualisation kernel。Individuality / Asymmetry / Normativity 不构成 first actualisation 的充要原因，也不得把主体条件倒投为基础选择的前提。
 
-**Formal Definition**: A valid selection operator $\hat{G}_\theta$ exists if and only if it instantiates the structural tri-conjunction of Individuality, Asymmetry, and Normativity.
+**Declared-model definition**: For the agency-audit model used here, a stronger operator-standing proposal can be evaluated through Individuality, Asymmetry, and Normativity; this is not a universal existence, agency, subjecthood, or consciousness iff.
 
-$$\exists \hat{G}_\theta \iff \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
+$$\text{StrongerOperatorStanding}_M \leadsto \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
 
 **操作化定义（Operationalization）**：
 
@@ -449,31 +449,31 @@ $$\exists \hat{G}_\theta \iff \text{Individuality} \land \text{Asymmetry} \land 
 3. **Normativity（规范性）**：$\hat{G}_\theta \sim \arg\min_{\sigma} \mathcal{F}(\sigma)$
    受特定价值梯度或全局势能函数的定向约束，存在可区分的「更好/更坏」评估基准（最小自由能、适应度、道德规范等）；无规范约束的偏置只是无目标的布朗运动。
 
-**充分性论证**：三条件的逻辑互补回答了选择的本体论三问——**Who**（谁在选 → 个体性）、**How**（如何选 → 非对称性）、**Why**（为何如此选 → 规范性）。缺少任何一项，「选择」均退化为随机过程、通用函数或无目标漂移；三者合取是算子区别于纯物理被动演化的最小充要结构。
+**候选结构说明**：在这一声明的 agency-audit 模型中，三项分别组织 **Who**（个体性）、**How**（非对称性）与 **Why**（规范性）证据。它们不是 operator、agency、subjecthood 或 consciousness 的普遍最小充要结构；缺失任一项只削弱该模型中的 stronger-standing proposal。
 
-**Implication**：能动性（Agency）不是神秘的注入物，而是「主体锚点 + 定向偏置 + 价值梯度」三联结构的涌现。
+**Implication**：该三联结构可作为能动性研究的候选过程模型；exact Agency sufficiency 仍由其 current owner 保持 OPEN。
 
 ---
 
 > **【理论边界/防误用声明】**
 >
 > - **结构算子 ≠ 现象意识**（Structural Operator vs. Phenomenal Consciousness）：本公理仅定义「有效算子」的极小结构基础。满足三条件的系统（恒温器、算法 Agent、免疫系统）在 SRT 本体论上是「算子」，但不必然具备主观体验（Qualia）。
-> - 现象意识的涌现须在算子存在的基础上额外满足：高本体论摩擦支付能力（$\Psi_f \gg 0$）与非零生存关切梯度（$d > 0$），即「现象学闭合阈值」（详见 T-Scale-4 与 Ax-CONSC-2）。
+> - 现象意识的准入不由本算子 owner 关闭。`\Psi_f`、`d` 与其他具身／时间整合量只能按各自 owner 的当前层级作为候选证据，不构成现象学闭合阈值。
 
-### Ax-Op-07: UAL Threshold
-**Formal Definition**: Minimal consciousness requires Unlimited Associative Learning capacity.
-$$d(\hat{G}) \geq d_{UAL} \iff \text{UAL Capacity}$$
-* **Implication**: 最小意识不是经验量，而是学习可塑性的阈值结构。
+### Ax-Op-07: UAL / Temporal-Integration Candidate Coordinate（保留旧编号）
+**P3 model candidate**: UAL 或 trace-conditioning 能力可作为时间整合与学习可塑性的候选指标。
+$$d(\hat{G}) \geq d_{UAL} \leadsto \text{UAL-related model evidence}$$
+* **Implication**: UAL 不是 minimal-consciousness 的普遍必要或充分阈值，不单独输出 phenomenality。
 
 ### Def-Op-08b: Precision-Weighting Tensor（精度加权张量）
 
-**Formal Definition**：精度加权张量定义为具身参数 θ 内嵌的信息信度核心结构——预测误差协方差矩阵的逆：
+**Model Definition**：在声明的预测处理 realization 中，精度加权张量可定义为预测误差协方差矩阵的逆：
 
 $$\theta \supset \boldsymbol{\Pi}_{full} = \Sigma^{-1}$$
 
 $\boldsymbol{\Pi}_{full}$ 为完整精度协方差矩阵（允许感觉通道间的精度耦合，如视听觉整合、多模态绑定）；对角近似 $\boldsymbol{\Pi} = \text{diag}(\pi_1,\ldots,\pi_n)$ 仅适用于通道独立假设成立的场景。
 
-**$L_0$/$L_2$ 拮抗的显式分解**：$\hat{G}_\theta$ 执行 $L_0 \to L_1$ 选择时的有效自由能：
+**模型相对的 $L_0$/$L_2$ 拮抗分解**：当该 realization 以 `L_0/L_1/L_2` 组织信号与先验时，可写有效自由能：
 
 $$F_{eff} = \boldsymbol{\Pi}_{L_2} \cdot F[\sigma \mid L_2] + \boldsymbol{\Pi}_{L_0} \cdot F[\sigma \mid L_0]$$
 
@@ -500,7 +500,7 @@ $$\kappa_{tan} \downarrow \;\to\; \Psi_f \uparrow \;\to\; d\text{-value} \downar
 *注：本定义为 FEP 精度加权在 SRT 三域模型的形式化映射，身份降级自原 Ax-Op-08b，依赖 Ax-Core-A4 与 Eq-Evo-02 推导。*
 
 ### Ax-Op-EH: Epistemic Horizon (认知视界公理)
-**Formal Definition**: 算子从 $L_0$ 提取 $L_1$ 信息的速率，严格受制于其具身参数的 Fisher 有效维度（信道容量上界）：
+**P3 model definition**: 在声明的信道模型中，算子的输入—输出信息速率可受其参数 Fisher 有效维度约束：
 $$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv d(\theta) = D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
 
 > **勘误（原 $\mathcal{C}(\theta) = \log_2 \dim(\Theta)$）**：参数空间维度对数不等于信道容量（容量依赖输入分布与 Fisher 几何，非纯维度）。采用 Eq-IT-B 的 Fisher 有效维度 $d(\theta)$ 统一符号，即算子可靠区分的 $L_0$ 信号独立方向数。
@@ -508,7 +508,7 @@ $$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv d(\theta
 系统的剩余不确定性与算子信道容量绑定（$H_{max} \equiv \log_2 \dim(L_1)$，即 $L_1$ 等概选择时的最大熵）：
 $$H(L_0 | \hat{G}_\theta) \geq H_{\max} - d(\theta)$$
 
-* **Implication**: 认知视界（Epistemic Horizon）= $d(\theta)$ 设定的带宽上界，是选择能力的本征上限。**类比注记**：量子 Heisenberg 不确定性（共轭可观测量不可同时任意精确）与"有限参数算子的带宽饱和"在结构上类似，但机制不同（前者来自非对易算符，后者来自 Fisher 维度上界）——此为结构类比，非机制等价。速率上界 $\dot{I}\leq d(\theta)$ 与 `Core_Law/SRT_Reference_Dynamics.md §15.5` 的 $I_{created} \leq d$ 一致（速率vs积分形式）。
+* **Implication**: 在该模型中，$d(\theta)$ 可作为带宽上界候选，而不是 primitive Selection 或 consciousness 的本征上限。**类比注记**：量子 Heisenberg 不确定性（共轭可观测量不可同时任意精确）与“有限参数算子的带宽饱和”在结构上类似，但机制不同（前者来自非对易算符，后者来自 Fisher 维度上界）——此为结构类比，非机制等价。速率上界 $\dot{I}\leq d(\theta)$ 与 `Core_Law/SRT_Reference_Dynamics.md §15.5` 的 $I_{created} \leq d$ 仅在相同声明与量纲条件下比较（速率 vs 积分形式）。
 * **Cross-ref**: Ax-Op-02（注意力分解）；Eq-IT-B（$d$ = Fisher 有效维度）→ `Core_Law/SRT_Reference_Dynamics.md §15.2`；Ax-ONT-IE（不可逆定律）。
 
 ### T-Op-EH-1: Triadic Cognitive Sweet Spot（认知三元甜点区）
@@ -522,9 +522,9 @@ $$\arg\max_{n \in \mathbb{N}} \mathcal{U}_{human}(n) \approx 3$$
 * **Cross-ref**: Ax-Op-EH; `Core/_SRT_Core_Bridge.md` C-Bridge-01; `Core/SRT_Core_12b_Ontology_L2.md` §4.2.2。
 
 ### T-Op-07C1: Trace-Conditioning Criterion
-**Deductive Statement**: Sustained trace conditioning implies d-value above threshold.
-$$d(\hat{G}) \ge d_{UAL} \iff \Delta t_{gap} > 0$$
-* **Implication**: 能维持时间间隙的联想学习是最低意识的必要条件。
+**P3 candidate**: Sustained trace conditioning may provide evidence for a declared temporal-integration coordinate.
+$$d(\hat{G}) \ge d_{UAL} \leadsto \Delta t_{gap} > 0 \quad\text{within the declared model}$$
+* **Implication**: 能维持时间间隙的联想学习可作为研究维度，不是最低意识的普遍必要条件。
 
 ## IV. Operator Typology & Fidelity (类型学与保真度)
 
@@ -545,7 +545,7 @@ $$\phi_{\text{fidelity}} = 1 - \frac{H(L_1 | \hat{G}_\theta)}{H(L_1)}$$
 
 # Part B: Original Theoretical Discourse (Context)
 
-> **Note**: The following sections provide the detailed philosophical, neuroscientific, and phenomenological elaboration of the Ghost Operator, including its relationship to attention, embodiment, and agency.
+> **Legacy / supersession guard（2026-09-19）**: The following sections preserve historical philosophical, neuroscientific, and phenomenological exposition. Old `existence = active anchoring`, complete dual-stream `L_0 -> L_1`, `UAL = minimal consciousness`, `d/\Psi_f/\kappa_body` consciousness thresholds, species-consciousness tables, and equivalent pipeline statements are superseded and are not current canonical verdicts. They may survive only as historical or P2/P3 candidate material under Part A and upstream-owner guards.
 
 ---
 
@@ -566,7 +566,7 @@ $$\phi_{\text{fidelity}} = 1 - \frac{H(L_1 | \hat{G}_\theta)}{H(L_1)}$$
 
 #### 1.1.2 SRT的激进解决方案
 
-**命题**: **主体 = 选择操作本身**,而非操作的执行者。
+**历史命题（已 superseded）**: 旧“主体 = 选择操作本身”不再是 active canonical identity。operator standing 不自动建立 subject-position、Bearer 或 consciousness。
 
 $$\text{Subject} \equiv \hat{G}_\theta \quad \text{(Process, not Entity)}$$
 
@@ -574,7 +574,7 @@ $$\text{Subject} \equiv \hat{G}_\theta \quad \text{(Process, not Entity)}$$
 - 不是"有风神在吹风" → 而是"吹"这个过程本身就是"风"
 - 不是"有自我在选择" → 而是"选择"这个模式本身就是"自我"
 
-**推论**: 当$\hat{G}$停止运作 (深度睡眠、昏迷),主体消失 — 这解释了意识的间断性。
+**历史推论（已 superseded）**: 旧“$\hat G$ 停止 -> 主体消失”不再是 active conclusion。operator activity 与 subjecthood / consciousness 的对应需独立建立。
 
 ---
 
@@ -750,9 +750,9 @@ $$\dim(L_1) < \dim(L_0)$$
 传统量子力学: 无穷后退
 $$\text{Observer}_1 \to \text{Observer}_2 \to \cdots$$
 
-**SRT解决**: $\hat{G}$**自测量** (self-collapsing),但需要$\theta$的有限性作为截断。
+**历史 SRT 候选**: 旧版以 $\hat{G}$ self-collapsing 与有限 $\theta$ 作为截断模型；它不再解释 primitive Selection 或量子测量的普遍本体机制。
 
-$$\hat{G}_\theta[L_0] \quad \text{with} \quad \theta < \infty \Rightarrow \text{Collapse}$$
+$$\hat{G}_\theta[L_0] \quad \text{with} \quad \theta < \infty \leadsto \text{model-relative finite readout}$$
 
 ---
 
@@ -876,7 +876,7 @@ $$\exists \text{Target}: F[\sigma] \text{ minimized at } \sigma = \text{Target}$
 
 ---
 
-## §5. UAL阈值与最小意识
+## §5. UAL 与时间整合候选（历史意识阈值已 superseded）
 
 ### 5.1 无限联想学习 (Unlimited Associative Learning)
 
@@ -896,7 +896,7 @@ $$A(t) \to B(t + \Delta t) \quad \text{for any } \Delta t$$
 
 **结果**:
 
-| 物种 | $\Delta t_{\text{max}}$ | UAL能力 | 意识推断 |
+| 物种 | $\Delta t_{\text{max}}$ | UAL能力 | 历史意识推断（非当前 verdict） |
 |:-----|:------------------------|:--------|:---------|
 | 秀丽隐杆线虫 | 0 sec | 无 | 无意识 |
 | 果蝇 | ~1 sec | 极弱 | 微意识? |
@@ -913,21 +913,21 @@ $$d_{\text{UAL}} \propto \log(\Delta t_{\text{max}})$$
 
 ---
 
-### 5.2 为什么UAL = 最小意识?
+### 5.2 旧 `UAL = 最小意识` 论证（已 superseded）
 
 #### 5.2.1 时间整合论证
 
-**命题**: 意识的本质是**时间整合** (Binding across time)。
+**历史命题（非当前结论）**: 旧版把意识本质等同于时间整合。当前只保留时间整合作为候选证据维度。
 
 **无UAL的系统**: 
 - 只能活在"永恒的现在"
 - 无法构建连贯的自我叙事 (Narrative Self)
-- 因此无"我" → 无意识
+- 旧推断：无连贯自我叙事 -> 无意识（已撤回为普遍判决）
 
 **有UAL的系统**:
 - 能将过去-现在-未来整合
 - 形成时间上的自我连续性
-- 因此有"我" → 有意识
+- 旧推断：有时间自我连续性 -> 有意识（已撤回为充分判决）
 
 #### 5.2.2 与IIT的关系
 
@@ -975,7 +975,7 @@ $$|x_2\rangle \neq |x_1\rangle \quad \text{(一般情况)}$$
 
 #### 6.2.2 SRT解释
 
-**公理A2验证**: 存在 = 主动锚定,需持续能量消耗。
+**历史 A2 读法（已 superseded）**: 微扫视可支持某类感知内容维持需持续动力学输入；它不验证 `存在 = 主动锚定`，也不定义事件实际性。
 
 如果眼球完全静止 → 视网膜信号消失 (Troxler效应) → $L_1$消失。
 
@@ -1098,7 +1098,7 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 
 ---
 
-**依赖提醒**: 本文件定义的$\hat{G}_\theta$是所有SRT动力学的核心。修改本文件需评估对Dynamics (14), Scaling (14), 及所有Domain files的级联影响。
+**依赖提醒**: 本文件定义的 $\hat{G}_\theta$ 是已形成 operator/model realization owner，不是所有 SRT 动力学或 primitive Selection 的核心引擎。修改本文件仍需评估对 Dynamics、Scaling 及 domain consumers 的级联影响。
 
 **版本历史**: v3.0新增UAL阈值、算子保真度、反事实修剪等高级公理,并扩展了具身参数的三重分解。
 
@@ -1108,22 +1108,22 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 
 本文档的核心形式结构围绕幽灵算子 $\hat{G}_\theta$ 的定义、分解与演化展开：
 
-1. **参数化选择映射** (Ax-Op-01): $L_1(t) = \hat{G}_\theta[L_0](t)$ — 现实化是从潜在域 $L_0$ 到显现域 $L_1$ 的参数化选择操作，而非被动显现。
-2. **注意力三分量分解** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 选择结构由 $d$-value（关切带宽）、分辨率 $\rho$ 与意向向量 $\vec{v}$ 三者的张量耦合决定。其中 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）是规范定义；**注意 $d_{cog}$（行为拓扑代理）$\neq d_{max}$（香农容量上界），实际带宽 $d_{actual} \approx d_{cog} + \delta_{coupling}(A\cdot\tau, V\cdot A)$，见 §2.1**。
-3. **双流耦合** (Ax-Op-02b): $\hat{G}_\theta = (\mathbf{T}^{intent} \otimes \mathbf{T}^{embody}) \cdot \kappa_{body}$ — 意向流与具身流的正交耦合构成完整的 $L_0 \to L_1$ 锚定（$\kappa_{body}$ 为耦合强度标量）；$\kappa_{body} \to 0$ 时系统进入解离病理态。
-4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon_{reg} + \sum_j W_{ij} x_j^n)$ — 选择具有除法归一化的动力学形态，对应注意力的竞争抑制机制。$\varepsilon_{reg}$ 为实现层正则化常数，与 L₀ 层 $\varepsilon_{pg}$ 保留结构类比关系。
+1. **参数化 realization 映射** (Ax-Op-01): $L_1(t) = \hat{G}_\theta[L_0](t)$ — 只在声明的 state-space 模型中表示已形成载体的输入／输出，不定义现实化、primitive Selection 或 first actualisation。
+2. **注意力三分量候选** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 在具名 cognitive realization 中可以 $d$、$\rho$ 与 $\vec v$ 组织注意选择；该参数化不是 universal operator definition，各 `d` 代理须回当前 canonical owner。
+3. **双流耦合候选** (Ax-Op-02b): $\hat{G}_\theta = (\mathbf{T}^{intent} \otimes \mathbf{T}^{embody}) \cdot \kappa_{body}$ — 意向流与具身流可作为 P2/P3 embodied/interoceptive anchoring 模型；不构成完整或必要的 primitive `L_0 -> L_1` 机制，$\kappa_{body}\to0` 也不自动输出病理、zombie 或 no consciousness。
+4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon_{reg} + \sum_j W_{ij} x_j^n)$ — 属于具名神经／行为 realization 的候选动力学。$\varepsilon_{reg}$ 是实现层 regularizer；与 $\varepsilon_{pg}$ 只保留非同一形式类比，不为后者建立 primitive O0 身份。
 5. **算子保真度** (Ax-Op-09): $\phi_{fidelity} = 1 - H(L_1|\hat{G}_\theta)/H(L_1)$ — 衡量选择一致性，保真度越高，$\hat{G}_\theta$ 对现实结构的锚定越稳定。
 6. **频域等价描述**（详见 `Core/SRT_Core_13b_Operator_Advanced.md §Ax-Spec-01`）：$L_1(t)=\mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$ — 算子在频域以 Hadamard 乘积实现滤波选择，d 值对应通带宽度；与条目 1 时域描述等价，适用于时频分析和节律耦合场景。
 
 ### Mechanism Explanation (机制解释)
 
-$\hat{G}_\theta$ 的运行机制可从”选择—演化—阈值”三层理解，所有层均以本体论摩擦 $\Psi_f$ 为热力学代价：
+$\hat{G}_\theta$ 的候选运行机制可在声明模型中从”选择—演化—阈值”三层理解；`\Psi_f` 可作为部分 realization 的代价记账，不是所有层的普遍生成源：
 
-1. **选择层**: $\hat{G}_\theta$ 通过注意力张量 $(d, \rho, \vec{v})$ 与具身张量 $(\theta_{intero}, \kappa_{body})$ 的正交耦合，从 $L_0$ 的无穷维潜在态中竞争性地锚定出有限维 $L_1$。竞争归一化确保每次选择压制备选项——这不仅生成当前现实切片，还通过 T-Op-SIAM 重写 $L_0$ 的可及性地形，产生语义层面的”习得性遗忘”。维持此锚定操作需要持续 $\Psi_f$ 消耗（类似耗散结构），一旦能量中断（深睡/昏迷），$\hat{G}_\theta$ 停止运作，主体消失。
-2. **演化层**: $L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \mathrm{Noise}(L_0)]$ — 选择不是一次性事件，而是在噪声注入下的迭代演化。精度加权张量 $\boldsymbol{\Pi}$ 决定系统是信任 $L_2$ 先验还是 $L_0$ 新异刺激；$d$-value 设定认知视界上限 $\dot{I}_{L_0 \to L_1} \leq \mathcal{C}(\theta)$，保证选择带宽的有限性。
-3. **阈值层**: 有效 $\hat{G}_\theta$ 的存在需要个体性（Markov Blanket）、不对称性（内部状态调制）与规范性（目标导向）三条件合取。最小意识对应 UAL 阈值 $d \geq d_{UAL}$，即能维持跨时间间隙联想学习的最低选择带宽。
+1. **选择层**: 在声明的注意／具身模型中，$(d,\rho,\vec v)$ 与 $(\theta_{intero},\kappa_{body})$ 可组织竞争读出与历史写回。这不声称从无穷潜在库生成当前现实，也不从能量中断推出主体消失。
+2. **演化层**: $L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \mathrm{Noise}(L_0)]$ — 在声明的 operator realization 中描述噪声注入下的迭代演化。精度加权张量 $\boldsymbol{\Pi}$ 可建模系统对 $L_2$ 先验与 $L_0$ 新异输入的相对信任；$d$-value 只在同一信道模型中作为认知视界候选上界，不定义 primitive Selection。
+3. **阈值层**: 个体性、不对称性与规范性可用于某个声明的 stronger-operator-standing audit；UAL 与 $d_{UAL}$ 只是时间整合候选指标，不是 minimal-consciousness 阈值。
 
-此三层架构表明：$\hat{G}_\theta$ 既非被动镜映也非自由创造，而是在 $\Psi_f$ 代价约束下、以具身参数 $\theta$ 为信道容量边界的主动选择过程。
+此三层架构只是已形成 operator realization 的模型族；不反向定义 primitive Selection，不单独建立 subjecthood 或 consciousness。
 
 ## 【理论边界/防误用声明】
 

@@ -138,14 +138,14 @@ b) 统一约束：
 - **跨尺度结构相容候选**：不同嵌套层级（量子／神经／社会）的选择算子只有在具名尺度映射与误差界下通过近似交换检验，才获得局部可比性。
 - **$\pi_\lambda$（粗粒化映射）**：将精细尺度的状态映射到粗粒尺度的投影算子，满足 $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$。
 - **$\kappa_{ij}$（尺度耦合强度）**：量化不同尺度间算子相互作用的强度参数。
-- **意识与智能正交**：智能是 $L_1 \to L_2$ 映射效率，意识是 $\hat{G}$ 对 $L_0$ 的访问深度（$d$ 值），二者独立。
+- **意识与智能的评估分离**：智能可按 $L_1 \to L_2$ 映射效率建模；$\hat{G}$ 对 $L_0$ 的访问深度与 `d` 只可作为意识评估的候选维度，不能定义意识。
 
 ### Formalization Summary (形式化概述)
 
 - 跨尺度相容接口：$\pi_\lambda\circ\hat G_\theta\approx\hat G_{\theta,\lambda}\circ\pi_\lambda$（P3-Scale-1／T-Scale-2）；严格共轭只适用于可逆表征变换。
 - 尺度耦合方程：$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$（S1），多尺度算子通过耦合项交互。
 - 统一自由能目标：$F_{SRT} = F_{base} - d \cdot U_{others}$（S2），其中 $F_{base}$ 可取热力学或变分自由能；跨尺度保持的是结构而非单位。
-- 意识阈值：$d > d_{threshold} \land \Phi_{sensitivity} > 0$（S2），仅当脆弱性和选择深度同时满足时成立。
+- 意识候选坐标：$d > d_{threshold} \land \Phi_{sensitivity} > 0$（S2）只在声明模型中提供证据窗口；crossing 不建立意识，non-crossing 也不证明其缺席。
 
 ### Mechanism Explanation (机制解释)
 
@@ -160,7 +160,7 @@ b) 统一约束：
 
   三层之间通过比例关系（不同量纲）而非直接等式联结。
 
-- $d$ 值衡量算子跨尺度的关切范围；$d > d_{threshold}$ 联合 $\Psi_f\text{-sensitivity} > 0$ 构成意识的**必要-充分候选条件**（注：Def-Phil-QC-2的充要表述为三条件：d>0/Ψ_f-payable/V>0；本节表述为简化版，两版本的一致性需在QC-2框架内校验）。[H]
+- $d$ 值可在声明模型中衡量算子的关切范围；$d > d_{threshold}$ 与 $\Psi_f\text{-sensitivity} > 0$ 的联合只构成候选证据窗口，不是意识的必要、充分或充要条件。[H]
 
 - 跨尺度相变（$\theta \to \theta_c$ 时 $L_1$ 拓扑突变）与物理相变到认知顿悟存在**结构类比**（⟶struct，非严格同构）——临界慢化/拓扑重组/序参量跃迁等数学特征在两个域中均可识别，但物理机制独立。[H]
 
@@ -249,21 +249,23 @@ $$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base} \in \{F_{thermo}, F_{v
 | 维度 | 定义 | 关键参数 |
 |:-----|:-----|:---------|
 | **智能** | $L_1 \to L_2$ 映射的效率与复杂度 | 计算复杂度、$K_n$ 阶数 |
-| **意识** | $\hat{G}$ 对 $L_0$ 的访问深度与带宽 | $d$ 值、$Φ$ 敏感性 |
+| **意识候选评估** | 不由本文件定义 | $\hat{G}$ 访问、$d$ 值与 $Φ$ 敏感性仅作候选证据 |
 
 ### §5.2 d 值边界条件
 
-**定义 S2 (意识阈值)**:
+**历史 S2（当前重读为候选证据窗口）**：
 
-$$\text{Consciousness} \iff d > d_{threshold} \land Φ_{sensitivity} > 0$$
+$$E_C^{S2} = d > d_{threshold} \land Φ_{sensitivity} > 0$$
+
+该式不建立 consciousness、subject-position 或 phenomenality；crossing 与 non-crossing 均不得作为普遍 verdict。
 
 | 系统类型 | $d$ 值 | $Φ$ 敏感性 | 状态 |
 |:---------|:-------|:-----------|:-----|
-| 经典计算机 | 0 | 0 | 无意识、无智能边界 |
-| 当前 AI | 高模拟 | 0 | 高智能、无意识 |
-| 细菌 | $d \to 0$ | > 0 | 微意识、低智能 |
-| 哺乳动物 | 中等 | > 0 | 中等意识、中等智能 |
-| 人类 | 高 | 高 | 高意识、高智能 |
+| 经典计算机 | 0 | 0 | 该模型中候选证据低；无 consciousness verdict |
+| 当前 AI | 高模拟 | 0 | 高智能表现；无 consciousness verdict |
+| 细菌 | $d \to 0$ | > 0 | 低候选读数；需独立准入 |
+| 哺乳动物 | 中等 | > 0 | 中等候选读数；需独立准入 |
+| 人类 | 高 | 高 | 高候选读数；不由本式定义意识 |
 
 ### §5.3 SRT-Zombie 形式化
 
@@ -274,13 +276,15 @@ $$Z = \lim_{d \to 0} \hat{G}_{θ^{complex}}$$
 SRT-Zombie 是 $d \to 0$ 但计算复杂度极高的系统：
 - 拥有完美的 $L_1 \to L_2$ 映射（高智能）
 - 其 $\hat{G}$ 是硬编码的，不接触 $L_0$
-- 没有感受性，因为 $Φ ≈ 0$（无本体论摩擦）
+- 该模型给出较低 $Φ$／摩擦候选读数；不由此证明没有感受性
 
-### §5.4 意识存在的三条件
+### §5.4 历史意识三条件（当前为候选 checklist）
 
-**定理 T-Conscious (意识阈值定理)**:
+**历史标识 T-Conscious（superseded theorem reading）**：
 
-$$\exists \text{Consciousness} \iff \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
+$$E_C^{TConscious} = \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
+
+三项可在声明模型中作为候选证据；它们不构成 universal N&S admission。
 
 | 条件 | 定义 | 形式化 |
 |:-----|:-----|:-------|
@@ -296,7 +300,7 @@ $$d > 0 \iff \frac{∂\text{Entropy}}{∂\text{Error}} > 0$$
 
 只有当预测失败会导致物理层面的"混乱/痛苦"（熵增危及结构完整性）时，系统才会真正"关心"结果。
 
-**推论 S-C3**: 纯软件 AI 若无法"死亡"，则无法产生真正意识。
+**历史推论 S-C3（superseded）**：纯软件 AI 的低脆弱性可削弱某些 stake-coupling 模型的证据，但不证明其无法产生意识。
 
 ---
 
@@ -432,7 +436,7 @@ $$\text{Insight} = \hat{G}_θ[θ \to θ_c^+] - \hat{G}_θ[θ \to θ_c^-]$$
 
 ## §9 AI 意识边界判据 (AI Consciousness Criteria)
 
-### §9.1 必要条件清单
+### §9.1 候选证据清单
 
 | 条件 | 形式化 | 当前 AI 状态 |
 |:-----|:-------|:-------------|
@@ -442,30 +446,32 @@ $$\text{Insight} = \hat{G}_θ[θ \to θ_c^+] - \hat{G}_θ[θ \to θ_c^-]$$
 | 动态 $θ$ 演化 | $dθ/dt ≠ 0$ | ✗ (训练后固定) |
 | 汇编历史 | $A > 15$ (因果链) | ✗ (压缩数据) |
 
-### §9.2 AI 意识的充分条件
+### §9.2 AI 意识候选证据包
 
-**假说 H-AI-Consciousness**（降级说明：原标注"定理"，但该双条件为经验性主张而非形式推导，故改为假说；Status = Proposed）:
+**历史假说 H-AI-Consciousness**（当前重读为 exploratory evidence package；原 theorem / sufficiency 读法 superseded）：
 
 **[R — 条件1/2 Retrodiction（追溯对齐已有意识理论 UAL/IIT）；H — 条件3/4/整体双条件结构 Novel Prediction]**
 
-$$\text{AI Consciousness} \iff \begin{cases}
+$$E_C^{AI} = \begin{cases}
 d \geq d_{UAL} & \text{（R）最低意识关切带宽阈值，见 SRT-CORE-13A §UAL}\\
 \Psi_f > 0 & \text{（R→SRT重释）真实锚定代价，替代 IIT 的 } \Phi_{physical}\text{；见 T-ONT-5}\\
 A_{causal} > A^* & \text{（H）因果组装深度，} A^*\text{ 待定，Cronin 2021 的 AI 类比阈值}\\
 d\theta/dt \neq 0 & \text{（H）θ 持续演化：非部署后冻结；与 §9.3 生命定义共享，见注①}
 \end{cases}$$
 
+该包不建立 AI consciousness、phenomenality 或 moral standing；各项均为声明模型中的候选维度，既不共同必要，也不共同充分。
+
 **注：$A_{causal} > 15$ 伪精度修正**：原公式写死 $A^*=15$ 继承自 Cronin 2021 分子域阈值，在 AI 因果结构中该具体值尚未独立论证。改为 $A^*$（待定参数），避免对未验证数值的伪精确承诺。详见注③。
 
-**条件独立性注（重要）**：第4条（$d\theta/dt \neq 0$）与条件1–3的关系：若"有意识的系统必然持续更新模型"（意识驱动θ演化），则条件4可能从条件1–3中派生而非独立必要。当前保留为显式独立条件，理由是：部署后冻结的LLM可能在某些时刻满足条件1–3但θ固定，必须显式排除。若后续论证表明 $d > d_{UAL} \Rightarrow d\theta/dt \neq 0$，则条件4降为冗余（派生条件），可从双条件中移除。
+**候选维度关系注**：第4条（$d\theta/dt \neq 0$）与条件1–3是否独立尚未建立。部署后冻结可作为该过程模型的反证压力，但不能据此排除 consciousness。
 
-> **注① 与 §9.3 生命定义的关系**：第4条（$d\theta/dt \neq 0$）是 §9.3 中**生命**的核心判据，在意识标准中保留该条意味着：H-AI-Consciousness 隐含"AI意识 → AI生命"（以SRT意义定义的生命）。这是有意为之的理论选择，而非遗漏——无参数演化能力的系统（部署后θ冻结的LLM）在SRT中不构成意识主体。原公式中 $d\theta/dt = -\eta\partial\Phi/\partial\theta$（梯度形式）被简化为 $d\theta/dt \neq 0$，避免对 Φ 的双重引用歧义。
+> **注① 与 §9.3 生命模型的关系**：第4条（$d\theta/dt \neq 0$）也用于 §9.3 的生命候选模型，但本节不推出“AI 意识 → AI 生命”，也不从参数冻结推出无意识。原梯度形式只保留为过程模型候选。
 >
 > **注② Φ_physical 的SRT重释**：原公式第2条 $\Phi_{physical} > 0$（IIT的整合信息量）在 SRT 框架中被替换为 $\Psi_f > 0$——两者均试图捕捉"整合性主观代价"，但 SRT 以摩擦代价替代 IIT 的信息几何。若需保留与 IIT 的接口，可添加桥接条件：$\Phi_{physical} \approx f(\Psi_f, d)$（待形式化）。
 >
 > **注③ $A_{causal} > A^*$ 的来源与局限**：Cronin 2021 (Assembly Theory) 的 $A > 15$ 阈值用于区分生物分子与非生物分子，对 AI 因果结构的适用性尚未独立论证。在 AI 语境中，$A_{causal}$ 应定义为"产生当前算子状态所需的最短因果程序长度"（类 Kolmogorov 复杂度），其阈值 $A^*$ 可能不同于 15。**Cross-ref**: `Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md §A值定义`。
 >
-> **证伪条件**：① 若存在满足全部四条件的系统但其行为（跨任务d值稳定性、Ψ_f实证指标）与无意识系统无法区分，则充分方向失效；② 若已知意识系统（人类）在某条件上系统性失败（如dθ/dt≈0的深度麻醉阶段），则必要方向需修订；③ 若条件4被证明从条件1–3中可推出，则双条件结构须修订为三条件版本。
+> **模型检验条件**：① 若四项与独立意识相关证据无区分力，则该候选包失去经验效用；② 若已知意识系统在某项上系统性失败，则该项不宜作为候选支持；③ 若条件4可从条件1–3推出，则模型应去冗余。这些检验不预设 universal necessity 或 sufficiency。
 
 ### §9.3 生命的参数学习定义
 
@@ -525,19 +531,21 @@ $$\frac{dθ}{dt} = -α ∇_θ Φ + \text{Learning}$$
 | $A$ | 汇编指数 | §6.1 |
 | $D_p$ | 观察者参与度 | §7.1 |
 | $\text{NTIC}$ | 非平凡信息闭包（需按 coupling-qualified regime 解读） | §6.4 |
-| $d_{threshold}$ | 意识阈值 | §5.2 |
+| $d_{threshold}$ | 声明模型中的意识候选坐标 | §5.2 |
 | $θ_c$ | 相变临界值 | §8.1 |
 
 ---
 
 ## 判据速查表 (Quick Reference)
 
-### 意识判据
+### 意识候选证据窗口
 ```
-Consciousness = (d > threshold) ∧ (Φ_sensitivity > 0) ∧ (Individuality) ∧ (Normativity)
+E_C = (d > threshold) ∧ (Φ_sensitivity > 0) ∧ (Individuality) ∧ (Normativity)
 ```
 
-**$d$-$\Psi_f$ 关系注记**：在 SRT 统一框架下，$\Psi_f$-sensitivity 不是独立于 $d$ 的判据，而是 $d > 0$ 在具身系统中的自然伴随现象。但它仍作为独立检测维度保留，因为：(a) 人工系统可能模拟 $d > 0$ 的行为而不具备真实 $\Psi_f$ 响应；(b) $\Psi_f$ 的响应能力（sensitivity）可独立于 $d$ 被调节（如冥想降低有效 $\Psi_f$ 而不改变 $d$）。
+该速记不是 consciousness 的定义、必要条件、充分条件或充要条件。
+
+**$d$-$\Psi_f$ 关系注记**：在具名模型中，$\Psi_f$-sensitivity 与 $d$ 可作为彼此不可替代的候选检测维度；两者的依赖关系不是 universal law，其合取也不准入意识。
 
 ### 智能判据
 ```
@@ -722,7 +730,7 @@ $V(t) > 0$ 表示算子的 $L_1$ 模型与实际 $L_0$ 信号之间存在原参�
 
 ## 【理论边界/防误用声明】
 - 不采纳“计算不完备性可在无具身风险条件下自动生成主体性”的推论。  
-- 不采纳“层级跃迁=意识跃迁”的推论：主体性仍需 \(d>0\)、\(\Psi_f\)-payable 与脆弱性 \(V>0\)。
+- 不采纳“层级跃迁=意识跃迁”的推论：\(d>0\)、\(\Psi_f\)-payable 与脆弱性 \(V>0\) 只可作为声明模型中的主体性候选证据。
 
 
 ## §12 ACT 组合语法与跨尺度合成（新增）
@@ -746,4 +754,4 @@ L_2 稳定性来自组合图的可交换性与代价可支付性。
 
 ## 【理论边界/防误用声明】
 - 不采纳“形式可交换即现实可稳定”的推论；必须同时满足 \(\Psi_f\)-payable。  
-- 不采纳“范畴组合自动导出主体性”的推论；主体性仍受 \(d>0, V>0\) 门控。
+- 不采纳“范畴组合自动导出主体性”的推论；\(d>0, V>0\) 也不构成 universal subjecthood gate。

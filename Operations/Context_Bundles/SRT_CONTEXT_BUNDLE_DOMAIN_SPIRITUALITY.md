@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-13
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-09-20
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-13
-source_commit: dd89ba05
-source_branch: theory/post-one-spine-sync-20260913
+generated: 2026-09-20
+source_commit: dcf3477e
+source_branch: theory/ground-cycle-preobject-differentiation-20260914
 source_dirty: false
-inputs_digest: 39e8740593266483
+inputs_digest: 62a152e80ee33dd5
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 39e8740593266483
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-13 |
-| 来源 commit | `dd89ba05` |
-| 来源分支 | `theory/post-one-spine-sync-20260913` |
+| 生成日期 | 2026-09-20 |
+| 来源 commit | `dcf3477e` |
+| 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 

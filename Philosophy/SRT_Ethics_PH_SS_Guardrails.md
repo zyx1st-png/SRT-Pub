@@ -21,6 +21,7 @@ priority: high
 visibility: companion_to_ethics
 date: 2026-04-27
 dependency:
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
   - SRT-PHIL-ETHICS
   - SRT-ETHICS-AGENCY
   - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
@@ -29,21 +30,22 @@ dependency:
   - SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27
   - SRT-D-VALUE-CANONICAL
   - SRT-PSIF-CANONICAL
-  - Core_Law/SRT_Occlusion_Dynamics
-  - Core_Law/SRT_Suffering
+  - SRT-OCCLUSION-DYNAMICS
+  - SRT-SUFFERING
+  - SRT-IRREVERSIBILITY
 machine_summary: >
-  Companion guardrail file for SRT ethics. It prevents d-value expansion, L2 stabilization,
-  or moral intensity from being read as automatic moral legitimacy. It adds moral legitimacy
-  ladder, friction-export test, future-selectability test, cross-subject d-value bandwidth,
-  reversibility/correction channel, and formula-role guardrails for poetic or phenomenological
-  ethics formulas.
+  Downstream companion guardrail for SRT ethics. It blocks invalid inferences from d-value,
+  L2 stabilization, burden, occlusion, or moral intensity and supplies non-exhaustive candidate
+  evaluation lenses. It does not define moral legitimacy, responsibility, pathology, or O2-M.
 ---
 
 # SRT Ethics — PH-SS Guardrails Companion
 
-> **Purpose**: Harden the ethics layer against the is-ought gap, stability-as-goodness, d-value absolutism, and poetic-math overclaim.  
-> **Status**: Companion bridge file. It does not replace `SRT_Philosophy_Ethics.md` or `SRT_Ethics_Agency.md`.  
+> **Purpose**: Provide negative inference guardrails plus a declared-framework diagnostic toolkit against the is-ought gap, stability-as-goodness, d-value absolutism, and poetic-math overclaim.
+> **Status**: Downstream companion bridge file. It does not replace `SRT_Philosophy_Ethics.md` or `SRT_Ethics_Agency.md`, and it is not a positive morality solver. Cross-owner authority flows from `Core_Law/SRT_Generative_Ontology_Spine.md` and compatible local owners into this file, never in reverse.
 > **Use rule**: Read this before upgrading any ethics claim involving `d-value`, moral progress, virtue, love, grief, responsibility, agency, normativity, or social `L_2`.
+
+> **Controlling boundary (Wave E6)**: `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`. The lenses below do not define moral legitimacy, culpability, responsibility, pathology, evil, or a complete all-things-considered verdict. Exact Agency and universal FreeWill sufficiency remain OPEN. Primitive Selection is not `\hat{G}_\theta`, and Selection does not imply moral legitimacy.
 
 ---
 
@@ -54,8 +56,8 @@ SRT ethics should distinguish three things:
 ```text
 moral reality      = a value/norm/concern becomes real as a constraint;
 moral intensity    = the concern has high d-value or high affective / existential weight;
-moral legitimacy   = the concern or norm survives further tests of future selectability,
-                     friction distribution, cross-subject bandwidth, and correction.
+moral legitimacy   = the evaluative question under an independently declared normative framework;
+                     this file supplies candidate lenses, not its definition.
 ```
 
 Minimal warning:
@@ -66,7 +68,9 @@ Minimal warning:
 
 ---
 
-## 1. Moral legitimacy ladder
+## 1. Exploratory moral-legitimacy ladder
+
+This ladder is a framework-relative diagnostic scaffold, not a universal progression or verdict rule. Its labels do not establish necessary or sufficient conditions, and occlusion, coercion, cost export, or pathology language does not by itself decide `O2-M`.
 
 | Level | Name | Meaning | Status |
 |---|---|---|---|
@@ -82,9 +86,9 @@ Use rule:
 
 ---
 
-## 2. Legitimacy tests
+## 2. Candidate legitimacy lenses
 
-A stabilized norm or high-`d-value` concern becomes a **legitimacy candidate** only if it tends to pass these tests.
+The following are non-exhaustive questions that a declared normative framework may use. No lens is universally necessary; the set is not jointly sufficient and is not an `O2-M` algorithm.
 
 | Test | Question | Failure mode |
 |---|---|---|
@@ -93,7 +97,7 @@ A stabilized norm or high-`d-value` concern becomes a **legitimacy candidate** o
 | Cross-subject d-bandwidth test | Does it widen shared `d-value` recognition beyond the self / in-group? | narcissistic or tribal value expansion |
 | Subject-generation test | Does it protect the emergence of future subjects and agency? | paternalism, infantilization, subject suppression |
 | Reversibility / correction test | Can affected agents contest, exit, repair, or revise the norm? | frozen moral `L_2` |
-| Occlusion test | Does it hide alternatives, costs, or affected subjects? | structural evil / invisible harm |
+| Occlusion test | Does it hide alternatives, costs, or affected subjects? | occlusion concern / invisible-harm prompt; not an evil verdict |
 | Suffering-signal test | Does it suppress signal-type suffering instead of learning from it? | blind pain-minimization / structural blindness |
 
 ---
@@ -108,7 +112,7 @@ Moral progress iff d-value increases.
 
 This is too strong if read literally. Safer reading:
 
-> `d-value` expansion can be a necessary signal of moral widening, but it is not sufficient for moral legitimacy.
+> `d-value` expansion can be a candidate proxy for widening concern in a declared model; it is neither universally necessary nor sufficient for moral legitimacy or progress.
 
 ### Why not sufficient?
 
@@ -128,10 +132,12 @@ If retaining a formula, mark it as:
 Formula role: phenomenological / directional model, not a sufficient condition for moral legitimacy.
 ```
 
-Safer formulation:
+Bridge-safe formulation:
 
 ```text
-Moral legitimacy requires d-expansion + non-exported friction + future-selectability + correction channels.
+d-expansion, burden distribution, future-selectability, and correction channels are candidate
+evaluative dimensions inside a declared normative framework; they do not constitute a complete
+legitimacy theorem or O2-M procedure.
 ```
 
 ---
@@ -140,12 +146,14 @@ Moral legitimacy requires d-expansion + non-exported friction + future-selectabi
 
 ### Definition
 
-A norm, institution, relationship, or moral demand exports friction when it reduces apparent `Psi_f` for one operator by increasing hidden `Psi_f` for another.
+A norm, institution, relationship, or moral demand may be described in bridge shorthand as exporting friction when it lowers a visible burden for one position by displacing labor, shame, risk, opportunity loss, or other costs to another.
 
 ```text
-apparent moral order = low visible friction for dominant operator
-hidden moral cost    = displaced Psi_f borne by weaker / invisible operators
+apparent moral order = low visible burden for a dominant position
+hidden moral cost    = displaced burden / cost / friction proxy borne elsewhere
 ```
+
+This shorthand is not automatic bearer-to-bearer `Psi_f` transfer. Canonical `Psi_f` may be invoked only when payer/bearer, scope, closure, consequence return and payability are declared. Burden externalization does not by itself establish suffering externalization, oppression, injustice, evil, or an `O2-M` verdict.
 
 ### Examples
 
@@ -158,7 +166,7 @@ hidden moral cost    = displaced Psi_f borne by weaker / invisible operators
 
 ### Ethical guardrail
 
-> A moral norm that survives by exporting `Psi_f` is `L_2`-real but not thereby legitimate.
+> A moral norm that survives by displacing declared burden or cost is `L_2`-real but not thereby legitimate; this remains a candidate lens rather than an automatic verdict.
 
 ---
 
@@ -172,7 +180,7 @@ Ought(sigma) => exists theta_acc: P(sigma | theta_acc) > epsilon
 
 Safe reading:
 
-> An ethical demand is illegitimate or must be recalibrated if the demanded action is not selectable under the agent’s actual embodied, social, cognitive, and institutional constraints.
+> Accessibility/selectability is a candidate feasibility and fairness lens. A declared normative framework may use it to question or recalibrate a demand, but unselectability does not by itself settle legitimacy.
 
 ### Additions
 
@@ -190,10 +198,10 @@ theta_acc = embodied capacity
 
 ### Responsibility recalibration
 
-Responsibility should be reduced or redistributed when:
+The following are prompts for framework-relative responsibility review, not a universal subtraction rule:
 
 - selectable action-space is structurally blocked;
-- `Psi_f` is beyond payable range;
+- modeled burden appears beyond payable range;
 - `L_2` norms hide the actual constraint;
 - agents are assigned responsibility without agency;
 - the only selectable options are all harmful.
@@ -222,16 +230,18 @@ Formula role: phenomenological model / not literal divergence unless operational
 
 ## 7. Responsibility-bandwidth refinement
 
-Responsibility should not simply scale with `d-value`. High `d` can increase the moral weight of a situation, but responsibility depends on selectable agency.
+Responsibility must not simply scale with `d-value`; high `d` is neither responsibility nor blame. Selectable agency, knowledge, control, consequence return, payability and reselectability may be candidate evidence, while exact `O2-A` sufficiency remains open.
 
-Safer decomposition:
+Heuristic prompts only (the `~` marks do not define arithmetic or a universal verdict rule):
 
 ```text
 moral weight      ~ d-value / affected future-selectability
-responsibility    ~ accessible meta-selection capacity
-culpability       ~ responsibility - structural blockage - unpayable friction
-repair obligation ~ capacity to reduce future harm / restore selectability
+responsibility    ~ ask about agency, knowledge, control and available alternatives
+culpability       ~ ask how declared constraints affect the framework's attribution
+repair obligation ~ ask about relation, capacity, consequence return and repair pathways
 ```
+
+Meta-selection capacity alone is not responsibility; structural blockage or an unpayable burden does not mechanically subtract culpability, and repair capacity does not mechanically define obligation.
 
 ### Guardrail
 
@@ -286,7 +296,10 @@ SRT ethics becomes stronger when it says:
 ```text
 Norms can be real without being good.
 Values can be intense without being legitimate.
-Responsibility requires selectable agency.
-Moral progress requires future-selectability, non-exported friction, and correction channels.
+Inside a declared normative framework, Agency standing, knowledge, control, selectable alternatives,
+consequence return, payability, and reselectability may serve as candidate evidence for responsibility;
+none is universally necessary or sufficient, and exact O2-A admission remains OPEN.
+Future-selectability, burden distribution, and correction channels can be useful candidate lenses
+inside a declared normative framework; they do not define moral progress or legitimacy.
 Love and grief can carry ontological weight without requiring literal mathematical infinity.
 ```

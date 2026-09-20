@@ -93,7 +93,7 @@ Psi_f should be measured as a coupled latent variable, not as one local neural m
 Recommended insertion after N6 boundary cases:
 
 ```text
-N11 adds a temporal-accessibility dimension to conscious thickness. Conscious contents are not only stabilized and reportable; they also unfold within a transition field whose temporal structure reflects reachable change. Extreme subjective time dilation may indicate low transition accessibility; excessive compression may indicate saturation or failed integration. Stable consciousness therefore requires not only access, but a viable temporal window for transition and self-coherence.
+N11 adds a temporal-accessibility dimension to candidate conscious-thickness models. Conscious-content reports unfold within a transition field whose temporal structure may reflect reachable change. Extreme subjective time dilation may indicate low transition accessibility; excessive compression may indicate saturation or failed integration. A viable temporal window for transition and self-coherence is candidate evidence inside this declared model, not a universal requirement for consciousness.
 ```
 
 Purpose:

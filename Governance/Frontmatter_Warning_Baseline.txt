@@ -575,7 +575,6 @@ AI/Architecture_Split/02_Defects_and_CategoryView.md: status `active_v1` outside
 AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Architecture_Split/04_Roadmap_and_Appendix.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Architecture_Split/05_Interface_Additions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-AI/Architecture_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Consciousness_Annex/01_Controlled_Hallucination_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Consciousness_Annex/03_System_Derivation_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -591,9 +590,6 @@ AI/Ontology_Annex/01_ActiveInference_Override.md: status `active_v1` outside rat
 AI/Ontology_Annex/02_Passive_Recording_Fallacy.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Ontology_Annex/03_RTC_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Ontology_Annex/04_Suffering_Condition_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-AI/Ontology_Annex/General_Boundary_Block_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-AI/Ontology_Annex/General_Boundary_Block_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-AI/Ontology_Annex/General_Boundary_Block_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Ontology_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Ontology_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 AI/Ontology_Split/01_dValue_and_Decoupling.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -626,13 +622,6 @@ Core/Axioms_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|a
 Core/Axioms_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Axioms_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Axioms_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/04_InVitro_LowD_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/05_Type_to_Individual_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Dynamics_Scaling_Annex/06_Cognitive_Capitalization_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Annex/07_SelectionBarrier_L0L1_PriorSystem.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Annex/08_MoralPredictionError_MultiG_System.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Annex/09_ErrorAccumulation_L2Reconstruction.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -653,11 +642,6 @@ Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md: helper-layer file
 Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/04_Interface_Additions.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/README.md: helper-layer file uses claim_mode: canonical
-Core/Dynamics_Scaling_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Equations_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Equations_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Equations_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Equations_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Ontology_L0L1_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Ontology_L0L1_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Ontology_L0L1_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -665,10 +649,6 @@ Core/Ontology_L2_Split/00_Part01.md: status `active_v1` outside ratchet enum (dr
 Core/Ontology_L2_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Ontology_L2_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Ontology_L2_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Operator_Basics_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Operator_Basics_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Operator_Basics_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core/Operator_Basics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/SRT_Closure_Compatibility_Hardening.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/SRT_Core_00_Intro.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/SRT_Core_01_Axioms.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -859,11 +839,6 @@ Neuroscience/Immune_Dist_Split/00_Part01.md: status `active_v1` outside ratchet 
 Neuroscience/Immune_Dist_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/Immune_Dist_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/Neural_Mechanisms_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/Neural_Mechanisms_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/Neural_Mechanisms_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/Neural_Mechanisms_Split/03_Part04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/Neural_Mechanisms_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/README.md: missing frontmatter
 Neuroscience/SRT_Clin_00_IIT_PCI.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/SRT_Clin_01_Pathology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -1182,7 +1157,6 @@ Physics/Cosmology_Split/01_Thermo_Time_Gravity_Cosmology.md: status `active_v1` 
 Physics/Cosmology_Split/02_Cosmology_Extensions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/Cosmology_Split/03_Microgravity_and_Advanced_Claims.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/Cosmology_Split/04_Symbols_and_Interfaces.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Cosmology_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/Earth_Accretion_Annex/01_Reservoir_Selection_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/Earth_Accretion_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/Extensions/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -1200,9 +1174,6 @@ Physics/Formalism_Ext_Split/README.md: status `active_v1` outside ratchet enum (
 Physics/PHYSICS_COMPACT_REGISTRY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/QBox_Annex/01_QBox_Hyperdecoherence_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/QBox_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Quant_02_Cosmology_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Quant_02_Cosmology_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Quant_02_Cosmology_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/SRT_Phys_07_Complex_Systems.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -1225,9 +1196,6 @@ Physics/SRT_Quant_01_Selection.md: status `bridge_realign_v1` outside ratchet en
 Physics/SRT_Quant_01_Selection_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/SRT_Quant_02_Cosmology.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/SRT_Quant_02_Cosmology_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Selection_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Selection_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/Selection_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/_SRT_Phys_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/_SRT_Physics_Hardening_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
@@ -1361,12 +1329,6 @@ duplicate frontmatter id `SRT-BOOK-CH12-PAYABILITY-PATH`: 01_Source_Intuition/BO
 duplicate frontmatter id `SRT-BOOK-CH13-THREE-CRITERIA`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_pre_2026-05-20_style_philosophy_hardening.md
 duplicate frontmatter id `SRT-BOOK-CH13B-PART02-BRIDGE`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生_pre_2026-05-20_style_philosophy_hardening.md
 duplicate frontmatter id `SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06b_卷一小结_第一条生成链_pre_2026-05-20_style_philosophy_hardening.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md / Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md / Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md / Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md / Core/Dynamics_Scaling_Annex/04_InVitro_LowD_Batch.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/04_InVitro_LowD_Batch.md / Core/Dynamics_Scaling_Annex/05_Type_to_Individual_Batch.md
-duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/05_Type_to_Individual_Batch.md / Core/Dynamics_Scaling_Annex/06_Cognitive_Capitalization_Batch.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/06_Cognitive_Capitalization_Batch.md / Core/Dynamics_Scaling_Split/00_Formal_Core.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/00_Formal_Core.md / Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md / Core/Dynamics_Scaling_Split/02_Friction_Time_Awakening.md

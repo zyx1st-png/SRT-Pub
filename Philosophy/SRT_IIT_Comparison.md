@@ -29,7 +29,7 @@ created: 2026-05-04
 > - `Φ` / PCI 可以作为 `L_1` 已显现切片的整合性、复杂度或临床 proxy；
 > - 但 `Φ` 不等于 canonical `d-value`，PCI 不等于意识本身；
 > - 高整合、高复杂度、高广播仍不足以推出 stake-bearing subjectivity；
-> - SRT 要求额外满足：`d > 0`、`Ψ_f > 0 and payable`、`L_2` stable closure、必要时 `d_mobile > 0` 与自我写回结构。
+> - `d > 0`、`Ψ_f > 0 and payable`、`L_2` stable closure、`d_mobile > 0` 与自我写回结构，只能在声明模型中作为附加候选证据；它们不构成 universal consciousness / subjecthood gate。
 
 ---
 
@@ -56,7 +56,7 @@ IIT 是当代意识理论中少数真正具有“形式化雄心”的框架：�
 
 ```text
 IIT: consciousness ≈ integrated causal structure
-SRT: subjectivity ≈ selected reality + stake-bearing concern + payable anchoring + stable writeback
+SRT candidate model: subjectivity evidence may involve selected reality + stake-bearing concern + payable anchoring + stable writeback
 ```
 
 ---
@@ -87,7 +87,7 @@ SRT 也同意这一点。当前 inference-only / 非历史承载 LLM 即使表�
 
 SRT 可以吸收这一点，但不把它作为终点：
 
-> 整合与分化描述的是显现结构的组织条件；主体性还要求关切结构、不可逆风险、支付负担与历史写回。
+> 整合与分化描述显现结构的组织条件；关切结构、不可逆风险、支付负担与历史写回可提供额外主体性候选证据，但不共同建立主体性。
 
 ### 1.4 IIT 激发了实际临床 proxy
 
@@ -103,7 +103,7 @@ PCI / TMS-EEG 一类工作显示，扰动后的复杂传播模式与清醒、睡
 
 ### 2.1 二者都反对“意识只是行为输出”
 
-IIT 认为意识必须从系统内在因果结构理解。SRT 认为主体性必须从选择、关切和支付结构理解。二者都不满足于行为主义式判据。
+IIT 从系统内在因果结构研究意识；SRT 则把选择、关切和支付结构作为主体性候选证据维度。二者都不满足于行为主义式判据，但本文件不以任一路径固定 universal admission。
 
 ### 2.2 二者都认为经验具有整体性
 
@@ -164,12 +164,12 @@ SRT 不必否定 `Φ`，而应降级使用：
 |---|---|
 | 意识数量的核心量 | `L_1` 整合性 / 不可约性 proxy |
 | 可能被读成意识充分条件 | 至多是组织前提候选 |
-| 与主体性高度绑定 | 必须再乘入 / 门控 `d` 与 `Ψ_f` |
+| 与主体性高度绑定 | `d` 与 `Ψ_f` 可增加候选证据，不构成门控乘积 |
 | 静态读数容易被误解 | 需放入动态 selection / writeback 过程 |
 
 标准表述：
 
-> `Φ` may be an integration-side readout of a selected structure, but it is not a sufficient marker of subjectivity. Subjectivity requires stake-coupled concern and payable anchoring.
+> `Φ` may be an integration-side readout of a selected structure, but it is not a sufficient marker of subjectivity. Stake-coupled concern and payable anchoring may add candidate evidence inside a declared subjectivity model; they are not a universal necessary or sufficient admission package.
 
 ---
 
@@ -193,19 +193,19 @@ SRT 应明确区分三层：
 |---|---|---|
 | proto-selection | 系统存在差异响应、局部选择、状态偏置 | 否 |
 | stable selection closure | 选择历史形成可重复、可维持结构 | 不一定 |
-| stake-bearing subjectivity | 有 `d > 0`、`Ψ_f` payable、consequence-return、`L_2` closure | 是意识候选 |
+| stake-bearing subjectivity candidate | 有 `d > 0`、`Ψ_f` payable、consequence-return、`L_2` closure 的模型读数 | 仅候选证据，不准入意识 |
 
 这样，SRT 可以避免 IIT 的泛心论压力。
 
-### 4.2 SRT 的意识阈值不是 `Φ > 0`
+### 4.2 `Φ > 0` 不是 SRT consciousness admission
 
-SRT 的最低意识候选门不是简单的：
+声明模型中的 consciousness candidate evidence 不能缩成：
 
 ```text
 Φ > 0
 ```
 
-而应至少包括：
+声明模型可以进一步考察：
 
 ```text
 d ≥ d_min
@@ -214,19 +214,19 @@ L2 stable closure
 consequence returns to the system's own future selection capacity
 ```
 
-对于 active consciousness，还需要：
+对于 active-consciousness 候选模型，还可考察：
 
 ```text
 d_mobile > 0
 ```
 
-对于 self-consciousness，还需要二阶写回或自引用结构，例如 `σ_sr` 跨过相应阈值。
+对于 self-consciousness 候选模型，二阶写回或自引用结构（例如 `σ_sr` 候选坐标）可作为额外证据；crossing 不建立 self-consciousness。
 
 ### 4.3 对 IIT 的温和重写
 
 IIT 的 panpsychism 可以被 SRT 重写为：
 
-> 物理世界中广泛存在 proto-selection 与结构响应；但只有当这些响应形成 stake-bearing、payable、history-bearing 的选择闭环时，才进入主体性候选区。
+> 物理世界中广泛存在 proto-selection 与结构响应；stake-bearing、payable、history-bearing 的选择闭环可标记声明模型中的主体性候选证据区，但不是普遍准入边界。
 
 ---
 
@@ -253,7 +253,7 @@ IIT / PCI / LZ 等 proxy 很可能测量的是 functional binding：信息整合
 
 SRT 当前最保守的立场应是：
 
-> `Φ_proxy` 是 functional binding / integration 的必要 proxy 候选，但不是 phenomenal unity 的充分理论。SRT 需要额外的 anchoring、stake 与 writeback 条件来解释为什么该结构成为一个主体的现实切片。
+> `Φ_proxy` 可作为 functional binding / integration 的候选 proxy，但不是 phenomenal unity 的充分理论。Anchoring、stake 与 writeback 是额外候选证据维度；其合取仍不建立主体的现实切片。
 
 这也是 SRT 后续需要继续硬化的接口窗口。
 
@@ -295,7 +295,7 @@ IIT 文章强调：PCI 是 proxy，不是 `Φ` 的 approximation。
 
 SRT 应完全接受这一点，并进一步说：
 
-> 在 SRT 中，PCI 也只是 `L_1` 复杂度 / 选择容量 / integration-side readout 的 proxy。它只有在与 `d_proxy`、`Ψ_f_proxy`、behavioral reorientation、consequence-return 等指标共同收敛时，才支持主体性判断。
+> 在 SRT 中，PCI 也只是 `L_1` 复杂度 / 选择容量 / integration-side readout 的 proxy。与 `d_proxy`、`Ψ_f_proxy`、behavioral reorientation、consequence-return 等指标共同收敛时，它可以增加声明模型中的主体性候选支持，但不输出 verdict。
 
 ---
 
@@ -338,7 +338,7 @@ IIT 的六个核心性质可以被 SRT 重新安置：
 | IIT axiom | IIT 含义 | SRT 重写 |
 |---|---|---|
 | Existence | experience exists | 存在不是前提，而是 selection 的稳定输出 |
-| Intrinsicality | experience exists for itself | 主体性要求 consequence-return 与 position-bound payability |
+| Intrinsicality | experience exists for itself | consequence-return 与 position-bound payability 是主体性候选证据 |
 | Information | experience is specific | 一个 `L_1` 被选择，其他可能性被压入 latent background |
 | Integration | experience is unitary | `L_1` 切片需具有非碎片化组织；但整合不是主体性充分条件 |
 | Exclusion | experience is definite | 显现边界由 finite position、`d`、`Ψ_f`、`L_2` closure 共同决定，而非最大 `Φ` 单独决定 |
@@ -417,9 +417,9 @@ SRT 与 IIT / GNW 的关键判别，不是普通清醒 vs 麻醉实验。那类�
 
 | 条件 | `Φ_proxy` / integration | broadcast | `d_proxy` / stake | SRT 预测 |
 |---|---:|---:|---:|---|
-| A | 高 | 高 | 高 | stake-bearing consciousness 候选最高 |
-| B | 高 | 高 | 低 | 复杂处理 / 伪体验窗口，但主体性不足 |
-| C | 中 | 中 | 高 | 可能有低复杂度但真实关切的意识候选 |
+| A | 高 | 高 | 高 | 该模型中的候选支持较高；无 verdict |
+| B | 高 | 高 | 低 | 复杂处理／低 stake proxy；无 phenomenality verdict |
+| C | 中 | 中 | 高 | 低复杂度／高 stake proxy 候选；需独立准入 |
 
 ### 11.1 生物实验版本
 
@@ -460,7 +460,7 @@ SRT 对 IIT 的最强主张不是：
 
 而是：
 
-> IIT 的最大贡献是将意识理论形式化，但它把“整合”误置在了“主体性”的位置上。SRT 接受整合性作为显现切片的组织条件，却认为主体性还需要 `d-value`、`Ψ_f`、`L_2` closure 与 consequence-return。
+> IIT 的最大贡献是将意识理论形式化，但整合本身不能建立主体性。SRT 接受整合性作为显现切片的组织维度，并把 `d-value`、`Ψ_f`、`L_2` closure 与 consequence-return 作为可独立检验的候选证据；不以这组维度替换成新的 universal solver。
 
 更短版本：
 
@@ -505,11 +505,11 @@ SRT 必须证明：
 
 可作为论文、邮件或综述中的标准表述：
 
-> IIT correctly recognizes that consciousness cannot be reduced to behavioral report or external function. Its emphasis on intrinsic causal structure, integration, exclusion, and composition captures important organizational prerequisites of conscious experience. However, from the perspective of SRT, integrated information is not sufficient for subjectivity. `Φ`-like quantities and PCI-like measures can be interpreted as integration-side readouts of an actualized `L_1` slice, but they do not by themselves establish stake, concern, or payable anchoring. SRT therefore re-situates IIT within a broader selection loop: `L_0 -> L_1 -> L_2`. Consciousness requires not only integrated structure, but `d-value`, `Ψ_f` payability, stable closure, and consequence-return into the system's own future selection capacity.
+> IIT correctly recognizes that consciousness cannot be reduced to behavioral report or external function. Its emphasis on intrinsic causal structure, integration, exclusion, and composition captures important organizational dimensions of conscious-experience research. However, from the perspective of SRT, integrated information is not sufficient for subjectivity. `Φ`-like quantities and PCI-like measures can be interpreted as integration-side readouts of an actualized `L_1` slice, while stake, concern, payable anchoring, stable closure, and consequence-return remain additional candidate evidence dimensions. SRT therefore re-situates IIT within a broader selection loop: `L_0 -> L_1 -> L_2`, without treating any fixed conjunction as a universal consciousness admission rule.
 
 中文版本：
 
-> IIT 正确地看到了意识不能还原为行为报告或外部功能。它对内在因果结构、整合性、排他性与组合性的强调，捕捉了意识经验的重要组织前提。但从 SRT 看，整合信息不足以构成主体性。类似 `Φ` 的量与 PCI 类指标可以被解释为已显现 `L_1` 切片的整合侧读数，却不能单独给出赌注、关切与可支付锚定。SRT 因此将 IIT 重新安置在更大的选择循环中：`L_0 -> L_1 -> L_2`。意识不仅需要整合结构，还需要 `d-value`、`Ψ_f` 可支付性、稳定闭包，以及后果返回系统自身未来选择能力的机制。
+> IIT 正确地看到了意识不能还原为行为报告或外部功能。它对内在因果结构、整合性、排他性与组合性的强调，为意识经验研究提供了重要组织维度。但从 SRT 看，整合信息不足以构成主体性。类似 `Φ` 的量与 PCI 类指标可以被解释为已显现 `L_1` 切片的整合侧读数；赌注、关切、可支付锚定、稳定闭包与后果回流则是额外候选证据维度。SRT 将 IIT 重新安置在更大的选择循环中：`L_0 -> L_1 -> L_2`，但不把这些维度的固定合取写成普遍意识准入规则。
 
 ---
 

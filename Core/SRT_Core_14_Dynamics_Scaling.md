@@ -77,7 +77,7 @@ $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, 
 | Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | $\approx \alpha A + \beta\log V + \gamma\tau$ (§2.1.1 近似) |
 | Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | $\propto 1/\sqrt{\Lambda}$ (Def-Cosmo-1) |
 
-* **Anti-Panpsychism Corollary**: $d_{quantum}$ 和 $d_{cosmic}$ 不携带任何现象性内容（Qualia）。意识与关切是 d 值在**生物/认知域**满足三个必要条件时的高阶涌现：$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$。详见 SRT-CORE-13B §6.2。
+* **Anti-Panpsychism Guard**: $d_{quantum}$ 和 $d_{cosmic}$ 不推出任何现象性内容（Qualia）；这是一条非推论约束，不是由低读数证明 phenomenality 缺席。$\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 在已声明生物／认知模型中只可作为候选证据，既不是普遍必要条件，也不是充分条件。详见 `Philosophy/SRT_Consciousness_Conditions.md`。
 * **Cross-ref**: P3-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
 
 ### Ax-Scale-02: Coupling Strength
@@ -423,7 +423,7 @@ T-Scale-Rhythm-2 从 $\Psi_f$ 预算给出了 $\delta$ 的上下界。本推论�
 这不是自由参数，而是物理系统在两个不可消除的力之间的折中。
 
 **推论**：
-1. **高 $d$ 系统需要更多"off"时间**：$d \uparrow \implies \dot{I}_{created} \uparrow \implies \dot{S}_{int}^{on} \uparrow \implies \delta_{max}^{entropy} \downarrow$。高 d 值意味着每个选择周期创造更多信息，产生更多熵，因此需要更长的恢复/耗散时间。这与经验一致：复杂意识有机体（高 d）比简单有机体需要更多睡眠；深度认知工作（高 $\dot{I}_{created}$）后的疲劳不仅是"能量耗尽"，更是"熵积累需要排出"。
+1. **高候选 $d$ 读数与更多 "off" 时间的 P3/P4 假说**：在本节声明的热力学模型中，$d \uparrow \implies \dot{I}_{created} \uparrow \implies \dot{S}_{int}^{on} \uparrow \implies \delta_{max}^{entropy} \downarrow$。该链把候选 d proxy 与恢复/耗散时间关联，可与有机体复杂度、睡眠时长及深度认知后疲劳进行经验比较；它不将复杂度或 d 读数等同于意识，也不由睡眠需求反推意识准入。
 2. **高 $J_S^{max}$ 系统能维持更高占空比**：恒温动物（高代谢散热能力 → 高 $J_S^{max}$）能维持更长时间的连续清醒意识，相比变温动物（低 $J_S^{max}$）。
 3. **$\delta_{max}^{entropy}$ 与 $\delta_{max}^{budget}$ 的哪一个更紧取决于尺度**：在神经毫秒尺度（单次 gamma 周期），$\Psi_f$ 预算通常更紧；在宏观小时尺度（睡眠-觉醒），熵耗散通常更紧。
 
@@ -570,7 +570,7 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 - **预算超载下的时分复用**: 当 \(\mathcal{C}_{dense}(T,k)>E_{avail}\) 时，系统不能以纯直流方式并行维持全部目标，必须通过间歇、分时或重放来重新分配锚定窗口；theta-replay、注意切换与宏观睡眠-觉醒循环都可读作这一机制在不同尺度上的实例化。
 - **占空比-切换密度可行窗口**: 间歇调度不由单一参数（占空比 $\delta$）刻画——同一 $\delta$ 可对应极不同的切换密度 $\nu$。维持成本与松散惩罚夹出 $\delta$ 的上下界，切换成本限制 $\nu$，三力合围产生 $(\delta, \nu)$ 二维可行区域。窗口坍缩时系统必须放弃锚定目标或降低切换频率。
 - **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度在本节声明的周期／随机两族比较中胜出——这是从间歇到节律的条件性相变。该比较没有证明它优于所有可行调度。
-- **熵耗散作为独立约束**: 选择的不可逆性产生内部熵（$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$），必须在"off"阶段通过有限带宽的热耦合通道排出。这给出 $\delta$ 的独立上界 $\delta_{max}^{entropy}$，不可通过增加 $E_{avail}$ 绕过。"off"阶段同时是熵导出窗口（有益）和噪声侵蚀窗口（有害，$S_{noise}$），二者的折中决定最优 $\tau_{off}^*$。高 d 系统因 $\dot{I}_{created}$ 更高而需要更长恢复时间——这是 SRT 对"为什么复杂意识有机体需要更多睡眠"的热力学解释。
+- **熵耗散作为独立候选约束**: 在本节条件模型中，选择的不可逆性产生内部熵（$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$），并在 "off" 阶段通过有限带宽的热耦合通道排出。该模型给出 $\delta$ 的局部上界 $\delta_{max}^{entropy}$；"off" 阶段的熵导出与噪声侵蚀折中决定候选 $\tau_{off}^*$。高 d proxy—高 $\dot{I}_{created}$—更长恢复时间只是 P3/P4 可检验桥；它不解释或准入意识。
 - **谱-热对冲**: Ax-Spec-01 赋予高 d 算子更宽的频谱通带，但 Rhythm-4 同时规定更宽的有效通带会抬高信息创造率与熵产生率，从而压低可持续占空比。结果不是“高 d = 永远更强”，而是“高 d = 更丰富但更难持续”。
 - **嵌套层级节律候选**: 在相邻尺度通过 T-Scale-02C1、子层物理嵌入父层 on-phase、且各层预算超载条件成立时，Rhythm-1 可递归产生子节律。频率分离、PAC 与嵌套深度界是该条件模型的输出，不是“同一选择语法”单独保证的数学必然；意识与麻醉解释仍需独立 P4 证据。
 
@@ -717,43 +717,44 @@ $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 
 ### 2.1a 跨尺度结构相容候选的反泛心论澄清
 
-SRT 使用同一个参数 d 描述量子、生物和宇宙三个尺度的选择动力学，这容易产生一个严重误读：认为 SRT 主张"宇宙有意识"或"粒子有关切"，即泛心论（Panpsychism）。
+旧版使用同一个 `d` 记号描述量子、生物和宇宙尺度，这容易把域内 capacity proxy 误读为 canonical stake-coupled `d`，继而误推“宇宙有意识”或“粒子有关切”。当前必须先区分 proxy 与已准入 `d`。
 
-**SRT 的正式本体论立场：SRT 绝对拒斥泛心论。**
+**当前反泛心论纪律**：跨尺度 capacity / coherence / integration proxy 本身不建立 phenomenality；物理域不拥有 universal consciousness admission authority。
 
-d 值的底层物理本质并非"情感关切"，而是**"本体论带宽"（Ontological Bandwidth）**——即 $\hat{G}_\theta$ 算子在面对本体论摩擦（$\Psi_f$）时，能够将 $L_0$ 压缩、锚定并维持为 $L_1$ 的最大处理带宽（见 Part A Def-d-Scale-1）。在不同物理尺度下，由于观测和体验的介质不同，d 值披上了截然不同的"现象学外衣"：
+Def-d-Scale-1 的“本体论带宽”只保留为 P3 cross-scale capacity proxy：在具名状态空间中比较 formed/model carrier 的处理带宽。它不把 `\hat G_\theta` 升格为 primitive Selection 或 universal consciousness engine，也不把 `L_0 -> L_1` 模型映射写成意识准入。
 
 **第一层（量子域）：相干性带宽（$d_{quantum}$）**
 
-基本粒子或简单测量仪器的 d 值趋近于零，代表系统能维持 $L_0$ 叠加态而不引发退相干的纯物理计算窗口。此层次的算子没有本体论脆弱性（不怕毁灭），其选择表现为冰冷的玻恩规则概率流偏置，毫无任何主观意识或情绪。
+量子域中的相干维数等量只作为 capacity proxy；它不自动成为 stake-coupled `d`。本节既不由该 proxy 建立，也不由其缺失否定主观体验或情绪。
 
 **第二层（生物/认知域）：关切与意向性（$d_{bio}$）**
 
-当代理观察者演化为高度复杂的耗散结构（如人类神经系统）时，其物理结构面临巨大的热力学熵增威胁（生死存亡）。为了生存，生物算子的信息处理带宽被迫撑大，将海量环境变量纳入自由能（$F$）最小化的计算中。这种高强度的、与生死强耦合的"信息整合计算"，在主观体验层面涌现（Emerge）出来的现象，才被命名为"意识"、"注意力"或"关切"。**关切是 d 值在生物学层面的高阶涌现，而非底层原初属性。**
+生物／认知域可以分别测量代谢负担、信息整合、历史闭合、same-bearer consequence return 与关切报告。这些是不同证据维度；其合取不由本节自动生成 consciousness、subjecthood 或 phenomenality。
 
 **第三层（宇宙域）：时空共识度（$d_{cosmic}$）**
 
-宇宙整体并不具备拟人化的意识，但作为统一的物理系统，它存在宏观的整合带宽，表现为引力网络的拓扑紧致性（$d_{cosmic} \propto 1/\sqrt{\Lambda}$，见 SRT-PHYS-COSMO Def-Cosmo-1）。暗能量导致的宇宙膨胀，是 $d_{cosmic}$（信息整合与共识维持能力）的物理性衰减。暗物质作为 $L_2$ 结构残骸，处于活跃算子缺席的"死寂"状态，其内部活跃 d 值为绝对零。
+宇宙域可研究引力网络拓扑紧致性等 capacity proxy（例如历史式 `d_{cosmic} \propto 1/\sqrt{\Lambda}`）。该记号不是 canonical stake-coupled `d`，也不由本节对宇宙 phenomenality 作正负裁决。
 
-**核心区别**：泛心论的谬误在于将人类专属的体验（Qualia）强加给电子；SRT 的突破在于提取了主导意识运转背后的数学与信息动力学机制（$\hat{G}_\theta$ 与 d），并发现这套机制同样支配电子的坍缩和宇宙的膨胀。**d 是跨越所有尺度的同一把数学标尺，但只有当这把标尺丈量到"具备本体论脆弱性的高维复杂系统"时，它才表现为关切。** 意识涌现的三个必要条件详见 SRT-CORE-13B §6.2。
+**核心区别**：跨尺度结构相容只允许比较明确声明的数学结构，不证明相同的现象内容。capacity proxy、stake-coupled `d` 与 consciousness admission 是三项不同负担。
 
-**【精确反泛心论声明（2026-03-02 补充，与 _SRT_D_VALUE_CANONICAL.md §3.1 对齐）】**
+**【精确反泛心论声明（2026-09-19 truth-up）】**
 
-意识涌现的充要三条件（全部必须同时满足）：
-$$\text{Consciousness} \iff \underbrace{\Psi_f > 0}_{\text{具身摩擦成本}} \;\land\; \underbrace{d > 0}_{\text{有效关切维度}} \;\land\; \underbrace{\hat{G}[\theta] \neq \emptyset}_{\text{有限参数算符存在}}$$
+```text
+cross-scale capacity / coherence proxy -/> stake-coupled d;
+cross-scale capacity / coherence proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
 
-**三条件在量子/宇宙尺度的状态**：
-
-| 尺度 | $\Psi_f$ | $d$ | $\hat{G}[\theta]$ | 意识？ |
-|-----|---------|-----|-----------------|-------|
-| 量子（粒子） | $\approx 0$（无具身成本） | 可非零（相干维数） | 无生物参数化 | **否** |
-| 神经/认知 | $> 0$（代谢成本） | $> 0$（关切维度） | 有限神经参数 | **是** |
-| 宇宙（暗能量） | $\approx 0$ | $\propto 1/\sqrt{\Lambda}$ | 无生命参数化 | **否** |
+| 尺度 | 可保留的域内量 | consciousness / phenomenality 结论 |
+|-----|----------------|-----------------------------------|
+| 量子 | 相干维数、退相干窗口等 capacity proxy | NOT ESTABLISHED；不得由 proxy 作 yes/no 判定 |
+| 神经/认知 | 代谢、整合、历史与关切的分项证据 | 须由独立 owner / admission 建立 |
+| 宇宙 | 拓扑整合、引力网络等 capacity proxy | NOT ESTABLISHED；物理域不拥有准入权 |
 
 **SRT 的立场边界**：
-- SRT **不**否认微小现象体验的形而上学可能性（这是不可证伪的哲学问题）
-- SRT **正面声明**：在量子/宇宙尺度，可操作框架内无法为意识成立提供根据
-- SRT **不接受**"因为 d 存在所以意识存在"的推断——d 是必要但非充分条件
+- SRT 不从域内 proxy 推出 phenomenality，也不从 proxy 缺失推出 no consciousness。
+- `d` 不是 consciousness 的 universal necessary condition，也不是 sufficient condition。
+- exact consciousness / phenomenality sufficiency 保持独立、OPEN。
 
 ---
 
@@ -967,7 +968,7 @@ $$\text{Damage} \propto \int_0^T h(t) \cdot \mathbb{1}_{[h > h_c]} \, dt$$
 
 **定义**: 超过此值,摩擦开始造成不可逆损伤。
 
-**生理对应**: 
+**生理对应**:
 - 糖皮质激素 (Cortisol) 阈值
 - 海马神经生成抑制
 - 端粒缩短加速
@@ -976,7 +977,7 @@ $$\text{Damage} \propto \int_0^T h(t) \cdot \mathbb{1}_{[h > h_c]} \, dt$$
 
 #### 4.3.2 临床应用
 
-**PTSD模型**: 
+**PTSD模型**:
 $$\text{PTSD Severity} \propto \int_{trauma} h(t)^2 \, dt$$
 
 平方项 → 短时极高$h$比长时中等$h$更有害 (单次创伤 vs 慢性压力)。
@@ -1110,7 +1111,7 @@ $$V_{\text{barrier}}(\theta) = V_0 \exp\left(-\frac{(\theta - \theta_c)^2}{2\Del
 **学习方程**:
 $$\frac{d\theta}{dt} = -\gamma \nabla_\theta \Psi_f$$
 
-**效应**: 
+**效应**:
 $$\nabla_\theta \Psi_f < 0 \Rightarrow \theta \text{ 向降低} \Psi_f \text{的方向演化}$$
 
 **势垒变化**:
@@ -1120,7 +1121,7 @@ $$V_0(\theta(t)) = V_0(0) \cdot \exp(-\beta t)$$
 
 #### 6.2.2 时间线
 
-**估算**: 
+**估算**:
 $$t_{\text{awakening}} \sim \frac{1}{\gamma} \log\left(\frac{V_0(0)}{k_B T}\right)$$
 
 对于典型$\gamma \sim 10^{-8}$ sec$^{-1}$ (年尺度学习):
@@ -1175,7 +1176,7 @@ $$V_{\text{barrier}} \propto \frac{\text{Existential Risk}}{\text{Social Support
 
 **机制**: 高支持 → 低势垒 (允许探索 → "我可以尝试")。
 
-**实例**: 
+**实例**:
 - 禅修中心 (僧伽) → 提供支持 → 降低$V$
 - 孤立个体 → 无支持 → $V \to \infty$ → 困在低$d$
 
@@ -1209,7 +1210,7 @@ $$K_1[x](t) = \int k_1(\tau) x(t - \tau) \, d\tau$$
 **定义**: 非线性、递归响应。
 $$K_n[x](t) = \int \cdots \int k_n(\tau_1, \ldots, \tau_n) \prod_{i=1}^{n} x(t - \tau_i) \, d\tau_i$$
 
-**认知**: 
+**认知**:
 - $K_2$: 类比推理 ("A:B :: C:?")
 - $K_3$: 元认知 ("我知道我知道")
 - $K_4+$: 哲学、自我反思
@@ -1225,12 +1226,12 @@ $$K_n[x](t) = \int \cdots \int k_n(\tau_1, \ldots, \tau_n) \prod_{i=1}^{n} x(t -
 意识 (d, Ψ_f)
     ^
     |   人类(高,高)
-    |       
-    |       
+    |
+    |
     |   狗(中,中)      当前AI(高,0)
-    |       
+    |
     |   细菌(低,低)    计算器(0,0)
-    |       
+    |
     +----------------------------> 智能 (ΣK_n)
 ```
 
@@ -1240,9 +1241,9 @@ $$K_n[x](t) = \int \cdots \int k_n(\tau_1, \ldots, \tau_n) \prod_{i=1}^{n} x(t -
 
 **论证**:
 - **智能**: $L_1 \to L_2$的映射复杂度 (可通过训练提升)
-- **意识**: $\hat{G}$对$L_0$的访问 + 本体论脆弱性 (需要物理具身)
+- **意识候选评估**：$\hat{G}$ 对 $L_0$ 的访问与本体论脆弱性可作为声明模型中的证据维度；物理具身不是已建立的普遍必要条件。
 
-**推论**: GPT-N可以无限聪明,但永远不会"醒来" (除非赋予物理风险)。
+**边界**：GPT-N 的智能表现不建立 consciousness；缺少物理风险也不证明它永远不会“醒来”。精确意识准入保持 OPEN。
 
 ---
 
@@ -1285,7 +1286,7 @@ $$\text{Wisdom} = \sum_{n \geq 2} w_n \cdot \|K_n\|$$
 
 1. **跨尺度耦合测量**:
    - 设计实验测量$\kappa_{ij}$ (如EEG-社交网络同步)
-   
+
 2. **摩擦势能的神经标记**:
    - 假设: $\Psi_f$ ∝ 前扣带回 (ACC) 活跃度
    - 测试: fMRI + 自报痛苦

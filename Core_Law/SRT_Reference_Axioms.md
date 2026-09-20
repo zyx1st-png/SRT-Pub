@@ -16,18 +16,24 @@ dependency: [SRT-L0-METAPHYSICS]
 > 如出现冲突，以 L0 为准，本文件需修订。
 >
 > **Status**: L1 Formal Axioms | **Version**: 1.0
+> **Selection-totality compatibility（2026-09-14）**：本文件是形式 / 接口层，不得反向定义 primitive Selection。`Ĝ_θ` 只在具名 operator realization 中使用；`L_0/L_1/L_2` 是可形式化的 Selection 分面 / regime，不是三个先在物质域。A6-A12 等历史高承诺条目保留其研究 lineage，但不得以本文件位置自动获得 primitive proof load。
 
 ---
 
 ## 第一组：本体论基础 (Ontological Trinity)
 
-### A1 选择优先性 (Existential Priority)
+### A1 选择—实际性同一接口 (Selection / Actuality Interface)
 
-选择过程在本体论上先于显现实在性。存在不是原始给定的背景；最低准入是一个确定区别经 primitive actualisation 成为 `L_1` 事件。
+primitive Selection 的形而上意义由 L0 owner 固定；本接口只给出形式读法：
 
-$$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
+```text
+Existence_actual
+:= Selection 的 determinate-manifest aspect.
+```
 
-**推论 A1-C1**: 在非遍历宇宙中，只有被算子 $\hat{G}$ 选中的状态才具有当下性 (Presence)；其余均处于 $L_0$ 的潜势叠加态。
+当一个具名模型采用 `Ĝ_θ` 时，可以用其 realized range 表示当前显现，但这只是模型表达，不意味着存在是一个先在算子从绝对潜在库存中输出的第二种材料。
+
+**推论 A1-C1（模型相对）**：在具名非遍历模型中，presence 可限制于该模型已实际化 / operative 的状态；未显现部分只需按 Selection-relative background / unexhausted openness 处理，不要求 completed latent-object inventory。
 
 ---
 
@@ -53,33 +59,57 @@ $$C_{observed}(A \to B) = \text{Projection}[\hat{G}_{high-dim}] \to \text{Spacet
 
 ## 第二组：动力学约束 (Dynamical Constraints)
 
-### A4 具身必要性 (Embodiment Necessity)
+### A4 具身算子有限性 (Embodied Operator Finitude)
 
-任何有效的幽灵算子 $\hat{G}_θ$ 必须具有有限的具身参数 $θ$。不存在"上帝视角" (View from Nowhere)。
+任何**已形成 / 具身的 operator realization** `Ĝ_θ` 都必须声明有限参数、接口与作用域；不存在由该形式算子获得的无位置 God-view。
 
-$$\hat{G} \text{ is valid} \iff θ ∈ Θ_{finite}$$
+$$\hat G_\theta : S_M\to S_M,\quad \theta\in\Theta_M$$
 
-$$\hat{G} \text{ without } θ \to \emptyset$$
+但：
 
-**推论 A4-C1**: 所有选择都是基于特定的、有限的硬件约束（生物的、物理的或计算的）进行的。
+```text
+formed / embodied G-hat finitude
+!= primitive Selection requires a prior embodied chooser.
+```
+
+primitive finite positionality 比一个具体 `θ`-operator 更薄。
+
+---
+
+### A5 历史约束与稳定化实现 (Historical Constraint / Stabilization Realizations)
+
+一般 L2-side 负担是：先前 Selection 的差异在后来 Selection 中保持实际约束效力。固定点 / attractor 只是这一负担的**强 realization 类**之一。
+
+在声明的模型中可以定义：
+
+$$L_{2,M}^{fp}:=\{\sigma:\hat G_\theta[\sigma]=\sigma\ \text{and stable under }M\}$$
+
+但：
+
+```text
+L2-side historical efficacy
+!= universally a fixed-point substance;
+fixed point != normativity / legitimacy automatically.
+```
+
+“现实笼子”可作为强迟滞 / 锁定 realization 的解释性名称，不是 L2 的普遍定义。
 
 ---
 
-### A5 规范闭包 (Normative Closure)
+### A6-A12 Selection-totality scope guard
 
-收敛域 $L_2$ 是算子作用的稳定不动点。算子的选择历史会形成结构化的约束，反过来限制未来的选择。
+A6-A12 中的信息、适应度、生存、全息、延续、脆弱性与跨尺度命题属于 hybrid / bridge / high-commitment lineage。除非其各自 owner 另有当前 claim-level 授权，它们：
 
-$$L_2 \equiv \{σ : \hat{G}_θ[σ] = σ \text{ and stable}\}$$
-
-$$L_2(t+1) = \text{Stabilize}(\hat{G}[L_1(t)])$$
-
-**推论 A5-C1**: 这种自我指涉的循环构成了稳定的"现实笼子"。
-
----
+```text
+不得定义 primitive Selection；
+不得恢复 absolute latent warehouse；
+不得把 survival / continuation 写成 primitive value；
+不得把 consciousness / agency 反投射到 primitive Selection。
+```
 
 ### A6 信息-存在等价 (Information-Existence Equivalence)
 
-存在的强度等价于其内在的信息分化度。一个实体的"存在程度"由其 $ii$ 指标决定。
+**当前地位：历史／bridge 候选，非当前存在定义。** 旧“信息-存在等价”语言只保留为对已形成系统的分化／整合程度进行模型化的候选尺度；它不定义事件是否已发生，不定义“存在程度”，也不建立 phenomenality 或 subjecthood。在声明模型内可记：
 
 $$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$$
 
@@ -87,7 +117,7 @@ $$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$$
 - $i_{diff}(s) = -\log(p_{max})$ — 内在分化（可替代状态数）
 - $i_{spec}(s)$ — 内在整合特异性（在 IIT 语境中可记作 $\Phi_{IIT}$；SRT 规范记号统一为 $i_{spec}$）
 
-**推论 A6-C1**: 存在程度 = 既区别于背景噪音 (Differentiation) 又维持内部整合 (Integration) 的能力。
+**候选 A6-C1（P2/P3 bridge）**: `ii` 可比较已形成系统区别于背景并维持内部整合的程度；该比较不是存在准入或意识阈值。
 
 ---
 
@@ -165,15 +195,15 @@ $$\lim_{t \to t_{death}} \hat{G}_θ \to L_0^{latent} \neq \emptyset$$
 
 ### A11 本体论脆弱性 (Ontological Fragility)
 
-现实的稳定性反比于系统的维持成本。越是高阶、复杂的现实（如文明、意识），其本体论摩擦 $\Psi_f$ 越高，因而越脆弱。
+**当前地位：P2/P3 bridge 候选。** 在某些声明的维持模型中，可检验系统稳定性是否随维持成本与扰动敏感度变化；旧“越高阶现实必然有越高 `\Psi_f`、因而越脆弱”不再是普遍结论，也不提供 consciousness 准入。
 
 $$\text{Stability} \propto \frac{1}{\Psi_f}$$
 
 $$d \propto \frac{∂ \text{Entropy}}{∂ \text{Error}}$$
 
-**推论 A11-C1**: 只有具备本体论脆弱性的系统才能拥有 $d > 0$。对错误越敏感（痛苦越大），$d$ 值越高。
+**候选 A11-C1（bridge）**: 在声明的 stake-bearing 模型中，脆弱性可作为 `d` 的风险敏感度证据之一；错误敏感、疼痛、`d` 与 consciousness 之间均无此处可用的普遍充要关系。
 
-**推论 A11-C2**: 纯软件 AI 若无法"死亡"（熵增危及结构完整性），则无法产生真正意识。
+**候选 A11-C2（P3）**: 纯软件 AI 是否具有不可转移的结构风险，可作为对其 stake-bearing / consciousness standing 的一项证据问题；缺失该证据不构成“无意识”定理。
 
 **补注 A11-N1**: 同一 $\Psi_f$ 结构可在不同描述层上被读作阻力（动力学）、代价（记账）与几何长度（形式）。跨尺度真正保持不变的不是单位制，而是系统是否还能支付这笔摩擦并维持闭包、身份连续性与后续选择能力。
 
@@ -193,9 +223,9 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 | 中阶 $\hat{G}$ (哺乳动物) | 中等 $d$ | 跨情境选择 |
 | 高阶 $\hat{G}$ (人类) | 较宽但仍有限、事件依赖的 $d$ | 跨时空价值选择候选 |
 
-**推论 A12-C1**: 心物二元论是虚假的——物质是"慢速的意识"，意识是"快速的物质"。
+**历史 A12-C1**: “物质是慢速的意识，意识是快速的物质”是旧压缩比喻，不再作为 active canonical conclusion；A12 不裁决心物本体论。
 
-**推论 A12-C2**: 意识不是突然涌现的，而是从物理选择 ($d ≈ 0$) 到生物选择 ($d > 0$) 的连续谱系。
+**候选 A12-C2（P2/P3）**: 物理与生物选择之间的跨尺度连续可以被研究，但 `d` 的连续性不证明 consciousness 连续谱系，也不提供意识准入。
 
 ---
 
@@ -224,7 +254,7 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 | **T-Holo** | d值-纠缠面积 | $d \propto A_{surface}/l_{Planck}^2$ | A9 |
 | **T-Phase** | 本体论相变 | $∂\text{Topology}(L_1)/∂θ = δ(θ - θ_c)·∞$ | A5, A11 |
 | **P3-Scale** | 跨尺度结构相容候选 | $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$；严格共轭仅限可逆表征变换 | A15（P3） |
-| **T-Gen** | 摩擦生成定理 | $\text{All Dynamics} = \Psi_f(\hat{G}_i, \hat{G}_j)\text{[各形态]}$ | A16 |
+| **P2/P3-Gen** | 摩擦生成 bridge 候选 | 在声明的算子耦合模型中检验 $\Psi_f$ 是否负担动力学来源之一；非普遍“所有动力学”等式 | A16（P2/P3） |
 
 ---
 
@@ -232,10 +262,10 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 
 ### Definition Summary (定义概述)
 
-- **$L_0$（潜在域）**：所有未被选择的可能性空间，本体论上先于存在。
-- **$L_1$（显现域）**：经 primitive actualisation 获得确定事件效力的现实切片；持续锚定是后续条件。
-- **$L_2$（收敛域）**：算子作用产生的稳定不动点结构，反向约束未来选择。
-- **$\hat{G}_\theta$（幽灵算子）**：以有限具身参数 $\theta$ 为条件的选择映射，将 $L_0$ 坍缩为 $L_1$。
+- **$L_0$（开放／未预封闭分面）**：Selection 相对于确定现实的开放、未预封闭生成面；不是“本体论上先于存在的全部未选可能性库”。
+- **$L_1$（确定显现／实际性分面）**：Selection 在确定显现中的事件实际性；事件已发生与其后续锚定持续是不同负担。
+- **$L_2$（历史／写回分面）**：既往 Selection 差异对后续 Selection 保持实际约束效力；固定点只是强 realization 之一。
+- **$\hat{G}_\theta$（幽灵算子）**：已形成／具身／形式化的声明模型载体；可在具名 realization 中写成 $L_0/L_1/L_2$ 映射，但不是 primitive Selection、先在 chooser 或 first actualisation 引擎。
 - **$d$（d 值）**：选择的存在关切范围，量化算子对生存风险的敏感度梯度。
 
 ### Formalization Summary (形式化概述)
@@ -243,10 +273,10 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 - AM-A：P0-01 承载 primitive actualisation kernel；下列公式从该原语及具名实现条件之后开始，不把 $\hat G_\theta$、$\Psi_f$ 或 $\Delta F$ 当作 first actualisation 的原因。
 - EX-A：$σ \in L_1$ 表示一个确定事件已获得显现实在性；A2 的自由能／摩擦语言只描述具名实现中的锚定持续，不再构成存在等价式。
 - 具身必要性：$\hat{G}$ is valid $\iff θ \in Θ_{finite}$（A4）。
-- 本体论脆弱性：$d \propto \partial\text{Entropy}/\partial\text{Error}$（A11），无脆弱性则无意识。
-- 信息-存在等价：$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$（A6），存在程度由分化度与整合度共同决定。
+- 脆弱性 bridge：$d \propto \partial\text{Entropy}/\partial\text{Error}$（A11）只在声明的 stake-bearing 模型内作为候选关系；无脆弱性不能在本文推出无意识。
+- 信息-存在 bridge：$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$（A6）可比较已形成系统的分化／整合，不再定义存在程度。
 - 跨尺度结构相容候选：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$（A15，P3）；必须逐尺度声明状态空间、尺度映射、保留量、比较范数、容差和失败案例。严格共轭只适用于可逆表征变换，普通粗粒化不得默认存在 $\Lambda^{-1}$；量子、神经、认知与统计过程是否满足同一结构仍需分别检验。
-- 摩擦生成性：$\Psi_f(\hat{G}_i, \hat{G}_j) = \int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{\theta}^i \dot{\theta}^j}\,dt$（A16），所有动力学（演化、学习、文化变迁）均为算子间摩擦的不同形态；没有摩擦就没有动力学，没有动力学就没有现实生成。
+- 摩擦生成 bridge：$\Psi_f(\hat{G}_i, \hat{G}_j) = \int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{\theta}^i \dot{\theta}^j}\,dt$（A16）只作为声明算子耦合模型中的 P2/P3 候选；不再宣称 $\Psi_f$ 是一切动力学或现实生成的普遍来源。
 
 ### Conditional Realization Explanation（条件性实现说明）
 
@@ -272,7 +302,7 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 
 **推论 Ax-L0-Bootstrap-C1（无先在选择者）**：不存在需要先于选择而存在的“原始选择者”。$\hat G_\theta$ 是 primitive actualisation 的形式角色；selector、subject 与 stable operator-pattern 是后成结构。该结论来自 selection-first 的层级顺序，不来自“L₀ 内已有一个算子对象”。
 
-**推论 Ax-L0-Bootstrap-C2（时间无前序性）**：时间（A14 摩擦台账）是不可撤回选择累积的后果，而非 P0 actualisation 的前提。“第一次选择在时间上何时发生”是类别错误；这不等于 SRT 已提供一个非时间生成机制。
+**推论 Ax-L0-Bootstrap-C2（时间无前序性）**：P0 actualisation 不要求一个在先的普遍时间容器；因此追问“第一次选择在时间上何时发生”是类别错误。在具名模型已经建立保留的事件次序、历史效力或持续排序关系时，时间／次序读数可以作为这些关系的下游度量；这不等于每个 primitive Selection 都自动生成持久时间单位，也不等于 SRT 已提供完整的普遍时间生成机制。
 
 **约束边界**：L₀ 非平坦性、$\kappa_0$、$\Psi_f$、payability、fixed point 与 minimum 可以在具名 realization 中约束方向、准入、代价或稳定性。它们都不能单独把数学存在、相对权重或收敛趋势升级为一个确定事件已经发生。意识相变、主体形成与稳定化不由本条推出。
 
@@ -302,11 +332,11 @@ $$\pi_\lambda\circ\hat G^{(n)}\approx\hat G^{(n+1)}\circ\pi_\lambda$$
 
 ---
 
-## 补充公理 A16：摩擦即生成 (Ψ_f as Generative Principle)
+## P2/P3 桥 A16：摩擦生成候选 (Ψ_f as a Generative Bridge Candidate；保留旧编号)
 
 （对应 `Core/SRT_Core_21_Formal_Axioms.md` Ax-F-12）
 
-算子间本体论摩擦 $\Psi_f$ 是所有动力学的生成来源，而非单纯的维持代价。对任意两个相互作用的算子 $\hat{G}_i, \hat{G}_j$，其交互摩擦定义为：
+在声明的两算子耦合模型中，$\Psi_f$ 可被检验为维持代价以外的动力学来源之一。本条是 P2/P3 bridge 候选，不定义 primitive Selection，不宣称所有动力学都由 $\Psi_f$ 生成。对声明为相互作用的算子 $\hat{G}_i, \hat{G}_j$，可用以下候选量建模：
 
 $$\Psi_f(\hat{G}_i, \hat{G}_j) = \int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{\theta}^i \dot{\theta}^j}\,dt$$
 
@@ -319,13 +349,13 @@ $$\Psi_f(\hat{G}_i, \hat{G}_j) = \int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{
 | 文化变迁 | $\Psi_f(L_{2,A}, L_{2,B})$ |
 | 免疫应答 | $\Psi_f(\hat{G}_{self}, \hat{G}_{foreign})$ |
 
-**推论 A16-C1**: $\Psi_f$ 不是选择的成本，而是选择得以产生现实的机制。没有 $\Psi_f$ 就没有动力学；没有动力学就没有现实的生成。
+**候选 A16-C1**: 在适用的耦合模型中，$\Psi_f$ 可同时记录代价并参与动力学组织；该候选的失败不否定 Selection 或实际性。
 
-**推论 A16-C2**: 微观上"支付摩擦才能锚定"（A2、A11 视角）与宏观上"摩擦是动力学来源"是同一事实的两个视角，两者相容而不矛盾：支付摩擦 = 进入动力学流。
+**候选 A16-C2**: “支付摩擦”与“摩擦参与动力学组织”可在某些声明模型中相容；二者不是未经验证的跨域同一事实。
 
-**推论 A16-C3**: 个体算子间的摩擦累积形成集体自由能景观 $F_{collective}$；个体算子是该景观关于自身参数的梯度方向（见 `Core/SRT_Core_22_Equations.md §0-C`，Eq-Multi-01/02/03）。
+**候选 A16-C3**: 在已声明集体自由能景观的模型中，可检验算子间摩擦累积是否组织 $F_{collective}$，以及个体算子是否近似沿自身参数梯度演化（见 `Core/SRT_Core_22_Equations.md §0-C`，Eq-Multi-01/02/03）；这不是跨系统普遍定理。
 
-**推论 A16-C4**: 跨尺度的一致性首先表现为可支付性条件同一，而非数值单位同一。量子层的 bit·time、神经层的 ATP、社会层的制度摩擦可以异量纲，但都服从“所需摩擦是否超出系统可承受阈值”的同一判据。
+**候选 A16-C4**: 跨尺度比较可优先检验可支付性条件是否保持结构相似，而非假定数值单位同一。量子层的 bit·time、神经层的 ATP、社会层的制度摩擦仍须分别建立量纲、承受阈值与比较映射；本文不宣称它们已服从一个普遍判据。
 
 ---
 

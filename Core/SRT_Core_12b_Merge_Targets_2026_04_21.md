@@ -22,17 +22,17 @@ dependency: [SRT-CORE-12B, SRT-CORE-12B-CCA, SRT-CLOSURE-COMPAT-HARDENING]
 
 To prevent slippage between irreversibility, closure, and full L₂ backgrounding, read the ladder as follows:
 
-1. **Trace floor**: every real selection can leave a trace — this is the irreversibility minimum.
-2. **Minimal closure**: a trace becomes closure only when prior traversal begins to **systematically lower `Ψ_f` for compatible subsequent traversals**.
-3. **L₂-grade closure**: closure becomes L₂-grade only when that low-friction path also becomes **inheritable, shareable, and backgrounded**.
-4. **Scaffold threshold**: crossing $\rho^*$ marks the transition from foreground event to background scaffold.
+1. **Event-level non-erasure**: a Selection event that occurred is not identical to never-having-occurred; occurrence alone does not establish a durable trace or `L₂` writeback.
+2. **Retained / model-local trace**: a trace is admitted only when an explicit retention / writeback mapping or later material efficacy is established.
+3. **Minimal closure**: a retained trace becomes closure only when prior traversal begins to **systematically lower `Ψ_f` for compatible subsequent traversals**.
+4. **L₂-grade closure**: closure becomes L₂-grade only when that low-friction path also becomes **inheritable, shareable, and backgrounded**; crossing $\rho^*$ is this model's scaffold threshold.
 
 Compressed form:
 
-> **选择都会留痕；只有当留痕开始系统性降低兼容后续选择的 `Ψ_f` 时，才构成闭包；只有当这种低摩擦路径可继承、可共享并被背景化时，才构成 L₂ 级闭包。**
+> **选择发生过不等于从未发生；只有在显式保留／写回关系或后续实质效力成立时，才准入模型内 trace；该 trace 系统性影响兼容后续选择时才构成闭包；可继承、可共享并被背景化时才构成 L₂ 级闭包。**
 
 This note sharpens the reading of Ax-L2-01 and T-L2-Scaffold:
-- Ax-L2-01 gives the universal trace law;
+- Ax-L2-01 gives a declared retention-model accumulation law;
 - T-L2-Scaffold gives the dominant ratchet by which some closures become background;
 - the distinction between trace, closure, and L₂-grade scaffold must not be collapsed.
 

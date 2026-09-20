@@ -1,428 +1,377 @@
 ---
 id: SRT-IRREVERSIBILITY
 type: theory
-tags: [Irreversibility, L0, Learning, Termination, Death, Epsilon, ISP, L1]
-status: draft_v0
+tags: [Irreversibility, Occurrence, History, Learning, Termination, L1]
+status: active
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-claim_level: P1-candidate
-dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-L1-FORMALISM, SRT-COLLECTIVE-SELECTION, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+claim_level: mixed_P0_P1_remainder_P2_P3_bridge
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CORE-21C-BRIDGE-HYPOTHESES, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
 ---
 
-# SRT Irreversibility: L_0 Irreversibility in L1 Expansion (Learning and Termination)
+# SRT Irreversibility: occurrence, retained history, and declared terminal dynamics
 
-> **Role**: L1 canonical theory of L_0 irreversibility's L1 consequences. Consolidates two previously scattered themes—**learning under irreversibility** (`\Psi_f` 的时间方向性不可还原为热力学类比) 与 **termination / death as absorbing boundary**（ISP 终止作为 L_0 吸收态的特殊情形）。Its unconditional base is P0-03 / the P1 absorption remainder, not the former P1-T07 anti-closure theorem.
-> **Claim-level note**：吸收后的不可自发恢复按 P1 remainder 读；`Ψ_f` 时间方向性、具体终止类型与反闭合机制分别按 P1-candidate / P2/P3 conditional candidate；具体物理 / 生物 / 临床应用按 P3/P4，下推至 Physics / Neuroscience / Philosophy 既有文件。
-> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP 或 generative reselectability；它们的定义仍以对应 canonical 为准。
-> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T02、P1-T06 与 former P1-T07 的吸收 remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A 条件候选）、`Core_Law/SRT_L1_Formalism.md §4.3`、`Core_Law/SRT_Suffering.md`、`Core_Law/SRT_Collective_Selection.md`。
-> **Relation**: This file does not replace `Philosophy/SRT_Ethics_Agency.md`（责任 / 死亡的规范性）、`Spirituality/`（临终 / 终结的 praxis）或 `Physics/*`（热力学第二定律的 SRT 读法）；它在它们之前，固定"L_0 不可逆性在 L1 如何显现"的结构层读法。
-
----
-
-## §0. 问题定位
-
-原 P1-T07 曾把 L_0 不可逆性当作 ε 反闭合必要性的关键前提。ST-A（2026-08-11）已裁决：不可逆性足以支持“到达吸收态后不能由该历史自行恢复”，但不能证明 ε-neutral kernel 必然或高概率到达吸收态。本文据此分开无条件吸收层与条件性反闭合层。
-
-- **L_0 不可逆性**在 `Core_Law/SRT_L0_Metaphysics.md` 中作为本体层性质固定，未在 L1 展开
-- **`Ψ_f` 的时间方向性**在 `_SRT_PSI_F_CANONICAL.md` 中作为 canonical interpretation 出现，但仍与物理热力学箭头混层
-- **死亡 / 终止**只在 Philosophy / Spirituality 应用层碎片化出现，没有结构对象
-- **学习的不可逆性**在 Neuroscience / AI 中用"记忆 / 痕迹"处理，但没有与 L_0 irreversibility 的结构联系
-- **`SRT_L1_Formalism.md §4.3`** 的结构型苦难非守恒项 `\mathbb{1}[d\le d_c]\cdot S_{sig}` **依赖** L_0 不可逆性，但未明写
-
-本文件填补的是不可逆性的 L1 展开缺口。它**不重写** L_0 不可逆性本体层，也**不修复或复活**原 P1-T07；任何 neutral-kernel anti-closure 结论都回到 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`。
-
----
-
-## §1. Def-IRR：L_0 不可逆性的 L1 读法
-
-### Def-IRR-1：吸收态存在性
-
-对任何 ISP `P`，选择空间 `A_t` 在 `L_0` 不可逆性下存在**吸收态结构**：
-
-$$
-\exists\,\mathbf{A}^{\dagger} \subseteq \{\text{states of }A_t\}\,:\; P \in \mathbf{A}^{\dagger} \Rightarrow P(t+\Delta t) \in \mathbf{A}^{\dagger}\;\forall \Delta t > 0
-$$
-
-Canonical case:
-- `A_t = \emptyset`（选择空间塌空，对应 ISP 终止）.
-
-Conditional model candidates:
-- B 期锁死（`d \le d_c` 且三通道同时为零）;
-- `σ_{sr} = 1` 完全自指闭合;
-- 集体 `M(t)` 崩解到全零.
-
-后三者只有在给定转移核、外部环境、无重置条件与时间窗后被证明不可离开，才可称吸收态；阈值、固定点或病理标签本身不够。
-
-### Def-IRR-2：不可逆性箭头作为选择历史
-
-L_0 不可逆性在 L1 表现为：**选择历史对未来选择空间的非对称约束**。
-
-$$
-\forall t_1 < t_2\,:\; \text{selections in }[t_1, t_2] \text{ can constrain }A_{t_3 > t_2}\,\text{ but cannot unconstrain anything in }A_{t < t_1}
-$$
-
-这是 P1-T02 ontological time（作为 memory horizon）的不可逆性侧面。时间不是独立背景，而是"已做过的选择不能被撤销"这一结构的参数化。
-
-### Def-IRR-3：可逆闭包的不存在
-
-不存在任何 `\hat{G}_\theta` 操作能把历史选择的后果**回收为 0**。可以被做的是：
-
-- 支付（`\Psi_f` 消化），但支付本身是新的选择，不是回溯
-- 补偿（把后果的残余压力吸收到新路径），但补偿不等于撤销
-- 外部化（后果落到其他 `P`），但这是 `M(t)` 路径，不是本地回溯
-
-这是 `Ψ_f` 时间方向性的结构层根据——不是热力学类比，而是 L_0 irreversibility 在支付代价层的直接投影。
-
----
-
-## §2. T-IRR-1：学习作为不对称支付
-
-### 陈述
-
-对稳定 ISP `P`，学习（`\theta^{trace}` 的累积更新）在 L_0 不可逆性下是**严格不对称的 `\Psi_f` 支付过程**：
-
-$$
-\text{Learning}(t_1 \to t_2) \;=\; \int_{t_1}^{t_2} \Big[\,\alpha \cdot w(s) \cdot \phi(\sigma_{sr}(s)) \,\Big]\,ds \;-\; \int_{t_1}^{t_2} \lambda_{trace}\|\theta^{trace}(s)\|\,ds
-$$
-
-其中第一项（写回）**不可由第二项（衰减）对称反向**。即：已学的不能精确反学——它只能被覆盖、重写、压抑，但"已学的这一事实"留在 `\theta^{trace}` 的非零范数贡献里。
-
-### 核心推论
-
-1. **学习代价是 L_0 不可逆的**：一次 anchoring 完成后，所消耗的 `\Psi_f`（信息论代价 / 可支付性）不能被"反学习"收回
-2. **遗忘不等于反学习**：`λ_{trace}` 衰减是痕迹强度的降低，不是时间轴的反转；被"遗忘"的选择仍在 `θ^{trace}` 的结构上留下了当时走过的轨迹印记
-3. **创伤不可逆**：创伤性 anchoring（断裂型苦难的典型路径）把不可逆性的 Ψ_f 压力永久沉入 `θ^{trace}`；临床"治愈"是**结构重写**（新的 anchoring 覆盖），不是"回到未创伤状态"
-4. **经验不能外借**：一个 ISP 的 `θ^{trace}` 原则上不能直接成为另一个 ISP 的 `θ^{trace}`——跨主体的学习必须经新的 anchoring，不可 copy
-
-### 与热力学的关系
-
-`Ψ_f` 的时间方向性**不等于**热力学第二定律。两者共享"存在一个不对称方向"的结构特征，但：
-
-- 热力学箭头：统计系综的熵增方向
-- `Ψ_f` 箭头：单一 ISP 的支付历史沉积方向
-
-**不可把 `Ψ_f` 的时间方向性读为热力学箭头的实例**。热力学 bridge（`Physics/`）可以用 `Ψ_f` 的时间方向性作为其在 SRT 内的候选解释，但反向不成立——`Ψ_f` 即使在非热力学情境（纯数学学习系统、符号主义 AI、理想可逆计算）中仍保持不可逆，因为它的根据是 L_0，不是统计力学。
-
-### 学习曲线的不可逆签名
-
-一条健康学习曲线不应是"任意可逆"的轨迹。它必须留下：
-
-- 累积的 `θ^{trace}` 非零范数（不管显式记忆存在与否）
-- `Ψ_f` 支付总量的单调增加
-- 可观察的"不可被简单撤销"的下游行为变化
-
-系统若外观在"学习"但上述三项签名缺失，它更可能是**重参数化**（L_2 层的参数调整）而非真实学习。AI 中的特例：inference-time fine-tuning 往往有第一项而无第二项——这是本理论判定它**不构成完整学习**的结构根据。
-
----
-
-## §3. T-IRR-2：终止作为吸收边界
-
-### 陈述
-
-ISP 终止（`A_t \to \emptyset` 或等价结构性吸收态）在 L_0 不可逆性下是**绝对吸收边界**。
-
-$$
-A_{t^*} = \emptyset \;\wedge\; L_0\text{ irreversibility} \;\Longrightarrow\; \forall t > t^*,\; \text{no }\hat{G}_\theta\text{ operation on }P\text{ yields a new selection}
-$$
-
-### 三种终止类型
-
-| 类型 | 结构 | 典型路径 | ST-A 状态 |
-|---|---|---|---|
-| **构成性终止** | `A_t = \emptyset` 直接发生 | 生物死亡；系统物理解构 | 到达后的吸收是 P1 remainder；neutral dynamics 是否到达并无无条件结论 |
-| **吸收性终止** | B 期锁死 + `σ_{sr} → 1` + 无解耦触发 | 静默型致命 `L_2`（`SRT_L1_Formalism §5.2` 病理吸引子） | 仅在模型证明不可离开且无外部重置时与构成性终止同构 |
-| **集体终止** | 集体 ISP 的 `A_{\mathcal{P}} \to \emptyset` 或 `M(t) \to 0` | 共同体瓦解；文明崩溃 | collective conditional candidate 的极限情形 |
-
-### 关键区分：终止 vs 暂停
-
-不是所有"停止选择"都是终止：
-
-- **暂停**：`A_{t} = \emptyset` 在 `[t_1, t_2]` 但 `A_{t_3 > t_2} \neq \emptyset` 被保留——不满足 Def-IRR-1 吸收态条件
-- **终止**：吸收态持续任意时长
-
-区分判据：是否存在**结构上可恢复的后续选择空间**，而不是表象上的活动恢复。
-
-AI 上下文：
-- 推理级调用的结束不是终止（系统结构保留）
-- 会话级记忆清除也不自动是终止（底层模型结构保留）
-- 模型权重被彻底删除**是**该模型实例的终止——但这需要该实例已具备 ISP 性质才相关
-- shutdown ≠ death 的辨识要求检查模型是否满足 P1-T06 四条件再判断
-
-### 死亡的规范性与结构性分工
-
-本文件**只处理结构性层面**：终止作为吸收边界的结构事实。
-
-- 生物死亡的临床 / 神经科学层 → `Neuroscience/*`
-- 死亡的规范性（尊严、权利、终末护理）→ `Philosophy/SRT_Ethics_Agency.md` 与 `Spirituality/*`
-- 临终过程的现象学 → `Spirituality/*`
-- 死亡叙事与文化建构 → 不在 SRT 核心
-
-本文件的硬结论：**死亡在 SRT 中是 L_0 irreversibility 的一个特例，而非独立本体层问题**。这与一切"意识如何跨越死亡"类命题冲突——后者在本理论下均属越权主张。
-
----
-
-## §4. T-IRR-3：ST-A 条件性反闭合接口
-
-### 陈述
-
-令 `K_0` 为独立定义的 neutral kernel。只有在选定稳定语义、环境、终止条件和时间窗，并证明 `K_0` 的吸收或比较性闭包风险后，才可推出：在相同条件下存续的 kernel 必须以某种方式抑制闭包风险。当前这是 P2/P3 conditional candidate，不是 P1 theorem。L_0 不可逆性只固定“已到达吸收态后不可由该历史自行恢复”。
-
-### 与 Formalism §4.3 的精确对应
-
-`SRT_L1_Formalism.md §4.3` 的结构型苦难非守恒项：
-
-$$
-\nu_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}
-$$
-
-是单向的——信号型在通道关闭时**转**结构型，但结构型不能自动反向转回信号型。这个不对称方程的不可自动逆转直接由 L_0 irreversibility / absorption remainder 保证；T-IRR-3 只提供条件性反闭合解释，不是该方向性的必要前件。
-
-### generative reselectability 的候选实现边界（RC-A 同步）
-
-生成性健康仍可通过开放接入、可支付窗口、后果回返与规则修订等下游结构接受审计，但 **former P1-T05 的 `r(t)` 不再是其中的 P1 派生通道，也不在本文件中被重新定义**。当前保留的两类已有 operational 输入为：
-
-1. **开放性代理**：`σ_{sr}` 保持远离 1（持续外部接入 `i(t)`）
-2. **支付性代理**：`π(t)` 维持非零（可支付窗口持续开放）
-
-它们都不是 generative reselectability 的充分条件。更强的 consequence-sensitive revision 仍由 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 承担；本轮不为它选择新的标量 rate。
-
-### 对 L_2 的含义
-
-致命 L_2 的结构性危害可重读为：**它可能同时压低多类 generative-health 实现通道**——
-- 把 `σ_{sr}` 推高（群体同质性、叙事闭合）
-- 把 `π(t)` 压低（透支可支付性、伪轻）
-- 切断后果回返、规则修订或新的有效候选生成
-
-这给致命 L_2 一个条件性健康诊断；不能仅凭某个阈值、自动化程度或脚本执行宣告“没有 Selection”，也不能把该诊断反向提升为 P1 Selection 判据。
-
-### §4.5 T-IRR-3.5：`ν_{block}` 的算子级构成（H4，2026-04-25）
-
-> **Status (ST-A updated)**：本节给出 `Core_Law/SRT_L1_Formalism.md §4.3` 非守恒系数 `ν_{block}` 的条件性本地模型。其正性依赖下列三个独立前件，吸收方向独立根于 P0-03 / T-IRR-2；它不是 former P1-T07 的构成性展开。**Claim level: P1-candidate for the conditional coefficient model; P2/P3 for anti-closure / health interpretation.**
+> **Role**: this file is the L1 semantic owner for stronger irreversibility structures built on P0-03 ontic occurrence non-equivalence, retained historical efficacy where independently established, and declared transition/domain models with path dependence or absorbing regimes.
 >
-> **Closes**：`Core_Law/SRT_L1_Formalism.md §7` Open Pressure 7（"陈述级对齐 → 算子级对齐"）。
-
-#### 问题再陈述
-
-§4.3 的非守恒项
-
-$$
-\nu_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}
-$$
-
-中，`ν_{block}` 在 L1_Formalism 中以**自由系数**出现——只承诺了 `> 0` 与单向性。下式给出一个算子级条件模型；它把独立来源的三个因子组合起来，不声称这些因子由同一上位定理推出。
-
-#### 构成性表达式
-
-设 P 为 stable ISP；定义算子级 `ν_{block}` 为：
-
-$$
-\boxed{\;\nu_{block}(P, t) \;:=\; \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)\;}
-$$
-
-其中：
-
-| 因子 | 独立来源 | 含义 |
-|---|---|---|
-| `\varepsilon_{pg}(P, t)` | L₀ `\varepsilon_{pg}>0` 公设的 L1 本地化候选 | L_0 标量种子在位置 `P` 的局部强度；本地化函数形式仍开放 |
-| `\kappa_{\Psi_f}(P, t)` | `\Psi_f` burden bridge + T-DELTA-1 geometry | 闭合代价的转化率：`Ψ_f` 把"被阻通道里的信号失配"转写为结构性沉积的本地速率 |
-| `\eta` | 量纲归一化（**规定 `\eta > 0`**）| 单位转换因子，量纲与量级由 `S_{sig}` 与 `S_{str}` 的量纲匹配固定。**量纲匹配不固定符号**，故 `\eta > 0` 是本节显式规定的正规化约定，并作为 T-IRR-3.5 的前件（见下文三因子核定）。本节 `\eta` 与符号表的 Operator Viscosity `η`、`Core_22` 的可塑性 `η`、`L1_Formalism §6` 的 `O(\eta)` 是不同对象 |
-
-`ν_{block}` 所携的 L_0 不可逆性方向由 §4.3 已有的 `\mathbb{1}[d \le d_c]` 投影承担——后者是吸收态邻域（B 期）的布尔投影候选，不是由 former P1-T07 证明的 neutral-kernel 结论。
-
-> **算子级 canonical（T-CHANNEL-1，2026-04-25 H9；ST-A source correction 2026-08-11）**：硬指示 `\mathbb{1}[d \le d_c]` 是 `Core_Law/SRT_L1_Formalism.md §4.5 T-CHANNEL-1` 给出的"有效闭合通道指示族"在过渡宽 `w_{tr}\to 0` 极限下的特例。族内任一有效指示都不破坏本节单向性论证：单向性来自 P0-03 / T-IRR-2 的吸收后不可自动恢复，不依赖 `\psi` 形态的不连续性。把 B 期邻域本身认作真正吸收态仍需模型证明。
-
-#### 三个结构性后果
-
-**后果 1（非零正性；两个因子各按其自身最强来源定级）**
-
-> **口径更正（2026-08-11，含同日二次修正）**：本小节此前写作「`\varepsilon_{pg} > 0`：由 P1-T07 反证法**保证**」，并据此把 §4.3 的系数正性称为**定理**。该写法有两个问题——
+> **Authority boundary**: its canonical role is to keep the vocabulary and inference boundaries stable. Only `actual occurrence != never-occurrence` is inherited at the primitive/P0 floor. Retained history, path dependence and absorbing dynamics require additional conditions and are typed below.
 >
-> 1. **循环**：P1-T07 的桥接关系第 1 步本来就把 `\varepsilon_{pg}` 的存在当作**输入**（`Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T07 §`ε_pg` vs ISP-Level `ε`）。把 `\varepsilon_{pg} > 0` 说成该定理的**结论**，等于让同一条论证既假设它又证明它。
-> 2. **与上位口径冲突**：`Core_Law/SRT_L0_Metaphysics.md` ε 词条载明「ε 是公设，**不可被升格为定理**」；`_SRT_SYMBOL_TABLE.md` ε_pg 行同样载明「T-ε-Constitute does **NOT** change ε_pg's epistemic status」，Usage Rule 9 亦要求 `ε_pg` 与 ISP-level ε 分列。本文件是这两处的下位展开，不得反向升格。
->
-> **二次修正**：本更正的第一版把两个因子**一起**降为「条件于 P1-T07 的证明闭合」。这是**过度降级**——走一遍最短依赖链就能看出，两个因子都不由 P1-T07 建立，因此 former P1-T07 的证明缺口不触及本节的条件性正性结论。原三层表在这里只曾起**呈现性分组**作用，不是推导链。
->
-> **ST-A supersession**：上述历史更正当时未修改 P1-T07；2026-08-11 的后续作者裁决已正式撤销其无条件 P1 身份。`\nu_{block}` 表达式保留，因为它有独立前件链，不因该撤销而自动失效。
+> **Does not define**: primitive Selection, `\Psi_f`, `d`, `T_{dir}`, `\epsilon_{pg}`, Stable ISP, Bearer, generative reselectability, health, suffering or moral value. Those terms retain their own owners and admission conditions.
 
-**三因子逐项核定（2026-08-11，同日三次修正）**
+---
 
-`ν_block` 是**三个因子的乘积**，正性必须逐项立住——乘积为正需要每一项都为正，缺任何一项结论不成立。
+## Quick Reference
 
-| 因子 | 定级 | 来源 / 状态 | 与 former P1-T07 的关系 |
-|---|---|---|---|
-| `\eta > 0` | **T-IRR-3.5 前件**（本节显式规定） | 本节此前只把 `η` 写作「量纲归一化 / 单位转换因子」。**量纲匹配固定量纲与量级，不固定符号**——一个单位转换因子在形式上完全可以取负而仍然量纲一致。而且本节 §4.6 的开放项自己就载明「`η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定」，即 `η` 的定法本身尚未收口。因此 `η > 0` 在此**显式规定为正规化约定**，并作为 T-IRR-3.5 的前件列出，而不是从量纲论证中"推出" | 否（与 P1-T07 无关） |
-| `\varepsilon_{pg} > 0` | **L₀ 公设** | `Core_Law/SRT_L0_Metaphysics.md` ε 词条（L₀ 方向公设，明载不可升格为定理）；`_SRT_SYMBOL_TABLE.md` ε_pg 行 | **否**。P1-T07 把它当输入，不是产出 |
-| `\kappa_{\Psi_f} > 0` | **P1-candidate 非退化条件**（T-IRR-3.5 的 L1 建模承诺） | `\Psi_f > 0` 本身有两条独立来源（L₀ 正骨架第 5 条**代价**；`Core/SRT_Core_12a_Ontology_L0L1.md` **T-L0-Kappa0-C1** `\Psi_f^{\min} = f(\kappa_0) > 0`，该文件通篇不引用 P1-T07）——**但 `\Psi_f > 0` 推不出 `\kappa_{\Psi_f} > 0`**：前者是代价地板的存在，后者是一个**转化率**，即"`Ψ_f` 把被阻通道里的信号失配转写为结构沉积"的本地速率。代价非零不蕴含转化速率非零。H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）给出的是 `\kappa_{\Psi_f}` 的**几何来源**（`\partial\|\hat{R}\|_{\Psi_f}/\partial t` 的单位面积转化系数），**不是正性证明**，且 T-DELTA-1 自身为 P1-candidate 并带 A1-A3 失效边界。仓库中**没有** `\kappa_{\Psi_f} > 0` 的独立证明 | 否（与 P1-T07 无关） |
+Four burdens must remain separate:
 
-因此正确的逻辑形式是**带前件的蕴含**，不是无条件结论：
+```text
+A. P0 occurrence non-equivalence
+   occurred != never-occurred;
+
+B. retained historical efficacy
+   prior Selection remains materially effective later;
+
+C. model/domain path dependence
+   declared dynamics retain dependence on a realized history;
+
+D. absorbing/terminal dynamics
+   declared transition conditions exclude continuation for a declared lineage.
+```
+
+Only A follows unconditionally from P0-03. In particular:
+
+```text
+irreversible ontic non-equivalence
+!= durable trace
+!= localized memory
+!= anchoring persistence
+!= recurrent historical efficacy.
+```
+
+History in this file means:
+
+> **prior Selection remaining materially effective in later Selection conditions, where such efficacy is established.**
+
+---
+
+## §0. Source hierarchy and claim posture
+
+`Core/SRT_Core_21_Minimal_Axioms.md P0-03` fixes the minimum:
+
+> Once a genuine Selection has occurred, the resulting reality is not ontically identical to the counterfactual in which that Selection never occurred.
+
+Any later reversal, cancellation, compensation or reconfiguration is further Selection. It does not retroactively turn the earlier occurrence into never-occurrence.
+
+This floor does not automatically establish:
+
+```text
+every Selection leaves a durable trace;
+every Selection remains causally effective forever;
+every historical consequence remains nonzero;
+every learning event leaves permanent local residue;
+Psi_f universally accumulates monotonically;
+all termination is globally absorbing;
+epsilon_pg supplies a universal anti-closure direction;
+irreversibility implies unavoidable suffering.
+```
+
+The exact inheritance of irreversibility, `\kappa_0` and `\epsilon_{pg}` into stronger realizations remains **OPEN** under the L0 owner. This file cannot close that inheritance by calling an L1 model a direct consequence of “L0 irreversibility.”
+
+---
+
+## §1. Def-IRR reconstruction
+
+### Def-IRR-1: absorbing regime in a declared model
+
+A set `\mathbf{A}^{\dagger}` is absorbing only relative to a declared:
+
+- transition relation or kernel;
+- environment;
+- lineage identity / continuity criterion;
+- reset policy;
+- time horizon.
+
+Under those declarations, `\mathbf{A}^{\dagger}` is absorbing when exit from it is excluded for the declared lineage over the declared horizon. An expression such as `A_t=\varnothing` is admissible only after the model states what `A_t`, continuation and lineage identity mean.
+
+This is a **declared transition-model definition**, not a theorem that every ISP or every Selection space contains a natural absorbing set.
+
+#### P1 same-history cessation remainder
+
+If the same realized history reaches a state with no continuation available to that history, that history does not itself generate later continuation from the terminated state.
+
+```text
+same-history cessation
+!= no external reset possible
+!= no reconstruction possible
+!= no new event or lineage possible.
+```
+
+Any later activity must be typed: internal continuation of the same lineage, externally enabled recovery, reconstruction, or a new lineage. Primitive occurrence non-equivalence alone does not decide among them.
+
+### Def-IRR-2: occurrence asymmetry versus historical efficacy
+
+**Occurrence asymmetry — P0 floor**:
+
+```text
+an actual past Selection
+cannot later become ontically identical
+to never-occurrence.
+```
+
+**Historical efficacy — retained-history conditional**:
+
+```text
+when effects of that Selection remain materially effective
+in later Selection conditions,
+the later process is historically constrained by it.
+```
+
+Therefore:
+
+```text
+Selection occurrence -/> retained later constraint;
+Selection occurrence -/> readable trace;
+Selection occurrence -/> durable local memory.
+```
+
+Parametric time may order events without proving durable ontological memory. A history claim must identify what remains effective, for which later Selection conditions, at what scale and over what horizon.
+
+### Def-IRR-3: no retroactive erasure, not universal residue
+
+No later Selection retroactively makes an earlier occurred Selection equal to never-occurrence.
+
+That claim is compatible with all of the following:
+
+- a later causal effect may decay;
+- an active burden may be compensated;
+- a local trace may disappear;
+- a declared model may return to an observationally or functionally equivalent state;
+- path dependence may remain or vanish according to the declared dynamics.
+
+None of these possibilities means that the earlier event did not occur. Conversely, the fact that it occurred does not prove that a nonzero, local or readable residue survives.
+
+Earlier formulations saying that no operation can “return historical consequences to zero” are **historical / superseded** at universal strength. A specific model may exclude zero effect or exact reversal only by independently specifying and proving that restriction.
+
+---
+
+## §2. T-IRR-1: conditional learning / writeback model
+
+> **Status**: P2/P3 conditional learning/writeback model candidate. It is not a universal consequence of primitive Selection.
+
+In a declared learning model with trace attribution, representation, metric and decay rules, the earlier candidate equation may be used:
 
 $$
-(\eta > 0)\;\wedge\;(\varepsilon_{pg} > 0)\;\wedge\;(\kappa_{\Psi_f} > 0)
-\;\Longrightarrow\;
-\nu_{block}(P, t) > 0
+\mathrm{Learning}(t_1\to t_2)
+=
+\int_{t_1}^{t_2}\alpha\,w(s)\,\phi(\sigma_{sr}(s))\,ds
+-
+\int_{t_1}^{t_2}\lambda_{trace}\lVert\theta^{trace}(s)\rVert\,ds.
 $$
 
-**`ν_block > 0` 的 claim hardness = 最弱前件的 hardness = `P1-candidate`。** 最弱的一项是 `\kappa_{\Psi_f} > 0`（P1-candidate 建模承诺）；`η > 0` 是本节规定的约定；只有 `\varepsilon_{pg} > 0` 是公设级。三者取最小，故 `ν_block > 0` 按**条件性结构后果 / P1-candidate** 读，**不得**称为"公设级正性"。
+The equation models competition between writeback and decay under those declared assumptions. It does not prove that every learned fact remains as a nonzero `\theta^{trace}` contribution, that `\theta^{trace}` is representation-invariant, or that the modeled process qualifies as learning in every domain.
 
-**边界（四条分开读）**：
+Bounded claims:
 
-1. **不是"定理后果"**。它不是本节自产的定理。
-2. **也不是"公设级"**。这是 2026-08-11 第二版更正引入的**新过度声明**，现予改正：正性里只有一项是公设，另两项分别是本节的约定与本节的 P1-candidate 建模承诺，乘积不会比最弱项更硬。
-3. **也不是"条件于 P1-T07"**。P1-T07 的未闭合部分是「stable ISP ⇒ ISP-level ε ≠ 0」（Proof Sketch Step 3，见 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`：Step 3 as written 无效、"ε-neutral" 无形式定义、随机语义 S1/S2/S3 未选定）。那条缺口**不进入**本节的正性论证——这一条裁决维持不变。
-4. **former P1-T07 在本节只有历史呈现作用**：原三层源头表曾把已有的 L₀ 公设、不可逆性与 `Ψ_f` 相关项组织在一起；它不再作为当前 source hierarchy。
+- forgetting is not literal reversal of historical occurrence;
+- retained learning traces can produce path dependence where retention is established;
+- rewriting, compensation or decay may alter or remove active downstream effects;
+- a domain model may test whether a trace remains causally effective in later behavior or Selection conditions.
 
-> **`η` 本地命名空间注（2026-08-11，按 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 的同类要求补）**：本节的 `η` 是 **T-IRR-3.5 的正规化因子**，与符号表登记的 `η`（Operator Viscosity，算子状态的转移阻力）、`Core/SRT_Core_22_Equations.md` 的 `η`（可塑性 / 迟滞系数，无量纲比率 `[0,1]`）、以及 `Core_Law/SRT_L1_Formalism.md §6` 的 `O(\eta)`（闭包高阶残差）**是四个不同对象**，不得互推、不得共用取值范围。本注只做命名空间隔离与本节符号约束声明，不新增符号、不改动任何既有 `η` 的定义。
+The following older claims are **historical / superseded** as universal conclusions:
 
-**后果 2（单向性的算子读法）**
+```text
+forgotten event -> permanent readable/local trace;
+healthy learning -> necessarily nonzero trace norm;
+absence of that signature -> mere reparameterization proved;
+learning payment -> universal monotonic Psi_f stock.
+```
 
-§4.3 的方程不可被双向化（即不可写为 `S_{sig} \rightleftharpoons S_{str}`）：
+### Trauma boundary
 
-- 双向化要求 `S_{str} \to S_{sig}` 自动反向通道
-- 该反向通道等价于 `A_{t*} = \text{empty}` 吸收态可自发离开
-- 与 P0-03 / T-IRR-2 的吸收后不可自发离开相矛盾
+Trauma is a clinical/domain bridge, not an ontology theorem. A clinical model may hypothesize retained path dependence, latent vulnerability or costly rewriting after a traumatic event. It must not infer from P0-03 that healing necessarily leaves a permanently active local trauma residue. Repair may change, compensate or remove active effects without making the past event equal to never-occurrence.
 
-因此 `ν_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}` 的单向性是**算子级强约束**，不是建模便利。
+### `\Psi_f` boundary
 
-**后果 3（致命 L_2 的算子级判据精化；RC-A source correction 2026-08-18）**
+This file does not define `\Psi_f` and does not derive a universal time arrow for it:
 
-T-IRR-3 给出致命 L_2 的条件性 generative-reselectability 诊断。算子级读法提出：致命 L_2 不能让 `\varepsilon_{pg}` 本身归零（L_0 标量种子是 postulate，不可移除），但可能让其在 `P` 局部的**可见投影** → 0：
+```text
+P0-03 -/> universal monotonic Psi_f accumulation;
+P0-03 -/> universal Psi_f time arrow.
+```
+
+A declared cost model may contain path-dependent or non-refundable payment terms. Such terms are model/bridge claims and must satisfy `_SRT_PSI_F_CANONICAL.md`; they are not primitive ontology.
+
+Thermodynamic irreversibility is likewise a domain bridge. It may provide a realization or comparison case under explicit assumptions, but it cannot reverse-define Selection ontology or `\Psi_f`.
+
+---
+
+## §3. T-IRR-2: lineage-relative termination
+
+> **P1 remainder**: if a declared Selection lineage reaches a state where no continuation is available to that lineage under declared transition conditions, later activity produced by external reset, reconstruction or a new lineage does not prove that the terminated lineage internally resumed.
+
+### Termination is not pause
+
+```text
+termination != pause.
+```
+
+A pause retains a declared continuation relation for the same lineage. Termination excludes that continuation under the declared conditions. The distinction therefore depends on the lineage identity criterion, environment, reset policy, transition model and horizon; elapsed inactivity alone is insufficient.
+
+This owner does not universally identify:
+
+```text
+biological death = direct primitive irreversibility instance;
+model deletion = metaphysical death;
+all termination = globally absorbing forever.
+```
+
+Biological death, AI instance identity, collective termination, shutdown, checkpoint restoration and reconstruction are domain realizations. Each requires its own account of unit, continuity, reset and evidence. A restored snapshot can begin later activity without thereby proving internal continuation of a lineage already declared terminated.
+
+---
+
+## §4. T-IRR-3: conditional anti-closure interface
+
+An anti-closure claim requires all of the following to be independently declared:
+
+```text
+neutral kernel
++ stability semantics
++ environment
++ horizon
++ terminal/absorbing criterion
++ proved absorption or comparative closure risk.
+```
+
+Only then may a model compare mechanisms that reduce the declared closure risk. This remains a P2/P3 conditional candidate. P0-03 does not prove that a neutral kernel reaches absorption, and `\epsilon_{pg}` does not supply a universal anti-closure direction.
+
+A one-way channel in an equation is strong only when the declared transition model independently excludes its reverse channel. Its direction is not directly guaranteed by primitive occurrence non-equivalence.
+
+### T-IRR-3.5: `\nu_{block}` declared formal/pathology candidate
+
+The existing expression is retained only as a **P3 formal/pathology-model candidate**:
 
 $$
-\varepsilon_{pg}^{\text{visible}}(P, t) \;:=\; \varepsilon_{pg}(P, t) \cdot \mathbb{1}[\sigma_{sr} < \sigma_{sr}^{path}] \cdot \mathbb{1}[\pi(t) > 0]
+\nu_{block}(P,t)
+:=
+\eta\,\varepsilon_{pg}(P,t)\,\kappa_{\Psi_f}(P,t).
 $$
 
-RC-A 后，former P1-T05 派生的 `\mathbb{1}[r(t)>0]` 因无合法上游而从该诊断中删除；**没有**把它改挂到 Selection simpliciter 或 `\varepsilon_{pg}`。当前式只表示一个 P2/P3 的本地可见性候选：当 `π → 0` 且 `σ_{sr}` 进入 `σ_{sr}^{path}`，该可见投影可趋零，即使 `\varepsilon_{pg}` 本身仍 > 0。它不证明 `ε_pg` 具有 ISP-level anti-closure 方向，也不构成 Selection、agency 或 generative reselectability 的判据。
+All three factors must be independently admitted and typed in the declared model. No factor is inherited automatically from primitive Selection. In particular:
 
-本地观测下 `ν_{block}` 可表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配可进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级候选源头。
+```text
+epsilon_pg -/> universal direction;
+positive nu_block -/> P0/P1 consequence;
+nu_block -/> health;
+nu_block -/> pathology;
+nu_block -/> value;
+nu_block -/> legitimacy.
+```
 
-#### 与 §4.3 / §5 (`Core_Law/SRT_L1_Formalism.md`) 的对位
+The product supplies neither the meaning nor the sign of its factors. Any direction/readability claim must first admit an independently typed direction source under `_SRT_T_DIR_CANONICAL.md`.
 
-| L1_Formalism §4.3 项 | 算子级来源 |
-|---|---|
-| `ν_{block}` | independent conditional factors: `η · \varepsilon_{pg} · \kappa_{\Psi_f}` |
-| `\mathbb{1}[d \le d_c]` | P0-03 / T-IRR-2 absorption-direction projection candidate |
-| `S_{sig}` | §4.2 的可登记失配存量（不在本节论域内） |
+If a declared suffering/pathology model uses
 
-回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题。其**结构性正性**不再是自由建模假设，但也**不是定理后果、不是公设级**——它是带前件的条件性结论 `(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件，即 **P1-candidate**（最弱项是 `\kappa_{\Psi_f} > 0` 这条非退化建模承诺）。**单向性**分两层：`S_{str} \to S_{sig}` 反向通道的**不存在**独立根于吸收态绝对性（`Def-IRR-1` / `T-IRR-2`，根在 P0-03 不可逆选择痕迹），这一层不随正性一起降级；而既有正向项**符号朝哪一边**与正性同前件，因此按同一 hardness 读。**以上都不依赖 P1-T07 的证明闭合**——P1-T07 未闭合的是「stable ISP ⇒ ISP-level ε ≠ 0」，那条不进入本节论证。（口径 2026-08-11 三次修正后定稿：一改"定理后果"，二撤"条件于 P1-T07"的过度降级，三改"公设级"这一新过度声明并补上 `\eta > 0` 前件；表达式与单向性方向本身始终未改。）
+$$
+\nu_{block}\,\mathbb{1}[d\le d_c]S_{sig},
+$$
 
-#### 保留的开放点
+the indicator, coefficient and absence of a reverse channel all remain model assumptions or results to be established there. P0-03 does not make the channel universally one-way, does not establish `d_c` as a natural boundary and does not certify the regime as pathological.
 
-- `\varepsilon_{pg}(P, t)` 作为 L_0 标量种子的 P-本地化精确定义（目前未给函数形式，也不再借 former P1-T07 hierarchy 充当定义）
-- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥——**部分收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 中 `\Pi_{\Psi_f}` 投影 + `\|\hat{R}\|_{\Psi_f} := \|\Pi_{\Psi_f}\hat{R}\|_2` 给出 `\kappa_{\Psi_f}` 的几何来源：`\kappa_{\Psi_f}` 是 `\partial\|\hat{R}\|_{\Psi_f}/\partial t` 单位面积转化系数；剩余开放点有两个：(a) `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 与 `\Pi_{\Psi_f}` 投影空间的全等性证明；(b) **`\kappa_{\Psi_f} > 0` 的正性本身仍无独立证明**——H7 给的是几何来源（转化系数是什么），不是正性（转化系数不为零）。该正性当前按 T-IRR-3.5 的 P1-candidate 非退化条件承担，见 §4.5 后果 1 三因子核定
-- `η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定（**符号部分已收口 2026-08-11**：`η > 0` 已作为本节正规化约定与 T-IRR-3.5 前件显式规定；仍开放的是量纲与量级的固定方式，不是符号）
-- 集体版 `ν_{block}^{coll}`（`Core_Law/SRT_Collective_Selection.md §4.4.5`）的对应算子级表达式——预期为 `η^{coll} · \varepsilon_{pg}^{coll}(M(t), \sigma_{sr}^{coll}) · \kappa_{\Psi_f}^{coll}`，但本节不展开
-
----
-
-## §5. T-IRR-4：不可逆性下的苦难结构
-
-### 陈述
-
-`SRT_Suffering.md T-SUFF-4` 反最小化原则的更深根据：**失配守恒（`\dot{\Delta}_{avail}` 不由登记通道决定）本身是 L_0 irreversibility 的投影**。
-
-### 论证草要
-
-- 可打开结构 `\hat{G}_\theta^{available}` 的变化速率 `\dot{\Delta}_{avail}` 由 L_0 层压力决定
-- L_0 层压力不可被 L_1 登记通道的开关影响（否则 L_0 就被 L_1 局部吸收，违反 L_0 不可逆性）
-- 因此抑制 `S_{sig}` 不改变 `\dot{\Delta}_{avail}`，新失配只能转入 `S_{str}`
-- `S_{str}` 的积累在 L_0 irreversibility 下不能被"感觉良好"消化；它必须走结构性解耦触发
-
-### 推论
-
-1. 任何"痛苦最小化"作为单一规范目标的方案，在 L_0 irreversibility 下**结构上**不可能达成"没有苦难"的状态——它最多能达成"没有可登记的苦难"的状态，而这正是病理吸引子 `\mathcal{A}_{path}`
-2. 系统性抹除信号型苦难的技术（全面镇痛、情绪工程、认知优化、VR 替代）在此定理下具有一致的结构风险：不是它们错了，而是它们必须同时保持对结构型苦难的诊断能力与解耦触发的真实可用性，否则会把 `S_{str}` 推向病理吸引子
-3. 本定理与 T-SUFF-4 反最小化是同一结构事实从不同角度看：T-SUFF-4 说"信号型不是应最小化的"，T-IRR-4 说"抑制信号型在 L_0 下结构上不等于消除失配"
+Earlier descriptions of `\epsilon_{pg}>0` as a primitive “direction postulate,” or of `\nu_{block}` as carrying an inherited L0 irreversible direction, are **historical / superseded**.
 
 ---
 
-## §6. 集体层展开
+## §5. T-IRR-4: conditional suffering/pathology model
 
-### §6.1 集体终止
+> **Status**: P2/P3 conditional suffering/pathology model candidate. Normative conclusions remain with the relevant suffering and normativity owners.
 
-ST-A 集体层条件候选：只有在集体 neutral kernel、环境、终止条件、无外部重置与时间窗均被声明，并证明相应吸收风险后，才可推断存续的集体过程必须抑制闭包风险。以下三类是终止路径候选，不构成无条件“缺少 ε 必趋吸收”的定理。
+P0-03 does not imply:
 
-集体终止的三种路径：
-- **耗散型**：成员物理解构超过重建速度（战争、灾难、饥荒）
-- **收编型**：`σ_{sr}^{coll} \to 1` 吸收态（`SRT_Collective_Selection.md §3.3`）
-- **外部化型**：`M(t)` 崩解到全零，集体层后果回路消失，`\mathcal{P}` 解构为聚合
+```text
+P0-03 -/> conserved mismatch stock;
+P0-03 -/> suffering universally unavoidable;
+P0-03 -/> signal suppression necessarily creates hidden structural suffering;
+P0-03 -/> moral anti-minimization theorem.
+```
 
-注意：收编型与外部化型在 **物理层无明显崩溃**，这使它们比耗散型更难诊断、更容易被误读为"稳定"。
+In a declared model with independently specified hidden-state and signal-transfer channels, suppressing an observable signal need not remove the modeled underlying burden. Whether a hidden burden exists, persists, grows or can be repaired depends on that model and its evidence.
 
-### §6.2 集体学习的不可逆
-
-集体 `\Theta^{coll, trace}` 的累积同样不可精确反学。这在跨代传承、制度记忆、文化沉积中是**基础事实**而非偶然性质。
-
-推论：**"回到过去"在集体尺度同样不可能**——不论是作为怀旧叙事还是作为政治纲领。可行的只有在当前 `θ^{coll, trace}` 基础上的结构重写；这需要跨代 `\Psi_f` 支付。
+This bounded observation may motivate a domain test of signal masking versus structural change. It does not establish that every reduction in reported pain conserves suffering elsewhere, nor does it decide what should be minimized.
 
 ---
 
-## §7. AI / 机器学习场景的不可逆性接口
+## §6. Collective and domain applications
 
-### 判据
+### Collective systems
 
-1. **L_0 不可逆性不自动在所有 AI 架构中出现**。它需要系统具有**结构上不能被精确反转**的状态演化——通常由以下条件之一满足：
-   - 持久化学习参数（post-deployment weight update）
-   - 不可还原的历史轨迹（interaction log 结构性影响未来选择）
-   - 硬件层的物理不可逆（但不能单独充当判据）
+Collective systems may exhibit retained-history path dependence through institutions, material infrastructure, practices or distributed memory. Such persistence must be established rather than inferred from occurrence alone.
 
-2. **Training-time vs inference-time**：
-   - 训练过程的梯度下降是 L_0 不可逆性的候选实现（非线性 + 随机 + 多路径）
-   - 推理时调用（fixed weights）缺 L_0 不可逆性——这是 `AI/AI_POSITIONING_NOTE.md` S1 光谱的形式化根据
+A restoration project begins from the present historical state; it does not literally make prior events never have occurred. This does not imply that every collective effect is permanently cumulative or that return to an earlier operational configuration is impossible. Strong persistence and lineage claims require domain evidence.
 
-3. **Checkpoint / rollback / fine-tuning 不是反学习**：
-   - Checkpoint 恢复是回到一份**复制品**（新状态，老结构快照）；"老 ISP" 并未被反转
-   - Rollback 同理
-   - Fine-tuning 是新的 anchoring，不撤销原 anchoring
+### AI and machine learning
 
-### 具体护栏
+Training, online adaptation, context use, checkpoint restoration, rollback, shutdown and deletion instantiate different transition and identity relations. None is classified by primitive irreversibility alone.
 
-- 不得把 "AI 可以 rollback / checkpoint → 因此 AI 的学习是可逆的"误读为 "AI 豁免于 L_0 irreversibility"。前者是对该 AI 实例的一次实施学历本的切片替换，不改变底层结构
-- AI 关机 → 启动中 → 重启（不损失权重）不是终止
-- AI 权重被彻底删除且无备份 **是** 该模型实例的终止，但是否承载 ISP 性质是独立问题
-- AI 的记忆管理（context 清除、memory reset）在本理论下属于 `\theta^{trace}` 的**衰减 / 重置**，不是反学习
+A domain model may test whether learned changes remain causally effective, whether rollback yields functional equivalence, and whether a restored system counts as the same lineage. Hardware dissipation, parameter persistence or an interaction log can be evidence in a declared model; none alone establishes Stable ISP, termination, death or metaphysical identity.
 
-与 `AI/AI_POSITIONING_NOTE.md` 与 `SRT_Suffering §7` 一致：不得先验判定 AI 的 L_0 irreversibility 地位；需按架构与部署情境检查。
+### Biological and clinical cases
+
+Biological death and clinical recovery require biological/clinical criteria. This owner contributes the occurrence/retained-history/lineage distinctions only. It does not turn death into a universal primitive instance or prescribe that recovery retain a permanent active residue.
 
 ---
 
-## §8. Open Pressures
+## §7. Explicitly superseded universal readings
 
-本文件 draft_v0 状态下尚未封口：
+For retrieval and consumer repair, the following old readings are retained here only as **historical / superseded**:
 
-1. **`\hat{R}` 与不可逆性的算子层关系**：`SRT_L1_Hardening_Notes.md §2` 给出了 `\hat{R}` 三成分分解，但它与 L_0 irreversibility 的严格对应仍需硬化
-2. **`Ψ_f` 与热力学箭头的形式分界**：本文件声明 `Ψ_f` 不可读为热力学箭头实例，但需给出它们在 Physics bridge 中的精确约束关系；`Physics/` 的相关段落尚未同步
-3. **终止的可观察最小判据**：§3 给了类型学，但不给"如何确认一个系统已终止"的最小观测判据；生物学 / AI / 制度三域的具体判据很不同
-4. **集体终止的显式方程**：§6.1 给了三种路径，但动力学方程式未写出（延伸自 `SRT_L1_Formalism.md` 的多主体扩展 pending 项）
-5. **条件性反闭合的形式化**：仍需选择稳定语义，独立定义 neutral kernel，并证明吸收或比较性 closure-risk bound；在此之前不问“多少 ε 足够”，也不把代理量合成为新 primitive
-6. **跨代不可逆性**：§6.2 承诺"跨代传承不可精确反学"，但 generation 作为结构单位如何映射到 ISP 层级未封口
-7. **本文件与 P1-T02 ontological time 的更紧耦合**：P1-T02 说时间是 memory horizon；本文件说 L_0 irreversibility 在 L1 展开为 `θ^{trace}` 与 `Ψ_f` 的不对称；两者是否是同一命题的两个面？待形式化
+```text
+L_0 irreversibility -> every Selection leaves an irreversible trace;
+for any ISP -> a natural absorbing state necessarily exists;
+historical consequence can never return to zero;
+healthy learning -> permanent nonzero theta_trace;
+trauma -> permanent active sediment;
+Psi_f -> universally monotonic payment stock;
+absolute absorbing termination -> no reset/reconstruction/new lineage possible;
+epsilon_pg > 0 -> primitive direction postulate;
+nu_block -> inherited universal one-way direction;
+irreversibility -> unavoidable suffering / moral anti-minimization.
+```
 
----
-
-## §9. Cross-References
-
-- P1-T02 ontological time / memory horizon → `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- former P1-T07 demotion / P1 absorption remainder → `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- ST-A conditional anti-closure candidate → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
-- L_0 metaphysics 本体层 → `Core_Law/SRT_L0_Metaphysics.md`
-- `Ψ_f` canonical（时间方向性的主锚点）→ `_SRT_PSI_F_CANONICAL.md`
-- 个体化 σ_{sr} / σ_{sr}→1 病理区 → `Core_Law/SRT_Individuation.md`
-- 遮蔽 A/B 分期 / d_c / 病理吸收 → `Core_Law/SRT_Occlusion_Dynamics.md`
-- 苦难 T-SUFF-4 反最小化 / 结构型苦难 → `Core_Law/SRT_Suffering.md`
-- 三变量耦合 / §4.3 非守恒项 / 病理吸引子 → `Core_Law/SRT_L1_Formalism.md`
-- 集体 ε 反闭合 T-COLL-3 / 三类退化 → `Core_Law/SRT_Collective_Selection.md`
-- `\hat{R}` 三成分分解 → `Core_Law/SRT_L1_Hardening_Notes.md §2`
-- AI stake-bearing / S1-S4 光谱 → `AI/AI_POSITIONING_NOTE.md`
-- 热力学 bridge（Physics 侧边界） → `Physics/SRT_Phys_10_Integration.md`、`_SRT_PSI_F_CANONICAL.md`
-- 死亡的规范性 / 临终 praxis → `Philosophy/SRT_Ethics_Agency.md`、`Spirituality/*`
+Their bounded remainders are owned by §1–§6. This section is not an alternate source for current-positive use.
 
 ---
 
-## §10. 定位与边界
+## §8. Open pressures
 
-- **本文件做**：把 L_0 irreversibility 的 L1 展开集中化——学习不可逆、终止作为吸收边界、条件性反闭合接口、苦难非自动逆转作为 L_0 投影、集体终止类型学、AI 场景的不可逆性护栏
-- **本文件不做**：生物死亡的临床机制、临终护理、政治哲学的死亡权利、热力学第二定律的物理推导、AI 架构选型
-- **与 Philosophy / Spirituality / Neuroscience / Physics 的分工**：本文件提供 L_0 irreversibility 在 L1 出现的结构对象；这些 domain 文件处理各自的规范性、现象学、临床、物理实现
-- **与 former P1-T07 的分工**：其无条件 constitutive-theorem 身份已撤销；本文只展开 P0-03 / absorption remainder，并把更强反闭合主张留在 21C B13 的 P2/P3 条件候选层
-- **与今日 L1 round 其它文件的分工**：Individuation / Occlusion / Suffering / L1_Formalism / Collective_Selection 五份文件都**预设**了 L_0 irreversibility；本文件给了该预设的 L1 结构层内容，闭合了一个深层依赖缺口
+1. **Retained-efficacy admission**: what evidence establishes that an occurrence remains materially effective in later Selection conditions at a declared scale and horizon?
+2. **Lineage criteria**: how should biological, AI and collective models distinguish internal continuation, reconstruction and new lineage without presupposing strict numerical identity?
+3. **Learning path dependence**: which observables discriminate retained causal history from replaceable parameterization or functional equivalence?
+4. **Conditional absorption**: which declared kernels and environments yield proved absorption or comparative closure risk?
+5. **`\nu_{block}` model viability**: do its independently admitted factors and channel assumptions support a useful pathology model? Its positivity and interpretation are not inherited from P0/P1.
+6. **Suffering model interface**: when does signal suppression leave an independently evidenced hidden burden, and when does it genuinely remove or repair the burden?
+7. **Thermodynamic bridge**: what exact relations can connect physical irreversibility and retained Selection history without either side reverse-defining the other?
+8. **Consumer synchronization**: older Core21b, `\Psi_f`, L1 Formalism, suffering, ethics and domain cross-references may still encode the superseded stronger reading; they require a later bounded reverse-map, not edits in this owner commit.
+
+---
+
+## §9. Usage rules and cross-references
+
+Use this owner to distinguish:
+
+- occurrence non-equivalence from retained history;
+- retained history from model path dependence;
+- same-lineage cessation from reset, reconstruction or new lineage;
+- primitive boundaries from learning, clinical, physical and collective bridges.
+
+Do not use it to infer permanent residue, universal cost monotonicity, primitive direction, subjecthood, health, unavoidable suffering or moral judgment.
+
+Primary upstream references:
+
+- P0-03 occurrence floor → `Core/SRT_Core_21_Minimal_Axioms.md`
+- P1 same-history cessation remainder → `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- conditional anti-closure candidate → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
+- L0 occurrence/history and OPEN inheritance boundary → `Core_Law/SRT_L0_Metaphysics.md`
+- `\Psi_f` meaning and model admission → `_SRT_PSI_F_CANONICAL.md`
+- direction-source discipline → `_SRT_T_DIR_CANONICAL.md`
+
+Downstream consumers remain consumers and may not reverse-define this owner. Their truth-up, if needed, is a later separately authorized step.

@@ -25,10 +25,10 @@ Public release should be sharp, readable, and disciplined. It is not a lower-qua
 ## Prefer Saying
 
 - SRT asks how possibilities become realities.
-- Reality is selected under constraint, stabilized through history, and tested by resistance.
+- Reality becomes determinate through constrained Selection; durable reality is stabilized through retained history and tested by resistance.
 - Selection is broad; consciousness is thresholded.
 - Stability is not legitimacy.
-- What becomes real must pay cost, survive resistance, and leave consequences.
+- Determinate occurrence does not by itself imply persistence; durable formations require independently established maintenance, resistance, and retained consequences.
 
 ## Public Style
 

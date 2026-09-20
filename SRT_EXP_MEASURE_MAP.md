@@ -201,7 +201,7 @@ z(consensus_{stability}),
 - **Casali et al. 2013**：PCI 通过扰动响应的算法可压缩性读取系统的分化-整合能力，适合作为 `q(L_1)` 的扩展神经 proxy。
 - **Schartner et al. 2015**：自发 EEG 信号多样性在麻醉下降，支持“复杂度/多样性下降 = 可用状态空间收缩”的方向性读法。
 - **Peng et al. 2014**：Lempel-Ziv complexity 可稳定表征人类动作序列结构，支持行为压缩率作为 `q(L_1)` 的低成本 proxy。
-- **Stender et al. 2016**：持续意识需要最低代谢预算，支持 `P_{sel}` 的预算侧测量不应只靠主观费力度量。
+- **Stender et al. 2016**：持续意识状态与最低代谢预算存在临床关联，支持 `P_{sel}` 的预算侧测量不应只靠主观费力度量；该关联不建立意识的普遍必要条件。
 - **Weninger et al. 2022**：神经网络能量学与信息论量之间存在系统关系，支持把 `q - P_{sel} - S_{noise}` 当作联立桥接包而非孤立单指标。
 
 ### 4a.3 最小证伪模板
@@ -560,7 +560,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 ## 【理论边界/防误用声明】
 - HTI 为**候选代理**，不等同“宇宙连接”已被实证。
 - 不采纳“单频段同步即证明微管机制”的推论。
-- 不采纳“HTI 升高=意识层级提升”的直接推论；需联合 d 与 \(\Psi_f\) 门控判据。
+- 不采纳“HTI 升高=意识层级提升”的直接推论；HTI、`d` 与 \(\Psi_f\) 仅可作为声明模型中的候选证据，不能组成普遍门控判据。
 
 
 ## 14) 结构化迟滞指征 SHP（GEMINI/GEAR 桥接，新增）
@@ -577,7 +577,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 
 ### 14.2 SRT 映射语义
 - SHP 用于估计 \(L_1\to L_2\) 的沉积密度（selection density）；
-- 不等价于意识指标，不可替代 \(d\) 或 \(\Psi_f\) 的本体门控判据。
+- 不等价于意识指标；\(d\) 或 \(\Psi_f\) 也不是本体意识门控，只能在声明模型中提供候选证据。
 
 ### 14.3 最小证伪条件
 1. 若 SHP 与外部事件强度无稳定对应关系，则沉积映射失效；
@@ -586,7 +586,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 
 ## 【理论边界/防误用声明】
 - 不采纳“高密度历史记录=高主体性”的推论。  
-- 不采纳“无扰动记录=无代价意识生成”的推论：SHP 只描述被动沉积能力。
+- 不采纳“无扰动记录=无意识”或“有扰动记录=意识生成”的推论：SHP 只描述被动沉积能力。
 
 
 

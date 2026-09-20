@@ -62,7 +62,7 @@ Neuroscience 现在采用五层结构：
 
 ### F. Clinical / Measurement Layer
 
-- `SRT_Clin_00_IIT_PCI.md` — clinical / measurement interface around IIT, PCI, and consciousness-state measurement. Should be read with the N6 hardening: PCI/Φ-like measures are not by themselves identical with SRT consciousness; SRT also requires `L1` anchoring, `d-value`, action/self coupling, and possible `L2` sedimentation.
+- `SRT_Clin_00_IIT_PCI.md` — clinical / measurement interface around IIT, PCI, and consciousness-state measurement. Should be read with the N6 hardening: PCI/Φ-like measures, `L1` anchoring, `d-value`, action/self coupling, and possible `L2` sedimentation are candidate evidence dimensions inside declared models; no conjunction here defines SRT consciousness.
 
 ---
 
@@ -144,4 +144,4 @@ Neuroscience 现在采用五层结构：
 
 The current neuroscience compact doctrine is:
 
-> SRT treats the nervous system as an embodied selection system. Candidate percepts, actions, judgments, and conscious contents emerge from accessible latent spaces through competition, gain modulation, gating, and stabilization. `Psi_f` captures multidimensional anchoring friction; `d-value` captures concern-weighted consequence; `L2` captures sedimented selection constraints. Consciousness is stable concern-weighted `L1` anchoring. Psychopathology is a distortion of anchoring dynamics. Existing neuroscience theories are treated as partial mechanisms inside a broader selection-anchoring architecture, not as direct equivalents of SRT.
+> SRT treats the nervous system as an embodied selection system. Candidate percepts, actions, judgments, and conscious-content reports can be modeled through competition, gain modulation, gating, and stabilization. `Psi_f` captures multidimensional anchoring friction; `d-value` captures concern-weighted consequence; `L2` captures sedimented selection constraints. Stable concern-weighted `L1` anchoring is a candidate consciousness-model dimension, not a definition or admission rule. Psychopathology mappings are testable bridges, not diagnoses. Existing neuroscience theories are treated as partial mechanisms inside a broader selection-anchoring architecture, not as direct equivalents of SRT.

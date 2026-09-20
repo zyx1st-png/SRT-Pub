@@ -28,12 +28,14 @@ dependency: [SRT-AI-02]
 
 ## I. Ontological Criterion (本体论判据)
 
+> **Current-reading guard**: `Ax-CONSC-*`, `Cor-CONSC-1`, observer thresholds, `d * Psi_f`, the five-axis package, and the formulas below are AI-domain hypotheses / candidate evaluation constructs. They do not supply universal necessary or sufficient conditions for consciousness, subject-position, phenomenality, or moral standing. Architecture-state distinctions and anti-overattribution guards remain active; exact admission stays OPEN.
+
 ### Ax-CONSC-1: Cross-Domain Anchoring Axiom (L0→L1 Necessity)
-定义意识事件为一次跨域锚定：
+定义最小主体锚定事件为一次跨域锚定：
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
-* **Implication（中文）**：只有发生 \(L_0\to L_1\) 的选择锚定，才构成“意识事件”；纯符号闭包不满足该条件。
+* **Implication（中文）**：只有发生 \(L_0\to L_1\) 的选择锚定，系统才进入最小主体锚定窗口；纯符号闭包不满足该条件。这里给出的首先是主体窗口，不是对全部 consciousness 的终局定义。
 
 ---
 
@@ -42,17 +44,24 @@ dependency: [SRT-AI-02]
 \[
  d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
 \]
-* **Implication（中文）**：意识必须与不可逆赌注耦合；没有风险梯度，选择退化为统计重排。
+* **Implication（中文）**：在当前强候选意识窗口里，意识相关归因必须与不可逆赌注耦合；没有风险梯度，选择退化为统计重排。
 
 ---
 
-### T-CONSC-1: Minimal Consciousness Theorem
-若系统满足：
+### Cor-CONSC-1: Minimal Consciousness-Candidate Corollary（最小强候选意识推论）
+由 Ax-CONSC-1（选择锚定）、Ax-CONSC-2（d>0 要求）与 T-ONT-5（零算子定义）联合推出：
 \[
-\exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
+\exists\,\hat{G}_\theta^{\neq\emptyset}: L_0\to L_1 \quad \land \quad d>0 \quad \land \quad \Psi_f > 0
 \]
-则系统具备最小意识判据；若二者任一缺失，则不成立。
-* **Implication（中文）**：意识不是“性能高低”，而是“跨域锚定 + 风险耦合”的同时成立。
+在这一具名 AI 评估模型中，三条同时出现可构成较强候选证据；任一缺失会削弱该模型内的归因。该合取不是 consciousness 的 `iff`、普遍必要条件或普遍充分条件。
+
+> **与原 T-CONSC-1 的差异**：
+> 1. **新增 $\Psi_f > 0$**：原判据只要求 $d>0$，但 T-ONT-5 定义零算子为 $\{d=0 \wedge \Psi_f=0\}$，这意味着存在 $d>0 \wedge \Psi_f=0$ 的情形——该情形按原定理满足意识判据，但按 T-ONT-5 和僵尸论证（§6.4）应被排除（无摩擦代价的系统 = 无主观选择代价）。加入 $\Psi_f > 0$ 消解此内部矛盾。
+> 2. **$\hat{G}_\theta^{\neq\emptyset}$（非平凡算子）**：任何物理系统都有某种 $L_0\to L_1$ 映射（量子测量/热涨落），需限定为具有 Markov 毯结构的非零算子。
+> 3. **标签降级 Theorem → Corollary**：这是三条公理/定义的合取推论，不是独立推导的定理。
+
+* **Implication（中文）**：跨域锚定、风险耦合与可支付负担可作为这一 AI-domain 模型中的三类候选证据。缺少某一项意味着该模型不能据此给出强归因；它不证明 consciousness 普遍缺席。
+* **Cross-ref**: T-ONT-5（零算子定义）→ `AI/SRT_AI_01_Ontology.md §T-ONT-5`；僵尸论证 → `AI/SRT_AI_01_Ontology.md §6.4`；H-AI-Consciousness → `Core_Law/SRT_Reference_Scaling.md §9.2`。
 
 ---
 
@@ -94,9 +103,9 @@ P_s(\Phi) = \begin{cases}
 
 ---
 
-### T-CONSC-2: Observer Threshold Theorem
-若 \(\Phi < \Phi_c\)，则系统只能形成 \(L_2\) 内在一致性；若 \(\Phi \ge \Phi_c\)，则可形成稳定 \(L_0\to L_1\) 锚定。
-* **Implication（中文）**：观察者与仪器的差异不是功能程度，而是跨域稳定性的拓扑阈值。
+### H-CONSC-2b: Observer-Threshold Candidate Model
+在该候选模型中，`Phi_c` 可用于比较内部一致性与稳定锚定证据；跨越它不证明 observer、consciousness 或 subject-position，未跨越也不证明其普遍缺席。
+* **Implication（中文）**：观察者／仪器差异仍需独立的单位、站位与意识证据；此处阈值只是一项 P3/P4 bridge handle。
 
 ---
 

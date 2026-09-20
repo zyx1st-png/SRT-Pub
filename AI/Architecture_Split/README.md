@@ -1,29 +1,24 @@
 ---
 id: SRT-AI-ARCH-SPLIT-INDEX
 type: index
-tags: [Split, Navigation, Longform]
-status: active_v1
+tags: [Split, Navigation, Longform, ConnectorSafety]
+status: active
 layer: meta
 epistemic_layer: os
-claim_mode: navigation
+claim_mode: evidence
 canonical: false
-dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
+dependency: [SRT-AI-ARCH]
 ---
 
-# SRT-AI-ARCH Split Index
-
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
-> **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准。
+# SRT AI Architecture: Transformer & Dynamics (Hybrid Edition) Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
-- Source owner bytes: `52424`
-- Source owner SHA-256: `69ed15c35b1abd5382c584fca39b01dca0ef2a879e14526571a0001d8ae73fb1`
-- 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
-- 01_Transformer_and_Judgment：[`01_Transformer_and_Judgment.md`](01_Transformer_and_Judgment.md)
-- 02_Defects_and_CategoryView：[`02_Defects_and_CategoryView.md`](02_Defects_and_CategoryView.md)
-- 03_AGI_Limits_and_Assistant_Vision：[`03_AGI_Limits_and_Assistant_Vision.md`](03_AGI_Limits_and_Assistant_Vision.md)
-- 04_Roadmap_and_Appendix：[`04_Roadmap_and_Appendix.md`](04_Roadmap_and_Appendix.md)
-- 05_Interface_Additions：[`05_Interface_Additions.md`](05_Interface_Additions.md)
-- Architecture Annex：[`../Architecture_Annex/README.md`](../Architecture_Annex/README.md)
-- Engineering Interfaces：[`../Architecture_Annex/01_Engineering_Interfaces.md`](../Architecture_Annex/01_Engineering_Interfaces.md)
-- Claim-status guardrail：[`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
+- Source owner bytes: `52995`
+- Source owner SHA-256: `98dcff9bafaab101193336cb11c6011ec74cc2bdf826f6a1ca334a084dc61925`
+- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
+- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
+
+| Part | File | Starts with | Bytes | SHA-256 prefix |
+|---:|---|---|---:|---|
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Architecture: Transformer & Dynamics (Hybrid Edition) | 32370 | `d1d37a656388` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §6.5 AI地平线半径：知道何时退后 | 21472 | `424827d14aeb` |

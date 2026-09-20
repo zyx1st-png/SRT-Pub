@@ -9,6 +9,7 @@ claim_mode: mixed
 claim_level: P2-P5
 canonical: false
 dependency:
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
   - SRT-SOC-ECONOMICS
   - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
   - SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27
@@ -18,7 +19,8 @@ dependency:
 machine_summary: >
   Compact core for SRT social economics. Read with SRT_Social_Political_PH_SS_Guardrails.md:
   social reality is collective L2, but institutional persistence, market coordination, money, price,
-  or low friction are not automatically legitimacy or truth.
+  or low friction are not automatically legitimacy, justice, or truth. Reselection, correction,
+  burden distribution and future-selectability remain non-exhaustive candidate lenses.
 ---
 
 # SRT Social Economics — Compact Core
@@ -26,7 +28,8 @@ machine_summary: >
 > **定位**：本文件是 `SRT_Social_Economics.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把社会建构、行为经济学、博弈论、制度经济学与价值论统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留经典思想家对应、历史案例、制度跃迁与大量社会科学展开。  
-> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。市场、货币、价格、制度效率和信任降低摩擦都必须接受 friction-export、future-selectability、exit/correction、consequence-return 等检验。
+> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。Friction-export、future-selectability、exit/correction、consequence-return 只是独立声明的政治／伦理框架内的候选评估维度，不是新的合法性 solver。
+> **Current authority**：Generative Ontology Spine 与当前 Collective Selection、`L_2`、`d / Psi_f / T_dir` 及 E6 ethics 边界向下游约束本 bridge，不反向。`O2-C != O2-A != O2-M`；`O2-M = OPEN / HOLD`；high `d` 不赋予政治权威或优越 standing。
 
 ## 1. 核心问题
 
@@ -47,7 +50,7 @@ social reality != social legitimacy
 institutional persistence != political justification
 market selection != moral truth
 money / price != final value
-low friction != justice unless hidden Psi_f is not exported
+low friction -/> justice; generic burden / cost / friction proxy != canonical Psi_f automatically
 ```
 
 ---
@@ -92,7 +95,7 @@ recognition -> repetition -> symbolic encoding -> enforcement -> memory -> conse
 
 Guardrail:
 
-> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden `Psi_f` or narrowing future selectability.
+> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden burdens or narrowing future selectability.
 
 ### 3.2 Money as L2 Metric
 \[
@@ -118,7 +121,7 @@ Guardrail:
 
 Guardrail:
 
-> Efficient selection is not automatically legitimate selection. Ask who pays the `Psi_f` that makes the market look efficient.
+> Efficient selection is not automatically legitimate selection. A declared framework may ask who bears the burden / cost that makes the market look efficient; those costs are not canonical `Psi_f` automatically.
 
 ### 3.4 Bubble as L2 Overfit
 \[
@@ -199,15 +202,15 @@ SRT 在这里最强的一步是：
 
 Guardrail:
 
-> Shared `d-value` recognition is morally relevant, but legitimacy still requires future-selectability, non-exported friction, and correction channels.
+> Shared `d-value` recognition may be morally relevant inside a declared framework, but it neither settles standing nor defines legitimacy. Future-selectability, burden distribution and correction remain candidate lenses.
 
 ### 6.4 Dehumanization
 \[
-Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
+\text{Concern-exclusion candidate}(i\to j) : d_i[\theta_j] \to 0
 \]
 
 最压缩句子：
-> **去人化就是把他人从自己的选择考量范围里抹掉。**
+> **这一历史模型描述对他人关切的收窄；它不自动判定去人身份、道德 standing、政治排除或暴力许可。**
 
 Extended reading:
 
@@ -227,7 +230,7 @@ Extended reading:
 
 Guardrail:
 
-> Institution = structured constraint. Legitimacy = structured constraint that remains corrigible, non-occlusive, and future-selectability-preserving.
+> Institution = structured constraint. Legitimacy remains an evaluative question under a declared framework; corrigibility, non-occlusion and future-selectability are candidate evidence dimensions, not its definition.
 
 ### 7.2 Path Dependence
 \[
@@ -240,15 +243,15 @@ SRT 把路径依赖重写为：
 
 ### 7.3 Inclusive vs Extractive Institutions
 压缩含义：
-- 包容性制度 = 高 d-value 的制度化表达
-- 榨取性制度 = 低 d-value 的制度化表达
+- 历史／候选解读：包容性制度可表现为较宽的关切范围
+- 历史／候选解读：榨取性制度可表现为较窄的关切范围
 
 最短结论：
-> **制度差异，本质上是社会选择范围差异的长期固化。**
+> **这是一种社会经济学候选模型，不是包容／榨取的定义，也不由 `d` 直接产生合法性判准。**
 
 Guardrail:
 
-> Do not infer inclusion or legitimacy from declared values. Test whether affected subjects can revise rules, exit without destruction, make costs visible, and alter gate conditions.
+> Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
 **Closure-pathology alignment (2026-04-21)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能只是 pseudo-open，而不是结构上开放。
 
@@ -261,22 +264,20 @@ Guardrail:
 G_{agency}=\text{Gini}(d_i)
 \]
 
-SRT 的重写是：
-> **不平等不仅是财富分布不均，更是选择带宽与现实塑形能力分布不均。**
+候选重写：
+> **该模型研究财富、选择带宽与现实塑形能力的分布关系；`G_{agency}` 不是不平等、moral standing 或合法性的普遍定义。**
 
 ### 8.2 Trust as Friction Reduction
 \[
 \text{Trust}=\arg\min(\Psi_f,S_{soc})
 \]
 
-最压缩句子：
-> **信任的深层作用，是降低交易摩擦与社会熵。**
-
-这使信任不再只是道德词，而成为社会系统效率的本体论基础。
+候选读法：
+> **信任可能降低某些交易摩擦与社会熵代理量；该式是待操作化模型，不是正义或合法性结论。**
 
 Guardrail:
 
-> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Always ask whether `Psi_f` is truly reduced or merely exported.
+> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Generic cost reduction or export is not canonical `Psi_f` automatically.
 
 ---
 
@@ -288,11 +289,11 @@ Guardrail:
 2. **价值、货币与市场都不是最终实在，而是社会选择的稳定化指标与过程。**
 3. **行为经济学偏差的深层根源，是 `d-value` 有限与解锚代价高。**
 4. **博弈、信任、道德与去人化都可被重写为多主体选择范围如何彼此纳入或排除。**
-5. **制度的本质，是某类社会选择结构被长期固化；包容性与榨取性的差异，本质上是 d-value 的制度化差异。**
+5. **制度可被描述为长期固化的社会选择约束；把包容／榨取与 `d` 联系起来只是候选解释，不是定义或政治判决。**
 
 Addendum:
 
-> These five claims are descriptive / diagnostic unless legitimacy tests are explicitly passed. Social `L_2` can be real, efficient, and stable while still being ethically or politically pathological.
+> These five claims are descriptive or candidate diagnostics. No fixed SRT legitimacy test battery is supplied here, and an ethical or political verdict requires an independently declared framework.
 
 ---
 

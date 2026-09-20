@@ -35,8 +35,8 @@ Working reading:
 
 ### 1.2 Historical asymmetry
 
-Historical asymmetry is the asymmetry produced when prior selections and their stabilized traces carve the latent landscape.
-For any later finite selector, the encountered `L_0` is usually not a bare primitive field but a historically sculpted one.
+Historical asymmetry is the asymmetry produced when prior selections remain materially effective in later selection conditions through an established retention relation or stabilized trace.
+For a later finite selector, the encountered conditions may therefore be historically conditioned; this does not mean that occurrence alone carves the primitive latent domain.
 
 Working reading:
 - primitive asymmetry makes selection possible;
@@ -48,33 +48,27 @@ Working reading:
 
 ---
 
-## 2. Event Trace vs Historical Asymmetry
+## 2. Event-Level Non-Erasure vs Historical Asymmetry
 
-Every real selection leaves a trace.
-But not every trace rises to the level of historical asymmetry.
+A Selection event that occurred is not identical to never-having-occurred.
+But event-level non-erasure does not by itself establish a durable trace, `L_2` writeback, or persistent landscape modification.
 
 ### 2.1 Event trace
 
-Any real selection rewrites the possibility landscape in some degree.
-In this sense:
-
-> **selection always writes back.**
-
-This is the minimal consequence of irreversibility.
-A selection that happened cannot be treated as if nothing had changed.
+A model-local trace is admitted only where an explicit retention / writeback mapping or later material efficacy is established. A selection that happened cannot be identified with never having happened, but occurrence alone does not show that it remains effective in later selection conditions.
 
 ### 2.2 Historical asymmetry
 
-Historical asymmetry is stronger than event trace.
-It appears only when traces are repeated, maintained, and sedimented into stable constraints that bias later selection.
+Historical asymmetry is stronger than event-level non-erasure.
+It appears only when retained effects are repeated, maintained, and sedimented into stable constraints that bias later selection.
 
 So:
-- all real selection leaves trace;
-- only sedimented trace becomes landscape.
+- occurrence establishes event-level non-erasure, not a durable trace;
+- only explicitly retained and sedimented effects become model-local landscape.
 
 **Compressed slogan**:
 
-> **选择都会留痕，只有沉积才会成地形。**
+> **发生过不等于从未发生；只有被保留并持续生效的差异，才会沉积成地形。**
 
 ---
 
@@ -433,7 +427,7 @@ So:
 
 If a short citation block is needed, use the following:
 
-> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity. A healthy closure should be read less as a wall than as a semipermeable membrane: channel presence is the minimum threshold, gate-rule revisability is the working core, and appeal / pushback availability is the normative strengthening. The earliest lesion of pathological closure lies not primarily in the disappearance of visible channels but in the rigidification and non-revisability of gate rules; experientially, this first appears as habituation, then loss of appeal sense, and finally the misrecognition of contingent gate rules as reality itself. The standing to appeal arises minimally from being recognized as a relevant subject, more centrally from being able to return consequences back into the closure's own operation, and more strongly from retaining shared interpretive standing over what the gate means and why it counts. That return path is commonly severed first at information, then more decisively at counting, and most deeply at attribution. Effective input begins only when burden can alter gate decisions or stability parameters, and reaches its stronger form when it can also trigger legitimacy review of the gate itself. Pathological closure often preserves itself through pseudo-openness: expression without decision change, parameter tuning without logic change, and logic tuning without legitimacy exposure. In the full loop, gate rigidification, loss of appeal standing, consequence-return cuts, pseudo-openness, reselection loss, and reality-misrecognition feed into one another until the pathological closure becomes shared and backgrounded as lethal L2.**
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete where prior Selection remains materially effective in later conditions. An event that occurred is not identical to never-having-occurred, but a model-local trace requires an explicit retention / writeback relation or established later efficacy; only repeated, maintained, and sedimented retained effects become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity. A healthy closure should be read less as a wall than as a semipermeable membrane: channel presence is the minimum threshold, gate-rule revisability is the working core, and appeal / pushback availability is the normative strengthening. The earliest lesion of pathological closure lies not primarily in the disappearance of visible channels but in the rigidification and non-revisability of gate rules; experientially, this first appears as habituation, then loss of appeal sense, and finally the misrecognition of contingent gate rules as reality itself. The standing to appeal arises minimally from being recognized as a relevant subject, more centrally from being able to return consequences back into the closure's own operation, and more strongly from retaining shared interpretive standing over what the gate means and why it counts. That return path is commonly severed first at information, then more decisively at counting, and most deeply at attribution. Effective input begins only when burden can alter gate decisions or stability parameters, and reaches its stronger form when it can also trigger legitimacy review of the gate itself. Pathological closure often preserves itself through pseudo-openness: expression without decision change, parameter tuning without logic change, and logic tuning without legitimacy exposure. In the full loop, gate rigidification, loss of appeal standing, consequence-return cuts, pseudo-openness, reselection loss, and reality-misrecognition feed into one another until the pathological closure becomes shared and backgrounded as lethal L2.**
 
 ---
 

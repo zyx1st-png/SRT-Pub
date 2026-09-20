@@ -87,7 +87,7 @@ alternative_objectifications:
 - `Ĝθ`（G_hat_theta）：parameterized selection / anchoring operator；`θ` = 选择条件（history, embodiment, context, model-state…）
 - `d-value`：stake-coupled concern
 - `Psi_f`：ontological friction（payability burden）
-- Thresholded consciousness；**stability ≠ legitimacy**
+- Consciousness is not entailed by selection; exact admission remains open；**stability ≠ legitimacy**
 
 ### 7. Glossary
 > prov: `author_confirmed` · label: `human revised`
@@ -110,7 +110,7 @@ alternative_objectifications:
 | C2 | Stability ≠ legitimacy: a stabilized pattern (L2) can be stable yet harmful, false, coercive, or costly. | descriptive / normative | strong |
 | C3 | Value (d-value) is stake-coupled, distinct from capacity and from preference: value begins where consequences return and cannot be substituted away. | definitional / normative | medium |
 | C4 | No reality is durable for free: every selected reality carries Psi_f friction; living reality needs *payable* friction (neither zero nor crushing). | causal | medium |
-| C5 | Consciousness is thresholded, not co-extensive with selection: it appears only when selection enters concern, burden, consequence-return, self-modulation, and directional readability. | definitional / empirical-bridging | weak-medium |
+| C5 | Consciousness is not co-extensive with selection. Concern, burden, consequence-return, self-modulation, and directional readability are candidate evidence dimensions inside declared models, not a universal admission package; exact sufficiency remains OPEN. | empirical-bridging / open | weak-medium |
 
 ### 9. Claim map
 > prov: `ai_inferred` · label: `author confirmed`
@@ -120,7 +120,7 @@ graph TD
   C1[C1 determinacy is produced] --> C2[C2 stability != legitimacy]
   C1 --> C4[C4 no reality is free / Psi_f]
   C4 --> C3[C3 d-value is stake-coupled]
-  C1 --> C5[C5 consciousness is thresholded]
+  C1 --> C5[C5 consciousness is not entailed; admission open]
   C4 --> C5
 ```
 
@@ -145,7 +145,7 @@ graph TD
 | Predictive processing / Active Inference | complement | friction/cost; SRT keeps "stability ≠ legitimacy" |
 | Constructivism / social construction | re-draw boundary | constructed **but constraint-bound** — not relativist |
 | Idealism | oppose | selection-first ≠ mind-first |
-| Panpsychism | oppose | selection is broad; consciousness is thresholded |
+| Panpsychism | oppose by non-inference | selection is broad; selection does not entail consciousness |
 
 ### 12. Steelman
 > prov: `ai_inferred` · label: `author confirmed`
@@ -158,14 +158,14 @@ A single vocabulary (selection / anchoring / friction / stake / threshold) lets 
 - **"Explains everything" / unfalsifiable**: if selection underlies all determinacy, what observation could SRT *not* accommodate after the fact?
 - **Circularity**: "real = what survives constraint" + "constraint = what makes real" risks definitional loop.
 - **Relabeling vs prediction**: do d-value / Psi_f generate any differential prediction beyond existing affect, reward, and thermodynamic-cost theories?
-- **Threshold underspecification**: C5's consciousness threshold may not be statable independently of intuition.
+- **Admission underspecification**: C5 does not yet provide an independently measurable consciousness-sufficiency rule.
 
 ### 14. Failure conditions ★
 > prov: `author_confirmed` · label: `human revised`
 
 - If a determinate reality can be exhibited that requires **no** selecting structure and **zero** anchoring cost, **C1 fails**.
 - If `d-value` and `Psi_f` cannot be operationalized to make **any** differential prediction beyond existing affect/cost theories, the value/friction apparatus reduces to relabeling (**C3/C4 fail as science**).
-- If the consciousness threshold cannot be specified by a **measurable** criterion independent of intuition, **C5 stays philosophy, not science**.
+- Unless consciousness-relevant candidate evidence yields independently measurable discrimination without being promoted to a universal gate, **C5 stays philosophy, not science**.
 - If "stability ≠ legitimacy" yields **no** decision procedure for which stable patterns to reselect, **C2 is rhetorical**.
 
 ### 15. Risk flags
@@ -212,12 +212,12 @@ author_care_note: "本样本作者=founder 本人，无第三方照护问题。"
 ### 19. Public brief
 > prov: `author_confirmed` · label: `human revised`
 
-SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice; consciousness is thresholded; **stability is not legitimacy**. What becomes real must pay cost, survive resistance, and leave consequences.
+SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice and does not entail consciousness; exact consciousness admission remains open; **stability is not legitimacy**. What becomes real must pay cost, survive resistance, and leave consequences.
 
 ### 20. Academic brief
 > prov: `ai_inferred` · label: `author confirmed`
 
-A selection-first (not mind-first) account of determinacy, positioned between given-realism and constructivism: realities are selected under constraint, anchored by a parameterized operator (Ĝθ), and made durable only by payable ontological friction (Psi_f). It complements process metaphysics, enactivism, and predictive-processing while resisting relativism (stability ≠ legitimacy) and panpsychism (consciousness is thresholded). Formal anchors (axioms, equations) exist; the open empirical frontier is operationalizing d-value, Psi_f, and the consciousness threshold into differential predictions.
+A selection-first (not mind-first) account of determinacy, positioned between given-realism and constructivism: realities are selected under constraint and may be modeled through parameterized operators and payable ontological friction. It complements process metaphysics, enactivism, and predictive-processing while resisting relativism (stability ≠ legitimacy) and panpsychism through a non-inference rule (selection -/> consciousness). Formal anchors exist; the open empirical frontier is testing whether d-value, Psi_f, and other candidate dimensions add differential evidence without becoming a universal consciousness gate.
 
 ---
 

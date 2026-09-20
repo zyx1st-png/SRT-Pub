@@ -26,7 +26,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
 
 SRT 的压缩回答是：
 - 热力学描述选择的代价
-- 时间描述选择的序列与耗费
+- 时间在声明的记录／保留模型中描述被保留事件的序列与耗费；不是 primitive Selection 的自动计数
 - 引力在本轮只保留为维持现实结构成本的 P3/P4 弱相容接口
 - 宇宙学描述大尺度 `L_0 / L_1 / L_2` 组织方式
 
@@ -100,30 +100,30 @@ SRT 把质量解释为：
 
 ## 4. 时间本体论
 
-### 4.1 Time as Selection Metric
+### 4.1 Time as Retained-Order Metric Candidate
 \[
 t \propto \int \Psi_f(L_1)\,dn
 \]
 
-时间不是抽象容器，而是：
-> **选择序列的度量与现实维持的耗费。**
+primitive Selection 不要求一个先在的普遍时间容器。在声明了 event-record / retention structure 的物理模型中，时间可被候选性地读取为：
+> **被保留选择序列的度量与现实维持耗费的模型内台账。**
 
-**Boundary**：这首先是 interpretive time-as-selection-index reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
+**Boundary**：Selection-event counting 不是 primitive ontology；单个 Selection event 不自动生成持久时间单位。这首先是 interpretive retained-order reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
 
-### 4.2 Triple Definition Equivalence
-SRT 把时间统一成三种等价视角：
-- 选择序列
-- 选择累积
+### 4.2 Conditional Model Correspondence
+只有在事件单位、retention mapping、尺度与转换常数均已声明时，三种读法才可检验模型内对应：
+- 被保留的选择序列
+- retention map 准入的历史累积
 - 选择效率
 
-### 4.3 Time Arrow as Selection Arrow
-时间的不对称性来自选择的不可逆性：
+### 4.3 Time Arrow as Retained-Order Readout
+在 retained event-order 与持续历史效力已经建立的模型中，时间不对称性可作为记录结构的方向读数：
 - 过去 = 已固化的 `L_2`
 - 现在 = 发生中的 `L_1`
 - 未来 = 尚未切割的 `L_0`
 
 最压缩句子：
-> **时间之箭不是额外神秘结构，而是选择不可逆性的宏观表现。**
+> **时间之箭可作为被保留历史关系的宏观读数；bare occurrence 或 irreversibility 不足以建立普遍箭头。**
 
 ### 4.4 Time Travel Impossibility
 SRT 对时间旅行的最压缩否定是：
@@ -188,10 +188,14 @@ SRT 试图把暗物质和暗能量重写为：
 这篇最容易被误读的地方是：
 - 把“宇宙尺度 d”误当成“宇宙主体意识”
 
-SRT 的边界非常明确：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+SRT 的边界是非蕴含而不是替代阈值：
+
+```text
+cosmic / quantum d-like capacity proxy -/> phenomenality / consciousness;
+d / Psi_f / G-hat conjunction -/> universal consciousness admission.
+```
+
+本 Physics translation 不拥有 consciousness / phenomenality 准入权；相关 standing 保持独立 gated / OPEN。
 
 因此：
 - 量子尺度可有带宽，不等于有体验
@@ -205,7 +209,7 @@ SRT 的边界非常明确：
 
 1. **热力学描述的是选择的代价，而不是单纯的无意义熵增。**
 2. **质量与引力可被弱读为现实维持的摩擦与共识成本接口。**
-3. **时间是选择序列与维持代价的度量，而不是独立背景容器。**
+3. **在声明的记录／保留模型中，时间可作为被保留选择序列与维持代价的读数；它不是独立背景容器，也不是每个事件自动生成的单位。**
 4. **宇宙学结构可被理解为大尺度 `L_0 / L_1 / L_2` 组织结果。**
 5. **宇宙尺度统一不推出泛心论；d 的跨尺度统一仍需严格边界。**
 

@@ -86,7 +86,7 @@ d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}
 最重要的边界是：
 > d 是跨尺度数学标尺，不等于跨尺度意识赋值。
 
-只有在生物/认知域满足充要三条件时，d 才表现为意识相关关切，而不是纯数学量。
+在声明的生物/认知模型中，d、`\Psi_f` 与 formed `\hat G` 可作意识相关关切的候选证据维度；它们的合取不是普遍必要、充分或充要条件。
 
 ---
 
@@ -199,12 +199,10 @@ F_{boundary}(\tau)\le U_{survival}(d)
 SRT 在 `Core 14` 中最容易被误读的地方，是把 d 的跨尺度统一误读成“跨尺度意识统一”。
 
 SRT 的压缩立场是：
-- d 是跨尺度数学标尺
+- 跨尺度可比较的是具名 capacity / structure proxy，不自动是 canonical stake-coupled `d`
 - 意识不是跨尺度默认属性
-- 只有当以下条件同时满足时，才有意识相关成立：
-\[
-\text{Consciousness} \iff \Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset
-\]
+- proxy compatibility、`d`、`\Psi_f` 或 formed `\hat G` 的单项与合取均不在本文件建立 consciousness
+- consciousness / phenomenality admission 由独立 owner 承担，exact sufficiency 保持 OPEN
 
 所以：
 - 量子可有相干带宽，不等于有主观体验
@@ -220,7 +218,7 @@ SRT 的压缩立场是：
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**
 
 ---
 

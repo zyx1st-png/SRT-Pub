@@ -25,128 +25,57 @@ dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS]
 
 ---
 
-## §1 三域结构 (The Triadic Ontology)
+## §1 Selection 的三类模型分面 (Triadic Model Aspects)
 
-> **本节定位**：以下 L₀/L₁/L₂ 的集合论和方程定义，是 L0 文件"潜在域 / 显现域 / 稳定域"三命题的**形式化实现**。
-> 形而上意义在 L0 文件中定义；这里定义的是**可操作的符号结构**。
+> **本节定位（2026-09-14）**：`L_0/L_1/L_2` 继续作为强有用的形式坐标，但它们不再被本文件定义成三个独立本体容器。L0 形而上意义由 `SRT_L0_Metaphysics.md` 与 Generative Ontology Spine 控制。
 
-SRT 将本体论重构为统一选择动力学的三个相对投影层。
+### §1.1 L₀ — Open / Non-Preclosed Aspect
 
-### §1.1 L₀ — 潜在域 (Latent Domain)
+**定义 O1**：在一个声明模型 `M` 中，`L_0^M` 表示相对于当前 determinate manifestation 尚未被该 model-cut 穷尽 / 封闭的可达或生成状态结构。
 
-**定义 O1**: 相对于当前选择的高自由能状态集合——未被选择的可能性场。
+```text
+L0^M = model-relative openness / accessibility construct;
+!= absolute warehouse of completed possible objects.
+```
 
-$$L_0 \equiv \{σ ∈ S : F[σ] > F[σ_{L_1}]\}$$
+历史记号 `L_0^{abs}` 不再作为 positive canonical primitive source。若旧桥接或比较文献继续使用它，只能表示“任何有限形式模型都不能穷尽 primitive Selection openness”的极限性速记，不能承载集合库存、全信息量或先在容器证明。
 
-**定义 O1a (绝对潜在域)**: 不可完全形式化的全潜能本源——先于一切数学结构的混沌潜能。
+**定义 O1b（相对可达域）**：`L_0^{rel,M}(t)` 可以继续作为给定 formed operator / constraints 时的可访问状态空间：
 
-$$L_0^{abs} \supseteq \text{Any formal system}$$
+$$L_0^{rel,M}(t+1)=f_M(L_1^M(t),\hat G_\theta,\text{constraints})$$
 
-> **澄清 (Tension-Rev-1)**：$L_0^{abs}$ 本体论上不等同于 Ruliad 或任何特定数学对象。Ruliad、模空间 $\mathcal{A}/\mathcal{G}$、希尔伯特空间 $\mathcal{H}$ 均为 $L_0^{abs}$ 在特定 $L_2$ 框架下的**相对无限的具象化投影**。正如否定神学定理（T-Trad-2）所述：没有任何有限 $L_1$ 谓词能完整捕获 $L_0$。各数学实现之间的拓扑不兼容性恰恰印证了 $L_0^{abs}$ 的不可穷尽性。
-
-**领域实现表**：
-
-| $L_2$ 框架 | $L_0^{abs}$ 的投影实现 | 适用领域 |
-|:-----------|:----------------------|:---------|
-| 量子力学 | $\mathcal{H}$（希尔伯特空间）| 微观物理选择 |
-| 规范场论 | $\mathcal{A}/\mathcal{G}$（模空间）| 物理等价类拓扑 |
-| 计算论 | Ruliad | 逻辑可能性全空间 |
-| 灵性传统 | 空性 / 道 / 梵 / 本源 | 直觉-体验性指向 |
-
-**定义 O1b (相对潜在域)**: 给定 $L_1(t)$ 时，$\hat{G}$ 可访问的可能性子集。
-
-$$L_0^{rel}(t+1) = f(L_1(t), \hat{G}_θ)$$
-
-**统一关系**:
-
-$$L_0^{rel} \subseteq L_0^{abs}|_{physical\ constraints}$$
-
-> **A13 / PC-A 边界（2026-08-11）**：$L_0^{abs}$ 的不可穷尽性不等于其内容、基数或信息量在时间中守恒；$L_0^{rel}$ 明确受 $L_1(t)$、位置与算子条件约束，并可随历史改变。任何 $H(L_0)$ 形式化都必须声明它只作用于哪个相对投影及其测度，不能直接写成 $L_0^{abs}$ 的全局恒等式。
+它是模型构造，不是 primitive ontology。
 
 ---
 
-### §1.2 L₁ — 显现域 (Manifest Domain)
+### §1.2 L₁ — Determinate Manifest Aspect
 
-**定义 O2**: 算子选择的当前切片——当下的现实，动态维持的配置。
+**定义 O2**：`L_1^M(t)` 表示 Selection 在模型 `M` 中的 determinate manifest / operative slice。
 
-$$L_1(t) = \hat{G}_θ[σ(t)]$$
+若采用 operator realization，可写：
 
-> **AM-A 形式角色边界（2026-08-11）**：O2 记录 primitive actualisation 的输入—输出角色，不把 $\hat G_\theta$ 当成先在实体或 actualisation 自身的原因。后续迟滞、门控、流形与拓扑公式是领域 realization／稳定化表达，不构成 P0 的 universal derivation。
+$$L_1^M(t)=\mathrm{Realized}_M(\hat G_\theta, t)$$
 
-**定义 O2a (迟滞修正)**:
-
-$$L_1(t) = \hat{G}_θ[L_0(t)] + η · L_1(t - Δt)$$
-
-| η 值 | 效应 | 现象学表现 |
-|:-----|:-----|:-----------|
-| η ≈ 0 | 无记忆 | 现实感碎裂 |
-| η ≈ 0.5 | 平衡 | 正常连贯现实感 |
-| η ≈ 1 | 完全锁定 | 认知固化 |
-
-**定义 O2b (β门控混合)**:
-
-$$L_1^{experienced} = β · L_1^{external} + (1-β) · \hat{G}(L_0)$$
-
-**定义 O2c（L₁ 的单纯复形截面，新增）**:
-给定时窗 \([t,t+\Delta t]\)，将显现域截面表示为单纯复形：
-$$L_1^{(t,\Delta t)} \cong K_t=(V_t,\Sigma_t)$$
-其中 \(V_t\) 为活跃单元集，\(\Sigma_t\) 为满足共激活阈值的单纯形集合。
-
-**定义 O2d（拓扑空洞作为潜在域负向投射，新增）**:
-$$\mathcal{H}_k(K_t) \neq 0 \Rightarrow \text{存在由 }L_1\text{ 边界界定而未坍缩的 }L_0^{rel}\text{ 局部}$$
-* **解释**：空洞不是“无”，而是被当前选择边界包围的可达反事实体积。
-
-**[Lineage/Source]**:
-- Algebraic Topology / Simplicial Complex：Henri Poincaré（1895），后续标准教材：Hatcher, *Algebraic Topology*（2002）。
-- Applied Topological Neuroscience：Blue Brain / EPFL 团队关于 clique complex 与 cavities 的建模工作（2017 起，见 Reimann et al., *Frontiers in Computational Neuroscience*）。
+而不是把该式读成 prior operator 产生 ontically different existence。迟滞、门控、单纯复形、topological-hole 等公式均为更强 realization / observation models。
 
 ---
 
-### §1.3 L₂ — 收敛域 (Vergence Domain)
+### §1.3 L₂ — Retained Historical-Efficacy Aspect
 
-**定义 O3**: 选择收敛的长期吸引子——多算子的共识结构。
+**定义 O3**：`L_2` 的一般负担是先前 Selection 的差异继续实际约束后来 Selection。
 
-$$L_2 \equiv \{σ : \hat{G}_θ[σ] = σ \text{ 且稳定}\}$$
+```text
+L2-side
+= retained / sedimented historical efficacy of prior Selection.
+```
 
-**定义 O3d-L2（相对性声明，新增）**:
-在严格写法中，任何收敛域都应带参数下标：
-$$L_{2,\theta} \neq L_0^{abs}$$
-其中人类科学对应 \(L_{2,\theta_{human}}\)。
-* **Implication**：标准模型、广义相对论等是高稳定 \(L_{2,\theta_{human}}\)，但不等价于绝对潜在域 \(L_0^{abs}\)。
-
-**定义 O3a (迟滞累积)**:
-
-$$L_2(t) = L_2(t-1) + η · \text{sign}(Δσ) · |Δσ|^α$$
-
-**定义 O3b (L₂硬度)**:
-
-$$\text{Hardness}(L_2) \propto |\text{Aut}(L_2)|$$
-
-| L₂类型 | 自同构群 | 硬度 | 可塑性 |
-|:-------|:---------|:-----|:-------|
-| 物理定律 | Poincaré群 | 极高 | 极低 |
-| 数学定理 | 逻辑对称群 | 极高 | 极低 |
-| 生物本能 | 进化稳定策略 | 高 | 低 |
-| 文化规范 | 语境依赖群 | 中等 | 中等 |
-| 个人习惯 | 个体历史 | 低 | 高 |
-
-**定义 O3c (可塑性阈值)**:
-
-$$P_{L_2} = \frac{d_{current} · E_{available}}{Hysteresis(L_2) · C_r}$$
-
-当 $P_{L_2} > 1$ 时，L₂ 可被修改。
+固定点、attractor、迟滞累积、hardness 与可塑性阈值是某些强 stabilization models，不是普遍 ontology definition。对一个声明模型可以另定义 `L_{2,M}^{fp}` 等子类。
 
 ---
 
-### §1.4 κ — 稳定化程度参数 (Stabilization Degree)
+### §1.4 κ — 条件性稳定化参数 (Conditional Stabilization Degree)
 
-> **数学工具来源** [R→Chung 1997 *Spectral Graph Theory*（谱隙 λ₁：衡量图的连通程度/混合时间）; Spielman 2007 *Spectral Graph Theory and its Applications*; Banach 1922（压缩映射不动点定理：Ĝ_θ[σ]=σ的数学基础）; Landau 1937 *Statistical Physics*（连续相变理论：临界点/序参量/势垒跨越）]
->
-> **R/H 区分**：谱隙/不动点/相变理论均为既有数学框架 [R]；将谱隙打开映射为"L₁诞生/意识觉醒"、不动点涌现映射为"L₂结晶/习惯固化"、量子坍缩等同于κ_c1是SRT独有形而上学映射 [H]；其中量子坍缩≡κ_c1处的谱隙打开属 [H-高承诺]（两个框架在量子力学中并无标准等同关系）
-
-**定义域限制（必读）**: κ 仅对 $L_0^{rel}$ 有效。$L_0^{abs}$ 先于一切形式系统，
-不可被任何参数化容器捕获（Tension-Rev-1，T-Trad-2）。以下所有 κ 的讨论
-均隐含在「给定当前算子 $\hat{G}_\theta$ 可访问的相对潜在域」这一前提下。
+> `κ` 是强 realization / model coordinate，不是 primitive Selection 的阶段计。它只在一个已声明的 `L_0^{rel,M}` / operator model 中有定义。`κ_c1/κ_c2`、spectral-gap、fixed-point 等相变解释不得被写成 L1/L2 作为独立本体物质的 universal birth theorem；意识对应尤其需要独立 bridge / empirical gate。
 
 **定义 O3d (稳定化程度)**:
 
@@ -622,3 +551,5 @@ $$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
 ## 【理论边界/防误用声明】
 - 不采纳“外部状态先于一切选择边界而独立完备给定”的推论。  
 - 不采纳“统计边界足以推出意识本体”的推论。  
+
+<!-- Selection-totality scope marker (2026-09-14): primitive ontology is owned by SRT_L0_Metaphysics.md / SRT_Generative_Ontology_Spine.md; this file remains a formal / realization interface. -->

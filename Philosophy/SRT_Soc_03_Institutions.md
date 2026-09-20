@@ -32,6 +32,8 @@ dependency: [SRT-SOC-02]
 
 #### 原文内容
 <!-- ORIGINAL-CONTENT-INSERTED -->
+> **Current-reading guard**: Part A preserves historical/model `Ax/T` labels. They do not create theory-canonical political or moral definitions. Rights, inclusive/extractive classification, value, agency inequality, institutional design and democracy thresholds below are declared-framework P2-P4 hypotheses or diagnostics; they do not derive legitimacy or O2-M from ontology.
+
 ## I. Institutional Dynamics
 
 ### Ax-Inst-1: Institution as L2 Attractor
@@ -39,8 +41,8 @@ dependency: [SRT-SOC-02]
 $$\text{Institution}=\text{Attractor}(L_2)$$
 *   **Implication**: 制度稳定性是势能谷，而非制度文本。
 
-### Ax-Inst-2: Rights as L2 Protection
-权利是对 $d$ 值与选择通道的保护性边界。
+### Ax-Inst-2: Rights-Protection Candidate Model
+在已声明制度框架中，权利可被建模为对候选选择域与通道的保护性边界；`d` 或 `L₂` 不按定义生成 rights。
 $$\text{Right}(i)=\partial \Omega_i \subset L_2$$
 *   **Implication**: 权利的本体论角色是防止选择通道被封闭。
 
@@ -91,8 +93,8 @@ $$\text{Money} \overset{struct}{\longrightarrow} g_{L_2}$$
 - 若货币度规的"曲率"（价格相对价格的变化率）与L₂社会共识稳定性指标（如制度信任度）无相关，则度规类比无预测力。
 - 若无货币的社会（纯物物交换/礼物经济）中L₂稳定性与有货币社会等效，则货币作为"必要L₂度规"的主张不成立。
 
-### Ax-Value-1: Value as Stabilization Probability
-价值等于未来 $L_1$ 稳定化的概率期望。
+### Ax-Value-1: Stabilization-Value Candidate Model
+历史制度经济学模型可把某类工具价值表示为未来 $L_1$ 稳定化的概率期望；这不是 theory-wide value definition。
 $$\text{Value}=\mathbb{E}[P(L_1^{stable}|\sigma)]$$
 *   **Implication**: 价值不是主观偏好，而是稳定化预期。
 
@@ -103,8 +105,8 @@ $$\text{Value}=\mathbb{E}[P(L_1^{stable}|\sigma)]$$
 $$\nabla^2 L_2(k^*) \to 0 \Rightarrow L_2 \to L_2'$$
 *   **Implication**: 结构变迁由拓扑脆弱点触发。
 
-### T-Inst-2: Inequality of Agency
-选择权不平等对应 $d$ 值分布的基尼系数。
+### T-Inst-2: Agency-Inequality Proxy Hypothesis
+在声明 proxy mapping 后，选择机会不平等可与候选 `d` proxy 分布的基尼系数比较；这不是 social power 或 agency 的 ontology identity。
 $$G_{agency}=\text{Gini}(d_i)$$
 *   **Implication**: 贫富差异是选择带宽差异的外显化。
 
@@ -121,16 +123,16 @@ $$G_{agency}=\text{Gini}(d_i)$$
 Institutions are stable, self-reinforcing $L_2$ structures that constrain $\hat{G}$ selection.
 $$ L_2^{inst} = \text{Rules} \cup \text{Norms} \cup \text{Enforcement} $$
 
-### Ax-Inst-2: Institutional Attractors (制度吸引子)
+### Ax-Inst-2: Institutional-Attractor Hypothesis (制度吸引子假说)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-*   **Inclusive**: High $d$ attractor (Power dispersed).
+*   **Inclusive candidate**: modeled with a declared high-`d` proxy under dispersed power.
     $$ L_2^{inc} = \text{Stable}(\hat{G}[\text{High } d]) $$
-*   **Extractive**: Low $d$ attractor (Power concentrated).
+*   **Extractive candidate**: modeled with a declared low-`d` proxy under concentrated power.
     $$ L_2^{ext} = \text{Stable}(\hat{G}[\text{Low } d]) $$
 
-### Ax-Inst-3: Rights as L_2 Protection (权利作为保护)
+### Ax-Inst-3: Rights-as-Protection Candidate (权利保护候选模型)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Rights are $L_2$ protocols that forbid the removal of choices from $L_0$.
+Within a declared institutional model, rights may be represented as `L_2` protocols intended to protect specified choice channels. This does not define rights or make current `L_2` recognition normatively authoritative.
 $$ \text{Right}(x) \implies \forall \theta': \hat{G}_{\theta'}[\text{Remove}(x)] = \text{Forbidden} $$
 
 ---
@@ -652,11 +654,11 @@ $$p_{eff} = p_{observed} \times \text{Connectivity} \times \frac{1}{\text{Hardne
 
 ---
 
-## §8. 政策推论与伦理边界 (Policy Implications & Ethical Boundaries)
+## §8. 候选设计推论与伦理边界 (Candidate Design Implications & Ethical Boundaries)
 
 ### 8.1 制度设计原则
 
-**SRT 制度工程的三原则**:
+在明确公共目标、受影响主体、时间窗与制度权限后，可研究以下三项候选设计维度；它们不是从 SRT ontology 直接推出的政策处方：
 
 1. **最小化 $\Psi_f^{transaction}$** (交易成本)
    - 清晰产权
@@ -690,13 +692,13 @@ $$p_{eff} = p_{observed} \times \text{Connectivity} \times \frac{1}{\text{Hardne
 | Amazon | 商品发现 | 市场操纵 |
 | Apple | 应用分发 | 创新扼杀 |
 
-**SRT 建议**: 将 $L_2$ 定义权视为**公共基础设施**，需公共监管。
+**候选政策 lens**: 在声明反垄断与公共问责目标的框架中，可研究把 `L_2` 定义权按公共基础设施监管的方案；SRT 本体论不直接要求该处方。
 
 ---
 
 ### 8.3 民主的热力学边界
 
-**民主的必要条件**:
+**历史／toy-model 阈值假说**（非民主的必要条件）：
 
 $$\bar{d} > d_{democracy} \approx 3-5$$
 
@@ -776,20 +778,20 @@ SRT_Soc_03_Institutions ← 你在这里
 └── SRT_SocTheory_04-06 (高级理论整合)
 ```
 
-### Definition Summary (定义概述)
-- **Definition**: 本文档定义制度与宏观动力学的 SRT 映射。制度是集体选择的 $L_2$ 吸引子 (Ax-Inst-1)；权利是对 $d$-value 与选择通道的保护性边界 (Ax-Inst-2)；弱关系是跨吸引盆的低 $\Psi_f$ 桥接 (Ax-Net-1)；货币是社会 $L_2$ 的度规 (Ax-Money-1)；选择权不平等对应 $d$-value 分布的基尼系数 (T-Inst-2)。
+### Definition Summary (候选映射概述)
+- **Current status**: 本文档整理制度与宏观动力学的 bridge mappings。制度吸引子、rights-protection、weak-tie friction、money metric 与 agency-inequality formulas 都是声明框架内的模型／proxy；它们不定义权利、价值、政治 authority、social power 或 moral legitimacy。
 
 ### Formalization Summary (形式化概述)
 - **Formalization**: 核心方程包括：
   - $\text{Institution} = \text{Attractor}(L_2)$ — 制度即 $L_2$ 吸引子。**[R]** 追溯性对齐制度理论（North 1990, Ostrom）；操作化候选：用 $L_2$ 势能景观中的 $\Psi_f$ 谷深度代理吸引子稳定性。
-  - $\text{Right}(i) = \partial\Omega_i \subset L_2$ — 权利即选择域的保护边界。**[R→H]** 从法律哲学追溯，SRT 将权利重诠释为 $\Omega_i$（个体可达选择参数域）的边界保护；$\partial\Omega_i$ 操作化候选：可被制度保障的最小 $d$ 区间（Ax-Inst-2）。
+  - $\text{Right}(i) = \partial\Omega_i \subset L_2$ — 声明制度模型中的 rights-protection candidate；它不由 `d` 或 `L₂` recognition 自动获得 normative authority。
   - $\text{Money} \equiv g_{L_2}$ — 货币即社会选择度规。**[R，结构类比非同构]** 货币定义交换比率≈度规定义L₂空间中算子间"选择距离"；降级：$g_{L_2}$ 为结构类比而非黎曼度规的精确应用（量纲不同）。
-  - $G_{agency} = \text{Gini}(d_i)$ — 选择权不平等为 $d$-value 基尼系数。**[H — Novel Prediction]**：若 $d_i$ 可被代理量（教育/选择权/收入自由度等）操作化，则 $G_{agency}$ 应与传统社会流动性指标相关但不完全重叠——这是可检验的独立预测。**操作化问题**：$d_i$ 目前无直接测量，需选定代理量才能计算 $G_{agency}$，否则停留形式层。
+  - $G_{agency} = \text{Gini}(d_i)$ — agency-inequality proxy hypothesis。只有在独立声明 `d_i` proxy、population 与 comparison domain 后才可测试；它不是社会权力或 agency 的定义。
 
 **证伪方向**：若 $G_{agency}$（基于任何合理 $d_i$ 代理）与传统机会不平等指标（如 Chetty 流动性指数）完全共线，则无额外解释力；若 $\text{Money} \equiv g_{L_2}$ 的类比在数学结构上产生错误预测（如度规正定性与货币贬值方向矛盾），则类比需限定范围。
 
 ### Mechanism Explanation (机制解释)
-- **Mechanism**: $\hat{G}_\theta$ 的集体选择在 $L_2$ 势能景观中形成吸引子即制度，其稳定性由 $\Psi_f$ 势能谷深度维持。制度变迁发生于关键节点 $k^*$ 处的 $L_2$ 曲率趋零时——$\Psi_f$ 垒被越过，触发拓扑跃迁。$d$-value 分布的不均匀性 ($G_{agency}$) 量化社会选择权不平等，权利制度本质上是对低 $d$ 个体的选择通道保护。
+- **Mechanism candidate**: 声明模型可用 `L₂` attractor、`Ψ_f` barrier、critical-node curvature 与 proxy inequality 描述制度路径。该机制不从 `d` 推出 rights，不把 proxy inequality 等同于 social power，也不关闭 legitimacy / O2-M。
 
 ## 【理论边界/防误用声明】
 
