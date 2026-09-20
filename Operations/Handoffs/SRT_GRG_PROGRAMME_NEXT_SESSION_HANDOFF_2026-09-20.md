@@ -10,7 +10,9 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+  - Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
 tags: [Handoff, GRG, NextSession, RedTeam, NeighborExtraction, Normativity]
 ---
@@ -119,88 +121,81 @@ Selection / GRG changes future generative conditions
 
 Do not silently rewrite O1 / O2-C / O2-A / O2-M.
 
+
 ## 4. Next live task
 
-Phase C internal red-team Pass 1 is now COMPLETE in:
+Phase C internal red-team Pass 1 is COMPLETE.
 
-Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md
+The generative-expectation second adjudication is also COMPLETE in:
 
-NEXT = author second adjudication of the normativity refinement, then Phase D distributed-neighbor extraction.
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
 
-Do not start with another broad neighbor survey before reading the red-team.
+Author verdict:
 
-Pressure the current GRG architecture against four failure families:
+~~~
+B + C, asymmetric / layered.
 
-### RT-1 Anti-tautology
+B = structural generative expectation:
+    immanent directional burden of an actually formed generative relation.
 
-Can “Selection = non-flat generative change” distinguish itself from generic change?
+C = formed-locus anticipatory realization:
+    C0 embodied / enacted anticipation;
+    C1 model-mediated anticipation.
 
-Require a nontrivial relational efficacy condition and a case where removing the coupling changes target formation / later generative conditions.
+B does not require C as its ontological precondition.
+C is downstream of enough formed organization to make anticipation operative from somewhere.
+indexed normativity still requires a typed position / relation / scale.
+full moral legitimacy remains OPEN.
+~~~
 
-### RT-2 Anti-reduction
+Phase D distributed-neighbor extraction Pass 1 is COMPLETE in:
 
-Does “deeper generative continuity” secretly mean micro-level reality is more real?
+`Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
 
-Require a model where a formed higher-order organization becomes a real later condition without positing a mysterious extra force.
+NEXT = freeze one neutral relation, GRG-R1 retained-organization re-entry, in a bounded transfer-pilot charter; derive the neuroscience-native design changes before inspecting target results.
 
-### RT-3 Anti-relativism / anti-anti-realism
+Do not reopen whole-package strongest-neighbor competition.
 
-Does “objects and laws are objectifications” make reality arbitrary or unfalsifiable?
 
-Require cross-position / cross-interface invariance, world resistance, and explicit objectification reopening criteria.
+## 5. Distributed-neighbor Pass 1 result
 
-### RT-4 Anti-teleology / normativity
+The map is organized by GRG burden, not by theory winner.
 
-Does “generative expectation → normativity” smuggle in a preferred endpoint, maximum order, persistence or option count?
+Main allocations:
 
-Separate:
+- Whitehead -> actualisation / later causal availability pressure;
+- Simondon -> individuation, transduction, operation-structure recurrence, problem-dimension reconstruction;
+- Barad -> constitutive articulation / cut / exclusion;
+- enactivism / autonomy -> operative position, viability-conditioned C0 anticipation;
+- participatory sense-making -> interaction-level organization without automatic collective subject;
+- synergetics -> order-parameter / component circular constraint, source depth still provisional;
+- niche construction -> reconstruction of later selective conditions without requiring foresight;
+- anticipatory / predictive families -> C1 model-mediated anticipation.
 
-prediction;
-structural generative expectation;
-indexed G-stronger / G-weaker;
-constitutive ought;
-full moral legitimacy.
+Pass 1 forces research-level revisions to G1, G2, G5, G6/G9, G7, G8 and G10. G0 remains open; G11 is deferred rather than filled by weak analogy.
 
-The red-team should end with one of:
+First relation worth freezing:
 
-retain;
-narrow;
-split;
-redefine;
-withdraw
+~~~
+GRG-R1 — retained-organization re-entry
 
-for each major GRG burden.
+component / participant relations
+-> identifiable organization O
+-> O remains identifiable at the declared grain
+-> perturbing / removing O changes later transition / accessibility /
+   support / inhibition / coordination relations
+-> withdrawal changes the effect in the predeclared direction.
+~~~
 
-## 5. After the red-team
+Non-identities:
 
-Only after Phase C:
-
-Phase D — build distributed-neighbor extraction map organized by GRG relation, not by winner ranking.
-
-Suggested relation rows:
-
-actualisation;
-cut / foreground-background;
-individuation;
-retained efficacy / history;
-recurrence;
-One / position formation;
-reconstructive Selection;
-multi-position relation;
-cross-scale recursion;
-generative expectation / normativity;
-reflexive inquiry.
-
-Candidate source families:
-
-Whitehead;
-Simondon;
-Barad;
-enactivism / participatory sense-making;
-synergetics;
-domain-native empirical mechanisms.
-
-Each row must preserve source-native commitments and specify what would force GRG revision.
+~~~
+GRG-R1 != generic path dependence
+GRG-R1 != mere correlation
+GRG-R1 != One automatically
+GRG-R1 != downward extra force
+GRG-R1 != universal Selection definition
+~~~
 
 ## 6. First transfer pilot gate
 
@@ -229,20 +224,24 @@ Level / distinctiveness status.
 
 Canonical reassessment comes only after internal red-team + distributed-neighbor extraction + one bounded transfer pilot.
 
+
 ## 8. Fresh-chat prompt
 
 Use:
 
 @GitHub 继续 zyx1st-png/SRT-Pub 的 post-#976 GRG programme。
 
-先按 AGENTS.md §Session Start 核验 live main、STATUS、open PR，并读取分支 theory/grg-programme-20260920 上的：
+先按 AGENTS.md §Session Start 核验 live main、STATUS、PR #994，并读取分支 theory/grg-programme-20260920 上的：
 1) 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
 2) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
-3) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+3) Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md
+4) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+5) Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md
+6) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
-当前作者方向：Selection = non-flat generative change；统一目标是 generative relational grammar；对象/规律是有效对象化截面；成熟邻居作为 distributed contributors / reciprocal constraints；SRT 是 self-revising grammar-learning architecture；generative relational grammar 提供的生成预期是 normativity 的来源线，但 full moral ought 仍 OPEN。
+当前 gate：generative expectation 第二裁决已经是 B+C asymmetric/layered；distributed-neighbor Pass 1 已完成。不要改 canonical，不要重新进入 winner-style strongest-neighbor novelty audit。
 
-不要改 canonical，不要继续 winner-style strongest-neighbor novelty audit。直接从 handoff §4 的 Phase C internal red-team 开始，依次压 anti-tautology、anti-reduction、anti-relativism、anti-teleology/normativity，并给出 retain/narrow/split/redefine/withdraw 结果和下一步 distributed-neighbor extraction 所需的最薄 GRG 关系。
+下一步只冻结 GRG-R1 retained-organization re-entry 的 neutral wording，建立一个 bounded neuroscience transfer-pilot charter；必须先推出 domain-native unit / variable / control / perturbation / failure expectation，再看目标结果。若必须为了结果修改 GRG-R1 核心意义，记录 semantic failure。
 
 ## 9. Stop rule
 
