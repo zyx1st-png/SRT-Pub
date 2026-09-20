@@ -1,0 +1,21 @@
+{
+  "verdict": "PILOT-NULL",
+  "eligible_S": 12,
+  "eligible_D": 12,
+  "eligible_total": 24,
+  "median_C_R": 0.0007190704345703125,
+  "median_C_N": -0.1525115966796875,
+  "mean_C_R": 0.0326234499613444,
+  "mean_C_N": -0.15126164754231772,
+  "bootstrap95_mean_C_R": [0.0016750534375508644, 0.06559690237045288],
+  "bootstrap95_mean_C_N": [-0.1935545285542806, -0.10844672520955403],
+  "mean_delta_O": 0.026384989420572918,
+  "mean_delta_R": -0.006238460540771484,
+  "mean_delta_N": 0.17764663696289062,
+  "mean_auc_intact": 0.7850901285807291,
+  "mean_auc_O": 0.7587051391601562,
+  "mean_auc_R": 0.7913285891215006,
+  "mean_auc_N": 0.6074434916178385,
+  "preregistration_commit": "dfe642ab07868fabd93e1b38406ff4aac28d90e8",
+  "raw_merge_local_sha256": "24cbb8a45c1ab1ffb2d7dc218a2907554967b31d25d65d2822c03391a8c4fcdb"
+}
