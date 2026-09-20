@@ -7,19 +7,18 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-AI-01, SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
+dependency: [SRT-AI-01]
 ---
 
-# AI Ontology General Boundary Block Split Index
+# SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition) Split Index
 
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
 - 原始总文（保留，不删内容）：[`../00_General_Boundary_Block.md`](../00_General_Boundary_Block.md)
-- Source owner bytes: `52613`
-- Source owner SHA-256: `ae9d7909ab68755409cdd013f609b8c81f5890781f9edfd8897ca9bc1fbfe092`
+- Source owner bytes: `52943`
+- Source owner SHA-256: `30aa543a66439c64da2618c1f3a9228de7a25b2289328b8a4cc10d131f6309aa`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition) | 32363 | `136c68e75726` |
-| 01 | [`01_Part02.md`](01_Part02.md) | §2.3 汇编指数：为何 AI 缺少"因果深度" | 19955 | `064b6f96a967` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition) | 33139 | `c738ba721fd4` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §2.2 为什么 d=0 导致"无关切" | 20736 | `684fd0403263` |

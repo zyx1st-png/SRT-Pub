@@ -14,6 +14,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 > **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
 
+> **WTC-127 historical / superseded guard**：本 annex 中旧 consciousness necessity / threshold / absence 公式与强句仅作历史来源。`d`、`Ψ_f`、`\hat G_\theta`、脆弱性、具身与 `L_0→L_1` 锚定只能在声明模型中作候选证据；其存在或缺席均不准入意识，精确充分性保持 OPEN。
+
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 

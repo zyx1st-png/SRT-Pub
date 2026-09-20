@@ -32,7 +32,7 @@ dependency:
 > **意识不是“信息被广播”这么简单，那么神经系统究竟如何把候选内容确认成可报告、可维持的现实？**
 
 SRT 的压缩回答是：
-- 意识 = 选择被确认并稳定化
+- 候选意识内容的 access/report 可被建模为选择的确认与稳定化；该模型不等同或准入意识
 - 点燃 = `L_0 -> L_1` 的相变
 - 绑定 = 同步进入同一显现对象
 - 睡眠 = 维持未来选择能力的结构维护
@@ -45,9 +45,9 @@ SRT 的压缩回答是：
 
 也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
 
-`d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
+`d-value` 本身不产生或准入意识；在声明模型中，它可作为内容厚度、优先级、持续性和沉积潜力的候选调节维度。
 
-> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；subjecthood 还需要 integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
+> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access 与 cross-time reidentification 也只是声明 subjecthood 模型中的候选证据，不共同组成普遍门槛。
 
 ---
 

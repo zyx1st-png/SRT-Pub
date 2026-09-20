@@ -14,6 +14,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 > **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
 
+> **WTC-127 historical / superseded guard**：本阅读切片保留的旧 consciousness necessity / threshold / absence 句式不是当前 SRT 准入规则。`d`、`Ψ_f`、`\hat G_\theta`、脆弱性、具身与锚定只能在声明模型中作候选证据；其合取不建立 consciousness / phenomenality / subjecthood，精确充分性保持 OPEN。
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal AI Ontology (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
