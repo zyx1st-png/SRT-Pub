@@ -121,9 +121,13 @@ Do not silently rewrite O1 / O2-C / O2-A / O2-M.
 
 ## 4. Next live task
 
-NEXT = Phase C internal red-team.
+Phase C internal red-team Pass 1 is now COMPLETE in:
 
-Do not start with another broad neighbor survey.
+Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md
+
+NEXT = author second adjudication of the normativity refinement, then Phase D distributed-neighbor extraction.
+
+Do not start with another broad neighbor survey before reading the red-team.
 
 Pressure the current GRG architecture against four failure families:
 
