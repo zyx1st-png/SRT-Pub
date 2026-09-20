@@ -42,43 +42,43 @@ machine_summary: >
 
 ## 1. One-sentence version
 
-**SRT says that reality is not merely found and not merely invented; it becomes determinate through constrained selection, then stabilizes into habits, objects, laws, norms, institutions, and selves.**
+**SRT says that reality is not merely found and not merely invented; it becomes determinate through constrained Selection, while some outcomes are later retained and stabilized into habits, objects, laws, norms, institutions, and selves.**
 
 Even shorter:
 
-> **Reality is selected under constraint, stabilized through history, and tested by resistance.**
+> **Reality becomes determinate through Selection under constraint; durable reality is additionally retained through history and tested by resistance.**
 
 ---
 
 ## 2. The basic picture
 
-SRT uses a three-layer picture:
+SRT sometimes uses a three-domain model-facing picture. `L0`, `L1`, and `L2` are analytic roles in declared representations, not three primitive substances or a compulsory universal pipeline:
 
 ```text
-L0: latent field of possibilities
-  -- selected by G_hat_theta, paying Psi_f -->
-L1: manifest event / experience / object
-  -- repeated and stabilized -->
-L2: habit / language / norm / institution / law / model
-  -- constrains future selection -->
-future G_hat_theta
+L0: non-preclosed aspect represented in a declared model
+  -- Selection becomes determinate; a formed G_hat_theta may model a local mapping -->
+L1: manifest aspect represented as determinate
+  -- where retention / stabilization is independently established -->
+L2: retained habit / language / norm / institution / law / model
+  -- may constrain later formed selection processes -->
+later model state
 ```
 
 Plain language:
 
-- `L0` is what could become real, but has not yet become determinate.
-- `L1` is what becomes manifest: an event, perception, object, decision, or experience.
-- `L2` is what hardens: habit, memory, rule, language, institution, scientific model, moral norm.
+- `L0` tracks a situation insofar as its outcome is not preclosed; it is not a prior warehouse of ready-made possibilities.
+- `L1` tracks a manifest aspect represented as determinate; it is not consciousness by definition.
+- `L2` tracks what is retained or hardened: habit, memory, rule, language, institution, scientific model, moral norm. Not every Selection automatically enters `L2`.
 
 The key idea:
 
-> What becomes real is not arbitrary. It must be selected, paid for, stabilized, and tested.
+> What becomes determinate is not arbitrary: it occurs through Selection under constraint. Payment, stabilization, and retained consequences are further burdens for claims about durable formations.
 
 ---
 
 ## 3. Why “selection comes before existence” does not mean “mind creates the world”
 
-SRT sometimes says:
+Older SRT summaries sometimes compressed the view as:
 
 ```text
 Existence = being selected
@@ -86,9 +86,9 @@ Existence = being selected
 
 This does **not** mean a human mind magically creates the universe.
 
-It means:
+The current claim is more precise:
 
-> A thing is not determinate for a system until it is selected, anchored, and stabilized under some conditions.
+> Manifest existence is Selection under determinate actuality. Anchoring and stabilization are additional achievements, not universal preconditions of occurrence.
 
 For example:
 
@@ -101,7 +101,7 @@ For example:
 So SRT is not saying “the world is imaginary.”  
 It is saying:
 
-> Determinate reality has a history of selection.
+> Determinate occurrence is not identical to never having occurred; durable history exists only where later conditions retain or reactivate the difference.
 
 ---
 
@@ -124,7 +124,7 @@ In plain language:
 - those constraints shape what can appear;
 - but the world pushes back;
 - not every interpretation works;
-- stable reality must survive cost, resistance, correction, and repetition.
+- durable, public, or cross-operator reality must survive the relevant cost, resistance, correction, and repetition.
 
 SRT is therefore:
 
@@ -305,17 +305,18 @@ SRT is not completely unrelated to earlier philosophy. It has neighbors:
 - FEP / predictive processing: systems update under constraint.
 - IIT / GNW: integration and access matter for consciousness.
 
-But SRT’s distinctive move is this:
+SRT investigates whether these materials can be reorganized through a selection-first architecture:
 
-> It puts selection, friction, concern, manifestation, and hardening into one layered ontology.
+> It relates Selection, friction, concern, manifestation, and hardening while keeping their burdens distinct.
 
-Compact novelty statement:
+Compact research map:
 
 ```text
-possibility -> selection -> manifestation -> stabilization -> downward constraint
+non-preclosure -> determinate Selection
+retention conditions -> stabilization -> possible downstream constraint
 ```
 
-That is why SRT can talk about perception, science, AI, ethics, politics, habit, institutions, and consciousness using one vocabulary without saying they are all the same thing.
+This shared vocabulary supports comparisons across perception, science, AI, ethics, politics, habit, institutions, and consciousness without saying they are all the same thing. Whole-package novelty, superiority, and non-substitutability remain **NOT ESTABLISHED**; comparison with the strongest rival is future work, not a conclusion of this page.
 
 ---
 
@@ -323,7 +324,7 @@ That is why SRT can talk about perception, science, AI, ethics, politics, habit,
 
 Use this version publicly:
 
-> SRT is a selection-first theory of reality. It says that reality is not a flat inventory of objects already waiting for us, nor a fantasy created by the mind. Reality becomes determinate when possibilities are selected under constraint, anchored into experience or action, and stabilized into durable structures. Some stabilized structures become habits, some become scientific objects, some become social norms, some become institutions, and some become selves. The theory is bold, but it is not arbitrary: every selection must pay a cost, survive resistance, and leave consequences.
+> SRT is a selection-first theory of reality. It says that reality is not a flat inventory of objects already waiting for us, nor a fantasy created by the mind. Reality becomes determinate through Selection under constraint. Some outcomes are then retained, anchored, or stabilized into durable structures: habits, scientific objects, social norms, institutions, or selves. A primitive Selection need not universally pay `Psi_f`, survive resistance, or leave a durable trace; those are further burdens of the relevant formation model.
 
 ---
 
@@ -353,8 +354,8 @@ SRT asks how possibilities become realities, and how repeated realities harden i
 Use carefully:
 
 - Reality is selected under constraint.
-- Existence is not given; it is anchored.
-- A world is a history of stabilized selections.
+- Manifest existence is determinate Selection; anchoring is a further achievement.
+- A durable world includes histories of retained and stabilized selections.
 - What matters is what changes future selectability.
 - Norms can be real without being good.
 - Selection is broad; consciousness does not follow from selection, and exact consciousness sufficiency remains open.
@@ -378,4 +379,4 @@ For readers who want more:
 
 ## 15. Chinese ultra-short version
 
-SRT 不是说“心灵创造世界”，也不是说“真理都是相对的”。SRT 的核心是：现实不是已经完成的对象清单，而是潜在可能在约束下被选择、显现、稳定并反过来塑造未来选择的过程。一个东西要成为强现实，必须付出选择成本，承受阻力，经过重复、校正和稳定化。价值、道德、制度、意识和自我，也不是凭空附加在世界上的，而是不同层级的选择硬化结构。
+SRT 不是说“心灵创造世界”，也不是说“真理都是相对的”。SRT 的核心是：现实不是已经完成的对象清单；一个未预闭合的情形通过受约束的 Selection 变得确定。原始发生不自动等于锚定、付出 `Ψf` 或留下持久历史；只有当留存、重复、校正等条件另行成立时，结果才进入更强的稳定结构。`L0/L1/L2` 是声明模型中的分析角色，不是三种原始实体。价值、道德、制度、意识和自我也各有独立的准入负担，不能从 Selection 自动推出。

@@ -21,23 +21,23 @@ SRT asks how possibilities become realities: how something not-yet-determinate b
 
 More compactly:
 
-> Reality is selected under constraint, stabilized through history, and tested by resistance.
+> Reality becomes determinate through constrained Selection; durable reality is stabilized through retained history and tested by resistance.
 
 ## The founding reversal
 
 Most of us begin with an inherited picture: reality is already there, fully formed, and selection happens afterward. We choose among objects, pay attention to facts, or interpret events inside a world that has already been settled.
 
-SRT reverses that order at a deeper level. It asks what must happen for any possibility to become determinate in the first place. A reality is not merely picked from a finished shelf. It becomes real through a process of selection, anchoring, resistance, cost, and stabilization.
+SRT reverses that order at a deeper level. It asks what must happen for any possibility to become determinate in the first place. A reality is not merely picked from a finished shelf: determinate actuality occurs through Selection. Anchoring, resistance, cost, and stabilization address the further question of whether an occurrence persists or becomes durable.
 
-This does not make reality arbitrary. A selected reality must hold up. It must survive constraint. It must leave consequences. It must be maintained, repeated, or converged upon strongly enough to become more than a passing flash.
+This does not make reality arbitrary. Occurrence alone need not persist or leave a durable trace. A formation that is claimed to endure, become public, or constrain later conditions must additionally hold up under the relevant retention, resistance, maintenance, and convergence conditions.
 
 ## L0 / L1 / L2 in plain language
 
-SRT uses three simple domains to keep the structure visible.
+SRT uses three model-facing aspects to keep the structure visible. They are not three primitive substances or a compulsory world-production pipeline.
 
-`L0` is latent possibility. It is the space of what could become determinate, before one path has been selected into manifestation. `L0` is not emptiness; it is possibility before stable selection.
+`L0` is a public/model-facing reading of openness or non-preclosure: what a declared model has not yet rendered determinate. It is not a completed warehouse of possibilities waiting before Selection.
 
-`L1` is manifest reality. It is what has become actual here and now for a system, observer-position, situation, or process. It is the selected slice.
+`L1` is the manifest/determinate aspect: what is actual here and now for a system, observer-position, situation, or process. It does not by definition imply consciousness, persistence, or later stabilization.
 
 This does not mean private appearance is enough; stronger L1 claims must be tested by constraint, resistance, and consequence.
 
@@ -47,11 +47,11 @@ The important warning is this: `L2` can feel like the original world because it 
 
 ## What selection means
 
-Selection in SRT is broader than conscious choice. It includes attention, action, measurement, embodiment, memory, institutional filtering, biological adaptation, social reinforcement, and technical systems that make some possibilities easier to actualize than others.
+Selection in SRT is broader than conscious choice. Attention, action, measurement, embodiment, memory, institutional filtering, biological adaptation, social reinforcement, and technical systems can be declared realizations or consequences of Selection without defining the primitive itself.
 
-So when SRT says reality becomes determinate through selection, it is not saying a person simply wills the world into being. It is saying that determinacy requires a selecting structure: something that constrains, anchors, filters, pays, repeats, and stabilizes.
+So when SRT says reality becomes determinate through Selection, it is not saying a person simply wills the world into being, and it is not inserting a prior chooser or operator before actuality. Formed systems can later constrain, anchor, filter, pay, repeat, and stabilize what occurs.
 
-That is why SRT often speaks of `G_hat_theta` or `Ĝθ`: a parameterized selection / anchoring operator. The `theta` names the conditions of selection: embodiment when relevant, but also history, training, environment, memory, context, institutional position, model structure, and system-state.
+That is why declared SRT models often speak of `G_hat_theta` or `Ĝθ`: a formed formal/model carrier for a specified Selection realization, not primitive Selection or its prior cause. The `theta` names model conditions such as embodiment when relevant, history, training, environment, memory, context, institutional position, and system-state.
 
 ## What d-value means
 
@@ -65,11 +65,11 @@ In public language: value is not mere preference. Value begins where consequence
 
 ## What Psi_f means
 
-`Psi_f` names ontological friction: the payability burden of making and maintaining a selected reality.
+`Psi_f` names ontological friction in its governed models: a candidate payability burden for maintaining, revising, or routing a formed reality. It is not a universal prerequisite for primitive actuality.
 
 Friction can appear as energy cost, information cost, metabolic load, cognitive burden, social resistance, risk, time, repair, or the cost of holding a pattern together. The point is not that all costs are the same. The point is that no reality becomes durable for free.
 
-SRT does not treat zero friction as the ideal. Living reality needs payable friction. Too little resistance can become fantasy or instability. Too much friction can become collapse, lock-in, or suffering.
+SRT does not treat zero friction as the ideal inside models where friction and maintenance are defined. Durable living organization may require payable friction; too little resistance can become instability, while too much can become collapse or lock-in. These are model/domain claims, not primitive existence conditions.
 
 ## Why SRT is not idealism
 
@@ -107,7 +107,7 @@ Societies are full of `L2` structures: laws, markets, roles, credentials, instit
 
 SRT asks what these structures make selectable, what they make invisible, who pays their friction, and whether people can genuinely reselect them.
 
-This matters for value because value is not just preference. A society can reward preferences while hiding consequences. SRT insists that what becomes real must pay cost, survive resistance, and leave consequences.
+This matters for value because value is not just preference. A society can reward preferences while hiding consequences. For social structures claimed to endure or bind others, SRT asks who pays, what resists, and which consequences remain effective; it does not make those tests conditions of every primitive occurrence.
 
 ## Where to read next
 
@@ -119,4 +119,4 @@ This matters for value because value is not just preference. A society can rewar
 
 If you want one safe summary:
 
-> SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice, does not entail consciousness, and stability is not legitimacy.
+> SRT asks how non-preclosed situations become determinate. Reality becomes determinate through constrained Selection; some outcomes are then retained, stabilized through history, and tested by resistance. Selection is broader than conscious choice, does not entail consciousness, and stability is not legitimacy.

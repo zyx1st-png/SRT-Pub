@@ -24,13 +24,13 @@ It should answer:
 
 SRT's founding intuition can be stated as:
 
-> Existence is not a static inventory of objects. It is the stabilized trace of selection under constraint, cost, concern, and history.
+> Existence is not a static inventory of objects. Manifest existence becomes determinate through Selection; stable objects additionally depend on whatever retention, resistance, and history their formation requires.
 >
-> 存在不是静态对象清单，而是选择在约束、代价、关切与历史下留下的稳定痕迹。
+> 存在不是静态对象清单。显现实在通过 Selection 变得确定；稳定对象还要另行满足其形成所需的留存、阻力与历史条件。
 
 More compactly:
 
-> Existence is selected, anchored, paid for, and hardened.
+> Selection makes actuality determinate; anchoring and hardening are further achievements.
 
 ## Current source anchors
 

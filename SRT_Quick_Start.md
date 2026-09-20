@@ -22,9 +22,9 @@ It asks how possibilities become realities: how something not-yet-determinate be
 
 In ordinary language:
 
-> Reality is selected under constraint, stabilized through history, and tested by resistance.
+> Reality becomes determinate through Selection under constraint; some determinate outcomes are then retained, stabilized through history, and tested by resistance.
 
-SRT does not say that anything can become real just because someone wants it. A selected reality must survive constraint, pay cost, meet resistance, and leave consequences.
+SRT does not say that anything can become real just because someone wants it. Primitive actuality does not universally require anchoring, payment, or a durable trace. Those burdens apply when the claim is stronger: that an outcome persists, becomes public, or hardens into a durable formation.
 
 ## 2. Why Selection Comes Before Stable Existence
 
@@ -36,17 +36,17 @@ Most everyday thinking starts with objects:
 
 SRT reverses the order at a deeper level:
 
-1. There are structured possibilities.
-2. Selection anchors some possibilities into determinate manifestation.
-3. Repeated and overlapping selections harden into stable reality.
+1. A situation is not preclosed to one determinate outcome.
+2. Selection makes an outcome determinate.
+3. Where later conditions retain and reinforce that outcome, it can harden into stable reality.
 
-This does not mean "the mind creates the world." It means that determinate reality is not a flat inventory waiting unchanged behind experience. What becomes real has passed through selection, constraint, cost, history, and convergence.
+This does not mean "the mind creates the world." It means that determinate reality is not a flat inventory waiting unchanged behind experience. Determinate actuality requires Selection under constraint; cost, retained history, and convergence are additional burdens for stronger claims about persistence and stabilization.
 
 Simple example: before you speak, many possible sentences are available. Once you speak, one sentence becomes actual, it changes the situation, and it leaves consequences. SRT treats this as a small local example of a much broader structure: possibility becomes determinate through constrained selection.
 
 ## 3. The Three Domains: L0, L1, L2
 
-SRT often uses three domains to keep this structure clear.
+SRT often uses three analytic domains to keep this structure clear. They are model-facing distinctions, not three substances or a compulsory universal pipeline.
 
 | Domain | Plain meaning | Quick image |
 |---|---|---|
@@ -56,19 +56,19 @@ SRT often uses three domains to keep this structure clear.
 
 ### L0: Latent Possibility
 
-`L0` is not nothingness. It is the domain of possible ways reality could become determinate.
+`L0` is not nothingness or a warehouse that exists before Selection. In declared models it tracks the non-preclosed aspect of a situation: the ways in which the outcome has not yet been made determinate.
 
-You can think of it as the space of live possibilities before one path is selected. It is not directly experienced as a finished object; it is inferred through what can still become actual.
+You can use it as a coordinate for live alternatives before one outcome is determinate. That coordinate is a downstream representation, not a primitive container of finished possibilities.
 
 ### L1: Manifest Selection
 
-`L1` is the selected manifestation: the determinate slice that has become actual for a system, situation, or observer-position.
+`L1` is a model-facing manifest aspect: an outcome represented as determinate for a system, situation, or formed observer-position.
 
-This is the level where something happens, appears, is acted on, or becomes the current reality.
+This is the level where something happens, appears, is acted on, or becomes current in the declared model. `L1` does not by definition establish consciousness, persistence, or public reality.
 
 ### L2: Stabilized Convergence
 
-`L2` is what hardens when selections repeat, overlap, and become stable.
+`L2` represents retained structure where outcomes are written back, repeated, overlapped, or otherwise stabilized. Not every Selection event automatically enters `L2`.
 
 Examples include language, institutions, scientific objects, habits, shared worlds, and social realities. `L2` is powerful because it feels given after enough history, but SRT keeps asking how it was selected, stabilized, and maintained.
 
@@ -76,9 +76,9 @@ Stability is not legitimacy. A pattern can be stable and still be pathological, 
 
 ## 4. What Is `Ĝθ`?
 
-`Ĝθ` names the embodied selection / anchoring operator.
+`Ĝθ` names a formed, parameterized selection / anchoring operator used in downstream models. It is not primitive Selection and not a prior chooser standing before actuality.
 
-In plain language, it is the way a system turns possibility into manifestation under its own constraints.
+In plain language, it models how an already formed system maps a declared possibility representation into a manifestation under its own constraints.
 
 - `Ĝ` points to the act or structure of selection.
 - `θ` points to the parameters that shape selection: body, history, environment, memory, training, context, or system-state.
@@ -101,7 +101,7 @@ Formal anchor: [`_SRT_D_VALUE_CANONICAL.md`](_SRT_D_VALUE_CANONICAL.md)
 
 ## 6. What Is `Ψf`?
 
-`Ψf` names ontological friction: the payability burden of making and maintaining a selected reality.
+`Ψf` names a governed friction/payability quantity for declared models of formation and maintenance. It is not a universal price that every primitive Selection must pay in order to occur.
 
 In plain language, it asks: what does it cost to turn a possibility into something stable enough to live in, act on, or maintain?
 
@@ -147,9 +147,9 @@ Bridge entry: [`AI/README.md`](AI/README.md)
 
 ### Consciousness
 
-SRT treats consciousness as thresholded.
+SRT treats consciousness as requiring an admission burden beyond Selection; exact sufficiency remains open.
 
-The key question is not "does everything select?" but "when does selection enter concern, burden, consequence return, self-modulation, and directional readability strongly enough to form a conscious window?"
+The key question is not "does everything select?" but which independently evidenced conditions, if any, justify consciousness admission. Concern, consequence return, self-modulation, embodiment, and directional readability are candidate dimensions in declared frameworks, not a settled universal formula.
 
 This lets SRT connect philosophy, neuroscience, AI, and phenomenology without saying that all systems are conscious.
 
@@ -194,7 +194,7 @@ This guide is intentionally readable. For formal precision, use these anchors:
 
 If you remember only one paragraph, remember this:
 
-SRT asks how possibilities become realities. Reality is not first given and then selected; reality becomes determinate through constrained selection. What becomes real must be selected, anchored, paid for, stabilized through history, and tested by resistance. Selection is broader than attention, consciousness is thresholded, and stable reality is not automatically legitimate.
+SRT asks how non-preclosed situations become determinate. Reality is not first given and then selected; it becomes determinate through constrained Selection. An occurrence need not thereby be anchored, paid for, or retained in durable history; those are further burdens for stronger claims about persistence and stabilization. Selection is broader than attention, consciousness does not follow from Selection, and stable reality is not automatically legitimate.
 
 ## For Collaborators And Agents
 

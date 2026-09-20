@@ -16,7 +16,7 @@ SRT 是一个以“选择先于稳定存在”为核心命题的理论框架。�
 - **Determinate actuality occurs through primitive Selection; persistence and stabilization require additional historical conditions.**
 - Selection is broad; consciousness is thresholded.
 - Stability is not legitimacy.
-- What becomes real must pay cost, survive resistance, and leave consequences.
+- What becomes determinate does so through Selection; only durable formations additionally require independently established persistence, resistance, and retained consequences.
 
 Minimal notation:
 
@@ -252,4 +252,4 @@ SRT should not be read as claiming:
 
 Safer reading:
 
-> SRT asks how possibilities become realities, how repeated realities harden into the world we inherit, and how subjects, values, institutions, and scientific objects emerge through constrained selection, cost, concern, and stabilization.
+> SRT asks how possibilities become determinate realities, how retained differences harden into the world we inherit, and how subjects, values, institutions, and scientific objects may emerge through constrained selection, concern, and stabilization.
