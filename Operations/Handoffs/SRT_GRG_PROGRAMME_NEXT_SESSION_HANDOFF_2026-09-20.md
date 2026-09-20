@@ -274,15 +274,31 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS、PR #994，并读取分支 theory/grg-programme-20260920 上的：
 1) 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
-2) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
-3) Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md
-4) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
-5) Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md
-6) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+2) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+3) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+4) Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md
+5) Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md
+6) Operations/Audits/SRT_GRG_R1_PRODUCTIVE_ADEQUACY_O_CRITERION_REVISION_PASS1_2026-09-20.md
+7) Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md
+8) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
-当前 gate：generative expectation 第二裁决已经是 B+C asymmetric/layered；distributed-neighbor Pass 1 已完成。不要改 canonical，不要重新进入 winner-style strongest-neighbor novelty audit。
+当前真实 gate：
 
-下一步只冻结 GRG-R1 retained-organization re-entry 的 neutral wording，建立一个 bounded neuroscience transfer-pilot charter；必须先推出 domain-native unit / variable / control / perturbation / failure expectation，再看目标结果。若必须为了结果修改 GRG-R1 核心意义，记录 semantic failure。
+~~~text
+generative expectation = B+C asymmetric/layered
+distributed-neighbor Pass 1 = COMPLETE
+GRG-R1 v0.1 transfer pilot = PILOT-NULL
+decoder-defined O = REJECT
+revised O gate = O1 -> O2 -> O3 -> O4
+O1 spectral formation = PASS
+O2 retained operator structure = candidate paid
+O3 target-blind causal mediation = NEXT
+O4 / any new transfer target = HOLD
+v0.2 target execution = HOLD
+canonical edit = NO
+~~~
+
+下一步只做 O3 target-blind causal-mediation feasibility：在 base/source-domain surface 上验证 operator-embedded spectral / dynamical scaffold 是否具有独立因果中介作用。优先把 Bowler eigenspectrum intervention 当 source-native positive control，并设计 structure-randomized / functional-damage-matched controls。不要生成、选择或查看新的 transfer target，不要调 v0.1，不要重新进入 winner-style strongest-neighbor novelty audit。
 
 ## 9. Stop rule
 
