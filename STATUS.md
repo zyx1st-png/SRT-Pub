@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / GENERATIVE-EXPECTATION SECOND ADJUDICATION COMPLETE / DISTRIBUTED-NEIGHBOR PASS1 COMPLETE / GRG-R1 BOUNDED TRANSFER PILOT NEXT
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / GRG-R1 FIRST BOUNDED TRANSFER PILOT COMPLETE = PILOT-NULL / PRODUCTIVE-ADEQUACY + O-CRITERION REVISION NEXT
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -60,6 +60,9 @@ Generative-expectation second adjudication:
 
 Distributed-neighbor extraction Pass 1:
 `Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
+
+GRG-R1 bounded neuroscience transfer pilot result:
+`Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md`
 
 Continuation handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
@@ -91,11 +94,19 @@ C = formed-locus anticipatory realization with C0 embodied/enacted and C1 model-
 
 distributed-neighbor extraction Pass 1 = COMPLETE.
 
+GRG-R1 bounded neuroscience transfer pilot = COMPLETE / PILOT-NULL:
+24/24 preregistered networks eligible;
+decoder-defined context subspace failed the full targeted-withdrawal criterion;
+decodability != causal retained organization by default;
+semantic drift = NO;
+canonical consequence = NONE.
+
 next:
-freeze GRG-R1 retained-organization re-entry
--> bounded neuroscience transfer-pilot charter
--> derive domain-native unit / variable / control / perturbation / failure expectation before target-result inspection
--> only then canonical reassessment if a real owner-level reason is earned.
+productive-adequacy / revision pass
+-> identify a stronger pre-target retained-organization O criterion
+-> compare Bowler-style recurrent dynamical mediation, synergetic order-parameter logic and Simondonian operation-structure recurrence
+-> only after a new visible charter + preregistration may a v0.2 pilot run
+-> canonical reassessment remains HOLD.
 ```
 
 Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
@@ -599,19 +610,21 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-20 post-#976 GRG continuation:** the GRG founding source, Programme v0.1, internal red-team Pass 1, generative-expectation second adjudication and distributed-neighbor extraction Pass 1 are now present on the active GRG work package. Canonical owners remain closed by default.
+> **2026-09-20 post-#976 GRG continuation:** GRG founding, red-team Pass 1, generative-expectation second adjudication, distributed-neighbor Pass 1 and the first bounded GRG-R1 neuroscience transfer pilot are complete. The pilot returned a preregistered PILOT-NULL. Canonical owners remain closed by default.
 
 ~~~text
 1. treat post-#976 GRG work as noncanonical research architecture;
 2. generative-expectation typing = B+C asymmetric/layered;
 3. distributed neighbors = contributors / reciprocal constraints by GRG burden, not whole-theory winners;
-4. next bounded relation = GRG-R1 retained-organization re-entry;
-5. freeze GRG-R1 before target-result inspection and derive domain-native pilot changes first;
-6. preferred existing surface = bounded neuroscience / recurrent-history / objectification work;
-7. semantic drift after seeing the result = pilot failure, not flexible confirmation;
-8. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency, phenomenality or normativity canonical owners;
-9. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;
-10. do not restart winner-style strongest-neighbor novelty audit without a later explicit comparative claim.
+4. GRG-R1 v0.1 neuroscience pilot = COMPLETE / PILOT-NULL;
+5. 24/24 networks passed admission, so the null is substantive rather than an eligibility failure;
+6. context-decodable subspace -> causal retained organization O = NOT SUPPORTED by the preregistered withdrawal test;
+7. do not tune v0.1, alter thresholds or reinterpret secondary history differences as rescue evidence;
+8. next = productive-adequacy / O-criterion revision using stronger source-native dynamical / mediator criteria;
+9. any v0.2 requires a new visible charter and preregistration before target inspection;
+10. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency, phenomenality or normativity canonical owners;
+11. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion;
+12. do not restart winner-style strongest-neighbor novelty audit without a later explicit comparative claim.
 ~~~
 
 ## Historical navigation
