@@ -1,0 +1,16 @@
+{
+  "verdict": "O3-CAUSAL-NULL",
+  "donor_S_eligible": 12,
+  "donor_D_eligible": 12,
+  "recipient_n": 12,
+  "median_C_SD": 0.0015752018739779161,
+  "median_C_S0": 0.0027937001238266257,
+  "mean_C_SD": -0.00003014920900266486,
+  "mean_C_S0": 0.004393970045364561,
+  "bootstrap95_mean_C_SD": [-0.0031818484341622428, 0.003167661565821593],
+  "bootstrap95_mean_C_S0": [-0.000014659765745612867, 0.00889601175362866],
+  "mean_auc_I0": 0.9704417346459295,
+  "mean_auc_IS": 0.974835704691294,
+  "mean_auc_ID": 0.9748658539002969,
+  "target_data_used": false
+}
