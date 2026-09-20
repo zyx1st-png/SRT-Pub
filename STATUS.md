@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / GRG-R1 BURDEN SPLIT COMPLETE / SOURCE-FIDELITY EXTRACTION NEXT / NEW EXPERIMENT + O4 BLOCKED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / SOURCE-FIDELITY PASS2 COMPLETE / NON-RNN R1c CANDIDATE-SELECTION AUDIT NEXT / NEW EXPERIMENT + O4 BLOCKED
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -140,12 +140,29 @@ Current interpretation:
 - Bowler = source-native R1b/R1c positive pressure, exact causal object unresolved;
 - synergetics = R1b/R1c pressure, source depth still insufficient.
 
+source-fidelity extraction Pass 2 = COMPLETE.
+
+Bowler:
+- R1a PASS;
+- R1b PASS under exogenous early-training clamp;
+- R1c PASS as causal capacity;
+- exact downstream dynamical mediator remains open.
+
+Synergetics:
+- R1b strong endogenous exemplar;
+- R1c strong circular-causality exemplar;
+- low-dimensional description alone is insufficient.
+
+New required declaration:
+- maintenance provenance;
+- component/prior-process -> O evidence;
+- O -> component/process evidence.
+
 next:
-source-fidelity extraction only
--> clarify Bowler repeated-reset causal object
--> close-read one mature synergetics/self-organization source on causal order-parameter standing
--> no new experiment
--> O4 / any transfer target BLOCKED
+non-RNN R1c candidate-selection audit
+-> no new experiment yet
+-> no O4 / transfer target
+-> no return to RNN spectral tuning
 -> canonical reassessment HOLD.
 ```
 

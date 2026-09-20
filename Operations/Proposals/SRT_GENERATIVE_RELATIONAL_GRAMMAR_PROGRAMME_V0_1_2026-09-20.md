@@ -479,7 +479,25 @@ R1a retained imprint
 
 R1c is now the minimum causal core of GRG-R1. R1a alone is insufficient. R1d is a stronger downstream burden rather than part of the minimal causal definition.
 
-Phase E.5 — NEXT: source-fidelity extraction only. Clarify the actual causal object in Bowler's repeated-reset intervention and close-read one mature self-organization / synergetics source on what makes an order parameter causally constraining rather than merely descriptive. No new toy experiment or transfer target is authorized.
+Phase E.5 — source-fidelity extraction Pass 2: COMPLETE.
+
+Pass 2 adds two programme-method requirements:
+
+~~~text
+maintenance provenance:
+- endogenous self-consistent
+- exogenous experimental clamp
+- environmental / institutional external maintenance
+- mixed / coupled
+
+causal directions:
+component / prior process -> O
+O -> later component / process constraints
+~~~
+
+Bowler pays R1b/R1c under an exogenous early-training clamp; synergetics supplies an endogenous circular-causality exemplar. These are not equivalent maintenance modes.
+
+Phase E.6 — NEXT: candidate-selection audit for one genuinely different domain realization of R1c. Requirements: not another RNN spectral variant; source-native R1b/R1c already present; independent perturbation possible; maintenance provenance explicit; no O4 / transfer target yet; GRG must change a control / distinction before result inspection.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
