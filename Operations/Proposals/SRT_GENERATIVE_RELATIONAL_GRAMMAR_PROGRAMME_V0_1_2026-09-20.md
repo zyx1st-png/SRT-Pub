@@ -251,6 +251,17 @@ Productive-adequacy revision Pass 1 and the first target-blind O-feasibility pas
 
 The fresh-seed spectral pass returned O1-SPECTRAL-PASS: structured versus direct history is perfectly separable under the frozen paired-seed CV on a label-blind recurrent eigenspectrum feature. This pays O1 formation pressure for an operator-embedded candidate family but does not yet pay O3 causal mediation.
 
+The subsequent target-blind O3 causal-mediation test returned O3-CAUSAL-NULL. Cross-realization / source-fidelity Pass 1 therefore splits the old GRG-R1 research burden:
+
+~~~text
+R1a retained imprint = diagnostic / insufficient
+R1b maintained scaffold = candidate generative organization
+R1c causal re-entry = minimum GRG-R1 causal core
+R1d prospective transfer = stronger downstream burden
+~~~
+
+This is a programme-level research split only. It creates no new canonical ontology modules.
+
 ## 6. GRG extraction rule
 
 A candidate GRG relation must not be created after seeing one matching example and then declared universal.
@@ -455,7 +466,20 @@ The toy-system spectral family now has:
 
 O4 / any new transfer target remains BLOCKED.
 
-Phase E.4 — NEXT: cross-realization / source-fidelity audit. Separate Bowler's repeated-reset source-native intervention from the one-time transplant tested here and identify whether the GRG-R1 invariant belongs at raw spectral values, maintained dynamical mode, attractor organization, or the more general operation->structure->operation dependency. No new experiment is authorized by this line alone.
+Phase E.4 — cross-realization / source-fidelity audit Pass 1: COMPLETE.
+
+Programme revision accepted:
+
+~~~text
+R1a retained imprint
+-> R1b maintained scaffold
+-> R1c causal re-entry
+-> R1d prospective transfer / reuse
+~~~
+
+R1c is now the minimum causal core of GRG-R1. R1a alone is insufficient. R1d is a stronger downstream burden rather than part of the minimal causal definition.
+
+Phase E.5 — NEXT: source-fidelity extraction only. Clarify the actual causal object in Bowler's repeated-reset intervention and close-read one mature self-organization / synergetics source on what makes an order parameter causally constraining rather than merely descriptive. No new toy experiment or transfer target is authorized.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
