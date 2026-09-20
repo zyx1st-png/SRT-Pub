@@ -37,7 +37,7 @@ SRT is not mind-first idealism. Primitive Selection is not a prior chooser or me
 
 **One-sentence version**
 
-The subject is not the original chooser behind selection; it is a stabilized product of selection processes that have become self-referential enough to hold a position.
+The subject is not the original chooser behind Selection; SRT investigates subject-position as a downstream formed organization, for which stabilization, continuity, self-reference, and bearing may supply candidate evidence without closing exact sufficiency.
 
 **Easy misreading**
 
@@ -45,7 +45,7 @@ The subject is not the original chooser behind selection; it is a stabilized pro
 
 **Boundary**
 
-SRT does not erase subjecthood. It relocates subjecthood from primitive premise to structured emergence.
+SRT does not erase subjecthood. It relocates subject-position from primitive premise to a downstream formation problem. No current fixed package—whether stabilization, continuity, self-reference, bearing, Stable ISP, or retained history—is sufficient by definition; exact subject-position sufficiency remains **OPEN**.
 
 **Formal anchors**
 
