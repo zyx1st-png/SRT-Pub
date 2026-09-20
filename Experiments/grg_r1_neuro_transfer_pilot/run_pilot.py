@@ -3,8 +3,6 @@ import copy
 import json
 import math
 import os
-from dataclasses import dataclass
-
 import numpy as np
 import torch
 import torch.nn as nn
@@ -59,16 +57,16 @@ def make_batch(contexts, n, rng):
     cidx = rng.integers(0, len(contexts), size=n)
     bits = rng.integers(0, 2, size=(n,3), dtype=np.int64)
     x = np.zeros((n, SEQ_LEN, INPUT_DIM), dtype=np.float32)
-    y = np.zeros(n, dtype=np.float32)
-    labels = np.zeros(n, dtype=np.int64)
-    for i, ci in enumerate(cidx):
-        feat, inv = contexts[ci]
-        x[i,0,feat] = 1.0
-        x[i,1,3+inv] = 1.0
-        x[i,2:,5] = bits[i]
-        val = bits[i,feat]
-        y[i] = 1.0 - val if inv else float(val)
-        labels[i] = ci
+    ctx = np.asarray(contexts, dtype=np.int64)[cidx]
+    feat = ctx[:,0]
+    inv = ctx[:,1]
+    rows = np.arange(n)
+    x[rows,0,feat] = 1.0
+    x[rows,1,3+inv] = 1.0
+    x[:,2:,5] = bits
+    val = bits[rows,feat]
+    y = np.where(inv == 1, 1 - val, val).astype(np.float32)
+    labels = cidx.astype(np.int64)
     return torch.from_numpy(x), torch.from_numpy(y), labels
 
 
