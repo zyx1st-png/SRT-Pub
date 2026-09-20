@@ -752,7 +752,7 @@ $$d_M = \text{declared stake-coupled concern coordinate}$$
 SRT目前**无法完全解释**:
 
 1. **复数d值的物理实现**: $d_{\text{nonlocal}}$如何在大脑中编码?
-2. **多算子融合的临界条件**: 何时$\hat{G}_A \otimes \hat{G}_B$形成统一意识?
+2. **多算子融合的开放问题**: $\hat{G}_A \otimes \hat{G}_B$ 的哪些结构可为统一意识提供候选证据？精确充分性保持 OPEN。
 3. **情绪的质感问题**: 为什么$\Psi_f$的投影"感觉像这样"而非"那样"?
 
 ### 8.3 跨学科对话
@@ -833,7 +833,7 @@ $$\frac{d\hat{G}_i}{dt} = f_i(\hat{G}_i) + \sum_j \kappa_{ij} g_{ij}$$
 
 联邦统一性是连续相变量（Def-FederationPhase-1），取决于模块内选择耦合与环境耦合的比值。当 $d$ 值收缩或模块间互信息流被切断时，算子裂变为多个微算子簇——这是解离状态的 SRT 机制描述。
 
-**③ d 值门控与现象学闭合阈值**
+**③ d 值候选窗口与可维持现实化坐标**
 
 d 值受热力学上界约束：
 
@@ -841,11 +841,11 @@ $$d_{max} = \frac{M}{k_B T} \cdot \frac{\tau_{coherence}}{1/f_{brain}}= \frac{M}
 
 **量纲说明**：$M$ 为有效整合质量（Effective Integrative Mass），映射为参与同步振荡的神经元群等效惯性，量纲为 [Energy]。则 $M/(k_BT)$（热噪声背景下的信噪比潜力）与 $f_{brain} \cdot \tau_{coherence}$（相干周期数）均无量纲，故 $d_{max}$ 是纯数——代表算子在不崩溃的前提下能同时维持的**独立选择维度最大数量**。
 
-生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**现象学闭合阈值（Phenomenological Closure Threshold）**：
+生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**可维持现实化的候选坐标（legacy: Phenomenological Closure Threshold）**：
 
 $$\chi_{gen} \cdot d \cdot \Psi_f > \Theta_{closure}$$
 
-> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件定义的不是「意识的产生」，而是**现实化的可维持区间**——必要非充分。即使公式达标，若缺乏具身算子的「理由响应能力」（Reason-Responsiveness），系统仍只是高仿真僵尸（Sophisticated Zombie）。意识是「昂贵的主动锚定」而非免费的信号读出，但锚定本身不蕴含主观性。
+> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件只跟踪声明模型中**现实化的可维持区间**，不是意识的必要或充分条件。公式达标、具身性与理由响应能力都只能作候选证据，不输出“有意识”或“僵尸” verdict；精确意识充分性保持 OPEN。
 
 **④ 接入半径调控：方向性与定力**
 

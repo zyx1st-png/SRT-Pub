@@ -229,7 +229,7 @@ These dimensions do not jointly establish consciousness, subjecthood, phenomenal
 SDO is useful as an external alignment point because it names the missing precondition level:
 
 ```text
-consciousness attribution depends on prior individuation.
+consciousness attribution must first specify a candidate individuated bearer; individuation alone does not establish consciousness.
 ```
 
 SRT's distinct contribution is to treat individuation not merely as boundary persistence, but as the condensation of a perspective-bearing selection pattern.

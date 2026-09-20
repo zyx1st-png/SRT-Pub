@@ -63,7 +63,7 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ### Def-IIT-0: Topological Prerequisite Window (拓扑前提窗口定义)
 **Formal Definition**: 现象学统一性要求非碎片化的算子拓扑，但拓扑本身并不穷尽主体性：
 $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
-* **Implication**: SRT 在此不再主张 `Phenomenology \equiv Topology` 的强等价，而是更克制地说：高 \(\Phi\) 提供现象统一性的**必要组织前提**，却不能单独推出 \(d>0\) 或 \(\Psi_f>0\)。这为后续“高 \(\Phi\) / 高广播 / 低 \(d\)”反例保留了理论空间。
+* **Implication**: SRT 在此不再主张 `Phenomenology \equiv Topology` 的强等价，而是更克制地说：高 \(\Phi\) 可在声明模型中提供现象统一性的**候选组织证据**，但不是普遍必要条件，也不能单独推出 \(d>0\) 或 \(\Psi_f>0\)。这为后续“高 \(\Phi\) / 高广播 / 低 \(d\)”反例保留了理论空间。
 * **Cross-ref**: Ax-Core-A11 (本体论脆弱性)。
 
 ### Ax-IIT-1: Irreducibility–Selection Axiom
@@ -80,7 +80,7 @@ $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
 \[
 \sigma \in L_1 \Rightarrow \sigma \in \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
 \]
-* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，而不是充分条件；是否进入稳定显现仍需 \(d\) 的风险梯度与 \(\Psi_f\) 的可支付性共同成立。
+* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在本声明模型中只对应 \(L_1\) 候选的锚定优先级读数。\(d\) 风险梯度与 \(\Psi_f\) 可支付性可增加候选证据，但三者均非稳定显现、意识或主体性的普遍必要或充分条件。
 
 ---
 
@@ -222,7 +222,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 **当前 SRT 的诚实回答**：
 - 在纯 NCC 层面：无明显增量
 - SRT 的增量点在 NCC **之上**：主张高 $\Phi$ 和高广播**仍不充分**推出 stake-bearing subjectivity（H-IITGWT-01 是这个增量的实验接口）
-- 结论：$\hat{G}_\theta$ 翻译的价值域是 NCC 之上的主体性判定，不是 NCC 本身；这需要在讨论 SRT 与意识研究的关系时明确说清楚
+- 结论：$\hat{G}_\theta$ 翻译的价值域是 NCC 之上的主体性候选证据组织，不是 NCC 本身，也不是主体性 verdict；这需要在讨论 SRT 与意识研究的关系时明确说清楚
 
 ---
 
@@ -235,9 +235,9 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 - $\Phi$ 那半**还没有**处理"现象统一性"
 
 **当前 SRT 的诚实回答**：
-- `H-NEURO-Ignition-1` 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它是**必要条件的代理**，不是现象统一性的充分判准
+- `H-NEURO-Ignition-1` 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它只是声明模型中的**候选组织证据**，不是现象统一性的必要或充分判准
 - SRT 当前没有独立的现象绑定理论——这是已知的开放缺口，不应被 bridge 语言掩盖
-- 最保守的当前表述：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 是主体性显现的**候选结构条件组合**；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
+- 最保守的当前表述：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 只是主体性研究的**候选联合证据读数**，不是 admission condition；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
 
 ---
 
@@ -255,6 +255,8 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 
 # Part B: Original Theoretical Discourse (Context)
+
+> **Historical / superseded reading guard**: Part B is retained for provenance and clinical-research context. Any unqualified equation, identity, necessity, sufficiency, threshold, diagnostic, or treatment claim about consciousness / phenomenality / subjecthood below is not a current SRT admission theorem or clinical conclusion. Its reusable content is limited to P3/P4 hypotheses and declared-model candidate evidence; exact sufficiency remains OPEN, and diagnosis or treatment requires independent clinical evidence.
 
 > **Note**: 以下各节以中文撰写，为 Part A 形式化公理提供理论语境、实证基础和哲学分析。遵循**最小闭环 (Minimum Closed Loop)** 结构。
 
@@ -420,7 +422,7 @@ L6b 非锥体神经元的爆发放电是意识状态跃迁的"硬件中断"。�
 
 **正常功能**: 当预测误差累积超过 $\theta_{trigger}$ 时，L6b 爆发释放当前 CTC 锁定，瞬间最大化 $d$ 值（开放探索带宽），允许 $\hat{G}$ 在 $L_0$ 中寻找新的吸引子。
 
-**临床异常**: $\theta_{trigger}$ 的病理性偏移解释了从 ADHD（阈值过低 → 过度重采样）到 OCD（阈值过高 → 困于局部极小）再到昏迷（阈值 $\to \infty$ → 无法触发）的连续谱。这为通过精准调节 $\theta_{trigger}$ 来治疗意识障碍提供了理论基础。
+**临床研究假说（P4）**: $\theta_{trigger}$ 的候选偏移模型可分别与 ADHD（过度重采样）、OCD（困于局部极小）和昏迷（无法触发）的某些动力学特征进行可检验比较。这不构成诊断、治疗建议或意识准入定理；调节 $\theta_{trigger}$ 的临床价值仍需独立安全性与疗效证据。
 
 ---
 

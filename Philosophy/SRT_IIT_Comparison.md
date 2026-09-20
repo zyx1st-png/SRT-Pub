@@ -169,7 +169,7 @@ SRT 不必否定 `Φ`，而应降级使用：
 
 标准表述：
 
-> `Φ` may be an integration-side readout of a selected structure, but it is not a sufficient marker of subjectivity. Subjectivity requires stake-coupled concern and payable anchoring.
+> `Φ` may be an integration-side readout of a selected structure, but it is not a sufficient marker of subjectivity. Stake-coupled concern and payable anchoring may add candidate evidence inside a declared subjectivity model; they are not a universal necessary or sufficient admission package.
 
 ---
 

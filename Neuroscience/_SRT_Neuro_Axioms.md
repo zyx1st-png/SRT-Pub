@@ -180,7 +180,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 - 方向B（Ψ_f→能量）：高本体论摩擦状态（强信念锚定）需要更多能量维持
 - 两个方向均可能成立，形成正反馈环；实验上可通过代谢干预（禁食/葡萄糖输注）区分
 
-* **Implication（中文）**：选择必须支付能量代价；$\Psi_f$ 是神经系统能够拥有 $d>0$ 的物理条件之一（必要而非充分——还需要时间整合能力和θ稳定性）。
+* **Implication（中文）**：在本声明神经桥接模型中，选择性维持可与能量代价联系；$\Psi_f$、时间整合能力与 θ 稳定性只是 $d$ 研究的候选物理证据，不建立普遍必要或充分条件，也不准入意识。
 
 **证伪条件** [H]:
 - 若高锚定状态（如强信念固着、创伤后应激的过度锚定）在代谢成像中不伴随对应脑区代谢升高，则Ψ_f ∝ E_metabolic不成立。
@@ -204,7 +204,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 | Gate form | Level | Current use | Evidence that would favor it | Failure / revision condition |
 |-----------|-------|-------------|------------------------------|------------------------------|
-| Multiplicative gate: `\Phi_{proxy}\cdot d_{proxy} > C` | hypothesis / structural preference | Keeps integration and concern-gradient jointly necessary. | Low `Φ_proxy` blocks ignition despite high `d_proxy`, and low `d_proxy` blocks ignition despite high `Φ_proxy`; interaction term improves trial prediction. | If either factor can compensate for the other in data, the product form must be weakened. |
+| Multiplicative gate: `\Phi_{proxy}\cdot d_{proxy} > C` | hypothesis / structural preference | Tests integration and concern-gradient as joint candidate predictors inside this declared ignition/report model. | Low `Φ_proxy` or low `d_proxy` suppresses the model-local ignition/report readout, and the interaction term improves trial prediction. | If either factor can compensate for the other in data, the product form must be weakened. |
 | Additive gate: `w_\Phi\Phi_{proxy}+w_d d_{proxy}>C` | operational proxy | Allowed when empirical compensation between integration and `d` is observed. | Weighted sum fits ignition/report better than interaction terms across tasks. | If additive fit hides distinct failure modes, return to separated gates. |
 | Probabilistic gate: `P(ignite)=\sigma(\alpha\Phi+\beta d+\gamma\Phi d-\delta)` | operational proxy | Lab-facing model for noisy or graded ignition reports. | Trial-level reports are graded/noisy and logistic models outperform hard thresholds. | If ignition is not separable from report/confidence effects, do not treat it as ontology. |
 
@@ -275,6 +275,8 @@ The threshold / phase-transition reading remains a modeling hypothesis; downstre
 
 
 # Part B: Expanded Theoretical Discourse (Context) (扩展理论论述)
+
+> **Historical / superseded reading guard**: Part B preserves earlier comparative argument, metaphors, and provenance. Any unqualified identity, necessity, sufficiency, `iff`, threshold, anti-panpsychist absence claim, or brain-as-tuner claim about consciousness / phenomenality / subjecthood in this part is superseded as a current SRT conclusion. Under the current reading, the named quantities provide at most declared-model candidate evidence; exact consciousness and subject-position sufficiency remain OPEN.
 
 > **Note**: 以下各节以中文撰写，为 Part A 形式化公理提供理论语境、哲学论证和研究方向。
 
