@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-20
-source_commit: 63a53e5b
+source_commit: dcf3477e
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: true
+source_dirty: false
 inputs_digest: 62a152e80ee33dd5
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 62a152e80ee33dd5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-20 |
-| 来源 commit | `63a53e5b` |
+| 来源 commit | `dcf3477e` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -49,7 +49,7 @@ inputs_digest: 62a152e80ee33dd5
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-19 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-20 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
@@ -1676,7 +1676,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-20 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-20
-source_commit: 63a53e5b
+source_commit: dcf3477e
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: true
+source_dirty: false
 inputs_digest: 62a152e80ee33dd5
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 62a152e80ee33dd5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-20 |
-| 来源 commit | `63a53e5b` |
+| 来源 commit | `dcf3477e` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

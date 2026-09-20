@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-20
-source_commit: 63a53e5b
+source_commit: dcf3477e
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: true
+source_dirty: false
 inputs_digest: 62a152e80ee33dd5
 ---
 
@@ -23,14 +23,14 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 16 | 374,519 | ~151,645 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 155,669 | ~73,182 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 70,386 | ~27,273 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 80,903 | ~34,556 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 94,616 | ~35,287 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 120,825 | ~41,647 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,483 | ~14,109 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 22,076 | ~9,685 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 16 | 374,520 | ~151,645 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 155,670 | ~73,182 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 70,387 | ~27,273 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 80,904 | ~34,556 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 94,617 | ~35,287 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 120,826 | ~41,647 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 36,484 | ~14,110 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 22,077 | ~9,685 |
 
 ## 上下文预算
 
@@ -68,7 +68,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 | `SPINE` + `DOMAIN_PHYSICS` | 186,201 | **超预算** |
 | `SPINE` + `DOMAIN_PHILOSOPHY` | 186,932 | **超预算** |
 | `SPINE` + `DOMAIN_NEUROSCIENCE` | 193,292 | **超预算** |
-| `SPINE` + `DOMAIN_SPIRITUALITY` | 165,754 | **超预算** |
+| `SPINE` + `DOMAIN_SPIRITUALITY` | 165,755 | **超预算** |
 | `SPINE` + `DOMAIN_CORE` | 161,330 | **超预算** |
 
 **两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
