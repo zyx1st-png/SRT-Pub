@@ -446,9 +446,18 @@ Phase E.1 — productive-adequacy / O-criterion revision Pass 1: COMPLETE.
 
 Phase E.2 — target-blind spectral O1 formation feasibility: COMPLETE / O1-SPECTRAL-PASS.
 
-Phase E.3 — NEXT: target-blind O3 causal-mediation feasibility on the source/base domain. O4 / new transfer target remains HOLD until O1-O3 are paid.
+Phase E.3 — target-blind O3 causal-mediation feasibility: COMPLETE / O3-CAUSAL-NULL.
 
-Phase F — canonical reassessment: HOLD. The null and O1 pass produced programme-method revision but no owner-level reason to edit canonical ontology.
+The toy-system spectral family now has:
+- O1 formation = PASS;
+- O2 operator-level history imprint = descriptive candidate paid;
+- O3 one-time spectral transplant causal mediation = NULL.
+
+O4 / any new transfer target remains BLOCKED.
+
+Phase E.4 — NEXT: cross-realization / source-fidelity audit. Separate Bowler's repeated-reset source-native intervention from the one-time transplant tested here and identify whether the GRG-R1 invariant belongs at raw spectral values, maintained dynamical mode, attractor organization, or the more general operation->structure->operation dependency. No new experiment is authorized by this line alone.
+
+Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
 ## 17. No-write zones for this programme stage
 

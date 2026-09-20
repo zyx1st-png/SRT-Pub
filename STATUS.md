@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / PILOT-NULL + O-CRITERION REVISION COMPLETE / O1-SPECTRAL-PASS / O3 TARGET-BLIND CAUSAL-MEDIATION FEASIBILITY NEXT
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / O1-SPECTRAL-PASS + O3-CAUSAL-NULL / CROSS-REALIZATION + SOURCE-FIDELITY AUDIT NEXT / O4 BLOCKED
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -115,10 +115,20 @@ paired-seed CV history classification = 1.00;
 within-pair permutation p = 0.000999;
 target data used = NO.
 
+O3 target-blind causal-mediation feasibility = COMPLETE / O3-CAUSAL-NULL:
+12/12 S donors + 12/12 D donors base competent;
+12/12 recipient seeds complete;
+median C_SD = 0.001575;
+median C_S0 = 0.002794;
+both bootstrap primary conditions fail;
+target data used = NO.
+
 next:
-O3 target-blind causal-mediation feasibility on the base/source domain
--> no new transfer target yet
--> O4 / v0.2 target execution HOLD until O1-O3 are paid
+cross-realization / source-fidelity audit
+-> distinguish Bowler repeated-reset causal intervention from the one-time spectral transplant tested here
+-> determine whether the GRG-R1 invariant is spectral value, maintained dynamical mode, attractor organization, or a more general operation->structure->operation relation
+-> O4 / any new transfer target remains BLOCKED
+-> no post-null tuning of the spectral family
 -> canonical reassessment remains HOLD.
 ```
 
