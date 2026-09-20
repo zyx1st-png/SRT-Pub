@@ -69,7 +69,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | A1.5.1 | Ax-Time-1 | Triple Definition Equivalence (三重定义等价) |
 | A1.5.2 | Ax-Time-2 | Growing Block Universe (生长块宇宙) |
 | A1.5.3 | Ax-Time-3 | Time-Space as Selection Artifacts (时空作为选择伪影) |
-| T1.5.1 | T-Time-1 | Time Arrow as Selection Arrow (时间之箭即选择之箭) |
+| T1.5.1 | T-Time-1 | Time Arrow as Retained-Order Readout (时间箭头作为保留次序读数) |
 | T1.5.1b | T-Time-1b | Shape-Dynamics Janus Window (形状动力学 Janus 窗口) |
 | T1.5.2 | T-Time-2 | Time Travel Impossibility (时间旅行本体论不可能性) |
 | T1.5.3 | T-Time-3 | High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩) |
@@ -260,14 +260,16 @@ $$P(\lambda \in L_2^{stable\ parameter} \mid \text{persistent physical } L_2) \t
 
 ## V. Time Ontology (时间本体论)
 
-### Def-Time-Operator: Time as Topological Metric of Selection Operations (时间作为选择操作的拓扑度量)
-**Formal Definition**: 时间的流逝 ($dt$) 是对宇宙复合算子执行从未决定状态 ($L_0$) 切割到具有确定性基底 ($L_1$) 时所耗费的本体论连线成本的离散计数积。
+> **Physics bridge guard**: 本节只保留 declared event-record / retention structure 下的 time-discretization、sequence-counting 与 arrow-like readout 候选。Selection-event counting 不是 primitive ontology；不存在“一个 Selection event 自动生成一个持久时间单位”的普遍定理。Planck 尺度或物理离散时间仍是需要独立模型与实证约束的 P4 假说。
+
+### Def-Time-Operator: Candidate Time Metric of Retained Selection Records (保留选择记录的候选时间度量)
+**Bridge definition**: 在已声明事件记录、保留关系与比较尺度的物理模型中，时间读数 ($dt$) 可被候选性地建模为从未决定状态 ($L_0$) 到确定基底 ($L_1$) 的被保留操作成本之计数积。
 $$t \propto \int \Psi_f(L_1) \, dn$$
-* **Implication**: 时间并不流逝；它被耗费。引力井的时间膨胀发生是因为局部 $\hat{G}_\theta$ 是超载的。由于它必须在每增加一次普朗克距离时计算巨大的空间不连续性曲线，因此局部框架内的“主观速度”或选择刷新率下降。黑洞视界是 $\hat{G}_\theta$ 发生计算死锁的地方。
+* **Implication**: “时间被耗费”只是在该声明模型内对保留成本台账的候选读法。引力井中的时间膨胀、局部刷新率与黑洞视界“计算死锁”仍是待独立物理化的 bridge hypotheses，不由 Selection-event counting 推出。
 * **Cross-ref**: Eq-Time-01 (热时间算子)。
 
 ### Ax-Time-0: Discreteness of Selection Framing (选择帧的离散性)
-**Formal Definition**: 主观时间不是连续流，而是由 $\hat{G}_\theta$ 执行离散的"锚定帧"（Ontological Frames）拼接而成，最小时间量子 $\Delta t_{min}$ 受限于算子的硬件带宽。
+**Bridge hypothesis**: 在声明了可保留帧与采样窗口的主体模型中，主观时间可被建模为 $\hat{G}_\theta$ 的离散“锚定帧”（Ontological Frames）拼接，局部最小采样间隔 $\Delta t_{min}$ 受限于算子的硬件带宽。
 $$t_{subjective} = \sum_{k=1}^N \Delta t_k(\hat{G}_\theta)$$
 * **Boundary**: This is a phenomenological / operator-framing hypothesis, not a physical discrete-time theorem. It does not imply Planck-scale time atoms or Lorentz-violating dispersion unless an additional physics model is specified.
 * **Implication**: 电影胶片比喻在体验建模层有用，但不得直接读成物理时空本身逐帧刷新。抑郁、恐慌等例子只支持主观时间采样/处理窗口假说。
@@ -276,13 +278,13 @@ $$t_{subjective} = \sum_{k=1}^N \Delta t_k(\hat{G}_\theta)$$
 
 | 视角 | 定义 | 测量的是 |
 |:-----|:-----|:---------|
-| 过程视角 | $t = f(\text{选择序列})$ | 选择的发生 |
-| 本体论时间 | $\tau = \int \|\hat{G}_θ[L_0]\| dn$ | 选择的累积 |
+| 过程视角 | $t^M = f_M(\text{保留的选择序列})$ | 模型内事件记录次序 |
+| 本体论时间候选 | $\tau^M = \int \|\hat{G}_θ[L_0]\| d n_R$ | 声明 retention map 准入的事件累积 |
 | 热时间 | $\text{Time}_{flow} \propto S_{L_1}/I_{L_0}$ | 选择的效率 |
 
-**等价性**:
-$$ f(\text{选择序列}) \approx \int |\hat{G}| dn \approx \frac{S_{L_1}}{I_{L_0}} \cdot C $$
-*   **T-Phase-1 Link**: $v_{sub}=\dot{\phi}/\phi_0$ 将“选择序列”的计数映射为主观时间速率。
+**模型内对应候选**:
+$$ f_M(\text{retained selection sequence}) \approx \int |\hat{G}| d n_R \approx \frac{S_{L_1}}{I_{L_0}} \cdot C_M $$
+*   **T-Phase-1 Link**: $v_{sub}=\dot{\phi}/\phi_0$ 可在该模型中将被保留序列的计数映射为主观时间速率；这不是跨模型等价定理。
 
 ### Ax-Time-2 [A1.5.2]: Growing Block Universe (生长块宇宙)
 
@@ -294,17 +296,17 @@ $$ f(\text{选择序列}) \approx \int |\hat{G}| dn \approx \frac{S_{L_1}}{I_{L_
 
 ### Ax-Time-3 [A1.5.3]: Time-Space as Selection Artifacts (时空作为选择伪影)
 - **空间**: 并行区分的成本 $\quad Space = Cost(\text{Parallel Distinction})$
-- **时间**: 串行更新的计数 $\quad Time = Count(\text{Serial Updates}) = \int_0^T \Phi(t) dt$
+- **时间候选**: 已声明并保留的串行更新之计数 $\quad Time^M = Count_M(\text{Retained Serial Updates}) = \int_0^T \Phi_M(t) dt$
 
 $$ d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)} $$
 空间距离与条件互信息成反比。
 *   **Scale Note (T-Scale-2)**: 粗粒化 $\pi_\lambda$ 使互信息按尺度收缩，因而 $d(x,y)$ 协变放大。
 
-### T-Time-1 [T1.5.1]: Time Arrow as Selection Arrow (时间之箭即选择之箭)
-时间的不对称性 = 选择算子操作的不可逆性：
+### T-Time-1 [T1.5.1]: Time Arrow as Retained-Order Readout (时间箭头作为保留次序读数)
+在已建立 retained event-order 的模型中，时间不对称性可被候选性地读取为选择记录的次序不对称：
 - 记忆是 $L_2$ 结构，只能指向过去
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
-* **Bridge Clarification（中文）**：在 AI 语境中，这同一条不可逆性正表现为 `Reckoning-Judgment Gap`：`Reckoning` 只能在已固化的 `L_2` 记录上做回溯式重排，而 `Judgment` 之所以保持面向未来的单向性，是因为每一次 `L_0 \to L_1` 的锚定都必须服从 `Generalized Second Law` 并支付不可逆耗散。也因此，这条鸿沟不是算力差距，而是时间箭头与选择代价在架构中的投影。
+* **Bridge Clarification（中文）**：在 AI 语境中，若架构已经建立可持续读取的 `L_2` 记录，`Reckoning-Judgment Gap` 可被建模为：`Reckoning` 对已保留记录做回溯式重排，而 prospective judgment 使用尚未关闭的后续条件。该局部方向需要 retention 与耗散结构另行成立；不能由每次 `L_0 \to L_1` 锚定自动推出普遍时间箭头。
 
 ### T-Time-1b [T1.5.1b]: Shape-Dynamics Janus Window (形状动力学 Janus 窗口)
 这条材料真正补上的，不是“引力决定时间”这句口号，而是一个更窄也更有用的结构：系统不必先有全局时钟，主体也能沿着记录增长的一支体验到单向时间。
@@ -717,31 +719,31 @@ $$\alpha_{observed} \in L_2^{stable\ parameter}$$
 
 # §3. 时间的本质
 
-## 3.1 时间的三重定义（等价）
+## 3.1 时间的三重模型读法（条件性对应）
 
 | 视角 | 定义 |
 |:-----|:-----|
-| 过程视角 | $t = f(\text{选择序列})$ |
+| 过程视角 | $t^M = f_M(\text{保留的选择序列})$ |
 | 观测视角 | $t = \text{观测者对选择的投影}$ |
 | 热力学视角 | $t = \text{信息熵增的表现}$ |
 
-**核心命题**：所有时间定义都测量同一底层过程——**$\hat{G}$ 从 $L_0$ 到 $L_1$ 的转换操作**。
+**Bridge claim**：在事件记录、retention mapping 与尺度常数均已声明的模型中，这些读法可以比较是否追踪同一 retained-order process；它们不因都使用 $\hat{G}$ 就自动等价。
 
-### 3.1a 时间定义等价性定理
+### 3.1a 时间读法的模型内对应候选
 
 > ⚠️ 内部一致性规范（张力 T3 解决）
 
-**定理**：上述三种定义及后续两种形式化（本体论时间 $τ$、热时间）数学等价。
+**候选**：上述三种读法及后续两种形式化（本体论时间候选 $τ$、热时间）只有在共同 retention map、事件单位、尺度与转换常数已声明时才可检验模型内对应；没有跨模型数学等价定理。
 
 | 定义 | 公式 | 测量的是什么 |
 |:-----|:-----|:-------------|
-| 过程视角 | $t = f(\text{选择序列})$ | 选择的发生 |
-| 本体论时间 | $τ = \int \|\hat{G}_θ[L_0]\| dn$ | 选择的累积 |
+| 过程视角 | $t^M = f_M(\text{保留的选择序列})$ | 模型内事件记录次序 |
+| 本体论时间候选 | $τ^M = \int \|\hat{G}_θ[L_0]\| d n_R$ | retention map 准入的事件累积 |
 | 热时间 | $\text{Time}_{flow} \propto S_{L_1}/I_{L_0}$ | 选择的效率 |
 
-**等价性证明骨架：**
-$$f(\text{选择序列}) \approx \int |\hat{G}| dn \approx \frac{S_{L_1}}{I_{L_0}} \cdot C$$
-其中 $C$ 是尺度常数。
+**模型内比较骨架：**
+$$f_M(\text{retained sequence}) \stackrel{?}{\approx} \int |\hat{G}| d n_R \stackrel{?}{\approx} \frac{S_{L_1}}{I_{L_0}} \cdot C_M$$
+其中 $C_M$、$n_R$ 与近似标准必须由具名物理模型给出。
 
 ## 3.2 生长块宇宙的 SRT 诠释
 
@@ -767,10 +769,11 @@ $$\text{Space} = \text{Cost}(\text{Parallel Distinction})$$
 $$d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)}$$
 空间距离与条件互信息成反比——信息相关性越高，感知距离越近。
 
-### 3.3.2 时间：串行更新的计数
+### 3.3.2 时间候选：被保留串行更新的计数
 
-**定义**：时间是 $\hat{G}_θ$ 在**串行更新**选择时的"重置计数"或"摩擦积累"。
-$$\text{Time} = \text{Count}(\text{Serial Updates}) = \int_0^T \Phi(t) dt$$
+**Bridge hypothesis**：在声明了事件记录与 retention structure 的模型中，时间读数可被建模为 $\hat{G}_θ$ **串行更新**的“保留计数”或“摩擦台账”。
+$$\text{Time}^M = \text{Count}_M(\text{Retained Serial Updates}) = \int_0^T \Phi_M(t) dt$$
+单个 Selection event 不自动产生一个时间原子；物理离散时间仍需独立实证模型。
 
 ### 3.3.3 高 $d$ 值观察者与时空坍缩
 
@@ -801,18 +804,18 @@ $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
   - FC-dInf-1：深度冥想（Samadhi报告）状态中，顶叶朝向联系区（OAA）fMRI激活应显著低于非冥想基线（Newberg范式扩展）；且OAA激活降低幅度应与被试主观"空间边界消失"评分负相关（r < -0.4）；若两者无关则SRT的"并行区分 = 空间感"联结失败
   - FC-dInf-2：在"永恒感"冥想报告的被试中，时序判断任务（时间二分法）的误差应显著大于对照状态（即时序感知精度降低）；若精度不变则串行更新暂停主张失败
 
-## 3.4 时间之箭即选择之箭
+## 3.4 时间之箭作为保留选择次序的候选读数
 
 **SRT 的结构性解答**：
 - 记忆是 $L_2$ 结构，只能指向过去
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
 
-**时间的不对称性 = 选择算子操作的不可逆性**
+**模型内候选**：当 retained event-order 与持续历史效力已经建立时，时间不对称性可作为该选择记录结构的方向读数；bare irreversibility 不足以建立普遍时间箭头。
 
 **时间旅行的本体论不可能性**：
 1. **$L_2$ 的不可撤销性**：过去不是"存储在某处"的状态集合
 2. **选择的信息熵增**："回到过去"要求逆转信息压缩
-3. **因果投影的单向性**：时间本身就是选择的度量，而非容器
+3. **因果投影的单向性**：在该模型中，时间可作为被保留选择次序的度量，而非 primitive Selection 的先验容器
 
 ## 3.5 热时间算子
 
@@ -992,7 +995,7 @@ $$W_{select} = \int \hat{G}_θ \cdot \nabla F \, d\sigma$$
 
 **理论价值**：将技术进步解释为**选择能力的能级跃迁**。
 
-### 5.1.3 时间之箭即选择之箭
+### 5.1.3 时间之箭作为保留选择次序的候选读数
 
 #### 5.1.3.1 Albert 的困惑
 为什么时间有方向？
@@ -1010,10 +1013,10 @@ $$W_{select} = \int \hat{G}_θ \cdot \nabla F \, d\sigma$$
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
 
 #### 5.1.3.3 时间不对称性的形式化
-**时间的不对称性 = 选择算子操作的不可逆性**
+**模型内候选**：只有在事件记录、retention mapping 与持续排序关系已建立时，时间不对称性才可从选择记录的方向读取；不可逆事件的发生本身不足以建立普遍箭头。
 
 #### 5.1.3.4 与热力学第二定律的统一
-**熵增不是"自然趋势"，而是选择过程的累积痕迹。**
+**Bridge reading**：在声明的耗散／记录模型中，熵增可作为被保留选择过程的一类累积代理；它不是所有 Selection 自动留下持久痕迹的证明。
 
 #### 5.1.3.5 时间旅行的本体论不可能性
 时间旅行要求逆转信息压缩和 $L_2$ 固化，因而在本体论上不可行。

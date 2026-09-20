@@ -203,7 +203,7 @@ $$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\
 1. P0-01 将非对象化潜在取得确定显现差异的最小 kernel 置为 primitive；不从更早的非选择机制导出。
 2. $\hat{G}_\theta$ 是该 primitive 映射的形式角色载体，不是位于映射之前的 chooser、operator-entity 或充分原因。
 3. L₀ 的非平坦性、$\kappa_0$、$\Psi_f$ 与 payability 可以约束具名领域 realization 的可行方向、代价和稳定性；它们都不能单独把数学可行性升级为确定事件。
-4. 时间（A14 摩擦台账）是不可撤回选择积累后的度量，而非 primitive actualisation 的背景容器。因此"第一次选择在何时发生"是类别错误；这不等于已经给出一个非时间性的生成公式。
+4. primitive actualisation 不要求一个在先的普遍时间容器，因此“第一次选择在何时发生”是类别错误。在具名模型建立了保留的事件次序、历史效力或持续排序关系后，A14 式时间／摩擦台账才可作为下游读数；这不等于每个 primitive Selection 自动生成持久时间单位，也不等于已经给出一个普遍的非时间生成公式。
 
 **对 §6.1 问题的回答**：量子去相干 $\Psi_f$ 和认知决策 $\Psi_f$ 的数值不可比；二者至多在已经进入各自实现过程后共享某种代价／阻力角色。AM-A 不要求跨领域只有一个 realization mechanism，也不允许用“谁先支付第一笔摩擦”的说法把摩擦倒置为 primitive 的来源。
 

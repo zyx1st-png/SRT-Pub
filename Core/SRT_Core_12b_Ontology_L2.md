@@ -147,9 +147,9 @@ Within the declared retention model, Ax-L2-01 is an accumulation law: $L_2(t) = 
 | Failed/unstable events | May have irreversible consequence without `L₂` writeback | Deposit zero ρ in this model; cannot participate in compounding ratchet |
 | One-shot non-ISP events | Do not become `L₂` merely by occurring | Any modeled ρ decays without renewal; cannot cross ρ* |
 
-**Decomposition**: total L₂ dynamics = general accumulation (Ax-L2-01) = undirected drift (all events, any sign) + directional ratchet (successful stable ISP closures, via ρ). The directional ratchet is the mechanism that makes stable ISP history *dominate* L₂ structure over time rather than merely being archived among many trajectories.
+**Decomposition**: within the declared retention model, total L₂ dynamics = general accumulation (Ax-L2-01) = undirected drift (all events admitted by the explicit writeback map, any sign) + directional ratchet (successful stable ISP closures, via ρ). The directional ratchet is the mechanism that makes stable ISP history *dominate* L₂ structure over time rather than merely being archived among many trajectories.
 
-**Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates (any selection leaves a signed trace); T-L2-Scaffold explains *which sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description.
+**Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates after an event has been admitted by the declared retention / writeback map; T-L2-Scaffold explains *which admitted sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description. Event occurrence alone does not supply the signed `L₂` trace.
 
 **Precision Note (2026-04-21): trace / closure / scaffold ladder**
 
@@ -596,7 +596,7 @@ $$L_2^{\text{naive}} = \frac{1}{T} \int_0^T L_1(t) \, dt$$
 **SRT解释**: L_2的形成遵循**迟滞累积**:
 $$L_2(t) = L_2(t-1) + \eta \cdot \text{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$$
 
-每一次选择$\Delta\sigma$在L_2中留下"磁化"痕迹,使未来沿相同方向的选择更容易。
+在本节声明的迟滞／写回模型中，只有被显式 retention map 准入的选择差异 $\Delta\sigma$ 才在 $L_2$ 中留下“磁化”痕迹，使未来沿相同方向的选择更容易；事件发生本身不足以建立该写回。
 
 #### 1.1.2 非线性指数$\alpha$的作用
 

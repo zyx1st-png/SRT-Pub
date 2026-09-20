@@ -264,7 +264,7 @@ The support/replacement line should be expressed as a structural test, not a mor
 
 ### Status Update (2026-04-21)
 
-The hardened working position now separates the ladder more cleanly: event trace is the irreversibility floor; minimal closure begins when prior traversal systematically lowers `\Psi_f` for compatible subsequent traversal; `L_2`-grade closure requires that low-friction path to become inheritable, shareable, and backgrounded.
+The hardened working position now separates the ladder more cleanly: event-level non-erasure is the floor; a retained / model-local trace is admitted only under an explicit retention / writeback mapping or established later material efficacy; minimal closure begins when prior traversal systematically lowers `\Psi_f` for compatible subsequent traversal; `L_2`-grade closure requires that low-friction path to become inheritable, shareable, and backgrounded.
 
 What remains non-canonical: `\rho^*`, `\lambda_d`, `κ`-thresholding, and the payability window remain threshold-bearing or empirical/formal hardening targets. The stable ISP entry definition in `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` should not be collapsed into the dynamic mechanism by which some ISP histories become scaffolded background.
 

@@ -65,7 +65,7 @@ provided the model, metric / measure and interpretation are declared. This is **
 
 **边界 1 — 无先在选择者**：$L_0 \to L_1$ 不需要一个在选择之前已经存在的 chooser、subject 或 operator-entity。$\hat{G}_\theta$ 是 primitive actualisation 的形式角色，不是站在转化之前执行它的实体，也不是该转化自身的原因。
 
-**边界 2 — 时间无前序性**：时间是不可撤回选择累积后的度量，而不是 P0 actualisation 的背景容器。因此“第一次 actualisation 在时间上何时发生”是类别错误；这不等于已经给出一个非时间性的生成机制。
+**边界 2 — 时间无前序性**：P0 actualisation 不要求一个在先的普遍时间容器，因此“第一次 actualisation 在时间上何时发生”是类别错误。只有在具名模型已经建立保留的事件次序、历史效力或持续排序关系时，时间／次序才可作为这些关系的下游读数；这不等于每个 primitive actualisation 自动生成持久时间单位，也不等于已经给出一个完整的非时间生成机制。
 
 **约束／原因分离**：Ax-L0-03 的非平坦结构、$\kappa_0$、$\Psi_f$、payability 和任何最低摩擦路径可以约束某个 realization 的可行方向、成本或稳定性，但不能单独推出一个确定事件已经发生。数学上的 fixed point 或 minimum 也不等于本体事件；若未来恢复该类公式，只能作为具名领域的 AM-B 候选，并须另证定义域、存在性、唯一性／分支规则和 realization bridge。
 

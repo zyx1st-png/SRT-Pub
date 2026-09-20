@@ -156,15 +156,15 @@ So the distinction should be read as:
 `T-L2-Scaffold` explains why successful stable ISP history can become background scaffold rather than mere archive.
 This annex sharpens how to read that theorem:
 
-1. **All real selection can leave trace** — this is the irreversibility floor.
-2. **Not all trace becomes closure** — closure requires downstream `Ψ_f` reduction for compatible traversals.
-3. **Not all closure becomes L2** — L2 requires shared / inheritable / backgrounded closure.
-4. **Not all L2 is healthy** — closure is normatively neutral; pathological closure and lethal L2 remain possible.
+1. **Event-level non-erasure** — a Selection event that occurred is not identical to never-having-occurred, but occurrence alone does not establish a durable trace.
+2. **Retained / model-local trace** — trace admission requires an explicit retention / writeback mapping or established later material efficacy.
+3. **Not all retained trace becomes closure** — closure requires downstream `Ψ_f` reduction for compatible traversals.
+4. **Not all closure becomes L2** — L2 requires shared / inheritable / backgrounded closure; not all L2 is healthy.
 
 This yields a four-step ladder:
 
 $$
-\text{trace} \;<\; \text{closure} \;<\; L_2\text{-grade closure} \;<\; \text{healthy or pathological }L_2
+\text{event-level non-erasure} \;<\; \text{retained/model-local trace} \;<\; \text{closure} \;<\; L_2\text{-grade scaffold}
 $$
 
 ---

@@ -302,7 +302,7 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 
 **推论 Ax-L0-Bootstrap-C1（无先在选择者）**：不存在需要先于选择而存在的“原始选择者”。$\hat G_\theta$ 是 primitive actualisation 的形式角色；selector、subject 与 stable operator-pattern 是后成结构。该结论来自 selection-first 的层级顺序，不来自“L₀ 内已有一个算子对象”。
 
-**推论 Ax-L0-Bootstrap-C2（时间无前序性）**：时间（A14 摩擦台账）是不可撤回选择累积的后果，而非 P0 actualisation 的前提。“第一次选择在时间上何时发生”是类别错误；这不等于 SRT 已提供一个非时间生成机制。
+**推论 Ax-L0-Bootstrap-C2（时间无前序性）**：P0 actualisation 不要求一个在先的普遍时间容器；因此追问“第一次选择在时间上何时发生”是类别错误。在具名模型已经建立保留的事件次序、历史效力或持续排序关系时，时间／次序读数可以作为这些关系的下游度量；这不等于每个 primitive Selection 都自动生成持久时间单位，也不等于 SRT 已提供完整的普遍时间生成机制。
 
 **约束边界**：L₀ 非平坦性、$\kappa_0$、$\Psi_f$、payability、fixed point 与 minimum 可以在具名 realization 中约束方向、准入、代价或稳定性。它们都不能单独把数学存在、相对权重或收敛趋势升级为一个确定事件已经发生。意识相变、主体形成与稳定化不由本条推出。
 
