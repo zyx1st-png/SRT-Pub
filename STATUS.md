@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / O1-SPECTRAL-PASS + O3-CAUSAL-NULL / CROSS-REALIZATION + SOURCE-FIDELITY AUDIT NEXT / O4 BLOCKED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / GRG-R1 BURDEN SPLIT COMPLETE / SOURCE-FIDELITY EXTRACTION NEXT / NEW EXPERIMENT + O4 BLOCKED
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -123,13 +123,30 @@ median C_S0 = 0.002794;
 both bootstrap primary conditions fail;
 target data used = NO.
 
+cross-realization / source-fidelity audit Pass 1 = COMPLETE.
+
+GRG-R1 programme burden split:
+
+~~~text
+R1a retained imprint = diagnostic / insufficient
+R1b maintained scaffold = candidate generative organization
+R1c causal re-entry = minimum causal core
+R1d prospective transfer = stronger downstream burden
+~~~
+
+Current interpretation:
+- toy decoder family = not R1c;
+- toy spectral family = R1a PASS / R1c NULL;
+- Bowler = source-native R1b/R1c positive pressure, exact causal object unresolved;
+- synergetics = R1b/R1c pressure, source depth still insufficient.
+
 next:
-cross-realization / source-fidelity audit
--> distinguish Bowler repeated-reset causal intervention from the one-time spectral transplant tested here
--> determine whether the GRG-R1 invariant is spectral value, maintained dynamical mode, attractor organization, or a more general operation->structure->operation relation
--> O4 / any new transfer target remains BLOCKED
--> no post-null tuning of the spectral family
--> canonical reassessment remains HOLD.
+source-fidelity extraction only
+-> clarify Bowler repeated-reset causal object
+-> close-read one mature synergetics/self-organization source on causal order-parameter standing
+-> no new experiment
+-> O4 / any transfer target BLOCKED
+-> canonical reassessment HOLD.
 ```
 
 Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
