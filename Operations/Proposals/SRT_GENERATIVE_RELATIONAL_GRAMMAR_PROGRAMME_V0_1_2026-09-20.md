@@ -244,6 +244,13 @@ The first bounded neuroscience transfer pilot is now COMPLETE and returned PILOT
 
 The pilot rejected the tempting mapping `context-decodable subspace = causal retained organization O` under its preregistered targeted-withdrawal versus random-subspace and magnitude-matched-noise controls. GRG-R1 remains a research candidate; this O-identification strategy does not.
 
+Productive-adequacy revision Pass 1 and the first target-blind O-feasibility pass are also complete:
+
+- `Operations/Audits/SRT_GRG_R1_PRODUCTIVE_ADEQUACY_O_CRITERION_REVISION_PASS1_2026-09-20.md`
+- `Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
+
+The fresh-seed spectral pass returned O1-SPECTRAL-PASS: structured versus direct history is perfectly separable under the frozen paired-seed CV on a label-blind recurrent eigenspectrum feature. This pays O1 formation pressure for an operator-embedded candidate family but does not yet pay O3 causal mediation.
+
 ## 6. GRG extraction rule
 
 A candidate GRG relation must not be created after seeing one matching example and then declared universal.
@@ -435,9 +442,13 @@ Phase D — distributed-neighbor extraction Pass 1: COMPLETE.
 
 Phase E — first bounded GRG-R1 neuroscience transfer pilot: COMPLETE / PILOT-NULL.
 
-Phase E.1 — NEXT: productive-adequacy / revision pass on what qualifies retained organization O before any v0.2 pilot. Do not tune v0.1 into success.
+Phase E.1 — productive-adequacy / O-criterion revision Pass 1: COMPLETE.
 
-Phase F — canonical reassessment: HOLD. The null produced a programme-method revision but no owner-level reason to edit canonical ontology.
+Phase E.2 — target-blind spectral O1 formation feasibility: COMPLETE / O1-SPECTRAL-PASS.
+
+Phase E.3 — NEXT: target-blind O3 causal-mediation feasibility on the source/base domain. O4 / new transfer target remains HOLD until O1-O3 are paid.
+
+Phase F — canonical reassessment: HOLD. The null and O1 pass produced programme-method revision but no owner-level reason to edit canonical ontology.
 
 ## 17. No-write zones for this programme stage
 
