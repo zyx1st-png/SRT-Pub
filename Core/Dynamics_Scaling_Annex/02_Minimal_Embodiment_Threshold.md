@@ -1,8 +1,9 @@
 ---
-id: SRT-CORE-14
+id: SRT-CORE-14-ANNEX-02-MINIMAL-EMBODIMENT
 type: dynamics
 tags: [Scaling, Isomorphism, Fractal, Hybrid]
-status: axiomatic_hybrid_v1
+status: active
+record_stage: axiomatic_hybrid_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
