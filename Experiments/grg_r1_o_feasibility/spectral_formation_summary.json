@@ -1,0 +1,11 @@
+{
+  "verdict": "O1-SPECTRAL-PASS",
+  "eligible_S": 12,
+  "eligible_D": 12,
+  "observed_accuracy": 1.0,
+  "permutation_p": 0.000999000999000999,
+  "null_mean": 0.498875,
+  "null_95": [0.25, 0.75],
+  "seed_range": [100, 111],
+  "target_data_used": false
+}

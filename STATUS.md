@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-13
+updated: 2026-09-20
 ---
 
 # SRT 当前状态仪表盘
@@ -14,7 +14,7 @@ updated: 2026-09-13
 >
 > **记录口径（2026-09-13 起）**：本页记录**已落地事实**，以及由已落地治理 / 作者裁决支持的**当前 programme state**——两者都属于当前状态面板的职责（`AGENTS.md` 执行后条目、`Governance/SRT_EDIT_PROTOCOL.md` 留痕位置表）。但**不得把未合并 PR 自身的 lifecycle 写成仓库当前事实**：`#N = DRAFT / ACTIVE / WAITING CI` 属于那个 PR，不属于本页。进行中的 owner cycle 以 **owner 文件或 bounded work package** 指称，未合并 PR 号不得充当状态 owner。原因：#959 与 #961 两轮都在各自 landing PR 内部把该 PR 写成 ACTIVE，合并当天本页即失真。本条由 `scripts/check_status_recording_rule.py` 强制（本行含反例文本，故带豁免标记）。<!-- status-lint:allow -->
 >
-> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。下一实质工作转入非 canonical Selection primitive strongest-rival / non-substitutability research。
+> **历史快照**：pre-#931 根 STATUS 已保存在 `Operations/Status_History/SRT_STATUS_2026-09-11_PRE_PR931_ROOT_SNAPSHOT.txt`。#931/#933/#938 继续作为历史重构与纠偏 provenance；#940/#942 是局部 landing。自 #947 起，跨 owner 的当前生成顺序、非同一性与 OPEN gate 以 `Core_Law/SRT_Generative_Ontology_Spine.md` 为第一 canonical 路由，旧 canonical 的冲突跨层推论转为 cleanup / retyping debt。#957 已于 2026-09-13 合并为 whole-skeleton **非 canonical 作者检查点**；#959 已完成第一只 post-#957 bounded canonical landing，当前 `Core_Law/SRT_Generative_Ontology_Spine.md` 已是 post-#959 cross-owner canonical spine。#961 已完成第二只 post-#957 bounded owner landing：L0 targeted thinning。#970 已完成第三只 bounded owner landing：One Formation vertical-reconstitution semantics。#972 已完成 post-One Generative Ontology Spine 小型同步，canonical trunk 当前达到本轮 cleanup stop condition；L0 / Bearer / Stable ISP / Individuation 均未被连带打开。#976 已于 2026-09-20 合并 Ground / pre-object L0 whole-tree reconstruction。随后作者在 post-#976 对话中把下一研究主线重定向为 noncanonical Generative Relational Grammar (GRG) programme：从 Selection 作为 non-flat generative change 出发，整合跨主体 / 跨领域经验与成熟邻居作为 reciprocal constraints；winner-style strongest-neighbor novelty audit 不再是当前 root question。
 
 ## Fast Status
 
@@ -44,8 +44,85 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = SELECTION PRIMITIVE STRONGEST-RIVAL / NONCANONICAL / AUTHOR GATE NOT YET REACHED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / PILOT-NULL + O-CRITERION REVISION COMPLETE / O1-SPECTRAL-PASS / O3 TARGET-BLIND CAUSAL-MEDIATION FEASIBILITY NEXT
 ```
+
+### 0.5 Post-#976 GRG programme routing — 2026-09-20
+
+Author source:
+`01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md`
+
+Programme architecture:
+`Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md`
+
+Generative-expectation second adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
+
+Distributed-neighbor extraction Pass 1:
+`Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
+
+GRG-R1 bounded neuroscience transfer pilot result:
+`Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md`
+
+GRG-R1 O-criterion revision:
+`Operations/Audits/SRT_GRG_R1_PRODUCTIVE_ADEQUACY_O_CRITERION_REVISION_PASS1_2026-09-20.md`
+
+GRG-R1 target-blind spectral O1 result:
+`Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
+
+Continuation handoff:
+`Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
+
+Current programme reading:
+
+```text
+Selection = non-flat generative change / differentiation at programme level;
+objects / symbols / laws = useful finite objectification slices, not final ontology floor;
+unification target = generative relational grammar (GRG), not one replacement universal law;
+civilizational "big data" = cross-position / cross-domain accumulated experience + extracted regularities;
+mature neighbors = distributed contributors / reciprocal constraints by default;
+SRT = self-revising grammar-learning architecture;
+generative expectation = author-proposed source line of normativity;
+full moral ought / universal value weights = OPEN;
+canonical edit from this programme = NO.
+```
+
+Next sequence:
+
+```text
+Phase C internal red-team Pass 1 = COMPLETE:
+`Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md`
+
+generative-expectation second adjudication = COMPLETE:
+B+C / asymmetric-layered;
+B = structural generative expectation;
+C = formed-locus anticipatory realization with C0 embodied/enacted and C1 model-mediated forms.
+
+distributed-neighbor extraction Pass 1 = COMPLETE.
+
+GRG-R1 bounded neuroscience transfer pilot = COMPLETE / PILOT-NULL:
+24/24 preregistered networks eligible;
+decoder-defined context subspace failed the full targeted-withdrawal criterion;
+decodability != causal retained organization by default;
+semantic drift = NO;
+canonical consequence = NONE.
+
+productive-adequacy / O-criterion revision Pass 1 = COMPLETE.
+
+target-blind O1 spectral-formation feasibility = COMPLETE / O1-SPECTRAL-PASS:
+24/24 fresh-seed networks base-competent;
+paired-seed CV history classification = 1.00;
+within-pair permutation p = 0.000999;
+target data used = NO.
+
+next:
+O3 target-blind causal-mediation feasibility on the base/source domain
+-> no new transfer target yet
+-> O4 / v0.2 target execution HOLD until O1-O3 are paid
+-> canonical reassessment remains HOLD.
+```
+
+Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
 
 ### 1. 当前 programme state 与 owner 指针
 
@@ -504,7 +581,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is noncanonical Selection primitive strongest-rival research.
+#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is the noncanonical GRG programme. Red-team Pass 1, generative-expectation second adjudication and distributed-neighbor Pass 1 are complete; the current gate is a bounded GRG-R1 transfer pilot, not strongest-rival novelty research.
 
 ---
 
@@ -546,18 +623,23 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-13 post-#972 closeout:** the bounded post-One Spine synchronization is complete and the canonical trunk reaches its current cleanup stop condition. No downstream owner cycle is opened by this closeout. The next substantive work is a noncanonical Selection primitive strongest-rival / non-substitutability audit.
+> **2026-09-20 post-#976 GRG continuation:** GRG founding, red-team Pass 1, generative-expectation second adjudication, distributed-neighbor Pass 1, the first GRG-R1 transfer pilot, productive-adequacy revision Pass 1 and target-blind spectral O1 feasibility are complete. Canonical owners remain closed by default.
 
-```text
-1. treat the One landing, post-One consistency review and post-One Spine sync audit as completed routing provenance;
-2. pause further canonical owner cleanup by default;
-3. next research work package: Selection primitive strongest-rival / noncanonical;
-4. compare against the strongest fair composite rival without pre-given objects, chooser or completed option menu;
-5. test same-event manifest / relative-background verticality and vertical reconstitution, not generic horizontal recurrence;
-6. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;
-7. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;
-8. stop for author adjudication only when the rival audit reaches a genuine metaphysical fork.
-```
+~~~text
+1. GRG-R1 v0.1 neuroscience transfer pilot = PILOT-NULL;
+2. decoder-defined activity subspace is not admitted as causal retained organization by default;
+3. revised O gate = O1 formation -> O2 retained operator structure -> O3 target-blind causal mediation -> O4 prospective re-entry;
+4. fresh-seed spectral O1 feasibility = PASS (24/24 base competent; paired CV=1.00; permutation p=0.000999);
+5. current next = O3 target-blind causal-mediation feasibility only;
+6. do not expose or choose a new transfer target during O3;
+7. any v0.2 target requires a new visible charter + preregistration after O1-O3;
+8. Bowler eigenspectrum intervention is a source-native positive control, not SRT distinctiveness;
+9. synergetic order-parameter language remains distributed pressure; do not equate it with PCA / decoding;
+10. Simondon operation->structure->operation constrains dependency but is not the RNN identifier;
+11. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+12. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+13. do not restart winner-style strongest-neighbor novelty audit.
+~~~
 
 ## Historical navigation
 
