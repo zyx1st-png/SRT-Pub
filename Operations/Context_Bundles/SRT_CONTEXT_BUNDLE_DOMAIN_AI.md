@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-20
-source_commit: a8b47b4d
+source_commit: 63a53e5b
 source_branch: theory/ground-cycle-preobject-differentiation-20260914
-source_dirty: false
-inputs_digest: 5ee12262af9487ab
+source_dirty: true
+inputs_digest: 62a152e80ee33dd5
 ---
 
 # SRT AI 领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 5ee12262af9487ab
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-20 |
-| 来源 commit | `a8b47b4d` |
+| 来源 commit | `63a53e5b` |
 | 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
