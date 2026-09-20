@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / PHASE C RED-TEAM PASS1 COMPLETE / AUTHOR SECOND ADJUDICATION ON GENERATIVE-EXPECTATION TYPING NEXT
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / GENERATIVE-EXPECTATION SECOND ADJUDICATION COMPLETE / DISTRIBUTED-NEIGHBOR PASS1 COMPLETE / GRG-R1 BOUNDED TRANSFER PILOT NEXT
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -54,6 +54,12 @@ Author source:
 
 Programme architecture:
 `Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md`
+
+Generative-expectation second adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
+
+Distributed-neighbor extraction Pass 1:
+`Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
 
 Continuation handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
@@ -78,11 +84,18 @@ Next sequence:
 Phase C internal red-team Pass 1 = COMPLETE:
 `Operations/Audits/SRT_GRG_INTERNAL_RED_TEAM_PASS1_2026-09-20.md`
 
+generative-expectation second adjudication = COMPLETE:
+B+C / asymmetric-layered;
+B = structural generative expectation;
+C = formed-locus anticipatory realization with C0 embodied/enacted and C1 model-mediated forms.
+
+distributed-neighbor extraction Pass 1 = COMPLETE.
+
 next:
-author second adjudication of generative-expectation typing
--> distributed-neighbor extraction
--> one bounded transfer pilot
--> only then canonical reassessment.
+freeze GRG-R1 retained-organization re-entry
+-> bounded neuroscience transfer-pilot charter
+-> derive domain-native unit / variable / control / perturbation / failure expectation before target-result inspection
+-> only then canonical reassessment if a real owner-level reason is earned.
 ```
 
 Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
@@ -544,7 +557,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is noncanonical Selection primitive strongest-rival research.
+#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is the noncanonical GRG programme. Red-team Pass 1, generative-expectation second adjudication and distributed-neighbor Pass 1 are complete; the current gate is a bounded GRG-R1 transfer pilot, not strongest-rival novelty research.
 
 ---
 
@@ -586,18 +599,20 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-13 post-#972 closeout:** the bounded post-One Spine synchronization is complete and the canonical trunk reaches its current cleanup stop condition. No downstream owner cycle is opened by this closeout. The next substantive work is a noncanonical Selection primitive strongest-rival / non-substitutability audit.
+> **2026-09-20 post-#976 GRG continuation:** the GRG founding source, Programme v0.1, internal red-team Pass 1, generative-expectation second adjudication and distributed-neighbor extraction Pass 1 are now present on the active GRG work package. Canonical owners remain closed by default.
 
-```text
-1. treat the One landing, post-One consistency review and post-One Spine sync audit as completed routing provenance;
-2. pause further canonical owner cleanup by default;
-3. next research work package: Selection primitive strongest-rival / noncanonical;
-4. compare against the strongest fair composite rival without pre-given objects, chooser or completed option menu;
-5. test same-event manifest / relative-background verticality and vertical reconstitution, not generic horizontal recurrence;
-6. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency or phenomenality edits;
-7. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;
-8. stop for author adjudication only when the rival audit reaches a genuine metaphysical fork.
-```
+~~~text
+1. treat post-#976 GRG work as noncanonical research architecture;
+2. generative-expectation typing = B+C asymmetric/layered;
+3. distributed neighbors = contributors / reciprocal constraints by GRG burden, not whole-theory winners;
+4. next bounded relation = GRG-R1 retained-organization re-entry;
+5. freeze GRG-R1 before target-result inspection and derive domain-native pilot changes first;
+6. preferred existing surface = bounded neuroscience / recurrent-history / objectification work;
+7. semantic drift after seeing the result = pilot failure, not flexible confirmation;
+8. do not automatically open L0, One, Bearer, Stable ISP, Individuation, d, Concern, Agency, phenomenality or normativity canonical owners;
+9. preserve Level 2 HOLD, no new Level 1, and no scientific-distinctiveness promotion unless separately earned;
+10. do not restart winner-style strongest-neighbor novelty audit without a later explicit comparative claim.
+~~~
 
 ## Historical navigation
 
