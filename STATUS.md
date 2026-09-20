@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / SOURCE-FIDELITY PASS2 COMPLETE / NON-RNN R1c CANDIDATE-SELECTION AUDIT NEXT / NEW EXPERIMENT + O4 BLOCKED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / NON-RNN R1c CANDIDATE SELECTED = HKB COORDINATION DYNAMICS / HKB PROTOCOL+ACCESS FEASIBILITY NEXT / NEW EXPERIMENT + O4 BLOCKED
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -158,11 +158,31 @@ New required declaration:
 - component/prior-process -> O evidence;
 - O -> component/process evidence.
 
+non-RNN R1c candidate-selection audit = COMPLETE.
+
+selected bounded realization candidate:
+HKB / human bimanual coordination dynamics.
+
+Pre-result GRG decomposition:
+- component limb state;
+- external control parameter (cycling/pacing frequency);
+- maintained relative-phase coordination O;
+- mechanical perturbation operator;
+- relaxation / stability / transition consequence.
+
+maintenance provenance = MIXED / COUPLED.
+
+Cross-realization refinement:
+R1b/R1c formation may be historical/sedimented OR continuously regenerated; historical storage is not required for the minimum causal core.
+
 next:
-non-RNN R1c candidate-selection audit
--> no new experiment yet
--> no O4 / transfer target
--> no return to RNN spectral tuning
+HKB source/protocol-access feasibility audit only
+-> full perturbation-method close read
+-> exact variable/intervention/relaxation reconstruction
+-> data-access check
+-> freeze failure conditions
+-> no new experiment / no simulation confirmation
+-> O4 blocked
 -> canonical reassessment HOLD.
 ```
 
