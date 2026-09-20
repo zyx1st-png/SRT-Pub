@@ -168,7 +168,32 @@ semantic drift = NO
 canonical edit = NO
 ~~~
 
-NEXT = productive-adequacy / revision pass. Ask what source-native property should qualify O before transfer if decodability is insufficient. Do not tune v0.1 into success and do not reopen whole-package strongest-neighbor competition.
+Productive-adequacy / O-criterion revision Pass 1 is COMPLETE.
+
+Target-blind O1 spectral-formation feasibility is also COMPLETE:
+
+`Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
+
+~~~text
+verdict = O1-SPECTRAL-PASS
+fresh seeds = 100..111 in S and D
+base competence = 24/24
+paired-seed CV history classification = 1.00
+within-pair permutation p = 0.000999
+target data used = NO
+~~~
+
+Current gate:
+
+~~~text
+O1 formation = PASS
+O2 retained operator structure = candidate paid
+O3 target-blind causal mediation = NEXT
+O4 prospective re-entry / any new target = HOLD
+v0.2 target execution = HOLD
+~~~
+
+Do not tune v0.1 into success and do not reopen whole-package strongest-neighbor competition.
 
 
 ## 5. Distributed-neighbor Pass 1 result
