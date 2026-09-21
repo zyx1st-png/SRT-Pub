@@ -481,49 +481,70 @@ M4 remains:
 NONE
 ~~~
 
-## 13. Negative productivity + positive consistency result
+## 13. Programme state — local closed for current evidence
 
-CIV-005 negative / borderline application:
+Closure owner:
 
-~~~text
-ROLE LIBRARY NEGATIVE PRODUCTIVITY = PASS
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
 
-SUBSTRATE =
-ROLE-CANDIDATE / PRE-ADMISSION
-
-X4c =
-NOT ADMITTED BY CURRENT CIV-005 EVIDENCE
-~~~
-
-The library sharpened the failure by locating the missing burden at:
+Evidence chain completed:
 
 ~~~text
-successor boundary
-+ field transmission
-+ inherited successor possibility change
+carrier architecture adequacy = PASS
+role census = PASS / vocabulary pruned
+CIV-005 negative productivity = PASS
+positive admission-order consistency = PASS
+internal blocking contradiction = NONE
 ~~~
 
-rather than at role count.
-
-Positive-record admission-order audit is COMPLETE:
+Verdict:
 
 ~~~text
-PASS
-positive downgrades = NONE
-circular bootstrap = NONE
+ROLE LIBRARY v0.1 =
+FROZEN FOR CURRENT EVIDENCE
+
+carrier subprogramme =
+LOCAL CLOSE
 ~~~
 
-Next:
+Frozen reusable roles:
 
 ~~~text
-bounded X4c carrier-subprogramme local-closure audit
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
 ~~~
 
-Question:
+Frozen non-admissions / retype:
 
-> Is the carrier line sufficiently constrained for current evidence that its vocabulary should now be frozen and mainline attention returned to broader GRG?
+~~~text
+ENACTMENT = CASE-LOCAL / NARROW
+REPRODUCTION = OPEN / NOT PAID
+MAINTENANCE = persistence-process dimension
+~~~
 
-No new source hunt is authorized by this gate.
+Do not add a role merely because a new case has a new medium or source-native noun.
+
+Reopen only if one of the carrier-subprogramme triggers is paid:
+
+~~~text
+semantic failure
+role non-identity collapse
+admission-order failure
+paid-role falsification
+persistence-process contradiction
+external calibration contradiction
+~~~
+
+Next mainline work is outside this Role Library:
+
+~~~text
+broader GRG underdeveloped-burden / framework-priority census
+~~~
 
 ## 14. Canonical boundary
 
