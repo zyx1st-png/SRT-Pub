@@ -27,7 +27,7 @@ tags: [GRG, ProtoGrammar, V0_3, ProcessFirst, GTS, Prediction, Expectation, Gene
 
 > Role: latest-main, author-aligned noncanonical GRG foundation after the independent review of PR #1018.
 >
-> v0.3 supersedes the v0.2 review package as the active whole-architecture proposal.
+> Historical proto-grammar v0.1 and v0.2 existed only in closed, unmerged PRs #1016 and #1018. v0.3 is the first latest-main landing candidate and supersedes those review packages.
 >
 > It does not edit canonical SRT ontology.
 
@@ -368,6 +368,19 @@ Do not infer history merely from:
 - path dependence;
 - state memory.
 
+Keep levels distinct:
+
+~~~text
+history-input properties
+= GTS / relation-level question about how prior formation enters current generative conditions
+
+carrier persistence process
+= X4c architecture-level mechanism for how a carrier remains available across a successor boundary
+
+ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION may describe carrier persistence
+but do not automatically establish the broader history-input burden.
+~~~
+
 ### 9.2 Reconstruction-output view
 
 Legacy routing label:
@@ -485,11 +498,11 @@ No formal algebra is yet established.
 A candidate transformation signature earns cross-objectification gain only if all are paid:
 
 ~~~text
-X1 independent source-native grounding
-X2 shared generative burden survives mechanism change
-X3 admission / exclusion / failure constraints survive
-X4 no flattening of source-native mechanism-specific necessities
-X5 prospective discrimination in a bounded target / held-out realization
+XG1 independent source-native grounding
+XG2 shared generative burden survives mechanism change
+XG3 admission / exclusion / failure constraints survive
+XG4 no flattening of source-native mechanism-specific necessities
+XG5 prospective discrimination in a bounded target / held-out realization
 ~~~
 
 Prospective discrimination may be:
@@ -500,6 +513,24 @@ Prospective discrimination may be:
 - a predicted failure condition;
 - an objectification-change prediction;
 - a bounded intervention question.
+
+XG5 is paid only if the prospectively frozen distinction survives the existing M4-E0 absorption gate:
+
+~~~text
+mature target-domain practice / strongest reasonable horizontal comparator
+already owns materially the same distinction
+-> ABSORBED / prospective GRG gain = NO
+unless an independent replication rationale is separately declared.
+~~~
+
+Approximate maturity routing:
+
+~~~text
+XG1-XG4 ~ structural recurrence / M3-side burden
+XG5 + absorption resistance ~ M4-side prospective-gain burden
+~~~
+
+This is a programme crosswalk, not an identity theorem.
 
 ### 12.2 What does NOT count
 
@@ -681,6 +712,48 @@ more stability -> better
 Wholeward integration must show additional real dependency inclusion.
 
 It cannot gain authority by scale alone.
+
+## 16.1 Projected Generative Order for W-P — provisional
+
+Status:
+
+~~~text
+M / AUTHOR DECISION PENDING
+~~~
+
+GO1-GO5 define an admitted world-side Generative Order.
+
+W-P may also need to design arrangements that do not yet exist. To avoid status-quo lock-in without letting an imagined ideal masquerade as real order, v0.3 provisionally distinguishes:
+
+~~~text
+ADMITTED ORDER
+= GO1-GO5 paid
+
+PROJECTED ORDER
+= design hypothesis only
+!= admitted Generative Order
+~~~
+
+Minimum projected-order burden:
+
+~~~text
+PGO1 structurally grounded in currently evidenced dependencies / conflicts
+PGO2 P_G consequences frozen before intervention
+PGO3 position / scale / horizon scope declared
+PGO4 failure / consequence-audit charter declared
+PGO5 realization gate: later world-side formation + efficacy must pay GO1 / GO3
+     before promotion to admitted order
+~~~
+
+Expectation relative to a projected order must be labeled:
+
+~~~text
+projected E_G / E_G^proj
+~~~
+
+and must not borrow the authority of ordinary admitted-order E_G.
+
+The W-P heuristics of broader compatibility and lower hidden externalization remain programme-level design criteria, not a completed rule for resolving conflicts among admitted orders.
 
 ## 17. Wholeward programme direction
 
@@ -949,15 +1022,16 @@ The following are explicit OPEN items:
 5. prospective-discrimination benchmark architecture beyond current M4 framing;
 6. formal Generative Order composition;
 7. how multiple admitted orders can be related without scalar aggregation;
-8. wholeward integration tests under irreducible conflict;
-9. formal E_G derivation from admitted order structure;
-10. exact local-locus admission / withdrawal tests;
-11. operative positionality admission beyond current examples;
-12. composition syntax and illegal-derivation semantics;
-13. whether any stable GTS family warrants a new reusable library;
-14. whether future GRG findings pressure canonical SRT owners;
-15. scientific distinctiveness;
-16. universal scope.
+8. whether the projected-order / projected-E_G path should be author-adjudicated, narrowed or rejected;
+9. wholeward integration tests under irreducible conflict;
+10. formal E_G derivation from admitted order structure;
+11. exact local-locus admission / withdrawal tests;
+12. operative positionality admission beyond current examples;
+13. composition syntax and illegal-derivation semantics;
+14. whether any stable GTS family warrants a new reusable library;
+15. whether future GRG findings pressure canonical SRT owners;
+16. scientific distinctiveness;
+17. universal scope.
 
 ## 27. Current mainline gate
 
@@ -997,6 +1071,7 @@ P_G = CORE OUTPUT
 E_G = CORE OUTPUT
 
 Generative Order admission = REQUIRED
+projected-order path = M / AUTHOR DECISION PENDING
 multiple-order conflict = ALLOWED / INDEXED
 
 wholeward direction =
