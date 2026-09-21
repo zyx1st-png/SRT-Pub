@@ -405,6 +405,9 @@ Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
 inheritance carrier architecture:
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
+inheritance carrier Role Library:
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 ~~~
 
 The burden matrix, expectation ledger and PH ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position, horizon or evidence type.
@@ -453,12 +456,34 @@ Current stronger comparison axis:
 causal role
 ~~~
 
-Examples:
+Role census result:
 
-- SUBSTRATE / MAINTENANCE in ecological and material inheritance;
-- PAYLOAD in protocol and legal-rule inheritance;
-- AUTHORITY in precedent;
-- INTERFACE / ENACTMENT in installed technical fields.
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+
+NOT ADMITTED:
+ENACTMENT
+REPRODUCTION
+
+RETYPED:
+MAINTENANCE -> persistence process
+~~~
+
+Architecture-level persistence process:
+
+~~~text
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
 
 Adequacy Pass 1 corrected two overclaims:
 
@@ -504,13 +529,18 @@ X4c material inheritance = M3
 
 Do not add another inheritance case merely to populate provenance categories.
 
+Carrier-role census is COMPLETE and a minimal Role Library is earned.
+
 Current next task:
 
 ~~~text
-bounded carrier-role census across existing X4c cases
+apply Role Library to existing CIV-005 beaver ecosystem-engineering record
+as a negative / borderline test.
 ~~~
 
-Create a reusable Role Library only if the role vocabulary shows recurrence, exclusion power and control-prediction value.
+Use existing evidence only.
+
+The purpose is to specify exactly why persistence alone does not pay X4c and what evidence is missing, not to manufacture a positive inheritance case.
 
 ## 15. Canonical and political guard
 

@@ -637,6 +637,9 @@ G22 CIV-007 precedent / stare-decisis P-INST stress
 G23 Inheritance Carrier Architecture v0.1
 G24 Carrier Architecture Adequacy Pass 1
 G25 provenance-kind-first NARROW / causal-role-first ACTIVE / P-MIXED retired
+G26 bounded Carrier Role Census Pass 1
+G27 minimal X4c Carrier Role Library v0.1 EARNED
+G28 MAINTENANCE retyped to persistence process
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -678,13 +681,32 @@ RETIRED
 IPv4/IPv6 =
 MULTI-COMPONENT
 P-INFO / PAYLOAD = PASS
-P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = PASS
-P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+P-MAT / SUBSTRATE+INTERFACE = PASS
+P-INST proposed coordination role = PRESENT / ROLE-OPEN
+source-local ENACTMENT = NARROW
 
 precedent =
 MULTI-COMPONENT
 P-INFO / PAYLOAD = PASS
 P-INST / AUTHORITY = PASS
+
+carrier Role Library v0.1 =
+EARNED
+
+CORE =
+SUBSTRATE / PAYLOAD / INTERFACE
+
+SPECIALIZED =
+AUTHORITY
+
+ENACTMENT =
+CASE-LOCAL / NARROW
+
+REPRODUCTION =
+OPEN / NOT PAID
+
+MAINTENANCE =
+RETYPED -> architecture persistence process
 
 CIV-006 correction =
 modern regulation is E-LEGAL/E-ORG expectation,
@@ -724,6 +746,8 @@ Mainline comparison surfaces:
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 - Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+- Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+- Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 Framework revision:
 - X6 multi-position consequence divergence is NOT retained as a GRG relation;
@@ -740,7 +764,11 @@ Framework revision:
 - X3b current operative rule and X4c successor inherited field remain explicitly non-identical;
 - component-role PASS does not imply architecture sufficiency by itself;
 - unsupported carrier components remain PRESENT / ROLE-OPEN and cannot strengthen admission;
-- CIV-006 carrier/expectation conflation and IPv4 institutional-role overclaim were corrected by adequacy Pass 1.
+- CIV-006 carrier/expectation conflation and IPv4 institutional-role overclaim were corrected by adequacy Pass 1;
+- bounded role census retained only SUBSTRATE/PAYLOAD/INTERFACE as CORE and AUTHORITY as SPECIALIZED;
+- MAINTENANCE is architecture persistence process, not reusable component role;
+- ENACTMENT and REPRODUCTION are not admitted to Role Library v0.1;
+- next Role Library test is existing CIV-005 negative/borderline evidence only.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

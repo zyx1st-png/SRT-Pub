@@ -367,29 +367,61 @@ C = {c1, c2, ... cn}
 cardinality = MULTI-COMPONENT
 ~~~
 
+Carrier-role census:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Reusable Role Library:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+Census verdict:
+
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+
+NOT ADMITTED:
+ENACTMENT
+REPRODUCTION
+
+RETYPED:
+MAINTENANCE -> architecture persistence process
+~~~
+
 Current case-bounded carrier states:
 
 ~~~text
 ecological inheritance:
 SINGLE-COMPONENT
-P-ECO / SUBSTRATE+MAINTENANCE
-= PASS for that source-native family
+P-ECO / SUBSTRATE
+persistence process = PASSIVE-PERSISTENCE
+= architecture PASS
 
 CIV-006:
 SINGLE-COMPONENT
-P-MAT / SUBSTRATE+MAINTENANCE+INTERFACE
-= PASS
+P-MAT / SUBSTRATE+INTERFACE
+persistence process = ACTIVE-MAINTENANCE / MIXED
+= architecture PASS
 
 IPv4/IPv6:
 MULTI-COMPONENT
 P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
-P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
-P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+P-MAT / SUBSTRATE+INTERFACE = COMPONENT-ROLE-PASS
+P-INST proposed coordination role = PRESENT / ROLE-OPEN
+source-local ENACTMENT = NARROW
+= architecture PASS
 
 precedent:
 MULTI-COMPONENT
 P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
 P-INST / AUTHORITY = COMPONENT-ROLE-PASS
+= architecture PASS
 ~~~
 
 Strong carrier guards:
@@ -403,6 +435,10 @@ institution present != P-INST causal role
 component-role PASS
 !=
 architecture sufficiency automatically
+
+persistence process
+!=
+component causal role
 ~~~
 
 Adequacy owner:
@@ -581,12 +617,17 @@ Mainline comparison surfaces:
 Next:
 
 ~~~text
-use the matrix / ledger to test
-cross-domain compression,
-exclusion,
-position-sensitive consequence,
-generative expectation,
-and grammar revision.
+Role Library v0.1 = EARNED
+
+first negative / borderline application:
+CIV-005 beaver ecosystem engineering
+
+question:
+does SUBSTRATE / PAYLOAD / INTERFACE / AUTHORITY routing
+clarify exactly why current evidence still fails X4c
+and what evidence is missing?
+
+Do not promote CIV-005 by analogy.
 
 M4 remains available as periodic calibration
 when a genuinely uncertain prospective target exists.

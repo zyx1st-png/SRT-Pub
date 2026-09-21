@@ -603,8 +603,9 @@ carrier architecture:
 MULTI-COMPONENT
 
 P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
-P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
-P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+P-MAT / SUBSTRATE+INTERFACE = COMPONENT-ROLE-PASS
+P-INST proposed operational-coordination role = PRESENT / ROLE-OPEN
+source-local ENACTMENT = CASE-LOCAL / NARROW
 ~~~
 
 Source-native near-control:
@@ -712,7 +713,7 @@ P-MIXED AS PROVENANCE KIND = RETIRED
 Corrections produced:
 
 - CIV-006: modern regulation removed from inheritance carrier; retained under expectation provenance;
-- IPv4/IPv6: institutional maintenance role downgraded to PRESENT / ROLE-OPEN;
+- IPv4/IPv6: proposed institutional carrier role downgraded to PRESENT / ROLE-OPEN;
 - precedent: P-INST AUTHORITY role retained under direct near-control pressure.
 
 Next:
@@ -723,6 +724,57 @@ bounded role census
 -> test redundancy
 -> test control prediction
 -> create Role Library only if earned
+~~~
+
+## 5.11 Carrier Role Census Pass 1
+
+Owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Result:
+
+~~~text
+Role Library v0.1 = EARNED
+
+CORE:
+SUBSTRATE  = 3 paid records
+PAYLOAD    = 2 paid records
+INTERFACE  = 2 paid records
+
+SPECIALIZED:
+AUTHORITY  = 1 paid record + strong discriminating near-controls
+
+NOT ADMITTED:
+ENACTMENT  = CASE-LOCAL / NARROW
+REPRODUCTION = OPEN / NOT PAID
+
+RETYPED:
+MAINTENANCE
+-> architecture persistence process
+~~~
+
+Role Library owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+New persistence-process field:
+
+~~~text
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
+
+Next bounded pressure:
+
+~~~text
+apply Role Library to existing CIV-005 beaver record
+without new positive evidence
+-> specify why X4c still fails / remains gated
+-> specify exact missing evidence
 ~~~
 
 ## 6. Mainline work order
@@ -741,11 +793,13 @@ bounded role census
 11. provenance-kind-first model = NARROW;
 12. causal-role-first model = ACTIVE;
 13. historical P-MIXED provenance kind = RETIRED;
-14. next = bounded carrier-role census across existing X4c records;
-15. create Role Library only if roles recur and predict controls / failure conditions;
-16. require carrier-role + expectation provenance in new records;
-17. continue underdeveloped domain re-entry;
-18. use future M4 attempts selectively as calibration, not as the sole queue;
+14. bounded carrier-role census = COMPLETE;
+15. minimal Role Library v0.1 = EARNED;
+16. next = negative/borderline Role Library application to CIV-005 beaver record;
+17. no new positive evidence in that test; do not promote by analogy;
+18. require carrier-role + persistence-process + expectation provenance in new records;
+19. continue underdeveloped domain re-entry;
+20. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue

@@ -88,9 +88,10 @@ inheritance carrier architecture, if applicable =
 architecture cardinality = SINGLE-COMPONENT / MULTI-COMPONENT / n.a.
 carrier components =
 component provenance metadata = P-MAT / P-ECO / P-INST / P-INFO / other / n.a.
-component causal role(s) =
+component causal role(s) = use Role Library where applicable; source-local role only if needed
 role evidence / near-control =
 component status = COMPONENT-ROLE-PASS / PRESENT-ROLE-OPEN / NOT-ESTABLISHED / FAIL
+persistence process = PASSIVE-PERSISTENCE / ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION / MIXED / OPEN
 minimal role set sufficient for X4c =
 architecture sufficiency = PASS / OPEN / FAIL
 successor cohort / later participant, if applicable =
@@ -98,6 +99,18 @@ later process conditioned =
 claimed dependency direction =
 withdrawal / perturbation condition =
 failure condition =
+~~~
+
+Reusable X4c carrier-role owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+Guard:
+
+~~~text
+MAINTENANCE persistence process
+!=
+carrier component role
 ~~~
 
 ## F. GRG burden mapping

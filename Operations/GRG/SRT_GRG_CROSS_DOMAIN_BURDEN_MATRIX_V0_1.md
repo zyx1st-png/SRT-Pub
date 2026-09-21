@@ -47,7 +47,7 @@ It is not a canonical ontology table.
 | X4b M4-02 | road-capacity expansion | transport planning / economics | generalized travel-cost / accessibility field | semantic fit PASS | traffic growth alone != mediated induced feedback | lower generalized cost changes later travel demand and congestion | appraisal functional; policy recommendation separate | M4 NO / absorbed |
 | X4c | ecological inheritance | niche-construction / evolutionary ecology | P-ECO modified environmental carrier | source-native PASS pressure | persistence alone != inheritance | descendants / later organisms encounter a reconstructed field | no built-in moral direction | source-native owner / cross-domain anchor |
 | X4c / CIV-006 | legacy combined-sewer infrastructure | urban water engineering / infrastructure history / environmental regulation | P-MAT maintained material hydraulic field | M3 PASS | old / expensive / persistent infrastructure != inheritance automatically | successor urban cohorts must operate through, repair, bypass or replace inherited field | indexed infrastructure / water-quality expectation; policy verdict separate | M3 / M4 not tested |
-| X4c carrier stress | IPv4 -> IPv6 transition | IETF standards / Internet operations | MULTI-COMPONENT: P-INFO/PAYLOAD + P-MAT/SUBSTRATE+ENACTMENT+INTERFACE; P-INST proposed maintenance role OPEN | X4c PASS; architecture PASS | current interoperability / old protocol / specification alone != successor inheritance; institution present != paid carrier role | installed IPv4 field changes later IPv6 deployment choices; greenfield differs | E-TECH / E-ORG; moral normativity not opened | M3 retained; carrier roles narrowed |
+| X4c carrier stress | IPv4 -> IPv6 transition | IETF standards / Internet operations | MULTI-COMPONENT: P-INFO/PAYLOAD + P-MAT/SUBSTRATE+INTERFACE; P-INST proposed operational-coordination role OPEN; source-local ENACTMENT narrow | X4c PASS; architecture PASS | current interoperability / old protocol / specification alone != successor inheritance; institution present != paid carrier role | installed IPv4 field changes later IPv6 deployment choices; greenfield differs | E-TECH / E-ORG; moral normativity not opened | M3 retained; carrier roles narrowed |
 | X4c carrier stress / CIV-007 | binding vs persuasive precedent | jurisprudence / court hierarchy / stare decisis | MULTI-COMPONENT: P-INFO/PAYLOAD + P-INST/AUTHORITY | X4c PASS; architecture PASS | decision text / citation / current rule alone != inherited binding field | successor court inherits prior holding under authority relation; persuasive authority / first-impression cases provide near-controls | E-LEGAL + E-ORG; justice/legitimacy not inferred | M3 retained; carrier-role architecture revised |
 
 ## 2. What the matrix shows
@@ -98,9 +98,30 @@ Current stronger comparison axis:
 
 ~~~text
 component
--> causal role
+-> reusable / source-local causal role
 -> near-control / role evidence
+-> persistence process
 -> architecture sufficiency
+~~~
+
+Reusable Role Library v0.1:
+
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+~~~
+
+Census non-admissions:
+
+~~~text
+ENACTMENT = CASE-LOCAL / NARROW
+REPRODUCTION = OPEN / NOT PAID
+MAINTENANCE = persistence-process field, not component role
 ~~~
 
 IPv4/IPv6 stress test adds:
@@ -109,7 +130,9 @@ IPv4/IPv6 stress test adds:
 causal-role-first carrier analysis = ACTIVE
 
 IPv4/IPv6:
-P-INST proposed carrier role = PRESENT / ROLE-OPEN
+P-INFO / PAYLOAD = PASS
+P-MAT / SUBSTRATE+INTERFACE = PASS
+P-INST proposed coordination role = PRESENT / ROLE-OPEN
 
 precedent:
 P-INST / AUTHORITY = COMPONENT-ROLE-PASS
@@ -162,6 +185,14 @@ M4-02 = absorbed
 M4 = NONE
 M5 = NONE
 ~~~
+
+Role-census owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Role Library owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 ## 5. Framework use
 

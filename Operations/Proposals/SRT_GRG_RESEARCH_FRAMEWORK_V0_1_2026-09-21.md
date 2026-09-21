@@ -922,7 +922,14 @@ Completed:
 27. Carrier Architecture Adequacy Pass 1 = RETAIN / PRODUCTIVE;
 28. provenance-kind-first model = NARROW;
 29. causal-role-first model = ACTIVE;
-30. historical P-MIXED provenance kind = RETIRED.
+30. historical P-MIXED provenance kind = RETIRED;
+31. bounded Carrier Role Census Pass 1 = COMPLETE;
+32. minimal Role Library v0.1 = EARNED;
+33. CORE roles = SUBSTRATE / PAYLOAD / INTERFACE;
+34. AUTHORITY = SPECIALIZED reusable role;
+35. ENACTMENT = CASE-LOCAL / NARROW;
+36. REPRODUCTION = OPEN / NOT PAID;
+37. MAINTENANCE = RETYPED to architecture persistence process.
 
 Current mainline:
 
@@ -937,10 +944,13 @@ G. Carrier Architecture Adequacy Pass 1 = COMPLETE;
 H. use causal roles as the primary carrier comparison coordinate;
 I. keep provenance kinds only as secondary component metadata;
 J. historical P-MIXED provenance kind = RETIRED;
-K. run a bounded role census across existing X4c carrier records before creating any Role Library;
-L. create a Role Library only if roles recur and predict controls / failure conditions;
-M. continue domain re-entry for underdeveloped domains;
-N. use M4 prospectively when a genuinely uncertain target appears,
+K. bounded role census = COMPLETE;
+L. minimal Role Library v0.1 = EARNED;
+M. first Role Library test = CIV-005 beaver ecosystem-engineering borderline/negative record;
+N. use existing evidence only and ask exactly which carrier burden is missing;
+O. do not promote CIV-005 by analogy;
+P. continue domain re-entry for underdeveloped domains;
+Q. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -967,6 +977,8 @@ Comparison owners:
 - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 - Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
 - Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+- Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 ## 21. Canonical boundary
 
