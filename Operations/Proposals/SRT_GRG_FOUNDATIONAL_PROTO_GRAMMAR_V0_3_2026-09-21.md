@@ -713,12 +713,12 @@ Wholeward integration must show additional real dependency inclusion.
 
 It cannot gain authority by scale alone.
 
-## 16.1 Projected Generative Order for W-P — provisional
+## 16.1 Projected Generative Order for W-P
 
 Status:
 
 ~~~text
-M / AUTHOR DECISION PENDING
+AUTHOR-ADJUDICATED / A1
 ~~~
 
 GO1-GO5 define an admitted world-side Generative Order.
@@ -1022,16 +1022,15 @@ The following are explicit OPEN items:
 5. prospective-discrimination benchmark architecture beyond current M4 framing;
 6. formal Generative Order composition;
 7. how multiple admitted orders can be related without scalar aggregation;
-8. whether the projected-order / projected-E_G path should be author-adjudicated, narrowed or rejected;
-9. wholeward integration tests under irreducible conflict;
-10. formal E_G derivation from admitted order structure;
-11. exact local-locus admission / withdrawal tests;
-12. operative positionality admission beyond current examples;
-13. composition syntax and illegal-derivation semantics;
-14. whether any stable GTS family warrants a new reusable library;
-15. whether future GRG findings pressure canonical SRT owners;
-16. scientific distinctiveness;
-17. universal scope.
+8. wholeward integration tests under irreducible conflict;
+9. formal E_G derivation from admitted order structure;
+10. exact local-locus admission / withdrawal tests;
+11. operative positionality admission beyond current examples;
+12. composition syntax and illegal-derivation semantics;
+13. whether any stable GTS family warrants a new reusable library;
+14. whether future GRG findings pressure canonical SRT owners;
+15. scientific distinctiveness;
+16. universal scope.
 
 ## 27. Current mainline gate
 
@@ -1071,7 +1070,7 @@ P_G = CORE OUTPUT
 E_G = CORE OUTPUT
 
 Generative Order admission = REQUIRED
-projected-order path = M / AUTHOR DECISION PENDING
+projected-order path = AUTHOR-ADJUDICATED / A1
 multiple-order conflict = ALLOWED / INDEXED
 
 wholeward direction =
