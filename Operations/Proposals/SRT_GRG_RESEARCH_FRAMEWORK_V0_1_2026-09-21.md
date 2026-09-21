@@ -10,6 +10,9 @@ claim_mode: research_programme
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+  - Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
@@ -36,6 +39,40 @@ It is not:
 Its job is to make the author's GRG direction operational:
 
 > preserve source-native knowledge, extract candidate generative relations, compare them across domains without erasing mechanism, use evidence and failure to revise the grammar, and extend the same architecture to social and civilizational learning.
+
+## 0.1 Foundational re-prioritization — 2026-09-21
+
+The author has clarified that GRG must return one step upstream before further transfer escalation.
+
+Current root question:
+
+> What minimal generative architecture follows from reconstructed SRT before domain-derived relation inventories, burden matrices and transfer metrics are allowed to define GRG by accumulation?
+
+Current route:
+
+~~~text
+SRT -> GRG foundational bridge
+-> minimal GRG architecture
+-> G0-G11 retyping
+-> Relation Library retyping
+-> revised Domain / Civilization interfaces
+-> later grammar learning / transfer
+~~~
+
+Horizontal research is explicitly treated as objectification-stabilized research of transformations, laws and generative predictions among admitted objects. Vertical research makes the generation, stabilization and reconstruction of those objects / boundaries / state spaces the primary research target and seeks recurring generative relations across objectifications.
+
+Horizontal / vertical status is indexed to the research question and objectification, not permanently attached to an entity.
+
+The RNN decoder / spectral NULL is bounded to the tested L2-facing / objectified trace. It neither establishes absence of vertical causal efficacy nor licenses an unspecified hidden-vertical rescue.
+
+M4-01 and M4-02 remain completed absorbed transfer attempts. Further serial M4 hunting is subordinated to the foundational bridge.
+
+Foundational draft owners:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+- Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
+- Operations/Audits/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_INTERNAL_RED_TEAM_PASS1_2026-09-21.md
 
 ## 1. Framework identity
 
