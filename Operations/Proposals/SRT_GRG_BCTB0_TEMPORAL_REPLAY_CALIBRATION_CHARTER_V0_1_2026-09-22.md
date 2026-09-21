@@ -630,47 +630,76 @@ If no mapping is warranted, say so.
 
 Do not supply the later binding/persuasive contrast, informational-versus-authority distinction, or PAYLOAD / AUTHORITY role labels.
 
-## 9. Generator arms
+## 9. Generator arms, ablations and sampling symmetry
 
-All arms receive the same masked target capsule and semantically matched source information.
+All scored arms receive:
+
+- the same masked target capsule;
+- source content derived from the same mechanical manifest;
+- the same file order;
+- the same context-budget ceiling;
+- the same frozen A / X / F[/O] output template;
+- the same model family and exact model version;
+- the same reasoning / temperature / sampling settings where exposed;
+- no browsing, retrieval or target-specific tool use.
+
+Only the arm instruction and explicitly declared transformation may differ.
 
 Outputs must be generated in independent contexts and must not be shared before freeze.
 
 ### Arm G — GRG
 
-Receives the historical GRG source pack with its period-correct GRG vocabulary.
+Receives the historical source pack with its period-correct GRG vocabulary and structure.
 
 Task:
 
-- generate A / X / F / P;
+- generate A / X / F;
 - open O only when load-bearing;
 - preserve source-native mechanism differences;
 - state any proposed grammar revision pressure.
 
-### Arm A — structure mapping / analogy
+### Arm S — structured de-labelled ablation
 
-Receives a de-labelled representation of the same source cases.
+Receives the exact same source pack after a deterministic de-labelling transform.
 
-Task:
+The transform may only replace GRG-specific relation / field / status labels with neutral placeholders.
+
+It may not:
+
+- delete sentences or sections;
+- summarize;
+- reorder;
+- add causal interpretation;
+- add target-specific language.
+
+Its purpose is to separate vocabulary contribution from already-structured source content.
+
+### Arm A — structure-mapping / analogy baseline
+
+Receives the same deterministic de-labelled source pack as Arm S.
+
+Only the instruction differs:
 
 - identify candidate relational correspondences;
-- generate admission / exclusion / failure conditions where the method supports them;
-- do not use GRG relation names.
+- generate A / X / F for the strongest mapping where warranted;
+- do not use hidden GRG labels.
 
-### Arm C — causal transfer / invariance
+### Arm C — causal transfer / invariance baseline
 
-Receives semantically matched source causal summaries.
+Receives the same deterministic de-labelled source pack as Arm S.
 
-Task:
+No evaluator-written causal summary is allowed.
 
-- identify what mechanism or conditional relation might transfer;
-- specify invariance conditions;
-- specify nearest failure / non-transfer case;
-- separate shared causal burden from source-specific mechanism.
+Only the instruction differs:
+
+- identify a candidate transferable conditional / mechanism burden;
+- state invariance conditions;
+- state the nearest non-transfer / failure case;
+- preserve source-specific mechanism differences.
 
 ### Arm H — causal abstraction [conditional]
 
-Run only when changing unit / boundary / level is genuinely load-bearing.
+If changing unit / boundary / level is genuinely load-bearing, Arm H receives the same deterministic de-labelled source pack and an abstraction-specific instruction.
 
 Otherwise:
 
@@ -678,15 +707,69 @@ Otherwise:
 Arm H = N.A.
 ~~~
 
-No arm may browse or retrieve target-specific evidence during generation.
+### 9.1 Deterministic transform requirement
 
-## 10. Frozen generator output format
+The de-labelling transform must be reproducible from a recorded mapping table.
 
-Every arm must return exactly:
+Record:
+
+~~~text
+source manifest hash =
+transform version =
+replacement table =
+transformed-input hash =
+~~~
+
+If Arm S/A/C/H receive content additions, deletions or human summaries not present for Arm G:
+
+~~~text
+ARM INFORMATION-BUDGET SYMMETRY = FAIL
+FOLD = INVALID FOR BETWEEN-ARM RESIDUALITY
+~~~
+
+### 9.2 Model and sampling rule
+
+For every scored arm:
+
+~~~text
+same model family = REQUIRED
+same exact model version = REQUIRED
+same inference settings = REQUIRED
+same context budget = REQUIRED
+same output template = REQUIRED
+independent samples per arm k >= 3
+k must be odd
+~~~
+
+Preferred first calibration:
+
+~~~text
+k = 3
+~~~
+
+If explicit random seeds are supported, record different seeds under otherwise identical settings.
+
+If seeds are not exposed, use fresh isolated contexts and record that limitation.
+
+Single-sample arm comparisons are diagnostic only and cannot establish a GRG residual.
+
+### 9.3 Sample-level freezing
+
+Every sample is frozen separately before any target unblind or cross-arm output sharing.
+
+No sample may be regenerated because another arm performed better or worse.
+
+## 10. Frozen historical-generator output format
+
+Every historical generator sample must return exactly:
 
 ~~~text
 FOLD =
 HISTORICAL CUT =
+ARM =
+SAMPLE =
+MODEL VERSION =
+INFERENCE SETTINGS =
 MASKED TARGET MODE = YES / NO
 PRIOR TARGET FAMILIARITY = NONE CLAIMED / POSSIBLE / KNOWN / UNKNOWN
 TARGET IDENTITY INFERRED = NO / YES / OPEN
@@ -707,12 +790,6 @@ load-bearing condition =
 predicted failure / narrowing if removed =
 post-result revision operation if violated =
 
-P — PROVENANCE
-discovery-paying evidence =
-construction / causal-leverage evidence =
-claims the evidence may NOT independently pay =
-pseudoreplication / intervention-generated-evidence concern =
-
 O — OBJECTIFICATION [conditional]
 status = OPENED / NOT OPENED
 if opened:
@@ -727,16 +804,21 @@ NO-RESCUE ACKNOWLEDGEMENT =
 this packet is frozen before target unblind and will not be rewritten as a successful prediction after unblind.
 ~~~
 
-## 11. Unblind and evaluator procedure
+P_POST is intentionally absent because it is a current-method evaluator scaffold, not a historical generator burden.
 
-Only after all arms for a fold are frozen:
+## 11. Post-freeze provenance audit, unblind and evaluator procedure
 
-1. reveal the post-cut source-native target evidence;
-2. reconstruct the actual target mechanism / distinction from source-native owners;
-3. reconstruct the actual GRG revision, if any, that the target later caused;
-4. compare each frozen packet with the target evidence;
-5. preserve misses and over-generalizations;
-6. do not rewrite a frozen packet to match the result.
+Only after every sample from every scored arm is frozen:
+
+1. apply the current P_POST evidence-generative-provenance scaffold uniformly to the frozen packets and record it separately from historical transfer credit;
+2. reveal the post-cut source-native target evidence;
+3. reconstruct the actual target mechanism / distinction from source-native owners;
+4. reconstruct the actual GRG revision, if any, that the target later caused;
+5. compare each frozen packet with the target evidence;
+6. preserve misses and over-generalizations;
+7. do not rewrite a frozen packet to match the result.
+
+P_POST cannot raise C2-C6 or create a historical GRG residual.
 
 For each target-side constraint classify:
 
@@ -764,7 +846,7 @@ C3 exclusion adequacy
 C4 failure adequacy
 C5 target specificity
 C6 mechanism preservation
-C7 evidence-provenance discipline
+C7 current P_POST provenance-audit compliance [post-cut scaffold; no historical transfer credit]
 C8 over-generalization avoidance
 C9 revision localization
 C10 ad-hoc rescue count
@@ -808,6 +890,26 @@ If a particular later-scored constraint is merely implied by the capsule:
 constraint = CAPSULE-IMPLIED
 generator residual credit = NO
 ~~~
+
+### G0c — arm symmetry
+
+If scored arms do not use the same model/version/settings, same context budget and the declared source-content transform:
+
+~~~text
+between-arm residuality = INVALID
+~~~
+
+### G0d — identity compromise
+
+If the pre-run identity probe infers the target:
+
+~~~text
+blind integrity = COMPROMISED
+absolute historical-transfer credit = NO
+valid-core-fold count for §17 = NO
+~~~
+
+Between-arm comparison may continue only because every arm receives the same capsule and information budget.
 
 ### G1 — admission
 
@@ -861,7 +963,33 @@ GRG-RESIDUAL-CANDIDATE
 UNRESOLVED
 ~~~
 
-A GRG residual candidate requires that the strongest applicable blind baseline did not independently generate a materially equivalent constraint from the same information budget.
+Residuality is assessed across samples, not from one lucky completion.
+
+Let:
+
+~~~text
+k = odd samples per arm, k >= 3
+majority threshold m = floor(k/2) + 1
+~~~
+
+A candidate constraint is GRG-majority only if a materially equivalent constraint appears in at least m Arm-G samples.
+
+It is baseline-majority if it appears in at least m samples of any applicable baseline / ablation arm.
+
+Classify:
+
+~~~text
+GRG-majority + any baseline-majority
+= BASELINE-SHARED
+
+GRG-majority + no baseline-majority
+= GRG-RESIDUAL-CANDIDATE
+
+not GRG-majority
+= NO STABLE GRG CANDIDATE
+~~~
+
+A GRG residual candidate therefore requires repeated Arm-G generation and absence of majority reproduction by every strongest applicable arm under the same information budget.
 
 Even then:
 
@@ -892,6 +1020,26 @@ PASS / PARTIAL / FAIL / N.A.
 ~~~
 
 Do not collapse them into one numeric score.
+
+Interpret blind integrity as:
+
+~~~text
+PASS =
+temporal integrity PASS
++ input-audit PASS
++ identity probe NOT INFERRED
++ arm symmetry PASS
+
+COMPROMISED =
+target identity inferred or comparable non-answer leakage remains,
+but temporal integrity is intact and between-arm comparison remains symmetric
+
+INVALID =
+target-result leakage, answer-supplying capsule, broken temporal cut,
+or asymmetric input budget that invalidates the claimed comparison
+~~~
+
+Only PASS folds count as "valid core folds" in §17.
 
 ## 16. Sequential execution order and STOP rules
 
@@ -957,9 +1105,9 @@ Minimum pressure before even selecting a prospective target:
 2. T1 sanity check does not fail;
 3. T2 demonstrates nontrivial mechanism-change transfer without semantic flattening;
 4. at least one of T3/T4 earns constraint-transfer PASS with a meaningful exclusion and failure condition;
-5. no systematic evidence-provenance failure;
+5. no systematic failure under the current P_POST provenance audit, while remembering P_POST earns no historical transfer credit;
 6. no systematic positive-only over-generalization;
-7. at least one hard-fold GRG-RESIDUAL-CANDIDATE survives blind baseline comparison.
+7. at least one hard-fold GRG-RESIDUAL-CANDIDATE survives the k-sample majority rule against Arm S and all applicable mature-method baseline arms.
 
 If these are not paid:
 
@@ -984,29 +1132,80 @@ Therefore:
 ~~~text
 charter-design session
 = EVALUATOR / ARCHITECTURE ROLE ONLY
+= NOT ELIGIBLE AS MANIFEST BUILDER
+= NOT ELIGIBLE AS CAPSULE DRAFTER
+= NOT ELIGIBLE AS INPUT AUDITOR
 = NOT ELIGIBLE AS BLIND GENERATOR
 ~~~
 
-A blind generator must run in a fresh isolated context using only:
+Required separated roles:
 
-- exact fold cut;
-- bounded source-pack manifest;
-- one masked capsule;
-- the frozen output template.
+### R1 — manifest builder
 
-This is an evidence-generative provenance requirement, not a cosmetic prompt preference.
+Receives only historical cut + fixed mechanical rules in §7.1.
+
+No target name or later result.
+
+### R2 — capsule drafter
+
+Receives only the minimal authorized target-system facts for the selected fold.
+
+Does not see the calibration question, later result or later grammar revision.
+
+### R3 — input auditor
+
+Fresh context.
+
+Checks capsule leakage, temporal integrity, transform reproducibility and arm information-budget symmetry before execution.
+
+Does not see post-cut target result or later grammar revision.
+
+### R4 — blind generators
+
+Fresh isolated contexts for every arm/sample.
+
+Receive only:
+
+- prepared manifest-derived input;
+- one audited masked capsule;
+- arm instruction;
+- frozen output template.
+
+### R5 — evaluator
+
+May know the target and later result.
+
+Acts only after all generator samples are frozen, except for maintaining the sealed scoring key and arranging role handoffs.
+
+This separation is an evidence-generative provenance requirement, not a cosmetic prompt preference.
 
 ## 19. First execution gate
 
-Next bounded action:
+T1 is blocked until a separate pre-execution audit confirms:
 
 ~~~text
-prepare T1 source-pack manifest at
+mechanical T1 manifest = PASS
+neutral T1 capsule leakage audit = PASS
+identity-probe procedure = READY
+de-labelling transform reproducibility = PASS
+arm information-budget symmetry = PASS
+same-model / k-sample execution plan = FROZEN
+P_POST separated from historical generator credit = PASS
+~~~
+
+Only then:
+
+~~~text
+T1 cut =
 9900f425369b8840eac9220e567a60b811c52b27
 
-prepare masked T1 capsule
--> fresh isolated generator arms
--> freeze outputs
+-> R1 manifest build
+-> R2 capsule draft
+-> R3 input audit
+-> capsule-only identity probe
+-> if not INVALID, execute same-model k>=3 samples for G/S/A/C/[H]
+-> freeze every sample
+-> apply P_POST separately
 -> evaluator unblind
 -> T1 result audit
 ~~~
@@ -1017,15 +1216,23 @@ Do not open BCTB-1.
 
 Do not open a new prospective relation family.
 
-## 20. Compact freeze
+## 20. Compact pre-execution state
 
 ~~~text
-BCTB-0 architecture = FROZEN FOR CALIBRATION
+BCTB-0 architecture = DRAFT / PRE-EXECUTION HARDENING
 method = forward-chaining temporal replay
 core folds = T1 Kubernetes / T2 Performative Prediction / T3 IPv4-IPv6 / T4 precedent
+coverage = Route-A / X4b cross-mechanism / Route-B calibration; Route C NOT CALIBRATED
 auxiliary fold = CIV-006
-primary packet = A / X / F / P + conditional O
-masked-target mode = preferred for core scoring
+historical generator packet = A / X / F + conditional O
+P_POST = current-method evaluator scaffold / NO historical transfer credit
+masked-target mode = REQUIRED for scored run where feasible
+identity probe = REQUIRED
+mechanical source manifest = REQUIRED
+independent input auditor = REQUIRED
+Arm S structured de-labelled ablation = REQUIRED
+same model/version/settings = REQUIRED
+odd k >= 3 samples per scored arm = REQUIRED
 future-information leakage = INVALID
 post-unblind semantic rescue = FORBIDDEN
 scalar score = NO
@@ -1034,5 +1241,5 @@ M4 = NONE
 M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
 canonical edit = NO
-next = prepare T1 manifest; execute only in a fresh isolated generator context
+next = independent pre-execution audit; T1 remains BLOCKED until PASS
 ~~~
