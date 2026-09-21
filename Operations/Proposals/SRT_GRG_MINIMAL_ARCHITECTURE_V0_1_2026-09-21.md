@@ -85,6 +85,8 @@ V -> H -> V'
 
 rather than treat the two as rival or isolated explanatory worlds.
 
+Horizontal / vertical status is indexed to the research question and objectification. It is not an intrinsic, permanent property of an entity.
+
 ## 3. Layer C — source-native / objectification interface
 
 Every GRG candidate must enter through a source-native account.
@@ -273,6 +275,15 @@ observable / intervention
 
 This is the correction required by the RNN case.
 
+The reverse shortcut is also forbidden:
+
+~~~text
+proxy / section fails
+-> unspecified deeper vertical cause is thereby established
+~~~
+
+A vertical empirical claim must pay its own realization and evidence bridge.
+
 ## 10. RNN placement
 
 Current RNN work is retained as:
@@ -344,6 +355,21 @@ Expectation must remain distinct from:
 - moral goodness;
 - persistence;
 - explicit representation.
+
+The architecture should also distinguish:
+
+~~~text
+horizontal generative prediction
+= expected future state / transformation
+  within a stabilized objectification
+
+vertical generative expectation
+= expected formation / reconstruction / alteration
+  of generative conditions, reachable relations,
+  or object / option fields
+~~~
+
+This is a research distinction, not a claim that every vertical expectation is empirically stronger than a horizontal prediction.
 
 ## 13. Normativity interface
 
