@@ -525,7 +525,59 @@ Question:
 
 No new source hunt is authorized by this gate.
 
-## 14. Canonical boundary
+## 14. Local closure
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+
+Verdict:
+
+~~~text
+X4c CARRIER SUBPROGRAMME = LOCAL CLOSE
+~~~
+
+Current vocabulary is frozen for present evidence:
+
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+
+pre-admission:
+ROLE-CANDIDATE / PRE-ADMISSION
+
+persistence process:
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
+
+Default:
+
+~~~text
+new carrier role hunt = STOP
+new provenance category hunt = STOP
+new carrier case accumulation = STOP
+~~~
+
+Reopen only for:
+
+- internal contradiction;
+- source-native role pressure not representable by current vocabulary;
+- evidence that a current role collapses into another;
+- systematic carrier / expectation conflation;
+- material X4c relation revision.
+
+Absent one of these, keep this library stable and return attention to broader GRG.
+
+## 15. Canonical boundary
 
 ~~~text
 canonical edit = NO
