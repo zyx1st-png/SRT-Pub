@@ -644,7 +644,13 @@ G29 CIV-005 Role Library negative productivity Pass 1
 G30 ROLE-CANDIDATE / PRE-ADMISSION guard
 G31 positive-record admission-order consistency audit = COMPLETE / PASS
 G32 X4c carrier-subprogramme local-closure audit = COMPLETE / CLOSE
-G33 broader-GRG next-burden selection = NEXT
+G33 broader-GRG next-burden selection = COMPLETE
+G34 Generative Expectation adequacy charter v0.1 = FROZEN
+G35 Generative Expectation adequacy Pass 1 = SPLIT / PRODUCTIVE
+G36 E-MODEL provenance = RETIRED; OBS-MODEL / C1-MODEL separated
+G37 E-MIXED provenance = RETIRED; explicit source-layer lists required
+G38 Generative Expectation negative productivity = PASS
+G39 expectation-schema consistency census / live migration = ACTIVE
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -753,8 +759,28 @@ FROZEN FOR CURRENT EVIDENCE
 new carrier/provenance hunt =
 STOP BY DEFAULT
 
+Generative Expectation adequacy =
+ACTIVE MAINLINE
+
+live source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
+
+live locus/mode =
+B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL
+
+historical E-MODEL provenance =
+RETIRED
+
+historical E-MIXED provenance =
+RETIRED
+
+negative productivity =
+PASS
+[RNN prediction/classification != B;
+ precedent binding != moral legitimacy]
+
 CIV-006 correction =
-modern regulation is E-LEGAL/E-ORG expectation,
+modern regulation is S-LEGAL/S-ORG expectation source,
 not a secondary inheritance carrier
 
 M4 = NOT TESTED
@@ -821,7 +847,13 @@ Framework revision:
 - X4c carrier-subprogramme local closure = CLOSE;
 - carrier vocabulary is frozen for current evidence;
 - default carrier-case / provenance-category accumulation is stopped;
-- next = choose a broader underconstrained central GRG burden from existing framework surfaces.
+- broader next-burden selection chose Generative Expectation provenance/locus/normative-comparison adequacy;
+- expectation source/provenance is separated from anticipation locus/mode;
+- OBS-MODEL is separated from C1-MODEL;
+- E-MODEL and E-MIXED are retired as live expectation-provenance tags;
+- indexed G-stronger/G-weaker requires explicit evaluative index;
+- negative productivity PASS: RNN observer prediction does not pay B; precedent binding does not pay moral legitimacy;
+- current next = complete live expectation-schema migration and stale-token consistency pass.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
