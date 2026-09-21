@@ -915,7 +915,11 @@ Completed:
 20. expectation-provenance typing added to ledger / templates;
 21. IPv4 -> IPv6 installed-base X4c stress test;
 22. P-INFO-alone NOT ESTABLISHED; P-MIXED carrier decomposition required;
-23. greenfield-vs-installed-base added as reusable X4c near-control.
+23. greenfield-vs-installed-base added as reusable X4c near-control;
+24. CIV-007 precedent / stare-decisis institutional carrier stress;
+25. P-INST causal component role isolated through binding-vs-persuasive authority;
+26. standalone P-INST remains OPEN;
+27. Inheritance Carrier Architecture v0.1: provenance component + causal role + role evidence/near-control + sufficiency status.
 
 Current mainline:
 
@@ -926,10 +930,12 @@ C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
 D. CIV-006 long-duration infrastructure pressure = COMPLETE;
 E. IPv4/IPv6 technical-informational carrier stress = COMPLETE;
 F. standalone P-INFO remains OPEN; do not treat symbolic description as sufficient;
-G. next test P-INST institutional inheritance or a genuinely standalone P-INFO carrier;
-H. require decomposed P-MIXED + inheritance provenance + expectation provenance in new records;
-I. continue domain re-entry for underdeveloped domains;
-J. use M4 prospectively when a genuinely uncertain target appears,
+G. precedent P-INST stress = COMPLETE;
+H. stop treating provenance kinds as mutually exclusive carrier classes by default;
+I. use Inheritance Carrier Architecture v0.1 for future X4c records;
+J. test whether component-role decomposition improves exclusion / near-control selection across existing cases before opening another provenance hunt;
+K. continue domain re-entry for underdeveloped domains;
+L. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -953,6 +959,8 @@ Comparison owners:
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 - Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 - Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+- Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+- Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 
