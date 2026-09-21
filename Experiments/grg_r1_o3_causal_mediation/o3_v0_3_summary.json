@@ -1,0 +1,20 @@
+{
+  "verdict": "O3-CAUSAL-NULL",
+  "valid_recipients": 12,
+  "median_C_SD": -0.0027449948713183236,
+  "median_C_SI": 0.010806232504546653,
+  "mean_C_SD": -0.00654208702035249,
+  "mean_C_SI": 0.014747703665246562,
+  "bootstrap95_mean_C_SD": [-0.038720005392484984, 0.01661153802221331],
+  "bootstrap95_mean_C_SI": [-0.017672290511739738, 0.05108590151028085],
+  "mean_gain_auc_S": 0.45765437722826996,
+  "mean_gain_auc_D": 0.4641964642486225,
+  "mean_gain_auc_I": 0.44290667356302343,
+  "mean_update0_S": 0.5145333309968313,
+  "mean_update0_D": 0.5091999943057696,
+  "mean_update0_I": 0.5161999935905138,
+  "max_singular_displacement_mismatch": 1.7763568394002505e-15,
+  "max_frobenius_displacement_mismatch": 9.5367431640625e-07,
+  "target_data_used": false,
+  "protocol_version": "v0.3"
+}
