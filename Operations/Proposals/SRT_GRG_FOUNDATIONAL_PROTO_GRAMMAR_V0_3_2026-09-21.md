@@ -141,6 +141,16 @@ ORDER-ADMISSION
 GRAMMAR-VALIDATION
 ~~~
 
+GRAMMAR-VALIDATION may be STRUCTURAL or PROSPECTIVE:
+
+~~~text
+STRUCTURAL
+= independently grounded recurrence / XG1-XG4 / M3-side burden
+
+PROSPECTIVE
+= frozen held-out discrimination / XG5 + M4-E0 / M4-side burden
+~~~
+
 These are audit roles, not ontology classes and not M-statuses.
 
 Core guards:
