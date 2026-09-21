@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-PROGRAMME-NEXT-SESSION-HANDOFF-20260920
 type: handoff
-status: active
+status: archived
 date: 2026-09-20
 layer: meta
 epistemic_layer: os
@@ -18,6 +18,8 @@ tags: [Handoff, GRG, NextSession, RedTeam, NeighborExtraction, Normativity]
 ---
 
 # Handoff — GRG programme after post-#976 author convergence
+
+> Historical handoff. Superseded for current routing by `Operations/Handoffs/SRT_GRG_V0_3_AUTHOR_CLOSURE_HANDOFF_2026-09-21.md`.
 
 ## 0. Repository baseline
 

@@ -20,13 +20,17 @@ tags: [GRG, RelationLibrary, BurdenLibrary, Admission, NegativeControls, Revisio
 
 ## 0. Role
 
-This is the live programme owner for extracted GRG relation candidates.
+This is the active legacy registry for extracted GRG relation candidates, maturity, negative controls and revision history.
+
+Under the process-first v0.3 foundation it is not the primary grammar skeleton or primary new-record schema.
+
+New bounded work routes through `Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`.
 
 It is not a canonical ontology owner.
 
 It tracks admission burdens, non-identities, evidence state, negative controls, cross-domain maturity, revision history and next gates.
 
-The provisional G0–G11 programme burdens remain upstream research slots in:
+The provisional G0–G11 programme burdens remain historical / upstream research provenance in:
 
 Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
 
@@ -106,6 +110,23 @@ Evidence state:
 - RNN spectral candidate: R1a PASS, R1c NULL in two O3 executions;
 - Bowler: source-native positive R1b/R1c pressure;
 - HKB: R1b/R1c candidate, raw reanalysis pending.
+
+RNN author-aligned trace guard:
+
+~~~text
+selected RNN trace
+= objectified measurement slice of an L2 / history aspect
+
+trace != full L2 / history generative organization
+
+trace-bounded R1c NULL
+!= vertical generative efficacy NULL
+
+proxy failure
+!= proof of an unspecified deeper vertical cause
+~~~
+
+The RNN spectral family remains STOP; this guard narrows interpretation, not the adverse result.
 
 Universal law status:
 

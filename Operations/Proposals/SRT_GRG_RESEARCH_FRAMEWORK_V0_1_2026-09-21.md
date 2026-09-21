@@ -37,6 +37,28 @@ Its job is to make the author's GRG direction operational:
 
 > preserve source-native knowledge, extract candidate generative relations, compare them across domains without erasing mechanism, use evidence and failure to revise the grammar, and extend the same architecture to social and civilizational learning.
 
+## 0.1 Process-first routing amendment — 2026-09-21
+
+The current foundational owner is:
+
+`Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md`
+
+The primary schema for new GRG records is:
+
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Current correction:
+
+~~~text
+relation catalogue first = NO
+Generative Transformation Signature first = YES
+
+Relation Library = legacy candidate / burden / maturity / negative-control registry
+!= ontological skeleton
+~~~
+
+The older Relation Record template remains only for existing record provenance.
+
 ## 1. Framework identity
 
 Working definition:
@@ -134,31 +156,33 @@ GRG does not replace domain frameworks.
 
 It compares what their independently preserved relations pay.
 
-## 4. Core data object: the GRG Relation Record
+## 4. Core data object: Generative Transformation Signature
 
-The minimum comparison unit is not a word or analogy.
+The primary new comparison unit is a bounded generative transformation, not a word, analogy or relation label.
 
-A GRG relation record must declare:
+A GTS must declare at least:
 
 ~~~text
-source-native phenomenon / claim
-participants / components
-position / scale / grain
-formation process
-retained or maintained organization
-later process being conditioned
-causal / inferential direction claimed
-evidence type
-objectification choices
-generative expectation
-failure condition
-cross-domain mapping status
+research question / objectification
+strong horizontal baseline
+what is treated as given / reopened
+input generative conditions
+bounded transformation
+output generative conditions
+history-input / reconstruction-output views
+locus / positionality views where paid
+P_G Generative Prediction
+Generative Order admission
+E_G Generative Expectation
+cross-objectification gain / failure
 revision status
 ~~~
 
-Template owner:
+Primary template owner:
 
-`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Legacy Relation Records remain readable as historical extraction records and may be migrated into GTS views without deleting provenance.
 
 ## 5. Source-native layer
 

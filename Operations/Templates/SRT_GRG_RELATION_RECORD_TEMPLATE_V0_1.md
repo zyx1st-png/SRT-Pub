@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-RELATION-RECORD-TEMPLATE-V0-1
 type: template
-status: active
+status: archived
 version: v0.1
 date: 2026-09-21
 layer: meta
@@ -17,7 +17,11 @@ tags: [GRG, Template, RelationRecord, CrossDomain, Evidence, Objectification]
 
 # Template — GRG Relation Record v0.1
 
-Use one record for one source-native candidate relation.
+> Legacy schema retained for existing relation-record provenance. New process-first GRG records use `Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`.
+>
+> Do not use this file as the primary schema for new foundational work.
+
+Use one record for one source-native candidate relation when maintaining a legacy record.
 
 Do not start from an SRT label and search for a matching example.
 

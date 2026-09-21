@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG FRAMEWORK CONSTRUCTION / NONCANONICAL / RELATION LIBRARY + DOMAIN-CIVILIZATION ATLAS + CIVILIZATIONAL LEARNING MAINLINE / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / SELECTED RELATION-LIBRARY -> GTS RECONCILIATION NEXT / PROSPECTIVE CROSS-OBJECTIFICATION CHARTER AFTER RECONCILIATION / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -64,7 +64,16 @@ Civilizational Learning Architecture:
 Domain + Civilization Atlas seed:
 `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
 
-GRG Relation Record template:
+Current GRG foundational owner:
+`Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md`
+
+Current author adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md`
+
+Primary new-record schema — GTS v0.2:
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
 Generative-expectation second adjudication:
@@ -103,8 +112,55 @@ Existing-data access request package:
 Public access-route verification:
 `Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`
 
-Continuation handoff:
+Current continuation handoff:
+`Operations/Handoffs/SRT_GRG_V0_3_AUTHOR_CLOSURE_HANDOFF_2026-09-21.md`
+
+Historical programme handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
+
+Current post-#1022 mainline gate:
+
+```text
+objects = cuts
+relations = cuts
+GTS = primary bounded research unit
+
+GRG scientific-gain target =
+cross-objectification generative invariance
++ retained admission / exclusion / failure constraints
++ prospective discrimination
+
+P_G = Generative Prediction
+E_G = Generative Expectation relative to admitted Generative Order
+projected E_G = author-adjudicated W-P pre-realization expectation relative to Projected Generative Order
+
+Generative Order admission =
+GO1 formation / operation
+GO2 structural articulation
+GO3 generative efficacy
+GO4 scope indexing
+GO5 failure / dissolution
+
+wholeward direction =
+W-E epistemic learning
++ W-P practical / constructive generation
+
+Projected Generative Order = AUTHOR-ADJUDICATED / A1
+!= admitted Generative Order until later GO1 + GO3 are paid
+
+X4c carrier subprogramme =
+LOCAL CLOSE
+
+v0.3 independent content review = COMPLETE
+projected-order author decision = COMPLETE / A1
+
+next =
+selected Relation Library to GTS reconciliation
+-> freeze one prospective cross-objectification discrimination charter
+-> bounded execution only after reconciliation + charter freeze
+
+canonical edit = NO
+```
 
 Current programme reading:
 
@@ -120,7 +176,7 @@ full moral ought / universal value weights = OPEN;
 canonical edit from this programme = NO.
 ```
 
-Next sequence:
+Historical / calibration sequence retained below; this is NOT the current broader-GRG next gate:
 
 ```text
 Phase C internal red-team Pass 1 = COMPLETE:
@@ -766,15 +822,15 @@ Bearer admission threshold + Bearer <-> position stability
 > **2026-09-21 GRG framework turn:** the programme mainline is now framework construction across domains and civilization. RNN/HKB remain calibration workstreams. No single pending dataset blocks the framework mainline. Canonical owners remain closed by default.
 
 ~~~text
-1. GRG mainline = framework construction, relation library, domain/civilization atlas, generative-expectation/normativity architecture;
+1. GRG mainline = v0.3 process-first framework construction, GTS-first records, domain/civilization atlas, P_G/E_G and wholeward-learning architecture;
 2. existing Domain Reconstruction Framework remains the source-native entry surface for mature disciplines;
 3. GRG compares independently grounded generative burdens rather than replacing domain mechanisms;
-4. Relation Record template = active schema for source-native claim -> evidence -> objectification -> GRG burden -> expectation -> failure -> transfer;
+4. GTS v0.2 = primary active schema for new process-first records; Relation Record v0.1 = archived legacy schema for existing provenance;
 5. Civilizational Learning Architecture = active research layer for science, technology, institutions, markets, law, culture and historical experience;
 6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
 7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
 8. first backfill records = RR-001 RNN adverse calibration, RR-002 HKB candidate, RR-003 Bowler source-native scaffold;
-9. RNN spectral family = R1a PASS / R1c NULL / STOP; no tuning and no O4;
+9. RNN spectral family = R1a PASS / R1c NULL / STOP; selected spectral/decoder trace = objectified measurement slice of an L2/history aspect; trace-bounded R1c NULL != vertical-efficacy NULL; proxy failure != deeper-cause proof; no tuning and no O4;
 10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
@@ -785,7 +841,7 @@ Bearer admission threshold + Bearer <-> position stability
 17. X4 split = X4a reconstructed condition / X4b recursive feedback / X4c inherited reconstructed condition; long-term effect != feedback/inheritance;
 18. CIV-004 Nepal irrigation = X3b positive source pressure; CIV-005 beaver ecosystem engineering = X4a positive but X4b not automatically paid;
 19. historical mature-source checkpoint: X3a/X3b/X4a/X4b were M2 and X4c M1/M2 before later transfer / infrastructure passes; live M-status is superseded below;
-20. live Relation Library owner = ESTABLISHED at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md;
+20. Relation Library = ESTABLISHED legacy candidate/maturity/negative-control registry at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md; not the v0.3 grammar skeleton;
 21. negative-control discipline = PAID: formal-decoupling rejects X3b automatic admission; ecosystem-engineering-only evidence rejects X4b automatic admission;
 22. M3/M4 distinction = EXPLICIT: M3 independent source-native relation match != M4 prospective transfer gain != scientific distinctiveness;
 23. X3b -> Kubernetes NetworkPolicy = semantic/source match PASS; X3b promoted to M3; target-domain distinction already explicit, so M4 = NO / ABSORBED;
