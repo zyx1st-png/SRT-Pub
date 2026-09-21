@@ -398,13 +398,20 @@ freeze target/design
    STOP before duplicate execution.
 ~~~
 
-Next programme gate:
+Foundational re-prioritization — author adjudication 2026-09-21:
 
 ~~~text
-M4-02 prospectively frozen attempt
+programme mainline
+= SRT -> GRG foundational bridge
+-> minimal GRG architecture
+-> G0-G11 retyping
+-> Relation Library retyping
+
+M4-02
+= HOLD AS MAINLINE
 ~~~
 
-Requirements remain:
+The M4 discipline remains valid for later use:
 
 1. use a different relation or substantially different target domain;
 2. freeze relation + target domain + design before decisive target-source/outcome inspection;
