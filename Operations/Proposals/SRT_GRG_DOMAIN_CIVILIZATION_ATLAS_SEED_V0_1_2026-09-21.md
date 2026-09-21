@@ -583,6 +583,47 @@ E-MAT / E-TECH / E-LEGAL / E-ORG /
 E-NORM / E-BIO / E-MODEL / E-MIXED.
 ~~~
 
+## 5.8 X4c informational-carrier stress — IPv4 / IPv6 installed base
+
+Frozen before dedicated target-source inspection:
+
+Operations/Proposals/SRT_GRG_X4C_INFO_IPV4_IPV6_INHERITANCE_FREEZE_2026-09-21.md
+
+Result:
+
+~~~text
+X4c = PASS / remains M3
+
+P-INFO alone = NOT ESTABLISHED
+
+best carrier typing:
+P-MIXED[
+  P-INFO protocol/address semantics,
+  P-MAT/TECH installed hosts/routers/infrastructure,
+  P-INST standards/operational practice
+]
+~~~
+
+Source-native near-control:
+
+~~~text
+greenfield network
+vs
+network with existing IPv4 devices / users
+~~~
+
+This preserves:
+
+~~~text
+X3b current operative compatibility
+!=
+X4c inherited installed-base conditioning
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+
 ## 6. Mainline work order
 
 ~~~text
@@ -592,10 +633,12 @@ E-NORM / E-BIO / E-MODEL / E-MIXED.
 4. add rows only from source-native records with admission / evidence status;
 5. seek grammar revision or exclusion, not case count;
 6. first long-duration historical / infrastructure case = COMPLETE through CIV-006;
-7. next pressure test = institutional or informational inheritance under carrier-explicit X4c;
-8. require inheritance + expectation provenance in new records;
-9. continue underdeveloped domain re-entry;
-10. use future M4 attempts selectively as calibration, not as the sole queue;
+7. IPv4/IPv6 installed-base carrier stress = COMPLETE;
+8. P-INFO standalone remains OPEN; P-MIXED must list components;
+9. next pressure test = P-INST institutional inheritance or genuinely standalone P-INFO;
+10. require inheritance + expectation provenance in new records;
+11. continue underdeveloped domain re-entry;
+12. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue

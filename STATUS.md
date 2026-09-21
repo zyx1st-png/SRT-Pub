@@ -808,16 +808,21 @@ Bearer admission threshold + Bearer <-> position stability
 40. X4c inherited reconstructed condition = M3 PASS; ecological P-ECO + infrastructure P-MAT cross-domain semantic invariance;
 41. X4c carrier-explicit admission = ACTIVE: inheritance requires carrier + successor cohort + changed later possibility structure; persistence/age/sunk cost alone do not pay it;
 42. inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED; provenance != relation identity;
-43. expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED;
-44. CIV-006 expectation split = material structural compatibility burden != modern legal water-quality obligation != moral legitimacy;
-45. CIV-006 PH = horizon divergence EVIDENCED; position sensitivity EVIDENCED; fine-grained distributive conflict OPEN;
-46. next framework work = pressure an institutional or informational inheritance candidate against the new carrier-explicit X4c rule; seek falsification/narrowing rather than more material cases;
-47. periodic M4 only when target ownership is genuinely uncertain;
-48. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-49. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-50. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-51. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-52. do not restart winner-style strongest-neighbor novelty audit;
+43. IPv4 -> IPv6 installed-base stress = COMPLETE; freeze preceded dedicated IETF/RFC inspection;
+44. IPv4/IPv6 X4c mapping = PASS / remains M3; successor transition options are conditioned by inherited IPv4 installed field;
+45. P-INFO alone = NOT ESTABLISHED; source-native carrier is P-MIXED across protocol/address semantics + deployed hosts/routers/infrastructure + standards/operational practice;
+46. P-MIXED must list components; it is not a catch-all;
+47. reusable X4c near-control = greenfield environment vs existing installed-base environment;
+48. X3b current operative interoperability != X4c inherited-field conditioning;
+49. expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED;
+50. inheritance provenance and expectation provenance are separate taxonomies and must not be collapsed;
+51. next framework work = test P-INST institutional inheritance or a genuinely standalone P-INFO carrier; if P-INFO repeatedly collapses into P-MIXED, narrow/retire standalone P-INFO;
+52. periodic M4 only when target ownership is genuinely uncertain;
+53. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+54. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+55. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+56. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+57. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

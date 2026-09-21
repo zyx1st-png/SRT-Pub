@@ -516,15 +516,49 @@ Owner:
 
 Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
 
+IPV4 / IPV6 CARRIER-PROVENANCE STRESS = COMPLETE:
+
+~~~text
+freeze before dedicated IETF/RFC inspection = PASS
+
+X4c installed-base topology:
+prior IPv4 deployment
+-> inherited compatibility / routing / application field
+-> successor IPv6 cohort
+-> later transition / interoperability choices are conditioned
+
+X4c = PASS / remains M3
+
+P-INFO alone = NOT ESTABLISHED
+
+best provenance =
+P-MIXED[
+  P-INFO protocol/address semantics,
+  P-MAT/TECH hosts/routers/infrastructure,
+  P-INST standards/operational practice
+]
+
+greenfield vs existing-installed-base
+= source-native X4c near-control
+
+X3b current operative compatibility
+!=
+X4c inherited-field conditioning
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. do NOT add another material-infrastructure X4c case by default;
-2. choose one institutional or informational inheritance candidate;
+1. do NOT add another technical installed-base case by default;
+2. test P-INST institutional inheritance OR a genuinely standalone P-INFO carrier;
 3. freeze source-neutral topology before decisive source inspection;
 4. require carrier + successor cohort + changed later possibility structure;
-5. test whether P-INST or P-INFO survives X4c without semantic stretching;
-6. if it fails, narrow X4c instead of forcing unification;
+5. for P-MIXED, list all carrier components;
+6. if standalone P-INFO repeatedly collapses into P-MIXED, narrow or retire it;
 7. preserve expectation provenance and PH separately;
 8. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
@@ -629,67 +663,76 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
-2) Operations/GRG/Cases/SRT_GRG_CIV_006_COMBINED_SEWER_LEGACY_2026-09-21.md
-3) Materials/2026/SRC_2026_09_21_Combined_Sewer_Legacy_Infrastructure.md
-4) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-5) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-6) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
-7) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+1) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+2) Materials/2026/SRC_2026_09_21_IPv4_IPv6_Installed_Base_Inheritance.md
+3) Operations/Proposals/SRT_GRG_X4C_INFO_IPV4_IPV6_INHERITANCE_FREEZE_2026-09-21.md
+4) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+6) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+7) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
 ~~~text
-GRG Relation Library = ACTIVE
-
 X3b = M3
 X4b = M3
 X4c = M3
 
-X4c carrier-explicit admission:
+X4c admission:
 reconstructed F
-+ inheritance carrier C
-+ successor cohort enters under F without original choice
-+ F changes later action/accessibility/maintenance/transition possibilities
++ carrier C
++ successor cohort
++ changed later possibility structure
 
 inheritance provenance:
-P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+P-ECO PASS
+P-MAT PASS
+P-MIXED PASS as decomposed carrier
+P-INFO standalone = OPEN / NOT ESTABLISHED
+P-INST = UNTESTED
 
-CIV-006:
-combined-sewer legacy
-P-MAT material inheritance = PASS
-X4c M3 = PASS
+IPv4 -> IPv6:
+X4c = PASS
+P-INFO-alone = NO
+P-MIXED = YES
 
-Expectation provenance:
+P-MIXED rule:
+must list components;
+cannot act as generic fallback.
+
+greenfield vs installed-base
+= reusable X4c near-control
+
+X3b current operative expectation
+!=
+X4c successor inherited-field conditioning
+
+Expectation provenance remains separate:
 E-MAT / E-TECH / E-LEGAL / E-ORG /
 E-NORM / E-BIO / E-MODEL / E-MIXED
 
-PH remains cross-cutting:
-position/horizon sensitivity != evidenced conflict
+PH remains cross-cutting.
 
-M4-01 = ABSORBED
-M4-02 = ABSORBED
 M4 = NONE
 M5 = NONE
 
-next:
-institutional or informational inheritance candidate
+next =
+P-INST institutional inheritance
+or genuinely standalone P-INFO
 -> freeze first
--> test P-INST or P-INFO
--> narrow X4c if semantic invariance fails
+-> fail/narrow rather than stretch
 
 calibration:
 RNN = STOP
 HKB request = SENT / response pending
 
 canonical edit = NO
-new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要再用“旧、贵、难改、path-dependent”直接支付 X4c。下一轮必须证明一个明确 carrier 如何把重构场带入 successor cohort，并改变后继者的可选/维护/转型空间。优先找制度或信息载体来压力测试；如果必须靠语义拉伸才能匹配，就缩窄 X4c，不要强行统一。Expectation provenance 与 PH 继续作为独立横向索引。不要开 canonical landing。
+不要因为载体“包含信息”就标 P-INFO。P-INFO 要求信息/符号载体本身足以把重构场带入 successor cohort；如果物质部署、技术实现或制度实践是不可缺的，就必须写 P-MIXED 并列出组成。下一轮优先 P-INST，或选择一个真正可能纯信息继承的案例来尝试反证。不要开 canonical landing。
 
 ## 9. Stop rule
 

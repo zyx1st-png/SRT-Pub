@@ -84,6 +84,10 @@ prior / component process =
 formation =
 retained / maintained organization =
 maintenance provenance =
+inheritance carrier, if applicable =
+inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED / n.a.
+P-MIXED components =
+successor cohort / later participant, if applicable =
 later process conditioned =
 claimed dependency direction =
 withdrawal / perturbation condition =
@@ -105,6 +109,9 @@ Example guard:
 ~~~text
 R1a retained imprint
 != R1c causal re-entry
+
+X4c persistence
+!= successor inheritance
 ~~~
 
 ## G. Generative expectation

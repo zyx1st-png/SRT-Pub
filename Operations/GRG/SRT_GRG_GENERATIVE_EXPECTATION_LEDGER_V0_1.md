@@ -59,6 +59,7 @@ They do not establish moral legitimacy.
 | Performative prediction / X4b | E-MODEL | deployment assessment should include how predictions change the future data/risk distribution on which they are evaluated | model optimized for static distribution destabilizes or reshapes future distribution | stronger/weaker relative to stated predictive/control objective | deployed population / institution; iterative horizon | fairness, rights, legitimacy of intervention |
 | Road capacity / X4b | E-TECH + E-MODEL | appraisal should include how lower generalized travel cost changes later demand and network loading | immediate congestion benefit erodes under induced travel | stronger/weaker relative to congestion/appraisal objective | travelers, residents, future land users; short/long horizon | environmental justice, land-use values, distributional policy goals |
 | Combined-sewer legacy / X4c | E-MAT primary; E-LEGAL secondary | later operation must work through, repair, bypass or replace inherited hydraulic infrastructure; modern regulation separately requires overflow control / water-quality compliance | material compatibility can be preserved while wet-weather pollution/control burden remains; legal compliance can fail even when ordinary conveyance works | stronger/weaker relative to sanitation/drainage + overflow-control relation, with material and legal layers kept distinct | later residents/utilities/receiving-water users; century-scale inheritance + present operation | fair burden allocation, acceptable cost, intergenerational obligation, environmental justice |
+| IPv4 -> IPv6 installed-base / X4c + X3b | E-TECH primary; E-ORG secondary | current transition mechanisms must preserve enough interoperability with inherited IPv4 deployments while migration proceeds | a technically valid IPv6 deployment can still fail to interoperate with inherited IPv4 hosts/apps/infrastructure; greenfield and installed-base environments face different transition burdens | stronger/weaker relative to interoperability and transition objectives; X3b current enforcement kept distinct from X4c inherited-field conditioning | network operators, implementers, applications; multi-year coexistence horizon | none opened at moral level |
 | RNN R1c adverse case | E-MODEL only | candidate retained organization should specifically affect later learning under targeted intervention | history marker exists but matched intervention shows no specific causal advantage | relation admission weaker / fails R1c | synthetic network only | none; normativity not opened |
 | HKB R1c candidate | E-MODEL / dynamical | maintained coordination organization should condition perturbation relaxation beyond component-only explanation | normalization or component variables exhaust apparent relation effect | relation admission stronger/weaker | participant coordination process; seconds | none; normativity not opened |
 
@@ -77,6 +78,18 @@ material structural expectation
 A single case may contain multiple expectation layers.
 
 The ledger should preserve them rather than collapse them into one generalized ought.
+
+IPv4/IPv6 also shows:
+
+~~~text
+E-TECH current compatibility expectation
+!=
+X4c carrier provenance
+~~~
+
+Expectation provenance types the source of the expectation.
+Inheritance provenance types how the inherited field is carried.
+Do not merge the two taxonomies.
 
 ## 2. B versus C
 
