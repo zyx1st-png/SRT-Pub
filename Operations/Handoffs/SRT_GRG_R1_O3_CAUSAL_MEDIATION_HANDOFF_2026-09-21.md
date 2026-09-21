@@ -4,6 +4,8 @@ type: handoff
 status: active
 date: 2026-09-21
 layer: operations
+epistemic_layer: os
+claim_mode: handoff
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
