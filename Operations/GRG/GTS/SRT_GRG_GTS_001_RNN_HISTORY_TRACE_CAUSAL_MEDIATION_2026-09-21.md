@@ -302,6 +302,43 @@ M4 = NOT APPLICABLE
 scientific distinctiveness implication = NONE
 ~~~
 
+## O.1 Evidence-generative provenance
+
+~~~text
+target process existed before GRG intervention? =
+NO in the natural-domain sense; this is a synthetic constructed experimental system.
+
+evidence-generation roles =
+CONSTRUCTION context
++ DISCOVERY of retained spectral imprint within that context
++ CAUSAL-BRIDGE for O3 mediation tests
+
+investigator / GRG process rewrite =
+PERTURBATIONAL during transplant / reset tests
+
+independence relation =
+two separately frozen / preregistered O3 tests in the same synthetic family
+!= independent domain recurrence
+
+counterfactual realization =
+INTERVENTION-REALIZED matched controls
+
+grammar-validation credit =
+positive = NO
+adverse calibration / bridge narrowing = YES
+~~~
+
+Guard:
+
+~~~text
+successful construction of the toy system
+!= independent discovery of GRG-R1
+
+O3 NULL
+= evidence against the selected proxy-to-causal-organization bridge
+!= evidence for an unspecified deeper cause.
+~~~
+
 ## P. Revision
 
 Mismatch location:
