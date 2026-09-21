@@ -421,6 +421,10 @@ counterfactual realization =
 SOURCE-NATIVE operational alternative:
 policy represented but not enforced
 
+grammar-validation mode =
+STRUCTURAL = YES
+PROSPECTIVE = NO
+
 grammar-validation credit =
 STRUCTURAL / M3-side recurrence = YES
 prospective / M4 = NO
