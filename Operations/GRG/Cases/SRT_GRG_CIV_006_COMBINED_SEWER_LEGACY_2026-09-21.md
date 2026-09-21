@@ -183,10 +183,10 @@ PASS
 
 Modern regulation is NOT a secondary inheritance carrier in this case.
 
-It belongs to expectation provenance:
+It belongs to Generative Expectation source / provenance:
 
 ~~~text
-E-LEGAL / E-ORG
+S-LEGAL + S-ORG
 ~~~
 
 What is paid:
@@ -206,25 +206,98 @@ What is not paid:
 
 ## I. Generative expectation
 
-Structural expectation at the material-infrastructure level:
+Live schema owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+### I.1 Source / provenance
 
 ~~~text
-later urban operation must remain compatible with,
-repair, bypass, control or replace the inherited hydraulic field.
+material-infrastructure layer =
+S-MAT
+
+modern compliance layer =
+S-LEGAL + S-ORG
 ~~~
 
-Modern legal / environmental expectations add a second layer:
+Keep these distinct.
+
+### I.2 B-STRUCTURAL
+
+Material layer:
 
 ~~~text
-overflow control and water-quality compliance.
+B-STRUCTURAL = PASS
+
+later urban operation must remain compatible with,
+repair, bypass, control or replace
+the inherited hydraulic field.
+~~~
+
+Legal / regulatory layer:
+
+~~~text
+B-STRUCTURAL = PASS
+relative to the declared water-quality / overflow-control relation.
+~~~
+
+Mismatch / failure:
+
+~~~text
+ordinary conveyance can remain operative
+while
+wet-weather overflow / compliance burden remains unresolved.
+~~~
+
+### I.3 Locus / mode
+
+~~~text
+C0-ENACTED =
+NOT ESTABLISHED / not required for current X4c result
+
+C1-MODEL =
+NOT ESTABLISHED
+
+OBS-MODEL =
+PRESENT / possible in engineering appraisal and modelling,
+but not the source of B.
+~~~
+
+### I.4 Evaluative index
+
+~~~text
+evaluative relations =
+1. sanitation / drainage continuity;
+2. overflow-control / water-quality compliance.
+
+positions =
+later utility / municipality;
+ordinary residents;
+receiving-water users / ecological receivers.
+
+scale =
+urban collection / treatment / receiving-water system.
+
+horizon =
+historical formation -> present operation -> long-term retrofit.
+
+comparison dimensions =
+service continuity;
+overflow burden;
+revision / retrofit capacity.
+
+indexed-comparison status =
+PASS at functional / regulatory level.
 ~~~
 
 Keep separate:
 
 ~~~text
-material structural expectation
-!= legal obligation
-!= moral legitimacy
+S-MAT structural burden
+!=
+S-LEGAL / S-ORG obligation
+!=
+moral legitimacy.
 ~~~
 
 ## J. Normativity interface
