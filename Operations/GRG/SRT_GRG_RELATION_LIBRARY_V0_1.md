@@ -11,7 +11,7 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-  - Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
+  - Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md
   - Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
 tags: [GRG, RelationLibrary, BurdenLibrary, Admission, NegativeControls, Revision]
 ---
@@ -480,3 +480,64 @@ trace / proxy only?
 ~~~
 
 before additional relation accumulation.
+
+
+## 11. v0.1 architecture overlay
+
+The completed first architecture owner is:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+The library's current entries are interpreted under that owner as:
+
+~~~text
+R1a = PROXY / TRACE
+R1b = V-H INTERFACE / formation-maintenance candidate
+R1c = R-HIST-a candidate
+R1d = EXPECTATION / VALIDATION maturity burden
+
+X3a = HORIZONTAL public expectation objectification
+X3b = COMPOSITE V-H interface
+
+X4a = R-RECON-a candidate
+X4b = R-RECON-a + R-RECON-b + recursive re-entry composite
+X4c = R-RECON + R-HIST inheritance composite
+~~~
+
+Current foundational proto-grammar:
+
+~~~text
+UPSTREAM
+C0 non-exhaustion / non-preclosure
+C1 differential manifestation / relative backgrounding
+
+CORE
+R-HIST-a
+R-HIST-b
+R-LOC
+R-POS [v0.1 downstream of R-LOC]
+R-RECON-a
+R-RECON-b
+
+COMPOSITION
+C-MULTI
+C-XSC
+
+EXPECTATION
+E-B
+E-C0
+E-C1
+
+NORMATIVITY
+N-INDEX
+
+REFLEXIVE
+L-REFLEX-W
+L-REFLEX-M
+~~~
+
+Formation and maintenance remain cross-cutting burdens in v0.1.
+
+M-status remains validation maturity and is not an architecture role.
+
+No new relation family should be added by default before author whole-architecture review.
