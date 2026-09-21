@@ -44,13 +44,25 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG FRAMEWORK CONSTRUCTION / NONCANONICAL / RELATION LIBRARY + DOMAIN-CIVILIZATION ATLAS + CIVILIZATIONAL LEARNING MAINLINE / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = SRT -> GRG FOUNDATIONAL BRIDGE / NONCANONICAL / MINIMAL GRG ARCHITECTURE + G0-G11 RETYPING + RELATION-LIBRARY RETYPING / EXISTING MATRIX-LEDGER-M4-HKB AS DOWNSTREAM ASSETS / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
 
 Author source:
 `01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md`
+
+Foundational bridge author adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md`
+
+SRT -> GRG Foundational Bridge v0.1:
+`Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md`
+
+GRG Minimal Architecture v0.1:
+`Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md`
+
+Foundational bridge internal red-team Pass 1:
+`Operations/Audits/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_INTERNAL_RED_TEAM_PASS1_2026-09-21.md`
 
 Programme architecture:
 `Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md`
@@ -763,10 +775,10 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-21 GRG framework turn:** the programme mainline is now framework construction across domains and civilization. RNN/HKB remain calibration workstreams. No single pending dataset blocks the framework mainline. Canonical owners remain closed by default.
+> **2026-09-21 SRT -> GRG foundational turn:** after the first GRG framework / M3 / M4 cycle, the author has moved the mainline one step upstream: first construct the bridge from reconstructed SRT to GRG and a minimal GRG architecture. Existing Relation Library, Atlas, burden matrix, expectation ledger, M4-01/02, RNN and HKB remain evidence / calibration / pressure assets. Canonical owners remain closed by default.
 
 ~~~text
-1. GRG mainline = framework construction, relation library, domain/civilization atlas, generative-expectation/normativity architecture;
+1. GRG mainline = SRT -> GRG foundational bridge -> minimal architecture -> G0-G11 retyping -> Relation Library retyping;
 2. existing Domain Reconstruction Framework remains the source-native entry surface for mature disciplines;
 3. GRG compares independently grounded generative burdens rather than replacing domain mechanisms;
 4. Relation Record template = active schema for source-native claim -> evidence -> objectification -> GRG burden -> expectation -> failure -> transfer;
@@ -774,7 +786,7 @@ Bearer admission threshold + Bearer <-> position stability
 6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
 7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
 8. first backfill records = RR-001 RNN adverse calibration, RR-002 HKB candidate, RR-003 Bowler source-native scaffold;
-9. RNN spectral family = R1a PASS / R1c NULL / STOP; no tuning and no O4;
+9. RNN spectral family = R1a PASS / tested spectral R1c mapping NULL / STOP; the tested L2-facing/objectified trace is not identified with vertical generative organization, so no whole-vertical causal verdict follows; no tuning and no O4;
 10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
@@ -800,12 +812,19 @@ Bearer admission threshold + Bearer <-> position stability
 32. framework-adequacy audit after repeated absorption = COMPLETE: M4 remains strict target-domain transfer criterion but is not the sole GRG framework adequacy axis;
 33. Cross-Domain Burden Matrix v0.1 = ACTIVE at Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md;
 34. Generative Expectation Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md;
-35. next framework work = harden matrix + expectation ledger + position/horizon civilizational comparisons; periodic M4 only when target ownership is genuinely uncertain;
+35. next framework work = pressure the SRT -> GRG Foundational Bridge and GRG Minimal Architecture, then retype G0-G11 and the current Relation Library before further matrix/ledger hardening or transfer escalation;
 36. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
 37. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
 38. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
 39. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
 40. do not restart winner-style strongest-neighbor novelty audit;
+41. horizontal research = transformations / laws / generative predictions within a sufficiently stabilized objectification; it is not defined as static, weak or non-predictive;
+42. vertical research = formation / stabilization / reconstruction of objects, boundaries, state spaces and generative conditions, seeking recurring relations across objectifications;
+43. horizontal / vertical status is indexed to the research question and objectification, not permanently attached to an entity;
+44. vertical depth != microphysical depth / hidden-cause depth;
+45. RNN correction = tested L2-facing trace NULL does not imply vertical efficacy NULL; proxy failure also does not establish an unspecified deeper vertical cause;
+46. G0-G11 = provisional discovery scaffold pending foundational retyping, not accepted final GRG skeleton;
+47. M4-01 + M4-02 remain COMPLETE / ABSORBED methodological assets; future serial M4 hunting is not current mainline;
 
 ~~~
 
