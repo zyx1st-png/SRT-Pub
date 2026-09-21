@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-EVIDENCE-GENERATIVE-PROVENANCE-V0-1-20260921
 type: research_programme
-status: draft
+status: active
 version: v0.1
 date: 2026-09-21
 layer: meta
@@ -824,4 +824,72 @@ Use the provenance audit on selected GTS migrations.
 Do not open M4-03 yet.
 Do not add relation families.
 Do not edit canonical SRT.
+~~~
+
+
+## 18. First bounded-use disposition — 2026-09-21
+
+Bounded-use owner:
+
+`Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_GTS_USE_PASS1_2026-09-21.md`
+
+Applied to:
+
+~~~text
+GTS-001 RNN adverse calibration
+GTS-002 Kubernetes X3b
+GTS-003 CIV-006 X4c
+~~~
+
+Result:
+
+~~~text
+proposal = RETAIN / NARROW
+
+useful constraints found =
+O_R != O_W
+recurrence != independent recurrence
+diffused / designed recurrence accounting
+evidence-purpose credit boundaries
+construction != discovery
+alternative-generation / maintenance audit
+
+full proposal copied into every GTS = NO
+
+compact mandatory template writeback = YES
+~~~
+
+Important record-level consequences:
+
+~~~text
+GTS-001:
+designed same-family recurrence != independent recurrence
+
+GTS-002:
+Internet standards + Kubernetes may be DIFFUSED engineering recurrence;
+do not count both as independent replications
+
+GTS-003:
+greenfield-vs-installed-base difference =
+SOURCE-NATIVE BUT UNOBSERVED for the bounded record
+and already owned by path-dependence / installed-base baselines;
+not GRG-generated XG5 credit
+~~~
+
+The bounded use also exposed that opening Generative Order / E_G can create analytic inflation.
+
+Therefore:
+
+~~~text
+E_G should remain NOT OPENED
+when it merely restates GO3 / GO5 or ordinary persistence semantics.
+~~~
+
+Current status:
+
+~~~text
+programme owner = ACTIVE
+new evidence-family code = NO
+new relation family = NO
+canonical edit = NO
 ~~~
