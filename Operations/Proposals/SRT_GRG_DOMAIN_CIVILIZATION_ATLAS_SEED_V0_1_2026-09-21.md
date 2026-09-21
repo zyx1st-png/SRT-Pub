@@ -846,6 +846,62 @@ across existing X4c PASS records
 using repository evidence only.
 ~~~
 
+## 5.13 X4c positive-record admission-order consistency Pass 1
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+
+Scope:
+
+~~~text
+existing positive X4c records only
+new sources = NO
+~~~
+
+Result:
+
+~~~text
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades = NONE
+carrier-role circular bootstrap = NONE
+~~~
+
+Framework clarification:
+
+~~~text
+admission order =
+LOGICAL / EPISTEMIC
+
+not:
+mandatory file chronology
+mandatory separate source
+mandatory separate PR.
+~~~
+
+Same-source co-evidence is allowed if:
+
+~~~text
+relation-level successor / transmission evidence
+is independently articulable
+without using the role label as its premise.
+~~~
+
+Maintenance correction:
+
+- IPv4 SourceCard carrier summary synchronized to current role-census schema;
+- precedent SourceCard historical P-MIXED summary synchronized to explicit multi-component PAYLOAD + AUTHORITY architecture.
+
+Next:
+
+~~~text
+bounded X4c carrier-subprogramme local-closure audit
+~~~
+
 ## 6. Mainline work order
 
 ~~~text
@@ -866,11 +922,13 @@ using repository evidence only.
 15. minimal Role Library v0.1 = EARNED;
 16. CIV-005 negative/borderline Role Library application = COMPLETE / PASS;
 17. ROLE-CANDIDATE / PRE-ADMISSION guard = ACTIVE;
-18. next = positive-record admission-order consistency audit across existing X4c PASS records;
-19. no new source hunt in that audit;
-20. require carrier-role + persistence-process + expectation provenance in new records;
-21. continue underdeveloped domain re-entry;
-22. use future M4 attempts selectively as calibration, not as the sole queue;
+18. positive-record admission-order consistency audit = COMPLETE / PASS;
+19. positive X4c downgrades = NONE; circular bootstrap = NONE;
+20. next = bounded X4c carrier-subprogramme local-closure audit;
+21. no new source hunt in the closure audit;
+22. require carrier-role + persistence-process + expectation provenance in new records;
+23. continue underdeveloped domain re-entry;
+24. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
