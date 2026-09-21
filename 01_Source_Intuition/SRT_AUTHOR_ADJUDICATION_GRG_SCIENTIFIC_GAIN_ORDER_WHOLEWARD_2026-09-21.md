@@ -54,7 +54,7 @@ A source-intuition location does not upgrade M content into author authority.
 
 **[A0-Q]**
 
-> 关系只是另一种截面，SRT 和 GRG 应该关注是是生成产生的对现实的预测和更符合秩序的预期。
+> 认同，关系只是另一种截面，SRT 和 GRG 应该关注是是生成产生的对现实的预测和更符合秩序的预期。
 
 **[A0-Q]**
 
@@ -62,14 +62,14 @@ A source-intuition location does not upgrade M content into author authority.
 
 **[A0-Q]**
 
-After the three proposals below were presented together — GRG scientific gain, Generative Order admission, and epistemic + constructive wholeward direction — the author replied:
+Immediately before the author's acceptance, the response presented three numbered adjudications — GRG scientific gain, Generative Order admission, and epistemic + constructive wholeward direction — and explicitly stated that, if accepted, they would be landed together with the proposed R-HIST/R-RECON -> GTS input/output-view retyping. The author replied:
 
 > 认同，继续
 
 Interpretation boundary:
 
 ~~~text
-this "认同" = explicit acceptance of the immediately preceding three proposals
+this "认同" = explicit acceptance of the immediately preceding adjudication package, including the explicitly named R-HIST/R-RECON -> GTS retyping
 this "继续" = permission to continue after that acceptance
 ~~~
 
@@ -111,6 +111,34 @@ Retrospective analogy alone is insufficient.
 
 Cross-objectification compression may be a useful consequence, but it is not by itself the defining success criterion and does not yet have a mature quantitative metric.
 
+### 2.2 Existing programme absorption gate
+
+**[M — inherited mainline research governance, not a new author claim]**
+
+Prospective discrimination is not GRG gain merely because it was frozen before target inspection.
+
+Retain the existing M4-E0 absorption-before-execution gate:
+
+~~~text
+if mature target-domain practice or the strongest reasonable horizontal comparator
+already owns the same variable / control / distinction / failure expectation
+in materially the same form,
+then prospective GRG gain = ABSORBED / NO
+unless an independent replication rationale exists.
+~~~
+
+Approximate routing:
+
+~~~text
+structural cross-objectification recurrence / constraint retention
+~ M3-side burden
+
+absorption-resistant prospective discrimination
+~ M4-side burden
+~~~
+
+This is an approximate programme crosswalk, not an identity theorem between GTS and M-levels.
+
 ### 2.1 Generative condition — operational research role
 
 **[A1 — explicitly accepted as part of Adjudication 11]**
@@ -148,20 +176,20 @@ The analyst cannot establish an order merely by naming a valued outcome or choos
 Minimum admission burdens:
 
 ~~~text
-O1 formation / operation
+GO1 formation / operation
 = the organization is actually formed / enacted / operative in the world-side process;
 
-O2 structural articulation
+GO2 structural articulation
 = the relevant dependencies / compatibilities / constraints can be stated;
 
-O3 generative efficacy
+GO3 generative efficacy
 = changing the relevant structure changes formation, continuation,
   reconstruction, accessibility or later generative conditions;
 
-O4 scope indexing
+GO4 scope indexing
 = relation / locus / position / scale / horizon are declared where relevant;
 
-O5 failure / dissolution
+GO5 failure / dissolution
 = conditions under which the order no longer holds, changes identity,
   or the proposed order-typing fails are declared.
 ~~~
@@ -271,6 +299,48 @@ permission for current GRG to dictate a final order
 
 The practical programme remains corrigible by consequence.
 
+## 4.3 Projected-order path for W-P
+
+**[M — proposed resolution of the GO1 / W-P tension; AUTHOR DECISION PENDING]**
+
+GO1 correctly blocks a merely imagined order from being treated as an already admitted Generative Order.
+
+But W-P may need to design arrangements that do not yet exist.
+
+Proposed route:
+
+~~~text
+ADMITTED GENERATIVE ORDER
+= GO1-GO5 paid in world-side evidence
+
+PROJECTED GENERATIVE ORDER
+= design hypothesis for W-P;
+  NOT an admitted order;
+  NOT allowed to borrow ordinary E_G authority.
+~~~
+
+A projected order should minimally declare:
+
+~~~text
+PGO1 structural proposal grounded in currently evidenced dependencies / conflicts;
+PGO2 P_G consequences specified before intervention;
+PGO3 position / scale / horizon scope declared;
+PGO4 failure / consequence-audit charter frozen;
+PGO5 realization gate: world-side formation + efficacy must later pay GO1 / GO3 before promotion to admitted order.
+~~~
+
+Any expectation relative to it must be labeled:
+
+~~~text
+projected E_G / E_G^proj
+~~~
+
+not ordinary admitted-order E_G.
+
+This route is intended to prevent status-quo lock-in without allowing an imagined ideal to masquerade as an already real generative order.
+
+The further W-P heuristics 'more mutual compatibility' and 'less hidden externalization' remain programme-level design criteria, not a completed solution to multi-order moral conflict.
+
 ## 5. R-HIST / R-RECON retyping after process-first correction
 
 **[A1 — explicitly accepted]**
@@ -314,7 +384,7 @@ A single bounded transformation can pay both views.
 
 ## 6. Process-first relation status
 
-**[A1 — accepted by continuity with the explicit "relations are cuts" direction]**
+**[M — machine consolidation constrained by the explicit author statement that relations are cuts]**
 
 Relation labels are analytical cuts.
 
