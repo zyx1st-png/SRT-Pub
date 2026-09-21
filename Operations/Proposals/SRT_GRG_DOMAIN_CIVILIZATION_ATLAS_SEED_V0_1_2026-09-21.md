@@ -768,13 +768,18 @@ MIXED
 OPEN
 ~~~
 
-Next bounded pressure:
+Next bounded pressure at census close:
 
 ~~~text
-apply Role Library to existing CIV-005 beaver record
+CIV-005 negative application
 without new positive evidence
--> specify why X4c still fails / remains gated
--> specify exact missing evidence
+~~~
+
+Status:
+
+~~~text
+COMPLETED in §5.12
+negative productivity = PASS
 ~~~
 
 ## 5.12 CIV-005 Role Library negative productivity Pass 1
