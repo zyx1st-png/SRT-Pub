@@ -792,17 +792,20 @@ Bearer admission threshold + Bearer <-> position stability
 24. X4b -> Performative Prediction = non-biological semantic/source match PASS; X4b promoted to M3 and DOMAIN-LIMITED lifted; M4 = NO / ABSORBED;
 25. X4b generic programme label = recursive reconstructed-field feedback; biological selective/viability feedback remains a specialization;
 26. M4 relations = NONE; M5 relations = NONE; scientific distinctiveness = NOT ESTABLISHED;
-27. M4-01 = COMPLETE / ABSORBED: X3b -> tool-using AI-agent authorization; charter frozen before target-source audit;
-28. target-domain source audit = strong pre-ownership: least privilege, scoped tool permissions, sandboxing, downstream authorization and approval boundaries already standard;
-29. repository AI pre-ownership = strong: 2026-08-04 disconnected-write audit already contains read/write capability separation and near-equivalent matched connector write-gate control;
-30. M4-01 execution = STOP BEFORE DUPLICATE EXPERIMENT; M4 remains NONE;
-31. M4-E0 absorption-before-execution rule = ACTIVE: freeze -> target-practice audit -> absorbed means stop unless separate replication reason exists;
-32. M4 Transfer Charter template = Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md;
-33. next framework work = M4-02 using a different relation or substantially different target, prospectively frozen before target-source audit;
-34. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-35. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-36. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-37. do not restart winner-style strongest-neighbor novelty audit;
+27. M4-01 = COMPLETE / ABSORBED: X3b -> tool-using AI-agent authorization; no duplicate execution;
+28. M4-02 = COMPLETE / ABSORBED: X4b -> road-capacity induced-demand feedback; charter frozen before transport source audit;
+29. transport target-domain pre-ownership = STRONG: fixed vs variable demand modelling, generalized-cost response, induced demand, land-use/trip feedback and appraisal already standard;
+30. M4-02 duplicate transport simulation = STOP; M4 remains NONE;
+31. M4-E0 absorption-before-execution rule = REPLICATED across two distinct relations / target domains;
+32. framework-adequacy audit after repeated absorption = COMPLETE: M4 remains strict target-domain transfer criterion but is not the sole GRG framework adequacy axis;
+33. Cross-Domain Burden Matrix v0.1 = ACTIVE at Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md;
+34. Generative Expectation Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md;
+35. next framework work = harden matrix + expectation ledger + position/horizon civilizational comparisons; periodic M4 only when target ownership is genuinely uncertain;
+36. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+37. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+38. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+39. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+40. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

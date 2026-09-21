@@ -796,6 +796,20 @@ Does it reject tempting mappings?
 
 Does it generate a useful question / control / distinction before target outcome inspection?
 
+Current relation-level strong test:
+
+~~~text
+M4 prospective target-domain gain
+~~~
+
+Important:
+
+~~~text
+M4 is one framework scorecard axis.
+M4 != whole-framework adequacy.
+ABSORBED != M4.
+~~~
+
 ### Revision
 
 Does evidence actually change the grammar?
@@ -846,43 +860,48 @@ Completed:
 2. Relation Record schema;
 3. Civilizational Learning Architecture;
 4. Domain / Civilization Atlas seed;
-5. first relation-record backfill;
-6. first civilizational false-convergence pass;
+5. relation-record backfill;
+6. civilizational false-convergence pass;
 7. X3/X4 mature-source pressure;
-8. live Relation Library v0.1;
-9. first negative-control + invariance pass.
+8. Relation Library v0.1;
+9. negative-control + invariance pass;
+10. M3 cross-domain recurrence for X3b / X4b;
+11. M4-01 prospectively frozen AI-agent attempt = ABSORBED;
+12. M4-02 prospectively frozen road-capacity attempt = ABSORBED;
+13. framework-adequacy audit after repeated absorption;
+14. Cross-Domain Burden Matrix v0.1;
+15. Generative Expectation Ledger v0.1.
 
-First M4 attempt:
-
-~~~text
-M4-01 X3b -> tool-using AI-agent authorization
-= ABSORBED / M4 NO
-
-frozen distinction:
-policy / instruction
-!=
-capability / authorization enforcement
-
-target field already owns:
-least privilege / scoped permissions / sandboxing /
-downstream authorization / approval boundaries.
-
-repository AI work already contains a near-equivalent matched connector-write gate control.
-
-duplicate execution = NOT WARRANTED.
-~~~
-
-Current next:
+Current mainline:
 
 ~~~text
-M4-02:
-choose a different relation or substantially different target;
-freeze target/design before target-source audit;
-apply M4-E0 first;
-execute only if not absorbed.
-
-Do not increase M-status by adding more M3 examples.
+A. expand / harden the Cross-Domain Burden Matrix;
+B. expand the Generative Expectation Ledger;
+C. test position / horizon conflicts in civilizational cases;
+D. test whether the matrix produces new cross-case exclusions or grammar revisions;
+E. continue domain re-entry for underdeveloped domains;
+F. use M4 prospectively when a genuinely uncertain target appears,
+   not as a serial novelty hunt.
 ~~~
+
+Current calibration:
+
+~~~text
+M4-01 = absorbed
+M4-02 = absorbed
+M4 = NONE
+HKB raw-data access = pending
+RNN spectral family = STOP
+~~~
+
+Framework adequacy owner:
+
+Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
+
+Comparison owners:
+
+- Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
 ## 21. Canonical boundary
 

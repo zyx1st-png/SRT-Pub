@@ -358,7 +358,7 @@ larger-scale success != participant-level good
 
 ## 8. Current next gate
 
-First M3 pass:
+Current relation maturity:
 
 ~~~text
 X3b = M3
@@ -367,50 +367,74 @@ M4 = NONE
 M5 = NONE
 ~~~
 
-First M4 attempt completed:
+Prospective M4 attempts:
 
 ~~~text
-M4-01 target = tool-using AI / LLM agent authorization
-relation = X3b
-charter freeze = PASS
-target-source audit = mature domain already owns policy != enforcement
-repository AI pre-ownership = near-equivalent matched write-gate control already exists
-verdict = ABSORBED / M4 NO
-execution = STOPPED BEFORE DUPLICATE EXPERIMENT
+M4-01:
+X3b -> AI-agent authorization
+= ABSORBED / M4 NO
+
+M4-02:
+X4b -> road-capacity induced-demand feedback
+= ABSORBED / M4 NO
 ~~~
 
-Owner:
+M4-02 owner:
 
-Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
+Operations/Audits/SRT_GRG_M4_02_ROAD_CAPACITY_RESULT_2026-09-21.md
 
-New efficiency rule:
+Transport target-domain audit found strong ordinary-practice ownership of:
+
+- fixed versus variable demand modelling;
+- cost-sensitive demand;
+- route / mode / time / trip redistribution;
+- trip generation / land-use response;
+- induced-demand appraisal and user-benefit consequences.
+
+Therefore no duplicate simulation was executed.
+
+M4-E0 remains active:
 
 ~~~text
-M4-E0 — absorption-before-execution
-
 freeze target/design
--> audit ordinary target practice
--> if same distinction/control already exists
+-> audit mature target practice
+-> if same distinction/control is already owned
    and no separate replication rationale exists:
    M4 NO / ABSORBED
    STOP before duplicate execution.
 ~~~
 
-Next programme gate:
+Two consecutive prospective absorptions now create a framework-level routing consequence:
 
 ~~~text
-M4-02 prospectively frozen attempt
+M4 remains a strong relation-level transfer criterion,
+but serial M4 novelty hunting is NOT the sole GRG mainline.
 ~~~
 
-Requirements remain:
+Framework adequacy owner:
 
-1. use a different relation or substantially different target domain;
-2. freeze relation + target domain + design before decisive target-source/outcome inspection;
-3. run M4-E0 target-practice audit first;
-4. execute only if the frozen GRG design is not already absorbed;
-5. preserve ABSORBED / NULL / positive transfer equally.
+Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
 
-Do not seek more M3 examples merely to increase case count.
+Mainline comparison surfaces:
+
+- Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+Next:
+
+~~~text
+use the matrix / ledger to test
+cross-domain compression,
+exclusion,
+position-sensitive consequence,
+generative expectation,
+and grammar revision.
+
+M4 remains available as periodic calibration
+when a genuinely uncertain prospective target exists.
+~~~
+
+Do not award M4 for absorption.
 
 ## 9. Canonical boundary
 

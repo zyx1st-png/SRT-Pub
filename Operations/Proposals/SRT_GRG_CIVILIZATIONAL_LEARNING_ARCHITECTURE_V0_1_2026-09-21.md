@@ -339,15 +339,36 @@ Owner:
 
 ## 13. Outputs
 
-Initial civilizational programme outputs should be:
+Current civilizational programme outputs:
 
-1. a case-record schema;
-2. a domain/civilization atlas;
-3. a relation library;
-4. a cross-case comparison matrix;
-5. a generative-expectation ledger;
-6. a conflict / multi-position ledger;
-7. calibration cases where the framework is likely to fail.
+1. case-record schema = ACTIVE;
+2. domain/civilization atlas = ACTIVE;
+3. relation library = ACTIVE;
+4. cross-case comparison matrix = ACTIVE;
+5. generative-expectation ledger = ACTIVE;
+6. conflict / multi-position routing = PARTLY EMBEDDED IN LEDGER / dedicated surface still open;
+7. calibration cases = ACTIVE through adverse, absorption and negative-control records.
+
+Current owners:
+
+~~~text
+case schema:
+Operations/Templates/SRT_GRG_CIVILIZATIONAL_CASE_RECORD_TEMPLATE_V0_1.md
+
+atlas:
+Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+
+relation library:
+Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+
+cross-domain burden matrix:
+Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+
+generative expectation ledger:
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+~~~
+
+The burden matrix and expectation ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position or evidence type.
 
 ## 14. First implementation rule
 

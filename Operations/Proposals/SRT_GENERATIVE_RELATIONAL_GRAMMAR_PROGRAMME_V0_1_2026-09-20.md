@@ -622,6 +622,10 @@ G7 mature-source pressure + burden splitting
 G8 Relation Library v0.1 + negative controls + invariance Pass 1
 G9 first M3 / M4 cross-domain transfer-absorption Pass 1
 G10 first prospectively frozen M4 attempt: AI-agent authorization -> ABSORBED / M4 NO
+G11 second prospectively frozen M4 attempt: road-capacity induced demand -> ABSORBED / M4 NO
+G12 framework-adequacy audit after repeated M4 absorption
+G13 Cross-Domain Burden Matrix v0.1
+G14 Generative Expectation Ledger v0.1
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -653,7 +657,25 @@ repository pre-ownership = STRONG
 verdict = ABSORBED / M4 NO
 duplicate experiment = STOP
 
+M4-02:
+X4b -> road-capacity / induced-demand feedback
+charter frozen before target source audit = YES
+target-domain pre-ownership = STRONG
+fixed-vs-variable demand / induced-demand appraisal already standard
+verdict = ABSORBED / M4 NO
+duplicate simulation = STOP
+
 M4-E0 absorption-before-execution = ACTIVE
+
+Framework adequacy after two absorptions:
+- M4 target-domain design novelty = NOT PAID;
+- compression / constraint / revision / coverage /
+  position sensitivity / normative discipline remain separate framework axes;
+- ABSORBED is not reclassified as M4.
+
+Mainline comparison surfaces:
+- Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
