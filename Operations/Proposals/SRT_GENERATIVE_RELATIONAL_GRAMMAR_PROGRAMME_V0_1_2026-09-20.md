@@ -720,3 +720,51 @@ Do not yet rewrite:
 - scientific distinctiveness / Level status.
 
 These may be pressured later, but current work is noncanonical research architecture.
+
+## 18. Foundational Proto-Grammar v0.1 review gate — 2026-09-21
+
+A later author instruction moves the programme one step upstream after the completed framework / inheritance / PH work.
+
+Author construction source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+Primary whole-review owner:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Current status:
+
+~~~text
+GRG v0.1 first coherent architecture = COMPLETE
+architecture type = revisable typed proto-grammar
+whole-architecture author review = NEXT REQUIRED GATE
+~~~
+
+The following latest-main results are preserved inside the first-version context:
+
+~~~text
+X3b = M3
+X4b = M3
+X4c = M3
+PH = cross-cutting Position / Horizon analysis burden
+P-INFO alone = NOT ESTABLISHED in IPv4 / IPv6 carrier stress
+P-MIXED = must be decomposed
+M4 = NONE
+M5 = NONE
+~~~
+
+This foundational turn does not erase or supersede those results.
+
+It retypes their roles inside the first GRG architecture.
+
+STOP before author whole review:
+
+- no new relation-family expansion by default;
+- no next P-INST / standalone P-INFO case;
+- no new serial M4 attempt;
+- no canonical promotion;
+- no closed formal grammar claim;
+- no GRG-as-AGI expansion.
+
+After author review, revise the foundational proto-grammar first and only then resume downstream relation / Atlas / ledger / transfer work.
