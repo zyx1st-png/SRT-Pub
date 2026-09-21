@@ -70,6 +70,15 @@ GRG-R1 O-criterion revision:
 GRG-R1 target-blind spectral O1 result:
 `Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
 
+First RNN O3 causal-mediation result:
+`Operations/Audits/SRT_GRG_R1_O3_CAUSAL_MEDIATION_RESULT_2026-09-21.md`
+
+Stricter RNN O3 robustness result:
+`Operations/Audits/SRT_GRG_R1_O3_V0_3_CAUSAL_MEDIATION_RESULT_2026-09-21.md`
+
+Parallel O3 reconciliation:
+`Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md`
+
 HKB feasibility audit:
 `Operations/Audits/SRT_GRG_R1_HKB_SOURCE_PROTOCOL_ACCESS_FEASIBILITY_2026-09-21.md`
 
@@ -125,12 +134,32 @@ within-pair permutation p = 0.000999;
 target data used = NO.
 
 O3 target-blind causal-mediation feasibility = COMPLETE / O3-CAUSAL-NULL:
-12/12 S donors + 12/12 D donors base competent;
-12/12 recipient seeds complete;
-median C_SD = 0.001575;
-median C_S0 = 0.002794;
-both bootstrap primary conditions fail;
-target data used = NO.
+first execution / one-time spectral transplant:
+- 12/12 S donors + 12/12 D donors base competent;
+- 12/12 recipient seeds complete;
+- median C_SD = 0.001575;
+- median C_S0 = 0.002794;
+- both bootstrap primary conditions fail;
+- target data used = NO.
+
+RNN spectral O3 stricter robustness execution = COMPLETE / O3-CAUSAL-NULL:
+- repeated early-learning singular-spectrum resets;
+- equal-magnitude D-history spectral-direction control;
+- fresh recipients 400..411;
+- 12/12 recipient triplets valid;
+- median C_SD = -0.002745;
+- median C_SI = 0.010806;
+- bootstrap 95% CI mean C_SD = [-0.038720, 0.016612];
+- bootstrap 95% CI mean C_SI = [-0.017672, 0.051086];
+- parameter-distance matching passed to numerical tolerance;
+- target data used = NO.
+
+Parallel execution reconciliation = COMPLETE:
+- trunk v0.1 is the authoritative first O3 execution;
+- stale-branch claim that v0.1 had not executed is superseded;
+- #1001 is classified as a stricter independent robustness execution;
+- both executions converge on RNN spectral R1c NULL / STOP;
+- O4 remains blocked for this RNN spectral family.
 
 cross-realization / source-fidelity audit Pass 1 = COMPLETE.
 
@@ -712,22 +741,27 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-20 post-#976 GRG continuation:** GRG founding, red-team Pass 1, generative-expectation second adjudication, distributed-neighbor Pass 1, the first GRG-R1 transfer pilot, productive-adequacy revision Pass 1 and target-blind spectral O1 feasibility are complete. Canonical owners remain closed by default.
+> **2026-09-21 GRG current route:** the RNN spectral line has now produced two separately preregistered O3 NULLs and is STOP at R1c. The programme's live execution route is the independent HKB non-RNN R1c candidate, currently gated on existing raw-data access. Canonical owners remain closed by default.
 
 ~~~text
-1. GRG-R1 v0.1 neuroscience transfer pilot = PILOT-NULL;
-2. decoder-defined activity subspace is not admitted as causal retained organization by default;
-3. revised O gate = O1 formation -> O2 retained operator structure -> O3 target-blind causal mediation -> O4 prospective re-entry;
-4. fresh-seed spectral O1 feasibility = PASS (24/24 base competent; paired CV=1.00; permutation p=0.000999);
-5. current next = O3 target-blind causal-mediation feasibility only;
-6. do not expose or choose a new transfer target during O3;
-7. any v0.2 target requires a new visible charter + preregistration after O1-O3;
-8. Bowler eigenspectrum intervention is a source-native positive control, not SRT distinctiveness;
-9. synergetic order-parameter language remains distributed pressure; do not equate it with PCA / decoding;
-10. Simondon operation->structure->operation constrains dependency but is not the RNN identifier;
-11. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-12. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-13. do not restart winner-style strongest-neighbor novelty audit.
+1. first GRG-R1 neuroscience transfer pilot = PILOT-NULL;
+2. decoder-defined activity subspace != causal retained organization by default;
+3. O1 spectral formation = PASS / retained history imprint is real in the toy RNN;
+4. first RNN O3 one-time spectral transplant = O3-CAUSAL-NULL;
+5. #1001 stricter repeated-reset + equal-distance D-history control = O3-CAUSAL-NULL;
+6. the two O3 executions are separate runs, not one pooled experiment, but converge on the same R1c failure;
+7. RNN spectral family = R1a PASS / R1c NULL / STOP; do not tune top-k, reset frequency, centroids, task or thresholds;
+8. R1d / O4 is BLOCKED for the RNN spectral family;
+9. GRG-R1 research burden split remains R1a retained imprint / R1b maintained scaffold / R1c causal re-entry / R1d prospective transfer;
+10. selected live non-RNN R1c route = HKB human bimanual coordination dynamics;
+11. HKB source/protocol reconstruction = PASS; half-cycle/component-aware normalization guard is mandatory;
+12. public original 300-Hz raw trajectories = NO-GO / NOT LOCATED; authorized reusable raw-data route = NOT ESTABLISHED;
+13. current next = existing-data access route only; request package is prepared but request actually sent = NO;
+14. do not weaken to aggregate data, run a new human experiment, or use simulation as confirmation;
+15. R1d / O4 remains blocked on the HKB route until R1c execution is independently paid;
+16. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+17. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+18. do not restart winner-style strongest-neighbor novelty audit.
 ~~~
 
 ## Historical navigation
