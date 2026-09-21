@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-GENERATIVE-EXPECTATION-SCHEMA-CONSISTENCY-CENSUS-PASS1-20260921
 type: audit
-status: active
+status: complete
 record_stage: generative_expectation_schema_consistency_census_pass1
 date: 2026-09-21
 layer: operations
@@ -166,20 +166,73 @@ active cases route through new owner
 historical audits remain historically faithful.
 ~~~
 
-## 7. Next gate
+## 7. Migration validation result
 
-After migration, rerun a bounded stale-token scan across the declared active surfaces.
+The bounded stale-token scan is COMPLETE.
 
-Then update:
+Result:
 
-- Framework;
-- Programme;
+~~~text
+live E-MODEL provenance uses = NONE
+live E-MIXED provenance uses = NONE
+live E-MAT/E-TECH/E-LEGAL/E-ORG/E-NORM/E-BIO routing = NONE
+
+remaining E-* occurrences =
+historical migration notes / retired-tag declarations only.
+~~~
+
+Active migrated surfaces include:
+
+- Research Framework;
+- Domain / Civilization Atlas;
+- Civilizational Learning Architecture;
+- Cross-Domain Burden Matrix;
+- CIV-006;
+- CIV-007;
+- IPv4 SourceCard;
+- Inheritance Carrier Architecture;
+- GRG Programme;
 - STATUS;
-- handoff.
+- current GRG handoff;
+- relation / civilizational templates.
 
-No canonical edit.
+Verdict:
 
-## 8. Canonical consequence
+~~~text
+EXPECTATION SCHEMA LIVE MIGRATION = PASS
+~~~
+
+Historical audits remain historically faithful.
+
+## 8. Next gate
+
+Do not add more expectation provenance categories.
+
+Next bounded pressure:
+
+~~~text
+C0 / C1 REALIZATION PRESSURE
+~~~
+
+Use existing repository evidence first.
+
+Primary pressure candidates:
+
+~~~text
+Nepal irrigation
+-> C0-ENACTED candidate
+
+Performative Prediction
+-> C1-MODEL case-dependent candidate
+~~~
+
+Required question:
+
+> Does the source-native evidence actually pay an operative anticipatory locus, or did the adequacy pass merely create empty labels?
+
+Freeze the C0/C1 pressure charter before dedicated source reinspection.
+
+## 9. Canonical consequence
 
 ~~~text
 canonical edit = NO
