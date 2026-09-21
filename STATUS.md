@@ -808,21 +808,25 @@ Bearer admission threshold + Bearer <-> position stability
 40. X4c inherited reconstructed condition = M3 PASS; ecological P-ECO + infrastructure P-MAT cross-domain semantic invariance;
 41. X4c carrier-explicit admission = ACTIVE: inheritance requires carrier + successor cohort + changed later possibility structure; persistence/age/sunk cost alone do not pay it;
 42. inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED; provenance != relation identity;
-43. IPv4 -> IPv6 installed-base stress = COMPLETE; freeze preceded dedicated IETF/RFC inspection;
-44. IPv4/IPv6 X4c mapping = PASS / remains M3; successor transition options are conditioned by inherited IPv4 installed field;
-45. P-INFO alone = NOT ESTABLISHED; source-native carrier is P-MIXED across protocol/address semantics + deployed hosts/routers/infrastructure + standards/operational practice;
-46. P-MIXED must list components; it is not a catch-all;
-47. reusable X4c near-control = greenfield environment vs existing installed-base environment;
-48. X3b current operative interoperability != X4c inherited-field conditioning;
-49. expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED;
-50. inheritance provenance and expectation provenance are separate taxonomies and must not be collapsed;
-51. next framework work = test P-INST institutional inheritance or a genuinely standalone P-INFO carrier; if P-INFO repeatedly collapses into P-MIXED, narrow/retire standalone P-INFO;
-52. periodic M4 only when target ownership is genuinely uncertain;
-53. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-54. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-55. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-56. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-57. do not restart winner-style strongest-neighbor novelty audit;
+43. IPv4 -> IPv6 installed-base stress = COMPLETE; P-INFO standalone NOT ESTABLISHED; decomposed P-MIXED required;
+44. precedent / stare-decisis P-INST stress = COMPLETE; freeze preceded dedicated legal-source inspection;
+45. precedent X4c mapping = PASS / remains M3; prior holdings condition successor adjudication under inherited authority relations;
+46. P-INST causal component role = PASS through binding-vs-persuasive authority; P-INST standalone total carrier = NOT ESTABLISHED;
+47. precedent best carrier = P-MIXED[P-INFO PAYLOAD + P-INST AUTHORITY];
+48. case of first impression provides second near-control for absence of a specific inherited binding field;
+49. Inheritance Carrier Architecture v0.1 = ACTIVE at Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md;
+50. carrier provenance is compositional when evidence requires it: component + provenance kind + causal role + role evidence/near-control + standalone sufficiency status;
+51. P-MIXED must list components AND causal roles; component-role PASS != standalone-carrier PASS;
+52. current standalone provenance state: P-ECO PASS, P-MAT PASS, P-INFO OPEN, P-INST OPEN;
+53. X3b current operative authority/compatibility != X4c inherited successor field;
+54. expectation provenance and inheritance carrier architecture remain separate: E-LEGAL/E-ORG current expectation != P-INST/P-INFO carrier roles;
+55. next framework work = re-audit existing X4c cases under component-role schema and test whether it improves exclusion / near-control prediction before hunting more provenance categories;
+56. periodic M4 only when target ownership is genuinely uncertain;
+57. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+58. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+59. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+60. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+61. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
