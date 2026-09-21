@@ -17,6 +17,7 @@ dependency:
   - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
   - Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
   - Operations/Audits/SRT_GRG_GTS_RECONCILIATION_PASS1_2026-09-21.md
+  - Operations/Audits/SRT_GRG_PROSPECTIVE_FAMILY_SELECTION_AUDIT_PASS1_2026-09-22.md
 tags: [GRG, BCTB0, Calibration, TemporalReplay, ProspectiveDiscrimination, ConstraintTransfer, Blindness]
 ---
 
