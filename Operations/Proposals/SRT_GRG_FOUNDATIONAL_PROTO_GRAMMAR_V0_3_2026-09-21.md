@@ -1046,13 +1046,26 @@ claim global moral ordering
 expand to AGI architecture
 ~~~
 
+Current completed gates:
+
+1. v0.3 independent content review = COMPLETE;
+2. GTS-first routing reconciliation = COMPLETE;
+3. selected mature Relation Library -> GTS reconciliation Pass 1 = COMPLETE / PRODUCTIVE.
+
+First reconciled records:
+
+~~~text
+GTS-001 RNN adverse calibration
+GTS-002 Kubernetes X3b
+GTS-003 CIV-006 X4c
+~~~
+
 Next bounded work:
 
-1. independent content review of v0.3;
-2. reconcile programme/framework/template routing to GTS-first;
-3. convert selected mature Relation Library entries into GTS views without deleting provenance;
-4. define one prospective cross-objectification discrimination charter;
-5. only then execute a bounded test.
+1. independently review GTS reconciliation Pass 1;
+2. if retained, freeze one X4c prospective cross-objectification discrimination charter;
+3. run M4-E0 target-domain mature-practice / strongest-horizontal audit;
+4. execute only if the charter survives absorption.
 
 ## 28. Verdict
 
