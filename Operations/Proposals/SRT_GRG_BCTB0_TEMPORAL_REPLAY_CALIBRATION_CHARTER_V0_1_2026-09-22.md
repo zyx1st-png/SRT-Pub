@@ -1,8 +1,8 @@
 ---
 id: SRT-GRG-BCTB0-TEMPORAL-REPLAY-CALIBRATION-CHARTER-V0-1-20260922
 type: preregistration
-status: active
-record_stage: bctb0_temporal_replay_calibration_charter_v0_1
+status: draft
+record_stage: bctb0_temporal_replay_calibration_charter_v0_1_preexecution_revision
 date: 2026-09-22
 layer: operations
 epistemic_layer: os
@@ -23,11 +23,12 @@ tags: [GRG, BCTB0, Calibration, TemporalReplay, ProspectiveDiscrimination, Const
 
 # GRG BCTB-0 temporal-replay calibration charter v0.1
 
-## 0. Frozen charter state
+## 0. Pre-execution charter state
 
 ~~~text
-BCTB-0 architecture = FROZEN FOR CALIBRATION
+BCTB-0 architecture = DRAFT / PRE-EXECUTION HARDENING
 evaluation design = FORWARD-CHAINING TEMPORAL REPLAY
+execution readiness = BLOCKED UNTIL INPUT-ISOLATION / ARM-SYMMETRY / CAPSULE-LEAKAGE AUDIT PASS
 purpose = retrospective grammar calibration
 new relation family = NO
 prospective BCTB-1 target = NOT SELECTED
@@ -36,6 +37,10 @@ M5 credit = NEVER
 scientific-distinctiveness credit = NEVER
 canonical consequence = NONE
 ~~~
+
+The temporal cuts and fold sequence are frozen inputs to this draft.
+
+The execution interface is not frozen until the pre-execution audit required in §19 passes.
 
 BCTB-0 tests whether a historically available GRG grammar can generate a constrained target-side packet before the target evidence that later entered the repository is exposed to the generator.
 
@@ -130,14 +135,25 @@ State:
 - the predicted failure mode;
 - what result would force RETAIN / NARROW / SPLIT / RETYPE / RETIRE.
 
-### P — EVIDENCE-GENERATIVE PROVENANCE
+### P_POST — CURRENT EVIDENCE-GENERATIVE PROVENANCE AUDIT [evaluator scaffold]
 
-State:
+The #1025 evidence-generative provenance vocabulary postdates all four historical cuts.
+
+Therefore it is not part of the historical generator packet and cannot earn historical transfer credit.
+
+After all generator outputs are frozen, but before target-result scoring is finalized, the evaluator applies the current provenance scaffold uniformly:
 
 - what evidence may pay discovery / recurrence;
 - what evidence may pay causal leverage / construction / robustness;
 - what the available evidence may not independently establish;
 - any generative-pseudoreplication or intervention-generated-evidence concern.
+
+Record:
+
+~~~text
+P_POST = PASS / PARTIAL / FAIL / N.A.
+historical generator credit from P_POST = NONE
+~~~
 
 ### O — OBJECTIFICATION SENSITIVITY [conditional]
 
@@ -179,8 +195,9 @@ BCTB-0 therefore uses forward-chaining temporal replay:
 historical GRG snapshot at cut C_t
 +
 bounded target capsule
--> frozen A/X/F/P[/O] packet
--> only then reveal post-C_t target evidence
+-> frozen A/X/F[/O] generator packet
+-> current P_POST provenance audit scaffold applied separately
+-> only then reveal / score against post-C_t target evidence
 ~~~
 
 Each fold is evaluated against the grammar genuinely available before that fold's decisive target material entered the repository.
@@ -204,10 +221,13 @@ no other generator's output
 The generator may use only:
 
 - the exact historical commit named by the fold;
-- a bounded evaluator-declared source pack from that commit;
-- the neutral target capsule.
+- a mechanically generated source-pack manifest from that commit;
+- the neutral target capsule;
+- the arm-specific instruction defined in this charter.
 
 Repository-wide search is prohibited during generation because it can surface later target artifacts.
+
+The target-aware evaluator may not hand-curate generator source content.
 
 ### 5.2 Epistemic blindness
 
@@ -250,7 +270,41 @@ The run may remain a diagnostic stress test, but strong blind-transfer interpret
 
 Named-target replay may be run separately as a secondary diagnostic only.
 
+### 5.4 Identity-probe rule
+
+Before scored generation, run one capsule-only identity probe in a fresh context using the same model family planned for the fold.
+
+Record:
+
+~~~text
+IDENTITY_PROBE =
+NOT INFERRED / INFERRED / AMBIGUOUS
+~~~
+
+If the target identity is inferred:
+
+~~~text
+blind integrity = COMPROMISED
+absolute historical-transfer credit = NO
+between-arm residual comparison = still allowed if all arms receive identical information budgets
+~~~
+
+A COMPROMISED fold does not count as a valid core fold for the §17 minimum-three-valid-fold gate.
+
 ## 6. Temporal folds
+
+### 6.0 Coverage boundary
+
+~~~text
+T1 = Route-A-type calibration
+T2 = cross-mechanism X4b calibration
+T3/T4 = Route-B-type calibration
+Route C evidence-generative-provenance family = NOT CALIBRATED BY BCTB-0 v0.1
+~~~
+
+T2 is relevant to Route C as a mature-neighbor pressure case only. It must not be counted as Route-C calibration evidence.
+
+Route C requires a separate future design if a provenance-clean historical or prospective evidence-generation contrast is found.
 
 ### T1 — X3b / technical operative expectation
 
@@ -388,30 +442,86 @@ Reason for non-core status:
 
 It may diagnose ecology -> infrastructure transfer but must not receive the same evidential weight as the four core folds.
 
-## 7. Source-pack construction
+## 7. Source-pack construction and input isolation
 
-The evaluator builds a bounded source pack at the exact historical cut.
+The target-aware evaluator does not choose source files case by case.
 
-The pack may include only files already present at that cut and relevant to the current GRG burden, such as:
+### 7.1 Mechanical manifest rule
 
-- historical Relation Library owner;
-- historical Research Framework owner;
-- already-admitted source-native cases;
-- already-existing negative controls;
-- already-existing burden / expectation surfaces where present at that cut.
+For each fold, a separate manifest-builder context receives only:
 
-The pack must not be expanded because the evaluator knows what the later target answer was.
+- the exact historical cut;
+- the fixed root-path list below;
+- the mechanical dependency rule;
+- no target name;
+- no post-cut target result;
+- no later GRG revision.
 
-For every included source, record:
+Fixed roots, included only if they exist at that cut:
+
+~~~text
+Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+~~~
+
+Mechanical expansion:
+
+1. include each existing fixed root at the cut;
+2. follow only explicit repository-path dependencies declared by those roots one hop;
+3. include an explicitly linked negative-control / source-native GRG record only if the link already exists at the cut;
+4. do not keyword-search for the target;
+5. do not add a file because it appears useful after knowing the later answer;
+6. preserve file order and exact historical text;
+7. record missing roots rather than replacing them with later files.
+
+The manifest must record:
 
 ~~~text
 path
 ref = exact fold cut
-reason for inclusion
-target-specific information present? yes/no
+inclusion rule = ROOT / ONE-HOP-DEPENDENCY
+content hash / blob sha where available
+target-specific decisive information detected? yes/no
 ~~~
 
-If target-specific decisive information is already present in the proposed source pack, either remove that source or mark the fold INVALID.
+If target-specific decisive information is already present:
+
+~~~text
+FOLD = INVALID
+~~~
+
+### 7.2 Capsule-preparation isolation
+
+A capsule drafter may know only the minimal target-system facts authorized in §8.
+
+It must not see:
+
+- the fold's calibration question;
+- later SourceCards / audits;
+- later GRG revisions;
+- the expected false positive;
+- the expected failure mode.
+
+### 7.3 Independent pre-execution input audit
+
+Before any scored generation, a fresh input-auditor context receives:
+
+- the proposed capsule;
+- the manifest and transformed arm inputs;
+- the generic leakage / symmetry criteria;
+- no post-cut target result or later GRG revision.
+
+It must return:
+
+~~~text
+CAPSULE LEAKAGE = PASS / REVISE / INVALID
+SOURCE-PACK TEMPORAL INTEGRITY = PASS / FAIL
+ARM INFORMATION-BUDGET SYMMETRY = PASS / FAIL
+TRANSFORM REPRODUCIBILITY = PASS / FAIL
+~~~
+
+T1 execution remains blocked until all four are PASS.
 
 ## 8. Neutral target capsules
 
@@ -443,35 +553,40 @@ The purpose of the capsule is to expose the target question, not to pre-solve it
 ~~~text
 System alpha is a software-orchestration environment.
 
-Administrators can create declarative objects expressing desired traffic permissions among running workloads.
-
-The environment also has runtime networking machinery that carries workload traffic.
+Administrators can create configuration resources concerning which running workloads may communicate.
+The environment also contains runtime networking machinery that carries workload traffic.
 
 Task:
 using only the historical source pack,
-state what conditions would be required before the declared expectation should count as an operative constraint;
-identify the nearest false positive and a failure condition.
+propose the strongest warranted cross-domain mapping, if any.
+For that mapping, state:
+(1) admission conditions,
+(2) the nearest plausible false positive,
+(3) a failure / narrowing condition.
+If no mapping is warranted, say so.
 ~~~
 
-Do not supply whether declaration without an effective implementation has traffic effect.
+Do not supply the later specification-versus-enforcement contrast or its result.
 
 ### T2 masked capsule
 
 ~~~text
 System beta repeatedly deploys a predictive model.
 
-Outputs inform actions in the environment.
-Later data are collected and the model may be retrained.
-External distributional change is also possible.
+Model outputs inform actions.
+Later observations are collected and the model may be updated or retrained.
 
 Task:
 using only the historical source pack,
-state when a recursive reconstructed-field relation should be admitted;
-separate it from a superficially similar non-recursive change;
-state a failure condition.
+propose the strongest warranted cross-domain mapping, if any.
+For that mapping, state:
+(1) admission conditions,
+(2) the nearest plausible false positive,
+(3) a failure / narrowing condition.
+If no mapping is warranted, say so.
 ~~~
 
-Do not supply performative-prediction terminology or the source-native answer.
+Do not supply performative-prediction terminology, exogenous-drift contrast, or the source-native answer.
 
 ### T3 masked capsule
 
@@ -480,39 +595,40 @@ System gamma is a long-lived technical network undergoing transition
 from an earlier widely deployed protocol/addressing regime
 to a newer regime.
 
-The earlier regime remains broadly deployed during transition,
-and compatibility/coexistence mechanisms are available.
+The earlier regime remains broadly deployed during transition.
+Compatibility/coexistence mechanisms are available.
 
 Task:
 using only the historical source pack,
-determine whether a successor-inheritance burden is warranted
-beyond current operative compatibility;
-state the nearest false positive,
-the failure/narrowing condition,
-and any carrier claim that should remain open.
+propose the strongest warranted cross-domain mapping, if any.
+For that mapping, state:
+(1) admission conditions,
+(2) the nearest plausible false positive,
+(3) a failure / narrowing condition.
+If no mapping is warranted, say so.
 ~~~
 
-Do not supply the later greenfield/installed-base near-control or the post-target carrier verdict.
+Do not supply the later greenfield/installed-base near-control, inherited-field contrast, or carrier verdict.
 
 ### T4 masked capsule
 
 ~~~text
 System delta is an institutional decision system.
 
-Earlier decisions remain available to later decision makers.
-Later decision makers may cite, reuse, distinguish or decline to follow
-earlier decisions under the system's current procedures.
+Earlier decisions are recorded and remain accessible to later decision makers.
+Later decisions are made under standing institutional procedures.
 
 Task:
 using only the historical source pack,
-determine whether a successor-inheritance burden is warranted
-beyond informational persistence and current-rule operation;
-state the nearest false positive,
-the failure/narrowing condition,
-and what carrier evidence would be required.
+propose the strongest warranted cross-domain mapping, if any.
+For that mapping, state:
+(1) admission conditions,
+(2) the nearest plausible false positive,
+(3) a failure / narrowing condition.
+If no mapping is warranted, say so.
 ~~~
 
-Do not supply the later PAYLOAD / AUTHORITY role labels.
+Do not supply the later binding/persuasive contrast, informational-versus-authority distinction, or PAYLOAD / AUTHORITY role labels.
 
 ## 9. Generator arms
 
