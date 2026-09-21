@@ -251,7 +251,24 @@ Productive-adequacy revision Pass 1 and the first target-blind O-feasibility pas
 
 The fresh-seed spectral pass returned O1-SPECTRAL-PASS: structured versus direct history is perfectly separable under the frozen paired-seed CV on a label-blind recurrent eigenspectrum feature. This pays O1 formation pressure for an operator-embedded candidate family but does not yet pay O3 causal mediation.
 
-The subsequent target-blind O3 causal-mediation test returned O3-CAUSAL-NULL. Cross-realization / source-fidelity Pass 1 therefore splits the old GRG-R1 research burden:
+The first target-blind O3 causal-mediation execution returned O3-CAUSAL-NULL. A later independent robustness execution in PR #1001 used repeated early-learning singular-spectrum resets, an equal-magnitude D-history spectral-direction control, fresh recipients, and a baseline-centered learning-gain metric. It also returned O3-CAUSAL-NULL:
+
+~~~text
+first O3 / one-time transplant:
+median C_SD = 0.001575
+median C_S0 = 0.002794
+
+#1001 stricter robustness O3:
+median C_SD = -0.002745
+median C_SI =  0.010806
+both bootstrap mean confidence intervals cross zero
+~~~
+
+The two runs have separate preregistrations and must not be statistically pooled, but they converge on the same programme conclusion: the toy top-four RNN spectral family pays retained-imprint pressure without earning history-specific causal re-entry. Reconciliation owner: `Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md`.
+
+This does not refute Bowler's source-native intervention. It blocks the shortcut from history-classifiable toy spectral structure to GRG-R1 causal O, and it strengthens the STOP rule against further parameter tuning or O4 in this RNN family.
+
+Cross-realization / source-fidelity Pass 1 therefore splits the old GRG-R1 research burden:
 
 ~~~text
 R1a retained imprint = diagnostic / insufficient
@@ -551,7 +568,9 @@ must survive its measurement / normalization interface.
 
 For HKB, half-cycle / component-aware phase normalization is required for any future raw-data execution; performed amplitude, frequency and oscillation-centre shift remain explicit component variables.
 
-Phase E.8 — NEXT: existing-data access route only. A bounded request package is prepared in `Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`. Do not inspect raw outcomes before a new analysis charter. New human collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
+Phase E.8 — RNN O3 robustness reconciliation: COMPLETE. The authoritative first O3 one-time transplant and the later #1001 maintained/matched-control robustness execution are both NULL. The toy RNN spectral family is STOP at R1c; R1d/O4 is blocked for that family.
+
+Phase E.9 — NEXT: HKB existing-data access route only. A bounded request package is prepared in `Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`. Do not inspect raw outcomes before a new analysis charter. New human collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 

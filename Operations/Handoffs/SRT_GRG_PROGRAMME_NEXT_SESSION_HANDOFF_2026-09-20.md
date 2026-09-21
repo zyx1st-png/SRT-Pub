@@ -124,77 +124,73 @@ Do not silently rewrite O1 / O2-C / O2-A / O2-M.
 
 ## 4. Next live task
 
-Phase C internal red-team Pass 1 is COMPLETE.
+The foundational GRG work, first transfer pilot, O-criterion revision, distributed-neighbor extraction and R1a/R1b/R1c/R1d burden split are complete.
 
-The generative-expectation second adjudication is also COMPLETE in:
-
-`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
-
-Author verdict:
-
-~~~
-B + C, asymmetric / layered.
-
-B = structural generative expectation:
-    immanent directional burden of an actually formed generative relation.
-
-C = formed-locus anticipatory realization:
-    C0 embodied / enacted anticipation;
-    C1 model-mediated anticipation.
-
-B does not require C as its ontological precondition.
-C is downstream of enough formed organization to make anticipation operative from somewhere.
-indexed normativity still requires a typed position / relation / scale.
-full moral legitimacy remains OPEN.
-~~~
-
-Phase D distributed-neighbor extraction Pass 1 is COMPLETE in:
-
-`Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md`
-
-The first bounded GRG-R1 neuroscience transfer pilot is COMPLETE.
-
-Result:
-`Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md`
+RNN spectral line — reconciled result:
 
 ~~~text
-verdict = PILOT-NULL
-eligible S = 12/12
-eligible D = 12/12
-median C_R = 0.000719 < 0.03
-median C_N = -0.152512 < 0.03
-decoder-defined context subspace as causal retained organization O = NOT SUPPORTED
-semantic drift = NO
-canonical edit = NO
+first O3 / one-time spectral transplant
+= O3-CAUSAL-NULL
+median C_SD = 0.001575
+median C_S0 = 0.002794
+
+#1001 stricter robustness O3
+= O3-CAUSAL-NULL
+repeated early-learning spectral resets
++ equal-magnitude D-history spectral-direction control
++ fresh recipients 400..411
+
+median C_SD = -0.002745
+median C_SI =  0.010806
+both bootstrap mean confidence intervals cross zero
 ~~~
 
-Productive-adequacy / O-criterion revision Pass 1 is COMPLETE.
+Reconciliation owner:
 
-Target-blind O1 spectral-formation feasibility is also COMPLETE:
+`Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md`
 
-`Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
+Important provenance correction:
 
 ~~~text
-verdict = O1-SPECTRAL-PASS
-fresh seeds = 100..111 in S and D
-base competence = 24/24
-paired-seed CV history classification = 1.00
-within-pair permutation p = 0.000999
-target data used = NO
+authoritative first O3 execution = trunk v0.1 NULL
+parallel stale-branch claim "v0.1 did not execute" = SUPERSEDED
+#1001 = independent stricter robustness execution
 ~~~
 
-Current gate:
+Current RNN disposition:
 
 ~~~text
-O1 formation = PASS
-O2 retained operator structure = candidate paid
-O3 target-blind causal mediation = NEXT
-O4 prospective re-entry / any new target = HOLD
-v0.2 target execution = HOLD
+R1a retained imprint = PASS
+R1b spectral scaffold = manipulable / source-domain candidate
+R1c history-specific causal re-entry = NULL
+R1d / O4 = BLOCKED
+RNN spectral family = STOP
 ~~~
 
-Do not tune v0.1 into success and do not reopen whole-package strongest-neighbor competition.
+Do not tune this RNN family further.
 
+The live programme route is now the independent non-RNN HKB R1c candidate.
+
+HKB state:
+
+~~~text
+source close-read = PASS
+protocol reconstruction = PASS
+GRG variable typing = PASS
+measurement / normalization guard = PASS / revised
+public original 300-Hz trajectories = NO-GO / NOT LOCATED
+historical author-held data route = PLAUSIBLE / EVIDENCED
+current authorized raw-data route = NOT ESTABLISHED
+request package = PREPARED
+request actually sent = NO
+new human experiment = NO
+simulation-as-confirmation = NO
+R1d / O4 = BLOCKED
+~~~
+
+NEXT = existing-data access route only.
+
+Do not send the request without explicit author action. If access is later obtained, freeze a new raw-data analysis charter before opening outcome data.
 
 ## 5. Distributed-neighbor Pass 1 result
 
@@ -236,21 +232,43 @@ GRG-R1 != downward extra force
 GRG-R1 != universal Selection definition
 ~~~
 
-## 6. First transfer pilot result and revision gate
+## 6. Current GRG-R1 execution gate
 
-Do not open a new broad deep well.
+The first transfer pilot is permanently NULL and the RNN spectral R1c family now has two convergent O3 NULL executions under different controls.
 
-The v0.1 pilot is permanently NULL. Any future v0.2 requires a new visible charter and preregistration. The immediate task is not a rerun; it is to compare stronger pre-target O criteria from Bowler-style recurrent dynamical mediation, synergetic order-parameter logic and Simondonian operation-structure recurrence.
+The programme-method update is:
 
-Preferred first bounded pilot remains an existing neuroscience surface, likely lateral inhibition / recurrent-history / objectification, because it can test whether GRG changes a domain question before result inspection.
+~~~text
+R1a evidence != R1b evidence != R1c evidence != R1d evidence
 
-Pilot requirement:
+detectable history marker
+!= maintained causal organization
 
-freeze one neutral GRG relation first;
-derive a domain-native change to unit / variable / control / perturbation / failure expectation;
-then inspect evidence.
+history-classifiable operator structure
+!= history-specific causal re-entry
+unless intervention direction has specific consequence
+~~~
 
-Retrospective translation only = pilot failure for GRG transfer.
+The toy RNN spectral family is closed by default. A renewed RNN route requires a materially different source-native causal object, not parameter tuning.
+
+The current live execution route is HKB existing-data access only.
+
+Allowed now:
+
+- preserve and use the prepared access-request package;
+- verify whether original bilateral trajectory data and perturbation metadata are still available;
+- verify reuse / ethics / de-identification terms;
+- if access is granted, freeze a new analysis charter before opening raw outcomes.
+
+Not allowed now:
+
+- weaken the HKB question to aggregate-only evidence;
+- send a data request without explicit author action;
+- run a new human experiment;
+- use simulation as confirmation of HKB R1c;
+- open R1d / O4;
+- reopen the RNN spectral family by tuning;
+- edit canonical ontology.
 
 ## 7. Canonical HOLD
 
@@ -272,33 +290,42 @@ Use:
 
 @GitHub 继续 zyx1st-png/SRT-Pub 的 post-#976 GRG programme。
 
-先按 AGENTS.md §Session Start 核验 live main、STATUS、PR #994，并读取分支 theory/grg-programme-20260920 上的：
-1) 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
-2) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
-3) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
-4) Operations/Audits/SRT_GRG_DISTRIBUTED_NEIGHBOR_EXTRACTION_PASS1_2026-09-20.md
-5) Operations/Audits/SRT_GRG_R1_NEUROSCIENCE_TRANSFER_PILOT_RESULT_2026-09-20.md
-6) Operations/Audits/SRT_GRG_R1_PRODUCTIVE_ADEQUACY_O_CRITERION_REVISION_PASS1_2026-09-20.md
-7) Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md
+先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
+1) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+2) Operations/Audits/SRT_GRG_R1_O3_CAUSAL_MEDIATION_RESULT_2026-09-21.md
+3) Operations/Audits/SRT_GRG_R1_O3_V0_3_CAUSAL_MEDIATION_RESULT_2026-09-21.md
+4) Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md
+5) Operations/Audits/SRT_GRG_R1_CROSS_REALIZATION_SOURCE_FIDELITY_PASS1_2026-09-21.md
+6) Operations/Audits/SRT_GRG_R1_HKB_SOURCE_PROTOCOL_ACCESS_FEASIBILITY_2026-09-21.md
+7) Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md
 8) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
 ~~~text
 generative expectation = B+C asymmetric/layered
-distributed-neighbor Pass 1 = COMPLETE
-GRG-R1 v0.1 transfer pilot = PILOT-NULL
-decoder-defined O = REJECT
-revised O gate = O1 -> O2 -> O3 -> O4
-O1 spectral formation = PASS
-O2 retained operator structure = candidate paid
-O3 target-blind causal mediation = NEXT
-O4 / any new transfer target = HOLD
-v0.2 target execution = HOLD
+
+R1a/R1b/R1c/R1d burden split = ACTIVE PROGRAMME ROUTING
+
+RNN spectral O3 first execution = NULL
+RNN spectral O3 stricter robustness execution = NULL
+RNN spectral family = STOP AT R1c
+RNN O4 = BLOCKED
+
+selected live non-RNN R1c candidate = HKB coordination dynamics
+HKB source/protocol feasibility = PASS
+public raw trajectories = NOT LOCATED
+authorized raw-data access = NOT ESTABLISHED
+access request package = PREPARED / NOT SENT
+
+NEXT = existing-data access route only
+new human experiment = NO
+simulation-as-confirmation = NO
+R1d / O4 = BLOCKED
 canonical edit = NO
 ~~~
 
-下一步只做 O3 target-blind causal-mediation feasibility：在 base/source-domain surface 上验证 operator-embedded spectral / dynamical scaffold 是否具有独立因果中介作用。优先把 Bowler eigenspectrum intervention 当 source-native positive control，并设计 structure-randomized / functional-damage-matched controls。不要生成、选择或查看新的 transfer target，不要调 v0.1，不要重新进入 winner-style strongest-neighbor novelty audit。
+不要重新跑或调参 RNN spectral family；不要把两个 O3 execution 当作同一 preregistration 进行 pooled inference。HKB 路线只继续 existing-data access；若未获得明确授权，不要代作者发送数据请求。若未来拿到真实 raw access，必须在查看 outcome 前另行冻结 analysis charter。不要重新进入 winner-style strongest-neighbor novelty audit。
 
 ## 9. Stop rule
 

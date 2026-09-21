@@ -1,7 +1,8 @@
 ---
 id: SRT-GRG-R1-O3-V0-1-PREEXECUTION-VALIDITY-AUDIT-20260921
 type: audit
-status: active
+status: archived
+record_stage: superseded
 date: 2026-09-21
 layer: operations
 epistemic_layer: experimental
@@ -9,6 +10,7 @@ claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md
   - Experiments/grg_r1_o3_causal_mediation/O3_CAUSAL_MEDIATION_PROTOCOL_v0_1.md
   - Experiments/grg_r1_o3_causal_mediation/run_o3.py
   - Operations/Audits/SRT_GRG_R1_PRODUCTIVE_ADEQUACY_O_CRITERION_REVISION_PASS1_2026-09-20.md
@@ -16,6 +18,8 @@ tags: [GRG, GRGR1, O3, PreExecutionAudit, Superseded]
 ---
 
 # GRG-R1 O3 v0.1 pre-execution validity audit
+
+> **SUPERSEDED PROVENANCE NOTE:** this audit was created on a stale parallel branch before that branch incorporated the already-completed trunk v0.1 execution. Do **not** use its statements that “v0.1 did not execute” as global repository history. The authoritative first execution is `Operations/Audits/SRT_GRG_R1_O3_CAUSAL_MEDIATION_RESULT_2026-09-21.md`. The design criticisms below are retained only as retrospective limitations and motivation for the later stricter robustness run. Full reconciliation: `Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md`.
 
 ## Verdict
 
