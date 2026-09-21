@@ -747,6 +747,39 @@ G0-G11 remain a provisional discovery scaffold pending retyping.
 
 Further M4 escalation is not the immediate mainline.
 
+## 16.2 GRG v0.1 consolidation — 2026-09-21
+
+The foundational re-prioritization has now produced a first coherent review owner:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Provisional author construction source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+Status:
+
+~~~text
+GRG v0.1 first coherent architecture = COMPLETE
+whole-architecture author review = NEXT
+further architecture expansion before review = STOP
+~~~
+
+The old G0-G11 list remains discovery provenance, not the primary skeleton.
+
+The first-version typed architecture is organized as:
+
+~~~text
+upstream constraints
+-> cross-cutting formation / maintenance / objectification burdens
+-> core vertical relations
+-> composition
+-> consequence typing
+-> expectation / anticipation
+-> indexed normativity
+-> reflexive grammar learning
+~~~
+
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
 ## 17. No-write zones for this programme stage
