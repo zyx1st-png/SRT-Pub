@@ -63,11 +63,18 @@ C = {c1, c2, ... cn}
 
 ci = <
   source-native component,
-  provenance kind,
-  causal role,
+  provenance metadata,
+  causal role(s),
   role evidence / near-control,
-  standalone sufficiency status
+  component status
 >
+
+architecture cardinality =
+SINGLE-COMPONENT / MULTI-COMPONENT
+
+minimal role set sufficient for X4c =
+architecture sufficiency =
+PASS / OPEN / FAIL
 ~~~
 
 The purpose is to prevent:
@@ -78,9 +85,9 @@ from becoming
 "everything mattered somehow."
 ~~~
 
-## 3. Provenance kinds
+## 3. Provenance metadata
 
-Current non-exhaustive kinds:
+Current non-exhaustive medium / source descriptors:
 
 ~~~text
 P-MAT
@@ -94,16 +101,34 @@ P-INST
 
 P-INFO
 = informational / symbolic content component
-
-P-MIXED
-= shorthand only for an explicitly decomposed multi-component architecture
 ~~~
 
-These are operational provenance kinds.
+These are component metadata.
 
-They are not ontology entities.
+They are not mutually exclusive carrier classes.
 
-Future source-native cases may require refinement.
+They do not receive relation maturity.
+
+Historical `P-MIXED` is retired as a provenance kind.
+
+Use instead:
+
+~~~text
+architecture cardinality =
+SINGLE-COMPONENT
+or
+MULTI-COMPONENT
+~~~
+
+and list the actual components.
+
+Core correction:
+
+~~~text
+provenance kind tells us what a component is / where it comes from.
+
+causal role tells us what that component does in successor inheritance.
+~~~
 
 ## 4. Causal-role vocabulary
 
@@ -143,13 +168,13 @@ Do not force every case into every role.
 For each component, distinguish:
 
 ~~~text
-STANDALONE-PASS
-= source evidence supports this component architecture as sufficient
-  for the declared X4c inheritance burden.
-
 COMPONENT-ROLE-PASS
 = the component has an independently supported causal role
-  inside a mixed carrier, but standalone sufficiency is not established.
+  in the declared carrier architecture.
+
+COMPONENT-SUFFICIENT
+= the case record supports a single-component architecture
+  as sufficient for the declared X4c inheritance burden.
 
 PRESENT / ROLE-OPEN
 = component is present but its causal role is not separately established.
@@ -168,25 +193,29 @@ No status changes X4c maturity by itself.
 ### 6.1 Ecological inheritance
 
 ~~~text
+cardinality = SINGLE-COMPONENT
+
 C = {
   c1:
-    provenance = P-ECO
+    provenance metadata = P-ECO
     role = SUBSTRATE / MAINTENANCE
     evidence = modified environmental state persists into later organisms
-    status = STANDALONE-PASS for current source-native ecological case family
+    status = COMPONENT-SUFFICIENT for this declared case family
 }
 ~~~
 
 ### 6.2 CIV-006 combined-sewer legacy
 
 ~~~text
+cardinality = SINGLE-COMPONENT
+
 C = {
   c1:
-    provenance = P-MAT
+    provenance metadata = P-MAT
     role = SUBSTRATE / MAINTENANCE / INTERFACE
     evidence = maintained material hydraulic network
                conditions successor operation / retrofit
-    status = STANDALONE-PASS for declared material-inheritance burden
+    status = COMPONENT-SUFFICIENT for this declared case
 }
 ~~~
 
@@ -197,52 +226,63 @@ That does not make regulation the inheritance carrier.
 ### 6.3 IPv4 -> IPv6 installed base
 
 ~~~text
+cardinality = MULTI-COMPONENT
+
 C = {
   c1:
-    provenance = P-INFO
+    provenance metadata = P-INFO
     role = PAYLOAD
     evidence = protocol / address semantics participate in inherited compatibility field
     status = COMPONENT-ROLE-PASS
 
   c2:
-    provenance = P-MAT / technical deployment
+    provenance metadata = P-MAT
     role = SUBSTRATE / ENACTMENT / INTERFACE
     evidence = installed hosts / routers / applications / routing infrastructure
     status = COMPONENT-ROLE-PASS
 
   c3:
-    provenance = P-INST
-    role = MAINTENANCE / operational coordination
-    evidence = standards / deployment practice support coexistence
-    status = COMPONENT-ROLE-PASS
+    provenance metadata = P-INST
+    proposed role = MAINTENANCE / operational coordination
+    evidence = standards / deployment practice are present
+    status = PRESENT / ROLE-OPEN
 }
 
-overall = P-MIXED
-P-INFO standalone = NOT-ESTABLISHED
+minimal paid role set =
+PAYLOAD + SUBSTRATE/ENACTMENT/INTERFACE
+
+architecture sufficiency = PASS
+
+P-INFO as a single-component architecture = NOT-ESTABLISHED
 ~~~
 
 ### 6.4 CIV-007 precedent / stare decisis
 
 ~~~text
+cardinality = MULTI-COMPONENT
+
 C = {
   c1:
-    provenance = P-INFO
+    provenance metadata = P-INFO
     role = PAYLOAD
     evidence = prior holding / legal rule provides inherited content
     status = COMPONENT-ROLE-PASS
 
   c2:
-    provenance = P-INST
+    provenance metadata = P-INST
     role = AUTHORITY
     evidence = binding vs persuasive authority differs by hierarchy / jurisdiction
     near-control = persuasive authority / case of first impression
     status = COMPONENT-ROLE-PASS
 }
 
-overall = P-MIXED
+minimal paid role set =
+PAYLOAD + AUTHORITY
 
-P-INST standalone total carrier = NOT-ESTABLISHED
-P-INFO standalone total carrier = NOT-ESTABLISHED
+architecture sufficiency = PASS
+
+single-component P-INST architecture = NOT-ESTABLISHED
+single-component P-INFO architecture = NOT-ESTABLISHED
 ~~~
 
 ## 7. Near-control rule
@@ -269,26 +309,37 @@ A near-control need not be a randomized experiment.
 
 It must isolate enough of the proposed role to make the component claim informative.
 
-## 8. Standalone provenance rule
+## 8. Architecture sufficiency rule
 
-Do not award a standalone provenance category because one component appears salient.
+Do not award a provenance category a global "standalone" status.
 
-Require:
-
-~~~text
-the declared component architecture
-is sufficient for successor inheritance
-under the source-native case
-without an essential second carrier component.
-~~~
-
-If not:
+Ask instead:
 
 ~~~text
-use P-MIXED
-+ decompose components
-+ state causal roles.
+for this source-native case,
+what is the minimal component / role architecture
+sufficient to transmit the reconstructed field into the successor cohort?
 ~~~
+
+If one component is enough:
+
+~~~text
+cardinality = SINGLE-COMPONENT
+~~~
+
+If several are necessary:
+
+~~~text
+cardinality = MULTI-COMPONENT
+~~~
+
+Unsupported claimed components remain:
+
+~~~text
+PRESENT / ROLE-OPEN
+~~~
+
+and cannot strengthen X4c admission.
 
 ## 9. Relation / carrier / expectation separation
 
@@ -360,34 +411,57 @@ institution carries field
 
 Reject.
 
-## 11. Programme status
+## 11. Programme status after adequacy Pass 1
+
+Adequacy owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Verdict:
 
 ~~~text
-P-ECO standalone = PASS in current ecological inheritance family
-P-MAT standalone = PASS in CIV-006 material inheritance
-
-P-INFO standalone = OPEN / NOT ESTABLISHED
-P-INST standalone = OPEN / NOT ESTABLISHED
-
-P-INFO component role = PASS in mixed cases
-P-INST component role = PASS in precedent mixed case
-
-P-MIXED = valid only when decomposed
+CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
+PROVENANCE-KIND-FIRST MODEL = NARROW
+CAUSAL-ROLE-FIRST MODEL = ACTIVE
+P-MIXED AS PROVENANCE KIND = RETIRED
 ~~~
+
+Current case-bounded states:
+
+~~~text
+ecological inheritance =
+SINGLE-COMPONENT P-ECO / SUBSTRATE+MAINTENANCE = PASS
+
+CIV-006 =
+SINGLE-COMPONENT P-MAT / SUBSTRATE+MAINTENANCE+INTERFACE = PASS
+
+IPv4/IPv6 =
+MULTI-COMPONENT = PASS
+P-INFO PAYLOAD = PASS
+P-MAT SUBSTRATE/ENACTMENT/INTERFACE = PASS
+P-INST proposed maintenance role = ROLE-OPEN
+
+precedent =
+MULTI-COMPONENT = PASS
+P-INFO PAYLOAD = PASS
+P-INST AUTHORITY = PASS
+~~~
+
+No provenance kind receives its own M-status.
 
 ## 12. Next gate
 
 Do not hunt standalone provenance categories merely to fill the table.
 
-Next framework question:
+Adequacy Pass 1 answered the prior question positively for the carrier architecture and negatively for provenance-kind-first classification.
 
-> Does carrier-role decomposition improve prediction / exclusion / revision across existing cases enough to justify keeping provenance as a first-class GRG analysis surface?
+Next bounded question:
 
-A later pass should compare:
+> Are the current causal roles recurrent and discriminating enough to justify a reusable Role Library?
 
-- whether role decomposition blocks false X4c admissions;
-- whether it predicts which near-control is required;
-- whether it exposes redundant provenance categories.
+Before creating one, run a role census across existing X4c carrier records.
+
+Do not create the library if role recurrence is weak or merely terminological.
 
 ## 13. Canonical boundary
 
