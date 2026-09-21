@@ -288,7 +288,7 @@ not as an adjudication that NCT is the exclusive or superior evolutionary framew
 Audit:
 `Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`
 
-RELATION LIBRARY + INVARIANCE PASS 1 = COMPLETE:
+RELATION LIBRARY + INVARIANCE PASS 1 = COMPLETE / HISTORICAL PRE-M3 CHECKPOINT:
 
 ~~~text
 live owner:
@@ -304,17 +304,17 @@ without paying recursive selection/viability feedback.
 -> X4a passes while X4b admission fails under that record.
 
 X3b:
-M2 / provisional semantic-invariance PASS
+M2 / provisional semantic-invariance PASS [historical pre-transfer]
 across technical + legal + local-institutional carriers
 distinctiveness OPEN
 substitutability pressure HIGH
 
 X4b:
-M2 / DOMAIN-LIMITED
+M2 / DOMAIN-LIMITED [historical pre-transfer]
 biological selective-feedback invariance PASS
 genuine cross-domain invariance NOT ESTABLISHED
 
-M3 = NONE
+M3 at this historical checkpoint = NONE
 ~~~
 
 Audit:
