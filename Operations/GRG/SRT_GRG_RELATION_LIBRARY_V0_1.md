@@ -26,9 +26,15 @@ It is not a canonical ontology owner.
 
 It tracks admission burdens, non-identities, evidence state, negative controls, cross-domain maturity, revision history and next gates.
 
-The provisional G0–G11 programme burdens remain upstream research slots in:
+The provisional G0–G11 programme burdens are retained as historical discovery scaffolding in:
 
 Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+
+They are no longer treated as one homogeneous or linear GRG skeleton.
+
+Current foundational role owner:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
 
 ## 1. Status vocabulary
 
