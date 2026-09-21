@@ -292,25 +292,68 @@ Operations/GRG/Transfers/SRT_GRG_TR_X4B_01_PERFORMATIVE_PREDICTION_2026-09-21.md
 
 ### X4c — inherited reconstructed condition
 
-Admission requires:
+Admission now requires:
 
 ~~~text
-reconstructed condition
-+ persistence / maintenance / reproduction across a later cycle or generation
-+ later participants actually inherit the changed generative field
+1. X4a-level reconstruction of field F is established;
+2. an identifiable inheritance carrier C preserves / maintains /
+   reproduces enough of F into a later cohort or cycle;
+3. later participants enter under F without needing to make
+   the original reconstruction choice;
+4. inherited F materially changes later action / accessibility /
+   maintenance / transition possibilities.
 ~~~
 
-Core guard:
+Core guards:
 
 ~~~text
 persistence != inheritance automatically
+successor exposure != inheritance if later possibilities are unchanged
+inheritance != irreversibility
+inheritance != memory of origin
+old != inherited generative field
+~~~
+
+Inheritance provenance tags:
+
+~~~text
+P-MAT = material / infrastructural carrier
+P-ECO = ecological / environmental carrier
+P-INST = institutional / rule scaffold
+P-INFO = informational / symbolic carrier
+P-MIXED = mixed
+~~~
+
+These tags type the carrier.
+
+They are not new GRG relations.
+
+Positive cross-domain pressure:
+
+- ecological inheritance / niche construction -> P-ECO;
+- combined-sewer legacy infrastructure -> P-MAT.
+
+CIV-006 infrastructure result:
+
+~~~text
+historical construction
+-> persistent / maintained material hydraulic field
+-> successor urban cohort enters inherited field
+-> later operation / compliance / retrofit options are conditioned
 ~~~
 
 Current maturity:
 
 ~~~text
-M1/M2 source-dependent
+M3 = PASS
+cross-domain semantic invariance = PASS
+M4 = NOT TESTED / NONE
+scientific distinctiveness = NOT ESTABLISHED
 ~~~
+
+M3 owner:
+
+Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
 
 ## 5. Admission discipline
 
@@ -400,6 +443,7 @@ Current relation maturity:
 ~~~text
 X3b = M3
 X4b = M3
+X4c = M3
 M4 = NONE
 M5 = NONE
 ~~~

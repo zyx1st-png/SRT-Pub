@@ -404,7 +404,22 @@ position / horizon conflict ledger:
 Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 ~~~
 
-The burden matrix and expectation ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position or evidence type.
+The burden matrix, expectation ledger and PH ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position, horizon or evidence type.
+
+CIV-006 adds two required provenance dimensions:
+
+~~~text
+inheritance provenance:
+P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+
+expectation provenance:
+E-MAT / E-TECH / E-LEGAL / E-ORG /
+E-NORM / E-BIO / E-MODEL / E-MIXED
+~~~
+
+These provenance tags type how a relation is carried or how an expectation is sourced.
+
+They are not new ontology entities or moral ranks.
 
 ## 14. First implementation rule
 
@@ -422,6 +437,17 @@ Seed the architecture with a small diverse set:
 Choose cases with reasonably strong source access and explicit failure pressure.
 
 The purpose of the first set is to test the schema, not to prove a theory of civilization.
+
+Long-duration infrastructure seed:
+
+~~~text
+CIV-006 combined-sewer legacy = COMPLETE
+X4c material inheritance = M3
+~~~
+
+Next historical pressure should not be another material-infrastructure example by default.
+
+Prefer an institutional or informational inheritance case that can falsify or narrow the carrier-explicit X4c rule.
 
 ## 15. Canonical and political guard
 

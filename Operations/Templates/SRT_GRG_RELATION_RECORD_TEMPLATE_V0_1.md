@@ -119,6 +119,38 @@ what would count as mismatch =
 
 Do not infer goodness from expectation.
 
+## G.1 Generative expectation provenance
+
+Where a relation carries a structural expectation, type its provenance:
+
+~~~text
+E-MAT = material / infrastructural constraint
+E-TECH = technical / interface constraint
+E-LEGAL = legal / regulatory requirement
+E-ORG = organizational / institutional rule-in-use
+E-NORM = social / normative expectation
+E-BIO = biological / viability relation
+E-MODEL = model-mediated / analytic expectation
+E-MIXED = multiple layers
+~~~
+
+Record separately:
+
+~~~text
+expectation provenance =
+structural expectation =
+expectation failure =
+multiple provenance layers? =
+~~~
+
+Guard:
+
+~~~text
+material expectation != legal obligation
+legal obligation != moral legitimacy
+technical compatibility != social norm
+~~~
+
 ## H. Normativity interface — only if warranted
 
 ~~~text

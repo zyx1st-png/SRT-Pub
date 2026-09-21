@@ -784,7 +784,7 @@ Bearer admission threshold + Bearer <-> position stability
 16. X3 split = X3a articulated expectation / X3b operative expectation regime; written rule != operative institution;
 17. X4 split = X4a reconstructed condition / X4b recursive feedback / X4c inherited reconstructed condition; long-term effect != feedback/inheritance;
 18. CIV-004 Nepal irrigation = X3b positive source pressure; CIV-005 beaver ecosystem engineering = X4a positive but X4b not automatically paid;
-19. X3a/X3b/X4a/X4b remain M2; X4c M1/M2 source-dependent; no M3 promotion;
+19. historical mature-source checkpoint: X3a/X3b/X4a/X4b were M2 and X4c M1/M2 before later transfer / infrastructure passes; live M-status is superseded below;
 20. live Relation Library owner = ESTABLISHED at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md;
 21. negative-control discipline = PAID: formal-decoupling rejects X3b automatic admission; ecosystem-engineering-only evidence rejects X4b automatic admission;
 22. M3/M4 distinction = EXPLICIT: M3 independent source-native relation match != M4 prospective transfer gain != scientific distinctiveness;
@@ -803,16 +803,21 @@ Bearer admission threshold + Bearer <-> position stability
 35. Position / Horizon Conflict Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md;
 36. X6 multi-position consequence divergence = RETYPED / REMOVED FROM RELATION QUEUE; PH is a cross-cutting analysis burden with NO M-status;
 37. PH guard = position/horizon sensitivity != evidenced directional conflict; conflict must be source-paid case by case;
-38. current strongest PH divergence = AMR immediate patient benefit vs long-horizon population treatment-effectiveness erosion;
-39. road-capacity record pays temporal adaptation divergence but NOT a sourced cross-position distributive conflict in the current package;
-40. Nepal irrigation pays position sensitivity through tail-end water measurement but NOT an established upstream/downstream directional conflict;
-41. next framework work = pressure first long-duration historical/infrastructure case with burden matrix + expectation ledger + PH together, seeking exclusion/revision rather than a new relation by default;
-42. periodic M4 only when target ownership is genuinely uncertain;
-43. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-44. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-45. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-46. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-47. do not restart winner-style strongest-neighbor novelty audit;
+38. CIV-006 combined-sewer long-duration infrastructure pass = COMPLETE; freeze preceded dedicated source inspection;
+39. CIV-006 source-native topology = historical reconstruction -> persistent/maintained material carrier -> successor cohort inherits field -> later operation/compliance/retrofit possibilities are conditioned;
+40. X4c inherited reconstructed condition = M3 PASS; ecological P-ECO + infrastructure P-MAT cross-domain semantic invariance;
+41. X4c carrier-explicit admission = ACTIVE: inheritance requires carrier + successor cohort + changed later possibility structure; persistence/age/sunk cost alone do not pay it;
+42. inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED; provenance != relation identity;
+43. expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED;
+44. CIV-006 expectation split = material structural compatibility burden != modern legal water-quality obligation != moral legitimacy;
+45. CIV-006 PH = horizon divergence EVIDENCED; position sensitivity EVIDENCED; fine-grained distributive conflict OPEN;
+46. next framework work = pressure an institutional or informational inheritance candidate against the new carrier-explicit X4c rule; seek falsification/narrowing rather than more material cases;
+47. periodic M4 only when target ownership is genuinely uncertain;
+48. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+49. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+50. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+51. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+52. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

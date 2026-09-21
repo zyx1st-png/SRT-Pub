@@ -32,17 +32,51 @@ without turning functional expectation into moral legitimacy.
 
 ## 1. Ledger
 
-| Case / relation | Structural generative expectation | Actual / possible mismatch | Indexed comparison | Affected position / horizon | Additional moral premise still required |
-|---|---|---|---|---|---|
-| Internet standards / X3b | implementations must satisfy enough protocol constraints for interoperability | specification exists but implementations diverge / fail interoperability | stronger/weaker relative to interoperability relation | implementers/users; operational horizon | why interoperability should override competing goals |
-| Montreal Protocol / X3b | controlled-substance behavior should follow maintained schedules sufficient to reduce ozone-depleting burden | commitments without implementation; uncontrolled emissions; failed substitution | stronger/weaker relative to ozone-protection goal | states, industries, populations, atmosphere; decades | justice of burden allocation, finance, rights, political legitimacy |
-| Nepal irrigation / X3b | rules-in-use should coordinate contribution, monitoring, maintenance and allocation sufficiently for irrigation function | formal rules decouple; monitoring/sanction fails; tail-end access collapses | stronger/weaker relative to irrigation maintenance/allocation | upstream/downstream users; seasonal/long-run | fairness of allocation, authority, rights |
-| AI-agent authorization / X3b | stated policy should be backed by operative authorization if protected action must remain inaccessible | policy says no while capability remains reachable | stronger/weaker relative to declared security boundary | user/operator/affected system; immediate | legitimacy of policy objective, autonomy/privacy tradeoffs |
-| AMR / X4b | present antimicrobial use should be evaluated together with how it changes later resistance conditions | immediate treatment succeeds while future treatment field degrades | stronger/weaker relative to preserving treatment effectiveness | current patient vs future population; short/long horizon | justice of access, duty allocation, acceptable risk |
-| Performative prediction / X4b | deployment assessment should include how predictions change the future data/risk distribution on which they are evaluated | model optimized for static distribution destabilizes or reshapes future distribution | stronger/weaker relative to stated predictive/control objective | deployed population / institution; iterative horizon | fairness, rights, legitimacy of intervention |
-| Road capacity / X4b | appraisal should include how lower generalized travel cost changes later demand and network loading | immediate congestion benefit erodes under induced travel | stronger/weaker relative to congestion/appraisal objective | travelers, residents, future land users; short/long horizon | environmental justice, land-use values, distributional policy goals |
-| RNN R1c adverse case | candidate retained organization should specifically affect later learning under targeted intervention | history marker exists but matched intervention shows no specific causal advantage | relation admission weaker / fails R1c | synthetic network only | none; normativity not opened |
-| HKB R1c candidate | maintained coordination organization should condition perturbation relaxation beyond component-only explanation | normalization or component variables exhaust apparent relation effect | relation admission stronger/weaker | participant coordination process; seconds | none; normativity not opened |
+Expectation provenance tags:
+
+~~~text
+E-MAT = material / infrastructural constraint
+E-TECH = technical / interface constraint
+E-LEGAL = legal / regulatory requirement
+E-ORG = organizational / institutional rule-in-use
+E-NORM = social / normative expectation
+E-BIO = biological / viability relation
+E-MODEL = model-mediated / analytic expectation
+E-MIXED = multiple distinct provenance layers
+~~~
+
+These tags state where the expectation burden comes from.
+
+They do not establish moral legitimacy.
+
+| Case / relation | Expectation provenance | Structural generative expectation | Actual / possible mismatch | Indexed comparison | Affected position / horizon | Additional moral premise still required |
+|---|---|---|---|---|---|---|
+| Internet standards / X3b | E-TECH + E-ORG | implementations must satisfy enough protocol constraints for interoperability | specification exists but implementations diverge / fail interoperability | stronger/weaker relative to interoperability relation | implementers/users; operational horizon | why interoperability should override competing goals |
+| Montreal Protocol / X3b | E-LEGAL + E-ORG | controlled-substance behavior should follow maintained schedules sufficient to reduce ozone-depleting burden | commitments without implementation; uncontrolled emissions; failed substitution | stronger/weaker relative to ozone-protection goal | states, industries, populations, atmosphere; decades | justice of burden allocation, finance, rights, political legitimacy |
+| Nepal irrigation / X3b | E-ORG + E-NORM | rules-in-use should coordinate contribution, monitoring, maintenance and allocation sufficiently for irrigation function | formal rules decouple; monitoring/sanction fails; tail-end access collapses | stronger/weaker relative to irrigation maintenance/allocation | upstream/downstream users; seasonal/long-run | fairness of allocation, authority, rights |
+| AI-agent authorization / X3b | E-TECH + E-LEGAL/ORG depending deployment | stated policy should be backed by operative authorization if protected action must remain inaccessible | policy says no while capability remains reachable | stronger/weaker relative to declared security boundary | user/operator/affected system; immediate | legitimacy of policy objective, autonomy/privacy tradeoffs |
+| AMR / X4b | E-BIO + E-MODEL/public-health | present antimicrobial use should be evaluated together with how it changes later resistance conditions | immediate treatment succeeds while future treatment field degrades | stronger/weaker relative to preserving treatment effectiveness | current patient vs future population; short/long horizon | justice of access, duty allocation, acceptable risk |
+| Performative prediction / X4b | E-MODEL | deployment assessment should include how predictions change the future data/risk distribution on which they are evaluated | model optimized for static distribution destabilizes or reshapes future distribution | stronger/weaker relative to stated predictive/control objective | deployed population / institution; iterative horizon | fairness, rights, legitimacy of intervention |
+| Road capacity / X4b | E-TECH + E-MODEL | appraisal should include how lower generalized travel cost changes later demand and network loading | immediate congestion benefit erodes under induced travel | stronger/weaker relative to congestion/appraisal objective | travelers, residents, future land users; short/long horizon | environmental justice, land-use values, distributional policy goals |
+| Combined-sewer legacy / X4c | E-MAT primary; E-LEGAL secondary | later operation must work through, repair, bypass or replace inherited hydraulic infrastructure; modern regulation separately requires overflow control / water-quality compliance | material compatibility can be preserved while wet-weather pollution/control burden remains; legal compliance can fail even when ordinary conveyance works | stronger/weaker relative to sanitation/drainage + overflow-control relation, with material and legal layers kept distinct | later residents/utilities/receiving-water users; century-scale inheritance + present operation | fair burden allocation, acceptable cost, intergenerational obligation, environmental justice |
+| RNN R1c adverse case | E-MODEL only | candidate retained organization should specifically affect later learning under targeted intervention | history marker exists but matched intervention shows no specific causal advantage | relation admission weaker / fails R1c | synthetic network only | none; normativity not opened |
+| HKB R1c candidate | E-MODEL / dynamical | maintained coordination organization should condition perturbation relaxation beyond component-only explanation | normalization or component variables exhaust apparent relation effect | relation admission stronger/weaker | participant coordination process; seconds | none; normativity not opened |
+
+### 1.1 Provenance non-identity
+
+The CIV-006 case exposes a load-bearing distinction:
+
+~~~text
+material structural expectation
+!= technical design expectation
+!= legal obligation
+!= social norm
+!= moral legitimacy
+~~~
+
+A single case may contain multiple expectation layers.
+
+The ledger should preserve them rather than collapse them into one generalized ought.
 
 ## 2. B versus C
 

@@ -129,9 +129,11 @@ nearest false convergence =
 ## I. Generative expectation
 
 ~~~text
+expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED
 encoded / structural expectation =
 what future continuation it tries to stabilize =
 what would count as expectation failure =
+multiple expectation layers present? =
 ~~~
 
 Do not equate expectation with moral rightness.

@@ -85,6 +85,7 @@ DIVERGENCE NOT ESTABLISHED
 | AI-agent authorization | X3b | user / operator / affected system may differ | immediate execution / downstream consequence | source audit supports policy-versus-operative-authorization distinction | POSITION INDEX RELEVANT; CONFLICT NOT ESTABLISHED BY M4-01 | security objective, autonomy, privacy and authority require additional premises |
 | Performative prediction | X4b | deployer / predicted population / institution may differ | deployment / repeated retraining horizon | model deployment can alter future data / target distribution and later risk conditions | HORIZON FEEDBACK EVIDENCED; DISTRIBUTIONAL CONFLICT NOT ESTABLISHED IN CURRENT GRG RECORD | fairness and legitimacy require separate target-domain evidence |
 | RNN R1c adverse calibration | R1c | synthetic network only | training / later-learning horizon | retained imprint did not pay specific matched causal re-entry | NOT A CIVILIZATIONAL POSITION CONFLICT | normativity not opened |
+| Combined-sewer legacy infrastructure | X4c | later residents / utilities / receiving-water users / ecological receivers are materially distinct positions; fine-grained demographic incidence remains open | 19th-century formation -> present operation / long-term control | historical sanitation/drainage benefit coexists with later wet-weather pollution and control/retrofit burden under changed treatment/water-quality regimes | HORIZON DIVERGENCE EVIDENCED; POSITION SENSITIVITY EVIDENCED; FINE-GRAINED DISTRIBUTIVE CONFLICT OPEN | no automatic verdict about original design, present policy, rate allocation or environmental justice |
 | HKB coordination candidate | R1b/R1c | participant-level motor components / relation | sub-second perturbation / relaxation | source/protocol candidate only; raw reanalysis pending | NOT A CIVILIZATIONAL POSITION CONFLICT | normativity not opened |
 
 ## 3. Strongest current divergence case
@@ -172,6 +173,24 @@ Therefore this ledger currently treats position / horizon divergence as a cross-
 Owner of the retyping decision:
 
 Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
+## 6.1 CIV-006 lesson
+
+CIV-006 shows why PH must stay separate from relation identity.
+
+~~~text
+X4c inheritance can be strongly paid
+while
+fine-grained distributive conflict remains open.
+~~~
+
+The same record can therefore support:
+
+- strong relation admission;
+- strong horizon divergence;
+- only partial position-conflict evidence.
+
+This separation is intentional.
 
 ## 7. Next development
 
