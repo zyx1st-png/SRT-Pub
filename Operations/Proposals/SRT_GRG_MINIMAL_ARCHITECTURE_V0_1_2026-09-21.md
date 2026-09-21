@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-MINIMAL-ARCHITECTURE-V0-1-20260921
 type: proposal
-status: draft
+status: consolidated_into_proto_grammar_v0_1
 version: v0.1
 date: 2026-09-21
 layer: meta
@@ -25,6 +25,18 @@ tags: [GRG, MinimalArchitecture, SRTBridge, VerticalResearch, HorizontalResearch
 > Role: draft minimum architecture implied by the current SRT -> GRG foundational bridge.
 >
 > This file intentionally stays thinner than the existing G0-G11 scaffold. It asks what GRG must contain before individual relation families, domain mappings, M-levels or agent implementations are allowed to become the programme skeleton.
+
+## 0.1 Consolidation status
+
+This draft has now been pressure-tested through G0-G11 retyping, retyping red-team, Relation Library retyping and provisional author architecture adjudication.
+
+Its current result is consolidated in:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+This file remains as design provenance and detailed precursor.
+
+The consolidated proto-grammar is the primary whole-architecture review surface.
 
 ## 0. Design constraint
 
