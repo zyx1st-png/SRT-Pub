@@ -103,6 +103,34 @@ is an admissible and preferred result over weak novelty rescue.
 
 The mature-neighbor families below are pressure families for selection, not an exhaustive bibliography or a claim that one tradition alone fully substitutes for GRG.
 
+### 2.1 Family-screening risk is not M4-E0
+
+The field `prior M4-E0 absorption risk` is a pre-target screening prior only.
+
+It must not be read as a completed M4-E0 verdict.
+
+The order is:
+
+~~~text
+family-level screening
+-> if a target-independent discriminator is specific enough to justify a target
+-> freeze target / design
+-> only then run target-level M4-E0 mature-practice absorption audit
+-> execute only if the frozen target-side burden survives
+~~~
+
+Therefore:
+
+~~~text
+HIGH family-level absorption risk
+!=
+M4-E0 ABSORBED
+~~~
+
+This avoids a deadlock in which a route would have to prove target non-absorption before a target is allowed to be frozen.
+
+The family-selection gate asks only whether the route has a sufficiently specific discriminator to justify spending a target freeze. It does not require proving target-domain novelty in advance.
+
 ## 3. Route A — X3b in a target without an explicit articulated-vs-operative distinction
 
 ### Candidate burden
@@ -159,6 +187,10 @@ A search for a field that simply lacks the same words would be a terminology hun
 Route A = NOT SELECTED
 reason = FAMILY-LEVEL ABSORPTION PRESSURE TOO STRONG
 ~~~
+
+This is not a target-level M4-E0 verdict.
+
+Reopen only if Route A first states a target-independent discriminator that is materially stronger than generic implementation / adherence / enforcement / rules-in-use / decoupling language and that can be frozen before target-specific mature-practice inspection.
 
 No target is frozen.
 
@@ -223,6 +255,10 @@ A further refinement of lock-in vocabulary is not enough.
 Route B = NOT SELECTED
 reason = CURRENT PROSPECTIVE DISCRIMINATOR REMAINS FUNCTIONALLY ABSORBABLE
 ~~~
+
+This is not a target-level M4-E0 verdict.
+
+Reopen only if Route B states a target-independent discriminator beyond generic persistence / path dependence / installed-base / lock-in / evolvability and does not reuse greenfield-versus-installed-base as the prospective discriminator.
 
 X4c carrier vocabulary remains locally closed.
 
@@ -302,8 +338,12 @@ M4 prospective target-domain gain
 ~~~text
 Route C = NOT SELECTED
 reason = EXACT COMPOSITE REMAINS INTERESTING,
-         BUT NON-ABSORPTION IS NOT ESTABLISHED
+         BUT A TARGET-INDEPENDENT NONTRIVIAL DISCRIMINATOR IS NOT YET SPECIFIED
 ~~~
+
+This is not a target-level M4-E0 verdict.
+
+Reopen only if Route C can freeze a discriminator between evidence-generating routes that is not merely a restatement of performativity / endogeneity / Goodhart-Campbell targeting / Lucas-type regime change / selective observation / support failure, and can specify what independent evidence would distinguish constraint discovery from intervention-induced alternative-generation suppression.
 
 No target is frozen.
 
@@ -320,7 +360,9 @@ No target is frozen.
 | schema / execution cost | low | medium | high |
 | GRG-generated discrimination | not established | not established | interesting but not non-absorbed |
 
-No route earns a sufficiently clean pre-target residual to justify selection.
+No route currently states a sufficiently specific target-independent discriminator to justify a target freeze.
+
+This is a family-selection result, not an M4-E0 absorption result.
 
 ## 7. Main result
 
@@ -379,11 +421,22 @@ Required guards:
 
 - exact historical source snapshot;
 - target-specific evidence hidden;
-- admission / exclusion / failure / provenance packet;
+- historical generator packet centered on admission / exclusion / failure, with objectification only when load-bearing;
+- current evidence-provenance discipline applied as a separate post-cut audit scaffold, not credited as historical transfer;
 - strongest applicable blind baselines;
 - no post-result rescue;
 - no target-domain novelty credit;
 - no BCTB-1 prospective target until BCTB-0 earns eligibility.
+
+Coverage guard:
+
+~~~text
+BCTB-0 v0.1 core folds calibrate Route-A / Route-B-type constraint transfer.
+Route C is NOT CALIBRATED by T1-T4.
+T2 is a mature neighbor of Route C, not a Route-C calibration fold.
+~~~
+
+Route C requires a separate future calibration design if a provenance-clean historical or genuinely prospective evidence-generation contrast can be identified.
 
 Owner:
 
