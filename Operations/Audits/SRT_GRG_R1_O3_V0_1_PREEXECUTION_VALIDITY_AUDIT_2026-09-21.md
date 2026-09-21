@@ -1,7 +1,8 @@
 ---
 id: SRT-GRG-R1-O3-V0-1-PREEXECUTION-VALIDITY-AUDIT-20260921
 type: audit
-status: superseded
+status: archived
+record_stage: superseded
 date: 2026-09-21
 layer: operations
 epistemic_layer: experimental
