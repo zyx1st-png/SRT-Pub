@@ -419,35 +419,54 @@ E-MIXED -> explicit source list; no live mixed tag.
 
 Do not migrate E-MODEL mechanically.
 
-## 6. Next development
+## 6. Current state and next development
+
+Adequacy owner:
+
+Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md
+
+Negative-productivity owner:
+
+Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md
+
+Consistency owner:
+
+Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_SCHEMA_CONSISTENCY_CENSUS_PASS1_2026-09-21.md
+
+Current verdict:
+
+~~~text
+one-axis provenance schema = SPLIT
+
+E-MODEL live provenance = RETIRED
+E-MIXED live provenance = RETIRED
+
+live schema migration = PASS
+
+negative productivity = PASS
+~~~
 
 Do not add more positive normativity rows yet.
 
 Next bounded pressure:
 
 ~~~text
-GENERATIVE EXPECTATION NEGATIVE PRODUCTIVITY
+C0 / C1 REALIZATION PRESSURE
 ~~~
 
-Use an existing repository case if possible to test one of:
+Primary existing candidates:
 
 ~~~text
-A. explicit / accurate prediction
-   != generative normativity
+Nepal irrigation:
+C0-ENACTED = STRONG CANDIDATE
 
-B. strong structural / institutional continuation
-   != moral legitimacy.
+Performative Prediction:
+C1-MODEL = CASE-DEPENDENT CANDIDATE
 ~~~
 
-Preferred existing negative controls:
+The next pass must ask whether these modes are genuinely source-paid.
 
-~~~text
-RNN R1c adverse case
-and
-precedent / binding authority.
-~~~
-
-The test should verify that the new schema rejects overclaim rather than merely re-labeling it.
+If not, downgrade them rather than preserving symmetry with B.
 
 ## 6. Canonical boundary
 
