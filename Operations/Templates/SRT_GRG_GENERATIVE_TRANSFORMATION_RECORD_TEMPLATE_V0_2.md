@@ -582,6 +582,72 @@ outcome =
   NONE
 ~~~
 
+## Q.1 Evidence-generative provenance — orthogonal provenance surface
+
+This section tracks how evidence came to exist relative to target selection, hypothesis freeze and intervention.
+
+It is distinct from source provenance, expectation provenance and X4c carrier provenance.
+
+~~~text
+evidence item / claim =
+
+target process existed before GRG intervention? =
+
+target selection timing =
+
+dedicated target-source inspection timing =
+
+hypothesis / discriminator freeze timing =
+
+evidence-generation role =
+  DISCOVERY /
+  CAUSAL-BRIDGE /
+  CONSTRUCTION /
+  ORDER-ADMISSION /
+  GRAMMAR-VALIDATION /
+  MIXED
+
+investigator / GRG process rewrite =
+  NONE /
+  MEASUREMENT-ONLY /
+  PERTURBATIONAL /
+  CONSTRUCTIVE /
+  MIXED
+
+independence relation =
+  source-native pre-existing /
+  target-frozen-before-dedicated-inspection /
+  preregistered same-system test /
+  held-out target /
+  independent replication /
+  same-process / same-evidence /
+  other
+
+counterfactual realization =
+  OBSERVED NEAR-CONTROL /
+  INTERVENTION-REALIZED /
+  SOURCE-NATIVE BUT UNOBSERVED /
+  MODEL-DERIVED /
+  GRG-GENERATED UNOBSERVED /
+  OPEN / N.A.
+
+claim credit allowed =
+
+claim credit explicitly forbidden =
+~~~
+
+Guards:
+
+~~~text
+successful construction != independent discovery
+post-intervention conformity != independent confirmation
+order admission != grammar validation
+same-source co-evidence != independent replication
+unobserved counterfactual generation != validation
+~~~
+
+A negative intervention result may still provide strong causal narrowing even when it does not provide positive grammar validation.
+
 ## R. X4c carrier architecture — only where successor inheritance is claimed
 
 Apply admission order first.
