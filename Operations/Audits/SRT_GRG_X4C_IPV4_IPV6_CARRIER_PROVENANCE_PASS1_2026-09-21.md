@@ -173,13 +173,16 @@ status = COMPONENT-ROLE-PASS
 
 c2:
 P-MAT
-role = SUBSTRATE / ENACTMENT / INTERFACE
+role = SUBSTRATE / INTERFACE
 status = COMPONENT-ROLE-PASS
 
 c3:
 P-INST
-proposed role = MAINTENANCE / operational coordination
+proposed carrier role = operational coordination
 status = PRESENT / ROLE-OPEN
+
+source-local ENACTMENT wording =
+NARROW / not independently isolated from INTERFACE / implementation
 ~~~
 
 The current RFC package does not isolate the institutional component strongly enough to award COMPONENT-ROLE-PASS.
@@ -210,7 +213,9 @@ The case produces a narrowing rather than a new relation:
 
 1. X4c survives.
 2. P-INFO standalone does not.
-3. multi-component carrier architecture must be decomposed by component + role.
+3. multi-component carrier architecture must be decomposed by component + paid reusable role.
+
+Architecture persistence process is recorded separately from component role.
 4. X3b/X4c non-identity becomes operationally clearer.
 5. greenfield vs inherited-field becomes a reusable X4c negative-control pattern.
 
