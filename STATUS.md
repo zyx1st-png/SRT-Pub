@@ -831,13 +831,19 @@ Bearer admission threshold + Bearer <-> position stability
 63. component-role PASS != architecture sufficiency automatically; unsupported components cannot strengthen X4c admission;
 64. X3b current operative rule/compatibility != X4c inherited successor field;
 65. expectation provenance, carrier architecture and PH remain separate analysis surfaces;
-66. next framework work = apply Role Library to existing CIV-005 beaver ecosystem-engineering record as negative/borderline test using EXISTING EVIDENCE ONLY; specify missing X4c burden; do not promote by analogy;
-67. periodic M4 only when target ownership is genuinely uncertain;
-68. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-69. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-70. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-71. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-72. do not restart winner-style strongest-neighbor novelty audit;
+66. CIV-005 Role Library negative / borderline test = COMPLETE / NEGATIVE PRODUCTIVITY PASS at Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md;
+67. CIV-005 X4c = NOT ADMITTED BY CURRENT CASE EVIDENCE; this does not deny real-world beaver ecological inheritance;
+68. CIV-005 P-ECO modified environment / SUBSTRATE = ROLE-CANDIDATE / PRE-ADMISSION, not COMPONENT-ROLE-PASS;
+69. CIV-005 missing X4c burden = declared successor boundary + field transmission across that boundary + successor enters under F + inherited successor possibility change;
+70. general ecological-inheritance evidence cannot retroactively pay beaver-specific admission by analogy;
+71. new admission-order guard = carrier-role plausibility != X4c admission; relation-level successor/transmission burden must be paid before COMPONENT-ROLE-PASS;
+72. next framework work = positive-record admission-order consistency audit across existing X4c PASS records using repository evidence only;
+73. periodic M4 only when target ownership is genuinely uncertain;
+74. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+75. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+76. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+77. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+78. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
