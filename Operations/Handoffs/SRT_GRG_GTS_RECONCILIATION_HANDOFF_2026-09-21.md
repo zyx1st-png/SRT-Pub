@@ -155,6 +155,54 @@ RNN is STOP.
 
 X3b has already shown strong target-domain absorption risk.
 
+## 5.1 Evidence-generative provenance backpressure
+
+Pass 1 is now recorded at:
+
+`Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_PASS1_2026-09-21.md`
+
+New guard:
+
+~~~text
+source provenance
+!= evidence-generative provenance
+!= expectation provenance
+!= carrier provenance
+
+successful construction
+!= independent discovery
+
+post-intervention conformity
+!= independent confirmation
+
+order admission
+!= grammar validation
+~~~
+
+Back-audit:
+
+~~~text
+GTS-001 =
+synthetic construction + preregistered causal-bridge intervention;
+positive grammar validation = NO;
+adverse narrowing credit = YES.
+
+GTS-002 =
+pre-existing source-native process;
+order admission = source-supported;
+M3 structural credit = YES;
+M4 = NO / ABSORBED.
+
+GTS-003 =
+historical process pre-exists GRG;
+target frozen before dedicated source inspection;
+this is stronger than unrestricted retrospective matching
+but != held-out M4 validation.
+
+greenfield vs inherited-field discriminator =
+GRG-GENERATED UNOBSERVED.
+~~~
+
 ## 6. Next gate
 
 Do NOT choose a target by searching for a known positive result.
@@ -168,6 +216,12 @@ freeze one held-out X4c target
 + freeze inherited-field hypothesis
 + freeze greenfield / no-inheritance near-control
 + freeze predicted transition / reachability difference
++ freeze evidence-generation route
++ freeze what intervention may perturb / construct
++ freeze what counts only as order realization
++ freeze what counts as grammar validation
++ freeze counterfactual realization status
++ freeze anti-double-counting rule
 
 THEN:
 M4-E0 mature target-domain / strongest-horizontal audit
@@ -184,7 +238,8 @@ execute bounded prospective test.
 ~~~text
 X4c carrier subprogramme = LOCAL CLOSE
 new carrier role hunt = NO
-new provenance-kind hunt = NO
+new carrier provenance-kind hunt = NO
+new evidence-generative provenance = ACTIVE AUDIT SURFACE / NOT M-STATUS
 serial M4 novelty hunting = NO
 canonical edit = NO
 new Level = NO
