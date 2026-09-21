@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / SELECTED RELATION-LIBRARY -> GTS RECONCILIATION NEXT / PROSPECTIVE CROSS-OBJECTIFICATION CHARTER AFTER RECONCILIATION / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / GTS RECONCILIATION PASS 1 COMPLETE / NEXT = FREEZE ONE X4c PROSPECTIVE CROSS-OBJECTIFICATION CHARTER / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -154,10 +154,21 @@ LOCAL CLOSE
 v0.3 independent content review = COMPLETE
 projected-order author decision = COMPLETE / A1
 
+GTS reconciliation Pass 1 =
+PASS / PRODUCTIVE
+
+first reconciled records =
+GTS-001 RNN adverse calibration
+GTS-002 Kubernetes X3b
+GTS-003 CIV-006 X4c
+
+template backpressure =
+NOT OPENED / N.A. statuses added for non-load-bearing sections
+
 next =
-selected Relation Library to GTS reconciliation
--> freeze one prospective cross-objectification discrimination charter
--> bounded execution only after reconciliation + charter freeze
+freeze one X4c prospective cross-objectification discrimination charter
+-> M4-E0 target-domain absorption audit
+-> bounded execution only if NOT ABSORBED
 
 canonical edit = NO
 ```
