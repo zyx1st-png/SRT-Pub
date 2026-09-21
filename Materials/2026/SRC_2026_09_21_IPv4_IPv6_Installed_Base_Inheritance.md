@@ -15,7 +15,7 @@ epistemic_layer: os
 claim_mode: evidence
 canonical: false
 type: material_source_card
-tags: [GRG, X4c, IPv4, IPv6, InstalledBase, PINFO, PMIXED, Internet]
+tags: [GRG, X4c, IPv4, IPv6, InstalledBase, PINFO, CarrierArchitecture, Internet]
 ---
 
 # SourceCard — IPv4 installed base and IPv6 transition
@@ -132,7 +132,7 @@ It is materially / technically instantiated in:
 
 Standards and operational practice also maintain the field.
 
-Current carrier architecture after adequacy Pass 1:
+Current carrier architecture after role-census / admission-order writeback:
 
 ~~~text
 cardinality = MULTI-COMPONENT
@@ -142,12 +142,18 @@ role = PAYLOAD
 status = COMPONENT-ROLE-PASS
 
 P-MAT:
-role = SUBSTRATE / ENACTMENT / INTERFACE
+role = SUBSTRATE / INTERFACE
 status = COMPONENT-ROLE-PASS
 
 P-INST:
-proposed role = MAINTENANCE / operational coordination
+proposed source-local role = operational coordination
 status = PRESENT / ROLE-OPEN
+
+source-local ENACTMENT =
+CASE-LOCAL / NARROW
+
+persistence process =
+MIXED / source-local
 
 architecture sufficiency = PASS
 ~~~
@@ -210,6 +216,10 @@ Do not infer moral normativity.
 
 Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
 
-Superseding carrier-schema audit:
+Superseding carrier-schema audits:
 
 Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
