@@ -814,22 +814,30 @@ Bearer admission threshold + Bearer <-> position stability
 46. Carrier Architecture Adequacy Pass 1 = COMPLETE / PRODUCTIVE;
 47. adequacy verdict = CARRIER ARCHITECTURE RETAIN; PROVENANCE-KIND-FIRST NARROW; CAUSAL-ROLE-FIRST ACTIVE;
 48. historical P-MIXED provenance kind = RETIRED; multi-component architecture is represented directly;
-49. provenance metadata = P-ECO / P-MAT / P-INFO / P-INST; metadata do not receive M-status;
-50. carrier record = component + provenance metadata + causal role + role evidence/near-control + component status + architecture sufficiency;
-51. CIV-006 correction = modern regulation is E-LEGAL/E-ORG expectation, NOT secondary inheritance carrier;
-52. IPv4/IPv6 correction = P-INST proposed maintenance role downgraded to PRESENT / ROLE-OPEN; paid roles are P-INFO/PAYLOAD + P-MAT/SUBSTRATE+ENACTMENT+INTERFACE;
-53. precedent carrier = MULTI-COMPONENT with P-INFO/PAYLOAD + P-INST/AUTHORITY both COMPONENT-ROLE-PASS;
-54. reusable near-controls = greenfield vs installed-base; binding vs persuasive; controlling precedent vs case of first impression;
-55. component-role PASS != architecture sufficiency automatically; unsupported components cannot strengthen X4c admission;
-56. X3b current operative rule/compatibility != X4c inherited successor field;
-57. expectation provenance, carrier architecture and PH remain separate analysis surfaces;
-58. next framework work = bounded carrier-role census across existing X4c records; create Role Library only if roles recur and predict controls/failure conditions;
-59. periodic M4 only when target ownership is genuinely uncertain;
-60. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-61. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-62. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-63. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-64. do not restart winner-style strongest-neighbor novelty audit;
+49. bounded Carrier Role Census Pass 1 = COMPLETE at Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md;
+50. minimal Inheritance Carrier Role Library v0.1 = EARNED / ACTIVE at Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md;
+51. CORE reusable roles = SUBSTRATE [3 paid records], PAYLOAD [2], INTERFACE [2];
+52. SPECIALIZED reusable role = AUTHORITY [1 paid precedent record + strong binding/persuasive and first-impression near-controls]; broad recurrence OPEN;
+53. ENACTMENT = CASE-LOCAL / NARROW; not admitted to Role Library v0.1;
+54. REPRODUCTION = OPEN / NOT PAID; not admitted to Role Library v0.1;
+55. MAINTENANCE = RETYPED from component role to architecture persistence process;
+56. persistence process values = PASSIVE-PERSISTENCE / ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION / MIXED / OPEN;
+57. provenance metadata = P-ECO / P-MAT / P-INFO / P-INST; metadata do not receive M-status;
+58. carrier record = component + provenance metadata + reusable/source-local causal role + role evidence/near-control + component status + persistence process + architecture sufficiency;
+59. CIV-006 paid component roles = P-MAT/SUBSTRATE+INTERFACE; persistence process = ACTIVE-MAINTENANCE / MIXED; modern regulation remains E-LEGAL/E-ORG expectation, not carrier;
+60. IPv4/IPv6 paid roles = P-INFO/PAYLOAD + P-MAT/SUBSTRATE+INTERFACE; P-INST proposed coordination role = PRESENT / ROLE-OPEN; source-local ENACTMENT = NARROW;
+61. precedent carrier = MULTI-COMPONENT with P-INFO/PAYLOAD + P-INST/AUTHORITY both COMPONENT-ROLE-PASS;
+62. reusable near-controls = greenfield vs installed-base; binding vs persuasive; controlling precedent vs case of first impression;
+63. component-role PASS != architecture sufficiency automatically; unsupported components cannot strengthen X4c admission;
+64. X3b current operative rule/compatibility != X4c inherited successor field;
+65. expectation provenance, carrier architecture and PH remain separate analysis surfaces;
+66. next framework work = apply Role Library to existing CIV-005 beaver ecosystem-engineering record as negative/borderline test using EXISTING EVIDENCE ONLY; specify missing X4c burden; do not promote by analogy;
+67. periodic M4 only when target ownership is genuinely uncertain;
+68. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+69. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+70. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+71. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+72. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
