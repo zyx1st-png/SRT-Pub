@@ -366,18 +366,18 @@ environmental reconstruction can be well evidenced while selection/viability fee
 -> X4a passes; X4b fails under that record alone.
 ~~~
 
-Invariance result:
+Invariance result — HISTORICAL PRE-M3 CHECKPOINT; live M-status is superseded by §5.4:
 
 ~~~text
-X3b = M2 / provisional semantic-invariance PASS
+X3b = M2 / provisional semantic-invariance PASS [historical pre-transfer]
        across technical + legal + local-institutional cases
        distinctiveness OPEN / substitutability pressure HIGH
 
-X4b = M2 / DOMAIN-LIMITED
+X4b = M2 / DOMAIN-LIMITED [historical pre-transfer]
        biological selective-feedback invariance PASS
        genuine cross-domain invariance NOT ESTABLISHED
 
-M3 promotions = NONE
+M3 promotions at this historical checkpoint = NONE
 ~~~
 
 Owner:
