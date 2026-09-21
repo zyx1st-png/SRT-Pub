@@ -737,89 +737,55 @@ Current carrier line is LOCAL CLOSE. Do not create new roles or provenance categ
 
 ## R.1 Evidence-generative provenance — mandatory
 
-Use the vocabulary and guards owned by:
+Owner:
 
 `Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+Keep this block compact. Use the owner for definitions and guards.
 
 ~~~text
 O_R =
 
 independently evidenced O_W =
   yes / no / partial / open
-if yes, what world-side operative role is evidenced? =
+O_W role, if any =
 
-does O_R participate in generating O_W? =
-  yes / no / partial / open / n.a.
-
-was the tested grammar / model / order / intervention already involved
+did O_R / tested grammar / intervention participate
 in generating decisive evidence? =
   yes / no / partial / open
-
-if yes, how? =
-  measurement only /
-  recommendation /
-  allocation /
-  policy /
-  technical control /
-  standardization /
-  institution /
-  direct intervention /
-  other
-
-timing =
-  pre-intervention /
-  post-intervention /
-  historically intervention-shaped /
-  mixed /
-  n.a.
+how / timing =
 
 evidence purpose(s) =
-  discovery /
-  causal leverage /
-  construction /
-  robustness /
-  attribution /
-  mixed
+  discovery / causal leverage / construction /
+  robustness / attribution / mixed
 
-claim(s) this evidence may pay =
+claim(s) evidence may pay =
 
-claim(s) this evidence may NOT independently pay =
+claim(s) evidence may NOT independently pay =
 
 recurrence provenance =
-  INDEPENDENT /
-  DIFFUSED /
-  DESIGNED /
-  MIXED /
-  OPEN /
-  N.A.
+  INDEPENDENT / DIFFUSED / DESIGNED / MIXED / OPEN / N.A.
 
-independent / held-out support available? =
+held-out / independent support =
 
-external-drift / alternative-cause comparator =
-
-counterfactual realization =
-  OBSERVED /
-  INTERVENTION-REALIZED /
+counterfactual status =
+  OBSERVED / INTERVENTION-REALIZED /
   SOURCE-NATIVE BUT UNOBSERVED /
-  MODEL-DERIVED /
-  GRG-GENERATED UNOBSERVED /
-  OPEN /
-  N.A.
+  MODEL-DERIVED / GRG-GENERATED UNOBSERVED /
+  OPEN / N.A.
 
-could observed stability / convergence reflect
-active maintenance or suppression of alternative generation? =
+maintenance / alternative-generation concern =
 
-real failure / narrowing condition retained after this audit? =
+real failure / narrowing condition retained? =
   yes / no / open
 ~~~
 
-Hard guards:
+Permanent guards:
 
 ~~~text
 O_R != O_W
 recurrence != independent recurrence
-successful construction != independent discovery
-post-deployment conformity != independent confirmation
+construction != discovery
 Order Admission != Grammar Validation
 observed regularity != generative invariance
 ~~~
