@@ -112,15 +112,23 @@ It does not establish that all historical organization lacks causal efficacy.
 reconstruction-output = NOT OPENED
 local-locus = NOT OPENED
 operative positionality = NOT OPENED
+wholeward analysis = NOT OPENED
+
+grouped reason =
+this is a local causal-diagnostic / proxy-bridge record;
+none of these modules is load-bearing for the tested bridge.
+
 Generative Order = NOT OPENED
-reason = causal diagnostic does not require an order-relative claim
+reason =
+no bounded order-relative claim is required for the causal question.
 
 E_G = NOT OPENED
-reason = no admitted order is load-bearing for the question
+reason =
+no admitted order is load-bearing for the question.
 
-wholeward analysis = NOT OPENED
 cross-objectification gain = NOT CLAIMED
-reason = local adverse calibration only
+reason =
+local adverse calibration only; no recurrence / transfer claim is being paid.
 ~~~
 
 ## 6. Evidence-generative provenance — #1025 owner applied
