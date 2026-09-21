@@ -993,10 +993,15 @@ Mainline attention returns to broader GRG.
 20. X4c carrier-subprogramme local closure = COMPLETE / CLOSE;
 21. carrier vocabulary for current evidence = FROZEN;
 22. default new carrier / provenance accumulation = STOP;
-23. next = select a broader underconstrained central GRG burden from existing surfaces;
-24. require carrier-role + persistence-process + expectation provenance in new records only when X4c is actually invoked;
-25. continue underdeveloped domain re-entry;
-26. use future M4 attempts selectively as calibration, not as the sole queue;
+23. broader-GRG next-burden selection = COMPLETE; Generative Expectation adequacy selected;
+24. Generative Expectation source/provenance x locus/mode split = ACTIVE / MIGRATED;
+25. E-MODEL / E-MIXED live provenance tags = RETIRED;
+26. negative productivity = PASS;
+27. live expectation-schema consistency migration = COMPLETE / PASS;
+28. next = bounded C0/C1 realization pressure using existing source-native rows first;
+29. require carrier-role + persistence-process only when X4c is invoked; use split Generative Expectation schema for expectation analysis;
+30. continue underdeveloped domain re-entry;
+31. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
