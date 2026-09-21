@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG FRAMEWORK CONSTRUCTION / NONCANONICAL / RELATION LIBRARY + DOMAIN-CIVILIZATION ATLAS + CIVILIZATIONAL LEARNING MAINLINE / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG FOUNDATIONAL PROTO-GRAMMAR V0.1 / WHOLE-ARCHITECTURE AUTHOR REVIEW / NONCANONICAL / EXISTING RELATION-ATLAS-LEDGER-HKB WORK RETAINED AS PRESSURE ASSETS / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -58,13 +58,25 @@ Programme architecture:
 GRG Framework v0.1:
 `Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md`
 
+GRG Foundational Proto-Grammar v0.1 — primary whole-review owner:
+`Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md`
+
+GRG v0.1 provisional author construction adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md`
+
+SRT -> GRG foundational bridge:
+`Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md`
+
 Civilizational Learning Architecture:
 `Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md`
 
 Domain + Civilization Atlas seed:
 `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
 
-GRG Relation Record template:
+GRG Relation Record template v0.2:
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md`
+
+GRG Relation Record template v0.1 — historical pre-retyping schema:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
 Generative-expectation second adjudication:
@@ -763,18 +775,18 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-21 GRG framework turn:** the programme mainline is now framework construction across domains and civilization. RNN/HKB remain calibration workstreams. No single pending dataset blocks the framework mainline. Canonical owners remain closed by default.
+> **2026-09-21 GRG v0.1 review turn:** the first coherent SRT→GRG foundational proto-grammar has been completed on top of the latest framework state, including PH retyping and X4c carrier-provenance pressure. The programme now pauses architecture expansion for whole-architecture author review. RNN/HKB, Relation Library, Atlas, matrix and ledgers remain calibration / evidence / pressure surfaces. Canonical owners remain closed by default.
 
 ~~~text
-1. GRG mainline = framework construction, relation library, domain/civilization atlas, generative-expectation/normativity architecture;
+1. GRG mainline = completed Foundational Proto-Grammar v0.1 -> whole-architecture author review -> revision before further expansion;
 2. existing Domain Reconstruction Framework remains the source-native entry surface for mature disciplines;
 3. GRG compares independently grounded generative burdens rather than replacing domain mechanisms;
-4. Relation Record template = active schema for source-native claim -> evidence -> objectification -> GRG burden -> expectation -> failure -> transfer;
+4. Relation Record template v0.2 = active schema; architecture role / verticality / proxy / PH / carrier provenance / expectation / M-status are separate fields;
 5. Civilizational Learning Architecture = active research layer for science, technology, institutions, markets, law, culture and historical experience;
 6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
 7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
 8. first backfill records = RR-001 RNN adverse calibration, RR-002 HKB candidate, RR-003 Bowler source-native scaffold;
-9. RNN spectral family = R1a PASS / R1c NULL / STOP; no tuning and no O4;
+9. RNN spectral family = R1a PASS / tested spectral R1c mapping NULL / STOP; tested L2-facing/objectified trace != vertical generative organization, and proxy failure does not establish an unspecified deeper vertical cause; no tuning and no O4;
 10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
@@ -816,13 +828,24 @@ Bearer admission threshold + Bearer <-> position stability
 48. X3b current operative interoperability != X4c inherited-field conditioning;
 49. expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED;
 50. inheritance provenance and expectation provenance are separate taxonomies and must not be collapsed;
-51. next framework work = test P-INST institutional inheritance or a genuinely standalone P-INFO carrier; if P-INFO repeatedly collapses into P-MIXED, narrow/retire standalone P-INFO;
+51. prior next framework work (P-INST / standalone P-INFO carrier test) = PAUSED by later author instruction until whole-architecture review of GRG v0.1;
 52. periodic M4 only when target ownership is genuinely uncertain;
 53. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
 54. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
 55. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
 56. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
 57. do not restart winner-style strongest-neighbor novelty audit;
+58. SRT -> GRG foundational bridge = COMPLETE / v0.1 first pass;
+59. G0-G11 retyping = COMPLETE: old sequence retained as discovery provenance, not homogeneous grammar skeleton;
+60. v0.1 upstream = C0 non-exhaustion + C1 differential manifestation/backgrounding;
+61. v0.1 vertical core = R-HIST-a / R-HIST-b / R-LOC / R-POS downstream / R-RECON-a / R-RECON-b;
+62. v0.1 composition = C-MULTI / C-XSC; Formation + maintenance remain cross-cutting burdens;
+63. PH = cross-cutting Position/Horizon Consequence Index, not relation by default;
+64. v0.1 expectation/normativity = E-B -> E-C0/E-C1 -> N-INDEX, with full moral legitimacy still OPEN;
+65. v0.1 reflexive layer = L-REFLEX-W world/civilizational learning != L-REFLEX-M GRG methodological revision;
+66. GRG v0.1 = revisable typed proto-grammar, not mature closed formal grammar;
+67. GRG Foundational Proto-Grammar v0.1 = COMPLETE / READY FOR AUTHOR REVIEW;
+68. before whole review: no new relation-family expansion, no new serial M4, no next P-INST/P-INFO carrier case, no canonical promotion, no AGI expansion;
 
 ~~~
 
