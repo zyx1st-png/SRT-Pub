@@ -1,0 +1,3929 @@
+{
+  "id": "SRT-NEURO-OBJECTIFICATION-SCALE-PHASE1-MEAN-DEGREE-CONTROL-20260921",
+  "date": "2026-09-21",
+  "status": "complete",
+  "post_primary_exploratory": true,
+  "scope": "POST-PRIMARY EXPLORATORY MEAN-DEGREE-MATCHED GRAPH CONTROL",
+  "scientific_question": "Whether Phase-1 grain reversal persists when top-correlation graphs are matched on mean degree rather than fixed density.",
+  "selection_rule": "Reuse the same ten cells from the completed density sensitivity audit; no result-driven reselection.",
+  "selected_cells": [
+    "sleep_S1_C1_G1",
+    "sleep_S2_C1_G1",
+    "sleep_S3_C1_G1",
+    "sleep_S3_C1_G2",
+    "sleep_S3_C1_G3",
+    "ane_S1_C1_G1",
+    "ane_S2_C1_G1",
+    "ane_S3_C1_G1",
+    "ane_S3_C1_G2",
+    "ane_S3_C1_G3"
+  ],
+  "target_mean_degrees": [
+    4,
+    8,
+    16
+  ],
+  "edge_count_rule": "M=round(N*k/2), exact top-M unique undirected edges; upper-triangle row-major tie break.",
+  "graph_rule": "absolute pairwise correlation; diagonal removed; NaN/Inf correlation set to zero; binary top-M graph; no connectivity repair.",
+  "reused_intermediates": {
+    "raw_recording": false,
+    "signal_preprocessing": false,
+    "coarse_graining": false,
+    "correlation_matrices": false,
+    "reason": "No persisted hashable correlation matrices were present in the runtime cache; the existing Phase-1 loader and source-style coarse-graining/window logic were rerun deterministically."
+  },
+  "runtime": {
+    "python": "3.14.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "networkx": "3.6.1",
+    "python_louvain": "0.16",
+    "workers": 4,
+    "repeats_per_window": 200,
+    "seed_root": 12345,
+    "seed_policy": "stable_seed(12345, primary cell_id with _K005, state_index*1000+window_index, repeat)",
+    "algorithm": "python-louvain best_partition + modularity, resolution=1.0, max-Q"
+  },
+  "source_and_data": {
+    "author_source_commit": "90e1c7dc5823f9d413b1bddf5c649ec87d6598a3",
+    "dataset_archive_sha256": "dd29cf6adda2e04745834525a94122076152c31f5136acbc39b57d4a9013638c",
+    "primary_commit_unchanged": "dfe1de29",
+    "density_control_commit_unchanged": "37500cc3"
+  },
+  "cells": [
+    {
+      "cell_id": "sleep_S1_C1_G1",
+      "condition": "sleep",
+      "signal": "S1",
+      "grain": "G1",
+      "window_count": 9,
+      "repeats": 200,
+      "delta_q": {
+        "4": -0.003566273513983198,
+        "8": 0.008330412684151245,
+        "16": 0.01872114949390624
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.8250910044396738,
+          "target_q_mean": 0.8215247309256906,
+          "delta_q_target_minus_wake": -0.003566273513983198
+        },
+        "8": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.7808331376662625,
+          "target_q_mean": 0.7891635503504137,
+          "delta_q_target_minus_wake": 0.008330412684151245
+        },
+        "16": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.7219751662049833,
+          "target_q_mean": 0.7406963156988895,
+          "delta_q_target_minus_wake": 0.01872114949390624
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 3357,
+            "components_max": 4614,
+            "components_mean": 3854.3333333333335,
+            "largest_component_fraction_min": 0.2794797687861272,
+            "largest_component_fraction_max": 0.478757225433526,
+            "largest_component_fraction_mean": 0.3941393705844573,
+            "isolated_nodes_min": 3129,
+            "isolated_nodes_max": 4337,
+            "isolated_nodes_mean": 3586.1111111111113,
+            "median_degree_min": 0.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 161,
+            "threshold_min": 0.5347967989652713,
+            "threshold_max": 0.591105199642627,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 3357,
+            "components_max": 4012,
+            "components_mean": 3586.5,
+            "largest_component_fraction_min": 0.3567919075144509,
+            "largest_component_fraction_max": 0.478757225433526,
+            "largest_component_fraction_mean": 0.4339354527938343,
+            "isolated_nodes_min": 3129,
+            "isolated_nodes_max": 3678,
+            "isolated_nodes_mean": 3322.5,
+            "median_degree_min": 0.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 157,
+            "threshold_min": 0.5347967989652713,
+            "threshold_max": 0.591105199642627,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 4172,
+            "components_max": 4614,
+            "components_mean": 4390.0,
+            "largest_component_fraction_min": 0.2794797687861272,
+            "largest_component_fraction_max": 0.3458092485549133,
+            "largest_component_fraction_mean": 0.31454720616570325,
+            "isolated_nodes_min": 3885,
+            "isolated_nodes_max": 4337,
+            "isolated_nodes_mean": 4113.333333333333,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 161,
+            "threshold_min": 0.5544421971555006,
+            "threshold_max": 0.5828287921784201,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 2241,
+            "components_max": 3667,
+            "components_mean": 2781.6666666666665,
+            "largest_component_fraction_min": 0.43121387283236995,
+            "largest_component_fraction_max": 0.6543352601156069,
+            "largest_component_fraction_mean": 0.5678869621066153,
+            "isolated_nodes_min": 2105,
+            "isolated_nodes_max": 3463,
+            "isolated_nodes_mean": 2603.5555555555557,
+            "median_degree_min": 0.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 222,
+            "threshold_min": 0.4901126428505339,
+            "threshold_max": 0.5419053106555888,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 2241,
+            "components_max": 2825,
+            "components_mean": 2470.1666666666665,
+            "largest_component_fraction_min": 0.5530346820809249,
+            "largest_component_fraction_max": 0.6543352601156069,
+            "largest_component_fraction_mean": 0.6153179190751445,
+            "isolated_nodes_min": 2105,
+            "isolated_nodes_max": 2589,
+            "isolated_nodes_mean": 2304.5,
+            "median_degree_min": 1.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 222,
+            "threshold_min": 0.4901126428505339,
+            "threshold_max": 0.5419053106555888,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 3174,
+            "components_max": 3667,
+            "components_mean": 3404.6666666666665,
+            "largest_component_fraction_min": 0.43121387283236995,
+            "largest_component_fraction_max": 0.5078034682080925,
+            "largest_component_fraction_mean": 0.47302504816955687,
+            "isolated_nodes_min": 2969,
+            "isolated_nodes_max": 3463,
+            "isolated_nodes_mean": 3201.6666666666665,
+            "median_degree_min": 0.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 211,
+            "threshold_min": 0.4981743967835182,
+            "threshold_max": 0.5266443926250368,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 1273,
+            "components_max": 2533,
+            "components_mean": 1750.6666666666667,
+            "largest_component_fraction_min": 0.6114161849710983,
+            "largest_component_fraction_max": 0.8046242774566474,
+            "largest_component_fraction_mean": 0.7323378291586384,
+            "isolated_nodes_min": 1200,
+            "isolated_nodes_max": 2392,
+            "isolated_nodes_mean": 1655.3333333333333,
+            "median_degree_min": 2.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 298,
+            "threshold_min": 0.44090110882899947,
+            "threshold_max": 0.489924062740799,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 1273,
+            "components_max": 1705,
+            "components_mean": 1460.1666666666667,
+            "largest_component_fraction_min": 0.7367052023121388,
+            "largest_component_fraction_max": 0.8046242774566474,
+            "largest_component_fraction_mean": 0.7772639691714837,
+            "isolated_nodes_min": 1200,
+            "isolated_nodes_max": 1627,
+            "isolated_nodes_mean": 1383.6666666666667,
+            "median_degree_min": 4.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 298,
+            "threshold_min": 0.44380474552113486,
+            "threshold_max": 0.489924062740799,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 2200,
+            "components_max": 2533,
+            "components_mean": 2331.6666666666665,
+            "largest_component_fraction_min": 0.6114161849710983,
+            "largest_component_fraction_max": 0.6630057803468208,
+            "largest_component_fraction_mean": 0.642485549132948,
+            "isolated_nodes_min": 2073,
+            "isolated_nodes_max": 2392,
+            "isolated_nodes_mean": 2198.6666666666665,
+            "median_degree_min": 2.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 290,
+            "threshold_min": 0.44090110882899947,
+            "threshold_max": 0.47194077765452974,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "sleep_S2_C1_G1",
+      "condition": "sleep",
+      "signal": "S2",
+      "grain": "G1",
+      "window_count": 9,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.062185104138823055,
+        "8": 0.07094670287823568,
+        "16": 0.07465511995468277
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.7670041028524447,
+          "target_q_mean": 0.8291892069912677,
+          "delta_q_target_minus_wake": 0.062185104138823055
+        },
+        "8": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.6562653402331701,
+          "target_q_mean": 0.7272120431114057,
+          "delta_q_target_minus_wake": 0.07094670287823568
+        },
+        "16": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.5486041299532591,
+          "target_q_mean": 0.6232592499079419,
+          "delta_q_target_minus_wake": 0.07465511995468277
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 1487,
+            "components_max": 2193,
+            "components_mean": 1861.5555555555557,
+            "largest_component_fraction_min": 0.6508670520231213,
+            "largest_component_fraction_max": 0.7647398843930636,
+            "largest_component_fraction_mean": 0.7046082209377007,
+            "isolated_nodes_min": 1364,
+            "isolated_nodes_max": 2015,
+            "isolated_nodes_mean": 1709.5555555555557,
+            "median_degree_min": 2.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 112,
+            "threshold_min": 0.26656753423946217,
+            "threshold_max": 0.41783019236884433,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 1487,
+            "components_max": 2193,
+            "components_mean": 1847.1666666666667,
+            "largest_component_fraction_min": 0.6508670520231213,
+            "largest_component_fraction_max": 0.7647398843930636,
+            "largest_component_fraction_mean": 0.7082610789980732,
+            "isolated_nodes_min": 1364,
+            "isolated_nodes_max": 2015,
+            "isolated_nodes_mean": 1703.5,
+            "median_degree_min": 2.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 112,
+            "threshold_min": 0.26656753423946217,
+            "threshold_max": 0.3095069896959184,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 1705,
+            "components_max": 1995,
+            "components_mean": 1890.3333333333333,
+            "largest_component_fraction_min": 0.6778901734104046,
+            "largest_component_fraction_max": 0.7338150289017341,
+            "largest_component_fraction_mean": 0.6973025048169557,
+            "isolated_nodes_min": 1581,
+            "isolated_nodes_max": 1804,
+            "isolated_nodes_mean": 1721.6666666666667,
+            "median_degree_min": 2.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 78,
+            "threshold_min": 0.3420326660074893,
+            "threshold_max": 0.41783019236884433,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 464,
+            "components_max": 957,
+            "components_mean": 722.3333333333334,
+            "largest_component_fraction_min": 0.8520231213872832,
+            "largest_component_fraction_max": 0.9299132947976878,
+            "largest_component_fraction_mean": 0.888519588953115,
+            "isolated_nodes_min": 446,
+            "isolated_nodes_max": 894,
+            "isolated_nodes_mean": 678.2222222222222,
+            "median_degree_min": 4.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 167,
+            "threshold_min": 0.23370387658505234,
+            "threshold_max": 0.35864585357064843,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 464,
+            "components_max": 957,
+            "components_mean": 710.8333333333334,
+            "largest_component_fraction_min": 0.8520231213872832,
+            "largest_component_fraction_max": 0.9299132947976878,
+            "largest_component_fraction_mean": 0.8910645472061657,
+            "isolated_nodes_min": 446,
+            "isolated_nodes_max": 894,
+            "isolated_nodes_mean": 672.8333333333334,
+            "median_degree_min": 4.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 167,
+            "threshold_min": 0.23370387658505234,
+            "threshold_max": 0.26989082851414786,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 642,
+            "components_max": 828,
+            "components_mean": 745.3333333333334,
+            "largest_component_fraction_min": 0.8676300578034682,
+            "largest_component_fraction_max": 0.9013005780346821,
+            "largest_component_fraction_mean": 0.8834296724470135,
+            "isolated_nodes_min": 603,
+            "isolated_nodes_max": 751,
+            "isolated_nodes_mean": 689.0,
+            "median_degree_min": 5.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 117,
+            "threshold_min": 0.2964663193663564,
+            "threshold_max": 0.35864585357064843,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 79,
+            "components_max": 224,
+            "components_mean": 149.55555555555554,
+            "largest_component_fraction_min": 0.9660404624277457,
+            "largest_component_fraction_max": 0.9885838150289017,
+            "largest_component_fraction_mean": 0.9770231213872832,
+            "isolated_nodes_min": 77,
+            "isolated_nodes_max": 215,
+            "isolated_nodes_mean": 142.66666666666666,
+            "median_degree_min": 10.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 223,
+            "threshold_min": 0.202125755324069,
+            "threshold_max": 0.3023416913306064,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 79,
+            "components_max": 224,
+            "components_mean": 145.83333333333334,
+            "largest_component_fraction_min": 0.9660404624277457,
+            "largest_component_fraction_max": 0.9885838150289017,
+            "largest_component_fraction_mean": 0.978082851637765,
+            "isolated_nodes_min": 77,
+            "isolated_nodes_max": 215,
+            "isolated_nodes_mean": 141.0,
+            "median_degree_min": 10.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 223,
+            "threshold_min": 0.202125755324069,
+            "threshold_max": 0.23234878871608225,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 110,
+            "components_max": 186,
+            "components_mean": 157.0,
+            "largest_component_fraction_min": 0.9708092485549132,
+            "largest_component_fraction_max": 0.9819364161849711,
+            "largest_component_fraction_mean": 0.9749036608863199,
+            "isolated_nodes_min": 104,
+            "isolated_nodes_max": 174,
+            "isolated_nodes_mean": 146.0,
+            "median_degree_min": 11.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 164,
+            "threshold_min": 0.2528060093134745,
+            "threshold_max": 0.3023416913306064,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "sleep_S3_C1_G1",
+      "condition": "sleep",
+      "signal": "S3",
+      "grain": "G1",
+      "window_count": 9,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.0362074470343704,
+        "8": 0.07273665100285953,
+        "16": 0.1145433428014877
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.9001797509313699,
+          "target_q_mean": 0.9363871979657403,
+          "delta_q_target_minus_wake": 0.0362074470343704
+        },
+        "8": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.8409136114324743,
+          "target_q_mean": 0.9136502624353339,
+          "delta_q_target_minus_wake": 0.07273665100285953
+        },
+        "16": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.7549376565445337,
+          "target_q_mean": 0.8694809993460214,
+          "delta_q_target_minus_wake": 0.1145433428014877
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 2487,
+            "components_max": 3805,
+            "components_mean": 3016.4444444444443,
+            "largest_component_fraction_min": 0.28728323699421965,
+            "largest_component_fraction_max": 0.5845375722543352,
+            "largest_component_fraction_mean": 0.4770552344251766,
+            "isolated_nodes_min": 2187,
+            "isolated_nodes_max": 3407,
+            "isolated_nodes_mean": 2678.6666666666665,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 101,
+            "threshold_min": 0.5334416501294137,
+            "threshold_max": 0.7211958291879257,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 2487,
+            "components_max": 3024,
+            "components_mean": 2755.3333333333335,
+            "largest_component_fraction_min": 0.4979768786127168,
+            "largest_component_fraction_max": 0.5845375722543352,
+            "largest_component_fraction_mean": 0.5386560693641619,
+            "isolated_nodes_min": 2187,
+            "isolated_nodes_max": 2675,
+            "isolated_nodes_mean": 2438.1666666666665,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 94,
+            "threshold_min": 0.5334416501294137,
+            "threshold_max": 0.5920246105157055,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              13840
+            ],
+            "edge_count": [
+              13840
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0005781182251770487,
+            "effective_density_max": 0.0005781182251770487,
+            "components_min": 3088,
+            "components_max": 3805,
+            "components_mean": 3538.6666666666665,
+            "largest_component_fraction_min": 0.28728323699421965,
+            "largest_component_fraction_max": 0.4699421965317919,
+            "largest_component_fraction_mean": 0.3538535645472062,
+            "isolated_nodes_min": 2736,
+            "isolated_nodes_max": 3407,
+            "isolated_nodes_mean": 3159.6666666666665,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 101,
+            "threshold_min": 0.6225722575221716,
+            "threshold_max": 0.7211958291879257,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 1159,
+            "components_max": 2483,
+            "components_mean": 1663.2222222222222,
+            "largest_component_fraction_min": 0.5739884393063583,
+            "largest_component_fraction_max": 0.8167630057803468,
+            "largest_component_fraction_mean": 0.7263648041104689,
+            "isolated_nodes_min": 1054,
+            "isolated_nodes_max": 2246,
+            "isolated_nodes_mean": 1501.5555555555557,
+            "median_degree_min": 2.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 141,
+            "threshold_min": 0.4786997261170375,
+            "threshold_max": 0.6560682817707146,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 1159,
+            "components_max": 1638,
+            "components_mean": 1386.5,
+            "largest_component_fraction_min": 0.7356936416184972,
+            "largest_component_fraction_max": 0.8167630057803468,
+            "largest_component_fraction_mean": 0.7773603082851638,
+            "isolated_nodes_min": 1054,
+            "isolated_nodes_max": 1475,
+            "isolated_nodes_mean": 1255.6666666666667,
+            "median_degree_min": 3.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 141,
+            "threshold_min": 0.4786997261170375,
+            "threshold_max": 0.5325180181556317,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              27680
+            ],
+            "edge_count": [
+              27680
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0011562364503540975,
+            "effective_density_max": 0.0011562364503540975,
+            "components_min": 1733,
+            "components_max": 2483,
+            "components_mean": 2216.6666666666665,
+            "largest_component_fraction_min": 0.5739884393063583,
+            "largest_component_fraction_max": 0.7148843930635839,
+            "largest_component_fraction_mean": 0.624373795761079,
+            "isolated_nodes_min": 1554,
+            "isolated_nodes_max": 2246,
+            "isolated_nodes_mean": 1993.3333333333333,
+            "median_degree_min": 2.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 129,
+            "threshold_min": 0.5592834554047721,
+            "threshold_max": 0.6560682817707146,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 308,
+            "components_max": 1215,
+            "components_mean": 619.0,
+            "largest_component_fraction_min": 0.8034682080924855,
+            "largest_component_fraction_max": 0.9523121387283237,
+            "largest_component_fraction_mean": 0.9023603082851638,
+            "isolated_nodes_min": 285,
+            "isolated_nodes_max": 1106,
+            "isolated_nodes_mean": 570.6666666666666,
+            "median_degree_min": 6.0,
+            "median_degree_max": 10.0,
+            "degree_min_min": 0,
+            "degree_max_max": 218,
+            "threshold_min": 0.42343771711943623,
+            "threshold_max": 0.5838304557337102,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 308,
+            "components_max": 567,
+            "components_mean": 436.8333333333333,
+            "largest_component_fraction_min": 0.9134393063583816,
+            "largest_component_fraction_max": 0.9523121387283237,
+            "largest_component_fraction_mean": 0.9326348747591522,
+            "isolated_nodes_min": 285,
+            "isolated_nodes_max": 538,
+            "isolated_nodes_mean": 408.5,
+            "median_degree_min": 8.0,
+            "median_degree_max": 10.0,
+            "degree_min_min": 0,
+            "degree_max_max": 218,
+            "threshold_min": 0.42343771711943623,
+            "threshold_max": 0.4712431679312459,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              6920
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              55360
+            ],
+            "edge_count": [
+              55360
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.002312472900708195,
+            "effective_density_max": 0.002312472900708195,
+            "components_min": 663,
+            "components_max": 1215,
+            "components_mean": 983.3333333333334,
+            "largest_component_fraction_min": 0.8034682080924855,
+            "largest_component_fraction_max": 0.8971098265895954,
+            "largest_component_fraction_mean": 0.8418111753371869,
+            "isolated_nodes_min": 615,
+            "isolated_nodes_max": 1106,
+            "isolated_nodes_mean": 895.0,
+            "median_degree_min": 6.0,
+            "median_degree_max": 9.0,
+            "degree_min_min": 0,
+            "degree_max_max": 179,
+            "threshold_min": 0.4943550064500217,
+            "threshold_max": 0.5838304557337102,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "sleep_S3_C1_G2",
+      "condition": "sleep",
+      "signal": "S3",
+      "grain": "G2",
+      "window_count": 9,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.049562393149899076,
+        "8": 0.05498315414188576,
+        "16": 0.045884553730286604
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.5946332970669475,
+          "target_q_mean": 0.6441956902168465,
+          "delta_q_target_minus_wake": 0.049562393149899076
+        },
+        "8": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.49595684830835757,
+          "target_q_mean": 0.5509400024502433,
+          "delta_q_target_minus_wake": 0.05498315414188576
+        },
+        "16": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.40829808715696597,
+          "target_q_mean": 0.4541826408872526,
+          "delta_q_target_minus_wake": 0.045884553730286604
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.005788712011577424,
+            "effective_density_max": 0.005788712011577424,
+            "components_min": 117,
+            "components_max": 292,
+            "components_mean": 193.88888888888889,
+            "largest_component_fraction_min": 0.5433526011560693,
+            "largest_component_fraction_max": 0.815028901734104,
+            "largest_component_fraction_mean": 0.695407835581246,
+            "isolated_nodes_min": 106,
+            "isolated_nodes_max": 272,
+            "isolated_nodes_mean": 179.44444444444446,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 52,
+            "threshold_min": 0.3114090453799392,
+            "threshold_max": 0.4406417745369472,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.005788712011577424,
+            "effective_density_max": 0.005788712011577424,
+            "components_min": 117,
+            "components_max": 258,
+            "components_mean": 181.16666666666666,
+            "largest_component_fraction_min": 0.5997109826589595,
+            "largest_component_fraction_max": 0.815028901734104,
+            "largest_component_fraction_mean": 0.7182080924855492,
+            "isolated_nodes_min": 106,
+            "isolated_nodes_max": 241,
+            "isolated_nodes_mean": 169.16666666666666,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 50,
+            "threshold_min": 0.3114090453799392,
+            "threshold_max": 0.3602557611634128,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.005788712011577424,
+            "effective_density_max": 0.005788712011577424,
+            "components_min": 174,
+            "components_max": 292,
+            "components_mean": 219.33333333333334,
+            "largest_component_fraction_min": 0.5433526011560693,
+            "largest_component_fraction_max": 0.7167630057803468,
+            "largest_component_fraction_mean": 0.6498073217726397,
+            "isolated_nodes_min": 156,
+            "isolated_nodes_max": 272,
+            "isolated_nodes_mean": 200.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 52,
+            "threshold_min": 0.3574662408076039,
+            "threshold_max": 0.4406417745369472,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              2768
+            ],
+            "edge_count": [
+              2768
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.011577424023154847,
+            "effective_density_max": 0.011577424023154847,
+            "components_min": 30,
+            "components_max": 170,
+            "components_mean": 80.66666666666667,
+            "largest_component_fraction_min": 0.7369942196531792,
+            "largest_component_fraction_max": 0.9566473988439307,
+            "largest_component_fraction_mean": 0.8784521515735388,
+            "isolated_nodes_min": 28,
+            "isolated_nodes_max": 158,
+            "isolated_nodes_mean": 76.0,
+            "median_degree_min": 3.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 67,
+            "threshold_min": 0.28011193638997506,
+            "threshold_max": 0.3949675576683734,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              2768
+            ],
+            "edge_count": [
+              2768
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.011577424023154847,
+            "effective_density_max": 0.011577424023154847,
+            "components_min": 30,
+            "components_max": 124,
+            "components_mean": 68.0,
+            "largest_component_fraction_min": 0.8121387283236994,
+            "largest_component_fraction_max": 0.9566473988439307,
+            "largest_component_fraction_mean": 0.8971579961464354,
+            "isolated_nodes_min": 28,
+            "isolated_nodes_max": 117,
+            "isolated_nodes_mean": 63.666666666666664,
+            "median_degree_min": 4.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 66,
+            "threshold_min": 0.28011193638997506,
+            "threshold_max": 0.32540296589740336,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              2768
+            ],
+            "edge_count": [
+              2768
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.011577424023154847,
+            "effective_density_max": 0.011577424023154847,
+            "components_min": 60,
+            "components_max": 170,
+            "components_mean": 106.0,
+            "largest_component_fraction_min": 0.7369942196531792,
+            "largest_component_fraction_max": 0.9132947976878613,
+            "largest_component_fraction_mean": 0.8410404624277457,
+            "isolated_nodes_min": 58,
+            "isolated_nodes_max": 158,
+            "isolated_nodes_mean": 100.66666666666667,
+            "median_degree_min": 3.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 67,
+            "threshold_min": 0.32125150399299246,
+            "threshold_max": 0.3949675576683734,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              5536
+            ],
+            "edge_count": [
+              5536
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.023154848046309694,
+            "effective_density_max": 0.023154848046309694,
+            "components_min": 8,
+            "components_max": 59,
+            "components_mean": 20.666666666666668,
+            "largest_component_fraction_min": 0.9147398843930635,
+            "largest_component_fraction_max": 0.9898843930635838,
+            "largest_component_fraction_mean": 0.9712588310854207,
+            "isolated_nodes_min": 7,
+            "isolated_nodes_max": 57,
+            "isolated_nodes_mean": 19.444444444444443,
+            "median_degree_min": 10.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 93,
+            "threshold_min": 0.24609729119611812,
+            "threshold_max": 0.34571796694733176,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              5536
+            ],
+            "edge_count": [
+              5536
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.023154848046309694,
+            "effective_density_max": 0.023154848046309694,
+            "components_min": 8,
+            "components_max": 32,
+            "components_mean": 14.5,
+            "largest_component_fraction_min": 0.9552023121387283,
+            "largest_component_fraction_max": 0.9898843930635838,
+            "largest_component_fraction_mean": 0.9804913294797688,
+            "isolated_nodes_min": 7,
+            "isolated_nodes_max": 31,
+            "isolated_nodes_mean": 13.5,
+            "median_degree_min": 10.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 93,
+            "threshold_min": 0.24609729119611812,
+            "threshold_max": 0.28751748756848733,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              692
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              5536
+            ],
+            "edge_count": [
+              5536
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.023154848046309694,
+            "effective_density_max": 0.023154848046309694,
+            "components_min": 15,
+            "components_max": 59,
+            "components_mean": 33.0,
+            "largest_component_fraction_min": 0.9147398843930635,
+            "largest_component_fraction_max": 0.9797687861271677,
+            "largest_component_fraction_mean": 0.9527938342967245,
+            "isolated_nodes_min": 14,
+            "isolated_nodes_max": 57,
+            "isolated_nodes_mean": 31.333333333333332,
+            "median_degree_min": 10.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 89,
+            "threshold_min": 0.2826818555517251,
+            "threshold_max": 0.34571796694733176,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "sleep_S3_C1_G3",
+      "condition": "sleep",
+      "signal": "S3",
+      "grain": "G3",
+      "window_count": 9,
+      "repeats": 200,
+      "delta_q": {
+        "4": -0.041058978471270935,
+        "8": -0.046423758450555186,
+        "16": -0.074039810885763
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.5577150645416374,
+          "target_q_mean": 0.5166560860703665,
+          "delta_q_target_minus_wake": -0.041058978471270935
+        },
+        "8": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.47659634746678253,
+          "target_q_mean": 0.43017258901622735,
+          "delta_q_target_minus_wake": -0.046423758450555186
+        },
+        "16": {
+          "wake_window_count": 6,
+          "target_window_count": 3,
+          "wake_q_mean": 0.41799889947876645,
+          "target_q_mean": 0.34395908859300345,
+          "delta_q_target_minus_wake": -0.074039810885763
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              346
+            ],
+            "edge_count": [
+              346
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.023255813953488372,
+            "effective_density_max": 0.023255813953488372,
+            "components_min": 34,
+            "components_max": 78,
+            "components_mean": 51.55555555555556,
+            "largest_component_fraction_min": 0.5375722543352601,
+            "largest_component_fraction_max": 0.8034682080924855,
+            "largest_component_fraction_mean": 0.691072575465639,
+            "isolated_nodes_min": 32,
+            "isolated_nodes_max": 74,
+            "isolated_nodes_mean": 48.111111111111114,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 30,
+            "threshold_min": 0.3642509331329124,
+            "threshold_max": 0.5006430844835655,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              346
+            ],
+            "edge_count": [
+              346
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.023255813953488372,
+            "effective_density_max": 0.023255813953488372,
+            "components_min": 43,
+            "components_max": 78,
+            "components_mean": 53.666666666666664,
+            "largest_component_fraction_min": 0.5375722543352601,
+            "largest_component_fraction_max": 0.7398843930635838,
+            "largest_component_fraction_mean": 0.676300578034682,
+            "isolated_nodes_min": 40,
+            "isolated_nodes_max": 74,
+            "isolated_nodes_mean": 49.666666666666664,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 30,
+            "threshold_min": 0.3642509331329124,
+            "threshold_max": 0.43246133025749206,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              346
+            ],
+            "edge_count": [
+              346
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.023255813953488372,
+            "effective_density_max": 0.023255813953488372,
+            "components_min": 34,
+            "components_max": 73,
+            "components_mean": 47.333333333333336,
+            "largest_component_fraction_min": 0.5549132947976878,
+            "largest_component_fraction_max": 0.8034682080924855,
+            "largest_component_fraction_mean": 0.720616570327553,
+            "isolated_nodes_min": 32,
+            "isolated_nodes_max": 69,
+            "isolated_nodes_mean": 45.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 28,
+            "threshold_min": 0.41725605020118367,
+            "threshold_max": 0.5006430844835655,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              692
+            ],
+            "edge_count": [
+              692
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.046511627906976744,
+            "effective_density_max": 0.046511627906976744,
+            "components_min": 15,
+            "components_max": 46,
+            "components_mean": 25.77777777777778,
+            "largest_component_fraction_min": 0.7167630057803468,
+            "largest_component_fraction_max": 0.9190751445086706,
+            "largest_component_fraction_mean": 0.8471419396274887,
+            "isolated_nodes_min": 14,
+            "isolated_nodes_max": 42,
+            "isolated_nodes_mean": 23.555555555555557,
+            "median_degree_min": 3.0,
+            "median_degree_max": 7.0,
+            "degree_min_min": 0,
+            "degree_max_max": 44,
+            "threshold_min": 0.32548614181953933,
+            "threshold_max": 0.4513217876282377,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              692
+            ],
+            "edge_count": [
+              692
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.046511627906976744,
+            "effective_density_max": 0.046511627906976744,
+            "components_min": 19,
+            "components_max": 45,
+            "components_mean": 26.0,
+            "largest_component_fraction_min": 0.7225433526011561,
+            "largest_component_fraction_max": 0.8901734104046243,
+            "largest_component_fraction_mean": 0.8448940269749519,
+            "isolated_nodes_min": 17,
+            "isolated_nodes_max": 42,
+            "isolated_nodes_mean": 23.666666666666668,
+            "median_degree_min": 3.0,
+            "median_degree_max": 7.0,
+            "degree_min_min": 0,
+            "degree_max_max": 39,
+            "threshold_min": 0.32548614181953933,
+            "threshold_max": 0.3880082335181,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              692
+            ],
+            "edge_count": [
+              692
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.046511627906976744,
+            "effective_density_max": 0.046511627906976744,
+            "components_min": 15,
+            "components_max": 46,
+            "components_mean": 25.333333333333332,
+            "largest_component_fraction_min": 0.7167630057803468,
+            "largest_component_fraction_max": 0.9190751445086706,
+            "largest_component_fraction_mean": 0.8516377649325626,
+            "isolated_nodes_min": 14,
+            "isolated_nodes_max": 42,
+            "isolated_nodes_mean": 23.333333333333332,
+            "median_degree_min": 4.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 44,
+            "threshold_min": 0.37833721951110194,
+            "threshold_max": 0.4513217876282377,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.09302325581395349,
+            "effective_density_max": 0.09302325581395349,
+            "components_min": 3,
+            "components_max": 19,
+            "components_mean": 7.888888888888889,
+            "largest_component_fraction_min": 0.8901734104046243,
+            "largest_component_fraction_max": 0.9884393063583815,
+            "largest_component_fraction_mean": 0.9576107899807321,
+            "isolated_nodes_min": 2,
+            "isolated_nodes_max": 17,
+            "isolated_nodes_mean": 6.444444444444445,
+            "median_degree_min": 11.0,
+            "median_degree_max": 15.0,
+            "degree_min_min": 0,
+            "degree_max_max": 62,
+            "threshold_min": 0.27874429537690787,
+            "threshold_max": 0.3947552526837034,
+            "tie_excess_edges_max": 0,
+            "window_count": 9
+          },
+          "wake": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.09302325581395349,
+            "effective_density_max": 0.09302325581395349,
+            "components_min": 4,
+            "components_max": 19,
+            "components_mean": 8.5,
+            "largest_component_fraction_min": 0.8901734104046243,
+            "largest_component_fraction_max": 0.9826589595375722,
+            "largest_component_fraction_mean": 0.9547206165703275,
+            "isolated_nodes_min": 3,
+            "isolated_nodes_max": 17,
+            "isolated_nodes_mean": 7.166666666666667,
+            "median_degree_min": 13.0,
+            "median_degree_max": 15.0,
+            "degree_min_min": 0,
+            "degree_max_max": 55,
+            "threshold_min": 0.27874429537690787,
+            "threshold_max": 0.3385968691611834,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "target": {
+            "nodes": [
+              173
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              1384
+            ],
+            "edge_count": [
+              1384
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.09302325581395349,
+            "effective_density_max": 0.09302325581395349,
+            "components_min": 3,
+            "components_max": 11,
+            "components_mean": 6.666666666666667,
+            "largest_component_fraction_min": 0.930635838150289,
+            "largest_component_fraction_max": 0.9884393063583815,
+            "largest_component_fraction_mean": 0.9633911368015414,
+            "isolated_nodes_min": 2,
+            "isolated_nodes_max": 8,
+            "isolated_nodes_mean": 5.0,
+            "median_degree_min": 11.0,
+            "median_degree_max": 13.0,
+            "degree_min_min": 0,
+            "degree_max_max": 62,
+            "threshold_min": 0.33576858883234434,
+            "threshold_max": 0.3947552526837034,
+            "tie_excess_edges_max": 0,
+            "window_count": 3
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "ane_S1_C1_G1",
+      "condition": "ane",
+      "signal": "S1",
+      "grain": "G1",
+      "window_count": 6,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.12312647878029026,
+        "8": 0.1255952048213816,
+        "16": 0.11485657847968078
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.433860885472774,
+          "target_q_mean": 0.5569873642530643,
+          "delta_q_target_minus_wake": 0.12312647878029026
+        },
+        "8": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.4361332273075775,
+          "target_q_mean": 0.5617284321289591,
+          "delta_q_target_minus_wake": 0.1255952048213816
+        },
+        "16": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.43154098262463514,
+          "target_q_mean": 0.5463975611043159,
+          "delta_q_target_minus_wake": 0.11485657847968078
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 2023,
+            "components_max": 2315,
+            "components_mean": 2196.5,
+            "largest_component_fraction_min": 0.22118380062305296,
+            "largest_component_fraction_max": 0.3130841121495327,
+            "largest_component_fraction_mean": 0.26661474558670817,
+            "isolated_nodes_min": 1893,
+            "isolated_nodes_max": 2230,
+            "isolated_nodes_mean": 2089.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 200,
+            "threshold_min": 0.3604214816758465,
+            "threshold_max": 0.45233732060914866,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 2023,
+            "components_max": 2311,
+            "components_mean": 2172.8,
+            "largest_component_fraction_min": 0.23395638629283488,
+            "largest_component_fraction_max": 0.3130841121495327,
+            "largest_component_fraction_mean": 0.2757009345794392,
+            "isolated_nodes_min": 1893,
+            "isolated_nodes_max": 2200,
+            "isolated_nodes_mean": 2060.8,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 200,
+            "threshold_min": 0.3604214816758465,
+            "threshold_max": 0.45233732060914866,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 2315,
+            "components_max": 2315,
+            "components_mean": 2315.0,
+            "largest_component_fraction_min": 0.22118380062305296,
+            "largest_component_fraction_max": 0.22118380062305296,
+            "largest_component_fraction_mean": 0.22118380062305296,
+            "isolated_nodes_min": 2230,
+            "isolated_nodes_max": 2230,
+            "isolated_nodes_mean": 2230.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 135,
+            "threshold_min": 0.41162299614467085,
+            "threshold_max": 0.41162299614467085,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 1243,
+            "components_max": 1775,
+            "components_mean": 1585.5,
+            "largest_component_fraction_min": 0.4102803738317757,
+            "largest_component_fraction_max": 0.592834890965732,
+            "largest_component_fraction_mean": 0.4760643821391485,
+            "isolated_nodes_min": 1186,
+            "isolated_nodes_max": 1684,
+            "isolated_nodes_mean": 1508.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 269,
+            "threshold_min": 0.3138628326221375,
+            "threshold_max": 0.40516184507554515,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 1243,
+            "components_max": 1775,
+            "components_mean": 1562.0,
+            "largest_component_fraction_min": 0.4102803738317757,
+            "largest_component_fraction_max": 0.592834890965732,
+            "largest_component_fraction_mean": 0.4824299065420561,
+            "isolated_nodes_min": 1186,
+            "isolated_nodes_max": 1684,
+            "isolated_nodes_mean": 1481.2,
+            "median_degree_min": 0.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 269,
+            "threshold_min": 0.3138628326221375,
+            "threshold_max": 0.40516184507554515,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 1703,
+            "components_max": 1703,
+            "components_mean": 1703.0,
+            "largest_component_fraction_min": 0.4442367601246106,
+            "largest_component_fraction_max": 0.4442367601246106,
+            "largest_component_fraction_mean": 0.4442367601246106,
+            "isolated_nodes_min": 1642,
+            "isolated_nodes_max": 1642,
+            "isolated_nodes_mean": 1642.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 173,
+            "threshold_min": 0.35258792434895575,
+            "threshold_max": 0.35258792434895575,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 599,
+            "components_max": 1115,
+            "components_mean": 875.1666666666666,
+            "largest_component_fraction_min": 0.6302180685358255,
+            "largest_component_fraction_max": 0.8071651090342679,
+            "largest_component_fraction_mean": 0.7122533748701972,
+            "isolated_nodes_min": 578,
+            "isolated_nodes_max": 1056,
+            "isolated_nodes_mean": 833.3333333333334,
+            "median_degree_min": 2.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 349,
+            "threshold_min": 0.26943127174063447,
+            "threshold_max": 0.35636395991247544,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 599,
+            "components_max": 1115,
+            "components_mean": 864.8,
+            "largest_component_fraction_min": 0.6302180685358255,
+            "largest_component_fraction_max": 0.8071651090342679,
+            "largest_component_fraction_mean": 0.7161370716510903,
+            "isolated_nodes_min": 578,
+            "isolated_nodes_max": 1056,
+            "isolated_nodes_mean": 823.8,
+            "median_degree_min": 2.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 349,
+            "threshold_min": 0.26943127174063447,
+            "threshold_max": 0.35636395991247544,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 927,
+            "components_max": 927,
+            "components_mean": 927.0,
+            "largest_component_fraction_min": 0.6928348909657321,
+            "largest_component_fraction_max": 0.6928348909657321,
+            "largest_component_fraction_mean": 0.6928348909657321,
+            "isolated_nodes_min": 881,
+            "isolated_nodes_max": 881,
+            "isolated_nodes_mean": 881.0,
+            "median_degree_min": 3.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 243,
+            "threshold_min": 0.2967912182305519,
+            "threshold_max": 0.2967912182305519,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "ane_S2_C1_G1",
+      "condition": "ane",
+      "signal": "S2",
+      "grain": "G1",
+      "window_count": 6,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.30188621519589276,
+        "8": 0.22290123773546472,
+        "16": 0.12271075409303073
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.517899234285382,
+          "target_q_mean": 0.8197854494812747,
+          "delta_q_target_minus_wake": 0.30188621519589276
+        },
+        "8": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.48419350792403065,
+          "target_q_mean": 0.7070947456594954,
+          "delta_q_target_minus_wake": 0.22290123773546472
+        },
+        "16": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.4583486671870906,
+          "target_q_mean": 0.5810594212801213,
+          "delta_q_target_minus_wake": 0.12271075409303073
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 520,
+            "components_max": 2468,
+            "components_mean": 1503.5,
+            "largest_component_fraction_min": 0.15825545171339564,
+            "largest_component_fraction_max": 0.8345794392523365,
+            "largest_component_fraction_mean": 0.4784527518172378,
+            "isolated_nodes_min": 507,
+            "isolated_nodes_max": 2337,
+            "isolated_nodes_mean": 1406.3333333333333,
+            "median_degree_min": 0.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 134,
+            "threshold_min": 0.18999914596371506,
+            "threshold_max": 0.4078070050676576,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 520,
+            "components_max": 2468,
+            "components_mean": 1565.4,
+            "largest_component_fraction_min": 0.15825545171339564,
+            "largest_component_fraction_max": 0.8345794392523365,
+            "largest_component_fraction_mean": 0.4699065420560748,
+            "isolated_nodes_min": 507,
+            "isolated_nodes_max": 2337,
+            "isolated_nodes_mean": 1481.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 134,
+            "threshold_min": 0.18999914596371506,
+            "threshold_max": 0.2844929722680698,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 1194,
+            "components_max": 1194,
+            "components_mean": 1194.0,
+            "largest_component_fraction_min": 0.5211838006230529,
+            "largest_component_fraction_max": 0.5211838006230529,
+            "largest_component_fraction_mean": 0.5211838006230529,
+            "isolated_nodes_min": 1033,
+            "isolated_nodes_max": 1033,
+            "isolated_nodes_mean": 1033.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 71,
+            "threshold_min": 0.4078070050676576,
+            "threshold_max": 0.4078070050676576,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 86,
+            "components_max": 1501,
+            "components_mean": 684.1666666666666,
+            "largest_component_fraction_min": 0.49034267912772583,
+            "largest_component_fraction_max": 0.9728971962616823,
+            "largest_component_fraction_mean": 0.7712357217030115,
+            "isolated_nodes_min": 83,
+            "isolated_nodes_max": 1399,
+            "isolated_nodes_mean": 641.8333333333334,
+            "median_degree_min": 1.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 176,
+            "threshold_min": 0.15502800542220055,
+            "threshold_max": 0.30945465842731595,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 86,
+            "components_max": 1501,
+            "components_mean": 724.0,
+            "largest_component_fraction_min": 0.49034267912772583,
+            "largest_component_fraction_max": 0.9728971962616823,
+            "largest_component_fraction_mean": 0.7588785046728972,
+            "isolated_nodes_min": 83,
+            "isolated_nodes_max": 1399,
+            "isolated_nodes_mean": 682.2,
+            "median_degree_min": 1.0,
+            "median_degree_max": 6.0,
+            "degree_min_min": 0,
+            "degree_max_max": 176,
+            "threshold_min": 0.15502800542220055,
+            "threshold_max": 0.2169412523792203,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 485,
+            "components_max": 485,
+            "components_mean": 485.0,
+            "largest_component_fraction_min": 0.8330218068535825,
+            "largest_component_fraction_max": 0.8330218068535825,
+            "largest_component_fraction_mean": 0.8330218068535825,
+            "isolated_nodes_min": 440,
+            "isolated_nodes_max": 440,
+            "isolated_nodes_mean": 440.0,
+            "median_degree_min": 4.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 110,
+            "threshold_min": 0.30945465842731595,
+            "threshold_max": 0.30945465842731595,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 3,
+            "components_max": 304,
+            "components_mean": 102.33333333333333,
+            "largest_component_fraction_min": 0.9040498442367602,
+            "largest_component_fraction_max": 0.9993769470404984,
+            "largest_component_fraction_mean": 0.9678089304257529,
+            "isolated_nodes_min": 2,
+            "isolated_nodes_max": 298,
+            "isolated_nodes_mean": 99.5,
+            "median_degree_min": 4.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 220,
+            "threshold_min": 0.12414653438380281,
+            "threshold_max": 0.2184378801525834,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 3,
+            "components_max": 304,
+            "components_mean": 110.0,
+            "largest_component_fraction_min": 0.9040498442367602,
+            "largest_component_fraction_max": 0.9993769470404984,
+            "largest_component_fraction_mean": 0.9654828660436137,
+            "isolated_nodes_min": 2,
+            "isolated_nodes_max": 298,
+            "isolated_nodes_mean": 107.4,
+            "median_degree_min": 4.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 220,
+            "threshold_min": 0.12414653438380281,
+            "threshold_max": 0.16007437199380642,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 64,
+            "components_max": 64,
+            "components_mean": 64.0,
+            "largest_component_fraction_min": 0.9794392523364486,
+            "largest_component_fraction_max": 0.9794392523364486,
+            "largest_component_fraction_mean": 0.9794392523364486,
+            "isolated_nodes_min": 60,
+            "isolated_nodes_max": 60,
+            "isolated_nodes_mean": 60.0,
+            "median_degree_min": 9.0,
+            "median_degree_max": 9.0,
+            "degree_min_min": 0,
+            "degree_max_max": 161,
+            "threshold_min": 0.2184378801525834,
+            "threshold_max": 0.2184378801525834,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "ane_S3_C1_G1",
+      "condition": "ane",
+      "signal": "S3",
+      "grain": "G1",
+      "window_count": 6,
+      "repeats": 200,
+      "delta_q": {
+        "4": 0.2406595893867488,
+        "8": 0.18222848004677816,
+        "16": 0.14683524003794446
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.5755582268223335,
+          "target_q_mean": 0.8162178162090823,
+          "delta_q_target_minus_wake": 0.2406595893867488
+        },
+        "8": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.5772788034617293,
+          "target_q_mean": 0.7595072835085075,
+          "delta_q_target_minus_wake": 0.18222848004677816
+        },
+        "16": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.5445617668270397,
+          "target_q_mean": 0.6913970068649842,
+          "delta_q_target_minus_wake": 0.14683524003794446
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 912,
+            "components_max": 2158,
+            "components_mean": 1724.0,
+            "largest_component_fraction_min": 0.11557632398753893,
+            "largest_component_fraction_max": 0.7034267912772586,
+            "largest_component_fraction_mean": 0.38021806853582557,
+            "isolated_nodes_min": 872,
+            "isolated_nodes_max": 2015,
+            "isolated_nodes_mean": 1608.5,
+            "median_degree_min": 0.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 130,
+            "threshold_min": 0.3682838580138449,
+            "threshold_max": 0.7651083975329033,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 912,
+            "components_max": 2158,
+            "components_mean": 1662.0,
+            "largest_component_fraction_min": 0.24766355140186916,
+            "largest_component_fraction_max": 0.7034267912772586,
+            "largest_component_fraction_mean": 0.4331464174454829,
+            "isolated_nodes_min": 872,
+            "isolated_nodes_max": 2015,
+            "isolated_nodes_mean": 1561.2,
+            "median_degree_min": 0.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 130,
+            "threshold_min": 0.3682838580138449,
+            "threshold_max": 0.4627767496324523,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              6420
+            ],
+            "edge_count": [
+              6420
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0012464942349641633,
+            "effective_density_max": 0.0012464942349641633,
+            "components_min": 2034,
+            "components_max": 2034,
+            "components_mean": 2034.0,
+            "largest_component_fraction_min": 0.11557632398753893,
+            "largest_component_fraction_max": 0.11557632398753893,
+            "largest_component_fraction_mean": 0.11557632398753893,
+            "isolated_nodes_min": 1845,
+            "isolated_nodes_max": 1845,
+            "isolated_nodes_mean": 1845.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 83,
+            "threshold_min": 0.7651083975329033,
+            "threshold_max": 0.7651083975329033,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 311,
+            "components_max": 1477,
+            "components_mean": 937.8333333333334,
+            "largest_component_fraction_min": 0.3130841121495327,
+            "largest_component_fraction_max": 0.8984423676012461,
+            "largest_component_fraction_mean": 0.6545690550363448,
+            "isolated_nodes_min": 295,
+            "isolated_nodes_max": 1322,
+            "isolated_nodes_mean": 871.1666666666666,
+            "median_degree_min": 1.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 174,
+            "threshold_min": 0.31599123964934334,
+            "threshold_max": 0.6610501734196091,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 311,
+            "components_max": 1257,
+            "components_mean": 830.0,
+            "largest_component_fraction_min": 0.570404984423676,
+            "largest_component_fraction_max": 0.8984423676012461,
+            "largest_component_fraction_mean": 0.7228660436137072,
+            "isolated_nodes_min": 295,
+            "isolated_nodes_max": 1170,
+            "isolated_nodes_mean": 781.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 174,
+            "threshold_min": 0.31599123964934334,
+            "threshold_max": 0.38005880513987783,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              12840
+            ],
+            "edge_count": [
+              12840
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.0024929884699283265,
+            "effective_density_max": 0.0024929884699283265,
+            "components_min": 1477,
+            "components_max": 1477,
+            "components_mean": 1477.0,
+            "largest_component_fraction_min": 0.3130841121495327,
+            "largest_component_fraction_max": 0.3130841121495327,
+            "largest_component_fraction_mean": 0.3130841121495327,
+            "isolated_nodes_min": 1322,
+            "isolated_nodes_max": 1322,
+            "isolated_nodes_mean": 1322.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 127,
+            "threshold_min": 0.6610501734196091,
+            "threshold_max": 0.6610501734196091,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 38,
+            "components_max": 724,
+            "components_mean": 260.3333333333333,
+            "largest_component_fraction_min": 0.7383177570093458,
+            "largest_component_fraction_max": 0.9884735202492212,
+            "largest_component_fraction_mean": 0.9115264797507788,
+            "isolated_nodes_min": 37,
+            "isolated_nodes_max": 673,
+            "isolated_nodes_mean": 246.5,
+            "median_degree_min": 5.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 223,
+            "threshold_min": 0.26657779656557795,
+            "threshold_max": 0.541537829281701,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 38,
+            "components_max": 310,
+            "components_mean": 167.6,
+            "largest_component_fraction_min": 0.9,
+            "largest_component_fraction_max": 0.9884735202492212,
+            "largest_component_fraction_mean": 0.9461682242990654,
+            "isolated_nodes_min": 37,
+            "isolated_nodes_max": 298,
+            "isolated_nodes_mean": 161.2,
+            "median_degree_min": 5.0,
+            "median_degree_max": 12.0,
+            "degree_min_min": 0,
+            "degree_max_max": 223,
+            "threshold_min": 0.26657779656557795,
+            "threshold_max": 0.3087378017717176,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              3210
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              25680
+            ],
+            "edge_count": [
+              25680
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.004985976939856653,
+            "effective_density_max": 0.004985976939856653,
+            "components_min": 724,
+            "components_max": 724,
+            "components_mean": 724.0,
+            "largest_component_fraction_min": 0.7383177570093458,
+            "largest_component_fraction_max": 0.7383177570093458,
+            "largest_component_fraction_mean": 0.7383177570093458,
+            "isolated_nodes_min": 673,
+            "isolated_nodes_max": 673,
+            "isolated_nodes_mean": 673.0,
+            "median_degree_min": 5.0,
+            "median_degree_max": 5.0,
+            "degree_min_min": 0,
+            "degree_max_max": 179,
+            "threshold_min": 0.541537829281701,
+            "threshold_max": 0.541537829281701,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "ane_S3_C1_G2",
+      "condition": "ane",
+      "signal": "S3",
+      "grain": "G2",
+      "window_count": 6,
+      "repeats": 200,
+      "delta_q": {
+        "4": -0.054341718345124634,
+        "8": -0.09025721557438299,
+        "16": -0.07015816216360471
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.38765200260090643,
+          "target_q_mean": 0.3333102842557818,
+          "delta_q_target_minus_wake": -0.054341718345124634
+        },
+        "8": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.3934563062276181,
+          "target_q_mean": 0.30319909065323514,
+          "delta_q_target_minus_wake": -0.09025721557438299
+        },
+        "16": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.34958129530963405,
+          "target_q_mean": 0.27942313314602935,
+          "delta_q_target_minus_wake": -0.07015816216360471
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              642
+            ],
+            "edge_count": [
+              642
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0125,
+            "effective_density_max": 0.0125,
+            "components_min": 59,
+            "components_max": 228,
+            "components_mean": 161.66666666666666,
+            "largest_component_fraction_min": 0.2772585669781931,
+            "largest_component_fraction_max": 0.8099688473520249,
+            "largest_component_fraction_mean": 0.4750778816199377,
+            "isolated_nodes_min": 55,
+            "isolated_nodes_max": 222,
+            "isolated_nodes_mean": 154.5,
+            "median_degree_min": 0.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 43,
+            "threshold_min": 0.17973281015114306,
+            "threshold_max": 0.400450495421235,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              642
+            ],
+            "edge_count": [
+              642
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0125,
+            "effective_density_max": 0.0125,
+            "components_min": 59,
+            "components_max": 219,
+            "components_mean": 148.4,
+            "largest_component_fraction_min": 0.2834890965732087,
+            "largest_component_fraction_max": 0.8099688473520249,
+            "largest_component_fraction_mean": 0.5146417445482866,
+            "isolated_nodes_min": 55,
+            "isolated_nodes_max": 208,
+            "isolated_nodes_mean": 141.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 42,
+            "threshold_min": 0.17973281015114306,
+            "threshold_max": 0.2834878601807802,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              642
+            ],
+            "edge_count": [
+              642
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.0125,
+            "effective_density_max": 0.0125,
+            "components_min": 228,
+            "components_max": 228,
+            "components_mean": 228.0,
+            "largest_component_fraction_min": 0.2772585669781931,
+            "largest_component_fraction_max": 0.2772585669781931,
+            "largest_component_fraction_mean": 0.2772585669781931,
+            "isolated_nodes_min": 222,
+            "isolated_nodes_max": 222,
+            "isolated_nodes_mean": 222.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 43,
+            "threshold_min": 0.400450495421235,
+            "threshold_max": 0.400450495421235,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              1284
+            ],
+            "edge_count": [
+              1284
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.025,
+            "effective_density_max": 0.025,
+            "components_min": 15,
+            "components_max": 163,
+            "components_mean": 82.16666666666667,
+            "largest_component_fraction_min": 0.4797507788161994,
+            "largest_component_fraction_max": 0.9532710280373832,
+            "largest_component_fraction_mean": 0.7320872274143302,
+            "isolated_nodes_min": 13,
+            "isolated_nodes_max": 158,
+            "isolated_nodes_mean": 77.5,
+            "median_degree_min": 1.0,
+            "median_degree_max": 7.0,
+            "degree_min_min": 0,
+            "degree_max_max": 66,
+            "threshold_min": 0.1567776180082509,
+            "threshold_max": 0.32749565134827674,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              1284
+            ],
+            "edge_count": [
+              1284
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.025,
+            "effective_density_max": 0.025,
+            "components_min": 15,
+            "components_max": 115,
+            "components_mean": 66.0,
+            "largest_component_fraction_min": 0.6199376947040498,
+            "largest_component_fraction_max": 0.9532710280373832,
+            "largest_component_fraction_mean": 0.7825545171339564,
+            "isolated_nodes_min": 13,
+            "isolated_nodes_max": 109,
+            "isolated_nodes_mean": 61.4,
+            "median_degree_min": 2.0,
+            "median_degree_max": 7.0,
+            "degree_min_min": 0,
+            "degree_max_max": 66,
+            "threshold_min": 0.1567776180082509,
+            "threshold_max": 0.23007815898595935,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              1284
+            ],
+            "edge_count": [
+              1284
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.025,
+            "effective_density_max": 0.025,
+            "components_min": 163,
+            "components_max": 163,
+            "components_mean": 163.0,
+            "largest_component_fraction_min": 0.4797507788161994,
+            "largest_component_fraction_max": 0.4797507788161994,
+            "largest_component_fraction_mean": 0.4797507788161994,
+            "isolated_nodes_min": 158,
+            "isolated_nodes_max": 158,
+            "isolated_nodes_mean": 158.0,
+            "median_degree_min": 1.0,
+            "median_degree_max": 1.0,
+            "degree_min_min": 0,
+            "degree_max_max": 65,
+            "threshold_min": 0.32749565134827674,
+            "threshold_max": 0.32749565134827674,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              2568
+            ],
+            "edge_count": [
+              2568
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 2,
+            "components_max": 76,
+            "components_mean": 24.0,
+            "largest_component_fraction_min": 0.7507788161993769,
+            "largest_component_fraction_max": 0.9968847352024922,
+            "largest_component_fraction_mean": 0.9257528556593977,
+            "isolated_nodes_min": 1,
+            "isolated_nodes_max": 71,
+            "isolated_nodes_mean": 22.333333333333332,
+            "median_degree_min": 4.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 90,
+            "threshold_min": 0.132482563325542,
+            "threshold_max": 0.25854168822641604,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              2568
+            ],
+            "edge_count": [
+              2568
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 2,
+            "components_max": 25,
+            "components_mean": 13.6,
+            "largest_component_fraction_min": 0.9252336448598131,
+            "largest_component_fraction_max": 0.9968847352024922,
+            "largest_component_fraction_mean": 0.9607476635514018,
+            "isolated_nodes_min": 1,
+            "isolated_nodes_max": 24,
+            "isolated_nodes_mean": 12.6,
+            "median_degree_min": 9.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 90,
+            "threshold_min": 0.132482563325542,
+            "threshold_max": 0.1880597712529866,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              321
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              2568
+            ],
+            "edge_count": [
+              2568
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 76,
+            "components_max": 76,
+            "components_mean": 76.0,
+            "largest_component_fraction_min": 0.7507788161993769,
+            "largest_component_fraction_max": 0.7507788161993769,
+            "largest_component_fraction_mean": 0.7507788161993769,
+            "isolated_nodes_min": 71,
+            "isolated_nodes_max": 71,
+            "isolated_nodes_mean": 71.0,
+            "median_degree_min": 4.0,
+            "median_degree_max": 4.0,
+            "degree_min_min": 0,
+            "degree_max_max": 86,
+            "threshold_min": 0.25854168822641604,
+            "threshold_max": 0.25854168822641604,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        }
+      }
+    },
+    {
+      "cell_id": "ane_S3_C1_G3",
+      "condition": "ane",
+      "signal": "S3",
+      "grain": "G3",
+      "window_count": 6,
+      "repeats": 200,
+      "delta_q": {
+        "4": -0.11037951531778684,
+        "8": -0.14779378143575683,
+        "16": -0.12633792485901538
+      },
+      "q_means": {
+        "4": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.3810699588477366,
+          "target_q_mean": 0.27069044352994975,
+          "delta_q_target_minus_wake": -0.11037951531778684
+        },
+        "8": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.3564652873037647,
+          "target_q_mean": 0.20867150586800787,
+          "delta_q_target_minus_wake": -0.14779378143575683
+        },
+        "16": {
+          "wake_window_count": 5,
+          "target_window_count": 1,
+          "wake_q_mean": 0.27993374676116445,
+          "target_q_mean": 0.15359582190214907,
+          "delta_q_target_minus_wake": -0.12633792485901538
+        }
+      },
+      "diagnostics": {
+        "4": {
+          "all_windows": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              162
+            ],
+            "edge_count": [
+              162
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 22,
+            "components_max": 49,
+            "components_mean": 36.5,
+            "largest_component_fraction_min": 0.4074074074074074,
+            "largest_component_fraction_max": 0.7407407407407407,
+            "largest_component_fraction_mean": 0.5514403292181069,
+            "isolated_nodes_min": 21,
+            "isolated_nodes_max": 48,
+            "isolated_nodes_mean": 34.833333333333336,
+            "median_degree_min": 0.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 23,
+            "threshold_min": 0.21521579025488108,
+            "threshold_max": 0.4683106664748288,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              162
+            ],
+            "edge_count": [
+              162
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 22,
+            "components_max": 42,
+            "components_mean": 34.0,
+            "largest_component_fraction_min": 0.48148148148148145,
+            "largest_component_fraction_max": 0.7407407407407407,
+            "largest_component_fraction_mean": 0.5802469135802469,
+            "isolated_nodes_min": 21,
+            "isolated_nodes_max": 40,
+            "isolated_nodes_mean": 32.2,
+            "median_degree_min": 1.0,
+            "median_degree_max": 3.0,
+            "degree_min_min": 0,
+            "degree_max_max": 23,
+            "threshold_min": 0.21521579025488108,
+            "threshold_max": 0.35613032627843894,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              4
+            ],
+            "desired_edges": [
+              162
+            ],
+            "edge_count": [
+              162
+            ],
+            "achieved_mean_degree": [
+              4.0
+            ],
+            "effective_density_min": 0.05,
+            "effective_density_max": 0.05,
+            "components_min": 49,
+            "components_max": 49,
+            "components_mean": 49.0,
+            "largest_component_fraction_min": 0.4074074074074074,
+            "largest_component_fraction_max": 0.4074074074074074,
+            "largest_component_fraction_mean": 0.4074074074074074,
+            "isolated_nodes_min": 48,
+            "isolated_nodes_max": 48,
+            "isolated_nodes_mean": 48.0,
+            "median_degree_min": 0.0,
+            "median_degree_max": 0.0,
+            "degree_min_min": 0,
+            "degree_max_max": 19,
+            "threshold_min": 0.4683106664748288,
+            "threshold_max": 0.4683106664748288,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "8": {
+          "all_windows": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              324
+            ],
+            "edge_count": [
+              324
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.1,
+            "effective_density_max": 0.1,
+            "components_min": 11,
+            "components_max": 34,
+            "components_mean": 22.666666666666668,
+            "largest_component_fraction_min": 0.5925925925925926,
+            "largest_component_fraction_max": 0.8765432098765432,
+            "largest_component_fraction_mean": 0.7283950617283951,
+            "isolated_nodes_min": 10,
+            "isolated_nodes_max": 33,
+            "isolated_nodes_mean": 21.333333333333332,
+            "median_degree_min": 2.0,
+            "median_degree_max": 8.0,
+            "degree_min_min": 0,
+            "degree_max_max": 31,
+            "threshold_min": 0.18445502072507336,
+            "threshold_max": 0.3748070844802025,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              324
+            ],
+            "edge_count": [
+              324
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.1,
+            "effective_density_max": 0.1,
+            "components_min": 11,
+            "components_max": 27,
+            "components_mean": 20.4,
+            "largest_component_fraction_min": 0.6666666666666666,
+            "largest_component_fraction_max": 0.8765432098765432,
+            "largest_component_fraction_mean": 0.7555555555555555,
+            "isolated_nodes_min": 10,
+            "isolated_nodes_max": 25,
+            "isolated_nodes_mean": 19.0,
+            "median_degree_min": 5.0,
+            "median_degree_max": 8.0,
+            "degree_min_min": 0,
+            "degree_max_max": 29,
+            "threshold_min": 0.18445502072507336,
+            "threshold_max": 0.29644511624029823,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              8
+            ],
+            "desired_edges": [
+              324
+            ],
+            "edge_count": [
+              324
+            ],
+            "achieved_mean_degree": [
+              8.0
+            ],
+            "effective_density_min": 0.1,
+            "effective_density_max": 0.1,
+            "components_min": 34,
+            "components_max": 34,
+            "components_mean": 34.0,
+            "largest_component_fraction_min": 0.5925925925925926,
+            "largest_component_fraction_max": 0.5925925925925926,
+            "largest_component_fraction_mean": 0.5925925925925926,
+            "isolated_nodes_min": 33,
+            "isolated_nodes_max": 33,
+            "isolated_nodes_mean": 33.0,
+            "median_degree_min": 2.0,
+            "median_degree_max": 2.0,
+            "degree_min_min": 0,
+            "degree_max_max": 31,
+            "threshold_min": 0.3748070844802025,
+            "threshold_max": 0.3748070844802025,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        },
+        "16": {
+          "all_windows": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              648
+            ],
+            "edge_count": [
+              648
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.2,
+            "effective_density_max": 0.2,
+            "components_min": 4,
+            "components_max": 12,
+            "components_mean": 8.166666666666666,
+            "largest_component_fraction_min": 0.8641975308641975,
+            "largest_component_fraction_max": 0.9629629629629629,
+            "largest_component_fraction_mean": 0.9115226337448559,
+            "isolated_nodes_min": 3,
+            "isolated_nodes_max": 11,
+            "isolated_nodes_mean": 7.166666666666667,
+            "median_degree_min": 14.0,
+            "median_degree_max": 20.0,
+            "degree_min_min": 0,
+            "degree_max_max": 44,
+            "threshold_min": 0.14355182511888073,
+            "threshold_max": 0.2829676993287271,
+            "tie_excess_edges_max": 0,
+            "window_count": 6
+          },
+          "wake": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              648
+            ],
+            "edge_count": [
+              648
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.2,
+            "effective_density_max": 0.2,
+            "components_min": 4,
+            "components_max": 10,
+            "components_mean": 7.4,
+            "largest_component_fraction_min": 0.8888888888888888,
+            "largest_component_fraction_max": 0.9629629629629629,
+            "largest_component_fraction_mean": 0.9209876543209876,
+            "isolated_nodes_min": 3,
+            "isolated_nodes_max": 9,
+            "isolated_nodes_mean": 6.4,
+            "median_degree_min": 14.0,
+            "median_degree_max": 20.0,
+            "degree_min_min": 0,
+            "degree_max_max": 42,
+            "threshold_min": 0.14355182511888073,
+            "threshold_max": 0.22572140217998596,
+            "tie_excess_edges_max": 0,
+            "window_count": 5
+          },
+          "target": {
+            "nodes": [
+              81
+            ],
+            "target_mean_degree": [
+              16
+            ],
+            "desired_edges": [
+              648
+            ],
+            "edge_count": [
+              648
+            ],
+            "achieved_mean_degree": [
+              16.0
+            ],
+            "effective_density_min": 0.2,
+            "effective_density_max": 0.2,
+            "components_min": 12,
+            "components_max": 12,
+            "components_mean": 12.0,
+            "largest_component_fraction_min": 0.8641975308641975,
+            "largest_component_fraction_max": 0.8641975308641975,
+            "largest_component_fraction_mean": 0.8641975308641975,
+            "isolated_nodes_min": 11,
+            "isolated_nodes_max": 11,
+            "isolated_nodes_mean": 11.0,
+            "median_degree_min": 14.0,
+            "median_degree_max": 14.0,
+            "degree_min_min": 0,
+            "degree_max_max": 44,
+            "threshold_min": 0.2829676993287271,
+            "threshold_max": 0.2829676993287271,
+            "tie_excess_edges_max": 0,
+            "window_count": 1
+          }
+        }
+      }
+    }
+  ],
+  "grain_axis": {
+    "sleep": {
+      "per_degree": {
+        "4": {
+          "delta_q_by_grain": {
+            "G1": 0.0362074470343704,
+            "G2": 0.049562393149899076,
+            "G3": -0.041058978471270935
+          },
+          "substantive_sign_reversal": true
+        },
+        "8": {
+          "delta_q_by_grain": {
+            "G1": 0.07273665100285953,
+            "G2": 0.05498315414188576,
+            "G3": -0.046423758450555186
+          },
+          "substantive_sign_reversal": true
+        },
+        "16": {
+          "delta_q_by_grain": {
+            "G1": 0.1145433428014877,
+            "G2": 0.045884553730286604,
+            "G3": -0.074039810885763
+          },
+          "substantive_sign_reversal": true
+        }
+      },
+      "reversal_persists_at_all_target_degrees": true,
+      "classification": "MD-C with MD-D pathology warning",
+      "interpretation": "S3 grain reversal persists at every matched degree, but the matched graphs are strongly fragmented for many cells.",
+      "connectivity_diagnostics": {
+        "4": {
+          "largest_component_fraction_min": 0.28728323699421965,
+          "largest_component_fraction_max": 0.815028901734104,
+          "isolated_nodes_max": 3407,
+          "components_max": 3805
+        },
+        "8": {
+          "largest_component_fraction_min": 0.5739884393063583,
+          "largest_component_fraction_max": 0.9566473988439307,
+          "isolated_nodes_max": 2246,
+          "components_max": 2483
+        },
+        "16": {
+          "largest_component_fraction_min": 0.8034682080924855,
+          "largest_component_fraction_max": 0.9898843930635838,
+          "isolated_nodes_max": 1106,
+          "components_max": 1215
+        }
+      }
+    },
+    "ane": {
+      "per_degree": {
+        "4": {
+          "delta_q_by_grain": {
+            "G1": 0.2406595893867488,
+            "G2": -0.054341718345124634,
+            "G3": -0.11037951531778684
+          },
+          "substantive_sign_reversal": true
+        },
+        "8": {
+          "delta_q_by_grain": {
+            "G1": 0.18222848004677816,
+            "G2": -0.09025721557438299,
+            "G3": -0.14779378143575683
+          },
+          "substantive_sign_reversal": true
+        },
+        "16": {
+          "delta_q_by_grain": {
+            "G1": 0.14683524003794446,
+            "G2": -0.07015816216360471,
+            "G3": -0.12633792485901538
+          },
+          "substantive_sign_reversal": true
+        }
+      },
+      "reversal_persists_at_all_target_degrees": true,
+      "classification": "MD-C with MD-D pathology warning",
+      "interpretation": "S3 grain reversal persists at every matched degree, but the matched graphs are strongly fragmented for many cells.",
+      "connectivity_diagnostics": {
+        "4": {
+          "largest_component_fraction_min": 0.11557632398753893,
+          "largest_component_fraction_max": 0.8099688473520249,
+          "isolated_nodes_max": 2015,
+          "components_max": 2158
+        },
+        "8": {
+          "largest_component_fraction_min": 0.3130841121495327,
+          "largest_component_fraction_max": 0.9532710280373832,
+          "isolated_nodes_max": 1322,
+          "components_max": 1477
+        },
+        "16": {
+          "largest_component_fraction_min": 0.7383177570093458,
+          "largest_component_fraction_max": 0.9968847352024922,
+          "isolated_nodes_max": 673,
+          "components_max": 724
+        }
+      }
+    }
+  },
+  "signal_axis": {
+    "sleep": {
+      "per_degree": {
+        "4": {
+          "delta_q_by_signal": {
+            "S1": -0.003566273513983198,
+            "S2": 0.062185104138823055,
+            "S3": 0.0362074470343704
+          },
+          "substantive_sign_reversal": false
+        },
+        "8": {
+          "delta_q_by_signal": {
+            "S1": 0.008330412684151245,
+            "S2": 0.07094670287823568,
+            "S3": 0.07273665100285953
+          },
+          "substantive_sign_reversal": false
+        },
+        "16": {
+          "delta_q_by_signal": {
+            "S1": 0.01872114949390624,
+            "S2": 0.07465511995468277,
+            "S3": 0.1145433428014877
+          },
+          "substantive_sign_reversal": false
+        }
+      },
+      "persistent_substantive_signal_reversal": false,
+      "interpretation": "No substantive selected G1 signal-axis sign reversal under matched degree; severe fragmentation remains a caveat."
+    },
+    "ane": {
+      "per_degree": {
+        "4": {
+          "delta_q_by_signal": {
+            "S1": 0.12312647878029026,
+            "S2": 0.30188621519589276,
+            "S3": 0.2406595893867488
+          },
+          "substantive_sign_reversal": false
+        },
+        "8": {
+          "delta_q_by_signal": {
+            "S1": 0.1255952048213816,
+            "S2": 0.22290123773546472,
+            "S3": 0.18222848004677816
+          },
+          "substantive_sign_reversal": false
+        },
+        "16": {
+          "delta_q_by_signal": {
+            "S1": 0.11485657847968078,
+            "S2": 0.12271075409303073,
+            "S3": 0.14683524003794446
+          },
+          "substantive_sign_reversal": false
+        }
+      },
+      "persistent_substantive_signal_reversal": false,
+      "interpretation": "No substantive selected G1 signal-axis sign reversal under matched degree; severe fragmentation remains a caveat."
+    }
+  },
+  "overall_classification": "mixed MD-C / MD-D diagnostic result",
+  "overall_interpretation": "Substantive S3 grain reversal persists across kbar=4,8,16, weakening a simple fixed-density-induced mean-degree explanation. However, the matched graphs are severely fragmented, so this is not a clean connectivity-controlled result.",
+  "what_this_control_weakens": [
+    "A simple explanation in which fixed K alone creates the observed grain sign reversal.",
+    "The selected anesthesia G1 signal-axis reversal as a robust effect independent of graph mean degree, because S1/S2/S3 are all positive at matched degree."
+  ],
+  "what_it_does_not_rule_out": [
+    "Network-size and modularity finite-size effects.",
+    "Fragmentation/disconnected-graph effects; many matched graphs have large isolated-node counts and small largest components.",
+    "Sparse signal/correlation suitability and zero inflation.",
+    "Python-louvain versus MATLAB/BCT implementation differences.",
+    "Any population-level or cross-animal inference."
+  ],
+  "next_highest_information_gate": "If separately authorized, predeclare a connectivity-/component-matched control or broader multi-animal replication; neither was run here.",
+  "integrity": {
+    "state_complete": true,
+    "cells_complete": 10,
+    "expected_cells": 10,
+    "graphs_windows": 225,
+    "expected_graphs_windows": 225,
+    "q_values": 45000,
+    "expected_q_values": 45000,
+    "all_q_finite": true,
+    "edge_count_formula_pass": true,
+    "achieved_degree_pass": true,
+    "all_tie_excess_edges_zero": true,
+    "log_error_count": 0
+  }
+}
