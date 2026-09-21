@@ -785,11 +785,16 @@ Bearer admission threshold + Bearer <-> position stability
 17. X4 split = X4a reconstructed condition / X4b recursive feedback / X4c inherited reconstructed condition; long-term effect != feedback/inheritance;
 18. CIV-004 Nepal irrigation = X3b positive source pressure; CIV-005 beaver ecosystem engineering = X4a positive but X4b not automatically paid;
 19. X3a/X3b/X4a/X4b remain M2; X4c M1/M2 source-dependent; no M3 promotion;
-20. next framework work = formal Relation Library owner + X3b/X4b cross-domain invariance audit + explicit FAIL cases;
-21. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-22. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-23. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-24. do not restart winner-style strongest-neighbor novelty audit;
+20. live Relation Library owner = ESTABLISHED at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md;
+21. negative-control discipline = PAID: formal-decoupling rejects X3b automatic admission; ecosystem-engineering-only evidence rejects X4b automatic admission;
+22. X3b invariance Pass 1 = provisional PASS across technical/legal/local-institutional carriers, but remains M2 with high substitutability pressure;
+23. X4b invariance Pass 1 = PASS only inside biological selective-feedback neighborhood; cross-domain invariance NOT ESTABLISHED; status DOMAIN-LIMITED / M2;
+24. M3 promotions = NONE;
+25. next framework work = pre-result X3b transfer outside obvious institutions + genuinely non-biological X4b candidate; semantic stretch => reject/keep domain-limited;
+26. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+27. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+28. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+29. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

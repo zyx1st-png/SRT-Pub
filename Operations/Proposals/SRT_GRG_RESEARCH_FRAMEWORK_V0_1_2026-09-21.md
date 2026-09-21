@@ -263,7 +263,13 @@ It does not by itself establish a civilization-scale relation.
 
 The existing G0–G11 programme burdens remain working slots.
 
-They should now be managed as a **relation library**, not a hidden ontology ladder.
+The live extracted-relation owner is:
+
+Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+
+It manages admission burdens, non-identities, negative controls, M-status, narrowing / split / retirement and next gates.
+
+The relation library is not a hidden ontology ladder.
 
 Each relation can be:
 
@@ -768,14 +774,32 @@ It is not the programme-wide next blocker.
 
 ## 20. Immediate framework build order
 
-1. land Framework v0.1;
-2. land GRG Relation Record template;
-3. establish Civilizational Learning Architecture v0.1;
-4. seed the Domain / Civilization Atlas from existing repository frameworks and strongest existing materials;
-5. backfill several relation records from already completed work rather than opening new experiments;
-6. identify 3–5 cross-domain relation candidates that recur independently;
-7. identify 2–3 civilizational / institutional cases for each selected relation where evidence quality is sufficient;
-8. use calibration only where a relation needs pressure, not as the only work queue.
+Completed:
+
+1. Framework v0.1;
+2. Relation Record schema;
+3. Civilizational Learning Architecture;
+4. Domain / Civilization Atlas seed;
+5. first relation-record backfill;
+6. first civilizational false-convergence pass;
+7. X3/X4 mature-source pressure;
+8. live Relation Library v0.1;
+9. first negative-control + invariance pass.
+
+Current next:
+
+~~~text
+X3b:
+seek pre-result transfer beyond obvious rule/institution cases.
+
+X4b:
+seek a genuinely non-biological candidate;
+if meaning stretches, keep DOMAIN-LIMITED.
+
+Relation Library:
+add / revise only when source-native records pay admission burdens.
+No M3 promotion by case count.
+~~~
 
 ## 21. Canonical boundary
 

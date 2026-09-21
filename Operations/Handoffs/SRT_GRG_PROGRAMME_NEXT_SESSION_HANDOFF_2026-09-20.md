@@ -288,15 +288,46 @@ not as an adjudication that NCT is the exclusive or superior evolutionary framew
 Audit:
 `Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`
 
+RELATION LIBRARY + INVARIANCE PASS 1 = COMPLETE:
+
+~~~text
+live owner:
+Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+
+NEG-X3B-01:
+formal structure can be decoupled from ongoing activity
+-> X3a may pass while X3b fails.
+
+NEG-X4B-01:
+environmental reconstruction can be strongly evidenced
+without paying recursive selection/viability feedback.
+-> X4a passes while X4b admission fails under that record.
+
+X3b:
+M2 / provisional semantic-invariance PASS
+across technical + legal + local-institutional carriers
+distinctiveness OPEN
+substitutability pressure HIGH
+
+X4b:
+M2 / DOMAIN-LIMITED
+biological selective-feedback invariance PASS
+genuine cross-domain invariance NOT ESTABLISHED
+
+M3 = NONE
+~~~
+
+Audit:
+Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. formalize a live GRG Relation Library owner surface;
-2. run cross-domain invariance audit on X3b and X4b;
-3. require one explicit FAIL case for X3b and one for X4b;
-4. test whether X3b is merely institutional-analysis grammar generalized too far;
-5. test whether X4b is merely niche construction / path dependence generalized too far;
-6. do not promote X3/X4 to M3 before those exclusions survive.
+1. X3b: pre-result transfer outside obvious institution/rule cases;
+2. require the transfer to change a variable, control or distinction before outcome inspection;
+3. X4b: search for a genuinely non-biological candidate with reconstructed field -> later viability/accessibility/transition pressure;
+4. if X4b requires semantic stretching, keep DOMAIN-LIMITED rather than forcing cross-domain unification;
+5. continue Atlas material re-entry without increasing M-status by case count.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -399,57 +430,54 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-2) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
-3) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
-4) Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
-5) Operations/Templates/SRT_GRG_CIVILIZATIONAL_CASE_RECORD_TEMPLATE_V0_1.md
-6) Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md
-7) Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
-8) Materials/2026/SRC_2026_09_21_Ostrom_Polycentric_Commons_Governance.md
-9) Materials/2026/SRC_2026_09_21_Niche_Construction_Ecological_Inheritance.md
-10) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+1) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+2) Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
+3) Operations/GRG/NegativeControls/SRT_GRG_NEG_X3B_FORMAL_DECOUPLING_2026-09-21.md
+4) Operations/GRG/NegativeControls/SRT_GRG_NEG_X4B_ECOSYSTEM_ENGINEERING_ONLY_2026-09-21.md
+5) Materials/2026/SRC_2026_09_21_Meyer_Rowan_Formal_Decoupling.md
+6) Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
+7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+8) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
 ~~~text
-GRG programme mainline = FRAMEWORK CONSTRUCTION
+GRG Relation Library = ESTABLISHED
 
-relation-pressure state:
-X3a articulated expectation = M2
-X3b operative expectation regime = M2
-X4a reconstructed condition = M2
-X4b recursive selective / viability feedback = M2
-X4c inherited reconstructed condition = M1/M2 source-dependent
+R1 family = split / active
+X3a = M2
+X3b = M2 / provisional cross-domain invariance PASS
+       distinctiveness OPEN / substitutability pressure HIGH
+
+X4a = M2
+X4b = M2 / DOMAIN-LIMITED
+       biological invariance PASS
+       cross-domain invariance NOT ESTABLISHED
+X4c = M1/M2 source-dependent
+
+negative controls:
+X3a does not entail X3b
+X4a does not entail X4b
+
 M3 = NONE
 
-source-native pressure:
-Ostrom -> written/formal rule != operative institution
-NCT/ecological inheritance -> environment modification != selection feedback != inherited condition
-NCT broader evolutionary-status debate = OPEN / CONTESTED
-
-positive/negative case pressure:
-CIV-004 Nepal irrigation -> X3b positive pressure
-CIV-005 beaver ecosystem engineering -> X4a yes, X4b not automatically paid
-
 next:
-Relation Library owner
--> X3b/X4b cross-domain invariance audit
--> explicit FAIL case for each
--> test overgeneralization against mature neighbors
--> only then consider M3
+X3b pre-result transfer outside obvious institution/rule cases
++
+X4b genuinely non-biological candidate
+or keep X4b domain-limited if semantic invariance fails
 
 calibration:
-RNN spectral = STOP
-HKB request to Harjo = SENT / response pending
-HKB waiting != programme blocker
+RNN = STOP
+HKB request = SENT / response pending
 
 canonical edit = NO
 new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要继续堆支持案例。下一轮首先要证明 GRG 会拒绝什么：为 X3b、X4b 各找一个应当失败的 case，并检查它们是否只是把 IAD / niche construction / path dependence 泛化换名。不要把 mature neighbor 的机制挪成 SRT ontology；不要开 canonical landing。
+不要以“更多相似案例”推动 M-status。下一步必须看 transfer / exclusion：X3b 要在结果前改变一个新领域的研究设计；X4b 若找不到不靠语义扩张的非生物 realization，就明确保留为 domain-limited。不要把 Meyer–Rowan、Ostrom、NCT 的机制挪成 SRT ontology；不要开 canonical landing。
 
 ## 9. Stop rule
 

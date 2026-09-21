@@ -348,16 +348,51 @@ Owner:
 
 This pass restores source-native ownership rather than treating GRG as the source of the mechanisms.
 
+## 5.3 Relation Library + invariance Pass 1
+
+Live owner:
+
+Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+
+Negative controls:
+
+~~~text
+NEG-X3B-01:
+formal structure / expectation can be present while ongoing activity is decoupled.
+-> X3a may pass; X3b fails without operative coupling.
+
+NEG-X4B-01:
+environmental reconstruction can be well evidenced while selection/viability feedback is not paid.
+-> X4a passes; X4b fails under that record alone.
+~~~
+
+Invariance result:
+
+~~~text
+X3b = M2 / provisional semantic-invariance PASS
+       across technical + legal + local-institutional cases
+       distinctiveness OPEN / substitutability pressure HIGH
+
+X4b = M2 / DOMAIN-LIMITED
+       biological selective-feedback invariance PASS
+       genuine cross-domain invariance NOT ESTABLISHED
+
+M3 promotions = NONE
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
+
 ## 6. Mainline work order
 
 ~~~text
-1. formalize the live Relation Library owner surface;
-2. run cross-domain invariance audit on X3b and X4b;
-3. require explicit FAIL cases for X3b and X4b;
-4. test whether X3b is merely institutional-analysis grammar generalized too far;
-5. test whether X4b is merely niche construction / path dependence generalized too far;
-6. continue domain atlas material re-entry for D-EPI / D-NEUR / D-AI / D-SOC;
-7. update / split / retire relation library before adding supportive cases;
+1. do not add supportive cases by default;
+2. X3b: seek pre-result transfer outside obvious institutional/rule cases;
+3. X4b: seek a genuinely non-biological candidate with the same burden;
+4. if X4b requires semantic stretching, keep it DOMAIN-LIMITED;
+5. continue domain atlas material re-entry for D-EPI / D-NEUR / D-AI / D-SOC;
+6. grow Relation Library only with admission + negative-control discipline;
 ~~~
 
 ## 7. Calibration queue
