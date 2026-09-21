@@ -445,15 +445,52 @@ M4-E0 absorption-before-execution
 = target-practice audit after freeze, before experiment.
 ~~~
 
+## 5.6 Second prospective M4 attempt — absorbed
+
+~~~text
+M4-02:
+X4b -> road-capacity / induced-demand feedback
+
+freeze before dedicated target source audit = PASS
+
+target practice already owns:
+fixed vs variable demand,
+cost-sensitive demand,
+route/mode/time/trip redistribution,
+trip generation / land-use response,
+induced-demand appraisal.
+
+verdict:
+ABSORBED / M4 NO
+
+duplicate transport simulation = STOP
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_M4_02_ROAD_CAPACITY_RESULT_2026-09-21.md
+
+Framework-level consequence:
+
+~~~text
+M4 remains a strong transfer test
+but is not the only framework adequacy axis.
+~~~
+
+New mainline surfaces:
+
+- Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
 ## 6. Mainline work order
 
 ~~~text
-1. do not add M3 examples by default;
-2. select M4-02 using a different relation or substantially different target domain;
-3. freeze relation + target + design before decisive target-source/outcome inspection;
-4. apply M4-E0 target-practice audit;
-5. execute only if the design is not already absorbed;
-6. continue Atlas material re-entry without conflating coverage with maturity;
+1. use the burden matrix to compare heterogeneous domains without mechanism erasure;
+2. use the expectation ledger to expose position / horizon conflicts;
+3. add rows only from source-native records with admission / evidence status;
+4. seek grammar revision or exclusion, not case count;
+5. continue underdeveloped domain re-entry;
+6. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
