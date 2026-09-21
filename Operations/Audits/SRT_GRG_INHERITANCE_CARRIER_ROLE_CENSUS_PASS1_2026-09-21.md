@@ -524,6 +524,10 @@ Verdict:
 ROLE LIBRARY v0.1 = EARNED
 ~~~
 
+Owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
 The library must remain small.
 
 It may not import every source-local role.
