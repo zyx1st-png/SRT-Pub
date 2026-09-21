@@ -792,10 +792,16 @@ precedent:
 binding B + indexed legal force
 != moral legitimacy
 
-current =
-live schema consistency migration
+live schema consistency migration =
+COMPLETE / PASS
 
-next after migration =
+stale-token validation =
+PASS
+
+remaining E-* mentions =
+historical migration / retirement notes only
+
+next =
 bounded C0/C1 realization pressure
 using existing source-native rows first
 
@@ -974,13 +980,22 @@ precedent negative control =
 B legal/institutional force PASS
 -> moral legitimacy still OPEN
 
-current =
-finish live expectation-schema consistency migration
-and stale-token scan
+live schema migration =
+COMPLETE / PASS
+
+remaining E-* =
+historical migration / retirement notes only
 
 next =
 bounded C0/C1 realization pressure
-using existing repository evidence first
+
+primary C0 candidate =
+Nepal irrigation
+STRONG CANDIDATE / NOT PASS
+
+primary C1 candidate =
+Performative Prediction
+CASE-DEPENDENT CANDIDATE / NOT PASS
 
 canonical edit = NO
 M4 = NONE
@@ -988,7 +1003,7 @@ M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要全仓机械替换历史 E-*。只迁移 active GRG live routing；历史 audit 保留原记法并由 live Ledger supersede。迁移通过后，下一步重点压 C0/C1：先看 Nepal irrigation 是否真的支付 C0-ENACTED，再看 Performative Prediction 是否真的支付 formed-locus C1-MODEL；如果只是研究者模型或一般规则实践，就降级，不为填满 C0/C1 而放宽门槛。不要开 canonical landing。
+下一步先冻结 C0/C1 realization-pressure charter，再用仓库现有 source-native 材料压 Nepal irrigation 与 Performative Prediction。Nepal 必须证明 formed locus 的当前组织确实由可能延续条件调节，才能支付 C0；Performative Prediction 必须证明 formed locus 实际使用 model-mediated anticipation 来组织当前 generation，不能只因为“系统里有一个预测模型”就支付 C1。若证据不足就降级，不要为了填满 B+C 架构而保留候选。不要开 canonical landing。
 
 ## 9. Stop rule
 
