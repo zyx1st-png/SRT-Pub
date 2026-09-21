@@ -12,12 +12,13 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
-  - Operations/Audits/SRT_GRG_PR1018_INDEPENDENT_REVIEW_AUTHOR_CLOSURE_PASS1_2026-09-21.md
+  - Operations/Audits/SRT_GRG_PR1023_INDEPENDENT_REVIEW_FIX_PASS1_2026-09-21.md
   - Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
-tags: [Handoff, GRG, V0_3, AuthorClosure, GTS]
+  - Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
+tags: [Handoff, GRG, V0_3, AuthorClosure, GTS, EvidenceProvenance]
 ---
 
-# Handoff — GRG v0.3 author closure after PR #1018 review
+# Handoff — GRG v0.3 after #1023 landing
 
 ## 0. Baseline
 
@@ -27,17 +28,19 @@ Repository:
 zyx1st-png/SRT-Pub
 ~~~
 
-Branch baseline:
+Live main baseline:
 
 ~~~text
-bbd8f1863ea2cae39244f650e7934225c51914d2
-Merge PR #1022: X4c carrier positive consistency and local closure
+7b9346e9efa311b6ecde9f1bda8ffb762bf6318d
+Merge PR #1023: GRG v0.3 author closure
 ~~~
 
-Working branch:
+Current branch / execution state:
 
 ~~~text
-theory/srt-grg-v0-3-author-closure-20260921
+main
+post-v0.3
+selected Relation Library -> GTS reconciliation next
 ~~~
 
 ## 1. Why v0.3 exists
@@ -52,7 +55,7 @@ PR #1018 v0.2 was independently reviewed and then superseded before merge becaus
 - schema routing conflicted;
 - main advanced through X4c carrier closure.
 
-The author explicitly accepted the three theory corrections and the GTS retyping.
+The author explicitly accepted the three theory corrections, the GTS retyping, and later the Projected Generative Order route.
 
 ## 2. Current primary owners
 
@@ -77,11 +80,18 @@ Operations/Templates/
 SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
 ~~~
 
-Review-to-closure audit:
+PR #1023 review-fix audit:
 
 ~~~text
 Operations/Audits/
-SRT_GRG_PR1018_INDEPENDENT_REVIEW_AUTHOR_CLOSURE_PASS1_2026-09-21.md
+SRT_GRG_PR1023_INDEPENDENT_REVIEW_FIX_PASS1_2026-09-21.md
+~~~
+
+Post-v0.3 methodological pressure:
+
+~~~text
+Operations/Proposals/
+SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
 ~~~
 
 ## 3. Foundational direction
@@ -139,7 +149,7 @@ Retained efficacy / recurrent reconstitution remain properties.
 
 Structural reconstruction / realized consequence remain evidence stages.
 
-## 6. P_G / E_G
+## 6. P_G / E_G / Generative Order
 
 ~~~text
 P_G
@@ -164,7 +174,43 @@ Multiple admitted orders may conflict.
 
 Conflict is not automatically a theory failure.
 
-## 7. Wholeward direction
+Permanent interpretation guard from the post-v0.3 dialogue:
+
+~~~text
+E_G classification
+!= normative endorsement
+~~~
+
+Do not make Generative Order biologically or morally privileged merely to avoid this distinction.
+
+## 7. Projected Generative Order
+
+Author-adjudicated route:
+
+~~~text
+PROJECTED GENERATIVE ORDER / projected E_G
+= AUTHOR-ADJUDICATED / A1
+~~~
+
+It is a W-P pre-realization design path, not an admitted Generative Order.
+
+Promotion still requires later world-side evidence for:
+
+~~~text
+GO1 formation / operation
++ GO3 generative efficacy
+~~~
+
+Additional methodological guard:
+
+~~~text
+Order Admission
+!= Grammar Validation
+~~~
+
+A successfully constructed order does not by itself prove independent cross-world recurrence of the GTS that helped design it.
+
+## 8. Wholeward direction
 
 No pregiven final O*.
 
@@ -181,7 +227,183 @@ W-P
 
 W-P is a civilizational programme goal, not cosmic teleology.
 
-## 8. Latest X4c state
+Post-v0.3 pressure:
+
+~~~text
+W-E / W-P coupling requires evidence-attribution discipline.
+
+world becomes more grammar-compatible
+!=
+grammar independently discovered a deeper invariant
+~~~
+
+## 9. Objectification distinction
+
+Keep separate:
+
+~~~text
+O_R
+= research-side objectification used by inquiry
+  for unit / boundary / grain / variable / proxy choices
+
+O_W
+= world-side operative objectification
+  that actually participates in later generation
+~~~
+
+Hard guard:
+
+~~~text
+O_R != O_W
+~~~
+
+A research objectification can become performative through deployment:
+
+~~~text
+O_R
+-> policy / recommendation / allocation / standardization / intervention
+-> O_W-like causal role
+-> later evidence generated under changed conditions
+~~~
+
+This is an audit bridge, not a new GRG relation family.
+
+## 10. Evidence generative provenance
+
+Current post-v0.3 methodological proposal:
+
+> Evidence must be typed not only by source strength, but also by how the evidence itself was generated and what claim it is allowed to pay.
+
+For decisive evidence in the selected GTS reconciliation set, record where useful:
+
+~~~text
+world/source process that generated the evidence
+
+was the tested grammar / model / order / intervention already involved
+in generating that evidence?
+
+pre-intervention / post-intervention / historically intervention-shaped
+
+evidence purpose:
+discovery /
+causal leverage /
+construction /
+robustness /
+attribution /
+mixed
+
+claim(s) the evidence may pay
+
+claim(s) it may NOT independently pay
+
+independent / held-out support
+
+external-drift / alternative-cause comparator
+
+counterfactual generation not observed
+~~~
+
+Do not silently add new evidence-family codes.
+
+## 11. Anti-self-confirmation guards
+
+Carry the following into GTS reconciliation:
+
+~~~text
+O_R
+!=
+O_W
+
+cross-research-objectification robustness
+!=
+cross-world-objectification recurrence
+
+E_G classification
+!=
+normative endorsement
+
+successful construction
+!=
+independent discovery
+
+post-deployment conformity
+!=
+independent confirmation
+
+post-intervention change
+!=
+intervention effect
+
+Order Admission
+!=
+Grammar Validation
+~~~
+
+These are programme-level method guards, not canonical ontology claims.
+
+## 12. Recurrence provenance
+
+Repeated cases are not automatically independent realizations.
+
+Distinguish where relevant:
+
+~~~text
+independent recurrence
+diffused recurrence
+designed recurrence
+~~~
+
+Hard guard:
+
+~~~text
+recurrence
+!=
+independent recurrence
+~~~
+
+Many cases may still share one generative lineage.
+
+Use "generative pseudoreplication" only as a methodological shorthand.
+
+## 13. Observed regularity vs generative invariance
+
+Future GTS pressure:
+
+~~~text
+Observed Regularity
+!=
+Generative Invariance
+~~~
+
+Possible provenance patterns include:
+
+~~~text
+constraint invariance
+constructed invariance
+alternative-generation suppression
+~~~
+
+These are candidate analytical distinctions only.
+
+Hard guards:
+
+~~~text
+stability
+!=
+depth of generative constraint
+
+observed absence
+!=
+generative impossibility
+
+not manifest
+!=
+not generatively reachable
+~~~
+
+For a candidate invariant, ask whether unseen alternatives were tested and defeated, never reachable, historically suppressed, or made unreachable by the current order.
+
+## 14. Current X4c / RNN state
 
 ~~~text
 X4c = M3
@@ -199,36 +421,20 @@ INTERFACE
 
 SPECIALIZED =
 AUTHORITY
-
-persistence process =
-PASSIVE-PERSISTENCE
-ACTIVE-MAINTENANCE
-RECURRENT-REPRODUCTION
-MIXED
-OPEN
 ~~~
-
-New carrier / provenance / role hunting is STOP by default.
 
 Do not reopen absent a declared closure trigger.
 
-## 9. Schema routing
-
-For new process-first records:
+RNN calibration remains:
 
 ~~~text
-GTS v0.2 = PRIMARY
+selected trace = objectified measurement slice of an L2 / history aspect
+trace-bounded R1c NULL != vertical generative efficacy NULL
+proxy failure != deeper-cause proof
+spectral family = STOP
 ~~~
 
-Existing Relation Records remain historical / operational provenance.
-
-Relation Record v0.1 is legacy and must not be the primary schema for new foundation work.
-
-Relation Library remains useful as a legacy candidate / maturity / negative-control registry.
-
-It is not the ontological skeleton of v0.3.
-
-## 10. Current empirical status
+## 15. Current empirical / programme status
 
 ~~~text
 X3b = M3
@@ -243,49 +449,36 @@ universal GRG = NOT ESTABLISHED
 formal mature grammar = NOT ESTABLISHED
 ~~~
 
-## 10.1 PR #1023 review fix state
+## 16. Next gate
 
-Independent review of #1023 restored the existing M4-E0 absorption gate and narrowed the remaining theory open.
+Current formal mainline remains unchanged:
 
 ~~~text
-cross-objectification gain test = XG1-XG5
-
-XG5 requires:
-prospective discrimination
-+ M4-E0 NOT ABSORBED
-
-target-domain mature-practice comparator = REQUIRED
-strongest reasonable horizontal comparator = REQUIRED
+1. selected mature Relation Library -> GTS reconciliation;
+2. use the evidence-generative-provenance questions on a small selected migration set;
+3. retain / narrow / split / retire the provenance burden based on actual usefulness;
+4. do not edit the active GTS template merely because the proposal is conceptually attractive;
+5. after reconciliation, freeze one prospective cross-objectification discrimination charter;
+6. only then execute a bounded test.
 ~~~
 
-RNN overlay is synchronized:
+Potential future question, NOT YET FROZEN:
 
 ~~~text
-selected trace = objectified measurement slice of an L2 / history aspect
-trace-bounded R1c NULL != vertical generative efficacy NULL
-proxy failure != deeper-cause proof
+same horizontal success / convergence
+but different generative provenance:
+
+A. genuine constraint discovery
+vs
+B. intervention-induced alternative-generation suppression
 ~~~
 
-Projected-order route:
+Before any charter:
 
 ~~~text
-PROJECTED GENERATIVE ORDER / projected E_G
-= AUTHOR-ADJUDICATED / A1
-~~~
-
-It is the author-adjudicated W-P pre-realization path and is not an admitted Generative Order.
-
-Review-fix owner:
-
-Operations/Audits/SRT_GRG_PR1023_INDEPENDENT_REVIEW_FIX_PASS1_2026-09-21.md
-
-## 11. Next gate
-
-~~~text
-1. independent review of v0.3;
-2. reconcile selected mature Relation Library records into GTS views;
-3. freeze one prospective cross-objectification discrimination charter;
-4. only then execute a bounded test.
+strongest-neighbor audit = REQUIRED
+M4-E0 = REQUIRED
+target-domain ordinary-practice comparator = REQUIRED
 ~~~
 
 Do NOT:
@@ -293,11 +486,62 @@ Do NOT:
 - reopen X4c carrier cases;
 - restart serial M4 hunting;
 - add relation names by analogy;
+- add a new G/R/C ontology ladder;
 - edit canonical SRT;
 - build GRG-as-AGI;
-- claim global moral order.
+- claim global moral order;
+- treat construction success as independent discovery.
 
-## 12. Canonical boundary
+## 17. Fresh-session compact continuation
+
+~~~text
+Repo:
+zyx1st-png/SRT-Pub
+
+Live main after #1023:
+7b9346e9efa311b6ecde9f1bda8ffb762bf6318d
+
+GRG:
+v0.3 / GTS-first / process-first
+
+Current formal next gate:
+selected Relation Library -> GTS reconciliation
+
+Read:
+Operations/Proposals/
+SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
+
+Core post-v0.3 pressure:
+evidence itself has generative provenance.
+
+Keep separate:
+O_R research objectification
+!= O_W world-side operative objectification
+
+successful construction
+!= independent discovery
+
+post-deployment conformity
+!= independent confirmation
+
+post-intervention change
+!= intervention effect
+
+Order Admission
+!= Grammar Validation
+
+recurrence
+!= independent recurrence
+
+Observed Regularity
+!= Generative Invariance
+
+Use this pressure on a small selected GTS migration set.
+Do not open M4-03 yet.
+Do not modify canonical SRT.
+~~~
+
+## 18. Canonical boundary
 
 ~~~text
 canonical edit = NO
