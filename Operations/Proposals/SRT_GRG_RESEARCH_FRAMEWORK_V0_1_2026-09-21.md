@@ -912,7 +912,10 @@ Completed:
 17. X6 retyped from relation candidate to cross-cutting PH analysis burden;
 18. CIV-006 long-duration combined-sewer inheritance case;
 19. X4c carrier-explicit admission revision + M3 cross-domain recurrence;
-20. expectation-provenance typing added to ledger / templates.
+20. expectation-provenance typing added to ledger / templates;
+21. IPv4 -> IPv6 installed-base X4c stress test;
+22. P-INFO-alone NOT ESTABLISHED; P-MIXED carrier decomposition required;
+23. greenfield-vs-installed-base added as reusable X4c near-control.
 
 Current mainline:
 
@@ -921,10 +924,12 @@ A. expand / harden the Cross-Domain Burden Matrix;
 B. expand the Generative Expectation Ledger;
 C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
 D. CIV-006 long-duration infrastructure pressure = COMPLETE;
-E. next test whether institutional / informational inheritance survives the carrier-explicit X4c rule without semantic drift;
-F. require inheritance provenance and expectation provenance in new records;
-G. continue domain re-entry for underdeveloped domains;
-H. use M4 prospectively when a genuinely uncertain target appears,
+E. IPv4/IPv6 technical-informational carrier stress = COMPLETE;
+F. standalone P-INFO remains OPEN; do not treat symbolic description as sufficient;
+G. next test P-INST institutional inheritance or a genuinely standalone P-INFO carrier;
+H. require decomposed P-MIXED + inheritance provenance + expectation provenance in new records;
+I. continue domain re-entry for underdeveloped domains;
+J. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
