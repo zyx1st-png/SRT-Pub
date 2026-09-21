@@ -534,25 +534,64 @@ would count as relation-consistent?
 
 This expectation must be typed.
 
-Expectation provenance should be declared where possible:
+Generative Expectation is now typed on separate axes.
+
+Live owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+### Source / provenance
 
 ~~~text
-E-MAT material / infrastructural
-E-TECH technical / interface
-E-LEGAL legal / regulatory
-E-ORG organizational / institutional
-E-NORM social / normative
-E-BIO biological / viability
-E-MODEL model-mediated / analytic
-E-MIXED multiple distinct layers
+S-MAT material / infrastructural
+S-TECH technical / interface
+S-LEGAL legal / regulatory
+S-ORG organizational / institutional
+S-NORM social / norm-governed
+S-BIO biological / viability
+~~~
+
+Use explicit multi-layer lists.
+
+Historical E-MODEL and E-MIXED are retired as live provenance tags.
+
+### Locus / mode
+
+~~~text
+B-STRUCTURAL
+C0-ENACTED
+C1-MODEL
+OBS-MODEL
+~~~
+
+Strong guard:
+
+~~~text
+OBS-MODEL
+!=
+C1-MODEL
+!=
+B-STRUCTURAL automatically.
+~~~
+
+### Evaluative index
+
+Before G-stronger / G-weaker, declare:
+
+~~~text
+relation / objective
++ position / locus
++ scale / grain
++ horizon
++ comparison dimension
 ~~~
 
 CIV-006 shows why this matters:
 
 ~~~text
-material compatibility burden
+S-MAT material compatibility burden
 !=
-modern legal water-quality obligation
+S-LEGAL / S-ORG water-quality compliance burden
 !=
 moral legitimacy
 ~~~
@@ -560,9 +599,9 @@ moral legitimacy
 Do not infer:
 
 ~~~text
-expectation = prediction
+prediction = generative expectation
 expectation = goodness
-expectation = moral legitimacy
+binding / stable = moral legitimacy
 ~~~
 
 ## 11. Normativity interface
