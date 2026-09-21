@@ -902,6 +902,66 @@ Next:
 bounded X4c carrier-subprogramme local-closure audit
 ~~~
 
+## 5.14 X4c carrier-subprogramme local closure
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+
+Verdict:
+
+~~~text
+X4c CARRIER SUBPROGRAMME = LOCAL CLOSE
+~~~
+
+Paid sequence:
+
+~~~text
+carrier-explicit X4c admission
+-> compositional carrier architecture
+-> provenance / role separation
+-> role census
+-> persistence-process retype
+-> CIV-005 negative productivity
+-> positive admission-order consistency
+-> local closure
+~~~
+
+Frozen current vocabulary:
+
+~~~text
+provenance metadata =
+P-ECO / P-MAT / P-INFO / P-INST
+
+CORE roles =
+SUBSTRATE / PAYLOAD / INTERFACE
+
+SPECIALIZED =
+AUTHORITY
+
+pre-admission =
+ROLE-CANDIDATE / PRE-ADMISSION
+
+persistence process =
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
+
+Default:
+
+~~~text
+new carrier-case hunt = STOP
+new provenance-category hunt = STOP
+new reusable-role hunt = STOP
+~~~
+
+Reopen only on a declared contradiction / role-pressure / role-collapse / carrier-expectation conflation / X4c relation revision.
+
+Mainline attention returns to broader GRG.
+
 ## 6. Mainline work order
 
 ~~~text
@@ -924,11 +984,13 @@ bounded X4c carrier-subprogramme local-closure audit
 17. ROLE-CANDIDATE / PRE-ADMISSION guard = ACTIVE;
 18. positive-record admission-order consistency audit = COMPLETE / PASS;
 19. positive X4c downgrades = NONE; circular bootstrap = NONE;
-20. next = bounded X4c carrier-subprogramme local-closure audit;
-21. no new source hunt in the closure audit;
-22. require carrier-role + persistence-process + expectation provenance in new records;
-23. continue underdeveloped domain re-entry;
-24. use future M4 attempts selectively as calibration, not as the sole queue;
+20. X4c carrier-subprogramme local closure = COMPLETE / CLOSE;
+21. carrier vocabulary for current evidence = FROZEN;
+22. default new carrier / provenance accumulation = STOP;
+23. next = select a broader underconstrained central GRG burden from existing surfaces;
+24. require carrier-role + persistence-process + expectation provenance in new records only when X4c is actually invoked;
+25. continue underdeveloped domain re-entry;
+26. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
