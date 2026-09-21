@@ -136,51 +136,131 @@ Not every relation needs the same mechanism.
 
 The architecture requires typed burdens, not one universal equation.
 
-## 5. Layer E — relation-family organization
+## 5. Layer E — typed foundational architecture
 
-GRG should initially organize relations into broad research families rather than a fixed linear ladder.
+G0-G11 retyping Pass 1 shows that the old slots mix different architectural roles.
 
-Provisional families:
+The current minimal architecture is therefore typed rather than sequential.
 
-### E1 Differentiation
+### 5.1 Upstream SRT / bridge constraints
 
-How does change become operatively non-equivalent?
+~~~text
+C0 non-exhaustion / non-preclosure
 
-### E2 Formation
+C1 differential manifestation / relative backgrounding
+~~~
 
-How does relational differentiation form relatively stabilized organization?
+These constrain GRG inquiry.
 
-### E3 Maintenance / recurrence
+They are not ordinary relation-library entries.
 
-How is formed organization retained, maintained or regenerated?
+Domain realizations of openness, exclusion, support or background may still be recorded where source-native evidence warrants them.
 
-### E4 Re-entry / reconstruction
+### 5.2 Core vertical relation candidates
 
-How does formed organization alter later generative conditions?
+~~~text
+R-HIST
+history / retained efficacy / recurrent re-entry
 
-### E5 Position
+R-LOC
+local generative locus / individuation formation
 
-When does a formed organization become an operative from-where that changes manifestation / accessibility / selection from there?
+R-POS
+operative positionality
+status = CORE CANDIDATE / dependency open
 
-### E6 Multi-position / relation-level organization
+R-RECON
+reconstruction of later generative conditions
+~~~
 
-How do several formed positions jointly generate a relation-level organization without automatically becoming one subject?
+R-HIST must retain at least:
 
-### E7 Cross-scale organization
+~~~text
+R-HIST-a retained efficacy / later conditioning
+R-HIST-b recurrent reconstitution / recurring conditioning role
+~~~
 
-How does organization at one scale become a condition on another without micro-reduction or mysterious downward force?
+R-POS is not yet adjudicated as primitive or derivative from R-LOC.
 
-### E8 Generative expectation / anticipation
+### 5.3 Open formation burden
 
-What continuation or transformation is structurally implied by a typed relation, and how can formed loci embody or model that direction?
+~~~text
+R-FORM = OPEN
+~~~
 
-### E9 Reflexive grammar learning
+Two live options remain:
 
-How do inquiry, science, institutions and AI-assisted systems test and revise the grammar itself?
+~~~text
+A. formation is an independent recurring relation family;
 
-These families are provisional navigation.
+B. formation is a cross-cutting field that every relation record
+   must specify rather than a separate grammar family.
+~~~
 
-They are not ontology modules and are not asserted as exhaustive.
+Maintenance / recurrence is likewise currently treated as a cross-cutting burden unless stronger evidence earns independent family status.
+
+### 5.4 Composition families
+
+~~~text
+C-MULTI
+multi-locus / relation-level organization
+
+C-XSC
+cross-scale composition / recursion
+~~~
+
+These are typed composition operators, not primitive relations.
+
+A composition record must name:
+
+- component relation families;
+- composition rule;
+- what new dependency burden appears;
+- failure condition.
+
+### 5.5 Expectation / anticipation / normativity
+
+~~~text
+E-B
+structural generative expectation
+
+E-C0
+embodied / enacted anticipatory realization
+
+E-C1
+model-mediated anticipatory realization
+
+N-INDEX
+position / relation / scale / horizon indexed normative comparison
+~~~
+
+These are downstream of relation formation.
+
+They are not additional primitive world-relations.
+
+### 5.6 Reflexive learning
+
+~~~text
+L-REFLEX-W
+reflexive learning as a world / civilizational phenomenon
+
+L-REFLEX-M
+GRG methodological self-revision
+~~~
+
+These must not be silently identified.
+
+### 5.7 Historical G0-G11 status
+
+G0-G11 remains historical discovery provenance.
+
+Current retyping owner:
+
+Operations/Audits/SRT_GRG_G0_G11_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md
+
+Internal pressure owner:
+
+Operations/Audits/SRT_GRG_G0_G11_RETYPING_RED_TEAM_PASS1_2026-09-21.md
 
 ## 6. Relation composition
 
@@ -417,46 +497,63 @@ This is the minimum route toward SRT as a self-revising grammar-learning archite
 
 ## 15. Existing G0-G11 under this architecture
 
-The existing G0-G11 list is retained as a discovery scaffold pending retyping.
-
-Next audit must classify each item as one of:
+G0-G11 retyping Pass 1 is complete.
 
 ~~~text
-FOUNDATIONAL FAMILY
-COMPOSITE RELATION
-DOMAIN INTERFACE
-EXPECTATION / NORMATIVITY LAYER
-REFLEXIVE LEARNING LAYER
-REDUNDANT / MERGE
-OPEN
+G0 -> upstream non-exhaustion constraint
+G1/G2 -> merged foundational differentiation / manifestation bridge
+G3/G4 -> R-HIST family + recurrent strengthening
+G5 -> R-LOC, with One retained as SRT-specific specialization
+G6 -> R-POS, dependency status OPEN
+G7 -> split across consequence / expectation / anticipation / normativity
+G8 -> R-RECON
+G9 -> C-MULTI
+G10 -> C-XSC
+G11 -> L-REFLEX
 ~~~
 
-No G-number is automatically retained merely because it already exists.
+The old sequence is no longer the primary GRG skeleton.
+
+No G-number is retained as a primitive merely because it already exists.
 
 ## 16. Existing Relation Library under this architecture
 
-The current library remains useful.
+Relation Library foundational retyping Pass 1 is complete.
 
-However the next pass must ask for each relation:
+Current routing:
 
-1. Is this a horizontal domain regularity, a vertical generative relation, or an interface relation?
-2. What objectification makes it visible?
-3. What part of the relation is source-native?
-4. What part is GRG abstraction?
-5. What observation could distinguish trace from organization?
-6. Does the relation alter future generative conditions or only later object states?
-7. Does it belong to one of the minimal families or reveal a missing family?
+~~~text
+R1a = PROXY / TRACE
+R1b = V-H INTERFACE / formation-maintenance candidate
+R1c = VERTICAL CORE -> R-HIST-a
+R1d = VALIDATION / EXPECTATION maturity burden
+
+X3a = HORIZONTAL / public expectation objectification
+X3b = V-H INTERFACE / COMPOSITE
+
+X4a = VERTICAL CORE -> R-RECON
+X4b = R-RECON + recursive re-entry composite
+X4c = R-RECON + R-HIST inheritance composite
+~~~
+
+Current owner:
+
+Operations/Audits/SRT_GRG_RELATION_LIBRARY_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md
+
+The next library schema must separate relation type from proxy status, architecture role and M-level maturity.
 
 ## 17. Current work order
 
 ~~~text
 A. foundational bridge = DRAFT / AUTHOR-DIRECTED
 B. minimal architecture = THIS FILE
-C. internal red-team of A+B
-D. retype G0-G11
-E. retype current Relation Library
-F. revise GRG Research Framework / Atlas routing as needed
-G. only then choose the next transfer / calibration target
+C. foundational bridge red-team = COMPLETE / PASS 1
+D. G0-G11 retyping = COMPLETE / PASS 1
+E. G0-G11 retyping red-team = COMPLETE / PASS 1
+F. Relation Library retyping = COMPLETE / PASS 1
+G. build Relation Record schema v0.2 with architecture-role + verticality declaration
+H. return open architecture choices for author adjudication
+I. only then revise downstream transfer / calibration priorities
 ~~~
 
 Current M4-02 transfer search is paused as a programme mainline.
@@ -493,10 +590,12 @@ The architecture fails if it:
 ## 20. Status
 
 ~~~text
-minimal architecture = DRAFT
-foundational families = PROVISIONAL
-G0-G11 retyping = NEXT
-Relation Library retyping = NEXT
+minimal architecture = DRAFT / RETYPED PASS 1
+foundational role map = PROVISIONAL / PRESSURED
+G0-G11 retyping = COMPLETE / PASS 1
+Relation Library retyping = COMPLETE / PASS 1
+Relation Record schema v0.2 = NEXT
+author architecture adjudication = NEXT
 future M4 attempts = HOLD AS MAINLINE
 canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
