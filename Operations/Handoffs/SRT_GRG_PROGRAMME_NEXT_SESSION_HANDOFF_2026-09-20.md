@@ -438,16 +438,27 @@ Mainline comparison surfaces:
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
-MAINLINE NEXT:
+MAINLINE NEXT — AUTHOR FOUNDATIONAL RE-PRIORITIZATION:
 
 ~~~text
-1. harden the cross-domain burden matrix;
-2. harden the generative-expectation ledger;
-3. use civilizational cases to expose position / horizon conflicts;
-4. seek exclusions / splits / revision, not case count;
-5. expand underdeveloped domain coverage;
-6. run future M4 attempts only when a genuinely uncertain target exists.
+1. read the new author adjudication for the SRT -> GRG foundational bridge;
+2. pressure SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1;
+3. pressure SRT_GRG_MINIMAL_ARCHITECTURE_V0_1;
+4. retype G0-G11 against that architecture;
+5. retype the current Relation Library as horizontal / vertical / interface / composite / proxy;
+6. only then resume burden-matrix / expectation-ledger hardening and select later transfer work.
+
+M4-01 = COMPLETE / ABSORBED
+M4-02 = COMPLETE / ABSORBED
+future serial M4 hunting = NOT CURRENT MAINLINE
 ~~~
+
+Foundational pointers:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+- Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
+- Operations/Audits/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_INTERNAL_RED_TEAM_PASS1_2026-09-21.md
 
 ## 5. Distributed-neighbor Pass 1 result
 
