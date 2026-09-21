@@ -240,11 +240,33 @@ CONSEQ-B same-One prospective exposure, Bearer-facing if paid =
 
 Do not collapse all consequence return into Bearer or normativity.
 
+### I.1 PH — Position / Horizon Consequence Index
+
+Where materially affected positions or horizons differ, record:
+
+~~~text
+position sensitivity = yes / no / open
+horizon sensitivity = yes / no / open
+directional divergence = evidenced / not established / open
+reversibility = evidenced / open
+externalized cost = evidenced / open
+~~~
+
+PH is a cross-cutting analysis burden.
+
+~~~text
+PH != GRG relation by default
+PH != M-status
+multiple positions != conflict automatically
+different horizons != moral trade-off automatically
+~~~
+
 ## J. Generative expectation
 
 ~~~text
 typed relation =
 structural expectation E-B =
+expectation provenance =
 horizontal prediction, if applicable =
 vertical generative expectation, if applicable =
 E-C0 embodied / enacted realization, if any =
@@ -281,7 +303,37 @@ If not warranted:
 normativity mapping = NOT OPENED
 ~~~
 
-## L. Composition declaration — when role = composite
+## L. Inheritance / carrier provenance — when relevant
+
+~~~text
+inheritance claim opened? = yes / no
+carrier type =
+  P-MAT /
+  P-ECO /
+  P-INST /
+  P-INFO /
+  P-MIXED
+
+P-MIXED components =
+what exactly is preserved / maintained / reproduced into later cohort =
+greenfield / no-inheritance near-control, if available =
+what would show persistence without inheritance =
+~~~
+
+Hard guard:
+
+~~~text
+symbolically describable != P-INFO
+documented rule != P-INFO
+software-encoded != P-INFO automatically
+persistence != inheritance automatically
+~~~
+
+Carrier provenance types implementation.
+
+They are not new GRG relation families.
+
+## M. Composition declaration — when role = composite
 
 ~~~text
 component relation 1 =
@@ -293,13 +345,13 @@ why this is not just a list of components =
 composition failure condition =
 ~~~
 
-## M. Cross-domain comparison
+## N. Cross-domain comparison
 
 | Compared record | Shared burden | Mechanism difference | Objectification difference | Architecture role | Evidence difference | Mapping status | Important mismatch |
 |---|---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |  |
 
-## N. Revision pressure
+## O. Revision pressure
 
 ~~~text
 what would narrow this record =
@@ -321,7 +373,7 @@ RETYPE
 RETIRE
 ~~~
 
-## O. Transfer / validation
+## P. Transfer / validation
 
 ~~~text
 unseen domain / case =
@@ -348,7 +400,7 @@ M3 / M4
 
 Retrospective renaming is not transfer.
 
-## P. Reflexive-learning status
+## Q. Reflexive-learning status
 
 ~~~text
 does this case model reflexive learning as a world phenomenon? =
@@ -359,7 +411,7 @@ methodological revision L-REFLEX-M =
 
 Do not identify social/scientific learning with GRG governance merely because both are reflexive.
 
-## Q. Provenance
+## R. Provenance
 
 ~~~text
 source-derived =
@@ -369,7 +421,7 @@ current canonical constraint =
 open =
 ~~~
 
-## R. Compact summary
+## S. Compact summary
 
 ~~~text
 source-native relation =
