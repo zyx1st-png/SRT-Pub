@@ -245,7 +245,7 @@ same current rule / information exists
 but no successor inherited-field constraint is present.
 ~~~
 
-If standalone P-INFO repeatedly collapses into P-MIXED, narrow or retire P-INFO as an independent provenance category.
+If a single-component P-INFO architecture repeatedly requires additional essential components, do not promote P-INFO as sufficient; retain the explicit multi-component architecture instead.
 
 ## 11. Canonical consequence
 
