@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-20
+updated: 2026-09-21
 ---
 
 # SRT 当前状态仪表盘
@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / HKB SOURCE+PROTOCOL FEASIBILITY PASS / PUBLIC RAW TRAJECTORY ACCESS NO-GO-NOT-LOCATED / EXISTING-DATA ACCESS ROUTE NEXT / NEW EXPERIMENT + O4 BLOCKED
+NEXT RESEARCH WORK PACKAGE = GRG FRAMEWORK CONSTRUCTION / NONCANONICAL / RELATION LIBRARY + DOMAIN-CIVILIZATION ATLAS + CIVILIZATIONAL LEARNING MAINLINE / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -54,6 +54,18 @@ Author source:
 
 Programme architecture:
 `Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md`
+
+GRG Framework v0.1:
+`Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md`
+
+Civilizational Learning Architecture:
+`Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md`
+
+Domain + Civilization Atlas seed:
+`Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
+
+GRG Relation Record template:
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
 Generative-expectation second adjudication:
 `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
@@ -232,15 +244,22 @@ Result:
 New programme guard:
 candidate maintained O must survive its measurement / normalization interface.
 
-next:
-existing-data access route / request package only
--> verify whether original bilateral trajectories + perturbation metadata can be shared
--> verify reuse / ethics / de-identification terms
--> only if real access is obtained, freeze a new raw-data analysis charter before opening outcome data
--> do not weaken to aggregate analysis
--> no new experiment / no simulation confirmation
--> R1d / O4 blocked
--> canonical reassessment HOLD.
+mainline next:
+GRG Framework Construction
+-> relation-library backfill from completed work
+-> domain / civilization atlas expansion
+-> civilizational case-record schema pressure tests
+-> cross-domain relation extraction only after source-native records
+-> calibration used to constrain candidates, not as the only queue.
+
+parallel calibration:
+HKB existing-data request has been sent to Harjo de Poel
+-> wait for external response
+-> if access is granted, freeze raw-data analysis charter before opening outcomes
+-> no aggregate substitute / no new experiment / no simulation confirmation
+-> R1d / O4 blocked.
+
+canonical reassessment = HOLD.
 ```
 
 Do not reopen a winner-style whole-package strongest-neighbor competition unless a later task makes an explicit comparative claim. Whole-package novelty / superiority / non-substitutability remain NOT ESTABLISHED.
@@ -744,27 +763,26 @@ Bearer admission threshold + Bearer <-> position stability
 
 ## Immediate routing
 
-> **2026-09-21 GRG current route:** the RNN spectral line has now produced two separately preregistered O3 NULLs and is STOP at R1c. The programme's live execution route is the independent HKB non-RNN R1c candidate, currently gated on existing raw-data access. Canonical owners remain closed by default.
+> **2026-09-21 GRG framework turn:** the programme mainline is now framework construction across domains and civilization. RNN/HKB remain calibration workstreams. No single pending dataset blocks the framework mainline. Canonical owners remain closed by default.
 
 ~~~text
-1. first GRG-R1 neuroscience transfer pilot = PILOT-NULL;
-2. decoder-defined activity subspace != causal retained organization by default;
-3. O1 spectral formation = PASS / retained history imprint is real in the toy RNN;
-4. first RNN O3 one-time spectral transplant = O3-CAUSAL-NULL;
-5. #1001 stricter repeated-reset + equal-distance D-history control = O3-CAUSAL-NULL;
-6. the two O3 executions are separate runs, not one pooled experiment, but converge on the same R1c failure;
-7. RNN spectral family = R1a PASS / R1c NULL / STOP; do not tune top-k, reset frequency, centroids, task or thresholds;
-8. R1d / O4 is BLOCKED for the RNN spectral family;
-9. GRG-R1 research burden split remains R1a retained imprint / R1b maintained scaffold / R1c causal re-entry / R1d prospective transfer;
-10. selected live non-RNN R1c route = HKB human bimanual coordination dynamics;
-11. HKB source/protocol reconstruction = PASS; half-cycle/component-aware normalization guard is mandatory;
-12. public original 300-Hz raw trajectories = NO-GO / NOT LOCATED; authorized reusable raw-data route = NOT ESTABLISHED;
-13. current next = existing-data access route only; public author/contact routes are verified, VU FGB data-steward fallback is identified, request package is prepared, but request actually sent = NO;
-14. do not weaken to aggregate data, run a new human experiment, or use simulation as confirmation;
-15. R1d / O4 remains blocked on the HKB route until R1c execution is independently paid;
-16. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-17. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-18. do not restart winner-style strongest-neighbor novelty audit.
+1. GRG mainline = framework construction, relation library, domain/civilization atlas, generative-expectation/normativity architecture;
+2. existing Domain Reconstruction Framework remains the source-native entry surface for mature disciplines;
+3. GRG compares independently grounded generative burdens rather than replacing domain mechanisms;
+4. Relation Record template = active schema for source-native claim -> evidence -> objectification -> GRG burden -> expectation -> failure -> transfer;
+5. Civilizational Learning Architecture = active research layer for science, technology, institutions, markets, law, culture and historical experience;
+6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
+7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
+8. first backfill records = RR-001 RNN adverse calibration, RR-002 HKB candidate, RR-003 Bowler source-native scaffold;
+9. RNN spectral family = R1a PASS / R1c NULL / STOP; no tuning and no O4;
+10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
+11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
+12. HKB waiting state does NOT block GRG framework work;
+13. next framework work = backfill more relation records + seed civilizational case records + false-convergence audit;
+14. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+15. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+16. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+17. do not restart winner-style strongest-neighbor novelty audit.
 ~~~
 
 ## Historical navigation
