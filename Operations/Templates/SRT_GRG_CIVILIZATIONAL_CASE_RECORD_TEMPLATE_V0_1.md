@@ -127,7 +127,7 @@ carrier components =
 component provenance metadata = P-MAT / P-ECO / P-INST / P-INFO / other / n.a.
 component causal role(s) = use Role Library where applicable; source-local role only if needed
 role evidence / near-control =
-component status = COMPONENT-ROLE-PASS / PRESENT-ROLE-OPEN / NOT-ESTABLISHED / FAIL
+component status = COMPONENT-ROLE-PASS / ROLE-CANDIDATE-PRE-ADMISSION / PRESENT-ROLE-OPEN / NOT-ESTABLISHED / FAIL
 persistence process = PASSIVE-PERSISTENCE / ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION / MIXED / OPEN
 minimal role set sufficient for X4c =
 architecture sufficiency = PASS / OPEN / FAIL
@@ -141,6 +141,18 @@ Reusable X4c carrier-role owner:
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 Do not treat persistence-process values as component roles.
+
+Admission-order guard:
+
+~~~text
+carrier-role plausibility
+!=
+X4c admission
+
+if successor boundary / field transmission is OPEN:
+use ROLE-CANDIDATE / PRE-ADMISSION,
+not COMPONENT-ROLE-PASS.
+~~~
 
 ## I. Generative expectation
 
