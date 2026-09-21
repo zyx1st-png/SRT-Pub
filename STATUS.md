@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / INDEPENDENT CONTENT REVIEW NEXT / X4c CARRIER LINE LOCAL-CLOSED / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / SELECTED RELATION-LIBRARY -> GTS RECONCILIATION NEXT / PROSPECTIVE CROSS-OBJECTIFICATION CHARTER AFTER RECONCILIATION / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -132,6 +132,7 @@ cross-objectification generative invariance
 
 P_G = Generative Prediction
 E_G = Generative Expectation relative to admitted Generative Order
+projected E_G = author-adjudicated W-P pre-realization expectation relative to Projected Generative Order
 
 Generative Order admission =
 GO1 formation / operation
@@ -144,14 +145,19 @@ wholeward direction =
 W-E epistemic learning
 + W-P practical / constructive generation
 
+Projected Generative Order = AUTHOR-ADJUDICATED / A1
+!= admitted Generative Order until later GO1 + GO3 are paid
+
 X4c carrier subprogramme =
 LOCAL CLOSE
 
+v0.3 independent content review = COMPLETE
+projected-order author decision = COMPLETE / A1
+
 next =
-independent content review of GRG v0.3
--> selected Relation Library to GTS reconciliation
+selected Relation Library to GTS reconciliation
 -> freeze one prospective cross-objectification discrimination charter
--> bounded execution only after review
+-> bounded execution only after reconciliation + charter freeze
 
 canonical edit = NO
 ```
