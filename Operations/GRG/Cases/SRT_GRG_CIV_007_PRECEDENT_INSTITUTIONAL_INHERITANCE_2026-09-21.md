@@ -142,20 +142,88 @@ universal irreversibility
 
 ## I. Generative expectation
 
+Live schema owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+### I.1 Source / provenance
+
 ~~~text
-expectation provenance = E-LEGAL + E-ORG
+source/provenance =
+S-LEGAL + S-ORG
+~~~
+
+### I.2 B-STRUCTURAL
+
+~~~text
+B-STRUCTURAL = PASS
 
 structural expectation =
-successor courts treat binding precedent differently from merely persuasive authority
+successor courts treat binding precedent differently
+from merely persuasive authority
+under the declared hierarchy / jurisdiction.
 
-future continuation stabilized =
-consistent adjudication under the declared authority relation
+relation-native continuation =
+binding precedent is followed, distinguished,
+or changed through source-native legal routes.
 
-expectation failure =
-treating binding precedent as though it carried no special authority,
-subject to source-native exceptions / overruling rules
+mismatch / failure =
+treating binding precedent as though it carried
+no special authority,
+subject to source-native exceptions / overruling rules.
+~~~
 
-multiple expectation layers present? = YES
+### I.3 Locus / mode
+
+~~~text
+C0-ENACTED =
+POSSIBLE institutional enactment
+but NOT REQUIRED / not separately paid by this case.
+
+C1-MODEL =
+NOT ESTABLISHED.
+
+OBS-MODEL =
+NOT PRIMARY.
+~~~
+
+### I.4 Evaluative index
+
+~~~text
+evaluative relation =
+declared precedent / authority relation.
+
+position / locus =
+successor court / adjudicator.
+
+scale =
+declared jurisdiction / hierarchy.
+
+horizon =
+earlier adjudication -> later cases.
+
+comparison dimension =
+mandatory force / justification burden
+under binding vs persuasive authority.
+
+indexed-comparison status =
+PASS at legal-institutional level.
+~~~
+
+Strong guard:
+
+~~~text
+binding
+!=
+morally correct
+
+precedential
+!=
+just
+
+institutionally inherited
+!=
+politically legitimate.
 ~~~
 
 ## J. Normativity interface
