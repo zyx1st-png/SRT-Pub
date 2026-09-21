@@ -643,7 +643,8 @@ G28 MAINTENANCE retyped to persistence process
 G29 CIV-005 Role Library negative productivity Pass 1
 G30 ROLE-CANDIDATE / PRE-ADMISSION guard
 G31 positive-record admission-order consistency audit = COMPLETE / PASS
-G32 X4c carrier-subprogramme local-closure audit = NEXT
+G32 X4c carrier-subprogramme local-closure audit = COMPLETE / CLOSE
+G33 broader-GRG next-burden selection = NEXT
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -743,6 +744,15 @@ admission order interpretation =
 LOGICAL / EPISTEMIC
 not mandatory artifact chronology
 
+X4c carrier subprogramme =
+LOCAL CLOSE
+
+carrier vocabulary =
+FROZEN FOR CURRENT EVIDENCE
+
+new carrier/provenance hunt =
+STOP BY DEFAULT
+
 CIV-006 correction =
 modern regulation is E-LEGAL/E-ORG expectation,
 not a secondary inheritance carrier
@@ -808,7 +818,10 @@ Framework revision:
 - relation admission must logically precede COMPONENT-ROLE-PASS;
 - same-source co-evidence is allowed when relation-level successor/transmission evidence is independently articulable without the role label;
 - positive-record admission-order consistency = PASS with no downgrades;
-- next = bounded X4c carrier-subprogramme local-closure audit; no new carrier source hunt.
+- X4c carrier-subprogramme local closure = CLOSE;
+- carrier vocabulary is frozen for current evidence;
+- default carrier-case / provenance-category accumulation is stopped;
+- next = choose a broader underconstrained central GRG burden from existing framework surfaces.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

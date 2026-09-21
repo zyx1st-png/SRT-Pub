@@ -842,13 +842,17 @@ Bearer admission threshold + Bearer <-> position stability
 74. positive X4c downgrades = NONE; carrier-role circular bootstrap detected = NONE;
 75. admission order = LOGICAL / EPISTEMIC, not mandatory artifact chronology; same-source relation+role evidence is allowed if relation-level successor/transmission evidence is independently articulable without the role label;
 76. IPv4 and precedent SourceCard carrier summaries were synchronized to current role-census schema; source-native evidence unchanged;
-77. next framework work = bounded X4c carrier-subprogramme local-closure audit; decide CLOSE / REOPEN / HOLD without new source hunt;
-78. periodic M4 only when target ownership is genuinely uncertain;
-79. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-80. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-81. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-82. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-83. do not restart winner-style strongest-neighbor novelty audit;
+77. X4c carrier-subprogramme local-closure audit = COMPLETE at Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md;
+78. X4c carrier-subprogramme verdict = LOCAL CLOSE;
+79. carrier vocabulary for current evidence = FROZEN; new carrier-case / provenance-category / reusable-role hunt = STOP BY DEFAULT;
+80. reopen triggers = internal contradiction / source-native new-role pressure / role collapse / carrier-expectation conflation / material X4c relation revision;
+81. next framework work = return to broader GRG and select the next underconstrained central burden from existing framework / ledger surfaces;
+82. periodic M4 only when target ownership is genuinely uncertain;
+83. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+84. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+85. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+86. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+87. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

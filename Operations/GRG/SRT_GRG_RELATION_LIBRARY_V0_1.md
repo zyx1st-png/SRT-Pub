@@ -383,6 +383,10 @@ Positive admission-order consistency owner:
 
 Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
 
+Carrier-subprogramme closure owner:
+
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+
 Census verdict:
 
 ~~~text
@@ -654,14 +658,20 @@ NONE
 circular carrier-role bootstrap =
 NONE
 
+X4c carrier-subprogramme local closure =
+CLOSE
+
+carrier vocabulary =
+FROZEN FOR CURRENT EVIDENCE
+
+new carrier / provenance hunt =
+STOP BY DEFAULT
+
 next =
-bounded X4c carrier-subprogramme local-closure audit
+return to broader GRG
+and select the next underconstrained central burden.
 
-question:
-has the carrier line earned a local STOP / vocabulary freeze
-for current evidence?
-
-No new sources.
+No carrier reopen without an explicit trigger.
 
 M4 remains available as periodic calibration
 when a genuinely uncertain prospective target exists.

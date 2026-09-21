@@ -937,7 +937,11 @@ Completed:
 42. positive-record admission-order consistency audit = COMPLETE / PASS;
 43. positive X4c downgrades = NONE;
 44. admission order = LOGICAL / EPISTEMIC, not mandatory artifact chronology;
-45. same-source co-evidence is allowed when relation-level successor / transmission evidence is independently articulable without the role label.
+45. same-source co-evidence is allowed when relation-level successor / transmission evidence is independently articulable without the role label;
+46. X4c carrier-subprogramme local-closure audit = COMPLETE;
+47. X4c carrier-subprogramme = LOCAL CLOSE;
+48. carrier vocabulary for current evidence = FROZEN;
+49. new carrier-case / provenance-category accumulation = STOP BY DEFAULT.
 
 Current mainline:
 
@@ -959,10 +963,12 @@ N. ROLE-CANDIDATE / PRE-ADMISSION guard = ACTIVE;
 O. positive-record admission-order consistency audit = COMPLETE / PASS;
 P. ecological inheritance / CIV-006 / IPv4-IPv6 / precedent all survive the stricter guard;
 Q. positive downgrades = NONE; circular bootstrap = NONE;
-R. next = bounded X4c carrier-subprogramme local-closure audit;
-S. ask whether carrier vocabulary should now be frozen and mainline attention returned to broader GRG;
-T. continue domain re-entry for underdeveloped domains;
-U. use M4 prospectively when a genuinely uncertain target appears,
+R. X4c carrier-subprogramme local closure = COMPLETE / CLOSE;
+S. freeze current carrier vocabulary and stop default carrier-case / provenance accumulation;
+T. select the next underconstrained central GRG burden from existing framework surfaces;
+U. prefer a burden with cross-domain relevance, exclusion/revision power and direct relation to generative grammar / normativity;
+V. continue domain re-entry for underdeveloped domains;
+W. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -993,6 +999,7 @@ Comparison owners:
 - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 - Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
 - Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 

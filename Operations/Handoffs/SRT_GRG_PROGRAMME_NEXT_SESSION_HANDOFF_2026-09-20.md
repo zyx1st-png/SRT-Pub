@@ -736,26 +736,42 @@ Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09
 MAINLINE NEXT:
 
 ~~~text
-1. do NOT add a new carrier source;
-2. run a bounded X4c carrier-subprogramme local-closure audit;
-3. verify whether the line now has enough:
-   - carrier-explicit X4c admission,
-   - carrier architecture with exclusion power,
-   - minimal reusable roles,
-   - persistence-process separation,
-   - negative / borderline productivity,
-   - positive admission-order consistency;
-4. verdict must be one of:
-   CLOSE / REOPEN / HOLD;
-5. CLOSE =
-   freeze carrier vocabulary for current evidence
-   and return mainline attention to broader GRG;
-6. REOPEN only if a concrete unresolved internal contradiction remains;
-7. HOLD only if an explicit external dependency blocks closure;
-8. no source hunt merely to keep the carrier line active;
-9. no M4/M5 promotion;
-10. no canonical edit.
+X4c carrier-subprogramme =
+LOCAL CLOSE
+
+carrier vocabulary for current evidence =
+FROZEN
+
+default:
+new carrier-case hunt = STOP
+new provenance-category hunt = STOP
+new reusable-role hunt = STOP
+
+reopen only if:
+- internal contradiction;
+- source-native new-role pressure;
+- role collapse;
+- carrier / expectation conflation;
+- material X4c relation revision.
+
+next =
+return to broader GRG
+
+selection rule:
+choose an underconstrained central burden that:
+1. is structurally important to generative relational grammar;
+2. is less constrained than the closed X4c carrier line;
+3. matters across domains / civilization;
+4. can produce exclusion / revision, not just mapping;
+5. does not reduce to novelty hunting.
+
+M4 remains periodic calibration only.
+canonical edit = NO.
 ~~~
+
+Closure owner:
+
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
 
 ## 5. Distributed-neighbor Pass 1 result
 
@@ -857,15 +873,18 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
-2) Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
-3) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
-4) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
-5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-6) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-8) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
-9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+1) Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+2) Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+3) Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+4) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+5) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+6) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+7) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+8) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+9) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+10) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+11) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+12) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
@@ -874,56 +893,53 @@ X3b = M3
 X4b = M3
 X4c = M3
 
-Carrier Architecture =
-ACTIVE / PRODUCTIVE
+X4c carrier-subprogramme =
+LOCAL CLOSE
 
-Role Library v0.1 =
-EARNED
+carrier vocabulary =
+FROZEN FOR CURRENT EVIDENCE
 
-CORE:
+CORE roles =
 SUBSTRATE
 PAYLOAD
 INTERFACE
 
-SPECIALIZED:
+SPECIALIZED =
 AUTHORITY
+
+ROLE-CANDIDATE / PRE-ADMISSION =
+ACTIVE guard
 
 CIV-005 negative productivity =
 PASS
 
-CIV-005 X4c =
-NOT ADMITTED BY CURRENT EVIDENCE
-
-CIV-005 SUBSTRATE =
-ROLE-CANDIDATE / PRE-ADMISSION
-
 positive admission-order consistency =
 PASS
-
-positive records:
-ecological inheritance = PASS
-CIV-006 = STRONG PASS
-IPv4/IPv6 = PASS
-precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
 
 positive downgrades =
 NONE
 
-carrier-role circular bootstrap =
-NONE
+new carrier/provenance hunt =
+STOP BY DEFAULT
 
-admission order =
-LOGICAL / EPISTEMIC
-not mandatory artifact chronology
+reopen triggers =
+internal contradiction
+source-native new-role pressure
+role collapse
+carrier/expectation conflation
+material X4c revision
 
 next =
-bounded X4c carrier-subprogramme local-closure audit
+return to broader GRG
+and select next underconstrained central burden
+from existing framework / ledger surfaces
 
-verdict options =
-CLOSE / REOPEN / HOLD
-
-new carrier sources =
-NO
+priority criteria =
+centrality
+cross-domain relevance
+exclusion/revision power
+normativity relevance
+not mere novelty hunting
 
 M4 = NONE
 M5 = NONE
@@ -936,7 +952,7 @@ canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要新增来源。下一步只判断 X4c carrier 子程序是否已经在当前证据下足够收敛：若没有具体内部矛盾，就 CLOSE 并冻结当前 carrier vocabulary，把主线注意力还给更广的 GRG；只有存在明确内部矛盾才 REOPEN；只有明确外部依赖阻断才 HOLD。不要为了继续这一条线而找新案例，也不要开 canonical landing。
+不要继续补 X4c carrier 案例。先比较现有 broader-GRG surfaces，尤其 Relation Library、Generative Expectation Ledger、PH ledger 与 Burden Matrix，选出当前最欠约束、又最核心的一条主轴，再做 bounded charter / pressure pass。除非触发明确 reopen 条件，否则不要重新打开 carrier vocabulary。不要开 canonical landing。
 
 ## 9. Stop rule
 
