@@ -24,6 +24,22 @@ tags: [GRG, ResearchFramework, CrossDomain, Civilization, Evidence, Normativity,
 
 # SRT Generative Relational Grammar Research Framework v0.1
 
+## 0. Consolidated v0.1 owner — 2026-09-21
+
+The first coherent architecture is now consolidated in:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Author construction authorization:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+This Research Framework remains the execution / programme framework.
+
+The Foundational Proto-Grammar v0.1 is the current single review surface for the architecture itself.
+
+No further architecture expansion should occur before whole-architecture author review.
+
 ## 0. Role
 
 This file is the programme-level execution architecture for GRG.
