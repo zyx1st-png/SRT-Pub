@@ -85,16 +85,20 @@ intervention =
 rule / institution / technology =
 how it is maintained =
 who can revise it =
+expectation embodiment / enforcement provenance =
 enforcement / incentive / adoption mechanism =
 ~~~
 
 ## G. Consequences
 
 ~~~text
+immediate beneficiary position =
+delayed affected position =
 short-run consequence =
 long-run consequence =
-distribution across positions =
+local versus distributed consequence =
 externalized costs =
+future option loss reversible? =
 adaptation / counter-adaptation =
 unexpected consequence =
 ~~~
