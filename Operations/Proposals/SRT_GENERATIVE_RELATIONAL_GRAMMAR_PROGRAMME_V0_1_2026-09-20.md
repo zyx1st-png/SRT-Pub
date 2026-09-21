@@ -633,6 +633,8 @@ G18 X4c carrier-explicit revision + M3 promotion
 G19 expectation-provenance typing
 G20 IPv4 -> IPv6 installed-base carrier stress
 G21 P-INFO-alone NOT ESTABLISHED / P-MIXED decomposition rule
+G22 CIV-007 precedent / stare-decisis P-INST stress
+G23 Inheritance Carrier Architecture v0.1 / component-role provenance
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -658,7 +660,22 @@ ecological inheritance + combined-sewer material inheritance
 cross-domain semantic invariance = PASS
 carrier-explicit admission = ACTIVE
 P-INFO standalone = OPEN / NOT ESTABLISHED
-IPv4/IPv6 provenance = decomposed P-MIXED
+P-INST standalone = OPEN / NOT ESTABLISHED
+
+IPv4/IPv6 provenance =
+decomposed P-MIXED
+
+precedent provenance =
+P-MIXED[
+  P-INFO role = PAYLOAD,
+  P-INST role = AUTHORITY
+]
+
+P-INST causal component role = PASS
+
+carrier provenance architecture =
+component + role + evidence/near-control + sufficiency status
+
 M4 = NOT TESTED
 
 M4 = NONE
@@ -703,7 +720,11 @@ Framework revision:
 - generative-expectation provenance is now explicit and must not collapse material / legal / technical / normative sources;
 - P-MIXED inheritance provenance must expose its components rather than acting as a catch-all;
 - greenfield vs inherited installed-base is now a reusable X4c near-control;
-- X3b current interoperability and X4c successor inheritance are explicitly non-identical.
+- X3b current interoperability and X4c successor inheritance are explicitly non-identical;
+- provenance kinds are not assumed mutually exclusive;
+- P-MIXED must expose component causal roles;
+- component-role PASS != standalone-carrier PASS;
+- precedent binding-vs-persuasive pressure establishes a P-INST AUTHORITY role without establishing P-INST standalone sufficiency.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

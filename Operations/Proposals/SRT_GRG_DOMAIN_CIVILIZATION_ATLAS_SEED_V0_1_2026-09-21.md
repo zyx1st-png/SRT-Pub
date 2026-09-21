@@ -624,6 +624,68 @@ Owner:
 
 Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
 
+## 5.9 X4c institutional-carrier stress — precedent / stare decisis
+
+Frozen before dedicated target-source inspection:
+
+Operations/Proposals/SRT_GRG_X4C_PINST_PRECEDENT_INHERITANCE_FREEZE_2026-09-21.md
+
+Source-native result:
+
+~~~text
+prior adjudication
+-> inherited precedential legal field
+-> successor court
+-> later adjudicative options / justification burdens conditioned
+~~~
+
+Carrier result:
+
+~~~text
+X4c = PASS / remains M3
+
+P-INST causal component role = PASS
+P-INST standalone total carrier = NOT ESTABLISHED
+
+best carrier architecture:
+
+P-MIXED[
+  P-INFO:
+    role = PAYLOAD / prior holding or legal-rule content
+
+  P-INST:
+    role = AUTHORITY / binding-force selector
+]
+~~~
+
+Near-controls:
+
+~~~text
+binding precedent vs persuasive authority
+controlling precedent vs case of first impression
+~~~
+
+Framework revision:
+
+~~~text
+inheritance provenance
+-> compositional carrier architecture
+
+component
++ provenance kind
++ causal role
++ role evidence / near-control
++ standalone sufficiency status
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
+
+Carrier architecture owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
 ## 6. Mainline work order
 
 ~~~text
@@ -635,10 +697,13 @@ Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
 6. first long-duration historical / infrastructure case = COMPLETE through CIV-006;
 7. IPv4/IPv6 installed-base carrier stress = COMPLETE;
 8. P-INFO standalone remains OPEN; P-MIXED must list components;
-9. next pressure test = P-INST institutional inheritance or genuinely standalone P-INFO;
-10. require inheritance + expectation provenance in new records;
-11. continue underdeveloped domain re-entry;
-12. use future M4 attempts selectively as calibration, not as the sole queue;
+9. P-INST precedent stress = COMPLETE;
+10. standalone P-INST and P-INFO both remain OPEN;
+11. use compositional carrier architecture rather than filling standalone provenance categories;
+12. next test = audit existing X4c cases under component+role schema and ask whether it improves exclusion / predicts near-controls;
+13. require carrier-role + expectation provenance in new records;
+14. continue underdeveloped domain re-entry;
+15. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue

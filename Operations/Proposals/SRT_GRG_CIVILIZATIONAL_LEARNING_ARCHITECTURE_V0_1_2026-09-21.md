@@ -402,6 +402,9 @@ Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
 position / horizon conflict ledger:
 Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+inheritance carrier architecture:
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 ~~~
 
 The burden matrix, expectation ledger and PH ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position, horizon or evidence type.
@@ -418,6 +421,26 @@ E-NORM / E-BIO / E-MODEL / E-MIXED
 ~~~
 
 These provenance tags type how a relation is carried or how an expectation is sourced.
+
+Inheritance provenance is now compositional when needed:
+
+~~~text
+component
+-> provenance kind
+-> causal role
+-> role evidence / near-control
+-> standalone sufficiency status
+~~~
+
+CIV-007 precedent pressure shows why:
+
+~~~text
+P-INFO can carry legal-rule content
+while
+P-INST supplies binding authority.
+
+Neither therefore earns standalone total-carrier status in that case.
+~~~
 
 They are not new ontology entities or moral ranks.
 

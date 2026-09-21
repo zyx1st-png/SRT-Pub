@@ -550,17 +550,69 @@ Owner:
 
 Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
 
+PRECEDENT / P-INST CARRIER STRESS = COMPLETE:
+
+~~~text
+freeze before dedicated legal-source inspection = PASS
+
+X4c precedent topology:
+prior adjudication
+-> precedential legal field
+-> successor court
+-> later option / justification burden conditioned
+
+X4c = PASS / remains M3
+
+binding vs persuasive authority:
+P-INST causal component role = PASS
+
+P-INST standalone total carrier = NOT ESTABLISHED
+
+best carrier =
+P-MIXED[
+  P-INFO role = PAYLOAD / prior holding content,
+  P-INST role = AUTHORITY / binding-force selector
+]
+
+near-controls:
+binding vs persuasive
+controlling precedent vs case of first impression
+~~~
+
+Framework revision:
+
+~~~text
+provenance labels
+->
+compositional carrier architecture
+
+component
++ provenance kind
++ causal role
++ role evidence / near-control
++ standalone sufficiency status
+
+component-role PASS != standalone-carrier PASS
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
+
+Carrier architecture:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. do NOT add another technical installed-base case by default;
-2. test P-INST institutional inheritance OR a genuinely standalone P-INFO carrier;
-3. freeze source-neutral topology before decisive source inspection;
-4. require carrier + successor cohort + changed later possibility structure;
-5. for P-MIXED, list all carrier components;
-6. if standalone P-INFO repeatedly collapses into P-MIXED, narrow or retire it;
-7. preserve expectation provenance and PH separately;
-8. keep M4 as periodic calibration only when target ownership is uncertain.
+1. do NOT hunt another provenance category immediately;
+2. re-audit existing X4c cases using component+role schema;
+3. test whether carrier architecture blocks false admissions
+   or predicts required near-controls better than simple provenance tags;
+4. retire / merge provenance kinds that do not earn distinct roles;
+5. preserve expectation provenance and PH as separate surfaces;
+6. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -663,14 +715,14 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
-2) Materials/2026/SRC_2026_09_21_IPv4_IPv6_Installed_Base_Inheritance.md
-3) Operations/Proposals/SRT_GRG_X4C_INFO_IPV4_IPV6_INHERITANCE_FREEZE_2026-09-21.md
-4) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
-5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-6) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-7) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
-8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+1) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+2) Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
+3) Operations/GRG/Cases/SRT_GRG_CIV_007_PRECEDENT_INSTITUTIONAL_INHERITANCE_2026-09-21.md
+4) Materials/2026/SRC_2026_09_21_Precedent_Binding_Persuasive_Inheritance.md
+5) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+6) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+7) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+8) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
@@ -680,49 +732,53 @@ X3b = M3
 X4b = M3
 X4c = M3
 
-X4c admission:
-reconstructed F
-+ carrier C
-+ successor cohort
-+ changed later possibility structure
+Inheritance Carrier Architecture = ACTIVE
 
-inheritance provenance:
-P-ECO PASS
-P-MAT PASS
-P-MIXED PASS as decomposed carrier
-P-INFO standalone = OPEN / NOT ESTABLISHED
-P-INST = UNTESTED
+carrier record =
+component
++ provenance kind
++ causal role
++ role evidence / near-control
++ standalone sufficiency status
 
-IPv4 -> IPv6:
-X4c = PASS
-P-INFO-alone = NO
-P-MIXED = YES
+current standalone state:
+P-ECO = PASS
+P-MAT = PASS
+P-INFO = OPEN / NOT ESTABLISHED
+P-INST = OPEN / NOT ESTABLISHED
 
-P-MIXED rule:
-must list components;
-cannot act as generic fallback.
+component roles:
+P-INFO PAYLOAD = PASS in mixed cases
+P-INST AUTHORITY = PASS in precedent case
 
-greenfield vs installed-base
-= reusable X4c near-control
+IPv4/IPv6 =
+P-MIXED decomposed carrier
 
-X3b current operative expectation
+precedent =
+P-MIXED[
+  P-INFO PAYLOAD,
+  P-INST AUTHORITY
+]
+
+component-role PASS
 !=
-X4c successor inherited-field conditioning
+standalone-carrier PASS
 
-Expectation provenance remains separate:
-E-MAT / E-TECH / E-LEGAL / E-ORG /
-E-NORM / E-BIO / E-MODEL / E-MIXED
+X3b current operative rule
+!=
+X4c inherited successor field
 
+Expectation provenance remains separate.
 PH remains cross-cutting.
 
 M4 = NONE
 M5 = NONE
 
 next =
-P-INST institutional inheritance
-or genuinely standalone P-INFO
--> freeze first
--> fail/narrow rather than stretch
+carrier-architecture adequacy audit
+across existing X4c cases
+-> does component-role decomposition improve exclusion / near-control selection?
+-> merge/retire provenance kinds if not.
 
 calibration:
 RNN = STOP
@@ -732,7 +788,7 @@ canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要因为载体“包含信息”就标 P-INFO。P-INFO 要求信息/符号载体本身足以把重构场带入 successor cohort；如果物质部署、技术实现或制度实践是不可缺的，就必须写 P-MIXED 并列出组成。下一轮优先 P-INST，或选择一个真正可能纯信息继承的案例来尝试反证。不要开 canonical landing。
+不要再为了填满 P-ECO/P-MAT/P-INST/P-INFO 四格去找例子。下一步先检验 carrier architecture 本身是否有生产力：它是否比简单标签更能拒绝假 X4c、指定 near-control、解释同一案例中不同组件的作用。若不能，就简化 provenance；若能，再决定是否继续扩展。Expectation provenance、PH 和 carrier architecture 三者保持分离。不要开 canonical landing。
 
 ## 9. Stop rule
 
