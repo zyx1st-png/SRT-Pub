@@ -301,7 +301,11 @@ The practical programme remains corrigible by consequence.
 
 ## 4.3 Projected-order path for W-P
 
-**[M — proposed resolution of the GO1 / W-P tension; AUTHOR DECISION PENDING]**
+**[A1 — explicitly accepted]**
+
+After this projected-order route was proposed as the resolution of the GO1 / W-P tension, the author replied:
+
+> 认同，继续
 
 GO1 correctly blocks a merely imagined order from being treated as an already admitted Generative Order.
 
@@ -463,6 +467,7 @@ GRG gain != unrepresentable vertical variables = YES
 cross-objectification invariance + prospective discrimination = YES
 Generative Order admission burden = YES
 R-HIST / R-RECON retyping into GTS views = YES
+Projected Generative Order / projected E_G path = YES
 canonical edit = NO
 ~~~
 
