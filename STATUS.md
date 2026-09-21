@@ -923,6 +923,15 @@ Bearer admission threshold + Bearer <-> position stability
 85. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
 86. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
 87. do not restart winner-style strongest-neighbor novelty audit;
+88. evidence-generative provenance Pass 1 = COMPLETE at Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_PASS1_2026-09-21.md;
+89. evidence-generative provenance is orthogonal to source provenance / expectation provenance / X4c carrier provenance; it adds NO carrier provenance kind and NO M-status;
+90. evidence-generation roles = DISCOVERY / CAUSAL-BRIDGE / CONSTRUCTION / ORDER-ADMISSION / GRAMMAR-VALIDATION; one item may play multiple roles but must not be double-counted as independent evidence;
+91. core guards = successful construction != independent discovery; post-intervention conformity != independent confirmation; order admission != grammar validation; same-source co-evidence != independent replication;
+92. GTS-001 provenance audit = synthetic construction context + preregistered causal-bridge intervention; positive grammar-validation credit NO; adverse narrowing credit retained;
+93. GTS-002 provenance audit = pre-existing source-native process / no GRG rewrite; M3 structural credit retained; M4 NO / ABSORBED;
+94. GTS-003 provenance audit = target frozen before dedicated target-source inspection but not fully held-out M4 validation; GO1-GO3 source-supported, GO5 chiefly bounded counterfactual articulation;
+95. current X4c greenfield-vs-inherited-field discriminator = GRG-GENERATED UNOBSERVED; no positive M4 claim until a frozen held-out charter produces world-side evidence;
+
 
 ~~~
 
