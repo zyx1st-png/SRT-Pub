@@ -218,7 +218,14 @@ Candidate domains:
 - institutions;
 - social coordination.
 
-### X3 — externalized generative expectation
+### X3 — expectation articulation / operative expectation regime
+
+Current split after mature-source pressure:
+
+~~~text
+X3a articulated / encoded expectation
+X3b operative expectation regime
+~~~
 
 Candidate domains:
 
@@ -228,15 +235,38 @@ Candidate domains:
 - technical standards;
 - scientific method.
 
-### X4 — local success through background depletion
+Guard:
+
+~~~text
+X3a != X3b
+written rule != operative institution
+~~~
+
+### X4 — reconstructed conditions / recursive feedback / inherited condition
+
+Current split after niche-construction pressure:
+
+~~~text
+X4a reconstructed environmental / option condition
+X4b recursive selective / viability feedback
+X4c inherited reconstructed condition
+~~~
 
 Candidate domains:
 
 - ecology;
-- economics;
 - public health;
-- organizations;
-- technology.
+- learning;
+- institutions;
+- technology;
+- infrastructure.
+
+Guard:
+
+~~~text
+long-term effect != X4b
+persistence != X4c automatically
+~~~
 
 ### X5 — reconstruction of future selectability
 
@@ -286,16 +316,48 @@ X4 = M2 / retained candidate / position+horizon split required
 Owner:
 `Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`
 
+## 5.2 Mature-source pressure Pass 1
+
+New source-native pressure records:
+
+~~~text
+CIV-004 Nepal farmer-managed irrigation
+-> X3a present / X3b strong candidate
+-> rules-in-use + monitoring + sanctions + communication
+
+CIV-005 beaver ecosystem engineering
+-> X4a strong
+-> X4b not established by ecosystem-engineering evidence alone
+-> X4c remains gated
+~~~
+
+Mature-source result:
+
+~~~text
+X3 current phrase = TOO THIN / SPLIT REQUIRED
+X4 current phrase = TOO BROAD / SPLIT REQUIRED
+
+X3a / X3b = M2
+X4a / X4b = M2
+X4c = M1/M2 source-dependent
+M3 promotion = NO
+~~~
+
+Owner:
+`Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`
+
+This pass restores source-native ownership rather than treating GRG as the source of the mechanisms.
+
 ## 6. Mainline work order
 
 ~~~text
-1. relation-record backfill from already completed high-quality work;
-2. domain atlas material re-entry for D-EPI / D-NEUR / D-AI / D-SOC;
-3. civilizational case schema test on CIV-001..CIV-006;
-4. extract candidate cross-domain relations only after source-native records;
-5. red-team for false convergence;
-6. use calibration when a candidate needs pressure;
-7. update / split / retire relation library;
+1. formalize the live Relation Library owner surface;
+2. run cross-domain invariance audit on X3b and X4b;
+3. require explicit FAIL cases for X3b and X4b;
+4. test whether X3b is merely institutional-analysis grammar generalized too far;
+5. test whether X4b is merely niche construction / path dependence generalized too far;
+6. continue domain atlas material re-entry for D-EPI / D-NEUR / D-AI / D-SOC;
+7. update / split / retire relation library before adding supportive cases;
 ~~~
 
 ## 7. Calibration queue

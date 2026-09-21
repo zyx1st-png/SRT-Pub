@@ -721,7 +721,7 @@ Before any canonical theory edit, load:
 - `Governance/SRT_CANONICAL_FREEZE.md`
 - `Governance/SRT_EDIT_PROTOCOL.md`
 
-#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is the noncanonical GRG programme. Red-team Pass 1, generative-expectation second adjudication and distributed-neighbor Pass 1 are complete; the current gate is a bounded GRG-R1 transfer pilot, not strongest-rival novelty research.
+#972 is now the synchronized semantic cross-owner canonical spine state following the #970 One landing. #952 continues to close the R2-A authority-propagation layer: Registry §C owns the complete citation-priority chain, the Spine owns cross-owner generation order / non-identity / OPEN routing, and compatible local owners retain local definitions. #957 remains the noncanonical author baseline; #961 completed the bounded L0 owner cycle; #970 completed the bounded One Formation owner cycle. No new canonical owner cycle is open by default. Further canonical edits require a demonstrated live contradiction, separate author adjudication, or bounded operational/formal necessity. The next substantive programme work is the noncanonical GRG Framework Construction mainline. Bounded transfer/data-access work is calibration, not the programme-wide gate.
 
 ---
 
@@ -779,13 +779,17 @@ Bearer admission threshold + Bearer <-> position stability
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
 13. first civilizational schema pass = COMPLETE: CIV-001 Internet standards, CIV-002 AMR, CIV-003 Montreal Protocol;
-14. false-convergence Pass 1 = COMPLETE: one-relation compression rejected; X3 and X4 remain separate M2 candidates;
-15. framework revision earned: expectation embodiment/enforcement provenance + position/horizon consequence split are now required;
-16. next framework work = source-pressure X3/X4 against mature field theories + add one non-technical social/institutional case and one ecological/biological case;
-17. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-18. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-19. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-20. do not restart winner-style strongest-neighbor novelty audit;
+14. false-convergence Pass 1 = COMPLETE: one-relation compression rejected;
+15. mature-source pressure Pass 1 = COMPLETE using Ostrom institutional analysis + niche-construction/ecological-inheritance literature;
+16. X3 split = X3a articulated expectation / X3b operative expectation regime; written rule != operative institution;
+17. X4 split = X4a reconstructed condition / X4b recursive feedback / X4c inherited reconstructed condition; long-term effect != feedback/inheritance;
+18. CIV-004 Nepal irrigation = X3b positive source pressure; CIV-005 beaver ecosystem engineering = X4a positive but X4b not automatically paid;
+19. X3a/X3b/X4a/X4b remain M2; X4c M1/M2 source-dependent; no M3 promotion;
+20. next framework work = formal Relation Library owner + X3b/X4b cross-domain invariance audit + explicit FAIL cases;
+21. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+22. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+23. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+24. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
