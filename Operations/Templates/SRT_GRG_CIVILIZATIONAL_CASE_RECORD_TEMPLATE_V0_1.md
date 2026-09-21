@@ -97,10 +97,22 @@ delayed affected position =
 short-run consequence =
 long-run consequence =
 local versus distributed consequence =
-externalized costs =
-future option loss reversible? =
+position sensitivity = yes / no / open
+horizon sensitivity = yes / no / open
+directional divergence = evidenced / not established / open
+externalized costs = evidenced / open
+future option loss reversible? = evidenced / open
+correction / revision capacity =
 adaptation / counter-adaptation =
 unexpected consequence =
+~~~
+
+Guard:
+
+~~~text
+position sensitivity != conflict
+horizon sensitivity != trade-off
+directional divergence must be source-paid
 ~~~
 
 ## H. Candidate GRG mapping
@@ -128,8 +140,10 @@ Do not equate expectation with moral rightness.
 
 ~~~text
 indexed position(s) =
+indexed horizon(s) =
 G-stronger / G-weaker dimension =
-conflicting positions =
+conflicting positions = evidenced / not established / open
+PH ledger status =
 additional moral premise required =
 normativity status =
 ~~~
