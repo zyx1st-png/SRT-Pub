@@ -195,7 +195,7 @@ institutional authority role.
 | Other case | Possible shared burden | Key mechanism difference | False-convergence risk |
 |---|---|---|---|
 | CIV-006 combined sewer | successor cohort inherits reconstructed field | material hydraulic carrier vs legal-institutional mixed carrier | generic path dependence |
-| IPv4/IPv6 installed base | successor participants face non-greenfield field | technical installed base vs legal authority relation | treating all P-MIXED as same mechanism |
+| IPv4/IPv6 installed base | successor participants face non-greenfield field | technical installed base vs legal authority relation | treating all multi-component carrier architectures as the same mechanism |
 | Internet standards | current operative expectation | standards compatibility vs binding precedent | collapsing X3b into X4c |
 | ecological inheritance | later participant enters prior reconstructed condition | environment carrier vs legal rule/authority | calling all persistence inheritance |
 
