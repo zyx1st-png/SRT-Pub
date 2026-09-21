@@ -74,14 +74,22 @@ The installed field is irreducibly instantiated across:
 - operational configuration;
 - standards / deployment practice.
 
-Current carrier architecture:
+Current carrier architecture after role-census writeback:
 
 ~~~text
 cardinality = MULTI-COMPONENT
 
 P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
-P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
-P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+P-MAT / SUBSTRATE+INTERFACE = COMPONENT-ROLE-PASS
+
+P-INST proposed source-local operational-coordination role
+= PRESENT / ROLE-OPEN
+
+source-local ENACTMENT
+= CASE-LOCAL / NARROW
+
+persistence process
+= MIXED / source-local
 
 architecture sufficiency = PASS
 ~~~
