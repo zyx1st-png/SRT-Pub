@@ -494,7 +494,7 @@ institution carries field
 
 Reject.
 
-## 11. Programme status after role census Pass 1
+## 11. Programme status after local-closure Pass 1
 
 Adequacy owner:
 
@@ -512,6 +512,8 @@ Current state:
 
 ~~~text
 CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
+CARRIER SUBPROGRAMME = LOCAL CLOSED FOR CURRENT EVIDENCE
+VOCABULARY FREEZE = YES
 CAUSAL-ROLE-FIRST MODEL = ACTIVE
 P-MIXED AS PROVENANCE KIND = RETIRED
 
@@ -565,43 +567,83 @@ architecture PASS
 
 No carrier role receives M0-M5 status.
 
-## 12. Next gate
+## 12. Local closure / reopen rule
 
-Do not hunt standalone provenance categories merely to fill the table.
+Closure owner:
 
-Adequacy Pass 1 answered the prior question positively for the carrier architecture and negatively for provenance-kind-first classification.
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
 
-The bounded role census is COMPLETE and a minimal Role Library is earned.
-
-CIV-005 negative / borderline test is COMPLETE.
-
-Result:
+Verdict:
 
 ~~~text
-ROLE LIBRARY NEGATIVE PRODUCTIVITY = PASS
-ROLE-CANDIDATE / PRE-ADMISSION = ADDED
-X4c CIV-005 = NOT ADMITTED BY CURRENT EVIDENCE
+X4c CARRIER SUBPROGRAMME = LOCAL CLOSE
+vocabulary freeze for current evidence = YES
+new carrier source hunt = STOP by default
 ~~~
 
-Positive-record consistency audit is COMPLETE:
+Frozen current carrier schema:
 
 ~~~text
-ecological inheritance = PASS
-CIV-006 = STRONG PASS
-IPv4/IPv6 = PASS
-precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
+relation admission:
+reconstructed F
++ successor boundary
++ field transmission across boundary
++ successor enters inherited F
++ changed successor possibilities
 
-positive downgrades = NONE
-circular bootstrap = NONE
+component record:
+component
++ provenance metadata
++ causal role
++ role evidence / near-control
++ component status
+
+architecture:
+persistence process
++ minimal paid role set
++ architecture sufficiency
 ~~~
 
-Next gate:
+Reusable roles remain:
 
-> Has the X4c carrier subprogramme reached a local closure point?
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
 
-Run a bounded local-closure audit.
+SPECIALIZED:
+AUTHORITY
+~~~
 
-Do not add new carrier cases or reopen provenance categories merely to extend the line.
+Reopen only on a concrete trigger:
+
+~~~text
+R1 semantic failure on a new source-native case
+R2 retained role non-identity collapse
+R3 admission-order failure / circularity
+R4 paid-role falsification
+R5 persistence-process contradiction
+R6 external calibration contradiction
+~~~
+
+Not sufficient to reopen:
+
+~~~text
+desire for more examples
+new provenance medium by itself
+new metaphor
+wish to fill categories
+possible second AUTHORITY example
+mere availability of new literature
+~~~
+
+Post-closure route:
+
+~~~text
+return to broader GRG Framework Construction
+-> bounded underdeveloped-burden / framework-priority census
+~~~
 
 ## 13. Canonical boundary
 
