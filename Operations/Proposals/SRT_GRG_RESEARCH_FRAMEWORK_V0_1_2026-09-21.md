@@ -195,7 +195,9 @@ revision status
 
 Template owner:
 
-`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md`
+
+v0.1 is retained as historical provenance for the pre-retyping schema.
 
 ## 5. Source-native layer
 
