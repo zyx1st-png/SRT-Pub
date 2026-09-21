@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / SELECTED RELATION-LIBRARY -> GTS RECONCILIATION NEXT / PROSPECTIVE CROSS-OBJECTIFICATION CHARTER AFTER RECONCILIATION / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / POST-#1025 GTS RECONCILIATION REVIEW / EVIDENCE-PROVENANCE OWNER ACTIVE / PROSPECTIVE FAMILY SELECTION OPEN / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -72,6 +72,15 @@ Current author adjudication:
 
 Primary new-record schema — GTS v0.2:
 `Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Evidence-generative provenance owner:
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+First bounded-use audit:
+`Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_GTS_USE_PASS1_2026-09-21.md`
+
+Post-#1025 GTS reconciliation audit:
+`Operations/Audits/SRT_GRG_GTS_RECONCILIATION_PASS1_2026-09-21.md`
 
 Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
@@ -113,12 +122,15 @@ Public access-route verification:
 `Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`
 
 Current continuation handoff:
+`Operations/Handoffs/SRT_GRG_GTS_RECONCILIATION_POST1025_HANDOFF_2026-09-21.md`
+
+Historical v0.3 closure handoff:
 `Operations/Handoffs/SRT_GRG_V0_3_AUTHOR_CLOSURE_HANDOFF_2026-09-21.md`
 
 Historical programme handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
 
-Current post-#1022 mainline gate:
+Current post-#1025 mainline gate:
 
 ```text
 objects = cuts
@@ -154,10 +166,35 @@ LOCAL CLOSE
 v0.3 independent content review = COMPLETE
 projected-order author decision = COMPLETE / A1
 
+first selected Relation Library -> GTS migration =
+COMPLETE / TRADE-OFF
+
+#1025 evidence-provenance bounded use =
+PASS / PRODUCTIVE
+owner = Proposal v0.1 / ACTIVE
+
+GTS dominance over legacy =
+NOT ESTABLISHED
+
+E_G real-use correction =
+GTS-002 = NOT OPENED
+GTS-003 = NOT OPENED
+reason = prior classifications were analytic GO3/GO5 restatements
+
+prospective family selection =
+OPEN
+
+X4c generic greenfield-vs-installed-base discriminator =
+SOURCE-NATIVE BUT UNOBSERVED
++ absorbed by ordinary path-dependence / installed-base baseline
++ NOT an authorized M4 charter
+
 next =
-selected Relation Library to GTS reconciliation
--> freeze one prospective cross-objectification discrimination charter
--> bounded execution only after reconciliation + charter freeze
+independent review of post-#1025 GTS reconciliation
+-> bounded prospective-family selection audit
+-> strongest-neighbor + M4-E0 audit
+-> choose at most one route
+-> only then freeze a charter
 
 canonical edit = NO
 ```
