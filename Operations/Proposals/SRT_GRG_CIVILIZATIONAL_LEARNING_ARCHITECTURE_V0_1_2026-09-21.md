@@ -304,6 +304,39 @@ Risks:
 
 AI must remain auditable and corrigible.
 
+## 12.1 First source-pressure writeback
+
+The first civilizational cases and mature-source pressure require two explicit burden decompositions.
+
+### Expectation regime
+
+~~~text
+X3a articulated / encoded expectation
+!=
+X3b operative expectation regime
+~~~
+
+An institution, protocol or norm is not causally paid merely because it is represented.
+
+Record how it becomes operative through typed embodiment / enforcement provenance.
+
+### Reconstructed future conditions
+
+~~~text
+X4a reconstructed condition
+!=
+X4b recursive selective / viability feedback
+!=
+X4c inherited reconstructed condition
+~~~
+
+Long-run consequence alone is insufficient for the stronger recursive or inheritance burdens.
+
+These are programme candidates, not new canonical ontology.
+
+Owner:
+`Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`
+
 ## 13. Outputs
 
 Initial civilizational programme outputs should be:
