@@ -402,6 +402,33 @@ M4 = NO / ABSORBED
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
+## O.1 Evidence-generative provenance
+
+~~~text
+target process existed before GRG intervention? = YES
+
+evidence-generation roles =
+DISCOVERY from source-native mature Kubernetes practice
++ ORDER-ADMISSION for the bounded operative NetworkPolicy order
+
+investigator / GRG process rewrite =
+NONE
+
+independence relation =
+source-native pre-existing evidence
+
+counterfactual realization =
+SOURCE-NATIVE operational alternative:
+policy represented but not enforced
+
+grammar-validation credit =
+STRUCTURAL / M3-side recurrence = YES
+prospective / M4 = NO
+reason = M4-E0 ABSORBED
+~~~
+
+The same source-native evidence may support order admission and structural recurrence because those claims are separately articulable, but it must not be counted as independent replication.
+
 ## P. Revision
 
 No relation retirement is required.
