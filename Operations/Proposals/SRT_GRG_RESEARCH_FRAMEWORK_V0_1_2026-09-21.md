@@ -379,6 +379,66 @@ When effects cross positions or timescales, state separately:
 Owner:
 `Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`.
 
+### 9.2 Mature-source pressure revision — X3 / X4 split
+
+Ostrom-style institutional analysis and niche-construction / ecological-inheritance work force two further decompositions.
+
+#### X3 — expectation articulation versus operative regime
+
+~~~text
+X3a articulated / encoded expectation
+= a future relation is represented in a rule, protocol, norm,
+  schedule, model, plan or shared representation.
+
+X3b operative expectation regime
+= the expectation becomes materially / institutionally operative
+  through interfaces, incentives, monitoring, sanctions,
+  organizational process, social norm, infrastructure or mixed provenance,
+  such that participant action possibilities actually change.
+~~~
+
+Guards:
+
+~~~text
+X3a != X3b
+written rule != operative institution
+X3b need not always require a formal written X3a
+~~~
+
+#### X4 — reconstruction versus recursive feedback versus inherited condition
+
+~~~text
+X4a reconstructed environmental / option condition
+= current activity materially changes later environmental,
+  institutional or action conditions.
+
+X4b recursive selective / viability feedback
+= the reconstructed condition changes specified selection,
+  viability, accessibility or transition pressures on later positions.
+
+X4c inherited reconstructed condition
+= the reconstructed condition persists, is maintained or reproduced
+  across a later cycle / generation such that later participants
+  inherit a changed generative field.
+~~~
+
+Guards:
+
+~~~text
+X4a != X4b
+X4b != X4c
+long-term effect != recursive feedback
+persistence != inheritance automatically
+ecosystem engineering != evolution by niche construction automatically
+~~~
+
+These are candidate programme burdens only.
+
+Mature institutional and evolutionary theories retain mechanism ownership.
+
+Owner:
+`Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`.
+
 ## 10. Generative expectation layer
 
 A GRG relation may carry a structural expectation about its continuation or transformation.
