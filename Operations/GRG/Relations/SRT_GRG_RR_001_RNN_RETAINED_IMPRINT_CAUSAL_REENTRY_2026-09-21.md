@@ -60,6 +60,24 @@ Guard:
 spectral summary != full dynamical organization
 ~~~
 
+Author-aligned overlay:
+
+~~~text
+selected spectral / decoder trace
+= objectified measurement slice of an L2 / history aspect
+
+selected trace
+!= full L2 / history generative organization
+
+R1c NULL for the selected trace
+!= vertical generative efficacy NULL
+
+proxy failure
+!= evidence for an unspecified deeper vertical cause
+~~~
+
+The adverse result is therefore trace-bounded and bridge-bounded. The stopped spectral family remains stopped.
+
 ## E. Generative relation candidate
 
 ~~~text
@@ -134,6 +152,6 @@ source-native relation = training history -> recurrent spectral imprint
 GRG candidate = R1a / R1c
 burden paid = R1a yes; R1c no
 mapping status = retained-imprint match only
-strongest guard = structure that remembers history need not causally mediate later learning
+strongest guard = an objectified history trace can remember history without paying history-specific causal mediation; trace-bounded R1c NULL neither proves vertical-efficacy NULL nor licenses a deeper-cause rescue
 next action = STOP this spectral family
 ~~~
