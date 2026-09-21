@@ -409,38 +409,72 @@ Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 
 The burden matrix, expectation ledger and PH ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position, horizon or evidence type.
 
-CIV-006 adds two required provenance dimensions:
+Carrier / expectation typing now uses two separate analysis surfaces.
+
+### Inheritance carrier architecture
+
+Primary owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
+Adequacy owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Live representation:
 
 ~~~text
-inheritance provenance:
-P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+component
+-> provenance metadata
+-> causal role
+-> role evidence / near-control
+-> component status
 
-expectation provenance:
+architecture cardinality =
+SINGLE-COMPONENT / MULTI-COMPONENT
+
+architecture sufficiency =
+PASS / OPEN / FAIL
+~~~
+
+Current provenance metadata:
+
+~~~text
+P-MAT / P-ECO / P-INST / P-INFO
+~~~
+
+Historical `P-MIXED` is retired as a provenance kind.
+
+Multi-component architecture is represented directly.
+
+Current stronger comparison axis:
+
+~~~text
+causal role
+~~~
+
+Examples:
+
+- SUBSTRATE / MAINTENANCE in ecological and material inheritance;
+- PAYLOAD in protocol and legal-rule inheritance;
+- AUTHORITY in precedent;
+- INTERFACE / ENACTMENT in installed technical fields.
+
+Adequacy Pass 1 corrected two overclaims:
+
+- modern regulation in CIV-006 is expectation provenance, not inheritance carrier;
+- P-INST in IPv4/IPv6 is PRESENT / ROLE-OPEN, not a paid causal carrier role.
+
+### Generative expectation provenance
+
+Remain separately typed:
+
+~~~text
 E-MAT / E-TECH / E-LEGAL / E-ORG /
 E-NORM / E-BIO / E-MODEL / E-MIXED
 ~~~
 
-These provenance tags type how a relation is carried or how an expectation is sourced.
-
-Inheritance provenance is now compositional when needed:
-
-~~~text
-component
--> provenance kind
--> causal role
--> role evidence / near-control
--> standalone sufficiency status
-~~~
-
-CIV-007 precedent pressure shows why:
-
-~~~text
-P-INFO can carry legal-rule content
-while
-P-INST supplies binding authority.
-
-Neither therefore earns standalone total-carrier status in that case.
-~~~
+Carrier roles and expectation sources must not be collapsed.
 
 They are not new ontology entities or moral ranks.
 
@@ -468,9 +502,15 @@ CIV-006 combined-sewer legacy = COMPLETE
 X4c material inheritance = M3
 ~~~
 
-Next historical pressure should not be another material-infrastructure example by default.
+Do not add another inheritance case merely to populate provenance categories.
 
-Prefer an institutional or informational inheritance case that can falsify or narrow the carrier-explicit X4c rule.
+Current next task:
+
+~~~text
+bounded carrier-role census across existing X4c cases
+~~~
+
+Create a reusable Role Library only if the role vocabulary shows recurrence, exclusion power and control-prediction value.
 
 ## 15. Canonical and political guard
 
