@@ -271,7 +271,7 @@ C = {
 
   c3:
     provenance metadata = P-INST
-    proposed role = MAINTENANCE / operational coordination
+    proposed source-local role = operational coordination
     evidence = standards / deployment practice are present
     status = PRESENT / ROLE-OPEN
 }
@@ -503,7 +503,7 @@ IPv4/IPv6 =
 MULTI-COMPONENT
 P-INFO / PAYLOAD = PASS
 P-MAT / SUBSTRATE+INTERFACE = PASS
-P-INST proposed maintenance role = ROLE-OPEN
+P-INST proposed operational-coordination role = ROLE-OPEN
 source-local ENACTMENT = NARROW
 architecture PASS
 
