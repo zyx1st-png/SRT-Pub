@@ -121,6 +121,8 @@ directional divergence must be source-paid
 candidate burden(s) =
 relation topology =
 maintenance provenance =
+inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED / n.a.
+P-MIXED components =
 what is actually paid =
 what is not paid =
 nearest false convergence =
