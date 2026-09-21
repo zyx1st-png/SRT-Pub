@@ -10,6 +10,11 @@ claim_mode: research_programme
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+  - Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
@@ -36,6 +41,31 @@ It is not:
 Its job is to make the author's GRG direction operational:
 
 > preserve source-native knowledge, extract candidate generative relations, compare them across domains without erasing mechanism, use evidence and failure to revise the grammar, and extend the same architecture to social and civilizational learning.
+
+## 0.1 Foundational v0.1 consolidation
+
+The first coherent GRG architecture is now consolidated in:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Author construction authorization:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+The consolidated v0.1 incorporates the later framework results already on main:
+
+- X6 retyped from false relation candidate to PH Position / Horizon cross-cutting analysis burden;
+- X4c carrier-explicit inheritance with decomposed P-MIXED and P-INFO-alone NOT ESTABLISHED in the IPv4/IPv6 stress test;
+- X4c remains M3;
+- M4 remains NONE.
+
+This Research Framework remains the execution / programme framework.
+
+The Foundational Proto-Grammar v0.1 is the single whole-architecture review surface.
+
+The author explicitly requested completion of v0.1 before overall review.
+
+Therefore architecture expansion is STOPPED pending that review.
 
 ## 1. Framework identity
 
@@ -158,7 +188,9 @@ revision status
 
 Template owner:
 
-`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md`
+
+v0.1 is retained as historical pre-retyping schema.
 
 ## 5. Source-native layer
 
@@ -917,20 +949,18 @@ Completed:
 22. P-INFO-alone NOT ESTABLISHED; P-MIXED carrier decomposition required;
 23. greenfield-vs-installed-base added as reusable X4c near-control.
 
-Current mainline:
+Current mainline after author v0.1 construction instruction:
 
 ~~~text
-A. expand / harden the Cross-Domain Burden Matrix;
-B. expand the Generative Expectation Ledger;
-C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
-D. CIV-006 long-duration infrastructure pressure = COMPLETE;
-E. IPv4/IPv6 technical-informational carrier stress = COMPLETE;
-F. standalone P-INFO remains OPEN; do not treat symbolic description as sufficient;
-G. next test P-INST institutional inheritance or a genuinely standalone P-INFO carrier;
-H. require decomposed P-MIXED + inheritance provenance + expectation provenance in new records;
-I. continue domain re-entry for underdeveloped domains;
-J. use M4 prospectively when a genuinely uncertain target appears,
-   not as a serial novelty hunt.
+A. GRG Foundational Proto-Grammar v0.1 = COMPLETE / READY FOR AUTHOR REVIEW;
+B. preserve all completed matrix / ledger / X4c / PH / M3 results as evidence and pressure assets;
+C. STOP new architecture expansion before whole-architecture author review;
+D. do not add relation families by default;
+E. do not start a new serial M4 target;
+F. do not test the next P-INST / standalone P-INFO candidate yet;
+G. do not canonicalize GRG;
+H. do not expand GRG-as-AGI;
+I. after author review, revise the proto-grammar first, then resume downstream matrix / ledger / Atlas / transfer work.
 ~~~
 
 Current calibration:
