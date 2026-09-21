@@ -101,18 +101,40 @@ prior adjudication
 -> successor court enters field
 -> later options / justification burdens conditioned
 
-inheritance provenance =
-P-MIXED
+inheritance carrier architecture =
+MULTI-COMPONENT
 
-P-MIXED components =
-P-INFO role = holding / legal-rule content
-P-INST role = binding authority / hierarchy / jurisdiction
+carrier components =
+c1 = prior holding / legal-rule content
+c2 = hierarchy / jurisdiction authority relation
+
+provenance metadata =
+c1: P-INFO
+c2: P-INST
+
+component causal roles =
+c1: PAYLOAD
+c2: AUTHORITY
+
+role evidence / near-control =
+binding vs persuasive authority;
+controlling precedent vs case of first impression
+
+component status =
+c1: COMPONENT-ROLE-PASS
+c2: COMPONENT-ROLE-PASS
+
+minimal paid role set =
+PAYLOAD + AUTHORITY
+
+architecture sufficiency =
+PASS
 
 what is actually paid =
 successor inheritance + institutionally differentiated constraint
 
 what is not paid =
-P-INST standalone total carrier
+single-component P-INST architecture
 moral legitimacy
 political desirability
 universal irreversibility
