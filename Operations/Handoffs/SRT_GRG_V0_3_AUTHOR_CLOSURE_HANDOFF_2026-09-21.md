@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-V0-3-AUTHOR-CLOSURE-HANDOFF-20260921
 type: handoff
-status: active
+status: archived
 date: 2026-09-21
 layer: meta
 epistemic_layer: os
@@ -18,6 +18,8 @@ tags: [Handoff, GRG, V0_3, AuthorClosure, GTS]
 ---
 
 # Handoff — GRG v0.3 author closure after PR #1018 review
+
+> Historical handoff. Superseded for current routing by `Operations/Handoffs/SRT_GRG_GTS_RECONCILIATION_HANDOFF_2026-09-21.md`.
 
 ## 0. Baseline
 
