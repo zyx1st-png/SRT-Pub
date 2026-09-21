@@ -664,3 +664,33 @@ It should show:
 - at least 1 candidate relation narrowed or rejected by evidence.
 
 That would demonstrate learning rather than collection.
+
+## 10. Foundational v0.1 routing overlay — 2026-09-21
+
+The Atlas remains an experience / routing surface.
+
+It is not the foundational grammar owner.
+
+Primary first-version architecture:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+The latest Atlas / civilizational findings are preserved as pressure on that architecture:
+
+- PH is a Position / Horizon cross-cutting consequence index, not a relation by default;
+- X4c inherited reconstructed condition remains M3;
+- inheritance requires an identifiable carrier;
+- IPv4 / IPv6 stress narrows standalone P-INFO and supports decomposed P-MIXED;
+- relation identity and carrier provenance remain distinct.
+
+Current Atlas route:
+
+~~~text
+Atlas rows / cases = evidence and pressure surface
+Relation Library = candidate relation surface
+Proto-Grammar v0.1 = foundational architecture surface
+~~~
+
+Do not expand Atlas case count by default before whole-architecture author review.
+
+Existing cases remain available for that review and later revision.
