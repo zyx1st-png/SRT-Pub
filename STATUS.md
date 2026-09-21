@@ -824,7 +824,7 @@ Bearer admission threshold + Bearer <-> position stability
 6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
 7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
 8. first backfill records = RR-001 RNN adverse calibration, RR-002 HKB candidate, RR-003 Bowler source-native scaffold;
-9. RNN spectral family = R1a PASS / R1c NULL / STOP; no tuning and no O4;
+9. RNN spectral family = R1a PASS / R1c NULL / STOP; selected spectral/decoder trace = objectified measurement slice of an L2/history aspect; trace-bounded R1c NULL != vertical-efficacy NULL; proxy failure != deeper-cause proof; no tuning and no O4;
 10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
