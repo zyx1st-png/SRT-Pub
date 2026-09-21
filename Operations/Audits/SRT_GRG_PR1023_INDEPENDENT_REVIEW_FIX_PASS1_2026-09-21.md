@@ -159,7 +159,7 @@ but W-P may aim to construct an order that does not yet exist.
 
 A direct relaxation of GO1 would let imagined ideals masquerade as admitted world-side order.
 
-Current response is deliberately NOT author-adjudicated.
+The projected-order route was subsequently presented to the author and explicitly accepted with the reply `认同，继续`.
 
 Provisional M-only route:
 
@@ -193,7 +193,7 @@ It cannot borrow ordinary E_G authority.
 Current status:
 
 ~~~text
-M / AUTHOR DECISION PENDING
+AUTHOR-ADJUDICATED / A1
 ~~~
 
 This avoids both:
@@ -290,22 +290,21 @@ proto-grammar v0.2 / GTS v0.1 -> closed #1018
 
 No unmerged file is treated as a main-branch owner.
 
-## 9. Remaining theory decision
+## 9. Projected-order decision closure
 
-One theory item remains deliberately unclosed:
-
-~~~text
-Should the projected-order / projected-E_G path
-be author-adjudicated as the W-P pre-realization route?
-~~~
-
-Current status:
+The projected-order / projected-E_G path is now author-adjudicated as the W-P pre-realization route.
 
 ~~~text
-M / AUTHOR DECISION PENDING
+Projected Generative Order
+= design hypothesis grounded in evidenced dependencies / conflicts
+!= admitted Generative Order
+
+projected E_G / E_G^proj
+= expectation relative to the projected order
+!= ordinary admitted-order E_G
 ~~~
 
-No author acceptance is inferred from the independent review itself.
+Promotion still requires later world-side formation / efficacy to pay the admitted-order gate.
 
 ## 10. Merge gate
 
@@ -314,7 +313,7 @@ Before merge:
 ~~~text
 Governance Preflight = must remain PASS
 branch vs main = behind 0
-projected-order path = may remain M/OPEN if explicitly labeled
+projected-order path = AUTHOR-ADJUDICATED / A1
 canonical edit = NO
 ~~~
 
