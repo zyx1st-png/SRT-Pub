@@ -45,6 +45,8 @@ It is not a canonical ontology table.
 | X4b | performative prediction | ML theory | model-induced data / target distribution | M3 PASS | exogenous distribution shift != performative feedback | deployment changes future risk/retraining field | not opened | M3 / M4 absorbed |
 | X4b negative control | beaver record alone | ecology | environmental modification | admission FAIL for X4b under record alone | X4a does not entail X4b | selection/viability mediation not paid by this evidence alone | not opened | negative control |
 | X4b M4-02 | road-capacity expansion | transport planning / economics | generalized travel-cost / accessibility field | semantic fit PASS | traffic growth alone != mediated induced feedback | lower generalized cost changes later travel demand and congestion | appraisal functional; policy recommendation separate | M4 NO / absorbed |
+| X4c | ecological inheritance | niche-construction / evolutionary ecology | P-ECO modified environmental carrier | source-native PASS pressure | persistence alone != inheritance | descendants / later organisms encounter a reconstructed field | no built-in moral direction | source-native owner / cross-domain anchor |
+| X4c / CIV-006 | legacy combined-sewer infrastructure | urban water engineering / infrastructure history / environmental regulation | P-MAT maintained material hydraulic field | M3 PASS | old / expensive / persistent infrastructure != inheritance automatically | successor urban cohorts must operate through, repair, bypass or replace inherited field | indexed infrastructure / water-quality expectation; policy verdict separate | M3 / M4 not tested |
 
 ## 2. What the matrix shows
 
@@ -69,6 +71,24 @@ X4b recurs through:
 - road-capacity travel-cost/accessibility fields.
 
 The source-native fields differ.
+
+### Inheritance without mechanism erasure
+
+X4c now survives:
+
+- ecological inheritance through P-ECO environmental carriers;
+- urban infrastructure inheritance through P-MAT material carriers.
+
+Shared burden:
+
+~~~text
+reconstructed F
++ inheritance carrier C
++ successor cohort enters under F
++ later possibilities are materially conditioned
+~~~
+
+Carrier mechanism is not relation identity.
 
 ### Negative controls remain visible
 
@@ -102,6 +122,7 @@ Current strongest cross-domain state:
 ~~~text
 X3b = M3
 X4b = M3
+X4c = M3
 
 M4-01 = absorbed
 M4-02 = absorbed
