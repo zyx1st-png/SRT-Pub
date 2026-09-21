@@ -508,9 +508,9 @@ horizon divergence = EVIDENCED
 position sensitivity = EVIDENCED
 fine-grained distributive conflict = OPEN
 
-Expectation provenance:
-E-MAT material burden
-!= E-LEGAL modern compliance burden
+Generative Expectation:
+S-MAT material burden
+!= S-LEGAL / S-ORG modern compliance burden
 != moral legitimacy
 ~~~
 
@@ -739,39 +739,80 @@ MAINLINE NEXT:
 X4c carrier-subprogramme =
 LOCAL CLOSE
 
-carrier vocabulary for current evidence =
+carrier vocabulary =
+FROZEN FOR CURRENT EVIDENCE
+
+Generative Expectation =
+ACTIVE MAINLINE
+
+broader-GRG next-burden selection =
+COMPLETE
+
+adequacy charter =
 FROZEN
 
-default:
-new carrier-case hunt = STOP
-new provenance-category hunt = STOP
-new reusable-role hunt = STOP
+adequacy Pass 1 =
+PRODUCTIVE SPLIT
 
-reopen only if:
-- internal contradiction;
-- source-native new-role pressure;
-- role collapse;
-- carrier / expectation conflation;
-- material X4c relation revision.
+live source/provenance =
+S-MAT
+S-TECH
+S-LEGAL
+S-ORG
+S-NORM
+S-BIO
 
-next =
-return to broader GRG
+live locus/mode =
+B-STRUCTURAL
+C0-ENACTED
+C1-MODEL
+OBS-MODEL
 
-selection rule:
-choose an underconstrained central burden that:
-1. is structurally important to generative relational grammar;
-2. is less constrained than the closed X4c carrier line;
-3. matters across domains / civilization;
-4. can produce exclusion / revision, not just mapping;
-5. does not reduce to novelty hunting.
+historical E-MODEL provenance =
+RETIRED
 
-M4 remains periodic calibration only.
-canonical edit = NO.
+historical E-MIXED provenance =
+RETIRED
+
+indexed comparison requires =
+relation/objective
++ position/locus
++ scale/grain
++ horizon
++ comparison dimension
+
+negative productivity =
+PASS
+
+RNN:
+prediction/classification
+!= B / C1 / indexed normativity
+
+precedent:
+binding B + indexed legal force
+!= moral legitimacy
+
+current =
+live schema consistency migration
+
+next after migration =
+bounded C0/C1 realization pressure
+using existing source-native rows first
+
+canonical edit = NO
+M4 = NONE
+M5 = NONE
+scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-Closure owner:
+Current owners:
 
-Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_BROADER_NEXT_BURDEN_SELECTION_PASS1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_CHARTER_V0_1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_SCHEMA_CONSISTENCY_CENSUS_PASS1_2026-09-21.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
 ## 5. Distributed-neighbor Pass 1 result
 
@@ -873,15 +914,15 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
-2) Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
-3) Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
-4) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
-5) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
-6) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-7) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-8) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
-9) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+1) Operations/Audits/SRT_GRG_BROADER_NEXT_BURDEN_SELECTION_PASS1_2026-09-21.md
+2) Operations/Proposals/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_CHARTER_V0_1_2026-09-21.md
+3) Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md
+4) Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md
+5) Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_SCHEMA_CONSISTENCY_CENSUS_PASS1_2026-09-21.md
+6) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+7) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+8) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+9) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 10) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 11) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
 12) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
@@ -889,70 +930,65 @@ Use:
 当前真实 gate：
 
 ~~~text
-X3b = M3
-X4b = M3
-X4c = M3
-
 X4c carrier-subprogramme =
 LOCAL CLOSE
 
-carrier vocabulary =
-FROZEN FOR CURRENT EVIDENCE
+Generative Expectation =
+ACTIVE MAINLINE
 
-CORE roles =
-SUBSTRATE
-PAYLOAD
-INTERFACE
+author adjudication =
+B + C ASYMMETRIC / LAYERED
 
-SPECIALIZED =
-AUTHORITY
+source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
 
-ROLE-CANDIDATE / PRE-ADMISSION =
-ACTIVE guard
+locus/mode =
+B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL
 
-CIV-005 negative productivity =
+E-MODEL provenance =
+RETIRED
+
+E-MIXED provenance =
+RETIRED
+
+OBS-MODEL
+!= C1-MODEL
+!= B-STRUCTURAL automatically
+
+indexed G-stronger / G-weaker requires =
+relation/objective
++ position/locus
++ scale/grain
++ horizon
++ comparison dimension
+
+negative productivity =
 PASS
 
-positive admission-order consistency =
-PASS
+RNN negative control =
+O1 predictable/classifiable imprint
++ O3 causal NULL
+-> OBS-MODEL does not pay B/C1
 
-positive downgrades =
-NONE
+precedent negative control =
+B legal/institutional force PASS
+-> moral legitimacy still OPEN
 
-new carrier/provenance hunt =
-STOP BY DEFAULT
-
-reopen triggers =
-internal contradiction
-source-native new-role pressure
-role collapse
-carrier/expectation conflation
-material X4c revision
+current =
+finish live expectation-schema consistency migration
+and stale-token scan
 
 next =
-return to broader GRG
-and select next underconstrained central burden
-from existing framework / ledger surfaces
-
-priority criteria =
-centrality
-cross-domain relevance
-exclusion/revision power
-normativity relevance
-not mere novelty hunting
-
-M4 = NONE
-M5 = NONE
-
-calibration:
-RNN = STOP
-HKB request = SENT / response pending
+bounded C0/C1 realization pressure
+using existing repository evidence first
 
 canonical edit = NO
+M4 = NONE
+M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要继续补 X4c carrier 案例。先比较现有 broader-GRG surfaces，尤其 Relation Library、Generative Expectation Ledger、PH ledger 与 Burden Matrix，选出当前最欠约束、又最核心的一条主轴，再做 bounded charter / pressure pass。除非触发明确 reopen 条件，否则不要重新打开 carrier vocabulary。不要开 canonical landing。
+不要全仓机械替换历史 E-*。只迁移 active GRG live routing；历史 audit 保留原记法并由 live Ledger supersede。迁移通过后，下一步重点压 C0/C1：先看 Nepal irrigation 是否真的支付 C0-ENACTED，再看 Performative Prediction 是否真的支付 formed-locus C1-MODEL；如果只是研究者模型或一般规则实践，就降级，不为填满 C0/C1 而放宽门槛。不要开 canonical landing。
 
 ## 9. Stop rule
 
