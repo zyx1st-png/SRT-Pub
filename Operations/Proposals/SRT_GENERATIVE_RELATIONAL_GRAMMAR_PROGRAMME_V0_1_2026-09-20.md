@@ -15,6 +15,8 @@ named_comparator: none
 n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_PROGRAMME_POSITION_ANTIOBJECTIFICATION_TO_CROSSDOMAIN_RESEARCH_2026-09-13.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md
@@ -47,6 +49,39 @@ Core success conditions:
 - reciprocal revision: domain evidence and mature theories can narrow, split, reject or reorganize GRG.
 
 Retrospective renaming alone is failure.
+
+### 0.1 Mainline correction — 2026-09-21
+
+The author has clarified the programme priority:
+
+~~~text
+programme mainline
+= GRG framework construction
++ relation library
++ domain / civilization atlas
++ generative-expectation / normativity architecture
+
+bounded experiments / source-specific causal tests
+= calibration workstreams
+~~~
+
+Therefore no single calibration item, including HKB raw-data access, is the programme-wide blocker unless it was explicitly declared indispensable to the entire framework.
+
+Current execution owner for this correction:
+
+`Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md`
+
+Civilizational architecture:
+
+`Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md`
+
+Domain/civilization atlas seed:
+
+`Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
+
+Relation-record schema:
+
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
 ## 1. Research object
 
@@ -570,7 +605,22 @@ For HKB, half-cycle / component-aware phase normalization is required for any fu
 
 Phase E.8 — RNN O3 robustness reconciliation: COMPLETE. The authoritative first O3 one-time transplant and the later #1001 maintained/matched-control robustness execution are both NULL. The toy RNN spectral family is STOP at R1c; R1d/O4 is blocked for that family.
 
-Phase E.9 — NEXT: HKB existing-data access route only. A bounded request package is prepared in `Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`. Do not inspect raw outcomes before a new analysis charter. New human collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
+Phase E.9 — HKB existing-data access calibration: ACTIVE / EXTERNAL RESPONSE PENDING. A bounded request package is prepared and the first request has been sent to Harjo de Poel. Do not inspect any received raw outcomes before a new analysis charter. New human collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
+
+Phase G — GRG Framework Construction: ACTIVE MAINLINE.
+
+Current build order:
+
+~~~text
+G1 Framework v0.1
+G2 Relation Record schema
+G3 Civilizational Learning Architecture
+G4 Domain + Civilization Atlas seed
+G5 backfill relation records from completed work
+G6 first cross-domain / civilizational schema pressure tests
+~~~
+
+HKB access proceeds asynchronously as a calibration item and does not block Phase G.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
