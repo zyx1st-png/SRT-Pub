@@ -98,9 +98,30 @@ Current stronger comparison axis:
 
 ~~~text
 component
--> causal role
+-> reusable / source-local causal role
 -> near-control / role evidence
+-> persistence process
 -> architecture sufficiency
+~~~
+
+Reusable Role Library v0.1:
+
+~~~text
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+~~~
+
+Census non-admissions:
+
+~~~text
+ENACTMENT = CASE-LOCAL / NARROW
+REPRODUCTION = OPEN / NOT PAID
+MAINTENANCE = persistence-process field, not component role
 ~~~
 
 IPv4/IPv6 stress test adds:
@@ -109,7 +130,9 @@ IPv4/IPv6 stress test adds:
 causal-role-first carrier analysis = ACTIVE
 
 IPv4/IPv6:
-P-INST proposed carrier role = PRESENT / ROLE-OPEN
+P-INFO / PAYLOAD = PASS
+P-MAT / SUBSTRATE+INTERFACE = PASS
+P-INST proposed coordination role = PRESENT / ROLE-OPEN
 
 precedent:
 P-INST / AUTHORITY = COMPONENT-ROLE-PASS
@@ -162,6 +185,14 @@ M4-02 = absorbed
 M4 = NONE
 M5 = NONE
 ~~~
+
+Role-census owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Role Library owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 ## 5. Framework use
 
