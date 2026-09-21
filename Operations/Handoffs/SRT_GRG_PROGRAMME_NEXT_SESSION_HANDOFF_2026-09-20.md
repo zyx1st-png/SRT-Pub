@@ -739,3 +739,95 @@ scientific distinctiveness = NOT ESTABLISHED
 Stop before any canonical edit or broad new deep well.
 
 This handoff authorizes continuation of the noncanonical GRG research package only.
+
+
+## GRG v0.1 whole-architecture review gate — 2026-09-21
+
+The author provisionally accepted the five foundational architecture recommendations for the purpose of completing a first coherent GRG version, then requested a whole review.
+
+Author source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+Primary review surface:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Supporting retyping:
+
+- Operations/Audits/SRT_GRG_G0_G11_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_G0_G11_RETYPING_RED_TEAM_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_RELATION_LIBRARY_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md
+- Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md
+
+Current first-version architecture:
+
+~~~text
+UPSTREAM
+C0 non-exhaustion / non-preclosure
+C1 differential manifestation / relative backgrounding
+
+CROSS-CUTTING
+formation
+maintenance / regeneration
+objectification / proxy
+evidence / failure
+PH position / horizon consequence index
+
+VERTICAL CORE
+R-HIST-a retained efficacy
+R-HIST-b recurrent reconstitution
+R-LOC local generative locus
+R-POS operative positionality [v0.1 downstream of R-LOC]
+R-RECON-a reconstructed generative condition
+R-RECON-b realized downstream reconstruction effect
+
+COMPOSITION
+C-MULTI
+C-XSC
+
+CONSEQUENCE
+CONSEQ-H
+CONSEQ-P
+CONSEQ-B [only where stronger SRT burden is paid]
+
+EXPECTATION
+E-B
+E-C0
+E-C1
+
+NORMATIVITY
+N-INDEX
+
+REFLEXIVE
+L-REFLEX-W
+L-REFLEX-M
+~~~
+
+Latest-main pressure retained inside v0.1:
+
+~~~text
+X3b = M3
+X4b = M3
+X4c = M3
+X6 relation candidate = RETIRED / RETYPED to PH
+P-INFO-alone = NOT ESTABLISHED in IPv4 / IPv6 inheritance stress
+P-MIXED must declare components
+M4 = NONE
+M5 = NONE
+~~~
+
+STOP RULE:
+
+Do not continue architecture expansion before the author's whole review.
+
+Specifically do not:
+
+- add a new relation family by default;
+- launch another M4 novelty target;
+- open the next P-INST / standalone P-INFO carrier case;
+- canonicalize GRG;
+- claim mature universal grammar;
+- expand GRG-as-AGI.
+
+Next session should begin by reading the single proto-grammar owner and reviewing the whole structure.
