@@ -816,10 +816,10 @@ Bearer admission threshold + Bearer <-> position stability
 > **2026-09-21 GRG framework turn:** the programme mainline is now framework construction across domains and civilization. RNN/HKB remain calibration workstreams. No single pending dataset blocks the framework mainline. Canonical owners remain closed by default.
 
 ~~~text
-1. GRG mainline = framework construction, relation library, domain/civilization atlas, generative-expectation/normativity architecture;
+1. GRG mainline = v0.3 process-first framework construction, GTS-first records, domain/civilization atlas, P_G/E_G and wholeward-learning architecture;
 2. existing Domain Reconstruction Framework remains the source-native entry surface for mature disciplines;
 3. GRG compares independently grounded generative burdens rather than replacing domain mechanisms;
-4. Relation Record template = active schema for source-native claim -> evidence -> objectification -> GRG burden -> expectation -> failure -> transfer;
+4. GTS v0.2 = primary active schema for new process-first records; Relation Record v0.1 = archived legacy schema for existing provenance;
 5. Civilizational Learning Architecture = active research layer for science, technology, institutions, markets, law, culture and historical experience;
 6. civilizational inputs are evidence-typed; they are not treated as one homogeneous "big dataset";
 7. first Atlas seed = D-PHY/D-LIFE/D-NEUR/D-COG/D-AI/D-TECH/D-ECON/D-SOC/D-LAW/D-ETH/D-EPI/D-CULT/D-HIST + HKB calibration;
@@ -835,7 +835,7 @@ Bearer admission threshold + Bearer <-> position stability
 17. X4 split = X4a reconstructed condition / X4b recursive feedback / X4c inherited reconstructed condition; long-term effect != feedback/inheritance;
 18. CIV-004 Nepal irrigation = X3b positive source pressure; CIV-005 beaver ecosystem engineering = X4a positive but X4b not automatically paid;
 19. historical mature-source checkpoint: X3a/X3b/X4a/X4b were M2 and X4c M1/M2 before later transfer / infrastructure passes; live M-status is superseded below;
-20. live Relation Library owner = ESTABLISHED at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md;
+20. Relation Library = ESTABLISHED legacy candidate/maturity/negative-control registry at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md; not the v0.3 grammar skeleton;
 21. negative-control discipline = PAID: formal-decoupling rejects X3b automatic admission; ecosystem-engineering-only evidence rejects X4b automatic admission;
 22. M3/M4 distinction = EXPLICIT: M3 independent source-native relation match != M4 prospective transfer gain != scientific distinctiveness;
 23. X3b -> Kubernetes NetworkPolicy = semantic/source match PASS; X3b promoted to M3; target-domain distinction already explicit, so M4 = NO / ABSORBED;
