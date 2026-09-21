@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # SRT 当前状态仪表盘
@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / EVIDENCE-PROVENANCE-INTEGRATED GTS RECONCILIATION REVIEW / EVIDENCE-PROVENANCE OWNER ACTIVE / PROSPECTIVE FAMILY SELECTION OPEN / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 / PROSPECTIVE-FAMILY AUDIT COMPLETE / NO ROUTE SELECTED / BCTB-0 TEMPORAL-REPLAY CALIBRATION CHARTER ACTIVE / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -181,20 +181,47 @@ GTS-002 = NOT OPENED
 GTS-003 = NOT OPENED
 reason = prior classifications were analytic GO3/GO5 restatements
 
-prospective family selection =
-OPEN
+prospective-family selection audit =
+COMPLETE / NO ROUTE SELECTED
+
+Route A = NOT SELECTED
+Route B = NOT SELECTED
+Route C = NOT SELECTED
+selected family = NONE
 
 X4c generic greenfield-vs-installed-base discriminator =
 SOURCE-NATIVE BUT UNOBSERVED
 + absorbed by ordinary path-dependence / installed-base baseline
 + NOT an authorized M4 charter
 
+BCTB-0 architecture =
+FROZEN FOR CALIBRATION
+
+BCTB-0 method =
+FORWARD-CHAINING TEMPORAL REPLAY
+
+core folds =
+T1 Kubernetes / T2 Performative Prediction / T3 IPv4-IPv6 / T4 precedent
+
+primary packet =
+ADMISSION / EXCLUSION / FAILURE / PROVENANCE
++ conditional OBJECTIFICATION sensitivity
+
+BCTB-0 credit =
+calibration only
+!= M4
+!= M5
+!= scientific distinctiveness
+
+BCTB-1 prospective target =
+NOT SELECTED / DO NOT OPEN BEFORE BCTB-0 GATE
+
 next =
-independent review of post-#1025 GTS reconciliation
--> bounded prospective-family selection audit
--> strongest-neighbor + M4-E0 audit
--> choose at most one route
--> only then freeze a charter
+prepare T1 historical source-pack manifest at 9900f425...
+-> run T1 only in a fresh isolated blind-generator context
+-> freeze generator packets before target unblind
+-> evaluator T1 closeout
+-> only then decide whether T2 may open
 
 canonical edit = NO
 ```
