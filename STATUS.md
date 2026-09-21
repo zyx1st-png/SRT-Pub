@@ -787,14 +787,16 @@ Bearer admission threshold + Bearer <-> position stability
 19. X3a/X3b/X4a/X4b remain M2; X4c M1/M2 source-dependent; no M3 promotion;
 20. live Relation Library owner = ESTABLISHED at Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md;
 21. negative-control discipline = PAID: formal-decoupling rejects X3b automatic admission; ecosystem-engineering-only evidence rejects X4b automatic admission;
-22. X3b invariance Pass 1 = provisional PASS across technical/legal/local-institutional carriers, but remains M2 with high substitutability pressure;
-23. X4b invariance Pass 1 = PASS only inside biological selective-feedback neighborhood; cross-domain invariance NOT ESTABLISHED; status DOMAIN-LIMITED / M2;
-24. M3 promotions = NONE;
-25. next framework work = pre-result X3b transfer outside obvious institutions + genuinely non-biological X4b candidate; semantic stretch => reject/keep domain-limited;
-26. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-27. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-28. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-29. do not restart winner-style strongest-neighbor novelty audit;
+22. M3/M4 distinction = EXPLICIT: M3 independent source-native relation match != M4 prospective transfer gain != scientific distinctiveness;
+23. X3b -> Kubernetes NetworkPolicy = semantic/source match PASS; X3b promoted to M3; target-domain distinction already explicit, so M4 = NO / ABSORBED;
+24. X4b -> Performative Prediction = non-biological semantic/source match PASS; X4b promoted to M3 and DOMAIN-LIMITED lifted; M4 = NO / ABSORBED;
+25. X4b generic programme label = recursive reconstructed-field feedback; biological selective/viability feedback remains a specialization;
+26. M4 relations = NONE; M5 relations = NONE; scientific distinctiveness = NOT ESTABLISHED;
+27. next framework work = one prospectively frozen bounded M4 attempt with relation + target + target question/control/failure expectation fixed before decisive target-source/outcome inspection;
+28. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+29. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+30. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+31. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
