@@ -654,14 +654,27 @@ NONE
 circular carrier-role bootstrap =
 NONE
 
+X4c carrier local closure =
+CLOSE
+
+carrier vocabulary freeze =
+YES for current evidence
+
+new carrier source hunt =
+STOP by default
+
+closure owner =
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+
 next =
-bounded X4c carrier-subprogramme local-closure audit
+broader GRG underdeveloped-burden / framework-priority census
 
 question:
-has the carrier line earned a local STOP / vocabulary freeze
-for current evidence?
+which active GRG burden is now least constrained
+and most in need of bounded negative / source-native pressure?
 
-No new sources.
+No winner-style theory ranking.
+No broad new deep well by default.
 
 M4 remains available as periodic calibration
 when a genuinely uncertain prospective target exists.
