@@ -583,78 +583,89 @@ CARRIER ARCHITECTURE ADEQUACY PASS 1 = COMPLETE:
 
 ~~~text
 CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
-
 PROVENANCE-KIND-FIRST MODEL = NARROW
-
 CAUSAL-ROLE-FIRST MODEL = ACTIVE
-
 historical P-MIXED provenance kind = RETIRED
-~~~
-
-Live carrier record:
-
-~~~text
-component
-+ provenance metadata
-+ causal role
-+ role evidence / near-control
-+ component status
-
-architecture cardinality =
-SINGLE-COMPONENT / MULTI-COMPONENT
-
-minimal paid role set =
-architecture sufficiency =
-PASS / OPEN / FAIL
-~~~
-
-Corrections earned:
-
-~~~text
-CIV-006:
-modern regulation = E-LEGAL/E-ORG expectation
-NOT secondary inheritance carrier.
-
-IPv4/IPv6:
-P-INST proposed maintenance role
-= PRESENT / ROLE-OPEN,
-not COMPONENT-ROLE-PASS.
-
-precedent:
-P-INST / AUTHORITY
-= COMPONENT-ROLE-PASS.
-~~~
-
-Reusable near-controls:
-
-~~~text
-greenfield vs installed-base
-binding vs persuasive authority
-controlling precedent vs case of first impression
 ~~~
 
 Owner:
 
 Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 
-Carrier architecture owner:
+CARRIER ROLE CENSUS PASS 1 = COMPLETE:
 
-Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+~~~text
+CORE reusable roles:
+SUBSTRATE = 3 paid records
+PAYLOAD = 2 paid records
+INTERFACE = 2 paid records
+
+SPECIALIZED reusable role:
+AUTHORITY = 1 paid record
++ strong binding/persuasive
++ controlling/first-impression near-controls
+
+NOT ADMITTED:
+ENACTMENT = CASE-LOCAL / NARROW
+REPRODUCTION = OPEN / NOT PAID
+
+RETYPED:
+MAINTENANCE
+-> architecture persistence process
+~~~
+
+Persistence process:
+
+~~~text
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
+
+Role-census owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Minimal Role Library:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+Current carrier examples:
+
+~~~text
+ecological inheritance:
+SUBSTRATE
+persistence = PASSIVE-PERSISTENCE
+
+CIV-006:
+SUBSTRATE + INTERFACE
+persistence = ACTIVE-MAINTENANCE / MIXED
+
+IPv4/IPv6:
+PAYLOAD + SUBSTRATE + INTERFACE
+P-INST coordination = ROLE-OPEN
+ENACTMENT = NARROW
+
+precedent:
+PAYLOAD + AUTHORITY
+~~~
 
 MAINLINE NEXT:
 
 ~~~text
-1. do NOT add a new inheritance case yet;
-2. run a bounded carrier-role census across existing X4c cases;
-3. count which roles recur at least twice;
-4. identify role pairs that are synonyms / redundant;
-5. ask whether each retained role predicts a near-control,
-   exclusion or failure condition;
-6. create a reusable Role Library only if recurrence and
-   discriminative value are paid;
-7. otherwise keep roles local and simplify;
-8. preserve expectation provenance and PH as separate surfaces;
-9. keep M4 as periodic calibration only when target ownership is uncertain.
+1. use EXISTING EVIDENCE ONLY;
+2. apply Role Library v0.1 to CIV-005 beaver ecosystem-engineering;
+3. do NOT add a new positive source in this step;
+4. ask exactly why current record still fails / gates X4c;
+5. identify missing successor / transmitted-field / carrier-role evidence;
+6. test whether Role Library gives a sharper failure statement
+   than "persistence alone is insufficient";
+7. if it cannot sharpen the negative, narrow or simplify Role Library;
+8. do not promote CIV-005 by analogy;
+9. preserve expectation provenance and PH separately;
+10. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -757,13 +768,13 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
-2) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
-3) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-4) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-5) Operations/GRG/Cases/SRT_GRG_CIV_006_COMBINED_SEWER_LEGACY_2026-09-21.md
-6) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
-7) Operations/GRG/Cases/SRT_GRG_CIV_007_PRECEDENT_INSTITUTIONAL_INHERITANCE_2026-09-21.md
+1) Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+2) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+3) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+4) Operations/GRG/Cases/SRT_GRG_CIV_005_BEAVER_ECOSYSTEM_ENGINEERING_2026-09-21.md
+5) Materials/2026/SRC_2026_09_21_Niche_Construction_Ecological_Inheritance.md
+6) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+7) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
@@ -774,58 +785,49 @@ X3b = M3
 X4b = M3
 X4c = M3
 
-Inheritance Carrier Architecture = ACTIVE / PRODUCTIVE
+Carrier Architecture = ACTIVE / PRODUCTIVE
+carrier analysis = CAUSAL-ROLE-FIRST
 
-carrier analysis =
-CAUSAL-ROLE-FIRST
+Role Library v0.1 = EARNED
 
-provenance metadata =
-P-ECO / P-MAT / P-INFO / P-INST
-
-historical P-MIXED provenance kind =
-RETIRED
-
-carrier record =
-component
-+ provenance metadata
-+ causal role
-+ role evidence / near-control
-+ component status
-+ architecture sufficiency
-
-current paid examples:
-
-ecological inheritance:
-SUBSTRATE / MAINTENANCE
-
-CIV-006:
-SUBSTRATE / MAINTENANCE / INTERFACE
-
-IPv4/IPv6:
+CORE:
+SUBSTRATE
 PAYLOAD
-+ SUBSTRATE / ENACTMENT / INTERFACE
-P-INST proposed maintenance role = ROLE-OPEN
+INTERFACE
 
-precedent:
-PAYLOAD + AUTHORITY
+SPECIALIZED:
+AUTHORITY
 
-near-controls:
-greenfield vs installed-base
-binding vs persuasive
-controlling precedent vs first impression
+NOT ADMITTED:
+ENACTMENT
+REPRODUCTION
+
+RETYPED:
+MAINTENANCE -> persistence process
+
+persistence process =
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+
+next =
+CIV-005 beaver negative/borderline application
+EXISTING EVIDENCE ONLY
+
+question =
+does Role Library specify exactly why current evidence
+does NOT yet pay X4c,
+and what carrier/successor evidence is missing?
+
+DO NOT promote CIV-005 by analogy.
 
 Expectation provenance remains separate.
 PH remains separate.
 
 M4 = NONE
 M5 = NONE
-
-next =
-bounded carrier-role census
--> recurrence
--> redundancy
--> control prediction
--> Role Library only if earned
 
 calibration:
 RNN = STOP
@@ -835,7 +837,7 @@ canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要再按 P-ECO/P-MAT/P-INFO/P-INST 去“补齐格子”。下一步只审 causal roles 自身：哪些角色跨案例复现、哪些只是同义词、哪些能预先告诉我们要找什么 near-control 或 failure condition。只有这些负担真的成立，才创建 Role Library；否则保持 case-local 并继续简化。不要开 canonical landing。
+不要找新的 beaver / niche-construction 正证据来把 CIV-005 补成 X4c。本轮只用仓库现有 CIV-005 + 已有 niche-construction SourceCard，测试 Role Library 能否把“为什么不够”说得更精确。如果只能把“persistence != inheritance”换词重说，就缩窄 Role Library；如果能明确指出缺哪个 successor、field transmission、role evidence 或 near-control，则记录为第一次 negative productivity PASS。不要开 canonical landing。
 
 ## 9. Stop rule
 
