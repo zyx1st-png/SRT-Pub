@@ -642,7 +642,8 @@ G27 minimal X4c Carrier Role Library v0.1 EARNED
 G28 MAINTENANCE retyped to persistence process
 G29 CIV-005 Role Library negative productivity Pass 1
 G30 ROLE-CANDIDATE / PRE-ADMISSION guard
-G31 positive-record admission-order consistency audit = NEXT
+G31 positive-record admission-order consistency audit = COMPLETE / PASS
+G32 X4c carrier-subprogramme local-closure audit = NEXT
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -726,6 +727,22 @@ carrier-role plausibility
 cannot bootstrap
 X4c relation admission
 
+positive admission-order consistency =
+PASS
+
+positive records =
+ecological inheritance PASS
+CIV-006 STRONG PASS
+IPv4/IPv6 PASS
+precedent PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades =
+NONE
+
+admission order interpretation =
+LOGICAL / EPISTEMIC
+not mandatory artifact chronology
+
 CIV-006 correction =
 modern regulation is E-LEGAL/E-ORG expectation,
 not a secondary inheritance carrier
@@ -788,8 +805,10 @@ Framework revision:
 - ENACTMENT and REPRODUCTION are not admitted to Role Library v0.1;
 - CIV-005 negative/borderline test passed as a negative-productivity test without promoting the case;
 - ROLE-CANDIDATE / PRE-ADMISSION now separates plausible carrier roles from paid X4c carrier roles;
-- relation admission must precede COMPONENT-ROLE-PASS;
-- next = positive-record admission-order consistency audit over existing X4c PASS records only.
+- relation admission must logically precede COMPONENT-ROLE-PASS;
+- same-source co-evidence is allowed when relation-level successor/transmission evidence is independently articulable without the role label;
+- positive-record admission-order consistency = PASS with no downgrades;
+- next = bounded X4c carrier-subprogramme local-closure audit; no new carrier source hunt.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

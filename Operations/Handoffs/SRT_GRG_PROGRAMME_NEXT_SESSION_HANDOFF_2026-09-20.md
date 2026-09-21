@@ -665,20 +665,7 @@ Negative-productivity result:
 PASS
 ~~~
 
-Why:
-
-~~~text
-Role Library identifies the likely carrier role
-without pretending that role plausibility pays relation admission.
-
-Missing burden is upstream:
-successor boundary
-+ field transmission across that boundary
-+ successor enters under F
-+ changed successor possibilities due to inherited F
-~~~
-
-New admission-order guard:
+New guard:
 
 ~~~text
 carrier-role plausibility
@@ -690,34 +677,84 @@ use ROLE-CANDIDATE / PRE-ADMISSION,
 not COMPONENT-ROLE-PASS.
 ~~~
 
-Important source-fidelity guard:
-
-~~~text
-general ecological inheritance evidence
-cannot retroactively pay
-beaver-specific X4c admission by analogy.
-~~~
-
 Owner:
 
 Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
 
+POSITIVE X4C ADMISSION-ORDER CONSISTENCY PASS 1 = COMPLETE:
+
+~~~text
+scope =
+existing positive X4c records only
+
+new sources =
+NO
+
+ecological inheritance =
+PASS
+
+CIV-006 =
+STRONG PASS
+
+IPv4/IPv6 =
+PASS
+
+precedent =
+PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades =
+NONE
+
+carrier-role circular bootstrap =
+NONE
+~~~
+
+Admission-order clarification:
+
+~~~text
+admission order =
+LOGICAL / EPISTEMIC
+
+not:
+mandatory file chronology
+mandatory source separation
+mandatory PR separation
+~~~
+
+Same-source co-evidence is allowed when:
+
+~~~text
+relation-level successor / transmission evidence
+is independently articulable
+without using the role label as its premise.
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. use repository evidence only;
-2. audit existing POSITIVE X4c records for admission order;
-3. cases = ecological inheritance / CIV-006 / IPv4-IPv6 / precedent;
-4. ask whether each case independently paid:
-   - successor boundary,
-   - field transmission across that boundary,
-   - successor enters under inherited F,
-   - changed successor possibilities;
-5. only then verify COMPONENT-ROLE-PASS;
-6. if any case used carrier roles to bootstrap X4c, downgrade / repair it;
-7. no new source hunt in this audit;
-8. preserve expectation provenance and PH separately;
-9. keep M4 as periodic calibration only when target ownership is uncertain.
+1. do NOT add a new carrier source;
+2. run a bounded X4c carrier-subprogramme local-closure audit;
+3. verify whether the line now has enough:
+   - carrier-explicit X4c admission,
+   - carrier architecture with exclusion power,
+   - minimal reusable roles,
+   - persistence-process separation,
+   - negative / borderline productivity,
+   - positive admission-order consistency;
+4. verdict must be one of:
+   CLOSE / REOPEN / HOLD;
+5. CLOSE =
+   freeze carrier vocabulary for current evidence
+   and return mainline attention to broader GRG;
+6. REOPEN only if a concrete unresolved internal contradiction remains;
+7. HOLD only if an explicit external dependency blocks closure;
+8. no source hunt merely to keep the carrier line active;
+9. no M4/M5 promotion;
+10. no canonical edit.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -820,10 +857,10 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
-2) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
-3) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
-4) Operations/GRG/Cases/SRT_GRG_CIV_005_BEAVER_ECOSYSTEM_ENGINEERING_2026-09-21.md
+1) Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+2) Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+3) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+4) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
 6) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
@@ -837,8 +874,11 @@ X3b = M3
 X4b = M3
 X4c = M3
 
-Carrier Architecture = ACTIVE / PRODUCTIVE
-Role Library v0.1 = EARNED
+Carrier Architecture =
+ACTIVE / PRODUCTIVE
+
+Role Library v0.1 =
+EARNED
 
 CORE:
 SUBSTRATE
@@ -857,33 +897,32 @@ NOT ADMITTED BY CURRENT EVIDENCE
 CIV-005 SUBSTRATE =
 ROLE-CANDIDATE / PRE-ADMISSION
 
-new guard =
-carrier-role plausibility
-!=
-X4c relation admission
+positive admission-order consistency =
+PASS
 
-relation admission order =
-candidate F
--> successor boundary
--> field transmission across boundary
--> successor enters under inherited F
--> changed successor possibilities
--> COMPONENT-ROLE-PASS
+positive records:
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
 
-general ecological inheritance
-cannot rescue
-beaver-specific X4c by analogy
+positive downgrades =
+NONE
+
+carrier-role circular bootstrap =
+NONE
+
+admission order =
+LOGICAL / EPISTEMIC
+not mandatory artifact chronology
 
 next =
-positive-record admission-order consistency audit
+bounded X4c carrier-subprogramme local-closure audit
 
-cases =
-ecological inheritance
-CIV-006
-IPv4/IPv6
-precedent
+verdict options =
+CLOSE / REOPEN / HOLD
 
-new sources =
+new carrier sources =
 NO
 
 M4 = NONE
@@ -897,7 +936,7 @@ canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要新增来源。下一步只用仓库现有正例，检查是否存在“先贴 carrier role，再把 role 当成 inheritance 证据”的循环。如果某个正例没有独立支付 successor boundary / field transmission / inherited successor possibility change，就降级或修复该案例，不为保住 X4c M3 而放宽门槛。不要开 canonical landing。
+不要新增来源。下一步只判断 X4c carrier 子程序是否已经在当前证据下足够收敛：若没有具体内部矛盾，就 CLOSE 并冻结当前 carrier vocabulary，把主线注意力还给更广的 GRG；只有存在明确内部矛盾才 REOPEN；只有明确外部依赖阻断才 HOLD。不要为了继续这一条线而找新案例，也不要开 canonical landing。
 
 ## 9. Stop rule
 

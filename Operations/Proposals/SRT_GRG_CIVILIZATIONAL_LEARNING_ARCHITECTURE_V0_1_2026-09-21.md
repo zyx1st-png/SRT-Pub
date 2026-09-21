@@ -553,16 +553,33 @@ cannot bootstrap
 successor-inheritance admission.
 ~~~
 
+Positive-record admission-order consistency audit is COMPLETE.
+
+Result:
+
+~~~text
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades = NONE
+~~~
+
+Clarification:
+
+~~~text
+admission order is logical / epistemic,
+not mandatory artifact chronology.
+~~~
+
 Current next task:
 
 ~~~text
-positive-record admission-order consistency audit
-across existing X4c PASS records.
+bounded X4c carrier-subprogramme local-closure audit
 ~~~
 
-Use repository evidence only.
-
-Ask whether any existing positive record received COMPONENT-ROLE-PASS before independently paying successor boundary, field transmission and changed successor possibilities.
+Ask whether the carrier architecture is now sufficiently constrained for current evidence that vocabulary should be frozen and work should return to broader GRG rather than continue refining inheritance categories.
 
 ## 15. Canonical and political guard
 

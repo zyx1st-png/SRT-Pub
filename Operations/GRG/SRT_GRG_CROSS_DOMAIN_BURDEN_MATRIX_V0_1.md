@@ -209,6 +209,21 @@ Role Library owner:
 
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
+Positive admission-order consistency owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+
+Result:
+
+~~~text
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED
+
+positive downgrades = NONE
+~~~
+
 ## 5. Framework use
 
 The matrix should be used to ask:

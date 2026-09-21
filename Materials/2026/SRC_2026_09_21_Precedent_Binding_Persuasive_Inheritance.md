@@ -15,7 +15,7 @@ epistemic_layer: os
 claim_mode: evidence
 canonical: false
 type: material_source_card
-tags: [GRG, X4c, PINST, Precedent, StareDecisis, Binding, Persuasive]
+tags: [GRG, X4c, PINST, PINFO, Precedent, StareDecisis, Binding, Persuasive, CarrierArchitecture]
 ---
 
 # SourceCard — binding versus persuasive precedent
@@ -116,38 +116,42 @@ Later judges did not make the original adjudication.
 
 The inherited relation can nevertheless affect what they must follow, distinguish, or seek to overrule.
 
-## 7. Carrier provenance result
+## 7. Carrier architecture result
 
 The frozen target asked whether P-INST can independently carry X4c.
 
-Result:
+Current result after carrier-architecture / role-census writeback:
 
 ~~~text
-P-INST as causal component = STRONG PASS
-P-INST as standalone total carrier = NOT ESTABLISHED
-~~~
+cardinality = MULTI-COMPONENT
 
-Reason:
-
-The inherited field requires at least:
-
-~~~text
 P-INFO:
-content of the prior holding / legal rule
+role = PAYLOAD / inherited holding or legal-rule content
+status = COMPONENT-ROLE-PASS
 
 P-INST:
-institutional authority relation
-that makes the prior holding binding for the successor court
+role = AUTHORITY / binding-force selector
+status = COMPONENT-ROLE-PASS
+
+minimal paid role set =
+PAYLOAD + AUTHORITY
+
+architecture sufficiency =
+PASS
 ~~~
 
-Best current typing:
+Single-component P-INST and P-INFO architectures are NOT ESTABLISHED for this case.
+
+The inherited field requires both:
 
 ~~~text
-P-MIXED[
-  P-INFO role = inherited legal-rule / holding content,
-  P-INST role = binding authority / hierarchy / jurisdiction relation
-]
+content that is inherited
++
+institutional authority relation
+that changes mandatory force for the successor court.
 ~~~
+
+Historical `P-MIXED` wording is retired as an inheritance provenance kind.
 
 ## 8. Causal-role near-control
 
@@ -213,3 +217,11 @@ This SourceCard concerns legal/institutional topology only.
 ## 12. Integration target
 
 Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
+
+Current carrier-schema owner:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
+Admission-order consistency owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
