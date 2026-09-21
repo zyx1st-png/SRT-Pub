@@ -484,14 +484,22 @@ New mainline surfaces:
 
 ## 6. Mainline work order
 
+Author foundational re-prioritization now places the Atlas downstream of the SRT -> GRG bridge.
+
 ~~~text
-1. use the burden matrix to compare heterogeneous domains without mechanism erasure;
-2. use the expectation ledger to expose position / horizon conflicts;
-3. add rows only from source-native records with admission / evidence status;
-4. seek grammar revision or exclusion, not case count;
-5. continue underdeveloped domain re-entry;
-6. use future M4 attempts selectively as calibration, not as the sole queue;
+1. pressure the SRT -> GRG foundational bridge;
+2. pressure the GRG minimal architecture;
+3. retype G0-G11;
+4. retype current relation records and library entries as
+   horizontal / vertical / interface / composite / proxy;
+5. then use the burden matrix and expectation ledger
+   to revise Atlas organization;
+6. add new rows only when they pressure the architecture,
+   not to increase case count;
+7. use future M4 attempts selectively as later calibration.
 ~~~
+
+The existing burden matrix and expectation ledger remain active assets; they are not deleted by this reordering.
 
 ## 7. Calibration queue
 
