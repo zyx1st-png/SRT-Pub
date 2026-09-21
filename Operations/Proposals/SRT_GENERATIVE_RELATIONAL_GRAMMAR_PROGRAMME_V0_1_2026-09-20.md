@@ -626,6 +626,8 @@ G11 second prospectively frozen M4 attempt: road-capacity induced demand -> ABSO
 G12 framework-adequacy audit after repeated M4 absorption
 G13 Cross-Domain Burden Matrix v0.1
 G14 Generative Expectation Ledger v0.1
+G15 Position / Horizon Conflict Ledger v0.1
+G16 X6 relation candidate RETYPED -> PH cross-cutting analysis burden
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -676,6 +678,12 @@ Framework adequacy after two absorptions:
 Mainline comparison surfaces:
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+- Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+Framework revision:
+- X6 multi-position consequence divergence is NOT retained as a GRG relation;
+- PH is a cross-cutting position/horizon indexing burden with no M-status;
+- actual directional conflict must be evidence-paid case by case.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
