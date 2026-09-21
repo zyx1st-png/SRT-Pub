@@ -528,7 +528,30 @@ OR continuously regenerated in the current coupled process.
 
 The minimum causal burden is not historical storage; it is maintained generative organization that participates in later transition dynamics.
 
-Phase E.7 — NEXT: HKB source/protocol-access feasibility audit only. Close-read the full perturbation method where accessible, reconstruct exact variables/intervention/relaxation metrics, check data access, and freeze failure conditions. New data collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
+Phase E.7 — HKB source/protocol-access feasibility audit: COMPLETE.
+
+Result:
+
+~~~text
+source close-read = PASS
+protocol reconstruction = PASS
+GRG variable typing = PASS
+analysis-validity guard = PASS / revised by 2020 normalization reanalysis
+public raw trajectory access = NO-GO / NOT LOCATED
+historical author-held data route = PLAUSIBLE / EVIDENCED
+current authorized raw-data route = NOT ESTABLISHED
+~~~
+
+New programme guard:
+
+~~~text
+candidate maintained O
+must survive its measurement / normalization interface.
+~~~
+
+For HKB, half-cycle / component-aware phase normalization is required for any future raw-data execution; performed amplitude, frequency and oscillation-centre shift remain explicit component variables.
+
+Phase E.8 — NEXT: existing-data access route only. A bounded request package is prepared in `Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`. Do not inspect raw outcomes before a new analysis charter. New human collection, simulation-as-confirmation and R1d/O4 remain unauthorized.
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
