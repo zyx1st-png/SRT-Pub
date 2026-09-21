@@ -353,6 +353,19 @@ M4 = prospective transfer gain:
 M3 != M4 != scientific distinctiveness.
 ~~~
 
+M4 efficiency rule:
+
+~~~text
+M4-E0 absorption-before-execution:
+after a target/design is prospectively frozen,
+audit mature target-domain practice before executing.
+
+If ordinary practice already owns the same distinction/control
+and no independent replication rationale exists:
+-> M4 = NO / ABSORBED
+-> stop before duplicate execution.
+~~~
+
 No relation progresses merely because several domains use similar words.
 
 ### 9.1 First civilizational pressure-test revision
@@ -839,15 +852,34 @@ Completed:
 8. live Relation Library v0.1;
 9. first negative-control + invariance pass.
 
+First M4 attempt:
+
+~~~text
+M4-01 X3b -> tool-using AI-agent authorization
+= ABSORBED / M4 NO
+
+frozen distinction:
+policy / instruction
+!=
+capability / authorization enforcement
+
+target field already owns:
+least privilege / scoped permissions / sandboxing /
+downstream authorization / approval boundaries.
+
+repository AI work already contains a near-equivalent matched connector-write gate control.
+
+duplicate execution = NOT WARRANTED.
+~~~
+
 Current next:
 
 ~~~text
-first legitimate M4 attempt:
-freeze relation + target domain before decisive source/outcome inspection
--> write target-domain question / variable / control / failure expectation
--> compare with ordinary target-domain practice
--> execute source-test / bounded evidence check
--> ABSORBED / NULL / transfer gain all remain valid outcomes.
+M4-02:
+choose a different relation or substantially different target;
+freeze target/design before target-source audit;
+apply M4-E0 first;
+execute only if not absorbed.
 
 Do not increase M-status by adding more M3 examples.
 ~~~
