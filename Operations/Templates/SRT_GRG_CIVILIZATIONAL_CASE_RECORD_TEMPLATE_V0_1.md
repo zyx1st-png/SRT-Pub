@@ -156,17 +156,70 @@ not COMPONENT-ROLE-PASS.
 
 ## I. Generative expectation
 
+Live owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+### I.1 Source / provenance
+
 ~~~text
-expectation provenance = E-MAT / E-TECH / E-LEGAL / E-ORG / E-NORM / E-BIO / E-MODEL / E-MIXED
-encoded / structural expectation =
-what future continuation it tries to stabilize =
-what would count as expectation failure =
-multiple expectation layers present? =
+source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
+or explicit multi-layer list
+
+B-STRUCTURAL status =
+PASS / PRE-ADMISSION / FAIL / OPEN
+
+structural generative expectation =
+mismatch / failure condition =
 ~~~
 
-Do not equate expectation with moral rightness.
+### I.2 Locus / mode
+
+~~~text
+C0-ENACTED =
+PASS / CANDIDATE / NOT ESTABLISHED / NOT REQUIRED
+
+C1-MODEL =
+PASS / CANDIDATE / NOT ESTABLISHED / NOT REQUIRED
+
+OBS-MODEL =
+PASS / PRESENT / ABSENT / NOT RELEVANT
+
+formed locus, if claimed =
+evidence anticipation participates in present organization =
+~~~
+
+Do not infer C1 from the presence of an analyst model.
+
+### I.3 Evaluative index
+
+~~~text
+evaluative relation / declared objective =
+position / locus =
+scale / grain =
+horizon =
+comparison dimension =
+actual trajectory / alternative =
+indexed-comparison status =
+PASS / OPEN / NOT ADMITTED
+~~~
 
 ## J. Normativity interface
+
+Guard:
+
+~~~text
+stable / binding / persistent / successful
+!=
+morally legitimate.
+
+relation-reproductive strength
+!=
+participant-level good.
+~~~
+
+
 
 ~~~text
 indexed position(s) =
