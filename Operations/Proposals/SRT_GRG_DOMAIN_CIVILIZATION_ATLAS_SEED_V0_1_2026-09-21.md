@@ -596,12 +596,12 @@ X4c = PASS / remains M3
 
 P-INFO alone = NOT ESTABLISHED
 
-best carrier typing:
-P-MIXED[
-  P-INFO protocol/address semantics,
-  P-MAT/TECH installed hosts/routers/infrastructure,
-  P-INST standards/operational practice
-]
+carrier architecture:
+MULTI-COMPONENT
+
+P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
+P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
+P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
 ~~~
 
 Source-native near-control:
@@ -644,18 +644,22 @@ Carrier result:
 ~~~text
 X4c = PASS / remains M3
 
-P-INST causal component role = PASS
-P-INST standalone total carrier = NOT ESTABLISHED
+carrier architecture:
+MULTI-COMPONENT
 
-best carrier architecture:
+P-INFO:
+role = PAYLOAD / prior holding or legal-rule content
+status = COMPONENT-ROLE-PASS
 
-P-MIXED[
-  P-INFO:
-    role = PAYLOAD / prior holding or legal-rule content
+P-INST:
+role = AUTHORITY / binding-force selector
+status = COMPONENT-ROLE-PASS
 
-  P-INST:
-    role = AUTHORITY / binding-force selector
-]
+minimal paid role set =
+PAYLOAD + AUTHORITY
+
+architecture sufficiency =
+PASS
 ~~~
 
 Near-controls:
@@ -668,14 +672,15 @@ controlling precedent vs case of first impression
 Framework revision:
 
 ~~~text
-inheritance provenance
--> compositional carrier architecture
+simple provenance labels
+-> causal-role-first carrier architecture
 
 component
-+ provenance kind
++ provenance metadata
 + causal role
 + role evidence / near-control
-+ standalone sufficiency status
++ component status
++ architecture sufficiency
 ~~~
 
 Owner:
@@ -685,6 +690,37 @@ Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
 Carrier architecture owner:
 
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
+## 5.10 Carrier Architecture Adequacy Pass 1
+
+Owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Result:
+
+~~~text
+CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
+PROVENANCE-KIND-FIRST MODEL = NARROW
+CAUSAL-ROLE-FIRST MODEL = ACTIVE
+P-MIXED AS PROVENANCE KIND = RETIRED
+~~~
+
+Corrections produced:
+
+- CIV-006: modern regulation removed from inheritance carrier; retained under expectation provenance;
+- IPv4/IPv6: institutional maintenance role downgraded to PRESENT / ROLE-OPEN;
+- precedent: P-INST AUTHORITY role retained under direct near-control pressure.
+
+Next:
+
+~~~text
+bounded role census
+-> test recurrence
+-> test redundancy
+-> test control prediction
+-> create Role Library only if earned
+~~~
 
 ## 6. Mainline work order
 
@@ -696,14 +732,17 @@ Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 5. seek grammar revision or exclusion, not case count;
 6. first long-duration historical / infrastructure case = COMPLETE through CIV-006;
 7. IPv4/IPv6 installed-base carrier stress = COMPLETE;
-8. P-INFO standalone remains OPEN; P-MIXED must list components;
+8. IPv4/IPv6 carrier-role correction = COMPLETE;
 9. P-INST precedent stress = COMPLETE;
-10. standalone P-INST and P-INFO both remain OPEN;
-11. use compositional carrier architecture rather than filling standalone provenance categories;
-12. next test = audit existing X4c cases under component+role schema and ask whether it improves exclusion / predicts near-controls;
-13. require carrier-role + expectation provenance in new records;
-14. continue underdeveloped domain re-entry;
-15. use future M4 attempts selectively as calibration, not as the sole queue;
+10. Carrier Architecture Adequacy Pass 1 = COMPLETE / PRODUCTIVE;
+11. provenance-kind-first model = NARROW;
+12. causal-role-first model = ACTIVE;
+13. historical P-MIXED provenance kind = RETIRED;
+14. next = bounded carrier-role census across existing X4c records;
+15. create Role Library only if roles recur and predict controls / failure conditions;
+16. require carrier-role + expectation provenance in new records;
+17. continue underdeveloped domain re-entry;
+18. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
