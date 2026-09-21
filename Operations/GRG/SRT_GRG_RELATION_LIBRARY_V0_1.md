@@ -11,7 +11,7 @@ canonical: false
 ai_do_not_use_for_definition: true
 dependency:
   - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-  - Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
+  - Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md
   - Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
 tags: [GRG, RelationLibrary, BurdenLibrary, Admission, NegativeControls, Revision]
 ---
@@ -98,12 +98,14 @@ R1c != R1d
 
 decodable marker != causal organization
 history-classifiable structure != causal re-entry
+L2-facing / objectified trace != vertical generative organization
+tested trace NULL != vertical efficacy NULL
 ~~~
 
 Evidence state:
 
 - RNN decoder candidate: marker found, R1c not paid;
-- RNN spectral candidate: R1a PASS, R1c NULL in two O3 executions;
+- RNN spectral candidate: R1a PASS, tested spectral R1c mapping NULL in two O3 executions; the tested L2-facing/objectified trace is not identified with vertical generative organization, so no whole-vertical causal verdict follows;
 - Bowler: source-native positive R1b/R1c pressure;
 - HKB: R1b/R1c candidate, raw reanalysis pending.
 
@@ -558,3 +560,63 @@ Do not award M4 for absorption.
 This library is noncanonical.
 
 No entry here rewrites Selection, L0, One/Bearer, canonical normativity, scientific Level or distinctiveness.
+
+
+## 10. Foundational proto-grammar overlay — 2026-09-21
+
+Primary first-version architecture owner:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Author construction source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+The Relation Library remains a candidate / provenance / calibration surface.
+
+It is not the foundational owner.
+
+Current architecture-role overlay:
+
+~~~text
+R1a = PROXY / TRACE
+R1b = V-H INTERFACE / formation-maintenance candidate
+R1c = R-HIST-a vertical-core candidate
+R1d = EXPECTATION / VALIDATION maturity burden
+
+X3a = HORIZONTAL public expectation objectification
+X3b = COMPOSITE V-H interface
+
+X4a = R-RECON-a candidate
+X4b = R-RECON-a + R-RECON-b + recursive re-entry
+X4c = R-RECON + R-HIST inheritance composite
+
+PH = cross-cutting Position / Horizon Consequence Index
+     not a generative relation by default
+~~~
+
+The current proto-grammar separates:
+
+~~~text
+relation type
+!= architecture role
+!= analysis dimension
+!= proxy / trace
+!= implementation / carrier provenance
+!= M0-M5 maturity
+~~~
+
+Latest X4c pressure is preserved:
+
+~~~text
+X4c = M3
+inheritance carrier must be identified
+P-INFO alone = NOT ESTABLISHED in IPv4 -> IPv6 stress
+P-MIXED must be decomposed
+~~~
+
+The former X6 relation candidate remains retyped as PH and is not restored to the relation queue.
+
+Formation and maintenance remain cross-cutting burdens in v0.1.
+
+No new relation family should be added by default before whole-architecture author review.
