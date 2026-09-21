@@ -50,6 +50,33 @@ Core success conditions:
 
 Retrospective renaming alone is failure.
 
+### 0.0.1 Current foundational route — post-#1022
+
+Current author-adjudicated foundation:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md`
+
+Current process-first owner:
+
+`Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md`
+
+Primary new-record schema:
+
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Current mainline is GTS-first broader GRG framework construction. The X4c carrier subprogramme is locally closed and is not the next case-hunt queue.
+
+~~~text
+objects = cuts
+relations = cuts
+GTS = primary record unit
+
+GRG scientific-gain target =
+cross-objectification invariance
++ retained constraints
++ prospective discrimination
+~~~
+
 ### 0.1 Mainline correction — 2026-09-21
 
 The author has clarified the programme priority:
@@ -79,7 +106,11 @@ Domain/civilization atlas seed:
 
 `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
 
-Relation-record schema:
+Primary new-record schema:
+
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Legacy Relation Record schema:
 
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
