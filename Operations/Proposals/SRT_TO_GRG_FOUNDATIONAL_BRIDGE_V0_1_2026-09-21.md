@@ -114,6 +114,8 @@ Its defining feature is not weakness or stasis.
 
 Its defining feature is that the relevant object space is sufficiently stabilized to function as the research floor.
 
+The horizontal / vertical status is therefore indexed to the research question and objectification. The same entity or process can be treated horizontally in one study and become part of a vertical formation question in another. Horizontal and vertical are research orientations toward generative depth, not permanent labels attached to things.
+
 Therefore:
 
 ~~~text
@@ -152,6 +154,8 @@ generative conditions / relations
 ~~~
 
 Vertical research seeks recurring generative dependencies across multiple objectifications rather than only laws inside one object space.
+
+Its characteristic expectation target is therefore not merely the next state inside a fixed state space, but possible change in the generative conditions, reachable relation structure, or object / option field itself.
 
 ## 4. Vertical != deeper object layer
 
@@ -411,6 +415,17 @@ unless an independent bridge is paid.
 This correction does not reopen the stopped RNN spectral experiment family by parameter tuning.
 
 It changes the theoretical interpretation of what that family could and could not test.
+
+Equally, the correction does not license a hidden-vertical rescue:
+
+~~~text
+tested proxy failed
+-> unspecified deeper vertical cause therefore exists
+~~~
+
+is also invalid.
+
+A future empirical claim about vertical efficacy must identify a new realization / observation / perturbation bridge rather than inherit standing from the failure of the old proxy.
 
 ## 13. From grammar to generative expectation
 
