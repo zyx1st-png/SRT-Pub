@@ -389,6 +389,21 @@ Negative owner:
 
 Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
 
+Positive consistency owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+
+Interpretation:
+
+~~~text
+admission order is LOGICAL / EPISTEMIC,
+not mandatory artifact chronology.
+
+same source may support relation + role
+if relation-level successor / transmission evidence
+remains independently articulable without the role label.
+~~~
+
 If one component is enough after admission:
 
 ~~~text
@@ -568,13 +583,25 @@ ROLE-CANDIDATE / PRE-ADMISSION = ADDED
 X4c CIV-005 = NOT ADMITTED BY CURRENT EVIDENCE
 ~~~
 
+Positive-record consistency audit is COMPLETE:
+
+~~~text
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades = NONE
+circular bootstrap = NONE
+~~~
+
 Next gate:
 
-> Did any existing positive X4c record award carrier-role PASS before independently paying successor-boundary / field-transmission evidence?
+> Has the X4c carrier subprogramme reached a local closure point?
 
-Run a bounded consistency audit over existing positive X4c records only.
+Run a bounded local-closure audit.
 
-No new source hunt.
+Do not add new carrier cases or reopen provenance categories merely to extend the line.
 
 ## 13. Canonical boundary
 
