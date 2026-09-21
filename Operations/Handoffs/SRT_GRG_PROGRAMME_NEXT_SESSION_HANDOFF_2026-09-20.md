@@ -617,3 +617,73 @@ scientific distinctiveness = NOT ESTABLISHED
 Stop before any canonical edit or broad new deep well.
 
 This handoff authorizes continuation of the noncanonical GRG research package only.
+
+
+## Foundational retyping update — 2026-09-21
+
+~~~text
+G0-G11 foundational retyping Pass 1 = COMPLETE
+G0-G11 retyping red-team Pass 1 = COMPLETE
+Relation Library foundational retyping Pass 1 = COMPLETE
+Relation Record template v0.2 = ACTIVE
+~~~
+
+Key role map:
+
+~~~text
+UPSTREAM:
+C0 non-exhaustion
+C1 differential manifestation / relative backgrounding
+
+VERTICAL CORE CANDIDATES:
+R-HIST
+R-LOC
+R-POS [dependency OPEN]
+R-RECON
+
+COMPOSITION:
+C-MULTI
+C-XSC
+
+DOWNSTREAM:
+E-B
+E-C0
+E-C1
+N-INDEX
+
+META:
+L-REFLEX-W
+L-REFLEX-M
+
+OPEN:
+R-FORM independent family?
+maintenance independent family?
+~~~
+
+Relation Library retyping:
+
+~~~text
+R1a = proxy / trace
+R1b = V-H interface / formation-maintenance candidate
+R1c = R-HIST-a vertical core
+R1d = validation / expectation maturity
+
+X3a = horizontal public expectation objectification
+X3b = composite V-H interface
+
+X4a = R-RECON vertical core
+X4b = R-RECON + recursive re-entry
+X4c = R-RECON + R-HIST inheritance composite
+~~~
+
+CURRENT STOP / AUTHOR GATE:
+
+Do not harden the minimal architecture until the author adjudicates:
+1. R-FORM independent family vs cross-cutting burden;
+2. R-POS minimal core vs downstream of R-LOC;
+3. R-HIST-a / b named subtype status;
+4. R-RECON field-change vs realized-later-effect threshold;
+5. whether v0.x "grammar" means a revisable typed relation system or requires stronger closed composition syntax.
+
+No canonical edit.
+No new serial M4 attempt before this gate.
