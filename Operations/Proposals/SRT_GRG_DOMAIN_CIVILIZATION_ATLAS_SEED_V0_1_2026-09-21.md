@@ -575,8 +575,11 @@ Programme refinement:
 X4c now requires an inheritance carrier + successor cohort +
 changed later possibility structure.
 
-Inheritance provenance:
-P-MAT / P-ECO / P-INST / P-INFO / P-MIXED.
+Inheritance provenance metadata:
+P-MAT / P-ECO / P-INST / P-INFO.
+
+Historical P-MIXED inheritance kind is retired;
+multi-component architecture is represented directly.
 
 Expectation provenance:
 E-MAT / E-TECH / E-LEGAL / E-ORG /
