@@ -74,6 +74,22 @@ constructor action
 
 The modified environment can outlast the individual constructor.
 
+## 3.1 Theoretical-status guard
+
+The broader status of niche construction as a distinct evolutionary process is contested within evolutionary theory.
+
+GRG does not adjudicate that debate here.
+
+This SourceCard uses the source-native causal decomposition as pressure:
+
+~~~text
+environment modification
+-> altered selection pressures
+-> possible ecological inheritance / evolutionary response
+~~~
+
+without assuming that niche-construction theory has exclusive explanatory ownership over evolution.
+
 ## 4. Pressure on GRG X4
 
 The current broad X4 candidate:
