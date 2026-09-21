@@ -30,6 +30,10 @@ source-native name =
 source / dataset / case =
 record status = candidate / active / narrowed / split / retired
 mapping status = M0 / M1 / M2 / M3 / M4 / M5
+M3 independent-match basis =
+M4 pre-result transfer basis =
+target selected before decisive source/outcome inspection? =
+target-domain ordinary-practice comparator =
 ~~~
 
 ## B. Source-native account
@@ -159,6 +163,18 @@ what result would count as failure =
 ~~~
 
 Retrospective renaming is not transfer.
+
+~~~text
+M3 recurrence != M4 transfer gain.
+
+M3 may be earned by an independently evidenced source-native match
+after the relation was frozen.
+
+M4 requires prospective target-domain gain:
+a new variable / control / distinction / failure expectation
+specified before decisive target-source/outcome inspection,
+and not already supplied by ordinary target-domain practice.
+~~~
 
 ## L. Provenance
 

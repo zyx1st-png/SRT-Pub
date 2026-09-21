@@ -620,6 +620,7 @@ G5 backfill relation records from completed work
 G6 first cross-domain / civilizational schema pressure tests
 G7 mature-source pressure + burden splitting
 G8 Relation Library v0.1 + negative controls + invariance Pass 1
+G9 first M3 / M4 cross-domain transfer-absorption Pass 1
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -628,9 +629,20 @@ Current Phase G result:
 
 ~~~text
 Relation Library owner = ESTABLISHED
-X3b = M2 / provisional cross-domain invariance PASS / distinctiveness OPEN
-X4b = M2 / DOMAIN-LIMITED / cross-domain invariance NOT ESTABLISHED
-M3 = NONE
+
+X3b = M3
+Kubernetes independent match = PASS
+M4 = NO / absorbed
+
+X4b = M3
+generic label = recursive reconstructed-field feedback
+Performative Prediction non-biological match = PASS
+DOMAIN-LIMITED = LIFTED
+M4 = NO / absorbed
+
+M4 = NONE
+M5 = NONE
+scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

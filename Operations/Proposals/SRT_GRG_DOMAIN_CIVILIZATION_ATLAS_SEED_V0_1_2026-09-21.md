@@ -248,7 +248,7 @@ Current split after niche-construction pressure:
 
 ~~~text
 X4a reconstructed environmental / option condition
-X4b recursive selective / viability feedback
+X4b recursive reconstructed-field feedback
 X4c inherited reconstructed condition
 ~~~
 
@@ -366,33 +366,63 @@ environmental reconstruction can be well evidenced while selection/viability fee
 -> X4a passes; X4b fails under that record alone.
 ~~~
 
-Invariance result:
+Invariance result — HISTORICAL PRE-M3 CHECKPOINT; live M-status is superseded by §5.4:
 
 ~~~text
-X3b = M2 / provisional semantic-invariance PASS
+X3b = M2 / provisional semantic-invariance PASS [historical pre-transfer]
        across technical + legal + local-institutional cases
        distinctiveness OPEN / substitutability pressure HIGH
 
-X4b = M2 / DOMAIN-LIMITED
+X4b = M2 / DOMAIN-LIMITED [historical pre-transfer]
        biological selective-feedback invariance PASS
        genuine cross-domain invariance NOT ESTABLISHED
 
-M3 promotions = NONE
+M3 promotions at this historical checkpoint = NONE
 ~~~
 
 Owner:
 
 Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
 
+## 5.4 First M3 / M4 transfer-absorption pass
+
+~~~text
+TR-X3B-01 Kubernetes NetworkPolicy:
+X3a policy object != X3b enforcement
+M3 = PASS
+M4 = NO / absorbed by target-domain practice
+
+TR-X4B-01 Performative Prediction:
+deployed predictor -> changed future distribution -> changed later learning/risk conditions
+M3 = PASS
+DOMAIN-LIMITED = LIFTED
+M4 = NO / absorbed by target-domain practice
+~~~
+
+Library consequence:
+
+~~~text
+X3b = M3
+X4b = M3
+M4 = NONE
+M5 = NONE
+~~~
+
+This is not a novelty result.
+
+Owner:
+`Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md`
+
 ## 6. Mainline work order
 
 ~~~text
-1. do not add supportive cases by default;
-2. X3b: seek pre-result transfer outside obvious institutional/rule cases;
-3. X4b: seek a genuinely non-biological candidate with the same burden;
-4. if X4b requires semantic stretching, keep it DOMAIN-LIMITED;
-5. continue domain atlas material re-entry for D-EPI / D-NEUR / D-AI / D-SOC;
-6. grow Relation Library only with admission + negative-control discipline;
+1. do not add M3 examples by default;
+2. select one bounded first-M4 target prospectively;
+3. freeze relation + target domain before decisive target-source/outcome inspection;
+4. write GRG-generated target question / variable / control / failure expectation in advance;
+5. compare against ordinary target-domain practice;
+6. record ABSORBED if the field already owns the same distinction;
+7. continue Atlas material re-entry without conflating coverage with maturity;
 ~~~
 
 ## 7. Calibration queue
@@ -414,7 +444,7 @@ It should show:
 - at least 8 source-native relation records;
 - at least 4 distinct domain families;
 - at least 3 civilizational case records; [PAID in seed Pass 1]
-- at least 2 candidate cross-domain relations that survive a false-convergence audit;
+- at least 2 candidate cross-domain relations that survive a false-convergence audit; [PAID: X3b / X4b reached M3]
 - at least 1 candidate relation narrowed or rejected by evidence.
 
 That would demonstrate learning rather than collection.

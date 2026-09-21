@@ -55,6 +55,23 @@ M5 repeatedly cross-domain constrained grammar candidate
 
 No M-level is an ontology Level.
 
+M3 / M4 separation is load-bearing:
+
+~~~text
+M3:
+a relation already frozen under source-native admission rules
+is independently evidenced in another domain without semantic drift.
+M3 does NOT require GRG novelty in that target domain.
+
+M4:
+before decisive target outcome/source inspection,
+GRG generates a useful target-domain variable, control,
+distinction or failure expectation that ordinary target-domain practice
+did not already supply in the same form.
+
+M3 != M4 != scientific distinctiveness.
+~~~
+
 ## 2. RL-R1 — retained-organization re-entry family
 
 Status:
@@ -152,7 +169,8 @@ Positive pressure:
 
 - Internet standards: P-TECH candidate;
 - Montreal Protocol: P-LEGAL/P-ORG/P-MIXED candidate;
-- Nepal irrigation: P-ORG/P-NORM/P-MIXED source pressure.
+- Nepal irrigation: P-ORG/P-NORM/P-MIXED source pressure;
+- Kubernetes NetworkPolicy: P-TECH independent source-native match.
 
 Negative control:
 
@@ -168,10 +186,16 @@ formal structure may be decoupled from ongoing activity.
 Current maturity:
 
 ~~~text
-M2
-cross-domain semantic invariance = under audit
+M3 = PASS
+cross-domain semantic invariance = PASS
+Kubernetes target-domain absorption = COMPLETE
+M4 = NO / ABSORBED
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
+
+M3 owner:
+
+Operations/GRG/Transfers/SRT_GRG_TR_X3B_01_KUBERNETES_NETWORKPOLICY_2026-09-21.md
 
 ## 4. RL-X4 — reconstructed condition / recursive feedback / inheritance
 
@@ -207,22 +231,36 @@ Maturity:
 M2 routing burden
 ~~~
 
-### X4b — recursive selective / viability feedback
+### X4b — recursive reconstructed-field feedback
+
+Previous biological-facing label:
+
+~~~text
+recursive selective / viability feedback
+~~~
+
+is retained as a biological specialization, not the generic relation name.
 
 Admission requires:
 
 ~~~text
-X4a-like reconstructed condition
+current activity A
+-> reconstructs a typed conditioning field F
 +
-evidence that the reconstructed condition changes specified
-selection / viability / accessibility / transition pressures
-on later organisms / agents / positions.
+F changes specified later selection / viability / accessibility /
+distribution / transition conditions on process P
++
+the A -> F -> later-P mediation is source-native and evidenced.
 ~~~
+
+"Field" here is a typed programme placeholder for the source-native
+environment / distribution / institutional condition. It is not a new ontology entity.
 
 Positive pressure:
 
-- AMR;
-- niche-construction source-native biology.
+- AMR: biological selective-environment feedback;
+- niche-construction source-native biology;
+- Performative Prediction: non-biological model-induced distribution feedback.
 
 Negative control:
 
@@ -233,14 +271,24 @@ Core guard:
 ~~~text
 long-term effect != recursive feedback
 environment modification != altered selection pressure automatically
+exogenous distribution drift != performative feedback automatically
+generic feedback != X4b unless the mediated field F is identified
 ~~~
 
 Current maturity:
 
 ~~~text
-M2 / DOMAIN-LIMITED PRESSURE
-cross-domain value beyond evolutionary / biological neighborhood = NOT YET PAID
+M3 = PASS
+cross-domain semantic invariance = PASS
+DOMAIN-LIMITED = LIFTED
+Performative Prediction target-domain absorption = COMPLETE
+M4 = NO / ABSORBED
+scientific distinctiveness = NOT ESTABLISHED
 ~~~
+
+M3 owner:
+
+Operations/GRG/Transfers/SRT_GRG_TR_X4B_01_PERFORMATIVE_PREDICTION_2026-09-21.md
 
 ### X4c — inherited reconstructed condition
 
@@ -310,21 +358,31 @@ larger-scale success != participant-level good
 
 ## 8. Current next gate
 
+First M3 pass:
+
 ~~~text
-X3b:
-cross-domain invariance + substitutability audit
-using technical / legal / local-institutional cases
-plus formal-decoupling negative control.
-
-X4b:
-cross-domain invariance audit
-must determine whether current support remains essentially
-a niche-construction / evolutionary-selection neighborhood.
-
-M3:
-NO promotion until pre-result cross-domain transfer
-or independently constrained match is paid.
+X3b = M3
+X4b = M3
+M4 = NONE
+M5 = NONE
 ~~~
+
+Next programme gate:
+
+~~~text
+first legitimate M4 attempt
+~~~
+
+Requirements:
+
+1. freeze relation + target domain before decisive target-source/outcome inspection;
+2. write target-domain question / variable / control / failure expectation in advance;
+3. compare against ordinary target-domain practice;
+4. if the field already owns the same distinction, record ABSORBED / M4 NO;
+5. if GRG changes the design, execute or source-test without semantic drift;
+6. preserve null / absorption results.
+
+Do not seek more M3 examples merely to increase case count.
 
 ## 9. Canonical boundary
 
