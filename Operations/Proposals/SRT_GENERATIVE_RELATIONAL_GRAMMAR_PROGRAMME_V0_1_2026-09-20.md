@@ -631,6 +631,8 @@ G16 X6 relation candidate RETYPED -> PH cross-cutting analysis burden
 G17 CIV-006 long-duration combined-sewer inheritance case
 G18 X4c carrier-explicit revision + M3 promotion
 G19 expectation-provenance typing
+G20 IPv4 -> IPv6 installed-base carrier stress
+G21 P-INFO-alone NOT ESTABLISHED / P-MIXED decomposition rule
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -652,8 +654,11 @@ M4 = NO / absorbed
 
 X4c = M3
 ecological inheritance + combined-sewer material inheritance
++ IPv4/IPv6 installed-base inheritance
 cross-domain semantic invariance = PASS
 carrier-explicit admission = ACTIVE
+P-INFO standalone = OPEN / NOT ESTABLISHED
+IPv4/IPv6 provenance = decomposed P-MIXED
 M4 = NOT TESTED
 
 M4 = NONE
@@ -695,7 +700,10 @@ Framework revision:
 - actual directional conflict must be evidence-paid case by case;
 - X4c inheritance is carrier-explicit: carrier + successor cohort + changed later possibilities;
 - inheritance provenance is typed separately from relation identity;
-- generative-expectation provenance is now explicit and must not collapse material / legal / technical / normative sources.
+- generative-expectation provenance is now explicit and must not collapse material / legal / technical / normative sources;
+- P-MIXED inheritance provenance must expose its components rather than acting as a catch-all;
+- greenfield vs inherited installed-base is now a reusable X4c near-control;
+- X3b current interoperability and X4c successor inheritance are explicitly non-identical.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
