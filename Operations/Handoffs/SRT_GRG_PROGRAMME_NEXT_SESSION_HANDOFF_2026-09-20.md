@@ -357,16 +357,57 @@ M3 != M4 != scientific distinctiveness
 Audit:
 Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
 
+M4-01 = COMPLETE / ABSORBED:
+
+~~~text
+relation = X3b
+target = tool-using AI / LLM agent authorization
+charter frozen before dedicated target source audit = YES
+
+frozen distinction:
+instruction-level policy
+!=
+capability / authorization-level enforcement
+
+target-domain result:
+OWASP / current agent-security practice already owns
+least privilege, scoped permissions, downstream authorization,
+sandboxing and approval boundaries.
+
+repository result:
+2026-08-04 AI GitHub negative-control audit already owns
+read/write capability separation and a near-equivalent matched
+connector write-gate control.
+
+verdict = M4 NO / ABSORBED
+duplicate experiment = STOP
+M4 = NONE
+~~~
+
+Method revision:
+
+~~~text
+M4-E0 absorption-before-execution:
+freeze target/design
+-> audit mature target practice
+-> if already owned and no independent replication reason:
+   M4 NO / ABSORBED
+   stop before duplicate execution.
+~~~
+
+Reusable template:
+Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md
+
 MAINLINE NEXT:
 
 ~~~text
-first legitimate bounded M4 attempt:
-1. freeze relation + target domain before decisive target-source/outcome inspection;
-2. freeze target-domain question / variable / control / expected failure;
-3. compare with ordinary target-domain practice;
-4. if same distinction already exists -> ABSORBED / M4 NO;
-5. if GRG changes the design -> execute/source-test without semantic drift;
-6. preserve ABSORBED / NULL / positive transfer equally.
+M4-02:
+1. choose a different relation or substantially different target domain;
+2. freeze relation + target + question/control/failure expectation;
+3. commit charter before decisive target-source inspection;
+4. apply M4-E0 first;
+5. execute only if not absorbed;
+6. preserve absorption/null as valid framework learning.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -470,43 +511,42 @@ Use:
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
 1) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-2) Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
-3) Operations/GRG/Transfers/SRT_GRG_TR_X3B_01_KUBERNETES_NETWORKPOLICY_2026-09-21.md
-4) Operations/GRG/Transfers/SRT_GRG_TR_X4B_01_PERFORMATIVE_PREDICTION_2026-09-21.md
-5) Materials/2026/SRC_2026_09_21_Kubernetes_NetworkPolicy_Enforcement.md
-6) Materials/2026/SRC_2026_09_21_Performative_Prediction_Distribution_Feedback.md
+2) Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md
+3) Operations/Proposals/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_CHARTER_2026-09-21.md
+4) Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
+5) Materials/2026/SRC_2026_09_21_AI_Agent_Least_Privilege_Enforcement.md
+6) Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
 7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-8) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
-9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+8) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
 ~~~text
 GRG Relation Library = ACTIVE
 
-X3a = M2
 X3b = M3
-X3b M4 = NO / absorbed by Kubernetes domain practice
-
-X4a = M2
 X4b = M3
-X4b generic label = recursive reconstructed-field feedback
-X4b DOMAIN-LIMITED = LIFTED
-X4b M4 = NO / absorbed by Performative Prediction
-X4c = M1/M2 source-dependent
-
-M3 != M4
 M4 = NONE
 M5 = NONE
 
-next =
-first prospectively frozen bounded M4 attempt
+M4-01:
+X3b -> AI-agent authorization
+charter freeze = PASS
+target-domain pre-ownership = STRONG
+repository pre-ownership = STRONG
+verdict = ABSORBED / M4 NO
+execution = STOP
 
-requirements:
-relation + target domain + target question/control/failure expectation
-must be frozen before decisive target-source/outcome inspection;
-ordinary target-domain practice must be checked;
-ABSORBED is a valid result.
+M4-E0 = ACTIVE:
+freeze -> target-practice audit -> absorbed means stop
+unless independent replication rationale exists.
+
+next =
+M4-02
+different relation or substantially different target domain
+-> freeze before target-source audit
+-> apply M4-E0
+-> execute only if not absorbed
 
 calibration:
 RNN = STOP
@@ -517,7 +557,7 @@ new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要继续用更多 M3 案例堆成熟度。下一轮目标是测试 GRG 是否真的能在一个事前冻结的新领域产生 M4；如果目标领域早就有同一问题/控制，必须记 ABSORBED 而不是制造 novelty。不要开 canonical landing。
+不要重做 M4-01 的 AI agent permission 实验。它已被成熟目标实践和仓库旧 AI 对照双重吸收。下一轮必须先冻结 M4-02 再查目标资料；ABSORBED 仍是成功的方法学结果。不要开 canonical landing。
 
 ## 9. Stop rule
 
