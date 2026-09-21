@@ -118,6 +118,47 @@ M machine synthesis / research proposal
 
 No machine synthesis becomes author authority merely because it appears in this file.
 
+### 2.1 Evidence-generative provenance
+
+Source provenance is not sufficient for GRG validation.
+
+Every load-bearing GTS should also track how its evidence came to exist relative to target selection, hypothesis freeze and intervention:
+
+~~~text
+source provenance
+!= evidence-generative provenance
+!= expectation provenance
+!= inheritance-carrier provenance
+~~~
+
+Operational evidence-generation roles:
+
+~~~text
+DISCOVERY
+CAUSAL-BRIDGE
+CONSTRUCTION
+ORDER-ADMISSION
+GRAMMAR-VALIDATION
+~~~
+
+These are audit roles, not ontology classes and not M-statuses.
+
+Core guards:
+
+~~~text
+successful construction != independent discovery
+post-intervention conformity != independent confirmation
+order admission != grammar validation
+same-source co-evidence != independent replication
+unobserved counterfactual generation != validation
+~~~
+
+A constructive intervention may pay constructibility, W-P realization, local order formation or consequence-audit burden while paying zero independent grammar-validation credit.
+
+Current owner:
+
+`Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_PASS1_2026-09-21.md`
+
 ## 3. SRT / GRG / domain science
 
 Keep distinct:
@@ -514,11 +555,19 @@ Prospective discrimination may be:
 - an objectification-change prediction;
 - a bounded intervention question.
 
-XG5 is paid only if the prospectively frozen distinction survives the existing M4-E0 absorption gate:
+XG5 is paid only if the prospectively frozen distinction survives both evidence-generative provenance and the existing M4-E0 absorption gate:
 
 ~~~text
-mature target-domain practice / strongest reasonable horizontal comparator
-already owns materially the same distinction
+frozen target + frozen discriminator
++ world-side result after freeze
++ no result-guided target repair
++ no construction-as-independent-validation double count
++ M4-E0 NOT ABSORBED
+~~~
+
+If mature target-domain practice / the strongest reasonable horizontal comparator already owns materially the same distinction:
+
+~~~text
 -> ABSORBED / prospective GRG gain = NO
 unless an independent replication rationale is separately declared.
 ~~~
@@ -1062,10 +1111,11 @@ GTS-003 CIV-006 X4c
 
 Next bounded work:
 
-1. independently review GTS reconciliation Pass 1;
-2. if retained, freeze one X4c prospective cross-objectification discrimination charter;
-3. run M4-E0 target-domain mature-practice / strongest-horizontal audit;
-4. execute only if the charter survives absorption.
+1. independently review GTS reconciliation Pass 1 together with evidence-generative provenance Pass 1;
+2. if retained, freeze one X4c prospective cross-objectification discrimination charter plus its evidence-generation route;
+3. freeze what counts as perturbation / construction / order realization / grammar validation and the counterfactual realization status;
+4. run M4-E0 target-domain mature-practice / strongest-horizontal audit;
+5. execute only if the charter survives absorption.
 
 ## 28. Verdict
 
