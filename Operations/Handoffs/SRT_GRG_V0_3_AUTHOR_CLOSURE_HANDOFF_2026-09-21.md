@@ -270,10 +270,10 @@ Projected-order route:
 
 ~~~text
 PROJECTED GENERATIVE ORDER / projected E_G
-= M / AUTHOR DECISION PENDING
+= AUTHOR-ADJUDICATED / A1
 ~~~
 
-It is a proposed W-P pre-realization path and is not an admitted Generative Order.
+It is the author-adjudicated W-P pre-realization path and is not an admitted Generative Order.
 
 Review-fix owner:
 
