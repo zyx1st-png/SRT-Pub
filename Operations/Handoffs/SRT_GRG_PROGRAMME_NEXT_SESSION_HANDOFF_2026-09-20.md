@@ -553,66 +553,101 @@ Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
 PRECEDENT / P-INST CARRIER STRESS = COMPLETE:
 
 ~~~text
-freeze before dedicated legal-source inspection = PASS
-
-X4c precedent topology:
-prior adjudication
--> precedential legal field
--> successor court
--> later option / justification burden conditioned
-
 X4c = PASS / remains M3
 
-binding vs persuasive authority:
-P-INST causal component role = PASS
+binding vs persuasive authority
+isolates:
+P-INST / AUTHORITY = COMPONENT-ROLE-PASS
 
-P-INST standalone total carrier = NOT ESTABLISHED
+precedent carrier =
+MULTI-COMPONENT
+P-INFO / PAYLOAD
++
+P-INST / AUTHORITY
 
-best carrier =
-P-MIXED[
-  P-INFO role = PAYLOAD / prior holding content,
-  P-INST role = AUTHORITY / binding-force selector
-]
-
-near-controls:
-binding vs persuasive
-controlling precedent vs case of first impression
-~~~
-
-Framework revision:
-
-~~~text
-provenance labels
-->
-compositional carrier architecture
-
-component
-+ provenance kind
-+ causal role
-+ role evidence / near-control
-+ standalone sufficiency status
-
-component-role PASS != standalone-carrier PASS
+architecture sufficiency = PASS
 ~~~
 
 Owner:
 
 Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
 
-Carrier architecture:
+CARRIER ARCHITECTURE ADEQUACY PASS 1 = COMPLETE:
+
+~~~text
+CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
+
+PROVENANCE-KIND-FIRST MODEL = NARROW
+
+CAUSAL-ROLE-FIRST MODEL = ACTIVE
+
+historical P-MIXED provenance kind = RETIRED
+~~~
+
+Live carrier record:
+
+~~~text
+component
++ provenance metadata
++ causal role
++ role evidence / near-control
++ component status
+
+architecture cardinality =
+SINGLE-COMPONENT / MULTI-COMPONENT
+
+minimal paid role set =
+architecture sufficiency =
+PASS / OPEN / FAIL
+~~~
+
+Corrections earned:
+
+~~~text
+CIV-006:
+modern regulation = E-LEGAL/E-ORG expectation
+NOT secondary inheritance carrier.
+
+IPv4/IPv6:
+P-INST proposed maintenance role
+= PRESENT / ROLE-OPEN,
+not COMPONENT-ROLE-PASS.
+
+precedent:
+P-INST / AUTHORITY
+= COMPONENT-ROLE-PASS.
+~~~
+
+Reusable near-controls:
+
+~~~text
+greenfield vs installed-base
+binding vs persuasive authority
+controlling precedent vs case of first impression
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Carrier architecture owner:
 
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 
 MAINLINE NEXT:
 
 ~~~text
-1. do NOT hunt another provenance category immediately;
-2. re-audit existing X4c cases using component+role schema;
-3. test whether carrier architecture blocks false admissions
-   or predicts required near-controls better than simple provenance tags;
-4. retire / merge provenance kinds that do not earn distinct roles;
-5. preserve expectation provenance and PH as separate surfaces;
-6. keep M4 as periodic calibration only when target ownership is uncertain.
+1. do NOT add a new inheritance case yet;
+2. run a bounded carrier-role census across existing X4c cases;
+3. count which roles recur at least twice;
+4. identify role pairs that are synonyms / redundant;
+5. ask whether each retained role predicts a near-control,
+   exclusion or failure condition;
+6. create a reusable Role Library only if recurrence and
+   discriminative value are paid;
+7. otherwise keep roles local and simplify;
+8. preserve expectation provenance and PH as separate surfaces;
+9. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -715,14 +750,14 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
-2) Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
-3) Operations/GRG/Cases/SRT_GRG_CIV_007_PRECEDENT_INSTITUTIONAL_INHERITANCE_2026-09-21.md
-4) Materials/2026/SRC_2026_09_21_Precedent_Binding_Persuasive_Inheritance.md
-5) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
-6) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
-7) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-8) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+1) Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+2) Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+3) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+4) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+5) Operations/GRG/Cases/SRT_GRG_CIV_006_COMBINED_SEWER_LEGACY_2026-09-21.md
+6) Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+7) Operations/GRG/Cases/SRT_GRG_CIV_007_PRECEDENT_INSTITUTIONAL_INHERITANCE_2026-09-21.md
+8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
@@ -732,53 +767,58 @@ X3b = M3
 X4b = M3
 X4c = M3
 
-Inheritance Carrier Architecture = ACTIVE
+Inheritance Carrier Architecture = ACTIVE / PRODUCTIVE
+
+carrier analysis =
+CAUSAL-ROLE-FIRST
+
+provenance metadata =
+P-ECO / P-MAT / P-INFO / P-INST
+
+historical P-MIXED provenance kind =
+RETIRED
 
 carrier record =
 component
-+ provenance kind
++ provenance metadata
 + causal role
 + role evidence / near-control
-+ standalone sufficiency status
++ component status
++ architecture sufficiency
 
-current standalone state:
-P-ECO = PASS
-P-MAT = PASS
-P-INFO = OPEN / NOT ESTABLISHED
-P-INST = OPEN / NOT ESTABLISHED
+current paid examples:
 
-component roles:
-P-INFO PAYLOAD = PASS in mixed cases
-P-INST AUTHORITY = PASS in precedent case
+ecological inheritance:
+SUBSTRATE / MAINTENANCE
 
-IPv4/IPv6 =
-P-MIXED decomposed carrier
+CIV-006:
+SUBSTRATE / MAINTENANCE / INTERFACE
 
-precedent =
-P-MIXED[
-  P-INFO PAYLOAD,
-  P-INST AUTHORITY
-]
+IPv4/IPv6:
+PAYLOAD
++ SUBSTRATE / ENACTMENT / INTERFACE
+P-INST proposed maintenance role = ROLE-OPEN
 
-component-role PASS
-!=
-standalone-carrier PASS
+precedent:
+PAYLOAD + AUTHORITY
 
-X3b current operative rule
-!=
-X4c inherited successor field
+near-controls:
+greenfield vs installed-base
+binding vs persuasive
+controlling precedent vs first impression
 
 Expectation provenance remains separate.
-PH remains cross-cutting.
+PH remains separate.
 
 M4 = NONE
 M5 = NONE
 
 next =
-carrier-architecture adequacy audit
-across existing X4c cases
--> does component-role decomposition improve exclusion / near-control selection?
--> merge/retire provenance kinds if not.
+bounded carrier-role census
+-> recurrence
+-> redundancy
+-> control prediction
+-> Role Library only if earned
 
 calibration:
 RNN = STOP
@@ -788,7 +828,7 @@ canonical edit = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要再为了填满 P-ECO/P-MAT/P-INST/P-INFO 四格去找例子。下一步先检验 carrier architecture 本身是否有生产力：它是否比简单标签更能拒绝假 X4c、指定 near-control、解释同一案例中不同组件的作用。若不能，就简化 provenance；若能，再决定是否继续扩展。Expectation provenance、PH 和 carrier architecture 三者保持分离。不要开 canonical landing。
+不要再按 P-ECO/P-MAT/P-INFO/P-INST 去“补齐格子”。下一步只审 causal roles 自身：哪些角色跨案例复现、哪些只是同义词、哪些能预先告诉我们要找什么 near-control 或 failure condition。只有这些负担真的成立，才创建 Role Library；否则保持 case-local 并继续简化。不要开 canonical landing。
 
 ## 9. Stop rule
 
