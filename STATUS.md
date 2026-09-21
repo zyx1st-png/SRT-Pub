@@ -778,11 +778,15 @@ Bearer admission threshold + Bearer <-> position stability
 10. HKB = calibration workstream; source/protocol PASS, raw-data access pending;
 11. first HKB data request has been sent to Harjo de Poel; any received raw outcomes remain unopened until a new charter;
 12. HKB waiting state does NOT block GRG framework work;
-13. next framework work = backfill more relation records + seed civilizational case records + false-convergence audit;
-14. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-15. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-16. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-17. do not restart winner-style strongest-neighbor novelty audit.
+13. first civilizational schema pass = COMPLETE: CIV-001 Internet standards, CIV-002 AMR, CIV-003 Montreal Protocol;
+14. false-convergence Pass 1 = COMPLETE: one-relation compression rejected; X3 and X4 remain separate M2 candidates;
+15. framework revision earned: expectation embodiment/enforcement provenance + position/horizon consequence split are now required;
+16. next framework work = source-pressure X3/X4 against mature field theories + add one non-technical social/institutional case and one ecological/biological case;
+17. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+18. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+19. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+20. do not restart winner-style strongest-neighbor novelty audit;
+
 ~~~
 
 ## Historical navigation

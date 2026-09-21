@@ -337,6 +337,48 @@ These are programme routing labels, not ontology Levels.
 
 No relation progresses merely because several domains use similar words.
 
+### 9.1 First civilizational pressure-test revision
+
+The first three case records (Internet standards, antimicrobial resistance, Montreal Protocol) produced a productive false-convergence result:
+
+~~~text
+one-relation compression = FAIL
+~~~
+
+Two methodological fields are now required in civilizational / cross-domain comparison.
+
+#### Expectation embodiment / enforcement provenance
+
+When an expectation is externalized, state how it becomes causally operative.
+
+Working routing labels:
+
+~~~text
+P-TECH  technical interface / compatibility
+P-LEGAL legal / treaty obligation
+P-MKT   market / price / contract incentive
+P-ORG   organizational procedure / hierarchy
+P-NORM  social norm / reputational enforcement
+P-INFRA material / infrastructural constraint
+P-MIXED mixed provenance
+~~~
+
+These are not equivalent mechanisms.
+
+#### Position / horizon consequence split
+
+When effects cross positions or timescales, state separately:
+
+- immediate beneficiary;
+- delayed affected position;
+- local versus distributed consequence;
+- time horizon;
+- externalized cost;
+- reversibility of future option loss.
+
+Owner:
+`Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`.
+
 ## 10. Generative expectation layer
 
 A GRG relation may carry a structural expectation about its continuation or transformation.
