@@ -74,10 +74,16 @@ The installed field is irreducibly instantiated across:
 - operational configuration;
 - standards / deployment practice.
 
-Current best provenance:
+Current carrier architecture:
 
 ~~~text
-P-MIXED
+cardinality = MULTI-COMPONENT
+
+P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
+P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
+P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+
+architecture sufficiency = PASS
 ~~~
 
 ## 3. Why this is not a failure of X4c
@@ -153,21 +159,34 @@ Current status:
 standalone P-INFO realization = OPEN
 ~~~
 
-## 6. P-MIXED refinement
+## 6. Carrier-architecture refinement
 
-P-MIXED should declare its components rather than act as a catch-all.
+Historical `P-MIXED` language is superseded by explicit multi-component architecture.
 
 For this case:
 
 ~~~text
-P-MIXED[
-  P-INFO protocol/address semantics,
-  P-MAT/TECH deployed hosts/routers/infrastructure,
-  P-INST operational standards/practice
-]
+c1:
+P-INFO
+role = PAYLOAD
+status = COMPONENT-ROLE-PASS
+
+c2:
+P-MAT
+role = SUBSTRATE / ENACTMENT / INTERFACE
+status = COMPONENT-ROLE-PASS
+
+c3:
+P-INST
+proposed role = MAINTENANCE / operational coordination
+status = PRESENT / ROLE-OPEN
 ~~~
 
-Future records should list components.
+The current RFC package does not isolate the institutional component strongly enough to award COMPONENT-ROLE-PASS.
+
+This correction is owned by:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 
 ## 7. Expectation provenance
 
@@ -191,7 +210,7 @@ The case produces a narrowing rather than a new relation:
 
 1. X4c survives.
 2. P-INFO standalone does not.
-3. P-MIXED must be decomposed.
+3. multi-component carrier architecture must be decomposed by component + role.
 4. X3b/X4c non-identity becomes operationally clearer.
 5. greenfield vs inherited-field becomes a reusable X4c negative-control pattern.
 
