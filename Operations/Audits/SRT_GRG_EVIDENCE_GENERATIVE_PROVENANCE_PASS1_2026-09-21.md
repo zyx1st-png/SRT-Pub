@@ -82,7 +82,13 @@ ORDER-ADMISSION
 = evidence is used to pay GO1-GO5 for a bounded Generative Order.
 
 GRAMMAR-VALIDATION
-= evidence bears on whether a frozen GTS discrimination survives a genuinely held-out / prospectively constrained target.
+= evidence bears on whether a GTS survives beyond the case used to formulate it.
+
+mode = STRUCTURAL
+when independently grounded source-native realizations support recurrence without being constructed to fit the GTS.
+
+mode = PROSPECTIVE
+when a frozen GTS discrimination survives a genuinely held-out / prospectively constrained target.
 ~~~
 
 One evidence item may play more than one role, but the same observation must not be counted twice as if the roles were independent.
@@ -229,6 +235,18 @@ Does not automatically support:
 - moral legitimacy.
 
 ### 6.5 Grammar validation
+
+Keep two credit modes distinct:
+
+~~~text
+STRUCTURAL validation
+= independently grounded recurrence / roughly XG1-XG4 / M3-side
+
+PROSPECTIVE validation
+= frozen held-out discrimination / XG5 + M4-E0 resistance / M4-side
+~~~
+
+Structural validation must not be narrated as prospective validation.
 
 For positive prospective credit, require at minimum:
 
