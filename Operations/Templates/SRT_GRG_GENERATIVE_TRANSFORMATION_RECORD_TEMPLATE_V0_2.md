@@ -18,7 +18,7 @@ tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 
 # GRG Generative Transformation Record — Template v0.2
 
-> Primary new-record schema for process-first GRG.
+> Primary new-record schema for process-first GRG. Historical GTS v0.1 existed only in closed, unmerged PR #1018.
 >
 > Relation-family labels are legacy / analytical views, not the primary record unit.
 
@@ -337,9 +337,42 @@ a persistent state
 an existing hierarchy
 ~~~
 
+### L.1 Projected order — provisional / M only
+
+Use only for W-P design before a proposed order exists world-side.
+
+~~~text
+projected order id =
+
+PGO1 evidenced dependencies / conflicts grounding the proposal =
+
+PGO2 pre-intervention P_G consequences =
+
+PGO3 scope =
+  position =
+  scale =
+  horizon =
+
+PGO4 frozen failure / consequence-audit charter =
+
+PGO5 realization gate =
+  what later evidence would pay GO1 formation / operation?
+  what later evidence would pay GO3 generative efficacy?
+
+projected-order status =
+  CANDIDATE / PARTIAL / OPEN / FAIL
+~~~
+
+Guard:
+
+~~~text
+projected order != admitted Generative Order
+projected E_G != ordinary admitted-order E_G
+~~~
+
 ## M. Generative Expectation — E_G
 
-Fill separately for each admitted order where needed.
+Fill separately for each admitted order where needed. For a projected order, use the separate projected-E_G fields below and do not report ordinary E_G.
 
 ~~~text
 transformation =
@@ -372,6 +405,30 @@ E_G != complete moral legitimacy
 ~~~
 
 Conflicting classifications across admitted orders are allowed and should be reported.
+
+Projected-order path — provisional / M:
+
+~~~text
+projected order id =
+
+projected E_G / E_G^proj classification =
+  preserve /
+  strengthen /
+  extend /
+  reorganize /
+  substitute /
+  weaken /
+  hollow /
+  destroy /
+  OPEN
+
+basis = P_G + projected structural proposal
+
+promotion condition =
+  GO1 + GO3 later paid in world-side evidence
+~~~
+
+Do not use projected E_G as if the proposed order were already admitted.
 
 ## N. Wholeward relation
 
@@ -422,10 +479,21 @@ negative controls preserved across realizations =
 
 prospective target / held-out realization =
 
+target-domain mature-practice comparator =
+
+strongest reasonable horizontal comparator =
+
 pre-result discrimination generated =
 
+M4-E0 absorption check =
+  NOT ABSORBED / ABSORBED / OPEN
+
+if ABSORBED, what mature target-domain practice already owns the distinction? =
+
+independent replication rationale, if any =
+
 cross-objectification gain verdict =
-  PASS / PARTIAL / NO / OPEN
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN
 ~~~
 
 Required for PASS:
@@ -435,7 +503,11 @@ independent grounding
 + invariance under mechanism change
 + retained admission / exclusion / failure constraints
 + no flattening
-+ prospective discrimination
+= STRUCTURAL-PASS / roughly M3-side burden
+
+prospective discrimination
++ M4-E0 NOT ABSORBED
+= PROSPECTIVE-PASS / roughly M4-side gain burden
 ~~~
 
 Cross-objectification compression may be described separately but is not required to have a numeric metric yet.
