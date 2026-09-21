@@ -10,6 +10,9 @@ claim_mode: research_programme
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+  - Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
@@ -36,6 +39,40 @@ It is not:
 Its job is to make the author's GRG direction operational:
 
 > preserve source-native knowledge, extract candidate generative relations, compare them across domains without erasing mechanism, use evidence and failure to revise the grammar, and extend the same architecture to social and civilizational learning.
+
+## 0.1 Foundational re-prioritization — 2026-09-21
+
+The author has clarified that the present GRG mainline must return one step upstream.
+
+The active question is no longer "which M4 transfer should run next?" but:
+
+> What is the minimal bridge from the reconstructed SRT generative ontology direction to GRG before domain-derived relation inventories and transfer metrics are allowed to define the programme?
+
+Current routing:
+
+~~~text
+SRT -> GRG foundational bridge
+-> minimal GRG architecture
+-> G0-G11 retyping
+-> Relation Library retyping
+-> revised domain / civilization interface
+-> later transfer / grammar learning
+~~~
+
+Horizontal research is now explicitly treated as objectification-stabilized research of transformations, laws and generative predictions among admitted objects. Vertical research takes the generation, stabilization and reconstruction of those objects / boundaries / state spaces as the primary target and seeks recurring generative relations across objectifications.
+
+Horizontal / vertical status is indexed to the research question and objectification; it is not an intrinsic label attached permanently to an entity.
+
+The RNN decoder / spectral NULL is correspondingly bounded to the tested L2-facing / objectified trace. It does not establish absence of vertical causal efficacy, and it does not license an unspecified hidden-vertical rescue.
+
+M4-02 is paused as programme mainline. Existing M3/M4 work remains a later calibration / transfer discipline.
+
+Foundational owners:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+- Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
+- Operations/Audits/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_INTERNAL_RED_TEAM_PASS1_2026-09-21.md
 
 ## 1. Framework identity
 
@@ -875,12 +912,14 @@ duplicate execution = NOT WARRANTED.
 Current next:
 
 ~~~text
-M4-02:
-choose a different relation or substantially different target;
-freeze target/design before target-source audit;
-apply M4-E0 first;
-execute only if not absorbed.
+1. complete SRT -> GRG foundational bridge;
+2. pressure GRG Minimal Architecture v0.1;
+3. retype G0-G11 against the minimal architecture;
+4. retype the current Relation Library as horizontal / vertical / interface relations;
+5. revise programme / Atlas routing from that result;
+6. only then select a later M4 / transfer target if still warranted.
 
+M4-02 = HOLD AS MAINLINE.
 Do not increase M-status by adding more M3 examples.
 ~~~
 
