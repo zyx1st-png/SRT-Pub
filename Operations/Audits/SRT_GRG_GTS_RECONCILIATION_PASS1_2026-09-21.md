@@ -285,8 +285,8 @@ because this fixes an error introduced in the earlier GTS draft,
 not a deficiency of RR-001.
 
 cost =
-222 lines vs roughly 157-190 lines for the legacy record scale;
-more verbose than RR-001
+231 lines vs 158 lines for RR-001;
+more verbose than the legacy RNN record
 
 verdict =
 USEFUL BOUNDED MIGRATION / TRADE-OFF
@@ -313,7 +313,7 @@ because the legacy source never claimed such verticality.
 E_G = NOT OPENED
 
 cost =
-238 lines vs roughly 157-190 lines for the legacy record scale;
+239 lines vs 191 lines for TR-X3B-01;
 some source-native distinction is repeated in more fields
 
 verdict =
@@ -342,8 +342,9 @@ E_G = NOT OPENED
 generic greenfield discriminator = ABSORBED BY BASELINE
 
 cost =
-320 lines vs roughly 157-190 lines for the legacy record scale;
-multiple modules are irrelevant to this case
+321 lines vs 329 lines for the CIV-006 case file itself;
+line count is similar to the case record, but GTS-003 does not replace the surrounding X4c admission/carrier audits,
+so total governance surface remains larger than one bounded file
 
 verdict =
 USEFUL BOUNDED MIGRATION / TRADE-OFF
@@ -379,12 +380,16 @@ leaner historical and family-specific evidence surfaces
 that should remain authoritative for their original results.
 
 current template cost =
-approximately 966 lines versus 275 lines for the archived Relation Record template
-at the time of this review.
+1027 lines versus 276 lines for the archived Relation Record template.
+
+The new minimal skeleton reduces required-use burden,
+but the full template file itself remains materially larger.
 
 current migrated record cost =
-approximately 222-320 lines versus roughly 157-190 lines
-for the compared legacy records.
+GTS-001 231 vs RR-001 158 lines;
+GTS-002 239 vs TR-X3B-01 191 lines;
+GTS-003 321 vs CIV-006 case 329 lines,
+while GTS-003 still depends on surrounding X4c audit / carrier provenance.
 
 bulk migration =
 NO.
