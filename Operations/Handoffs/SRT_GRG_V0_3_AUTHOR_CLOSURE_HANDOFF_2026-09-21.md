@@ -243,6 +243,42 @@ universal GRG = NOT ESTABLISHED
 formal mature grammar = NOT ESTABLISHED
 ~~~
 
+## 10.1 PR #1023 review fix state
+
+Independent review of #1023 restored the existing M4-E0 absorption gate and narrowed the remaining theory open.
+
+~~~text
+cross-objectification gain test = XG1-XG5
+
+XG5 requires:
+prospective discrimination
++ M4-E0 NOT ABSORBED
+
+target-domain mature-practice comparator = REQUIRED
+strongest reasonable horizontal comparator = REQUIRED
+~~~
+
+RNN overlay is synchronized:
+
+~~~text
+selected trace = objectified measurement slice of an L2 / history aspect
+trace-bounded R1c NULL != vertical generative efficacy NULL
+proxy failure != deeper-cause proof
+~~~
+
+Projected-order route:
+
+~~~text
+PROJECTED GENERATIVE ORDER / projected E_G
+= M / AUTHOR DECISION PENDING
+~~~
+
+It is a proposed W-P pre-realization path and is not an admitted Generative Order.
+
+Review-fix owner:
+
+Operations/Audits/SRT_GRG_PR1023_INDEPENDENT_REVIEW_FIX_PASS1_2026-09-21.md
+
 ## 11. Next gate
 
 ~~~text
