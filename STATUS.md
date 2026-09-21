@@ -800,12 +800,19 @@ Bearer admission threshold + Bearer <-> position stability
 32. framework-adequacy audit after repeated absorption = COMPLETE: M4 remains strict target-domain transfer criterion but is not the sole GRG framework adequacy axis;
 33. Cross-Domain Burden Matrix v0.1 = ACTIVE at Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md;
 34. Generative Expectation Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md;
-35. next framework work = harden matrix + expectation ledger + position/horizon civilizational comparisons; periodic M4 only when target ownership is genuinely uncertain;
-36. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-37. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-38. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-39. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-40. do not restart winner-style strongest-neighbor novelty audit;
+35. Position / Horizon Conflict Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md;
+36. X6 multi-position consequence divergence = RETYPED / REMOVED FROM RELATION QUEUE; PH is a cross-cutting analysis burden with NO M-status;
+37. PH guard = position/horizon sensitivity != evidenced directional conflict; conflict must be source-paid case by case;
+38. current strongest PH divergence = AMR immediate patient benefit vs long-horizon population treatment-effectiveness erosion;
+39. road-capacity record pays temporal adaptation divergence but NOT a sourced cross-position distributive conflict in the current package;
+40. Nepal irrigation pays position sensitivity through tail-end water measurement but NOT an established upstream/downstream directional conflict;
+41. next framework work = pressure first long-duration historical/infrastructure case with burden matrix + expectation ledger + PH together, seeking exclusion/revision rather than a new relation by default;
+42. periodic M4 only when target ownership is genuinely uncertain;
+43. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+44. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+45. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+46. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+47. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
