@@ -833,6 +833,86 @@ Bearer admission threshold + Bearer <-> position stability
 
 ~~~
 
+
+## GRG v0.2 author-aligned foundational review package — 2026-09-21
+
+Current noncanonical review branch:
+
+`theory/srt-grg-v0-2-author-aligned-20260921`
+
+Latest-main baseline at branch creation:
+
+`e0113fe9282c0025b9d5216236c9d3c8e273f52b` — Merge PR #1017: causal-role-first X4c carrier architecture.
+
+This package supersedes PR #1016 as the active whole-architecture review surface after author dialogue. PR #1016 remains historical review provenance.
+
+Primary routing:
+
+1. Author alignment source:
+   `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_GRG_FOUNDATIONAL_ALIGNMENT_2026-09-21.md`
+2. Whole architecture owner:
+   `Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_2_2026-09-21.md`
+3. Primary record template:
+   `Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_1.md`
+4. Review-to-revision audit:
+   `Operations/Audits/SRT_GRG_PR1016_WHOLE_REVIEW_ALIGNMENT_PASS1_2026-09-21.md`
+5. Next-session handoff:
+   `Operations/Handoffs/SRT_GRG_V0_2_AUTHOR_ALIGNED_HANDOFF_2026-09-21.md`
+
+Current foundational direction:
+
+~~~text
+objects = cuts
+relations = also cuts
+primary target = continuous generation
+
+Generation
+-> Objectification / Relation Cuts
+-> Generative Transformation Signatures
+-> Generative Prediction + Generative Expectation
+-> Intervention / Selection
+-> Consequence
+-> cross-position / scale / history exposure
+-> reflexive grammar revision
+~~~
+
+Current programme guards:
+
+~~~text
+relation library = analytical / routing surface, not ontological skeleton
+R-POS = provisional downstream V-H interface
+R-HIST / R-LOC / R-RECON = provisional analytical cuts
+P_G != E_G
+E_G != forecast
+no pregiven final order O*
+wholeward learning = cross-position / scale / history / domain + consequence exposure
+formal mature grammar = NOT ESTABLISHED
+scientific distinctiveness = NOT ESTABLISHED
+canonical edit = NO
+new Level = NO
+serial M4 search = HOLD
+GRG-as-AGI expansion = HOLD
+~~~
+
+Latest inherited carrier state remains:
+
+~~~text
+X4c = M3
+carrier architecture = causal-role-first
+P-MIXED provenance kind = RETIRED
+M4 = NONE
+M5 = NONE
+~~~
+
+Next gate:
+
+~~~text
+independent content review of GRG v0.2
+-> author correction if needed
+-> reconcile Relation Library into GTS views
+-> bounded prospective test only after architecture survives review
+~~~
+
 ## Historical navigation
 
 Pre-#931 snapshot:
