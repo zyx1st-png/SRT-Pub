@@ -807,7 +807,7 @@ Bearer admission threshold + Bearer <-> position stability
 39. CIV-006 source-native topology = historical reconstruction -> persistent/maintained material carrier -> successor cohort inherits field -> later operation/compliance/retrofit possibilities are conditioned;
 40. X4c inherited reconstructed condition = M3 PASS; ecological P-ECO + infrastructure P-MAT cross-domain semantic invariance;
 41. X4c carrier-explicit admission = ACTIVE: inheritance requires carrier + successor cohort + changed later possibility structure; persistence/age/sunk cost alone do not pay it;
-42. inheritance provenance = P-MAT / P-ECO / P-INST / P-INFO / P-MIXED; provenance != relation identity;
+42. inheritance provenance metadata = P-MAT / P-ECO / P-INST / P-INFO; historical P-MIXED inheritance kind is retired; provenance metadata != relation identity;
 43. IPv4 -> IPv6 installed-base stress = COMPLETE; X4c PASS / remains M3;
 44. precedent / stare-decisis carrier stress = COMPLETE; X4c PASS / remains M3;
 45. Inheritance Carrier Architecture v0.1 = ACTIVE at Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md;
