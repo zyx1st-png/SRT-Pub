@@ -498,8 +498,10 @@ X4c = M3 PASS
 X4c revised admission:
 carrier + successor cohort + changed later possibility structure
 
-inheritance provenance:
-P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+inheritance provenance metadata:
+P-MAT / P-ECO / P-INST / P-INFO
+
+historical P-MIXED inheritance kind = RETIRED
 
 PH:
 horizon divergence = EVIDENCED
@@ -529,14 +531,19 @@ prior IPv4 deployment
 
 X4c = PASS / remains M3
 
-P-INFO alone = NOT ESTABLISHED
+carrier architecture =
+MULTI-COMPONENT
 
-best provenance =
-P-MIXED[
-  P-INFO protocol/address semantics,
-  P-MAT/TECH hosts/routers/infrastructure,
-  P-INST standards/operational practice
-]
+P-INFO / PAYLOAD
+= COMPONENT-ROLE-PASS
+
+P-MAT / SUBSTRATE+ENACTMENT+INTERFACE
+= COMPONENT-ROLE-PASS
+
+P-INST proposed MAINTENANCE role
+= PRESENT / ROLE-OPEN
+
+architecture sufficiency = PASS
 
 greenfield vs existing-installed-base
 = source-native X4c near-control
