@@ -1046,13 +1046,40 @@ claim global moral ordering
 expand to AGI architecture
 ~~~
 
+Completed gates:
+
+1. v0.3 independent content review = COMPLETE;
+2. GTS-first routing = COMPLETE;
+3. first selected Relation Library -> GTS bounded migration = COMPLETE / TRADE-OFF;
+4. #1025 Evidence Generative Provenance first bounded use = COMPLETE / PRODUCTIVE.
+
+First migrated records:
+
+~~~text
+GTS-001 RNN adverse calibration
+GTS-002 Kubernetes X3b
+GTS-003 CIV-006 X4c
+~~~
+
+Important real-use corrections:
+
+~~~text
+GTS dominance over legacy = NOT ESTABLISHED
+E_G in GTS-002 / GTS-003 = NOT OPENED after analytic-inflation review
+greenfield-vs-installed-base = absorbed by ordinary path-dependence baseline
+prospective family selection = OPEN
+~~~
+
 Next bounded work:
 
-1. independent content review of v0.3;
-2. reconcile programme/framework/template routing to GTS-first;
-3. convert selected mature Relation Library entries into GTS views without deleting provenance;
-4. define one prospective cross-objectification discrimination charter;
-5. only then execute a bounded test.
+1. independent content review of the post-#1025 reconciliation package;
+2. if retained, run a prospective-family selection audit across at least:
+   X3b non-explicit target,
+   X4c beyond generic path dependence,
+   evidence-provenance constraint-vs-suppression route;
+3. strongest-neighbor + M4-E0 audit before any target freeze;
+4. choose at most one route;
+5. only then freeze a prospective charter.
 
 ## 28. Verdict
 
