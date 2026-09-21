@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 / PROSPECTIVE-FAMILY AUDIT COMPLETE / NO ROUTE SELECTED / BCTB-0 TEMPORAL-REPLAY CALIBRATION CHARTER ACTIVE / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 / PROSPECTIVE-FAMILY AUDIT COMPLETE / NO ROUTE SELECTED / BCTB-0 TEMPORAL-REPLAY CHARTER DRAFT / PRE-EXECUTION HARDENING / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -198,7 +198,7 @@ SOURCE-NATIVE BUT UNOBSERVED
 + NOT an authorized M4 charter
 
 BCTB-0 architecture =
-FROZEN FOR CALIBRATION
+DRAFT / PRE-EXECUTION HARDENING
 
 BCTB-0 method =
 FORWARD-CHAINING TEMPORAL REPLAY
@@ -206,9 +206,24 @@ FORWARD-CHAINING TEMPORAL REPLAY
 core folds =
 T1 Kubernetes / T2 Performative Prediction / T3 IPv4-IPv6 / T4 precedent
 
-primary packet =
-ADMISSION / EXCLUSION / FAILURE / PROVENANCE
+coverage =
+Route-A / X4b cross-mechanism / Route-B calibration
+Route C = NOT CALIBRATED BY BCTB-0 v0.1
+
+historical generator packet =
+ADMISSION / EXCLUSION / FAILURE
 + conditional OBJECTIFICATION sensitivity
+
+P_POST =
+current evidence-provenance evaluator scaffold
++ NO historical transfer credit
+
+arm symmetry =
+same model/version/settings/context budget
++ mechanical source manifest
++ deterministic de-labelling
++ Arm S structured de-labelled ablation
++ odd k >= 3 independent samples per scored arm
 
 BCTB-0 credit =
 calibration only
@@ -220,9 +235,11 @@ BCTB-1 prospective target =
 NOT SELECTED / DO NOT OPEN BEFORE BCTB-0 GATE
 
 next =
-prepare T1 historical source-pack manifest at 9900f425...
--> run T1 only in a fresh isolated blind-generator context
--> freeze generator packets before target unblind
+independent pre-execution input/capsule/symmetry audit
+-> only if PASS, prepare T1 role-separated manifest + capsule
+-> capsule-only target-identity probe
+-> same-model k>=3 generator arms
+-> freeze all samples before unblind
 -> evaluator T1 closeout
 -> only then decide whether T2 may open
 
