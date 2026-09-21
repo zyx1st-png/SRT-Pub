@@ -278,15 +278,54 @@ Candidate domains:
 - institutions;
 - urban infrastructure.
 
-### X6 — multi-position consequence divergence
+### PH — position / horizon consequence index
 
-Candidate domains:
+Previous seed label:
 
-- markets;
-- law;
-- collective action;
-- environmental governance;
-- AI deployment.
+~~~text
+X6 — multi-position consequence divergence
+~~~
+
+is RETYPED.
+
+Pass 1 shows that multi-position / multi-horizon consequence divergence is not, by itself, a generative dependency relation.
+
+Current role:
+
+~~~text
+PH = cross-cutting analysis burden
+NOT a GRG relation by default
+NO M0-M5 relation maturity
+~~~
+
+Apply PH where aggregation can hide materially different consequences across positions or horizons.
+
+Required distinctions:
+
+~~~text
+position sensitivity
+horizon sensitivity
+directional divergence = evidenced / not established / open
+reversibility
+externalized cost
+correction / revision capacity
+~~~
+
+Strong guard:
+
+~~~text
+multiple positions != evidenced conflict
+different horizons != moral trade-off
+directional conflict != moral winner
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
+Dedicated ledger:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
 No X-candidate is promoted merely because the examples sound similar.
 
@@ -486,11 +525,13 @@ New mainline surfaces:
 
 ~~~text
 1. use the burden matrix to compare heterogeneous domains without mechanism erasure;
-2. use the expectation ledger to expose position / horizon conflicts;
-3. add rows only from source-native records with admission / evidence status;
-4. seek grammar revision or exclusion, not case count;
-5. continue underdeveloped domain re-entry;
-6. use future M4 attempts selectively as calibration, not as the sole queue;
+2. use the expectation ledger + PH conflict ledger to expose indexed consequence structure;
+3. treat actual directional divergence as evidence-paid, never presumed;
+4. add rows only from source-native records with admission / evidence status;
+5. seek grammar revision or exclusion, not case count;
+6. pressure the first long-duration historical / infrastructure case with PH;
+7. continue underdeveloped domain re-entry;
+8. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
