@@ -595,13 +595,32 @@ positive downgrades = NONE
 circular bootstrap = NONE
 ~~~
 
-Next gate:
+Local-closure audit is COMPLETE.
 
-> Has the X4c carrier subprogramme reached a local closure point?
+Owner:
 
-Run a bounded local-closure audit.
+Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
 
-Do not add new carrier cases or reopen provenance categories merely to extend the line.
+Verdict:
+
+~~~text
+X4c CARRIER SUBPROGRAMME = LOCAL CLOSE
+carrier vocabulary for current evidence = FROZEN
+new carrier-case hunt = STOP BY DEFAULT
+new provenance-category hunt = STOP
+~~~
+
+Reopen only on a declared trigger:
+
+~~~text
+internal contradiction
+source-native new-role pressure
+role collapse
+carrier / expectation conflation
+material X4c relation revision
+~~~
+
+Mainline attention returns to broader GRG.
 
 ## 13. Canonical boundary
 
