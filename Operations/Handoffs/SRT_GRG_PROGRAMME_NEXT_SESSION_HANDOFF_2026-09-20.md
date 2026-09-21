@@ -320,14 +320,53 @@ M3 = NONE
 Audit:
 Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
 
+FIRST M3 / M4 TRANSFER-ABSORPTION PASS = COMPLETE:
+
+~~~text
+X3b -> Kubernetes NetworkPolicy:
+M3 = PASS
+M4 = NO / ABSORBED
+reason = Kubernetes already explicitly owns declaration != enforcement
+
+X4b -> Performative Prediction:
+non-biological semantic match = PASS
+M3 = PASS
+DOMAIN-LIMITED = LIFTED
+M4 = NO / ABSORBED
+reason = performative-prediction theory already owns deployment-induced distribution feedback
+
+X4b generic label:
+recursive reconstructed-field feedback
+
+biological specialization:
+selective / viability feedback
+
+M4 = NONE
+M5 = NONE
+scientific distinctiveness = NOT ESTABLISHED
+~~~
+
+Method correction:
+
+~~~text
+M3 = independently evidenced recurrence of a frozen burden
+M4 = prospective target-domain gain
+M3 != M4 != scientific distinctiveness
+~~~
+
+Audit:
+Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. X3b: pre-result transfer outside obvious institution/rule cases;
-2. require the transfer to change a variable, control or distinction before outcome inspection;
-3. X4b: search for a genuinely non-biological candidate with reconstructed field -> later viability/accessibility/transition pressure;
-4. if X4b requires semantic stretching, keep DOMAIN-LIMITED rather than forcing cross-domain unification;
-5. continue Atlas material re-entry without increasing M-status by case count.
+first legitimate bounded M4 attempt:
+1. freeze relation + target domain before decisive target-source/outcome inspection;
+2. freeze target-domain question / variable / control / expected failure;
+3. compare with ordinary target-domain practice;
+4. if same distinction already exists -> ABSORBED / M4 NO;
+5. if GRG changes the design -> execute/source-test without semantic drift;
+6. preserve ABSORBED / NULL / positive transfer equally.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -431,11 +470,11 @@ Use:
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
 1) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-2) Operations/Audits/SRT_GRG_X3B_X4B_INVARIANCE_FAILCASE_PASS1_2026-09-21.md
-3) Operations/GRG/NegativeControls/SRT_GRG_NEG_X3B_FORMAL_DECOUPLING_2026-09-21.md
-4) Operations/GRG/NegativeControls/SRT_GRG_NEG_X4B_ECOSYSTEM_ENGINEERING_ONLY_2026-09-21.md
-5) Materials/2026/SRC_2026_09_21_Meyer_Rowan_Formal_Decoupling.md
-6) Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
+2) Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
+3) Operations/GRG/Transfers/SRT_GRG_TR_X3B_01_KUBERNETES_NETWORKPOLICY_2026-09-21.md
+4) Operations/GRG/Transfers/SRT_GRG_TR_X4B_01_PERFORMATIVE_PREDICTION_2026-09-21.md
+5) Materials/2026/SRC_2026_09_21_Kubernetes_NetworkPolicy_Enforcement.md
+6) Materials/2026/SRC_2026_09_21_Performative_Prediction_Distribution_Feedback.md
 7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 8) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
@@ -443,30 +482,31 @@ Use:
 当前真实 gate：
 
 ~~~text
-GRG Relation Library = ESTABLISHED
+GRG Relation Library = ACTIVE
 
-R1 family = split / active
 X3a = M2
-X3b = M2 / provisional cross-domain invariance PASS
-       distinctiveness OPEN / substitutability pressure HIGH
+X3b = M3
+X3b M4 = NO / absorbed by Kubernetes domain practice
 
 X4a = M2
-X4b = M2 / DOMAIN-LIMITED
-       biological invariance PASS
-       cross-domain invariance NOT ESTABLISHED
+X4b = M3
+X4b generic label = recursive reconstructed-field feedback
+X4b DOMAIN-LIMITED = LIFTED
+X4b M4 = NO / absorbed by Performative Prediction
 X4c = M1/M2 source-dependent
 
-negative controls:
-X3a does not entail X3b
-X4a does not entail X4b
+M3 != M4
+M4 = NONE
+M5 = NONE
 
-M3 = NONE
+next =
+first prospectively frozen bounded M4 attempt
 
-next:
-X3b pre-result transfer outside obvious institution/rule cases
-+
-X4b genuinely non-biological candidate
-or keep X4b domain-limited if semantic invariance fails
+requirements:
+relation + target domain + target question/control/failure expectation
+must be frozen before decisive target-source/outcome inspection;
+ordinary target-domain practice must be checked;
+ABSORBED is a valid result.
 
 calibration:
 RNN = STOP
@@ -477,7 +517,7 @@ new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要以“更多相似案例”推动 M-status。下一步必须看 transfer / exclusion：X3b 要在结果前改变一个新领域的研究设计；X4b 若找不到不靠语义扩张的非生物 realization，就明确保留为 domain-limited。不要把 Meyer–Rowan、Ostrom、NCT 的机制挪成 SRT ontology；不要开 canonical landing。
+不要继续用更多 M3 案例堆成熟度。下一轮目标是测试 GRG 是否真的能在一个事前冻结的新领域产生 M4；如果目标领域早就有同一问题/控制，必须记 ABSORBED 而不是制造 novelty。不要开 canonical landing。
 
 ## 9. Stop rule
 
