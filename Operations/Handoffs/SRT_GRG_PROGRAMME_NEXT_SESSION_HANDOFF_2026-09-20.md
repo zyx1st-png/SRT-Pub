@@ -215,7 +215,8 @@ request package = PREPARED
 public contact route = VERIFIED
 legacy-data custody order = de Poel -> Peper -> Roerdink
 institutional fallback = VU FGB research.data.fgb@vu.nl
-request actually sent = NO
+first request to Harjo de Poel = SENT 2026-09-21
+response = PENDING
 new human experiment = NO
 simulation-as-confirmation = NO
 R1d / O4 = BLOCKED
@@ -255,14 +256,47 @@ Framework revisions earned:
 Audit:
 `Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`
 
+MATURE-SOURCE PRESSURE PASS 1 = COMPLETE:
+
+~~~text
+Ostrom / institutional analysis:
+X3 -> split into X3a articulated expectation
+           + X3b operative expectation regime
+
+niche construction / ecological inheritance:
+X4 -> split into X4a reconstructed condition
+           + X4b recursive selective/viability feedback
+           + X4c inherited reconstructed condition
+
+CIV-004 Nepal irrigation:
+X3b = strong source-native candidate
+
+CIV-005 beaver ecosystem engineering:
+X4a = strong
+X4b = NOT automatically paid
+X4c = gated
+~~~
+
+Important source-fidelity guard:
+
+~~~text
+niche-construction explanatory status is contested;
+GRG uses its causal decomposition as pressure,
+not as an adjudication that NCT is the exclusive or superior evolutionary framework.
+~~~
+
+Audit:
+`Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`
+
 MAINLINE NEXT:
 
 ~~~text
-1. source-pressure X3 using mature standards / institutional theory;
-2. source-pressure X4 using evolutionary / ecological / path-dependence theory;
-3. add one non-technical social/institutional X3 case;
-4. add one non-policy biological/ecological X4 case;
-5. test whether X3/X4 survive after source-native ownership is restored.
+1. formalize a live GRG Relation Library owner surface;
+2. run cross-domain invariance audit on X3b and X4b;
+3. require one explicit FAIL case for X3b and one for X4b;
+4. test whether X3b is merely institutional-analysis grammar generalized too far;
+5. test whether X4b is merely niche construction / path dependence generalized too far;
+6. do not promote X3/X4 to M3 before those exclusions survive.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -324,7 +358,7 @@ unless intervention direction has specific consequence
 
 The toy RNN spectral family is closed by default. A renewed RNN route requires a materially different source-native causal object, not parameter tuning.
 
-The current live execution route is HKB existing-data access only.
+HKB existing-data access is a live calibration route only. It does not define the GRG mainline.
 
 Allowed now:
 
@@ -365,15 +399,15 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
-2) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-3) Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
-4) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
-5) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
-6) Operations/GRG/Relations/SRT_GRG_RR_001_RNN_RETAINED_IMPRINT_CAUSAL_REENTRY_2026-09-21.md
-7) Operations/GRG/Relations/SRT_GRG_RR_002_HKB_MAINTAINED_COORDINATION_2026-09-21.md
-8) Operations/GRG/Relations/SRT_GRG_RR_003_BOWLER_STRUCTURED_EXPERIENCE_SCAFFOLD_2026-09-21.md
-9) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+1) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+2) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+3) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
+4) Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
+5) Operations/Templates/SRT_GRG_CIVILIZATIONAL_CASE_RECORD_TEMPLATE_V0_1.md
+6) Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md
+7) Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md
+8) Materials/2026/SRC_2026_09_21_Ostrom_Polycentric_Commons_Governance.md
+9) Materials/2026/SRC_2026_09_21_Niche_Construction_Ecological_Inheritance.md
 10) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
@@ -381,34 +415,41 @@ Use:
 ~~~text
 GRG programme mainline = FRAMEWORK CONSTRUCTION
 
-mainline:
-- relation library
-- domain / civilization atlas
-- civilizational learning
-- evidence typing
-- generative expectation / normativity
-- reflexive grammar revision
+relation-pressure state:
+X3a articulated expectation = M2
+X3b operative expectation regime = M2
+X4a reconstructed condition = M2
+X4b recursive selective / viability feedback = M2
+X4c inherited reconstructed condition = M1/M2 source-dependent
+M3 = NONE
 
-calibration:
-- RNN spectral R1c = NULL / STOP
-- HKB R1c = access pending
-- first request to Harjo = SENT / response pending
+source-native pressure:
+Ostrom -> written/formal rule != operative institution
+NCT/ecological inheritance -> environment modification != selection feedback != inherited condition
+NCT broader evolutionary-status debate = OPEN / CONTESTED
 
-HKB waiting != programme blocker
+positive/negative case pressure:
+CIV-004 Nepal irrigation -> X3b positive pressure
+CIV-005 beaver ecosystem engineering -> X4a yes, X4b not automatically paid
 
 next:
-backfill relation records
--> seed civilizational case records
--> identify cross-domain burden candidates
--> false-convergence audit
--> revise grammar
+Relation Library owner
+-> X3b/X4b cross-domain invariance audit
+-> explicit FAIL case for each
+-> test overgeneralization against mature neighbors
+-> only then consider M3
+
+calibration:
+RNN spectral = STOP
+HKB request to Harjo = SENT / response pending
+HKB waiting != programme blocker
 
 canonical edit = NO
 new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要把 GRG 重新缩回单一实验项目；不要因为 HKB 等数据就停住 framework mainline。各领域必须保留 source-native mechanism / evidence / objectification。文明经验必须 evidence-typed，不能把历史案例、实验、哲学直觉混成一个“大数据”。不要开 canonical landing，不要重新进入 winner-style strongest-neighbor novelty audit。
+不要继续堆支持案例。下一轮首先要证明 GRG 会拒绝什么：为 X3b、X4b 各找一个应当失败的 case，并检查它们是否只是把 IAD / niche construction / path dependence 泛化换名。不要把 mature neighbor 的机制挪成 SRT ontology；不要开 canonical landing。
 
 ## 9. Stop rule
 
