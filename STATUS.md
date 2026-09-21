@@ -88,6 +88,9 @@ HKB normalization reanalysis SourceCard:
 Existing-data access request package:
 `Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`
 
+Public access-route verification:
+`Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`
+
 Continuation handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
 
@@ -756,7 +759,7 @@ Bearer admission threshold + Bearer <-> position stability
 10. selected live non-RNN R1c route = HKB human bimanual coordination dynamics;
 11. HKB source/protocol reconstruction = PASS; half-cycle/component-aware normalization guard is mandatory;
 12. public original 300-Hz raw trajectories = NO-GO / NOT LOCATED; authorized reusable raw-data route = NOT ESTABLISHED;
-13. current next = existing-data access route only; request package is prepared but request actually sent = NO;
+13. current next = existing-data access route only; public author/contact routes are verified, VU FGB data-steward fallback is identified, request package is prepared, but request actually sent = NO;
 14. do not weaken to aggregate data, run a new human experiment, or use simulation as confirmation;
 15. R1d / O4 remains blocked on the HKB route until R1c execution is independently paid;
 16. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
