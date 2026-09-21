@@ -824,7 +824,7 @@ Bearer admission threshold + Bearer <-> position stability
 56. persistence process values = PASSIVE-PERSISTENCE / ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION / MIXED / OPEN;
 57. provenance metadata = P-ECO / P-MAT / P-INFO / P-INST; metadata do not receive M-status;
 58. carrier record = component + provenance metadata + reusable/source-local causal role + role evidence/near-control + component status + persistence process + architecture sufficiency;
-59. CIV-006 paid component roles = P-MAT/SUBSTRATE+INTERFACE; persistence process = ACTIVE-MAINTENANCE / MIXED; modern regulation remains E-LEGAL/E-ORG expectation, not carrier;
+59. CIV-006 paid component roles = P-MAT/SUBSTRATE+INTERFACE; persistence process = ACTIVE-MAINTENANCE / MIXED; modern regulation remains S-LEGAL/S-ORG expectation source, not carrier;
 60. IPv4/IPv6 paid roles = P-INFO/PAYLOAD + P-MAT/SUBSTRATE+INTERFACE; P-INST proposed coordination role = PRESENT / ROLE-OPEN; source-local ENACTMENT = NARROW;
 61. precedent carrier = MULTI-COMPONENT with P-INFO/PAYLOAD + P-INST/AUTHORITY both COMPONENT-ROLE-PASS;
 62. reusable near-controls = greenfield vs installed-base; binding vs persuasive; controlling precedent vs case of first impression;
@@ -846,13 +846,24 @@ Bearer admission threshold + Bearer <-> position stability
 78. X4c carrier-subprogramme verdict = LOCAL CLOSE;
 79. carrier vocabulary for current evidence = FROZEN; new carrier-case / provenance-category / reusable-role hunt = STOP BY DEFAULT;
 80. reopen triggers = internal contradiction / source-native new-role pressure / role collapse / carrier-expectation conflation / material X4c relation revision;
-81. next framework work = return to broader GRG and select the next underconstrained central burden from existing framework / ledger surfaces;
-82. periodic M4 only when target ownership is genuinely uncertain;
-83. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-84. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-85. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-86. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-87. do not restart winner-style strongest-neighbor novelty audit;
+81. broader-GRG next-burden selection = COMPLETE; selected Generative Expectation provenance / locus / normative-comparison adequacy;
+82. Generative Expectation adequacy charter v0.1 = FROZEN at Operations/Proposals/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_CHARTER_V0_1_2026-09-21.md;
+83. Generative Expectation adequacy Pass 1 = PRODUCTIVE SPLIT at Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md;
+84. live expectation source/provenance = S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO;
+85. live expectation locus/mode = B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL;
+86. historical E-MODEL as provenance = RETIRED; external analyst / evaluator model routes to OBS-MODEL unless formed-locus C1 is separately paid;
+87. historical E-MIXED as provenance = RETIRED; explicit source-layer lists required;
+88. indexed G-stronger / G-weaker requires explicit relation/objective + position/locus + scale/grain + horizon + comparison dimension;
+89. Generative Expectation negative productivity Pass 1 = PASS at Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md;
+90. RNN negative control = O1 prediction/classification can coexist with R1c O3 NULL; OBS-MODEL != B/C1 and no indexed normativity follows;
+91. precedent negative control = S-LEGAL+S-ORG B PASS and indexed legal force PASS, but binding != morally correct / just / legitimate;
+92. expectation-schema consistency census = ACTIVE; migrate live GRG routing only, preserve historical audit notation where appropriate;
+93. periodic M4 only when target ownership is genuinely uncertain;
+94. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+95. author generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+96. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+97. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+98. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
