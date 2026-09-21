@@ -128,6 +128,11 @@ proxy failure
 
 The RNN spectral family remains STOP; this guard narrows interpretation, not the adverse result.
 
+GTS reconciliation owner:
+
+`Operations/GRG/GTS/SRT_GRG_GTS_001_RNN_HISTORY_TRACE_CAUSAL_MEDIATION_2026-09-21.md`
+
+
 Universal law status:
 
 ~~~text
@@ -217,6 +222,11 @@ scientific distinctiveness = NOT ESTABLISHED
 M3 owner:
 
 Operations/GRG/Transfers/SRT_GRG_TR_X3B_01_KUBERNETES_NETWORKPOLICY_2026-09-21.md
+
+GTS reconciliation owner:
+
+`Operations/GRG/GTS/SRT_GRG_GTS_002_KUBERNETES_OPERATIVE_EXPECTATION_2026-09-21.md`
+
 
 ## 4. RL-X4 — reconstructed condition / recursive feedback / inheritance
 
@@ -507,6 +517,11 @@ scientific distinctiveness = NOT ESTABLISHED
 M3 owner:
 
 Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+
+GTS reconciliation owner:
+
+`Operations/GRG/GTS/SRT_GRG_GTS_003_CIV006_INHERITED_RECONSTRUCTED_FIELD_2026-09-21.md`
+
 
 ## 5. Admission discipline
 
