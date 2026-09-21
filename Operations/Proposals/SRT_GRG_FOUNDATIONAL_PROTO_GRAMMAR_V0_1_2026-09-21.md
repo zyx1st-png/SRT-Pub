@@ -371,7 +371,39 @@ Evidence family is not relation type.
 
 Evidence strength is not compressed into one universal score.
 
-### 5.5 Failure
+### 5.5 Position / Horizon consequence index
+
+Latest framework pressure has retyped the former X6 "multi-position consequence divergence" candidate as:
+
+~~~text
+PH — Position / Horizon Consequence Index
+~~~
+
+PH is a cross-cutting analysis burden, not a generative relation by default and not assigned M0-M5 relation maturity.
+
+Apply PH where materially different positions or horizons may receive different consequences.
+
+Declare separately:
+
+~~~text
+position sensitivity = yes / no / open
+horizon sensitivity = yes / no / open
+directional divergence = evidenced / not established / open
+reversibility = evidenced / open
+externalized cost = evidenced / open
+~~~
+
+Guards:
+
+~~~text
+multiple positions != conflict automatically
+different horizons != moral trade-off automatically
+directional conflict != moral winner automatically
+~~~
+
+PH therefore strengthens N-INDEX without inflating the Relation Library.
+
+### 5.6 Failure
 
 Every strong relation candidate must state:
 
@@ -1125,6 +1157,58 @@ X4c inherited reconstructed condition
 
 X4 is therefore one of the strongest current sources for R-RECON.
 
+Current X4c pressure adds a further implementation distinction:
+
+~~~text
+relation identity
+!= inheritance-carrier provenance
+~~~
+
+An X4c claim must identify the carrier by which enough of the reconstructed field is preserved / maintained / reproduced into a later cohort or cycle.
+
+Current carrier tags:
+
+~~~text
+P-MAT
+P-ECO
+P-INST
+P-INFO
+P-MIXED
+~~~
+
+P-MIXED must declare its components.
+
+The IPv4 -> IPv6 installed-base stress test supports X4c while rejecting standalone P-INFO as established in that case:
+
+~~~text
+X4c = M3 retained
+P-INFO alone = NOT ESTABLISHED
+best current provenance = decomposed P-MIXED
+~~~
+
+This is a useful v0.1 example of grammar revision narrowing an implementation claim without rejecting the relation.
+
+### 19.4 PH — Position / Horizon analysis
+
+The former X6 relation candidate is now retyped:
+
+~~~text
+X6 as standalone GRG relation = NOT JUSTIFIED
+PH = ACTIVE cross-cutting analysis burden
+~~~
+
+This matters structurally because GRG v0.1 distinguishes:
+
+~~~text
+generative relation
+from
+analysis dimension
+from
+implementation / carrier provenance
+~~~
+
+A useful concept does not automatically belong in the grammar as a relation.
+
 ## 20. Mapping maturity is separate from architecture role
 
 Continue to use:
@@ -1336,15 +1420,22 @@ Current assets include:
 - Bowler retained-organization pressure;
 - HKB source/protocol reconstruction;
 - X3/X4 civilizational and domain pressure;
+- X4c cross-surface inheritance M3;
+- X4c carrier-provenance narrowing from P-INFO candidate to decomposed P-MIXED in the IPv4/IPv6 case;
+- PH retyping of position / horizon consequence divergence from false relation candidate to cross-cutting analysis burden;
 - negative controls;
 - M3 recurrence checks;
 - two M4 absorption results;
 - cross-domain burden matrix;
-- generative expectation ledger.
+- generative expectation ledger;
+- position / horizon conflict ledger.
 
 Current limits include:
 
 ~~~text
+X3b = M3
+X4b = M3
+X4c = M3
 M4 = NONE
 M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
@@ -1418,8 +1509,10 @@ The following are deliberately not closed before whole-architecture author revie
 10. whether generative expectation should be mandatory for all mature relations or only stronger classes;
 11. how N-INDEX should interact with stronger ethics / legitimacy layers;
 12. what exact relationship should hold between GRG and SRT canonical One / Bearer / Agency;
-13. what evidence could promote any relation to M4 / M5;
-14. whether a future whole-GRG scientific distinctiveness claim is warranted.
+13. whether inheritance-carrier provenance needs a more general typed layer beyond X4c;
+14. whether PH remains sufficient for consequence indexing or reveals additional non-relation analysis dimensions;
+15. what evidence could promote any relation to M4 / M5;
+16. whether a future whole-GRG scientific distinctiveness claim is warranted.
 
 ## 28. Review sheet
 
