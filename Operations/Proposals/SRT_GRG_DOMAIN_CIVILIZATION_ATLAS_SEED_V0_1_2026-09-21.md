@@ -713,7 +713,7 @@ P-MIXED AS PROVENANCE KIND = RETIRED
 Corrections produced:
 
 - CIV-006: modern regulation removed from inheritance carrier; retained under expectation provenance;
-- IPv4/IPv6: institutional maintenance role downgraded to PRESENT / ROLE-OPEN;
+- IPv4/IPv6: proposed institutional carrier role downgraded to PRESENT / ROLE-OPEN;
 - precedent: P-INST AUTHORITY role retained under direct near-control pressure.
 
 Next:
