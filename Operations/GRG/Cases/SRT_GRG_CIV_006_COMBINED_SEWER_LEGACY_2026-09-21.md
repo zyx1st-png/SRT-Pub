@@ -165,7 +165,7 @@ provenance metadata =
 P-MAT
 
 causal roles =
-SUBSTRATE / MAINTENANCE / INTERFACE
+SUBSTRATE / INTERFACE
 
 role evidence =
 successor operation / compliance / retrofit must work through,
@@ -173,6 +173,9 @@ around or replace the inherited hydraulic network
 
 component status =
 COMPONENT-SUFFICIENT
+
+persistence process =
+ACTIVE-MAINTENANCE / MIXED over long horizon
 
 architecture sufficiency =
 PASS
