@@ -304,7 +304,16 @@ Retrospective explanation alone does not pay mature P_G.
 
 ## L. Generative Order admission
 
-For every order used by E_G, fill one block.
+First declare:
+
+~~~text
+order-analysis status =
+  OPENED / NOT OPENED / N.A.
+~~~
+
+A bounded GTS may legitimately leave order analysis unopened when the research question is causal / diagnostic rather than order-relative.
+
+For every order actually used by E_G, fill one block.
 
 ~~~text
 order id =
@@ -371,6 +380,15 @@ projected E_G != ordinary admitted-order E_G
 ~~~
 
 ## M. Generative Expectation — E_G
+
+First declare:
+
+~~~text
+E_G status =
+  OPENED / NOT OPENED / N.A.
+~~~
+
+Do not invent an order merely to populate this section.
 
 Fill separately for each admitted order where needed. For a projected order, use the separate projected-E_G fields below and do not report ordinary E_G.
 
@@ -444,7 +462,7 @@ does the candidate average away a real local conflict? =
 hidden / delayed externalization exposed =
 
 wholeward status =
-  candidate / paid / partial / open / fail
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
 ~~~
 
 Guard:
@@ -493,7 +511,7 @@ if ABSORBED, what mature target-domain practice already owns the distinction? =
 independent replication rationale, if any =
 
 cross-objectification gain verdict =
-  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
 ~~~
 
 Required for PASS:
@@ -528,7 +546,7 @@ alternative horizontal explanation =
 perturbation / intervention =
 
 bridge status =
-  paid / partial / fail / open
+  paid / partial / fail / open / N.A.
 ~~~
 
 Guard:
@@ -778,12 +796,16 @@ verticality status =
 P_G status =
 
 Generative Order admission status =
+  PASS / PARTIAL / OPEN / FAIL / NOT OPENED / N.A.
 
 E_G status =
+  OPENED / NOT OPENED / N.A.
 
 cross-objectification gain status =
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
 
 wholeward status =
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
 
 main failure / open burden =
 
