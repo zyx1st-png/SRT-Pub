@@ -534,6 +534,29 @@ would count as relation-consistent?
 
 This expectation must be typed.
 
+Expectation provenance should be declared where possible:
+
+~~~text
+E-MAT material / infrastructural
+E-TECH technical / interface
+E-LEGAL legal / regulatory
+E-ORG organizational / institutional
+E-NORM social / normative
+E-BIO biological / viability
+E-MODEL model-mediated / analytic
+E-MIXED multiple distinct layers
+~~~
+
+CIV-006 shows why this matters:
+
+~~~text
+material compatibility burden
+!=
+modern legal water-quality obligation
+!=
+moral legitimacy
+~~~
+
 Do not infer:
 
 ~~~text
@@ -886,7 +909,10 @@ Completed:
 14. Cross-Domain Burden Matrix v0.1;
 15. Generative Expectation Ledger v0.1;
 16. Position / Horizon Conflict Ledger v0.1;
-17. X6 retyped from relation candidate to cross-cutting PH analysis burden.
+17. X6 retyped from relation candidate to cross-cutting PH analysis burden;
+18. CIV-006 long-duration combined-sewer inheritance case;
+19. X4c carrier-explicit admission revision + M3 cross-domain recurrence;
+20. expectation-provenance typing added to ledger / templates.
 
 Current mainline:
 
@@ -894,10 +920,11 @@ Current mainline:
 A. expand / harden the Cross-Domain Burden Matrix;
 B. expand the Generative Expectation Ledger;
 C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
-D. pressure a long-duration historical / infrastructure case with matrix + expectation + PH together;
-E. test whether the combined surfaces produce new exclusions or grammar revisions;
-F. continue domain re-entry for underdeveloped domains;
-G. use M4 prospectively when a genuinely uncertain target appears,
+D. CIV-006 long-duration infrastructure pressure = COMPLETE;
+E. next test whether institutional / informational inheritance survives the carrier-explicit X4c rule without semantic drift;
+F. require inheritance provenance and expectation provenance in new records;
+G. continue domain re-entry for underdeveloped domains;
+H. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -919,6 +946,8 @@ Comparison owners:
 
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+- Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+- Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 
