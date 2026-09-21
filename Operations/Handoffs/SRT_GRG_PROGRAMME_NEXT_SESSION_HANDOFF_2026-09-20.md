@@ -234,14 +234,35 @@ If access is later obtained, freeze a new raw-data analysis charter before openi
 
 HKB response waiting does not block the mainline.
 
+FIRST CIVILIZATIONAL PASS = COMPLETE:
+
+~~~text
+CIV-001 Internet standards
+CIV-002 antimicrobial resistance
+CIV-003 Montreal Protocol
+
+one-relation compression = REJECTED
+
+X3 externalized generative expectation = M2 candidate
+X4 present action reconstructs future option field = M2 candidate
+~~~
+
+Framework revisions earned:
+
+- expectation embodiment / enforcement provenance must be explicit;
+- position / horizon consequence split must be explicit.
+
+Audit:
+`Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`
+
 MAINLINE NEXT:
 
 ~~~text
-1. backfill relation records from completed repository work;
-2. build first source-native civilizational case records;
-3. expand the Domain / Civilization Atlas;
-4. run false-convergence audit on the first cross-domain candidate relations;
-5. revise / split / retire the relation library where evidence demands.
+1. source-pressure X3 using mature standards / institutional theory;
+2. source-pressure X4 using evolutionary / ecological / path-dependence theory;
+3. add one non-technical social/institutional X3 case;
+4. add one non-policy biological/ecological X4 case;
+5. test whether X3/X4 survive after source-native ownership is restored.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
