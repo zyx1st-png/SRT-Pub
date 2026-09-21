@@ -437,16 +437,60 @@ Mainline comparison surfaces:
 
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+- Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+POSITION / HORIZON PASS 1 = COMPLETE:
+
+~~~text
+previous Atlas candidate:
+X6 multi-position consequence divergence
+
+verdict:
+NOT JUSTIFIED AS A STANDALONE GENERATIVE RELATION
+
+retype:
+PH = cross-cutting Position / Horizon Consequence Index
+M-status = NONE / NOT APPLICABLE
+
+strong guard:
+position sensitivity != evidenced conflict
+horizon sensitivity != moral trade-off
+directional divergence != moral winner
+~~~
+
+Current case pressure:
+
+~~~text
+AMR:
+actual immediate-vs-long-horizon divergence = EVIDENCED
+
+road capacity:
+temporal rebound/adaptation divergence = EVIDENCED
+cross-position distributive conflict = NOT ESTABLISHED by current source package
+
+Nepal irrigation:
+tail-end position sensitivity = EVIDENCED
+directionally opposed upstream/downstream conflict = NOT ESTABLISHED
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
+Dedicated ledger:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
 MAINLINE NEXT:
 
 ~~~text
-1. harden the cross-domain burden matrix;
-2. harden the generative-expectation ledger;
-3. use civilizational cases to expose position / horizon conflicts;
-4. seek exclusions / splits / revision, not case count;
-5. expand underdeveloped domain coverage;
-6. run future M4 attempts only when a genuinely uncertain target exists.
+1. pressure one long-duration historical / infrastructure case
+   using burden matrix + generative-expectation ledger + PH together;
+2. require source-paid positions / horizons rather than imagined conflict;
+3. ask whether the combined architecture yields a new exclusion,
+   split or grammar revision;
+4. continue underdeveloped domain coverage;
+5. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -549,14 +593,14 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-2) Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
-3) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-4) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
-5) Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
-6) Operations/Audits/SRT_GRG_M4_02_ROAD_CAPACITY_RESULT_2026-09-21.md
-7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-8) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
+1) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+2) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+3) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+4) Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+6) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
+7) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
@@ -567,39 +611,46 @@ GRG Relation Library = ACTIVE
 X3b = M3
 X4b = M3
 
-M4-01 X3b -> AI-agent authorization
-= ABSORBED / M4 NO
-
-M4-02 X4b -> road-capacity induced demand
-= ABSORBED / M4 NO
-
+M4-01 = ABSORBED / M4 NO
+M4-02 = ABSORBED / M4 NO
 M4 = NONE
 M5 = NONE
 
-M4-E0 = validated across two target domains:
-freeze -> target-practice audit -> absorbed => stop duplicate execution.
+Cross-Domain Burden Matrix = ACTIVE
+Generative Expectation Ledger = ACTIVE
+Position/Horizon Conflict Ledger = ACTIVE
 
-Do NOT weaken M4.
+X6 multi-position consequence divergence
+= RETYPED / REMOVED FROM RELATION QUEUE
 
-Framework mainline now =
-Cross-Domain Burden Matrix
-+ Generative Expectation Ledger
-+ civilizational position/horizon comparison
-+ source-native domain expansion
-+ grammar revision / exclusion.
+PH Position/Horizon Consequence Index
+= cross-cutting analysis burden
+= no M-status
 
-M4 is periodic calibration, not the sole mainline.
+PH guard:
+position/horizon sensitivity != evidenced conflict
+conflict must be source-paid
+directional conflict != moral winner
+
+next:
+one long-duration historical / infrastructure case
+-> source-native reconstruction
+-> burden matrix
+-> expectation ledger
+-> PH
+-> look for exclusion / split / grammar revision
 
 calibration:
 RNN = STOP
 HKB request = SENT / response pending
+M4 periodic only
 
 canonical edit = NO
 new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-下一轮不要机械开 M4-03。先用 burden matrix 和 expectation ledger 检验 GRG 是否真的能在不同机制之间保持关系结构、暴露冲突、拒绝错误统一，并产生可追踪的 generative-expectation / indexed-normativity 路由。若未来出现目标领域 ownership 真正不确定的 transfer，再 prospectively freeze M4。不要把 ABSORBED 改名成成功，不要开 canonical landing。
+不要把 PH 重新包装成新关系。下一步的价值在于检验三张表一起工作时，能否比逐案总结多产生一个可证伪的区分、排除或 grammar revision。不要因为存在多个位置就自动写成冲突，也不要从功能性 G-stronger/G-weaker 直接跳到政治或道德结论。不要开 canonical landing。
 
 ## 9. Stop rule
 

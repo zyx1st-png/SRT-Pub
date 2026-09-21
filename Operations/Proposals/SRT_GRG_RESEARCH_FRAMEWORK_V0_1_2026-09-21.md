@@ -581,6 +581,20 @@ larger whole != morally prior
 more options != always better
 ~~~
 
+Position / horizon indexing is a cross-cutting analysis burden, not automatically a GRG relation.
+
+Current owner:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+Strong guard:
+
+~~~text
+multiple positions != evidenced conflict
+different horizons != moral trade-off
+directional divergence != moral winner
+~~~
+
 ## 12. Civilizational learning architecture
 
 Civilization is treated as a distributed historical grammar-learning process.
@@ -870,17 +884,20 @@ Completed:
 12. M4-02 prospectively frozen road-capacity attempt = ABSORBED;
 13. framework-adequacy audit after repeated absorption;
 14. Cross-Domain Burden Matrix v0.1;
-15. Generative Expectation Ledger v0.1.
+15. Generative Expectation Ledger v0.1;
+16. Position / Horizon Conflict Ledger v0.1;
+17. X6 retyped from relation candidate to cross-cutting PH analysis burden.
 
 Current mainline:
 
 ~~~text
 A. expand / harden the Cross-Domain Burden Matrix;
 B. expand the Generative Expectation Ledger;
-C. test position / horizon conflicts in civilizational cases;
-D. test whether the matrix produces new cross-case exclusions or grammar revisions;
-E. continue domain re-entry for underdeveloped domains;
-F. use M4 prospectively when a genuinely uncertain target appears,
+C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
+D. pressure a long-duration historical / infrastructure case with matrix + expectation + PH together;
+E. test whether the combined surfaces produce new exclusions or grammar revisions;
+F. continue domain re-entry for underdeveloped domains;
+G. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 

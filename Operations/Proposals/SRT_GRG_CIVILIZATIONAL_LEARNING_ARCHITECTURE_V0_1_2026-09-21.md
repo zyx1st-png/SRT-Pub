@@ -197,6 +197,39 @@ Participant interest cannot automatically veto every higher-order coordination s
 
 Both require explicit burdens.
 
+### 8.1 Position / horizon consequence index
+
+The dedicated operational owner is:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+The earlier Atlas candidate "X6 — multi-position consequence divergence" is retyped as a cross-cutting analysis burden rather than a generative relation.
+
+Use:
+
+~~~text
+PH — Position / Horizon Consequence Index
+~~~
+
+as navigation only.
+
+For each case distinguish:
+
+~~~text
+position sensitivity
+horizon sensitivity
+directional divergence = evidenced / not established / open
+reversibility
+externalized cost
+correction / revision capacity
+~~~
+
+Do not infer conflict from plurality alone.
+
+Owner:
+
+Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
 ## 9. Civilization-level conflicts
 
 Important research families include:
@@ -346,7 +379,7 @@ Current civilizational programme outputs:
 3. relation library = ACTIVE;
 4. cross-case comparison matrix = ACTIVE;
 5. generative-expectation ledger = ACTIVE;
-6. conflict / multi-position routing = PARTLY EMBEDDED IN LEDGER / dedicated surface still open;
+6. conflict / multi-position routing = ACTIVE through dedicated PH ledger;
 7. calibration cases = ACTIVE through adverse, absorption and negative-control records.
 
 Current owners:
@@ -366,6 +399,9 @@ Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 
 generative expectation ledger:
 Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+position / horizon conflict ledger:
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 ~~~
 
 The burden matrix and expectation ledger are now the main implementation surfaces for testing whether civilizational experience can be compared without collapsing mechanism, position or evidence type.

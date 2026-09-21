@@ -76,11 +76,27 @@ therefore one affected position has absolute priority
 
 Those require added premises.
 
-## 4. Multi-position conflict
+## 4. Multi-position / horizon routing
 
-A central civilizational use is to make conflicts explicit.
+A central civilizational use is to preserve multiple positions and horizons without inventing conflict where the source does not establish it.
 
-Example:
+Dedicated owner:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+Retyping audit:
+
+Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
+Use three distinct states:
+
+~~~text
+POSITION/HORIZON SENSITIVE
+DIVERGENCE EVIDENCED
+DIVERGENCE NOT ESTABLISHED / OPEN
+~~~
+
+Example with evidence-paid divergence:
 
 ~~~text
 AMR:
@@ -89,7 +105,20 @@ vs
 future population treatment effectiveness.
 ~~~
 
-The framework should preserve both positions instead of collapsing them into one scalar.
+Examples where only the weaker indexing burden is currently paid:
+
+~~~text
+Nepal irrigation:
+tail-end position is explicitly measured,
+but directionally opposed upstream/downstream consequence
+is not established by the current GRG source record.
+
+AI authorization:
+user/operator/affected-system positions are relevant,
+but their normative conflict is not established by M4-01.
+~~~
+
+The framework should preserve positions instead of collapsing them into one scalar, while also refusing to invent a conflict.
 
 ## 5. Next development
 
@@ -97,6 +126,9 @@ Future ledger records should add:
 
 - evidence source;
 - consequence bearer where established;
+- position-sensitivity status;
+- horizon-sensitivity status;
+- directional-divergence status;
 - reversibility;
 - externalized cost;
 - correction / appeal / revision capacity.
