@@ -30,124 +30,351 @@ generative relation
 
 without turning functional expectation into moral legitimacy.
 
-## 1. Ledger
+## 1. Live schema after adequacy Pass 1
 
-Expectation provenance tags:
+Adequacy owner:
+
+Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md
+
+Current live schema separates three questions:
 
 ~~~text
-E-MAT = material / infrastructural constraint
-E-TECH = technical / interface constraint
-E-LEGAL = legal / regulatory requirement
-E-ORG = organizational / institutional rule-in-use
-E-NORM = social / normative expectation
-E-BIO = biological / viability relation
-E-MODEL = model-mediated / analytic expectation
-E-MIXED = multiple distinct provenance layers
+A. SOURCE / PROVENANCE
+where does the directional burden come from?
+
+B. LOCUS / MODE
+is expectation merely structural,
+embodied / enacted,
+model-mediated from a formed locus,
+or only an external observer prediction?
+
+C. EVALUATIVE INDEX
+relative to which relation / objective / position / scale / horizon
+is a trajectory compared?
 ~~~
 
-These tags state where the expectation burden comes from.
+Historical one-axis tags are superseded.
 
-They do not establish moral legitimacy.
+### 1.1 Source / provenance axis
 
-| Case / relation | Expectation provenance | Structural generative expectation | Actual / possible mismatch | Indexed comparison | Affected position / horizon | Additional moral premise still required |
-|---|---|---|---|---|---|---|
-| Internet standards / X3b | E-TECH + E-ORG | implementations must satisfy enough protocol constraints for interoperability | specification exists but implementations diverge / fail interoperability | stronger/weaker relative to interoperability relation | implementers/users; operational horizon | why interoperability should override competing goals |
-| Montreal Protocol / X3b | E-LEGAL + E-ORG | controlled-substance behavior should follow maintained schedules sufficient to reduce ozone-depleting burden | commitments without implementation; uncontrolled emissions; failed substitution | stronger/weaker relative to ozone-protection goal | states, industries, populations, atmosphere; decades | justice of burden allocation, finance, rights, political legitimacy |
-| Nepal irrigation / X3b | E-ORG + E-NORM | rules-in-use should coordinate contribution, monitoring, maintenance and allocation sufficiently for irrigation function | formal rules decouple; monitoring/sanction fails; tail-end access collapses | stronger/weaker relative to irrigation maintenance/allocation | upstream/downstream users; seasonal/long-run | fairness of allocation, authority, rights |
-| AI-agent authorization / X3b | E-TECH + E-LEGAL/ORG depending deployment | stated policy should be backed by operative authorization if protected action must remain inaccessible | policy says no while capability remains reachable | stronger/weaker relative to declared security boundary | user/operator/affected system; immediate | legitimacy of policy objective, autonomy/privacy tradeoffs |
-| AMR / X4b | E-BIO + E-MODEL/public-health | present antimicrobial use should be evaluated together with how it changes later resistance conditions | immediate treatment succeeds while future treatment field degrades | stronger/weaker relative to preserving treatment effectiveness | current patient vs future population; short/long horizon | justice of access, duty allocation, acceptable risk |
-| Performative prediction / X4b | E-MODEL | deployment assessment should include how predictions change the future data/risk distribution on which they are evaluated | model optimized for static distribution destabilizes or reshapes future distribution | stronger/weaker relative to stated predictive/control objective | deployed population / institution; iterative horizon | fairness, rights, legitimacy of intervention |
-| Road capacity / X4b | E-TECH + E-MODEL | appraisal should include how lower generalized travel cost changes later demand and network loading | immediate congestion benefit erodes under induced travel | stronger/weaker relative to congestion/appraisal objective | travelers, residents, future land users; short/long horizon | environmental justice, land-use values, distributional policy goals |
-| Combined-sewer legacy / X4c | E-MAT primary; E-LEGAL secondary | later operation must work through, repair, bypass or replace inherited hydraulic infrastructure; modern regulation separately requires overflow control / water-quality compliance | material compatibility can be preserved while wet-weather pollution/control burden remains; legal compliance can fail even when ordinary conveyance works | stronger/weaker relative to sanitation/drainage + overflow-control relation, with material and legal layers kept distinct | later residents/utilities/receiving-water users; century-scale inheritance + present operation | fair burden allocation, acceptable cost, intergenerational obligation, environmental justice |
-| IPv4 -> IPv6 installed-base / X4c + X3b | E-TECH primary; E-ORG secondary | current transition mechanisms must preserve enough interoperability with inherited IPv4 deployments while migration proceeds | a technically valid IPv6 deployment can still fail to interoperate with inherited IPv4 hosts/apps/infrastructure; greenfield and installed-base environments face different transition burdens | stronger/weaker relative to interoperability and transition objectives; X3b current enforcement kept distinct from X4c inherited-field conditioning | network operators, implementers, applications; multi-year coexistence horizon | none opened at moral level |
-| Precedent / stare decisis / X4c + X3b | E-LEGAL + E-ORG | successor courts should treat binding precedent differently from merely persuasive authority under the declared hierarchy/jurisdiction | prior reasoning can remain available while mandatory force differs; first-impression cases lack controlling inherited precedent | stronger/weaker relative to declared precedent relation; current X3b authority rule kept distinct from inherited X4c case-law field | successor courts / litigants; cross-case historical horizon | justice, legitimacy or desirability of the precedent require separate premises |
-| RNN R1c adverse case | E-MODEL only | candidate retained organization should specifically affect later learning under targeted intervention | history marker exists but matched intervention shows no specific causal advantage | relation admission weaker / fails R1c | synthetic network only | none; normativity not opened |
-| HKB R1c candidate | E-MODEL / dynamical | maintained coordination organization should condition perturbation relaxation beyond component-only explanation | normalization or component variables exhaust apparent relation effect | relation admission stronger/weaker | participant coordination process; seconds | none; normativity not opened |
-
-### 1.1 Provenance non-identity
-
-The CIV-006 case exposes a load-bearing distinction:
+Use explicit source descriptors:
 
 ~~~text
-material structural expectation
-!= technical design expectation
-!= legal obligation
-!= social norm
-!= moral legitimacy
+S-MAT
+= material / infrastructural relation
+
+S-TECH
+= technical / interface relation
+
+S-LEGAL
+= legal / regulatory relation
+
+S-ORG
+= organizational / institutional relation
+
+S-NORM
+= social / norm-governed relation
+
+S-BIO
+= biological / viability relation
 ~~~
 
-A single case may contain multiple expectation layers.
+These answer where the directional burden is grounded.
 
-The ledger should preserve them rather than collapse them into one generalized ought.
+They do not say who anticipates it.
 
-IPv4/IPv6 also shows:
+Historical:
 
 ~~~text
-E-TECH current compatibility expectation
+E-MODEL
+E-MIXED
+~~~
+
+are retired as live expectation-provenance tags.
+
+Use explicit source lists instead of a generic mixed tag.
+
+### 1.2 Locus / mode axis
+
+~~~text
+B-STRUCTURAL
+= an admitted formed generative relation itself carries
+  a directional continuation / transformation burden.
+
+C0-ENACTED
+= a formed locus is currently organized by conditions
+  of its possible continuation without requiring
+  an explicit symbolic model.
+
+C1-MODEL
+= a formed locus uses an explicit or functional model
+  of later states / consequences / continuations
+  in present organization.
+
+OBS-MODEL
+= an external analyst / researcher / evaluator prediction,
+  objective or model.
+~~~
+
+Strong guard:
+
+~~~text
+OBS-MODEL
 !=
-X4c carrier provenance
+C1-MODEL
+!=
+B-STRUCTURAL automatically.
 ~~~
 
-Expectation provenance types the source of the expectation.
-Inheritance carrier architecture types how the inherited field is carried.
+An external prediction can be accurate and still pay no generative normativity.
 
-Precedent makes the non-identity explicit:
+### 1.3 B admission gate
+
+B-STRUCTURAL requires:
 
 ~~~text
-E-LEGAL / E-ORG:
-current "follow binding precedent" expectation
-
-P-INST AUTHORITY + P-INFO PAYLOAD:
-carrier architecture through which prior holdings condition successor cases
+1. typed formed generative relation R;
+2. declared position / scale / grain;
+3. relation-native continuation / transformation burden;
+4. at least one relation-relevant mismatch / failure condition;
+5. the burden is not reducible to statistical likelihood.
 ~~~
 
-Do not merge the two taxonomies.
-
-## 2. B versus C
-
-This ledger primarily records:
+Therefore:
 
 ~~~text
-B = structural generative expectation
+likely
+!=
+relation-consistent
+
+frequent
+!=
+normatively stronger
+
+prediction error
+!=
+generative failure automatically.
 ~~~
 
-Where a formed locus itself anticipates / models later states, C0/C1 can be added separately.
+### 1.4 C0 / C1 admission gate
 
-Do not infer C from every B row.
+C0 requires evidence that a formed locus is actually regulated by conditions of its continuation.
 
-## 3. Functional versus moral normativity
-
-The ledger permits statements such as:
+C1 additionally requires:
 
 ~~~text
-this trajectory is weaker relative to interoperability
-this trajectory is weaker relative to ozone protection
-this trajectory degrades future treatment effectiveness
+a model / representation / functional forecasting structure
+is used by the formed locus
+to organize present generation.
+~~~
+
+A model used only by the researcher does not pay C1.
+
+## 2. Backfilled ledger
+
+| Case / relation | Source / provenance | B-STRUCTURAL | C0-ENACTED | C1-MODEL | OBS-MODEL | Evaluative index | Moral legitimacy |
+|---|---|---|---|---|---|---|---|
+| Internet standards / X3b | S-TECH + S-ORG | PASS | OPEN / not required | NOT ESTABLISHED | optional | interoperability relation; implementer/user operational horizon | OPEN |
+| Montreal Protocol / X3b | S-LEGAL + S-ORG | PASS | OPEN / institutional enactment not separately typed | NOT ESTABLISHED | possible external policy/science analysis | ozone-protection + implementation relation; states/industries/populations; multi-decade horizon | OPEN |
+| Nepal irrigation / X3b | S-ORG + S-NORM | PASS | STRONG CANDIDATE | NOT ESTABLISHED | not primary | irrigation maintenance/allocation; upstream/tail-end; seasonal/long-run | OPEN |
+| AI-agent authorization / X3b | S-TECH + S-ORG; S-LEGAL only where deployment-specific | PASS | NOT ESTABLISHED | NOT ESTABLISHED by authorization mechanism alone | PASS for security audit / evaluator model | declared security boundary; user/operator/affected system; immediate/downstream | OPEN |
+| AMR / X4b | S-BIO | PASS | NOT REQUIRED | NOT ESTABLISHED | PASS where public-health / epidemiological modelling is used | treatment effectiveness; current patient/future population; short/long horizon | OPEN |
+| Performative Prediction / X4b | S-TECH + S-ORG where deployed | PASS | OPEN | CASE-DEPENDENT CANDIDATE | possible / often present in evaluation | declared predictive/control objective; deployer/predicted population/institution; iterative horizon | OPEN |
+| Road capacity / X4b | S-TECH | PASS | NOT ESTABLISHED | NOT ESTABLISHED | PASS for appraisal / transport modelling | declared congestion/appraisal objective; short/post-adaptation horizon | OPEN |
+| Combined-sewer legacy / X4c | S-MAT primary + S-LEGAL/S-ORG secondary | PASS, with material and legal layers kept separate | NOT ESTABLISHED | NOT ESTABLISHED | possible engineering analysis | sanitation/drainage relation and overflow-control relation must be named separately; later residents/utilities/receiving-water users; century/present horizon | OPEN |
+| IPv4 -> IPv6 / X4c + X3b | S-TECH + S-ORG | PASS | OPEN / not required | NOT ESTABLISHED merely from transition planning | possible engineering planning | interoperability / transition relation; operators/implementers/apps; coexistence horizon | NOT OPENED |
+| Precedent / stare decisis / X4c + X3b | S-LEGAL + S-ORG | PASS | possible institutional enactment; not separately required | NOT ESTABLISHED | not primary | declared precedent relation; successor court/litigants; cross-case horizon | OPEN |
+| RNN R1c adverse case | no admitted source for failed R1c relation | FAIL / NOT ADMITTED in this realization | NO | NO | PASS | NONE — causal candidate failed | NOT OPENED |
+| HKB R1c candidate | source-native dynamical relation candidate; exact B source PRE-ADMISSION | PRE-ADMISSION / OPEN | candidate only; not paid by current raw-data route | NO CLAIM | PASS for current analysis hypothesis | NONE until R1c admission | NOT OPENED |
+
+## 3. Row lessons
+
+### 3.1 Internet standards
+
+~~~text
+implemented protocol constraint
+-> interoperability burden
+~~~
+
+pays B without requiring C.
+
+This is a clean example of:
+
+~~~text
+B
+without
+explicit anticipation.
+~~~
+
+### 3.2 Nepal irrigation
+
+Rules-in-use and ongoing participant practice make Nepal irrigation the strongest current C0 pressure row.
+
+Current status remains:
+
+~~~text
+C0 = STRONG CANDIDATE
+~~~
+
+rather than automatic PASS, because the Ledger has not yet run a dedicated C0 source audit.
+
+### 3.3 AMR
+
+Separate:
+
+~~~text
+S-BIO recursive resistance field
+from
+public-health / epidemiological OBS-MODEL.
+~~~
+
+The structural fact that current antimicrobial use changes later resistance conditions does not itself create a universal moral rule.
+
+### 3.4 Performative Prediction
+
+A predictive model inside a deployed system does not automatically pay C1.
+
+C1 requires:
+
+~~~text
+formed locus
++ model-mediated anticipation
++ model actually used in present organization.
+~~~
+
+Therefore current status is CASE-DEPENDENT CANDIDATE.
+
+### 3.5 Road capacity
+
+The phrase:
+
+~~~text
+appraisal should include induced demand
+~~~
+
+is observer / institutional methodology unless a formed decision locus actually uses the model in current organization.
+
+Therefore:
+
+~~~text
+OBS-MODEL = PASS
+C1 = NOT ESTABLISHED
+~~~
+
+### 3.6 RNN adverse case
+
+This is the strongest negative control for prediction conflation.
+
+The preregistered claim:
+
+~~~text
+candidate retained organization should specifically affect later learning
+~~~
+
+was an analyst prediction.
+
+R1c failed.
+
+Therefore:
+
+~~~text
+OBS-MODEL = PASS
+
+B = FAIL / NOT ADMITTED
+
+C1 = NO
+
+indexed normative comparison = NO.
+~~~
+
+### 3.7 HKB candidate
+
+Current analysis expectation is still:
+
+~~~text
+OBS-MODEL
+~~~
+
+until a future authorized reanalysis pays the causal relation.
+
+Do not pre-pay B or C0 from theoretical fit.
+
+## 4. Indexed normative-comparison gate
+
+Generative expectation is not yet an indexed normative comparison.
+
+For G-stronger / G-weaker, record:
+
+~~~text
+evaluative relation / declared objective =
+position / locus =
+scale / grain =
+horizon =
+comparison dimension =
+actual trajectory / alternative =
+what is strengthened / preserved / weakened / substituted /
+hollowed / destroyed =
+~~~
+
+Without this index:
+
+~~~text
+G-stronger / G-weaker = NOT ADMITTED.
+~~~
+
+A declared objective may type the index.
+
+It does not by itself prove an immanent B relation.
+
+## 5. Functional, institutional and moral non-identity
+
+The Ledger permits claims such as:
+
+~~~text
+weaker relative to interoperability
+
+weaker relative to an operative security boundary
+
+weaker relative to preserving treatment effectiveness
+
+noncompliant relative to a declared legal relation.
 ~~~
 
 It does not by itself permit:
 
 ~~~text
-therefore it is morally wrong all-things-considered
-therefore a particular policy must be chosen
-therefore one affected position has absolute priority
+therefore morally wrong all-things-considered
+
+therefore one policy must be chosen
+
+therefore the larger system has moral priority
+
+therefore stable reproduction is legitimate.
 ~~~
 
-Those require added premises.
+Strong guard:
 
-## 4. Multi-position / horizon routing
+~~~text
+relation-reproductive strength
+!=
+participant-level generativity
+!=
+justice
+!=
+legitimacy.
+~~~
 
-A central civilizational use is to preserve multiple positions and horizons without inventing conflict where the source does not establish it.
+A stable domination structure could have strong B relative to its own reproduction.
+
+That fact alone would not establish moral legitimacy.
+
+### 5.1 Multi-position / horizon routing
 
 Dedicated owner:
 
 Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
-Retyping audit:
-
-Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
-
-Use three distinct states:
+Use:
 
 ~~~text
 POSITION/HORIZON SENSITIVE
@@ -155,44 +382,72 @@ DIVERGENCE EVIDENCED
 DIVERGENCE NOT ESTABLISHED / OPEN
 ~~~
 
-Example with evidence-paid divergence:
+For social / civilizational records where multiple positions are materially affected, PH indexing is required before any broader normative interpretation.
+
+Do not infer conflict merely because positions differ.
+
+## 5.2 Historical tag migration
+
+Historical files may still contain:
 
 ~~~text
-AMR:
-current patient's treatment benefit
-vs
-future population treatment effectiveness.
+E-MAT
+E-TECH
+E-LEGAL
+E-ORG
+E-NORM
+E-BIO
+E-MODEL
+E-MIXED
 ~~~
 
-Examples where only the weaker indexing burden is currently paid:
+These are pre-split records.
+
+Live routing is:
 
 ~~~text
-Nepal irrigation:
-tail-end position is explicitly measured,
-but directionally opposed upstream/downstream consequence
-is not established by the current GRG source record.
+E-MAT   -> S-MAT
+E-TECH  -> S-TECH
+E-LEGAL -> S-LEGAL
+E-ORG   -> S-ORG
+E-NORM  -> S-NORM
+E-BIO   -> S-BIO
 
-AI authorization:
-user/operator/affected-system positions are relevant,
-but their normative conflict is not established by M4-01.
+E-MODEL -> C1-MODEL or OBS-MODEL after locus test
+E-MIXED -> explicit source list; no live mixed tag.
 ~~~
 
-The framework should preserve positions instead of collapsing them into one scalar, while also refusing to invent a conflict.
+Do not migrate E-MODEL mechanically.
 
-## 5. Next development
+## 6. Next development
 
-Future ledger records should add:
+Do not add more positive normativity rows yet.
 
-- evidence source;
-- consequence bearer where established;
-- position-sensitivity status;
-- horizon-sensitivity status;
-- directional-divergence status;
-- reversibility;
-- externalized cost;
-- correction / appeal / revision capacity.
+Next bounded pressure:
 
-Do not create a universal moral weight vector at this stage.
+~~~text
+GENERATIVE EXPECTATION NEGATIVE PRODUCTIVITY
+~~~
+
+Use an existing repository case if possible to test one of:
+
+~~~text
+A. explicit / accurate prediction
+   != generative normativity
+
+B. strong structural / institutional continuation
+   != moral legitimacy.
+~~~
+
+Preferred existing negative controls:
+
+~~~text
+RNN R1c adverse case
+and
+precedent / binding authority.
+~~~
+
+The test should verify that the new schema rejects overclaim rather than merely re-labeling it.
 
 ## 6. Canonical boundary
 
