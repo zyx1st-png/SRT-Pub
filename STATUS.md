@@ -113,6 +113,9 @@ Public access-route verification:
 `Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`
 
 Current continuation handoff:
+`Operations/Handoffs/SRT_GRG_GTS_RECONCILIATION_HANDOFF_2026-09-21.md`
+
+Historical v0.3 closure handoff:
 `Operations/Handoffs/SRT_GRG_V0_3_AUTHOR_CLOSURE_HANDOFF_2026-09-21.md`
 
 Historical programme handoff:
