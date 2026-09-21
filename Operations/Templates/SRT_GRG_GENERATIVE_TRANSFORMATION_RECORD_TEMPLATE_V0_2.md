@@ -23,24 +23,45 @@ tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 >
 > Relation-family labels are legacy / analytical views, not the primary record unit.
 
-## 0. Mandatory core and optional modules
+## 0. Mandatory core, conditional modules, and minimal skeleton
 
 A GTS is not required to populate every module.
 
-Mandatory core for every new GTS:
+### 0.1 Mandatory core
+
+Every new GTS must open:
 
 ~~~text
 CORE-1 identity + research question
-CORE-2 O_R research-side objectification + strongest reasonable horizontal baseline
+
+CORE-2 O_R research-side objectification
+       + what is treated as given
+       + what is reopened
+       + strongest reasonable horizontal baseline
+
 CORE-3 source-native process / mechanism
-CORE-4 bounded transformation or bounded bridge claim
-CORE-5 at least one falsifiable burden:
+
+CORE-4 generative-condition declaration:
+       what candidate condition is being treated as frame-like,
+       what changes if it changes,
+       and whether a larger horizontal model could encode it
+
+CORE-5 bounded transformation or bounded bridge claim
+
+CORE-6 at least one falsifiable burden:
        P_G OR causal/proxy bridge OR source-native discriminator
-CORE-6 explicit failure / narrowing condition
-CORE-7 evidence-generative provenance
+
+CORE-7 explicit failure / narrowing condition
+
+CORE-8 evidence-generative provenance
+
+CORE-9 closeout:
+       evidence / maturity
+       revision / mismatch
+       final bounded verdict
 ~~~
 
-Optional modules include:
+### 0.2 Conditional modules
 
 ~~~text
 history-input
@@ -52,20 +73,56 @@ Generative Order
 E_G
 wholeward analysis
 cross-objectification gain
+measurement / proxy bridge
+mature-neighbor pressure
 carrier architecture
+progress comparison
+W-P loop
 SRT backpressure
 ~~~
 
-For every optional module not opened, write:
+Mature-neighbor pressure is REQUIRED when claiming prospective GRG credit / M4-side gain.
+
+For optional modules not opened:
 
 ~~~text
 status = NOT OPENED / N.A.
 reason =
 ~~~
 
+A single grouped reason may cover adjacent optional modules when the same bounded reason applies.
+
+But these high-risk modules require their own explicit reason when closed:
+
+~~~text
+history-input
+Generative Order
+E_G
+cross-objectification / XG
+~~~
+
 Do not use `NOT OPENED` as a silent escape hatch.
 
 Positive credit requires the corresponding module to be opened and paid.
+
+### 0.3 Minimal record skeleton
+
+A minimal bounded GTS may be as short as:
+
+~~~text
+1. question
+2. O_R / given / reopened / strongest baseline
+3. source-native account
+4. generative condition
+5. bounded transformation / bridge
+6. falsifiable burden + failure condition
+7. evidence-generative provenance
+8. evidence / maturity
+9. revision
+10. final verdict
+~~~
+
+Open additional modules only when load-bearing.
 
 Order / E_G discipline:
 
@@ -650,6 +707,9 @@ proxy failure != proof of a deeper unspecified vertical cause
 
 ## Q. Mature-neighbor pressure
 
+Required for prospective GRG / M4-side credit.
+Optional otherwise.
+
 ~~~text
 neighbor / source family =
 
@@ -741,7 +801,7 @@ Owner:
 
 `Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
 
-Keep this block compact. Use the owner for definitions and guards.
+Keep this block compact. Use the owner for all vocabulary definitions and guards; the template must not create a parallel provenance taxonomy.
 
 ~~~text
 O_R =
