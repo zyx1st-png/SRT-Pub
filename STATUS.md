@@ -76,8 +76,20 @@ Civilizational Learning Architecture:
 Domain + Civilization Atlas seed:
 `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
 
-GRG Relation Record template:
+GRG Relation Record template v0.2:
+`Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_2.md`
+
+GRG Relation Record template v0.1 — historical pre-retyping schema:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
+
+GRG G0-G11 foundational retyping Pass 1:
+`Operations/Audits/SRT_GRG_G0_G11_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md`
+
+GRG G0-G11 retyping red-team Pass 1:
+`Operations/Audits/SRT_GRG_G0_G11_RETYPING_RED_TEAM_PASS1_2026-09-21.md`
+
+GRG Relation Library foundational retyping Pass 1:
+`Operations/Audits/SRT_GRG_RELATION_LIBRARY_FOUNDATIONAL_RETYPING_PASS1_2026-09-21.md`
 
 Generative-expectation second adjudication:
 `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md`
@@ -812,7 +824,7 @@ Bearer admission threshold + Bearer <-> position stability
 32. framework-adequacy audit after repeated absorption = COMPLETE: M4 remains strict target-domain transfer criterion but is not the sole GRG framework adequacy axis;
 33. Cross-Domain Burden Matrix v0.1 = ACTIVE at Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md;
 34. Generative Expectation Ledger v0.1 = ACTIVE at Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md;
-35. next framework work = pressure the SRT -> GRG Foundational Bridge and GRG Minimal Architecture, then retype G0-G11 and the current Relation Library before further matrix/ledger hardening or transfer escalation;
+35. next framework work = author architecture adjudication after completed G0-G11 retyping, red-team, Relation Library retyping and Relation Record v0.2; only then harden the minimal architecture and resume matrix/ledger or transfer work;
 36. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
 37. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
 38. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
@@ -825,6 +837,10 @@ Bearer admission threshold + Bearer <-> position stability
 45. RNN correction = tested L2-facing trace NULL does not imply vertical efficacy NULL; proxy failure also does not establish an unspecified deeper vertical cause;
 46. G0-G11 = provisional discovery scaffold pending foundational retyping, not accepted final GRG skeleton;
 47. M4-01 + M4-02 remain COMPLETE / ABSORBED methodological assets; future serial M4 hunting is not current mainline;
+48. G0-G11 foundational retyping Pass 1 = COMPLETE: G0 upstream; G1/G2 merged bridge burden; G3/G4 R-HIST; G5 R-LOC with One specialization; G6 R-POS dependency OPEN; G7 split; G8 R-RECON; G9 C-MULTI; G10 C-XSC; G11 L-REFLEX;
+49. Relation Library retyping Pass 1 = COMPLETE: R1a proxy/trace, R1c R-HIST core, X3 composite/interface, X4 R-RECON source;
+50. Relation Record template v0.2 = ACTIVE for new records; architecture role / verticality / proxy status / M-level are separate fields;
+51. author adjudication gate = OPEN for R-FORM status, R-POS dependency, R-HIST subtype naming, R-RECON realization threshold, and proto-grammar closure standard;
 
 ~~~
 
