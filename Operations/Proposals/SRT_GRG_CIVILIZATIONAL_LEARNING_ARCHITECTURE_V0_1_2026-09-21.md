@@ -531,16 +531,38 @@ Do not add another inheritance case merely to populate provenance categories.
 
 Carrier-role census is COMPLETE and a minimal Role Library is earned.
 
+CIV-005 negative / borderline application is also COMPLETE.
+
+Result:
+
+~~~text
+Role Library negative productivity = PASS
+
+X4c =
+NOT ADMITTED BY CURRENT CIV-005 EVIDENCE
+
+SUBSTRATE =
+ROLE-CANDIDATE / PRE-ADMISSION
+~~~
+
+Framework gain:
+
+~~~text
+carrier-role plausibility
+cannot bootstrap
+successor-inheritance admission.
+~~~
+
 Current next task:
 
 ~~~text
-apply Role Library to existing CIV-005 beaver ecosystem-engineering record
-as a negative / borderline test.
+positive-record admission-order consistency audit
+across existing X4c PASS records.
 ~~~
 
-Use existing evidence only.
+Use repository evidence only.
 
-The purpose is to specify exactly why persistence alone does not pay X4c and what evidence is missing, not to manufacture a positive inheritance case.
+Ask whether any existing positive record received COMPONENT-ROLE-PASS before independently paying successor boundary, field transmission and changed successor possibilities.
 
 ## 15. Canonical and political guard
 
