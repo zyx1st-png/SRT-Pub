@@ -90,7 +90,7 @@ carrier components =
 component provenance metadata = P-MAT / P-ECO / P-INST / P-INFO / other / n.a.
 component causal role(s) = use Role Library where applicable; source-local role only if needed
 role evidence / near-control =
-component status = COMPONENT-ROLE-PASS / PRESENT-ROLE-OPEN / NOT-ESTABLISHED / FAIL
+component status = COMPONENT-ROLE-PASS / ROLE-CANDIDATE-PRE-ADMISSION / PRESENT-ROLE-OPEN / NOT-ESTABLISHED / FAIL
 persistence process = PASSIVE-PERSISTENCE / ACTIVE-MAINTENANCE / RECURRENT-REPRODUCTION / MIXED / OPEN
 minimal role set sufficient for X4c =
 architecture sufficiency = PASS / OPEN / FAIL
@@ -111,6 +111,18 @@ Guard:
 MAINTENANCE persistence process
 !=
 carrier component role
+
+Admission-order guard:
+
+~~~text
+carrier-role plausibility
+!=
+X4c admission
+
+if successor boundary / field transmission is OPEN:
+use ROLE-CANDIDATE / PRE-ADMISSION,
+not COMPONENT-ROLE-PASS.
+~~~
 ~~~
 
 ## F. GRG burden mapping
