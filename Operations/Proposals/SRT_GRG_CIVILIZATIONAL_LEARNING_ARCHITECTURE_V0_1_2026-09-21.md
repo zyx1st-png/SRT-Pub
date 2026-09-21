@@ -490,16 +490,37 @@ Adequacy Pass 1 corrected two overclaims:
 - modern regulation in CIV-006 is expectation provenance, not inheritance carrier;
 - P-INST in IPv4/IPv6 is PRESENT / ROLE-OPEN, not a paid causal carrier role.
 
-### Generative expectation provenance
+### Generative expectation schema
 
-Remain separately typed:
+Live owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+Source / provenance:
 
 ~~~text
-E-MAT / E-TECH / E-LEGAL / E-ORG /
-E-NORM / E-BIO / E-MODEL / E-MIXED
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
 ~~~
 
-Carrier roles and expectation sources must not be collapsed.
+Locus / mode:
+
+~~~text
+B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL
+~~~
+
+Evaluative comparison additionally requires:
+
+~~~text
+relation/objective
++ position/locus
++ scale/grain
++ horizon
++ comparison dimension
+~~~
+
+Historical E-MODEL and E-MIXED are retired as live tags.
+
+Carrier roles, expectation sources, anticipation locus and moral legitimacy must not be collapsed.
 
 They are not new ontology entities or moral ranks.
 
