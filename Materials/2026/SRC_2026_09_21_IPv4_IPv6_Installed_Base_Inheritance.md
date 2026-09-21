@@ -196,21 +196,42 @@ prior deployed field F
 
 It therefore supports X4c while narrowing carrier provenance.
 
-## 9. Expectation provenance
+## 9. Generative Expectation routing
 
-Current interoperability / transition expectations are primarily:
+Live schema owner:
 
-~~~text
-E-TECH
-~~~
-
-with standards / operational layers:
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
 ~~~text
-E-ORG / E-MIXED
+source / provenance =
+S-TECH + S-ORG
+
+B-STRUCTURAL =
+PASS relative to the admitted interoperability /
+transition relation.
+
+C0-ENACTED =
+OPEN / not required for current X4c result.
+
+C1-MODEL =
+NOT ESTABLISHED merely from transition planning.
+
+OBS-MODEL =
+PRESENT where engineering / deployment planning
+uses analytical models.
+
+evaluative index =
+interoperability / transition objective
++ operator / implementer / application positions
++ multi-year coexistence horizon.
+
+moral legitimacy =
+NOT OPENED.
 ~~~
 
-Do not infer moral normativity.
+Historical `E-MIXED` is not a live tag.
+
+Do not infer C1 merely because deployment planning uses models.
 
 ## 10. Integration target
 
