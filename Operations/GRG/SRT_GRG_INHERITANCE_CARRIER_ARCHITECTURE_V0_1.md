@@ -254,7 +254,7 @@ C = {
 persistence process = ACTIVE-MAINTENANCE / MIXED over long horizon
 ~~~
 
-Modern regulation may add E-LEGAL expectation provenance.
+Modern regulation may add S-LEGAL + S-ORG Generative Expectation source layers.
 
 That does not make regulation the inheritance carrier.
 
@@ -426,6 +426,14 @@ and cannot strengthen X4c admission.
 
 ## 9. Relation / carrier / expectation separation
 
+Generative Expectation live owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+Expectation source/provenance is now typed with S-*;
+anticipation locus / mode is typed separately with B/C0/C1/OBS.
+
+
 Keep three layers distinct:
 
 ~~~text
@@ -444,11 +452,11 @@ Therefore:
 ~~~text
 P-INST carrier role
 !=
-E-LEGAL expectation
+S-LEGAL / S-ORG expectation source
 
 P-INFO payload
 !=
-E-TECH expectation
+S-TECH expectation source
 
 P-MAT substrate
 !=
