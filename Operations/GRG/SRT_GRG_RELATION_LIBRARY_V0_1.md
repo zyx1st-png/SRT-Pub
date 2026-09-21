@@ -98,12 +98,14 @@ R1c != R1d
 
 decodable marker != causal organization
 history-classifiable structure != causal re-entry
+L2-facing / objectified trace != vertical generative organization
+tested trace NULL != vertical efficacy NULL
 ~~~
 
 Evidence state:
 
 - RNN decoder candidate: marker found, R1c not paid;
-- RNN spectral candidate: R1a PASS, R1c NULL in two O3 executions;
+- RNN spectral candidate: R1a PASS, tested spectral R1c mapping NULL in two O3 executions; the tested L2-facing/objectified trace is not identified with vertical generative organization, so no whole-vertical causal verdict follows;
 - Bowler: source-native positive R1b/R1c pressure;
 - HKB: R1b/R1c candidate, raw reanalysis pending.
 
@@ -417,3 +419,19 @@ Do not seek more M3 examples merely to increase case count.
 This library is noncanonical.
 
 No entry here rewrites Selection, L0, One/Bearer, canonical normativity, scientific Level or distinctiveness.
+
+Foundational routing note — 2026-09-21:
+
+~~~text
+Relation Library = calibration / candidate-grammar surface
+!= SRT -> GRG foundational owner
+
+M3/M4 = later grammar validation / transfer discipline
+!= foundational derivation of GRG
+~~~
+
+The draft foundational owner is:
+Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+
+The draft minimal architecture is:
+Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
