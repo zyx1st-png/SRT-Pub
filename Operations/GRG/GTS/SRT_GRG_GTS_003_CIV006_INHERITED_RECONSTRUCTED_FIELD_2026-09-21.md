@@ -538,6 +538,10 @@ counterfactual realization =
 current greenfield vs inherited-field discriminator
 = GRG-GENERATED UNOBSERVED
 
+grammar-validation mode =
+STRUCTURAL = YES
+PROSPECTIVE = NO / NOT YET EXECUTED
+
 grammar-validation credit =
 structural / M3 = YES
 prospective / M4 = NONE
