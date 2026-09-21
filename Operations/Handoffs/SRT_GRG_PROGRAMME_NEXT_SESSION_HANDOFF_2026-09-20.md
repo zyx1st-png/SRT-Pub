@@ -182,6 +182,9 @@ public original 300-Hz trajectories = NO-GO / NOT LOCATED
 historical author-held data route = PLAUSIBLE / EVIDENCED
 current authorized raw-data route = NOT ESTABLISHED
 request package = PREPARED
+public contact route = VERIFIED
+legacy-data custody order = de Poel -> Peper -> Roerdink
+institutional fallback = VU FGB research.data.fgb@vu.nl
 request actually sent = NO
 new human experiment = NO
 simulation-as-confirmation = NO
@@ -298,7 +301,8 @@ Use:
 5) Operations/Audits/SRT_GRG_R1_CROSS_REALIZATION_SOURCE_FIDELITY_PASS1_2026-09-21.md
 6) Operations/Audits/SRT_GRG_R1_HKB_SOURCE_PROTOCOL_ACCESS_FEASIBILITY_2026-09-21.md
 7) Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md
-8) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+8) Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md
+9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 

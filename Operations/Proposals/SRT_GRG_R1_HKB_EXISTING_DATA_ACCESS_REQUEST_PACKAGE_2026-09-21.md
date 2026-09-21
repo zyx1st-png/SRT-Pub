@@ -46,21 +46,32 @@ Reason:
 - the 2020 paper used the original Post dataset;
 - current research remains in coordination dynamics / coupled-oscillator movement science.
 
-Secondary current routes:
+Secondary current routes, ordered by current legacy-data custody evidence:
 
 ~~~text
+Lieke Peper
+Vrije Universiteit Amsterdam / Neurocontrol
+l.peper@vu.nl
+
 Melvyn Roerdink
 Vrije Universiteit Amsterdam
 m.roerdink@vu.nl
-
-Lieke Peper
-Vrije Universiteit Amsterdam
-l.peper@vu.nl
 ~~~
 
-Peper is also an author of the original 2000 frequency/amplitude study and the 2020 reanalysis.
+Peper is an author of the original 2000 frequency/amplitude study and the 2020 reanalysis; the 2020 contribution statement also assigns resources and data-curation roles to Peper.
 
-Do not assume any individual still controls the data. The request asks for routing if they do not.
+Institutional fallback if authors cannot identify the archive / controller:
+
+~~~text
+VU Faculty of Behavioural and Movement Sciences
+Research Data Steward
+research.data.fgb@vu.nl
+~~~
+
+Current public-route verification is recorded in:
+`Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`.
+
+Do not assume any individual or data steward still controls the data. The request asks for routing if they do not.
 
 ## 2. Exact data object requested
 
@@ -243,6 +254,9 @@ and do not block the whole GRG programme indefinitely.
 
 ~~~text
 request-package preparation = COMPLETE
+current public contact routes = VERIFIED 2026-09-21
+public raw trajectory repository = STILL NOT LOCATED
+institutional archive fallback = IDENTIFIED
 request actually sent = NO
 raw data access = NO
 raw data opened = NO
