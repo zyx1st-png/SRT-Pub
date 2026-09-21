@@ -573,13 +573,27 @@ admission order is logical / epistemic,
 not mandatory artifact chronology.
 ~~~
 
+X4c carrier-subprogramme local closure is COMPLETE.
+
+Verdict:
+
+~~~text
+LOCAL CLOSE
+carrier vocabulary = FROZEN FOR CURRENT EVIDENCE
+new carrier-case accumulation = STOP BY DEFAULT
+~~~
+
+The inheritance-carrier line is no longer the civilizational-learning mainline.
+
 Current next task:
 
 ~~~text
-bounded X4c carrier-subprogramme local-closure audit
+return to broader GRG
+and select the next underconstrained central burden
+using existing framework / ledger surfaces.
 ~~~
 
-Ask whether the carrier architecture is now sufficiently constrained for current evidence that vocabulary should be frozen and work should return to broader GRG rather than continue refining inheritance categories.
+Prefer burdens that improve cross-domain generative grammar, exclusion power and normativity discipline rather than merely add case count.
 
 ## 15. Canonical and political guard
 
