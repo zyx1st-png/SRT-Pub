@@ -119,7 +119,19 @@ The matrix should be used to ask:
 - where an expectation becomes operative;
 - how a current action reconstructs a later conditioning field;
 - where consequence differs by position / horizon;
+- whether that difference is merely analysis-sensitive or actually directionally divergent;
 - where mature target theory fully absorbs GRG.
+
+Position / horizon owner:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+Guard:
+
+~~~text
+PH sensitivity is cross-cutting.
+It is not another relation row by default.
+~~~
 
 ## 6. Next expansion rule
 
