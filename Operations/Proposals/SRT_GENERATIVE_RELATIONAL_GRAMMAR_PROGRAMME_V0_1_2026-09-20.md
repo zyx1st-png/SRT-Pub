@@ -678,6 +678,75 @@ Mainline comparison surfaces:
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 ~~~
 
+## 16.1 Foundational re-prioritization — 2026-09-21
+
+A later author adjudication reorders the GRG mainline after the first framework / transfer cycle.
+
+Current priority:
+
+~~~text
+reconstructed SRT
+-> SRT -> GRG foundational bridge
+-> minimal GRG architecture
+-> G0-G11 retyping
+-> Relation Library retyping
+-> revised domain / civilization interfaces
+-> later transfer / grammar learning
+~~~
+
+This re-prioritization does not delete completed work.
+
+Retain:
+
+- M4-01 AI-agent authorization = ABSORBED / M4 NO;
+- M4-02 road-capacity induced demand = ABSORBED / M4 NO;
+- M4-E0 absorption-before-execution;
+- Cross-Domain Burden Matrix;
+- Generative Expectation Ledger;
+- X3 / X4 / relation-library evidence;
+- RNN / HKB calibration.
+
+Their role changes from mainline driver to downstream calibration / pressure / representation assets while the foundational bridge is rebuilt.
+
+Horizontal / vertical research distinction:
+
+~~~text
+horizontal
+= transformations / laws / generative predictions
+  inside a sufficiently stabilized objectification
+
+vertical
+= formation / stabilization / reconstruction
+  of the objects, boundaries, state spaces and generative conditions themselves
+~~~
+
+The distinction is indexed to the research question and objectification, not permanently attached to an entity.
+
+RNN correction:
+
+~~~text
+tested L2-facing / objectified trace NULL
+!= vertical generative organization NULL
+~~~
+
+but also:
+
+~~~text
+proxy failure
+!= proof of an unspecified deeper vertical cause
+~~~
+
+Foundational owners:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+- Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
+- Operations/Audits/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_INTERNAL_RED_TEAM_PASS1_2026-09-21.md
+
+G0-G11 remain a provisional discovery scaffold pending retyping.
+
+Further M4 escalation is not the immediate mainline.
+
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
 
 ## 17. No-write zones for this programme stage
