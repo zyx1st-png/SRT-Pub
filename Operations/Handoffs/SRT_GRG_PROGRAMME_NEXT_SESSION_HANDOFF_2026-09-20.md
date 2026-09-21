@@ -687,3 +687,100 @@ Do not harden the minimal architecture until the author adjudicates:
 
 No canonical edit.
 No new serial M4 attempt before this gate.
+
+
+## GRG V0.1 COMPLETION — WHOLE-ARCHITECTURE REVIEW GATE
+
+The author provisionally accepted the five architecture recommendations for the sole purpose of completing a first coherent GRG version.
+
+Author source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_V0_1_PROVISIONAL_ARCHITECTURE_2026-09-21.md
+
+Primary review owner:
+
+Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_1_2026-09-21.md
+
+Status:
+
+~~~text
+GRG v0.1 = COMPLETE / READY FOR AUTHOR REVIEW
+architecture type = revisable typed proto-grammar
+canonical = NO
+scientific distinctiveness = NOT ESTABLISHED
+universal grammar = NOT ESTABLISHED
+~~~
+
+Provisional v0.1 choices:
+
+~~~text
+Formation = cross-cutting burden; independent R-FORM remains OPEN
+
+R-POS = downstream of R-LOC in v0.1
+
+R-HIST-a = retained efficacy
+R-HIST-b = recurrent reconstitution
+
+R-RECON-a = typed generative-field reconstruction
+R-RECON-b = realized downstream generative consequence
+
+GRG v0.1 = proto-grammar, not mature closed formal grammar
+~~~
+
+Current first-version structure:
+
+~~~text
+UPSTREAM
+C0 non-exhaustion
+C1 differential manifestation / relative backgrounding
+
+CROSS-CUTTING
+formation
+maintenance
+objectification
+evidence
+failure
+
+VERTICAL CORE
+R-HIST-a
+R-HIST-b
+R-LOC
+R-POS
+R-RECON-a
+R-RECON-b
+
+COMPOSITION
+C-MULTI
+C-XSC
+
+CONSEQUENCE
+CONSEQ-H
+CONSEQ-P
+CONSEQ-B [SRT stronger interface only]
+
+EXPECTATION
+E-B
+E-C0
+E-C1
+
+NORMATIVITY
+N-INDEX
+
+REFLEXIVE
+L-REFLEX-W
+L-REFLEX-M
+~~~
+
+STOP RULE:
+
+Do not expand the architecture before whole-review.
+
+Do not:
+- add relation families by default;
+- start a new serial M4 target;
+- canonicalize GRG;
+- claim universal grammar;
+- expand GRG-as-AGI;
+- formalize a closed syntax.
+
+Next = author whole-architecture review of the single v0.1 owner.
