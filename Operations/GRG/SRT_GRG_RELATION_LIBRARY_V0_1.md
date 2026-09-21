@@ -111,6 +111,23 @@ Evidence state:
 - Bowler: source-native positive R1b/R1c pressure;
 - HKB: R1b/R1c candidate, raw reanalysis pending.
 
+RNN author-aligned trace guard:
+
+~~~text
+selected RNN trace
+= objectified measurement slice of an L2 / history aspect
+
+trace != full L2 / history generative organization
+
+trace-bounded R1c NULL
+!= vertical generative efficacy NULL
+
+proxy failure
+!= proof of an unspecified deeper vertical cause
+~~~
+
+The RNN spectral family remains STOP; this guard narrows interpretation, not the adverse result.
+
 Universal law status:
 
 ~~~text
