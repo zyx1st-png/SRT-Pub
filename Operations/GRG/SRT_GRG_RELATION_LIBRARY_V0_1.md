@@ -312,7 +312,18 @@ successor exposure != inheritance if later possibilities are unchanged
 inheritance != irreversibility
 inheritance != memory of origin
 old != inherited generative field
+current interoperability != successor inheritance automatically
 ~~~
+
+Reusable near-control:
+
+~~~text
+greenfield environment
+vs
+existing installed-base environment
+~~~
+
+If the same current rule exists but successor path-conditioning disappears in the greenfield case, that supports a distinct X4c inherited-field burden.
 
 Inheritance provenance tags:
 
@@ -321,17 +332,41 @@ P-MAT = material / infrastructural carrier
 P-ECO = ecological / environmental carrier
 P-INST = institutional / rule scaffold
 P-INFO = informational / symbolic carrier
-P-MIXED = mixed
+P-MIXED = mixed / multi-carrier
+~~~
+
+P-MIXED must declare its components.
+
+Example:
+
+~~~text
+P-MIXED[
+  P-INFO protocol/address semantics,
+  P-MAT/TECH deployed hosts/routers/infrastructure,
+  P-INST standards/operational practice
+]
 ~~~
 
 These tags type the carrier.
 
 They are not new GRG relations.
 
-Positive cross-domain pressure:
+Current provenance state:
 
 - ecological inheritance / niche construction -> P-ECO;
-- combined-sewer legacy infrastructure -> P-MAT.
+- combined-sewer legacy infrastructure -> P-MAT;
+- IPv4 -> IPv6 installed-base inheritance -> P-MIXED;
+- standalone P-INFO realization -> OPEN / NOT YET ESTABLISHED.
+
+Strong carrier guard:
+
+~~~text
+symbolically describable != P-INFO
+documented rule != P-INFO
+software-encoded != P-INFO automatically
+~~~
+
+P-INFO requires evidence that the informational / symbolic carrier is sufficient for successor inheritance without essential material / operational carrier dependence.
 
 CIV-006 infrastructure result:
 
