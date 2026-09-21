@@ -98,12 +98,14 @@ R1c != R1d
 
 decodable marker != causal organization
 history-classifiable structure != causal re-entry
+L2-facing / objectified trace != vertical generative organization
+tested trace NULL != vertical efficacy NULL
 ~~~
 
 Evidence state:
 
 - RNN decoder candidate: marker found, R1c not paid;
-- RNN spectral candidate: R1a PASS, R1c NULL in two O3 executions;
+- RNN spectral candidate: R1a PASS, tested spectral R1c mapping NULL in two O3 executions; the tested L2-facing/objectified trace is not identified with vertical generative organization, so no whole-vertical causal verdict follows;
 - Bowler: source-native positive R1b/R1c pressure;
 - HKB: R1b/R1c candidate, raw reanalysis pending.
 
@@ -441,3 +443,40 @@ Do not award M4 for absorption.
 This library is noncanonical.
 
 No entry here rewrites Selection, L0, One/Bearer, canonical normativity, scientific Level or distinctiveness.
+
+
+## 10. Foundational routing note — 2026-09-21
+
+Author adjudication now places the SRT -> GRG foundational bridge upstream of further transfer escalation.
+
+~~~text
+Relation Library
+= calibration / candidate-grammar surface
+!= SRT -> GRG foundational owner
+
+M3/M4
+= later semantic-invariance / transfer discipline
+!= foundational derivation of GRG
+~~~
+
+M4-01 and M4-02 remain completed absorbed attempts and retain their methodological value.
+
+Future serial M4 hunting is not the current programme mainline.
+
+Current draft foundational owners:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SRT_TO_GRG_FOUNDATIONAL_BRIDGE_2026-09-21.md
+- Operations/Proposals/SRT_TO_GRG_FOUNDATIONAL_BRIDGE_V0_1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_MINIMAL_ARCHITECTURE_V0_1_2026-09-21.md
+
+Next use of this library is retyping:
+
+~~~text
+horizontal relation?
+vertical generative relation?
+vertical-horizontal interface relation?
+composite?
+trace / proxy only?
+~~~
+
+before additional relation accumulation.
