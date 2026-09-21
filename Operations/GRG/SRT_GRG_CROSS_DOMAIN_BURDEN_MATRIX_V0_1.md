@@ -48,6 +48,7 @@ It is not a canonical ontology table.
 | X4c | ecological inheritance | niche-construction / evolutionary ecology | P-ECO modified environmental carrier | source-native PASS pressure | persistence alone != inheritance | descendants / later organisms encounter a reconstructed field | no built-in moral direction | source-native owner / cross-domain anchor |
 | X4c / CIV-006 | legacy combined-sewer infrastructure | urban water engineering / infrastructure history / environmental regulation | P-MAT maintained material hydraulic field | M3 PASS | old / expensive / persistent infrastructure != inheritance automatically | successor urban cohorts must operate through, repair, bypass or replace inherited field | indexed infrastructure / water-quality expectation; policy verdict separate | M3 / M4 not tested |
 | X4c carrier stress | IPv4 -> IPv6 transition | IETF standards / Internet operations | P-MIXED installed protocol field: P-INFO + P-MAT/TECH + P-INST | X4c PASS; P-INFO-alone FAIL/OPEN | current interoperability / old protocol / specification alone != successor inheritance | existing IPv4 installed base changes later IPv6 deployment and interoperability choices; greenfield differs | E-TECH / E-ORG; moral normativity not opened | M3 retained; provenance narrowed |
+| X4c carrier stress / CIV-007 | binding vs persuasive precedent | jurisprudence / court hierarchy / stare decisis | P-MIXED: P-INFO PAYLOAD + P-INST AUTHORITY | X4c PASS; P-INST causal role PASS; P-INST standalone OPEN | decision text / citation / current rule alone != inherited binding field | successor court inherits prior holding under authority relation; persuasive authority / first-impression cases provide near-controls | E-LEGAL + E-ORG; justice/legitimacy not inferred | M3 retained; provenance architecture revised |
 
 ## 2. What the matrix shows
 
@@ -95,8 +96,13 @@ IPv4/IPv6 stress test adds:
 
 ~~~text
 P-INFO alone = NOT ESTABLISHED
-P-MIXED must expose its components
-greenfield vs installed-base = reusable X4c near-control
+P-INST standalone = NOT ESTABLISHED
+P-MIXED must expose components + roles
+
+greenfield vs installed-base
+and
+binding vs persuasive / first-impression
+= reusable X4c near-control families
 ~~~
 
 ### Negative controls remain visible
