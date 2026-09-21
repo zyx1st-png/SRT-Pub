@@ -768,13 +768,82 @@ MIXED
 OPEN
 ~~~
 
-Next bounded pressure:
+Next bounded pressure at census close:
 
 ~~~text
-apply Role Library to existing CIV-005 beaver record
+CIV-005 negative application
 without new positive evidence
--> specify why X4c still fails / remains gated
--> specify exact missing evidence
+~~~
+
+Status:
+
+~~~text
+COMPLETED in §5.12
+negative productivity = PASS
+~~~
+
+## 5.12 CIV-005 Role Library negative productivity Pass 1
+
+Owner:
+
+Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+
+Scope:
+
+~~~text
+EXISTING EVIDENCE ONLY
+no new beaver / niche-construction source
+no promotion by analogy
+~~~
+
+Result:
+
+~~~text
+Role Library negative productivity = PASS
+
+X4a = STRONG / unchanged
+X4b = NOT ESTABLISHED / unchanged
+X4c = NOT ADMITTED BY CURRENT CIV-005 EVIDENCE
+
+P-ECO modified environment =
+candidate carrier component
+
+SUBSTRATE =
+ROLE-CANDIDATE / PRE-ADMISSION
+
+persistence process =
+PASSIVE-PERSISTENCE CANDIDATE / source-bounded
+
+successor boundary =
+OPEN
+
+field transmission =
+OPEN
+
+inherited successor possibility change =
+OPEN
+~~~
+
+Framework revision:
+
+~~~text
+carrier-role plausibility
+cannot bootstrap
+X4c relation admission.
+~~~
+
+New status:
+
+~~~text
+ROLE-CANDIDATE / PRE-ADMISSION
+~~~
+
+Next:
+
+~~~text
+positive-record admission-order consistency audit
+across existing X4c PASS records
+using repository evidence only.
 ~~~
 
 ## 6. Mainline work order
@@ -795,11 +864,13 @@ without new positive evidence
 13. historical P-MIXED provenance kind = RETIRED;
 14. bounded carrier-role census = COMPLETE;
 15. minimal Role Library v0.1 = EARNED;
-16. next = negative/borderline Role Library application to CIV-005 beaver record;
-17. no new positive evidence in that test; do not promote by analogy;
-18. require carrier-role + persistence-process + expectation provenance in new records;
-19. continue underdeveloped domain re-entry;
-20. use future M4 attempts selectively as calibration, not as the sole queue;
+16. CIV-005 negative/borderline Role Library application = COMPLETE / PASS;
+17. ROLE-CANDIDATE / PRE-ADMISSION guard = ACTIVE;
+18. next = positive-record admission-order consistency audit across existing X4c PASS records;
+19. no new source hunt in that audit;
+20. require carrier-role + persistence-process + expectation provenance in new records;
+21. continue underdeveloped domain re-entry;
+22. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue

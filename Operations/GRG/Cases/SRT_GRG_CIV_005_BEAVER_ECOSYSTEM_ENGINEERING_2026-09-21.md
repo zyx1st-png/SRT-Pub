@@ -86,11 +86,78 @@ X4a environment / option-field reconstruction = STRONG CANDIDATE
 
 X4b recursive selective feedback = NOT ESTABLISHED BY THIS CASE RECORD ALONE
 
-X4c inherited reconstructed condition = PLAUSIBLE PRESSURE
-                                      but evolutionary / transgenerational burden not claimed here
+X4c inherited reconstructed condition =
+NOT ADMITTED BY CURRENT CIV-005 EVIDENCE
+
+reason =
+successor boundary / field transmission / inherited successor possibility change
+are not independently paid by this case record
 ~~~
 
 This separation is the point of the case.
+
+## H.1 Carrier Role Library negative test
+
+Audit owner:
+
+Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+
+Existing-evidence-only result:
+
+~~~text
+candidate carrier component =
+beaver-modified riverine / riparian environment
+
+provenance metadata =
+P-ECO
+
+candidate reusable role =
+SUBSTRATE
+
+role status =
+ROLE-CANDIDATE / PRE-ADMISSION
+
+persistence process =
+PASSIVE-PERSISTENCE CANDIDATE / source-bounded
+
+successor boundary =
+OPEN
+
+field transmission across successor boundary =
+OPEN
+
+successor possibility change specifically due to inherited F =
+OPEN / NOT X4c-specifically paid
+
+architecture sufficiency =
+OPEN / relation admission not paid
+~~~
+
+Important guard:
+
+~~~text
+persistent modified environment
+-> SUBSTRATE candidate
+
+does NOT entail
+
+X4c inheritance.
+~~~
+
+The broader Laland ecological-inheritance source establishes a general source-native inheritance topology.
+
+It does not retroactively supply beaver-specific evidence for this CIV-005 record.
+
+Missing burden is therefore not "more carrier roles."
+
+The decisive gap is upstream:
+
+~~~text
+declared successor boundary
++ transmitted reconstructed field
++ successor enters under F without original reconstruction choice
++ changed successor possibilities due to inherited F
+~~~
 
 ## I. Generative expectation
 
@@ -138,13 +205,24 @@ This is a useful negative comparison.
 
 If X4 cannot distinguish ecosystem modification from demonstrated selective feedback, it is too broad and should be retired.
 
+For X4c specifically:
+
+~~~text
+SUBSTRATE candidate
+without paid successor-boundary / field-transmission evidence
+must remain PRE-ADMISSION.
+~~~
+
+If carrier-role labels can bootstrap inheritance admission, the carrier architecture is circular and should be revised.
+
 ## N. Compact summary
 
 ~~~text
 source-native mechanism = ecosystem engineering through dams/canals/vegetation change
-GRG candidate = X4a strong; X4b/X4c gated
+GRG candidate = X4a strong; X4b gated; X4c NOT ADMITTED by current CIV-005 evidence
 evidence = broad ecological review
-main guard = ecosystem engineering != evolution by niche construction automatically
-cross-domain value = separates environment reconstruction from selection feedback
-next action = pressure X4b/X4c with direct niche-construction evidence
+carrier role = P-ECO / SUBSTRATE ROLE-CANDIDATE / PRE-ADMISSION
+main guard = ecosystem engineering != ecological inheritance automatically
+cross-domain value = shows carrier-role plausibility cannot substitute for successor/transmission admission
+next action = positive-record admission-order consistency audit
 ~~~

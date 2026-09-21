@@ -375,6 +375,10 @@ Reusable Role Library:
 
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
+Negative-productivity owner:
+
+Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+
 Census verdict:
 
 ~~~text
@@ -439,6 +443,14 @@ architecture sufficiency automatically
 persistence process
 !=
 component causal role
+
+carrier-role plausibility
+!=
+X4c admission
+
+if successor boundary / field transmission is OPEN:
+use ROLE-CANDIDATE / PRE-ADMISSION,
+not COMPONENT-ROLE-PASS
 ~~~
 
 Adequacy owner:
@@ -619,15 +631,25 @@ Next:
 ~~~text
 Role Library v0.1 = EARNED
 
-first negative / borderline application:
-CIV-005 beaver ecosystem engineering
+CIV-005 negative productivity =
+PASS
+
+CIV-005 X4c =
+NOT ADMITTED BY CURRENT EVIDENCE
+
+new guard =
+ROLE-CANDIDATE / PRE-ADMISSION
+cannot bootstrap relation admission
+
+next =
+positive-record admission-order consistency audit
 
 question:
-does SUBSTRATE / PAYLOAD / INTERFACE / AUTHORITY routing
-clarify exactly why current evidence still fails X4c
-and what evidence is missing?
+did any existing positive X4c record award
+COMPONENT-ROLE-PASS before successor-boundary /
+field-transmission evidence was independently paid?
 
-Do not promote CIV-005 by analogy.
+No new sources.
 
 M4 remains available as periodic calibration
 when a genuinely uncertain prospective target exists.

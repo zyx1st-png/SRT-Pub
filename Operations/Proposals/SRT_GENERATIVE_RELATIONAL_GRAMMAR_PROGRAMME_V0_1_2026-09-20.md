@@ -640,6 +640,9 @@ G25 provenance-kind-first NARROW / causal-role-first ACTIVE / P-MIXED retired
 G26 bounded Carrier Role Census Pass 1
 G27 minimal X4c Carrier Role Library v0.1 EARNED
 G28 MAINTENANCE retyped to persistence process
+G29 CIV-005 Role Library negative productivity Pass 1
+G30 ROLE-CANDIDATE / PRE-ADMISSION guard
+G31 positive-record admission-order consistency audit = NEXT
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -708,6 +711,21 @@ OPEN / NOT PAID
 MAINTENANCE =
 RETYPED -> architecture persistence process
 
+CIV-005 negative productivity =
+PASS
+
+CIV-005 X4c =
+NOT ADMITTED BY CURRENT EVIDENCE
+
+CIV-005 candidate carrier =
+P-ECO / SUBSTRATE
+ROLE-CANDIDATE / PRE-ADMISSION
+
+admission-order guard =
+carrier-role plausibility
+cannot bootstrap
+X4c relation admission
+
 CIV-006 correction =
 modern regulation is E-LEGAL/E-ORG expectation,
 not a secondary inheritance carrier
@@ -768,7 +786,10 @@ Framework revision:
 - bounded role census retained only SUBSTRATE/PAYLOAD/INTERFACE as CORE and AUTHORITY as SPECIALIZED;
 - MAINTENANCE is architecture persistence process, not reusable component role;
 - ENACTMENT and REPRODUCTION are not admitted to Role Library v0.1;
-- next Role Library test is existing CIV-005 negative/borderline evidence only.
+- CIV-005 negative/borderline test passed as a negative-productivity test without promoting the case;
+- ROLE-CANDIDATE / PRE-ADMISSION now separates plausible carrier roles from paid X4c carrier roles;
+- relation admission must precede COMPONENT-ROLE-PASS;
+- next = positive-record admission-order consistency audit over existing X4c PASS records only.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.

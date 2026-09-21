@@ -200,8 +200,15 @@ COMPONENT-SUFFICIENT
 = the case record supports a single-component architecture
   as sufficient for the declared X4c inheritance burden.
 
+ROLE-CANDIDATE / PRE-ADMISSION
+= component plausibly fits a carrier role,
+  but successor-boundary / field-transmission admission
+  is not yet paid.
+  It cannot count toward architecture sufficiency.
+
 PRESENT / ROLE-OPEN
-= component is present but its causal role is not separately established.
+= component is present but its causal role is not separately established
+  inside an otherwise admitted or candidate architecture.
 
 NOT-ESTABLISHED
 = requested standalone or role claim is not paid.
@@ -343,7 +350,7 @@ A near-control need not be a randomized experiment.
 
 It must isolate enough of the proposed role to make the component claim informative.
 
-## 8. Architecture sufficiency rule
+## 8. Architecture sufficiency and admission-order rule
 
 Do not award a provenance category a global "standalone" status.
 
@@ -355,7 +362,34 @@ what is the minimal component / role architecture
 sufficient to transmit the reconstructed field into the successor cohort?
 ~~~
 
-If one component is enough:
+But carrier-role labels cannot bootstrap relation admission.
+
+Required order:
+
+~~~text
+1. candidate reconstructed field F;
+2. declared successor cohort / cycle;
+3. evidence F persists / is transmitted across that boundary;
+4. successor enters under F without making the original reconstruction choice;
+5. F materially changes successor possibilities;
+6. then award COMPONENT-ROLE-PASS and architecture sufficiency.
+~~~
+
+Before steps 2–5 are paid:
+
+~~~text
+role status =
+ROLE-CANDIDATE / PRE-ADMISSION
+
+architecture sufficiency =
+OPEN
+~~~
+
+Negative owner:
+
+Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+
+If one component is enough after admission:
 
 ~~~text
 cardinality = SINGLE-COMPONENT
@@ -524,17 +558,23 @@ Adequacy Pass 1 answered the prior question positively for the carrier architect
 
 The bounded role census is COMPLETE and a minimal Role Library is earned.
 
-Next gate:
+CIV-005 negative / borderline test is COMPLETE.
 
-> Can the Role Library sharpen an existing negative / borderline X4c record without converting it into a positive case by analogy?
-
-Primary target:
+Result:
 
 ~~~text
-CIV-005 beaver ecosystem engineering.
+ROLE LIBRARY NEGATIVE PRODUCTIVITY = PASS
+ROLE-CANDIDATE / PRE-ADMISSION = ADDED
+X4c CIV-005 = NOT ADMITTED BY CURRENT EVIDENCE
 ~~~
 
-Use existing evidence only. Do not add a new positive case in the same step.
+Next gate:
+
+> Did any existing positive X4c record award carrier-role PASS before independently paying successor-boundary / field-transmission evidence?
+
+Run a bounded consistency audit over existing positive X4c records only.
+
+No new source hunt.
 
 ## 13. Canonical boundary
 

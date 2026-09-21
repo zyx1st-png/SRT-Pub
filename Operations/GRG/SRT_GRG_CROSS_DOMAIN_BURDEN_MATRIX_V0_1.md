@@ -44,6 +44,7 @@ It is not a canonical ontology table.
 | X4b | antimicrobial resistance | evolutionary biology / epidemiology | antimicrobial-shaped selective environment | PASS pressure | treatment benefit != no long-run feedback | current use changes later resistance/treatment conditions | multi-position health conflict; full moral verdict separate | M3 family support |
 | X4b | performative prediction | ML theory | model-induced data / target distribution | M3 PASS | exogenous distribution shift != performative feedback | deployment changes future risk/retraining field | not opened | M3 / M4 absorbed |
 | X4b negative control | beaver record alone | ecology | environmental modification | admission FAIL for X4b under record alone | X4a does not entail X4b | selection/viability mediation not paid by this evidence alone | not opened | negative control |
+| X4c negative / CIV-005 | beaver ecosystem engineering | ecology / ecosystem engineering | P-ECO modified environment; SUBSTRATE = ROLE-CANDIDATE / PRE-ADMISSION | X4c NOT ADMITTED by current CIV-005 evidence | persistence / later organisms != declared successor inheritance | successor boundary + field transmission + inherited successor possibility change remain OPEN | not opened | Role Library negative productivity PASS; no maturity change |
 | X4b M4-02 | road-capacity expansion | transport planning / economics | generalized travel-cost / accessibility field | semantic fit PASS | traffic growth alone != mediated induced feedback | lower generalized cost changes later travel demand and congestion | appraisal functional; policy recommendation separate | M4 NO / absorbed |
 | X4c | ecological inheritance | niche-construction / evolutionary ecology | P-ECO modified environmental carrier | source-native PASS pressure | persistence alone != inheritance | descendants / later organisms encounter a reconstructed field | no built-in moral direction | source-native owner / cross-domain anchor |
 | X4c / CIV-006 | legacy combined-sewer infrastructure | urban water engineering / infrastructure history / environmental regulation | P-MAT maintained material hydraulic field | M3 PASS | old / expensive / persistent infrastructure != inheritance automatically | successor urban cohorts must operate through, repair, bypass or replace inherited field | indexed infrastructure / water-quality expectation; policy verdict separate | M3 / M4 not tested |
@@ -152,7 +153,21 @@ The matrix explicitly includes:
 ~~~text
 formal structure without operative coupling
 environment reconstruction without paid recursive feedback
+beaver persistence without paid X4c successor/transmission admission
 RNN imprint without specific causal re-entry
+~~~
+
+CIV-005 adds an admission-order guard:
+
+~~~text
+SUBSTRATE-like persistence
+-> ROLE-CANDIDATE / PRE-ADMISSION
+
+does not entail
+
+COMPONENT-ROLE-PASS
+or
+X4c admission.
 ~~~
 
 Therefore the matrix is not a positive-example catalog.

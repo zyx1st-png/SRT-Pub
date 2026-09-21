@@ -332,18 +332,65 @@ but exact process typing remains source-local.
 
 Do not promote a persistence-process value into a carrier role automatically.
 
-## 9. Use rule
+## 9. Admission-order guard
+
+Negative-productivity owner:
+
+Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
+
+A reusable role must not bootstrap X4c relation admission.
+
+Forbidden loop:
+
+~~~text
+persistent environment
+-> label SUBSTRATE
+-> carrier role exists
+-> therefore inheritance exists.
+~~~
+
+Before relation-level successor / transmission burdens are paid, use:
+
+~~~text
+ROLE-CANDIDATE / PRE-ADMISSION
+= source-native component plausibly fits a reusable role,
+  but X4c successor-boundary / field-transmission admission
+  is not yet established.
+~~~
+
+This status:
+
+- may guide evidence search;
+- may identify the likely carrier component;
+- cannot count toward architecture sufficiency;
+- cannot strengthen X4c maturity;
+- cannot be promoted to COMPONENT-ROLE-PASS by analogy from another source family.
+
+Admission order:
+
+~~~text
+candidate reconstructed field F
+-> declared successor cohort / cycle
+-> F transmitted / preserved across that boundary
+-> successor enters under F
+-> successor possibilities materially changed by F
+-> COMPONENT-ROLE-PASS inside admitted carrier architecture
+~~~
+
+## 9.1 Use rule
 
 For an X4c carrier architecture:
 
 1. identify the source-native component;
 2. state provenance metadata;
-3. assign only paid reusable roles;
-4. leave unsupported proposed roles ROLE-OPEN;
-5. record source-local roles separately if needed;
-6. record architecture persistence process separately;
-7. specify a near-control / failure condition for each reusable role where possible;
-8. state the minimal paid role set sufficient for the declared X4c mapping.
+3. declare the successor boundary before awarding a paid carrier role;
+4. use ROLE-CANDIDATE / PRE-ADMISSION where relation admission is still open;
+5. assign only paid reusable roles after successor / transmission burden is met;
+6. leave unsupported proposed roles ROLE-OPEN;
+7. record source-local roles separately if needed;
+8. record architecture persistence process separately;
+9. specify a near-control / failure condition for each reusable role where possible;
+10. state the minimal paid role set sufficient for the declared X4c mapping.
 
 ## 10. Anti-inflation rule
 
@@ -397,19 +444,41 @@ M4 remains:
 NONE
 ~~~
 
-## 13. Next gate
+## 13. Negative productivity result and next gate
 
-Use this library first on an existing negative / borderline record:
+CIV-005 negative / borderline application:
 
 ~~~text
-CIV-005 beaver ecosystem engineering.
+ROLE LIBRARY NEGATIVE PRODUCTIVITY = PASS
+
+SUBSTRATE =
+ROLE-CANDIDATE / PRE-ADMISSION
+
+X4c =
+NOT ADMITTED BY CURRENT CIV-005 EVIDENCE
+~~~
+
+The library sharpened the failure by locating the missing burden at:
+
+~~~text
+successor boundary
++ field transmission
++ inherited successor possibility change
+~~~
+
+rather than at role count.
+
+Next:
+
+~~~text
+positive-record admission-order consistency audit
 ~~~
 
 Question:
 
-> Does the role library clarify exactly why persistence alone does not yet pay X4c, and what evidence would be required?
+> Did any existing positive X4c case receive COMPONENT-ROLE-PASS before successor-boundary / field-transmission evidence was independently paid?
 
-Do not promote CIV-005 by analogy.
+Do not add new sources in that audit.
 
 ## 14. Canonical boundary
 
