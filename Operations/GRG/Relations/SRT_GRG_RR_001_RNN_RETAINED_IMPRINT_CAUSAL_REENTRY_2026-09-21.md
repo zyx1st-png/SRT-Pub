@@ -58,7 +58,12 @@ Guard:
 
 ~~~text
 spectral summary != full dynamical organization
+
+tested L2-facing / objectified trace
+!= vertical generative organization itself
 ~~~
+
+Here "L2-facing" is a programme interpretation of the measured recurrent-history / stable-constraint-facing section, not a canonical redefinition of L2.
 
 ## E. Generative relation candidate
 
@@ -85,6 +90,8 @@ R1d = BLOCKED
 
 The second O3 realization used a stricter equal-magnitude D-history spectral-direction control and still returned NULL.
 
+This verdict is bounded to the tested spectral / decoder causal object. It does not establish that a vertical generative organization, if independently identified, cannot causally condition later generation.
+
 ## G. Generative expectation
 
 A genuine R1c candidate would require the identified S-history organization to produce a specific later-process consequence beyond credible alternative-history organization controls.
@@ -99,7 +106,7 @@ normativity mapping = NOT OPENED
 
 ## I. Cross-domain value
 
-This record is primarily a **false-positive guard**.
+This record is primarily a **false-positive and objectification guard**.
 
 It prevents:
 
@@ -109,6 +116,17 @@ history-classifiable structure
 ~~~
 
 from becoming a default GRG inference.
+
+It also prevents:
+
+~~~text
+measurable L2-facing trace
+-> vertical generative organization
+~~~
+
+from becoming a default identity claim.
+
+The reverse rescue is equally blocked: failure of this trace does not by itself establish an unspecified deeper vertical cause.
 
 ## J. Revision pressure
 
@@ -134,6 +152,6 @@ source-native relation = training history -> recurrent spectral imprint
 GRG candidate = R1a / R1c
 burden paid = R1a yes; R1c no
 mapping status = retained-imprint match only
-strongest guard = structure that remembers history need not causally mediate later learning
-next action = STOP this spectral family
+strongest guard = an objectified history trace need not be the vertical organization that generated it; failure of the tested trace does not settle vertical efficacy
+next action = STOP this spectral family; retain as objectification / bridge calibration
 ~~~
