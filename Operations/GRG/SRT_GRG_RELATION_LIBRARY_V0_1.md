@@ -356,6 +356,43 @@ collectively stable != just
 larger-scale success != participant-level good
 ~~~
 
+## 7.1 Cross-cutting analysis surfaces
+
+Not every useful GRG framework dimension belongs in the Relation Library.
+
+Current explicit example:
+
+~~~text
+PH — Position / Horizon Consequence Index
+~~~
+
+Owner:
+
+Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
+
+Retyping owner:
+
+Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
+
+PH is:
+
+~~~text
+ACTIVE analysis burden
+NOT a generative relation by default
+NOT assigned M0-M5 maturity
+~~~
+
+Reason:
+
+~~~text
+"different positions / horizons receive different consequences"
+does not itself specify a generative dependency topology.
+~~~
+
+This distinction is load-bearing.
+
+The library should reject useful analytical dimensions that do not qualify as relations rather than absorbing every framework concept into the grammar.
+
 ## 8. Current next gate
 
 Current relation maturity:
@@ -419,6 +456,7 @@ Mainline comparison surfaces:
 
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+- Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
 Next:
 
