@@ -521,6 +521,68 @@ New mainline surfaces:
 - Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
 - Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
 
+## 5.7 CIV-006 long-duration infrastructure inheritance pass
+
+Case:
+
+~~~text
+legacy combined-sewer infrastructure
+19th-century formation -> present operation
+~~~
+
+Frozen before target-source inspection:
+
+Operations/Proposals/SRT_GRG_CIV006_COMBINED_SEWER_INHERITANCE_FREEZE_2026-09-21.md
+
+Source-native result:
+
+~~~text
+historical reconstruction
+-> persistent / maintained P-MAT carrier
+-> successor urban cohort enters inherited field
+-> later operation / compliance / retrofit possibilities are conditioned
+~~~
+
+Cross-surface result:
+
+~~~text
+X4c = M3 PASS
+
+persistence != inheritance
+inheritance != irreversibility
+inheritance != memory of origin
+
+PH:
+horizon divergence = EVIDENCED
+position sensitivity = EVIDENCED
+fine-grained distributive conflict = OPEN
+
+Expectation:
+E-MAT material structural burden
+!=
+E-LEGAL modern compliance burden
+!=
+moral legitimacy
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+
+Programme refinement:
+
+~~~text
+X4c now requires an inheritance carrier + successor cohort +
+changed later possibility structure.
+
+Inheritance provenance:
+P-MAT / P-ECO / P-INST / P-INFO / P-MIXED.
+
+Expectation provenance:
+E-MAT / E-TECH / E-LEGAL / E-ORG /
+E-NORM / E-BIO / E-MODEL / E-MIXED.
+~~~
+
 ## 6. Mainline work order
 
 ~~~text
@@ -529,9 +591,11 @@ New mainline surfaces:
 3. treat actual directional divergence as evidence-paid, never presumed;
 4. add rows only from source-native records with admission / evidence status;
 5. seek grammar revision or exclusion, not case count;
-6. pressure the first long-duration historical / infrastructure case with PH;
-7. continue underdeveloped domain re-entry;
-8. use future M4 attempts selectively as calibration, not as the sole queue;
+6. first long-duration historical / infrastructure case = COMPLETE through CIV-006;
+7. next pressure test = institutional or informational inheritance under carrier-explicit X4c;
+8. require inheritance + expectation provenance in new records;
+9. continue underdeveloped domain re-entry;
+10. use future M4 attempts selectively as calibration, not as the sole queue;
 ~~~
 
 ## 7. Calibration queue
@@ -553,7 +617,7 @@ It should show:
 - at least 8 source-native relation records;
 - at least 4 distinct domain families;
 - at least 3 civilizational case records; [PAID in seed Pass 1]
-- at least 2 candidate cross-domain relations that survive a false-convergence audit; [PAID: X3b / X4b reached M3]
+- at least 2 candidate cross-domain relations that survive a false-convergence audit; [PAID: X3b / X4b / X4c reached M3]
 - at least 1 candidate relation narrowed or rejected by evidence.
 
 That would demonstrate learning rather than collection.
