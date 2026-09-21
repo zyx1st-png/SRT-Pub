@@ -323,6 +323,9 @@ two separately frozen / preregistered O3 tests in the same synthetic family
 counterfactual realization =
 INTERVENTION-REALIZED matched controls
 
+grammar-validation mode =
+N.A. / LOCAL ADVERSE CALIBRATION
+
 grammar-validation credit =
 positive = NO
 adverse calibration / bridge narrowing = YES
