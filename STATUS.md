@@ -82,6 +82,9 @@ First bounded-use audit:
 Post-#1025 GTS reconciliation audit:
 `Operations/Audits/SRT_GRG_GTS_RECONCILIATION_PASS1_2026-09-21.md`
 
+Prospective-family selection audit:
+`Operations/Audits/SRT_GRG_PROSPECTIVE_FAMILY_SELECTION_AUDIT_PASS1_2026-09-22.md`
+
 Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
