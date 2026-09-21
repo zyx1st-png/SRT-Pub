@@ -1004,11 +1004,13 @@ P. ecological inheritance / CIV-006 / IPv4-IPv6 / precedent all survive the stri
 Q. positive downgrades = NONE; circular bootstrap = NONE;
 R. X4c carrier-subprogramme local closure = COMPLETE / CLOSE;
 S. freeze current carrier vocabulary and stop default carrier-case / provenance accumulation;
-T. select the next underconstrained central GRG burden from existing framework surfaces;
-U. prefer a burden with cross-domain relevance, exclusion/revision power and direct relation to generative grammar / normativity;
-V. continue domain re-entry for underdeveloped domains;
-W. use M4 prospectively when a genuinely uncertain target appears,
-   not as a serial novelty hunt.
+T. broader-GRG next-burden selection = COMPLETE; Generative Expectation adequacy selected;
+U. Generative Expectation provenance/locus adequacy = PRODUCTIVE SPLIT;
+V. E-MODEL / E-MIXED live provenance tags = RETIRED;
+W. Generative Expectation negative productivity = PASS;
+X. live expectation-schema migration = COMPLETE / PASS;
+Y. next = bounded C0/C1 realization pressure using existing Nepal-irrigation and Performative-Prediction evidence first;
+Z. continue domain re-entry for underdeveloped domains and use M4 prospectively only when a genuinely uncertain target appears.
 ~~~
 
 Current calibration:
@@ -1039,6 +1041,11 @@ Comparison owners:
 - Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
 - Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
 - Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_BROADER_NEXT_BURDEN_SELECTION_PASS1_2026-09-21.md
+- Operations/Proposals/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_CHARTER_V0_1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_ADEQUACY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_SCHEMA_CONSISTENCY_CENSUS_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 
