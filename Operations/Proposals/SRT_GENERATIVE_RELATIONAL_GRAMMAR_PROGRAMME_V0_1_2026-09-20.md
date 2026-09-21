@@ -621,6 +621,7 @@ G6 first cross-domain / civilizational schema pressure tests
 G7 mature-source pressure + burden splitting
 G8 Relation Library v0.1 + negative controls + invariance Pass 1
 G9 first M3 / M4 cross-domain transfer-absorption Pass 1
+G10 first prospectively frozen M4 attempt: AI-agent authorization -> ABSORBED / M4 NO
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -643,6 +644,16 @@ M4 = NO / absorbed
 M4 = NONE
 M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
+
+M4-01:
+X3b -> AI-agent policy vs operative authorization
+charter frozen before target source audit = YES
+target-domain pre-ownership = STRONG
+repository pre-ownership = STRONG
+verdict = ABSORBED / M4 NO
+duplicate experiment = STOP
+
+M4-E0 absorption-before-execution = ACTIVE
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
