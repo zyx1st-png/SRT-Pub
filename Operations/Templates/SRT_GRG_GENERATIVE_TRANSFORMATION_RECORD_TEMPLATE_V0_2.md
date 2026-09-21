@@ -607,6 +607,12 @@ evidence-generation role =
   GRAMMAR-VALIDATION /
   MIXED
 
+grammar-validation mode =
+  STRUCTURAL /
+  PROSPECTIVE /
+  BOTH /
+  N.A.
+
 investigator / GRG process rewrite =
   NONE /
   MEASUREMENT-ONLY /
