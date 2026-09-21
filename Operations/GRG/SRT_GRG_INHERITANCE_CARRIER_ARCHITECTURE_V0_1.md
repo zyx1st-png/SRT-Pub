@@ -132,36 +132,60 @@ causal role tells us what that component does in successor inheritance.
 
 ## 4. Causal-role vocabulary
 
-Roles are source-sensitive.
+Reusable role owner:
 
-Current recurring roles include:
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+Role-census owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Current reusable roles:
 
 ~~~text
-PAYLOAD
-= carries content / rule / configuration / inherited specification
-
+CORE:
 SUBSTRATE
-= materially or environmentally preserves the field
-
-AUTHORITY
-= determines binding / admissibility / mandatory force
-
-ENACTMENT
-= makes an abstract rule / specification operative in practice
-
-MAINTENANCE
-= keeps the carrier / field available across later cycles
-
-REPRODUCTION
-= recreates enough of the carrier into a successor cycle
-
+PAYLOAD
 INTERFACE
-= determines compatibility / access between successor process and inherited field
+
+SPECIALIZED:
+AUTHORITY
 ~~~
 
-This list is not exhaustive.
+Current non-admitted / retyped terms:
 
-Do not force every case into every role.
+~~~text
+ENACTMENT
+= CASE-LOCAL / NARROW
+= not independently distinguished from INTERFACE / implementation in current X4c records.
+
+REPRODUCTION
+= OPEN / NOT PAID as reusable component role.
+
+MAINTENANCE
+= RETYPED from component role to architecture-level persistence process.
+~~~
+
+Source-local roles may still be recorded when a mature domain requires them.
+
+They do not become reusable library roles without a later census.
+
+### 4.1 Persistence process
+
+Record separately:
+
+~~~text
+persistence process =
+PASSIVE-PERSISTENCE
+ACTIVE-MAINTENANCE
+RECURRENT-REPRODUCTION
+MIXED
+OPEN
+~~~
+
+This asks how carrier architecture C remains available across the successor boundary.
+
+It is not itself a component causal role.
 
 ## 5. Sufficiency / evidence status
 
@@ -198,9 +222,11 @@ cardinality = SINGLE-COMPONENT
 C = {
   c1:
     provenance metadata = P-ECO
-    role = SUBSTRATE / MAINTENANCE
+    role = SUBSTRATE
     evidence = modified environmental state persists into later organisms
     status = COMPONENT-SUFFICIENT for this declared case family
+
+persistence process = PASSIVE-PERSISTENCE / source-bounded
 }
 ~~~
 
@@ -212,11 +238,13 @@ cardinality = SINGLE-COMPONENT
 C = {
   c1:
     provenance metadata = P-MAT
-    role = SUBSTRATE / MAINTENANCE / INTERFACE
+    role = SUBSTRATE / INTERFACE
     evidence = maintained material hydraulic network
                conditions successor operation / retrofit
     status = COMPONENT-SUFFICIENT for this declared case
 }
+
+persistence process = ACTIVE-MAINTENANCE / MIXED over long horizon
 ~~~
 
 Modern regulation may add E-LEGAL expectation provenance.
@@ -237,7 +265,7 @@ C = {
 
   c2:
     provenance metadata = P-MAT
-    role = SUBSTRATE / ENACTMENT / INTERFACE
+    role = SUBSTRATE / INTERFACE
     evidence = installed hosts / routers / applications / routing infrastructure
     status = COMPONENT-ROLE-PASS
 
@@ -249,7 +277,13 @@ C = {
 }
 
 minimal paid role set =
-PAYLOAD + SUBSTRATE/ENACTMENT/INTERFACE
+PAYLOAD + SUBSTRATE + INTERFACE
+
+source-local ENACTMENT wording =
+NARROW / does not strengthen admission
+
+persistence process =
+MIXED / source-local
 
 architecture sufficiency = PASS
 
@@ -411,43 +445,76 @@ institution carries field
 
 Reject.
 
-## 11. Programme status after adequacy Pass 1
+## 11. Programme status after role census Pass 1
 
 Adequacy owner:
 
 Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 
-Verdict:
+Role-census owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
+
+Role Library:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+
+Current state:
 
 ~~~text
 CARRIER ARCHITECTURE = RETAIN / PRODUCTIVE
-PROVENANCE-KIND-FIRST MODEL = NARROW
 CAUSAL-ROLE-FIRST MODEL = ACTIVE
 P-MIXED AS PROVENANCE KIND = RETIRED
+
+Role Library v0.1 = EARNED
+
+CORE:
+SUBSTRATE
+PAYLOAD
+INTERFACE
+
+SPECIALIZED:
+AUTHORITY
+
+NOT ADMITTED:
+ENACTMENT
+REPRODUCTION
+
+RETYPED:
+MAINTENANCE -> persistence process
 ~~~
 
 Current case-bounded states:
 
 ~~~text
 ecological inheritance =
-SINGLE-COMPONENT P-ECO / SUBSTRATE+MAINTENANCE = PASS
+SINGLE-COMPONENT
+P-ECO / SUBSTRATE
+persistence process = PASSIVE-PERSISTENCE
+architecture PASS
 
 CIV-006 =
-SINGLE-COMPONENT P-MAT / SUBSTRATE+MAINTENANCE+INTERFACE = PASS
+SINGLE-COMPONENT
+P-MAT / SUBSTRATE+INTERFACE
+persistence process = ACTIVE-MAINTENANCE / MIXED
+architecture PASS
 
 IPv4/IPv6 =
-MULTI-COMPONENT = PASS
-P-INFO PAYLOAD = PASS
-P-MAT SUBSTRATE/ENACTMENT/INTERFACE = PASS
+MULTI-COMPONENT
+P-INFO / PAYLOAD = PASS
+P-MAT / SUBSTRATE+INTERFACE = PASS
 P-INST proposed maintenance role = ROLE-OPEN
+source-local ENACTMENT = NARROW
+architecture PASS
 
 precedent =
-MULTI-COMPONENT = PASS
-P-INFO PAYLOAD = PASS
-P-INST AUTHORITY = PASS
+MULTI-COMPONENT
+P-INFO / PAYLOAD = PASS
+P-INST / AUTHORITY = PASS
+architecture PASS
 ~~~
 
-No provenance kind receives its own M-status.
+No carrier role receives M0-M5 status.
 
 ## 12. Next gate
 
@@ -455,13 +522,19 @@ Do not hunt standalone provenance categories merely to fill the table.
 
 Adequacy Pass 1 answered the prior question positively for the carrier architecture and negatively for provenance-kind-first classification.
 
-Next bounded question:
+The bounded role census is COMPLETE and a minimal Role Library is earned.
 
-> Are the current causal roles recurrent and discriminating enough to justify a reusable Role Library?
+Next gate:
 
-Before creating one, run a role census across existing X4c carrier records.
+> Can the Role Library sharpen an existing negative / borderline X4c record without converting it into a positive case by analogy?
 
-Do not create the library if role recurrence is weak or merely terminological.
+Primary target:
+
+~~~text
+CIV-005 beaver ecosystem engineering.
+~~~
+
+Use existing evidence only. Do not add a new positive case in the same step.
 
 ## 13. Canonical boundary
 
