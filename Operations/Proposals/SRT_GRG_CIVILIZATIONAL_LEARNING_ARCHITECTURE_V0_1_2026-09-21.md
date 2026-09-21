@@ -606,15 +606,51 @@ new carrier-case accumulation = STOP BY DEFAULT
 
 The inheritance-carrier line is no longer the civilizational-learning mainline.
 
+Broader-GRG selection is COMPLETE.
+
+Selected mainline:
+
+~~~text
+Generative Expectation
+source/provenance x locus/mode x evaluative-index adequacy.
+~~~
+
+Current schema migration:
+
+~~~text
+PASS
+
+source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
+
+locus/mode =
+B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL
+
+E-MODEL / E-MIXED live provenance =
+RETIRED
+~~~
+
+Negative productivity:
+
+~~~text
+PASS
+
+prediction/classification != generative normativity
+binding institutional force != moral legitimacy
+~~~
+
 Current next task:
 
 ~~~text
-return to broader GRG
-and select the next underconstrained central burden
-using existing framework / ledger surfaces.
+bounded C0/C1 realization pressure
 ~~~
 
-Prefer burdens that improve cross-domain generative grammar, exclusion power and normativity discipline rather than merely add case count.
+Use existing source-native evidence first:
+
+- Nepal irrigation -> C0-ENACTED candidate;
+- Performative Prediction -> C1-MODEL case-dependent candidate.
+
+If either locus is not actually source-paid, downgrade it rather than filling the schema by symmetry.
 
 ## 15. Canonical and political guard
 
