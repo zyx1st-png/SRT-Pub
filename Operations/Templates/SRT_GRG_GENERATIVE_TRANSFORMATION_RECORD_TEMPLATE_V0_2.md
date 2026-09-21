@@ -13,6 +13,7 @@ dependency:
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md
   - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+  - Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
 tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 ---
 
@@ -21,6 +22,68 @@ tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 > Primary new-record schema for process-first GRG. Historical GTS v0.1 existed only in closed, unmerged PR #1018.
 >
 > Relation-family labels are legacy / analytical views, not the primary record unit.
+
+## 0. Mandatory core and optional modules
+
+A GTS is not required to populate every module.
+
+Mandatory core for every new GTS:
+
+~~~text
+CORE-1 identity + research question
+CORE-2 O_R research-side objectification + strongest reasonable horizontal baseline
+CORE-3 source-native process / mechanism
+CORE-4 bounded transformation or bounded bridge claim
+CORE-5 at least one falsifiable burden:
+       P_G OR causal/proxy bridge OR source-native discriminator
+CORE-6 explicit failure / narrowing condition
+CORE-7 evidence-generative provenance
+~~~
+
+Optional modules include:
+
+~~~text
+history-input
+reconstruction-output
+local-locus
+operative positionality
+composition
+Generative Order
+E_G
+wholeward analysis
+cross-objectification gain
+carrier architecture
+SRT backpressure
+~~~
+
+For every optional module not opened, write:
+
+~~~text
+status = NOT OPENED / N.A.
+reason =
+~~~
+
+Do not use `NOT OPENED` as a silent escape hatch.
+
+Positive credit requires the corresponding module to be opened and paid.
+
+Order / E_G discipline:
+
+~~~text
+do not open Generative Order merely because an operative mechanism exists.
+
+do not open E_G when the classification is only an analytic restatement of:
+GO3 generative efficacy
+or
+GO5 failure / dissolution.
+
+Strong E_G use should add a nontrivial order-relative discrimination
+or an explicit result that could force the classification to narrow / fail.
+~~~
+
+Evidence-provenance owner:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
 
 ## A. Identity
 
@@ -40,6 +103,8 @@ research mode =
 ~~~text
 research question =
 
+O_R research-side objectification =
+
 stabilized objectification =
   unit =
   boundary =
@@ -54,6 +119,11 @@ what is treated as given =
 what is reopened =
 
 strongest reasonable horizontal baseline =
+
+domain-internal verticality claim =
+  paid / partial / not established / not needed
+
+what would make this more than relabeling the horizontal baseline? =
 ~~~
 
 Guard:
@@ -276,9 +346,21 @@ co-occurrence != composition
 temporal sequence != composition
 ~~~
 
-## K. Generative Prediction — P_G
+## K. Testable burden — P_G / bridge / source-native discriminator
+
+At least one testable burden is mandatory, but it need not always be a GRG-generated P_G.
 
 ~~~text
+burden type =
+  GRG P_G /
+  causal bridge hypothesis /
+  proxy bridge /
+  source-native discriminator /
+  negative control
+
+P_G status =
+  CLAIMED / SOURCE-NATIVE / NOT CLAIMED / N.A.
+
 prediction target =
 
 prediction form =
@@ -300,11 +382,18 @@ predicted difference =
 what result would defeat or narrow the GTS? =
 ~~~
 
-Retrospective explanation alone does not pay mature P_G.
+Do not call a failed bridge hypothesis `P_G failed` unless it was actually a frozen GRG prediction. Retrospective explanation alone does not pay mature P_G.
 
 ## L. Generative Order admission
 
-For every order used by E_G, fill one block.
+~~~text
+order-analysis status =
+  OPENED / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
+~~~
+
+For every order actually used by E_G, fill one block.
 
 ~~~text
 order id =
@@ -371,6 +460,18 @@ projected E_G != ordinary admitted-order E_G
 ~~~
 
 ## M. Generative Expectation — E_G
+
+~~~text
+E_G status =
+  OPENED / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
+
+non-analytic discrimination added beyond GO3 / GO5 =
+  yes / no / open
+~~~
+
+If the answer above is `no`, keep E_G NOT OPENED unless a separate bounded reason is declared.
 
 Fill separately for each admitted order where needed. For a projected order, use the separate projected-E_G fields below and do not report ordinary E_G.
 
@@ -444,7 +545,9 @@ does the candidate average away a real local conflict? =
 hidden / delayed externalization exposed =
 
 wholeward status =
-  candidate / paid / partial / open / fail
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
 ~~~
 
 Guard:
@@ -493,7 +596,14 @@ if ABSORBED, what mature target-domain practice already owns the distinction? =
 independent replication rationale, if any =
 
 cross-objectification gain verdict =
-  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
+
+recurrence provenance =
+  INDEPENDENT / DIFFUSED / DESIGNED / MIXED / OPEN
+
+possible generative pseudoreplication =
+
+if NOT CLAIMED / N.A., reason =
 ~~~
 
 Required for PASS:
@@ -528,7 +638,7 @@ alternative horizontal explanation =
 perturbation / intervention =
 
 bridge status =
-  paid / partial / fail / open
+  paid / partial / fail / open / N.A.
 ~~~
 
 Guard:
@@ -625,6 +735,95 @@ Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 Current carrier line is LOCAL CLOSE. Do not create new roles or provenance categories absent a reopen trigger.
 
+## R.1 Evidence-generative provenance — mandatory
+
+Use the vocabulary and guards owned by:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+~~~text
+O_R =
+
+independently evidenced O_W =
+  yes / no / partial / open
+if yes, what world-side operative role is evidenced? =
+
+does O_R participate in generating O_W? =
+  yes / no / partial / open / n.a.
+
+was the tested grammar / model / order / intervention already involved
+in generating decisive evidence? =
+  yes / no / partial / open
+
+if yes, how? =
+  measurement only /
+  recommendation /
+  allocation /
+  policy /
+  technical control /
+  standardization /
+  institution /
+  direct intervention /
+  other
+
+timing =
+  pre-intervention /
+  post-intervention /
+  historically intervention-shaped /
+  mixed /
+  n.a.
+
+evidence purpose(s) =
+  discovery /
+  causal leverage /
+  construction /
+  robustness /
+  attribution /
+  mixed
+
+claim(s) this evidence may pay =
+
+claim(s) this evidence may NOT independently pay =
+
+recurrence provenance =
+  INDEPENDENT /
+  DIFFUSED /
+  DESIGNED /
+  MIXED /
+  OPEN /
+  N.A.
+
+independent / held-out support available? =
+
+external-drift / alternative-cause comparator =
+
+counterfactual realization =
+  OBSERVED /
+  INTERVENTION-REALIZED /
+  SOURCE-NATIVE BUT UNOBSERVED /
+  MODEL-DERIVED /
+  GRG-GENERATED UNOBSERVED /
+  OPEN /
+  N.A.
+
+could observed stability / convergence reflect
+active maintenance or suppression of alternative generation? =
+
+real failure / narrowing condition retained after this audit? =
+  yes / no / open
+~~~
+
+Hard guards:
+
+~~~text
+O_R != O_W
+recurrence != independent recurrence
+successful construction != independent discovery
+post-deployment conformity != independent confirmation
+Order Admission != Grammar Validation
+observed regularity != generative invariance
+~~~
+
 ## S. Evidence / maturity
 
 ~~~text
@@ -633,6 +832,9 @@ evidence family / families =
 source fidelity =
 
 independent recurrence =
+
+evidence-generative provenance owner applied =
+  yes / no
 
 prospective discrimination =
 
@@ -665,6 +867,7 @@ mismatch location =
   cross-objectification gain /
   carrier /
   proxy /
+  evidence-generative provenance /
   other
 
 revision operation =
@@ -778,12 +981,16 @@ verticality status =
 P_G status =
 
 Generative Order admission status =
+  PASS / PARTIAL / OPEN / FAIL / NOT OPENED / N.A.
 
 E_G status =
+  OPENED / NOT OPENED / N.A.
 
 cross-objectification gain status =
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
 
 wholeward status =
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
 
 main failure / open burden =
 
