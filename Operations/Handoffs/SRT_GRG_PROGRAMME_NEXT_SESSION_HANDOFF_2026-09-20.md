@@ -398,16 +398,55 @@ freeze target/design
 Reusable template:
 Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md
 
+M4-02 = COMPLETE / ABSORBED:
+
+~~~text
+relation = X4b recursive reconstructed-field feedback
+target = road-capacity expansion / induced demand
+charter freeze = PASS
+
+frozen control:
+fixed demand / no adaptation
+vs
+variable / adaptive demand
+
+target-domain result:
+transport planning already explicitly owns
+FTM vs VTM, generalized-cost feedback,
+route/mode/time/trip redistribution,
+trip generation / land-use response,
+induced-demand appraisal and user-benefit consequences.
+
+verdict = M4 NO / ABSORBED
+duplicate traffic simulation = STOP
+M4 = NONE
+~~~
+
+M4-E0 now has two independent prospective demonstrations:
+
+~~~text
+M4-01 X3b -> AI-agent authorization = absorbed
+M4-02 X4b -> road-capacity feedback = absorbed
+~~~
+
+Framework-adequacy audit:
+
+Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
+
+Mainline comparison surfaces:
+
+- Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+- Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
 MAINLINE NEXT:
 
 ~~~text
-M4-02:
-1. choose a different relation or substantially different target domain;
-2. freeze relation + target + question/control/failure expectation;
-3. commit charter before decisive target-source inspection;
-4. apply M4-E0 first;
-5. execute only if not absorbed;
-6. preserve absorption/null as valid framework learning.
+1. harden the cross-domain burden matrix;
+2. harden the generative-expectation ledger;
+3. use civilizational cases to expose position / horizon conflicts;
+4. seek exclusions / splits / revision, not case count;
+5. expand underdeveloped domain coverage;
+6. run future M4 attempts only when a genuinely uncertain target exists.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -511,13 +550,14 @@ Use:
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
 1) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-2) Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md
-3) Operations/Proposals/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_CHARTER_2026-09-21.md
-4) Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
-5) Materials/2026/SRC_2026_09_21_AI_Agent_Least_Privilege_Enforcement.md
-6) Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md
+2) Operations/Audits/SRT_GRG_M4_ABSORPTION_FRAMEWORK_ADEQUACY_PASS1_2026-09-21.md
+3) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+4) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+5) Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
+6) Operations/Audits/SRT_GRG_M4_02_ROAD_CAPACITY_RESULT_2026-09-21.md
 7) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
-8) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+8) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
+9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
@@ -526,27 +566,29 @@ GRG Relation Library = ACTIVE
 
 X3b = M3
 X4b = M3
+
+M4-01 X3b -> AI-agent authorization
+= ABSORBED / M4 NO
+
+M4-02 X4b -> road-capacity induced demand
+= ABSORBED / M4 NO
+
 M4 = NONE
 M5 = NONE
 
-M4-01:
-X3b -> AI-agent authorization
-charter freeze = PASS
-target-domain pre-ownership = STRONG
-repository pre-ownership = STRONG
-verdict = ABSORBED / M4 NO
-execution = STOP
+M4-E0 = validated across two target domains:
+freeze -> target-practice audit -> absorbed => stop duplicate execution.
 
-M4-E0 = ACTIVE:
-freeze -> target-practice audit -> absorbed means stop
-unless independent replication rationale exists.
+Do NOT weaken M4.
 
-next =
-M4-02
-different relation or substantially different target domain
--> freeze before target-source audit
--> apply M4-E0
--> execute only if not absorbed
+Framework mainline now =
+Cross-Domain Burden Matrix
++ Generative Expectation Ledger
++ civilizational position/horizon comparison
++ source-native domain expansion
++ grammar revision / exclusion.
+
+M4 is periodic calibration, not the sole mainline.
 
 calibration:
 RNN = STOP
@@ -557,7 +599,7 @@ new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要重做 M4-01 的 AI agent permission 实验。它已被成熟目标实践和仓库旧 AI 对照双重吸收。下一轮必须先冻结 M4-02 再查目标资料；ABSORBED 仍是成功的方法学结果。不要开 canonical landing。
+下一轮不要机械开 M4-03。先用 burden matrix 和 expectation ledger 检验 GRG 是否真的能在不同机制之间保持关系结构、暴露冲突、拒绝错误统一，并产生可追踪的 generative-expectation / indexed-normativity 路由。若未来出现目标领域 ownership 真正不确定的 transfer，再 prospectively freeze M4。不要把 ABSORBED 改名成成功，不要开 canonical landing。
 
 ## 9. Stop rule
 
