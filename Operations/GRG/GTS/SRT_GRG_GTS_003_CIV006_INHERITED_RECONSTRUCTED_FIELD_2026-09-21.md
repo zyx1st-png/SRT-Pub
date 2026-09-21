@@ -513,6 +513,52 @@ M4 = NONE
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
+## P.1 Evidence-generative provenance
+
+~~~text
+target process existed before GRG intervention? = YES
+
+target selection chronology =
+X4c family already existed;
+CIV-006 target was frozen before dedicated target-source inspection.
+
+evidence-generation roles =
+DISCOVERY from historical / infrastructure sources
++ ORDER-ADMISSION for bounded operative infrastructure order
++ STRUCTURAL grammar support at M3
+
+investigator / GRG process rewrite =
+NONE
+
+independence relation =
+target-frozen-before-dedicated-inspection
+!= fully held-out M4 validation
+
+counterfactual realization =
+current greenfield vs inherited-field discriminator
+= GRG-GENERATED UNOBSERVED
+
+grammar-validation credit =
+structural / M3 = YES
+prospective / M4 = NONE
+~~~
+
+Order-admission credit is bounded:
+
+~~~text
+GO1-GO3 =
+source-supported at the declared functional scope.
+
+GO5 replacement / dissolution =
+bounded counterfactual articulation;
+not an independently observed validation event.
+
+GO1-GO5 order admission
+!= independent X4c / GRG validation.
+~~~
+
+The future greenfield-vs-inherited-field result must remain unclaimed until a frozen held-out charter produces world-side evidence.
+
 ## Q. Revision / failure
 
 This GTS must fail or narrow if future cases show only:
