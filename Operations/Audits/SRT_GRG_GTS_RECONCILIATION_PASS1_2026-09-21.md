@@ -443,3 +443,38 @@ M4 = NONE
 M5 = NONE
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
+
+## 10.1 Post-verdict schema backpressure — evidence-generative provenance
+
+After the declared C1-C9 verdict, a second real-use issue was identified and audited separately:
+
+`Operations/Audits/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_PASS1_2026-09-21.md`
+
+This is NOT retroactively added as a new criterion to make the Pass 1 comparison easier.
+
+It is new schema backpressure:
+
+~~~text
+source provenance
+!= evidence-generative provenance
+
+intervention success
+!= independent discovery
+
+construction success
+!= grammar validation
+
+order admission
+!= grammar validation
+~~~
+
+Back-audit result:
+
+~~~text
+GTS-001 = verdict unchanged / causal-narrowing credit clarified
+GTS-002 = verdict unchanged / M3 vs M4 credit clarified
+GTS-003 = verdict unchanged / greenfield discriminator explicitly UNOBSERVED
+~~~
+
+Template v0.2 now carries evidence-generative provenance as an orthogonal audit surface.
+
