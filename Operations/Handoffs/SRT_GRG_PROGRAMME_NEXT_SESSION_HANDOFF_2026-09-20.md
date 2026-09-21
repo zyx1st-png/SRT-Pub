@@ -124,6 +124,36 @@ Do not silently rewrite O1 / O2-C / O2-A / O2-M.
 
 ## 4. Next live task
 
+The author has redirected the programme mainline from single-pilot progression to GRG framework construction.
+
+Current programme split:
+
+~~~text
+MAINLINE
+= GRG Framework Construction
++ Relation Library
++ Domain / Civilization Atlas
++ Civilizational Learning Architecture
++ generative-expectation / normativity interface
+
+CALIBRATION
+= bounded experiments / source-fidelity tests / historical cases / transfer pressure
+~~~
+
+New mainline owners:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md`
+- `Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md`
+- `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
+- `Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md`
+- `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
+
+First relation-record backfill:
+
+- RR-001 RNN retained imprint / causal re-entry adverse calibration;
+- RR-002 HKB maintained coordination candidate;
+- RR-003 Bowler structured-experience scaffold.
+
 The foundational GRG work, first transfer pilot, O-criterion revision, distributed-neighbor extraction and R1a/R1b/R1c/R1d burden split are complete.
 
 RNN spectral line — reconciled result:
@@ -191,9 +221,28 @@ simulation-as-confirmation = NO
 R1d / O4 = BLOCKED
 ~~~
 
-NEXT = existing-data access route only.
+HKB CALIBRATION STATE:
 
-Do not send the request without explicit author action. If access is later obtained, freeze a new raw-data analysis charter before opening outcome data.
+~~~text
+first request to Harjo de Poel = SENT 2026-09-21
+response = PENDING
+raw access = NO
+raw outcomes opened = NO
+~~~
+
+If access is later obtained, freeze a new raw-data analysis charter before opening outcome data.
+
+HKB response waiting does not block the mainline.
+
+MAINLINE NEXT:
+
+~~~text
+1. backfill relation records from completed repository work;
+2. build first source-native civilizational case records;
+3. expand the Domain / Civilization Atlas;
+4. run false-convergence audit on the first cross-domain candidate relations;
+5. revise / split / retire the relation library where evidence demands.
+~~~
 
 ## 5. Distributed-neighbor Pass 1 result
 
@@ -291,45 +340,54 @@ Canonical reassessment comes only after internal red-team + distributed-neighbor
 
 Use:
 
-@GitHub 继续 zyx1st-png/SRT-Pub 的 post-#976 GRG programme。
+@GitHub 继续 zyx1st-png/SRT-Pub 的 GRG Framework Construction 主线。
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
-1) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
-2) Operations/Audits/SRT_GRG_R1_O3_CAUSAL_MEDIATION_RESULT_2026-09-21.md
-3) Operations/Audits/SRT_GRG_R1_O3_V0_3_CAUSAL_MEDIATION_RESULT_2026-09-21.md
-4) Operations/Audits/SRT_GRG_R1_O3_PARALLEL_EXECUTION_RECONCILIATION_2026-09-21.md
-5) Operations/Audits/SRT_GRG_R1_CROSS_REALIZATION_SOURCE_FIDELITY_PASS1_2026-09-21.md
-6) Operations/Audits/SRT_GRG_R1_HKB_SOURCE_PROTOCOL_ACCESS_FEASIBILITY_2026-09-21.md
-7) Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md
-8) Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md
-9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
+
+1) 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_MAINLINE_FRAMEWORK_VS_CALIBRATION_2026-09-21.md
+2) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
+3) Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md
+4) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
+5) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+6) Operations/GRG/Relations/SRT_GRG_RR_001_RNN_RETAINED_IMPRINT_CAUSAL_REENTRY_2026-09-21.md
+7) Operations/GRG/Relations/SRT_GRG_RR_002_HKB_MAINTAINED_COORDINATION_2026-09-21.md
+8) Operations/GRG/Relations/SRT_GRG_RR_003_BOWLER_STRUCTURED_EXPERIENCE_SCAFFOLD_2026-09-21.md
+9) Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+10) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
 当前真实 gate：
 
 ~~~text
-generative expectation = B+C asymmetric/layered
+GRG programme mainline = FRAMEWORK CONSTRUCTION
 
-R1a/R1b/R1c/R1d burden split = ACTIVE PROGRAMME ROUTING
+mainline:
+- relation library
+- domain / civilization atlas
+- civilizational learning
+- evidence typing
+- generative expectation / normativity
+- reflexive grammar revision
 
-RNN spectral O3 first execution = NULL
-RNN spectral O3 stricter robustness execution = NULL
-RNN spectral family = STOP AT R1c
-RNN O4 = BLOCKED
+calibration:
+- RNN spectral R1c = NULL / STOP
+- HKB R1c = access pending
+- first request to Harjo = SENT / response pending
 
-selected live non-RNN R1c candidate = HKB coordination dynamics
-HKB source/protocol feasibility = PASS
-public raw trajectories = NOT LOCATED
-authorized raw-data access = NOT ESTABLISHED
-access request package = PREPARED / NOT SENT
+HKB waiting != programme blocker
 
-NEXT = existing-data access route only
-new human experiment = NO
-simulation-as-confirmation = NO
-R1d / O4 = BLOCKED
+next:
+backfill relation records
+-> seed civilizational case records
+-> identify cross-domain burden candidates
+-> false-convergence audit
+-> revise grammar
+
 canonical edit = NO
+new Level = NO
+scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要重新跑或调参 RNN spectral family；不要把两个 O3 execution 当作同一 preregistration 进行 pooled inference。HKB 路线只继续 existing-data access；若未获得明确授权，不要代作者发送数据请求。若未来拿到真实 raw access，必须在查看 outcome 前另行冻结 analysis charter。不要重新进入 winner-style strongest-neighbor novelty audit。
+不要把 GRG 重新缩回单一实验项目；不要因为 HKB 等数据就停住 framework mainline。各领域必须保留 source-native mechanism / evidence / objectification。文明经验必须 evidence-typed，不能把历史案例、实验、哲学直觉混成一个“大数据”。不要开 canonical landing，不要重新进入 winner-style strongest-neighbor novelty audit。
 
 ## 9. Stop rule
 
