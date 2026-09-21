@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG FRAMEWORK CONSTRUCTION / NONCANONICAL / RELATION LIBRARY + DOMAIN-CIVILIZATION ATLAS + CIVILIZATIONAL LEARNING MAINLINE / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / GTS-FIRST / INDEPENDENT CONTENT REVIEW NEXT / X4c CARRIER LINE LOCAL-CLOSED / HKB ACCESS CONTINUES AS CALIBRATION / CANONICAL HOLD
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -64,7 +64,16 @@ Civilizational Learning Architecture:
 Domain + Civilization Atlas seed:
 `Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md`
 
-GRG Relation Record template:
+Current GRG foundational owner:
+`Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md`
+
+Current author adjudication:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md`
+
+Primary new-record schema — GTS v0.2:
+`Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`
+
+Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
 Generative-expectation second adjudication:
@@ -103,8 +112,49 @@ Existing-data access request package:
 Public access-route verification:
 `Operations/Audits/SRT_GRG_R1_HKB_PUBLIC_ACCESS_ROUTE_VERIFICATION_2026-09-21.md`
 
-Continuation handoff:
+Current continuation handoff:
+`Operations/Handoffs/SRT_GRG_V0_3_AUTHOR_CLOSURE_HANDOFF_2026-09-21.md`
+
+Historical programme handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
+
+Current post-#1022 mainline gate:
+
+```text
+objects = cuts
+relations = cuts
+GTS = primary bounded research unit
+
+GRG scientific-gain target =
+cross-objectification generative invariance
++ retained admission / exclusion / failure constraints
++ prospective discrimination
+
+P_G = Generative Prediction
+E_G = Generative Expectation relative to admitted Generative Order
+
+Generative Order admission =
+GO1 formation / operation
+GO2 structural articulation
+GO3 generative efficacy
+GO4 scope indexing
+GO5 failure / dissolution
+
+wholeward direction =
+W-E epistemic learning
++ W-P practical / constructive generation
+
+X4c carrier subprogramme =
+LOCAL CLOSE
+
+next =
+independent content review of GRG v0.3
+-> selected Relation Library to GTS reconciliation
+-> freeze one prospective cross-objectification discrimination charter
+-> bounded execution only after review
+
+canonical edit = NO
+```
 
 Current programme reading:
 
@@ -120,7 +170,7 @@ full moral ought / universal value weights = OPEN;
 canonical edit from this programme = NO.
 ```
 
-Next sequence:
+Historical / calibration sequence retained below; this is NOT the current broader-GRG next gate:
 
 ```text
 Phase C internal red-team Pass 1 = COMPLETE:
