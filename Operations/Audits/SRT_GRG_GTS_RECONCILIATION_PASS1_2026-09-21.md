@@ -117,9 +117,11 @@ Therefore:
 = PRESERVED, not GTS gain.
 ~~~
 
-## 3. Real GTS gains that survive the audit
+## 3. What is actually gained
 
-### G1 — one bounded process surface
+Separate GTS-specific architecture gain from portable methodological improvements.
+
+### G1 — GTS-specific gain: one bounded process surface
 
 For X4c, GTS can put:
 
@@ -132,19 +134,25 @@ reconstruction-output
 
 into one bounded process record without asserting that these are separate ontic relations.
 
-This is a readability / process-integration gain.
+This process integration is the clearest gain that depends on using GTS as a process-first record.
 
-### G2 — mandatory strongest horizontal baseline
+### M1 — portable method improvement: strongest-horizontal baseline
 
-The legacy template had a target-domain ordinary-practice comparator for transfer.
+The legacy transfer template already had a target-domain ordinary-practice comparator.
 
-GTS extends comparator discipline to every bounded record, including local negative calibrations.
+The reconciliation makes strongest-baseline declaration mandatory across bounded records, including local adverse calibrations.
 
-This is a NARROW gain, not a wholly new invention.
+This is useful, but it is portable:
 
-### G3 — evidence-generative provenance
+~~~text
+the same field could be added to a legacy record.
+~~~
 
-#1025 bounded use exposes a real missing dimension:
+Therefore it is NOT counted as a GTS-specific architecture gain.
+
+### M2 — portable method improvement: evidence-generative provenance
+
+The #1025 owner adds:
 
 ~~~text
 O_R != O_W
@@ -155,32 +163,23 @@ evidence-purpose credit boundaries
 alternative-generation audit.
 ~~~
 
-This produces nontrivial narrowing in all three records.
+This produces real narrowing in all three records.
 
-This is the strongest schema gain in Pass 1.
-
-### G4 — modular non-opening
-
-A record may explicitly keep:
+But it is also portable:
 
 ~~~text
-Generative Order
-E_G
-wholeward
-cross-objectification gain
+the provenance block can constrain GTS or a legacy record.
 ~~~
 
-closed when they are not load-bearing.
+Therefore it is a programme-level methodological gain, not proof that GTS itself dominates.
 
-This is useful only if:
+### M3 — modular non-opening discipline
 
-~~~text
-NOT OPENED requires a reason
-and
-positive credit requires opening the relevant module.
-~~~
+Systematic NOT OPENED / N.A. handling helps prevent forced completeness.
 
-It is not a gain that old RR-001 lacked "NOT OPENED"; rather, it is a gain in making optionality systematic across the process-first schema.
+Again, this is governance that can in principle be applied outside GTS.
+
+It should not be counted as an architecture-specific superiority claim.
 
 ## 4. Real-use failures / costs
 
@@ -273,12 +272,20 @@ source fidelity = PRESERVED
 negative controls = PRESERVED
 failure condition = PRESERVED
 
-strict gains =
-strongest-baseline field
-+ bridge-hypothesis vs P_G labeling
+GTS-specific gain =
+bounded process/bridge record integrates the tested causal path in one place
+
+portable method improvements =
+strongest-baseline visibility
 + evidence-generative provenance
 
+NOT a comparative gain =
+bridge-hypothesis vs P_G correction
+because this fixes an error introduced in the earlier GTS draft,
+not a deficiency of RR-001.
+
 cost =
+222 lines vs roughly 157-190 lines for the legacy record scale;
 more verbose than RR-001
 
 verdict =
@@ -292,14 +299,21 @@ source fidelity = PRESERVED
 M3/M4 separation = PRESERVED
 M4-E0 absorption = PRESERVED
 
-strict gains =
-domain-internal verticality can be marked NOT ESTABLISHED / NOT NEEDED
-+ recurrence-provenance warning
+GTS-specific gain =
+limited process integration only
+
+portable method improvements =
+recurrence-provenance warning
 + evidence-credit boundary
+
+NOT a comparative gain =
+"domain-internal verticality can be marked NOT ESTABLISHED"
+because the legacy source never claimed such verticality.
 
 E_G = NOT OPENED
 
 cost =
+238 lines vs roughly 157-190 lines for the legacy record scale;
 some source-native distinction is repeated in more fields
 
 verdict =
@@ -313,16 +327,22 @@ source fidelity = PRESERVED
 X4c admission order = PRESERVED
 carrier discipline = PRESERVED
 
-strict gains =
-continuous-process integration
-+ strongest-horizontal absorption made explicit
+GTS-specific gain =
+continuous-process integration:
+reconstruction
+-> persistence/carrier
+-> successor history-input
+-> later consequence
+
+portable method improvements =
+strongest-horizontal absorption visibility
 + evidence-provenance / maintenance pressure
 
 E_G = NOT OPENED
 generic greenfield discriminator = ABSORBED BY BASELINE
 
 cost =
-large record;
+320 lines vs roughly 157-190 lines for the legacy record scale;
 multiple modules are irrelevant to this case
 
 verdict =
@@ -343,13 +363,28 @@ Current verdict:
 GTS v0.2 vs legacy surfaces =
 TRADE-OFF / DIFFERENT JOBS.
 
-GTS =
-preferred primary schema for NEW process-first bounded records
-because it integrates process, baseline and provenance.
+GTS-specific reason to prefer it for NEW process-first records =
+one bounded process surface that can integrate multiple analytical cuts
+without reifying them as peer relations.
+
+Portable programme improvements =
+strongest-horizontal baseline discipline
++ evidence-generative provenance
++ explicit modular non-opening.
+
+These portable improvements do not by themselves justify GTS over a lean legacy record.
 
 legacy Relation Record / transfer / case files =
 leaner historical and family-specific evidence surfaces
 that should remain authoritative for their original results.
+
+current template cost =
+approximately 966 lines versus 275 lines for the archived Relation Record template
+at the time of this review.
+
+current migrated record cost =
+approximately 222-320 lines versus roughly 157-190 lines
+for the compared legacy records.
 
 bulk migration =
 NO.
@@ -376,85 +411,101 @@ Optional modules may remain closed only with explicit reason.
 
 Positive claims require the corresponding module to be opened.
 
-## 8. Prospective family selection — reopened
+## 8. Prospective family selection — reopened and neutral
 
 The first draft prematurely selected X4c.
 
 That decision is withdrawn.
 
-Current candidate routes:
+No route has a preferred prior in this audit.
+
+Each route must be described using the same fields.
 
 ### Route A — X3b non-explicit target
 
-Question:
-
 ~~~text
-Can operative-vs-articulated burden generate a useful distinction
-in a mature target where ordinary practice does NOT already explicitly own it?
-~~~
+question =
+can operative-vs-articulated burden generate a useful distinction
+in a mature target where ordinary practice does not already explicitly own it?
 
-Risk:
+candidate discriminator =
+UNASSESSED / to be frozen only after route selection
 
-~~~text
-high M4-E0 absorption probability.
+strongest-neighbor set =
+UNASSESSED
+
+prior M4-E0 absorption risk =
+UNASSESSED
+
+target =
+NOT FROZEN
 ~~~
 
 ### Route B — X4c beyond generic path dependence
 
-Generic:
-
 ~~~text
-greenfield differs from installed base
-~~~
+question =
+can X4c distinguish successor inheritance
+beyond generic persistence / installed-base / path-dependence effects?
 
-is disqualified as a prospective GRG discriminator.
+candidate discriminator =
+UNASSESSED
 
-A stronger X4c question would need to distinguish, for example:
-
-~~~text
+illustrative possibilities only =
 persistence without successor inheritance
 vs
-persistence with changed successor possibility structure
+persistence with changed successor possibility structure;
 
-or
+or same broad persistence with different successor openness
+under a load-bearing transmission/interface difference.
 
-same broad installed persistence
-but different successor openness because a load-bearing
-transmission / interface condition differs.
+strongest-neighbor set =
+UNASSESSED
+
+prior M4-E0 absorption risk =
+UNASSESSED
+
+target =
+NOT FROZEN
 ~~~
 
 No new carrier role is authorized.
 
-### Route C — evidence-provenance discrimination from #1025 §15
+### Route C — evidence-provenance discrimination
 
 ~~~text
-same horizontal success / convergence
+question =
+can two cases with similar horizontal success be discriminated
+by different evidence-generative provenance?
 
-A. genuine constraint discovery
+candidate internal contrast =
+C1 candidate constraint discovery
 vs
-B. intervention-induced alternative-generation suppression.
+C2 intervention-induced alternative-generation suppression
+
+strongest-neighbor set =
+UNASSESSED
+possible pressure includes performativity / reflexive prediction /
+Goodhart-Campbell effects / Lucas-type feedback / model-feedback traditions
+
+prior M4-E0 absorption risk =
+UNASSESSED
+
+target =
+NOT FROZEN
 ~~~
 
-This may be closer to a genuinely generative distinction because the horizontal observable can be held similar while provenance differs.
+The #1025 owner treats this as M / unselected candidate only.
 
-But:
-
-~~~text
-strongest-neighbor audit = REQUIRED
-M4-E0 = REQUIRED
-target not frozen.
-~~~
+No phrase such as "stronger", "closer to genuinely generative", or "high absorption" is licensed before the family-selection audit.
 
 ## 9. Family-selection gate
 
 No family is selected in this PR.
 
-Next after independent review:
+The same gate applies symmetrically to Route A / B / C:
 
 ~~~text
-bounded prospective-family selection audit
-
-compare Route A / B / C under:
 source-native ownership
 strongest-neighbor maturity
 M4-E0 absorption risk
@@ -463,11 +514,20 @@ held-out target feasibility
 evidence-generative independence
 schema cost
 
+all route-specific prior risk values =
+UNASSESSED until the dedicated audit.
+~~~
+
+Next after independent review:
+
+~~~text
+bounded prospective-family selection audit
+-> apply the same evidence standard to Route A / B / C
 -> choose at most one route
 -> only then freeze target / charter.
 ~~~
 
-STATUS must not pre-commit to X4c.
+STATUS must not pre-commit to any route.
 
 ## 10. Final verdict
 
