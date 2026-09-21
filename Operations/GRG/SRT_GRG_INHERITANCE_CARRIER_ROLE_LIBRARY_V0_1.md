@@ -377,7 +377,44 @@ candidate reconstructed field F
 -> COMPONENT-ROLE-PASS inside admitted carrier architecture
 ~~~
 
-## 9.1 Use rule
+### 9.1 Logical independence, not mandatory artifact chronology
+
+Consistency owner:
+
+Operations/Audits/SRT_GRG_X4C_POSITIVE_ADMISSION_ORDER_CONSISTENCY_PASS1_2026-09-21.md
+
+Admission order is epistemic / logical.
+
+It does not require separate sources, separate PRs or a calendar-time gap.
+
+The same source-native contrast may support both relation admission and a carrier role when:
+
+~~~text
+relation-level successor / transmission evidence
+is independently articulable
+without using the role label as its premise.
+~~~
+
+Thus:
+
+~~~text
+same source supports relation + role
+!=
+circular bootstrap automatically.
+~~~
+
+Positive-record consistency result:
+
+~~~text
+ecological inheritance = PASS
+CIV-006 = STRONG PASS
+IPv4/IPv6 = PASS
+precedent = PASS / CO-EVIDENCED BUT NON-CIRCULAR
+
+positive downgrades = NONE
+~~~
+
+## 9.2 Use rule
 
 For an X4c carrier architecture:
 
@@ -444,7 +481,7 @@ M4 remains:
 NONE
 ~~~
 
-## 13. Negative productivity result and next gate
+## 13. Negative productivity + positive consistency result
 
 CIV-005 negative / borderline application:
 
@@ -468,17 +505,25 @@ successor boundary
 
 rather than at role count.
 
+Positive-record admission-order audit is COMPLETE:
+
+~~~text
+PASS
+positive downgrades = NONE
+circular bootstrap = NONE
+~~~
+
 Next:
 
 ~~~text
-positive-record admission-order consistency audit
+bounded X4c carrier-subprogramme local-closure audit
 ~~~
 
 Question:
 
-> Did any existing positive X4c case receive COMPONENT-ROLE-PASS before successor-boundary / field-transmission evidence was independently paid?
+> Is the carrier line sufficiently constrained for current evidence that its vocabulary should now be frozen and mainline attention returned to broader GRG?
 
-Do not add new sources in that audit.
+No new source hunt is authorized by this gate.
 
 ## 14. Canonical boundary
 
