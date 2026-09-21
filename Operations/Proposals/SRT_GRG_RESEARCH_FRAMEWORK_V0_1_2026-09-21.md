@@ -341,6 +341,18 @@ M5 repeatedly cross-domain constrained grammar candidate
 
 These are programme routing labels, not ontology Levels.
 
+~~~text
+M3 = independently evidenced recurrence of a frozen burden.
+     It does not require GRG novelty in the target domain.
+
+M4 = prospective transfer gain:
+     GRG changes a target-domain question / variable / control /
+     distinction / failure expectation before decisive target-source
+     or outcome inspection, beyond ordinary target-domain practice.
+
+M3 != M4 != scientific distinctiveness.
+~~~
+
 No relation progresses merely because several domains use similar words.
 
 ### 9.1 First civilizational pressure-test revision
@@ -418,9 +430,13 @@ X4a reconstructed environmental / option condition
 = current activity materially changes later environmental,
   institutional or action conditions.
 
-X4b recursive selective / viability feedback
-= the reconstructed condition changes specified selection,
-  viability, accessibility or transition pressures on later positions.
+X4b recursive reconstructed-field feedback
+= current activity reconstructs a typed source-native conditioning field,
+  and that field changes specified later selection, viability,
+  accessibility, distribution or transition conditions.
+
+Biological specialization:
+selective / viability feedback.
 
 X4c inherited reconstructed condition
 = the reconstructed condition persists, is maintained or reproduced
@@ -444,6 +460,43 @@ Mature institutional and evolutionary theories retain mechanism ownership.
 
 Owner:
 `Operations/Audits/SRT_GRG_X3_X4_SOURCE_PRESSURE_PASS1_2026-09-21.md`.
+
+### 9.3 First M3 / M4 cross-domain transfer-absorption pass
+
+Independent target matches:
+
+~~~text
+X3b -> Kubernetes NetworkPolicy
+X4b -> Performative Prediction
+~~~
+
+Results:
+
+~~~text
+X3b M3 = PASS
+X4b M3 = PASS
+X4b DOMAIN-LIMITED = LIFTED
+
+X3b M4 = NO / target-domain absorbed
+X4b M4 = NO / target-domain absorbed
+
+M4 relations = NONE
+~~~
+
+Kubernetes already explicitly owns specification-versus-enforcement.
+
+Performative-prediction theory already explicitly owns deployment-induced distribution feedback.
+
+Therefore this pass demonstrates the intended architecture:
+
+~~~text
+mature target theory may fully own the mechanism
+while
+GRG retains a constrained cross-domain relation match.
+~~~
+
+Owner:
+`Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md`.
 
 ## 10. Generative expectation layer
 
@@ -789,16 +842,14 @@ Completed:
 Current next:
 
 ~~~text
-X3b:
-seek pre-result transfer beyond obvious rule/institution cases.
+first legitimate M4 attempt:
+freeze relation + target domain before decisive source/outcome inspection
+-> write target-domain question / variable / control / failure expectation
+-> compare with ordinary target-domain practice
+-> execute source-test / bounded evidence check
+-> ABSORBED / NULL / transfer gain all remain valid outcomes.
 
-X4b:
-seek a genuinely non-biological candidate;
-if meaning stretches, keep DOMAIN-LIMITED.
-
-Relation Library:
-add / revise only when source-native records pay admission burdens.
-No M3 promotion by case count.
+Do not increase M-status by adding more M3 examples.
 ~~~
 
 ## 21. Canonical boundary
