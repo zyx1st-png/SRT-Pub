@@ -20,6 +20,7 @@ dependency:
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
   - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+  - Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
 tags: [GRG, ProtoGrammar, V0_3, ProcessFirst, GTS, Prediction, Expectation, GenerativeOrder, Wholeward]
 ---
 
@@ -1031,6 +1032,26 @@ The following are explicit OPEN items:
 14. whether future GRG findings pressure canonical SRT owners;
 15. scientific distinctiveness;
 16. universal scope.
+
+## 26.1 Evidence-generative provenance owner
+
+Current methodological owner:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+Bounded GTS use has retained and narrowed this burden.
+
+Permanent programme guards now active in GTS reconciliation include:
+
+~~~text
+O_R != O_W
+recurrence != independent recurrence
+construction != discovery
+Order Admission != Grammar Validation
+Observed Regularity != Generative Invariance
+~~~
+
+This is methodological evidence governance, not a new relation family or ontology layer.
 
 ## 27. Current mainline gate
 
