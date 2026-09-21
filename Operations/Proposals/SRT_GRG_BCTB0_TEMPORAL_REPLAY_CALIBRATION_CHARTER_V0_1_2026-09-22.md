@@ -417,6 +417,27 @@ If target-specific decisive information is already present in the proposed sourc
 
 The capsule gives enough structure for a nontrivial mapping but does not state the decisive answer.
 
+Before execution, the evaluator must run a capsule-answer leakage audit.
+
+For every later-scored constraint, record:
+
+~~~text
+CAPSULE-EXPLICIT
+CAPSULE-IMPLIED
+SOURCE-PACK-DERIVED
+GENERATOR-DERIVED
+UNRESOLVED
+~~~
+
+Rules:
+
+- a CAPSULE-EXPLICIT constraint receives no generator credit;
+- a materially CAPSULE-IMPLIED discriminator cannot count as a GRG residual;
+- if the capsule directly supplies the load-bearing admission + exclusion + failure packet, the fold is INVALID;
+- baseline arms receive the same informational content, so prompt asymmetry cannot create residuality.
+
+The purpose of the capsule is to expose the target question, not to pre-solve it.
+
 ### T1 masked capsule
 
 ~~~text
@@ -424,11 +445,11 @@ System alpha is a software-orchestration environment.
 
 Administrators can create declarative objects expressing desired traffic permissions among running workloads.
 
-Actual data-path behavior is realized by runtime networking components.
+The environment also has runtime networking machinery that carries workload traffic.
 
 Task:
 using only the historical source pack,
-state what additional conditions would be required before the declared expectation should count as an operative constraint;
+state what conditions would be required before the declared expectation should count as an operative constraint;
 identify the nearest false positive and a failure condition.
 ~~~
 
@@ -478,17 +499,17 @@ Do not supply the later greenfield/installed-base near-control or the post-targe
 ~~~text
 System delta is an institutional decision system.
 
-Earlier decisions remain available to later decision makers,
-and institutional relations can make some earlier decisions
-matter differently for later decision burdens.
+Earlier decisions remain available to later decision makers.
+Later decision makers may cite, reuse, distinguish or decline to follow
+earlier decisions under the system's current procedures.
 
 Task:
 using only the historical source pack,
-determine whether there is a successor-inheritance burden
+determine whether a successor-inheritance burden is warranted
 beyond informational persistence and current-rule operation;
 state the nearest false positive,
 the failure/narrowing condition,
-and the minimal carrier distinction the evidence would need to pay.
+and what carrier evidence would be required.
 ~~~
 
 Do not supply the later PAYLOAD / AUTHORITY role labels.
@@ -655,6 +676,21 @@ If decisive target evidence is present in the generator source pack:
 
 ~~~text
 FOLD = INVALID
+~~~
+
+### G0b — capsule-answer leakage
+
+If the masked capsule itself directly supplies the load-bearing discriminator or the A/X/F packet:
+
+~~~text
+FOLD = INVALID
+~~~
+
+If a particular later-scored constraint is merely implied by the capsule:
+
+~~~text
+constraint = CAPSULE-IMPLIED
+generator residual credit = NO
 ~~~
 
 ### G1 — admission
