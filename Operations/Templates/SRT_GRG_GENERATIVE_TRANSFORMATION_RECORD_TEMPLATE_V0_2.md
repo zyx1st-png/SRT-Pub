@@ -337,7 +337,7 @@ a persistent state
 an existing hierarchy
 ~~~
 
-### L.1 Projected order — provisional / M only
+### L.1 Projected order — author-adjudicated W-P pre-realization path
 
 Use only for W-P design before a proposed order exists world-side.
 
@@ -406,7 +406,7 @@ E_G != complete moral legitimacy
 
 Conflicting classifications across admitted orders are allowed and should be reported.
 
-Projected-order path — provisional / M:
+Projected-order path — author-adjudicated:
 
 ~~~text
 projected order id =
