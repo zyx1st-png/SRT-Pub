@@ -558,9 +558,9 @@ position sensitivity = EVIDENCED
 fine-grained distributive conflict = OPEN
 
 Expectation:
-E-MAT material structural burden
+S-MAT material structural burden
 !=
-E-LEGAL modern compliance burden
+S-LEGAL / S-ORG modern compliance burden
 !=
 moral legitimacy
 ~~~
@@ -581,9 +581,15 @@ P-MAT / P-ECO / P-INST / P-INFO.
 Historical P-MIXED inheritance kind is retired;
 multi-component architecture is represented directly.
 
-Expectation provenance:
-E-MAT / E-TECH / E-LEGAL / E-ORG /
-E-NORM / E-BIO / E-MODEL / E-MIXED.
+Generative Expectation live schema:
+source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO;
+
+locus/mode =
+B-STRUCTURAL / C0-ENACTED / C1-MODEL / OBS-MODEL;
+
+historical E-MODEL and E-MIXED =
+RETIRED.
 ~~~
 
 ## 5.8 X4c informational-carrier stress — IPv4 / IPv6 installed base
