@@ -481,16 +481,52 @@ Dedicated ledger:
 
 Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 
+CIV-006 LONG-DURATION INFRASTRUCTURE PASS = COMPLETE:
+
+~~~text
+case = legacy combined-sewer infrastructure
+freeze before dedicated source inspection = PASS
+
+source-native topology:
+historical construction
+-> persistent / maintained material hydraulic field
+-> successor urban cohort inherits field
+-> later operation / compliance / retrofit possibilities conditioned
+
+X4c = M3 PASS
+
+X4c revised admission:
+carrier + successor cohort + changed later possibility structure
+
+inheritance provenance:
+P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+
+PH:
+horizon divergence = EVIDENCED
+position sensitivity = EVIDENCED
+fine-grained distributive conflict = OPEN
+
+Expectation provenance:
+E-MAT material burden
+!= E-LEGAL modern compliance burden
+!= moral legitimacy
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+
 MAINLINE NEXT:
 
 ~~~text
-1. pressure one long-duration historical / infrastructure case
-   using burden matrix + generative-expectation ledger + PH together;
-2. require source-paid positions / horizons rather than imagined conflict;
-3. ask whether the combined architecture yields a new exclusion,
-   split or grammar revision;
-4. continue underdeveloped domain coverage;
-5. keep M4 as periodic calibration only when target ownership is uncertain.
+1. do NOT add another material-infrastructure X4c case by default;
+2. choose one institutional or informational inheritance candidate;
+3. freeze source-neutral topology before decisive source inspection;
+4. require carrier + successor cohort + changed later possibility structure;
+5. test whether P-INST or P-INFO survives X4c without semantic stretching;
+6. if it fails, narrow X4c instead of forcing unification;
+7. preserve expectation provenance and PH separately;
+8. keep M4 as periodic calibration only when target ownership is uncertain.
 ~~~
 
 ## 5. Distributed-neighbor Pass 1 result
@@ -593,13 +629,13 @@ Use:
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和当前 open PR；然后读取：
 
-1) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
-2) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
-3) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
-4) Operations/Audits/SRT_GRG_X6_POSITION_HORIZON_RETYPE_PASS1_2026-09-21.md
-5) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
-6) Operations/Proposals/SRT_GRG_CIVILIZATIONAL_LEARNING_ARCHITECTURE_V0_1_2026-09-21.md
-7) Operations/Proposals/SRT_GRG_DOMAIN_CIVILIZATION_ATLAS_SEED_V0_1_2026-09-21.md
+1) Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
+2) Operations/GRG/Cases/SRT_GRG_CIV_006_COMBINED_SEWER_LEGACY_2026-09-21.md
+3) Materials/2026/SRC_2026_09_21_Combined_Sewer_Legacy_Infrastructure.md
+4) Operations/GRG/SRT_GRG_RELATION_LIBRARY_V0_1.md
+5) Operations/GRG/SRT_GRG_CROSS_DOMAIN_BURDEN_MATRIX_V0_1.md
+6) Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+7) Operations/GRG/SRT_GRG_POSITION_HORIZON_CONFLICT_LEDGER_V0_1.md
 8) Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 9) Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md
 
@@ -610,47 +646,50 @@ GRG Relation Library = ACTIVE
 
 X3b = M3
 X4b = M3
+X4c = M3
 
-M4-01 = ABSORBED / M4 NO
-M4-02 = ABSORBED / M4 NO
+X4c carrier-explicit admission:
+reconstructed F
++ inheritance carrier C
++ successor cohort enters under F without original choice
++ F changes later action/accessibility/maintenance/transition possibilities
+
+inheritance provenance:
+P-MAT / P-ECO / P-INST / P-INFO / P-MIXED
+
+CIV-006:
+combined-sewer legacy
+P-MAT material inheritance = PASS
+X4c M3 = PASS
+
+Expectation provenance:
+E-MAT / E-TECH / E-LEGAL / E-ORG /
+E-NORM / E-BIO / E-MODEL / E-MIXED
+
+PH remains cross-cutting:
+position/horizon sensitivity != evidenced conflict
+
+M4-01 = ABSORBED
+M4-02 = ABSORBED
 M4 = NONE
 M5 = NONE
 
-Cross-Domain Burden Matrix = ACTIVE
-Generative Expectation Ledger = ACTIVE
-Position/Horizon Conflict Ledger = ACTIVE
-
-X6 multi-position consequence divergence
-= RETYPED / REMOVED FROM RELATION QUEUE
-
-PH Position/Horizon Consequence Index
-= cross-cutting analysis burden
-= no M-status
-
-PH guard:
-position/horizon sensitivity != evidenced conflict
-conflict must be source-paid
-directional conflict != moral winner
-
 next:
-one long-duration historical / infrastructure case
--> source-native reconstruction
--> burden matrix
--> expectation ledger
--> PH
--> look for exclusion / split / grammar revision
+institutional or informational inheritance candidate
+-> freeze first
+-> test P-INST or P-INFO
+-> narrow X4c if semantic invariance fails
 
 calibration:
 RNN = STOP
 HKB request = SENT / response pending
-M4 periodic only
 
 canonical edit = NO
 new Level = NO
 scientific distinctiveness = NOT ESTABLISHED
 ~~~
 
-不要把 PH 重新包装成新关系。下一步的价值在于检验三张表一起工作时，能否比逐案总结多产生一个可证伪的区分、排除或 grammar revision。不要因为存在多个位置就自动写成冲突，也不要从功能性 G-stronger/G-weaker 直接跳到政治或道德结论。不要开 canonical landing。
+不要再用“旧、贵、难改、path-dependent”直接支付 X4c。下一轮必须证明一个明确 carrier 如何把重构场带入 successor cohort，并改变后继者的可选/维护/转型空间。优先找制度或信息载体来压力测试；如果必须靠语义拉伸才能匹配，就缩窄 X4c，不要强行统一。Expectation provenance 与 PH 继续作为独立横向索引。不要开 canonical landing。
 
 ## 9. Stop rule
 
