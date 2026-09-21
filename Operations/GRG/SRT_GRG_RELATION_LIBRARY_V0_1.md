@@ -325,48 +325,81 @@ existing installed-base environment
 
 If the same current rule exists but successor path-conditioning disappears in the greenfield case, that supports a distinct X4c inherited-field burden.
 
-Inheritance provenance tags:
+Inheritance carrier architecture:
+
+Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+
+Current correction:
 
 ~~~text
-P-MAT = material / infrastructural carrier
-P-ECO = ecological / environmental carrier
-P-INST = institutional / rule scaffold
-P-INFO = informational / symbolic carrier
-P-MIXED = mixed / multi-carrier
+provenance is compositional when evidence requires it.
+
+carrier component
+-> provenance kind
+-> causal role
+-> role evidence / near-control
+-> standalone sufficiency status
 ~~~
 
-P-MIXED must declare its components.
+Current provenance kinds:
 
-Example:
+~~~text
+P-MAT = material / infrastructural component
+P-ECO = ecological / environmental component
+P-INST = institutional authority / rule / organizational component
+P-INFO = informational / symbolic content component
+P-MIXED = shorthand for an explicitly decomposed multi-component architecture
+~~~
+
+P-MIXED must declare:
+
+1. components;
+2. causal roles;
+3. role evidence / near-controls where available;
+4. standalone sufficiency status.
+
+Current evidence state:
+
+~~~text
+P-ECO standalone = PASS in current ecological inheritance family
+P-MAT standalone = PASS in CIV-006 material inheritance
+
+P-INFO standalone = OPEN / NOT ESTABLISHED
+P-INST standalone = OPEN / NOT ESTABLISHED
+
+P-INFO component role = PASS in mixed installed-base / precedent cases
+P-INST component role = PASS in precedent case
+
+P-MIXED = VALID only when decomposed
+~~~
+
+Precedent / stare decisis pressure:
 
 ~~~text
 P-MIXED[
-  P-INFO protocol/address semantics,
-  P-MAT/TECH deployed hosts/routers/infrastructure,
-  P-INST standards/operational practice
+  P-INFO:
+    role = PAYLOAD / prior holding or legal-rule content
+
+  P-INST:
+    role = AUTHORITY / binding-force selector
 ]
+
+binding vs persuasive authority
++ case of first impression
+= source-native near-controls for the P-INST role.
 ~~~
 
-These tags type the carrier.
-
-They are not new GRG relations.
-
-Current provenance state:
-
-- ecological inheritance / niche construction -> P-ECO;
-- combined-sewer legacy infrastructure -> P-MAT;
-- IPv4 -> IPv6 installed-base inheritance -> P-MIXED;
-- standalone P-INFO realization -> OPEN / NOT YET ESTABLISHED.
-
-Strong carrier guard:
+Strong carrier guards:
 
 ~~~text
-symbolically describable != P-INFO
-documented rule != P-INFO
-software-encoded != P-INFO automatically
-~~~
+symbolically describable != P-INFO standalone
+documented rule != P-INST standalone
+software-encoded != P-INFO standalone
+institution present != P-INST standalone
 
-P-INFO requires evidence that the informational / symbolic carrier is sufficient for successor inheritance without essential material / operational carrier dependence.
+component-role PASS
+!= standalone carrier PASS
+~~~
 
 CIV-006 infrastructure result:
 
