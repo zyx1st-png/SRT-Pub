@@ -929,7 +929,11 @@ Completed:
 34. AUTHORITY = SPECIALIZED reusable role;
 35. ENACTMENT = CASE-LOCAL / NARROW;
 36. REPRODUCTION = OPEN / NOT PAID;
-37. MAINTENANCE = RETYPED to architecture persistence process.
+37. MAINTENANCE = RETYPED to architecture persistence process;
+38. CIV-005 Role Library negative / borderline test = COMPLETE / PRODUCTIVITY PASS;
+39. CIV-005 X4c = NOT ADMITTED BY CURRENT EVIDENCE;
+40. ROLE-CANDIDATE / PRE-ADMISSION status = ACTIVE;
+41. carrier-role plausibility cannot bootstrap X4c relation admission.
 
 Current mainline:
 
@@ -946,11 +950,13 @@ I. keep provenance kinds only as secondary component metadata;
 J. historical P-MIXED provenance kind = RETIRED;
 K. bounded role census = COMPLETE;
 L. minimal Role Library v0.1 = EARNED;
-M. first Role Library test = CIV-005 beaver ecosystem-engineering borderline/negative record;
-N. use existing evidence only and ask exactly which carrier burden is missing;
-O. do not promote CIV-005 by analogy;
-P. continue domain re-entry for underdeveloped domains;
-Q. use M4 prospectively when a genuinely uncertain target appears,
+M. CIV-005 Role Library negative test = COMPLETE / PASS;
+N. ROLE-CANDIDATE / PRE-ADMISSION guard = ACTIVE;
+O. next = positive-record admission-order consistency audit across existing X4c PASS records;
+P. ask whether any carrier-role PASS preceded independent successor-boundary / field-transmission evidence;
+Q. use existing repository evidence only for that audit;
+R. continue domain re-entry for underdeveloped domains;
+S. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -979,6 +985,7 @@ Comparison owners:
 - Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 - Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ROLE_CENSUS_PASS1_2026-09-21.md
 - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+- Operations/Audits/SRT_GRG_CIV005_CARRIER_ROLE_LIBRARY_NEGATIVE_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 
