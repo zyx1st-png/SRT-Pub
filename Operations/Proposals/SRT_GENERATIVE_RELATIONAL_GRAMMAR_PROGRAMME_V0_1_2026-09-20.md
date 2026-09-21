@@ -650,7 +650,8 @@ G35 Generative Expectation adequacy Pass 1 = SPLIT / PRODUCTIVE
 G36 E-MODEL provenance = RETIRED; OBS-MODEL / C1-MODEL separated
 G37 E-MIXED provenance = RETIRED; explicit source-layer lists required
 G38 Generative Expectation negative productivity = PASS
-G39 expectation-schema consistency census / live migration = ACTIVE
+G39 expectation-schema consistency census / live migration = COMPLETE / PASS
+G40 C0/C1 realization pressure = NEXT
 ~~~
 
 HKB access proceeds asynchronously as a calibration item and does not block Phase G.
@@ -853,7 +854,9 @@ Framework revision:
 - E-MODEL and E-MIXED are retired as live expectation-provenance tags;
 - indexed G-stronger/G-weaker requires explicit evaluative index;
 - negative productivity PASS: RNN observer prediction does not pay B; precedent binding does not pay moral legitimacy;
-- current next = complete live expectation-schema migration and stale-token consistency pass.
+- live expectation-schema migration and stale-token consistency pass = COMPLETE / PASS;
+- next = bounded C0/C1 realization pressure using existing Nepal irrigation and Performative Prediction evidence first;
+- do not promote C0/C1 merely to make the B+C schema look populated.
 ~~~
 
 Phase F — canonical reassessment: HOLD. The negative transfer and O3 results revise programme method but still provide no owner-level reason to edit canonical ontology.
