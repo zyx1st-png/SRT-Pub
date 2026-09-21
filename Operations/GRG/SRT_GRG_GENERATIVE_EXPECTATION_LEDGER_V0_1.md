@@ -60,6 +60,7 @@ They do not establish moral legitimacy.
 | Road capacity / X4b | E-TECH + E-MODEL | appraisal should include how lower generalized travel cost changes later demand and network loading | immediate congestion benefit erodes under induced travel | stronger/weaker relative to congestion/appraisal objective | travelers, residents, future land users; short/long horizon | environmental justice, land-use values, distributional policy goals |
 | Combined-sewer legacy / X4c | E-MAT primary; E-LEGAL secondary | later operation must work through, repair, bypass or replace inherited hydraulic infrastructure; modern regulation separately requires overflow control / water-quality compliance | material compatibility can be preserved while wet-weather pollution/control burden remains; legal compliance can fail even when ordinary conveyance works | stronger/weaker relative to sanitation/drainage + overflow-control relation, with material and legal layers kept distinct | later residents/utilities/receiving-water users; century-scale inheritance + present operation | fair burden allocation, acceptable cost, intergenerational obligation, environmental justice |
 | IPv4 -> IPv6 installed-base / X4c + X3b | E-TECH primary; E-ORG secondary | current transition mechanisms must preserve enough interoperability with inherited IPv4 deployments while migration proceeds | a technically valid IPv6 deployment can still fail to interoperate with inherited IPv4 hosts/apps/infrastructure; greenfield and installed-base environments face different transition burdens | stronger/weaker relative to interoperability and transition objectives; X3b current enforcement kept distinct from X4c inherited-field conditioning | network operators, implementers, applications; multi-year coexistence horizon | none opened at moral level |
+| Precedent / stare decisis / X4c + X3b | E-LEGAL + E-ORG | successor courts should treat binding precedent differently from merely persuasive authority under the declared hierarchy/jurisdiction | prior reasoning can remain available while mandatory force differs; first-impression cases lack controlling inherited precedent | stronger/weaker relative to declared precedent relation; current X3b authority rule kept distinct from inherited X4c case-law field | successor courts / litigants; cross-case historical horizon | justice, legitimacy or desirability of the precedent require separate premises |
 | RNN R1c adverse case | E-MODEL only | candidate retained organization should specifically affect later learning under targeted intervention | history marker exists but matched intervention shows no specific causal advantage | relation admission weaker / fails R1c | synthetic network only | none; normativity not opened |
 | HKB R1c candidate | E-MODEL / dynamical | maintained coordination organization should condition perturbation relaxation beyond component-only explanation | normalization or component variables exhaust apparent relation effect | relation admission stronger/weaker | participant coordination process; seconds | none; normativity not opened |
 
@@ -88,7 +89,18 @@ X4c carrier provenance
 ~~~
 
 Expectation provenance types the source of the expectation.
-Inheritance provenance types how the inherited field is carried.
+Inheritance carrier architecture types how the inherited field is carried.
+
+Precedent makes the non-identity explicit:
+
+~~~text
+E-LEGAL / E-ORG:
+current "follow binding precedent" expectation
+
+P-INST AUTHORITY + P-INFO PAYLOAD:
+carrier architecture through which prior holdings condition successor cases
+~~~
+
 Do not merge the two taxonomies.
 
 ## 2. B versus C
