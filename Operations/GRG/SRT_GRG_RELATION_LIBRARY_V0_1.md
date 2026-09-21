@@ -329,77 +329,85 @@ Inheritance carrier architecture:
 
 Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 
-Current correction:
+Current correction after carrier-architecture adequacy Pass 1:
 
 ~~~text
-provenance is compositional when evidence requires it.
+carrier analysis is CAUSAL-ROLE-FIRST.
 
 carrier component
--> provenance kind
--> causal role
+-> provenance metadata
+-> causal role(s)
 -> role evidence / near-control
--> standalone sufficiency status
+-> component status
 ~~~
 
-Current provenance kinds:
+Architecture-level fields:
+
+~~~text
+cardinality = SINGLE-COMPONENT / MULTI-COMPONENT
+minimal role set sufficient for X4c =
+architecture sufficiency = PASS / OPEN / FAIL
+~~~
+
+Current provenance metadata:
 
 ~~~text
 P-MAT = material / infrastructural component
 P-ECO = ecological / environmental component
 P-INST = institutional authority / rule / organizational component
 P-INFO = informational / symbolic content component
-P-MIXED = shorthand for an explicitly decomposed multi-component architecture
 ~~~
 
-P-MIXED must declare:
+Historical `P-MIXED` is RETIRED as a provenance kind.
 
-1. components;
-2. causal roles;
-3. role evidence / near-controls where available;
-4. standalone sufficiency status.
-
-Current evidence state:
+A multi-component carrier is represented directly as:
 
 ~~~text
-P-ECO standalone = PASS in current ecological inheritance family
-P-MAT standalone = PASS in CIV-006 material inheritance
-
-P-INFO standalone = OPEN / NOT ESTABLISHED
-P-INST standalone = OPEN / NOT ESTABLISHED
-
-P-INFO component role = PASS in mixed installed-base / precedent cases
-P-INST component role = PASS in precedent case
-
-P-MIXED = VALID only when decomposed
+C = {c1, c2, ... cn}
+cardinality = MULTI-COMPONENT
 ~~~
 
-Precedent / stare decisis pressure:
+Current case-bounded carrier states:
 
 ~~~text
-P-MIXED[
-  P-INFO:
-    role = PAYLOAD / prior holding or legal-rule content
+ecological inheritance:
+SINGLE-COMPONENT
+P-ECO / SUBSTRATE+MAINTENANCE
+= PASS for that source-native family
 
-  P-INST:
-    role = AUTHORITY / binding-force selector
-]
+CIV-006:
+SINGLE-COMPONENT
+P-MAT / SUBSTRATE+MAINTENANCE+INTERFACE
+= PASS
 
-binding vs persuasive authority
-+ case of first impression
-= source-native near-controls for the P-INST role.
+IPv4/IPv6:
+MULTI-COMPONENT
+P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
+P-MAT / SUBSTRATE+ENACTMENT+INTERFACE = COMPONENT-ROLE-PASS
+P-INST proposed MAINTENANCE role = PRESENT / ROLE-OPEN
+
+precedent:
+MULTI-COMPONENT
+P-INFO / PAYLOAD = COMPONENT-ROLE-PASS
+P-INST / AUTHORITY = COMPONENT-ROLE-PASS
 ~~~
 
 Strong carrier guards:
 
 ~~~text
-symbolically describable != P-INFO standalone
-documented rule != P-INST standalone
-software-encoded != P-INFO standalone
-institution present != P-INST standalone
+symbolically describable != P-INFO carrier sufficiency
+documented rule != P-INST carrier sufficiency
+software-encoded != P-INFO carrier sufficiency
+institution present != P-INST causal role
 
 component-role PASS
-!= standalone carrier PASS
+!=
+architecture sufficiency automatically
 ~~~
+
+Adequacy owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 
 CIV-006 infrastructure result:
 

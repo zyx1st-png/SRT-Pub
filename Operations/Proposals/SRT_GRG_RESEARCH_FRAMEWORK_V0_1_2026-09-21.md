@@ -914,12 +914,15 @@ Completed:
 19. X4c carrier-explicit admission revision + M3 cross-domain recurrence;
 20. expectation-provenance typing added to ledger / templates;
 21. IPv4 -> IPv6 installed-base X4c stress test;
-22. P-INFO-alone NOT ESTABLISHED; P-MIXED carrier decomposition required;
+22. P-INFO-alone NOT ESTABLISHED; multi-component decomposition required;
 23. greenfield-vs-installed-base added as reusable X4c near-control;
 24. CIV-007 precedent / stare-decisis institutional carrier stress;
-25. P-INST causal component role isolated through binding-vs-persuasive authority;
-26. standalone P-INST remains OPEN;
-27. Inheritance Carrier Architecture v0.1: provenance component + causal role + role evidence/near-control + sufficiency status.
+25. P-INST AUTHORITY role isolated through binding-vs-persuasive authority;
+26. Inheritance Carrier Architecture v0.1;
+27. Carrier Architecture Adequacy Pass 1 = RETAIN / PRODUCTIVE;
+28. provenance-kind-first model = NARROW;
+29. causal-role-first model = ACTIVE;
+30. historical P-MIXED provenance kind = RETIRED.
 
 Current mainline:
 
@@ -929,13 +932,15 @@ B. expand the Generative Expectation Ledger;
 C. use the PH ledger to distinguish sensitivity from evidence-paid divergence;
 D. CIV-006 long-duration infrastructure pressure = COMPLETE;
 E. IPv4/IPv6 technical-informational carrier stress = COMPLETE;
-F. standalone P-INFO remains OPEN; do not treat symbolic description as sufficient;
-G. precedent P-INST stress = COMPLETE;
-H. stop treating provenance kinds as mutually exclusive carrier classes by default;
-I. use Inheritance Carrier Architecture v0.1 for future X4c records;
-J. test whether component-role decomposition improves exclusion / near-control selection across existing cases before opening another provenance hunt;
-K. continue domain re-entry for underdeveloped domains;
-L. use M4 prospectively when a genuinely uncertain target appears,
+F. precedent P-INST stress = COMPLETE;
+G. Carrier Architecture Adequacy Pass 1 = COMPLETE;
+H. use causal roles as the primary carrier comparison coordinate;
+I. keep provenance kinds only as secondary component metadata;
+J. historical P-MIXED provenance kind = RETIRED;
+K. run a bounded role census across existing X4c carrier records before creating any Role Library;
+L. create a Role Library only if roles recur and predict controls / failure conditions;
+M. continue domain re-entry for underdeveloped domains;
+N. use M4 prospectively when a genuinely uncertain target appears,
    not as a serial novelty hunt.
 ~~~
 
@@ -961,6 +966,7 @@ Comparison owners:
 - Operations/Audits/SRT_GRG_CIV006_X4C_INHERITANCE_CROSSSURFACE_PASS1_2026-09-21.md
 - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
 - Operations/Audits/SRT_GRG_X4C_PRECEDENT_PINST_CARRIER_PASS1_2026-09-21.md
+- Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
 
 ## 21. Canonical boundary
 

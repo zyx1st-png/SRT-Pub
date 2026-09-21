@@ -132,12 +132,27 @@ It is materially / technically instantiated in:
 
 Standards and operational practice also maintain the field.
 
-Best current typing:
+Current carrier architecture after adequacy Pass 1:
 
 ~~~text
-P-MIXED
-= P-INFO + P-MAT/TECH + P-INST/operational
+cardinality = MULTI-COMPONENT
+
+P-INFO:
+role = PAYLOAD
+status = COMPONENT-ROLE-PASS
+
+P-MAT:
+role = SUBSTRATE / ENACTMENT / INTERFACE
+status = COMPONENT-ROLE-PASS
+
+P-INST:
+proposed role = MAINTENANCE / operational coordination
+status = PRESENT / ROLE-OPEN
+
+architecture sufficiency = PASS
 ~~~
+
+Historical `P-MIXED` language is superseded by the explicit component-role architecture.
 
 No new relation is created.
 
@@ -168,7 +183,7 @@ The case supports:
 
 ~~~text
 prior deployed field F
-+ mixed carrier C
++ multi-component carrier architecture C
 + successor operators / devices
 + changed later migration / interoperability possibilities
 ~~~
@@ -194,3 +209,7 @@ Do not infer moral normativity.
 ## 10. Integration target
 
 Operations/Audits/SRT_GRG_X4C_IPV4_IPV6_CARRIER_PROVENANCE_PASS1_2026-09-21.md
+
+Superseding carrier-schema audit:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md

@@ -101,18 +101,40 @@ prior adjudication
 -> successor court enters field
 -> later options / justification burdens conditioned
 
-inheritance provenance =
-P-MIXED
+inheritance carrier architecture =
+MULTI-COMPONENT
 
-P-MIXED components =
-P-INFO role = holding / legal-rule content
-P-INST role = binding authority / hierarchy / jurisdiction
+carrier components =
+c1 = prior holding / legal-rule content
+c2 = hierarchy / jurisdiction authority relation
+
+provenance metadata =
+c1: P-INFO
+c2: P-INST
+
+component causal roles =
+c1: PAYLOAD
+c2: AUTHORITY
+
+role evidence / near-control =
+binding vs persuasive authority;
+controlling precedent vs case of first impression
+
+component status =
+c1: COMPONENT-ROLE-PASS
+c2: COMPONENT-ROLE-PASS
+
+minimal paid role set =
+PAYLOAD + AUTHORITY
+
+architecture sufficiency =
+PASS
 
 what is actually paid =
 successor inheritance + institutionally differentiated constraint
 
 what is not paid =
-P-INST standalone total carrier
+single-component P-INST architecture
 moral legitimacy
 political desirability
 universal irreversibility
@@ -173,7 +195,7 @@ institutional authority role.
 | Other case | Possible shared burden | Key mechanism difference | False-convergence risk |
 |---|---|---|---|
 | CIV-006 combined sewer | successor cohort inherits reconstructed field | material hydraulic carrier vs legal-institutional mixed carrier | generic path dependence |
-| IPv4/IPv6 installed base | successor participants face non-greenfield field | technical installed base vs legal authority relation | treating all P-MIXED as same mechanism |
+| IPv4/IPv6 installed base | successor participants face non-greenfield field | technical installed base vs legal authority relation | treating all multi-component carrier architectures as the same mechanism |
 | Internet standards | current operative expectation | standards compatibility vs binding precedent | collapsing X3b into X4c |
 | ecological inheritance | later participant enters prior reconstructed condition | environment carrier vs legal rule/authority | calling all persistence inheritance |
 

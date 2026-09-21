@@ -153,11 +153,37 @@ historical construction A
 -> F changes later operation / compliance / retrofit / redevelopment possibilities
 ~~~
 
-Inheritance provenance:
+Inheritance carrier architecture:
 
 ~~~text
-P-MAT primary
-P-INST secondary once modern regulatory obligations attach
+cardinality = SINGLE-COMPONENT
+
+component =
+maintained material hydraulic network
+
+provenance metadata =
+P-MAT
+
+causal roles =
+SUBSTRATE / MAINTENANCE / INTERFACE
+
+role evidence =
+successor operation / compliance / retrofit must work through,
+around or replace the inherited hydraulic network
+
+component status =
+COMPONENT-SUFFICIENT
+
+architecture sufficiency =
+PASS
+~~~
+
+Modern regulation is NOT a secondary inheritance carrier in this case.
+
+It belongs to expectation provenance:
+
+~~~text
+E-LEGAL / E-ORG
 ~~~
 
 What is paid:

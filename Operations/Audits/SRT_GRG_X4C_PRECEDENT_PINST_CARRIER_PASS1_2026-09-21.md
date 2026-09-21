@@ -62,34 +62,31 @@ Prior reasoning can remain available while institutional binding force differs.
 
 Therefore informational persistence is not sufficient to explain the successor constraint.
 
-## 3. Standalone-carrier result
+## 3. Carrier architecture result
 
-However:
-
-~~~text
-P-INST standalone total carrier = NOT ESTABLISHED
-~~~
-
-A binding precedent still needs inherited content:
+A binding precedent requires at least two paid roles:
 
 ~~~text
+cardinality = MULTI-COMPONENT
+
 P-INFO:
-holding / legal-rule content
+role = PAYLOAD / holding or legal-rule content
+status = COMPONENT-ROLE-PASS
+
+P-INST:
+role = AUTHORITY / binding-force selector
+status = COMPONENT-ROLE-PASS
+
+minimal paid role set =
+PAYLOAD + AUTHORITY
+
+architecture sufficiency =
+PASS
 ~~~
 
-Best current classification:
+Single-component P-INST and P-INFO architectures are NOT ESTABLISHED for this case.
 
-~~~text
-P-MIXED[
-  P-INFO:
-    role = inherited content / payload
-
-  P-INST:
-    role = authority / binding-force selector
-]
-~~~
-
-This is a stronger decomposition than merely listing components.
+Historical `P-MIXED` language is superseded by the explicit multi-component architecture.
 
 ## 4. Provenance framework revision
 
@@ -113,7 +110,7 @@ P-INST
 role = authority / admissibility / binding selector
 ~~~
 
-This prevents P-MIXED from becoming an uninformative bucket.
+This prevents multi-component architecture from becoming an uninformative bucket.
 
 ## 5. Binding versus persuasive near-control
 
@@ -182,22 +179,29 @@ X3b != X4c
 
 even though X3b helps maintain the X4c carrier.
 
-## 8. Provenance state after Pass 1
+## 8. Carrier state after adequacy Pass 1
+
+Superseding owner:
+
+Operations/Audits/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_ADEQUACY_PASS1_2026-09-21.md
+
+Current interpretation:
 
 ~~~text
-P-ECO = source-native PASS
-P-MAT = source-native PASS
+provenance-kind-first model = NARROW
+causal-role-first model = ACTIVE
+historical P-MIXED provenance kind = RETIRED
 
-P-MIXED = source-native PASS
-  with decomposition required
-
-P-INST:
-  causal component role = PASS
-  standalone total carrier = OPEN / NOT ESTABLISHED
-
-P-INFO:
-  standalone total carrier = OPEN / NOT ESTABLISHED
+precedent carrier =
+MULTI-COMPONENT
+P-INFO / PAYLOAD = PASS
+P-INST / AUTHORITY = PASS
+architecture sufficiency = PASS
 ~~~
+
+Provenance metadata remain useful descriptors.
+
+They do not receive standalone programme maturity.
 
 ## 9. Maturity
 
@@ -233,16 +237,16 @@ First update:
 - Burden Matrix;
 - Framework / Atlas / Programme.
 
-Then ask whether standalone carrier categories are even the right object.
-
-Possible next question:
+That question is now answered by carrier-architecture adequacy Pass 1:
 
 ~~~text
-Should provenance be modeled as a compositional carrier architecture
-rather than mutually exclusive carrier classes?
+YES to compositional carrier architecture;
+NO to provenance-kind-first classification.
 ~~~
 
-This is a framework question, not an ontology rewrite.
+Next gate is a bounded causal-role census across existing X4c cases.
+
+This remains a framework question, not an ontology rewrite.
 
 ## 12. Canonical consequence
 
