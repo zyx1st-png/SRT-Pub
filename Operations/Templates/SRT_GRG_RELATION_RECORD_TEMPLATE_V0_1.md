@@ -147,49 +147,77 @@ X4c persistence
 
 ## G. Generative expectation
 
+Live owner:
+
+Operations/GRG/SRT_GRG_GENERATIVE_EXPECTATION_LEDGER_V0_1.md
+
+### G.1 Source / provenance
+
 ~~~text
-typed relation =
-structural expectation =
-C0 embodied/enacted realization, if any =
-C1 model-mediated realization, if any =
-what would count as mismatch =
+source/provenance =
+S-MAT / S-TECH / S-LEGAL / S-ORG / S-NORM / S-BIO
+or explicit multi-layer list
+
+B-STRUCTURAL status =
+PASS / PRE-ADMISSION / FAIL / OPEN
+
+relation-native continuation / transformation burden =
+
+mismatch / failure condition =
 ~~~
 
-Do not infer goodness from expectation.
+Do not use live `E-MODEL` or `E-MIXED`.
 
-## G.1 Generative expectation provenance
-
-Where a relation carries a structural expectation, type its provenance:
+### G.2 Locus / mode
 
 ~~~text
-E-MAT = material / infrastructural constraint
-E-TECH = technical / interface constraint
-E-LEGAL = legal / regulatory requirement
-E-ORG = organizational / institutional rule-in-use
-E-NORM = social / normative expectation
-E-BIO = biological / viability relation
-E-MODEL = model-mediated / analytic expectation
-E-MIXED = multiple layers
-~~~
+C0-ENACTED =
+PASS / CANDIDATE / NOT ESTABLISHED / NOT REQUIRED
 
-Record separately:
+C1-MODEL =
+PASS / CANDIDATE / NOT ESTABLISHED / NOT REQUIRED
 
-~~~text
-expectation provenance =
-structural expectation =
-expectation failure =
-multiple provenance layers? =
+OBS-MODEL =
+PASS / PRESENT / ABSENT / NOT RELEVANT
+
+formed locus, if C0/C1 claimed =
+evidence that anticipation participates in present organization =
 ~~~
 
 Guard:
 
 ~~~text
-material expectation != legal obligation
-legal obligation != moral legitimacy
-technical compatibility != social norm
+OBS-MODEL != C1-MODEL
+prediction != generative normativity
+~~~
+
+### G.3 Evaluative index
+
+Required before G-stronger / G-weaker:
+
+~~~text
+evaluative relation / declared objective =
+position / locus =
+scale / grain =
+horizon =
+comparison dimension =
+actual trajectory / alternative =
+strengthened / preserved / weakened / substituted / hollowed / destroyed =
+indexed-comparison status = PASS / OPEN / NOT ADMITTED
 ~~~
 
 ## H. Normativity interface — only if warranted
+
+Strong guard:
+
+~~~text
+relation-reproductive strength
+!= participant-level generativity
+!= justice
+!= legitimacy
+~~~
+
+
 
 ~~~text
 indexed position =
