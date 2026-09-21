@@ -857,13 +857,18 @@ Bearer admission threshold + Bearer <-> position stability
 89. Generative Expectation negative productivity Pass 1 = PASS at Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_NEGATIVE_PRODUCTIVITY_PASS1_2026-09-21.md;
 90. RNN negative control = O1 prediction/classification can coexist with R1c O3 NULL; OBS-MODEL != B/C1 and no indexed normativity follows;
 91. precedent negative control = S-LEGAL+S-ORG B PASS and indexed legal force PASS, but binding != morally correct / just / legitimate;
-92. expectation-schema consistency census = ACTIVE; migrate live GRG routing only, preserve historical audit notation where appropriate;
-93. periodic M4 only when target ownership is genuinely uncertain;
-94. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
-95. author generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-96. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-97. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-98. do not restart winner-style strongest-neighbor novelty audit;
+92. expectation-schema consistency census / live migration = COMPLETE / PASS at Operations/Audits/SRT_GRG_GENERATIVE_EXPECTATION_SCHEMA_CONSISTENCY_CENSUS_PASS1_2026-09-21.md;
+93. stale-token validation across declared active surfaces = PASS; remaining E-* mentions are historical migration / retirement notes only;
+94. next framework work = bounded C0/C1 realization pressure using existing repository evidence first;
+95. primary C0 candidate = Nepal irrigation / rules-in-use / enacted continuation sensitivity; status before pressure = STRONG CANDIDATE, not PASS;
+96. primary C1 candidate = Performative Prediction; status before pressure = CASE-DEPENDENT CANDIDATE, not PASS;
+97. C0/C1 must be downgraded if source-native evidence does not show a formed locus using continuation sensitivity / model-mediated anticipation in present organization;
+98. periodic M4 only when target ownership is genuinely uncertain;
+99. M4 relations = NONE; M5 = NONE; scientific distinctiveness = NOT ESTABLISHED;
+100. author generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+101. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+102. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+103. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 
