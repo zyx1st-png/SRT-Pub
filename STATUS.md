@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / NON-RNN R1c CANDIDATE SELECTED = HKB COORDINATION DYNAMICS / HKB PROTOCOL+ACCESS FEASIBILITY NEXT / NEW EXPERIMENT + O4 BLOCKED
+NEXT RESEARCH WORK PACKAGE = GRG PROGRAMME / NONCANONICAL / HKB SOURCE+PROTOCOL FEASIBILITY PASS / PUBLIC RAW TRAJECTORY ACCESS NO-GO-NOT-LOCATED / EXISTING-DATA ACCESS ROUTE NEXT / NEW EXPERIMENT + O4 BLOCKED
 ```
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
@@ -69,6 +69,15 @@ GRG-R1 O-criterion revision:
 
 GRG-R1 target-blind spectral O1 result:
 `Operations/Audits/SRT_GRG_R1_O_FEASIBILITY_SPECTRAL_FORMATION_RESULT_2026-09-20.md`
+
+HKB feasibility audit:
+`Operations/Audits/SRT_GRG_R1_HKB_SOURCE_PROTOCOL_ACCESS_FEASIBILITY_2026-09-21.md`
+
+HKB normalization reanalysis SourceCard:
+`Materials/2026/SRC_2026_09_21_HKB_Post2020_Normalization_Reanalysis.md`
+
+Existing-data access request package:
+`Operations/Proposals/SRT_GRG_R1_HKB_EXISTING_DATA_ACCESS_REQUEST_PACKAGE_2026-09-21.md`
 
 Continuation handoff:
 `Operations/Handoffs/SRT_GRG_PROGRAMME_NEXT_SESSION_HANDOFF_2026-09-20.md`
@@ -175,14 +184,30 @@ maintenance provenance = MIXED / COUPLED.
 Cross-realization refinement:
 R1b/R1c formation may be historical/sedimented OR continuously regenerated; historical storage is not required for the minimum causal core.
 
+HKB source/protocol-access feasibility audit = COMPLETE.
+
+Result:
+- full method / measurement reconstruction = PASS;
+- GRG component/control/O/perturbation/consequence typing = PASS;
+- 2020 normalization reanalysis creates a mandatory objectification guard;
+- half-cycle / component-aware normalization = required future primary route;
+- performed amplitude / frequency / oscillation-centre shift remain explicit component variables;
+- public original 300-Hz raw trajectories = NO-GO / NOT LOCATED;
+- participant-level supplementary outcomes = available but insufficient for trajectory-level R1c execution;
+- historical author-held data route = evidenced by 2020 reanalysis;
+- current authorized raw-data route = NOT ESTABLISHED.
+
+New programme guard:
+candidate maintained O must survive its measurement / normalization interface.
+
 next:
-HKB source/protocol-access feasibility audit only
--> full perturbation-method close read
--> exact variable/intervention/relaxation reconstruction
--> data-access check
--> freeze failure conditions
+existing-data access route / request package only
+-> verify whether original bilateral trajectories + perturbation metadata can be shared
+-> verify reuse / ethics / de-identification terms
+-> only if real access is obtained, freeze a new raw-data analysis charter before opening outcome data
+-> do not weaken to aggregate analysis
 -> no new experiment / no simulation confirmation
--> O4 blocked
+-> R1d / O4 blocked
 -> canonical reassessment HOLD.
 ```
 
