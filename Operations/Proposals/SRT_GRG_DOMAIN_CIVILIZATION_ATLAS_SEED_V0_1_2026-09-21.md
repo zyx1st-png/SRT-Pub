@@ -413,16 +413,47 @@ This is not a novelty result.
 Owner:
 `Operations/Audits/SRT_GRG_M3_M4_CROSSDOMAIN_TRANSFER_ABSORPTION_PASS1_2026-09-21.md`
 
+## 5.5 First prospective M4 attempt — absorbed
+
+~~~text
+M4-01:
+X3b -> tool-using AI / LLM agent authorization
+
+frozen before target source audit = YES
+
+frozen design:
+policy-only reachable capability
+vs
+same policy + tool/credential/sandbox enforcement
+
+target-domain practice:
+already explicitly owns least privilege, scoped permissions,
+sandboxing, downstream authorization and approval boundaries.
+
+repository AI precedent:
+near-equivalent matched connector write-gate control predates GRG.
+
+verdict:
+ABSORBED / M4 NO
+duplicate execution = STOP
+~~~
+
+Method revision:
+
+~~~text
+M4-E0 absorption-before-execution
+= target-practice audit after freeze, before experiment.
+~~~
+
 ## 6. Mainline work order
 
 ~~~text
 1. do not add M3 examples by default;
-2. select one bounded first-M4 target prospectively;
-3. freeze relation + target domain before decisive target-source/outcome inspection;
-4. write GRG-generated target question / variable / control / failure expectation in advance;
-5. compare against ordinary target-domain practice;
-6. record ABSORBED if the field already owns the same distinction;
-7. continue Atlas material re-entry without conflating coverage with maturity;
+2. select M4-02 using a different relation or substantially different target domain;
+3. freeze relation + target + design before decisive target-source/outcome inspection;
+4. apply M4-E0 target-practice audit;
+5. execute only if the design is not already absorbed;
+6. continue Atlas material re-entry without conflating coverage with maturity;
 ~~~
 
 ## 7. Calibration queue

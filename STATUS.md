@@ -792,11 +792,17 @@ Bearer admission threshold + Bearer <-> position stability
 24. X4b -> Performative Prediction = non-biological semantic/source match PASS; X4b promoted to M3 and DOMAIN-LIMITED lifted; M4 = NO / ABSORBED;
 25. X4b generic programme label = recursive reconstructed-field feedback; biological selective/viability feedback remains a specialization;
 26. M4 relations = NONE; M5 relations = NONE; scientific distinctiveness = NOT ESTABLISHED;
-27. next framework work = one prospectively frozen bounded M4 attempt with relation + target + target question/control/failure expectation fixed before decisive target-source/outcome inspection;
-28. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
-29. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
-30. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
-31. do not restart winner-style strongest-neighbor novelty audit;
+27. M4-01 = COMPLETE / ABSORBED: X3b -> tool-using AI-agent authorization; charter frozen before target-source audit;
+28. target-domain source audit = strong pre-ownership: least privilege, scoped tool permissions, sandboxing, downstream authorization and approval boundaries already standard;
+29. repository AI pre-ownership = strong: 2026-08-04 disconnected-write audit already contains read/write capability separation and near-equivalent matched connector write-gate control;
+30. M4-01 execution = STOP BEFORE DUPLICATE EXPERIMENT; M4 remains NONE;
+31. M4-E0 absorption-before-execution rule = ACTIVE: freeze -> target-practice audit -> absorbed means stop unless separate replication reason exists;
+32. M4 Transfer Charter template = Operations/Templates/SRT_GRG_M4_TRANSFER_CHARTER_TEMPLATE_V0_1.md;
+33. next framework work = M4-02 using a different relation or substantially different target, prospectively frozen before target-source audit;
+34. generative expectation = B+C asymmetric/layered; indexed normativity remains distinct from full moral legitimacy;
+35. do not automatically open canonical L0/One/Bearer/d/Concern/Agency/phenomenality/normativity owners;
+36. preserve Level 2 HOLD, no new Level 1, no scientific-distinctiveness promotion;
+37. do not restart winner-style strongest-neighbor novelty audit;
 
 ~~~
 

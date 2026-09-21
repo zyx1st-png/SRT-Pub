@@ -367,20 +367,48 @@ M4 = NONE
 M5 = NONE
 ~~~
 
+First M4 attempt completed:
+
+~~~text
+M4-01 target = tool-using AI / LLM agent authorization
+relation = X3b
+charter freeze = PASS
+target-source audit = mature domain already owns policy != enforcement
+repository AI pre-ownership = near-equivalent matched write-gate control already exists
+verdict = ABSORBED / M4 NO
+execution = STOPPED BEFORE DUPLICATE EXPERIMENT
+~~~
+
+Owner:
+
+Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md
+
+New efficiency rule:
+
+~~~text
+M4-E0 — absorption-before-execution
+
+freeze target/design
+-> audit ordinary target practice
+-> if same distinction/control already exists
+   and no separate replication rationale exists:
+   M4 NO / ABSORBED
+   STOP before duplicate execution.
+~~~
+
 Next programme gate:
 
 ~~~text
-first legitimate M4 attempt
+M4-02 prospectively frozen attempt
 ~~~
 
-Requirements:
+Requirements remain:
 
-1. freeze relation + target domain before decisive target-source/outcome inspection;
-2. write target-domain question / variable / control / failure expectation in advance;
-3. compare against ordinary target-domain practice;
-4. if the field already owns the same distinction, record ABSORBED / M4 NO;
-5. if GRG changes the design, execute or source-test without semantic drift;
-6. preserve null / absorption results.
+1. use a different relation or substantially different target domain;
+2. freeze relation + target domain + design before decisive target-source/outcome inspection;
+3. run M4-E0 target-practice audit first;
+4. execute only if the frozen GRG design is not already absorbed;
+5. preserve ABSORBED / NULL / positive transfer equally.
 
 Do not seek more M3 examples merely to increase case count.
 
