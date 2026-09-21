@@ -260,6 +260,32 @@ Candidate domains:
 
 No X-candidate is promoted merely because the examples sound similar.
 
+## 5.1 First civilizational case records completed
+
+~~~text
+CIV-001 Internet standards / interoperability
+-> X3 externalized generative expectation candidate
+
+CIV-002 antimicrobial resistance
+-> X4 present action reconstructs future option conditions candidate
+
+CIV-003 Montreal Protocol / ozone recovery
+-> X3 externalized generative expectation
+   + secondary X4 / G11 pressures
+~~~
+
+False-convergence Pass 1 rejects one-relation compression.
+
+Current candidate status:
+
+~~~text
+X3 = M2 / retained candidate / expectation-provenance split required
+X4 = M2 / retained candidate / position+horizon split required
+~~~
+
+Owner:
+`Operations/Audits/SRT_GRG_CIVILIZATIONAL_FALSE_CONVERGENCE_PASS1_2026-09-21.md`
+
 ## 6. Mainline work order
 
 ~~~text
@@ -290,7 +316,7 @@ It should show:
 
 - at least 8 source-native relation records;
 - at least 4 distinct domain families;
-- at least 3 civilizational case records;
+- at least 3 civilizational case records; [PAID in seed Pass 1]
 - at least 2 candidate cross-domain relations that survive a false-convergence audit;
 - at least 1 candidate relation narrowed or rejected by evidence.
 
