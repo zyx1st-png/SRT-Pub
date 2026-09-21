@@ -20,13 +20,17 @@ tags: [GRG, RelationLibrary, BurdenLibrary, Admission, NegativeControls, Revisio
 
 ## 0. Role
 
-This is the live programme owner for extracted GRG relation candidates.
+This is the active legacy registry for extracted GRG relation candidates, maturity, negative controls and revision history.
+
+Under the process-first v0.3 foundation it is not the primary grammar skeleton or primary new-record schema.
+
+New bounded work routes through `Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md`.
 
 It is not a canonical ontology owner.
 
 It tracks admission burdens, non-identities, evidence state, negative controls, cross-domain maturity, revision history and next gates.
 
-The provisional G0–G11 programme burdens remain upstream research slots in:
+The provisional G0–G11 programme burdens remain historical / upstream research provenance in:
 
 Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
 
