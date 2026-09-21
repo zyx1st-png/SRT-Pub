@@ -13,6 +13,7 @@ dependency:
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md
   - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ARCHITECTURE_V0_1.md
+  - Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
 tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 ---
 
@@ -21,6 +22,125 @@ tags: [GRG, Template, GTS, V0_2, GenerativeTransformation, CrossObjectification]
 > Primary new-record schema for process-first GRG. Historical GTS v0.1 existed only in closed, unmerged PR #1018.
 >
 > Relation-family labels are legacy / analytical views, not the primary record unit.
+
+## 0. Mandatory core, conditional modules, and minimal skeleton
+
+A GTS is not required to populate every module.
+
+### 0.1 Mandatory core
+
+Every new GTS must open:
+
+~~~text
+CORE-1 identity + research question
+
+CORE-2 O_R research-side objectification
+       + what is treated as given
+       + what is reopened
+       + strongest reasonable horizontal baseline
+
+CORE-3 source-native process / mechanism
+
+CORE-4 generative-condition declaration:
+       what candidate condition is being treated as frame-like,
+       what changes if it changes,
+       and whether a larger horizontal model could encode it
+
+CORE-5 bounded transformation or bounded bridge claim
+
+CORE-6 at least one falsifiable burden:
+       P_G OR causal/proxy bridge OR source-native discriminator
+
+CORE-7 explicit failure / narrowing condition
+
+CORE-8 evidence-generative provenance
+
+CORE-9 closeout:
+       evidence / maturity
+       revision / mismatch
+       final bounded verdict
+~~~
+
+### 0.2 Conditional modules
+
+~~~text
+history-input
+reconstruction-output
+local-locus
+operative positionality
+composition
+Generative Order
+E_G
+wholeward analysis
+cross-objectification gain
+measurement / proxy bridge
+mature-neighbor pressure
+carrier architecture
+progress comparison
+W-P loop
+SRT backpressure
+~~~
+
+Mature-neighbor pressure is REQUIRED when claiming prospective GRG credit / M4-side gain.
+
+For optional modules not opened:
+
+~~~text
+status = NOT OPENED / N.A.
+reason =
+~~~
+
+A single grouped reason may cover adjacent optional modules when the same bounded reason applies.
+
+But these high-risk modules require their own explicit reason when closed:
+
+~~~text
+history-input
+Generative Order
+E_G
+cross-objectification / XG
+~~~
+
+Do not use `NOT OPENED` as a silent escape hatch.
+
+Positive credit requires the corresponding module to be opened and paid.
+
+### 0.3 Minimal record skeleton
+
+A minimal bounded GTS may be as short as:
+
+~~~text
+1. question
+2. O_R / given / reopened / strongest baseline
+3. source-native account
+4. generative condition
+5. bounded transformation / bridge
+6. falsifiable burden + failure condition
+7. evidence-generative provenance
+8. evidence / maturity
+9. revision
+10. final verdict
+~~~
+
+Open additional modules only when load-bearing.
+
+Order / E_G discipline:
+
+~~~text
+do not open Generative Order merely because an operative mechanism exists.
+
+do not open E_G when the classification is only an analytic restatement of:
+GO3 generative efficacy
+or
+GO5 failure / dissolution.
+
+Strong E_G use should add a nontrivial order-relative discrimination
+or an explicit result that could force the classification to narrow / fail.
+~~~
+
+Evidence-provenance owner:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
 
 ## A. Identity
 
@@ -40,6 +160,8 @@ research mode =
 ~~~text
 research question =
 
+O_R research-side objectification =
+
 stabilized objectification =
   unit =
   boundary =
@@ -54,6 +176,11 @@ what is treated as given =
 what is reopened =
 
 strongest reasonable horizontal baseline =
+
+domain-internal verticality claim =
+  paid / partial / not established / not needed
+
+what would make this more than relabeling the horizontal baseline? =
 ~~~
 
 Guard:
@@ -276,9 +403,21 @@ co-occurrence != composition
 temporal sequence != composition
 ~~~
 
-## K. Generative Prediction — P_G
+## K. Testable burden — P_G / bridge / source-native discriminator
+
+At least one testable burden is mandatory, but it need not always be a GRG-generated P_G.
 
 ~~~text
+burden type =
+  GRG P_G /
+  causal bridge hypothesis /
+  proxy bridge /
+  source-native discriminator /
+  negative control
+
+P_G status =
+  CLAIMED / SOURCE-NATIVE / NOT CLAIMED / N.A.
+
 prediction target =
 
 prediction form =
@@ -300,11 +439,18 @@ predicted difference =
 what result would defeat or narrow the GTS? =
 ~~~
 
-Retrospective explanation alone does not pay mature P_G.
+Do not call a failed bridge hypothesis `P_G failed` unless it was actually a frozen GRG prediction. Retrospective explanation alone does not pay mature P_G.
 
 ## L. Generative Order admission
 
-For every order used by E_G, fill one block.
+~~~text
+order-analysis status =
+  OPENED / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
+~~~
+
+For every order actually used by E_G, fill one block.
 
 ~~~text
 order id =
@@ -371,6 +517,18 @@ projected E_G != ordinary admitted-order E_G
 ~~~
 
 ## M. Generative Expectation — E_G
+
+~~~text
+E_G status =
+  OPENED / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
+
+non-analytic discrimination added beyond GO3 / GO5 =
+  yes / no / open
+~~~
+
+If the answer above is `no`, keep E_G NOT OPENED unless a separate bounded reason is declared.
 
 Fill separately for each admitted order where needed. For a projected order, use the separate projected-E_G fields below and do not report ordinary E_G.
 
@@ -444,7 +602,9 @@ does the candidate average away a real local conflict? =
 hidden / delayed externalization exposed =
 
 wholeward status =
-  candidate / paid / partial / open / fail
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
+
+if NOT OPENED / N.A., reason =
 ~~~
 
 Guard:
@@ -493,7 +653,14 @@ if ABSORBED, what mature target-domain practice already owns the distinction? =
 independent replication rationale, if any =
 
 cross-objectification gain verdict =
-  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
+
+recurrence provenance =
+  INDEPENDENT / DIFFUSED / DESIGNED / MIXED / OPEN
+
+possible generative pseudoreplication =
+
+if NOT CLAIMED / N.A., reason =
 ~~~
 
 Required for PASS:
@@ -528,7 +695,7 @@ alternative horizontal explanation =
 perturbation / intervention =
 
 bridge status =
-  paid / partial / fail / open
+  paid / partial / fail / open / N.A.
 ~~~
 
 Guard:
@@ -539,6 +706,9 @@ proxy failure != proof of a deeper unspecified vertical cause
 ~~~
 
 ## Q. Mature-neighbor pressure
+
+Required for prospective GRG / M4-side credit.
+Optional otherwise.
 
 ~~~text
 neighbor / source family =
@@ -625,6 +795,61 @@ Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
 
 Current carrier line is LOCAL CLOSE. Do not create new roles or provenance categories absent a reopen trigger.
 
+## R.1 Evidence-generative provenance — mandatory
+
+Owner:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+Keep this block compact. Use the owner for all vocabulary definitions and guards; the template must not create a parallel provenance taxonomy.
+
+~~~text
+O_R =
+
+independently evidenced O_W =
+  yes / no / partial / open
+O_W role, if any =
+
+did O_R / tested grammar / intervention participate
+in generating decisive evidence? =
+  yes / no / partial / open
+how / timing =
+
+evidence purpose(s) =
+  discovery / causal leverage / construction /
+  robustness / attribution / mixed
+
+claim(s) evidence may pay =
+
+claim(s) evidence may NOT independently pay =
+
+recurrence provenance =
+  INDEPENDENT / DIFFUSED / DESIGNED / MIXED / OPEN / N.A.
+
+held-out / independent support =
+
+counterfactual status =
+  OBSERVED / INTERVENTION-REALIZED /
+  SOURCE-NATIVE BUT UNOBSERVED /
+  MODEL-DERIVED / GRG-GENERATED UNOBSERVED /
+  OPEN / N.A.
+
+maintenance / alternative-generation concern =
+
+real failure / narrowing condition retained? =
+  yes / no / open
+~~~
+
+Permanent guards:
+
+~~~text
+O_R != O_W
+recurrence != independent recurrence
+construction != discovery
+Order Admission != Grammar Validation
+observed regularity != generative invariance
+~~~
+
 ## S. Evidence / maturity
 
 ~~~text
@@ -633,6 +858,9 @@ evidence family / families =
 source fidelity =
 
 independent recurrence =
+
+evidence-generative provenance owner applied =
+  yes / no
 
 prospective discrimination =
 
@@ -665,6 +893,7 @@ mismatch location =
   cross-objectification gain /
   carrier /
   proxy /
+  evidence-generative provenance /
   other
 
 revision operation =
@@ -778,12 +1007,16 @@ verticality status =
 P_G status =
 
 Generative Order admission status =
+  PASS / PARTIAL / OPEN / FAIL / NOT OPENED / N.A.
 
 E_G status =
+  OPENED / NOT OPENED / N.A.
 
 cross-objectification gain status =
+  STRUCTURAL-PASS / PROSPECTIVE-PASS / ABSORBED / PARTIAL / NO / OPEN / NOT CLAIMED / N.A.
 
 wholeward status =
+  candidate / paid / partial / open / fail / NOT OPENED / N.A.
 
 main failure / open burden =
 

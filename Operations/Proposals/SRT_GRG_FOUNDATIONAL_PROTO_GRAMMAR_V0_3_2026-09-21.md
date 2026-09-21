@@ -20,6 +20,7 @@ dependency:
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Operations/Audits/SRT_GRG_X4C_CARRIER_SUBPROGRAMME_LOCAL_CLOSURE_PASS1_2026-09-21.md
   - Operations/GRG/SRT_GRG_INHERITANCE_CARRIER_ROLE_LIBRARY_V0_1.md
+  - Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md
 tags: [GRG, ProtoGrammar, V0_3, ProcessFirst, GTS, Prediction, Expectation, GenerativeOrder, Wholeward]
 ---
 
@@ -1032,6 +1033,26 @@ The following are explicit OPEN items:
 15. scientific distinctiveness;
 16. universal scope.
 
+## 26.1 Evidence-generative provenance owner
+
+Current methodological owner:
+
+`Operations/Proposals/SRT_GRG_EVIDENCE_GENERATIVE_PROVENANCE_V0_1_2026-09-21.md`
+
+Bounded GTS use has retained and narrowed this burden.
+
+Permanent programme guards now active in GTS reconciliation include:
+
+~~~text
+O_R != O_W
+recurrence != independent recurrence
+construction != discovery
+Order Admission != Grammar Validation
+Observed Regularity != Generative Invariance
+~~~
+
+This is methodological evidence governance, not a new relation family or ontology layer.
+
 ## 27. Current mainline gate
 
 Do NOT:
@@ -1046,13 +1067,40 @@ claim global moral ordering
 expand to AGI architecture
 ~~~
 
+Completed gates:
+
+1. v0.3 independent content review = COMPLETE;
+2. GTS-first routing = COMPLETE;
+3. first selected Relation Library -> GTS bounded migration = COMPLETE / TRADE-OFF;
+4. #1025 Evidence Generative Provenance first bounded use = COMPLETE / PRODUCTIVE.
+
+First migrated records:
+
+~~~text
+GTS-001 RNN adverse calibration
+GTS-002 Kubernetes X3b
+GTS-003 CIV-006 X4c
+~~~
+
+Important real-use corrections:
+
+~~~text
+GTS dominance over legacy = NOT ESTABLISHED
+E_G in GTS-002 / GTS-003 = NOT OPENED after analytic-inflation review
+greenfield-vs-installed-base = absorbed by ordinary path-dependence baseline
+prospective family selection = OPEN
+~~~
+
 Next bounded work:
 
-1. independent content review of v0.3;
-2. reconcile programme/framework/template routing to GTS-first;
-3. convert selected mature Relation Library entries into GTS views without deleting provenance;
-4. define one prospective cross-objectification discrimination charter;
-5. only then execute a bounded test.
+1. independent content review of the post-#1025 reconciliation package;
+2. if retained, run a prospective-family selection audit across at least:
+   X3b non-explicit target,
+   X4c beyond generic path dependence,
+   evidence-provenance constraint-vs-suppression route;
+3. strongest-neighbor + M4-E0 audit before any target freeze;
+4. choose at most one route;
+5. only then freeze a prospective charter.
 
 ## 28. Verdict
 

@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-V0-3-AUTHOR-CLOSURE-HANDOFF-20260921
 type: handoff
-status: active
+status: archived
 date: 2026-09-21
 layer: meta
 epistemic_layer: os
