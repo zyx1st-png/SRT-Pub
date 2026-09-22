@@ -21,6 +21,8 @@ This handoff is the only BCTB-0 document the fresh pre-execution input-auditor s
 
 The auditor must NOT read:
 
+- GitHub PR metadata / PR body / PR discussion for #1027 or any other PR used to locate refs;
+- branch-discovery or PR-lookup output;
 - the full BCTB-0 charter;
 - later fold descriptions;
 - post-cut target SourceCards;
@@ -53,9 +55,17 @@ Historical cut:
 
 The auditor is not told the hidden target identity.
 
-The auditor receives only the following six candidate inputs from ref:
+Use the refs below directly. Do not resolve them through PR metadata.
+
+R3 handoff ref:
+
+`research/grg-bctb0-temporal-replay-20260922`
+
+Candidate-input ref:
 
 `experiments/grg-bctb0-t1-preexec-package-20260922`
+
+The auditor receives only the following six candidate inputs from the candidate-input ref:
 
 1. manifest  
    `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_MANIFEST_2026-09-22.md`
