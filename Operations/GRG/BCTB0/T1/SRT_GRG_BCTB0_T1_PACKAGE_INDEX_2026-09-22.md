@@ -204,3 +204,4 @@ all 12 outputs must be frozen before evaluator unblind / residual comparison
 | A1 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_A1_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
 | A2 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_A2_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
 | A3 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_A3_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
+| C1 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_C1_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
