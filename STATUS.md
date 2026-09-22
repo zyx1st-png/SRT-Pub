@@ -1037,3 +1037,37 @@ Byte-preserving raw snapshot:
 Other historical handoffs remain under `Operations/Status_History/`.
 
 When historical files conflict, do not resolve by date alone: separate current canonical K, explicit author A, historical B, machine C and open D; apply explicit supersession records within their declared scope.
+
+
+### BCTB-0 T1 R5 result — 2026-09-22
+
+~~~text
+R4 generator freeze = 12/12 COMPLETE
+formal identity probe = AMBIGUOUS
+blind integrity = COMPROMISED
+T1 use = COMPROMISED-DIAGNOSTIC ONLY
+
+historical A/X/F recovery = YES
+G majority A/X/F = YES
+baseline majority S/A/C = YES
+residual classification = BASELINE-SHARED
+GRG-RESIDUAL-CANDIDATE = NONE
+
+O majority =
+G 3/3
+S 2/3
+A 3/3
+C 2/3
+historical target O = NOT OPENED
+O disposition = BASELINE-SHARED OVER-OPENING
+
+P_POST historical transfer credit = NONE
+valid-core-fold contribution = 0
+M4 = NONE
+M5 = NONE
+scientific distinctiveness = NOT ESTABLISHED
+canonical consequence = NONE
+
+T1 is frozen and must not be tuned or regenerated.
+next = prepare the next independently frozen BCTB fold under the same anti-rescue controls.
+~~~
