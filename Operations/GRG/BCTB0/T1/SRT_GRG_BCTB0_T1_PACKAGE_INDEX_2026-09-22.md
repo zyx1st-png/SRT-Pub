@@ -25,10 +25,10 @@ Historical cut:
 |---|---|---|---|---|
 | source manifest | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_MANIFEST_2026-09-22.md` | `28ee2945619fc5196010c482428c1c131d4c5670` | PRESENT | R3 / R4 |
 | raw historical source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_RAW_2026-09-22.md` | `f9478cc4791232a47e6d1db9e3132b5719e7f913` | PRESENT | R3 / Arm G |
-| de-label transform | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_DELABEL_TRANSFORM_2026-09-22.md` | `da66dc3f37f2615745e4b78d608f521ddcb7d747` | PRESENT | R3 |
+| de-label transform | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_DELABEL_TRANSFORM_2026-09-22.md` | `a159475379934fef83d0fb27dae5b578d6835a47` | PRESENT | R3 |
 | de-labelled source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md` | `78d4de3a58c401c471064c72fe596530ab56454c` | PRESENT | R3 / Arms S,A,C |
-| execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `b59fd6e7ac78a39064e4a98048f5adb5f978db67` | PRESENT | R3 / R4 |
-| R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `6d8381b2b064b27f2f6ed85c95783e54a1cad8d1` | PRESENT ON PACKAGE REF | R2 ONLY |
+| execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `8b231875f24ce949992c5d1f4e9b3e59aeefcb68` | PRESENT | R3 / R4 |
+| R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `436ea692a0fd226948a772d31dd9477e1a41d7a4` | PRESENT ON PACKAGE REF | R2 ONLY |
 | masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `768a5de63e8477e1e5afd5ded0bb231aca0e5d6c` | PRESENT / FROZEN FROM R2 | R3 / R4 |
 | sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `f45064ab9b670a953bbb6a4ff8e17a9494a7b646` | PRESENT ON RESEARCH REF | R3 ONLY |
 
@@ -55,9 +55,29 @@ A5 package materials = PRESENT
 A6 package materials = PRESENT
 A7 plan = PRESENT
 
-A2 masked capsule = PRESENT / FROZEN FROM R2
+A2 masked capsule v1 = PRESENT / A2 LEAKAGE PASS / IDENTIFIABILITY WARNING
+A2 masked capsule v2 = PENDING FRESH R2 REVISION
 A3 identity-probe procedure = PRESENT IN EXECUTION PLAN
 
-R3 rerun = READY IN A NEW FRESH SESSION
-T1 generation = BLOCKED UNTIL R3 A1-A7 PASS
+R3 rerun = BLOCKED UNTIL MASKED CAPSULE V2 IS FROZEN
+T1 generation = BLOCKED
+~~~
+
+
+## Latest remediation after R3 BLOCKED
+
+~~~text
+A3 consequence freeze = PATCHED
+A4 transform wrapper completeness = PATCHED
+A4 deterministic reproduction = BYTE-EXACT PASS / 41 replacements
+A5 common context-budget ceiling = PATCHED
+
+prior R3 target identity guessed = YES
+formal capsule-only identity probe = NOT YET RUN
+interpretation = IDENTIFIABILITY WARNING, NOT FORMAL PROBE RESULT
+
+next =
+fresh R2 v2 capsule revision
+-> new fresh R3 A1-A7 audit
+-> only then capsule-only identity probe
 ~~~
