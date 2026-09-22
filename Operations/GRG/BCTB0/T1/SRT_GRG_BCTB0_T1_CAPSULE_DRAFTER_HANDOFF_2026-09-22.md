@@ -87,3 +87,27 @@ later result consulted = NO
 ```
 
 Do not append the A/X/F task. The evaluator will attach the frozen generic task deterministically after R3 leakage review.
+
+
+## Repository output destination
+
+Preferred output file:
+
+`Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md`
+
+If GitHub write access is available in the fresh R2 session, create exactly that one file on branch:
+
+`research/grg-bctb0-temporal-replay-20260922`
+
+Do not modify any other file.
+
+The file must contain only:
+
+- minimal frontmatter marking it noncanonical / candidate;
+- the exact R2 T1 CAPSULE FACTS block;
+- no target name;
+- no explanation;
+- no calibration question;
+- no later result.
+
+If write access is unavailable, return the exact block to the evaluator for verbatim copy only. The evaluator must not edit wording before R3 audit.
