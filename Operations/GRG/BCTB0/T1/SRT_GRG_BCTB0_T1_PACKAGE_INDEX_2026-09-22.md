@@ -132,3 +132,15 @@ pre-execution hardening complete
 R3 ambiguity note is NOT the formal capsule-only identity probe
 next = fresh capsule-only identity probe
 ~~~
+
+
+## Identity-probe attempt 1
+
+~~~text
+result returned = AMBIGUOUS: no capsule content provided
+classification = INVALID / INPUT MISSING
+formal identity-probe status = NOT EXECUTED
+blind-integrity consequence = NONE
+capsule v2 remains frozen and unchanged
+next = rerun in a NEW fresh context with the exact frozen capsule text included
+~~~
