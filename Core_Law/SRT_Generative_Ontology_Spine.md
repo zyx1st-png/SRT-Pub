@@ -3,7 +3,7 @@ id: SRT-GENERATIVE-ONTOLOGY-SPINE
 type: theory
 tags: [Ontology, GenerativeSpine, Selection, Manifestation, History, One, Position, Bearer, Normativity]
 status: active
-version: v2
+version: v3
 layer: L0-L2
 epistemic_layer: os
 claim_mode: canonical
@@ -108,8 +108,29 @@ At minimum:
 
 ```text
 primitive Selection
-= reality under actual generative differentiation.
+= reality under actual generative differentiation
+  whose non-neutral actualisation leaves a not-fully-erasable
+  generative consequence.
 ```
+
+### 2.1 Selection term-of-art guard
+
+The word `Selection` here is an SRT primitive, not conventional option-choice language.
+
+```text
+Selection
+!= picking from a pre-given menu;
+Selection
+!= arbitrary change;
+Selection
+requires a generatively retained / inheritable consequence.
+```
+
+A prior option space is not required. Positions, alternatives, relations and reachability can themselves become differentiated through Selection.
+
+The consequence need not persist as a local object or memory token. It may be diffuse in the later generative field or inherited as generative capacity by a new realization / higher-order formation.
+
+This clarification does **not** by itself settle the exact terminal boundary. Compatibility with legacy `terminal Selection remains genuine` wording remains OPEN and must be reconciled at the owning P0/L0 boundary.
 
 Two co-primitive analytic burdens are required:
 
