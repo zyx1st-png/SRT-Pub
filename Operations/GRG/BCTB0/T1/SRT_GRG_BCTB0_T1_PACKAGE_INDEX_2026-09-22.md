@@ -144,3 +144,22 @@ blind-integrity consequence = NONE
 capsule v2 remains frozen and unchanged
 next = rerun in a NEW fresh context with the exact frozen capsule text included
 ~~~
+
+
+## Formal capsule-only identity probe
+
+~~~text
+input = frozen capsule v2 only
+result =
+AMBIGUOUS: multiple network-policy systems fit these facts; no unique named target is identified.
+
+formal classification = AMBIGUOUS
+blind integrity = COMPROMISED
+absolute historical-transfer credit = NO
+valid core fold = NO
+symmetric between-arm comparison = MAY CONTINUE
+allowed result label = COMPROMISED-DIAGNOSTIC
+
+capsule revision after probe = FORBIDDEN
+T1 scored generation gate = OPEN FOR COMPROMISED-DIAGNOSTIC ONLY
+~~~
