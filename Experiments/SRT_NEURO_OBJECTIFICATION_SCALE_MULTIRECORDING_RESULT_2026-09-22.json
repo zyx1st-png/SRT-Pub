@@ -1,0 +1,75 @@
+{
+  "id": "SRT-NEURO-OBJECTIFICATION-SCALE-MULTIRECORDING-RESULT-20260922",
+  "status": "frozen",
+  "record_stage": "multirecording_primary_complete",
+  "protocol_id": "SRT-NEURO-OBJECTIFICATION-SCALE-MULTIRECORDING-PREREGISTRATION-20260921",
+  "availability_audit_commit": "bca6ecfa86871e0a1faed590971a8803d536de2e",
+  "eligible_recordings": 10,
+  "validated_windows": 216,
+  "validated_q_trials": 43200,
+  "graph_rule": "connected MST backbone plus strongest remaining abs-correlation edges",
+  "target_mean_degree": 16,
+  "repeats_per_window": 200,
+  "workers": 4,
+  "seed_root": 12345,
+  "classification_threshold": 0.01,
+  "condition_outcomes": {
+    "sleep": {
+      "label": "MR-C",
+      "n_animals": 5,
+      "n_recordings": 6,
+      "reversed_animals": 3,
+      "negative_shift_animals": 4,
+      "negative_shift_fraction": 0.8,
+      "median_grain_shift": -0.0867868043011062
+    },
+    "anesthesia": {
+      "label": "MR-C",
+      "n_animals": 4,
+      "n_recordings": 4,
+      "reversed_animals": 3,
+      "negative_shift_animals": 3,
+      "negative_shift_fraction": 0.75,
+      "median_grain_shift": -0.042485738679165067
+    }
+  },
+  "recordings": [
+    {"recording_id":"mouse01_sleep","condition":"sleep","animal_id":"mouse01","DeltaQ_G1":0.05156552143141335,"DeltaQ_G2":0.014278393646801057,"DeltaQ_G3":-0.03969976895393679,"grain_shift_G3_minus_G1":-0.09126529038535014,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse02_sleep","condition":"sleep","animal_id":"mouse02","DeltaQ_G1":0.03051834887711269,"DeltaQ_G2":0.02562456387107248,"DeltaQ_G3":-0.0021743285123967393,"grain_shift_G3_minus_G1":-0.03269267738950943,"classification":"R-ATTENUATED"},
+    {"recording_id":"mouse03_sleep","condition":"sleep","animal_id":"mouse03","DeltaQ_G1":0.097086091371541,"DeltaQ_G2":0.062437510433228316,"DeltaQ_G3":0.09756732868916496,"grain_shift_G3_minus_G1":0.0004812373176239504,"classification":"R-STABLE-POSITIVE"},
+    {"recording_id":"mouse04_day1_sleep","condition":"sleep","animal_id":"mouse04","DeltaQ_G1":0.15480085409662458,"DeltaQ_G2":0.08064379339229916,"DeltaQ_G3":-0.03476099111585551,"grain_shift_G3_minus_G1":-0.1895618452124801,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse04_day2_sleep","condition":"sleep","animal_id":"mouse04","DeltaQ_G1":0.06698798247213655,"DeltaQ_G2":0.09262025247701217,"DeltaQ_G3":0.08297621908240424,"grain_shift_G3_minus_G1":0.015988236610267686,"classification":"R-STABLE-POSITIVE"},
+    {"recording_id":"mouse05_sleep","condition":"sleep","animal_id":"mouse05","DeltaQ_G1":0.10883116022041361,"DeltaQ_G2":0.03434077252662615,"DeltaQ_G3":-0.06139617516097584,"grain_shift_G3_minus_G1":-0.17022733538138946,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse03_ane","condition":"anesthesia","animal_id":"mouse03","DeltaQ_G1":-0.020865079847131374,"DeltaQ_G2":0.1150736816835577,"DeltaQ_G3":0.027143683911271255,"grain_shift_G3_minus_G1":0.04800876375840263,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse05_ane","condition":"anesthesia","animal_id":"mouse05","DeltaQ_G1":0.0006809399303023822,"DeltaQ_G2":0.051741233356290106,"DeltaQ_G3":-0.06857219926538105,"grain_shift_G3_minus_G1":-0.06925313919568343,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse06_ane","condition":"anesthesia","animal_id":"mouse06","DeltaQ_G1":0.13152325100228313,"DeltaQ_G2":-0.034559187544499936,"DeltaQ_G3":-0.16637138104895705,"grain_shift_G3_minus_G1":-0.29789463205124017,"classification":"R-GRAIN-REVERSED"},
+    {"recording_id":"mouse07_ane","condition":"anesthesia","animal_id":"mouse07","DeltaQ_G1":0.12405175917097933,"DeltaQ_G2":0.06214720092316317,"DeltaQ_G3":0.10833342100833263,"grain_shift_G3_minus_G1":-0.0157183381626467,"classification":"R-STABLE-POSITIVE"}
+  ],
+  "animal_summaries": [
+    {"condition":"sleep","animal_id":"mouse01","n_sessions":1,"DeltaQ_G1":0.05156552143141335,"DeltaQ_G2":0.014278393646801057,"DeltaQ_G3":-0.03969976895393679,"grain_shift_G3_minus_G1":-0.09126529038535014},
+    {"condition":"sleep","animal_id":"mouse02","n_sessions":1,"DeltaQ_G1":0.03051834887711269,"DeltaQ_G2":0.02562456387107248,"DeltaQ_G3":-0.0021743285123967393,"grain_shift_G3_minus_G1":-0.03269267738950943},
+    {"condition":"sleep","animal_id":"mouse03","n_sessions":1,"DeltaQ_G1":0.097086091371541,"DeltaQ_G2":0.062437510433228316,"DeltaQ_G3":0.09756732868916496,"grain_shift_G3_minus_G1":0.0004812373176239504},
+    {"condition":"sleep","animal_id":"mouse04","n_sessions":2,"DeltaQ_G1":0.11089441828438057,"DeltaQ_G2":0.08663202293465566,"DeltaQ_G3":0.024107613983274365,"grain_shift_G3_minus_G1":-0.0867868043011062},
+    {"condition":"sleep","animal_id":"mouse05","n_sessions":1,"DeltaQ_G1":0.10883116022041361,"DeltaQ_G2":0.03434077252662615,"DeltaQ_G3":-0.06139617516097584,"grain_shift_G3_minus_G1":-0.17022733538138946},
+    {"condition":"anesthesia","animal_id":"mouse03","n_sessions":1,"DeltaQ_G1":-0.020865079847131374,"DeltaQ_G2":0.1150736816835577,"DeltaQ_G3":0.027143683911271255,"grain_shift_G3_minus_G1":0.04800876375840263},
+    {"condition":"anesthesia","animal_id":"mouse05","n_sessions":1,"DeltaQ_G1":0.0006809399303023822,"DeltaQ_G2":0.051741233356290106,"DeltaQ_G3":-0.06857219926538105,"grain_shift_G3_minus_G1":-0.06925313919568343},
+    {"condition":"anesthesia","animal_id":"mouse06","n_sessions":1,"DeltaQ_G1":0.13152325100228313,"DeltaQ_G2":-0.034559187544499936,"DeltaQ_G3":-0.16637138104895705,"grain_shift_G3_minus_G1":-0.29789463205124017},
+    {"condition":"anesthesia","animal_id":"mouse07","n_sessions":1,"DeltaQ_G1":0.12405175917097933,"DeltaQ_G2":0.06214720092316317,"DeltaQ_G3":0.10833342100833263,"grain_shift_G3_minus_G1":-0.0157183381626467}
+  ],
+  "bootstrap_summary": [
+    {"condition":"sleep","metric":"DeltaQ_G1","n":5,"mean":0.07977910803697225,"median":0.097086091371541,"bootstrap_95_low":0.05039034565663301,"bootstrap_95_high":0.10730744967622588},
+    {"condition":"sleep","metric":"DeltaQ_G2","n":5,"mean":0.04466265268247673,"median":0.03434077252662615,"bootstrap_95_low":0.022829337512474644,"bootstrap_95_high":0.06959162862165355},
+    {"condition":"sleep","metric":"DeltaQ_G3","n":5,"mean":0.0036809340090259907,"median":-0.0021743285123967393,"bootstrap_95_low":-0.0408732433484444,"bootstrap_95_high":0.0534914998656306},
+    {"condition":"sleep","metric":"grain_shift_G3_minus_G1","n":5,"mean":-0.07609817402794625,"median":-0.0867868043011062,"bootstrap_95_low":-0.1260322975669568,"bootstrap_95_high":-0.02601901836599119},
+    {"condition":"sleep","metric":"paired_G3_minus_G1","n":5,"mean":-0.07609817402794625,"median":-0.0867868043011062,"bootstrap_95_low":-0.1269279947838056,"bootstrap_95_high":-0.03024193688897543},
+    {"condition":"anesthesia","metric":"DeltaQ_G1","n":4,"mean":0.058847717564108365,"median":0.062366349550640854,"bootstrap_95_low":-0.010092069958414496,"bootstrap_95_high":0.12778750508663123},
+    {"condition":"anesthesia","metric":"DeltaQ_G2","n":4,"mean":0.04860073210462776,"median":0.05694421713972664,"bootstrap_95_low":-0.01038259042758416,"bootstrap_95_high":0.0992405696017408},
+    {"condition":"anesthesia","metric":"DeltaQ_G3","n":4,"mean":-0.024866618848683554,"median":-0.020714257677054898,"bootstrap_95_low":-0.11799261480889997,"bootstrap_95_high":0.06773855245980194},
+    {"condition":"anesthesia","metric":"grain_shift_G3_minus_G1","n":4,"mean":-0.08371433641279191,"median":-0.042485738679165067,"bootstrap_95_low":-0.2273505585790918,"bootstrap_95_high":0.018693288019881113},
+    {"condition":"anesthesia","metric":"paired_G3_minus_G1","n":4,"mean":-0.08371433641279191,"median":-0.042485738679165067,"bootstrap_95_low":-0.2273505585790918,"bootstrap_95_high":0.018693288019881113}
+  ],
+  "outputs_runtime": ".local/phase2_multirecording/summary/",
+  "raw_data_tracked": false,
+  "phase1_preregistration_amended": false,
+  "theory_promotion": false
+}
