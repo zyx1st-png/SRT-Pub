@@ -44,16 +44,24 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG VERTICAL-GENERATIVE-DYNAMICS REBASE / SELECTION TERM-OF-ART HARDENING / BCTB ROLE REALIGNMENT BEFORE FURTHER MAINLINE USE / T2 NOT AUTOMATIC NEXT STEP / CANONICAL EXPANSION BEYOND SELECTION SEMANTICS HOLD
+NEXT RESEARCH WORK PACKAGE = GRG REACH / RECONSTRUCTIBILITY / FRICTION-CONVERSION PRESSURE-TEST + BOUNDED SELECTION-OCCURRENCE CANONICAL RECONCILIATION / BCTB T2 NOT AUTOMATIC / BROADER CANONICAL EXPANSION HOLD
 ```
 
 ### 0.4 Selection / GRG generative-capacity and intervention-grammar rebase — 2026-09-22
 
-Latest author adjudication:
+Latest author continuation:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
+
+Dialogue derivation trace:
+
+01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_RECONSTRUCTIBILITY_REACH_2026-09-22.md
+
+Preceding same-day adjudication:
 
 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
 
-Preceding same-day source:
+Earlier same-day source:
 
 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md
 
@@ -199,6 +207,135 @@ broader GRG architecture
 
 This landing is deliberately source/status first. It records the author correction and the expanded
 GRG direction without silently rewriting Freeze-A canonical owners in the same step.
+
+
+### 0.4a GRG reach / reconstructibility / generative-debt continuation — 2026-09-22
+
+Latest author source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
+
+Reasoning / derivation provenance:
+
+01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_RECONSTRUCTIBILITY_REACH_2026-09-22.md
+
+Current continuation guard:
+
+~~~text
+AI-era opportunity
+= lower-cost reconstructibility,
+  not merely more compression / retrieval;
+
+GRG long-horizon direction
+= reconstructible generative knowledge infrastructure,
+  not one final universal substantive model;
+
+civilization-level higher-order capacity
+= cumulative self-reconstruction;
+
+provenance preservation
+= itself a Selection / cut,
+  so no interpretation-free raw archive is assumed;
+
+generative redundancy
+= partially independent cuts / lineages,
+  not duplicate copies;
+
+surface consensus
+!= generative independence;
+
+generative forgetting
+= reduction / localization of active reach,
+  not necessarily erasure;
+
+active generative reach
+!= latent reconstructive reach;
+
+healthy compression
+= current flattening
+  + retained route for future re-differentiation;
+
+higher-order depth candidate
+= compression capacity
+  + future re-differentiation capacity;
+
+proxy
+= organizes distinction / equivalence;
+
+support
+= helps localize / buffer / translate / amplify / route consequence;
+
+supported equivalence
+= can be real but support-dependent;
+
+failed cut
+!= first anomaly;
+
+deeper failure pressure
+= growing compensatory burden that begins to alter other capacities;
+
+parasitic compensation
+!= integrative support;
+
+friction conversion
+= mismatch -> reconstructed dependency / capacity / reconstructibility;
+
+generative debt
+= future generative burden created when current structure preserves
+  its cut / equivalence by deferring, displacing or sealing off
+  consequential mismatch that would otherwise pressure reconstruction;
+
+generative debt
+!= maintenance cost
+!= friction
+!= all unresolved problems;
+
+healthier debt regime
+= visibility + traceability + convertibility.
+~~~
+
+Current integrated research chain:
+
+~~~text
+Selection
+-> difference
+-> distinction / equivalence
+-> proxy compression
+-> support / gating
+-> reach allocation
+-> consequence
+-> friction
+-> response
+
+integrative path:
+friction
+-> dependency reorganization
+-> new / restored capacity
+-> improved reconstructibility;
+
+deferral path:
+friction
+-> parasitic compensation
+-> consequence displacement
+-> generative debt
+-> later boundary friction
+-> reopening or deeper closure.
+~~~
+
+Programme discipline:
+
+~~~text
+these concepts = author-confirmed GRG research direction;
+wholesale canonicalization = NO;
+pressure-test / domain operationalization = NEXT;
+Selection occurrence vs sedimentation canonical reconciliation
+= still a separate bounded owner task;
+BCTB T2 = not automatic.
+~~~
+
+The derivation trace is intentionally retained because the route by which these distinctions emerged is
+itself valuable provenance. Future summaries should preserve the pointer even if the compact status
+surface becomes shorter.
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
 
