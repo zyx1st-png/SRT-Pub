@@ -9,6 +9,10 @@ ai_do_not_use_for_definition: true
 
 # BCTB-0 T1 pre-execution package index
 
+Package ref: `experiments/grg-bctb0-t1-preexec-package-20260922`
+
+R3 handoff ref: `research/grg-bctb0-temporal-replay-20260922`
+
 Historical cut:
 
 ```text
@@ -24,9 +28,9 @@ Historical cut:
 | de-label transform | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_DELABEL_TRANSFORM_2026-09-22.md` | `da66dc3f37f2615745e4b78d608f521ddcb7d747` | PRESENT | R3 |
 | de-labelled source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md` | `78d4de3a58c401c471064c72fe596530ab56454c` | PRESENT | R3 / Arms S,A,C |
 | execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `b59fd6e7ac78a39064e4a98048f5adb5f978db67` | PRESENT | R3 / R4 |
-| R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `6a5ef4e4be3b22d5d5aa6075144e4398a168d922` | PRESENT | R2 ONLY |
+| R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `6d8381b2b064b27f2f6ed85c95783e54a1cad8d1` | PRESENT ON PACKAGE REF | R2 ONLY |
 | masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `768a5de63e8477e1e5afd5ded0bb231aca0e5d6c` | PRESENT / FROZEN FROM R2 | R3 / R4 |
-| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `c463b8ff0222e09a591ac2be017b85db57b7163f` | PRESENT | R3 ONLY |
+| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `a06b8a3426725da764ea5c4f2b3dcc9cedbbb1f3` | PRESENT ON RESEARCH REF | R3 ONLY |
 
 ## Hard routing
 
