@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-20
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-22
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-20
-source_commit: dcf3477e
-source_branch: theory/ground-cycle-preobject-differentiation-20260914
+generated: 2026-09-22
+source_commit: 0e544815
+source_branch: theory/selection-generative-vertical-dynamics-20260922
 source_dirty: false
-inputs_digest: 62a152e80ee33dd5
+inputs_digest: 30617f20c52f9c13
 ---
 
 # SRT 核心动力学上下文包
@@ -26,9 +26,9 @@ inputs_digest: 62a152e80ee33dd5
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-20 |
-| 来源 commit | `dcf3477e` |
-| 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
+| 生成日期 | 2026-09-22 |
+| 来源 commit | `0e544815` |
+| 来源分支 | `theory/selection-generative-vertical-dynamics-20260922` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 

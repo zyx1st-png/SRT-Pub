@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-20
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-22
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-20
-source_commit: dcf3477e
-source_branch: theory/ground-cycle-preobject-differentiation-20260914
+generated: 2026-09-22
+source_commit: 0e544815
+source_branch: theory/selection-generative-vertical-dynamics-20260922
 source_dirty: false
-inputs_digest: 62a152e80ee33dd5
+inputs_digest: 30617f20c52f9c13
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 62a152e80ee33dd5
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-20 |
-| 来源 commit | `dcf3477e` |
-| 来源分支 | `theory/ground-cycle-preobject-differentiation-20260914` |
+| 生成日期 | 2026-09-22 |
+| 来源 commit | `0e544815` |
+| 来源分支 | `theory/selection-generative-vertical-dynamics-20260922` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -43,14 +43,14 @@ inputs_digest: 62a152e80ee33dd5
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-09-19 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-19 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-19 |
+| 1 | `SRT_AI_START.md` | 2026-09-22 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-22 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-22 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
-| 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-14 |
+| 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-22 |
 | 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
-| 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-14 |
+| 8 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-22 |
 | 9 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
 | 10 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-09-11 |
 | 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-19 |
@@ -447,7 +447,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-22 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -467,6 +467,29 @@ For substantive SRT answers:
 This is a programme orientation, not a new canonical definition or a replacement final ontology label.
 
 Current status and author decisions are resolved through `STATUS.md §Fast Status` controlling pointers. `AGENTS.md §Session Start` owns conditional reads; do not start a second bootstrap from this page. Historical programme documents are interpreted under the 2026-09-05 governance amendment and subsequent scoped author adjudications.
+
+## 1.1 Selection term-of-art hard guard — 2026-09-22
+
+**Do not read SRT `Selection` with the ordinary default meaning of choosing among pre-given alternatives.** This is a machine/bootstrap guard; exact definition authority remains with `Core_Law/SRT_L0_Metaphysics.md`, `Core/SRT_Core_21_Minimal_Axioms.md`, and `Core_Law/SRT_Generative_Ontology_Spine.md`.
+
+Current author-confirmed semantic boundary:
+
+~~~text
+Selection
+!= conscious choice
+!= decision among a pre-given menu
+!= Darwinian winner-picking by default
+!= bare filtering
+!= arbitrary change / state transition.
+~~~
+
+SRT Selection is a term of art for **actualised non-neutral differentiation whose consequence remains generatively effective rather than being fully erased**. A completed alternative set is not required in advance; alternatives, positions, relations and reachable possibilities may themselves be generated through Selection. Retention need not be a localized memory/object: it may remain as diffuse field change or as generative capacity later inherited by another/higher formation.
+
+Fresh-session rule:
+
+> When the word `Selection` appears in SRT / GRG work, never silently substitute the conventional option-choice meaning. If exact scope matters, read the canonical owners and the 2026-09-22 author adjudication: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md`.
+
+The strengthened retained-generative-consequence criterion creates an explicit OPEN reconciliation with legacy `terminal Selection remains genuine` wording. Do not solve that conflict by assumption.
 
 ## 2. Current identity guard
 
@@ -900,7 +923,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-22 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -934,9 +957,10 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L2 / epistemic：os / status：active / version：v2 / claim-mode：canonical
+- layer：L0-L2 / epistemic：os / status：active / version：v3 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
+- Selection 术语硬护栏（2026-09-22）：`Selection` 是 SRT 自定义原语，不按 ordinary pre-given-option choice 读取；canonical owners 现要求 `actualised non-neutral differentiation + not-fully-erasable generative consequence`，且 prior option set 不作为前提。精确定义回到 L0 / P0 / Spine；与历史 terminal-Selection wording 的兼容性保持 OPEN。
 - 分层护栏：primitive Selection 在规范上无内容；existence 是 Selection under determinate actuality；history 只在 prior Selection 的效力被保留并建立时进入路由。`L_0 / L_1 / L_2` 是 analytic / model-facing aspects，不是三种 ontic substances；primitive Selection 不等于 formed `\hat{G}`。Normativity routes 需分别定型，O2-M 保持 OPEN。
 - 当前 Bearer gate：已形成的 `One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`，按 semantic / architectural canonical 读取；不是跨所有实现域的形式化或实证 N&S theorem。
 - typed layering：One-level endogenous perspective、A1/A2/P/E 分层须保留；`all Ones automatically perspective-bearing` 仍未建立。历史 `A3` 仅作为 R1 gate lineage 标签，不作为当前 canonical token。
@@ -1261,7 +1285,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-09-22 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1361,8 +1385,29 @@ At minimum:
 
 ```text
 primitive Selection
-= reality under actual generative differentiation.
+= reality under actual generative differentiation
+  whose non-neutral actualisation leaves a not-fully-erasable
+  generative consequence.
 ```
+
+### 2.1 Selection term-of-art guard
+
+The word `Selection` here is an SRT primitive, not conventional option-choice language.
+
+```text
+Selection
+!= picking from a pre-given menu;
+Selection
+!= arbitrary change;
+Selection
+requires a generatively retained / inheritable consequence.
+```
+
+A prior option space is not required. Positions, alternatives, relations and reachability can themselves become differentiated through Selection.
+
+The consequence need not persist as a local object or memory token. It may be diffuse in the later generative field or inherited as generative capacity by a new realization / higher-order formation.
+
+This clarification does **not** by itself settle the exact terminal boundary. Compatibility with legacy `terminal Selection remains genuine` wording remains OPEN and must be reconciled at the owning P0/L0 boundary.
 
 Two co-primitive analytic burdens are required:
 
@@ -2492,7 +2537,7 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 | epistemic_layer | os |
 | layer | L0 |
 | canonical(字段) | true |
-| last_commit | 2026-09-14 |
+| last_commit | 2026-09-22 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2507,6 +2552,8 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 >
 > **2026-09-14 Selection-totality 校准**：SRT 不再把 L0 读成一个先在于 Selection 的可能性仓库，也不把 Selection 读成在一个更早现实里执行的操作。当前 canonical 读法是：**Selection 是现实的原初生成方式；所谓开放、显现、历史、形成与后续更强结构，是 Selection 在不同关系与组织条件下的可区分分面。**
 
+> **2026-09-22 Selection 术语校准**：`Selection` 是 SRT 的自定义本体术语，不得默认还原为“在预先给定选项中挑一个”。当前作者澄清进一步要求：**裸变化、完全可抹平而不留下任何后续生成后果的涨落，不计作 Selection；Selection 的实际分化必须以某种不能被完全抹去的方式改变后续生成条件，或把 generative capacity 留给后来 / 更高阶形成继承。** 这种保留不等于必须有局部记忆对象或 durable `L2` record。该强化口径与历史 `terminal Selection remains genuine` 的精确兼容性保持 OPEN，须另行 bounded reconciliation。
+
 ---
 
 ## Quick Reference
@@ -2515,6 +2562,7 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 - **Core claim**: reality is Selection under a non-flat, non-preclosed generative mode; determinate actuality is the actualising aspect of Selection, not a product external to it.
 - **Primitive burden**: O0 non-maximal indifference and S0 actualising differentiation are co-primitive analytic faces of primitive Selection, not two mechanisms.
 - **Occurrence boundary**: genuine Selection occurrence is not anchoring persistence, durable history, One, Stable ISP, Bearer or Agency.
+- **Term-of-art boundary**: Selection is not pre-given-option choice or arbitrary change; it requires actualised non-neutral differentiation with a not-fully-erasable generative consequence. Such consequence may be diffuse or later inherited and need not be a localized durable record.
 - **Position boundary**: every primitive Selection is finite-position-indexed, but finite positionality is not formed Selection-position or subject-position.
 - **Normativity boundary**: primitive Selection carries no primitive moral content.
 - **Formal boundary**: `G-hat_theta`, `kappa0`, `epsilon_pg`, L0/L1/L2 equations and domain models must not back-define this owner.
@@ -2555,6 +2603,43 @@ event-level verticality
 ```
 
 是同一次 Selection 的不同结构读法，不是连续发生的三种本体机制。
+
+### Selection 也不需要预先给定的选项
+
+传统 `selection` 往往假定：
+
+~~~text
+已经有 A / B / C
+-> 某个机制选择其中之一。
+~~~
+
+这不是 SRT 的 primitive reading。
+
+当前 canonical 语义护栏：
+
+> **Selection 是实际化的非中立分化，并且这种分化以不能被完全抹平的方式进入后续生成。**
+
+因此：
+
+~~~text
+pre-given alternatives are required: NO;
+possibility / reachability structure may itself be Selection-generated;
+bare reversible fluctuation with no retained / inheritable generative consequence: NOT Selection;
+retained generative consequence: does NOT require a localized memory object.
+~~~
+
+这里的“保留”是生成意义上的保留：它可以表现为 diffuse generative-field modification、改变后续 reachability / friction / support，或以 generative capacity 的方式被后来形成继承。
+
+永久区分：
+
+~~~text
+generative retention
+!= anchoring persistence
+!= durable objecthood
+!= localized L2 record.
+~~~
+
+历史 `terminal Selection remains genuine` 与这一强化 criterion 的精确关系当前保持 OPEN；任何下游文件不得自行替仓库关闭这个边界。
 
 ### 选择不需要选择者
 
@@ -3072,7 +3157,7 @@ For claim governance, read:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-14 |
+| last_commit | 2026-09-22 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3092,7 +3177,8 @@ For claim governance, read:
 Current P0 commitments:
 
 ```text
-P0-01 Selection is primitive actualising generativity;
+P0-01 Selection is primitive actualising generativity whose non-neutral actualisation
+      leaves a not-fully-erasable generative consequence;
 P0-02 determinate actuality != anchoring persistence;
 P0-03 genuine occurrence is not ontically identical to never-occurrence;
 P0-04 any formal operator representation of Selection must be well formed,
@@ -3120,6 +3206,36 @@ A substantive claim belongs at P0 only if:
 4. it cannot be represented more safely as a scoped formal realization.
 
 When in doubt, demote below P0.
+
+---
+
+## Selection Term-of-Art Guard (P0 semantic boundary)
+
+At P0, `Selection` is **not** the ordinary operation of selecting one member from a completed alternative set.
+
+Minimum semantic boundary:
+
+~~~text
+Selection
+= actualised non-neutral differentiation
++ a generative consequence that is not fully erased
+  from any later generation where later generation exists.
+~~~
+
+The retained consequence may be diffuse and may migrate across realization / scale as inherited generative capacity. It need not be a localized memory, stable object, durable `L2` token or already-formed One.
+
+Therefore:
+
+~~~text
+pre-given option set: NOT REQUIRED;
+prior chooser / selector object: NOT REQUIRED;
+arbitrary state transition: INSUFFICIENT;
+fully generatively reversible fluctuation with no retained / inheritable consequence: NOT Selection.
+~~~
+
+A possibility / reachability structure can itself be partly generated by prior Selection; it must not be smuggled in as the primitive menu that defines Selection.
+
+**OPEN boundary**: this strengthened retained-generative-consequence criterion is not yet reconciled with legacy `terminal Selection remains genuine` wording. Until that bounded reconciliation is completed, do not use the terminal case to redefine the ordinary Selection criterion in either direction.
 
 ---
 
@@ -3172,7 +3288,7 @@ P0-00 is a vocabulary preface, not an independent substantive axiom.
 
 **Primitive claim**:
 
-> **Selection is the irreducible actualising generativity of SRT. Determinate manifest actuality is Selection under an actualised event-cut, not a product standing outside Selection.**
+> **Selection is the irreducible actualising generativity of SRT: an actualised non-neutral differentiation whose consequence remains generatively effective rather than being fully erased. Determinate manifest actuality is Selection under an actualised event-cut, not a product standing outside Selection.**
 
 Minimum event role:
 
@@ -3270,7 +3386,7 @@ Therefore P0-03 does **not** require every Selection to leave a durable L2 recor
 
 When prior Selection does remain materially effective in later Selection conditions, that stronger relation may be described as historically effective Selection / L2-side sedimentation under its owner.
 
-Terminal Selection remains genuine.
+Legacy terminal-Selection wording is retained only as an OPEN reconciliation target after the 2026-09-22 strengthened retained-generative-consequence clarification; it must not be used as a shortcut to admit a fully consequence-free change as Selection.
 
 ---
 
