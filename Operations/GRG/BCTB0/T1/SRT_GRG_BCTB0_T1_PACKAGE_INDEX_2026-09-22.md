@@ -30,7 +30,7 @@ Historical cut:
 | execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `8b231875f24ce949992c5d1f4e9b3e59aeefcb68` | PRESENT | R3 / R4 |
 | R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `436ea692a0fd226948a772d31dd9477e1a41d7a4` | PRESENT ON PACKAGE REF | R2 ONLY |
 | masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `768a5de63e8477e1e5afd5ded0bb231aca0e5d6c` | PRESENT / FROZEN FROM R2 | R3 / R4 |
-| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `f45064ab9b670a953bbb6a4ff8e17a9494a7b646` | PRESENT ON RESEARCH REF | R3 ONLY |
+| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `df06fb2a39bbeba9c7d4adee6cdb900bbd903a49` | PRESENT ON RESEARCH REF | R3 ONLY |
 
 ## Hard routing
 
