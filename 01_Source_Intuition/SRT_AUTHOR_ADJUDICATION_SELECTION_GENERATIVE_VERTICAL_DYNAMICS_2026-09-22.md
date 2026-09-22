@@ -412,17 +412,23 @@ source-native generative dynamics
 -> held-out transformation / reachability tests.
 ~~~
 
-Therefore:
+Author-confirmed concern:
+
+> **The current relation-transfer experiment is not the core direction of GRG as clarified in this dialogue.**
+
+Bounded programme implication (kept weaker than an author cancellation decision):
 
 ~~~text
 BCTB relation-transfer work
-= secondary calibration surface;
+= potentially useful secondary calibration / diagnostic surface;
 
-BCTB
-!= core proof of GRG value.
+BCTB core-proof role
+= NOT ESTABLISHED;
+
+T2 / later folds
+= should not be treated as the automatic next mainline step
+  until the benchmark role is realigned with vertical generative dynamics.
 ~~~
-
-Further BCTB folds should not automatically proceed as the main programme before this role is realigned.
 
 ## O. Hard guards / unresolved edges
 
