@@ -25,6 +25,29 @@ This is a programme orientation, not a new canonical definition or a replacement
 
 Current status and author decisions are resolved through `STATUS.md §Fast Status` controlling pointers. `AGENTS.md §Session Start` owns conditional reads; do not start a second bootstrap from this page. Historical programme documents are interpreted under the 2026-09-05 governance amendment and subsequent scoped author adjudications.
 
+## 1.1 Selection term-of-art hard guard — 2026-09-22
+
+**Do not read SRT `Selection` with the ordinary default meaning of choosing among pre-given alternatives.** This is a machine/bootstrap guard; exact definition authority remains with `Core_Law/SRT_L0_Metaphysics.md`, `Core/SRT_Core_21_Minimal_Axioms.md`, and `Core_Law/SRT_Generative_Ontology_Spine.md`.
+
+Current author-confirmed semantic boundary:
+
+~~~text
+Selection
+!= conscious choice
+!= decision among a pre-given menu
+!= Darwinian winner-picking by default
+!= bare filtering
+!= arbitrary change / state transition.
+~~~
+
+SRT Selection is a term of art for **actualised non-neutral differentiation whose consequence remains generatively effective rather than being fully erased**. A completed alternative set is not required in advance; alternatives, positions, relations and reachable possibilities may themselves be generated through Selection. Retention need not be a localized memory/object: it may remain as diffuse field change or as generative capacity later inherited by another/higher formation.
+
+Fresh-session rule:
+
+> When the word `Selection` appears in SRT / GRG work, never silently substitute the conventional option-choice meaning. If exact scope matters, read the canonical owners and the 2026-09-22 author adjudication: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md`.
+
+The strengthened retained-generative-consequence criterion creates an explicit OPEN reconciliation with legacy `terminal Selection remains genuine` wording. Do not solve that conflict by assumption.
+
 ## 2. Current identity guard
 
 Do not restart SRT as a project whose highest burden is to derive every domain from a formal P0 theorem ladder.
