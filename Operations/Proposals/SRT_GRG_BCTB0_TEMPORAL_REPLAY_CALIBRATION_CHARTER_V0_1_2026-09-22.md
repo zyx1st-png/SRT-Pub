@@ -281,15 +281,30 @@ IDENTITY_PROBE =
 NOT INFERRED / INFERRED / AMBIGUOUS
 ~~~
 
-If the target identity is inferred:
+Frozen consequence:
 
 ~~~text
-blind integrity = COMPROMISED
-absolute historical-transfer credit = NO
-between-arm residual comparison = still allowed if all arms receive identical information budgets
+NOT INFERRED
+-> blind integrity = PASS-ELIGIBLE
+-> absolute historical-transfer credit remains eligible
+-> valid-core-fold eligibility remains open
+
+INFERRED
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> valid-core-fold count for §17 = NO
+-> between-arm residual comparison may continue if all arms receive identical information budgets
+-> residual label = COMPROMISED-DIAGNOSTIC
+
+AMBIGUOUS
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> valid-core-fold count for §17 = NO
+-> between-arm residual comparison may continue if all arms receive identical information budgets
+-> residual label = COMPROMISED-DIAGNOSTIC
 ~~~
 
-A COMPROMISED fold does not count as a valid core fold for the §17 minimum-three-valid-fold gate.
+No later evaluator adjudication may upgrade INFERRED or AMBIGUOUS to PASS.
 
 ## 6. Temporal folds
 
@@ -920,12 +935,13 @@ between-arm residuality = INVALID
 
 ### G0d — identity compromise
 
-If the pre-run identity probe infers the target:
+If the pre-run identity probe returns INFERRED or AMBIGUOUS:
 
 ~~~text
 blind integrity = COMPROMISED
 absolute historical-transfer credit = NO
 valid-core-fold count for §17 = NO
+residual label = COMPROMISED-DIAGNOSTIC
 ~~~
 
 Between-arm comparison may continue only because every arm receives the same capsule and information budget.
