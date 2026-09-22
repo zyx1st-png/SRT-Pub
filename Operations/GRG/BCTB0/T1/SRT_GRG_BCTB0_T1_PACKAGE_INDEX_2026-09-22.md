@@ -24,13 +24,13 @@ Historical cut:
 | artifact | path | current blob SHA | status | intended reader |
 |---|---|---|---|---|
 | source manifest | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_MANIFEST_2026-09-22.md` | `28ee2945619fc5196010c482428c1c131d4c5670` | PRESENT | R3 / R4 |
-| raw historical source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_RAW_2026-09-22.md` | `f9478cc4791232a47e6d1db9e3132b5719e7f913` | PRESENT | R3 / Arm G |
+| raw historical source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_RAW_2026-09-22.md` | `7575ee1ff6d93a19ce08d4b9e038d3c778b717dc` | PRESENT | R3 / Arm G |
 | de-label transform | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_DELABEL_TRANSFORM_2026-09-22.md` | `a159475379934fef83d0fb27dae5b578d6835a47` | PRESENT | R3 |
-| de-labelled source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md` | `78d4de3a58c401c471064c72fe596530ab56454c` | PRESENT | R3 / Arms S,A,C |
+| de-labelled source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md` | `00f7487cedabddf6a17d31cab5d853d2db455790` | PRESENT | R3 / Arms S,A,C |
 | execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `8b231875f24ce949992c5d1f4e9b3e59aeefcb68` | PRESENT | R3 / R4 |
 | R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `436ea692a0fd226948a772d31dd9477e1a41d7a4` | PRESENT ON PACKAGE REF | R2 ONLY |
 | masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `be2c559b9d2929e9542cec26dc117d8022f1cd66` | PRESENT / FROZEN FROM FRESH R2-v2 | R3 / R4 |
-| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `df06fb2a39bbeba9c7d4adee6cdb900bbd903a49` | PRESENT ON RESEARCH REF | R3 ONLY |
+| sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `b8447aa3d760339a6a96eceb902c4b6c37300a17` | PRESENT ON RESEARCH REF | R3 ONLY |
 
 ## Hard routing
 
@@ -79,4 +79,32 @@ interpretation = IDENTIFIABILITY WARNING, NOT FORMAL PROBE RESULT
 next =
 new fresh R3 A1-A7 audit
 -> only if PASS, capsule-only identity probe
+~~~
+
+
+## A1 byte-boundary remediation
+
+~~~text
+prior blocker =
+one extra trailing LF in embedded
+Operations/Templates/SRT_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md
+
+repair =
+remove wrapper-inserted LF only
+historical source bytes otherwise unchanged
+
+historical SOURCE verification =
+14 / 14 embedded blocks byte-exact against historical cut
+
+corrected raw bundle blob =
+7575ee1ff6d93a19ce08d4b9e038d3c778b717dc
+
+41-rule de-label regeneration =
+BYTE-EXACT PASS
+
+corrected de-labelled bundle blob =
+00f7487cedabddf6a17d31cab5d853d2db455790
+
+fresh R3 rerun =
+READY
 ~~~
