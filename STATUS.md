@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # SRT 当前状态仪表盘
@@ -44,8 +44,80 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG v0.3 PROCESS-FIRST FRAMEWORK / EVIDENCE-PROVENANCE-INTEGRATED GTS RECONCILIATION REVIEW / EVIDENCE-PROVENANCE OWNER ACTIVE / PROSPECTIVE FAMILY SELECTION OPEN / X4c CARRIER LINE LOCAL-CLOSED / CANONICAL HOLD
+NEXT RESEARCH WORK PACKAGE = GRG VERTICAL-GENERATIVE-DYNAMICS REBASE / SELECTION TERM-OF-ART HARDENING / BCTB RETAINED AS SECONDARY CALIBRATION / T2 MAINLINE EXECUTION HOLD PENDING ROLE REALIGNMENT / CANONICAL EXPANSION BEYOND SELECTION SEMANTICS HOLD
 ```
+
+### 0.4 Selection / GRG vertical-dynamics author rebase — 2026-09-22
+
+Current author adjudication:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md`
+
+Fresh-session semantic guard:
+
+```text
+Selection is an SRT term of art.
+
+Selection
+!= ordinary choosing among pre-given alternatives
+!= arbitrary change.
+
+Current strengthened author reading:
+actualised non-neutral differentiation
++ not-fully-erasable generative consequence
++ changed later generative conditions / inheritable generative capacity.
+
+Exact terminal-Selection compatibility = OPEN / bounded reconciliation required.
+```
+
+Current GRG rebase:
+
+```text
+object = useful cut, not primitive ontology;
+relation = useful cut, not primitive ontology;
+
+vertical structure
+= asymmetric but closed generative relation
+  requiring proxy + support + stability/friction;
+
+proxy may be distributed and is identified by generative role,
+not object boundary;
+
+expectation
+= active reshaping of later reachability,
+  not a static endpoint or mere prediction;
+
+attractor
+= wider generative-field convergence structure,
+  not current stable form;
+
+friction
+= maintenance cost + mismatch feedback + possible transformation pressure;
+
+higher-order gain
+= broader generative integration
+  + retention / re-realization of prior generative capacities
+  + added generativity,
+  not hierarchy size or complexity.
+
+wholeward weak form
+= generative inheritance / recruitability,
+  not mere persistence.
+```
+
+Programme consequence:
+
+```text
+BCTB relation-transfer calibration = RETAIN;
+BCTB = NOT the core proof route for GRG;
+T2 mainline execution = HOLD pending benchmark-role realignment;
+next = reconstruct GRG around vertical generative dynamics,
+       then redesign validation around source-native reconstruction,
+       generative-role/dependency extraction,
+       and held-out transformation / reachability tests.
+```
+
+Canonical edit scope in this rebase is deliberately narrow: only the `Selection` term-of-art semantic guard is hardened into L0 / P0 / Generative Ontology Spine. The broader proxy / support / attractor / wholeward dynamics remain author-owned research direction pending pressure-test.
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
 
