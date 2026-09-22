@@ -1,0 +1,45 @@
+{
+  "id": "SRT-NEURO-OBJECTIFICATION-SCALE-MULTIRECORDING-AVAILABILITY-AUDIT-20260921",
+  "status": "frozen",
+  "record_stage": "availability_audit_completed_before_deltaq",
+  "audit_date": "2026-09-22",
+  "result_blind": true,
+  "delta_q_computed": false,
+  "source": {
+    "platform": "RIKEN CBS Data Sharing Platform",
+    "doi": "10.60178/cbs.20260708-001",
+    "collection_folder_id": "12a35d86-b6e1-4cc0-8e69-ab0cbb6ef010",
+    "processed_readme_version": "v2.0",
+    "task_label_version": "CBS v3.0",
+    "version_discrepancy_preserved": true
+  },
+  "criteria": {
+    "signal": "spike_smoothed",
+    "coordinates": "ROIs/Centroid finite",
+    "required_windows": {"sleep": 1500, "anesthesia": 2900},
+    "result_based_exclusions": false
+  },
+  "counts": {
+    "candidate_recordings": 10,
+    "eligible_recordings": 10,
+    "sleep_recordings": 6,
+    "sleep_animals": 5,
+    "anesthesia_recordings": 4,
+    "anesthesia_animals": 4,
+    "technical_exclusions": 0
+  },
+  "total_bytes": 11222804736,
+  "checksum_verification": "independent shasum -a 256 matched downloader checkpoint for all files",
+  "records": [
+    {"recording_id":"mouse01_sleep","filename":"mouse01_sleep.mat","condition":"sleep","animal_id":"mouse01","file_id":"1f786027-c4b2-4ac9-8449-24c0cfb434db","bytes":658474258,"sha256":"a73526ff842633816a7d03f2578eaeb398fd928c9c2b4a62a2496273dc3c59e6","neurons":7843,"used_frame_lengths":[2359,5027],"complete_window_counts":[1,3],"eligible":true},
+    {"recording_id":"mouse02_sleep","filename":"mouse02_sleep.mat","condition":"sleep","animal_id":"mouse02","file_id":"b266f5ee-cc1d-4a47-9d41-29655a7c3967","bytes":1093789677,"sha256":"e7f283390791c5fbeade9dc2f579d9e89c772a46afcb7f36636d8d081bf99934","neurons":6574,"used_frame_lengths":[7000,8375],"complete_window_counts":[4,5],"eligible":true},
+    {"recording_id":"mouse03_sleep","filename":"mouse03_sleep.mat","condition":"sleep","animal_id":"mouse03","file_id":"3191b169-1d10-4807-9284-edfd96f6c44e","bytes":1197235306,"sha256":"dcac3d396edcb188e88a7e1ff91efe335c904e9defdf2d26c11c36281bcb4277","neurons":7112,"used_frame_lengths":[1549,12527],"complete_window_counts":[1,8],"eligible":true},
+    {"recording_id":"mouse04_day1_sleep","filename":"mouse04_day1_sleep.mat","condition":"sleep","animal_id":"mouse04","file_id":"8d84d7ac-b4c8-4208-9e5c-c3a4605d3e31","bytes":1625754526,"sha256":"3d78be67a6a192c511a41520062f6621b898661d2a2bc127e3f13012fb24ace3","neurons":9612,"used_frame_lengths":[2008,11502],"complete_window_counts":[1,7],"eligible":true},
+    {"recording_id":"mouse04_day2_sleep","filename":"mouse04_day2_sleep.mat","condition":"sleep","animal_id":"mouse04","file_id":"105e2c10-8a9a-4cd2-9c76-411cf673ec28","bytes":2254368168,"sha256":"84c843c06006a283a9df7fc3e081c550500e52909bafc96533b91861130f02c7","neurons":10197,"used_frame_lengths":[9235,6557],"complete_window_counts":[6,4],"eligible":true},
+    {"recording_id":"mouse05_sleep","filename":"mouse05_sleep.mat","condition":"sleep","animal_id":"mouse05","file_id":"ed06e6f2-7485-493e-8d32-d01e0d13aec9","bytes":1263665343,"sha256":"973c27b3e27451d153c108b1ad38e447b749622ac58de2c6c0c0c01ccb380181","neurons":7355,"used_frame_lengths":[9146,5660],"complete_window_counts":[6,3],"eligible":true},
+    {"recording_id":"mouse03_ane","filename":"mouse03_ane.mat","condition":"anesthesia","animal_id":"mouse03","file_id":"1616a6b6-edec-4637-bea9-bca9c0a95848","bytes":1123058079,"sha256":"60b1470ddfb0fe2503b8085efb6fad8fd6c0b285f74fd31eb4f4fc3dea492d2b","neurons":7350,"used_frame_lengths":[9500,8263],"complete_window_counts":[3,2],"eligible":true},
+    {"recording_id":"mouse05_ane","filename":"mouse05_ane.mat","condition":"anesthesia","animal_id":"mouse05","file_id":"5b5f67db-2bd0-43ae-8b4f-eb50138e6057","bytes":1079340853,"sha256":"1a02c596c87d8b9376c6e7be6476c7d79dd03bff99f4ae80e023cbef3f74b7a9","neurons":6592,"used_frame_lengths":[15528,2933],"complete_window_counts":[5,1],"eligible":true},
+    {"recording_id":"mouse06_ane","filename":"mouse06_ane.mat","condition":"anesthesia","animal_id":"mouse06","file_id":"e1dd0560-3486-45e6-a086-e2c1bfb2bb6e","bytes":563929318,"sha256":"2b33bc3d6b3fafafdbdbf377dd3691d2ad6408bf526f6b85de716d85fa3a3cfb","neurons":5295,"used_frame_lengths":[8762,13789],"complete_window_counts":[3,4],"eligible":true},
+    {"recording_id":"mouse07_ane","filename":"mouse07_ane.mat","condition":"anesthesia","animal_id":"mouse07","file_id":"ffdc68e6-fbb4-43f5-81e2-a8271a50819a","bytes":363189208,"sha256":"a6eb90c6bd62ef7530bc93320fb906f41584a43a293f4878a01e2ab5bb5e5899","neurons":4337,"used_frame_lengths":[9500,8500],"complete_window_counts":[3,2],"eligible":true}
+  ]
+}
