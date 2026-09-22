@@ -88,6 +88,9 @@ Prospective-family selection audit:
 BCTB-0 sanitized pre-execution audit handoff:
 `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md`
 
+BCTB-0 T1 package index:
+`Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_PACKAGE_INDEX_2026-09-22.md`
+
 Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
@@ -238,12 +241,15 @@ BCTB-1 prospective target =
 NOT SELECTED / DO NOT OPEN BEFORE BCTB-0 GATE
 
 next =
-fresh R3 auditor reads ONLY sanitized BCTB-0 pre-execution audit handoff + candidate inputs
--> independent input/capsule/symmetry/sampling/P_POST audit
+T1 deterministic package = PRESENT
+-> source manifest / raw pack / de-labelled pack / transform / execution plan = PRESENT
+-> masked capsule = PENDING FRESH R2
+-> fresh R2 reads ONLY T1 capsule-drafter handoff and writes exact masked-capsule path
+-> then NEW fresh R3 reads ONLY sanitized pre-execution audit handoff + six authorized candidate inputs
 -> full charter / PR discussion / target-owner files = NOT FOR R3
--> only if PASS, authorize T1 role-separated generation
+-> only if A1-A7 all PASS, authorize T1 role-separated generation
 -> capsule-only target-identity probe
--> same-model k>=3 generator arms
+-> same-model k=3 generator arms G/S/A/C
 -> freeze all samples before unblind
 -> evaluator T1 closeout
 -> only then decide whether T2 may open
