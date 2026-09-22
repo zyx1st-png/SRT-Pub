@@ -85,6 +85,9 @@ Post-#1025 GTS reconciliation audit:
 Prospective-family selection audit:
 `Operations/Audits/SRT_GRG_PROSPECTIVE_FAMILY_SELECTION_AUDIT_PASS1_2026-09-22.md`
 
+BCTB-0 sanitized pre-execution audit handoff:
+`Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md`
+
 Legacy Relation Record template:
 `Operations/Templates/SRT_GRG_RELATION_RECORD_TEMPLATE_V0_1.md`
 
@@ -235,8 +238,10 @@ BCTB-1 prospective target =
 NOT SELECTED / DO NOT OPEN BEFORE BCTB-0 GATE
 
 next =
-independent pre-execution input/capsule/symmetry audit
--> only if PASS, prepare T1 role-separated manifest + capsule
+fresh R3 auditor reads ONLY sanitized BCTB-0 pre-execution audit handoff + candidate inputs
+-> independent input/capsule/symmetry/sampling/P_POST audit
+-> full charter / PR discussion / target-owner files = NOT FOR R3
+-> only if PASS, authorize T1 role-separated generation
 -> capsule-only target-identity probe
 -> same-model k>=3 generator arms
 -> freeze all samples before unblind
