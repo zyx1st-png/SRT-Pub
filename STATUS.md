@@ -255,7 +255,8 @@ T1 deterministic package branch = PRESENT
 -> final fresh R3 pre-execution audit = PASS / A1-A7 ALL PASS
 -> target identity guessed during R3 audit = AMBIGUOUS / NOT FORMAL CAPSULE-ONLY PROBE
 -> pre-execution hardening = COMPLETE
--> next = NEW fresh capsule-only identity probe
+-> identity-probe attempt 1 = INVALID / INPUT MISSING ("AMBIGUOUS: no capsule content provided") / no blind-integrity consequence
+-> next = NEW fresh capsule-only identity probe with exact frozen capsule v2 text included
 -> identity-probe context reads ONLY frozen capsule v2 and frozen probe prompt; no source pack
 -> INFERRED or AMBIGUOUS = COMPROMISED / not valid core fold / symmetric arm comparison may continue
 -> NOT INFERRED = valid-core eligibility remains open
