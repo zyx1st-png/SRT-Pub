@@ -222,3 +222,17 @@ generator phase = CLOSED
 evaluator unblind gate = OPEN
 no further regeneration = PERMITTED
 ~~~ 
+
+
+## R5 evaluator result
+
+| item | path | status |
+|---|---|---|
+| R5 evaluation | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_R5_EVALUATION_RESULT_2026-09-22.md` | COMPLETE / COMPROMISED-DIAGNOSTIC / BASELINE-SHARED |
+
+~~~text
+GRG-RESIDUAL-CANDIDATE = NONE
+valid-core-fold contribution = 0
+historical-transfer credit = 0
+canonical consequence = NONE
+~~~
