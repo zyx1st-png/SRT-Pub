@@ -47,78 +47,158 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 NEXT RESEARCH WORK PACKAGE = GRG VERTICAL-GENERATIVE-DYNAMICS REBASE / SELECTION TERM-OF-ART HARDENING / BCTB ROLE REALIGNMENT BEFORE FURTHER MAINLINE USE / T2 NOT AUTOMATIC NEXT STEP / CANONICAL EXPANSION BEYOND SELECTION SEMANTICS HOLD
 ```
 
-### 0.4 Selection / GRG vertical-dynamics author rebase — 2026-09-22
+### 0.4 Selection / GRG generative-capacity and intervention-grammar rebase — 2026-09-22
 
-Current author adjudication:
+Latest author adjudication:
 
-`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md`
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
 
-Fresh-session semantic guard:
+Preceding same-day source:
 
-```text
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md
+
+Fresh-session correction guard:
+
+~~~text
 Selection is an SRT term of art.
 
 Selection
 != ordinary choosing among pre-given alternatives
-!= arbitrary change.
+!= arbitrary descriptive state change.
 
-Current strengthened author reading:
-actualised non-neutral differentiation
-+ not-fully-erasable generative consequence
-+ changed later generative conditions / inheritable generative capacity.
+Latest author-level correction:
+Selection occurrence
+!= Selection sediment
+!= generative inheritance
+!= wholeward integration.
 
-Exact terminal-Selection compatibility = OPEN / bounded reconciliation required.
-```
+Selection
+= actual non-neutral generative differentiation
+  / actual breaking of generative equivalence.
 
-Current GRG rebase:
+A terminal Selection is not excluded merely because
+there is no later process in which sediment can persist.
 
-```text
-object = useful cut, not primitive ontology;
-relation = useful cut, not primitive ontology;
+Current canonical L0 / P0 / Generative Ontology Spine
+still contain the earlier strengthened retained-consequence wording.
+Canonical reconciliation = OPEN / bounded owner correction required.
+~~~
 
-vertical structure
-= asymmetric but closed generative relation
-  requiring proxy + support + stability/friction;
+Current GRG research direction:
 
-proxy may be distributed and is identified by generative role,
-not object boundary;
+~~~text
+primitive = Selection;
+generative asymmetry = analytic face, not second primitive;
 
-expectation
-= active reshaping of later reachability,
-  not a static endpoint or mere prediction;
+object / relation / identity / role / capacity / dependency
+= intervention-sensitive cuts, not primitive ontology;
 
-attractor
-= wider generative-field convergence structure,
-  not current stable form;
+generative capacity
+= real conditional organization capable of changing later Selection,
+  even when not yet actualised;
 
-friction
-= maintenance cost + mismatch feedback + possible transformation pressure;
+capacity
+!= accessibility
+!= actualisation;
 
-higher-order gain
-= broader generative integration
-  + retention / re-realization of prior generative capacities
-  + added generativity,
-  not hierarchy size or complexity.
+higher-order generativity
+= ability to generate / reorganize / recover capacities,
+  not hierarchy height or result count;
 
-wholeward weak form
-= generative inheritance / recruitability,
-  not mere persistence.
-```
+generative stability
+= generative continuity under transformation,
+  not form persistence;
+
+wholeward gain
+= retention / reorganization of capacity-forming ability,
+  not preservation of every old capacity;
+
+good generative cut
+= distinguishes role-preserving from role-breaking intervention;
+
+generative equivalence
+= bounded by context + intervention family + consequence burden;
+
+deeper grammar
+= invariance + boundary + breakdown + transformation;
+
+adaptation
+= core intervention grammar substantially preserved;
+
+transformation
+= intervention grammar itself reorganized;
+
+emergence
+= a new difference becomes generatively load-bearing;
+
+higher-order formation
+= reorganization of which differences are compressed as equivalent
+  and which become load-bearing;
+
+generative reach
+= structured pathway by which a difference can enter and alter
+  Selection loops / proxies / dependencies;
+
+healthy higher-order organization
+= selective generative permeability + revisable gating;
+
+robust load-bearing distinction
+= resists costless compression across partially independent
+  interventions / contexts / time scales / consequence pathways.
+~~~
+
+GRG multi-agent / evidence direction:
+
+~~~text
+big data
+!= large N alone;
+
+big data
+= many histories + contexts + interventions + time scales
+  + consequence pathways + partially independent cuts;
+
+multi-agent value
+= partial generative independence,
+  not opinion count or voting;
+
+shared grammar
+= distributed Selection system for grammar itself,
+  not forced consensus;
+
+conflict routes
+= scope separation / higher-order reconciliation /
+  discriminating intervention / unresolved coexistence;
+
+experience / Selection provenance layer
+!= current grammar interpretation layer;
+
+objectification closure
+= compression that destroys provenance / reconstructibility /
+  future recutting capacity;
+
+re-objectification
+= higher-order capacity to reopen and recut stable objectifications
+  when consequence / friction requires it.
+~~~
 
 Programme consequence:
 
-```text
-BCTB relation-transfer calibration = RETAIN as a secondary diagnostic candidate;
-current author concern = relation-transfer is not the intended GRG core direction;
-BCTB core-proof role = NOT ESTABLISHED;
-T2 = NOT an automatic next step before benchmark-role realignment;
-next = reconstruct GRG around vertical generative dynamics,
-       then redesign validation around source-native reconstruction,
-       generative-role/dependency extraction,
-       and held-out transformation / reachability tests.
-```
+~~~text
+BCTB relation-transfer calibration = RETAIN as secondary diagnostic candidate;
+relation-transfer = not the clarified GRG core burden;
+T2 = NOT an automatic mainline next step;
 
-Canonical edit scope in this rebase is deliberately narrow: only the `Selection` term-of-art semantic guard is hardened into L0 / P0 / Generative Ontology Spine. The broader proxy / support / attractor / wholeward dynamics remain author-owned research direction pending pressure-test.
+next theory work
+= preserve this author source,
+  then perform a bounded L0 / P0 / Generative Ontology Spine
+  correction for Selection occurrence vs sedimentation;
+
+broader GRG architecture
+= pressure-test before wholesale canonicalization.
+~~~
+
+This landing is deliberately source/status first. It records the author correction and the expanded
+GRG direction without silently rewriting Freeze-A canonical owners in the same step.
 
 ### 0.5 Post-#976 GRG programme routing — 2026-09-20
 
