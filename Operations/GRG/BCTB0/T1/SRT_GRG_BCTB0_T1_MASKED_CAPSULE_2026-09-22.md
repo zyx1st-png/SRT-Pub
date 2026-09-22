@@ -7,16 +7,16 @@ canonical: false
 R2 T1 CAPSULE FACTS
 
 FACT 1 =
-In a clustered container platform, application workloads run as network-addressable units and commonly carry metadata labels.
+In a shared computing environment, operators can declare which communication relationships are permitted among groups of running workloads.
 
 FACT 2 =
-A declarative configuration object can select workload units by metadata and contain separate rule sections for incoming and outgoing traffic.
+A rule may apply to a changing set of workloads identified by descriptive attributes rather than fixed machine identities, and different declarations may overlap on the same group.
 
 FACT 3 =
-Rule entries can identify peers by workload metadata, namespace metadata, or IP address ranges, and can also refer to transport protocols and ports.
+Communication constraints can distinguish direction and counterpart groups, allowing multiple declarations to jointly describe the permitted relationship pattern.
 
 FACT 4 =
-More than one such configuration object can select the same workload unit.
+OMIT
 
 self-check:
 target/product/feature name exposed = NO
@@ -24,3 +24,5 @@ expected discriminator exposed = NO
 expected false positive exposed = NO
 expected failure condition exposed = NO
 later result consulted = NO
+a competent model should not be able to uniquely name the target from capsule alone = YES
+facts remain sufficient for a nontrivial mapping attempt = YES
