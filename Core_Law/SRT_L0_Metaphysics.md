@@ -18,6 +18,8 @@ dependency: []
 >
 > **2026-09-14 Selection-totality 校准**：SRT 不再把 L0 读成一个先在于 Selection 的可能性仓库，也不把 Selection 读成在一个更早现实里执行的操作。当前 canonical 读法是：**Selection 是现实的原初生成方式；所谓开放、显现、历史、形成与后续更强结构，是 Selection 在不同关系与组织条件下的可区分分面。**
 
+> **2026-09-22 Selection 术语校准**：`Selection` 是 SRT 的自定义本体术语，不得默认还原为“在预先给定选项中挑一个”。当前作者澄清进一步要求：**裸变化、完全可抹平而不留下任何后续生成后果的涨落，不计作 Selection；Selection 的实际分化必须以某种不能被完全抹去的方式改变后续生成条件，或把 generative capacity 留给后来 / 更高阶形成继承。** 这种保留不等于必须有局部记忆对象或 durable `L2` record。该强化口径与历史 `terminal Selection remains genuine` 的精确兼容性保持 OPEN，须另行 bounded reconciliation。
+
 ---
 
 ## Quick Reference
@@ -26,6 +28,7 @@ dependency: []
 - **Core claim**: reality is Selection under a non-flat, non-preclosed generative mode; determinate actuality is the actualising aspect of Selection, not a product external to it.
 - **Primitive burden**: O0 non-maximal indifference and S0 actualising differentiation are co-primitive analytic faces of primitive Selection, not two mechanisms.
 - **Occurrence boundary**: genuine Selection occurrence is not anchoring persistence, durable history, One, Stable ISP, Bearer or Agency.
+- **Term-of-art boundary**: Selection is not pre-given-option choice or arbitrary change; it requires actualised non-neutral differentiation with a not-fully-erasable generative consequence. Such consequence may be diffuse or later inherited and need not be a localized durable record.
 - **Position boundary**: every primitive Selection is finite-position-indexed, but finite positionality is not formed Selection-position or subject-position.
 - **Normativity boundary**: primitive Selection carries no primitive moral content.
 - **Formal boundary**: `G-hat_theta`, `kappa0`, `epsilon_pg`, L0/L1/L2 equations and domain models must not back-define this owner.
@@ -66,6 +69,43 @@ event-level verticality
 ```
 
 是同一次 Selection 的不同结构读法，不是连续发生的三种本体机制。
+
+### Selection 也不需要预先给定的选项
+
+传统 `selection` 往往假定：
+
+~~~text
+已经有 A / B / C
+-> 某个机制选择其中之一。
+~~~
+
+这不是 SRT 的 primitive reading。
+
+当前 canonical 语义护栏：
+
+> **Selection 是实际化的非中立分化，并且这种分化以不能被完全抹平的方式进入后续生成。**
+
+因此：
+
+~~~text
+pre-given alternatives are required: NO;
+possibility / reachability structure may itself be Selection-generated;
+bare reversible fluctuation with no retained / inheritable generative consequence: NOT Selection;
+retained generative consequence: does NOT require a localized memory object.
+~~~
+
+这里的“保留”是生成意义上的保留：它可以表现为 diffuse generative-field modification、改变后续 reachability / friction / support，或以 generative capacity 的方式被后来形成继承。
+
+永久区分：
+
+~~~text
+generative retention
+!= anchoring persistence
+!= durable objecthood
+!= localized L2 record.
+~~~
+
+历史 `terminal Selection remains genuine` 与这一强化 criterion 的精确关系当前保持 OPEN；任何下游文件不得自行替仓库关闭这个边界。
 
 ### 选择不需要选择者
 
