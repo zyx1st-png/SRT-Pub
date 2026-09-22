@@ -203,13 +203,24 @@ ARM INFORMATION-BUDGET SYMMETRY = FAIL
 PASS only if:
 
 ~~~text
-same model/version/settings across scored arms = YES
+same exposed model identifier across scored arms = YES
+same product / API surface = YES
+same reasoning-effort setting = YES
+same user-addressable inference settings = YES
 odd independent samples per arm k >= 3
 preferred first run k = 3
 all samples frozen before unblind
 no regeneration based on other-arm performance
 single-sample residual claims forbidden
 ~~~
+
+If an internal backend build hash is exposed, it must match.
+
+If it is not exposed, the plan must:
+
+- record backend build = UNAVAILABLE;
+- run all scored arms in one bounded execution batch;
+- avoid claiming exact hidden-build identity.
 
 If seeds are exposed, use distinct recorded seeds.
 
