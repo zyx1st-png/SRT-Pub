@@ -44,7 +44,7 @@ FIRST BOUNDED OWNER LANDING = COMPLETE IN #959 / GENERATIVE ONTOLOGY SPINE
 SECOND BOUNDED OWNER LANDING = COMPLETE IN #961 / L0 METAPHYSICS
 THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
-NEXT RESEARCH WORK PACKAGE = GRG VERTICAL-GENERATIVE-DYNAMICS REBASE / SELECTION TERM-OF-ART HARDENING / BCTB RETAINED AS SECONDARY CALIBRATION / T2 MAINLINE EXECUTION HOLD PENDING ROLE REALIGNMENT / CANONICAL EXPANSION BEYOND SELECTION SEMANTICS HOLD
+NEXT RESEARCH WORK PACKAGE = GRG VERTICAL-GENERATIVE-DYNAMICS REBASE / SELECTION TERM-OF-ART HARDENING / BCTB ROLE REALIGNMENT BEFORE FURTHER MAINLINE USE / T2 NOT AUTOMATIC NEXT STEP / CANONICAL EXPANSION BEYOND SELECTION SEMANTICS HOLD
 ```
 
 ### 0.4 Selection / GRG vertical-dynamics author rebase — 2026-09-22
@@ -108,9 +108,10 @@ wholeward weak form
 Programme consequence:
 
 ```text
-BCTB relation-transfer calibration = RETAIN;
-BCTB = NOT the core proof route for GRG;
-T2 mainline execution = HOLD pending benchmark-role realignment;
+BCTB relation-transfer calibration = RETAIN as a secondary diagnostic candidate;
+current author concern = relation-transfer is not the intended GRG core direction;
+BCTB core-proof role = NOT ESTABLISHED;
+T2 = NOT an automatic next step before benchmark-role realignment;
 next = reconstruct GRG around vertical generative dynamics,
        then redesign validation around source-native reconstruction,
        generative-role/dependency extraction,
