@@ -37,8 +37,12 @@ De-labelling transform:
 
 Masked capsule:
 
+`Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md`
+
+status:
+
 ```text
-PENDING FRESH R2 -> R3 AUDIT
+PRESENT / FROZEN FROM FRESH R2
 ```
 
 ## 2. Product / model controls
@@ -120,10 +124,54 @@ Do not browse or use tools.
 Consequence:
 
 ```text
-NOT INFERRED -> continue with blind-integrity eligibility
-INFERRED     -> blind integrity = COMPROMISED; absolute historical-transfer credit = NO
-AMBIGUOUS    -> R3/evaluator adjudication before generation
+NOT INFERRED
+-> blind integrity = PASS-ELIGIBLE
+-> absolute historical-transfer credit remains eligible
+-> fold may count as a valid core fold if all other gates pass
+-> symmetric between-arm comparison may continue
+
+INFERRED
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> fold does not count as a valid core fold
+-> symmetric between-arm comparison may continue
+-> any residual result must be labelled COMPROMISED-DIAGNOSTIC
+
+AMBIGUOUS
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> fold does not count as a valid core fold
+-> symmetric between-arm comparison may continue
+-> any residual result must be labelled COMPROMISED-DIAGNOSTIC
 ```
+
+No later evaluator discretion may upgrade INFERRED or AMBIGUOUS to PASS.
+
+## 4.1 Frozen context budget
+
+The context-budget ceiling is identical across all scored arms.
+
+```text
+source-pack ceiling = 170,000 UTF-8 characters
+total serialized scored input ceiling = 180,000 UTF-8 characters
+```
+
+The total serialized scored input includes:
+
+- the audited masked capsule;
+- exactly one authorized source pack;
+- the arm instruction;
+- the frozen output template.
+
+Rules:
+
+- G uses the full raw source pack;
+- S/A/C use the full de-labelled source pack;
+- no arm-specific truncation, summarization, omission or compression;
+- if any scored input exceeds the frozen ceiling or is truncated by the product, the entire T1 batch is INVALID and must stop;
+- unused budget is not filled with additional material.
+
+The ceiling is a common maximum, not a requirement that every arm consume the same number of characters.
 
 ## 5. Scored arms
 
