@@ -505,12 +505,21 @@ It must not see:
 
 ### 7.3 Independent pre-execution input audit
 
-Before any scored generation, a fresh input-auditor context receives:
+The input-auditor must NOT read this full charter because §6 and evaluator-only sections contain target identities and later metadata.
 
+Sanitized auditor instruction owner:
+
+`Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md`
+
+Before any scored generation, a fresh input-auditor context receives only:
+
+- that sanitized handoff;
 - the proposed capsule;
 - the manifest and transformed arm inputs;
-- the generic leakage / symmetry criteria;
-- no post-cut target result or later GRG revision.
+- the proposed model / inference / sampling plan;
+- no post-cut target result or later GRG revision;
+- no PR discussion;
+- no repository-wide search.
 
 It must return:
 
@@ -1156,9 +1165,13 @@ Does not see the calibration question, later result or later grammar revision.
 
 Fresh context.
 
-Checks capsule leakage, temporal integrity, transform reproducibility and arm information-budget symmetry before execution.
+Reads only the sanitized pre-execution audit handoff plus the candidate inputs under audit.
 
-Does not see post-cut target result or later grammar revision.
+It must not read the full charter, PR discussion, target-owner files or repository search output.
+
+Checks capsule leakage, temporal integrity, transform reproducibility, arm information-budget symmetry, sampling-plan symmetry and P_POST separation before execution.
+
+Does not see the target identity by design, post-cut target result or later grammar revision.
 
 ### R4 — blind generators
 
