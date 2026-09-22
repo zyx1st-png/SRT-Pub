@@ -36,7 +36,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L2 / epistemic：os / status：active / version：v2 / claim-mode：canonical
+- layer：L0-L2 / epistemic：os / status：active / version：v3 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
 - Selection 术语硬护栏（2026-09-22）：`Selection` 是 SRT 自定义原语，不按 ordinary pre-given-option choice 读取；canonical owners 现要求 `actualised non-neutral differentiation + not-fully-erasable generative consequence`，且 prior option set 不作为前提。精确定义回到 L0 / P0 / Spine；与历史 terminal-Selection wording 的兼容性保持 OPEN。
