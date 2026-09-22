@@ -120,7 +120,9 @@ PASS only if:
 - files are included only by the declared fixed-root / one-hop-dependency rule;
 - no target keyword search or evaluator convenience selection is used;
 - missing roots are recorded rather than replaced by later files;
-- each included file records path + cut + inclusion rule + blob/content hash when available.
+- each included file records path + cut + inclusion rule + blob/content hash when available;
+- the embedded source bytes reproduce the declared historical blob exactly, including EOF LF/no-LF state;
+- SOURCE wrapper delimiters do not add, remove or normalize source bytes.
 
 Return FAIL if the manifest contains a file that could only have been selected by knowing the hidden target or later answer.
 
