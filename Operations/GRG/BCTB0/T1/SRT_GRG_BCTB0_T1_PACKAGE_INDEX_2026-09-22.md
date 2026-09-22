@@ -206,3 +206,19 @@ all 12 outputs must be frozen before evaluator unblind / residual comparison
 | A3 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_A3_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
 | C1 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_C1_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
 | C2 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_C2_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
+| C3 | `Operations/GRG/BCTB0/T1/Outputs/SRT_GRG_BCTB0_T1_C3_SCORE_2026-09-22.md` | FROZEN / UNEVALUATED |
+
+
+## R4 scored-generation freeze
+
+~~~text
+G1 G2 G3 = FROZEN
+S1 S2 S3 = FROZEN
+A1 A2 A3 = FROZEN
+C1 C2 C3 = FROZEN
+
+total = 12/12
+generator phase = CLOSED
+evaluator unblind gate = OPEN
+no further regeneration = PERMITTED
+~~~ 
