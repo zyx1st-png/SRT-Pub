@@ -1,0 +1,86 @@
+{
+  "id": "SRT-NEURO-OBJECTIFICATION-SCALE-EXTERNAL-HAMBURG-ANESTHESIA-RESULT-20260923",
+  "status": "frozen",
+  "record_stage": "phase3a_external_anesthesia_result_complete",
+  "date": "2026-09-23",
+  "preregistration_commit": "a9ce37fb7bcb11108a40dd0efd108355ab44def7",
+  "source": {
+    "processed_doi": "10.12751/g-node.lkx6kk",
+    "gin_repository": "https://gin.g-node.org/doi/Anesthesia_CA1",
+    "gin_commit": "8a784cc0177eaa8d66970363b76b84ff1a7cf662",
+    "license": "CC0 1.0 Public Domain Dedication",
+    "full_processed_zip_downloaded": false,
+    "raw_archive_downloaded": false,
+    "per_recording_objects": 264,
+    "materialized_bytes": 1927376637
+  },
+  "runtime": {
+    "python": "3.14.0",
+    "numpy": "2.5.3",
+    "networkx": "3.6.1",
+    "python_louvain": "community 0.16",
+    "workers": 4,
+    "actual_runtime": "Python venv; python-louvain community_louvain"
+  },
+  "completion": {
+    "animals": 7,
+    "awake_recordings": 39,
+    "isoflurane_recordings": 49,
+    "recordings_complete": 88,
+    "grains_per_recording": 3,
+    "louvain_repeats_per_grain": 200,
+    "complete_windows_per_recording": 1,
+    "window_frames": 9000,
+    "window_seconds": 300.0
+  },
+  "animal_level_delta_q": {
+    "37527": {"G1": 0.10688649450636678, "G2": 0.029095530735197994, "G3": 0.0063135565757493906},
+    "37528": {"G1": -0.06849519899898737, "G2": 0.015840553121218737, "G3": -0.00877958002645507},
+    "37529": {"G1": 0.03307553411108799, "G2": -0.03267248373213094, "G3": -0.015633622101741018},
+    "37530": {"G1": -0.054012066313088636, "G2": -0.029931481000193716, "G3": -0.0004926697530863722},
+    "48": {"G1": 0.11797890664822497, "G2": 0.0009680368678232076, "G3": 0.04182722394398519},
+    "51": {"G1": 0.001438835338607558, "G2": -0.15016399873080122, "G3": -0.13259916481471357},
+    "53": {"G1": 0.01754868017611666, "G2": 0.00808474825490274, "G3": 0.04717280652699013}
+  },
+  "animal_level_grain_shift": {
+    "37527": -0.10057293793061739,
+    "37528": 0.0597156189725323,
+    "37529": -0.04870915621282901,
+    "37530": 0.053519396560002264,
+    "48": -0.07615168270423978,
+    "51": -0.13403800015332112,
+    "53": 0.02962412635087347
+  },
+  "per_animal_classification": {
+    "37527": "EX-R-NEGATIVE-SHIFT",
+    "37528": "EX-R-GRAIN-REVERSED",
+    "37529": "EX-R-GRAIN-REVERSED",
+    "37530": "EX-R-OTHER",
+    "48": "EX-R-NEGATIVE-SHIFT",
+    "51": "EX-R-NEGATIVE-SHIFT",
+    "53": "EX-R-OTHER"
+  },
+  "summary": {
+    "dataset_classification": "EX-C",
+    "reversal_count": 2,
+    "negative_shift_count": 4,
+    "mean_grain_shift": -0.03094466215965704,
+    "median_grain_shift": -0.04870915621282901,
+    "bootstrap_95_ci_mean_grain_shift": [-0.08455730217506903, 0.021782803225393506]
+  },
+  "integrity": {
+    "all_q_finite": true,
+    "graph_invariant_failures": [],
+    "all_records_have_200_trials_per_grain": true,
+    "all_records_have_one_complete_window": true
+  },
+  "sleep_boundary": {
+    "state_recovery_status": "STOPPED_PROTOCOL_GATE",
+    "sleep_q_calculated": false,
+    "sleep_preregistration_frozen": false
+  },
+  "execution_incidents": [
+    {"target": "024_37528_iso_43970d52c2", "type": "prefetch_race", "scientific_parameters_changed": false, "recovered": true},
+    {"target": "045_37529_iso_fc1081f39e", "type": "process_interruption_without_traceback", "scientific_parameters_changed": false, "recovered": true}
+  ]
+}
