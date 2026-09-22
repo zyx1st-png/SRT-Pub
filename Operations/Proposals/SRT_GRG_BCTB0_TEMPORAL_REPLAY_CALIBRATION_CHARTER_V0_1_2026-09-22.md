@@ -488,7 +488,8 @@ Mechanical expansion:
 4. do not keyword-search for the target;
 5. do not add a file because it appears useful after knowing the later answer;
 6. preserve file order and exact historical text;
-7. record missing roots rather than replacing them with later files.
+7. preserve each source file byte-for-byte, including whether EOF does or does not end with LF; package wrappers may not insert, delete or normalize source bytes;
+8. record missing roots rather than replacing them with later files.
 
 The manifest must record:
 
@@ -1192,6 +1193,8 @@ The target-aware evaluator may execute R1 only if:
 - the compiler code/rule is frozen before reading its output;
 - no file is added or removed by semantic usefulness;
 - every output path and blob SHA is recorded;
+- every embedded SOURCE block reproduces the historical blob byte-for-byte, including EOF newline state;
+- wrapper delimiters are outside source bytes and may not force an added separator byte;
 - R3 can reproduce or audit the result.
 
 No target keyword search or target-result information may enter the compiler.
