@@ -3,7 +3,7 @@ id: SRT-CORE-21A-MINIMAL-AXIOMS
 type: axiom_set
 tags: [Formal logic, Axioms, Minimal Core, Selection]
 status: active
-version: v2
+version: v3
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
