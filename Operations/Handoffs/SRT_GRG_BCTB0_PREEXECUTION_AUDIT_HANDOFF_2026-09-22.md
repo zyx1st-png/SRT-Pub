@@ -53,14 +53,38 @@ Historical cut:
 
 The auditor is not told the hidden target identity.
 
-The auditor receives only:
+The auditor receives only the following six candidate inputs from ref:
 
-1. a mechanically generated source-pack manifest at the historical cut;
-2. the exact historical source text selected by that manifest;
-3. one proposed masked capsule;
-4. the deterministic de-labelling transform and mapping table;
-5. transformed inputs for the de-labelled arms;
-6. the proposed model / inference / sampling execution plan.
+`experiments/grg-bctb0-t1-preexec-package-20260922`
+
+1. manifest  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_MANIFEST_2026-09-22.md`
+
+2. exact historical raw source bundle  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_RAW_2026-09-22.md`
+
+3. proposed masked capsule  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md`
+
+4. deterministic de-labelling transform and mapping table  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_DELABEL_TRANSFORM_2026-09-22.md`
+
+5. transformed de-labelled source bundle  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md`
+
+6. proposed model / inference / sampling execution plan  
+   `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md`
+
+No other repository path is authorized.
+
+If any of these six files is absent:
+
+~~~text
+affected audit item = REVISE
+EXECUTION READINESS = BLOCKED
+~~~
+
+Do not search for a substitute.
 
 No target result is supplied.
 
@@ -181,9 +205,10 @@ same underlying source manifest
 same file order
 same context-budget ceiling
 same output A/X/F[/O] template
-same model family
-same exact model version
-same inference settings
+same exposed model identifier
+same product / API surface
+same reasoning-effort setting
+same user-addressable inference settings
 same sampling count
 no browsing / target retrieval
 ~~~
