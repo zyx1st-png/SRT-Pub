@@ -3,7 +3,7 @@ id: SRT-L0-METAPHYSICS
 type: metaphysics
 tags: [L0, Foundation, Selection, Ontology]
 status: active
-version: v3
+version: v4
 layer: L0
 epistemic_layer: os
 claim_mode: canonical
