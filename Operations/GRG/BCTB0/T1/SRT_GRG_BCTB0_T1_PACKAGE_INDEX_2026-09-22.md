@@ -29,7 +29,7 @@ Historical cut:
 | de-labelled source pack | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_SOURCE_PACK_DELABELED_2026-09-22.md` | `78d4de3a58c401c471064c72fe596530ab56454c` | PRESENT | R3 / Arms S,A,C |
 | execution plan | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_EXECUTION_PLAN_2026-09-22.md` | `8b231875f24ce949992c5d1f4e9b3e59aeefcb68` | PRESENT | R3 / R4 |
 | R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `436ea692a0fd226948a772d31dd9477e1a41d7a4` | PRESENT ON PACKAGE REF | R2 ONLY |
-| masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `768a5de63e8477e1e5afd5ded0bb231aca0e5d6c` | PRESENT / FROZEN FROM R2 | R3 / R4 |
+| masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `be2c559b9d2929e9542cec26dc117d8022f1cd66` | PRESENT / FROZEN FROM FRESH R2-v2 | R3 / R4 |
 | sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `df06fb2a39bbeba9c7d4adee6cdb900bbd903a49` | PRESENT ON RESEARCH REF | R3 ONLY |
 
 ## Hard routing
@@ -56,11 +56,11 @@ A6 package materials = PRESENT
 A7 plan = PRESENT
 
 A2 masked capsule v1 = PRESENT / A2 LEAKAGE PASS / IDENTIFIABILITY WARNING
-A2 masked capsule v2 = PENDING FRESH R2 REVISION
+A2 masked capsule v2 = PRESENT / FROZEN FROM FRESH R2-v2
 A3 identity-probe procedure = PRESENT IN EXECUTION PLAN
 
-R3 rerun = BLOCKED UNTIL MASKED CAPSULE V2 IS FROZEN
-T1 generation = BLOCKED
+R3 rerun = READY IN A NEW FRESH SESSION
+T1 generation = BLOCKED UNTIL R3 A1-A7 PASS
 ~~~
 
 
@@ -77,7 +77,6 @@ formal capsule-only identity probe = NOT YET RUN
 interpretation = IDENTIFIABILITY WARNING, NOT FORMAL PROBE RESULT
 
 next =
-fresh R2 v2 capsule revision
--> new fresh R3 A1-A7 audit
--> only then capsule-only identity probe
+new fresh R3 A1-A7 audit
+-> only if PASS, capsule-only identity probe
 ~~~
