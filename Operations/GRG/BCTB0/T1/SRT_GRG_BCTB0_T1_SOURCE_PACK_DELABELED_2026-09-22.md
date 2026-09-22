@@ -4246,8 +4246,7 @@ active/historical deep well =
 material re-entry = complete / partial / blocked
 most important unresolved distinction =
 next authorized action =
-```
-<!-- SOURCE-END path="Operations/Templates/THEORY-Q_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md" -->
+```<!-- SOURCE-END path="Operations/Templates/THEORY-Q_DOMAIN_RECONSTRUCTION_FRAMEWORK_TEMPLATE.md" -->
 
 <!-- SOURCE-BEGIN path="Operations/Proposals/THEORY-Q_CONSTITUTION_DOMAIN_ARCHITECTURE_V2_2026-09-04.md" rule="ONE-HOP-DEPENDENCY" blob="64f886b081978dec88a7e1fc86730de531da6b0f" -->
 ---
