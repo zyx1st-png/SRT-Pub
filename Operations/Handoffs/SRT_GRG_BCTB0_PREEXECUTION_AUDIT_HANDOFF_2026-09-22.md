@@ -173,15 +173,31 @@ The future identity probe must:
 - record NOT INFERRED / INFERRED / AMBIGUOUS;
 - run before any source pack is shown.
 
-PASS means the procedure is reproducible and its consequence is frozen:
+PASS means the procedure is reproducible and every outcome consequence is frozen:
 
 ~~~text
+NOT INFERRED
+-> blind integrity = PASS-ELIGIBLE
+-> absolute historical-transfer credit remains eligible
+-> fold may count as a valid core fold if all other gates pass
+-> symmetric between-arm comparison may continue
+
 INFERRED
 -> blind integrity = COMPROMISED
 -> absolute historical-transfer credit = NO
 -> fold does not count as a valid core fold
 -> symmetric between-arm comparison may continue
+-> any residual result is COMPROMISED-DIAGNOSTIC
+
+AMBIGUOUS
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> fold does not count as a valid core fold
+-> symmetric between-arm comparison may continue
+-> any residual result is COMPROMISED-DIAGNOSTIC
 ~~~
+
+No later evaluator discretion may upgrade INFERRED or AMBIGUOUS to PASS.
 
 The pre-execution auditor does not run this identity probe.
 
