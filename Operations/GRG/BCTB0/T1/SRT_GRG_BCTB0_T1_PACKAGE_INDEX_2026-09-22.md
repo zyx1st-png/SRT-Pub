@@ -31,6 +31,7 @@ Historical cut:
 | R2 capsule-drafter handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_CAPSULE_DRAFTER_HANDOFF_2026-09-22.md` | `436ea692a0fd226948a772d31dd9477e1a41d7a4` | PRESENT ON PACKAGE REF | R2 ONLY |
 | masked capsule | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_MASKED_CAPSULE_2026-09-22.md` | `be2c559b9d2929e9542cec26dc117d8022f1cd66` | PRESENT / FROZEN FROM FRESH R2-v2 | R3 / R4 |
 | sanitized pre-execution audit handoff | `Operations/Handoffs/SRT_GRG_BCTB0_PREEXECUTION_AUDIT_HANDOFF_2026-09-22.md` | `b8447aa3d760339a6a96eceb902c4b6c37300a17` | PRESENT ON RESEARCH REF | R3 ONLY |
+| R4 generator handoff | `Operations/GRG/BCTB0/T1/SRT_GRG_BCTB0_T1_R4_GENERATOR_HANDOFF_2026-09-22.md` | `7d7e22e156f24f98c198fb4884424aca1c95a8b2` | PRESENT / SANITIZED | R4 ONLY |
 
 ## Hard routing
 
@@ -162,4 +163,29 @@ allowed result label = COMPROMISED-DIAGNOSTIC
 
 capsule revision after probe = FORBIDDEN
 T1 scored generation gate = OPEN FOR COMPROMISED-DIAGNOSTIC ONLY
+~~~
+
+
+## R4 generation routing
+
+~~~text
+formal identity probe = AMBIGUOUS
+T1 status = COMPROMISED-DIAGNOSTIC ONLY
+R4 sanitized handoff = PRESENT
+
+authorized sample matrix =
+G1 G2 G3
+S1 S2 S3
+A1 A2 A3
+C1 C2 C3
+
+execution rule =
+one fresh isolated chat per sample
+one sample per context
+read only R4 handoff + frozen capsule + arm-authorized source pack
+return packet to user only
+do not write outputs from R4 contexts
+
+freeze rule =
+all 12 outputs must be frozen before evaluator unblind / residual comparison
 ~~~
