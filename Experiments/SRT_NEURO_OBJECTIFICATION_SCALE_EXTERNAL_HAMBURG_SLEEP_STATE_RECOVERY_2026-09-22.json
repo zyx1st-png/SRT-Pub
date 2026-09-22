@@ -1,0 +1,24 @@
+{
+  "status": "STOPPED_PROTOCOL_GATE",
+  "author_repository": "https://github.com/mchini/Yang_Chini_et_al",
+  "author_commit": "317a72de133b6d7f23a59481dd2a3c9323fc3b16",
+  "ephys_scoring_method_recovered": true,
+  "ephys_method_discrepancy": "Published description states 30 s scoring epochs; shipped MainSleepScoring.m sets block_size=10 while AutomatedSleepScoring.m uses 50% overlap. No silent parameter substitution was made.",
+  "calcium_classifier_executable_found": false,
+  "calcium_label_vector_found": false,
+  "natural_sleep_recordings": 54,
+  "animals": ["8235", "8237", "8238"],
+  "recordings_by_animal": {"8235": 22, "8237": 15, "8238": 17},
+  "network_modularity_calculated": false,
+  "q_calculated": false,
+  "delta_q_calculated": false,
+  "epoch_inventory": {
+    "epoch_count": null,
+    "wake_count": null,
+    "nrem_count": null,
+    "rem_count": null,
+    "unclassified_count": null,
+    "fraction_classified": null
+  },
+  "next_gate": "obtain original calcium pupil/eyelid classifier or separately authorize and freeze a result-blind classifier protocol"
+}
