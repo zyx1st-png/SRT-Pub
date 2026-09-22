@@ -741,13 +741,23 @@ FOLD = INVALID FOR BETWEEN-ARM RESIDUALITY
 For every scored arm:
 
 ~~~text
-same model family = REQUIRED
-same exact model version = REQUIRED
-same inference settings = REQUIRED
+same exposed model identifier = REQUIRED
+same product / API surface = REQUIRED
+same reasoning-effort setting = REQUIRED
+same user-addressable inference settings = REQUIRED
 same context budget = REQUIRED
 same output template = REQUIRED
 independent samples per arm k >= 3
 k must be odd
+
+If an internal backend build hash is exposed, record and match it.
+
+If it is not exposed:
+
+- record backend build = UNAVAILABLE;
+- run all scored arms in one bounded execution batch;
+- do not claim exact hidden-build identity;
+- treat this as a declared platform limitation rather than silently assuming equality.
 ~~~
 
 Preferred first calibration:
@@ -1141,7 +1151,7 @@ Therefore:
 ~~~text
 charter-design session
 = EVALUATOR / ARCHITECTURE ROLE ONLY
-= NOT ELIGIBLE AS MANIFEST BUILDER
+= MAY EXECUTE DETERMINISTIC MANIFEST / TRANSFORM COMPILER WITH NO DISCRETIONARY SELECTION
 = NOT ELIGIBLE AS CAPSULE DRAFTER
 = NOT ELIGIBLE AS INPUT AUDITOR
 = NOT ELIGIBLE AS BLIND GENERATOR
@@ -1149,11 +1159,26 @@ charter-design session
 
 Required separated roles:
 
-### R1 — manifest builder
+### R1 — deterministic manifest / transform compiler
 
-Receives only historical cut + fixed mechanical rules in §7.1.
+R1 is a reproducible procedure, not an epistemic judge.
 
-No target name or later result.
+It receives only:
+
+- historical cut;
+- fixed root list;
+- one-hop dependency rule;
+- explicit linked-negative-control/source-record inclusion rule;
+- frozen de-labelling replacement table.
+
+The target-aware evaluator may execute R1 only if:
+
+- the compiler code/rule is frozen before reading its output;
+- no file is added or removed by semantic usefulness;
+- every output path and blob SHA is recorded;
+- R3 can reproduce or audit the result.
+
+No target keyword search or target-result information may enter the compiler.
 
 ### R2 — capsule drafter
 
