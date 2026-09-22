@@ -1161,3 +1161,38 @@ only after this author source is safely landed.
 
 The broader GRG concepts in this record remain author-confirmed research direction and should be
 pressure-tested before wholesale canonicalization.
+
+---
+
+## AI. Continuation pointer — reach dynamics / reconstructibility / generative debt
+
+The same author dialogue continued after this record and produced a further adjudication plus an
+explicit derivation trace.
+
+Latest author continuation:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
+
+Public derivation trace:
+
+01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_RECONSTRUCTIBILITY_REACH_2026-09-22.md
+
+The continuation develops:
+
+~~~text
+AI-era reconstructibility;
+reconstructible generative civilization;
+progressive reconstructibility;
+generative redundancy / lineage;
+generative forgetting as reach compression;
+active vs latent reconstructive reach;
+healthy vs destructive compression;
+support-dependent equivalence;
+friction conversion;
+parasitic vs integrative compensation;
+generative debt.
+~~~
+
+Use the continuation for the latest author-confirmed direction on these topics. Preserve this file as
+the preceding source layer rather than silently rewriting its historical content.
+
