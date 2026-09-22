@@ -495,3 +495,30 @@ STATUS.md
 ~~~
 
 The machine/bootstrap surfaces are guards and routers, not definition owners. Canonical wording remains owned by L0 / P0 / Generative Ontology Spine.
+
+## Q. Same-day continuation correction pointer
+
+Later on 2026-09-22 the author explicitly accepted a refinement that corrects Section A's
+over-strong retained-consequence criterion.
+
+Current latest author source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
+
+The corrected author-level separation is:
+
+~~~text
+Selection occurrence
+!= Selection sediment
+!= generative inheritance
+!= wholeward integration.
+~~~
+
+A genuine Selection is an actual non-neutral generative differentiation; it is not excluded merely
+because no later process remains in which sediment can persist. Terminal Selection therefore remains
+compatible at the author-intuition level. The exact canonical L0 / P0 / spine reconciliation remains
+OPEN until a bounded owner correction is landed.
+
+Sections B-P of this file remain valuable source for vertical dynamics where not superseded by the
+continuation record. Do not use the older Section A wording to override the later same-day adjudication.
+
