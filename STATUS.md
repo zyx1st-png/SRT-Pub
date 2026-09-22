@@ -246,10 +246,10 @@ T1 deterministic package branch = PRESENT
 -> A3 identity-consequence freeze = PATCHED
 -> A4 complete 41-rule deterministic de-label transform = BYTE-EXACT PASS
 -> A5 common context-budget ceiling = PATCHED
--> masked capsule v1 = A2 LEAKAGE PASS / IDENTIFIABILITY WARNING
--> prior fresh R3 guessed target identity = YES / NOT FORMAL CAPSULE-ONLY PROBE
--> fresh R2 v2 must revise capsule only for lower target identifiability
--> then NEW fresh R3 reads ONLY sanitized pre-execution audit handoff + six authorized package-branch inputs
+-> masked capsule v1 = A2 LEAKAGE PASS / IDENTIFIABILITY WARNING / SUPERSEDED AS EXECUTION INPUT
+-> masked capsule v2 = PRESENT / FROZEN FROM FRESH R2-v2
+-> prior fresh R3 guessed target identity on v1 package = YES / NOT FORMAL CAPSULE-ONLY PROBE
+-> NEW fresh R3 reads ONLY sanitized pre-execution audit handoff + six authorized package-branch inputs
 -> previous R3 sessions = DO NOT REUSE
 -> full charter / PR discussion / target-owner files = NOT FOR R3
 -> only if A1-A7 all PASS, run capsule-only target-identity probe
