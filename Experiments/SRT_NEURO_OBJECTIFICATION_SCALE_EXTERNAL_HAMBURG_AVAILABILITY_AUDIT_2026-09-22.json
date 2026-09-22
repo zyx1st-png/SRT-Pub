@@ -1,0 +1,91 @@
+{
+  "id": "SRT-NEURO-OBJECTIFICATION-SCALE-EXTERNAL-HAMBURG-AVAILABILITY-AUDIT-20260922",
+  "status": "frozen",
+  "record_stage": "phase3a_result_blind_external_feasibility",
+  "source": {
+    "processed_doi": "10.12751/g-node.lkx6kk",
+    "raw_doi": "10.12751/g-node.s549qk",
+    "processed_repository": "https://gin.g-node.org/doi/Anesthesia_CA1",
+    "processed_repository_commit": "8a784cc0177eaa8d66970363b76b84ff1a7cf662",
+    "license": "CC0 1.0 Public Domain Dedication",
+    "processed_archive_advertised_bytes_gib": 123,
+    "processed_archive_downloaded": false,
+    "raw_archive_downloaded": false
+  },
+  "audit_boundary": {
+    "result_blind": true,
+    "network_effect_computed": false,
+    "correlation_computed": false,
+    "graph_constructed": false,
+    "modularity_computed": false,
+    "deltaq_inspected": false
+  },
+  "datasets": {
+    "anesthesia": {
+      "metadata_rows": 189,
+      "animals": ["37527", "37528", "37529", "37530", "48", "51", "53"],
+      "condition_counts": {"awake": 39, "isoflurane": 49, "keta_xyl": 50, "mmf": 51},
+      "duration_min": {"min": 5.0, "max": 5.0},
+      "primary_awake": {"recordings": 39, "animals": 7, "accepted_roi_min": 85, "accepted_roi_max": 486, "eligibility": "ELIGIBLE"},
+      "primary_isoflurane": {"recordings": 49, "animals": 7, "accepted_roi_min": 151, "accepted_roi_max": 652, "eligibility": "ELIGIBLE"},
+      "object_presence": {"F.npy": "189/189", "Fneu.npy": "189/189", "spks.npy": "189/189", "iscell.npy": "189/189", "stat.npy": "189/189", "ops.npy": "189/189"}
+    },
+    "natural_sleep": {
+      "metadata_rows": 54,
+      "animals": ["8235", "8237", "8238"],
+      "recordings_by_animal": {"8235": 22, "8237": 15, "8238": 17},
+      "duration_min": {"min": 2.1277777778, "max": 14.8, "metadata_sum": 350.4094444444},
+      "accepted_roi_min": 267,
+      "accepted_roi_max": 1298,
+      "object_presence": {"F.npy": "54/54", "Fneu.npy": "54/54", "spks.npy": "54/54", "iscell.npy": "54/54", "stat.npy": "54/54", "ops.npy": "54/54"},
+      "pupillometry_feature_files": {"DLC_csv_2PM": 54, "Matlab_2PM": 54, "videos": 54},
+      "discrete_calcium_state_vector_present": false,
+      "state_contrast_status": "UNCERTAIN",
+      "object_level_status": "ELIGIBLE"
+    },
+    "transition_state": {
+      "metadata_rows": 199,
+      "concatenated_series": 23,
+      "animal_identifiers_in_csv": ["8235", "8237", "8238", "F0", "F1", "M0", "M3"],
+      "paper_summary": "172 transition recordings plus 37 awake controls",
+      "accessible_series_with_F_Fneu_iscell_stat_ops": 18,
+      "metadata_derived_paths_not_resolved": 5,
+      "spks_present_in_accessible_series": false,
+      "primary_status": "UNCERTAIN_NOT_PRIMARY"
+    }
+  },
+  "signal": {
+    "nearest_s3_analogue": "Suite2p/OASIS spks.npy",
+    "available_for_primary": true,
+    "exact_s3_equivalence": false,
+    "adaptation_required": true
+  },
+  "spatial_geometry": {
+    "available": true,
+    "source_objects": ["stat.npy", "ops.npy", "iscell.npy"],
+    "centroid_recovery": "Suite2p stat med or xpix/ypix",
+    "primary_accepted_roi_min": {"awake": 85, "isoflurane": 151, "natural_sleep": 267}
+  },
+  "candidate_grains": {
+    "G1": "all iscell[:,0] accepted ROIs",
+    "G2": "deterministic centroid-local clusters, m2=max(2,ceil(0.02*N))",
+    "G3": "deterministic centroid-local clusters, m3=max(4,ceil(0.04*N))",
+    "seed_order": "lexicographic centroid (y,x), ROI index tie-break",
+    "minimum_nodes_across_primary": {"G1": 85, "G2": 38, "G3": 22}
+  },
+  "graph_feasibility": {
+    "rule": "connected MST backbone plus strongest ranked abs-correlation edges",
+    "target_mean_degree": 16,
+    "minimum_nodes_required": 17,
+    "candidate_G3_minimum_nodes": 22,
+    "feasible": true,
+    "graph_run_performed": false
+  },
+  "biological_hierarchy": {
+    "primary_unit": "animal",
+    "recordings_nested_within": "animal",
+    "epochs_and_windows_are_not_biological_replicates": true
+  },
+  "verdict": "PROTOCOL-ADAPTATION-REQUIRED",
+  "next": "freeze external replication protocol before any DeltaQ"
+}
