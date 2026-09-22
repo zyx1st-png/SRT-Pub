@@ -97,7 +97,7 @@ Preferred output file:
 
 If GitHub write access is available in the fresh R2 session, create exactly that one file on branch:
 
-`research/grg-bctb0-temporal-replay-20260922`
+`experiments/grg-bctb0-t1-preexec-package-20260922`
 
 Do not modify any other file.
 
