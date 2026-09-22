@@ -262,7 +262,10 @@ T1 deterministic package branch = PRESENT
 -> valid core fold = NO
 -> symmetric arm comparison = MAY CONTINUE AS COMPROMISED-DIAGNOSTIC
 -> capsule revision after formal probe = FORBIDDEN
+-> R4 sanitized generator handoff = PRESENT on T1 package ref
 -> next = R4 generation / same exposed model / High / k=3 generator arms G/S/A/C / 12 frozen samples
+-> one fresh isolated chat per sample / one sample per context / R4 contexts read only sanitized handoff + frozen capsule + authorized pack
+-> R4 contexts return output only; evaluator freezes all 12 before unblind
 -> T1 result may calibrate between-arm residuality only; it cannot satisfy valid-core-fold count
 -> freeze all samples before unblind
 -> evaluator T1 closeout
