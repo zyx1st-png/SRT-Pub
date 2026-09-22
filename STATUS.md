@@ -256,11 +256,14 @@ T1 deterministic package branch = PRESENT
 -> target identity guessed during R3 audit = AMBIGUOUS / NOT FORMAL CAPSULE-ONLY PROBE
 -> pre-execution hardening = COMPLETE
 -> identity-probe attempt 1 = INVALID / INPUT MISSING ("AMBIGUOUS: no capsule content provided") / no blind-integrity consequence
--> next = NEW fresh capsule-only identity probe with exact frozen capsule v2 text included
--> identity-probe context reads ONLY frozen capsule v2 and frozen probe prompt; no source pack
--> INFERRED or AMBIGUOUS = COMPROMISED / not valid core fold / symmetric arm comparison may continue
--> NOT INFERRED = valid-core eligibility remains open
--> same exposed model / High / k=3 generator arms G/S/A/C only after identity probe completes
+-> formal capsule-only identity probe = AMBIGUOUS ("multiple network-policy systems fit these facts; no unique named target is identified")
+-> blind integrity = COMPROMISED
+-> absolute historical-transfer credit = NO
+-> valid core fold = NO
+-> symmetric arm comparison = MAY CONTINUE AS COMPROMISED-DIAGNOSTIC
+-> capsule revision after formal probe = FORBIDDEN
+-> next = R4 generation / same exposed model / High / k=3 generator arms G/S/A/C / 12 frozen samples
+-> T1 result may calibrate between-arm residuality only; it cannot satisfy valid-core-fold count
 -> freeze all samples before unblind
 -> evaluator T1 closeout
 -> only then decide whether T2 may open
