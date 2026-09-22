@@ -244,9 +244,9 @@ NOT SELECTED / DO NOT OPEN BEFORE BCTB-0 GATE
 next =
 T1 deterministic package branch = PRESENT
 -> source manifest / raw pack / de-labelled pack / transform / execution plan = PRESENT
--> masked capsule = PENDING FRESH R2
--> fresh R2 reads ONLY package-branch T1 capsule-drafter handoff and writes exact masked-capsule path
--> then NEW fresh R3 reads ONLY sanitized pre-execution audit handoff + six authorized package-branch inputs
+-> masked capsule = PRESENT / FROZEN FROM FRESH R2
+-> NEW fresh R3 reads ONLY sanitized pre-execution audit handoff + six authorized package-branch inputs
+-> previous contaminated R3 session = DO NOT REUSE
 -> full charter / PR discussion / target-owner files = NOT FOR R3
 -> only if A1-A7 all PASS, authorize T1 role-separated generation
 -> capsule-only target-identity probe
