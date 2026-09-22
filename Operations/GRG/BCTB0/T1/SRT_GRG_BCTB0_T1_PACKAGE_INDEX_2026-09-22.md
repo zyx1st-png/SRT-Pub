@@ -59,8 +59,9 @@ A2 masked capsule v1 = PRESENT / A2 LEAKAGE PASS / IDENTIFIABILITY WARNING
 A2 masked capsule v2 = PRESENT / FROZEN FROM FRESH R2-v2
 A3 identity-probe procedure = PRESENT IN EXECUTION PLAN
 
-R3 rerun = READY IN A NEW FRESH SESSION
-T1 generation = BLOCKED UNTIL R3 A1-A7 PASS
+R3 pre-execution audit = PASS / A1-A7 ALL PASS
+formal capsule-only identity probe = NEXT / FRESH SESSION REQUIRED
+T1 generation = BLOCKED UNTIL IDENTITY PROBE COMPLETES
 ~~~
 
 
@@ -107,4 +108,27 @@ corrected de-labelled bundle blob =
 
 fresh R3 rerun =
 READY
+~~~
+
+
+## Fresh R3 final pre-execution result
+
+~~~text
+A1 = PASS
+A2 = PASS
+A3 = PASS
+A4 = PASS
+A5 = PASS
+A6 = PASS
+A7 = PASS
+
+EXECUTION READINESS = PASS
+target identity guessed during audit = AMBIGUOUS
+target-result material encountered = NO
+auditor contamination = NONE
+
+interpretation =
+pre-execution hardening complete
+R3 ambiguity note is NOT the formal capsule-only identity probe
+next = fresh capsule-only identity probe
 ~~~
