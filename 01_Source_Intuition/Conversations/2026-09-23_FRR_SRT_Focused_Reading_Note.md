@@ -77,6 +77,10 @@ SRT cannot claim a difference merely from "no prior chooser".
 
 ## 3. Source-derived：FRR 有清楚的 actualization -> later datum -> global formation
 
+### Chapter 4, printed pp. 165–166（PDF pp. 181–182）
+
+FRR 明确说：actualized occasion 会作为 datum 与 subsequent occasions-in-process 发生 internal relation。但这里的 **subsequent 首先是 logical / mereotopological subsequence，并不必然是 temporal subsequence**；时空意义上的先后被作者视为这一更基础关系的特化。因此，不能把 FRR 的 subsequence 无限定地等同于 SRT 的时间性 L2 / T_dir 结构。
+
 ### Interlude, printed pp. 206–209（PDF pp. 220–224）
 
 FRR 将 actual occasion 的两面明确分开：
@@ -97,7 +101,7 @@ FRR 将 actual occasion 的两面明确分开：
 
 ### Chapter 11 附近（PDF p. 386）
 
-FRR 进一步把 germ 从 event 到 event 的连续 extension 直接处理为 historical process，并用 sheaf-theoretic section 的连续 functional representation 描述。
+FRR 把 germ 从 event 到 event 的连续 extension 表述为 historical process，并用 sheaf-theoretic section 的连续 functional representation 描述；但该段先在空间拓扑的建模语境中给出这一表达，随后才说可 **analogically transfer** 到量子域。因此这里支持“FRR 有历史/生成连续性的形式资源”，但不能未经额外核对就把空间拓扑中的每一项 historical-process 语义直接等同于量子物理中的时间历史。
 
 **Source-level结论：**
 
@@ -126,9 +130,7 @@ SRT has writeback/history; FRR does not
 
 ```text
 Selection occurrence
-!= retained historical efficacy
-!= sedimentation
-!= generative inheritance.
+!= {retained historical efficacy / sedimentation / generative inheritance}.
 ```
 
 而 FRR 也有：
@@ -206,7 +208,34 @@ insufficient evidence
 
 ---
 
-## 6. 暂不推进
+
+
+## 6. Canonical comparison debt exposed by this reread
+
+本轮 FRR 阅读不仅修正了通信记录，也暴露了仓库中更早的 Whitehead 比较债。当前 PR **不直接改 canonical / retained canonical-support owners**，但必须登记以下待校正面：
+
+- `Core_Law/SRT_L0_Philosophy_Bridge.md` §一仍写 Whitehead satisfaction “没有区分显现与历史固化”，并把“稳定域独立性”作为已定分叉；
+- `Core_Law/SRT_Constitution_Seven_Theses.md` 的历史比较摘要仍写 “Whitehead 无 L2 对应构念”；
+- `Operations/_SRT_DIALOGUE_LOG.md` 2026-07-27 条目仍把“三域结构 / 代价约束 / L2 独立性”称为真正分叉。
+
+FRR 已足以否定把 **一般性的 history / writeback / later-conditioning 缺失** 当成 Whitehead / relational realism 的既定差异，但它还不足以证明 Whitehead/FRR 具有 SRT 当前对 L2、persistence、revisability、friction/cost 的全部更强负担。
+
+因此后续 bounded owner correction 应把旧断言重写为：
+
+```text
+FRR / Whitehead clearly has actualization -> datum -> later-conditioning / global-history structure;
+
+OPEN:
+exact mapping to SRT L2,
+persistence-strength / revisability / resistance,
+and cost / friction burdens.
+```
+
+这项 debt 只登记，不在本 PR 偷渡 canonical verdict。
+
+---
+
+## 7. 暂不推进
 
 本轮不处理：
 
