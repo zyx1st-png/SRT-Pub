@@ -115,7 +115,9 @@ QM 测量被定义为**从潜能到概率的、根本上非酉的演化**。而"
 
 > **护栏**：`Physics/SRT_Quant_01_Selection.md` 为 bridge / translation 文件（`canonical: false`），上表为语汇对照，不构成 SRT 已证等价。Ax-Sel-2（切口位置由 d 值与自由能极小化联合参数化）在该文件中已自标为 **[H-高承诺]、暂无直接实验检验路径**，本轮通信不改变该评级。
 
-### 3.4 与 SRT 的分叉处（据 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一）
+### 3.4 与 SRT 的分叉处（2026-07-27 历史初判；2026-09-23 已部分 supersede）
+
+> **2026-09-23 校正**：下面三条保留为 7 月时点的历史初判，不能继续当作当前 comparative verdict。FRR 已明确具有 actualization -> datum -> later-conditioning / global-history 结构，因此“一般性 history/writeback 缺失”已被推翻。仍 OPEN 的是：FRR/Whitehead 与 SRT L2 的精确映射、不同历史沉淀的 persistence / revisability / resistance，以及 cost / friction 是否存在等价负担。相关 canonical / retained-support 比较债已登记在 `2026-09-23_FRR_SRT_Focused_Reading_Note.md §6`，本 PR 不直接修改这些 owner。
 
 L0 哲学桥接文件已记录 SRT 相对过程哲学的三条分叉，本轮回信**未触及其中任何一条**：
 
@@ -376,10 +378,10 @@ vs merely descriptive / modelled change
 
 FRR 至少在以下位置明确给出了强历史生成结构：
 
-1. **Chapter 4, pp. 164–165（PDF 179–181）**：actual occasion 的 local context / subjective standpoint 被描述为 constitutive of the occasion，并且是“self-determined”；它并非由外部实验者选择直接推导，但又通过与 dative world 的 internal relation 被条件化。
+1. **Chapter 4, pp. 165–166（PDF 181–182）**：actualized occasion 成为与 subsequent occasions-in-process 内在相关的 datum；但作者明确限定这里的 subsequent 首先是 **logical / mereotopological**，不必然是 temporal，时空次序只是特化。
 2. **Interlude, pp. 206–209（PDF 220–224）**：actual occasion 的 subjective aspect 是其 local contextualization；一旦 actualized，其 objective / superjective aspect 是成为后续 actual occasions 的 datum。Boolean germ 随每次 actualization 增长，global 是持续形成中的 totality。
 3. **Chapter 8, p. 269（PDF 281）**：新事件加入后形成的新 totality 会对新的 local contexts 施加进一步 compatibility constraints；作者明确把 sheaf-theoretic localization 描述为 ontological process，而不是对固定全局整体的纯认识论重组。
-4. **Chapter 11 附近（PDF 386）**：germ 从 event 到 event 的连续延展被直接作为 historical process 处理。
+4. **Chapter 11 附近（PDF 386）**：germ 从 event 到 event 的连续延展被表述为 historical process；但该表达先出现在空间拓扑建模中，随后才 analogically transferred 到量子域，因此不能无条件等同于量子时间历史。
 
 因此当前比较不能再写成：
 
@@ -403,7 +405,7 @@ adds a distinct burden.
 
 ### 8.2 subjective aim 不应预先等同于 SRT 的 stake-bearing valuation
 
-FRR 在 Chapter 2, pp. 88–90（PDF 106–108）把 Whiteheadian subjective standpoint 与 local Boolean context 对接，并把 comparative phase 中的“valuation up/down”具体化为 probability valuations；同时以 negative selection / logical compatibility 处理潜在关系的排除与整合。
+FRR 在 Chapter 2, pp. 88–90（PDF 106–108）把 Whiteheadian subjective standpoint 与 local Boolean context 对接，并把 comparative phase 中的“valuation up/down”具体化为 probability valuations；同时以 negative selection / logical compatibility 处理潜在关系的排除与整合。Chapter 4, pp. 164–165（PDF 179–181）进一步把 actual occasion 的 indexical local context 说成 constitutive / self-determined，同时受 dative world 的 internal relatedness 条件化。
 
 这说明至少在 Epperson/Zafiris 的 relational-realist 版本里，以下三者必须先分开：
 
@@ -476,12 +478,22 @@ three things that my earlier formulation did not distinguish sharply enough:
 the occurrence of a Selection event, the later historical efficacy of an
 actualized event, and still stronger forms of valuation and agency.
 
-Reading FRR has already corrected one of my provisional assumptions: your
-framework clearly does contain a strong actualization -> augmentation ->
-subsequent-context structure. So the question I now see more sharply is not
-whether local-global constraint can coexist with genuine novelty, but whether
-the self-determination of an actual occasion already does all the work that
-SRT assigns to primitive Selection occurrence.
+One point in my July message I would now phrase differently. I described basal
+selection as though its result were already "written back into the conditions
+of what can happen next." SRT now separates the occurrence of a Selection from
+its later historical efficacy: writeback is a stronger downstream relation,
+not part of the occurrence criterion itself.
+
+Your book has also made the comparison sharper for me. FRR clearly contains
+an actualization -> objective datum -> later-conditioning / global-formation
+structure, although "subsequent" is not always temporal in your treatment.
+So the question I now see more sharply is whether the self-determination of
+an actual occasion already does all the event-level work that SRT assigns to
+primitive Selection occurrence.
+
+I still intend to return, after reading further, to the question I postponed
+in July about differing persistence and resistance to revision of settled
+facts; I am not asking you to take that up in this short note.
 
 There is no need to respond to this note separately while the semester is
 busy. It is mainly intended to give you a cleaner statement of the SRT side
