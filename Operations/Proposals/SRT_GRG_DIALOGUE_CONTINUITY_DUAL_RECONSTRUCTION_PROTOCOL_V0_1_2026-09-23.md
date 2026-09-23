@@ -65,7 +65,7 @@ Use the existing repository axes:
 - retrieval value;
 - currentness.
 
-Do not create a fourth repository-wide `continuity_role` axis.
+Do not create a fourth repository-wide continuity metadata axis.
 
 ### 1.1 Epistemic authority
 
@@ -495,7 +495,7 @@ It does **not** mean:
 
 > ignore it when reconstructing why GRG became reflexive, reconstructible or intervention-oriented.
 
-Use `continuity_role` to distinguish these.
+Use the existing retrieval-value / currentness rules and explicit scope dispositions (`EXPLORATORY / LOCAL_ONLY / SUPERSEDED`) to distinguish these.
 
 ## 13. Current stop rule
 
