@@ -92,8 +92,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - annex registry → `ANNEX_REGISTRY.md`
 - longform split registry → `LONGFORM_SPLITS.md`
 - agent retrieval profile → `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- terminology routing → `Glossary/README.md` → `Glossary/SRT_Live_Term_Router.md`（沿用既有 glossary 入口；alias / overlap / collision / owner routing only）
-- glossary → `SRT_Glossary.md`（mixed historical / retrieval source; subordinate to canonical symbol anchors and domain claim-status files）
+- glossary → `Glossary/README.md` → `SRT_Glossary.md`（historical / retrieval source） + `Glossary/SRT_Live_Term_Router.md`（live alias / overlap / collision / owner routing only；非定义权威）
 - structural governance glossary → `SRT_Glossary_Structural_Governance_Terms.md`
 - manifest → `_SRT_MANIFEST.yaml`
 
