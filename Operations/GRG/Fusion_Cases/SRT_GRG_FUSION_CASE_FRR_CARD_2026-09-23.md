@@ -151,7 +151,10 @@ GRG-added mapping:
   calling it a "GRG proxy" is analyst-side, not source-native identity.
 
 disposition:
-  SOURCE_SUPPORTED_ROLE_CANDIDATE at contextual / partitioning-role level only.
+  EXPLICIT_CORRESPONDENCE at contextual / partitioning-role level only.
+
+Reason for not using `SOURCE_SUPPORTED_ROLE_CANDIDATE` here:
+  the Card has not yet extracted a source-native equivalence / neutrality relation that would pay the stronger role claim.
 ```
 
 Non-identity: `Boolean frame != GRG generative proxy automatically`.
@@ -233,6 +236,12 @@ source-native actuality criterion:
 
 evidence:
   actualized quantum fact / actualized occasion / objective datum structure.
+
+source-side actuality asymmetry:
+  an actualized fact is not merely an unactualized probable relation.
+
+typing:
+  this is an actuality / ontological-asymmetry observation, not yet the relational-non-neutrality burden of §9.3.
 ```
 
 ### 9.2 Event individuation screen
@@ -254,15 +263,17 @@ negative control:
 ### 9.3 Relational non-neutrality burden
 
 ```text
-source-side asymmetry:
-  actualized fact is not merely an unactualized probable relation.
+source-native relation / constraint whose substitution status changes:
+  NOT EXTRACTED FROM THE FOCUSED PASS.
+
+why the relevant source states / relations are not safely substitutable:
+  NOT ESTABLISHED.
 
 status:
-  SOURCE-SIDE PRESSURE PRESENT;
-  canonical anti-tautology criterion still OPEN.
+  OPEN / INSUFFICIENT_EVIDENCE.
 ```
 
-This subsection does not solve the SRT criterion; it states the source-side burden motivating comparison.
+The focused pass supports actuality asymmetry, but it does not yet pay the stronger relational-non-neutrality field required here. The canonical anti-tautology criterion remains OPEN.
 
 ### 9.4 Representation-invariance screen
 
@@ -297,21 +308,22 @@ No `YES` classifier is used.
 
 ```text
 status:
-  PRESUPPOSED / OPEN at the "why this objective fact occurs" level.
+  NOT ESTABLISHED FROM FOCUSED PASS / OPEN.
 
-FRR constrains / explains:
-  local context;
+source-native material established in the pass:
   probability / compatibility organization;
-  relational form of actualization and later incorporation.
+  local-context / self-determination structure;
+  actualization and later incorporation.
 
-not established:
-  a separate mechanism for existence / occurrence of objective facts.
+adequacy question:
+  whether those source-native resources already explain / exhaust the occurrence burden remains OPEN
+  under the focused-reading note §4.A.
 
 GRG-added explanation:
   NONE.
 ```
 
-Result: actuality criterion and occurrence account must remain separate.
+Result: the focused pass does not license either "FRR explains occurrence" or "FRR presupposes occurrence". Actuality criterion and occurrence account must remain separate.
 
 ## 11. Consequence
 
@@ -461,14 +473,19 @@ fallback:
 ## 17. Anti-metaphor test
 
 ```text
+GRG -> FRR target-domain gain:
+  NO GRG GAIN ESTABLISHED.
+
 new source-native prediction:
-  NO established.
+  NO.
 
 new target-domain intervention:
   NO.
 
-diagnostic boundary changed:
-  YES provisionally:
+FRR -> Card pressure:
+  SCHEMA REVISED.
+
+Card distinctions sharpened by the source:
   context / compatibility
   vs occurrence account
   vs consequence / retention
@@ -481,7 +498,9 @@ scientific distinctiveness:
   NO.
 ```
 
-Verdict: `FRAMEWORK / SCHEMA GAIN CANDIDATE; NO TARGET-DOMAIN NOVELTY CLAIM`.
+Verdict: `NO TARGET-DOMAIN GRG GAIN; FRR -> CARD SCHEMA PRESSURE / REVISION`.
+
+The same source-driven correction must not be counted twice as both a GRG gain and a Card revision.
 
 ## 18. Mapping disposition + live GRG maturity
 
@@ -490,7 +509,13 @@ Card-local disposition:
   EXPLICIT_CORRESPONDENCE + SOURCE_SUPPORTED_ROLE_CANDIDATE
 
 overall M-status:
-  M1/M2 MIXED at most for selected structural correspondences.
+  M1 — structural analogy / correspondence only.
+
+evidence owner:
+  01_Source_Intuition/Conversations/2026-09-23_FRR_SRT_Focused_Reading_Note.md
+
+M2:
+  NOT CLAIMED — no separately frozen burden / independently evidenced relation match is opened by this Card.
 
 M3:
   NOT CLAIMED
@@ -584,6 +609,16 @@ failed GRG mappings:
   negative selection = SRT Selection;
   gluing = GRG reconstructibility;
   FRR history = SRT L2 identity.
+
+new OPEN comparative question:
+  does FRR self-determined local contextualization + germ evaluation + actualization
+  exhaust the role currently assigned to primitive Selection occurrence,
+  or is an additional event-level burden still required?
+
+stop-loss accounting:
+  FRR counts as the first source-native adequate fusion case for plan §8.1;
+  current outcome is no stronger than M1 and establishes no target-domain GRG gain;
+  its Card revisions remain PROVISIONAL until they survive the next heterogeneous cross-card reconciliation.
 
 next cross-card question:
   which distinctions survive a second heterogeneous fusion case
