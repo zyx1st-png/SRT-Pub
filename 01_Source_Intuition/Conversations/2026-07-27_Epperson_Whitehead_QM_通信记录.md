@@ -9,9 +9,11 @@ epistemic_layer: synthesis
 claim_mode: exploratory_bridge
 canonical: false
 created: 2026-07-27
-revised: 2026-07-27
-downstream_guard: "本文记录一位外部学者的立场与四项未闭合追问，不构成 SRT 已闭合结论。Epperson 的层论/范畴义务论述属外部框架陈述，不得作为 SRT canonical 依据；§四各问在对方回复前不得写入 bridge 文件、书稿或公共内容。他明确否定的只是『固定约束必然消灭新颖性』，并未裁决『约束是否穷尽 subjective aim』——不得把前者转述为后者。§4.2 引用的价值发生序仍是 _SRT_D_VALUE_CANONICAL.md §2a 的 P3 候选，外部学者的认可不构成 §2a.3 对账。§4.1 与 Core/SRT_OPEN_TENSIONS.md §13 的未执行减法测试相关：本轮通信是外部竞争语汇压力探针，不是减法测试；selection 只可表述为 SRT treats as primitive，不得写成已证不可还原，且不得据本轮通信为其附加 residue label。"
+revised: 2026-09-23
+downstream_guard: "本文是外部学者通信与 FRR 陪读记录，非 SRT canonical。2026-09-23 起，旧 §3.4 的三条分叉只按 2026-07-27 的历史初判读取；FRR 已明确包含 actualized occasion -> subsequent datum -> global-in-formation / later-context constraint 的历史生成结构，禁止再概括为对方框架没有 history/writeback。Selection 与 concrescence/self-determination 是否等价仍 OPEN；不得把外部收敛或差异单独写成 SRT residue / novelty 结论。"
 companion_note: 01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md
+current_companion_note: 01_Source_Intuition/Conversations/2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md
+current_reading_note: 01_Source_Intuition/Conversations/2026-09-23_FRR_SRT_Focused_Reading_Note.md
 dependency:
   - Core_Law/SRT_L0_Philosophy_Bridge.md
   - Core/SRT_OPEN_TENSIONS.md
@@ -27,6 +29,9 @@ dependency:
 > 本文**不是 canonical 定义源**。Michael Epperson 的立场表述属于**外部框架陈述**（relational realism / 层论进路），与 SRT 的一致处只能用作收敛性上下文，不得回写为 SRT 已证条款。
 >
 > 通信对象：Michael Epperson，California State University Sacramento，Consortium for Philosophy and the Natural Sciences 主任。
+>
+> **2026-09-23 状态更新**：2026-07-27 的回信已于当日实际发出；Epperson 于 2026-09-21 再次回信，明确邀请继续发送 SRT 信息并附上 *Foundations of Relational Realism*（FRR）PDF。本文 §1–§6 保留为 7 月时点的历史通信与分析记录；其中与本页后续 §7–§9 不一致的判断，以后续更新为准。当前对外一页 note 已重写为 `2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md`。
+>
 
 ---
 
@@ -189,9 +194,9 @@ Aharonov–Bohm / Berry phase 由该形式化"预言"而 Hilbert 空间形式化
 
 ---
 
-## 五、回信定稿（英文，待发送）
+## 五、2026-07-27 回信（已发送；保留历史定稿）
 
-> 本节为 2026-07-27 修订后的定稿版，**尚未发送**。结构对应 §四：先接受其框架 → 主问题 A（实现化地位）→ 主问题 B（aim 层位，含两段式对照）→ 次级形式问题 → 两项推迟 → note 邀约。
+> 本节为 2026-07-27 修订后的发送稿，**已于 2026-07-27 实际发出**。以下全文按历史 provenance 保留，不再作为 2026-09-23 的当前发送稿。
 >
 > 措辞纪律：`retains ... as a primitive`（不写 proven irreducible）、`on the account I am currently working out`（分层结构标为在建）、不点名 cohomological measure。三项均对应 §四的登记理由。
 
@@ -319,10 +324,180 @@ Yuxin Zhang
 
 ## 六、待办
 
-- [ ] 发出回信（§五 定稿）。回一句要 PDF 是最低动作，勿再拖。
-- [x] 一页 SRT 最小设定英文 note 成稿 → `2026-07-27_SRT_Minimal_Setup_Note_EN.md`（发送前删两个内部块）。
+- [x] 2026-07-27 已发出 §五 回信，并请求 FRR PDF。
+- [x] 2026-07-27 一页 note 成稿，但**未发送**；2026-09-23 已由 v2 取代，旧稿仅保留历史 provenance。
 - [ ] 收到 PDF 后建立阅读笔记；若层论进路确实表示了 §4.3 的区分，走材料融合流程（`Operations/_SRT_MATERIAL_PIPELINE.md`），不直接回写 bridge。
 - [ ] **对主问题 A 的回复按 `Core/SRT_OPEN_TENSIONS.md §13` 登记为外部压力输入**：无论他答"只是词汇差异"还是给出竞争语汇重构不了的具体差别，都记为**未来正式减法测试的外部比较材料**，不是测试结果。不得当作对方未理解，也**不得**据此单独判定 residue label——§13 明言 residue 只能来自已执行的正式删除测试。
 - [ ] **回复中若出现"aim 两者都不是"的第三种答案**（独立构成原则），那是对 §4.2 两段式对照最有价值的输出，应单独记录，不得强行归入前赌注 / 赌注门任一格。
 - [ ] 若对方确认 §4.4（层论 gluing 不携带代价/可修订性度量），可在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一"代价约束"分叉处补一条外部确认注记——**须等实际回复，不得据本文推定**。
 - [ ] 若对方对 §4.2 的两段式给出实质回应，回流点是 `_SRT_D_VALUE_CANONICAL.md §2a`（该节仍为 P3 候选，采纳前须完成 §2a.3 对账）——外部学者的认可**不构成** §2a.3 对账，不得替代内部流程。
+
+
+---
+
+## 七、2026-09-21 最新回信：允许发送 SRT 材料 + 收到 FRR
+
+Epperson 在 2026-09-21 的回信中没有立即回答 §4 的长问题，理由是学期事务繁忙；但他明确表示：
+
+- 可以继续发送 SRT 信息；
+- 附上 *Foundations of Relational Realism: A Topological Approach to Quantum Mechanics and the Philosophy of Nature* PDF；
+- 表示后续会再回复。
+
+这改变了当前外联动作的优先级：
+
+```text
+不要追加第二封长问题邮件；
+先发送一份当前、窄、可快速阅读的 SRT minimal note；
+把 FRR 阅读后的真正 residual 留给他后续回复时处理。
+```
+
+旧的 2026-07-27 minimal note 不再适合直接发送，原因并非文风，而是 SRT canonical 在 #1031–#1033 后已经发生关键澄清：
+
+```text
+Selection occurrence
+!= retained historical efficacy
+!= sedimentation
+!= generative inheritance;
+
+terminal Selection remains genuine;
+
+genuine actualised Selection
+vs merely descriptive / modelled change
+= OPEN.
+```
+
+因此 2026-09-23 对外版本必须以这一分离为核心，而不是继续把 primitive Selection 与不可抹除 trace / L2 sediment 绑定。
+
+---
+
+## 八、2026-09-23 FRR 定向陪读后的修正
+
+### 8.1 旧 §3.4 的“FRR 缺少 history/writeback”不再成立
+
+FRR 至少在以下位置明确给出了强历史生成结构：
+
+1. **Chapter 4, pp. 164–165（PDF 179–181）**：actual occasion 的 local context / subjective standpoint 被描述为 constitutive of the occasion，并且是“self-determined”；它并非由外部实验者选择直接推导，但又通过与 dative world 的 internal relation 被条件化。
+2. **Interlude, pp. 206–209（PDF 220–224）**：actual occasion 的 subjective aspect 是其 local contextualization；一旦 actualized，其 objective / superjective aspect 是成为后续 actual occasions 的 datum。Boolean germ 随每次 actualization 增长，global 是持续形成中的 totality。
+3. **Chapter 8, p. 269（PDF 281）**：新事件加入后形成的新 totality 会对新的 local contexts 施加进一步 compatibility constraints；作者明确把 sheaf-theoretic localization 描述为 ontological process，而不是对固定全局整体的纯认识论重组。
+4. **Chapter 11 附近（PDF 386）**：germ 从 event 到 event 的连续延展被直接作为 historical process 处理。
+
+因此当前比较不能再写成：
+
+```text
+SRT has writeback/history;
+FRR does not.
+```
+
+更准确的是：
+
+```text
+both frameworks contain
+actualization -> incorporation into later conditions;
+
+OPEN comparison =
+what kind of historical efficacy is carried,
+how local self-determination is constituted,
+and whether persistence / revisability / cost asymmetry
+adds a distinct burden.
+```
+
+### 8.2 subjective aim 不应预先等同于 SRT 的 stake-bearing valuation
+
+FRR 在 Chapter 2, pp. 88–90（PDF 106–108）把 Whiteheadian subjective standpoint 与 local Boolean context 对接，并把 comparative phase 中的“valuation up/down”具体化为 probability valuations；同时以 negative selection / logical compatibility 处理潜在关系的排除与整合。
+
+这说明至少在 Epperson/Zafiris 的 relational-realist 版本里，以下三者必须先分开：
+
+```text
+subjective standpoint / local context
+!= probability valuation of subjective forms
+!= SRT stake-bearing valuation / concern.
+```
+
+所以 7 月邮件把 subjective aim 主要压到“minimal valence vs stake-bearing valuation”这条轴上，虽然已经留了第三出口，但仍然带有明显 SRT 预分类。当前更好的问题是：
+
+> relational realism 中 actual occasion 的 self-determination / local-context formation / concrescent unity，是否已经承担了 SRT 所称 primitive Selection occurrence 的全部工作？
+
+这应当保持为**外部比较 OPEN**，不能在 Epperson 回答前判为差异或等价。
+
+### 8.3 当前真正值得保留的 residual 问题
+
+当前最窄、最有信息量的比较压力是：
+
+```text
+Does the self-determination of an actual occasion
+already exhaust what SRT calls primitive Selection occurrence,
+
+or does actualization still carry an event-level burden
+not exhausted by Boolean contextualization,
+valuation and local-to-global gluing?
+```
+
+另一个次级问题是：
+
+```text
+FRR clearly has historical augmentation;
+does it also distinguish differing persistence,
+revisability / resistance-to-revision,
+or cost of undoing settled structure?
+```
+
+后者目前只可作为阅读问题。不能从已定位段落推出 FRR “没有”这些结构。
+
+---
+
+## 九、当前对外包
+
+### 9.1 当前一页 note
+
+使用：
+
+`01_Source_Intuition/Conversations/2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md`
+
+旧稿：
+
+`2026-07-27_SRT_Minimal_Setup_Note_EN.md`
+
+仅作历史 provenance，不再发送。
+
+### 9.2 建议邮件正文（待发送）
+
+```text
+Subject: Re: Concrescence vs selection in quantum measurement: does 'aim' add anything physically?
+
+Dear Mike,
+
+Thank you again for sending Foundations of Relational Realism. I have begun
+working through it, especially the sections on local Boolean contexts,
+self-determination, and the local-to-global formation of quantum events.
+
+You kindly invited me to send some information on SRT, so I am attaching a
+revised one-page note. I have kept it deliberately narrow. It now separates
+three things that my earlier formulation did not distinguish sharply enough:
+the occurrence of a Selection event, the later historical efficacy of an
+actualized event, and still stronger forms of valuation and agency.
+
+Reading FRR has already corrected one of my provisional assumptions: your
+framework clearly does contain a strong actualization -> augmentation ->
+subsequent-context structure. So the question I now see more sharply is not
+whether local-global constraint can coexist with genuine novelty, but whether
+the self-determination of an actual occasion already does all the work that
+SRT assigns to primitive Selection occurrence.
+
+There is no need to respond to this note separately while the semester is
+busy. It is mainly intended to give you a cleaner statement of the SRT side
+when you have time to return to the earlier questions.
+
+With respect,
+Yuxin Zhang
+```
+
+### 9.3 下一动作
+
+- [x] #1031 Selection occurrence / sedimentation reconciliation merged.
+- [x] #1032 provenance / vocabulary reconciliation merged.
+- [x] #1033 status / owner / governance convergence merged.
+- [x] FRR 收到并完成第一轮定向陪读。
+- [x] 旧 Epperson note 判定为 superseded。
+- [x] 生成 2026-09-23 minimal note v2。
+- [ ] 作者确认发送措辞后，可走 Gmail draft/send；当前仓库动作本身不构成发送授权。
+- [ ] 等 Epperson 实质回复后，再决定是否进入正式 source/material integration 或更窄的 comparative test。
