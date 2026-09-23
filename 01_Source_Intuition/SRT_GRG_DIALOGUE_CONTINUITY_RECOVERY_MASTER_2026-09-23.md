@@ -17,7 +17,6 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md
-  - Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md
 tags: [GRG, DialogueRecovery, Continuity, Provenance, Reconstructibility, Objectification, Neutrality, AntiSelfSealing]
 ---
 
