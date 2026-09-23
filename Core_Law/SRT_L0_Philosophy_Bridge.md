@@ -38,7 +38,7 @@ dependency: [SRT-L0-METAPHYSICS]
 
 **分叉处**：
 
-- **结构层次**：SRT 显式区分 Selection occurrence、retained historical efficacy / sedimentation，并用 L₀ / L₁ / L₂ 组织开放性、显现与历史留存。2026-09-23 对 Epperson / Zafiris 的 Whiteheadian relational realism 定向核读已确认：actualized occasion 会成为后续 occasion 的 datum，并参与 global-history / later-conditioning；因此不能再把“一般性的 history / writeback 缺失”写成 Whitehead 侧的既定分叉。其 `subsequent` 在关键段落中首先是 logical / mereotopological，不能自动等同于 SRT 的时间性 L₂。两套结构的精确映射仍 OPEN。Barad 的身份/边界比较不在本轮重审范围。
+- **结构层次**：SRT 显式区分 Selection occurrence、retained historical efficacy / sedimentation，并用 L₀ / L₁ / L₂ 组织开放性、显现与历史留存。2026-09-23 对 Epperson / Zafiris 的 Whiteheadian relational realism 定向核读已确认：actualized occasion 会成为后续 occasion 的 datum，并参与 global-history / later-conditioning；因此不能再把“一般性的 history / writeback 缺失”写成 Whitehead 侧的既定分叉。其 `subsequent` 在关键段落中首先是 logical / mereotopological，不能自动等同于 SRT 的 historical-retention / L₂ role。两套结构的精确映射仍 OPEN。Barad 的身份/边界比较不在本轮重审范围。
 - **代价约束**：SRT 把 payable friction / cost 作为显式负担。当前已核 FRR 段落尚不足以建立 Whiteheadian relational realism 是否存在与 SRT `Ψ_f`、维持代价、修订代价相同类型的对象；这里的结论是 **NOT YET ESTABLISHED / OPEN**，不是“过程哲学无等价描述”。Barad 的 `agential cut` 与维持代价关系亦未在本轮完成 source-native 重审。
 - **稳定域的独立性**：SRT 给予 L₂ 明确的 typed role，用于描述 prior Selection 继续作为约束、沉淀或历史对后续 Selection 保持效力。FRR 已明确具有 actualization → objective datum → later-conditioning / global formation，因此“Whitehead 无 L₂ 对应构念”这一 categorical verdict 撤回。仍待比较的是：FRR / Whiteheadian 结构是否与 SRT L₂ 精确同型，以及是否区分不同 persistence strength、revisability / resistance-to-revision 与 undoing cost。
 
