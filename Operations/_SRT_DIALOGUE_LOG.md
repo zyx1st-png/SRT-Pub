@@ -11,6 +11,25 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 # SRT 对话日志
 
+## 2026-09-23 CST（Epperson / FRR 外联校正）
+- 会话模式：收到 FRR 后的 source-grounded 定向陪读 + 对外 note 重写 + 比较债登记。
+- 已核：FRR PDF 106–108、181–182、220–224、281、386 等承重段落。
+- 关键修正：
+  1) FRR / Whitehead 不能再被概括为“没有 history/writeback”。actualized occasion 会进入后续 datum / global formation，并约束后续 local contexts；
+  2) FRR 的 “subsequent” 首先是 logical / mereotopological，不必然是 temporal；PDF 386 的 historical-process 表述先出现在空间拓扑模型，再 analogically transfer 到量子域；
+  3) subjective standpoint / local context、probability valuation、self-determination 必须区分，不能把 subjective aim 预先压成 SRT stake-bearing valuation；
+  4) SRT 当前公平对照必须包含 **finite-position-indexed subjectless Selection**，不能只强调 subjectless；
+  5) 当前主 comparative question 收窄为：FRR self-determination / concrescence 是否已经重构 primitive Selection occurrence 的 event-level burden。
+- 对外包：
+  - 旧 `2026-07-27_SRT_Minimal_Setup_Note_EN.md` = ARCHIVED / DO NOT SEND；
+  - 新 `2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md` = current draft；
+  - `2026-09-23_FRR_SRT_Focused_Reading_Note.md` = source-grounded comparison note。
+- 比较债（本 PR 只登记，不改 canonical / retained-support owners）：
+  - `Core_Law/SRT_L0_Philosophy_Bridge.md` §一的 Whitehead history / stable-domain 差异措辞需要 bounded re-audit；
+  - `Core_Law/SRT_Constitution_Seven_Theses.md` 的 “Whitehead 无 L2 对应构念”不能继续作为已定 verdict；
+  - 任何后续 owner correction 都必须保留：FRR 已有 later-conditioning ≠ FRR 已满足 SRT 全部 L2 / persistence / revisability / cost burdens。
+- 外部邮件：未发送；记录中的拟稿已改为明确收回 7 月邮件把 basal Selection 与 writeback 绑在一起的旧表述，并保留此前承诺的 persistence / resistance-to-revision 后续问题。
+
 ## 2026-07-27 CST（外部学者通信）
 - 会话模式：外部学者往来邮件归档 + 回信定稿 + 对外一页 note 成稿
 - 对象：Michael Epperson（CSU Sacramento，Consortium for Philosophy and the Natural Sciences）
@@ -26,7 +45,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   5) 明确同意"不需要新的动力学物理机制"
 - 当前判决：
   - 对方**明确否定**的只是"固定约束必然消灭新颖性"这一推论；他**未裁决**"这些约束是否穷尽 subjective aim"。因此原 disanalogy 只有一条分支缩小，**争点未整体消解**——aim 是否仍有不可约层位仍开放，见主问题 B。不得把前者转述为后者。
-  - 真正分叉仍在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一 已记录的三条（三域结构 / 代价约束 / L₂ 独立性），本轮回信未触及。
+  - **2026-07-27 historical judgment; superseded in part on 2026-09-23**：当时沿用 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一，把三域结构 / 代价约束 / L₂ 独立性视为真正分叉。FRR 后续全文核读已证明一般性的 history/writeback / later-conditioning 并不缺失；当前只保留 L2 精确映射、persistence/revisability/resistance、cost/friction 等更窄问题为 OPEN。
   - 对方关于层论形式化预言拓扑相位现象（Aharonov–Bohm / Berry）的主张，SRT 侧未核验，暂缓引用。
 - 追问结构（记录文档 §四，同日修订重排）：
   - **主问题 A**：结构预设是否构成实现化——他的"actuality is presupposed by the Boolean structure"是否只说"描述预设结果必确定"，还是也解释"这一个结果实际发生"。SRT 保留实现化为原始转换（P0-01）。
@@ -37,7 +56,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   - 主问题 A 与 `Core/SRT_OPEN_TENSIONS.md §13` 的**未执行**减法测试（GOV-SUB01 §8.1，residue status unassigned）相关。对方框架提供了一套相关竞争语汇，本轮询问是**外部竞争语汇压力探针**（帮助识别正式测试该查哪些差异），**不是**减法测试本身——真正的测试需删除原语并重构其全部角色。其回复无论正反都只登记为未来正式测试的**外部比较材料 / 压力输入**，不是测试结果；residue label 只能来自已执行的正式删除测试。
   - 主问题 B 引用的价值发生序仍是 `_SRT_D_VALUE_CANONICAL.md §2a` 的 P3 book-provenance 候选；外部学者认可**不构成** §2a.3 stake-gate 对账。
 - backlog：
-  - 回信已定稿（记录文档 §五），待发出；接受对方提供的 *Foundations of Relational Realism* PDF。
+  - **历史状态**：该回信已于 2026-07-27 发出；FRR PDF 已于 2026-09-21 收到。当前状态见下方 2026-09-23 条目。
   - 一页 SRT 最小设定英文 note **已成稿** → `01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md`（对承重陈述标注 P0–P4；未标注句为说明性文字；含"SRT 不主张什么"暴露节；发送前须删两个仓库内部块）。
   - 该书若确实表示次级问题的区分，走材料融合流程，不直接回写 bridge 文件。
 
