@@ -70,7 +70,7 @@ This is one reason I no longer want to identify Whiteheadian â€œsubjective aimâ€
 
 ## 4. Quantum measurement is a bridge, not a new collapse dynamics
 
-SRT does not presently propose an additional mechanical force that drives wave-function collapse. The quantum-measurement use of SRT is a bridge-level interpretation: a measurement event is a particularly sharp case in which open possibilities become a determinate, context-indexed actuality.
+SRT does not presently propose an additional mechanical force that drives wave-function collapse. The quantum-measurement use of SRT is a bridge-level interpretation: a measurement event is a particularly sharp case in which a non-preclosed generative situation becomes a determinate, context-indexed actuality.
 
 Our earlier exchange led me to the useful compression:
 
