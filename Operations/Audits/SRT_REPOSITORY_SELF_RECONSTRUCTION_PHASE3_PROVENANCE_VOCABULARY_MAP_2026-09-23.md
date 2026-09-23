@@ -76,34 +76,29 @@ A1-claimed = the record says "the author accepts / confirms", but neither an acc
 
 **E1 — derivation trace.** `SRT_GRG_DIALOGUE_DERIVATION_TRACE_RECONSTRUCTIBILITY_REACH_2026-09-22.md` attributes most moves to "the dialogue" or "the analysis". Author-originated moves: §3 (connecting the theory to the AI era) and §14 (the forgetting / reach question). Recorded acceptance events: §2 (re-objectification) and §27 (the narrow generative-debt definition). No comparable trace exists for the dialogue segments behind the first two 09-22 records.
 
-**E2 — author messages of 2026-09-23** (Claude Code session executing the Phase 2 closure of PR #1031), quoted verbatim.
-
-[A0-Q] Instruction authorizing the P0 boundary repair:
+**E2 — 2026-09-23 Phase 2 repair decision.** The bounded P0 repair wording was produced as a machine consolidation and then accepted / executed by the author. It is therefore **A1 acceptance evidence, not A0-Q author wording**. The accepted canonical-facing burden is:
 
 ```text
-删除 Core/SRT_Core_21_Minimal_Axioms.md 中
-“= an actual breaking of generative equivalence.”
+Selection occurrence
+!= retained historical efficacy / sedimentation / inheritance;
 
-P0 保留：
-Selection = genuine actualised non-neutral differentiation.
+terminal Selection remains genuine;
 
-不要用新的等价定义替代它。
-继续明确：
+arbitrary descriptive / modelled change
+!= Selection automatically;
+
 genuine actualised Selection
 vs merely descriptive / modelled change
-= OPEN。
+= OPEN.
 ```
 
-[A0-Q] Phase 2 closure instruction, restating the accepted criteria:
+The same accepted repair removed `= an actual breaking of generative equivalence` from P0 and deliberately did not replace it with a new equivalent definition. This confirms the bounded semantic direction at A1 strength; it does not convert the machine phrasing into direct author quotation.
 
-```text
-1. Selection occurrence 不再绑定 retained historical efficacy / sedimentation / inheritance；
-2. terminal Selection remains genuine；
-3. arbitrary descriptive / modelled change 不自动成为 Selection；
-4. anti-tautology distinction 保持 OPEN；
-```
+**E3 — preserved author wording for the forgetting / reach move.** The author's original conversational wording was:
 
-**E3 — Phase 1 execution report, relayed by the author on 2026-09-23.** It gives candidate original wording for the trace §14 question: “forgetting 是否就是垂直结构中 reach 去压平差异化”. The original dialogue is not in the repository, so this is an A0-Q candidate pending author confirmation.
+> **“认同，这不就是垂直结构中reach去压平的差异化吗。”**
+
+Its conversational antecedent was the discussion of generative forgetting / reach compression. This sentence is A0-Q. The derivation trace's English rendering — “Is generative forgetting not just the vertical structure using reach to flatten differences?” — is a faithful A0-P paraphrase, not a literal author quotation.
 
 ## 3. Item-level provenance map
 
@@ -119,63 +114,64 @@ reach record             = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH
 
 | Section | Typing | Evidence / note |
 |---|---|---|
-| §A term-of-art guard (not pre-given-option choice) | A1-claimed | consistent with pre-existing canonical P0-01 ("does not specify a prior chooser / a completed option set") and the 2026-09-14 Selection-totality calibration |
+| §A term-of-art guard (not pre-given-option choice) | M / inherited direction | section wording lacks an item-level acceptance event; its substance is consistent with the already author-owned 2026-09-14 Selection-totality guard |
 | §A retained-consequence occurrence criterion | SUPERSEDED | superseded at author level by the capacity / intervention-grammar record §A; removed from canonical owners in PR #1031 |
-| §B–§M (cuts, diffuse sediment, vertical loop, proxy, expectation, attractor, friction, support, higher-order, relation reorganization, lower-level autonomy, weak wholeward) | A1-claimed | no derivation trace for this segment; same-day revisions: §I support wording retyped neutral by the reach record §Q (see §5 row 9); §J capacity retention corrected by the capacity record §G |
-| §N BCTB methodological consequence | A1-claimed | the record itself keeps it "weaker than an author cancellation decision"; evidence lineage in §4 |
+| §B–§M (cuts, diffuse sediment, vertical loop, proxy, expectation, attractor, friction, support, higher-order, relation reorganization, lower-level autonomy, weak wholeward) | M | the record carries direction-level author acceptance, but no item-level acceptance event is preserved; same-day revisions: §I support wording retyped neutral by the reach record §Q (see §5 row 9); §J capacity retention corrected by the capacity record §G |
+| §N BCTB methodological consequence | M + evidence pointer | no item-level acceptance event is preserved; the independent T1 evidence lineage is recorded in §4 |
 | §O–§Q guards / OPEN / repository consequence / correction pointer | M | record structure |
 
 ### 3.2 `SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md`
 
 | Section | Typing | Evidence / note |
 |---|---|---|
-| §A occurrence != sediment != inheritance; terminal Selection genuine; descriptive change not automatically Selection; anti-tautology OPEN | A0-Q-confirmed (2026-09-23) | E2. Its wholeward-integration clause remains A1-claimed. Its identity "= actual breaking of generative equivalence" was explicitly **not** landed in P0 (E2) and stays source-level wording |
-| §B–§AA | A1-claimed | no trace for this segment |
-| §AB objectification closure | A1-claimed | trace §1 ("the dialogue began from a correction"); origin not stated |
+| §A occurrence != sediment != inheritance; terminal Selection genuine; descriptive change not automatically Selection; anti-tautology OPEN | A1 | E2 records author acceptance of the machine-consolidated Phase 2 repair at this bounded canonical-facing strength |
+| §A wholeward-integration clause + "= actual breaking of generative equivalence" wording | M / source-level | no item-level author wording or acceptance event is preserved for these exact formulations; the generative-equivalence identity was explicitly **not** landed in P0 |
+| §B–§AA | M | record-level directional acceptance may exist, but no item-level acceptance event is preserved |
+| §AB objectification closure | M | trace §1 says the dialogue began from a correction, but does not preserve author origin or acceptance for this exact section wording |
 | §AC re-objectification | A1 | trace §2: "The author accepted re-objectification as a higher-order generative capacity." |
-| §AD–§AE methodological core / architecture intuition | A1-claimed | |
+| §AD–§AE methodological core / architecture intuition | M | no item-level acceptance event preserved |
 | §AF–§AI guards / OPEN / repository consequence / pointer | M | record structure |
 
 ### 3.3 `SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md`
 
-Origin is taken from the trace wording: "author", "dialogue / analysis" (explicitly non-author), or "unstated".
+Origin is taken from the derivation trace. Item-level authority follows the four-class schema only; a record-level statement that “the author accepts” does not by itself upgrade machine-generated section wording.
 
-| Section | Trace | Origin | Acceptance evidence | Typing |
-|---|---|---|---|---|
-| §A AI changes the cost of reconstructibility | §3 | author | — | move A0-P; section wording A1-claimed |
-| §B reconstructible generative civilization | §4 | unstated | claimed only | A1-claimed |
-| §C unified grammar != one final model | §5 | dialogue | claimed only | A1-claimed |
-| §D progressive reconstructibility | §7 | dialogue | claimed only | A1-claimed |
-| §E minimum sufficient generative provenance | §6 | analysis | claimed only | A1-claimed |
-| §F provenance itself is Selection | §9 | dialogue | claimed only | A1-claimed |
-| §G provenance pluralism / distributed retention | §8 | dialogue | claimed only | A1-claimed |
-| §H generative redundancy | §10 | dialogue | claimed only | A1-claimed |
-| §I generative lineage / evidence independence | §11 | dialogue | claimed only | A1-claimed |
-| §J unresolved friction as memory | §12 | dialogue | claimed only | A1-claimed |
-| §K cumulative self-reconstruction | §13 | dialogue | claimed only | A1-claimed |
-| §L generative forgetting as reach compression | §14 | author | — | A0-P (trace English rendering); A0-Q candidate via E3 |
-| §M active vs latent reconstructive reach | §16 | dialogue | claimed only | A1-claimed |
-| §N healthy vs destructive compression | §15 | unstated | claimed only | A1-claimed |
-| §O higher-order depth | §17 | unstated | claimed only | A1-claimed |
-| §P vertical structure as reach architecture | §18 | analysis | claimed only | A1-claimed |
-| §Q proxy and support in reach dynamics | §19 | dialogue | claimed only | A1-claimed |
-| §R genuine vs supported equivalence | §20 | analysis | claimed only | A1-claimed |
-| §S memory / attention / forgetting through reach | §18 | analysis | claimed only | A1-claimed |
-| §T power as reach control | §21 | unstated | claimed only | A1-claimed |
-| §U failed cut != first exception | §24 | dialogue | claimed only | A1-claimed |
-| §V friction as exposed cost of maintained equivalence | §22–§23 | unstated | claimed only | A1-claimed |
-| §W parasitic vs integrative compensation | §25 | analysis | claimed only | A1-claimed |
-| §X friction conversion | §26 | unstated | claimed only | A1-claimed |
-| §Y generative debt (narrow definition) | §27 | dialogue-proposed | recorded: "The author accepted the narrow definition" | A1 |
-| §Z debt displacement | §28 | analysis | claimed only | A1-claimed |
-| §AA debt not automatically pathological | §29 | dialogue | claimed only | A1-claimed |
-| §AB borrowing present stability | — | "accepted in the dialogue" | claimed only | A1-claimed |
-| §AC wholeward more concrete | §30 | unstated | claimed only | A1-claimed |
-| §AD civilizational memory as multi-reach memory | — | — | claimed only | A1-claimed |
-| §AE AI-era risk | — | — | claimed only | A1-claimed |
-| §AF integrated chain | §31 | synthesis | — | M |
-| §AG civilization-scale synthesis | — | — | claimed only | A1-claimed |
-| §AH–§AJ guards / OPEN / repository consequence | — | record structure | — | M |
+| Section | Trace | Origin / acceptance evidence | Typing |
+|---|---|---|---|
+| §A AI changes the cost of reconstructibility | §3 | author-originated move; wording not preserved | A0-P for the move; section wording M |
+| §B reconstructible generative civilization | §4 | no item-level author wording / acceptance event preserved | M |
+| §C unified grammar != one final model | §5 | dialogue / analysis | M |
+| §D progressive reconstructibility | §7 | dialogue-proposed; no preserved item-level acceptance event | M |
+| §E minimum sufficient generative provenance | §6 | analysis | M |
+| §F provenance itself is Selection | §9 | dialogue / analysis | M |
+| §G provenance pluralism / distributed retention | §8 | dialogue / analysis | M |
+| §H generative redundancy | §10 | dialogue / analysis | M |
+| §I generative lineage / evidence independence | §11 | dialogue / analysis | M |
+| §J unresolved friction as memory | §12 | dialogue / analysis | M |
+| §K cumulative self-reconstruction | §13 | dialogue / analysis | M |
+| §L generative forgetting as reach compression | §14 | direct author wording preserved in E3; English trace is paraphrase | A0-Q for the Chinese author sentence; A0-P for the English rendering |
+| §M active vs latent reconstructive reach | §16 | dialogue-proposed; no preserved item-level acceptance event | M |
+| §N healthy vs destructive compression | §15 | origin / acceptance not preserved at item level | M |
+| §O higher-order depth | §17 | origin / acceptance not preserved at item level | M |
+| §P vertical structure as reach architecture | §18 | analysis | M |
+| §Q proxy and support in reach dynamics | §19 | dialogue / analysis | M |
+| §R genuine vs supported equivalence | §20 | analysis | M |
+| §S memory / attention / forgetting through reach | §18 | analysis | M |
+| §T power as reach control | §21 | origin / acceptance not preserved at item level | M |
+| §U failed cut != first exception | §24 | dialogue / analysis | M |
+| §V friction as exposed cost of maintained equivalence | §22–§23 | origin / acceptance not preserved at item level | M |
+| §W parasitic vs integrative compensation | §25 | analysis | M |
+| §X friction conversion | §26 | origin / acceptance not preserved at item level | M |
+| §Y generative debt (narrow definition) | §27 | dialogue-proposed; trace explicitly records author acceptance | A1 |
+| §Z debt displacement | §28 | analysis | M |
+| §AA debt not automatically pathological | §29 | dialogue / analysis | M |
+| §AB borrowing present stability | — | record says “accepted in the dialogue”, but no acceptance event is preserved | M |
+| §AC wholeward more concrete | §30 | origin / acceptance not preserved at item level | M |
+| §AD civilizational memory as multi-reach memory | — | no item-level provenance preserved | M |
+| §AE AI-era risk | — | no item-level provenance preserved | M |
+| §AF integrated chain | §31 | synthesis | M |
+| §AG civilization-scale synthesis | — | no item-level provenance preserved | M |
+| §AH–§AJ guards / OPEN / repository consequence | — | record structure | M |
 
 ### 3.4 Derivation trace
 
@@ -184,13 +180,31 @@ Keep intact. It is the only in-repository evidence of origin and acceptance for 
 ### 3.5 Summary
 
 ```text
-A0-Q-confirmed : capacity record §A (canonical-facing content), via E2
-A1 (recorded)  : capacity record §AC; reach record §Y
-A0-P           : reach record §A (move), §L (question; A0-Q candidate via E3)
-A1-claimed     : 71 sections (vertical-dynamics record 13, capacity record 29, reach record 29),
-                 plus the wording of reach record §A and the wholeward clause of capacity record §A
-M              : record-structure sections
+A0-Q
+= direct author wording preserved:
+  reach record §L / trace §14 Chinese sentence in E3.
+
+A0-P
+= author-originated move whose exact wording is not preserved:
+  reach record §A;
+  plus the English rendering of the §L question.
+
+A1
+= machine consolidation with a preserved explicit acceptance event:
+  capacity record §A canonical-facing Phase 2 repair subset (E2);
+  capacity record §AC re-objectification;
+  reach record §Y narrow generative-debt definition.
+
+M
+= remaining machine synthesis / section wording / record structure
+  where no item-level author wording or acceptance event is preserved.
+  Record-level directional acceptance may be noted, but does not upgrade item-level provenance.
+
+SUPERSEDED
+= the earlier retained-consequence occurrence criterion.
 ```
+
+`A1-claimed` is retained only as a historical audit-debt label in earlier drafts. It is **not** a fifth authority class and is not used as a final disposition here.
 
 ## 4. BCTB T1 evidence lineage (pointer; no landing)
 
@@ -244,7 +258,8 @@ a rerun, T2, or promotion of the benchmark result into theory authority.
 
 Preservation notes:
 
-- The execution ref is a branch without a PR ref. If it is deleted, the evidence commits can become unreachable. See D4.
+- Evidence-preservation ref: `archive/grg-bctb0-t1-evidence-20260922` -> `b393b46c64f172a4fba770982219b5249e32dded`. This archival branch exists only to keep the execution evidence reachable; it grants no theory authority, valid-core credit or T2 authorization.
+- The original execution ref may still be deleted later without losing reachability through the archival ref.
 - The R5 result uses `status: complete`, which is outside the frontmatter ratchet enum. A verbatim landing on main would require retyping its status, so this package records a pointer instead.
 
 ## 5. Vocabulary crosswalk — PROPOSED dispositions
@@ -254,16 +269,16 @@ Base: Phase 1 audit §6. Row 3 is added here. Row 7 stays DISTINGUISH; the "MERG
 | # | 2026-09-22 term | 09-22 source | Existing owner / vocabulary | Disposition | Note |
 |---|---|---|---|---|---|
 | 1 | Selection occurrence | capacity record §A | P0-03; Irreversibility A | INHERIT — LANDED (PR #1031) | |
-| 2 | sedimentation | capacity record §A; vertical-dynamics record §C | Irreversibility B (retained historical efficacy); L0 history; L₂ | INHERIT | canonical already writes "retained historical efficacy / sedimentation / L2-side history"; no new canonical term |
+| 2 | sedimentation | capacity record §A; vertical-dynamics record §C | Irreversibility B (retained historical efficacy); L0 history; L₂ | INHERIT / RETYPE | research shorthand under retained historical efficacy where later efficacy is established; do not create a second canonical owner |
 | 3 | generative retention | L0 permanent-distinction block (wording from the vertical-dynamics landing) | retained historical efficacy | INHERIT — LANDED in this package (§6.2) | |
 | 4 | generative asymmetry | capacity record §B | O0 non-maximal indifference + S0 actualising differentiation (L0 Quick Reference; 2026-09-14 O0 adjudication) | RETYPE: analytic face, not a second primitive | the source already says so |
-| 5 | friction: constitutive / boundary | vertical-dynamics record §H; capacity record §M; reach record §V | `Psi_f` ontological friction (`_SRT_PSI_F_CANONICAL.md`, Freeze-A) | DISTINGUISH | constitutive friction overlaps the `Psi_f` payability burden; boundary friction (the cost of maintaining an equivalence against returning mismatch) is a GRG research term, not canonical `Psi_f` and not automatically `Delta Psi_f` |
-| 6 | expectation | vertical-dynamics record §F | `E_G` (GRG v0.3); 2026-09-20 generative-expectation typing (B / C) | INHERIT | "reshapes reachability" stays research-level |
+| 5 | friction: constitutive / boundary | vertical-dynamics record §H; capacity record §M; reach record §V | `Psi_f` ontological friction (`_SRT_PSI_F_CANONICAL.md`, Freeze-A) | DISTINGUISH | both are GRG research terms; neither is automatically `Psi_f` or `Delta Psi_f`. Any mapping to canonical `Psi_f` requires an explicitly declared bridge and its own burden |
+| 6 | expectation | vertical-dynamics record §F | 2026-09-20 generative-expectation typing B + C0/C1; `E_G` in GRG v0.3 | ALIGN / INHERIT FROM B+C0/C1; DISTINGUISH FROM `E_G` | 09-22 structural / operative expectation may reshape reachability, but it is not automatically `E_G`. Reserve `E_G` for typed transformation expectation / classification relative to an admitted Generative Order; use projected `E_G` only under the separately typed Projected Order route |
 | 7 | generative inheritance | capacity record §A | X4c inherited reconstructed condition + carrier architecture | DISTINGUISH (no merge) | X4c is a carrier-explicit specialization requiring carrier + successor cohort + changed later possibility structure |
-| 8 | proxy | vertical-dynamics record §E; capacity record §Q | measurement proxy in the symbol table (`d`, `T_dir`) | DISTINGUISH | GRG proxy = operative generative partition / mediation |
+| 8 | proxy | vertical-dynamics record §E; capacity record §Q | measurement / operational proxy vocabulary in the symbol table and canonical owners (`d`, `T_dir`, domain projections) | RENAME + DISTINGUISH | prefer `generative proxy` / `GRG proxy` when ambiguity exists; GRG proxy = operative generative partition / mediation, not a measurement proxy |
 | 9 | support | vertical-dynamics record §I vs reach record §Q, §W | — | RETYPE to the neutral reach-record §Q definition; integrative vs parasitic as outcome classes | removes the "parasitic support" contradiction created by the success-defined wording |
 | 10 | generative reach | capacity record §R; reach record §M, §P | reachability; accessibility (`T_dir` accessibility index); propagation | KEEP AS RESEARCH TERM | representation OPEN (reach record §AI) |
-| 11 | reconstructibility | reach record §A–§K | provenance / retrieval mechanics (bounded retrieval protocol) | DISTINGUISH | the theory term is broader than retrieval |
+| 11 | reconstructibility | reach record §A–§K | provenance / retrieval mechanics (bounded retrieval protocol) plus earlier domain-specific reconstructibility usages | DISTINGUISH / QUALIFY | prefer `generative reconstructibility` where theory meaning could be confused with repository / data / empirical reconstructibility; the GRG research term remains broader than retrieval |
 | 12 | generative debt | reach record §Y | repository "debt" usages (reconciliation debt, canonical repair debt, GOV-SUB01 residuals) | DISTINGUISH | GRG research burden != repository work debt |
 
 ## 6. Canonical edits made in this package
@@ -277,13 +292,13 @@ Each is a separate commit, so any of them can be dropped.
 
 Not done (optional, author choice): a Spine §2.1 backlink "(typed owner: `Core_Law/SRT_Irreversibility.md` A / B)".
 
-## 7. Author decisions requested
+## 7. Author decisions applied in this corrective
 
-- **D1** Provenance of the 71 A1-claimed sections: confirm as A1 in bulk, per record, or reclassify as M with direction-level acceptance.
-- **D2** Confirm the E3 wording as the A0-Q for reach record §L / trace §14.
-- **D3** Vocabulary dispositions 1–12: accept, amend or reject.
-- **D4** T1 evidence preservation: protect the execution ref (for example a tag at `b393b46c`), or land a retyped copy of the R5 result later together with the #1027 disposition.
-- **D5** Keep or drop the canonical commits in §6.1–§6.3.
+- **D1 provenance**: do **not** bulk-upgrade the 71 former `A1-claimed` items. Final authority remains the four-class A0-Q / A0-P / A1 / M schema. Without a preserved item-level author wording or explicit acceptance event, machine section wording is M; record-level directional acceptance may be noted without upgrading item-level authority.
+- **D2 forgetting / reach**: the direct author quotation is `认同，这不就是垂直结构中reach去压平的差异化吗。` The English trace remains A0-P.
+- **D3 vocabulary**: rows 1–12 are adopted with the dispositions shown in §5 after the Phase 3 corrective. In particular, expectation is aligned to the 2026-09-20 B+C0/C1 typing but distinguished from `E_G`; generative inheritance remains broader than X4c; proxy is renamed / distinguished where ambiguous.
+- **D4 T1 evidence**: preserved through archival ref `archive/grg-bctb0-t1-evidence-20260922` at `b393b46c64f172a4fba770982219b5249e32dded`. Evidence preservation does not authorize T2 or confer theory credit.
+- **D5 canonical commits**: keep the L0 terminal-guard provenance correction, `generative retention -> retained historical efficacy` vocabulary correction and owner-version / Registry sync.
 
 ## 8. Constraint
 
