@@ -43,9 +43,7 @@ When a prior Selection does remain materially effective in the conditions of lat
 
 ```text
 Selection occurrence
-!= retained historical efficacy
-!= sedimentation
-!= generative inheritance.
+!= {retained historical efficacy / sedimentation / generative inheritance}.
 ```
 
 This distinction is important to SRT because “something happened” and “what happened continues to shape what can happen next” are different ontological burdens.
@@ -62,7 +60,7 @@ These are not separate worlds or substances. They are ways of distinguishing ope
 
 ## 3. Subjects, valuation, and agency are not presupposed at the base
 
-Primitive Selection is subjectless in SRT. A chooser, a stable self, valuation, and reflective agency are not required for every actualising event.
+Primitive Selection is **subjectless and finite-position-indexed** in SRT. Actual differentiation is therefore never a view from nowhere: it is indexed to a finite local relation or standpoint-condition. But finite positionality does not yet imply a formed One, Selection-position, subject, observer, valuation, or reflective agency.
 
 Stronger organizations may arise only when Selection becomes recurrently self-conditioning. SRT uses **One** for a relatively separable recurrent Selection-organization and **Selection-position** for its operative local “from-where.” Still stronger notions—stable standing, bearerhood, valuation, concern, and agency—carry additional conditions and are not inferred merely from the fact that Selection occurred.
 
@@ -70,7 +68,11 @@ This is one reason I no longer want to identify Whiteheadian “subjective aim�
 
 ## 4. Quantum measurement is a bridge, not a new collapse dynamics
 
-SRT does not presently propose an additional mechanical force that drives wave-function collapse. The quantum-measurement use of SRT is a bridge-level interpretation: a measurement event is a particularly sharp case in which a non-preclosed generative situation becomes a determinate, context-indexed actuality.
+SRT does not presently propose an additional mechanical force that drives wave-function collapse, and this note does not select a single quantum interpretation. The quantum-measurement use of SRT is a bridge-level interpretation: depending on the interpretation, the relevant realized fact may be read as exclusive outcome anchoring, branch-relative fact formation, or operational registration and conditioning.
+
+
+
+Operational evidence for a physical realisation is normally downstream: a record acquires intervention-relevant path efficacy, future reachability changes, or return costs become different. SRT uses such downstream effects to identify and test physical realisation candidates; it does **not** make later retention constitutive of primitive Selection occurrence.
 
 Our earlier exchange led me to the useful compression:
 
@@ -95,10 +97,7 @@ The strongest claim of this note is therefore not that SRT has found a missing p
 
 ```text
 actual occurrence
-!= historical retention
-!= recurrent formation
-!= valuation
-!= agency.
+!= {historical retention / recurrent formation / valuation / agency}.
 ```
 
-Whether relational realism draws the first of these distinctions in a way equivalent to SRT’s primitive Selection remains an open comparative question.
+Relational realism already distinguishes an occasion’s immediate becoming from its objective / superjective role as a datum for logically subsequent occasions. The open comparative question is narrower: whether its self-determined local contextualization, concrescence, and actualization already reconstruct the event-level burden SRT names **primitive Selection occurrence**.
