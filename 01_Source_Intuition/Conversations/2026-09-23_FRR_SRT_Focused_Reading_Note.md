@@ -77,6 +77,10 @@ SRT cannot claim a difference merely from "no prior chooser".
 
 ## 3. Source-derived：FRR 有清楚的 actualization -> later datum -> global formation
 
+### Chapter 3, printed pp. 133–134（PDF pp. 150–151）
+
+FRR 明确写到：past is closed、future is open；actualized quantum fact 对 logically/temporally subsequent predication 具有 causal efficacy，并把 universe as “enduring structure” 描述为随新 predicative facts 离散增补的 **serial historical evolution of totality**。这一段比单纯的 “subsequent datum” 更直接地支持 FRR 具有 global-history / historical-evolution 结构。
+
 ### Chapter 4, printed pp. 165–166（PDF pp. 181–182）
 
 FRR 明确说：actualized occasion 会作为 datum 与 subsequent occasions-in-process 发生 internal relation。但这里的 **subsequent 首先是 logical / mereotopological subsequence，并不必然是 temporal subsequence**；时空意义上的先后被作者视为这一更基础关系的特化。因此，不能把 FRR 的 subsequence 无限定地等同于 SRT 的时间性 L2 / T_dir 结构。
