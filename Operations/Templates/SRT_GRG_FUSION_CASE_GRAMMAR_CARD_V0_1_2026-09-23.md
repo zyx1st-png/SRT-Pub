@@ -14,6 +14,9 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CARD_FRR_REFINEMENT_2026-09-23.md
   - 01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_CARD_FRR_2026-09-23.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
+  - Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md
+  - Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
   - Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -29,6 +32,8 @@ tags: [GRG, GrammarCard, Template, FusionCase, SourceNative, Reconstructibility,
 > Positive GRG maturity / transfer credit continues to use the live M0–M5 framework, strongest reasonable horizontal baseline, mature-neighbor pressure when required, and the existing M4-E0 absorption-before-execution gate. Card-local labels cannot bypass those owners.
 >
 > Primary discipline: **source-native first, GRG second**.
+>
+> 2026-09-23 method correction: this Card is a **late audit / mapping overlay**, not the primary engine for discovering a domain's grammar. For cross-objectification work, first use the Cross-Objectification Reconstruction Record and Anti-Drift Protocol. Do not begin by asking which domain object corresponds to which GRG object.
 
 ## 0. Hard guards
 
@@ -85,6 +90,38 @@ Division of labour:
 - Card screening `!=` SEA pass;
 - SEA pass `!=` canonical proof of primitive Selection;
 - SEA consequence-bearing / historical-efficacy gates must not be imported as necessary conditions for primitive Selection occurrence, because terminal Selection remains canonically possible.
+
+### Cross-objectification reconstruction gate
+
+Before using this Card for any positive cross-domain grammar claim, record:
+
+~~~text
+cross-objectification reconstruction record:
+mode:
+  DISCOVERY / TEST
+
+source-native reconstruction complete?:
+GRG-label deletion test:
+  PASS / PARTIAL / FAIL
+
+domain-native generative reconstruction complete?:
+coherence / missing-relation result:
+grammar candidate status:
+  NONE / DISCOVERY-CANDIDATE / TEST-FROZEN
+
+mapping performed only after reconstruction?:
+  YES / NO
+~~~
+
+Rules:
+
+- zero natural GRG-object correspondence is allowed;
+- mapping count is not evidence;
+- a DISCOVERY-generated candidate cannot receive independent recurrence credit from the same case;
+- if the source-native reconstruction cannot stand after GRG labels are removed, stop positive grammar claims and reopen the source / lens;
+- if mature source practice already owns the claimed relation / distinction, record absorption rather than rescuing the gain through a more abstract GRG label.
+
+The Card may still be used without a positive grammar candidate to preserve failed mappings, type mismatch, non-identity and schema pressure.
 
 ### Card authority guard
 
@@ -686,9 +723,13 @@ next bounded action:
 
 Recommended order:
 
-`source-native reading -> source reconstruction -> Card fill -> non-identity audit -> anti-metaphor test -> generative expectation -> failure/reopening condition -> Card outcome -> cross-card reconciliation`.
+`source-native reading -> source reconstruction -> Cross-Objectification Reconstruction Record -> domain-native generative reconstruction -> coherence / missing-relation search -> candidate status -> GTS / TEST route if warranted -> Card fill as late audit -> non-identity / projection / anti-metaphor / absorption audit -> Card outcome -> cross-case reconciliation`.
 
 Do not begin with a target GRG conclusion.
+
+Do not use this Card to discover the source's object inventory or primary generative relation.
+
+If no natural GRG-object mapping is useful after reconstruction, record that result and leave the relevant Card mapping fields empty / N.A.
 
 Do not force a full Card in one pass.
 
@@ -698,7 +739,15 @@ Stop when the source evidence no longer supports the next field.
 
 # 22. Cross-card reconciliation
 
-After at least two sufficiently developed fusion cases that have each paid the baseline block and produced a case-level closeout, compare Cards on:
+After at least two sufficiently developed fusion cases that have each produced an adequate Cross-Objectification Reconstruction Record and case-level closeout, reconcile **reconstruction results first**:
+
+- domain-native generative relations reconstructed in each case;
+- coherence / missing-relation findings;
+- candidate relations that survived or failed legitimate recuts;
+- source-owned explanations that absorbed the proposed gain;
+- pressures that split / remove / retain GRG working objectifications.
+
+Only then compare Cards as late audit surfaces on:
 
 - fields that repeatedly carry the same generative role;
 - fields that are repeatedly empty;
@@ -708,7 +757,7 @@ After at least two sufficiently developed fusion cases that have each paid the b
 - opportunities to remove redundant fields;
 - whether a transferable generative expectation survives without ad hoc retuning.
 
-Cross-card reconciliation is allowed to:
+Cross-case reconciliation is allowed to:
 
 - revise the Card;
 - demote a GRG term;
