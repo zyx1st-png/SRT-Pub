@@ -73,7 +73,7 @@ M    = machine synthesis / section wording lacks item-level author quotation or 
 
 The authority dispositions in this audit must **not** be used as retrieval demotions.
 
-A section typed `M` remains machine synthesis for authority purposes. If the author explicitly accepted / approved / adopted / continued the surrounding analysis package, the non-superseded machine analysis is continuation-load-bearing by default under the later repository continuity rule in `AGENTS.md` / `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
+A section typed `M` remains machine synthesis for authority purposes. If the author explicitly accepted / approved / adopted / continued the surrounding analysis package, the non-superseded machine analysis has required retrieval value for continuation by default under `AGENTS.md` / `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
 
 Therefore:
 
@@ -83,7 +83,7 @@ M authority
 != safe to ignore
 ```
 
-Package-level acceptance still does **not** upgrade item-level wording to A1. It does, however, preserve the accepted reasoning as required continuation context unless a later record explicitly narrows, rejects, retires or supersedes it.
+Package-level acceptance still does **not** upgrade item-level wording to A1. It does, however, keep the accepted reasoning at high retrieval value unless a later record explicitly narrows, rejects, retires or supersedes it.
 
 Earlier Phase 3 drafting used `A1-claimed` as a temporary audit-debt marker for records that said "the author accepts / confirms" without preserving an item-level event. It is **not** an authority class. Final dispositions in this file resolve those items into A0-Q / A0-P / A1 / M. A source-intuition location or record-level directional acceptance does not by itself upgrade machine wording into author authority.
 
