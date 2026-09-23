@@ -52,13 +52,19 @@ It contains only assistant-visible dialogue analysis and explicit author-directi
 
 The merged Phase-3 provenance owner correctly separates direct author wording from machine synthesis.
 
-This recovery adds a second, orthogonal axis for retrieval only:
+This recovery distinguishes a second, orthogonal axis for retrieval only.
+
+**Default rule after the later author correction:**
+
+> when the author explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content is continuation-load-bearing by default.
+
+An explicit `continuity_role` field is optional metadata, not an admission gate.
 
 | continuity role | meaning |
 |---|---|
-| `LOAD_BEARING` | later sessions cannot correctly reconstruct the accepted research direction without this node |
+| `LOAD_BEARING` | later sessions cannot correctly reconstruct the accepted research direction without this node; this is also the default for author-accepted non-superseded machine analysis |
 | `SUPPORTING` | important explanatory or methodological development, but not required to identify the programme's current centre |
-| `EXPLORATORY` | preserved hypothesis / extension that should not pre-shape unrelated domain work |
+| `EXPLORATORY` | explicit demotion for a preserved hypothesis / extension that should not carry the broader continuation |
 | `SUPERSEDED` | historically important but later corrected, narrowed or retired |
 
 This axis:
@@ -66,7 +72,9 @@ This axis:
 - is **not** a provenance authority class;
 - does not turn M into A1;
 - does not create canonical authority;
-- prevents `M`, `parked` or `downstream` from being misread as `safe to ignore`.
+- does not require every accepted file to carry a `continuity_role` tag;
+- prevents `M`, `parked`, `downstream`, `companion` or `canonical: false` from being misread as `safe to ignore`;
+- allows explicit later narrowing / rejection / supersession to control semantics while preserving the earlier analysis as provenance.
 
 ## 2. Primary source boundary
 
