@@ -3,7 +3,7 @@ id: SRT-GENERATIVE-ONTOLOGY-SPINE
 type: theory
 tags: [Ontology, GenerativeSpine, Selection, Manifestation, History, One, Position, Bearer, Normativity]
 status: active
-version: v3
+version: v4
 layer: L0-L2
 epistemic_layer: os
 claim_mode: canonical
