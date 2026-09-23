@@ -9,10 +9,11 @@ epistemic_layer: operations
 claim_mode: audit
 canonical: false
 dependency:
-  - SRT-TERM-ROUTER
+  - SRT-GLOSSARY-LIVE-TERM-ROUTER
   - SRT-GLOSSARY
   - SRT-SYMBOL-TABLE
   - SRT-AGENT-RETRIEVAL-PROFILE
+  - SRT-GOV-SUB01-SUBTRACTIVE-AUDIT
   - SRT-GENERATIVE-ONTOLOGY-SPINE
   - SRT-GRG-FOUNDATIONAL-PROTO-GRAMMAR-V0-3-20260921
 ---
@@ -21,614 +22,458 @@ dependency:
 
 ## 0. Scope
 
-This is the first bounded terminology census after the post-#1042 governance repair.
+This is the first bounded terminology census after #1042.
 
 Question:
 
-> Is the repository repeatedly creating new words for already-owned explanatory burdens, and what semantic-routing infrastructure is needed before any bulk terminology cleanup?
+> Is the repository repeatedly creating new labels for already-owned or partly-owned explanatory burdens, and what routing is needed before any normalization?
 
-Verdict:
+Current verdict:
 
 ~~~text
-existing glossary = YES
-existing symbol registry = YES
-live semantic term router = NO before this PR
+historical glossary = YES
+canonical symbol registry = YES
+subtractive mechanism/operator governance = YES (GOV-SUB01)
+bounded vocabulary/provenance audits = YES
+live alias / overlap / owner routing inside the glossary entry = MISSING before #1043
 duplicate / overloaded terminology risk = REAL
 bulk rename now = NOT ADVISED
-dynamic router + bounded normalization = ADVISED
 ~~~
 
-This audit is noncanonical and does not redefine any SRT / GRG term.
+This audit is noncanonical. It does not redefine SRT / GRG terms and does not authorize canonical edits.
 
-It does not:
+Explicit non-actions:
 
-- edit canonical theory owners;
-- rewrite historical dialogue / source-intuition records;
-- change GRG v0.3;
-- create a new canonical glossary;
-- make working labels permanent;
-- perform the accepted-analysis re-entry audit;
-- thin the Generative Ontology Spine.
+- no bulk rename;
+- no historical-provenance rewrite;
+- no canonical owner edit;
+- no Spine thinning;
+- no #1039 edit;
+- no new GRG candidate.
 
-Those later tasks remain separately reviewable.
+## 1. Existing infrastructure and the actual gap
 
----
+### 1.1 Historical glossary
 
-## 1. Existing terminology infrastructure
+`SRT_Glossary.md` is a large mixed historical / retrieval source, with connector routing through `Glossary/README.md`.
 
-### 1.1 SRT_Glossary.md
+It is valuable for lineage and search, but it is not a compact answer to:
 
-Observed current main:
+> “Is this new proposed term already carried by an active owner?”
+
+### 1.2 Canonical symbol registry
+
+`_SRT_SYMBOL_TABLE.md` owns symbol / notation governance.
+
+It is intentionally not a general concept-term deduplication surface.
+
+### 1.3 Phase-3 vocabulary / provenance audit
+
+`Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md` already records important distinctions and collision guards around the 09-22 GRG records.
+
+It is bounded audit provenance, not a standing live lexical router.
+
+### 1.4 GOV-SUB01 already owns subtraction / “is this really new?” for mechanisms
+
+`Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §1` already requires subtraction before:
+
+- new core symbols / operators / layers / thresholds / named mechanisms;
+- irreducibility claims;
+- residual-to-new-entity moves;
+- rename-only simplification claims.
+
+§7.4 further guards against hidden reparameterization / renamed terms.
+
+Therefore #1043 must **not** claim that the repository lacked all novelty / duplication governance.
+
+The actual gap is narrower:
+
+> a small, revisable lexical-semantic router inside the existing Glossary entry that catches alias / overload / partial-overlap problems **before** a proposed term reaches GOV-SUB01 or GRG candidate admission.
+
+That role is now:
+
+`Glossary/README.md -> Glossary/SRT_Live_Term_Router.md`.
+
+This satisfies the repository's navigation “one in / one out” rule: no new root-level index/router entry is created.
+
+## 2. Relationship among the three classification systems
+
+Do not merge these vocabularies.
+
+| System | Question | Output role |
+|---|---|---|
+| Live Term Router | Is the wording an alias, overload, partial overlap, distinct burden, or working label? | lexical / semantic triage |
+| GOV-SUB01 | Does a named mechanism/operator/component survive subtraction / replacement testing? | mechanism / component governance |
+| current GRG owner-overlap protocol | Is a putative GRG candidate already inherited / realized / reorganized / absorbed, or is a residual candidate left? | GRG programme admission |
+
+Flow:
 
 ~~~text
-lines ≈ 2224
-role = mixed historical glossary / retrieval source
-canonical authority = subordinate to current canonical anchors
-connector-safe route = Glossary/README.md + shards
+working label
+-> term-router lexical check
+-> if still DISTINCT_BURDEN and proposed as named mechanism/operator:
+     GOV-SUB01
+-> if also a GRG candidate:
+     current GRG owner-overlap / absorption gate
 ~~~
 
-Strength:
+The Term Router is not a substitute for either downstream audit.
 
-- rich historical coverage;
-- many aliases / concepts already present;
-- useful retrieval source.
+## 3. Census method
 
-Limitation for current research:
+This pass is a **bounded semantic census**, not an exhaustive corpus-frequency count.
 
-- contains historical and superseded formulations;
-- is not optimized for “should I invent a new term now?”;
-- does not provide a compact active owner / alias / collision decision surface.
+For each high-risk family it records:
 
-### 1.2 _SRT_SYMBOL_TABLE.md
+- current owner(s);
+- representative repository instances;
+- likely alias / overload / partial-overlap risk;
+- maturity caveat.
 
-Observed current main:
+Independent review should treat owner files as controlling and the census as routing evidence only.
 
-~~~text
-lines ≈ 206
-role = canonical symbol registry
-~~~
+## 4. High-risk terminology families
 
-Strength:
+### T1 — Selection occurrence / actualisation / retained history / sedimentation / inheritance
 
-- exact glyph / notation governance;
-- namespace and symbol-scope protection.
+Representative instances:
 
-Limitation:
-
-- intentionally does not solve ordinary concept-term duplication;
-- many important GRG / source-intuition terms have no symbols and should not gain symbols merely to be governed.
-
-### 1.3 Phase-3 vocabulary map
-
-The Phase-3 provenance / vocabulary audit already identified several collisions and distinctions around 2026-09-22 GRG material.
-
-Strength:
-
-- proves vocabulary conflict is already a recognized repository problem.
-
-Limitation:
-
-- bounded to one reconstruction phase;
-- not a standing live term-admission surface.
-
-### 1.4 Gap
-
-The missing layer was therefore not “a glossary” in general.
-
-The missing layer was:
-
-> a small, revisable, non-authoritative semantic router that answers owner / alias / overlap / collision questions before a working label hardens into repo-wide terminology.
-
-This PR adds that layer as:
-
-_SRT_TERM_ROUTER.md
-
----
-
-## 2. Census method
-
-This pass inspected current-main routing and owner surfaces, especially:
-
-- Core_Law/SRT_Generative_Ontology_Spine.md
-- Core_Law/SRT_One_Formation.md
-- _SRT_SYMBOL_TABLE.md
-- SRT_Glossary.md
-- STATUS.md vocabulary guards
-- Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-- 2026-09-22 capacity / intervention grammar record
-- 2026-09-22 reach / reconstructibility / generative debt record
-- post-#1041 / #1042 corrective records.
-
-Classification:
-
-~~~text
-ALIAS_SAME_BURDEN
-OVERLOADED_SAME_NAME
-PARTIAL_OVERLAP
-DISTINCT_BURDEN
-WORKING_LABEL_ONLY
-~~~
-
-This is a semantic triage, not an exhaustive word-frequency count.
-
-A full historical corpus census can be run later if the initial router survives review.
-
----
-
-## 3. High-priority duplication / collision findings
-
-### T1 — Selection occurrence / actualisation / retained consequence / history
-
-Current owner discipline already requires:
-
-~~~text
-Selection occurrence
-!= retained historical efficacy
-!= sedimentation
-!= inheritance
-~~~
+- `SRT_AI_START.md:43–49` — actualised Selection; occurrence != sediment / retained history / inheritance.
+- `Core_Law/SRT_Generative_Ontology_Spine.md:124–133` — occurrence != retained historical efficacy / sedimentation; terminal Selection remains genuine.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md §A / §C–D` — same-day correction plus “actualisation of capacity”.
 
 Risk:
 
-- “actualisation” can mean actual Selection occurrence in one discussion and actualisation of a capacity in another;
-- historical records sometimes use consequence / sediment language close to occurrence.
+“actualisation” is used for at least two nearby burdens:
 
-Disposition:
-
-PARTIAL_OVERLAP / MUST QUALIFY.
+~~~text
+actualising Selection occurrence
+vs
+actualisation of an already distinguished capacity
+~~~
 
 Recommendation:
 
-- “Selection occurrence” for the event burden;
-- “actualisation of capacity” only when a prior capacity distinction is explicitly in scope;
-- “retained historical efficacy / history” for later-effect burden.
-
-No bulk historical rewrite.
+Do not globally normalize. Always qualify which burden is meant.
 
 ### T2 — One / Selection-position / perspective / Stable ISP / Bearer
 
-Current canonical owners already contain strong non-identity guards.
+Representative instances:
+
+- `Core_Law/SRT_One_Formation.md:80–82` — One = formed process-unity through a relatively separable Selection-mediated vertical reconstitution path; stronger than generic causal recurrence.
+- `Core_Law/SRT_One_Formation.md:168–184` — Selection-position = time-local operative from-where of an already formed One.
+- `Core_Law/SRT_Generative_Ontology_Spine.md:260, 297, 353` — One self-conditioning, Selection-position, Bearer gate.
 
 Risk:
 
-- conversational terms such as position, perspective, stable position, bearer-position can make the ladder look like synonyms.
-
-Disposition:
-
-DISTINCT_BURDENS.
+Conversational terms “position / perspective / stable position / bearer-position” can appear synonym-like even though owners explicitly separate them.
 
 Recommendation:
 
-Router must make this one of the first high-risk families.
-
-No normalization by collapsing terms.
+DO NOT COLLAPSE. Route to exact owner before introducing another “position”-family term.
 
 ### T3 — proxy
 
-Observed object families include:
+Representative instances:
 
-- GRG generative proxy;
-- measurement proxy;
-- operational proxy;
-- domain proxy;
-- representation-like uses.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md §E` — proxy as selective compression.
+- `...GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR... §Q` — proxy as operative generative partition.
+- `...GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT... §Q` — proxy vs support in reach dynamics.
+- `STATUS.md:144` — GRG proxy != measurement / operational proxy automatically.
 
-Current STATUS already says:
+Risk:
 
-~~~text
-generative / GRG proxy
-!= measurement / operational proxy
-~~~
-
-Disposition:
-
-OVERLOADED_SAME_NAME.
+Same word spans GRG, measurement and operational contexts.
 
 Recommendation:
 
-Require qualification when “proxy” carries an inferential burden.
-
-Do not invent a single universal Proxy definition.
+QUALIFY / NAMESPACE; no universal Proxy definition.
 
 ### T4 — reconstructibility / reconstruction / recoverability
 
-Observed meanings include:
+Representative instances:
 
-- GRG generative reconstructibility;
-- source-native reconstruction;
-- structural reconstruction;
-- repository reconstruction;
-- dialogue / semantic recoverability.
+- `...GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT... §§A–K` — generative reconstructibility.
+- `Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md §9` — reconstruction-output view.
+- `Operations/Audits/SRT_GRG_POST1041_OPUS_REVIEW_CORRECTIVE_AUDIT_2026-09-24.md §8` — repository / dialogue recovery must not be redescribed as GRG reconstructibility.
 
-#1042 already corrected one important misuse: repository prompt failure should not be described as evidence for GRG reconstructibility.
+Risk:
 
-Disposition:
-
-OVERLOADED_SAME_NAME + NEAR-ALIAS RISK.
+Ordinary workflow recovery can be mistaken for evidence about a GRG research construct.
 
 Recommendation:
 
-- reserve “generative reconstructibility” for the GRG research burden;
-- use “reconstruction” only with an object qualifier;
-- use “repository / dialogue recoverability” for workflow recovery;
-- avoid “semantic reconstructibility” for repository/session continuity.
+Use object-qualified “reconstruction”; reserve “generative reconstructibility” for the GRG burden; use repository/dialogue recoverability for workflow.
 
 ### T5 — reach / reachability / accessibility
 
-Observed families:
+Representative instances:
 
-- active generative reach;
-- latent reconstructive reach;
-- source/model reachability;
-- accessibility of capacity.
+- `SRT_AI_START.md:43` — reachable possibilities can themselves be generated through Selection.
+- `Selection Vertical §F:197–217` — expectation reshapes reachability.
+- `capacity §R:590+` — generative reach parent burden.
+- `reach §M:468+` — active vs latent reconstructive reach.
+- `capacity §D:190+` — accessibility appears in the capacity split.
 
 Risk:
 
-A domain’s reachable set can be mislabeled “reach” and silently imported into GRG.
-
-Disposition:
-
-PARTIAL_OVERLAP.
+“reachability” already has author/canonical-facing use; it is not merely a domain word. “reach”, “reachability” and “accessibility” partially overlap but are not licensed as synonyms.
 
 Recommendation:
 
-Always qualify:
-- active generative reach;
-- latent reconstructive reach;
-- model/source reachability;
-- capacity accessibility.
+Always route by burden and owner. Do not map model reachable-set structure directly to GRG reach.
 
 ### T6 — capacity / availability / accessibility / actualisation
 
-The 09-22 capacity record explicitly introduced this split.
+Representative instances:
 
-Risk:
+- `capacity §C:154+` — generative capacity.
+- `capacity §D:190+` — lists capacity / availability / accessibility / actualisation.
+- `capacity §D:201+` — contrasts capacity with proxy/support-blocked access.
 
-Later machine analyses may recompress the four burdens into “capacity” or invent new labels for a subset.
+Finding:
 
-Disposition:
-
-DISTINCT_BURDENS / RETAIN CURRENT SPLIT.
+The owner **names** all four labels, but “availability” is not independently defined strongly enough to support a hard four-way ontology.
 
 Recommendation:
 
-Before naming any new capacity-like term, compare it against all four.
+- keep capacity / accessibility / actualisation distinctions where owner text supports them;
+- mark availability as UNDER-SPECIFIED;
+- do not invent a stronger definition in the Router.
 
 ### T7 — object / relation / cut / objectification / re-objectification / recut
 
-Current GRG direction treats object and relation as cuts.
+Representative instances:
+
+- `Selection Vertical §B:82+` — object and relation are cuts.
+- `capacity §I:324+` — identity / role / capacity / dependency are also cuts.
+- `capacity §AB–AC:868+` — objectification closure and re-objectification.
 
 Risk:
 
-- “cut”, “objectification”, “compression”, “coarse-graining” and “proxy” can be used as if interchangeable;
-- “recut”, “re-objectification” and “reconstruction” can also drift together.
-
-Disposition:
-
-PARTIAL_OVERLAP FAMILY.
+“cut”, “objectification”, “compression”, “coarse-graining”, “recut”, “re-objectification” and “reconstruction” can drift into one undifferentiated family.
 
 Recommendation:
 
-Do not force one synonym.
+Keep as PARTIAL OVERLAP; owner text must decide exact use.
 
-Route by burden:
-- cut = bounded distinction / partition;
-- objectification = stabilization / organization of a cut;
-- re-objectification / recut = reopening and forming a different cut;
-- reconstruction = qualified analytic process, not automatically a new cut.
+### T8 — equivalence / neutrality / supported / subsidized equivalence
 
-These are router descriptions only; exact authority remains with owners.
+Representative instances:
 
-### T8 — equivalence / neutrality / supported equivalence / subsidized equivalence
-
-Observed progression:
-
-- bounded generative equivalence;
-- neutrality / treating differences as equivalent for a burden;
-- supported / subsidized equivalence.
+- `capacity §K:400+` — bounded intervention-relative generative equivalence.
+- `reach §R:608+` — genuine vs supported/subsidized equivalence.
+- downstream / Card work also uses neutrality language.
 
 Risk:
 
-New “neutrality” terms can simply redescribe support-dependent equivalence.
-
-Disposition:
-
-PARTIAL_OVERLAP / OWNER CHECK REQUIRED.
+A new “neutrality” term can simply redescribe support-dependent equivalence.
 
 Recommendation:
 
-Future new terms in this family must say what burden is not already paid by generative equivalence + support.
+Before hardening a neutrality/equivalence term, state the burden not already paid by equivalence + support.
 
-### T9 — friction / cost / support / compensation / debt / Psi_f
+### T9 — support / compensation / friction / debt / Psi_f
 
-Current records already warn that friction cannot be a universal explanation word.
+Representative instances:
 
-Risk:
+- `Selection Vertical §H:241+` — friction as maintenance cost + transformation pressure.
+- `Selection Vertical §I:267+` — support = generativity-restructuring, not resource provision.
+- `reach §Q:580+` — proxy vs support.
+- `reach §W:775+` — parasitic vs integrative compensation/support.
+- `reach §V:749+` — cost of maintaining current equivalence.
+- `SRT_Glossary.md:2188+` — historical `Psi_f^maint` “maintenance friction”.
+- `STATUS.md:145,147` — GRG friction != Psi_f automatically; GRG debt != repository debt.
 
-- GRG boundary / constitutive friction can be conflated with canonical Psi_f;
-- generative debt can be conflated with repository debt or generic cost;
-- compensation/support can become new names for the same dependency.
+Important unresolved collision:
 
-Disposition:
-
-OVERLOADED FAMILY.
+`Psi_f^maint` is semantically close to reach §V “cost of maintaining current generative equivalence”, but identity is **not established**.
 
 Recommendation:
 
-Namespace before use; do not infer identity from ordinary-language similarity.
+Add explicit routing guard; do not merge without owner reconciliation.
 
-### T10 — expectation / prediction / Generative Expectation / normativity
+### T10 — prediction / expectation / E_G / normativity
 
-Current GRG v0.3 has typed outputs P_G and E_G.
+Representative instances:
 
-Current STATUS already says:
+- `Selection Vertical §F:197+` — prediction and expectation are different; expectation reshapes reachability.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md §§2–5` — structural generative expectation and normativity route.
+- `GRG v0.3 §§13–15` — P_G, Generative Order, E_G.
+- `STATUS.md:143` — structural/operative expectation != E_G automatically.
+
+Correction to the first census:
+
+Normativity is **not** an ownerless routing question. The 09-20 author adjudication already owns a bounded route:
 
 ~~~text
-structural / operative generative expectation
-!= E_G automatically
+structural generative expectation
+-> indexed comparison
+-> normative direction
+while
+complete moral ought / legitimacy remains NOT ESTABLISHED
 ~~~
-
-Risk:
-
-Conversational “expected continuation”, “generative expectation” and “normativity” can be treated as one object.
-
-Disposition:
-
-DISTINGUISH.
 
 Recommendation:
 
-Use E_G only when its v0.3 admission burden is intended.
-
-Keep normativity as a further routing question, not a lexical synonym.
+Router must point there rather than inventing a new expectation/normativity bridge.
 
 ### T11 — wholeward / higher-order / integration / hierarchy / composition
 
-Current v0.3 says wholeward integration requires additional real dependency inclusion and cannot gain authority by scale alone.
+Representative instances:
 
-Risk:
+- `Selection Vertical §J:291+` — higher-order = broader generative integration, not merely “more hierarchical”.
+- `Selection Vertical §M:360+` — weak wholeward direction.
+- `capacity §§F–G:251+` — regeneration / transformation / wholeward gain distinction.
+- `reach §AC:970+` — wholeward sharpened through friction conversion / reconstructive reach.
+- `GRG v0.3 §17:759+` — programme wholeward direction.
 
-A new term for “higher-order” can repeatedly redescribe hierarchy / composition without added burden.
+Correction:
 
-Disposition:
-
-OWNER CHECK REQUIRED.
+The first router cited v0.3 §16. Correct section is **§17**.
 
 Recommendation:
 
-Any new higher-order term must state why wholeward / composition / reorganization do not already carry it.
+Do not use a new higher-order term unless it states why current wholeward / composition / reorganization language is insufficient.
 
 ### T12 — GTS / relation record / operator / grammar candidate
 
-Current v0.3 makes GTS the primary bounded record unit, not an ontic entity.
+Representative instances:
+
+- `GRG v0.3 §8:304+` — GTS as primary bounded record unit.
+- `GRG v0.3 §11:471+` — composition.
+- current post-#1042 protocol/template — candidate extraction only after owner overlap leaves a residual.
 
 Risk:
 
-A machine sees a recurrent source process and names:
-- a new operator;
-- a new relation;
-- a new grammar object;
-when the result is only a GTS description or an inherited burden.
-
-Disposition:
-
-ADMISSION-GATED.
+Machine analysis may name a “new operator / relation / grammar” when it has only described a source process in GTS terms.
 
 Recommendation:
 
-Owner/neighbor absorption before new naming:
-INHERIT / REALIZATION / REORGANIZATION / NO_GRG_GAIN / RESIDUAL_CANDIDATE.
+Term Router may say DISTINCT_BURDEN provisionally, but that is not candidate retention. Route onward to GOV-SUB01 if it is a named mechanism/operator and to GRG owner-overlap if it is a GRG candidate.
 
-Only a residual candidate can justify a new grammar term.
+## 5. Recent collisions already resolved by #1042
 
----
+These are examples, not a second owner vocabulary.
 
-## 4. Recent examples where vocabulary governance already prevented duplication
+| Old / working wording | Current routing | Owner |
+|---|---|---|
+| dual reconstruction | plain source-cut + GRG-cut reconstruction | post-#1042 corrective audit / protocol |
+| continuity_role fourth axis | retired; use authority + retrieval value + currentness | #1042 corrective audit |
+| CALIBRATION as generic disposition | do not reuse generically | #1042 + existing framework-vs-calibration meaning |
+| L1/L2/L3/L4 writeback layers | retired due canonical namespace collision | #1042 corrective audit |
 
-The post-#1041 corrective work supplied useful examples:
+The Live Term Router should point to these decisions, not duplicate the active GRG result/action lists.
 
-### 4.1 dual reconstruction
+## 6. Bare “继续” is retrieval semantics, not term governance
 
-Problem:
+The same PR also preserves the author's clarification that bare continuation often implies directional acceptance.
 
-Name collision / conceptual proximity with existing dual reconstructibility.
+Owner:
 
-Current route:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`.
 
-~~~text
-source-cut + GRG-cut reconstruction
-~~~
-
-Disposition:
-
-WORKING_LABEL_ONLY / RETIRE AS TERM-OF-ART.
-
-### 4.2 continuity_role
-
-Problem:
-
-Duplicated existing retrieval-value function as a fourth axis.
-
-Current route:
+Important scope after review:
 
 ~~~text
-authority
-retrieval value
-currentness
+accepted / boundedly continued analysis
+-> must remain routeable
+-> consult when the relevant topic enters task scope
+!= preload every historical package at fresh-session start
 ~~~
 
-Disposition:
+This keeps continuity compatible with bounded retrieval.
 
-RETIRED AS NEW AXIS.
+## 7. Normalization strategy
 
-### 4.3 CALIBRATION as generic disposition
+Do not global-replace.
 
-Problem:
+### Pass A — current PR
 
-Already has programme-level meaning in framework-vs-calibration.
+- Glossary-internal Live Term Router;
+- bounded terminology census;
+- no canonical owner edit.
 
-Disposition:
-
-DO NOT REUSE AS GENERIC RESULT CLASS.
-
-### 4.4 L1 / L2 / L3 / L4 writeback layers
-
-Problem:
-
-Namespace collision with canonical SRT L0/L1/L2.
-
-Disposition:
-
-RETIRED; use plain descriptive surface names.
-
-These examples support the need for term-admission routing before new wording is hardened.
-
----
-
-## 5. Normalization strategy
-
-Do not run global search-and-replace.
-
-Use three passes.
-
-### Pass A — router / census
-
-Current PR.
-
-Actions:
-
-- add dynamic term router;
-- record high-risk families;
-- add new-term admission rule;
-- make no canonical theory changes.
-
-### Pass B — active-owner normalization
+### Pass B — possible later active-surface cleanup
 
 Only after independent review.
 
-Scope:
+Possible actions:
 
-- current active owners / handoffs / templates;
-- obvious same-burden duplicate labels;
-- ambiguous unqualified terms with real retrieval risk.
+- alias notes;
+- qualification of overloaded terms;
+- routing fixes;
+- removing clearly retired working labels from **active** templates / handoffs where meaning is unchanged.
 
-Allowed actions:
+Historical source/provenance remains unchanged.
 
-- add alias notes;
-- qualify overloaded terms;
-- replace a retired working label where meaning is unchanged;
-- point to existing owner.
+### Pass C — accepted-analysis re-entry audit
 
-Do not rewrite historical provenance merely for lexical uniformity.
+Separate PR.
 
-### Pass C — historical compatibility annotations
+Purpose:
 
-Only where search/retrieval would otherwise fail.
+- recover old accepted/continued machine reasoning;
+- map old labels to current owners using the Live Term Router;
+- identify PARTIALLY ABSORBED / ACTIVE BUT UNROUTED branches.
 
-Prefer:
+## 8. Spine status
+
+The author instructed:
+
+> “按你刚才建议的处理顺序开始依次处理，开 PR 方便做独立评审”
+
+This authorizes the staged audit workflow.
+
+It does **not** by itself override current STATUS:
 
 ~~~text
-historical label X
--> current route Y
+FURTHER OWNER CLEANUP PAUSED BY DEFAULT
 ~~~
 
-over deleting historical language.
+Therefore:
 
----
+> Generative Ontology Spine thinning is **not yet an active scheduled edit**.
 
-## 6. New-term admission rule
+After the re-entry audit, a separate bounded author decision is required before opening a canonical Spine-thinning PR.
 
-Conversation exploration remains free.
+## 9. Review questions
 
-A model may coin a temporary phrase while reasoning.
+1. Does the Glossary-internal router stay non-authoritative?
+2. Are owner references complete enough?
+3. Does the Router understate or overstate any owner semantics?
+4. Is availability correctly marked UNDER-SPECIFIED?
+5. Does latent reconstructive reach remain explicitly under CURRENT NEXT pressure-test rather than pre-retained?
+6. Are support / friction / Psi_f^maint collisions represented without premature identity?
+7. Is the Term Router -> GOV-SUB01 -> GRG admission sequence clear?
+8. Does the “continue” retrieval rule remain bounded enough to preserve 6+2 retrieval discipline?
+9. Is any proposed future canonical cleanup still being implied without separate author adjudication?
 
-The gate applies only when a label is about to become repeated repository vocabulary.
-
-Before hardening:
-
-~~~text
-1. search _SRT_TERM_ROUTER.md
-2. search current owner(s)
-3. identify nearest burden
-4. classify alias / overload / overlap / distinct / working-only
-5. if distinct, state the non-duplicate burden and owner
-6. if not distinct, inherit or qualify existing vocabulary
-~~~
-
-This should reduce vocabulary churn without freezing the theory.
-
----
-
-## 7. Relationship to the next two consolidation tasks
-
-This audit intentionally precedes:
-
-### Accepted-analysis re-entry audit
-
-Reason:
-
-A recovered historical branch may use an older label for a currently owned burden.
-
-The term router gives that later audit a way to say:
+## 10. Current verdict
 
 ~~~text
-old wording
--> current owner / alias / partial overlap
-~~~
+dynamic lexical / semantic router:
+  NEEDED, but inside existing Glossary entry
 
-without either deleting the old analysis or inventing another new term.
-
-### Generative Ontology Spine thinning
-
-Reason:
-
-Spine thinning should happen only after terminology and historical continuity are mapped.
-
-Otherwise a section might be removed as “duplicate explanation” when it is actually the only active route to a still-discrete burden.
-
----
-
-## 8. Review questions
-
-Independent review should test:
-
-1. Does the router accidentally become a definition authority?
-2. Are any listed “preferred labels” stronger than their owners support?
-3. Are any genuinely distinct burdens incorrectly grouped as aliases?
-4. Are any same-burden duplicates still missing from the high-risk clusters?
-5. Does the new-term gate inhibit exploratory dialogue rather than only repository hardening?
-6. Should any cluster be routed to a different current owner?
-7. Does any proposed normalization silently alter canonical meaning?
-
----
-
-## 9. Current verdict
-
-~~~text
-dynamic term router:
-  NEEDED
-
-fixed final glossary:
-  NOT RECOMMENDED
-
-bulk renaming:
-  NOT NOW
-
-active-owner bounded normalization:
-  AFTER REVIEW
-
-historical provenance rewrite:
+new root router:
   NO
 
-new term invention in dialogue:
-  ALLOWED AS WORKING LABEL
+fixed final glossary:
+  NO
 
-new repo-wide term hardening:
-  OWNER + TERM ROUTER CHECK REQUIRED
+GOV-SUB01:
+  EXISTING DOWNSTREAM MECHANISM / OPERATOR GOVERNANCE
+
+bulk renaming:
+  NO
+
+active-owner normalization:
+  POSSIBLE LATER, AFTER REVIEW
 
 accepted-analysis re-entry audit:
-  NEXT SEPARATE PR
+  NEXT SEPARATE PR IF #1043 PASSES
 
-Spine semantic thinning:
-  AFTER RE-ENTRY AUDIT
+Spine thinning:
+  NOT YET AUTHORIZED AS A CANONICAL EDIT
+  REQUIRES SEPARATE BOUNDED AUTHOR DECISION
 ~~~
