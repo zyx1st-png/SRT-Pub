@@ -71,9 +71,9 @@ For any phenomenon, SRT asks three prior questions:
 
 > **[哲学定位独立文件]** 以下脚注的完整版本已迁移至 [`Core_Law/SRT_L0_Philosophy_Bridge.md`](SRT_L0_Philosophy_Bridge.md) `(L0, bridge)`。本处保留摘要。
 >
-> **[R]** 过程哲学传统：Whitehead 1929 *Process and Reality*（"实际实体"=过程而非惰性物，R参照基线）；Barad 2007 *Meeting the Universe Halfway*（内在-行动/intra-action：实体通过测量行动互构，非预先存在）；Heidegger 1927 *Sein und Zeit*（存在论差异：存在≠存在者，存在总已在"揭示"过程中）。**[H]** 以下SRT新增贡献：①L₀（潜在域）→L₁（显现）→L₂（锚定）的三域结构形式化；②选择算子Ĝ_θ将"过程性存在"操作化为可计算框架；③可支付摩擦（payable Ψ_f）作为选择边界的物理约束，区别于Whitehead的"满足"（satisfaction）和Barad的"消解"（agential cut）。
+> **[R]** 过程哲学传统：Whitehead 1929 *Process and Reality*（"实际实体"=过程而非惰性物，R参照基线）；Barad 2007 *Meeting the Universe Halfway*（内在-行动/intra-action：实体通过测量行动互构，非预先存在）；Heidegger 1927 *Sein und Zeit*（存在论差异：存在≠存在者，存在总已在"揭示"过程中）。**[H]** 以下只记录 SRT-side 的结构性强调，**不构成**相对 Whitehead / Barad 的 novelty、irreducibility 或 superiority verdict：①SRT 显式使用 L₀ / L₁ / L₂ 组织开放性、显现与历史留存；②选择算子 Ĝ_θ 是 SRT 的操作化语言；③可支付摩擦（payable Ψ_f）是 SRT 的显式负担。2026-09-23 的 FRR 定向核读已经推翻“一般性 history / writeback 在 Whitehead 侧缺失”的旧比较；关于 Ψ_f / cost 是否有 source-native 对应物则仍 OPEN。
 >
-> **与过程哲学的异同**：SRT接受Whitehead"存在=过程"的基本直觉（R），但以下方面有实质分歧（H）：①SRT引入三域本体论而非Whitehead的双向"感受"（prehension）；②Ψ_f给出热力学量纲的约束，Whitehead过程无此物理锚定；③SRT的L₂（社会共识）作为历史硬化层是独立本体论层级，Whitehead无对应构念。与Barad：均拒绝预先存在的实体，但SRT保留具身算子θ作为连续身份载体（Barad消解行为者/被行为者边界）。
+> **与过程哲学的当前安全比较**：SRT 接受 Whitehead "存在=过程" 的基本直觉（R）。同时，SRT 当前明确区分 Selection occurrence 与 retained historical efficacy / sedimentation。Epperson / Zafiris 的 Whiteheadian relational realism 已明确具有 actualization → datum → later-conditioning / global-history 结构，因此旧句 "Whitehead 无 L₂ 对应构念" **撤回**；FRR 的 logical / mereotopological subsequence 也不能直接等同于 SRT 的 historical-retention / L₂ role。真正仍 OPEN 的是两者的精确映射，以及 persistence strength、revisability / resistance-to-revision、payable friction / undoing cost 等更强负担是否存在 source-native 对应。与 Barad 的边界 / 持续身份比较保留为历史摘要，本轮未重新裁决。
 >
 > **IC-Thesis1-1**（形而上学一致性要求）：若从Ax-Core-A1（存在=从L₀选择并锚定到L₁）推出，则"选择先于存在"不是独立假设而是A1的叙事版本；一致性要求：Thesis 1中"selection"的任何形式化不得引入A1之外的额外本体论承诺（如主观意志先验性），否则需回归修正A1。
 

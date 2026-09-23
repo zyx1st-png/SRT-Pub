@@ -216,7 +216,9 @@ insufficient evidence
 
 ## 6. Canonical comparison debt exposed by this reread
 
-本轮 FRR 阅读不仅修正了通信记录，也暴露了仓库中更早的 Whitehead 比较债。当前 PR **不直接改 canonical / retained canonical-support owners**，但必须登记以下待校正面：
+> **2026-09-23 follow-up status**：#1034 只登记该 debt；本次 bounded owner-correction package 已实际收紧 `Core_Law/SRT_L0_Philosophy_Bridge.md` 与 `Core_Law/SRT_Constitution_Seven_Theses.md` 的 categorical Whitehead claims。修正仅撤回“一般 history/writeback 缺失 / Whitehead 无 L₂ 对应构念 / 过程哲学无 cost 对应物”这类过强 verdict；**没有**把 FRR 宣布为 SRT L₂ 等价物，也没有关闭 persistence / revisability / resistance / cost 的 OPEN 状态。
+
+本轮 FRR 阅读不仅修正了通信记录，也暴露了仓库中更早的 Whitehead 比较债。**在 #1034 时**，该 debt 只做登记、未直接改 canonical / retained canonical-support owners；本次 follow-up bounded correction 正是对其中两处比较面做最小收紧：
 
 - `Core_Law/SRT_L0_Philosophy_Bridge.md` §一仍写 Whitehead satisfaction “没有区分显现与历史固化”，并把“稳定域独立性”作为已定分叉；
 - `Core_Law/SRT_Constitution_Seven_Theses.md` 的历史比较摘要仍写 “Whitehead 无 L2 对应构念”；
