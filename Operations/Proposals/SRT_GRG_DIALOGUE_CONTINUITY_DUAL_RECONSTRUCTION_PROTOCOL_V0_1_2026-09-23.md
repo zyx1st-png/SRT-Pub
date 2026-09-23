@@ -75,14 +75,20 @@ Do not invent a fifth authority class.
 
 ### 1.2 Continuity role
 
-For this recovery package and its descendants:
+Default rule:
+
+> author-accepted / author-approved / author-continued machine analysis is continuation-load-bearing unless a later controlling record explicitly narrows, rejects, retires or supersedes it.
+
+Optional explicit labels remain available:
 
 - `LOAD_BEARING`;
 - `SUPPORTING`;
 - `EXPLORATORY`;
 - `SUPERSEDED`.
 
-`continuity_role` tells future retrieval whether omitting the item would distort the reconstructed programme.
+`continuity_role` is a retrieval override / clarification, not a gate. Its absence must never be read as `safe to ignore` when an author acceptance event exists.
+
+Likewise, `M`, `canonical: false`, `parked`, `downstream`, `companion` and support-only routing do not by themselves demote continuity importance.
 
 It does not change definition authority.
 
