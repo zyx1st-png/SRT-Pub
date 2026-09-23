@@ -41,7 +41,7 @@ can be understood through a common GRG problem:
 
 > **How is generative reach allocated, suppressed, preserved, regained and reorganized across a vertical structure?**
 
-> **Provenance pointer (machine-added 2026-09-23, repository self-reconstruction Phase 3).** Item-level provenance for this record (A0-Q / A0-P / A1 / M) is mapped section by section against the derivation trace in `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md` §3.3. "The author accepts / confirms" statements below are A1-claimed unless that map records an acceptance event or author quotation. This pointer does not change the record's content.
+> **Provenance pointer (machine-added 2026-09-23, repository self-reconstruction Phase 3).** Item-level provenance for this record (A0-Q / A0-P / A1 / M) is mapped section by section against the derivation trace in `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md` §3.3. The map preserves the direct author wording for the forgetting / reach move and the trace-backed A1 events; other machine-generated section wording remains M unless a preserved item-level acceptance event exists. This pointer does not change the record's content.
 
 ---
 
