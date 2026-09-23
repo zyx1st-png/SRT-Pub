@@ -69,7 +69,7 @@ retrieval value = REQUIRED WHEN THE RELEVANT TOPIC ENTERS SCOPE
 
 This means the analysis must remain routeable and must be consulted when the current task reaches that burden. It does **not** mean every fresh session must preload every historically accepted analysis.
 
-while its epistemic authority may remain:
+Its epistemic authority may still remain:
 
 ~~~text
 M
