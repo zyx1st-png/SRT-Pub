@@ -79,7 +79,9 @@ The author accepts preserving the following generative research arc as a candida
 
 `-> epistemic proxy / reconstruction loop`
 
-`-> bearer / temporal lineage / self candidate`
+`-> separately gated Stable-ISP / Bearer routes where applicable`
+
+`-> temporal-lineage / self candidate`
 
 `-> anticipation / stake / valuation / attention`
 
@@ -97,9 +99,11 @@ Different mechanisms may instantiate some modules without instantiating later on
 
 The dialogue proposed that perspective should not begin as a consciousness term.
 
-A minimal research direction is:
+A candidate **GRG operationalization** is:
 
-> perspective as a locus at which distinctions are organized as neutral / non-neutral.
+> a formed locus endogenously maintains a neutrality / relevance organization that is load-bearing for later Selection.
+
+This can be described heuristically as a locus at which distinctions are organized as neutral / non-neutral, but neutrality / relevance assignment alone does **not** establish canonical One-level perspective. Current perspective sufficiency remains OPEN under the canonical Spine / One-formation route.
 
 An endogenous perspective candidate arises when that distinction organization is maintained by the formed system's own relational organization rather than solely by an external analyst.
 
@@ -140,7 +144,13 @@ The dialogue preserved a distinction among:
 - Bearer continuity;
 - self continuity.
 
-A self candidate was developed as a temporally extended equivalence / lineage relation in which past, present and anticipated future Selection positions are treated as belonging to one operative generative lineage and that relation itself changes current Selection.
+A self candidate was developed as a temporally extended equivalence / lineage relation in which past, present and anticipated future positions are treated as belonging to one declared operational generative lineage and that relation itself changes current Selection.
+
+Additional guards:
+
+- this does not settle canonical One strict numerical identity, branch / merge identity, or same-One admission;
+- every self-lineage analysis must declare the operational lineage relation being tracked;
+- Bearer language remains separately gated by the canonical `formed One / Selection-position + P + E -> Bearer` route.
 
 Accepted guard:
 
@@ -263,7 +273,19 @@ This is a research architecture, not a moral classification shortcut.
 
 No system, institution, identity or technology should be labeled “cage” without source-specific evidence for the relevant closure mechanism.
 
-## 13. Why this material is parked outside the Card core
+## 13. External-neighbor / originality debt
+
+This package is **not** an originality record. Independent review specifically flagged likely mature-neighbor overlap around causal abstraction / coarse-graining, ordinary externality / internalization analysis, Hart-style secondary-rule structures, and autopoietic / organizational self-maintenance. Those reviewer-raised labels are retrieval prompts only; this PR has not source-checked them and does not assert equivalence.
+
+Before any downstream branch is reopened for positive GRG gain, it must name and read its strongest source-native comparator(s), state what the comparator already explains, and either:
+
+- inherit / reorganize the mature mechanism;
+- identify a bounded remaining question;
+- or record `NO GRG GAIN / ABSORBED`.
+
+No branch may claim novelty, irreducibility or added explanatory power merely because this dialogue independently arrived at similar language.
+
+## 14. Why this material is parked outside the Card core
 
 The immediate Card programme needs a minimal cross-domain research interface.
 
@@ -276,9 +298,9 @@ The downstream analysis is deliberately parked because prematurely inserting all
 
 Therefore this package is a hypothesis reservoir and drill-down map.
 
-The fusion-case Card remains the active next task.
+Within this parked downstream package, fusion-case Card work is the preferred companion route. It does **not** supersede live `STATUS.md`; the current `CURRENT NEXT = bounded latent-reconstructive-reach reality pressure-test / operationalization` remains controlling until explicitly reconciled.
 
-## 14. Companion records
+## 15. Companion records
 
 Detailed derivation:
 
@@ -288,7 +310,7 @@ Drill-down map:
 
 `Operations/Proposals/SRT_GRG_DOWNSTREAM_RESEARCH_BRANCHES_MAP_2026-09-23.md`
 
-## 15. Explicit non-actions
+## 16. Explicit non-actions
 
 This accepted preservation does not:
 
@@ -299,4 +321,4 @@ This accepted preservation does not:
 - establish AI subjectivity or consciousness;
 - establish a moral theory from generative openness;
 - establish claims about money, law or civilization without later source-native fusion cases;
-- alter the Card v0.2 core automatically.
+- alter the experimental fusion-case Card automatically.
