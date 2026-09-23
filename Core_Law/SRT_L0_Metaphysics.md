@@ -83,7 +83,7 @@ event-level verticality
 
 当前 canonical 语义护栏：
 
-> **Selection 是实际化的非中立分化，并且这种分化以不能被完全抹平的方式进入后续生成。**
+> **Selection 是真实发生的实际化非中立分化；它的发生不以后续生成中留下 sediment 为条件。**
 
 因此：
 

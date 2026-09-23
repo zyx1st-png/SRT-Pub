@@ -37,7 +37,7 @@ Selection
 != decision among a pre-given menu
 != Darwinian winner-picking by default
 != bare filtering
-!= arbitrary change / state transition.
+!= arbitrary descriptive / modelled change.
 ~~~
 
 SRT Selection is a term of art for **genuine actualised non-neutral differentiation**. A completed alternative set is not required in advance; alternatives, positions, relations and reachable possibilities may themselves be generated through Selection. Selection occurrence does **not** require later sediment, retained historical efficacy or generative inheritance; terminal Selection remains genuine.
