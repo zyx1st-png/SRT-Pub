@@ -245,7 +245,7 @@ The dialogue also preserved:
 
 The FRR focused-reading note supports local-to-global **gluing / compatible-context construction** in the quantum discussion, while its Chapter-11 “historical process” material is explicitly guarded because that formal discussion is first given in a spatial-topology modelling context and only analogically transferred to the quantum domain.
 
-Therefore the Card should not treat a source-native FRR “recoherence” route as already established from the focused reading. Instead it needs a generic source-side field:
+Therefore the Card should not treat a source-native FRR route labeled with a term not established in the focused reading as already established from the focused reading. Instead it needs a generic source-side field:
 
 ### 10.1 Source-native structural reopening / reconstruction path
 
