@@ -21,9 +21,11 @@ tags: [GRG, Downstream, ResearchMap, Perspective, Epistemology, Intervention, Mu
 
 This file parks the accepted but currently non-core downstream GRG analysis so later sessions can drill down without forcing it into the experimental Grammar Card.
 
-Primary current route remains:
+This parked map's preferred companion route is:
 
 `FRR -> Grammar Card refinement -> more fusion cases -> cross-card reconciliation`.
+
+It does **not** supersede live `STATUS.md`. At the current main checkpoint, `CURRENT NEXT = bounded latent-reconstructive-reach reality pressure-test / operationalization`; any fusion-case continuation must be reconciled to that route or wait until it is explicitly closed / re-routed.
 
 The branches below are **candidate follow-on programmes**, not current mandatory execution order.
 
@@ -38,6 +40,8 @@ Reopen a downstream branch when at least one of the following occurs:
 - the author explicitly selects the branch for development.
 
 Do not reopen a branch merely because it is philosophically interesting.
+
+Independent review also raised mature-neighbor debt around causal abstraction / coarse-graining, standard externality / internalization analysis, Hart-style secondary-rule structures, and autopoietic / organizational self-maintenance. These labels are retrieval prompts only, not established equivalences; route them to the relevant branch when selecting source-native comparators.
 
 ## 2. Branch map
 
@@ -351,4 +355,4 @@ When reopening one branch:
 
 Do not advance more than one major downstream branch at a time unless the user explicitly requests a synthesis.
 
-The default next task remains Grammar Card fusion-case iteration.
+The default within this **parked research map** is Grammar Card fusion-case iteration, but execution remains subordinate to the live STATUS current-next route.
