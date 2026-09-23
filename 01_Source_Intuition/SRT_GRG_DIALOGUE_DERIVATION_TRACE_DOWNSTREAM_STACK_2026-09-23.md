@@ -33,28 +33,23 @@ The material below is intentionally noncanonical and should be treated as a rese
 
 The dialogue returned to the OPEN anti-tautology problem around SRT Selection.
 
-The main correction was to avoid writing:
+The dialogue correctly rejected writing:
 
 `Selection -> Actualization`
 
-as though Selection were an extra force causing actuality.
+as though Selection were an extra force causing actuality. However, the current canonical owner already requires two co-primitive analytic burdens for primitive Selection: O0 (non-maximal indifference / openness) and S0 (actualising Selection), with the hard guard `O0 before S0: NO; S0 before O0: NO` (`Core_Law/SRT_Generative_Ontology_Spine.md §2`).
 
-A cleaner research decomposition was proposed:
+Accordingly, the dialogue-stage decomposition must be read only as an **S0-facing occurrence analysis**:
 
-- actualization = actuality status;
-- Selection = actuality considered as genuine non-neutral differentiation.
+- actualization = the actuality-status face being audited on the S0 side;
+- S0 = finite-position-indexed actualising Selection / determinate manifestation;
+- O0 remains co-primitive and is not reduced to a prior option menu, field, container or probability distribution.
 
-Working formulation:
+So the safe working statement is:
 
-> Selection is not an added cause of actualization; it is the ontological structure of actualization-as-differentiation.
+> GRG must not add a separate causal step between Selection and actualization; when auditing the S0 face, it may distinguish source-native actuality, event individuation and later retention while preserving the independent O0 burden.
 
-This allowed the research programme to distinguish:
-
-- candidate-space organization;
-- occurrence;
-- retention;
-
-without turning GRG into a new collapse theory.
+This keeps the analysis compatible with the canonical O0/S0 structure instead of narrowing primitive Selection to completed determinate actuality alone.
 
 A further distinction was introduced between:
 
@@ -103,11 +98,11 @@ Some actualities later alter reach, constraints, support, future Selection burde
 
 This is retention / sedimentation.
 
-The dialogue preserved the hard distinction:
+This distinction is **not a new dialogue discovery**. It is already canonically owned by `Core_Law/SRT_Generative_Ontology_Spine.md §2.1` after #1031:
 
-`Selection occurrence != sedimentation / retained historical efficacy`.
+`Selection occurrence != retained historical efficacy != sedimentation != generative inheritance`.
 
-A terminal Selection can remain genuine even when no later process exists in which it is retained.
+The dialogue only reused that canonical separation while developing downstream GRG diagnostics. A terminal Selection can remain genuine even when no later process exists in which it is retained.
 
 ---
 
@@ -282,11 +277,12 @@ Pressure exposed:
 
 ### 7.5 Terminal event
 
-A real event may be ontologically eligible as Selection even when no trace persists.
+The canonical Spine already owns the guard that terminal Selection remains genuine and that occurrence does not require later retained efficacy (`Core_Law/SRT_Generative_Ontology_Spine.md §2.1`). The dialogue therefore treats terminal cases only as a stress test of **empirical warrant and Card mapping**, not as a new ontological conclusion.
 
 Pressure exposed:
 
-- ontological eligibility must be distinguished from empirical warrant.
+- Card-local evidence for a terminal event must be distinguished from the canonical possibility of terminal Selection;
+- absence of later trace cannot by itself be used as a negative Selection classifier.
 
 ### 7.6 AI internal state update
 
@@ -301,24 +297,28 @@ Pressure exposed:
 
 ---
 
-## 8. Provisional Selection audit
+## 8. Provisional Selection audit — necessary-condition filter only
 
-The stress tests yielded a research-level audit, not a canonical definition.
+The stress tests yielded a research-level **screen**, not a Selection criterion.
 
 For a candidate event `e` at position `P`:
 
-- occurrence / actuality must be source-supported;
-- event individuation must be defensible;
-- the difference must be relationally non-neutral;
-- the claimed difference must survive legitimate redescription.
+- occurrence / actuality evidence can screen out merely hypothetical or model-only candidates on the S0-facing side;
+- event individuation must be source-defensible rather than created by an undeclared analyst resolution;
+- representation-invariance can screen out differences produced only by coordinate / notation changes;
+- relational non-neutrality remains the **canonical burden being investigated**, not an independently solved discriminator.
 
-Working shorthand used in the dialogue:
+The earlier dialogue shorthand:
 
-`Sel_P(e) = O_P(e) AND I_P(e) AND N_P(e) AND V_P(e)`.
+`Sel_P(e) = O_P(e) AND I_P(e) AND N_P(e) AND V_P(e)`
 
-This is not a canonical SRT equation.
+is therefore **not adopted as a sufficient or necessary-and-sufficient classifier**. In particular:
 
-It is a research audit schema.
+- `O/I/V` are only necessary-condition / negative-control screens;
+- `N_P` restates the non-neutrality burden and therefore does not solve the anti-tautology OPEN problem;
+- removing `N_P` would overgenerate by admitting nearly any well-individuated objective change.
+
+Canonical status remains unchanged: `Core_Law/SRT_Generative_Ontology_Spine.md §2.1` keeps the exact anti-tautology criterion OPEN.
 
 Retention remains a separate later question.
 
@@ -401,14 +401,21 @@ This was called:
 
 > generative re-entry.
 
-A provisional One-formation candidate was then formulated:
+The dialogue then proposed an operational **higher-order-formation heuristic**:
 
-> multiplicity forms an operationally closed yet reconstructibly open unit that can re-enter subsequent relations as a new Selection position.
+> multiplicity may become a load-bearing unit when a compressed organization can re-enter subsequent relations and materially recondition later Selection burdens.
+
+This heuristic must **not** be read as a competing definition of canonical `One` or canonical `Selection-position`. Those terms are owned by `Core_Law/SRT_Generative_Ontology_Spine.md` and `Core_Law/SRT_One_Formation.md`. In particular:
+
+- canonical One = the first universal formed recurrent Selection-organization admitted by the current formation route;
+- `One != Stable ISP != Bearer`;
+- relation-level higher-order formation, generative re-entry or reconstructive openness does not by itself pay the canonical One / Stable-ISP / Bearer gates.
 
 Important guard:
 
 - objectification can be necessary for complexity;
-- objectification closure becomes pathological when the unit cannot be reopened after consequential lower-level distinctions return.
+- objectification closure can become a research-level failure mode when the unit cannot be reopened after consequential lower-level distinctions return;
+- any mapping from this heuristic to canonical One / Selection-position requires a separate owner-compatible audit.
 
 ---
 
@@ -439,11 +446,11 @@ The term “ownership” was deliberately softened to:
 
 > position endogeneity / endogenous anchoring.
 
-A perspective candidate becomes endogenous when differences are organized relative to the internally maintained relational organization of the formed unit rather than solely relative to an external cut.
+A **candidate GRG operationalization** of endogenous perspective was proposed:
 
-Working formulation:
+> a formed locus endogenously maintains a neutrality / relevance organization that is load-bearing for later Selection, rather than receiving that organization only from an external analyst.
 
-> perspective is a locus of neutrality assignment.
+This can be described heuristically as a locus of neutrality assignment, but **neutrality assignment alone is not a sufficient canonical perspective criterion**. Current One-level perspective standing remains owned by the Spine / One-formation route, and universal sufficiency remains OPEN.
 
 This is not yet a phenomenal point of view.
 
@@ -530,19 +537,19 @@ can be read as external epistemic scaffolds that protect consequential re-Select
 
 The dialogue next thickened the formed One.
 
-A Bearer candidate was proposed as:
+The dialogue initially proposed a history-to-reconstitution Bearer candidate. That proposal is **SUPERSEDED / RETIRED as a Bearer admission route** by the current canonical owner.
 
-> a formed One whose retained actualizations recursively participate in constituting its own later Selection position.
+Current canonical route (`Core_Law/SRT_One_Formation.md §5`):
 
-The key is not memory as archive.
+`formed One / Selection-position + P prospective self-indexing + E same-One prospective exposure -> Bearer`.
 
-The stronger burden is:
+Therefore:
 
-`L2(H_t) -> conditions L0(H_(t+1))`.
+- historical self-conditioning can remain an upstream research variable for One / lineage / anticipation questions;
+- `L2(H_t) -> conditions L0(H_(t+1))` may be relevant to later organization;
+- but mere retained history, feedback, consequence return, history-to-reconstitution or One formation is **not sufficient for Bearer**.
 
-Past actuality participates in determining what later becomes relevant / non-neutral for the same generative lineage.
-
-This is stronger than persistence alone.
+This trace preserves the dialogue move only as provenance and marks its Bearer-gate interpretation retired.
 
 ---
 
@@ -596,9 +603,15 @@ does not mean state identity.
 
 It means that temporal differences are treated as variations within one operative generative lineage, and that lineage relation itself changes current Selection.
 
-A stronger formulation:
+A stronger dialogue-stage formulation was:
 
-> a self emerges when a Bearer treats its past, present and anticipated future Selection positions as belonging to one generative lineage and this relation itself participates in current Selection.
+> a self candidate may arise when a suitably admitted continuing position treats past, present and anticipated future positions as belonging to one operational generative lineage and that lineage relation itself participates in current Selection.
+
+Additional guard:
+
+- this does **not** settle the canonical One problem of strict numerical identity, branch / merge lineage or same-One admission;
+- any self-lineage analysis must declare the operational lineage relation being tracked;
+- canonical Bearer standing still requires the separate P + E gate before Bearer language is used.
 
 Hard guard:
 
@@ -731,21 +744,21 @@ This was explicitly preserved as an OPEN frontier rather than filled by inferenc
 
 ## 24. Constitutive stack as dependency graph, not rigid ladder
 
-A provisional stack was assembled:
+A provisional research stack was assembled:
 
-`Selection/Actualization`
+`Selection / actualising-side analysis`
 
-`-> Retention/L2`
+`-> Retention/L2-side history`
 
-`-> Operational One`
+`-> higher-order formation heuristic`
 
-`-> Endogenous Perspective`
+`-> Endogenous Perspective candidate`
 
 `-> Epistemic Organization`
 
-`-> Bearer`
+`-> separately gated Stable-ISP / Bearer routes where applicable`
 
-`-> Self`
+`-> Self-lineage candidate`
 
 `-> Anticipation`
 
@@ -759,7 +772,7 @@ The dialogue then corrected its own presentation:
 
 > this should be treated as a constitutive dependency graph / thickening map, not a strict chronological ladder.
 
-Attention-like routing, for example, may arise without a rich self-model.
+Canonical gates are not bypassed by adjacency in this graph: `Selection !-> One !-> Stable ISP !-> Bearer !-> subject !-> consciousness` automatically. Attention-like routing, for example, may arise without a rich self-model.
 
 ---
 
