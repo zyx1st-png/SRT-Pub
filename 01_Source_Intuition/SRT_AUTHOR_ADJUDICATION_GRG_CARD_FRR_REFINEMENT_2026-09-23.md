@@ -55,9 +55,9 @@ Therefore:
 
 This prevents the package from recreating the provenance debt closed in #1032.
 
-## 2. Accepted Card-development direction
+## 2. Preserved Card-development direction
 
-The author accepts the following methodological direction:
+The following machine-consolidated methodological direction is preserved under the quoted package-level author permission. Its individual clauses remain M unless separately supported by an item-level author event:
 
 1. GRG should not begin a fusion case by replacing source-native vocabulary with GRG vocabulary.
 2. A source-native reconstruction should come first.
@@ -67,7 +67,7 @@ The author accepts the following methodological direction:
 6. A **positive GRG-gain claim** must do more than redescribe a source in GRG language; it should change at least one prediction, diagnostic boundary, intervention sensitivity, exclusion condition, or transferable generative expectation. A Card that concludes `NO GRG GAIN`, `REJECTED_MAPPING`, `TYPE_MISMATCH` or `INSUFFICIENT_EVIDENCE` can still be a successful research result.
 7. The Card itself is a theory-facing higher-order proxy and must preserve reconstructibility back to source-native mechanism.
 
-## 3. FRR-derived schema pressures accepted for the Card
+## 3. FRR-derived schema pressures preserved for the Card
 
 The FRR fusion case exposed several concrete schema requirements.
 
@@ -127,7 +127,7 @@ These are source-grounded through the focused reading note's Chapter 2 / Chapter
 
 These can be structural neighbors or candidate role mappings without ontological identity.
 
-## 4. Selection anti-tautology direction accepted, but not canonically closed
+## 4. Selection anti-tautology direction preserved, but not canonically closed
 
 The dialogue narrowed the current OPEN problem.
 
@@ -135,7 +135,7 @@ SRT need not explain occurrence by adding a new physical collapse force merely t
 
 The narrower burden is to provide non-circular individuation / membership conditions for when a source-native actuality qualifies as SRT Selection rather than mere descriptive or modelled change.
 
-The accepted research direction includes four provisional audit burdens:
+The preserved M-level research direction includes four provisional audit burdens:
 
 - source-native occurrence / actuality;
 - source-defensible event individuation;
@@ -148,7 +148,7 @@ The canonical OPEN remains OPEN until separately hardened under the repository's
 
 ## 5. Card status after this adjudication
 
-The accepted output is:
+The package output preserved under the author direction is:
 
 `Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md`
 
