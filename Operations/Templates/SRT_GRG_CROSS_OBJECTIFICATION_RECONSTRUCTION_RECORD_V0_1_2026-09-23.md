@@ -19,6 +19,8 @@ tags: [GRG, Template, CrossObjectification, Reconstruction, Reobjectification]
 
 # GRG Cross-Objectification Reconstruction Record — Template v0.1
 
+> **Continuity-recovery routing note:** v0.1 is retained as the #1040 first-level anti-mapping record. For resumed DISCOVERY work after the 2026-09-23 dialogue recovery, use `SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_2_2026-09-23.md`, which adds GRG-cut genealogy / dual reconstruction and existing-owner semantic absorption before new candidate extraction.
+>
 > Use this record **before or alongside** a GTS when the correct generative cut / transformation is still being discovered.
 >
 > It does not replace GTS v0.2.
