@@ -10,7 +10,6 @@ canonical: false
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DOWNSTREAM_GENERATIVE_STACK_2026-09-23.md
-  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CARD_FRR_REFINEMENT_2026-09-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
 tags: [GRG, DerivationTrace, Selection, Neutrality, Perspective, Epistemology, Self, Attention, Intervention, Power, Civilization]
