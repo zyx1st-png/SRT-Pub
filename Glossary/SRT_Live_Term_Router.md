@@ -97,7 +97,7 @@ Do not substitute one system for another.
 
 These rows are research routing, not canonical SRT definitions.
 
-| Routing label | Near / confusable wording | Owner-grounded boundary | Current owner / route | Status / maturity | Semantic relation |
+| Routing label | Near / confusable wording | Owner-grounded boundary | Current owner / route | Status / maturity | Collision / routing note |
 |---|---|---|---|---|---|
 | object / relation as cuts | objectification, partition, coordinate, relation-first | object and relation are cuts rather than primitive furniture; relation-first is not automatically privileged | Selection Vertical §B; GRG v0.3 §7; capacity §§I/L | author-source + v0.3 research | PARTIAL_OVERLAP |
 | objectification | compression, coarse-graining, working cut | broad stabilization/organization of a cut; not automatically an error | capacity §§I, AB–AC; cross-objectification method | source-level / method | PARTIAL_OVERLAP |
