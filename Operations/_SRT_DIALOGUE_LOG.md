@@ -30,6 +30,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   - `Core/SRT_OPEN_TENSIONS.md` strongest-rival guard 禁止在 canonical owners 中提前写 Whitehead novelty / superiority verdict；上述旧比较须作为 legacy debt，而非现行 novelty 结论；
   - 任何后续 owner correction 都必须保留：FRR 已有 later-conditioning ≠ FRR 已满足 SRT 全部 L2 / persistence / revisability / cost burdens。
 - 外部邮件：未发送；记录中的拟稿已改为明确收回 7 月邮件把 basal Selection 与 writeback 绑在一起的旧表述，并保留此前承诺的 persistence / resistance-to-revision 后续问题。
+- follow-up owner correction：#1035 已合并（`1111e9592936214c4255bc97b03513538b253145`），已修正 `SRT_L0_Philosophy_Bridge.md` 与 retained `SRT_Constitution_Seven_Theses.md` 的 categorical Whitehead history/L₂/cost claims；cleanup debt 关闭。剩余 exact L₂ mapping、persistence/revisability/cost 与 Selection-occurrence equivalence 继续保持 comparative OPEN。
 
 ## 2026-07-27 CST（外部学者通信）
 - 会话模式：外部学者往来邮件归档 + 回信定稿 + 对外一页 note 成稿
