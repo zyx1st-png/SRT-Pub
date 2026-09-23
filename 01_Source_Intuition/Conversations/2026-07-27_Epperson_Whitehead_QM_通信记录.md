@@ -378,10 +378,11 @@ vs merely descriptive / modelled change
 
 FRR 至少在以下位置明确给出了强历史生成结构：
 
-1. **Chapter 4, pp. 165–166（PDF 181–182）**：actualized occasion 成为与 subsequent occasions-in-process 内在相关的 datum；但作者明确限定这里的 subsequent 首先是 **logical / mereotopological**，不必然是 temporal，时空次序只是特化。
-2. **Interlude, pp. 206–209（PDF 220–224）**：actual occasion 的 subjective aspect 是其 local contextualization；一旦 actualized，其 objective / superjective aspect 是成为后续 actual occasions 的 datum。Boolean germ 随每次 actualization 增长，global 是持续形成中的 totality。
-3. **Chapter 8, p. 269（PDF 281）**：新事件加入后形成的新 totality 会对新的 local contexts 施加进一步 compatibility constraints；作者明确把 sheaf-theoretic localization 描述为 ontological process，而不是对固定全局整体的纯认识论重组。
-4. **Chapter 11 附近（PDF 386）**：germ 从 event 到 event 的连续延展被表述为 historical process；但该表达先出现在空间拓扑建模中，随后才 analogically transferred 到量子域，因此不能无条件等同于量子时间历史。
+1. **Chapter 3, pp. 133–134（PDF 150–151）**：past 被描述为 closed、future 为 open；actualized quantum fact 对 subsequent predication 具有 causal efficacy，并把 universe as enduring structure 描述为随新 facts 离散增补的 serial historical evolution of totality。
+2. **Chapter 4, pp. 165–166（PDF 181–182）**：actualized occasion 成为与 subsequent occasions-in-process 内在相关的 datum；但作者明确限定这里的 subsequent 首先是 **logical / mereotopological**，不必然是 temporal，时空次序只是特化。
+3. **Interlude, pp. 206–209（PDF 220–224）**：actual occasion 的 subjective aspect 是其 local contextualization；一旦 actualized，其 objective / superjective aspect 是成为后续 actual occasions 的 datum。Boolean germ 随每次 actualization 增长，global 是持续形成中的 totality。
+4. **Chapter 8, p. 269（PDF 281）**：新事件加入后形成的新 totality 会对新的 local contexts 施加进一步 compatibility constraints；作者明确把 sheaf-theoretic localization 描述为 ontological process，而不是对固定全局整体的纯认识论重组。
+5. **Chapter 11 附近（PDF 386）**：germ 从 event 到 event 的连续延展被表述为 historical process；但该表达先出现在空间拓扑建模中，随后才 analogically transferred 到量子域，因此不能无条件等同于量子时间历史。
 
 因此当前比较不能再写成：
 
