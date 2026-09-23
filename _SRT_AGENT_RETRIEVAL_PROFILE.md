@@ -44,6 +44,8 @@ Search rank, keyword density, file version suffixes, and old chapter numbering d
 
 When an author event explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content has **required retrieval value for continuation by default**.
 
+A bare continuation signal such as `继续` / “continue” counts as package-level directional acceptance for retrieval when it immediately follows one coherent machine-analysis path and no contrary signal is present. Do **not** apply this default when the same turn corrects or rejects part of the analysis, when unresolved mutually exclusive branches remain unselected, when the author explicitly frames the continuation as exploratory-only, or when a specific item is already under an explicit pending-confirmation gate. This convention preserves continuity; it does not convert each machine sentence into A1.
+
 This does **not** change epistemic authority:
 
 ```text
