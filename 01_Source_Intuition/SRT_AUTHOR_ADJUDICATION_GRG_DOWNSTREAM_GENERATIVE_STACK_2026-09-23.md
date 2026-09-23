@@ -11,7 +11,6 @@ research_mode: U
 comparative_claim: none
 named_comparator: none
 dependency:
-  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CARD_FRR_REFINEMENT_2026-09-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -25,6 +24,8 @@ tags: [GRG, DownstreamStack, AuthorAdjudication, Perspective, Epistemology, Self
 This record preserves the author's acceptance of the substantial downstream exploration that branched out during the 2026-09-23 GRG Grammar Card discussion.
 
 It is deliberately separated from the Card package because the dialogue moved beyond the immediate Card-design task into candidate downstream implications concerning:
+
+> Sibling-package note: the FRR/Card package is maintained in a separate PR. This record is self-contained and does not depend on that unmerged sibling branch. Once both packages land, a later mechanical cross-link may be added if useful.
 
 - non-neutrality / neutrality maps;
 - higher-order formation;
