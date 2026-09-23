@@ -13,6 +13,7 @@ dependency:
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
 tags: [GRG, AntiDrift, CrossObjectification, Review, Failure, Projection]
 ---
 
@@ -39,6 +40,45 @@ object mismatch is declared irrelevant
 ~~~
 
 Both are prohibited.
+
+## 0.1 Continuity-recovery Gate 0 — GRG is inside the audit
+
+The 2026-09-23 dialogue recovery adds a precondition to all gates below.
+
+Current GRG constructs are not exempt from the same objectification analysis applied to source domains.
+
+Before a positive grammar candidate is named:
+
+~~~text
+relevant source cut
+-> reconstruct why it exists / what it compresses
+
+relevant GRG cut
+-> reconstruct why it exists / what it compresses
+
+then
+-> compare / split / demote / delete / retain
+-> run existing-owner semantic absorption
+-> only then consider a new candidate
+~~~
+
+Required question:
+
+> What does the source make us understand differently about why the current GRG cut was formed?
+
+If the answer is only:
+
+> “the source has something that looks like the GRG term”,
+
+the audit has failed.
+
+A case may validly conclude that the current GRG term is:
+
+- too coarse;
+- too broad;
+- merely one source-local projection;
+- already decomposed by existing GRG owners;
+- unnecessary.
 
 ## 1. Gate A — research-question rewrite
 
@@ -225,7 +265,15 @@ causal-level attribution survives:
 
 ## 9. Gate I — absorption
 
-Before prospective gain:
+Before prospective gain, run **both** source-native absorption and existing-GRG-owner semantic absorption.
+
+Existing-GRG-owner check:
+
+> Is the proposed burden already owned, decomposed, or typed by GRG v0.3, the 2026-09-22 capacity / intervention / reach / reconstructibility records, GTS composition, or an active canonical SRT owner?
+
+If yes, prefer `INHERIT / DECOMPOSITION / CALIBRATION / OPERATIONALIZATION / SOURCE_REALIZATION` over a new GRG name.
+
+Before prospective gain against the mature source:
 
 > Does mature source-native practice already own the same useful relation, variable distinction, diagnostic, control or intervention question?
 
@@ -357,6 +405,8 @@ A reviewer should be able to answer:
 
 ~~~text
 [ ] source-native first was actually executed
+[ ] relevant GRG cuts were also treated as explananda
+[ ] existing GRG-owner semantic absorption was checked before new naming
 [ ] GRG vocabulary did not determine the source object inventory
 [ ] zero object correspondence was allowed
 [ ] GRG lens / projection risk was declared
