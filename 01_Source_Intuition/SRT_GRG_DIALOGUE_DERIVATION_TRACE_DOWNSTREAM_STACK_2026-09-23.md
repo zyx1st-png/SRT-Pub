@@ -1168,7 +1168,9 @@ The dialogue eventually produced a very broad candidate arc:
 
 `-> Endogenous Perspective`
 
-`-> Bearer / Self / Anticipation`
+`-> separately gated Stable-ISP / Bearer routes where applicable`
+
+`-> temporal-lineage / Self candidate / Anticipation`
 
 `-> Valuation / Attention / Intervention`
 
@@ -1190,7 +1192,18 @@ This was the broadest vertical recursion reached in the divergent analysis.
 
 ---
 
-## 42. Why this analysis should not be inserted wholesale into the Grammar Card
+## 42. External-neighbor / originality debt exposed by review
+
+Independent review correctly noted that several downstream formulations may overlap mature literatures rather than constitute GRG-specific results. Reviewer-raised comparator families include causal abstraction / coarse-graining, standard externality / internalization analysis, Hart-style secondary-rule structures, and autopoietic / organizational self-maintenance.
+
+These are **retrieval prompts, not source-grounded claims in this trace**. They have not been independently read here. Therefore:
+
+- this derivation makes no novelty / irreducibility claim for those downstream formulations;
+- reopening the relevant branch requires naming and reading source-native comparator(s);
+- if the mature comparator already owns the same distinction or mechanism, the correct result is inheritance / reorganization / absorption, not GRG credit;
+- the branch map's mature-neighbor, closure and abandon criteria control later work.
+
+## 43. Why this analysis should not be inserted wholesale into the Grammar Card
 
 After returning to the original topic, the dialogue recognized that this development had become too expansive for the immediate Card task.
 
@@ -1209,7 +1222,7 @@ Reasons:
 
 ---
 
-## 43. Suggested future drill-down order
+## 44. Suggested future drill-down order
 
 The dialogue itself did not finalize a mandatory order, but the accepted material naturally forms several bounded research branches:
 
@@ -1228,7 +1241,7 @@ Each branch should later be reopened only when a source-native case makes it loa
 
 ---
 
-## 44. Current stop boundary
+## 45. Current stop boundary
 
 This derivation trace is preservation, not closure.
 
