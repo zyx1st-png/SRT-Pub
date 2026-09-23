@@ -82,18 +82,16 @@ Do not substitute one system for another.
 
 ## 3. Canonical / cross-owner structural families
 
-| Routing label | Near / confusable wording | Owner-grounded boundary | Current owner / route | Status / maturity | Semantic relation |
+| Routing label | Near / confusable wording | Owner-grounded boundary | Current owner / route | Status / maturity | Collision / routing note |
 |---|---|---|---|---|---|
 | Selection occurrence | actualised Selection, event-level Selection, descriptive/modelled change | occurrence != retained history; genuine actualised Selection vs merely descriptive/modelled change remains OPEN | Spine §§2–3; Phase-3 provenance map | canonical routing + OPEN edge | PARTIAL_OVERLAP |
 | retained historical efficacy / history | sediment, sedimentation, retained consequence, writeback, inheritance | later-effect burden where prior Selection remains materially effective; not required for every occurrence | Spine §4; SRT_Irreversibility.md | canonical routing | PARTIAL_OVERLAP |
-| One | formed process-unity, recurrent organization | formed process-unity carried by a **relatively separable Selection-mediated vertical reconstitution / self-conditioning path**; ordinary causal recurrence is insufficient | SRT_One_Formation.md §2; Spine §5 | canonical semantic owner / P1-candidate architecture | DISTINCT_FROM_NEIGHBORS |
-| Selection-position | operative locality, position, perspective-position | time-local operative aspect of an already formed One; not a second universal endpoint and not automatically perspective/Bearer/subject-position | One Formation §§5–6; Spine §6 | canonical semantic owner | DISTINCT_FROM_NEIGHBORS |
-| Stable ISP | stable position, recurrent standing, persistent ISP | stronger recurrent standing than One | Core_21b P1-T06; Spine §7 | canonical theorem owner | DISTINCT_FROM_NEIGHBORS |
-| Bearer | bearer-position, prospective self-exposure, subject carrier | separately gated from One / Selection-position / Stable ISP | Spine §8 + compatible Bearer owners | gated / stronger standing | DISTINCT_FROM_NEIGHBORS |
+| One | formed process-unity, recurrent organization | formed process-unity carried by a **relatively separable Selection-mediated vertical reconstitution / self-conditioning path**; ordinary causal recurrence is insufficient | SRT_One_Formation.md §2; Spine §5 | canonical semantic owner / P1-candidate architecture | do not collapse with neighboring terms |
+| Selection-position | operative locality, position, perspective-position | time-local operative aspect of an already formed One; not a second universal endpoint and not automatically perspective/Bearer/subject-position | One Formation §§5–6; Spine §6 | canonical semantic owner | do not collapse with neighboring terms |
+| Stable ISP | stable position, recurrent standing, persistent ISP | stronger recurrent standing than One | Core_21b P1-T06; Spine §7 | canonical theorem owner | do not collapse with neighboring terms |
+| Bearer | bearer-position, prospective self-exposure, subject carrier | separately gated from One / Selection-position / Stable ISP | Spine §8 + compatible Bearer owners | gated / stronger standing | do not collapse with neighboring terms |
 | perspective | positionality, Selection-position, subject-position | finite positionality != formed perspective; Selection-position != perspective-bearing subject-position automatically | Spine §6; One Formation | partly OPEN / owner-routed | PARTIAL_OVERLAP |
 | anticipation | future-conditioning, prospective self-indexing | later-selectability effect != formed-position anticipation automatically; formed anticipation != prospective self-indexing P automatically | Spine §6.3 | gated / partly OPEN | PARTIAL_OVERLAP |
-
-Note: `DISTINCT_FROM_NEIGHBORS` in the table is plain English status, not a new admission label. The five lexical triage labels in §1 govern new-term decisions.
 
 ## 4. GRG research-term families
 
@@ -128,7 +126,7 @@ These rows are research routing, not canonical SRT definitions.
 | wholeward | wholeward integration, higher-order gain, hierarchy growth | weak source-level wholeward in Selection Vertical; capacity §§F–G distinguish regeneration/transformation/wholeward gain; reach §AC sharpens via friction conversion/reconstructive reach; v0.3 §17 owns programme direction | those owners | multi-stage research; not canonical SRT | PARTIAL_OVERLAP |
 | higher-order | hierarchy, integration, composition | broader generative integration, not merely more hierarchy; relation to wholeward/composition must be stated | Selection Vertical §J; capacity §E; GRG v0.3 §11 | research family | OVERLOADED_SAME_NAME |
 | Generative Transformation Signature (GTS) | relation record, grammar card, candidate operator | primary bounded record unit; a record schema, not an ontic object or automatically a new grammar candidate | GRG v0.3 §8 | v0.3 active research schema | PARTIAL_OVERLAP |
-| grammar candidate | operator, relation, higher-order operator, pattern | only after current owner/neighbor absorption leaves a nontrivial residual | current STATUS-routed GRG protocol/template | admission-gated research | DISTINCT_BURDEN only provisionally, then downstream audits |
+| grammar candidate | operator, relation, higher-order operator, pattern | only after current owner/neighbor absorption leaves a nontrivial residual | current STATUS-routed GRG protocol/template | admission-gated research | lexical distinctness never substitutes for downstream audits |
 
 ## 5. Working / retired wording
 
