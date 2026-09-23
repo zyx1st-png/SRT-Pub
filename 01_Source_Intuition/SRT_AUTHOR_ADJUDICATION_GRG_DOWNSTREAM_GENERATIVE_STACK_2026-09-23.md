@@ -14,10 +14,13 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
 tags: [GRG, DownstreamStack, AuthorAdjudication, Perspective, Epistemology, Self, Intervention, Power, Civilization]
 ---
 
 # Author adjudication — accepted downstream GRG generative-stack exploration
+
+> **Dialogue-continuity recovery note:** “parked outside the Card core” means these hypotheses must not become universal Card fields. It does **not** mean all of the preserved analysis is low-priority context. The recovery master marks the reflexive neutrality / objectification / reconstructibility / epistemology / intervention nodes that remain continuity-load-bearing while keeping domain-specific downstream branches bounded.
 
 ## 0. Role
 
