@@ -427,7 +427,7 @@ Template / protocol / case / experiment if any.
 
 Must identify:
 
-- LOAD_BEARING records;
+- records with required retrieval value for continuation;
 - active execution object;
 - HOLD items;
 - forbidden shortcuts.
