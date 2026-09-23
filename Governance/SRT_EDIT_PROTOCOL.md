@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: governance
 canonical: false
 dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
-updated: 2026-06-05
+updated: 2026-09-23
 ---
 
 # SRT Edit Protocol
@@ -65,6 +65,41 @@ updated: 2026-06-05
 1. `_SRT_SYMBOL_TABLE.md`
 2. 对应 canonical file
 3. 相关主文 / compact core / registry 回链
+
+### C 类语义编辑的 pre-merge 独立复审
+
+对 **C 类 / foundation-level canonical semantic edit**，上述交叉检查之外，还必须在 merge 前完成一次独立内容复审。
+
+最低要求：
+
+1. 先形成可审的 final semantic diff / target head；
+2. 复审者不能与同一 semantic edit pass 混为一体；可由作者本人、独立人工 reviewer，或独立 session / model context 执行，但必须能重新读取 owner / source / OPEN guards，而不是仅复述编辑者结论；
+3. 复审记录至少写明 target head、控制 owner / source、PASS / REVISE / FAIL 判据，以及被刻意保持 OPEN 的问题；
+4. 只要结论为 REVISE / FAIL，该 canonical semantic edit 就不得 merge；
+5. 语义 head 已独立 PASS 后的纯 mechanical / deterministic generated closure 可单独提交；但生成面仍须通过 owning generator / consistency check，不得手改制造一致。
+
+这条规则不把普通 A/B 类编辑升级成 C 类，也不要求为纯 typo、导航、版本号或 deterministic regeneration 重复做内容复审。
+
+### Same-day rapid author-dialogue guard
+
+当同一天的 author dialogue 仍在快速生成、修正或相互覆盖 foundation-level 概念时：
+
+~~~text
+dialogue / analysis
+-> source-intuition / adjudication record
+-> bounded conflict / OPEN map
+-> only then consider Freeze-A semantic landing
+~~~
+
+在该对话尚未形成稳定的 bounded author decision 之前，不得直接把其中的新定义 / 新判据 / 新等价关系写入 Freeze-A canonical owner。
+
+允许例外仅限：
+
+- 已有明确作者裁决足以机械执行的 bounded correction；
+- typo / link / metadata / provenance-only 等不改变理论语义的编辑；
+- 为防止下游误读而做的 fail-closed guard，但该 guard 不得替作者关闭尚未裁决的理论问题。
+
+目的不是延迟作者直觉，而是防止同日仍在演化的 machine consolidation 被过早固化成 canonical authority。
 
 ## 默认工作流
 
