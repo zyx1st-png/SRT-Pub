@@ -62,7 +62,7 @@ Desired output:
 - negative controls;
 - relation to canonical OPEN without premature closure.
 
-mature-neighbor owner = UNASSIGNED — must name and read source-native comparator(s) before reopening.
+owner / audit crosswalk = `Core_Law/SRT_Generative_Ontology_Spine.md §2.1` owns the canonical OPEN; `03_Bridges/SRT_Selection_Event_CompactCore.md` + `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` own the bounded practice-layer event audit. External mature comparator(s) remain to be named before reopening.
 closure criterion = a bounded audit either yields a non-circular discriminator with reachable negative cases, or explicitly demonstrates that the current route cannot close the canonical OPEN and parks it with a precise residual.
 abandon criterion = proposed tests reduce to the canonical non-neutrality wording itself, or admit nearly all well-individuated objective changes without discrimination.
 
@@ -91,15 +91,15 @@ Core questions:
 
 - what distinguishes burden reduction from foreclosure?
 - how do obsolete equivalence relations persist?
-- what support burden indicates postponed recutting?
-- what empirical signatures separate debt from ordinary cost?
+- when is added support only a symptom of deferred / displaced consequential mismatch rather than debt itself?
+- what empirical signatures separate generative debt from ordinary maintenance cost and friction?
 
 Desired output:
 
 - dynamic criteria;
 - no static moral labeling.
 
-mature-neighbor owner = UNASSIGNED — must include source-native maintenance / resilience / technical-debt or analogous comparator(s) before reopening.
+research-term owner = `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md §Y`; support accumulation must not redefine debt. Mature-neighbor work on maintenance / resilience / technical-debt or analogous comparator(s) must also be named before reopening.
 closure criterion = source-native evidence distinguishes scaffold-like burden reduction, foreclosure, and generative-debt accumulation from ordinary cost using independently checkable consequences.
 abandon criterion = the proposed debt / cage labels add no discriminator beyond generic cost, inefficiency or rigidity.
 
@@ -137,7 +137,7 @@ Desired output:
 - source-native tests for endogenous perspective;
 - explicit separation from consciousness.
 
-mature-neighbor owner = UNASSIGNED — must name source-native perspective / control / representation comparator(s) before reopening.
+canonical owner crosswalk = `Core_Law/SRT_Generative_Ontology_Spine.md §6.3` plus `Core_Law/SRT_One_Formation.md`; external source-native perspective / control / representation comparator(s) must still be named before reopening.
 closure criterion = a source-native case shows an internally maintained relevance / neutrality organization whose perturbation changes later selection-relevant routing, with canonical perspective mapping separately gated.
 abandon criterion = all apparent perspective structure is imposed by the analyst or neutrality assignment alone is doing all the work.
 
@@ -177,7 +177,7 @@ Desired output:
 - source-native candidate mechanisms;
 - no phenomenology inference from control / reward alone.
 
-mature-neighbor owner = UNASSIGNED — must name source-native attention / salience / valuation / affect comparator(s) before reopening.
+owner crosswalk = `_SRT_D_VALUE_CANONICAL.md` for canonical d / stake-coupled concern and `Core_Law/SRT_Generative_Ontology_Spine.md §8` for Bearer P+E routing; `GRG stake != canonical P != canonical d != Concern` automatically. Source-native attention / salience / valuation / affect comparator(s) must still be named before reopening.
 closure criterion = source-native mechanisms independently distinguish stake, valuation and attention with negative controls, and the mapping changes at least one diagnosis / expectation without inferring phenomenality.
 abandon criterion = the branch only relabels reward, control priority or salience signals with no added discriminator.
 
@@ -205,7 +205,7 @@ Desired output only when reopened:
 - competitor-source pressure;
 - no convenience closure.
 
-mature-neighbor owner = UNASSIGNED — strongest consciousness comparator(s) must be named and read before reopening.
+repository owner crosswalk = `Philosophy/SRT_Consciousness_Conditions.md` and `Philosophy/SRT_HardProblem_Epistemology.md`; strongest external consciousness comparator(s) must also be named and read before reopening.
 closure criterion = a positive sufficient-condition candidate is stated, exposed to counterexamples / mature-neighbor pressure, and tied to an independently testable missing burden; otherwise the branch remains explicitly OPEN and is parked.
 abandon criterion = repeated attempts add only functional correlates or new negative guards without any positive candidate burden; in that case stop expansion rather than adding another layer.
 
@@ -232,7 +232,7 @@ abandon criterion = state/reach/proxy/grammar distinctions collapse into ordinar
 
 Core questions:
 
-- cross-Bearer intervention;
+- cross-position / cross-participant intervention;
 - influence vs coordination vs coercion;
 - consent as endogenous incorporation;
 - autonomy as preserved re-Selection under coupling;
@@ -243,7 +243,7 @@ Desired output:
 - source-native multi-agent cases;
 - avoid importing legal / political conclusions before source work.
 
-mature-neighbor owner = UNASSIGNED — must name source-native multi-agent / consent / coercion / coordination comparator(s) before reopening.
+mature-neighbor owner = UNASSIGNED — must name source-native multi-agent / consent / coercion / coordination comparator(s) before reopening. Bearer terminology requires the canonical P + E gate; a claim that a group / institution is itself a collective One / Stable ISP must separately pass `Core_Law/SRT_Collective_Selection.md T-COLL-1`. Ordinary relations among multiple agents do not require T-COLL-1.
 closure criterion = at least one source-native case discriminates influence, coordination and coercion using independently specified re-Selection / exit / reconstruction variables.
 abandon criterion = the branch functions only as normative relabeling or cannot separate descriptive power structure from evaluative judgment.
 
@@ -264,7 +264,7 @@ Desired output:
 - explicit mechanism ownership;
 - no claim that GRG replaces domain theory.
 
-mature-neighbor owner = UNASSIGNED — economics / legal / institutional source owners must be selected before reopening.
+mature-neighbor owner = UNASSIGNED — economics / legal / institutional source owners must be selected before reopening. Describing institutions as coordination structures does not establish collective One / Stable-ISP standing; any such standing claim must separately pass `Core_Law/SRT_Collective_Selection.md T-COLL-1`.
 closure criterion = money, credit, institution or law mappings preserve source-native mechanisms, pass the anti-metaphor test, and specify at least one failure / recut condition.
 abandon criterion = “proxy”, “meta-intervention” or “anti-closure” language merely redescribes standard domain roles without changing any boundary, expectation or intervention question.
 
@@ -284,7 +284,7 @@ Desired output:
 - historical / institutional source-native grounding;
 - bounded structural criteria rather than civilizational ranking.
 
-mature-neighbor owner = UNASSIGNED — historical / institutional / civilizational source owners must be selected before reopening.
+mature-neighbor owner = UNASSIGNED — historical / institutional / civilizational source owners must be selected before reopening. Civilization-scale relational analysis does not itself establish a collective One / Stable ISP; any such standing claim must separately pass `Core_Law/SRT_Collective_Selection.md T-COLL-1`.
 closure criterion = bounded cases operationalize the proposed generative-health variables and permit contrary evidence to falsify or narrow the synthesis without ranking civilizations.
 abandon criterion = the branch can only produce broad normative summaries, retrospective storytelling or control-vs-openness slogans without source-native discriminators.
 
@@ -297,6 +297,8 @@ Across all branches:
 `same role != same mechanism`.
 
 `same mechanism != same ontology`.
+
+`declared GRG position != canonical Selection-position automatically`.
 
 `position != perspective automatically`.
 
