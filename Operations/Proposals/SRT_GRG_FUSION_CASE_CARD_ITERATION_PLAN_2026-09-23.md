@@ -85,7 +85,8 @@ Companion method:
 
 - `Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md`;
 - `Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md`;
-- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md`.
+- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md` — #1040 provenance / first-level record;
+- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_2_2026-09-23.md` — resumed DISCOVERY record under dialogue-continuity recovery.
 
 Hard correction:
 
