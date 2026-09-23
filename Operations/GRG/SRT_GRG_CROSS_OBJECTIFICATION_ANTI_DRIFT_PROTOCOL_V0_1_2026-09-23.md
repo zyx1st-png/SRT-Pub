@@ -271,7 +271,7 @@ Existing-GRG-owner check:
 
 > Is the proposed burden already owned, decomposed, or typed by GRG v0.3, the 2026-09-22 capacity / intervention / reach / reconstructibility records, GTS composition, or an active canonical SRT owner?
 
-If yes, prefer `INHERIT / DECOMPOSITION / CALIBRATION / OPERATIONALIZATION / SOURCE_REALIZATION` over a new GRG name.
+If yes, use the unified owner-overlap result vocabulary: `INHERIT / REALIZATION / REORGANIZATION / NO_GRG_GAIN`; only a `RESIDUAL_CANDIDATE` may justify a new GRG name.
 
 Before prospective gain against the mature source:
 
