@@ -65,37 +65,31 @@ Under the merged provenance owner `Operations/Audits/SRT_REPOSITORY_SELF_RECONST
 
 This keeps the package author-approved as a research direction without recreating the provenance debt closed in #1032.
 
-## 2. Core accepted synthesis
+## 2. Core preserved synthesis
 
-The author accepts preserving the following generative research arc as a candidate downstream stack:
+The following machine-consolidated research graph is preserved under the package-level author permission; its individual clauses remain M unless separately supported by an item-level author event:
 
-`Selection / Actualization`
+`Selection / actualising-side analysis`
 
-`-> retained efficacy / higher-order formation`
+`-> retained efficacy / higher-order formation heuristic`
 
-`-> operational One / generative re-entry`
+`-> endogenous perspective / epistemic-proxy candidate`
 
-`-> endogenous Selection position / perspective candidate`
+then branching into:
 
-`-> epistemic proxy / reconstruction loop`
+- structural / thin anticipation where source-native evidence supports it;
+- separately gated Stable-ISP / Bearer routes where applicable;
+- temporal-lineage / self candidates;
+- stake / valuation / attention candidates;
+- intervention / agency-like organization;
+- multi-agent power / shared proxy / institution;
+- civilizational coordination hypotheses.
 
-`-> separately gated Stable-ISP / Bearer routes where applicable`
-
-`-> temporal-lineage / self candidate`
-
-`-> anticipation / stake / valuation / attention`
-
-`-> intervention / agency-like organization`
-
-`-> multi-agent power / shared proxy / institution`
-
-`-> civilizational Selection architecture`.
-
-This is a **dependency / thickening research graph**, not a mandatory chronological ladder.
+This is a **dependency / thickening research graph**, not a mandatory chronological ladder. It does not create an `operational One` synonym or bypass canonical One / Selection-position / Bearer owners.
 
 Different mechanisms may instantiate some modules without instantiating later ones.
 
-## 3. Accepted perspective / endogeneity direction
+## 3. Preserved perspective / endogeneity direction
 
 The dialogue proposed that perspective should not begin as a consciousness term.
 
@@ -107,7 +101,7 @@ This can be described heuristically as a locus at which distinctions are organiz
 
 An endogenous perspective candidate arises when that distinction organization is maintained by the formed system's own relational organization rather than solely by an external analyst.
 
-Accepted guard:
+Preserved guard:
 
 `position alone != perspective`
 
@@ -121,9 +115,9 @@ The current canonical / STATUS routing for perspective and Bearer remains author
 
 ## 4. Ontology / epistemology continuity direction
 
-The author explicitly endorsed the dialogue's suggestion that perspective / endogeneity may provide a route for unifying ontology and epistemology.
+The dialogue proposed that perspective / endogeneity may provide a route for relating ontology and epistemology. No separate item-level author event is preserved here; the following wording therefore remains M under the package-level direction.
 
-The accepted research direction is:
+The preserved research direction is:
 
 - ontology does not wait for an external knower;
 - a perspective can itself be an internally generated ontological relation;
@@ -136,7 +130,7 @@ Working synthesis:
 
 This remains a research hypothesis, not a closed philosophical theorem.
 
-## 5. Accepted temporal thickening direction
+## 5. Preserved temporal thickening direction
 
 The dialogue preserved a distinction among:
 
@@ -152,13 +146,13 @@ Additional guards:
 - every self-lineage analysis must declare the operational lineage relation being tracked;
 - Bearer language remains separately gated by the canonical `formed One / Selection-position + P + E -> Bearer` route.
 
-Accepted guard:
+Preserved guard:
 
 `self != self-model`.
 
 A self-model is a possible proxy about the already formed temporal lineage.
 
-## 6. Accepted anticipation direction
+## 6. Preserved anticipation direction
 
 Anticipation was separated into at least:
 
@@ -175,7 +169,7 @@ Rather:
 
 This permits future possibilities to acquire current reach without invoking retrocausality.
 
-## 7. Accepted stake / valuation / attention direction
+## 7. Preserved stake / valuation / attention direction
 
 The dialogue proposed that a mature endogenous position must move beyond binary neutrality.
 
@@ -189,11 +183,18 @@ Candidate roles:
 
 These are candidate generative roles.
 
+Non-identity / gate guard:
+
+- `GRG stake != canonical P` automatically;
+- `GRG stake != canonical d`;
+- `GRG stake != Concern`;
+- any Bearer-like use must independently pay the canonical P + E route.
+
 They do not establish phenomenal feeling.
 
-## 8. Consciousness boundary accepted as OPEN
+## 8. Consciousness boundary preserved as OPEN
 
-The author accepts preserving the hard stop:
+The package preserves the following hard stop at M-level:
 
 A generative account may explain:
 
@@ -213,7 +214,7 @@ Working OPEN boundary:
 
 > GRG may provide a candidate grammar for endogenous generative perspective and subject-level organization; a sufficient condition for phenomenal consciousness is not established.
 
-## 9. Accepted intervention direction
+## 9. Preserved intervention direction
 
 Intervention was distinguished from generic causation.
 
@@ -227,9 +228,9 @@ This produces a broader loop:
 
 `ontology -> epistemology -> intervention/action -> new ontology`.
 
-## 10. Accepted multi-agent / power direction
+## 10. Preserved multi-agent / power direction
 
-Power was proposed as a relation in which one Selection position can materially alter another position's:
+Power was proposed as an M-level relation in which one **declared operative position** can materially alter another position's:
 
 - reach;
 - neutrality map;
@@ -248,7 +249,7 @@ Consent was treated not as a mere yes-token but as a stronger candidate conditio
 
 These are research candidates, not legal definitions.
 
-## 11. Accepted institution / money / civilization direction
+## 11. Preserved institution / money / civilization direction
 
 The dialogue preserved several downstream GRG interpretations:
 
