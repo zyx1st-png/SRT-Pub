@@ -108,9 +108,7 @@ At minimum:
 
 ```text
 primitive Selection
-= reality under actual generative differentiation
-  whose non-neutral actualisation leaves a not-fully-erasable
-  generative consequence.
+= reality under genuine actualised non-neutral generative differentiation.
 ```
 
 ### 2.1 Selection term-of-art guard
@@ -121,16 +119,18 @@ The word `Selection` here is an SRT primitive, not conventional option-choice la
 Selection
 != picking from a pre-given menu;
 Selection
-!= arbitrary change;
-Selection
-requires a generatively retained / inheritable consequence.
+!= arbitrary descriptive / modelled change;
+Selection occurrence
+!= retained historical efficacy
+!= sedimentation
+!= generative inheritance.
 ```
 
 A prior option space is not required. Positions, alternatives, relations and reachability can themselves become differentiated through Selection.
 
-The consequence need not persist as a local object or memory token. It may be diffuse in the later generative field or inherited as generative capacity by a new realization / higher-order formation.
+Terminal Selection remains genuine: a Selection occurrence does not require a later process in which sediment can persist. Where prior Selection remains materially effective later, that stronger burden belongs to retained historical efficacy / L2-side history.
 
-This clarification does **not** by itself settle the exact terminal boundary. Compatibility with legacy `terminal Selection remains genuine` wording remains OPEN and must be reconciled at the owning P0/L0 boundary.
+The exact anti-tautology criterion separating genuine actualised Selection from merely descriptive / modelled change remains OPEN. Do not resolve that OPEN problem by reintroducing retained consequence as a primitive occurrence requirement.
 
 Two co-primitive analytic burdens are required:
 
