@@ -34,17 +34,17 @@ The question is:
 
 Answer after the author's 2026-09-23 correction:
 
-> **NO. Accepted non-superseded machine analysis is continuation-load-bearing by default.**
+> **NO. Accepted non-superseded machine analysis is high-retrieval-value continuation context by default.**
 
 ## 1. Global rule established by this audit
 
 ```text
 authority = M
 can coexist with
-continuity importance = LOAD_BEARING
+retrieval value = REQUIRED FOR CONTINUATION
 ```
 
-No explicit `continuity_role: load_bearing` tag is required.
+No explicit a dedicated load-bearing metadata tag tag is required.
 
 The tag is optional metadata only.
 
@@ -85,7 +85,7 @@ File:
 
 Status:
 
-`LOAD_BEARING BY AUTHOR PROGRAMME CONVERGENCE`.
+`REQUIRED RETRIEVAL BY AUTHOR PROGRAMME CONVERGENCE`.
 
 Reason:
 
@@ -107,7 +107,7 @@ File:
 
 Status:
 
-`LOAD_BEARING BY AUTHOR ADJUDICATION`.
+`REQUIRED RETRIEVAL BY AUTHOR ADJUDICATION`.
 
 Reason:
 
@@ -129,7 +129,7 @@ File:
 
 Status:
 
-`LOAD_BEARING BY AUTHOR PROGRAMME DIRECTION`.
+`REQUIRED RETRIEVAL BY AUTHOR PROGRAMME DIRECTION`.
 
 Reason:
 
@@ -151,7 +151,7 @@ File:
 
 Status:
 
-`LOAD_BEARING FOR NON-SUPERSEDED ACCEPTED PACKAGE CONTENT`.
+`REQUIRED RETRIEVAL FOR NON-SUPERSEDED ACCEPTED PACKAGE CONTENT`.
 
 Reason:
 
@@ -165,7 +165,7 @@ Disposition:
 
 - A1 remains A1;
 - M remains M authority;
-- accepted non-superseded M analysis remains continuation-load-bearing;
+- accepted non-superseded M analysis remains high-retrieval-value continuation context;
 - later owners control where semantics changed.
 
 ### 3.5 2026-09-22 Selection / vertical dynamics
@@ -176,7 +176,7 @@ File:
 
 Status:
 
-`LOAD_BEARING HISTORICAL / PARTLY SUPERSEDED`.
+`REQUIRED HISTORICAL RETRIEVAL / PARTLY SUPERSEDED`.
 
 Reason:
 
@@ -211,7 +211,7 @@ File:
 
 Status:
 
-`LOAD_BEARING BY AUTHOR-CONFIRMED CONTINUATION`.
+`REQUIRED RETRIEVAL BY AUTHOR-CONFIRMED CONTINUATION`.
 
 Risk found:
 
@@ -232,7 +232,7 @@ Content that must not become skippable because it is M includes, where not later
 
 Disposition:
 
-`M authority; LOAD_BEARING continuation by default`.
+`M authority; REQUIRED continuation retrieval by default`.
 
 ### 3.7 2026-09-22 reach / reconstructibility / generative debt
 
@@ -243,7 +243,7 @@ Files:
 
 Status:
 
-`LOAD_BEARING BY AUTHOR-CONFIRMED CONTINUATION + EXPLICIT REQUEST TO PRESERVE DERIVATION`.
+`REQUIRED RETRIEVAL BY AUTHOR-CONFIRMED CONTINUATION + EXPLICIT REQUEST TO PRESERVE DERIVATION`.
 
 This is the strongest earlier example of the problem.
 
@@ -280,7 +280,7 @@ Files:
 
 Status:
 
-`LOAD_BEARING BY EXPLICIT AUTHOR BLANKET ACCEPTANCE OF THE ANALYSIS PACKAGE`.
+`REQUIRED RETRIEVAL BY EXPLICIT AUTHOR BLANKET ACCEPTANCE OF THE ANALYSIS PACKAGE`.
 
 The author explicitly required the whole Card derivation, including assistant analysis, to be written back and stated default approval.
 
@@ -305,7 +305,7 @@ Files:
 
 Status:
 
-`LOAD_BEARING BY EXPLICIT AUTHOR BLANKET ACCEPTANCE`.
+`REQUIRED RETRIEVAL BY EXPLICIT AUTHOR BLANKET ACCEPTANCE`.
 
 The author explicitly requested preservation of the divergent analysis, including assistant analysis, and stated default approval.
 
@@ -335,7 +335,7 @@ Files:
 
 Status:
 
-`LOAD_BEARING BY EXPLICIT PACKAGE ACCEPTANCE, LATER NARROWED BY DIALOGUE-CONTINUITY RECOVERY`.
+`REQUIRED RETRIEVAL BY EXPLICIT PACKAGE ACCEPTANCE, LATER NARROWED BY DIALOGUE-CONTINUITY RECOVERY`.
 
 The author explicitly accepted the assistant + Claude methodological correction package.
 
@@ -362,9 +362,9 @@ No evidence was found that these analyses had been physically deleted.
 
 The failure was **routing / retrieval weighting**, not repository absence.
 
-## 5. Why explicit LOAD_BEARING tagging alone is rejected
+## 5. Why a new load-bearing tag is rejected
 
-Making every accepted machine section carry a mandatory `continuity_role: load_bearing` field would create a new binary failure:
+Making every accepted machine section carry a mandatory a dedicated load-bearing metadata tag field would create a new binary failure:
 
 ```text
 tag present -> read
@@ -422,12 +422,12 @@ Was the problem mainly authority typing itself?
 Was the problem the absence of a separate continuity default?
   YES.
 
-Should every old file be manually tagged LOAD_BEARING?
+Should every old file be manually given a new load-bearing tag?
   NO.
 
 New default:
   author-accepted + non-superseded machine analysis
-  = continuation-load-bearing.
+  = high-retrieval-value continuation context.
 
 Authority:
   unchanged.

@@ -10,7 +10,6 @@ claim_mode: research_programme
 canonical: false
 ai_do_not_use_for_definition: true
 research_mode: U
-continuity_role: load_bearing
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DIALOGUE_CONTINUITY_RECOVERY_2026-09-23.md
   - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
@@ -22,7 +21,7 @@ dependency:
 tags: [GRG, DialogueContinuity, DualReconstruction, AntiDrift, Handoff, Reconstructibility]
 ---
 
-# GRG Dialogue Continuity + Dual Reconstruction Protocol v0.1
+# GRG Dialogue Continuity + Two-Sided Objectification Reconstruction Protocol v0.1
 
 ## 0. Purpose
 
@@ -58,39 +57,40 @@ It does not replace:
 
 It constrains how those surfaces are re-entered after a long-dialogue continuity failure.
 
-## 1. Authority / continuity separation
+## 1. Authority / retrieval-value separation
 
-Every recovered claim may have two independent annotations.
+Use the existing repository axes:
+
+- epistemic authority;
+- retrieval value;
+- currentness.
+
+Do not create a fourth repository-wide continuity metadata axis.
 
 ### 1.1 Epistemic authority
 
-Use the existing repository provenance classes:
+Use only:
 
 - A0-Q;
 - A0-P;
 - A1;
 - M.
 
-Do not invent a fifth authority class.
-
-### 1.2 Continuity role
+### 1.2 Retrieval value after author acceptance
 
 Default rule:
 
-> author-accepted / author-approved / author-continued machine analysis is continuation-load-bearing unless a later controlling record explicitly narrows, rejects, retires or supersedes it.
+> author-accepted / author-approved / author-continued machine analysis is required continuation context unless a later controlling record explicitly narrows, rejects, retires or supersedes it.
 
-Optional explicit labels remain available:
+This does not change authority:
 
-- `LOAD_BEARING`;
-- `SUPPORTING`;
-- `EXPLORATORY`;
-- `SUPERSEDED`.
+```text
+authority = M
+can coexist with
+retrieval value = REQUIRED FOR CONTINUATION
+```
 
-`continuity_role` is a retrieval override / clarification, not a gate. Its absence must never be read as `safe to ignore` when an author acceptance event exists.
-
-Likewise, `M`, `canonical: false`, `parked`, `downstream`, `companion` and support-only routing do not by themselves demote continuity importance.
-
-It does not change definition authority.
+The labels `canonical: false`, `parked`, `downstream`, `companion` and support-only routing do not by themselves demote accepted analysis.
 
 ## 2. Long-dialogue writeback rule
 
@@ -125,9 +125,7 @@ The derivation must preserve:
 
 ## 3. Handoff anti-compression rule
 
-A handoff is itself an epistemic proxy.
-
-Therefore it must not silently collapse the source-discovery space.
+A handoff is an execution instruction surface. It must not silently narrow the source-discovery space.
 
 Forbidden first-contact handoff form:
 
@@ -161,7 +159,7 @@ Current GRG concepts may be declared as **lens provenance**.
 
 They may not be specified as expected outputs.
 
-## 4. Dual reconstruction principle
+## 4. two-sided objectification reconstruction principle
 
 Every discovery case has two explanandum surfaces.
 
@@ -275,7 +273,7 @@ what alternative lens could have organized the source?
 
 This stage exposes bias; it does not validate the GRG lens.
 
-### Stage 5 — dual reconstruction of GRG cuts
+### Stage 5 — reconstruct relevant GRG cuts as explananda
 
 For each GRG term that now appears useful, run:
 
@@ -288,17 +286,17 @@ what it distinguishes:
 what this source reveals:
 ```
 
-Then choose one disposition:
+Then choose one **GRG-cut action**:
 
-- `EXPLAINED_AS_WORKING_CUT`;
-- `RETAINED`;
+- `RETAIN`;
 - `SPLIT`;
-- `MERGED`;
-- `DEMOTED`;
-- `DELETED`;
-- `SOURCE_LOCAL_ONLY`;
-- `FORMALISM_REJECTED`;
+- `MERGE`;
+- `DEMOTE`;
+- `DELETE`;
+- `SOURCE_LOCAL`;
 - `INSUFFICIENT_EVIDENCE`.
+
+These actions describe what happens to the current GRG cut. They are separate from the owner-overlap result vocabulary in Stage 6.
 
 Do not create a new GRG term merely because a current term splits.
 
@@ -312,17 +310,17 @@ Before naming a new grammar candidate, compare the exact proposed burden against
 - active canonical owners where the term touches SRT;
 - strongest mature source-native comparator.
 
-Possible dispositions:
+Use the existing programme language plus two explicit result states:
 
-- `INHERIT`;
-- `DECOMPOSITION`;
-- `CALIBRATION`;
-- `OPERATIONALIZATION`;
-- `SOURCE_REALIZATION`;
-- `ABSORBED / NO GRG GAIN`;
-- `NONTRIVIAL RESIDUAL REMAINS`.
+- `INHERIT` — an existing GRG owner already carries the relevant burden;
+- `REALIZATION` — the source supplies a domain-specific realization of an inherited burden;
+- `REORGANIZATION` — the source forces the existing GRG cut / decomposition to change;
+- `NO_GRG_GAIN` — mature source theory / current GRG owners absorb the useful result;
+- `RESIDUAL_CANDIDATE` — a nontrivial burden remains after all prior checks.
 
-Only the last item opens Stage 7.
+Only `RESIDUAL_CANDIDATE` opens Stage 7.
+
+Do not use `CALIBRATION` as a generic disposition here; that term already has a programme-level meaning in the framework-vs-calibration route.
 
 ### Stage 7 — grammar candidate extraction
 
@@ -381,7 +379,9 @@ Do not escape by moving to a more abstract label.
 
 Do not treat “compatible with GRG” as evidence.
 
-## 7. Objectification-as-explanandum gate
+## 7. Objectification-as-explanandum gate — M-level operational rule
+
+This is an M-level operational method rule under the author-approved recovery direction; it is not A1 wording or canonical theory.
 
 Before any new candidate, reviewers must be able to answer:
 
@@ -427,7 +427,7 @@ Template / protocol / case / experiment if any.
 
 Must identify:
 
-- LOAD_BEARING records;
+- records with required retrieval value for continuation;
 - active execution object;
 - HOLD items;
 - forbidden shortcuts.
@@ -464,7 +464,7 @@ This protocol adds:
 - continuity provenance;
 - source-cut genealogy;
 - GRG-cut genealogy;
-- dual reconstruction;
+- two-sided objectification reconstruction;
 - existing-owner semantic absorption before new naming;
 - handoff anti-preloading.
 
@@ -495,7 +495,7 @@ It does **not** mean:
 
 > ignore it when reconstructing why GRG became reflexive, reconstructible or intervention-oriented.
 
-Use `continuity_role` to distinguish these.
+Use the existing retrieval-value / currentness rules and explicit scope dispositions (`EXPLORATORY / LOCAL_ONLY / SUPERSEDED`) to distinguish these.
 
 ## 13. Current stop rule
 

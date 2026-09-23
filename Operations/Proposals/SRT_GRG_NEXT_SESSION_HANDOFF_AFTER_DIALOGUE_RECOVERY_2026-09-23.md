@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-NEXT-SESSION-HANDOFF-AFTER-DIALOGUE-RECOVERY-20260923
 type: handoff
-status: draft
+status: archived
 date: 2026-09-23
 layer: operations
 epistemic_layer: os
@@ -17,6 +17,9 @@ tags: [GRG, Handoff, DialogueContinuity, Recovery, FreshSession]
 ---
 
 # GRG next-session handoff — after 2026-09-23 dialogue continuity recovery
+
+> **SUPERSEDED AS EXECUTION ROUTE — 2026-09-24.** This proposal-side handoff is retained as provenance. The active merged handoff is `Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md`, which reconciles STATUS, uses a bounded retrieval budget, corrects the #1039 chronology, and preserves §8.1 stop-loss accounting. Do not paste the prompt below into a fresh session as the controlling route.
+
 
 Use this handoff instead of the earlier evolution-target handoff embedded in the Fusion-Case Card iteration plan.
 

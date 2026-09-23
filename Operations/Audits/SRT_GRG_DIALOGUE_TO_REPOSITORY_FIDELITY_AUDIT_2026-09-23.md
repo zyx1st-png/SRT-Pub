@@ -8,7 +8,6 @@ epistemic_layer: os
 claim_mode: evidence
 canonical: false
 research_mode: U
-continuity_role: load_bearing
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DIALOGUE_CONTINUITY_RECOVERY_2026-09-23.md
   - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
@@ -64,17 +63,17 @@ These are audit dispositions, not epistemic authority classes.
 | “why this cut?” / cut genealogy | #1040 Stage 1 asks what objectification solves | PARTIAL | formation genealogy and GRG-side genealogy not load-bearing |
 | objectification enables re-entry | downstream trace §10–12 | MISROUTED | important analysis parked as downstream heuristic |
 | reconstructibility keeps objectification revisable | 9/22 owner + #1037 | PRESERVED | strong owner / trace support |
-| GRG as higher-order coarse-graining of source theories | distributed / implicit | PARTIAL | not stated as current continuity centre |
+| GRG as higher-order coarse-graining of source theories | Card trace §11.2 / v0.3 §18 / #1040 adjudication / SRT_AI_START | PRESERVED / MISROUTED | already explicit, but not reliably routed as required continuation context |
 | GRG as revisable cross-domain neutrality map | #1037 / #1038 neutrality work | PARTIAL / MISROUTED | present but not a primary method owner |
 | normativity as fallible expected neutrality | downstream trace §6 | MISROUTED | preserved but parked |
-| GRG can become epistemic cage | anti-self-sealing in #1040, dialogue trace | PARTIAL | self-sealing guard exists; full reflexive continuity burden weakened |
-| current GRG terms are probes + explananda | #1040 late self-revision only | MISSING / PARTIAL | terms are revisable coordinates, but their genealogy is not a mandatory reconstruction target |
+| GRG can become epistemic cage | Card trace §17 / #1040 anti-self-sealing / downstream trace | PRESERVED / MISROUTED | requirement existed; retrieval / route weight was the problem |
+| current GRG terms are probes + explananda | #1040 already treats GRG terms as provisional/revisable and grants self-revision rights | PARTIAL | missing burden is narrower: GRG-cut genealogy must occur before new-candidate naming, not only as late self-revision |
 | derive generative operations rather than hunt objects | v0.3 + #1040 | PARTIAL | process-first exists; handoff still preloaded specific GRG-shaped source questions |
 | ontology -> epistemology -> intervention -> ontology | #1038 downstream package | PRESERVED / MISROUTED | rich trace retained but explicitly parked |
 | anti-tautology OPEN | #1037 review fixes / canonical owners | PRESERVED | later reviewer corrections improved fidelity |
 | fusion case may modify GRG | #1037 / #1040 | PRESERVED | explicit self-revision rights |
-| later handoff should remain source-open | #1037 handoff | FAIL / MISROUTED | evolution questions preselected expected categories |
-| author + assistant analysis both needed for continuation | #1037/#1038 traces | PARTIAL | analysis exists, but no orthogonal continuity weight existed |
+| later handoff should remain source-open | pre-review handoff `7cd5c00cd`; corrected handoff `652e484ca` | SUPERSEDED / MISROUTED | #1039 started from the stale pre-review prompt; the merged #1037 handoff had already restored STATUS reconciliation and reduced terms to reading hints |
+| author + assistant analysis both needed for continuation | #1037/#1038 traces + existing retrieval profile | MISROUTED | repository already separated authority / retrieval value / currentness; what was missing was a default that author-accepted machine analysis retains high retrieval value plus a merged route that actually reaches it |
 
 ## 3. PR #1037 audit
 
@@ -114,19 +113,36 @@ Verdict:
 
 `CONTINUITY WEIGHT = IMBALANCED`.
 
-### 3.3 Handoff defect
+### 3.3 Handoff chronology correction
 
-The evolution handoff said “source-native first” while also telling the next session to pay particular attention to a fixed set of SRT/GRG-shaped questions.
+The earlier version of this audit over-attributed #1039 drift to the handoff that eventually merged with #1037.
 
-That is a method contradiction.
+Correct chronology:
 
-It does not matter that each bullet was labeled a “pressure” rather than an identity.
+```text
+09:17 UTC — commit 7cd5c00cd:
+  pre-review handoff explicitly names Selection / reach / neutrality /
+  retention / higher-order-formation pressure targets.
 
-The preselection still changes attention.
+09:52 UTC:
+  #1039 is created from that route.
 
-Verdict:
+10:03 UTC — commit 652e484ca:
+  reviewed correction restores STATUS reconciliation,
+  adds stop-loss,
+  and reduces evolution terms to reading hints.
 
-`HANDOFF = MISROUTED / SUPERSEDE`.
+11:04 UTC:
+  #1037 merges with the corrected handoff.
+```
+
+Therefore the direct failure was **stale prompt reuse before review landed**, not the final merged handoff itself.
+
+Repository consequence:
+
+- fresh-session execution must start from merged `main`;
+- unmerged / chat-copied handoff text is provenance only;
+- handoffs must reconcile the single STATUS `CURRENT NEXT`.
 
 ## 4. PR #1038 audit
 
@@ -183,7 +199,7 @@ Verdict:
 
 Required repair:
 
-> keep the branch hypotheses parked, but distinguish `continuity_role = LOAD_BEARING / SUPPORTING / EXPLORATORY`.
+> keep the branch hypotheses parked, but preserve high retrieval value for author-accepted reasoning while using explicit `EXPLORATORY / LOCAL_ONLY / SUPERSEDED` dispositions only where the scope is actually narrowed.
 
 ## 5. Provenance correction audit
 
@@ -270,7 +286,7 @@ Verdict:
 
 Required repair:
 
-`dual reconstruction before new-candidate extraction`.
+`source-cut + GRG-cut reconstruction before new-candidate extraction`.
 
 ## 7. PR #1039 audit
 
@@ -296,47 +312,42 @@ The recovery requirement is therefore:
 new candidate
 -> exact existing-owner semantic absorption audit
 -> only then:
-   NEW / DECOMPOSITION / CALIBRATION / OPERATIONALIZATION /
-   SOURCE-LOCAL / ABSORBED
+   INHERIT / REALIZATION / REORGANIZATION /
+   NO_GRG_GAIN / RESIDUAL_CANDIDATE
 ```
 
 Until that is run under the recovered method:
 
 `#1039 = HOLD / DO NOT MERGE`.
 
-## 8. Why the handoff caused more drift than the repository files themselves
+## 8. Why the stale prompt mattered
 
-The next-session prompt functioned as a high-authority retrieval proxy.
+A fresh model naturally gives high practical weight to explicit numbered tasks and named targets.
 
-A fresh model naturally treats:
-
-- explicit numbered tasks;
-- named target concepts;
-- declared next domain;
-- requested comparison axes;
-
-as its immediate attention architecture.
-
-Therefore the handoff can dominate richer but less directly routed repository context.
-
-In this case:
+In this incident the relevant sequence was ordinary instruction anchoring:
 
 ```text
-rich dialogue
--> adequate but distributed traces
--> one compact handoff with explicit evolution pressure list
--> handoff wins attention competition
+rich repository context
+-> pre-review prompt copied into a new session
+-> prompt names a narrow target list
+-> #1039 begins
+-> reviewed correction lands afterward
 ```
 
-This is exactly why long-dialogue continuity cannot be solved by “better summary” alone.
+No GRG `proxy`, `reach` or `reconstructibility` terminology is needed to describe this operational failure.
 
-The handoff must preserve reopening paths and avoid predetermining the expected source structure.
+The control is likewise operational:
 
-## 9. Corrected continuity architecture
+- fresh sessions start from merged handoffs;
+- merged handoffs reconcile STATUS;
+- current execution uses one NEXT;
+- stale / unmerged prompt text cannot outrank merged repository routing.
 
-Future long-dialogue writeback should preserve at least four layers:
+## 9. Corrected writeback architecture
 
-### L1 — direct author events
+Future long-dialogue writeback should preserve at least four surfaces without introducing new L-level labels:
+
+### Direct author events
 
 - author intuition;
 - correction;
@@ -346,7 +357,7 @@ Future long-dialogue writeback should preserve at least four layers:
 
 Typed under existing A0-Q / A0-P / A1 / M provenance rules.
 
-### L2 — visible analytical derivation
+### Visible analytical derivation
 
 - what problem the analysis was solving;
 - what alternatives were rejected;
@@ -356,9 +367,9 @@ Typed under existing A0-Q / A0-P / A1 / M provenance rules.
 
 Authority may remain M.
 
-Continuity role may still be LOAD_BEARING.
+If the author explicitly accepted the analysis package and it is not superseded, retrieval value is required by default while authority may remain M.
 
-### L3 — execution object
+### Execution artifact
 
 - Card;
 - template;
@@ -366,13 +377,13 @@ Continuity role may still be LOAD_BEARING.
 - experiment;
 - domain record.
 
-This is not allowed to silently replace L1 + L2 as “the theory”.
+This is not allowed to silently replace the author-event + analytical-derivation surfaces as “the theory”.
 
-### L4 — handoff
+### Handoff
 
 The handoff must:
 
-- route the next session back to L1/L2;
+- route the next session back to the author-event / analytical-derivation surfaces;
 - declare current execution artifacts;
 - identify HOLD / superseded routes;
 - avoid pre-specifying the expected answer in the new domain.
@@ -383,8 +394,8 @@ This audit requires the recovery package to:
 
 1. preserve the new author continuity correction;
 2. add the continuity recovery master;
-3. define an orthogonal continuity-role convention;
-4. define dual reconstruction:
+3. reuse the existing retrieval-value axis and make author-accepted non-superseded machine analysis required continuation context by default;
+4. define source-cut + GRG-cut reconstruction:
    - source objectification as explanandum;
    - current GRG objectification as explanandum;
 5. require existing-owner semantic absorption before new GRG candidate naming;

@@ -36,7 +36,7 @@ This v0.1 architecture remains a valid **first-level anti-object-mapping correct
 
 It is **not** the complete continuity owner for the long 2026-09-23 dialogue.
 
-The later recovery established an additional burden:
+The later author-approved recovery package proposes the following **M-level operational burden**:
 
 > current GRG terms / formalisms are not only revisable coordinates used to probe a source; they are also historically formed objectifications that must themselves become explananda.
 
@@ -48,7 +48,7 @@ Before Stage 5 may create a new grammar candidate, the recovery protocol require
 
 1. source-objectification genealogy;
 2. domain-native generative reconstruction;
-3. GRG-objectification genealogy / dual reconstruction;
+3. GRG-objectification genealogy / reconstruction of the relevant GRG cut as an explanandum;
 4. existing-owner semantic absorption;
 5. only then a decision about whether a nontrivial new candidate remains.
 
@@ -58,7 +58,7 @@ Hard guard:
 
 ~~~text
 GRG working objectification
-= probe + explanandum
+= probe + explanandum at current M-level method strength
 != source extraction target
 ~~~
 

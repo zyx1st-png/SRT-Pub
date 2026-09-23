@@ -26,7 +26,7 @@ tags: [GRG, Template, CrossObjectification, Reconstruction, Reobjectification]
 >
 > It does not require one-to-one domain-object / GRG-object mapping.
 >
-> **v0.2 continuity correction:** current GRG terms are probes **and explananda**. Before extracting a new grammar candidate, this record must reconstruct the relevant source cuts, reconstruct the relevant GRG cuts, and run existing-owner semantic absorption. v0.1 remains provenance for the #1040 first-level anti-mapping correction.
+> **v0.2 continuity correction:** current GRG terms are probes **and explananda** at M-level method strength. Before extracting a new grammar candidate, this record must reconstruct the relevant source cuts, reconstruct the relevant GRG cuts, and run existing-owner semantic absorption. v0.1 is frozen provenance for the #1040 first-level anti-mapping correction and is not a second template that must be kept behaviorally synchronized.
 
 ## 0. Mode and scope
 
@@ -41,7 +41,6 @@ root question:
 source-native boundary:
 strongest mature source baseline:
 held-out target, if TEST:
-current GRG lens motivating this inquiry:
 ~~~
 
 Hard guard:
@@ -188,7 +187,10 @@ That is not a failed case.
 
 ## 7. GRG lens / projection audit
 
+Only here, after source-native Stages 1–6, declare the GRG lens that motivated or organized the inquiry.
+
 ~~~text
+current GRG lens motivating this inquiry:
 which GRG distinctions suggested this recut:
 which reconstructed relations are independently source-supported:
 which relation exists only after GRG interpretation:
@@ -206,7 +208,7 @@ positive grammar claim:
   STOP / REVISE
 ~~~
 
-## 7.1 Dual reconstruction — current GRG cut as explanandum
+## 7.1 Current GRG cut as explanandum
 
 Do **not** move directly from source reconstruction to a new grammar candidate.
 
@@ -223,17 +225,15 @@ what this source reveals about the cut:
 source evidence vs analyst inference:
 ~~~
 
-Then choose a disposition:
+Then choose a **GRG-cut action**:
 
 ~~~text
-EXPLAINED_AS_WORKING_CUT
-RETAINED
+RETAIN
 SPLIT
-MERGED
-DEMOTED
-DELETED
-SOURCE_LOCAL_ONLY
-FORMALISM_REJECTED
+MERGE
+DEMOTE
+DELETE
+SOURCE_LOCAL
 INSUFFICIENT_EVIDENCE
 ~~~
 
@@ -263,23 +263,28 @@ Record:
 closest existing owner:
 exact overlap:
 remaining difference:
-disposition:
+owner-overlap result:
   INHERIT
-  DECOMPOSITION
-  CALIBRATION
-  OPERATIONALIZATION
-  SOURCE_REALIZATION
-  ABSORBED_NO_GRG_GAIN
-  NONTRIVIAL_RESIDUAL_REMAINS
+  REALIZATION
+  REORGANIZATION
+  NO_GRG_GAIN
+  RESIDUAL_CANDIDATE
 ~~~
 
-Only `NONTRIVIAL_RESIDUAL_REMAINS` opens a genuinely new GRG candidate.
+Definitions:
+- INHERIT = an existing GRG owner already carries the relevant burden;
+- REALIZATION = the source supplies a domain-specific realization of an inherited burden;
+- REORGANIZATION = the source forces the existing GRG cut / decomposition to change;
+- NO_GRG_GAIN = mature source theory / current GRG owners absorb the useful result;
+- RESIDUAL_CANDIDATE = a nontrivial burden remains after all prior checks.
+
+Only `RESIDUAL_CANDIDATE` opens a genuinely new GRG candidate.
 
 A split of an existing GRG cut is not automatically a new primitive / operator.
 
 ## 8. Grammar candidate extraction
 
-Open only if §7.2 ends in `NONTRIVIAL_RESIDUAL_REMAINS` and a nontrivial candidate exists.
+Open only if §7.2 ends in `RESIDUAL_CANDIDATE` and a nontrivial candidate exists.
 
 ~~~text
 candidate id / version:
