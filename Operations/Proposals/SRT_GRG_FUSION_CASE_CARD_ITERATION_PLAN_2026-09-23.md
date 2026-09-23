@@ -53,7 +53,7 @@ Therefore:
 - #1039 remains Draft / HOLD pending recovery audit;
 - do not open §6 / §7 later fusion domains automatically;
 - use Reconstruction Record v0.2 for any resumed discovery work;
-- current GRG terms are probes **and explananda** and must undergo dual reconstruction before a new grammar candidate is named.
+- current GRG terms are probes **and explananda** and the relevant source/GRG cuts must both be reconstructed before a new grammar candidate is named.
 
 This override does not change live `STATUS.md CURRENT NEXT`; it corrects the companion route's continuity semantics.
 
