@@ -62,7 +62,7 @@ The author accepts the following methodological direction:
 1. GRG should not begin a fusion case by replacing source-native vocabulary with GRG vocabulary.
 2. A source-native reconstruction should come first.
 3. GRG mapping should be explicit, typed and reversible.
-4. A source term named “selection”, “actualization”, “context”, “germ”, “coarse-graining”, “recoherence”, “valuation” or similar must not be silently identified with SRT/GRG terms.
+4. A source term named “selection”, “actualization”, “context”, “germ”, “coarse-graining”, “valuation” or similar must not be silently identified with SRT/GRG terms. Source labels not established in the focused reading must not be imported into the template.
 5. The Card should preserve failed mappings, empty fields, non-identity guards and reopening conditions as research results.
 6. A **positive GRG-gain claim** must do more than redescribe a source in GRG language; it should change at least one prediction, diagnostic boundary, intervention sensitivity, exclusion condition, or transferable generative expectation. A Card that concludes `NO GRG GAIN`, `REJECTED_MAPPING`, `TYPE_MISMATCH` or `INSUFFICIENT_EVIDENCE` can still be a successful research result.
 7. The Card itself is a theory-facing higher-order proxy and must preserve reconstructibility back to source-native mechanism.
