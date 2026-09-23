@@ -28,14 +28,14 @@ tags: [GRG, FusionCase, GrammarCard, IterationPlan, CrossDomain, Handoff]
 
 ## 0.0 Dialogue-continuity recovery override — 2026-09-23
 
-The earlier handoff and evolution-target planning in this file are retained as **historical execution provenance**, not as the current fresh-session start.
+The earlier handoff and evolution-target planning in this file are retained as **historical execution provenance**, not as the current fresh-session start. Historical correction: the problematic target-preloading version was commit `7cd5c00cd` (09:17 UTC); #1039 was opened before the reviewed correction. Commit `652e484ca` (10:03 UTC) had already restored STATUS reconciliation, stop-loss, and downgraded evolution terms to reading hints before #1037 merged.
 
 After the author identified that the long dialogue had been compressed in a way that shifted the research direction, the controlling recovery surfaces for this companion route are:
 
 - `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`;
 - `Operations/Audits/SRT_GRG_DIALOGUE_TO_REPOSITORY_FIDELITY_AUDIT_2026-09-23.md`;
 - `Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md`;
-- `Operations/Proposals/SRT_GRG_NEXT_SESSION_HANDOFF_AFTER_DIALOGUE_RECOVERY_2026-09-23.md`.
+- `Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md`.
 
 Hard correction:
 
@@ -357,6 +357,31 @@ Mandatory root-return:
 
 Valid stop outcomes include: simplify the Card, demote a GRG term, return the burden to GTS/source-native records, or park the fusion lane.
 
+
+### 8.2 Current stop-loss accounting after #1041 review
+
+Do not retroactively alter adequacy to trigger or evade §8.1.
+
+Current accounting:
+
+```text
+FRR
+= source-native adequate declared before stop-loss interpretation;
+= result no stronger than M1;
+= no target-domain GRG gain;
+= counted as adequate case 1.
+
+existing evolution / population-genetics draft
+= source-native recovery is substantial;
+= adequacy wording appears only after substantial analysis / candidate formation;
+= prospective pre-score adequacy declaration NOT ESTABLISHED;
+= must NOT be retroactively counted as adequate case 2.
+```
+
+Therefore the formal two-case trigger has **not yet been cleanly satisfied**.
+
+However the weak second result creates a stop-loss warning. The #1041 continuity recovery is treated as a **root-question review prompted by that warning**, not as a counter reset. No third fusion domain may open until the current-next evolution owner-overlap audit closes and the §8.1 accounting is explicitly revisited.
+
 ## 9. Card-change log requirement
 
 Every fusion case should end with:
@@ -394,15 +419,27 @@ Do not update the foundational GRG owner automatically after each case.
 
 Accumulate enough case pressure first.
 
-## 11. New-session handoff prompt — SUPERSEDED
+## 11. New-session handoff prompt — SUPERSEDED / chronology corrected
 
-The handoff previously embedded here is superseded as a fresh-session start because its detailed evolution pressure list pre-shaped source attention.
+The version that materially pre-shaped #1039 attention was the **pre-review** handoff in commit `7cd5c00cd`, which still named Selection / reach / neutrality / retention / higher-order-formation pressure targets. #1039 was created before that version was corrected.
 
-Use instead:
+Commit `652e484ca` subsequently:
 
-`Operations/Proposals/SRT_GRG_NEXT_SESSION_HANDOFF_AFTER_DIALOGUE_RECOVERY_2026-09-23.md`.
+- restored STATUS reconciliation;
+- restored the stop-loss guard;
+- reduced evolution terms to reading hints rather than GRG mapping targets.
 
-The old handoff remains recoverable through repository history / PR provenance; do not reconstruct it as the active route.
+That corrected version was the one later merged with #1037.
+
+Therefore the continuity lesson is not “the merged #1037 handoff still preloaded targets”. The lesson is:
+
+> fresh sessions must start from the merged handoff on `main`, not from chat-copied / unmerged pre-review prompt text.
+
+Active handoff:
+
+`Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md`.
+
+The proposal-side 2026-09-23 recovery prompt is archived provenance only.
 
 ## 12. Stop condition
 
