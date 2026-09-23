@@ -45,7 +45,9 @@ Use this handoff instead of the earlier evolution-target handoff embedded in the
 必须保留以下边界：
 
 - epistemic authority != continuity importance；
-- M-level analysis 可以是 LOAD_BEARING，但不能因此升级为 A1；
+- 被作者明确认同 / 批准 / 继续推进的非 superseded 机器分析，默认属于 continuation-load-bearing context；
+- M-level analysis 仍然是 M authority，不能因此升级为 A1；
+- `continuity_role` 标签是可选提示，不是读取门槛；没有标签不得解释成可以忽略；
 - source-native first 不等于给 source 预设一串 GRG-shaped 问题；
 - 当前 GRG 名称 / 形式化是 probes AND explananda；
 - GRG 自己是可修订的 higher-order objectification / epistemic proxy；
