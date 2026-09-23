@@ -102,7 +102,7 @@ retrieval value = REQUIRED FOR CONTINUATION
 
 when the author accepted / approved / continued the analysis package and no later record superseded it.
 
-No new repository-wide `continuity_role` authority or metadata axis is required.
+No new repository-wide continuity metadata axis is required.
 
 ## 4. Recovery target
 
