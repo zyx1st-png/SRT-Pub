@@ -2,17 +2,18 @@
 id: SRT-OUTREACH-NOTE-MINIMAL-SETUP-EN-2026-07-27
 type: outreach_note
 tags: [Outreach, Epperson, MinimalSetup, ClaimLevels, EnglishNote, QuantumBridge]
-status: draft
+status: archived
 layer: derived
 epistemic_layer: os
 claim_mode: public_summary
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-27
-revised: 2026-07-27
+revised: 2026-09-23
 language: en
+superseded_by: 01_Source_Intuition/Conversations/2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md
 companion_record: 01_Source_Intuition/Conversations/2026-07-27_Epperson_Whitehead_QM_通信记录.md
-downstream_guard: "对外发送用的一页技术 note，非定义源。承重陈述已按 Governance/SRT_CLAIM_LADDER.md 标注 claim level（未标注句为对已标注陈述的说明，不是新增主张）；§6 为 book-provenance 候选、§5 为 P3 bridge、§7 为必须保留的暴露声明。§3 的零摩擦陈述带范围限定，不得去掉限定改写为普遍律（_SRT_PSI_F_CANONICAL.md §5 要求区分现实主体 / 纯形式极限 / AI-纯 L2 三种语境）。修改任何一条前先核对对应 canonical 文件；不得删去 §7。"
+downstream_guard: "ARCHIVED / DO NOT SEND. 该 2026-07-27 版本在 #1031–#1033 后已过时，尤其把 Selection occurrence 与 retained trace / L2 sediment 绑定过紧。仅保留历史 provenance。当前对外版本见 2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md。承重陈述已按 Governance/SRT_CLAIM_LADDER.md 标注 claim level（未标注句为对已标注陈述的说明，不是新增主张）；§6 为 book-provenance 候选、§5 为 P3 bridge、§7 为必须保留的暴露声明。§3 的零摩擦陈述带范围限定，不得去掉限定改写为普遍律（_SRT_PSI_F_CANONICAL.md §5 要求区分现实主体 / 纯形式极限 / AI-纯 L2 三种语境）。修改任何一条前先核对对应 canonical 文件；不得删去 §7。"
 dependency:
   - Governance/SRT_CLAIM_LADDER.md
   - Core/SRT_Core_21_Minimal_Axioms.md
@@ -23,6 +24,9 @@ dependency:
   - Physics/SRT_Quant_01_Selection.md
   - 05_Public_Release/SRT_IN_ONE_PAGE.md
 ---
+
+> **ARCHIVED — DO NOT SEND (2026-09-23)**  
+> 本稿保留 2026-07-27 时点的 SRT 对外表述 provenance。#1031 已把 Selection occurrence 与 retained historical efficacy / sedimentation / inheritance 明确分离，因此本稿 §1–§4 的若干表述不再代表当前 SRT。当前 Epperson 专用 note：[`2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md`](2026-09-23_SRT_Minimal_Setup_Note_EN_v2.md)。
 
 > **仓库内部说明（发送时删除本块）**
 >
