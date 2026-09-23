@@ -40,30 +40,28 @@ SRT retrieval must distinguish three questions:
 
 Search rank, keyword density, file version suffixes, and old chapter numbering do not establish authority or currentness.
 
-### 0.1 Author-accepted machine analysis has high retrieval value by default
+### 0.1 Author-accepted / boundedly continued machine analysis
 
-When an author event explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content has **required retrieval value for continuation by default**.
+Detailed author semantics and exceptions are owned by:
 
-This does **not** change epistemic authority:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`.
 
-```text
-author-accepted machine analysis
-can remain authority = M
-while
-retrieval value = REQUIRED FOR CONTINUATION
-```
+Retrieval rule:
 
-No separate continuity metadata axis is required.
+~~~text
+accepted or boundedly continued
++
+non-superseded machine analysis
+-> must remain routeable
+-> must be consulted when the relevant topic enters task scope
+-> authority may remain M
+~~~
 
-Likewise, the labels `parked`, `downstream`, `companion`, `support`, or `canonical: false` do not by themselves lower retrieval value. They may constrain definition authority, universal applicability, active execution routing, or maturity claims while the accepted reasoning remains necessary to reconstruct why the programme took its current direction.
+This is **not** a universal preload rule. Fresh sessions still obey bounded retrieval and STATUS routing. A historical accepted-analysis package is loaded when its burden becomes relevant, not merely because it exists.
 
-Retrieval priority may be narrowed only by an explicit later disposition such as:
+The labels `parked`, `downstream`, `companion`, `support`, and `canonical: false` do **not** by themselves lower retrieval value or justify skipping accepted / relevant reasoning. Current retrieval priority may be demoted only by an explicit narrowing such as `EXPLORATORY`, `LOCAL_ONLY`, `SUPERSEDED`, `REJECTED`, `RETIRED`, or a later controlling adjudication.
 
-- `EXPLORATORY` / `LOCAL_ONLY` where the author or controlling record scopes the material down;
-- `SUPERSEDED` / `REJECTED` / `RETIRED`;
-- a later controlling adjudication that narrows the earlier package.
-
-When later work supersedes semantics, keep the earlier accepted machine analysis as provenance but do not let it override the newer meaning.
+Implementation status: the “must remain routeable” requirement is the governing target. Historical routing is not yet complete; the next accepted-analysis re-entry audit is responsible for finding accepted / continued material that is still partially absorbed or active-but-unrouted. Until that audit lands, absence from an index must not be read as evidence of low retrieval value.
 
 
 ---

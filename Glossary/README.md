@@ -23,5 +23,6 @@ dependency: [SRT-GLOSSARY]
 - 04 关键概念：[`SRT_Glossary_04_Key_Concepts.md`](SRT_Glossary_04_Key_Concepts.md)
 - 05 假设索引：[`SRT_Glossary_05_Hypothesis_Index.md`](SRT_Glossary_05_Hypothesis_Index.md)
 - 06 位置索引与新增术语：[`SRT_Glossary_06_Locations_and_Usage.md`](SRT_Glossary_06_Locations_and_Usage.md)
+- Live Term Router（动态语义路由；非定义权威）：[`SRT_Live_Term_Router.md`](SRT_Live_Term_Router.md)
 
-说明：拆分版用于导航与检索；`SRT_Glossary.md` 继续保留为历史完整总表。术语定义若涉及 `d-value`、`Ψ_f`、suffering / pain、Fisher、Landauer、AI consciousness、spirituality 或 public metaphor，必须回读相应 canonical anchor / claim-status guardrail；split shard 不创建新定义。
+说明：拆分版用于导航与检索；`SRT_Glossary.md` 继续保留为历史完整总表。`SRT_Live_Term_Router.md` 复用本 Glossary 入口，不创建新的根目录导航入口；它只做 alias / overlap / collision / owner 路由，不定义术语。术语定义若涉及 `d-value`、`Ψ_f`、suffering / pain、Fisher、Landauer、AI consciousness、spirituality 或 public metaphor，必须回读相应 canonical anchor / claim-status guardrail；split shard 不创建新定义。

@@ -28,8 +28,11 @@ When answering or editing a non-simple SRT question:
 4. Check the **Boundary** note before forming the answer.
 5. If the question crosses domains, combine the relevant routes rather than inventing a new definition.
 6. If a route points to a long owner file, check `LONGFORM_SPLITS.md` and use the split README for connector-safe reading.
+7. Before hardening a new repeated SRT / GRG term-of-art, enter through `Glossary/README.md` and consult `Glossary/SRT_Live_Term_Router.md` plus the current owner; exploratory conversation labels may remain working labels without admission.
 
 `canonical: false` files may appear in Primary or Secondary context. That status prevents them from defining SRT; it does not remove their retrieval value.
+
+`Glossary/SRT_Live_Term_Router.md` is navigation only. It may tell you that two labels collide or point to the same owner, but it cannot settle the definition by itself.
 
 ---
 
