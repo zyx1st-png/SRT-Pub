@@ -7,8 +7,8 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-23
-source_commit: c8855900
-source_branch: claude/review-1031-closure
+source_commit: 6874c6be
+source_branch: repair/repository-self-reconstruction-selection-20260923
 source_dirty: false
 inputs_digest: e5bda9efdfb81f0d
 ---
@@ -27,8 +27,8 @@ inputs_digest: e5bda9efdfb81f0d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-23 |
-| 来源 commit | `c8855900` |
-| 来源分支 | `claude/review-1031-closure` |
+| 来源 commit | `6874c6be` |
+| 来源分支 | `repair/repository-self-reconstruction-selection-20260923` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
