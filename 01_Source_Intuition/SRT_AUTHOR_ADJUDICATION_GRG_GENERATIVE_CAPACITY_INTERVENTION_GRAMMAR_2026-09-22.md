@@ -30,6 +30,8 @@ The central correction is:
 
 > **Selection occurrence, Selection sediment, generative inheritance and wholeward integration are not the same burden.**
 
+> **Provenance pointer (machine-added 2026-09-23, repository self-reconstruction Phase 3).** Item-level provenance for this record (A0-Q / A0-P / A1 / M) is mapped in `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md` §3.2. The bounded canonical-facing subset of §A is supported by an author-accepted machine consolidation from the Phase 2 repair (A1 evidence), not by direct author quotation. Other machine-generated section wording remains M unless the map records preserved author wording or an explicit item-level acceptance event. This pointer does not change the record's content.
+
 ---
 
 ## A. Same-day correction — Selection does not require later sediment in order to have occurred

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-23
-source_commit: 6874c6be
-source_branch: repair/repository-self-reconstruction-selection-20260923
+source_commit: 3654d29e
+source_branch: repair/repository-self-reconstruction-phase3-20260923
 source_dirty: false
-inputs_digest: e5bda9efdfb81f0d
+inputs_digest: 961422e61b6fb46c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: e5bda9efdfb81f0d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-23 |
-| 来源 commit | `6874c6be` |
-| 来源分支 | `repair/repository-self-reconstruction-selection-20260923` |
+| 来源 commit | `3654d29e` |
+| 来源分支 | `repair/repository-self-reconstruction-phase3-20260923` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -957,7 +957,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 ### 0. Generative Ontology Spine — 跨 owner 生成主轴
 - 主锚点：`Core_Law/SRT_Generative_Ontology_Spine.md`
 - id：`SRT-GENERATIVE-ONTOLOGY-SPINE`
-- layer：L0-L2 / epistemic：os / status：active / version：v3 / claim-mode：canonical
+- layer：L0-L2 / epistemic：os / status：active / version：v4 / claim-mode：canonical
 - 角色：固定当前 SRT 的**跨层生成顺序、非同一性与 OPEN gate**，作为旧 canonical 清洗和后续本体研究的第一路由；它不替代各局部 owner 的详细定义。
 - 当前 routing compression：`primitive Selection = reality's one generative mode -> determinate actuality / manifestation -> retained historical efficacy where established -> recurrent self-conditioning / One formation -> formed Selection-position -> stronger recurrent standing / Stable ISP -> prospective self-exposure / Bearer under P+E -> reflexive condition-rewriting / Agency -> separately typed normativity routes`。这是路由压缩，不是对 Spine 或各局部 owner 的替代定义。
 - Selection 术语硬护栏（2026-09-22/23）：`Selection` 是 SRT 自定义原语，不按 ordinary pre-given-option choice 读取；canonical owners 要求 genuine actualised non-neutral differentiation，且 prior option set 不作为前提。Selection occurrence 不要求 retained historical efficacy / sedimentation / generative inheritance；terminal Selection remains genuine。仍 OPEN 的是 genuine actualised Selection 与 merely descriptive / modelled change 的精确 anti-tautology 分界。精确定义回到 L0 / P0 / Spine。
@@ -2633,13 +2633,13 @@ retained historical efficacy / sediment / inheritance: NOT REQUIRED FOR OCCURREN
 永久区分：
 
 ~~~text
-generative retention
+retained historical efficacy
 != anchoring persistence
 != durable objecthood
 != localized L2 record.
 ~~~
 
-历史 `terminal Selection remains genuine` 已由同日后续作者裁决明确保留，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
+`terminal Selection remains genuine` 源自 2026-09-14 作者裁决的硬护栏（O0 primitive generativity §G / §L；Selection-totality §L），2026-09-22 同日后续作者裁决再次确认，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
 
 ### 选择不需要选择者
 
