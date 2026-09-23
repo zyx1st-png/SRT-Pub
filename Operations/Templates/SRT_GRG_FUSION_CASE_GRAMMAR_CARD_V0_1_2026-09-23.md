@@ -49,9 +49,7 @@ Do not infer:
 
 `same word -> same role -> same mechanism -> same ontology`.
 
-Use this progression instead:
-
-`analogy -> explicit mapping -> candidate instantiation -> tested instantiation -> transfer candidate`.
+Do not use a parallel maturity progression here. Record the **Card-local mapping disposition** with the non-ordinal vocabulary in §18.1, and record live programme maturity separately with M0–M5 in §18.2.
 
 ### Selection hard guard
 
@@ -69,6 +67,24 @@ S0 before O0: NO
 This Card must not reduce primitive Selection to S0 alone, and must not reinterpret O0 as a prior option menu, field, container, probability distribution or outcome space.
 
 The Selection audit below is a **Card-local compatibility / negative-control screen**, not a sufficient canonical classifier. The exact anti-tautology criterion remains OPEN.
+
+### Selection-event audit coexistence guard
+
+The repository already has an active bounded practice-layer Selection-event audit:
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md`;
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`.
+
+This Card does **not** replace or duplicate that surface.
+
+Division of labour:
+
+- the Card's actuality / event-individuation / relational-non-neutrality / representation-invariance screens are **source-theory / mapping-layer membership pressures**;
+- SEA / CompactCore supplies **practice-layer bounded Selection-event candidate auditing** with declared event boundary / timescale, graded negative controls and non-compensation rules;
+- where a Card proceeds to a concrete event claim, its declared grain and boundary should inherit the SEA discipline against post-hoc event slicing;
+- Card screening `!=` SEA pass;
+- SEA pass `!=` canonical proof of primitive Selection;
+- SEA consequence-bearing / historical-efficacy gates must not be imported as necessary conditions for primitive Selection occurrence, because terminal Selection remains canonically possible.
 
 ### Card authority guard
 
@@ -434,8 +450,8 @@ what later conditions are altered:
 what carries the efficacy:
 maintenance requirement:
 loss / decay / overwrite path:
-SRT L2 mapping:
-  NONE / ANALOGY / CANDIDATE / TESTED / OPEN
+SRT L2 mapping disposition:
+  EXPLICIT_CORRESPONDENCE / SOURCE_SUPPORTED_ROLE_CANDIDATE / SOURCE_PRESSURED_ROLE_CANDIDATE / REJECTED_MAPPING / TYPE_MISMATCH / INSUFFICIENT_EVIDENCE / N.A.
 ```
 
 Hard guard:
@@ -466,6 +482,12 @@ Working distinction:
 `aggregation -> objectification -> load-bearing organization -> possible formed locus / operative positionality`.
 
 Do not infer a canonical SRT Selection-position or a new ontological level merely from a useful aggregate variable. Any canonical mapping remains separately owner-gated.
+
+Hard guard:
+
+`formed locus / operative positionality -/> canonical One`.
+
+Canonical One remains owned by `Core_Law/SRT_One_Formation.md`; a local-locus result must not bypass that owner.
 
 ---
 
