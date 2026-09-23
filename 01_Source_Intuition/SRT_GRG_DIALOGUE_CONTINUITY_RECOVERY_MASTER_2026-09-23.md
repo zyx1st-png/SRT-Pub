@@ -51,7 +51,7 @@ It contains only assistant-visible dialogue analysis and explicit author-directi
 
 The merged Phase-3 provenance owner correctly separates direct author wording from machine synthesis.
 
-No new repository-wide `continuity_role` axis is needed. Reuse the existing retrieval-value / currentness separation in `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
+No new repository-wide continuity metadata axis is needed. Reuse the existing retrieval-value / currentness separation in `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
 
 Default rule:
 
@@ -242,7 +242,7 @@ This makes unification a revisable achievement rather than a search for the larg
 
 ## 8. Continuity node F — proxy, scaffold, cage and debt are dynamic
 
-**continuity_role = LOAD_BEARING for the dynamic; terminology authority remains with existing records**
+**retrieval value = REQUIRED FOR CONTINUATION for the dynamic; terminology authority remains with existing records**
 
 The dialogue sharpened proxy from generic compression toward provisional neutrality allocation:
 
@@ -334,7 +334,7 @@ It is a core maturity test for a self-revising grammar programme.
 
 ## 11. Continuity node I — current GRG objects are probes **and explananda**
 
-**continuity_role = LOAD_BEARING — recovered correction after #1040 review**
+**retrieval value = REQUIRED FOR CONTINUATION — recovered correction after #1040 review**
 
 Current GRG terms such as:
 
@@ -373,7 +373,7 @@ This is the missing layer that #1040 only partly addresses through its late mapp
 
 The correction is:
 
-> GRG objectification cannot define the extraction target; it must itself become an explanandum during dual reconstruction.
+> GRG objectification cannot define the extraction target; it must itself become an explanandum during reconstruction of the relevant source and GRG cuts.
 
 ## 12. Continuity node J — derive operations, do not hunt pre-named objects
 
@@ -650,7 +650,7 @@ The continuity correction adds an earlier burden:
 source-native reconstruction
 -> source-objectification genealogy
 -> domain generative reconstruction
--> dual reconstruction:
+-> two-sided objectification reconstruction:
      explain source cuts
      AND explain current GRG cuts
 -> existing-owner semantic absorption
@@ -677,11 +677,11 @@ But the proposed `conditional consequence-accessibility cascade` was generated b
 
 Therefore no new GRG candidate should be credited until a semantic owner-overlap audit determines whether the evolution case is instead:
 
-- decomposition;
-- calibration;
-- operationalization;
-- source-local realization;
-- absorbed / no GRG gain.
+- INHERIT;
+- REALIZATION;
+- REORGANIZATION;
+- NO_GRG_GAIN;
+- RESIDUAL_CANDIDATE only if a nontrivial burden remains.
 
 #1039 should remain Draft / HOLD while this recovery package is reviewed.
 
