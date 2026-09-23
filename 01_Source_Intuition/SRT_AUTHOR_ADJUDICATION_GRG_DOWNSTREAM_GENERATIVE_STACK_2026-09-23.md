@@ -55,11 +55,15 @@ The author explicitly instructed:
 
 > “将刚才发散的内容也写入仓库，也是以创建PR的方式，同时也要包含你的整个分析内容，我也默认全部赞同。方便后续进行下钻。”
 
-This is A0-Q author wording.
+This sentence itself is A0-Q author wording.
 
-The assistant-visible downstream analysis bounded by this instruction is recorded as A1 machine consolidation with explicit author acceptance.
+Under the merged provenance owner `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md`, record-level or blanket directional acceptance does **not** upgrade machine-generated section wording to A1. Therefore:
 
-This acceptance does not convert each candidate into canonical truth. It records that the direction is author-approved for preservation and later drill-down.
+- the quoted author sentence above = A0-Q;
+- the machine-generated downstream analysis preserved in this package = M unless a separate item-level acceptance event is preserved;
+- the author's blanket approval records programme direction / permission to preserve and continue the analysis, not item-level author authority.
+
+This keeps the package author-approved as a research direction without recreating the provenance debt closed in #1032.
 
 ## 2. Core accepted synthesis
 
