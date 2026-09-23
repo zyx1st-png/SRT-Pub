@@ -27,6 +27,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 比较债（本 PR 只登记，不改 canonical / retained-support owners）：
   - `Core_Law/SRT_L0_Philosophy_Bridge.md` §一的 Whitehead history / stable-domain 差异措辞需要 bounded re-audit；
   - `Core_Law/SRT_Constitution_Seven_Theses.md` 的 “Whitehead 无 L2 对应构念”不能继续作为已定 verdict；
+  - `Core/SRT_OPEN_TENSIONS.md` strongest-rival guard 禁止在 canonical owners 中提前写 Whitehead novelty / superiority verdict；上述旧比较须作为 legacy debt，而非现行 novelty 结论；
   - 任何后续 owner correction 都必须保留：FRR 已有 later-conditioning ≠ FRR 已满足 SRT 全部 L2 / persistence / revisability / cost burdens。
 - 外部邮件：未发送；记录中的拟稿已改为明确收回 7 月邮件把 basal Selection 与 writeback 绑在一起的旧表述，并保留此前承诺的 persistence / resistance-to-revision 后续问题。
 
