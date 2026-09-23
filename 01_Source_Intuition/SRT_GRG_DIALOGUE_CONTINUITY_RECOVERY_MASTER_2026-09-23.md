@@ -8,7 +8,6 @@ epistemic_layer: synthesis
 claim_mode: provenance
 canonical: false
 research_mode: U
-continuity_role: load_bearing
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DIALOGUE_CONTINUITY_RECOVERY_2026-09-23.md
   - 01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_CARD_FRR_2026-09-23.md
@@ -24,7 +23,7 @@ tags: [GRG, DialogueRecovery, Continuity, Provenance, Reconstructibility, Object
 
 ## 0. Why this master exists
 
-The 2026-09-23 FRR / SRT / GRG conversation became long enough that the repository writeback and next-session handoff themselves became a lossy objectification.
+The 2026-09-23 FRR / SRT / GRG conversation became long enough that the repository writeback and next-session handoff became a lossy compression of the dialogue.
 
 The problem was not simply that the dialogue was not written back.
 
@@ -48,37 +47,39 @@ Its role is to preserve the **semantic load-bearing graph** needed to re-enter t
 
 It contains only assistant-visible dialogue analysis and explicit author-direction provenance. It is not hidden chain-of-thought.
 
-## 1. Orthogonal continuity typing
+## 1. Retrieval-value rule for accepted machine analysis
 
 The merged Phase-3 provenance owner correctly separates direct author wording from machine synthesis.
 
-This recovery distinguishes a second, orthogonal axis for retrieval only.
+No new repository-wide `continuity_role` axis is needed. Reuse the existing retrieval-value / currentness separation in `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
 
-**Default rule after the later author correction:**
+Default rule:
 
-> when the author explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content is continuation-load-bearing by default.
+> when the author explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content has **required continuation retrieval value by default**, even when epistemic authority remains `M`.
 
-An explicit `continuity_role` field is optional metadata, not an admission gate.
+Therefore:
 
-| continuity role | meaning |
-|---|---|
-| `LOAD_BEARING` | later sessions cannot correctly reconstruct the accepted research direction without this node; this is also the default for author-accepted non-superseded machine analysis |
-| `SUPPORTING` | important explanatory or methodological development, but not required to identify the programme's current centre |
-| `EXPLORATORY` | explicit demotion for a preserved hypothesis / extension that should not carry the broader continuation |
-| `SUPERSEDED` | historically important but later corrected, narrowed or retired |
+- `M` does not mean low retrieval value;
+- `canonical: false` does not mean low retrieval value;
+- `parked`, `downstream`, `companion` and support-only routing do not by themselves make accepted reasoning skippable;
+- later `SUPERSEDED / REJECTED / RETIRED / LOCAL_ONLY / EXPLORATORY` dispositions may narrow current use while preserving provenance.
 
-This axis:
-
-- is **not** a provenance authority class;
-- does not turn M into A1;
-- does not create canonical authority;
-- does not require every accepted file to carry a `continuity_role` tag;
-- prevents `M`, `parked`, `downstream`, `companion` or `canonical: false` from being misread as `safe to ignore`;
-- allows explicit later narrowing / rejection / supersession to control semantics while preserving the earlier analysis as provenance.
+This rule changes retrieval priority, not definition authority.
 
 ## 2. Primary source boundary
 
 The recovery was checked against the author-supplied full conversation export, approximately 18,040 lines.
+
+External source identity:
+
+```text
+filename: 粘贴的 markdown (1)。md(20260923-150146)
+size_bytes: 571076
+sha256: 551a3bf023691c7d667562c5000cfbb916ce8684e987e2bf85d1fbd1a0b320e9
+repository-resident copy: NO
+```
+
+The hash permits later verification against the author-held export without pretending the external file is a repository owner.
 
 Verified dialogue windows used in this reconstruction include:
 
@@ -98,7 +99,7 @@ Detailed in-repository derivations remain in:
 
 ## 3. Continuity node A — relation-first is not the endpoint
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 A major FRR-driven correction was that replacing object-first ontology with relation-first ontology does not remove objectification.
 
@@ -135,7 +136,7 @@ This node is a prerequisite for understanding why later GRG work must not simply
 
 ## 4. Continuity node B — ask why this cut exists
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The FRR reading generated a stronger question than “what is the source structure?”:
 
@@ -158,7 +159,7 @@ It is a requirement that GRG treat objectifications as **formed, burden-solving,
 
 ## 5. Continuity node C — objectification is necessary for complexity
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The dialogue did **not** conclude that objectification is a mistake.
 
@@ -188,7 +189,7 @@ This is one of the central links between objectification, higher-order formation
 
 ## 6. Continuity node D — GRG itself is an objectification
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The dialogue then turned the same grammar onto GRG.
 
@@ -220,7 +221,7 @@ This was not preserved strongly enough as an explicit continuation owner in #103
 
 ## 7. Continuity node E — GRG as a revisable cross-domain neutrality map
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The neutrality analysis produced a meta-level interpretation of cross-domain unification.
 
@@ -285,7 +286,7 @@ compression
 
 ## 9. Continuity node G — normativity as fallible generative expectation
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The dialogue connected generative normativity to the higher-order grammar's expectations about future consequential equivalence.
 
@@ -306,7 +307,7 @@ It must be able to be wrong in ways that force reconstruction.
 
 ## 10. Continuity node H — GRG itself can become an epistemic cage
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The dialogue explicitly applied scaffold / cage analysis to GRG itself.
 
@@ -376,7 +377,7 @@ The correction is:
 
 ## 12. Continuity node J — derive operations, do not hunt pre-named objects
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The target of cross-domain work is closer to recurring **generative operations / burdens** than to universal objects.
 
@@ -402,7 +403,7 @@ Future cases should derive the needed operations from source reconstruction and 
 
 ## 13. Continuity node K — Selection analysis is important but not the whole GRG route
 
-**continuity_role = SUPPORTING / owner-gated**
+**retrieval value = SUPPORTING / OWNER-GATED**
 
 The long dialogue substantially explored:
 
@@ -426,7 +427,7 @@ This matters because the later evolution handoff over-weighted exactly this loca
 
 ## 14. Continuity node L — higher-order formation and generative re-entry
 
-**continuity_role = SUPPORTING, with a load-bearing methodological lesson**
+**retrieval value = SUPPORTING / CONDITIONAL, with one required methodological lesson**
 
 The dialogue distinguished:
 
@@ -445,7 +446,7 @@ The load-bearing methodological lesson is the objectification/reconstructibility
 
 ## 15. Continuity node M — ontology -> epistemology -> intervention -> ontology
 
-**continuity_role = SUPPORTING / strategic horizon**
+**retrieval value = SUPPORTING / CONDITIONAL**
 
 The downstream trace developed a broader reflexive loop:
 
@@ -481,7 +482,7 @@ The full analysis remains in the downstream derivation trace.
 
 ## 16. Continuity node N — source-native first was necessary but insufficient
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 The Card programme correctly established:
 
@@ -509,7 +510,7 @@ They may not define what the source must yield.
 
 ## 17. Continuity node O — fusion cases should recut GRG, not populate it
 
-**continuity_role = LOAD_BEARING**
+**retrieval value = REQUIRED FOR CONTINUATION**
 
 FRR was valuable because it changed the Card / method.
 
@@ -538,7 +539,7 @@ The source must retain enough authority to change what GRG thinks the question i
 
 ## 18. What went wrong in the #1037/#1038 -> handoff transition
 
-**continuity_role = LOAD_BEARING failure provenance**
+**retrieval value = REQUIRED FAILURE PROVENANCE**
 
 #1037 and #1038 preserved substantial analysis.
 
@@ -593,17 +594,25 @@ Those are valid epistemic / execution labels, but they were later read as low-pr
 
 ### 18.4 Handoff overconstraint
 
-The handoff then instructed the next session to examine evolution through a preselected list of pressure points.
+Chronology matters here.
 
-Even though it included “source-native first”, the navigation already specified what to notice.
+The problematic handoff was the **pre-review** version in commit `7cd5c00cd` (09:17 UTC), which explicitly named Selection / reach / neutrality / retention / higher-order-formation pressure targets. #1039 was created at 09:52 UTC from that stale route.
 
-The handoff thus became a higher-order proxy that reduced the reach of alternative source-derived reconstructions.
+Commit `652e484ca` (10:03 UTC) subsequently restored STATUS reconciliation, added stop-loss, and downgraded evolution terms to reading hints before #1037 merged.
 
-This is the immediate continuity mechanism behind the #1039 drift.
+So the operational failure was:
+
+```text
+pre-review prompt copied into a new session
+-> #1039 starts before the reviewed correction lands
+-> corrected merged handoff arrives too late for that session
+```
+
+The lesson is operational, not a GRG-theory claim: fresh sessions must start from the merged handoff on `main`, not from chat-copied / unmerged prompt text.
 
 ## 19. #1040 disposition
 
-**continuity_role = LOAD_BEARING correction, but PARTIAL**
+**retrieval value = REQUIRED CORRECTION CONTEXT / PARTIAL METHOD**
 
 #1040 is not to be reverted wholesale.
 
@@ -654,7 +663,7 @@ Therefore #1040 is:
 
 ## 20. #1039 disposition
 
-**continuity_role = HOLD**
+**execution disposition = HOLD**
 
 The current #1039 rewrite is materially better than its earlier Card-first version.
 
@@ -728,6 +737,6 @@ This master does not:
 - authorize #1039 merge;
 - create v0.4.
 
-Its purpose is semantic reconstructibility:
+Its purpose is semantic continuity and recoverability:
 
 > later work should be able to recover not only **what terms existed**, but **why the current questions and cuts exist, what they compressed, and what can force them to change**.
