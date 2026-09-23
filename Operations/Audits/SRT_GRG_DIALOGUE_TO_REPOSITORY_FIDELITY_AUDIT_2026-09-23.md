@@ -199,7 +199,7 @@ Verdict:
 
 Required repair:
 
-> keep the branch hypotheses parked, but distinguish `continuity_role = LOAD_BEARING / SUPPORTING / EXPLORATORY`.
+> keep the branch hypotheses parked, but preserve high retrieval value for author-accepted reasoning while using explicit `EXPLORATORY / LOCAL_ONLY / SUPERSEDED` dispositions only where the scope is actually narrowed.
 
 ## 5. Provenance correction audit
 
@@ -286,7 +286,7 @@ Verdict:
 
 Required repair:
 
-`dual reconstruction before new-candidate extraction`.
+`source-cut + GRG-cut reconstruction before new-candidate extraction`.
 
 ## 7. PR #1039 audit
 
@@ -312,8 +312,8 @@ The recovery requirement is therefore:
 new candidate
 -> exact existing-owner semantic absorption audit
 -> only then:
-   NEW / DECOMPOSITION / CALIBRATION / OPERATIONALIZATION /
-   SOURCE-LOCAL / ABSORBED
+   INHERIT / REALIZATION / REORGANIZATION /
+   NO_GRG_GAIN / RESIDUAL_CANDIDATE
 ```
 
 Until that is run under the recovered method:
@@ -395,7 +395,7 @@ This audit requires the recovery package to:
 1. preserve the new author continuity correction;
 2. add the continuity recovery master;
 3. reuse the existing retrieval-value axis and make author-accepted non-superseded machine analysis required continuation context by default;
-4. define two-sided objectification reconstruction:
+4. define source-cut + GRG-cut reconstruction:
    - source objectification as explanandum;
    - current GRG objectification as explanandum;
 5. require existing-owner semantic absorption before new GRG candidate naming;
