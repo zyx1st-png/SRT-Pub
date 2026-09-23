@@ -14,10 +14,15 @@ dependency:
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CARD_FRR_REFINEMENT_2026-09-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DIALOGUE_CONTINUITY_RECOVERY_2026-09-23.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
 tags: [GRG, AuthorAdjudication, CrossObjectification, Grammar, Objectification, AntiDrift]
 ---
 
 # Author adjudication — GRG cross-objectification method and anti-drift direction
+
+> **Later same-day continuity correction:** this record correctly rejects object-to-object GRG mapping, but it is not the complete owner of the preceding long dialogue. The author later identified a continuity failure across #1037/#1038 -> handoff -> #1039/#1040. Read `SRT_AUTHOR_ADJUDICATION_GRG_DIALOGUE_CONTINUITY_RECOVERY_2026-09-23.md` and the recovery master before using this record as a fresh-session route. The additional burden is that current GRG cuts are probes **and explananda**, not merely revisable coordinates used after source reconstruction.
+
 
 ## 0. Role and authority
 

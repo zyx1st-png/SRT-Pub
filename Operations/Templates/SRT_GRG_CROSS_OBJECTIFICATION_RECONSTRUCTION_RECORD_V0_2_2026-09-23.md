@@ -1,8 +1,8 @@
 ---
-id: SRT-GRG-CROSS-OBJECTIFICATION-RECONSTRUCTION-RECORD-V0-1-20260923
+id: SRT-GRG-CROSS-OBJECTIFICATION-RECONSTRUCTION-RECORD-V0-2-20260923
 type: template
 status: draft
-version: v0.1
+version: v0.2
 date: 2026-09-23
 layer: operations
 epistemic_layer: os
@@ -12,20 +12,21 @@ ai_do_not_use_for_definition: true
 dependency:
   - SRT_AI_START.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
   - Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md
   - Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
 tags: [GRG, Template, CrossObjectification, Reconstruction, Reobjectification]
 ---
 
-# GRG Cross-Objectification Reconstruction Record — Template v0.1
+# GRG Cross-Objectification Reconstruction Record — Template v0.2
 
-> **Continuity-recovery routing note:** v0.1 is retained as the #1040 first-level anti-mapping record. For resumed DISCOVERY work after the 2026-09-23 dialogue recovery, use `SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_2_2026-09-23.md`, which adds GRG-cut genealogy / dual reconstruction and existing-owner semantic absorption before new candidate extraction.
->
 > Use this record **before or alongside** a GTS when the correct generative cut / transformation is still being discovered.
 >
 > It does not replace GTS v0.2.
 >
 > It does not require one-to-one domain-object / GRG-object mapping.
+>
+> **v0.2 continuity correction:** current GRG terms are probes **and explananda**. Before extracting a new grammar candidate, this record must reconstruct the relevant source cuts, reconstruct the relevant GRG cuts, and run existing-owner semantic absorption. v0.1 remains provenance for the #1040 first-level anti-mapping correction.
 
 ## 0. Mode and scope
 
@@ -93,6 +94,9 @@ grain:
 what relation it makes explicit:
 what it aggregates / leaves implicit:
 recognized alternative cuts:
+source-established reason / function for this cut:
+analyst genealogy, if source history is not established:
+what consequence / anomaly would reopen this cut?:
 is the current cut known to be intervention-sensitive?:
 ~~~
 
@@ -202,9 +206,80 @@ positive grammar claim:
   STOP / REVISE
 ~~~
 
+## 7.1 Dual reconstruction — current GRG cut as explanandum
+
+Do **not** move directly from source reconstruction to a new grammar candidate.
+
+For every current GRG term / formalism that now appears relevant:
+
+~~~text
+GRG cut / formalism:
+current owner:
+original research burden / provenance:
+what distinction it preserves:
+what it compresses / merges:
+what it makes operable:
+what this source reveals about the cut:
+source evidence vs analyst inference:
+~~~
+
+Then choose a disposition:
+
+~~~text
+EXPLAINED_AS_WORKING_CUT
+RETAINED
+SPLIT
+MERGED
+DEMOTED
+DELETED
+SOURCE_LOCAL_ONLY
+FORMALISM_REJECTED
+INSUFFICIENT_EVIDENCE
+~~~
+
+Hard guard:
+
+~~~text
+current GRG term
+!= extraction target
+!= mandatory source object
+~~~
+
+A case may be valuable because it explains why a GRG cut arose and then shows that the cut should disappear.
+
+## 7.2 Existing-owner semantic absorption
+
+Before §8 may name a new grammar candidate, compare the exact candidate burden against:
+
+- GRG v0.3;
+- relevant 2026-09-22 capacity / intervention / reach / reconstructibility records;
+- current GTS composition / transformation patterns;
+- active canonical owners if SRT terms are touched;
+- strongest mature source-native comparator.
+
+Record:
+
+~~~text
+closest existing owner:
+exact overlap:
+remaining difference:
+disposition:
+  INHERIT
+  DECOMPOSITION
+  CALIBRATION
+  OPERATIONALIZATION
+  SOURCE_REALIZATION
+  ABSORBED_NO_GRG_GAIN
+  NONTRIVIAL_RESIDUAL_REMAINS
+~~~
+
+Only `NONTRIVIAL_RESIDUAL_REMAINS` opens a genuinely new GRG candidate.
+
+A split of an existing GRG cut is not automatically a new primitive / operator.
+
 ## 8. Grammar candidate extraction
 
-Open only if a nontrivial candidate exists.
+Open only if §7.2 ends in `NONTRIVIAL_RESIDUAL_REMAINS` and a nontrivial candidate exists.
 
 ~~~text
 candidate id / version:
@@ -355,6 +430,9 @@ triviality failure:
 ~~~
 
 ## 14. GRG self-revision
+
+This section closes the loop opened in §7.1; it is not the first point at which GRG is allowed to change.
+
 
 ~~~text
 GRG fields retained:

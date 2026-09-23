@@ -11,6 +11,9 @@ research_mode: U
 dependency:
   - Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md
   - Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md
+  - Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_2_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_NEXT_SESSION_HANDOFF_AFTER_DIALOGUE_RECOVERY_2026-09-23.md
   - Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
   - Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
@@ -22,6 +25,37 @@ tags: [GRG, FusionCase, GrammarCard, IterationPlan, CrossDomain, Handoff]
 ---
 
 # GRG Fusion-Case Card Iteration Plan — 2026-09-23
+
+## 0.0 Dialogue-continuity recovery override — 2026-09-23
+
+The earlier handoff and evolution-target planning in this file are retained as **historical execution provenance**, not as the current fresh-session start.
+
+After the author identified that the long dialogue had been compressed in a way that shifted the research direction, the controlling recovery surfaces for this companion route are:
+
+- `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`;
+- `Operations/Audits/SRT_GRG_DIALOGUE_TO_REPOSITORY_FIDELITY_AUDIT_2026-09-23.md`;
+- `Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md`;
+- `Operations/Proposals/SRT_GRG_NEXT_SESSION_HANDOFF_AFTER_DIALOGUE_RECOVERY_2026-09-23.md`.
+
+Hard correction:
+
+~~~text
+source-native first
++
+preloaded list of GRG-shaped target findings
+!=
+source-open discovery
+~~~
+
+Therefore:
+
+- §4 evolution prompts below must not define first-contact extraction targets;
+- #1039 remains Draft / HOLD pending recovery audit;
+- do not open §6 / §7 later fusion domains automatically;
+- use Reconstruction Record v0.2 for any resumed discovery work;
+- current GRG terms are probes **and explananda** and must undergo dual reconstruction before a new grammar candidate is named.
+
+This override does not change live `STATUS.md CURRENT NEXT`; it corrects the companion route's continuity semantics.
 
 ## 0. Scope
 
@@ -51,7 +85,8 @@ Companion method:
 
 - `Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md`;
 - `Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md`;
-- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md`.
+- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md` — #1040 provenance / first-level record;
+- `Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_2_2026-09-23.md` — resumed DISCOVERY record under dialogue-continuity recovery.
 
 Hard correction:
 
@@ -181,6 +216,8 @@ Current main lessons:
 - source-native and GRG provenance must remain reconstructible.
 
 ## 4. Fusion Case 2 — evolutionary biology / population genetics
+
+> **Continuity-recovery status: HOLD / HISTORICAL PLANNING PROVENANCE.** The prompts in this section explain why evolution was selected, but they must not be used as the first-contact extraction frame. Resume only through the dialogue-continuity protocol and Reconstruction Record v0.2.
 
 Recommended **only after reconciling the live STATUS current-next route** because it contains source-native mechanisms that may place useful pressure on Card distinctions without being structurally identical to FRR.
 
@@ -357,55 +394,15 @@ Do not update the foundational GRG owner automatically after each case.
 
 Accumulate enough case pressure first.
 
-## 11. New-session handoff prompt
+## 11. New-session handoff prompt — SUPERSEDED
 
-Use the following prompt in a fresh session:
+The handoff previously embedded here is superseded as a fresh-session start because its detailed evolution pressure list pre-shaped source attention.
 
-```text
-@GitHub 继续 zyx1st-png/SRT-Pub 当前 GRG 主线。
+Use instead:
 
-先严格按 AGENTS.md §Session Start 核验 live main，并读取 STATUS.md 当前 GRG route。不要自动创建 GRG v0.4，不要推进 BCTB T2，不要改 Freeze-A canonical owner。
+`Operations/Proposals/SRT_GRG_NEXT_SESSION_HANDOFF_AFTER_DIALOGUE_RECOVERY_2026-09-23.md`.
 
-本轮若 STATUS 对账允许，候选伴随路线是继续 **Fusion-Case Grammar Card v0.1** 的融合案例迭代；它不是 CURRENT NEXT，也不使用已退役的 “GRG Generative Grammar Card” 作为主线名。STATUS CURRENT NEXT 始终优先。
-
-请优先读取：
-1. 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md
-2. Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
-3. Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md
-4. Operations/Templates/SRT_GRG_CROSS_OBJECTIFICATION_RECONSTRUCTION_RECORD_V0_1_2026-09-23.md
-5. Operations/Proposals/SRT_GRG_FUSION_CASE_CARD_ITERATION_PLAN_2026-09-23.md
-6. Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md
-7. Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
-8. Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-9. 01_Source_Intuition/Conversations/2026-09-23_FRR_SRT_Focused_Reading_Note.md
-10. 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CARD_FRR_REFINEMENT_2026-09-23.md
-11. 01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_CARD_FRR_2026-09-23.md
-12. Operations/GRG/Fusion_Cases/SRT_GRG_FUSION_CASE_FRR_CARD_2026-09-23.md
-13. 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
-14. 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
-
-方法要求：
-- source-native first, GRG second；
-- 先填写 Cross-Objectification Reconstruction Record；Fusion-Case Card 只能后置；
-- 先声明 DISCOVERY / TEST；DISCOVERY 中生成的 candidate 不能由同一案例获得 M3/M4 独立检验 credit；
-- 不以证明 GRG 为目标，而是让异质 source 反向修改 GRG 的当前对象化；
-- 对每条重构关系保存 source locator；GRG 白话改写不能替代来源锚点；
-- 允许零 GRG 对象对应、空字段、TYPE-MISMATCH、REJECTED_MAPPING、INSUFFICIENT_EVIDENCE；
-- 强制 non-identity、projection、anti-triviality 和 absorption audit；
-- 不把 source-native selection / actualization / proxy 等词自动等同 SRT/GRG 术语；
-- TEST 模式冻结 relation burden，而不是冻结必须找到的 GRG 名词；
-- Fusion-Case Card 只做 late mapping / non-identity / schema feedback；
-- Card-local correspondence 与 live M0–M5 maturity 分开；任何 M4-side transfer claim 继承 M4-E0；
-- 至少完成 FRR × 第二案例的 reconstruction-first reconciliation 后，再决定是否产生 Fusion-Case Card v0.2 candidate；
-- Fusion-Case Card v0.2 candidate != GTS v0.2 replacement != GRG foundational owner v0.4；
-- 遵守 plan §8.1 stop-loss；触发后先收缩，不继续堆案例。
-
-先对账 STATUS：如果 `CURRENT NEXT` 仍是 bounded latent-reconstructive-reach reality pressure-test / operationalization，不要直接跳过。优先判断当前 fusion case 是否能被严格限定为该 pressure-test；不能则先完成/关闭 current-next，再开新案例。
-
-只有在上述对账允许后，下一融合案例才优先考虑 evolutionary biology / population genetics。先做 source-native reconstruction，再填写 Cross-Objectification Reconstruction Record；只有在生成关系、缺失关系和 candidate status 已经明确后，才允许使用 Fusion-Case Card v0.1 做 late audit。natural selection、drift、mutation、fixation/extinction、latent variation、niche construction 只作为 source-native 阅读入口，不作为预设 GRG 映射目标。
-
-不要急于下结论；如果 evolution 迫使 GRG 当前切法失效，优先修改 / 删除 GRG 的工作对象化，而不是强迫 evolution 适配 GRG。
-```
+The old handoff remains recoverable through repository history / PR provenance; do not reconstruct it as the active route.
 
 ## 12. Stop condition
 

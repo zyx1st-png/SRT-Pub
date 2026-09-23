@@ -33,12 +33,38 @@ SRT retrieval must distinguish three questions:
 | Authority | Can this file define or override SRT terms? | canonical anchors, claim ladder, symbol table |
 | Retrieval value | Should this file be read for the current task? | source intuition, bridge files, evidence cards, book notes |
 | Currentness | Is this the active construction source for the task? | current `Drafts_26Q/` chapter vs `Archive_52Chapter/` historical draft |
+| Continuity importance | Must this material be read to reconstruct an accepted ongoing line of reasoning? | author-accepted machine analysis, derivation traces, supersession context |
 
 `canonical: false` means **not a definition authority**. It does not mean low value, irrelevant, or safe to ignore.
 
 `status: archived` or an archive path means **not current construction authority**. It may still have high historical or comparative value, but it must not displace the active source.
 
 Search rank, keyword density, file version suffixes, and old chapter numbering do not establish authority or currentness.
+
+### 0.1 Accepted machine analysis defaults to continuation-load-bearing
+
+When an author event explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content is **continuation-load-bearing by default**.
+
+This does **not** change epistemic authority:
+
+```text
+author-accepted machine analysis
+can remain authority = M
+while
+continuity importance = LOAD_BEARING
+```
+
+Do not require an explicit `continuity_role: load_bearing` field before applying this rule. The field is optional metadata for clarification or override. Its absence must not be interpreted as permission to skip accepted analysis.
+
+Likewise, the labels `parked`, `downstream`, `companion`, `support`, or `canonical: false` do not by themselves demote continuity importance. They may constrain definition authority, universal applicability, active execution routing, or maturity claims while the analysis remains necessary to reconstruct why the programme took its current direction.
+
+Continuity may be demoted only by an explicit later disposition such as:
+
+- `EXPLORATORY` / `LOCAL_ONLY` where the author or controlling record says the material should not carry the broader continuation;
+- `SUPERSEDED` / `REJECTED` / `RETIRED`;
+- a later controlling adjudication that narrows the earlier package.
+
+When later work supersedes semantics, keep the earlier accepted machine analysis as provenance but do not let it override the newer meaning.
 
 ---
 

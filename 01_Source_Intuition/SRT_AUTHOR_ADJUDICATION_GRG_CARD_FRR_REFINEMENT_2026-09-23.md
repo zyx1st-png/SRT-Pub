@@ -15,10 +15,13 @@ dependency:
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
 tags: [GRG, GrammarCard, FRR, AuthorAdjudication, FusionCase, Reconstructibility, Selection]
 ---
 
 # Author adjudication — GRG Grammar Card refinement after the FRR fusion case
+
+> **Dialogue-continuity recovery note:** this record remains valid provenance for the bounded Card lane, but it is no longer sufficient as a fresh-session continuity entry. The later author correction found that the Card/handoff route over-weighted one execution path. Read `SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md` before using this file to select the next domain task.
 
 ## 0. Role and authority
 
