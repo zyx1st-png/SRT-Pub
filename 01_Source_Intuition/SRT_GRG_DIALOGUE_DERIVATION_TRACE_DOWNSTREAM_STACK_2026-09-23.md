@@ -12,10 +12,35 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DOWNSTREAM_GENERATIVE_STACK_2026-09-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
 tags: [GRG, DerivationTrace, Selection, Neutrality, Perspective, Epistemology, Self, Attention, Intervention, Power, Civilization]
 ---
 
 # GRG downstream derivation trace — from Selection non-neutrality to ontology / epistemology / intervention / civilization
+
+## 0.0 Continuity-recovery note
+
+This trace remains a **research reservoir** for branch execution, but that label must not be read as low retrieval value.
+
+The 2026-09-23 dialogue-continuity recovery distinguishes:
+
+~~~text
+epistemic authority
+!= retrieval value
+!= currentness
+!= continuity importance
+~~~
+
+Several sections in this trace remain M-level and non-universal while still being **LOAD_BEARING for reconstructing how GRG became reflexive about neutrality, objectification, reconstructibility, epistemic closure and intervention**.
+
+In particular, later sessions should not skip §§3–15 and §§25–29 merely because the package is parked outside the Grammar Card.
+
+At the same time, the domain-specific / social / consciousness branches remain bounded and must not be injected wholesale into unrelated fusion cases.
+
+Controlling recovery pointer:
+
+`01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`.
 
 ## 0. Purpose and provenance
 
