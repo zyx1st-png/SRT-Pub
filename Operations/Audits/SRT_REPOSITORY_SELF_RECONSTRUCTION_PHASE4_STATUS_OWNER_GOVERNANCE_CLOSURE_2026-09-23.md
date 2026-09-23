@@ -1,7 +1,7 @@
 ---
 id: SRT-REPOSITORY-SELF-RECONSTRUCTION-PHASE4-STATUS-OWNER-GOVERNANCE-CLOSURE-20260923
 type: audit
-status: active
+status: archived
 date: 2026-09-23
 layer: operations
 epistemic_layer: os
@@ -133,14 +133,31 @@ scientific distinctiveness
 = NOT ESTABLISHED.
 ```
 
-## 6. Acceptance condition
+## 6. Final review / closure
 
-Phase 4 may close only if repository CI / governance preflight passes on the final branch head and the final PR diff remains bounded to:
+Pre-closure semantic head:
 
-- root STATUS compression;
-- archived status snapshot;
-- v0.3 synchronization boundary;
-- Edit Protocol governance guards;
-- this closure audit.
+`fe2a0276f39b9d2954abd2ccb146529a6d621445`
 
-No generated bundle edits should appear.
+Repository Governance Preflight:
+
+```text
+PASS
+workflow run = 35810905648
+```
+
+Final bounded review:
+
+1. root STATUS has one current `CURRENT NEXT` / one Immediate routing task — PASS;
+2. former §0.4 / §0.4a / §0.5 and 87-item Immediate routing are preserved in the archived snapshot — PASS;
+3. v0.3 synchronization text changes authority / routing only and does not absorb the 09-22 concepts as foundational grammar — PASS;
+4. Edit Protocol adds process guards only; it does not create a canonical theory claim — PASS;
+5. anti-tautology OPEN, BCTB T2 HOLD, Level 2 HOLD and scientific-distinctiveness guard are preserved — PASS;
+6. no Context Bundle input bytes changed; no generated bundle edit is required or present — PASS;
+7. final PR file scope is exactly STATUS + archived snapshot + v0.3 sync boundary + Edit Protocol + this audit — PASS.
+
+```text
+PHASE 4 = COMPLETE / PASS
+REPOSITORY SELF-RECONSTRUCTION PHASES 1-4 = CLOSED
+THEORY RESTART POINT = latent reconstructive reach reality pressure-test
+```
