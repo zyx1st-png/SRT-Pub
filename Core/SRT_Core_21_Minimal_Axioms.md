@@ -63,8 +63,7 @@ Minimum semantic boundary:
 
 ~~~text
 Selection
-= genuine actualised non-neutral differentiation
-= an actual breaking of generative equivalence.
+= genuine actualised non-neutral differentiation.
 ~~~
 
 This occurrence burden does **not** require later sediment, inheritance or a durable `L2` trace. A terminal Selection remains genuine even where no later process exists in which retained efficacy could persist.
