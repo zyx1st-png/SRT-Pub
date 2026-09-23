@@ -1053,6 +1053,49 @@ Observed Regularity != Generative Invariance
 
 This is methodological evidence governance, not a new relation family or ontology layer.
 
+## 26.1 2026-09-23 synchronization boundary
+
+Repository self-reconstruction Phases 2–3 repaired Selection-occurrence semantics and reconciled the 2026-09-22 provenance / vocabulary layer. They do **not** retroactively make the later 09-22 GRG vocabulary part of this v0.3 foundation.
+
+Current authority / synchronization rule:
+
+~~~text
+v0.3
+= bounded noncanonical foundational owner
+  for the grammar admitted through 2026-09-21;
+
+2026-09-22 reach / reconstructibility / generative-debt architecture
+= source-level research direction;
+
+Phase 3 provenance / vocabulary map
+= reconciliation owner for collisions and origin typing;
+
+source-level continuation
+-/> silent v0.3 incorporation;
+-/> automatic v0.4;
+-/> canonical SRT promotion.
+~~~
+
+In particular:
+
+~~~text
+structural / operative generative expectation
+!= E_G automatically;
+
+generative inheritance
+!= X4c automatically;
+
+constitutive / boundary friction
+!= Psi_f automatically;
+
+generative / GRG proxy
+!= measurement / operational proxy.
+~~~
+
+The next theory step is pressure-testing / operationalizing **latent reconstructive reach** without presupposing that stored information alone establishes it. A future v0.4 or other foundational owner change must be earned by that later work rather than created as a synchronization convenience.
+
+BCTB relation-transfer remains a secondary diagnostic candidate. T2 is not an automatic next step.
+
 ## 27. Current mainline gate
 
 Do NOT:
