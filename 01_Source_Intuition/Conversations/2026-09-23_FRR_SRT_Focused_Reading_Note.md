@@ -221,6 +221,7 @@ insufficient evidence
 - `Core_Law/SRT_L0_Philosophy_Bridge.md` §一仍写 Whitehead satisfaction “没有区分显现与历史固化”，并把“稳定域独立性”作为已定分叉；
 - `Core_Law/SRT_Constitution_Seven_Theses.md` 的历史比较摘要仍写 “Whitehead 无 L2 对应构念”；
 - `Operations/_SRT_DIALOGUE_LOG.md` 2026-07-27 条目仍把“三域结构 / 代价约束 / L2 独立性”称为真正分叉。
+- `Core/SRT_OPEN_TENSIONS.md` 的 strongest-rival guard 已明确禁止在当前 canonical owners 中提前写入 Whitehead / Simondon novelty 或 superiority verdict；因此上述 legacy comparison 不能继续充当已结案的新颖性依据。
 
 FRR 已足以否定把 **一般性的 history / writeback / later-conditioning 缺失** 当成 Whitehead / relational realism 的既定差异，但它还不足以证明 Whitehead/FRR 具有 SRT 当前对 L2、persistence、revisability、friction/cost 的全部更强负担。
 
