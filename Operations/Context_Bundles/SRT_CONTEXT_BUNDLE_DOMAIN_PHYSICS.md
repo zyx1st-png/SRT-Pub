@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-22
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-09-23
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-22
-source_commit: 0e544815
-source_branch: theory/selection-generative-vertical-dynamics-20260922
+generated: 2026-09-23
+source_commit: 6874c6be
+source_branch: repair/repository-self-reconstruction-selection-20260923
 source_dirty: false
-inputs_digest: 30617f20c52f9c13
+inputs_digest: e5bda9efdfb81f0d
 ---
 
 # SRT 物理领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 30617f20c52f9c13
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-22 |
-| 来源 commit | `0e544815` |
-| 来源分支 | `theory/selection-generative-vertical-dynamics-20260922` |
+| 生成日期 | 2026-09-23 |
+| 来源 commit | `6874c6be` |
+| 来源分支 | `repair/repository-self-reconstruction-selection-20260923` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 

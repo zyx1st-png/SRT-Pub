@@ -37,16 +37,16 @@ Selection
 != decision among a pre-given menu
 != Darwinian winner-picking by default
 != bare filtering
-!= arbitrary change / state transition.
+!= arbitrary descriptive / modelled change.
 ~~~
 
-SRT Selection is a term of art for **actualised non-neutral differentiation whose consequence remains generatively effective rather than being fully erased**. A completed alternative set is not required in advance; alternatives, positions, relations and reachable possibilities may themselves be generated through Selection. Retention need not be a localized memory/object: it may remain as diffuse field change or as generative capacity later inherited by another/higher formation.
+SRT Selection is a term of art for **genuine actualised non-neutral differentiation**. A completed alternative set is not required in advance; alternatives, positions, relations and reachable possibilities may themselves be generated through Selection. Selection occurrence does **not** require later sediment, retained historical efficacy or generative inheritance; terminal Selection remains genuine.
 
 Fresh-session rule:
 
-> When the word `Selection` appears in SRT / GRG work, never silently substitute the conventional option-choice meaning. If exact scope matters, read the canonical owners and the 2026-09-22 author adjudication: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md`.
+> When the word `Selection` appears in SRT / GRG work, never silently substitute the conventional option-choice meaning. If exact scope matters, read the canonical owners and the later same-day correction: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_GENERATIVE_CAPACITY_INTERVENTION_GRAMMAR_2026-09-22.md`.
 
-The strengthened retained-generative-consequence criterion creates an explicit OPEN reconciliation with legacy `terminal Selection remains genuine` wording. Do not solve that conflict by assumption.
+Current guard: `Selection occurrence != retained historical efficacy != sedimentation != generative inheritance`. Terminal Selection remains genuine. The OPEN problem is narrower: what distinguishes genuine actualised Selection from merely descriptive / modelled change? Do not answer that by smuggling retained consequence back into the occurrence definition.
 
 ## 2. Current identity guard
 
