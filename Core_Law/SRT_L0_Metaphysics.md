@@ -105,7 +105,7 @@ generative retention
 != localized L2 record.
 ~~~
 
-历史 `terminal Selection remains genuine` 已由同日后续作者裁决明确保留，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
+`terminal Selection remains genuine` 源自 2026-09-14 作者裁决的硬护栏（O0 primitive generativity §G / §L；Selection-totality §L），2026-09-22 同日后续作者裁决再次确认，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
 
 ### 选择不需要选择者
 
