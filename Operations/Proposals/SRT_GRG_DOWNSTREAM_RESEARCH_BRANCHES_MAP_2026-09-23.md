@@ -58,6 +58,10 @@ Desired output:
 - negative controls;
 - relation to canonical OPEN without premature closure.
 
+mature-neighbor owner = UNASSIGNED — must name and read source-native comparator(s) before reopening.
+closure criterion = a bounded audit either yields a non-circular discriminator with reachable negative cases, or explicitly demonstrates that the current route cannot close the canonical OPEN and parks it with a precise residual.
+abandon criterion = proposed tests reduce to the canonical non-neutrality wording itself, or admit nearly all well-individuated objective changes without discrimination.
+
 ### B2 — Neutrality maps / proxy / reach
 
 Core questions:
@@ -73,6 +77,10 @@ Desired output:
 - source-native operationalizations across multiple fusion cases;
 - clearer relation among proxy, reach and equivalence.
 
+mature-neighbor owner = UNASSIGNED — must include source-native work on coarse-graining / abstraction / routing relevant to the chosen domain before reopening.
+closure criterion = at least two source-native cases support an explicit neutrality/reach path with negative controls and a reconstruction path that does analytical work beyond renaming.
+abandon criterion = neutrality / reach language remains purely metaphorical or cannot be distinguished from the source's existing variables / relations.
+
 ### B3 — Scaffold / cage / generative debt
 
 Core questions:
@@ -86,6 +94,10 @@ Desired output:
 
 - dynamic criteria;
 - no static moral labeling.
+
+mature-neighbor owner = UNASSIGNED — must include source-native maintenance / resilience / technical-debt or analogous comparator(s) before reopening.
+closure criterion = source-native evidence distinguishes scaffold-like burden reduction, foreclosure, and generative-debt accumulation from ordinary cost using independently checkable consequences.
+abandon criterion = the proposed debt / cage labels add no discriminator beyond generic cost, inefficiency or rigidity.
 
 ### B4 — Higher-order formation / generative re-entry / One
 
@@ -103,6 +115,10 @@ Desired output:
 - bounded cross-domain formation diagnostics;
 - no unauthorized canonical rewrite.
 
+mature-neighbor owner = current canonical Spine + One Formation owners are mandatory; domain-specific emergence / individuality comparators must also be named before reopening.
+closure criterion = a bounded case distinguishes aggregation, objectification and load-bearing higher-order formation without redefining canonical One / Selection-position, and states the separate gate for any owner-level mapping.
+abandon criterion = the proposed criteria merely restate canonical One semantics, or generative re-entry cannot be separated from observer-side aggregation.
+
 ### B5 — Endogenous perspective / ontology–epistemology interface
 
 Core questions:
@@ -117,11 +133,16 @@ Desired output:
 - source-native tests for endogenous perspective;
 - explicit separation from consciousness.
 
+mature-neighbor owner = UNASSIGNED — must name source-native perspective / control / representation comparator(s) before reopening.
+closure criterion = a source-native case shows an internally maintained relevance / neutrality organization whose perturbation changes later selection-relevant routing, with canonical perspective mapping separately gated.
+abandon criterion = all apparent perspective structure is imposed by the analyst or neutrality assignment alone is doing all the work.
+
 ### B6 — Bearer / anticipation / self
 
 Core questions:
 
-- historical self-conditioning;
+- historical self-conditioning as an upstream variable, **not a Bearer admission gate**;
+- canonical Bearer route `formed One / Selection-position + P + E -> Bearer`;
 - thin vs proxy-mediated anticipation;
 - future-proxy reach without retrocausality;
 - persistence vs Bearer continuity vs self continuity;
@@ -131,6 +152,10 @@ Desired output:
 
 - bounded temporal-lineage grammar;
 - compatibility audit with current canonical / STATUS guards.
+
+mature-neighbor owner = current Bearer / One owners are mandatory; source-native temporal-continuity / anticipation comparator(s) must be named before reopening.
+closure criterion = historical self-conditioning, anticipation and operational lineage are separated, and any Bearer claim independently pays the canonical P + E gate.
+abandon criterion = retained history / feedback / continuity is being used as a substitute for the P + E Bearer gate, or self-lineage cannot be operationally specified.
 
 ### B7 — Attention / valuation / stake / affect-like organization
 
@@ -147,6 +172,10 @@ Desired output:
 
 - source-native candidate mechanisms;
 - no phenomenology inference from control / reward alone.
+
+mature-neighbor owner = UNASSIGNED — must name source-native attention / salience / valuation / affect comparator(s) before reopening.
+closure criterion = source-native mechanisms independently distinguish stake, valuation and attention with negative controls, and the mapping changes at least one diagnosis / expectation without inferring phenomenality.
+abandon criterion = the branch only relabels reward, control priority or salience signals with no added discriminator.
 
 ### B8 — Phenomenal consciousness boundary
 
@@ -172,6 +201,10 @@ Desired output only when reopened:
 - competitor-source pressure;
 - no convenience closure.
 
+mature-neighbor owner = UNASSIGNED — strongest consciousness comparator(s) must be named and read before reopening.
+closure criterion = a positive sufficient-condition candidate is stated, exposed to counterexamples / mature-neighbor pressure, and tied to an independently testable missing burden; otherwise the branch remains explicitly OPEN and is parked.
+abandon criterion = repeated attempts add only functional correlates or new negative guards without any positive candidate burden; in that case stop expansion rather than adding another layer.
+
 ### B9 — Intervention / generative agency
 
 Core questions:
@@ -187,6 +220,10 @@ Desired output:
 - intervention taxonomy grounded in source-native cases;
 - engineering / agency applications.
 
+mature-neighbor owner = UNASSIGNED — must include source-native causal-intervention / control / engineering comparator(s) before reopening.
+closure criterion = the intervention taxonomy yields a source-native prediction, diagnostic or design distinction not already exhausted by the strongest reasonable baseline.
+abandon criterion = state/reach/proxy/grammar distinctions collapse into ordinary causal/control descriptions with no additional research consequence.
+
 ### B10 — Multi-agent power / consent / coordination
 
 Core questions:
@@ -201,6 +238,10 @@ Desired output:
 
 - source-native multi-agent cases;
 - avoid importing legal / political conclusions before source work.
+
+mature-neighbor owner = UNASSIGNED — must name source-native multi-agent / consent / coercion / coordination comparator(s) before reopening.
+closure criterion = at least one source-native case discriminates influence, coordination and coercion using independently specified re-Selection / exit / reconstruction variables.
+abandon criterion = the branch functions only as normative relabeling or cannot separate descriptive power structure from evaluative judgment.
 
 ### B11 — Money / credit / institutions / law
 
@@ -219,6 +260,10 @@ Desired output:
 - explicit mechanism ownership;
 - no claim that GRG replaces domain theory.
 
+mature-neighbor owner = UNASSIGNED — economics / legal / institutional source owners must be selected before reopening.
+closure criterion = money, credit, institution or law mappings preserve source-native mechanisms, pass the anti-metaphor test, and specify at least one failure / recut condition.
+abandon criterion = “proxy”, “meta-intervention” or “anti-closure” language merely redescribes standard domain roles without changing any boundary, expectation or intervention question.
+
 ### B12 — Civilization / large-scale generative health
 
 Core questions:
@@ -234,6 +279,10 @@ Desired output:
 
 - historical / institutional source-native grounding;
 - bounded structural criteria rather than civilizational ranking.
+
+mature-neighbor owner = UNASSIGNED — historical / institutional / civilizational source owners must be selected before reopening.
+closure criterion = bounded cases operationalize the proposed generative-health variables and permit contrary evidence to falsify or narrow the synthesis without ranking civilizations.
+abandon criterion = the branch can only produce broad normative summaries, retrospective storytelling or control-vs-openness slogans without source-native discriminators.
 
 ## 3. Cross-branch invariants to preserve
 
@@ -264,6 +313,8 @@ Across all branches:
 ## 4. Relationship to the Grammar Card
 
 The downstream branch map is a **hypothesis reservoir**.
+
+If the sibling experimental Grammar Card package has not landed, references below to “the Card” are conditional routing notes only and create no dependency on an unmerged artifact.
 
 It should influence the Card only when repeated fusion-case evidence shows that a field is needed.
 
