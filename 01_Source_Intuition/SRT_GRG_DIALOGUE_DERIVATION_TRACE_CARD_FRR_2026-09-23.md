@@ -19,11 +19,11 @@ tags: [GRG, GrammarCard, FRR, DerivationTrace, FusionCase, Selection, Proxy, Rec
 
 ## 0. Purpose
 
-This file preserves the substantive assistant-visible analysis that led from the FRR focused reading to the current experimental GRG Generative Grammar Card v0.2.
+This file preserves the substantive assistant-visible analysis that led from the FRR focused reading to the current experimental GRG Fusion-Case Grammar Card v0.1.
 
 It is a structured reconstruction of the dialogue's explicit analytical content, not a hidden chain-of-thought record.
 
-The author explicitly accepted the Card derivation as a bounded package on 2026-09-23; see the companion author-adjudication record.
+The author explicitly approved preserving and continuing this bounded Card direction on 2026-09-23; see the companion author-direction record. Under the merged Phase-3 provenance owner, that record-level approval does **not** upgrade the machine-generated wording here to A1; this trace remains M except where direct author wording is separately preserved.
 
 ## 1. Starting problem
 
@@ -33,15 +33,17 @@ The aim was:
 
 `take one mature external relational framework -> reconstruct it source-first -> see where the existing GRG representation breaks -> modify the Card -> repeat with other domains`.
 
-FRR was useful because it already contains rich source-native machinery around:
+FRR was useful because the source-grounded focused reading records source-native machinery around:
 
 - local contextualization;
 - potential / probable organization;
 - Boolean compatibility;
 - actualization;
 - objective incorporation;
-- later conditioning / global formation;
-- recoherence / gluing.
+- later conditioning / global-history formation;
+- local-to-global gluing / compatible-context construction.
+
+Source anchors used by that note include Chapter 2 printed pp. 88–90 (PDF 106–108), Chapter 3 pp. 133–134 (PDF 150–151), Chapter 4 pp. 164–166 (PDF 179–182), the Interlude pp. 206–209 (PDF 220–224), and Chapter 8 p. 269 (PDF 281).
 
 This creates strong overlap pressure without granting identity.
 
@@ -100,16 +102,18 @@ Earlier dialogue wording sometimes suggested:
 
 That is unsafe because SRT currently treats Selection as genuine actualised non-neutral differentiation, not as an extra force that then causes actualization.
 
-The cleaner research representation is:
+The safe correction is **not** a one-way `Selection -> Actualization` mechanism. Current canonical routing in `Core_Law/SRT_Generative_Ontology_Spine.md §2` instead requires two co-primitive analytic burdens:
 
-`L0/open generative structure -> pre-occurrence organization -> Selection/Actualization event -> consequence`.
+```text
+O0 — non-maximal indifference / openness
+S0 — actualising Selection
+O0 before S0: NO
+S0 before O0: NO
+```
 
-Selection and actualization are treated as two analytical aspects of one occurrence:
+The Card may separately audit source-native actuality on the **S0-facing** side, but it must preserve O0 and must not reduce O0 to a prior option menu, probability space or candidate container.
 
-- actualization = actuality status;
-- Selection = actuality viewed as genuine non-neutral differentiation.
-
-This is not a canonical rewrite. It is a Card-level guard against inventing a new collapse-like mechanism.
+This is not a canonical rewrite. It is a Card-level guard against inventing a new collapse-like mechanism **and** against narrowing primitive Selection to completed determinate actuality alone.
 
 ## 5. Anti-tautology problem was narrowed
 
@@ -122,9 +126,11 @@ The dialogue narrowed the burden by separating:
 - causal explanation of why an actuality occurs;
 - individuation / membership conditions for when an actuality counts as Selection.
 
-SRT need not necessarily solve the former in every domain to avoid total circularity, but it must pay the latter burden.
+SRT need not necessarily solve the former in every domain to avoid total circularity, but the dialogue did **not** solve the canonical anti-tautology burden either.
 
-A provisional Selection audit therefore emerged with four pressures:
+The resulting Card audit should therefore be treated as a **necessary-condition / negative-control screen**, not a sufficient Selection criterion. Three screens can exclude bad candidates — source-native occurrence evidence, defensible event individuation and representation invariance — while relational non-neutrality remains the OPEN canonical burden being investigated rather than an independently solved test.
+
+A provisional compatibility audit therefore emerged with four pressures:
 
 ### 5.1 Occurrence / actuality
 
@@ -134,9 +140,9 @@ GRG cannot certify actuality merely because its own schema has a field for it.
 
 ### 5.2 Event individuation
 
-The event boundary cannot be manufactured arbitrarily by changing temporal or descriptive resolution.
+The event boundary cannot be manufactured solely by an **undeclared analyst resolution**.
 
-The Card should record how the source individuates an event, transition or process unit.
+Scale-dependent events remain admissible when the scale / grain is source-native or independently justified. The Card should record how the source individuates an event, transition or process unit and why the declared resolution is licensed.
 
 ### 5.3 Relational non-neutrality
 
@@ -150,7 +156,7 @@ The claimed difference should survive legitimate structure-preserving redescript
 
 A coordinate change or variable rename should not manufacture a new Selection.
 
-These criteria remain research-level and provisional.
+These criteria remain research-level and provisional. Passing them does **not** constitute a sufficient canonical Selection criterion; in particular, the non-neutrality item partly restates the term whose exact anti-tautology boundary remains OPEN.
 
 ## 6. Non-neutrality was decomposed
 
@@ -174,11 +180,11 @@ Some actualities continue to alter later generative conditions.
 
 This is retention / sedimentation, not a prerequisite for Selection occurrence.
 
-Therefore:
+Therefore, reusing the already-canonical separation in `Core_Law/SRT_Generative_Ontology_Spine.md §2.1`:
 
-`Selection occurrence != retention / sedimentation`.
+`Selection occurrence != retained historical efficacy != sedimentation != generative inheritance`.
 
-Terminal Selection remains conceptually possible even when later retained efficacy is absent.
+This is a canonical input to the Card, not a new discovery of the present dialogue. Terminal Selection remains conceptually possible even when later retained efficacy is absent.
 
 ## 7. Neutrality mapping became a central Card function
 
@@ -237,17 +243,15 @@ The dialogue also preserved:
 
 ## 10. Reconstructibility had to split into two layers
 
-FRR contains source-native routes from local / coarse Boolean organization toward richer compatible structures.
+The FRR focused-reading note supports local-to-global **gluing / compatible-context construction** in the quantum discussion, while its Chapter-11 “historical process” material is explicitly guarded because that formal discussion is first given in a spatial-topology modelling context and only analogically transferred to the quantum domain.
 
-That source-native structural reopening cannot simply be relabeled GRG reconstructibility.
+Therefore the Card should not treat a source-native FRR “recoherence” route as already established from the focused reading. Instead it needs a generic source-side field:
 
-The Card therefore needs:
+### 10.1 Source-native structural reopening / reconstruction path
 
-### 10.1 Structural reopening path
+What does the source itself actually permit?
 
-What does the source itself permit?
-
-Examples can include gluing, recoherence, re-expansion, reconstruction, reconfiguration or another source-native operation.
+Examples across future domains can include gluing, re-expansion, reconstruction, reconfiguration or another source-native operation, but each label must be source-grounded case by case.
 
 ### 10.2 Generative reconstructibility
 
@@ -291,26 +295,23 @@ Candidate statements from the FRR case:
 - Boolean frame != GRG proxy automatically;
 - negative selection != SRT Selection automatically;
 - germ != GRG objectification automatically;
-- recoherence != GRG reconstructibility automatically;
-- global-in-formation != SRT L2 automatically.
+- local-to-global gluing / compatible-context construction != GRG reconstructibility automatically;
+- actualization -> datum -> later-conditioning / global-history structure != SRT L2 automatically.
+
+These are tied back to the source-grounded reading anchors above; the Chapter-11 historical-process analogy remains explicitly limited and is not promoted into a stronger quantum-domain reconstruction claim.
 
 A mapping can be useful at the level of role without claiming ontological identity or shared mechanism.
 
 ## 13. Analogy, mapping, instantiation and transfer were separated
 
-The dialogue developed a stricter progression:
+The dialogue initially developed a progression from analogy toward stronger role mapping. Review against the live GRG framework showed that this must **not** become a parallel maturity ladder.
 
-`analogy -> explicit mapping -> candidate instantiation -> tested instantiation -> transfer candidate`.
+The revised Card therefore separates:
 
-Definitions:
+- Card-local correspondence disposition (redescriptive-only / explicit correspondence / source-supported role candidate / source-pressured role candidate / rejected / type mismatch / insufficient evidence);
+- live GRG maturity `M0–M5`, owned by the current research framework and GTS machinery.
 
-- analogy = structural resemblance;
-- mapping = declared correspondence;
-- candidate instantiation = source mechanism appears to satisfy a GRG operational role;
-- tested instantiation = the role survives source-native pressure / negative controls;
-- transfer candidate = a learned generative expectation is carried to another case and tested there.
-
-The Card should record the current status rather than treating all resemblance as instantiation.
+Any prospective transfer-generating claim must pay the strongest reasonable horizontal baseline, mature-target-practice comparison and M4-E0 absorption-before-execution gate. A Card-local role candidate is never a synonym for M4.
 
 ## 14. Anti-metaphor test
 
@@ -329,7 +330,7 @@ The wider dialogue developed criteria for distinguishing:
 - aggregation;
 - objectification;
 - load-bearing proxy;
-- new Selection position.
+- formed locus / operative positionality candidate.
 
 For the Card core, only the bounded diagnostic is retained:
 
@@ -337,6 +338,8 @@ For the Card core, only the bounded diagnostic is retained:
 - does it change reach / routing / support?
 - can it generatively re-enter later relations?
 - does it create a new load-bearing organization for later Selection?
+
+Any mapping from such a formed locus to canonical SRT Selection-position is **not automatic** and remains separately owner-gated.
 
 More speculative developments such as endogenous perspective, bearer, self, subjectivity and civilization are not inserted into the core Card. They are parked in a separate downstream package.
 
@@ -392,7 +395,7 @@ This is one of the main mechanisms by which fusion cases can change GRG rather t
 
 ## 19. Resulting Card architecture
 
-The resulting experimental Card v0.2 contains twenty blocks:
+The resulting experimental **Fusion-Case Card v0.1 companion overlay** contains the following core blocks, while the active GTS v0.2 remains the primary process-first record:
 
 1. source identity;
 2. native event ontology;
@@ -411,11 +414,11 @@ The resulting experimental Card v0.2 contains twenty blocks:
 15. generative expectation;
 16. failure / recut condition;
 17. anti-metaphor test;
-18. mapping status;
+18. Card-local mapping disposition + live M0–M5 maturity;
 19. non-identity guard;
 20. provenance / reconstruction + Card outcome.
 
-The executable template is stored separately in Operations/Templates.
+The executable companion template is stored at `Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md`. Positive GRG maturity / transfer credit remains in the existing GTS / research-framework path.
 
 ## 20. Why the next cases are fusion cases, not adversarial tests
 
