@@ -568,8 +568,8 @@ Card fields split:
   source structural reconstruction vs GRG reconstructibility.
 
 Card wording removed:
-  source-native "recoherence" from generic field;
-  unsupported "global-in-formation" label;
+  an ungrounded source-specific reopening label from the generic field;
+  an unsupported source-specific global-formation label;
   Card-local transfer ladder.
 
 Card fields left partial:
