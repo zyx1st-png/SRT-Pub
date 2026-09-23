@@ -24,6 +24,8 @@ This record captures the 2026-09-22 author dialogue after the BCTB-0 T1 calibrat
 
 It is intentionally broader than the bounded canonical edits made alongside it. The author confirms the direction below as the current intuition to preserve and pressure-test. It must influence later GRG / ontology work, but it must not be mistaken for a completed formal theory.
 
+> **Provenance pointer (machine-added 2026-09-23, repository self-reconstruction Phase 3).** Item-level provenance for this record (A0-Q / A0-P / A1 / M) is mapped in `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md` §3.1. "The author accepts / confirms" statements below are A1-claimed unless that map records an acceptance event or author quotation. The BCTB T1 evidence behind §N is located in the same map §4. This pointer does not change the record's content.
+
 ## A. Selection is an SRT term of art, not ordinary option-choice
 
 The author explicitly rejects the conventional default reading:
