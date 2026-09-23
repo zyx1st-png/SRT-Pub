@@ -74,11 +74,13 @@ Therefore:
 - the direct quotations in §1 = A0-Q;
 - faithful paraphrase of those author instructions = A0-P where used;
 - reconstructed assistant-visible analysis = M unless a separately preserved item-level author event supports stronger typing;
-- this corrective package may mark M material as continuity-load-bearing without changing its epistemic authority.
+- author-accepted, non-superseded M analysis retains required continuation retrieval value without changing its epistemic authority.
 
-## 3. Correction being authorized
+## 3. Machine implementation of the authorized correction — M
 
-The author correction requires a distinction that the earlier #1037 / #1038 landing did not preserve strongly enough:
+Sections §3–§7 are machine implementation / reconstruction under the author-approved recovery direction. They are **M unless separately supported by item-level author evidence**; they must not be presented as literal author wording or A1 theory.
+
+The implementation must preserve the repository's existing distinction:
 
 ```text
 epistemic authority
@@ -92,19 +94,19 @@ A machine synthesis can remain:
 authority = M
 ```
 
-while also being:
+while also having:
 
 ```text
-continuity_role = LOAD_BEARING
+retrieval value = REQUIRED FOR CONTINUATION
 ```
 
-when later work cannot reconstruct the accepted research direction without it.
+when the author accepted / approved / continued the analysis package and no later record superseded it.
 
-This is not a fifth provenance class. It is an orthogonal retrieval / continuity annotation for this recovery package.
+No new repository-wide `continuity_role` authority or metadata axis is required.
 
 ## 4. Recovery target
 
-The corrective work is authorized to recover, distinguish and route at least four layers:
+The corrective work should preserve and route at least four surfaces:
 
 1. direct author intuitions / corrections / acceptance events;
 2. assistant-visible analytical derivations that materially shaped the accepted direction;
@@ -123,7 +125,7 @@ The corrective package should preserve the following diagnosis as a machine reco
 
 - #1037 and #1038 contain substantial valuable material; the failure is not simple absence.
 - important assistant analysis was preserved, but much of it was routed as `downstream`, `parked` or companion material without an orthogonal continuity signal.
-- the next-session handoff over-specified evolutionary targets and therefore allowed the implementation route to act like a preloaded GRG lens despite stating `source-native first`.
+- the pre-review handoff in commit `7cd5c00cd` over-specified evolutionary targets and was copied into the #1039 session before the reviewed correction in `652e484ca` landed; the final merged #1037 handoff had already restored STATUS reconciliation and reduced those targets to reading hints.
 - #1040 usefully corrected object-to-object mapping and moved toward reconstruction-first work, but it is a partial repair rather than a complete recovery of the preceding dialogue direction.
 - #1039 therefore must remain Draft / HOLD until the dialogue-continuity repair is reviewed.
 
@@ -149,6 +151,6 @@ The implementation package should include:
 
 - a dialogue continuity recovery master;
 - a dialogue-to-repository semantic fidelity audit;
-- a continuity / dual-reconstruction protocol;
-- a clean future-session handoff that does not pre-specify the domain answer;
+- a two-sided objectification-reconstruction method companion;
+- a merged, bounded future-session handoff that reconciles the single STATUS `CURRENT NEXT` and does not pre-specify the domain answer;
 - routing notes on the earlier #1037 / #1038 / #1040 entry surfaces so future sessions do not repeat the same handoff failure.
