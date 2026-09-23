@@ -37,7 +37,6 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `_SRT_SYMBOL_TABLE.md` | 符号规范锚点；full definition registry |
 | `SRT_AI_START.md §3` | 高风险符号/proxy 快速守门（原 `_SRT_SYMBOL_QUICK_GUARD.md` 已并入，2026-07-20）；不替代 full symbol table |
 | `_SRT_AGENT_RETRIEVAL_PROFILE.md` | Agent 检索扩展协议：区分 authority 与 retrieval value |
-| `_SRT_TERM_ROUTER.md` | 动态术语语义路由：alias / overlap / owner / collision；非定义权威 |
 | `_SRT_CONTEXT_ROUTER.md` | 深层问题上下文抓取路由 |
 | `_SRT_DEEP_THEORY_MAP.md` | 深层理论节点地图 |
 | `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md` | 高优先级 Core/Core_Law 覆盖索引 |
@@ -93,7 +92,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - annex registry → `ANNEX_REGISTRY.md`
 - longform split registry → `LONGFORM_SPLITS.md`
 - agent retrieval profile → `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- dynamic terminology router → `_SRT_TERM_ROUTER.md`（alias / overlap / collision / owner routing only; not definition authority）
+- terminology routing → `Glossary/README.md` → `Glossary/SRT_Live_Term_Router.md`（沿用既有 glossary 入口；alias / overlap / collision / owner routing only）
 - glossary → `SRT_Glossary.md`（mixed historical / retrieval source; subordinate to canonical symbol anchors and domain claim-status files）
 - structural governance glossary → `SRT_Glossary_Structural_Governance_Terms.md`
 - manifest → `_SRT_MANIFEST.yaml`
