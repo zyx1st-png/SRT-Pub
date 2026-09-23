@@ -232,9 +232,18 @@ Do not count repeated vocabulary matches as evidence.
 
 The fusion-case programme must be able to shrink as well as grow.
 
+**Adequacy must be declared before interpreting the case outcome.** A case counts as source-native adequate for this rule only when, before its GRG result is scored:
+
+- source identity / reading boundary and source anchors are explicit;
+- the source-native event / process unit (§2) is at least sufficiently specified to audit the declared grain;
+- the strongest reasonable source-native / horizontal baseline required by the live research framework is named;
+- missing later Card fields are allowed and do not retroactively make the case "inadequate".
+
+A Card revision counts as **reusable** for stop-loss purposes only after it survives the next heterogeneous cross-card reconciliation; a case-local wording change alone does not exempt the programme from contraction.
+
 Mandatory root-return:
 
-- if **two consecutive source-native adequate fusion cases** produce no mapping stronger than M0/M1, no new falsifiable burden, and no reusable Card revision beyond case-specific prose, **pause acquisition of new domains** and perform Card contraction / root-question review before opening another case;
+- if **two consecutive source-native adequate fusion cases** produce no mapping stronger than M0/M1, no new falsifiable burden, and no Card revision that survives heterogeneous cross-card reconciliation, **pause acquisition of new domains** and perform Card contraction / root-question review before opening another case;
 - if the same mandatory Card field is `N.A.`, `TYPE_MISMATCH` or `INSUFFICIENT_EVIDENCE` in two heterogeneous adequate cases, mark that field as a split/removal candidate at the next cross-card reconciliation;
 - a third case may not be opened merely to rescue a favored field or GRG term after the stop condition fires.
 
@@ -283,7 +292,7 @@ Use the following prompt in a fresh session:
 
 先严格按 AGENTS.md §Session Start 核验 live main，并读取 STATUS.md 当前 GRG route。不要自动创建 GRG v0.4，不要推进 BCTB T2，不要改 Freeze-A canonical owner。
 
-本轮主线不是继续发散 ontology，而是继续“GRG Generative Grammar Card”的融合案例迭代。
+本轮若 STATUS 对账允许，候选伴随路线是继续 **Fusion-Case Grammar Card v0.1** 的融合案例迭代；它不是 CURRENT NEXT，也不使用已退役的 “GRG Generative Grammar Card” 作为主线名。STATUS CURRENT NEXT 始终优先。
 
 请优先读取：
 1. 01_Source_Intuition/Conversations/2026-09-23_FRR_SRT_Focused_Reading_Note.md
