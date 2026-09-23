@@ -43,15 +43,17 @@ The author explicitly instructed:
 
 > “先将GRG的最新的card模型写入仓库，以创建PR的方式。同时需要加入整个card模型推演的过程，包含你的分析内容。你分析的内容，我默认全部赞同。”
 
-This provides an explicit acceptance event for the machine consolidation represented by the current Card-refinement package.
+This records an explicit author-level permission / directional acceptance for preserving and continuing the Card-refinement package.
 
-Provenance typing for this package:
+Under the merged provenance owner `Operations/Audits/SRT_REPOSITORY_SELF_RECONSTRUCTION_PHASE3_PROVENANCE_VOCABULARY_MAP_2026-09-23.md`, record-level or blanket acceptance does **not** upgrade machine-generated section wording to A1 without item-level acceptance evidence.
+
+Therefore:
 
 - the quoted sentence above = A0-Q;
-- the assistant-visible Card derivation and schema refinements accepted by that sentence = A1;
-- later additions not present in that accepted derivation remain M unless separately accepted.
+- the machine-generated Card derivation and schema refinements in this package = M unless a separate item-level acceptance event is preserved;
+- the blanket approval records programme direction, not item-level author authority.
 
-This blanket acceptance is bounded to the Card-model derivation in the current dialogue. It does not automatically upgrade older unrelated machine synthesis elsewhere in the repository.
+This prevents the package from recreating the provenance debt closed in #1032.
 
 ## 2. Accepted Card-development direction
 
@@ -62,7 +64,7 @@ The author accepts the following methodological direction:
 3. GRG mapping should be explicit, typed and reversible.
 4. A source term named “selection”, “actualization”, “context”, “germ”, “coarse-graining”, “recoherence”, “valuation” or similar must not be silently identified with SRT/GRG terms.
 5. The Card should preserve failed mappings, empty fields, non-identity guards and reopening conditions as research results.
-6. A successful Card must do more than redescribe a source in GRG language; it should change at least one prediction, diagnostic boundary, intervention sensitivity, exclusion condition, or transferable generative expectation.
+6. A **positive GRG-gain claim** must do more than redescribe a source in GRG language; it should change at least one prediction, diagnostic boundary, intervention sensitivity, exclusion condition, or transferable generative expectation. A Card that concludes `NO GRG GAIN`, `REJECTED_MAPPING`, `TYPE_MISMATCH` or `INSUFFICIENT_EVIDENCE` can still be a successful research result.
 7. The Card itself is a theory-facing higher-order proxy and must preserve reconstructibility back to source-native mechanism.
 
 ## 3. FRR-derived schema pressures accepted for the Card
@@ -118,8 +120,10 @@ Examples from this fusion case include:
 - Boolean frame != GRG proxy automatically;
 - negative selection != SRT Selection automatically;
 - Boolean germ != GRG objectification automatically;
-- recoherence != GRG reconstructibility automatically;
-- global-in-formation != SRT L2 automatically.
+- local-to-global gluing / formation != GRG reconstructibility automatically;
+- actualization -> datum -> later-conditioning / global-history structure != SRT L2 automatically.
+
+These are source-grounded through the focused reading note's Chapter 2 / Chapter 3 / Chapter 4 / Interlude / Chapter 8 anchors; the more speculative Chapter 11 historical-process transfer remains explicitly limited by its analogical-transfer warning.
 
 These can be structural neighbors or candidate role mappings without ontological identity.
 
@@ -146,15 +150,18 @@ The canonical OPEN remains OPEN until separately hardened under the repository's
 
 The accepted output is:
 
-`Operations/Templates/SRT_GRG_GENERATIVE_GRAMMAR_CARD_V0_2_2026-09-23.md`
+`Operations/Templates/SRT_GRG_FUSION_CASE_GRAMMAR_CARD_V0_1_2026-09-23.md`
 
 Status:
 
-- experimental template;
+- experimental **companion** template;
 - noncanonical;
+- not a replacement for the active GTS v0.2 primary record;
 - not a replacement for GRG v0.3;
 - intended for repeated fusion cases;
 - expected to change after cross-case pressure.
+
+Positive maturity / transfer credit remains owned by the live M0–M5 framework, strongest reasonable horizontal baseline and M4-E0 absorption gate.
 
 The accompanying derivation trace is:
 
@@ -170,7 +177,7 @@ They are **fusion cases** analogous to FRR:
 
 The purpose is not to force a source into GRG and not to defeat the source.
 
-The purpose is to let heterogeneous source structures modify the Card and, where warranted, modify GRG research grammar itself.
+The purpose is to let heterogeneous source structures modify the Card and, where warranted, modify GRG research grammar itself. This author-directed Card lane does **not** silently replace the live STATUS `CURRENT NEXT`; until STATUS is explicitly reconciled, the fusion-case plan is a bounded companion route and must not bypass the currently routed latent-reconstructive-reach pressure-test / operationalization.
 
 The bounded plan is recorded in:
 
