@@ -209,7 +209,7 @@ This is more precise than a generic “compression” field.
 
 ## 8. Proxy role was retyped
 
-The dialogue accepted the following research-level guard:
+The dialogue developed the following research-level guard:
 
 > proxy organizes Selection burden, but does not replace Selection.
 
@@ -225,9 +225,11 @@ This also avoids conflating a GRG generative proxy with the repository's measure
 
 ## 9. Reach was refined through the neutrality view
 
-Reach was sharpened from “how far an influence propagates” toward:
+An M-level candidate refinement sharpened reach from “how far an influence propagates” toward:
 
 > the ability of a distinction to remain or regain relational non-neutrality across one or more proxy / equivalence transformations and enter consequence-producing paths.
+
+This is a candidate analytical refinement for the Card, not a replacement definition for the existing author-level reach record; its stronger relational-non-neutrality dependence remains to be pressure-tested.
 
 This supports a Card block that records:
 
@@ -424,7 +426,7 @@ The executable companion template is stored at `Operations/Templates/SRT_GRG_FUS
 
 The dialogue originally used “pressure test” and briefly described evolution as an “enemy” or adversarial case.
 
-The author corrected this framing.
+The dialogue framing was corrected from adversarial language to **fusion cases**. Under the package-level provenance guard, this wording is preserved as M unless an item-level author event is separately cited.
 
 The forward route should treat later domains as **fusion cases** in the same spirit as FRR.
 
