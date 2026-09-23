@@ -53,7 +53,7 @@ while
 retrieval value = REQUIRED FOR CONTINUATION
 ```
 
-No separate `continuity_role` metadata axis is required.
+No separate continuity metadata axis is required.
 
 Likewise, the labels `parked`, `downstream`, `companion`, `support`, or `canonical: false` do not by themselves lower retrieval value. They may constrain definition authority, universal applicability, active execution routing, or maturity claims while the accepted reasoning remains necessary to reconstruct why the programme took its current direction.
 
