@@ -216,30 +216,33 @@ insufficient evidence
 
 ## 6. Canonical comparison debt exposed by this reread
 
-> **2026-09-23 follow-up status**：#1034 只登记该 debt；本次 bounded owner-correction package 已实际收紧 `Core_Law/SRT_L0_Philosophy_Bridge.md` 与 `Core_Law/SRT_Constitution_Seven_Theses.md` 的 categorical Whitehead claims。修正仅撤回“一般 history/writeback 缺失 / Whitehead 无 L₂ 对应构念 / 过程哲学无 cost 对应物”这类过强 verdict；**没有**把 FRR 宣布为 SRT L₂ 等价物，也没有关闭 persistence / revisability / resistance / cost 的 OPEN 状态。
+> **2026-09-23 closure status**：#1034 发现并登记了 Whitehead comparison debt；#1035 已完成 bounded bridge/commentary correction（merge `1111e9592936214c4255bc97b03513538b253145`）。本节现在只保留 provenance 与剩余 OPEN，不再把已修正的 owner 继续列为待办。
 
-本轮 FRR 阅读不仅修正了通信记录，也暴露了仓库中更早的 Whitehead 比较债。**在 #1034 时**，该 debt 只做登记、未直接改 canonical / retained canonical-support owners；本次 follow-up bounded correction 正是对其中两处比较面做最小收紧：
+已完成：
 
-- `Core_Law/SRT_L0_Philosophy_Bridge.md` §一仍写 Whitehead satisfaction “没有区分显现与历史固化”，并把“稳定域独立性”作为已定分叉；
-- `Core_Law/SRT_Constitution_Seven_Theses.md` 的历史比较摘要仍写 “Whitehead 无 L2 对应构念”；
-- `Operations/_SRT_DIALOGUE_LOG.md` 2026-07-27 条目仍把“三域结构 / 代价约束 / L2 独立性”称为真正分叉。
-- `Core/SRT_OPEN_TENSIONS.md` 的 strongest-rival guard 已明确禁止在当前 canonical owners 中提前写入 Whitehead / Simondon novelty 或 superiority verdict；因此上述 legacy comparison 不能继续充当已结案的新颖性依据。
+- `Core_Law/SRT_L0_Philosophy_Bridge.md` 已撤回“一般 history/writeback 缺失”“过程哲学无 cost 对应物”等 categorical verdict，并把 L₂ 精确映射、persistence / revisability / cost 保持为 OPEN；
+- `Core_Law/SRT_Constitution_Seven_Theses.md` 已撤回 “Whitehead 无 L₂ 对应构念” 以及把这些差异直接写成 SRT novelty / superiority 的旧表述；
+- `Operations/_SRT_DIALOGUE_LOG.md` 的 2026-07-27 判断已由 2026-09-23 条目标记为 partially superseded；
+- `Core/SRT_OPEN_TENSIONS.md` strongest-rival guard 继续有效：不得据本轮修正反向宣称 SRT 相对 Whitehead / FRR 的 whole-package novelty、irreducibility 或 scientific distinctiveness。
 
-FRR 已足以否定把 **一般性的 history / writeback / later-conditioning 缺失** 当成 Whitehead / relational realism 的既定差异，但它还不足以证明 Whitehead/FRR 具有 SRT 当前对 L2、persistence、revisability、friction/cost 的全部更强负担。
-
-因此后续 bounded owner correction 应把旧断言重写为：
+当前 source-grounded standing：
 
 ```text
-FRR / Whitehead clearly has actualization -> datum -> later-conditioning / global-history structure;
+FRR / Whiteheadian relational realism
+contains actualization
+-> objective datum
+-> later-conditioning / global-history structure.
 
-OPEN:
-exact mapping to SRT L2,
-persistence-strength / revisability / resistance,
-and cost / friction burdens.
+NOT ESTABLISHED / OPEN:
+- exact mapping to SRT L2 / retained historical efficacy;
+- persistence strength;
+- revisability / resistance-to-revision;
+- payable friction / undoing cost;
+- whether FRR self-determination exhausts
+  SRT primitive Selection occurrence.
 ```
 
-这项 debt 只登记，不在本 PR 偷渡 canonical verdict。
-
+因此该 comparison debt 的**错误断言修复已关闭**；剩余项目属于后续 comparative research question，不是 repository cleanup debt。
 ---
 
 ## 7. 暂不推进
