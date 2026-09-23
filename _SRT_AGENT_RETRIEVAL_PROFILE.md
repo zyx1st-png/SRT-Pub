@@ -59,6 +59,10 @@ non-superseded machine analysis
 
 This is **not** a universal preload rule. Fresh sessions still obey bounded retrieval and STATUS routing. A historical accepted-analysis package is loaded when its burden becomes relevant, not merely because it exists.
 
+The labels `parked`, `downstream`, `companion`, `support`, and `canonical: false` do **not** by themselves lower retrieval value or justify skipping accepted / relevant reasoning. Current retrieval priority may be demoted only by an explicit narrowing such as `EXPLORATORY`, `LOCAL_ONLY`, `SUPERSEDED`, `REJECTED`, `RETIRED`, or a later controlling adjudication.
+
+Implementation status: the “must remain routeable” requirement is the governing target. Historical routing is not yet complete; the next accepted-analysis re-entry audit is responsible for finding accepted / continued material that is still partially absorbed or active-but-unrouted. Until that audit lands, absence from an index must not be read as evidence of low retrieval value.
+
 
 ---
 
