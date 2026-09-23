@@ -588,6 +588,38 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 20. Route: Accepted / Continued Analysis Re-entry
+
+**Use when the query mentions**: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, historical SRT reasoning continuity, re-entry, why did this concept appear, partially absorbed analysis.
+
+### Primary
+
+- `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md`
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`
+- `Glossary/SRT_Live_Term_Router.md`
+
+### Conditional recovered branches
+
+Load only when the current topic matches:
+
+- coordination / identity continuity / support-vs-replacement / hysteresis → `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`
+- embodied position / concern-path-space / future selectability → `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`
+- normativity / anti-lock-in / reorganizability / generative reselectability → `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`
+
+Then load the current owner(s) for the active concept before drawing a current-theory conclusion.
+
+### Boundary
+
+- accepted / continued machine analysis may remain authority = M;
+- `parked / downstream / companion / support / canonical:false` do not by themselves mean low retrieval value;
+- routeable != preload;
+- ACTIVE_BUT_UNROUTED != CURRENT NEXT;
+- historical working labels do not outrank the Live Term Router or current owners;
+- explicit later `SUPERSEDED / REJECTED / RETIRED / LOCAL_ONLY / EXPLORATORY` or controlling adjudication narrows current use;
+- this route is for continuity / re-entry, not for reopening canonical owners automatically.
+
+---
+
 ## 21. Route: Core 24 — Floor Replacement / Dynamic Normativity / Non-Reductive Verification
 
 > Merged from `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md` (2026-07-20).
