@@ -63,14 +63,13 @@ M    = machine research synthesis / proposal not independently author-owned
 Evidence rule applied here:
 
 ```text
-A0-Q       requires the author's wording to be preserved;
-A0-P       requires a recorded author-originated move whose wording is not preserved;
-A1         requires a recorded acceptance event for that consolidation;
-A1-claimed = the record says "the author accepts / confirms", but neither an acceptance
-             event nor author wording for that item is preserved in the repository.
+A0-Q = the author's wording is preserved;
+A0-P = a recorded author-originated move is preserved, but not as literal wording;
+A1   = a machine consolidation has a preserved explicit author acceptance event;
+M    = machine synthesis / section wording lacks item-level author quotation or acceptance evidence.
 ```
 
-`A1-claimed` is not a demotion. It marks items whose acceptance granularity cannot currently be reconstructed. The author may confirm them (-> A1) or reclassify them (-> M with direction-level acceptance). A source-intuition location does not by itself upgrade M content into author authority.
+Earlier Phase 3 drafting used `A1-claimed` as a temporary audit-debt marker for records that said "the author accepts / confirms" without preserving an item-level event. It is **not** an authority class. Final dispositions in this file resolve those items into A0-Q / A0-P / A1 / M. A source-intuition location or record-level directional acceptance does not by itself upgrade machine wording into author authority.
 
 ## 2. Evidence sources
 
