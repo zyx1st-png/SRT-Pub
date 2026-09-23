@@ -357,9 +357,7 @@ Epperson 在 2026-09-21 的回信中没有立即回答 §4 的长问题，理由
 
 ```text
 Selection occurrence
-!= retained historical efficacy
-!= sedimentation
-!= generative inheritance;
+!= {retained historical efficacy / sedimentation / generative inheritance};
 
 terminal Selection remains genuine;
 
@@ -422,7 +420,7 @@ subjective standpoint / local context
 
 这应当保持为**外部比较 OPEN**，不能在 Epperson 回答前判为差异或等价。
 
-### 8.3 当前真正值得保留的 residual 问题
+### 8.3 当前真正值得保留的 comparative pressure question
 
 当前最窄、最有信息量的比较压力是：
 
