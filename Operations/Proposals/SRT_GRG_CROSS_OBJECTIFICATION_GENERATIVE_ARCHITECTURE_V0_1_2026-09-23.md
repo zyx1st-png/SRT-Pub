@@ -17,6 +17,8 @@ dependency:
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_SCIENTIFIC_GAIN_ORDER_WHOLEWARD_2026-09-21.md
   - Operations/Templates/SRT_GRG_GENERATIVE_TRANSFORMATION_RECORD_TEMPLATE_V0_2.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md
 tags: [GRG, CrossObjectification, GenerativeReconstruction, Architecture, Discovery, Testing]
 ---
 
@@ -27,6 +29,38 @@ tags: [GRG, CrossObjectification, GenerativeReconstruction, Architecture, Discov
 > This file does not replace v0.3, GTS v0.2, canonical SRT, STATUS routing, or the M0–M5 / XG1–XG5 maturity machinery.
 >
 > Its purpose is to prevent fusion / domain work from degenerating into object-to-object vocabulary mapping.
+
+## 0.0 Dialogue-continuity corrigendum
+
+This v0.1 architecture remains a valid **first-level anti-object-mapping correction**.
+
+It is **not** the complete continuity owner for the long 2026-09-23 dialogue.
+
+The later recovery established an additional burden:
+
+> current GRG terms / formalisms are not only revisable coordinates used to probe a source; they are also historically formed objectifications that must themselves become explananda.
+
+Therefore this file must now be used together with:
+
+`Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md`.
+
+Before Stage 5 may create a new grammar candidate, the recovery protocol requires:
+
+1. source-objectification genealogy;
+2. domain-native generative reconstruction;
+3. GRG-objectification genealogy / dual reconstruction;
+4. existing-owner semantic absorption;
+5. only then a decision about whether a nontrivial new candidate remains.
+
+Stage 7 below remains useful as a late mapping audit, but it is **not the first point at which GRG itself is allowed to be explained, split, demoted or deleted**.
+
+Hard guard:
+
+~~~text
+GRG working objectification
+= probe + explanandum
+!= source extraction target
+~~~
 
 ## 0. Compact correction
 
