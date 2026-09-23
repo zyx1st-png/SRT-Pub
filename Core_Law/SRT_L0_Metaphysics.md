@@ -99,7 +99,7 @@ retained historical efficacy / sediment / inheritance: NOT REQUIRED FOR OCCURREN
 永久区分：
 
 ~~~text
-generative retention
+retained historical efficacy
 != anchoring persistence
 != durable objecthood
 != localized L2 record.
