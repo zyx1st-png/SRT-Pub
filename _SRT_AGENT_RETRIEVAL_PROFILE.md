@@ -40,32 +40,24 @@ SRT retrieval must distinguish three questions:
 
 Search rank, keyword density, file version suffixes, and old chapter numbering do not establish authority or currentness.
 
-### 0.1 Author-accepted machine analysis has high retrieval value by default
+### 0.1 Author-accepted / boundedly continued machine analysis
 
-When an author event explicitly accepts / approves / adopts / continues a machine-generated analysis or analysis package, its non-superseded analytical content has **required retrieval value for continuation by default**.
+Detailed author semantics and exceptions are owned by:
 
-A bare continuation signal such as `继续` / “continue” counts as package-level directional acceptance for retrieval when it immediately follows one coherent machine-analysis path and no contrary signal is present. Do **not** apply this default when the same turn corrects or rejects part of the analysis, when unresolved mutually exclusive branches remain unselected, when the author explicitly frames the continuation as exploratory-only, or when a specific item is already under an explicit pending-confirmation gate. This convention preserves continuity; it does not convert each machine sentence into A1. Author-source record: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`.
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`.
 
-This does **not** change epistemic authority:
+Retrieval rule:
 
-```text
-author-accepted machine analysis
-can remain authority = M
-while
-retrieval value = REQUIRED FOR CONTINUATION
-```
+~~~text
+accepted or boundedly continued
++
+non-superseded machine analysis
+-> must remain routeable
+-> must be consulted when the relevant topic enters task scope
+-> authority may remain M
+~~~
 
-No separate continuity metadata axis is required.
-
-Likewise, the labels `parked`, `downstream`, `companion`, `support`, or `canonical: false` do not by themselves lower retrieval value. They may constrain definition authority, universal applicability, active execution routing, or maturity claims while the accepted reasoning remains necessary to reconstruct why the programme took its current direction.
-
-Retrieval priority may be narrowed only by an explicit later disposition such as:
-
-- `EXPLORATORY` / `LOCAL_ONLY` where the author or controlling record scopes the material down;
-- `SUPERSEDED` / `REJECTED` / `RETIRED`;
-- a later controlling adjudication that narrows the earlier package.
-
-When later work supersedes semantics, keep the earlier accepted machine analysis as provenance but do not let it override the newer meaning.
+This is **not** a universal preload rule. Fresh sessions still obey bounded retrieval and STATUS routing. A historical accepted-analysis package is loaded when its burden becomes relevant, not merely because it exists.
 
 
 ---
