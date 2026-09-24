@@ -1,7 +1,7 @@
 ---
 id: SRT-GRG-FRR-EVOLUTION-VERTICAL-ROLE-SEPARATION-PREREG-20260924
 type: preregistration
-status: frozen-draft
+status: frozen
 date: 2026-09-24
 layer: operations
 epistemic_layer: os
