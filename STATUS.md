@@ -50,7 +50,7 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 #1055 pre-object vertical gating / glue / generative-divinity source + reconciliation plan = MERGED / 01faf40bfb903a1f2c9d378939f5452d36d7cad9
 #1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; SERVES (DOES NOT EXECUTE) CURRENT NEXT
-2026-09-24 AUTHOR SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; EXECUTION START NOT YET INSTRUCTED
+2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
 CURRENT NEXT = post-stop-loss GRG method contraction / root-question review; no new fusion-domain acquisition
@@ -238,9 +238,11 @@ and the audit's "no half-landed main" condition only if merged as one consistent
 
 2026-09-24 author sequencing
 (01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md D-3)
-= Spine optimization first, then the other canonical owners;
-  supersedes the restoration audit §14.0 machine "local-owner-first" recommendation;
-  no-contradiction guard retained: main must not carry Spine and local owners in contradictory states;
+= semantic / drafting work: Spine optimization first, then the other canonical owners;
+  supersedes the restoration audit §14.0 machine "local-owner-first" semantic-work recommendation;
+  integration / merge order remains constrained by the no-contradiction guard:
+  main must not carry Spine and local owners in contradictory states;
+  if synchronization is required, use a stacked / synchronized package and merge only a mutually consistent state;
   canonical-owner stage material = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_VERTICAL_GATING_GLUE_GENERATIVE_DIVINITY_2026-09-24.md
     + Operations/Proposals/SRT_PREOBJECT_VERTICAL_GENERATION_CANONICAL_RECONCILIATION_PLAN_2026-09-24.md;
   starting either stage (and unpausing owner cleanup) still requires explicit author instruction.
