@@ -1015,11 +1015,19 @@ but:
 
 ```text
 RESULT:
-  HIGH MATURE-SOURCE COVERAGE
+  HIGH MATURE-SOURCE COVERAGE FOR SEVERAL INTERFACES
 
-EES / NCT / DST / multilevel frameworks already make several
-cross-subfield interfaces explicit.
+LIMIT:
+  this pass did NOT exhaustively test the exact F1 -> F2 -> F3 -> F4 -> F5
+  interface architecture as one coupled package.
+
+notably still under-tested:
+  whether changing causal-attribution grain (F4) changes what counts as
+  inherited / environmental / retained condition in F5;
+  whether the mature source already makes that specific dependency explicit.
 ```
+
+Therefore A2 cannot by itself establish full architecture absorption.
 
 ### A3 — mapping / condition reconstructibility
 
@@ -1060,17 +1068,40 @@ Question:
 
 > after removing GRG vocabulary, what new source-checkable interface, diagnostic, negative case, intervention question, failure boundary or prospective distinction remains from the current fitness decomposition?
 
-Current answer:
+Search boundary in this pass:
+
+```text
+A6 search was limited to the predeclared fitness decomposition and T1-T3:
+  T1 background recut;
+  T2 expected-bias vs realized-transition recut;
+  T3 causal-level recut.
+
+GRG-originated prospective seams outside T1-T3 were NOT independently
+pre-frozen and tested in this execution.
+```
+
+Current answer within that boundary:
 
 ```text
 NONE ESTABLISHED
 ```
 
-The three bounded stress tests from §6.2 are useful, but mature source practice already motivates them:
+The three bounded stress tests are useful, but mature source practice already motivates them:
 
 - background dependence -> epistasis / environment-dependent fitness;
 - expected vs realized -> propensity / stochastic realization;
 - level recut -> multilevel causal analysis.
+
+Therefore:
+
+```text
+A6 = NONE ESTABLISHED
+means:
+  none established within the frozen fitness / T1-T3 search.
+
+It does NOT mean:
+  every GRG-originated vertical seam in evolutionary biology was searched and failed.
+```
 
 ### Frozen-rule disposition
 
@@ -1085,9 +1116,10 @@ extra GRG payoff:
 
 verdict:
   REDESCRIPTIVE_ONLY
+  within the fitness / source-driven T1-T3 decomposition
 
 architecture-level residual:
-  NONE ESTABLISHED
+  NONE ESTABLISHED WITHIN FITNESS / T1-T3 PASS WITHIN THIS PASS
 
 VERTICAL_RECONSTRUCTION_ABSORBED:
   NOT CLAIMED AS A SINGLE-COMPARATOR THEOREM
@@ -1189,7 +1221,9 @@ fitness decomposition as architecture rescue:
   REDESCRIPTIVE_ONLY.
 ```
 
-This is now strong pressure toward treating the evolution bounded instance as a **negative scientific-gain result but a positive method-calibration result**.
+This is strong pressure toward treating the **fitness / source-driven decomposition pass** as a negative scientific-gain result and a positive method-calibration result.
+
+It does **not** establish the stronger claim that every possible GRG-originated vertical decomposition in evolutionary biology has returned negative.
 
 Whether that is sufficient to close / reroute STATUS CURRENT NEXT is a separate routing decision; this Draft does not edit STATUS.
 
@@ -1230,7 +1264,7 @@ V0-V6:
 
 FITNESS DECOMPOSITION:
   SOURCE-REAL
-  REDESCRIPTIVE_ONLY
+  REDESCRIPTIVE_ONLY WITHIN FROZEN T1-T3
 
 A3 mapping reconstructibility:
   STRONGLY MATURE-SOURCE ABSORBED
@@ -1270,3 +1304,53 @@ STATUS:
 PR #1039:
   DRAFT / OPEN / DO NOT MERGE
 ```
+
+
+## 24. Scope correction after independent review
+
+Independent review identified an important asymmetry in the executed design.
+
+The fitness decomposition was generated primarily from mature source-side seams:
+
+- context dependence;
+- propensity / expectation versus realization;
+- causal-level decomposition.
+
+Although §7 reconstructed GRG cuts as explananda, those GRG cuts did not independently generate and pre-freeze a separate set of prospective fitness seams before source inspection.
+
+Therefore the current negative result must be read narrowly:
+
+```text
+what was actually tested:
+  source-driven fitness decomposition
+  + frozen T1-T3 stress tests
+  + integrated mature-source absorption
+
+what was NOT exhaustively tested:
+  a GRG-originated, source-blind prediction of fitness role separations
+  frozen before checking whether mature evolution already owns them.
+```
+
+Consequence:
+
+```text
+“REDESCRIPTIVE_ONLY”
+= warranted for the executed fitness / T1-T3 pass
+
+“evolutionary vertical reconstruction has no gain”
+= TOO BROAD / NOT ESTABLISHED
+```
+
+This is not a reason to select another evolution object post hoc.
+
+Per the existing fusion-case plan, the next allowed comparison surface before any third domain is the preregistered **FRR × evolution cross-case reconciliation**.
+
+That comparison must preserve:
+
+- FRR source-native non-identity guards;
+- no term-to-term mapping;
+- no retroactive promotion of FRR to held-out evidence for CCA-01;
+- no new stop-loss count by default;
+- no STATUS change by implication.
+
+A separate preregistration file freezes the cross-case questions before execution.
