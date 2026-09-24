@@ -835,18 +835,54 @@ Future prospective tests executed by an LLM should, where feasible, add at least
 2. author-written predictions frozen before model analysis;
 3. a target drawn from genuinely private / unpublished practice unavailable in model training.
 
-## 16. Next route
+## 16. Independent-review disposition and next route
 
-The next action is not another fusion case.
+Independent review upheld:
 
-It is:
+- the primary verdict;
+- source adequacy;
+- §8.1 case-2 counting;
+- execution of the stop-loss.
+
+It also required the positive interpretation to be narrowed:
+
+- preregistration-before-retrieval is not training-data blindness;
+- GRG-specific predictive credit is not established;
+- governance / test discipline may be retained;
+- GRG superiority as a decomposition tool is not established.
+
+Those corrections are incorporated in §§10–15 and in the separate post-stop-loss no-GRG ablation control.
+
+Therefore the stop-loss is now executed:
 
 ```text
-independent review
--> if verdict upheld:
-     land stop-loss / fusion-lane pause
-     contract retained method guards
-     leave broader GRG research only outside this exhausted fusion lane
+fusion lane:
+  PAUSED / CONTRACTED
+
+new fusion target:
+  NO
+
+replacement case:
+  NO
+
+third rescue domain:
+  NO
+
+GRG v0.4 from fusion results:
+  NO
 ```
 
-No new target may be selected inside this lane without a future explicit author reopening decision that acknowledges the §8.1 stop-loss result.
+The new route is:
+
+```text
+post-stop-loss GRG method contraction / root-question review
+```
+
+That route may ask:
+
+- which GRG cuts remain useful as internal SRT / philosophical research organization;
+- which are merely generic causal / systems-analysis questions;
+- what should be retained as governance / anti-drift discipline;
+- what claims of cross-domain scientific distinctiveness should be withdrawn, narrowed or left OPEN.
+
+It may **not** reopen the exhausted fusion lane by selecting another domain unless a future explicit author decision first acknowledges and deliberately overrides this stop-loss.
