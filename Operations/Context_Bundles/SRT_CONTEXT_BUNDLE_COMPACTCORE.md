@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-09-24
-source_commit: f181e16d
+source_commit: 6e443445
 source_branch: claude/pr-1047-review-87u510
 source_dirty: false
-inputs_digest: 9ab030687e77a0d8
+inputs_digest: 83d58549bca5c6c3
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,7 +27,7 @@ inputs_digest: 9ab030687e77a0d8
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-09-24 |
-| 来源 commit | `f181e16d` |
+| 来源 commit | `6e443445` |
 | 来源分支 | `claude/pr-1047-review-87u510` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
