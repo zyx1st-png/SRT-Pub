@@ -50,12 +50,13 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = one author-authorized prospective GRG case 2: engagement as an optimization object / metric in recommender and platform systems
-CURRENT NEXT AUTHOR DECISION = 01_Source_Intuition/SRT_AUTHOR_DECISION_GRG_CASE2_ENGAGEMENT_2026-09-24.md
-CURRENT NEXT FROZEN PREREG = Operations/GRG/Fusion_Cases/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_PREREG_2026-09-24.md
-CURRENT NEXT HANDOFF = Operations/Handoffs/SRT_GRG_CASE2_ENGAGEMENT_EXECUTION_HANDOFF_2026-09-24.md
-§8.1 CASE2 STATUS = PROSPECTIVELY DECLARED BEFORE SOURCE INSPECTION; counts iff source adequacy A0-A3 passes; outcome cannot change adequacy retroactively
-THIRD FUSION DOMAIN = THIS ONE PROSPECTIVE CASE2 ONLY; no replacement / rescue domain authorized
+CURRENT NEXT = independent review of prospective GRG case2 engagement result + stop-loss landing decision
+CURRENT NEXT RESULT OWNER = Operations/Audits/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_RESULT_2026-09-24.md
+CASE2 SOURCE ADEQUACY = PASS
+CASE2 PRIMARY VERDICT = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN
+§8.1 COUNT = FRR case1 + engagement/recommender case2 = TWO ADEQUATE NO-GAIN CASES
+FUSION LANE = PAUSE / CONTRACT if independent review upholds the result
+THIRD FUSION DOMAIN = NO / no replacement or rescue target authorized
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
@@ -118,15 +119,16 @@ Current merged continuity / routing surfaces:
 - `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`
 - `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`
 
-Execution guard:
+Execution / closeout guard:
 
 ```text
 one CURRENT NEXT only;
-CURRENT NEXT = prospective case2 engagement vertical-decomposition test;
-target / source boundary / strongest baseline families / T1-T6 / P1-P6 / failure conditions / §8.1 status are frozen before source inspection;
-first execution step = source adequacy A0-A3;
-if adequate + no GRG gain = §8.1 case 2 and fusion lane pauses/contracts;
-if inadequate = does not count, but no replacement target is automatically authorized;
+prospective case2 engagement test = EXECUTED;
+SOURCE_ADEQUACY = PASS;
+primary verdict = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN;
+§8.1 adequate no-gain count = 2;
+next = independent review + stop-loss landing only;
+no replacement target / third rescue domain;
 no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
 
