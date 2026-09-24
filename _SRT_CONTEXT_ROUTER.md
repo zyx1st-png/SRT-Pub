@@ -605,7 +605,7 @@ Do **not** trigger this route merely because a current-topic query contains broa
 
 #### ChoiceMap / Concern / Ghost upstream segment 2026-07-09 -> 2026-07-27
 
-Load only when the provenance question reaches this upstream segment or the U5 residual interface:
+Load only when the provenance question reaches this upstream segment or U5 provenance / attribution:
 
 - `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`
 - `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`
