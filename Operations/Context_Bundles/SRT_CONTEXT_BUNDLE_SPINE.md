@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-23
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-24
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-23
-source_commit: 3654d29e
-source_branch: repair/repository-self-reconstruction-phase3-20260923
+generated: 2026-09-24
+source_commit: f181e16d
+source_branch: claude/pr-1047-review-87u510
 source_dirty: false
-inputs_digest: 961422e61b6fb46c
+inputs_digest: 9ab030687e77a0d8
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 961422e61b6fb46c
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-23 |
-| 来源 commit | `3654d29e` |
-| 来源分支 | `repair/repository-self-reconstruction-phase3-20260923` |
+| 生成日期 | 2026-09-24 |
+| 来源 commit | `f181e16d` |
+| 来源分支 | `claude/pr-1047-review-87u510` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -44,7 +44,7 @@ inputs_digest: 961422e61b6fb46c
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-09-23 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-23 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-23 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
@@ -340,11 +340,12 @@ For substantive SRT answers:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（81 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（83 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
 
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md`
 - `AI/AI_POSITIONING_NOTE.md`
 - `AI/SRT_AI_01_Ontology.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
@@ -380,6 +381,7 @@ For substantive SRT answers:
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
+- `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
@@ -923,7 +925,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-09-24 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -968,6 +970,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 硬边界：history/writeback 不作为 verticality 的本体来源；Stable ISP 不作为 One 的形成源；`sigma_sr` / d / T_dir / Psi_f 不得反向生成 One / Bearer / subject；Bearer 不按定义等同于承担 / concern / subject / experiencer。
 - OPEN：精确 L0 primitive decomposition、One-level perspective 普遍充分性、Bearer↔承担、Bearer→concern/d、agency、positive subject gate、cognition、phenomenality、collective subject sufficiency、new Level、Level 2 均未由本文件自动关闭。
 - 引用规则：涉及当前**生成顺序、跨 owner 层级关系、旧 canonical 是否越权**时先回链本文件；随后再进入 L0、One Formation、P1-T06、d / Psi_f / T_dir 等局部 owner。
+- 待落地重构方向（2026-09-24，noncanonical）：`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md` 与 `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`（两角色 Spine、L0/L1/L2 标签、未来 C 类落地合同）。C1/C2 尚未授权；在其落地前，本条目与现行 Spine 仍是当前路由与定义权。
 
 ### 1. d-value
 - 主锚点：`_SRT_D_VALUE_CANONICAL.md`

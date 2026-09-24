@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-23
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-09-24
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-23
-source_commit: 3654d29e
-source_branch: repair/repository-self-reconstruction-phase3-20260923
+generated: 2026-09-24
+source_commit: f181e16d
+source_branch: claude/pr-1047-review-87u510
 source_dirty: false
-inputs_digest: 961422e61b6fb46c
+inputs_digest: 9ab030687e77a0d8
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 961422e61b6fb46c
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-23 |
-| 来源 commit | `3654d29e` |
-| 来源分支 | `repair/repository-self-reconstruction-phase3-20260923` |
+| 生成日期 | 2026-09-24 |
+| 来源 commit | `f181e16d` |
+| 来源分支 | `claude/pr-1047-review-87u510` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -334,11 +334,12 @@ For substantive SRT answers:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（92 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（94 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
 
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md`
 - `AI/AI_POSITIONING_NOTE.md`
 - `AI/SRT_AI_01_Ontology.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
@@ -380,6 +381,7 @@ For substantive SRT answers:
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
+- `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
