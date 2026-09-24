@@ -198,14 +198,19 @@ Do not infer entropy = no Selection, Selection = anti-entropy, or that the 07-09
 
 ### 3.5 Coverage details stay with the 08-08 audit
 
-The 08-08 semantic audit already identifies meaningful partials:
+The 08-08 semantic audit originally identified meaningful partials:
 
 - G5-2 structural-loss pressure / pain;
 - G5-5 pain's minimum coercive-pressure role;
 - G5-4 Concern's relational weighting at candidate formation;
 - G6-2 terminology synchronization.
 
-Its conclusion controls: these partials show missing restrictions / routing detail, not a confirmed theory proposition that became unreachable.
+Two of those historical partials have since been closed:
+
+- **G6-2 terminology**: `Core/SRT_OPEN_TENSIONS.md §12` now explicitly records the 2026-08-04 terminology update from resynchronization to selective reorganization for cross-level theory.
+- **G5-2 terminology crosswalk**: `Core_Law/SRT_Suffering.md §1.1` (2026-08-11) now explicitly crosswalks structural-loss pressure against pain / distress / suffering and keeps it as an upstream burden rather than identifying it with any of the three.
+
+The 08-08 audit remains the historical coverage owner for what was partial at that time. Current status must be read with these later closures. G5-5 / G5-4 still require their current owners / later routing rather than being silently inferred closed.
 
 ## 4. 07-11 Concern — routed, with later boundary corrections
 
