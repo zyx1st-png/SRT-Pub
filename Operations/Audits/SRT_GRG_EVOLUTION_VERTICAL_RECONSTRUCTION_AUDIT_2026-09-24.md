@@ -674,3 +674,599 @@ This audit does not claim:
 - that reach is canonicalized by this case;
 - that the architecture-level question has a positive answer;
 - that #1039 is ready to merge.
+
+
+## 16. Integrated-comparator execution — frozen A1–A6
+
+This section executes the comparator audit predeclared in §§9–10.
+
+No comparator, criterion or stop-loss status below was added in response to the result.
+
+### 16.1 Additional source verification used for this pass
+
+**Fitness decomposition / expected vs realized**
+
+- Mills, S.K. & Beatty, J.H. (1979), “The Propensity Interpretation of Fitness”, *Philosophy of Science* 46(2):263–286. DOI: 10.1086/288865.
+- Wagner, G.P. (2010), “The measurement theory of fitness”, *Evolution* 64(5):1358–1376. DOI: 10.1111/j.1558-5646.2009.00909.x.
+- de Visser, J.A.G.M. & Krug, J. (2014), “Empirical fitness landscapes and the predictability of evolution”, *Nature Reviews Genetics* 15:480–490. DOI: 10.1038/nrg3744.
+- Bank, C. (2022), “Epistasis and Adaptation on Fitness Landscapes”, *Annual Review of Ecology, Evolution, and Systematics* 53:457–479. DOI: 10.1146/annurev-ecolsys-102320-112153.
+
+**Integrated evolutionary comparators**
+
+- Laland, K.N. et al. (2015), “The extended evolutionary synthesis: its structure, assumptions and predictions”, *Proceedings B* 282:20151019. DOI: 10.1098/rspb.2015.1019.
+- Wagner, G.P. & Altenberg, L. (1996), “Complex Adaptations and the Evolution of Evolvability”, *Evolution* 50(3):967–976. DOI: 10.1111/j.1558-5646.1996.tb02339.x.
+- Griffiths, P.E. & Gray, R.D. (1994), “Developmental Systems and Evolutionary Explanation”, *Journal of Philosophy* 91(6):277–304. DOI: 10.2307/2940982.
+- Griffiths, P.E. & Hochman, A. (2015), “Developmental Systems Theory”, *eLS*. DOI: 10.1002/9780470015902.a0003452.pub2.
+- Odling-Smee, J. et al. (2013), “Niche Construction Theory: A Practical Guide for Ecologists”, *Quarterly Review of Biology* 88(1):3–28. DOI: 10.1086/669266.
+- Laland, K., Matthews, B. & Feldman, M.W. (2016), “An introduction to niche construction theory”, *Evolutionary Ecology* 30:191–202. DOI: 10.1007/s10682-016-9821-z.
+- Okasha, S. (2006), *Evolution and the Levels of Selection*. Oxford University Press. DOI: 10.1093/acprof:oso/9780199267972.001.0001.
+
+Source-use guard:
+
+```text
+the claims below are comparison / absorption claims,
+not claims that one paper exhausts its entire tradition.
+```
+
+## 17. Comparator-by-comparator result
+
+### C1 — Extended Evolutionary Synthesis (EES)
+
+Source-side structure:
+
+- constructive development makes developmental processes active contributors to evolutionary direction;
+- developmental bias changes the production of phenotypic variation;
+- inclusive inheritance broadens what carries across generations;
+- niche construction changes selective environments;
+- reciprocal causation explicitly rejects a one-way environment -> organism picture.
+
+Frozen-criteria result:
+
+```text
+A1 role separation:
+  PARTIAL
+
+  EES strongly separates development / inheritance / selection / niche construction,
+  but it does not by itself provide the full fitness-pilot split
+  [contextual consequence / expected bias / realized transition / attribution grain].
+
+A2 interface explicitness:
+  STRONG
+
+  EES is explicitly an integration project and states how developmental processes,
+  inheritance, niche construction and selection jointly shape evolution.
+
+A3 mapping / condition reconstructibility:
+  STRONG
+
+  developmental organization and inherited conditions are not treated as a fixed
+  one-way background.
+
+A4 recursive condition rewriting:
+  STRONG
+
+  reciprocal causation directly covers evolutionary processes changing conditions
+  that later feed back into evolution.
+
+A5 recut robustness:
+  PARTIAL / STRONG FOR SOME CUTS
+
+  EES reopens proximate/ultimate and development/evolution separations,
+  but does not settle every population-boundary / causal-level recut.
+
+A6 extra payoff after GRG-label deletion:
+  NOT PAID BY V0-V6 ALONE
+```
+
+Audit consequence:
+
+> V5/V6-style condition rewriting and recursive re-entry are strongly mature-source absorbed at the architecture level by EES.
+
+### C2 — Wagner & Altenberg evolvability / GP-map evolution
+
+Source-side structure:
+
+- “variability” is separated from actually realized “variation”;
+- evolvability depends on how genetic variation maps to phenotypic variation;
+- the genotype–phenotype map is treated as an evolvable organization, not an immutable background;
+- modularity is proposed as an organization that changes future evolvability.
+
+Frozen-criteria result:
+
+```text
+A1 role separation:
+  PARTIAL / STRONG FOR VARIATION-GENERATION SIDE
+
+A2 interface explicitness:
+  STRONG FOR:
+    GP map -> variability -> evolvability
+
+A3 mapping / condition reconstructibility:
+  STRONG
+
+A4 recursive condition rewriting:
+  STRONG
+
+  evolution can change the map that conditions later evolutionary variation.
+
+A5 recut robustness:
+  PARTIAL
+
+A6 extra payoff after GRG-label deletion:
+  NOT PAID FOR THE GENERAL CLAIM
+  “current evolution can change later generative mappings”.
+```
+
+Audit consequence:
+
+> “the mapping that generates future selectable variation can itself evolve” is not a GRG residual in this domain.
+
+### C3 — Developmental Systems Theory (DST)
+
+Source-side structure:
+
+- developmental outcomes arise from a whole matrix of resources, not a single control locus;
+- effects are context-dependent on the state of the developmental system;
+- developmental products can become interactants in later developmental stages;
+- inheritance extends beyond DNA;
+- evolution can be described as change in developmental systems, not only gene frequencies.
+
+Frozen-criteria result:
+
+```text
+A1 role separation:
+  PARTIAL
+
+  DST strongly separates / redistributes causal roles in development,
+  but is not primarily a fine decomposition of expected vs realized fitness.
+
+A2 interface explicitness:
+  STRONG FOR DEVELOPMENT / INHERITANCE
+
+A3 mapping / condition reconstructibility:
+  STRONG
+
+A4 recursive condition rewriting:
+  STRONG
+
+A5 recut robustness:
+  STRONG AGAINST GENE / NON-GENE AND FIXED DEVELOPMENTAL-CONTEXT CUTS
+
+A6 extra payoff after GRG-label deletion:
+  NOT PAID BY GENERIC “system products re-enter later generation”.
+```
+
+Audit consequence:
+
+> context-dependent manifestation, distributed developmental support and evolution of the developmental system are mature vertical-looking structures already present in DST.
+
+### C4 — niche construction / ecological inheritance
+
+Source-side structure:
+
+- organisms modify selective environments;
+- environmental modification and subsequent evolutionary response are distinguished;
+- ecological inheritance carries modified selective conditions across generations;
+- niche construction and natural selection are modeled as reciprocal causal processes;
+- the literature explicitly treats eco-evolutionary feedback as a target of empirical study.
+
+Frozen-criteria result:
+
+```text
+A1 role separation:
+  PARTIAL / STRONG FOR ENVIRONMENT-MODIFICATION VS SUBSEQUENT RESPONSE
+
+A2 interface explicitness:
+  STRONG
+
+A3 mapping / condition reconstructibility:
+  STRONG
+
+A4 recursive condition rewriting:
+  STRONG
+
+A5 recut robustness:
+  STRONG FOR ORGANISM / ENVIRONMENT CAUSAL RECUT;
+  NOT A COMPLETE ANSWER TO ALL LEVEL / POPULATION RECUTS
+
+A6 extra payoff after GRG-label deletion:
+  NOT PAID FOR V5/V6 OR GENERIC RECIPROCAL FEEDBACK.
+```
+
+Audit consequence:
+
+> “organismal action changes later selective conditions which then feed back into evolution” is mature-source owned.
+
+### C5 — multilevel / causal evolutionary frameworks
+
+Source-side structure:
+
+- selection can be represented and analyzed at multiple hierarchical levels;
+- interaction among lower-level entities can form higher-level entities;
+- direct selection at one level can produce covariance / apparent selection at another;
+- causal attribution and statistical decomposition are not identical;
+- major-transition work requires a diachronic question about the origin of hierarchical organization, not only selection on pre-existing levels.
+
+Frozen-criteria result:
+
+```text
+A1 role separation:
+  STRONG FOR CAUSAL ATTRIBUTION / STATISTICAL EFFECT / HIERARCHICAL LEVEL
+
+A2 interface explicitness:
+  STRONG
+
+A3 mapping / condition reconstructibility:
+  PARTIAL / STRONG IN MAJOR-TRANSITION FORM
+
+A4 recursive condition rewriting:
+  PARTIAL
+
+A5 recut robustness:
+  STRONG
+
+  the framework explicitly studies how causal attribution changes under
+  alternative hierarchical decompositions.
+
+A6 extra payoff after GRG-label deletion:
+  NOT PAID FOR THE FITNESS-PILOT “attribution grain” distinction.
+```
+
+Audit consequence:
+
+> F4 causal-attribution-grain separation is mature-source owned and cannot count as a GRG residual.
+
+## 18. Fitness decomposition — direct source absorption
+
+The first true decomposition target survives as a **real decomposition**, but not as a GRG discovery.
+
+### F1 — contextual consequence relation
+
+Fitness-landscape / epistasis literature already treats mutational fitness effects as dependent on genetic background, measurement choice and environment.
+
+```text
+F1 source reality:
+  YES
+
+GRG residual:
+  NO
+```
+
+### F2 versus F3 — expected bias versus realized outcome
+
+The propensity interpretation and measurement literature explicitly separate fitness / expected reproductive disposition from actual realized reproductive output.
+
+Wagner (2010) makes the distinction especially sharp by analogizing:
+
+```text
+fitness propensity
+:
+realized reproductive outcome
+
+as
+
+random variable
+:
+realization of that random variable
+```
+
+Therefore:
+
+```text
+F2 != F3:
+  MATURE-SOURCE OWNED
+
+new GRG distinction:
+  NO
+```
+
+### F4 — causal attribution grain
+
+Multilevel-selection literature explicitly distinguishes:
+
+- direct causal selection at a level;
+- cross-level statistical covariance / byproduct;
+- alternative hierarchical decompositions;
+- process versus perspective.
+
+Therefore:
+
+```text
+F4:
+  MATURE-SOURCE OWNED
+
+new GRG distinction:
+  NO
+```
+
+### F5 — historical re-entry / changed later conditions
+
+EES, DST, niche construction and GP-map evolvability jointly provide strong source-native families in which current evolutionary / developmental organization changes later:
+
+- developmental conditions;
+- genotype–phenotype mappings;
+- inherited resources;
+- selective environments;
+- hierarchical organization.
+
+Therefore:
+
+```text
+F5 generic burden:
+  MATURE-SOURCE OWNED
+
+new GRG distinction:
+  NO
+```
+
+## 19. Frozen A1–A6 overall verdict
+
+### A1 — role separation
+
+```text
+RESULT:
+  SOURCE-REAL
+
+but:
+  component role distinctions are already distributed across mature practice.
+```
+
+### A2 — interface explicitness
+
+```text
+RESULT:
+  HIGH MATURE-SOURCE COVERAGE
+
+EES / NCT / DST / multilevel frameworks already make several
+cross-subfield interfaces explicit.
+```
+
+### A3 — mapping / condition reconstructibility
+
+```text
+RESULT:
+  STRONGLY ABSORBED
+
+GP-map evolvability, DST, EES and NCT all allow relevant mappings /
+conditions to be products of evolution rather than fixed background.
+```
+
+### A4 — recursive condition rewriting
+
+```text
+RESULT:
+  STRONGLY ABSORBED
+
+reciprocal causation, ecological inheritance and evolving GP maps
+already instantiate this architecture.
+```
+
+### A5 — recut robustness
+
+```text
+RESULT:
+  MATURE SOURCE HAS STRONG RECUT MACHINERY
+
+examples:
+  gene / non-gene;
+  organism / environment;
+  genic / genotypic / collective levels;
+  direct causal selection / cross-level covariance.
+```
+
+### A6 — extra payoff after deleting GRG labels
+
+Question:
+
+> after removing GRG vocabulary, what new source-checkable interface, diagnostic, negative case, intervention question, failure boundary or prospective distinction remains from the current fitness decomposition?
+
+Current answer:
+
+```text
+NONE ESTABLISHED
+```
+
+The three bounded stress tests from §6.2 are useful, but mature source practice already motivates them:
+
+- background dependence -> epistasis / environment-dependent fitness;
+- expected vs realized -> propensity / stochastic realization;
+- level recut -> multilevel causal analysis.
+
+### Frozen-rule disposition
+
+Per the predeclared verdict rule:
+
+```text
+fitness decomposition:
+  SOURCE-REAL
+
+extra GRG payoff:
+  NOT ESTABLISHED
+
+verdict:
+  REDESCRIPTIVE_ONLY
+
+architecture-level residual:
+  NONE ESTABLISHED
+
+VERTICAL_RECONSTRUCTION_ABSORBED:
+  NOT CLAIMED AS A SINGLE-COMPARATOR THEOREM
+
+reason:
+  no single named comparator was shown to own every F1-F5 role in one exact package;
+  however mature source practice collectively owns the roles and
+  no A6 residual payoff remains.
+```
+
+This is intentionally stricter than declaring a partial GRG gain merely because no single source uses one identical diagram.
+
+## 20. What this teaches GRG
+
+The negative result is methodologically informative.
+
+### 20.1 Verticality is not “put the subfields into a loop”
+
+The following is insufficient:
+
+```text
+variation
+-> development
+-> fitness
+-> population change
+-> feedback
+```
+
+because mature evolutionary theory already contains multiple integrated versions of this organization.
+
+### 20.2 Verticality is not “the mappings can change”
+
+Also insufficient:
+
+```text
+the GP map changes;
+the environment changes;
+the developmental system changes;
+the selection context changes.
+```
+
+Those are already mature evolutionary questions.
+
+### 20.3 A stronger GRG burden must be local and discriminating
+
+If a future vertical reconstruction is to earn gain, it must do more than connect mature processes.
+
+It must identify a source objectification where:
+
+1. two generative roles are actually conflated;
+2. the roles can be separated under a predeclared intervention / recut;
+3. mature integrated source practice does not already own that separation;
+4. the separation changes what one would measure, compare, intervene on or expect to fail.
+
+No such residual is established by the current fitness pilot.
+
+### 20.4 GRG self-revision pressure
+
+The evolution comparison pushes against using broad GRG cuts as if they alone supplied novelty:
+
+```text
+condition rewriting:
+  too broad for gain by itself;
+
+recursive re-entry:
+  too broad for gain by itself;
+
+reach:
+  useful sub-burden, not a unique verticality criterion;
+
+retained efficacy:
+  useful question, but mature evolutionary traditions already contain
+  multiple history / inheritance / re-entry realizations.
+```
+
+The remaining GRG value in this case is presently **research organization / disciplined decomposition**, not demonstrated scientific distinctiveness.
+
+## 21. CURRENT NEXT closeout pressure
+
+The live CURRENT NEXT is still the bounded latent-reconstructive-reach reality pressure-test / operationalization.
+
+This comparator pass supports the following bounded result:
+
+```text
+latent reconstructive reach:
+  operationalizable as an M-level audit burden / subtool;
+
+source-side realizations:
+  YES — buffering / CGV / capacitance / condition-dependent expression
+        provide legitimate realization families;
+
+new evolution-domain GRG scientific gain from latent reach:
+  NO ESTABLISHED;
+
+reach as the master vertical architecture:
+  REJECT / UNDER-SPECIFIED;
+
+fitness decomposition as architecture rescue:
+  REDESCRIPTIVE_ONLY.
+```
+
+This is now strong pressure toward treating the evolution bounded instance as a **negative scientific-gain result but a positive method-calibration result**.
+
+Whether that is sufficient to close / reroute STATUS CURRENT NEXT is a separate routing decision; this Draft does not edit STATUS.
+
+## 22. Stop-loss / acquisition consequence
+
+Historical accounting remains exactly as frozen:
+
+```text
+FRR:
+  case 1
+
+evolution:
+  not retroactively case 2
+
+this comparator execution:
+  same evolution root-question review
+  not a new case
+  not a reset
+  not stop-loss credit
+```
+
+Research consequence:
+
+> do not open a third fusion domain merely because the architecture-level evolution attempt also returned no residual.
+
+The appropriate next move after independent review is root return / method contraction or an explicit author routing decision, not serial domain acquisition.
+
+## 23. Updated disposition
+
+```text
+COMPONENT / CCA-01:
+  NO_GRG_GAIN = YES
+  RESIDUAL_CANDIDATE = NONE
+
+V0-V6:
+  PROVISIONAL SCAFFOLD
+  NOT A GRAMMAR CANDIDATE
+
+FITNESS DECOMPOSITION:
+  SOURCE-REAL
+  REDESCRIPTIVE_ONLY
+
+A3 mapping reconstructibility:
+  STRONGLY MATURE-SOURCE ABSORBED
+
+A4 recursive condition rewriting:
+  STRONGLY MATURE-SOURCE ABSORBED
+
+A6 extra payoff:
+  NONE ESTABLISHED
+
+architecture-level residual:
+  NONE ESTABLISHED
+
+latent reach:
+  RETAIN AS M-LEVEL OPERATIONAL SUBTOOL
+  NOT THE SPINE
+  NO EVOLUTION-DOMAIN SCIENTIFIC GAIN ESTABLISHED
+
+GRG scientific distinctiveness in evolution:
+  NOT ESTABLISHED
+
+method calibration:
+  POSITIVE
+
+third fusion domain:
+  HOLD
+
+BCTB T2:
+  HOLD
+
+GRG v0.4:
+  NO
+
+STATUS:
+  UNCHANGED
+
+PR #1039:
+  DRAFT / OPEN / DO NOT MERGE
+```
