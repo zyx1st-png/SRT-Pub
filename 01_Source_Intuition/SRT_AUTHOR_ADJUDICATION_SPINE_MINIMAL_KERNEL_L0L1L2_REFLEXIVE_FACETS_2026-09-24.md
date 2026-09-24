@@ -12,6 +12,9 @@ ai_do_not_use_for_definition: true
 research_mode: U
 root_question: How should the current Generative Ontology Spine recover the minimal L0/L1/L2 architecture, preserve One formation, and route post-One epistemic and normative structure?
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_GRG_FOUNDING_TELOS_GENERATIVE_NORMATIVITY_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_TOTALITY_NONFLAT_MONISM_2026-09-14.md
   - 01_Source_Intuition/SRT_AUTHOR_WHOLE_SKELETON_MINIMAL_ONTOLOGY_CHECKPOINT_2026-09-13.md
   - 01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_EPSILON_POSTSELECTION_RELOCATION_2026-09-14.md
