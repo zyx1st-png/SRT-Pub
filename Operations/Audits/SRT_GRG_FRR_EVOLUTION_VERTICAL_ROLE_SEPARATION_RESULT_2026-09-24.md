@@ -186,6 +186,27 @@ Q2:
 
 Cross-objectification recurrence therefore earns no gain by itself.
 
+### Design-limit note on Q1 / Q2
+
+R0–R4 were frozen before execution, but they were constructed from already-known seams in the two admitted source cases.
+
+Therefore:
+
+```text
+Q1 PASS:
+  confirms that the neutralized role family is not purely lexical,
+  but is not a strong discovery result.
+
+Q2 SOURCE_OWNED BOTH:
+  is expected given how R0-R4 were constructed,
+  and should be treated mainly as an ownership / anti-appropriation check.
+
+main discriminating burden:
+  Q3 + P1-P5.
+```
+
+The primary verdict below therefore rests most heavily on Q3 and the GRG-originated probes, not on Q1/Q2 alone.
+
 ## 4. Q3 — cross-objectification target-source payoff
 
 Frozen question:
@@ -381,8 +402,6 @@ P3:
 
 ## 8. P4 — consequence exposure / reach
 
-This is the most important negative result.
-
 ### Evolution
 
 The evolution case has source families that support:
@@ -395,7 +414,7 @@ Thus an LR-style subtool can be operationalized there.
 
 ### FRR
 
-The FRR Card explicitly records:
+The bounded FRR evidence already records:
 
 ```text
 active vs latent reach:
@@ -405,36 +424,38 @@ reopening path:
   NOT ESTABLISHED as a source-native reopening concept
 ```
 
-FRR supports:
+However, the filled FRR Card also lists **negative selection** / exclusion among the source constructs in scope.
 
-```text
-actualized fact
--> objective datum
--> subsequent constraint
-```
+The present execution did **not** separately inspect whether a negatively selected / locally excluded alternative:
 
-but that is not the same as:
+- remains source-natively retained after exclusion;
+- preserves a real later pathway back into consequence;
+- can re-enter a later occasion / context in a way that satisfies P4 rather than merely describing a new probable organization.
 
-```text
-a currently compressed distinction
-with a preserved pathway for later reopening.
-```
+Therefore absence has not been established.
 
 ### P4 result
 
 ```text
 P4 shared burden:
-  FAIL / NOT ESTABLISHED
+  INSUFFICIENT EVIDENCE
 
 reason:
-  latent / reopening structure is source-grounded in the evolution family
-  but not source-native established in the bounded FRR evidence.
+  the bounded FRR pass did not establish latent/reopening reach,
+  but it also did not exhaust the most natural FRR-side candidate
+  (negative selection / excluded alternatives).
 
-consequence:
-  reach cannot be promoted from this cross-case test as the vertical core.
+positive shared-burden threshold:
+  NOT PAID
 ```
 
-This supports the author routing that demoted latent reach from master architecture to subtool.
+Consequences:
+
+- P4 cannot support a positive cross-objectification candidate in this test;
+- P4 also cannot be used as new cross-case evidence **against** latent reach;
+- the prior demotion of reach from master architecture remains supported by the independent evolution / method route, not by this FRR comparison.
+
+Do not expand the FRR reading now to rescue or refute P4; that would violate the frozen execution boundary.
 
 ## 9. P5 — cut reconstruction
 
@@ -539,7 +560,7 @@ P3:
   no extra payoff
 
 P4:
-  shared burden NOT ESTABLISHED
+  INSUFFICIENT EVIDENCE
 
 P5:
   INSUFFICIENT EVIDENCE
@@ -572,7 +593,7 @@ Why it is not a positive GRG result:
 - both sources already own the role split;
 - Q3 fails;
 - no GRG-originated probe produces a new target-source diagnostic;
-- P4 does not survive as a shared latent-reach burden;
+- P4 is INSUFFICIENT EVIDENCE on the bounded FRR pass and therefore supplies no positive burden;
 - P5 lacks enough FRR evidence for cross-case recut survival.
 
 ## 13. Vertical-gain method contraction
@@ -620,16 +641,26 @@ A GRG probe is useful if it:
 
 A probe that only rediscovers a mature source distinction remains a research heuristic.
 
-### 13.4 Reach contraction
+### 13.4 Reach status — no new cross-case downgrade from P4
 
-The result now gives cross-case evidence for a narrower status:
+This test does **not** add negative FRR evidence strong enough to demote reach further, because P4 is INSUFFICIENT EVIDENCE.
+
+The standing status comes from the prior evolution / method calibration:
 
 ```text
 latent reconstructive reach:
   useful operational subtool where source-native reopening exists;
-  not a mandatory cross-objectification coordinate;
-  not a demonstrated vertical core.
+  not the master vertical architecture under the current route.
 ```
+
+What this cross-case test adds is only:
+
+```text
+mandatory cross-objectification status:
+  NOT ESTABLISHED
+```
+
+That is an evidential non-promotion, not evidence of absence.
 
 ### 13.5 Recut burden remains important but unproven here
 
@@ -666,7 +697,7 @@ Specifically:
 3. source ownership must be preserved;
 4. target-source payoff is mandatory for vertical-gain credit;
 5. GRG-originated probes need prospective discrimination, not just interpretive usefulness;
-6. reach becomes optional / local rather than master architecture;
+6. this test does not promote reach to a mandatory cross-objectification coordinate; its earlier demotion remains independently motivated by the evolution route;
 7. legitimate recut survival remains a required but separately evidenced burden.
 
 ## 15. Stop-loss / acquisition consequence
@@ -756,3 +787,27 @@ GRG v0.4:
 Freeze-A canonical edit:
   NO
 ```
+
+
+## 18. Scope of the negative result
+
+This comparison used two highly theorized source families:
+
+- FRR, whose focused reading already distinguishes context / valuation / actualization / later datum;
+- evolutionary fitness, whose philosophy and formal practice already distinguish context / propensity / realization / causal level.
+
+Therefore:
+
+```text
+this result establishes:
+  no extra target-source payoff in this mature-source pair under the frozen test.
+
+this result does NOT establish:
+  that cross-objectification role transfer is generally ineffective;
+  that every less-decomposed target domain would also absorb the same probes;
+  that no future prospectively adequate fusion case can produce vertical gain.
+```
+
+The pair is a hard calibration case, not a universal negative theorem.
+
+Any future test on a less-decomposed target must be separately preregistered before source inspection and, if it is intended to count under §8.1, must have that accounting declared before execution.
