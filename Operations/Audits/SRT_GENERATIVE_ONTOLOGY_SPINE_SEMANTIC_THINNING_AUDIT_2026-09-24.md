@@ -130,6 +130,13 @@ Hard guards:
 
 ~~~text
 L0
+= open / non-preclosed aspect
+
+L0-facing openness
+= not exhausted by determinate actuality
++ not fully preclosed by a pregiven complete result structure
+
+L0
 != possibility warehouse
 != complete option set
 != prior state-space substance
@@ -197,6 +204,17 @@ L1
 
 S0-facing occurrence analysis
 -/> O0 absorption / redefinition
+
+actual differentiation
++ manifestation / foregrounding
++ relative backgrounding / suppression
+= structural readings of the same Selection event
+
+manifest event actuality
+-/> anchoring persistence
+
+anchoring persistence
+-/> Stable ISP identity
 ~~~
 
 ### 2.3 L2 — Retained Generative Efficacy
@@ -216,6 +234,10 @@ terminal Selection
 
 L2
 requires independently established retention / writeback / later efficacy
+
+event occurrence
+!= persistence
+!= Stable ISP
 ~~~
 
 ### 2.4 Correct process reading
@@ -389,8 +411,10 @@ A future C-class rewrite should aim for a minimal Part I with approximately this
    O0 / S0 co-primitive analytic burdens
 
 2. L0 / L1 / L2 precise generative architecture
+   including manifestation / relative-backgrounding polarity
 
 3. actual occurrence vs retained historical efficacy
+   + occurrence / persistence / Stable-ISP boundary
 
 4. vertical generative reconstitution / recurrence
 
@@ -399,6 +423,7 @@ A future C-class rewrite should aim for a minimal Part I with approximately this
 6. universal-kernel stop rule
 
 7. kernel OPEN guards
+   + primitive Selection != Ghost Operator
 ~~~
 
 This is a semantic contract, not a required heading list.
@@ -430,7 +455,8 @@ Allowed routes include:
 One
 
 ├─ Stable ISP
-├─ formed Selection-position / endogenous-perspective candidates
+├─ formed Selection-position / perspective route
+│  (universal One-level perspective sufficiency = OPEN)
 ├─ Bearer P+E
 ├─ Concern / d
 ├─ Agency
@@ -589,7 +615,13 @@ moral questions
 
 Do not turn that direction into a complete moral theorem.
 
-Detailed epistemic / normative comparison, revision, intervention and application should primarily be developed in GRG, while the current SRT O1 / O2-C / O2-A / O2-M gates remain controlling boundary conditions until separately migrated or re-owned.
+Detailed epistemic / normative comparison, revision, intervention and application should primarily be developed in GRG, while the current SRT O1 / O2-C / O2-A / O2-M gates remain controlling boundary conditions.
+
+This audit does not migrate current SRT philosophy bridge owners.
+
+Ethics, Ethics_Agency, Political Philosophy and Social Economics remain on their existing SRT-side bridge routes unless separately adjudicated.
+
+GRG development is subordinate to / compatible with the current O1/O2 gate typing; it is not a shortcut around those gates.
 
 ## 10. GRG role
 
@@ -665,7 +697,8 @@ proxy / reach / friction / generative debt
 - positive E;
 - Bearer <-> Concern;
 - Bearer / Agency / subject-position implications;
-- endogenous-perspective sufficiency;
+- universal One-level perspective sufficiency;
+- Bearer <-> cognition;
 - phenomenality / experiencer transition;
 - O2-M;
 - downstream owner placement not yet settled.
@@ -734,27 +767,42 @@ Navigation splitting remains optional and downstream of semantic restoration.
 
 Do not create multiple parallel canonical Spine definition authorities.
 
-## 14.0 Canonical landing ownership — N2 resolved
+## 14.0 Canonical landing order — implementation recommendation, not author quote
 
-The author's SRT / GRG role clarification resolves the landing strategy.
+The author has not directly chosen between repository packaging variants N2-A / N2-B in A0-Q wording.
 
-Because SRT is the philosophical / ontological owner, L0/L1/L2 labels and definitions should land **local-owner-first**.
+Current definition authority nevertheless supports the following machine execution recommendation:
 
 ~~~text
-N2 = A
+semantic order:
+  local-owner-first
 
-Phase C1:
-land / synchronize L0, L1, L2 labels and definitions
-in the appropriate SRT local canonical owners / symbol registry.
-
-Phase C2:
-rewrite the Generative Ontology Spine
-as a minimal cross-owner kernel + thin post-One routing surface.
+merge condition:
+  no half-landed canonical main state
 ~~~
 
-Spine should not become a second local definition authority for L0/L1/L2.
+Recommended future C-class package ordering:
 
-A future package may include pointer-maintenance edits across multiple files, but semantic definition authority remains local-owner-first.
+1. land / synchronize L0/L1/L2 labels and definitions in the appropriate local SRT owners / Symbol Table;
+2. rewrite Spine against those local definitions;
+3. synchronize CANONICAL_REGISTRY routing compression and all section / owner pointers;
+4. update STATUS only for the bounded execution authorization / resulting landed fact, without creating a second CURRENT NEXT.
+
+This ordering should occur inside one fully reviewed synchronized package, or an equivalent stacked package that cannot leave main in a half-migrated state.
+
+**Current execution gate:**
+
+~~~text
+STATUS:
+  FURTHER OWNER CLEANUP PAUSED BY DEFAULT
+
+#1047:
+  does NOT unpause it
+  does NOT authorize C1/C2 execution
+
+before canonical landing:
+  explicit author bounded unpause / execution authorization required
+~~~
 
 
 ## 14. Future canonical-edit scope
@@ -775,8 +823,11 @@ Primary semantic target:
 
 The exact file set for each phase should stay minimal.
 
-Mandatory supporting maintenance may include:
-- Core_Law/SRT_L0_Metaphysics.md and _SRT_SYMBOL_TABLE.md if the three-layer labels/definitions are landed or synchronized there;
+No intermediate merge may leave local L0/L1/L2 definitions and Spine §11 in contradictory states. "Local-owner-first" is semantic / commit order, not permission to publish a half-migrated main branch.
+
+Mandatory supporting maintenance includes, where affected:
+- Core_Law/SRT_L0_Metaphysics.md and _SRT_SYMBOL_TABLE.md for L0/L1/L2 label / definition synchronization;
+- CANONICAL_REGISTRY.md §0 routing compression, because it carries semantic routing content rather than a mere pointer;
 - STATUS.md, Core_Law/SRT_One_Formation.md, _SRT_CONTEXT_ROUTER.md and Registry pointers where Spine section numbers / anchors change;
 - this audit / author-decision references;
 - deterministic navigation regeneration if already required by tooling.
@@ -796,8 +847,12 @@ If a contradiction is exposed, STOP and open a separate owner-reconciliation tas
 ## 15. Acceptance tests for the future C-class edit
 
 A future edit FAILS if it:
+- promotes Ghost Operator / Ĝ into primitive Selection or a prior chooser;
+- erases the occurrence / anchoring-persistence / Stable-ISP distinction;
 
 - removes the L0/L1/L2 three-layer architecture;
+- drops the open / non-preclosed burden from L0;
+- drops manifestation / relative backgrounding from L1;
 - reintroduces L0 as a prior state-space substance;
 - turns L0/L1/L2 into three ontic substances;
 - makes L1 -> L2 automatic;
@@ -905,8 +960,12 @@ GRG primary role:
 N1:
   RESOLVED — neutral SRT vocabulary
 
-N2:
-  RESOLVED — local-owner-first, then Spine routing
+N2 packaging:
+  MACHINE EXECUTION RECOMMENDATION — local-owner-first semantic order, synchronized merge only
+  AUTHOR EXECUTION AUTHORIZATION — still required
+
+owner-cleanup pause:
+  STILL IN FORCE
 
 canonical Spine edit:
   NOT YET AUTHORIZED
