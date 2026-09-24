@@ -50,11 +50,12 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = root-return / fusion-lane disposition after the author-approved bounded cross-objectification test route
-CURRENT NEXT ROUTING OWNER = 01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_CROSS_OBJECTIFICATION_ROOT_RETURN_2026-09-24.md
-CURRENT NEXT HANDOFF = Operations/Handoffs/SRT_GRG_ROOT_RETURN_FUSION_LANE_CURRENT_NEXT_HANDOFF_2026-09-24.md
-PRIOR LATENT-REACH NEXT = COMPLETE ENOUGH FOR ROUTING; reach retained as bounded operational subtool, not the master vertical architecture
-THIRD FUSION DOMAIN = HOLD pending explicit root-return author disposition; no automatic acquisition
+CURRENT NEXT = one author-authorized prospective GRG case 2: engagement as an optimization object / metric in recommender and platform systems
+CURRENT NEXT AUTHOR DECISION = 01_Source_Intuition/SRT_AUTHOR_DECISION_GRG_CASE2_ENGAGEMENT_2026-09-24.md
+CURRENT NEXT FROZEN PREREG = Operations/GRG/Fusion_Cases/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_PREREG_2026-09-24.md
+CURRENT NEXT HANDOFF = Operations/Handoffs/SRT_GRG_CASE2_ENGAGEMENT_EXECUTION_HANDOFF_2026-09-24.md
+§8.1 CASE2 STATUS = PROSPECTIVELY DECLARED BEFORE SOURCE INSPECTION; counts iff source adequacy A0-A3 passes; outcome cannot change adequacy retroactively
+THIRD FUSION DOMAIN = THIS ONE PROSPECTIVE CASE2 ONLY; no replacement / rescue domain authorized
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
@@ -121,10 +122,11 @@ Execution guard:
 
 ```text
 one CURRENT NEXT only;
-CURRENT NEXT = root-return / fusion-lane disposition;
-the larger bounded evolution / FRR research package remains review evidence, not mainline authority;
-no third fusion domain until an explicit root-return author decision;
-if one future test is authorized, target / source boundary / strongest baseline / GRG probes / failure conditions / §8.1 status must be frozen before execution;
+CURRENT NEXT = prospective case2 engagement vertical-decomposition test;
+target / source boundary / strongest baseline families / T1-T6 / P1-P6 / failure conditions / §8.1 status are frozen before source inspection;
+first execution step = source adequacy A0-A3;
+if adequate + no GRG gain = §8.1 case 2 and fusion lane pauses/contracts;
+if inadequate = does not count, but no replacement target is automatically authorized;
 no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
 
