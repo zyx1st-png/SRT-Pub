@@ -39,7 +39,7 @@ tags: [CanonicalReconciliation, Verticality, PreObject, Gating, Glue, L0, Select
 >
 > It does not create a second CURRENT NEXT.
 >
-> **Sequencing (author second adjudication D-3, 2026-09-24):** Spine optimization first, then optimization of the other canonical owners. This plan is the contract for the **canonical-owner stage**, and the #1055 dialogue record is important material for it. It runs after the Spine stage and does not run a second, parallel Spine rewrite. Source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md`; review: `Operations/Audits/SRT_PR1055_PREOBJECT_VERTICAL_GATING_INDEPENDENT_CONTENT_REVIEW_2026-09-24.md`.
+> **Sequencing (author second adjudication D-3, 2026-09-24):** semantic / drafting work proceeds Spine optimization first, then optimization of the other canonical owners. This plan is the contract for the **canonical-owner stage**, and the #1055 dialogue record is important material for it. It runs after the Spine semantic stage and does not run a second, parallel Spine rewrite. This ordering does **not** authorize a merge order that leaves `main` semantically contradictory; if the Spine rewrite cannot coexist with current local owners, use a stacked / synchronized package and merge only a mutually consistent state. Source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md`; review: `Operations/Audits/SRT_PR1055_PREOBJECT_VERTICAL_GATING_INDEPENDENT_CONTENT_REVIEW_2026-09-24.md`.
 >
 > **Labels:** conflict items are `PV-K1 … PV-K8` and stages are `PV-S0 … PV-S5`. This namespace avoids collision with the Phase C1 / C2 labels of `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`.
 
@@ -148,7 +148,7 @@ Required reconciliation:
 - Is there a source-level distinction between primitive Selection and expectation-mediated gating?
 - How is the OPEN anti-tautology burden affected?
 
-Author second adjudication (D-1): gating = a formed organization, as the actualization of the Selection-operator (`Ĝ`) role, and primitive Selection is not gating of a pregiven flow / partition / criterion. The first two questions are thereby answered at source level. What remains for landing is exact owner wording, whether two formal types are needed, the relation of gating to the GRG `support` family, and the anti-tautology burden (unchanged, OPEN).
+Author second adjudication (D-1): gating = a formed organization in which an Ĝ-type Selection role is realized / carried, and primitive Selection is not gating of a pregiven flow / partition / criterion. The first two questions are thereby answered at source level. What remains for landing is exact owner wording, whether two formal types are needed, the relation of gating to the GRG `support` family, and the anti-tautology burden (unchanged, OPEN).
 
 Hard failure:
 
@@ -481,7 +481,7 @@ Provisional triage after independent review (router labels; M; to be confirmed a
 
 | Wording | Provisional label | Existing burden to compare |
 |---|---|---|
-| gating | PARTIAL_OVERLAP | D-1 places it at formed-organization level (actualization of the `Ĝ` role); the router already lists gating as near wording of GRG `support` |
+| gating | PARTIAL_OVERLAP | D-1 places it at formed-organization level (realization / carrier of an Ĝ-type role); the router already lists gating as near wording of GRG `support` |
 | vertical (pre-object inquiry) | OVERLOADED_SAME_NAME | One Formation Def-OF-1; Spine §3 event-level verticality; 2026-09-22 §C–§D; GRG v0.3 §4 |
 | glue | WORKING_LABEL_ONLY; likely PARTIAL_OVERLAP | 2026-09-22 §D / §H / §I; One vertical reconstitution; 2026-09-10 §2 stability axis |
 | structural expectation | PARTIAL_OVERLAP | 2026-09-20 B + C0 / C1; `!= E_G` automatically |
@@ -548,7 +548,7 @@ Per SRT_EDIT_PROTOCOL C-class rule:
 
 ### I. No contradictory main
 
-No merge may leave the Spine and the local owners (L0 Metaphysics, Symbol Table, One Formation, Core 21) in contradictory states. This carries the Spine restoration contract's no-half-landed condition into the author's Spine-first order.
+No merge may leave the Spine and the local owners (L0 Metaphysics, Symbol Table, One Formation, Core 21) in contradictory states. The author's Spine-first instruction governs semantic / drafting order, not permission to merge a contradictory intermediate state. If synchronization is required, use a stacked / synchronized package and merge only a mutually consistent state.
 
 ### J. C-class cross-check
 
@@ -582,7 +582,7 @@ source record: WRITTEN
 canonical reconciliation plan: THIS FILE
 independent content review of #1055: PERFORMED (review record linked above)
 second author adjudication on gating level / divinity reading / sequencing / provenance: PERFORMED (D-1 … D-4)
-sequencing: Spine optimization first -> this canonical-owner stage
+semantic / drafting sequencing: Spine optimization first -> this canonical-owner stage; merge only mutually consistent states
 canonical owner edits: HOLD
 second author adjudication on exact owner wording: NOT YET PERFORMED
 independent C-class review: NOT YET PERFORMED
