@@ -22,7 +22,7 @@ on:
       - ".github/workflows/build_ontological_friction_preprint.yml"
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build-preprint:
@@ -67,6 +67,9 @@ jobs:
       - name: Generate journal-neutral preprint source
         run: python papers/ontological_friction/make_preprint_variant.py
 
+      - name: Check committed preprint source freshness
+        run: git diff --exit-code -- papers/ontological_friction/paper_ontological_friction_preprint.md
+
       - name: Render and verify PDF
         run: python papers/ontological_friction/render_preprint_pdf.py
 
@@ -76,18 +79,3 @@ jobs:
           name: ontological-friction-preprint-pdf
           path: papers/ontological_friction/paper_ontological_friction_preprint.pdf
           if-no-files-found: error
-
-      - name: Commit generated preprint files
-        if: github.event_name != 'pull_request'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            papers/ontological_friction/paper_ontological_friction_preprint.md \
-            papers/ontological_friction/paper_ontological_friction_preprint.pdf
-          if git diff --cached --quiet; then
-            echo "No generated changes to commit."
-          else
-            git commit -m "Build PsyArXiv preprint PDF [skip ci]"
-            git push
-          fi

@@ -3,6 +3,10 @@
 **Manuscript status**: Preprint; not a peer-reviewed version of record  
 **Article type**: Theoretical Article  
 **Version**: 1.0 (19 July 2026)  
+**Author**: Yuxin Zhang  
+**Affiliation**: Independent Researcher, Kaili, Guizhou, China  
+**Correspondence**: zyx1st@gmail.com  
+**ORCID**: https://orcid.org/0009-0007-6659-8518  
 **Running title**: Control-Cost in Executive Breakdown  
 **Word count**: 10,069 words (main text, excluding abstract, figures, tables, captions, and references)  
 **Abstract**: 212 words  
