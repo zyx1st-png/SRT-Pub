@@ -18,6 +18,8 @@ dependency:
   - SRT-SELECTION-TOTALITY-SPINE-RETYPING-MATRIX-20260914
   - SRT-GRG-FOUNDATIONAL-PROTO-GRAMMAR-V0-3-20260921
   - SRT-AUTHOR-ADJUDICATION-GRG-DOWNSTREAM-GENERATIVE-STACK-20260923
+  - SRT-AUTHOR-ADJUDICATION-GENERATIVITY-POSITION-NORMATIVITY-20260914
+  - SRT-AUTHOR-ADJUDICATION-CROSS-POSITION-NON-USURPATION-CONSTITUTIVE-OUGHT-20260914
 tags: [Spine, MinimalOntology, SemanticThinning, GRG, CanonicalRouting, Audit]
 ---
 
@@ -447,6 +449,236 @@ where separately established.
 
 That gives a principled route from ontology to epistemology without bloating the universal skeleton.
 
+## 4.6 Ontology, epistemology, normativity and morality as facets of one formed generative relation
+
+The author's current direction is stronger than treating normativity as an unrelated downstream add-on.
+
+A formed generative relation can be analysed under at least three non-identical but internally connected facets:
+
+~~~text
+ontological facet
+= what relations / capacities / actualities are formed and how they transform
+
+epistemic / cognitive facet
+= how a formed position carries absent / hidden / past / possible relations
+  into current Selection through revisable proxies / expectations
+
+normative facet
+= how possible transformations are non-neutral relative to
+  the generative standing of an admitted position / relation / scale
+~~~
+
+These are not separate substances.
+
+They are different questions asked of the same formed generative organization.
+
+Hard guard:
+
+~~~text
+ontology
+!= epistemology
+!= normativity
+
+but
+
+ontology / epistemology / normativity
+may be different facets of one generative relation
+once the relevant formed-position burdens are paid
+~~~
+
+### 4.6.1 Why normativity belongs in the same reflexive loop
+
+The 2026-09-14 generativity-first adjudication already fixed that later evaluation should ask whether a relation:
+
+- strengthens / preserves genuine Selection-capacity;
+- weakens, freezes, hollows out or externally captures it;
+- allows Selection-produced difference to re-enter later organization;
+- or substitutes for the source-role of an admitted position.
+
+Therefore normativity is not an alien moral layer placed on top of completed ontology.
+
+A better architecture is:
+
+~~~text
+formed ontology
+-> endogenous perspective where established
+-> proxy / expectation
+-> indexed generative comparison
+-> constitutive / evaluative constraint where relation-typed
+-> intervention / Selection
+-> changed ontology
+-> actuality tests both proxy and normative expectation
+-> revision
+~~~
+
+Compactly:
+
+~~~text
+ontology
+-> epistemology
+-> normativity
+-> intervention
+-> ontology
+~~~
+
+This loop is a post-One reflexive architecture, not a universal primitive sequence.
+
+### 4.6.2 Epistemic and normative questions are complementary
+
+The epistemic question asks:
+
+> what is / was / may become the relevant relation?
+
+The normative question asks:
+
+> relative to an admitted position / relation / scale, which possible transformation strengthens, preserves, weakens, substitutes, hollows out or destroys the generative relation?
+
+The intervention question asks:
+
+> which transformation is enacted or which generative conditions are rewritten?
+
+Thus:
+
+~~~text
+epistemic proxy
+= present organization of absent / hidden / possible relations
+
+normative evaluation
+= present organization of the directional significance of possible transformations
+
+intervention
+= Selection that rewrites later generative conditions
+~~~
+
+All three can be corrected by later actuality.
+
+### 4.6.3 Moral normativity is a cross-position thickening, not primitive O0
+
+The current author route must remain intact:
+
+~~~text
+O0
+!= morality
+
+actual occurrence
+!= correctness / legitimacy
+
+continuation
+!= goodness
+~~~
+
+Moral structure appears only after stronger relational burdens are paid.
+
+Current dependency:
+
+~~~text
+O0
+-/> O1 automatically without formed position / relation
+
+O1
+= position / relation indexed generative stronger / weaker
+
+O2-C
+= constitutive relation-integrity / non-usurpation norm
+
+O2-A
+= answerability under stronger agency / attribution gates
+
+O2-M
+= all-things-considered moral / deontic adjudication
+= OPEN / HOLD
+~~~
+
+So "morality, ontology and cognition are facets of one reality" must not be read as:
+
+~~~text
+primitive Selection already contains complete morality
+~~~
+
+It means instead:
+
+> once reality forms positions and relations capable of reflexively carrying their own generative conditions, the same generative reality can be analysed ontically, epistemically and normatively; moral questions arise when those normative relations span multiple admitted positions, relations and scales.
+
+### 4.6.4 Cross-position morality as generative relation integrity
+
+The accepted non-usurpation direction gives a concrete bridge.
+
+If relation R counts Y as a load-bearing generative participant, but another position X recurrently generates Y's future relation-state in Y's place while R still labels Y a participant, the relation becomes structurally inconsistent.
+
+That yields a strong post-One route:
+
+~~~text
+multiple formed positions
+-> shared / coupled generative relation
+-> indexed generative comparison
+-> participant-status consistency
+-> non-usurpation / anti-substitution pressure
+-> O2-C constitutive ought
+-> stronger moral adjudication only with further gates
+~~~
+
+This makes morality relationally endogenous to generative organization without claiming complete moral closure.
+
+### 4.6.5 A four-facet reflexive cycle
+
+The downstream architecture can therefore be read as four coupled facets:
+
+~~~text
+ONTOLOGY
+what generative organization exists / forms / changes?
+
+EPISTEMOLOGY / COGNITION
+what absent / hidden / possible relation is represented or anticipated?
+
+NORMATIVITY / MORALITY
+which transformations are generatively stronger / weaker,
+relation-preserving / substitutive / usurping,
+for the admitted positions / relations / scales?
+
+INTERVENTION / ACTION
+which generative conditions are actually rewritten?
+~~~
+
+Coupled loop:
+
+~~~text
+ontology
+-> epistemic proxy / expectation
+-> normative comparison / constraint
+-> intervention
+-> changed ontology
+-> actuality / consequence
+-> epistemic + normative revision
+~~~
+
+This loop should be treated as a candidate organizing architecture for post-One research.
+
+It is **not** a new universal canonical theorem and does not close O2-M.
+
+### 4.6.6 Consequence for cognition and moral research
+
+This architecture suggests that cognition and morality should not live in disconnected repository branches.
+
+Cognition can be understood as formed generative organization carrying non-present differences into current Selection.
+
+Normativity can be understood as formed generative organization carrying the directional significance of possible transformations into current Selection.
+
+Morality is the stronger cross-position / relation-level case where those transformations affect multiple admitted generative participants and relations.
+
+This creates a common grammar:
+
+~~~text
+non-present relation gains current reach
++
+possible consequence gains current directional significance
++
+Selection / intervention changes future generative conditions
++
+actuality returns revision pressure
+~~~
+
+That common grammar is suitable for GRG pressure-testing, while SRT keeps the owner-level ontology and normativity gates.
+
 ## 5. Consequence for current Spine
 
 The current Spine contains downstream material as if it were one continuous cross-owner body. That is useful for routing but too easy to read as a thicker universal spine.
@@ -498,18 +730,21 @@ Keep near the kernel boundary:
 ~~~text
 primitive Selection != ought
 actual occurrence != correctness / legitimacy
+O0 != morality
 ~~~
 
-Route downstream:
+Route the stronger architecture downstream:
 
 ~~~text
-O1
-O2-C
-O2-A
-O2-M
+formed ontology
+-> epistemic organization / anticipation where established
+-> O1 indexed generative comparison
+-> O2-C constitutive relation-integrity where relation-typed
+-> O2-A responsibility where agency-qualified
+-> O2-M all-things-considered morality = OPEN
 ~~~
 
-because these concern formed-position and relational Selection rather than universal formation itself.
+Normativity should therefore leave the universal formation kernel **without** being treated as a disconnected terminal branch. It belongs in the same post-One reflexive architecture as epistemology / cognition and intervention.
 
 ## 6. Candidate future Spine architecture
 
@@ -539,9 +774,8 @@ Post-One architecture
 -> Bearer P+E route
 -> Concern / d
 -> Agency
--> optional endogenous-perspective / epistemic branch
+-> reflexive branch: endogenous perspective / epistemic proxy / normative comparison / intervention
 -> cognition / subject / phenomenality
--> normativity
 -> higher-order One
 ~~~
 
@@ -644,7 +878,7 @@ did the system adapt or transform?
 can compressed differences re-enter?
 ~~~
 
-These are downstream research questions, not new ontology nodes.
+These are downstream research questions, not new ontology nodes. They can also supply a common research grammar for epistemic revision, normative comparison and intervention, provided current SRT owner gates remain controlling.
 
 ## 10. Revised size interpretation
 
@@ -686,7 +920,7 @@ No semantic decision should be made to hit a line count.
 | §7 Stable ISP | MOVE OUT of universal kernel |
 | §8 Bearer | MOVE OUT of universal kernel; preserve P+E authority separately |
 | §9 Agency | MOVE OUT of universal kernel |
-| §10 Normativity | SPLIT primitive-no-ought guards vs downstream O1/O2 |
+| §10 Normativity | SPLIT primitive-no-ought guards vs integrated post-One epistemic/normative/intervention architecture |
 | §11 L0/L1/L2 | PROMOTE as synchronized process reading of the minimal kernel, while preserving non-substance / non-mandatory-pipeline guards |
 | §12 Facet-before-kind | KEEP as inference guard near kernel boundary |
 | §13 OPEN register | SPLIT kernel OPEN vs downstream/programme OPEN |
@@ -708,6 +942,8 @@ A future rearchitecture FAILS if it:
 - imports GRG proxy / reach / friction / debt into canonical ontology without separate adjudication;
 - uses GRG process scaffolds as proof of SRT ontology;
 - makes all Ones automatically endogenous-perspective or epistemic organizations;
+- treats O0, actuality or mere formation as complete moral value;
+- collapses O1 / O2-C / O2-A / O2-M into one undifferentiated moral layer;
 - loses current anti-tautology / anti-jump / OPEN guards.
 
 It PASSES only if:
@@ -739,10 +975,15 @@ D. The kernel may be shown in two synchronized views:
    ontological burden view = Selection reality [O0|S0] -> recurrent self-conditioning -> One;
    process view = L0 -> L1 -> L2 -> new L0, with retention conditional and non-substantival.
 
-E. One formation may open a separately gated endogenous-perspective / epistemic branch,
-   but One -> perspective -> epistemology is NOT automatic.
+E. One formation may open a separately gated reflexive branch in which
+   epistemic / cognitive and normative organization are different facets
+   of the same formed generative relation; neither is automatic from One.
 
-F. GRG may pressure and simplify the architecture,
+F. Moral normativity is a cross-position / relation-level thickening:
+   O1 -> O2-C -> O2-A -> O2-M remains gated,
+   and O2-M remains OPEN.
+
+G. GRG may pressure and simplify the architecture,
    but reach / proxy / friction / debt remain noncanonical downstream research
    until separately pressure-tested / adjudicated.
 ~~~
@@ -757,8 +998,9 @@ No canonical edit is authorized by this audit.
 4. Should the post-One routing remain a short Part II in Spine, or move entirely to Registry / Context Router?
 5. Can L0 -> L1 -> L2 -> new L0 be restored as the process reading of the minimal kernel without violating the current rule that L0/L1/L2 are analytic/model-facing aspects rather than ontic substances or a mandatory pipeline?
 6. Is One best located as recurrent self-conditioning emerging through repeated L1/L2-to-future-L0 re-entry, while preserving the canonical One-Formation owner and terminal-Selection guard?
-7. Should ontology -> endogenous perspective -> epistemic proxy -> intervention -> ontology appear only as a post-One candidate branch, or does any part belong in the canonical kernel?
-8. Does GRG v0.3 or the 09-22 reach work contain any burden that genuinely belongs in the universal ontology kernel?
-9. Is the revised 200–300 line estimate realistic without semantic loss?
-10. Which current OPEN items are kernel OPENs versus downstream/programme OPENs?
-11. Does this architecture better satisfy the author's deletion rule: if a burden can be paid by relation / descriptor / downstream grammar, do not add a universal ontology node?
+7. Should the post-One reflexive branch be organized as ontology -> epistemology/cognition -> normativity -> intervention -> ontology, while treating these as facets rather than ontic layers?
+8. Does the generativity-first O1/O2 architecture support interpreting morality as a cross-position thickening of the same formed generative relation without restoring primitive moral content?
+9. Does GRG v0.3 or the 09-22 reach work contain any burden that genuinely belongs in the universal ontology kernel?
+10. Is the revised 200–300 line estimate realistic without semantic loss?
+11. Which current OPEN items are kernel OPENs versus downstream/programme OPENs?
+12. Does this architecture better satisfy the author's deletion rule: if a burden can be paid by relation / descriptor / downstream grammar, do not add a universal ontology node?
