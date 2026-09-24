@@ -257,7 +257,7 @@ epsilon_pg -> primitive value -> order -> morality
 
 ---
 
-# 4. Post-Selection directionality / normativity
+# 4. Historical post-Selection directionality / normativity — NOT CURRENT CONTROL
 
 Accepted:
 
@@ -479,7 +479,7 @@ A no-feedback affected location is a primary externalization suspect.
 
 ---
 
-# 9. Canonical landing order — START HERE
+# 9. Historical canonical landing order — NOT CURRENT
 
 The author has explicitly authorized bounded repository writeback.
 
@@ -639,6 +639,7 @@ Before merge, perform an independent content review focused on:
 Use this compact prompt in a new conversation:
 
 ```text
+【历史 prompt，勿执行】
 @GitHub 继续 zyx1st-png/SRT-Pub 的 Ground / pre-object L0 / normativity canonical landing。
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和分支
