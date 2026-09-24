@@ -124,7 +124,7 @@ It freezes:
 
 rather than silently solving identity continuity.
 
-The 08-09 card then supplies the later author-confirmed C3+C4+C5 synthesis:
+The 08-09 card records the author's explicit C3+C4+C5 choice and then preserves the associated author-confirmed synthesis:
 
 - stake continuity;
 - constraint continuity;
@@ -462,9 +462,10 @@ Known current owners must be named, not left as generic “current owner(s)”.
 This audit establishes:
 
 ~~~text
-ChoiceMap 07-28 -> 08-10 chain:
+ChoiceMap reviewed segment 07-28 -> 08-10:
   partially absorbed;
-  narrow residual interfaces remain topic-conditionally unrouted.
+  narrow residual interfaces remain topic-conditionally unrouted;
+  upstream parent lineage is not audited by this pass.
 
 09-14 normativity:
   earlier consequence-bearing-first ground partly superseded;
