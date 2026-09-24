@@ -263,3 +263,53 @@ F1  P 冲突项 / 阶段改名（顺序本身待 A-3）
 - 神性的两种读法；
 - scientific distinctiveness = NOT ESTABLISHED；
 - BCTB T2 = HOLD；third fusion domain = NO；GRG v0.4 = NOT AUTOMATIC；further owner cleanup = PAUSED BY DEFAULT。
+
+（§6 中“whole-level surplus 的本体地位”与“神性的两种读法”两项已被 §7 的作者裁决部分收窄 / 选定。）
+
+## 7. 作者二次裁决后的处置（2026-09-24）
+
+作者对 §4 的四项作出了回答，原文与处置见 `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md`：
+
+```text
+A-1 「组织，作为选择算子的actualize」
+    -> D-1：gating = formed organization，作为 Ĝ 角色的 actualization；primitive Selection != 对预给流的 gating
+    -> 与评审推荐的 G1 同向；F2 在 source 层 RESOLVED
+A-2 「……我觉得生成性更合适一点」
+    -> D-2：生成性读法获作者明确认可（A1）；“维持”仅作来源 provenance
+    -> 评审提出的 D-maint 替代读法被作者选择关闭；F4 RESOLVED
+A-3 「先优化Spine，然后优化Canonical。这次对话作为canonical 优化的重要材料」
+    -> D-3：Spine 先行，其次其他 canonical owner；#1055 是 canonical-owner 阶段的材料
+    -> 评审关于 local-owner-first 的推荐未被采纳（作者裁决优先）；no-contradiction 合并条件作为 guard 保留
+    -> F1 RESOLVED（顺序由作者裁决确定；标签碰撞已通过 PV-K / PV-S 改名消除）
+A-4 「有」
+    -> D-4：S §1 / §5 / §16 / §19 = A1（证据为作者追认）；其余节按 S §0.1 表
+    -> F3 RESOLVED；F9 随之定性为作者接受的 OPEN 收窄
+```
+
+同一 follow-up 中已落地的机械修复（这些修改由后续 commit 执行，本评审正文本身仍然只读）：
+
+```text
+S：§0.1 逐节 provenance 表（F3）；§1 vertical 术语路由（F8）；§2 horizontal = description regime + no-unrepresentability（F5 / F6）；
+   §5 D-4 注记（F9）；§6 标题与 D-1 层级 typing + 物理注记（F2）；§7 plain G -> Ĝ，且不把 Ĝ 收窄为 gating（F8）；
+   §8 09-20 B+C0/C1 路由与 E_G guard（F8）；§10 object-cut / formed unit + glue 重叠与 Nervenkitt 注记（F5 / F8）；
+   §12–§13 no-domain-opening guard（F10）；§14 保留原 kernel 并补 D-1 修订版 + aspect guard（F2 / F12）；
+   §16 D-2 注记；§17 grounding vs temporal-first（F13）；§19 服务但不执行 CURRENT NEXT + stop-loss 证据 + LLM 先验控制（F6）；
+   §20 / §21 相应补句与非主张
+P：D-3 顺序说明；PV-K / PV-S 改名（F1）；§1 guard 归属与自相矛盾更正（F14）；PV-K1 / K4 / K5 / K7 / K8 处置注记；
+   §4 邻居补充（F11）；PV-S1 改为“Spine 阶段后核验”，不另行重写 Spine；PV-S2 补 Symbol Table / Registry（F14）；
+   §6 术语初步分诊；§7 测试 A 补 D-1、新增 I（no contradictory main）与 J（C 类交叉检查）；§9 处置更新
+STATUS：§0 ledger 增 #1055 与作者顺序行；§2 增 author sequencing 块（F7）
+Spine restoration audit §14.0：顺序被作者裁决取代的指针（保留 no-half-landed guard）
+Live Term Router §4：gating / pre-object vertical inquiry / glue / generative divinity 四行（F7 / F8）
+```
+
+更新后的 verdict：
+
+```text
+S — SOURCE FIDELITY + PROVENANCE TYPING      = PASS (after follow-up)
+S — INTERNAL CONSISTENCY                     = PASS (after follow-up)
+P — AS FUTURE CANONICAL-OWNER-STAGE CONTRACT = PASS FOR SEQUENCING; exact owner wording still pending PV-S0 + C-class review
+ROUTEABILITY                                 = PASS (STATUS + router)
+CANONICAL IMPACT                             = NONE (no Freeze-A owner edited)
+EXECUTION                                    = NOT STARTED; requires explicit author instruction
+```
