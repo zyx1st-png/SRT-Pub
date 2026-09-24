@@ -642,7 +642,7 @@ Then, only for provenance / derivative diagnostics:
 
 Historical handoff guard:
 
-- `Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` is historical routing provenance only for this re-entry path. Its active-status fresh-chat prompt predates the controlling generativity-first reconciliation and must **not** be used as the current controlling handoff without a later redirect / supersession note.
+- `Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` is **archived historical routing provenance only**. Its fresh-chat prompt predates the controlling generativity-first reconciliation and must not be used as a current controlling handoff.
 
 #### 2026-09-20 -> 2026-09-23 GRG continuity
 

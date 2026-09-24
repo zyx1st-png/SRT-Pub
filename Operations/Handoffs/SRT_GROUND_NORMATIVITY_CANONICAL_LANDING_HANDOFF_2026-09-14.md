@@ -1,7 +1,7 @@
 ---
 id: SRT-GROUND-NORMATIVITY-CANONICAL-LANDING-HANDOFF-20260914
 type: handoff
-status: active
+status: archived
 date: 2026-09-14
 layer: meta
 epistemic_layer: os
@@ -22,11 +22,23 @@ tags: [Handoff, Ground, L0, Normativity, CanonicalLanding, FreshSession]
 
 # Ground / pre-object L0 / normativity canonical landing handoff
 
+> **SUPERSEDED FOR EXECUTION / HISTORICAL PROVENANCE ONLY — 2026-09-24**
+>
+> This handoff must **not** be used as a current fresh-session execution route. Its normativity section and fresh-chat prompt predate the later generativity-first reconciliation.
+>
+> For current work:
+> 1. obey `AGENTS.md §Session Start` and live `STATUS.md`;
+> 2. use `_SRT_CONTEXT_ROUTER.md §20` only when historical normativity provenance is needed;
+> 3. read the later controlling chain beginning with `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`, then the cross-position / non-usurpation adjudication and O1/O2 landing-readiness audit;
+> 4. do not execute §9 or §12 of this file as current instructions.
+>
+> The historical contents below are preserved to reconstruct what was believed and authorized at handoff creation time. Archiving this file changes its routing authority, not its provenance value.
+
 > **Purpose:** fresh-session continuation packet for the 2026-09-14 Ground / pre-object / epsilon / normativity reconstruction. This file is execution routing only. It does not replace canonical owners or author adjudications.
 
 ---
 
-## 0. Live repository checkpoint at handoff creation
+## 0. Historical repository checkpoint at handoff creation
 
 ```text
 repo:
@@ -245,7 +257,7 @@ epsilon_pg -> primitive value -> order -> morality
 
 ---
 
-# 4. Post-Selection directionality / normativity
+# 4. Historical post-Selection directionality / normativity — NOT CURRENT CONTROL
 
 Accepted:
 
@@ -467,7 +479,7 @@ A no-feedback affected location is a primary externalization suspect.
 
 ---
 
-# 9. Canonical landing order — START HERE
+# 9. Historical canonical landing order — NOT CURRENT
 
 The author has explicitly authorized bounded repository writeback.
 
@@ -622,11 +634,12 @@ Before merge, perform an independent content review focused on:
 
 ---
 
-# 12. Fresh-chat prompt
+# 12. Historical fresh-chat prompt — DO NOT USE AS CURRENT CONTROLLING PROMPT
 
 Use this compact prompt in a new conversation:
 
 ```text
+【历史 prompt，勿执行】
 @GitHub 继续 zyx1st-png/SRT-Pub 的 Ground / pre-object L0 / normativity canonical landing。
 
 先按 AGENTS.md §Session Start 核验 live main、STATUS 和分支
@@ -641,7 +654,7 @@ Use this compact prompt in a new conversation:
 
 ---
 
-## Handoff verdict
+## Historical handoff verdict
 
 ```text
 author convergence for this bounded package: YES

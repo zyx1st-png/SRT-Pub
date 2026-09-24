@@ -386,21 +386,22 @@ Disposition:
 
 `PARTIALLY_ABSORBED / SUPPORTING PROVENANCE`; its Bearer structure remains routed, but the older stake-bearing-first normative bridge does not control current normativity and the package is not a standalone canonical-write authorization for old semantics.
 
-### 5.6 Active old handoff risk — follow-up required
+### 5.6 Old handoff risk — closed by #1045
 
-`Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` remains `status: active` and contains a fresh-chat prompt that says the author approved bounded canonical writeback using the older post-Selection normativity package.
+`Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` was identified here because its fresh-chat prompt said the author approved bounded canonical writeback using the older post-Selection normativity package.
 
 Because the handoff does not incorporate the later generativity-first control chain, keyword retrieval could misroute a future agent.
 
-Disposition in this PR:
+Closure update:
 
 ~~~text
-HANDOFF ROUTING RISK = CONFIRMED
-DO NOT USE AS CURRENT CONTROLLING HANDOFF
-FOLLOW-UP = retire / redirect / supersession-note in a separate bounded governance PR
+HANDOFF ROUTING RISK = CLOSED BY #1045
+status = archived
+historical prompt retained but explicitly marked non-executable
+current route = generativity-first chain via _SRT_CONTEXT_ROUTER.md §20
 ~~~
 
-This audit records the risk but does not modify that historical handoff in the same PR.
+The historical handoff remains provenance only and is no longer a current execution surface.
 
 ## 6. GRG period delegation — 09-20 through 09-23
 
@@ -517,8 +518,8 @@ reorganizability / generative reselectability:
   DELEGATED TO EXISTING 09-23 CONTINUITY AUDIT
 
 old 09-14 Ground/normativity handoff:
-  ACTIVE ROUTING RISK CONFIRMED
-  separate retire/redirect follow-up required
+  ROUTING RISK CLOSED BY #1045
+  archived provenance only
 
 Spine thinning:
   NOT AUTHORIZED
