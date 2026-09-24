@@ -666,9 +666,26 @@ This verdict is not based on the target being inadequate.
 
 The case is source-native adequate and the prospectively predicted seams are real.
 
-The negative result is stronger:
+The negative result is stronger than a source-inadequacy failure:
 
-> GRG successfully predicted real role separations before source inspection, but mature recommender-system research already owns those separations and the relevant interfaces; no additional target-source payoff survived.
+> the preregistered role separations were source-real, but mature recommender-system research already owns those separations and the relevant interfaces; no additional target-source payoff survived.
+
+However, **causal credit for generating those preregistered seams is unresolved**.
+
+The preregistration was frozen before explicit source-literature inspection, but it was authored by a language model whose training data may already contain the relevant recommender-system literature. The strongest-baseline categories written into the preregistration also align closely with the later-failed T/P seams.
+
+Therefore this test does **not** establish:
+
+```text
+GRG itself caused the successful anticipation of the seams.
+```
+
+It establishes only:
+
+```text
+the seams were preregistered before explicit retrieval
+and were subsequently confirmed as source-real and source-owned.
+```
 
 ## 11. §8.1 accounting
 
@@ -723,7 +740,11 @@ It supports retaining the following **method guards**:
 9. legitimate recut survival remains useful as a stress test;
 10. stop-loss must be allowed to terminate a fusion lane.
 
-These are method / governance gains, not a new scientific grammar candidate.
+These are primarily **method / governance guards** learned from the programme.
+
+They do not by themselves establish that GRG is a superior decomposition tool relative to ordinary causal / systems analysis.
+
+A post-stop-loss no-GRG ablation control is recorded separately to inspect that narrower question; it does not alter this case verdict or §8.1 accounting.
 
 ## 13. Scientific status
 
@@ -737,8 +758,12 @@ new target-source distinction:
 new GRG scientific gain:
   NO
 
-prospective prediction of real seams:
+preregistered seams confirmed source-real:
   YES
+
+GRG-specific predictive contribution:
+  NOT ESTABLISHED
+  (LLM prior-knowledge contamination not controlled in the primary test)
 
 source absorption of those seams:
   YES
@@ -746,8 +771,11 @@ source absorption of those seams:
 GRG scientific distinctiveness from this case:
   NOT ESTABLISHED
 
-method calibration:
-  STRONG POSITIVE
+governance / test-discipline calibration:
+  POSITIVE
+
+GRG as a superior decomposition tool:
+  NOT ESTABLISHED
 
 fusion lane:
   PAUSE / CONTRACT
@@ -767,7 +795,47 @@ This result does not claim:
 
 It claims only that this prospectively adequate case 2 did not produce GRG-specific target-domain gain under the frozen standard, thereby triggering the predeclared fusion-lane stop-loss.
 
-## 15. Next route
+## 15. LLM-prior-knowledge limitation
+
+This case is prospectively frozen relative to **explicit retrieval**, not relative to the language model's training corpus.
+
+Important limitation:
+
+```text
+the model may already have internalized:
+  exposure-bias literature;
+  long-horizon recommender work;
+  feedback-loop research;
+  satisfaction / surrogate-objective work;
+  multi-stakeholder / ecosystem work.
+```
+
+The close alignment between preregistered strongest-baseline categories and the later T/P failures is consistent with that possibility.
+
+Therefore:
+
+```text
+“preregistered before web/source retrieval”
+!=
+“blind to the source literature”
+```
+
+This does not weaken:
+
+- source adequacy;
+- the primary no-gain verdict;
+- §8.1 case-2 counting;
+- the stop-loss consequence.
+
+It **does** weaken any positive claim that GRG itself demonstrated superior prospective decomposition.
+
+Future prospective tests executed by an LLM should, where feasible, add at least one of:
+
+1. same-model no-GRG control;
+2. author-written predictions frozen before model analysis;
+3. a target drawn from genuinely private / unpublished practice unavailable in model training.
+
+## 16. Next route
 
 The next action is not another fusion case.
 
