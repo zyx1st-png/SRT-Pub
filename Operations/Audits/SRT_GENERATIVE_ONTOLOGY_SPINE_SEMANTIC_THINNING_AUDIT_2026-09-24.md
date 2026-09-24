@@ -18,6 +18,12 @@ dependency:
   - SRT-AUTHOR-FINAL-ADJUDICATION-PR957-POSITION-RECURRENCE-CONCERN-20260913
   - SRT-SELECTION-TOTALITY-SPINE-RETYPING-MATRIX-20260914
   - SRT-GRG-FOUNDATIONAL-PROTO-GRAMMAR-V0-3-20260921
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md
+  - STATUS.md
+  - Core_Law/SRT_One_Formation.md
+  - Core_Law/SRT_L0_Metaphysics.md
+  - _SRT_SYMBOL_TABLE.md
+  - Glossary/SRT_Live_Term_Router.md
   - SRT-AUTHOR-ADJUDICATION-GRG-DOWNSTREAM-GENERATIVE-STACK-20260923
 tags: [Spine, MinimalKernel, L0, L1, L2, OneFormation, SemanticThinning, GRG, CanonicalRouting, Audit]
 ---
@@ -129,23 +135,46 @@ L0
 != morality
 ~~~
 
+### 2.1a Terminology collision — pending N1
+
+The author record currently uses `reach / equivalence` in the L0 English formulation and `support / proxy` in the L2 English formulation.
+
+These words now collide with routed GRG research families.
+
+Until the author resolves N1:
+
+~~~text
+current author record
+= conceptual direction
+
+current English lexical choices
+!= automatic GRG admission
+!= safe verbatim canonical copy
+~~~
+
+The future C-class edit must either:
+- add an explicit ordinary-language/non-GRG guard; or
+- use neutral vocabulary; or
+- stop for a separate GRG-to-canonical adjudication if GRG technical meanings are intended.
+
 ### 2.2 L1 — Actualized Differentiation
 
 Author-controlled direction:
 
 > L1 is the actuality aspect of the same Selection-totality: finite-position-indexed, non-neutral differentiation as determinate manifestation.
 
-Key cross-reading:
+The controlling 2026-09-23 source clarification is narrower and S0-facing:
 
 ~~~text
-Selection
-= differentiation reading
-
 actualization
-= actuality-status reading
+= the actuality-status face being audited on the S0 side
 
-same transition
-!= two primitive mechanisms
+S0
+= finite-position-indexed actualising Selection / determinate manifestation
+
+O0
+= remains co-primitive and is not reduced to
+  a prior option menu, field, container or probability distribution
 ~~~
 
 Therefore:
@@ -156,13 +185,16 @@ L0
 
 L1
 != later object produced by a temporally prior L0 object
+
+S0-facing occurrence analysis
+-/> O0 absorption / redefinition
 ~~~
 
 ### 2.3 L2 — Retained Generative Efficacy
 
 Author-controlled direction:
 
-> L2 is actuality that remains generatively effective for later Selection through retained consequence, organization, constraint, support, proxy, boundary, memory, topology, rule, sediment or other historical efficacy.
+> L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, support, proxy, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
 
 Hard guards:
 
@@ -179,7 +211,7 @@ requires independently established retention / writeback / later efficacy
 
 ### 2.4 Correct process reading
 
-Public mnemonic may remain:
+The author-adjudicated preferred high-level process grammar remains:
 
 ~~~text
 L0 -> L1 -> L2 -> later L0
@@ -211,6 +243,11 @@ with a changed L0-facing burden landscape
 Negative rules:
 
 ~~~text
+within one Selection-totality:
+L0_n before L1_n: NO
+L1_n before L0_n: NO
+
+
 L0 -> L1
 != prior substance causes later substance
 
@@ -278,7 +315,7 @@ This pays a historical-efficacy burden.
 
 It does not by itself pay One formation.
 
-### 4.2 Vertical generative reconstitution
+### 4.2 Selection-mediated vertical reconstitution
 
 The 2026-09-13 author burden remains:
 
@@ -297,7 +334,7 @@ Therefore:
 ~~~text
 historical sedimentation
 !=
-vertical generative reconstitution
+Selection-mediated vertical reconstitution
 ~~~
 
 History can condition vertical formation.
@@ -356,6 +393,23 @@ A future C-class rewrite should aim for a minimal Part I with approximately this
 ~~~
 
 This is a semantic contract, not a required heading list.
+
+## 5.1 Finite positionality must remain in Part I
+
+The 2026-09-13 author adjudication keeps finite positionality as a constraint on every Selection.
+
+Future Part I must preserve:
+
+~~~text
+finite positionality
+= constraint on every Selection
+!= post-One Position
+!= formed perspective
+!= Bearer
+!= subject-position
+~~~
+
+Moving Selection-position / perspective to Part II must not accidentally move primitive finite positionality out of the universal kernel.
 
 ## 6. Part II — target typed post-One map
 
@@ -430,8 +484,8 @@ ontological facet
 = what is formed / related / capable of generating
 
 epistemic / cognitive facet
-= how non-present / hidden / possible relations
-  gain current reach through proxy / expectation / model
+= how non-present, hidden, past, possible or future relations
+  are carried into current Selection through proxy / expectation / model
 
 normative facet
 = how possible transformations are non-neutral relative to
@@ -504,9 +558,9 @@ O2-M
 Author direction:
 
 ~~~text
-morality
-= stronger cross-position / relation-level thickening
-of normative structure where additional burdens are paid
+moral questions
+= a stronger cross-position / relation-level thickening of normative structure
+  once multiple admitted generative participants, relations, stakes and conflicts are in scope
 ~~~
 
 Do not turn that direction into a complete moral theorem.
@@ -595,6 +649,38 @@ proxy / reach / friction / generative debt
 - detailed domain-realization OPENs;
 - owner-local technical questions that do not change cross-owner inference.
 
+## 12.1 Complete current Spine OPEN mapping
+
+The future rewrite must account for every item currently named in Spine §13 rather than silently shrinking the register.
+
+| Current Spine §13 OPEN | Future location / treatment |
+|---|---|
+| exact formalization of Selection-totality | Part I kernel OPEN |
+| exact L0/L1/L2 aspect-vs-domain crosswalk | Part I kernel OPEN; preserve exact wording |
+| exact primitive Selection vs operator-carrier formalization | Part I kernel OPEN / local formal-owner pointer |
+| formal N&S One theorem | Part I kernel OPEN + One Formation owner |
+| exact One boundary / unit identification | Part I pointer to One Formation local OPEN |
+| strict and branch / merge identity | Part I pointer to One Formation identity guard |
+| universal One-level perspective sufficiency | Part II OPEN — preserve this exact current term; do not rename to GRG `endogenous perspective` |
+| positive E establishment | Part II Bearer OPEN |
+| formal cross-domain P+E Bearer theorem | Part II Bearer OPEN |
+| Bearer <-> Concern | Part II OPEN |
+| Bearer <-> Agency | Part II OPEN |
+| Bearer <-> cognition | Part II OPEN — keep separate from subject-position per 2026-09-13 A4 |
+| Bearer <-> subject-position | Part II OPEN — keep separate from cognition per 2026-09-13 A4 |
+| positive subject-position gate | Part II OPEN |
+| phenomenality / experiencer transition | Part II OPEN |
+| collective subject sufficiency | Part II / collective-owner OPEN |
+| exact normativity owner placement / O1-O2-C formal landing | Part II normative OPEN |
+| O2-M cross-position moral conflict | Part II normative OPEN / HOLD |
+| epsilon_pg / kappa0 inheritance into stronger formed asymmetries | Part I/local formal-owner pointer; do not silently close |
+| new Level 1 | programme-state OPEN; STATUS pointer, not theory detail in Spine |
+| Level 2 / HOLD exit | programme-state OPEN; STATUS pointer |
+| scientific distinctiveness | programme-state OPEN; STATUS / claim ladder |
+| whole-architecture non-substitutability | programme-state OPEN; STATUS / claim ladder |
+
+Existing OPEN items outside the compact Spine register remain OPEN under their own owners.
+
 ## 13. Size and split policy
 
 The previous 340–390-line estimate is withdrawn.
@@ -620,30 +706,69 @@ Navigation splitting remains optional and downstream of semantic restoration.
 
 Do not create multiple parallel canonical Spine definition authorities.
 
+## 14.0 Pending canonical-landing ownership fork — N2
+
+The independent review correctly notes that a future canonical rewrite cannot safely invent new L0/L1/L2 labels in Spine while leaving local canonical definition owners unsynchronized.
+
+Current owner facts:
+
+~~~text
+Core_Law/SRT_L0_Metaphysics.md
+= unique canonical L0 authority
+
+_SRT_SYMBOL_TABLE.md
+= canonical symbol / definition registry
+
+Spine
+= cross-owner canonical routing authority
+~~~
+
+Two viable landing strategies remain:
+
+### N2-A — Spine labels only
+
+- Spine uses the three labels as cross-owner routing language;
+- detailed definitions remain with / are first landed in L0 Metaphysics and the symbol/definition registry;
+- Spine points outward rather than becoming a second local L0/L1/L2 definition owner.
+
+### N2-B — coordinated same-package sync
+
+- the C-class package edits Spine + L0 Metaphysics + Symbol Table together;
+- exact wording is synchronized in one reviewed migration.
+
+Until the author chooses N2-A or N2-B, the future edit scope is not final.
+
+Regardless of choice, section-number pointer maintenance is mandatory if Spine headings move:
+- STATUS.md;
+- Core_Law/SRT_One_Formation.md;
+- _SRT_CONTEXT_ROUTER.md;
+- any Registry / owner pointer that names a Spine section.
+
 ## 14. Future canonical-edit scope
 
-If separately authorized, the next PR should be narrowly scoped to:
+If separately authorized, the semantic target remains:
 
 ~~~text
 Core_Law/SRT_Generative_Ontology_Spine.md
 ~~~
 
-plus only:
+but the exact file set depends on N2.
 
+Mandatory supporting maintenance may include:
+- Core_Law/SRT_L0_Metaphysics.md and _SRT_SYMBOL_TABLE.md if the three-layer labels/definitions are landed or synchronized there;
+- STATUS.md, Core_Law/SRT_One_Formation.md, _SRT_CONTEXT_ROUTER.md and Registry pointers where Spine section numbers / anchors change;
 - this audit / author-decision references;
-- deterministic navigation regeneration if already required by tooling;
-- minimal owner-route synchronization if strictly necessary.
+- deterministic navigation regeneration if already required by tooling.
 
-Do not simultaneously rewrite:
+Do not use pointer maintenance as permission to rewrite local theory semantics.
 
-- L0 Metaphysics;
-- One Formation;
-- Core21b;
-- Bearer semantics;
-- d / Psi_f / T_dir;
+Still out of scope unless a contradiction forces STOP:
+- Core21b theorem semantics;
+- Bearer P+E semantics;
+- d / Psi_f / T_dir semantics;
 - GRG owners;
-- philosophy / AI / neuro / physics consumers;
-- STATUS programme state.
+- philosophy / AI / neuro / physics theory consumers;
+- STATUS programme-state decisions beyond pointer maintenance.
 
 If a contradiction is exposed, STOP and open a separate owner-reconciliation task.
 
@@ -666,6 +791,7 @@ A future edit FAILS if it:
 - collapses O1 / O2-C / O2-A / O2-M;
 - imports GRG proxy / reach / friction / debt as primitive ontology;
 - silently closes an OPEN;
+- renames `universal One-level perspective sufficiency` into a GRG-specific perspective term without adjudication;
 - uses line count as a deletion rule.
 
 A future edit PASSES only if:
