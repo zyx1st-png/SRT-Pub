@@ -61,7 +61,7 @@ This is **not** a universal preload rule. Fresh sessions still obey bounded retr
 
 The labels `parked`, `downstream`, `companion`, `support`, and `canonical: false` do **not** by themselves lower retrieval value or justify skipping accepted / relevant reasoning. Current retrieval priority may be demoted only by an explicit narrowing such as `EXPLORATORY`, `LOCAL_ONLY`, `SUPERSEDED`, `REJECTED`, `RETIRED`, or a later controlling adjudication.
 
-Implementation status: the “must remain routeable” requirement is the governing target. Historical routing is not yet complete; the next accepted-analysis re-entry audit is responsible for finding accepted / continued material that is still partially absorbed or active-but-unrouted. Until that audit lands, absence from an index must not be read as evidence of low retrieval value.
+Implementation status: the first bounded re-entry map is `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md`, routed through `_SRT_CONTEXT_ROUTER.md §20`. It currently covers a reviewed 2026-07-28 -> 2026-08-10 ChoiceMap segment (not the root of that full lineage) plus selected pre-GRG re-entry work; the 2026-09-20 -> 2026-09-23 GRG period is delegated to `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`. Material before 2026-07-28 and other lower-priority chains remain not exhaustively audited. Absence from either map must not be read as evidence of low retrieval value.
 
 
 ---
