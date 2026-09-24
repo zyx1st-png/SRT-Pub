@@ -652,7 +652,7 @@ Bearer admission threshold + Bearer <-> position stability
 = PROVISIONAL routing in the Spine OPEN register (§13) while Bearer canonical ownership is itself OPEN.
 ```
 
-Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026-09-14 Selection-totality retype, which also shortened its compact list. Several items migrated there on 2026-09-13 (including the two PROVISIONAL Bearer items above) are no longer named individually and are held only by §13's "omitted items remain OPEN" clause. The list is in `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md` §12.1a; nothing was closed.
+Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026-09-14 Selection-totality retype, which also shortened its compact list. Several items in the post-migration 2026-09-13 Spine §9 register (including the two PROVISIONAL Bearer items above) are no longer named individually and are held only by §13's "omitted items remain OPEN" clause. The list is in `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md` §12.1a; nothing was closed.
 
 ---
 
