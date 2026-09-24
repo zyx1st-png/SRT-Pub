@@ -159,6 +159,7 @@ When answering or editing a non-simple SRT question:
 - `SRT_Fisher_FEP_Landscape_Interface.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md` + `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`（2026-09-24 author direction and future C-class contract for L0 Generative Openness / L1 Actualized Differentiation / L2 Retained Generative Efficacy and the two-role Spine; noncanonical, landing not yet authorized）
 
 ### Boundary
 
