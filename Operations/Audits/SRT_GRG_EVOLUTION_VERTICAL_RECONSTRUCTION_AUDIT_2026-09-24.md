@@ -12,39 +12,24 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_CORRECTION_GRG_VERTICAL_RECONSTRUCTION_EVOLUTION_2026-09-24.md
   - Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
   - Operations/GRG/SRT_GRG_CROSS_OBJECTIFICATION_ANTI_DRIFT_PROTOCOL_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-tags: [GRG, Evolution, PopulationGenetics, VerticalReconstruction, Objectification, GenerativeRelations]
+tags: [GRG, Evolution, PopulationGenetics, VerticalReconstruction, Fitness, Objectification, GenerativeRelations]
 ---
 
 # Evolution / population genetics — horizontal-objectification decomposition and vertical generative reconstruction audit
 
 ## 0. Why this audit was corrected
 
-The previous bounded audit correctly blocked two failure modes:
+The earlier #1039 work failed in two opposite ways:
 
-- claiming source-native biological mechanisms as GRG discoveries;
-- mapping CGV / Hsp90 / fitness landscapes / niche construction one-to-one onto GRG vocabulary.
+1. it searched for a source-domain residual / new object too quickly;
+2. it then treated component-level mature-source absorption as if it settled the whole vertical-reconstruction question.
 
-But it then over-corrected.
-
-It treated:
-
-```text
-mature biology owns the components
-```
-
-too quickly as:
-
-```text
-therefore GRG gain = NO
-```
-
-That is not the author's current research target.
-
-The author correction is:
+The author's correction is:
 
 ```text
 GRG target
@@ -52,13 +37,20 @@ GRG target
 != GRG-term <-> source-object dictionary
 
 GRG target here
-= use a vertical generative view
-  to decompose mature horizontal objectifications
-  and test whether a different integrated generative structure
-  can be reconstructed inside the source domain.
+= decompose mature horizontal objectifications
+  and test whether a nontrivial vertical generative organization
+  can be reconstructed without stealing source mechanism ownership.
 ```
 
-Reach remains relevant, but is only one dimension of the reconstruction.
+But a third failure must now be blocked:
+
+```text
+listing mature subfields in temporal order
+-/>
+successful vertical decomposition.
+```
+
+Therefore the previous V0–V6 chain is downgraded in this revision from “candidate vertical organization” to a **provisional decomposition scaffold**.
 
 Controlling merge guard remains:
 
@@ -66,43 +58,80 @@ Controlling merge guard remains:
 DO NOT MERGE #1039
 ```
 
-This file is DISCOVERY / reconstruction work only.
+## 1. CURRENT NEXT alignment — no second NEXT
 
-## 1. What “horizontal” and “vertical” mean here
+Live STATUS remains:
 
-“Horizontal” is not a criticism of mature evolutionary science.
+```text
+CURRENT NEXT
+= bounded latent-reconstructive-reach reality pressure-test / operationalization
 
-It means that a source model has stabilized:
+FIRST BOUNDED INSTANCE
+= evolution / popgen owner-overlap recovery audit
+```
 
-- a unit;
-- a grain;
-- a boundary;
-- a state variable;
-- a causal or statistical relation;
-- an effective law / transition structure
+This audit does **not** replace that route.
 
-for a declared scientific problem.
+The vertical-reconstruction correction is interpreted as a necessary method step inside the first bounded instance:
 
-Examples:
+```text
+do not presuppose reach as the organizing answer
+-> decompose source + GRG cuts first
+-> then determine whether latent reconstructive reach survives
+   as one real, useful sub-burden.
+```
 
-- allele frequency stabilizes a population-state description;
-- selection coefficient / fitness stabilizes expected reproductive bias under a model;
-- fitness landscapes stabilize genotype–fitness relations under a chosen representation;
-- CGV stabilizes a class of condition-dependent genetic differences;
-- canalization stabilizes a robustness / buffering problem;
-- niche construction stabilizes organism-driven environmental modification and ecological inheritance.
+Thus:
 
-The vertical GRG question is upstream and recursive:
+```text
+vertical reconstruction
+!= second CURRENT NEXT
+```
 
-> What generative organization makes these source objects / relations operative, how do they hand off into one another, and what happens when the organization governing those handoffs changes?
+A broader STATUS change would require a separate author/routing action.
 
-Verticality does **not** mean a hidden substance or a variable unavailable to rich horizontal mathematics.
+## 2. Two questions must remain separate
 
-## 2. Source ownership remains intact
+The prior handoff asked whether an evolution-specific residual remained after owner/source absorption.
 
-The mature source-side findings remain source-owned.
+That answer remains:
 
-Retained source families include:
+```text
+COMPONENT / CANDIDATE QUESTION
+
+EVO-DISC-CCA-01:
+  RETIRE
+
+new evolution-specific GRG term:
+  NONE
+
+source mechanisms:
+  BIOLOGY-OWNED
+
+NO_GRG_GAIN:
+  YES
+  for the previous component-level / candidate-level question.
+```
+
+The author correction opens a **different** question:
+
+```text
+VERTICAL-RECONSTRUCTION QUESTION
+
+can mature horizontal objectifications be decomposed and reorganized
+into a source-checkable vertical structure with nontrivial payoff?
+
+status:
+  OPEN / NOT YET ESTABLISHED
+```
+
+The second question does not retroactively turn the first negative result into a positive result.
+
+## 3. Source ownership remains intact
+
+The mature source-side mechanisms remain source-owned.
+
+Relevant source families already inspected include:
 
 - ordinary population genetics;
 - mutation / standing variation;
@@ -116,551 +145,532 @@ Retained source families include:
 - niche construction / ecological inheritance;
 - philosophy-of-biology causal / statistical and level-of-selection pressure.
 
-Relevant previously inspected sources include:
+No GRG label changes ownership of those mechanisms.
 
-- Casillas & Barbadilla 2017;
-- Gravel 2016;
-- de Visser & Krug 2014;
-- Diaz-Colunga et al. 2023;
-- Bomblies & Peichel 2022;
-- Schlötterer 2023;
-- Paaby & Rockman 2014;
-- Laland et al. 2016 / 2017;
-- Scott-Phillips et al. 2014;
-- Rutherford & Lindquist 1998;
-- Queitsch et al. 2002;
-- Bergman & Siegal 2003;
-- Masel 2005;
-- Specchia et al. 2010.
+## 4. Horizontal objectifications — provisional inventory
 
-No claim below transfers ownership of those mechanisms to GRG.
-
-## 3. Mature horizontal objectifications and what they stabilize
+Examples of mature horizontal cuts:
 
 ### H1 — variation / mutation / standing variation
 
-Stabilizes questions such as:
+Stabilizes difference generation / availability.
 
-- where genetic differences come from;
-- whether a difference is newly generated or already present;
-- what variation is available in a population.
+### H2 — genotype–phenotype / CGV / developmental robustness
 
-It does not by itself determine:
-
-- whether the difference is expressed;
-- whether it becomes fitness-relevant;
-- whether it propagates;
-- how later generation changes the conditions of those mappings.
-
-### H2 — genotype / phenotype / CGV / developmental robustness
-
-Stabilizes:
-
-- manifestation of genetic difference;
-- ordinary vs condition-dependent expression;
-- robustness / buffering of phenotypic consequences.
-
-It does not by itself exhaust:
-
-- population realization;
-- stochastic propagation;
-- environmental feedback;
-- later reconstruction of the developmental / ecological conditions.
+Stabilizes manifestation, buffering and developmental mapping questions.
 
 ### H3 — fitness / selection coefficient / fitness landscape / epistasis
 
-Stabilizes:
+Stabilizes expected reproductive consequence and context-dependent genotype–fitness relations.
 
-- context-dependent reproductive consequence;
-- genotype–fitness structure;
-- statistical / causal expectations under a declared representation.
+### H4 — population transition / drift / demography / fixation-loss
 
-It does not by itself equal:
-
-- realized population transition;
-- later sedimentation;
-- a complete account of how the mapping itself is historically reconstructed.
-
-### H4 — population-genetic transition / drift / demography / fixation-loss
-
-Stabilizes:
-
-- realized population-level transition;
-- stochastic sampling;
-- frequency trajectory;
-- boundary-relative endpoints.
-
-It does not by itself identify:
-
-- all developmental causes;
-- all ecological condition rewriting;
-- why the relevant unit / level should remain fixed across the whole process.
+Stabilizes realized population dynamics and boundary-relative outcomes.
 
 ### H5 — niche construction / ecological inheritance
 
-Stabilizes:
+Stabilizes organism-driven environmental modification and cross-generational environmental effects.
 
-- organism-driven environmental modification;
-- inheritance of modified selective conditions;
-- feedback into later evolution.
+These are successful source cuts. Their existence is not a defect.
 
-It does not by itself provide a universal vertical grammar of the full variation-to-condition-rewriting cycle.
+## 5. V0–V6 — provisional scaffold only
 
-These are not defects. They are successful cuts for different source problems.
-
-## 4. First full vertical reconstruction — not a term-mapping table
-
-The reconstruction should not read:
+The earlier revision assembled:
 
 ```text
-CGV = latent reach
-canalization = suppression
-Hsp90 = support
-niche construction = reconstruction
+V0 difference formation / availability
+-> V1 manifestation organization
+-> V2 consequence constitution
+-> V3 population realization
+-> V4 sedimentation / inherited-field change
+-> V5 condition rewriting
+-> V6 recursive re-entry
 ```
 
-That would reproduce the mapping failure.
+This scaffold is useful for locating interfaces.
 
-Instead, remove the mature object labels temporarily and follow the generative handoffs.
+It is **not yet evidence of GRG gain**, because it can still be read as:
 
-### V0 — difference formation / availability
+```text
+variation
+-> development
+-> fitness
+-> population genetics
+-> inheritance
+-> niche construction / reciprocal feedback
+```
+
+which may be only a sequencing of already mature subfields.
+
+Current verdict:
+
+```text
+V0-V6:
+  PROVISIONAL DECOMPOSITION SCAFFOLD
+
+vertical coherence gain:
+  NOT YET ESTABLISHED
+
+candidate grammar:
+  NONE
+```
+
+## 6. First real decomposition target — fitness as a horizontal objectification
+
+This revision performs one bounded decomposition rather than extending the V-chain.
+
+“Fitness” / selection coefficient is treated here as a mature source objectification whose roles may separate.
+
+This is **not** a final philosophy-of-fitness adjudication.
+
+### F1 — contextual consequence relation
+
+Source pressure:
+
+- Gravel 2016 on selection efficacy;
+- de Visser & Krug 2014 and later fitness-landscape / epistasis work.
 
 Question:
 
-> What differences are generated, retained or already available before the current episode?
+> under a declared genetic / developmental / ecological background, what difference changes expected reproductive consequence?
 
-Source realizations may include mutation, recombination, migration or standing variation depending on scope.
-
-Load-bearing distinction:
+Key separation:
 
 ```text
-new difference
-!=
-pre-existing difference
+variant identity
+!= context-independent consequence
 ```
 
-### V1 — manifestation organization
+The same variant can carry different consequences under different backgrounds.
 
-Question:
+### F2 — expected reproductive bias / model role
 
-> Under what developmental, genetic and environmental organization does an available difference become manifest at the relevant phenotype / functional grain?
+A fitness or selection parameter often summarizes an expectation / systematic reproductive contribution under a model.
 
-This is broader than reach.
-
-It includes:
-
-- developmental mapping;
-- buffering / robustness;
-- genetic background;
-- environmental condition;
-- expression thresholds / dependencies.
-
-Load-bearing distinction:
-
-```text
-difference present
-!=
-difference manifest
-```
-
-### V2 — consequence constitution
-
-Question:
-
-> Under the current organismal / ecological / genetic context, when does a manifest or latent difference become consequential for survival, reproduction or another declared evolutionary burden?
-
-This includes fitness / epistasis pressure but does not identify “fitness” as a GRG object.
-
-Load-bearing distinction:
-
-```text
-manifest difference
-!=
-fixed consequence
-```
-
-because consequence can be background- and context-dependent.
-
-### V3 — population realization
-
-Question:
-
-> How are consequence biases, stochastic sampling, reproduction and demography jointly converted into a realized population transition?
-
-Load-bearing distinction:
+Key separation:
 
 ```text
 expected reproductive bias
-!=
-realized population transition
+!= realized population transition
 ```
 
-This is where selection-associated expectation and drift / stochasticity must not be collapsed.
+This prevents “fitness” from silently swallowing stochastic realization.
 
-### V4 — sedimentation / inherited field change
+### F3 — realization relation
 
-Question:
+Population transition additionally depends on:
 
-> What of the realized transition remains as a later generative condition?
+- finite-population sampling;
+- demography;
+- linkage / background where relevant;
+- realized reproduction.
 
-Possible source-side forms include:
+Thus two situations may share a similar expected bias while differing in realized fate.
 
-- changed allele / genotype frequencies;
-- standing variation depletion / enrichment;
-- fixation / loss relative to a declared boundary;
-- changed population structure;
-- inherited ecological condition.
+This is a distinct generative role from F2.
 
-Load-bearing distinction:
+### F4 — attribution grain / causal cut
 
-```text
-outcome
-!=
-mechanism
+Philosophy-of-biology pressure preserves disputes over:
 
-and
+- genic;
+- genotypic;
+- organismal;
+- multilevel
 
-one realized transition
-!=
-nothing-but-one-shot event
-```
+descriptions / causal attributions.
 
-when it alters later generative conditions.
-
-### V5 — condition rewriting
-
-Question:
-
-> Does the current evolutionary episode alter the organization that governs future manifestation, consequence or propagation?
-
-This is the critical move beyond ordinary state update.
-
-Examples that may instantiate different parts of this question include:
-
-- niche construction changing later selective environments;
-- genetic assimilation changing dependence on an earlier perturbation;
-- evolved robustness / buffering changing future genotype–phenotype mappings;
-- changed genetic background changing later epistatic consequence;
-- population restructuring changing later stochastic / selective regimes.
-
-No one example is identical to a GRG operator.
-
-The vertical burden is:
-
-```text
-current generation
--> changes later generative conditions / mappings
-```
-
-### V6 — recursive re-entry
-
-The output of V4 / V5 can become input to V0–V3 in later generations.
-
-Thus the architecture is not a one-way cascade:
-
-```text
-difference availability
--> manifestation organization
--> consequence constitution
--> population realization
--> sedimentation
--> condition rewriting
--> changed future availability / manifestation / consequence / realization
--> ...
-```
-
-This is the first nontrivial candidate **vertical organization** of the mature source materials.
-
-It is an ANALYST / GRG reconstruction, not a new biological mechanism.
-
-### V7 — unit / scale / boundary formation — OPEN NEXT LAYER
-
-The source already contains pressure from:
-
-- genic vs genotypic vs organismal descriptions;
-- levels of selection;
-- population boundary choice;
-- higher-order organization / individuality.
-
-But the current reconstruction should not force those issues into the first pass.
-
-Open question:
-
-> when do recurring relations stabilize a new operative unit / scale that then becomes a condition on lower-level generation?
-
-This is explicitly deferred until V0–V6 is made source-faithful.
-
-## 5. Reach is one cross-cutting coordinate, not the architecture
-
-Latent / active reach remains useful for some transitions, especially V1–V2 and reopening after buffering.
-
-But the full vertical reconstruction also requires at least:
-
-```text
-difference formation / availability
-manifestation organization
-support / buffering
-context / positional dependence
-consequence constitution
-actual population realization
-history / sedimentation
-condition rewriting
-composition / re-entry
-scale / boundary formation
-```
+A legitimate recut may change the causal-level account without changing every observed trajectory.
 
 Therefore:
 
 ```text
-reach-only reconstruction
-= UNDER-SPECIFIED
+causal attribution grain
+!= automatically identical to realized population outcome
 ```
 
-The earlier LR-0…LR-5 package remains a bounded operational tool for one subproblem, not the organizing spine of the evolution reconstruction.
+### F5 — historical re-entry
 
-## 6. What mature source absorption does and does not decide
+A realized transition can alter:
 
-### 6.1 Component absorption
+- background frequencies;
+- available standing variation;
+- population structure;
+- later interaction contexts.
 
-If mature biology already owns:
+This can change the future conditions under which F1–F3 operate.
 
-- buffering;
-- CGV;
-- capacitance;
-- epistasis;
-- fitness landscapes;
-- drift;
+But this role must be demonstrated in a bounded source case; it is not granted merely because “history matters”.
+
+### 6.1 What the decomposition actually buys us
+
+The horizontal word “fitness” can participate in at least four analytically distinct roles:
+
+```text
+contextual consequence relation
+expected bias
+realized transition
+causal attribution grain
+```
+
+and a possible fifth historical role:
+
+```text
+later-condition re-entry
+```
+
+The vertical research question is no longer:
+
+> “what GRG term equals fitness?”
+
+It is:
+
+> which of these roles are being combined by a particular source model, which separate under perturbation / recut, and which interfaces are required to connect them?
+
+### 6.2 Bounded separation tests
+
+At least three source-checkable stress tests follow:
+
+```text
+T1 background recut:
+  same variant / different genetic or ecological background
+  -> consequence relation changes
+  tests F1 separation.
+
+T2 realization recut:
+  comparable expected bias / different finite-population or demographic regime
+  -> realized trajectory can differ
+  tests F2 != F3.
+
+T3 level recut:
+  alternative legitimate genic / genotypic / higher-level decomposition
+  -> attribution can change without every realized transition changing
+  tests F4 independence.
+```
+
+These are not yet new GRG predictions. They are tests of whether the proposed decomposition is source-real.
+
+## 7. GRG cuts are probes AND explananda
+
+The 09-23 continuity correction requires both sides to be reconstructed before any new grammar candidate is named.
+
+Therefore this audit does **not** place GRG only at the end as a mapping table.
+
+Relevant current GRG cuts were historically formed to solve different burdens:
+
+```text
+differential actualisation
+  -> distinguish mere difference from operative non-equivalence;
+
+retained efficacy / recurrent organization
+  -> distinguish one-shot occurrence from history / re-entry;
+
+consequence exposure / reach
+  -> distinguish current local compression from wider or reopenable consequence;
+
+reconstruction-output / condition rewriting
+  -> distinguish ordinary state change from change in later generative conditions.
+```
+
+Evolutionary source pressure now asks whether those GRG cuts are themselves too coarse or differently partitioned.
+
+For example:
+
+```text
+source fitness decomposition
+may pressure GRG to distinguish more sharply:
+
+operative consequence relation
+vs
+expected bias
+vs
+realized transition
+vs
+later retained condition.
+```
+
+Current result:
+
+```text
+GRG self-revision pressure:
+  OPEN
+
+new GRG cut:
+  NOT AUTHORIZED
+
+V0-V6:
+  probe scaffold, not candidate owner
+```
+
+No new grammar candidate may be named until both the source decomposition and the relevant GRG-cut reconstruction survive review.
+
+## 8. Reach retained as a subtool, not the spine
+
+The previous reach-centric audit is superseded, but its corrected LR operational package remains useful as a subtool for one bounded question.
+
+For discoverability, preserve it here as provenance-level operational packaging:
+
+```text
+LR-0 latency gate
+  difference currently compressed / screened / local;
+
+LR-1 retained difference
+  relevant difference predates the claimed reopening;
+
+LR-2 real bridge
+  a current causal / organizational path can reconnect difference to consequence;
+
+LR-3 evidentially discriminable bridge
+  bridge must be distinguishable from mere possibility;
+
+LR-4 conditional world-side reopening
+  under declared conditions the difference would regain consequence;
+  prior actualisation is not required;
+
+LR-5 scope declaration
+  condition / evidence family / consequence / grain / horizon.
+```
+
+Status:
+
+```text
+LR package:
+  PROVENANCE-RETAINED SUBTOOL
+  M-level operational packaging
+  NOT THE EVOLUTION RECONSTRUCTION SPINE
+  NOT NEW GRG GAIN
+```
+
+## 9. Predeclared integrated comparators for the next audit
+
+Before architecture-level scoring, the comparator set is fixed here.
+
+### C1 — Extended Evolutionary Synthesis
+
+Laland et al. 2015:
+
+- constructive development;
+- reciprocal causation;
+- inclusive inheritance;
+- developmental bias;
 - niche construction;
+- explicit integration of processes affecting variation, selection and inheritance.
 
-then GRG does not receive novelty credit for those components.
+### C2 — evolvability / evolution of the genotype–phenotype map
 
-Result:
+Wagner & Altenberg 1996:
+
+- genotype–phenotype map as a determinant of variability / evolvability;
+- explicit question whether the GP map itself evolves;
+- modularity / representation as part of evolutionary organization.
+
+### C3 — Developmental Systems Theory
+
+Griffiths & Gray 1994 and related DST tradition:
+
+- organism–environment developmental systems;
+- challenge to gene/non-gene dichotomization;
+- extra-genetic inheritance, niche construction and plasticity as central rather than peripheral.
+
+### C4 — niche construction / ecological inheritance
+
+Lewontin 1983 lineage + Odling-Smee / Laland framework:
+
+- organism and environment as reciprocally related;
+- organism-driven environmental modification;
+- altered selective environments;
+- ecological inheritance.
+
+### C5 — multilevel / causal evolutionary frameworks
+
+Use source-appropriate level-of-selection and causal decomposition literature to test whether the proposed role splits survive legitimate recuts.
+
+This list is fixed before the next integrated-comparator verdict.
+
+## 10. Predeclared architecture-level absorption / gain criteria
+
+The next comparison audit must score the same criteria for each comparator.
+
+### A1 — role separation
+
+Does the mature comparator already distinguish materially the same roles exposed by the decomposition?
+
+For the fitness pilot:
 
 ```text
-source-mechanism novelty:
-  NO
+contextual consequence
+expected bias
+realized transition
+causal attribution grain
+historical re-entry
 ```
 
-### 6.2 Architecture-level absorption
+### A2 — interface explicitness
 
-But the relevant second question is different:
+Does it state how those roles hand off into one another rather than merely mentioning all of them?
 
-> Do the strongest mature source frameworks already organize the materially same V0–V6 vertical architecture, with the same load-bearing separations, recursive handoffs, failure conditions and useful consequences?
+### A3 — mapping / condition reconstructibility
 
-This is **not settled** merely by showing that each component exists somewhere in evolutionary biology.
+Does it treat developmental / ecological / genotype–phenotype / selection mappings themselves as changeable products of evolution rather than fixed background?
 
-Therefore:
+### A4 — recursive condition rewriting
+
+Does current evolutionary organization explicitly alter later conditions of variation, manifestation, consequence or realization?
+
+### A5 — recut robustness
+
+Does the claimed integration survive legitimate changes of:
+
+- causal level;
+- population boundary;
+- genotype / phenotype representation;
+- process vs outcome cut?
+
+### A6 — extra payoff after GRG-label deletion
+
+After all GRG vocabulary is removed, does the reconstruction add at least one source-checkable:
+
+- interface;
+- diagnostic;
+- negative case;
+- intervention / counterfactual question;
+- failure boundary;
+- prospective distinction?
+
+### Verdict rule
 
 ```text
-component absorption
--/>
-vertical-reconstruction absorption automatically
+if A1-A6 are materially already owned by an integrated mature comparator:
+  VERTICAL_RECONSTRUCTION_ABSORBED
+
+if decomposition is source-real but adds no extra payoff:
+  REDESCRIPTIVE_ONLY
+
+if some role / interface survives mature comparison but payoff is incomplete:
+  PARTIAL_COHERENCE_GAIN
+
+if a nontrivial source-checkable residual survives all criteria:
+  RESIDUAL_VERTICAL_GAIN_CANDIDATE
+
+if evidence is insufficient:
+  INSUFFICIENT_EVIDENCE
 ```
 
-Strong mature comparators for the next source-side review should include, where source support warrants:
+No candidate promotion follows automatically from any label.
 
-- extended / developmental evolutionary synthesis;
-- evo-devo / developmental systems approaches;
-- niche-construction / ecological-inheritance frameworks;
-- evolvability / robustness / capacitance;
-- multilevel / causal evolutionary frameworks.
+## 11. Stop-loss accounting is frozen before the comparison
 
-No positive GRG gain may be claimed until that integrated-comparator audit is run.
-
-## 7. What would count as real vertical-reconstruction gain?
-
-Not a new word.
-
-Not a prettier diagram.
-
-Not the fact that all parts can be expressed in one chain.
-
-A positive result would require at least one source-checkable payoff such as:
-
-1. two mature source models are shown to be adjacent slices of one generative process and their handoff exposes a previously under-specified dependency;
-2. one mature objectification is shown to combine roles that separate under intervention / counterfactual stress;
-3. the reconstruction distinguishes ordinary state change from a change in the mappings / conditions governing later evolutionary change;
-4. the reconstruction generates a new diagnostic, failure case, intervention question, or pre-result distinction;
-5. the result survives legitimate recuts of causal level, scale, representation or population boundary;
-6. the strongest integrated mature source comparator does not already own the materially same organization.
-
-If none are paid:
+To prevent a moving-goalpost interpretation:
 
 ```text
-REDESCRIPTIVE_ONLY
+FRR:
+  remains source-native adequate case 1.
+
+existing evolution / popgen draft:
+  prospective adequacy before scoring was NOT ESTABLISHED;
+  remains NOT retroactively counted as case 2.
+
+current vertical-reconstruction deepening:
+  same evolution case / root-question review;
+  NOT a new fusion case;
+  NOT a new §8.1 count;
+  NOT a counter reset;
+  NOT a source of stop-loss credit merely because the evaluation level changed.
 ```
 
-If the integrated mature source comparator already owns the same architecture:
+The architecture-level question can succeed or fail, but it cannot be used to rewrite the historical §8.1 accounting.
+
+No third domain opens from this work.
+
+## 12. Relation to CURRENT NEXT
+
+The bounded evolution instance still serves the live latent-reconstructive-reach pressure test, but indirectly:
 
 ```text
-VERTICAL_RECONSTRUCTION ABSORBED
+first:
+  decompose source horizontal objects;
+  reconstruct relevant GRG cuts as explananda;
+
+then:
+  ask whether latent reconstructive reach remains a useful,
+  source-checkable sub-burden in the resulting architecture.
 ```
 
-## 8. Reassessment of the previous #1039 verdict
-
-Previous global wording:
+Possible outcome:
 
 ```text
-NO_GRG_GAIN = YES
-RESIDUAL_CANDIDATE = NONE
+latent reach useful:
+  retain as sub-burden;
+
+latent reach redundant / too coarse:
+  demote / split / delete in later authorized work.
 ```
 
-was too broad.
+This is how the audit obeys “do not only stare at reach” without silently replacing STATUS CURRENT NEXT.
 
-Corrected disposition:
+## 13. Current disposition
 
 ```text
-new biological mechanism discovered by GRG:
-  NO
+component-level / CCA-01 question:
+  NO_GRG_GAIN = YES
+  RESIDUAL_CANDIDATE = NONE
+  CCA-01 = RETIRED
 
-source-native mechanism ownership:
-  BIOLOGY
+V0-V6:
+  PROVISIONAL SCAFFOLD ONLY
 
-term-to-term / object-to-object mapping:
-  REJECT AS RESEARCH ENGINE
+first true horizontal-object decomposition:
+  FITNESS PILOT = OPEN / SOURCE-PRESSURED
 
-EVO-DISC-CCA-01:
-  RETIRE AS ACTIVE CANDIDATE
-  reason = too narrow + component structure substantially source-owned
-
-latent reach:
-  RETAIN AS ONE SUBPROBLEM / COORDINATE
-  NOT THE SPINE
-
-vertical reconstruction V0-V6:
-  OPEN / PARTIALLY CONSTRUCTED
-
-vertical-reconstruction source coherence gain:
-  PLAUSIBLE / NOT YET ESTABLISHED
+vertical coherence gain:
+  NOT YET ESTABLISHED
 
 architecture-level mature-source absorption:
-  NOT YET TESTED ADEQUATELY
+  PREDECLARED / NOT YET EXECUTED
 
-GRG scientific distinctiveness:
-  NOT ESTABLISHED
+GRG self-revision pressure:
+  OPEN
 
-new GRG owner / v0.4:
+new GRG owner:
   NO
 
-RESIDUAL_CANDIDATE:
-  NONE AS A NEW GRG TERM
+GRG v0.4:
+  NO
 
-RECONSTRUCTION TARGET:
-  YES — integrated vertical generative organization
-```
-
-This does not revive novelty hunting. It changes the level at which the case is evaluated.
-
-## 9. Relation to existing GRG architecture — late audit only
-
-Only after V0–V6 is expressed source-faithfully may current GRG working cuts be used as probes.
-
-Possible late questions include:
-
-- G1 differential actualisation: where does a difference become operatively non-equivalent?
-- G2 foreground / background: what supporting / competing organization matters?
-- G3 retained efficacy: what prior differentiation alters later conditions?
-- G4 recurrent organization: what retained organization re-enters later generation?
-- G5/G6 locus / position: when do units or positions become operative rather than merely indexed?
-- G7 consequence exposure: how do generated consequences return?
-- G8 reconstructive Selection: when does current organization alter later differentiation / selectability?
-- G10 cross-scale recursion: when does higher-order organization become a later condition on lower-level generation?
-
-These are **questions applied to the reconstruction**, not boxes that the source must fill.
-
-The source is allowed to force any of these cuts to be split, demoted, merged or left unused.
-
-## 10. Stop-loss and scope
-
-The current work remains inside the same bounded evolution case.
-
-Therefore:
-
-```text
 third fusion domain:
-  NOT OPENED
-
-FRR stop-loss case:
-  remains case 1
-
-evolution as retroactive case 2:
-  NO
+  HOLD
 
 BCTB T2:
   HOLD
 
-GRG v0.4:
-  NOT AUTHORIZED
+STATUS:
+  UNCHANGED
 
-canonical edit:
-  NO
+PR #1039:
+  DRAFT / OPEN / DO NOT MERGE
 ```
 
-Deepening the current evolution reconstruction does not reset the counter and does not justify serial domain hunting.
+## 14. Next bounded task
 
-## 11. Next bounded source-side task
+Run the named comparator audit from §9 using the frozen criteria in §10.
 
-The next step is not another GRG term audit.
+Do **not**:
 
-It is:
+- add another domain;
+- add another GRG term;
+- extend V0–V6 into a longer universal chain;
+- call the fitness decomposition a GRG discovery;
+- change the absorption criteria after seeing comparator results.
 
-> pressure-test V0–V6 against the strongest mature **integrated** evolutionary frameworks.
-
-For each comparator, ask:
-
-```text
-which V0-V6 handoffs are explicit?
-which are left as separate subfield interfaces?
-which mappings / conditions are themselves treated as evolvable / reconstructible?
-which unit / boundary recuts are already built in?
-what does the GRG vertical reconstruction add after GRG labels are deleted?
-what would falsify the claim of added coherence?
-```
-
-Only after that audit can the evolution case end as one of:
-
-```text
-VERTICAL_RECONSTRUCTION ABSORBED
-PARTIAL COHERENCE GAIN
-NONTRIVIAL VERTICAL RECONSTRUCTION GAIN
-INSUFFICIENT EVIDENCE
-```
-
-No ranking or maturity promotion is implied by those labels.
-
-## 12. PR disposition
-
-PR #1039 remains:
-
-```text
-DRAFT
-OPEN
-REVIEW / DISCOVERY ONLY
-DO NOT MERGE under the current controlling handoff
-```
-
-The old pre-rewrite package remains provenance-only at:
-
-`archive/pr1039-pre-absorption-audit-20260924`
-
-pre-rewrite head:
-
-`8713cfaf3af4fe7119e79b19c0161e56815594b7`
-
-The earlier reach-centric audit is superseded on this branch by the present vertical-reconstruction audit.
-
-## 13. Explicit non-claims
+## 15. Explicit non-claims
 
 This audit does not claim:
 
-- that GRG has discovered a new biological mechanism;
-- that evolutionary biology is merely “horizontal” in a pejorative sense;
-- that mature evolutionary frameworks cannot already integrate V0–V6;
-- that V0–V6 is canonical GRG;
-- that V0–V6 is a universal law;
-- that reach is unimportant;
-- that natural selection is SRT Selection;
-- that niche construction is G8;
-- that fitness landscapes are GRG objects;
-- that the evolution case establishes GRG scientific distinctiveness;
+- that GRG discovered a new biological mechanism;
+- that “fitness” has one final true decomposition;
+- that V0–V6 is a universal grammar;
+- that evolutionary biology is merely horizontal;
+- that EES / DST / evolvability / niche construction fail to integrate the same structure;
+- that reach is canonicalized by this case;
+- that the architecture-level question has a positive answer;
 - that #1039 is ready to merge.
