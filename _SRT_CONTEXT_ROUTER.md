@@ -455,6 +455,7 @@ When answering or editing a non-simple SRT question:
 
 - Political claims are application-level or philosophy-domain claims unless explicitly promoted through the claim ladder.
 - Do not confuse descriptive `L2` stabilization with normative endorsement.
+- Historical normativity reconstruction / generativity-first supersession -> also consult §20 before reviving older consequence-bearing-first language.
 
 ---
 
@@ -590,34 +591,66 @@ When answering or editing a non-simple SRT question:
 
 ## 20. Route: Accepted / Continued Analysis Re-entry
 
-**Use when the query mentions**: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, historical SRT reasoning continuity, re-entry, why did this concept appear, partially absorbed analysis.
+**Use when the query mentions either continuity/history OR one of the recovered burdens**, including: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, coordination threshold, hysteresis, support vs replacement, identity continuity, concern–path-space, embodied position, future selectability, reorganizability provenance, generative reselectability history, or why a current concept took this form.
 
 ### Primary
 
 - `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`
-- `Glossary/SRT_Live_Term_Router.md`
 
-### Conditional recovered branches
+### Conditional secondary — load only when topic matched
 
-Load only when the current topic matches:
+#### ChoiceMap 2026-07-28 -> 2026-08-10 chain
 
-- coordination / identity continuity / support-vs-replacement / hysteresis → `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`
-- embodied position / concern-path-space / future selectability → `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`
-- normativity / anti-lock-in / reorganizability / generative reselectability → `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION_CONTINUATION_2026-07-31.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`
+- `01_Source_Intuition/SRT_SIMONDON_OPERATOR_YINYANG_SECOND_ORDER_SELECTION_CROSSWALK_2026-08-10.md`
 
-Then load the current owner(s) for the active concept before drawing a current-theory conclusion.
+Current owner / route checks for that chain:
+
+- support vs replacement / pathological closure -> `Core/SRT_OPEN_TENSIONS.md §4` + `Core_Law/SRT_Occlusion_Dynamics.md`;
+- generative reselectability -> `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` + `Core/SRT_OPEN_TENSIONS.md §4`;
+- second-order Selection / individuation -> `Core_Law/SRT_Individuation.md` + current STATUS/canonical reconciliation;
+- compensation / supported equivalence -> `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md §§R/V/W`.
+
+#### 2026-09-14 normativity provenance
+
+Read current controlling route first:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` when GRG normativity is in scope;
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
+- `Core/SRT_OPEN_TENSIONS.md §4`.
+
+Then, only for provenance / derivative diagnostics:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`.
+
+#### 2026-09-20 -> 2026-09-23 GRG continuity
+
+Use the existing owner:
+
+- `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`.
+
+Do not reconstruct a second competing classification for that period.
+
+#### Terminology support
+
+- `Glossary/SRT_Live_Term_Router.md` — Secondary navigation aid only; not a definition or re-entry owner.
 
 ### Boundary
 
 - accepted / continued machine analysis may remain authority = M;
 - `parked / downstream / companion / support / canonical:false` do not by themselves mean low retrieval value;
 - routeable != preload;
-- ACTIVE_BUT_UNROUTED != CURRENT NEXT;
-- historical working labels do not outrank the Live Term Router or current owners;
-- explicit later `SUPERSEDED / REJECTED / RETIRED / LOCAL_ONLY / EXPLORATORY` or controlling adjudication narrows current use;
-- this route is for continuity / re-entry, not for reopening canonical owners automatically.
-
+- an unrouted historical burden != CURRENT NEXT;
+- historical working labels do not outrank current owners;
+- later explicit supersession / controlling adjudication controls current meaning;
+- the 09-14 post-Selection consequence-bearing-first normativity record is provenance under later generativity-first control;
+- this route is for continuity / re-entry, not for reopening canonical owners automatically;
+- pre-2026-07-28 material is not claimed audited by the current re-entry pass.
 ---
 
 ## 21. Route: Core 24 — Floor Replacement / Dynamic Normativity / Non-Reductive Verification
@@ -653,6 +686,7 @@ Then load the current owner(s) for the active concept before drawing a current-t
 - Do not treat value as reward / preference / salience; use concern-weighted non-substitutability under consequence return.
 - Do not treat `Ψ_f` as task difficulty, pain, effort, energy, Fisher metric, prediction error, or stress marker.
 - Any further canonical promotion must go through the claim ladder.
+- If the question asks why reorganizability / reselectability entered the normativity discussion, consult §20 for the 09-14 provenance chain and later generativity-first control.
 
 ---
 
@@ -702,6 +736,7 @@ Then load the current owner(s) for the active concept before drawing a current-t
 - Do **not** claim the toy wedge validates SRT ontology or morality, or infer equal moral status for all objects.
 - Do **not** use this route to derive or override AM-A's P0-04 primitive boundary, nor to solve closure-boundary or externalization/X.
 - Keep three layers separate: ontology (objecthood as maintained consequence-bearing reselectable closure), dynamics (reward/performance can diverge from future reselectability), morality/governance (moral pressure opens when one position's selection compresses another's reselectability, but X/externalization remains under-defined).
+- For the 07-28 -> 08-10 ChoiceMap lineage, concern–path-space wording, or support-vs-replacement provenance, consult §20 conditionally.
 
 ---
 
@@ -738,6 +773,7 @@ Then load the current owner(s) for the active concept before drawing a current-t
 - 不要把惩罚性选择说成“没有选择”，也不要把“选项少”当作伪选择判据。
 - 不要把可再选择性写成每个 Selection event 的必要条件，也不要把耗散结构写成选择的普遍必要前身。
 - 选择事件审计、Stable ISP、generative reselectability、agency guard 四者分工固定，不得互相替代。
+- Historical second-order-Selection / comparison-scale-rewrite provenance from the 08-09 ChoiceMap chain is routed through §20; current selection-event judgments remain owned by this §23a route and current owners.
 ---
 
 ## 24. Maintenance Rule
