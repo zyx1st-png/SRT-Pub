@@ -124,7 +124,7 @@ one CURRENT NEXT only;
 FRR × evolution preregistered test = EXECUTED;
 primary verdict = SOURCE_OWNED_ROLE_SEPARATION_NO_EXTRA_PAYOFF;
 Q3 target-source payoff = FAIL;
-P4 latent-reach shared burden = NOT ESTABLISHED;
+P4 latent-reach shared burden = INSUFFICIENT EVIDENCE;
 P5 cross-case recut threshold = INSUFFICIENT EVIDENCE;
 FRR × evolution != third fusion domain;
 FRR × evolution != §8.1 case 2;
