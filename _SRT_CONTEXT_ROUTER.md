@@ -593,14 +593,47 @@ When answering or editing a non-simple SRT question:
 
 **Use this route when the task explicitly asks for history / provenance / continuity / why a concept took its current form**, including: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, or the historical source / lineage of coordination thresholds, support-vs-replacement, identity continuity, concern–path-space, second-order Selection, reorganizability or generative reselectability.
 
-Do **not** trigger this route merely because a current-topic query contains broad terms such as `future selectability`, `embodied position`, `identity continuity`, `hysteresis` or `Concern`. For ordinary current-theory questions, enter through the normal topic owner first. Follow that topic's conditional §20 cross-reference only when provenance / historical reconstruction is actually needed. **Narrow residual exception:** if the current task directly concerns the DA2/DA4/DA5 transition-role separation, the CIF-P09 distinction between friction admission and transition threshold, or the concern–path-space duality, enter §20 even without an explicit history/provenance phrase; these three interfaces currently depend on the recovered source chain for their meaning.
+Do **not** trigger this route merely because a current-topic query contains broad terms such as `future selectability`, `embodied position`, `identity continuity`, `hysteresis` or `Concern`. For ordinary current-theory questions, enter through the normal topic owner first. Follow that topic's conditional §20 cross-reference only when provenance / historical reconstruction is actually needed. **Narrow residual exception:** if the current task directly concerns the DA2/DA4/DA5 transition-role separation, the CIF-P09 distinction between friction admission and transition threshold, or the concern–path-space duality, enter §20 even without an explicit history/provenance phrase; these interfaces currently depend on the recovered source chain for their meaning. **U5 / choice-absolutization is not an additional exception:** ordinary current-theory questions go to ST-A / B13 / current owners first; use the 07-27 source only for provenance, U5-vs-U6 attribution, or historical derivation.
 
 ### Primary — only for a genuine re-entry / provenance task
 
-- `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md`
+- `Operations/Audits/SRT_ACCEPTED_CONTINUED_PRE0728_REENTRY_AUDIT_2026-09-24.md` — recorded 2026-07-09 -> 2026-07-27 upstream ChoiceMap / Concern / Ghost segment
+- `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md` — reviewed 2026-07-28 -> 2026-08-10 segment + selected later pre-GRG re-entry
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`
 
 ### Conditional secondary — load only when the historical subtopic matches
+
+#### ChoiceMap / Concern / Ghost upstream segment 2026-07-09 -> 2026-07-27
+
+Load only when the provenance question reaches this upstream segment or U5 provenance / attribution:
+
+- `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_ECOLOGY_GOVERNANCE_TRACE_2026-07-11.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_EMERGENCE_AND_CONVERGENCE_TRACE_2026-07-11.md`
+- `01_Source_Intuition/SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md`
+- `01_Source_Intuition/SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md`
+- `01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md`
+
+Current owner / route checks:
+
+- Selection-before-existence / primitive Selection -> `Core_Law/SRT_L0_Metaphysics.md` + `Core_Law/SRT_Selection_Argument.md` + Spine;
+- the closed 07-09 G1/G2/G4/G5/G6 gate -> `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`; semantic coverage -> `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`; do not build a competing re-entry classification;
+- “选择地基” -> author-renamed/decomposed into selection-generation conditions / event criteria / scaffolding; current route `_SRT_CONTEXT_ROUTER.md §23a` + `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`;
+- source-level resynchronization -> author-renamed for cross-level theory as selective reorganization; current route `03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md`;
+- 07-09 primitive continuation / non-self-erasure direction -> **SUPERSEDED** by `SRT_AUTHOR_ADJUDICATION_EPSILON_POSTSELECTION_RELOCATION_2026-09-14.md`; do not restore it to minimum L0;
+- entropy de-selection reading -> `Core/SRT_OPEN_TENSIONS.md §12` + T-B / Core25 division; absence vs abstraction remains OPEN;
+- stronger generative reselectability / current choice-absolutization theory -> `Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md` + `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
+- U5 provenance / U5-vs-U6 attribution -> only after current owners, read `01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md` + `Operations/_SRT_CHOICE_TRACE_CORRECTION_POINTER_2026-07-27.md`;
+- `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md §16.2` is a neighboring reflexivity check, not U5 absorption or semantic replacement;
+- Concern / stake -> `_SRT_D_VALUE_CANONICAL.md`; Bearer / Concern relations remain governed by One Formation + Spine OPEN guards; 09-14 generativity-first control prevents non-outsourcing / consequence-bearing from being restored as primitive normative ground;
+- PH-IND03 / the 08-10 crosswalk may be used when operator-structure revisability / second-order Selection is in scope;
+- historical `ghost / nonclosure pressure / yin-yang` wording is source-intuition; it must **not** be identified with the current Ghost Operator / `Ĝ_θ` node by name alone;
+- 07-23/25 `d/q/o` material is guard context only; the 07-25 closure audit keeps it candidate / embargoed.
+
+Out-of-scope sibling:
+
+- `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md` is **not** part of this upstream chain by default. Load it only when cross-scale optionality sacrifice / coordinated closure / selection-proxy emergence is itself the task.
 
 #### ChoiceMap reviewed segment 2026-07-28 -> 2026-08-10
 
@@ -666,7 +699,7 @@ Do not reconstruct a second competing classification for that period.
 - later explicit supersession / controlling adjudication controls current meaning;
 - the 09-14 post-Selection consequence-bearing-first normativity record is provenance under later generativity-first control;
 - this route is for continuity / re-entry, not for reopening canonical owners automatically;
-- the current ChoiceMap audit covers the 07-28 -> 08-10 segment; earlier upstream parent material is not claimed audited.
+- the combined re-entry maps cover the recorded 07-09 -> 07-27 upstream segment plus the reviewed 07-28 -> 08-10 segment; pre-07-09 material and the 07-12 cross-scale sibling remain outside current coverage unless separately audited.
 ---
 
 ## 21. Route: Core 24 — Floor Replacement / Dynamic Normativity / Non-Reductive Verification
