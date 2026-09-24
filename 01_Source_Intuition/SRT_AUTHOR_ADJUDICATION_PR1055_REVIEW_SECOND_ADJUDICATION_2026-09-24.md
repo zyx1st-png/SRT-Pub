@@ -56,7 +56,7 @@ Bounded consequence (machine typing of the answer):
 
 ~~~text
 gating
-= a formed organization, as the actualization of the Selection-operator (Ĝ) role
+= a formed organization in which an Ĝ-type Selection role is realized / carried
 
 primitive Selection
 != gating of a pregiven flow / partition / criterion
@@ -64,7 +64,7 @@ primitive Selection
 
 Compatibility guard (fail-closed; it does not close theory):
 
-> "Selection operator" is read with the registered meaning of `Ĝ` in `_SRT_SYMBOL_TABLE.md`: a formal / formed / model-level role-carrier for a declared Selection realization. "Organization actualizes the operator" means that the organization is the concrete carrier in which that role becomes actual. It does **not** make `Ĝ` prior to the organization, the cause of the organization, or the cause of primitive Selection (`Core_Law/SRT_L0_Metaphysics.md` §选择不需要选择者; `Core_Law/SRT_Generative_Ontology_Spine.md` §Primitive Selection vs formal operator; `Core/SRT_Core_21_Minimal_Axioms.md`). An operator-prior reading would collide with those owners and would need its own adjudication.
+> "Selection operator" is read with the registered meaning of `Ĝ` in `_SRT_SYMBOL_TABLE.md`: a formal / formed / model-level role-carrier for a declared Selection realization. "Organization realizes / carries an Ĝ-type role" means that the role is a description of what the formed organization does; it is not a prior entity waiting to be actualized. It does **not** make `Ĝ` prior to the organization, the cause of the organization, or the cause of primitive Selection (`Core_Law/SRT_L0_Metaphysics.md` §选择不需要选择者; `Core_Law/SRT_Generative_Ontology_Spine.md` §Primitive Selection vs formal operator; `Core/SRT_Core_21_Minimal_Axioms.md`). An operator-prior reading would collide with those owners and would need its own adjudication.
 
 This choice matches the physical reading of the Maxwell-demon analogy. The demon's gate is a formed device whose operation is coupled to measurement. A passive gate with no information coupling produces no separation at equilibrium.
 
@@ -94,7 +94,7 @@ Still OPEN for the canonical-owner stage (#1055 plan PV-K8): whether the generat
 
 ### D-3 — sequencing (answer 3)
 
-Author order:
+Author semantic / drafting order:
 
 ~~~text
 1. Spine optimization
@@ -104,6 +104,8 @@ Author order:
 = important material for step 2
 ~~~
 
+This fixes the **semantic work order**, not permission to merge an internally contradictory intermediate state to `main`.
+
 Consequences:
 
 - This **supersedes** the machine recommendation "local-owner-first" in `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md` §14.0. That section explicitly records itself as an implementation recommendation, not an author quote.
@@ -112,7 +114,7 @@ Consequences:
 
 Carried guard (from the Spine audit §14; retained as a safety condition, not as an ordering):
 
-> main must not be left with the Spine and the local owners (L0 Metaphysics, Symbol Table, One Formation, Core 21) in contradictory states. A Spine-first landing either stays compatible with the current local owners or explicitly marks the pending owner synchronization.
+> main must not be left with the Spine and the local owners (L0 Metaphysics, Symbol Table, One Formation, Core 21) in contradictory states. If the Spine-first semantic rewrite cannot coexist with the current local owners, use a stacked / synchronized package and merge only a mutually consistent state. A note that synchronization is pending is not sufficient to license a contradictory `main`.
 
 What this answer fixes is the **order**. The start of execution of either stage, including unpausing owner cleanup, is a separate explicit author instruction. The same-day rapid-dialogue guard of `Governance/SRT_EDIT_PROTOCOL.md` continues to apply.
 
