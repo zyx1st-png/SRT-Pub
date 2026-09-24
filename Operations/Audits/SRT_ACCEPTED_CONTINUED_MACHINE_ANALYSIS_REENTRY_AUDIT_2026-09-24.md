@@ -38,7 +38,7 @@ ChoiceMap segment:
 plus selected accepted re-entry / ontology / normativity chains through 2026-09-19.
 ~~~
 
-The 2026-07-28 card itself has upstream parents (including 2026-07-19 / 2026-07-27), and the later 07-31 concern card also has older concern lineage. This audit therefore calls 07-28 -> 08-10 a **reviewed segment**, not the root of the full lineage. Upstream parent material remains outside this pass.
+The 2026-07-28 card itself has upstream parents (including 2026-07-19 / 2026-07-27), and the later 07-31 concern card also has older concern lineage. This audit therefore calls 07-28 -> 08-10 a **reviewed segment**, not the root of the full lineage. The recorded 2026-07-09 -> 2026-07-27 upstream ChoiceMap / Concern / Ghost segment is now handled separately by `Operations/Audits/SRT_ACCEPTED_CONTINUED_PRE0728_REENTRY_AUDIT_2026-09-24.md`; material before 2026-07-09 remains outside the combined re-entry passes.
 
 For the active GRG lineage from 2026-09-20 through 2026-09-23, the controlling historical continuity audit is:
 
@@ -46,7 +46,7 @@ For the active GRG lineage from 2026-09-20 through 2026-09-23, the controlling h
 
 This audit does not re-adjudicate that period unless needed to connect an earlier chain to a later owner.
 
-Earlier material before 2026-07-28 remains **not yet audited by this pass**.
+Earlier material is split: the 2026-07-09 -> 2026-07-27 upstream segment is delegated to `SRT_ACCEPTED_CONTINUED_PRE0728_REENTRY_AUDIT_2026-09-24.md`; pre-2026-07-09 material remains **not yet audited**.
 
 It does not:
 
@@ -458,8 +458,11 @@ ChoiceMap reviewed segment 07-28 -> 08-10:
 09-20 -> 09-23 GRG:
   delegated to the existing 09-23 continuity audit.
 
-pre-07-28:
-  NOT AUDITED by this pass.
+07-09 -> 07-27 upstream ChoiceMap / Concern / Ghost segment:
+  DELEGATED TO companion pre-07-28 re-entry audit.
+
+pre-07-09:
+  NOT AUDITED by the combined current passes.
 
 other lower-priority source-intuition chains:
   NOT EXHAUSTIVELY AUDITED.
