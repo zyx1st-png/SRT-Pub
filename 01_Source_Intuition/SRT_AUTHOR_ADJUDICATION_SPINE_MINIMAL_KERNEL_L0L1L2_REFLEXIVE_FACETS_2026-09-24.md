@@ -22,6 +22,10 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md
   - Core_Law/SRT_One_Formation.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OPEN_REGISTER_OWNERSHIP_2026-09-13.md
+  - Core_Law/SRT_L0_Metaphysics.md
+  - _SRT_SYMBOL_TABLE.md
+  - Glossary/SRT_Live_Term_Router.md
 tags: [AuthorAdjudication, Spine, MinimalKernel, L0, L1, L2, OneFormation, Verticality, Epistemology, Normativity, GRG]
 ---
 
@@ -30,6 +34,25 @@ tags: [AuthorAdjudication, Spine, MinimalKernel, L0, L1, L2, OneFormation, Verti
 > Nature: explicit author adjudication arising from the 2026-09-24 Spine / GRG reconstruction discussion.
 > Scope: noncanonical theory-direction record. It does not edit current canonical owners by itself.
 > Main correction: preserve the L0/L1/L2 three-layer architecture, but sharpen its definitions so that the layers are not read as three prior substances, containers, or a mandatory serial pipeline.
+
+## 0. Preserved author quotations (A0-Q)
+
+The following direct author statements are preserved as provenance for this adjudication:
+
+> 「我记得昨天有段对话内容，对于GRg的最简骨架总结变成了L0到L1到L2的一个过程。我觉得也可以把骨架按这个方向去调整，因为SRT最开始就是从这条线开始进行延伸的。」
+
+> 「规范性相关的内容我觉得也应该加入，道德和本体和认知应该是同一个东西的不同分面。」
+
+> 「认同你的其他分析，但是 L0的错误读法，昨天在回归 L0L1L2 三层架构时 我记得你有一个更好的描述，只是我把他们和L0L1L2 的三层架构对应起来了，我觉得可以沿用三层架构，但是在定义上更加精确一点是否更好」
+
+> 「继续开 PR 完成调整，记录作者裁决」
+
+These quotations establish the author-level direction to:
+- retain and refine the L0/L1/L2 architecture rather than discard it;
+- integrate normative / epistemic / ontological analysis as related facets;
+- record the resulting direction as an author adjudication.
+
+They do **not** by themselves settle every English term chosen by the machine-side reconstruction below.
 
 ## 1. Author decision A — two-role Spine architecture
 
@@ -123,17 +146,23 @@ AUTHOR-ACCEPTED direction:
 
 > L1 is the actuality aspect of the same Selection-totality: finite-position-indexed, non-neutral differentiation as determinate manifestation.
 
-The author accepts the 2026-09-23 clarification:
+The author accepts the 2026-09-23 clarification **subject to its original S0-side limitation**.
+
+The preserved source wording is:
 
 ~~~text
-Selection
-= the differentiation reading of the transition
-
 actualization
-= the actuality-status reading of the same transition
+= the actuality-status face being audited on the S0 side
+
+S0
+= finite-position-indexed actualising Selection / determinate manifestation
+
+O0
+= remains co-primitive and is not reduced to
+  a prior option menu, field, container or probability distribution
 ~~~
 
-Therefore L1 is not simply a later object produced by a temporally prior L0 object.
+Therefore L1 is not simply a later object produced by a temporally prior L0 object, and the S0-facing occurrence analysis must not absorb or redefine O0.
 
 L0-facing and L1-facing descriptions are non-identical analytic / generative burdens of the same Selection-totality.
 
@@ -163,6 +192,42 @@ The key question is not merely:
 but:
 
 > does this past actuality still change what later Selection can do, express, ignore, support, constrain or generate?
+
+### 2.3a Pending author terminology fork — N1
+
+Independent review identified a lexical collision in the machine-side English wording of §§2.1 and 2.3.
+
+The current wording uses ordinary-looking terms that now also have routed GRG technical meanings:
+
+~~~text
+reach
+equivalence
+support
+proxy
+~~~
+
+The Live Term Router marks the relevant GRG families as research-level, with `support` and `proxy` explicitly overloaded.
+
+This adjudication therefore records the **conceptual author direction** but leaves the final English lexical choice pending one further author clarification:
+
+~~~text
+N1-A
+retain these words as ordinary-language prose
++ add a hard non-GRG-reading guard
+
+N1-B
+use the GRG technical meanings
+-> would require a separate GRG-to-canonical adjudication
+
+N1-C
+rewrite the L0/L2 definitions in neutral vocabulary
+that carries the same burden without routed GRG terms
+~~~
+
+Until that clarification is made:
+
+- no future canonical editor may infer GRG `reach / generative equivalence / support / proxy` from the current author record;
+- the current wording must not be copied verbatim into canonical Spine as if those GRG meanings had been admitted.
 
 ### 2.4 The three-layer relation
 
