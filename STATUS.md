@@ -50,11 +50,11 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = independent review + root-return / fusion-lane disposition for the completed FRR × evolution cross-objectification role-separation test
-CURRENT NEXT RESULT = SOURCE_OWNED_ROLE_SEPARATION_NO_EXTRA_PAYOFF; Q1 PASS / Q2 SOURCE_OWNED BOTH / Q3 FAIL; vertical-gain method contraction POSITIVE; scientific distinctiveness NOT ESTABLISHED
-CURRENT NEXT RESULT OWNER = Operations/Audits/SRT_GRG_FRR_EVOLUTION_VERTICAL_ROLE_SEPARATION_RESULT_2026-09-24.md
-PRIOR LATENT-REACH NEXT = COMPLETE; LR-0…LR-5 retained as M-level subtool; evolution-domain scientific gain NOT ESTABLISHED; reach-as-master-architecture REJECT / UNDER-SPECIFIED
-THIRD FUSION DOMAIN = HOLD pending independent review + root-return / fusion-lane disposition
+CURRENT NEXT = root-return / fusion-lane disposition after the author-approved bounded cross-objectification test route
+CURRENT NEXT ROUTING OWNER = 01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_CROSS_OBJECTIFICATION_ROOT_RETURN_2026-09-24.md
+CURRENT NEXT HANDOFF = Operations/Handoffs/SRT_GRG_ROOT_RETURN_FUSION_LANE_CURRENT_NEXT_HANDOFF_2026-09-24.md
+PRIOR LATENT-REACH NEXT = COMPLETE ENOUGH FOR ROUTING; reach retained as bounded operational subtool, not the master vertical architecture
+THIRD FUSION DOMAIN = HOLD pending explicit root-return author disposition; no automatic acquisition
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
@@ -109,27 +109,23 @@ v0.3
 ```
 
 
-Current routed continuation:
+Current merged continuity / routing surfaces:
 
-- `01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_POST_LATENT_REACH_TO_CROSS_OBJECTIFICATION_2026-09-24.md`
-- `Operations/Handoffs/SRT_GRG_CROSS_OBJECTIFICATION_ROLE_SEPARATION_CURRENT_NEXT_HANDOFF_2026-09-24.md`
-- `Operations/GRG/Fusion_Cases/SRT_GRG_FRR_EVOLUTION_VERTICAL_ROLE_SEPARATION_PREREG_2026-09-24.md`
-- `Operations/Audits/SRT_GRG_FRR_EVOLUTION_VERTICAL_ROLE_SEPARATION_RESULT_2026-09-24.md`
-- prior continuity provenance remains in `Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md` and `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_CROSS_OBJECTIFICATION_ROOT_RETURN_2026-09-24.md`
+- `Operations/Handoffs/SRT_GRG_ROOT_RETURN_FUSION_LANE_CURRENT_NEXT_HANDOFF_2026-09-24.md`
+- `Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md`
+- `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`
+- `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`
 
-Execution / closeout guard:
+Execution guard:
 
 ```text
 one CURRENT NEXT only;
-FRR × evolution preregistered test = EXECUTED;
-primary verdict = SOURCE_OWNED_ROLE_SEPARATION_NO_EXTRA_PAYOFF;
-Q3 target-source payoff = FAIL;
-P4 latent-reach shared burden = INSUFFICIENT EVIDENCE;
-P5 cross-case recut threshold = INSUFFICIENT EVIDENCE;
-FRR × evolution != third fusion domain;
-FRR × evolution != §8.1 case 2;
-next = independent review + root return / fusion-lane disposition only;
-no third fusion domain / BCTB T2 / v0.4 / canonical expansion from this result automatically.
+CURRENT NEXT = root-return / fusion-lane disposition;
+the larger bounded evolution / FRR research package remains review evidence, not mainline authority;
+no third fusion domain until an explicit root-return author decision;
+if one future test is authorized, target / source boundary / strongest baseline / GRG probes / failure conditions / §8.1 status must be frozen before execution;
+no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
 
 ### 0.4a Provenance / vocabulary owner
