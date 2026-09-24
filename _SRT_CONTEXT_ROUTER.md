@@ -752,7 +752,7 @@ Do not reconstruct a second competing classification for that period.
 - Do **not** claim the toy wedge validates SRT ontology or morality, or infer equal moral status for all objects.
 - Do **not** use this route to derive or override AM-A's P0-04 primitive boundary, nor to solve closure-boundary or externalization/X.
 - Keep three layers separate: ontology (objecthood as maintained consequence-bearing reselectable closure), dynamics (reward/performance can diverge from future reselectability), morality/governance (moral pressure opens when one position's selection compresses another's reselectability, but X/externalization remains under-defined).
-- For the 07-28 -> 08-10 ChoiceMap lineage, concern–path-space wording, or support-vs-replacement provenance, consult §20 conditionally.
+- For the reviewed 07-28 -> 08-10 ChoiceMap segment, concern–path-space wording, or support-vs-replacement provenance, consult §20 conditionally.
 
 ---
 
