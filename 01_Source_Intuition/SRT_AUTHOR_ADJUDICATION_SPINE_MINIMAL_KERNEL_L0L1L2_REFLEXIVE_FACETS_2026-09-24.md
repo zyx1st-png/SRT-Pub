@@ -114,7 +114,7 @@ The three layers should instead be defined more precisely as distinct generative
 
 ### 2.1 L0 — Generative Openness
 
-AUTHOR-ACCEPTED direction:
+**Author-accepted conceptual direction; English definition below is machine formulation for later canonical review, not an A0-Q quotation:**
 
 > L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization and further differentiation conditions that is not exhausted by the determinate actuality of that Selection.
 
@@ -146,9 +146,26 @@ non-maximal-indifference
 != morality
 ~~~
 
+#### Current canonical guards that any landing must preserve
+
+The current L0 owner also requires:
+
+~~~text
+L0 / O0-facing openness
+= not exhausted by determinate actuality
++ not fully preclosed by a pregiven complete result structure
+
+L0
+!= pregiven complete option inventory / warehouse
+~~~
+
+The phrase **Generative Openness** must preserve both:
+- non-exhaustion by determinate actuality; and
+- non-preclosure by a pregiven complete result structure.
+
 ### 2.2 L1 — Actualized Differentiation
 
-AUTHOR-ACCEPTED direction:
+**Author-accepted conceptual direction; English definition below is machine formulation for later canonical review, not an A0-Q quotation:**
 
 > L1 is the actuality aspect of the same Selection-totality: finite-position-indexed, non-neutral differentiation as determinate manifestation.
 
@@ -172,9 +189,26 @@ Therefore L1 is not simply a later object produced by a temporally prior L0 obje
 
 L0-facing and L1-facing descriptions are non-identical analytic / generative burdens of the same Selection-totality.
 
+Current canonical L1 / Selection constraints that any landing must preserve:
+
+~~~text
+actual differentiation
++ manifestation / foregrounding
++ relative backgrounding / suppression
+= structural readings of the same Selection event
+
+manifest event actuality
+-/> anchoring persistence
+
+anchoring persistence
+-/> Stable ISP identity
+~~~
+
+Thus **Actualized Differentiation** must not erase the manifestation / relative-backgrounding polarity or the EX-A occurrence / persistence / Stable-ISP boundary.
+
 ### 2.3 L2 — Retained Generative Efficacy
 
-AUTHOR-ACCEPTED direction:
+**Author-accepted conceptual direction; English definition below is machine formulation for later canonical review, not an A0-Q quotation:**
 
 > L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
 
@@ -189,6 +223,10 @@ terminal Selection
 
 L2
 requires some independently established retention / writeback / later efficacy
+
+event occurrence
+!= persistence
+!= Stable ISP
 ~~~
 
 The key question is not merely:
@@ -311,6 +349,20 @@ as a completed canonical theorem.
 Exact crosswalk remains an owner-level task.
 
 ## 4. Author decision C — L2 / sedimentation is not One formation
+
+Current canonical non-backflow guards also remain mandatory:
+
+~~~text
+primitive Selection != Ghost Operator
+
+occurrence
+!= persistence
+!= Stable ISP
+
+formed / formal operator carrier
+-/> primitive chooser / primitive Selection source
+~~~
+
 
 The author accepts the distinction between historical retention and vertical formation.
 
@@ -621,14 +673,40 @@ GRG should be the main research architecture for:
 - cross-position / social / institutional applications;
 - empirical pressure-testing of how formed generative relations transform.
 
-Thus the earlier author statement that ontology, cognition and normativity are different facets of one formed generative relation remains accepted at the level of **continuity of reality**, while the research / definition ownership is asymmetric:
+Thus the earlier author statement that ontology, cognition and normativity are different facets of one formed generative relation remains accepted at the level of **continuity of reality**, while the **research emphasis** is asymmetric:
 
 ~~~text
 SRT
-= ontological source / boundary conditions
+= philosophical / ontological source conditions and current canonical gates
 
 GRG
-= main grammar for epistemic / normative / applied development
+= main general grammar for epistemic / normative / applied development
+  under those gates
+~~~
+
+This adjudication does **not** migrate existing SRT-side philosophy bridge owners.
+
+Current bridge / routing surfaces such as:
+- Philosophy/SRT_Ethics.md;
+- Philosophy/SRT_Ethics_Agency.md;
+- Philosophy/SRT_Political_Philosophy.md;
+- Philosophy/SRT_Social_Economics.md
+
+remain where they are unless separately adjudicated.
+
+In particular:
+
+~~~text
+O1 / O2-C / O2-A / O2-M
+current typing / gate / canonical routing
+= remains SRT-controlled at current strength
+
+GRG
+= may develop reusable epistemic / normative grammar
+  beneath / across those gates
+
+GRG
+-/> shortcut around O1/O2 gates
 ~~~
 
 ### 9.3 Consequence for Spine Part II
@@ -720,27 +798,43 @@ L1 — Actualized Differentiation
 L2 — Retained Generative Efficacy
 ~~~
 
-## 12. Canonical landing ownership — N2 resolved
+## 12. Canonical landing ownership — N2 implementation recommendation
 
-The author-level role split also resolves the landing question.
+The author's A0-Q statements establish the SRT / GRG role emphasis, but they do **not** contain a direct A0-Q choice between the two repository landing strategies previously labeled N2-A and N2-B.
 
-Because SRT is the philosophical / ontological owner, L0/L1/L2 canonical labels and definitions should be landed **local-owner-first**.
-
-N2 is resolved as:
+Therefore provenance is corrected:
 
 ~~~text
-N2 = A
+local-owner-first landing
+= machine execution recommendation
+  consistent with current definition authority
 
-1. land / synchronize the three-layer labels and definitions
-   in the appropriate SRT local canonical owners / symbol registry;
-
-2. only then rewrite the Generative Ontology Spine
-   as the minimal cross-owner kernel + thin post-One routing surface.
+!= direct author quotation
+!= independently author-adjudicated N2 choice
 ~~~
 
-Therefore Spine should not become a second independent local definition authority for L0/L1/L2.
+Recommended implementation:
 
-A future canonical package may still include pointer-maintenance edits across multiple files, but semantic definition authority remains local-owner-first.
+~~~text
+semantic ownership:
+  local-owner-first
+
+integration package:
+  no half-landed main state
+~~~
+
+That means a future C-class package should order its semantic work as:
+
+1. local SRT definition owners / symbol registry first;
+2. Spine cross-owner routing second;
+3. Registry / pointer / STATUS synchronization third;
+
+but the complete package should be reviewed together and only merged when the whole canonical state is internally consistent.
+
+The recommendation must not be executed while STATUS still says further owner cleanup is paused by default.
+
+A later explicit author execution authorization is required to open that bounded C-class landing.
+
 
 ## 13. Explicit non-closures
 
@@ -844,8 +938,9 @@ GRG primary role:
 N1 terminology fork:
   RESOLVED = neutral SRT vocabulary; no GRG technical terms in L0/L2 definitions
 
-N2 landing ownership:
-  RESOLVED = local-owner-first, then Spine routing
+N2 landing implementation:
+  MACHINE RECOMMENDATION = local-owner-first semantic order inside a fully synchronized C-class package
+  AUTHOR EXECUTION AUTHORIZATION = still required
 
 canonical Spine edit:
   NOT AUTHORIZED BY THIS SOURCE ALONE
