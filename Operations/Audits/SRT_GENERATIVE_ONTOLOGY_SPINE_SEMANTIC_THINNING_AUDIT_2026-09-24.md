@@ -9,6 +9,7 @@ claim_mode: audit
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
+  - SRT-AUTHOR-ADJUDICATION-SPINE-MINIMAL-KERNEL-L0L1L2-REFLEXIVE-FACETS-20260924
   - SRT-GENERATIVE-ONTOLOGY-SPINE
   - SRT-CANONICAL-REGISTRY
   - SRT-CANONICAL-FREEZE
@@ -18,114 +19,217 @@ dependency:
   - SRT-SELECTION-TOTALITY-SPINE-RETYPING-MATRIX-20260914
   - SRT-GRG-FOUNDATIONAL-PROTO-GRAMMAR-V0-3-20260921
   - SRT-AUTHOR-ADJUDICATION-GRG-DOWNSTREAM-GENERATIVE-STACK-20260923
-  - SRT-AUTHOR-ADJUDICATION-GENERATIVITY-POSITION-NORMATIVITY-20260914
-  - SRT-AUTHOR-ADJUDICATION-CROSS-POSITION-NON-USURPATION-CONSTITUTIVE-OUGHT-20260914
-tags: [Spine, MinimalOntology, SemanticThinning, GRG, CanonicalRouting, Audit]
+tags: [Spine, MinimalKernel, L0, L1, L2, OneFormation, SemanticThinning, GRG, CanonicalRouting, Audit]
 ---
 
-# Generative Ontology Spine semantic-thinning / minimal-kernel audit — 2026-09-24
+# Generative Ontology Spine minimal-kernel restoration audit — 2026-09-24
 
-## 0. Revision of the audit question
+## 0. Authority and scope
 
-The first version of this audit was too conservative. It assumed the current fourteen-section Spine should mostly remain and asked only what to compress.
+This audit is controlled by:
 
-The earlier author checkpoint already made a stronger decision:
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md
 
-> the universal minimal ontology skeleton ends at One.
+The author has now explicitly adjudicated the architectural direction.
 
-The controlling question is therefore:
+This audit therefore no longer proposes an unconstrained thinning hypothesis.
 
-> What is the thinnest current canonical ontology kernel that preserves the later Selection-totality correction, and which current Spine material should be routed as post-One relational architecture instead of remaining inside the universal skeleton?
+It converts the author decision into a bounded future canonical-edit contract.
 
-This remains read-only planning. No canonical edit is authorized.
-
-## 1. Controlling 2026-09-13 author result
-
-The whole-skeleton author checkpoint gives the deletion-audited minimal candidate:
+Current baseline:
 
 ~~~text
-Oriented Openness
-      ⊣
-finite-position-indexed Selection
-      --[regenerative recurrence]-->
-One
+main at audit start = f67201a3920eb0a71204666441165568183c3841
+target = Core_Law/SRT_Generative_Ontology_Spine.md
+target status = canonical / Freeze-A / v4
+target length at audit start = 560 lines
 ~~~
 
-It explicitly removes from the universal minimal skeleton:
+This audit does not edit Spine.
+
+Any body edit remains C-class and requires separate author execution authorization plus independent semantic review.
+
+## 1. Controlling author architecture
+
+### 1.1 Two-role Spine
+
+The author accepts:
 
 ~~~text
-Bearer
-Position
-Concern
-d
-Agency
-Cognition
-Subject-position
-Phenomenality
-higher-order One
+Part I
+= universal formation kernel
+
+Part II
+= typed post-One structural map
 ~~~
 
-It also says One is the terminal formed result of the universal generative spine.
-
-The final 2026-09-13 author adjudication fixes:
+Hard reconciliation:
 
 ~~~text
-finite positionality
-= constraint on every Selection
-!= post-One Position
+2026-09-13:
+universal formation stops at One
 
-recurrence
-= recurrence of conditioning role
-!= prior same-token / same-lineage identity
+2026-09-14:
+Selection-mode / nonflat-monism structure remains valid
 
-Bearer => Concern
-= NOT ESTABLISHED
-
-Concern => Bearer
-= NOT ESTABLISHED
-
-Agency
-= downstream capacity candidate
+current reconciliation:
+Part I stops at One;
+Part II preserves later typed downstream structure.
 ~~~
 
-### Stable ISP
-
-Stable ISP was not part of the accepted minimal candidate.
-
-The same checkpoint explicitly preserves:
+This avoids both errors:
 
 ~~~text
-One != Stable ISP
+rollback error:
+delete later Selection-mode structure because One ends universal formation
+
+thick-spine error:
+read every downstream typed mode as another compulsory universal formation stage
 ~~~
 
-and P1-T06 defines Stable ISP as stronger recurrent standing downstream of thinner One formation.
+### 1.2 Universal kernel stop rule
 
-Therefore Stable ISP belongs with the post-One downstream architecture, not the universal minimal skeleton.
-
-## 2. 2026-09-14 Selection-totality correction
-
-The later Selection-totality work changes how the minimal chain must be read.
-
-Do not read:
+One is:
 
 ~~~text
-Oriented Openness as prior ontic item
--> Selection as second ontic item
--> One as third ontic item
+terminal formed result of the universal formation kernel
++
+hinge into post-One structural / relational research
 ~~~
 
-Current canonical direction instead treats one Selection reality as carrying co-primitive analytic burdens:
+Therefore:
 
 ~~~text
-O0
-= open / non-preclosed / non-maximally-indifferent aspect
-
-S0
-= finite-position-indexed actualising differentiation
-  / determinate manifestation aspect
+formation stops at One
+!=
+theory stops at One
 ~~~
 
-Hard guard:
+## 2. Precise L0/L1/L2 architecture
+
+The author explicitly retains the three-layer architecture.
+
+The correction concerns typing and arrow semantics, not removal of the layers.
+
+### 2.1 L0 — Generative Openness
+
+Author-controlled direction:
+
+> L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization, reach, equivalence and Selection burden that is not exhausted by the determinate actuality of that Selection.
+
+Hard guards:
+
+~~~text
+L0
+!= possibility warehouse
+!= complete option set
+!= prior state-space substance
+!= ontic container before Selection
+!= continuation-favouring value
+!= morality
+~~~
+
+### 2.2 L1 — Actualized Differentiation
+
+Author-controlled direction:
+
+> L1 is the actuality aspect of the same Selection-totality: finite-position-indexed, non-neutral differentiation as determinate manifestation.
+
+Key cross-reading:
+
+~~~text
+Selection
+= differentiation reading
+
+actualization
+= actuality-status reading
+
+same transition
+!= two primitive mechanisms
+~~~
+
+Therefore:
+
+~~~text
+L0
+!= earlier ontic object
+
+L1
+!= later object produced by a temporally prior L0 object
+~~~
+
+### 2.3 L2 — Retained Generative Efficacy
+
+Author-controlled direction:
+
+> L2 is actuality that remains generatively effective for later Selection through retained consequence, organization, constraint, support, proxy, boundary, memory, topology, rule, sediment or other historical efficacy.
+
+Hard guards:
+
+~~~text
+Selection occurrence
+-/> L2 automatically
+
+terminal Selection
+= genuine
+
+L2
+requires independently established retention / writeback / later efficacy
+~~~
+
+### 2.4 Correct process reading
+
+Public mnemonic may remain:
+
+~~~text
+L0 -> L1 -> L2 -> later L0
+~~~
+
+but a canonical rewrite must type every arrow.
+
+Preferred precise form:
+
+~~~text
+within Selection_n:
+
+L0_n
+= generative-openness aspect
+
+L1_n
+= actualized-differentiation aspect
+
+L1_n
+--[retention / writeback iff independently established]-->
+L2_n
+
+L2_n
+--[conditioning / reweighting / reconfiguration]-->
+later Selection-totality
+with a changed L0-facing burden landscape
+~~~
+
+Negative rules:
+
+~~~text
+L0 -> L1
+!= prior substance causes later substance
+
+L1 -> L2
+!= automatic
+
+L2 -> later L0
+!= identity
+
+L0 / L1 / L2
+!= three ontic substances
+
+L0 / L1 / L2
+!= mandatory three-stage pipeline
+~~~
+
+## 3. Relation to O0 / S0
+
+2026-09-14 Selection-totality remains controlling.
 
 ~~~text
 O0 before S0: NO
@@ -134,873 +238,520 @@ O0 causes S0: NO
 S0 produces O0: NO
 ~~~
 
-Where Selection-generated organization becomes load-bearing in later Selection and the conditioning role is recurrently regenerated, One formation becomes possible.
-
-## 3. Current best minimal-kernel candidate — two synchronized views
-
-The repository now has enough evidence to distinguish two compatible readings of the same minimal architecture.
-
-### 3.1 Ontological-burden view
+Current author-approved audit direction:
 
 ~~~text
-Selection reality
-├─ O0: open / non-preclosed / non-maximally-indifferent aspect
-└─ S0: finite-position-indexed actualising differentiation
-       / determinate manifestation
+O0
+~ L0-facing minimum ontological burden
 
-Selection occurrence
-!= retained historical efficacy
+S0
+~ L1-facing actualising / differentiating burden
 
-where prior Selection-generated organization
-materially enters later Selection conditions
-and later Selection regenerates organization
-capable of carrying the relevant conditioning role again:
-
--> recurrent self-conditioning / regenerative recurrence
--> One
+L2
+= downstream retained-efficacy burden where established
 ~~~
 
-Ultra-compact:
+But exact identity remains unclosed:
 
 ~~~text
-Selection reality [O0 | S0]
-        --[recurrent self-conditioning where established]-->
-One
+O0 = L0
+S0 = L1
+= NOT YET A CANONICAL THEOREM
 ~~~
 
-### 3.2 L0 -> L1 -> L2 process view
+A future Spine edit must preserve this non-closure.
 
-The 2026-09-23 dialogue recovered a simpler process grammar that maps naturally back to the original SRT L0/L1/L2 architecture:
+## 4. One formation: sedimentation is not verticality
+
+### 4.1 Historical writeback / SED-B
+
+Allowed route:
 
 ~~~text
-L0_t
-= open / not-yet-closed generative relation or condition space
-  for the declared analysis
-
-      --[Selection / actualising differentiation]-->
-
-L1_t
-= determinate actuality / manifest difference
-
-      --[retention / writeback, only where independently established]-->
-
-L2_t
-= retained historical efficacy / sedimented constraint
-  that can materially condition later generation
-
-      --[conditioning, not identity]-->
-
-L0_(t+1)
+L1
+-> retention / writeback
+-> L2
+-> later conditioning
 ~~~
 
-This is a **process reading**, not a three-substance ontology and not a mandatory three-stage pipeline.
+This pays a historical-efficacy burden.
+
+It does not by itself pay One formation.
+
+### 4.2 Vertical generative reconstitution
+
+The 2026-09-13 author burden remains:
+
+~~~text
+Selection-generated organization
+enters later Selection conditions;
+
+later Selection generates organization
+capable of again carrying the relevant conditioning role;
+
+the conditioning role can recur through later Selection.
+~~~
+
+Therefore:
+
+~~~text
+historical sedimentation
+!=
+vertical generative reconstitution
+~~~
+
+History can condition vertical formation.
+
+History is not by itself the source of verticality.
+
+### 4.3 One
+
+Minimum protected burden:
+
+~~~text
+Selection-mediated recurrent conditioning
++
+regeneration / reconstitution of organization
+capable of again carrying the relevant conditioning role
++
+relative continuation separability / formed locality
+where required by the One owner
+-> One formation candidate
+~~~
 
 Hard guards:
 
 ~~~text
-L0 / L1 / L2
-= analytic / model-facing aspects
-!= three ontic substances
-
-Selection occurrence
-!= L2 automatically
-
-terminal Selection / L1 actuality
-remains genuine even when no durable L2 is established
-
-L2_t conditions later generative conditions
-!= L2_t is literally identical to L0_(t+1)
+L2 != One
+retention != One
+sedimentation != One
+generative re-entry != sufficient One criterion
 ~~~
 
-### 3.3 One formation inside the process cycle
+GRG generative re-entry may remain an operational / empirical crosswalk only.
 
-One should not be identified with L2 itself.
+Core_Law/SRT_One_Formation.md remains the canonical owner.
 
-A stronger formation burden appears when retained organization from prior actuality repeatedly re-enters later generation:
+## 5. Part I — target universal kernel
+
+A future C-class rewrite should aim for a minimal Part I with approximately this semantic structure:
 
 ~~~text
-L1_t actuality
--> retained organization / L2_t where established
--> materially conditions later Selection
--> renewed actual organization
--> again carries the relevant conditioning role
--> recurrent non-equivalent reconstitution
--> relative continuation separability
--> One
+0. authority / anti-tautology / anti-jump
+
+1. Selection-totality minimum
+   O0 / S0 co-primitive analytic burdens
+
+2. L0 / L1 / L2 precise generative architecture
+
+3. actual occurrence vs retained historical efficacy
+
+4. vertical generative reconstitution / recurrence
+
+5. One formation
+
+6. universal-kernel stop rule
+
+7. kernel OPEN guards
 ~~~
 
-This aligns the canonical One owner with the GRG dialogue's **generative re-entry** heuristic without allowing the heuristic to replace the canonical definition.
+This is a semantic contract, not a required heading list.
 
-GRG-side heuristic:
+## 6. Part II — target typed post-One map
 
-~~~text
-compressed / retained organization H
-+ later relation X
--> H re-enters as a load-bearing unit
--> later Selection burden changes
-~~~
+Part II should be compact and explicitly non-ladder.
 
-Canonical guard:
+Allowed routes include:
 
 ~~~text
-generative re-entry heuristic
-!= sufficient canonical One criterion by itself
-
-canonical One
-still requires owner-compatible
-Selection-mediated recurrent conditioning
-+ relative separability / formed process-unity
-~~~
-
-### 3.4 Why the dual view is preferable
-
-The ontological-burden view prevents L0/L1/L2 from becoming substances or a false chronological ladder.
-
-The process view preserves the original SRT intuition:
-
-~~~text
-open generative relation
--> actuality
--> retained efficacy
--> changed future generative conditions
-~~~
-
-Together they make the kernel both thinner and more generative:
-
-~~~text
-ontology burden view:
-Selection reality [O0 | S0] -> recurrent self-conditioning -> One
-
-process view:
-L0 -> L1 -> L2 -> new L0
-~~~
-
-The two views must remain synchronized, not compete as separate owners.
-
-Important typing:
-
-~~~text
-O0 | S0
-= analytic burdens / aspects
-!= two mechanisms
-
-L0 / L1 / L2
-= process / model-facing analytic views
-!= ontic substances
-
-recurrent self-conditioning
-= relation / formation burden
-!= second primitive operation
-
 One
-= first universal formed recurrent organization
-!= every L2 structure
-!= universal endpoint of later relational research
-~~~
 
-This remains a compression of already accepted/current burdens, not a new ontology theorem.
-
-## 4. Universal kernel vs post-One architecture
-
-### A. Universal minimal ontology kernel
-
-Only what is required to route:
-
-~~~text
-Selection-totality
-O0 / S0
-actual occurrence
-retained historical efficacy boundary
-regenerative recurrence / recurrent self-conditioning
-One formation
-~~~
-
-plus essential anti-jump and OPEN guards.
-
-### B. Post-One relational architecture
-
-After formed One or Ones exist in relational Many:
-
-~~~text
-Formed One(s) in relational Many
-
-├─ continuation / identity
-├─ formed Selection-position / relational Position
 ├─ Stable ISP
-├─ Bearer [P+E; positive admission OPEN]
-├─ Concern
-├─ d / D_eff / stake-active dimensionality
+├─ formed Selection-position / endogenous-perspective candidates
+├─ Bearer P+E
+├─ Concern / d
 ├─ Agency
 ├─ cognition
 ├─ subject-position
 ├─ phenomenality
-└─ higher-order One
+├─ higher-order One
+└─ stronger normativity
 ~~~
 
-This is not a universal ontology ladder and does not license automatic implications.
-
-## 4.5 One, endogenous perspective and ontology–epistemology continuity
-
-The 2026-09-23 GRG downstream dialogue adds a potentially important **post-One reflexive branch**.
-
-It must not be written as a universal One consequence.
-
-### 4.5.1 Formation sequence under review
-
-The dialogue distinguished:
+Header guard required:
 
 ~~~text
-aggregation
--> objectification / stable compression
--> load-bearing organization / proxy
--> generative re-entry
--> formed locus / One-compatible organization
+post-One typed structural map
+!=
+universal formation ladder
 ~~~
 
-and then proposed a stronger branch:
+No vertical layout may license automatic implication.
+
+## 7. Bearer
+
+Author decision:
 
 ~~~text
-formed locus / One
-+ internally maintained relevance / neutrality organization
--> endogenous perspective candidate
-
-endogenous perspective
-+ reusable proxies of absent / hidden / past / possible / future relations
--> epistemic organization
+Bearer outside universal formation kernel
+!=
+Bearer outside current canonical Spine authority
 ~~~
 
-Current canonical guard:
+Until separate ownership work lands, Part II must preserve:
 
 ~~~text
-One
-!= endogenous perspective automatically
-
-endogenous perspective
-!= Bearer automatically
-
-Bearer
-!= subject / consciousness automatically
+already admitted One / Selection-position
++ P prospective self-indexing
++ E same-One prospective exposure / non-outsourcing
+-> Bearer standing candidate
 ~~~
 
-Universal perspective sufficiency remains OPEN.
-
-### 4.5.2 Ontology and epistemology as one generative continuum
-
-The preserved research direction is:
-
-> epistemology is a reflexive development within ontology when a formed endogenous position constructs revisable relation-proxies that participate in later Selection.
-
-Process loop:
+Also preserve:
 
 ~~~text
-ontology / formed generative organization
--> endogenous perspective where independently established
--> relation-proxy / expectation
--> Selection / intervention
--> changed generative conditions
--> later actuality
--> proxy revision
+P alone != Bearer
+E alone != Bearer
+positive E = OPEN
+non-outsourcing != complete positive E admission
+Bearer -/> Concern / Agency / subject automatically
 ~~~
 
-Compactly:
+Do not create a new Bearer owner in the same thinning PR.
 
-~~~text
-ontology
--> epistemology
--> intervention
--> ontology
-~~~
+## 8. Ontology / cognition / normativity / intervention
 
-This is compatible with the L0/L1/L2 process view:
+The author now explicitly accepts these as non-identical facets of one formed generative relation once their own gates are paid.
 
-~~~text
-L2-formed organization
--> conditions later L0 / Selection
--> some formed organizations may maintain endogenous proxy structure
--> proxy-guided Selection produces later L1 actuality
--> consequence can revise L2 / future generative conditions
-~~~
-
-But this is a **candidate reflexive branch**, not part of the universal minimal kernel unless later author adjudication and canonical owner work explicitly strengthen it.
-
-### 4.5.3 Why it still matters for Spine design
-
-Even if it stays post-One, the kernel should leave a clean route for this development.
-
-The Spine should therefore avoid wording that implies:
-
-~~~text
-ontology ends at formed object
-or
-epistemology arrives from an external observer
-~~~
-
-A minimal kernel can stop universal formation at One while still making clear that later formed organization may become:
-
-~~~text
-self-conditioning
-perspective-generating
-proxy-forming
-epistemically revisable
-intervention-capable
-~~~
-
-where separately established.
-
-That gives a principled route from ontology to epistemology without bloating the universal skeleton.
-
-## 4.6 Ontology, epistemology, normativity and morality as facets of one formed generative relation
-
-The author's current direction is stronger than treating normativity as an unrelated downstream add-on.
-
-A formed generative relation can be analysed under at least three non-identical but internally connected facets:
+### 8.1 Facet map
 
 ~~~text
 ontological facet
-= what relations / capacities / actualities are formed and how they transform
+= what is formed / related / capable of generating
 
 epistemic / cognitive facet
-= how a formed position carries absent / hidden / past / possible relations
-  into current Selection through revisable proxies / expectations
+= how non-present / hidden / possible relations
+  gain current reach through proxy / expectation / model
 
 normative facet
 = how possible transformations are non-neutral relative to
-  the generative standing of an admitted position / relation / scale
+  admitted positions / relations / scales
+
+intervention facet
+= how Selection / action rewrites later generative conditions
 ~~~
 
-These are not separate substances.
+### 8.2 No fixed serial theorem
 
-They are different questions asked of the same formed generative organization.
-
-Hard guard:
+Do not encode:
 
 ~~~text
 ontology
-!= epistemology
-!= normativity
-
-but
-
-ontology / epistemology / normativity
-may be different facets of one generative relation
-once the relevant formed-position burdens are paid
+must cause epistemology
+then normativity
+then action
 ~~~
 
-### 4.6.1 Why normativity belongs in the same reflexive loop
+Epistemic and normative structure may be parallel / mutually constraining.
 
-The 2026-09-14 generativity-first adjudication already fixed that later evaluation should ask whether a relation:
+Constitutive normative inconsistency does not require prior explicit representation by an agent.
 
-- strengthens / preserves genuine Selection-capacity;
-- weakens, freezes, hollows out or externally captures it;
-- allows Selection-produced difference to re-enter later organization;
-- or substitutes for the source-role of an admitted position.
+### 8.3 Reflexive loop
 
-Therefore normativity is not an alien moral layer placed on top of completed ontology.
-
-A better architecture is:
+Allowed organizing loop:
 
 ~~~text
-formed ontology
--> endogenous perspective where established
--> proxy / expectation
--> indexed generative comparison
--> constitutive / evaluative constraint where relation-typed
--> intervention / Selection
--> changed ontology
--> actuality tests both proxy and normative expectation
--> revision
+formed generative reality
+<-> epistemic / cognitive organization
+<-> normative organization
+<-> intervention / Selection
+-> changed generative reality
+-> actuality / consequence
+-> possible epistemic and normative revision
 ~~~
 
-Compactly:
+This belongs to Part II / post-One research.
+
+It is not a primitive universal sequence.
+
+## 9. Normativity and morality
+
+Keep kernel guards explicit:
 
 ~~~text
-ontology
--> epistemology
--> normativity
--> intervention
--> ontology
+O0 != morality
+actual occurrence != correctness / legitimacy
+continuation != goodness
 ~~~
 
-This loop is a post-One reflexive architecture, not a universal primitive sequence.
-
-### 4.6.2 Epistemic and normative questions are complementary
-
-The epistemic question asks:
-
-> what is / was / may become the relevant relation?
-
-The normative question asks:
-
-> relative to an admitted position / relation / scale, which possible transformation strengthens, preserves, weakens, substitutes, hollows out or destroys the generative relation?
-
-The intervention question asks:
-
-> which transformation is enacted or which generative conditions are rewritten?
-
-Thus:
+Retain downstream typing:
 
 ~~~text
-epistemic proxy
-= present organization of absent / hidden / possible relations
-
-normative evaluation
-= present organization of the directional significance of possible transformations
-
-intervention
-= Selection that rewrites later generative conditions
-~~~
-
-All three can be corrected by later actuality.
-
-### 4.6.3 Moral normativity is a cross-position thickening, not primitive O0
-
-The current author route must remain intact:
-
-~~~text
-O0
-!= morality
-
-actual occurrence
-!= correctness / legitimacy
-
-continuation
-!= goodness
-~~~
-
-Moral structure appears only after stronger relational burdens are paid.
-
-Current dependency:
-
-~~~text
-O0
--/> O1 automatically without formed position / relation
-
 O1
 = position / relation indexed generative stronger / weaker
 
 O2-C
-= constitutive relation-integrity / non-usurpation norm
+= constitutive relation-integrity / non-usurpation
 
 O2-A
-= answerability under stronger agency / attribution gates
+= answerability / responsibility under stronger agency / attribution gates
 
 O2-M
 = all-things-considered moral / deontic adjudication
 = OPEN / HOLD
 ~~~
 
-So "morality, ontology and cognition are facets of one reality" must not be read as:
+Author direction:
 
 ~~~text
-primitive Selection already contains complete morality
+morality
+= stronger cross-position / relation-level thickening
+of normative structure where additional burdens are paid
 ~~~
 
-It means instead:
+Do not turn that direction into a complete moral theorem.
 
-> once reality forms positions and relations capable of reflexively carrying their own generative conditions, the same generative reality can be analysed ontically, epistemically and normatively; moral questions arise when those normative relations span multiple admitted positions, relations and scales.
+## 10. GRG role
 
-### 4.6.4 Cross-position morality as generative relation integrity
-
-The accepted non-usurpation direction gives a concrete bridge.
-
-If relation R counts Y as a load-bearing generative participant, but another position X recurrently generates Y's future relation-state in Y's place while R still labels Y a participant, the relation becomes structurally inconsistent.
-
-That yields a strong post-One route:
-
-~~~text
-multiple formed positions
--> shared / coupled generative relation
--> indexed generative comparison
--> participant-status consistency
--> non-usurpation / anti-substitution pressure
--> O2-C constitutive ought
--> stronger moral adjudication only with further gates
-~~~
-
-This makes morality relationally endogenous to generative organization without claiming complete moral closure.
-
-### 4.6.5 A four-facet reflexive cycle
-
-The downstream architecture can therefore be read as four coupled facets:
-
-~~~text
-ONTOLOGY
-what generative organization exists / forms / changes?
-
-EPISTEMOLOGY / COGNITION
-what absent / hidden / possible relation is represented or anticipated?
-
-NORMATIVITY / MORALITY
-which transformations are generatively stronger / weaker,
-relation-preserving / substitutive / usurping,
-for the admitted positions / relations / scales?
-
-INTERVENTION / ACTION
-which generative conditions are actually rewritten?
-~~~
-
-Coupled loop:
-
-~~~text
-ontology
--> epistemic proxy / expectation
--> normative comparison / constraint
--> intervention
--> changed ontology
--> actuality / consequence
--> epistemic + normative revision
-~~~
-
-This loop should be treated as a candidate organizing architecture for post-One research.
-
-It is **not** a new universal canonical theorem and does not close O2-M.
-
-### 4.6.6 Consequence for cognition and moral research
-
-This architecture suggests that cognition and morality should not live in disconnected repository branches.
-
-Cognition can be understood as formed generative organization carrying non-present differences into current Selection.
-
-Normativity can be understood as formed generative organization carrying the directional significance of possible transformations into current Selection.
-
-Morality is the stronger cross-position / relation-level case where those transformations affect multiple admitted generative participants and relations.
-
-This creates a common grammar:
-
-~~~text
-non-present relation gains current reach
-+
-possible consequence gains current directional significance
-+
-Selection / intervention changes future generative conditions
-+
-actuality returns revision pressure
-~~~
-
-That common grammar is suitable for GRG pressure-testing, while SRT keeps the owner-level ontology and normativity gates.
-
-## 5. Consequence for current Spine
-
-The current Spine contains downstream material as if it were one continuous cross-owner body. That is useful for routing but too easy to read as a thicker universal spine.
-
-### §7 Stable ISP
-
-~~~text
-REMOVE FROM UNIVERSAL KERNEL
-ROUTE TO POST-ONE MAP
-POINTER TO P1-T06
-~~~
-
-Kernel boundary keeps only:
-
-~~~text
-One != Stable ISP
-P1-T06 does not back-define One formation
-~~~
-
-### §8 Bearer
-
-Important distinction:
-
-~~~text
-Bearer P+E may still need a canonical owner
-!=
-Bearer belongs in universal minimal ontology skeleton
-~~~
-
-Therefore Bearer should leave the universal kernel while current P+E semantics remain protected.
-
-Future implementation options:
-
-- keep a clearly marked post-One canonical routing subsection after the kernel stop;
-- or later move P+E into a dedicated canonical owner;
-- never delete or weaken P+E merely because Bearer leaves the minimal skeleton.
-
-### §9 Agency
-
-~~~text
-REMOVE FROM UNIVERSAL KERNEL
-POST-ONE / downstream route
-~~~
-
-### §10 Normativity
-
-Keep near the kernel boundary:
-
-~~~text
-primitive Selection != ought
-actual occurrence != correctness / legitimacy
-O0 != morality
-~~~
-
-Route the stronger architecture downstream:
-
-~~~text
-formed ontology
--> epistemic organization / anticipation where established
--> O1 indexed generative comparison
--> O2-C constitutive relation-integrity where relation-typed
--> O2-A responsibility where agency-qualified
--> O2-M all-things-considered morality = OPEN
-~~~
-
-Normativity should therefore leave the universal formation kernel **without** being treated as a disconnected terminal branch. It belongs in the same post-One reflexive architecture as epistemology / cognition and intervention.
-
-## 6. Candidate future Spine architecture
-
-A later C-class edit could separate two roles explicitly.
-
-### Part I — Universal ontology kernel
-
-~~~text
-0. authority / anti-tautology / anti-jump
-1. minimal Selection-totality map
-2. O0 / S0 co-primitive analytic burdens
-3. synchronized L0 -> L1 -> L2 process reading
-4. occurrence vs retained historical efficacy
-5. recurrent self-conditioning / One formation
-6. universal-kernel stop rule
-7. kernel OPEN guards
-~~~
-
-### Part II — downstream routing pointer
-
-Very compact:
-
-~~~text
-Post-One architecture
--> One Formation local owner
--> P1-T06 Stable ISP
--> Bearer P+E route
--> Concern / d
--> Agency
--> reflexive branch: endogenous perspective / epistemic proxy / normative comparison / intervention
--> cognition / subject / phenomenality
--> higher-order One
-~~~
-
-This second part is routing, not continuation of the universal ontology chain.
-
-If governance later prefers an even thinner canonical file, Part II can instead be carried by existing Registry / Context Router surfaces.
-
-## 7. GRG does not replace the ontology kernel
-
-GRG v0.3 explicitly separates:
+Retain the division:
 
 ~~~text
 SRT
-= generative ontological routing / anti-objectification constraints
+= minimal generative ontology / owner-level gates
 
 GRG
-= research architecture for recurring generative transformations
-  across objectifications
+= revisable relational grammar
+  for recurring transformations of formed generative conditions
 
-domain science
-= source-native mechanism / variables / evidence
+domain research
+= source-native mechanisms / variables / evidence
 ~~~
 
-Hard guard:
+GRG may pressure-test:
+
+- L0/L1/L2 transformations;
+- retention / re-entry;
+- higher-order formation;
+- proxy / neutrality;
+- reach;
+- friction;
+- reconstructibility;
+- epistemic revision;
+- normative mismatch;
+- intervention.
+
+But:
 
 ~~~text
-SRT canonical burden
-!= GRG transformation signature
-!= domain mechanism
+GRG heuristic != SRT canonical definition
+proxy / reach / friction / generative debt
+-/> universal ontology nodes
 ~~~
 
-Therefore GRG terms must not be silently inserted into the canonical ontology kernel.
+## 11. Revised section disposition for current Spine
 
-## 8. GRG nevertheless supports deeper thinning
-
-GRG v0.3 uses the process-first scaffold:
-
-~~~text
-... -> C_t -> G_t -> C_(t+1) -> G_(t+1) -> ...
-~~~
-
-This is noncanonical, but it clarifies an architectural point:
-
-> many downstream questions are about how formed generative conditions transform, not about adding more universal ontology stages.
-
-The 09-22 reach/capacity work strengthens the same conclusion.
-
-Its latest integrated research grammar is:
-
-~~~text
-Selection
--> difference
--> distinction / equivalence formation
--> proxy compression
--> support / gating
--> reach allocation
--> consequence
--> friction
--> compensatory response
--> reorganization / debt / reopening / deeper closure
-~~~
-
-The author source itself marks this as a research grammar, not a fixed universal mechanism.
-
-Therefore GRG pressures the repository toward:
-
-~~~text
-universal ontology kernel
-= very thin
-
-post-One generative-relational grammar
-= rich, revisable, source-native constrained
-~~~
-
-not toward absorbing every GRG concept into Spine.
-
-## 9. GRG-informed minimal relational loop
-
-Without canonicalizing GRG, use this as an architectural comparison:
-
-~~~text
-current generative conditions  [L0-facing]
--> Selection / bounded transformation
--> actualized difference       [L1-facing]
--> retained / reorganized conditions where established [L2-facing]
--> changed later generative conditions [new L0-facing]
--> later Selection
-~~~
-
-GRG can then ask, where relevant:
-
-~~~text
-what became equivalent?
-what became load-bearing?
-what was compressed?
-what gained or lost reach?
-what support maintained the organization?
-where did friction return?
-did the system adapt or transform?
-can compressed differences re-enter?
-~~~
-
-These are downstream research questions, not new ontology nodes. They can also supply a common research grammar for epistemic revision, normative comparison and intervention, provided current SRT owner gates remain controlling.
-
-## 10. Revised size interpretation
-
-The right target is no longer:
-
-~~~text
-560 -> 340–390 lines
-~~~
-
-The right target is:
-
-~~~text
-restore minimal-kernel architecture
-+
-preserve downstream routes without making them universal stages
-~~~
-
-Non-binding engineering estimate:
-
-~~~text
-universal kernel body: roughly 150–230 lines
-plus optional downstream route / OPEN pointers: roughly 40–80 lines
-total if kept in one file: roughly 200–300 lines
-~~~
-
-No semantic decision should be made to hit a line count.
-
-## 11. Revised section dispositions
-
-| Current section | Revised disposition |
+| Current Spine section | Future treatment |
 |---|---|
-| §0 Authority / inference | KEEP in kernel; compress |
-| §1 Master ontology | REWRITE as minimal Selection-totality kernel map |
-| §2 Primitive Selection | KEEP in kernel; compress to O0/S0 + anti-tautology |
-| §3 Actualising Selection / existence | KEEP minimum event-cut burden |
-| §4 History | KEEP only occurrence vs retained-efficacy boundary needed for recurrence |
-| §5 One | KEEP minimum formation relation + owner pointer |
-| §6 Selection-position / perspective | MOVE OUT of universal kernel |
-| §7 Stable ISP | MOVE OUT of universal kernel |
-| §8 Bearer | MOVE OUT of universal kernel; preserve P+E authority separately |
-| §9 Agency | MOVE OUT of universal kernel |
-| §10 Normativity | SPLIT primitive-no-ought guards vs integrated post-One epistemic/normative/intervention architecture |
-| §11 L0/L1/L2 | PROMOTE as synchronized process reading of the minimal kernel, while preserving non-substance / non-mandatory-pipeline guards |
-| §12 Facet-before-kind | KEEP as inference guard near kernel boundary |
-| §13 OPEN register | SPLIT kernel OPEN vs downstream/programme OPEN |
-| §14 Citation rule | COMPRESS to Registry pointer |
+| §0 authority / inference | KEEP in Part I; compress |
+| §1 master ontology | REWRITE as minimal Selection-totality + two-role map |
+| §2 primitive Selection | KEEP in Part I; align O0/S0 with precise L0/L1 guards |
+| §3 actualising Selection / existence | KEEP minimum actualization burden |
+| §4 history | KEEP occurrence vs retained-efficacy distinction; move local detail outward |
+| §5 One | KEEP minimum vertical-reconstitution / One burden + One owner pointer |
+| §6 Selection-position / perspective | MOVE to Part II |
+| §7 Stable ISP | MOVE to Part II; pointer to P1-T06 |
+| §8 Bearer | MOVE to Part II; RETAIN P+E authority |
+| §9 Agency | MOVE to Part II |
+| §10 Normativity | SPLIT primitive no-ought guards in Part I vs O1/O2 in Part II |
+| §11 L0/L1/L2 | REWRITE / PROMOTE as precise three-layer generative architecture |
+| §12 facet-before-kind | KEEP as inference guard |
+| §13 OPEN register | SPLIT kernel OPEN vs post-One/programme OPEN |
+| §14 citation rule | COMPRESS to Registry / owner priority pointer |
 
-## 12. Acceptance tests
+## 12. OPEN partition
 
-A future rearchitecture FAILS if it:
+### Keep explicit in Part I
 
-- leaves Stable ISP / Bearer / Agency looking like compulsory universal stages after One;
-- treats the post-One research map as an ontology ladder;
-- restores Oriented Openness as a prior ontic substance;
-- turns O0 and S0 into two mechanisms;
-- makes retained historical efficacy necessary for every Selection occurrence;
-- equates L2 with One or treats every L2 structure as a formed One;
-- turns L0 -> L1 -> L2 into three ontic substances or a mandatory chronology;
-- weakens One recurrence burden;
-- deletes current Bearer P+E merely because Bearer leaves the kernel;
-- imports GRG proxy / reach / friction / debt into canonical ontology without separate adjudication;
-- uses GRG process scaffolds as proof of SRT ontology;
-- makes all Ones automatically endogenous-perspective or epistemic organizations;
-- treats O0, actuality or mere formation as complete moral value;
-- collapses O1 / O2-C / O2-A / O2-M into one undifferentiated moral layer;
-- loses current anti-tautology / anti-jump / OPEN guards.
+- exact O0/L0 and S0/L1 crosswalk;
+- genuine Selection / anti-tautology criterion;
+- exact One necessary-and-sufficient theorem;
+- exact One boundary / identity where still OPEN;
+- any OPEN whose silent closure would change universal formation inference.
 
-It PASSES only if:
+### Keep explicit in Part II
+
+- positive E;
+- Bearer <-> Concern;
+- Bearer / Agency / subject-position implications;
+- endogenous-perspective sufficiency;
+- phenomenality / experiencer transition;
+- O2-M;
+- downstream owner placement not yet settled.
+
+### Move out of Spine where possible
+
+- programme-level research status;
+- scientific distinctiveness;
+- detailed domain-realization OPENs;
+- owner-local technical questions that do not change cross-owner inference.
+
+## 13. Size and split policy
+
+The previous 340–390-line estimate is withdrawn.
+
+Non-binding engineering range after a successful two-role rewrite:
 
 ~~~text
-universal formation kernel ends at One
-+ later Selection-totality semantics are preserved
-+ downstream capacities remain retrievable
-+ GRG remains a noncanonical relational research grammar
-+ no current owner burden is silently deleted
+Part I universal kernel:
+approximately 150–220 lines
+
+Part II compact typed map + OPEN / citation routing:
+approximately 60–100 lines
+
+total:
+approximately 210–320 lines
 ~~~
 
-## 13. Author decision gate before canonical editing
+No edit should optimize for line count.
 
-The revised architectural reading to review is:
+Semantic completeness and retrieval clarity control.
+
+Navigation splitting remains optional and downstream of semantic restoration.
+
+Do not create multiple parallel canonical Spine definition authorities.
+
+## 14. Future canonical-edit scope
+
+If separately authorized, the next PR should be narrowly scoped to:
 
 ~~~text
-A. Universal canonical skeleton should stop at One.
-
-B. Stable ISP / Bearer / Position / Concern / Agency / cognition /
-   subject / phenomenality / higher-order One are post-One downstream routes,
-   not universal skeleton stages.
-
-C. 09-14 Selection-totality changes the internal reading of the kernel:
-   O0 and S0 are co-primitive analytic burdens of one Selection reality,
-   not a prior-condition -> operation ladder.
-
-D. The kernel may be shown in two synchronized views:
-   ontological burden view = Selection reality [O0|S0] -> recurrent self-conditioning -> One;
-   process view = L0 -> L1 -> L2 -> new L0, with retention conditional and non-substantival.
-
-E. One formation may open a separately gated reflexive branch in which
-   epistemic / cognitive and normative organization are different facets
-   of the same formed generative relation; neither is automatic from One.
-
-F. Moral normativity is a cross-position / relation-level thickening:
-   O1 -> O2-C -> O2-A -> O2-M remains gated,
-   and O2-M remains OPEN.
-
-G. GRG may pressure and simplify the architecture,
-   but reach / proxy / friction / debt remain noncanonical downstream research
-   until separately pressure-tested / adjudicated.
+Core_Law/SRT_Generative_Ontology_Spine.md
 ~~~
 
-No canonical edit is authorized by this audit.
+plus only:
 
-## 14. Independent-review questions
+- this audit / author-decision references;
+- deterministic navigation regeneration if already required by tooling;
+- minimal owner-route synchronization if strictly necessary.
 
-1. Does the 09-13 author checkpoint still control the claim that universal formation stops at One after the 09-14 Selection-totality rearchitecture?
-2. Does any later author adjudication explicitly re-admit Stable ISP or Bearer into the universal minimal skeleton?
-3. Can Bearer P+E leave the universal kernel without losing its current canonical authority?
-4. Should the post-One routing remain a short Part II in Spine, or move entirely to Registry / Context Router?
-5. Can L0 -> L1 -> L2 -> new L0 be restored as the process reading of the minimal kernel without violating the current rule that L0/L1/L2 are analytic/model-facing aspects rather than ontic substances or a mandatory pipeline?
-6. Is One best located as recurrent self-conditioning emerging through repeated L1/L2-to-future-L0 re-entry, while preserving the canonical One-Formation owner and terminal-Selection guard?
-7. Should the post-One reflexive branch be organized as ontology -> epistemology/cognition -> normativity -> intervention -> ontology, while treating these as facets rather than ontic layers?
-8. Does the generativity-first O1/O2 architecture support interpreting morality as a cross-position thickening of the same formed generative relation without restoring primitive moral content?
-9. Does GRG v0.3 or the 09-22 reach work contain any burden that genuinely belongs in the universal ontology kernel?
-10. Is the revised 200–300 line estimate realistic without semantic loss?
-11. Which current OPEN items are kernel OPENs versus downstream/programme OPENs?
-12. Does this architecture better satisfy the author's deletion rule: if a burden can be paid by relation / descriptor / downstream grammar, do not add a universal ontology node?
+Do not simultaneously rewrite:
+
+- L0 Metaphysics;
+- One Formation;
+- Core21b;
+- Bearer semantics;
+- d / Psi_f / T_dir;
+- GRG owners;
+- philosophy / AI / neuro / physics consumers;
+- STATUS programme state.
+
+If a contradiction is exposed, STOP and open a separate owner-reconciliation task.
+
+## 15. Acceptance tests for the future C-class edit
+
+A future edit FAILS if it:
+
+- removes the L0/L1/L2 three-layer architecture;
+- reintroduces L0 as a prior state-space substance;
+- turns L0/L1/L2 into three ontic substances;
+- makes L1 -> L2 automatic;
+- identifies L2 with later L0;
+- equates L2 / sedimentation with One;
+- removes vertical generative reconstitution from One formation;
+- makes Stable ISP / Bearer / Agency compulsory universal formation stages;
+- deletes or weakens Bearer P+E;
+- collapses ontology / cognition / normativity into synonyms;
+- imposes a fixed ontology -> cognition -> normativity -> action serial theorem;
+- treats O0 or mere actuality as complete morality;
+- collapses O1 / O2-C / O2-A / O2-M;
+- imports GRG proxy / reach / friction / debt as primitive ontology;
+- silently closes an OPEN;
+- uses line count as a deletion rule.
+
+A future edit PASSES only if:
+
+~~~text
+precise L0/L1/L2 architecture is preserved
++
+universal formation stops at One
++
+verticality remains Selection-mediated
++
+Part II remains explicitly non-ladder
++
+Bearer P+E and current normativity gates survive
++
+post-One ontology/cognition/normativity/intervention facets remain retrievable
++
+GRG remains noncanonical pressure-testing grammar
++
+the Spine becomes materially clearer and shorter
+~~~
+
+## 16. Independent-review questions
+
+1. Does this audit accurately implement the new author adjudication without adding a second theory?
+2. Is L0 = Generative Openness precise enough to avoid both possibility-warehouse and prior-state-space readings?
+3. Is L1 = Actualized Differentiation compatible with the current Selection/actualization identity constraints?
+4. Is L2 = Retained Generative Efficacy sufficiently strict to preserve terminal Selection?
+5. Does the audit preserve the SED-B vs vertical-reconstitution distinction strongly enough?
+6. Does Part I legitimately stop at One while Part II retains 09-14 typed structure?
+7. Is keeping Bearer P+E in Part II the least-disruptive current ownership solution?
+8. Does the facet architecture preserve objective / constitutive normativity without making epistemic representation a prerequisite?
+9. Are the O1 / O2-C / O2-A / O2-M gates preserved correctly?
+10. Does any GRG burden still leak into canonical ontology in this audit?
+11. Which OPEN items, if any, have been misclassified between Part I and Part II?
+12. Is the proposed future canonical-edit scope narrow enough for C-class review?
+
+## 17. Audit verdict
+
+~~~text
+author adjudication recorded:
+  YES
+
+three-layer L0/L1/L2 architecture:
+  RETAIN
+
+L0:
+  Generative Openness
+
+L1:
+  Actualized Differentiation
+
+L2:
+  Retained Generative Efficacy
+
+serial-container reading:
+  REJECT
+
+L2 = One:
+  REJECT
+
+vertical generative reconstitution:
+  RETAIN
+
+universal formation stop:
+  One
+
+post-One typed map:
+  RETAIN in Part II
+
+Bearer P+E:
+  RETAIN in Part II pending separate owner decision
+
+ontology / cognition / normativity / intervention:
+  non-identical facets of one formed generative relation
+
+O2-M:
+  OPEN / HOLD
+
+GRG canonicalization:
+  NO
+
+canonical Spine edit:
+  NOT YET AUTHORIZED
+
+next step:
+  independent review of this author-controlled audit;
+  then explicit author authorization for the C-class Spine rewrite
+~~~
