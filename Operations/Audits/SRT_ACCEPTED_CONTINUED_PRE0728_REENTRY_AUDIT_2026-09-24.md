@@ -10,6 +10,9 @@ canonical: false
 tags: [MachineAnalysis, AuthorAcceptance, ChoiceMap, Concern, Ghost, U5, Reentry, Retrieval]
 dependency:
   - SRT-ACCEPTED-CONTINUED-MACHINE-ANALYSIS-REENTRY-AUDIT-20260924
+  - SRT-CHOICE-TRACE-AUTHOR-DECISIONS-20260804
+  - SRT-CONFIRMED-PROPOSITION-SEMANTIC-COVERAGE-AUDIT-20260808
+  - SRT-AUTHOR-ADJUDICATION-EPSILON-POSTSELECTION-RELOCATION-20260914
   - SRT-AGENT-RETRIEVAL-PROFILE
   - SRT-AUTHOR-ADJUDICATION-CONTINUE-DIRECTIONAL-ACCEPTANCE-20260924
 ---
@@ -20,12 +23,12 @@ dependency:
 
 This is the second bounded historical re-entry pass.
 
-It reviews the recorded upstream segment that feeds the 2026-07-28 ChoiceMap card:
+It reviews the recorded upstream segment that feeds the 2026-07-28 ChoiceMap continuation:
 
 ~~~text
 2026-07-09
-  founding Selection-before-existence trace
-  + randomization / comparison / selective-resynchronization continuation
+  Selection-before-existence founding trace
+  + randomization / comparison / resynchronization trace
       ->
 2026-07-11
   Concern ecology / governance
@@ -42,38 +45,39 @@ It reviews the recorded upstream segment that feeds the 2026-07-28 ChoiceMap car
   proxy-object / residual-friction continuation
 ~~~
 
-This is still **not** a claim of complete early-history coverage.
+This is **not** a complete early-history audit.
 
-Explicitly outside this pass:
+Outside this pass:
 
 - pre-2026-07-09 source-intuition history;
-- the 2026-07-12 cross-scale-selection-proxy sibling branch as a full re-entry target;
-- the 2026-07-23/24 embodied-position / d-q-o materials except as a downstream guard, because the 2026-07-25 closure audit keeps those proposals candidate-only and under embargo;
-- book/archive recovery unrelated to this chain.
+- the 2026-07-12 cross-scale-selection-proxy sibling branch as a full target;
+- the 2026-07-23/24 embodied-position / d-q-o material except as a guard under the 2026-07-25 closure audit;
+- unrelated book/archive recovery.
 
-## 1. Evidence rule
+## 1. Controlling records and non-duplication rule
 
-Use the same evidence discipline as the main 2026-09-24 re-entry audit.
+This pass initially risked reclassifying material already adjudicated elsewhere.
 
-Count as author-grounded only where the repository preserves:
+The controlling records are:
 
-- direct author wording;
-- explicit author option selection;
-- explicit author acceptance of an assistant synthesis;
-- bounded continuation with local context;
-- later author confirmation.
+1. `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`
+   - formal author governance record for G1/G2/G4/G5/G6 from the two 07-09 traces;
+   - fixes current downstream wording and author-approved writeback direction.
 
-Do not upgrade:
+2. `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`
+   - already audits the confirmed G1/G2/G4/G5/G6 propositions by semantic / behavioral coverage;
+   - its sample found **no confirmed-but-unassimilated theory proposition** among that closed author gate;
+   - it records partial-assimilation details for G5-2, G5-5, G5-4 and G6-2.
 
-- assistant-only formalization;
-- implementation authorization;
-- review feedback;
-- file existence;
-- later citation
+3. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_EPSILON_POSTSELECTION_RELOCATION_2026-09-14.md`
+   - later controlling author direction;
+   - removes continuation / non-self-erasure directionality from minimum pre-object L0 and relocates it downstream of primitive Selection.
 
-into author theory.
+4. `Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`
+   - carries the author-decided separation among structural stability, continued selectability and stronger generative reselectability;
+   - explicitly incorporates the U5 source burden.
 
-Current owners and later author decisions control current meaning.
+Therefore this audit must **delegate**, not build a second competing disposition system, wherever these records already control.
 
 ## 2. High-level verdict
 
@@ -81,330 +85,390 @@ Current owners and later author decisions control current meaning.
 wholesale early-analysis loss:
   NO
 
-routing fragmentation:
-  YES
+07-09 closed author gate:
+  ALREADY ADJUDICATED + SEMANTICALLY AUDITED
+  delegate to 08-04 decision + 08-08 coverage audit
 
-07-09 Selection-first foundation:
-  largely ABSORBED
+07-09 primitive non-self-erasure directionality:
+  SUPERSEDED
+  relocated downstream of primitive Selection on 09-14
 
-07-09 randomization/resynchronization model:
-  source-level process metaphor / partly absorbed;
-  not a current standalone construct
+07-09 resynchronization terminology:
+  AUTHOR-RENAMED
+  current cross-level term = selective reorganization / 选择性再组织
 
-07-11 Concern / path-generation / consequence-return line:
-  PARTIALLY_ABSORBED;
-  later d / reselectability / Bearer / governance owners control
+07-09 entropy branch:
+  ACTIVE OPEN TENSION + T-B/Core25 division
+  not an unrouted historical orphan
 
-07-19 Ghost / nonclosure / yin-yang line:
-  PARTIALLY_ABSORBED;
-  metaphor and old ontology cannot outrank later owners
+07-11 Concern line:
+  PARTIALLY ABSORBED / ROUTED
+  detailed confirmed G5 coverage delegated to 08-08
+
+07-19 Ghost / nonclosure / yin-yang:
+  PARTIALLY ABSORBED historical source line
+  source metaphor cannot define current Ghost Operator
 
 07-27 U5:
-  author-choice provenance remains important
-  broad burden PARTIALLY_ABSORBED
-  exact choice-absolutization / mechanism-self-exemption interface remains weakly routed
+  author-choice provenance correction retained
+  substantive burden already routed through ST-A / B13
+  U5 != U6 remains provenance-critical
 
 new canonical theory discovered:
+  NO
+
+new non-history topic trigger required:
   NO
 
 Spine thinning authorization:
   NO
 ~~~
 
-## 3. 2026-07-09 founding trace
+## 3. 2026-07-09 traces: delegate the closed author gate
 
-Source:
+Sources:
 
-`01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`
+- `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`;
+- `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`.
 
-### 3.1 What is already absorbed
+The current control path is:
 
-The trace itself already records several items as recovery / re-recognition rather than new theory:
+~~~text
+07-09 source traces
+-> 08-04 author decisions G1/G2/G4/G5/G6
+-> T-B / T-D / T-E and later current owners
+-> 08-08 semantic coverage audit
+~~~
 
-- Selection-before-existence;
-- Selection as a subjectless reality-generating process;
-- subject/world as downstream rather than primitive;
-- structural non-self-erasure / continued-selectability pressure;
-- reselectability as stronger than simply “choosing once”.
+Do not re-adjudicate the 13 closed G1/G2/G4/G5/G6 propositions here.
 
-Current controlling routes now include:
+### 3.1 Selection-before-existence
+
+The founding burden that Selection is not merely a subject choosing from a completed menu is carried by later Selection / L0 / Spine owners.
+
+Current owner family:
 
 - `Core_Law/SRT_L0_Metaphysics.md`;
 - `Core_Law/SRT_Selection_Argument.md`;
 - `Core_Law/SRT_Generative_Ontology_Spine.md`;
-- `Core/SRT_Core_21_Minimal_Axioms.md`;
-- current reselectability / B13 owners where the stronger health burden is intended.
+- `Core/SRT_Core_21_Minimal_Axioms.md`.
 
 Disposition:
 
 `ABSORBED / CURRENT OWNER CONTROLS`.
 
-### 3.2 Non-self-erasure must not recover its old overreach
+### 3.2 Primitive non-self-erasure directionality is superseded
 
-The 07-09 trace uses “non-self-erasure” in a broad structural and directional sense.
+The 07-09 trace treated non-self-erasure as a minimum direction of primitive Selection.
 
-Current reading must preserve later distinctions:
+That reading is no longer current.
+
+The 2026-09-14 author adjudication explicitly fixes:
 
 ~~~text
-Selection occurrence
-!= retained history
-!= structural stability
-!= generative health
-!= complete normativity
+minimum pre-object L0:
+  non-maximal-indifference only
+
+continuation / non-self-erasure direction:
+  relocate downstream of primitive Selection
 ~~~
-
-The 2026-08-11 ST-A author decision separates:
-
-- continued selectability as a lower stability burden;
-- stronger generative reselectability as P2/P3;
-- fixed-point / attractor / low-friction / option-count proxies from health.
-
-Later 2026-09 normativity work also prevents structural non-self-erasure from being treated as a complete moral or normative ground.
-
-Disposition:
-
-`PARTIALLY ABSORBED; OVERREADING SUPERSEDED`.
-
-### 3.3 “Selection ground” four-condition wording
-
-Author wording in the trace frames the “ground of choice” through:
-
-- enough options;
-- scaffolding/support;
-- lowering cost;
-- respecting choice rather than building a cage.
-
-This is historically important, but “选择地基” collides with a separate book usage and must not be hardened under that name.
-
-Later work carries neighboring burdens through:
-
-- healthy support vs lethal replacement;
-- scaffold / cage;
-- consequence-sensitive revision;
-- reconstructibility / re-entry;
-- ChoiceMap governance.
-
-This audit does **not** declare lexical identity between those later constructs and the four 07-09 conditions.
-
-Disposition:
-
-`PARTIALLY_ABSORBED / TOPIC-CONDITIONAL PROVENANCE`.
-
-### 3.4 Entropy branch is not reactivated
-
-The trace preserves the author statement that entropy can be read as a world-description after “removing selection” from the explanatory picture.
-
-The trace itself flags tension with:
-
-`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`.
-
-The ontological-absence vs theoretical-abstraction calibration was not closed there.
 
 Therefore:
 
 ~~~text
-07-09 entropy intuition
-= historical source pressure
-!= current thermodynamic owner
-!= anti-entropy theorem
+07-09 primitive continuation / non-self-erasure direction
+= historical source intuition
+= SUPERSEDED as minimum L0 direction
+~~~
+
+Do **not** route it back into primitive L0.
+
+What remains current at lower layers is separately typed:
+
+- `G6-3` minimum non-neutrality is the 08-04 **process / comparison threshold wording**;
+- it is not the same claim as a primitive continuation-favouring L0 value direction;
+- `P1-T06` continued selectability belongs to the stronger Stable-ISP route;
+- generative reselectability remains a stronger P2/P3 health burden.
+
+Disposition:
+
+`PRIMITIVE-DIRECTIONALITY READING SUPERSEDED; DOWNSTREAM BURDENS RETYPED`.
+
+### 3.3 “选择地基” was author-renamed and decomposed
+
+The 07-09 author wording about:
+
+- enough options;
+- support / scaffolding;
+- reduced cost;
+- respecting choice rather than building a cage
+
+must be read through the later G6-1 decision.
+
+08-04 author decision:
+
+~~~text
+选择地基
+-> 选择生成条件
+   + 选择事件判据
+   + 选择脚手架
+~~~
+
+Current downstream route:
+
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`;
+- `_SRT_CONTEXT_ROUTER.md §23a`;
+- related current selection-event / agency guards.
+
+Therefore this is not merely an unresolved lexical resemblance to later scaffold / cage language.
+
+Disposition:
+
+`AUTHOR-RENAMED + DECOMPOSED; ROUTED BY T-D / §23a`.
+
+### 3.4 Resynchronization was author-renamed
+
+The source process language:
+
+~~~text
+desynchronization / randomization
+-> comparison
+-> resynchronization
+~~~
+
+was later adjudicated.
+
+08-04 G5-1 / G6-2 gives the current cross-level wording:
+
+~~~text
+structural mismatch / decoupling / random disturbance
+-> manifestation / allocation
+-> differential comparison
+-> comparative selective reorganization
+-> path formation / historical writeback
+~~~
+
+Current owner:
+
+`03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md`.
+
+“Synchronization / desynchronization” remains allowed only:
+
+- as source-trace provenance; or
+- in a concrete domain with an independently measurable synchrony variable.
+
+Disposition:
+
+`AUTHOR-RENAMED; P2/P3 BRIDGE ROUTED`.
+
+Do not reactivate “resynchronization” as a universal current mechanism.
+
+### 3.5 Entropy branch is routed but unresolved
+
+The 07-09 source intuition about entropy as a “de-selection” or subtraction-side portrait is **not** an unrouted orphan.
+
+Current route:
+
+- `Core/SRT_OPEN_TENSIONS.md §12` keeps the ontological-absence vs theoretical-abstraction distinction OPEN;
+- T-B explicitly separates that source-level positioning from `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`;
+- Core_25 remains measurement-facing and does not become identical to the source intuition.
+
+Therefore:
+
+~~~text
+entropy de-selection reading:
+  ROUTED OPEN TENSION
+
+absence vs abstraction:
+  OPEN
+
+anti-entropy theorem:
+  NO
+
+Core25 replacement:
+  NO
 ~~~
 
 Disposition:
 
-`UNRESOLVED HISTORICAL TENSION / NOT REACTIVATED`.
+`ACTIVE_ROUTED_OPEN`.
 
-## 4. 2026-07-09 randomization / comparison / resynchronization continuation
+### 3.6 Coverage details are owned by the 08-08 audit
 
-Source:
+The 08-08 semantic coverage audit already tested the closed G1/G2/G4/G5/G6 gate.
 
-`01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`
+This re-entry audit adopts that audit rather than duplicating its labels.
 
-Author-confirmed / author-chosen material includes a source-level process picture in which:
+Relevant partial cases include:
 
-- desynchronization/randomization and release are coupled;
-- comparison precedes naming;
-- selective resynchronization forms a temporary organization;
-- manifestation, allocation and future selectability interact;
-- selection is not a subject-level act.
+- G5-2 structural-loss pressure / pain terminology;
+- G5-5 minimum coercive pressure role of pain;
+- G5-4 relational weighting of Concern at candidate formation;
+- G6-2 terminology synchronization from resynchronization -> selective reorganization.
 
-### 4.1 Current status
+The 08-08 conclusion is important:
 
-The repository does not use “synchronization” as a current universal SRT mechanism.
+> these partials are missing a layer of restriction / routing detail, not evidence that the confirmed theory content became unreachable.
 
-The source trace itself warns that the term collides with neural synchrony.
-
-The useful surviving burden is weaker:
-
-> Selection genesis should not be reconstructed as “a subject picks from a named menu”; difference, comparison and temporary organization precede richer objectification.
-
-That burden is already compatible with later L0 / Selection / pre-object / objectification owners.
-
-Disposition:
-
-`PARTIALLY_ABSORBED / HISTORICAL PROCESS MODEL`.
-
-### 4.2 No standalone residual construct
-
-Do not reactivate:
-
-- “randomization” as a primitive universal mechanism;
-- “selective resynchronization” as a new canonical operator;
-- “1432 cycle” as a theory primitive.
-
-These remain source-intuition / product-history material unless separately re-adjudicated.
-
-## 5. 2026-07-11 Concern line
+## 4. 2026-07-11 Concern line
 
 Primary sources:
 
 - `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_ECOLOGY_GOVERNANCE_TRACE_2026-07-11.md`;
 - `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_EMERGENCE_AND_CONVERGENCE_TRACE_2026-07-11.md`.
 
-### 5.1 Confirmed burden carried forward
+### 4.1 Confirmed Concern / pain material already enters the 08-04 gate
 
-The live 07-11 trace confirms:
+Do not treat all 07-11 Concern content as ownerless source material.
 
-- current concern shapes current comparison;
-- selection consequences can reshape later concern;
-- a concrete path may close while path-generating / revising conditions must remain distinguishable;
-- action may stage closure while epistemic / revision channels may need reopening;
-- consequence return is a precondition for stronger concern;
-- non-externalizable consequences help individuate a bearing position.
+The 08-04 author decisions explicitly confirm:
 
-Later owners carry major parts of this burden through:
+- G5-4: Concern participates in relational, non-neutral weighting of disturbance;
+- G5-2: structural loss pressure at an embodied position;
+- G5-5: pain as a minimum coercive selection pressure, not the only motive.
+
+The 08-08 semantic audit then records partial assimilation for these items.
+
+Therefore detailed current status of these G5 claims is delegated to that audit.
+
+### 4.2 Current Concern / Bearer guards still control
+
+The 07-11 traces also develop:
+
+- concern shaping comparison;
+- selection consequences reshaping later concern;
+- path closure vs path-generating / revision conditions;
+- consequence return;
+- non-externalizable consequences;
+- an early “primordial bearing position”.
+
+Current controlling routes include:
 
 - `_SRT_D_VALUE_CANONICAL.md`;
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
-- `Core/SRT_OPEN_TENSIONS.md §4`;
+- B13 / current generative-reselectability routes;
 - `Core_Law/SRT_One_Formation.md`;
 - Spine Bearer / Concern OPEN guards;
-- ethics / political-philosophy routes for participation, coercion and governance.
+- ethics / political-philosophy routes for coercion / participation / governance.
+
+The early “primordial bearing position” is **not** a current Bearer admission definition.
 
 Disposition:
 
-`PARTIALLY_ABSORBED`.
+`PARTIALLY ABSORBED; EARLY BEARING LANGUAGE SUBORDINATE TO LATER GATES`.
 
-### 5.2 Stronger “primordial bearing position” language is not controlling
+### 4.3 Non-externalizable consequence is now a derivative diagnostic
 
-The 07-11 source uses an early “原初承重位 / primordial bearing position” route.
+The 07-11 material can make non-externalizable consequences look close to a primitive concern / normative ground.
 
-Current Bearer admission is stricter and later:
-
-~~~text
-formed One / Selection-position
-+ independently established P + E
--> Bearer discussion
-~~~
-
-and:
+The 2026-09-14 generativity-first adjudication later fixes:
 
 ~~~text
-Bearer <-> Concern
-remains OPEN
+consequence-bearing != primitive normative ground
+non-outsourcing != primitive normative ground
 ~~~
 
-Therefore the early concern-to-bearing language is provenance, not a current Bearer definition.
+They may remain downstream diagnostics of whether a Selection-position remains genuinely generative.
+
+Therefore:
+
+- preserve the 07-11 source intuition as provenance;
+- do not use it to restore consequence-bearing-first normativity;
+- where current Bearer E uses a non-outsourcing consistency test, follow the current Spine / Bearer route.
 
 Disposition:
 
-`PARTLY SUPERSEDED BY LATER BEARER ROUTING`.
+`PARTLY SUPERSEDED AS GROUND; RETAINED AS DERIVATIVE DIAGNOSTIC PROVENANCE`.
 
-### 5.3 Governance branch remains conditional
+### 4.4 Governance branch remains conditional
 
-The 07-11 material on:
+Participation rights, voluntariness/coercion, cross-scale convergence, staged commitment and restart triggers remain domain-conditional.
 
-- participation rights;
-- voluntariness/coercion;
-- cross-scale convergence;
-- multi-model staged commitment;
-- restart triggers
+Route them through current ethics / political / social owners when those topics are actually in scope.
 
-is valuable but domain-conditional.
+They are not a universal core governance layer.
 
-It should route through current ethics / political philosophy / social routes when those topics are in scope.
-
-It is not a core CURRENT NEXT and should not be reintroduced as a new universal governance layer.
-
-## 6. 2026-07-19 Ghost / nonclosure source line
+## 5. 2026-07-19 Ghost / nonclosure source line
 
 Sources:
 
 - `01_Source_Intuition/SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md`;
 - `01_Source_Intuition/SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md`.
 
-These files have unusually high retrieval value because:
+These remain high-value provenance because they preserve:
 
-- the author supplied decisive source formulations;
-- the author explicitly accepted the overall bridge in the parent card;
-- the author later said the assistant had produced many strong explanations and requested they be written into the continuation card.
+- direct author source formulations;
+- author acceptance of the overall bridge;
+- author-requested preservation of selected assistant explanation.
 
-Authority still remains item-sensitive.
+Authority remains item-sensitive.
 
-### 6.1 Structural burden later absorbed
+### 5.1 Durable burden
 
-The durable source burden is:
+A durable source burden is:
 
-> finite objectification does not necessarily exhaust the conditions and differences that helped generate it; unabsorbed / unexhausted difference can continue through mismatch, cost, boundary pressure, historical return or reselection pressure.
+> finite objectification need not exhaust the differences and conditions involved in its formation; unabsorbed / unexhausted difference may continue through mismatch, cost, boundary pressure, historical return or reselection pressure.
 
-Later work carries neighboring versions through:
+Neighboring later routes include:
 
 - 07-28 residual-mismatch / proxy-object continuation;
 - PH-IND03 / Simondon crosswalk;
-- objectification / recutting work;
-- 09-22 capacity / reach / reconstructibility records;
-- 09-23 GRG continuity recovery.
+- later objectification / recutting work;
+- GRG reach / reconstructibility / anti-self-sealing work.
 
 Disposition:
 
-`PARTIALLY ABSORBED`.
+`PARTIALLY ABSORBED HISTORICAL SOURCE LINE`.
 
-### 6.2 Ghost != current Ghost Operator
+### 5.2 Ghost != current Ghost Operator
 
-The source-card “ghost” is a historical metaphor / readable form of nonclosure pressure.
+The source-card “ghost” must not be identified by name with:
 
-It must not be identified with:
+- current `Ĝ_θ`;
+- the full Ghost Operator node;
+- turbulence, mismatch or friction.
 
-- canonical / operator-level `\hat G_\theta`;
-- the full current Ghost Operator node;
-- turbulence, mismatch or friction by identity.
-
-The old cards themselves already flag the naming collision.
+The 07-19 card already records the naming collision.
 
 Disposition:
 
 `HISTORICAL TERM / ROUTING GUARD`.
 
-### 6.3 Consciousness / value / soul / purpose projection language
+### 5.3 Consciousness / value / soul / purpose bridge remains support only
 
-The parent card accepted a bridge in which those four traditional problem families can be explored as projections / manifestations of nonclosure pressure.
+The parent card's four traditional-problem projections are not current admission theorems.
 
-That bridge is not a current admission theorem for consciousness, value, soul or purpose.
-
-Current domain owners and gates must be read first.
+Read current domain owners first.
 
 Disposition:
 
 `SUPPORTING HISTORICAL PROVENANCE ONLY`.
 
-### 6.4 Close -> trigger -> reopen model is superseded
+### 5.4 Close -> trigger -> reopen is superseded
 
-The continuation card explicitly rejects a simple event model in which the selection mechanism first closes and later reopens because of an anomaly.
+The 07-19 continuation explicitly rejects a simple:
 
-The later source reading is continuous revisability / dynamic balance, not guaranteed literal reopening events.
+~~~text
+close
+-> anomaly trigger
+-> reopen
+~~~
+
+event model.
+
+Later reading uses continuing revisability / dynamic balance rather than guaranteed literal reopen events.
 
 Disposition:
 
 `SUPERSEDED MODEL — DO NOT REACTIVATE`.
 
-## 7. 2026-07-27 U5 correction
+## 6. 2026-07-27 U5 correction: provenance, not a new weakly routed theory node
 
-Source:
+Sources:
 
-`01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md`.
+- `01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md`;
+- `Operations/_SRT_CHOICE_TRACE_CORRECTION_POINTER_2026-07-27.md`.
 
-This file corrects an important provenance error.
-
-### 7.1 Author choice
+### 6.1 The provenance correction remains mandatory
 
 The author selected:
 
@@ -412,218 +476,232 @@ The author selected:
 
 The author did **not** directly select U6.
 
-U6—results/options/standards/choice-right closure as visible facets—is an assistant-derived expansion.
+U6—result / option / standard / choice-right closure as visible facets—is an assistant-derived expansion.
 
-This distinction must survive retrieval.
+Therefore:
 
-### 7.2 What later owners absorb
+~~~text
+author chose U5
+!= author chose U6
+~~~
 
-The U5 burden is no longer ownerless.
+This is the main reason the 07-27 source remains retrieval-critical for **historical attribution**.
 
-The 2026-08-11 ST-A author decision explicitly uses U5 / yin-yang source-intuition to separate:
+### 6.2 Substantive U5 burden is already routed
 
+The 2026-08-11 ST-A decision explicitly records the U5 source reading:
+
+- choice absolutization occurs when the selection mechanism exits later Selection;
+- reselectability is not a simple close-then-reopen picture.
+
+ST-A then separates:
+
+- structural stability;
 - continued selectability;
 - stronger generative reselectability;
-- structural stability;
 - generative health.
 
-Current generative-reselectability owner:
+Current theory questions should therefore enter through:
 
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
-
-The 2026-08-29 Constitution governance also establishes a reflexive no-self-exemption discipline for analytic partitions:
-
-- `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md §16.2`.
-
-PH-IND03 / the 08-10 crosswalk further carries the idea that operator structure can itself become an object of later Selection.
+1. ST-A / current stability-reselectability owners;
+2. B13 / OPEN_TENSIONS where appropriate;
+3. only then the 07-27 correction when provenance, U5/U6 attribution or historical derivation matters.
 
 Disposition:
 
-`PARTIALLY_ABSORBED`.
+`SUBSTANTIVE BURDEN ROUTED; PROVENANCE CORRECTION REMAINS LOAD-BEARING`.
 
-### 7.3 Narrow residual: choice absolutization / mechanism self-exemption
+### 6.3 GOV-CONST01 §16.2 is a neighboring reflexivity check, not absorption
 
-What remains weakly routed is not a new mechanism but an author-choice provenance interface:
+`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md §16.2`
+requires a current analytic partition to remain re-questionable.
+
+That is structurally resonant with anti-self-exemption, but it is not the semantic owner of U5 and should not be counted as U5 absorption.
+
+Disposition:
+
+`NEIGHBORING CHECK ONLY`.
+
+### 6.4 No new non-history trigger
+
+This audit does **not** establish:
 
 ~~~text
 choice absolutization
-!= merely persisting with one result
-
-stronger historical source reading:
-a selection mechanism / rule / boundary / comparison regime
-becomes exempt from subsequent revision or Selection
+selection-mechanism self-exemption
+meta-choice closure
 ~~~
 
-This matters when current work asks whether:
+as automatic reasons to enter historical §20.
 
-- a rule is merely stable vs structurally self-exempt;
-- a scaffold supports selection vs replaces the ability to revise selection conditions;
-- a grammar / partition / operator treats itself as exempt from its own revision discipline;
-- a pathological closure is about result persistence or about closure of the mechanism that defines what can count as a candidate.
+For an ordinary current-theory question:
 
-Current owner checks should include:
+~~~text
+current owner first
+-> ST-A / B13 / OPEN_TENSIONS / relevant current route
+~~~
 
-- ST-A stabilisation decision;
-- B13 generative reselectability;
-- `Core/SRT_OPEN_TENSIONS.md §4`;
-- `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md §16.2`;
-- PH-IND03 / 08-10 crosswalk;
-- later GRG reconstructibility / anti-self-sealing records when GRG is in scope.
+Historical §20 is entered when provenance / accepted-analysis reconstruction is actually needed.
 
-Disposition:
-
-`PARTIALLY_ABSORBED + TOPIC-CONDITIONAL RE-ENTRY ROOT`.
-
-It is not CURRENT NEXT and not a new canonical term.
-
-## 8. 07-23 / 07-25 embodied-position and d/q/o boundary
+## 7. 07-23 / 07-25 embodied-position and d/q/o boundary
 
 The later 07-31 Concern card depends on:
 
 - `01_Source_Intuition/Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md`;
 - `01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md`.
 
-The 07-25 closure audit explicitly says:
+The 07-25 closure audit keeps d/q/o candidate / embargoed.
 
-- it does not adjudicate the theory;
-- d/q/o contains symbol / semantic collisions;
-- candidate gaps remain unresolved;
-- d/q/o must not enter downstream theory/public/book/bridge material before further decisions.
-
-Therefore this re-entry audit uses that material only as a **guardrail**.
+This pass uses that material only as a guardrail.
 
 It does not reactivate d/q/o.
 
-## 9. Out-of-scope sibling: 2026-07-12 cross-scale selection proxy
+## 8. Out-of-scope sibling: 2026-07-12 cross-scale selection proxy
 
 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`
 
-is chronologically inside the period but is not a direct parent of the 07-19 -> 07-28 chain.
+is chronologically inside the interval but is not a parent in the reviewed 07-09 -> 07-27 chain.
 
 It already separates:
 
-- three author-origin intuitions;
+- author-origin intuition;
 - LLM derivation;
 - AI review constraints;
-- implementation / merge authorization.
+- implementation authorization.
 
-Its six candidate labels were intentionally not hardened.
+Its candidate labels are not reopened here.
 
-This pass does not reopen that branch.
-
-A later audit should be created only if current work specifically needs:
+Audit it separately only if current work specifically needs:
 
 - collective optionality sacrifice;
-- cross-scale coordinated closure;
+- coordinated closure;
 - selection-proxy emergence.
 
-## 10. Routing consequences
+## 9. Routing consequence
 
-This pass supports a narrow extension to `_SRT_CONTEXT_ROUTER.md §20`.
-
-For ordinary current-theory questions, read current owners first.
-
-Use historical re-entry only when:
-
-- the user explicitly asks for provenance / old accepted analysis; or
-- the current task directly concerns the narrow source interface of **choice absolutization / selection-mechanism self-exemption / meta-choice closure**.
-
-Historical Ghost / yin-yang / random-resynchronization language should not be pulled into ordinary theory answers merely by keyword overlap.
-
-## 11. Implication for the earlier 07-28 -> 08-10 audit
-
-The earlier audit can now replace:
+The correct §20 behavior is:
 
 ~~~text
-pre-07-28 = NOT AUDITED
+ordinary current-theory question
+-> current topic owner first
+
+explicit history / provenance / accepted-analysis reconstruction
+-> §20
+-> this audit when the 07-09 -> 07-27 segment is relevant
 ~~~
 
-with:
+For U5 specifically:
 
 ~~~text
-07-09 -> 07-27 upstream ChoiceMap / Concern / Ghost segment
-= audited by this companion record
+current stability / reselectability / choice-absolutization theory
+-> ST-A / B13 / current owner
 
-pre-07-09
-= still not audited
-
-07-12 cross-scale sibling
-= explicitly outside this pass
+historical attribution:
+  did the author choose U5 or U6?
+  how did U5 enter ST-A?
+-> 07-27 correction / correction pointer
 ~~~
 
-## 12. Spine consequence
+Historical Ghost / yin-yang / resynchronization language should not be pulled into current answers merely by keyword overlap.
+
+## 10. Implication for the 07-28 -> 08-10 audit
+
+The companion 2026-09-24 re-entry audit may now treat:
+
+~~~text
+07-09 -> 07-27:
+  covered by this companion record,
+  with 07-09 closed-gate semantics delegated to 08-04 / 08-08
+
+pre-07-09:
+  not audited
+
+07-12 cross-scale sibling:
+  outside current pass
+~~~
+
+## 11. Spine consequence
 
 This audit still does not authorize Spine thinning.
 
-It lowers one uncertainty:
+It lowers the historical-risk estimate:
 
-> the 07-09 -> 07-27 upstream segment contains important provenance and one narrow re-entry root, but it does not reveal a large missing canonical theory block that must first be inserted into the Spine.
+> the reviewed upstream segment does not expose a large missing canonical block that must first be inserted into Spine.
 
-Before any later Spine edit, preserve routes to:
+But later Spine work must preserve current routes to:
 
-- current Selection / L0 owners;
-- B13 / reselectability;
+- Selection / L0 owners;
+- ST-A / B13;
 - Bearer / Concern OPEN guards;
-- the U5 provenance interface where choice-absolutization history matters.
+- historical provenance where a claim's derivation or author attribution is under review.
 
-## 13. Independent-review questions
+## 12. Remaining review questions
 
-1. Is the reviewed 07-09 -> 07-27 segment a legitimate bounded upstream scope?
-2. Did this audit understate any still-active burden from the 07-09 founding trace?
-3. Is “randomization / selective resynchronization” correctly treated as a historical process model rather than a current mechanism?
-4. Are 07-11 Concern burdens adequately covered by d / B13 / Bearer / governance owners?
-5. Is the early “primordial bearing position” correctly subordinate to later Bearer gates?
-6. Is the Ghost/nonclosure burden correctly mapped as partially absorbed rather than reactivated?
-7. Is Ghost vs Ghost Operator separation strong enough?
-8. Is U5 correctly classified as partially absorbed but still a topic-conditional provenance root?
-9. Is GOV-CONST01 §16.2 a legitimate neighboring owner/check rather than a semantic replacement for U5?
-10. Should any additional pre-07-28 branch be audited before a later Spine decision?
+1. Does delegation to the 08-04 decision record and 08-08 semantic coverage audit correctly avoid a second classification system?
+2. Is the 09-14 relocation sufficient to classify the 07-09 primitive non-self-erasure direction as superseded?
+3. Is the 07-11 “non-externalizable consequence” line correctly retained only as derivative-diagnostic provenance under later generativity-first control?
+4. Is U5 now correctly treated as routed substantive theory plus provenance-critical U5/U6 correction, rather than a weakly routed theory node?
+5. Should the 07-12 cross-scale sibling remain deferred before any later Spine decision?
 
-## 14. Verdict
+## 13. Verdict
 
 ~~~text
 07-09 -> 07-27 upstream segment:
-  BOUNDED AUDIT COMPLETE SUBJECT TO INDEPENDENT REVIEW
+  BOUNDED AUDIT COMPLETE SUBJECT TO REVIEW
+
+07-09 G1/G2/G4/G5/G6:
+  DELEGATED TO 08-04 AUTHOR DECISION + 08-08 COVERAGE AUDIT
 
 Selection-before-existence:
-  ABSORBED
+  ABSORBED / CURRENT OWNER CONTROLS
 
-non-self-erasure:
-  structural burden absorbed;
-  broader normative overreading not restored
+primitive non-self-erasure directionality:
+  SUPERSEDED ON 09-14
+  relocated downstream of primitive Selection
 
-selection-ground four conditions:
-  PARTIALLY_ABSORBED / topic-conditional provenance
+G6-3 minimum non-neutrality:
+  retained as process/comparison-threshold wording
+  does not restore primitive continuation direction
 
-entropy-as-de-selected-world-image:
-  unresolved historical tension;
-  not reactivated
+“选择地基”:
+  AUTHOR-RENAMED / DECOMPOSED
+  selection-generation conditions + event criteria + scaffolding
 
-randomization / selective-resynchronization:
-  historical process model;
-  no standalone residual construct admitted
+resynchronization:
+  AUTHOR-RENAMED
+  current cross-level term = selective reorganization
 
-Concern ecology / consequence return:
-  PARTIALLY_ABSORBED
+entropy de-selection reading:
+  ACTIVE_ROUTED_OPEN
+  OPEN_TENSIONS §12 + T-B / Core25 division
 
-primordial bearing-position language:
-  PARTLY SUPERSEDED by later Bearer routing
+Concern G5 material:
+  detailed coverage delegated to 08-08
+
+early primordial bearing-position language:
+  subordinate to later Bearer gates
+
+non-externalizable consequence:
+  not primitive normative ground
+  retained as derivative-diagnostic provenance
 
 Ghost / nonclosure / yin-yang:
-  PARTIALLY_ABSORBED historical source line
-  not a current universal mechanism
+  PARTIALLY ABSORBED historical source line
+  not current Ghost Operator definition
 
-close-trigger-reopen model:
+close-trigger-reopen:
   SUPERSEDED
 
-U5 author choice:
-  provenance correction retained
-  broad burden partly absorbed by ST-A / B13 / no-self-exemption routes
+U5:
+  substantive burden ROUTED through ST-A / B13
+  U5 != U6 provenance correction remains load-bearing
 
-choice absolutization / mechanism self-exemption:
-  TOPIC-CONDITIONAL RE-ENTRY ROOT
-  not CURRENT NEXT
-  not new canonical theory
+GOV-CONST01 §16.2:
+  neighboring reflexivity check only
+  not U5 absorption
+
+new non-history §20 trigger:
+  NO
 
 pre-07-09:
   NOT AUDITED
