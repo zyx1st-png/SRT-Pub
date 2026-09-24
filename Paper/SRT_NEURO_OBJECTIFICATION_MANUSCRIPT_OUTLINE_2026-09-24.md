@@ -1,9 +1,9 @@
 ---
 id: SRT-NEURO-OBJECTIFICATION-MANUSCRIPT-OUTLINE-20260924
 type: manuscript_outline
-status: frozen
-version: v0_1
-record_stage: phase4_outline_and_figure_plan
+status: draft
+version: v0_2_major_revision
+record_stage: phase4_major_revision
 date: 2026-09-24
 layer: operations
 epistemic_layer: experimental
@@ -12,215 +12,231 @@ claim_level: P4
 canonical: false
 ai_do_not_use_for_definition: true
 domain: neuroscience
-tags: [Neuroscience, Manuscript, Outline, FigurePlan, ClaimFreeze]
+tags: [Neuroscience, Manuscript, Outline, FigurePlan, ReviewResolution]
 ---
 
-# Manuscript outline — neuro objectification scale benchmark
+# Manuscript outline — stability of modularity inference across spatial grains
 
 This is a manuscript architecture only. It contains no full manuscript prose
-and does not authorize new computation. The claim ceiling is defined in
-`Paper/SRT_NEURO_OBJECTIFICATION_MANUSCRIPT_CLAIM_FREEZE_2026-09-24.md`.
+and authorizes no new computation. Its claim ceiling is defined in
+`Paper/SRT_NEURO_OBJECTIFICATION_MANUSCRIPT_CLAIM_FREEZE_2026-09-24.md` and the
+review-resolution audit.
 
 ## Working title
 
-**State-dependent modularity inference is not invariant across spatial grain in
+**A stability audit of state-dependent modularity across spatial grains in
 cellular-resolution neural networks**
-
-The title is deliberately methodological. It does not claim that spatial grain
-causes an effect, that all recordings reverse, or that the result validates a
-theory of consciousness.
 
 ## Narrative spine
 
-### R1 — Source calibration compatibility
+### R1 — Source calibration and pipeline provenance
 
-- State the locked author source, released result reconstruction and data/code
-  provenance.
-- Report R0A as reproduced at the released-result/qualitative level.
-- Report R0B as `R0-PARTIAL`: all four recalculations completed, but native MATLAB
-  was unavailable and Octave Q differences were material in part of the spot-check.
-- Do not present this as native exact source replication.
+- Identify the pinned source, released data, result files and runtime path.
+- Report Phase 0 R0A/R0B at the released-result and qualitative level.
+- State `R0-PARTIAL`: native MATLAB was unavailable and the Octave/Q
+  compatibility check showed material differences in part of the spot-check.
+- Treat this as source calibration, not exact native-script replication.
 
-Owners: `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE0_R0A_RESULT_2026-09-17.md`,
-`Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE0_R0B_RESULT_2026-09-17.md`.
+Owners: Phase 0 result records.
 
-### R2 — Preregistered matrix reveals instability
+### R2 — Primary cellular matrix
 
-- Introduce the source-recording benchmark and its fixed signal/grain matrix.
-- Show the Wake–NREM and Wake–Isoflurane `DeltaQ` matrices.
-- State that both received the local `DIRECTION-REVERSED` label.
-- Keep the one-recording-per-condition and no-population-inference boundary visible.
+- Define the analysis pipeline: signal → cell inclusion → spatial grain → graph
+  → Q/max-Q → state contrast.
+- Show the source-recording S1/S2/S3 × G1/G2/G3 matrix for Sleep and Anesthesia.
+- Keep the `±0.01` band as a descriptive class rule, not an uncertainty or
+  significance threshold.
+- Make clear that windows are not biological replicates.
 
-Owner: `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE1_RESULT_2026-09-19.md`.
+Owner: Phase 1 preregistration/result.
 
-### R3 — Sequential controls weaken single-artifact explanations
+### R3 — Exploratory single-source diagnostics
 
-- Density: selected S3 G1/G3 reversal persists across `K=0.02, 0.05, 0.10`,
-  while signal branches are not uniformly stable.
-- Mean degree: selected S3 grain reversal persists at `k-bar=4,8,16`, with a
-  prominent fragmentation warning.
-- Connectivity: selected S3 reversal persists in connected MST-backed graphs;
-  BCT reproduces selected qualitative directions.
-- Wording: “weakens simple explanations,” never “all artifacts excluded.”
+- Present density, degree and selected connected-graph checks as exploratory
+  diagnostics.
+- State what each named check weakens and what it does not control.
+- Keep graph fragmentation, finite-size differences and implementation limits in
+  the same panel or supplement.
+- Do not place these controls in the primary claim sentence.
 
-Owners: density, mean-degree and connected-graph control records dated
-2026-09-21.
+Owners: Phase 1 density, mean-degree and connected-graph records.
 
-### R4 — Multi-recording/animal recurrence
+### R4 — RIKEN multi-recording extension
 
-- Move the biological unit from source recording to animal-level nested summaries.
-- Show recording-level G1/G2/G3 trajectories and animal-level paired grain shifts.
-- Report Sleep `4/5` negative animal shifts and Anesthesia `3/4`, with concrete
-  medians and intervals as descriptive summaries.
-- Do not treat sessions, windows or Louvain trials as animals.
+- Use animal as the biological unit and show sessions nested within animal.
+- Report G1 effect, G3 effect, paired G3−G1 shift and categorical recording
+  reversals separately.
+- Show the animal-level means, medians and bootstrap intervals.
+- Describe the stage as a multi-recording extension: the Phase 1 source lineage
+  overlaps the Phase 2 `mouse05` recordings by animal label and state-frame
+  structure, although the materialized MAT files differ in ROI shape and hash.
 
-Owner: `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_MULTIRECORDING_RESULT_2026-09-22.md`.
+Owner: multi-recording preregistration/result and review audit.
 
-### R5 — Independent Hamburg CA1 external validation
+### R5 — Hamburg external stress test
 
-- Separate feasibility from result: processed objects and geometry were available;
-  Sleep state recovery remained blocked.
-- Analyze only the frozen Wake–Isoflurane anesthesia contrast.
-- Show seven animal trajectories, 39 Awake and 49 Isoflurane recordings, and
-  heterogeneous support: 4/7 negative grain shifts and 2/7 categorical reversals.
-- Explain that this is an independent CA1 experimental lineage and a declared
-  adaptation, not numerical or same-session replication.
+- Separate object/metadata availability from interpretability of the outcome.
+- Analyze only the frozen Wake–Isoflurane Anesthesia contrast.
+- Show 39 Awake and 49 Isoflurane recordings from seven animals, nested at the
+  animal level.
+- Show per-recording accepted ROI/node counts and the condition-linked G1
+  imbalance before any Q contrast interpretation.
+- Include the existing-Q diagnostic regression as a limitation analysis, not a
+  confirmatory correction.
+- Label the outcome: directionally compatible but inconclusive external stress
+  test; not clean external replication.
 
-Owners: Hamburg availability audit, anesthesia preregistration and result dated
-2026-09-22/23.
+Owners: Hamburg availability/preregistration/result and review audit.
 
-### R6 — R0–R3 transformation decomposition
+### R6 — Representation and transformation decomposition
 
-- Define R0 full single-neuron, R1 N-only, R2 random aggregation and R3 spatial
-  aggregation.
-- Report C1 finite size, C2 aggregation, C3 spatial organization and C4 total
-  shifts separately for RIKEN and Hamburg.
-- Freeze T-D at dataset level for both datasets.
-- Explain that the decomposition is heterogeneous and does not identify a causal
-  mechanism or a single artifact.
+- Define R0 full cellular representation, R1 N-only transformation, R2 random
+  aggregation and R3 spatial aggregation.
+- Report R0/R1/R2/R3 distributions and C1 finite-size/max-Q, C2 aggregation,
+  C3 spatial and C4 total differences.
+- Report the RIKEN animal×grain table directly; do not use a dataset-level
+  transformation label as the result.
+- Emphasize that C1 is major and consistently negative in the eight RIKEN cells,
+  while C2/C3/C4 remain heterogeneous.
 
-Owner: `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_TRANSFORMATION_DECOMPOSITION_RESULT_2026-09-24.md`.
+Owner: Phase 3C result and review-resolution audit.
 
-### R7 — Synthetic finite-size/max-Q calibration and synthesis
+### R7 — Synthetic finite-size/max-Q calibration
 
-- Report the degree-controlled SBM calibration as auxiliary, not biological data.
-- State `FS-B`, 100 replicates per cell, 200 Louvain repeats, maximum absolute
-  cell bias `0.209318`, and maximum substantive reversal rate `0.060`.
-- Explain that weak effects can be attenuated or sign-misclassified under the
-  frozen max-Q procedure, qualifying rather than erasing empirical results.
-- End with transformation-dependent inference instability and the limitations.
+- Treat the synthetic matrix as auxiliary calibration, not biological data.
+- Show planted versus estimated contrast, estimated/planted ratio, mean bias,
+  sign-error rate and substantive reversal rate for all nine cells.
+- State the maximum sign-error rate (`0.53`) separately from the maximum
+  substantive reversal rate (`0.06`).
+- State that large planted effects are also attenuated.
+- State that the calibration covers connected RIKEN-like `k-bar=16`, not Hamburg
+  `k-bar=4`.
 
-Owner: Phase 3C result and its two result-blind compute amendments.
+Owner: Phase 3C result and compute amendments.
+
+### R8 — Synthesis and limitations
+
+- Conclude that spatial coarse-graining materially changes the measured
+  state-dependent modularity contrast under the tested pipelines.
+- Describe finite-size/max-Q as a major contribution and aggregation/spatial
+  terms as heterogeneous contributors.
+- Present the Hamburg result as a limitation-aware external stress test.
+- Describe the programme as sequentially preregistered and adaptive across
+  stage-local freezes.
+- End with the distinction between methodological inference stability and any
+  biological or causal interpretation.
 
 ## Structured abstract skeleton
 
-Use the following headings in a future abstract draft. The claim freeze file
-contains the sentence-level map.
-
-1. **Background** — Modularity-based state inference may depend on declared
-   representation and spatial grain.
-2. **Gap** — Need an explicit stability benchmark that records direction changes,
-   control sequence, animal nesting and representation transformations.
-3. **Approach** — Frozen source calibration; RIKEN primary/multi-recording matrix;
-   density, degree and connectivity diagnostics; Hamburg CA1 anesthesia adaptation;
-   R0–R3 decomposition and synthetic calibration.
-4. **Primary result** — Direction-dependent modularity contrast changes across
-   grain, recurs in RIKEN animals and has heterogeneous Hamburg support.
-5. **Controls** — Named controls weaken simple density/degree/disconnectedness
-   accounts without establishing a causal grain effect.
-6. **External validation** — Hamburg is independent-lineage CA1 evidence under
-   an adapted, non-same-session-paired protocol; Sleep was not analyzed.
-7. **Decomposition** — No universal finite-size/aggregation/spatial component
-   explains both datasets.
-8. **Calibration caveat** — Max-Q/finite-size effects attenuate weak synthetic
-   effects and can occasionally reverse estimated direction.
-9. **Conclusion** — Tested modularity inference is transformation-sensitive;
-   no consciousness, mechanism, SRT or GRG claim follows.
+1. **Background** — State-dependent modularity contrasts depend on declared
+   signals, nodes, grains and graph construction.
+2. **Question** — Test whether the estimated contrast is stable across spatial
+   grains in cellular-resolution recordings.
+3. **Approach** — Source calibration; RIKEN primary matrix and multi-recording
+   extension; exploratory density/degree/connectivity diagnostics; Hamburg CA1
+   Anesthesia stress test; R0–R3 decomposition; synthetic finite-size/max-Q
+   calibration.
+4. **Primary result** — Spatial coarse-graining changes the contrast; RIKEN
+   fine-grain effects are attenuated toward weaker and heterogeneous coarse-grain
+   summaries.
+5. **Decomposition** — Finite-size/max-Q is major; aggregation and spatial terms
+   vary by animal and grain.
+6. **External stress test** — Hamburg is directionally compatible but
+   inconclusive because condition-linked ROI/node counts limit interpretation.
+7. **Limitations** — Window-level variance is sometimes not estimable; the
+   synthetic calibration is model- and degree-regime-specific; conditions are
+   not same-session paired in Hamburg.
+8. **Conclusion** — The tested modularity inference is transformation-sensitive;
+   no causal mechanism is identified.
 
 ## Minimal figure architecture
 
-### Figure 1 — Benchmark and objectification framework
+### Figure 1 — Analysis pipeline and nesting
 
-Main elements:
+Recording → signal → cell inclusion → spatial grain → graph → Q/max-Q → state
+contrast, with windows and recordings nested in animals where applicable.
 
-- recording → signal → cell inclusion → grain → graph → Q/max-Q → state contrast;
-- explicit nesting: windows/recordings within animals;
-- predeclared practical direction bands and result-blind sequence.
+Supplement: source/runtime provenance and Phase 0 gate.
 
-Supplement candidate: full source/code/data provenance and R0 gate.
+### Figure 2 — RIKEN primary matrix and uncertainty boundary
 
-### Figure 2 — Primary RIKEN objectification matrix
+- Sleep and Anesthesia `DeltaQ` across S1/S2/S3 × G1/G2/G3.
+- Descriptive `±0.01` bands.
+- Window counts, non-estimable state cells and a note that the band is not a
+  formal uncertainty threshold.
 
-Main elements:
+Supplement: full window-level Q values and recording×grain SE table.
 
-- Sleep and Anesthesia `DeltaQ` across S1/S2/S3 × G1/G2/G3;
-- practical null band and direction-reversed cells;
-- no inferential population bars for the single-recording primary matrix.
+### Figure 3 — Exploratory diagnostics and RIKEN extension
 
-Supplement candidate: every window-level Q and all 200-trial diagnostics.
+- Selected density, degree and connected-graph diagnostics clearly marked
+  exploratory.
+- Animal-level RIKEN G1/G3 paired shifts and bootstrap intervals.
+- Separate display of G1 effect, G3 effect, paired shift and categorical
+  reversals.
 
-### Figure 3 — Degree, connectivity and multi-recording controls
+Supplement: fragmentation diagnostics and all selected control cells.
 
-Main elements:
+### Figure 4 — Hamburg stress test and node-count limitation
 
-- selected S3 G1/G3 trajectories across K and matched degree;
-- connected-graph control with graph-invariant inset;
-- animal-level RIKEN multi-recording paired grain shifts.
+- Seven-animal Awake–Isoflurane recording trajectories.
+- Per-recording accepted ROI/node counts by condition.
+- Unadjusted and existing-Q diagnostic adjusted coefficients with intervals.
+- Explicit label: directionally compatible but inconclusive external stress test.
 
-Supplement candidate: full fragmentation diagnostics and BCT Q comparison.
+Supplement: per-recording metadata, group-size statistics and the uncompleted
+Sleep state-recovery gate.
 
-### Figure 4 — Hamburg external validation
+### Figure 5 — R0–R3 decomposition
 
-Main elements:
+- R0 full, R1 N-only, R2 random aggregation and R3 spatial aggregation.
+- C1–C4 distributions for RIKEN and Hamburg.
+- Raw distributions and contribution magnitudes; no dataset-level T-D headline.
 
-- seven-animal Awake–Isoflurane trajectories;
-- G1/G2/G3 condition contrasts and grain shifts;
-- explicit label: independent CA1, adapted pipeline, condition-level recordings.
+Supplement: transformation membership hashes, saved distributions and seeds.
 
-Supplement candidate: object inventory, Suite2p fields, eligibility and the
-unexecuted Sleep state-recovery gate.
+### Figure 6 — Synthetic finite-size/max-Q calibration
 
-### Figure 5 — R0–R3 transformation decomposition
+- Planted versus estimated contrast across all nine cells.
+- Estimated/planted ratio and bias.
+- Separate sign-error and substantive-reversal panels.
+- Degree-regime annotation: RIKEN-like `k-bar=16`, not Hamburg `k-bar=4`.
 
-Main elements:
-
-- R0 full, R1 N-only, R2 random aggregation, R3 spatial aggregation;
-- C1–C4 distributions at animal level for RIKEN and Hamburg;
-- T-D labels shown as descriptive heterogeneity, not a causal pathway.
-
-Supplement candidate: transformation membership hashes and repeat distributions.
-
-### Figure 6 — Synthetic finite-size calibration and synthesis
-
-Main elements:
-
-- planted versus estimated `DeltaQ` by N/effect cell;
-- bias and sign-error/reversal calibration;
-- final synthesis panel separating empirical evidence, controls, external support
-  and limitations.
-
-Supplement candidate: all nine cells, 100 replicates each, seed and checkpoint
-manifest.
+Supplement: all 900 replicates, seeds and checkpoint manifest.
 
 ## Tables
 
-1. Evidence ledger with exact owner, biological unit, result status and remaining
-   alternative explanation.
-2. RIKEN primary and multi-recording numerical summaries.
-3. Hamburg eligibility, adaptation and animal-level results.
-4. Phase 3C C1–C4 and synthetic FS-B calibration.
-5. Claim ladder: safe main text, discussion, exploratory/future, prohibited.
+1. Evidence ledger with owner, biological unit, stage-local freeze and claim
+   status.
+2. RIKEN recording and animal summaries, including estimable/non-estimable
+   window uncertainty.
+3. Hamburg eligibility, node-count imbalance, adaptation and diagnostic model.
+4. R0–R3 and C1–C4 decomposition values.
+5. Synthetic planted/estimated, bias, sign-error and substantive-reversal
+   calibration.
+6. Claim ladder: safe, exploratory, limitation-aware and prohibited wording.
+
+## Neighbor and novelty boundary
+
+The manuscript must acknowledge established work on Hamburg CA1 network
+analysis, graph-size/degree comparability, node/parcellation choice,
+modularity degeneracy and resolution limits, many-analysts variability, and
+scale/zoning aggregation analogues. The residual contribution is the combined
+stability-audit workflow and provenance record, not the generic proposition that
+analytical choices can matter.
 
 ## Supplementary material boundary
 
-Supplementary material may contain full window-level Q values, graph diagnostics,
-runtime/version records, seed manifests, BCT cross-check details, all density and
-degree cells, Hamburg object inventory, and the protocol deviation. It must not
-silently promote these diagnostics to new primary outcomes.
+Supplementary material may contain full Q tables, graph diagnostics, runtime and
+seed records, control-cell outputs, Hamburg object inventories, node-count CSVs,
+diagnostic regression details and the synthetic checkpoint manifest. It must not
+silently promote exploratory controls or diagnostic regressions to primary
+outcomes.
 
 ## Manuscript stop boundary
 
-This outline is the final Phase 4 deliverable. Do not automatically run Hamburg
-Sleep, add a metric family, amend old records, promote GRG concepts, or write the
-full manuscript. The next authorized stage is a separately reviewed manuscript
-v1 using this claim freeze.
+This outline is a major-revision draft, not a full manuscript. Do not start
+Hamburg Sleep, add a metric family, run a new graph or robustness control,
+promote a theory claim, or call the Hamburg result clean external replication.
+The next authorized stage is a second independent review of this outline and the
+claim boundary.

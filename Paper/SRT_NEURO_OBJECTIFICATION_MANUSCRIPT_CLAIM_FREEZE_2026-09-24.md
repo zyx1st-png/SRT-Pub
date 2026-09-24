@@ -1,9 +1,9 @@
 ---
 id: SRT-NEURO-OBJECTIFICATION-MANUSCRIPT-CLAIM-FREEZE-20260924
 type: manuscript_claim_freeze
-status: frozen
-version: v0_1
-record_stage: phase4_claim_freeze
+status: draft
+version: v0_2_major_revision
+record_stage: phase4_major_revision
 date: 2026-09-24
 layer: operations
 epistemic_layer: experimental
@@ -12,144 +12,170 @@ claim_level: P4
 canonical: false
 ai_do_not_use_for_definition: true
 domain: neuroscience
-tags: [Neuroscience, Manuscript, ClaimFreeze, Objectification, Modularity]
+tags: [Neuroscience, Manuscript, ClaimFreeze, ReviewResolution, Modularity]
 ---
 
-# Manuscript claim freeze
+# Manuscript claim boundary after PR #1051 review
 
 ## Scope
 
-This is a claim boundary for a future manuscript, not manuscript prose. It is
-derived from `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_EVIDENCE_SYNTHESIS_2026-09-24.md`.
-It does not alter any experiment record and does not authorize new analyses.
+This is a major-revision claim boundary for a future manuscript. It is derived
+from the review-resolution audit:
 
-## Frozen primary claim
+`Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PR1051_REVIEW_RESOLUTION_AUDIT_2026-09-24.md`.
 
-> Across the frozen cellular-recording pipelines tested, the direction of the
-> modularity-based state contrast changed with spatial grain, recurred across
-> multiple RIKEN animals, and showed heterogeneous convergent support in an
-> independent Hamburg CA1 anesthesia dataset. Matched-degree and connected-graph
-> controls weakened simple density/degree/disconnectedness explanations, while
-> the Phase 3C decomposition showed that finite-size effects are substantive but
-> not a uniform account: transformation contributions were heterogeneous and
-> synthetic max-Q calibration attenuated weak effects and occasionally produced
-> sign errors. This is a claim about the stability of a measured modularity
-> inference under declared representations, not about consciousness, a causal
-> neural mechanism, or SRT/GRG.
+It does not alter frozen experiment records, authorize new computation, or
+constitute full manuscript prose. The status is `draft` pending a second
+independent review.
 
-### Clause guards
+## Revised primary claim
+
+> **Across the tested cellular-resolution datasets, spatial coarse-graining
+> materially altered the estimated state-dependent modularity contrast. In the
+> RIKEN recording extension, this was characterized primarily by attenuation from
+> positive fine-grain contrasts toward weaker and heterogeneous coarse-grain
+> estimates. Finite-size/max-Q effects were a major contributor, while
+> aggregation and spatial grouping introduced additional heterogeneous changes.
+> The Hamburg Anesthesia stress test was limited by condition-linked differences
+> in recorded cell counts and therefore does not constitute clean external
+> replication.**
+
+This is a methodological claim about the stability of a measured modularity
+contrast under declared representations. It does not identify a causal neural
+mechanism or measure consciousness.
+
+## Clause guards
 
 | clause | allowed meaning | forbidden upgrade |
 |---|---|---|
-| frozen cellular-recording pipelines | the named RIKEN and Hamburg processed pipelines and declared grains | all neural recordings or all graph analyses |
-| modularity-based state contrast | `DeltaQ` based on Q and 200-repeat max-Q | generic neural organization or consciousness |
-| changed with spatial grain | direction changed in some declared cells/animals | every animal reverses, or grain is causal |
-| recurred across multiple RIKEN animals | RIKEN multi-recording animal-level recurrence | population-general law |
-| heterogeneous convergent support | Hamburg overall negative tendency with animal heterogeneity and 2/7 categorical reversals | strong external replication or numerical equality |
-| controls weakened explanations | selected diagnostic controls reduced plausibility of named simple accounts | all artifacts excluded, causal isolation |
-| finite-size effects substantive | C1/synthetic calibration showed measurable contribution/attenuation | finite size explains the empirical result alone |
-| occasional synthetic sign errors | model-dependent FS-B calibration, max rate `0.060` | empirical Q signs are corrected or invalidated |
+| tested cellular-resolution datasets | the named RIKEN extension and Hamburg Anesthesia stress test | all neural recordings or all graph analyses |
+| materially altered | saved DeltaQ changes across declared grain/representation operations | spatial grain is itself a biological cause |
+| RIKEN recording extension | multi-recording continuation with source-lineage overlap documented | fully independent replication of Phase 1 |
+| attenuation from positive fine-grain contrasts | animal-level RIKEN summaries and heterogeneous recording-level results | every animal or every recording attenuates |
+| finite-size/max-Q major contributor | C1 negative in all 8 RIKEN animal×grain cells; synthetic bias is material | finite size alone explains the empirical pattern |
+| heterogeneous aggregation/spatial changes | C2/C3 distributions vary by animal and grain | a unique causal aggregation or spatial mechanism |
+| Hamburg stress test | independent experimental lineage, adapted pipeline, condition-level recordings | clean external replication or same-session pairing |
 
 ## Secondary claim ledger
 
-| ID | status | manuscript wording | exact owner |
+| ID | status | permitted wording | owner / limitation |
 |---|---|---|---|
-| S1 | `SUPPORTED-WITH-QUALIFICATION` | Reversals are setting-specific and recur at animal/recording level in the RIKEN chain, with heterogeneous Hamburg support. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_MULTIRECORDING_RESULT_2026-09-22.md`; `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_EXTERNAL_HAMBURG_ANESTHESIA_RESULT_2026-09-23.md` |
-| S2 | `EXPLORATORY-SUPPORT` | The selected S3 G1/G3 reversal was not specific to `K=0.05`. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE1_DENSITY_SENSITIVITY_2026-09-21.md` |
-| S3 | `EXPLORATORY-SUPPORT` | Matched-degree diagnostics weaken a simple degree-collapse account. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE1_MEAN_DEGREE_CONTROL_2026-09-21.md` |
-| S4 | `EXPLORATORY-SUPPORT` | Selected reversals occur in connected MST-backed graphs; connectivity is not a sufficient explanation. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE1_CONNECTED_GRAPH_CONTROL_2026-09-21.md` |
-| S5 | `SUPPORTED-WITH-QUALIFICATION` | Finite size and max-Q estimation are substantive limitations. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_TRANSFORMATION_DECOMPOSITION_RESULT_2026-09-24.md` |
-| S6 | `SUPPORTED-WITH-QUALIFICATION` | Aggregation contributions are heterogeneous across RIKEN and Hamburg. | same Phase 3C result |
-| S7 | `SUPPORTED-WITH-QUALIFICATION` | Spatial organization contributes in some conditions but has no universal direction. | same Phase 3C result |
-| S8 | `SUPPORTED-WITH-QUALIFICATION` | Hamburg is convergent but heterogeneous external support under adaptation. | `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_EXTERNAL_HAMBURG_AVAILABILITY_AUDIT_2026-09-22.md`; `Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_EXTERNAL_HAMBURG_ANESTHESIA_RESULT_2026-09-23.md` |
+| S1 | `SUPPORTED-WITH-QUALIFICATION` | RIKEN animal-level G3−G1 shifts are negative in 4/5 Sleep and 3/4 Anesthesia animals, with heterogeneous recording signs. | multi-recording result; windows are not animals; Phase 1 lineage overlap |
+| S2 | `EXPLORATORY` | selected S3 G1/G3 diagnostic contrast was not specific to the tested density values. | single-source selected cells; not a global K control |
+| S3 | `EXPLORATORY` | selected matched-degree diagnostics weaken a simple degree-collapse explanation. | fragmentation and finite-size differences remain |
+| S4 | `EXPLORATORY` | selected connected MST-backed diagnostics show the contrast can occur without graph fragmentation. | does not exclude other graph differences |
+| S5 | `SUPPORTED-WITH-QUALIFICATION` | finite-size/max-Q effects are material and can strongly attenuate estimates. | synthetic calibration is model-dependent; k-bar=16 only |
+| S6 | `SUPPORTED-WITH-QUALIFICATION` | C2 aggregation and C3 spatial contributions are heterogeneous. | raw distributions, not T-D headline labels |
+| S7 | `INCONCLUSIVE-EXTERNAL` | Hamburg is directionally compatible but not cleanly interpretable as external replication. | condition-linked G1 N imbalance; adjusted diagnostic coefficient is not causal |
+| S8 | `PROVENANCE-QUALIFICATION` | the programme is sequentially preregistered and adaptive across stage-local freezes. | not one globally frozen pipeline |
 
-## Title decision
+## Label policy
 
-Preferred title:
+`MR-C` is not a manuscript claim. The result record's operational rule was
+supplied after the complete multi-recording result rather than fully formalized
+in the preregistration.
 
-> **State-dependent modularity inference is not invariant across spatial grain in cellular-resolution neural networks**
+`T-D` is not a manuscript dataset-level finding. The Phase 3C prose names a
+variable pattern, but the implementation calls a distribution `variable` when
+it is not confined to one sign band, and the dataset aggregation removes
+`other` labels before selecting a single label. The manuscript reports
+R0/R1/R2/R3 and C1/C2/C3/C4 distributions directly.
 
-This is preferred to “Spatial grain destabilizes state-dependent modularity
-inference in cellular-resolution neural networks” because “not invariant” states
-the observed methodological property without implying that grain itself causes
-destabilization. The title contains no SRT, GRG, consciousness, objectification-
-causal, or universal-reversal claim.
+## Title
+
+> **A stability audit of state-dependent modularity across spatial grains in
+> cellular-resolution neural networks**
+
+The title is methodological and does not imply a biological causal effect.
 
 ## Abstract skeleton
 
-Every line below maps to the frozen claim ladder; it is not full manuscript
-prose.
+**Background:** Modularity-based state contrasts can depend on how cellular
+recordings are represented as signals, nodes and graphs.
 
-**Background:** Network modularity is often interpreted as a state-dependent
-property, but its inference can depend on how cellular recordings are converted
-into signals, nodes and graphs. The benchmark asks whether a declared state
-contrast remains directionally stable across spatial grain.
+**Question:** Do declared spatial-grain transformations preserve the estimated
+state-dependent modularity contrast in a cellular-resolution benchmark?
 
-**Gap:** Existing scale-sensitive findings establish that modularity can change
-with spatial resolution, but a preregistered, result-blind stability record with
-sequential graph controls, animal-level recurrence and explicit transformation
-decomposition is less commonly made the primary object of inference.
+**Approach:** We completed a source-calibration gate, a result-blind RIKEN
+recording matrix and multi-recording extension, selected density/degree/
+connectivity diagnostics, an adapted Hamburg CA1 Anesthesia stress test, and an
+R0–R3 transformation decomposition with synthetic finite-size/max-Q calibration.
 
-**Approach:** We froze signal, grain, graph, window, seed and max-Q rules; first
-reconstructed the source result, then evaluated RIKEN primary and multi-recording
-data, selected density/degree/connectivity controls, an independent Hamburg CA1
-Wake–Isoflurane adaptation, and an R0–R3 transformation decomposition.
+**Primary result:** Spatial coarse-graining materially changed the estimated
+contrast. RIKEN animal summaries were positive at G1 and weaker/heterogeneous at
+G3; finite-size/max-Q effects were major, with additional heterogeneous
+aggregation and spatial contributions.
 
-**Primary result:** The direction of the modularity-based state contrast changed
-across predeclared grains in the RIKEN matrix and recurred across multiple RIKEN
-animals, while Hamburg showed heterogeneous convergent support.
+**External stress test:** Hamburg had 39 Awake and 49 Isoflurane recordings from
+seven animals, but condition-linked ROI/node-count differences and non-paired
+recordings limit external replication claims.
 
-**Controls:** Selected reversals persisted across the declared density grid,
-mean-degree regimes and connected MST-backed graphs, weakening simple K-only,
-degree-collapse and disconnectedness explanations without isolating a causal
-grain mechanism.
+**Limitations:** The `±0.01` classification band is not a sampling-error bound;
+some RIKEN state cells have one window; synthetic sign error differs from
+substantive reversal; the synthetic calibration is RIKEN-like `k-bar=16` and not
+Hamburg `k-bar=4`.
 
-**External validation:** Hamburg CA1 recordings from seven animals provided an
-independent experimental-lineage test under a declared Suite2p signal, smoothing,
-grain, graph and window adaptation; condition-level recordings were nested in
-animal and were not same-session paired.
+**Conclusion:** Under the tested representations, the measured modularity
+contrast is transformation-sensitive. The result is not a causal or
+consciousness claim.
 
-**Decomposition:** RIKEN and Hamburg both received heterogeneous T-D
-decomposition classifications; finite-size, aggregation and spatial terms did
-not form one universal explanation.
+## Main-text evidence rules
 
-**Calibration caveat:** A degree-controlled synthetic calibration was FS-B:
-max-Q estimation attenuated weak planted effects and occasionally produced
-substantive sign errors, so empirical direction should not be read without the
-finite-size/max-Q limitation.
+- Treat animal as the biological unit wherever animal-level data exist.
+- Report G1 effect, G3 effect, paired G3−G1 shift and categorical reversals as
+  separate summaries.
+- Do not use the `±0.01` band as a significance threshold.
+- Report finite-size/max-Q before discussing aggregation or spatial terms.
+- Keep selected density, degree and connectivity analyses in exploratory or
+  supplementary sections.
+- Name Hamburg's node-count imbalance and condition-level non-pairing before any
+  directionally compatible description.
+- Describe Phase 2 as a multi-recording extension because of source-lineage
+  overlap with Phase 1.
+- Describe the programme as sequentially preregistered and adaptive.
 
-**Conclusion:** Under the tested representations, state-dependent modularity
-inference is transformation-sensitive rather than representation-invariant.
-The result is methodological and does not establish consciousness, a causal
-neural mechanism, SRT or GRG.
+## Neighbor boundary
+
+The manuscript must cite the established methodological neighborhood rather than
+claiming priority for scale sensitivity itself:
+
+- [Yang et al. 2021](https://doi.org/10.1371/journal.pbio.3001146) — Hamburg
+  CA1 source biology and network analysis;
+- [van Wijk et al. 2010](https://doi.org/10.1371/journal.pone.0013701) — N and
+  mean-degree comparability;
+- [Zalesky et al. 2010](https://doi.org/10.1016/j.neuroimage.2009.12.027) —
+  node/parcellation scale;
+- [Good et al. 2010](https://doi.org/10.1103/PhysRevE.81.046106) — Qmax size
+  dependence and degeneracy;
+- [Fortunato & Barthélemy 2007](https://doi.org/10.1073/pnas.0605965104) —
+  modularity resolution limit;
+- [Botvinik-Nezer et al. 2020](https://doi.org/10.1038/s41586-020-2314-9) —
+  analytic-choice variability;
+- [MAUP literature](https://pmc.ncbi.nlm.nih.gov/articles/PMC7151983/) —
+  cross-domain scale/zoning analogue.
+
+The residual increment is a sequential, provenance-preserving stability audit
+that joins a RIKEN extension, explicit finite-size/transformation decomposition
+and a limitation-aware external stress test. It is not nine individually novel
+claims.
 
 ## Prohibited manuscript sentences
 
 ```text
-The experiment validates SRT or GRG.
+The experiment validates a theory of consciousness.
 Objectification causes the neural reversal.
-The reversal is universal across animals, brain regions or network metrics.
+The RIKEN extension is a fully independent replication of Phase 1.
+Hamburg provides clean convergent external replication.
+MR-C or T-D is a preregistered primary replication criterion.
 All simple artifacts have been excluded.
 Finite size, aggregation, spatial organization, density, degree or
 disconnectedness alone explains the finding.
-Hamburg numerically replicates Kiyooka or provides same-session replication.
 Modularity Q directly measures consciousness.
-Phase 0 is an exact native MATLAB replication.
+Phase 0 is native MATLAB exact replication or R0-PASS.
 ```
 
-## Neighbor boundary
+## Stop boundary
 
-The paper must acknowledge rather than claim priority over:
-
-- Kiyooka et al.'s scale-dependent modularity result
-  ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41653913/));
-- multiverse analysis in network neuroscience
-  ([Comet](https://pmc.ncbi.nlm.nih.gov/articles/PMC12892349/));
-- spatial/parcellation sensitivity of graph metrics
-  ([Spatial Stability of Functional Networks](https://pmc.ncbi.nlm.nih.gov/articles/PMC8894326/));
-- many-analysts and analytic-choice variability
-  ([One data set, many analysts](https://pmc.ncbi.nlm.nih.gov/articles/PMC9971968/)).
-
-The candidate increment is the combined, prospective, direction-level,
-animal-nested, control-sequenced and provenance-preserving benchmark—not the
-general proposition that analytical choices matter.
+This claim boundary does not authorize new analysis or full manuscript prose.
+The next gate is a second independent review; only after that review may the
+claim freeze be considered for a final manuscript draft.
