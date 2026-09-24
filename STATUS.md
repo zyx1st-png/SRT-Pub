@@ -50,9 +50,11 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = bounded latent-reconstructive-reach reality pressure-test / operationalization
-FIRST BOUNDED INSTANCE OF CURRENT NEXT = evolution/popgen owner-overlap recovery audit using the existing draft source-native reconstruction package; this is not a second NEXT and does not grant merge/maturity status
-THIRD FUSION DOMAIN = HOLD pending current-next audit + §8.1 root-return accounting
+CURRENT NEXT = root-return / fusion-lane disposition after the author-approved bounded cross-objectification test route
+CURRENT NEXT ROUTING OWNER = 01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_CROSS_OBJECTIFICATION_ROOT_RETURN_2026-09-24.md
+CURRENT NEXT HANDOFF = Operations/Handoffs/SRT_GRG_ROOT_RETURN_FUSION_LANE_CURRENT_NEXT_HANDOFF_2026-09-24.md
+PRIOR LATENT-REACH NEXT = COMPLETE ENOUGH FOR ROUTING; reach retained as bounded operational subtool, not the master vertical architecture
+THIRD FUSION DOMAIN = HOLD pending explicit root-return author disposition; no automatic acquisition
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
@@ -107,8 +109,10 @@ v0.3
 ```
 
 
-Current merged continuity route for this bounded instance:
+Current merged continuity / routing surfaces:
 
+- `01_Source_Intuition/SRT_AUTHOR_ROUTING_GRG_CROSS_OBJECTIFICATION_ROOT_RETURN_2026-09-24.md`
+- `Operations/Handoffs/SRT_GRG_ROOT_RETURN_FUSION_LANE_CURRENT_NEXT_HANDOFF_2026-09-24.md`
 - `Operations/Handoffs/SRT_GRG_DIALOGUE_RECOVERY_CURRENT_NEXT_HANDOFF_2026-09-24.md`
 - `01_Source_Intuition/SRT_GRG_DIALOGUE_CONTINUITY_RECOVERY_MASTER_2026-09-23.md`
 - `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`
@@ -116,10 +120,12 @@ Current merged continuity route for this bounded instance:
 Execution guard:
 
 ```text
-existing CURRENT NEXT remains the only next;
-evolution/popgen recovery audit = first bounded instance serving that next;
-no third fusion domain until the current-next audit and §8.1 accounting are closed;
-unmerged / chat-copied handoff text cannot override this route.
+one CURRENT NEXT only;
+CURRENT NEXT = root-return / fusion-lane disposition;
+the larger bounded evolution / FRR research package remains review evidence, not mainline authority;
+no third fusion domain until an explicit root-return author decision;
+if one future test is authorized, target / source boundary / strongest baseline / GRG probes / failure conditions / §8.1 status must be frozen before execution;
+no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
 
 ### 0.4a Provenance / vocabulary owner
