@@ -47,10 +47,13 @@ The following direct author statements are preserved as provenance for this adju
 
 > 「继续开 PR 完成调整，记录作者裁决」
 
+> 「SRT 偏哲学和本体论，GRG 偏应用、通用语法、认知论和规范性。」
+
 These quotations establish the author-level direction to:
 - retain and refine the L0/L1/L2 architecture rather than discard it;
 - integrate normative / epistemic / ontological analysis as related facets;
-- record the resulting direction as an author adjudication.
+- record the resulting direction as an author adjudication;
+- distinguish SRT's philosophical / ontological role from GRG's applied / general-grammar / epistemic / normative role.
 
 They do **not** by themselves settle every English term chosen by the machine-side reconstruction below.
 
@@ -110,7 +113,7 @@ The three layers should instead be defined more precisely as distinct generative
 
 AUTHOR-ACCEPTED direction:
 
-> L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization, reach, equivalence and Selection burden that is not exhausted by the determinate actuality of that Selection.
+> L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization and further differentiation conditions that is not exhausted by the determinate actuality of that Selection.
 
 L0 is therefore:
 
@@ -170,7 +173,7 @@ L0-facing and L1-facing descriptions are non-identical analytic / generative bur
 
 AUTHOR-ACCEPTED direction:
 
-> L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, support, proxy, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
+> L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
 
 Thus:
 
@@ -193,41 +196,34 @@ but:
 
 > does this past actuality still change what later Selection can do, express, ignore, support, constrain or generate?
 
-### 2.3a Pending author terminology fork — N1
+### 2.3a Author clarification — N1 resolved
 
-Independent review identified a lexical collision in the machine-side English wording of §§2.1 and 2.3.
+The author now clarifies the SRT / GRG division of labour:
 
-The current wording uses ordinary-looking terms that now also have routed GRG technical meanings:
+> SRT is primarily philosophical / ontological; GRG is primarily applied, general-grammatical, epistemological and normative.
 
-~~~text
-reach
-equivalence
-support
-proxy
-~~~
-
-The Live Term Router marks the relevant GRG families as research-level, with `support` and `proxy` explicitly overloaded.
-
-This adjudication therefore records the **conceptual author direction** but leaves the final English lexical choice pending one further author clarification:
+Therefore the L0/L1/L2 canonical ontology should **not** depend for its definitions on GRG technical meanings such as:
 
 ~~~text
-N1-A
-retain these words as ordinary-language prose
-+ add a hard non-GRG-reading guard
-
-N1-B
-use the GRG technical meanings
--> would require a separate GRG-to-canonical adjudication
-
-N1-C
-rewrite the L0/L2 definitions in neutral vocabulary
-that carries the same burden without routed GRG terms
+generative reach
+generative equivalence
+GRG proxy
+GRG support
 ~~~
 
-Until that clarification is made:
+N1 is resolved as:
 
-- no future canonical editor may infer GRG `reach / generative equivalence / support / proxy` from the current author record;
-- the current wording must not be copied verbatim into canonical Spine as if those GRG meanings had been admitted.
+~~~text
+N1 = C
+
+rewrite the L0 / L2 definitions in neutral SRT ontological vocabulary;
+do not use routed GRG technical meanings as canonical definitional burden.
+~~~
+
+GRG may later analyse a realization of L0/L1/L2 using reach, proxy, support, equivalence or other GRG grammar.
+
+That downstream application does not back-define SRT ontology.
+
 
 ### 2.4 The three-layer relation
 
@@ -578,7 +574,73 @@ It does not prove a complete moral theory.
 
 It does establish that moral / normative analysis should not be architecturally isolated from ontology and cognition as an externally appended layer.
 
-## 9. GRG relation
+## 9. SRT / GRG division of labour
+
+The author explicitly fixes the higher-level division:
+
+~~~text
+SRT
+= primarily philosophical / ontological
+
+GRG
+= primarily applied
+  + general generative grammar
+  + epistemology / cognition research
+  + normativity research
+~~~
+
+This is a role emphasis, not an absolute firewall.
+
+### 9.1 What remains with SRT
+
+SRT should retain:
+
+- the minimal ontology of Selection-totality;
+- L0/L1/L2 ontological / generative typing;
+- One formation;
+- finite positionality;
+- primitive anti-objectification and anti-jump guards;
+- the minimal source-conditions and non-inference gates needed to stop epistemic or normative claims from being read back into primitive ontology;
+- owner-level boundaries such as O0 != morality and occurrence != correctness.
+
+SRT should **not** become a full epistemology or moral theory merely because those later domains grow from the same formed reality.
+
+### 9.2 What moves primarily to GRG
+
+GRG should be the main research architecture for:
+
+- reusable generative transformation grammar;
+- application across domains;
+- proxy / model / expectation / reconstruction;
+- epistemic revision;
+- intervention grammar;
+- normative comparison and relation integrity;
+- cross-position / social / institutional applications;
+- empirical pressure-testing of how formed generative relations transform.
+
+Thus the earlier author statement that ontology, cognition and normativity are different facets of one formed generative relation remains accepted at the level of **continuity of reality**, while the research / definition ownership is asymmetric:
+
+~~~text
+SRT
+= ontological source / boundary conditions
+
+GRG
+= main grammar for epistemic / normative / applied development
+~~~
+
+### 9.3 Consequence for Spine Part II
+
+Part II should remain thin.
+
+It should preserve only enough post-One routing to:
+
+- protect canonical non-identities and OPEN gates;
+- point to current owner routes;
+- show that later epistemic / normative / agency research is downstream of formed relations rather than primitive ontology.
+
+It should not become the substantive owner of epistemology or normative grammar.
+
+## 10. GRG relation
 
 GRG is not promoted to canonical ontology by this adjudication.
 
@@ -619,7 +681,7 @@ proxy / reach / friction / generative debt
 -/> automatic universal ontology nodes
 ~~~
 
-## 10. Consequence for the current Spine audit
+## 11. Consequence for the current Spine audit
 
 The active Spine-thinning audit should now be rewritten under this author adjudication.
 
@@ -655,7 +717,29 @@ L1 — Actualized Differentiation
 L2 — Retained Generative Efficacy
 ~~~
 
-## 11. Explicit non-closures
+## 12. Canonical landing ownership — N2 resolved
+
+The author-level role split also resolves the landing question.
+
+Because SRT is the philosophical / ontological owner, L0/L1/L2 canonical labels and definitions should be landed **local-owner-first**.
+
+N2 is resolved as:
+
+~~~text
+N2 = A
+
+1. land / synchronize the three-layer labels and definitions
+   in the appropriate SRT local canonical owners / symbol registry;
+
+2. only then rewrite the Generative Ontology Spine
+   as the minimal cross-owner kernel + thin post-One routing surface.
+~~~
+
+Therefore Spine should not become a second independent local definition authority for L0/L1/L2.
+
+A future canonical package may still include pointer-maintenance edits across multiple files, but semantic definition authority remains local-owner-first.
+
+## 13. Explicit non-closures
 
 This adjudication does not decide:
 
@@ -672,7 +756,7 @@ This adjudication does not decide:
 - GRG canonicalization;
 - any domain-specific mechanism.
 
-## 12. Author status packet
+## 14. Author status packet
 
 ~~~text
 two-role Spine architecture:
@@ -747,6 +831,18 @@ GRG as canonical ontology:
 
 GRG as downstream pressure-testing / relational grammar:
   ACCEPT
+
+SRT primary role:
+  philosophy / ontology
+
+GRG primary role:
+  application / general grammar / epistemology / normativity
+
+N1 terminology fork:
+  RESOLVED = neutral SRT vocabulary; no GRG technical terms in L0/L2 definitions
+
+N2 landing ownership:
+  RESOLVED = local-owner-first, then Spine routing
 
 canonical Spine edit:
   NOT AUTHORIZED BY THIS SOURCE ALONE
