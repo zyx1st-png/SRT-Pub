@@ -145,6 +145,18 @@ L0
 != morality
 ~~~
 
+Landing-time reading guards for the machine formulation above (negative guards only; exact wording is settled by the L0 owner at C1):
+
+~~~text
+localization in L0
+!= formed locality / One-level Selection-position
+   (current Spine §6.1: finite positionality supplies event-local finitude / indexing, not formed locality)
+
+constraint in L0
+!= L2 retained historical efficacy by definition
+   (keeps the existing `L2 -> later L0 != identity` guard intact)
+~~~
+
 ### 2.1a Terminology boundary — N1 resolved
 
 The author has now clarified the SRT / GRG division of labour:
@@ -409,6 +421,7 @@ A future C-class rewrite should aim for a minimal Part I with approximately this
 
 1. Selection-totality minimum
    O0 / S0 co-primitive analytic burdens
+   + Selection term-of-art guard (current Spine §2.1; relied on by SRT_AI_START §1.1)
 
 2. L0 / L1 / L2 precise generative architecture
    including manifestation / relative-backgrounding polarity
@@ -619,7 +632,7 @@ Detailed epistemic / normative comparison, revision, intervention and applicatio
 
 This audit does not migrate current SRT philosophy bridge owners.
 
-Ethics, Ethics_Agency, Political Philosophy and Social Economics remain on their existing SRT-side bridge routes unless separately adjudicated.
+Ethics (`Philosophy/SRT_Philosophy_Ethics.md`), Ethics_Agency, Political Philosophy, Social Economics and Social Cognition remain on their existing SRT-side bridge routes unless separately adjudicated.
 
 GRG development is subordinate to / compatible with the current O1/O2 gate typing; it is not a shortcut around those gates.
 
@@ -804,6 +817,8 @@ before canonical landing:
   explicit author bounded unpause / execution authorization required
 ~~~
 
+The role split, N1 and the landing recommendation were all fixed during rapid same-day author dialogue on 2026-09-24. `Governance/SRT_EDIT_PROTOCOL.md` same-day rapid author-dialogue guard therefore applies: no Freeze-A semantic landing in the same dialogue pass that produced these decisions.
+
 
 ## 14. Future canonical-edit scope
 
@@ -827,8 +842,9 @@ No intermediate merge may leave local L0/L1/L2 definitions and Spine §11 in con
 
 Mandatory supporting maintenance includes, where affected:
 - Core_Law/SRT_L0_Metaphysics.md and _SRT_SYMBOL_TABLE.md for L0/L1/L2 label / definition synchronization;
-- CANONICAL_REGISTRY.md §0 routing compression, because it carries semantic routing content rather than a mere pointer;
+- CANONICAL_REGISTRY.md §A.0 (Generative Ontology Spine entry) routing compression, because it carries semantic routing content rather than a mere pointer;
 - STATUS.md, Core_Law/SRT_One_Formation.md, _SRT_CONTEXT_ROUTER.md and Registry pointers where Spine section numbers / anchors change;
+- every other inbound `Spine §N` pointer consumer, enumerated by grep at landing time (24 non-archive files at audit time, including Core_Law/SRT_Collective_Selection.md, Glossary/SRT_Live_Term_Router.md and the GRG Card template / fusion-case files);
 - this audit / author-decision references;
 - deterministic navigation regeneration if already required by tooling.
 
@@ -849,7 +865,6 @@ If a contradiction is exposed, STOP and open a separate owner-reconciliation tas
 A future edit FAILS if it:
 - promotes Ghost Operator / Ĝ into primitive Selection or a prior chooser;
 - erases the occurrence / anchoring-persistence / Stable-ISP distinction;
-
 - removes the L0/L1/L2 three-layer architecture;
 - drops the open / non-preclosed burden from L0;
 - drops manifestation / relative backgrounding from L1;

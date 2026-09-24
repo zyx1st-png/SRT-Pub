@@ -468,7 +468,7 @@ One
 may include, under separate gates:
 
 - Stable ISP;
-- formed Selection-position / endogenous perspective candidates;
+- formed Selection-position / perspective routes (universal One-level perspective sufficiency = OPEN; GRG endogenous-perspective analysis remains a noncanonical operationalization);
 - Bearer;
 - Concern / d;
 - Agency;
@@ -687,10 +687,11 @@ GRG
 This adjudication does **not** migrate existing SRT-side philosophy bridge owners.
 
 Current bridge / routing surfaces such as:
-- Philosophy/SRT_Ethics.md;
+- Philosophy/SRT_Philosophy_Ethics.md;
 - Philosophy/SRT_Ethics_Agency.md;
 - Philosophy/SRT_Political_Philosophy.md;
-- Philosophy/SRT_Social_Economics.md
+- Philosophy/SRT_Social_Economics.md;
+- Philosophy/SRT_Social_Cognition.md
 
 remain where they are unless separately adjudicated.
 
@@ -850,6 +851,8 @@ This adjudication does not decide:
 - Bearer sufficiency for subjecthood;
 - consciousness;
 - O2-M all-things-considered morality;
+- exact normativity owner placement / O1-O2-C formal landing (current Spine OPEN; the SRT / GRG role emphasis does not close it);
+- the later relation between existing SRT Philosophy bridge owners and GRG epistemic / normative research;
 - GRG canonicalization;
 - any domain-specific mechanism.
 
