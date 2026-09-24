@@ -96,7 +96,7 @@ uv run python scripts/srt_deep_nav_coverage_audit.py --report Operations/_SRT_DE
 - [ ] Verify all routes in `_SRT_CONTEXT_ROUTER.md` point to existing files using the generated report.
 - [ ] Verify all deep nodes in `_SRT_DEEP_THEORY_MAP.md` point to existing files using the generated report.
 - [ ] Re-run coverage audit and confirm M6 medium candidates are reduced after `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` is scanned.
-- [ ] Retire / redirect `Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md`: its active fresh-chat prompt predates the later generativity-first normativity control chain and must not remain a controlling navigation surface.
+- [x] Retire / redirect `Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md`: archived on 2026-09-24; fresh-chat prompt retained as provenance but explicitly non-controlling; `_SRT_CONTEXT_ROUTER.md §20` points to the later generativity-first chain.
 
 ### P1 — Deep route quality pass
 
