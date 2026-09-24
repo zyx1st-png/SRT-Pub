@@ -272,15 +272,16 @@ F1  P 冲突项 / 阶段改名（顺序本身待 A-3）
 
 ```text
 A-1 「组织，作为选择算子的actualize」
-    -> D-1：gating = formed organization，作为 Ĝ 角色的 actualization；primitive Selection != 对预给流的 gating
+    -> D-1：gating = formed organization，在该组织中实现 / 承载 Ĝ-type Selection role；primitive Selection != 对预给流的 gating
     -> 与评审推荐的 G1 同向；F2 在 source 层 RESOLVED
 A-2 「……我觉得生成性更合适一点」
     -> D-2：生成性读法获作者明确认可（A1）；“维持”仅作来源 provenance
     -> 评审提出的 D-maint 替代读法被作者选择关闭；F4 RESOLVED
 A-3 「先优化Spine，然后优化Canonical。这次对话作为canonical 优化的重要材料」
-    -> D-3：Spine 先行，其次其他 canonical owner；#1055 是 canonical-owner 阶段的材料
-    -> 评审关于 local-owner-first 的推荐未被采纳（作者裁决优先）；no-contradiction 合并条件作为 guard 保留
-    -> F1 RESOLVED（顺序由作者裁决确定；标签碰撞已通过 PV-K / PV-S 改名消除）
+    -> D-3：Spine 语义 / 起草工作先行，其次其他 canonical owner；#1055 是 canonical-owner 阶段的材料
+    -> 评审关于 local-owner-first 的语义工作推荐未被采纳（作者裁决优先）
+    -> integration / merge 仍受 no-contradiction guard 约束：不能把与当前 local owners 冲突的 Spine 中间态单独落到 main；必要时使用 stacked / synchronized package
+    -> F1 RESOLVED（语义工作顺序由作者裁决确定；标签碰撞已通过 PV-K / PV-S 改名消除）
 A-4 「有」
     -> D-4：S §1 / §5 / §16 / §19 = A1（证据为作者追认）；其余节按 S §0.1 表
     -> F3 RESOLVED；F9 随之定性为作者接受的 OPEN 收窄
