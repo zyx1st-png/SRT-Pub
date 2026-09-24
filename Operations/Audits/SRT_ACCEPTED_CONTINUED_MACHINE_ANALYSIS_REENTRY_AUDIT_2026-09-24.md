@@ -270,8 +270,8 @@ After current-owner absorption, the recurring topic-conditional residual is:
 2. **CIF-P09 separation guard**
    - friction admission and transition threshold are different questions.
    - friction typing is already routed through the 09-22 capacity record §M and reach record §V;
-   - transition / lock-in threshold is already routed through `Core_Law/SRT_Occlusion_Dynamics.md T-OCC-1`.
-   - the residual is the explicit **non-collapse guard**, not either half as a new owner.
+   - the **pathological lock-in side** is routed through `Core_Law/SRT_Occlusion_Dynamics.md T-OCC-1`; the non-pathological successful-reorganization / transition side remains inside the DA2/DA4/DA5 residual interface.
+   - the CIF-P09 residual is the explicit **non-collapse guard**: friction admission must not be treated as identical to either pathological lock-in or successful transition.
 
 3. **concern–path-space duality**
    - source-intuition only, under the Concern / d / Bearer guards above.
@@ -288,13 +288,7 @@ remaining narrow residual interfaces
 
 Identity-continuity and hysteresis remain important provenance / test context, but are no longer counted as unrouted residuals.
 
-## 5. Corrected normativity chain — generativity-first controls
-
-The first draft routed normativity primarily through:
-
-`SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`.
-
-That was too strong.
+## 5. Normativity chain — generativity-first controls
 
 ### 5.1 Later same-day controlling adjudication
 
@@ -375,8 +369,13 @@ Retrieval order for normativity re-entry:
 
 ### 5.5 Objective-value A–E package disposition
 
-`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIVE_VALUE_SCOPE_BEARER_CONCERN_AGENCY_2026-09-14.md` remains an author-accepted bounded package, but must be read under later / current owner guards:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIVE_VALUE_SCOPE_BEARER_CONCERN_AGENCY_2026-09-14.md` remains an author-accepted bounded package, but later generativity-first adjudication changes the normative reading of one important part.
 
+Specifically, its B-side use of Bearer / non-outsourcable stake as a bridge toward “better / worse for whom” is **not** the controlling primitive normative ground after `SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`: who bears returned consequences remains relevant as a derivative diagnostic / standing question, but position-relative generativity controls the stronger normative reconstruction.
+
+What remains intact under current owners:
+
+- the structural P+E Bearer route itself remains owned by the Spine / Bearer architecture;
 - Bearer is not complete moral standing;
 - Concern / d does not admit moral standing;
 - agency / responsibility is separate;
@@ -385,7 +384,7 @@ Retrieval order for normativity re-entry:
 
 Disposition:
 
-`PARTIALLY_ABSORBED / SUPPORTING PROVENANCE`, not a standalone canonical-write authorization for old semantics.
+`PARTIALLY_ABSORBED / SUPPORTING PROVENANCE`; its Bearer structure remains routed, but the older stake-bearing-first normative bridge does not control current normativity and the package is not a standalone canonical-write authorization for old semantics.
 
 ### 5.6 Active old handoff risk — follow-up required
 
@@ -437,25 +436,8 @@ none of this makes them CURRENT NEXT automatically
 
 ## 7. Routing consequence
 
-Do not add another root index.
+Routing is implemented through `_SRT_CONTEXT_ROUTER.md §20`: current owners are read first for ordinary topic questions; §20 is entered for genuine history/provenance work and for the three narrow recovered interfaces whose present meaning still depends on the source chain (DA2/DA4/DA5 role separation, CIF-P09 non-collapse, concern–path-space).
 
-Use `_SRT_CONTEXT_ROUTER.md §20` as a **topic-triggerable re-entry bridge**.
-
-The route must work in two directions:
-
-~~~text
-historical continuity query
--> re-entry audit
-
-or
-
-current topic enters one of the recovered burdens
--> current topic route
--> re-entry cross-reference
--> source chain only when needed
-~~~
-
-Known current owners must be named, not left as generic “current owner(s)”.
 
 ## 8. First-pass limitations
 
