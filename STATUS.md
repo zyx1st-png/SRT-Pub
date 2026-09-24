@@ -48,6 +48,9 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1032 provenance / vocabulary reconciliation = MERGED / 35c547ef160d9460ce654b05107baae06c47d91e
 #1047 Spine minimal-kernel L0/L1/L2 author adjudication + restoration audit = MERGED / 7308c8b0c3b2bc71811e59a789c360bb5053c839
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
+#1055 pre-object vertical gating / glue / generative-divinity source + reconciliation plan = MERGED / 01faf40bfb903a1f2c9d378939f5452d36d7cad9
+#1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; SERVES (DOES NOT EXECUTE) CURRENT NEXT
+2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
 CURRENT NEXT = post-stop-loss GRG method contraction / root-question review; no new fusion-domain acquisition
@@ -232,6 +235,17 @@ C1 (L0 Metaphysics / Symbol Table) and C2 (Spine rewrite)
 opening them needs explicit author unpause and must not create a second CURRENT NEXT;
 stacked one-owner-per-PR landings satisfy both "one Freeze-A owner at a time"
 and the audit's "no half-landed main" condition only if merged as one consistent set.
+
+2026-09-24 author sequencing
+(01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md D-3)
+= semantic / drafting work: Spine optimization first, then the other canonical owners;
+  supersedes the restoration audit §14.0 machine "local-owner-first" semantic-work recommendation;
+  integration / merge order remains constrained by the no-contradiction guard:
+  main must not carry Spine and local owners in contradictory states;
+  if synchronization is required, use a stacked / synchronized package and merge only a mutually consistent state;
+  canonical-owner stage material = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_VERTICAL_GATING_GLUE_GENERATIVE_DIVINITY_2026-09-24.md
+    + Operations/Proposals/SRT_PREOBJECT_VERTICAL_GENERATION_CANONICAL_RECONCILIATION_PLAN_2026-09-24.md;
+  starting either stage (and unpausing owner cleanup) still requires explicit author instruction.
 ```
 
 The pre-#947 unmerged branch `theory/canonical-cleanup-b1-individuation-20260911` is candidate patch material only. Do not merge it as-is; re-audit / rebase its useful repairs against the post-#957 landing sequence.

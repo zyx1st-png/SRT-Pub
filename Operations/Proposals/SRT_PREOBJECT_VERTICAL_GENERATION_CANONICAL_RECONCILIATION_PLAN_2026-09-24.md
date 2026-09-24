@@ -17,6 +17,10 @@ dependency:
   - Core_Law/SRT_L0_Metaphysics.md
   - Core/SRT_Core_21_Minimal_Axioms.md
   - Core_Law/SRT_One_Formation.md
+  - Core_Law/SRT_Irreversibility.md
+  - _SRT_SYMBOL_TABLE.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md
+  - Operations/Audits/SRT_PR1055_PREOBJECT_VERTICAL_GATING_INDEPENDENT_CONTENT_REVIEW_2026-09-24.md
 tags: [CanonicalReconciliation, Verticality, PreObject, Gating, Glue, L0, Selection, OneFormation, GRG, CClass]
 ---
 
@@ -34,6 +38,10 @@ tags: [CanonicalReconciliation, Verticality, PreObject, Gating, Glue, L0, Select
 > ~~~
 >
 > It does not create a second CURRENT NEXT.
+>
+> **Sequencing (author second adjudication D-3, 2026-09-24):** semantic / drafting work proceeds Spine optimization first, then optimization of the other canonical owners. This plan is the contract for the **canonical-owner stage**, and the #1055 dialogue record is important material for it. It runs after the Spine semantic stage and does not run a second, parallel Spine rewrite. This ordering does **not** authorize a merge order that leaves `main` semantically contradictory; if the Spine rewrite cannot coexist with current local owners, use a stacked / synchronized package and merge only a mutually consistent state. Source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md`; review: `Operations/Audits/SRT_PR1055_PREOBJECT_VERTICAL_GATING_INDEPENDENT_CONTENT_REVIEW_2026-09-24.md`.
+>
+> **Labels:** conflict items are `PV-K1 … PV-K8` and stages are `PV-S0 … PV-S5`. This namespace avoids collision with the Phase C1 / C2 labels of `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`.
 
 ## 1. Why canonical landing is deferred
 
@@ -52,7 +60,7 @@ The new source direction touches several Freeze-A burdens simultaneously:
 
 Under Governance/SRT_EDIT_PROTOCOL.md, any landing that changes these meanings is C-class / foundation-level work.
 
-The same-day rapid-dialogue guard therefore requires:
+The combined gate is:
 
 ~~~text
 dialogue / analysis
@@ -63,7 +71,9 @@ dialogue / analysis
 -> owner-by-owner landing
 ~~~
 
-The first two steps begin with the source file linked above and this plan.
+The first three steps come from the same-day rapid-dialogue guard of `Governance/SRT_EDIT_PROTOCOL.md`. Author second adjudication comes from the `AGENTS.md` Constitution / Ontology Dialogue Hard Guard, and independent review from the Edit Protocol C-class pre-merge review rule.
+
+State: the source record exists. This plan is the landing contract, **not** the conflict / OPEN map; that map is stage PV-S0. The author second adjudication has been performed for gating level, divinity reading, sequencing and provenance. It has not yet been performed for exact owner wording.
 
 ---
 
@@ -112,7 +122,7 @@ generative divinity
 
 ## 3. Conflicts / OPEN questions that must be paid before landing
 
-### C1 — primitive Selection vs gating
+### PV-K1 — primitive Selection vs gating
 
 Current canonical:
 
@@ -138,11 +148,13 @@ Required reconciliation:
 - Is there a source-level distinction between primitive Selection and expectation-mediated gating?
 - How is the OPEN anti-tautology burden affected?
 
+Author second adjudication (D-1): gating = a formed organization in which an Ĝ-type Selection role is realized / carried, and primitive Selection is not gating of a pregiven flow / partition / criterion. The first two questions are thereby answered at source level. What remains for landing is exact owner wording, whether two formal types are needed, the relation of gating to the GRG `support` family, and the anti-tautology burden (unchanged, OPEN).
+
 Hard failure:
 
 > do not reintroduce a prior chooser / Ghost Operator.
 
-### C2 — L0 vs object-formability
+### PV-K2 — L0 vs object-formability
 
 Current canonical L0:
 
@@ -166,7 +178,7 @@ Hard failure:
 
 > do not turn L0 back into a prior container edited by downstream objects.
 
-### C3 — occurrence vs object formation
+### PV-K3 — occurrence vs object formation
 
 Current canonical:
 
@@ -186,7 +198,7 @@ Required reconciliation:
 - distinguish L1 determinate actuality from later object stability;
 - avoid making every L1 event a durable object.
 
-### C4 — L2 / retained efficacy vs glue
+### PV-K4 — L2 / retained efficacy vs glue
 
 Candidate relation:
 
@@ -202,12 +214,13 @@ Open:
 - Is glue only a metaphor for a family of L2/One mechanisms?
 - Does it name a distinct burden not already carried by retained efficacy / vertical reconstitution?
 - Does the burden belong in canonical SRT at all, or only in GRG / domain analysis?
+- Owners to consult: `Core_Law/SRT_Irreversibility.md` (retained historical efficacy); `Ĝ†` gated writeback in `_SRT_SYMBOL_TABLE.md`; 2026-09-22 §D / §H / §I (stability through friction / homeostatic reconstitution, friction, support); the 2026-09-10 §2 cross-dimensional selectability stability axis.
 
 Hard failure:
 
 > do not create a fifth substance or universal force.
 
-### C5 — expectation placement
+### PV-K5 — expectation placement
 
 Current source architecture already distinguishes prediction from structural expectation.
 
@@ -217,12 +230,13 @@ Open:
 - Is it necessarily downstream of One?
 - Can a non-One recurrent organization instantiate expectation?
 - Does expectation belong in SRT canonical ontology, GRG vocabulary, or both with different meanings?
+- Route through the 2026-09-20 B + C0 / C1 typing; structural / operative expectation `!=` `E_G` automatically.
 
 Hard failure:
 
 > primitive Selection must not silently acquire a prior goal / forecast / preferred endpoint.
 
-### C6 — One formation
+### PV-K6 — One formation
 
 Current One owner treats recurrent vertical reconstitution as stronger than event-level Selection.
 
@@ -240,7 +254,7 @@ Hard failure:
 
 > vertical structure != One automatically.
 
-### C7 — whole-level surplus
+### PV-K7 — whole-level surplus
 
 Candidate:
 
@@ -260,13 +274,17 @@ Required pressure against:
 
 No canonical novelty wording until that burden is paid.
 
-### C8 — divinity / inexhaustible generativity
+Source state: the constitutive reading ("at the relevant grain, the Whole is partly constituted by that stabilized organization") is A1 (D-4). It narrows the 2026-09-10 §7 OPEN. The Whole ↔ One / collective One relation remains OPEN.
+
+### PV-K8 — divinity / inexhaustible generativity
 
 Source-level accepted refinement:
 
 ~~~text
 no determinate formation exhausts generativity
 ~~~
+
+Author second adjudication (D-2): the generativity reading is explicitly endorsed. The original 维持 (maintenance) wording is provenance only.
 
 Required decision:
 
@@ -327,6 +345,20 @@ open-ended evolution:
 
 metaplasticity / trained immunity:
   present process rewrites future change conditions
+
+added after independent review (burden-specific):
+  Aristotle Metaphysics Z.17 / Bradley's regress:
+    organization is not one more part (source §4)
+  Spinoza natura naturans / natura naturata; S. Kauffman "God as creativity":
+    "生成永远大于已经生成之物" (source §16)
+  Deacon (constraint / absential / teleodynamics); Juarrero (enabling constraints); Pattee (constraint vs dynamics):
+    gating + glue + whole-level surplus
+  Friston free-energy principle / Markov blankets:
+    expectation-shaped boundary maintenance and object boundaries
+  Kauffman adjacent possible:
+    altered reachability (source §9 option A)
+  Szilard / Landauer / Bennett; Smoluchowski trapdoor / Feynman ratchet:
+    physics of the Maxwell-demon analogy (source §6)
 ~~~
 
 The question is not whether these traditions contain “similar words”.
@@ -349,7 +381,9 @@ pre-object differentiation
 
 No landing is authorized yet. If the author later authorizes C-class work, use this order.
 
-### Stage C0 — conflict / OPEN map
+Author order (D-3): the Spine optimization comes first, carried by the Spine restoration contract (`Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`). The stages below form the subsequent canonical-owner stage. Carried guard: main must not be left with the Spine and the local owners in contradictory states.
+
+### Stage PV-S0 — conflict / OPEN map
 
 Create one bounded audit that:
 
@@ -359,22 +393,24 @@ Create one bounded audit that:
 - marks OPEN issues;
 - separates wording correction from real ontology change.
 
-### Stage C1 — Generative Ontology Spine
+### Stage PV-S1 — Generative Ontology Spine
 
 Reason:
 
 - owns cross-owner order / non-identity / OPEN routing;
 - must decide whether the new pre-object vertical burden changes formation routing before local owners are edited.
 
+Execution under D-3: this is **not** a separate Spine rewrite. The Spine is optimized first under the Spine restoration contract. Where that stage touches verticality, gating, object formation or whole-level surplus, this record is consulted as accepted analysis (`_SRT_AGENT_RETRIEVAL_PROFILE.md` §0.1). PV-S1 then only verifies that the resulting Spine routes the pre-object vertical burden without contradiction. A bounded Spine follow-up is opened only if that check fails.
+
 Target:
 
 - minimal structural routing only;
-- no new G / glue substance;
+- no new `Ĝ` / glue substance;
 - no scientific novelty language.
 
-### Stage C2 — L0 Metaphysics
+### Stage PV-S2 — L0 Metaphysics
 
-Only after C1.
+Only after PV-S1.
 
 Target questions:
 
@@ -382,9 +418,11 @@ Target questions:
 - how formed history can alter later L0-facing generation without making L0 a prior field;
 - whether “object-formability” needs any canonical sentence.
 
-### Stage C3 — Core 21 Minimal Axioms
+Supporting owners to cross-check at this stage (Edit Protocol C-class): `_SRT_SYMBOL_TABLE.md` (the `L_0`, `Ĝ` and `Ĝ†` rows) and `CANONICAL_REGISTRY.md` backlinks.
 
-Only if C1/C2 require it.
+### Stage PV-S3 — Core 21 Minimal Axioms
+
+Only if PV-S1 / PV-S2 require it.
 
 Target:
 
@@ -393,7 +431,7 @@ Target:
 - clarify any formal gating realization;
 - do not close the anti-tautology problem.
 
-### Stage C4 — One Formation
+### Stage PV-S4 — One Formation
 
 Only after primitive/event-level burdens are stable.
 
@@ -402,7 +440,7 @@ Target:
 - relation among recurrent verticality, support, glue-like stability, expectation and One;
 - preserve event-level verticality != One.
 
-### Stage C5 — downstream / GRG reconciliation
+### Stage PV-S5 — downstream / GRG reconciliation
 
 After SRT owner landing, if warranted:
 
@@ -439,6 +477,16 @@ Default preference:
 
 > keep them as explanatory labels unless a distinct burden survives.
 
+Provisional triage after independent review (router labels; M; to be confirmed at PV-S0). "Gating", "glue" and "divinity" appear in the source file title, which makes them router-trigger cases:
+
+| Wording | Provisional label | Existing burden to compare |
+|---|---|---|
+| gating | PARTIAL_OVERLAP | D-1 places it at formed-organization level (realization / carrier of an Ĝ-type role); the router already lists gating as near wording of GRG `support` |
+| vertical (pre-object inquiry) | OVERLOADED_SAME_NAME | One Formation Def-OF-1; Spine §3 event-level verticality; 2026-09-22 §C–§D; GRG v0.3 §4 |
+| glue | WORKING_LABEL_ONLY; likely PARTIAL_OVERLAP | 2026-09-22 §D / §H / §I; One vertical reconstitution; 2026-09-10 §2 stability axis |
+| structural expectation | PARTIAL_OVERLAP | 2026-09-20 B + C0 / C1; `!= E_G` automatically |
+| generative divinity | WORKING_LABEL_ONLY | L0 non-preclosure (D-2 generativity reading) |
+
 ---
 
 ## 7. Canonical acceptance tests
@@ -449,9 +497,10 @@ Any future semantic diff must satisfy all of the following.
 
 ~~~text
 primitive Selection
-!= prior G object
+!= prior Ĝ object
 != prior agent
 != menu selection
+!= gating of a pregiven flow (D-1)
 ~~~
 
 ### B. No L0 warehouse regression
@@ -497,6 +546,14 @@ Per SRT_EDIT_PROTOCOL C-class rule:
 - explicit OPEN items;
 - no merge on REVISE / FAIL.
 
+### I. No contradictory main
+
+No merge may leave the Spine and the local owners (L0 Metaphysics, Symbol Table, One Formation, Core 21) in contradictory states. The author's Spine-first instruction governs semantic / drafting order, not permission to merge a contradictory intermediate state. If synchronization is required, use a stacked / synchronized package and merge only a mutually consistent state.
+
+### J. C-class cross-check
+
+`_SRT_SYMBOL_TABLE.md`, the target canonical file and the related main text / compact core / registry backlinks are checked for every semantic diff (`Governance/SRT_EDIT_PROTOCOL.md` C 类).
+
 ---
 
 ## 8. Relation to current GRG stop-loss
@@ -523,6 +580,9 @@ Any later cross-domain test should begin only after this root burden is clarifie
 ~~~text
 source record: WRITTEN
 canonical reconciliation plan: THIS FILE
+independent content review of #1055: PERFORMED (review record linked above)
+second author adjudication on gating level / divinity reading / sequencing / provenance: PERFORMED (D-1 … D-4)
+semantic / drafting sequencing: Spine optimization first -> this canonical-owner stage; merge only mutually consistent states
 canonical owner edits: HOLD
 second author adjudication on exact owner wording: NOT YET PERFORMED
 independent C-class review: NOT YET PERFORMED

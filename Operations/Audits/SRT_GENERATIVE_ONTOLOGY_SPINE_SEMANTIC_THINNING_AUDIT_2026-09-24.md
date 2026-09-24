@@ -803,6 +803,8 @@ Do not create multiple parallel canonical Spine definition authorities.
 
 ## 14.0 Canonical landing order — implementation recommendation, not author quote
 
+> **Superseded semantic-work ordering (2026-09-24 author sequencing):** the author has since fixed the semantic / drafting order as **Spine optimization first, then the other canonical owners** (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1055_REVIEW_SECOND_ADJUDICATION_2026-09-24.md` D-3). The "local-owner-first" semantic order below is kept as provenance only. This does **not** authorize a contradictory merge order: the merge condition "no half-landed canonical main state" remains in force. If the Spine-first rewrite cannot coexist with current local owners, use a stacked / synchronized package and merge only a mutually consistent state. Execution start still requires explicit author instruction.
+
 The author has not directly chosen between repository packaging variants N2-A / N2-B in A0-Q wording.
 
 Current definition authority nevertheless supports the following machine execution recommendation:
