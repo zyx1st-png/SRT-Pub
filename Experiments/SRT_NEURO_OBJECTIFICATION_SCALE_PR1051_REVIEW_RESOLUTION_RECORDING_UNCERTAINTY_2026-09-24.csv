@@ -1,0 +1,13 @@
+recording_id,condition,animal_id,grain,state,n,mean_q_max,sample_variance_estimable,reason
+mouse01_sleep,sleep,mouse01,G1,wake,1,0.7577982086050301,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse01_sleep,sleep,mouse01,G2,wake,1,0.3202303338877845,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse01_sleep,sleep,mouse01,G3,wake,1,0.2898898692957819,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse03_sleep,sleep,mouse03,G1,wake,1,0.7244674662788819,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse03_sleep,sleep,mouse03,G2,wake,1,0.3078203657603207,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse03_sleep,sleep,mouse03,G3,wake,1,0.19380838909228626,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse04_day1_sleep,sleep,mouse04,G1,wake,1,0.6393070005356828,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse04_day1_sleep,sleep,mouse04,G2,wake,1,0.33153553355200294,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse04_day1_sleep,sleep,mouse04,G3,wake,1,0.3092023424183469,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse05_ane,ane,mouse05,G1,target,1,0.6931102318322805,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse05_ane,ane,mouse05,G2,target,1,0.43688776974288335,False,one state window; sample variance and DeltaQ SE are not estimable
+mouse05_ane,ane,mouse05,G3,target,1,0.23932679063360884,False,one state window; sample variance and DeltaQ SE are not estimable
