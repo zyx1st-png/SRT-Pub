@@ -591,16 +591,18 @@ When answering or editing a non-simple SRT question:
 
 ## 20. Route: Accepted / Continued Analysis Re-entry
 
-**Use when the query mentions either continuity/history OR one of the recovered burdens**, including: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, coordination threshold, hysteresis, support vs replacement, identity continuity, concern–path-space, embodied position, future selectability, reorganizability provenance, generative reselectability history, or why a current concept took this form.
+**Use this route when the task explicitly asks for history / provenance / continuity / why a concept took its current form**, including: we discussed this before, accepted machine analysis, author-confirmed synthesis, bare continue / 继续 history, lost reasoning branch, old analysis that may still matter, or the historical source / lineage of coordination thresholds, support-vs-replacement, identity continuity, concern–path-space, second-order Selection, reorganizability or generative reselectability.
 
-### Primary
+Do **not** trigger this route merely because a current-topic query contains broad terms such as `future selectability`, `embodied position`, `identity continuity`, `hysteresis` or `Concern`. For ordinary current-theory questions, enter through the normal topic owner first. Follow that topic's conditional §20 cross-reference only when provenance / historical reconstruction is actually needed.
+
+### Primary — only for a genuine re-entry / provenance task
 
 - `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md`
 
-### Conditional secondary — load only when topic matched
+### Conditional secondary — load only when the historical subtopic matches
 
-#### ChoiceMap 2026-07-28 -> 2026-08-10 chain
+#### ChoiceMap reviewed segment 2026-07-28 -> 2026-08-10
 
 - `01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md`
 - `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`
@@ -608,25 +610,39 @@ When answering or editing a non-simple SRT question:
 - `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`
 - `01_Source_Intuition/SRT_SIMONDON_OPERATOR_YINYANG_SECOND_ORDER_SELECTION_CROSSWALK_2026-08-10.md`
 
-Current owner / route checks for that chain:
+This is a reviewed **segment**, not the root of the complete ChoiceMap lineage; upstream parent material before 2026-07-28 remains outside the current re-entry pass.
+
+Current owner / route checks:
 
 - support vs replacement / pathological closure -> `Core/SRT_OPEN_TENSIONS.md §4` + `Core_Law/SRT_Occlusion_Dynamics.md`;
 - generative reselectability -> `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` + `Core/SRT_OPEN_TENSIONS.md §4`;
-- second-order Selection / individuation -> `Core_Law/SRT_Individuation.md` + current STATUS/canonical reconciliation;
+- hysteresis -> `Core/SRT_Core_12b_Ontology_L2.md Ax-L2-01`; discrimination status -> `Core/SRT_Core_24_Discriminating_Predictions.md P24-3` = NO-GO at discrimination-spec stage / calibration target;
+- 08-09 second-order Selection -> `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md` + STATUS §9 + PH-IND03; `Core_Law/SRT_Individuation.md` uses a distinct stronger subject/self-consciousness “second-order” meaning and is not the owner of the 08-09 construct;
+- identity / lineage -> `Core_Law/SRT_One_Formation.md` continuity / lineage / identity guard; strict numerical and branch/merge identity remain OPEN;
+- Bearer guard -> `Core_Law/SRT_Generative_Ontology_Spine.md §8 / OPEN register`; C3+C4+C5 does not by itself establish same-Bearer identity;
+- Concern / d -> `_SRT_D_VALUE_CANONICAL.md` + Spine's `Bearer <-> Concern` OPEN guard; preserve the 07-25 `d/q/o` embargo when reading the 07-31/08-09 source chain;
+- CIF-P09 friction side -> 09-22 capacity §M + reach §V; transition / lock-in side -> `Core_Law/SRT_Occlusion_Dynamics.md T-OCC-1`; the residual is the non-collapse guard between the two questions;
 - compensation / supported equivalence -> `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md §§R/V/W`.
 
 #### 2026-09-14 normativity provenance
 
 Read current controlling route first:
 
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` when GRG normativity is in scope;
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
-- `Core/SRT_OPEN_TENSIONS.md §4`.
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
+2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md`;
+3. `Operations/Audits/SRT_O1_O2_CONSTITUTIVE_NORMATIVITY_OWNER_LANDING_READINESS_2026-09-14.md`;
+4. `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
+5. `Core/SRT_OPEN_TENSIONS.md §4`;
+6. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` when GRG normativity is in scope.
 
 Then, only for provenance / derivative diagnostics:
 
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md`;
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIVE_VALUE_SCOPE_BEARER_CONCERN_AGENCY_2026-09-14.md`.
+
+Historical handoff guard:
+
+- `Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` is historical routing provenance only for this re-entry path. Its active-status fresh-chat prompt predates the controlling generativity-first reconciliation and must **not** be used as the current controlling handoff without a later redirect / supersession note.
 
 #### 2026-09-20 -> 2026-09-23 GRG continuity
 
@@ -650,7 +666,7 @@ Do not reconstruct a second competing classification for that period.
 - later explicit supersession / controlling adjudication controls current meaning;
 - the 09-14 post-Selection consequence-bearing-first normativity record is provenance under later generativity-first control;
 - this route is for continuity / re-entry, not for reopening canonical owners automatically;
-- pre-2026-07-28 material is not claimed audited by the current re-entry pass.
+- the current ChoiceMap audit covers the 07-28 -> 08-10 segment; earlier upstream parent material is not claimed audited.
 ---
 
 ## 21. Route: Core 24 — Floor Replacement / Dynamic Normativity / Non-Reductive Verification
