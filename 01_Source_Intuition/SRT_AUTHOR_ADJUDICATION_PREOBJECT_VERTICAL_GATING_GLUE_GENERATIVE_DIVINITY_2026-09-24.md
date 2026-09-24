@@ -221,7 +221,7 @@ Second adjudication (D-4): this acceptance is A1. It narrows the OPEN item in `0
 
 ---
 
-## 6. Operator correction — gating is formed organization actualizing the Selection operator, not post hoc sorting of formed objects
+## 6. Operator correction — gating is formed organization realizing / carrying a Selection-operator role, not post hoc sorting of formed objects
 
 This is a central author correction.
 
@@ -256,7 +256,7 @@ Level typing, second adjudication D-1 (author: 「组织，作为选择算子的
 
 ~~~text
 gating
-= a formed organization, as the actualization of the Selection-operator (Ĝ) role
+= a formed organization in which an Ĝ-type Selection role is realized / carried
 
 primitive Selection
 != gating of a pregiven flow / partition / criterion
@@ -301,7 +301,7 @@ Therefore the present intuition must not be landed as a literal prior operator f
 
 Safer source-level reading (revised under D-1; `_SRT_SYMBOL_TABLE.md` forbids plain `G` for this role):
 
-> **`Ĝ` names a formal / formed / model-level role-carrier for a declared Selection realization. A gating organization is one such realization: the organization in which that role is actualized. Primitive Selection remains the actualising generative relation itself.**
+> **`Ĝ` names a formal / formed / model-level role-carrier for a declared Selection realization. A gating organization is one formed realization / carrier of an Ĝ-type role; the role describes what the organization does rather than naming something prior that the organization actualizes. Primitive Selection remains the actualising generative relation itself.**
 
 `Ĝ` is not narrowed to a gating carrier. The author's 「选择算子G」 in §0 is quoted wording and is kept as written.
 
@@ -608,7 +608,7 @@ generative openness (the L0 aspect of Selection, not a prior stage)
 -> recurrent stabilization / glue
 -> vertical organization
 -> structural expectation
--> gating organization (actualization of the Selection-operator role)
+-> gating organization (formed realization / carrier of an Ĝ-type Selection role)
 -> altered later generative conditions
 -> further Selection
 ~~~
@@ -854,7 +854,7 @@ Expectation is materially operative:
 it gates / biases generative passage and reshapes reachability.
 
 Gating belongs to formed organization,
-as the actualization of the Selection-operator role (D-1);
+as a realization / carrier of an Ĝ-type Selection role (D-1);
 primitive Selection is not gating of a pregiven flow.
 
 Repeated selective permeability plus support / correction / compression
@@ -922,4 +922,4 @@ research mode: U
 
 The next canonical move, if later authorized, must proceed through a bounded conflict / OPEN map and owner-by-owner C-class review rather than wholesale migration from this file.
 
-Author sequencing (second adjudication D-3): Spine optimization first, then optimization of the other canonical owners. This record is important material for the canonical-owner stage. Starting either stage requires a separate explicit author instruction.
+Author sequencing (second adjudication D-3): Spine optimization first, then optimization of the other canonical owners. This is the semantic / drafting order. It does not authorize merging a Spine state that contradicts current local owners; if synchronization is required, integration must use a stacked / synchronized package and merge only a mutually consistent state. This record is important material for the canonical-owner stage. Starting either stage requires a separate explicit author instruction.
