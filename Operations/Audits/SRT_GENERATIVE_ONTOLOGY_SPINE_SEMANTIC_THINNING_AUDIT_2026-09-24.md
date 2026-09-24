@@ -755,6 +755,27 @@ The future rewrite must account for every item currently named in Spine §13 rat
 
 Existing OPEN items outside the compact Spine register remain OPEN under their own owners.
 
+## 12.1a Items present in the 2026-09-13 Spine §9 register but no longer named in §13
+
+Post-merge routing check (2026-09-24). The post-migration 2026-09-13 Spine §9 register (commit `c96c497d`, after the OPEN-register migration recorded in `Operations/Audits/SRT_OPEN_REGISTER_MIGRATION_CLOSURE_2026-09-13.md`) contained the items below. Some of them arrived in that migration; the others were already in the Spine §9 register before it. The 2026-09-14 Selection-totality retype (commit `09bbd46b`) moved the register to §13 and shortened its compact list. These items are no longer named there; they survive only through §13's clause "Existing OPEN items not contradicted here remain OPEN even if omitted from this compact list".
+
+| 2026-09-13 Spine §9 register item | Ref | Note |
+|---|---|---|
+| finite positionality <-> formation locus / post-One Position / subject-position | S03 | added in the 2026-09-13 migration; cross-owner; relevant to §5.1 of this audit |
+| Bearer <-> actual 承担 | S11 | already in Spine §9 before the migration |
+| unique empirical / numerical Bearer admission threshold | S10 | added in the 2026-09-13 migration; PROVISIONAL routing; no other canonical surface |
+| Bearer <-> position stability | S13 | added in the 2026-09-13 migration; PROVISIONAL routing; no other canonical surface |
+| Bearer canonical ownership / sufficiency hardening | S22 | added in the 2026-09-13 migration; owner-routing OPEN; no other canonical surface |
+| scale attribution across tightly coupled nested Ones — cross-layer non-identity gate only | S18 (gate half) | added in the 2026-09-13 migration; One Formation §7 and Collective Selection §9 point here |
+| Concern <-> agency | — | pre-migration Spine item |
+| subject-position -> cognition | — | pre-migration Spine item |
+| bare-d retyping | — | pre-migration Spine item |
+| local One-owner lineage wording reconciliation | — | pre-migration Spine item; may be discharged by the One Formation landing, not verified here |
+
+This check does not establish that any item was closed. Whether a later adjudication discharged any of them is **not verified item by item here**.
+
+Future C2 requirement: re-list each item in Part I or Part II, or record the specific adjudication that closed or re-routed it. Do not let the catch-all clause be the only surviving carrier. Any interim restoration of these items in the current Spine is a Freeze-A OPEN-register edit and needs its own authorization.
+
 ## 13. Size and split policy
 
 The previous 340–390-line estimate is withdrawn.

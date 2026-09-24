@@ -27,7 +27,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
 - **Upstream floor**: `Core_Law/SRT_L0_Metaphysics.md` and `Core/SRT_Core_21_Minimal_Axioms.md` — Selection precedes a completed chooser; every Selection is finite-position-bound.
 - **Cross-owner routing**: `Core_Law/SRT_Generative_Ontology_Spine.md` — the universal formation route stops at One; Selection-position is not a second universal endpoint.
 - **Downstream standing**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — Stable ISP is a stronger recurrent standing criterion.
-- **Downstream Bearer route**: `Core_Law/SRT_Generative_Ontology_Spine.md §7` — `formed One / Selection-position + P + E -> Bearer`; this file does not replace that gate.
+- **Downstream Bearer route**: `Core_Law/SRT_Generative_Ontology_Spine.md §8` — `formed One / Selection-position + P + E -> Bearer`; this file does not replace that gate.
 - **Downstream subject model**: `Core_Law/SRT_Individuation.md` — subject-position / self-consciousness modelling does not define One formation.
 - **Downstream collective model**: `Core_Law/SRT_Collective_Selection.md` — collective ISP remains separately gated.
 - **Bridge crosswalk**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` — formed/stable/generative distinctions do not own the One definition.
@@ -324,7 +324,7 @@ new Level assignment;
 Level 2 / HOLD exit.
 ```
 
-The scale-attribution line arrived from `STATUS.md §OPEN register` under `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`, unchanged and **not closed**. Only the local formation / unit half sits here: the cross-layer non-identity gate stays with `Core_Law/SRT_Generative_Ontology_Spine.md` §9 and higher-order realization with `Core_Law/SRT_Collective_Selection.md`.
+The scale-attribution line arrived from `STATUS.md §OPEN register` under `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`, unchanged and **not closed**. Only the local formation / unit half sits here: the cross-layer non-identity gate stays with the `Core_Law/SRT_Generative_Ontology_Spine.md` §13 OPEN register and higher-order realization with `Core_Law/SRT_Collective_Selection.md`.
 
 No OPEN item above is closed merely by replacing an admission presupposition with a weaker formation guard. Exact formal classifiers, identity, boundary, scale and stronger standing remain separately gated.
 

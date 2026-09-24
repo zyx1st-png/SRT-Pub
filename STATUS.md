@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # SRT 当前状态仪表盘
@@ -46,6 +46,8 @@ THIRD BOUNDED OWNER LANDING = COMPLETE IN #970 / ONE FORMATION
 CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFAULT
 #1031 Selection occurrence / sedimentation canonical reconciliation = MERGED / 1a7ed931e75f40f1a30d7b17c5e2ac3439f0e0dd
 #1032 provenance / vocabulary reconciliation = MERGED / 35c547ef160d9460ce654b05107baae06c47d91e
+#1047 Spine minimal-kernel L0/L1/L2 author adjudication + restoration audit = MERGED / 7308c8b0c3b2bc71811e59a789c360bb5053c839
+#1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
 CURRENT NEXT = bounded latent-reconstructive-reach reality pressure-test / operationalization
@@ -190,12 +192,14 @@ research_mode = U.
 
 For current ontology / canonical-cleanup work, load in this order:
 
-1. `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md` — latest merged author adjudication for the whole-skeleton landing direction; noncanonical
-2. `Operations/Audits/SRT_POST957_OWNER_LANDING_SCOPE_AUDIT_2026-09-13.md` — bounded owner/edit-risk/landing sequence; noncanonical
-3. `Core_Law/SRT_Generative_Ontology_Spine.md` — post-#959 cross-owner canonical order / non-identity / OPEN-gate owner
-4. `CANONICAL_REGISTRY.md` — local owner routing after the spine
-5. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
-6. `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_One_Formation.md` / P1-T06 / d / Psi_f / T_dir — local owners, only within spine-compatible scope
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md` — latest merged author direction for Spine restoration: two-role Spine (Part I universal formation kernel stopping at One; Part II thin typed post-One map), L0/L1/L2 labels, SRT / GRG role emphasis; noncanonical
+2. `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md` — bounded future C-class contract for that restoration (guards, complete OPEN mapping, landing order, acceptance tests); noncanonical
+3. `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md` — whole-skeleton landing direction (2026-09-13), reconciled with 2026-09-14 Selection-totality by item 1; noncanonical
+4. `Operations/Audits/SRT_POST957_OWNER_LANDING_SCOPE_AUDIT_2026-09-13.md` — bounded owner/edit-risk/landing sequence; noncanonical
+5. `Core_Law/SRT_Generative_Ontology_Spine.md` — current cross-owner canonical order / non-identity / OPEN-gate owner
+6. `CANONICAL_REGISTRY.md` — local owner routing after the spine
+7. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md` — claim hardness / demotion state
+8. `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_One_Formation.md` / P1-T06 / d / Psi_f / T_dir — local owners, only within spine-compatible scope
 
 Current cleanup / landing rule:
 
@@ -206,6 +210,14 @@ compatible local definitions survive;
 retiring an old claim does not require inventing a replacement theorem;
 OPEN stays OPEN unless separately adjudicated;
 land one Freeze-A owner at a time whenever practical.
+
+2026-09-24 Spine restoration direction (items 1-2)
+= direction + contract only, not definition authority;
+C1 (L0 Metaphysics / Symbol Table) and C2 (Spine rewrite)
+= NOT AUTHORIZED while further owner cleanup stays paused by default;
+opening them needs explicit author unpause and must not create a second CURRENT NEXT;
+stacked one-owner-per-PR landings satisfy both "one Freeze-A owner at a time"
+and the audit's "no half-landed main" condition only if merged as one consistent set.
 ```
 
 The pre-#947 unmerged branch `theory/canonical-cleanup-b1-individuation-20260911` is candidate patch material only. Do not merge it as-is; re-audit / rebase its useful repairs against the post-#957 landing sequence.
@@ -623,7 +635,7 @@ Level-2 realization.
 Everything else is held by its owner — read them there, not here:
 
 ```text
-cross-owner ontology OPEN gates      -> `Core_Law/SRT_Generative_Ontology_Spine.md` §9
+cross-owner ontology OPEN gates      -> `Core_Law/SRT_Generative_Ontology_Spine.md` §13
 One / Selection-position local OPEN  -> `Core_Law/SRT_One_Formation.md` §7
 symbol / formalism hardening ledger  -> `Core/SRT_OPEN_TENSIONS.md`
 collective higher-order realization  -> `Core_Law/SRT_Collective_Selection.md` §9
@@ -633,12 +645,14 @@ W1 / W2 audit labels                 -> `Operations/SRT_W1_W2_WRITEBACK_AUDIT_LA
 Two facts about the move that a reader of the owners alone would not see:
 
 ```text
-former S04 + S12 = ONE record, now Spine §9 `Bearer <-> Concern / 关切`;
+former S04 + S12 = ONE record, now Spine §13 `Bearer <-> Concern` (Concern = 关切 per A4);
 merging two records did not close the question — it stays OPEN.
 
 Bearer admission threshold + Bearer <-> position stability
-= PROVISIONAL routing in Spine §9 while Bearer canonical ownership is itself OPEN.
+= PROVISIONAL routing in the Spine OPEN register (§13) while Bearer canonical ownership is itself OPEN.
 ```
+
+Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026-09-14 Selection-totality retype, which also shortened its compact list. Several items in the post-migration 2026-09-13 Spine §9 register (including the two PROVISIONAL Bearer items above) are no longer named individually and are held only by §13's "omitted items remain OPEN" clause. The list is in `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md` §12.1a; nothing was closed.
 
 ---
 
