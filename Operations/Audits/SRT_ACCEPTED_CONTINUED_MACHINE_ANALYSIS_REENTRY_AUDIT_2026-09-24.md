@@ -28,7 +28,7 @@ This audit is **chain-bounded**, not a claim that one date range is exhaustively
 First-pass focus:
 
 ~~~text
-ChoiceMap chain:
+ChoiceMap segment:
 2026-07-28
 -> 2026-07-31 coordination / identity / threshold
 -> 2026-07-31 concern / reselectability / embodied-position fork
@@ -37,6 +37,8 @@ ChoiceMap chain:
 
 plus selected accepted re-entry / ontology / normativity chains through 2026-09-19.
 ~~~
+
+The 2026-07-28 card itself has upstream parents (including 2026-07-19 / 2026-07-27), and the later 07-31 concern card also has older concern lineage. This audit therefore calls 07-28 -> 08-10 a **reviewed segment**, not the root of the full lineage. Upstream parent material remains outside this pass.
 
 For the active GRG lineage from 2026-09-20 through 2026-09-23, the controlling historical continuity audit is:
 
@@ -84,22 +86,16 @@ Do **not** create `EXPLORATORY_LOCAL` as a retrieval-demotion label. Existing `p
 
 ## 3. Cluster census with paths
 
-| Chain / cluster | Source path(s) | Current handling | Disposition |
+| Reviewed chain / cluster | Exact source / controlling paths | Current handling | Disposition |
 |---|---|---|---|
-| ChoiceMap object/friction -> coordination -> concern/embodied-position -> second-order Selection | `01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md`; `...COORDINATION_IDENTITY_FEEDBACK_THRESHOLD...2026-07-31.md`; `...CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION...2026-07-31.md`; `...EMBODIED_POSITION_SECOND_ORDER_SELECTION...2026-08-09.md`; `SRT_SIMONDON_OPERATOR_YINYANG_SECOND_ORDER_SELECTION_CROSSWALK_2026-08-10.md` | later owners absorb support/replacement, closure, generative reselectability and second-order Selection parts; exact chain remains fragmented | PARTIALLY_ABSORBED + narrow ACTIVE_BUT_UNROUTED remainder |
-| 09-05/06 One-formation re-entry | author-reentry / One cycle files routed by current One provenance | #931/#933 -> #959/#970/#972; current One Formation + Spine | ABSORBED; stronger intermediate variants SUPERSEDED |
-| 09-10 pre-object / foreground observability | `SRT_AUTHOR_REENTRY_PREOBJECT_FOREGROUND_OBSERVABILITY_CORE_DISTINCTION_RETROSPECTIVE_TRIGGER_2026-09-10.md` | retrospective review + L0/Ground reconstruction | ABSORBED / EXECUTED |
-| 09-11 One / multiplicity / Bearer reopening | 09-11 author re-entry / adjudication records | current One Formation / Spine; Bearer gate remains open | ABSORBED where landed; Bearer ACTIVE_ROUTED_OPEN |
-| 09-13 whole-skeleton checkpoint | post-#957 author checkpoint and owner-landing audits | post-#959 landing + current Spine | ABSORBED AS PROVENANCE |
-| 09-14 Oriented Openness / minimum L0 | 09-14 Oriented Openness / pre-object / minimum-L0 adjudications | canonical L0 + Spine | ABSORBED |
-| 09-14 post-Selection normativity route | `SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md` | same-day `SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md` explicitly supersedes consequence-bearing-first grounding; later 09-20 work inherits generativity-first route | PARTLY_SUPERSEDED + PARTIALLY_ABSORBED |
-| 09-20 -> 09-23 GRG accepted-analysis lineage | founding telos, expectation typing, GRG v0.3, 09-22 capacity/reach, 09-23 Card/downstream/cross-objectification | already audited in `SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md` and later #1041/#1042 recovery | DELEGATED TO EXISTING CONTINUITY AUDIT |
+| ChoiceMap reviewed segment 07-28 -> 08-10 | `01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md`; `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`; `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION_CONTINUATION_2026-07-31.md`; `01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md`; `01_Source_Intuition/SRT_SIMONDON_OPERATOR_YINYANG_SECOND_ORDER_SELECTION_CROSSWALK_2026-08-10.md` | later owners absorb support/replacement, generative reselectability, hysteresis and second-order-Selection burdens; exact chain provenance remains distributed | PARTIALLY_ABSORBED + narrow topic-conditional residual |
+| One / pre-object / Bearer re-entry, 09-05 -> 09-14 | current provenance is routed through `Core_Law/SRT_One_Formation.md`, `Core_Law/SRT_Generative_Ontology_Spine.md` and their named author-adjudication dependencies | One / pre-object largely landed; Bearer remains separately gated | ABSORBED where landed; Bearer ACTIVE_ROUTED_OPEN |
+| 09-14 normativity | `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`; `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md`; `Operations/Audits/SRT_O1_O2_CONSTITUTIVE_NORMATIVITY_OWNER_LANDING_READINESS_2026-09-14.md`; provenance-only earlier route `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_NORMATIVITY_POSTSELECTION_RELATIONAL_GROUND_2026-09-14.md` | generativity-first controls; B13 owns strong generative reorganisation; four-criterion derivative role remains to be reconciled | PARTLY_SUPERSEDED + PARTIALLY_ABSORBED |
+| 09-20 -> 09-23 GRG accepted-analysis lineage | `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md` | already owns continuity classification for this period | DELEGATED TO EXISTING CONTINUITY AUDIT |
 
-## 4. Recovered chain A/B — ChoiceMap coordination -> identity -> concern/path-space
+## 4. ChoiceMap reviewed segment — coordination -> identity -> concern/path-space
 
-The first draft incorrectly treated 07-31 coordination and 08-09 concern/path-space as two independent residuals.
-
-They are one continuous chain.
+07-31 coordination and 08-09 concern/path-space belong to one continuous reviewed segment.
 
 ### 4.1 Chain provenance
 
@@ -170,50 +166,127 @@ Current open-tension route:
 
 #### Second-order Selection
 
-Later reconciliation / owner work includes:
+The 08-09 source-intuition meaning is owned for reconciliation by:
 
-- `Core_Law/SRT_Individuation.md`;
-- 09-11 canonical reconstruction / scope audits;
-- STATUS reconciliation.
+- `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md`;
+- STATUS §9, which keeps `Active Selection != second-order Selection`;
+- `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` via the Philosophy hardening route.
 
-Therefore the 08-09 use of “second-order Selection” is not an unrouted residual.
+That reconciliation preserves the stronger 08-09 gate:
 
-### 4.3 Narrow residual that remains
+~~~text
+own-consequence return
++ comparison-scale rewrite
++ selectable-space change
++ continued efficacy
+~~~
 
-The residual is narrower than the first draft claimed.
+`Core_Law/SRT_Individuation.md` also uses “second-order” language, but there it belongs to a stronger subject / self-consciousness transition model. It is **not** the semantic owner of the 08-09 second-order-Selection construct and must not be used to collapse the two meanings.
 
-It consists of:
+Therefore the 08-09 use of second-order Selection is routed / reconciled, not an unrouted residual.
 
-1. **DA2 / DA4 / DA5 three-role interface**
+### 4.3 Hysteresis is already routed and has an adverse discrimination result
+
+Hysteresis is **not** an ACTIVE_BUT_UNROUTED residual.
+
+Current owner / hardening route:
+
+- `Core/SRT_Core_12b_Ontology_L2.md Ax-L2-01` owns hysteresis accumulation and L2-hardening signatures;
+- `Core/SRT_Core_24_Discriminating_Predictions.md P24-3` records that local-cost reduction + global constraint + hysteresis is reproducible by a frozen history-memory / regularization rival.
+
+Current discrimination status:
+
+~~~text
+P24-3
+= NO-GO at the discrimination-spec stage
+= calibration / operationalization target
+!= established D2 discriminator
+~~~
+
+The only historical question still worth carrying is whether **DA4-specific identity-coupled hysteresis** survives the same memory / regularization rival. That is a future test question, not an unrouted construct.
+
+### 4.4 Identity continuity already has a current guard
+
+The 08-09 card records an **author choice**, not merely a machine proposal:
+
+~~~text
+C3 stake continuity
++ C4 constraint continuity
++ C5 reselectability continuity
+~~~
+
+Current identity / lineage semantics are routed through:
+
+- `Core_Law/SRT_One_Formation.md` continuity / lineage / identity guard;
+- `Core_Law/SRT_Generative_Ontology_Spine.md` OPEN register.
+
+Those owners keep:
+
+~~~text
+strict numerical identity = OPEN
+exact branch / merge identity = OPEN
+~~~
+
+and separately guard Bearer:
+
+~~~text
+formed One / Selection-position + P + E -> Bearer
+Bearer -/> Concern automatically
+Bearer -/> subjecthood automatically
+~~~
+
+Therefore C3+C4+C5 is preserved as author-confirmed source-intuition provenance and a possible diagnostic resource. It does **not** establish same-Bearer identity or override the current One/Bearer gates.
+
+### 4.5 Concern / path-space boundary
+
+The 08-09 concern–path-space duality remains a narrow source-intuition residual:
+
+> external historically individuated future path-space and internal concern may be two aspects of one Selection–consequence–writeback loop.
+
+Current guards:
+
+- canonical `d` / stake-coupled Concern is owned by `_SRT_D_VALUE_CANONICAL.md`;
+- `Core_Law/SRT_Generative_Ontology_Spine.md` keeps `Bearer <-> Concern` OPEN;
+- the 07-31 concern card preserves the 2026-07-25 `d/q/o` embargo and must be read with that restriction.
+
+Do not infer:
+
+~~~text
+concern-path-space duality
+-> d = reachable-state count
+-> Concern = Bearer
+-> path-space individuation = subjecthood
+~~~
+
+### 4.6 Narrow residual interfaces that remain
+
+After current-owner absorption, the recurring topic-conditional residual is:
+
+1. **DA2 / DA4 / DA5 role separation**
    - generative path;
    - feedback coupling;
    - transition / destabilization threshold.
 
-2. **CIF-P09 boundary**
-   - friction admission is not the same question as when an existing form crosses a destabilization / transition threshold.
+2. **CIF-P09 separation guard**
+   - friction admission and transition threshold are different questions.
+   - friction typing is already routed through the 09-22 capacity record §M and reach record §V;
+   - transition / lock-in threshold is already routed through `Core_Law/SRT_Occlusion_Dynamics.md T-OCC-1`.
+   - the residual is the explicit **non-collapse guard**, not either half as a new owner.
 
-3. **hysteresis as a discrimination interface**
-   - still requires distinguishing identity writeback, L2 deposition, capacity loss and threshold-measurement artifact.
-
-4. **concern–path-space duality**
-   - the 08-09 source's narrow claim that external historically individuated future path-space and internal concern may be two aspects of one selection-consequence-writeback loop.
-   - this exact duality remains source-intuition; it must not be promoted to a current canonical identity claim.
-
-5. **identity-continuity provenance across the chain**
-   - useful for reconstructing why C3+C4+C5 was proposed;
-   - not a new current owner.
+3. **concern–path-space duality**
+   - source-intuition only, under the Concern / d / Bearer guards above.
 
 Disposition:
 
 ~~~text
-ChoiceMap chain
+ChoiceMap reviewed segment
 = PARTIALLY_ABSORBED
 
-narrow residual
-= ACTIVE_BUT_UNROUTED for topic-conditional retrieval
+remaining narrow residual interfaces
+= topic-conditional retrieval only
 ~~~
 
-This is one chain with multiple narrow residual interfaces, not two independent theory branches.
+Identity-continuity and hysteresis remain important provenance / test context, but are no longer counted as unrouted residuals.
 
 ## 5. Corrected normativity chain — generativity-first controls
 
@@ -247,23 +320,33 @@ The generativity-first record is directly inherited by:
 
 The post-Selection consequence-bearing record remains provenance and a source for derivative diagnostics, not the controlling ground.
 
-### 5.3 Current owners already carry generative reselectability / anti-lock-in
+### 5.3 Later 09-14 normativity chain continues beyond the first generativity-first record
 
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` defines generative reselectability as consequence-sensitive revisability of comparison rules, boundaries or candidate generation.
-- `Core/SRT_OPEN_TENSIONS.md §4` carries healthy-support vs pathological closure / compressed future selectability.
-- current Context Router reselectability routes already expose reselectability / foreclosure.
+The controlling chain also includes:
 
-### 5.4 Narrow remaining question
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md`, which accepts G1–G10 and N1–N10, including non-usurpation / O2-C as bounded research directions;
+- `Operations/Audits/SRT_O1_O2_CONSTITUTIVE_NORMATIVITY_OWNER_LANDING_READINESS_2026-09-14.md`, which explicitly routes **strong generative reorganisation** to `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
 
-What remains worth preserving is not:
+Therefore reorganizability / generative reselectability is not an ownerless residual.
 
-~~~text
-reorganizability = current primitive / controlling normative ground
-~~~
+Current owner / route:
 
-but:
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
+- `Core/SRT_OPEN_TENSIONS.md §4`;
+- current reselectability routing.
 
-> under the generativity-first framework, which parts of the earlier reorganizability / four-criterion package remain valid as **derivative diagnostics** of position-relative generative strengthening / weakening?
+### 5.4 Narrow remaining question: the four-criterion comparator
+
+The unresolved historical question is narrower:
+
+> under the generativity-first / non-usurpation framework, what current role—if any—should remain for the earlier four-criterion comparator: continuation, coordination, non-outsourcing and reselectability?
+
+Two of those criteria are already explicitly demoted from primitive ground:
+
+- continuation;
+- non-outsourcing.
+
+They may survive only as derivative diagnostics where a declared position / relation / horizon makes them relevant.
 
 Disposition:
 
@@ -271,20 +354,54 @@ Disposition:
 post-Selection consequence-bearing-first ground
 = PARTLY_SUPERSEDED
 
-generative reselectability / anti-lock-in burden
-= PARTIALLY_ABSORBED / already routed
+strong generative reorganisation / reselectability
+= OWNED BY B13 / current routes
 
-narrow diagnostic-retention question
-= OPEN but not an ACTIVE_BUT_UNROUTED theory branch
+four-criterion comparator
+= derivative-role reconciliation still OPEN
+
+this is not an ACTIVE_BUT_UNROUTED theory branch
 ~~~
 
 Retrieval order for normativity re-entry:
 
-1. `SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
-2. 09-20 founding telos / expectation typing when GRG normativity is in scope;
-3. `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
-4. `Core/SRT_OPEN_TENSIONS.md §4`;
-5. only then the post-Selection record as provenance / derivative-diagnostic source.
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVITY_POSITION_NORMATIVITY_2026-09-14.md`;
+2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md`;
+3. `Operations/Audits/SRT_O1_O2_CONSTITUTIVE_NORMATIVITY_OWNER_LANDING_READINESS_2026-09-14.md`;
+4. `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`;
+5. `Core/SRT_OPEN_TENSIONS.md §4`;
+6. 09-20 founding telos / expectation typing when GRG normativity is in scope;
+7. only then the post-Selection consequence-bearing record as provenance / derivative-diagnostic source.
+
+### 5.5 Objective-value A–E package disposition
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIVE_VALUE_SCOPE_BEARER_CONCERN_AGENCY_2026-09-14.md` remains an author-accepted bounded package, but must be read under later / current owner guards:
+
+- Bearer is not complete moral standing;
+- Concern / d does not admit moral standing;
+- agency / responsibility is separate;
+- scope-indexed objective comparison is not a global scalar;
+- generative objectivity does not override current normativity owner placement.
+
+Disposition:
+
+`PARTIALLY_ABSORBED / SUPPORTING PROVENANCE`, not a standalone canonical-write authorization for old semantics.
+
+### 5.6 Active old handoff risk — follow-up required
+
+`Operations/Handoffs/SRT_GROUND_NORMATIVITY_CANONICAL_LANDING_HANDOFF_2026-09-14.md` remains `status: active` and contains a fresh-chat prompt that says the author approved bounded canonical writeback using the older post-Selection normativity package.
+
+Because the handoff does not incorporate the later generativity-first control chain, keyword retrieval could misroute a future agent.
+
+Disposition in this PR:
+
+~~~text
+HANDOFF ROUTING RISK = CONFIRMED
+DO NOT USE AS CURRENT CONTROLLING HANDOFF
+FOLLOW-UP = retire / redirect / supersession-note in a separate bounded governance PR
+~~~
+
+This audit records the risk but does not modify that historical handoff in the same PR.
 
 ## 6. GRG period delegation — 09-20 through 09-23
 
@@ -388,22 +505,20 @@ historical accepted-analysis loss:
 routing fragmentation:
   REAL
 
-independent residual count from first draft:
-  WITHDRAWN
-
-ChoiceMap 07-28 -> 08-10:
-  ONE CONTINUOUS CHAIN
+ChoiceMap reviewed segment 07-28 -> 08-10:
   PARTIALLY_ABSORBED
-  narrow topic-conditional residual interfaces remain
+  DA2/DA4/DA5 role separation + CIF-P09 non-collapse guard + concern-path-space remain topic-conditional residual interfaces
+  upstream parent lineage not audited
 
 07-31 broad support-vs-replacement burden:
   largely absorbed by OPEN_TENSIONS / Occlusion / later reach-support owners
 
 08-09 second-order Selection:
-  later routed / reconciled
+  routed by 09-11 Active-vs-second-order reconciliation + PH-IND03 / STATUS
+  not owned by Individuation's stronger self-consciousness usage
 
 08-09 concern-path-space duality:
-  narrow source-intuition residual
+  narrow source-intuition residual under d / Concern / Bearer guards
 
 09-14 consequence-bearing-first normativity ground:
   PARTLY_SUPERSEDED
@@ -412,11 +527,15 @@ ChoiceMap 07-28 -> 08-10:
   controlling later route
 
 reorganizability / generative reselectability:
-  largely owned / routed
-  narrow derivative-diagnostic question remains
+  strong reorganisation routed to B13 / current routes
+  only four-criterion derivative-role reconciliation remains
 
 09-20 -> 09-23 GRG accepted-analysis continuity:
   DELEGATED TO EXISTING 09-23 CONTINUITY AUDIT
+
+old 09-14 Ground/normativity handoff:
+  ACTIVE ROUTING RISK CONFIRMED
+  separate retire/redirect follow-up required
 
 Spine thinning:
   NOT AUTHORIZED
