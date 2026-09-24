@@ -50,12 +50,13 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = independent review of prospective GRG case2 engagement result + stop-loss landing decision
+CURRENT NEXT = post-stop-loss GRG method contraction / root-question review; no new fusion-domain acquisition
 CURRENT NEXT RESULT OWNER = Operations/Audits/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_RESULT_2026-09-24.md
 CASE2 SOURCE ADEQUACY = PASS
 CASE2 PRIMARY VERDICT = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN
 §8.1 COUNT = FRR case1 + engagement/recommender case2 = TWO ADEQUATE NO-GAIN CASES
-FUSION LANE = PAUSE / CONTRACT if independent review upholds the result
+§8.1 STOP-LOSS = EXECUTED
+FUSION LANE = PAUSED / CONTRACTED
 THIRD FUSION DOMAIN = NO / no replacement or rescue target authorized
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
@@ -127,7 +128,10 @@ prospective case2 engagement test = EXECUTED;
 SOURCE_ADEQUACY = PASS;
 primary verdict = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN;
 §8.1 adequate no-gain count = 2;
-next = independent review + stop-loss landing only;
+independent review = UPHELD;
+§8.1 stop-loss = EXECUTED;
+fusion lane = PAUSED / CONTRACTED;
+CURRENT NEXT = post-stop-loss GRG method contraction / root-question review;
 no replacement target / third rescue domain;
 no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
