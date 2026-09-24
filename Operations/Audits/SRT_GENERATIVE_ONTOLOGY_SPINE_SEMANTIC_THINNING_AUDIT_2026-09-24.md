@@ -121,7 +121,7 @@ The correction concerns typing and arrow semantics, not removal of the layers.
 
 Author-controlled direction:
 
-> L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization, reach, equivalence and Selection burden that is not exhausted by the determinate actuality of that Selection.
+> L0 is the generative-openness aspect of a Selection-totality: the relational organization of difference, constraint, localization and further differentiation conditions that is not exhausted by the determinate actuality of that Selection.
 
 Hard guards:
 
@@ -135,27 +135,33 @@ L0
 != morality
 ~~~
 
-### 2.1a Terminology collision — pending N1
+### 2.1a Terminology boundary — N1 resolved
 
-The author record currently uses `reach / equivalence` in the L0 English formulation and `support / proxy` in the L2 English formulation.
-
-These words now collide with routed GRG research families.
-
-Until the author resolves N1:
+The author has now clarified the SRT / GRG division of labour:
 
 ~~~text
-current author record
-= conceptual direction
+SRT
+= primarily philosophical / ontological
 
-current English lexical choices
-!= automatic GRG admission
-!= safe verbatim canonical copy
+GRG
+= primarily applied
+  + general generative grammar
+  + epistemology / cognition research
+  + normativity research
 ~~~
 
-The future C-class edit must either:
-- add an explicit ordinary-language/non-GRG guard; or
-- use neutral vocabulary; or
-- stop for a separate GRG-to-canonical adjudication if GRG technical meanings are intended.
+Therefore the universal L0/L1/L2 ontology must use neutral SRT vocabulary rather than routed GRG technical terms.
+
+N1 is resolved as:
+
+~~~text
+neutral SRT ontology wording
+for L0 / L2 definitions;
+
+GRG reach / equivalence / support / proxy
+may describe downstream realizations or transformations,
+but do not define the canonical kernel.
+~~~
 
 ### 2.2 L1 — Actualized Differentiation
 
@@ -194,7 +200,7 @@ S0-facing occurrence analysis
 
 Author-controlled direction:
 
-> L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, support, proxy, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
+> L2 is retained generative efficacy: actuality that continues to matter for later generation because some consequence, organization, constraint, boundary, habit, topology, rule, memory, sediment or other historical effect remains generatively effective.
 
 Hard guards:
 
@@ -473,11 +479,22 @@ Bearer -/> Concern / Agency / subject automatically
 
 Do not create a new Bearer owner in the same thinning PR.
 
-## 8. Ontology / cognition / normativity / intervention
+## 8. SRT / GRG post-One division of labour
 
-The author now explicitly accepts these as non-identical facets of one formed generative relation once their own gates are paid.
+The author now explicitly distinguishes ownership emphasis while preserving continuity of the formed reality.
 
-### 8.1 Facet map
+~~~text
+SRT
+= philosophical / ontological source and boundary conditions
+
+GRG
+= applied / general generative grammar,
+  especially epistemic / cognitive and normative development
+~~~
+
+Ontology, cognition, normativity and intervention may still be analysed as non-identical facets of one formed generative relation once their own gates are paid, but Spine / SRT should not become the substantive owner of the downstream epistemic or normative grammar.
+
+### 8.1 Facet continuity map
 
 ~~~text
 ontological facet
@@ -510,9 +527,9 @@ Epistemic and normative structure may be parallel / mutually constraining.
 
 Constitutive normative inconsistency does not require prior explicit representation by an agent.
 
-### 8.3 Reflexive loop
+### 8.3 GRG-facing reflexive loop
 
-Allowed organizing loop:
+Allowed downstream organizing loop for GRG research:
 
 ~~~text
 formed generative reality
@@ -524,11 +541,15 @@ formed generative reality
 -> possible epistemic and normative revision
 ~~~
 
-This belongs to Part II / post-One research.
+This belongs primarily to GRG / post-One research.
 
-It is not a primitive universal sequence.
+Spine Part II should retain only the source-condition, non-identity and OPEN-gate pointers required to keep this route compatible with SRT ontology.
 
-## 9. Normativity and morality
+It is not a primitive universal sequence and not a substantive epistemology / normativity owner inside Spine.
+
+## 9. Normativity and morality — SRT gates, GRG development
+
+SRT keeps only the ontological / boundary guards needed to prevent normative backflow into primitive ontology.
 
 Keep kernel guards explicit:
 
@@ -565,6 +586,8 @@ moral questions
 
 Do not turn that direction into a complete moral theorem.
 
+Detailed epistemic / normative comparison, revision, intervention and application should primarily be developed in GRG, while the current SRT O1 / O2-C / O2-A / O2-M gates remain controlling boundary conditions until separately migrated or re-owned.
+
 ## 10. GRG role
 
 Retain the division:
@@ -574,8 +597,10 @@ SRT
 = minimal generative ontology / owner-level gates
 
 GRG
-= revisable relational grammar
+= revisable applied / general relational grammar
   for recurring transformations of formed generative conditions
+  + main research surface for epistemology / cognition
+  + main research surface for normativity
 
 domain research
 = source-native mechanisms / variables / evidence
@@ -612,11 +637,11 @@ proxy / reach / friction / generative debt
 | §3 actualising Selection / existence | KEEP minimum actualization burden |
 | §4 history | KEEP occurrence vs retained-efficacy distinction; move local detail outward |
 | §5 One | KEEP minimum vertical-reconstitution / One burden + One owner pointer |
-| §6 Selection-position / perspective | MOVE to Part II |
+| §6 Selection-position / perspective | MOVE to Part II as thin ontological gate / pointer; substantive epistemic development routes to GRG |
 | §7 Stable ISP | MOVE to Part II; pointer to P1-T06 |
 | §8 Bearer | MOVE to Part II; RETAIN P+E authority |
-| §9 Agency | MOVE to Part II |
-| §10 Normativity | SPLIT primitive no-ought guards in Part I vs O1/O2 in Part II |
+| §9 Agency | MOVE to Part II as gate / pointer; intervention grammar routes primarily to GRG |
+| §10 Normativity | KEEP primitive no-ought guards in Part I; keep only O1/O2 boundary gates in Part II; substantive normative grammar routes primarily to GRG |
 | §11 L0/L1/L2 | REWRITE / PROMOTE as precise three-layer generative architecture |
 | §12 facet-before-kind | KEEP as inference guard |
 | §13 OPEN register | SPLIT kernel OPEN vs post-One/programme OPEN |
@@ -706,53 +731,46 @@ Navigation splitting remains optional and downstream of semantic restoration.
 
 Do not create multiple parallel canonical Spine definition authorities.
 
-## 14.0 Pending canonical-landing ownership fork — N2
+## 14.0 Canonical landing ownership — N2 resolved
 
-The independent review correctly notes that a future canonical rewrite cannot safely invent new L0/L1/L2 labels in Spine while leaving local canonical definition owners unsynchronized.
+The author's SRT / GRG role clarification resolves the landing strategy.
 
-Current owner facts:
+Because SRT is the philosophical / ontological owner, L0/L1/L2 labels and definitions should land **local-owner-first**.
 
 ~~~text
-Core_Law/SRT_L0_Metaphysics.md
-= unique canonical L0 authority
+N2 = A
 
-_SRT_SYMBOL_TABLE.md
-= canonical symbol / definition registry
+Phase C1:
+land / synchronize L0, L1, L2 labels and definitions
+in the appropriate SRT local canonical owners / symbol registry.
 
-Spine
-= cross-owner canonical routing authority
+Phase C2:
+rewrite the Generative Ontology Spine
+as a minimal cross-owner kernel + thin post-One routing surface.
 ~~~
 
-Two viable landing strategies remain:
+Spine should not become a second local definition authority for L0/L1/L2.
 
-### N2-A — Spine labels only
+A future package may include pointer-maintenance edits across multiple files, but semantic definition authority remains local-owner-first.
 
-- Spine uses the three labels as cross-owner routing language;
-- detailed definitions remain with / are first landed in L0 Metaphysics and the symbol/definition registry;
-- Spine points outward rather than becoming a second local L0/L1/L2 definition owner.
-
-### N2-B — coordinated same-package sync
-
-- the C-class package edits Spine + L0 Metaphysics + Symbol Table together;
-- exact wording is synchronized in one reviewed migration.
-
-Until the author chooses N2-A or N2-B, the future edit scope is not final.
-
-Regardless of choice, section-number pointer maintenance is mandatory if Spine headings move:
-- STATUS.md;
-- Core_Law/SRT_One_Formation.md;
-- _SRT_CONTEXT_ROUTER.md;
-- any Registry / owner pointer that names a Spine section.
 
 ## 14. Future canonical-edit scope
 
-If separately authorized, the semantic target remains:
+If separately authorized, execute in two bounded phases rather than one broad migration.
 
-~~~text
-Core_Law/SRT_Generative_Ontology_Spine.md
-~~~
+### Phase C1 — local ontology owner landing
 
-but the exact file set depends on N2.
+Primary semantic targets:
+- Core_Law/SRT_L0_Metaphysics.md;
+- _SRT_SYMBOL_TABLE.md;
+- any already-authoritative local L1/L2 owner strictly required for label/definition synchronization.
+
+### Phase C2 — Spine restoration
+
+Primary semantic target:
+- Core_Law/SRT_Generative_Ontology_Spine.md.
+
+The exact file set for each phase should stay minimal.
 
 Mandatory supporting maintenance may include:
 - Core_Law/SRT_L0_Metaphysics.md and _SRT_SYMBOL_TABLE.md if the three-layer labels/definitions are landed or synchronized there;
@@ -790,6 +808,7 @@ A future edit FAILS if it:
 - treats O0 or mere actuality as complete morality;
 - collapses O1 / O2-C / O2-A / O2-M;
 - imports GRG proxy / reach / friction / debt as primitive ontology;
+- makes Spine the substantive owner of epistemology / normativity instead of a thin SRT gate / routing surface;
 - silently closes an OPEN;
 - renames `universal One-level perspective sufficiency` into a GRG-specific perspective term without adjudication;
 - uses line count as a deletion rule.
@@ -873,6 +892,18 @@ O2-M:
 
 GRG canonicalization:
   NO
+
+SRT primary role:
+  philosophy / ontology
+
+GRG primary role:
+  application / general grammar / epistemology / normativity
+
+N1:
+  RESOLVED — neutral SRT vocabulary
+
+N2:
+  RESOLVED — local-owner-first, then Spine routing
 
 canonical Spine edit:
   NOT YET AUTHORIZED
