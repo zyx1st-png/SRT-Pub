@@ -12,6 +12,7 @@ priority: high
 authority: A1_retrieval_not_definition
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_QUAL01_Reselective_Qualia_Geometry_v0_2.md
@@ -40,6 +41,8 @@ tags:
 > It is intentionally more detailed than the author-adjudication record because the author explicitly requested that the **analysis process itself** be written back.
 >
 > Accepted analysis retains high retrieval value under the repository's accepted-machine-analysis rule, but this file remains **M/A1 analysis**, not canonical definition authority and not a substitute for direct author quotations.
+
+> **Post-review correction overlay, 2026-09-25:** the independent review of PR #1058 identified several places where this trace's machine analysis had over-retyped the author's wording. The second adjudication file listed in dependency is controlling wherever there is conflict. In particular: (1) "成为对象" is restored as a two-level objectification account; (2) dialogue friction is broader than but partially overlapping canonical Psi_f; (3) Position / Concern / Expectation remain separately typed from canonical Bearer; (4) the author's L2-vs-L0 freedom contrast outranks the machine L1-vs-L0 shorthand; and (5) 09-25 GRG is a narrowing of the 09-23 "deep grammar" intuition, not a claim that v0.3 had established a universal grammar.
 
 ---
 
@@ -179,8 +182,11 @@ intensity
 valence
 <- deformation direction relative to concern / expectation;
 
-for-me-ness
-<- Bearer-indexed constitutive involvement.
+bearer-constitutive For-P
+<- independently typed bearer-indexed constitutive involvement;
+
+phenomenal For-me
+= NOT licensed by that structural relation alone.
 ```
 
 This was a major improvement because it prevented friction from doing all explanatory work.
@@ -216,14 +222,20 @@ The author accepted the analysis.
 
 The repository cross-read showed that canonical `Psi_f` already has guarded meanings around payability / burden / geometry.
 
-Therefore the dialogue explicitly retained:
+The later second adjudication makes this more precise:
 
 ```text
 dialogue friction
-!= canonical Psi_f by default
+= broader bearer-relative reconstruction-burden family
+PARTIAL_OVERLAP canonical Psi_f / historical Psi_f^maint
+
+identity = NOT ESTABLISHED
+total separation = NOT ASSUMED
 ```
 
-and treated "retained energy" as:
+Gate geometry is also distinct from Psi_f: geometry organizes equivalence / boundary / transition structure, while Psi_f is the canonical payable impedance / burden under declared conditions.
+
+"Retained energy" is currently read as:
 
 ```text
 retained burden / tension / reorganizing pressure
@@ -367,38 +379,56 @@ HP-B remained OPEN.
 
 ---
 
-## 7. Seventh step: phenomenal versus reflective objectification
+## 7. Seventh step: two levels of objectification — corrected after independent review
 
-The analysis initially risked equating consciousness with "gate becomes object".
+The original author wording was stronger than the first machine rewrite:
 
-It was corrected by distinguishing:
+> friction accumulation makes the L0-facing gate move from background into foreground and "become an object".
 
-### Primary phenomenal foregrounding
+The independent review correctly noted that replacing this with mere foregrounding changed the author meaning.
 
-The deformation becomes manifest / felt without the system explicitly representing the gate.
+Second-adjudicated account:
+
+### Primary / pre-reflective phenomenal objectification
 
 ```text
-deformation
--> felt / manifest foreground
+background gate / deformation
+-> becomes a phenomenally available qualitative object / formation candidate
 ```
 
-### Reflective gate-objectification
+This does not require explicit conceptual reflection, language or metacognition.
 
-The Bearer later identifies the gate itself:
+### Reflective / explicit gate-objectification
+
+A stronger later step:
 
 ```text
-Gate
--> Object(Gate)
+gate / expectation / category / deformation
+-> explicit object of reflection
+-> possible deliberate revision
 ```
 
-This preserved:
+Therefore:
 
 ```text
+pre-reflective phenomenal objectification
+!= reflective objectification
+
 phenomenal consciousness
 != reflective consciousness
 ```
 
-and prevented a theory that would exclude nonreflective animals or infants by definition.
+Do not retain the stronger machine sentence "phenomenality != objectification tout court".
+
+Terminology guard:
+
+```text
+manifest_OF
+!= foreground_obj
+!= foreground_phen
+
+manifest_OF -/> phenomenality
+```
 
 ---
 
@@ -505,16 +535,26 @@ options
 -> action
 ```
 
-New candidate:
+Author-owned primary contrast:
 
 ```text
-L1-facing freedom
+L2-facing sediment / capture
+vs
+L0-facing freedom.
+```
+
+Supplementary machine distinction:
+
+```text
+L1-facing choice
 = movement within an already formed object / option geometry;
 
 L0-facing freedom
 = capacity to make some of the gate geometry shaping future object/action formability
   itself re-openable, objectifiable and revisable.
 ```
+
+This must route through the existing Spine §9 Agency burden rather than being treated as a new agency definition.
 
 This generated:
 
@@ -585,22 +625,29 @@ success is bad
 
 ---
 
-## 12. Twelfth step: GRG root contraction
+## 12. Twelfth step: GRG root contraction — relation to 09-23 deep grammar
 
-The consciousness / gate work fed back into GRG.
+The consciousness / gate work fed back into GRG, but the relevant contrast is **not** "v0.3 claimed a completed universal grammar". It did not.
 
-Previous programme risk:
+The real tension is with the 2026-09-23 author phrase "深层的语法".
 
-```text
-find a universal grammar across domains
-```
-
-Author-accepted correction:
+Second-adjudicated relation:
 
 ```text
-first reconstruct the object's lost L0/L1/L2 depth
-and the gate geometry that made the object possible;
-only then ask whether a cross-domain grammar survives.
+09-23:
+look past one-to-one object matching
+toward deeper generative grammar
+
+09-25:
+do not assume grammar as the starting discovery object;
+first restore the object's L0/L1/L2 depth
+and reconstruct the gate / coarse-graining history
+that made the object usable
+
+therefore:
+deep grammar
+= possible downstream reconstruction result
+!= upstream presupposition
 ```
 
 New method emphasis:
@@ -608,18 +655,18 @@ New method emphasis:
 ```text
 object X
 -> what differences were suppressed / grouped?
--> what equivalence / boundary geometry stabilizes X?
--> what L2 history supports that geometry?
--> what friction is accumulating?
--> how does X gate later object-formability?
--> what becomes visible when the gate is re-objectified?
+-> what equivalence / boundary relations stabilize X?
+-> what L2 history supports those relations?
+-> what reconstruction burden is accumulating?
+-> how does X alter later object-formability?
+-> what becomes visible when the cut is re-objectified?
 ```
 
-Thus:
+Stop-loss guard:
 
-> grammar, if it exists, should be an output of reconstruction rather than a prior assumption.
+> This question-set does not by itself exceed ordinary causal / systems analysis and does not establish GRG scientific distinctiveness.
 
-This directly aligns with the GRG fusion-lane stop-loss result and gives a constructive alternative to simply finding a third domain.
+The contraction must answer case2 §16 and use a same-model no-GRG / equivalent baseline where GRG-specific gain is claimed.
 
 ---
 
@@ -652,10 +699,10 @@ Gate != primitive Selection;
 Gate != object;
 One != Bearer;
 Bearer != Experiencer;
-friction != Psi_f automatically;
+friction PARTIAL_OVERLAP Psi_f / Psi_f^maint; identity not established;
 qualia != friction;
 common reconfiguration != phenomenality proved;
-phenomenality != reflection;
+pre-reflective phenomenal objectification != reflective objectification;
 L0-facing gating != freedom automatically;
 L2 != pathology.
 ```
