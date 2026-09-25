@@ -10,7 +10,7 @@ created: 2026-09-25
 updated: 2026-09-25
 priority: highest_short_term
 author_authorized: true
-execution_state: ready
+execution_state: d1_d5_complete_awaiting_author_adjudication
 research_mode: U
 root_question: Can the gate-geometry account coherently unify objectification, bearer-relative friction, qualia, phenomenal unity and L0-facing freedom without collapsing existing owner distinctions or overclaiming HP-B?
 comparative_claim: none_at_entry
@@ -620,6 +620,31 @@ This short-term task does **not** authorize:
 - opening a third main deep well;
 - broad cross-domain synthesis;
 - rewriting published manuscripts.
+
+---
+
+## 6.1 Execution result — 2026-09-25
+
+D1-D5 have been completed in:
+
+Operations/Audits/SRT_GATE_GEOMETRY_QUALIA_D1_D5_BOUNDED_ROUTING_AUDIT_2026-09-25.md
+
+Controlling result:
+
+~~~text
+gate geometry as new primitive = BLOCKED
+gate geometry as working organizing construct = RETAIN
+friction / Psi_f = PARTIAL_OVERLAP / identity OPEN
+qualia two-level objectification = RESIDUAL CANDIDATE
+common reconfiguration = RESIDUAL P4 CANDIDATE
+L0-facing freedom = REALIZATION / REORGANIZATION
+GRG gate-geometry mandatory pipeline = REJECT
+GRG reconstruct-before-deep-grammar sequencing = RETAIN
+HP-B = OPEN
+canonical landing = HOLD
+~~~
+
+Per the declared stop condition, no further patch integration should proceed until the author adjudicates A-6..A-9 in the D1-D5 audit.
 
 ---
 
