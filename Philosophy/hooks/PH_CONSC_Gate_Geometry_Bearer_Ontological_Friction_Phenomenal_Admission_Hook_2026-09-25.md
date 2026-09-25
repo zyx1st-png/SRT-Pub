@@ -51,7 +51,7 @@ The missing positive question is:
 
 > **Why should a formed Bearer ever need a felt mode rather than merely unconscious control?**
 
-The present hook proposes that feeling becomes relevant when an objectification / difference becomes part of the same Bearer's common current generative maintenance. This can occur through **anticipatory Gate construction**, **friction-driven reconstruction**, or their interaction; present-task failure is not a universal prerequisite.
+The present hook proposes one unified mechanism: a formed Gate actively maintains a non-neutral coarse-graining under position / Concern / Expectation, thereby carrying Ontological Friction; world-side mismatch can redistribute or amplify that same friction. When friction-bearing lower differences are selectively normalized / compressed into a higher-order organization that becomes load-bearing for the same Bearer's generative continuation, an ontological / generative foreground is formed. Present-task failure is not a universal prerequisite.
 
 ---
 
@@ -81,70 +81,118 @@ The Bearer is maintained through a formed coarse-graining organization that dete
 
 This is downstream formed organization, not primitive Selection.
 
-### C3 — situated anticipatory / actualising relation
+### C3 — constitutive Ontological Friction under expectation-mediated Gate maintenance
 
 The formed organization is indexed to the Bearer's current position, Concern and structural Expectation / anticipation.
 
-Two non-exclusive routes are allowed:
+Maintaining a non-neutral Gate already requires:
+
+- selective exclusion / backgrounding;
+- coordination among retained distinctions;
+- stabilization of some equivalences and boundaries;
+- active shaping of later reachable Selection.
+
+Therefore the Gate carries **constitutive Ontological Friction** even before any acute mismatch.
+
+Expectation is not a friction-free alternative mechanism. It actively helps form / stabilize the Gate and thereby helps determine where the same ontological burden is paid.
+
+World-side mismatch can then:
 
 ~~~text
-Route E — anticipatory construction:
-position + concern + expectation
--> active Gate formation / stabilization
--> expected objectification / foregrounding;
-
-Route F — friction-driven reconstruction:
-actualisation strains current Gate geometry
--> Ontological Friction (Psi_f)
--> maintained equivalence / boundary comes under pressure
--> foregrounding / recut / reconstruction.
+redistribute / amplify / retain / expose
+that same friction family
+at the current Gate boundary.
 ~~~
 
-The first route can remain low-friction. The second makes burden especially visible. Neither report, pain, effort nor prediction error defines Psi_f.
-
-### C4 — common generative relevance / background non-sufficiency
-
-The relevant difference cannot remain merely an isolated background condition **for the current Bearer's generative continuation**.
-
-This may occur because:
-
-- anticipatory Gate construction makes the distinction actively relevant to current objectification; or
-- friction / mismatch forces previously background organization into reconstruction.
-
-Therefore:
+Thus:
 
 ~~~text
-background non-sufficiency
-!= local processing failure only
-!= high friction necessarily.
+constitutive Gate maintenance
++ expectation
++ actualisation
+= one coupled Ontological-Friction organization;
+
+mismatch
+!= origin of all friction;
+mismatch
+= one amplifier / boundary-revealing condition.
 ~~~
 
-### C5 — common resolution dependence
+Neither report, pain, effort nor prediction error defines Psi_f.
 
-At least two otherwise partly separable gate processes become mutually resolution-dependent:
+### C4 — selective normalization and friction accumulation
+
+Lower-level differences do not all propagate upward independently.
+
+Some are:
+
+- absorbed locally;
+- treated as generatively equivalent;
+- compressed / normalized;
+- retained as background support.
+
+Others remain load-bearing because their friction / consequence cannot be neutralized without changing broader continuation.
+
+Working chain:
 
 ~~~text
-resolution(G_i)
-changes feasible resolution(G_j)
-
-and
-
-resolution(G_j)
-changes feasible resolution(G_i)
+lower differences
++ accumulated / retained Ontological Friction
+-> selective normalization / coarse-graining
+-> some differences become generatively equivalent
+-> some remain consequential
+-> a higher-order relation / proxy becomes possible.
 ~~~
 
-under the same independently admitted Bearer.
+"Accumulation" here is not assumed to be a simple scalar sum. It means retained / organized burden becoming generatively consequential under the current Gate geometry.
 
-### C6 — structural foreground objectification
+### C5 — higher-order generative integration
 
-The deformation is coarse-grained into a shared, selection-active foreground object / compressed control state.
+The selective normalization / compression produces an organization that can coordinate a broader generative background than the isolated lower processes could manage separately.
 
-This objectification is structural:
+Candidate burden:
 
+~~~text
+retain relevant lower generative capacities
++ reorganize their realization / positioning
++ absorb previously unresolved friction
++ add new generativity
+= higher-order generative gain.
+~~~
+
+This is not merely "more hierarchy" or "more centralized control".
+
+### C6 — ontological / generative foregrounding
+
+The higher-order organization foregrounds a load-bearing object / difference as part of the Bearer's currently maintained generative reality.
+
+This is the **ontological / generative** sense of foregrounding:
+
+- pre-reflective;
+- constitutive;
 - report is optional;
 - language is optional;
 - metacognition is optional;
-- explicit self-model is optional.
+- deliberate intervention is optional.
+
+Working interpretation:
+
+~~~text
+generative foregrounding
+~ active reconstitution / generative homeostasis
+  of a higher-order Gate organization.
+~~~
+
+Guard:
+
+~~~text
+generative homeostasis
+!= fixed physiological set-point restoration;
+!= FEP / predictive-processing identity;
+!= friction minimization.
+~~~
+
+It means maintaining a viable higher-order generative organization under ongoing Selection.
 
 ### C7 — current Selection-position reconfiguration
 
@@ -165,7 +213,7 @@ At this point the structural antecedent is complete.
 
 ### BP-Q1 — bearer-constitutive phenomenal admission candidate
 
-> **When an anticipatorily formed or friction-reconstructed Gate makes a distinction part of the same Bearer's common current generative maintenance, and that foreground objectification directly participates in the Bearer's current Selection-position, phenomenal presence is proposed as the first-person mode of that bearer-constitutive objectification.**
+> **When Ontological Friction carried by an expectation-mediated Gate is selectively normalized / compressed into a higher-order generative organization whose foreground objectification becomes constitutive of the same Bearer's current Selection-position, phenomenal presence is proposed as the first-person mode of that ontological / generative foregrounding.**
 
 Important distinction:
 
@@ -185,17 +233,17 @@ the locus bearing the consequence
 the locus whose current operative position is being recut.
 ~~~
 
-This identity supplies the **ownership / locus anchor** for first-person character. It is not, by itself, sufficient for phenomenality; the additional admission burden lies in the anticipatory / reconstructive common-foreground organization above, while BP-Q1 remains the bridge posit under test.
+This identity supplies the **ownership / locus anchor** for first-person character. It is not, by itself, sufficient for phenomenality; the additional admission burden lies in the higher-order generative integration of friction-bearing differences and the resulting ontological / generative foreground, while BP-Q1 remains the bridge posit under test.
 
 ---
 
 ## 4. Why unconscious control remains possible
 
-Unconscious gating remains expected when a distinction can remain entirely within local / background regulation and does not become part of the Bearer's common current generative foreground.
+Unconscious gating remains expected when friction-bearing differences can be normalized / absorbed within local or lower-order organization without becoming load-bearing for a broader higher-order generative structure.
 
-Low Ontological Friction does **not** imply unconsciousness. A stable percept may be phenomenally foregrounded through anticipatory Gate construction even when little reconstructive burden is present.
+A stable percept such as a blue wall therefore does **not** require acute task failure, but it is also not treated as friction-free. The maintained perceptual Gate already pays constitutive Ontological Friction through selective coarse-graining, exclusion and coordination.
 
-Conversely, high friction does not by itself imply consciousness.
+Conversely, high or accumulated friction does not by itself imply consciousness. The candidate transition requires that the retained burden participate in a higher-order generative foreground rather than remain merely local or backgrounded.
 
 Therefore:
 
@@ -212,7 +260,7 @@ The candidate transition is the conjunction, not any one term.
 
 ## 5. Why feeling may be useful rather than epiphenomenal
 
-The hook proposes a functional / generative role without reducing feeling to function. The author follow-up sharpens the role: a phenomenal foreground is a candidate state required for **more complete generative maintenance** when a formed Bearer must actively maintain, coordinate, revise and continue a world-relative Selection-position rather than merely execute isolated local controls.
+The hook proposes a functional / generative role without reducing feeling to function. The author follow-up sharpens the role: a phenomenal foreground is a candidate **higher-order generative structure** required for more complete generative maintenance. It selectively normalizes lower differences, preserves relevant generative capacities, absorbs / reorganizes accumulated friction, and permits broader coordinated continuation than isolated local controls.
 
 A low-dimensional felt object may permit a high-dimensional bearer-level deformation to become:
 
@@ -239,10 +287,42 @@ anticipatorily stabilized sensory relations
 -> stable qualitative color / pitch / texture object;
 
 many sensory / contextual expectations
--> actively maintained perceptual foreground even at low reconstructive friction.
++ constitutive Gate friction
+-> normalized lower sensory differences
+-> stable higher-order perceptual foreground.
 ~~~
 
 The qualitative object is therefore a candidate generative interface, not a passive label.
+
+### Two foregrounding levels — do not collapse them
+
+The author distinguishes:
+
+~~~text
+ontological / generative foregrounding
+!=
+cognitive / interventional Gate foregrounding.
+~~~
+
+**Ontological / generative foregrounding** is the pre-reflective formation / maintenance of a higher-order generative object or relation through selective compression, friction organization and active reconstitution.
+
+**Cognitive / interventional foregrounding** is later and stronger:
+
+~~~text
+Gate / expectation / category / rule itself
+-> explicit object of cognition / comparison
+-> possible deliberate recut / intervention.
+~~~
+
+The second may support reflective consciousness, Agency and L0-facing freedom. It is not required for the first.
+
+Therefore:
+
+~~~text
+Gate-generated foreground object
+!=
+Gate itself becoming an intervention object.
+~~~
 
 ---
 
@@ -308,7 +388,7 @@ No future fact travels backward.
 
 Working construct:
 
-> **Common bearer-relative reconfiguration** is present when multiple gate deformations cannot be resolved independently because each changes the feasible resolution space of the others, and the consequences close on the same Bearer.
+> **Common bearer-relative reconfiguration** is present when friction-bearing lower differences are selectively normalized / compressed into a higher-order organization whose resolution changes the feasible continuation of multiple lower processes and whose consequences close on the same Bearer.
 
 This is narrower than:
 
@@ -317,6 +397,8 @@ This is narrower than:
 - ordinary recurrent processing;
 - global broadcast;
 - causal integration.
+
+The important addition is **higher-order generative gain**: the common organization must do more than pool signals; it must reorganize lower capacities / equivalences / dependencies so broader generativity becomes possible.
 
 It is still not a consciousness definition.
 
@@ -402,14 +484,14 @@ Matched global access / report / integration predicts all relevant differences; 
 
 The same phenomenal pattern survives when consequence closure / non-outsourcing architecture is varied in a way the hook predicts should matter.
 
-### F3 — generative-maintenance irrelevance
+### F3 — friction / higher-order irrelevance
 
 Qualitative foregrounding is fully explained without either:
 
-- anticipatory Gate construction contributing to common current generative maintenance; or
-- bearer-relevant Ontological Friction contributing to reconstruction in cases where mismatch / burden is predicted to matter.
+- constitutive Ontological Friction carried by non-neutral Gate maintenance; or
+- selective normalization / higher-order generative integration adding any discriminating burden.
 
-The hook does **not** fail merely because a stable low-friction percept remains phenomenal.
+The hook does **not** fail merely because a stable percept lacks acute mismatch or high boundary friction.
 
 ### F4 — no common-reconfiguration discriminator
 
@@ -431,13 +513,13 @@ No additional author input is required to create this hook.
 
 The 2026-09-25 follow-up adjudication resolves two earlier questions:
 
-1. **Feeling does not require local payment failure as a universal trigger.** Anticipatory Gate construction can generate / maintain a phenomenal foreground without acute failure.
-2. **Low-friction mature sensory qualia do not require a micro-friction rescue by default.** Stabilized gate geometry plus active expectation / anticipatory objectification is an allowed route.
+1. **Feeling does not require local payment failure as a universal trigger.** Gate maintenance already carries constitutive Ontological Friction; acute mismatch only redistributes / amplifies it.
+2. **Stable sensory qualia do not require a separate micro-friction rescue.** Their expectation-mediated Gate already performs selective coarse-graining / normalization and carries constitutive friction as part of higher-order generative maintenance.
 
 Still OPEN for later work:
 
 1. whether a single-gate high-stake deformation can be conscious without cross-gate common reconfiguration;
-2. the minimal condition under which anticipatory objectification becomes genuinely common bearer-level maintenance rather than ordinary unconscious prediction;
+2. the minimal condition under which friction-bearing selective normalization produces genuine higher-order bearer-level generativity rather than ordinary unconscious prediction / local control;
 3. whether positive qualia can arise from low burden but high generative opening;
 4. whether phenomenal unity is graded, nested or discretely fissionable;
 5. whether the BP-Q1 bridge can be strengthened beyond a P3 constitutive / functional hypothesis.
@@ -452,6 +534,6 @@ These are future adjudication / discrimination points, not blockers for retainin
 HP-B positive mechanism route = ACTIVE P3
 HP-B solved = NO
 BP-Q1 = RETAIN FOR TEST
-anticipatory + reconstructive common foreground = RETAIN AS WORKING P4 DISCRIMINATOR
+friction-bearing higher-order generative foreground = RETAIN AS WORKING P4 DISCRIMINATOR
 canonical landing = HOLD
 ~~~
