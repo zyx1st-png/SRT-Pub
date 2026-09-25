@@ -55,8 +55,8 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = author adjudication A-6..A-9 from completed gate-geometry / qualia D1-D5 audit; no canonical edit
-CURRENT NEXT OWNER = Operations/Audits/SRT_GATE_GEOMETRY_QUALIA_D1_D5_BOUNDED_ROUTING_AUDIT_2026-09-25.md
+CURRENT NEXT = bounded validation / review of A-6 HP-B mechanism hook and A-8 GRG multiview operational rearchitecture; no canonical edit
+CURRENT NEXT OWNER = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
 CASE2 SOURCE ADEQUACY = PASS
 CASE2 PRIMARY VERDICT = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN
 §8.1 COUNT = FRR case1 + engagement/recommender case2 = TWO ADEQUATE NO-GAIN CASES
@@ -67,9 +67,13 @@ BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
 
-D1-D5 ROUTING EXECUTION = COMPLETE / audit pending merge in current bounded PR
+D1-D5 ROUTING EXECUTION = COMPLETE / merged
 D1-D5 RESULT OWNER = Operations/Audits/SRT_GATE_GEOMETRY_QUALIA_D1_D5_BOUNDED_ROUTING_AUDIT_2026-09-25.md
-NEXT AUTHOR DECISIONS = A-6 qualia HP-C vs HP-B routing; A-7 common-reconfiguration hook timing; A-8 GRG root sequencing; A-9 friction namespace
+A-6..A-9 AUTHOR ADJUDICATION = COMPLETE / current branch package pending merge
+A-6 RESULT = HP-B MECHANISM CANDIDATE REOPENED / HP-C retained / theorem not claimed
+A-7 RESULT = tentative P3/P4 common-reconfiguration hook authorized
+A-8 RESULT = GRG operational architecture + name REOPENED / original telos retained / v0.4 not created
+A-9 RESULT = theoretical friction = Ontological Friction = canonical Psi_f concept family / contextual readings only
 CANONICAL LANDING = HOLD / no Freeze-A edit authorized
 
 ### 0.3a High-priority gate-geometry / qualia route — 2026-09-25
@@ -90,9 +94,9 @@ Current status:
 AUTHOR DIRECTION = ACCEPTED / HIGH RETRIEVAL PRIORITY / NONCANONICAL;
 SHORT-TERM TASK = OWNER CROSSWALK + COLLISION MAP + PATCH PREPARATION;
 FREEZE-A CANONICAL EDIT = NO in first pass;
-HP-B / phenomenal necessity = OPEN;
-dialogue friction = broader bearer-relative reconstruction-burden family;
-dialogue friction PARTIAL_OVERLAP canonical Psi_f / historical Psi_f^maint; identity NOT ESTABLISHED;
+HP-B logical necessity = OPEN;
+HP-B positive mechanism candidate = ACTIVE / P3-P4;
+theoretical friction = Ontological Friction = canonical Psi_f concept family;
 gate geometry != Psi_f;
 Gate != primitive Selection;
 One != Bearer != Experiencer;
@@ -101,7 +105,7 @@ BCTB T2 remains HOLD;
 new GRG v0.4 = NOT AUTOMATIC.
 ```
 
-This author instruction **supersedes the prior immediate GRG-next sequencing without reopening the stopped fusion lane**. The GRG post-stop-loss method contraction is now handled inside Route H of the bounded gate-geometry patch. The 2026-09-25 second adjudication narrows the 09-23 "深层的语法" intuition: first reconstruct objectification / coarse-graining / L0-L1-L2 generative depth; treat any deep grammar as a downstream reconstruction result, not an upstream universal-grammar assumption.
+This author instruction **supersedes the prior immediate GRG-next sequencing without reopening the stopped fusion lane**. A-8 now reopens the GRG operational architecture itself because L0/L1/L2 are author-adjudicated as analytic views rather than ontic layers. The original telos is retained: recover and integrate the continuous generative dynamics beneath / before / through objectification. `Operations/Proposals/SRT_GRG_MULTIVIEW_OPERATIONAL_REARCHITECTURE_PACKET_2026-09-25.md` is the current noncanonical rearchitecture packet; architecture first, programme name second.
 
 The routing patch must stop after its declared D1-D5 deliverables and return substantive meaning changes for author adjudication before any Freeze-A semantic landing.
 
