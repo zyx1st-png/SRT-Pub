@@ -39,6 +39,10 @@ tags: [AuthorAdjudication, HPB, GateGeometry, Expectation, Anticipation, Qualia,
 
 > 「你的预期路径跟重构路径不是可以合并吗？你说的无意识成为前景化，还是需要我说的本体论摩擦的积累呀。只是这种本体论摩擦和预期主动构建的差异本质是一样的。共同生成性维持，我理解就是获得一种High order structure.通过对部分的归一化，获得更高层的生成性。但我觉得这里应该要加一个内容。作为本体上的生成门控前景化，或者说是一种内稳态。不同于作为认知和干预层面的门控前景化。」
 
+### A0-Q3 — feeling is foregrounding process, not state
+
+> 「我觉得感觉，首先它不是状态，而是过程。是从背景到前景化的一种过程。静息状态下并没有前景。前景是在某种high order处理下获得的一种过程，用来监控状态。」
+
 The final “是笔误” confirms that the earlier literal token `SRG` was a typo for `SRT`. Preserve the historical quotation unchanged; future paraphrase may state this correction explicitly.
 
 ---
@@ -266,6 +270,128 @@ This distinction is now controlling for the noncanonical HP-B / Gate-geometry ro
 
 ---
 
+# A-12b — feeling is a process of foregrounding, not a foreground state
+
+The author further corrects the HP-B ontology:
+
+~~~text
+feeling
+!= a maintained phenomenal state;
+
+feeling
+= the process by which a difference
+  moves from background organization
+  into higher-order generative foreground.
+~~~
+
+The foreground object / qualitative formation is therefore a **temporary or continuously renewed product** of the process, not the identity of feeling itself.
+
+Working chain:
+
+~~~text
+background Gate organization
+-> Ontological Friction becomes generatively consequential
+-> selective normalization / compression
+-> higher-order processing / integration
+-> background-to-foreground transition
+-> transient / renewed foreground objectification
+-> endogenous monitoring of current generative viability
+-> feedback into Gate / expectation / later Selection.
+~~~
+
+## A-12b.1 Meaning of "resting state has no foreground"
+
+The author statement should not be read as the empirical claim:
+
+~~~text
+a waking resting organism has literally zero experience.
+~~~
+
+The stronger and safer ontological reading is:
+
+> **foreground is not a pre-existing static layer. It exists only insofar as foregrounding is actively occurring or being continuously renewed.**
+
+Thus a stable blue wall can remain experienced because:
+
+~~~text
+stable foreground
+= continuously maintained foregrounding process
+!= static phenomenal container.
+~~~
+
+A hypothetical fully quiescent Gate organization in which no difference is promoted into higher-order monitoring has background organization but no active foreground relation.
+
+## A-12b.2 Higher-order processing does not mean metacognition
+
+"High order" here means higher-order generative integration:
+
+~~~text
+lower differences
+-> selective equivalence / normalization
+-> compressed load-bearing relation
+-> broader coordinating generative process.
+~~~
+
+It does **not** require:
+
+- explicit higher-order representation;
+- linguistic report;
+- metacognition;
+- reflective access;
+- deliberate intervention.
+
+## A-12b.3 Monitoring is endogenous generative monitoring
+
+The author's phrase "用来监控状态" is not interpreted as an inner observer inspecting a representation.
+
+Working meaning:
+
+> **foregrounding allows a higher-order generative process to track whether the currently maintained organization remains viable relative to position, Concern, Expectation and ongoing actualisation.**
+
+So "monitoring" is:
+
+~~~text
+endogenous consequence-sensitive tracking
++ higher-order coordination
++ feedback to later Gate / Selection
+~~~
+
+not:
+
+~~~text
+a separate subject
+looking at
+an internal display.
+~~~
+
+The monitored object is also not necessarily a fixed "state". More precisely, the process monitors / coordinates the **current generative configuration and its deviation / friction profile**.
+
+## A-12b.4 Process loop
+
+Candidate noncanonical loop:
+
+~~~text
+background organization
+-> friction / deviation becomes load-bearing
+-> foregrounding process
+-> higher-order monitoring / coordination
+-> local or global correction / continued maintenance
+-> foreground may dissolve back into background
+   once the difference no longer requires higher-order monitoring
+-> later friction can foreground it again.
+~~~
+
+This creates a processual interpretation of phenomenal temporality:
+
+~~~text
+phenomenal persistence
+= recurrent / continuously renewed foregrounding
+not
+= an inert state remaining phenomenally "on".
+~~~
+
+---
+
 # A-13 — philosophical neighbor: human lack / deficiency
 
 The author recalls a philosophical line concerning human lack / deficiency as a possible partial answer.
@@ -401,7 +527,9 @@ selective normalization / coarse-graining = CENTRAL
 ontological / generative foregrounding = DISTINCT FROM cognitive / interventional Gate foregrounding
 stable low-friction qualia = compatible with constitutive-friction / higher-order maintenance
 HP-B scope = GENERAL CANDIDATE, not affect-only
-feeling function = candidate higher-order state for more complete generative maintenance
+feeling ontology = PROCESS, not state
+foreground = transient / continuously renewed product of foregrounding
+feeling function = higher-order generative monitoring / coordination for more complete maintenance
 logical necessity theorem = OPEN
 Gehlen Mängelwesen = neighbor candidate / not SRT authority
 
