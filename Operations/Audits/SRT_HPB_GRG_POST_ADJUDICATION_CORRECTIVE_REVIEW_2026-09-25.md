@@ -45,6 +45,11 @@ D2b foregrounding levels
 = ontological / generative foregrounding
   != cognitive / interventional Gate foregrounding.
 
+D2c feeling ontology
+= PROCESS, not state.
+  Foreground is the transient / continuously renewed result of a
+  background-to-foreground higher-order monitoring process.
+
 D3 BP-Q1 status
 = positive P3 bridge hypothesis supporting a mechanistic account
   of more complete generative maintenance;
@@ -134,7 +139,7 @@ The author does not treat feeling as merely an emergency alarm when background p
 
 Current positive proposal:
 
-> **Phenomenal foreground is a candidate higher-order generative state in which friction-bearing lower differences are selectively normalized / compressed so a formed Bearer can maintain, coordinate, revise and continue a broader world-relative Selection-position.**
+> **Feeling is a candidate higher-order generative foregrounding process in which friction-bearing lower differences are selectively normalized / compressed so a formed Bearer can monitor, coordinate, revise and continue a broader world-relative Selection-position. A foreground object is the temporary / continuously renewed result of that process, not feeling itself.**
 
 This sharpens the structural-side explanation:
 
@@ -150,6 +155,45 @@ The bridge burden remains:
 why common current generative maintenance
 has a first-person phenomenal mode
 rather than being a fully functional zombie process.
+~~~
+
+### Process correction — foreground is produced, not possessed
+
+Latest author correction:
+
+~~~text
+feeling != phenomenal state;
+feeling = background -> foreground process.
+~~~
+
+This narrows the working model:
+
+~~~text
+background Gate organization
+-> friction / deviation becomes load-bearing
+-> selective normalization / compression
+-> higher-order foregrounding
+-> endogenous monitoring / coordination
+-> feedback / correction / continued maintenance
+-> possible return to background.
+~~~
+
+"Resting state has no foreground" is treated ontologically, not as the empirical claim that every waking-rest condition lacks experience:
+
+~~~text
+foreground is not a pre-existing layer;
+where foreground persists phenomenally,
+foregrounding must be actively recurring / continuously renewed.
+~~~
+
+Thus a stable blue-wall experience is a sustained process, not an inert state.
+
+"Monitoring" is also non-reflective by default:
+
+~~~text
+endogenous tracking of generative viability / friction profile
+!= inner observer
+!= metacognitive report.
 ~~~
 
 ### Two foregrounding levels
@@ -344,12 +388,13 @@ Safe next work:
 
 ~~~text
 1. apply the unified Gate / Ontological-Friction correction to the HP-B hook;
-2. distinguish ontological / generative foregrounding from cognitive / interventional Gate foregrounding;
-3. apply the grammar-first objectification correction to the GRG packet;
-4. keep HP-B at P3;
-5. retain the three-arm validation contract;
-6. repair noncanonical routing / STATUS / provenance debt;
-7. do not edit Freeze-A canonical owners.
+2. retype feeling from phenomenal state to recurrent background-to-foreground PROCESS;
+3. distinguish ontological / generative foregrounding from cognitive / interventional Gate foregrounding;
+4. apply the grammar-first objectification correction to the GRG packet;
+5. keep HP-B at P3;
+6. retain the three-arm validation contract;
+7. repair noncanonical routing / STATUS / provenance debt;
+8. do not edit Freeze-A canonical owners.
 ~~~
 
 Items 1-4 are implemented in the same bounded branch as this record.
