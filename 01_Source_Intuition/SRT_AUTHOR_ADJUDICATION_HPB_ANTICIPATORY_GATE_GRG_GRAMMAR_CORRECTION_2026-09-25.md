@@ -31,151 +31,238 @@ tags: [AuthorAdjudication, HPB, GateGeometry, Expectation, Anticipation, Qualia,
 
 ## 0. Direct author instruction
 
-### A0-Q — follow-up adjudication
+### A0-Q1 — follow-up adjudication
 
 > 「第一个问题，我感觉你忘记之前的一个构建了，Gate不一定是对当下的选择压力产生的本体的摩擦的前景化，还包含了预期的主动构建的Gate，比如我现在看到一面蓝墙。SRT并不是只关心当下的任务处理失败的前景化。还包含了对于预期的对象化和前景化。第二个问题也是一样的。第三个问题，我觉得有一个哲学家好像是在讲人的缺失。可以一定程度地回答这个问题。这种状态就是去完成更完备的生成性的的维持所必须的一种状态。第4个问题，我提出的纠错不是说把L0、 L1、 L2当成三个本体世界。而是不是用一套语法去把各领域整合起来，这是之前尝试发现有问题的地方，因为语法也是一种对象化的操作方式。是笔误。」
+
+### A0-Q2 — unified friction / higher-order foregrounding clarification
+
+> 「你的预期路径跟重构路径不是可以合并吗？你说的无意识成为前景化，还是需要我说的本体论摩擦的积累呀。只是这种本体论摩擦和预期主动构建的差异本质是一样的。共同生成性维持，我理解就是获得一种High order structure.通过对部分的归一化，获得更高层的生成性。但我觉得这里应该要加一个内容。作为本体上的生成门控前景化，或者说是一种内稳态。不同于作为认知和干预层面的门控前景化。」
 
 The final “是笔误” confirms that the earlier literal token `SRG` was a typo for `SRT`. Preserve the historical quotation unchanged; future paraphrase may state this correction explicitly.
 
 ---
 
-# A-10 — Gate has anticipatory construction and friction-driven reconstruction routes
+# A-10 — one Gate mechanism: constitutive friction, expectation and reconstruction
 
 ## A-10.1 Author correction
 
-The prior bounded review over-weighted this route:
-
-~~~text
-actualisation / mismatch
--> Ontological Friction
--> local payment failure
--> foreground escalation
-~~~
-
-That route remains valid as a **reactive / reconstructive** pathway, but it is not the general model of Gate formation or phenomenal foregrounding.
-
-The author reasserts an already present repository construction:
-
-~~~text
-position + concern + structural expectation / anticipation
--> active Gate formation / stabilization
--> expected objectification / foregrounding
--> ongoing generative maintenance
-~~~
-
-Therefore:
-
-~~~text
-Gate foregrounding
-!= only a response to present failure;
-Gate formation
-!= only friction escalation;
-stable low-friction perception
-!= counterexample merely because no acute payment failure is present.
-~~~
-
-## A-10.2 Two non-exclusive Gate routes
-
-### Route E — anticipatory / expected objectification
-
-A formed Bearer / Selection-position may actively organize gate geometry in anticipation of viable continuation.
-
-This can include:
-
-- embodied anticipation;
-- model-mediated anticipation;
-- expectation-conditioned coarse-graining;
-- active stabilization of likely / relevant object boundaries;
-- pre-reflective objectification of a currently available scene.
-
-Example supplied by the author:
-
-> seeing a blue wall.
-
-The point is not that “blue wall” is hallucinated by expectation. The point is that perception already depends on an actively maintained objectification / foregrounding regime that is expectation-sensitive and generatively useful.
-
-### Route F — friction-driven reconstruction
-
-When actualisation strains the current gate geometry:
-
-~~~text
-mismatch / burden
--> Ontological Friction
--> pressure on maintained equivalence / boundary
--> foregrounding / recut / reconstruction
-~~~
-
-Pain, hunger, anxiety, surprise and conflict may make this route especially visible.
-
-### Convergence
-
-The two routes can interact:
+The prior formulation split:
 
 ~~~text
 anticipatory Gate construction
-+ actualisation
-+ resulting fit / mismatch
--> maintained or revised foreground objectification
--> changed current Selection-position / future selectability.
+vs
+friction-driven Gate reconstruction
 ~~~
 
-No universal requirement is added that phenomenality must involve high friction.
+too strongly.
+
+The author clarifies that they are two contextual expressions of the **same Gate / Ontological-Friction organization**.
+
+The key earlier repository result already states:
+
+~~~text
+maintaining a non-neutral generative structure
+already costs / excludes / coordinates;
+
+mismatch with current expectation
+redistributes or amplifies that friction.
+~~~
+
+Therefore expectation does not bypass Ontological Friction.
+
+Expectation actively forms / stabilizes a coarse-graining regime by deciding, under the current position and concern:
+
+- what is treated as equivalent;
+- what is separated;
+- what is foreground-relevant;
+- what is backgrounded;
+- what transitions are expected / reachable.
+
+That active cut is itself non-neutral and therefore already carries constitutive Ontological Friction.
+
+World-side mismatch is not a second mechanism. It is a condition under which the **same friction family** becomes redistributed, amplified, retained or boundary-exposing.
+
+## A-10.2 Unified working chain
+
+~~~text
+formed position + concern + expectation
+-> active Gate geometry / selective coarse-graining
+-> constitutive Ontological Friction
+   (maintenance / exclusion / coordination burden)
+-> actualisation / ongoing world coupling
+-> friction may remain absorbed, accumulate, redistribute or amplify
+-> some differences become generatively load-bearing
+-> selective normalization / compression / foregrounding
+-> higher-order generative organization
+-> later expectation / Gate geometry is changed.
+~~~
+
+So:
+
+~~~text
+anticipation
+!= friction-free route;
+
+mismatch
+!= the origin of all friction;
+
+mismatch
+= one way existing Ontological Friction becomes boundary-revealing / amplified.
+~~~
+
+The blue-wall case is therefore not a special exception.
+
+A stable percept can involve:
+
+~~~text
+expectation-mediated Gate
++ ongoing constitutive Ontological Friction
++ selective normalization of lower differences
++ stable foreground objectification
++ higher-order generative maintenance.
+~~~
+
+No acute task failure is required.
 
 ---
 
-# A-11 — HP-B scope remains general; salience is a high-friction special case
+# A-11 — common generative maintenance = higher-order generative integration
 
-The author does **not** restrict the positive HP-B route to affect / salience / conflict experience.
+The author clarifies "common generative maintenance" as a higher-order-structure claim.
 
-Current author direction:
+It should not mean merely:
 
 ~~~text
-general perceptual / qualitative foregrounding
-may be maintained by anticipatory Gate construction;
-
-high-salience / affective foregrounding
-may additionally involve strong friction-driven reconstruction pressure.
+more modules share one signal.
 ~~~
 
-Therefore the “blue wall” case does not require a micro-friction rescue.
+The intended structure is closer to:
 
-The more appropriate scope question is:
+~~~text
+many lower differences / relations
+-> some are normalized / treated as generatively equivalent
+-> some remain load-bearing
+-> their relations are compressed into a higher-order proxy / foreground
+-> the higher-order organization can coordinate / reorganize
+   a broader generative background
+-> effective generativity increases.
+~~~
 
-> when does a formed Gate / objectification become part of the common current generative maintenance of the same Bearer, whether it was anticipatorily constructed, reactively reconstructed, or both?
+This is continuous with the 2026-09-22 author-owned higher-order burden:
 
-This supersedes the bounded review's provisional framing of C4 as a universal “local payment failure” condition.
+~~~text
+retain relevant generative capacities
++ reorganize their realization / positioning
++ absorb previously unresolved friction
++ add new generativity
+= candidate higher-order gain.
+~~~
+
+And with the earlier compression result:
+
+~~~text
+compression
+= some distinctions become generatively equivalent;
+
+higher-order formation
+= reorganization of which differences are compressed as equivalent
+  and which remain / become load-bearing.
+~~~
+
+Therefore the HP-B candidate should be read as:
+
+> **Phenomenal foreground may be the bearer-relative mode in which friction-bearing lower differences are selectively normalized and recruited into a higher-order generative organization that enables broader, more complete continuation than isolated local controls can provide.**
+
+This remains a P3 constitutive / mechanistic candidate, not a logical proof.
 
 ---
 
-# A-12 — why feeling may be required: more complete generative maintenance
+# A-12 — two meanings of Gate foregrounding must remain distinct
 
-The author strengthens the intended explanatory target.
+The author adds an explicit distinction that is stronger and more precise than the previous simple "pre-reflective vs reflective" wording.
 
-Feeling / phenomenal foreground is proposed not merely as an alarm state that appears when unconscious processing fails.
+## A-12.1 Ontological / generative Gate foregrounding
 
-The intended claim is:
-
-> **A phenomenal foreground may be a state required for more complete generative maintenance when a formed Bearer must actively maintain, coordinate, revise and continue a world-relative Selection-position rather than merely execute isolated local controls.**
-
-Working distinction:
+Working label:
 
 ~~~text
-local control
-= a bounded process can continue without the difference becoming part of
-  the Bearer's common current generative position;
-
-phenomenal foreground candidate
-= an objectification / difference becomes part of the common current
-  generative maintenance through which the same Bearer continues Selection.
+generative foregrounding
+/ generative homeostasis
+/ ontological Gate foregrounding
 ~~~
 
-This does not yet prove:
+Meaning:
+
+> a Gate / coarse-graining organization selectively normalizes lower-level differences and promotes a load-bearing difference / object into a higher-order organization so that broader generative continuation can be maintained.
+
+Characteristics:
+
+- pre-reflective;
+- does not require language;
+- does not require an explicit self-model;
+- does not require deliberate intervention;
+- is constitutive of the currently maintained generative organization;
+- may be driven by expectation, current actualisation and accumulated Ontological Friction as one coupled process;
+- may stabilize rather than merely respond to failure;
+- is the relevant foregrounding level for the HP-B phenomenal candidate.
+
+"Homeostasis" here is a **working generative analogy**:
 
 ~~~text
-generative maintenance -> phenomenality by logical necessity.
+generative homeostasis
+!= ordinary physiological variable homeostasis automatically;
+!= predictive-processing / FEP identity;
+!= friction minimization.
 ~~~
 
-It does provide a stronger functional / constitutive burden than “task failure causes awareness”.
+The key is active reconstitution of a viable higher-order generative organization, not restoration of one fixed scalar set-point.
+
+## A-12.2 Cognitive / interventional Gate foregrounding
+
+Working label:
+
+~~~text
+reflective / interventional Gate-objectification
+~~~
+
+Meaning:
+
+> the Gate, expectation, category, rule or coarse-graining regime itself becomes an explicit object for cognition, comparison, intervention or deliberate revision.
+
+Typical chain:
+
+~~~text
+current Gate organizes experience / action
+-> Gate itself becomes object
+-> its equivalence / boundary can be compared
+-> deliberate recut / intervention becomes possible.
+~~~
+
+Characteristics:
+
+- later / stronger than minimal phenomenal foregrounding;
+- may require reflection, metacognition or model-mediated cognition;
+- links to Agency / L0-facing freedom;
+- supports explicit intervention on one's own Gate geometry.
+
+Therefore preserve:
+
+~~~text
+ontological / generative foregrounding
+!=
+cognitive / interventional Gate foregrounding;
+
+phenomenal consciousness candidate
+!=
+reflective consciousness;
+
+Gate-generated foreground object
+!=
+Gate itself becoming an explicit intervention object.
+~~~
+
+This distinction is now controlling for the noncanonical HP-B / Gate-geometry route.
 
 ---
 
@@ -305,11 +392,16 @@ Preserve the original quotation verbatim for provenance and annotate the intende
 # Current author-owned disposition
 
 ~~~text
-anticipatory Gate construction = RETAIN / CENTRAL
-friction-driven Gate reconstruction = RETAIN / NON-EXHAUSTIVE
-stable low-friction qualia = compatible with anticipatory Gate route
+Gate mechanism = UNIFIED / expectation + actualisation + Ontological Friction
+anticipatory vs reconstructive routes = SUPERSEDED AS A FUNDAMENTAL SPLIT
+constitutive friction = present in non-neutral Gate maintenance
+mismatch = redistributes / amplifies / exposes boundary friction
+higher-order generative integration = CENTRAL
+selective normalization / coarse-graining = CENTRAL
+ontological / generative foregrounding = DISTINCT FROM cognitive / interventional Gate foregrounding
+stable low-friction qualia = compatible with constitutive-friction / higher-order maintenance
 HP-B scope = GENERAL CANDIDATE, not affect-only
-feeling function = candidate common state for more complete generative maintenance
+feeling function = candidate higher-order state for more complete generative maintenance
 logical necessity theorem = OPEN
 Gehlen Mängelwesen = neighbor candidate / not SRT authority
 
