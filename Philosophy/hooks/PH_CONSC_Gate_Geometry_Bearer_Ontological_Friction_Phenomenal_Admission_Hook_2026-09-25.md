@@ -6,11 +6,12 @@ canonical: false
 layer: philosophy
 epistemic_layer: bridge
 claim_mode: hypothesis
-claim_level: P3_P4
+claim_level: P3
 created: 2026-09-25
 updated: 2026-09-25
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_ANTICIPATORY_GATE_GRG_GRAMMAR_CORRECTION_2026-09-25.md
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_CONSC05_Phenomenal_Admission_Functionalization_Residual_v0_1.md
@@ -23,7 +24,7 @@ tags: [Consciousness, Qualia, HardProblem, Bearer, GateGeometry, OntologicalFric
 
 # HP-B hook — gate geometry, Bearer, ontological friction and phenomenal admission
 
-> **Status:** tentative noncanonical P3/P4 hook authorized by the 2026-09-25 A-6 / A-7 author adjudication.
+> **Status:** tentative noncanonical P3 hook, revised after the 2026-09-25 anticipatory-Gate follow-up adjudication. P4 remains a target, not current standing.
 >
 > **Purpose:** formulate a positive, non-circular mechanism candidate for why feeling may arise, while retaining the existing Z6 / HP-B failure rights.
 >
@@ -50,7 +51,7 @@ The missing positive question is:
 
 > **Why should a formed Bearer ever need a felt mode rather than merely unconscious control?**
 
-The present hook proposes that feeling becomes relevant when bearer-level generative maintenance can no longer keep a consequential deformation entirely in the background.
+The present hook proposes that feeling becomes relevant when an objectification / difference becomes part of the same Bearer's common current generative maintenance. This can occur through **anticipatory Gate construction**, **friction-driven reconstruction**, or their interaction; present-task failure is not a universal prerequisite.
 
 ---
 
@@ -80,24 +81,42 @@ The Bearer is maintained through a formed coarse-graining organization that dete
 
 This is downstream formed organization, not primitive Selection.
 
-### C3 — ontological friction
+### C3 — situated anticipatory / actualising relation
 
-World-side actualisation imposes canonical ontological friction Psi_f on the formed organization.
+The formed organization is indexed to the Bearer's current position, Concern and structural Expectation / anticipation.
 
-The friction is not merely report, pain, effort or prediction error.
-
-### C4 — local payment failure / escalation
-
-The relevant burden cannot be fully absorbed within one local background gate without materially changing broader bearer-level continuation.
-
-This does not require catastrophic failure.
-
-It requires:
+Two non-exclusive routes are allowed:
 
 ~~~text
-local resolution
-changes or constrains
-other relevant resolution spaces.
+Route E — anticipatory construction:
+position + concern + expectation
+-> active Gate formation / stabilization
+-> expected objectification / foregrounding;
+
+Route F — friction-driven reconstruction:
+actualisation strains current Gate geometry
+-> Ontological Friction (Psi_f)
+-> maintained equivalence / boundary comes under pressure
+-> foregrounding / recut / reconstruction.
+~~~
+
+The first route can remain low-friction. The second makes burden especially visible. Neither report, pain, effort nor prediction error defines Psi_f.
+
+### C4 — common generative relevance / background non-sufficiency
+
+The relevant difference cannot remain merely an isolated background condition **for the current Bearer's generative continuation**.
+
+This may occur because:
+
+- anticipatory Gate construction makes the distinction actively relevant to current objectification; or
+- friction / mismatch forces previously background organization into reconstruction.
+
+Therefore:
+
+~~~text
+background non-sufficiency
+!= local processing failure only
+!= high friction necessarily.
 ~~~
 
 ### C5 — common resolution dependence
@@ -146,7 +165,7 @@ At this point the structural antecedent is complete.
 
 ### BP-Q1 — bearer-constitutive phenomenal admission candidate
 
-> **When bearer-relevant ontological friction cannot remain locally background-paid and must be compressed into a common foreground object that directly reconfigures the same Bearer's current Selection-position, phenomenal presence is the first-person mode of that bearer-constitutive objectification.**
+> **When an anticipatorily formed or friction-reconstructed Gate makes a distinction part of the same Bearer's common current generative maintenance, and that foreground objectification directly participates in the Bearer's current Selection-position, phenomenal presence is proposed as the first-person mode of that bearer-constitutive objectification.**
 
 Important distinction:
 
@@ -166,20 +185,17 @@ the locus bearing the consequence
 the locus whose current operative position is being recut.
 ~~~
 
-This identity of affected unit and continuing selection-locus is the candidate source of first-person character.
+This identity supplies the **ownership / locus anchor** for first-person character. It is not, by itself, sufficient for phenomenality; the additional admission burden lies in the anticipatory / reconstructive common-foreground organization above, while BP-Q1 remains the bridge posit under test.
 
 ---
 
 ## 4. Why unconscious control remains possible
 
-Unconscious gating remains expected when:
+Unconscious gating remains expected when a distinction can remain entirely within local / background regulation and does not become part of the Bearer's common current generative foreground.
 
-~~~text
-ontological friction is locally payable;
-local resolution does not force cross-gate common reconfiguration;
-the current bearer-position need not be recut;
-the deformation can remain an enabling or constraining background cause.
-~~~
+Low Ontological Friction does **not** imply unconsciousness. A stable percept may be phenomenally foregrounded through anticipatory Gate construction even when little reconstructive burden is present.
+
+Conversely, high friction does not by itself imply consciousness.
 
 Therefore:
 
@@ -196,7 +212,7 @@ The candidate transition is the conjunction, not any one term.
 
 ## 5. Why feeling may be useful rather than epiphenomenal
 
-The hook proposes a functional / generative role without reducing feeling to function.
+The hook proposes a functional / generative role without reducing feeling to function. The author follow-up sharpens the role: a phenomenal foreground is a candidate state required for **more complete generative maintenance** when a formed Bearer must actively maintain, coordinate, revise and continue a world-relative Selection-position rather than merely execute isolated local controls.
 
 A low-dimensional felt object may permit a high-dimensional bearer-level deformation to become:
 
@@ -219,8 +235,11 @@ many unresolved threat relations
 many inferential constraints
 -> Aha / obviousness;
 
-many sensory relations
--> stable qualitative color / pitch / texture object.
+anticipatorily stabilized sensory relations
+-> stable qualitative color / pitch / texture object;
+
+many sensory / contextual expectations
+-> actively maintained perceptual foreground even at low reconstructive friction.
 ~~~
 
 The qualitative object is therefore a candidate generative interface, not a passive label.
@@ -383,9 +402,14 @@ Matched global access / report / integration predicts all relevant differences; 
 
 The same phenomenal pattern survives when consequence closure / non-outsourcing architecture is varied in a way the hook predicts should matter.
 
-### F3 — friction irrelevance
+### F3 — generative-maintenance irrelevance
 
-Qualitative foregrounding is fully explained without any bearer-relevant ontological-friction relation across the declared cases.
+Qualitative foregrounding is fully explained without either:
+
+- anticipatory Gate construction contributing to common current generative maintenance; or
+- bearer-relevant Ontological Friction contributing to reconstruction in cases where mismatch / burden is predicted to matter.
+
+The hook does **not** fail merely because a stable low-friction percept remains phenomenal.
 
 ### F4 — no common-reconfiguration discriminator
 
@@ -405,24 +429,29 @@ The quality predictions are no better than an existing quality-space / represent
 
 No additional author input is required to create this hook.
 
-Author input may become necessary if later work needs to decide:
+The 2026-09-25 follow-up adjudication resolves two earlier questions:
 
-1. whether feeling requires actual local payment failure or only rising ontological friction before failure;
-2. whether a single-gate high-stake deformation can be conscious without cross-gate common reconfiguration;
-3. whether low-friction mature sensory qualia require ongoing micro-friction or can be sustained mainly by already-stabilized gate geometry;
-4. whether positive qualia can arise from low burden but high generative opening;
-5. whether phenomenal unity is expected to be graded, nested or discretely fissionable.
+1. **Feeling does not require local payment failure as a universal trigger.** Anticipatory Gate construction can generate / maintain a phenomenal foreground without acute failure.
+2. **Low-friction mature sensory qualia do not require a micro-friction rescue by default.** Stabilized gate geometry plus active expectation / anticipatory objectification is an allowed route.
 
-These are future adjudication points, not blockers for the current P3/P4 hook.
+Still OPEN for later work:
+
+1. whether a single-gate high-stake deformation can be conscious without cross-gate common reconfiguration;
+2. the minimal condition under which anticipatory objectification becomes genuinely common bearer-level maintenance rather than ordinary unconscious prediction;
+3. whether positive qualia can arise from low burden but high generative opening;
+4. whether phenomenal unity is graded, nested or discretely fissionable;
+5. whether the BP-Q1 bridge can be strengthened beyond a P3 constitutive / functional hypothesis.
+
+These are future adjudication / discrimination points, not blockers for retaining the current P3 hook.
 
 ---
 
 ## 12. Current disposition
 
 ~~~text
-HP-B positive mechanism route = ACTIVE P3/P4
+HP-B positive mechanism route = ACTIVE P3
 HP-B solved = NO
 BP-Q1 = RETAIN FOR TEST
-common reconfiguration = RETAIN AS WORKING P4 DISCRIMINATOR
+anticipatory + reconstructive common foreground = RETAIN AS WORKING P4 DISCRIMINATOR
 canonical landing = HOLD
 ~~~
