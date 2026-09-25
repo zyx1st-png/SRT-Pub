@@ -38,8 +38,12 @@ D1 HP-B scope
 
 D2 C4 meaning
 = "local payment failure" is NOT a universal phenomenal trigger.
-  Gate has an anticipatory / expected-objectification route
-  and a friction-driven reconstruction route.
+  The earlier anticipatory-vs-reconstructive route split is SUPERSEDED:
+  Gate maintenance, expectation and mismatch are one Ontological-Friction organization.
+
+D2b foregrounding levels
+= ontological / generative foregrounding
+  != cognitive / interventional Gate foregrounding.
 
 D3 BP-Q1 status
 = positive P3 bridge hypothesis supporting a mechanistic account
@@ -58,8 +62,9 @@ Therefore:
 
 ~~~text
 HP-B route = RETAIN / P3
-stable low-friction perception = NO LONGER a direct F3 counterexample
-micro-friction rescue = NOT REQUIRED
+stable perception = NO LONGER a direct F3 counterexample
+constitutive Gate friction = RETAIN
+acute boundary-friction rescue = NOT REQUIRED
 
 GRG root-method change = RETAIN
 historical rationale = REWRITE
@@ -72,7 +77,7 @@ canonical landing = HOLD
 
 ## 2. Correction to earlier F3 / stable-perception pressure
 
-The earlier review treated C4 as:
+The earlier review first treated C4 as:
 
 ~~~text
 present burden cannot be locally paid
@@ -80,53 +85,46 @@ present burden cannot be locally paid
 -> phenomenality candidate.
 ~~~
 
-Under that reading, a stable blue wall is a strong counterexample.
-
-The author now restores a previously present construction:
+It was then corrected into two apparent routes:
 
 ~~~text
-position + concern + structural expectation / anticipation
--> active Gate formation / stabilization
--> expected objectification / foregrounding.
+anticipatory Gate construction
+vs
+friction-driven reconstruction.
 ~~~
 
-This gives two non-exclusive routes.
+The author's latest clarification supersedes **both** framings as the fundamental architecture.
 
-### E — anticipatory route
+The controlling model is now:
 
 ~~~text
-expectation / anticipation
--> active Gate construction
--> stable objectification / foreground
--> common current generative maintenance.
+expectation-mediated non-neutral Gate
+-> constitutive Ontological Friction
+   through exclusion / coordination / coarse-graining
+-> ongoing actualisation
+-> friction may remain absorbed, accumulate, redistribute or amplify
+-> selective normalization of lower differences
+-> higher-order generative integration
+-> ontological / generative foreground.
 ~~~
 
-This can be low-friction.
+Mismatch is not the origin of friction. It is one way the same friction family becomes amplified or boundary-revealing.
 
-### F — reconstructive route
+Therefore the blue-wall case and pain case are not two consciousness mechanisms.
 
 ~~~text
-actualisation mismatch
--> Ontological Friction
--> Gate strain
--> foreground reconstruction / recut.
+blue wall:
+stable Gate + constitutive friction + normalized lower differences
+-> stable higher-order perceptual foreground;
+
+pain / conflict:
+same architecture + strong mismatch / boundary friction
+-> stronger reconstructive pressure on the higher-order foreground.
 ~~~
 
-This is especially visible in pain, hunger, anxiety, surprise and conflict.
+The correct remaining discriminator is:
 
-### Result
-
-The earlier claim:
-
-> C4 makes BP-Q1 fit affect / salience but not stable perception
-
-is **SUPERSEDED AS A GENERAL OBJECTION**.
-
-A narrower pressure survives:
-
-> the hook still needs a discriminator for when anticipatory objectification becomes common bearer-level phenomenal maintenance rather than ordinary unconscious prediction.
-
-That is the correct future test.
+> when does friction-bearing selective normalization produce a genuinely higher-order bearer-relative generative organization rather than remaining ordinary unconscious local control?
 
 ---
 
@@ -136,7 +134,7 @@ The author does not treat feeling as merely an emergency alarm when background p
 
 Current positive proposal:
 
-> **Phenomenal foreground is a candidate state required for more complete generative maintenance when a formed Bearer must actively maintain, coordinate, revise and continue a world-relative Selection-position.**
+> **Phenomenal foreground is a candidate higher-order generative state in which friction-bearing lower differences are selectively normalized / compressed so a formed Bearer can maintain, coordinate, revise and continue a broader world-relative Selection-position.**
 
 This sharpens the structural-side explanation:
 
@@ -152,6 +150,39 @@ The bridge burden remains:
 why common current generative maintenance
 has a first-person phenomenal mode
 rather than being a fully functional zombie process.
+~~~
+
+### Two foregrounding levels
+
+The author now requires a stricter distinction:
+
+~~~text
+ontological / generative Gate foregrounding
+!=
+cognitive / interventional Gate foregrounding.
+~~~
+
+The first is pre-reflective higher-order generative organization / "generative homeostasis": lower differences are normalized, some remain load-bearing, and a broader generative structure is actively reconstituted.
+
+The second occurs when the Gate / expectation / category / rule itself becomes an explicit object of cognition and possible deliberate intervention.
+
+This is stronger than the earlier generic pre-reflective / reflective distinction because it identifies their **functional level**:
+
+~~~text
+Level O:
+generate / maintain the higher-order foreground;
+
+Level C:
+objectify and intervene on the Gate that generated / maintained it.
+~~~
+
+Guard:
+
+~~~text
+generative homeostasis
+!= physiological set-point homeostasis automatically
+!= FEP identity
+!= friction minimization.
 ~~~
 
 So the correct current strength is:
@@ -312,12 +343,13 @@ The conceptual author decisions are now sufficiently resolved for a bounded nonc
 Safe next work:
 
 ~~~text
-1. apply the anticipatory-Gate correction to the HP-B hook;
-2. apply the grammar-first objectification correction to the GRG packet;
-3. keep HP-B at P3;
-4. retain the three-arm validation contract;
-5. repair noncanonical routing / STATUS / provenance debt;
-6. do not edit Freeze-A canonical owners.
+1. apply the unified Gate / Ontological-Friction correction to the HP-B hook;
+2. distinguish ontological / generative foregrounding from cognitive / interventional Gate foregrounding;
+3. apply the grammar-first objectification correction to the GRG packet;
+4. keep HP-B at P3;
+5. retain the three-arm validation contract;
+6. repair noncanonical routing / STATUS / provenance debt;
+7. do not edit Freeze-A canonical owners.
 ~~~
 
 Items 1-4 are implemented in the same bounded branch as this record.
