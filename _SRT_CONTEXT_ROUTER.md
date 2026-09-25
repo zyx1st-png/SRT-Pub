@@ -160,7 +160,7 @@ When answering or editing a non-simple SRT question:
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md` + `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`（2026-09-24 author direction and future C-class contract for L0 Generative Openness / L1 Actualized Differentiation / L2 Retained Generative Efficacy and the two-role Spine; noncanonical, landing not yet authorized）
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md` + `Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md`（2026-09-25 high-priority noncanonical author direction: gate as stable coarse-graining geometry; prior L2 may shape later L0-facing gating; first pass is owner crosswalk only, not canonical redefinition）
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md` + `Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md`（2026-09-25 high-priority noncanonical author direction + explicit second adjudication: gate as stable coarse-graining geometry; prior L2 may shape later L0-facing gating; first pass is owner crosswalk only, not canonical redefinition）
 
 ### Boundary
 
@@ -231,6 +231,7 @@ When answering or editing a non-simple SRT question:
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`（high-retrieval noncanonical author source for gate geometry / friction / qualia / common reconfiguration / L0-facing freedom）
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md`（explicit A-1…A-5 second adjudication; controls objectification/friction/GRG-provenance ambiguities）
 - `Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md`（current bounded patch owner; no Freeze-A semantic edit in first pass）
 
 ### Secondary
@@ -248,7 +249,8 @@ When answering or editing a non-simple SRT question:
 - IIT / PCI are integration or complexity readouts.
 - GNW is global availability / broadcast.
 - Neither defines `d-value` or `Ψ_f`.
-- 2026-09-25 gate-geometry source has high retrieval priority but remains noncanonical: `Gate != primitive Selection`, dialogue `friction != canonical Psi_f automatically`, `One != Bearer != Experiencer`, and `common reconfiguration != phenomenality proved`.
+- 2026-09-25 gate-geometry source has high retrieval priority but remains noncanonical: `Gate != primitive Selection`; dialogue friction is a broader bearer-relative reconstruction-burden family with `PARTIAL_OVERLAP` to canonical `Psi_f` / historical `Psi_f^maint` but no established identity; `One != Bearer != Experiencer`; and `common reconfiguration != phenomenality proved`.
+- Author `成为对象` is second-adjudicated as a two-level route: pre-reflective phenomenal objectification candidate != reflective / explicit gate-objectification. Canonical One-Formation manifestation still does not imply phenomenality.
 - `B_s -> B_p ?` remains OPEN; use PH-CONSC04 / HardProblem owner for phenomenal-necessity authority.
 - Graphify consciousness pages are support-only and should not outrank canonical consciousness / d-value / Ψ_f sources.
 
