@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # SRT 当前状态仪表盘
@@ -49,12 +49,12 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 Spine minimal-kernel L0/L1/L2 author adjudication + restoration audit = MERGED / 7308c8b0c3b2bc71811e59a789c360bb5053c839
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 #1055 pre-object vertical gating / glue / generative-divinity source + reconciliation plan = MERGED / 01faf40bfb903a1f2c9d378939f5452d36d7cad9
-#1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; SERVES (DOES NOT EXECUTE) CURRENT NEXT
+#1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; RETAINED FOR LATER CANONICAL-OWNER STAGE / NOT CURRENT NEXT
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = post-stop-loss GRG method contraction / root-question review; no new fusion-domain acquisition
-CURRENT NEXT RESULT OWNER = Operations/Audits/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_RESULT_2026-09-24.md
+CURRENT NEXT = high-priority gate-geometry / qualia bounded routing patch; no canonical edit in first pass
+CURRENT NEXT OWNER = Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md
 CASE2 SOURCE ADEQUACY = PASS
 CASE2 PRIMARY VERDICT = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN
 §8.1 COUNT = FRR case1 + engagement/recommender case2 = TWO ADEQUATE NO-GAIN CASES
@@ -64,6 +64,36 @@ THIRD FUSION DOMAIN = NO / no replacement or rescue target authorized
 BCTB T2 = HOLD / NOT AUTOMATIC
 BROADER CANONICAL GRG EXPANSION = HOLD
 ```
+
+### 0.3a High-priority gate-geometry / qualia route — 2026-09-25
+
+Author source and accepted analysis:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`
+- `01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_GATE_GEOMETRY_QUALIA_CONSCIOUSNESS_2026-09-25.md`
+
+Bounded execution owner:
+
+- `Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md`
+
+Current status:
+
+```text
+AUTHOR DIRECTION = ACCEPTED / HIGH RETRIEVAL PRIORITY / NONCANONICAL;
+SHORT-TERM TASK = OWNER CROSSWALK + COLLISION MAP + PATCH PREPARATION;
+FREEZE-A CANONICAL EDIT = NO in first pass;
+HP-B / phenomenal necessity = OPEN;
+dialogue friction != canonical Psi_f automatically;
+Gate != primitive Selection;
+One != Bearer != Experiencer;
+GRG fusion lane remains PAUSED;
+BCTB T2 remains HOLD;
+new GRG v0.4 = NOT AUTOMATIC.
+```
+
+This author instruction **supersedes the prior immediate GRG-next sequencing without reopening the stopped fusion lane**. The GRG post-stop-loss method contraction is now handled inside Route H of the bounded gate-geometry patch: test whether GRG should first recover objectification / coarse-graining geometry and only then infer any cross-domain grammar.
+
+The routing patch must stop after its declared D1-D5 deliverables and return substantive meaning changes for author adjudication before any Freeze-A semantic landing.
 
 ### 0.4 Current GRG / repository-reconstruction route — 2026-09-23
 
@@ -134,7 +164,7 @@ primary verdict = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN;
 independent review = UPHELD;
 §8.1 stop-loss = EXECUTED;
 fusion lane = PAUSED / CONTRACTED;
-CURRENT NEXT = post-stop-loss GRG method contraction / root-question review;
+FORMER GRG NEXT = post-stop-loss method contraction / root-question review; SUBSUMED INTO 2026-09-25 GATE-GEOMETRY ROUTING PATCH ROUTE H;
 no replacement target / third rescue domain;
 no BCTB T2 / v0.4 / canonical expansion follows automatically.
 ```
@@ -689,25 +719,26 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 Current single next:
 
 ```text
-LATENT RECONSTRUCTIVE REACH REALITY PRESSURE-TEST / OPERATIONALIZATION
+HIGH-PRIORITY GATE-GEOMETRY / QUALIA BOUNDED ROUTING PATCH
 
-question:
-“latent reconstructive reach 怎样才算真正存在，
-而不只是‘相关信息仍然被存储’？”
+owner:
+Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md
 ```
 
 Execution boundary:
 
-1. start from the 09-22 reach / reconstructibility source and derivation trace;
-2. treat v0.3 as the bounded foundational owner for already-admitted GRG grammar;
-3. do not create v0.4 merely to absorb the new vocabulary;
-4. first pressure-test whether latent reconstructive reach earns a nontrivial, source-compatible operational burden;
-5. preserve source-native mechanisms and neighbor inheritance; do not reopen winner-style whole-package novelty ranking;
-6. keep `genuine Selection vs descriptive / modelled change` OPEN unless separately author-adjudicated;
-7. do not run BCTB T2 from this route;
-8. do not open new canonical GRG / L0 / One / Bearer / d / Psi_f / T_dir owners by default.
+1. start from the 2026-09-25 author-adjudication record and accepted dialogue derivation trace;
+2. route GG-1..GG-8 through the declared L0/L1/L2, One/Bearer, Psi_f, Hard Problem, qualia, consciousness, Agency and GRG owners;
+3. produce D1-D5 only: owner crosswalk, semantic collision map, bounded patch list, revised Z6 deletion test and GRG contraction decision packet;
+4. do not edit Freeze-A canonical owners in the first pass;
+5. preserve `B_s -> B_p ?`, genuine Selection vs descriptive/modelled change, and all named One/Bearer/Experiencer non-identities as OPEN where currently OPEN;
+6. do not identify dialogue `friction` with canonical `Psi_f` without a separate semantic crosswalk;
+7. keep the GRG fusion lane paused; do not create v0.4, run BCTB T2, or acquire a third fusion domain from this route;
+8. stop after D1-D5 and return only substantive meaning decisions that require author adjudication.
 
-The former 2026-09-21 87-item routing ledger is provenance-only in the Phase-4 status snapshot linked from §0.5.
+The former GRG latent-reach / post-stop-loss next is not discarded: its method-level burden is subsumed under Route H of this bounded patch, where the specific question is whether GRG should reconstruct gate / objectification geometry before inferring cross-domain grammar.
+
+The former 2026-09-21 87-item routing ledger remains provenance-only in the Phase-4 status snapshot linked from §0.5.
 
 ## Historical navigation
 
