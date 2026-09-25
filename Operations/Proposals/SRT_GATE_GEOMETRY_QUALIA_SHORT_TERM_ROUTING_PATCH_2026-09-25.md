@@ -98,7 +98,7 @@ Burden:
 ```text
 successful gate stabilization
 -> gate backgrounds
--> object foreground appears simpler / more natural.
+-> foreground_obj / formed object appears simpler / more natural.
 ```
 
 ### GG-3 — friction
@@ -108,10 +108,17 @@ generative friction
 ~ burden of maintaining / revising a strained gate geometry.
 ```
 
-Mandatory guard:
+Second-adjudicated typing:
 
 ```text
-GG-3 friction != canonical Psi_f automatically.
+GG-3 dialogue friction
+= broader bearer-relative reconstruction-burden family
+
+GG-3 friction
+PARTIAL_OVERLAP canonical Psi_f / historical Psi_f^maint
+
+identity = NOT ESTABLISHED
+total separation = NOT ASSUMED
 ```
 
 ### GG-4 — situated non-neutrality / owner-typed crosswalk
