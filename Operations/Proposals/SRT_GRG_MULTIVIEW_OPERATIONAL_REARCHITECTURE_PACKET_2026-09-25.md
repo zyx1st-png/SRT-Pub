@@ -1,0 +1,586 @@
+---
+id: SRT-GRG-MULTIVIEW-OPERATIONAL-REARCHITECTURE-PACKET-20260925
+type: proposal
+status: active
+canonical: false
+layer: operations
+epistemic_layer: os
+claim_mode: rearchitecture_packet
+created: 2026-09-25
+updated: 2026-09-25
+priority: high
+research_mode: U
+dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
+  - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
+  - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
+  - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
+  - Operations/Audits/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_RESULT_2026-09-24.md
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - Core_Law/SRT_One_Formation.md
+tags: [GRG, Rearchitecture, L0, L1, L2, AnalyticViews, Objectification, GateGeometry, GenerativeDynamics, ResearchMethod]
+---
+
+# GRG multiview operational rearchitecture packet
+
+> **Role:** bounded operational rearchitecture packet after the 2026-09-25 author correction that L0 / L1 / L2 are analytic views rather than ontic layers.
+>
+> **Boundary:** this does not create GRG v0.4, does not rename the programme, and does not reopen the paused fusion lane. It defines the problem that a later replacement architecture must solve.
+
+---
+
+## 1. Why rearchitecture is required
+
+GRG was designed as an operational route for applying SRT ontology to research problems.
+
+A large part of its prior architecture was compatible with a layered reading:
+
+~~~text
+L0
+-> L1
+-> L2
+~~~
+
+even when the repository already carried guards against naive temporal or spatial stratification.
+
+The current author correction is stronger:
+
+~~~text
+L0 / L1 / L2
+= analytic views of one generative process
+!= three ontic spaces
+!= mandatory sequential stages
+~~~
+
+Therefore the operational research method should no longer ask primarily:
+
+> Which layer does this domain object belong to?
+
+It should ask:
+
+> What becomes visible when the same generative process is reconstructed under L0-, L1- and L2-facing views, and how do those views constrain one another?
+
+This is a root-method change.
+
+---
+
+## 2. Programme telos remains unchanged
+
+The author retains the original goal:
+
+> discover and integrate the continuous dynamics that remain hidden beneath, before and through objectification.
+
+The programme is not abandoned.
+
+What changes is the route.
+
+Old risk:
+
+~~~text
+grammar first
+-> map domains
+-> seek correspondence
+~~~
+
+Current target:
+
+~~~text
+recover generative continuity
+across objectification
+-> then abstract recurring structure if warranted
+~~~
+
+---
+
+## 3. Cross-domain diagnosis
+
+Mature fields frequently possess strong but partial views.
+
+### L2-heavy research
+
+Typical strengths:
+
+- stable laws;
+- regularities;
+- statistical relations;
+- learned policies;
+- institutional rules;
+- mature causal models;
+- horizontal relations among already objectified variables.
+
+These can be extremely powerful.
+
+They often begin after the relevant objects / variables have already been stabilized.
+
+### L1-relevant research
+
+Some fields explicitly study:
+
+- state formation;
+- phase transition;
+- individuation;
+- category formation;
+- boundary formation;
+- emergence;
+- object persistence.
+
+These supply partial L1-facing reconstruction.
+
+### L0-relevant research
+
+Some fields explicitly study:
+
+- affordance / possibility structure;
+- constraint landscapes;
+- pre-object dynamics;
+- latent organization;
+- accessibility / reachability;
+- formation conditions;
+- symmetry breaking;
+- developmental potential.
+
+These supply partial L0-facing reconstruction.
+
+### Programme burden
+
+Do not assume a source lacks any one view.
+
+Ask instead:
+
+~~~text
+Are the relevant views:
+- present?
+- explicit?
+- mutually connected?
+- intervention-sensitive?
+- reconstructible across changes of objectification?
+~~~
+
+The programme's possible contribution is completeness and integration, not automatic novelty.
+
+---
+
+## 4. Multiview reconstruction target
+
+For a target phenomenon X, reconstruct at least the following where meaningful.
+
+### V0 — L0-facing view
+
+Question:
+
+> Before taking X as a settled object, what generative conditions make X-like distinctions formable, reachable, separable or suppressible?
+
+Candidate contents:
+
+- gate geometry;
+- reachability;
+- equivalence structure;
+- latent distinctions;
+- support;
+- constraints;
+- perturbation sensitivity;
+- possible recuts.
+
+### V1 — L1-facing view
+
+Question:
+
+> What determinate object / boundary / distinction is actually being formed, maintained or transformed?
+
+Candidate contents:
+
+- foreground object;
+- state;
+- boundary;
+- operative relation;
+- event;
+- actualized distinction.
+
+### V2 — L2-facing view
+
+Question:
+
+> What retained organization makes this formation reproducible and continues to shape later generation?
+
+Candidate contents:
+
+- history;
+- rule;
+- habit;
+- law-like regularity;
+- learned structure;
+- institutional scaffold;
+- stabilized model;
+- recurrent support.
+
+---
+
+## 5. The central recursive relation
+
+The key operational relation is not a one-way ladder.
+
+Candidate:
+
+~~~text
+L0-facing generative organization
+-> L1 formed distinction
+-> possible L2 retention
+-> later L0-facing gate modification
+-> later L1 formation
+...
+~~~
+
+This is a recursive analytic route.
+
+It allows:
+
+- terminal Selection;
+- weak or absent L2 retention;
+- multiple L2 structures feeding one later L0-facing organization;
+- one L2 structure affecting many later objectifications.
+
+No universal cycle length is assumed.
+
+---
+
+## 6. Gate geometry as candidate operational scaffold
+
+Gate geometry is promising because it can potentially represent the relation among views.
+
+Working components:
+
+~~~text
+equivalence:
+which differences can currently be grouped?
+
+boundary:
+which distinctions must remain separated?
+
+neighborhood:
+which formations count as locally similar / nearby?
+
+transition:
+which changes are accessible / difficult / blocked?
+
+stability:
+which relations survive perturbation?
+
+reachability:
+which latent differences can enter later Selection?
+
+reconstruction:
+how can the current cut itself be reopened?
+~~~
+
+Possible multiview role:
+
+~~~text
+L0-facing:
+geometry of what can become;
+
+L1-facing:
+current foreground cut / object boundary;
+
+L2-facing:
+retained stabilizers that reproduce / bias the geometry later.
+~~~
+
+This is attractive because one formal family may describe continuity across views without turning them into substances.
+
+But it is only a candidate scaffold.
+
+---
+
+## 7. Ontological friction as the deformation signal
+
+Under A-9:
+
+~~~text
+friction
+= ontological friction
+= Psi_f
+~~~
+
+Operationally, ontological friction may indicate:
+
+- cost of forming a cut;
+- cost of maintaining it;
+- cost of revising it;
+- mismatch between current gate geometry and world-side actualisation;
+- payability limit of the current organization.
+
+Therefore it can act as a cross-view diagnostic:
+
+~~~text
+L2-stabilized structure
++ new actualisation
+-> rising ontological friction
+-> L0-facing gate strain
+-> possible recut / new L1 objectification
+-> new L2 sediment.
+~~~
+
+Do not infer that every high Psi_f episode requires a recut.
+
+---
+
+## 8. Proposed operational sequence
+
+This packet proposes the following discovery sequence for testing, not yet as a mandatory protocol.
+
+### Stage 0 — source-native recovery
+
+Recover:
+
+- source concepts;
+- equations;
+- variables;
+- mature mechanisms;
+- alternative models;
+- negative cases;
+- scale / boundary assumptions.
+
+### Stage 1 — objectification audit
+
+Ask:
+
+- what has already been made into an object?
+- which distinctions were compressed?
+- what does the current cut enable?
+- what does it hide?
+- under what interventions does it fail?
+
+### Stage 2 — L2-facing reconstruction
+
+Ask:
+
+- what retained organization keeps the current objectification stable?
+- which histories / rules / habits / support relations matter?
+- what is merely descriptive regularity versus load-bearing retained efficacy?
+
+### Stage 3 — L1-facing reconstruction
+
+Ask:
+
+- what exactly is the current determinate formation?
+- what boundary / relation / event is being actualized?
+- what is genuinely changing rather than merely being redescribed?
+
+### Stage 4 — L0-facing reconstruction
+
+Ask:
+
+- what gate geometry / generative organization makes the L1 formation possible?
+- which latent distinctions remain accessible or suppressed?
+- what neighboring recuts are feasible?
+- what prior L2 structure is already biasing this view?
+
+### Stage 5 — ontological-friction audit
+
+Ask:
+
+- where does the current organization become difficult to form / maintain / revise?
+- what burden is actual rather than merely reported?
+- what support is paying the burden?
+- which burden is local versus bearer / system wide?
+
+### Stage 6 — recurrence / re-entry
+
+Ask:
+
+- how does retained organization re-enter later L0-facing formation conditions?
+- which recuts alter later L1 objects?
+- which transformations survive across views?
+
+### Stage 7 — integration
+
+Attempt a single generative account that preserves:
+
+- source-native evidence;
+- all three analytic views;
+- intervention / failure boundaries;
+- provenance of each cut;
+- what remains OPEN.
+
+### Stage 8 — abstraction
+
+Only now ask whether:
+
+- a reusable relation;
+- transformation;
+- geometry;
+- grammar;
+- operator;
+- invariant;
+
+survives beyond this case.
+
+---
+
+## 9. Difference from current cross-objectification protocol
+
+The 09-23 protocol already does important work:
+
+~~~text
+source-native recovery
++ objectification genealogy
++ GRG-cut genealogy
++ owner absorption
++ discovery / test separation
+~~~
+
+Retain all of that.
+
+The new burden is:
+
+> explicitly reconstruct the same process under the L0 / L1 / L2 analytic views and test whether the views can be integrated into one continuous dynamics.
+
+Therefore:
+
+~~~text
+09-23 method
+= anti-mapping + dual reconstruction + anti-drift foundation
+
+09-25 candidate method
+= multiview generative completion layered onto that foundation
+~~~
+
+It is not a replacement by slogan.
+
+---
+
+## 10. Why "Grammar" may no longer be the right programme name
+
+The object of study is shifting from:
+
+~~~text
+a reusable grammar of generative transformations
+~~~
+
+toward:
+
+~~~text
+reconstruction of continuous generative dynamics
+across objectification and analytic views
+~~~
+
+"Grammar" may remain appropriate if future work shows stable recurrent transformation syntax.
+
+It may be misleading if the method's primary success is:
+
+- reconstructing hidden view relations;
+- revealing gate geometry;
+- reconnecting object formation and sedimentation;
+- enabling recuts;
+- integrating dynamics without a compact grammar.
+
+Therefore:
+
+~~~text
+programme name = OPEN
+~~~
+
+Do not rename until the architecture survives at least one bounded re-execution.
+
+---
+
+## 11. Name-review criteria
+
+Any future name should pass:
+
+1. does not imply a universal grammar is already established;
+2. preserves the generative / process emphasis;
+3. reflects operational application rather than canonical SRT ontology itself;
+4. accommodates L0 / L1 / L2 as views;
+5. does not make gate geometry mandatory unless validated;
+6. remains understandable outside repository-specific vocabulary.
+
+No candidate name is selected in this packet.
+
+---
+
+## 12. Validation plan before rearchitecture promotion
+
+Do not create GRG v0.4 yet.
+
+First run one bounded method-reconstruction exercise on an already understood case.
+
+Preferred design:
+
+~~~text
+same source case
+same model / analyst
+compare:
+
+A. current 09-23 GRG reconstruction protocol
+
+B. multiview L0/L1/L2 reconstruction
+   with optional gate-geometry scaffold
+
+measure:
+- source fidelity
+- hidden-assumption exposure
+- relation recovery
+- unnecessary vocabulary
+- intervention discrimination
+- new testable residual
+- explanatory compression
+- failure clarity
+~~~
+
+Possible result states:
+
+~~~text
+NO_GAIN
+REORGANIZATION_ONLY
+METHOD_GAIN
+NEW_RESIDUAL
+INCOMPARABLE
+~~~
+
+No new domain is needed.
+
+Use an existing case to avoid rescue-domain hopping.
+
+---
+
+## 13. Stop-loss discipline
+
+The rearchitecture must not become a way to evade the two no-gain fusion results.
+
+Blocked move:
+
+~~~text
+old GRG failed to show gain
+-> rename method
+-> choose new domain
+-> reset evidence clock
+~~~
+
+Required move:
+
+~~~text
+old GRG no-gain
+-> change method only if author ontology changed
+-> compare old vs new method on existing material
+-> carry prior failures forward
+~~~
+
+This packet follows the second route.
+
+---
+
+## 14. Current disposition
+
+~~~text
+GRG telos = RETAIN
+current GRG name = OPEN
+v0.3 owner = RETAIN UNTIL REPLACED
+multiview rearchitecture = ACTIVE CANDIDATE
+gate geometry = PROMISING OPTIONAL SCAFFOLD
+ontological friction = SHARED CROSS-VIEW DIAGNOSTIC
+new v0.4 = HOLD
+new fusion domain = NO
+BCTB T2 = HOLD
+next validation = old-method vs multiview-method comparison on existing case
+~~~

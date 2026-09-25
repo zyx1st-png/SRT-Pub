@@ -10,7 +10,7 @@ created: 2026-09-25
 updated: 2026-09-25
 priority: highest_short_term
 author_authorized: true
-execution_state: d1_d5_complete_awaiting_author_adjudication
+execution_state: completed_by_A6_A9_author_adjudication
 research_mode: U
 root_question: Can the gate-geometry account coherently unify objectification, bearer-relative friction, qualia, phenomenal unity and L0-facing freedom without collapsing existing owner distinctions or overclaiming HP-B?
 comparative_claim: none_at_entry
@@ -620,6 +620,30 @@ This short-term task does **not** authorize:
 - opening a third main deep well;
 - broad cross-domain synthesis;
 - rewriting published manuscripts.
+
+---
+
+## 6.0 Post-D1-D5 author adjudication — A-6..A-9 resolved
+
+Controlling source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
+
+Result:
+
+~~~text
+A-6 HP-B mechanism candidate = REOPEN / ACTIVE
+A-7 tentative common-reconfiguration hook = AUTHORIZED
+A-8 GRG operational architecture + programme name = REOPEN
+A-9 friction = Ontological Friction = canonical Psi_f concept family
+~~~
+
+This supersedes the D1-D5 recommendations where they conflict, especially:
+- HP-B mechanism HOLD;
+- friction/Psi_f identity OPEN;
+- GRG change as only a minor method narrowing.
+
+No Freeze-A semantic edit is authorized.
 
 ---
 
