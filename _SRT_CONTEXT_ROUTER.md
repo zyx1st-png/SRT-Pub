@@ -170,6 +170,44 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 5a. Route: Gate Geometry / Qualia / Bearer-Relative Friction / L0-Facing Freedom
+
+**Short-term priority:** HIGH companion route as of 2026-09-25. It serves the existing STATUS post-stop-loss GRG root-question review and consciousness / agency reconciliation; it does **not** create a second CURRENT NEXT and does not authorize canonical landing.
+
+**Use when the query mentions**: gate geometry, gating geometry, coarse-graining and stability, gate transparency, bearer-relative friction, qualia geometry, phenomenal compression, common bearer-relative reconfiguration, phenomenal unity, L0-facing freedom, addiction as gate capture, reflection as gate-objectification, GRG as objectification reconstruction.
+
+### Primary
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+- Philosophy/SRT_HardProblem_Epistemology.md
+- Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
+- Philosophy/patches/SRT_Philosophy_PH_QUAL01_Reselective_Qualia_Geometry_v0_2.md
+- Core_Law/SRT_One_Formation.md
+
+### Secondary
+
+- 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_GATE_GEOMETRY_CONSCIOUSNESS_2026-09-25.md
+- Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_RECONCILIATION_PATCH_2026-09-25.md
+- Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
+- Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+- Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md
+- Core/SRT_OPEN_TENSIONS.md
+
+### Boundary
+
+- gate geometry is a high-priority **working construct**, not a new primitive, symbol, field or canonical definition.
+- Gate / coarse-graining / stability do not automatically establish Selection, One, Bearer, agency or consciousness.
+- friction in the 2026-09-25 source is broader source-level reconstruction burden unless and until a canonical Ψ_f owner crosswalk is established.
+- qualia != friction; specific qualitative character is routed through relational / gate geometry, while intensity / urgency / valence are separate candidate burdens.
+- One != Bearer != Experiencer; bearer-level common reconfiguration does not prove phenomenality.
+- HP-B phenomenal necessity remains OPEN.
+- L0-facing freedom is a source-level agency correction to be crosswalked with existing reselectability / constraint-rewrite owners; it is not unlimited possibility creation.
+- GRG should treat the 2026-09-25 source as a root-question / method-contraction input, not as proof that a universal grammar has already been canonically retired.
+- For derivation history and pressure cases, read the dialogue trace; do not treat the trace as definition authority.
+
+---
+
 ## 6. Route: Adjacent Theories / SRT Is Not Just X
 
 **Use when the query asks**: Is SRT just FEP? IIT? GNW? Quantum collapse? Social constructionism? Multilevel selection? Enactivism? Process philosophy? Buddhist metaphysics?
