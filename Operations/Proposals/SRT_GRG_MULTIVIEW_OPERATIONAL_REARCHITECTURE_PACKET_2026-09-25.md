@@ -12,6 +12,7 @@ priority: high
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_ANTICIPATORY_GATE_GRG_GRAMMAR_CORRECTION_2026-09-25.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
   - Operations/Proposals/SRT_GRG_DIALOGUE_CONTINUITY_DUAL_RECONSTRUCTION_PROTOCOL_V0_1_2026-09-23.md
@@ -23,7 +24,7 @@ tags: [GRG, Rearchitecture, L0, L1, L2, AnalyticViews, Objectification, GateGeom
 
 # GRG multiview operational rearchitecture packet
 
-> **Role:** bounded operational rearchitecture packet after the 2026-09-25 author correction that L0 / L1 / L2 are analytic views rather than ontic layers.
+> **Role:** bounded operational rearchitecture packet after the 2026-09-25 author correction that a **grammar-first cross-domain programme is itself an objectifying operation**. L0 / L1 / L2 remain analytic views and become one reconstruction aid inside that deeper correction.
 >
 > **Boundary:** this does not create GRG v0.4, does not rename the programme, and does not reopen the paused fusion lane. It defines the problem that a later replacement architecture must solve.
 
@@ -33,34 +34,43 @@ tags: [GRG, Rearchitecture, L0, L1, L2, AnalyticViews, Objectification, GateGeom
 
 GRG was designed as an operational route for applying SRT ontology to research problems.
 
-A large part of its prior architecture was compatible with a layered reading:
+The current author correction is **not** that v0.3 mistakenly treated L0 / L1 / L2 as three ontic worlds. The repository already carried anti-layer guards, and v0.3 explicitly treats verticality as a research relation rather than a variable ontology.
+
+The deeper problem is methodological:
+
+> **A prior grammar is itself an objectification.**
+
+A grammar selects / stabilizes:
+
+- units;
+- relation types;
+- admissible transformations;
+- equivalences;
+- boundaries;
+- recurrent forms worth noticing.
+
+Therefore:
 
 ~~~text
-L0
--> L1
--> L2
+preselect grammar
+-> map domains into it
+-> integrate by recurrent fit
 ~~~
 
-even when the repository already carried guards against naive temporal or spatial stratification.
+risks compressing the very pre-object / objectification dynamics that GRG is supposed to recover.
 
-The current author correction is stronger:
+The author correction is:
 
 ~~~text
-L0 / L1 / L2
-= analytic views of one generative process
-!= three ontic spaces
-!= mandatory sequential stages
+source-native reconstruction
+-> recover the operative objectification / cut
+-> reconstruct one process under L0 / L1 / L2-facing views where useful
+-> trace how the views constrain and recursively re-enter one another
+-> allow recutting
+-> only then ask whether a grammar / invariant survives.
 ~~~
 
-Therefore the operational research method should no longer ask primarily:
-
-> Which layer does this domain object belong to?
-
-It should ask:
-
-> What becomes visible when the same generative process is reconstructed under L0-, L1- and L2-facing views, and how do those views constrain one another?
-
-This is a root-method change.
+So the root-method change is **grammar-first -> reconstruction-first / grammar-late**, not **three ontic layers -> three views**.
 
 ---
 
@@ -70,6 +80,8 @@ The author retains the original goal:
 
 > discover and integrate the continuous dynamics that remain hidden beneath, before and through objectification.
 
+The correction concerns the **means of integration**: integration should not be forced through a grammar chosen in advance.
+
 The programme is not abandoned.
 
 What changes is the route.
@@ -78,16 +90,18 @@ Old risk:
 
 ~~~text
 grammar first
--> map domains
--> seek correspondence
+-> objectify domains through a prior relation vocabulary
+-> map / compare inside that cut
+-> mistake recurrent fit for integration
 ~~~
 
 Current target:
 
 ~~~text
 recover generative continuity
-across objectification
--> then abstract recurring structure if warranted
+across objectification and analytic views
+-> preserve source-native cuts and recut rights
+-> then abstract recurring structure / grammar only if warranted
 ~~~
 
 ---
@@ -442,10 +456,11 @@ Therefore:
 = anti-mapping + dual reconstruction + anti-drift foundation
 
 09-25 candidate method
-= multiview generative completion layered onto that foundation
+= reconstruction-first / grammar-late programme correction
+  + explicit multiview generative completion layered onto that foundation
 ~~~
 
-It is not a replacement by slogan.
+The new burden is not that 09-23 was ontologically layer-based. It is that the programme must stop treating `grammar` as the presumptive final integration object.
 
 ---
 
@@ -455,13 +470,15 @@ The object of study is shifting from:
 
 ~~~text
 a reusable grammar of generative transformations
+as the expected cross-domain integration object
 ~~~
 
 toward:
 
 ~~~text
 reconstruction of continuous generative dynamics
-across objectification and analytic views
+across objectification and analytic views,
+with grammar only as a possible late compression result
 ~~~
 
 "Grammar" may remain appropriate if future work shows stable recurrent transformation syntax.
@@ -509,23 +526,40 @@ Preferred design:
 
 ~~~text
 same source case
-same model / analyst
+same bounded source pack
 compare:
 
 A. current 09-23 GRG reconstruction protocol
 
-B. multiview L0/L1/L2 reconstruction
+B. reconstruction-first / grammar-late multiview method
    with optional gate-geometry scaffold
+
+C. strong no-GRG source-native multiscale / mechanistic baseline
 
 measure:
 - source fidelity
 - hidden-assumption exposure
-- relation recovery
+- relation / dependency recovery
+- objectification / cut exposure
 - unnecessary vocabulary
 - intervention discrimination
 - new testable residual
 - explanatory compression
 - failure clarity
+- cross-view integration that changes the analysis
+~~~
+
+Primary no-gain guard:
+
+~~~text
+B > A but B <= C on substantive dimensions
+-> REORGANIZATION_ONLY or NO_GRG_GAIN;
+
+B introduces mainly repository-native vocabulary
+-> NO_GAIN;
+
+METHOD_GAIN requires a source-faithful dependency / intervention discriminator
+that both A and C miss.
 ~~~
 
 Possible result states:
@@ -561,12 +595,14 @@ Required move:
 
 ~~~text
 old GRG no-gain
--> change method only if author ontology changed
--> compare old vs new method on existing material
+-> preserve the failure
+-> state the new design hypothesis explicitly
+-> compare old method vs new reconstruction-first method vs no-GRG baseline
 -> carry prior failures forward
+-> do not reset the evidence clock by renaming the programme.
 ~~~
 
-This packet follows the second route.
+The present design change is author-owned because the author rejects **grammar-first integration as premature objectification**. It does not require pretending that v0.3 previously asserted three ontic layers.
 
 ---
 
@@ -582,5 +618,5 @@ ontological friction = SHARED CROSS-VIEW DIAGNOSTIC
 new v0.4 = HOLD
 new fusion domain = NO
 BCTB T2 = HOLD
-next validation = old-method vs multiview-method comparison on existing case
+next validation = current GRG vs reconstruction-first multiview vs strong no-GRG baseline on existing case
 ~~~
