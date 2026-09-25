@@ -51,7 +51,7 @@ The missing positive question is:
 
 > **Why should a formed Bearer ever need a felt mode rather than merely unconscious control?**
 
-The present hook proposes one unified mechanism: a formed Gate actively maintains a non-neutral coarse-graining under position / Concern / Expectation, thereby carrying Ontological Friction; world-side mismatch can redistribute or amplify that same friction. When friction-bearing lower differences are selectively normalized / compressed into a higher-order organization that becomes load-bearing for the same Bearer's generative continuation, an ontological / generative foreground is formed. Present-task failure is not a universal prerequisite.
+The present hook proposes one unified mechanism: a formed Gate actively maintains a non-neutral coarse-graining under position / Concern / Expectation, thereby carrying Ontological Friction; world-side mismatch can redistribute or amplify that same friction. When friction-bearing lower differences are selectively normalized / compressed through a higher-order organization, the relevant candidate is **the background-to-foreground process itself**. A foreground object is only a transient or continuously renewed product of that process. Present-task failure is not a universal prerequisite.
 
 ---
 
@@ -162,9 +162,9 @@ retain relevant lower generative capacities
 
 This is not merely "more hierarchy" or "more centralized control".
 
-### C6 — ontological / generative foregrounding
+### C6 — ontological / generative foregrounding process
 
-The higher-order organization foregrounds a load-bearing object / difference as part of the Bearer's currently maintained generative reality.
+The higher-order organization runs a **background-to-foreground transition** in which a load-bearing difference becomes temporarily or recurrently foregrounded as part of the Bearer's currently maintained generative reality.
 
 This is the **ontological / generative** sense of foregrounding:
 
@@ -179,8 +179,11 @@ Working interpretation:
 
 ~~~text
 generative foregrounding
-~ active reconstitution / generative homeostasis
-  of a higher-order Gate organization.
+= process of active reconstitution / generative homeostasis
+  through which background difference becomes higher-order foreground;
+
+foreground object
+= temporary / continuously renewed output of that process.
 ~~~
 
 Guard:
@@ -194,14 +197,15 @@ generative homeostasis
 
 It means maintaining a viable higher-order generative organization under ongoing Selection.
 
-### C7 — current Selection-position reconfiguration
+### C7 — higher-order endogenous monitoring / Selection-position reconfiguration
 
-The foregrounded state directly changes the current operative from-where of the same Bearer:
+The foregrounding process functions as endogenous monitoring / coordination of the Bearer's current generative configuration. It tracks whether the maintained organization remains viable relative to position, Concern, Expectation and ongoing actualisation, and thereby changes the current operative from-where of the same Bearer:
 
 - candidate priority;
 - action readiness;
 - memory access;
 - concern weighting;
+- current friction / deviation profile;
 - future selectability;
 - later gate reconstruction.
 
@@ -213,7 +217,7 @@ At this point the structural antecedent is complete.
 
 ### BP-Q1 — bearer-constitutive phenomenal admission candidate
 
-> **When Ontological Friction carried by an expectation-mediated Gate is selectively normalized / compressed into a higher-order generative organization whose foreground objectification becomes constitutive of the same Bearer's current Selection-position, phenomenal presence is proposed as the first-person mode of that ontological / generative foregrounding.**
+> **When Ontological Friction carried by an expectation-mediated Gate becomes generatively load-bearing and is selectively normalized / compressed through a higher-order background-to-foreground process that endogenously monitors and reorganizes the same Bearer's current generative configuration, phenomenal presence is proposed as the first-person mode of that foregrounding process.**
 
 Important distinction:
 
@@ -233,7 +237,7 @@ the locus bearing the consequence
 the locus whose current operative position is being recut.
 ~~~
 
-This identity supplies the **ownership / locus anchor** for first-person character. It is not, by itself, sufficient for phenomenality; the additional admission burden lies in the higher-order generative integration of friction-bearing differences and the resulting ontological / generative foreground, while BP-Q1 remains the bridge posit under test.
+This identity supplies the **ownership / locus anchor** for first-person character. It is not, by itself, sufficient for phenomenality; the additional admission burden lies in the higher-order generative integration of friction-bearing differences and the resulting **foregrounding process**, not in a static foreground state, while BP-Q1 remains the bridge posit under test.
 
 ---
 
@@ -241,7 +245,7 @@ This identity supplies the **ownership / locus anchor** for first-person charact
 
 Unconscious gating remains expected when friction-bearing differences can be normalized / absorbed within local or lower-order organization without becoming load-bearing for a broader higher-order generative structure.
 
-A stable percept such as a blue wall therefore does **not** require acute task failure, but it is also not treated as friction-free. The maintained perceptual Gate already pays constitutive Ontological Friction through selective coarse-graining, exclusion and coordination.
+A stable percept such as a blue wall therefore does **not** require acute task failure, but it is also not treated as friction-free. Its apparent stability is read as a **continuously renewed foregrounding process**: the perceptual Gate keeps paying / organizing constitutive Ontological Friction through selective coarse-graining, exclusion and coordination.
 
 Conversely, high or accumulated friction does not by itself imply consciousness. The candidate transition requires that the retained burden participate in a higher-order generative foreground rather than remain merely local or backgrounded.
 
@@ -260,9 +264,9 @@ The candidate transition is the conjunction, not any one term.
 
 ## 5. Why feeling may be useful rather than epiphenomenal
 
-The hook proposes a functional / generative role without reducing feeling to function. The author follow-up sharpens the role: a phenomenal foreground is a candidate **higher-order generative structure** required for more complete generative maintenance. It selectively normalizes lower differences, preserves relevant generative capacities, absorbs / reorganizes accumulated friction, and permits broader coordinated continuation than isolated local controls.
+The hook proposes a functional / generative role without reducing feeling to function. The author follow-up sharpens the role: **feeling is not the higher-order state or structure; it is the process by which background differences are promoted into a higher-order generative foreground for ongoing monitoring / coordination.** The higher-order structure is the organization that performs and sustains this process. It selectively normalizes lower differences, preserves relevant generative capacities, absorbs / reorganizes accumulated friction, and permits broader coordinated continuation than isolated local controls.
 
-A low-dimensional felt object may permit a high-dimensional bearer-level deformation to become:
+A low-dimensional foreground object may be the temporary / renewed output through which a high-dimensional bearer-level deformation becomes:
 
 - common across otherwise specialized gates;
 - immediately selection-active;
@@ -304,7 +308,7 @@ ontological / generative foregrounding
 cognitive / interventional Gate foregrounding.
 ~~~
 
-**Ontological / generative foregrounding** is the pre-reflective formation / maintenance of a higher-order generative object or relation through selective compression, friction organization and active reconstitution.
+**Ontological / generative foregrounding** is the pre-reflective **process** through which selective compression, friction organization and active reconstitution promote background differences into a higher-order generative relation / object. The object is an output of the process, not the process itself.
 
 **Cognitive / interventional foregrounding** is later and stronger:
 
@@ -374,8 +378,8 @@ Concern + Expectation + viable continuation.
 Candidate:
 
 ~~~text
-current qualitative state
-= current objectification
+current qualitative presentation
+= current phase / output of recurrent foregrounding
 conditioned by retained history
 and actively rewriting future selectability.
 ~~~
@@ -388,7 +392,7 @@ No future fact travels backward.
 
 Working construct:
 
-> **Common bearer-relative reconfiguration** is present when friction-bearing lower differences are selectively normalized / compressed into a higher-order organization whose resolution changes the feasible continuation of multiple lower processes and whose consequences close on the same Bearer.
+> **Common bearer-relative reconfiguration** is present when friction-bearing lower differences are selectively normalized / compressed through a higher-order foregrounding process whose monitoring / coordination changes the feasible continuation of multiple lower processes and whose consequences close on the same Bearer.
 
 This is narrower than:
 
@@ -534,6 +538,6 @@ These are future adjudication / discrimination points, not blockers for retainin
 HP-B positive mechanism route = ACTIVE P3
 HP-B solved = NO
 BP-Q1 = RETAIN FOR TEST
-friction-bearing higher-order generative foreground = RETAIN AS WORKING P4 DISCRIMINATOR
+friction-bearing higher-order foregrounding PROCESS = RETAIN AS WORKING P4 DISCRIMINATOR
 canonical landing = HOLD
 ~~~
