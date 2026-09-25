@@ -50,6 +50,8 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1047 role = NONCANONICAL DIRECTION + FUTURE C-CLASS CONTRACT; C1/C2 SPINE RESTORATION NOT AUTHORIZED; OWNER-CLEANUP PAUSE UNCHANGED
 #1055 pre-object vertical gating / glue / generative-divinity source + reconciliation plan = MERGED / 01faf40bfb903a1f2c9d378939f5452d36d7cad9
 #1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; RETAINED FOR LATER CANONICAL-OWNER STAGE / NOT CURRENT NEXT
+#1059 gate-geometry / qualia independent content review = MERGED / d46ad63f3dad4cdfc059c3a371c0c0712f0befad
+#1059 role = READ-ONLY AUDIT / triggered explicit A-1…A-5 second adjudication; no canonical edit
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
@@ -67,9 +69,10 @@ BROADER CANONICAL GRG EXPANSION = HOLD
 
 ### 0.3a High-priority gate-geometry / qualia route — 2026-09-25
 
-Author source and accepted analysis:
+Author source, second adjudication and accepted analysis:
 
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md`
 - `01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_GATE_GEOMETRY_QUALIA_CONSCIOUSNESS_2026-09-25.md`
 
 Bounded execution owner:
@@ -83,7 +86,9 @@ AUTHOR DIRECTION = ACCEPTED / HIGH RETRIEVAL PRIORITY / NONCANONICAL;
 SHORT-TERM TASK = OWNER CROSSWALK + COLLISION MAP + PATCH PREPARATION;
 FREEZE-A CANONICAL EDIT = NO in first pass;
 HP-B / phenomenal necessity = OPEN;
-dialogue friction != canonical Psi_f automatically;
+dialogue friction = broader bearer-relative reconstruction-burden family;
+dialogue friction PARTIAL_OVERLAP canonical Psi_f / historical Psi_f^maint; identity NOT ESTABLISHED;
+gate geometry != Psi_f;
 Gate != primitive Selection;
 One != Bearer != Experiencer;
 GRG fusion lane remains PAUSED;
@@ -91,7 +96,7 @@ BCTB T2 remains HOLD;
 new GRG v0.4 = NOT AUTOMATIC.
 ```
 
-This author instruction **supersedes the prior immediate GRG-next sequencing without reopening the stopped fusion lane**. The GRG post-stop-loss method contraction is now handled inside Route H of the bounded gate-geometry patch: test whether GRG should first recover objectification / coarse-graining geometry and only then infer any cross-domain grammar.
+This author instruction **supersedes the prior immediate GRG-next sequencing without reopening the stopped fusion lane**. The GRG post-stop-loss method contraction is now handled inside Route H of the bounded gate-geometry patch. The 2026-09-25 second adjudication narrows the 09-23 "深层的语法" intuition: first reconstruct objectification / coarse-graining / L0-L1-L2 generative depth; treat any deep grammar as a downstream reconstruction result, not an upstream universal-grammar assumption.
 
 The routing patch must stop after its declared D1-D5 deliverables and return substantive meaning changes for author adjudication before any Freeze-A semantic landing.
 
