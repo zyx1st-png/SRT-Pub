@@ -1211,3 +1211,39 @@ FREEZE-A EDIT               = NO
 CANONICAL LANDING           = HOLD
 NEXT REQUIRED ACTION        = author adjudication A-6..A-9
 ~~~
+
+
+---
+
+# Post-audit author adjudication note — A-6..A-9 resolved
+
+Controlling later source:
+
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
+
+This audit remains provenance for D1-D5, but its recommendations in A-6..A-9 are no longer the controlling decisions.
+
+Later author decisions:
+
+~~~text
+A-6:
+HP-B positive mechanism candidate = REOPEN / ACTIVE
+HP-C characterization = retained
+logical necessity theorem = still OPEN
+
+A-7:
+tentative P3/P4 common-reconfiguration / phenomenal-admission hook = AUTHORIZED
+
+A-8:
+GRG operational architecture = REOPEN
+programme name = OPEN FOR REVIEW
+original operational telos = RETAIN
+L0/L1/L2 analytic-view correction requires method-level redesign
+
+A-9:
+theoretical friction = Ontological Friction = canonical Psi_f concept family
+PARTIAL_OVERLAP reading = SUPERSEDED
+different contexts = different emphases / projections of one concept
+~~~
+
+No Freeze-A canonical edit follows automatically.
