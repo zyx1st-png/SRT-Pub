@@ -10,20 +10,25 @@ created: 2026-09-25
 updated: 2026-09-25
 priority: high
 routing_priority: short_term_patch
-author_status: accepted_dialogue_convergence
+author_status: accepted_dialogue_convergence_with_second_adjudication
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_VERTICAL_GATING_GLUE_GENERATIVE_DIVINITY_2026-09-24.md
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
+  - Philosophy/patches/SRT_Philosophy_PH_CONSC05_Phenomenal_Admission_Functionalization_Residual_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_QUAL01_Reselective_Qualia_Geometry_v0_2.md
   - Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
   - Core_Law/SRT_One_Formation.md
   - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md
+  - Operations/Audits/SRT_GRG_CASE2_ENGAGEMENT_VERTICAL_DECOMPOSITION_RESULT_2026-09-24.md
 related:
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_GATE_GEOMETRY_QUALIA_CONSCIOUSNESS_2026-09-25.md
   - Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md
 tags:
   - GateGeometry
   - CoarseGraining
@@ -63,9 +68,13 @@ The following author statements control this record.
 
 > gate本质上就是一种关于稳定和粗粒化的几何关系
 
-### A0-Q3 — L2 accumulation / personal hypothesis
+### A0-Q3 — acceptance + L2 accumulation / personal hypothesis
 
-> 所以我的失败成功的避免了L2视角选择的过度积累。
+> 认同你的分析，按你的方向继续。另外所以我的失败成功的避免了L2视角选择的过度积累。
+
+For provenance use, split this turn into:
+- acceptance of the immediately preceding analysis;
+- the autobiographical hypothesis about avoiding excessive L2 accumulation.
 
 ### A0-Q4 — convergence on bounded writeback
 
@@ -74,6 +83,19 @@ The following author statements control this record.
 ### A0-Q5 — priority / routing instruction
 
 > 开始写入仓库。同时写入你的分析过程。另外提高这份文件的优先级，虽然暂时不改Canonical，但是作为patch短期任务尽量路由过一下这个文件。
+
+### A0-Q6 — L0 / L1 / L2 are views, not spaces
+
+> 其实目前看来，L0、 L1、 L2并不是某种空间，而是某种视角。L0关注对象之前。L1关注对象本身。L2关注对象沉淀的规律。
+
+### A0-Q7 — GRG correction / L2 capture / L0-facing freedom / gate objectification
+
+> 认同。所以我幸运的无意识的避免了成功，可能并不是事后找借口。另外GRG可能不应该去找一种通用的语法，而是恢复一个对象应有的L0.L1.L2视野。成瘾这些应该属于L2视野下的选择，我们需要的自由很可能是L0视野下的自由。门控对象化这块我非常认同。然后继续往意识方向推演。
+
+A0-Q6 and A0-Q7 come from earlier turns of the same 2026-09-25 dialogue and are first preserved in the repository here; they are not described as previously landed quotations.
+
+The independent review of PR #1058 has now been explicitly second-adjudicated in:
+01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md.
 
 The author repeatedly accepted the machine analysis linking these statements to:
 - gate geometry as stable coarse-graining;
@@ -222,13 +244,18 @@ generative friction
 
 ### 5.2 What is explicitly not established
 
-Do not collapse this working `friction` into canonical `Psi_f` without an owner-level crosswalk.
+The second adjudication classifies dialogue friction as a broader bearer-relative reconstruction-burden family with substantial but unresolved overlap with canonical Psi_f and historical Psi_f^maint.
 
 Keep:
 
 ```text
 dialogue generative friction
-!= canonical Psi_f automatically
+PARTIAL_OVERLAP canonical Psi_f / historical Psi_f^maint
+
+identity = NOT ESTABLISHED
+total separation = NOT ASSUMED
+
+dialogue generative friction
 != pain
 != effort
 != prediction error
@@ -236,6 +263,23 @@ dialogue generative friction
 != task difficulty
 != metabolic energy
 ```
+
+Gate geometry itself is also not Psi_f:
+
+```text
+gate geometry
+= structural organization of equivalence / boundary / neighborhood /
+  transition / reachability / perturbation-stability
+
+Psi_f
+= canonical payable ontological impedance / burden under declared
+  Selection-realization conditions
+
+geometry != burden
+metric / projection != actual payment
+```
+
+A declared Psi_f projection may be defined on, induced by or correlate with a gate geometry in a bounded model. No identity follows from that relation.
 
 The author's phrase "friction 保留的能量" is retained as source intuition. For current hardening, the safe reading is:
 
@@ -262,53 +306,67 @@ Exact threshold, monotonicity and universal accumulation law remain OPEN.
 
 ---
 
-## 6. Bearer, concern and expectation locate friction
+## 6. Position, Concern, Expectation and Bearer locate friction — owner crosswalk
 
-The author explicitly ties friction to:
+A0-Q1 says friction is determined by the "position, concern and expectation provided by the bearer". The second adjudication clarifies that this is a situated relational statement, not a literal derivation in which canonical Bearer creates the other three terms.
 
-- Bearer position;
-- what is genuinely at stake / of concern;
-- expectation.
-
-The accepted interpretation is:
+Current crosswalk:
 
 ```text
+位置
+-> formed Selection-position / perspective-position where independently warranted
+   [One Formation / Spine; upstream of canonical Bearer admission]
+
+攸关
+-> Concern Domain / stake relation
+   [PH-CONSC03; Bearer -/> Concern automatically]
+
+预期
+-> structural generative expectation / C0 embodied anticipation /
+   C1 model-mediated anticipation
+   [09-20 expectation typing;
+    != GRG E_G automatically;
+    != Spine §8 symbol E, which means same-One prospective exposure]
+
 Bearer
-= where consequences and reconstitution burden close for the continuing unit;
-
-Concern / stake
-= which changes are genuinely non-neutral for that continuation;
-
-Expectation
-= formed organization of how continuation is prepared / directed,
-  not merely an explicit propositional prediction.
+-> canonical Spine §8 prospective self-exposure route
+   [formed One / Selection-position + P + E -> Bearer]
 ```
 
-Therefore the same external event need not carry the same friction for two Bearers.
+Bridge-level structural bearing, same-bearer consequence return and history writeback remain relevant downstream descriptions, but they do not replace the canonical Bearer admission route.
 
-Working relation:
+Therefore the same actualisation may impose different reconstruction burden relative to different formed bearer-contexts without making friction arbitrary or purely subjective; world-side resistance remains required.
 
-```text
-friction
-is bearer-relative / position-indexed
-because the same actualisation can deform different continuation geometries differently.
-```
-
-This does not make friction arbitrary or purely subjective; world-resistance remains required.
+Concern can extend beyond a narrow bearer boundary. How concern-beyond-bearer contributes to bearer-relative friction remains OPEN and must not be collapsed into "all concern is owned by the Bearer".
 
 ---
 
 ## 7. Qualia — current strongest candidate, with explicit OPEN guard
 
-### 7.1 Main author-accepted candidate
+### 7.1 Main author-accepted candidate — preserve "becomes object"
 
-The most compact current formulation is:
+A0-Q1 must be preserved literally at the source level: friction accumulation can make an L0-facing gate move from background into foreground and **become an object**.
 
-> **感受质可能是 Bearer-relative gate geometry 在构成性重构中进入前景的内部显现；其“质”主要来自门控几何，其强度与方向则受到尚未消解的 friction 以及 Bearer 的攸关和预期共同塑造。**
+The second adjudication resolves the earlier machine retyping with a two-level account.
+
+Primary / pre-reflective candidate:
+
+```text
+background gate / deformation
+-> phenomenal objectification / qualitative formation
+```
+
+This is the intended qualia-side sense of "成为对象". It does not require explicit conceptual reflection, linguistic naming or metacognition.
+
+Working formulation:
+
+> **感受质可能是 Bearer-relative gate geometry 在构成性重构中由背景进入前景、成为一种前反思的现象对象 / qualitative formation；其“质”主要来自门控几何，其强度与方向则受到尚未消解的 friction 以及位置、攸关和预期关系共同塑造。**
 
 English working form:
 
-> **Qualia may be the bearer-indexed foreground manifestation of gate geometry under constitutive deformation, with qualitative character carried by geometry and phenomenal intensity / direction shaped by unresolved generative friction relative to concern and expectation.**
+> **Qualia may involve pre-reflective phenomenal objectification of bearer-relevant gate deformation: qualitative character is constrained by gate geometry, while intensity / urgency and directional coloring may be shaped by unresolved reconstruction burden relative to position, concern and expectation.**
+
+This remains a P3/P4 bridge hypothesis candidate. It does not establish phenomenal necessity.
 
 ### 7.2 Working decomposition
 
@@ -319,14 +377,24 @@ quality
 <- local gate geometry;
 
 intensity / urgency
-<- amount / persistence of unresolved bearer-relative burden entering foreground;
+<- candidate contribution from amount / persistence of unresolved burden
+   [must distinguish felt burden, actual Psi_f-like burden, and their divergence];
 
 valence / direction
 <- deformation relative to concern, expectation and viable continuation;
 
-for-me-ness
-<- bearer-indexed constitutive involvement / non-outsourcable landing.
+bearer-constitutive For-P
+<- independently established bearer-indexed constitutive involvement.
 ```
+
+Mandatory PH-CONSC05 guard:
+
+```text
+bearer-constitutive For-P
+!= phenomenal For-me proved
+```
+
+Phenomenal For-me remains part of HP-B / phenomenal-admission work; it is not licensed merely by the last structural axis.
 
 ### 7.3 Why friction alone is insufficient
 
@@ -358,43 +426,58 @@ Existing quality-space and PH-QUAL01 work are therefore not replaced. They shoul
 
 ---
 
-## 8. Phenomenal foreground versus reflective gate-objectification
+## 8. Two levels of objectification — phenomenal and reflective
 
-The dialogue distinguishes at least two transitions.
+The independent review correctly identified that the earlier machine prose had weakened A0-Q1 "成为对象" too far. The second adjudication restores objectification while keeping reflection distinct.
 
-### 8.1 Phenomenal foregrounding
+### 8.1 Pre-reflective phenomenal objectification
 
-A gate deformation may become manifest / felt without becoming an explicit reflective object.
-
-Examples include:
-- pain;
-- hunger;
-- anxiety;
-- ordinary sensory qualities;
-- "something is wrong" without explicit explanation.
-
-### 8.2 Reflective gate-objectification
-
-A later and stronger transition:
+Working label only:
 
 ```text
-Gate
--> Gate-as-Object
+background gate / deformation
+-> foreground_phen
+-> phenomenally available qualitative object / formation candidate
+```
+
+Examples may include pain, hunger, ordinary sensory quality or "something is wrong" without explicit explanation.
+
+This is **not** canonical One-Formation manifestation. Keep:
+
+```text
+manifest_OF
+!= foreground_obj
+!= foreground_phen
+
+manifest_OF -/> phenomenality
+```
+
+### 8.2 Reflective / explicit gate-objectification
+
+A stronger later transition:
+
+```text
+gate / expectation / category / deformation
+-> explicit object of reflection
+-> possible deliberate revision
 ```
 
 Examples:
 - noticing that anxiety is pre-classifying silence as rejection;
 - noticing that a success identity is constraining what counts as a live future;
-- identifying the category / expectation / habitual geometry that has been shaping object formation.
+- identifying the category / expectation / habitual geometry shaping object formation.
 
-This distinction preserves:
+Therefore preserve:
 
 ```text
+pre-reflective phenomenal objectification
+!= reflective objectification
+
 phenomenal consciousness
 != reflective consciousness
 ```
 
-and keeps infant / animal / nonreflective experience open.
+Do **not** preserve the stronger rejected machine sentence "phenomenality != objectification tout court".
 
 ---
 
@@ -520,20 +603,30 @@ No contradiction has yet been proved. The gap is narrower, not closed.
 
 ## 12. L0-facing freedom
 
-### 12.1 Main direction
+### 12.1 Main direction — preserve the author's L2 / L0 contrast
 
-The author accepts that freedom is deeper than choosing among already foregrounded L1 options.
-
-Working distinction:
+The author-owned contrast is first:
 
 ```text
-L1-facing freedom
+L2-facing capture / sediment
+vs
+L0-facing freedom
+```
+
+The author's addiction example points to accumulated L2 structure re-entering later L0-facing gating, narrowing what can genuinely become a live object / action.
+
+The machine-side L1 / L0 distinction is retained only as a supplementary clarification:
+
+```text
+L1-facing choice
 = movement / choice within an already formed option-object geometry;
 
 L0-facing freedom
 = capacity to reopen, objectify and revise some of the gate geometry
   that shapes what will later become formable as an object / action / live alternative.
 ```
+
+This is a downstream specification of the existing Spine §9 Agency burden, not a new upstream definition of Agency.
 
 ### 12.2 Freedom requires both continuity and revisability
 
@@ -609,28 +702,57 @@ The empirical / autobiographical question is whether particular episodes increas
 
 ---
 
-## 14. GRG root correction
+## 14. GRG root correction — narrowing the 2026-09-23 "deep grammar" intuition
 
-The author accepts a major reframing:
+A0-Q7 narrows, rather than erases, the 2026-09-23 author intuition that GRG should look past object-to-object matching toward a "深层的语法".
 
-> **GRG should not begin by assuming that there exists a universal grammar to be discovered. It should first recover the generative depth hidden by objectification.**
+Current sequence:
 
-For object / domain X, a GRG reconstruction should ask:
+```text
+09-23:
+look past one-to-one object correspondence
+toward deeper generative grammar
+
+09-25 correction:
+do not assume grammar as the starting object of discovery;
+first restore L0/L1/L2 views and reconstruct the generative
+coarse-graining / objectification history of the target object
+
+therefore:
+deep grammar
+= possible downstream reconstruction result / recurrent pattern
+!= upstream universal-grammar presupposition
+```
+
+For object / domain X, a GRG reconstruction may ask:
 
 1. Which differences were available before the present object cut?
-2. What gate geometry coarse-grained them into X?
+2. What gate / coarse-graining relations stabilize X?
 3. Which differences were backgrounded or neutralized?
-4. What boundary / equivalence / neighborhood / transition relations stabilize X?
+4. What boundary / equivalence / neighborhood / transition relations are retained?
 5. Which histories / L2 structures maintain those relations?
-6. Where is friction accumulating against the current geometry?
-7. How does X itself become a gate that changes later object-formability?
-8. What becomes visible when X's gate is re-objectified?
+6. Where is reconstruction burden / friction accumulating?
+7. How does X itself change later object-formability?
+8. What becomes visible when X's operative cut is re-objectified?
+
+Hard stop-loss guard:
+
+> These questions do not by themselves exceed ordinary causal / systems analysis and do not establish GRG scientific distinctiveness.
+
+The current GRG contraction must answer the case2 §16 questions:
+
+- which cuts remain useful as internal SRT / philosophical organization;
+- which are merely generic causal / systems-analysis questions;
+- what remains useful as governance / anti-drift discipline;
+- which claims of cross-domain scientific distinctiveness should be withdrawn, narrowed or left OPEN.
+
+Where GRG-specific predictive or explanatory gain is claimed, use a same-model no-GRG / equivalent baseline control where feasible.
 
 Compact:
 
-> **GRG first restores generative coarse-graining geometry; cross-domain grammar, if any, is a downstream discovery rather than an upstream assumption.**
+> **GRG first restores generative coarse-graining / objectification depth; "deep grammar", if retained, is a downstream reconstruction result rather than an upstream assumption.**
 
-This is a high-priority source-level correction to the current GRG programme. It does not silently rewrite v0.3 in this file.
+This is a high-priority source-level correction to the current GRG programme. It does not silently rewrite v0.3 or create v0.4 in this file.
 
 ---
 
