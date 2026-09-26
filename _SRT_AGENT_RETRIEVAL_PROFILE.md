@@ -10,7 +10,7 @@ canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-CONTEXT-ROUTER, SRT-LONGFORM-SPLITS]
 ai_role: context_expansion_contract
 ai_priority: 2
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # SRT Agent Retrieval Profile
