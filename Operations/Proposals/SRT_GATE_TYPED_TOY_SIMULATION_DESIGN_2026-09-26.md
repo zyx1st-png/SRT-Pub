@@ -197,9 +197,37 @@ Critical rule:
 
 ---
 
-## 8. Model family G — typed Gate candidate
+## 7A. Model family B3 — object-centric relational world model
 
-G is explicitly factorized into:
+B3 is the strongest direct absorber for Close + Compose.
+
+Representative architecture family:
+- Contrastive Structured World Models (C-SWM; Kipf, van der Pol & Welling, ICLR 2020): object-centric state embeddings plus graph-neural relational dynamics learned from raw observations;
+- Interaction Networks (Battaglia et al., NeurIPS 2016): explicit object- and relation-centric dynamical prediction.
+
+B3 is allowed:
+- learned object-centric slots / entities;
+- relational graph edges;
+- action-conditioned relational dynamics;
+- recurrent state / memory;
+- occlusion / persistence handling;
+- learned interaction structure;
+- message passing among object slots;
+- hierarchical or task-context conditioning where matched to ARM_TYPED capacity.
+
+B3 is NOT artificially denied reciprocal object–relation support.
+
+Critical rule:
+
+> **If B3 reproduces closure, cross-closure interaction, re-entry, intervention propagation and recursive-learning effects with equal or better held-out performance / compression under matched tuning and compute budgets, Close / Compose add zero modeling increment.**
+
+B3 must be a primary comparator for S2 and S4, not an optional appendix.
+
+---
+
+## 8. Model family ARM_TYPED — typed bridge / closure / composition candidate
+
+ARM_TYPED is explicitly factorized into:
 
 ~~~text
 Form
@@ -212,9 +240,9 @@ Compose
 -> learns compatibility / competition / nesting among closures
 ~~~
 
-G is not allowed a hidden oracle object ID.
+ARM_TYPED is not allowed a hidden oracle object ID.
 
-G may maintain local latent variables if learned from interaction.
+ARM_TYPED may maintain local latent variables if learned from interaction.
 
 The point is not 'no latent representation'.
 
@@ -395,21 +423,21 @@ does control of the transition matter beyond data volume?
 
 ### Test T2 — bridge factorization vs strong world model
 
-G vs B1.
+ARM_TYPED vs B1.
 
 Question:
 does typed bridge structure improve transfer / intervention / compression?
 
 ### Test T3 — reciprocal closure vs strong object-file baseline
 
-G vs B2.
+ARM_TYPED vs B2.
 
 Question:
 does explicit bridge-index reciprocity add measurable work?
 
 ### Test T4 — field composition vs independent closure policies
 
-Full G vs version where closures do not interact except through final action arbitration.
+ARM_TYPED vs an ablated version where learned closures do not interact except through final action arbitration.
 
 Question:
 does whole-field topology predict cross-closure propagation / recursive learning?
@@ -419,10 +447,13 @@ does whole-field topology predict cross-closure propagation / recursive learning
 ## 15. Strong stop-loss / zero-gain rules
 
 ### Z1
-If B1 matches G on S1–S4, Gate is a translation / factorization, not a scientific increment.
+If B1 matches ARM_TYPED on S1–S4, the typed architecture is a translation / factorization, not a scientific increment.
 
 ### Z2
-If B2 matches reciprocal closure / re-entry, object-level Gate adds no independent mechanism.
+If B2 matches reciprocal closure / re-entry, object-level closure language adds no independent mechanism.
+
+### Z2b
+If B3 matches ARM_TYPED on S2 / S4 under matched hyperparameter-search and compute budgets, Close / Compose add no independent modeling increment.
 
 ### Z3
 If R-ACTIVE and R-YOKED match after controlling action labels / efference information, active formation is narrower than proposed.
@@ -507,9 +538,13 @@ Before execution, freeze:
 - environment generator;
 - learner inputs;
 - baseline capacities;
+- hyperparameter-search budget parity across B1 / B2 / B3 / ARM_TYPED;
+- training / inference compute-budget parity or an explicitly normalized efficiency comparison;
 - held-out splits;
 - metrics;
 - zero-gain rules;
-- random seeds / repetition policy.
+- random seeds / repetition policy;
+- environment generator frozen before ARM_TYPED implementation where feasible;
+- at least one evaluation environment family not designed around ARM_TYPED's factorization, or generated from a separately frozen specification.
 
 Canonical edit = NO.
