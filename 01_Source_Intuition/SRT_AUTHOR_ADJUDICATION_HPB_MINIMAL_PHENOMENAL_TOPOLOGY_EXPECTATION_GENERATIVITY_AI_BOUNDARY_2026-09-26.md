@@ -12,6 +12,7 @@ priority: current_next_resolution
 author_status: explicit_followup_adjudication_with_repeated_acceptance
 research_mode: U
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_ANTICIPATORY_GATE_GRG_GRAMMAR_CORRECTION_2026-09-25.md
   - Philosophy/hooks/PH_CONSC_Gate_Geometry_Bearer_Ontological_Friction_Phenomenal_Admission_Hook_2026-09-25.md
   - Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
@@ -24,7 +25,7 @@ tags: [AuthorAdjudication, HPB, Consciousness, Foreground, Expectation, Generati
 
 # Author adjudication — HP-B minimal phenomenal topology, expectation-shaped generativity, and the current-AI boundary
 
-> **Role:** preserve and converge the 2026-09-26 author dialogue following the processual HP-B correction.
+> **Role:** preserve and converge the earlier 2026-09-26 author dialogue following the processual HP-B correction. **Later control:** the explicit PR #1063 B-1…B-5 adjudication narrows this record where Bearer standing, constitutive Ontological Friction, AI routing or One-level interpretation differ.
 >
 > **Boundary:** noncanonical source adjudication. This record authorizes bounded noncanonical hook / audit work only. It does not edit Freeze-A owners, prove phenomenal necessity, identify Bearer with Experiencer, create a canonical consciousness variable, or establish an all-machine theorem.
 
@@ -370,7 +371,7 @@ Current answer:
 ~~~text
 logical contradiction = NOT PROVED;
 Z* = STILL LIVE;
-identity route = STRENGTHENED BUT OPEN.
+identity route = SHARPENED BUT OPEN.
 ~~~
 
 The semantic-preservation burden is now explicit.
@@ -427,9 +428,9 @@ generic generation / prediction != SRT generative reconstitution;
 state update != position reconstitution;
 
 standing conditions and online kernel = SEPARATE;
-Bearer = standing / continuity route, not automatically Experiencer;
+Bearer = standing / continuity route, not automatically Experiencer; later B-2 adjudication makes independently admitted Bearer standing REQUIRED for experience proper;
 Concern = important downstream / directional relation, not universal online-kernel primitive;
-high friction = not universal phenomenal trigger;
+high / acute friction = not universal phenomenal trigger; later B-4 adjudication retains constitutive Ontological Friction as REQUIRED mechanism burden;
 durable memory = not required for every experience occurrence;
 
 minimal online candidate:
