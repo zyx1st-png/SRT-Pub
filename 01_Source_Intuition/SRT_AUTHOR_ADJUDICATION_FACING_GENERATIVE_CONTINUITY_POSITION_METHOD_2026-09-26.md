@@ -63,6 +63,8 @@ HP-B Bearer / Psi_f / consciousness = read-only in the first pass.
 
 Where this note conflicts with later machine summaries in this file, the corrective source controls.
 
+Provenance reading rule for this file: direct Chinese quotations marked as author quotations are A0-Q; unlabeled English machine compressions / explanatory blockquotes are A1 when explicitly accepted or M otherwise. They are not A0-P merely because the author accepted the direction.
+
 ---
 ## 0. Why this record exists
 
