@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: method_proposal
 created: 2026-09-26
 updated: 2026-09-26
-version: v0_1
+version: v0_2
 priority: high
 research_mode: U
 root_question: How can SRT use L2-facing and L1-facing evidence to reconstruct L0-facing burdens without prematurely re-objectifying L0, while simplifying earlier SRT concepts and absorbing mature external concepts?
@@ -17,6 +17,12 @@ named_comparator: none
 n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md
+  - Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md
+  - _SRT_SYMBOL_TABLE.md
+  - Core_Law/SRT_L0_Metaphysics.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+  - _SRT_PSI_F_CANONICAL.md
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_FACING_GENERATIVITY_POSITION_METHOD_2026-09-26.md
   - Operations/Proposals/SRT_GRG_MULTIVIEW_OPERATIONAL_REARCHITECTURE_PACKET_2026-09-25.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -33,13 +39,13 @@ tags:
   - CurrentNext
 ---
 
-# Facing reconstruction & simplification method v0.1
+# Facing reconstruction & simplification method v0.2
 
 > **Role:** current noncanonical execution owner for one bounded reconstruction pass.
 >
-> **Purpose:** use explicit L0-facing / L1-facing / L2-facing separation to revisit prior SRT concepts and a bounded set of already-retrieved concepts from other domains, simplify redundant structure, expose accidental Facing-mixing, and produce a conflict/simplification map before any canonical edits.
+> **Purpose:** apply the already-canonical L0 / L1 / L2 analytic-aspect rule consistently to prior SRT concepts and a bounded set of source-native neighboring concepts, simplify redundant structure, expose accidental Facing-mixing, and produce a conflict/simplification map before any canonical edits.
 >
-> **Boundary:** this is not a new canonical ontology, not GRG v0.4, not a third deep well, not a broad cross-domain synthesis release, and not permission to rewrite Freeze-A owners.
+> **Boundary:** Facing is an operational alias / worksheet language for the existing analytic-aspect rule, not a new ontic taxonomy. This is not a new canonical ontology, not GRG v0.4, not a third deep well, not a broad cross-domain synthesis release, and not permission to rewrite Freeze-A owners.
 
 ---
 
@@ -89,7 +95,9 @@ The purpose of this pass is to stop that loop.
 
 ---
 
-## 3. Core method — do not assign concepts to layers first
+## 3. Core method — Facing is an execution discipline
+
+The canonical owners already state that `L0 / L1 / L2` are analytic / model-facing aspects of one Selection reality, not three ontic layers. The present contribution is methodological enforcement of that rule.
 
 For every target concept, do **not** begin with:
 
@@ -99,99 +107,57 @@ Which layer does this concept belong to?
 
 Begin with:
 
-> **What does this concept mean when the same process is viewed L0-facing, L1-facing and L2-facing?**
+> **What burden does this concept carry when the same process is inspected under the L0 / L1 / L2 analytic aspects?**
 
-A concept may:
+Use:
 
-- have a legitimate role in all three views;
-- have only one or two;
-- be a downstream thickening;
-- collapse into another term once Facing is explicit;
-- be an external source-native concept that already absorbs an SRT burden;
-- be an accidental mixture that should be split.
+~~~text
+L0-facing = open / non-preclosed burden;
+L1-facing = current determinate actuality / manifestation / operation;
+L2-facing = retained historical efficacy / stabilized constraint where retention is established.
+~~~
 
----
+Do not use `bare L0` for `O0 + S0`. When the full co-primitive burden is intended, write `primitive Selection (O0 + S0)`.
+
+Where the open / non-preclosed aspect of an already formed Position is specifically under discussion, `Position-relative L0-facing` may be used as a **working label only**.
 
 ## 4. Three-facing worksheet
 
-For target concept X, fill:
+Use namespaced worksheet labels to avoid collision with HP-B and other repository labels.
 
-### F0 — L0-facing burden
-
-Ask:
-
-- what is not exhausted by X's already formed / determinate structure?
-- what next genuine differentiation remains possible?
-- does X describe generation itself, or only shape / constrain generation?
-- does the proposed L0 reading smuggle in:
-  - a complete state space?
-  - a fixed geometry?
-  - a prior option inventory?
-  - a prewritten transition table?
-  - a goal / value / continuation preference?
-  - a subject / Bearer / object not yet paid?
-
-Output:
-
+### FACE-L0 — L0-facing burden
+Ask whether the target concerns unexhausted generativity or only an already formed constraint. Guard against a completed state space, fixed geometry, prior option inventory, prewritten transition table, value, subject, Bearer or object not yet paid.
 ~~~text
-L0-facing(X) =
-[burden / NONE / OPEN]
+FACE-L0(X) = [burden / NONE / OPEN]
 ~~~
 
-### F1 — L1-facing burden
-
-Ask:
-
-- what is currently actualised?
-- what distinction / object / boundary / relation is manifest?
-- what current operation is being performed?
-- what is foreground vs background?
-- what would count as a recut?
-
-Output:
-
+### FACE-L1 — L1-facing burden
+Ask what is currently actualised / manifest / foregrounded, what operation is occurring, and what would count as a recut.
 ~~~text
-L1-facing(X) =
-[current determination / operation / NONE / OPEN]
+FACE-L1(X) = [current determination / operation / NONE / OPEN]
 ~~~
 
-### F2 — L2-facing burden
-
-Ask:
-
-- what retained structure keeps shaping later generation?
-- what history / rule / Gate / model / invariant / memory / support remains effective?
-- what geometry or equivalence has become reproducible?
-- what evidence establishes retention rather than one-shot occurrence?
-
-Output:
-
+### FACE-L2 — L2-facing burden
+Ask what retained history / rule / Gate / model / invariant / memory / support remains later-effective, and what evidence establishes retention rather than one-shot occurrence.
 ~~~text
-L2-facing(X) =
-[retained efficacy / constraint / geometry / NONE / OPEN]
+FACE-L2(X) = [retained efficacy / constraint / geometry / NONE / OPEN]
 ~~~
-
----
 
 ## 5. Source typing before reconstruction
 
-Every target statement must be typed as one of:
+Reuse the existing provenance schema:
 
 ~~~text
-A0-Q = direct author wording
-A0-P = direct author choice / accepted direction
-A1 = explicitly accepted machine analysis
-M = machine synthesis
-K = current canonical owner statement
-E = external source-native claim / mature-neighbor explanation
+A0-Q = direct author quotation
+A0-P = faithful paraphrase of an author-originated statement / move
+A1   = machine consolidation explicitly accepted by the author
+M    = machine synthesis
+K    = current canonical owner statement
+EXT  = external source-native claim / mature-neighbor explanation
 OPEN = unresolved burden
 ~~~
 
-Do not let an A1/M compression silently replace K.
-
-Do not let a source-native E concept become “SRT” merely because it maps well.
-
----
+Do not let A1/M replace K. Author acceptance of machine wording does not upgrade it to A0-P. Do not let an EXT concept become SRT merely because it maps well.
 
 ## 6. Reverse reconstruction route
 
@@ -246,36 +212,25 @@ Only after R2/R1 ask:
 
 ---
 
-## 7. Forward test route
+## 7. Forward test route — structural first, concrete content downstream
 
 Reverse reconstruction is insufficient by itself.
 
-A candidate L0-facing account must return forward:
+A primitive / L0-facing claim may directly constrain **structural / second-order** expectations, such as where recutting becomes likely, when a cut destabilizes, perturbation / load / friction dependence, revision frequency, or expected sedimentation changes.
+
+Specific first-order content predictions are allowed only through an explicit downstream domain model:
 
 ~~~text
-candidate L0-facing burden
--> predicted L1 formation / recut
--> predicted L2 sediment / constraint change
--> compare against strong baselines
+L0-facing structural constraint
++ declared L1/L2 domain model
+-> possible concrete content prediction.
 ~~~
 
-Required guard:
+The concrete prediction belongs to that downstream model realization; it must not be back-attributed as a direct primitive-L0 prediction.
 
-> post-hoc explanatory flexibility is not evidence of L0-facing gain.
+Required baseline families include richer latent-state, non-Markov, hierarchical state-space, object-file / relational, dynamical-manifold, predictive / generative, and **structure-learning / expandable-hypothesis-space** models, including nonparametric latent-cause / category / state creation families or equivalent.
 
-Whenever empirical / formal execution becomes relevant, include strong baselines such as:
-
-- richer latent-state model;
-- non-Markov / history-dependent model;
-- hierarchical state-space model;
-- object-file / relational model;
-- dynamical manifold;
-- predictive / generative model;
-- source-native mature mechanism.
-
-If the baseline absorbs the effect, record `NO_SRT_INCREMENT` / `REORGANIZATION_ONLY` where appropriate. Do not rescue by vocabulary.
-
----
+If a strong baseline absorbs the effect, record `NO_SRT_INCREMENT` / `REORGANIZATION_ONLY` where appropriate.
 
 ## 8. Generative incompleteness test
 
@@ -291,6 +246,8 @@ structured
 ~~~
 
 and concern the generation / recutting of distinctions rather than random unexplained error.
+
+Existing #1066 guard: mature structure learning, representation learning, conceptual reorganization and manifold learning already pay many field-reconstitution roles. The signals below therefore do **not** establish SRT scientific distinctiveness by themselves.
 
 Pressure examples:
 
@@ -339,105 +296,46 @@ The method should make objectification reconstructible, not abolish it.
 
 ---
 
-## 10. Pass A — internal SRT concept reconstruction
+## 10. Pass A — internal SRT reconstruction, maximum 8 targets
 
-First priority set:
+This first pass is capped at **no more than eight internal targets / clusters**:
 
-~~~text
-1. Selection
-2. Oriented Openness / O0
-3. One
-4. Selection-position / Position
-5. formed Orientation
-6. continuity / persistence / recurrence
-7. Stable ISP / continued selectability / generative reselectability
-8. Expectation / anticipation
-9. Gate / bridge formation / Gate operation
-10. property / invariant
-11. object / objectification
-12. Bearer
-13. Concern / d
-14. friction / Psi_f adjacency
-15. attractor / field / reachability geometry
-16. reconstructibility
-17. generative debt
-18. agency
-19. consciousness / foregrounding / recut
-20. normativity / wholeward direction
-~~~
+1. `L0-facing continuity` as FRH-0 reduction test;
+2. One / Selection-position / formed Orientation;
+3. continuity / persistence / recurrence / Stable ISP / generative reselectability;
+4. structural generative Expectation / anticipation;
+5. Gate / active bridge / property / objectification;
+6. attractor / field / reachability geometry;
+7. reconstructibility / generative debt;
+8. one residual cluster only if needed after 1–7, preferably a control burden rather than a new ontology noun.
 
-For each, produce:
+Read-only cross-checks, **not active retyping targets** in this pass:
 
 ~~~text
-current owner / source
-three-facing matrix
-known mixed burden
-possible simplification
-must-remain-distinct burden
-external absorber if any
-OPEN edge
-canonical consequence = NONE / POSSIBLE LATER
+Bearer
+Ontological Friction (Psi_f)
+consciousness / foregrounding
 ~~~
 
----
+because the HP-B package is frozen.
 
-## 11. Pass B — bounded other-domain concept reconstruction
+For each active target produce current owner/source, FACE-L0/L1/L2 matrix, mixed burden, simplification candidate, must-remain-distinct burden, external absorber, OPEN edge, and `canonical consequence = NONE / POSSIBLE LATER`.
 
-This pass must use **already-retrieved / already-routed source-native material first**.
+## 11. Pass B — bounded neighboring concepts, maximum 7 families
 
-Do not open a new broad deep-well sweep.
+Reuse already-routed repository material first. The first pass is capped at seven neighbor families:
 
-Candidate clusters:
+1. Whitehead — creativity / concrescence / transition;
+2. Barad — agential cut / constitutive objectification pressure;
+3. Simondon — individuation / pre-individual remainder / transduction;
+4. Husserl — sedimentation / reactivation;
+5. organizational-function / constraint-closure accounts — function without external final cause;
+6. evolutionary transitions in individuality — higher-order individual formation / merger pressure;
+7. Parfit — continuity / fission / identity separation.
 
-### Dynamical / systems
+The purpose is not to force these into SRT. Ask which Facing burden the source-native concept already explains and whether SRT previously misplaced or duplicated it.
 
-- attractor;
-- metastability;
-- hysteresis;
-- path dependence;
-- phase transition;
-- symmetry breaking;
-- state-space / manifold;
-- order parameter.
-
-### Organism / enactivism
-
-- autopoiesis;
-- organizational autonomy;
-- closure of constraints;
-- sense-making;
-- viability;
-- affordance;
-- skilled intentionality.
-
-### Predictive / computational
-
-- latent state;
-- world model;
-- predictive processing;
-- active inference;
-- Markov blanket;
-- policy / prior;
-- object file;
-- relational world model.
-
-### Philosophy / process / individuation
-
-- process identity;
-- transduction;
-- individuation;
-- virtual / actual;
-- perspective;
-- monad / appetition as bounded historical comparison;
-- relation / invariant / transformation.
-
-The purpose is not to force these into SRT.
-
-Ask:
-
-> which Facing burden does the source-native concept already explain, and did SRT previously misplace it?
-
----
+No new broad literature sweep is authorized by this list.
 
 ## 12. Simplification dispositions
 
@@ -477,147 +375,93 @@ No disposition here changes canonical status automatically.
 
 ---
 
-## 13. Priority simplification hypotheses to test, not assume
+## 13. Corrected reconstruction hypotheses
 
-### H1 — One / Position / Orientation
+Use namespaced labels.
 
+### FRH-0 — L0-facing continuity reduction test
+
+Test first:
 ~~~text
-One         = diachronic reading
-Position    = current operative from-where
-Orientation = prospective non-flat expression
+"L0-facing continuity"
+?=
+O0 non-preclosure
++ Selection-mediated vertical reconstitution / One-side retained efficacy
++ formed Selection-position / operative locality.
+~~~
+Do not assume a distinct residual. Primitive Selection is the source of the **generativity renewed** through the candidate relation; it is not by itself the sufficient source of a particular One's cross-Selection continuation.
+
+### FRH-1 — One / Position / formed Orientation
+The One / Selection-position relation is already canonical. Test only whether `formed Orientation` is best treated as the prospective non-flat expression of formed Position, partial overlap, or redundant working label. Do not collapse `Oriented Openness` / O0 into formed Orientation.
+
+### FRH-2 — One formation explanatory gloss
+Do **not** use “history forms the later from-where” as the admission criterion. Use the canonical non-circular recurrent-reconstitution route first; only after One is admitted may its current operative aspect be read as Selection-position / from-where. Test whether the from-where wording adds anything beyond explanatory gloss.
+
+### FRH-3 — Expectation typing
+Retain the 2026-09-20 B/C asymmetry:
+~~~text
+B = structural generative expectation; no formed locus required.
+C = anticipatory realization; requires enough formed organization to operate from somewhere.
+~~~
+Test whether **formed Orientation** absorbs part of C, while preserving `Selection affecting later selectability != formed-position anticipation automatically`. Do not collapse B into Position / Orientation.
+
+### FRH-4 — Gate
+Test Gate as formed / retained organization (primarily L2-facing), current gate operation (L1-facing), and whether the L0-facing burden is relation-formability / recut not exhausted by Gate.
+
+### FRH-5 — Stable ISP / recurrence
+Test whether Stable ISP mainly strengthens L1/L2 standing / persistence while remaining insufficient for strong L0-facing generativity.
+
+### FRH-6 — Reconstructibility / generative debt
+Test generative reconstructibility as retained ability to reopen sufficient provenance / cuts and generative debt as present closure / stability bought partly by reducing future reconstructibility. Keep this distinct from repository / data / dialogue recoverability.
+
+### FRH-7 — Field / geometry
+Test whether attractor, Gate geometry and reachability geometry are primarily formed / L2-heavy descriptions shaping later generation rather than root L0-facing ontology.
+
+## 14. Branch / merge test — no circular admission criterion
+
+Separate:
+~~~text
+L2-facing: retained histories / constraints converge or diverge;
+L1-facing: current objects / subjects are objectified as one or many;
+L0-facing pressure: after candidate Ones have been independently admitted via the canonical formation route, do their recurrent organizations remain relatively separable, or does a higher-order recurrent organization emerge?
 ~~~
 
-Test whether three nouns are really needed.
+Do not use “a new from-where exists” as the independent admission criterion for the higher-order One; that would presuppose what it is meant to establish.
 
-### H2 — One formation
-
-~~~text
-ordinary L2 history:
-history affects later outcome
-
-One candidate:
-history participates in forming later operative from-where
-~~~
-
-Test against current regenerative recurrence owner.
-
-### H3 — Expectation
-
-Test whether older basal “structural expectation” partly collapses into Position / Orientation, leaving Expectation as a formed anticipatory thickening.
-
-### H4 — Gate
-
-Test whether Gate is primarily:
-- L2 formed relation / geometry;
-- L1 current gate operation;
-while L0-facing work concerns recut / relation-formability rather than Gate itself.
-
-### H5 — Stable ISP
-
-Test whether Stable ISP mainly strengthens L1/L2 standing without proving strong L0-facing generativity.
-
-### H6 — Bearer
-
-Test whether Bearer can remain cleanly downstream as same-One prospective exposure without carrying One-continuity or primitive direction.
-
-### H7 — Friction
-
-Test whether friction works best as a diagnostic of mismatch between formed organization and continued generation rather than a source of generation.
-
-### H8 — Reconstructibility
-
-Test whether reconstructibility is an operational L2 capacity to preserve reopening routes to Selection.
-
----
-
-## 14. Branch / merge reconstruction test
-
-For any identity / multiplicity concept, separate:
-
-~~~text
-L2-facing merge/split:
-retained history / constraints converge or diverge.
-
-L1-facing merge/split:
-current objects / subjects are objectified as one or many.
-
-L0-facing merge/split:
-operative generative from-wheres become one / many,
-such that later genuine Selection occurs from the new structure.
-~~~
-
-Do not infer One merger from:
-
-- shared memory;
-- shared component;
-- shared field;
-- one foreground object;
-- common external controller;
-- synchronous behavior alone.
-
-Do not infer One split from object splitting alone.
-
----
+Exact branch / merge attribution remains OPEN.
 
 ## 15. Required outputs of this CURRENT NEXT
 
-The pass should end with four artifacts, not canonical edits:
+Use non-colliding labels:
 
-### O1 — Facing reconstruction matrix
+### OUT-A — Facing reconstruction matrix
+Compact table covering the <=8 internal targets.
 
-One compact table covering the internal concept set.
+### OUT-B — simplification / conflict map
+Show collapses, retained distinctions, mistyped facings, source absorption and sharper OPEN questions.
 
-### O2 — simplification / conflict map
+### OUT-C — bounded cross-domain comparison
+No more than the 7 neighbor families in §11.
 
-Show:
-
-- which concepts collapse;
-- which remain distinct;
-- which were placed too early / too late;
-- which external theories already absorb a burden;
-- which OPEN questions become sharper.
-
-### O3 — bounded cross-domain comparison set
-
-A small set of high-value external concepts reconstructed source-natively under the Facing method.
-
-### O4 — author decision packet
-
-Only after O1-O3:
-
-- proposed merges;
-- proposed splits;
-- proposed retypings;
-- proposed retirements;
-- true canonical contradictions if any;
-- questions requiring author second adjudication.
+### OUT-D — author decision packet
+Only after OUT-A–C: proposed merges, splits, retypings, retirements, true canonical contradictions if any, and questions requiring second author adjudication.
 
 No canonical write before that author review.
-
----
 
 ## 16. Execution order
 
 ~~~text
-1. Recover current owner + accepted machine analysis for the target cluster.
-2. Build internal SRT three-facing matrix.
-3. Run simplification dispositions.
-4. Recover bounded source-native external concepts already in the repo.
-5. Run reciprocal Facing comparison.
-6. Produce conflict / simplification map.
-7. Internal red-team:
-   - accidental teleology?
-   - hidden complete geometry?
-   - L2 promoted to L0?
-   - object identity substituted for One?
-   - history substituted for primitive source?
-   - external concept renamed as SRT?
-8. Return substantive decisions to author.
-9. Only after author second adjudication:
-   consider bounded owner reconciliation / canonical edit.
+1. Recover current owner + accepted machine analysis for target 1.
+2. Run FRH-0 first.
+3. Continue through at most 8 internal targets.
+4. Build the three-facing matrix and simplification dispositions.
+5. Recover at most 7 source-native neighbor families.
+6. Run reciprocal Facing comparison.
+7. Produce OUT-A / OUT-B / OUT-C.
+8. Red-team accidental teleology, hidden geometry, L2->L0 promotion, object identity substitution, history-as-source, external relabeling, and false primitive content prediction.
+9. Produce OUT-D for author review.
+10. Only after second author adjudication consider canonical reconciliation.
 ~~~
-
----
 
 ## 17. Current-next relation to the cognition toy simulation
 
@@ -640,21 +484,31 @@ The frozen simulation design should not be deleted or rewritten by drift. Reopen
 
 ---
 
-## 18. Stop rules
+## 18. Stop rules and HP-B freeze guard
 
-Stop the pass and return to author if:
+Stop and return to author if:
 
 - a canonical definition must change;
 - a new primitive is required;
 - a new repo-wide term-of-art seems necessary;
-- One = Position = Orientation would be hardened beyond current evidence;
+- One = Position = formed Orientation would be hardened beyond current evidence;
 - terminal Selection would be threatened;
-- broad cross-domain synthesis / third deep well would be opened;
-- a source-native theory appears to fully absorb the claimed SRT burden;
+- broad cross-domain synthesis / third deep well would open;
+- a source-native theory fully absorbs the claimed SRT burden;
 - the pass creates more ontology nouns than it removes;
-- the method cannot distinguish a genuine L0-facing burden from a richer L2 model.
+- the method cannot distinguish a residual L0-facing burden from a richer L2 model.
 
----
+HP-B guard:
+~~~text
+Bearer / Psi_f / consciousness-foregrounding = READ-ONLY in this pass.
+No new HP-B term, kernel condition, necessity claim or retyping is allowed.
+~~~
+
+Ontological Friction guard:
+~~~text
+Psi_f = canonical constitutive payability / impedance burden.
+mismatch / acute strain = at most a contextual diagnostic / projection, not the definition and not a second friction variable.
+~~~
 
 ## 19. Success criteria
 
@@ -687,13 +541,19 @@ opens a new research programme without closing the bounded pass.
 ## 20. Current disposition
 
 ~~~text
+method version = v0.2 corrective
 method status = ACTIVE CURRENT-NEXT OWNER
 canonical = false
 research mode = U
+Facing = alias / execution discipline for canonical aspect rule
+FRH-0 = FIRST TEST
+Pass A cap = 8
+Pass B cap = 7
+HP-B Bearer / Psi_f / consciousness = READ-ONLY
 broad cross-domain synthesis = NO
 third deep well = NO
 GRG v0.4 = NO
 canonical owner edit = HOLD
 toy simulation execution = DOWNSTREAM / HOLD
-next output = reconstruction matrix + simplification/conflict map + bounded external comparison + author decision packet
+next output = OUT-A + OUT-B + OUT-C + OUT-D
 ~~~
