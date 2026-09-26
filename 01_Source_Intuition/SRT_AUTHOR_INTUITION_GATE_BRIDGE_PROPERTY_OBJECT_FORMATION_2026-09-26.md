@@ -350,3 +350,135 @@ CANONICAL EDIT
 FORMALIZATION
 = OPEN
 ~~~
+
+---
+
+## 12. Author clarification — the bridge is actively formed
+
+The author added an explicit clarification:
+
+> **「有一点我想强调一下，就是这种桥梁连接是一种主动形成的。」**
+
+This materially strengthens the earlier intuition.
+
+The bridge should NOT be read as:
+
+~~~text
+two states already have a fixed relation
+-> system merely detects / names it
+~~~
+
+The author direction is instead:
+
+~~~text
+system actively selects / couples / revisits / corrects
+relations among changing states
+-> a usable bridge is formed and stabilized
+-> the bridge can later support compression / property / object formation
+~~~
+
+Status:
+
+~~~text
+ACTIVE FORMATION = AUTHOR-EXPLICIT
+PASSIVE DISCOVERY-ONLY READING = INSUFFICIENT
+EX NIHILO CREATION = NOT IMPLIED
+CANONICAL HARDENING = NO
+~~~
+
+The active-formation claim remains constrained by world-side resistance and regularity. The system does not freely invent any bridge it wishes; unsuccessful couplings fail to stabilize, demand continued correction, or break under perturbation.
+
+---
+
+## 13. Formation vs operation — machine clarification prompted by the author
+
+The active-formation clarification suggests an important distinction.
+
+### Gate formation
+
+~~~text
+variation / mismatch / exploratory interaction
+-> selective coupling
+-> repeated transition / comparison
+-> correction under feedback
+-> stabilization
+-> reusable relational bridge
+~~~
+
+### Gate operation
+
+~~~text
+formed bridge / relation
+-> current pass / suppress / weight / classify / guide
+-> downstream transition or objectification
+~~~
+
+> **The valve-like role may be a downstream operation of an already formed Gate, while the deeper genetic role is the active construction and maintenance of the relation that makes later gating possible.**
+
+This is machine interpretation, not yet canonical.
+
+---
+
+## 14. Stronger property / object chain after active formation
+
+~~~text
+active relation formation
+-> bridge stabilization
+-> reusable invariant / property candidate
+-> mutually supporting bridge network
+-> boundary / object closure
+-> object transparency / givenness
+~~~
+
+The critical change is:
+
+~~~text
+property
+!= merely detected common feature
+
+property candidate
+= compressed invariant of a relation
+  that the system has learned / enacted / stabilized
+  under recurrent world-coupled interaction
+~~~
+
+World-side dispositions and constraints remain load-bearing.
+
+---
+
+## 15. Connection to action control
+
+The active bridge reading strengthens the cup example.
+
+A mature 'cup' target may reactivate not merely stored associations but a history of actively formed control relations:
+
+~~~text
+look / turn / approach / grasp / lift / correct / drink
+~~~
+
+These relations have been formed through repeated successful coupling with cups and cup-like objects.
+
+Thus:
+
+~~~text
+foreground 'cup / pick up cup'
+-> reactivation of actively formed bridge network
+-> lower-level gate configuration becomes biased
+-> distributed execution can proceed without explicit micro-instructions
+~~~
+
+This is a candidate explanation for how object content can function as a control address.
+
+---
+
+## 16. Revised root question
+
+The deeper question is no longer only:
+
+> What stable relation exists between states?
+
+It becomes:
+
+> **By what active process does a finite system turn changing encounters into a reusable relational bridge, and when does a network of such bridges become stable enough to function as an attribute / object?**
+
+This is the current author-facing root opened by the clarification.
