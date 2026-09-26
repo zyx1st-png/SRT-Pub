@@ -322,7 +322,7 @@ The current programme should not jump from "geometry changed" to "whole field ex
 
 Use four grades.
 
-### G1 — descriptive geometry
+### E1 — descriptive geometry
 
 Evidence:
 - RSA / manifold / dimensionality / similarity geometry differs by history or context.
@@ -344,7 +344,7 @@ Examples:
 - conceptual reorganization;
 - PFC geometry changes across learning.
 
-### G2 — predictive geometry
+### E2 — predictive geometry
 
 Require H3-level structure to predict held-out:
 - grouping;
@@ -365,7 +365,7 @@ it carries prospective information about later differentiation.
 
 Still not causal.
 
-### G3 — causal geometry
+### E3 — causal geometry
 
 Intervene on a field-relevant global condition or network organization and show coordinated changes across multiple otherwise matched local readouts.
 
@@ -381,7 +381,7 @@ with local item statistics / explicit knowledge controlled.
 
 This supports a causal organizational role.
 
-### G4 — recursive field reconstitution
+### E4 — recursive field reconstitution
 
 Strongest neutral target:
 
@@ -393,9 +393,9 @@ history / consequence
 -> later geometry changes again.
 ~~~
 
-G4 is the first grade that strongly matches the author's current whole-field intuition.
+E4 is the first grade that strongly matches the author's current whole-field intuition.
 
-Even G4 would not establish primitive Selection or SRT ontology.
+Even E4 would not establish primitive Selection or SRT ontology.
 
 ---
 
@@ -545,10 +545,10 @@ SRT SELECTION-TYPING NECESSITY
 = separate ontology workline / HOLD
 
 WHOLE-FIELD EMPIRICAL LADDER
-= G1 descriptive -> G2 predictive -> G3 causal -> G4 recursive
+= E1 descriptive -> E2 predictive -> E3 causal -> E4 recursive
 
 CURRENT NEXT
-= design / formalize a G2-G4 whole-field recutting discriminator
+= design / formalize a E2-E4 whole-field recutting discriminator
   with strong H1/H2 baselines
 
 CANONICAL EDIT
