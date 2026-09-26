@@ -128,6 +128,25 @@ The 2026-09-05 author-reentry correction and reconstruction amendment remain imp
 
 Important:
 
+### Facing reconstruction CURRENT NEXT retrieval note
+
+When STATUS routes the active task to the 2026-09-26 Facing reconstruction / simplification pass, load these before broad historical or neighbor material:
+
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md` — controlling author corrective;
+2. `Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md` — current execution owner (content version v0.2);
+3. `Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md` — independent review provenance;
+4. `_SRT_SYMBOL_TABLE.md` aspect boundary + `Core_Law/SRT_L0_Metaphysics.md` + `Core_Law/SRT_Generative_Ontology_Spine.md` — canonical controls;
+5. only then the target-specific owner / source-native neighbor files required by the <=8 / <=7 bounded pass.
+
+Retrieval guard:
+
+~~~text
+Facing = execution alias for the canonical analytic-aspect rule;
+do not harden it as a new layer taxonomy;
+FRH-0 reduction test comes before retaining "L0-facing continuity" as a noun;
+HP-B Bearer / Psi_f / consciousness are read-only in this pass.
+~~~
+
 - Use canonical anchors to prevent overclaiming.
 - Use route, bridge, domain, and hardening files to avoid shallow answers.
 - If a support file is `canonical: false`, mark it as support rather than skipping it.
