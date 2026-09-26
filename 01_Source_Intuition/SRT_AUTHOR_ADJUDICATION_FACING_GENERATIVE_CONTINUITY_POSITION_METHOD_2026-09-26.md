@@ -12,6 +12,9 @@ priority: high
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md
+  - Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md
+  - _SRT_SYMBOL_TABLE.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_O0_PRIMITIVE_GENERATIVITY_2026-09-14.md
   - 01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -38,6 +41,31 @@ tags:
 > **Role:** preserve the author's late-2026-09-26 convergence after the cognition / whole-field dialogue.  
 > **Boundary:** this file records author-owned direction and accepted conceptual distinctions. It does **not** edit Freeze-A canonical owners, create a new theorem, or close One / branch-merge / Bearer / consciousness OPEN questions.
 
+## Post-#1069 corrective precedence
+
+The author's direct quotations below remain provenance. Several machine compressions accepted during the rapid dialogue were later narrowed after the independent #1069 review.
+
+Controlling corrective source:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md`
+
+Key corrections:
+
+~~~text
+Facing = execution alias for the existing canonical L0/L1/L2 aspect rule;
+primitive Selection = source of renewed generativity, not by itself the sufficient source of a particular One's continuity;
+"L0-facing continuity" = FRH-0 reduction test, not a presumed new ontology noun;
+One formation must use the canonical recurrent-reconstitution route before any Selection-position / from-where gloss;
+structural generative expectation B does not collapse into Position;
+Psi_f mismatch strain = contextual diagnostic only, not the canonical definition;
+HP-B Bearer / Psi_f / consciousness = read-only in the first pass.
+~~~
+
+Where this note conflicts with later machine summaries in this file, the corrective source controls.
+
+Provenance reading rule for this file: direct Chinese quotations marked as author quotations are A0-Q; unlabeled English machine compressions / explanatory blockquotes are A1 when explicitly accepted or M otherwise. They are not A0-P merely because the author accepted the direction.
+
+---
 ## 0. Why this record exists
 
 The author explicitly judged the last several dialogue rounds to be highly valuable and asked that both the author direction and the machine analysis path be preserved.
@@ -106,7 +134,7 @@ The author repeatedly accepted the machine derivation that L0-facing continuity 
 
 Current accepted direction:
 
-> **L0-facing continuity concerns the recurrent renewal of genuine generativity through the transformation of a formed Position.**
+> **Working candidate only:** L0-facing continuity was initially read as recurrent renewal of genuine generativity through formed Position transformation. Post-#1069 this is now an FRH-0 reduction test: first ask whether the burden is fully absorbed by O0 non-preclosure + Selection-mediated recurrent reconstitution + formed Selection-position.
 
 It remains a candidate reconstruction, not a frozen canonical definition.
 
@@ -122,7 +150,8 @@ Current author direction:
 
 ~~~text
 primitive Selection
-= ontological source of L0-facing generative continuity.
+= ontological source of the generativity renewed in the candidate L0-facing continuity;
+  recurrent history / One supplies the formed localization / continuation burden.
 
 But:
 
@@ -168,8 +197,8 @@ Orientation
   not necessarily a separate formed entity
 
 L0-facing continuity
-= genuine generativity is renewed through Position transformation,
-  conditioned by prior actuality but not exhausted by retained L1/L2 structure.
+= WORKING LABEL UNDER FRH-0 REDUCTION TEST;
+  do not retain independently unless O0 + recurrent reconstitution + Selection-position leave a residual.
 ~~~
 
 This is a **reconstruction direction**. Exact equivalence claims among One / Position / Orientation remain noncanonical and subject to pressure testing.
@@ -204,7 +233,8 @@ history affects later outcome
 = L2 history dependence, not sufficient for One.
 
 history helps form later operative from-where
-= stronger One / Position formation candidate.
+= explanatory gloss only AFTER One is independently admitted by the canonical recurrent-reconstitution route;
+  not an admission criterion.
 ~~~
 
 This must not be hardened into the canonical One owner without a bounded pressure pass and author second adjudication.
@@ -433,8 +463,9 @@ Concern
 -> weighting / load-bearing significance within a formed/bearing organization,
    not source of primitive direction
 
-Friction
--> diagnostic strain where formed L1/L2 organization and continued generation mismatch
+Ontological Friction (Psi_f)
+-> retain the canonical constitutive payability / impedance burden;
+   mismatch / acute strain is only one contextual diagnostic / projection
 
 Reconstructibility
 -> retained reopening path
@@ -473,7 +504,7 @@ A stronger One-merger candidate therefore requires more than shared memory, comm
 
 Candidate:
 
-> **Two previously separable generative from-wheres form a stronger higher-order One only when they participate in the formation of a new operative from-where from which later genuine Selection can occur.**
+> **Post-#1069 guard:** exact higher-order One merger remains OPEN. After lower-level One candidates are independently admitted by the canonical route, the pass may test whether a new recurrent higher-order organization emerges; “a new from-where exists” must not be used as the independent admission criterion.
 
 Nested Ones remain possible; lower-order continuities need not disappear when a higher-order Position forms.
 
@@ -536,15 +567,15 @@ canonical edit is authorized.
 ~~~text
 Facing separation as controlling reconstruction discipline = AUTHOR ACCEPTED
 Position as dynamic / generative transformation rather than static state = AUTHOR EXPLICIT
-primitive Selection as source of L0-facing continuity = AUTHOR EXPLICIT DIRECTION
-L0-facing continuity exact definition = OPEN / candidate strengthened
+primitive Selection as source of renewed generativity = AUTHOR EXPLICIT DIRECTION; particular One-continuity burden = RETYPED / FRH-0 TEST
+L0-facing continuity exact definition = OPEN / independent term NOT PRESUMED; FRH-0 REDUCTION TEST FIRST
 One / Position simplification direction = AUTHOR ACCEPTED FOR RECONSTRUCTION
-Orientation as formed future-facing expression of Position = ACCEPTED MACHINE DIRECTION / NONCANONICAL
+formed Orientation as future-facing expression of Position = ACCEPTED MACHINE DIRECTION / NONCANONICAL / test against Expectation C only, not basal B
 non-objectifying method = AUTHOR-OWNED RESEARCH DIRECTION
 L2 -> L1 -> infer L0 discovery route = AUTHOR EXPLICIT / ACCEPTED
 candidate L0 -> L1/L2 forward test = ACCEPTED METHOD GUARD
 generative explanatory incompleteness = HIGH-VALUE EMPIRICAL ENTRY
-concept simplification pass = CURRENT NEXT
+concept simplification pass = CURRENT NEXT after v0.2 corrective; Pass A <= 8, Pass B <= 7
 canonical landing = NO
 toy simulation = RETAINED DOWNSTREAM / NOT CURRENT NEXT
 ~~~

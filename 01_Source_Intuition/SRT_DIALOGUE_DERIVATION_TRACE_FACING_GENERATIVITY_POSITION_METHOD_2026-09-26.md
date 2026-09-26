@@ -13,6 +13,8 @@ authority: A1_retrieval_not_definition
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md
+  - Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md
@@ -44,6 +46,26 @@ tags:
 ---
 
 # Dialogue derivation trace — Facing separation → Position / One simplification → L0-facing continuity → non-objectifying method
+
+## Corrective read note — post-#1069
+
+This file preserves the derivation path, including intermediate machine compressions that were useful but later narrowed. It must now be read under:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md`
+
+Important supersessions for retrieval:
+
+~~~text
+"L0-facing continuity" = FRH-0 reduction test, not a presumed distinct ontology noun;
+primitive Selection = source of renewed generativity, not sufficient by itself for this-One continuation;
+Facing = existing canonical aspect rule applied as an execution discipline;
+One formation uses recurrent reconstitution first; Selection-position / from-where is downstream of admitted One;
+Expectation B remains pre-locus structural direction; only C-level anticipation is a candidate overlap with formed Orientation;
+Psi_f mismatch language = diagnostic projection only;
+HP-B Bearer / Psi_f / consciousness = read-only in the first reconstruction pass.
+~~~
+
+Historical machine reasoning below is intentionally retained rather than rewritten away.
 
 > **Authority boundary**
 >
@@ -103,7 +125,7 @@ then calling it “L0-facing” risks importing an already objectified / L2-like
 The machine therefore proposed:
 
 ~~~text
-bare L0
+primitive Selection (O0 + S0)
 = non-flat / non-preclosed generativity
 
 L1
@@ -135,7 +157,7 @@ The machine then faced a problem: if unity, continuity, expectation, Bearer, his
 The response was to separate:
 
 ~~~text
-bare L0
+primitive Selection (O0 + S0)
 from
 formed cognitive organization facing L0.
 ~~~
@@ -143,7 +165,7 @@ formed cognitive organization facing L0.
 Machine compression accepted by the author:
 
 ~~~text
-bare L0:
+primitive Selection (O0 + S0):
 non-flat / non-preclosed generativity
 + genuine Selection
 + finite positionality
@@ -163,7 +185,7 @@ the not-yet-objectified generative face of that formed organization
 
 Important result:
 
-> **bare L0 can be thin without the current L0-facing of a mature cognitive system being thin.**
+> **primitive Selection (O0 + S0) can be thin without the current L0-facing of a mature cognitive system being thin.**
 
 Unity and continuity need not be primitive cosmic goals. They can be properties of an already formed One when it faces the next not-yet-completed generation.
 
@@ -1114,7 +1136,7 @@ This may resolve why Gate repeatedly oscillated between root mechanism and downs
 
 ## 30. Bare L0 becomes thinner but stronger
 
-The dialogue had earlier worried that moving unity / continuity / expectation / geometry downstream makes bare L0 too thin.
+The dialogue had earlier worried that moving unity / continuity / expectation / geometry downstream makes primitive Selection (O0 + S0) too thin.
 
 Facing separation gave a different conclusion.
 
