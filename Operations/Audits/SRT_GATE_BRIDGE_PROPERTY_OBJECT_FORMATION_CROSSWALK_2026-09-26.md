@@ -22,7 +22,7 @@ tags: [Gate, Property, ObjectFormation, Invariance, RelationalCategory, Equivale
 
 ## 0. Executive result
 
-The author intuition is scientifically plausible as an integration architecture, but its components are strongly neighbor-paid.
+The author intuition is scientifically plausible as an integration architecture, but its components are strongly neighbor-paid. The current router preserves Gate as a formed organization; the active bridge-building process is treated separately as bridge formation.
 
 Current strongest neutral translation:
 
@@ -184,35 +184,35 @@ object first
 
 ---
 
-## 7. Revised Gate roles
+## 7. Revised roles — bridge genesis before formed Gate use
 
-The current programme should distinguish at least three analytic gate roles.
+The current programme should distinguish bridge genesis from later formed gating roles.
 
-### G1 — pass / suppress
+### R-pass — formed Gate pass / suppress role
 
 Which live transition is permitted or weighted?
 
-### G2 — bind / stabilize
+### R-bind — bridge formation / relational stabilization
 
 Which different states are linked into a repeatable transformation relation?
 
-### G3 — coarse-grain / objectify
+### R-coarse — formed coarse-graining / objectification role
 
 Which stable relations are compressed into reusable invariants, boundaries and object structure?
 
-These are analytic roles, not three anatomical modules.
+These are analytic roles, not three anatomical modules. R-bind is not called Gate by definition; it is a formation process that may yield a formed gating organization.
 
 Possible recursive relation:
 
 ~~~text
-G1 repeated selection / transition
--> G2 stable relation formation
--> G3 reusable coarse-grained object/property structure
+repeated formed gating use / transition
+-> active bridge formation and stabilization
+-> reusable coarse-grained object/property structure
 
 and later:
 
-G3 object/property structure
--> biases future G1 transitions.
+formed object/property gating structure
+-> biases future pass / suppress / transition use.
 ~~~
 
 This is structurally compatible with L1/L2 writeback without making them temporal containers.
