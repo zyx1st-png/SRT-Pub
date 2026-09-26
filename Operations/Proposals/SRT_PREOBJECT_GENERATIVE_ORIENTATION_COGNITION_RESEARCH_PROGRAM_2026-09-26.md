@@ -148,9 +148,25 @@ compress stable relations into equivalence / property / boundary structure
 
 CURRENT NEXT must test whether these roles share a nontrivial common kernel or whether "Gate" should split into typed families.
 
-A strong working kernel candidate is:
+A strong working kernel candidate is now strengthened by explicit author clarification that the bridge is **actively formed**:
 
-> **stabilize distinctions and transformations such that some differences remain load-bearing while others become safely compressible for future generation.**
+> **Gate is a selective stabilization process by which a system actively forms and maintains reusable relations across variation, thereby making some differences load-bearing and rendering others safely compressible for later generation and control.**
+
+Current nontrivial requirements:
+
+~~~text
+K1 selectivity
+= not every possible relation is stabilized
+
+K2 active formation / maintenance
+= recurrent system participation is required
+
+K3 perturbation-sensitive usability
+= the bridge remains usable across a declared range of changes
+
+K4 future efficacy
+= the formed bridge changes later prediction / grouping / transition / action
+~~~
 
 This is machine analysis only.
 
@@ -686,6 +702,35 @@ G4 is the strongest neutral target and still does not establish primitive Select
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 
+### GK-1a — Gate genesis vs Gate operation
+
+Keep separate:
+
+~~~text
+GATE FORMATION / GENESIS
+variation / encounter
+-> active sampling / selective coupling
+-> recurrent traversal / correction
+-> stabilized reusable bridge
+
+GATE OPERATION / USE
+formed bridge
+-> current pass / suppress / weight / classify / guide
+-> downstream transition / objectification
+~~~
+
+Primary anti-unification test:
+
+> **Can pass / suppress gating be explained as the momentary use of actively formed bridge structure, while property / object formation is the longer-timescale stabilization and compression of that same structure?**
+
+If YES:
+- Gate may support a multiscale common kernel.
+
+If NO:
+- split control gating, relation formation and representation / coarse-graining rather than forcing one umbrella term.
+
+Strong mature-neighbor pressure from active perception / sensorimotor contingency / invariant-learning means that active relation formation itself is not an SRT novelty claim.
+
 ### MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
@@ -836,11 +881,12 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= GK-1 weakest nontrivial Gate kernel:
-  test pass / bind / coarse-grain commonality vs forced split
+= GK-1 weakest nontrivial active Gate kernel
+  + GK-1a Gate genesis vs Gate operation
+  + test whether pass/suppress is short-timescale use of actively formed bridge structure
+  + test whether property/objectification is longer-timescale stabilization/compression of same structure
   + MG-1 multilevel-gating composition map
   + MG-2 access -> control -> ownership bridge
-  + target-objectification / gate-objectification distinction
   + Px / property / object historical re-entry
   + G2-G4 experiment HOLD until the mechanism pass converges
 
