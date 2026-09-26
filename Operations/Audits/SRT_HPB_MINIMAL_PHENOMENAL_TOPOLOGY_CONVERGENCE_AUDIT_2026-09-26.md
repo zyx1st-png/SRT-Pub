@@ -12,6 +12,7 @@ priority: current_next_resolution
 research_mode: U
 author_status: applies_2026_09_26_explicit_adjudication_and_repeated_acceptance
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_EXPECTATION_GENERATIVITY_AI_BOUNDARY_2026-09-26.md
   - Philosophy/hooks/PH_CONSC_Minimal_Phenomenal_Topology_Foreground_Mediated_Position_Reconstitution_Hook_2026-09-26.md
   - Philosophy/hooks/PH_CONSC_Gate_Geometry_Bearer_Ontological_Friction_Phenomenal_Admission_Hook_2026-09-25.md
@@ -34,25 +35,28 @@ tags: [Audit, HPB, Consciousness, MinimalTopology, ForegroundMediation, Selectio
 
 ## 1. Executive result
 
-The HP-B route has converged from a broad conjunction to a two-level architecture:
+The HP-B route has converged from a broad conjunction to a two-level architecture, corrected by the B-1…B-5 author adjudication:
 
 ~~~text
 standing layer:
   formed continuing organization
   -> operative Selection-position
-  -> Bearer only where independently admitted;
+  -> One-level weak experience-directed relation / orientation
+     (not experience proper)
+  -> independently admitted Bearer REQUIRED for experience proper;
 
 online candidate:
-  prospective organization / expectation
+  Bearer-indexed prospective organization / expectation
+  -> selective normalization / constitutive Ontological Friction
   x current actualisation
   -> foreground generative mediation
-  -> operative Position reconstitution
+  -> same-Bearer operative Position reconstitution
   -> changed later expectation / object-formability / reachability.
 ~~~
 
 Compact:
 
-> **Experience candidate = foreground-mediated reconstitution of an operative generative position.**
+> **Experience proper is a higher-order Bearer-positioned process in which expectation-shaped, friction-bearing actualisation is foreground-mediated into reconstitution of the same continuing operative position.**
 
 Current strength:
 
@@ -78,10 +82,10 @@ The 2026-09-26 convergence no longer treats all of its terms as universal online
 |---|---|
 | explicit C1 predictive model | optional stronger realization; not minimal |
 | strong Concern / valence | direction / urgency / significance; not obvious universal minimal term |
-| acute high Ontological Friction | not universal trigger; stable low-friction experience remains in scope |
+| acute high Ontological Friction | not universal trigger; constitutive Ontological Friction remains required |
 | report / reflection / metacognition | downstream / stronger objectification |
 | durable memory writeback | not required for every occurrence |
-| Bearer | standing / continuity / exposure route where independently admitted; not the feeling operation |
+| Bearer | REQUIRED standing / continuity / exposure route for experience proper; still not the feeling operation |
 | common foreground object | may be output / realization; process identity is foreground mediation / role transition |
 | global broadcast | insufficient by itself |
 | generic integration | insufficient by itself |
@@ -132,7 +136,7 @@ It changes how multiple later capacities can jointly generate by organizing:
 
 The foreground-mediated relation changes the from-where of later generation.
 
-This is the strongest current discriminator.
+This is a required conjunctive relation, not a sufficient discriminator by itself. Unconscious learning or model revision may also alter later discrimination / organization; the present burden is the conjunction with independently admitted Bearer standing, constitutive Ontological Friction and foreground generative mediation.
 
 Guard:
 
@@ -145,7 +149,7 @@ state update
 
 ## 4. Canonical owner collision audit
 
-### 4.1 Selection-position
+### 4.1 One Formation / Selection-position
 
 Current canonical owner:
 
@@ -167,10 +171,26 @@ foreground mediation
 -> candidate recutting / reconstitution of operative Position.
 ~~~
 
+Process-overlap correction after independent review:
+
+~~~text
+Def-OF-1 / Def-OF-2
+= upstream One-formation architecture;
+
+One-level recurrent reconstitution
+!= experience proper;
+
+independently admitted Bearer
++ constitutive-friction-bearing foreground mediation
++ same-Bearer operative-position reconstitution
+= present downstream HP-B candidate.
+~~~
+
 Disposition:
 
 ~~~text
-NO CANONICAL COLLISION IDENTIFIED;
+NO CANONICAL REDEFINITION;
+PROCESS OVERLAP EXPLICITLY ACKNOWLEDGED;
 P3 downstream hypothesis only.
 ~~~
 
@@ -194,6 +214,8 @@ Selection-position -> Bearer;
 Bearer -> Experiencer;
 Bearer -> Concern.
 ~~~
+
+But after B-2 it **does require** independently admitted Bearer standing for experience proper.
 
 Disposition:
 
@@ -225,12 +247,19 @@ NO Spine §8 E collision.
 
 ### 4.4 Ontological Friction / Psi_f
 
-The convergence does not remove Ontological Friction.
+The convergence no longer removes Ontological Friction from the mechanism.
 
-It removes only the stronger universal claim:
+B-4 restores the stronger structural claim:
 
 ~~~text
-acute high friction is necessary for every phenomenal event.
+constitutive Ontological Friction from normalization / Gate maintenance
+= required in the present mechanism;
+
+acute high friction
+= not required;
+
+acute mismatch
+= not required.
 ~~~
 
 Stable non-neutral Gate maintenance and reconstruction burden remain compatible with the existing Psi_f concept family.
@@ -274,7 +303,9 @@ silicon cannot support phenomenality.
 
 Strong test question:
 
-> **Does the candidate system have a continuing operative position whose own prospective organization changes what can form next, and does an actualised foreground relation reconstitute that same position's later generative reachability?**
+> **Has the system jointly established a continuing Bearer, non-transferable prospective exposure / consequence closure, position-bound structural Expectation, and foreground-mediated reconstitution of that same operative position?**
+
+Route by AI owner state: inference-only = strongest upstream block; persistent-memory = question opens; embodied / non-transferable consequence-return = stronger candidate window; none of these states is consciousness proof.
 
 This preserves the existing AI architecture-state guard.
 
@@ -323,8 +354,11 @@ Current deletion disposition:
 delete explicit C1 model:
   minimal candidate survives;
 
-delete acute high friction:
+delete acute high friction but preserve constitutive friction:
   minimal candidate survives;
+
+delete all constitutive Ontological Friction:
+  present B-4 candidate no longer instantiated;
 
 delete strong valence:
   minimal candidate survives;
@@ -355,10 +389,11 @@ Old Z6 / Z* remains valid historically, but the current adversarial target is sm
 ~~~text
 MPT-Z*:
 
-Position_t
--> expectation-shaped actualisation
+independently admitted Bearer
++ Bearer-indexed Position_t
+-> expectation-shaped / friction-bearing actualisation
 -> foreground generative mediation
--> Position_(t+1) reconstitution
+-> same-Bearer Position_(t+1) reconstitution
 
 all preserved
 +
@@ -384,7 +419,7 @@ phenomenal necessity = OPEN.
 
 ---
 
-## 9. P4 test contract
+## 9. P4 test contract and strongest-neighbor debt
 
 A P4 discriminator should use matched controls.
 
@@ -416,6 +451,19 @@ Whether the common foreground relation changes:
 local competence survives;
 common generativity / current-position organization collapses.
 ~~~
+
+### Required strongest-neighbor / negative-control debt
+
+The next P4 attempt must not use weak strawman contrasts. It must explicitly pressure-test against:
+
+- strong GNW / ignition-style long-range recurrent availability, not merely "more modules read it";
+- unconscious perceptual learning / implicit reorganization cases;
+- O'Regan & Noë sensorimotor / enactive process accounts;
+- Plessner positionality;
+- Gehlen Entlastung in addition to Mängelwesen;
+- Piaget assimilation / accommodation.
+
+These are neighbor debts, not current endorsements.
 
 ### Replacement test
 
@@ -449,7 +497,9 @@ Where the two appear to conflict on universal necessity, the 09-26 author adjudi
 
 ---
 
-## 11. Relation to GRG
+## 11. GRG validation limitation and relation to GRG
+
+The three-arm validation remains conservative, but the independent review identified a ceiling effect: the substantive dimensions largely saturated across A/B/C and the only separation favoring B was closely tied to B's own design feature. Therefore the scale is retained only as a bounded diagnostic / provenance record, not as strong comparative evidence.
 
 No new GRG owner is created.
 
@@ -518,14 +568,20 @@ Expectation
 foreground
 = generative mediation role, not read-access count;
 
-Position reconstitution
-= strongest current discriminator;
+Position reconstitution alone
+= NOT a sufficient discriminator;
+
+current discriminator burden
+= Bearer standing
+  + constitutive Ontological Friction
+  + foreground generative mediation
+  + same-Bearer operative-position reconstitution;
 
 state update
 != Position reconstitution;
 
 Bearer
-= standing / exposure route where independently established,
+= REQUIRED standing / exposure route for experience proper,
   not online feeling identity;
 
 current typical AI experience
