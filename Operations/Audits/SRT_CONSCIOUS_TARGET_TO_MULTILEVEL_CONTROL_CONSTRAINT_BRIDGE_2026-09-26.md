@@ -21,6 +21,10 @@ tags: [ConsciousTarget, CognitiveControl, MultilevelGating, StructuringBias, PFC
 
 > Boundary: machine analysis after author acceptance of the target-objectification / gate-objectification distinction. No new primitive, no canonical edit, no claim that consciousness is necessary or sufficient for cognitive control.
 
+
+
+> **Control-line scope guard (post-review):** this file concerns cognitive / interventional control and agency routing (HP-A / PH-AG). It does not reopen frozen HP-B phenomenal admission. Unless explicitly marked otherwise, "foreground" means **foreground_obj** (cognitive / interventional objectification), not **foreground_phen**; **manifest_OF** is not inferred from conscious access.
+
 ---
 
 ## 0. Executive result
