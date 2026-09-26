@@ -371,3 +371,45 @@ LEVIN BIOELECTRIC FIELD
 CANONICAL EDIT = NO
 SCIENTIFIC DISTINCTIVENESS = NOT ESTABLISHED
 ~~~
+
+
+---
+
+## 12. Directional acceptance of target / gate distinction
+
+After the machine analysis separated:
+
+- **target objectification** — a coarse conscious goal such as “我要拿起水杯” becoming a foreground target that can constrain lower-level gating without containing the detailed motor solution;
+
+from:
+
+- **gate objectification** — a normally transparent control relation / expectation / habitual constraint itself becoming foregrounded and available for revision when ordinary correction is insufficient;
+
+the author replied:
+
+> **「认同，继续」**
+
+Under the repository continuation rule, this records directional acceptance of that distinction and authorization to continue from it.
+
+The accepted route therefore includes:
+
+~~~text
+conscious target
+!= gate itself necessarily
+
+target objectification
+!= gate objectification
+
+foreground target
+-> may constrain lower-level gating
+
+persistent consequential conflict
+-> may foreground the gate itself
+-> make revision possible
+~~~
+
+This acceptance does not establish:
+- that consciousness only acts through gating;
+- that every conscious target gains control authority;
+- that gate objectification is sufficient for freedom or agency;
+- any specific neural implementation.
