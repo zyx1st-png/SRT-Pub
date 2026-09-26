@@ -51,9 +51,57 @@ mechanism identity = OPEN
 
 ---
 
+## 0.2 Scope boundary — control / agency line, not HP-B reopening
+
+This source concerns the **control / agency role of consciously accessible targets** and routes to HP-A / PH-AG style control work. It does **not** reopen the frozen HP-B phenomenal-admission package.
+
+Foreground vocabulary in this file is typed as follows:
+
+~~~text
+foreground_obj
+= cognitive / interventional foregrounding of a target, control relation, or gate as an object of access / revision.
+
+foreground_phen
+= phenomenal foregrounding; NOT established or analyzed here.
+
+manifest_OF
+= ontological / generative manifestation typing from the 2026-09-25 foreground adjudication; not inferred merely from conscious access.
+~~~
+
+Unless a sentence explicitly says otherwise, every informal use of "foreground / foregrounded" below should be read as **foreground_obj**, not foreground_phen.
+
+The author-accepted option C is retained only in its directional core:
+
+> conscious intention can alter higher-order control conditions without specifying low-level execution.
+
+It is **not** hardened into the identity claim "conscious content = Gate".
+
+Current settled machine reconstruction, consistent with the later author-accepted target / gate distinction:
+
+~~~text
+conscious target (foreground_obj)
+-> can recruit / stabilize / reweight an already formed higher-order gating organization
+-> lower gating conditions change
+-> distributed execution changes
+
+persistent consequential conflict
+-> a normally background formed Gate / constraint may itself become foreground_obj
+-> gate-objectification / reflective revision becomes possible
+~~~
+
+Therefore this package uses the safer C2' relation:
+
+~~~text
+target objectification != gate objectification
+conscious target != Gate by identity
+conscious access != phenomenal admission
+~~~
+
+---
+
 ## 1. Main author-licensed direction
 
-> **Conscious intention need not directly specify or micromanage the detailed physical execution of behavior. A conscious intention may instead function as a foregrounded high-level gate / objectification whose causal role is to reshape the conditions under which lower-level perceptual, action-selection, motor and feedback processes self-organize.**
+> **Conscious intention need not directly specify or micromanage the detailed physical execution of behavior. A conscious target can instead recruit, stabilize or reweight an already formed higher-order gating organization, reshaping the conditions under which lower-level perceptual, action-selection, motor and feedback processes self-organize.**
 
 The cup example is therefore not:
 
@@ -66,8 +114,8 @@ conscious representation
 but provisionally:
 
 ~~~text
-conscious / foregrounded expectation-intention
--> high-level gate reconfiguration
+conscious target / foreground_obj
+-> recruitment or reweighting of formed higher-order gating
 -> changed lower-level candidate / suppression / gain / transition conditions
 -> distributed sensorimotor generation
 -> physical action
@@ -90,7 +138,7 @@ consciousness
 != complete action generator
 ~~~
 
-> **Conscious contents can be one way in which higher-order gate relations become foregrounded and thereby become available for system-level reconfiguration.**
+> **Conscious contents can make a target or, under conflict, an already formed gate relation foreground_obj and thereby available for system-level reconfiguration.**
 
 This connects to the existing 2026-09-25 gate-objectification route:
 
@@ -156,7 +204,7 @@ The field is therefore not introduced as an extra substance over the gates.
 
 The author accepts the stronger C reading:
 
-> A high-level conscious intention can become a new constraint on the lower system without containing the detailed algorithm by which that lower system fulfills it.
+> A high-level conscious intention can recruit or stabilize a formed control constraint on the lower system without containing the detailed algorithm by which that lower system fulfills it.
 
 This supports:
 
@@ -170,7 +218,7 @@ causal influence
 
 The live theoretical burden is:
 
-> **How can a coarse, foregrounded intention change the gate configuration of a much higher-dimensional distributed control system?**
+> **How can a coarse foreground_obj target recruit or reweight formed gating in a much higher-dimensional distributed control system?**
 
 ---
 
@@ -182,7 +230,7 @@ Working chain:
 Bearer / operative position
 + Concern
 + structural Expectation
--> foregrounded intention / conscious objectification where admitted
+-> conscious target / foreground_obj where admitted
 -> modification of higher-order gating
 -> changed lower-level reachability / action readiness
 -> behavior
@@ -302,9 +350,14 @@ history / L2 sediment
 -> whole effective action / objectification field
 
 where relevant:
-    some high-level gate relation
-    -> foregrounded / conscious objectification
-    -> deliberate or reflective reconfiguration
+    some high-level target
+    -> foreground_obj target objectification
+    -> recruitment / reweighting of formed gating
+
+where persistent conflict exposes the formed constraint itself:
+    formed gate relation
+    -> foreground_obj gate-objectification
+    -> deliberate or reflective revision
 
 then:
 whole gating field
@@ -348,7 +401,8 @@ Subquestions:
 AUTHOR ACCEPTS C = YES
 
 CONSCIOUS INTENTION
-= candidate foregrounded high-level gate / objectification
+= foreground_obj target that may recruit / stabilize / reweight formed higher-order gating;
+  NOT identical to Gate by definition
 
 CONSCIOUSNESS
 = NOT equated with central controller or whole field
