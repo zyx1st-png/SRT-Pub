@@ -789,7 +789,8 @@ WHY THIS DIFFERENCE MATTERS
 -> relevance / priority; Concern where qualified
 
 WHAT CONTINUATION IS SOUGHT
--> structural Expectation / current goal
+-> structural Expectation
+-> explicit current goal only where separately present
 
 WHAT IS ACTUALLY TRIED
 -> active selective coupling / Selection-facing actualisation
