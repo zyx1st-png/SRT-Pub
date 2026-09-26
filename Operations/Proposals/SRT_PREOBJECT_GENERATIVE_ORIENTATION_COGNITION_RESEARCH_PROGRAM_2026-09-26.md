@@ -17,6 +17,7 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -111,6 +112,62 @@ The current mechanistic burden is:
 
 > **How do distributed gates become coordinated into one effective field, and how can a coarse foregrounded intention reconfigure that field without containing the detailed lower-level solution?**
 
+
+
+
+## 1.2 Gate refinement — from valve to stabilizing bridge
+
+A re-entered early author intuition proposes:
+
+> Gate may not primarily be binary pass / block. It may stabilize a bridge between otherwise distinct states; recurrent stable relations may be compressed as properties, and sufficiently coherent property structure may contribute to object formation.
+
+Current neutral translation:
+
+~~~text
+state variation
+-> stabilized transformation relation
+-> reusable invariant / property candidate
+-> coherent relational closure
+-> objectification candidate
+~~~
+
+This creates a new anti-overloading burden.
+
+Do not assume one Gate concept covers all of:
+
+~~~text
+G-pass:
+permit / suppress a transition
+
+G-bind:
+stabilize a repeatable relation across state change
+
+G-coarse:
+compress stable relations into equivalence / property / boundary structure
+~~~
+
+CURRENT NEXT must test whether these roles share a nontrivial common kernel or whether "Gate" should split into typed families.
+
+A strong working kernel candidate is:
+
+> **stabilize distinctions and transformations such that some differences remain load-bearing while others become safely compressible for future generation.**
+
+This is machine analysis only.
+
+The same intuition may also help the access -> control bridge:
+
+~~~text
+mature target object
+= compressed access point into stabilized perceptual / causal / affordance /
+  action relations
+
+foreground target
+-> reactivate / reweight relational structure
+-> coordinated lower-gate change
+-> distributed execution
+~~~
+
+This connection is high-value but not established.
 
 
 ---
@@ -779,10 +836,12 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= MG-1 multilevel-gating composition map
+= GK-1 weakest nontrivial Gate kernel:
+  test pass / bind / coarse-grain commonality vs forced split
+  + MG-1 multilevel-gating composition map
   + MG-2 access -> control -> ownership bridge
   + target-objectification / gate-objectification distinction
-  + CN-1/CN-2 retained as supporting architecture
+  + Px / property / object historical re-entry
   + G2-G4 experiment HOLD until the mechanism pass converges
 
 CANONICAL EDIT
