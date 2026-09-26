@@ -161,6 +161,8 @@ When answering or editing a non-simple SRT question:
 - `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md` + `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`（2026-09-24 author direction and future C-class contract for L0 Generative Openness / L1 Actualized Differentiation / L2 Retained Generative Efficacy and the two-role Spine; noncanonical, landing not yet authorized）
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md` + `Operations/Proposals/SRT_GRG_MULTIVIEW_OPERATIONAL_REARCHITECTURE_PACKET_2026-09-25.md`（2026-09-25 author direction: gate as stable coarse-graining geometry; prior L2 may shape later L0-facing gating; **L0/L1/L2 are analytic views**, so GRG operationalization is reopened as a multiview reconstruction problem rather than a three-layer mapping）
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md` + `Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md`（CURRENT NEXT: apply the canonical analytic-aspect rule as a bounded Facing reconstruction method; content version v0.2; FRH-0 reduction test first; no canonical edit）
+- `Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md`（independent post-merge review / corrective provenance; not definition authority）
 
 ### Boundary
 
@@ -168,6 +170,9 @@ When answering or editing a non-simple SRT question:
 - `L1` is not merely physical matter; it is actualized slice / event / manifest state.
 - `L2` is not identical to any single landscape; landscapes are effective projections of stable constraint domains.
 - `graphify-out/wiki/Ontology_Split_Index.md` is support-only; it is not a canonical source.
+- `L0-facing / L1-facing / L2-facing` in the current method are aliases / execution views of the existing analytic-aspect rule, not new ontology terms.
+- Do not use `bare L0` for `O0 + S0`; use `primitive Selection (O0 + S0)` when the whole co-primitive burden is intended.
+- `Position-relative L0-facing`, `formed Orientation`, and `L0-facing continuity` remain working labels / reduction targets unless a later owner cycle retains them.
 
 ---
 
