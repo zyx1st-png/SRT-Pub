@@ -20,6 +20,10 @@ tags: [Consciousness, MultilevelGating, ActionSelection, HierarchicalControl, GN
 
 > Boundary: machine analysis after explicit author acceptance of C. This audit does not establish that consciousness only acts through gates, that neural synchrony is the field, or that Levin-style bioelectric morphogenesis is mechanistically identical to cognition.
 
+
+
+> **Control-line scope guard (post-review):** this file concerns cognitive / interventional control and agency routing (HP-A / PH-AG). It does not reopen frozen HP-B phenomenal admission. Unless explicitly marked otherwise, "foreground" means **foreground_obj** (cognitive / interventional objectification), not **foreground_phen**; **manifest_OF** is not inferred from conscious access.
+
 ---
 
 ## 0. Executive result
@@ -387,17 +391,22 @@ The diagram is functional, not anatomical and not a temporal conveyor.
 
 The current author acceptance still leaves one subtle distinction unresolved.
 
-### Reading C1 — conscious content IS the high-level gate
+### Settled corrective reading — C2'
 
-The foregrounded intention itself is the operative constraint.
+Do not use the identity claim "conscious content IS the high-level Gate".
 
-### Reading C2 — conscious content OBJECTIFIES / EXPOSES a high-level gate
+Use:
 
-The underlying gate already constrains behavior; consciousness makes that gate available for global access, stabilization, revision or reconfiguration.
+~~~text
+conscious target (foreground_obj)
+-> recruits / stabilizes / reweights an already formed gating organization
 
-These are not identical.
+persistent consequential conflict
+-> the formed gate / constraint itself may become foreground_obj
+-> gate-objectification enables possible reflective revision
+~~~
 
-C2 fits especially well with the existing 2026-09-25 sentence:
+This fits especially well with the existing 2026-09-25 sentence:
 
 ~~~text
 successful gate recedes into background;
@@ -405,9 +414,9 @@ strained / consequential gate can become object;
 reflective gate-objectification makes revision possible.
 ~~~
 
-Machine recommendation:
+Corrective disposition:
 
-> Treat C2 as the safer current architecture unless the author explicitly wants the stronger identity claim C1.
+> C2' is the controlling architecture for this package; the earlier C1 wording is retained only as provenance of the fork and is not an active option.
 
 This preserves:
 - unconscious gating;
@@ -438,9 +447,10 @@ NEW USEFUL SYNTHESIS
 
 NOVELTY = NOT ESTABLISHED
 
-NEXT AUTHOR FORK
-= C1 gate identity
-  vs C2 gate objectification / exposure
+C1/C2 FORK
+= CLOSED FOR THIS PACKAGE AT C2':
+  target recruits / reweights formed gating;
+  gate-objectification is a distinct conflict-driven route
 
 CANONICAL EDIT = NO
 ~~~
