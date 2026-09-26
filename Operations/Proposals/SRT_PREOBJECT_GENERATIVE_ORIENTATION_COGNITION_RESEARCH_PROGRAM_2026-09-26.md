@@ -36,6 +36,42 @@ tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeomet
 >
 > **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
 
+## 0.0a Post-#1071 evidence-status adjudication
+
+Controlling source:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1071_FACING_PASS_FINAL_2026-09-26.md`
+
+Final evidence status:
+
+~~~text
+this cognition programme
+= NEUTRAL COGNITION-SCIENCE / ARCHITECTURE PROGRAMME FIRST;
+
+SRT interpretation
+= OPTIONAL / DOWNSTREAM;
+
+toy simulation
+= NEUTRAL COGNITION-ARCHITECTURE EXPERIMENT;
+
+toy simulation positive result
+!= evidence for primitive Selection / O0 / L0 ontology;
+
+SRT-specific evidence queue
+= toy simulation REMOVED.
+~~~
+
+The package may still be useful for studying relation formation, property learning, closure, gating and whole-system organization, but those results must be compared against strong structure-learning / relational / dynamical baselines and cannot validate SRT's primitive metaphysical burdens.
+
+Current execution status:
+
+~~~text
+toy simulation execution = HOLD / not CURRENT NEXT;
+CURRENT NEXT = primitive Selection anti-tautology.
+~~~
+
+---
+
 ## 0.0 Post-#1066 routing update — Facing reconstruction supersedes this programme's CURRENT NEXT
 
 Later on 2026-09-26, the author explicitly redirected the single repository `CURRENT NEXT` to:
