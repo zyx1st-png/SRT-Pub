@@ -76,49 +76,63 @@ A-8 RESULT = GRG operational architecture + name REOPENED / original telos retai
 A-9 RESULT = theoretical friction = Ontological Friction = canonical Psi_f concept family / contextual readings only
 CANONICAL LANDING = HOLD / no Freeze-A edit authorized
 
-### 0.3c Preformal coherence sensitivity / intuition research — 2026-09-26
+### 0.3c Pre-object generative orientation / cognition research — 2026-09-26
 
-Author instruction:
+Initial author instruction:
 
 > 「我觉得这种能力并不是我特有的。而是普遍的，只是我比较特殊一点，所以我想研究一下这一点，作为下一个Current next。」
 
+Root correction:
+
+> 「我主要关注的是我们所有人的认知，本质上不是先获得对象，然后在对象(知识和规则等）之上建立吸引子和方向。而是先在预期，bearer，原初选择，神性等作用下产生吸引子，一种统一的、连续的、生成性的、归一化的非对象。然后才把一些显性的对象装进去形成连续性的结构。就像先有磁场，然后有磁力线一样。」
+
 Controlling source / programme:
 
-- \`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md\`
-- \`Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md\`
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+- Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+
+Downstream assay retained:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md
+- Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
 
 Current status:
 
 ~~~text
-working construct = preformal coherence sensitivity;
-target = early relational / global coherence discrimination before full explicit articulation;
-universal capacity = hypothesis with substantial neighboring evidence;
-individual-difference structure = open;
-distinct new faculty = NOT ESTABLISHED;
+ROOT RESEARCH OBJECT = pre-object generative orientation of cognition;
+core contrast = orientation-first vs object-first / object-model-first cognition;
+preformal coherence sensitivity = downstream behavioral assay, not root construct;
+field / attractor / metastable / gate geometry = candidate model families, not settled ontology;
+L0/L1/L2 = analytic views, not cognitive spaces;
+explicit objects / knowledge / rules = later stabilized cuts that can recursively reshape later orientation;
+individual differences = downstream empirical question;
 author exceptionalism = NOT ASSUMED;
-author SRT/AI dialogue = naturalistic case only;
 SRT explanatory gain = OPEN;
-CURRENT NEXT = CN-1 literature/construct hardening + CN-2 retrospective protocol freeze;
+CURRENT NEXT = CN-1 root construct/neighbor map + CN-2 object-first vs orientation-first discriminator map;
 canonical edit = NO.
 ~~~
 
 Strong guards:
 
 ~~~text
-subjective certainty != accuracy;
-intuition != expertise automatically;
-gist / fluency / familiarity / statistical learning may absorb the phenomenon;
-single-task performance != stable trait;
-naturalistic author successes must be sampled together with reversals / false alarms;
-SRT must be allowed to add zero incremental explanatory value.
+pre-object != pre-sensory or contentless;
+orientation != explicit goal or fixed attractor endpoint;
+field analogy != literal physical field;
+objects are not unreal;
+retained L2 structure may reshape later L0-facing orientation without exhausting its origin;
+primitive Selection / generativity != cognitive representation;
+generative divinity = provenance for generativity / nonclosure, not supernatural agency;
+SRT must be allowed to add zero incremental explanatory value over Gestalt / enactivism / predictive / dynamical accounts.
 ~~~
 
-Neighbor anchors include:
-- Bowers et al. 1990 semantic-coherence intuition;
-- Reyna / Fuzzy-Trace Theory / gist intuition;
-- Kahneman & Klein 2009 intuitive-expertise boundary conditions;
-- statistical-learning development / individual-difference work;
-- 2024 semantic-coherence priming work.
+Strong neighbor families:
+- Gestalt / whole-before-parts organization;
+- Skilled Intentionality / field of relevant affordances;
+- operative / motor intentionality;
+- predictive / Bayesian processing;
+- metastable coordination dynamics;
+- attractor / manifold models;
+- scene gist / object individuation / statistical learning.
 
 ---
 
@@ -879,26 +893,29 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = preformal coherence sensitivity / theoretical-shape intuition research programme;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md;
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md;
+CURRENT NEXT = pre-object generative orientation of cognition research programme;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md;
 
 Immediate execution order:
 
 ~~~text
-CN-1 = literature / construct map;
-CN-2 = retrospective naturalistic-case protocol freeze;
-CN-3 = repository case extraction only after CN-2 is frozen;
-CN-4 = preregisterable behavioral battery;
-CN-5 = small multi-person pilot.
+CN-1 = root construct / strong-neighbor map;
+CN-2 = object-first vs orientation-first discriminator map;
+CN-3 = novel toy-world preregistration;
+CN-4 = preformal coherence tasks reused only as downstream assays;
+CN-5 = author naturalistic case deferred until neutral architecture hardens.
 ~~~
 
 Research framing:
 
 ~~~text
-universal human capacity first;
+cognition-level orientation first;
+explicit objectification second;
+retention recursively reshapes later orientation;
+universal architecture first;
 individual differences second;
-author case = high-intensity naturalistic case, not privileged evidence;
+author case = later naturalistic case, not privileged evidence;
 SRT mapping = downstream optional interpretation;
 canonical SRT edit = NO.
 ~~~
