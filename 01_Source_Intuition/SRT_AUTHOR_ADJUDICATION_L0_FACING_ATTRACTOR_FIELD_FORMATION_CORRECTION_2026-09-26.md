@@ -41,6 +41,24 @@ The root question is:
 
 ---
 
+## 0.1 Directional acceptance and continuation
+
+The author subsequently replied:
+
+> 「认同继续」
+
+Under the repository's continuation-acceptance rule, this is recorded as package-level directional acceptance of the immediately preceding analysis route and authorization to continue from it.
+
+The accepted route includes:
+- field formation rather than temporal priority as the root burden;
+- focused comparison through metastability / Skilled Intentionality / SRT L0-facing vertical generation;
+- treating objectification as a downstream local stabilization within the whole-field problem;
+- preserving One / Bearer / field / consciousness distinctions.
+
+This does not convert every machine sentence into author ontology and does not authorize canonical hardening.
+
+---
+
 ## 1. L0-facing does not mean temporally earlier
 
 This correction reconnects the current cognition programme to the 2026-09-24 pre-object vertical line.
