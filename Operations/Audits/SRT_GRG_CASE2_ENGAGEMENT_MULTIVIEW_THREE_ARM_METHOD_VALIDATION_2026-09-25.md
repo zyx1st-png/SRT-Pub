@@ -570,3 +570,26 @@ It is:
 > **does the reconstruction-first / grammar-late architecture provide enough recurring research value across already-held SRT work to justify a stable programme identity, even when target-domain scientific gain is absent?**
 
 That is a programme-design question, not permission to reopen the fusion lane.
+
+
+---
+
+## 18. 2026-09-26 independent-review limitation
+
+The PR #1063 independent review identified a scale ceiling effect in this three-arm comparison:
+
+- the substantive dimensions largely saturated across A / B / C;
+- the remaining separation favoring B was closely tied to B's own design feature;
+- therefore the numerical / ordinal contrast should not be treated as strong independent evidence for GRG distinctiveness.
+
+This does not reverse the conservative primary result.
+
+~~~text
+METHOD_RESULT = REORGANIZATION_ONLY
+TARGET_DOMAIN_GRG_GAIN = NO
+SCIENTIFIC_DISTINCTIVENESS = NOT ESTABLISHED
+~~~
+
+Disposition:
+
+> retain this file as a bounded method-calibration / provenance record; do not reuse the saturated scale as a principal discriminator without redesign.
