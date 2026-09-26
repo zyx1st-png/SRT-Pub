@@ -23,6 +23,8 @@ dependency:
   - Operations/Audits/SRT_MINIMAL_OBJECT_CLOSURE_INDEX_BRIDGE_RECIPROCAL_STABILIZATION_2026-09-26.md
   - Operations/Audits/SRT_OBJECT_GIVENNESS_GATE_TRANSPARENCY_FROM_RECIPROCAL_CLOSURE_2026-09-26.md
   - Operations/Audits/SRT_WHOLE_FIELD_COMPOSITION_FROM_TRANSPARENT_CLOSURES_2026-09-26.md
+  - Operations/Audits/SRT_GATE_TYPED_OPERATOR_MINIMAL_FORMALIZATION_2026-09-26.md
+  - Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -880,6 +882,80 @@ Do NOT force bridge genesis, closure and cross-closure composition into one unty
 Prefer a minimal typed operator family unless a genuinely shared nontrivial algebra is demonstrated.
 
 
+### GK-1e — typed Gate contract formalization
+
+Current formal result:
+
+~~~text
+Form
+= active bridge formation / revision
+
+Close
+= reciprocal stabilization of thin index + bridge family
+
+Compose
+= compatibility / competition / nesting topology over closures
+~~~
+
+Do NOT identify them by equation.
+
+Use a shared audit contract instead:
+
+~~~text
+GateLike(T)
+requires:
+- selective differentiation;
+- active or history-dependent stabilization;
+- perturbation-bounded robustness;
+- future-selectability efficacy;
+- compression with preserved control relevance;
+- revisability under mismatch / new evidence.
+~~~
+
+Then test:
+
+~~~text
+GateLike(Form) ?
+GateLike(Close) ?
+GateLike(Compose) ?
+~~~
+
+This preserves a possible common Gate family without making every constraint Gate-like.
+
+All notation is local audit notation; the canonical symbol table is unchanged.
+
+### GK-1f — strong-baseline toy simulation package
+
+A bounded simulation design now exists with:
+- no learner-side object ID / property label / complete state inventory;
+- active vs yoked matched-exposure regimes;
+- B0 static feature baseline;
+- B1 strong action-conditioned latent-state / world-model baseline;
+- B2 object-file / slot + action-transition baseline;
+- typed Gate candidate G = Form -> Close -> Compose;
+- explicit zero-gain rules.
+
+The simulation only earns Gate increment if it shows more than benchmark fit:
+
+~~~text
+held-out relational transfer
++ intervention localization
++ recursive learning prediction
++ cross-level compression
++ failure-mode specificity
+~~~
+
+If strong B1 / B2 absorb the same effects, record translation / zero gain.
+
+Before code execution, freeze:
+- environment generator;
+- learner inputs;
+- baseline capacities;
+- held-out splits;
+- metrics;
+- zero-gain rules;
+- seeds / repetition policy.
+
 ### MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
@@ -1030,17 +1106,12 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= GK-1 weakest nontrivial active Gate kernel
-  + GK-1a Gate genesis vs Gate operation
-  + GK-1b bridge-drive decomposition
-  + GK-1c thin-index × bridge reciprocal closure
-  + GK-1d whole-field composition from transparent closures
-  + first minimal typed formalization of:
-    bridge formation / closure / cross-closure compatibility
-  + preserve strong anti-overloading guard:
-    do not force one generic Gate equation if typed operators are required
-  + MG-1/MG-2 retained downstream
-  + G2-G4 experiment HOLD until the mechanism pass converges
+= GK-1 typed Gate family now provisionally coherent
+  + GK-1e preserve Gate as shared contract over Form / Close / Compose, not one equation
+  + GK-1f freeze strong-baseline toy simulation package before execution
+  + explicitly allow translation / zero gain if B1/B2 absorb the architecture
+  + keep human G2-G4 experiment HOLD
+  + keep canonical Gate definition / symbol registration HOLD
 
 CANONICAL EDIT
 = NO
