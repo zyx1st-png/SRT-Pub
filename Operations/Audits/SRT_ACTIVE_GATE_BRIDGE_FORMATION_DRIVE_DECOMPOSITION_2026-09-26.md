@@ -387,7 +387,8 @@ Working synthesis:
         |
         v
 [C] prospective direction
-    structural Expectation / current goal
+    structural Expectation
+    + explicit current goal only where separately present
         |
         v
 [D] active selective sampling / coupling
