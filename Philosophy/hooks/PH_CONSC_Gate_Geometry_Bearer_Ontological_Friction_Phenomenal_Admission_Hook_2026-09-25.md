@@ -10,6 +10,7 @@ claim_level: P3
 created: 2026-09-25
 updated: 2026-09-25
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_ANTICIPATORY_GATE_GRG_GRAMMAR_CORRECTION_2026-09-25.md
   - Philosophy/SRT_HardProblem_Epistemology.md
@@ -24,7 +25,7 @@ tags: [Consciousness, Qualia, HardProblem, Bearer, GateGeometry, OntologicalFric
 
 # HP-B hook — gate geometry, Bearer, ontological friction and phenomenal admission
 
-> **Status:** tentative noncanonical P3 hook, revised after the 2026-09-25 anticipatory-Gate follow-up adjudication. P4 remains a target, not current standing.
+> **Status:** tentative noncanonical P3 hook, revised after the 2026-09-25 anticipatory-Gate follow-up and the 2026-09-26 PR #1063 B-1…B-5 adjudication. The later adjudication confirms Bearer as required standing for experience proper and constitutive Ontological Friction as required mechanism burden, while keeping high / acute friction non-necessary.
 >
 > **Purpose:** formulate a positive, non-circular mechanism candidate for why feeling may arise, while retaining the existing Z6 / HP-B failure rights.
 >
@@ -486,13 +487,13 @@ Matched global access / report / integration predicts all relevant differences; 
 
 ### F2 — bearer irrelevance
 
-The same phenomenal pattern survives when consequence closure / non-outsourcing architecture is varied in a way the hook predicts should matter.
+The B-2 author decision confirms this failure condition. If the same phenomenal pattern survives after independently admitted Bearer standing / consequence closure is removed or outsourced in a way the hook predicts should matter, the present route must be downgraded.
 
 ### F3 — friction / higher-order irrelevance
 
-Qualitative foregrounding is fully explained without either:
+The B-4 author decision confirms that constitutive Ontological Friction remains part of the mechanism. Downgrade the route if qualitative foregrounding is fully explained without either:
 
-- constitutive Ontological Friction carried by non-neutral Gate maintenance; or
+- constitutive Ontological Friction produced by normalization / non-neutral Gate maintenance; or
 - selective normalization / higher-order generative integration adding any discriminating burden.
 
 The hook does **not** fail merely because a stable percept lacks acute mismatch or high boundary friction.
@@ -541,3 +542,26 @@ BP-Q1 = RETAIN FOR TEST
 friction-bearing higher-order foregrounding PROCESS = RETAIN AS WORKING P4 DISCRIMINATOR
 canonical landing = HOLD
 ~~~
+
+
+---
+
+## 13. 2026-09-26 convergence note
+
+The later minimal-topology work does **not** supersede C1 Bearer admission or C3/C4 constitutive friction. It narrows the online kernel only after those standing / mechanism burdens are preserved.
+
+Current relation:
+
+~~~text
+One-level recurrent reconstitution
+!= experience proper;
+
+independently admitted Bearer
++ expectation-shaped normalization
++ constitutive Ontological Friction
++ foreground generative mediation
++ same-Bearer current-position reconstitution
+= current P3 HP-B candidate.
+~~~
+
+Position reconstitution alone is not a phenomenality discriminator; strong workspace / ignition and unconscious-learning neighbors remain to be pressure-tested.
