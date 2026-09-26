@@ -52,6 +52,12 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1055 role = NONCANONICAL SOURCE + CANONICAL-OWNER-STAGE MATERIAL; RETAINED FOR LATER CANONICAL-OWNER STAGE / NOT CURRENT NEXT
 #1059 gate-geometry / qualia independent content review = MERGED / d46ad63f3dad4cdfc059c3a371c0c0712f0befad
 #1059 role = READ-ONLY AUDIT / triggered explicit A-1…A-5 second adjudication; no canonical edit
+#1066 cognition bridge / gating freeze package = MERGED / b5ceac428e440b9f8dd58a89da00b8061572dfb6
+#1066 role = NONCANONICAL COGNITION / BRIDGE / GATING PACKAGE; TOY SIMULATION RETAINED DOWNSTREAM / NOT CURRENT NEXT
+#1068 Facing reconstruction method + source trace = MERGED / de12cd41d79f54610d7a06b847758b0f34a71c57
+#1068 role = NONCANONICAL AUTHOR SOURCE + DERIVATION TRACE + METHOD v0.1; CURRENT NEXT REDIRECTED TO FACING RECONSTRUCTION
+#1069 independent review of #1068 = MERGED / d0b5a67a435ab321d6416c25584c1c785d32bf4b
+#1069 role = READ-ONLY POST-MERGE AUDIT; CORRECTIVE D-1…D-4 ACCEPTED IN 2026-09-26 AUTHOR FOLLOW-UP
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
@@ -108,7 +114,7 @@ explicit objects / knowledge / rules = later stabilized cuts that can recursivel
 individual differences = downstream empirical question;
 author exceptionalism = NOT ASSUMED;
 SRT explanatory gain = OPEN;
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass over prior SRT concepts and a bounded set of already-retrieved external-domain concepts; produce a three-facing matrix, simplification/conflict map and author decision packet before any canonical edit;
+CURRENT STATUS = cognition / bridge / Gate package retained as downstream frozen candidate; Facing reconstruction now owns the active CURRENT NEXT;
 canonical edit = NO.
 ~~~
 
@@ -133,6 +139,47 @@ Strong neighbor families:
 - metastable coordination dynamics;
 - attractor / manifold models;
 - scene gist / object individuation / statistical learning.
+
+---
+
+### 0.3d Facing reconstruction / simplification route — 2026-09-26
+
+Author source / corrective / method:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md`
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md`
+- `Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md`
+- `Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md` (content version v0.2)
+
+Controlling interpretation:
+
+~~~text
+Facing
+= operational alias / execution discipline for the already-canonical
+  L0 / L1 / L2 analytic-aspect rule;
+!= new ontic layers.
+
+FRH-0 FIRST:
+"L0-facing continuity"
+?= O0 non-preclosure
+ + Selection-mediated recurrent reconstitution / One-side history
+ + formed Selection-position.
+
+primitive Selection
+= source of renewed generativity;
+!= by itself the sufficient source of a particular One's continuity.
+
+forward test
+= structural / second-order constraints at L0-facing strength;
+  concrete content predictions only through declared downstream L1/L2 models.
+
+Pass A <= 8 internal targets;
+Pass B <= 7 neighbor families;
+HP-B Bearer / Psi_f / consciousness = READ-ONLY;
+canonical edit = NO.
+~~~
+
+CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
 
 ---
 
@@ -893,34 +940,39 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass over prior SRT concepts and a bounded set of already-retrieved external-domain concepts; produce a three-facing matrix, simplification/conflict map and author decision packet before any canonical edit;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md;
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md;
+CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md (content version v0.2);
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md;
 
 Immediate execution order:
 
 ~~~text
-1. recover current owners + accepted machine analysis for the priority concept cluster;
-2. reconstruct each target under L0-facing / L1-facing / L2-facing views;
-3. classify KEEP / RETYPE / MERGE_CANDIDATE / SPLIT / DOWNSTREAM / SOURCE_ABSORBED / OPEN / RETIRE_CANDIDATE;
-4. apply the same method to a bounded set of already-retrieved source-native concepts from other domains;
-5. produce the Facing matrix + simplification/conflict map + bounded external comparison;
-6. return substantive merge / split / retyping / retirement decisions to the author before any canonical edit.
+1. recover current owners + accepted analysis for FRH-0;
+2. test whether "L0-facing continuity" is fully absorbed by O0 + recurrent reconstitution / One-side history + formed Selection-position;
+3. continue through at most 8 internal target clusters using FACE-L0 / FACE-L1 / FACE-L2;
+4. classify KEEP / RETYPE / MERGE_CANDIDATE / SPLIT / DOWNSTREAM / SOURCE_ABSORBED / OPEN / RETIRE_CANDIDATE;
+5. compare at most 7 source-native neighbor families;
+6. produce OUT-A matrix + OUT-B simplification/conflict map + OUT-C bounded neighbor comparison;
+7. produce OUT-D author decision packet; no canonical edit before author second adjudication.
 ~~~
 
 Research framing:
 
 ~~~text
-L0/L1/L2 = analytic facings, not ontic layers;
-reverse discovery = L2-facing -> L1-facing -> infer L0-facing burden;
-forward test = candidate L0-facing -> discriminable L1 formation -> L2 sediment;
-primitive Selection remains the generativity source; formed L1/L2 structure shapes but does not automatically exhaust later generation;
+L0/L1/L2 = analytic aspects, not ontic layers;
+Facing = method alias / execution discipline, not a new ontology noun;
+reverse discovery = L2-facing -> L1-facing -> infer residual L0-facing burden;
+primitive Selection = source of renewed generativity, not sufficient by itself for this-One continuity;
+forward test = L0-facing structural constraints first; concrete content predictions only through declared downstream models;
+structure-learning / expandable-hypothesis-space models are required baselines where relevant;
+Pass A <= 8; Pass B <= 7;
+HP-B Bearer / Psi_f / consciousness = READ-ONLY;
 non-objectifying method = reconstructible / perturbable / recuttable objectification, not zero objectification;
 broad cross-domain synthesis / third deep well / GRG v0.4 = NO;
 canonical SRT edit = NO during this pass.
 ~~~
 
-The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B remains frozen at noncanonical P3 under §0.3b and is not the active CURRENT NEXT. The corrected Gate / cognition toy-simulation design is retained as a downstream frozen candidate and is not executed under the new Facing reconstruction CURRENT NEXT. GRG fusion lane remains paused; no third rescue domain / BCTB T2 / v0.4 follows from this route.
+The corrected Gate / cognition toy-simulation design remains a downstream frozen candidate and is not executed under this CURRENT NEXT. GRG fusion lane remains paused; BCTB T2 / v0.4 / third rescue domain do not reopen.
 
 ## Historical navigation
 
