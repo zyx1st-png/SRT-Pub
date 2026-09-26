@@ -444,3 +444,157 @@ NEXT AUTHOR FORK
 
 CANONICAL EDIT = NO
 ~~~
+
+
+---
+
+## 13. Further machine refinement — target objectification is not gate objectification
+
+The accepted C wording used "foregrounded high-level gate / objectification" as one compact phrase.
+
+That phrase risks collapsing two distinct transitions.
+
+### L-A — background multilevel gating
+
+Most control constraints remain non-objectified:
+
+~~~text
+sensory / attentional / contextual / affordance / motor / feedback gates
+-> jointly shape what can happen next
+~~~
+
+The system does not need reflective access to these gates.
+
+### L-B — target / intention objectification
+
+A goal such as:
+
+> 我要拿起水杯
+
+can become a foregrounded explicit target.
+
+It need not expose the lower gates that will realize it.
+
+Instead it can function as a coarse higher-order constraint / set point:
+
+~~~text
+foreground target
+-> bias / constrain multilevel gating
+-> lower system solves the implementation details
+~~~
+
+This explains how conscious causation can be real without motor micromanagement.
+
+Important:
+
+~~~text
+foreground target
+!= gate itself necessarily
+~~~
+
+### L-C — gate objectification proper
+
+If execution repeatedly fails, conflicts, or produces bearer-relevant friction, the normally transparent constraint may itself become foregrounded.
+
+Example:
+
+~~~text
+"I want to pick up the cup"
+-> movement fails / trembles / feels blocked
+-> persistent mismatch / friction
+-> "I am tensing my hand / afraid of spilling / overcontrolling"
+~~~
+
+Now the object of consciousness is not only the target.
+
+A control relation / expectation / habitual constraint has itself become available for revision.
+
+This is closer to the 2026-09-25 gate-objectification route:
+
+~~~text
+background gate
+-> friction / consequential deformation
+-> gate enters foreground
+-> reflective revision becomes possible
+~~~
+
+### Consequence
+
+The current architecture should therefore distinguish:
+
+~~~text
+conscious target
+!= conscious gate-objectification
+
+both can influence later gating
+but in different ways.
+~~~
+
+This yields a cleaner agency cycle:
+
+~~~text
+BACKGROUND FIELD
+multilevel gates
+
+-> TARGET OBJECTIFICATION
+"I want X"
+
+-> TOP-DOWN CONSTRAINT
+lower gates reorganize toward X
+
+-> DISTRIBUTED EXECUTION
+
+-> CONSEQUENCE / ERROR / FRICTION
+
+-> if ordinary correction succeeds:
+   gate remains transparent
+   action continues
+
+-> if conflict remains consequential:
+   GATE OBJECTIFICATION
+   the constraint itself becomes a conscious object
+
+-> REFLECTIVE REVISION
+
+-> new gate configuration
+-> new field
+~~~
+
+This machine refinement may be more precise than the earlier C1/C2 binary.
+
+It suggests that conscious action has at least two control functions:
+
+1. **target-setting / constraint propagation**;
+2. **gate exposure / revision when ordinary background control is insufficient**.
+
+Neither function implies that consciousness computes the detailed motor solution.
+
+---
+
+## 14. Candidate interpretation of conscious agency
+
+A stronger but still machine-only synthesis:
+
+> **Conscious agency may be especially useful at interfaces where a distributed system needs either (a) a globally stable coarse target that can constrain many lower processes at once, or (b) the foregrounding of a normally transparent gate so that the gate itself can be revised.**
+
+This gives a possible reason consciousness is sparse rather than continuous micromanagement.
+
+The lower system should remain unconscious where:
+- the target is stable;
+- the gate geometry is well calibrated;
+- prediction / control errors are locally resolvable;
+- habitual execution remains successful.
+
+Conscious foregrounding becomes especially useful where:
+- several local corrections conflict;
+- the current gate produces bearer-relevant friction;
+- a higher-order target must be maintained across multiple subsystems;
+- the gate itself must be reopened.
+
+This is compatible with, but not established by:
+- Global Workspace global availability;
+- cognitive control / PFC-BG gating;
+- hierarchical active inference;
+- metacognitive control.
+
+Novelty remains OPEN.
