@@ -195,9 +195,9 @@ compress stable relations into equivalence / property / boundary structure
 
 CURRENT NEXT must test whether these roles share a nontrivial common kernel or whether "Gate" should split into typed families.
 
-A strong working kernel candidate is now strengthened by explicit author clarification that the bridge is **actively formed**:
+A strong working shared pattern is now strengthened by explicit author clarification that the bridge is **actively formed**:
 
-> **Gate is a selective stabilization process by which a system actively forms and maintains reusable relations across variation, thereby making some differences load-bearing and rendering others safely compressible for later generation and control.**
+> **Bridge formation is a selective stabilization process by which a system actively forms and maintains reusable relations across variation, thereby making some differences load-bearing and rendering others safely compressible for later generation and control. A formed result is called Gate / gating organization only where it acquires the already-routed organization-level gating role.**
 
 Current nontrivial requirements:
 
@@ -739,17 +739,17 @@ For each candidate experiment, specify:
 Use the evidence ladder:
 
 ~~~text
-G1 descriptive geometry
--> G2 predictive geometry
--> G3 causal geometry
--> G4 recursive field reconstitution
+E1 descriptive geometry
+-> E2 predictive geometry
+-> E3 causal geometry
+-> E4 recursive field reconstitution
 ~~~
 
-G4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
+E4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 
-### Supporting GK-1a — Gate genesis vs Gate operation
+### Supporting GK-1a — bridge genesis vs Gate operation
 
 Keep separate:
 
@@ -942,7 +942,7 @@ Do NOT identify them by equation.
 Use a shared audit contract instead:
 
 ~~~text
-GateLike(T)
+StabilizationLike(T)
 requires:
 - selective differentiation;
 - active or history-dependent stabilization;
@@ -955,9 +955,9 @@ requires:
 Then test:
 
 ~~~text
-GateLike(Form) ?
-GateLike(Close) ?
-GateLike(Compose) ?
+StabilizationLike(Form) ?
+StabilizationLike(Close) ?
+StabilizationLike(Compose) ?
 ~~~
 
 This preserves a possible common Gate family without making every constraint Gate-like.
@@ -972,7 +972,7 @@ A bounded simulation design now exists with:
 - B0 static feature baseline;
 - B1 strong action-conditioned latent-state / world-model baseline;
 - B2 object-file / slot + action-transition baseline;
-- typed Gate candidate G = Form -> Close -> Compose;
+- typed architecture arm ARM_TYPED = Form -> Close -> Compose;
 - explicit zero-gain rules.
 
 The simulation only earns Gate increment if it shows more than benchmark fit:
@@ -1072,7 +1072,7 @@ The strongest next question is:
 
 ### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
 
-Do not freeze the earlier toy-world or G2-G4 recutting design yet.
+Do not freeze the earlier toy-world or E2-E4 recutting design yet.
 
 The experimental line remains useful, but the upstream mechanism has changed. A later design must distinguish:
 - local statistical learning;
@@ -1148,7 +1148,7 @@ SRT GAIN
 CURRENT NEXT
 = freeze the corrected strong-baseline toy-simulation package;
   after the freeze package passes, execute that simulation only.
-  No concept expansion, human G2-G4 execution, or canonical Gate hardening before the result.
+  No concept expansion, human E2-E4 execution, or canonical Gate hardening before the result.
 
 CANONICAL EDIT
 = NO
