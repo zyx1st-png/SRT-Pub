@@ -16,6 +16,7 @@ dependency:
   - Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -68,6 +69,49 @@ reshape the next whole-field organization without exhausting its source.
 Dependency arrows here are not temporal arrows.
 
 The programme therefore treats explicit object formation, partition / objectifiability and early coherence judgment as consequences / windows on the deeper field-formation problem.
+
+---
+
+## 1.1 Mechanism refinement — multilevel gating after author acceptance of C
+
+The 2026-09-26 author adjudication adds a stronger mechanism candidate.
+
+The whole field should no longer be treated only as a descriptive reachability geometry.
+
+Current candidate:
+
+~~~text
+distributed gates across multiple levels
+<-> cross-level coordination
+-> whole effective gating configuration
+-> action / objectification / transition field
+~~~
+
+The field geometry is therefore provisionally a system-level consequence / readout, while multilevel gate configuration is a candidate generative mechanism.
+
+The author specifically accepts the direction that a conscious intention can function as a foregrounded higher-order gate / objectification that constrains lower-level distributed execution without specifying its detailed motor algorithm.
+
+Mandatory guards:
+
+~~~text
+consciousness
+!= whole field
+!= central controller
+!= complete motor programme
+
+neural synchrony
+!= field by definition
+
+developmental bioelectric field
+!= EEG field
+!= cognitive gating field
+~~~
+
+The current mechanistic burden is:
+
+> **How do distributed gates become coordinated into one effective field, and how can a coarse foregrounded intention reconfigure that field without containing the detailed lower-level solution?**
+
+
 
 ---
 
@@ -585,15 +629,52 @@ G4 is the strongest neutral target and still does not establish primitive Select
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 
-### CN-3 — field-formation experimental design
+### MG-1 — multilevel gating composition / strongest-neighbor map
 
-Do not freeze the earlier toy-world preregistration yet.
+Before freezing a new experiment, compare:
+- hierarchical motor control;
+- affordance competition;
+- basal-ganglia action gating;
+- cognitive-control / working-memory gating;
+- hierarchical active inference;
+- Global Neuronal Workspace / conscious access;
+- cross-regional temporal coordination;
+- multiscale developmental bioelectric control as architecture analogy only.
 
-The first experiment should target a bounded component of field formation, not merely show learning before labels. Candidate designs must separate:
+Ask:
+- which parts already explain abstract intention without detailed execution?
+- which parts explain distributed gate coordination?
+- which parts explain conscious access but not gate revision?
+- which parts explain gate revision without phenomenality?
+- what, if anything, is added by gate-objectification + recursive writeback?
+
+### MG-2 — conscious gate-objectification bridge
+
+Keep two readings distinct:
+
+~~~text
+C1:
+conscious content IS the operative high-level gate
+
+C2:
+conscious content foregrounds / objectifies a gate or higher-order constraint,
+making it globally available for stabilization, revision or reconfiguration
+~~~
+
+C2 is the safer current machine architecture unless the author explicitly strengthens to C1.
+
+### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
+
+Do not freeze the earlier toy-world or G2-G4 recutting design yet.
+
+The experimental line remains useful, but the upstream mechanism has changed. A later design must distinguish:
 - local statistical learning;
 - global field reorganization;
 - simple salience / value reweighting;
 - latent-state inference;
+- multilevel gate reconfiguration;
+- conscious broadcast alone;
+- conscious gate-objectification / revision;
 - recutting / reachability-geometry change.
 
 ### CN-4 — reuse preformal-coherence tasks
@@ -658,8 +739,10 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= CN-1 whole-field formation map + CN-2 H1/H2/H3 cross-level discriminator
-  + first G2-G4 whole-field recutting design
+= MG-1 multilevel-gating composition map
+  + MG-2 conscious gate-objectification bridge
+  + CN-1/CN-2 retained as supporting architecture
+  + G2-G4 experiment HOLD until the mechanism pass converges
 
 CANONICAL EDIT
 = NO
