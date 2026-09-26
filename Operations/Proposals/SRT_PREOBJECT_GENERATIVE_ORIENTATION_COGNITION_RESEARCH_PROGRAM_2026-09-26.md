@@ -1,0 +1,616 @@
+---
+id: SRT-PREOBJECT-GENERATIVE-ORIENTATION-COGNITION-RESEARCH-PROGRAM-20260926
+type: proposal
+status: active
+canonical: false
+layer: operations
+epistemic_layer: research_program
+claim_mode: preregistration_preparation
+created: 2026-09-26
+updated: 2026-09-26
+priority: current_next
+research_mode: U_to_TEST
+dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+  - Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
+---
+
+# Research programme — pre-object generative orientation of cognition
+
+> **Purpose:** test whether human cognition is better described as objectification emerging from an already organized, continuous generative orientation rather than as global direction assembled only from explicit objects / knowledge / rules.
+>
+> **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
+
+---
+
+## 1. Root hypothesis
+
+### Object-first family
+
+~~~text
+objects / representations / rules
+-> relations among them
+-> global model / attractor / direction
+-> behavior / intuition.
+~~~
+
+### Pre-object generative-orientation family
+
+~~~text
+continuous directional organization
+-> selective normalization / coarse-graining
+-> local objectification
+-> explicit objects / concepts / rules
+-> retention
+-> recursive reshaping of later orientation.
+~~~
+
+The research question is not whether explicit objects exist.
+
+It is:
+
+> **Are explicit objects the primary building blocks of global cognitive direction, or are they stabilized local cuts within a prior continuous organization?**
+
+---
+
+## 2. Neutral working construct
+
+> **Pre-object generative orientation**: a structured, continuous, action- and expectation-sensitive organization that biases what differences become salient, separable, reachable or objectifiable before a complete explicit object / rule representation is available.
+
+Necessary guards:
+
+~~~text
+pre-object
+!= pre-sensory;
+!= contentless;
+!= unconscious by definition;
+!= literal L0 neural space;
+
+orientation
+!= explicit goal;
+!= verbal intention;
+!= fixed attractor endpoint;
+
+generative
+= changes what can become foreground,
+not merely how an already formed object is scored.
+~~~
+
+---
+
+## 3. Candidate structural components
+
+The neutral psychological programme should seek operational counterparts for:
+
+### O1 — directional organization
+
+There is a global / distributed bias in what transitions or interpretations are easier before object resolution is complete.
+
+### O2 — continuity
+
+The organization persists across successive local objectifications and links them into a trajectory.
+
+### O3 — normalization
+
+Some differences are suppressed / treated as equivalent while others become load-bearing.
+
+### O4 — non-objective coding
+
+The organization can be expressed in action readiness, population geometry, field of relevance, transition probability or dynamical coordination without requiring an explicit symbolic object.
+
+### O5 — objectification
+
+An explicit percept / concept / rule is a local stabilized readout / cut within the prior organization.
+
+### O6 — recurrence
+
+Later learned objects / rules / habits can reshape the next orientation.
+
+---
+
+## 4. Competing scientific models
+
+### M0 — object / representation first
+
+Global cognition is adequately explained by:
+- explicit or latent object representations;
+- learned relations among representations;
+- top-down priors defined over those objects.
+
+No additional pre-object orientation is needed.
+
+### M1 — Gestalt organization
+
+Perceptual organization / whole-structure precedes or constrains object decomposition.
+
+Prediction:
+global organization affects local object formation.
+
+### M2 — predictive / Bayesian inference
+
+Priors, context and probabilistic scene structure shape object interpretation.
+
+Prediction:
+context changes object inference before full identification.
+
+Pressure:
+does the model require already object-like hypothesis spaces?
+
+### M3 — ecological-enactive / skilled intentionality
+
+Agents engage a field of relevant affordances shaped by abilities, concerns and action readiness.
+
+Prediction:
+relevance / solicitation structures behavior before reflective object judgment.
+
+### M4 — metastable coordination dynamics
+
+Continuous large-scale neural coordination provides transient global organization from which local cognitive states emerge.
+
+Prediction:
+global dynamical regime precedes / constrains local object resolution.
+
+### M5 — continuous-attractor / manifold family
+
+Low-dimensional continuous dynamics organize trajectories and integrate noisy cues.
+
+Prediction:
+population state geometry can guide local readout without explicit object enumeration.
+
+### M6 — SRT pre-object generative orientation
+
+Only after M1-M5 are fitted.
+
+Candidate added burden:
+- Selection-first objectification;
+- Bearer-relative orientation;
+- structural Expectation;
+- gate geometry;
+- explicit L0/L1/L2 analytic-view recurrence.
+
+M6 must be allowed to add zero incremental value.
+
+---
+
+## 5. Strong neighbor anchors
+
+### Skilled Intentionality / field of relevant affordances
+
+Rietveld / Bruineberg / Kiverstein / colleagues:
+- field of relevant affordances;
+- selective openness;
+- action readiness;
+- optimal grip;
+- concern / skill-relative solicitation.
+
+This is a very strong conceptual neighbor.
+
+### Operative intentionality
+
+Merleau-Ponty lineage:
+- pre-reflective directedness;
+- practical "I can" prior to explicit object-oriented judgment.
+
+### Metastable coordination dynamics
+
+Tognoli & Kelso:
+- dynamic self-assembly;
+- integration + segregation;
+- metastability;
+- flexible transient coordination.
+
+### Predictive processing
+
+Predictive / Bayesian accounts:
+- prior / context influences object and scene processing;
+- current 2026 review literature emphasizes unresolved interpretation of prediction-error signals and the need to specify computation carefully.
+
+### Gestalt
+
+Classical and modern Gestalt:
+- organization / whole-structure is not built simply by summing independent local elements;
+- figure-ground and grouping constrain object formation.
+
+### Attractor / manifold neuroscience
+
+Continuous attractor and integrator models:
+- persistent / low-dimensional dynamics;
+- error correction;
+- cue integration;
+- continuous state trajectories.
+
+Important guard:
+neural attractor success in specific domains does not establish a universal pre-object cognitive field.
+
+---
+
+## 6. Relation to the previous preformal-coherence programme
+
+The previous programme remains useful but is demoted from root construct to assay.
+
+Old root:
+
+~~~text
+people detect coherence before explanation.
+~~~
+
+New placement:
+
+~~~text
+pre-object orientation
+-> incoming theory / percept perturbs organization
+-> fit / mismatch is registered before explicit objectification of the reason
+-> early coherence judgment
+-> later explicit reason / rule / objectification.
+~~~
+
+Therefore "preformal coherence sensitivity" is now:
+
+> **one behavioral window into the deeper pre-object organization.**
+
+Keep its tasks, but reinterpret them.
+
+---
+
+## 7. Main discriminating predictions
+
+A useful programme must distinguish pre-object orientation from hidden object knowledge.
+
+### P1 — orientation before object identification
+
+Global directional / contextual state should predict later object interpretation before participants can identify the relevant object or rule.
+
+### P2 — same objects, different orientation
+
+Hold explicit objects constant while changing:
+- concern;
+- bodily readiness;
+- context;
+- expectation;
+- task set;
+- global dynamics.
+
+Prediction:
+different objects / relations become salient or formable despite same presented object set.
+
+### P3 — unfamiliar labels, preserved orientation
+
+Use novel symbols / nonsense labels.
+
+If global relational orientation survives before object semantics are learned, object-familiarity accounts weaken.
+
+### P4 — orientation perturbation changes objectification
+
+Manipulate a global pattern / dynamical context without altering local item features.
+
+Prediction:
+the resulting object / category / grouping changes.
+
+### P5 — object learning back-shapes orientation
+
+After explicit rule / object learning:
+- later pre-object salience;
+- transition expectation;
+- grouping;
+- action readiness;
+should shift.
+
+This tests recurrence rather than one-way pre-object priority.
+
+### P6 — continuous trajectory better than discrete object graph
+
+For suitable tasks, continuous state-space / dynamical models should predict sequence and transition structure better than models based only on discrete object nodes and explicit rules.
+
+---
+
+## 8. First experimental families
+
+### E1 — scene / gist before object
+
+Use briefly presented scenes:
+- manipulate global scene structure;
+- degrade object identity;
+- measure orientation / expected object location / action readiness before recognition.
+
+Question:
+can global organization shape object formation before object identity is explicit?
+
+### E2 — affordance-field manipulation
+
+Same physical environment, vary:
+- body state;
+- goal / concern;
+- skill;
+- action capability.
+
+Measure:
+- what solicits attention;
+- reachability judgments;
+- movement initiation;
+- later explicit object report.
+
+Question:
+does relevance field shift before explicit object classification?
+
+### E3 — global-structure / local-object dissociation
+
+Create stimuli where:
+- local components are identical;
+- global organization differs.
+
+Measure:
+- object grouping;
+- confidence;
+- reaction time;
+- neural population geometry where possible.
+
+### E4 — novel toy world
+
+Participants learn a minimal environment with:
+- transitions;
+- action consequences;
+- sparse labels.
+
+Before teaching explicit categories, test whether they acquire:
+- transition direction;
+- "near/far" generative relations;
+- likely continuation;
+- anomaly detection.
+
+Then introduce explicit object names / rules and test whether they discretize a previously continuous learned organization.
+
+This is a particularly strong design.
+
+### E5 — theory-shape task
+
+Retain prior local-valid/global-inconsistent passages.
+
+Interpret early mismatch as a downstream readout of a prior generative orientation, not the root faculty.
+
+---
+
+## 9. Candidate formalization families
+
+Do not choose prematurely.
+
+### F1 — vector / flow field
+
+State:
+x(t)
+
+Orientation:
+v(x,t)
+
+Objectification:
+local stabilization / crossing / partition of trajectory.
+
+### F2 — energy / potential landscape
+
+State evolves under a changing landscape.
+
+Guard:
+"energy" is formal unless linked to physical energy.
+
+### F3 — metastable manifold
+
+Cognition occupies transiently coordinated regions without one fixed attractor.
+
+This may fit better than a single attractor.
+
+### F4 — transition graph with continuous latent geometry
+
+Observed objects are discrete emissions from a continuous latent state.
+
+Useful statistical bridge.
+
+### F5 — gate geometry
+
+Represent:
+- equivalence;
+- boundary;
+- neighborhood;
+- accessibility;
+- transition;
+- stability.
+
+Potentially closest to current SRT language.
+
+---
+
+## 10. Magnetic-field analogy translated into testable terms
+
+Author metaphor:
+
+> field first, field-lines / local structure later.
+
+Operational translation:
+
+~~~text
+latent continuous organization exists before explicit object report;
+
+later objectification reveals / discretizes parts of that organization;
+
+successive objectifications remain correlated because they arise from
+the same evolving latent orientation;
+
+learning explicit objects later modifies the latent orientation.
+~~~
+
+This is testable.
+
+Do not test the metaphor literally.
+
+---
+
+## 11. Developmental question
+
+A major consequence of the hypothesis:
+
+> infant / early cognition should not need a mature inventory of explicit objects before showing structured expectation / orientation.
+
+Candidate literatures:
+- statistical learning;
+- predictive expectation;
+- infant event segmentation;
+- object individuation;
+- action / affordance sensitivity.
+
+But the research must distinguish:
+
+~~~text
+early object representation already present
+vs
+pre-object generative orientation.
+~~~
+
+This is a difficult but high-value boundary.
+
+---
+
+## 12. Individual differences — revised interpretation
+
+Individual differences may arise not primarily from "more objects / knowledge".
+
+Candidate dimensions:
+
+- stability of global orientation;
+- flexibility / metastability;
+- sensitivity to structural mismatch;
+- breadth of accessible trajectories;
+- normalization grain;
+- speed of objectification;
+- ability to preserve non-objective orientation without premature closure;
+- ability to re-open an objectified cut;
+- calibration of early directional judgment.
+
+The author's own pattern may later be studied in this space.
+
+No exceptionalism is assumed.
+
+---
+
+## 13. SRT mapping — downstream only
+
+Only after neutral evidence:
+
+~~~text
+primitive Selection / generativity
+x formed Bearer
+x structural Expectation
+x body-world coupling
+x retained organization
+-> L0-facing pre-object generative orientation
+-> gate geometry / normalization
+-> L1 foreground objectification
+-> L2 retention
+-> later L0-facing orientation.
+~~~
+
+"Generative divinity" remains provenance language for primitive generativity / nonclosure, not an empirical cognitive variable.
+
+---
+
+## 14. Immediate CURRENT NEXT
+
+Replace the prior CN-1 / CN-2 framing with:
+
+### CN-1 — root construct / neighbor map
+
+Map:
+- Gestalt;
+- ecological-enactive / Skilled Intentionality;
+- operative intentionality;
+- predictive processing;
+- metastable coordination dynamics;
+- attractor / manifold models;
+- statistical learning;
+- scene gist;
+- object individuation;
+- affordance learning.
+
+Output:
+SAME / OVERLAP / RESIDUAL table.
+
+### CN-2 — object-first vs orientation-first discriminator map
+
+For each candidate experiment, specify:
+- what object-first predicts;
+- what orientation-first predicts;
+- what both predict;
+- what result would absorb the new construct.
+
+### CN-3 — toy-world preregistration
+
+Preferred first test:
+a novel environment with learned transition / consequence structure before explicit object / rule naming.
+
+### CN-4 — reuse preformal-coherence tasks
+
+Use as downstream assay only.
+
+### CN-5 — author naturalistic case later
+
+Do not make it the first empirical target.
+
+---
+
+## 15. Stop-loss
+
+Downgrade the root construct if:
+
+### S1
+
+All "pre-object" effects are fully captured by latent object / category representations.
+
+### S2
+
+Global context has no effect once object-level priors are modeled.
+
+### S3
+
+Continuous / field models do not outperform discrete object-graph models on held-out transitions.
+
+### S4
+
+Apparent pre-object orientation is only response bias / attention / fluency.
+
+### S5
+
+No recurrent back-effect of explicit object learning on later orientation is found.
+
+### S6
+
+SRT language adds no discriminating prediction beyond Gestalt / enactivism / predictive / dynamical accounts.
+
+---
+
+## 16. Current status
+
+~~~text
+ROOT RESEARCH OBJECT
+= pre-object generative orientation of cognition
+
+PREFORMAL COHERENCE SENSITIVITY
+= downstream behavioral assay
+
+OBJECT-FIRST COGNITION
+= explicit comparator family
+
+FIELD / ATTRACTOR / METASTABLE / GATE GEOMETRY
+= candidate model families, not settled ontology
+
+AUTHOR CASE
+= deferred naturalistic case
+
+SRT GAIN
+= OPEN
+
+CURRENT NEXT
+= CN-1 root construct map + CN-2 discriminator map
+
+CANONICAL EDIT
+= NO
+~~~

@@ -416,32 +416,41 @@ When answering or editing a non-simple SRT question:
 
 ---
 
-## 12b. Route: Human Intuition / Preformal Coherence / Theoretical-Shape Judgment
+## 12b. Route: Pre-object Generative Orientation / Human Intuition / Objectification
 
-**Use when the query mentions**: intuition, hunch, "something is wrong", coherence before explanation, theoretical shape, semantic coherence, gist, expert intuition, implicit learning, statistical learning, feeling of rightness, root-level correction, early mismatch detection, articulation lag.
+**Use when the query mentions**: intuition, hunch, "something is wrong", coherence before explanation, pre-object cognition, attractor, field, global orientation, theoretical shape, objectification, affordance field, operative intentionality, metastability, gist before object, expectation before explicit rule.
 
 ### Primary
 
-- \`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md\`
-- \`Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md\`
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+- Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+
+### Downstream assay
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md
+- Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
 
 ### Secondary
 
-- \`Operations/Audits/SRT_PR1063_HPB_MINIMAL_TOPOLOGY_GRG_MULTIVIEW_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md\`（naturalistic-theory-correction provenance; not evidence of a universal trait）
-- \`Operations/Audits/SRT_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_CONVERGENCE_AUDIT_2026-09-26.md\`
-- \`Glossary/SRT_Live_Term_Router.md\`（only if a durable new term is later proposed）
-- \`SRT_EXP_MEASURE_MAP.md\`（only after neutral construct / protocol hardening）
-- \`_SRT_PSI_F_CANONICAL.md\`（only for downstream optional SRT mapping）
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_VERTICAL_GATING_GLUE_GENERATIVE_DIVINITY_2026-09-24.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+- Operations/Proposals/SRT_GRG_MULTIVIEW_OPERATIONAL_REARCHITECTURE_PACKET_2026-09-25.md
+- Glossary/SRT_Live_Term_Router.md only if a durable new SRT term is proposed
+- SRT_EXP_MEASURE_MAP.md after neutral construct hardening
 
 ### Boundary
 
-- **Preformal coherence sensitivity is a working neutral research construct, not canonical SRT terminology.**
-- Do not infer a unique author faculty from autobiographical / repository examples.
-- Do not equate confidence, familiarity, processing fluency, gist, expertise, statistical learning or insight with the target without comparison.
-- The critical temporal burden is: discrimination precedes adequate articulation and predicts something independently checkable.
-- Author dialogue history is a naturalistic case; all eligible successes, reversals and false alarms must be sampled under a frozen protocol.
-- SRT mapping is downstream and optional. Existing cognitive-science models must be allowed to fully absorb the effect.
-- Single intuition tasks often have weak psychometric reliability; use multi-task / aligned-structure designs before making trait claims.
+- **Root target = pre-object generative orientation, not preformal coherence judgment.**
+- Do not assume cognition first builds an inventory of explicit objects / rules and only then constructs the relevant attractor / direction.
+- Explicit objects are candidate later stabilized cuts / readouts within an already-directed process; retained objects can recursively reshape later orientation.
+- pre-object does not mean pre-sensory, empty, mystical or outside body-world coupling.
+- field, attractor, metastable manifold, and gate geometry are candidate formal families; none is yet the established ontology.
+- Primitive Selection / generativity, Bearer and structural Expectation occupy different levels and must not be flattened into one cognitive variable.
+- Generative divinity is provenance language for generativity / nonclosure, not supernatural agency.
+- Strong neighbors include Gestalt, ecological-enactive Skilled Intentionality / field of relevant affordances, operative intentionality, predictive processing, metastable coordination dynamics and attractor/manifold neuroscience.
+- Preformal coherence sensitivity is a downstream assay: early fit / mismatch may reveal perturbation of the prior orientation before the violated relation becomes explicit.
+- SRT mapping is downstream and optional. Existing cognitive-science accounts must be allowed to absorb the effect.
 - This route is the active CURRENT NEXT as of 2026-09-26; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
 
 ---

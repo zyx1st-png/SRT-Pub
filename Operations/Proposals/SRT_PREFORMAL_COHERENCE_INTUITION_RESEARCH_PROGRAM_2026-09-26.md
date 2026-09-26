@@ -8,7 +8,7 @@ epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
 updated: 2026-09-26
-priority: current_next
+priority: downstream_assay
 research_mode: U_to_TEST
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md
@@ -17,6 +17,9 @@ tags: [Intuition, Coherence, Preformal, ImplicitLearning, Gist, Expertise, Indiv
 ---
 
 # Research programme — preformal coherence sensitivity / theoretical-shape intuition
+
+> **ROOT-SCOPE SUPERSESSION — 2026-09-26:** the author subsequently corrected the root cognitive architecture. This programme remains active only as a **downstream behavioral assay**. The controlling CURRENT NEXT is Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md, with source 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md. Do not infer that objects / knowledge / rules are the primary substrate from which the relevant attractor / direction is first assembled.
+
 
 > **Purpose:** turn the author's universal-first intuition into a falsifiable cognitive research programme.
 >
