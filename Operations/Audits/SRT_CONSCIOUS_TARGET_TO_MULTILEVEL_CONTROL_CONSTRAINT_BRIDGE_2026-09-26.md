@@ -465,3 +465,251 @@ NEXT
 CANONICAL EDIT
 = NO
 ~~~
+
+
+---
+
+## 12. Second correction — control efficacy does not require bearer ownership
+
+Rapid instructed task learning is a strong counterexample to any architecture that makes bearer-owned concern necessary for basic target-to-control conversion.
+
+A human can receive a novel externally supplied rule and rapidly reorganize behavior around it.
+
+Therefore:
+
+~~~text
+externally instructed target
+-> can gain control efficacy
+
+without proving:
+-> bearer-owned concern
+-> intrinsic stake
+-> subject-level authorship
+~~~
+
+This matches the existing agency guard:
+
+~~~text
+control efficacy
+!= authorship
+!= stake ownership
+!= subjecthood
+~~~
+
+### Consequence for the present architecture
+
+Do not put Bearer / Concern inside the minimal mechanism that converts a target into a structuring bias.
+
+A safer decomposition is:
+
+~~~text
+MINIMAL CONTROL ROUTE
+
+target representation / instruction
++ maintenance
++ learned task / sensorimotor mappings
++ control allocation
+-> structuring bias
+-> multilevel gate reconfiguration
+-> behavior
+~~~
+
+Then separately:
+
+~~~text
+AGENCY / OWNERSHIP THICKENING
+
+continuing One / Bearer
++ concern / stake
++ self-related access
++ consequence return
++ history writeback
++ revision
+-> target / action counts as mine in a stronger sense
+~~~
+
+This is a major anti-overloading correction.
+
+---
+
+## 13. External instruction clarifies the 'cup' example
+
+Compare two cases.
+
+### Case A — externally assigned target
+
+An experimenter says:
+
+> "When the green light appears, pick up the cup."
+
+The rule can rapidly guide behavior.
+
+The target has control efficacy.
+
+But that alone does not tell us:
+- whether the target matters to the person;
+- whether the person endorses it;
+- whether the consequence reshapes a bearer-level concern;
+- whether the action expresses autonomous agency.
+
+### Case B — bearer-relevant target
+
+The person forms:
+
+> "I need to pick up the cup because I am thirsty."
+
+Now the target may be tied to:
+- bodily state;
+- concern;
+- expectation;
+- self-relevant consequence;
+- future correction.
+
+Both can use similar cognitive-control machinery.
+
+The difference is not basic gating efficacy.
+
+The difference is how the target is indexed into the continuing organization and where consequences land.
+
+Therefore:
+
+> **Bearer / Concern should qualify ownership, mattering and writeback — not be used as a universal prerequisite for top-down control.**
+
+---
+
+## 14. Access -> control -> ownership should remain three separate questions
+
+Current machine decomposition:
+
+~~~text
+ACCESS:
+is the target consciously / globally available?
+
+CONTROL:
+does the target structurally bias later selection and gating?
+
+OWNERSHIP:
+is that direction integrated into the continuing bearer /
+concern / consequence structure as its own?
+~~~
+
+Possible combinations include:
+
+| Access | Control | Ownership | Example class |
+|---|---|---|---|
+| high | low | low | consciously noticed irrelevant content |
+| high | high | low / weak | externally instructed task |
+| low | high | low / unclear | automatic priming / trained bias |
+| low | high | high-ish | skilled pre-reflective action |
+| high | high | high | deliberate self-endorsed action candidate |
+
+The table is illustrative, not a formal taxonomy.
+
+This separation prevents the following collapses:
+
+~~~text
+consciousness = control
+control = agency
+agency = subjecthood
+task relevance = concern
+goal pursuit = bearer ownership
+~~~
+
+---
+
+## 15. Revised role of structural Expectation
+
+Structural Expectation should also not be forced into every low-level control event.
+
+A narrower use:
+
+> **Expectation becomes especially relevant when the target expresses a prospective organization of what should / can happen next, and that prospective structure persists across lower-level execution and correction.**
+
+Thus:
+
+~~~text
+simple instructed rule
+may guide action
+without paying the full structural-Expectation burden;
+
+self-maintained prospective target
+may recruit structural Expectation
+as a higher-order organizing constraint.
+~~~
+
+This distinction remains OPEN and should be checked against the 2026-09-20 expectation owner before hardening.
+
+---
+
+## 16. Strongest current architecture
+
+The action line now has three layers.
+
+### Layer 1 — control mechanics
+
+~~~text
+target / instruction
+-> maintenance
+-> control allocation
+-> structuring bias
+-> multilevel gating
+-> execution
+~~~
+
+Strongly mature-neighbor paid.
+
+### Layer 2 — conscious access and revision
+
+~~~text
+selected target
+-> conscious / global access where present
+-> stable cross-system availability
+
+persistent control conflict
+-> gate / expectation becomes foreground
+-> reflective revision
+~~~
+
+Strongly overlaps GNW / metacognitive / cognitive-control theories.
+
+### Layer 3 — bearer-owned agency
+
+~~~text
+direction belongs to a continuing One / Bearer
++ matters through concern / stake
++ consequences return to same continuing organization
++ history changes later selection
+-> stronger agency / authorship candidate
+~~~
+
+This is where SRT-specific typing may be most useful, but distinctiveness remains unestablished.
+
+---
+
+## 17. Revised next question
+
+The question should no longer be:
+
+> How does consciousness control behavior?
+
+Nor:
+
+> How does Bearer create the control field?
+
+Use:
+
+> **What converts an accessible target into a control-effective structuring bias, and what additional conditions convert that controlled direction into bearer-owned agency?**
+
+This creates a clean two-step research programme:
+
+~~~text
+STEP A
+access / representation
+-> control efficacy
+
+STEP B
+control efficacy
+-> ownership / agency / consequence-indexed revision
+~~~
+
+Do not require Step B to explain Step A.
