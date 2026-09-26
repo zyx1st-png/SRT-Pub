@@ -494,15 +494,15 @@ without becoming an all-purpose synonym for learning or constraint.
 
 ---
 
-## 15. Gate genesis vs Gate use
+## 15. Bridge genesis vs Gate use
 
 The active-formation clarification resolves part of the earlier pass / bind / coarse-grain tension.
 
 ### Genesis
 
 ~~~text
-Gate formation
-= active construction / stabilization of a reusable relation
+Bridge formation
+= active construction / stabilization of a reusable relation that may yield a formed gating organization
 ~~~
 
 ### Use
