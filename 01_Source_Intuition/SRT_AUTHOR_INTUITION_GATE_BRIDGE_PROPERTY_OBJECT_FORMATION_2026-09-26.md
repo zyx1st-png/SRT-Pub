@@ -506,3 +506,20 @@ This does not yet authorize:
 - identification of Gate formation with primitive Selection;
 - a universal stability-maximization principle;
 - identification of bridge formation with consciousness or Bearer.
+
+---
+
+## 18. Directional acceptance of the bridge-drive decomposition
+
+After the machine separated the roles of relevance / Concern, structural Expectation, active selective coupling, Selection-facing actualisation, friction / mismatch, world feedback, retention / L2, and Bearer-indexed consequence return, the author replied:
+
+> **「认同，继续」**
+
+This records directional acceptance of the decomposition and authorizes the next bounded pressure test:
+
+> **Can a simple property such as graspability emerge from active bridge formation without presupposing an already formed object?**
+
+Guardrails remain:
+- the decomposition is not yet canonical;
+- no single term is allowed to absorb the whole bridge-genesis cycle;
+- property formation must be tested without smuggling in an object token at the start.
