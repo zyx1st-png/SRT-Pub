@@ -423,7 +423,7 @@ behavioral recutting geometry
 
 with preregistered mapping.
 
-A neural geometry effect by itself is G1, not E3/E4.
+A neural geometry effect by itself is E1, not E3/E4.
 
 ---
 
