@@ -105,6 +105,87 @@ But mature relational learning does not imply:
 
 ---
 
+## 3A. Historical lineage pressure — direct predecessors
+
+The modern invariant / relational-category comparisons above are not sufficient. The active bridge -> property -> rich-object route sits inside a much older lineage that must be treated as strong absorption pressure.
+
+### Piaget — constructive object permanence / displacement groups
+
+Piaget's *La construction du réel chez l'enfant* (1937) explicitly treats permanent-object construction as gradual, action-linked, and inseparable from organizing displacements, space, time and causality. The object is not simply given whole at the start.
+
+Pressure on the present route:
+
+~~~text
+active sensorimotor coordination
++ displacement structure
+-> constructed object permanence
+~~~
+
+is historically mature-neighbor paid.
+
+### Poincaré -> Cassirer — transformation / group structure
+
+The Poincaré / transformation-group lineage and Cassirer's 1944 essay *The Concept of Group and the Theory of Perception* place perceptual identity in invariance across structured transformations rather than in cataloguing unrelated appearances.
+
+Pressure:
+
+~~~text
+identity through transformation invariance / group structure
+~~~
+
+is not an SRT-specific increment.
+
+### von Foerster — object as token for eigen-behavior
+
+Heinz von Foerster's 1976 *Objects: Tokens for (Eigen-)Behaviors* is an especially close historical neighbor: stable recursive sensorimotor / cognitive behavior can yield the token we call an object.
+
+Pressure:
+
+~~~text
+recursive interaction / stable eigen-behavior
+-> object token
+~~~
+
+directly absorbs much of the bridge / closure intuition unless the current programme shows additional typed work.
+
+### O'Regan & Noë — sensorimotor contingencies
+
+O'Regan & Noë (2001), DOI 10.1017/S0140525X01000115, treat seeing as skilled activity structured by sensorimotor contingencies rather than passive recovery of a complete internal picture.
+
+Pressure:
+
+~~~text
+active mastery of lawful sensorimotor transformation
+-> perceptual structure
+~~~
+
+strongly absorbs "active bridge formation" at the perception level.
+
+### Gibson — affordances
+
+Gibson's ecological line makes actionable structure relational between organism and environment rather than an intrinsic label attached to a pre-given object.
+
+Pressure:
+
+~~~text
+agent-environment relation
+-> actionable property / affordance
+~~~
+
+strongly absorbs the graspability example.
+
+### Current historical verdict
+
+The present package should therefore claim **reorganization / typed integration**, not novelty, unless the simulation shows incremental work beyond these lineages and modern object-centric / sensorimotor models.
+
+The remaining candidate increment is narrower:
+
+> active bridge formation, formed organization-level gating, thin-index / relational closure, cross-closure composition, and recursive change of later selectability are tested in one typed architecture with explicit zero-gain rules.
+
+If that package is absorbed by strong baselines, historical-neighbor debt is paid by recording ZERO GAIN.
+
+---
+
 ## 4. Formal family A — invariant under transformation
 
 Let states be s in S and admissible transformations be t in T.
