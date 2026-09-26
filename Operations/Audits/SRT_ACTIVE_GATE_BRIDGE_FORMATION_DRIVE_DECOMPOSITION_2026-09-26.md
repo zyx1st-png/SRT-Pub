@@ -46,7 +46,8 @@ Working role map:
 | Role | Candidate SRT-facing construct | What it contributes | What it does NOT do alone |
 |---|---|---|---|
 | difference becomes worth coupling | selective sensitivity / attention; Concern where applicable | relevance / priority | does not create the bridge |
-| some continuation counts as better fit | structural Expectation | directional horizon | does not execute the coupling |
+| prospective continuation is differentially shaped | structural Expectation | non-flat prospective shaping; may be embodied or model-mediated | does not imply an explicit goal or execute the coupling |
+| an explicit task target is currently maintained | current goal / target where present | task-level control condition | is not structural Expectation by identity |
 | one coupling is actually enacted | Selection / actualisation | commitment / realization | does not by itself explain why this coupling was preferred |
 | failed relation resists stabilization | friction / mismatch / world resistance | correction pressure | does not specify the target relation by itself |
 | successful relation persists | plasticity / history / L2 sediment | retention / reuse | does not explain first formation |
@@ -240,16 +241,16 @@ This is too weak if 'Selection' merely redescribes the fact that one coupling be
 
 Current safe SRT-facing role:
 
-> **Selection marks the actual commitment / realization of a provisional coupling among non-equivalent possibilities; it does not by itself supply the reason, goal or learning signal that made that coupling attractive.**
+> **At the formed implementation layer, Selection-facing actualisation marks that a non-neutral coupling becomes actualised without presupposing a completed menu of alternatives. It does not by itself supply the reason, goal or learning signal that shaped the coupling conditions.**
 
 Thus:
 
 ~~~text
-relevance / expectation / current constraints
--> candidate coupling landscape
+relevance / structural Expectation / explicit current target where present / current constraints
+-> locally generated coupling conditions
 
-Selection
--> one coupling is enacted
+Selection-facing formed actualisation
+-> a non-neutral coupling becomes actualised without a pre-given completed option set
 
 feedback / friction
 -> enacted coupling is retained, revised or abandoned
