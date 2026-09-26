@@ -316,3 +316,219 @@ Before further experiment design:
 4. only then decide whether Gate should remain one concept or split into typed families.
 
 CANONICAL EDIT = NO
+
+---
+
+## 12. Active-formation correction — relation detection is too weak
+
+The author explicitly clarified that the bridge connection is actively formed.
+
+This changes the neutral scientific translation.
+
+Do NOT use:
+
+~~~text
+pre-existing stable relation
+-> passive detection
+-> invariant label
+-> object
+~~~
+
+Use instead:
+
+~~~text
+variation / encounter
+-> active sampling / selection
+-> selective coupling
+-> recurrent traversal
+-> feedback-sensitive correction
+-> bridge stabilization
+-> reusable invariant / property candidate
+-> relational closure / object candidate
+~~~
+
+The system is therefore not merely estimating a relation.
+It is participating in making that relation reliable enough to become future control structure.
+
+---
+
+## 13. Creation must be typed — not ex nihilo
+
+'Active formation' has at least three possible readings.
+
+### AF-1 — discovery-only
+
+The relation already exists fully formed; the system merely estimates it.
+
+This is now too weak for the author intuition.
+
+### AF-2 — interaction-dependent construction
+
+The environment supplies lawful resistance / affordances, but the operative bridge exists only after the system actively samples, couples, calibrates, and stabilizes a usable transformation relation.
+
+This is the current safest reading.
+
+### AF-3 — unconstrained invention
+
+The system can impose any relation independently of world resistance.
+
+This is NOT licensed.
+
+Current disposition:
+
+~~~text
+AF-1 = insufficient
+AF-2 = preferred working interpretation
+AF-3 = rejected
+~~~
+
+---
+
+## 14. Scientific neighbor pressure on active formation
+
+Active perception and sensorimotor work strongly pressure any novelty claim.
+
+Relevant mature results / frameworks include:
+- active exploration changes perceptual learning even when passive observers receive the same sensory sequence;
+- sensorimotor approaches treat perceptual invariants as action-dependent regularities;
+- action-perception coupling literature treats motor behavior as shaping later perceptual processing;
+- Hebbian + predictive plasticity models can learn invariant object representations rather than merely read out pre-installed invariance.
+
+Therefore:
+
+~~~text
+active interaction helps create stable perceptual structure
+= mature-neighbor paid
+~~~
+
+The open SRT burden is not active learning per se.
+
+It is whether one typed selective-stabilization architecture can connect:
+- formation of usable state-to-state bridges;
+- later pass / suppress gating;
+- coarse-graining into properties;
+- object closure;
+- reactivation of object structure for action control;
+without becoming an all-purpose synonym for learning or constraint.
+
+---
+
+## 15. Gate genesis vs Gate use
+
+The active-formation clarification resolves part of the earlier pass / bind / coarse-grain tension.
+
+### Genesis
+
+~~~text
+Gate formation
+= active construction / stabilization of a reusable relation
+~~~
+
+### Use
+
+~~~text
+Gate operation
+= current use of formed relations to
+  permit / suppress / weight / classify / predict / guide
+~~~
+
+### Sedimentation
+
+~~~text
+repeated successful operation
+-> lower maintenance burden
+-> relation becomes transparent / habitual
+-> property / object looks intrinsic / given
+~~~
+
+Thus G-pass and G-bind need not be the same event.
+A pass/suppress gate may depend on bridge structure formed earlier.
+
+---
+
+## 16. Revised weakest nontrivial Gate kernel
+
+Previous candidate:
+
+> stabilize distinctions and transformations such that some differences remain load-bearing while others become safely compressible for future generation.
+
+After author clarification, strengthen to:
+
+> **Gate is a selective stabilization process by which a system actively forms and maintains reusable relations across variation, thereby making some differences load-bearing and rendering others safely compressible for later generation and control.**
+
+This is still machine wording, not canonical.
+
+It has four nontrivial requirements:
+
+### K1 — selectivity
+Not every possible relation is stabilized.
+
+### K2 — active formation / maintenance
+The relation depends on recurrent system participation, not passive co-occurrence alone.
+
+### K3 — perturbation-sensitive usability
+The bridge remains usable across a declared range of changes and fails outside it.
+
+### K4 — future efficacy
+The formed bridge changes later prediction, grouping, transition or action.
+
+If any generic correlation satisfies the definition, the kernel is too weak.
+
+---
+
+## 17. Stronger content -> control bridge
+
+The target-to-control problem can now be reformulated.
+
+A mature object target is not just a descriptive representation.
+It may be an access point into a set of actively formed bridges that already encode how the system can remain coupled to that object across transformations.
+
+Example:
+
+~~~text
+'cup'
+-> stable view-change bridges
+-> reach / grasp bridges
+-> expected weight / resistance bridges
+-> lift / tilt / drink bridges
+-> correction under slip / mismatch
+~~~
+
+Foregrounding 'pick up the cup' can therefore:
+
+~~~text
+reactivate a bridge network
+-> change multilevel gating
+-> constrain distributed execution
+~~~
+
+This provides a concrete candidate for:
+
+~~~text
+content
+-> structural constraint
+~~~
+
+without making the conscious content a full motor program.
+
+---
+
+## 18. Revised anti-unification test
+
+The programme should now test a sharper question:
+
+> **Can pass/suppress gating be derived as the momentary use of actively formed bridge structure, while property/object formation is the longer-timescale stabilization and compression of that same structure?**
+
+If YES, Gate may have a genuine multiscale kernel.
+
+If NO, split:
+
+~~~text
+control gating
+relation formation
+representation / coarse-graining
+~~~
+
+rather than forcing one umbrella concept.
+
+CANONICAL EDIT = NO
