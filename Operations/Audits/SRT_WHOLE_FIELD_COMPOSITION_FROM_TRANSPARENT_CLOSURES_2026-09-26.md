@@ -19,7 +19,7 @@ tags: [WholeField, GateComposition, TransparentClosure, Metastability, Affordanc
 
 # Whole-field composition from transparent closures
 
-> Goal: derive a whole-field architecture from lower-level Gate formation / closure without introducing 'field' as an independent primitive or merely repeating the word Gate at every scale.
+> Goal: derive a whole-field architecture from lower-level bridge formation / formed closure without introducing 'field' as an independent primitive or merely repeating the word Gate at every scale.
 
 ## 0. Starting point
 
@@ -299,7 +299,7 @@ current compatibility topology
 
 So:
 
-> **field and local Gate formation are recursively co-constituting at different analytic scales.**
+> **field and local bridge formation are recursively co-constituting at different analytic scales.**
 
 Do not interpret this as temporal simultaneity in every implementation.
 
@@ -401,7 +401,7 @@ many distributed processes form one context-sensitive whole
 That is mature-neighbor paid.
 
 Potential SRT value remains in typed integration of:
-- active Gate genesis;
+- active bridge genesis;
 - objectification / transparency;
 - history-conditioned future selectability;
 - gate-objectification / revision;
@@ -488,7 +488,7 @@ multilevel Gate configuration
 Now:
 
 ~~~text
-active Gate genesis
+active bridge genesis
 -> reciprocal closures
 -> transparency
 -> closure composition
