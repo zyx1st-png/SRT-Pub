@@ -8,7 +8,7 @@ epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
 updated: 2026-09-26
-priority: current_next
+priority: high
 research_mode: U_to_TEST
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
@@ -25,6 +25,8 @@ dependency:
   - Operations/Audits/SRT_WHOLE_FIELD_COMPOSITION_FROM_TRANSPARENT_CLOSURES_2026-09-26.md
   - Operations/Audits/SRT_GATE_TYPED_OPERATOR_MINIMAL_FORMALIZATION_2026-09-26.md
   - Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md
+  - Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -33,6 +35,34 @@ tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeomet
 > **Purpose:** investigate how a unified, continuous, generative and normalizing L0-facing cognitive orientation / attractor field is formed, maintained and recursively reshaped, and how local objectifications arise within it. Temporal object-first vs orientation-first ordering is a secondary comparator, not the root question.
 >
 > **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
+
+## 0.0 Post-#1066 routing update — Facing reconstruction supersedes this programme's CURRENT NEXT
+
+Later on 2026-09-26, the author explicitly redirected the single repository `CURRENT NEXT` to:
+
+`Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md`.
+
+Controlling source:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md`.
+
+Therefore:
+
+~~~text
+this cognition / gating programme
+= RETAINED / FROZEN RESEARCH PACKAGE
+
+toy simulation
+= RETAINED DOWNSTREAM CANDIDATE
+
+toy simulation execution
+= NOT CURRENT NEXT
+
+Facing reconstruction / simplification pass
+= SINGLE CURRENT NEXT
+~~~
+
+The older D-3 and final CURRENT NEXT wording below are retained only after being explicitly marked superseded; they no longer control repository execution.
 
 ---
 
@@ -53,10 +83,12 @@ D-2
   Active relation-building is "bridge formation / relation formation",
   not Gate by lexical identity.
 
-D-3
-= exactly ONE CURRENT NEXT:
+D-3 — HISTORICAL #1066 FREEZE ROUTE / SUPERSEDED LATER 2026-09-26
+= at the time of the package freeze, the single CURRENT NEXT was:
   freeze the corrected strong-baseline toy-simulation package,
   then execute only after the freeze package passes.
+
+Later author instruction supersedes this execution route with the Facing reconstruction / simplification pass.
 
 D-4
 = use C2':
@@ -65,7 +97,7 @@ D-4
   itself becomes foreground_obj under persistent consequential conflict.
 ~~~
 
-No new theory construct, operator family, evidence ladder, or CURRENT NEXT may be added before the toy-simulation result unless required to repair a contradiction or governance defect.
+Historical freeze guard: no new theory construct, operator family or evidence ladder was to be added inside this frozen package before the toy-simulation result. The later author-owned Facing reconstruction route supersedes the execution prohibition at repository level without reopening this package for uncontrolled concept expansion.
 
 All CN / MG / GK / H / W / AF / C1-C2 numbering below is **provenance / supporting work-package notation only**. It does not create additional CURRENT NEXT items or repository routing authority.
 
@@ -1147,9 +1179,11 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= freeze the corrected strong-baseline toy-simulation package;
-  after the freeze package passes, execute that simulation only.
-  No concept expansion, human E2-E4 execution, or canonical Gate hardening before the result.
+= SUPERSEDED BY STATUS + Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md.
+
+TOY SIMULATION
+= retained downstream frozen candidate;
+  do not execute under the new CURRENT NEXT unless later re-authorized.
 
 CANONICAL EDIT
 = NO

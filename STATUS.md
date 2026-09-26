@@ -108,7 +108,7 @@ explicit objects / knowledge / rules = later stabilized cuts that can recursivel
 individual differences = downstream empirical question;
 author exceptionalism = NOT ASSUMED;
 SRT explanatory gain = OPEN;
-CURRENT NEXT = freeze the corrected strong-baseline cognition / bridge / gating toy-simulation package; after freeze passes, execute that simulation only;
+CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass over prior SRT concepts and a bounded set of already-retrieved external-domain concepts; produce a three-facing matrix, simplification/conflict map and author decision packet before any canonical edit;
 canonical edit = NO.
 ~~~
 
@@ -893,33 +893,34 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = freeze the corrected strong-baseline cognition / bridge / gating toy-simulation package; after freeze passes, execute that simulation only;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md;
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md;
+CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass over prior SRT concepts and a bounded set of already-retrieved external-domain concepts; produce a three-facing matrix, simplification/conflict map and author decision packet before any canonical edit;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md;
 
 Immediate execution order:
 
 ~~~text
-1. corrective convergence / term routing / strong-baseline freeze;
-2. freeze environment, learner inputs, baselines, tuning-compute budgets, held-out splits, metrics, zero-gain rules and seeds;
-3. execute the frozen toy simulation only;
-4. human E2-E4 and further concept expansion remain HOLD until the simulation verdict.
+1. recover current owners + accepted machine analysis for the priority concept cluster;
+2. reconstruct each target under L0-facing / L1-facing / L2-facing views;
+3. classify KEEP / RETYPE / MERGE_CANDIDATE / SPLIT / DOWNSTREAM / SOURCE_ABSORBED / OPEN / RETIRE_CANDIDATE;
+4. apply the same method to a bounded set of already-retrieved source-native concepts from other domains;
+5. produce the Facing matrix + simplification/conflict map + bounded external comparison;
+6. return substantive merge / split / retyping / retirement decisions to the author before any canonical edit.
 ~~~
 
 Research framing:
 
 ~~~text
-cognition-level orientation first;
-explicit objectification second;
-retention recursively reshapes later orientation;
-universal architecture first;
-individual differences second;
-author case = later naturalistic case, not privileged evidence;
-SRT mapping = downstream optional interpretation;
-canonical SRT edit = NO.
+L0/L1/L2 = analytic facings, not ontic layers;
+reverse discovery = L2-facing -> L1-facing -> infer L0-facing burden;
+forward test = candidate L0-facing -> discriminable L1 formation -> L2 sediment;
+primitive Selection remains the generativity source; formed L1/L2 structure shapes but does not automatically exhaust later generation;
+non-objectifying method = reconstructible / perturbable / recuttable objectification, not zero objectification;
+broad cross-domain synthesis / third deep well / GRG v0.4 = NO;
+canonical SRT edit = NO during this pass.
 ~~~
 
-The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B remains frozen at noncanonical P3 under §0.3b and is not the active CURRENT NEXT. GRG fusion lane remains paused; no third rescue domain / BCTB T2 / v0.4 follows from this cognitive research route.
+The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B remains frozen at noncanonical P3 under §0.3b and is not the active CURRENT NEXT. The corrected Gate / cognition toy-simulation design is retained as a downstream frozen candidate and is not executed under the new Facing reconstruction CURRENT NEXT. GRG fusion lane remains paused; no third rescue domain / BCTB T2 / v0.4 follows from this route.
 
 ## Historical navigation
 
