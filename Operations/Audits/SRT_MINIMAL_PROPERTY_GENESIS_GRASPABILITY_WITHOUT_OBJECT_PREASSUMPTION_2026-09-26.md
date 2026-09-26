@@ -235,6 +235,97 @@ Representative sources:
 
 ---
 
+
+---
+
+## 6A. Correction — property before *rich object* does not imply property before every object index
+
+PH-IND01 and the object-individuation literature force a correction to any universal reading of:
+
+~~~text
+property
+-> object
+~~~
+
+A system can maintain a thin object index:
+
+~~~text
+this one
+-> still this one
+~~~
+
+before it has a rich answer to:
+
+~~~text
+what is this?
+what properties does it have?
+what kind is it?
+~~~
+
+Representative sources:
+- Croteau, Cheries & Xu 2026, *The development of kind concepts: Insights from object individuation*, Psychological Review 133(1):134–155. DOI 10.1037/rev0000527.
+- Xu 1999, *Object individuation and object identity in infancy: the role of spatiotemporal information, object property information, and language*, Acta Psychologica 102(2–3):113–136.
+- Leslie, Xu, Tremoulet & Scholl 1998, *Indexing and the object concept: developing 'what' and 'where' systems*, Trends in Cognitive Sciences 2(1):10–18. DOI 10.1016/S1364-6613(97)01113-3.
+
+Therefore distinguish:
+
+~~~text
+O-thin
+= minimal continuing index / tracked locus
+  'this one / still this one'
+
+P-rel
+= reusable actively stabilized relation / property
+  such as graspability
+
+O-rich
+= multi-property / multi-bridge object closure
+  with stable boundary, predictive identity and richer identification
+~~~
+
+The safe claim becomes:
+
+> **A relational property can precede or remain independent of a rich object concept, but it need not precede every form of minimal object individuation.**
+
+For the graspability case, an ephemeral or thin local index may be required simply to keep a target of interaction coherent during one active traversal.
+
+This does NOT smuggle in rich objecthood.
+
+---
+
+## 6B. Revised co-development hypothesis
+
+A more realistic generative architecture is:
+
+~~~text
+sensorimotor variation
+-> transient selective indexing / common-fate tracking
+   +
+   active bridge formation
+-> thin locus + reusable relation co-develop
+-> bridge becomes property-like
+-> multiple properties bind / reinstantiate around the same thin locus
+-> richer object closure
+~~~
+
+Thus thin individuation and property formation may be partially parallel rather than strictly sequential.
+
+Important distinction:
+
+~~~text
+indexing asks:
+which continuing locus?
+
+property asks:
+what reusable relation holds?
+
+rich objectification asks:
+why should several relations be bound as one continuing thing?
+~~~
+
+This correction preserves the author's deeper intuition that rich objecthood is achieved rather than primitive, while avoiding conflict with evidence for early object indexing.
+
+
 ## 7. But graspability alone does not generate an object
 
 One property is not enough.
@@ -462,8 +553,11 @@ Therefore the current value is integration / generative ordering, not establishe
 ## 15. Current verdict
 
 ~~~text
-PROPERTY BEFORE FULL OBJECT
+PROPERTY BEFORE RICH OBJECT
 = CONCEPTUALLY VIABLE
+
+PROPERTY BEFORE EVERY THIN OBJECT INDEX
+= NOT ESTABLISHED / LIKELY TOO STRONG
 
 GRASPABILITY
 = good minimal relational-property test
