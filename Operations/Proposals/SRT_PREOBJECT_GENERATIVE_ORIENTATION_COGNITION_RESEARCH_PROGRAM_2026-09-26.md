@@ -193,7 +193,7 @@ G-coarse:
 compress stable relations into equivalence / property / boundary structure
 ~~~
 
-CURRENT NEXT must test whether these roles share a nontrivial common kernel or whether "Gate" should split into typed families.
+The supporting anti-overloading test asks whether these roles share a nontrivial common pattern or must remain split.
 
 A strong working shared pattern is now strengthened by explicit author clarification that the bridge is **actively formed**:
 
@@ -694,7 +694,7 @@ x retained organization
 
 ---
 
-## 14. Immediate CURRENT NEXT
+## 14. Supporting work packages under the single CURRENT NEXT
 
 ### CN-1 — whole-field formation / neighbor map
 
