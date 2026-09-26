@@ -648,20 +648,40 @@ Ask:
 - which parts explain gate revision without phenomenality?
 - what, if anything, is added by gate-objectification + recursive writeback?
 
-### MG-2 — conscious gate-objectification bridge
+### MG-2 — conscious target vs gate-objectification bridge
 
-Keep two readings distinct:
+Do not collapse two different conscious roles.
 
 ~~~text
-C1:
-conscious content IS the operative high-level gate
+TARGET OBJECTIFICATION:
+a coarse goal / intention becomes foreground,
+then constrains lower-level gating without encoding the detailed solution.
 
-C2:
-conscious content foregrounds / objectifies a gate or higher-order constraint,
-making it globally available for stabilization, revision or reconfiguration
+GATE OBJECTIFICATION:
+a normally transparent control relation / expectation / habitual constraint
+itself becomes foreground because ordinary correction is insufficient,
+making that gate available for reflective revision.
 ~~~
 
-C2 is the safer current machine architecture unless the author explicitly strengthens to C1.
+Working cycle:
+
+~~~text
+background multilevel gates
+-> foreground target
+-> top-down constraint
+-> distributed execution
+-> consequence / error / friction
+
+if local correction succeeds:
+    gate remains background
+
+if conflict remains bearer-relevant / cross-gate:
+    gate itself becomes objectified
+    -> reflective revision
+    -> new gate configuration
+~~~
+
+This is machine analysis, not yet a new author adjudication.
 
 ### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
 
