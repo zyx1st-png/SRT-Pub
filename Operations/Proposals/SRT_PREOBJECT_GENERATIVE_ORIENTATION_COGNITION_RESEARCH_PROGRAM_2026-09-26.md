@@ -648,40 +648,60 @@ Ask:
 - which parts explain gate revision without phenomenality?
 - what, if anything, is added by gate-objectification + recursive writeback?
 
-### MG-2 — conscious target vs gate-objectification bridge
+### MG-2 — access -> control -> ownership bridge
 
-Do not collapse two different conscious roles.
+Do not collapse three separate questions.
 
 ~~~text
-TARGET OBJECTIFICATION:
-a coarse goal / intention becomes foreground,
-then constrains lower-level gating without encoding the detailed solution.
+ACCESS:
+is the target consciously / globally available?
 
-GATE OBJECTIFICATION:
-a normally transparent control relation / expectation / habitual constraint
-itself becomes foreground because ordinary correction is insufficient,
-making that gate available for reflective revision.
+CONTROL:
+does the target become a structuring bias that changes later gating?
+
+OWNERSHIP:
+is that controlled direction integrated into the continuing bearer /
+concern / consequence structure as its own?
 ~~~
 
-Working cycle:
+Minimal control route:
 
 ~~~text
-background multilevel gates
--> foreground target
--> top-down constraint
+target / instruction
+-> maintenance
+-> control allocation
+-> structuring bias
+-> multilevel gating
 -> distributed execution
--> consequence / error / friction
-
-if local correction succeeds:
-    gate remains background
-
-if conflict remains bearer-relevant / cross-gate:
-    gate itself becomes objectified
-    -> reflective revision
-    -> new gate configuration
 ~~~
 
-This is machine analysis, not yet a new author adjudication.
+This route does NOT require bearer-owned concern by definition. Rapid instructed task learning is a strong mature-neighbor pressure.
+
+Then separately:
+
+~~~text
+continuing One / Bearer
++ concern / stake
++ self-related access
++ consequence return
++ history writeback / revision
+-> stronger agency / ownership candidate
+~~~
+
+Target objectification and gate objectification also remain distinct:
+
+~~~text
+foreground target
+-> can guide multilevel control
+
+persistent unresolved conflict
+-> gate / expectation itself may become foreground
+-> reflective revision
+~~~
+
+The strongest next question is:
+
+> What converts an accessible target into a control-effective structuring bias, and what additional conditions convert that controlled direction into bearer-owned agency?
 
 ### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
 
@@ -760,7 +780,8 @@ SRT GAIN
 
 CURRENT NEXT
 = MG-1 multilevel-gating composition map
-  + MG-2 conscious gate-objectification bridge
+  + MG-2 access -> control -> ownership bridge
+  + target-objectification / gate-objectification distinction
   + CN-1/CN-2 retained as supporting architecture
   + G2-G4 experiment HOLD until the mechanism pass converges
 
