@@ -9,7 +9,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-09-08
+updated: 2026-09-24
 ---
 
 # SRT Governance Hub
@@ -87,6 +87,22 @@ Amendment 不新增 ontology claim，主要修正：
 如果旧 programme 文件仍把 `unified ontology -> local formalization -> D2` 写成当前执行顺序，以 2026-08-29 blueprint/plan + Architecture v2 + 2026-09-05 amendment 的最新组合解释。若旧文件把 bearer-totalizing shorthand 或直接 `Framework -> Case A/B/C` 写成默认主线，以 2026-09-05 amendment 为准。
 
 ## Current Active Control Surface
+
+### Main write / authorization
+
+1. `SRT_MAIN_WRITE_GOVERNANCE.md` — M0/M1/M2 authorization owner for writes intended to become inheritable `main` state.
+2. `SRT_MAIN_PLATFORM_PROTECTION_TARGET_2026-09-24.md` — GitHub Ruleset target plus verified platform-enforcement status; repository policy is not proof that the platform gate is active.
+3. `../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MAIN_WRITE_GOVERNANCE_2026-09-24.md` — explicit author-source record.
+
+Compact boundary:
+
+```text
+M0 = reconstruction / mechanical closure
+M1 = delegated adjudication inside a frozen decision space + independent fidelity review
+M2 = new authorial choice; explicit author reply required
+```
+
+M0/M1/M2 are authorization modes, not replacements for the A/B/C edit-risk classes. Merge eligibility does not itself create merge authorization. A bare `继续` may continue an already-authorized route but cannot close an open M2 fork.
 
 ### Edit Safety
 

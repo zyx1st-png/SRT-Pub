@@ -14,6 +14,20 @@ This file owns the repository runtime and fresh-session read order. Paths are re
 - Use parallel reads or independent subagent reviews when helpful and available. Keep dependent edits sequential; model agreement is not proof or author convergence.
 - Report the result, meaningful verification and remaining limitations concisely. Use lists when they aid comparison; do not force a status template on every reply.
 
+### Main write authorization gate
+
+For work intended to become inheritable `main` state, classify authorization under `Governance/SRT_MAIN_WRITE_GOVERNANCE.md` before integration:
+
+- **M0 reconstruction / mechanical closure** — no new interpretive choice; checks may authorize merge.
+- **M1 delegated adjudication** — complex judgment inside a previously frozen decision space; requires independent fidelity review, not model voting. A valid pre-authorized consequence may merge without a new author reply.
+- **M2 authorial choice** — any unpreauthorized new option, criterion, concept, owner, authority transition, programme route, substantive supersession, or external commitment requires an **explicit author reply**. Do not infer it from historical preference, likely intent, model consensus, or a bare `继续`.
+- A bare `继续` may continue an already-authorized bounded route; it does not resolve a still-open M2 fork.
+- M2 authorization is bounded but reusable inside its Goal / Scope / Exclusions / Stop condition. Routine implementation does not require repeated confirmation; scope expansion or prerequisite failure reopens M2.
+- Merge eligibility and merge authorization are separate. Green CI never creates author authority.
+- Normal `main` state changes use branch -> PR -> checks/review -> merge. Direct push is not the normal owner/admin route. Emergency recovery may bypass checks only through the narrowest available path while preserving PR/history.
+
+The author source for these rules is `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MAIN_WRITE_GOVERNANCE_2026-09-24.md`. Platform enforcement status is separate and must be checked against `Governance/SRT_MAIN_PLATFORM_PROTECTION_TARGET_2026-09-24.md`; policy text is not evidence that GitHub protection is active.
+
 ## Session Start
 
 Read these three files in order:
