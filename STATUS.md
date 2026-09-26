@@ -903,7 +903,7 @@ Immediate execution order:
 1. corrective convergence / term routing / strong-baseline freeze;
 2. freeze environment, learner inputs, baselines, tuning-compute budgets, held-out splits, metrics, zero-gain rules and seeds;
 3. execute the frozen toy simulation only;
-4. human G2-G4 and further concept expansion remain HOLD until the simulation verdict.
+4. human E2-E4 and further concept expansion remain HOLD until the simulation verdict.
 ~~~
 
 Research framing:
