@@ -203,7 +203,11 @@ The same environmental structure may be graspable for one body configuration and
 
 Therefore graspability is naturally relational.
 
-This matches mature affordance accounts and does not establish SRT distinctiveness. citeturn890049search3turn890049search6
+This matches mature affordance accounts and does not establish SRT distinctiveness.
+
+Representative sources:
+- Bonaiuto & Arbib 2015, *Learning to grasp and extract affordances*, Biological Cybernetics 109:639–669. DOI 10.1007/s00422-015-0666-2.
+- Vilarroya 2014, *Sensorimotor event: an approach to the dynamic, embodied, and embedded nature of sensorimotor cognition*, Frontiers in Human Neuroscience 7:912. DOI 10.3389/fnhum.2013.00912.
 
 ---
 
@@ -222,7 +226,12 @@ In plain terms:
 
 > The system may first know how to enter a stable relation, before it knows what enduring thing the relation belongs to.
 
-This is compatible with developmental evidence that object individuation and property / kind use can dissociate, so object cognition should not be treated as one undifferentiated capacity. citeturn890049search0turn890049search7turn890049search9
+This is compatible with developmental evidence that object individuation and later property / kind use can dissociate, so object cognition should not be treated as one undifferentiated capacity.
+
+Representative sources:
+- Croteau, Cheries & Xu 2026, *The development of kind concepts: Insights from object individuation*, Psychological Review 133(1):134–155. DOI 10.1037/rev0000527.
+- Xu 1999, *Object individuation and object identity in infancy: the role of spatiotemporal information, object property information, and language*, Acta Psychologica 102(2–3):113–136.
+- Leslie, Xu, Tremoulet & Scholl 1998, *Indexing and the object concept: developing 'what' and 'where' systems*, Trends in Cognitive Sciences 2(1):10–18. DOI 10.1016/S1364-6613(97)01113-3.
 
 ---
 
@@ -440,11 +449,11 @@ Property / object structure has no future causal role beyond retrospective label
 
 This architecture overlaps heavily with existing work:
 
-- affordances as relations between situation features and agent abilities; citeturn890049search6
-- learned grasp affordances and motor parameters through trial-and-error; citeturn890049search3
-- active exploration and manipulation as a route to affordance / causal learning in robotics; citeturn890049search5
-- object individuation as separable from later property / kind identification; citeturn890049search0turn890049search9
-- action affordance depending on attended action-relevant properties, not every visible property. citeturn890049search2
+- affordances as relations between situation features and agent abilities — Vilarroya 2014, DOI 10.3389/fnhum.2013.00912;
+- learned grasp affordances and motor parameters through trial-and-error — Bonaiuto & Arbib 2015, DOI 10.1007/s00422-015-0666-2;
+- active exploration and manipulation as a route to affordance / causal learning in robotics — Bohg et al.-style active manipulation line; see the 2022 Frontiers in Robotics and AI review, PMID 35865329;
+- object individuation as separable from later property / kind identification — Croteau, Cheries & Xu 2026, DOI 10.1037/rev0000527; Leslie et al. 1998, DOI 10.1016/S1364-6613(97)01113-3;
+- action affordance depending on attended action-relevant properties, not every visible property — Tipper, Paul & Hayes 2006, DOI 10.3758/BF03193875.
 
 Therefore the current value is integration / generative ordering, not established novelty.
 
