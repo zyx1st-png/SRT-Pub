@@ -124,7 +124,7 @@ Gate-as-root-generativity = REJECT;
 Gate geometry = downstream formed description unless separately qualified.
 ~~~
 
-## 4. Gate operation — current use, distinct from Gate standing
+## 4. Gate operation — current use, distinct from formed Gate availability
 
 Current gate operation means:
 
@@ -138,7 +138,7 @@ This is primarily an L1-facing operation.
 Thus:
 
 ~~~text
-formed Gate standing
+formed formed Gate availability
 != current Gate operation;
 
 having a Gate
