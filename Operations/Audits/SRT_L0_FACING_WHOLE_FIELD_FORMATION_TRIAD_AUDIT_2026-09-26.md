@@ -440,7 +440,7 @@ Current machine synthesis:
         |                             |
         +-------------+---------------+
                       v
-[G] gate / normalization geometry
+[GateGeom] gate / normalization geometry
     equivalence
     boundary
     neighborhood
@@ -454,7 +454,7 @@ Current machine synthesis:
                       v
 [I] retained consequence / history
                       |
-                      +----> later reconstitution of [C]-[G]
+                      +----> later reconstitution of [C]-[GateGeom]
 ~~~
 
 Where independently paid:
