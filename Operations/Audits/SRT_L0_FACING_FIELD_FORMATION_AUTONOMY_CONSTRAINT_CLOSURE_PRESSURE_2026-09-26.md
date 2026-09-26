@@ -593,3 +593,177 @@ Only C motivates the stronger gate/reachability reconstruction burden.
 
 A future empirical design should discriminate A / B / C before invoking SRT-specific ontology.
 
+
+
+---
+
+## 12. Re-entry of existing neural evidence — current support is local relational geometry, not whole cognitive field
+
+The current question must recover the existing NEURAL34 / Phase-8 work rather than start from zero.
+
+### 12.1 What NEURAL34 already supports
+
+NEURAL34's bounded bridge is:
+
+~~~text
+past joint / coupled history
+-> plastic reconfiguration
+-> altered future relational compatibility
+-> current opportunity / context
+-> realized coordination
+-> further relational writeback.
+~~~
+
+Its evidence packet supports, across multiple paradigms:
+
+~~~text
+history
+-> altered later transition / coordination disposition
+~~~
+
+including cases where:
+- current mean activity does not continuously expose the history;
+- a common / neutral probe reveals different history-conditioned responses;
+- prior activity changes a later plastic response without a corresponding persistent change in the measured baseline output;
+- experience reorganizes higher-order inter-regional / inter-assembly coupling.
+
+NEURAL34 already introduced a local relation-compatibility geometry:
+
+~~~text
+K_ij^(tau)
+= history-conditioned transition disposition
+
+K_t^(tau)
+= matrix / geometry of such dispositions across candidate relations.
+~~~
+
+Its own guard is strong:
+
+~~~text
+K
+!= synchrony
+!= synaptic weight by definition
+!= ontologically independent relation
+!= one universal cross-timescale mechanism.
+~~~
+
+### 12.2 Where the evidence currently reaches
+
+The evidence supports more than a pure local-activation account.
+
+So the current A/B/C pressure can be refined:
+
+~~~text
+A — local memory / weight only
+    INSUFFICIENT as a universal description:
+    relation-specific history effects exist beyond mean current activation readout.
+
+B — latent-state / model / distributed compatibility update
+    STRONGLY COMPATIBLE with existing evidence.
+
+C-local — history changes a relation / compatibility geometry
+    PLAUSIBLE P3 bridge and partly instantiated by NEURAL34.
+
+C-whole — One/Bearer-indexed history reconstructs
+          one whole cognitive L0-facing reachability geometry
+    NOT ESTABLISHED.
+~~~
+
+### 12.3 Phase-8 adverse result remains controlling
+
+The 2026-09-03 neuroscience deep-well charter attempted the stronger matched-state question:
+
+~~~text
+same declared current neural state
++ same probe class
++ matched PRE relation / exposure
++ different relation-specific history
+-> different future relation identity / probability.
+~~~
+
+But the workline closed at Phase 8A:
+
+~~~text
+strongest-baseline verdict = Case B
+exact data access = NO-GO
+protocol lock = NOT AUTHORIZED
+execution = NOT AUTHORIZED
+neuroscience increment = NONE
+translation / method gain only.
+~~~
+
+Therefore do not cite the published / repository neuroscience line as confirmation of whole-field reconstruction.
+
+### 12.4 Current exact gap
+
+The missing bridge is now:
+
+> **How does history that is indexed to one continuing organization become a coordinated change in the geometry of many future relations / objectifications at once?**
+
+This requires more than:
+
+~~~text
+one pair changes;
+one latent state changes;
+one memory trace changes;
+one attention priority changes.
+~~~
+
+A whole-field claim requires a pattern such as:
+
+~~~text
+same continuing system
++ declared consequence / history manipulation
+-> coordinated reorganization across multiple local readouts
+   of equivalence / boundary / relevance / transition / grouping
+-> low-dimensional or structured change
+   that predicts later objectification / action
+-> survives rich latent-state / model-update baselines.
+~~~
+
+Only then would "whole-field reconstruction" earn empirical standing.
+
+---
+
+## 13. Revised exact next question
+
+The strongest current machine question is no longer whether history matters.
+
+It is:
+
+> **What transformation maps One-/Bearer-indexed history into a system-wide change of effective reachability geometry?**
+
+Three candidate answer families should be kept separate.
+
+### H1 — distributed parameter update
+
+History changes many local weights / thresholds.
+
+The appearance of a whole field is an aggregate.
+
+### H2 — latent generative-state update
+
+History changes a lower-dimensional latent state / generative model whose downstream consequences coordinate many local readouts.
+
+This is a strong predictive-processing / state-space baseline.
+
+### H3 — constraint / geometry reconstruction
+
+History changes the organization of:
+- equivalence;
+- boundary;
+- neighborhood;
+- reachable transition;
+- perturbation stability;
+
+such that many local objectifications are jointly reorganized.
+
+H3 is the strongest current reading of the author's L0-facing intuition.
+
+But H3 must not be assumed.
+
+The next research burden is to determine whether H3 is:
+- empirically distinguishable from H1 / H2;
+- already captured by constraint-closure / enactive / active-inference architectures;
+- or only a useful SRT/GRG redescription.
+
