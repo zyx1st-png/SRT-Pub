@@ -58,6 +58,10 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1068 role = NONCANONICAL AUTHOR SOURCE + DERIVATION TRACE + METHOD v0.1; CURRENT NEXT REDIRECTED TO FACING RECONSTRUCTION
 #1069 independent review of #1068 = MERGED / d0b5a67a435ab321d6416c25584c1c785d32bf4b
 #1069 role = READ-ONLY POST-MERGE AUDIT; CORRECTIVE D-1…D-4 ACCEPTED IN 2026-09-26 AUTHOR FOLLOW-UP
+#1070 Facing method v0.2 corrective = MERGED / 208bdca84b31076b83c2256cd1913fd3d6b2675f
+#1070 role = NONCANONICAL METHOD / ROUTING CORRECTIVE; FRH-0 FIRST; PASS CAPS 8+7
+#1072 independent review of #1071 Facing pass = MERGED / bfc9b20d2b2009ccfde779a2da6911a02464f264
+#1072 role = READ-ONLY PRE-MERGE CONTENT REVIEW; FINAL AUTHOR CORRECTIVE ACCEPTED
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
@@ -179,7 +183,7 @@ HP-B Bearer / Psi_f / consciousness = READ-ONLY;
 canonical edit = NO.
 ~~~
 
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
+CURRENT NEXT = primitive Selection anti-tautology under the dedicated bounded owner; Facing Pass A/B and author adjudication are complete; Pass A = 8/8 COMPLETE, Pass B = 7/7 COMPLETE, OUT-A/B/C/D COMPLETE; no further concept expansion, canonical edit or toy-simulation execution before author adjudication;
 
 ---
 
@@ -940,39 +944,59 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md (content version v0.2);
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md;
+CURRENT NEXT = primitive Selection anti-tautology: distinguish genuine actualised non-neutral Selection from merely descriptive / modelled state transition without importing pre-given alternatives, a prior chooser, retained consequence, probability, value or completed geometry;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_RESEARCH_QUESTION_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1071_FACING_PASS_FINAL_2026-09-26.md;
 
-Immediate execution order:
+Facing reconstruction disposition:
 
 ~~~text
-1. recover current owners + accepted analysis for FRH-0;
-2. test whether "L0-facing continuity" is fully absorbed by O0 + recurrent reconstitution / One-side history + formed Selection-position;
-3. continue through at most 8 internal target clusters using FACE-L0 / FACE-L1 / FACE-L2;
-4. classify KEEP / RETYPE / MERGE_CANDIDATE / SPLIT / DOWNSTREAM / SOURCE_ABSORBED / OPEN / RETIRE_CANDIDATE;
-5. compare at most 7 source-native neighbor families;
-6. produce OUT-A matrix + OUT-B simplification/conflict map + OUT-C bounded neighbor comparison;
-7. produce OUT-D author decision packet; no canonical edit before author second adjudication.
+Pass A = 8 / 8 COMPLETE;
+Pass B = 7 / 7 COMPLETE;
+author adjudication = COMPLETE;
+
+L0-facing continuity = RETIRED as independent term;
+formed Orientation = RETIRED as independent term;
+Position-relative L0-facing = RETIRED as independent term;
+primitive field / attractor reading = RETIRED / DEMOTED;
+
+Facing = method alias for canonical L0/L1/L2 analytic aspects;
+older owner concepts retired = 0;
+pass result = containment + typing + local subtraction.
 ~~~
 
-Research framing:
+Research framing guards:
 
 ~~~text
-L0/L1/L2 = analytic aspects, not ontic layers;
-Facing = method alias / execution discipline, not a new ontology noun;
-reverse discovery = L2-facing -> L1-facing -> infer residual L0-facing burden;
-primitive Selection = source of renewed generativity, not sufficient by itself for this-One continuity;
-forward test = L0-facing structural constraints first; concrete content predictions only through declared downstream models;
-structure-learning / expandable-hypothesis-space models are required baselines where relevant;
-Pass A <= 8; Pass B <= 7;
+forward test = structural constraints first;
+concrete content prediction = only through declared downstream models;
+structure-learning / expandable-hypothesis-space baselines = REQUIRED where relevant;
+Facing = method alias / execution discipline, not ontology taxonomy;
 HP-B Bearer / Psi_f / consciousness = READ-ONLY;
-non-objectifying method = reconstructible / perturbable / recuttable objectification, not zero objectification;
-broad cross-domain synthesis / third deep well / GRG v0.4 = NO;
-canonical SRT edit = NO during this pass.
+canonical edit = NO until anti-tautology author packet;
+branch / merge identity = HOLD;
+GRG v0.4 / third deep well = HOLD.
 ~~~
 
-The corrected Gate / cognition toy-simulation design remains a downstream frozen candidate and is not executed under this CURRENT NEXT. GRG fusion lane remains paused; BCTB T2 / v0.4 / third rescue domain do not reopen.
+Cognition programme:
+
+~~~text
+neutral cognition-science / architecture programme first;
+SRT interpretation = optional / downstream;
+toy simulation = neutral cognition experiment;
+toy simulation = removed from SRT-specific evidence queue;
+toy simulation execution = HOLD / not CURRENT NEXT.
+~~~
+
+Immediate anti-tautology execution order:
+
+~~~text
+1. recover current Selection owner and author-source burden;
+2. enumerate mature comparator families without novelty presumption;
+3. separate ontological Selection claim from event segmentation / state-transition modelling;
+4. construct candidate necessary burdens + counterexamples + collapse tests;
+5. return author decision packet before canonical edit.
+~~~
 
 ## Historical navigation
 
