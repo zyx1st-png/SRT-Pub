@@ -31,7 +31,7 @@ tags: [Facing, PassA, PassB, OUTA, OUTB, OUTC, OUTD, Simplification, AuthorDecis
 
 ## 0. Executive result
 
-The method produced a real subtraction rather than another vocabulary layer.
+The method successfully contained recent concept proliferation, clarified type boundaries, and performed local subtraction. It did **not** retire older pre-09-25 owner concepts; those surviving the subtraction is itself a robustness result.
 
 ~~~text
 Pass A internal targets = 8 / 8 COMPLETE
@@ -256,11 +256,13 @@ No novelty verdict is issued.
 
 ---
 
-# OUT-D — author decision packet
+# OUT-D — final author-adjudicated decision packet
 
-## D1 — retire recent working nouns?
+> **Controlling source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1071_FACING_PASS_FINAL_2026-09-26.md`
+>
+> The decisions below are no longer pending. They were explicitly accepted / modified by the author after the #1072 independent review.
 
-Machine recommendation:
+## FD1 — recent working nouns / root readings
 
 ~~~text
 L0-facing continuity
@@ -271,115 +273,100 @@ formed Orientation
 
 L0-facing / attractor field
 = RETIRE as primitive ontology noun;
-  KEEP ordinary / systems-level field wording where qualified.
+  ordinary / systems-level field wording may remain when qualified;
+
+Position-relative L0-facing
+= RETIRE as working term-of-art.
 ~~~
 
-Rationale: all three burdens are absorbed by existing owners or downstream model language.
+Graded closure is routed downstream through retained constraints, generative reselectability, latent reconstructive reach and recut / structure-revision capacity.
 
-**Author decision required:** ACCEPT / MODIFY / REJECT.
+O0 is not converted into a scalar openness measure.
 
-## D2 — keep Facing only as method alias?
-
-Machine recommendation:
+## FD2 — Facing status
 
 ~~~text
 L0-facing / L1-facing / L2-facing
-= operational readings of the existing analytic-aspect rule;
-= useful worksheet / retrieval language;
+= operational readings / worksheet aliases of the existing analytic-aspect rule;
 != new ontology taxonomy.
 ~~~
 
-**Author decision required:** ACCEPT / MODIFY / REJECT.
+## FD3 — dynamic Position / One relation
 
-## D3 — dynamic Position interpretation
-
-The author's key intuition survives simplification:
-
-> Position should not be read as a static state; primitive Selection is active in the recurrent transformation through which formed Position continues.
-
-Machine reconstruction:
+Accepted reconstruction:
 
 ~~~text
-One
-= recurrent Selection organization / formed process-unity;
+Selection-position_t
+= time-local, processual operative organization of transformation;
+= not a static state;
 
 Selection-position_t
-= current operative from-where of that process;
+!= a token required to persist as Selection-position_(t+1);
 
-same-process continuation
-= not state invariance,
-  but Selection-mediated recurrent reconstitution in which prior organization
-  materially enters later Selection conditions.
+One
+= recurrent formed process-unity reconstituted across successive time-local Selection-positions.
 ~~~
 
-This makes the recent phrase:
+Therefore the author's earlier wording that “Position continues” is read canonically as:
+
+> the **One** continues through Selection-mediated recurrent reconstitution, while each Position_t is the current operative organization through which transformation occurs non-arbitrarily.
+
+This preserves the stronger intuition that Position is not merely a state that *has* generativity; Position_t is itself the current formed organization of transformation.
+
+No canonical owner edit is made here.
+
+## FD4 — `为了`: constitutive role vs organizational function
+
+Accepted two-level typing:
 
 ~~~text
-Position's stability = transformation continuity, not state invariance
+Level A — constitutive role
+formed organization may be described with “为了” when the meaning is:
+it is constituted by the role it plays in making later transformation
+non-arbitrary / reconstituting the formed process.
+
+This does NOT require full closure-of-constraints.
+
+Level B — literal organizational function
+if the stronger closure-of-constraints / organizational-function sense is claimed,
+closure-like mutual dependence must be separately paid.
 ~~~
 
-a useful explanatory reading of existing One / Position owners rather than a new definition.
+Neither reading is back-written into primitive O0/S0 as cosmic goal, external designer or continuation preference.
 
-**Author decision required:** is this the correct reconstruction of your intuition, or does Position itself still carry an additional burden not paid by One + Selection-position + recurrent reconstitution?
+## FD5 — Expectation vocabulary
 
-## D4 — retain the author's `为了` as constitutive-function language?
-
-Machine recommendation after organizational-function comparison:
-
-~~~text
-formed-level '为了'
-may be retained where it means:
-the organization / relation is constituted by a role in maintaining or
-reconstituting a formed process;
-
-and does NOT mean:
-primitive cosmic goal;
-external designer;
-pre-given preferred endpoint.
-~~~
-
-Applied cautiously:
-
-> Position formation may be described as functioning to keep transformation non-arbitrary **if** that means the recurrent organization exists through its constitutive role in constraining / reconstituting later transformation.
-
-This should not be back-written into O0.
-
-**Author decision required:** ACCEPT / MODIFY / REJECT.
-
-## D5 — Expectation vocabulary
-
-Machine recommendation:
+Accepted:
 
 ~~~text
 B structural generative expectation = KEEP;
 C0/C1 anticipatory realization = KEEP;
 P_G = KEEP as GRG predictive burden;
-E_G = KEEP as GRG admitted-order classification;
+E_G = KEEP as GRG admitted-order transformation classification;
 
-unqualified 'Generative Expectation' = require owner qualification.
+unqualified “Generative Expectation”
+= require owner qualification.
 ~~~
 
-**Author decision required:** ACCEPT / MODIFY / REJECT.
+## FD6 — reconstructibility vs reselectability
 
-## D6 — reconstructibility vs reselectability
-
-Machine recommendation:
+Accepted:
 
 ~~~text
 generative reconstructibility
 = preserve / recover enough generative lineage and re-entry structure for recutting;
 
 generative reselectability
-= formed process can actually revise its own comparison rules / boundaries / candidate-generation conditions under consequence;
+= formed process can actually revise its own comparison rules / boundaries /
+  candidate-generation conditions under consequence;
 
-relation = PARTIAL OVERLAP, NOT MERGE.
+relation
+= PARTIAL OVERLAP, NOT MERGE.
 ~~~
 
-**Author decision required:** ACCEPT / MODIFY / REJECT.
+## FD7 — branch / merge identity
 
-## D7 — branch / merge identity remains OPEN
-
-Pass B strengthens the stop rule:
+Remain OPEN:
 
 ~~~text
 continuity
@@ -395,62 +382,86 @@ Parfit fission
 = negative control showing branching continuity can survive without unique identity.
 ~~~
 
-No branch / merge theorem is proposed.
+No branch / merge theorem is proposed in this pass.
 
-**Author decision:** no closure required now unless author wants this promoted to the next research question.
-
-## D8 — canonical consequence
-
-Machine recommendation:
+## FD8 — canonical consequence
 
 ~~~text
 immediate Freeze-A canonical edit = NO.
 ~~~
 
-Reason:
+The pass mainly retires noncanonical working terms, clarifies routing and preserves existing owners.
 
-- the pass mainly retires noncanonical working terms;
-- canonical One / Position / O0 owners survive the subtraction;
-- no hard contradiction requires repair;
-- remaining changes are router / glossary / noncanonical programme cleanup plus possible future wording clarification after author D1–D6 decisions.
+## FD9 — cognition programme / toy simulation
 
-## D9 — cognition toy simulation
-
-Recommendation remains:
+Author decision:
 
 ~~~text
-frozen toy simulation = downstream candidate;
-do not execute until author decision packet is resolved and any programme terminology cleanup is frozen.
+cognition programme
+= neutral cognition-science / architecture programme first;
+SRT interpretation
+= optional / downstream;
+
+toy simulation
+= neutral cognition-architecture experiment;
+= may constrain / inform SRT interpretation;
+!= SRT-specific evidence for primitive Selection / O0 / L0 ontology.
 ~~~
 
-## D10 — next research fork after author adjudication
+The toy simulation is removed from the SRT-specific evidence queue. It may be executed later only as a bounded neutral cognition experiment if independently useful.
 
-If D1–D6 are accepted, two serious next questions remain:
+## FD10 — pass characterization
+
+Final characterization:
 
 ~~~text
-A. primitive anti-tautology:
-what distinguishes genuine Selection from redescribed change?
+Facing pass
+= containment + typing + local subtraction;
 
-B. formed identity / branch:
-what makes recurrent transformation continuation of one formed process,
-and what happens under symmetric branch / merge?
+older owner concepts retired
+= 0;
+
+recent working nouns / root readings retired or demoted
+>= 4;
+
+old owners surviving subtraction
+= robustness result.
 ~~~
 
-Do not open both simultaneously.
+Therefore “successful subtractive simplification of the old ontology” is NOT the correct summary.
+
+## FD11 — next research question
+
+The author selects:
+
+~~~text
+NEXT = primitive Selection anti-tautology.
+
+Question:
+What distinguishes genuine actualised non-neutral Selection from an analyst's
+merely descriptive / modelled state transition, without appealing to
+pre-given alternatives, a prior chooser, retained consequence, probability,
+value or completed geometry?
+~~~
+
+Branch / merge numerical identity remains OPEN and is not opened simultaneously.
 
 ---
 
-## Final machine disposition
+## Final disposition
 
 ~~~text
-Facing method = SUCCESSFUL AS SUBTRACTIVE METHOD
+Facing method = SUCCESSFUL AS CONTAINMENT + TYPING + LOCAL SUBTRACTION
 
-internal pass = COMPLETE
-external bounded pass = COMPLETE
+Pass A = COMPLETE
+Pass B = COMPLETE
+author adjudication = COMPLETE
 
 new primitives = 0
-recent working ontology nouns retired/demoted = >= 3
+older owner concepts retired = 0
+recent working terms / root readings retired or demoted >= 4
 canonical emergency changes = 0
 
-status = AWAIT AUTHOR D1-D6 ADJUDICATION
+status = READY TO MERGE AFTER MECHANICAL REVIEW FIXES
+next = PRIMITIVE SELECTION ANTI-TAUTOLOGY
 ~~~
