@@ -179,7 +179,7 @@ HP-B Bearer / Psi_f / consciousness = READ-ONLY;
 canonical edit = NO.
 ~~~
 
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
+CURRENT NEXT = AUTHOR ADJUDICATION on the completed Facing reconstruction packet (D1-D6 first); Pass A = 8/8 COMPLETE, Pass B = 7/7 COMPLETE, OUT-A/B/C/D COMPLETE; no further concept expansion, canonical edit or toy-simulation execution before author adjudication;
 
 ---
 
@@ -940,36 +940,50 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = execute one bounded Facing reconstruction / simplification pass under method v0.2; run FRH-0 first, produce OUT-A / OUT-B / OUT-C / OUT-D, and return substantive merge / split / retyping / retirement decisions to the author before any canonical edit;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md (content version v0.2);
+CURRENT NEXT = AUTHOR ADJUDICATION on the completed Facing reconstruction packet (D1-D6 first); Pass A = 8/8 COMPLETE, Pass B = 7/7 COMPLETE, OUT-A/B/C/D COMPLETE; no further concept expansion, canonical edit or toy-simulation execution before author adjudication;
+CURRENT NEXT OWNER = Operations/Audits/SRT_FACING_RECONSTRUCTION_PASS_AB_INTEGRATED_OUT_A_D_2026-09-26.md;
 CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md;
 
-Immediate execution order:
+Completed execution:
 
 ~~~text
-1. recover current owners + accepted analysis for FRH-0;
-2. test whether "L0-facing continuity" is fully absorbed by O0 + recurrent reconstitution / One-side history + formed Selection-position;
-3. continue through at most 8 internal target clusters using FACE-L0 / FACE-L1 / FACE-L2;
-4. classify KEEP / RETYPE / MERGE_CANDIDATE / SPLIT / DOWNSTREAM / SOURCE_ABSORBED / OPEN / RETIRE_CANDIDATE;
-5. compare at most 7 source-native neighbor families;
-6. produce OUT-A matrix + OUT-B simplification/conflict map + OUT-C bounded neighbor comparison;
-7. produce OUT-D author decision packet; no canonical edit before author second adjudication.
+Pass A = 8 / 8 COMPLETE;
+Pass B = 7 / 7 COMPLETE;
+OUT-A / OUT-B / OUT-C / OUT-D = COMPLETE;
+
+machine result:
+- no new primitive required;
+- no emergency canonical contradiction found;
+- L0-facing continuity = retire candidate;
+- formed Orientation = retire candidate;
+- primitive field / attractor reading = retire / demote;
+- existing One / Selection-position / O0 owners survive subtraction;
+- branch / merge identity remains OPEN;
+- primitive Selection anti-tautology remains OPEN.
 ~~~
 
-Research framing:
+Immediate author adjudication order:
 
 ~~~text
-L0/L1/L2 = analytic aspects, not ontic layers;
-Facing = method alias / execution discipline, not a new ontology noun;
-reverse discovery = L2-facing -> L1-facing -> infer residual L0-facing burden;
-primitive Selection = source of renewed generativity, not sufficient by itself for this-One continuity;
-forward test = L0-facing structural constraints first; concrete content predictions only through declared downstream models;
-structure-learning / expandable-hypothesis-space models are required baselines where relevant;
-Pass A <= 8; Pass B <= 7;
+D1 retire / demote recent working nouns;
+D2 Facing remains method alias only;
+D3 dynamic Position reconstruction;
+D4 formed-level constitutive-function meaning of "为了";
+D5 Expectation B / C / P_G / E_G separation;
+D6 reconstructibility != generative reselectability.
+
+Do not open a new theory pass before these are adjudicated.
+~~~
+
+Post-pass guard:
+
+~~~text
+Facing method = subtractive pass COMPLETE;
 HP-B Bearer / Psi_f / consciousness = READ-ONLY;
-non-objectifying method = reconstructible / perturbable / recuttable objectification, not zero objectification;
 broad cross-domain synthesis / third deep well / GRG v0.4 = NO;
-canonical SRT edit = NO during this pass.
+canonical SRT edit = NO before author D1-D6 adjudication;
+toy simulation execution = HOLD;
+new concept expansion = HOLD.
 ~~~
 
 The corrected Gate / cognition toy-simulation design remains a downstream frozen candidate and is not executed under this CURRENT NEXT. GRG fusion lane remains paused; BCTB T2 / v0.4 / third rescue domain do not reopen.
