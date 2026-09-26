@@ -482,3 +482,27 @@ It becomes:
 > **By what active process does a finite system turn changing encounters into a reusable relational bridge, and when does a network of such bridges become stable enough to function as an attribute / object?**
 
 This is the current author-facing root opened by the clarification.
+
+---
+
+## 17. Directional acceptance of the active-bridge route
+
+After the machine clarified:
+
+- Gate formation / genesis as active construction and stabilization of a reusable relation;
+- Gate operation / use as later pass / suppress / classify / guide over formed bridge structure;
+- active formation as world-constrained rather than arbitrary invention;
+
+the author replied:
+
+> **「认同，继续」**
+
+Under the repository continuation rule this records directional acceptance of the active-bridge route and authorization to continue toward the question:
+
+> **What drives a system to actively form one bridge rather than another?**
+
+This does not yet authorize:
+- a canonical Gate definition;
+- identification of Gate formation with primitive Selection;
+- a universal stability-maximization principle;
+- identification of bridge formation with consciousness or Bearer.
