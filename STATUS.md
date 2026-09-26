@@ -76,6 +76,52 @@ A-8 RESULT = GRG operational architecture + name REOPENED / original telos retai
 A-9 RESULT = theoretical friction = Ontological Friction = canonical Psi_f concept family / contextual readings only
 CANONICAL LANDING = HOLD / no Freeze-A edit authorized
 
+### 0.3c Preformal coherence sensitivity / intuition research — 2026-09-26
+
+Author instruction:
+
+> 「我觉得这种能力并不是我特有的。而是普遍的，只是我比较特殊一点，所以我想研究一下这一点，作为下一个Current next。」
+
+Controlling source / programme:
+
+- \`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md\`
+- \`Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md\`
+
+Current status:
+
+~~~text
+working construct = preformal coherence sensitivity;
+target = early relational / global coherence discrimination before full explicit articulation;
+universal capacity = hypothesis with substantial neighboring evidence;
+individual-difference structure = open;
+distinct new faculty = NOT ESTABLISHED;
+author exceptionalism = NOT ASSUMED;
+author SRT/AI dialogue = naturalistic case only;
+SRT explanatory gain = OPEN;
+CURRENT NEXT = CN-1 literature/construct hardening + CN-2 retrospective protocol freeze;
+canonical edit = NO.
+~~~
+
+Strong guards:
+
+~~~text
+subjective certainty != accuracy;
+intuition != expertise automatically;
+gist / fluency / familiarity / statistical learning may absorb the phenomenon;
+single-task performance != stable trait;
+naturalistic author successes must be sampled together with reversals / false alarms;
+SRT must be allowed to add zero incremental explanatory value.
+~~~
+
+Neighbor anchors include:
+- Bowers et al. 1990 semantic-coherence intuition;
+- Reyna / Fuzzy-Trace Theory / gist intuition;
+- Kahneman & Klein 2009 intuitive-expertise boundary conditions;
+- statistical-learning development / individual-difference work;
+- 2024 semantic-coherence priming work.
+
+---
+
 ### 0.3a High-priority gate-geometry / qualia route — 2026-09-25
 
 Author source, second adjudication and accepted analysis:
@@ -833,9 +879,31 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-No new `CURRENT NEXT` is assigned in this landing.
+CURRENT NEXT = preformal coherence sensitivity / theoretical-shape intuition research programme;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md;
 
-The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B is frozen at noncanonical P3 under §0.3b. A later substantive next must be assigned by a separate author instruction rather than inherited from this closed package.
+Immediate execution order:
+
+~~~text
+CN-1 = literature / construct map;
+CN-2 = retrospective naturalistic-case protocol freeze;
+CN-3 = repository case extraction only after CN-2 is frozen;
+CN-4 = preregisterable behavioral battery;
+CN-5 = small multi-person pilot.
+~~~
+
+Research framing:
+
+~~~text
+universal human capacity first;
+individual differences second;
+author case = high-intensity naturalistic case, not privileged evidence;
+SRT mapping = downstream optional interpretation;
+canonical SRT edit = NO.
+~~~
+
+The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B remains frozen at noncanonical P3 under §0.3b and is not the active CURRENT NEXT. GRG fusion lane remains paused; no third rescue domain / BCTB T2 / v0.4 follows from this cognitive research route.
 
 ## Historical navigation
 
