@@ -19,11 +19,11 @@ tags: [Cognition, PreObject, Objectification, NeighborMap, Discriminator, Skille
 
 > Role: machine research audit for the active CURRENT NEXT.
 >
-> Boundary: this file does not adjudicate SRT ontology, does not modify canonical owners, and does not claim scientific distinctiveness. It records mature-neighbor pressure on the current neutral research construct and identifies where author adjudication is still required before CN-3 preregistration.
+> Boundary: this file does not adjudicate SRT ontology, does not modify canonical owners, and does not claim scientific distinctiveness. Its original temporal-priority framing is superseded in-place by the author's later same-day correction recorded in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md`.
 
-## 0. Executive verdict
+## 0. Executive verdict — corrected after author adjudication
 
-The active root intuition remains scientifically researchable, but the current headline contrast
+The first machine pass correctly found that many mature theories already support organization before explicit articulation, but it framed the root problem too narrowly as:
 
 ~~~text
 object-first
@@ -31,35 +31,39 @@ vs
 orientation-first
 ~~~
 
-is too coarse to carry the programme by itself.
+The author corrected this.
 
-Multiple mature families already support substantial forms of organization, anticipation, action-readiness, relational geometry, or segmentation before explicit object / rule articulation. Therefore:
+The root problem is now:
 
-~~~text
-orientation-first by itself
-!= residual SRT burden
-!= sufficient discriminator
-!= novelty
-~~~
+> **How is the whole L0-facing attractor / generative field formed, unified, maintained, normalized and recursively reshaped?**
 
-The strongest current result is a comparison-axis correction:
+Therefore the earlier candidate:
 
 ~~~text
-DO NOT ASK ONLY:
-does organization precede explicit objects?
-
-ASK:
-what kind of organization exists before explicit objectification,
-what is already fixed in its representational / state space,
-and does the organization merely weight alternatives
-or change which distinctions can become stable objects / events / states?
+change in objectifiability / partition structure
 ~~~
 
-CN-1 therefore produces a useful pressure map, but no SRT-specific residual is established.
+is retained only as one downstream consequence / discriminator of field formation.
 
-CN-2 should be revised from a binary object-first/orientation-first contrast to a multi-family discriminator.
+The mature-neighbor findings remain useful, but they must now be re-read through a field-formation matrix:
 
-CN-3 toy-world preregistration should remain HOLD pending author adjudication of the residual burden.
+~~~text
+FORMATION
+UNITY
+DIRECTION
+NORMALIZATION
+POSITION / BEARER INDEXING
+PERSISTENCE / GLUE
+NONCLOSURE
+OBJECTIFICATION
+RECURSION
+~~~
+
+The strongest immediate burden is not novelty.
+
+It is to determine how each comparator constructs and maintains its global organization and whether the SRT-facing synthesis adds a coherent burden beyond those mechanisms.
+
+CN-3 remains HOLD until that architecture is clearer.
 
 ---
 
@@ -693,11 +697,11 @@ This recommendation is M-level analysis, not author adjudication.
 ## 8. Current programme disposition
 
 ~~~text
-CN-1 neighbor map = PRELIMINARY COMPLETE / STRONG ABSORPTION FOUND
-CN-2 binary discriminator = REVISE
-orientation-first alone = NOT DISTINCTIVE
-leading residual candidate = change in objectifiability / partition structure
-residual status = OPEN / AUTHOR ADJUDICATION REQUIRED
+CN-1 first neighbor pass = COMPLETE AS INPUT / REFRAME REQUIRED AROUND FIELD FORMATION
+CN-2 temporal binary discriminator = SUPERSEDED
+orientation-first alone = NOT THE ROOT BURDEN
+root burden = whole L0-facing field formation / unity / maintenance / normalization / recursion
+partition-objectifiability = downstream discriminator candidate
 CN-3 toy-world preregistration = HOLD
 preformal coherence assay = RETAIN downstream
 canonical edit = NO
