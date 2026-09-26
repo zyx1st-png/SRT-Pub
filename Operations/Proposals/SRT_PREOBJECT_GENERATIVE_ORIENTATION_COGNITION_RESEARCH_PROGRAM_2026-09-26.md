@@ -12,6 +12,7 @@ priority: current_next
 research_mode: U_to_TEST
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
   - Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
@@ -20,45 +21,61 @@ tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeomet
 
 # Research programme — pre-object generative orientation of cognition
 
-> **Purpose:** test whether human cognition is better described as objectification emerging from an already organized, continuous generative orientation rather than as global direction assembled only from explicit objects / knowledge / rules.
+> **Purpose:** investigate how a unified, continuous, generative and normalizing L0-facing cognitive orientation / attractor field is formed, maintained and recursively reshaped, and how local objectifications arise within it. Temporal object-first vs orientation-first ordering is a secondary comparator, not the root question.
 >
 > **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
 
 ---
 
-## 1. Root hypothesis
+## 1. Root question — whole-field formation, not temporal priority
 
-### Object-first family
-
-~~~text
-objects / representations / rules
--> relations among them
--> global model / attractor / direction
--> behavior / intuition.
-~~~
-
-### Pre-object generative-orientation family
+The 2026-09-26 author correction supersedes a machine-side overemphasis on:
 
 ~~~text
-continuous directional organization
--> selective normalization / coarse-graining
--> local objectification
--> explicit objects / concepts / rules
--> retention
--> recursive reshaping of later orientation.
+object-first
+vs
+orientation-first
 ~~~
 
-The research question is not whether explicit objects exist.
+The root question is:
 
-It is:
+> **How does a mature cognitive system form and maintain one whole L0-facing generative orientation / attractor field that is directional, continuous, selectively normalizing, position-sensitive and still open to new objectification?**
 
-> **Are explicit objects the primary building blocks of global cognitive direction, or are they stabilized local cuts within a prior continuous organization?**
+This is not primarily a question of which item occurs earlier in time.
+
+The programme must distinguish:
+
+~~~text
+BOOTSTRAP BURDEN:
+why actuality / generativity is non-flat at all
+-> primitive Selection / generativity
+
+MATURE COGNITIVE FIELD BURDEN:
+how recurrent history, Bearer / operative position,
+structural Expectation, current body-world coupling,
+gate / normalization geometry, support and maintenance
+become one self-conditioning whole-field organization
+
+LOCAL OBJECTIFICATION BURDEN:
+how determinate objects / relations / rules
+become locally stabilized foreground cuts within that field
+
+RECURSIVE BURDEN:
+how those local stabilizations / retained histories
+reshape the next whole-field organization without exhausting its source.
+~~~
+
+Dependency arrows here are not temporal arrows.
+
+The programme therefore treats explicit object formation, partition / objectifiability and early coherence judgment as consequences / windows on the deeper field-formation problem.
 
 ---
 
 ## 2. Neutral working construct
 
-> **Pre-object generative orientation**: a structured, continuous, action- and expectation-sensitive organization that biases what differences become salient, separable, reachable or objectifiable before a complete explicit object / rule representation is available.
+> **L0-facing whole-field generative orientation**: a structured, continuous and self-conditioning organization of differential reachability, relevance, equivalence, boundary and transition tendencies through which some differences become load-bearing, others are normalized / backgrounded, and local objectifications can stabilize.
+
+This is an analytic research construct, not an independent L0 substance or literal physical field.
 
 Necessary guards:
 
@@ -259,9 +276,9 @@ Keep its tasks, but reinterpret them.
 
 A useful programme must distinguish pre-object orientation from hidden object knowledge.
 
-### P1 — orientation before object identification
+### P1 — measurable whole-field organization
 
-Global directional / contextual state should predict later object interpretation before participants can identify the relevant object or rule.
+A global / distributed state should be recoverable as more than a collection of independent local biases: perturbations should reveal integrated changes in reachability, salience, equivalence, transition tendency or objectification across multiple local readouts.
 
 ### P2 — same objects, different orientation
 
@@ -515,37 +532,48 @@ x retained organization
 
 ## 14. Immediate CURRENT NEXT
 
-Replace the prior CN-1 / CN-2 framing with:
+### CN-1 — whole-field formation / neighbor map
 
-### CN-1 — root construct / neighbor map
+For each strong neighbor, ask:
 
-Map:
-- Gestalt;
-- ecological-enactive / Skilled Intentionality;
-- operative intentionality;
-- predictive processing;
-- metastable coordination dynamics;
-- attractor / manifold models;
-- statistical learning;
-- scene gist;
-- object individuation;
-- affordance learning.
+- what generates its global / field-like organization?
+- what makes many local processes one sufficiently integrated field?
+- what gives it direction without a central chooser?
+- how are equivalence, backgrounding and load-bearing difference produced?
+- what roles do history, embodiment, expectation and position play?
+- how does the field persist while local contents change?
+- how do local objectifications / events / affordances arise from it?
+- how do those local stabilizations feed back into later global organization?
+- what prevents sedimentation from closing the system into a fixed grammar?
 
 Output:
-SAME / OVERLAP / RESIDUAL table.
+FORMATION / UNITY / DIRECTION / NORMALIZATION / POSITION / PERSISTENCE / NONCLOSURE / OBJECTIFICATION / RECURSION matrix.
 
-### CN-2 — object-first vs orientation-first discriminator map
+### CN-2 — field-formation architecture discriminator map
 
-For each candidate experiment, specify:
-- what object-first predicts;
-- what orientation-first predicts;
-- what both predict;
-- what result would absorb the new construct.
+Compare candidate architectures by asking:
 
-### CN-3 — toy-world preregistration
+- what must already be given before the field exists?
+- what variables / dimensions / state spaces are prespecified?
+- what binds distributed processes into one operative whole?
+- does expectation merely reweight a field or help reshape its reachability geometry?
+- is field unity indexed to a continuing position / Bearer or only environment-relative?
+- can the architecture change its own effective partition / equivalence relations?
+- how does retained history modify the field?
+- what would count as full absorption of the SRT-facing burden?
 
-Preferred first test:
-a novel environment with learned transition / consequence structure before explicit object / rule naming.
+Temporal object-first vs orientation-first predictions remain a secondary column only.
+
+### CN-3 — field-formation experimental design
+
+Do not freeze the earlier toy-world preregistration yet.
+
+The first experiment should target a bounded component of field formation, not merely show learning before labels. Candidate designs must separate:
+- local statistical learning;
+- global field reorganization;
+- simple salience / value reweighting;
+- latent-state inference;
+- recutting / reachability-geometry change.
 
 ### CN-4 — reuse preformal-coherence tasks
 
@@ -609,7 +637,7 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= CN-1 root construct map + CN-2 discriminator map
+= CN-1 whole-field formation map + CN-2 field-formation architecture discriminator
 
 CANONICAL EDIT
 = NO
