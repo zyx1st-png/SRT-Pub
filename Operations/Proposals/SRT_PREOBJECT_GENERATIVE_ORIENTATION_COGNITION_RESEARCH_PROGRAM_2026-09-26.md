@@ -36,6 +36,46 @@ tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeomet
 
 ---
 
+## 0.1 Corrective convergence freeze after independent review
+
+The cognition / bridge / gating concept set is now **FROZEN for this package**.
+
+Author-direction decisions already licensed by the conversation are consolidated as:
+
+~~~text
+D-1
+= freeze the cognition / gating concept set;
+  consciousness-control work routes to HP-A / PH-AG and does not reopen HP-B.
+
+D-2
+= Gate / gating keeps the #1055 D-1 organization-level meaning:
+  a formed organization carrying a gating role.
+  Active relation-building is "bridge formation / relation formation",
+  not Gate by lexical identity.
+
+D-3
+= exactly ONE CURRENT NEXT:
+  freeze the corrected strong-baseline toy-simulation package,
+  then execute only after the freeze package passes.
+
+D-4
+= use C2':
+  conscious target (foreground_obj) recruits / stabilizes / reweights formed gating;
+  gate-objectification is a distinct route in which a formed gate / constraint
+  itself becomes foreground_obj under persistent consequential conflict.
+~~~
+
+No new theory construct, operator family, evidence ladder, or CURRENT NEXT may be added before the toy-simulation result unless required to repair a contradiction or governance defect.
+
+All CN / MG / GK / H / W / AF / C1-C2 numbering below is **provenance / supporting work-package notation only**. It does not create additional CURRENT NEXT items or repository routing authority.
+
+Control-line foreground vocabulary in this programme follows:
+- **foreground_obj** = cognitive / interventional objectification;
+- **foreground_phen** = phenomenal foregrounding, outside this frozen package;
+- **manifest_OF** = ontological / generative manifestation typing, not inferred from access.
+
+---
+
 ## 1. Root question — whole-field formation, not temporal priority
 
 The 2026-09-26 author correction supersedes a machine-side overemphasis on:
@@ -709,7 +749,7 @@ G4 is the strongest neutral target and still does not establish primitive Select
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 
-### GK-1a — Gate genesis vs Gate operation
+### Supporting GK-1a — Gate genesis vs Gate operation
 
 Keep separate:
 
@@ -738,7 +778,7 @@ If NO:
 
 Strong mature-neighbor pressure from active perception / sensorimotor contingency / invariant-learning means that active relation formation itself is not an SRT novelty claim.
 
-### GK-1b — what drives bridge formation?
+### Supporting GK-1b — what drives bridge formation?
 
 Do not use one scalar driver such as “stability”.
 
@@ -784,7 +824,7 @@ Next minimal test:
 > Can a property such as “graspable” or “same shape across rotation” emerge from active bridge formation without presupposing an already formed object?
 
 
-### GK-1c — thin index × bridge reciprocal closure
+### Supporting GK-1c — thin index × bridge reciprocal closure
 
 The minimal property test forced an important correction:
 
@@ -844,7 +884,7 @@ The new next question is:
 > **What makes a reciprocal closure stable enough that its generative relations become transparent and the object is experienced as simply given?**
 
 
-### GK-1d — whole-field composition from transparent closures
+### Supporting GK-1d — whole-field composition from transparent closures
 
 Lower-level construction route now reads:
 
@@ -882,7 +922,7 @@ Do NOT force bridge genesis, closure and cross-closure composition into one unty
 Prefer a minimal typed operator family unless a genuinely shared nontrivial algebra is demonstrated.
 
 
-### GK-1e — typed Gate contract formalization
+### Supporting GK-1e — typed Gate contract formalization
 
 Current formal result:
 
@@ -924,7 +964,7 @@ This preserves a possible common Gate family without making every constraint Gat
 
 All notation is local audit notation; the canonical symbol table is unchanged.
 
-### GK-1f — strong-baseline toy simulation package
+### Supporting GK-1f — strong-baseline toy simulation package
 
 A bounded simulation design now exists with:
 - no learner-side object ID / property label / complete state inventory;
@@ -956,7 +996,7 @@ Before code execution, freeze:
 - zero-gain rules;
 - seeds / repetition policy.
 
-### MG-1 — multilevel gating composition / strongest-neighbor map
+### Supporting MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
 - hierarchical motor control;
@@ -975,7 +1015,7 @@ Ask:
 - which parts explain gate revision without phenomenality?
 - what, if anything, is added by gate-objectification + recursive writeback?
 
-### MG-2 — access -> control -> ownership bridge
+### Supporting MG-2 — access -> control -> ownership bridge
 
 Do not collapse three separate questions.
 
@@ -1106,12 +1146,9 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= GK-1 typed Gate family now provisionally coherent
-  + GK-1e preserve Gate as shared contract over Form / Close / Compose, not one equation
-  + GK-1f freeze strong-baseline toy simulation package before execution
-  + explicitly allow translation / zero gain if B1/B2 absorb the architecture
-  + keep human G2-G4 experiment HOLD
-  + keep canonical Gate definition / symbol registration HOLD
+= freeze the corrected strong-baseline toy-simulation package;
+  after the freeze package passes, execute that simulation only.
+  No concept expansion, human G2-G4 execution, or canonical Gate hardening before the result.
 
 CANONICAL EDIT
 = NO
