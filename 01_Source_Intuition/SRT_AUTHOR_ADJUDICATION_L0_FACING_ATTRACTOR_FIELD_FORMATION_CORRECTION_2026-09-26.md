@@ -201,25 +201,30 @@ The live burden is whether no achieved objectification / grammar / retained orga
 Current source-level synthesis:
 
 ~~~text
-primitive generativity / Selection
-x retained vertical organization
-x formed Bearer / operative position where paid
-x structural Expectation
-x current body-world coupling
-x support / glue / friction-bearing maintenance
--> whole L0-facing generative field
--> gate geometry / normalization / reachability organization
--> differentiated actualisation
--> local foregrounding / objectification
--> explicit object / relation / rule where stabilized
--> retained efficacy / history
--> recursive reshaping of the whole L0-facing field
--> ...
+SELECTION / primitive generativity
+= the mode of genuine actualised non-neutral differentiation;
+  NOT one separable factor alongside formed contributors.
+
+Within that Selection-realized process, formed contributors include:
+  retained vertical organization
+  + formed Bearer / operative position where independently paid
+  + structural Expectation
+  + current body-world coupling
+  + support / glue / friction-bearing maintenance
+
+These formed contributors condition:
+  whole L0-facing generative organization
+  -> formed gate geometry / normalization / reachability organization
+  -> differentiated actualisation
+  -> local objectification
+  -> explicit object / relation / rule where stabilized
+  -> retained efficacy / history
+  -> recursive reshaping of later formed conditions.
 ~~~
 
-This is a dependency / self-conditioning cycle.
+All listed contributors are themselves Selection-realized. Primitive Selection is the mode in which actual differentiation occurs, not a hidden operator or multiplicand acting on an otherwise completed field.
 
-It is not a universal temporal ladder.
+This is a dependency / self-conditioning cycle, not a universal temporal ladder.
 
 ---
 
