@@ -551,18 +551,39 @@ FORMATION / UNITY / DIRECTION / NORMALIZATION / POSITION / PERSISTENCE / NONCLOS
 
 ### CN-2 — field-formation architecture discriminator map
 
-Compare candidate architectures by asking:
+Do not treat distributed parameter update, latent-state update and geometry reconstruction as mutually exclusive rivals.
 
-- what must already be given before the field exists?
-- what variables / dimensions / state spaces are prespecified?
-- what binds distributed processes into one operative whole?
-- does expectation merely reweight a field or help reshape its reachability geometry?
-- is field unity indexed to a continuing position / Bearer or only environment-relative?
-- can the architecture change its own effective partition / equivalence relations?
-- how does retained history modify the field?
-- what would count as full absorption of the SRT-facing burden?
+Use a cross-level decomposition:
 
-Temporal object-first vs orientation-first predictions remain a secondary column only.
+~~~text
+H1 = implementation / constraint / parameter change
+H2 = latent-state / representation / generative-model organization
+H3 = effective reachability / differentiability geometry
+~~~
+
+A single learning process may instantiate all three.
+
+For each candidate experiment, specify:
+
+- H1: what implementation variables could carry the history?
+- H2: what latent / representational organization could explain the effect?
+- H3: what whole-system geometry of equivalence / boundary / transition / stability changes?
+- reduction test: can H3 be reconstructed from H1/H2 without explanatory loss?
+- increment test: does H3 add held-out prediction or causal leverage?
+- recursive test: does consequence-induced H3 change predict the next round of objectification?
+
+Use the evidence ladder:
+
+~~~text
+G1 descriptive geometry
+-> G2 predictive geometry
+-> G3 causal geometry
+-> G4 recursive field reconstitution
+~~~
+
+G4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
+
+Temporal object-first vs orientation-first remains a secondary comparison only.
 
 ### CN-3 — field-formation experimental design
 
@@ -637,7 +658,8 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= CN-1 whole-field formation map + CN-2 field-formation architecture discriminator
+= CN-1 whole-field formation map + CN-2 H1/H2/H3 cross-level discriminator
+  + first G2-G4 whole-field recutting design
 
 CANONICAL EDIT
 = NO
