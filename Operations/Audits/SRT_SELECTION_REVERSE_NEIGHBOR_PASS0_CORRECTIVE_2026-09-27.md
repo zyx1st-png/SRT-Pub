@@ -13,7 +13,6 @@ dependency:
   - Operations/Proposals/SRT_SELECTION_ANTI_TAUTOLOGY_STRONG_CASE_REVERSE_NEIGHBOR_METHOD_2026-09-27.md
   - Operations/Audits/SRT_SELECTION_REVERSE_NEIGHBOR_PASS0_2026-09-27.md
   - Operations/Audits/SRT_PR1074_ANTI_TAUTOLOGY_REVERSE_NEIGHBOR_INDEPENDENT_CONTENT_REVIEW_2026-09-27.md
-  - Operations/Audits/SRT_WHITEHEAD_SIMONDON_REVERSE_FACING_DIAGNOSIS_DRAFT_2026-09-26.md
 tags: [Selection, AntiTautology, ReverseNeighbor, Corrective, Whitehead, Simondon, ReversibleDynamics]
 ---
 
@@ -24,6 +23,8 @@ tags: [Selection, AntiTautology, ReverseNeighbor, Corrective, Whitehead, Simondo
 > **Canonical impact:** NONE.
 >
 > **Main correction:** “SRT can type / reconstruct / criticize a neighbor” is not enough. The stronger burden is whether SRT can preserve the explanatory job after removing the neighbor's thicker machinery.
+>
+> **Unmerged input provenance:** the burden-replacement idea was also developed in draft PR #1073's Whitehead/Simondon analysis. That draft is treated as review input only; its stronger neighbor diagnoses are not imported as repository dependencies.
 
 ## 1. Independent-review findings accepted
 
