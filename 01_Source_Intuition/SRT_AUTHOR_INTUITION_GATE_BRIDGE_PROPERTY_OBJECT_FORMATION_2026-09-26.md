@@ -341,6 +341,14 @@ rather than pure constructivism.
 
 ---
 
+## 9.1 Historical-neighbor guard
+
+Machine-side comparison must treat Piaget's constructive object line, the Poincaré–Cassirer transformation / group lineage, von Foerster's eigen-behavior object account, O'Regan & Noë's sensorimotor contingencies, and Gibsonian affordances as direct predecessors / absorbers.
+
+This note does not rewrite the author's intuition. It prevents the package from presenting active relation formation, transformation invariance, relational affordance, or constructed objecthood as SRT-specific merely because the same route was independently recovered here.
+
+---
+
 ## 10. Current next question opened by this intuition
 
 > **What is the minimum relational closure by which a set of state-to-state stabilizations stops behaving like disconnected transitions and begins to function as one reusable property / object structure?**
