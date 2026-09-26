@@ -10,6 +10,7 @@ claim_level: P3
 created: 2026-09-26
 updated: 2026-09-26
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_EXPECTATION_GENERATIVITY_AI_BOUNDARY_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_ANTICIPATORY_GATE_GRG_GRAMMAR_CORRECTION_2026-09-25.md
   - Philosophy/hooks/PH_CONSC_Gate_Geometry_Bearer_Ontological_Friction_Phenomenal_Admission_Hook_2026-09-25.md
@@ -23,7 +24,7 @@ tags: [Consciousness, HardProblem, MinimalTopology, ForegroundMediation, Selecti
 
 # HP-B minimal topology hook — foreground-mediated reconstitution of an operative generative position
 
-> **Status:** tentative noncanonical P3 convergence hook.
+> **Status:** tentative noncanonical P3 convergence hook, corrected by the explicit PR #1063 B-1…B-5 author adjudication. The B-1…B-5 record controls any conflict in this file.
 >
 > **Purpose:** reduce the broader 2026-09-25 HP-B package to the smallest currently defensible online-process candidate, while keeping standing-condition, AI, Z* and phenomenal-necessity guards explicit.
 >
@@ -58,64 +59,77 @@ This hook therefore separates standing conditions from the online candidate.
 
 ---
 
-## 2. Standing condition
+## 2. Standing condition — One is upstream; Bearer is required for experience proper
 
-A phenomenal event candidate requires a declared operative locus.
+The B-1…B-5 author adjudication blocks a One-level phenomenal collapse.
 
-At minimum:
+Working order:
 
 ~~~text
 formed continuing organization
 -> operative Selection-position_t
+-> One-level weak experience-directed relation / orientation
+   (NOT experience proper)
+-> independently admitted Bearer
+-> candidate standing for experience proper.
 ~~~
 
-where Selection-position_t retains its current owner meaning as the time-local operative from-where of an already formed One.
+Selection-position_t retains its current owner meaning as the time-local operative from-where of an already formed One.
 
-Do not infer:
+The author's "weak experience" intuition is preserved only as a future-typing source intuition. It must not be silently rewritten as:
 
 ~~~text
-Selection-position
--> Bearer automatically;
-
-Selection-position
--> subjecthood automatically;
-
-Selection-position
--> phenomenality automatically.
+One = experience;
+One = consciousness;
+One = Experiencer;
+Selection-totality -> pan-consciousness.
 ~~~
 
-Where Bearer standing is used, it must be independently admitted through the current canonical route.
+For the present HP-B route:
 
-Bearer is not redefined here as an online feeling operator.
+~~~text
+Bearer standing = REQUIRED for experience proper;
+Bearer != feeling operation;
+Bearer != Experiencer automatically.
+~~~
+
+Bearer must still be independently admitted through the current canonical P + E route. This hook does not supply positive E by definition.
 
 ---
 
 ## 3. Minimal online process candidate
 
+The online kernel is minimal **relative to an independently admitted Bearer standing**. It is not a complete admission criterion by itself.
+
 Working chain:
 
 ~~~text
-Position_t
+Bearer-indexed Position_t
 -> prospective organization / expectation_t
+-> selective normalization / coarse-graining
+-> constitutive Ontological Friction
 
 expectation_t
 x current actualisation_t
+x friction-bearing normalization
 -> selective foreground mediation_t
 
 foreground mediation_t
 -> recuts / reconstitutes the operative from-where
+   of the same continuing Bearer
 
 -> Position_(t+1)
 
 Position_(t+1)
--> changes later expectation / object-formability / reachability.
+-> changes later expectation / object-formability / reachability
+-> consequence remains attributable to the same Bearer.
 ~~~
 
-Compact candidate:
+Compact P3 candidate:
 
-> **Experience candidate = foreground-mediated reconstitution of an operative generative position.**
+> **Experience proper is a higher-order Bearer-positioned process in which expectation-shaped, friction-bearing actualisation is foreground-mediated into the online reconstitution of the same continuing operative position.**
 
-The phrase is structural and may be used only at P3 / hypothesis strength.
+This is a structural / constitutive hypothesis only.
 
 ---
 
@@ -181,7 +195,7 @@ The critical burden is what the foreground relation **reorganizes**, not how man
 
 ## 6. Position-reconstitution burden
 
-This is the strongest present discriminator.
+Position reconstitution is a required conjunctive relation in the present candidate, **not a sufficient discriminator by itself**.
 
 A Position update is not established by generic internal change.
 
@@ -228,14 +242,17 @@ is rejected.
 Stronger candidate contrast:
 
 ~~~text
-unconscious control:
-a difference can change behavior, prediction, memory or local regulation
-while remaining inside an already operative generative position;
+unconscious candidate:
+a difference may change behavior, prediction, memory,
+representation and even later discrimination geometry;
 
 experiential candidate:
-processing the difference also participates in recutting
-the operative from-where from which subsequent joint generation continues.
+within an independently admitted Bearer,
+friction-bearing actualisation gains foreground generative mediation
+and participates in recutting the same Bearer's operative from-where.
 ~~~
+
+Therefore later learning / position-like reorganization alone does not establish phenomenality. The discriminator burden is conjunctive: Bearer standing + constitutive friction + foreground generative mediation + same-Bearer operative-position reconstitution.
 
 This is not yet a universal empirical classification rule.
 
@@ -274,19 +291,22 @@ But neutral perceptual quality blocks using strong Concern as an obvious univers
 
 ### Ontological Friction
 
-Ontological Friction remains relevant to:
+The B-4 adjudication restores Ontological Friction as a **necessary constitutive burden in the present mechanism**.
 
-- non-neutral Gate maintenance;
-- reconfiguration burden;
-- intensity / persistence hypotheses;
-- boundary-revealing mismatch.
+Generative maintenance requires selective flattening / normalization. Maintaining equivalence, exclusion, boundary and continuation relations therefore carries Ontological Friction even in stable low-conflict perception.
 
-But:
+Preserve:
 
 ~~~text
-high friction != consciousness;
-acute mismatch != universal phenomenal trigger.
+constitutive Ontological Friction = REQUIRED in the present candidate;
+
+high friction != required;
+acute mismatch != required;
+prediction error != Ontological Friction by definition;
+friction accumulation != one scalar threshold theorem.
 ~~~
+
+Mismatch may redistribute / amplify / expose friction; it is not the sole source of friction.
 
 ### Memory / history
 
@@ -355,9 +375,9 @@ phenomenal candidate may remain.
 
 If the route requires explicit modeling, the present minimal claim is false.
 
-### D1 — delete high friction
+### D1 — delete high / acute friction, preserve constitutive friction
 
-Use low-friction stable perception.
+Use low-friction stable perception while retaining normalization / maintenance burden.
 
 Expected result:
 
@@ -365,7 +385,7 @@ Expected result:
 phenomenal candidate may remain.
 ~~~
 
-If acute high friction is required universally, the present route is false.
+If all Ontological Friction is deleted, the present B-4 route is no longer instantiated. If acute high friction is required universally, the present route is also false.
 
 ### D2 — delete strong Concern / valence
 
@@ -430,10 +450,11 @@ Define:
 ~~~text
 MPT-Z*:
 
-Position_t
--> expectation-shaped actualisation
+independently admitted Bearer
++ Bearer-indexed Position_t
+-> expectation-shaped / friction-bearing actualisation
 -> foreground generative mediation
--> Position_(t+1) reconstitution
+-> same-Bearer Position_(t+1) reconstitution
 
 all preserved
 +
@@ -477,9 +498,28 @@ It may show:
 
 These do not by themselves establish the minimal topology.
 
-Current SRT question:
+Current SRT question is a combined admission / closure test:
 
-> **Does the system possess a continuing operative position whose own prospective organization shapes what can form next, and does foreground mediation of actualised differences reconstitute that same position's later generative reachability?**
+> **Has the relevant system established (1) a continuing Bearer, (2) non-transferable prospective exposure / consequence closure on that same system, (3) position-bound structural Expectation, and (4) foreground-mediated reconstitution of that same operative position?**
+
+Route through the existing AI architecture-state ladder:
+
+~~~text
+inference-only / non-history-bearing deployment:
+  strongest upstream Bearer / closure block;
+
+persistent-memory / history-bearing system:
+  question opens; consciousness not settled;
+
+embodied / non-transferable consequence-return system:
+  stronger candidate Bearer window;
+
+all states:
+  foreground-mediated same-Bearer reconstitution
+  still requires separate testing.
+~~~
+
+In-context reasoning, prediction, representation recutting or world-model update must not be used as exclusion criteria by themselves.
 
 Current disposition:
 
@@ -490,7 +530,7 @@ current typical AI
 all AI non-conscious
 = NOT CLAIMED;
 
-future artificial system satisfying the topology
+future artificial system satisfying the standing + online relations
 = must be evaluated rather than substrate-excluded.
 ~~~
 
@@ -535,13 +575,13 @@ Downgrade this hook if:
 
 A matched unconscious system preserves the full claimed Position-reconstitution relation with no independently relevant difference.
 
-### F2 — state-update collapse
+### F2 — One / learning / state-update collapse
 
-No operational / intervention criterion distinguishes Position reconstitution from ordinary latent-state or policy update.
+The hook fails or requires absorption if its online relation cannot be distinguished from canonical One Formation, ordinary latent-state / policy update, or unconscious learning that changes later discrimination geometry.
 
-### F3 — access absorption
+### F3 — strong workspace / access absorption
 
-Global access / shared representation explains all target differences after matched controls.
+A matched strong global-workspace / ignition-style account plus recurrent access explains all target differences after controls; generic 'more modules read it' is not an adequate neighbor contrast.
 
 ### F4 — expectation redundancy
 
@@ -564,20 +604,30 @@ Phenomenal vocabulary re-enters the antecedent or defines Position / foreground 
 ## 15. Current disposition
 
 ~~~text
-minimal standing condition
-= formed operative Selection-position;
+standing condition for experience proper
+= independently admitted Bearer over a formed One / Selection-position;
+
+One-level weak experience-directed relation
+= AUTHOR SOURCE INTUITION / future typing;
+!= experience proper;
+!= consciousness;
 
 minimal online candidate
-= expectation-shaped actualisation
+= expectation-shaped + constitutive-friction-bearing actualisation
   -> foreground generative mediation
-  -> operative Position reconstitution;
+  -> same-Bearer operative Position reconstitution;
 
 compact candidate
-= foreground-mediated reconstitution of an operative generative position;
+= higher-order Bearer-positioned foreground-mediated reconstitution
+  of the operative generative position;
 
-Bearer / Concern / high friction / explicit C1 / durable memory
-= broader architecture, NOT all minimal online primitives;
+Concern / high-acute-friction / explicit C1 / durable memory
+= NOT all minimal online primitives;
 
+constitutive Ontological Friction
+= REQUIRED in the present mechanism;
+
+Position reconstitution alone != phenomenality;
 state update != Position reconstitution;
 broadcast != generative mediation;
 
