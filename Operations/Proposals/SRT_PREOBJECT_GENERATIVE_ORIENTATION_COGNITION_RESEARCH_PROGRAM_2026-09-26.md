@@ -12,53 +12,234 @@ priority: current_next
 research_mode: U_to_TEST
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
   - Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
+  - Operations/Audits/SRT_ACTIVE_GATE_BRIDGE_FORMATION_DRIVE_DECOMPOSITION_2026-09-26.md
+  - Operations/Audits/SRT_MINIMAL_PROPERTY_GENESIS_GRASPABILITY_WITHOUT_OBJECT_PREASSUMPTION_2026-09-26.md
+  - Operations/Audits/SRT_MINIMAL_OBJECT_CLOSURE_INDEX_BRIDGE_RECIPROCAL_STABILIZATION_2026-09-26.md
+  - Operations/Audits/SRT_OBJECT_GIVENNESS_GATE_TRANSPARENCY_FROM_RECIPROCAL_CLOSURE_2026-09-26.md
+  - Operations/Audits/SRT_WHOLE_FIELD_COMPOSITION_FROM_TRANSPARENT_CLOSURES_2026-09-26.md
+  - Operations/Audits/SRT_GATE_TYPED_OPERATOR_MINIMAL_FORMALIZATION_2026-09-26.md
+  - Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
 # Research programme — pre-object generative orientation of cognition
 
-> **Purpose:** test whether human cognition is better described as objectification emerging from an already organized, continuous generative orientation rather than as global direction assembled only from explicit objects / knowledge / rules.
+> **Purpose:** investigate how a unified, continuous, generative and normalizing L0-facing cognitive orientation / attractor field is formed, maintained and recursively reshaped, and how local objectifications arise within it. Temporal object-first vs orientation-first ordering is a secondary comparator, not the root question.
 >
 > **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
 
 ---
 
-## 1. Root hypothesis
+## 0.1 Corrective convergence freeze after independent review
 
-### Object-first family
+The cognition / bridge / gating concept set is now **FROZEN for this package**.
 
-~~~text
-objects / representations / rules
--> relations among them
--> global model / attractor / direction
--> behavior / intuition.
-~~~
-
-### Pre-object generative-orientation family
+Author-direction decisions already licensed by the conversation are consolidated as:
 
 ~~~text
-continuous directional organization
--> selective normalization / coarse-graining
--> local objectification
--> explicit objects / concepts / rules
--> retention
--> recursive reshaping of later orientation.
+D-1
+= freeze the cognition / gating concept set;
+  consciousness-control work routes to HP-A / PH-AG and does not reopen HP-B.
+
+D-2
+= Gate / gating keeps the #1055 D-1 organization-level meaning:
+  a formed organization carrying a gating role.
+  Active relation-building is "bridge formation / relation formation",
+  not Gate by lexical identity.
+
+D-3
+= exactly ONE CURRENT NEXT:
+  freeze the corrected strong-baseline toy-simulation package,
+  then execute only after the freeze package passes.
+
+D-4
+= use C2':
+  conscious target (foreground_obj) recruits / stabilizes / reweights formed gating;
+  gate-objectification is a distinct route in which a formed gate / constraint
+  itself becomes foreground_obj under persistent consequential conflict.
 ~~~
 
-The research question is not whether explicit objects exist.
+No new theory construct, operator family, evidence ladder, or CURRENT NEXT may be added before the toy-simulation result unless required to repair a contradiction or governance defect.
 
-It is:
+All CN / MG / GK / H / W / AF / C1-C2 numbering below is **provenance / supporting work-package notation only**. It does not create additional CURRENT NEXT items or repository routing authority.
 
-> **Are explicit objects the primary building blocks of global cognitive direction, or are they stabilized local cuts within a prior continuous organization?**
+Control-line foreground vocabulary in this programme follows:
+- **foreground_obj** = cognitive / interventional objectification;
+- **foreground_phen** = phenomenal foregrounding, outside this frozen package;
+- **manifest_OF** = ontological / generative manifestation typing, not inferred from access.
+
+---
+
+## 1. Root question — whole-field formation, not temporal priority
+
+The 2026-09-26 author correction supersedes a machine-side overemphasis on:
+
+~~~text
+object-first
+vs
+orientation-first
+~~~
+
+The root question is:
+
+> **How does a mature cognitive system form and maintain one whole L0-facing generative orientation / attractor field that is directional, continuous, selectively normalizing, position-sensitive and still open to new objectification?**
+
+This is not primarily a question of which item occurs earlier in time.
+
+The programme must distinguish:
+
+~~~text
+BOOTSTRAP BURDEN:
+why actuality / generativity is non-flat at all
+-> primitive Selection / generativity
+
+MATURE COGNITIVE FIELD BURDEN:
+how recurrent history, Bearer / operative position,
+structural Expectation, current body-world coupling,
+gate / normalization geometry, support and maintenance
+become one self-conditioning whole-field organization
+
+LOCAL OBJECTIFICATION BURDEN:
+how determinate objects / relations / rules
+become locally stabilized foreground cuts within that field
+
+RECURSIVE BURDEN:
+how those local stabilizations / retained histories
+reshape the next whole-field organization without exhausting its source.
+~~~
+
+Dependency arrows here are not temporal arrows.
+
+The programme therefore treats explicit object formation, partition / objectifiability and early coherence judgment as consequences / windows on the deeper field-formation problem.
+
+---
+
+## 1.1 Mechanism refinement — multilevel gating after author acceptance of C
+
+The 2026-09-26 author adjudication adds a stronger mechanism candidate.
+
+The whole field should no longer be treated only as a descriptive reachability geometry.
+
+Current candidate:
+
+~~~text
+distributed gates across multiple levels
+<-> cross-level coordination
+-> whole effective gating configuration
+-> action / objectification / transition field
+~~~
+
+The field geometry is therefore provisionally a system-level consequence / readout, while multilevel gate configuration is a candidate generative mechanism.
+
+The author specifically accepts the direction that a conscious intention can function as a foregrounded higher-order gate / objectification that constrains lower-level distributed execution without specifying its detailed motor algorithm.
+
+Mandatory guards:
+
+~~~text
+consciousness
+!= whole field
+!= central controller
+!= complete motor programme
+
+neural synchrony
+!= field by definition
+
+developmental bioelectric field
+!= EEG field
+!= cognitive gating field
+~~~
+
+The current mechanistic burden is:
+
+> **How do distributed gates become coordinated into one effective field, and how can a coarse foregrounded intention reconfigure that field without containing the detailed lower-level solution?**
+
+
+
+
+## 1.2 Gate refinement — from valve to stabilizing bridge
+
+A re-entered early author intuition proposes:
+
+> Gate may not primarily be binary pass / block. It may stabilize a bridge between otherwise distinct states; recurrent stable relations may be compressed as properties, and sufficiently coherent property structure may contribute to object formation.
+
+Current neutral translation:
+
+~~~text
+state variation
+-> stabilized transformation relation
+-> reusable invariant / property candidate
+-> coherent relational closure
+-> objectification candidate
+~~~
+
+This creates a new anti-overloading burden.
+
+Do not assume one Gate concept covers all of:
+
+~~~text
+R-pass:
+permit / suppress a transition
+
+R-bind:
+stabilize a repeatable relation across state change
+
+R-coarse:
+compress stable relations into equivalence / property / boundary structure
+~~~
+
+The supporting anti-overloading test asks whether these roles share a nontrivial common pattern or must remain split.
+
+A strong working shared pattern is now strengthened by explicit author clarification that the bridge is **actively formed**:
+
+> **Bridge formation is a selective stabilization process by which a system actively forms and maintains reusable relations across variation, thereby making some differences load-bearing and rendering others safely compressible for later generation and control. A formed result is called Gate / gating organization only where it acquires the already-routed organization-level gating role.**
+
+Current nontrivial requirements:
+
+~~~text
+K1 selectivity
+= not every possible relation is stabilized
+
+K2 active formation / maintenance
+= recurrent system participation is required
+
+K3 perturbation-sensitive usability
+= the bridge remains usable across a declared range of changes
+
+K4 future efficacy
+= the formed bridge changes later prediction / grouping / transition / action
+~~~
+
+This is machine analysis only.
+
+The same intuition may also help the access -> control bridge:
+
+~~~text
+mature target object
+= compressed access point into stabilized perceptual / causal / affordance /
+  action relations
+
+foreground target
+-> reactivate / reweight relational structure
+-> coordinated lower-gate change
+-> distributed execution
+~~~
+
+This connection is high-value but not established.
+
 
 ---
 
 ## 2. Neutral working construct
 
-> **Pre-object generative orientation**: a structured, continuous, action- and expectation-sensitive organization that biases what differences become salient, separable, reachable or objectifiable before a complete explicit object / rule representation is available.
+> **L0-facing whole-field generative orientation**: a structured, continuous and self-conditioning organization of differential reachability, relevance, equivalence, boundary and transition tendencies through which some differences become load-bearing, others are normalized / backgrounded, and local objectifications can stabilize.
+
+This is an analytic research construct, not an independent L0 substance or literal physical field.
 
 Necessary guards:
 
@@ -259,9 +440,9 @@ Keep its tasks, but reinterpret them.
 
 A useful programme must distinguish pre-object orientation from hidden object knowledge.
 
-### P1 — orientation before object identification
+### P1 — measurable whole-field organization
 
-Global directional / contextual state should predict later object interpretation before participants can identify the relevant object or rule.
+A global / distributed state should be recoverable as more than a collection of independent local biases: perturbations should reveal integrated changes in reachability, salience, equivalence, transition tendency or objectification across multiple local readouts.
 
 ### P2 — same objects, different orientation
 
@@ -513,39 +694,396 @@ x retained organization
 
 ---
 
-## 14. Immediate CURRENT NEXT
+## 14. Supporting work packages under the single CURRENT NEXT
 
-Replace the prior CN-1 / CN-2 framing with:
+### CN-1 — whole-field formation / neighbor map
 
-### CN-1 — root construct / neighbor map
+For each strong neighbor, ask:
 
-Map:
-- Gestalt;
-- ecological-enactive / Skilled Intentionality;
-- operative intentionality;
-- predictive processing;
-- metastable coordination dynamics;
-- attractor / manifold models;
-- statistical learning;
-- scene gist;
-- object individuation;
-- affordance learning.
+- what generates its global / field-like organization?
+- what makes many local processes one sufficiently integrated field?
+- what gives it direction without a central chooser?
+- how are equivalence, backgrounding and load-bearing difference produced?
+- what roles do history, embodiment, expectation and position play?
+- how does the field persist while local contents change?
+- how do local objectifications / events / affordances arise from it?
+- how do those local stabilizations feed back into later global organization?
+- what prevents sedimentation from closing the system into a fixed grammar?
 
 Output:
-SAME / OVERLAP / RESIDUAL table.
+FORMATION / UNITY / DIRECTION / NORMALIZATION / POSITION / PERSISTENCE / NONCLOSURE / OBJECTIFICATION / RECURSION matrix.
 
-### CN-2 — object-first vs orientation-first discriminator map
+### CN-2 — field-formation architecture discriminator map
+
+Do not treat distributed parameter update, latent-state update and geometry reconstruction as mutually exclusive rivals.
+
+Use a cross-level decomposition:
+
+~~~text
+H1 = implementation / constraint / parameter change
+H2 = latent-state / representation / generative-model organization
+H3 = effective reachability / differentiability geometry
+~~~
+
+A single learning process may instantiate all three.
 
 For each candidate experiment, specify:
-- what object-first predicts;
-- what orientation-first predicts;
-- what both predict;
-- what result would absorb the new construct.
 
-### CN-3 — toy-world preregistration
+- H1: what implementation variables could carry the history?
+- H2: what latent / representational organization could explain the effect?
+- H3: what whole-system geometry of equivalence / boundary / transition / stability changes?
+- reduction test: can H3 be reconstructed from H1/H2 without explanatory loss?
+- increment test: does H3 add held-out prediction or causal leverage?
+- recursive test: does consequence-induced H3 change predict the next round of objectification?
 
-Preferred first test:
-a novel environment with learned transition / consequence structure before explicit object / rule naming.
+Use the evidence ladder:
+
+~~~text
+E1 descriptive geometry
+-> E2 predictive geometry
+-> E3 causal geometry
+-> E4 recursive field reconstitution
+~~~
+
+E4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
+
+Temporal object-first vs orientation-first remains a secondary comparison only.
+
+### Supporting GK-1a — bridge genesis vs Gate operation
+
+Keep separate:
+
+~~~text
+GATE FORMATION / GENESIS
+variation / encounter
+-> active sampling / selective coupling
+-> recurrent traversal / correction
+-> stabilized reusable bridge
+
+GATE OPERATION / USE
+formed bridge
+-> current pass / suppress / weight / classify / guide
+-> downstream transition / objectification
+~~~
+
+Primary anti-unification test:
+
+> **Can pass / suppress gating be explained as the momentary use of actively formed bridge structure, while property / object formation is the longer-timescale stabilization and compression of that same structure?**
+
+If YES:
+- Gate may support a multiscale common kernel.
+
+If NO:
+- split control gating, relation formation and representation / coarse-graining rather than forcing one umbrella term.
+
+Strong mature-neighbor pressure from active perception / sensorimotor contingency / invariant-learning means that active relation formation itself is not an SRT novelty claim.
+
+### Supporting GK-1b — what drives bridge formation?
+
+Do not use one scalar driver such as “stability”.
+
+Current role decomposition:
+
+~~~text
+WHY THIS DIFFERENCE MATTERS
+-> relevance / priority; Concern where qualified
+
+WHAT CONTINUATION IS SOUGHT
+-> structural Expectation
+-> explicit current goal only where separately present
+
+WHAT IS ACTUALLY TRIED
+-> active selective coupling / Selection-facing actualisation
+
+WHY THE OLD BRIDGE MUST CHANGE
+-> friction / mismatch / failure
+
+WHAT CONSTRAINS SUCCESS
+-> world resistance / feedback
+
+WHAT MAKES THE RELATION A BRIDGE
+-> perturbation-tolerant reuse + retention
+
+WHAT MAKES THE CONSEQUENCE MINE
+-> Bearer-indexed return where independently paid
+~~~
+
+Critical correction:
+
+> **The system may actively create local variation in order to discover / construct a relation that is stable across variation.**
+
+So bridge formation seeks robust continuity across change, not immobility.
+
+A strong neutral consequence is:
+
+> **Active bridge formation partially constructs the geometry of the system's own future selectability.**
+
+This does not imply arbitrary construction of reality.
+
+Next minimal test:
+
+> Can a property such as “graspable” or “same shape across rotation” emerge from active bridge formation without presupposing an already formed object?
+
+
+### Supporting GK-1c — thin index × bridge reciprocal closure
+
+The minimal property test forced an important correction:
+
+~~~text
+property before rich object
+= viable
+
+property before every thin object index
+= too strong / not established
+~~~
+
+Keep distinct:
+
+~~~text
+I-thin
+= minimal tracked locus / 'this one'
+
+B_k
+= actively formed reusable bridge / relational property
+
+O-rich
+= richer object closure integrating multiple B_k around a continuing I-thin
+~~~
+
+Current object-closure candidate:
+
+> **rich object closure = reciprocal stabilization between a continuing thin index and a reusable bridge network.**
+
+Required pressures:
+- multiple bridges co-reinstantiate;
+- the index predicts bridge recurrence;
+- bridge pattern helps re-identify the index;
+- perturbations update several bridges coherently;
+- a boundary improves prediction / action;
+- the closure can re-enter after interruption.
+
+This yields a recursive Gate candidate:
+
+~~~text
+lower active bridges
+-> property structure
++ thin index
+-> higher object closure Gate
+-> constrains later lower bridge formation / action
+~~~
+
+The strict one-way chain:
+
+~~~text
+relation -> property -> first object
+~~~
+
+is therefore withdrawn as too strong.
+
+The new next question is:
+
+> **What makes a reciprocal closure stable enough that its generative relations become transparent and the object is experienced as simply given?**
+
+
+### Supporting GK-1d — whole-field composition from transparent closures
+
+Lower-level construction route now reads:
+
+~~~text
+active bridge formation
+-> reusable relational property
+-> thin-index × bridge reciprocal closure
+-> object / skill / habit closure
+-> transparency / givenness
+-> cross-closure compatibility / competition / nesting
+-> whole-field topology
+~~~
+
+Current neutral field formulation:
+
+> **The whole cognitive field is the dynamically maintained compatibility, competition, nesting and transition structure among active and latent Gate closures, together with the conditions governing which new bridges can form and which existing closures can be revised.**
+
+Short form:
+
+> **field = current organization of mutual Gate-possibility.**
+
+Composition must earn explanatory status through:
+- cross-closure prediction;
+- intervention propagation;
+- structured conflict;
+- higher-level compression without microdetail;
+- recursive effects on later bridge learning.
+
+If those fail, whole-field language remains decorative summary only.
+
+Next formalization guard:
+
+Do NOT force bridge genesis, closure and cross-closure composition into one untyped equation merely to achieve elegance.
+
+Prefer a minimal typed operator family unless a genuinely shared nontrivial algebra is demonstrated.
+
+
+### Supporting GK-1e — typed Gate contract formalization
+
+Current formal result:
+
+~~~text
+Form
+= active bridge formation / revision
+
+Close
+= reciprocal stabilization of thin index + bridge family
+
+Compose
+= compatibility / competition / nesting topology over closures
+~~~
+
+Do NOT identify them by equation.
+
+Use a shared audit contract instead:
+
+~~~text
+StabilizationLike(T)
+requires:
+- selective differentiation;
+- active or history-dependent stabilization;
+- perturbation-bounded robustness;
+- future-selectability efficacy;
+- compression with preserved control relevance;
+- revisability under mismatch / new evidence.
+~~~
+
+Then test:
+
+~~~text
+StabilizationLike(Form) ?
+StabilizationLike(Close) ?
+StabilizationLike(Compose) ?
+~~~
+
+This preserves a possible common Gate family without making every constraint Gate-like.
+
+All notation is local audit notation; the canonical symbol table is unchanged.
+
+### Supporting GK-1f — strong-baseline toy simulation package
+
+A bounded simulation design now exists with:
+- no learner-side object ID / property label / complete state inventory;
+- active vs yoked matched-exposure regimes;
+- B0 static feature baseline;
+- B1 strong action-conditioned latent-state / world-model baseline;
+- B2 object-file / slot + action-transition baseline;
+- typed architecture arm ARM_TYPED = Form -> Close -> Compose;
+- explicit zero-gain rules.
+
+The simulation only earns Gate increment if it shows more than benchmark fit:
+
+~~~text
+held-out relational transfer
++ intervention localization
++ recursive learning prediction
++ cross-level compression
++ failure-mode specificity
+~~~
+
+If strong B1 / B2 absorb the same effects, record translation / zero gain.
+
+Before code execution, freeze:
+- environment generator;
+- learner inputs;
+- baseline capacities;
+- held-out splits;
+- metrics;
+- zero-gain rules;
+- seeds / repetition policy.
+
+### Supporting MG-1 — multilevel gating composition / strongest-neighbor map
+
+Before freezing a new experiment, compare:
+- hierarchical motor control;
+- affordance competition;
+- basal-ganglia action gating;
+- cognitive-control / working-memory gating;
+- hierarchical active inference;
+- Global Neuronal Workspace / conscious access;
+- cross-regional temporal coordination;
+- multiscale developmental bioelectric control as architecture analogy only.
+
+Ask:
+- which parts already explain abstract intention without detailed execution?
+- which parts explain distributed gate coordination?
+- which parts explain conscious access but not gate revision?
+- which parts explain gate revision without phenomenality?
+- what, if anything, is added by gate-objectification + recursive writeback?
+
+### Supporting MG-2 — access -> control -> ownership bridge
+
+Do not collapse three separate questions.
+
+~~~text
+ACCESS:
+is the target consciously / globally available?
+
+CONTROL:
+does the target become a structuring bias that changes later gating?
+
+OWNERSHIP:
+is that controlled direction integrated into the continuing bearer /
+concern / consequence structure as its own?
+~~~
+
+Minimal control route:
+
+~~~text
+target / instruction
+-> maintenance
+-> control allocation
+-> structuring bias
+-> multilevel gating
+-> distributed execution
+~~~
+
+This route does NOT require bearer-owned concern by definition. Rapid instructed task learning is a strong mature-neighbor pressure.
+
+Then separately:
+
+~~~text
+continuing One / Bearer
++ concern / stake
++ self-related access
++ consequence return
++ history writeback / revision
+-> stronger agency / ownership candidate
+~~~
+
+Target objectification and gate objectification also remain distinct:
+
+~~~text
+foreground target
+-> can guide multilevel control
+
+persistent unresolved conflict
+-> gate / expectation itself may become foreground
+-> reflective revision
+~~~
+
+The strongest next question is:
+
+> What converts an accessible target into a control-effective structuring bias, and what additional conditions convert that controlled direction into bearer-owned agency?
+
+### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
+
+Do not freeze the earlier toy-world or E2-E4 recutting design yet.
+
+The experimental line remains useful, but the upstream mechanism has changed. A later design must distinguish:
+- local statistical learning;
+- global field reorganization;
+- simple salience / value reweighting;
+- latent-state inference;
+- multilevel gate reconfiguration;
+- conscious broadcast alone;
+- conscious gate-objectification / revision;
+- recutting / reachability-geometry change.
 
 ### CN-4 — reuse preformal-coherence tasks
 
@@ -609,7 +1147,9 @@ SRT GAIN
 = OPEN
 
 CURRENT NEXT
-= CN-1 root construct map + CN-2 discriminator map
+= freeze the corrected strong-baseline toy-simulation package;
+  after the freeze package passes, execute that simulation only.
+  No concept expansion, human E2-E4 execution, or canonical Gate hardening before the result.
 
 CANONICAL EDIT
 = NO

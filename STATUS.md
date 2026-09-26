@@ -108,7 +108,7 @@ explicit objects / knowledge / rules = later stabilized cuts that can recursivel
 individual differences = downstream empirical question;
 author exceptionalism = NOT ASSUMED;
 SRT explanatory gain = OPEN;
-CURRENT NEXT = CN-1 root construct/neighbor map + CN-2 object-first vs orientation-first discriminator map;
+CURRENT NEXT = freeze the corrected strong-baseline cognition / bridge / gating toy-simulation package; after freeze passes, execute that simulation only;
 canonical edit = NO.
 ~~~
 
@@ -893,18 +893,17 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = pre-object generative orientation of cognition research programme;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md;
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md;
+CURRENT NEXT = freeze the corrected strong-baseline cognition / bridge / gating toy-simulation package; after freeze passes, execute that simulation only;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md;
 
 Immediate execution order:
 
 ~~~text
-CN-1 = root construct / strong-neighbor map;
-CN-2 = object-first vs orientation-first discriminator map;
-CN-3 = novel toy-world preregistration;
-CN-4 = preformal coherence tasks reused only as downstream assays;
-CN-5 = author naturalistic case deferred until neutral architecture hardens.
+1. corrective convergence / term routing / strong-baseline freeze;
+2. freeze environment, learner inputs, baselines, tuning-compute budgets, held-out splits, metrics, zero-gain rules and seeds;
+3. execute the frozen toy simulation only;
+4. human E2-E4 and further concept expansion remain HOLD until the simulation verdict.
 ~~~
 
 Research framing:
