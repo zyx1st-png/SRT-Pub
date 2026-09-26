@@ -64,6 +64,38 @@ The arrows are working structural relations, not a frozen temporal law.
 
 ---
 
+## 1.1 Terminology correction — active formation is not Gate by definition
+
+Repository routing already reserves **gating (organization-level)** for a **formed organization** that realizes / carries an admitted gating role.
+
+Therefore the author's explicit statement that the bridge is actively formed is retained as:
+
+~~~text
+bridge formation / relation formation
+-> stabilization
+-> formed gating organization where the result acquires a gating role
+-> current gate operation / use
+~~~
+
+Do NOT widen the word Gate to mean the formation process itself.
+
+Accordingly:
+
+~~~text
+bridge formation
+!= Gate by definition
+
+Gate
+= formed organization / relation structure once stabilized enough to carry gating work
+
+Gate operation
+= current use of that formed organization to bias / permit / suppress / classify / guide
+~~~
+
+This preserves the #1055 D-1 routing while retaining the author's active-formation intuition.
+
+---
+
 ## 2. Machine-side first interpretation — gate as relation-making stability
 
 A safer machine interpretation is:
@@ -394,7 +426,7 @@ The active-formation claim remains constrained by world-side resistance and regu
 
 The active-formation clarification suggests an important distinction.
 
-### Gate formation
+### Bridge formation / gating-organization genesis
 
 ~~~text
 variation / mismatch / exploratory interaction
@@ -403,6 +435,7 @@ variation / mismatch / exploratory interaction
 -> correction under feedback
 -> stabilization
 -> reusable relational bridge
+-> formed gating organization where a gating role is acquired
 ~~~
 
 ### Gate operation
@@ -413,7 +446,7 @@ formed bridge / relation
 -> downstream transition or objectification
 ~~~
 
-> **The valve-like role may be a downstream operation of an already formed Gate, while the deeper genetic role is the active construction and maintenance of the relation that makes later gating possible.**
+> **The valve-like role may be a downstream operation of an already formed Gate, while the active construction and maintenance of the relation that later becomes gating-capable belongs to bridge formation / genesis, not to Gate by lexical identity.**
 
 This is machine interpretation, not yet canonical.
 
@@ -489,7 +522,7 @@ This is the current author-facing root opened by the clarification.
 
 After the machine clarified:
 
-- Gate formation / genesis as active construction and stabilization of a reusable relation;
+- bridge formation / gating-organization genesis as active construction and stabilization of a reusable relation;
 - Gate operation / use as later pass / suppress / classify / guide over formed bridge structure;
 - active formation as world-constrained rather than arbitrary invention;
 
@@ -503,7 +536,7 @@ Under the repository continuation rule this records directional acceptance of th
 
 This does not yet authorize:
 - a canonical Gate definition;
-- identification of Gate formation with primitive Selection;
+- identification of bridge formation with primitive Selection;
 - a universal stability-maximization principle;
 - identification of bridge formation with consciousness or Bearer.
 
