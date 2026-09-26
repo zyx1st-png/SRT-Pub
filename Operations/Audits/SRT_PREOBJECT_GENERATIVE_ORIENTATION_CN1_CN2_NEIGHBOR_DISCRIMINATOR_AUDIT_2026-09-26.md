@@ -17,7 +17,7 @@ tags: [Cognition, PreObject, Objectification, NeighborMap, Discriminator, Skille
 
 # CN-1 / CN-2 audit — pre-object generative orientation of cognition
 
-> Role: machine research audit for the active CURRENT NEXT.
+> Role: machine research audit retained as supporting provenance; it no longer owns CURRENT NEXT after the 2026-09-26 convergence freeze.
 >
 > Boundary: this file does not adjudicate SRT ontology, does not modify canonical owners, and does not claim scientific distinctiveness. Its original temporal-priority framing is superseded in-place by the author's later same-day correction recorded in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md`.
 
