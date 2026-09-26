@@ -21,6 +21,8 @@ dependency:
   - Operations/Audits/SRT_ACTIVE_GATE_BRIDGE_FORMATION_DRIVE_DECOMPOSITION_2026-09-26.md
   - Operations/Audits/SRT_MINIMAL_PROPERTY_GENESIS_GRASPABILITY_WITHOUT_OBJECT_PREASSUMPTION_2026-09-26.md
   - Operations/Audits/SRT_MINIMAL_OBJECT_CLOSURE_INDEX_BRIDGE_RECIPROCAL_STABILIZATION_2026-09-26.md
+  - Operations/Audits/SRT_OBJECT_GIVENNESS_GATE_TRANSPARENCY_FROM_RECIPROCAL_CLOSURE_2026-09-26.md
+  - Operations/Audits/SRT_WHOLE_FIELD_COMPOSITION_FROM_TRANSPARENT_CLOSURES_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -840,6 +842,44 @@ The new next question is:
 > **What makes a reciprocal closure stable enough that its generative relations become transparent and the object is experienced as simply given?**
 
 
+### GK-1d — whole-field composition from transparent closures
+
+Lower-level construction route now reads:
+
+~~~text
+active bridge formation
+-> reusable relational property
+-> thin-index × bridge reciprocal closure
+-> object / skill / habit closure
+-> transparency / givenness
+-> cross-closure compatibility / competition / nesting
+-> whole-field topology
+~~~
+
+Current neutral field formulation:
+
+> **The whole cognitive field is the dynamically maintained compatibility, competition, nesting and transition structure among active and latent Gate closures, together with the conditions governing which new bridges can form and which existing closures can be revised.**
+
+Short form:
+
+> **field = current organization of mutual Gate-possibility.**
+
+Composition must earn explanatory status through:
+- cross-closure prediction;
+- intervention propagation;
+- structured conflict;
+- higher-level compression without microdetail;
+- recursive effects on later bridge learning.
+
+If those fail, whole-field language remains decorative summary only.
+
+Next formalization guard:
+
+Do NOT force bridge genesis, closure and cross-closure composition into one untyped equation merely to achieve elegance.
+
+Prefer a minimal typed operator family unless a genuinely shared nontrivial algebra is demonstrated.
+
+
 ### MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
@@ -994,9 +1034,11 @@ CURRENT NEXT
   + GK-1a Gate genesis vs Gate operation
   + GK-1b bridge-drive decomposition
   + GK-1c thin-index × bridge reciprocal closure
-  + explain transition from active relational maintenance to gate transparency / object givenness
-  + preserve property-before-rich-object but reject property-before-every-thin-index as universal
-  + test multiscale Gate recursion: lower bridges -> object closure -> later lower-gate constraint
+  + GK-1d whole-field composition from transparent closures
+  + first minimal typed formalization of:
+    bridge formation / closure / cross-closure compatibility
+  + preserve strong anti-overloading guard:
+    do not force one generic Gate equation if typed operators are required
   + MG-1/MG-2 retained downstream
   + G2-G4 experiment HOLD until the mechanism pass converges
 
