@@ -408,7 +408,7 @@ Working synthesis:
  correction|
     +---+---+
         v
-[G] stabilized reusable bridge
+[7] stabilized reusable bridge
         |
         v
 [H] property / invariant compression
