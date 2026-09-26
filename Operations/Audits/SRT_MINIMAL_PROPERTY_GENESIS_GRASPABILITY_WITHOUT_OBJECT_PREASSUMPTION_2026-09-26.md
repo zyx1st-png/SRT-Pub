@@ -448,7 +448,7 @@ Objecthood requires closure across several relations.
 
 This toy case gives a clearer multiscale Gate picture.
 
-### Gate genesis
+### Bridge genesis / gating-organization formation
 
 ~~~text
 active sampling / coupling
