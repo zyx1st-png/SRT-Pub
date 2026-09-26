@@ -547,7 +547,7 @@ SRT SELECTION-TYPING NECESSITY
 WHOLE-FIELD EMPIRICAL LADDER
 = E1 descriptive -> E2 predictive -> E3 causal -> E4 recursive
 
-CURRENT NEXT
+SUPPORTING WORK-PACKAGE ROUTE
 = design / formalize a E2-E4 whole-field recutting discriminator
   with strong H1/H2 baselines
 
