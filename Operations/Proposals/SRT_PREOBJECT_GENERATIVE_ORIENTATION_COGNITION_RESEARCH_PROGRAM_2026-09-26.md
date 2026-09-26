@@ -18,6 +18,7 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
+  - Operations/Audits/SRT_ACTIVE_GATE_BRIDGE_FORMATION_DRIVE_DECOMPOSITION_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -731,6 +732,52 @@ If NO:
 
 Strong mature-neighbor pressure from active perception / sensorimotor contingency / invariant-learning means that active relation formation itself is not an SRT novelty claim.
 
+### GK-1b — what drives bridge formation?
+
+Do not use one scalar driver such as “stability”.
+
+Current role decomposition:
+
+~~~text
+WHY THIS DIFFERENCE MATTERS
+-> relevance / priority; Concern where qualified
+
+WHAT CONTINUATION IS SOUGHT
+-> structural Expectation / current goal
+
+WHAT IS ACTUALLY TRIED
+-> active selective coupling / Selection-facing actualisation
+
+WHY THE OLD BRIDGE MUST CHANGE
+-> friction / mismatch / failure
+
+WHAT CONSTRAINS SUCCESS
+-> world resistance / feedback
+
+WHAT MAKES THE RELATION A BRIDGE
+-> perturbation-tolerant reuse + retention
+
+WHAT MAKES THE CONSEQUENCE MINE
+-> Bearer-indexed return where independently paid
+~~~
+
+Critical correction:
+
+> **The system may actively create local variation in order to discover / construct a relation that is stable across variation.**
+
+So bridge formation seeks robust continuity across change, not immobility.
+
+A strong neutral consequence is:
+
+> **Active bridge formation partially constructs the geometry of the system's own future selectability.**
+
+This does not imply arbitrary construction of reality.
+
+Next minimal test:
+
+> Can a property such as “graspable” or “same shape across rotation” emerge from active bridge formation without presupposing an already formed object?
+
+
 ### MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
@@ -883,11 +930,12 @@ SRT GAIN
 CURRENT NEXT
 = GK-1 weakest nontrivial active Gate kernel
   + GK-1a Gate genesis vs Gate operation
+  + GK-1b relevance / Expectation / Selection / friction / feedback / retention role decomposition
+  + minimal property-genesis test without presupposed object:
+    “graspable” or “same shape across rotation”
   + test whether pass/suppress is short-timescale use of actively formed bridge structure
   + test whether property/objectification is longer-timescale stabilization/compression of same structure
-  + MG-1 multilevel-gating composition map
-  + MG-2 access -> control -> ownership bridge
-  + Px / property / object historical re-entry
+  + MG-1/MG-2 retained downstream
   + G2-G4 experiment HOLD until the mechanism pass converges
 
 CANONICAL EDIT
