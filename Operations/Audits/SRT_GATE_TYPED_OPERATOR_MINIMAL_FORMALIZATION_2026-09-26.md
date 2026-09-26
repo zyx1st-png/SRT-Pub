@@ -340,7 +340,7 @@ but no system-side bridge formation / reusable organization is at issue
 -> wall alone is not a system-side gating organization
 ~~~
 
-The wall can participate in world resistance that shapes Gate formation.
+The wall can participate in world resistance that shapes bridge formation and later formed gating organization.
 
 ### Reject static label
 
