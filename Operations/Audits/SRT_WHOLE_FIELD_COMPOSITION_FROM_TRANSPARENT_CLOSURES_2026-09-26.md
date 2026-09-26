@@ -187,7 +187,7 @@ Neural metastability / large-scale coordination are mature implementation neighb
 
 ## 7. Composition relation CR6 — shared prospective direction
 
-Structural Expectation / current goal can bias several closures together.
+Structural Expectation can bias several closures through non-flat prospective shaping. An explicit current goal, where separately present, can additionally bias several closures at the task-control level. These are not identical.
 
 Example:
 
