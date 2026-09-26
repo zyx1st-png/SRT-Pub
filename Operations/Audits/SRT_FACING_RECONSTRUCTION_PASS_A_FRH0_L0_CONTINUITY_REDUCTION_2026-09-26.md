@@ -130,11 +130,51 @@ Thus the One-side continuity burden is not supplied by primitive Selection occur
 | generation is not execution of a completed prior option space | O0 + Selection term-of-art guard | FULLY ABSORBED |
 | prior formation materially matters later | history / L2-side retained efficacy | FULLY ABSORBED |
 | renewed organization is generated again through Selection | One / vertical reconstitution | FULLY ABSORBED |
-| continuation belongs to a relatively separable formed process | One / relative continuation separability | FULLY ABSORBED at current semantic strength |
+| continuation belongs to a relatively separable formed process | One / relative continuation separability | ABSORBED at current semantic strength; graded formed-closure burden typed separately in §6 R-0 |
 | current generation occurs from a formed operative locality | Selection-position | FULLY ABSORBED |
 | primitive generativity remains the source rather than history | Spine history / verticality guard | FULLY ABSORBED |
 
 ## 6. Residual search
+
+### R-0 — graded formed closure is NOT an O0 scalar
+
+The independent #1072 review correctly identifies one burden that the binary reduction table did not type explicitly:
+
+~~~text
+an already formed process can become more rigid / less revisable /
+less reconstructible without becoming metaphysically "fully preclosed".
+~~~
+
+O0 only owns the non-preclosure boundary. It does not define a scalar degree of openness.
+
+Route the graded burden downstream:
+
+~~~text
+increasing formed closure / rigidity
+= stronger retained constraints
++ lower generative reselectability
++ lower latent reconstructive reach
++ lower recut / structure-revision capacity,
+where established.
+~~~
+
+Therefore the working phrase `Position-relative L0-facing` is not retained as a term-of-art.
+
+At the limiting case, when a process appears to do nothing but execute a fully fixed transition structure, the question changes category:
+
+> **is there still genuine Selection, or only an analyst's redescription of determined transition?**
+
+That residual routes to the primitive Selection anti-tautology problem, not to a scalar O0 metric.
+
+Disposition:
+
+~~~text
+Position-relative L0-facing = RETIRE_CANDIDATE;
+graded closure = formed / downstream burden;
+limit case = anti-tautology OPEN.
+~~~
+
+### R-A — 'continuity through transformation'
 
 Potential residuals were tested:
 
@@ -156,7 +196,7 @@ current operative locality = Selection-position;
 genuine non-preclosed generativity when Selection occurs = primitive Selection / O0.
 ~~~
 
-No additional independent burden was found.
+No additional independent continuity burden was found. A separate **graded formed-closure** burden remains, but it is routed downstream through reselectability / latent reconstructive reach / retained constraint and does not justify retaining `L0-facing continuity` or `Position-relative L0-facing`.
 
 ## 7. Verdict
 
