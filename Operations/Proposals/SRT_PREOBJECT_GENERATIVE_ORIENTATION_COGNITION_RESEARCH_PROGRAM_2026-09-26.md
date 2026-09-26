@@ -19,6 +19,8 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
   - Operations/Audits/SRT_ACTIVE_GATE_BRIDGE_FORMATION_DRIVE_DECOMPOSITION_2026-09-26.md
+  - Operations/Audits/SRT_MINIMAL_PROPERTY_GENESIS_GRASPABILITY_WITHOUT_OBJECT_PREASSUMPTION_2026-09-26.md
+  - Operations/Audits/SRT_MINIMAL_OBJECT_CLOSURE_INDEX_BRIDGE_RECIPROCAL_STABILIZATION_2026-09-26.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -778,6 +780,66 @@ Next minimal test:
 > Can a property such as “graspable” or “same shape across rotation” emerge from active bridge formation without presupposing an already formed object?
 
 
+### GK-1c — thin index × bridge reciprocal closure
+
+The minimal property test forced an important correction:
+
+~~~text
+property before rich object
+= viable
+
+property before every thin object index
+= too strong / not established
+~~~
+
+Keep distinct:
+
+~~~text
+I-thin
+= minimal tracked locus / 'this one'
+
+B_k
+= actively formed reusable bridge / relational property
+
+O-rich
+= richer object closure integrating multiple B_k around a continuing I-thin
+~~~
+
+Current object-closure candidate:
+
+> **rich object closure = reciprocal stabilization between a continuing thin index and a reusable bridge network.**
+
+Required pressures:
+- multiple bridges co-reinstantiate;
+- the index predicts bridge recurrence;
+- bridge pattern helps re-identify the index;
+- perturbations update several bridges coherently;
+- a boundary improves prediction / action;
+- the closure can re-enter after interruption.
+
+This yields a recursive Gate candidate:
+
+~~~text
+lower active bridges
+-> property structure
++ thin index
+-> higher object closure Gate
+-> constrains later lower bridge formation / action
+~~~
+
+The strict one-way chain:
+
+~~~text
+relation -> property -> first object
+~~~
+
+is therefore withdrawn as too strong.
+
+The new next question is:
+
+> **What makes a reciprocal closure stable enough that its generative relations become transparent and the object is experienced as simply given?**
+
+
 ### MG-1 — multilevel gating composition / strongest-neighbor map
 
 Before freezing a new experiment, compare:
@@ -930,11 +992,11 @@ SRT GAIN
 CURRENT NEXT
 = GK-1 weakest nontrivial active Gate kernel
   + GK-1a Gate genesis vs Gate operation
-  + GK-1b relevance / Expectation / Selection / friction / feedback / retention role decomposition
-  + minimal property-genesis test without presupposed object:
-    “graspable” or “same shape across rotation”
-  + test whether pass/suppress is short-timescale use of actively formed bridge structure
-  + test whether property/objectification is longer-timescale stabilization/compression of same structure
+  + GK-1b bridge-drive decomposition
+  + GK-1c thin-index × bridge reciprocal closure
+  + explain transition from active relational maintenance to gate transparency / object givenness
+  + preserve property-before-rich-object but reject property-before-every-thin-index as universal
+  + test multiscale Gate recursion: lower bridges -> object closure -> later lower-gate constraint
   + MG-1/MG-2 retained downstream
   + G2-G4 experiment HOLD until the mechanism pass converges
 
