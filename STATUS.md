@@ -55,8 +55,8 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
-CURRENT NEXT = bounded corrective + final independent review of B-1…B-5 HP-B convergence; no canonical edit
-CURRENT NEXT OWNER = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
+HP-B PACKAGE = FROZEN / NONCANONICAL P3
+HP-B FREEZE OWNER = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md
 CASE2 SOURCE ADEQUACY = PASS
 CASE2 PRIMARY VERDICT = SOURCE_OWNED_DECOMPOSITION_NO_GRG_GAIN
 §8.1 COUNT = FRR case1 + engagement/recommender case2 = TWO ADEQUATE NO-GAIN CASES
@@ -70,7 +70,7 @@ BROADER CANONICAL GRG EXPANSION = HOLD
 D1-D5 ROUTING EXECUTION = COMPLETE / merged
 D1-D5 RESULT OWNER = Operations/Audits/SRT_GATE_GEOMETRY_QUALIA_D1_D5_BOUNDED_ROUTING_AUDIT_2026-09-25.md
 A-6..A-9 AUTHOR ADJUDICATION = COMPLETE / downstream noncanonical convergence continues through the 2026-09-26 B-1…B-5 owner
-A-6 RESULT = HP-B MECHANISM CANDIDATE REOPENED / HP-C retained / theorem not claimed
+A-6 RESULT = HP-B MECHANISM CANDIDATE FROZEN AT NONCANONICAL P3 / HP-C retained / theorem not claimed
 A-7 RESULT = tentative P3/P4 common-reconfiguration hook authorized
 A-8 RESULT = GRG operational architecture + name REOPENED / original telos retained / v0.4 not created
 A-9 RESULT = theoretical friction = Ontological Friction = canonical Psi_f concept family / contextual readings only
@@ -95,7 +95,7 @@ AUTHOR DIRECTION = ACCEPTED / HIGH RETRIEVAL PRIORITY / NONCANONICAL;
 SHORT-TERM TASK = OWNER CROSSWALK + COLLISION MAP + PATCH PREPARATION;
 FREEZE-A CANONICAL EDIT = NO in first pass;
 HP-B logical necessity = OPEN;
-HP-B positive mechanism candidate = ACTIVE / P3-P4;
+HP-B positive mechanism candidate = FROZEN / P3; P4 = TARGET;
 theoretical friction = Ontological Friction = canonical Psi_f concept family;
 gate geometry != Psi_f;
 Gate != primitive Selection;
@@ -164,12 +164,52 @@ canonical landing
 = HOLD.
 ~~~
 
-Current next:
+Freeze status:
 
 ~~~text
-apply only the bounded B-1…B-5 corrective;
-perform one final independent read-only review;
-then stop this HP-B package rather than reopen another additive theory cycle.
+HP-B PACKAGE = FROZEN / NONCANONICAL P3;
+
+frozen controlling source
+= 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1063_HPB_ONE_BEARER_AI_FRICTION_PR_ROUTING_2026-09-26.md;
+
+frozen hooks
+= PH_CONSC_Minimal_Phenomenal_Topology_Foreground_Mediated_Position_Reconstitution_Hook_2026-09-26.md
++ PH_CONSC_Gate_Geometry_Bearer_Ontological_Friction_Phenomenal_Admission_Hook_2026-09-25.md;
+
+frozen audit
+= SRT_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_CONVERGENCE_AUDIT_2026-09-26.md;
+
+allowed while frozen
+= typo / link / provenance / routing / STATUS bookkeeping only;
+
+not allowed while frozen
+= new HP-B terms / kernel conditions / hooks / P-level upgrades / canonical landing;
+
+reopen only by explicit author decision naming:
+  concrete P4 matched-control design ready to run;
+  actual failure-condition trigger;
+  canonical-owner stage requiring this material.
+~~~
+
+Known frozen OPEN tensions:
+
+~~~text
+O-1 weak-experience typing:
+  "One carries a weak experience-directed relation"
+  vs
+  "One is what experience is directed toward";
+  author's "any entity" wording is broader than current One-level typing.
+
+O-2 paradigm admission:
+  positive E / Bearer admission remains OPEN;
+  current human examples are paradigm assumptions, not proof from this route;
+  current AI = NOT ESTABLISHED must not be read as
+  "SRT proved humans conscious and AI non-conscious".
+
+O-3 friction discriminator:
+  constitutive Ontological Friction is necessary in the present mechanism
+  but not by itself discriminating;
+  a distribution / accumulation / load-bearing profile test remains OPEN.
 ~~~
 
 ### 0.4 Current GRG / repository-reconstruction route — 2026-09-23
@@ -793,29 +833,9 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-Current single next:
+No new `CURRENT NEXT` is assigned in this landing.
 
-```text
-HIGH-PRIORITY GATE-GEOMETRY / QUALIA BOUNDED ROUTING PATCH
-
-owner:
-Operations/Proposals/SRT_GATE_GEOMETRY_QUALIA_SHORT_TERM_ROUTING_PATCH_2026-09-25.md
-```
-
-Execution boundary:
-
-1. start from the 2026-09-25 author-adjudication record and accepted dialogue derivation trace;
-2. route GG-1..GG-8 through the declared L0/L1/L2, One/Bearer, Psi_f, Hard Problem, qualia, consciousness, Agency and GRG owners;
-3. produce D1-D5 only: owner crosswalk, semantic collision map, bounded patch list, revised Z6 deletion test and GRG contraction decision packet;
-4. do not edit Freeze-A canonical owners in the first pass;
-5. preserve `B_s -> B_p ?`, genuine Selection vs descriptive/modelled change, and all named One/Bearer/Experiencer non-identities as OPEN where currently OPEN;
-6. do not identify dialogue `friction` with canonical `Psi_f` without a separate semantic crosswalk;
-7. keep the GRG fusion lane paused; do not create v0.4, run BCTB T2, or acquire a third fusion domain from this route;
-8. stop after D1-D5 and return only substantive meaning decisions that require author adjudication.
-
-The former GRG latent-reach / post-stop-loss next is not discarded: its method-level burden is subsumed under Route H of this bounded patch, where the specific question is whether GRG should reconstruct gate / objectification geometry before inferring cross-domain grammar.
-
-The former 2026-09-21 87-item routing ledger remains provenance-only in the Phase-4 status snapshot linked from §0.5.
+The former high-priority Gate-Geometry / Qualia bounded routing patch is complete and retained as provenance only. HP-B is frozen at noncanonical P3 under §0.3b. A later substantive next must be assigned by a separate author instruction rather than inherited from this closed package.
 
 ## Historical navigation
 
