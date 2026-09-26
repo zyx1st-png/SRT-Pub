@@ -21,12 +21,12 @@ dependency:
   - Operations/Audits/SRT_FACING_RECONSTRUCTION_PASS_A_GATE_BRIDGE_PROPERTY_OBJECTIFICATION_2026-09-26.md
   - Operations/Audits/SRT_FACING_RECONSTRUCTION_PASS_A_FIELD_ATTRACTOR_REACHABILITY_2026-09-26.md
   - Operations/Audits/SRT_FACING_RECONSTRUCTION_PASS_A_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-26.md
-tags: [Facing, PassA, NegativeControl, PrimitiveSelection, O0, S0, Gate0, Simplification]
+tags: [Facing, PassA, BackImportChecklist, PrimitiveSelection, O0, S0, Gate0, Simplification]
 ---
 
-# Facing reconstruction Pass A — primitive Selection / O0 negative control
+# Facing reconstruction Pass A — primitive Selection / O0 back-import checklist
 
-> **Role:** eighth and final internal target of the v0.2 bounded Facing reconstruction pass.
+> **Role:** eighth and final internal target of the v0.2 bounded Facing reconstruction pass; a same-producer back-import self-check, not an experimental control.
 >
 > **Purpose:** verify that simplification did not silently back-import continuity, history, geometry, anticipation, reconstructibility or normativity into primitive Selection / O0.
 
@@ -48,15 +48,16 @@ These are not three independent substances or sequential mechanisms.
 
 ## 1. O0 — what remains
 
-Keep exactly:
+Source-typed keep set:
 
 ~~~text
-O0
+K — O0
 = Selection reality is not exhausted by completed determinate actuality
   and is not fully preclosed by an already-given outcome structure;
 
-primitive orientation
-= irreducible non-flat role-structure in primitive generativity.
+A — primitive orientation
+= irreducible non-flat role-structure in primitive generativity
+  (author-level source; not promoted to K by this checklist).
 ~~~
 
 Primitive orientation does **not** contain:
