@@ -183,13 +183,13 @@ This creates a new anti-overloading burden.
 Do not assume one Gate concept covers all of:
 
 ~~~text
-G-pass:
+R-pass:
 permit / suppress a transition
 
-G-bind:
+R-bind:
 stabilize a repeatable relation across state change
 
-G-coarse:
+R-coarse:
 compress stable relations into equivalence / property / boundary structure
 ~~~
 
