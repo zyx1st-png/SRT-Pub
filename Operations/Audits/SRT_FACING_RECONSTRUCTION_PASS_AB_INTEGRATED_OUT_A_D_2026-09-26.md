@@ -88,7 +88,7 @@ This is a routing map, not a new ontic ladder.
 | 2 | One / Selection-position / `formed Orientation` | no new primitive direction | Selection-position already owns current from-where | future asymmetry routed through formed relation / Expectation B | **KEEP One + Position; RETIRE formed Orientation** |
 | 3 | continuity / persistence / recurrence / Stable ISP / reselectability | no primitive continuity principle | stronger current standing varies by type | retention, recurrence, continued selectability and revision are typed downstream burdens | **KEEP typed burdens; retire generic umbrella use** |
 | 4 | Expectation / anticipation / `P_G` / `E_G` | none is primitive O0 direction | B can be operative relation; C0/C1 are formed realization; P_G is prospective research burden | history/models/orders can carry later shaping | **KEEP four-way split** |
-| 5 | Gate / bridge / property / object | bridge formation does not define primitive generation | current relation formation / Gate operation / objectification occur | Gate standing, invariants, closure and object support are retained structures | **KEEP but separate formation / standing / operation** |
+| 5 | Gate / bridge / property / object | bridge formation does not define primitive generation | current relation formation / Gate operation / objectification occur | formed Gate availability, invariants, closure and object support are retained structures | **KEEP but separate formation / standing / operation** |
 | 6 | attractor / field / reachability geometry | primitive field absorbed by O0 / retired | current whole organization may be field-like at systems level | learned/history-shaped geometry is formed/model-level | **DEMOTE root field; keep systems shorthand/model terms** |
 | 7 | reconstructibility / generative debt | not primitive openness | reopening / recutting may be enacted; current cut may remain stable | provenance/re-entry/deferred mismatch create later reconstruction conditions/burdens | **KEEP downstream, typed** |
 | 8 | primitive Selection / O0 control | O0 + S0 + finite positionality remain thin | no formed construct back-imported | no retained construct back-defines primitive | **NEGATIVE CONTROL PASS** |
@@ -178,7 +178,7 @@ B / C
 bridge formation
 != Gate;
 
-Gate standing
+formed Gate availability
 != Gate operation;
 
 whole field
