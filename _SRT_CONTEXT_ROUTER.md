@@ -416,6 +416,36 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 12b. Route: Human Intuition / Preformal Coherence / Theoretical-Shape Judgment
+
+**Use when the query mentions**: intuition, hunch, "something is wrong", coherence before explanation, theoretical shape, semantic coherence, gist, expert intuition, implicit learning, statistical learning, feeling of rightness, root-level correction, early mismatch detection, articulation lag.
+
+### Primary
+
+- \`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREFORMAL_COHERENCE_INTUITION_RESEARCH_DIRECTION_2026-09-26.md\`
+- \`Operations/Proposals/SRT_PREFORMAL_COHERENCE_INTUITION_RESEARCH_PROGRAM_2026-09-26.md\`
+
+### Secondary
+
+- \`Operations/Audits/SRT_PR1063_HPB_MINIMAL_TOPOLOGY_GRG_MULTIVIEW_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md\`（naturalistic-theory-correction provenance; not evidence of a universal trait）
+- \`Operations/Audits/SRT_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_CONVERGENCE_AUDIT_2026-09-26.md\`
+- \`Glossary/SRT_Live_Term_Router.md\`（only if a durable new term is later proposed）
+- \`SRT_EXP_MEASURE_MAP.md\`（only after neutral construct / protocol hardening）
+- \`_SRT_PSI_F_CANONICAL.md\`（only for downstream optional SRT mapping）
+
+### Boundary
+
+- **Preformal coherence sensitivity is a working neutral research construct, not canonical SRT terminology.**
+- Do not infer a unique author faculty from autobiographical / repository examples.
+- Do not equate confidence, familiarity, processing fluency, gist, expertise, statistical learning or insight with the target without comparison.
+- The critical temporal burden is: discrimination precedes adequate articulation and predicts something independently checkable.
+- Author dialogue history is a naturalistic case; all eligible successes, reversals and false alarms must be sampled under a frozen protocol.
+- SRT mapping is downstream and optional. Existing cognitive-science models must be allowed to fully absorb the effect.
+- Single intuition tasks often have weak psychometric reliability; use multi-task / aligned-structure designs before making trait claims.
+- This route is the active CURRENT NEXT as of 2026-09-26; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
+
+---
+
 ## 13. Route: Experimental Proxies / Measurement / Falsification
 
 **Use when the query mentions**: experiment, measurement, proxy, falsification, lab, operationalization, variables, protocol, empirical test, `HRV`, `SCR`, PCI proxy, Fisher proxy, ROS proxy, task switching, measure map.
