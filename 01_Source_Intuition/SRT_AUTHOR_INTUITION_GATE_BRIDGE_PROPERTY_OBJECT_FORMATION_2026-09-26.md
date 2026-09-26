@@ -104,14 +104,14 @@ A safer machine interpretation is:
 
 This suggests two gate roles:
 
-### G-pass
+### R-pass
 
 ~~~text
 existing candidate transition
 -> permit / suppress / weight
 ~~~
 
-### G-bind
+### R-bind
 
 ~~~text
 state difference
@@ -119,7 +119,7 @@ state difference
 -> stable relation / equivalence / neighborhood
 ~~~
 
-G-bind is the more important interpretation for the present author intuition.
+R-bind is the more important interpretation for the present author intuition.
 
 Do not assume these are two separate biological mechanisms. They are analytic roles.
 
