@@ -18,7 +18,7 @@ dependency:
 tags: [Gate, TypedOperator, Formalization, BridgeFormation, Closure, Composition, FutureSelectability, AntiOverloading]
 ---
 
-# Minimal typed formalization — Gate as a contract over Formation / Closure / Composition
+# Minimal typed formalization — selective-stabilization contract over Formation / Closure / Composition
 
 > Status: machine-only formalization audit. No symbol is added to the canonical symbol table. All notation below is local to this file and must not be reused as canonical notation without a separate governance pass.
 
@@ -277,45 +277,45 @@ Then:
 
 ---
 
-## 6. The common Gate kernel should initially be a predicate, not one equation
+## 6. Shared selective-stabilization contract — not a Gate identity
 
-Instead of defining one universal Gate operator, define a local audit predicate:
+Do not widen Gate to include formation processes. Instead, define a local audit-only predicate:
 
 ~~~text
-GateLike(T) = TRUE
+StabilizationLike(T) = TRUE
 ~~~
 
-only if transformation / operator T satisfies all of the following.
+only if transformation / operator T satisfies all of the following. Passing this contract does not make T a Gate; it only shows that the three typed transformations share a nontrivial selective-stabilization pattern.
 
-### G-K1 selective differentiation
+### SC-1 selective differentiation
 T preserves some differences as load-bearing while allowing others to be compressed / ignored.
 
-### G-K2 active or history-dependent stabilization
+### SC-2 active or history-dependent stabilization
 The resulting organization depends on enacted coupling, retained history or active maintenance, not only instantaneous input.
 
-### G-K3 perturbation-bounded robustness
+### SC-3 perturbation-bounded robustness
 The organization is stable across some changes and has identifiable failure / revision conditions.
 
-### G-K4 future-selectability efficacy
+### SC-4 future-selectability efficacy
 T changes A_t on a declared future probe family.
 
-### G-K5 compression with control preservation
+### SC-5 compression with control preservation
 T reduces online complexity while retaining enough structure for successful prediction / control.
 
-### G-K6 revisability
+### SC-6 revisability
 Mismatch / friction / new evidence can reopen or modify the stabilized relation.
 
 Then ask:
 
 ~~~text
-GateLike(Form) ?
-GateLike(Close) ?
-GateLike(Compose) ?
+StabilizationLike(Form) ?
+StabilizationLike(Close) ?
+StabilizationLike(Compose) ?
 ~~~
 
 rather than assuming the answer.
 
-This is the central anti-overloading move.
+This is the central anti-overloading move. Only **formed outputs** that acquire the repository's organization-level gating role may be called Gate / gating organizations.
 
 ---
 
@@ -329,7 +329,7 @@ The predicate is designed to reject several overly broad cases.
 two variables co-vary
 but no active / historical stabilization
 and no later selectability effect
--> NOT GateLike
+-> does not satisfy the shared stabilization contract
 ~~~
 
 ### Reject arbitrary constraint
@@ -337,7 +337,7 @@ and no later selectability effect
 ~~~text
 a wall blocks motion
 but no system-side bridge formation / reusable organization is at issue
--> wall alone is NOT a Gate operator
+-> wall alone is not a system-side gating organization
 ~~~
 
 The wall can participate in world resistance that shapes Gate formation.
@@ -347,7 +347,7 @@ The wall can participate in world resistance that shapes Gate formation.
 ~~~text
 a category name exists
 but does not change later prediction / action / grouping
--> NOT GateLike
+-> does not satisfy the shared stabilization contract
 ~~~
 
 ### Reject irreversible hard lock
@@ -355,7 +355,7 @@ but does not change later prediction / action / grouping
 ~~~text
 a frozen mapping has no error-sensitive reopening / revision
 -> may be a constraint
-but does not satisfy the current mature Gate contract
+but does not satisfy the current selective-stabilization contract
 ~~~
 
 This last guard may need weakening for primitive / minimal Gate candidates; keep OPEN.
@@ -553,9 +553,9 @@ Form = Close = Compose = one Gate equation
 
 Current strongest safe claim:
 
-> **Formation, Closure and Composition are different typed transformations that may belong to one Gate family if they satisfy a shared selective-stabilization contract and recursively change future selectability.**
+> **Formation, Closure and Composition are different typed transformations that may share a selective-stabilization pattern. Their formed outputs may become gating organizations where they acquire the already-routed organization-level gating role.**
 
-This is stronger than a metaphor and weaker than a universal algebra.
+This preserves a possible common architecture without widening Gate into the formation process itself.
 
 ---
 
@@ -601,7 +601,7 @@ Closure adds no payoff beyond standard object-file / feature-binding models.
 Composition adds no payoff beyond ordinary task-set / affordance / control graphs.
 
 ### W5
-The GateLike predicate accepts almost any adaptive transformation and becomes trivial.
+The StabilizationLike predicate accepts almost any adaptive transformation and becomes trivial.
 
 ### W6
 One or more types require incompatible notions of stabilization / compression / future efficacy.
@@ -617,11 +617,12 @@ SINGLE UNIVERSAL GATE EQUATION
 TYPED FORMATION / CLOSURE / COMPOSITION
 = COHERENT
 
-COMMON GATE CONTRACT
+SHARED SELECTIVE-STABILIZATION CONTRACT
 = PLAUSIBLE MACHINE CANDIDATE
 
-GATE AS PREDICATE / FAMILY
-= SAFER THAN GATE AS ONE OPERATOR
+GATE
+= RESERVED FOR FORMED ORGANIZATION / ROLE-CARRIER;
+  NOT THE FORMATION PROCESS
 
 COMPLETE STATE SPACE
 = NOT REQUIRED
