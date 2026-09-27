@@ -74,21 +74,21 @@ Before any new E2 test, reproduce exactly one source-owned E1 result using autho
 
 Preferred G1 target:
 
-> **Experiment 2 late shape-locked cross-generalisation of XOR/reward structure across task sets shows the published stage-dependent organization using the source pipeline.**
+> **Experiment 2 color-locked context coding reproduces the published dissociation: ordinary context decoding remains stable across learning while context cross-set generalisation increases from stage 1 to stage 4.**
 
 Why:
 
-- directly adjacent to the intended E2 holdout;
-- source code provides decoding + xgen;
-- uses the 16-condition Experiment-2 factorial structure;
-- tests that file mapping, preprocessing, stage construction and trial labels are correct.
+- this is the cleanest source-owned geometry dissociation for the new duel;
+- ordinary information content is approximately stable while cross-set geometry changes;
+- source code provides both ordinary decoding and cross-set xgen from the same pseudopopulation;
+- it tests file mapping, stage construction, condition labels and the exact target metric without using the new H1/H2/H3 models.
 
 Use source defaults:
 
 ~~~text
 N_STAGES = 4
 N_WINDOWS = 3
-EXP2 shape-locked = [100, 150]
+EXP2 color-locked = [50, 100]
 trl_min = 49 where source function applies
 sampled PFC areas = [1..4]
 ~~~
@@ -101,7 +101,7 @@ Do not tune E2 models until G1 passes.
 
 ### Primary target E2-T1
 
-Held-out **cross-task-set XOR generalisation** in Experiment 2.
+Held-out **context cross-stimulus-set generalisation** in Experiment 2.
 
 Training data for H3 may use:
 
@@ -109,11 +109,17 @@ Training data for H3 may use:
 - Experiment-2 within-task geometry excluding the primary cross-task-set target;
 - relevant factor labels needed to define training relations.
 
-H3 may **not** fit its free parameters to the primary cross-task XOR xgen score.
+H3 may **not** fit its free parameters to the primary context cross-set xgen score.
 
 ### Secondary target E2-T2
 
-Held-out cross-task **shape** relation.
+Held-out cross-set **shape** generalisation.
+
+### Positive-control target E2-PC1
+
+Held-out cross-set **XOR** generalisation.
+
+XOR is expected to be high already at stage 1 and to show little additional learning-related gain. It therefore tests whether H3 merely predicts a monotonic increase for every task-relevant variable.
 
 ### Negative-control target E2-NC1
 
@@ -217,7 +223,7 @@ The model must expose which parameters are shared.
 Primary:
 
 ~~~text
-held-out prediction of E2-T1 cross-task XOR generalisation
+held-out prediction of E2-T1 context cross-stimulus-set generalisation
 ~~~
 
 Use an out-of-sample score such as:
@@ -227,7 +233,8 @@ Use an out-of-sample score such as:
 
 Secondary:
 
-- E2-T2;
+- E2-T2 shape;
+- E2-PC1 XOR;
 - width negative control;
 - joint cross-probe score.
 
@@ -291,6 +298,8 @@ AND
 H3 adds value beyond primary H2
 AND
 shared H3 predicts >=1 secondary structural target
+AND
+XOR positive-control pattern is not forced into the same monotonic-learning template as context
 AND
 width negative control does not show generic indiscriminate gain
 AND
@@ -368,8 +377,8 @@ Execution sequence:
 
 ~~~text
 1. resolve G0 mapping;
-2. checksum downloaded subset;
-3. reproduce G1;
+2. reproduce G1 first from the locked source cache where possible;
+3. if raw data are later needed, checksum the downloaded subset;
 4. freeze final prereg commit;
 5. only then run H1/H2/H3;
 6. write result packet;
@@ -386,3 +395,47 @@ DATA EXECUTION = NOT YET AUTHORIZED;
 CURRENT NEXT = G1 bounded source-result reproduction -> freeze final prereg;
 canonical edit = NO.
 ~~~
+
+
+## 18. 2026-09-27 target correction — context becomes primary
+
+The paper's Experiment-2 result provides a stronger discriminator than the originally drafted XOR target:
+
+~~~text
+context ordinary decoding across learning:
+P = 0.595, two-sided, no learning effect;
+
+context cross-set generalisation:
+P = 0.023, one-sided, increases with learning;
+
+shape ordinary decoding:
+P = 0.428, two-sided;
+
+shape cross-set generalisation:
+P = 0.032, one-sided, increases with learning;
+
+XOR ordinary decoding:
+P = 0.183, two-sided;
+
+XOR cross-set generalisation:
+P = 0.156, one-sided, no learning-related increase.
+~~~
+
+Therefore:
+
+~~~text
+E2-T1 primary = context cross-set generalisation;
+E2-T2 secondary = shape cross-set generalisation;
+E2-PC1 positive control = XOR high/early generalisation with little further gain;
+E2-NC1 negative control = width / task-irrelevant structure.
+~~~
+
+This is preferable because context directly dissociates:
+
+~~~text
+information availability
+!=
+cross-set representational alignment.
+~~~
+
+The primary test therefore cannot be passed merely by predicting stronger decodability.
