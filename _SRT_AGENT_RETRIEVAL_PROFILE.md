@@ -128,7 +128,31 @@ The 2026-09-05 author-reentry correction and reconstruction amendment remain imp
 
 Important:
 
-### Facing reconstruction CURRENT NEXT retrieval note
+### 2026-09-27 cognition CURRENT NEXT retrieval note
+
+When STATUS routes the active task to the pre-object generative orientation of cognition programme, load these first:
+
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md` — current author closeout + next routing;
+2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md` — root author target;
+3. `Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md` — active execution owner;
+4. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
+5. preformal-coherence source/programme only as a downstream behavioral assay;
+6. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
+
+Retrieval guard:
+
+~~~text
+neutral cognition science first;
+SRT interpretation downstream / optional;
+toy simulation is not the first move;
+whole-field language must earn predictive / causal / recursive value;
+positive cognition result != primitive Selection / O0 proof;
+HP-B remains frozen / read-only;
+canonical edit = NO.
+~~~
+
+### Facing reconstruction CURRENT NEXT retrieval note — historical / completed route
+
 
 When STATUS routes the active task to the 2026-09-26 Facing reconstruction / simplification pass, load these before broad historical or neighbor material:
 

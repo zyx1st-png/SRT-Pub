@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-27
 priority: high
 research_mode: U_to_TEST
 dependency:
@@ -36,6 +36,53 @@ tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeomet
 >
 > **Boundary:** neutral cognitive research first; SRT interpretation second. No literal field ontology or author-specific exceptionalism is assumed.
 
+## 0.0b 2026-09-27 route restoration after primitive anti-tautology STOP
+
+Controlling source:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md`
+
+The intervening Facing reconstruction and primitive Selection anti-tautology routes are now complete at their current bounded strength. The author accepted the anti-tautology STOP and returned the single repository CURRENT NEXT to this programme.
+
+Current execution status:
+
+~~~text
+CURRENT NEXT
+= pre-object generative orientation of cognition
+  / neutral cognition-science discriminator first;
+
+first bounded target
+= E2 predictive geometry
+  -> E3 causal geometry
+  -> E4 recursive field reconstitution;
+
+strong baselines
+= H1 local / implementation updates
+  + H2 latent-state / representation models;
+
+preformal coherence
+= downstream behavioral assay;
+
+toy simulation
+= retained downstream candidate / NOT first move;
+
+SRT interpretation
+= downstream / optional;
+
+positive cognition result
+!= primitive Selection / O0 proof;
+
+canonical edit
+= NO.
+~~~
+
+The immediate discriminator is:
+
+> Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after consequences feed back?
+
+This section controls repository execution over the historical routing notes below.
+
+
 ## 0.0a Post-#1071 evidence-status adjudication
 
 Controlling source:
@@ -63,12 +110,14 @@ SRT-specific evidence queue
 
 The package may still be useful for studying relation formation, property learning, closure, gating and whole-system organization, but those results must be compared against strong structure-learning / relational / dynamical baselines and cannot validate SRT's primitive metaphysical burdens.
 
-Current execution status:
+Historical post-#1071 execution status before the 2026-09-27 return:
 
 ~~~text
 toy simulation execution = HOLD / not CURRENT NEXT;
 CURRENT NEXT = primitive Selection anti-tautology.
 ~~~
+
+This historical routing is superseded by §0.0b.
 
 ---
 
