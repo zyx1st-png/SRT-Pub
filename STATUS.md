@@ -62,6 +62,11 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1070 role = NONCANONICAL METHOD / ROUTING CORRECTIVE; FRH-0 FIRST; PASS CAPS 8+7
 #1072 independent review of #1071 Facing pass = MERGED / bfc9b20d2b2009ccfde779a2da6911a02464f264
 #1072 role = READ-ONLY PRE-MERGE CONTENT REVIEW; FINAL AUTHOR CORRECTIVE ACCEPTED
+#1076 Facing v0.3 human-in-loop corrective = MERGED / cea5359ea4cd648f23a28875c9ece7be012f11b3
+#1076 role = NONCANONICAL FUTURE CROSS-DOMAIN METHOD; #1071 BOUNDED COMPLETION SCOPE CLARIFIED; CURRENT COGNITION ROUTE UNCHANGED
+#1077 independent post-merge review of #1076 = MERGED / 6b4e4b9b6762b191d3793232528e5681bf466919
+#1077 role = READ-ONLY REVIEW; F5/F3 ACCEPTED, F1/F2/F4 NARROWED BY 2026-09-27 AUTHOR CORRECTIVE
+Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
@@ -1016,15 +1021,25 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 
 ## Immediate routing
 
-CURRENT NEXT = primitive Selection anti-tautology: distinguish genuine actualised non-neutral Selection from merely descriptive / modelled state transition without importing pre-given alternatives, a prior chooser, retained consequence, probability, value or completed geometry;
-CURRENT NEXT OWNER = Operations/Proposals/SRT_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_RESEARCH_QUESTION_2026-09-26.md;
-CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1071_FACING_PASS_FINAL_2026-09-26.md;
+CURRENT NEXT = pre-object generative orientation of cognition under neutral cognition-science execution first;
+CURRENT NEXT OWNER = Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md;
+CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md;
+
+Facing v0.3 interpretation gate:
+- neutral cognition execution may continue without author Facing confrontation;
+- promotion into an SRT / GRG domain recut, new objectification claim, or stronger cross-domain Facing reconstruction -> blind-first FR-AUTH + FR-ADV;
+- promotion into a new experiment / preregistration, formal domain-reconstruction claim, or strong comparative increment -> independent FR-ADV;
+- future FACE-REC does not automatically reopen the primitive anti-tautology STOP.
 
 Facing reconstruction disposition:
 
 ~~~text
-Pass A = 8 / 8 COMPLETE;
-Pass B = 7 / 7 COMPLETE;
+Pass A = 8 / 8 COMPLETE at the bounded #1071 first-cleanup scope;
+full early / historical SRT concept Facing reconstruction = NOT COMPLETE;
+Pass B = 7 / 7 COMPLETE as bounded source-native subtraction / calibration (FACE-CAL);
+author-led cross-domain Facing reconstruction = NOT COMPLETE;
+future stronger reconstruction owner = Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md;
+completion-scope owner = Operations/Audits/SRT_FACING_COMPLETION_SCOPE_AUDIT_2026-09-27.md;
 author adjudication = COMPLETE;
 
 L0-facing continuity = RETIRED as independent term;
