@@ -305,3 +305,119 @@ Possible machine-generated families are now allowed to be shown:
 - none of the above as a stable object — only a recurrent generative relation / process.
 
 The author may reject, combine, or replace all of them.
+
+
+## 10. Author response — cross-context continuity is a better/worse directional sense
+
+The author selected machine family 1 as the leading continuity candidate:
+
+> **“我偏向于1 ，一种变好或变坏的感觉。”**
+
+### 10.1 Immediate author-controlled reading
+
+```text
+cross-context L1 continuity
+= primarily directional;
+
+preformal form
+= a sense of getting better / getting worse.
+```
+
+This is not yet typed as hedonic valence, reward, utility, normativity, d-value, T_dir or phenomenality.
+
+### 10.2 Owner subtraction
+
+Current owners already block easy absorption:
+
+```text
+d-value
+= stake-coupled concern / irreversible-risk sensitivity;
+!= direction source.
+
+T_dir
+= readability / reorientation relative to an independently typed declared direction;
+!= direction source;
+!= valence / reward / confidence / good / generative health.
+
+Psi_f
+= cost / payability burden;
+!= universal direction source.
+
+suffering
+= bounded structural / phenomenological model after independent admission;
+!= direction source.
+```
+
+Repository OPEN status also retains:
+
+```text
+universal direction source remains OPEN.
+```
+
+Therefore the author's new preformal wording lands on an unresolved burden rather than being automatically absorbed by those owners.
+
+### 10.3 Machine distinction M7 — directional sense vs direction source
+
+Two possibilities must now be separated:
+
+```text
+M7-A READOUT:
+the better/worse sense is an internal L1-facing registration
+of how the ongoing generative process is moving relative to
+a deeper direction source.
+
+M7-B SOURCE:
+the better/worse polarity itself is constitutive of the
+direction source that organizes generative selection.
+```
+
+Conflating A and B would recreate the old T_dir problem:
+a readout of direction cannot silently become the source of direction.
+
+### 10.4 Machine distinction M8 — pre-object polarity vs post-object evaluation
+
+Another decisive split:
+
+```text
+M8-A POST-OBJECT:
+objects / options exist first
+-> subject evaluates them as better / worse.
+
+M8-B PRE-OBJECT:
+a non-symbolic directional polarity is already active
+-> it biases / organizes what becomes salient, comparable,
+   objectified or candidate-worthy
+-> explicit better/worse judgments appear later in L2.
+```
+
+Only M8-B would support the current author-led recut that L1 is generative rather than preference-evaluative.
+
+### 10.5 Non-collapse guards
+
+Do not infer:
+
+```text
+better/worse sense = pleasure/pain;
+better/worse sense = reward prediction error;
+better/worse sense = utility;
+better/worse sense = moral good/bad;
+better/worse sense = T_dir;
+better/worse sense = d-value;
+better/worse sense = primitive Selection.
+```
+
+At this stage it is only:
+
+```text
+AUTHOR PREFORMAL CANDIDATE:
+cross-context continuity of L1 may be carried by
+a pre-object better/worse directional sense.
+```
+
+## 11. Next author confrontation
+
+The next question is deliberately narrower than “what is good?”:
+
+> When you say “一种变好或变坏的感觉”, do you mean that this sense already exists **before** explicit objects / options / reasons are formed and helps generate what later becomes an object or choice; or is it a feeling produced **after** the subject has already formed an internal candidate and is evaluating that candidate?
+
+A third allowed answer is that the distinction is false because generation and directional sensing are one coupled process.
