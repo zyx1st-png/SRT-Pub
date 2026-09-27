@@ -168,3 +168,44 @@ AUTHOR RECUT CANDIDATE / PREFORMAL
 ```
 
 The next machine task is to determine whether existing owners already absorb this burden, whether it is merely a reparameterization of value / reward / valence, or whether the author is pointing at a more primitive generative direction relation.
+
+
+## 7. Author adjudication — pre-object better/worse polarity is downstream of L0-facing primitive Selection
+
+The author selected branch B and added a historical source-intuition connection:
+
+> **“B 。十多年前的感觉里L1facing 的好坏的感觉来自于L0facing的原初选择，在L1facing会变为道德价值bearer expection等，反向推元道德也是srt想要去追寻的东西。”**
+
+Author-controlled reading:
+
+```text
+B = ACCEPTED
+
+pre-object better/worse directional sense
+= already present before explicit object / option / reason formation;
+
+author's historical intuition:
+L0-facing primitive Selection
+  -> gives rise to / grounds L1-facing better-worse directional sense
+  -> which, in formed L1 organization, may differentiate into
+     moral value / Bearer / Expectation / related structures;
+
+research ambition:
+use downstream L2/L1 manifestations to reconstruct upward / backward toward
+the generative basis of metaethics in SRT.
+```
+
+### Status / guards
+
+```text
+status = AUTHOR RECUT CANDIDATE / PREFORMAL
+
+canonical consequence = NONE
+HP-B reopen = NO
+#1074 reopen = NO
+primitive Selection -> moral value derivation = NOT ESTABLISHED
+primitive Selection -> Bearer derivation = NOT ESTABLISHED
+primitive Selection -> Expectation derivation = NOT ESTABLISHED
+```
+
+The historical intuition is preserved as provenance, not promoted as an existing theorem.
