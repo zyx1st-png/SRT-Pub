@@ -310,3 +310,134 @@ C. BOTH, coupled:
 ```
 
 The author may reject this trichotomy.
+
+
+## 11. Author adjudication — coupled-facings model of the L1 event
+
+The author accepted the analysis and selected C:
+
+> **“认同你的分析，先选c”**
+
+Therefore the current preformal reconstruction becomes:
+
+```text
+one ongoing L1-facing generative event
+has at least two analytic facings:
+
+D-facing:
+  directional sense / better-worse polarity;
+
+G-facing:
+  generation / recutting of salience, distinction,
+  comparison, candidate space and next objectification.
+```
+
+Use:
+
+```text
+D-facing <-> G-facing
+as two facings of one event
+```
+
+rather than:
+
+```text
+first generate candidate
+-> then evaluate candidate as good/bad.
+```
+
+### 11.1 Consequence: evaluation-after-object is downstream
+
+Explicit evaluation can still occur downstream:
+
+```text
+formed object / option
+-> explicit judgment
+-> reason / norm / moral language.
+```
+
+But this no longer exhausts the directional process.
+
+The author-led hypothesis is:
+
+```text
+pre-object directional differentiation
+is already operative while the next cut is being generated.
+```
+
+Thus later explicit valuation may be an L2-facing or formed-L1 re-expression of a more basic coupled generative event.
+
+### 11.2 Consequence: avoid a hidden reward-function model
+
+Do not rewrite the current hypothesis as:
+
+```text
+generator proposes candidates;
+hidden scalar reward scores them;
+highest reward wins.
+```
+
+That would restore an object-first architecture and silently posit a pregiven value function.
+
+The current candidate is instead:
+
+```text
+directional non-neutrality participates in
+what becomes a candidate / comparison / object at all.
+```
+
+This distinction is central to the reverse-metaethics programme.
+
+### 11.3 Relation to L0 remains source-line, not identity
+
+Current author provenance supports the research direction:
+
+```text
+L0-facing primitive Selection
+-> source-line of L1 directional-generative event.
+```
+
+But do not infer:
+
+```text
+L1 felt polarity = primitive Selection;
+L0 contains phenomenal feeling;
+L0 contains moral good/bad;
+primitive Selection is a reward function.
+```
+
+The L0 -> L1 transformation / realization relation remains an OPEN reconstruction problem.
+
+## 12. New critical gate — does “feeling” require phenomenality?
+
+The word “感觉” can carry two very different burdens:
+
+```text
+P-A PHENOMENAL:
+the better/worse direction must be consciously felt / experienced;
+
+P-B PREPHENOMENAL OR NON-EXPLICIT:
+the directional-generative event can organize Selection
+before or without explicit conscious experience,
+and only some realizations become consciously felt.
+```
+
+A third possibility is layered:
+
+```text
+P-C:
+the underlying L1 event need not be phenomenal,
+but in a Bearer / consciousness-capable formed organization
+one facing of that event can become phenomenally accessible
+as a felt better/worse sense.
+```
+
+This gate must be resolved before connecting the present route to HP-B, affect, valence or consciousness.
+
+Until then:
+
+```text
+"feeling"
+= author's preformal phenomenological wording;
+!= phenomenality admission.
+```
