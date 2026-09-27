@@ -1,7 +1,7 @@
 ---
 id: SRT-COG-E2-1-WOJCIK-PREREG-HANDOFF-20260927
 type: proposal
-status: draft
+status: active
 canonical: false
 layer: operations
 epistemic_layer: research_program
@@ -17,9 +17,9 @@ tags: [Cognition, NeuralGeometry, Wójcik, E2, Preregistration, Handoff]
 
 # COG-E2-1 Wójcik — preregistration / execution handoff draft
 
-> **Status:** DRAFT until the Dryad session-ID mapping blocker is resolved.
+> **Status:** G0 mapping PASS; prereg model/metric lock remains provisional until G1 source-result reproduction passes.
 >
-> **Execution rule:** fail closed. No inferential run may begin while m1/m2 + session-index ↔ Wom/Wil date mapping remains unverified.
+> **Execution rule:** fail closed. No H1/H2/H3 inferential duel may begin until G1 source-owned result reproduction passes and the final prereg commit is frozen.
 >
 > **Scientific boundary:** neutral cognition architecture only. No SRT primitive evidence.
 
@@ -53,33 +53,20 @@ Dryad 10.5061/dryad.c2fqz61kb
 32.11 GB total
 ~~~
 
-## 3. Pre-execution blocker G0
+## 3. G0 session mapping — PASS
 
-Must resolve:
+Resolved by `Operations/Audits/SRT_COG_E2_1_WOJCIK_SESSION_MAPPING_2026-09-27.md`.
 
-~~~text
-Dryad:
-m1_ses1..25
-m2_ses1..25
-
-analysis repo:
-WomYYYYMMDD
-WilYYYYMMDD
-~~~
-
-G0 PASS requires a source-grounded mapping table:
-
-| Dryad ID | code session ID | animal | experiment | verified by |
-|---|---|---|---|---|
-| ... | ... | ... | ... | ... |
-
-Do not infer mapping by archive size alone.
-
-If G0 cannot be resolved:
+Source-grounded result:
 
 ~~~text
-STOP / NO EXECUTION.
+m1 = Monkey 1 = Womble
+m2 = Monkey 2 = Wilfred
+Dryad session ordinal = chronological code-session ordinal
+G0 = PASS
 ~~~
+
+No archive-size inference was used.
 
 ## 4. Reproduction gate G1
 
@@ -393,8 +380,9 @@ Execution sequence:
 ## 17. Current disposition
 
 ~~~text
-PREREG DRAFT = READY EXCEPT G0 SESSION MAPPING;
+G0 SESSION MAPPING = PASS;
+PREREG MODEL/METRIC LOCK = PROVISIONAL UNTIL G1;
 DATA EXECUTION = NOT YET AUTHORIZED;
-CURRENT NEXT = resolve G0 + G1 bounded reproduction;
+CURRENT NEXT = G1 bounded source-result reproduction -> freeze final prereg;
 canonical edit = NO.
 ~~~
