@@ -134,10 +134,11 @@ When STATUS routes the active task to the pre-object generative orientation of c
 
 1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md` — current author closeout + next routing;
 2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md` — root author target;
-3. `Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md` — active execution owner;
-4. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
-5. preformal-coherence source/programme only as a downstream behavioral assay;
-6. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
+3. `Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md` — active neutral-science execution owner;
+4. `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md` — mandatory only when neutral results are promoted into SRT / GRG recut or cross-domain Facing claims;
+5. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
+6. preformal-coherence source/programme only as a downstream behavioral assay;
+7. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
 
 Retrieval guard:
 
@@ -147,28 +148,37 @@ SRT interpretation downstream / optional;
 toy simulation is not the first move;
 whole-field language must earn predictive / causal / recursive value;
 positive cognition result != primitive Selection / O0 proof;
+neutral empirical work may proceed before author Facing confrontation;
+SRT / GRG recut promotion -> v0.3 blind-first FR-AUTH + FR-ADV;
+new experiment / preregistration or formal domain-reconstruction promotion
+-> independent FR-ADV required;
 HP-B remains frozen / read-only;
 canonical edit = NO.
 ~~~
 
-### Facing reconstruction CURRENT NEXT retrieval note — historical / completed route
+### Facing reconstruction retrieval note — v0.2 historical pass / v0.3 future reconstruction guard
 
 
 When STATUS routes the active task to the 2026-09-26 Facing reconstruction / simplification pass, load these before broad historical or neighbor material:
 
-1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md` — controlling author corrective;
-2. `Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md` — current execution owner (content version v0.2);
-3. `Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md` — independent review provenance;
-4. `_SRT_SYMBOL_TABLE.md` aspect boundary + `Core_Law/SRT_L0_Metaphysics.md` + `Core_Law/SRT_Generative_Ontology_Spine.md` — canonical controls;
-5. only then the target-specific owner / source-native neighbor files required by the <=8 / <=7 bounded pass.
+1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PR1069_FACING_METHOD_CORRECTIVE_2026-09-26.md` — controlling author corrective for the historical bounded pass;
+2. `Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md` — historical v0.2 execution owner for #1071;
+3. `Operations/Audits/SRT_FACING_COMPLETION_SCOPE_AUDIT_2026-09-27.md` — prevents 8/8 + 7/7 from being read as full historical / cross-domain reconstruction;
+4. for any **new stronger cross-domain / domain-recut work**, switch to `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` and `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md`;
+5. `Operations/Audits/SRT_PR1068_FACING_RECONSTRUCTION_METHOD_INDEPENDENT_CONTENT_REVIEW_2026-09-26.md` — historical independent review provenance;
+6. `_SRT_SYMBOL_TABLE.md` aspect boundary + `Core_Law/SRT_L0_Metaphysics.md` + `Core_Law/SRT_Generative_Ontology_Spine.md` — canonical controls;
+7. only then the target-specific owner / source-native neighbor files needed by the declared scope.
 
 Retrieval guard:
 
 ~~~text
 Facing = execution alias for the canonical analytic-aspect rule;
 do not harden it as a new layer taxonomy;
-FRH-0 reduction test comes before retaining "L0-facing continuity" as a noun;
-HP-B Bearer / Psi_f / consciousness are read-only in this pass.
+v0.2 / #1071 = bounded historical cleanup, not full reconstruction;
+new FACE-REC work = v0.3 blind-first FR-AUTH -> FR-ADV;
+author intuition may remain PREFORMAL at generation, but claim promotion needs a differentiating consequence;
+future FACE-REC does not automatically reopen the #1074 anti-tautology STOP;
+HP-B Bearer / Psi_f / consciousness were read-only in the #1071 pass.
 ~~~
 
 - Use canonical anchors to prevent overclaiming.
