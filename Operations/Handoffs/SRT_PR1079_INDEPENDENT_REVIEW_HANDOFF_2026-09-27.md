@@ -25,6 +25,51 @@ tags: [PR1079, IndependentReview, Facing, ChoiceMap, ReverseMetaethics]
 
 # PR #1079 independent-review handoff
 
+## -1. Precondition — Facing Admission calibration first
+
+Do not begin the substantive #1079 independent review until the blind calibration of:
+
+```text
+Operations/Proposals/
+SRT_FACING_ADMISSION_TEST_V0_1_2026-09-27.md
+```
+
+has been completed under:
+
+```text
+Operations/Handoffs/
+SRT_FACING_ADMISSION_CALIBRATION_BLIND_HANDOFF_2026-09-27.md
+```
+
+Reason:
+
+```text
+the current review itself depends on construct-level L0/L1/L2-facing assignments;
+using an uncalibrated assignment rule would reintroduce reviewer-specific floor intuition.
+```
+
+Producing-model calibration labels exist at:
+
+```text
+Operations/Audits/
+SRT_FACING_ADMISSION_CALIBRATION_SEED_V0_1_2026-09-27.md
+```
+
+The independent calibrator must not read that seed before freezing its B1-B12 labels.
+
+After calibration:
+
+```text
+PASS / WITH-CORRECTIONS
+-> update the admission method if needed,
+   then begin this #1079 review;
+
+FAIL / UNSTABLE
+-> keep #1079 draft,
+   repair the facing-assignment method first.
+```
+
+
 ## 0. Review mode
 
 ```text
