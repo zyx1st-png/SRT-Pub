@@ -1,7 +1,8 @@
 ---
 id: SRT-COG-E2-1-WOJCIK-G1-REPRODUCTION-20260927
 type: audit
-status: complete
+status: active
+record_stage: complete
 canonical: false
 layer: operations
 epistemic_layer: os
