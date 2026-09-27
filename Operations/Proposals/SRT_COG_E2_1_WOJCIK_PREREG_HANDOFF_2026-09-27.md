@@ -17,9 +17,9 @@ tags: [Cognition, NeuralGeometry, Wójcik, E2, Preregistration, Handoff]
 
 # COG-E2-1 Wójcik — preregistration / execution handoff draft
 
-> **Status:** G0 mapping PASS; prereg model/metric lock remains provisional until G1 source-result reproduction passes.
+> **Status:** G0 PASS; G1 PASS. This file now serves as the umbrella/calibration handoff. The decisive held-out test is controlled by `Operations/Proposals/SRT_COG_E2_1_WOJCIK_E2B_PREREG_2026-09-27.md`.
 >
-> **Execution rule:** fail closed. No H1/H2/H3 inferential duel may begin until G1 source-owned result reproduction passes and the final prereg commit is frozen.
+> **Execution rule:** G1 is complete. No decisive H1/H2/H3 E2b duel may begin until the target-blind feasibility census and E2b implementation lock are frozen.
 >
 > **Scientific boundary:** neutral cognition architecture only. No SRT primitive evidence.
 
@@ -390,9 +390,10 @@ Execution sequence:
 
 ~~~text
 G0 SESSION MAPPING = PASS;
-PREREG MODEL/METRIC LOCK = PROVISIONAL UNTIL G1;
-DATA EXECUTION = NOT YET AUTHORIZED;
-CURRENT NEXT = G1 bounded source-result reproduction -> freeze final prereg;
+G1 SOURCE-RESULT REPRODUCTION = PASS;
+SOURCE-KNOWN FIGURE-4 CONTEXT EFFECT = E2a CALIBRATION ONLY;
+DECISIVE TEST = E2b SESSION-LEVEL HELD-OUT PREDICTION;
+CURRENT NEXT = target-blind feasibility census -> freeze E2b implementation;
 canonical edit = NO.
 ~~~
 
@@ -439,3 +440,28 @@ cross-set representational alignment.
 ~~~
 
 The primary test therefore cannot be passed merely by predicting stronger decodability.
+
+
+## 19. Controlling E2a / E2b split after G1
+
+G1 numerical reproduction is complete and stored in:
+
+`Operations/Audits/SRT_COG_E2_1_WOJCIK_G1_REPRODUCTION_2026-09-27.md`.
+
+Because the Figure-4 context trajectory is public and has now been inspected:
+
+~~~text
+E2a
+= source-known calibration / code-integrity check;
+= NO scientific PASS credit.
+
+E2b
+= genuinely held-out session-level / next-session prediction;
+= controls any E2 PASS / PARTIAL / NO-GAIN disposition.
+~~~
+
+Controlling decisive prereg:
+
+`Operations/Proposals/SRT_COG_E2_1_WOJCIK_E2B_PREREG_2026-09-27.md`.
+
+The source-known context effect must not be repackaged as a prospective prediction.
