@@ -304,6 +304,54 @@ Therefore:
 - pooled pseudopopulation results are organizational evidence, not broad population generality;
 - any E2 PASS is dataset-bounded.
 
+## 12.1 Data-package / code naming mismatch — execution blocker
+
+The current Dryad landing page exposes session archives as:
+
+~~~text
+m1_ses1.zip ... m1_ses25.zip
+m2_ses1.zip ... m2_ses25.zip
+~~~
+
+whereas the analysis repository `config.yml` and README use date-labelled session IDs:
+
+~~~text
+WomYYYYMMDD
+WilYYYYMMDD
+~~~
+
+The totals are structurally compatible:
+
+~~~text
+Womble = 17 exp1 + 8 exp2 = 25 sessions
+Wilfred = 10 exp1 + 15 exp2 = 25 sessions
+Dryad m1 = 25 sessions
+Dryad m2 = 25 sessions
+~~~
+
+But this does **not** authorize guessing:
+
+~~~text
+m1 = Womble
+m2 = Wilfred
+or
+sesN = the Nth date in config
+~~~
+
+Required before data execution:
+
+1. recover an explicit source mapping from archive contents, source README, metadata or manuscript;
+2. verify at least two sessions per animal against trial structure / dates or event metadata;
+3. document any rename / symlink adapter;
+4. leave original downloaded filenames untouched;
+5. fail closed if mapping remains ambiguous.
+
+Disposition:
+
+~~~text
+DATA/CODE SESSION-ID MAPPING = OPEN EXECUTION BLOCKER.
+~~~
+
 ## 13. Compute / storage burden
 
 Dryad total:
@@ -338,7 +386,7 @@ E2 held-out duel feasibility = PASS
 E3 causal test in this dataset = NO
 E4 causal recursion in this dataset = NO / only preliminary lagged structure
 full-data immediate download = NO
-first execution = bounded reproducibility subset
+first execution = bounded reproducibility subset AFTER session-ID mapping is verified
 ~~~
 
 ## 15. Next bounded action
