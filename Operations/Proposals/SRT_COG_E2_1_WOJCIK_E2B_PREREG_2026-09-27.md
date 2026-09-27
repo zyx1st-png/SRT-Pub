@@ -1,7 +1,8 @@
 ---
 id: SRT-COG-E2-1-WOJCIK-E2B-PREREG-20260927
 type: proposal
-status: frozen_candidate
+status: draft
+record_stage: frozen_candidate
 canonical: false
 layer: operations
 epistemic_layer: research_program
