@@ -56,3 +56,48 @@ observable / explicit / sedimented choice expression
 The exact admissibility of the final inference remains to be tested under FR-ADV and the anti-L2->L0 / #1074 guards.
 
 No machine candidate recut is recorded in this file.
+
+
+## 4. Author clarification — L1-facing is latent, not directly observed
+
+The author then corrected the machine's first interpretation:
+
+> **“L1facing的生成性选择是在主体内部的无法直接记录和观察的内容，语言符号等都只是L2facing的用于反推的内容，最后我们可以通过L1facing的构建，了解L0facing的原初选择。”**
+
+This clarification controls the interpretation of §1.
+
+The author's intended methodological direction is therefore:
+
+```text
+directly recordable / observable material
+(language, symbols, explicit choices, preserved traces, etc.)
+= L2-facing evidence for this reconstruction task;
+
+latent generative selection inside the subject
+= L1-facing organization;
+= not directly observed / recorded;
+= reconstructed from patterned L2-facing evidence;
+
+constructed L1-facing model
+-> used to investigate / constrain understanding of
+   L0-facing primitive Selection.
+```
+
+### Author correction to machine wording
+
+The prior machine sentence that a “single currently occurring choice itself is closer to L1-facing” is **not** the author's intended reading for this method.
+
+For ChoiceMap reconstruction:
+
+```text
+observable choice expression
+!= direct L1-facing observation;
+
+observable choice expression / language / symbol
+= L2-facing evidence;
+
+L1-facing
+= latent generative selective organization inferred from those traces.
+```
+
+This remains an author preformal reconstruction claim. It does not by itself establish that an inferred L1 model uniquely identifies primitive L0, and it does not reopen #1074.
