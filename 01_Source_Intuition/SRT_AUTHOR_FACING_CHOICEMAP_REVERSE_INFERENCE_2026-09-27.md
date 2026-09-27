@@ -336,3 +336,42 @@ AUTHOR-ACCEPTED PREFORMAL DIRECTION
 canonical consequence = NONE
 HP-B reopen = NO
 ```
+
+
+## 11. Author adjudication — direction is pre-object but historically reconstructible
+
+The author accepted the scale-separated synthesis:
+
+> **“认同，继续”**
+
+Accepted preformal compression:
+
+```text
+direction is prior to the current explicit object / cut,
+but not prior to all history;
+
+direction is historically inherited,
+continuously operative in current generation,
+and recursively revisable through later Selection.
+```
+
+Therefore reject both:
+
+```text
+a timeless fixed value vector already fully specified before all generation;
+
+and
+
+direction being invented ex nihilo independently at every local event.
+```
+
+Current author-accepted candidate:
+
+```text
+historically inherited
++ pre-object relative to the current cut
++ continuously generative
++ recursively reconstructible.
+```
+
+Status remains preformal / noncanonical.
