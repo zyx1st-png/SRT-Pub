@@ -2,7 +2,7 @@
 id: SRT-COG-E2-1-WOJCIK-E2B-PREREG-20260927
 type: proposal
 status: draft
-record_stage: frozen_candidate
+record_stage: revised_pre_target
 canonical: false
 layer: operations
 epistemic_layer: research_program
@@ -18,7 +18,7 @@ tags: [Cognition, NeuralGeometry, Wójcik, E2b, Preregistration, RollingOrigin, 
 
 # COG-E2-1 — E2b genuinely held-out preregistration
 
-> Purpose: replace source-known Figure-4 reconstruction with a genuinely held-out session-level prediction test.
+> Purpose: replace source-known Figure-4 reconstruction with a genuinely held-out session-level prediction test. Revised before target inspection after target-blind code-path/sample-size audit.
 > Scientific boundary: neutral cognition science only. Positive results do not establish SRT, O0, primitive Selection, or a literal field.
 
 ## 1. Why E2b is required
@@ -35,29 +35,50 @@ Therefore:
     E2a = source-known calibration / machinery check only
     E2b = decisive held-out prediction
 
-## 2. E2b target
+## 2. E2b primary target
 
-Primary target for animal a, session s+1:
+For each eligible Experiment-2 session j:
 
-    Y(a,s+1) = session-level context cross-stimulus-set generalisation
+~~~text
+Y_j
+= session-level context cross-stimulus-set generalisation
+~~~
 
-computed in the source color-locked window using source-compatible SVM / xgen code.
+computed in the source color-locked window using source-compatible SVM / xgen primitives.
 
 Primary scientific question:
 
-> Does geometry measured in session s predict the next session's context cross-set alignment beyond current local information, behavior/session progression, and a strong latent-representation baseline?
+> Does a session's non-context relational geometry predict its held-out context cross-set alignment beyond current local context information, learning/progression covariates and a strong latent-representation baseline?
 
-This is predictive E2, not causal E3.
+This is predictive E2.
 
-## 3. Secondary target
+It is not temporal recursion and does not claim E4.
 
-Secondary:
+## 3. Secondary targets
 
-    Y2(a,s+1) = next-session context selectivity alignment
+### E2b-S1 — context selectivity alignment
 
-defined as the correlation/alignment of context selectivity coefficients across stimulus sets within that session.
+For the same held-out session:
+
+~~~text
+Y2_j
+= context selectivity alignment across stimulus sets
+~~~
 
 Credit is stronger if model ordering agrees for Y and Y2.
+
+### E2b-S2 — next-session precursor
+
+Secondary/exploratory only:
+
+~~~text
+geometry_s
+-> context alignment_(s+1)
+~~~
+
+This preserves the generative-orientation / recutting intuition as an E4-shaped precursor.
+
+It cannot control the primary E2 verdict because the sample provides at most 21 transitions before exclusions.
 
 ## 4. Source unit
 
@@ -65,8 +86,11 @@ Use individual Experiment-2 sessions, not pooled four-stage pseudopopulations.
 
 Known session counts:
 
-    Womble / Monkey 1 = 8 Exp2 sessions
-    Wilfred / Monkey 2 = 15 Exp2 sessions
+~~~text
+Womble / Monkey 1 = 8 Exp2 sessions
+Wilfred / Monkey 2 = 15 Exp2 sessions
+total = 23 sessions
+~~~
 
 Session order is fixed chronologically by the G0 mapping.
 
@@ -74,30 +98,40 @@ No stable-neuron identity across sessions is assumed.
 
 Each session yields its own population-level geometry summary.
 
-## 5. Rolling-origin evaluation
+## 5. Primary outer evaluation — leave-one-session-out
 
-No future session may contribute to model fitting for an earlier prediction.
+The decisive prediction is leave-one-session-out (LOSO).
 
-For each animal separately:
+For each eligible session j:
 
-    use session 1..k as available history
-    predict session k+1
-    advance k
+~~~text
+train mapping on all other eligible sessions
+without target leakage
+-> predict Y_j
+-> score held-out error
+~~~
 
-Primary scoring begins only once the training set contains enough observations to fit every compared model under its preregistered regularization.
+Rules:
 
-If H2/H3 cannot be fit before a minimum history is reached, those early transitions are excluded symmetrically from all models.
+- the held-out session contributes no target information to model fitting or hyperparameter choice;
+- model specification and feature transforms are fixed before any target trajectory is inspected;
+- nested training-only regularization is required;
+- scoring is reported per animal and pooled;
+- session-level predictions are organizational evidence, not N=23 biological replication.
 
-Final implementation must record the first eligible k before target outputs are inspected.
+Animal-aware sensitivity:
+
+- repeat with animal indicator removed;
+- where mathematically estimable, train on one animal and test the other;
+- no overall PASS if gain is entirely attributable to one animal.
 
 ## 6. H1 — strong local / progression baseline
 
-H1 predictors from session s may include:
+H1 predictors from the held-out-session feature vector may include:
 
-- current context ordinary decoding;
-- current context cross-set generalisation;
-- current task-set decoding;
-- current behavioral performance / termination metric available source-natively;
+- ordinary context decoding (allowed local-information predictor; no context xgen);
+- task-set decoding;
+- behavioral performance / termination metric available source-natively;
 - session ordinal / normalized learning progress;
 - animal indicator when models are pooled.
 
@@ -109,7 +143,7 @@ H1 answers:
 
 ## 7. H2 — strong latent-state baseline
 
-H2 receives source-trial / condition data from session s but no session s+1 target information.
+H2 receives source-trial / condition data from the session feature extraction but no held-out context-xgen target information.
 
 Primary H2 family:
 
@@ -129,7 +163,7 @@ If H2 matches/exceeds H3 at equal or lower effective burden:
 
 H3 is not a literal field variable.
 
-H3 uses a shared geometry feature set from session s, excluding the primary context cross-set target itself from the added geometry block.
+H3 uses a shared geometry feature set from the session, excluding the primary context cross-set target itself from the added geometry block.
 
 Primary geometry block:
 
@@ -156,8 +190,8 @@ H3 must use one shared predictor specification across both animals.
 
 Prohibited before the E2b result is frozen:
 
-- plotting or inspecting per-session context xgen trajectory;
-- inspecting next-session target values while choosing H3 features;
+- plotting or inspecting per-session context xgen trajectory before the implementation lock;
+- inspecting any held-out context target values while choosing H3 features;
 - changing feature signs / transforms based on target correlation;
 - choosing the first eligible session k based on result quality;
 - choosing regularization from outer-test sessions;
@@ -182,7 +216,7 @@ Before target extraction, run a target-blind feasibility census:
 
 Freeze the common feature set after this census and before reading per-session target trajectories.
 
-If fewer than 8 total next-session prediction targets survive across both animals:
+If fewer than 12 eligible session-level primary targets survive across both animals, or either animal contributes fewer than 4 eligible sessions:
 
     E2b = UNDERPOWERED / STOP
 
@@ -192,11 +226,11 @@ rather than relaxing the model after seeing outcomes.
 
 Primary model score:
 
-    rolling-origin out-of-sample squared prediction error for Y(a,s+1).
+    leave-one-session-out out-of-sample squared prediction error for Y_j.
 
 Report:
 
-- error per predicted transition;
+- error per held-out session;
 - mean error by animal;
 - pooled mean error with animal-block uncertainty;
 - H3-H1 error difference;
@@ -221,11 +255,12 @@ Primary comparison is predictive error under nested regularization; complexity i
 
 Predeclared only:
 
-1. leave-one-animal-out transfer where mathematically estimable;
-2. target normalized by current ordinary context decoding;
+1. animal-to-animal transfer where mathematically estimable;
+2. target normalized by ordinary context decoding;
 3. secondary Y2 selectivity-alignment target;
 4. remove session ordinal to test dependence on monotonic time;
-5. geometry block without XOR, because XOR is already highly aligned early.
+5. geometry block without XOR, because XOR is already highly aligned early;
+6. rolling-origin next-session prediction as an E4-shaped secondary precursor.
 
 These are sensitivity analyses, not alternate primary endpoints.
 
@@ -276,7 +311,7 @@ Do not rescue by changing SRT vocabulary or adding post-hoc features.
 
 ## 15. E4 firewall
 
-One-step-ahead prediction is only an E4-shaped precursor.
+Any one-step-ahead secondary analysis is only an E4-shaped precursor.
 
 It does not establish:
 
@@ -289,7 +324,7 @@ E4 requires a separate causal / intervention design.
     G0 mapping PASS
     G1 source-result reproduction PASS
     -> target-blind session feasibility census
-    -> freeze common features + first eligible rolling-origin index
+    -> freeze common features + LOSO outer evaluation + eligibility rule
     -> freeze implementation commit
     -> compute per-session target trajectory for the first time
     -> execute H1/H2/H3 outer predictions
@@ -303,3 +338,26 @@ E4 requires a separate causal / intervention design.
     H1/H2/H3 inferential execution = NOT YET
     raw data full download = only as required for the census / execution
     canonical edit = NO
+
+## 18. Pre-target design revision record
+
+This prereg was revised before any per-session context target trajectory was inspected.
+
+Reason:
+
+- Experiment 2 provides only 23 sessions;
+- a primary rolling-origin design yields at most 21 transitions before exclusions;
+- that is an unnecessarily fragile arena for a strong H2 vs H3 comparison;
+- the source code supports session-level target-blind extraction and within-session decoding.
+
+Therefore:
+
+~~~text
+primary E2b
+= leave-one-session-out held-out context alignment;
+
+next-session prediction
+= secondary E4-shaped precursor only.
+~~~
+
+This revision is method-driven, not target-driven.
