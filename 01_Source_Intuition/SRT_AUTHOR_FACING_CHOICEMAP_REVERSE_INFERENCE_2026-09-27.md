@@ -101,3 +101,37 @@ L1-facing
 ```
 
 This remains an author preformal reconstruction claim. It does not by itself establish that an inferred L1 model uniquely identifies primitive L0, and it does not reopen #1074.
+
+
+## 5. Author adjudication — L1-facing is generative process, not stable latent preference
+
+The author accepted the preceding analysis and explicitly chose the second branch of the key fork:
+
+> **“认同分析，关键问题认同后者，继续”**
+
+The controlled fork was:
+
+```text
+A. L1-facing generative selection
+   = a relatively stable internal structure / latent preference of an already formed subject;
+
+B. L1-facing generative selection
+   = a dynamic process that repeatedly generates / recuts
+     objects, comparison scale, candidate space and direction.
+```
+
+Author adjudication:
+
+```text
+B = ACCEPTED
+
+L1-facing
+!= latent preference vector;
+!= directly observed stable inner variable;
+
+L1-facing
+= dynamic generative selection process;
+= reconstructable only indirectly from L2-facing traces under changing conditions.
+```
+
+This author adjudication authorizes the machine to proceed from blind-first capture into the second FR-AUTH stage and reveal candidate recuts. It does not itself authorize canonical edits or an #1074 reopen.
