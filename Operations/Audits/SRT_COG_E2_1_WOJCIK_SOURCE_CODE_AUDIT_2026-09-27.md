@@ -349,7 +349,7 @@ Required before data execution:
 Disposition:
 
 ~~~text
-DATA/CODE SESSION-ID MAPPING = OPEN EXECUTION BLOCKER.
+DATA/CODE SESSION-ID MAPPING = PASS. See `Operations/Audits/SRT_COG_E2_1_WOJCIK_SESSION_MAPPING_2026-09-27.md`.
 ~~~
 
 ## 13. Compute / storage burden
@@ -386,12 +386,12 @@ E2 held-out duel feasibility = PASS
 E3 causal test in this dataset = NO
 E4 causal recursion in this dataset = NO / only preliminary lagged structure
 full-data immediate download = NO
-first execution = bounded reproducibility subset AFTER session-ID mapping is verified
+first execution = G1 source-owned result reproduction using the locked source code/cache; raw-data download only after G1 and final prereg freeze
 ~~~
 
 ## 15. Next bounded action
 
-Prepare a preregistration / execution handoff containing:
+G0 is now resolved. Prepare/finalize the preregistration / execution handoff containing:
 
 - one exact E1 reproduction target;
 - minimum session subset;
@@ -402,3 +402,27 @@ Prepare a preregistration / execution handoff containing:
 - full-download trigger.
 
 No data execution is authorized by this audit alone.
+
+
+## 16. 2026-09-27 G0 closeout
+
+Independent source chain now closes the mapping:
+
+- Dryad README: `m1` denotes Monkey 1 and `sesN` denotes Session N;
+- paper Methods: Monkey 1 = 17 Exp1 + 8 Exp2, Monkey 2 = 10 Exp1 + 15 Exp2;
+- code config: Womble = 17+8 and Wilfred = 10+15 in chronological date order;
+- code stage splitter preserves list order.
+
+Therefore:
+
+~~~text
+m1 = Monkey 1 = Womble
+m2 = Monkey 2 = Wilfred
+session ordinal = chronological index in the corresponding code list
+G0 = PASS
+~~~
+
+The exact 50-session table is stored in:
+`Operations/Audits/SRT_COG_E2_1_WOJCIK_SESSION_MAPPING_2026-09-27.md`.
+
+Current gate is now G1, not G0.
