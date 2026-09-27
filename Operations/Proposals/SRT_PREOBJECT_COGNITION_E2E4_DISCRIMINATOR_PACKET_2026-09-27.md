@@ -224,9 +224,10 @@ Fit H1 / H2 / H3 without access to the held-out relation.
 
 Ask whether H3 predicts:
 
-- held-out pairwise condition distances;
-- held-out cross-condition generalization;
-- held-out irrelevant-feature normalization;
+- **primary:** held-out context cross-stimulus-set generalisation where ordinary context decoding is stable across learning;
+- secondary shape cross-set generalisation;
+- the contrasting XOR pattern where cross-set generalisation is already high early;
+- held-out irrelevant-feature normalization / width control;
 - later novel-stimulus-set abstraction.
 
 A valid H3 result requires prediction of structure that was not directly used to fit the geometry.
@@ -235,10 +236,10 @@ A valid H3 result requires prediction of structure that was not directly used to
 
 A single H3 fit should jointly account for at least three probe families, for example:
 
-1. XOR / reward-rule abstraction;
-2. color/shape relational generalization;
-3. width-irrelevance / normalization;
-4. Experiment-2 novel-stimulus transfer.
+1. context cross-set alignment;
+2. shape relational generalisation;
+3. XOR early-aligned positive control;
+4. width-irrelevance / normalization.
 
 If a separate geometry parameterization is fitted for every probe, compression credit is lost.
 
@@ -419,3 +420,21 @@ toy simulation
 HP-B
 = READ-ONLY / FROZEN.
 ~~~
+
+
+## 14. 2026-09-27 primary-target refinement
+
+Experiment 2 contains a particularly clean geometry-vs-information dissociation:
+
+- context ordinary decoding remains stable across learning;
+- context cross-set generalisation increases significantly;
+- shape shows a similar but secondary pattern;
+- XOR cross-set generalisation is already high early and does not significantly increase.
+
+Therefore the first E2 duel now prioritizes **context cross-set generalisation**, not XOR.
+
+Scientific reason:
+
+> the model must predict a change in representational relation / alignment while not simply predicting more decodable context information.
+
+This is a stronger E2 discriminator between local information gain and geometry-level reorganization.
