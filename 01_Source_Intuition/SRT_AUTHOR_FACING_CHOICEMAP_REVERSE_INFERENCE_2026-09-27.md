@@ -209,3 +209,54 @@ primitive Selection -> Expectation derivation = NOT ESTABLISHED
 ```
 
 The historical intuition is preserved as provenance, not promoted as an existing theorem.
+
+
+## 8. Author adjudication — readout and generative bias are two facings of one L1 event
+
+The author accepted the preceding analysis and selected option C:
+
+> **“认同你的分析，先选c”**
+
+Controlled fork:
+
+```text
+A. FELT READOUT
+   better/worse is a registration of alignment / misalignment
+   with a deeper generative direction.
+
+B. GENERATIVE BIAS
+   better/worse polarity actively changes salience,
+   comparison, candidate formation and the next cut.
+
+C. COUPLED / TWO-FACING EVENT
+   felt better/worse and generation of the next cut
+   are two facings of one ongoing L1 generative event.
+```
+
+Author adjudication:
+
+```text
+C = ACCEPTED AS CURRENT PREFORMAL DIRECTION.
+```
+
+Current author-controlled reading:
+
+```text
+L1-facing directional polarity
+is not merely a passive monitor after generation;
+
+and it is not merely a hidden control variable without felt direction;
+
+rather,
+directional sensing and generative reorganization
+are two facings of the same ongoing L1 event.
+```
+
+Status remains:
+
+```text
+AUTHOR RECUT CANDIDATE / PREFORMAL
+canonical edit = NO
+HP-B reopen = NO
+#1074 reopen = NO
+```
