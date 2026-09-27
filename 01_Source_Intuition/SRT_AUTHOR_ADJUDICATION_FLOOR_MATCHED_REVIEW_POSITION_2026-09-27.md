@@ -200,3 +200,129 @@ floor-matched review rule = AUTHOR-AFFIRMED
 D1/D2 -> D3/D4 promotion = FORBIDDEN
 canonical edit = NO
 ~~~
+
+
+## 7. Author refinement — comparison must be facing-matched, not merely theory-matched
+
+The author clarified:
+
+> **“我的想法是传统领域也包含了L0 L1 L2 facing的概念，但通常只包含后两个层级的，所以在与传统领域做对比分析最好不做跨层级的对比，否则会得出错误的结论”**
+
+This refines the earlier floor-matched rule.
+
+The governing unit of comparison is not the whole theory but the **specific construct / claim / explanatory burden**.
+
+Current author position:
+
+~~~text
+traditional domains may contain constructs that can be read
+at L0-facing, L1-facing and L2-facing levels;
+
+however, much mature domain work is concentrated on
+formed / manifest / retained organization,
+therefore often L1-facing and L2-facing;
+
+so comparison must first type the facing of each compared construct.
+~~~
+
+Mandatory rule:
+
+~~~text
+L0-facing SRT burden
+must not be declared absorbed
+by an L1-facing or L2-facing neighbor construct
+merely because the downstream observable / formal structure matches.
+
+L1-facing SRT burden
+should be compared against L1-facing neighbors.
+
+L2-facing SRT burden
+should be compared against L2-facing neighbors.
+~~~
+
+Cross-facing comparison is allowed only when the explicit question is a bridge / derivation question, for example:
+
+~~~text
+can this L1-facing structure be derived from that L0-facing burden?
+
+can this L2-facing sediment / scaffold
+reconstruct the earlier L1-facing generation?
+
+does a neighbor explicitly connect
+its constitutive level to its formed / retained levels?
+~~~
+
+Cross-facing comparison is **not** valid evidence for:
+
+~~~text
+absorption;
+novelty subtraction;
+equivalence;
+replacement;
+superiority;
+irreducibility;
+~~~
+
+unless the bridge itself is what is under test.
+
+## 8. Facing-match matrix
+
+Use this default discipline:
+
+~~~text
+SRT L0-facing <-> neighbor L0-facing / constitutive burden
+SRT L1-facing <-> neighbor L1-facing / formed generative organization
+SRT L2-facing <-> neighbor L2-facing / retained / sedimented / scaffolded organization
+~~~
+
+If no same-facing neighbor construct exists:
+
+~~~text
+status = NO SAME-FACING COMPARATOR FOUND / OPEN
+
+NOT:
+status = SRT SURVIVES BY DEFAULT.
+~~~
+
+If only a lower / downstream comparator exists:
+
+~~~text
+status = DOWNSTREAM REALIZATION OVERLAP
+
+NOT:
+status = FLOOR ABSORPTION.
+~~~
+
+## 9. Governance implication
+
+The principal comparison risk is now more precisely:
+
+~~~text
+CROSS-FACING CATEGORY ERROR
+=
+using a valid explanation at one facing
+to close a claim located at another facing.
+~~~
+
+This error can produce false negative conclusions such as:
+
+~~~text
+L1/L2 rival reproduces observable dynamics
+-> therefore L0-facing SRT burden is redundant.
+~~~
+
+It can also produce false positive conclusions:
+
+~~~text
+neighbor lacks an explicit L0-facing vocabulary
+-> therefore SRT is distinctive.
+~~~
+
+The correct result is instead:
+
+~~~text
+same-facing comparison required;
+otherwise the relation remains a bridge / mapping question.
+~~~
+
+This refinement supersedes any earlier review shorthand that classified whole theories globally as simply "downstream" or "floor-matched".
