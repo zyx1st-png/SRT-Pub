@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-26
+updated: 2026-09-27
 ---
 
 # SRT 当前状态仪表盘
@@ -183,7 +183,79 @@ HP-B Bearer / Psi_f / consciousness = READ-ONLY;
 canonical edit = NO.
 ~~~
 
-CURRENT NEXT = primitive Selection anti-tautology under the dedicated bounded owner; Facing Pass A/B and author adjudication are complete; Pass A = 8/8 COMPLETE, Pass B = 7/7 COMPLETE, OUT-A/B/C/D COMPLETE; no further concept expansion, canonical edit or toy-simulation execution before author adjudication;
+PRIMITIVE SELECTION ANTI-TAUTOLOGY = AUTHOR-ACCEPTED BOUNDED STOP at current strength; primitive Selection remains an architectural / metaphysical primitive, while incremental primitive explanatory indispensability and scientific distinctiveness over fair role-matched open-process rivals remain NOT ESTABLISHED. Reopen only under the explicit new-input conditions recorded in the 2026-09-27 author adjudication. CURRENT NEXT = pre-object generative orientation of cognition under the existing neutral cognition-science programme owner; first bounded target = E2/E3/E4 whole-field predictive / causal / recursive recutting discriminator against strong local-update and latent-state / representation baselines; SRT interpretation downstream, toy simulation not first move, canonical edit = NO.
+
+---
+
+### 0.3e Primitive Selection anti-tautology closeout / cognition route return — 2026-09-27
+
+Author closeout source:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md`
+
+Closeout audits:
+
+- `Operations/Audits/SRT_PRIMITIVE_TRIANGULATION_PT0_2026-09-27.md`
+- `Operations/Audits/SRT_O0S0_BARE_ACTUALISM_BLIND_COLLAPSE_TEST_2026-09-27.md`
+- `Operations/Audits/SRT_O0S0_BARE_ACTUALISM_POSTBLIND_SYNTHESIS_2026-09-27.md`
+- `Operations/Audits/SRT_PRIMITIVE_SELECTION_BILATERAL_POLARITY_DISCRIMINATOR_OR_STOP_2026-09-27.md`
+
+Author-accepted disposition:
+
+~~~text
+genuine deterministic reversible actuality may still be Selection;
+reversibility / novelty / history / probability / value / agency
+!= primitive Selection admission criteria;
+
+Selection as special subclass of real changes = NO;
+bilateral manifestation / relative-background polarity
+as universal One-formation necessity = NOT ESTABLISHED;
+
+increment over fair role-matched open-process rivals = NOT ESTABLISHED;
+primitive derivational indispensability = NOT ESTABLISHED;
+Selection scientific distinctiveness = NOT ESTABLISHED;
+
+ANTI-TAUTOLOGY SEARCH AT CURRENT STRENGTH = STOP;
+canonical Selection deletion = NO;
+new primitive = NO.
+~~~
+
+Reopen only for a genuinely new primitive distinction, a non-circular downstream derivation that fails under a fair role-matched rival, an O0/S0-specific prospective intervention/exclusion, or a representation-invariant world-facing relation not already paid by mature neighboring theories.
+
+Single next route:
+
+~~~text
+CURRENT NEXT
+= pre-object generative orientation of cognition
+  under the existing neutral cognition-science programme;
+
+owner
+= Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md;
+
+first bounded target
+= E2 predictive geometry
+  -> E3 causal geometry
+  -> E4 recursive field reconstitution;
+
+comparison
+= strong H1 local / implementation updates
+  + H2 latent-state / representation baselines;
+
+preformal coherence sensitivity
+= downstream behavioral assay;
+
+toy simulation
+= retained downstream candidate / NOT first move;
+
+SRT interpretation
+= downstream / optional;
+
+primitive Selection / O0 proof from cognition result
+= PROHIBITED;
+
+canonical edit
+= NO.
+~~~
 
 ---
 
