@@ -441,3 +441,71 @@ Until then:
 = author's preformal phenomenological wording;
 != phenomenality admission.
 ```
+
+
+## 13. Author adjudication — layered phenomenality
+
+The author selected:
+
+> **C**
+
+Current preformal reconstruction:
+
+```text
+underlying L1 directional-generative event
+= may operate without explicit phenomenality;
+
+when a sufficiently formed Bearer / consciousness-capable organization exists,
+one facing of that same event
+may become phenomenally accessible
+as a felt better/worse direction.
+```
+
+### 13.1 Consequence
+
+This preserves two distinct burdens:
+
+```text
+directional generation
+!= conscious feeling;
+
+conscious feeling
+= possible downstream access to / manifestation of
+  an already operating directional-generative relation.
+```
+
+So the reverse-metaethics programme should not start from phenomenality as a prerequisite.
+
+Instead:
+
+```text
+L2 explicit report / moral judgment
+-> infer phenomenal or nonphenomenal directional organization where warranted
+-> reconstruct L1 directional-generative structure
+-> only then ask which formed conditions make that structure consciously accessible.
+```
+
+### 13.2 HP-B boundary
+
+Do not infer:
+
+```text
+Bearer -> phenomenality;
+directional polarity -> consciousness;
+felt better/worse -> Bearer admission;
+L1 generation -> consciousness;
+primitive Selection -> phenomenality.
+```
+
+The current route remains compatible with HP-B HOLD.
+
+### 13.3 Research significance
+
+This layered reading creates a clean bridge between:
+
+- cognition: pre-object directional generation;
+- affect: possible felt access to directional change;
+- consciousness: possible phenomenal accessibility of that event;
+- metaethics: later explicit good/bad, value, reason and norm formation.
+
+These are linked by reconstruction, not collapsed into one concept.
