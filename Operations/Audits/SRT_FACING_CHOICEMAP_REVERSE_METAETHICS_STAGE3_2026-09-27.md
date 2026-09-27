@@ -509,3 +509,50 @@ This layered reading creates a clean bridge between:
 - metaethics: later explicit good/bad, value, reason and norm formation.
 
 These are linked by reconstruction, not collapsed into one concept.
+
+
+## 14. Author adjudication — transparency / mismatch / foreground
+
+The author accepted the machine hypothesis that the directional-generative relation may be relatively transparent during fluent operation and become more foreground-accessible when generation cannot continue transparently.
+
+Current preformal route:
+
+```text
+transparent L1 directional generation
+  ->
+mismatch / friction / directional deviation / failed automatic absorption
+  ->
+bearer-relative reconfiguration burden increases
+  ->
+part of the ongoing directional-generative relation becomes foreground-relevant
+  ->
+where phenomenal-access conditions are independently met,
+felt better/worse becomes available.
+```
+
+### 14.1 What this does NOT establish
+
+```text
+mismatch -> phenomenality : NOT ESTABLISHED
+friction -> phenomenality : NOT ESTABLISHED
+foreground -> phenomenality : NOT ESTABLISHED
+Bearer -> phenomenality : NOT ESTABLISHED
+Gate -> phenomenality : NOT ESTABLISHED
+```
+
+### 14.2 Machine implication
+
+This suggests a possible upstream correction to the 09-25 Gate / qualia line:
+
+```text
+not:
+  static Gate becomes an object and thereby feeling appears;
+
+candidate:
+  an ordinarily transparent directional-generative relation
+  becomes reconstruction-relevant / foregrounded under unresolved mismatch,
+  while Gate / objectification may be one formed mechanism by which
+  that transition becomes accessible or explicit.
+```
+
+This is a candidate reinterpretation only and must be checked against the author-owned 09-25 records before any HP-B change.
