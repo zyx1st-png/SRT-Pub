@@ -621,3 +621,171 @@ SRT floor programme position = AUTHOR-AFFIRMED
 canonical edit = NO
 #1074 reopen = NO
 ```
+
+
+## 10. Author refinement — construct-level facing matching supersedes whole-theory typing
+
+The author clarified that traditional domains can contain concepts corresponding to all three facings, although much mature work is concentrated in L1-facing / L2-facing structures.
+
+Therefore:
+
+~~~text
+do not type a whole theory once and for all as:
+"downstream"
+"bridge"
+"floor-matched".
+~~~
+
+Instead type each compared construct.
+
+### 10.1 Default comparison matrix
+
+~~~text
+SRT L0-facing burden
+<-> neighbor constitutive / pre-object / pre-individuated burden
+
+SRT L1-facing burden
+<-> neighbor formed generative / individuated / operational organization
+
+SRT L2-facing burden
+<-> neighbor retained / sedimented / institutionalized / scaffolded organization
+~~~
+
+### 10.2 Cross-facing comparison rule
+
+Cross-facing comparison is legitimate only when the bridge itself is the question.
+
+Valid examples:
+
+~~~text
+neighbor L0-facing
+-> neighbor L1-facing realization?
+
+SRT L1-facing reconstruction
+-> constraints on SRT L0-facing source?
+
+neighbor L1-facing process
+-> later L2-facing sediment?
+~~~
+
+Invalid use:
+
+~~~text
+neighbor L1/L2 reproduces SRT L1/L2 observable pattern
+-> SRT L0-facing burden absorbed.
+~~~
+
+Also invalid:
+
+~~~text
+neighbor has no explicit L0-facing vocabulary
+-> SRT L0-facing distinctiveness established.
+~~~
+
+### 10.3 Consequence for the named comparators
+
+The following labels must be treated as **construct-specific**, not theory-global.
+
+#### Barad
+
+Candidate facing map:
+
+~~~text
+constitutive intra-action / agential cut
+-> L0-facing / D3-D4 pressure candidate;
+
+enacted determinate boundary / object-apparatus configuration
+-> L1-facing formed manifestation;
+
+reiterated material-discursive apparatus / stabilized practice
+-> L2-facing candidate where historical retention is actually source-native.
+~~~
+
+Exact mappings remain comparative questions, not identities.
+
+#### Simondon
+
+Candidate facing map:
+
+~~~text
+preindividual / unresolved metastable field
+-> L0-facing pressure candidate;
+
+transductive individuation / individual + associated milieu
+-> L1-facing formation;
+
+retained preindividual charge / prior individuation conditioning later individuation
+-> L2-facing or L1<->L2 bridge candidate depending exact source use.
+~~~
+
+Do not compare SRT primitive Selection directly to the individuated individual merely because both participate in generative dynamics.
+
+#### Whitehead / relational realism
+
+Candidate facing map:
+
+~~~text
+creativity / potentiality / actualization burden
+-> possible L0-facing pressure;
+
+actual occasion / concrescence / subjective self-determination
+-> likely L1-facing constitutive organization;
+
+actualized occasion becoming datum for later occasions / global augmentation
+-> L2-facing historical-efficacy pressure.
+~~~
+
+The notion of subjective aim requires its own typing and must not be silently placed at L0 or collapsed into downstream stake-bearing value.
+
+#### Phenomenology
+
+Candidate facing map:
+
+~~~text
+pre-predicative / passive / operative constitution
+-> possible L0-facing or L0<->L1 bridge pressure within experiential domain;
+
+thematic / focal object plus horizon
+-> L1-facing manifestation structure;
+
+sedimentation / habituality / reactivation
+-> L2-facing historical structure.
+~~~
+
+The subjectless-world-side applicability of these mappings remains bounded.
+
+### 10.4 Corrected review principle
+
+The independent reviewer must ask, for every claimed absorption:
+
+1. What facing is the SRT burden?
+2. What facing is the neighbor construct?
+3. Are they actually same-facing?
+4. If not, is the comparison explicitly testing a bridge?
+5. Is an L1/L2 success being silently back-projected into L0?
+6. Is absence of a same-facing comparator being mistaken for SRT victory?
+
+If any answer reveals an unacknowledged cross-facing jump, the absorption / novelty verdict is invalid until repaired.
+
+## 11. Revised terminology
+
+Prefer:
+
+~~~text
+SAME-FACING PAYMENT
+DOWNSTREAM REALIZATION OVERLAP
+UPSTREAM CONSTITUTIVE PRESSURE
+CROSS-FACING BRIDGE QUESTION
+NO SAME-FACING COMPARATOR FOUND
+~~~
+
+Avoid unqualified:
+
+~~~text
+ABSORBED
+NEIGHBOR-PAID
+FLOOR-MATCHED THEORY
+DOWNSTREAM THEORY
+~~~
+
+unless the exact facing is stated nearby.
