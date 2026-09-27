@@ -19,6 +19,7 @@ dependency:
   - Operations/Audits/SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FLOOR_MATCHED_REVIEW_POSITION_2026-09-27.md
   - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
+  - Operations/Audits/SRT_FACING_CHOICEMAP_FLOOR_MATCHED_COMPARATOR_MAP_2026-09-27.md
 tags: [PR1079, IndependentReview, Facing, ChoiceMap, ReverseMetaethics]
 ---
 
@@ -71,7 +72,10 @@ Primary semantic sequence:
 7. SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
    - current omnibus FR-ADV verdict.
 
-8. this handoff.
+8. SRT_FACING_CHOICEMAP_FLOOR_MATCHED_COMPARATOR_MAP_2026-09-27.md
+   - preparatory map only; NOT independent confirmation.
+
+9. this handoff.
 ```
 
 Follow dependencies only when needed to test a claim.
@@ -268,6 +272,71 @@ Required:
 ```
 
 If any wording implies ChoiceMap has now empirically identified primitive Selection, mark BLOCKER.
+
+### R8 — floor-matched constitutive neighbors
+
+The independent reviewer must pressure the current ChoiceMap / directional-generation package specifically against:
+
+```text
+Barad
+-> constitutive cut / determinate separability / observation-after-cut;
+
+Simondon
+-> preindividual / transduction / individual+milieu co-genesis /
+   retained preindividual potential / later individuation conditioning;
+
+Whitehead / relational realism
+-> actualization / self-determination / subjective aim / valuation /
+   actualized occasion -> later datum;
+
+phenomenology
+-> pre-predicative / horizonal manifestation /
+   focal-background relation / passive or operative intentionality.
+```
+
+Do not ask merely whether they use similar words.
+
+Ask whether they pay the **same dependency burden** at D3 / D4.
+
+### R9 — ChoiceMap floor-reach test
+
+The reviewer must explicitly classify ChoiceMap:
+
+```text
+F0 explicit-choice recorder;
+F1 latent preference/state inference;
+F2 dynamic structure-learning reconstruction;
+F3 D3-facing constitutive-cut probe;
+F4 floor-matched discriminatory architecture.
+```
+
+Current producing-model view:
+
+```text
+F2 = clearly reached;
+F3 = candidate;
+F4 = open.
+```
+
+Attempt to falsify this.
+
+Critical question:
+
+> Does observing subject-generated recuts actually force object / comparison / candidate-space genesis to become part of the explanandum, or can all current evidence remain inside a sufficiently rich D2 structure-learning model?
+
+### R10 — anti-immunity guard
+
+Do not infer:
+
+```text
+SRT is a floor-level programme
+-> all SRT constructs are floor-level.
+```
+
+In particular, L1-facing directional-generative organization is a formed target and may be fairly pressured by downstream cognitive / enactive / active-inference accounts.
+
+The floor guard protects only the inference from D1/D2 overlap to D3/D4 absorption.
+
 
 ## 4. Current package verdict to challenge
 
