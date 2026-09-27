@@ -303,3 +303,36 @@ under additional formed conditions.
 ```
 
 This does not reopen HP-B or establish a consciousness theorem.
+
+
+## 10. Author adjudication — mismatch can foreground an otherwise transparent directional-generative process
+
+The author accepted the proposed interpretation:
+
+> **“认同”**
+
+Accepted preformal reading:
+
+```text
+under ordinary fluent operation,
+L1 directional-generative organization may remain backgrounded / transparent;
+
+when mismatch, friction, directional deviation, failed absorption,
+or required reorganization occurs,
+
+the same directional-generative relation can become foreground-relevant
+to the current formed position;
+
+under additional phenomenal-access conditions,
+this can be experienced as a felt better/worse direction.
+```
+
+This is not a claim that mismatch is necessary for all feeling, nor that friction alone causes phenomenality.
+
+Status:
+
+```text
+AUTHOR-ACCEPTED PREFORMAL DIRECTION
+canonical consequence = NONE
+HP-B reopen = NO
+```
