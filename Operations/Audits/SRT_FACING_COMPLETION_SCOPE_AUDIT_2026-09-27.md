@@ -9,6 +9,7 @@ claim_mode: scope_audit
 created: 2026-09-27
 updated: 2026-09-27
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_2026-09-27.md
   - Operations/Audits/SRT_FACING_RECONSTRUCTION_PASS_AB_INTEGRATED_OUT_A_D_2026-09-26.md
   - Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md
@@ -77,7 +78,13 @@ completed source-native neighbor comparison
 
 Use the v0.3 human-in-the-loop method for any future stronger claim.
 
-## 6. Current routing consequence
+## 6. Relation to #1074 anti-tautology STOP
+
+Do not retroactively classify #1074 under later Facing execution classes. It followed its own reverse-neighbor / primitive-triangulation / author-adjudication route before v0.3 existed.
+
+A future FACE-REC result does **not** reopen the #1074 STOP merely because it used author generative confrontation. Reopening remains governed only by the explicit four new-input conditions in the 2026-09-27 anti-tautology author adjudication. A FACE-REC output may qualify only if its substantive result independently satisfies one of those conditions.
+
+## 7. Current routing consequence
 
 No change to the single repository CURRENT NEXT.
 

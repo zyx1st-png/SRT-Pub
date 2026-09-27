@@ -27,6 +27,8 @@ dependency:
   - Operations/Proposals/SRT_GATE_TYPED_TOY_SIMULATION_DESIGN_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md
   - Operations/Proposals/SRT_FACING_RECONSTRUCTION_SIMPLIFICATION_METHOD_V0_1_2026-09-26.md
+  - Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md
 tags: [Cognition, PreObject, GenerativeOrientation, Attractor, Field, GateGeometry, Affordance, Metastability, Expectation, Bearer, Objectification]
 ---
 
@@ -71,6 +73,18 @@ SRT interpretation
 
 positive cognition result
 != primitive Selection / O0 proof;
+
+neutral empirical execution
+= may proceed without FR-AUTH;
+
+promotion from a neutral result to:
+- SRT / GRG domain recut;
+- cross-domain Facing reconstruction;
+- new objectification / generative dependency claim
+= requires Facing v0.3 FR-AUTH + FR-ADV;
+= author blind-first response before machine recut candidates;
+= independent FR-ADV before a new experiment / preregistration,
+  formal domain-reconstruction claim, or strong comparative increment;
 
 canonical edit
 = NO.
