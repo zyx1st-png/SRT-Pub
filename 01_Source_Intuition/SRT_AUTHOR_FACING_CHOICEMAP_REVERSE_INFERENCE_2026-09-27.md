@@ -260,3 +260,46 @@ canonical edit = NO
 HP-B reopen = NO
 #1074 reopen = NO
 ```
+
+
+## 9. Author adjudication — layered phenomenality
+
+The author selected C:
+
+> **“c”**
+
+The controlled gate was:
+
+```text
+A. the better/worse direction must already be phenomenally conscious;
+
+B. the underlying L1 directional-generative event is nonphenomenal only;
+
+C. layered:
+   the underlying L1 event need not itself be phenomenal,
+   while in a Bearer / consciousness-capable formed organization
+   one facing of that event can become phenomenally accessible
+   as a felt better/worse sense.
+```
+
+Author adjudication:
+
+```text
+C = ACCEPTED FOR CURRENT PREFORMAL RECONSTRUCTION
+```
+
+Thus:
+
+```text
+prephenomenal directional-generative organization
+!= phenomenality by definition;
+
+but
+
+phenomenally felt better/worse
+may be a downstream accessible facing
+of the same underlying L1 generative event
+under additional formed conditions.
+```
+
+This does not reopen HP-B or establish a consciousness theorem.
