@@ -158,6 +158,44 @@ Only a comparator that independently makes constitutive object / boundary / cand
 If the review promotes a downstream match into a floor-level absorption claim without paying this test, mark that review move itself as a MAJOR methodological error.
 
 
+### R0a — construct-level facing match
+
+The whole theory must not be assigned one global level.
+
+For every substantive comparison, identify:
+
+~~~text
+SRT construct facing = L0 / L1 / L2-facing;
+neighbor construct facing = L0 / L1 / L2-facing;
+comparison type = same-facing / bridge / invalid cross-facing.
+~~~
+
+Default admissible matrix:
+
+~~~text
+L0 <-> L0
+L1 <-> L1
+L2 <-> L2
+~~~
+
+Cross-facing comparison is allowed only when the bridge / derivation relation itself is under test.
+
+Forbidden inference:
+
+~~~text
+neighbor L1/L2 explains downstream phenomenon
+-> SRT L0 burden absorbed.
+~~~
+
+Also forbidden:
+
+~~~text
+no explicit neighbor L0 vocabulary
+-> SRT L0 distinctiveness established.
+~~~
+
+If an absorption, novelty, replacement or equivalence claim depends on an unacknowledged cross-facing jump, mark it MAJOR.
+
 ### R1 — provenance integrity
 
 Check:
@@ -389,6 +427,8 @@ CLAIMS THAT SURVIVE
 CLAIMS THAT MUST BE NARROWED
 PROVENANCE FINDINGS
 NEIGHBOR-ABSORPTION FINDINGS
+CONSTRUCT-FACING FINDINGS
+CROSS-FACING ERRORS, IF ANY
 MERGE RECOMMENDATION FOR THIS NONCANONICAL PACKAGE
 ```
 
