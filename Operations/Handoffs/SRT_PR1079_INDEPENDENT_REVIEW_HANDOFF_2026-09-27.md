@@ -17,6 +17,8 @@ dependency:
   - Operations/Audits/SRT_FACING_DIRECTIONAL_GENERATION_HPB_UPSTREAM_CROSSWALK_2026-09-27.md
   - Operations/Audits/SRT_FACING_CHOICEMAP_FRADV_DIRECTIONAL_POLARITY_2026-09-27.md
   - Operations/Audits/SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FLOOR_MATCHED_REVIEW_POSITION_2026-09-27.md
+  - Operations/Audits/SRT_PREOBJECT_FOREGROUND_OBSERVABILITY_RETROSPECTIVE_LIMITATIONS_REVIEW_PASS12_2026-09-10.md
 tags: [PR1079, IndependentReview, Facing, ChoiceMap, ReverseMetaethics]
 ---
 
@@ -119,6 +121,39 @@ Review whether the package preserves these decisions faithfully and avoids promo
 
 ## 3. Mandatory pressure questions
 
+### R0 — floor-match before comparison
+
+Before using any comparator, classify the burden actually under review:
+
+```text
+D1 LOCAL DYNAMICS
+D2 STATE-SPACE / REPRESENTATIONAL CAPTURE
+D3 PRE-OBJECT CONSTITUTION
+D4 OBSERVATION RELATION
+```
+
+Then classify the comparator:
+
+```text
+F-DOWNSTREAM
+F-BRIDGE / FORMATION
+F-FLOOR-MATCHED
+```
+
+Mandatory rule:
+
+```text
+D1 / D2 success
+-/-> D3 / D4 absorption.
+```
+
+A downstream theory may subtract local mechanism novelty or supply a strong implementation rival without thereby adjudicating SRT's floor-level programme.
+
+Only a comparator that independently makes constitutive object / boundary / candidate-space genesis or observation-after-cut part of its explanandum may directly pressure D3 / D4.
+
+If the review promotes a downstream match into a floor-level absorption claim without paying this test, mark that review move itself as a MAJOR methodological error.
+
+
 ### R1 — provenance integrity
 
 Check:
@@ -174,9 +209,19 @@ Pressure the omnibus FR-ADV against at least:
 - Solms / affect-first active inference;
 - implicit coherence / gist / predictive-processing rivals.
 
-Check whether the audit grants enough absorption.
+Check whether the audit grants enough **typed** absorption.
 
-If "pre-object direction", "better/worse before reasons", or "mismatch becomes felt" is presented as SRT-specific by itself, mark MAJOR or BLOCKER depending on scope.
+Required distinction:
+
+```text
+phenomenon / mechanism overlap
+!=
+floor-level ontological absorption.
+```
+
+If "pre-object direction", "better/worse before reasons", or "mismatch becomes felt" is presented as SRT-specific **as a phenomenon**, mark MAJOR or BLOCKER depending on scope.
+
+But if a downstream comparator is used to conclude that D3/D4 are absorbed merely because it reproduces those phenomena, mark the review reasoning as methodologically invalid.
 
 ### R5 — reparameterization
 
@@ -232,7 +277,8 @@ The producing model's verdict is:
 PASS-WITH-NARROWING at method / research-programme level.
 
 SOURCE RETURN                         = PASS
-MATURE-NEIGHBOR ABSORPTION            = STRONG
+D1 / D2 ABSORPTION                    = STRONG
+D3 / D4 FLOOR ABSORPTION               = NOT ESTABLISHED
 INTERNAL CONTRADICTION                = NO, WITH GUARDS
 REPARAMETERIZATION RESISTANCE         = NOT ESTABLISHED
 DEPENDENCY-ORDER CHANGE               = YES, METHOD-LEVEL
