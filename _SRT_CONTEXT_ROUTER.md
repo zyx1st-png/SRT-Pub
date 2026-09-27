@@ -458,6 +458,8 @@ When answering or editing a non-simple SRT question:
 - Preformal coherence sensitivity is a downstream assay: early fit / mismatch may reveal perturbation of the prior orientation before the violated relation becomes explicit.
 - SRT mapping is downstream and optional. Existing cognitive-science accounts must be allowed to absorb the effect.
 - This route is the active CURRENT NEXT as of 2026-09-27 after author-accepted primitive anti-tautology STOP; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
+- Neutral cognition execution may proceed without author Facing confrontation. If the task promotes a neutral result into an SRT / GRG domain recut, new objectification claim, or cross-domain Facing reconstruction, load `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` plus `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md`: blind FR-AUTH first, machine candidates only after the author response is preserved, then FR-ADV; promotion into a new experiment / preregistration or formal domain-reconstruction claim requires independent FR-ADV.
+- Facing v0.3 is a method guard, not a new ontology layer. Its FACE-CAL / FACE-REC execution classes are orthogonal to research_mode U / N. A future FACE-REC result does not itself reopen the #1074 primitive anti-tautology STOP.
 
 ---
 
