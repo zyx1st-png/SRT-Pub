@@ -395,3 +395,38 @@ Status:
 MACHINE SYNTHESIS FROM PRIOR AUTHOR SOURCES
 AUTHOR RE-ADJUDICATION REQUIRED
 ```
+
+
+## 12. Author adjudication — scale-separated directional continuity accepted
+
+The author accepted the machine synthesis:
+
+> **“认同，继续”**
+
+Thus the current FACE-REC package fixes, at preformal author level:
+
+```text
+LOCAL / SHORTER HORIZON:
+an inherited directional-generative organization is already operative
+before the current explicit object / option / reason;
+
+LONGER / RECONSTITUTIVE HORIZON:
+Selection history can reconstruct the organization that counts as direction.
+```
+
+Compact:
+
+```text
+direction precedes current objectification
+without being an ahistorical fixed moral vector.
+```
+
+This closes the present FR-AUTH reconstruction phase sufficiently to begin FR-ADV.
+
+It does not close:
+- direction source at canonical strength;
+- L0 -> L1 derivation;
+- phenomenality;
+- metaethics;
+- HP-B;
+- #1074 reopen.
