@@ -298,3 +298,47 @@ A. necessarily felt / phenomenal;
 B. can be pre-phenomenal / nonconscious, with felt quality as later realization;
 C. not a clean split: phenomenality itself may be a later strengthening / facing of the same process.
 ~~~
+
+## 9. Supersession overlay — later author adjudications and omnibus FR-ADV
+
+This file captures an earlier bounded FR-ADV pressure stage.
+
+Its §8 author gate has since been explicitly resolved:
+
+```text
+author choice = C
+
+underlying L1 directional-generative event
+need not itself be phenomenal;
+
+in an appropriately formed organization,
+one facing can become phenomenally accessible
+as felt better/worse.
+```
+
+Later author adjudication also accepted:
+
+```text
+directional sensing
+and
+generative recutting
+= two facings of one L1 event;
+
+transparent directional generation
+can become more foreground-relevant under mismatch / reorganization;
+
+direction is historically inherited,
+pre-object relative to the current cut,
+continuously operative,
+and recursively reconstructible.
+```
+
+For the current package, the controlling broader adversarial synthesis is:
+
+```text
+Operations/Audits/
+SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
+```
+
+This earlier file remains useful for its micro-valence / affect subtraction.
+It must not be read as leaving §8 unresolved.
