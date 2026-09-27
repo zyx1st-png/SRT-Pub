@@ -637,3 +637,167 @@ B. draft a neutral ChoiceMap inverse-identification protocol
 ```
 
 Given the current package has accumulated strong new author content and machine synthesis, independent review should precede any merge or stronger promotion.
+
+
+## 13. Floor-position corrective overlay — controlling for §§2, 4, 10 and review use
+
+Later author adjudication:
+
+```text
+01_Source_Intuition/
+SRT_AUTHOR_ADJUDICATION_FLOOR_MATCHED_REVIEW_POSITION_2026-09-27.md
+```
+
+requires a correction to how "absorption" is read in this FR-ADV.
+
+### 13.1 D1-D4 targets must be separated
+
+Use:
+
+```text
+D1 LOCAL DYNAMICS
+D2 STATE-SPACE / REPRESENTATIONAL CAPTURE
+D3 PRE-OBJECT CONSTITUTION
+D4 OBSERVATION RELATION
+```
+
+A result at D1 / D2 does **not** automatically pay D3 / D4.
+
+Therefore all earlier phrases such as:
+
+```text
+SOURCE-ABSORBED
+MATURE-NEIGHBOR ABSORPTION = STRONG
+```
+
+must now be read as scoped unless the comparator independently takes D3 / D4 as explanandum.
+
+### 13.2 Reclassification of the current neighbors
+
+#### Skilled Intentionality / affordance-field family
+
+Current pressure:
+
+```text
+pre-reflective whole-field direction;
+situated relevance;
+history-shaped selective openness;
+field / landscape reorganization.
+```
+
+Disposition:
+
+```text
+D1 / D2 / bridge-level overlap = STRONG;
+D3 pre-object constitution = PARTIAL / REQUIRES FLOOR-MATCHED TEST;
+D4 observation relation = NOT ESTABLISHED BY THIS PASS.
+```
+
+It is a strong absorber of generic cognition-level "field first" language,
+not by that fact a global absorber of the SRT floor programme.
+
+#### Enactivism / adaptivity / organizational autonomy
+
+Disposition:
+
+```text
+system-relative significance / normativity / regulation
+= STRONGLY ABSORBED at formed-organism / relation level;
+
+whether the account also exhausts
+the genesis of determinate object / option / comparison space
+without presupposing a sufficient formed floor
+= NOT ESTABLISHED HERE.
+```
+
+#### Damasio / Solms / affective-active-inference lines
+
+Disposition:
+
+```text
+background regulation -> felt access;
+valence / need / prioritization / policy effects
+= STRONGLY ABSORBED at downstream realization level;
+
+SRT D3 / D4 floor burden
+= NOT ADJUDICATED by those overlaps alone.
+```
+
+#### gist / coherence / predictive-processing rivals
+
+Disposition:
+
+```text
+early "wrong/right before reasons" phenomenon
+= STRONGLY ABSORBED as behavioral / cognitive phenomenon;
+
+pre-object constitutive floor
+= NOT TESTED merely by reproducing that phenomenon.
+```
+
+### 13.3 Floor-matched comparators
+
+Only theories that independently make one or more of the following part of their explanandum may directly pressure D3 / D4:
+
+```text
+genesis of determinate object / boundary / candidate space;
+constitutive differentiation prior to independent relata;
+individuation from a preindividual / pre-object regime;
+observation / manifestation as downstream of a constitutive cut.
+```
+
+Repository-identified candidates include, with source-native differences preserved:
+
+- Barad;
+- Simondon;
+- Whitehead where the relevant burden is genuinely floor-matched;
+- phenomenological / process accounts that refuse the completed manifest interface as final explanatory floor.
+
+No theory is floor-matched merely because it is mature, broad, predictive, or successful.
+
+### 13.4 Corrected FR-ADV verdict
+
+Replace the untyped reading:
+
+```text
+MATURE-NEIGHBOR ABSORPTION = STRONG
+```
+
+with:
+
+```text
+D1 / D2 phenomenon-and-mechanism absorption = STRONG;
+
+D3 / D4 floor-level absorption
+= NOT ESTABLISHED BY THE CURRENT FR-ADV;
+
+floor-level comparison
+= REQUIRES FLOOR-MATCHED CONSTITUTIVE RIVALS.
+```
+
+The rest of the narrowing remains:
+
+```text
+phenomenon-level novelty = NOT ESTABLISHED;
+reparameterization resistance at model / method level = NOT ESTABLISHED;
+ChoiceMap inverse-identification payoff = RETAIN;
+primitive Selection identification = NOT ESTABLISHED;
+#1074 reopen = NO;
+canonical edit = NO.
+```
+
+### 13.5 Governance guard
+
+Do not let repeated D1 / D2 comparison silently redefine SRT's root explanandum in the vocabulary of downstream realizations.
+
+Required order:
+
+```text
+preserve root explanandum
+-> type comparator floor
+-> compare only matched burdens
+-> use downstream theories for realization / measurement pressure
+-> use floor-matched theories for D3 / D4 pressure.
+```
+
+This overlay controls any conflicting untyped use of "absorption" earlier in this file.
