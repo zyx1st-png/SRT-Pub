@@ -183,7 +183,7 @@ After the census and before target computation, commit a short implementation-lo
 4. H2 family + rank/penalty grid;
 5. H3 geometry feature transform;
 6. primary outer validation scheme;
-7. first eligible rolling-origin index or revised cross-animal scheme, if target-blind feasibility requires it;
+7. LOSO outer-evaluation definition + target-independent eligibility rule;
 8. primary score;
 9. no-gain rule;
 10. code commit / environment lock.
@@ -195,7 +195,7 @@ Changing any of 1–10 after target inspection requires a new explicitly post-ho
 STOP and return to the repository without target execution if:
 
 - source mapping conflicts with extracted metadata;
-- fewer than 8 usable next-session targets can be obtained under one common target-blind rule;
+- fewer than 12 eligible session-level primary targets survive, or either animal contributes fewer than 4 eligible sessions;
 - the preregistered geometry block is not computable consistently;
 - H2 cannot be made strong/fair under the available sample structure;
 - target-blindness cannot be maintained because source functions inseparably reveal context target values.
@@ -226,3 +226,33 @@ No raw or processed neural data are committed to SRT-Pub.
     context target generation = PROHIBITED
     H1/H2/H3 result execution = PROHIBITED
     canonical edit = NO
+
+## 13. 2026-09-27 E2b design synchronization
+
+The decisive prereg was revised before target inspection after the source-code/sample-size audit.
+
+Current primary:
+
+~~~text
+leave-one-session-out
+held-out context cross-set alignment prediction.
+~~~
+
+Current secondary:
+
+~~~text
+rolling-origin next-session prediction
+= E4-shaped precursor only.
+~~~
+
+Therefore the census should optimize for **session-level feature completeness**, not for maximizing adjacent-session transitions.
+
+Required census summary now includes:
+
+- number of eligible sessions per animal;
+- common non-target feature coverage across sessions;
+- whether LOSO can be run under one target-independent eligibility rule;
+- whether both animals retain >=4 eligible sessions;
+- whether total eligible sessions >=12.
+
+Do not inspect context xgen while deciding any of the above.
