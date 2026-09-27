@@ -314,3 +314,84 @@ that forms the next trajectory.
 
 Current machine reading after the author's latest acceptance leans D2,
 with D3 remaining a serious pressure against reifying a pregiven trajectory.
+
+
+## 11. Source-pressure result — D2/D3 may be scale-separated
+
+A read-back of existing author records changes the apparent D2 / D3 fork.
+
+2026-09-22 already preserves:
+
+```text
+environmental change
+-> local expectation / convergence path may change
+while the attractor can remain;
+
+longer Selection sediment
+-> can shift / split / dissolve / create the attractor itself.
+```
+
+2026-09-26 also preserves:
+
+```text
+pre-object generative orientation
+-> objectification / retention
+-> later retained organization reshapes
+   the next pre-object generative orientation.
+```
+
+Therefore the strongest machine reconciliation is:
+
+```text
+LOCAL / SHORTER HORIZON:
+D2-like
+
+a sufficiently continuous directional-generative organization
+is already operative;
+mismatch changes its foreground accessibility
+and may redirect the local path.
+
+LONGER / RECONSTITUTIVE HORIZON:
+D3-like
+
+the organization that counted as "the direction"
+is itself historically reconstructible;
+Selection sediment, new relations and recutting
+can transform the attractor / orientation itself.
+```
+
+Compactly:
+
+```text
+direction is prior to the current object
+but not necessarily prior to all history;
+
+direction guides current generation
+while being reconstructible by generation across longer horizons.
+```
+
+This blocks two extremes:
+
+```text
+FIXED VALUE VECTOR:
+one timeless direction is pregiven and merely read out;
+
+PURE LOCAL CREATION:
+every event invents direction from zero with no inherited continuity.
+```
+
+Candidate middle:
+
+```text
+historically inherited,
+pre-object relative to the current cut,
+continuously operative,
+yet recursively revisable directional organization.
+```
+
+Status:
+
+```text
+MACHINE SYNTHESIS FROM PRIOR AUTHOR SOURCES
+AUTHOR RE-ADJUDICATION REQUIRED
+```
