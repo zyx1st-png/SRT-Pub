@@ -41,7 +41,9 @@ tags:
 
 # Facing reconstruction & simplification method v0.2
 
-> **Role:** current noncanonical execution owner for one bounded reconstruction pass.
+> **Role:** historical noncanonical execution owner for the completed bounded #1071 reconstruction pass.
+>
+> **Post-pass forward pointer (2026-09-27):** do not reuse this v0.2 package as the execution owner for new cross-domain reconstruction. Future stronger domain recut work is governed by `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md`, including blind-first FR-AUTH and claim-promotion guards. The #1071 8/8 + 7/7 completion counters remain bounded-scope results only; see `Operations/Audits/SRT_FACING_COMPLETION_SCOPE_AUDIT_2026-09-27.md`.
 >
 > **Purpose:** apply the already-canonical L0 / L1 / L2 analytic-aspect rule consistently to prior SRT concepts and a bounded set of source-native neighboring concepts, simplify redundant structure, expose accidental Facing-mixing, and produce a conflict/simplification map before any canonical edits.
 >
