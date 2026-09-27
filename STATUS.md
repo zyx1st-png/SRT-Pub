@@ -55,7 +55,7 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 #1066 cognition bridge / gating freeze package = MERGED / b5ceac428e440b9f8dd58a89da00b8061572dfb6
 #1066 role = NONCANONICAL COGNITION / BRIDGE / GATING PACKAGE; TOY SIMULATION RETAINED DOWNSTREAM / NOT CURRENT NEXT
 #1068 Facing reconstruction method + source trace = MERGED / de12cd41d79f54610d7a06b847758b0f34a71c57
-#1068 role = NONCANONICAL AUTHOR SOURCE + DERIVATION TRACE + METHOD v0.1; CURRENT NEXT REDIRECTED TO FACING RECONSTRUCTION
+#1068 role = NONCANONICAL AUTHOR SOURCE + DERIVATION TRACE + METHOD v0.1; HISTORICAL AT MERGE TIME: CURRENT NEXT REDIRECTED TO FACING RECONSTRUCTION
 #1069 independent review of #1068 = MERGED / d0b5a67a435ab321d6416c25584c1c785d32bf4b
 #1069 role = READ-ONLY POST-MERGE AUDIT; CORRECTIVE D-1…D-4 ACCEPTED IN 2026-09-26 AUTHOR FOLLOW-UP
 #1070 Facing method v0.2 corrective = MERGED / 208bdca84b31076b83c2256cd1913fd3d6b2675f
@@ -123,7 +123,7 @@ explicit objects / knowledge / rules = later stabilized cuts that can recursivel
 individual differences = downstream empirical question;
 author exceptionalism = NOT ASSUMED;
 SRT explanatory gain = OPEN;
-CURRENT STATUS = cognition / bridge / Gate package retained as downstream frozen candidate; Facing reconstruction now owns the active CURRENT NEXT;
+HISTORICAL STATUS AT 2026-09-26 = cognition / bridge / Gate package retained as downstream frozen candidate; Facing reconstruction then owned the active CURRENT NEXT; SUPERSEDED by the 2026-09-27 cognition route return;
 canonical edit = NO.
 ~~~
 
