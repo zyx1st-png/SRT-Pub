@@ -459,3 +459,151 @@ B12 record (L1)    vs B3 history (L2)                  = INVALID-CROSS-FACING (r
 ~~~
 
 **Freeze statement**: §§0–3 were committed to `claude/srt-blind-calibration-12-oxrhc9` before the seed file was opened. The post-seed comparison follows in §4 and later sections, added in a separate later commit.
+
+---
+
+## 4. Post-seed comparison
+
+The seed (blob `12a3bc2d…`) was opened only after freeze commit `6158961d9d23f49a8e5c4c7db7e5a847922fd4d1` (2026-09-27T14:18:54Z) was pushed. The §3 verdicts are left unchanged below. Post-hoc positions are stated separately and do not overwrite blind verdicts.
+
+### 4.1 Case-by-case
+
+| case | blind rerun | seed | verdict | confidence |
+|---|---|---|---|---|
+| B1 / C1 | FACE-L0-CANDIDATE / HIGH | FACE-L0-CANDIDATE / HIGH | AGREE | AGREE |
+| B2 / C2 | FACE-L1 / HIGH | FACE-L1 / HIGH | AGREE | AGREE |
+| B3 / C3 | FACE-L2 / HIGH | FACE-L2 / HIGH | AGREE | AGREE |
+| B4 / C4 | FACE-L1 / HIGH | FACE-L1 / MEDIUM | AGREE | differs |
+| B5 / C5 | FACE-L1<->L2-BRIDGE / MEDIUM | FACE-L1 / MEDIUM | **DISAGREE** | — |
+| B6 / C6 | FACE-L1 / MEDIUM | FACE-L1 / HIGH | AGREE | differs |
+| B7 / C7 | FACE-L0<->L1-BRIDGE / MEDIUM | FACE-L0<->L1-BRIDGE / MEDIUM | AGREE | AGREE |
+| B8 / C8 | FACE-L0<->L1-BRIDGE / MEDIUM | FACE-L0<->L1-BRIDGE / MEDIUM | AGREE | AGREE |
+| B9 / C9 | FACE-L2 / MEDIUM | FACE-L2 / HIGH | AGREE | differs |
+| B10 / C10 | FACE-L1 / HIGH | FACE-L1 / HIGH | AGREE | AGREE |
+| B11 / C11 | FACE-L2 / HIGH | FACE-L2 / HIGH | AGREE | AGREE |
+| B12 / C12 | FACE-L1 / MEDIUM | FACE-UNDETERMINED / HIGH | **DISAGREE** | — |
+
+~~~text
+verdict agreement            = 10 / 12
+verdict + confidence match   =  7 / 12
+verdict disagreements        =  2 (B5, B12)
+confidence-only divergences  =  3 (B4, B6, B9)
+all mandatory traps (handoff §4) = passed by both runs:
+  hidden / generative -> L0 rejected (B6, B10); stored -> L2 rejected (B12);
+  past -> L2 only with later efficacy (B3, B9, B11); bridge used only where the relation is the role (B7, B8);
+  SRT term not privileged (B6, B12); traditional term not downstreamed (B7, B8)
+~~~
+
+## 5. Agreements
+
+- **B1–B3 (O0 / S0 / history).** Both runs reproduce the Spine §11 routing and keep O0 / S0 as a same-event co-primitive pair, not a temporal ladder. These are stable anchors.
+- **B7 / B8 (Barad, Simondon).** Both runs give FACE-L0<->L1-BRIDGE / MEDIUM, and both keep metastable / apparatus realizations apart from primitive L0. This is the method's burden-vs-realization split working as intended.
+- **B10 / B11.** Same architecture, different explanandum, different facing (L1 vs L2) in both runs. The method's indexing to the explanandum reproduces.
+- **B6 verdict.** Both reject hidden / generative -> L0 and type the ChoiceMap process as L1.
+- **B4 verdict.** Both type the time-local position as L1 with lineage excluded.
+
+## 6. Disagreements and classification
+
+### 6.1 B5 — Gate (L1<->L2 BRIDGE vs L1)
+
+Both runs read "stable" differently:
+
+- the seed treats stability as a present property of the currently available geometry, with prior stabilization as "a different question";
+- the rerun reads stability ("which equivalence and boundary relations persist under perturbation", gate item 5; author §3.2 "coarse-graining and stability are two sides of one burden") as retention across later Selection, hence part of the current role.
+
+The two readings are conditional mirror images. The seed's revision trigger ("Gate sedimentation / historical stabilization -> L1<->L2") and the rerun's falsifier ("purely synchronic robustness -> FACE-L1") name the same hinge.
+
+~~~text
+classification = D-B target-cut mismatch (primary)
+               + D-A definition ambiguity (root: "stable" = synchronic dispositional robustness
+                 vs diachronic retention; the method has no Q3/Q4 tie-break)
+systematic?    = YES — recurs for any formed, currently available, stable organization
+                 (Gate, habit at execution, attractor, formed One / Selection-position)
+~~~
+
+Post-hoc rerun position: the synchronic-dispositional reading (the gate at t *specifies* which relations would persist) is at least as defensible as the rerun's diachronic reading. The case is ambiguous as worded, not mis-scored by either run.
+
+### 6.2 B12 — stored transcript (L1 vs UNDETERMINED)
+
+Both runs refuse ontic L2, so the D-G guard itself worked. The disagreement is about what to record *after* L2 is refused:
+
+- the seed's UNDETERMINED / HIGH is used to mean "no ontic facing burden established; epistemic use only". The method, however, defines UNDETERMINED as "evidence is insufficient to type the relation" or "cut cannot be declared", and neither holds here: the cut is declarable and the evidence is decisive (negative Q4). HIGH confidence in "evidence insufficient" is also internally strained. The seed itself states HIGH is "for the refusal to call it ontic L2", which is confidence in a negative, not in the assigned verdict;
+- the rerun's FACE-L1 / MEDIUM is formally admissible (a present determinate artifact), but it is uninformative, because any existing artifact is trivially "actual".
+
+~~~text
+classification = D-A definition ambiguity (primary: UNDETERMINED semantics and the scope of "actualised / manifest" in FACE-L1)
+               + D-G context (both runs agree on the ontic vs epistemic split; the method has no slot for it)
+systematic?    = YES — recurs for every record / trace / archive / dataset / transcript case,
+                 and for the author's ChoiceMap use of "L2-facing" for evidence
+~~~
+
+Post-hoc rerun position: neither label is right under v0.1. The method needs either a no-burden outcome or a separate evidential axis (see §7 C2).
+
+### 6.3 Confidence-only divergences
+
+| case | divergence | cause | class |
+|---|---|---|---|
+| B4 | rerun HIGH / seed MEDIUM | the rerun weighted One Formation Def-OF-3's explicit One vs Selection-position_t aspect split; the seed did not cite that owner | D-C source-evidence weighting; not systematic |
+| B6 | rerun MEDIUM / seed HIGH | the rerun judged "the cut" in Q1 at the object level the process generates (Q1 PARTLY, Q2 YES, so the §8 tree routes to bridge); the seed judged it at the formed-subject level (Q1 YES, so the tree routes to L1) | D-H other: nested-cut ambiguity + fast-tree L1-exit gap (M1, M6); systematic |
+| B9 | rerun MEDIUM / seed HIGH | the FRR note keeps the exact SRT-L2 mapping OPEN, and FRR "subsequent" is primarily logical / mereotopological, not temporal | D-C + D-F (what "later" means in Q4); systematic for process-philosophy neighbors |
+
+### 6.4 Procedural finding on the seed records
+
+This does not change any verdict, but it matters for promotion.
+
+The seed's per-case records are not template-complete under the method's own rules:
+
+- Step 0 requires an eight-field cut declaration before any admissible verdict. The seed gives one-line target cuts.
+- Q10 caps confidence at LOW when no falsifier is stated. No revision trigger / falsifier appears for C2, C3, C6 or C12, which are all rated HIGH, nor for C7 and C8, which are rated MEDIUM. C7 and C8 give scope caveats, not source evidence that would change the verdict.
+
+Read strictly, those records would be inadmissible or LOW-capped. The rerun's records supply full cuts and falsifiers for all twelve cases.
+
+## 7. Method defects and recommended corrections
+
+Corrections are recommended only where a disagreement or divergence exposes a systematic rule problem (handoff §5.4):
+
+- **C1 — Q3/Q4 tie-break for formed, currently available organizations** (from B5; also M3). Require the record to state whether the explanandum's work is done by present operation at t (L1), by a prior formation's continued constraint on later Selection (L2), or by both as one burden (L1<->L2 BRIDGE). Require that "stable / stability" be declared as synchronic dispositional robustness or diachronic retention.
+- **C2 — UNDETERMINED semantics and a no-burden outcome** (from B12; also M4). Keep UNDETERMINED for insufficient evidence or an undeclarable cut only. For records, traces and archives, add either (a) an explicit refusal field (`refused facing: L2 — reason`), recorded separately from any assigned facing, or (b) a third record axis `C. EVIDENTIAL / ACCESS ROLE`. The second also absorbs the author's "L2-facing evidence" usage without ontic confusion. **Adding a verdict label would change the method's verdict vocabulary, so it is an author-level method decision.**
+- **C3 — fast-tree L1 exit and nested cuts** (from the B6 divergence, the B2 note, M1 and M6). In the cut-genesis branch, add the question "is the non-preclosure face carried inside this construct, or separately (O0 / a further inference target)?" If separately, the verdict is FACE-L1 with a Q7 aspect note. Require the record to name both the construct's own cut and the cut it constitutes.
+- **C4 — meaning of "later" in Q4** (from B9). State that "later Selection" means Selection / conditioning order, consistent with the non-temporal-ladder rule. Record logical vs temporal subsequence when the source distinguishes them.
+- **C5 — declared-absent cut fields** (M5). State that `DECLARED ABSENT / NOT PRESUPPOSED` counts as a Step-0 declaration.
+- **C6 — L0-side strength on bridges** (M2; no disagreement here, low priority). Bridge records state `L0-side = cut-relative | O0-strength`.
+- **C7 — enforce template completeness** (§6.4). A calibration or gold record must carry the full Step-0 cut and a Q10 falsifier, or its confidence is capped per Q10.
+
+## 8. Cases unsuitable for the gold set (as currently worded)
+
+| case | reason | how to make it gold-suitable |
+|---|---|---|
+| B5 | "stable" is ambiguous between synchronic and diachronic readings; the two runs split on it | split into B5a (stability as present dispositional robustness -> expected L1) and B5b (stability as retention across later Selection -> expected L1<->L2) after C1 lands |
+| B12 | no admissible positive verdict under v0.1 (C2) | use now only as a **negative control** scored on "NOT FACE-L2"; re-admit as a positive item after C2 lands |
+| B11 (seed version) | the seed names no source; the handoff requires a source-native repository source | pin the source (rerun used the Asaoka habit SourceCard; the repository lacks an active-inference habit-prior close-read) |
+
+## 9. Proposed gold-set candidates
+
+~~~text
+HIGH-stability anchors (verdict + confidence agree, source explicit):
+  B1 FACE-L0-CANDIDATE   B2 FACE-L1   B3 FACE-L2   B10 FACE-L1   B11 FACE-L2 (source pinned)
+
+bridge exemplars (verdict + confidence agree; secondary-source caveat):
+  B7 FACE-L0<->L1-BRIDGE   B8 FACE-L0<->L1-BRIDGE
+
+verdict-stable, confidence to be settled:
+  B4 FACE-L1   B6 FACE-L1 (key hidden != L0 trap)   B9 FACE-L2 (after C4)
+
+negative control only:
+  B12 NOT FACE-L2
+~~~
+
+## 10. Promotion verdict
+
+~~~text
+PROMOTE v0.1? = WITH-CORRECTIONS
+
+- core routing reproduces (10/12 verdicts; every mandatory trap passed by both runs);
+- the two disagreements are systematic rule gaps (C1, C2), not rater error;
+- C2 changes verdict vocabulary -> author-level method decision;
+- seed §4 still requires: method revised where disagreement is systematic
+  + a second rerun showing acceptable stability;
+- no promotion into Facing v0.3 / v0.4 from this record (handoff §6);
+- canonical consequence = NONE; STATUS change = NONE; #1079 merge decision = not made here.
+~~~
