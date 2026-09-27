@@ -135,3 +135,36 @@ L1-facing
 ```
 
 This author adjudication authorizes the machine to proceed from blind-first capture into the second FR-AUTH stage and reveal candidate recuts. It does not itself authorize canonical edits or an #1074 reopen.
+
+
+## 6. Author adjudication — continuity is primarily directional: a sense of getting better or worse
+
+The author responded to the cross-context continuity question:
+
+> **“我偏向于1 ，一种变好或变坏的感觉。”**
+
+This adjudicates the leading continuity candidate as:
+
+```text
+primary continuity candidate
+= direction continuity;
+
+preformal author wording
+= a sense of becoming better or becoming worse.
+```
+
+Important boundary:
+
+- this statement does **not yet** identify that sense with pleasure / pain;
+- does **not yet** identify it with canonical `T_dir`;
+- does **not yet** identify it with `d-value`, reward, utility, value, normativity or phenomenality;
+- does **not yet** establish a scalar;
+- does **not yet** state that the direction is fixed independently of the generative process.
+
+Status remains:
+
+```text
+AUTHOR RECUT CANDIDATE / PREFORMAL
+```
+
+The next machine task is to determine whether existing owners already absorb this burden, whether it is merely a reparameterization of value / reward / valence, or whether the author is pointing at a more primitive generative direction relation.
