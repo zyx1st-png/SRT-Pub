@@ -358,7 +358,7 @@ If none survives, use `PREFORMAL_ONLY`, `INTERPRETIVE_RESTATEMENT`, `NO_GAIN`, o
 
 ## 10. Relation to experiments
 
-Neutral empirical work can precede Stage B.
+Neutral empirical work can precede FR-AUTH.
 
 But there is a hard boundary:
 
