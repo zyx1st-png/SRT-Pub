@@ -427,6 +427,7 @@ When answering or editing a non-simple SRT question:
 
 ### Primary
 
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
 - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
 
@@ -456,7 +457,7 @@ When answering or editing a non-simple SRT question:
 - Strong neighbors include Gestalt, ecological-enactive Skilled Intentionality / field of relevant affordances, operative intentionality, predictive processing, metastable coordination dynamics and attractor/manifold neuroscience.
 - Preformal coherence sensitivity is a downstream assay: early fit / mismatch may reveal perturbation of the prior orientation before the violated relation becomes explicit.
 - SRT mapping is downstream and optional. Existing cognitive-science accounts must be allowed to absorb the effect.
-- This route is the active CURRENT NEXT as of 2026-09-26; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
+- This route is the active CURRENT NEXT as of 2026-09-27 after author-accepted primitive anti-tautology STOP; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
 
 ---
 
