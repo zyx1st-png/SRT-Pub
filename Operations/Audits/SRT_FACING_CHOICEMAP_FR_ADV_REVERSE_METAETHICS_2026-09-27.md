@@ -801,3 +801,72 @@ preserve root explanandum
 ```
 
 This overlay controls any conflicting untyped use of "absorption" earlier in this file.
+
+## 14. Facing-matched comparison corrective — controlling for all comparative verdicts
+
+The author further clarified that traditional domains may contain constructs corresponding to L0/L1/L2-facing burdens, but much mature work is concentrated in formed and retained organization. Therefore the correct comparison unit is the **construct-level facing**, not the whole theory.
+
+### 14.1 Non-reification guard
+
+~~~text
+L0-facing / L1-facing / L2-facing
+= analytical / execution views;
+!= three substances;
+!= globally fixed taxonomic bins for external theories.
+~~~
+
+A neighbor construct can be assigned a facing only relative to the burden currently under comparison.
+
+### 14.2 Same-facing rule
+
+Before any verdict of ABSORBED / NEIGHBOR-PAID / EQUIVALENT / REPLACED / NO-GAIN / DISTINCTIVE, record:
+
+~~~text
+SRT burden facing;
+neighbor burden facing;
+whether comparison is same-facing.
+~~~
+
+Default:
+
+~~~text
+L0-facing <-> L0-facing
+L1-facing <-> L1-facing
+L2-facing <-> L2-facing
+~~~
+
+### 14.3 Cross-facing rule
+
+Cross-facing comparison is admissible only for an explicitly declared bridge question.
+
+~~~text
+L0-facing source -> L1-facing realization?
+L1-facing organization -> L2-facing sediment?
+L2-facing evidence -> reconstruction constraint on earlier L1 / L0?
+~~~
+
+Cross-facing success does not by itself establish same-facing absorption.
+
+### 14.4 Correction to earlier FR-ADV language
+
+Earlier claims such as generic pre-object direction being absorbed by enactivism, or nonphenomenal direction becoming felt being mature neighboring territory, must be read narrowly as L1-facing / phenomenological / downstream realization overlap. They do not settle the L0-facing source burden.
+
+Likewise Barad / Simondon / Whitehead / phenomenology must not be treated as whole-theory floor comparators. Their individual constructs must be facing-typed before use.
+
+### 14.5 Corrected comparative verdict
+
+~~~text
+L1-facing directional-generative organization:
+strong same-facing / near-facing pressure exists;
+
+L2-facing sediment / history / scaffold:
+strong same-facing pressure exists in several neighbors;
+
+L0-facing source burden:
+not adjudicated by those L1/L2 overlaps;
+
+same-facing L0 comparison:
+requires construct-specific constitutive rivals and remains OPEN.
+~~~
+
+This overlay controls any broader reading of §§2, 4, 9, 10 and 13.
