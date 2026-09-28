@@ -74,16 +74,30 @@ TIMESCALE: over what interval can formation / retention be identified?
 OBSERVER / ACCESS RELATION: what counts as available evidence or manifestation?
 ~~~
 
-If these cannot yet be declared, use FACE-UNDETERMINED rather than guessing.
+A field may be explicitly declared as `DECLARED ABSENT / NOT PRESUPPOSED`; that counts as a declaration.
 
-## 3. Two-axis record — burden vs realization
+If the relevant cut cannot be declared **and is not explicitly absent by source design**, use FACE-UNDETERMINED rather than guessing.
+
+## 3. Three-axis record — burden, realization, evidence/access
 
 Every test must distinguish:
 
 ~~~text
 A. EXPLANATORY BURDEN FACING
 B. FORMAL / MODEL REALIZATION FACING
+C. EVIDENTIAL / ACCESS ROLE
 ~~~
+
+Axis C is orthogonal. A record, archive, transcript, probe or readout may function as evidence without thereby carrying an ontic L2 burden.
+
+For artifact-only cases record:
+
+~~~text
+facing_applicability = NOT-APPLICABLE
+evidential_role = TRACE / READOUT / PROBE / RECONSTRUCTION-EVIDENCE / OTHER
+~~~
+
+Do not create a new ontic facing label merely to house evidence.
 
 A theory may carry an L0-facing philosophical burden while using an L1-facing formal model with declared state variables. Conversely, latent or hidden variables do not thereby become L0-facing.
 
@@ -116,9 +130,21 @@ Does the construct describe the currently manifest / actualised / operative orga
 
 YES supports FACE-L1. A construct may still be dynamic, hidden, latent, generative or nonconscious and remain L1-facing.
 
+For a formed currently available organization, explicitly state whether “stable” means:
+
+~~~text
+synchronic dispositional robustness at t
+or
+diachronic retention from prior formation into later Selection.
+~~~
+
+The first is L1 pressure; the second is L2 pressure. If both are constitutive of one declared explanandum, use L1<->L2 BRIDGE.
+
 ### Q4 — retained-efficacy test
 
 Does a prior achieved differentiation / organization remain materially effective in conditions of later Selection?
+
+“Later” here means later in Selection / conditioning order; it need not mean a simple clock-time sequence. Record logical vs temporal subsequence when the source distinguishes them.
 
 YES supports FACE-L2.
 
@@ -137,6 +163,14 @@ Is the construct's main explanatory role the transition / constitution relation 
 Examples include pre-object burden -> determinate manifestation, formed organization -> retained historical constraint, or retained trace -> reconstruction of earlier generation.
 
 If YES, prefer an explicit bridge label rather than forcing a single facing.
+
+Nested-cut rule: record both (a) the construct's own operative cut and (b) any lower / downstream cut it constitutes. A construct may be L1 at its own cut while participating in an L0<->L1 bridge relative to another declared cut.
+
+For L0<->L1 bridge records, state:
+
+~~~text
+L0-side = cut-relative | O0-strength
+~~~
 
 ### Q6 — removal test
 
@@ -308,12 +342,41 @@ v0.1 must not be promoted into Facing v0.3/v0.4 until:
 5. no canonical owner edit is made merely from calibration.
 ~~~
 
-## 11. Current status
+## 11. Post-calibration closeout status
+
+Independent blind calibration was completed in PR #1081 and merged into the #1079 branch before closeout.
+
+Observed stability:
 
 ~~~text
-method = ACTIVE PROPOSAL
-canonical = NO
-Facing v0.3 amendment = NOT YET
-independent calibration = PENDING
-PR #1079 merge implication = NONE until calibration + review
+verdict agreement = 10 / 12
+verdict + confidence match = 7 / 12
+mandatory traps = PASSED
 ~~~
+
+Systematic defects exposed by the rerun are addressed in this closeout overlay:
+
+~~~text
+C1 Q3/Q4 tie-break + stability semantics = ADDED
+C2 evidential/access role without new ontic verdict = ADDED
+C3 fast-tree L1 exit + nested cuts = ADDED
+C4 “later” as conditioning order = ADDED
+C5 DECLARED ABSENT = ADDED
+C6 L0-side strength on bridges = ADDED
+C7 template completeness / falsifier requirement = RETAINED
+~~~
+
+However, after the 2026-09-28 objectified-trace / vertical-generative reconstruction turn landed in PR #1083, this method is **not promoted as the primary research engine**.
+
+Current role:
+
+~~~text
+method = AUXILIARY / NONCANONICAL
+primary use = cut declaration + same-facing comparison guard + evidence/access hygiene
+second blind rerun = NOT REQUIRED unless this method is revived for promotion
+Facing v0.3 amendment = NO
+canonical consequence = NONE
+CURRENT NEXT change = NO
+~~~
+
+The primary method emphasis has moved from layer classification to vertical generative-edge reconstruction and process / endogenous-cut / measurement identifiability.
