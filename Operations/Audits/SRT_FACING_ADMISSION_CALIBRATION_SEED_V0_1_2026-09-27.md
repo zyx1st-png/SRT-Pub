@@ -241,12 +241,37 @@ method revised where disagreement is systematic;
 second rerun shows acceptable stability.
 ~~~
 
-## 5. Current status
+## 5. Post-rerun status
+
+Independent blind calibration is now present in:
+
+`Operations/Audits/SRT_FACING_ADMISSION_CALIBRATION_BLIND_RERUN_V0_1_2026-09-27.md`.
+
+Observed result:
 
 ~~~text
-producing-model seed = COMPLETE
-independent blind calibration = PENDING
+verdict agreement = 10 / 12
+verdict + confidence match = 7 / 12
+mandatory traps = PASSED
+~~~
+
+The rerun exposed systematic defects in the seed itself:
+
+- C5 / B5 uses “stable” ambiguously between synchronic robustness and diachronic retention;
+- C12 / B12 lacks a clean evidential-only role in the original two-axis method;
+- several seed records omit the full eight-field Step-0 cut;
+- several HIGH / MEDIUM seed records omit an explicit Q10 falsifier.
+
+Therefore:
+
+~~~text
+producing-model seed = COMPLETE AS HISTORICAL SEED
+independent blind calibration = COMPLETE
 gold set = NO
+seed as normative answer key = NO
+second rerun = NOT REQUIRED unless Facing Admission Test is revived for promotion
 Facing v0.3 amendment = NO
 canonical consequence = NONE
 ~~~
+
+The corrected method/template now carry the calibration lessons.
