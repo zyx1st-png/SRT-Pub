@@ -552,12 +552,26 @@ PR #1075 remains frozen on its own question:
 
 Do not reinterpret its outcome as validation of this new method.
 
-Possible future route, only if separately preregistered:
+### 11.1 Hard firewall
+
+Until PR #1075 has revealed, executed, and closed its E2b target firewall:
+
+~~~text
+DO NOT run any new Experiment-2 analysis involving:
+- context geometry;
+- context cross-set alignment;
+- session-level context emergence;
+- any equivalent proxy capable of revealing the held-out target.
+~~~
+
+This prohibition applies even if the analysis is nominally framed as R3/R4, diffusion, process–cut reconstruction or method development.
+
+Possible future route only after #1075 closure:
 
 ~~~text
 reuse source/data adapter
--> new independent process–cut identifiability pilot
--> separate target firewall
+-> new independently preregistered pilot
+-> new target firewall
 -> no retroactive #1075 credit.
 ~~~
 
@@ -570,29 +584,34 @@ Preferred first target characteristics:
 - real longitudinal or perturbational data;
 - multiple non-equivalent readouts;
 - explicit measurement / task cuts;
-- enough data to reserve one cut or one cut-change event prospectively;
-- strong latent-state baseline;
+- a documented **system-side representation / category / boundary formation event**;
+- enough data to reserve one measurement cut or one endogenous-cut transition prospectively;
+- strong latent-state, category-learning and structure-learning baselines;
 - predeclared NO-GAIN outcome.
 
-The Wójcik cognition dataset may support an R2/R3 pilot, but current evidence does not establish that it can support R4.
+The Wójcik dataset is **not authorized as the first live test while #1075 remains open**.
+
+After #1075 closes, Wójcik may be reconsidered as an **R2/R3 feasibility pilot only** unless a separately preregistered endogenous-\(K\) event can be identified.
+
+A fixed-state-space diffusion pilot, if run first elsewhere, is also **feasibility only** and earns no method-distinctiveness credit unless it passes a preregistered R3/R4 comparison against fair baselines.
 
 ## 13. Failure modes
 
 ### F1 — underidentified inverse problem
 
-Many \(G\) candidates remain observationally equivalent.
+Many \((G,K,H,M)\) parameterizations remain observationally equivalent.
 
-Verdict:
+If explicit identifiability anchors are absent or insufficient:
 
 ~~~text
-UNDERIDENTIFIED
+VERDICT = UNDERIDENTIFIED
 ~~~
 
 not “deep process discovered.”
 
 ### F2 — cut leakage
 
-The held-out cut influenced feature/model selection.
+The held-out measurement cut or endogenous-cut target influenced feature/model selection.
 
 Verdict:
 
@@ -600,9 +619,9 @@ Verdict:
 INVALID R3/R4
 ~~~
 
-### F3 — latent-state absorption
+### F3 — baseline absorption
 
-A fair latent-state / dynamical model matches the candidate reconstruction.
+A fair latent-state / dynamical / category-learning / structure-learning / diffusion C-R baseline matches the candidate reconstruction at equal or lower burden.
 
 Verdict:
 
@@ -612,7 +631,7 @@ NO-GAIN
 
 ### F4 — supplied-cut success only
 
-Model predicts data under a supplied new cut but cannot predict cut formation/change.
+Model predicts data under a supplied new measurement cut but cannot predict endogenous cut formation/change.
 
 Verdict:
 
@@ -641,7 +660,49 @@ Verdict:
 STOP
 ~~~
 
-## 14. Current disposition
+## 14. External baseline register
+
+Minimum neighboring methods to pressure before any distinctiveness claim:
+
+~~~text
+measurement invariance:
+  Putnick & Bornstein (2016),
+  DOI 10.1016/j.dr.2016.06.004;
+
+identifiable latent recovery with auxiliary / temporal structure:
+  Hyvärinen, Sasaki & Turner (2019),
+  PMLR 89:859–868;
+
+incremental rational categorization:
+  Anderson (1991),
+  Psychological Review 98(3):409–429,
+  DOI 10.1037/0033-295X.98.3.409;
+
+structural-form discovery:
+  Kemp & Tenenbaum (2008),
+  PNAS 105(31):10687–10692,
+  DOI 10.1073/pnas.0802631105;
+
+diffusion speciation / category commitment baseline:
+  Biroli et al. (2024),
+  Nature Communications 15:9957,
+  DOI 10.1038/s41467-024-54281-3.
+~~~
+
+These references establish pressure / baseline families only. They do not by themselves establish absorption of the new method.
+
+## 15. Use of the irreversibility owner
+
+Core_Law/SRT_Irreversibility.md is a dependency because the method preserves the boundary:
+
+~~~text
+occurrence / before-after non-equivalence
+!= durable retained historical efficacy.
+~~~
+
+That guard is required when admitting an L1→L2 sedimentation claim.
+
+## 16. Current disposition
 
 ~~~text
 method = DRAFT v0.1
@@ -655,9 +716,15 @@ GRG stop-loss reopen = NO
 primary research object
 = vertical generative edge / recursive loop
 
+candidate new methodological delta
+= identifiability anchors
+  + prospective held-out measurement-cut prediction
+  + prospective endogenous-cut formation/change prediction
+
 first formal candidate
-= diffusion-like sedimentation model for L1->L2
+= diffusion-related sedimentation / return-cycle feasibility model
 
 L0->L1 formal implementation
-= OPEN
+= OPEN;
+R4 is not unrestricted framework constitution.
 ~~~
