@@ -13,8 +13,8 @@ research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIFIED_TRACE_VERTICAL_GENERATIVE_RECONSTRUCTION_2026-09-28.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
-  - Operations/Proposals/COH_CONSTITUTION_OPERATION_HISTORY_EXPLANATORY_AUDIT_V0_1_2026-09-28.md
-  - Operations/Proposals/SRT_PREOBJECT_COGNITION_E2E4_DISCRIMINATOR_PACKET_2026-09-27.md
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - Core_Law/SRT_Irreversibility.md
 tags: [Method, Objectification, InverseProblem, GenerativeReconstruction, VerticalEdge, CutDynamics, Sedimentation, Diffusion]
 ---
 
