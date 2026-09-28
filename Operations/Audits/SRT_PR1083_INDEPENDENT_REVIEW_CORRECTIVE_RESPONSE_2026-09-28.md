@@ -1,7 +1,8 @@
 ---
 id: SRT-PR1083-INDEPENDENT-REVIEW-CORRECTIVE-RESPONSE-20260928
 type: audit
-status: complete
+status: active
+record_stage: complete
 date: 2026-09-28
 layer: operations
 epistemic_layer: os
