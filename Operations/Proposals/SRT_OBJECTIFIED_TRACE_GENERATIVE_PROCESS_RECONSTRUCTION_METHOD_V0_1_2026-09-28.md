@@ -231,20 +231,66 @@ retained history
 
 The method therefore targets a recursive loop, not a one-way ladder.
 
-## 5. Stage 4 — process vs cut disentangling
+## 5. Stage 4 — process / endogenous-cut / measurement disentangling
 
 Observed change may arise from:
 
 ~~~text
-G changes while C stays stable;
-C changes while G is sufficiently stable;
-G and C both change;
+G changes while K and M are sufficiently stable;
+K changes while G and M are sufficiently constrained;
+M changes while the system is sufficiently stable;
+G and K both change;
+G / K / M all change;
 measurement noise / analyst recut only.
 ~~~
 
-Tests should distinguish these possibilities where the data permit.
+### 5.1 Gauge / reparameterization guard
 
-This is the main delta beyond merely asking whether one relation survives multiple supplied cuts.
+Without additional constraints, joint recovery is non-identifiable.
+
+For an invertible transformation \(T\), an equivalent latent parameterization can preserve observations by transforming the process representation and compensating in the measurement map.
+
+Therefore:
+
+~~~text
+joint process + cut reconstruction
+requires explicit identifiability anchors;
+otherwise verdict = UNDERIDENTIFIED.
+~~~
+
+### 5.2 Admissible identifiability anchors
+
+At least one strong anchor family is required; stronger claims should use more than one where feasible:
+
+~~~text
+A. fixed / independently calibrated measurement cut M
+   while system process is perturbed;
+
+B. approximately fixed system condition
+   while measurement / instrument M changes;
+
+C. multiple non-equivalent M_i
+   constrained to share one process / endogenous-cut trajectory;
+
+D. intervention with known target / timing
+   that acts primarily on process-side variables or primarily on measurement-side variables;
+
+E. auxiliary / temporal / group structure with an external identifiability theorem
+   appropriate to the chosen model family.
+~~~
+
+Do not claim unique recovery merely because a flexible model fits multiple views.
+
+### 5.3 External adjacent methods
+
+The method must be compared against mature solutions to neighboring versions of the same problem, including:
+
+- measurement-invariance methods, which test whether measurement relations remain comparable across groups or time;
+- identifiable latent-variable methods such as nonlinear ICA with auxiliary variables / temporal structure;
+- causal / interventional representation-learning approaches where interventions or side information break latent symmetries;
+- blind inverse-problem methods where operator and latent source are jointly constrained.
+
+These fields are baselines / pressure sources, not evidence for SRT distinctiveness.
 
 ## 6. Stage 5 — forward return
 
@@ -252,49 +298,58 @@ Every reverse reconstruction must be paired with a forward test.
 
 Strength ladder:
 
-### R1 — same-cut held-out prediction
+### R1 — same-measurement-cut held-out prediction
 
 \[
-\widehat G + C_{\text{seen}}
+(\widehat G,\widehat K,M_{\text{seen}})
 \rightarrow
 O_{\text{held-out}}.
 \]
 
 Useful but compatible with ordinary latent-process models.
 
-### R2 — known alternative-cut transfer
+### R2 — known alternative-measurement-cut transfer
 
-A process learned under several known cuts transfers across another already-characterized cut.
+A process learned under several known measurement cuts transfers across another already-characterized \(M\).
 
-### R3 — held-out-cut prediction
+### R3 — held-out measurement-cut prediction
 
-A target objectification / measurement interface is excluded from model selection.
+A target measurement / report / task interface \(M_*\) is excluded from model selection.
 
 Then:
 
 \[
-\widehat G + C_{\text{held-out}}
+(\widehat G,\widehat K,M_*)
 \rightarrow
-\widehat O_{\text{held-out}}.
+\widehat O_*.
 \]
 
-This is stronger than same-cut prediction but is **not** primitive-L0 evidence.
+R3 asks whether the reconstructed process survives a genuinely held-out **researcher-side objectification**. It is stronger than same-cut prediction but is **not** primitive-L0 evidence.
 
-### R4 — cut-formation / cut-change prediction
+### R4 — prospective endogenous-cut formation / change prediction
 
-The strongest current target:
+The strongest current target is not “predict what measurement the researcher chooses next,” but:
 
 \[
-(G_t,H_t,I_t,C_t)
+(G_t,H_t,I_t,K_t)
 \rightarrow
-\widehat C_{t+1}
+\widehat K_{t+1}
 \rightarrow
-\widehat O_{t+1}.
+\widehat O_{t+1}\text{ under a declared }M.
 \]
 
-The model predicts which distinction, partition, representation, comparison dimension, boundary or objectification will become operative under a declared history / intervention.
+The model predicts which **system-side** distinction, partition, representation, comparison dimension or boundary will become operative under a declared history / intervention.
 
-R4 is pressure on constitutive-generation questions; it still does not identify primitive Selection by itself.
+Hard guards:
+
+~~~text
+R4 success
+!= primitive Selection identification;
+R4 success
+!= unrestricted C-F / framework constitution.
+~~~
+
+Every implemented R4 model still presupposes a meta-space / hypothesis family of admissible \(K\). At current strength, R4 is a prospective endogenous-constitution test and at most a stronger **relative constitution / meta-level C-R** result unless an additional burden is independently paid.
 
 ## 7. Two-engine formal architecture
 
