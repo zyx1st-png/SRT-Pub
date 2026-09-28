@@ -37,13 +37,24 @@ state / candidate space:
 comparison rule:
 timescale:
 observer / access relation:
+
+construct own cut:
+constituted / downstream cut, if any:
+stability meaning:
+  SYNCHRONIC-ROBUSTNESS / DIACHRONIC-RETENTION / BOTH / N-A
+L0-side strength if bridge:
+  CUT-RELATIVE / O0-STRENGTH / N-A
 ~~~
 
-## C. Two-axis typing
+## C. Three-axis typing
 
 ~~~text
 explanatory burden facing:
 formal / model realization facing:
+evidential / access role:
+  NONE / TRACE / READOUT / PROBE / RECONSTRUCTION-EVIDENCE / OTHER
+facing applicability:
+  APPLICABLE / NOT-APPLICABLE / PARTIAL
 ~~~
 
 ## D. Admission questions
@@ -97,4 +108,22 @@ forbidden inference:
 
 ~~~text
 new source evidence that would change this assignment:
+~~~
+
+## H. Post-calibration discipline
+
+~~~text
+DECLARED ABSENT / NOT PRESUPPOSED counts as an explicit cut declaration.
+
+For archive / transcript / dataset cases:
+  evidence role does not create ontic L2 by itself.
+
+If Q10 falsifier is absent:
+  confidence cannot exceed LOW.
+
+If "stable" is used:
+  declare synchronic robustness vs diachronic retention.
+
+If nested cuts are involved:
+  record both the construct's own cut and the cut it helps constitute.
 ~~~
