@@ -90,11 +90,13 @@ L0 -> L1:
 
 No claim is made here that diffusion is the correct or unique L1→L2 formalism.
 
-## B. Author-accepted methodological corrections from the dialogue
+## B. Package-level acceptance and machine summary of the accepted direction
 
-The author explicitly accepted the preceding review and correction package before A0-Q4.
+A0-Q3 begins with the author's explicit **“认同”** to the immediately preceding review/correction package.
 
-The accepted direction includes:
+Under the repository's 2026-09-24 continuation rule, that event is evidence of **package-level directional acceptance**. It does **not** make every item below an independently author-originated proposition.
+
+The following list is therefore a **machine summary of the accepted package direction**, not eight separately adjudicated author statements:
 
 1. do not treat three-way Facing/COH classification as the main scientific objective;
 2. retain cut/objectification audit as a prerequisite rather than the endpoint;
@@ -105,36 +107,39 @@ The accepted direction includes:
 7. treat prediction of the **formation or change of the cut itself** as stronger than prediction under a supplied new cut;
 8. do not rewrite PR #1075 retrospectively into a test of this new method.
 
-These items are accepted research-direction constraints, not canonical ontology.
+These items are package-level accepted research-direction constraints at current strength, not canonical ontology and not eight independently sourced author claims.
 
 ## C. Machine consolidation — the inverse problem
 
-The author's clarification can be represented provisionally as:
+The author's clarification can be represented provisionally by separating two roles that were initially conflated under “cut”:
 
 ~~~text
-generative process
--> objectification / cut
+system-side generative process
+-> endogenous constitutive organization / cut
+-> researcher's measurement / report interface
 -> research-visible trace.
 ~~~
 
-A minimal notation is:
-
-\[
-O_{i,t}=C_{i,t}(G_t)+\epsilon_{i,t}
-\]
-
-where:
+Use working symbols:
 
 - \(G_t\) = candidate generative process / organization;
-- \(C_{i,t}\) = the objectification / measurement / partition / representational cut;
-- \(O_{i,t}\) = observed objectified trace;
-- \(\epsilon_{i,t}\) = residual / noise / omitted relation.
+- \(K_t\) = **system-side endogenous cut / distinction / representation / candidate organization**;
+- \(M_{i,t}\) = **researcher / instrument / task measurement cut**;
+- \(O_{i,t}\) = observed objectified trace.
 
-The research direction is inverse:
+A minimal observation relation is:
 
 \[
-\{O_{i,t}\}\Rightarrow \{\widehat G_t,\widehat C_{i,t}\}
+O_{i,t}=M_{i,t}(G_t,K_t,H_t)+\epsilon_{i,t}.
 \]
+
+The research direction is inverse but generally underidentified:
+
+\[
+\{O_{i,t},M_{i,t}\}\Rightarrow [\widehat G_t,\widehat K_t,\widehat H_t]_{\sim},
+\]
+
+where \([\cdot]_{\sim}\) denotes an identifiable equivalence class rather than a uniquely recovered hidden reality unless additional anchors justify stronger identification.
 
 rather than:
 
@@ -181,28 +186,37 @@ Therefore a valid L1→L2 account must identify how a present organization becom
 
 ## E. Recursive vertical loop
 
-The author direction is better represented by a recursive loop than by a one-way ladder:
+The author direction is better represented by a recursive loop than by a one-way ladder, but **objectification is not a prerequisite for sedimentation**.
+
+A safer working skeleton is:
 
 \[
-G_t
+(G_t,K_t,H_t,E_t)
 \rightarrow
-C_t
-\rightarrow
-O_t
-\rightarrow
-H_{t+1}
-\rightarrow
-G_{t+1}
-\rightarrow
-C_{t+1}.
+(G_{t+1},K_{t+1},H_{t+1}),
 \]
+
+with research-visible traces generated separately by:
+
+\[
+O_{i,t}=M_{i,t}(G_t,K_t,H_t)+\epsilon_{i,t}.
+\]
+
+A provisional history update may depend on more than the explicit objectified output:
+
+\[
+H_{t+1}=W(H_t,G_t,K_t,E_t,O_{i,t}),
+\]
+
+where \(E_t\) can include consequence, exposure, coupling, background deformation or other process-side effects.
 
 Working reading:
 
-- current generation becomes determinate / objectified;
-- consequences may write back into retained history;
-- retained history changes later generation;
-- later generation may also change the next objectification / cut.
+- current generation may become determinate through an endogenous \(K_t\);
+- some consequences are explicitly objectified, others may remain unreported / backgrounded;
+- either kind may become later-effective history if the relevant burden is paid;
+- retained history changes later generation and may alter later endogenous cut formation;
+- measurement \(M\) is an access route, not the ontological prerequisite for writeback.
 
 This is a machine reconstruction of the author's accepted direction and must remain revisable.
 
@@ -298,10 +312,10 @@ A candidate process reconstruction should receive no SRT-specific credit when a 
 The route must also distinguish at least four predictive strengths:
 
 ~~~text
-R1 same-cut held-out prediction;
-R2 transfer across known alternative cuts;
-R3 prediction under a held-out objectification / cut;
-R4 prediction of formation / change of the cut itself.
+R1 same-measurement-cut held-out prediction;
+R2 transfer across known alternative measurement cuts;
+R3 prediction under a held-out measurement cut M;
+R4 prospective prediction of system-side endogenous cut K formation / change.
 ~~~
 
 Guard:
@@ -311,7 +325,9 @@ R3 success
 != primitive L0 proof;
 
 R4 is stronger pressure on constitutive-generation questions
-but still does not identify primitive Selection by itself.
+but still does not identify primitive Selection by itself
+and does not amount to unrestricted framework constitution:
+every implemented R4 model still presupposes some meta-space of admissible K.
 ~~~
 
 ## I. Relation to prior stopped GRG cross-objectification work
@@ -327,9 +343,11 @@ The 2026-09-23 cross-objectification method already included:
 - source absorption / no-gain;
 - prospective held-out testing.
 
-The new candidate delta is narrower:
+The new candidate delta is narrower than first drafted:
 
-> jointly reconstruct the generative process **and** the objectification/cut dynamics, with explicit tests in which a cut is held out or its change is prospectively predicted.
+> make process–measurement / process–endogenous-cut **identifiability conditions explicit**, then prospectively test (a) held-out measurement-cut transfer and (b) endogenous-cut formation / change.
+
+The older route already treated objectification genealogy, changing boundaries, and generated/dissolved relations qualitatively; those burdens are not claimed as new here.
 
 Therefore:
 
