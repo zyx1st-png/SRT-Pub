@@ -215,6 +215,28 @@ as strongly pressured by:
 
 Therefore autobiographical or behavioral articulation lag does not establish SRT.
 
+### 2.6 error-dynamics / rate-of-progress valence
+
+Independent review identified a more precise mature-neighbor family for the author's “变好 / 变坏” gloss and for the machine-proposed “two facings of one event” synthesis.
+
+Relevant pressure sources:
+
+- Carver & Scheier (1990), *Origins and functions of positive and negative affect: A control-process view* — affect tracks rate of progress rather than merely distance to a target;
+- Joffily & Coricelli (2013), *Emotional valence and the free-energy principle* — valence is modeled as a temporal derivative of free-energy / prediction-error dynamics under their assumptions;
+- Kiverstein, Miller & Rietveld (2019), *The feeling of grip* — error dynamics can be both felt and generatively implicated in adjustment.
+
+Therefore:
+
+~~~text
+HD4 directional “getting better / getting worse”
+= phenomenon-level SOURCE-ABSORBED candidate;
+
+HD7 felt-direction + generative-adjustment coupling
+= SOURCE-ABSORBED candidate at L1 / realization level.
+~~~
+
+This does **not** settle the deeper source question about why a directional sign is constituted relative to a formed position, nor does it pay primitive-L0 burden.
+
 ### ADV-2 verdict
 
 ```text
@@ -257,12 +279,24 @@ comes from L0-facing primitive Selection.
 These remain compatible only if:
 
 ```text
-L0 = generative source-line
-NOT
-L0 = encoded moral content.
+L0 contributes primitive non-flat / non-neutral generative source burden;
+L0 does NOT encode the sign “better” or “worse”;
+the sign is indexed to an already formed position / organization at L1-facing scale.
 ```
 
-Current package obeys this.
+Thus:
+
+```text
+L0 non-flatness
+-> can ground the possibility of directional differentiation;
+
+formed position + history + relation
+-> determines the local sign / polarity.
+
+L0 = encoded proto-good / proto-bad = NO.
+```
+
+Current package is retained only under this narrowing.
 
 A second compatibility condition:
 
@@ -600,7 +634,12 @@ Show that a fair:
 - latent-state;
 - active-inference;
 - enactive/affordance;
-- structure-learning
+- structure-learning;
+- error-dynamics / rate-of-progress valence;
+- hierarchical predictive-processing revision;
+- preference-construction;
+- representational-change / insight;
+- option-generation
 
 model cannot match the same cross-perturbation transformations at equal or lower burden.
 
@@ -870,3 +909,28 @@ requires construct-specific constitutive rivals and remains OPEN.
 ~~~
 
 This overlay controls any broader reading of §§2, 4, 9, 10 and 13.
+
+## 15. Independent-review corrective overlay
+
+The independent review of PR #1079 narrows the interpretation of this file:
+
+~~~text
+phenomenon-level HD4 directionality
+and
+HD7 felt/generative coupling
+= strongly absorbed / pressured by error-dynamics and rate-of-progress accounts;
+
+surviving value
+= method-level recut,
+  inverse-identification programme,
+  and reverse-metaethics research question.
+
+L0 contribution
+= primitive non-flatness only;
+
+better/worse sign
+= relative to a formed position / organization,
+  not encoded at L0.
+~~~
+
+This overlay controls earlier broader language in §§0–14.
