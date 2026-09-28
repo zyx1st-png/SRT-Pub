@@ -27,9 +27,17 @@ The author has accepted, at preformal source level:
 
 ~~~text
 L1-facing better/worse directional sense
-= pre-object;
-= grounded in / derives from L0-facing primitive Selection;
+= pre-object relative to the current cut;
+= historically conditioned;
 = not merely a stable preference;
+
+source-line guard:
+L0-facing primitive Selection
+= primitive non-flat generative source burden only;
+!= encoded better/worse sign;
+
+local better/worse sign
+= indexed to a formed L1-facing position / organization.
 
 and
 
@@ -143,9 +151,11 @@ current candidate
 Possible future relation:
 
 ~~~text
-pre-object L1 directional-generative event
+pre-object-relative L1 directional-generative event
 -> one downstream realization / stabilization
    may be micro-valence at a manifested-interface x embodied-position boundary.
+
+The local sign of better/worse is not attributed to L0 as proto-valence; it is relative to a formed position and its history.
 ~~~
 
 This relation is NOT ESTABLISHED.
@@ -342,3 +352,28 @@ SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
 
 This earlier file remains useful for its micro-valence / affect subtraction.
 It must not be read as leaving §8 unresolved.
+
+
+## 10. Independent-review absorption overlay
+
+Independent review adds a tighter mature-neighbor subtraction:
+
+- Carver & Scheier (1990): affect as rate-of-progress signal;
+- Joffily & Coricelli (2013): valence as temporal change in free-energy / prediction-error dynamics under their model;
+- Kiverstein, Miller & Rietveld (2019): error dynamics both felt and implicated in generative adjustment.
+
+Therefore:
+
+~~~text
+HD4 “getting better / getting worse”
+= strongly SOURCE-ABSORBED at phenomenon / L1 realization level;
+
+HD7 felt-direction + generative-recut coupling
+= strongly pressured / SOURCE-ABSORBED candidate at L1 realization level.
+~~~
+
+The remaining research burden is method-level and constitutive:
+
+> whether perturbing offered grammars and reconstructing subject-generated recuts adds discriminative information beyond these mature dynamics and fair structure-learning / representation-change accounts.
+
+No primitive-L0 novelty follows from the directional feeling itself.
