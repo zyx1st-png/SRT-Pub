@@ -360,7 +360,7 @@ Do not force L0→L1 and L1→L2 into the same formal family.
 Target burden:
 
 ~~~text
-formation / revision of an operative cut;
+formation / revision of an operative endogenous cut K;
 formation of variables / candidate relations / boundaries / comparison structure;
 objectification grammar change.
 ~~~
@@ -371,47 +371,89 @@ Current discipline:
 
 Potential future implementation families may include structure learning, topology-changing processes, graph rewriting, variable-dimension models, program induction or other methods, but none receives privileged status here.
 
+Mandatory R4 baseline families include, where domain-appropriate:
+
+- incremental / nonparametric Bayesian category learning;
+- structure-learning models;
+- structural-form discovery models;
+- fixed-state-space generative models that can exhibit category / mode commitment;
+- fair domain-native alternatives.
+
 Hard guard:
 
 ~~~text
-an algorithm that presupposes the target cut
--/-> explanation of that cut's genesis.
+an algorithm that presupposes the target K-space
+-/-> explanation of unrestricted K-space genesis.
 ~~~
 
-### 7.2 Sedimentation engine — diffusion-like candidate family
+### 7.2 Sedimentation engine — diffusion-related candidate family
 
 Target burden:
 
 ~~~text
-formed actuality
--> writeback / retention
+formed actuality / exposure / consequence
+-> retained generative organization
 -> history-conditioned later transition geometry.
 ~~~
 
-Candidate stochastic realization:
+Do not collapse three different objects under the word “diffusion”:
+
+~~~text
+A. generic stochastic differential dynamics;
+B. ML diffusion-model forward noising process;
+C. learned score / denoising field produced by training;
+D. reverse generative sampling trajectory.
+~~~
+
+A generic stochastic realization can be written:
 
 \[
-dz_t=f(z_t,h_t)\,dt+\sigma(z_t,h_t)\,dW_t
+dz_t=f(z_t,h_t)\,dt+\sigma(z_t,h_t)\,dW_t,
 \]
 
-plus a separately declared history update:
+but **the sedimentation burden is not paid by stochasticity itself**.
+
+History update must permit process-side and unobjectified contributions:
 
 \[
-h_{t+1}=W(h_t,z_t,\text{consequence}_t).
+h_{t+1}=W(h_t,z_t,K_t,E_t,O_t),
 \]
 
-Interpretive use:
+where \(E_t\) may include unreported exposure, background coupling or consequence. Objectification \(O_t\) is one possible contribution to writeback, not a prerequisite.
 
-- retained history may alter drift;
-- noise geometry;
-- basin depth;
-- accessibility;
-- transition cost;
-- future response disposition.
+For ML diffusion models, a more specific candidate analogy is:
 
-Diffusion is an **implementation candidate for L1→L2 / L2→later-L1 dynamics**, not an SRT ontology.
+~~~text
+training / repeated actualities
+-> retained score / parameter field
+-> later reverse-generation trajectories.
+~~~
 
-## 8. Why standard diffusion is not the default L0→L1 engine
+At most, this suggests a possible:
+
+~~~text
+L1-like actuality family
+-> L2-like retained generative field
+-> later L1-like determinate sample
+~~~
+
+mapping. It is **not** an identity claim.
+
+Reverse diffusion is especially useful as a **C-R baseline** because fixed-state-space diffusion models can show a transition from broad distributional structure to category / mode commitment during generation.
+
+Therefore:
+
+~~~text
+category commitment during reverse diffusion
+-/-> C-F;
+-/-> primitive L0.
+~~~
+
+If such a baseline reproduces the target endogenous-cut phenomenon at equal or lower burden, the stronger SRT-motivated claim is absorbed / NO-GAIN.
+
+Diffusion-related models are implementation candidates and baselines, not SRT ontology.
+
+## 8. Why diffusion is a baseline, not a default primitive constitution engine
 
 A standard diffusion / score process normally presupposes:
 
@@ -420,15 +462,18 @@ A standard diffusion / score process normally presupposes:
 - topology / neighborhood / metric or score geometry;
 - admissible trajectory semantics.
 
-Therefore it is naturally suited to:
+Therefore it cannot by itself explain the unrestricted genesis of those very primitives.
 
-> how an already admitted state organization evolves, sediments or changes future trajectories.
+However, it must **not** be excluded from L0/L1-adjacent testing altogether.
 
-It is not by itself suited to:
+A fixed-space diffusion model can generate relative determination inside its supplied meta-space and can exhibit category / mode commitment during reverse sampling. Therefore it is a legitimate **C-R / relative-constitution baseline**.
 
-> why those operative distinctions / coordinates / candidate dimensions become determinate at all.
+Required distinction:
 
-This asymmetry is a required model-selection guard.
+~~~text
+diffusion can realize determination within a supplied meta-space;
+that does not establish genesis of the meta-space itself.
+~~~
 
 ## 9. Non-rescue boundary with the 2026-09-23 GRG stop-loss
 
@@ -436,7 +481,10 @@ The earlier GRG cross-objectification route already contained:
 
 - source-native recovery;
 - objectification declaration;
+- objectification genealogy;
 - legitimate alternative cuts;
+- questions about how prior history changes later boundaries;
+- questions about whether a relation treated as fixed in one model is generated / dissolved in another;
 - generative reconstruction;
 - missing-relation search;
 - held-out / prospective testing;
@@ -454,14 +502,17 @@ evidence for a reusable cross-domain grammar;
 permission to reset §8.1 stop-loss accounting.
 ~~~
 
-Candidate new burden:
+Candidate new burden is narrower than the first draft:
 
 ~~~text
-jointly reconstruct process and objectification dynamics,
-then test held-out-cut or cut-generation predictions.
+1. explicit process / endogenous-cut / measurement identifiability conditions;
+2. prospective held-out measurement-cut prediction;
+3. prospective endogenous-cut formation / change prediction.
 ~~~
 
-If this candidate delta is already source-owned or provides no held-out gain:
+The older GRG route already owned qualitative cut dynamics. Those burdens are not claimed as new here.
+
+If this narrower candidate delta is already source-owned or provides no held-out gain:
 
 ~~~text
 NEW METHOD INCREMENT = NO-GAIN / ABSORBED.
