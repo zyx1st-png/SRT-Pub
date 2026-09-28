@@ -103,9 +103,9 @@ L1-facing
 This remains an author preformal reconstruction claim. It does not by itself establish that an inferred L1 model uniquely identifies primitive L0, and it does not reopen #1074.
 
 
-## 5. Author adjudication — L1-facing is generative process, not stable latent preference
+## 5. Author-selected machine fork (A1) — L1-facing as generative process rather than stable latent preference
 
-The author accepted the preceding analysis and explicitly chose the second branch of the key fork:
+The machine presented an A/B fork; the author accepted the analysis and selected branch B. This is therefore **machine-proposed, author-selected within an offered grammar (A1)** rather than an author-originated recut:
 
 > **“认同分析，关键问题认同后者，继续”**
 
@@ -120,9 +120,10 @@ B. L1-facing generative selection
      objects, comparison scale, candidate space and direction.
 ```
 
-Author adjudication:
+Package-level selection:
 
 ```text
+provenance = A1 / machine-proposed option selected by author
 B = ACCEPTED
 
 L1-facing
@@ -137,9 +138,9 @@ L1-facing
 This author adjudication authorizes the machine to proceed from blind-first capture into the second FR-AUTH stage and reveal candidate recuts. It does not itself authorize canonical edits or an #1074 reopen.
 
 
-## 6. Author adjudication — continuity is primarily directional: a sense of getting better or worse
+## 6. Mixed provenance — machine family selected; author-originated gloss = “getting better or worse”
 
-The author responded to the cross-context continuity question:
+The machine offered a family of continuity candidates. The author selected the first family **and added the author-originated wording “变好或变坏”**, which is the strongest source contribution in this step:
 
 > **“我偏向于1 ，一种变好或变坏的感觉。”**
 
@@ -170,15 +171,18 @@ AUTHOR RECUT CANDIDATE / PREFORMAL
 The next machine task is to determine whether existing owners already absorb this burden, whether it is merely a reparameterization of value / reward / valence, or whether the author is pointing at a more primitive generative direction relation.
 
 
-## 7. Author adjudication — pre-object better/worse polarity is downstream of L0-facing primitive Selection
+## 7. Mixed provenance — machine branch selection (A1) + author-originated historical source intuition
 
-The author selected branch B and added a historical source-intuition connection:
+The author selected machine-proposed branch B (**A1**) and then added an author-originated historical intuition (**A0-Q**). These two provenance types must remain separate:
 
 > **“B 。十多年前的感觉里L1facing 的好坏的感觉来自于L0facing的原初选择，在L1facing会变为道德价值bearer expection等，反向推元道德也是srt想要去追寻的东西。”**
 
-Author-controlled reading:
+Provenance-typed reading:
 
 ```text
+branch B selection = A1 / machine-proposed, author-selected
+historical intuition that follows = A0-Q / author-originated
+
 B = ACCEPTED
 
 pre-object better/worse directional sense
@@ -186,7 +190,8 @@ pre-object better/worse directional sense
 
 author's historical intuition:
 L0-facing primitive Selection
-  -> gives rise to / grounds L1-facing better-worse directional sense
+  -> supplies only primitive non-flat generative source burden
+  -> which may, relative to an already formed position, be reconstructed as an L1-facing better/worse sign
   -> which, in formed L1 organization, may differentiate into
      moral value / Bearer / Expectation / related structures;
 
@@ -211,9 +216,9 @@ primitive Selection -> Expectation derivation = NOT ESTABLISHED
 The historical intuition is preserved as provenance, not promoted as an existing theorem.
 
 
-## 8. Author adjudication — readout and generative bias are two facings of one L1 event
+## 8. Author-selected machine synthesis (A1) — readout and generative bias as two facings of one L1 event
 
-The author accepted the preceding analysis and selected option C:
+The machine presented A/B/C alternatives and the author selected option C. This is **A1 author-accepted machine synthesis**, not author-originated blind material:
 
 > **“认同你的分析，先选c”**
 
@@ -233,9 +238,10 @@ C. COUPLED / TWO-FACING EVENT
    are two facings of one ongoing L1 generative event.
 ```
 
-Author adjudication:
+Package-level selection:
 
 ```text
+provenance = A1 / machine-proposed option selected by author
 C = ACCEPTED AS CURRENT PREFORMAL DIRECTION.
 ```
 
@@ -262,9 +268,9 @@ HP-B reopen = NO
 ```
 
 
-## 9. Author adjudication — layered phenomenality
+## 9. Author-selected machine synthesis (A1) — layered phenomenality
 
-The author selected C:
+The machine supplied the A/B/C gate and the author selected C. This is **A1 author-accepted machine synthesis**:
 
 > **“c”**
 
@@ -282,9 +288,10 @@ C. layered:
    as a felt better/worse sense.
 ```
 
-Author adjudication:
+Package-level selection:
 
 ```text
+provenance = A1 / machine-proposed option selected by author
 C = ACCEPTED FOR CURRENT PREFORMAL RECONSTRUCTION
 ```
 
@@ -305,9 +312,9 @@ under additional formed conditions.
 This does not reopen HP-B or establish a consciousness theorem.
 
 
-## 10. Author adjudication — mismatch can foreground an otherwise transparent directional-generative process
+## 10. Author-accepted machine interpretation (A1) — mismatch can foreground an otherwise transparent directional-generative process
 
-The author accepted the proposed interpretation:
+The machine proposed the interpretation and the author accepted it. This is **A1 author-accepted machine synthesis**:
 
 > **“认同”**
 
@@ -338,9 +345,9 @@ HP-B reopen = NO
 ```
 
 
-## 11. Author adjudication — direction is pre-object but historically reconstructible
+## 11. Author-accepted machine synthesis (A1) — direction is pre-object but historically reconstructible
 
-The author accepted the scale-separated synthesis:
+The machine proposed the scale-separated synthesis and the author accepted it. This is **A1 author-accepted machine synthesis**:
 
 > **“认同，继续”**
 
@@ -375,3 +382,31 @@ historically inherited
 ```
 
 Status remains preformal / noncanonical.
+
+
+## 12. Provenance closeout after independent review
+
+Independent review of PR #1079 established the following provenance split:
+
+~~~text
+author-originated / high-information:
+  HD1 blind ChoiceMap reverse-inference statement;
+  HD2 clarification that observable language / symbols are evidence rather than direct L1 observation;
+  HD4 author gloss “变好或变坏”;
+  HD6 historical reverse-metaethics intuition.
+
+machine-proposed, author-selected / A1:
+  HD3, HD5, HD7, HD8, HD9, HD10.
+~~~
+
+Therefore later menu selections must not be cited as if they were blind author recuts.
+
+Methodological lesson retained for future FR-AUTH:
+
+~~~text
+open author response first;
+only then reveal machine options;
+record accept / reject / merge / split / root-return / breakout separately.
+~~~
+
+This correction changes provenance strength only. It does not revoke the package-level directions the author accepted.
