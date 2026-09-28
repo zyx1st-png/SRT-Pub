@@ -286,7 +286,10 @@ direction source lineage
 09-27 route is already contained by 09-25 HP-B = NO
 
 best current relation
-= UPSTREAM COMPLEMENT / POSSIBLE SOURCE-LINE CORRECTION
+= UPSTREAM QUESTION / SOURCE-LINE HYPOTHESIS UNDER FREEZE
+
+this record does NOT correct HP-B;
+it only preserves a future question for post-freeze review.
 
 edit HP-B hook now = NO
 canonical change = NO
@@ -430,3 +433,21 @@ It does not close:
 - metaethics;
 - HP-B;
 - #1074 reopen.
+
+
+## 11. Freeze-safe closeout
+
+Independent review found the phrase “POSSIBLE SOURCE-LINE CORRECTION” too strong while HP-B is frozen.
+
+Controlling interpretation:
+
+~~~text
+this crosswalk
+= upstream question / source-line hypothesis only;
+
+HP-B owner correction
+= NOT AUTHORIZED;
+
+canonical consequence
+= NONE.
+~~~
