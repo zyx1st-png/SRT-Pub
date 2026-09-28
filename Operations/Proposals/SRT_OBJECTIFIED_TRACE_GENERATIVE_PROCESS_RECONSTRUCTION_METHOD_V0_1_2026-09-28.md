@@ -45,21 +45,55 @@ It accesses stabilized outputs such as:
 
 Treat these as **objectified traces**, not automatically as final ontological units.
 
-Minimal forward relation:
+### 0.1 Separate two kinds of cut
+
+The first draft used one symbol for two different roles. v0.1 now distinguishes:
+
+~~~text
+K_t = system-side endogenous constitutive cut /
+      operative distinction / representation /
+      candidate or boundary organization;
+
+M_i,t = researcher / instrument / task measurement cut /
+        report or readout interface.
+~~~
+
+The process-side organization is represented provisionally by \(G_t\), and retained history by \(H_t\).
+
+The observation relation is:
 
 \[
-O_{i,t}=C_{i,t}(G_t)+\epsilon_{i,t}
+O_{i,t}=M_{i,t}(G_t,K_t,H_t)+\epsilon_{i,t}.
 \]
 
-where \(G_t\) is a candidate generative process and \(C_{i,t}\) is an objectification / measurement / representational cut.
+The system-side evolution is conceptually separate:
+
+\[
+(G_t,K_t,H_t,I_t)
+\rightarrow
+(G_{t+1},K_{t+1},H_{t+1}),
+\]
+
+where \(I_t\) denotes intervention / perturbation where present.
+
+### 0.2 The inverse target is generally an equivalence class
 
 The research problem is a blind or partially blind inverse problem:
 
 \[
-\{O_{i,t}\}
+\{O_{i,t},M_{i,t}\}
 \Rightarrow
-\{\widehat G_t,\widehat C_{i,t}\}.
+[\widehat G_t,\widehat K_t,\widehat H_t]_{\sim}.
 \]
+
+The equivalence-class notation is mandatory unless explicit identifiability anchors justify stronger recovery.
+
+Hard guard:
+
+~~~text
+recovered latent coordinates
+!= uniquely recovered process ontology.
+~~~
 
 ## 1. Stage 0 — objectification specification
 
@@ -79,18 +113,27 @@ OBSERVER / ACCESS RELATION
 MEASUREMENT / REPORT INTERFACE
 ~~~
 
-Also record:
+Also record **separately for K and M**:
 
 ~~~text
-is this cut source-native?
-analyst-imposed?
-learned by the system?
-historically inherited?
-externally designed?
-unknown?
+K — system-side endogenous organization:
+  currently formed?
+  learned?
+  historically inherited?
+  externally imposed on the system?
+  unknown?
+
+M — measurement / analyst objectification:
+  source-native?
+  analyst-imposed?
+  instrument-defined?
+  task-defined?
+  report-defined?
+  stable across time / groups / conditions?
+  unknown?
 ~~~
 
-The goal is to specify the projection operator as far as possible before inverse reconstruction.
+The goal is to avoid mistaking a change in the researcher's measurement interface for a change in the system's own operative distinctions.
 
 ## 2. Stage 1 — trace multiplication
 
