@@ -439,9 +439,13 @@ Music remains a bounded companion to the existing cognition CURRENT NEXT. Its st
 Immediate bounded owner:
 
 - `Operations/Audits/SRT_MUSIC_E2_STRONG_BASELINE_ADVERSARIAL_PACKET_V0_1_2026-09-29.md`
-- companion: `Operations/Audits/SRT_MUSIC_ADV3_SOURCE_OWNED_PREDICTION_TABLE_STIMULUS_LOGIC_V0_1_2026-09-29.md`
-- role = paper-only E2 red team + ADV-3 prediction / stimulus contract; try to eliminate the residual before any experiment.
-- current bottleneck = whether Cell C (low predictability + high completion) can be made valid, and whether local learning can shift expectedness without erasing the closing-vs-open completion contrast.
+- prediction/stimulus contract: `Operations/Audits/SRT_MUSIC_ADV3_SOURCE_OWNED_PREDICTION_TABLE_STIMULUS_LOGIC_V0_1_2026-09-29.md`
+- source-fidelity audit: `Operations/Audits/SRT_MUSIC_ADV3_SOURCE_FIDELITY_IMPLEMENTATION_FEASIBILITY_V0_1_2026-09-29.md`
+- synthetic feasibility: `Operations/Audits/SRT_MUSIC_ADV3_SYNTHETIC_EXPECTATION_FEASIBILITY_ENVELOPE_V0_1_2026-09-29.md`
+- role = paper-only E2 red team; try to eliminate the residual before any experiment.
+- source-fidelity correction = use order-/window-conditioned online expectedness × cadence closure; key-cued K1/K2 implementation demoted.
+- current bottleneck = can the same PAC-like closing class show a predeclared expectedness shift across local histories while the PAC-vs-DC completion contrast remains independently stable?
+- absolute low-P PAC = NOT REQUIRED / NOT ESTABLISHED.
 - CURRENT NEXT remains the cognition programme in §0.3c / §0.3e.
 
 ---
