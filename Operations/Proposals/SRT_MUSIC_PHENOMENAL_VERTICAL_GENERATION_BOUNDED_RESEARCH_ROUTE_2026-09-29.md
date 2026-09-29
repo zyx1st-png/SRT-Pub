@@ -626,7 +626,7 @@ Music / expectation / tension:
 - Temperley D. 2004. Bayesian Models of Musical Structure and Cognition. Musicae Scientiae 8(2). DOI 10.1177/102986490400800204.
 - Pearce MT, Wiggins GA. 2012. Auditory Expectation: The Information Dynamics of Music Perception and Cognition. Topics in Cognitive Science 4(4):625–652. DOI 10.1111/j.1756-8765.2012.01214.x.
 - Sears DRW et al. 2020. Expecting the end: Continuous expectancy ratings for tonal cadences. Psychology of Music 48(3):358–375. DOI 10.1177/0305735618803676.
-- Expectations for tonal cadences: Sensory and cognitive priming effects. PMID 30404574.
+- Sears DRW, Pearce MT, Spitzer J, Caplin WE, McAdams S. 2019. Expectations for tonal cadences: Sensory and cognitive priming effects. DOI 10.1177/1747021818814472; PMID 30404574.
 
 Implicit / segmentation controls:
 - Garrido MI et al. 2009. The mismatch negativity: A review of underlying mechanisms. PMCID PMC2671031.
