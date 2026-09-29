@@ -26,6 +26,8 @@ tags: [Method, Objectification, InverseProblem, GenerativeReconstruction, Vertic
 >
 > This file is not an execution authorization, does not alter CURRENT NEXT, does not amend PR #1075, and does not reopen the stopped GRG fusion-case acquisition lane.
 
+> **2026-09-29 governance guard:** local comparator absorption changes the scoped comparative claim, not automatically the SRT theory inventory. Preserve source ownership and typed convergence value under the current U-mode governance; this does not weaken any existing stop-loss.
+
 ## 0. Root problem
 
 Research rarely accesses an unconstrained generative process directly.
@@ -449,7 +451,7 @@ category commitment during reverse diffusion
 -/-> primitive L0.
 ~~~
 
-If such a baseline reproduces the target endogenous-cut phenomenon at equal or lower burden, the stronger SRT-motivated claim is absorbed / NO-GAIN.
+If such a baseline reproduces the target endogenous-cut phenomenon at equal or lower burden, the stronger SRT-motivated claim is absorbed for this local comparative claim / NO LOCAL COMPARATIVE INCREMENT.
 
 Diffusion-related models are implementation candidates and baselines, not SRT ontology.
 
@@ -488,7 +490,7 @@ The earlier GRG cross-objectification route already contained:
 - generative reconstruction;
 - missing-relation search;
 - held-out / prospective testing;
-- source absorption / no-gain;
+- source absorption / no local comparative increment;
 - stop-loss.
 
 Two adequate cases later produced no extra GRG payoff and the route was contracted.
