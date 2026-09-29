@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-27
+updated: 2026-09-29
 ---
 
 # SRT 当前状态仪表盘
@@ -401,6 +401,48 @@ O-3 friction discriminator:
   but not by itself discriminating;
   a distribution / accumulation / load-bearing profile test remains OPEN.
 ~~~
+
+### 0.3f Local-no-increment governance + music companion — 2026-09-29
+
+Merged facts:
+
+~~~text
+#1084 local-no-gain governance = MERGED / 75e76a9787c79bacf16b5437399b99a86ece8aa1
+#1085 music phenomenal companion = MERGED / 8d715935118a056818e13f95995ff6660a6472dd
+#1086 post-merge corrective = MERGED / cf771db02fad01b2a1e627af2670ecf529bb89bd
+~~~
+
+Current guards:
+
+~~~text
+NO LOCAL COMPARATIVE INCREMENT
+= scoped claim result
+!= automatic theory deletion;
+
+claim state
+!= programme allocation
+!= theory inventory;
+
+same relation + two no-payoff mappings
+-> ChoiceMap / root-return before a third;
+
+farther SRT gain claim
+-> strong cross-domain comparator required;
+
+post-hoc invariant
+= §15.5 working label;
+discovery-domain confirming count = 0.
+~~~
+
+Music remains a bounded companion to the existing cognition CURRENT NEXT. Its strongest first-line comparators are tonal tension / attraction / closure, implication-realization / ITPRA, Temperley / IDyOM and event segmentation. A11 farther invariant = §15.5 HOLD; HP-B / PH-QUAL = pressure only; passive music does not carry the first Bearer-admission burden; experiment / preregistration / canonical edit = NO.
+
+Immediate bounded owner:
+
+- `Operations/Audits/SRT_MUSIC_E2_STRONG_BASELINE_ADVERSARIAL_PACKET_V0_1_2026-09-29.md`
+- role = paper-only E2 red team; try to eliminate the residual before any experiment.
+- CURRENT NEXT remains the cognition programme in §0.3c / §0.3e.
+
+---
 
 ### 0.4 Current GRG / repository-reconstruction route — 2026-09-23
 
