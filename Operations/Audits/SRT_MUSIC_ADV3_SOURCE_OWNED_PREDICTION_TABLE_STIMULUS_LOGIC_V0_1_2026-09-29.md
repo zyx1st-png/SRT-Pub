@@ -331,9 +331,9 @@ The following is a prediction contract, not a claim that every source computes t
 | cadence closure models | high closure | low / incomplete closure | high closure | low / incomplete closure |
 | Bharucha / tonal stability | stable tonic resolution | unstable / non-tonic residual relation | stable tonic resolution | unstable / non-tonic residual relation |
 | implication / musical-force families | closure / reduced continuation force expected | continuation / unresolved implication may remain | closure despite local rarity | unresolved continuation plus local rarity |
-| Huron-style expectation | local learning can raise B predictability; schematic and locally learned expectations may compete | key test case for predictable-but-open | schematic PAC expectation may prevent true low-P | local and schematic signals can both favor surprise/open status |
+| Huron-style expectation | local and schematic expectation can both favor PAC-like resolution | locally learned expectation may raise DC predictability while schematic expectation still favors tonic resolution — predictable-but-open is therefore not novel | schematic PAC expectation may prevent true low-P | local rarity and schematic non-tonic status can both lower expectedness |
 | Farbood / TenseMusic | tension depends on path and surface features, not the 2x2 label alone | same | same | same |
-| IDyOM | should track learned / corpus probability if the manipulation is represented in its training regime | same | same | same |
+| IDyOM | high only if the model is given / learns the relevant local K1 statistics | high only if the model is given / learns the relevant local K2 statistics | low only if the model represents the reversed local statistics strongly enough to overcome long-term regularity | low under the corresponding represented local statistics |
 | event / boundary models | closing PAC may strengthen boundary signal | open DC may weaken or delay boundary | closing PAC may still strengthen boundary despite low local P | open DC likely weak / delayed boundary |
 
 Crucial implication:
@@ -386,6 +386,7 @@ Possible source-owned components:
 
 ~~~text
 IDyOM / Bayesian local expectation
+(or another explicitly online-updating statistical model if standard IDyOM does not ingest the session-level manipulation)
 +
 Sears / cadence class / Lerdahl-Narmour-Bharucha structure
 +
@@ -488,6 +489,7 @@ design = INVALID FOR E2 PROMOTION.
 - Bharucha JJ. 1996. Melodic Anchoring. Music Perception 13(3):383–400. DOI 10.2307/40286176.
 - Larson S. 2004. Musical Forces and Melodic Expectations: Comparing Computer Models and Experimental Results. Music Perception 21(4):457–498. DOI 10.1525/mp.2004.21.4.457.
 - Larson S, VanHandel L. 2005. Measuring Musical Forces. Music Perception 23(2):119–136. DOI 10.1525/mp.2005.23.2.119.
+- Narmour E. 1991. The Top-down and Bottom-up Systems of Musical Implication. Music Perception 9(1):1–26. DOI 10.2307/40286156.
 - Huron D. 2006. Sweet Anticipation. MIT Press.
 
 ### Statistical / Bayesian expectation
