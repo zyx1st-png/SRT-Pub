@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: os
 claim_mode: corrective_audit
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 research_mode: U
 dependency:
   - Operations/Proposals/SRT_SELECTION_ANTI_TAUTOLOGY_STRONG_CASE_REVERSE_NEIGHBOR_METHOD_2026-09-27.md
@@ -17,6 +17,8 @@ tags: [Selection, AntiTautology, ReverseNeighbor, Corrective, Whitehead, Simondo
 ---
 
 # Reverse-neighbor Pass 0 corrective — burden preservation, source ownership and primitive triangulation
+
+> **2026-09-29 governance correction:** negative local increment verdicts below are claim-scoped. They preserve source ownership and remain valid controls while retaining convergence value; they are not automatic theory-subtraction verdicts.
 
 > **Role:** corrective overlay on the first reverse-neighbor pass. It does not erase the original R0 audit; it supersedes its stronger D2/D3 interpretations where stated here.
 >
@@ -100,10 +102,10 @@ Current primitive anti-tautology does not depend on settling whether a One carri
 | Whitehead | **RN-R1 / partial RN-R2** only; assumptions include much of Whitehead's distinctive content | pressure on pregiven pure potentials / valuation is real, but strong SRT-specific diagnosis not yet earned | **OPEN**: determinacy/relevance; downstream recurrence separate | Whitehead already has a rich account of antecedent conditioning, pure potentials, valuation and initial aim | primitive triangulation |
 | Barad | RN-R1 / partial RN-R2 | typing benefit; no verified SRT surplus | OPEN | constitutive-cut burden largely source-owned | HOLD as non-win |
 | Simondon | **RN-R1 / partial RN-R2** | metastability/preindividual Facing placement OPEN; prior D3 too strong | **OPEN / neighbor-rich** for PB2 localization and continuing individuation potential | source already gives metastability/tension/transduction machinery | primitive triangulation |
-| Husserl | RN-R1; domain reconstruction possible | NO SRT diagnostic increment | domain job source-owned | strong meaning-history reactivation account | NO-GAIN control |
+| Husserl | RN-R1; domain reconstruction possible | NO LOCAL SRT diagnostic increment | domain job source-owned | strong meaning-history reactivation account | LOCAL-INCREMENT NEGATIVE CONTROL / convergence coordinate retained |
 | organizational closure | RN-R1 / partial RN-R2 | **INHERIT**: redescription/objectivity problem already stated by critics | OPEN: SRT does not yet supply non-arbitrary cut priority | criticism literature already owns core diagnosis | later R-A testbed |
 | ETI | RN-R1 / partial RN-R2 | **INHERIT**: level/origin circularity and alternative mechanism already discussed | OPEN: SRT One admission remains non-N&S and branch/merge open | social niche construction already provides a source-native mechanism | later One-domain test |
-| Parfit | RN-R1 / negative-control reconstruction | NO SRT increment | source-owned | continuity / identity separation is already explicit | NO-GAIN control |
+| Parfit | RN-R1 / negative-control reconstruction | NO LOCAL SRT increment | source-owned | continuity / identity separation is already explicit | LOCAL-INCREMENT NEGATIVE CONTROL / convergence coordinate retained |
 
 The original “6/7 D2” reading is withdrawn.
 
