@@ -181,6 +181,11 @@ HC remains useful as an independent robustness family because dominant endings a
 
 Use at least two transposed tonal contexts / keys, counterbalanced across participants or blocks.
 
+Source-fidelity guard:
+
+> The Chander–Aslin result supports short-term adaptation to local cadence statistics in general. It does **not** validate the specific K1/K2 key-conditioned implementation proposed below. K1/K2 is a new design candidate and must earn its own manipulation validity.
+
+
 Illustrative design logic only:
 
 ~~~text
@@ -482,6 +487,27 @@ If the candidate only works after inspecting outcomes and retuning the relation:
 design = INVALID FOR E2 PROMOTION.
 ~~~
 
+### K6 — local probability manipulation erases the closure factor
+
+If repeated local exposure makes PAC and DC / HC converge so strongly in completion judgments that the closing-vs-open structural contrast is no longer stable:
+
+~~~text
+2x2 construct separation = FAIL.
+~~~
+
+Do not rename the remaining learned difference as "unfinishedness."
+
+### K7 — predictability depends only on explicit contingency strategy
+
+If participants can obtain the high/low predictability manipulation only by explicitly learning a key-to-cadence rule, and the effect does not survive an incidental-learning implementation:
+
+~~~text
+the manipulation may remain useful for generic prediction research,
+but it is not evidence for pre-object / pre-explicit musical orientation.
+~~~
+
+This does not automatically invalidate the behavioral design; it changes the explanatory level of the result.
+
 ## 12. External source coordinates — checked at abstract / publisher-summary level
 
 ### Tonal tension / attraction
@@ -527,8 +553,9 @@ ADV-3
 primary paper design
 = ADV-3A local-statistical adaptation x cadence closure;
 
-primary scientific bottleneck
-= can Cell C become genuinely low-predictability while retaining closure?;
+primary scientific bottlenecks
+= can Cell C become genuinely low-predictability while retaining closure?
+  AND can local learning shift expectedness without erasing the closure factor?;
 
 backup
 = ADV-3B model-screened low-P closing target;
