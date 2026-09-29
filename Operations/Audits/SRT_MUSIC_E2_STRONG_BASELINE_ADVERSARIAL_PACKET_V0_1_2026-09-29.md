@@ -634,7 +634,17 @@ positive SRT evidence
 post-hoc farther invariant
 = §15.5 HOLD;
 
+source-owned prediction / stimulus companion
+= Operations/Audits/SRT_MUSIC_ADV3_SOURCE_OWNED_PREDICTION_TABLE_STIMULUS_LOGIC_V0_1_2026-09-29.md;
+
+ADV-3A primary paper design
+= local-statistical adaptation x cadence closure;
+
+critical bottleneck
+= Cell C: low predictability + high completion;
+
 next allowed move
-= source-owned prediction table + concrete ADV-3 stimulus logic,
+= source-fidelity / implementation-feasibility check
+  for ADV-3A comparator outputs and Cell-C viability,
   still paper-only.
 ~~~
