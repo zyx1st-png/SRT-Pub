@@ -15,6 +15,7 @@ dependency:
   - Operations/Audits/SRT_SELECTION_REVERSE_NEIGHBOR_PASS0_CORRECTIVE_2026-09-27.md
   - Operations/Proposals/SRT_SELECTION_ANTI_TAUTOLOGY_STRONG_CASE_REVERSE_NEIGHBOR_METHOD_2026-09-27.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIFIED_TRACE_VERTICAL_GENERATIVE_RECONSTRUCTION_2026-09-28.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md
   - Operations/Proposals/SRT_OBJECTIFIED_TRACE_GENERATIVE_PROCESS_RECONSTRUCTION_METHOD_V0_1_2026-09-28.md
 tags: [Audit, Governance, LocalNoGain, RecentWrite, ReverseNeighbor, ObjectifiedTrace, Correction]
 ---
@@ -51,6 +52,7 @@ Files corrected in the same bounded package:
 4. Operations/Audits/SRT_FACING_CHOICEMAP_FR_ADV_REVERSE_METAETHICS_2026-09-27.md
 5. Operations/Proposals/SRT_OBJECTIFIED_TRACE_GENERATIVE_PROCESS_RECONSTRUCTION_METHOD_V0_1_2026-09-28.md
 6. Operations/Audits/SRT_OBJECTIFIED_TRACE_METHOD_DELTA_VS_GRG_CROSS_OBJECTIFICATION_2026-09-28.md
+7. Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md
 
 Correction type:
 
@@ -73,6 +75,7 @@ File:
 Reason:
 - the file is an accepted source package;
 - its “absorb / NO-GAIN” wording predates the 2026-09-29 author clarification;
+- the Facing v0.3 author corrective likewise used a historical `NO_GAIN` output token; retain provenance but add a claim-scoped interpretation note.
 - rewriting the historical accepted package would obscure provenance.
 
 Action:
