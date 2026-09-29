@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-27
+updated: 2026-09-29
 ---
 
 # SRT 当前状态仪表盘
@@ -401,6 +401,88 @@ O-3 friction discriminator:
   but not by itself discriminating;
   a distribution / accumulation / load-bearing profile test remains OPEN.
 ~~~
+
+### 0.3f Local-no-increment governance + music phenomenal companion — 2026-09-29
+
+Merged governance / research facts:
+
+~~~text
+#1084 local-no-gain governance correction = MERGED / 75e76a9787c79bacf16b5437399b99a86ece8aa1
+#1085 music phenomenal vertical-generation companion = MERGED / 8d715935118a056818e13f95995ff6660a6472dd
+#1086 post-merge corrective = MERGED / cf771db02fad01b2a1e627af2670ecf529bb89bd
+~~~
+
+Controlling interpretation:
+
+~~~text
+NO LOCAL COMPARATIVE INCREMENT
+= scoped claim result;
+!= automatic SRT-relation deletion.
+
+claim state
+!= programme / resource-allocation state
+!= theory-inventory state.
+
+same proposed relation
++ two consecutive competent mappings
++ no earned compression / transfer / new reciprocal constraint
+-> ChoiceMap / root-return before a third convergence case.
+
+farther SRT compression / transfer claim
+= comparative claim
+-> strong cross-domain comparator required.
+
+post-hoc invariant from first matched domain
+= §15.5 working label;
+discovery domain confirming count = 0.
+~~~
+
+Music companion:
+
+- source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md`
+- bounded route: `Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md`
+- post-merge corrective: `Operations/Audits/SRT_PR1084_PR1085_POSTMERGE_REVIEW_CORRECTIVE_RESPONSE_2026-09-29.md`
+
+Current bounded disposition:
+
+~~~text
+music route
+= bounded companion under the existing cognition CURRENT NEXT;
+
+primary use
+= phenomenal foreground / completion / structural-registration dissociation
+  + E2/E3/E4 pressure;
+
+strongest first-line music comparators
+= tonal tension / attraction / closure / implication-realization / ITPRA
+  + Temperley / IDyOM / strong predictive-statistical models
+  + event segmentation;
+
+A11 farther invariant
+= §15.5 HOLD / post-hoc discovery label;
+music confirming count = 0;
+
+HP-B / PH-QUAL
+= PRESSURE RECORDED ONLY / owner edit NO;
+
+first Bearer-facing non-outsourcable consequence test
+= prefer action over passive music;
+
+experiment / preregistration
+= NOT AUTHORIZED;
+
+canonical edit
+= NO.
+~~~
+
+Immediate bounded execution under the existing E2 target:
+
+- `Operations/Audits/SRT_MUSIC_E2_STRONG_BASELINE_ADVERSARIAL_PACKET_V0_1_2026-09-29.md`
+- role = paper-only adversarial design / try to eliminate the residual before any experiment;
+- success in this packet does not authorize E3/E4 or any SRT-specific claim;
+- CURRENT NEXT remains the cognition programme owner in §0.3c / §0.3e.
+
+---
 
 ### 0.4 Current GRG / repository-reconstruction route — 2026-09-23
 
