@@ -110,7 +110,7 @@ Unconscious / preattentive auditory regularity detection is a required negative 
 
 The author accepted the narrower formulation:
 
-> Feeling and consciousness need not be necessary for **all** vertical generation, but may be a privileged research window on cases where a generative relation itself becomes internally manifest to a continuing system.
+> Feeling and consciousness need not be necessary for **all** vertical generation, but may provide an **additional internally indexed observation surface** in cases where a generative relation itself becomes manifest to a continuing system.
 
 Working guard:
 
@@ -212,7 +212,9 @@ This is a temporary explanatory label, not a new SRT term-of-art.
 
 Its intended burden is:
 
-> Current formed organization may remain dependent on some not-yet-actualized continuation relation for local resolution, stability or completion.
+> Current formed organization may remain dependent on some **not-yet-arrived / not-yet-fulfilled continuation relation** for local resolution, stability or completion.
+>
+> Type guard: organizational incompletion does **not** mean that the current SRT actualisation / Selection occurrence is itself incomplete. A terminal Selection can remain genuine even when the formed musical organization is experienced as unresolved.
 
 This is stronger than:
 
@@ -351,9 +353,9 @@ respect source ownership
 + require reciprocal constraint.
 ~~~
 
-## A11 — candidate farther invariant for later pressure testing
+## A11 — §15.5 post-hoc farther-invariant working label — NOT SCOREABLE FROM MUSIC
 
-The most compact cross-domain candidate produced by this dialogue is:
+The compact relation below was **produced after inspecting the music case in this dialogue**:
 
 ~~~text
 formed organization_t
@@ -364,18 +366,46 @@ formed organization_t
 -> new space of possible continuation.
 ~~~
 
-This is **not** claimed as uniquely SRT or already universal.
-
-The next farther-convergence test should compare, without forced identity:
+Therefore, under GOV-CONST01 §8 / §15.5 and the 2026-09-29 governance correction:
 
 ~~~text
-music:      phrase / tension / resolution / interruption
-language:   syntactic / semantic continuation and closure
-action:     ongoing action / completion / correction
-Aha:        unresolved structure / recutting / new whole.
+this formulation
+= post-hoc working label / synthesis probe;
+!= independently prior SRT invariant;
+
+music
+= discovery case;
+!= confirming survival case.
 ~~~
 
-The research burden is whether one independently prior SRT relation survives these mappings without semantic drift while the domain-specific mechanisms remain source-owned.
+It must **not** earn cross-domain convergence credit merely because language, action or Aha can later be redescribed with the same four outcome verbs.
+
+A future upgrade requires a separate author / owner decision selecting an independently prior SRT relation **before** the next domain is inspected. Candidate upstream sources that may be evaluated — without being selected here — include:
+
+- existing structural Expectation / anticipation relations;
+- the #1083 objectified-trace recursive process / endogenous-cut / history update relation;
+- the frozen HP-B same-Bearer current-position reconstitution chain.
+
+Any one of these may fail to carry the desired burden; none is silently declared the invariant here.
+
+Prospective admissibility conditions for a future frozen relation:
+
+1. specify a pre-event asymmetric continuation organization before the outcome is known;
+2. name at least one transition that the relation forbids or treats differently, rather than classifying every outcome post hoc as preserve / resolve / violate / recut;
+3. state a semantic-drift / counterexample condition;
+4. freeze the relation before testing a new domain;
+5. compare any claimed farther SRT gain against strong **cross-domain** integrative comparators, including predictive-processing and event-segmentation / event-model-update families;
+6. treat music / language / action / Aha work under the amendment §10.2 broad-synthesis HOLD as bounded neighbor adaptation / red-team pressure only unless that HOLD is separately released.
+
+Current disposition of this working label:
+
+~~~text
+music discovery = YES
+music confirming count = 0
+farther invariant established = NO
+broad cross-domain synthesis released = NO
+next-domain prospective freeze = NOT YET AUTHORIZED
+~~~
 
 ## Current disposition
 
