@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: os
 claim_mode: method_proposal
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 version: v0_1
 research_mode: U
 dependency:
@@ -274,7 +274,10 @@ Use bridge when forcing a single label would destroy the explanatory role.
 
 ## 7. Comparison admission rule
 
-Before any comparative verdict such as ABSORBED / SOURCE-PAID / EQUIVALENT / NO-GAIN / REPLACED / DISTINCTIVE, record both sides:
+2026-09-29 guard: a local no-increment verdict blocks the scoped comparative claim; it does not automatically delete an independently owned SRT relation or its convergence mapping.
+
+
+Before any comparative verdict such as ABSORBED / SOURCE-PAID / EQUIVALENT / NO-LOCAL-COMPARATIVE-INCREMENT / REPLACED / DISTINCTIVE, record both sides:
 
 ~~~text
 SRT construct facing:

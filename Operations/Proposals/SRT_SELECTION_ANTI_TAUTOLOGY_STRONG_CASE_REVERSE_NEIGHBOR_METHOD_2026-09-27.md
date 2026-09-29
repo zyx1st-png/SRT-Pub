@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: research_program
 claim_mode: bounded_method
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 priority: high
 research_mode: U
 dependency:
@@ -19,6 +19,8 @@ tags: [Selection, AntiTautology, GenerativeNovelty, ReverseNeighbor, Facing, Met
 ---
 
 # Primitive Selection anti-tautology — strong-case subtraction + reverse-neighbor method v0.2
+
+> **2026-09-29 governance correction:** local source ownership blocks the scoped SRT diagnostic / novelty claim; it does not by itself delete the SRT-side relation. The primitive anti-tautology STOP remains unchanged.
 
 > **Role:** noncanonical execution method inside the existing primitive Selection anti-tautology CURRENT NEXT.
 >
@@ -184,7 +186,7 @@ RN-F2 requires at least one of:
 If the critic already states substantially the same diagnosis, record:
 
 ~~~text
-INHERIT / NO SRT DIAGNOSTIC INCREMENT
+INHERIT / NO LOCAL SRT DIAGNOSTIC INCREMENT
 ~~~
 
 rather than RN-F2.
@@ -346,7 +348,7 @@ ETI remains valuable as a domain test of One formation, but cannot presently ser
 
 ### RN-HU / RN-PA controls
 
-Retain as NO-GAIN controls where the neighbor already owns the distinction.
+Retain as NO-LOCAL-COMPARATIVE-INCREMENT controls where the neighbor already owns the distinction; retain the source-owned relation as a convergence coordinate under U-mode.
 
 ## 10. Primitive triangulation before broader reverse-neighbor deepening
 

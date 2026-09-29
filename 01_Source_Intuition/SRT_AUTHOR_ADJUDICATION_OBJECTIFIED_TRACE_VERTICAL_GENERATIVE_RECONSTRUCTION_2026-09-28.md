@@ -3,6 +3,7 @@ id: SRT-AUTHOR-ADJUDICATION-OBJECTIFIED-TRACE-VERTICAL-GENERATIVE-RECONSTRUCTION
 type: source_intuition
 status: active
 date: 2026-09-28
+updated: 2026-09-29
 layer: source_intuition
 epistemic_layer: author
 claim_mode: author_adjudication
@@ -15,6 +16,7 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_GENERATIVE_CONTINUITY_POSITION_METHOD_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_GENERATIVE_VERTICAL_DYNAMICS_2026-09-22.md
   - Operations/Proposals/SRT_GRG_CROSS_OBJECTIFICATION_GENERATIVE_ARCHITECTURE_V0_1_2026-09-23.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_LOCAL_NO_GAIN_REMOTE_CONVERGENCE_2026-09-29.md
 tags: [AuthorAdjudication, Objectification, GenerativeProcess, VerticalGeneration, Reconstruction, L0, L1, L2, Diffusion, Method]
 ---
 
@@ -25,6 +27,8 @@ tags: [AuthorAdjudication, Objectification, GenerativeProcess, VerticalGeneratio
 > It is **noncanonical source intuition**. Machine synthesis below is explicitly separated from preserved author wording.
 >
 > This record does not reopen the stopped GRG fusion-case acquisition lane, does not change CURRENT NEXT, and does not alter the frozen cognition preregistration in PR #1075.
+
+> **2026-09-29 governance correction:** the historical phrases `source absorption / no-gain` and `absorb / NO-GAIN` below are claim-scoped. Read them as `NO LOCAL COMPARATIVE INCREMENT / SOURCE-OWNED AT THIS EXPLANATORY JOB`; they do not automatically subtract an independently owned SRT relation or erase convergence value. The GRG fusion stop-loss itself remains binding.
 
 ## A. Preserved author wording
 

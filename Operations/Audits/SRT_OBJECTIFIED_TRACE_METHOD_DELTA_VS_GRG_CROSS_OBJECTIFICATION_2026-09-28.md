@@ -3,6 +3,7 @@ id: SRT-OBJECTIFIED-TRACE-METHOD-DELTA-VS-GRG-CROSS-OBJECTIFICATION-20260928
 type: audit
 status: active
 date: 2026-09-28
+updated: 2026-09-29
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
@@ -18,6 +19,8 @@ tags: [Audit, GRG, StopLoss, Objectification, GenerativeReconstruction, NonRescu
 ---
 
 # Audit — new objectified-trace method versus stopped GRG cross-objectification route
+
+> **2026-09-29 semantic guard:** `no local comparative increment` below does not mean automatic deletion of the independently owned SRT relation. It preserves source ownership and convergence routing while leaving the GRG fusion stop-loss intact.
 
 ## 0. Purpose
 
@@ -38,7 +41,7 @@ questions about whether a relation treated as fixed in one model is generated / 
 missing-relation search;
 late grammar extraction;
 prospective held-out testing;
-source absorption / no-gain;
+source absorption / no local comparative increment;
 failure preservation.
 ~~~
 
@@ -271,7 +274,7 @@ After #1075 closure, reuse requires a separate preregistration and earns no retr
 The new route must return:
 
 ~~~text
-ABSORBED / NO-GAIN
+ABSORBED FOR THIS LOCAL CLAIM / NO LOCAL COMPARATIVE INCREMENT
 ~~~
 
 if a mature source-native or external baseline already:

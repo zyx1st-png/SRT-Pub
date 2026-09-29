@@ -10,7 +10,7 @@ canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-CONTEXT-ROUTER, SRT-LONGFORM-SPLITS]
 ai_role: context_expansion_contract
 ai_priority: 2
-updated: 2026-09-26
+updated: 2026-09-29
 ---
 
 # SRT Agent Retrieval Profile
@@ -137,8 +137,9 @@ When STATUS routes the active task to the pre-object generative orientation of c
 3. `Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md` — active neutral-science execution owner;
 4. `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md` — mandatory only when neutral results are promoted into SRT / GRG recut or cross-domain Facing claims;
 5. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
-6. preformal-coherence source/programme only as a downstream behavioral assay;
-7. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
+6. when music / temporal phenomenology / completion / unfinishedness / `foreground_phen` enters scope: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md` + `Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md` — bounded companion only, no second CURRENT NEXT;
+7. preformal-coherence source/programme only as a downstream behavioral assay;
+8. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
 
 Retrieval guard:
 

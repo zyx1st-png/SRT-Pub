@@ -26,6 +26,8 @@ tags: [Method, Objectification, InverseProblem, GenerativeReconstruction, Vertic
 >
 > This file is not an execution authorization, does not alter CURRENT NEXT, does not amend PR #1075, and does not reopen the stopped GRG fusion-case acquisition lane.
 
+> **2026-09-29 governance guard:** local comparator absorption changes the scoped comparative claim, not automatically the SRT theory inventory. Preserve source ownership and typed convergence value under the current U-mode governance; this does not weaken any existing stop-loss.
+
 ## 0. Root problem
 
 Research rarely accesses an unconstrained generative process directly.
@@ -449,7 +451,7 @@ category commitment during reverse diffusion
 -/-> primitive L0.
 ~~~
 
-If such a baseline reproduces the target endogenous-cut phenomenon at equal or lower burden, the stronger SRT-motivated claim is absorbed / NO-GAIN.
+If such a baseline reproduces the target endogenous-cut phenomenon at equal or lower burden, the stronger SRT-motivated claim is absorbed for this local comparative claim / NO LOCAL COMPARATIVE INCREMENT.
 
 Diffusion-related models are implementation candidates and baselines, not SRT ontology.
 
@@ -488,7 +490,7 @@ The earlier GRG cross-objectification route already contained:
 - generative reconstruction;
 - missing-relation search;
 - held-out / prospective testing;
-- source absorption / no-gain;
+- source absorption / no local comparative increment;
 - stop-loss.
 
 Two adequate cases later produced no extra GRG payoff and the route was contracted.
@@ -515,7 +517,7 @@ The older GRG route already owned qualitative cut dynamics. Those burdens are no
 If this narrower candidate delta is already source-owned or provides no held-out gain:
 
 ~~~text
-NEW METHOD INCREMENT = NO-GAIN / ABSORBED.
+NEW METHOD INCREMENT = NO LOCAL COMPARATIVE INCREMENT / ABSORBED FOR THIS CLAIM.
 ~~~
 
 ## 10. Relationship to COH PR #1082
@@ -587,7 +589,7 @@ Preferred first target characteristics:
 - a documented **system-side representation / category / boundary formation event**;
 - enough data to reserve one measurement cut or one endogenous-cut transition prospectively;
 - strong latent-state, category-learning and structure-learning baselines;
-- predeclared NO-GAIN outcome.
+- predeclared NO LOCAL COMPARATIVE INCREMENT outcome.
 
 The Wójcik dataset is **not authorized as the first live test while #1075 remains open**.
 
@@ -626,8 +628,10 @@ A fair latent-state / dynamical / category-learning / structure-learning / diffu
 Verdict:
 
 ~~~text
-NO-GAIN
+NO LOCAL COMPARATIVE INCREMENT
 ~~~
+
+This blocks method-distinctiveness credit for the scoped comparison while retaining the source-owned / baseline relation as convergence material.
 
 ### F4 — supplied-cut success only
 
