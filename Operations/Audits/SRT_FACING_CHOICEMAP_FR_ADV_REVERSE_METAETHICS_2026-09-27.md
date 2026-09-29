@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: machine_analysis
 claim_mode: fr_adv
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_FACING_CHOICEMAP_REVERSE_INFERENCE_2026-09-27.md
@@ -858,7 +858,10 @@ A neighbor construct can be assigned a facing only relative to the burden curren
 
 ### 14.2 Same-facing rule
 
-Before any verdict of ABSORBED / NEIGHBOR-PAID / EQUIVALENT / REPLACED / NO-GAIN / DISTINCTIVE, record:
+2026-09-29 guard: local comparator absorption is claim-scoped; source-owned convergence value may remain even when no local SRT increment is established.
+
+
+Before any verdict of ABSORBED / NEIGHBOR-PAID / EQUIVALENT / REPLACED / NO-LOCAL-COMPARATIVE-INCREMENT / DISTINCTIVE, record:
 
 ~~~text
 SRT burden facing;
