@@ -517,7 +517,7 @@ The older GRG route already owned qualitative cut dynamics. Those burdens are no
 If this narrower candidate delta is already source-owned or provides no held-out gain:
 
 ~~~text
-NEW METHOD INCREMENT = NO-GAIN / ABSORBED.
+NEW METHOD INCREMENT = NO LOCAL COMPARATIVE INCREMENT / ABSORBED FOR THIS CLAIM.
 ~~~
 
 ## 10. Relationship to COH PR #1082
@@ -589,7 +589,7 @@ Preferred first target characteristics:
 - a documented **system-side representation / category / boundary formation event**;
 - enough data to reserve one measurement cut or one endogenous-cut transition prospectively;
 - strong latent-state, category-learning and structure-learning baselines;
-- predeclared NO-GAIN outcome.
+- predeclared NO LOCAL COMPARATIVE INCREMENT outcome.
 
 The Wójcik dataset is **not authorized as the first live test while #1075 remains open**.
 
@@ -628,8 +628,10 @@ A fair latent-state / dynamical / category-learning / structure-learning / diffu
 Verdict:
 
 ~~~text
-NO-GAIN
+NO LOCAL COMPARATIVE INCREMENT
 ~~~
+
+This blocks method-distinctiveness credit for the scoped comparison while retaining the source-owned / baseline relation as convergence material.
 
 ### F4 — supplied-cut success only
 
