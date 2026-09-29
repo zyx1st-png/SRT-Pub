@@ -79,9 +79,9 @@ ABSORBED
 UNDERDETERMINED
 = current paper design cannot separate candidate organizations;
 
-E2-POTENTIAL
-= a predeclared multi-probe residual survives on paper
-  and could justify later preregistration preparation;
+E2-DESIGN-CANDIDATE
+= a design remains worth specifying because it may separate
+  strong baselines, but no residual is yet established;
 
 E4-PRECURSOR
 = the useful discriminator concerns later recutting / reinterpretation,
@@ -318,9 +318,9 @@ prospective-dependence residual
 = NO LOCAL COMPARATIVE INCREMENT.
 ~~~
 
-### Potential E2 residual
+### Design condition for a future E2 residual
 
-A residual becomes interesting only if:
+A future residual would become interesting only if:
 
 - completion / unfinishedness can be orthogonalized from the strongest tonal / statistical predictions;
 - the same residual also predicts a second probe such as phrase boundary, continuation choice or later recutting.
@@ -328,9 +328,9 @@ A residual becomes interesting only if:
 ### Current paper verdict
 
 ~~~text
-E2-POTENTIAL
-but only as a design problem;
-no positive result yet.
+E2-DESIGN-CANDIDATE
+design worth further paper specification only;
+paper residual = NOT ESTABLISHED.
 ~~~
 
 ## 7. ADV-4 — resolution vs interruption with matched stopping
@@ -551,7 +551,7 @@ not E2 positive evidence.
 |---|---|---|---|
 | ADV-1 same target / different background | tonal hierarchy + Bayesian/statistical context | ABSORBED | only with multi-probe residual |
 | ADV-2 same endpoint / different path | temporal tension + ITPRA + musical forces | UNDERDETERMINED | maybe |
-| ADV-3 predictability x unfinishedness | closure / attraction + ITPRA + IDyOM/Temperley | E2-POTENTIAL | **yes, if orthogonalization survives** |
+| ADV-3 predictability x unfinishedness | closure / attraction + ITPRA + IDyOM/Temperley | E2-DESIGN-CANDIDATE | **yes, if orthogonalization survives** |
 | ADV-4 resolution vs interruption | cadence closure + event segmentation | UNDERDETERMINED | maybe |
 | ADV-5 deceptive reinterpretation | prediction/update + event segmentation | E4-PRECURSOR | no, route to E4 |
 | ADV-6 familiarity | schematic/veridical expectation | PHEN-CONTROL | no |
