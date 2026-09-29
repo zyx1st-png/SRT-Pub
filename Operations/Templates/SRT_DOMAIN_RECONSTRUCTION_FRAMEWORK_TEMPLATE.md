@@ -220,6 +220,10 @@ Which K commitment, if any, is genuinely pressured rather than merely adjacent?
 Which neighbor is currently the strongest available relevant comparator, and why?
 If the neighbor fully owns this local explanatory job, what exactly is blocked: the local comparative claim, the SRT relation itself, or both? Do not infer the latter without an independent owner-level reason.
 What convergence value remains worth routing (resonance / realization / pressure / contrast / translation / unresolved), and what future cross-domain test could make that mapping informative rather than merely similar?
+What is the programme-allocation consequence: continue / narrow / HOLD / stop-loss / root-return, separately from whether the SRT-side relation remains in the theory inventory?
+Has the same relation already produced two consecutive retained-but-no-payoff mappings? If yes, perform ChoiceMap/root-return before adding a third convergence case.
+Was the proposed invariant recoverable before this domain match? If no, mark it §15.5 working language; do not count this discovery domain as a confirming case.
+If a farther cross-domain SRT gain is claimed, which integrative cross-domain comparator is strongest and why?
 ```
 
 A good neighbor section is allowed to make the SRT framing weaker, smaller or less certain. Do not choose a weak comparator merely to make non-substitutability easier to obtain.
