@@ -7,7 +7,7 @@ layer: source_intuition
 epistemic_layer: author
 claim_mode: author_adjudication
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 priority: high
 research_mode: U
 dependency:
@@ -112,6 +112,8 @@ If no such consequence survives:
 ~~~text
 interpretive restatement / PREFORMAL_ONLY / NO_GAIN / SOURCE_ABSORBED
 ~~~
+
+> **2026-09-29 governance clarification:** the historical `NO_GAIN` token above means **NO LOCAL COMPARATIVE INCREMENT for the promoted claim**. The author intuition remains preservable as source provenance, while the active programme lane may still be narrowed / stopped under the applicable stop-loss rule.
 
 is valid and the recut must not be promoted merely because it originated from the author.
 

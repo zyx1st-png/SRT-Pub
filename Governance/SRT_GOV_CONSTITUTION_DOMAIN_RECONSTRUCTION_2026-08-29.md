@@ -216,6 +216,113 @@ Therefore a local absorption / no-increment result changes the **claim status**,
 
 For current work, avoid bare `NO-GAIN` when it could be read globally. Prefer `NO LOCAL COMPARATIVE INCREMENT` or `SOURCE-OWNED AT THIS EXPLANATORY JOB`, then state the separate U-mode disposition (`resonance / contrast / pressure / translation / realization / unresolved`).
 
+### 8.0b Three separate consequences: claim, programme allocation, theory inventory
+
+The 2026-09-29 correction separates **three** decisions, not two:
+
+~~~text
+A. scoped comparative-claim state
+B. programme / resource-allocation state
+C. theory-inventory / owner state
+~~~
+
+A local `NO LOCAL COMPARATIVE INCREMENT` normally blocks or narrows **A**.
+
+Repeated local absorption may still have a real consequence for **B**:
+
+~~~text
+stop-loss / contraction / HOLD / root-return
+may be required
+even when the SRT-side relation remains retrievable.
+~~~
+
+This is exactly how a bounded GRG fusion lane may be stopped without silently deleting every relation that motivated it.
+
+Changing **C** — deleting, demoting or semantically rewriting the SRT relation itself — still requires an independent internal reason, author adjudication, reciprocal-pressure result or owner-level correction.
+
+Therefore:
+
+~~~text
+relation retained
+!= programme deserves indefinite continuation;
+
+programme stopped
+!= relation deleted.
+~~~
+
+Amendment §10 and its named HOLD / failure routes remain controlling. The programme may not absorb negative results indefinitely.
+
+### 8.0c Retained-without-payoff review trigger
+
+For the **same proposed SRT relation**, do not accumulate an open-ended series of mappings whose only result is source-owned local explanation plus unearned "future convergence value."
+
+Default trigger:
+
+~~~text
+two consecutive competent mappings
++ no earned explanatory compression
++ no cross-domain transfer
++ no new reciprocal constraint
++ no stronger independently warranted identity claim
+-> ChoiceMap / root-return before adding a third convergence case.
+~~~
+
+Possible root-return outcomes include:
+
+~~~text
+continue with a sharper predeclared relation;
+park / HOLD the convergence lane;
+reduce research priority;
+split the relation;
+revise the mapping;
+withdraw the convergence hypothesis.
+~~~
+
+This is a programme-allocation review, not an automatic deletion rule.
+
+### 8.0d Farther-gain claims are themselves comparative claims
+
+A claim such as:
+
+~~~text
+SRT gains wider explanatory compression;
+SRT transfers a distinction across domains better;
+SRT supplies a more general generative perspective;
+~~~
+
+is not exempt from comparison merely because it is made at a farther or cross-domain level.
+
+If the active package asserts such an **SRT increment**, it must:
+
+- name the strongest available cross-domain comparator(s), including integrative theories rather than only local domain models;
+- state what explanatory / predictive / intervention / reconstruction job those comparators already perform;
+- identify the bounded additional SRT burden;
+- enter the applicable N-mode increment audit.
+
+U-mode may preserve convergence material without making this farther-gain claim.
+
+### 8.0e Post-hoc invariants cannot count their discovery domain as confirmation
+
+If the proposed cross-domain invariant **cannot** be independently recovered before the first domain match, apply §15.5:
+
+~~~text
+post-hoc synthesis label
+= working hypothesis only
+!= established invariant.
+~~~
+
+The domain that generated the label is a **discovery case**, not a confirming survival case.
+
+To earn future invariant standing:
+
+1. freeze the wording before a new domain is inspected;
+2. name what the relation excludes / forbids;
+3. name a semantic-drift or counterexample condition;
+4. test it prospectively on new domains under the §10.2 broad-synthesis HOLD boundary.
+
+Bounded neighbor adaptation / red-team comparison remains allowed under §10; this rule does not release a broad cross-domain synthesis programme.
+
+
 
 **Operational U-mode (cross-domain ontological unification)** applies when mature-domain overlap, neighbor comparison, or cross-domain mapping is actually in play. In that context, unless the active task explicitly asks for novelty, originality, prior art, D-track increment, or a domain-specific `SRT adds X` claim, theory-development work should first ask whether the same SRT relation can preserve its semantic core across domain-specific realizations while gaining explanatory compression, transferable distinctions, or reciprocal constraint. Mature-domain overlap is therefore first a mapping / convergence / realization question, not a subtraction result.
 

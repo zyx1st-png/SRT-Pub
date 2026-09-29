@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: os
 claim_mode: method_proposal
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-29
 version: v0_3
 priority: high
 research_mode: U
@@ -184,7 +184,7 @@ Does it add explanatory, reconstructive, predictive, intervention,
 or failure-localization leverage?
 
 FR-ADV-8 NEGATIVE RESULT
-If not, record SOURCE_ABSORBED / NO_GAIN / REORGANIZATION_ONLY.
+If not, record SOURCE_ABSORBED / NO_LOCAL_COMPARATIVE_INCREMENT / REORGANIZATION_ONLY.
 ~~~
 
 ## 4. Final Facing matrix comes last
@@ -344,6 +344,15 @@ Stop and return to author if the machine begins to:
 
 Symmetrically, author provenance is **not** a claim-promotion privilege.
 
+2026-09-29 clarification:
+
+~~~text
+source provenance retained
+!= promoted comparative / domain-reconstruction claim retained.
+~~~
+
+When this section says a claim must not be preserved merely because it came from the author, "claim" means the **promoted research / comparative claim at issue**. It does not authorize deleting the underlying author intuition from source provenance. A local no-increment result may also trigger programme stop-loss without deleting the source relation.
+
 An AUTHOR RECUT CANDIDATE / PREFORMAL may remain intuitive indefinitely as source provenance, but before it is promoted into a formal domain-reconstruction conclusion, new experiment / preregistered discriminator, SRT / GRG explanatory increment, or canonical consequence, FR-ADV must identify at least one differentiating consequence, such as:
 
 - changed dependency order;
@@ -354,7 +363,7 @@ An AUTHOR RECUT CANDIDATE / PREFORMAL may remain intuitive indefinitely as sourc
 - changed reconstruction requirement;
 - or a stated observation / result that would cause the recut to be abandoned or materially narrowed.
 
-If none survives, use `PREFORMAL_ONLY`, `INTERPRETIVE_RESTATEMENT`, `NO_GAIN`, or `SOURCE_ABSORBED` rather than preserving the claim merely because it came from the author.
+If none survives, use `PREFORMAL_ONLY`, `INTERPRETIVE_RESTATEMENT`, `NO_LOCAL_COMPARATIVE_INCREMENT`, or `SOURCE_ABSORBED` rather than preserving the claim merely because it came from the author.
 
 ## 10. Relation to experiments
 
@@ -402,7 +411,7 @@ A. a better recut that survives source and evidence pressure;
 
 B. a narrower OPEN question;
 
-C. a principled SOURCE_ABSORBED / NO_GAIN result;
+C. a principled SOURCE_ABSORBED / NO_LOCAL_COMPARATIVE_INCREMENT result;
 
 D. a diagnosis that the traditional objectification was adequate
    and no SRT recut is needed.
