@@ -530,6 +530,7 @@ This does not automatically invalidate the behavioral design; it changes the exp
 - Sears DRW, Pearce MT, Spitzer J, Caplin WE, McAdams S. 2019. Expectations for tonal cadences: Sensory and cognitive priming effects. DOI 10.1177/1747021818814472.
 - Sears DRW, Spitzer J, Caplin WE, McAdams S. 2020. Expecting the end: Continuous expectancy ratings for tonal cadences. Psychology of Music 48(3):358–375. DOI 10.1177/0305735618803676.
 - Kristop CA, Moreno SJ, Anta JF. 2020. What do listeners understand by "continuity" and "closure"? Psychology of Music 48(3):344–357. DOI 10.1177/0305735618803000.
+- Smit EA, Dobrowohl FA, Schaal NK, Milne AJ, Herff SA. 2020. Perceived Emotions of Harmonic Cadences. Music & Science. DOI 10.1177/2059204320938635.
 
 ### Local adaptation
 - Chander A, Aslin RN. 2023. Expectation adaptation for rare cadences in music: Item order matters in repetition priming. Cognition 240:105601. DOI 10.1016/j.cognition.2023.105601.
