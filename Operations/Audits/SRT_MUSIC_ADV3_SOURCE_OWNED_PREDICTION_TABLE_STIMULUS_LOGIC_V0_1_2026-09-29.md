@@ -290,49 +290,53 @@ The K1/K2 probability reversal tries to separate:
 from
 - what counts as tonal closure.
 
-## 5. The critical bottleneck — Cell C may fail
+## 5. The critical bottleneck — expectedness separation, not absolute low-P PAC
 
-Cell C is the hardest cell:
-
-~~~text
-locally low-P
-+
-structurally complete.
-~~~
-
-PAC carries strong long-term schematic expectancy in Western tonal listeners.
-
-Therefore a local manipulation may fail to make PAC genuinely "low predictability" even when PAC is locally rare.
-
-This is not a nuisance to hide.
-
-It is a design gate.
-
-### C-failure rule
-
-If independent expectancy checks show:
+The source-fidelity audit shows that the idealized cell:
 
 ~~~text
-PAC remains high expectedness
-despite reversed local statistics,
+C = absolutely low predictability + high completion
 ~~~
 
-then:
+is too strong as a default empirical requirement.
+
+PAC carries a strong long-term schematic prior. Chander–Aslin found short-term adaptation without showing that the PAC prior was globally erased.
+
+Therefore the primary gate is:
 
 ~~~text
-ADV-3A does not instantiate a valid 2x2;
-do not reinterpret block probability as experienced predictability.
+same PAC-like closing class
+under different local histories
+-> independently verified expectedness separation
+while
+completion / closure remains stably high.
 ~~~
 
-Possible disposition:
+### C-separation failure rule
+
+If the online / manipulation-check expectedness for PAC changes only trivially across the source-faithful order schedules:
 
 ~~~text
-ADV-3A = FAILED ORTHOGONALIZATION
+ADV-3A' = FAILED ORTHOGONALIZATION.
 ~~~
 
-The route then either:
-- tries the backup design below;
-- or concludes the 2x2 is not practically clean enough for this music lane.
+Do not reinterpret experimental frequency as psychological predictability.
+
+### Completion-preservation failure rule
+
+If the local-history manipulation substantially erodes the PAC-vs-DC completion contrast:
+
+~~~text
+ADV-3A' = FAILED CONSTRUCT SEPARATION.
+~~~
+
+The four-cell diagram remains a visualization only; the primary analysis target is a continuous crossed relation:
+
+~~~text
+online local expectedness q_t
+x
+cadence closure class.
+~~~
 
 ## 6. Backup stimulus logic — ADV-3B model-screened closing targets
 
@@ -499,12 +503,12 @@ If local adaptation does not create separable high / low expectedness:
 ADV-3A = FAIL
 ~~~
 
-### K2 — Cell C cannot be made valid
+### K2 — PAC expectedness cannot be separated across local histories
 
-If stable tonic closure remains strongly expected across all practical manipulations:
+If the same PAC-like closing class shows no meaningful independently verified expectedness shift across the source-faithful order schedules:
 
 ~~~text
-2x2 orthogonalization = FAIL OR CONTRACT
+continuous crossed-design orthogonalization = FAIL OR CONTRACT
 ~~~
 
 ### K3 — combined baseline fully pays the pattern
@@ -604,8 +608,8 @@ primary paper design
 = ADV-3A order-/window-conditioned local-statistical adaptation x cadence closure;
 
 primary scientific bottlenecks
-= can Cell C become genuinely low-predictability while retaining closure?
-  AND can local learning shift expectedness without erasing the closure factor?;
+= can local history produce a meaningful expectedness shift for the same PAC-like closing class?
+  AND can that shift occur without erasing the closing-vs-open completion contrast?;
 
 backup
 = ADV-3B model-screened low-P closing target;
