@@ -439,7 +439,9 @@ Music remains a bounded companion to the existing cognition CURRENT NEXT. Its st
 Immediate bounded owner:
 
 - `Operations/Audits/SRT_MUSIC_E2_STRONG_BASELINE_ADVERSARIAL_PACKET_V0_1_2026-09-29.md`
-- role = paper-only E2 red team; try to eliminate the residual before any experiment.
+- companion: `Operations/Audits/SRT_MUSIC_ADV3_SOURCE_OWNED_PREDICTION_TABLE_STIMULUS_LOGIC_V0_1_2026-09-29.md`
+- role = paper-only E2 red team + ADV-3 prediction / stimulus contract; try to eliminate the residual before any experiment.
+- current bottleneck = whether Cell C (low predictability + high completion) can be made valid without redefining predictability after outcomes are seen.
 - CURRENT NEXT remains the cognition programme in §0.3c / §0.3e.
 
 ---
