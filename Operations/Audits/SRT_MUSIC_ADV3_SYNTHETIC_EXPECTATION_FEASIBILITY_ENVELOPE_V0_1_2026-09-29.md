@@ -136,6 +136,17 @@ without guaranteeing absolute prior reversal.
 
 ## 4. Random-order first-phase simulation
 
+Reproducibility note:
+
+~~~text
+phase length = 20 trials;
+PAC-high phase = 16 PAC + 4 DC;
+DC-high phase = 4 PAC + 16 DC;
+300 deterministic pseudo-random permutations per phase;
+seeds = 0..299;
+posterior evaluated immediately before each PAC trial.
+~~~
+
 A simple simulation randomized the order of the 16/4 or 4/16 events within a 20-trial first phase and evaluated the learner **before each PAC trial**.
 
 Across 300 random schedules:
