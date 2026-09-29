@@ -418,9 +418,9 @@ recurrent non-outsourcable prospective exposure
 
 This remains OPEN because canonical Bearer admission already has independent P+E burdens and must not be circularly redefined through the phenomenon being explained.
 
-## 16. Farther-convergence invariant candidate
+## 16. Post-hoc farther-convergence label — discovery trace only
 
-The discussion ended by extracting:
+The dialogue extracted:
 
 ~~~text
 formed organization_t
@@ -431,17 +431,15 @@ formed organization_t
 -> changed possible continuation.
 ~~~
 
-Pressure-test across:
-- music;
-- language;
-- action;
-- Aha / restructuring.
+Post-merge review correction:
 
-The purpose is not to force identity but to ask:
-- what remains invariant;
-- what remains domain-specific;
-- whether a prior SRT relation survives the mappings;
-- whether one domain supplies constraints that improve another.
+~~~text
+this label was produced after the music case was already visible;
+therefore it is §15.5 working language, not a prior invariant;
+music is the discovery case and cannot count as a confirming case.
+~~~
+
+Do not pressure-test it across music / language / action / Aha as if four verbal matches were positive evidence. Before any new domain test, select and freeze an independently prior SRT relation, state what it excludes, and name strong cross-domain comparators. Under amendment §10.2, such work remains bounded neighbor adaptation / red-team pressure, not a released broad-synthesis programme.
 
 ## 17. Stop condition
 
