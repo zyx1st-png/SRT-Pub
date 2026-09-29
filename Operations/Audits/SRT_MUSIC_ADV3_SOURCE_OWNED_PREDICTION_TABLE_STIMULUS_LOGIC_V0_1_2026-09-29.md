@@ -93,8 +93,8 @@ The table below deliberately distinguishes direct model output from a looser con
 | Farbood temporal tension | multidimensional feature slopes integrated over attentional / memory windows | no primary probabilistic output | direct | no direct binary closure output | no | path-sensitive tension differences cannot be treated as E2 residual by themselves |
 | TenseMusic | automatic tension prediction from loudness, pitch height, tonal tension, roughness, tempo, onset frequency | no primary probability output | direct | no direct binary closure output | no | continuous tension is already strongly modelable from audio / tonal features |
 | Temperley Bayesian tonal models | Bayesian key / tonal / metrical / melodic inference; tension / ambiguity / expectation as probabilistic extensions | direct family burden | indirect | indirect through tonal inference / stability | no primary output | local vs schematic expectation must be paid before residual language |
-| IDyOM | learned event probability / information content / entropy; expectation from exposure | direct | not a full tension theory | no dedicated tonal-closure ontology | can predict grouping boundaries from IC / entropy peaks | strongest statistical attack on predictability and some segmentation probes |
-| Sears / cadence-expectancy family | expectancy for recurrent cadence types; stable targets and end-imminence / closure judgments | direct empirical comparator | not primary | direct | phrase-end expectancy | strongest first-line closure comparator |
+| IDyOM | learned event probability / information content / entropy; LTM plus within-melody STM expectation | direct for represented event stream | not a full tension theory | no dedicated tonal-closure ontology | can support grouping analyses through IC / entropy structure | strong statistical attack, but standard STM must not be assumed to learn cross-trial session statistics |
+| Sears / cadence-expectancy family | prospective expectancy that the end of a cadential excerpt is imminent; stable targets raise expectancy | direct empirical comparator | not primary | **prospective end-imminence only; not post-event completion by itself** | phrase-end expectancy | strong expectancy comparator, but completion requires a separate post-event check |
 | Event Segmentation Theory / phrase-boundary models | event boundary prediction / model updating | indirect via prediction | no tonal-tension output | indirect | direct | boundary probe is not automatically extra E2 evidence |
 
 Interpretation guard:
@@ -177,53 +177,96 @@ Reason for preferring DC in the first paper design:
 
 HC remains useful as an independent robustness family because dominant endings are strongly associated with continued openness.
 
-### 4.3 Key-conditioned local probability design
+### 4.3 Order-/window-conditioned local probability design — source-fidelity correction
 
-Use at least two transposed tonal contexts / keys, counterbalanced across participants or blocks.
+Chander–Aslin did **not** train different key identities to predict different cadence types. They held the global incidence of a priori likely vs unlikely cadences at 50–50 and changed **item order**, so the local probability of the unlikely cadence varied over the unfolding experiment.
 
-Source-fidelity guard:
-
-> The Chander–Aslin result supports short-term adaptation to local cadence statistics in general. It does **not** validate the specific K1/K2 key-conditioned implementation proposed below. K1/K2 is a new design candidate and must earn its own manipulation validity.
-
+Therefore the primary ADV-3A implementation should follow that logic more closely.
 
 Illustrative design logic only:
 
 ~~~text
-Context K1:
+Window / phase W_PAC:
 PAC locally frequent
 DC locally rare
 
-Context K2:
-PAC locally rare
+Window / phase W_DC:
 DC locally frequent
+PAC locally rare
+
+global session incidence:
+PAC ≈ DC
 ~~~
 
-The exact probability ratio is not frozen here.
+Exact window length and probability ratio are not frozen here.
 
-This yields candidate cells:
+Candidate conceptual cells:
 
 ~~~text
 A:
-K1 + PAC
-= locally high-P + structurally closing
+PAC encountered when current local history favors PAC
+= high local predictability + structurally closing
 
 B:
-K2 + DC
-= locally high-P + structurally open
+DC encountered when current local history favors DC
+= high local predictability + structurally open
 
 C:
-K2 + PAC
-= locally low-P + structurally closing
+PAC encountered when current local history favors DC
+= lower local predictability + structurally closing
 
 D:
-K1 + DC
-= locally low-P + structurally open
+DC encountered when current local history favors PAC
+= lower local predictability + structurally open
 ~~~
 
-The same cadence types should be transposed and counterbalanced so that:
-- PAC-ness / DC-ness does not depend on key identity;
-- local probability assignment reverses across key/context;
-- acoustic register, duration and texture are matched as tightly as practical.
+Primary implementation principle:
+
+> Treat local expectedness as a **continuous online quantity** estimated from the preceding trial history, not merely as a categorical block label.
+
+Order schedules should be counterbalanced so that:
+- global PAC/DC incidence remains matched;
+- early vs late experiment position is not confounded with one cadence type;
+- local-probability trajectories reverse across schedules;
+- no explicit key-to-cadence rule is needed;
+- participants can learn incidentally from the unfolding statistics.
+
+Source-fidelity guard:
+
+~~~text
+Chander-Aslin
+supports:
+item-order / local-statistical adaptation;
+
+does not establish:
+the exact window size,
+the exact probability ratio,
+or successful orthogonalization of predictability and completion.
+~~~
+
+### 4.4 Why this is stronger than a simple PAC-vs-DC comparison
+
+A simple comparison:
+
+~~~text
+PAC
+vs
+DC
+~~~
+
+confounds:
+- schematic expectancy;
+- local transition frequency;
+- target stability;
+- closure;
+- tension.
+
+The order-/window-conditioned schedule tries to separate:
+- what is locally likely **given the immediately preceding session history**
+from
+- what counts as tonal closure.
+
+It also reduces the explicit contingency-learning risk created by the discarded K1/K2 key-cue version.
 
 ### 4.4 Why this is stronger than a simple PAC-vs-DC comparison
 
@@ -247,49 +290,53 @@ The K1/K2 probability reversal tries to separate:
 from
 - what counts as tonal closure.
 
-## 5. The critical bottleneck — Cell C may fail
+## 5. The critical bottleneck — expectedness separation, not absolute low-P PAC
 
-Cell C is the hardest cell:
-
-~~~text
-locally low-P
-+
-structurally complete.
-~~~
-
-PAC carries strong long-term schematic expectancy in Western tonal listeners.
-
-Therefore a local manipulation may fail to make PAC genuinely "low predictability" even when PAC is locally rare.
-
-This is not a nuisance to hide.
-
-It is a design gate.
-
-### C-failure rule
-
-If independent expectancy checks show:
+The source-fidelity audit shows that the idealized cell:
 
 ~~~text
-PAC remains high expectedness
-despite reversed local statistics,
+C = absolutely low predictability + high completion
 ~~~
 
-then:
+is too strong as a default empirical requirement.
+
+PAC carries a strong long-term schematic prior. Chander–Aslin found short-term adaptation without showing that the PAC prior was globally erased.
+
+Therefore the primary gate is:
 
 ~~~text
-ADV-3A does not instantiate a valid 2x2;
-do not reinterpret block probability as experienced predictability.
+same PAC-like closing class
+under different local histories
+-> independently verified expectedness separation
+while
+completion / closure remains stably high.
 ~~~
 
-Possible disposition:
+### C-separation failure rule
+
+If the online / manipulation-check expectedness for PAC changes only trivially across the source-faithful order schedules:
 
 ~~~text
-ADV-3A = FAILED ORTHOGONALIZATION
+ADV-3A' = FAILED ORTHOGONALIZATION.
 ~~~
 
-The route then either:
-- tries the backup design below;
-- or concludes the 2x2 is not practically clean enough for this music lane.
+Do not reinterpret experimental frequency as psychological predictability.
+
+### Completion-preservation failure rule
+
+If the local-history manipulation substantially erodes the PAC-vs-DC completion contrast:
+
+~~~text
+ADV-3A' = FAILED CONSTRUCT SEPARATION.
+~~~
+
+The four-cell diagram remains a visualization only; the primary analysis target is a continuous crossed relation:
+
+~~~text
+online local expectedness q_t
+x
+cadence closure class.
+~~~
 
 ## 6. Backup stimulus logic — ADV-3B model-screened closing targets
 
@@ -338,7 +385,9 @@ The following is a prediction contract, not a claim that every source computes t
 | implication / musical-force families | closure / reduced continuation force expected | continuation / unresolved implication may remain | closure despite local rarity | unresolved continuation plus local rarity |
 | Huron-style expectation | local and schematic expectation can both favor PAC-like resolution | locally learned expectation may raise DC predictability while schematic expectation still favors tonic resolution — predictable-but-open is therefore not novel | schematic PAC expectation may prevent true low-P | local rarity and schematic non-tonic status can both lower expectedness |
 | Farbood / TenseMusic | tension depends on path and surface features, not the 2x2 label alone | same | same | same |
-| IDyOM | high only if the model is given / learns the relevant local K1 statistics | high only if the model is given / learns the relevant local K2 statistics | low only if the model represents the reversed local statistics strongly enough to overcome long-term regularity | low under the corresponding represented local statistics |
+| online Bayesian / local-frequency model | high when recent trial history favors PAC | high when recent trial history favors DC | lower when recent history disfavors PAC | lower when recent history disfavors DC |
+| standard IDyOM STM | **not automatically applicable to cross-trial adaptation** because the official STM learns incrementally within each melody from an initially empty state | same limitation | same limitation | same limitation |
+| IDyOM LTM / combined corpus expectation | preserves long-term schematic pressure favoring corpus-typical continuations; useful as a long-term comparator, not a substitute for the online session learner | same | PAC prior may remain high despite local rarity | DC prior may remain low despite local frequency |
 | event / boundary models | closing PAC may strengthen boundary signal | open DC may weaken or delay boundary | closing PAC may still strengthen boundary despite low local P | open DC likely weak / delayed boundary |
 
 Crucial implication:
@@ -358,9 +407,12 @@ Paper-level preferred separation:
 - model-based probability is computed independently;
 - a separate manipulation-check sample or separate trials may rate expectedness.
 
-### Completion outcome
-- cadence type is stimulus-side structure;
-- completion / "could end here" is an outcome, not used to select the final result after the fact.
+### Completion construction / outcome
+- cadence type supplies a stimulus-side structural anchor;
+- existing music-theory descriptions treat PAC-like authentic endings as stable/resolved and HC/DC families as relatively open/unresolved;
+- **Sears 2020 end-imminence ratings are not sufficient to validate post-event completion**;
+- completion / "could stop here now" therefore requires a separate post-event manipulation check or independent sample;
+- that check must be fixed before any E2 outcome analysis and must not be redefined after seeing the main results.
 
 ### Independent second probe
 At least one:
@@ -390,10 +442,11 @@ statistical expectation
 Possible source-owned components:
 
 ~~~text
-IDyOM / Bayesian local expectation
-(or another explicitly online-updating statistical model if standard IDyOM does not ingest the session-level manipulation)
+online Bayesian / rolling local-probability expectation model
 +
-Sears / cadence class / Lerdahl-Narmour-Bharucha structure
+IDyOM LTM / corpus-statistical expectation
++
+cadence class / Lerdahl-Narmour-Bharucha structural terms
 +
 Farbood or TenseMusic tension
 +
@@ -450,12 +503,12 @@ If local adaptation does not create separable high / low expectedness:
 ADV-3A = FAIL
 ~~~
 
-### K2 — Cell C cannot be made valid
+### K2 — PAC expectedness cannot be separated across local histories
 
-If stable tonic closure remains strongly expected across all practical manipulations:
+If the same PAC-like closing class shows no meaningful independently verified expectedness shift across the source-faithful order schedules:
 
 ~~~text
-2x2 orthogonalization = FAIL OR CONTRACT
+continuous crossed-design orthogonalization = FAIL OR CONTRACT
 ~~~
 
 ### K3 — combined baseline fully pays the pattern
@@ -499,7 +552,7 @@ Do not rename the remaining learned difference as "unfinishedness."
 
 ### K7 — predictability depends only on explicit contingency strategy
 
-If participants can obtain the high/low predictability manipulation only by explicitly learning a key-to-cadence rule, and the effect does not survive an incidental-learning implementation:
+If participants can obtain the high/low predictability manipulation only by explicitly discovering the order schedule / trial contingency, and the effect does not survive an incidental-learning implementation:
 
 ~~~text
 the manipulation may remain useful for generic prediction research,
@@ -552,11 +605,11 @@ ADV-3
 = remains E2-DESIGN-CANDIDATE;
 
 primary paper design
-= ADV-3A local-statistical adaptation x cadence closure;
+= ADV-3A order-/window-conditioned local-statistical adaptation x cadence closure;
 
 primary scientific bottlenecks
-= can Cell C become genuinely low-predictability while retaining closure?
-  AND can local learning shift expectedness without erasing the closure factor?;
+= can local history produce a meaningful expectedness shift for the same PAC-like closing class?
+  AND can that shift occur without erasing the closing-vs-open completion contrast?;
 
 backup
 = ADV-3B model-screened low-P closing target;
@@ -573,8 +626,13 @@ experiment
 preregistration
 = NO;
 
+source-fidelity result
+= key-conditioned K1/K2 design DEMOTED;
+  order-/window-conditioned adaptation is the primary implementation;
+  standard IDyOM STM is not assumed to model cross-trial session learning;
+  Sears end-imminence is not treated as post-event completion;
+
 next allowed move
-= source-fidelity / implementation-feasibility check
-  for ADV-3A comparator outputs and Cell-C viability,
-  still paper-only.
+= paper-only schedule simulation / manipulation-feasibility check
+  with an explicit online adaptation baseline and independent completion criterion.
 ~~~
