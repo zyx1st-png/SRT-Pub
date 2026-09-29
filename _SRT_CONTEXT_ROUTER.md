@@ -430,6 +430,7 @@ When answering or editing a non-simple SRT question:
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
 - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md + Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md（bounded music / temporal-phenomenology companion: change-relative-to-background, structural-registration != foreground_phen != foreground_obj, completion / interruption / recutting, Bearer-facing unfinishedness; no new CURRENT NEXT）
 
 ### Downstream assay
 
@@ -446,6 +447,8 @@ When answering or editing a non-simple SRT question:
 - SRT_EXP_MEASURE_MAP.md after neutral construct hardening
 
 ### Boundary
+
+- Music / temporal-phenomenology work remains a bounded companion: use mature Husserl / predictive / event-segmentation / MMN / relative-pitch results as source-owned convergence coordinates, not as automatic SRT subtraction or SRT evidence.
 
 - **Root target = pre-object generative orientation, not preformal coherence judgment.**
 - Do not assume cognition first builds an inventory of explicit objects / rules and only then constructs the relevant attractor / direction.
