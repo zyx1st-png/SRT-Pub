@@ -643,8 +643,19 @@ ADV-3A primary paper design
 critical bottleneck
 = Cell C: low predictability + high completion;
 
+source-fidelity / implementation-feasibility
+= Operations/Audits/SRT_MUSIC_ADV3_SOURCE_FIDELITY_IMPLEMENTATION_FEASIBILITY_V0_1_2026-09-29.md;
+
+synthetic expectedness envelope
+= Operations/Audits/SRT_MUSIC_ADV3_SYNTHETIC_EXPECTATION_FEASIBILITY_ENVELOPE_V0_1_2026-09-29.md;
+
+source-fidelity disposition
+= continuous expectedness separation RETAINED;
+  absolute low-P PAC NOT REQUIRED;
+  standard IDyOM STM NOT assumed to learn cross-trial session statistics;
+  prospective end-imminence NOT equated with post-event completion;
+
 next allowed move
-= source-fidelity / implementation-feasibility check
-  for ADV-3A comparator outputs and Cell-C viability,
+= implementation-feasibility contract / schedule simulation refinement,
   still paper-only.
 ~~~
