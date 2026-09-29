@@ -3,6 +3,7 @@ id: SRT-GOV-CONSTITUTION-DOMAIN-RECONSTRUCTION-20260829
 type: framework
 status: active
 date: 2026-08-29
+updated: 2026-09-29
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -178,6 +179,43 @@ If an item only asserts a worldview sentence and no reader can do anything with 
 ## 8. Two-pass neighbor discipline
 
 **Programme objective.** SRT seeks cross-domain ontological unification rather than domain-local novelty maximization.
+
+### 8.0a Local no-gain is claim-scoped, not a subtraction rule
+
+Controlling author correction:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_LOCAL_NO_GAIN_REMOTE_CONVERGENCE_2026-09-29.md`
+
+A mature neighbor can fully own a **scoped explanatory job** without thereby deleting the independently owned SRT relation that was being mapped to it.
+
+Mandatory distinction:
+
+~~~text
+NO LOCAL COMPARATIVE INCREMENT
+= do not claim novelty / superiority / extra explanatory payoff
+  for this scoped comparator and explanatory job;
+
+!= whole-SRT no-gain;
+!= automatic deletion / demotion of the mapped SRT relation;
+!= permission to stop retaining the neighbor as convergence material.
+~~~
+
+If the SRT-side relation is independently recoverable from an existing owner / explicit author source **before** the domain match is evaluated, U-mode should preserve both sides:
+
+~~~text
+source-native explanatory ownership
++ SRT-side relation at its prior authority
++ typed mapping / mismatch
++ reciprocal constraint
++ later retrieval value for wider convergence.
+~~~
+
+The mapping may later contribute to explanatory compression, transferable distinctions, reciprocal constraint or a wider generative perspective, but those gains must be earned across mappings; repeated resemblance alone does not establish identity or support.
+
+Therefore a local absorption / no-increment result changes the **claim status**, not automatically the **theory inventory**. Any deletion, demotion or semantic rewrite of the SRT relation needs an independent internal reason, author adjudication, reciprocal-pressure result or owner-level correction.
+
+For current work, avoid bare `NO-GAIN` when it could be read globally. Prefer `NO LOCAL COMPARATIVE INCREMENT` or `SOURCE-OWNED AT THIS EXPLANATORY JOB`, then state the separate U-mode disposition (`resonance / contrast / pressure / translation / realization / unresolved`).
+
 
 **Operational U-mode (cross-domain ontological unification)** applies when mature-domain overlap, neighbor comparison, or cross-domain mapping is actually in play. In that context, unless the active task explicitly asks for novelty, originality, prior art, D-track increment, or a domain-specific `SRT adds X` claim, theory-development work should first ask whether the same SRT relation can preserve its semantic core across domain-specific realizations while gaining explanatory compression, transferable distinctions, or reciprocal constraint. Mature-domain overlap is therefore first a mapping / convergence / realization question, not a subtraction result.
 

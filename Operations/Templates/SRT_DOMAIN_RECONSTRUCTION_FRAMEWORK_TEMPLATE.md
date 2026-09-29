@@ -4,7 +4,7 @@ type: template
 status: active
 version: v3
 date: 2026-09-05
-updated: 2026-09-09
+updated: 2026-09-29
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -27,6 +27,8 @@ tags: [Template, DomainReconstruction, AuthorReentry, NeighborAdaptation, Common
 > **2026-09-05 correction:** Constitution v1 remains the current reader-interface prototype, but the framework must no longer assume that the six Constitution operations, bearer analysis or objectification analysis exhaust SRT ontology. Mature-neighbor adaptation, common-problem extraction and explicit author ownership of any candidate SRT response now precede increment pressure. Current canonical owners remain constraints unless explicitly reopened; they are not ordinary historical inputs.
 
 > **2026-09-08 operating update:** the governance amendment §4.2 controls SRT-led absorption and problem/conclusion generation. Source-native explanations may be inherited even when they leave no common residual. A comparative Level is not a general admission gate for a substantive O-track response. Use this template for an actual domain framework, not as a mandatory form for every dialogue turn; retain existing HOLD gates.
+
+> **2026-09-29 local-no-gain correction:** a comparator fully owning one scoped explanatory job blocks the corresponding local SRT increment claim; it does not automatically subtract an independently owned SRT relation from the theory. Preserve source ownership, the typed mapping and retrieval value for later cross-domain convergence. Any later compression / transfer / wider-generative gain remains a separate burden.
 
 ## Mapping from the earlier template
 
@@ -216,6 +218,8 @@ Is a proposed SRT relation genuinely prior to the mapping, or coined after seein
 What mechanism belongs to the domain/neighbor and must not be appropriated as SRT ontology?
 Which K commitment, if any, is genuinely pressured rather than merely adjacent?
 Which neighbor is currently the strongest available relevant comparator, and why?
+If the neighbor fully owns this local explanatory job, what exactly is blocked: the local comparative claim, the SRT relation itself, or both? Do not infer the latter without an independent owner-level reason.
+What convergence value remains worth routing (resonance / realization / pressure / contrast / translation / unresolved), and what future cross-domain test could make that mapping informative rather than merely similar?
 ```
 
 A good neighbor section is allowed to make the SRT framing weaker, smaller or less certain. Do not choose a weak comparator merely to make non-substitutability easier to obtain.
