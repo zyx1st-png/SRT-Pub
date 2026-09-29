@@ -10,6 +10,7 @@ created: 2026-09-29
 updated: 2026-09-29
 research_mode: U
 root_question: "当同一物理过程允许不同表示、不同监测展开、不同参考系或非固定因果顺序时，SRT 对 Selection / actuality / history / position 的哪些负担必须保持不变，才能避免把描述方式误当成本体事件？"
+working_label: "representation-invariant / covariant core — working label only; not hardened SRT term"
 comparative_claim: none
 named_comparator: "n/a — U-mode pressure mapping only"
 n_mode_triggered: false
@@ -58,80 +59,88 @@ tags: [Physics, RepresentationInvariance, QuantumTrajectories, Unravelling, QRF,
 
 ---
 
-## 1. P2-PHYS-1 — quantum unravelling pressure
+
+## 1. P2-PHYS-1 — quantum unravelling pressure：dilation 不等于唯一 trajectory
 
 ### 1.1 外部事实
 
-开放量子系统的同一个 GKLS / Lindblad master equation 可以有不同的 quantum-trajectory unravellings。
-
-Van Regemortel et al. (2022) 展示：同一 master equation 下，不同环境监测方案可以产生不同 stochastic trajectories；监测方式甚至改变 trajectory-level entanglement，而 ensemble-averaged reduced dynamics 保持相同。
-
-Donvil & Muratore-Ginanneschi (2022) 给出更一般的 time-local master-equation trajectory framework。
+开放量子系统的同一个 GKLS / Lindblad master equation 可以有不同的 quantum-trajectory unravellings。Brun (2002) 明确用不同环境监测方案展示同一 master-equation evolution 的不同 unravelings；Donvil & Muratore-Ginanneschi (2022) 则给出更一般的 time-local master-equation trajectory framework。
 
 因此：
 
 ~~~text
-same reduced / ensemble dynamics
-!= unique trajectory decomposition.
+same unconditional / ensemble dynamics
+!= unique conditioned trajectory decomposition.
 ~~~
 
-trajectory / jump 序列并不是仅由 reduced master equation 唯一决定。
-
-### 1.2 对 E01 的直接压力
-
-E01 §2.4 当前说，若两组 jump operators 产生同一 reduced dynamics，physically actualized one 是与 actual friction reservoir 相匹配的 Stinespring dilation。
-
-这比成熟邻居允许的内容更强。
-
-更精确的关系应是：
+更重要的是：
 
 ~~~text
-system + environment coupling
-+ actual monitoring / record scheme
--> conditioned trajectory / unravelling
+fixed system-environment dilation / coupling
+!= unique unravelling
 
-discard / ignore record
--> common unconditional reduced dynamics
+dilation + chosen environment monitoring / record channel
+-> conditioned trajectory family
 ~~~
 
-如果 monitoring scheme 本身不同，不同 trajectory 对应不同 physical measurement contexts 的 conditioned descriptions。
+也就是说，Stinespring dilation、GKLS representation 与具体 monitored trajectory 不能混作一个对象。
 
-反过来，如果没有实际 outcome record / monitoring channel 被物理实现，则从 master equation alone 选出一个真正发生的唯一 jump sequence 没有依据。
+### 1.2 对 E01 与 F-E01-γ 的更精确诊断
 
-### 1.3 对 PHR-A 的影响
+E01 §2.4 的问题不宜概括为“dilation 本身不唯一”。E01 §5.3 的 F-E01-γ 其实已经加入限定：
 
-PHR-A 要求：
+> the physical GKLS unraveling is unique once the apparatus is fixed.
+
+真正的缺口是：**apparatus fixed 并没有自动固定 environment monitoring basis / detection scheme；同一 system-environment coupling 可以因 photon counting、homodyne/heterodyne 等不同环境监测而产生不同 conditioned unravellings。**
+
+因此 F-E01-γ 目前存在两种读法：
 
 ~~~text
-predeclared event unit / boundary / interpretation
--> outcome-indexed physical record
--> intervention-sensitive path efficacy
--> future-access / return-cost change
+A. apparatus = full monitoring / record scheme
+   -> uniqueness 近乎由定义给出，窗口容易变得平凡；
+
+B. apparatus = system + reservoir / dilation only
+   -> uniqueness 不成立，因 monitoring choice 仍可改变 unravelling。
 ~~~
 
-这使 PHR-A 比 E01 的 unique actualized jump-set 更稳健。
+未来若保留这个窗口，必须先明确 apparatus boundary 是否把 detector basis、record channel 与 monitoring protocol 全部冻结。
 
-Pass 2 建议：
+### 1.3 解释依赖边界
+
+“没有实际 monitoring / record channel，就不能从 standard-QM master equation alone 选出唯一 ontic jump sequence”只在标准 quantum-trajectory / measurement reading 下成立。
+
+objective-collapse theories（如 GRW / CSL）正是把 stochastic collapse dynamics 作为额外物理定律，而不是把 trajectory 仅视作 conditioned monitoring description。因此本包不把“无监测就无 ontic trajectory”写成 interpretation-neutral 结论。
+
+### 1.4 对 PHR-A 的影响
+
+PHR-A 的 event audit 仍比 E01 的 uniqueness claim 稳健，因为它预先要求 event unit / boundary / interpretation 和 outcome-indexed physical record。
+
+更稳妥的压力读法是：
 
 ~~~text
+within standard monitored-QM readings:
+
 PHR-A candidate event
-= instrument / record-context indexed
+= instrument / monitoring / record-context indexed
 
-unrecorded unravelling
+formal or unrecorded unravelling
 != ontic event decomposition by default
 ~~~
 
 因此：
 
-- trajectory-level event 可以是物理的，但必须把实际 monitoring / record apparatus 纳入 event boundary；
-- master-equation-level dynamics 不能独自确定哪条 stochastic trajectory 是真实 Selection 序列；
-- primitive Selection 不能直接等同于任意 formal quantum jump。
+- trajectory-level event 若要进入 PHR-A，应把实际 detector / monitoring / record apparatus 纳入 event boundary；
+- master-equation-level dynamics 不能独自决定哪条 stochastic trajectory 是真实 Selection 序列；
+- primitive Selection 不能直接等同于任意 formal quantum jump；
+- objective-collapse 路线必须作为另一个明确标注的 interpretation / theory family 处理。
 
-### 1.4 Disposition
+### 1.5 Disposition
 
 ~~~text
-E01 B-E01-3 unique physically-actualized jump-set wording
-= PHYSICS-LOCAL DEBT candidate
+E01 / F-E01-γ
+= PHYSICS-LOCAL DEBT candidate, after retyping the problem
+  from "dilation uniqueness"
+  to "dilation / apparatus / monitoring / unravelling conflation"
 
 PHR-A record-context rule
 = strengthened, not defeated
@@ -139,10 +148,8 @@ PHR-A record-context rule
 SPINE-impact candidate
 = event individuation must distinguish
   representation choice
-  from physically instantiated record-context
+  from physically instantiated monitoring / record-context
 ~~~
-
----
 
 ## 2. P2-PHYS-2 — QRF pressure：位置相对不等于所有东西都相对
 
@@ -236,128 +243,149 @@ SPINE-impact candidate
 
 ---
 
-## 3. P2-PHYS-3 — generative precedence != temporal / causal order
 
-### 3.1 外部压力
+## 3. P2-PHYS-3 — generative precedence / history / One formation 与 causal order 的真实压力
 
-indefinite causal order / quantum switch 研究表明，量子过程可以不具有一个固定经典操作顺序。Rozema et al. (2024) 对该实验 programme 做了系统综述。
+### 3.1 外部压力必须限域
 
-这不意味着时间不存在、所有因果关系都不确定、SRT 被证实或 ontology 由 quantum switch 决定。
+indefinite causal order（ICO）/ quantum switch 文献研究的是操作 / process 的 causal order；在 process-matrix / quantum-switch 类形式中，某些 operations 不能被赋予一个固定经典顺序。Rozema et al. (2024) 的综述同时明确讨论实验实现、认证与解释问题。
 
-它只给出一个强约束：
-
-~~~text
-physical process structure
-need not always admit one fixed classical operation order
-~~~
-
-### 3.2 对 Spine 的检查
-
-当前 Generative Ontology Spine 已明确：
+因此本包只使用以下有限压力：
 
 ~~~text
-Selection reality map
-= typed structural map
-!= universal ontic ladder / stage sequence
+some quantum process descriptions
+need not admit one fixed classical operational causal order
 ~~~
 
-这一点与 ICO 压力相容，说明当前 Spine 比旧 Physics bridge 更稳。
+不推出：
 
-### 3.3 对 E04 的压力
+- 时间不存在；
+- 所有物理事件都没有先后；
+- SRT 的 history / One 已被 ICO 反驳；
+- quantum switch 给出了 ontology；
+- 当前实验已经无争议地证明一种唯一 metaphysical reading。
 
-E04 仍保留较强 selection-index time language，例如：
+### 3.2 对 Spine 的原判断需要反向修正
+
+上一版把 Spine 的 typed structural map 直接记为 OWNER-CONFIRMED ALIGNMENT，这个结论过强。
+
+Spine §1 的确说它不是“每个 Selection 都必须经过每个 branch/stage”的统一阶梯；但 Spine §4、§5、§6.2 又明确使用：
+
+~~~text
+prior Selection
+later Selection
+organization_t
+Selection_(t+1)
+later manifestation / selectability
+~~~
+
+因此 current Spine 仍然包含有方向的 before/after burden，尤其用于：
+
+- retained historical efficacy；
+- recurrent self-conditioning；
+- One formation；
+- formed-position anticipation。
+
+ICO 并不能直接否定这些负担，因为 operational causal order 与 ontological / historical order 不是同一个概念；但它确实暴露了一个尚未完成的 order-typing 问题：
+
+> **Spine 的 prior/later、t/t+1 到底表示哪一种顺序：coordinate time、clock order、causal precedence、state-index order，还是更抽象的 generative / constitutive dependence？**
+
+所以这里应记为 SPINE PRESSURE / OPEN，而不是 alignment pass。
+
+### 3.3 为什么这个压力仍与 Selection 有关
+
+E04 B-E04-4 只谈“不可逆 Selection 与 clock-reading transitions 的对齐”；quantum-switch 等典型 ICO 实验本身主要是相干过程，因此不能直接用它们去反驳 B-E04-4。
+
+连接点来自 2026-09-27 作者裁决：
+
+~~~text
+genuine actuality
++ deterministic / reversible dynamics
+-> may still be primitive Selection
+
+reversibility
+!= Selection exclusion criterion
+~~~
+
+因此，如果某些可逆 / coherent actuality 也可以属于 Selection，那么“Selection 的 generative status”原则上不能只靠 classical irreversible event ordering 来承载。这里的压力是：
+
+~~~text
+primitive Selection admission may extend beyond
+irreversibility-marked clock events
+
+therefore
+Selection order
+cannot be silently identified with
+irreversible clock-event order
+~~~
+
+### 3.4 对 E04 的限定性诊断
+
+E04 的问题不是 Page–Wootters / relational-time 本身，而是一些更强的 SRT-side identification：
 
 - selection events are clock-readings；
-- irreversible selection events align with clock-reading transitions；
-- Selection-index 与 manifest time 绑定较紧。
+- B-E04-4 把 irreversible Selection event 与 clock-reading transition 对齐；
+- selection-index reading 被写成可由 clock-event sequence 保存。
 
-这些句子容易把 generative relation 误读成 physical temporal ordering。
+这些可以继续作为 bridge hypothesis，但不能承担“所有 Selection 的 order structure”。
 
-Pass 2 建议未来明确保持：
-
-~~~text
-generative / constitutive precedence
-!= coordinate-time precedence
-!= clock order
-!= definite causal order of operations
-~~~
-
-因此：
+### 3.5 Disposition
 
 ~~~text
-Selection occurrence
-!= first temporal stage
+ICO / quantum-switch explanatory work
+= SOURCE-OWNED; interpretation-sensitive at the metaphysical level
 
-history burden
-!= universal second temporal stage
-
-One formation
-!= universally later microphysical event
-~~~
-
-Spine 当前已经朝这个方向走，主要 debt 在旧 bridge / pedagogical wording。
-
-### 3.4 Disposition
-
-~~~text
-ICO explanatory work
-= SOURCE-OWNED
-
-current Spine typed-map guard
-= OWNER-CONFIRMED ALIGNMENT
+current Spine
+= SPINE-IMPACT OPEN, not OWNER-CONFIRMED ALIGNMENT
 
 E04 selection-index / clock-reading identification
 = DOMAIN-LOCAL BRIDGE DEBT candidate
 
-future skeleton guard
-= generative precedence must not silently become temporal or causal precedence
+future skeleton question
+= what type of order is required by
+  history / recurrence / One formation,
+  and when is that order physical time or causal order?
 ~~~
 
----
 
-## 4. P2-PHYS-4 — record / learning / erasure / dissipation 必须拆开
+## 4. P2-PHYS-4 — information acquisition / record / learning / erasure / dissipation 必须拆开
 
-### 4.1 E03 caveat 正确，但正文重新合并了它们
+### 4.1 E03 的 scope caveat 从顶部就已经混入了 record stabilization
 
-E03 开头已经正确说：
+E03 开头一方面正确声明：
 
-- Landauer 约束 erasure / reset；
-- arbitrary measurement / Selection 并不自动受 Landauer bound；
+- Landauer 主要约束 erasure / reset；
+- arbitrary measurement / Selection 不自动受 Landauer bound；
 - Psi_f 只是 projection / proxy。
 
-但 B-E03-1 随后又写：
+但同一个 caveat 又把 stable-classical-record stabilization 与 erasure / reset 并列。B-E03-1 随后进一步把 latching a pointer state / committing an outcome to classical memory 一并写入 k_B T ln 2 per bit produced 的下界。
 
-> classical-record-stabilization step ... must dissipate at least k_B T ln 2 per bit of classical record produced.
+这一步并没有由 Landauer principle 自动给出。
 
-这把 record production / latching 再次滑回 erasure 的 Landauer 形式。
-
-Landauer 的标准负担是 logical erasure / many-to-one reset。Bennett 路线也把 measurement 与 later memory erasure 区分开。
-
-Zhao, Zhang & Preskill (2026) 进一步证明：学习可以提升为完全可逆过程，没有基础能量代价；知识会改变后续 erasure 的最优成本。
-
-因此至少应保持：
+更准确的拆分是：
 
 ~~~text
 information acquisition
-!= record formation
+!= measurement
+!= record formation / writing into available memory
 != learning
-!= logical erasure
+!= logical erasure / reset
 != thermodynamic dissipation
 ~~~
 
-这些过程可以在具体装置里耦合，但不能默认同一。
+在可逆实现中，measurement / information acquisition 本身可以原则上不要求正的最小 work cost；真正标准的 Landauer burden 落在 logical erasure / reset / many-to-one compression。若记录写入空白 memory 后永不重置，并不能仅凭“产生了一条记录”推出 k_B T ln 2 的最低耗散；闭合循环、复用 memory 时的 reset 才把账重新带回来。
 
-### 4.2 E03 的更强 bridge overreach
+Zhao–Zhang–Preskill (2026) 进一步给出一个现代量子信息例子：learning 可以被提升为 fully reversible，本身没有 fundamental energy cost，而学习所得知识会改变后续 erasure 的最优成本。
 
-B-E03-2 把 Jarzynski equality 直接写成 SRT selection-work identity。
+### 4.2 E03 的 Jarzynski / Crooks substitution 仍是高置信度 debt
 
-B-E03-3 又把 L0 -> L1 forward Selection 与 L1 -> L0 reconstruction 称为 exactly the Crooks asymmetry。
+B-E03-2 把 Jarzynski equality 直接写成 SRT selection-work identity；B-E03-3 又把 L0 -> L1 forward Selection 与 L1 -> L0 reconstruction 称为 exactly the Crooks asymmetry。
 
 但 E03 并没有从 SRT owner 中导出：
 
 - 严格定义的 W_select；
 - L2 stable subspace 的 thermodynamic free energy；
-- SRT forward/reverse path ensemble 与 Crooks protocol ensemble 的等价关系。
+- SRT forward/reverse path ensemble 与 Crooks protocol ensemble 的同一性。
 
 因此：
 
@@ -369,172 +397,176 @@ direct SRT variable substitution
 = NOT EARNED by inheritance alone
 ~~~
 
-同理，no free selection 作为统一物理原则也过宽。
+同理，no free selection 不能作为 universal physical principle 由这些等式直接推出。
 
-### 4.3 对 IRR-B 的意义
+### 4.3 对 IRR-B 的关系应直接回到 9-06 作者源
 
-这加强了 #1089 的 guard：
+2026-09-06 IRR-B 作者源已经明确列出未授权项：
 
 ~~~text
-IRR-B
-cannot be rescued simply by
-every Selection costs entropy / Landauer dissipation
+mandatory thermodynamic entropy increase for every Selection: NO
+Landauer cost as the universal residue: NO
 ~~~
 
-因为 measurement / learning / erasure / dissipation 的成本结构取决于具体任务与 memory architecture，而且 9-27 作者裁决已经禁止把 irreversibility 当作 primitive Selection admission rule。
+因此本轮无需借 Landauer 去“拯救” IRR-B，也不应把 E03 当作 T-PHYS-1 的 closure。
 
 ### 4.4 Disposition
 
 ~~~text
-E03 Landauer record-production wording
-= PHYSICS-LOCAL DEBT candidate
+E03 record-stabilization -> Landauer wording
+= PHYSICS-LOCAL DEBT, medium-high confidence
 
 E03 Jarzynski / Crooks SRT substitutions
-= UNDERIVED BRIDGE IDENTIFICATION
+= UNDERIVED BRIDGE IDENTIFICATION, high confidence
 
 IRR-B != Landauer / entropy rescue
-= strengthened guard
+= already author-guarded on 2026-09-06
 ~~~
 
----
 
-## 5. P2-PHYS-5 — history / memory does not monotonically create objectivity
+## 5. P2-PHYS-5 — Quantum Darwinism 只提供“可分离”的存在性压力，不直接映射 SRT history
 
-### 5.1 External pressure
+### 5.1 External result
 
-Quantum Darwinism 用环境中的冗余可访问记录解释 classical objectivity。
+Galve, Zambrini & Maniscalco (2016) 在一个具体 microscopic open-system model 中显示：environment 的 non-Markovian information backflow / memory effects 可以妨碍 Quantum Darwinism 所需的 redundancy 与 classical objective records。
 
-Galve, Zambrini & Maniscalco (2016) 在一个开放系统模型中显示，non-Markovian information backflow / memory effects 可以阻碍 Darwinian redundancy 和稳定 objective records。
+这支持一个 source-native 结论：
 
-因此：
+~~~text
+in that model:
+environmental memory / information backflow
+can reduce Darwinian redundancy / objectivity
+~~~
+
+### 5.2 不把 environment memory 直接等同 SRT retained history
+
+上一版从这个结果直接写：
 
 ~~~text
 more memory / history dependence
 != automatically more public objectivity
 ~~~
 
-Memory 可以稳定 trace，也可以让信息回流、耦合环境片段并降低独立冗余。
+方向上有启发，但类型映射过快。
 
-### 5.2 对 SRT 的 reciprocal constraint
+Quantum Darwinism 里的 non-Markovian memory 指的是 system-environment information backflow / dynamical memory；SRT 的 retained historical efficacy 指 prior Selection remaining materially effective in later Selection conditions。两者不是同一个变量，也没有在本包中建立一一对应。
 
-当前 Spine 已经区分：
+因此本轮只保留：
+
+> **一个成熟物理模型给出了 memory-like dynamical dependence 与 public redundancy 可以分离的存在性例子；它可以压力测试任何把 history / memory 单调等同 objectivity 的一般叙述，但不能直接证明 SRT history 如何作用。**
+
+### 5.3 对 SRT 的实际用途
+
+SRT 自身的 author-reentry problem field 已经把：
 
 ~~~text
-actual occurrence
-!= retained historical efficacy
-!= One
-!= stronger standing
+history / sedimentation
+order / convergence
+objectification / public representation
 ~~~
 
-未来还应继续保持：
+列成不同问题轴；Spine 也没有把 retained history 直接定义成 public objectivity。
+
+因此 Galve 2016 的最合适处置是：
 
 ~~~text
-retained history
-!= cross-position public objectivity
-!= independent redundancy
-!= stable multi-observer accessibility
-~~~
-
-这与 author-reentry problem field 把 history / sedimentation、order / convergence、objectification / public representation 分成不同问题轴是一致的。
-
-因此这不是新 ontology，而是 physics 给出的 reciprocal constraint：
-
-> 沉积可以帮助客观化，也可能在某些动力学中破坏独立冗余与公开可访问性。
-
-### 5.3 Disposition
-
-~~~text
-Quantum Darwinism objectivity mechanism
+Quantum Darwinism mechanism
 = SOURCE-OWNED
 
-memory -> objectivity monotonic inference
-= BLOCK
+Galve 2016
+= model-specific separation / pressure example
 
-future canonical relevance
-= preserve history / convergence / objectification as separate burdens
+direct "physics reciprocal constraint on SRT history"
+= NOT EARNED
+
+useful guard
+= do not collapse history / convergence / objectification into one monotonic variable
 ~~~
 
----
 
-## 6. 本轮最重要的新压缩：representation-invariant core 问题
+## 6. 本轮最重要的新压缩：representation-invariant / covariant core（working label）
+
+> **Term guard**：representation-invariant / covariant core 只是本轮的 working label，用来指一个待处理 burden；它不是新的 SRT term-of-art，不进入 Glossary，也不在此文件中获得 owner / definition。
 
 前五节可以压缩成一个比 #1089 更上游的问题：
 
 ~~~text
 当我们改变
-- trajectory unravelling
+- trajectory unravelling / monitoring scheme
 - quantum reference frame
 - clock / temporal reference
 - causal-order representation
 - thermodynamic bookkeeping / information partition
 
-SRT 所称一次真实 Selection 中，
-什么必须保持不变？
+SRT 所称一次真实 Selection / actuality 中，
+什么必须保持不变，
+或者必须通过什么 lawful covariance / transport relation 保持关联？
 ~~~
 
-这不是一个新的 SRT term，也不在本包中给出答案。
-
-这里只记录 future question：
-
-~~~text
-representation-invariant / covariant core
-of Selection / actuality
-= OPEN
-~~~
-
-至少不应未经论证就把以下任一项当作 primitive core 本身：
+目前至少不能未经论证就把以下任一项当作 primitive core：
 
 - specific Hilbert-space factorization；
 - superposition vs non-superposition label；
-- one chosen quantum-trajectory unravelling；
+- one chosen standard-QM quantum-trajectory unravelling；
 - one clock coordinate；
-- one classical causal ordering；
+- one classical operational causal order；
 - Landauer dissipation magnitude；
 - one observer's raw outcome vocabulary。
 
-这些量中的一些会随成熟物理 formalism 中合法的 representation / frame / monitoring context 改变。
-
-但这也不意味着 primitive Selection 必须是完全 frame-independent object。另一种开放方向是：
+开放方向至少有两种：
 
 ~~~text
-Selection is intrinsically indexed,
-while lawful transformation / covariance relations
-connect indexed manifestations
+A. there is some representation-invariant burden
+
+B. Selection / actuality is intrinsically indexed,
+   while lawful transformation / covariance relations
+   connect indexed manifestations
 ~~~
 
-本包不裁决两种方向。
+本包不裁决 A / B，也不假设二者互斥。
 
----
 
 ## 7. 对未来 Spine / canonical update 的分类
 
-### A. HIGH-CONFIDENCE PHYSICS-LOCAL DEBT
+### A. Physics-local debt — 分级而不是打包高置信度
 
-1. E01：同一 reduced dynamics 下 unique physically-actualized jump-set 口径过强；
-2. E03：Landauer 从 erasure 滑向每个 classical record produced 的口径过强；
-3. E03：Jarzynski / Crooks 被直接替换成 SRT W_select / Delta F_L2 / L0↔L1 asymmetry，未完成 bridge derivation；
-4. E04：selection-event = clock-reading / irreversible Selection 对齐 clock transition 的口径过强。
-
-这些适合未来 B-class bridge tightening；本包不执行。
+| Debt | Confidence | Why |
+|---|---|---|
+| E03 Jarzynski / Crooks direct SRT substitution | **HIGH** | source equations do not by themselves derive W_select, Delta F_L2, or L0/L1 path-ensemble identity |
+| E03 Landauer record-production / stabilization wording | **MEDIUM-HIGH** | erasure/reset burden is standard; record writing / latching does not automatically inherit the same lower bound |
+| E01 / F-E01-γ unravelling uniqueness | **MEDIUM-HIGH after retyping** | problem is apparatus/dilation/monitoring/unravelling conflation, not simply dilation non-uniqueness |
+| E04 selection-index / clock-reading alignment | **MEDIUM** | pressure depends on distinguishing primitive reversible Selection from the irreversible-event subset targeted by B-E04-4 |
 
 ### B. SPINE-IMPACT CANDIDATES
 
-1. Event individuation：representation choice 与 physically instantiated record-context 必须区分；
-2. Position transport：position-relative actuality 若保留，需要 transformation / transport + invariant burden；
-3. Order typing：generative precedence != temporal precedence != causal order；
-4. History separation：retained history != convergence / public objectivity。
+1. Event individuation：representation choice 与 physically instantiated monitoring / record-context 如何区分；
+2. Position transport：position-relative actuality 若保留，需要什么 transformation / transport + invariant burden；
+3. Order typing：Spine 的 prior/later 与 t/t+1 究竟是哪种 order；
+4. History / convergence / objectification separation：保持三个 burden 不自动合并。
 
-这些是未来 Spine optimization 的输入，不是现在的 canonical 修改授权。
+### C. E05 debt propagation map
 
-### C. SOURCE-OWNED / NO LOCAL COMPARATIVE INCREMENT
+#1089 已单独指出 F-E03-γ 的 canonical-d proxy 问题。本轮再记录 bridge debt 如何传播到 E05：
 
-- quantum trajectory formalism；
+| E01–E04 debt | E05 inherited window | Propagation |
+|---|---|---|
+| E01 apparatus/dilation/unravelling conflation | **F-E01-γ** | apparatus fixed -> unique physical unravelling 的 falsification premise 需先重写，否则可能平凡或设定不清 |
+| E03 underived SRT residual / information split | **F-E03-α** | SRT residual 在实验前缺少独立 derivation，不能把 base-theory saturation 自动算作 SRT falsification |
+| E03 Landauer record-stabilization overreach | **F-E03-β** | residual / non-saturation claim 需限定到真实 reset/erasure task，而非 bare record writing |
+| E03 d / dissipation and record-cost assumptions | **F-E03-γ** | 除 #1089 的 canonical-d proxy debt 外，还继承 Landauer/record scope debt |
+| E04 irreversible-selection / clock-reading alignment | **F-E04-γ** | window 只能测试那个 bounded bridge hypothesis，不能代表 primitive Selection 的 universal order |
+
+F-E04-α / β 主要测试 relational-clock / interacting-clock source theory，当前发现不要求一并撤销，但其 SRT-specific positive direction 仍应与 source-owned prediction 分开。
+
+### D. SOURCE-OWNED / NO LOCAL COMPARATIVE INCREMENT
+
+- quantum trajectory / monitored-unravelling formalism；
 - QRF covariance；
-- indefinite causal order；
+- indefinite causal-order / quantum-switch formalism；
 - Landauer / Jarzynski / Crooks / information thermodynamics；
-- Quantum Darwinism objectivity mechanism。
+- Quantum Darwinism redundancy mechanism。
 
-### D. PARKED
+### E. PARKED
 
 继续保持停放：
 
@@ -545,32 +577,32 @@ connect indexed manifestations
 - Born-rule intentional bias；
 - physics proves Selection primitive。
 
----
 
 ## 8. 本轮不要求作者立即裁决
 
 本轮暂不要求作者形成新理论答案。
 
-后续真正进入 canonical / bridge tightening 前，再决定：
+未来进入 Spine / bridge tightening 前，至少有三项待处理输入：
 
-1. 是否把 representation-invariant / covariant burden 纳入未来 Spine optimization 的 OPEN map；
-2. 是否授权一次 Physics B-class cleanup，对 E01–E04 中上述过强句式做系统收紧。
+1. 是否把 position-relative actuality 的 transformation / covariance burden 纳入未来 Spine OPEN map；
+2. 是否授权一次 Physics B-class cleanup，对 E01–E05 中上述过强句式与窗口做系统收紧；
+3. **Spine 的 history / recurrent One formation 是否预设了确定的时间先后？** 如果不是，prior / later / t -> t+1 应由哪一种 order 类型承载？
 
-当前只保留压力地图。
+第 3 项目前只登记为 future Spine question，不在本 PR 内裁决。
 
----
 
-## 9. External sources verified for this pass
+## 9. External source status for this pass
 
-- Giacomini, F., Castro-Ruiz, E., Brukner, Č. (2019). Quantum mechanics and the covariance of physical laws in quantum reference frames. Nature Communications 10, 494. DOI: 10.1038/s41467-018-08155-0.
-- Donvil, B., Muratore-Ginanneschi, P. (2022). Quantum trajectory framework for general time-local master equations. Nature Communications 13, 4140. DOI: 10.1038/s41467-022-31533-8.
-- Van Regemortel, M. et al. (2022). Monitoring-induced entanglement entropy and sampling complexity. Physical Review Research 4, L032021. DOI: 10.1103/PhysRevResearch.4.L032021.
-- Rozema, L. A. et al. (2024). Experimental aspects of indefinite causal order in quantum mechanics. Nature Reviews Physics 6, 483–499. DOI: 10.1038/s42254-024-00739-8.
-- Zhao, H., Zhang, Y., Preskill, J. (2026). Learning to erase quantum states: thermodynamic implications of quantum learning theory. npj Quantum Information 12, 137. DOI: 10.1038/s41534-026-01273-4.
-- Galve, F., Zambrini, R., Maniscalco, S. (2016). Non-Markovianity hinders Quantum Darwinism. Scientific Reports 6, 19607. DOI: 10.1038/srep19607.
-- Landauer / Bennett / Sagawa-Ueda / Jarzynski / Crooks remain E03's source-native anchors; this pass does not re-derive their standard results.
+> 这里的 checked 分两层：bibliographic identity / publication metadata 与 claim-level use。前者已核；后者只按本包实际使用的 bounded claim 核对，不把整篇文献当作 SRT 支持。
 
----
+- **Giacomini, Castro-Ruiz & Brukner (2019)** — QRF covariance / frame-relative description source；既有 E02 primary anchor。
+- **Brun (2002), A simple model of quantum trajectories** — checked for the bounded point that different monitoring schemes can correspond to different unravelings of the same master-equation evolution. DOI: 10.1119/1.1475328.
+- **Donvil & Muratore-Ginanneschi (2022)** — checked for general time-local master-equation trajectory framework. Nature Communications 13, 4140. DOI: 10.1038/s41467-022-31533-8.
+- **Van Regemortel et al. (2022)** — retained as a monitoring-induced trajectory / entanglement example；not used alone to establish the general uniqueness claim.
+- **Rozema et al. (2024)** — checked for the bounded process-level ICO claim and for the fact that interpretation / experimental-certification questions remain part of the field. Nature Reviews Physics 6, 483–499. DOI: 10.1038/s42254-024-00739-8.
+- **Zhao, Zhang & Preskill (2026)** — publication metadata independently verified: npj Quantum Information 12, Article 137；DOI: 10.1038/s41534-026-01273-4. Used only for the bounded result that learning can be made fully reversible with no fundamental energy cost itself and that knowledge changes erasure cost.
+- **Galve, Zambrini & Maniscalco (2016)** — checked as a model-specific result: non-Markovian information backflow / memory effects hinder Quantum-Darwinist redundancy in their microscopic model. DOI: 10.1038/srep19607.
+- **Landauer / Bennett / Sagawa-Ueda / Jarzynski / Crooks** remain E03's source-native anchors. This pass uses them to police scope, not to derive SRT variables.
 
 ## 10. Stop condition
 
