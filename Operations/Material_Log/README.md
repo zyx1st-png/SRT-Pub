@@ -32,7 +32,7 @@ canonical: false
 | [2026-08_Part04.md](2026-08_Part04.md) | 8 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 + Yashiro NEURAL32 through 2026-08-12 |
 | [2026-08_Part05.md](2026-08_Part05.md) | 5 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 + Deleuze Logic of Sense audit on 2026-08-15 |
 | [2026-08_Part06.md](2026-08_Part06.md) | 8 | August continuation; seven bounded A-class entries through Nave processual-bearer/FEP pressure plus Wyld/SAT B1 translation-only record on 2026-08-24 |
-| [2026-09_Part01.md](2026-09_Part01.md) | 9 | September continuation; prior eight entries plus HKB bimanual coordination / perturbation-relaxation B1 candidate bundle for non-RNN GRG-R1c routing |
+| [2026-09_Part01.md](2026-09_Part01.md) | 10 | September continuation; prior eight entries plus HKB bimanual coordination / perturbation-relaxation B1 candidate bundle for non-RNN GRG-R1c routing |
 
 ## Current note
 
