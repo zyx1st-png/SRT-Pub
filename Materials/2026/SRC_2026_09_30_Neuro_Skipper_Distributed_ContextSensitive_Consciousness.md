@@ -373,6 +373,15 @@ EXPERIMENT AUTHORIZATION
 PRIMARY ROUTE
 = existing neutral cognition E2 -> E3 -> E4 programme
 
+MATERIAL LOG
+= Operations/Material_Log/2026-09_Part01.md
+  + Operations/_SRT_MATERIAL_LOG.md
+
+REVIVAL TRIGGER
+= full methods/results become available for close read;
+  OR a peer-reviewed version materially changes the analysis;
+  OR the neutral E2-E4 programme explicitly opens a neural coalition / hypergraph extension
+
 CANDIDATE METHOD BRIDGE
 = shared network repertoire
   + context-dependent higher-order coalition
