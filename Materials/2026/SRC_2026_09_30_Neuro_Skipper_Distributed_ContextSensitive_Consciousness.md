@@ -50,7 +50,7 @@ id: SRC-2026-09-30-NEURO-SKIPPER-DISTRIBUTED-CONTEXT-SENSITIVE-CONSCIOUSNESS
 
 ## 1. One-line summary
 
-Skipper et al. aggregate 579 consciousness-focused neuroimaging studies and report little evidence for an invariant cross-domain anatomical core; instead, corrected meta-analytic maps are broadly distributed, functional contributions vary by context, and coactivation / hypergraph analyses point to a shared network repertoire with context-dependent higher-order coalitions. For SRT, the strongest use is methodological rather than confirmatory: treat variable neural coalitions as candidate realizations of a more abstract organization, and test whether coalition geometry participates in predictive, causal and recursive recutting rather than equating any region, network or coalition with consciousness.
+Skipper et al. aggregate 579 consciousness-focused neuroimaging studies and report little evidence for an invariant cross-domain anatomical core; instead, corrected meta-analytic maps are broadly distributed, functional contributions vary by context, and coactivation / hypergraph analyses point to a shared network repertoire with context-dependent higher-order coalitions. For SRT, the primary use in this pass is methodological rather than confirmatory: treat variable neural coalitions as candidate realizations of a more abstract organization, and test whether coalition geometry participates in predictive, causal and recursive recutting rather than equating any region, network or coalition with consciousness.
 
 ## 2. Bibliographic anchor
 
@@ -136,7 +136,7 @@ frequent / multi-domain recruitment
 
 This inference is consistent with the verified abstract's explicit "limited overlap and no invariant cross-domain core" claim, but the figure-specific numbers above must not be cited as independently reverified until the primary figure is retrieved.
 
-## 5. Strongest conceptual contribution
+## 5. Main conceptual contribution in this pass
 
 The most useful compression from the source is:
 
@@ -191,10 +191,10 @@ The source makes higher-order relational analyses empirically relevant; it does 
 
 The shared-repertoire / context-dependent-coalition result supplies a useful neural-analysis vocabulary for the existing cognition programme.
 
-Local analysis notation may be introduced only in downstream noncanonical work, e.g.:
+Local analysis notation may be introduced only in downstream noncanonical work, using the collision-checked local label registered in `Glossary/SRT_Live_Term_Router.md`, e.g.:
 
 ```text
-H_c = (V, E_c, W_c)
+Coal_c = (V, E_c, W_c)
 
 V   = available network repertoire
 E_c = context-indexed higher-order coalitions / hyperedges
