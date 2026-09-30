@@ -9,12 +9,12 @@ date_published: "2026-09-09"
 date_added: "2026-09-30"
 url: "https://www.biorxiv.org/content/10.64898/2026.09.02.745341v1"
 doi: "10.64898/2026.09.02.745341"
-evidence_level: primary_preprint_meta_analysis_abstract_and_public_metadata_verified
-reliability_level: medium_high_for_reported_meta_analytic_results; lower_for_theoretical_interpretation; not_peer_reviewed
-content_access: "Public metadata and abstract verified; user-supplied Figure 1 inspected during close discussion; full methods/results were not independently close-read in this pass"
-srt_relevance: high
-integration_priority: high
-pipeline_decision: "B2_for_neural_method_constraint_and_E2_E4_bridge; C_for_direct_SRT_or_HPB_support"
+evidence_level: primary_preprint_meta_analysis_abstract_only_and_public_metadata_verified
+reliability_level: medium_for_abstract_reported_results_pending_full_method_close_read; not_peer_reviewed
+content_access: "Public metadata and abstract verified; user-supplied Figure 1 was inspected as conversation evidence; full methods/results were not independently close-read in this pass"
+srt_relevance: medium_high
+integration_priority: medium_until_full_method_close_read
+pipeline_decision: "B1_for_full_method_close_read_and_neural_method_candidate; B2_for_direct_SRT_HPB_guardrail"
 related_srt_claims:
   - distributed_neural_realization
   - pre_object_generative_orientation
@@ -69,6 +69,8 @@ A distributed, decentred and context-sensitive neurobiology of consciousness
 bioRxiv
 posted 2026-09-09
 DOI: 10.64898/2026.09.02.745341
+
+Note: the DOI stem contains `2026.09.02`, but the bioRxiv archive / public activity record gives the posted date as 2026-09-09. The identifier stem is not treated here as the publication date.
 ```
 
 Status at this pass:
@@ -86,7 +88,7 @@ user-supplied Figure 1 inspected = YES
 The following are claims reported by the authors and should remain source-owned.
 
 1. The analysis includes **579 consciousness-focused neuroimaging studies**.
-2. Semantic clustering of titles and abstracts identified **seven domains**.
+2. Semantic clustering of titles and abstracts identified **seven domains**. The verified abstract / public metadata available in this pass did not expose the seven domain labels, so their names are **not transcribed or inferred here**.
 3. Corrected meta-analytic maps showed **limited overlap** and no invariant cross-domain core.
 4. The resulting maps occupied **18.0% of grey matter** while extending across **91.0% of brain regions**.
 5. After controlling for reporting topography, distributed **cognitive**, **sensorimotor**, and **organismic-affective** maps reconstructed the residual consciousness landscape better than spatial surrogates.
@@ -96,30 +98,43 @@ The following are claims reported by the authors and should remain source-owned.
 9. Coactivation-network and hypergraph analyses revealed a **shared network repertoire** but **context-dependent higher-order coalitions**.
 10. The authors interpret the package as evidence against an invariant neural core and in favor of a distributed, context-sensitive neurobiology of consciousness.
 
-## 4. What Figure 1 adds to the abstract-level reading
+## 4. User-supplied Figure 1 observation — conversation provenance only
 
-The user-supplied Figure 1 visually sharpened the cross-domain-overlap point.
+The figure image supplied in the reading conversation is **not stored in this PR** and was not independently fetched from the primary full text in this pass. It therefore remains conversation-level provenance, not a separately repository-verifiable source claim.
 
-The safe interpretation is:
-
-```text
-frequently recruited region
-!= invariant cross-domain core
-```
-
-High-frequency loci can remain important without satisfying the stronger claim that the same anatomical substrate is required across all consciousness domains.
-
-This distinction is important for repository use because it blocks both of the following overreads:
+Visible values in the supplied image were:
 
 ```text
-no invariant voxel core
--> consciousness is "everywhere"            [NOT LICENSED]
+voxels represented in exactly / cumulatively increasing domain counts:
+1 domain  = 18,055
+2 domains = 5,281
+3 domains = 1,608
+4 domains = 658
+5 domains = 267
+6 domains = 112
+7 domains = 19
 
-no invariant voxel core
--> no invariant organization is possible    [NOT LICENSED]
+panel labels also showed:
+4+ domains = 956 voxels
+5+ domains = 398 voxels
+6+ domains = 131 voxels
+7/7 domains = 19 voxels
+
+visible anatomical labels included:
+Insula
+Thalamus
+Anterior cingulate
+Superior frontal
 ```
 
-The source directly pressures fixed-location interpretations; it does not by itself exclude a recurrent dynamical, relational or organizational invariant realized by different neural coalitions.
+The only repository-safe inference retained from that observation is:
+
+```text
+frequent / multi-domain recruitment
+!= invariant cross-domain anatomical core
+```
+
+This inference is consistent with the verified abstract's explicit "limited overlap and no invariant cross-domain core" claim, but the figure-specific numbers above must not be cited as independently reverified until the primary figure is retrieved.
 
 ## 5. Strongest conceptual contribution
 
@@ -338,7 +353,7 @@ This does not authorize an experiment or preregistration.
 
 ```text
 SOURCE VALUE
-= HIGH for neural method / architecture constraint
+= MEDIUM-HIGH as a neural method / architecture candidate pending full-method close read
 
 DIRECT SRT SUPPORT
 = NO
@@ -358,7 +373,7 @@ EXPERIMENT AUTHORIZATION
 PRIMARY ROUTE
 = existing neutral cognition E2 -> E3 -> E4 programme
 
-STRONGEST NEW METHOD BRIDGE
+CANDIDATE METHOD BRIDGE
 = shared network repertoire
   + context-dependent higher-order coalition
   -> candidate neural readout for recursive recutting tests
@@ -366,6 +381,6 @@ STRONGEST NEW METHOD BRIDGE
 
 ## 14. External verification note
 
-Metadata and abstract were checked on 2026-09-30 against the bioRxiv archive / public abstract mirror for DOI `10.64898/2026.09.02.745341`.
+Metadata and abstract were checked on 2026-09-30 against the bioRxiv archive / public abstract mirror for DOI `10.64898/2026.09.02.745341`. The posted date was independently visible as 2026-09-09; the DOI stem date `2026.09.02` is recorded only as part of the identifier.
 
 No stronger claim in this SourceCard should be hardened from the current pass without a full-method close read or direct primary-source inspection of the relevant analysis section.
