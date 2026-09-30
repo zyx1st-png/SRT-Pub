@@ -475,7 +475,7 @@ The live empirical burden is held-out transfer + causal intervention + recursion
 
 ## 8. Organismic-affective prominence — route carefully
 
-Skipper et al. report organismic-affective maps as the strongest overall functional contributor, with domain-varying weights.
+Skipper et al. report that organismic-affective maps contributed most overall, with domain-varying weights.
 
 This is highly relevant to:
 - Damasio / interoception work;
@@ -526,7 +526,7 @@ Reason:
 
 - HP-B is frozen / read-only;
 - current cognition programme does not require consciousness admission;
-- a failure of neutral shared / causal / recursive geometry would remove the need for stronger Bearer interpretation;
+- a failure of neutral shared / causal / recursive geometry would remove the need for a later Bearer interpretation;
 - passive music is explicitly not the first Bearer-admission burden.
 
 Therefore no Bearer variable is added to the current first-line experiment design.
@@ -662,7 +662,7 @@ This is a methodological sharpening only.
 "coalition changes = Position reconstitution" = NO
 ```
 
-Position-reconstitution remains a stronger HP-B hypothesis with its own standing conditions and discriminators.
+Position-reconstitution remains a separate HP-B hypothesis with its own standing conditions and discriminators.
 
 ---
 
@@ -699,7 +699,7 @@ PREREGISTRATION
 
 ## 15. Final compression
 
-The source's strongest result can be written:
+The source result central to this routing can be written:
 
 ```text
 context
