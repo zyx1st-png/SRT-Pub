@@ -15,6 +15,7 @@ named_comparator: "GNW; IIT; active inference / predictive processing; latent-st
 n_mode_triggered: false
 dependency:
   - Materials/2026/SRC_2026_09_30_Neuro_Skipper_Distributed_ContextSensitive_Consciousness.md
+  - Glossary/SRT_Live_Term_Router.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Proposals/SRT_L0_FACING_E2_E4_MULTIPROBE_RECUTTING_DESIGN_2026-09-26.md
   - Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md
