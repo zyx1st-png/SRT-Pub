@@ -162,7 +162,7 @@ how are they combined,
 and how does that combination vary with context?
 ```
 
-That shift is useful to SRT even if every stronger SRT claim later fails.
+That shift is useful to SRT even if every higher-commitment SRT claim later fails.
 
 ## 6. Redundancy / synergy guard
 
@@ -314,9 +314,9 @@ Test whether the first reorganization becomes history and changes the structure 
 Candidate neural extension:
 
 ```text
-H_t
--> H_(t+1)
--> altered transition structure for later H
+Coal_t
+-> Coal_(t+1)
+-> altered transition structure for later Coal
 ```
 
 The key burden is not that neural state changes, but that prior reorganization changes the geometry / reachability of subsequent coalition formation.
@@ -392,4 +392,4 @@ CANDIDATE METHOD BRIDGE
 
 Metadata and abstract were checked on 2026-09-30 against the bioRxiv archive / public abstract mirror for DOI `10.64898/2026.09.02.745341`. The posted date was independently visible as 2026-09-09; the DOI stem date `2026.09.02` is recorded only as part of the identifier.
 
-No stronger claim in this SourceCard should be hardened from the current pass without a full-method close read or direct primary-source inspection of the relevant analysis section.
+No higher-commitment claim in this SourceCard should be hardened from the current pass without a full-method close read or direct primary-source inspection of the relevant analysis section.
