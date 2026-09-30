@@ -36,7 +36,7 @@ tags: [Consciousness, DistributedNetworks, Hypergraph, Coalition, E2, E3, E4, Re
 
 ## 0. Executive result
 
-The strongest source-owned result is not merely "consciousness is distributed."
+The central source-owned result is not merely "consciousness is distributed."
 
 It is the combination:
 
@@ -76,7 +76,7 @@ EXPERIMENT / PREREGISTRATION = NO
 
 ## 1. Why this source belongs under the existing E2-E4 route
 
-The existing cognition programme already owns the stronger question:
+The existing cognition programme already owns the downstream prospective question:
 
 > Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after consequences feed back?
 
@@ -103,10 +103,10 @@ Therefore no new research lane is needed.
 
 ## 2. Local neural notation — noncanonical
 
-For analysis only:
+For analysis only, use collision-checked local labels:
 
 ```text
-H_t = (V, E_t, W_t)
+Coal_t = (V, E_t, W_t)
 ```
 
 where:
@@ -115,27 +115,44 @@ where:
 - `E_t` = higher-order coalitions / hyperedges at time or condition t;
 - `W_t` = coalition weights / strengths.
 
-A transition-level object can be represented locally as:
+For a future transition analysis, define a **coalition-transition kernel** only as a conditional model:
 
 ```text
-K_t = P(H_(t+1) | H_t, c_t, h_t)
+CTK_t(h)
+= P(Coal_(t+1) | Coal_t, c_t, h)
 ```
 
 where:
 - `c_t` = current context / consequence condition;
-- `h_t` = retained history.
+- `h` = prior-history descriptor used for the contrast.
+
+Crucially, **history sensitivity is not satisfied by writing `h` into the conditioning set**. The prospective test is:
+
+```text
+hold / match current (Coal_t, c_t) as closely as the design permits;
+
+compare two predeclared prior histories h_A and h_B;
+
+ask whether:
+P(Coal_(t+1) | Coal_t, c_t, h_A)
+differs out-of-sample from
+P(Coal_(t+1) | Coal_t, c_t, h_B).
+```
+
+The difference must be estimated on held-out trials / participants / perturbations rather than inferred from a post-hoc descriptive fit.
 
 Guards:
 
 ```text
-H_t != consciousness
-H_t != whole-field by definition
-H_t != foreground_phen
-H_t != Bearer
-K_t != canonical SRT reachability
+Coal_t != consciousness
+Coal_t != whole-field by definition
+Coal_t != foreground_phen
+Coal_t != Bearer
+CTK_t != canonical SRT reachability
+history-conditioned CTK notation != evidence of history-dependent recutting
 ```
 
-The notation only provides a candidate measurement language.
+These labels are local measurement placeholders, not canonical objects. Their collision / owner routing is registered in `Glossary/SRT_Live_Term_Router.md`.
 
 ---
 
@@ -160,7 +177,7 @@ A future neural extension could ask whether coalition geometry inferred from som
 Schematic:
 
 ```text
-fit H-geometry on:
+fit coalition geometry on:
   probe family A
   + probe family B
 
@@ -218,7 +235,7 @@ A neural E3 candidate therefore has the shape:
 
 ```text
 consequence intervention
--> Delta H
+-> Delta Coal
 -> coordinated held-out probe change
 ```
 
@@ -243,7 +260,7 @@ Do not infer causality merely because two contexts have different coalitions.
 
 ## 5. E4 mapping — recursive coalition reconstitution
 
-This is the strongest bridge opened by the source.
+This is the most direct E4-facing candidate bridge opened by the source.
 
 ### 5.1 Existing E4 burden
 
@@ -265,82 +282,114 @@ The critical issue is history writeback.
 A weak result is:
 
 ```text
-H_t != H_(t+1)
+Coal_t != Coal_(t+1)
 ```
 
-Ordinary neural dynamics already guarantee state change.
+Ordinary neural dynamics already permit state change.
 
-The stronger candidate is:
+The E4-facing question is different:
+
+> under a matched current coalition/context, does a predeclared difference in prior consequence history change the held-out distribution of the next coalition and the system's response to a later perturbation?
+
+Schematic:
 
 ```text
-H_t
--> changes K_(t+1)
+match current:
+  (Coal_t, c_t)
+
+contrast history:
+  h_A vs h_B
+
+test on held-out data:
+  CTK_t(h_A) vs CTK_t(h_B)
 ```
 
-where `K` describes the transition structure over later coalitions.
+A positive history contrast is **not yet** an SRT increment, because a sufficiently rich latent-state / generative model can encode history.
 
-Informally:
+Therefore the future falsifiable burden includes a fair existing H2 comparator:
 
-> the first reorganization must change how the next reorganization is possible.
+```text
+M_H2
+= strong latent-state / generative / representation model
+  with architecture / capacity / tuning budget fixed before the held-out test;
+
+M_H2+Coal
+= the same comparator plus coalition-transition features.
+```
+
+Count a coalition-transition increment only if, on predeclared held-out second-perturbation / multi-probe outcomes:
+
+```text
+M_H2+Coal
+predicts better than M_H2
+after the same complexity / validation discipline,
+and the gain transfers beyond the training context.
+```
+
+If `M_H2` absorbs the full effect, the coalition-transition description remains a visualization / translation layer with **no local comparative increment**.
 
 Thus:
 
 ```text
 state change
-!= recursive recutting
+!= history-sensitive transition contrast
+!= recursive recutting by definition
 ```
 
 Candidate E4 neural burden:
 
 ```text
-same-sized later perturbation
+same / matched current coalition and context
 +
 different prior consequence history
--> predictably different coalition-transition geometry
++
+same later perturbation family
+-> held-out difference in coalition-transition distribution
 -> coordinated later probe differences
+-> incremental gain beyond a fixed-capacity strong H2 baseline
 ```
 
 This is the closest safe use of the source for the current generative-orientation programme.
 
 ---
 
-## 6. Why coalition-transition geometry is stronger than activation
+## 6. Coalition-transition geometry addresses a different question from activation
 
 Three nested targets should remain distinct:
 
-### N1 — activation / participation
+### CTG-1 — activation / participation
 
 ```text
 which regions / systems participate?
 ```
 
-### N2 — coalition structure
+### CTG-2 — coalition structure
 
 ```text
 which systems participate together as higher-order organizations?
 ```
 
-### N3 — transition geometry
+### CTG-3 — transition geometry
 
 ```text
 how does prior organization change which later coalitions are reachable / likely / stable?
 ```
 
-Skipper et al. directly motivate N2.
+Skipper et al. directly motivate CTG-2.
 
-The current E4 programme is interested in N3.
+The current E4 programme is interested in CTG-3.
 
 Therefore:
 
 ```text
 source result
--> N2 method pressure
+-> CTG-2 method pressure
 
 SRT/cognition target
--> prospective N3 test
+-> prospective CTG-3 test
 ```
 
-No N3 result is supplied by the source itself.
+No CTG-3 result is supplied by the source itself.
 
 ---
 
@@ -419,7 +468,7 @@ coalition geometry changes with learning
 != SRT increment
 ```
 
-The live empirical burden is held-out transfer + causal intervention + recursion beyond a fair H2 baseline.
+The live empirical burden is held-out transfer + causal intervention + recursion tested against a fair H2 baseline; no superiority result is asserted in this audit.
 
 ---
 
@@ -455,11 +504,13 @@ That is a future Bearer-facing extension, not part of the neutral E2-E4 first te
 
 ---
 
-## 9. Bearer timing correction
+## 9. Machine-side sequencing proposal — not an author adjudication
 
-During discussion, a possible "same-Bearer coalition reconstitution" test emerged.
+During the guided-reading discussion, the assistant proposed a possible "same-Bearer coalition reconstitution" test. The user did **not** make an explicit author-level choice about that sequencing, so this audit must not record it as an author adjudication or ChoiceTrace result.
 
-That idea is retained only as a **later extension**.
+The only controlling reason to place Bearer later is the already-merged repository route: neutral cognition E2-E4 remains CURRENT NEXT and HP-B remains frozen / read-only.
+
+Accordingly, the same-Bearer idea is retained only as a **machine-analysis later extension**.
 
 Current routing:
 
@@ -523,39 +574,39 @@ preregistration = NO
 
 Downgrade the coalition / whole-field interpretation if any of the following occurs.
 
-### F1 — no common structure
+### EXIT-1 — no common structure
 
 Different probes recruit different networks but no shared coalition geometry predicts across them.
 
-### F2 — no transfer
+### EXIT-2 — no transfer
 
 Coalition geometry classifies trained conditions but does not predict held-out probes or novel conditions.
 
-### F3 — H2 absorbs
+### EXIT-3 — H2 absorbs
 
 A strong latent-state / generative / representation-learning model explains the full pattern, including context change and recursion, without any additional coalition-level explanatory gain.
 
-### F4 — no intervention sensitivity
+### EXIT-4 — no intervention sensitivity
 
 Consequence / context revaluation changes reports or local activation but not the shared coalition geometry.
 
-### F5 — no mediation
+### EXIT-5 — no mediation
 
 Coalition change occurs but does not mediate held-out behavior / grouping / boundary / transition effects.
 
-### F6 — no recursive re-entry
+### EXIT-6 — no recursive re-entry
 
 The first coalition reorganization does not predict how the system responds to a later perturbation.
 
-### F7 — confound absorption
+### EXIT-7 — confound absorption
 
 Attention, arousal, task demand, explicit strategy, motor output or reporting structure explains the apparent coalition effect.
 
-### F8 — only one probe family
+### EXIT-8 — only one probe family
 
 A coalition result is confined to one task / one output and does not support a shared-geometry interpretation.
 
-### F9 — static-only source success
+### EXIT-9 — static-only source success
 
 The source's shared-repertoire / context-dependent-coalition finding remains valid, but no prospective transition-geometry result follows.
 
@@ -655,7 +706,7 @@ context
 within a shared distributed repertoire
 ```
 
-The repository's stronger prospective question is:
+The repository's downstream prospective question is:
 
 ```text
 history + consequence
