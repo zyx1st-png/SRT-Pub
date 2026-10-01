@@ -7,8 +7,8 @@ layer: meta
 epistemic_layer: os
 claim_mode: governance
 canonical: false
-dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
-updated: 2026-09-23
+dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE, SRT-MAIN-WRITE-GOVERNANCE]
+updated: 2026-09-24
 ---
 
 # SRT Edit Protocol
@@ -16,6 +16,8 @@ updated: 2026-09-23
 > 2026-06-05 scope note: this is an editing workflow. It protects authority boundaries but does not create theory definitions or current book-status facts.
 
 本文件定义 SRT 仓库的三类编辑与最小交叉检查规则。
+
+> **Two-axis guard (2026-09-24):** 本文件的 A/B/C 是**编辑风险 / 语义风险**分类；`SRT_MAIN_WRITE_GOVERNANCE.md` 的 M0/M1/M2 是**授权 / 裁决模式**分类。两者正交，不得互相替代。一个 A 类编辑仍可能因改变 CURRENT NEXT / authority 而成为 M2；一个 C 类编辑在已有显性 bounded author authorization 下仍须执行本文件的 C 类独立复审。
 
 ## A 类：安全编辑
 
