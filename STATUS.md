@@ -264,6 +264,51 @@ canonical edit
 = NO.
 ~~~
 
+### 0.3f Fresh-session level-preserving comparison guard — 2026-10-01
+
+Author source:
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_2026-10-01.md`
+
+Controlling prior correction:
+
+- `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`
+
+Repository-wide comparison guard:
+
+~~~text
+neighbor implements a downstream job
+= may absorb that downstream job;
+
+downstream implementation equivalence
+-/> upstream / primitive subtraction;
+
+"No SRT gain" / "Selection not needed" / "absorbed by neighbor"
+= must name and preserve the exact target level being compared.
+~~~
+
+Current cognition interpretation:
+
+~~~text
+passive sedimentation
+= not the ontological centre;
+
+history-conditioned selectability
+= downstream consequence;
+
+history / consequence writeback
+= one bounded route or subtype of recursive reconstitution;
+
+active construction + cross-level reconstruction
+of selectable organization
+= broader controlling burden.
+~~~
+
+This clarification does **not** reopen the primitive Selection anti-tautology STOP,
+does not claim primitive indispensability, and does not create a second CURRENT NEXT.
+The existing pre-object generative-orientation cognition programme remains the
+single CURRENT NEXT.
+
 ---
 
 ### 0.3a High-priority gate-geometry / qualia route — 2026-09-25
