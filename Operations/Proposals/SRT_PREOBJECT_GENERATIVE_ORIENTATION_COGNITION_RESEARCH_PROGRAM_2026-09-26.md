@@ -92,7 +92,7 @@ canonical edit
 
 ### 0.0c 2026-10-01 same-target / cross-level clarification
 
-Controlling author source:
+Source / provenance:
 
 `01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md`
 
@@ -124,14 +124,14 @@ Accordingly, the **evidence-ladder E4 (`recursive field reconstitution`) is not 
 Same-target rival rule (application of the AGENTS owner):
 
 ~~~text
-rival preserves P3/P4 downstream implementation
--> local P3/P4 absorption may be earned
+rival preserves retained-history / event-state-action implementation
+-> local absorption of that downstream explanatory job may be earned
 
-rival preserves P3/P4 downstream implementation
+rival preserves only that downstream explanatory job
 -/> primitive Selection / cross-level / whole-field dispensability
 
 stronger subtraction
--> same target level must be named and preserved
+-> the same explanatory target must be named and preserved
 ~~~
 
 Author shorthand such as `L0 -> L1` and `L1 -> L2` is treated here as a
