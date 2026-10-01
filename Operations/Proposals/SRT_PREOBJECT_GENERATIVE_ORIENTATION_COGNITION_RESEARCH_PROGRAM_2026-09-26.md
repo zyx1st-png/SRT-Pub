@@ -90,9 +90,62 @@ canonical edit
 = NO.
 ~~~
 
+### 0.0c 2026-10-01 level-preserving / cross-level clarification
+
+Controlling author source:
+
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_2026-10-01.md`
+
+Controlling prior correction:
+
+`Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`
+
+The programme must not drift back from active selectable-space construction into
+a passive history/sedimentation centre.
+
+~~~text
+passive-sedimentation reading
+= RETIRED AS ONTOLOGICAL CENTRE
+
+history-conditioned selectability
+= DOWNSTREAM CONSEQUENCE
+
+history / consequence writeback
+= ONE BOUNDED ROUTE OR SUBTYPE OF RECURSIVE RECONSTITUTION
+
+active construction / revision
++ cross-level reconstruction of selectable organization
+= BROADER CONTROLLING BURDEN
+~~~
+
+Accordingly, E4 is **not definitionally equal to history writeback**. A
+history/consequence manipulation is one admissible way to probe recursion.
+The broader neutral target is whether a formed result, retained history,
+action, higher-order gate, lower-level relation change, or another declared
+cross-level perturbation reconstructs the organization that conditions the
+next round of objectification / transition / selectability.
+
+Level-preserving rival rule:
+
+~~~text
+rival preserves P3/P4 downstream implementation
+-> local P3/P4 absorption may be earned
+
+rival preserves P3/P4 downstream implementation
+-/> primitive Selection / cross-level / whole-field dispensability
+
+stronger subtraction
+-> same target level must be named and preserved
+~~~
+
+Author shorthand such as `L0 -> L1` and `L1 -> L2` is treated here as a
+cross-level/aspect influence question. It does not convert the current
+Selection-totality analytic-aspect architecture into a mandatory sequence of
+ontic containers.
+
 The immediate discriminator is:
 
-> Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after consequences feed back?
+> Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after prior consequences, formed constraints, or another declared cross-level reorganization feeds back?
 
 This section controls repository execution over the historical routing notes below.
 
@@ -877,6 +930,8 @@ E1 descriptive geometry
 ~~~
 
 E4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
+
+For this programme, E4 means **recursive reconstitution of selectable organization**. Historical writeback is one gated route / subtype of that burden, not the definition of E4.
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 
