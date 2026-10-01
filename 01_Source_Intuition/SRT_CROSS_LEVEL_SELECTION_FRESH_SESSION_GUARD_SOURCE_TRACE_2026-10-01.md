@@ -73,7 +73,7 @@ downstream implementation equivalence
 -/> upstream / primitive subtraction;
 
 a stronger "no SRT gain" / "Selection not needed" conclusion
-requires the rival to preserve the same target under comparison.
+requires the rival to preserve the same explanatory target under comparison.
 ~~~
 
 For comparison tasks, keep distinct at least:
