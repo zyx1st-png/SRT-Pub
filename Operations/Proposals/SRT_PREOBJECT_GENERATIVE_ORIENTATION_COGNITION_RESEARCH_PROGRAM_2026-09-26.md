@@ -90,6 +90,55 @@ canonical edit
 = NO.
 ~~~
 
+### 0.0c 2026-10-01 same-target / cross-level clarification
+
+Source / provenance:
+
+`01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md`
+
+Controlling prior correction:
+
+`Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`
+
+The programme must not drift back from active selectable-space construction into
+a passive history/sedimentation centre. The repository-wide comparison rule is
+owned by `AGENTS.md`; this section records only the cognition-programme consequence.
+
+~~~text
+passive-sedimentation reading
+= RETIRED AS ONTOLOGICAL CENTRE
+
+history-conditioned selectability
+= DOWNSTREAM CONSEQUENCE
+
+history / consequence writeback
+= ONE BOUNDED ROUTE OR SUBTYPE OF RECURSIVE RECONSTITUTION
+
+active construction / revision
++ cross-level reconstruction of selectable organization
+= BROADER CONTROLLING BURDEN
+~~~
+
+Accordingly, the **evidence-ladder E4 (`recursive field reconstitution`) is not definitionally equal to history writeback**. The current frozen immediate discriminator nevertheless remains the consequence-feedback test already stated below. This PR does not broaden that empirical discriminator. Any future non-history cross-level route must separately declare its perturbation, probe, baseline and failure condition before admission to an empirical E4 test.
+
+Same-target rival rule (application of the AGENTS owner):
+
+~~~text
+rival preserves retained-history / event-state-action implementation
+-> local absorption of that downstream explanatory job may be earned
+
+rival preserves only that downstream explanatory job
+-/> primitive Selection / cross-level / whole-field dispensability
+
+stronger subtraction
+-> the same explanatory target must be named and preserved
+~~~
+
+Author shorthand such as `L0 -> L1` and `L1 -> L2` is treated here as a
+cross-level/aspect influence question. It does not convert the current
+Selection-totality analytic-aspect architecture into a mandatory sequence of
+ontic containers.
+
 The immediate discriminator is:
 
 > Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after consequences feed back?
@@ -877,6 +926,8 @@ E1 descriptive geometry
 ~~~
 
 E4 is the strongest neutral target and still does not establish primitive Selection or SRT ontology.
+
+Here `E4` means the **evidence-ladder E4: recursive field reconstitution** (not §8's `E4 — novel toy world`). Historical writeback is one bounded route into that evidence-ladder burden; the current empirical discriminator remains the already-declared consequence-feedback test unless a later author-gated design separately freezes another route.
 
 Temporal object-first vs orientation-first remains a secondary comparison only.
 

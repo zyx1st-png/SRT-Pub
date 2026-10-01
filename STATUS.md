@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-09-29
+updated: 2026-10-01
 ---
 
 # SRT 当前状态仪表盘
@@ -263,6 +263,38 @@ primitive Selection / O0 proof from cognition result
 canonical edit
 = NO.
 ~~~
+
+### 0.3f Fresh-session same-target comparison guard — 2026-10-01
+
+Global rule owner:
+
+- `AGENTS.md §Constitution / Ontology Dialogue Hard Guard`
+
+Source/provenance:
+
+- `01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md`
+
+Controlling prior correction:
+
+- `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`
+
+Current cognition consequence only:
+
+~~~text
+history-conditioned selectability
+= downstream consequence;
+
+history / consequence writeback
+= one bounded route into evidence-ladder E4 recursive field reconstitution;
+
+downstream implementation equivalence
+-/> primitive / cross-level subtraction.
+~~~
+
+The existing cognition immediate discriminator is unchanged. This clarification
+does not reopen the primitive Selection anti-tautology STOP, does not claim
+primitive indispensability, and does not create a second CURRENT NEXT.
+
 
 ---
 

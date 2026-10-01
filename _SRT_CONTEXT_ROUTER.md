@@ -430,6 +430,8 @@ When answering or editing a non-simple SRT question:
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
 - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+- 01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md
+- Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md + Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md（bounded music / temporal-phenomenology companion: change-relative-to-background, structural-registration != foreground_phen != foreground_obj, completion / interruption / recutting, Bearer-facing unfinishedness; no new CURRENT NEXT）
 
 ### Downstream assay
@@ -460,6 +462,9 @@ When answering or editing a non-simple SRT question:
 - Strong neighbors include Gestalt, ecological-enactive Skilled Intentionality / field of relevant affordances, operative intentionality, predictive processing, metastable coordination dynamics and attractor/manifold neuroscience.
 - Preformal coherence sensitivity is a downstream assay: early fit / mismatch may reveal perturbation of the prior orientation before the violated relation becomes explicit.
 - SRT mapping is downstream and optional. Existing cognitive-science accounts must be allowed to absorb the effect.
+- Apply the repository-wide same-target rival/subtraction rule from `AGENTS.md`; source trace: `01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md`.
+- For this route, `history-conditioned selectability` remains downstream; history/writeback is one bounded route into recursive field reconstitution, not the definition of the programme's whole target.
+- Author shorthand such as `L0 -> L1` or `L1 -> L2` marks cross-level/aspect influence questions here; it does not override the canonical analytic-aspect guard by turning L0/L1/L2 into sequential ontic containers.
 - This route is the active CURRENT NEXT as of 2026-09-27 after author-accepted primitive anti-tautology STOP; it does not reopen HP-B canonical landing or the paused GRG fusion lane.
 - Neutral cognition execution may proceed without author Facing confrontation. If the task promotes a neutral result into an SRT / GRG domain recut, new objectification claim, or cross-domain Facing reconstruction, load `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` plus `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md`: blind FR-AUTH first, machine candidates only after the author response is preserved, then FR-ADV; promotion into a new experiment / preregistration or formal domain-reconstruction claim requires independent FR-ADV.
 - Facing v0.3 is a method guard, not a new ontology layer. Its FACE-CAL / FACE-REC execution classes are orthogonal to research_mode U / N. A future FACE-REC result does not itself reopen the #1074 primitive anti-tautology STOP.

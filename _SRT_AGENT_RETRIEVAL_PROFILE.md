@@ -10,7 +10,7 @@ canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-CONTEXT-ROUTER, SRT-LONGFORM-SPLITS]
 ai_role: context_expansion_contract
 ai_priority: 2
-updated: 2026-09-29
+updated: 2026-10-01
 ---
 
 # SRT Agent Retrieval Profile
@@ -62,6 +62,33 @@ This is **not** a universal preload rule. Fresh sessions still obey bounded retr
 The labels `parked`, `downstream`, `companion`, `support`, and `canonical: false` do **not** by themselves lower retrieval value or justify skipping accepted / relevant reasoning. Current retrieval priority may be demoted only by an explicit narrowing such as `EXPLORATORY`, `LOCAL_ONLY`, `SUPERSEDED`, `REJECTED`, `RETIRED`, or a later controlling adjudication.
 
 Implementation status: bounded re-entry mapping is routed through `_SRT_CONTEXT_ROUTER.md §20`. `Operations/Audits/SRT_ACCEPTED_CONTINUED_PRE0728_REENTRY_AUDIT_2026-09-24.md` covers the recorded 2026-07-09 -> 2026-07-27 ChoiceMap / Concern / Ghost upstream segment; `Operations/Audits/SRT_ACCEPTED_CONTINUED_MACHINE_ANALYSIS_REENTRY_AUDIT_2026-09-24.md` covers the reviewed 2026-07-28 -> 2026-08-10 ChoiceMap segment plus selected later pre-GRG re-entry work; the 2026-09-20 -> 2026-09-23 GRG period is delegated to `Operations/Audits/SRT_GRG_ACCEPTED_MACHINE_ANALYSIS_CONTINUITY_AUDIT_2026-09-23.md`. Material before 2026-07-09, the 2026-07-12 cross-scale sibling branch, and other lower-priority chains remain not exhaustively audited. Absence from these maps must not be read as evidence of low retrieval value.
+
+### 0.2 Same-target comparison / fresh-session subtraction guard
+
+For rival, novelty, no-gain, subtraction or publication-positioning tasks, apply
+the repository-wide rule owned by `AGENTS.md §Constitution / Ontology Dialogue Hard Guard`.
+
+Before drawing a replacement conclusion, state the exact explanatory target in
+ordinary language. Keep distinctions such as these explicit when relevant:
+
+- primitive Selection / O0 burden;
+- cross-level generative-organization burden;
+- formed whole-field / Gate organization;
+- retained historical efficacy / writeback;
+- event / state / action implementation.
+
+Do **not** assign these targets new P/T/CL-style ladder labels. The repository
+P0-P5 notation remains reserved for `Governance/SRT_CLAIM_LADDER.md`.
+
+A rival that preserves only a downstream target can absorb only that target.
+Downstream implementation equivalence must not be promoted into upstream /
+primitive subtraction.
+
+Source/provenance:
+`01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md`.
+
+For the active cognition programme, also retrieve:
+`Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`.
 
 
 ---
@@ -135,11 +162,12 @@ When STATUS routes the active task to the pre-object generative orientation of c
 1. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md` — current author closeout + next routing;
 2. `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md` — root author target;
 3. `Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md` — active neutral-science execution owner;
-4. `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md` — mandatory only when neutral results are promoted into SRT / GRG recut or cross-domain Facing claims;
-5. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
-6. when music / temporal phenomenology / completion / unfinishedness / `foreground_phen` enters scope: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md` + `Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md` — bounded companion only, no second CURRENT NEXT;
-7. preformal-coherence source/programme only as a downstream behavioral assay;
-8. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
+4. `01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md` + `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md` — source/provenance + active-selectable-space correction; apply the AGENTS same-target rule and do not promote history/writeback into the programme's whole target;
+5. `Operations/Proposals/SRT_FACING_HUMAN_IN_LOOP_GENERATIVE_CONFRONTATION_METHOD_V0_3_2026-09-27.md` + `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md` — mandatory only when neutral results are promoted into SRT / GRG recut or cross-domain Facing claims;
+6. `Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md` — H1/H2/H3 level discipline + E1-E4 evidence ladder;
+7. when music / temporal phenomenology / completion / unfinishedness / `foreground_phen` enters scope: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md` + `Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md` — bounded companion only, no second CURRENT NEXT;
+8. preformal-coherence source/programme only as a downstream behavioral assay;
+9. strong local-update / latent-state / representation-learning baselines before any SRT interpretation.
 
 Retrieval guard:
 
@@ -149,6 +177,9 @@ SRT interpretation downstream / optional;
 toy simulation is not the first move;
 whole-field language must earn predictive / causal / recursive value;
 positive cognition result != primitive Selection / O0 proof;
+history/writeback = one downstream route into recursive field reconstitution, not the programme's whole definition;
+downstream implementation equivalence -/> upstream / primitive subtraction;
+rival/no-gain conclusions must preserve and name the same comparison target;
 neutral empirical work may proceed before author Facing confrontation;
 SRT / GRG recut promotion -> v0.3 blind-first FR-AUTH + FR-ADV;
 new experiment / preregistration or formal domain-reconstruction promotion
