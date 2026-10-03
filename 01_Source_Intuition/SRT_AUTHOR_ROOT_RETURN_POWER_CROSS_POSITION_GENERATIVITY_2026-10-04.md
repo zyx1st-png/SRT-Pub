@@ -1,4 +1,3 @@
-
 ---
 id: SRT-AUTHOR-ROOT-RETURN-POWER-CROSS-POSITION-GENERATIVITY-20261004
 type: source_intuition
@@ -11,12 +10,14 @@ canonical: false
 research_mode: U
 comparative_claim: none
 named_comparator: none
+trace_mode: retro_writeback
 dependency:
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_DOWNSTREAM_GENERATIVE_STACK_2026-09-23.md
   - Operations/Proposals/SRT_GRG_DOWNSTREAM_RESEARCH_BRANCHES_MAP_2026-09-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CROSS_POSITION_NON_USURPATION_CONSTITUTIVE_OUGHT_2026-09-14.md
   - Core/SRT_Closure_Compatibility_Hardening.md
+  - Core/SRT_Validation_Template.md
   - Core_Law/SRT_Selection_Argument.md
   - Core/SRT_OPEN_TENSIONS.md
 tags: [AuthorDirection, RootReturn, Power, CrossPosition, Generativity, ConsequenceReturn, Objectification, NonUsurpation, L2]
@@ -91,6 +92,9 @@ The following must not be hardened as new SRT / GRG constructs:
 5. Cost / burden externalization.  
    Core_Law/SRT_Selection_Argument.md and the four-axis order-gain family already retain 不外包 / consequence-return-channel integrity as a load-bearing scoped comparison axis.
 
+6. Power / consequence-return separation as an institutional diagnostic.  
+   Core/SRT_Validation_Template.md already states that stable institutions may remain problematic when they "separate power from consequence return." The present record therefore does not claim to introduce that connection for the first time; its narrower contribution is to reorganize that existing connection with the three consequence-return cuts and participant source-role.
+
 ### 2.2 Subtraction verdict
 
 ~~~text
@@ -130,6 +134,8 @@ A -> Conditions(B)
 
 Power is retained as one downstream organization of this cross-position relation.
 
+This root question is not itself presented as a novel research frontier. Mature neighbors already strongly cover parts of the general burden: Whitehead on prior actuality conditioning later becoming, and niche-construction / active-selection work on organisms modifying later selection conditions. Its role here is to restore the SRT-led problem hierarchy after subtraction, not to claim an unowned explanatory target.
+
 ## 4. Power is downstream, not the ontology root
 
 The current preferred routing is:
@@ -168,7 +174,7 @@ Strong influence does not automatically equal closure.
 A relation may satisfy:
 
 ~~~text
-E(A -> B) = strong
+cross-position efficacy(A -> B) = strong
 while
 B's own generative source-role remains load-bearing or even strengthens.
 ~~~
@@ -197,7 +203,7 @@ strong support != replacement automatically.
 
 ## 6. Consequence return as a diagnostic window on source-role
 
-The main owner reorganization preserved by this dialogue is the connection among:
+The main owner reorganization preserved by this dialogue is an expansion and sharpening of an already-present connection among:
 
 ~~~text
 cross-position conditioning / power
@@ -336,6 +342,14 @@ For the more specific consequence-return / learning question, the next source-na
 
 These names are future retrieval targets, not source-verified claims in this record. No comparative novelty claim is active here.
 
+If B10 is later reopened, the existing branch-map conditions remain controlling:
+
+- mature-neighbor owner is currently UNASSIGNED; Deutsch and externality / internalization theory are candidate source-native comparators for filling part of that debt, not preselected owners;
+- closure requires at least one source-native case that discriminates influence, coordination and coercion using independently specified re-Selection / exit / reconstruction variables;
+- abandon the branch if it functions only as normative relabeling or cannot separate descriptive power structure from evaluative judgment.
+
+The three-layer consequence-return connection is therefore useful only if it eventually changes a source-native discrimination, boundary, expectation or intervention question rather than merely redescribing closure in new language.
+
 ## 12. Current disposition
 
 ~~~text
@@ -343,7 +357,7 @@ POWER AS NEW ONTOLOGY PRIMITIVE = REJECT;
 POWER AS DOWNSTREAM B10 / CROSS-POSITION RELATION = RETAIN;
 CONSEQUENCE-RETURN CUT MECHANISM = ALREADY OWNED;
 B10 POWER <-> CLOSURE §7.1 CONSEQUENCE-RETURN <-> SOURCE-ROLE
-  = RETAIN AS NONTRIVIAL OWNER REORGANIZATION;
+  = RETAIN AS EXPANDED OWNER REORGANIZATION, NOT FIRST CONNECTION;
 NEW LOCAL POWER MECHANISM = NOT ESTABLISHED;
 THIRD RESIDUAL-HUNT ROUND = STOP;
 ROOT-RETURN = ACCEPTED DIRECTION;
