@@ -402,7 +402,7 @@ Reading C can remain a useful author-selected research interpretation only if it
 
 ### 8.3 Offline generative-model neighbor
 
-Hobson & Friston provide the closer same-target dream neighbor for the **offline internal-generation / reduced sensory-constraint mechanism**. After author R5 adjudication, this is a secondary mature-neighbor mechanism rather than the primary intended meaning of “缺少选择”:
+Hobson & Friston provide a same-target mature neighbor for **Reading B / the offline internal-generation / reduced sensory-constraint mechanism**. After author R5 adjudication, this is a secondary mature-neighbor mechanism rather than the primary intended meaning of “缺少选择”:
 
     reduced sensory input / waking sampling
     -> internally generated dream dynamics
