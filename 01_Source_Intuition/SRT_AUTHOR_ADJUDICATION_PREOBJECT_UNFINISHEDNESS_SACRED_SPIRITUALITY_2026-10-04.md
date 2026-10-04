@@ -164,13 +164,16 @@ can already carry consequential organization
 without independently admitted Bearer
 
 Bearer / A3 level
-is where “meaningful for this continuing formed position”
-is placed in the present author reading
+is where the author’s A0-Q claim about
+“meaningful difference”
+is currently routed
 ~~~
 
-Therefore:
+Provenance clarification:
 
-> Meaningful-for-this-continuation is Bearer-relative in the author’s present view; ordinary consequentiality is not thereby made Bearer-dependent.
+> **A0-Q:** “差异只在 bearer perspective 下才有意义。”
+
+> **M-level repository reconciliation:** existing One/A2 owners allow consequential organization without independently admitted Bearer. This is not presented as a weakening or paraphrase of the author’s meaning claim. In this file, “meaningful-for-this-continuation” is reserved for the Bearer-relative sense, while “consequentiality” remains the broader repository term.
 
 Hard guard:
 
