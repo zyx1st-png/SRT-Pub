@@ -28,6 +28,10 @@ dependency:
   - Materials/2026/SRC_2026_10_04_CogSci_Christoff_Spontaneous_Thought_Dynamic_Framework.md
   - Materials/2026/SRC_2026_10_04_Psychedelic_CarhartHarris_Friston_REBUS.md
   - Materials/2026/SRC_2026_10_04_Sleep_Bonamino_Lucid_Dream_Control.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Rechtschaffen_Dream_Single_Mindedness.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Maquet_REM_Functional_Neuroanatomy.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Muzur_Prefrontal_Cortex_in_Sleep.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Filevich_Lucid_Dreaming_Metacognition.md
 tags: [Dream, Psychedelic, MatureNeighbor, ActiveInference, Simondon, Enaction, SkilledIntentionality, Insight, Reselectability, E2, E3, E4]
 ---
 
@@ -48,6 +52,11 @@ Internal owner consistency:
 Source fidelity after correction:
 
     PASS AT CURRENT BOUNDED DEPTH
+
+Qualification:
+
+- the new Rechtschaffen / Maquet / Muzur / Filevich cards are bounded to claims verified from public abstracts;
+- the Hobson–Friston 2012/2014 dream line remains **citation-level only** in this package and is not represented as independently close-read / source-carded.
 
 Broad comparative novelty:
 
@@ -171,7 +180,8 @@ The correct tests remain CN-2:
 | preindividual formation / operation-structure recurrence | Simondon source + PH-IND03 | transduction; individuation; individual+milieu co-genesis; retained preindividual charge; Operation -> Structure -> later Operation; later psychic / collective individuation | “formation continues after formation” or pre/post-formation recurrence as SRT novelty | ownership subtraction only unless an independently specified same-target discriminator exists |
 | identity -> perspective -> sense-making | enactivism / autonomy; Nave pressure | self-maintaining identity can ground perspective and normativity | “formed perspective is uniquely SRT” | ownership comparator; not by itself an E2-E4 operational baseline |
 | whole-field relevance before explicit object judgment | Skilled Intentionality route | field of relevant affordances; concern / ability / situation-dependent solicitation | “field before object” as SRT novelty | ownership comparator; operationalize only if a quantitative task model is separately supplied |
-| offline generative-model operation during sleep / dreaming | Hobson & Friston 2012/2014 line + Friston active-reasoning lineage | reduced sensory constraint; internally generated virtual / generative-model dynamics; sleep / introspection as offline model-reduction context | “dream displays internal structure, therefore SRT” | same-target dream neighbor; include in any future dream-specific reduction base |
+| offline generative-model operation during sleep / dreaming | Hobson & Friston 2012; Hobson, Hong & Friston 2014; Friston active-reasoning lineage | reduced sensory constraint; internally generated virtual / generative-model dynamics; sleep / introspection as offline model-reduction context | “dream displays internal structure, therefore SRT” | same-target for Reading B / offline-generation mechanism; not the author's primary Reading C |
+| reduced reflective monitoring / frame exit during dreaming | Rechtschaffen 1978; Maquet et al. 1996; Muzur, Pace-Schott & Hobson 2002; Filevich et al. 2015; Bonamino & Peters 2026 | dream single-mindedness; reduced reflective self-awareness; DLPFC implementation pressure; lucid-dream / metacognitive recovery comparisons | “generation continues but frame exit is weak, therefore SRT” | direct external neighbor set for Reading C; must separate C from ordinary deliberate / executive / metacognitive-control loss |
 | model / problem structure revision | Active Inference 2026 + Aha / insight package | active structure learning, BMR, rule discovery, representation restructuring | “neighbors only select from fixed menus” | strong operational H2 reduction base for CN-2 |
 | spontaneous-thought constraint dynamics | Christoff et al. | deliberate vs automatic constraints; deliberate constraints minimal during dreaming; automatic constraints can be low-to-medium | “dreaming generally means strong automatic / affective constraint” | control-dynamics baseline only; strong affective recurrence needs independent evidence |
 | psychedelic relaxation / reopening | REBUS + NEURAL35 | reduced precision of high-level priors; increased intrinsic / bottom-up influence; reopening pressure | “constraint release is SRT” or “more opening = more freedom” | operational neighbor where a psychedelic assay is actually used |
@@ -211,6 +221,7 @@ These are the models / covariate families that can actually enter CN-2 reduction
 - Active Inference with parameter and model-structure learning / Bayesian Model Reduction;
 - task-specific dynamical / manifold models;
 - Christoff-like constraint-dynamics models where appropriate;
+- reflective-awareness / reality-monitoring / metacognitive baselines for dream-specific Reading C, including single-mindedness and prefrontal-control accounts;
 - sleep/offline generative-model accounts for dream-specific assays;
 - arousal / affect / attention / confidence / executive-control covariates;
 - REBUS-like prior-relaxation models for psychedelic assays.
@@ -236,7 +247,7 @@ Source-backed correction:
 
 The same source also states a bounded limitation:
 
-- the worked agent already has a learned generative model of the task / puzzle family;
+- the worked agent **knows** the generative model of the task / puzzle family;
 - the demonstration does not simultaneously learn the full model from unsegmented sensory input.
 
 Correct repository consequence:
@@ -317,6 +328,35 @@ The next scientific requirement is not a new prose residual. It is the already-o
 
 A directional divergence must be specified only when a concrete protocol is frozen. This PR does not authorize or design that protocol.
 
+## 7.5 Reading A vs Reading C — operational guard
+
+Author R5 selects Reading C, but author intent does not guarantee scientific distinctness.
+
+Reading A asks whether deliberate constraints are reduced.
+
+Reading C asks a narrower behavioral / organizational question:
+
+> **Can the system continue generating rich or variable content while becoming specifically worse at recognizing the current frame as revisable, generating an alternative frame, or reanchoring after contradiction / meta-awareness?**
+
+A fair separation should include both sides:
+
+    A-sensitive readouts
+    = within-frame spontaneity / transition variability
+      + ordinary deliberate / executive-control measures
+
+    C-sensitive candidate readouts
+    = contradiction / impossibility detection
+      + spontaneous alternative-frame generation
+      + frame-exit / reinterpretation after anomaly
+      + reanchoring after a meta-awareness cue
+      + lucid-onset meta-awareness separated from content-control success
+
+Fail-closed condition:
+
+> **If C-sensitive readouts do not dissociate from ordinary deliberate / executive / metacognitive-control loss, Reading C is absorbed as a special case of Reading A at this explanatory job.**
+
+Even a successful A/C dissociation would remain a neutral cognition result and would return to CN-2; it would not by itself establish SRT Selection or Position reconstitution.
+
 ## 8. Dream route — bounded assay only
 
 ### 8.1 Ordinary dreaming
@@ -334,7 +374,33 @@ They do **not** source-own the stronger generalization:
 
 A particular person's recurrent affective / authority structure is therefore a separate phenomenological hypothesis, not a Christoff result.
 
-### 8.2 Offline generative-model neighbor
+### 8.2 Reading C mature-neighbor set — reflective monitoring / frame exit
+
+Rechtschaffen's classic single-mindedness account directly pays the phenomenological job:
+
+    dream generation continues
+    while
+    reflective awareness / simultaneous alternative-thought access can be weak
+    and content can remain on one thematic track
+
+Maquet et al. provide primary REM neuroimaging evidence including dorsolateral-prefrontal reduction, but do not themselves establish the cognitive interpretation.
+
+Muzur, Pace-Schott & Hobson explicitly connect REM dorsolateral-prefrontal deactivation to diminished dream self-awareness.
+
+Filevich et al. connect lucid-dreaming ability with frontopolar systems also recruited during waking thought monitoring. The existing Bonamino & Peters card separately guards:
+
+    lucidity
+    != pre-reflective agency
+    != successful dream control
+
+Therefore:
+
+    "generation continues while reflective frame exit / reanchoring is weak"
+    = MATURE-NEIGHBOR TERRITORY
+
+Reading C can remain a useful author-selected research interpretation only if it is operationally sharper than this mature control / metacognition family under §7.5.
+
+### 8.3 Offline generative-model neighbor
 
 Hobson & Friston provide the closer same-target dream neighbor for the **offline internal-generation / reduced sensory-constraint mechanism**. After author R5 adjudication, this is a secondary mature-neighbor mechanism rather than the primary intended meaning of “缺少选择”:
 
@@ -344,7 +410,7 @@ Hobson & Friston provide the closer same-target dream neighbor for the **offline
 
 This does not prove that dreams transparently expose a latent structure. It supplies a mature explanation for why internally generated organization can become relatively decoupled from current external input.
 
-### 8.3 Lucid dream
+### 8.4 Lucid dream
 
 Bonamino & Peters require separation of:
 
@@ -359,7 +425,7 @@ A future SRT-facing assay would have to add, rather than assume:
 
 Changing scenery, flying, or intentionally altering dream content is not by itself Position reconstitution.
 
-### 8.4 Preferred negative-control logic
+### 8.5 Preferred negative-control logic
 
 A useful future counterexample would be:
 
@@ -446,6 +512,8 @@ Concretely:
 - inherit Hobson–Friston for dream / sleep offline generative-model framing;
 - inherit Active Inference for model-relative structure learning / BMR;
 - inherit Christoff for constraint-shaped spontaneous-thought dynamics;
+- inherit Rechtschaffen / Maquet / Muzur for dream single-mindedness, reflective-monitoring limits and prefrontal implementation pressure;
+- inherit Filevich + Bonamino for lucid meta-awareness / metacognition and control decomposition;
 - inherit REBUS for psychedelic prior-relaxation;
 - inherit insight literature for problem restructuring;
 - inherit lucid-dream literature for lucidity / agency / control decomposition.
@@ -490,12 +558,14 @@ This route should stop or downgrade if any of the following occurs:
 6. candidate generation changes but no independently identifiable H3 increment survives H1/H2 reduction;
 7. “Position reconstitution” cannot be reproducibly separated from ordinary state / model update;
 8. the only remaining advantage is shorter SRT vocabulary for a union of mature theories.
+9. Reading C cannot be dissociated from Reading A or ordinary executive / metacognitive-control loss on predeclared probes.
 
 ## 14. Repository disposition
 
     source-intuition trace = YES
     mature-neighbor continuation audit = YES
     external SourceCards = YES / Pipeline 1 B-class
+    Reading-C external SourceCards = YES: Rechtschaffen / Maquet / Muzur / Filevich
     Hobson-Friston new SourceCard = NO; existing repository citation / neighbor routing only
     cognition owner edit = NO
     HP-B edit = NO
