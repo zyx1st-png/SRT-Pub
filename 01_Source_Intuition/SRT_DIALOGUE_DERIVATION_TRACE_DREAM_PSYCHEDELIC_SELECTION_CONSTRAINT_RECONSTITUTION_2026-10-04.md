@@ -9,7 +9,7 @@ claim_mode: source_intuition
 created: 2026-10-04
 updated: 2026-10-04
 research_mode: U
-author_status: exact_seed_quote_preserved; later_continue_or_agree_authorizes_directional_continuation_only; machine_decomposition_and_neighbor_subtraction_not_author_adjudication
+author_status: exact_seed_quote_preserved; R5_interpretive_choice_C_author_adjudicated_2026_10_04; machine_neighbor_subtraction_not_author_adjudication
 dependency:
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
@@ -38,11 +38,21 @@ Exact author statement:
 
 This seed is preserved as an intuition, not a finished definition.
 
-## 2. “缺少选择” has at least three live readings
+## 2. “缺少选择” — author adjudication on R5
 
-The machine-side continuation should not collapse the author's wording into one interpretation.
+Author reply on 2026-10-04:
+
+> **“r5 c”**
+
+Author adjudication:
+
+> **The primary intended reading of “缺少选择” is Reading C: reduced reanchoring / reselective control.**
+
+Readings A and B remain useful mature-neighbor mechanisms / possible concomitants, but they are **not** the author's primary intended meaning of the original sentence.
 
 ### Reading A — reduced deliberate / meta-level constraint
+
+Status after R5 adjudication: **secondary / neighboring mechanism, not the primary author meaning.**
 
 Candidate meaning:
 
@@ -53,6 +63,8 @@ Christoff et al. are a mature neighbor for this reading.
 
 ### Reading B — reduced external / sensory selection pressure
 
+Status after R5 adjudication: **secondary / neighboring mechanism, not the primary author meaning.**
+
 Candidate meaning:
 
     exteroceptive sampling / sensory error constraints are strongly reduced
@@ -61,9 +73,11 @@ Candidate meaning:
 
 Hobson & Friston's sleep / dreaming predictive-processing route and later Bayesian-model-reduction work are direct mature neighbors for this reading.
 
-**Author status:** OPEN. This PR does not decide whether Reading B is what the author primarily meant by “缺少选择”.
+**Author status:** NOT PRIMARY after R5 adjudication. Hobson–Friston remains a necessary same-target neighbor for dream-specific offline-generation mechanisms, but not the intended meaning of the author's phrase.
 
 ### Reading C — reduced reanchoring / reselective control
+
+Status after R5 adjudication: **PRIMARY AUTHOR INTENT.**
 
 Candidate meaning:
 
@@ -187,7 +201,11 @@ is a RETIRED COMPARATOR CARICATURE.
 
 ## 5. What remains valuable in the author's intuition
 
-After mature-neighbor subtraction, this dialogue does **not** currently earn a new dream-specific or psychedelic-specific SRT discriminator.
+With Reading C now author-selected, the source intuition is more specific:
+
+> dreams and psychedelic states were being used to point toward conditions in which rich internal generation can continue while reanchoring / reselective control is weakened.
+
+This author clarification does **not** itself create a new dream-specific or psychedelic-specific SRT discriminator.
 
 Its main value is to sharpen a pre-existing neutral cognition question:
 
@@ -320,7 +338,11 @@ Dream / lucid-dream / psychedelic states are bounded future assay candidates onl
 
 ## 10. Explicit non-decisions
 
-This trace does NOT establish:
+This trace now DOES establish one author-level interpretive decision:
+
+- R5 / original “缺少选择” primary meaning = Reading C, reduced reanchoring / reselective control.
+
+It still does NOT establish:
 
 - a new Selection definition;
 - “Selection withdrawal” as a term-of-art;
@@ -331,7 +353,6 @@ This trace does NOT establish:
 - latent generative structure as a new ontology entity;
 - Position reconstitution as an empirical result;
 - Hobson–Friston / Active Inference as complete explanations of dreaming;
-- which of Readings A/B/C best captures the author's original “缺少选择” wording;
 - HP-B change;
 - Bearer change;
 - canonical edit;
@@ -344,8 +365,8 @@ The machine-side conclusion after review is narrower than the first derivation:
 
 > **Dreaming and psychedelic states are useful because they perturb different constraints on ongoing generative organization, but the broad ideas of reduced deliberate control, offline internal generation, high-level-prior relaxation, structure learning and problem restructuring already have mature owners. This dialogue therefore returns to CN-2 rather than creating a new SRT residual.**
 
-One author-level interpretive branch remains deliberately unresolved:
+Author-level interpretive status is now resolved:
 
-> In the original sentence, did “缺少选择” primarily mean reduced deliberate/meta control, reduced external/sensory selection pressure, reduced reanchoring/reselective control, or some combination?
+> **Primary meaning = Reading C: reduced reanchoring / reselective control.**
 
-The repository does not answer that question on the author's behalf.
+Readings A and B remain mature-neighbor explanations that may contribute to particular dream / altered-state conditions, but they should no longer be presented as equally live interpretations of the author's original phrase.
