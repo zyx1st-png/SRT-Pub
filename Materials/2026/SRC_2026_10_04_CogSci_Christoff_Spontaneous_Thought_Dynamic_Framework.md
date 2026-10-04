@@ -11,16 +11,15 @@ url: "https://www.nature.com/articles/nrn.2016.113"
 doi: "10.1038/nrn.2016.113"
 evidence_level: peer_reviewed_review_article_full_text_public
 reliability_level: high_for_framework_definition_and_review_scope; review_level_for_cross_state_mechanistic_generalization
-srt_relevance: high_for_dream_constraint_neighbor_pressure
+srt_relevance: medium_high_for_dream_constraint_guardrail
 integration_priority: medium_B2
-pipeline_decision: "B2 mature-neighbor guardrail; broad constraint-release interpretation is source-owned"
+pipeline_decision: "B2 mature-neighbor guardrail; owns deliberate/automatic constraint decomposition, not strong-affective-dream claim"
 related_srt_claims:
   - dream_state_perturbation
   - deliberate_constraints
   - automatic_constraints
-  - structured_unfolding
+  - spontaneous_thought
   - active_recutting_guard
-  - candidate_accessibility
 tags:
   - spontaneous_thought
   - mind_wandering
@@ -28,7 +27,7 @@ tags:
   - constraints
   - automaticity
   - cognitive_control
-  - strongest_neighbor
+  - guardrail
 status: active
 layer: operations
 epistemic_layer: os
@@ -42,70 +41,45 @@ id: SRC-2026-10-04-COGSCI-CHRISTOFF-SPONTANEOUS-THOUGHT-DYNAMIC-FRAMEWORK
 
 ## 1. One-line summary
 
-Christoff et al. define spontaneous thought in terms of relatively weak constraints on mental-state contents and transitions and distinguish deliberate from automatic constraints. This mature framework already pays a large part of the broad claim that dreaming can combine reduced deliberate control with strong automatic / affective structuring; SRT must not claim novelty at that explanatory job.
+Christoff et al. define spontaneous thought through relatively weak constraints on mental-state contents and transitions and distinguish deliberate from automatic constraints. In their framework, deliberate constraints are minimal during dreaming, while automatic constraints during dreaming can fall in a low-to-medium range. This source therefore supports a reduced-deliberate-constraint baseline, but does **not** source-own a general claim that dreams are strongly organized by automatic / affective constraints.
 
 ## 2. Core source-owned claims
 
-1. The authors argue that content-only definitions of mind wandering miss the dynamics of how thoughts arise and transition.
-2. Spontaneous thought is characterized by relatively weak constraints on the contents of mental states and transitions among them.
-3. The framework distinguishes deliberate constraints associated with intentional cognitive control from automatic constraints associated with factors such as affective or sensory salience.
-4. Different thought states can occupy different locations in this constraint space; dreaming is treated as a case with weak deliberate constraint, while other states can remain strongly constrained by automatic processes.
+1. Content-only definitions of mind wandering miss the dynamics of how thoughts arise and transition.
+2. Spontaneous thought arises relatively freely because strong constraints on contents and transitions are absent.
+3. Deliberate constraints are implemented through cognitive control.
+4. Automatic constraints include processes outside deliberate cognitive control, including sensory and affective salience.
+5. Deliberate constraints are minimal during dreaming and increase through mind wandering, creative thought and goal-directed thought.
+6. Dreaming, mind wandering and creative thought can occupy a low-to-medium range of automatic constraint; very strong automatic constraint characterizes less-spontaneous states such as rumination / obsessive thought.
 
 ### Source anchors
 
-- Key Points — definition of spontaneous thought by absence of strong constraints.
-- Main framework discussion — deliberate vs automatic constraints and transition dynamics.
-- State-space comparison sections — dreaming and other spontaneous / constrained thought conditions.
+- Key Points — definition of spontaneous thought; deliberate vs automatic constraints.
+- Figure 1 / conceptual-space discussion — dreaming, mind wandering, creative thought, rumination and goal-directed thought.
+- Neural-model discussion — sources of variability and automatic / deliberate constraints.
 
-## 3. Evidence / method
+## 3. Limits and SRT relevance
 
-This is a mature peer-reviewed review / theoretical framework integrating cognitive-neuroscience and psychology literatures. It does not provide a single decisive experiment for all states in the framework.
+Safe inheritance:
 
-Its strongest use here is comparative:
+    reduced deliberate constraint in dreaming
+    + variable low-to-medium automatic constraint
+    = source-owned comparator / guardrail
 
-- it supplies a source-native account of reduced deliberate constraint;
-- it blocks an SRT novelty claim based merely on "less control reveals internal structure."
+Not source-owned:
 
-## 4. Limits
+    dreaming generally preserves strong automatic / affective relational structure
 
-The framework is primarily about mental-state dynamics and their constraints. It is not designed as a theory of:
+Therefore the user's phenomenological intuition that old affective / authority structures can remain dominant in dreams requires a different evidential route. It must not be attributed to Christoff 2016.
 
-- primitive ontological Selection;
-- One / Bearer formation;
-- the exact constitution of candidate dimensions before a mental-state space is specified.
+The source also does not establish:
 
-Those non-targets must not be treated as failures of the source.
+- primitive Selection;
+- Bearer / Position reconstitution;
+- a transparent latent ontology;
+- a new SRT recutting mechanism.
 
-## 5. SRT relevance
-
-### Source-backed pressure
-
-The broad dream intuition:
-
-"reduced active control -> old / affective structure becomes more dominant"
-
-is substantially source-owned at this explanatory level.
-
-### SRT-side continuation
-
-The remaining SRT-compatible question is narrower:
-
-does a system merely traverse a differently constrained existing state space, or is there independently detectable change in the organization that determines later grouping, candidate formation and feasible continuation?
-
-That residual is not established by this source.
-
-### Owner-side novelty probe
-
-Verdict:
-SOURCE-OWNED AT THIS EXPLANATORY JOB for the broad constraint account.
-
-Constructive use:
-inherit deliberate/automatic constraint language as a comparator and negative control.
-
-Forbidden parallel construct:
-do not rename the same distinction as "Selection withdrawal" and present it as a new SRT mechanism.
-
-## 6. Suggested patch target
+## 4. Routing / revival trigger
 
 No PatchNote / IntegrationHook.
 
@@ -113,12 +87,4 @@ Primary routing:
 `Operations/Audits/SRT_DREAM_PSYCHEDELIC_MATURE_NEIGHBOR_CONTINUATION_AUDIT_2026-10-04.md`
 
 Revival trigger:
-when a dream-state assay is designed, use this framework as a mandatory baseline for any claimed loss of active recutting beyond ordinary deliberate-control reduction.
-
-## 7. Hard guards
-
-- weak deliberate constraint != no cognition;
-- automatic constraint != SRT Gate by definition;
-- dream structure != transparent latent ontology;
-- sticky emotional dynamics != Bearer / Position proof;
-- the framework's scope boundary must not be promoted into upstream SRT novelty without a same-target test.
+if a dream-state assay is designed, use Christoff as a baseline for deliberate / automatic constraint dynamics, while sourcing any stronger recurrent-affective-structure claim separately.
