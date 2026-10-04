@@ -68,7 +68,7 @@ The following remain source-owned.
 - Abstract — structure learning, expected information gain over models, BMR, and the three-ball paradigm previously used for synthetic introspection / sleep.
 - Introduction — distinction among hidden states, parameters and structure; offline BMR as proposed for introspection / sleep; active structure learning; prior model-space constraints.
 - Results, "The three-ball paradigm" — active data sampling, model comparison and rule selection.
-- Discussion / scope statements — the worked agent is assumed to have already learned a generative model of the task / puzzle family rather than learning that full model directly from unsegmented sensory input in the same demonstration.
+- Discussion / scope statements — the worked agent is stated to know the generative model of the task / puzzle family rather than learning that full model directly from unsegmented sensory input in the same demonstration.
 
 ## 3. Evidence / method
 
@@ -86,7 +86,7 @@ The strongest repository-relevant evidence is therefore formal / architectural:
 
 The source itself supplies the main limit for current comparison.
 
-The demonstration assumes that the agent has already learned the generative model of the task / puzzle and then reasons over candidate reduced model structures / rules. It does not, in the same demonstration, learn the entire generative model from unsegmented sensory input.
+The demonstration assumes that the agent knows the generative model of the task / puzzle and then reasons over candidate reduced model structures / rules. It does not, in the same demonstration, learn the entire generative model from unsegmented sensory input.
 
 Therefore:
 
