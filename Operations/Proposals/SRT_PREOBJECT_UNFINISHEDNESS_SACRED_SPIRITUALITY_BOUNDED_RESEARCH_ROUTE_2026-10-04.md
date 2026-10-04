@@ -221,7 +221,7 @@ Status:
 pending author input to HP-B OPEN Q1/Q4
 not a new standalone construct
 not landed into HP-B
-not sufficient
+sufficiency = NOT CLAIMED / NOT ADJUDICATED HERE
 ~~~
 
 ### Necessary-condition falsifier
