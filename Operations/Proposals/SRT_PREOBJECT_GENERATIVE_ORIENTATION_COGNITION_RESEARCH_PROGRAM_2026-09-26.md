@@ -146,6 +146,43 @@ The immediate discriminator is:
 This section controls repository execution over the historical routing notes below.
 
 
+### 0.0d 2026-10-04 unfinished-direction companion — routing only
+
+Companion source / route:
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md
+- Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md
+
+Scope:
+
+~~~text
+prospective-memory target/object dissociation
+= bounded natural assay candidate only;
+
+strongest retained tests
+= target-specific pre-recall structure
+  + confidence/self-completion-matched false-candidate release;
+
+natural author case
+= does not override CN-5 sequencing;
+
+current consequence-feedback discriminator
+= UNCHANGED;
+
+neutral result -> SRT / GRG promotion
+= still requires Facing v0.3 FR-AUTH + FR-ADV;
+
+cross-domain grammar
+= HOLD / confirming count 0;
+
+HP-B unity necessity input
+= routed to frozen HP-B OPEN questions only;
+
+CURRENT NEXT
+= UNCHANGED.
+~~~
+
+
 ## 0.0a Post-#1071 evidence-status adjudication
 
 Controlling source:
