@@ -103,6 +103,7 @@ When answering or editing a non-simple SRT question:
 - `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md` + `Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md`（retyping input only: sacred saturation vs larger-relational-unification OPEN; no ego-dissolution -> Bearer verdict; spirituality-as-reopening routes to existing owners and CΨ）
 - `_SRT_CROSS_DOMAIN_MATRIX.md`
 
 ### Boundary
@@ -433,6 +434,7 @@ When answering or editing a non-simple SRT question:
 - 01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md
 - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md + Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md（bounded music / temporal-phenomenology companion: change-relative-to-background, structural-registration != foreground_phen != foreground_obj, completion / interruption / recutting, Bearer-facing unfinishedness; no new CURRENT NEXT）
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md + Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md（bounded unfinished-direction companion: prospective-memory target/object dissociation; strongest retained assays = target-specific pre-recall structure + confidence/self-completion-matched false-candidate release; cross-domain grammar HOLD; HP-B unity input routing-only; no new CURRENT NEXT）
 
 ### Downstream assay
 
@@ -548,6 +550,7 @@ When answering or editing a non-simple SRT question:
 
 - Spirituality files are praxis / existential interpretation layers.
 - They should not override core definitions of `d`, `Ψ_f`, `T_dir`, or `L0-L1-L2`.
+- 2026-10-04 unfinished/sacred route does not replace Spirit_01/02/03/04 or NEURAL35; read it as INHERIT / RETYPE / CONFLICT bookkeeping, with CΨ / RQ-2026-08-A05 still unresolved.
 
 ---
 

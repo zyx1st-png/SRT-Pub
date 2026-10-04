@@ -529,6 +529,13 @@ Still OPEN for later work:
 4. whether phenomenal unity is graded, nested or discretely fissionable;
 5. whether the BP-Q1 bridge can be strengthened beyond a P3 constitutive / functional hypothesis.
 
+
+Routing-only pending author input (2026-10-04; no semantic reopen):
+
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md records the author's judgment that a unity condition on the already-owned Gate / coarse-graining organization is necessary for consciousness.
+- Treat this only as pending input to OPEN items 1 and 4 above / phenomenal-necessity work.
+- It adds no new HP-B term, landed kernel condition, sufficiency claim or P-level upgrade while the package remains frozen.
+
 These are future adjudication / discrimination points, not blockers for retaining the current P3 hook.
 
 ---

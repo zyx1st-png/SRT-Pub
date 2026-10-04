@@ -142,6 +142,16 @@ generative divinity = provenance for generativity / nonclosure, not supernatural
 SRT must be allowed to add zero incremental explanatory value over Gestalt / enactivism / predictive / dynamical accounts.
 ~~~
 
+2026-10-04 companion bookkeeping only:
+
+- unfinished-direction / prospective-memory source: 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md;
+- bounded route: Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md;
+- strongest retained assay candidates = target-specific pre-recall structure + confidence/self-completion-matched false-candidate release;
+- cross-domain grammar = HOLD / confirming count 0;
+- sacred / spirituality material = retyping input to existing Spirituality owners and CΨ, not a new owner;
+- author unity-necessity judgment = routing-only pending input to frozen HP-B OPEN Q1/Q4; no HP-B semantic reopen;
+- CURRENT NEXT / frozen consequence-feedback discriminator = UNCHANGED.
+
 Strong neighbor families:
 - Gestalt / whole-before-parts organization;
 - Skilled Intentionality / field of relevant affordances;
