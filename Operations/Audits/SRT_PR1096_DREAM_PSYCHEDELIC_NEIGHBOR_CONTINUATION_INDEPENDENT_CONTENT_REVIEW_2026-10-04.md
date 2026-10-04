@@ -178,3 +178,55 @@ trace 的 authority guard 写得对（只有 seed 原句是 A0-Q，“认同，�
 - Christoff et al. (2016), NRN — <https://www.nature.com/articles/nrn.2016.113>
 - Girn et al. (2020), *Updating the dynamic framework of thought: Creativity and psychedelics* — <https://www.christofflab.ca/wp-content/uploads/2020/03/Updating-the-dynamic-framework-of-thought-Creativity-and-psychedelics.pdf>
 - Friston et al. (2017), *Active inference, curiosity and insight* (UCL Discovery) — <https://discovery-pp.ucl.ac.uk/id/eprint/1570070>
+
+## 6. 修正后复核（#1096 head `66adaec0`）
+
+> **范围**：作者在 #1097 请求做一次修正后内容复核，重点有三：Hobson–Friston 的刻画是否足够窄；伪新残余是否彻底清除；作者来源标注是否干净。本节通读了 #1096 自 `d8e8aa11` 以来 6 个 commit 涉及的 6 个文件。仍是只读评审。
+
+### 6.1 R1–R8 落实情况
+
+| # | 状态 | 核对结果 |
+|---|---|---|
+| R1 | 已解决 | trace §4.2、审计 §3 新增一行、§8.2 和 §11 引入了 Hobson–Friston；Friston 卡片 §2.4 / §5 记下了 BMR 作为 introspection / sleep 的离线过程；§13.3 新增“梦境特有效应被离线生成模型 / 感觉脱耦解释吸收”这一失败条件 |
+| R2 | 已解决 | Christoff 卡片 §1 / §2.5–2.6、Material Log 行、审计 §8.1 都改为“deliberate 约束最低；automatic 约束可在 low-to-medium 范围”，并显式收回了“强 automatic / affective”这一归属。“low-to-medium”的措辞本评审仍未能对照原文 Fig. 1 核实，但方向与 Christoff 实验室 2020 年的概括一致，可以接受 |
+| R3 | 已解决 | 审计 §4 拆分了 ownership comparators 和 operational baselines；§1 / §7 / §12 撤回了 “exact OPEN residual”，归回 CN-2 的 reduction / increment / recursive 三项检验，并把 H2 的约简基础升级；§2.5 与 CN-2 的“分层而非互斥竞争者”一致；“coordinated”不具区分力也已明写 |
+| R4 | 已解决 | 审计 §10 和 trace §8 撤回了收窄后的单一类型依赖残余；比较项写全了 preindividual charge 和 transindividual；“cross-formation continuity” 不再保留为工作标签，并进入 trace §10 的 non-decisions |
+| R5 | 基本解决（见 P1） | trace 的 author_status、authority guard 和 §4 标题都改正了；“缺少选择”列出 A / B / C 三种读法，§2 和 §11 都声明不代作者选择 |
+| R6 | 已解决 | Bonamino 卡片、trace §4.4 / §6、审计 §8.3 都改为“前反思的 sense of agency ≠ deliberate / agentic control”；SRT 一侧的测量项单独标为 “SRT-side addition, not a source claim” |
+| R7 | 已解决 | frontmatter 增加了 `preprint: "arXiv:2512.21129"` |
+| R8 | 已解决 | REBUS 行的“落点”列只剩 SourceCard 和审计，NEURAL35 移到融入状态列，标为 read-only cross-read；三张 B2 卡片已精简到接近档案卡的深度 |
+
+### 6.2 对三个复核重点的回答
+
+**(1) Hobson–Friston 的刻画是否足够窄：是。** trace §4.2 只认领 “reduced sensory constraint → offline internal generative-model operation / reduction” 这一职能；trace §10 明确不把 Hobson–Friston / Active Inference 视为梦境的完整解释；审计 §8.2 加了 “does not prove that dreams transparently expose a latent structure”；Friston 卡片的 hard guard 也写了 “sleep-associated offline model reduction != transparent display of a true hidden ontology”。范围合适。
+
+剩下一处是标注问题：Hobson–Friston 在 #1096 中没有 SourceCard，也没有原文锚点（审计 §14 如实写了 “existing repository citation / neighbor routing only”），但审计 §1 的 “Source fidelity … PASS AT CURRENT BOUNDED DEPTH” 读起来像是覆盖了全部邻居。建议在 §1 补半句 “Hobson–Friston characterised at citation level only; not source-carded”（见 N1）。
+
+**(2) 伪新残余是否彻底清除：是。** 审计 §1 / §7 / §12 / §14 和 trace §5 / §7 一致地写着 “new exact OPEN residual = NO”，并归回 CN-2；trace §7 的 “This PR does not manufacture a directional SRT prediction merely to preserve a residual” 正是正确的处理。审计 §5 保留的 “factorization / state-variable / boundary constitution question stays OPEN at the programme level” 是 programme 层面已有的 OPEN，不是新残余。§8.4 的 negative-control 逻辑明确标为 design idea only。没有发现被换个名字重新带回来的残余。
+
+**(3) 作者来源标注是否干净：还差一处（P1）。**
+
+### 6.3 新发现
+
+**P1（中）把一个未保存为原文的现象学直觉归给了作者。** 有两处出现：
+
+- `Materials/2026/SRC_2026_10_04_CogSci_Christoff_Spontaneous_Thought_Dynamic_Framework.md` 第 73 行：“Therefore **the user's phenomenological intuition** that old affective / authority structures can remain dominant in dreams …”；
+- `Operations/Material_Log/2026-10_Part01.md` 的 Christoff 行，SRT 反哺：“**用户关于旧情绪/权威结构反复占优的现象学直觉** …”。
+
+trace §1 保存的唯一作者原句是“我觉得梦境和迷幻剂都是一种缺少选择的内部结构展示”，里面没有“旧情绪 / 权威结构反复占优”的内容。修正前的版本（旧 Bonamino 卡片 §5）把同一个假设标为 “The current dialogue proposes … This is an SRT-side hypothesis”，修正后的 trace §6 也把它写成 “a phenomenological hypothesis requiring its own source and measurement”。所以这两处等于在修正中**新增**了作者归属。
+
+修法二选一：(a) 如果作者确实在对话中说过，就把原话作为第二条 A0-Q 引文补进 trace §1，两处改成指向这条引文；(b) 如果没有说过，就改为 “a dialogue-generated phenomenological hypothesis (not an author quote)”。另外，仓库文件里用 “user / 用户” 指作者，与 trace 一贯使用的 “author” 不一致，建议统一。
+
+**N1（低）** 见 6.2 (1)：在审计 §1 的 source-fidelity 判定里注明 Hobson–Friston 只到引用层级。附带一点：审计 §3 写的是 “Hobson & Friston 2012/2014 line”，但 2014 年那篇的作者是 Hobson, Hong & Friston，可以写全。
+
+**N2（低）** Friston 卡片的局限一句从 “assumed to know the generative model …” 改成了 “has already learned the generative model of the task / puzzle”。本评审此前经搜索核实的原文是 “the agent knows the generative model under which the (unknown) rule is implemented”。“learned” 也许出自原文别处，但如果没有对应锚点，建议回到已核实的 “knows” 措辞，或者注明 “learned” 出自哪一节。
+
+### 6.4 复核结论
+
+```text
+R1–R8                    = 已落实（R5 余 P1）
+Hobson–Friston 刻画范围  = 足够窄
+伪新残余                 = 已彻底清除
+作者来源标注             = 还差 P1 一处（两个位置）
+建议                     = 修正 P1 后，内容层面可以合并；N1–N2 可在同一次推送中顺带处理
+```
