@@ -351,6 +351,16 @@ A fair separation should include both sides:
       + reanchoring after a meta-awareness cue
       + lucid-onset meta-awareness separated from content-control success
 
+Strongest separating design case:
+
+    meta-awareness / lucidity returns
+    while
+    frame exit / reinterpretation / reanchoring remains impaired
+
+This is the cleanest candidate dissociation because simple contradiction noticing or meta-awareness can still be absorbed by ordinary metacognitive-control accounts. A lucid dreamer who knows "this is a dream" yet still cannot successfully leave, reinterpret or reanchor the operative frame would therefore be more informative for Reading C than lucidity alone.
+
+This remains a **design candidate**, not an established empirical result and not a new SRT residual.
+
 Fail-closed condition:
 
 > **If C-sensitive readouts do not dissociate from ordinary deliberate / executive / metacognitive-control loss, Reading C is absorbed as a special case of Reading A at this explanatory job.**
