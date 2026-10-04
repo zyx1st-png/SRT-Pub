@@ -103,7 +103,7 @@ When answering or editing a non-simple SRT question:
 - `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
-- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md` + `Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md`（retyping input only: sacred saturation vs larger-relational-unification OPEN; ego dissolution != Bearer verdict; spirituality-as-reopening routes to existing owners and CΨ）
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_2026-10-04.md` + `Operations/Proposals/SRT_PREOBJECT_UNFINISHEDNESS_SACRED_SPIRITUALITY_BOUNDED_RESEARCH_ROUTE_2026-10-04.md`（retyping input only: sacred saturation vs larger-relational-unification OPEN; no ego-dissolution -> Bearer verdict; spirituality-as-reopening routes to existing owners and CΨ）
 - `_SRT_CROSS_DOMAIN_MATRIX.md`
 
 ### Boundary
