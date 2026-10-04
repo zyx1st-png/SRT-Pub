@@ -135,7 +135,7 @@ Primary routing:
 `Operations/Audits/SRT_DREAM_PSYCHEDELIC_MATURE_NEIGHBOR_CONTINUATION_AUDIT_2026-10-04.md`
 
 Future revival trigger:
-when the neutral cognition programme freezes its next E2/E3/E4 protocol or formal comparator set, this source should be re-entered as a mandatory H2+ structure-learning baseline.
+when the neutral cognition programme freezes its next E2/E3/E4 protocol or formal comparator set, this source should be re-entered as a mandatory strong H2 structure-learning baseline.
 
 ## 7. Hard guards
 
