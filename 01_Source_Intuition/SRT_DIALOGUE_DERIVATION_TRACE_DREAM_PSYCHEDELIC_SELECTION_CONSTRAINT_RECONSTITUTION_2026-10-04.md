@@ -20,6 +20,10 @@ dependency:
   - Materials/2026/SRC_2026_10_04_CogSci_Christoff_Spontaneous_Thought_Dynamic_Framework.md
   - Materials/2026/SRC_2026_10_04_Psychedelic_CarhartHarris_Friston_REBUS.md
   - Materials/2026/SRC_2026_10_04_Sleep_Bonamino_Lucid_Dream_Control.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Rechtschaffen_Dream_Single_Mindedness.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Maquet_REM_Functional_Neuroanatomy.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Muzur_Prefrontal_Cortex_in_Sleep.md
+  - Materials/2026/SRC_2026_10_04_Sleep_Filevich_Lucid_Dreaming_Metacognition.md
   - Materials/2026/SRC_2026_10_04_CogSci_Friston_Active_Inference_Artificial_Reasoning.md
 tags: [Dream, Psychedelic, Selection, Constraint, Reselectability, Reanchoring, Position, Cognition, SourceIntuition]
 ---
@@ -81,11 +85,50 @@ Status after R5 adjudication: **PRIMARY AUTHOR INTENT.**
 
 Candidate meaning:
 
-    some waking mechanisms that reopen, compare, reframe or reanchor an already formed organization are weakened
+    some waking mechanisms that notice the current frame as revisable,
+    compare alternatives, reframe or reanchor an already formed organization are weakened
     -> rich generation may continue
-    -> escape from an inherited organization may become harder
+    -> escape from the currently inherited organization may become harder
 
-NEURAL35 and the current cognition programme provide guards for this reading.
+External mature-neighbor pressure now includes:
+
+- Rechtschaffen's dream single-mindedness: weak reflective awareness, weak simultaneous alternative-thought access and thematic persistence;
+- Maquet et al.'s REM neuroimaging: reduced dorsolateral-prefrontal activity as an implementation-level pressure only;
+- Muzur, Pace-Schott & Hobson: diminished dream self-awareness linked to REM dorsolateral-prefrontal deactivation;
+- Filevich et al. plus the existing Bonamino & Peters guard: lucid-dreaming ability / meta-awareness and control-related dimensions must be separated.
+
+NEURAL35 and the current cognition programme remain internal guards, not the only neighbors.
+
+#### Reading A vs Reading C — required operational separation
+
+These readings may co-occur but are not identical by definition.
+
+Reading A:
+
+    reduced deliberate constraint
+    -> content / trajectory transitions are less deliberately constrained
+    -> greater spontaneous variability can occur
+
+Reading C:
+
+    current frame is less likely to be noticed as revisable
+    -> contradiction / anomaly may fail to trigger reframing
+    -> alternative framing may fail to become available or authoritative
+    -> reanchoring / frame exit may remain weak even while content is rich or rapidly changing
+
+Candidate probe families, if this route is ever operationalized:
+
+- within-frame transition variability / spontaneity;
+- contradiction or impossibility detection;
+- spontaneous generation of an alternative interpretation / frame;
+- frame-exit or reanchoring after anomaly or meta-awareness cue;
+- lucid-onset changes in meta-awareness versus successful control.
+
+Fail-closed rule:
+
+> **If no probe can dissociate Reading C from ordinary loss of deliberate / executive / metacognitive control, Reading C must be treated as a special case of Reading A at this explanatory job.**
+
+This rule does not create a new SRT residual. It only prevents the author-selected interpretation from being protected by wording alone.
 
 ### Hard correction applying to all three
 
@@ -149,7 +192,25 @@ Disposition:
 
 is mature-neighbor territory, not an SRT novelty claim.
 
-### 4.3 Psychedelic relaxation of higher-level constraints
+### 4.3 Reflective monitoring / frame-exit limits in dreaming
+
+Rechtschaffen source-owns a classic phenomenological description of dream single-mindedness, including reduced reflective awareness, lack of simultaneous alternative thoughts / images and thematic-track persistence.
+
+Maquet et al. provide primary REM neuroimaging evidence including broad dorsolateral-prefrontal reduction. Muzur, Pace-Schott & Hobson explicitly connect REM dorsolateral-prefrontal deactivation to diminished dream self-awareness.
+
+Filevich et al. link lucid-dreaming ability with frontopolar systems also recruited during waking thought monitoring. Bonamino & Peters independently require lucidity, pre-reflective agency and control to remain separate.
+
+Disposition:
+
+    rich dream generation
+    + reduced reflective noticing / alternative-frame access
+    = MATURE-NEIGHBOR TERRITORY AT THIS EXPLANATORY JOB
+
+Therefore Reading C cannot earn SRT novelty merely from "generation continues while the dreamer does not step out of the frame."
+
+Any stronger C claim must first survive the A-vs-C fail-closed separation in §2.
+
+### 4.4 Psychedelic relaxation of higher-level constraints
 
 REBUS already models psychedelic states through reduced precision of high-level priors / beliefs and increased influence of intrinsic / bottom-up information.
 
@@ -160,7 +221,7 @@ Disposition:
 
 is SOURCE-OWNED AT THIS EXPLANATORY JOB.
 
-### 4.4 Lucidity / agency / control
+### 4.5 Lucidity / agency / control
 
 Bonamino & Peters separate:
 
@@ -179,7 +240,7 @@ Disposition:
     != successful control
     != SRT Position reconstitution
 
-### 4.5 Problem / model restructuring
+### 4.6 Problem / model restructuring
 
 The existing Aha / insight package and mature structure-learning literature already pay substantial problem-representation restructuring.
 
@@ -189,7 +250,7 @@ Disposition:
     != changing the problem representation
     != independently established Position reconstitution
 
-### 4.6 Structure learning in Active Inference
+### 4.7 Structure learning in Active Inference
 
 Friston et al. (2026) explicitly extend active inference to structure learning / rule discovery under a supplied generative-model family.
 
