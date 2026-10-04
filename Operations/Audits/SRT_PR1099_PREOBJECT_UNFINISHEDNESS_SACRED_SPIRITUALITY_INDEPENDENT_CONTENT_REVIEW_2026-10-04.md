@@ -416,3 +416,58 @@ routing    STATUS 簿记行（CURRENT NEXT 不变）+ 检索档案 / 认知程�
 ```
 
 以上均为作者可选的修正；本评审不代为执行。
+
+## 7. 窄范围复审 — 修订后的 #1099 head `bcd63d3a`
+
+> **范围**：只核对 F2–F5 是否关闭、F1 / F6–F10 是否已处理，以及修订是否引入新的 blocker。两份文件全文重读，四个路由面只看 diff。仍是只读，不修改 #1099。
+
+```text
+review target: bcd63d3a (base 30ba40e0); 8 commits; 6 files, +1142
+CI governance-preflight on bcd63d3a = success; 本地全克隆重跑 failures=0
+```
+
+### 7.1 逐项结论
+
+```text
+F2  HP-B 外的新构造         = CLOSED
+    AJ §4、RT §6–§7：增量限定为“HP-B gate-geometry 组织上的统一性条件”；
+    不登记新术语；sufficiency 未主张；
+    gate-geometry hook 只加了 routing-only 指针（l.533–537），
+    明写 “no new HP-B term, landed kernel condition, sufficiency claim or P-level upgrade”，
+    属于 STATUS l.404–406 冻结期允许的 routing。
+F3  必要性证伪口              = CLOSED
+    RT §6：以 consciousness present AND unity absent 为唯一证伪形式；
+    列出 MPE、disunity、overflow、no-report 等压力案例；
+    明确高整合无意识对照只测充分性；RT §17.4–5 有对应失败条件；
+    A0-Q「是必要条件。」已保存，并附问题语境。
+F4  Bearer 类型               = CLOSED
+    AJ §3 区分 One/A2 与 Bearer/A3；AJ §9 / §11、RT §10 双向阻断
+    （report / continuity / writeback 都不能证明 Bearer 持续）；
+    Bearer 问题退回 P/E burden；继承 NEURAL35 的不对称谨慎。
+F5  pre-object / O0          = CLOSED
+    AJ §3：primitive Selection = O0 + S0；pre-object != contentless；
+    felt direction != O0 读出 / 证据；“指向”标为解释性；AJ §15 加了对应护栏。
+F1  内部 owner 回收            = ADDRESSED（AJ §10 crosswalk、RT §9 / §16；Fana 登记为 OPEN CONFLICT；tremendum 维度恢复）
+F6  跨域 grammar              = ADDRESSED（RT §0 移出成功判据；AJ §14、RT §12 HOLD，确认计数 0）
+F7  成熟邻居                   = ADDRESSED（RT §2–§5、§18；局部释放降为 control；Ghibellini & Meier 修正已写入）
+F8  “能量势差”与 CΨ            = ADDRESSED（AJ §2 类型 OPEN 并列候选；CΨ 指回 RQ-2026-08-A05）
+F9  provenance               = ADDRESSED（AJ §0 的 A0-Q / A1 / M 分层；英文链默认为 M）
+F10 路由 / frontmatter        = ADDRESSED（U/N-mode 字段齐全；STATUS 簿记、认知程序 §0.0d、context router 双入口；CN-5 / Facing v0.3 已注明）
+
+NEW BLOCKER                  = NONE
+```
+
+### 7.2 剩余小问题（非阻断）
+
+1. **RT §6 l.224 写的是 `not sufficient`，AJ §4 写的是 `sufficiency = NOT CLAIMED`。** 两者含义不同：作者只回答了必要性（A0-Q 5），A0-Q 3 的“从而获得意识”读起来反而偏向充分性。建议 RT 也改为 `sufficiency not claimed`，避免把未问过的问题写成作者的否定。
+2. **AJ §3 l.168 / l.173 的措辞。** “in the present author reading / author’s present view” 把“A3 层的 meaningful-for-this-continuation”归给了作者。A0-Q 4 原话是更强的“差异**只**在 bearer perspective 下才有意义”，而“ordinary consequentiality 不依赖 Bearer”是为对齐 STATUS §6–§7 做的类型收窄（D-5(a)）。如果作者没有亲自确认 D-5(a)，这一句应标 M（或作者确认后标 A1），不要写成作者视角。D-1 / D-3 / D-4 / D-6 都是 fail-closed 的路由或 HOLD，不改变作者原话含义，不受此影响。
+3. **`_SRT_CONTEXT_ROUTER.md` l.106 的 “ego dissolution != Bearer verdict” 有歧义**，可能被读成已经得出“自我消融 ≠ Bearer”的裁决。建议与 RT §19 对齐，写成 “no ego-dissolution → Bearer verdict”。
+4. **可选**：音乐 companion 在 `_SRT_AGENT_RETRIEVAL_PROFILE.md` 的认知条目里有第 7 项，本 companion 没有对应项。context router 已经覆盖，所以不阻断。
+
+### 7.3 复审 verdict
+
+```text
+F2–F5 = CLOSED
+NEW BLOCKER = NONE
+RECOMMENDATION = MERGEABLE after (or alongside) nits 1–3; nit 2 needs a one-line author confirmation or an M label
+```
