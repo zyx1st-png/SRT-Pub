@@ -70,7 +70,7 @@ Not source-owned:
 
     dreaming generally preserves strong automatic / affective relational structure
 
-Therefore the user's phenomenological intuition that old affective / authority structures can remain dominant in dreams requires a different evidential route. It must not be attributed to Christoff 2016.
+Therefore the dialogue-generated phenomenological hypothesis that old affective / authority structures can remain dominant in dreams requires a different evidential route. This is **not an author quote** and must not be attributed to Christoff 2016.
 
 The source also does not establish:
 
