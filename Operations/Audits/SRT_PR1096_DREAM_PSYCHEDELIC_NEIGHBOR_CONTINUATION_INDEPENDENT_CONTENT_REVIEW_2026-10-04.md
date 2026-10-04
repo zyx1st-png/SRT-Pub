@@ -230,3 +230,55 @@ Hobson–Friston 刻画范围  = 足够窄
 作者来源标注             = 还差 P1 一处（两个位置）
 建议                     = 修正 P1 后，内容层面可以合并；N1–N2 可在同一次推送中顺带处理
 ```
+
+### 6.5 作者对 R5 的裁决（#1096 head `851c01e4`）
+
+作者在 #1097 上回复了 R5，#1096 随后在 `25aec5a` / `851c01e` 中把裁决落进了仓库：
+
+```text
+作者原话（2026-10-04）： “r5 c”
+裁决： “缺少选择”的主要本意 = Reading C：reanchoring / reselective control 减弱
+Reading A（deliberate / meta 约束减弱）、Reading B（外部 / 感觉选择压力减弱）
+       = 次要的成熟邻居机制，可能同时出现，但不是作者原句的主要本意
+```
+
+**落地方式核对：合格。**
+
+- 作者原话 “r5 c” 逐字保存在 trace §2；trace 和审计 frontmatter 的 `author_status` 都限定为 “R5 interpretive choice C author-adjudicated”，邻居减法仍标为机器评审，没有把这次裁决扩大成对整个包的确认。
+- trace §10 把裁决列为本 trace 唯一确立的作者层决定；trace §5 和审计 §2 都写明这次澄清不产生新的判别器或残余，科学路由仍是 CN-2。这和 6.2 (2) 的结论一致。
+- Hobson–Friston 在 trace §2 / Reading B 和审计 §8.2 中降为 “secondary mature-neighbor mechanism, not the primary intended meaning”。处理正确。
+- 这次裁决也了结了原 R5 后半提出的问题：原 §11 把作者的问题改写成“哪种组织能改变自身后续生成的条件”，那是机器做的重定向；现在作者选了 C，等于作者本人认可了这一方向。
+
+**裁决带来的后续问题。** 作者选定 C 之后，#1096 的邻居减法仍然主要围绕 A（Christoff）和 B（Hobson–Friston）组织。对 C 本身，目前只列了 NEURAL35 和 cognition programme 这两个**仓库内**的守卫。按 U-mode 的要求，作者选定的读法也需要先做同靶点的成熟邻居减法：
+
+- **A1（中）C 的外部成熟邻居没有列出。** 在梦境一侧，“生成照常、但难以察觉 / 重构 / 跳出当前组织”这一职能已有现成的成熟解释：
+  - 梦境的 single-mindedness，即对怪异内容不加批判地接受（Rechtschaffen 1978, *Sleep*）；
+  - REM 期背外侧前额叶失活与反思 / 现实检验减弱（Maquet et al. 1996, *Nature*；Muzur, Pace-Schott & Hobson 2002, *Trends in Cognitive Sciences*）；
+  - 把清醒梦看作元认知恢复的文献（如 Kahan & LaBerge 1994）。
+
+  值得注意的是，清醒（意识到“这是梦”）本身就是一次典型的 reanchoring / 现实再校准，所以 Bonamino & Peters 那一行实际上也是 C 的直接比较项。在迷幻剂一侧，REBUS 管的是 opening，NEURAL35 管的是 `reopening != reselectability`，覆盖是够的。建议在审计 §3 加一行 “reduced reflective / reality-monitoring / reframing during dreaming”，owner 写上述文献，作用写 ownership comparator 加 dream-assay operational baseline。这些文献本评审没有在本 session 对照全文核实，只作为建议的比较项列出。
+
+- **A2（中）需要写明 C 和 A 在操作上怎么区分，否则 C 会被 A 吸收。** “reopen / compare / reframe / reanchor” 都是典型的执行 / 元控制功能，单看措辞，C 很容易被读成 A 的子集。如果那样，Christoff 加上前额叶失活就整体支付了 C。两者其实可以区分，而且部分预测方向相反：
+  - A（deliberate 约束减弱）在 Christoff 框架下预测**更自由、更快**的转移；
+  - C 预测**更难退出**当前继承的组织：不察觉不一致、不重构、不回锚，表现为对当前框架的黏着。
+
+  建议在 trace §2 Reading C 下补一句这个区分，并注明：如果在具体探针上分不开，就回落为 A 的子情形（SOURCE-OWNED AT THIS EXPLANATORY JOB）。这只是让作者选定的读法可检验，不需要新残余，也不改变 CN-2 路由。
+
+- **A3（低）** 审计 §3 矩阵中 Hobson–Friston 那一行的最后一列仍写 “same-target dream neighbor”。trace §2 已改为 “same-target neighbor for dream-specific offline-generation mechanisms”，建议矩阵也同步，写成 “same-target for Reading B / offline-generation mechanism; not the author's primary meaning”。
+
+**6.3 中的 P1、N1、N2 在 `851c01e4` 上仍未处理：**
+
+- P1：Christoff 卡片第 73 行仍写 “the user's phenomenological intuition…”；Material Log 的 Christoff 行仍写 “用户关于旧情绪/权威结构反复占优的现象学直觉”。这次作者对 R5 的回复只有 “r5 c”，没有涉及这条直觉，所以 P1 的两种修法仍然适用。
+- N1：审计 §1 仍是笼统的 “PASS AT CURRENT BOUNDED DEPTH”；§3 仍写 “Hobson & Friston 2012/2014”。
+- N2：Friston 卡片第 71 和 89 行仍写 “already learned”。
+
+### 6.6 更新后的结论
+
+```text
+R1–R8                      = 已落实；R5 已由作者裁决（主要本意 = C）
+作者裁决的落地方式         = 合格（原话保存、范围限定、不重开残余）
+伪新残余                   = 已清除，作者裁决后仍是如此
+作者来源标注               = 还差 P1
+作者选定读法 C 的邻居减法  = 尚未完成（A1、A2）
+建议                       = 修正 P1、A1、A2 后，内容层面可以合并；A3、N1、N2 可在同一次推送中顺带处理
+```
