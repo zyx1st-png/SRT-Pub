@@ -9,12 +9,14 @@ claim_mode: source_intuition
 created: 2026-10-04
 updated: 2026-10-04
 research_mode: U
-author_status: exact_seed_quote_preserved; later repeated_continue_or_agree_accepts_directional_continuation_not_every_machine_sentence
+author_status: exact_seed_quote_preserved; later_continue_or_agree_authorizes_directional_continuation_only; machine_decomposition_and_neighbor_subtraction_not_author_adjudication
 dependency:
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
+  - Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md
   - Neuroscience/patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md
   - Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md
+  - Philosophy/SRT_Philosophy_Foundations.md
   - Materials/2026/SRC_2026_10_04_CogSci_Christoff_Spontaneous_Thought_Dynamic_Framework.md
   - Materials/2026/SRC_2026_10_04_Psychedelic_CarhartHarris_Friston_REBUS.md
   - Materials/2026/SRC_2026_10_04_Sleep_Bonamino_Lucid_Dream_Control.md
@@ -26,7 +28,7 @@ tags: [Dream, Psychedelic, Selection, Constraint, Reselectability, Reanchoring, 
 
 > **Role:** preserve the author's 2026-10-04 intuition and the bounded machine-side derivation that followed it.
 >
-> **Authority guard:** the quoted author sentence below is A0-Q provenance. The analytic decomposition, mature-neighbor subtraction and proposed empirical routing are machine synthesis unless separately author-adjudicated. Repeated author responses such as “认同，继续” authorize continuation of this direction; they do not convert every machine-generated sentence into independent author ontology.
+> **Authority guard:** the quoted author sentence below is A0-Q provenance. The analytic decomposition, mature-neighbor subtraction and empirical routing below are machine synthesis unless separately author-adjudicated. Repeated author replies such as “认同，继续” authorize directional continuation of the discussion; they do not convert each machine-generated candidate into author ontology or a converged research decision.
 
 ## 1. Author seed
 
@@ -34,43 +36,63 @@ Exact author statement:
 
 > **“我觉得梦境和迷幻剂都是一种缺少选择的内部结构展示。”**
 
-The live intuition is therefore not stored as a finished definition. It is stored as a pressure question:
+This seed is preserved as an intuition, not a finished definition.
 
-> when ordinary waking selective organization is altered or weakened, what remains capable of generating structured experience and behavior, and what stronger operation is missing when a system can still generate richly but cannot readily reorganize the conditions of its own later generation?
+## 2. “缺少选择” has at least three live readings
 
-## 2. First correction — “缺少选择” cannot mean primitive Selection is absent
+The machine-side continuation should not collapse the author's wording into one interpretation.
 
-Current repository owners block the naive reading:
+### Reading A — reduced deliberate / meta-level constraint
 
-    dream / psychedelic state
-    = no Selection
+Candidate meaning:
 
-The safer current decomposition is:
+    ordinary waking deliberate / reflective control is reduced
+    -> internally generated dynamics unfold with less deliberate constraint
 
-    altered deliberate / meta-level constraint
-    + altered anchoring / reality calibration
-    + altered candidate accessibility / authority
-    -> different expression of already formed organization
+Christoff et al. are a mature neighbor for this reading.
 
-while:
+### Reading B — reduced external / sensory selection pressure
+
+Candidate meaning:
+
+    exteroceptive sampling / sensory error constraints are strongly reduced
+    -> an internal generative model runs more offline
+    -> internally generated organization becomes more visible in dream experience
+
+Hobson & Friston's sleep / dreaming predictive-processing route and later Bayesian-model-reduction work are direct mature neighbors for this reading.
+
+**Author status:** OPEN. This PR does not decide whether Reading B is what the author primarily meant by “缺少选择”.
+
+### Reading C — reduced reanchoring / reselective control
+
+Candidate meaning:
+
+    some waking mechanisms that reopen, compare, reframe or reanchor an already formed organization are weakened
+    -> rich generation may continue
+    -> escape from an inherited organization may become harder
+
+NEURAL35 and the current cognition programme provide guards for this reading.
+
+### Hard correction applying to all three
+
+None of these readings establishes:
 
     primitive Selection absent
-    = NOT ESTABLISHED
 
-and:
+Therefore:
 
-    rich internal generation
-    != strong active recutting / reselectability
+    dream / psychedelic state
+    = no primitive Selection
 
-This preserves the author's intuition without contradicting the current Selection architecture.
+is NOT ESTABLISHED.
 
-## 3. Second correction — display is perturbation-conditioned, not transparent revelation
+## 3. Display is perturbation-conditioned, not transparent revelation
 
 Neither dreaming nor psychedelic perturbation is treated as a transparent window onto a hidden “true internal structure.”
 
-Current bounded reading:
+Current bounded machine reading:
 
-    latent / retained organization
+    retained / learned organization
     x state-specific perturbation
     -> observed dream / psychedelic organization
 
@@ -78,46 +100,72 @@ Therefore:
 
 - dream content is not an unedited unconscious recording;
 - psychedelic content is not a privileged ontology readout;
-- state change may reveal dependencies while also actively creating new state-specific organization.
+- a perturbation may expose dependencies while also creating state-specific organization.
 
-The useful method question is comparative:
+The useful scientific question is comparative:
 
 > which organization survives, disappears, reappears or changes under different perturbations?
 
-## 4. Mature-neighbor subtraction accepted during the dialogue
+## 4. Machine-proposed mature-neighbor subtraction carried under directional continuation
 
-The following broad claims are not retained as SRT novelty claims.
+The following subtractions are machine review, not independent author adjudications.
 
-### 4.1 Dreaming as reduced deliberate constraint
+### 4.1 Reduced deliberate constraint
 
-Christoff et al.'s dynamic framework already provides a mature account in which deliberate and automatic constraints can dissociate and dreaming occupies a low-deliberate-constraint region.
+Christoff et al. source-own a dynamic framework in which deliberate and automatic constraints are distinct. Dreaming sits at minimal deliberate constraint, while automatic constraint can range at low-to-medium levels.
 
 Disposition:
 
-    “less deliberate control -> structured automatic unfolding”
+    reduced deliberate constraint in dreaming
     = SOURCE-OWNED AT THIS EXPLANATORY JOB
 
-### 4.2 Psychedelic relaxation of higher-level constraints
+But:
+
+    strong automatic / affective organization in a particular dream
+    = NOT SOURCE-OWNED BY CHRISTOFF 2016 AS A GENERAL DREAM CLAIM
+
+### 4.2 Offline internal generative-model operation during sleep
+
+Hobson & Friston already place dreaming / REM sleep inside a predictive / free-energy framework in which sensory input is reduced and internal generative-model optimization can proceed offline. Friston et al. (2026) likewise describe Bayesian Model Reduction as an offline process proposed for introspection or sleep.
+
+Disposition:
+
+    reduced sensory constraint
+    -> offline internal generative-model operation / reduction
+
+is mature-neighbor territory, not an SRT novelty claim.
+
+### 4.3 Psychedelic relaxation of higher-level constraints
 
 REBUS already models psychedelic states through reduced precision of high-level priors / beliefs and increased influence of intrinsic / bottom-up information.
 
 Disposition:
 
-    “constraint relaxation -> normally suppressed material gains influence”
-    = SOURCE-OWNED AT THIS EXPLANATORY JOB
+    constraint relaxation
+    -> normally weak / suppressed intrinsic material gains influence
 
-### 4.3 Lucidity / agency / control
+is SOURCE-OWNED AT THIS EXPLANATORY JOB.
 
-Bonamino & Peters explicitly separate lucidity, agency and dream control.
+### 4.4 Lucidity / agency / control
+
+Bonamino & Peters separate:
+
+    lucidity
+    sense of agency
+    agentic vs non-agentic control
+    successful control
+
+The source treats agency as a more basic, pre-reflective sense of acting in the dream and does not equate it with deliberate control.
 
 Disposition:
 
     lucidity
-    != agency
+    != sense of agency
+    != deliberate / agentic control
     != successful control
     != SRT Position reconstitution
 
-### 4.4 Problem / model restructuring
+### 4.5 Problem / model restructuring
 
 The existing Aha / insight package and mature structure-learning literature already pay substantial problem-representation restructuring.
 
@@ -127,55 +175,66 @@ Disposition:
     != changing the problem representation
     != independently established Position reconstitution
 
-### 4.5 Structure learning in Active Inference
+### 4.6 Structure learning in Active Inference
 
 Friston et al. (2026) explicitly extend active inference to structure learning / rule discovery under a supplied generative-model family.
 
 Disposition:
 
-    Active Inference = fixed-menu choice only
-    = RETIRED COMPARATOR CARICATURE
+    Active Inference = fixed-menu policy choice only
+
+is a RETIRED COMPARATOR CARICATURE.
 
 ## 5. What remains valuable in the author's intuition
 
-After subtraction, the strongest retained question is not whether dreams or psychedelics reveal internal structure.
+After mature-neighbor subtraction, this dialogue does **not** currently earn a new dream-specific or psychedelic-specific SRT discriminator.
 
-It is:
+Its main value is to sharpen a pre-existing neutral cognition question:
 
-> **What distinguishes rich unfolding inside an inherited organization from a stronger change that reorganizes the conditions under which later distinctions, candidates, relations and continuations are generated?**
+> when a system is richly generative, what evidence would distinguish ordinary state / representation / model-structure change from an H3-level effective geometry that adds prediction, intervention leverage or recursive consequences beyond a sufficiently rich H1/H2 account?
 
-This is compatible with the current cognition programme's broader burden:
+That burden is already owned by CN-2.
 
-- coordinated whole-system geometry;
-- held-out prediction across local probes;
-- causal perturbation;
-- recursive recutting after consequence feedback.
+Therefore the current dialogue contributes:
 
-## 6. Dream / psychedelic dissociation as an assay idea
+    assay pressure
+    + comparator strengthening
+    + phenomenological candidate cases
 
-The dialogue generated the following non-authoritative assay logic.
+not:
+
+    a new exact OPEN residual
+    or a new Selection mechanism.
+
+## 6. Dream / psychedelic dissociation as a bounded assay idea
+
+The following remains non-authoritative design prose.
 
 ### Ordinary dream
 
-Candidate use:
+A dream may preserve:
 
-    rich generation preserved
-    + local goals / decisions preserved
-    + strong automatic affective structure possible
-    + deliberate/meta-level recutting may be reduced
+    rich internally generated content
+    + local action / goal structure
 
-This is a subtraction condition, not evidence that Selection is absent.
+while showing:
+
+    minimal deliberate constraint
+    + reduced external sensory calibration
+
+Any additional claim that an old authority / threat / concern geometry remains unusually dominant is a phenomenological hypothesis requiring its own source and measurement; it is not licensed by Christoff 2016.
 
 ### Lucid dream
 
 Separate at minimum:
 
     awareness that this is a dream
-    deliberate agency
-    successful content / action control
-    stronger relation-level or operative-organization recutting
+    pre-reflective sense of agency
+    agentic vs non-agentic dream control
+    success of content / action control
+    any independently operationalized stronger recutting measure
 
-If the first three can vary independently of the fourth, lucid dreaming becomes a useful negative control against equating control with stronger reconstitution.
+A change in the first four does not by itself establish the fifth.
 
 ### Psychedelic perturbation
 
@@ -184,36 +243,62 @@ Use only under the existing NEURAL35 guard:
     reopening
     != reselectability
 
-Candidate accessibility can increase while stable reanchoring remains weak. This is therefore a perturbation window, not a positive example of stronger Selection.
+Candidate accessibility can increase while stable reanchoring remains weak. This is a perturbation window, not a positive example of stronger Selection.
 
-## 7. The stronger unresolved question
+## 7. Scientific remainder after this dialogue
 
-The dialogue converged on a sharper residual:
+The earlier machine-generated “sharper residual” is withdrawn as a new residual.
 
-> Can a continuing organization undergo a coordinated change in the common conditions of later grouping, candidate formation, relevance, boundary and feasible continuation that survives strong flexible latent-state / structure-learning baselines?
+Correct routing:
 
-If yes, a later SRT mapping may ask whether that event is compatible with Selection-position / recursive selectability reconstruction.
+    dream / psychedelic examples
+    -> return to existing CN-2
+    -> H1 implementation variables
+    -> H2 latent / representational / generative-model organization
+    -> H3 effective geometry consequences
+    -> reduction test
+    -> increment test
+    -> recursive test
 
-If no, the result remains ordinary state / model / control updating and no stronger SRT relation is earned.
+Important strengthening:
 
-## 8. Cross-formation continuity — retained only as OPEN pressure
+    H2 reduction base
+    must include flexible structure learning / Bayesian Model Reduction
+    and sleep/offline generative-model mechanisms where relevant.
 
-The dialogue briefly sharpened a possible wider question:
+“Coordinated change across several probes” is not sufficient by itself, because a structure-learning model can also produce coordinated downstream changes.
 
-> is the relation that forms a selectable organization before a completed position exists structurally continuous with the relation by which a formed position later reconstructs selectability?
+This PR does not manufacture a directional SRT prediction merely to preserve a residual.
 
-This must remain OPEN.
+## 8. Pre-formation / post-formation recurrence — overlap pressure only
 
-Important correction:
+The dialogue briefly raised whether one dependency might span the formation of a selectable organization and later reconstruction within a formed organization.
 
-- Simondon already supplies transduction, individuation and Operation -> Structure -> later Operation recurrence;
-- enactivism / autonomy already supplies identity -> perspective -> sense-making;
-- SIF already supplies field-of-relevant-affordances organization;
-- Active Inference already supplies model-relative structure learning.
+That thought does not currently survive mature-neighbor subtraction as a distinct SRT residual.
 
-Therefore SRT cannot claim novelty merely from “formation continues after formation.”
+Simondon already supplies:
 
-Any future SRT increment must be narrower and same-target.
+- preindividual metastability / retained preindividual charge;
+- individuation;
+- Operation -> Structure -> later Operation;
+- later psychic / collective individuation and transindividual continuation.
+
+Therefore:
+
+    formation before a completed individual
+    + later operation through / beyond formed structure
+
+is not SRT novelty.
+
+Adding SRT vocabulary such as:
+
+    position-indexed
+    consequence-bearing
+    objectification
+
+does not by itself create a same-target increment.
+
+No “cross-formation continuity” term-of-art or open construct is created by this trace.
 
 ## 9. Repository routing
 
@@ -240,10 +325,13 @@ This trace does NOT establish:
 - a new Selection definition;
 - “Selection withdrawal” as a term-of-art;
 - “constraint-release tomography” as a term-of-art;
+- “cross-formation continuity” as a term-of-art;
 - dream = L0 window;
 - psychedelic state = closer to truth;
 - latent generative structure as a new ontology entity;
 - Position reconstitution as an empirical result;
+- Hobson–Friston / Active Inference as complete explanations of dreaming;
+- which of Readings A/B/C best captures the author's original “缺少选择” wording;
 - HP-B change;
 - Bearer change;
 - canonical edit;
@@ -252,8 +340,12 @@ This trace does NOT establish:
 
 ## 11. Root return
 
-The surviving value of the original intuition is methodological and architectural:
+The machine-side conclusion after review is narrower than the first derivation:
 
-> **A system can remain richly generative while some forms of active reanchoring, reframing or recutting are weakened. The scientifically useful question is therefore not whether generation exists, but which organization is merely unfolding and which organization can change the conditions of its own later generation.**
+> **Dreaming and psychedelic states are useful because they perturb different constraints on ongoing generative organization, but the broad ideas of reduced deliberate control, offline internal generation, high-level-prior relaxation, structure learning and problem restructuring already have mature owners. This dialogue therefore returns to CN-2 rather than creating a new SRT residual.**
 
-This question returns directly to the already-active neutral cognition programme rather than opening a new dream / psychedelic programme.
+One author-level interpretive branch remains deliberately unresolved:
+
+> In the original sentence, did “缺少选择” primarily mean reduced deliberate/meta control, reduced external/sensory selection pressure, reduced reanchoring/reselective control, or some combination?
+
+The repository does not answer that question on the author's behalf.
