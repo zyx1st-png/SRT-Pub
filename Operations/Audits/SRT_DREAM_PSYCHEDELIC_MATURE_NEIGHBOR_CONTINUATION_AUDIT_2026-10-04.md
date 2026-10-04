@@ -9,7 +9,7 @@ claim_mode: bounded_convergence_audit
 created: 2026-10-04
 updated: 2026-10-04
 research_mode: U
-author_status: follows_2026_10_04_directional_continuation_only; detailed_neighbor_mapping_and_subtraction_are_machine_review
+author_status: R5_reading_C_author_adjudicated_2026_10_04; detailed_neighbor_mapping_and_subtraction_are_machine_review
 dependency:
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_DREAM_PSYCHEDELIC_SELECTION_CONSTRAINT_RECONSTITUTION_2026-10-04.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
@@ -69,6 +69,13 @@ The earlier wording “exact OPEN residual” is withdrawn.
 “Coordinated change across multiple probes” is not itself discriminating: sufficiently flexible structure learning can also produce coordinated downstream changes. This PR therefore does not invent a directional SRT prediction merely to preserve a residual.
 
 SRT interpretation remains downstream.
+
+Author-source clarification after independent review R5:
+
+    primary intended meaning of “缺少选择”
+    = reduced reanchoring / reselective control (Reading C)
+
+This author adjudication sharpens provenance only. It does not convert the dream / psychedelic route into a new discriminator. Readings A (reduced deliberate constraint) and B (reduced sensory / external constraint) remain mature-neighbor mechanisms that may co-occur in particular states.
 
 ## 2. Internal owner consistency
 
@@ -329,7 +336,7 @@ A particular person's recurrent affective / authority structure is therefore a s
 
 ### 8.2 Offline generative-model neighbor
 
-Hobson & Friston provide the closer same-target dream neighbor for the “internal structure display” reading:
+Hobson & Friston provide the closer same-target dream neighbor for the **offline internal-generation / reduced sensory-constraint mechanism**. After author R5 adjudication, this is a secondary mature-neighbor mechanism rather than the primary intended meaning of “缺少选择”:
 
     reduced sensory input / waking sampling
     -> internally generated dream dynamics
