@@ -9,16 +9,18 @@ claim_mode: bounded_convergence_audit
 created: 2026-10-04
 updated: 2026-10-04
 research_mode: U
-author_status: follows_2026_10_04_author_accepted_continuation_direction; detailed_neighbor_mapping_is_machine_review
+author_status: follows_2026_10_04_directional_continuation_only; detailed_neighbor_mapping_and_subtraction_are_machine_review
 dependency:
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_DREAM_PSYCHEDELIC_SELECTION_CONSTRAINT_RECONSTITUTION_2026-10-04.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md
   - Operations/Audits/SRT_ACTIVE_SELECTABLE_SPACE_STRONGEST_NEIGHBOR_PASS20_2026-09-10.md
+  - Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md
   - Operations/Audits/SRT_L0_FACING_WHOLE_FIELD_FORMATION_TRIAD_AUDIT_2026-09-26.md
   - Operations/Audits/SRT_L0_FACING_FIELD_FORMATION_AUTONOMY_CONSTRAINT_CLOSURE_PRESSURE_2026-09-26.md
   - 03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md
   - Philosophy/hooks/PH_CONSC_Minimal_Phenomenal_Topology_Foreground_Mediated_Position_Reconstitution_Hook_2026-09-26.md
+  - Philosophy/SRT_Philosophy_Foundations.md
   - Materials/2026/SRC_2026_06_11_Philosophy_Simondon_Individuation_UMinnesota.md
   - Materials/2026/SRC_2026_08_23_Neuro_Becker_Aha_Representational_Reconstitution.md
   - Materials/2026/SRC_2026_08_23_Philosophy_Nave_Drive_to_Survive.md
@@ -31,40 +33,40 @@ tags: [Dream, Psychedelic, MatureNeighbor, ActiveInference, Simondon, Enaction, 
 
 # Dream / psychedelic intuition — internal consistency and mature-neighbor continuation audit
 
-> **Purpose:** perform the requested second internal + external review before any stronger repository landing.
+> **Purpose:** perform the bounded internal + external review requested before any stronger repository landing.
 >
-> **Mode:** U-mode continuation / inheritance audit. This file does not claim SRT novelty, superiority or irreducibility.
+> **Mode:** U-mode inheritance / subtraction audit. This file does not claim SRT novelty, superiority or irreducibility.
 >
 > **Execution boundary:** no canonical edit, no STATUS / CURRENT NEXT change, no HP-B edit, no new experiment or preregistration.
 
-## 1. Executive verdict
+## 1. Corrected executive verdict
 
-Internal consistency:
+Internal owner consistency:
 
-    PASS WITH CORRECTIONS
+    PASS
+
+Source fidelity after correction:
+
+    PASS AT CURRENT BOUNDED DEPTH
 
 Broad comparative novelty:
 
     dream / psychedelic constraint release
     = NO LOCAL COMPARATIVE INCREMENT
 
-Retained value:
+New dream / psychedelic discriminator created here:
 
-    mature-neighbor inheritance
-    + stronger comparator definition
-    + exact OPEN residual for the existing cognition E2 -> E3 -> E4 programme
+    NO
 
-The strongest current residual is not:
+Scientific remainder:
 
-    SRT explains dreams better
+    existing CN-2 H3 reduction / increment / recursive tests
+    + upgraded H2 reduction base
+    + dream / lucid-dream / psychedelic states as optional assay cases
 
-nor:
+The earlier wording “exact OPEN residual” is withdrawn.
 
-    SRT uniquely explains restructuring
-
-It is the neutral question:
-
-> **Can one coordinated change in operative organization predict and causally reorganize multiple held-out grouping / boundary / candidate / transition probes, and can consequence feedback predict the next round of recutting beyond strong flexible latent-state and structure-learning models?**
+“Coordinated change across multiple probes” is not itself discriminating: sufficiently flexible structure learning can also produce coordinated downstream changes. This PR therefore does not invent a directional SRT prediction merely to preserve a residual.
 
 SRT interpretation remains downstream.
 
@@ -81,7 +83,7 @@ Current execution:
     pre-object generative orientation of cognition
     / neutral cognition science first
 
-Immediate ladder:
+Immediate evidence ladder:
 
     E2 predictive geometry
     -> E3 causal geometry
@@ -89,7 +91,7 @@ Immediate ladder:
 
 This audit is a bounded companion to that route, not a second CURRENT NEXT.
 
-### 2.2 Passive-sedimentation centre remains retired
+### 2.2 Passive sedimentation remains downstream
 
 Pass19 controls:
 
@@ -107,16 +109,16 @@ Therefore the dream intuition must not be rewritten as:
     hidden old structure
     -> true ontology exposed when current Selection disappears
 
-The admissible reading is state-conditioned expression / perturbation of already formed organization.
+The admissible reading is state-conditioned perturbation / expression of already formed organization.
 
 ### 2.3 History / writeback is not the definition of E4
 
-The 2026-10-01 cognition clarification controls:
+The cognition route controls:
 
     history / consequence writeback
     = one bounded route into recursive field reconstitution
 
-Therefore dream / psychedelic state change cannot widen E4 by analogy. Any future non-history assay requires its own perturbation, probe, baseline and failure condition.
+Dream / psychedelic state change cannot widen E4 by analogy. Any future non-history route must separately declare its perturbation, probe, operational baseline and failure condition.
 
 ### 2.4 Position reconstitution remains guarded
 
@@ -125,85 +127,92 @@ The HP-B hook already states:
     state update
     != Position reconstitution
 
-and requires downgrade if the proposed relation cannot be distinguished from ordinary latent-state / policy update or unconscious learning.
+This audit therefore uses neutral scientific language until an independent discriminator exists.
 
-This audit therefore uses neutral prose such as:
+It does not introduce a “Position-Reconstitution Admission Gate” or any equivalent term.
 
-    coordinated recutting
-    operative-organization change
-    changed later generation conditions
+### 2.5 H1 / H2 / H3 are levels, not mutually exclusive rivals
 
-until an independent discriminator is earned.
+The current owner already states:
 
-It does not introduce a "Position-Reconstitution Admission Gate" term.
+    H1 implementation / parameter change
+    -> H2 latent / representational / generative-model organization
+    -> H3 effective geometry consequence
 
-### 2.5 HEF-3 / HEF-4 already own the history-depth distinction
+can be descriptions of one learning process at different grains.
 
-Current bridge discipline:
+Therefore:
 
-- reweighting, reachability/cost change and even candidate-generation effects may remain HEF-3;
-- HEF-4 requires independent evidence for rule / boundary / composition / cross-context path-structure rewrite.
+    finding H3-like geometry
+    != falsifying H2
 
-Therefore this audit does not create another ordered ladder from:
+and:
 
-    weight -> accessibility -> candidate generation -> recutting
+    fitting H2
+    != proving H3 explanatorily dispensable
 
-Candidate generation alone is not sufficient.
+The correct tests remain CN-2:
+
+- reduction;
+- increment;
+- recursive.
 
 ## 3. Mature-neighbor continuation matrix
 
-| Explanatory job | Mature neighbor / existing owner | What should be inherited | What SRT must NOT re-claim | Exact continuation question |
+| Explanatory job | Mature neighbor / existing owner | What should be inherited | What SRT must NOT re-claim | Correct continuation |
 |---|---|---|---|---|
-| preindividual formation / operation-structure recurrence | Simondon source + PH-IND03 route | transduction; individuation; individual+milieu co-genesis; Operation -> Structure -> later Operation | “formation continues after formation” as SRT novelty | does SRT add an independently testable selectability / position / consequence typing, or only vocabulary? |
-| identity -> perspective -> sense-making | enactivism / autonomy; Nave / autonomy pressure | self-maintaining identity can ground perspective and normativity | “formed perspective is uniquely SRT” | does consequence-indexed continuation add a same-target discriminator beyond autonomy / adaptivity? |
-| whole-field relevance before explicit object judgement | Skilled Intentionality route in existing whole-field audits | field of relevant affordances; concern / ability / situation dependent solicitation | “field before object” as SRT novelty | can coordinated recutting change object-formability / candidate structure beyond ordinary relevance reweighting? |
-| model / problem structure revision | Active Inference 2026 + Aha / insight package | active structure learning, rule discovery, model reduction, representation restructuring | “neighbors only select from fixed menus” | does a held-out whole-organization effect survive flexible structure-learning baselines? |
-| reduced deliberate constraint with structured automatic dynamics | Christoff et al. | deliberate vs automatic constraints; dreaming as a low-deliberate-constraint condition | “dream reveals structure because Selection is removed” | is any stronger loss / recovery distinguishable from ordinary control-constraint change? |
-| psychedelic relaxation / reopening | REBUS + NEURAL35 | reduced precision of high-level priors; increased intrinsic / bottom-up influence; reopening pressure | “constraint release is SRT” or “more opening = more freedom” | can reanchoring / later recutting be independently predicted beyond REBUS-like opening? |
-| lucidity / agency / control | Bonamino & Peters | lucidity, agency and control are separable; control can be agentic or non-agentic | “lucidity/control = Position reconstitution” | can stronger coordinated recutting vary independently of lucidity and successful dream manipulation? |
-| insight / problem restructuring | Wiley/Danek through Becker SourceCard; Aha hook | representation / problem restructuring and Aha dissociation | “changing problem representation proves Selection” | what remains after terminal representation, confidence, arousal, attention and structure-learning baselines are matched? |
+| preindividual formation / operation-structure recurrence | Simondon source + PH-IND03 | transduction; individuation; individual+milieu co-genesis; retained preindividual charge; Operation -> Structure -> later Operation; later psychic / collective individuation | “formation continues after formation” or pre/post-formation recurrence as SRT novelty | ownership subtraction only unless an independently specified same-target discriminator exists |
+| identity -> perspective -> sense-making | enactivism / autonomy; Nave pressure | self-maintaining identity can ground perspective and normativity | “formed perspective is uniquely SRT” | ownership comparator; not by itself an E2-E4 operational baseline |
+| whole-field relevance before explicit object judgment | Skilled Intentionality route | field of relevant affordances; concern / ability / situation-dependent solicitation | “field before object” as SRT novelty | ownership comparator; operationalize only if a quantitative task model is separately supplied |
+| offline generative-model operation during sleep / dreaming | Hobson & Friston 2012/2014 line + Friston active-reasoning lineage | reduced sensory constraint; internally generated virtual / generative-model dynamics; sleep / introspection as offline model-reduction context | “dream displays internal structure, therefore SRT” | same-target dream neighbor; include in any future dream-specific reduction base |
+| model / problem structure revision | Active Inference 2026 + Aha / insight package | active structure learning, BMR, rule discovery, representation restructuring | “neighbors only select from fixed menus” | strong operational H2 reduction base for CN-2 |
+| spontaneous-thought constraint dynamics | Christoff et al. | deliberate vs automatic constraints; deliberate constraints minimal during dreaming; automatic constraints can be low-to-medium | “dreaming generally means strong automatic / affective constraint” | control-dynamics baseline only; strong affective recurrence needs independent evidence |
+| psychedelic relaxation / reopening | REBUS + NEURAL35 | reduced precision of high-level priors; increased intrinsic / bottom-up influence; reopening pressure | “constraint release is SRT” or “more opening = more freedom” | operational neighbor where a psychedelic assay is actually used |
+| lucidity / agency / control | Bonamino & Peters | lucidity, pre-reflective sense of agency, agentic/non-agentic control and successful control are separable | “lucidity/control = Position reconstitution” | measurement decomposition / negative control |
+| insight / problem restructuring | Becker / Aha package | representation / problem restructuring and Aha dissociation | “changing problem representation proves Selection” | strong operational baseline for restructuring claims |
 
-## 4. Strongest combined rival
+## 4. Separate ownership comparators from operational baselines
 
-A fair comparator is allowed to combine mature neighbors.
+The earlier “strongest combined rival” wording mixed two roles and is retired.
 
-One admissible combined story is:
+### 4.1 Ownership comparators
 
-    Simondon:
-      individuation / operation-structure recurrence
-    +
-    enactive autonomy:
-      identity / perspective / normativity
-    +
-    Skilled Intentionality:
-      field of relevant affordances
-    +
-    Active Inference:
-      inference / policy / learning / model-structure revision
-    +
-    Christoff / REBUS:
-      altered constraint regimes
-    +
-    insight literature:
-      problem-representation restructuring
+These are used to block novelty overclaiming and identify already-paid explanatory jobs:
 
-This combined package already covers a large fraction of the local SRT vocabulary.
+- Simondon;
+- enactivism / autonomy;
+- Skilled Intentionality;
+- adjacent philosophy-of-individuation / sense-making sources.
 
-Therefore lexical unification is not sufficient.
+They need not themselves produce a fitted held-out prediction in the current task.
 
-The SRT-side programme earns value only if it supplies one or more of:
+Their role is:
 
-- a nontrivial dependency compression that yields new failure relations;
-- transfer across held-out probes;
-- stronger causal intervention structure;
-- recursive consequence-sensitive prediction;
-- a same-target relation not reproduced by the combined rival without importing equivalent commitments.
+    source-native ownership
+    -> local subtraction / inheritance
 
-No such scientific increment is declared by this audit.
+not:
 
-## 5. Active Inference baseline correction
+    operational model comparison by default.
 
-Friston et al. (2026) changes the baseline materially.
+### 4.2 Operational baselines
+
+These are the models / covariate families that can actually enter CN-2 reduction / prediction / causal tests:
+
+- flexible latent-state models;
+- representation learning;
+- Active Inference with parameter and model-structure learning / Bayesian Model Reduction;
+- task-specific dynamical / manifold models;
+- Christoff-like constraint-dynamics models where appropriate;
+- sleep/offline generative-model accounts for dream-specific assays;
+- arousal / affect / attention / confidence / executive-control covariates;
+- REBUS-like prior-relaxation models for psychedelic assays.
+
+The scientific burden is evaluated against these operational baselines.
+
+## 5. Active Inference / sleep baseline correction
+
+Friston et al. (2026) materially strengthens the H2 reduction base.
 
 Retired caricature:
 
@@ -215,33 +224,34 @@ Source-backed correction:
     hidden-state inference
     + parameter learning
     + model-structure selection / rule discovery
-    + epistemic action to disambiguate model structures
+    + epistemic action to disambiguate structures
+    + offline Bayesian Model Reduction proposed for introspection / sleep
 
-The same paper also states a bounded limitation:
+The same source also states a bounded limitation:
 
-- the demonstrated agent is assumed to know the generative model family in which the unknown rule is implemented;
-- it does not in the same demonstration learn the full generative model from unsegmented sensory input.
+- the worked agent already has a learned generative model of the task / puzzle family;
+- the demonstration does not simultaneously learn the full model from unsegmented sensory input.
 
 Correct repository consequence:
 
-> the current H2 comparator must be allowed flexible model-structure learning; any remaining factorization / state-variable / boundary constitution question is OPEN and cannot be pre-awarded to SRT.
+> the H2 reduction base in CN-2 must be allowed flexible structure learning; any remaining factorization / state-variable / boundary constitution question stays OPEN at the programme level and is not pre-awarded to SRT.
 
-This audit does not add a new H2 symbol or edit the cognition owner.
+The source limitation is not evidence of SRT gain.
 
-## 6. A neutral three-way separation for future evidence discipline
+## 6. Neutral evidence discipline
 
-This is ordinary audit prose, not a new taxonomy.
+This audit retains a descriptive three-way separation without creating a new taxonomy.
 
-### 6.1 Content / state update
+### 6.1 State / content change
 
 Examples:
 
 - answer changes;
-- salience or value changes;
+- salience / value changes;
 - transition probability changes;
 - action choice changes.
 
-These are fully open to ordinary learning / control accounts.
+These are open to ordinary learning / control accounts.
 
 ### 6.2 Model / problem restructuring
 
@@ -253,203 +263,240 @@ Examples:
 
 These are already mature-neighbor territory.
 
-### 6.3 Coordinated recutting candidate
+### 6.3 H3-level effective geometry consequence
 
-A stronger candidate would require evidence that one change jointly reorganizes several later-generation dimensions, such as:
+Candidate readouts include:
 
-- spontaneous grouping / segmentation;
-- relevance;
-- boundary;
-- candidate generation;
-- relation / equivalence;
-- feasible continuation;
-- cross-context transfer.
+- changed equivalence classes;
+- boundary placement;
+- neighborhood relations;
+- transition reachability;
+- perturbation stability;
+- spontaneous grouping;
+- cross-context generalization.
 
-Even this does not establish SRT.
+But:
 
-It only qualifies a result for stronger comparator testing.
+    coordinated H3 readouts
+    != SRT increment
 
-## 7. Preferred evidence pattern before any SRT promotion
+The existing CN-2 tests still decide whether H3 adds anything beyond H1/H2.
 
-The existing programme already suggests the correct direction.
+## 7. No new directional discriminator is claimed here
 
-A useful result should approach:
+The independent review correctly noted that a structure-learning model can switch model structure and thereby change multiple downstream probes together.
 
-    same / matched terminal explicit content
-    + different formation / perturbation history
-    -> coordinated differences across held-out probes
+Therefore this PR does not claim:
 
-and then survive:
+    one latent organization changes many probes
+    => SRT
 
-- local-weight / threshold models;
-- flexible latent-state models;
-- structure-learning / Active-Inference models;
-- arousal / affect / attention / confidence accounts;
-- decentering / self-distancing where relevant;
-- ordinary executive-control recovery.
+The current result is instead:
 
-The strongest first target remains a waking neutral cognition design. Dream and psychedelic conditions are not required for the first test.
+    dream / psychedelic dialogue
+    -> strengthens / clarifies operational baselines
+    -> returns to existing CN-2
 
-## 8. Dream route — bounded assay, not theory proof
+The next scientific requirement is not a new prose residual. It is the already-owned CN-2 sequence:
 
-### 8.1 Ordinary dream
+    reduction test:
+      can H3 be reconstructed from H1/H2 without explanatory loss?
 
-Potential use:
+    increment test:
+      does H3 add held-out prediction or causal leverage?
 
-- rich imagery / narrative / local decisions may remain;
-- deliberate constraint and reality monitoring can be weak;
-- automatic affective / relational constraints can remain strong.
+    recursive test:
+      does consequence-induced H3 change predict the next round of objectification?
 
-This creates a possible subtraction condition:
+A directional divergence must be specified only when a concrete protocol is frozen. This PR does not authorize or design that protocol.
 
-    rich generation
-    without assuming strong meta-level recutting
+## 8. Dream route — bounded assay only
 
-But Christoff-like constraint models must be given full explanatory access.
+### 8.1 Ordinary dreaming
 
-### 8.2 Lucid dream
+Christoff et al. support:
+
+- deliberate constraints are minimal during dreaming;
+- automatic constraints can lie in a low-to-medium range;
+- dreaming is part of a spontaneous-thought family.
+
+They do **not** source-own the stronger generalization:
+
+    dreaming
+    = low deliberate constraint + strong automatic / affective constraint
+
+A particular person's recurrent affective / authority structure is therefore a separate phenomenological hypothesis, not a Christoff result.
+
+### 8.2 Offline generative-model neighbor
+
+Hobson & Friston provide the closer same-target dream neighbor for the “internal structure display” reading:
+
+    reduced sensory input / waking sampling
+    -> internally generated dream dynamics
+    -> offline generative-model optimization / complexity reduction
+
+This does not prove that dreams transparently expose a latent structure. It supplies a mature explanation for why internally generated organization can become relatively decoupled from current external input.
+
+### 8.3 Lucid dream
 
 Bonamino & Peters require separation of:
 
     lucidity
-    agency
+    pre-reflective sense of agency
+    agentic vs non-agentic control
     successful control
 
-A future SRT-facing assay would need to add, rather than assume:
+A future SRT-facing assay would have to add, rather than assume:
 
-    stronger coordinated recutting of later-generation conditions
+    an independently operationalized stronger recutting measure
 
-A lucid dreamer changing scenery or flying is not by itself evidence of Position reconstitution.
+Changing scenery, flying, or intentionally altering dream content is not by itself Position reconstitution.
 
-### 8.3 Preferred lucid-dream counterexample
+### 8.4 Preferred negative-control logic
 
-A particularly useful negative control would be:
+A useful future counterexample would be:
 
     lucidity increases
-    + behavioral dream control increases
+    and successful dream control increases
     while
-    core authority / threat / concern organization remains stable
+    a separately measured relation / concern organization remains stable
 
-Such a case would directly block:
+Such a case would block:
 
     control = stronger recutting
 
-This is a design idea only, not an established empirical result.
+This is a design idea only, not an established source result.
 
 ## 9. Psychedelic route — reopening / reanchoring only
 
 REBUS source-owns a strong relaxation account.
 
-NEURAL35 already owns:
+NEURAL35 already owns the guard:
 
     reopening != reselectability
 
 Therefore this audit adds no psychedelic mechanism.
 
-Future psychedelic use, if any, should ask whether:
+If a future psychedelic route is opened, it should keep separable:
 
-    opening
+    opening / candidate accessibility
     reanchoring
     consequence return
-    later recutting
+    later H3 recutting
 
-make separable predictions.
+and should not infer freedom, truth or Selection from entropy / flexibility.
 
-Because many perceptual, affective, precision, arousal and network variables change simultaneously, psychedelic perturbation is not the preferred first identifiability test.
+## 10. Simondon overlap — no distinct pre/post-formation residual retained
 
-## 10. Cross-formation continuity — narrowed after Simondon pressure
+The earlier version correctly withdrew:
 
-Earlier dialogue risk:
+    Operation -> Structure -> later Operation
+    = SRT novelty
 
-    SRT is unique because the same process forms structure and later operates through it
+but still left a narrower “single typed dependency” residual.
 
-Correction:
+That residual is now withdrawn too.
 
-Simondon already supplies:
+Simondon already carries:
 
-    preindividual metastability
-    -> transduction / individuation
-    -> constituted structure
-    -> later operation
+- preindividual metastability;
+- retained preindividual charge;
+- individuation before the completed individual;
+- operation / structure reciprocity;
+- later psychic and collective individuation;
+- transindividual continuation.
 
 Therefore:
 
-    operation -> structure -> later operation
-    = NOT SRT NOVELTY
+    relation spanning formation-before-completion
+    and later re-individuation / operation
 
-The narrower OPEN SRT question is:
+cannot be retained as an SRT increment merely by adding:
 
-> whether a single typed dependency can connect pre-position formation with post-formation position-indexed rebuilding of selectability while also distinguishing consequence-bearing continuation, objectification and stronger recursive rewrite.
+    position-indexed
+    consequence-bearing
+    objectification
 
-This remains a philosophy / architecture pressure, not a scientific result.
+Those SRT terms may still be useful internal typing, but vocabulary-level typing is not a same-target comparative gain.
+
+No “cross-formation continuity” working label or term-of-art is retained.
 
 ## 11. What SRT can legitimately inherit
 
 The correct continuation pattern is:
 
     mature neighbor
-    -> INHERIT source-native mechanism
+    -> INHERIT source-native mechanism / structure
     -> preserve owner boundary
-    -> ask SRT root question
-    -> only then test exact residual
+    -> return to current neutral cognition owner
+    -> test only concrete incremental burden
 
 Concretely:
 
-- inherit Simondon for individuation / recurrence;
+- inherit Simondon for individuation / operation-structure recurrence;
 - inherit enaction for autonomy / perspective / sense-making;
-- inherit SIF for whole-field relevance;
-- inherit Active Inference for model-relative structure learning;
-- inherit Christoff for constraint-shaped thought dynamics;
+- inherit Skilled Intentionality for whole-field relevance;
+- inherit Hobson–Friston for dream / sleep offline generative-model framing;
+- inherit Active Inference for model-relative structure learning / BMR;
+- inherit Christoff for constraint-shaped spontaneous-thought dynamics;
 - inherit REBUS for psychedelic prior-relaxation;
 - inherit insight literature for problem restructuring;
 - inherit lucid-dream literature for lucidity / agency / control decomposition.
 
 SRT does not need to defeat these theories to use them.
 
-## 12. What remains OPEN after inheritance
+## 12. Scientific remainder after inheritance
 
-Exact OPEN residual:
+No new exact dream / psychedelic residual is declared.
 
-> **Does a coordinated, consequence-sensitive change in operative organization add held-out predictive / causal / recursive gain over a fair combined rival that includes flexible structure learning, dynamic relevance fields, autonomy / sense-making and state-specific constraint models?**
+Current disposition:
 
-If no:
+    dream / psychedelic perturbation cases
+    = optional assay candidates
+
+    scientific discriminator
+    = existing CN-2
+
+    H2 reduction base
+    = upgraded to include flexible structure learning / BMR
+      plus state-appropriate constraint / offline-generation models
+
+If CN-2 later shows no held-out increment or recursive leverage:
 
     NO LOCAL COMPARATIVE INCREMENT
-    on this cognition target
+    on that cognition target
 
-and the mature-neighbor mechanisms remain the correct local explanation.
+If a future concrete protocol does show an increment:
 
-If yes:
-
-the result still requires author/Facing promotion before mapping to:
-
-- Selection-position;
-- Position reconstitution;
-- stronger SRT / GRG domain recut.
+- it is first a neutral cognition result;
+- any SRT / GRG mapping remains downstream and author-gated.
 
 ## 13. Failure conditions
 
 This route should stop or downgrade if any of the following occurs:
 
-1. coordinated bundle effects reduce to affect / arousal / attention / executive-control factors;
-2. a flexible latent-state or structure-learning model predicts held-out probes equally well under fair complexity control;
-3. cross-context transfer disappears;
-4. the stronger result requires post-hoc semantic interpretation of what counts as “the same geometry”;
-5. candidate generation changes but no independently identifiable rule / boundary / composition rewrite is found;
-6. “Position reconstitution” cannot be reproducibly separated from ordinary state / model update;
-7. the only remaining advantage is shorter SRT vocabulary for a union of mature theories.
+1. apparent bundle effects reduce to affect / arousal / attention / executive-control factors;
+2. a flexible H2 structure-learning model predicts held-out probes equally well under fair complexity control;
+3. dream-specific effects are absorbed by offline generative-model / sensory-decoupling accounts;
+4. cross-context transfer disappears;
+5. the stronger result requires post-hoc semantic interpretation of what counts as “the same geometry”;
+6. candidate generation changes but no independently identifiable H3 increment survives H1/H2 reduction;
+7. “Position reconstitution” cannot be reproducibly separated from ordinary state / model update;
+8. the only remaining advantage is shorter SRT vocabulary for a union of mature theories.
 
 ## 14. Repository disposition
 
     source-intuition trace = YES
     mature-neighbor continuation audit = YES
-    new external SourceCards = YES / Pipeline 1 B-class
+    external SourceCards = YES / Pipeline 1 B-class
+    Hobson-Friston new SourceCard = NO; existing repository citation / neighbor routing only
     cognition owner edit = NO
     HP-B edit = NO
     canonical edit = NO
     STATUS edit = NO
     CURRENT NEXT change = NO
     new term-of-art = NO
+    new exact OPEN residual = NO
     experiment / preregistration = NO
 
-The next admissible substantive step, after review of this PR, is to decide whether the existing cognition programme needs a small B-class clarification of its strongest H2 comparator and evidence discipline. That decision is not taken in this PR.
+The admissible next step after review is simply to return to the existing cognition programme. This PR does not create a new theory workline.
