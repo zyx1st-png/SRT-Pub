@@ -471,3 +471,17 @@ F2–F5 = CLOSED
 NEW BLOCKER = NONE
 RECOMMENDATION = MERGEABLE after (or alongside) nits 1–3; nit 2 needs a one-line author confirmation or an M label
 ```
+
+### 7.4 Closeout — §7.2 小问题在合并前已修复
+
+#1099 已于 `9a0184c5` 合并（2026-10-04 21:55Z）。§7.2 的三个小问题在合并前均已处理：
+
+```text
+nit 1  59234eb0  RT §6 改为 sufficiency = NOT CLAIMED / NOT ADJUDICATED HERE    = FIXED
+nit 2  9bc9a498  AJ §3 保留 A0-Q 原句；One/A2 与 Bearer/A3 的对齐明标为
+                 “M-level repository reconciliation”，不再归给作者                = FIXED
+nit 3  89cf56f6  context router l.106 改为 “no ego-dissolution -> Bearer verdict”  = FIXED
+nit 4 (可选，retrieval profile 条目)                                             = 未处理；context router 已覆盖，不影响
+```
+
+本评审对 #1099 再无未关闭项。
