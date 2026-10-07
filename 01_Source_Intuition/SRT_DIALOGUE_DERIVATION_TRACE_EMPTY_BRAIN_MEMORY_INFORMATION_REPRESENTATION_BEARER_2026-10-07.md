@@ -397,14 +397,16 @@ The author accepted that the same external event does not create one numerically
 Working compression:
 
 ~~~text
-E + H_A + G_A -> G_A'
-E + H_B + G_B -> G_B'
+ev + H_A + Γ_A -> Γ_A'
+ev + H_B + Γ_B -> Γ_B'
 ~~~
 
-Because histories and current Gate organizations differ:
+where `ev` is the shared external event and `Γ` is a file-local placeholder for the currently relevant historical / relational / gating organization; it is **not** canonical `Ĝ_θ`.
+
+Because histories and current organizations differ:
 
 ~~~text
-G_A' != G_B'
+Γ_A' != Γ_B'
 ~~~
 
 by default.
@@ -427,7 +429,7 @@ The dialogue then pressure-tested cross-subject neural similarity.
 If two people show different fine-grained neural realizations but those realizations can be aligned into a shared geometry, the author preferred the reading:
 
 ~~~text
-different bearer-specific Gate organizations
+different bearer-specific organizations
 become equivalent under a declared transform / task
 ~~~
 
@@ -456,13 +458,13 @@ can contribute evidence for public-object robustness.
 Working relation:
 
 ~~~text
-G_A ~_T G_B
+Γ_A ~_T Γ_B
 ~~~
 
 does not imply:
 
 ~~~text
-G_A = G_B.
+Γ_A = Γ_B.
 ~~~
 
 ### Objectivity guard
@@ -490,15 +492,15 @@ The author selected the stronger reading that each Selection has its own event-l
 Working notation:
 
 ~~~text
-S_t <-> P_t
-P_t != P_(t+1)
+sel_t <-> pos_t
+pos_t != pos_(t+1)
 ~~~
 
 Cross-time bearer continuity therefore cannot be supplied by persistence of one Position token.
 
 ### Canonical typing guard
 
-In this file, `P_t` above is **not** a redefinition of canonical `Selection-position`.
+In this file, `pos_t` above is **not** a redefinition of canonical `Selection-position`.
 
 It is best read as:
 
@@ -510,46 +512,41 @@ Therefore this dialogue trace does not alter either owner.
 
 ---
 
-## 9. Gate / history must participate, not merely coexist
+## 9. Historical participation — pressure on One continuity, not yet a Bearer criterion
 
-The author rejected ordinary causal adjacency as sufficient for same-bearer continuity.
+The author rejected ordinary causal adjacency as sufficient for continuity.
 
-The stronger accepted condition was:
-
-~~~text
-prior Gate / history
-must materially participate in the formation
-of the later Position / Selection organization.
-~~~
-
-This gives the working process picture:
+The stronger accepted direction was:
 
 ~~~text
-P_t + G_t
--> Selection / consequence
--> transformed G_(t+1)
--> P_(t+1)
+prior retained organization / history
+must materially participate in the later recurrent organization,
+rather than merely coexist earlier in time.
 ~~~
 
-Continuity does not require:
+For an already formed One, the repository-compatible machine sketch is:
 
-- the same material substrate;
-- the same explicit self-narrative;
-- the same autobiographical recall content;
-- the same Gate token;
-- continuous conscious expression.
+~~~text
+Selection-position_t
++ retained effective history H_t
+-> participate in current Selection
+-> renewed organization H_(t+1)
+-> Selection-position_(t+1)
+~~~
 
-It does require that the prior organization remain effectively load-bearing in the next generation, if this line is eventually admitted as an identity criterion.
+This notation does **not** make `Selection-position_t` a prior selector or cause of primitive Selection. It records its time-local participation in current Selection for an already formed One.
 
-### Latent Gate
+This directly pressures **formed-One continuity / recurrent reconstitution**. It does **not** by itself establish Bearer, because current canonical routing still requires independent prospective self-indexing `P` and same-One prospective exposure `E`.
 
-The author accepted that an internal Gate may be:
+### Latent historical / gating organization
+
+The author accepted that a previously formed organization may be:
 
 - currently unexpressed;
 - not consciously foregrounded;
 - not explicitly retrieved;
 
-while still contributing to continuity if it remains effective in later Selection.
+while remaining materially effective later.
 
 Thus:
 
@@ -559,43 +556,52 @@ unexpressed
 != absent.
 ~~~
 
----
+Where that organization carries a repository-defined gating role, it may be called a latent / backgrounded formed gating organization. Otherwise `historical constraint` is the safer term.
 
-## 10. Sleep, anesthesia and amnesia
+### Identity guard
 
-The author accepted three pressure cases.
+The dialogue treated retained historical efficacy as important to continuity, but **history efficacy is not sufficient for Bearer identity**. Exact numerical identity remains OPEN, and the later copy / branch case shows that simple generative lineage is not enough.
+
+## 10. Sleep, anesthesia and amnesia — accepted compatibility cases, not sufficient-condition proofs
+
+The author accepted these as pressure cases against identifying continuity with continuous explicit consciousness or autobiographical recall.
 
 ### Sleep / anesthesia
 
-A bearer can remain continuous through periods without explicit object awareness or autobiographical recall, provided the history-bearing organization remains capable of affecting later Selection after the interruption.
+Author-directional judgment:
 
-Therefore:
+~~~text
+a period without explicit object awareness / report
+need not by itself terminate the continuing bearer.
+~~~
+
+Repository guard:
+
+- persistence of effective history can support recurrent One continuity;
+- it does **not** by itself pay canonical Bearer `P + E`;
+- no claim is made here that “history efficacy present -> same Bearer” is a sufficient condition.
+
+The safe negative claims are:
 
 ~~~text
 bearer continuity
-!= continuous wakefulness
-!= continuous explicit memory
-!= continuous self-narration.
+!= continuous wakefulness by definition;
+!= continuous explicit memory by definition;
+!= continuous self-narration by definition.
 ~~~
 
 ### Severe amnesia
 
-The author also accepted that severe loss of autobiographical recall need not terminate the bearer if prior history remains effective through:
+The author also judged severe autobiographical amnesia compatible with continuity when prior history remains operative through language, learned skills, values, sensorimotor expectations or other retained organization.
 
-- language habits;
-- learned skills;
-- value / preference organization;
-- sensorimotor expectations;
-- other latent Gates.
+Again, this is a compatibility judgment, not a sufficient-condition theorem.
 
-This reinforces the distinction:
+The retained lesson is only:
 
 ~~~text
-reportable memory content
+reportable autobiographical memory content
 != whole retained historical efficacy.
 ~~~
-
----
 
 ## 11. External scaffold versus bearer-constitutive closure
 
@@ -608,15 +614,15 @@ Later pressure requires a spatially neutral reading.
 The current bounded distinction is:
 
 ~~~text
-bearer-constitutive historical Gate
-= participates in the continuing consequence-history-future-Selection closure;
+bearer-constitutive historical organization
+= candidate organization participating in the continuing consequence-history-future-Selection closure;
 
 external scaffold
 = can influence cognition when recruited,
-  without thereby carrying numerical bearer continuity.
+  without thereby carrying numerical bearer continuity merely by storing matching content.
 ~~~
 
-A database copy can help reconstruct knowledge or behavior without itself establishing bearer continuity.
+A database copy is therefore called an **external scaffold / archive** here, not an “external Gate” by repository terminology, unless it actually carries the formed organization-level gating role. It can help reconstruct knowledge or behavior without itself establishing bearer continuity.
 
 However, this does **not** imply:
 
@@ -658,9 +664,20 @@ where no original Gate token remains at the end, yet each step was materially ge
 
 The author judged continuity possible.
 
-Thus the live candidate is:
+The dialogue initially compressed this as:
 
 > continuity through generative lineage, not preservation of original tokens.
+
+Independent pressure shows that this is **not sufficient as stated**: a copy / branch can share generative ancestry while producing more than one later continuer. The corrected status is therefore:
+
+~~~text
+token preservation is not required by the author judgment;
+generative lineage is relevant;
+generative lineage alone is not an identity criterion;
+a non-branch / same-closure / non-reassignment burden remains unresolved.
+~~~
+
+Canonical `E` is especially relevant because its non-outsourcing test asks whether prospective exposure can be completely reassigned while still claiming the same Bearer. No new identity theorem is claimed here.
 
 ### Canonical guard
 
@@ -685,7 +702,9 @@ The dialogue also tested stronger identity cases.
 
 ### Exact copy
 
-If A is copied into B with initially identical state and history, then later consequences diverge, the author judged that A and B become two bearers rather than one bearer at two locations.
+If A is copied into B with initially matching state / recorded history and later consequences diverge, the author answered that the later lineages should be treated as two bearers rather than one bearer at two positions.
+
+**Do not infer the converse** that A and B were numerically one bearer before divergence. PH-IND07 already says matching state / memory / parameters / self-description establishes representational or initialization continuity only; it does not establish one ongoing consequence-history closure. The exact branch point and numerical identity relation remain OPEN.
 
 ### Merge
 
@@ -736,27 +755,27 @@ No part of this section establishes a canonical collective-Bearer theorem.
 
 ---
 
-## 14. Proxy / agent as a higher-order bearer candidate
+## 14. Ordinary-language “代理” / delegated agent as a higher-order bearer pressure case
 
-The author used “代理” in a stronger sense than delegated execution.
+The author used “代理” in a stronger ordinary-language sense than delegated execution.
 
-The accepted working loop was:
+To avoid collision with the repository's **GRG generative proxy** term, this trace does **not** translate that usage into the SRT/GRG term `proxy`.
+
+The dialogue's working loop was:
 
 ~~~text
-proxy state
+delegated agent state
 -> action
 -> consequences
--> proxy itself is rewritten
+-> the delegated agent itself is rewritten
 -> future choice changes
 ~~~
 
-A proxy that is continuously modified by its own consequence-return history is therefore a higher-order bearer **candidate**.
+A delegated agent continuously modified by its own consequence-return history is therefore a higher-order Bearer **pressure case / candidate**, not an admitted Bearer.
 
-The physical executor can in principle be replaced without automatically breaking the candidate continuity if the relevant history / consequence / future-selectability organization continues.
+The physical executor can in principle be replaced without automatically settling the candidate continuity question if the relevant history / consequence / future-selectability organization continues.
 
-This is not sufficient for Bearer admission under current canonical `P + E` routing. It is a pressure case for future work.
-
----
+This is not sufficient for Bearer admission under current canonical `P + E` routing. It is a future identity / admission question.
 
 ## 15. Shared generative source — provenance only, not landed
 
@@ -823,30 +842,51 @@ absent-object generative representation = allowed.
 
 ---
 
-## 17. Author convergence ledger
+## 17. Provenance ledger — three levels, not one A1 bucket
 
-### Direct / high-confidence author source preserved here
+The 2026-09-24 continuation rule explicitly blocks the inference that directional acceptance upgrades every machine sentence to A1. This trace therefore separates three source classes.
 
-- cognition is a process; information is a property that becomes operative only in context;
-- cognition as Gate formation, information as external Gate scaffold;
-- memory has no intrinsic truth value; representation is regenerated;
-- external database Gate does not by itself carry bearer continuity;
-- total clearing of internal Gate / historical efficacy terminates the bearer;
-- gradual replacement can preserve bearer continuity;
-- cross-brain similarity is better read as coarse-grained / transformed equivalence than numerical identity;
-- decodable online perceptual geometry is better read as current Gate geometry than automatically as representation;
-- absent-object generated Gate geometry may be called representation.
+### A0-Q — substantive direct author wording
 
-### Machine-side synthesis accepted in direction
+Preserved verbatim or near-verbatim in the dialogue:
 
-- memory = retained historical efficacy shaping later generation, not content-copy retrieval;
-- event-local Position tokens do not themselves provide diachronic identity;
-- explicit autobiographical memory is not necessary for bearer continuity;
-- external scaffold must be distinguished from bearer-constitutive closure;
-- cross-position robustness can support public objectivity without numerical state identity;
-- language works as Gate-alignment scaffold rather than content container.
+- “认知其实是种过程，而信息是一种属性，不能直接进行对比。光有属性并不是一种过程。属性需要在具体的场景下产生过程。”
+- “认知理解为内部门控的形成，信息视为外部门控的脚手架.”
+- “记忆没有真假，表征是重新生成.”
+- “内部的gate会持续地产生影响。保存到数据库里的外部 Gate并不影响bearer的连续性.”
+- “如果一个人内部Gate和历史效率全部清空，那这个Bearer 已经不存在了”
 
----
+### A0-S — short author selection tied to a machine question
+
+These answers select only the branch asked about; they do not ratify every surrounding machine formulation:
+
+- “后者” — for transformed / coarse-grained cross-bearer equivalence rather than numerical same-representation wording;
+- “可以” — for allowing an absent-object generated structure to count as a representation case;
+- repeated “是 / 是的” — for the specific continuity compatibility cases asked in the dialogue.
+
+### M / directionally accepted machine synthesis
+
+Retain for retrieval, but do not treat as item-level author wording:
+
+- memory as retained historical efficacy shaping later generation rather than literal content-copy retrieval;
+- event-local position tokens not themselves providing diachronic identity;
+- external scaffold versus bearer-constitutive closure;
+- cross-position robustness supporting public-object objectivity pressure;
+- language / symbols as alignment scaffolds;
+- the proposed reconciliation of “information as property” with “information as external scaffold.”
+
+### Pending author second-adjudication items introduced by review
+
+The same-session and independent reviews materially narrowed several formulations. Those corrections are **not back-attributed to the author** merely because this PR is being prepared:
+
+- Gate vs bridge-formation typing;
+- absence as one representation pressure rather than a natural representation boundary;
+- the carrier / information-property / cognitive-effect three-way split;
+- history efficacy as relevant but not sufficient for Bearer identity;
+- generative lineage as insufficient under branching;
+- skull-neutral closure typing for “internal.”
+
+They remain review-side corrections / questions unless separately author-adjudicated.
 
 ## 18. Deliberately not decided here
 
@@ -887,4 +927,8 @@ representation universal definition = NO
 information universal definition = NO
 novelty claim = NO
 future canonical promotion = HOLD
+GK-1 umbrella-Gate result = OPEN / NOT EVIDENCE FROM THIS TRACE
+CURRENT NEXT change = NO
+current cognition E2-E4 evidence = NO
+second CURRENT NEXT = NO
 ~~~
