@@ -16,8 +16,12 @@ dependency:
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_EMPTY_BRAIN_MEMORY_INFORMATION_REPRESENTATION_BEARER_2026-10-07.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Core_Law/SRT_One_Formation.md
-  - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core_Law/SRT_Collective_Selection.md
+  - Glossary/SRT_Live_Term_Router.md
+  - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
+  - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+  - Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md
+  - Philosophy/SRT_Philosophy_Foundations.md
   - Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_IND07_Processual_Bearer_Active_Maintenance_Stake_Integration_v0_1.md
@@ -40,7 +44,19 @@ tags:
 
 ## 0. Review status
 
-**Verdict: PASS FOR NONCANONICAL LANDING / CANONICAL = HOLD.**
+**Original same-session verdict: PASS FOR NONCANONICAL LANDING / CANONICAL = HOLD.**
+
+**Independent-review correction (2026-10-07): REVISE BEFORE MERGE.** The author supplied an independent Claude review of PR #1101 head `5a1c888` that found missing Gate / representation owners, Bearer-identity overreach, provenance mixing, notation collisions and citation errors. Those findings are substantively valid in the main; the PR has now been revised in response.
+
+Current corrective status:
+
+~~~text
+noncanonical source-writeback direction = RETAIN
+original repository-consistency PASS = WITHDRAWN
+F1-F9 corrective implementation = APPLIED IN PR BRANCH
+final merge verdict = PENDING INDEPENDENT RE-REVIEW
+canonical promotion = HOLD
+~~~
 
 This review tests three things:
 
@@ -48,15 +64,25 @@ This review tests three things:
 2. compatibility with current repository owners / OPEN guards;
 3. pressure from strong external neighboring theories and empirical literatures.
 
-This is a **same-session machine pressure review**, not an independent C-class pre-merge review. No C-class canonical semantic edit is present in this package, so `Governance/SRT_EDIT_PROTOCOL.md` does not require an independent semantic reviewer before merge.
+This remains a **same-session machine pressure review**, not the independent review itself. No C-class canonical semantic edit is present in this package, so `Governance/SRT_EDIT_PROTOCOL.md` does not require a C-class independent semantic reviewer; nevertheless the actual independent review exposed material content defects, so merge should wait for a narrow re-review of the corrected head.
 
-The package is acceptable as provenance + bounded analysis if the narrowing guards in this file remain attached.
+### Independent-review findings absorbed
+
+- **F1 Gate:** existing Gate / bridge-formation owners and GK-1 OPEN test were missing; corrected.
+- **F2 Bearer identity:** retrospective history / lineage was doing work that canonical `P + E` has not licensed; branch cases also defeat lineage-alone identity; corrected / quarantined.
+- **F3 Representation:** absent-object wording collided with the broader existing Mental Representation interface and lacked PH-MR01 adjacent-case audit; corrected.
+- **F4 Information:** author statements “information = property” and “information = external scaffold” were being silently reconciled; now recorded as an unresolved author-level semantic tension.
+- **F5 Provenance:** direct author wording, short branch-selection replies and machine synthesis were mixed; now split.
+- **F6 Notation:** local `P_t`, `E`, `G_t` collided with canonical `P + E` and `Ĝ_θ`; corrected.
+- **F7 Current Next:** the trace is now explicitly a companion provenance record, not E2-E4 evidence or a second CURRENT NEXT.
+- **F8 Citations:** ecological-psychology, Dudai, Haxby and Epstein metadata were corrected / tightened.
+- **F9 Minor routing:** unused Core_21b dependency removed; ordinary-language “代理” no longer maps to repository `proxy`.
 
 ---
 
 ## 1. Executive result
 
-### PASS
+### RETAINED CORE AFTER CORRECTION
 
 The central chain is internally coherent and substantially aligned with existing repository direction:
 
@@ -93,7 +119,7 @@ diachronic continuity.
 
 ### HOLD / quarantine
 
-The following dialogue judgments exceed current canonical closure and must remain noncanonical:
+The following dialogue judgments exceed current canonical closure and must remain noncanonical or review-pending:
 
 - total Gate/history erasure terminates numerical bearer identity;
 - gradual total replacement preserves numerical bearer identity;
@@ -165,7 +191,7 @@ through updating / reconsolidation / re-encoding,
 but durable modification is not guaranteed on every retrieval.
 ~~~
 
-### 2.4 Internal versus external Gate — PASS only after spatial de-biasing
+### 2.4 Internal versus external Gate — semantic correction is review-side, not yet author-adjudicated
 
 The author's direct distinction:
 
@@ -184,13 +210,13 @@ outside skull = noncognitive.
 
 The Extended Mind literature is a strong counterexample family to that anatomical cut.
 
-Therefore the source trace correctly rewrites the burden in closure terms rather than location terms.
+Therefore the **review recommends** a closure-based rather than anatomical typing. The corrected trace marks this as M-level / pending author second adjudication rather than silently presenting it as the author's settled replacement meaning.
 
 ---
 
 ## 3. Repository consistency
 
-### 3.1 History / Gate — STRONG ALIGNMENT
+### 3.1 History / recurrent organization — STRONG ALIGNMENT, Gate umbrella claim NOT PASSED
 
 `Core_Law/SRT_Generative_Ontology_Spine.md` already defines history as prior Selection remaining materially effective in later Selection conditions.
 
@@ -204,16 +230,36 @@ Selection-generated organization_t
 -> One.
 ~~~
 
-This is directly compatible with the dialogue's strongest memory / continuity picture.
+This supports the dialogue's strongest **historical efficacy / recurrent reconstitution** pressure.
 
-`Core_Law/SRT_One_Formation.md` further blocks:
+However, the original audit incorrectly folded that support into a broad “History / Gate — STRONG ALIGNMENT” verdict without reading the Gate owners.
+
+Current Gate routing says:
+
+~~~text
+bridge / relation formation
+!= Gate by lexical identity;
+
+Gate
+= formed organization / relation structure
+  once it carries organization-level gating work;
+
+Gate operation
+= current use of that formed organization.
+~~~
+
+The current cognition programme's GK-1a keeps a live anti-unification test: if control gating, relation formation and representation / coarse-graining cannot be unified without loss, they must split rather than be forced under one umbrella term.
+
+Therefore PR #1101 may preserve the author's Gate-language provenance, but it cannot count memory trace, current perception, external database scaffold, relation formation and representation as one Gate family by default. The corrected trace retypes those uses separately and explicitly leaves GK-1 OPEN.
+
+`Core_Law/SRT_One_Formation.md` still blocks:
 
 ~~~text
 ordinary causal recurrence = One;
 role recurrence = token identity.
 ~~~
 
-So the dialogue's emphasis on actual generative participation, not mere temporal adjacency, is repository-aligned.
+So the dialogue's emphasis on actual generative participation, not mere temporal adjacency, remains repository-aligned.
 
 ### 3.2 Memory — STRONG ALIGNMENT
 
@@ -253,14 +299,14 @@ Selection-position_t
   for an already formed One.
 ~~~
 
-The dialogue's:
+The dialogue's original local notation collided with canonical `P`; it has now been changed to:
 
 ~~~text
-S_t <-> P_t
-P_t != P_(t+1)
+sel_t <-> pos_t
+pos_t != pos_(t+1)
 ~~~
 
-is compatible only if `P_t` is typed as an event-local finite position / position-token rather than silently redefining canonical `Selection-position`.
+This is compatible only if `pos_t` is typed as an event-local finite position / position-token rather than silently redefining canonical `Selection-position`. For the later formed-One continuity sketch, the corrected trace uses canonical `Selection-position_t` only in its allowed time-local participation role.
 
 The source trace now makes this explicit.
 
@@ -294,11 +340,16 @@ Therefore the dialogue cannot presently promote:
 
 ~~~text
 history continuity alone -> Bearer;
+latent history survives sleep / anesthesia / amnesia -> same Bearer as a sufficient rule;
 gradual lineage -> same Bearer as theorem;
 copy / merge outcome -> canonical identity rule.
 ~~~
 
-The source trace correctly marks these as author judgments / P3 pressure candidates.
+The sleep / anesthesia / amnesia cases are now typed only as **compatibility / negative-definition pressure**: continuous explicit wakefulness, autobiographical recall or self-narration are not definitions of Bearer continuity. They do not establish the positive `P + E` burdens.
+
+Branching also exposes a defect in “generative lineage” as an identity criterion: two later continuers can share lineage from one earlier state. At minimum, a non-branch / same-closure / non-reassignment burden would be required, and canonical `E` is directly relevant because its non-outsourcing test asks whether the same prospective exposure can be reassigned while still claiming one Bearer.
+
+The source trace now marks all such identity judgments as author pressure / OPEN rather than canonical support.
 
 ### 3.5 Copy-state versus process continuity — SUPPORTIVE EXISTING BRIDGE
 
@@ -313,7 +364,7 @@ from
 ongoing consequence-history closure.
 ~~~
 
-This is strong internal support for the dialogue's rejection of “perfect archive / perfect copy = same bearer” as an automatic inference.
+This is strong internal support for rejecting “perfect archive / perfect copy = same bearer” as an automatic inference. It also blocks the converse implication that two matching copies were numerically one Bearer before divergence: copied state establishes initialization / representational continuity, not one ongoing consequence-history closure.
 
 It still does not prove the stronger numerical-identity conclusion.
 
