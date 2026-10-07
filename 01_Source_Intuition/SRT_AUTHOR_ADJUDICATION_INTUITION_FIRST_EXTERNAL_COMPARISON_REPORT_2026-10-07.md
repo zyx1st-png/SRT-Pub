@@ -28,6 +28,8 @@ tags: [AuthorAdjudication, Governance, AuthorIntuition, Neighbor, ExternalCompar
 
 ## A0-Q — direct author wording
 
+Recorded session locator: [2026-10-07 source session](https://claude.ai/code/session_018b36xpyuKqz9keofw56FJo), as linked by the originating PR. This locator supports provenance retrieval; the present corrective pass did not independently retrieve the raw session to verify the quotations word for word.
+
 > 「我觉得我的理论体系已经相对比较完整，所以不是特别想去接受其他学者的内容。保持原始的直觉。」
 
 > 「你说的3个方法可以写到默认的AI输出内容里吗？」
@@ -59,7 +61,7 @@ The author's second statement accepted the following machine proposal from the s
    —— 一行出处 + 注明「完全相同」或「部分重合」；只用于判断是否为新贡献
 ~~~
 
-Write `无` for an item with no finding. Write `未核` for an item the AI could not actually check in this response; do not present an unchecked item as `无`.
+Write `无（本轮已核范围内未发现）` for an item with no finding in the scope actually checked; this is not a global exclusion. Write `未核` for an item the AI did not actually check in this response. If only part of an item was checked, name the checked scope and mark the remainder `未核`; do not present unchecked material as `无`.
 
 **Constraints.**
 
@@ -84,7 +86,7 @@ three-item block
 != author acceptance of any neighbor framework.
 ~~~
 
-When an audit or workflow requires fuller neighbor analysis, it may still be recorded in the relevant audit file. If that analysis would change, narrow or defeat the author's wording, it is still returned for the author's second adjudication, surfaced through item 1 or item 2 and marked `需作者裁决`.
+When an audit or workflow requires fuller neighbor analysis, record it in the relevant audit file as required by that workflow. Any finding that would change, narrow or defeat the author's wording must still be returned for the author's second adjudication and marked `需作者裁决`. Findings matching the three item definitions belong in the corresponding item. Findings outside those definitions, such as concept conflation, missing arguments or unsupported scope, are briefly explained in the response body using the author's terms, with their basis and the decision needed; do not force them into fact conflict or internal contradiction. The three-item block is not an exhaustive classification and does not replace the full review conclusion.
 
 ## 3. Recorded but not decided
 
