@@ -77,7 +77,7 @@ This remains a **same-session machine pressure review**, not the independent rev
 - **F6 Notation:** local `P_t`, `E`, `G_t` collided with canonical `P + E` and `Ĝ_θ`; corrected.
 - **F7 Current Next:** the trace is now explicitly a companion provenance record, not E2-E4 evidence or a second CURRENT NEXT.
 - **F8 Citations:** ecological-psychology, Dudai, Haxby and Epstein metadata were corrected / tightened.
-- **F9 Minor routing:** unused Core_21b dependency removed; ordinary-language “代理” no longer maps to repository `proxy`.
+- **F9 Minor routing:** ordinary-language “代理” no longer maps to repository `proxy`; `Core_21b` is now intentionally retained because the revised information section explicitly guards against redefining canonical P1-T04 minimal information creation.
 
 ---
 
