@@ -96,7 +96,7 @@ The dialogue then moved from a critique of literal copy-storage to a constructiv
 
 ## 1. Memory — historical constraint, not content-copy retrieval
 
-### A1 — author-accepted direction
+### M synthesis under directional acceptance — not item-level A1
 
 The author repeatedly accepted the following machine compression:
 
@@ -392,7 +392,7 @@ not `Gate formation` as an umbrella term.
 
 ## 6. Same event, different bearers — no numerical identity requirement
 
-The author accepted that the same external event does not create one numerically identical internal memory object in multiple bearers.
+In a short affirmative / branch-selection reply, the author accepted the bounded case framing that the same external event need not create one numerically identical internal memory object in multiple bearers.
 
 Working compression:
 
@@ -540,7 +540,7 @@ This directly pressures **formed-One continuity / recurrent reconstitution**. It
 
 ### Latent historical / gating organization
 
-The author accepted that a previously formed organization may be:
+The author answered yes to the bounded question whether a previously formed organization may be:
 
 - currently unexpressed;
 - not consciously foregrounded;
@@ -564,7 +564,7 @@ The dialogue treated retained historical efficacy as important to continuity, bu
 
 ## 10. Sleep, anesthesia and amnesia — accepted compatibility cases, not sufficient-condition proofs
 
-The author accepted these as pressure cases against identifying continuity with continuous explicit consciousness or autobiographical recall.
+The author answered yes to the bounded compatibility questions used to pressure any definition that equates continuity with continuous explicit consciousness or autobiographical recall.
 
 ### Sleep / anesthesia
 
@@ -654,7 +654,7 @@ A complete external archive used afterward to train or reconstruct a behaviorall
 
 ### Gradual replacement
 
-The author accepted the contrasting case:
+The author answered yes to the contrasting gradual-replacement case:
 
 ~~~text
 G_0 -> G_1 -> G_2 -> ... -> G_n
@@ -735,7 +735,7 @@ where C may have its own higher-order stake / consequence structure.
 
 ### Conflict
 
-The author accepted that:
+The author answered yes to the conflict case:
 
 ~~~text
 C benefits
