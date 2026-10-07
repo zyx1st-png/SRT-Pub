@@ -808,33 +808,39 @@ Current `STATUS.md` already allows the cognition programme to conclude that SRT 
 
 ---
 
-## 7. Required narrowing matrix
+## 7. Required narrowing / routing matrix
 
-| Dialogue claim / pressure | Review result | Writeback form |
+| Dialogue claim / pressure | Corrected result | Writeback form |
 |---|---|---|
-| memory is not literal stored content-copy | PASS | retain |
+| memory is not literal stored content-copy | RETAIN | noncanonical pressure |
 | no persistent memory substrate exists | FAIL / overstrong | block |
-| memory = retained history changing future generation | PASS as working bridge | retain, noncanonical |
+| memory = retained history changing future generation | RETAIN as working bridge | noncanonical; not uniquely SRT |
 | forgetting = inaccessible Gate only | REVISE | retrieval failure OR trace degradation / other mechanisms |
 | every recall is learning | REVISE | recall can update / reconsolidate |
-| information is bearer-constructed | REVISE | semantic/cognitive information only |
-| external database cannot by itself preserve bearer identity | PASS as author judgment | retain, spatially neutral |
+| information is an attribute | AUTHOR SOURCE | preserve |
+| information is an external gating scaffold | AUTHOR SOURCE / SEMANTIC TENSION | preserve; do not silently identify with previous row |
+| carrier -> information property -> cognitive effect split | M-LEVEL PROPOSAL | pending author second adjudication |
+| external database can influence cognition without preserving bearer identity merely by content-match | AUTHOR JUDGMENT + OPEN IDENTITY EDGE | preserve, spatially neutral |
 | outside-skull structure can never be constitutive | FAIL | block |
 | decodable = represented | FAIL | block |
-| absent-object generated Gate may be called representation | PASS as local working definition | retain |
-| representation requires absence universally | HOLD | local vocabulary only |
-| same event -> same numerical memory state across people | REJECT | default nonidentity |
-| cross-subject transformed equivalence is possible | PASS | retain |
-| cross-subject convergence alone = objectivity | FAIL | require perturbation / world-facing robustness |
-| every Selection has event-local positional indexing | ALIGNED | retain with canonical terminology guard |
+| absent-object generated structure may be a representation case | AUTHOR SHORT-SELECTION / PARTIAL OVERLAP | retain as subcase only |
+| representation requires absence universally | FAIL AS CURRENT REPO DEFINITION | existing MR interface is broader; absence is one pressure |
+| present / absent border is natural | NOT ESTABLISHED | adjacent-case audit required |
+| same event -> same numerical memory state across people | REJECT by dialogue direction | default nonidentity / equivalence may still hold |
+| cross-subject transformed equivalence is possible | RETAIN | local placeholder `Γ_A ~_T Γ_B` |
+| cross-subject convergence alone = objectivity | FAIL | require cross-interface / cross-perturbation / world-facing robustness |
+| every Selection has event-local positional indexing | ALIGNED | use `pos_t`, not canonical `P` |
 | event-local Position supplies cross-time identity | FAIL | block |
-| gradual Gate replacement can preserve same bearer | AUTHOR JUDGMENT / OPEN | quarantine P3 |
-| total constitutive-history erasure ends bearer | AUTHOR JUDGMENT / OPEN | quarantine P3 |
-| exact copy / branch / merge bearer rules | OPEN | provenance only |
-| consequence-responsive proxy can be higher-order bearer candidate | PASS as pressure case | no automatic Bearer admission |
+| historical participation supports recurrent One continuity | ALIGNED DIRECTION | does not prove Bearer |
+| history survives sleep / anesthesia / amnesia -> same Bearer | NOT A SUFFICIENT RULE | compatibility case only; `P + E` still required |
+| gradual total replacement preserves same bearer | AUTHOR JUDGMENT / OPEN | quarantine identity claim |
+| total constitutive-history erasure ends bearer | AUTHOR JUDGMENT / OPEN | quarantine identity claim |
+| generative lineage alone determines identity | FAIL UNDER BRANCHING | needs additional non-branch / closure / non-reassignment burden |
+| exact copy / branch / merge bearer rules | OPEN | provenance only; no pre-divergence identity inference |
+| ordinary-language delegated agent rewritten by consequences may be higher-order Bearer candidate | PRESSURE CASE | do not call repository `proxy`; no automatic Bearer admission |
 | shared single deeper generative source | OPEN / under-reviewed here | provenance only |
-
----
+| this trace resolves GK-1 | NO | GK-1 remains OPEN |
+| this trace is E2-E4 evidence or a second CURRENT NEXT | NO | companion source / pressure record only |
 
 ## 8. Blocked inferences
 
@@ -844,29 +850,37 @@ Do not infer from this package:
 Epstein proves SRT;
 engram theory disproves generative memory;
 dynamic memory means nothing is stored;
+every historical transformation is a Gate;
+bridge / relation formation = Gate by definition;
+GK-1 has been resolved in favor of one umbrella Gate;
 decoding proves representation;
 lack of decoding disproves representation;
+object absence is the universal border of representation;
 same neural geometry means same numerical internal state;
 different neural topography means no public objectivity;
 semantic information is Shannon information;
+author 'information = property' and 'information = scaffold' have already been reconciled;
 SRT semantic-information claim refutes ecological information;
 external scaffold can never be constitutive cognition;
 history writeback alone proves Bearer;
+sleep / anesthesia / amnesia history retention is a sufficient same-Bearer test;
 gradual replacement proves a general numerical-identity theorem;
+generative lineage alone settles identity under branching;
 copying proves branch identity in all domains;
+matching copies were numerically one Bearer before divergence;
 merge automatically creates collective subjecthood;
 nested Bearer implies nested consciousness;
+ordinary-language delegated agent = GRG generative proxy;
 shared generative source is established ontology;
 monad analogy imports Leibniz's full metaphysics;
 generative efficacy is literal physical energy;
-this dialogue establishes SRT novelty or scientific distinctiveness.
+this dialogue establishes SRT novelty or scientific distinctiveness;
+this dialogue supplies E2-E4 evidence or changes CURRENT NEXT.
 ~~~
-
----
 
 ## 9. Repository landing recommendation
 
-Safe landing scope:
+Safe landing scope after the independent-review corrections:
 
 1. preserve the dialogue trace under `01_Source_Intuition/`;
 2. preserve this pressure review under `Operations/Audits/`;
@@ -876,32 +890,45 @@ Safe landing scope:
 6. no new symbol;
 7. no new repo-wide term-of-art;
 8. no new empirical programme;
-9. no claim of cross-domain confirmation.
+9. no claim of cross-domain confirmation;
+10. no GK-1 resolution;
+11. no identity closure;
+12. request a narrow independent re-review of the corrected head before merge.
 
 Current result:
 
 ~~~text
-DIALOGUE INTERNAL CONSISTENCY = PASS WITH NARROWING
-REPOSITORY COMPATIBILITY = PASS WITH QUARANTINE
-EXTERNAL-NEIGHBOR PRESSURE = PASS WITH MATERIAL CORRECTIONS
+DIALOGUE PROVENANCE VALUE = RETAIN
+GATE OWNER COMPATIBILITY = CORRECTED / GK-1 OPEN
+REPRESENTATION OWNER COMPATIBILITY = CORRECTED / ADJACENT-CASE GUARD ADDED
+INFORMATION SEMANTIC TENSION = PRESERVED / AUTHOR SECOND ADJUDICATION PENDING
+BEARER IDENTITY = QUARANTINED / P+E NOT BYPASSED
+EXTERNAL REFERENCES = CORRECTED
+PR CORRECTIVE IMPLEMENTATION = COMPLETE
+INDEPENDENT RE-REVIEW = PENDING
 CANONICAL PROMOTION = NOT AUTHORIZED / HOLD
 ~~~
 
----
-
 ## 10. External references
 
-- Epstein R. “The Empty Brain.” Aeon (2016).
+- Epstein R. “The Empty Brain.” Aeon (2016). The essay's subtitle / thesis also attacks information processing, knowledge retrieval and memory storage; the PR does not adopt those stronger negatives.
   https://aeon.co/essays/your-brain-does-not-process-information-and-it-is-not-a-computer
 - Shannon CE. “A Mathematical Theory of Communication.” Bell System Technical Journal 27 (1948).
   https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
 - Clark A, Chalmers D. “The Extended Mind.” Analysis 58(1), 7–19 (1998). DOI: 10.1093/analys/58.1.7.
 - Kriegeskorte N, Douglas PK. “Interpreting encoding and decoding models.” Current Opinion in Neurobiology 55, 167–179 (2019). DOI: 10.1016/j.conb.2019.04.002.
 - Haxby JV et al. “A common, high-dimensional model of the representational space in human ventral temporal cortex.” Neuron 72(2), 404–416 (2011). DOI: 10.1016/j.neuron.2011.08.026.
-- Haxby JV et al. “Hyperalignment: Modeling shared information encoded in idiosyncratic cortical topographies.” 2020 review. https://pmc.ncbi.nlm.nih.gov/articles/PMC7266639/
+- Haxby JV, Guntupalli JS, Nastase SA, Feilong M. “Hyperalignment: Modeling shared information encoded in idiosyncratic cortical topographies.” eLife 9:e56601 (2020). DOI: 10.7554/eLife.56601.
 - Choucry A, Nomoto M, Inokuchi K. “Engram mechanisms of memory linking and identity.” Nature Reviews Neuroscience 25, 375–392 (2024). DOI: 10.1038/s41583-024-00814-0.
 - Tomé DF et al. “Dynamic and selective engrams emerge with memory consolidation.” Nature Neuroscience 27, 561–572 (2024). DOI: 10.1038/s41593-023-01551-w.
 - Guskjolen A, Cembrowski MS. “Engram neurons: Encoding, consolidation, retrieval, and forgetting of memory.” Molecular Psychiatry 28, 3207–3219 (2023). DOI: 10.1038/s41380-023-02137-5.
-- Nader K, Hardt O. “A single standard for memory: the case for reconsolidation.” Nature Reviews Neuroscience 10, 224–234 (2009). https://www.nature.com/articles/nrn2590
-- Heft / Gibson ecological-psychology review material: https://pmc.ncbi.nlm.nih.gov/articles/PMC6280920/
-- Organism–environment / ecological information review: https://pmc.ncbi.nlm.nih.gov/articles/PMC7358536/
+- Dudai Y. “The Restless Engram: Consolidations Never End.” Annual Review of Neuroscience 35, 227–247 (2012). DOI: 10.1146/annurev-neuro-062111-150500.
+- Nader K, Hardt O. “A single standard for memory: the case for reconsolidation.” Nature Reviews Neuroscience 10, 224–234 (2009).
+- Gibson JJ. *The Ecological Approach to Visual Perception*. Houghton Mifflin (1979).
+- Lobo L, Heras-Escribano M, Travieso D. “The History and Philosophy of Ecological Psychology.” Frontiers in Psychology 9:2228 (2018). DOI: 10.3389/fpsyg.2018.02228.
+- Corris A. “Defining the Environment in Organism–Environment Systems.” Frontiers in Psychology 11:1285 (2020). DOI: 10.3389/fpsyg.2020.01285.
+- Haugeland J. “Representational Genera.” In W. Ramsey, S. Stich, D. Rumelhart (eds.), *Philosophy and Connectionist Theory*, pp. 61–89 (1991).
+- Clark A, Toribio J. “Doing without representing?” Synthese 101(3), 401–431 (1994). DOI: 10.1007/BF01063896.
+- Lewis D. “Survival and Identity.” In A. Oksenberg Rorty (ed.), *The Identities of Persons*, pp. 17–40 (1976). DOI: 10.1525/9780520353060-002.
+- Parfit D. *Reasons and Persons*. Oxford University Press (1984).
+- Nozick R. *Philosophical Explanations*. Harvard University Press (1981).
