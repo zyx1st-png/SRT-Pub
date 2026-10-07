@@ -18,13 +18,18 @@ dependency:
   - STATUS.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Core_Law/SRT_One_Formation.md
-  - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core_Law/SRT_Collective_Selection.md
+  - Glossary/SRT_Live_Term_Router.md
+  - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
+  - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+  - Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md
+  - Philosophy/SRT_Philosophy_Foundations.md
   - Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md
   - Philosophy/patches/SRT_Philosophy_PH_IND07_Processual_Bearer_Active_Maintenance_Stake_Integration_v0_1.md
   - Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md
   - Operations/Proposals/SRT_GENERATIVE_RELATIONAL_GRAMMAR_PROGRAMME_V0_1_2026-09-20.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONTINUE_DIRECTIONAL_ACCEPTANCE_2026-09-24.md
 related:
   - Operations/Audits/SRT_EMPTY_BRAIN_MEMORY_INFORMATION_REPRESENTATION_BEARER_CONSISTENCY_PRESSURE_REVIEW_2026-10-07.md
 tags:
@@ -50,7 +55,11 @@ tags:
 >
 > **Authority boundary**
 >
-> This is a noncanonical dialogue trace. Direct author statements are preserved as author source. Machine compressions and equations are M-level unless explicitly marked as author-accepted. This file does not redefine canonical `Selection-position`, `Bearer`, `One`, `L0/L1/L2`, memory, representation, information, or objectivity.
+> This is a noncanonical dialogue trace. Direct author statements are preserved as author source. Short author selections such as “是 / 后者 / 可以” are preserved only as branch selections tied to the exact machine question they answered; they do not upgrade the full preceding machine wording to A1. Machine compressions and equations remain M-level unless separately adjudicated. This file does not redefine canonical `Selection-position`, `Bearer`, `One`, `L0/L1/L2`, memory, representation, information, Gate, or objectivity.
+>
+> **Term-routing guard**
+>
+> Repository `Gate` already has an owner-routed meaning: organization-level gating is a **formed organization** carrying an admitted gating role; active bridge / relation formation is not Gate by lexical identity. The current cognition programme keeps GK-1 open: control gating, relation formation and representation / coarse-graining may have to split rather than be forced under one umbrella term. This trace therefore preserves the author's Gate-language provenance but does not count itself as evidence that GK-1 = YES.
 >
 > **Governance disposition**
 >
@@ -62,7 +71,7 @@ tags:
 
 The dialogue began from Robert Epstein's 2016 Aeon essay:
 
-- Robert Epstein, “The Empty Brain: Your brain does not process information and it is not a computer.”
+- Robert Epstein, “The Empty Brain” (Aeon, 2016). The essay's stronger subtitle / thesis includes the claims that the brain does not process information, retrieve knowledge or store memories; those stronger claims are pressure-tested rather than adopted here.
 - https://aeon.co/essays/your-brain-does-not-process-information-and-it-is-not-a-computer
 
 Epstein's useful pressure was separated from his strongest rhetoric.
@@ -93,10 +102,14 @@ The author repeatedly accepted the following machine compression:
 
 ~~~text
 past experience
--> changes internal Gate / historical organization
+-> changes retained historical organization
+-> where a formed gating organization carries part of that history,
+   later Gate operation may be one realization
 -> later Selection / objectification is constrained differently
 -> recall is current regeneration under those altered conditions
 ~~~
+
+Terminology guard: the first arrow above is **historical / bridge / relation transformation**, not “Gate formation” by definition.
 
 The central distinction became:
 
@@ -149,7 +162,7 @@ recall may update / reconsolidate memory
 
 The dollar-bill example was re-read through objectification and coarse-graining.
 
-A familiar object need not be maintained as a complete stored inventory of all its visual details. Instead, recurrent use can stabilize a task-relative Gate that supports:
+A familiar object need not be maintained as a complete stored inventory of all its visual details. Instead, recurrent use can stabilize task-relative relations / objectification structure that may, where an organization-level gating role is established, support a formed Gate used for:
 
 - recognition;
 - ordinary action;
@@ -161,8 +174,9 @@ This led to the working picture:
 
 ~~~text
 fine differences
--> task/history-relative coarse-graining
--> relatively stable object Gate
+-> task/history-relative coarse-graining / bridge stabilization
+-> relatively stable object-related organization
+-> formed gating role where independently established
 -> later regeneration / recognition
 ~~~
 
@@ -188,7 +202,7 @@ memory efficiency follows from a settled SRT energy law.
 
 > “认知其实是种过程，而信息是一种属性，不能直接进行对比。光有属性并不是一种过程。属性需要在具体的场景下产生过程。”
 
-This became one of the cleanest distinctions in the dialogue:
+This became one of the cleanest **author-origin distinctions**, but the next author sentence introduces a semantic tension that must not be silently resolved:
 
 ~~~text
 cognition
@@ -199,6 +213,25 @@ information
   not by itself a process that explains cognition.
 ~~~
 
+### A0-Q semantic tension — unresolved here
+
+The author then also said that information is an “external gating scaffold.” A later dialogue move said that a book on a shelf contains symbols / structure but does not thereby contain the same cognitively operative information for every bearer.
+
+These can be reconciled by a machine proposal:
+
+~~~text
+external carrier / symbol structure
+-> scaffold;
+
+information
+-> relational property realized in bearer + task + history + use;
+
+cognitive effect
+-> process outcome.
+~~~
+
+But that reconciliation is **M-level only and awaits author second adjudication**. This trace therefore preserves both author formulations without declaring that “information itself” and “external scaffold” are numerically the same thing.
+
 ### Direct author statement
 
 > “认知理解为内部门控的形成，信息视为外部门控的脚手架.”
@@ -206,7 +239,8 @@ information
 Later narrowing:
 
 - “internal” must not be read as “inside the skull by definition”;
-- the relevant distinction is whether a structure participates in the bearer-constitutive history / consequence / future-selection closure, versus serving as an external scaffold that is only recruited episodically or instrumentally.
+- “external gating scaffold” is preserved as the author's phrase, but repository terminology calls a static database / book an **external scaffold**, not a Gate, unless it actually carries the formed gating role;
+- the stronger closure-based distinction below is M-level pressure, not yet an author-adjudicated replacement meaning.
 
 ### Semantic / cognitive information working use
 
@@ -225,7 +259,7 @@ Communication was therefore read as:
 
 ~~~text
 signal / symbol coupling
--> Gate alignment / transformation
+-> alignment / transformation of formed gating, bridge and objectification organization
 -> sufficiently convergent action / judgment / reconstruction
 ~~~
 
@@ -258,8 +292,8 @@ symbol / word
 != intrinsic semantic content-container;
 
 symbol / word
-can become an external Gate scaffold
-that helps align or recut internal Gate geometry.
+can become an external scaffold
+that helps align, recruit or recut already-formed gating / objectification organization.
 ~~~
 
 A book on a shelf therefore contains marks / symbols / stable external structure. It does not thereby contain the same cognitively operative “information” for every bearer.
@@ -271,7 +305,7 @@ This led to:
 ~~~text
 same message token
 != same cognitive effect
-!= same internal Gate
+!= same formed gating / objectification state
 != same information in the strong semantic sense.
 ~~~
 
@@ -279,7 +313,7 @@ Yet stable public language remains possible because cross-bearer coordination ca
 
 ---
 
-## 5. Representation — a deliberately narrow working definition
+## 5. Representation — local absent-object working label, not a new border
 
 The dialogue rejected the move:
 
@@ -288,43 +322,73 @@ decodable neural pattern
 => representation
 ~~~
 
-as too fast.
+as too fast. This agrees with the existing Mental Representation interface, which requires stronger evidence than sensitivity / decodability alone.
 
-### A1 — author-accepted distinction
+### Existing owner first
 
-When an object is currently present, the preferred description was:
+`Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md` already defines representation more broadly as an internal surrogate with action relevance and does **not** require the target to be absent. It also uses the Sens / Spec / Inv / Func evidence vector and states:
 
 ~~~text
-current perception / objectification / Gate formation
+Decode(X | R) > 0
+-/-> StrongRep(R, X).
 ~~~
 
-not automatically “stored representation.”
+`PH-MR01` further says that offline / absent use is one pressure toward representation, **not a universal natural border**, and requires an adjacent-case audit before treating a binary threshold as ontological.
 
-When the relevant object or aspect is absent, but history generates a current structure that can stand in for it and participate in cognition or action, the author accepted calling that structure a representation.
+Therefore this dialogue must not redefine repository `representation`.
 
-The working definition is therefore:
+### Author branch selection
 
-> **absent-object / generative-surrogate representation**:
-> a currently generated Gate organization, dependent on retained history, that can participate in present cognition in place of an absent object or absent aspect.
-
-### Direct author answer
-
-When asked whether absent-object generated Gate geometry could be called representation, the author answered:
-
+When the machine asked whether a generated structure for an absent Zhang San could be called representation, the author answered:
 > “可以”
 
-### Occlusion
+This establishes only:
+> **absent-object generative surrogate** = an allowed representation case in this dialogue.
 
-The dialogue had already converged earlier that partial occlusion can mix:
+It does **not** establish:
 
 ~~~text
-visible part -> perception;
-hidden completion -> generated representation.
+object absent = representation;
+object present = non-representation
 ~~~
 
-This is a working SRT-side distinction, not a claim that cognitive neuroscience must reserve the word “representation” for absent-object cases.
+as a natural binary threshold.
 
----
+### Working-label classification
+
+`absent-object generative surrogate` is a **WORKING_LABEL_ONLY / PARTIAL_OVERLAP** with the existing Mental Representation interface. It names one subset of representational cases rather than a competing definition.
+
+### Adjacent-case pressure
+
+The present / absent cut must survive at least these neighboring cases before any stronger boundary claim:
+
+~~~text
+fully visible current target
+-> partially occluded target with history-based completion
+-> just-disappeared stimulus / short-delay maintenance
+-> offline imagery / episodic reconstruction
+~~~
+
+No discontinuity has been established at the exact moment of target absence. The author's earlier occlusion answer is therefore retained as a useful mixed case, not as proof of a binary border:
+
+~~~text
+visible contribution -> current perception;
+hidden / unavailable contribution -> generated completion candidate.
+~~~
+
+Whether the generated completion meets the repository's stronger representation burden remains task- and evidence-dependent.
+
+### Gate terminology guard
+
+For current perception, use:
+
+~~~text
+perception / objectification
++ operation of already-formed gating organization where relevant
++ bridge / relation formation where new structure is being formed
+~~~
+
+not `Gate formation` as an umbrella term.
 
 ## 6. Same event, different bearers — no numerical identity requirement
 
