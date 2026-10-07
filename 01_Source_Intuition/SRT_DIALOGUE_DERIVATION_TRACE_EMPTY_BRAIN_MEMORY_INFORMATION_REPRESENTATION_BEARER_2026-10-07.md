@@ -185,7 +185,9 @@ A public object is therefore not assumed to require a numerically identical inte
 
 ### Parked branch — explicitly not extended
 
-A separate intuition appeared that memory efficiency may favor maximal useful coarse-graining and that excessive differentiation may impair retrieval. The author explicitly parked this line for another time.
+A separate intuition appeared that memory efficiency may favor maximal useful coarse-graining and that excessive differentiation may impair retrieval. The author explicitly parked this line for another time:
+
+> “这个不进行延伸，以后有机会再聊.”
 
 This file therefore does **not** claim:
 
@@ -244,7 +246,8 @@ Repository terminology requires one correction to that sentence:
 The safest current local formulation is:
 
 ~~~text
-external difference / symbol / carrier structure
+difference / symbol / carrier structure available to the current process
+  (externally presented or internally re-entered)
 + bearer
 + task
 + history
@@ -269,7 +272,7 @@ information
 
 semantic / cognitive information
 = a role realized in a concrete relation of use,
-  where an external difference / structure becomes cognitively operative.
+  where an available difference / structure becomes cognitively operative.
 ~~~
 
 This formulation is deliberately **relational and functional**, not an “attribute” definition.
@@ -281,7 +284,7 @@ cognition
 = the ongoing process / transformation;
 
 semantic / cognitive information
-= one externally available difference / structure
+= one available difference / structure
   insofar as it becomes an operative scaffold / constraint
   within that process.
 ~~~
@@ -334,7 +337,7 @@ that helps align, recruit or recut already-formed gating / objectification organ
 
 A book on a shelf therefore contains marks / symbols / stable external structure. It does not thereby contain the same cognitively operative “information” for every bearer.
 
-Two people can receive the same string and undergo different Gate transformations.
+Two people can receive the same string and undergo different transformations of their current relational / objectification organization.
 
 This led to:
 
@@ -373,10 +376,17 @@ Decode(X | R) > 0
 
 Therefore this dialogue must not redefine repository `representation`.
 
-### Author branch selection
+### A0-S author branch selection
 
-When the machine asked whether a generated structure for an absent Zhang San could be called representation, the author answered:
+Original machine question preserved verbatim from the dialogue:
+
+> “如果张三根本不在场，但一个人想象张三时，研究者仍能从神经活动高准确率解码出‘张三’，这时候你会愿意把那套生成出来的 Gate 几何叫作‘表征’吗？”
+
+Author answer:
+
 > “可以”
+
+The original question used the then-live phrase “Gate 几何”; that wording is preserved here as provenance only and is not retroactively treated as satisfying the repository Gate owner.
 
 This establishes only:
 > **absent-object generative surrogate** = an allowed representation case in this dialogue.
@@ -475,11 +485,17 @@ rather than:
 both brains contain one numerically identical representation.
 ~~~
 
-### Direct author decision
+### A0-S author branch selection
 
-When asked whether such results should be read as “same representation” or “different Gate geometries judged equivalent under a coarse-graining,” the author chose:
+Original machine question preserved verbatim from the dialogue:
+
+> “你会把这种结果理解成‘他们内部有同一个表征’，还是‘两个不同 bearer 的 Gate 被研究者在某个粗粒度下判成了跨主体等价’？”
+
+Author answer:
 
 > “后者”
+
+Again, the original machine question's Gate wording is preserved as provenance; the corrected repository typing uses broader organization / equivalence language.
 
 The author also accepted that sufficiently stable convergence across:
 
@@ -565,8 +581,10 @@ For an already formed One, the repository-compatible machine sketch is:
 ~~~text
 Selection-position_t
 + retained effective history H_t
++ current organization Γ_t
 -> participate in current Selection
--> renewed organization H_(t+1)
+-> renewed organization Γ_(t+1)
+   with updated effective history H_(t+1)
 -> Selection-position_(t+1)
 ~~~
 
@@ -693,7 +711,7 @@ A complete external archive used afterward to train or reconstruct a behaviorall
 The author answered yes to the contrasting gradual-replacement case:
 
 ~~~text
-G_0 -> G_1 -> G_2 -> ... -> G_n
+Γ_0 -> Γ_1 -> Γ_2 -> ... -> Γ_n
 ~~~
 
 where no original Gate token remains at the end, yet each step was materially generated from the previous step.
@@ -899,17 +917,36 @@ Current provenance status:
   with repository term-routing correction:
   scaffold != external Gate by lexical identity.
 ~~~
+
+Additional direct author wording:
+
 - “记忆没有真假，表征是重新生成.”
 - “内部的gate会持续地产生影响。保存到数据库里的外部 Gate并不影响bearer的连续性.”
 - “如果一个人内部Gate和历史效率全部清空，那这个Bearer 已经不存在了”
+- “这个不进行延伸，以后有机会再聊.” — explicitly parks the memory-efficiency / maximal-coarse-graining branch.
 
 ### A0-S — short author selection tied to a machine question
 
 These answers select only the branch asked about; they do not ratify every surrounding machine formulation:
 
-- “后者” — for transformed / coarse-grained cross-bearer equivalence rather than numerical same-representation wording;
-- “可以” — for allowing an absent-object generated structure to count as a representation case;
-- repeated “是 / 是的” — for the specific continuity compatibility cases asked in the dialogue.
+- “后者” — exact question reproduced in §7; selects cross-bearer coarse-grained equivalence over “same internal representation.”
+- “可以” — exact question reproduced in §5; allows the absent-object Zhang-San case to count as representation.
+- repeated “是 / 是的” — selects the bounded alternatives posed in continuity / replacement compatibility cases; where the exact prompt is not reproduced, no stronger A1 wording is inferred.
+
+### A0-J — author judgment preserved through dialogue record / machine paraphrase
+
+These are treated as **author judgments in the dialogue record**, but the exact original prompt-response wording is not reproduced here. They are therefore not upgraded to A0-Q direct quotation:
+
+- the stronger event-local Position reading in §8;
+- gradual replacement judged compatible with continuity in §12;
+- copy divergence judged to yield two later bearer lineages in §13;
+- merge judged to allow a higher-order C inheriting both histories in §13;
+- the author's correction that A and B need not terminate when C forms;
+- the inter-level conflict case in which C can benefit while A is harmed;
+- the ordinary-language delegated-agent / consequence-writeback pressure case in §14;
+- the preference for multiple local positions / entrances of one deeper shared generative source in §15.
+
+All remain subject to the canonical / OPEN guards stated in their respective sections.
 
 ### M / directionally accepted machine synthesis
 
@@ -928,9 +965,10 @@ The same-session and independent reviews materially narrowed several formulation
 
 - Gate vs bridge-formation typing;
 - absence as one representation pressure rather than a natural representation boundary;
-- skull-neutral closure typing for “internal.”
+- skull-neutral closure typing for “internal”;
 - history efficacy as relevant but not sufficient for Bearer identity;
-- generative lineage as insufficient under branching;
+- generative lineage as insufficient under branching.
+
 They remain review-side corrections / questions unless separately author-adjudicated.
 
 ## 18. Deliberately not decided here
@@ -963,7 +1001,6 @@ author convergence = YES for bounded source trace
 same-session pressure review = COMPLETE
 canonical semantic edit = NO
 STATUS semantic edit = NO
-CURRENT NEXT change = NO
 new symbol = NO
 new repo-wide term-of-art = NO
 strict bearer identity theorem = NO
