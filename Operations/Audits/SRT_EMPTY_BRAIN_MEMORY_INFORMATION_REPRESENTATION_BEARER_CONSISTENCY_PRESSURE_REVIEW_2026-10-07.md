@@ -72,7 +72,7 @@ This remains a **same-session machine pressure review**, not the independent rev
 - **F1 Gate:** existing Gate / bridge-formation owners and GK-1 OPEN test were missing; corrected.
 - **F2 Bearer identity:** retrospective history / lineage was doing work that canonical `P + E` has not licensed; branch cases also defeat lineage-alone identity; corrected / quarantined.
 - **F3 Representation:** absent-object wording collided with the broader existing Mental Representation interface and lacked PH-MR01 adjacent-case audit; corrected.
-- **F4 Information:** the earlier “information = property” wording was author-superseded on 2026-10-07; the current bounded reading treats semantic / cognitive information relationally, as external difference / structure insofar as it becomes an operative scaffold / constraint in a concrete bearer + task + history coupling. The tension is therefore closed without turning the old property wording into a co-equal definition.
+- **F4 Information:** the earlier “information = property” wording was author-superseded on 2026-10-07; the current bounded reading treats semantic / cognitive information relationally, as a difference / structure available to the current process—externally presented or internally re-entered—insofar as it becomes an operative scaffold / constraint in a concrete bearer + task + history coupling. The tension is therefore closed without turning the old property wording into a co-equal definition.
 - **F5 Provenance:** direct author wording, short branch-selection replies and machine synthesis were mixed; now split.
 - **F6 Notation:** local `P_t`, `E`, `G_t` collided with canonical `P + E` and `Ĝ_θ`; corrected.
 - **F7 Current Next:** the trace is now explicitly a companion provenance record, not E2-E4 evidence or a second CURRENT NEXT.
@@ -127,7 +127,7 @@ The following dialogue judgments exceed current canonical closure and must remai
 - exact copying produces two bearers after divergence;
 - merge produces a new higher-order bearer while lower-level bearers may persist;
 - nested bearer architecture;
-- agent/proxy consequence-history closure as sufficient or near-sufficient bearer criterion;
+- delegated-agent consequence-history closure as sufficient or near-sufficient bearer criterion;
 - one shared deeper generative source for multiple bearers.
 
 Current owners leave exact One boundary, strict identity, branch identity and merge identity OPEN.
@@ -409,8 +409,6 @@ while
 
 where `Γ` is only a local placeholder for relevant historical / relational organization, not canonical `Ĝ_θ`.
 
-fits this well.
-
 Important guard:
 
 ~~~text
@@ -667,7 +665,9 @@ historical “information is an attribute”
 
 semantic / cognitive information
 = treated locally as a relational / functional role:
-  an external difference / structure becomes cognitively informative
+  an available difference / structure,
+  whether externally presented or internally re-entered,
+  becomes cognitively informative
   when it enters a concrete bearer + task + history coupling
   and functions as an operative scaffold / constraint.
 ~~~
@@ -909,6 +909,36 @@ this dialogue establishes SRT novelty or scientific distinctiveness;
 this dialogue supplies E2-E4 evidence or changes CURRENT NEXT.
 ~~~
 
+## 8.1 Independent re-review disposition — revised head accepted
+
+The author supplied a second independent Claude re-review of revised head `18228df`.
+
+Result:
+
+~~~text
+previous F1-F9 substantive blockers = CLOSED
+canonical risk = NO
+remaining issues = provenance / notation / wording cleanup only
+merge disposition = YES after one small cleanup commit
+~~~
+
+The cleanup commit following that review:
+
+- reproduced the exact machine questions for the §5 “可以” and §7 “后者” A0-S decisions;
+- added an A0-J tier for author judgments preserved only through dialogue-record paraphrase;
+- preserved the explicit parked-branch author quote;
+- changed remaining umbrella “Gate transformations” wording;
+- changed gradual-replacement notation from `G_n` to local `Γ_n`;
+- separated history `H_t` from organization `Γ_t`;
+- repaired provenance-list rendering and duplicate CURRENT NEXT text;
+- replaced the remaining audit `agent/proxy` wording with `delegated agent`;
+- removed the orphaned “fits this well.” sentence;
+- clarified that semantic / cognitive information can arise from structures externally presented **or internally re-entered**, so the local formulation does not exclude interoception, inner speech, or recalled cues.
+
+No canonical semantic edit was introduced by this cleanup.
+
+---
+
 ## 9. Repository landing recommendation
 
 Safe landing scope after the independent-review corrections:
@@ -936,7 +966,9 @@ INFORMATION PROPERTY WORDING = AUTHOR-SUPERSEDED / TENSION CLOSED
 BEARER IDENTITY = QUARANTINED / P+E NOT BYPASSED
 EXTERNAL REFERENCES = CORRECTED
 PR CORRECTIVE IMPLEMENTATION = COMPLETE
-INDEPENDENT RE-REVIEW = PENDING
+INDEPENDENT RE-REVIEW = PASS WITH CLEANUP
+FINAL CLEANUP = APPLIED
+MERGE DISPOSITION = YES
 CANONICAL PROMOTION = NOT AUTHORIZED / HOLD
 ~~~
 
