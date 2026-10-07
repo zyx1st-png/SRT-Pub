@@ -18,6 +18,7 @@ dependency:
   - STATUS.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Core_Law/SRT_One_Formation.md
+  - Core/SRT_Core_21b_Constitutive_Theorems.md
   - Core_Law/SRT_Collective_Selection.md
   - Glossary/SRT_Live_Term_Router.md
   - 01_Source_Intuition/SRT_AUTHOR_INTUITION_GATE_BRIDGE_PROPERTY_OBJECT_FORMATION_2026-09-26.md
