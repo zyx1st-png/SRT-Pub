@@ -71,7 +71,7 @@ This remains a **same-session machine pressure review**, not the independent rev
 - **F1 Gate:** existing Gate / bridge-formation owners and GK-1 OPEN test were missing; corrected.
 - **F2 Bearer identity:** retrospective history / lineage was doing work that canonical `P + E` has not licensed; branch cases also defeat lineage-alone identity; corrected / quarantined.
 - **F3 Representation:** absent-object wording collided with the broader existing Mental Representation interface and lacked PH-MR01 adjacent-case audit; corrected.
-- **F4 Information:** author statements “information = property” and “information = external scaffold” were being silently reconciled; now recorded as an unresolved author-level semantic tension.
+- **F4 Information:** the earlier “information = property” wording was author-superseded on 2026-10-07; the current bounded reading treats semantic / cognitive information relationally, as external difference / structure insofar as it becomes an operative scaffold / constraint in a concrete bearer + task + history coupling. The tension is therefore closed without turning the old property wording into a co-equal definition.
 - **F5 Provenance:** direct author wording, short branch-selection replies and machine synthesis were mixed; now split.
 - **F6 Notation:** local `P_t`, `E`, `G_t` collided with canonical `P + E` and `Ĝ_θ`; corrected.
 - **F7 Current Next:** the trace is now explicitly a companion provenance record, not E2-E4 evidence or a second CURRENT NEXT.
@@ -645,6 +645,36 @@ No claim is made here against formal information theory.
 
 ---
 
+## 4.7b Author correction — semantic / cognitive information
+
+The independent review identified a real contradiction between two author-source formulations:
+
+~~~text
+information = attribute
+vs
+information = external scaffold.
+~~~
+
+The author has now explicitly allowed the first formulation to be corrected because its original context is no longer recoverable.
+
+Current adjudication status:
+
+~~~text
+historical “information is an attribute”
+= provenance retained
+= controlling status withdrawn;
+
+semantic / cognitive information
+= treated locally as a relational / functional role:
+  an external difference / structure becomes cognitively informative
+  when it enters a concrete bearer + task + history coupling
+  and functions as an operative scaffold / constraint.
+~~~
+
+This does not make the physical carrier intrinsically informative and does not redefine Shannon, ecological or canonical P1-T04 uses of information.
+
+---
+
 ## 4.8 Gibsonian ecological information — second information pressure
 
 Sources:
@@ -817,9 +847,9 @@ Current `STATUS.md` already allows the cognition programme to conclude that SRT 
 | memory = retained history changing future generation | RETAIN as working bridge | noncanonical; not uniquely SRT |
 | forgetting = inaccessible Gate only | REVISE | retrieval failure OR trace degradation / other mechanisms |
 | every recall is learning | REVISE | recall can update / reconsolidate |
-| information is an attribute | AUTHOR SOURCE | preserve |
-| information is an external gating scaffold | AUTHOR SOURCE / SEMANTIC TENSION | preserve; do not silently identify with previous row |
-| carrier -> information property -> cognitive effect split | M-LEVEL PROPOSAL | pending author second adjudication |
+| information is an attribute | AUTHOR-SUPERSEDED | preserve only as historical provenance; not controlling |
+| semantic / cognitive information can function as external scaffold / constraint in use | RETAINED DIRECTION | relational / functional local reading; not a universal definition |
+| carrier / symbol is intrinsically information | REJECT | carrier becomes cognitively informative only in concrete coupling / use |
 | external database can influence cognition without preserving bearer identity merely by content-match | AUTHOR JUDGMENT + OPEN IDENTITY EDGE | preserve, spatially neutral |
 | outside-skull structure can never be constitutive | FAIL | block |
 | decodable = represented | FAIL | block |
@@ -859,7 +889,7 @@ object absence is the universal border of representation;
 same neural geometry means same numerical internal state;
 different neural topography means no public objectivity;
 semantic information is Shannon information;
-author 'information = property' and 'information = scaffold' have already been reconciled;
+historical 'information = property' wording remains controlling;
 SRT semantic-information claim refutes ecological information;
 external scaffold can never be constitutive cognition;
 history writeback alone proves Bearer;
@@ -901,7 +931,7 @@ Current result:
 DIALOGUE PROVENANCE VALUE = RETAIN
 GATE OWNER COMPATIBILITY = CORRECTED / GK-1 OPEN
 REPRESENTATION OWNER COMPATIBILITY = CORRECTED / ADJACENT-CASE GUARD ADDED
-INFORMATION SEMANTIC TENSION = PRESERVED / AUTHOR SECOND ADJUDICATION PENDING
+INFORMATION PROPERTY WORDING = AUTHOR-SUPERSEDED / TENSION CLOSED
 BEARER IDENTITY = QUARANTINED / P+E NOT BYPASSED
 EXTERNAL REFERENCES = CORRECTED
 PR CORRECTIVE IMPLEMENTATION = COMPLETE
