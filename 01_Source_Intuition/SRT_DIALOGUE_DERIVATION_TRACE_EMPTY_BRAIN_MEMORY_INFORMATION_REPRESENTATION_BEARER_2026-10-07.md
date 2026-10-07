@@ -196,64 +196,96 @@ memory efficiency follows from a settled SRT energy law.
 
 ---
 
-## 3. Information — process / property distinction
+## 3. Information — process / scaffold-role correction
 
-### Direct author statement
+### Historical author wording
+
+Earlier in the dialogue the author said:
 
 > “认知其实是种过程，而信息是一种属性，不能直接进行对比。光有属性并不是一种过程。属性需要在具体的场景下产生过程。”
 
-This became one of the cleanest **author-origin distinctions**, but the next author sentence introduces a semantic tension that must not be silently resolved:
+That sentence is retained as provenance, but its **“信息是一种属性” clause is no longer controlling**.
+
+### 2026-10-07 author correction
+
+The author later stated:
+
+> “关于信息是属性的上下文我记不清了，但是我感觉可以把它修正掉。”
+
+Current disposition:
 
 ~~~text
-cognition
-= process / transformation;
+“cognition is a process”
+= retained author direction;
 
-information
-= a relational or descriptive property under a declared use,
-  not by itself a process that explains cognition.
+“information is an attribute”
+= SUPERSEDED as the controlling formulation;
+
+a new universal definition of information
+= NOT claimed here.
 ~~~
 
-### A0-Q semantic tension — unresolved here
+This removes the earlier false pressure to reconcile “information = property” with “information = scaffold” as though both had to remain co-equal definitions.
 
-The author then also said that information is an “external gating scaffold.” A later dialogue move said that a book on a shelf contains symbols / structure but does not thereby contain the same cognitively operative information for every bearer.
+### Retained author direction
 
-These can be reconciled by a machine proposal:
-
-~~~text
-external carrier / symbol structure
--> scaffold;
-
-information
--> relational property realized in bearer + task + history + use;
-
-cognitive effect
--> process outcome.
-~~~
-
-But that reconciliation is **M-level only and awaits author second adjudication**. This trace therefore preserves both author formulations without declaring that “information itself” and “external scaffold” are numerically the same thing.
-
-### Direct author statement
+The author also said:
 
 > “认知理解为内部门控的形成，信息视为外部门控的脚手架.”
 
-Later narrowing:
+Repository terminology requires one correction to that sentence:
 
-- “internal” must not be read as “inside the skull by definition”;
-- “external gating scaffold” is preserved as the author's phrase, but repository terminology calls a static database / book an **external scaffold**, not a Gate, unless it actually carries the formed gating role;
-- the stronger closure-based distinction below is M-level pressure, not yet an author-adjudicated replacement meaning.
+- a static symbol, book, database or signal is not thereby a repository `Gate`;
+- therefore “外部门控的脚手架” is read here as **external cognitive scaffold / constraint**, not as a literal “external Gate.”
 
-### Semantic / cognitive information working use
+### Current bounded working formulation
 
-The dialogue converged on a restricted use:
+The safest current local formulation is:
 
 ~~~text
-semantic / cognitive information
-is not treated as a prepackaged content-object
-that moves unchanged from A to B;
-
-a symbol / signal becomes cognitively informative
-through bearer + task + history + relation.
+external difference / symbol / carrier structure
++ bearer
++ task
++ history
++ current coupling / use
+-> can function as semantic / cognitive information
+-> by scaffolding or constraining
+   bridge formation,
+   formed Gate operation where independently established,
+   objectification,
+   judgment,
+   or action.
 ~~~
+
+So:
+
+~~~text
+carrier / symbol
+!= information intrinsically;
+
+information
+!= a substance transferred unchanged from A to B;
+
+semantic / cognitive information
+= a role realized in a concrete relation of use,
+  where an external difference / structure becomes cognitively operative.
+~~~
+
+This formulation is deliberately **relational and functional**, not an “attribute” definition.
+
+It also preserves the earlier intuition that information is not itself the whole cognitive process:
+
+~~~text
+cognition
+= the ongoing process / transformation;
+
+semantic / cognitive information
+= one externally available difference / structure
+  insofar as it becomes an operative scaffold / constraint
+  within that process.
+~~~
+
+### Communication
 
 Communication was therefore read as:
 
@@ -272,14 +304,17 @@ from one bearer to another.
 
 ### Hard guard
 
-This is **not** a denial of:
+This local correction does **not** redefine every use of “information” in the repository.
 
+In particular it does not deny or replace:
+
+- canonical P1-T04's restricted “Selection upstream of information readout” result;
 - Shannon information as a mathematical / engineering quantity;
 - physical correlation;
 - ecological information in Gibsonian theory;
 - domain-specific information-theoretic measures.
 
-The claim is limited to semantic / cognitive content as used in this dialogue.
+The claim here is limited to **semantic / cognitive information in this dialogue**.
 
 ---
 
@@ -850,8 +885,19 @@ The 2026-09-24 continuation rule explicitly blocks the inference that directiona
 
 Preserved verbatim or near-verbatim in the dialogue:
 
-- “认知其实是种过程，而信息是一种属性，不能直接进行对比。光有属性并不是一种过程。属性需要在具体的场景下产生过程。”
-- “认知理解为内部门控的形成，信息视为外部门控的脚手架.”
+- historical wording: “认知其实是种过程，而信息是一种属性，不能直接进行对比。光有属性并不是一种过程。属性需要在具体的场景下产生过程。”
+- later correction: “关于信息是属性的上下文我记不清了，但是我感觉可以把它修正掉。”
+- retained direction: “认知理解为内部门控的形成，信息视为外部门控的脚手架.”
+
+Current provenance status:
+
+~~~text
+“认知是过程” = retained;
+“信息是一种属性” = superseded as controlling wording;
+“信息作为外部脚手架” = retained direction,
+  with repository term-routing correction:
+  scaffold != external Gate by lexical identity.
+~~~
 - “记忆没有真假，表征是重新生成.”
 - “内部的gate会持续地产生影响。保存到数据库里的外部 Gate并不影响bearer的连续性.”
 - “如果一个人内部Gate和历史效率全部清空，那这个Bearer 已经不存在了”
@@ -873,7 +919,7 @@ Retain for retrieval, but do not treat as item-level author wording:
 - external scaffold versus bearer-constitutive closure;
 - cross-position robustness supporting public-object objectivity pressure;
 - language / symbols as alignment scaffolds;
-- the proposed reconciliation of “information as property” with “information as external scaffold.”
+- the current bounded relational / scaffold-role reading of semantic-cognitive information.
 
 ### Pending author second-adjudication items introduced by review
 
@@ -881,11 +927,9 @@ The same-session and independent reviews materially narrowed several formulation
 
 - Gate vs bridge-formation typing;
 - absence as one representation pressure rather than a natural representation boundary;
-- the carrier / information-property / cognitive-effect three-way split;
+- skull-neutral closure typing for “internal.”
 - history efficacy as relevant but not sufficient for Bearer identity;
 - generative lineage as insufficient under branching;
-- skull-neutral closure typing for “internal.”
-
 They remain review-side corrections / questions unless separately author-adjudicated.
 
 ## 18. Deliberately not decided here
