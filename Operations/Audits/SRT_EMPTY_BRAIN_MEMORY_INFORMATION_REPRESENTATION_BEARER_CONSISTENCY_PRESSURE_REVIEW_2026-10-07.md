@@ -368,7 +368,7 @@ This is strong internal support for rejecting “perfect archive / perfect copy 
 
 It still does not prove the stronger numerical-identity conclusion.
 
-### 3.6 Higher-order proxy / collective bearer — EXISTING HARD GUARD
+### 3.6 Ordinary-language delegated agent / collective bearer — EXISTING HARD GUARD
 
 `Core_Law/SRT_Collective_Selection.md` requires separate evidence for:
 
@@ -383,13 +383,14 @@ Even those burdens do not automatically establish collective Bearer / Agency / s
 Therefore:
 
 ~~~text
-proxy rewrites itself from consequences
-=> bearer
+ordinary-language delegated agent
+rewrites itself from consequences
+-/-> Bearer automatically
 ~~~
 
-is not licensed.
+is the safe reading. The word `proxy` is avoided here because repository **GRG generative proxy** already has another routed meaning.
 
-The dialogue can retain it only as a higher-order bearer candidate / pressure case.
+The dialogue can retain the delegated-agent case only as a higher-order Bearer candidate / pressure case.
 
 ### 3.7 Cross-position objectivity — STRONG ALIGNMENT
 
@@ -397,13 +398,15 @@ The dialogue can retain it only as a higher-order bearer candidate / pressure ca
 
 > Objectivity remains a cross-position / cross-interface / cross-perturbation achievement.
 
-The dialogue's:
+The dialogue's corrected file-local notation is:
 
 ~~~text
-G_A != G_B
+Γ_A != Γ_B
 while
-G_A ~_T G_B
+Γ_A ~_T Γ_B
 ~~~
+
+where `Γ` is only a local placeholder for relevant historical / relational organization, not canonical `Ĝ_θ`.
 
 fits this well.
 
@@ -494,10 +497,10 @@ This is one of the most important narrowing corrections.
 
 ## 4.3 Reconsolidation / updating — supports generativity, not universal rewrite
 
-Classic source:
+Classic sources:
 
-Dudai Y. “The restless engram: consolidations never end.”
-and related reconsolidation literature; a useful review is:
+Dudai Y. “The Restless Engram: Consolidations Never End.” Annual Review of Neuroscience 35, 227–247 (2012). DOI: 10.1146/annurev-neuro-062111-150500.
+
 Nader K, Hardt O. “A single standard for memory: the case for reconsolidation.”
 Nature Reviews Neuroscience 10, 224–234 (2009).
 https://www.nature.com/articles/nrn2590
@@ -553,10 +556,10 @@ Sources:
    DOI: 10.1016/j.neuron.2011.08.026
    https://pmc.ncbi.nlm.nih.gov/articles/PMC3201764/
 
-2. Haxby JV et al.
+2. Haxby JV, Guntupalli JS, Nastase SA, Feilong M.
    “Hyperalignment: Modeling shared information encoded in idiosyncratic cortical topographies.”
-   eLife / review perspective, 2020.
-   https://pmc.ncbi.nlm.nih.gov/articles/PMC7266639/
+   eLife 9:e56601 (2020). DOI: 10.7554/eLife.56601.
+   https://elifesciences.org/articles/56601
 
 Pressure:
 
@@ -644,14 +647,15 @@ No claim is made here against formal information theory.
 
 ## 4.8 Gibsonian ecological information — second information pressure
 
-Useful reviews:
+Sources:
 
-- “The History and Philosophy of Ecological Psychology”
-  https://pmc.ncbi.nlm.nih.gov/articles/PMC6280920/
-- “Defining the Environment in Organism–Environment Systems”
-  https://pmc.ncbi.nlm.nih.gov/articles/PMC7358536/
+- Gibson JJ. *The Ecological Approach to Visual Perception* (1979).
+- Lobo L, Heras-Escribano M, Travieso D. “The History and Philosophy of Ecological Psychology.” Frontiers in Psychology 9:2228 (2018). DOI: 10.3389/fpsyg.2018.02228.
+- Corris A. “Defining the Environment in Organism–Environment Systems.” Frontiers in Psychology 11:1285 (2020). DOI: 10.3389/fpsyg.2020.01285.
 
-Gibsonian ecological psychology treats structured environmental arrays as carrying information that can specify affordances without requiring an internal representational reconstruction in the conventional sense.
+Important source typing: Lobo et al. is the 2018 history / philosophy review; Corris 2020 is a hypothesis-and-theory article on organism–environment systems, not itself a general “ecological information review.”
+
+Gibsonian ecological psychology treats structured environmental arrays as carrying information relevant to perception / affordances without requiring an internal representational reconstruction in the conventional sense.
 
 This creates a productive contrast:
 
@@ -659,46 +663,101 @@ This creates a productive contrast:
 Shannon information
 != ecological information
 != semantic / cognitive information
-!= SRT dialogue Gate scaffold.
+!= external scaffold / carrier structure
 ~~~
 
-The current package should not attempt to collapse these meanings.
+The current package should not collapse these meanings or call all of them one `Gate` family.
+
+---
+
+## 4.9 Personal-identity branching / fission pressure — lineage alone is not enough
+
+The independent review correctly notes that copy, branch, fusion and gradual replacement are classic personal-identity pressure cases rather than free space for a new SRT identity rule.
+
+Relevant neighbors include:
+
+- Lewis D. “Survival and Identity.” In A. O. Rorty (ed.), *The Identities of Persons*, pp. 17–40 (1976). DOI: 10.1525/9780520353060-002.
+- Parfit D. *Reasons and Persons* (1984), especially the reductionist / fission discussion where what matters need not coincide with strict numerical identity.
+- Nozick R. *Philosophical Explanations* (1981), closest-continuer theory; branching is exactly the kind of case that pressures a one-line continuity criterion.
+
+Repository-local historical material also exists in `Philosophy/SRT_Philosophy_Foundations.md §4.4.2` (Theseus ship / trajectory continuity), but that section is legacy / expanded argumentative material, not the current canonical identity owner. It cannot close the Spine / One Formation OPEN gates.
+
+Pressure result:
+
+~~~text
+continuous generative lineage
+may support continuity evidence
+but does not by itself determine
+strict numerical identity under branching.
+~~~
+
+Therefore the corrected trace keeps copy / branching / merge as author-source pressure only and does not infer a pre-divergence single Bearer.
+
+---
+## 4.10 Representation-family pressure — absence is a case, not a natural cutoff
+
+The existing Mental Representation interface already owns a broad representation concept: internal surrogate + action relevance, with Sens / Spec / Inv / Func as evidence dimensions. Offline / absent target use increases representation demand but is not required by definition.
+
+Two classic neighboring discussions reinforce the anti-binary pressure:
+
+- Haugeland J. “Representational Genera.” In W. Ramsey, S. Stich, D. Rumelhart (eds.), *Philosophy and Connectionist Theory*, pp. 61–89 (1991).
+- Clark A, Toribio J. “Doing without representing?” *Synthese* 101(3), 401–431 (1994). DOI: 10.1007/BF01063896.
+
+Combined with PH-MR01, the present / absent threshold must be tested against adjacent cases. The corrected trace now uses the label **absent-object generative surrogate** only as a representation subcase / working label, not as a repository-wide definition or natural phase boundary.
 
 ---
 
 ## 5. Representation terminology pressure
 
-The dialogue reached a clean narrow use:
+The original dialogue tried to reserve the word representation for absent-object generation. That was too strong relative to existing repository owners.
 
-> representation = absent-object / generative surrogate Gate organization.
+### 5.1 Existing repository interface
 
-This is conceptually useful because it prevents:
+`Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md` already defines representation as an internal surrogate with action relevance and does not require object absence. Strong evidence requires the Sens / Spec / Inv / Func burden; decoding alone is insufficient.
+
+`PH-MR01` adds the adjacent-case rule: a binary criterion proposed as a natural representation boundary must be pressure-tested with the strongest case below and weakest case above the threshold.
+
+### 5.2 Corrected local label
+
+The trace now keeps only:
+
+> **absent-object generative surrogate** = one allowed representation case / working label.
+
+Router status:
 
 ~~~text
-any neural discriminability
-=> representation.
+PARTIAL_OVERLAP / WORKING_LABEL_ONLY
 ~~~
 
-But it is not standard scientific usage.
+not a replacement owner.
 
-Many cognitive neuroscience models use “representation” for online perceptual population structure as well.
+### 5.3 Adjacent-case audit
 
-Therefore this package must say:
+At minimum, compare:
 
 ~~~text
-SRT dialogue working definition
-!= universal definition of representation.
+fully visible current target
+-> partial occlusion with generated completion
+-> just-disappeared target / short-delay maintenance
+-> offline imagery / episodic reconstruction
 ~~~
 
-`Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md` already separates:
+No natural discontinuity has been established at target absence. Therefore:
 
-- evidence for representation;
-- ontological degree / boundary of representation;
-- representation from Bearer / phenomenality.
+~~~text
+absence
+= useful representation-pressure dimension
+!= universal representation border.
+~~~
 
-The present trace should be routed as an additional bounded pressure, not a replacement of PH-MR01.
+The robust retained result is narrower:
 
----
+~~~text
+decodability alone -/> StrongRep;
+absent-object generation may be representational;
+online perception may also contain representational organization
+under the existing repository interface.
+~~~
 
 ## 6. Strong-neighbor overlap and no novelty claim
 
@@ -727,8 +786,8 @@ Therefore no claim is currently earned that SRT uniquely discovered:
 Potential SRT value remains at the **relational integration** level:
 
 ~~~text
-event-local Position
-+ history-bearing Gate
+event-local position / formed Selection-position where typed
++ retained historical / gating organization where independently established
 + generative reconstitution
 + consequence return
 + cross-position equivalence
@@ -745,7 +804,7 @@ integration value candidate
 != superiority.
 ~~~
 
-Current `STATUS.md` already allows the cognition programme to conclude that SRT adds zero local explanatory increment after fair mature-neighbor adaptation.
+Current `STATUS.md` already allows the cognition programme to conclude that SRT adds zero local explanatory increment after fair mature-neighbor adaptation. This PR is a **companion source / pressure record only**: it is not E2–E4 evidence, does not resolve GK-1, and does not create a second CURRENT NEXT.
 
 ---
 
