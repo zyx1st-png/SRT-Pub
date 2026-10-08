@@ -9,7 +9,7 @@ claim_mode: bounded_counterexample_audit
 created: 2026-10-08
 updated: 2026-10-08
 research_mode: U
-root_question: What independently assessable evidence could pressure a candidate of Selection-mediated vertical reconstitution and relative continuation separability, without defining One by the classifier or excluding environmentally supported formation?
+root_question: Why do Q1-Q3 fail to distinguish One admission from N3 H1 H2, and which negative safeguards survive the resulting F03 stop?
 comparative_claim: none
 named_comparator: null
 n_mode_triggered: false
@@ -26,7 +26,7 @@ dependency:
 tags: [OneFormation, RelativeSeparability, F03, Counterexample, AdmissionBurden, AntiFalsePositive, AntiFalseNegative]
 ---
 
-# F-03 relative continuation separability: positive-burden / false-admission / false-exclusion pressure
+# F-03 relative continuation separability — stop-loss and negative-guard audit
 
 > **Result / STOP:** The observable parts of Q1/Q2 exclude obvious shortcuts (external clock, memoryless relay, exchangeable peaks) but **do not exclude ordinary state-dependent leaky systems N3, H1 mechanisms or H2 latent-state implementations**. Q3 has no owner-grounded independent replacement envelope. Hence **no positive One-admission proxy is earned**; the ontic step reaches the author-accepted **2026-09-27 primitive anti-tautology STOP**. F-03 stays OPEN. Retain this as an **A-style negative guard / stop-loss audit**, not another positive test programme. Seven initial cases plus a scale caveat are discussed.
 >
@@ -41,7 +41,7 @@ tags: [OneFormation, RelativeSeparability, F03, Counterexample, AdmissionBurden,
 - The 2026-09-13 **author** `SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md` protects same-event manifestation/backgrounding without a completed object pair or pre-given menu. The 2026-09-13 One preaudit **R4 explicitly retypes the September 11 A-lineage/B-lineage wording**: lineage must not be an upstream One premise. Treat September 11 as a *non-definition historical audit* (its header marks `ai_do_not_use_for_definition: true`), **not** as an independently retained current admission owner. Controlling One §2: 'repeated non-equivalent reconstitution dependence supports relative continuation separability'; locality must be generated and lineage attributed only later where warranted.
 - The now-merged **PR #1104** limits F-01/F-02 to trivial signature observations; its fixed-system C1/C2 cases refute observed SCC / one-step deletion as sufficient. Its C2 correction forbids inventing a new circuit to claim that any mediator is "replaceable".
 
-**This memo's narrower new job** is to cross-check those inherited candidates against **both** false positive and false negative constructions, describe what a bounded evidentiary comparison would need, and return a decision packet **without** silently turning it into One's formal definition.
+**This memo's narrow revised job** is to retain inherited negative controls, demonstrate that the proposed positive Q1/Q2 checks fail against N3/H1/H2, show Q3's unresolved quantifier/envelope problem, and stop the F-03 side route without silently turning it into One's formal definition.
 
 ## 2. Declare representation and admissible comparisons BEFORE any case
 
@@ -118,7 +118,7 @@ Z_(t+1) := f(Z_t, U_t)                  (current formed candidate conditions fut
 W_(t+1) := g(Z_(t+1), U_(t+1))         (bounded reconstitution probe)
 ~~~
 
-For some nontrivial `f,g` and a declared admissible field history, varying Z_t while leaving that environmental history matched can make a future difference to how W is generated. That may supply **one useful piece** of reconstitution-sensitive evidence, although it could equally be ordinary H1/H2 feedback and does **not** prove primitive Selection, One, relative separability or metaphysical identity. It defeats the **false negative** "if U is required, there cannot be a One".
+For some nontrivial `f,g` and a declared admissible field history, varying Z_t while leaving that environmental history matched can make a future difference to how W is generated. That supplies **a model-level state-dependence observation**, not any positive One-discriminating evidence; it can be ordinary H1/H2 feedback and does **not** prove primitive Selection, One, relative separability or metaphysical identity. It defeats the **false negative** "if U is required, there cannot be a One".
 
 ### P2 — distributed history cannot be ruled out by component-local memory tests
 
