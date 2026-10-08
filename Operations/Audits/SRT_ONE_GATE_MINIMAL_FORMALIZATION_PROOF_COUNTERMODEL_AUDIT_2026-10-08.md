@@ -9,7 +9,7 @@ claim_mode: formalization_audit
 created: 2026-10-08
 updated: 2026-10-08
 research_mode: U
-root_question: What can be formally proved or refuted in bounded One-formation and typed Gate models without retyping primitive Selection or creating a universal Gate theorem?
+root_question: What does a bounded One and typed Gate formalization actually establish at current owner strength, and which admission burdens remain independently OPEN?
 comparative_claim: none
 named_comparator: null
 n_mode_triggered: false
@@ -21,181 +21,209 @@ dependency:
   - Operations/Audits/SRT_GATE_TYPED_OPERATOR_MINIMAL_FORMALIZATION_2026-09-26.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_BEARER_GATE_VERTICALITY_MEMBRANE_GATING_2026-10-07.md
-tags: [Formalization, OneFormation, Gate, Countermodel, ConditionalTheorem, ProofScope, AntiOverclaim]
+tags: [Formalization, OneFormation, Gate, Countermodel, RefinementTypes, ProofScope, AntiOverclaim]
 ---
 
-# Bounded One / Gate formalization — proof and countermodel feasibility audit
+# Bounded One / Gate formalization — model limits and admission obligations (revised)
 
-> **Result / scope:** noncanonical machine audit and candidate proof obligations only. The examples below are **declared finite models** and a **standard conditional matrix lemma**, not derivations of primitive Selection, ontic One, Gate universality, Bearer, consciousness, or an SRT-specific theorem. No Lean code was built or kernel-checked in this pass. No new current programme is opened.
+> **Verdict:** at the **current local owners' strength**, event- and edge-signature examples yield only **trivial syntactic non-entailments**. The first substantive unresolved One-formation obstacle is the positive, independently applicable **relative continuation separability** criterion in Def-OF-2 / §2. Candidate classifiers based on an observed cycle, generic path dependence or one deletion effect may over-admit. Form / Close / Compose require **evidence-carrying admission steps**, not automatic candidate promotion. Neither a new One theorem nor a universal Gate algebra is claimed.
 >
-> **Control:** obey the active Generative Ontology Spine, local One owner, typed Gate audit and STATUS CURRENT NEXT. In particular, the active direction remains the neutral cognition E2/E3/E4 discriminator; toy-simulation execution and new formal domain-reconstruction claims remain under their existing gates. This paper audit does not release them. Canonical / STATUS / CURRENT NEXT / HP-B / symbol-table edits = **NONE**.
+> **Status:** noncanonical U-mode feasibility/review record. No Lean/Lake verification, empirical result, independent full-domain theorem, new canonical definition, current-next change, or approval to execute an experiment. Prior first draft was challenged by an author-forwarded Claude review; this revision accepts its principal mathematical and typing corrections. Reviewer agreement is not proof.
 
-## 1. Source ownership and semantic invariants
+## 0. Authorization, source of interpretation, and scope (A1)
 
-- **P0-01 / P0-04:** primitive Selection is genuine actualised non-neutral differentiation, **not** selection from a completed option set, and **not** a pre-existing formal selector. An admitted model's event predicate is not a sufficient ontic Selection test. The primitive anti-tautology criterion remains OPEN, and the current anti-tautology search STOP is not reopened here.
-- **One owner:** event-level verticalization does not imply One; One's D4a formation reading requires a relatively separable path of repeated Selection-mediated vertical reconstitution. There is no established necessary-and-sufficient classifier, unique successor or numerical identity theorem.
-- **Spine:** occurrence, history, One, Selection-position, Stable ISP, Bearer, agency and phenomenality are not interchangeable. Even a model of One formation does not establish P or positive E.
-- **Gate typed audit:** Form, Close and Compose are different typed transformations. Only formed organizations may later acquire a Gate role. A common stabilization pattern, if found, would not by itself make the operators identical.
-- **2026-10-07 author source:** formed gating can precede Bearer admission; proposed post-Bearer gate maintenance/revision interpretation is still pending a separate second adjudication. Membrane analogies do not settle GK-1a.
-- **Constitution boundary:** formalization stabilizes chosen unit, boundary, grain, equivalence and normalization for a **domain model**. It is not constitutional authority.
+- **Operational authorization:** in the 2026-10-08 GitHub-connected dialogue, the author said 「继续，如有必要可写入仓库」 in direct continuation of a bounded One/Gate formalization-feasibility analysis, and then supplied a critical review of the resulting Draft PR #1104. That permits **scoped noncanonical analysis/revision**, not elevation of each machine-suggested F-item to author theory, not a new ongoing research programme, and not blanket permission to change frozen canonical owners. This is a dialogue-scope note, not an invented A1 theoretical adjudication.
+- **Owner authority:** the active cross-owner Generative Ontology Spine and Def-OF-1..3 / §7 of Core_Law/SRT_One_Formation.md remain controlling; Gate typing comes from the 2026-09-26 noncanonical typed audit. The 2026-10-07 Bearer/Gate source has already landed in merged PR #1103, but the **post-Bearer maintenance/revision interpretation inside that source** remains pending a second author adjudication.
+- **Programme boundary:** STATUS CURRENT NEXT = neutral cognition E2/E3/E4 discriminator first. No anti-tautology STOP reopening, no author-owned new formal domain claim, no toy execution, no third deep well, no independent branch/merge-identity inquiry beyond noting its **HOLD**. No modifications to canonical, STATUS, CURRENT NEXT, HP-B, symbol table or cognitive owner.
+- **Constitution boundary:** a formal model chooses unit, boundary, grain, equivalence and normalization; those choices do not become SRT constitutional authority. All symbols in this file are audit-only.
 
-These are **input/interpretation restrictions**, not statements proved by the models below.
+## 1. Owner facts to preserve (not outputs of the proposed math)
 
-## 2. Minimal model signature (audit-only; no symbol-table promotion)
+1. **Primitive Selection** is genuine actualised non-neutral differentiation; not a pre-given option choice, bare state transition or formal operator. The anti-tautology discriminator remains OPEN. Neither "admitted model event" nor graph edge is an independently established ontic Selection.
+2. **One / Def-OF-2** requires *Selection-mediated vertical reconstitution* that yields relatively separable formed process-unity. Ordinary path dependence, causal recurrence, similarity, cyclicity and mere persistence are not sufficient. The exact necessary-and-sufficient formal classifier remains OPEN.
+3. **Type order:** Selection-mediated formation path -> One where independently admitted -> lineage/identity attribution where warranted. A model event is not automatically the unit whose **strict identity** is at issue.
+4. **Branch/merge numerical identity = HOLD** (STATUS immediate routing and One §7), distinct from graph-path branching.
+5. **Downstream guards:** One != Stable ISP != Bearer, and none automatically entails agency, subject-position, consciousness or phenomenality. P and positive E must be separately paid for Bearer.
+6. **Gate owner:** Formation, Closure and Composition are different typed transformations. Their formed outputs may acquire a gating role only if that role is separately admitted. SC-1..SC-6 is a candidate shared stabilization contract; U1..U5 are proposed cross-type invariants, **not** already-proved invariants.
+7. **Author source scope:** formed Gate can precede Bearer; Bearer is not a universal source of Gate. Post-Bearer gate maintenance/revision remains pending, and membrane examples do not establish a universal GK-1a unification.
 
-For a finite *declared model* M, take:
+## 2. F-01 / F-02 — signature-level checks only
 
-1. A finite set E of **model event records**, not an ontic inventory of all possible Selection.
-2. Unary predicates A(e) ("admitted event" by the *declared model*), V(e) ("model marks a vertical differential"), with no inference that A(e) establishes primitive actualisation.
-3. A directed relation R(e,f), interpreted as *model-supported reconstitution dependence* when such attribution is independently available. A bare chronological successor edge cannot qualify as R merely by labeling.
-4. Optional extra evidence D and S for a **bounded, case-specific** relative continuation separability test. Do not silently define this as spatial isolation, causal closure, a prior bearer token, exact identity, or graph reachability.
-5. A separate optional predicate O(x) for a case admitted as One **only after** the required positive formation and separability burdens have been established. O is not defined as A, V, a cycle, an SCC, or a self-loop.
+### 2.1 Explicit sorts and predicates
 
-A local syntactic convention may use a path e0 R e1 R e2 to **represent** the direction of recurring dependence. Such a path is at most a candidate illustration, not an N&S One formation condition. Graph nodes and predicates are audit bookkeeping, not L0/L1/L2 ontic containers.
-
-### F-01 — non-entailment of One from one declared occurrence
-
-**Finite witness M1:** E = {e0}; A(e0) = true, V(e0) = true; R = empty; there is no admitted One (O = empty).
-
-This satisfies a **limited theory** containing only the assertions "the local model has an admitted event and a vertical mark" plus the separation rule that One is not forced by mere occurrence. There is no recurrent reconstitution path or independently evidenced separability.
-
-**Narrow result:** in this limited declared signature, A(e0) and V(e0) do not entail existence of an admitted One. This is a finite **independence / non-entailment witness**, **not** a proof about ontic Selection, nor a model of the full SRT ontology. Any later formal axiom set must be checked separately to ensure M1 actually models that set. A model with the extra axiom "every event forms a One" would deliberately destroy this independence; that would violate the owner boundary rather than solve One formation.
-
-**Stop if:** "A" gets presented as a sufficient primitive Selection predicate, or O becomes defined merely as recurrence.
-
-### F-02 — path dependence does not select a unique successor
-
-**Finite witness M2:** E = {a,b,c,d,e}, R = {(a,b),(a,c),(b,d),(c,e)}. In this model two distinct length-2 candidate paths emanate from a:
-  
-~~~text
-a -> b -> d
- \
-  -> c -> e
-~~~
-
-Neither the directed relation nor path-length recurrence decides a unique continuation for a. An additional *identity / branch attribution* rule is needed to make that claim.
-
-**Narrow result:** the relation R and "there is a two-step reconstitution candidate" do not entail a unique next node or a unique complete path. **Do not** infer that b,d or c,e qualify as real Ones, or that a real One can/cannot split. This is a demonstration of **underdetermination by the current formal signature**, not a settlement of numerical identity or branch/merge ontology.
-
-**Stop if:** a graph path is silently promoted to a canonical lineage, One or bearer identity.
-
-### F-03 — separability is an outstanding, independent admission obligation
-
-A possible *domain assay* may record a counterfactual deletion test: for a declared structure X and bounded probe family Q, compare a future-selectability profile with and without X. But:
+For a deliberately **weak, syntactic toy signature**, declare:
 
 ~~~text
-effect-of-deletion(X, Q)
-does not entail
-relative continuation separability of a Selection-mediated path
-does not entail
-One admission.
+Event : Type
+Path  : Type                  -- candidate finite sequences of Event;
+                            -- may be represented independently or as lists
+AdmEvent : Event -> Prop       -- only a declared *model* event role
+MarkedVertical : Event -> Prop -- a model label, not primitive Selection
+Edge : Event -> Event -> Prop  -- descriptive / candidate transition
+OnCandidatePath : Event -> Path -> Prop
+AdmittedOne : Path -> Prop    -- hypothetical *path-based* One admission;
+                            -- no N&S criterion has been supplied
 ~~~
 
-A generic upstream driver can affect many probes without constituting a separable unit. Conversely, an apparently stable local cluster may exist entirely through outside replacements and therefore fail the One owner's "not freely replaceable by arbitrary surrounding history" burden.
+The exact type of an already-formed One would require further positive criteria; **AdmittedOne is deliberately unaxiomatized** in this limited signature. It is *not* a predicate of individual events. A path is not One merely by being a path.
 
-**Current status:** no new sufficient condition or scalar threshold. Needed next is an explicit contrast set: true path-dependent reconstitution, replaceable common input, observer reidentification, and genuine path-specific perturbation. Until then F-03 is **OPEN / design obligation**, not a theorem.
+### F-01 — isolated-event witness: trivial non-entailment only
 
-## 3. Typed Gate: F-04
+Choose Event = {e0}; a singleton path p0 = [e0]; AdmEvent(e0), MarkedVertical(e0) true; Edge empty and AdmittedOne(p0) false. The minimal positive event statement is true while existential One admission is false.
 
-Retain the existing typed sketch, with **only local notation**:
+**Accurate status:** merely the familiar signature-level observation that if AdmittedOne is unconstrained by event axioms then its existence does not follow. **Do not** add "One not forced by occurrence" as a model axiom: if formulated as a negated implication it would already assert the intended outcome, and if treated metatheoretically it is the very claim being checked. The witness adds **no nontrivial information** about Def-OF-2 and does not exercise the owner's "generic recurrence != One" boundary.
+
+### F-02 — nonfunctional edge relation: trivial branching only
+
+Take Event = {a,b,c,d,e} and Edge = {(a,b),(a,c),(b,d),(c,e)}. There are two distinct candidate paths [a,b,d] and [a,c,e].
+
+**Accurate status:** a relation not constrained to be a function can branch. This is not an ontological identity discovery and was already allowed by the chosen toy signature. Distinguish strictly:
 
 ~~~text
-Form    : EncounterHistory -> BridgeCandidate
-Close   : (ThinIndex, BridgeFamily, History) -> ClosureCandidate
-Compose : (ClosureFamily, Context) -> FieldStructure
+event graph branching      = two paths in a declared graph
+formed-One strict identity = status of an already formed One;
+                             additional admission + identity rules required
+                             STATUS / One §7: HOLD
 ~~~
 
-This can be represented by distinct tagged input/output datatypes in a proof assistant. A term of type BridgeCandidate cannot automatically be used as FieldStructure; arbitrary untyped composition should fail the type checker.
+**No branch/merge identity result is inferred or proposed for promotion.**
 
-**Claim strength:** this is a **well-formedness / category separation**, not a nontrivial ontic Gate theorem. It does **not** show that Form, Close, Compose are one mechanism or have common invariants, nor that a formed closure has a Gate role. An explicit Gate-role admission predicate must remain separate.
+## 3. F-03 — the load-bearing unresolved separability burden
 
-## 4. Conditional linear algebra example: F-05
+### 3.1 Two over-admission counterexamples to *candidate shortcuts*
 
-### Precise declared statement
+**C1: SCC / cycle shortcut over-admits.** Suppose an outside clock U alternates 0 and 1, while a recorded local observable x_t := U_t. The **observed transition graph** contains 0 -> 1 and 1 -> 0 and is a strongly connected component. Nevertheless, x_{t+1} depends on the external U_{t+1}, not on the locally observed x_t. The *observed SCC* provides no independent evidence of Selection-mediated vertical reconstitution or the path's relative separability. It cannot itself admit One. This is a counterexample to the *naive observed-SCC classifier*; it does **not** demonstrate that no One exists anywhere in the total system, including the external driver.
 
-Suppose an experimenter **chooses** n perturbation conditions, m probes, and r fixed shared latent coordinates, with *noise-free* response differences assembled as an m-by-n matrix ΔY. For this **specific linear fixed-readout model** assume:
+**C2: simple deletion-effect shortcut over-admits.** In a declared deterministic toy system with outside signal U=1, internal relay X := U, and measured probe Y := X, deleting X by intervention do(X=0) changes Y from 1 to 0. Thus "deleting X changes a future probe" passes. But the outside field can supply the same output with the alternative implementation Y := U after the relay is removed. Hence the one-shot deletion effect does not establish that X constitutes a relatively nonreplaceable *continuing reconstitution path*. This is a counterexample to **sufficiency of that deletion-effect classifier**, not a demonstration that X is not a One in all models.
+
+These examples distinguish a **descriptive transition graph** and an observed **causal effect** from the owner's stronger path-specific, Selection-mediated formation burden. Neither may silently be relabelled as a demonstrated ontic Selection process.
+
+### 3.2 What a real positive F-03 candidate would need
+
+The positive target is *Selection-mediated vertical reconstitution with independently evidenced relative continuation separability*, **not** "true path dependence." Ordinary path dependence and an externally replaceable common input belong among controls / rejection cases.
+
+A later **bounded and independently approved** domain proposal would have to specify:
+
+- a candidate vertical-reconstitution dependency beyond recorded correlation, passive persistence and clocked common input;
+- bounded perturbations, explicit candidate-unit and background boundaries, and tests of free replacement by surrounding-field history;
+- comparable controls (ordinary history dependence; observer re-identification; externally replaceable driver; passive recurrence), and a declared failure case;
+- how the same claimed formation-path effect remains or fails when candidate organization and background supports are separately manipulated;
+- what would count merely as a model realization / proxy, *without* claiming that any positive proxy proves primitive Selection or One's metaphysical N&S theorem.
+
+**Verdict:** F-03 remains **OPEN**. The counterexamples reject naive classifier sufficiency only. No positive objective and no author-established natural boundary has yet been solved.
+
+## 4. F-04 — type preservation needs evidence-bearing admission, not only tags
+
+Recover **all** relevant original operator arguments (audit-only notation):
 
 ~~~text
-ΔY = B ΔZ
-B is m x r and is FIXED over the tested conditions
-ΔZ is r x n
-m, n, r are finite and r >= 0
+Form : (History H_t,
+        EncounterSequence E,
+        RelevanceOrDirectionConditions D)
+       -> BridgeCandidate
+
+FK : BridgeCandidate -> Prop
+-- FK(b) := FK1(b) AND FK2(b) AND FK3(b) AND FK4(b) AND FK5(b)
+
+AdmittedBridge := Σ (b : BridgeCandidate), Evidence(FK(b))
+
+Close : (ThinIndex i,
+         BridgeFamily of AdmittedBridge,
+         History H_t)
+        -> ClosureCandidate
+
+CK : ClosureCandidate -> Prop
+-- CK(c) := CK1(c) AND ... AND CK6(c)
+
+AdmittedClosure := Σ (c : ClosureCandidate), Evidence(CK(c))
+
+Compose : (ClosureFamily of AdmittedClosure,
+           ContextBodyGoalConditions)
+          -> FieldCandidate
+
+MK : FieldCandidate -> Prop
+-- MK(phi) := MK1(phi) AND ... AND MK5(phi)
+
+AdmittedField := Σ (phi : FieldCandidate), Evidence(MK(phi))
+
+GateRole : FormedOrganization -> Prop
+-- further gate-role criterion, NOT implied by FK, CK or MK alone
 ~~~
 
-**Lemma:** rank(ΔY) <= r.
+**Interpretation of dependent pairs:** "Evidence" is a proof/justification parameter for the declared model contract. In a proof assistant, assuming FK/CK/MK instead of establishing them would not demonstrate empirical admission. Their exact semantics, measurement and independent warrant must be audited separately. No global computability or total algorithm for candidate admission is claimed.
 
-**Proof:** rank(B ΔZ) <= min(rank(B), rank(ΔZ)) <= r. QED. This is standard matrix algebra.
+Important refusal conditions:
 
-**Illustrative r=1 compatible matrix:**
+1. No unguarded implicit conversion from Candidate -> Admitted.
+2. No inference that FK yields CK, CK yields MK, or MK yields GateRole.
+3. No automatic conflation of relevance/direction conditions with primitive Selection direction or ethical direction.
+4. No use of Bearer, Concern, self-report, Psi_f or consciousness as required **universal** arguments to each operator.
+5. No general theorem that Form = Close = Compose, or that the six SC conditions follow from typing alone.
 
-~~~text
-[1 2]
-[2 4]
-[3 6]
-~~~
+**Result:** a richer *proposed formal interface* with explicit unproved proof obligations. The typing itself is standard dependent/refinement-type engineering and not a new SRT theorem. It makes the original contracts visible instead of laundering admission through datatype construction.
 
-It has rank 1. **Incompatible with r=1, fixed-B, noiseless assumptions:**
+## 5. F-05 — remove rank lemma from this One / Gate result set
 
-~~~text
-[1 0]
-[0 1]
-[1 1]
-~~~
+The first draft placed an ordinary matrix-rank bound inside One/Gate formalization even though its target is E2 predictive geometry. This was a scope error. **No F-05 proof, SRT formal milestone, or E2 owner edit is retained in this audit.**
 
-It has rank 2, so it cannot equal B ΔZ with fixed B having one column.
+For exact disposition / avoiding future reuse without its assumptions:
 
-### Mandatory negative results and scope
+- Standard fact: if ΔY = BΔZ with fixed B in R^(m x r) and ΔZ in R^(r x n), then rank(ΔY) <= r. **It is a conditional linear-algebra identity, not an SRT claim.**
+- **Independent fixed r and r < min(m,n)** are necessary for the rank bound to be a nonvacuous exclusion test. With no independently fixed r, choose r >= min(m,n) and every m-by-n matrix can be factored.
+- If B is allowed to change freely across conditions, **every** matrix is realizable with r=1 by setting B_j equal to its j-th column and z_j=1. For the draft's incompatible 3-by-2 example, the correct columns are [1,0,1]^T and [0,1,1]^T, not the previously claimed 2-vectors.
+- ΔY requires a **declared measurement baseline**. A common intercept cancels under subtraction for a fixed affine readout, but a drifting condition-dependent baseline does not. Nonlinear readouts require explicit local linearization and only local scope; empirical noise requires a declared uncertainty/effective-rank rule.
+- **Main non-discriminator:** low rank cannot distinguish an SRT-labelled shared Gate from ordinary H2 latent-state/representation models, which already generate shared low-dimensional response geometry. H1 and H2 remain competent same-target baselines, not straw rivals. Successful low rank is at best an implementation-class description, never evidence of distinctive SRT ontology.
+- Any future E2 note or test belongs under the *existing* cognition programme's review and preregistration gates. **No E2 work is authorized by this PR.**
 
-1. A rank higher than r **excludes this specifically declared fixed-linear shared-r-coordinate model** in the exact noiseless setting. It does **not** exclude nonlinear, time-varying, context-dependent, higher-rank, or different readout models.
-2. Rank <= r does **not** establish *causal* common gating, effective field reconstruction, SRT, primitive Selection or One. Common inputs, standard latent-factor models, system-identification models and H1/H2 rival implementations can give the same signature.
-3. If B changes by condition, the single fixed-B factorization need not exist. For example the rank-2 columns [1,0]ᵀ and [0,1]ᵀ can each arise with scalar z=1 but separate readouts B1 and B2. Thus condition invariance is a **substantive assumption**, not a cosmetic notation.
-4. In noisy data an empirical matrix is usually full rank: pre-register noise/error bounds, spectral or effective-rank test, perturbation protocol, identifiability, probe selection and held-out validation **before** using this to exclude a fit. No such preregistration or experiment is authorized by this audit.
-5. Compare against strong **H1 local/implementation update** and **H2 latent-state/representation** baselines at the **same explanatory target**, and allow hybrid mechanisms. Low rank alone is not an SRT increment.
-6. The result is an optional **neutral, downstream algebra exercise** pertinent to predictive geometry. It is **not** the controlling E2/E3/E4 discriminator, a completed E3 causal result, or evidence of E4 recursive reconstitution. The existing CURRENT NEXT is unchanged.
+## 6. F-06 — keep U1..U5 distinct from SC-1..SC-6
 
-**Status:** PAPER-PROVED CONDITIONAL LINEAR-ALGEBRA LEMMA / NO SRT DISTINCTIVENESS / NO EMPIRICAL RESULT / NO LEAN CHECK.
+The **existing typed audit §14** enumerates U1..U5 as candidate cross-type invariants, **not** proven universal results:
 
-## 5. F-06 — shared invariants over Form / Close / Compose remain candidates
-
-Candidate comparisons from the existing typed audit:
-
-| Existing candidate | What a later test must distinguish | Premature inference to block |
+| Candidate | Target in the typed audit | Blocking question |
 |---|---|---|
-| selective compression | load-bearing distinctions vs indiscriminate filtering | "all compression is Gate" |
-| perturbation robustness | stable region and an explicit failure envelope | "correlation alone forms a One" |
-| future-selectability efficacy | changes in bounded Q under intervention, beyond a trivial common input | "any policy update proves Gate" |
-| recursive writeback | conditions for future revision vs passive memorization | "all histories generate Selection" |
-| composition without microdetail | multi-probe constraints vs an observer-chosen aggregate | "higher-level control is a unique SRT mechanism" |
+| U1 selective compression | selectively retain load-bearing differences | is this more than generic information compression? |
+| U2 robustness envelope | perturbation tolerance and failure boundaries | does it really depend on formed organization rather than an imposed filter? |
+| U3 counterfactual future efficacy | change the bounded local A_t for declared probes | is the effect only a replaceable common driver? |
+| U4 recursive writeback | later formation responds to consequences | does the proposed type support actual revisability? |
+| U5 composition without microdetail | a higher organization constrains lower selectability | could standard task-set / control graphs already provide it? |
 
-Existing SC-1..SC-6 is an **audit contract**, not a proved universal predicate. Passing a typed stabilization test does not imply ontic identity of operators or universal Gate. If the invariants fail to survive type change, the correct result is a typed family and **no unified algebra**. Apply existing W1..W6 withdrawal conditions; do not patch the definition until it becomes unfalsifiable.
+**SC-1..SC-6** in typed audit §6 are a distinct *candidate selective-stabilization contract*, including SC-2 active/history-dependent stabilization and SC-6 revisability. Passing an SC test does not prove any U invariant across Form, Close and Compose, and does not make the three operations identical. Do not mix One admission language into a Gate-invariant test.
 
-## 6. Proposed machine-proof handoff (not performed)
+**Status:** prospective review questions only; no new algebra, no empirical confirmation, no canonical promotion. Preserve the typed audit's W1..W6 withdrawal conditions.
 
-**First proof-assistant scope** should deliberately be small:
+## 7. Next bounded work and stop condition
 
-- Encode a **minimal declared** finite event graph and establish F-01/F-02 only **relative to explicitly listed axioms**; extract actual finite witnesses and fail if a semantic owner assumption was hidden in a definition.
-- Encode disjoint datatypes for Form / Close / Compose outputs; demonstrate type-correct signatures and failures for attempted untyped substitution.
-- Independently use established linear-algebra library results to prove F-05 with fixed B, and encode a rank-2 contradiction for r=1 if useful.
-- Demand a proof inventory: each theorem's assumptions, any admitted axioms, trusted library version, proof command, any placeholders/admitted proofs and the exact theorem statement compared against its human-language claim.
-- Distinguish *syntactic consistency witness*, *conditional theorem*, *domain bridge*, *empirical test*, and *SRT-specific explanatory increment*. None upgrades another automatically.
+A meaningful subsequent formalization cannot simply restate F-01/F-02 or prove that a pair of datatypes is unequal.
 
-**Machine verification:** NOT RUN. No Lean/Lake toolchain was available in the current execution environment; no passing CI/check or kernel certification is claimed. A subsequent full-worktree execution may implement this only in a bounded noncanonical sandbox after review, without changing current programme routing.
+The only immediately useful **audit** tasks are:
 
-## 7. Review and failure gates
+1. Verify that positive evidence for the **same path's** Selection-mediated vertical reconstitution and relative nonreplaceability can be specified without defining One by its own output. Otherwise record **OPEN**, not a theorem.
+2. Attempt false-positive counterexamples against any proposed One sufficient-condition classifier, using external replacement, common input, ordinary path dependence and observer-driven segmentation. Do not infer One absence from modelled outside dependence alone.
+3. If a bounded Gate realization is separately selected, check whether FK/CK/MK evidence can actually be supplied rather than assumed, and whether any proposed U invariant survives type change and external ordinary control baselines.
+4. Keep E2 algebra and experimental design with the currently active neutral cognition owner, not this One/Gate feasibility file. Do not initiate a new experiment, preregistration or formal domain claim from this review.
 
-Before any stronger formalization claim:
+**Stop:** if no independently applicable separability admission condition emerges, end with **no nontrivial One theorem at current owner strength**, rather than manufacture one by adopting cycle/SCC, simple deletion effect, or a pre-given identity as a definition.
 
-1. **Owner fidelity:** review One §1-§3, §7, Spine, Core 21A and the Gate typed audit. The anti-smuggling guard must survive translation into symbols.
-2. **Countermodel validity:** specify which *precise axiom subset* the finite witnesses satisfy. Do not claim they model unknown future formal axioms.
-3. **No definition-proof laundering:** no definition "One = strongly connected component", "Selection = state transition", "Bearer = cost function" or "Gate = all adaptive transforms" may be used as if it explained the source concept.
-4. **Independent mathematical novelty:** F-05 is standard rank algebra; a possible new SRT claim would require a separately established same-target comparator and independent surplus.
-5. **Scope and governance:** no author decision to change canonical, no STATUS update, no release of toy simulation / third deep well / anti-tautology STOP; no silent new SRT/GRG term-of-art.
-6. **External review:** a reviewer should try to produce a replaceable-driver countermodel to F-03, a latent-state explanation of F-05, and a typed operator failing at least one F-06 invariant.
+**Machine verification:** NOT RUN. F-01/F-02 are deliberately trivial toy-signature observations, F-03 rejects candidate shortcuts with model cases, F-04 is a proposed typed contract with missing independent evidentiary premises, and F-05 has been routed out of scope. Neither Lean build nor full repository preflight is claimed by this revision.
 
-**Decision:** retain this as a bounded U-mode, noncanonical feasibility record. F-01 and F-02 can be witnessed relative to their limited model assumptions; F-04 is type discipline; F-05 is a proven standard conditional lemma; F-03 and F-06 remain open research constraints. No positive One N&S theorem, universal Gate algebra, or ontological result is established.
+## 8. Review disposition / external-comparison three items
 
-## 8. 外部对照三项
+### Claude review disposition (author forwarded; no independent PASS claimed)
 
-- **事实冲突：** 本轮仅检查逻辑模型，未发现直接经验事实冲突；没有输入新实验数据。
-- **内部矛盾：** 若以预设的 lineage / identity 证明 One 的生成，或把 formed Gate 反向定义为 primitive Selection，就会违反当前 owner 的非同一性与形成顺序。本稿不采用这些定义。
-- **已有说法：** 低秩矩阵分解与状态空间 / 潜变量建模是成熟数学工具（F-05 的数学部分：**完全相同**）；重构、组织自主性与过程持续的若干描述与成熟过程/系统理论**部分重合**。当前没有证明SRT额外预测或解释优势。
+- **A1 operational source:** the bounded 2026-10-08 author GitHub continuation permits this noncanonical audit/revision; it does not authorize theoretical convergence or canonical hardening. No new research programme.
+- **M1 / M2:** ACCEPT — F-01/F-02 downgraded to trivial syntactic results; One admission now typed over candidate paths; branch/merge-identity HOLD explicit.
+- **M3:** ACCEPT — full input arguments restored; Bridge/Closure/Field candidate-to-admitted steps made evidence-dependent.
+- **M4:** ACCEPT — removed rank lemma from core result set and documented dimensional, r, baseline, time-varying and H2 non-discrimination limitations as E2-only disposition.
+- **Minor corrections:** ACCEPT — U1..U5 vs SC-1..SC-6 fixed; positive F-03 target corrected; reviewer state now refers to merged #1103 with still-pending internal post-Bearer adjudication.
+
+### 外部对照三项 (AGENTS §Constitution / Ontology Dialogue Hard Guard)
+
+1. **事实冲突：** 无（本轮已核范围内未发现）。本审计不输入新的作者经验性陈述或经验数据。
+2. **内部矛盾：** 无（本轮已核范围内未发现）。这次修复的是机器草稿与既有owner边界之间的问题，而不是互相矛盾的两项作者陈述。
+3. **已有说法：**
+   - F-01/F-02：模型论中用反模型判断逻辑蕴含/独立性的标准做法（Chang & Keisler, *Model Theory*, 3rd ed., 1990）；**完全相同**，没有新的One结果。
+   - F-03：有向图强连通分量是标准图论对象（Tarjan, "Depth-First Search and Linear Graph Algorithms", 1972）；作为图算法**完全相同**，但将其等同One形成没有依据。普通外部驱动反例只否定该候选分类器的充分性。
+   - F-04：证据携带的依赖对是标准依赖类型技术（Martin-Löf, *Intuitionistic Type Theory*, 1984）；**完全相同**的形式工具，尚无SRT机制新增。
+   - F-05：乘积矩阵的秩上界为标准矩阵论（Horn & Johnson, *Matrix Analysis*, 2nd ed., 2013）；**完全相同**。E2低维实现与常见潜变量/系统辨识方法**部分重合**，且无SRT独有判别力。
+
+**Final machine verdict:** at current One-owner strength, **only trivial syntactic non-entailments are available from the deliberately weak signature**. A substantive One result is blocked by independent positive *relative continuation separability* admission (F-03, OPEN); the revised Gate typed contract makes its own FK/CK/MK evidence obligations explicit but does not solve them. Leave Draft PR #1104 open for fresh review; do not merge solely on mechanical green checks.
