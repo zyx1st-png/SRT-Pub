@@ -14,6 +14,7 @@ comparative_claim: none; paper-only model-interface and identifiability audit, n
 named_comparator: null
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
   - STATUS.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
@@ -28,7 +29,7 @@ tags: [MG1, MG2, CN2, E2, E3, E4, Cognition, CognitiveControl, NamedModel, Agenc
 
 # MG-1 / MG-2 source-native control interfaces and agency observables; separate CN-2 code-reference appendix
 
-> **Verdict: MG-1 multilevel-gating source capabilities and MG-2 access/control/agency measurement distinctions are mapped at audit level. CN-2 potential source-code references are inventoried separately; NO complete same-target P1–P6 comparison exists.** This audit **does not declare MG-1 or MG-2 complete or incomplete as a new governance status**, define a new completion criterion, or authorize release of CN-3. **CN-3 and experiments remain HOLD under existing owner rules**; the O3 / MG-2 completion-scope question is **AUTHOR ADJUDICATION PENDING** (§6). Machine analysis only; no new CURRENT NEXT, author meaning, ontology, HP-B reopening, benchmark, or preregistration freeze.
+> **Verdict: MG-1 multilevel-gating source capabilities and MG-2 access/control/agency measurement distinctions are mapped at audit level. CN-2 potential source-code references are inventoried separately; NO complete same-target P1–P6 comparison exists.** This audit **does not declare MG-1 or MG-2 complete or incomplete as a new governance status**, define a new completion criterion, or authorize release of CN-3. **CN-3 and experiments remain HOLD under existing owner rules**; the MG-2 neutral-science completion **scope is now AUTHOR OPTION A SELECTED** (§6.1) while Bearer–Concern O3 stays OPEN. Machine analysis only; no new CURRENT NEXT, author meaning, ontology, HP-B reopening, benchmark, or preregistration freeze.
 >
 > Scope provenance: after a neutral MG-1/MG-2 reading the author said “继续” to the bounded model-interface / observable-matrix next step. Directional acceptance authorizes this audit, **not** an experiment, new model winner, canon change or Bearer definition.
 
@@ -117,22 +118,44 @@ E2 success requires predeclared **held-out predictive improvement relative to na
 | Have those theories been specified and reproduced as equal-target P1–P6 models? | **NO demonstrated pairing**; computational native-task status != E2-readiness |
 | Does ACCESS imply control-authorized gating? | **NO**; allocation/maintenance/bias must be separately identified |
 | Does CONTROL imply feeling/judgment of agency? | **NO**; attribution evidence separated |
-| Does agency feeling/judgment imply SRT Bearer/Concern OWNERSHIP? | **NOT LICENSED; O3 remains OPEN**. Whether MG-2's neutral audit may close without an O3 empirical criterion = **AUTHOR DECISION PENDING**, not an audit-imposed stop or relaxation |
+| Does agency feeling/judgment imply SRT Bearer/Concern OWNERSHIP? | **NOT LICENSED; O3 remains OPEN**. Author Option A permits evaluating/completing the **bounded neutral MG-2 scientific audit** without solving O3; this does **not** certify that audit is already complete or release CN-3 |
 | E2 new predictive gain, E3 causal gain, E4 recursive gain? | **NOT ESTABLISHED** in this audit |
 | Can CN-3 freeze, simulation or experiment start? | **NO; existing HOLD unchanged** under the owner MG-1/MG-2 requirements and independent FR-ADV / task-specific author conditions; **no new O3-as-experiment prerequisite is invented here** |
 | STATUS/current NEXT, HP-B, canonical, F-03 anti-tautology STOP? | **UNCHANGED** |
 
-**Completed bounded follow-up (§9):** read-only public-code inventory of TEM **for CN-2** and PBWM **for MG-1/MG-2**, without choosing a task. **Correct prospective order:** seek an explicit author decision on the **first E2 task family**, then define P1–P6 observables and per-probe predictive distributions/likelihoods on paper, then assess each named model's native output compatibility and legal input parity, **then** decide which code to inspect/reproduce if separately authorized. The §9 TEM/PBWM inventory is **reference material only, not a scheduled task, branch, preferred model or experimental lane**. MG-2 O3 completion-scope question separately awaits author decision (§6). Require independent review before considering merge.
+**Completed bounded follow-up (§9):** read-only public-code inventory of TEM **for CN-2** and PBWM **for MG-1/MG-2**, without choosing a task. **Correct prospective order:** seek an explicit author decision on the **first E2 task family**, then define P1–P6 observables and per-probe predictive distributions/likelihoods on paper, then assess each named model's native output compatibility and legal input parity, **then** decide which code to inspect/reproduce if separately authorized. The §9 TEM/PBWM inventory is **reference material only, not a scheduled task, branch, preferred model or experimental lane**. MG-2 neutral completion-scope Option A has been explicitly selected by the author (§6.1), while O3 remains OPEN. Require independent review before considering merge.
 
-### 6.1 Author-only MG-2 scope decision — NOT YET ADJUDICATED
+### 6.1 MG-2 completion-scope author adjudication — Option A SELECTED
 
-**Exact unresolved owner-level question:** Programme §14 frames MG-2 as ACCESS -> CONTROL -> OWNERSHIP and places CN-3 behind MG-1/MG-2. The 09-26 bridge §14 illustratively assigns ownership to examples, but no directly admitted empirical readout establishes SRT Bearer–Concern (O3). This M-layer audit **cannot** choose the meaning of “MG-2 complete,” nor use unmeasured O3 as a newly imposed gate or waive the OWNER question.
+**Controlling noncanonical author source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md`.
 
-- **Option A, neutral-science deliverable split (possible author choice; NOT SELECTED):** allow the MG-2 **neutral ACCESS/CONTROL + empirical agency distinction audit** to complete on explicit source-native evidence and limitations, while O3 remains a separate OPEN SRT/Bearer issue; CN-3 stays governed by its **pre-existing** HOLD, independent FR-ADV and later separate author experiment approval. This would not count O3 as solved.
-- **Option B, owner-level completion kept unified (possible author choice; NOT SELECTED):** require a separately adjudicated ownership explanation/operational criterion before declaring MG-2 as a whole complete; without that, MG-2 overall remains unresolved, CN-3 HOLD preserved. This does NOT invent an empirical O3 proxy.
-- **Until the author decides:** mark **MG-2 COMPLETION SCOPE = PENDING AUTHOR ADJUDICATION**; neither A nor B may be written back as an established owner rule, and this audit never releases CN-3.
+The independent review correctly identified that programme §14 poses three distinct questions (ACCESS, CONTROL, OWNERSHIP) while the 09-26 bridge §14 low/high/high-ish OWNERSHIP scores were expressly **illustrative**, not empirically validated O3/Bearer measurements. The assistant presented two alternatives in the dialogue: **A**, separate *neutral scientific MG-2 access/control and empirical-agency deliverable* from SRT Bearer–Concern ownership (the recommended option), versus **B**, require the still-open ownership explanation/criterion before declaring all MG-2 complete. Asked which, the author replied verbatim:
 
-**Separate later author choice:** choose the first specific CN-2 E2 task family *before* spending resources reproducing TEM or other code, and only then define observable P1–P6 readouts. This is **not** answered by choosing MG-2 Option A or B.
+> 按你的建议来
+
+**Author adjudication = A** for the bounded neutral MG-2 audit completion **scope**. This is not the author's direct formulation of a new operational O3 criterion, nor proof that the current MG-2 audit already meets its scientific quality/evidence requirements. The machine must not infer automatic MG-2 completion or CN-3 release.
+
+**Allowed bounded conclusion:**
+
+~~~text
+MG-2 neutral audit
+= review ACCESS vs CONTROL and separable empirical feeling/judgment of agency
+= may be marked COMPLETE *within its bounded neutral-science review scope*
+  once the source-native evidence, negative cases, limitations, review and
+  owner-consistent audit obligations are actually satisfied
+
+SRT Bearer / Concern / consequence OWNERSHIP (O3)
+= separate still-OPEN theoretical / ontological interpretation burden
+= no admitted direct empirical measure
+= not considered solved by neutral MG-2 completion
+
+CN-3 experiment / toy simulation / new execution
+= HOLD (unchanged, existing author and FR-ADV gates remain)
+~~~
+
+**No novel gate by machine:** Option A distinguishes the deliverable scope; it does **not** newly impose an O3 empirical prerequisite on the neutral audit, erase OWNERSHIP as a programme problem, downgrade MG-1/MG-2's other obligations, or supersede STATUS. Whether this particular audit has achieved bounded completion is a **separate evidence/review assessment**, not decided by the author's selection of A.
+
+**Next author decision still unmade:** which concrete CN-2 E2 task family comes first. No TEM/relational task preselection; P1–P6 observation/likelihood definitions must precede picking or reproducing a model. TEM remains a read-only CN-2 reference and PBWM a source-native MG control artifact, not two direct rivals.
 
 ---
 
@@ -197,4 +220,4 @@ No single cited article has been demonstrated here to pass the exact E2 P1–P6 
 
 **Correct decision order — NOT a new lane or execution authorization:** (1) **author selects the first CN-2 E2 task family** at a later task-specific decision; (2) under existing research governance, specify the P1–P6 probe observation models, per-probe predicted quantities/likelihoods and intended held-out generalization as **paper-only candidates**; (3) check which concrete named model's native input/output/capability can fairly cover that same target; (4) only after match, independent review, rights/runtime checks and required author gates, consider which model code is worth reproducing. §9 TEM source (CN-2) and Leabra/PBWM SIR2 (MG-1/MG-2) are **optional unscheduled references**. Do **not** presume relational task choice, patch LSTM, freeze CN-3, run experiments or lower the FR-ADV gates.
 
-**FINAL:** MG-1/MG-2 source-native control/access and empirical-agency interfaces **MAPPED FOR AUDIT ONLY** (PBWM SIR2 verified as source); TEM's original/Torch code is **CN-2 REFERENCE ONLY**. No model reproduced, E2 task family selected, per-probe likelihood frozen, E2 result measured, or O3 Bearer observable admitted. **MG-2 completion scope AUTHOR DECISION PENDING; no new release gate inferred.** All CN-3/experiment HOLD and STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.
+**FINAL:** MG-1/MG-2 source-native control/access and empirical-agency interfaces **MAPPED FOR AUDIT ONLY** (PBWM SIR2 verified as source); TEM's original/Torch code is **CN-2 REFERENCE ONLY**. No model reproduced, E2 task family selected, per-probe likelihood frozen, E2 result measured, or O3 Bearer observable admitted. **MG-2 neutral-science audit completion scope: AUTHOR OPTION A SELECTED; audit not automatically complete; O3 OPEN; no new release gate inferred.** All CN-3/experiment HOLD and STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.
