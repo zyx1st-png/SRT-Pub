@@ -15,6 +15,7 @@ named_comparator: null
 n_mode_triggered: false
 dependency:
   - STATUS.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
   - Operations/Audits/SRT_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_CROSSWALK_2026-09-26.md
@@ -26,13 +27,13 @@ tags: [MG1, MultilevelGating, CompletionScope, StrongestNeighbor, Control, Cogni
 
 # MG-1 neutral-science completion scope — existing evidence, specific gaps and author decision packet
 
-> **Verdict / scope:** This is a **M-layer three-option decision packet prepared for independent review**, not an author-selected MG-1 completion rule, declaration of MG-1 COMPLETE, experiment/pre-registration plan or CN-3 gate change. The single CURRENT NEXT remains neutral cognition research under the 09-26 cognition programme. CN-3/toy execution stays HOLD with the inherited MG-1/MG-2, FR-ADV and separate author requirements. No canonical, HP-B, Bearer or Selection claim is reopened.
+> **Verdict / scope:** This M-layer packet records the balanced MG-1 A/B/C alternatives and the author's subsequent **explicit selection of Option A (§5.1)** for a bounded neutral-science review-completion *scope*. It does **not** declare MG-1 COMPLETE, certify a mechanism, create an experimental/pre-registration plan or change the CN-3 HOLD. The single CURRENT NEXT remains neutral cognition research under the 09-26 cognition programme. CN-3/toy execution stays HOLD with the inherited MG-1/MG-2, FR-ADV and separate author requirements. No canonical, HP-B, Bearer or Selection claim is reopened.
 
 ## 0. Why this packet exists — provenance and permission boundary
 
 **Initiation trace, not an author selection:** after author-authorized merge of PR #1109, the machine told the author that **"下一步建议转向MG-1完成标准的界定"**; the author replied **"继续"**. The earlier independent review of #1109 had already identified the absence of an MG-1 completion criterion as an **out-of-scope future question**. The machine then independently chose to draft this **one-file, noncanonical decision packet** in PR #1110. The author's `继续` supports **continued exploration and preparation for review**, **not** prior acceptance of MG-1 Option A, B, a new gate or a merge.
 
-Following PR #1110's first independent review, this revision adds balanced awareness-dependent and awareness-independent evidence and **three alternatives A/B/C**. **The author has selected NONE for MG-1.** The prior 2026-10-08 **MG-2 Option A decision applies only to MG-2**.
+Following PR #1110's first independent review, the machine revised the packet to include awareness-dependent and awareness-independent evidence, and **three fairly presented alternatives A/B/C**. In the **subsequent** conversation the author replied verbatim **"A"**, explicitly selecting **MG-1 Option A**, documented in the separately owned author source and §5.1. The 2026-10-08 **MG-2 Option A remains a separate earlier decision**, not the basis for inferring this MG-1 choice.
 
 ## 1. Recover the actual MG-1 owner burden before specifying a finish line
 
@@ -104,9 +105,9 @@ conflict experienced -> subsequent adaptation
 
 **Critical distinction:** answering the five questions at **bounded comparative-audit strength** is not proving five new mechanistic hypotheses. Whether a new empirical prediction exists belongs to a later separately authorized, same-task CN-2/E2 design and independent FR-ADV.
 
-## 5. Three equally presented choices — A / B / C, NONE selected
+## 5. Three originally balanced choices — A / B / C; author subsequently selected A
 
-**Neutrality rule:** This is a **decision packet, not a recommendation-as-default**. The options compare different *governance timing and evidential burdens*. Selecting one does not determine that SRT explains cognition, that the present MG-1 review is finished, or that a CN-3 experiment will be run. The author's MG-2 Option A is **not evidence of any MG-1 preference**.
+**Neutrality at presentation:** The revised packet presented all three choices without endorsing one as default. These options compare different governance timing and evidential burdens. **The author has now selected A**, as separately recorded in §5.1. That decision does not prove SRT mechanisms, establish that the present MG-1 review is finished, or authorize a CN-3 experiment. The author's **separate MG-2 Option A** was never a substitute for this MG-1 selection.
 
 ### Option A — define now a bounded source-comparison completion scope
 
@@ -129,26 +130,42 @@ conflict experienced -> subsequent adaptation
 - **Benefit:** minimizes premature governance work and avoids freezing a completion definition for an inactive experiment line; preserves current research attention for identifying a lawful same-target E2 question.
 - **Cost / risk:** no early explicit MG-1 closure rule; the same ambiguity may recur when CN-3 is later proposed, requiring review and author attention then. Deferral is **not MG-1 completion** or a waiver of any MG-1 owner duty.
 
-**Why decide now versus later?** Now (A or B) gives consistent future agent/reviewer terminology and a known stopping point but spends author and review attention before the relevant experiment design exists. Later (C) keeps governance proportionate to actual activity but preserves completion ambiguity until CN-3 preparation. These are **genuine trade-offs; no option is endorsed or preselected** here. The author may also decline all offered definitions and instruct a narrower one.
+**Why decide now versus later?** Now (A or B) gives consistent future agent/reviewer terminology and a known stopping point but spends author and review attention before the relevant experiment design exists. Later (C) keeps governance proportionate to actual activity but preserves completion ambiguity until CN-3 preparation. These were **genuine trade-offs at the time of presentation**. The author later **explicitly chose A**; B/C remain unselected historical alternatives, not new live requirements.
+
+### 5.1 Author adjudication: A SELECTED (author source controls)
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md`.
+
+After the revised packet and its A/B/C alternatives were presented **with no preselected recommendation**, the author replied verbatim:
+
+> A
+
+**The author selects Option A's bounded neutral review completion *scope***. This selection permits a future **source-faithful eight-family / five-Q1–Q5 literature and mechanism audit** to be independently assessed for bounded review completion despite scientifically honest OPEN / NO LOCAL COMPARATIVE INCREMENT findings. Its requirements include accurately typified sources, conflict-awareness evidence in both directions with distinct paradigms, target-vs-gate objectification, ACCESS-vs-CONTROL and phenomenality/O3 limitations. **Only the author may declare bounded MG-1 neutral-science review COMPLETE after a suitable independent content review.** Neither this audit nor a CI result can do so.
+
+**Q5 NO-GAIN risk preserved:** if no additional discriminating test target is specified, a source-comparison **review** may honestly complete, but **CN-3 scientific rationale has not been earned by it**. Before any later CN-3 proposal, separately identify a defensible neutral target and observable predictions under existing gates; do not proceed solely to vindicate a label. This neither mandates an O3 proxy nor automatically prohibits every future neutral experimental study.
+
+**B/C unselected; other gates unchanged:** option A does **not** complete MG-1 today, turn eight citations into validation, specify P1–P6, approve TEM reproduction, or release CN-3. MG-2 neutral-scope Option A stays separate, Bearer–Concern O3 OPEN, independent FR-ADV / author experimental approval intact, and CURRENT NEXT singular.
+
+---
 
 ## 6. Consequences and anti-shortcut gates
 
-- **MG-1 completion-rule decision = NOT ADJUDICATED; MG-1 not declared complete.** §2 reports **source-label coverage only**. An independent reviewer could find missing source fidelity or incomplete five-question answers.
+- **MG-1 completion-scope rule = AUTHOR OPTION A SELECTED; MG-1 neutral review itself NOT DECLARED COMPLETE.** §2 reports **source-label coverage only**. An independent reviewer could find missing source fidelity or incomplete five-question answers.
 - **MG-2** neutral review has author-selected separate completion scope (2026-10-08), not automatic COMPLETE; **Bearer/Concern O3 OPEN**.
 - CN-2 task family / P1–P6 observation models / code reproduction remain a **separate later author choice**. TEM is a CN-2 software candidate, **not an MG-1 benchmark**, and PBWM task-native code is not an equal-target TEM competitor.
 - CN-3 remains **HOLD BEHIND MG-1/MG-2** as currently written, with independent **FR-ADV** and separate explicit author experiment authorization. **Even author-declared bounded MG-1 completion does NOT automatically start or release CN-3.**
 - No change to CURRENT NEXT, canonical, HP-B, Gate ontology, bearer ownership, primitive Selection STOP, or scientific novelty status; no pre-registration, simulation or experiment.
 
-## 7. Independent review questions before author choice
+## 7. Independent content review questions for author Option A implementation
 
 1. Is the original MG-1 §14 burden accurately distinguished from CN-2 experimental/model competition and MG-2 O3?
 2. Is the eight-neighbor/five-question evidence map faithful to existing author source/crosswalk/bridge, with no inflated 8/8 PASS?
 3. Do Kunde 2003, Desender 2014, van Gaal 2010, Abrahamse–Braem 2015 and Botvinick 2001 preserve their distinct paradigms and dependent variables, including the live awareness/causality dispute?
 4. Are A/B/C equally specific about benefits, costs and conditions? In particular, if A's Q5 is NO-GAIN, is the CN-3 rationale explicitly re-evaluated; does B avoid importing CN-2 gates; does C avoid a silent MG-1 waiver?
-5. Is §0 faithful to the preceding machine recommendation, author’s bare `继续` and the independent review, without pretending the author selected a completion option? Are pre-existing criteria missed? No new owner rule until an explicit later author decision.
+5. Is §0 faithful to the earlier exploratory `继续` versus the **later explicit `A`**? Does §5.1 faithfully preserve Option A without inventing a completion declaration, weakening owner duties or bypassing CN-3 HOLD?
 
 ## 8. 外部对照三项
 
 1. **事实冲突：** 无（本轮已核范围内未发现）。复查Botvinick 2001及Kunde 2003、Desender 2014、van Gaal 2010和Abrahamse–Braem 2015的公开摘要/正文可得：研究对象分别涉及计算冲突监测、跨试次适应、主观冲突报告及掩蔽no-go抑制。**不可把不同范式混成一个正反实验或据此裁决SRT C2'**；未运行实验、核查所有全文细节。
-2. **内部矛盾：** 无（本轮已核范围内未发现作者选择冲突）。**MG-1 A/B/C均未获作者选择**；MG-2 Option A不能借用为MG-1裁决；本文件仅是有审核价值的机器备选提案，不改变OWNER及CN-3 HOLD。
+2. **内部矛盾：** 无（本轮已核范围内未发现作者选择冲突）。**MG-1作者已明确选择A（§5.1）**，B/C保持未选历史备选；MG-2的独立Option A不能冒用为MG-1的原因。裁决只界定中性审计完成范围，**不宣告MG-1已完成，也不更改CN-3 HOLD**。
 3. **已有说法：** 多层控制、冲突调整及意识依赖争论都有成熟文献；Abrahamse–Braem 2015直接挑战Desender 2014把主观相关当因果必要条件的推断（**部分重合/争论延续**）。旧crosswalk/bridge已覆盖多项机制；本轮增量仅为**公平的三方案完成边界 + 双向实证与范式限定 + 启动来源说明**，不主张SRT独特机制。
