@@ -1254,6 +1254,8 @@ The author explicitly selected **Option A** after a balanced A/B/C decision pack
 
 **No automatic release:** the CN-3 HOLD below, unchanged MG-1/MG-2 study obligations, independent FR-ADV and separate author experiment authorization remain in force. This MG-1 choice neither decides the first CN-2 E2 task family/P1–P6 readouts nor affects the separate MG-2 Option A (Bearer–Concern O3 remains OPEN). It creates no second CURRENT NEXT.
 
+**No automatic work scheduling:** the substantive MG-1 eight-family / five-question neutral review **has not yet been scheduled as a deliverable**. The sequencing and priority between preparing that review and the **first CN-2 E2 task-family / P1–P6 readout choice** remain for **separate author adjudication**, not machine-default execution. Selecting MG-1 Option A only defines the review's potential completion scope.
+
 ### Supporting MG-2 — access -> control -> ownership bridge
 
 Do not collapse three separate questions.
