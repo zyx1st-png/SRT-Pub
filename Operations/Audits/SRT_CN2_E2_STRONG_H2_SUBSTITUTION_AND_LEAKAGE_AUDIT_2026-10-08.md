@@ -134,11 +134,13 @@ This is a review checklist, not execution permission, fixed numerical thresholds
 
 Stop S1: if a **named, capable** H2 model predicts the same held-out outcomes and interventions under matched budget, record **NO LOCAL COMPARATIVE INCREMENT** for that exact pair and predictive job only; do not assert every H2 or SRT is reduced. Stop S2: if latent and geometric accounts are observationally reparameterizations at available probes, return **UNDERDETERMINED** on separate mechanism, not H3 novelty. Stop S3: leakage, post-treatment selection or uneven inputs invalidate that scope of evaluation or estimand. Stop S4: do not reopen F-03, freeze the old toy simulation, create a new independent research lane or rewrite canonical.
 
-**M1 — EXPLICIT AUTHOR DECISION REQUIRED FOR ANY CHANGE TO CURRENT NEXT WORDING.** The present U-mode document can correct its own C target to a named-model comparison, but it cannot silently rewrite the programme's §0.0c immediate discriminator ('better than strong local-update and latent-state models') or the 09-26 level-audit §10 framing. Author decision packet, **not preselected**:
+**M1 — AUTHOR OPTION A SELECTED (2026-10-08), IMPLEMENTATION IN SEPARATE DRAFT PR #1108.** After the independent review of original head `5d901fe6` and its amended audit at `56be85df`, the author explicitly replied:
 
-- **Option A (machine recommendation, NOT author-approved):** retype that comparative clause as **'under matched data, capacity, information and compute budgets, does an explicitly specified shared-geometry model deliver held-out predictive/compression/causal utility beyond named and capable H1/H2 implementations, with no claim of beating an unrestricted H2 family?'** Keep the programme's *larger* pre-object formation/unity/recursive-reconstitution question, H1/H2/H3 level distinctions and E2->E3->E4 ladder unchanged.
-- **Option B:** retain the broad owner phrase as an informal challenge or conceptual shorthand, but **explicitly prohibit treating it as a literal empirical 'all H2' winning criterion**. Only concrete named-model comparisons could be used for evidence; author must decide whether this reading is adequate for the programme.
-- **No selection recorded:** `chosen = OPEN`; `reason = OPEN`; `closure_boundary = OPEN`. The machine does not change CURRENT NEXT, STATUS, author source, or an experimental protocol. The author is asked to adjudicate the wording before any programme-owner edit. A separate later task-specific author choice and FR-ADV/MG guards are still needed for experiment freeze.
+> 我选择方案A：将CURRENT NEXT的比较判别式限定为具名模型之间的公平比较，保留研究主目标和既有治理门槛。请按此裁决推进必要的仓库修订。
+
+This is the actual **author decision**, not a machine-presumed choice. **Option A** limits the *empirical CN-2 comparator* to named, capability-declared shared-geometry and H1/H2 implementations, under fair information, budget and holdout conditions, while keeping the larger field-formation/unity/recursive-reconstitution research question intact. **Option B was not selected.** The 2026-09-27 author wording remains a historical source record.
+
+**Authority and integration status:** [draft PR #1108](https://github.com/zyx1st-png/SRT-Pub/pull/1108) separately records the author decision in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md` and proposes the bounded programme/STATUS/E2/level-audit sync. While PR #1108 is **unmerged**, do not treat its content as current `main` or an already-landed CURRENT NEXT text. This audit PR #1107 remains independently Draft with its original one-file scope. Separate later task-specific author choices and MG-1/MG-2 / FR-ADV requirements still govern experimental freeze.
 
 ## 8. External source-native references (article-level verification)
 
@@ -160,7 +162,7 @@ No source directly tested or refuted SRT-Pub's prospective E2 battery. Relevance
 ## 9. 外部对照三项
 
 1. **事实冲突：** 无（本轮已核范围内未发现）。没有从候选设计推断已发生的实验效果。
-2. **内部矛盾：** 无（本轮已核范围内未发现）。M1存在机器审计的无限H2族比较与CURRENT NEXT笼统措辞的**待作者消歧张力**，不是作者两条原话矛盾；不在这里更改owner。
+2. **内部矛盾：** 无（本轮已核范围内未发现）。M1的无限H2族比较与旧CURRENT NEXT笼统措辞之张力，已由作者2026-10-08明确选择方案A作出**比较口径裁决**；关联owner的实施稿在#1108 Draft中，尚非已合并main，不是作者两条原话矛盾。
 3. **已有说法：** 09-26 H1/H2/H3重分类§7的强吸收/同族重参数化原则与本文件Stop S1/S2**内部完全相同**，不计新成果；Gershman/Niv、Whittington、Li/Collins、Friston、Wójcik等与中性认知目标**部分重合**。预测信息泄漏Kapoor & Narayanan（2023）、Rosenblatt等（2024），时间前向验证Bergmeir & Benítez（2012），干预后变量调整Rosenbaum（1984）及碰撞变量选择Elwert & Winship（2014）属于成熟方法学，**相同问题上的既有结论**；本轮贡献只是把风险具体指向仓库E2 §3/§10。具名模型之间的公平比较与Bayesian模型比较/归纳偏置研究**部分重合**，非SRT独创。
 
-**Final:** CN-2 U-mode H2 implementation-level fairness and leakage audit revised; hypothetical H3-vs-unrestricted-H2 universal win **ILL-POSED**, named-model relative utility **OPEN / NOT MEASURED**; E2/CN-3/experiment **HOLD**, CURRENT NEXT wording **AUTHOR DECISION PENDING**, STATUS/canonical/author sources unchanged, F-03 STOP unchanged. This review does not grant publication, code execution or experimental advancement.
+**Final:** CN-2 U-mode H2 implementation-level fairness and leakage audit revised; hypothetical H3-vs-unrestricted-H2 universal win **ILL-POSED**, named-model relative utility **OPEN / NOT MEASURED**; E2/CN-3/experiment **HOLD**, CURRENT NEXT comparator **AUTHOR OPTION A SELECTED; LANDING PENDING DRAFT #1108**, this audit itself does not change STATUS/canonical/author sources, F-03 STOP unchanged. This review does not grant publication, code execution or experimental advancement.
