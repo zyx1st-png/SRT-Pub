@@ -12,7 +12,6 @@ priority: current_next_mg1_completion_scope_clarification
 research_mode: U
 dependency:
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
-  - Operations/Audits/SRT_MG1_NEUTRAL_COMPLETION_SCOPE_DECISION_PACKET_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
 tags: [AuthorAdjudication, MG1, CompletionScope, CognitiveControl, StrongestNeighbor, IndependentReview, CN3, Hold]
 ---
