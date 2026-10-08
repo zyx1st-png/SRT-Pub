@@ -1116,6 +1116,9 @@ Pointer note (2026-09-24): the register moved from Spine §9 to §13 in the 2026
 CURRENT NEXT = pre-object generative orientation of cognition under neutral cognition-science execution first;
 CURRENT NEXT OWNER = Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md;
 CURRENT NEXT SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md;
+CURRENT NEXT CN-2 COMPARATOR SCOPE (2026-10-08 author A) = named, capability-declared shared-geometry implementation vs named, capability-declared H1/H2 implementations; matched lawful observations, model-learning abilities, holdout and resource budgets; no universal H3-over-H2-family claim;
+CURRENT NEXT CN-2 SCOPE SOURCE = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md;
+CURRENT NEXT CN-2 STATUS = E2 held-out predictive gain NOT ESTABLISHED; compression supplementary only at comparable predictive adequacy, not alternative E2 PASS; E3 causal and E4 recursive evidence separately gated/not established; no new research lane; MG-1/MG-2, independent FR-ADV and CN-3/toy execution HOLD preserved;
 
 Facing v0.3 interpretation gate:
 - neutral cognition execution may continue without author Facing confrontation;

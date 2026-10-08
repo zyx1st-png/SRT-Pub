@@ -7,12 +7,13 @@ layer: operations
 epistemic_layer: os
 claim_mode: research_program
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-08
 research_mode: U
 comparative_claim: bounded neutral model comparison only; no SRT superiority claim
 named_comparator: "Lerdahl-Krumhansl tonal tension; Narmour I-R; Huron ITPRA; Temperley Bayesian tonal models; IDyOM; event segmentation"
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MUSIC_CHANGE_PHENOMENAL_VERTICAL_GENERATION_2026-09-29.md
   - 01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_MUSIC_CHANGE_UNFINISHEDNESS_BEARER_2026-09-29.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
@@ -49,6 +50,8 @@ canonical edit = NO.
 ## 1. Core neutral research question
 
 > Can a context-dependent continuation / reachability organization explain coordinated changes in musical tension, completion, segmentation, phenomenal report and later recutting better than strong local-update and latent-state / representation baselines?
+
+**2026-10-08 current-comparator qualification:** The music-specific question above retains its historical shorthand, but it must not be read as a literal win over all H2 models. For the CURRENT NEXT empirical E2 comparison, the controlling later author Option A source (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md`) requires **named, capable models under matched information/resource budgets and held-out predictive gain**; compression is secondary only with comparable prediction. Causal intervention and recursive-recutting gates remain E3/E4. The music companion does not inherit new experiment authorization.
 
 A second, stronger question is:
 

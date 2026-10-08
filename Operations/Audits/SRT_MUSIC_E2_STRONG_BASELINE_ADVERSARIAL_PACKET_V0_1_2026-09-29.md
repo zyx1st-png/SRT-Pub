@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: os
 claim_mode: adversarial_design
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-08
 research_mode: U_to_TEST
 root_question: Can the existing cognition-programme E2 whole-system predictive-geometry target survive strongest music-specific baselines before any experiment is authorized?
 comparative_claim: neutral residual-elimination only; no SRT superiority or novelty claim
@@ -15,6 +15,7 @@ named_comparator: "Lerdahl-Krumhansl tonal tension; Bharucha anchoring; Larson m
 n_mode_triggered: false
 priority: current_next_bounded_companion
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Proposals/SRT_MUSIC_PHENOMENAL_VERTICAL_GENERATION_BOUNDED_RESEARCH_ROUTE_2026-09-29.md
   - Operations/Audits/SRT_PR1084_PR1085_POSTMERGE_REVIEW_CORRECTIVE_RESPONSE_2026-09-29.md
@@ -38,6 +39,8 @@ The target is **not** discovered from music.
 The pre-existing cognition programme already asks:
 
 > Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models?
+
+**2026-10-08 comparator routing correction:** The quotation above is the **historical 09-27 wording**, not the presently controlling literal E2 comparison. The author's later Option A decision (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md`) requires **named and capability-declared comparator implementations with matched information/resource budgets**. E2's threshold remains held-out **prediction**; compression is assessed separately only at comparable prediction, with intervention (E3) and recursion (E4) remaining later evidence stages. This music packet remains a bounded companion, not a new experiment authorization.
 
 Music is only a bounded test surface for that prior E2 burden.
 
