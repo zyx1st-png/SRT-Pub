@@ -11,6 +11,7 @@ updated: 2026-10-08
 priority: high
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
@@ -1295,6 +1296,15 @@ persistent unresolved conflict
 The strongest next question is:
 
 > What converts an accessible target into a control-effective structuring bias, and what additional conditions convert that controlled direction into bearer-owned agency?
+
+#### 2026-10-08 author Option A — MG-2 neutral deliverable versus OPEN Bearer ownership
+
+Controlling author source:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md`.
+
+The author selected **Option A** in the scoped follow-up: a **neutral scientific MG-2 review of ACCESS, control-effective structuring bias, and empirically studied agency feeling/judgment may be evaluated and completed at its bounded evidence-supported review strength independently of settling the SRT Bearer / Concern / consequence-as-one's-own problem**. This is **completion-scope separation**, not a statement that MG-2 review is already complete, that agency feeling/judgment measures Bearer, or that OWNERSHIP has been removed from the programme. The third MG-2 question above remains **OPEN at its stronger SRT/Bearer interpretation level**, with no admitted direct O3 empirical proxy. Illustrative low/high ownership assignments in the 09-26 control bridge §14 are **not measurement evidence**.
+
+**This clarification creates neither an O3-as-experiment gate nor an automatic CN-3 release.** The CN-3 HOLD immediately below, existing MG-1/MG-2 work constraints, independent FR-ADV and separate author authorization all remain. The first E2 task family, P1–P6 output readouts and model selections are still **undecided**; code provenance recorded in draft PR #1109 is reference-only, not a prioritized TEM reproduction lane.
 
 ### CN-3 — field-formation experimental design — HOLD BEHIND MG-1 / MG-2
 
