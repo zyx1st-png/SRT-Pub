@@ -7,13 +7,14 @@ layer: operations
 epistemic_layer: machine_analysis
 claim_mode: bounded_task_family_feasibility_and_author_choice_proposal
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
 research_mode: U
 root_question: Which first neutral-science E2 cognitive task family could yield a fair observable cross-probe predictive comparison without preselecting models, presupposing SRT increment or executing an experiment?
 comparative_claim: none; candidate-task and observability triage only, not an E2 gain assertion
 named_comparator: null
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md
   - STATUS.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
@@ -25,9 +26,9 @@ dependency:
 tags: [CN2, E2, TaskFamily, P1P6, Readout, Baselines, Choice, IndependentReview, Hold]
 ---
 
-# CN-2 E2 first task-family feasibility: source-native options, probe compatibility, author choice still OPEN
+# CN-2 E2 first task-family feasibility: independently reviewed options and author's first paper task A
 
-> **Disposition: DRAFT / PAPER-ONLY / NO TASK SELECTED.** This one-file U-mode machine audit prepares a **choice of a task family**, not a choice of a model, empirical conclusion, preregistration or experiment. E2 held-out predictive increment remains NOT ESTABLISHED, E3/E4 separately gated, and **CN-3 / toy simulation / actual data collection / reproduction remain HOLD**. No new CURRENT NEXT, canonical definitions, ontology, STATUS, MG-1/MG-2 work schedule or author-origin claim.
+> **Disposition: DRAFT / PAPER-ONLY / AUTHOR FIRST TASK FAMILY A SELECTED (§5.1).** This U-mode machine audit preserves the independently reviewed choice evidence and records the **later exact author choice A**; it is not a choice of a model, empirical result, preregistration or permission to run an experiment. E2 held-out predictive increment remains NOT ESTABLISHED, E3/E4 separately gated, and **CN-3 / toy simulation / actual data collection / reproduction remain HOLD**. No new CURRENT NEXT, canonical definitions, ontology, STATUS, MG-1/MG-2 work schedule or author-origin claim.
 
 ## 0. Scope and actual conversational authorization
 
@@ -35,7 +36,7 @@ After author-authorized merger of PR #1110, the assistant recommended **"优先�
 
 > 继续
 
-This is **directional acceptance for a bounded PAPER-ONLY task-family comparison**, not author selection of any task, model, data source, preregistration, research lane, or experimental start. The assistant chose the four alternatives below for discussion. **No author A/B/C/D adjudication is present**. The already merged #1110 programme explicitly says MG-1 review remains *unscheduled* and the ordering between it and the first CN-2 E2 task family is author-owned; this packet does **not** create or change that schedule.
+This is **directional acceptance for a bounded PAPER-ONLY task-family comparison**, not author selection of any task, model, data source, preregistration, research lane, or experimental start. The assistant chose the four alternatives below for discussion. **At the time of drafting, no A/B/C/D adjudication was present; after the third independent review the author expressly selected A as the FIRST paper task (§5.1)**. The already merged #1110 programme explicitly says MG-1 review remains *unscheduled* and the ordering between it and the first CN-2 E2 task family is author-owned; this packet does **not** create or change that schedule.
 
 ## 1. Author-owned E2 target; what cannot change to fit an attractive dataset
 
@@ -62,7 +63,7 @@ These are **output-interface examples, not preregistered P1–P6 likelihoods or 
 
 The **separate holdout scopes** inherited from the CN-2 leakage audit are: **A)** new probe type but seen items; **B)** pre-reserved unseen item/relation/combination; **C)** future time and consequence state (chronological cutoff, only if forecasting revaluation); **D)** independent participants if population transfer is claimed. Never use test-label readouts, post-intervention knowledge, future outcome statistics, or the same participants/sessions across splits contrary to the claimed target. No post-treatment matching on subjective rule knowledge as an ordinary covariate.
 
-## 2. Four author options (NONE selected; no machine-default experiment)
+## 2. Four originally neutral options (A later selected only as FIRST paper family; no model/experiment selection)
 
 Each family below is a **task choice**, not a named-model pick. Models are examples of source-native competitors / pressures only; their runnable P1–P6 interfaces are **not** verified.
 
@@ -138,7 +139,7 @@ Before any selected-family later use, check actual files/trials, data-use terms,
 | Owner-task distortion risk | **classic attention/cluster learning + Ashby-style similarity-to-generalization already absorb the naive cross-probe claim**; full revaluation risks ordinary label/value reweighting | **graph community/parsing and SR/H2 may absorb predicted effects; discrete event boundaries != perceptual morph; B may crowd out other probes** | MG-2 control problem may displace CN-2 | progress delayed |
 | May select models or authorize execution? | **NO** | **NO** | **NO** | **NO** |
 
-**Preliminary synthesis, NOT author choice (R1 parity correction):** **Both A and B have mature entry-point behavioral/computational traditions**, and neither should be branded the universally easiest/hardest solely because one round checked only A. A has category-learning, **Ashby 2020 P1-like ratings -> novel-category generalization**, and identification/similarity-to-category precedent; B has **graph community random-walk, human discrete event-parsing, neurorepresentational clustering, model next-step prediction, and successor-representation** precedent. **Both also face major existing-mechanism absorption**: A by attentive exemplar/cluster/H2 models, B by community-based recurrent predictive, successor-map and relational H2 models. **Neither has a validated, matched, all-six P1–P6 / consequence-revaluation / unseen-action corpus**, and B's P3 discrete temporal boundary does **not** satisfy the original P3 continuous category-morph target merely by renaming it. C remains closer to MG-2 instructed control. D now offers **A+B symmetric catalog leads**, but no automatic dataset audit. These are **not task or model recommendations or authorization to execute**.
+**Preliminary synthesis, NOT author choice (R1 parity correction):** **Both A and B have mature entry-point behavioral/computational traditions**, and neither should be branded the universally easiest/hardest solely because one round checked only A. A has category-learning, **Ashby 2020 P1-like ratings -> novel-category generalization**, and identification/similarity-to-category precedent; B has **graph community random-walk, human discrete event-parsing, neurorepresentational clustering, model next-step prediction, and successor-representation** precedent. **Both also face major existing-mechanism absorption**: A by attentive exemplar/cluster/H2 models, B by community-based recurrent predictive, successor-map and relational H2 models. **Neither has a validated, matched, all-six P1–P6 / consequence-revaluation / unseen-action corpus**, and B's P3 discrete temporal boundary does **not** satisfy the original P3 continuous category-morph target merely by renaming it. C remains closer to MG-2 instructed control. D now offers **A+B symmetric catalog leads**, but no automatic dataset audit. These comparative statements were **not a default recommendation or authorization to execute**. The author later selected only **A for the first paper task** (§5.1).
 
 **Potential comparison-adequacy STOP:** if a family cannot yield at least a clearly specified cross-probe held-out **predictive** target with fair inputs and a capable named alternative, report **NOT READY**, rather than replacing the E2 question with within-task accuracy, model compression, neural geometry description, or post-hoc conceptual novelty.
 
@@ -160,10 +161,24 @@ Before any selected-family later use, check actual files/trials, data-use terms,
 3. Are Nosofsky/GCM 1986, Kruschke/ALCOVE 1992, Love–Medin–Gureckis/SUSTAIN 2004, Goldstone 1994, **Ashby 2020 similarity-to-generalization (P6-adjacent only)**, and Mack 2016 faithfully sourced, and are Schapiro 2013 (human event parsing versus separate fMRI community clustering), Stachenfeld 2017 SR and TEM 2020 faithfully typed? Do any entries pretend these are direct competing implemented P1–P6 arms?
 4. Is comparison fair to **strong H2** model-structure learning, or are latent-state and geometry descriptions being treated as mutually exclusive mechanisms? Are split/data/selection biases handled?
 5. Are A/B/C/D neutral and unselected, with **Clapper's unsupervised/no established feedback caveat**, OSF/Ashby's feedback-based categorization and same-study P1-like ratings vs category-generalization, the C-dataset not-yet-audited limitation and **Schapiro OpenNeuro ds001621 Experiment 3 fMRI-only** limitation explicit? Are no task/model/data collection, CN-3 unlock or MG-1 rescheduling authorized, and is the inherited E2 compression inconsistency left for an owner-only later repair?
-6. Which first task-family option does the **author** select, if any, **after** independent review? A=consequence-driven concepts; B=relational graph; C=instructed control; D=defer. An author may also specify a different family. Until then **TASK CHOICE = OPEN**.
+6. Is the author's later explicit **FIRST PAPER A** choice (§5.1) faithfully represented without implying A is a runnable all-six protocol, chosen model, automatic B/C sequence, or authorization for data/experiment? Should subsequent paper analysis label each P1–P6 readout as source-native, adaptable, missing or unknown?
+
+## 5.1 Separate direct author choice AFTER third independent review — FIRST PAPER A
+
+Controlling author source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md` (**source authority, not this machine audit**).
+
+After the third independent review accepted the balanced A/B/C/D decision packet, the machine offered the same choices without a preferred default. The author answered verbatim:
+
+> 顺着来，先 A
+
+**Author-selected FIRST CN-2 E2 *paper-only* task family = A: consequence-driven multiattribute concept learning / representational and behavioral reorganization.** The four fair options remain historical evidence of the choice, but B/C/D are **not selected**. **"First" does not authorize sequential automatic B/C studies or decide MG-1 review scheduling**. Earlier `继续` was directional permission to prepare the packet, not the selection; the later `先 A` is the selection.
+
+**First paper question, not a protocol freeze:** evaluate the feasibility of measurable P1 free similarity, P2 grouping, P3 morph boundary, P4 transition expectation, P5 subjective anomaly and P6 **novel action/affordance transfer** from shared consequence/history context. GCM, ALCOVE, SUSTAIN, Mack and **Ashby 2020 (P1-like similarity -> category-generalization, not P6 action)** are strong source-native constraints. Tag candidate probes as SOURCE-NATIVE / ADAPTABLE / MISSING / UNKNOWN. Neither a matched P1–P6 dataset, per-probe likelihood, implemented comparator, legal data source nor held-out sample is selected.
+
+**No new science-gain rule or execution:** the **earlier separate author CN-2 named-model comparator Option A** continues to demand capable named H1/H2 implementations, matched inputs/budgets, prespecified held-out **predictive** E2 gain (compression supplementary only). E3/E4, W1–W4, MG-1/MG-2, independent FR-ADV and CN-3/toy HOLD are untouched. A task-family selection neither validates SRT ontology nor changes the one CURRENT NEXT.
 
 ## 6. 外部对照三项
 
 1. **事实冲突：** 无（本轮已核范围内未发现）。方案B新增Schapiro 2013的公开PMC全文（PMID 23416451 / PMC3749823）及Stachenfeld 2017（PMID 28967910），核对了实验1–2事件分割行为与实验3不同被试的fMRI社群聚类；OpenNeuro ds001621仅确认为实验3公开目录，不代表完整同被试P1–P6。方案A新增Ashby等2020直接P1类相似度评分->类别泛化的成熟先例，**不把类别命名泛化当P6动作/可供性**；方案D的Clapper目录描述为**无监督分类**，不能擅称具备反馈或后果操纵；OSF的分类反馈由关联公开论文说明支持。未下载或逐行检查任何公开数据，也未验证全套任务实现。
-2. **内部矛盾：** 无（本轮已核范围内未发现作者陈述矛盾）。已标记**旧E2草案压缩捷径措辞与后续作者裁决的不一致**，以后者为执行口径；此机器决策包不修改前者的历史来源内容。
+2. **内部矛盾：** 无（本轮已核范围内未发现作者陈述矛盾）。作者本轮“顺着来，先 A”明确指首个CN-2纸面任务族，而不是MG-1/MG-2或CN-2具名模型比较曾经选择的A。旧E2草案的压缩捷径措辞与后续作者裁决仍不一致，以后者为控制口径；本次不改旧文件。
 3. **已有说法：** A的辨识->类别预测（GCM/MDS）与初级跨探针构想**高度重合**，**Ashby等2020在反馈分类条件下的相似度评分->新刺激类别泛化已构成P1类到P6邻近结果的高度重合（但不是动作/可供性P6）**，ALCOVE/SUSTAIN/Goldstone已覆盖反馈注意与类别后的表征/辨别变化；B的图社群->事件分割与预测表征在Schapiro 2013中已有**部分重合**，Stachenfeld 2017的后继表征预测地图也给出**部分重合**的强H2压力。无需借SRT名义重命名已有结果；本轮增量仅为**A/B对称审计 + 数据线索核查 + 归属边界**，不涉及SRT创新宣告。
