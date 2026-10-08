@@ -28,17 +28,17 @@ tags: [OneFormation, RelativeSeparability, F03, Counterexample, AdmissionBurden,
 
 # F-03 relative continuation separability: positive-burden / false-admission / false-exclusion pressure
 
-> **Result:** The useful burden is **differentially evidenced recurring conditioning of future formation**, assessed against *actual permitted field histories*, not a requirement for isolation, internal-only memory, unique lineage, or unconstrained counterfactual replacement. Five-plus thought cases below reject weak shortcuts and expose false-exclusion traps. **No independent necessary-and-sufficient One admission classifier has been achieved; F-03 stays OPEN.**
+> **Result / STOP:** The observable parts of Q1/Q2 exclude obvious shortcuts (external clock, memoryless relay, exchangeable peaks) but **do not exclude ordinary state-dependent leaky systems N3, H1 mechanisms or H2 latent-state implementations**. Q3 has no owner-grounded independent replacement envelope. Hence **no positive One-admission proxy is earned**; the ontic step reaches the author-accepted **2026-09-27 primitive anti-tautology STOP**. F-03 stays OPEN. Retain this as an **A-style negative guard / stop-loss audit**, not another positive test programme. Seven initial cases plus a scale caveat are discussed.
 >
-> **Authority:** noncanonical U-mode machine audit continuing merged PR #1104, not new author theory. The author said 「继续」 after the proposed bounded F-03 pressure-test package. This authorizes preparing a candidate audit for review, **not** adopting proposed tests as One ontology, opening a new CURRENT NEXT, authorizing a new experiment, or canonical editing. This is an **audit of explanatory classifiers**; the thought cases do **not** launch the formal model prohibited by the 2026-10-07 source programme guard. This document is a companion to the CURRENT NEXT neutral cognition programme, not its substitute.
+> **Authority:** noncanonical U-mode machine audit continuing merged PR #1104, not new author theory. The author said 「继续」 after the proposed bounded F-03 pressure-test package. This authorizes preparing a candidate audit for review, **not** adopting proposed tests as One ontology, opening a new CURRENT NEXT, authorizing a new experiment, or canonical editing. This is an **audit of explanatory classifiers**; the thought cases do **not** launch the formal model prohibited by the 2026-10-07 source programme guard. This is an **author-requested side-branch record, NOT a companion that serves E2/E3/E4 and NOT a new CURRENT NEXT**. No further F-03 research is queued.
 
 ## 1. Critical prior art inside the repository: this is NOT a fresh invention
 
 **Inherit, do not rename:**
 
-- The 2026-09-11 owner-adjacent audit \`SRT_RELATIVE_CONTINUATION_SEPARABILITY_GENERATION_PRESSURE_2026-09-11.md\` §§2–6 already proposes **differential reconstitution dependence**, potentially arising from distributed historical mutual support plus relative backgrounding/suppression, and a test where perturbing the continuation of candidate A need not force candidate B to change identically. It also says relative separability is *not* causal isolation, fixed material boundary, Bearer own-history, or numerical identity. Its §7 Turing/multi-peak case already warns that exchangeable peaks need not be multiple Ones, and §13 explicitly keeps the positive onset threshold OPEN.
-- The 2026-09-11 \`SRT_ONE_RESULT_TO_CONDITION_RECURSION_PRESSURE_2026-09-11.md\` already draws the crucial distinction between a generic causal chain and a Selection-generated vertical result becoming a condition of later Selection.
-- The 2026-09-13 **author** \`SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md\` protects same-event manifestation/backgrounding without a completed object pair or pre-given menu. The 2026-09-13 One preaudit corrects historical *lineage-before-formation* shorthand: **formed locality/relative separability must be generated; same lineage is not presupposed**.
+- The 2026-09-11 owner-adjacent audit `SRT_RELATIVE_CONTINUATION_SEPARABILITY_GENERATION_PRESSURE_2026-09-11.md` §§2–6 already proposes **differential reconstitution dependence**, potentially arising from distributed historical mutual support plus relative backgrounding/suppression, and a test where perturbing the continuation of candidate A need not force candidate B to change identically. It also says relative separability is *not* causal isolation, fixed material boundary, Bearer own-history, or numerical identity. Its §7 Turing/multi-peak case already warns that exchangeable peaks need not be multiple Ones, and §13 explicitly keeps the positive onset threshold OPEN.
+- The 2026-09-11 `SRT_ONE_RESULT_TO_CONDITION_RECURSION_PRESSURE_2026-09-11.md` already draws the crucial distinction between a generic causal chain and a Selection-generated vertical result becoming a condition of later Selection.
+- The 2026-09-13 **author** `SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md` protects same-event manifestation/backgrounding without a completed object pair or pre-given menu. The 2026-09-13 One preaudit **R4 explicitly retypes the September 11 A-lineage/B-lineage wording**: lineage must not be an upstream One premise. Treat September 11 as a *non-definition historical audit* (its header marks `ai_do_not_use_for_definition: true`), **not** as an independently retained current admission owner. Controlling One §2: 'repeated non-equivalent reconstitution dependence supports relative continuation separability'; locality must be generated and lineage attributed only later where warranted.
 - The now-merged **PR #1104** limits F-01/F-02 to trivial signature observations; its fixed-system C1/C2 cases refute observed SCC / one-step deletion as sufficient. Its C2 correction forbids inventing a new circuit to claim that any mediator is "replaceable".
 
 **This memo's narrower new job** is to cross-check those inherited candidates against **both** false positive and false negative constructions, describe what a bounded evidentiary comparison would need, and return a decision packet **without** silently turning it into One's formal definition.
@@ -50,11 +50,11 @@ For any *case illustration* state explicitly:
 - **Candidate support:** chosen observation/causal intervention surface, grain and interval; a finite subgraph is allowed, **not** a pre-formed "this same One", unique path, true lineage, owner or subject.
 - **History roles:** locally measured state, distributed surrounding-field history, prior recorded structural differentiation, and the rule by which their relevance is separately justified. A state-transition record is **not thereby primitive Selection**.
 - **Probe(s):** which bounded future formation, stability, differentiation or re-formation consequences would change; distinguish observable downstream output from **formation-role** evidence. Probe family is generated for this model, **not** a complete pre-given possibility menu.
-- **Permitted interventions / environments:** what may change while preserving the *tested mechanism*. A comparison can exploit actual admissible surrounding-field history and natural/allowed variation; it **cannot** freely rewire equations, replace the causal architecture with a new design, or assume impossible external histories.
+- **Field histories and counterfactual range:** quote the One owner §2 precisely: **'not wholly or freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path'**. This is an owner-level semantic guard, **not** an independently supplied physical quantifier or operational envelope. A single actual history gives no counterfactual; unconstrained invented histories may over-exclude. Do not arbitrarily rewire an equation, and do not claim a chosen model envelope settles the owner.
 - **Alternative rivals:** external shared driver, passive persistence, observer grouping, local dynamical/parameter update (H1), latent-state/representation (H2), multiscale feedback; a candidate pass cannot distinguish ontology by naming its explanatory target after itself.
-- **Negative outcome:** report \`NOT ESTABLISHED at this scope\` if a needed comparison is unavailable. Lack of probe or a destructive intervention is not proof that One is absent.
+- **Negative outcome:** report `NOT ESTABLISHED at this scope` if a needed comparison is unavailable. Lack of probe or a destructive intervention is not proof that One is absent.
 
-All \`U_t, X_t, V_t, Q_t, f, do(...)\` below are **local proxy variables**; no global Selection predicate, exhaustive state space, One token or Gate operator is introduced.
+All `U_t, X_t, V_t, Q_t, f, do(...)` below are **local proxy variables**; no global Selection predicate, exhaustive state space, One token or Gate operator is introduced.
 
 ## 3. Counterexample and protection matrix
 
@@ -67,6 +67,7 @@ All \`U_t, X_t, V_t, Q_t, f, do(...)\` below are **local proxy variables**; no g
 | P1 environmentally supported feedback | environmental dependence -> NOT One | a feedback path can depend on environmental supply while having differentiated future reconstitution effects | causal isolation as required |
 | P2 distributed support / historical repair | local history storage absent -> NOT One | regionally distributed traces may condition future reconstitution without local self-contained memory | "history must be inside the candidate" |
 | P3 buffered/redundant organization | one part deletion does nothing -> NOT One | no change in one output may reflect redundancy, wrong window or repair; negative evidence is probe-bounded | single negative intervention -> One absent |
+| P4 grain / nested scale | failure at one chosen scale -> never One | nested scale attribution remains OPEN; failure at one grain cannot decide another | post-hoc grain change as positive proof |
 
 These are **tests of the adequacy of admission rules**, not proof that N-cases contain no ontic One or that P-cases contain one. The N/P labels mean **negative shortcut pressure** / **protection against false exclusion**, not One-negative/One-positive ground truth.
 
@@ -91,16 +92,19 @@ do(X_t := 0), U_t=1  -> Y_t drops from 1 to 0
 do(X_t := 0)         -> X_(t+1) unchanged under fixed U_(t+1)
 ~~~
 
-This defeats the rule "any causal output effect is a One-formation mark". Do **not** infer metaphysical One absence from failure to find an internal \`X_t -> X_(t+1)\` arrow: history/conditioning could be distributed and unmeasured. Do **not** appeal to arbitrary rewiring \`Y := U\`.
+This defeats the rule "any causal output effect is a One-formation mark". Do **not** infer metaphysical One absence from failure to find an internal `X_t -> X_(t+1)` arrow: history/conditioning could be distributed and unmeasured. Do **not** appeal to arbitrary rewiring `Y := U`.
 
-### N3 — ordinary path dependence / hysteresis
+### N3 — decisive two-timescale leaky-state rival
 
 ~~~text
-0 < a < 1
+0 < a,b < 1, a != b
 X_(t+1) := a X_t + (1-a) U_(t+1)
+Z_(t+1) := b Z_t + (1-b) U_(t+1)
 ~~~
 
-Under the *declared model*, changing X_t while holding future U fixed affects later X; it may do so across multiple windows. Yet this is standard dynamical memory / filtering, and no independent operational test has established that the prior **Selection-generated vertical relation** enters later Selection as a load-bearing reconstituting condition, or that this support forms a relatively separable process-unity. This **does not refute** the possibility of One; it refutes **ordinary historical dependence alone as sufficient evidence**. Do not rename X as "vertical" to win the test by stipulation.
+Under matched U, `do(X_t)` changes future X and `do(Z_t)` changes future Z. **Q1's observable portion passes**. Equal nonzero initial perturbations d propagate after k steps as a^k d and b^k d, respectively; **Q2's observable differential-response portion passes**. This is an ordinary leaky integrator, not a proof of any independently evidenced Selection-generated vertical relation or formed One.
+
+The single-channel N3 is simply a linear instance of **P1 environmentally supported feedback**. Thus the same model is **not ruled out as One due to environmental dependence**, and **not admitted as One merely because of history dependence**. Both labels are methodological pressures, not a positive/negative ontic truth assignment. H1 parameter dynamics and H2 state representations can realize the same behaviour, so for N3/P1 the only justified result is **NOT ESTABLISHED**. Q3 remains blocked by the envelope dilemma; see §4.
 
 ### N4 — multi-peak global-pattern repair (inherited)
 
@@ -114,7 +118,7 @@ Z_(t+1) := f(Z_t, U_t)                  (current formed candidate conditions fut
 W_(t+1) := g(Z_(t+1), U_(t+1))         (bounded reconstitution probe)
 ~~~
 
-For some nontrivial \`f,g\` and a declared admissible field history, varying Z_t while leaving that environmental history matched can make a future difference to how W is generated. That may supply **one useful piece** of reconstitution-sensitive evidence, although it could equally be ordinary H1/H2 feedback and does **not** prove primitive Selection, One, relative separability or metaphysical identity. It defeats the **false negative** "if U is required, there cannot be a One".
+For some nontrivial `f,g` and a declared admissible field history, varying Z_t while leaving that environmental history matched can make a future difference to how W is generated. That may supply **one useful piece** of reconstitution-sensitive evidence, although it could equally be ordinary H1/H2 feedback and does **not** prove primitive Selection, One, relative separability or metaphysical identity. It defeats the **false negative** "if U is required, there cannot be a One".
 
 ### P2 — distributed history cannot be ruled out by component-local memory tests
 
@@ -124,48 +128,51 @@ Z_(t+1) := f(H_t, Z_t, U_t)            (candidate regeneration may be field-supp
 H_(t+1) := g(H_t, consequences_t)      (bounded delayed readout/update)
 ~~~
 
-The first \`Z\` may have no locally isolable storage or even a unique successor. Nonetheless, *if independently evidenced*, a distributed field could differentially condition later local formation. A rule requiring \`Z\` to carry an internal memory register or excluding any field-supported history would contradict the current One owner. But a generic \`H_t\` update alone cannot be redescribed as ontic Selection or a positive One result.
+The first `Z` may have no locally isolable storage or even a unique successor. Nonetheless, *if independently evidenced*, a distributed field could differentially condition later local formation. A rule requiring `Z` to carry an internal memory register or excluding any field-supported history would contradict the current One owner. But a generic `H_t` update alone cannot be redescribed as ontic Selection or a positive One result.
 
 ### P3 — one failed component intervention is not a universal negative
 
 Suppose two admitted-to-the-model support routes compensate within a declared tolerance envelope. Damaging one route can produce no change in a coarse observable, while a finer or later probe reveals different failure/reformation trajectories. This does not establish One; it merely defeats the *necessary* condition "every component intervention must cause an immediately measurable output change". **Do not** rescue a failed test by silently adjusting probe/grain after seeing the result: new probes must be declared as exploratory.
 
-## 4. Minimum *prospective evidence questions*, not a new N&S classifier
+### P4 — grain/scale non-exclusion
 
-The evidence pressure can be organized into **three separable questions**. These are NOT individually established necessary conditions, jointly sufficient conditions, scalar scores, a new canonical term-of-art, or a primitive Selection test.
+An observer's partition at one spatial, temporal or organizational scale may fail to register a relevant reconstitution dependence at another scale. The owner leaves nested-scale attribution and identity OPEN. Therefore a failed local proxy is **not** a global One-absence theorem; changing the grain after seeing results is still exploratory, not a rescue.
 
-| Audit question | Positive observation one might seek | Must compare against | Blocking missing premise |
+## 4. Q1–Q3 red-team result — no earned positive discriminant
+
+| Former question | Actually testable content | Adequate ordinary rival | Outcome |
 |---|---|---|---|
-| Q1: result becomes later conditioning role | Perturb a **previously formed candidate structural difference**, and observe a prospectively declared change in later formation/re-formation under matched permissible environment, not only contemporary output | N1/N2, passive Markov dependence N3, H1/H2 | What independently marks this difference as Selection-generated vertical organization rather than a model-chosen state? OPEN |
-| Q2: differential reconstitution dependence | Two candidate supports or two bounded re-formation alternatives respond differently under a declared intervention while shared background remains operative | common driver, observer partition, N4 exchangeable peaks | Can a support's differential response be defined without presupposing "the same One" or fixed lineage? OPEN |
-| Q3: bounded relative non-free replaceability | Across **predeclared actual/admissible surrounding-field histories**, relevant formation dependence remains partly non-substitutable without arbitrary rewiring; environmental support is retained, not subtracted | P1/P2 (false isolation), P3 (repair), permissive interventions | What is the independent scope of "arbitrary surrounding-field history" and permitted replacement without presupposing One? OPEN |
+| Q1 previous organization conditions later formation | state-dependent response under matched environment | N3 scalar leaky integrator; H1/H2 | **Non-discriminating for One** |
+| Q2 differential reconstitution response | unequal responses of analyst-declared candidate supports | two-time-scale N3 with a != b; H1/H2 | **Non-discriminating for One** |
+| Q3 relative non-free replacement | counterfactual comparison against a specified domain of surrounding histories | two-horn envelope problem below | **Cannot currently be operationalized as One admission** |
 
-**Important incompleteness:** a future conditional finding Q1+Q2+Q3 would at most justify saying **"a declared domain model has a stronger One-formation-compatible organization proxy"**. It would **not** establish a necessary-and-sufficient SRT One admission criterion. One reason is **observational/model underdetermination:** a fully modelled high-dimensional H2 latent-state process can implement the same intervention-response trajectories. Another is **ontic typing:** no current assay separates genuine primitive Selection from a modelled causal transition without importing the unclosed anti-tautology problem.
+**Q3 two-horn dilemma and owner correction:** One §2 uses **'arbitrary surrounding-field history'**, not the narrower 'actual surrounding-field history' used as owner paraphrase in merged #1104. The previous Draft alternated between the two readings; it was not authorized to resolve their semantic scope.
 
-A missing Q1/Q2/Q3 result means **insufficient evidence for this proxy** at the chosen grain/bounds, **not** ontological proof that One does not exist. A successful result cannot silently inherit One, Bearer or subject status. The file does not presume material continuity, spatial isolation, internal memory or unique successor.
+- **Unconstrained imaginary histories/control:** if arbitrary means any mathematically permitted (e.g. unbounded) external controls, a controllable dynamic system can reproduce broad families of finite output traces. Such an interpretation can exclude environmentally supported genuine candidate processes just because a mathematically redesigned or extreme history can mimic an output.
+- **One actually realized history only:** there is no independent counterfactual alternative, so replacement is untestable.
+- **A bounded, independently fixed intervention envelope** might give a *domain-proxy* comparison, but choosing the envelope requires substantive criteria not yet supplied; it cannot silently define what **arbitrary** means at One-owner strength. Physical admissibility, relevant formation path and non-rewiring must all be justified without already presupposing One.
 
-## 5. The hardest RED-TEAM comparison
+**09-13 R4 typing:** Q2 should compare *non-equivalent reconstitution-dependence patterns* among **candidate supports**, not assume established A/B lineages. The earlier 09-11 lineage-indexed example is historical and subordinate to One §2 after the 09-13 correction.
 
-Construct **two externally observationally matched systems**:
+**09-27 STOP:** The step from an ordinary dynamical dependency to 'this was Selection-generated vertical organization' has no independent noncircular admission test at current strength. The 09-27 author ruling explicitly **STOPPED** the primitive anti-tautology search, except for new inputs under its §4 reopen conditions. This audit supplies none. **Q1/Q2/Q3 are not a route around that STOP.**
 
-- **D (driven):** a bounded observable reappears because an external clock/input regenerates it independently of the previously observed local candidate.
-- **R (reconstitution candidate):** the prior local or distributed organizational difference is a *prospectively load-bearing* input to the later organization, against the same allowed external supports.
+**Verdict:** No combination of currently available Q1/Q2/Q3 outcomes gives a positive One classifier, even under a model-level 'more than ordinary state dependence' claim. Failure also cannot refute ontic One.
 
-Observation may show matching repetition, predictability and even multi-probe coordination. To distinguish **their model-level causal roles**, change a **prior candidate formation variable** or compare legal matched-history interventions and then inspect **later re-formation probes**; report what changed and which confounders were held fixed. Do not substitute a model without feedback by fiat to "win"; both structural models and their permissible comparisons must be declared before inference.
+## 5. Strongest RED-TEAM: N3 / H1 / H2, not the easy external clock
 
-**Result if separable:** a stronger *domain-model discrimination* than ordinary recurrence, not positive ontic One proof.  
-**Result if still matched:** domain-model underdetermination; return OPEN.  
-**Result if the test destroys the mechanism or no legal intervention exists:** INCONCLUSIVE, not One absent.
+The earlier D-versus-R comparison used a purely externally driven clock D as its challenge; N1 had already defeated that shortcut. It was not the hardest rival.
 
-### Reverse RED-TEAM: avoid a false negative against a real supported process
+The **two-dimensional leaky system N3** already achieves the observable part of Q1 (past state alters future) and Q2 (two differently tuned components have differential response) under legal, matched perturbations. A fair H1 mechanism or H2 state model can preserve these same response and intervention targets. Any 'R' reconstruction candidate matching these trajectories has **NO LOCAL COMPARATIVE INCREMENT** at this explanatory job. This does not deductively eliminate upstream SRT ontology.
 
-The same contrast must admit a candidate **R+U** whose reconstitution genuinely requires environmental inputs, potentially field-distributed history, redundant recovery, and no strict material continuity. A test that declares "not One" merely because internal memory, autonomy, unique successor, isolation, or single-perturbation leverage is missing **fails** owner fidelity. Positive "R+U" model signatures remain **candidate** and are not a metaphysical existence proof.
+The missing point is not an additional numerical statistic: the model never independently certifies **Selection-mediated vertical reconstitution**. The Q3 input-range ambiguity is unresolved. Requiring full causal isolation, local-only memory, immediate one-part intervention effect, or one fixed granularity would also cause false exclusions (P1–P4).
+
+**STOP result:** N3/P1 triggers the already-written §7 stop-loss rule; no new model or trial follows. In every case, **NOT ESTABLISHED** is appropriate, not positive One admission or negative One existence.
 
 ## 6. Mature-neighbor substitution / exact target
 
-- **Woodward** (\`Making Things Happen\`, OUP; DOI \`10.1093/0195155270.001.0001\`): intervention-based causal explanation covers whether changes to one selected variable alter future selected observables. **Partial overlap** at the counterfactual methodology; not a proof of One constitution.
-- **Craver** (\`Explaining the Brain\`, 2007) and the Stanford Encyclopedia of Philosophy entry \`Mechanisms in Science\` §3.4.2: mutual manipulability as a proposed mechanism-part constitutive relevance standard and its recognized limits. **Partial overlap**; an intervention result should not be silently upgraded to One admission.
-- **Moreno & Mossio** (\`Biological Autonomy\`, 2015; DOI \`10.1007/978-94-017-9837-2\`) and Mossio et al. constraint-closure discussions: biological autonomy may combine organized constraint relations with thermodynamic openness. **Partial overlap**, but the One owner explicitly states relative separability != organizational closure / autopoiesis.
+- **Woodward** (`Making Things Happen`, OUP; DOI `10.1093/0195155270.001.0001`): intervention-based causal explanation covers whether changes to one selected variable alter future selected observables. **Partial overlap** at the counterfactual methodology; not a proof of One constitution.
+- **Craver** (`Explaining the Brain`, 2007) and the Stanford Encyclopedia of Philosophy entry `Mechanisms in Science` §3.4.2: mutual manipulability as a proposed mechanism-part constitutive relevance standard and its recognized limits. **Partial overlap**; an intervention result should not be silently upgraded to One admission.
+- **Moreno & Mossio** (`Biological Autonomy`, 2015; DOI `10.1007/978-94-017-9837-2`) and Montévil & Mossio (2015) on closure of constraints: biological autonomy may combine organized constraint relations with thermodynamic openness. **Partial overlap**, but the One owner explicitly states relative separability != organizational closure / autopoiesis.
 - **H1/H2 model families** under the active cognition owner can implement historical dependency, latent-state feedback and differential reconstitution *at the level of a declared causal model*. A positive local probe cannot earn an SRT-specific comparative increment without a same-target controlled contrast; negative local increment does not erase the distinct upstream ontology question.
 
 Source links (bibliographic, not an independent full-text comparative audit):
@@ -173,38 +180,37 @@ Source links (bibliographic, not an independent full-text comparative audit):
 - https://academic.oup.com/book/4324
 - https://plato.stanford.edu/entries/science-mechanisms/
 - https://link.springer.com/book/10.1007/978-94-017-9837-2
-- https://www.sciencedirect.com/science/article/pii/S0022519315001009
+- https://doi.org/10.1016/j.jtbi.2015.02.029
 
-## 7. Disposition, stop rule and author decision packet
+## 7. STOP triggered — A-style negative guards and root return
 
-**Current adjudication:**
+The original stop rule was **'Stop now if a reviewer can still construct a competent H1/H2/control explanation.'** N3/P1 and their two-dimensional extension already satisfy it. This is a **TRIGGERED** stop, not a proposed future check.
 
 ~~~text
-new One theorem / N&S classifier                         = NONE
-usable original 2026-09-11 differential-dependence burden = RETAIN AS PRIOR WORK
-F-03 relative continuation separability                  = OPEN
-Q1/Q2/Q3                                                = MACHINE TEST QUESTIONS, NOT OWNER CONDITIONS
-false-positive pressure against simple classifiers        = RECORDED
-false-negative protection for environment-supported paths = RECORDED
-strict identity / exact branch-merge                     = OPEN; execution HOLD
-new SRT term / symbol / domain experiment / Lean proof     = NONE
-new CURRENT NEXT / third well / toy run                    = NONE
-canonical / STATUS / HP-B edit                             = NONE
+F-03 independently applicable positive One admission = OPEN / NOT EARNED
+Q1 / Q2 distinguish One from N3, H1, H2          = NO
+Q3 counterfactual domain independent of One       = NOT ESTABLISHED
+09-11 lineage-indexed candidate as current owner   = NO (09-13 R4 governs)
+primitive anti-tautology search (09-27)            = STOP RETAINED
+negative / false-exclusion guards                 = ARCHIVE
+branch/merge identity (One)                       = OPEN
+branch/merge execution (STATUS)                   = HOLD
+new experiments / formal programme / CURRENT NEXT = NONE
+canonical / STATUS / HP-B edit                    = NONE
 ~~~
 
-**Stop now** if a reviewer can still construct a competent H1/H2/control explanation or if the allowed replacement range cannot be specified independently of the hoped-for One admission. Do not relabel ambiguity as proof, and do not launch more toy simulations to hide this missing criterion.
+**A-style machine disposition** — archive the warnings from N1–N4 and P1–P4; retire the proposed Q1/Q2/Q3 positive-admission direction for this evidence strength. This is **not** a fabricated author ChoiceMap vote, A1 concept ruling, or proof that ontic One is absent.
 
-**Optional future author choices only (NOT queued):**
+**Two-pass and root-return:** #1104 and #1105 have yielded narrower residuals but no positive increment. The cross-domain two-pass ChoiceMap guard is **plausibly analogous**, not asserted to be formally applicable by identity. Stop before any third pass. Record the unchosen choice surface rather than invent `chosen`/`reason`/`closure_boundary`: preserve negative guards and return to the single actual `CURRENT NEXT` neutral cognition E2/E3/E4. This **side branch does not directly serve E2/E3/E4**, is not its companion, and does not create another active lane.
 
-- **A — preserve only the negative guard:** retain the counterexamples and report "F-03 OPEN; no independent positive condition yet."
-- **B — authorize a bounded *conceptual* case comparison:** select one controlled family of histories/probes, revisit Q1/Q2/Q3 against 2026-09-11 prior analysis and mature neighbors, report a candidate of *model-level* reconstitution rather than ontic One. This requires an explicit separate author choice and any applicable independent FR-ADV gate before a new experiment/preregistration/formal reconstruction claim.
+**Reopen only** for a genuinely new author-owned input satisfying 09-27 §4 (new primitive distinction, noncircular same-target derivation, prospective O0/S0 exclusion, or representation-invariant world-facing relation), plus applicable author and independent-review gates before any new experiment or formal reconstruction. No B option is queued.
 
-The author has **not** chosen A or B in this file. Neither is a new CURRENT NEXT. Independent reviewer should challenge whether Q2 or Q3 is circular, whether a realistic R+U system would be rejected, and whether this document merely renames 2026-09-11 differential reconstitution dependence.
+**Verification:** substantive independent re-review of this revised head remains required; passing mechanical CI cannot decide One's admission.
 
 ## 8. 外部对照三项
 
 1. **事实冲突：** 无（本轮已核范围内未发现）；无新增作者经验陈述，thought cases 不是经验发现。
 2. **内部矛盾：** 无（本轮已核范围内未发现）；存在的风险是机器代理检验与 One owner 的误读，已用 false-negative 守卫控制，不应归为作者观点互相矛盾。
-3. **已有说法：** 本文件借用的干预对照与因果预测是 Woodward 的成熟干预主义方法（**部分重合**）；机制构成的互相可操纵证据讨论与 Craver（2007）**部分重合**；环境开放/组织闭合的比较与 Moreno & Mossio（2015）**部分重合但不等同**；2026-09-11 仓库既有的 differential reconstitution dependence 则是**已记录的内部先行表述，不计为新成果**。本轮未证明 SRT 有独有预测或新数学定理。
+3. **已有说法：** Woodward（2003）的干预因果与Craver（2007）的机制构成证据均**部分重合**；Moreno & Mossio（2015）的组织闭合以及 Montévil & Mossio（2015）的约束闭合**部分重合但不等同**；Q3 的输入可达性难题可参照 Kalman（1960）的 controllability（**部分重合**，非One定义）；P3 的冗余补偿可参照 Edelman & Gally（2001）的 degeneracy（**部分重合**）。仓库09-11差异重构依赖属于已有内部成果，不计新发现。本轮未证明SRT独有增量。
 
-**Machine-only bottom line:** \`Q1+Q2+Q3\` is a **review protocol for a hypothetical domain proxy**, not a classifier that can recognize ontic One. A genuine independent positive One-admission condition remains missing. Treat that absence as the answer, not a drafting defect to conceal.
+**Machine-only bottom line:** N3/H1/H2 satisfy the currently observable Q1/Q2 content; Q3 remains indeterminate. Positive One-admission formalization is blocked at current owner strength, and the 09-27 STOP remains. Preserve only the negative guards and return to the repository's single cognition CURRENT NEXT.
