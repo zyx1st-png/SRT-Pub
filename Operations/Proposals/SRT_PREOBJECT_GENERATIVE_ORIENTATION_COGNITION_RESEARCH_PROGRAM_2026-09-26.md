@@ -11,6 +11,7 @@ updated: 2026-10-08
 priority: high
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
@@ -1241,6 +1242,19 @@ Ask:
 - which parts explain conscious access but not gate revision?
 - which parts explain gate revision without phenomenality?
 - what, if anything, is added by gate-objectification + recursive writeback?
+
+#### 2026-10-08 author Option A — MG-1 bounded neutral-science review scope
+
+Controlling author-source decision:
+`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md`.
+
+The author explicitly selected **Option A** after a balanced A/B/C decision packet (#1110): MG-1's **eight-source-family / five-Q1–Q5 strongest-neighbor mapping REVIEW** may be assessed for **bounded neutral-science completion** on source fidelity, source-native mechanism coverage, correct analogy and phenomenality limits, balanced conflict-awareness evidence (including task differences), honest **OPEN / NO LOCAL COMPARATIVE INCREMENT** results, and independent content review. **Only the author can expressly declare this bounded review COMPLETE after that review**. The selection is **not** a finding that the current MG-1 work already passes, a proof of distinct SRT mechanism, or authorization to execute eight implementations / CN-2 E2 model comparisons. All original MG-1 source families and questions immediately above remain unchanged.
+
+**Q5/rationale guard:** if review finds **no additional testable target / no local comparative gain** from gate-objectification + recursive writeback, a truthful **MG-1 review** can still eventually close, but it **does not establish CN-3 experimental justification**. Any later CN-3 proposal must separately explain a defensible neutral target and discriminating readouts under the existing experimental gates; no empty/renamed premise, and no automatic cancellation of all future neutral tests.
+
+**No automatic release:** the CN-3 HOLD below, unchanged MG-1/MG-2 study obligations, independent FR-ADV and separate author experiment authorization remain in force. This MG-1 choice neither decides the first CN-2 E2 task family/P1–P6 readouts nor affects the separate MG-2 Option A (Bearer–Concern O3 remains OPEN). It creates no second CURRENT NEXT.
+
+**No automatic work scheduling:** the substantive MG-1 eight-family / five-question neutral review **has not yet been scheduled as a deliverable**. The sequencing and priority between preparing that review and the **first CN-2 E2 task-family / P1–P6 readout choice** remain for **separate author adjudication**, not machine-default execution. Selecting MG-1 Option A only defines the review's potential completion scope.
 
 ### Supporting MG-2 — access -> control -> ownership bridge
 
