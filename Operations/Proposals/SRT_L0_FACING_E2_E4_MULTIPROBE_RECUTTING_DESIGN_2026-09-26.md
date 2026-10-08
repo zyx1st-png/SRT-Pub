@@ -374,11 +374,13 @@ Before multi-probe testing, measure:
 
 **Do not select or reweight participants/trials to match explicit knowledge measured AFTER the World A/B intervention without an identified causal estimand and bias analysis.** Such conditioning can create post-treatment / collider selection bias, not just remove confounding. Prefer randomization of World assignment, prespecified pre-intervention skill/knowledge measures, and transparent reports of post-intervention knowledge as an outcome or sensitivity analysis. A distinct post-treatment controlled-effect question requires its own causal identification plan; this note does not supply one.
 
-Then ask:
+Then ask, **after pre-intervention knowledge/skill have been balanced by design or measured for justified baseline adjustment**:
 
-> can the same explicit knowledge support different spontaneous multi-probe geometry because consequence history differs?
+> Do different consequence histories yield different spontaneous multi-probe geometries even when initial explicit knowledge is comparable?
 
-This directly tests the author's concern that explicit objects / rules do not exhaust the operative whole.
+This preserves a total-effect design without presupposing the groups have identical **post-intervention** explicit knowledge. If 'same post-intervention explicit knowledge, different geometry' is separately studied, first specify the controlled-effect estimand, causal assumptions and bias safeguards; do **not** manufacture equality by selecting or weighting on a treatment-affected report.
+
+This directly tests the author's concern that explicit objects / rules do not exhaust the operative whole without silently conditioning on a post-treatment variable.
 
 But a positive result is still compatible with latent-state / habit / affordance models.
 
