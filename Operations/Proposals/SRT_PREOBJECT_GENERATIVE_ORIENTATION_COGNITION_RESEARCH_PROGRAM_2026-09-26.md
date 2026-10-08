@@ -142,7 +142,9 @@ ontic containers.
 
 The immediate discriminator, **retyped by explicit author Option A on 2026-10-08**, is:
 
-> Under matched legitimate observations, declared model-structure/learning capabilities and comparable data/complexity/computation budgets, can **one named, specified shared-geometry implementation** provide additional prospective held-out prediction, compression or intervention leverage across multiple local objectification / grouping / transition probes relative to **named and capable H1/H2 implementations**? Can that same declared organization predict the next round of recutting after consequences feed back?
+> **E2:** Under matched legitimate observations, declared model-structure/learning capabilities and comparable data/complexity/computation budgets, can **one named, specified shared-geometry implementation** improve **prespecified held-out prediction** across multiple local objectification / grouping / transition probes relative to **named and capable H1/H2 implementations**? Assess compression **separately only at comparable predictive adequacy**; compression alone is not an E2 PASS.
+>
+> **E3:** Separately test causal leverage by intervention. **E4:** Separately test whether that declared organization prospectively predicts the next round of recutting after consequence feedback, under the existing recursive evidence requirements. E3/E4 are not alternative E2 success criteria.
 
 This is a **bounded comparison of concrete model implementations**, not a victory of H3 over the entire unrestricted H2 family. A shared geometry can itself be an H2 representation/readout, and relative inductive-bias/efficiency gains do not identify a separate mechanism or SRT ontology. Strong latent/state/structure learners must receive their **specified implemented** revision capacities, not a fixed-state straw man; no hypothetical unimplementable all-capable H2 supermodel may be used to make the target vacuous. Null/identification-limited results are valid. The source-native author decision is `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md`.
 
@@ -953,7 +955,8 @@ For each candidate experiment, specify:
 - H2: what latent / representational organization could explain the effect?
 - H3: what whole-system geometry of equivalence / boundary / transition / stability changes?
 - reduction test: can H3 be reconstructed from H1/H2 without explanatory loss?
-- increment test: does a **named shared-geometry implementation** add held-out prediction, compression or causal leverage relative to **named and capability-declared H1/H2 implementations**, under comparable training information, actual structural-learning permissions and resource budgets? Do not demand H3 beat all H2 by definition.
+- **E2 increment test:** does a **named shared-geometry implementation** improve **prespecified held-out prediction** relative to **named and capability-declared H1/H2 implementations**, under comparable training information, actual structural-learning permissions and resource budgets? Record compression **separately only at comparable predictive adequacy**; do not count compression alone as E2 PASS or demand H3 beat all H2 by definition.
+- **E3 causal test:** separately assess prospective intervention leverage after the additional E3 gate; it is not an alternative E2 PASS.
 - recursive test: does consequence-induced H3 change predict the next round of objectification?
 
 Use the evidence ladder:
