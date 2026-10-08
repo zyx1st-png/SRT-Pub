@@ -9,7 +9,7 @@ claim_mode: bounded_interface_audit
 created: 2026-10-08
 updated: 2026-10-08
 research_mode: U
-root_question: Which mature MG1/MG2 mechanisms are specified enough for fair CN2 E2 model comparison, and which access/control/agency observations can be distinguished?
+root_question: Which source-native MG1 multilevel-gating and MG2 access/control/agency mechanisms have identifiable interfaces and observations, and which distinct CN2 code references are available without entering an E2 task choice?
 comparative_claim: none; paper-only model-interface and identifiability audit, not SRT novelty
 named_comparator: null
 n_mode_triggered: false
@@ -26,9 +26,9 @@ dependency:
 tags: [MG1, MG2, CN2, E2, E3, E4, Cognition, CognitiveControl, NamedModel, Agency, Observable, Holdout]
 ---
 
-# MG-1 / MG-2 named model interfaces and observable-discriminator audit
+# MG-1 / MG-2 source-native control interfaces and agency observables; separate CN-2 code-reference appendix
 
-> **Verdict: source-native capabilities can be mapped; NO complete runnable same-target P1–P6 comparator pair is documented. MG-1/MG-2 implementation and identifiability debt remain OPEN; CN-3 and experiments HOLD.** Machine analysis only. No new CURRENT NEXT, author meaning, theory term, HP-B reopening, programmatic benchmark, or trial/preregistration freeze.
+> **Verdict: MG-1 multilevel-gating source capabilities and MG-2 access/control/agency measurement distinctions are mapped at audit level. CN-2 potential source-code references are inventoried separately; NO complete same-target P1–P6 comparison exists.** This audit **does not declare MG-1 or MG-2 complete or incomplete as a new governance status**, define a new completion criterion, or authorize release of CN-3. **CN-3 and experiments remain HOLD under existing owner rules**; the O3 / MG-2 completion-scope question is **AUTHOR ADJUDICATION PENDING** (§6). Machine analysis only; no new CURRENT NEXT, author meaning, ontology, HP-B reopening, benchmark, or preregistration freeze.
 >
 > Scope provenance: after a neutral MG-1/MG-2 reading the author said “继续” to the bounded model-interface / observable-matrix next step. Directional acceptance authorizes this audit, **not** an experiment, new model winner, canon change or Bearer definition.
 
@@ -36,11 +36,11 @@ tags: [MG1, MG2, CN2, E2, E3, E4, Cognition, CognitiveControl, NamedModel, Agenc
 
 The active programme §14 **already** specifies MG-1 and MG-2 and holds CN-3 behind them. The 2026-09-26 multilevel-gating crosswalk already covers hierarchical motor control, affordance competition, BG/PFC gating, active inference, GNW, temporal coordination and developmental bioelectric analogy. The existing conscious-target/control-constraint bridge already distinguishes six roles (access, maintenance, admission/allocation, bias, execution, consequence writeback), a 2x2 access/control dissociation, and PH-AG02's old content-vs-structural-bias distinction. The 2026-10-08 CN-2 strong-H2 audit already establishes fair named models, leakage L1–L7 and H2 absorption rules. **These are inherited, not new findings.**
 
-The present **narrow addition** is (i) to distinguish a published *computational model* from an explanatory theory or empirical paradigm, (ii) mark each source's native input/learning/output separately from any **unbuilt E2 adapter**, (iii) type empirical agency measures separately from SRT Bearer–Concern ownership, and (iv) specify same-target readiness blockers. No empirical results have been generated.
+The present **narrow addition** is (i) to describe MG-1/MG-2 **source-native control/access mechanisms** without claiming experimental completion, (ii) to distinguish a published computational model from a framework or paradigm, (iii) to separate empirical agency observations from the SRT Bearer–Concern OWNERSHIP question, and (iv) to file TEM and related software as **CN-2 reference inventory**, never as an MG-1 outcome or model selection. Task/readout definition precedes model selection and reproduction. No empirical results have been generated.
 
 ## 2. Named sources are not automatically runnable P1–P6 baselines
 
-**Type key:** C = specified computational-model family in a source-native task; F = theory/normative framework requiring a **specific implementation**; E = empirical paradigm/review, not a prediction engine; A = analogy from another system. Labels do NOT by themselves mean that runnable code, an appropriate license, model weights, a reproduced result or a P1–P6 adapter exists. A later **read-only repository provenance screen** is recorded in §9; that screen inspects files and paths without execution.
+**Type key:** C = specified computational-model family in a source-native task; F = a **particular cited framework/review**, not a specified single benchmark implementation; E = empirical paradigm/review, not itself a prediction engine; A = analogy from another domain. An F label **does not claim that no concrete computational implementation of that theory family exists elsewhere** (for example, specific global-workspace networks, active-inference models, or EVC-derived computational implementations); those must be named and source-checked separately before use. PBWM and TEM below are C examples, but only PBWM's native gating task falls directly within MG-1/MG-2; TEM belongs to the separate CN-2 resource appendix (§9). Labels do NOT imply executable compatibility, reuse rights, model weights, reproduction or P1–P6 adaptation.
 
 | Source / type | Native inputs and internal capability | Native output or claim | E2/MG adapter still owed |
 |---|---|---|---|
@@ -50,14 +50,14 @@ The present **narrow addition** is (i) to distinguish a published *computational
 | Cole, Laurent & Stocco 2013, **RITL E/F** | new task instruction and compositional task-set reconfiguration | empirical/review pressure for rapid instructed control | important *challenge* to novel target-to-gate claims; paper is not an E2 executable comparator |
 | Cisek 2007, affordance competition **F** | competing action specifications and sensory/motor biases | simultaneous action selection/specification | possible future P6 action submodel, not an all-probe H2 substitute by label |
 | Pezzulo, Rigoli & Friston 2018, hierarchical active inference **F** | deep models, preferred outcomes, hierarchical precision, policy inference | motivated-control theory across time scales | specify actual model family, priors, structural revision, exploration, code and output likelihood before comparator admission |
-| Whittington et al. 2020, **TEM C** | relational sequences/observations; structural/sensory representations and remapping | spatial/nonspatial relational generalization | candidate for P1/P4/P6 adapted predictions only **after** encoding/readouts; not already tested on E2 P1–P6 or MG-2 |
+| Whittington et al. 2020, **TEM C — CN-2 reference only, NOT MG-1 item** | relational sequences/observations; structural/sensory representations and remapping | spatial/nonspatial relational generalization | optional future E2 model inventory only **after author-selected task family and per-probe output targets**; not MG-1 completion evidence, nor already tested on E2 P1–P6 or MG-2 |
 | Mashour et al. 2020, **GNW F** | neural ignition / amplification / global access to information | consciousness-access theory | ACCESS contrast only; a GNW review is not a causal CONTROL engine or Bearer admission |
 | Haggard 2017 agency **E**, Synofzik et al. 2008 two-step agency **F** | predicted/observed consequences and multiple attribution cues | feeling/judgment of agency, empirical and conceptual distinctions | candidate agency measures, **not** H2 shared-geometry competitor or SRT Bearer readout |
 | Synchrony/neural oscillations **F**, Levin bioelectric morphogenesis **A** | temporal coupling / gap-junction and membrane-potential networks (different domains) | candidate timing/coordination, developmental pattern control | neither EEG synchrony = field nor embryo bioelectric mechanism = neural gate; analogies do not provide P1–P6 models |
 
-**Readiness R0:** a published algorithmic family (C) has source-native computation. §9 confirms concrete TEM and PBWM source locations, but **no runtime reproduction, licensing clearance for both TEM repos, matched P1–P6 data or a fair same-target E2 implementation pair has been established**. F/E/A entries require further specification before any algorithmic E2 comparison. Do not aggregate theories into an imaginary unlimited H2 model or artificially deny an actually implemented H2 its structural learning.
+**CN-2 readiness R0 (NOT an MG-1 or MG-2 completion criterion):** source-native TEM and PBWM software can be located (§9), but no author-selected E2 task family, fixed probe-readout mapping, reproductions, TEM rights clearance, matching P1–P6 data or same-target model pair exists. F/E/A entries need separately named implementations before benchmark comparison. This does not define new CN-3 unlock conditions or supersede MG-1/MG-2 owner language.
 
-## 3. Candidate card contract (paper-only checklist)
+## 3. Optional CN-2 model card contract (paper-only checklist; NOT MG-1/2 gate)
 
 A *future named implementation*, **including the shared-geometry arm**, needs these fields:
 
@@ -72,7 +72,7 @@ A *future named implementation*, **including the shared-geometry arm**, needs th
 | resources | legal information budget, feedback, action opportunity, optimizer, compute, allowed shared parameters and model complexity |
 | outcome | E2 predeclared held-out predictive gain; **compression evaluated separately only if prediction is comparably adequate**; E3 causal intervention and E4 future recursion require independent evidence |
 
-**R0 stop:** no *same explanatory target* and two sufficiently specified models = no empirically meaningful model win/loss. A good classification table is not a benchmark.
+**R0 stop for prospective CN-2 benchmarking only:** first require a specifically author-selected E2 task family and per-probe likelihood/readout definitions. Then determine whether named implementations can cover the **same explanatory target** and lawful symmetric input/budget constraints; absent those, there is no meaningful model win/loss. This checklist is **not a new MG or CN-3 gate**.
 
 ## 4. MG-2 ACCESS / CONTROL / OWNERSHIP: separate empirical and theoretical targets
 
@@ -84,7 +84,7 @@ A *future named implementation*, **including the shared-geometry arm**, needs th
 | **O2 — *judgment/attribution of agency*** | self/other attribution, deliberate responsibility judgments, separately from O1 | judgment is not identical to feeling of agency or bodily sense of ownership |
 | **O3 — *SRT Bearer–Concern consequence ownership*** | **NO DIRECT EMPIRICAL OBSERVABLE ADMITTED**. Interest, concern, history and self-description might be candidate downstream correlates only | O1, O2, control efficacy, bodily ownership, GNW ignition or L2 writeback cannot establish SRT Bearer/One/Selection |
 
-**Critical name collision:** source literature's feeling/judgment of *agency* and feeling/judgment of *body ownership* differ (Synofzik et al. 2008). MG-2's OWNER question is stronger and theory-owned: continuing Bearer/Concern/consequence organization. **Do not treat body ownership, attribution of an action to self, and SRT Bearer as equal variables.** This audit's O1/O2/O3 labels are temporary observation bookkeeping, not new SRT terms or an author ontology adjudication.
+**Critical name collision:** source literature's feeling/judgment of *agency* and feeling/judgment of *body ownership* differ (Synofzik et al. 2008). MG-2's OWNER question is stronger and theory-owned: continuing Bearer/Concern/consequence organization. **Do not treat body ownership, attribution of an action to self, and SRT Bearer as equal variables.** The existing 09-26 bridge §14 table marks OWNERSHIP `low / weak / high-ish / high` for illustrative cases; its own wording calls that table *illustrative*, **not a measured ownership scale or direct empirical O3 evidence**. This audit's O1/O2/O3 labels are temporary measurement bookkeeping, not SRT term creation or an ontology adjudication. **Whether the MG-2 audit can count as completed while O3 remains OPEN is NOT decided by this decomposition; see author question in §6.**
 
 **Dissociation stress tests (examples, not results):**
 - A+ / C−: a consciously accessible target with insufficient maintenance/allocation, or a reportable distractor. ACCESS != effective CONTROL.
@@ -95,9 +95,9 @@ A *future named implementation*, **including the shared-geometry arm**, needs th
 
 Dissociations need their own measurement validity and causal-identification assumptions before stronger evidence is asserted. GNW/Cogitate findings constrain sweeping access claims; they neither establish all GNW predictions nor disprove every GNW variant.
 
-## 5. Same-target mapping into E2, and no cross-level shortcut
+## 5. Separately routed CN-2 modeling reference (NOT MG-1 evidence or E2 task selection)
 
-The inherited E2 candidate uses P1/P2/P4 for learning and asks for held-out P3/P5/P6 predictions. The exact sensory task and actual pair of implementations remain OPEN.
+The inherited CN-2 E2 design mentions P1/P2/P4 learning and held-out P3/P5/P6, but **the concrete task family and each probe's observation/likelihood interface are not yet author-selected or fixed**. The source candidates below are **illustrations of interface mismatch**, not a preferred experiment, MG-1 deliverable, preselected relational task, or runnable E2 pairing.
 
 | Scoped job | Plausible comparator *family* | Why this is NOT a finished test |
 |---|---|---|
@@ -117,12 +117,24 @@ E2 success requires predeclared **held-out predictive improvement relative to na
 | Have those theories been specified and reproduced as equal-target P1–P6 models? | **NO demonstrated pairing**; computational native-task status != E2-readiness |
 | Does ACCESS imply control-authorized gating? | **NO**; allocation/maintenance/bias must be separately identified |
 | Does CONTROL imply feeling/judgment of agency? | **NO**; attribution evidence separated |
-| Does agency feeling/judgment imply SRT Bearer/Concern OWNERSHIP? | **NOT LICENSED; O3 remains OPEN** |
+| Does agency feeling/judgment imply SRT Bearer/Concern OWNERSHIP? | **NOT LICENSED; O3 remains OPEN**. Whether MG-2's neutral audit may close without an O3 empirical criterion = **AUTHOR DECISION PENDING**, not an audit-imposed stop or relaxation |
 | E2 new predictive gain, E3 causal gain, E4 recursive gain? | **NOT ESTABLISHED** in this audit |
-| Can CN-3 freeze, simulation or experiment start? | **NO; HOLD** under MG-1/MG-2 and independent FR-ADV, task-specific author/gate requirements |
+| Can CN-3 freeze, simulation or experiment start? | **NO; existing HOLD unchanged** under the owner MG-1/MG-2 requirements and independent FR-ADV / task-specific author conditions; **no new O3-as-experiment prerequisite is invented here** |
 | STATUS/current NEXT, HP-B, canonical, F-03 anti-tautology STOP? | **UNCHANGED** |
 
-**Completed bounded follow-up (§9):** read-only *software/model provenance* screening of published TEM and PBWM lineages, source trees and limited script interfaces. **Next possible step (still gated):** investigate and reproduce source-native models after license/runtime checks; only then define a common, symmetric prediction target, **without selecting an SRT winner, freezing the CN-3 experiment or authorizing data collection**. Require independent reviewer to verify source fidelity, any false P1–P6 coverage assumption, O1/O2/O3 distinction and the existing author Option A threshold before this audit could merge.
+**Completed bounded follow-up (§9):** read-only public-code inventory of TEM **for CN-2** and PBWM **for MG-1/MG-2**, without choosing a task. **Correct prospective order:** seek an explicit author decision on the **first E2 task family**, then define P1–P6 observables and per-probe predictive distributions/likelihoods on paper, then assess each named model's native output compatibility and legal input parity, **then** decide which code to inspect/reproduce if separately authorized. The §9 TEM/PBWM inventory is **reference material only, not a scheduled task, branch, preferred model or experimental lane**. MG-2 O3 completion-scope question separately awaits author decision (§6). Require independent review before considering merge.
+
+### 6.1 Author-only MG-2 scope decision — NOT YET ADJUDICATED
+
+**Exact unresolved owner-level question:** Programme §14 frames MG-2 as ACCESS -> CONTROL -> OWNERSHIP and places CN-3 behind MG-1/MG-2. The 09-26 bridge §14 illustratively assigns ownership to examples, but no directly admitted empirical readout establishes SRT Bearer–Concern (O3). This M-layer audit **cannot** choose the meaning of “MG-2 complete,” nor use unmeasured O3 as a newly imposed gate or waive the OWNER question.
+
+- **Option A, neutral-science deliverable split (possible author choice; NOT SELECTED):** allow the MG-2 **neutral ACCESS/CONTROL + empirical agency distinction audit** to complete on explicit source-native evidence and limitations, while O3 remains a separate OPEN SRT/Bearer issue; CN-3 stays governed by its **pre-existing** HOLD, independent FR-ADV and later separate author experiment approval. This would not count O3 as solved.
+- **Option B, owner-level completion kept unified (possible author choice; NOT SELECTED):** require a separately adjudicated ownership explanation/operational criterion before declaring MG-2 as a whole complete; without that, MG-2 overall remains unresolved, CN-3 HOLD preserved. This does NOT invent an empirical O3 proxy.
+- **Until the author decides:** mark **MG-2 COMPLETION SCOPE = PENDING AUTHOR ADJUDICATION**; neither A nor B may be written back as an established owner rule, and this audit never releases CN-3.
+
+**Separate later author choice:** choose the first specific CN-2 E2 task family *before* spending resources reproducing TEM or other code, and only then define observable P1–P6 readouts. This is **not** answered by choosing MG-2 Option A or B.
+
+---
 
 ## 7. Source-native references (bibliographic / abstract-level checks; not code replication)
 
@@ -142,8 +154,8 @@ No single cited article has been demonstrated here to pass the exact E2 P1–P6 
 
 ## 8. 外部对照三项
 
-1. **事实冲突：** 无（已核范围内未发现）。已进一步核对部分官方和第三方仓库的版本、目录、执行入口及明确的静态接口不一致，**但尚未运行模型、核验全部软件依赖或论文全文**；因此不是实现级结果验证。
-2. **内部矛盾：** 无（当前 owner/source 已核范围内未发现）。MG-2的 OWNERSHIP 存在多义风险，已将经验性 agency feeling/judgment 与理论性 Bearer 归属分层为临时 O1/O2/O3 审计项；**不是作者的新本体定义**。
+1. **事实冲突：** 无（本轮已核范围内未发现）。已进一步核对部分官方和第三方仓库的版本、目录、执行入口及明确的静态接口不一致，**但尚未运行模型、核验全部软件依赖或论文全文**；因此不是实现级结果验证。
+2. **内部矛盾：** 无（本轮已核范围内未发现作者陈述互相矛盾）。programme §14 MG-2 的OWNERSHIP要求与Bearer/Concern没有已准入经验O3读出的现状，形成**MG-2完成范围待作者裁决**的治理问题；本机器审计不得自行把O3定为CN-3新放行标准，亦不得静默豁免owner的OWNERSHIP问题。
 3. **已有说法：** 目标偏置、PBWM更新、EVC控制分配、RITL、GNW访问和两步 agency 皆为**成熟先行解释**；09-26 MG crosswalk/bridge、PH-AG02 对 access/control 和 content/structural bias 的区分与此处**完全或高度重合**；10-08 author Option A 与 CN-2 strong-H2 审计已经拥有具名同预算比较原则。**增量仅为源类型、接口完整性和可观察/不可识别范围清单**，不是 SRT 新机制或独特性的证明。
 
 ## 9. Read-only public code-provenance screen — concrete source anchors (2026-10-08)
@@ -183,6 +195,6 @@ No single cited article has been demonstrated here to pass the exact E2 P1–P6 
 | Is a strong shared-geometry **vs named H1/H2** P1–P6 E2 test now frozen? | **NO**. No common P1–P6 task adapter, predeclared per-probe likelihood, dataset/split or matched capable comparison arms |
 | Is MG-2 Bearer ownership better identified by code availability? | **NO**. CONTROL task code does not furnish an O3/Bearer readout |
 
-**Next task recommendation, NOT execution authorization:** put candidate first in the **relational source-native reproduction lane** (paper-linked TEM, independent Torch TEM implementation and honest LSTM baseline screening) rather than asserting that PBWM and TEM are direct rivals; keep **PBWM Store–Ignore–Recall** as a separate, code-backed MG-2 control study surface. Before any install or run, independently verify platform compatibility, deps, rights/license terms and code issues, then present explicit same-task capability cards for approval under existing MG/FR-ADV requirements. **Do not modify upstream repositories, patch LSTM, pick winners, or unfreeze CN-3 based on this paper-only screen.**
+**Correct decision order — NOT a new lane or execution authorization:** (1) **author selects the first CN-2 E2 task family** at a later task-specific decision; (2) under existing research governance, specify the P1–P6 probe observation models, per-probe predicted quantities/likelihoods and intended held-out generalization as **paper-only candidates**; (3) check which concrete named model's native input/output/capability can fairly cover that same target; (4) only after match, independent review, rights/runtime checks and required author gates, consider which model code is worth reproducing. §9 TEM source (CN-2) and Leabra/PBWM SIR2 (MG-1/MG-2) are **optional unscheduled references**. Do **not** presume relational task choice, patch LSTM, freeze CN-3, run experiments or lower the FR-ADV gates.
 
-**FINAL: MG-1 source-provenance screened (TEM official source, Torch version, PBWM Leabra), **no reproduction**; paper-level interface mapped / not frozen; MG-2 ACCESS/CONTROL/agency separated / no Bearer observable admitted; runnable E2 model pair NOT READY; all CN-3/experiment gates HOLD; STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.**
+**FINAL:** MG-1/MG-2 source-native control/access and empirical-agency interfaces **MAPPED FOR AUDIT ONLY** (PBWM SIR2 verified as source); TEM's original/Torch code is **CN-2 REFERENCE ONLY**. No model reproduced, E2 task family selected, per-probe likelihood frozen, E2 result measured, or O3 Bearer observable admitted. **MG-2 completion scope AUTHOR DECISION PENDING; no new release gate inferred.** All CN-3/experiment HOLD and STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.
