@@ -40,7 +40,7 @@ The present **narrow addition** is (i) to distinguish a published *computational
 
 ## 2. Named sources are not automatically runnable P1–P6 baselines
 
-**Type key:** C = specified computational-model family in a source-native task; F = theory/normative framework requiring a **specific implementation**; E = empirical paradigm/review, not a prediction engine; A = analogy from another system. Labels do NOT mean code, version, license, model weights or P1–P6 task adapter were obtained or verified.
+**Type key:** C = specified computational-model family in a source-native task; F = theory/normative framework requiring a **specific implementation**; E = empirical paradigm/review, not a prediction engine; A = analogy from another system. Labels do NOT by themselves mean that runnable code, an appropriate license, model weights, a reproduced result or a P1–P6 adapter exists. A later **read-only repository provenance screen** is recorded in §9; that screen inspects files and paths without execution.
 
 | Source / type | Native inputs and internal capability | Native output or claim | E2/MG adapter still owed |
 |---|---|---|---|
@@ -55,7 +55,7 @@ The present **narrow addition** is (i) to distinguish a published *computational
 | Haggard 2017 agency **E**, Synofzik et al. 2008 two-step agency **F** | predicted/observed consequences and multiple attribution cues | feeling/judgment of agency, empirical and conceptual distinctions | candidate agency measures, **not** H2 shared-geometry competitor or SRT Bearer readout |
 | Synchrony/neural oscillations **F**, Levin bioelectric morphogenesis **A** | temporal coupling / gap-junction and membrane-potential networks (different domains) | candidate timing/coordination, developmental pattern control | neither EEG synchrony = field nor embryo bioelectric mechanism = neural gate; analogies do not provide P1–P6 models |
 
-**Readiness R0:** a published algorithmic family (C) has source-native computation, but **no code availability, reproducibility, matching data, updated model version, exact P1–P6 output and legal runtime input has been established in this audit**. F/E/A entries require further specification before any algorithmic E2 comparison. Do not aggregate theories into an imaginary unlimited H2 model or artificially deny an actually implemented H2 its structural learning.
+**Readiness R0:** a published algorithmic family (C) has source-native computation. §9 confirms concrete TEM and PBWM source locations, but **no runtime reproduction, licensing clearance for both TEM repos, matched P1–P6 data or a fair same-target E2 implementation pair has been established**. F/E/A entries require further specification before any algorithmic E2 comparison. Do not aggregate theories into an imaginary unlimited H2 model or artificially deny an actually implemented H2 its structural learning.
 
 ## 3. Candidate card contract (paper-only checklist)
 
@@ -122,7 +122,7 @@ E2 success requires predeclared **held-out predictive improvement relative to na
 | Can CN-3 freeze, simulation or experiment start? | **NO; HOLD** under MG-1/MG-2 and independent FR-ADV, task-specific author/gate requirements |
 | STATUS/current NEXT, HP-B, canonical, F-03 anti-tautology STOP? | **UNCHANGED** |
 
-**Recommended bounded next job:** a read-only *software/model provenance* screening for a small **named pair** at one *same-target* E2 job (for example relational transfer): locate original models, licenses, executable interfaces, re-implementation limits and held-out output availability, **without selecting a winner, writing code or freezing a task**. Require independent reviewer to verify source fidelity, any false P1–P6 coverage assumption, O1/O2/O3 distinction and the existing author Option A threshold before this audit could merge.
+**Completed bounded follow-up (§9):** read-only *software/model provenance* screening of published TEM and PBWM lineages, source trees and limited script interfaces. **Next possible step (still gated):** investigate and reproduce source-native models after license/runtime checks; only then define a common, symmetric prediction target, **without selecting an SRT winner, freezing the CN-3 experiment or authorizing data collection**. Require independent reviewer to verify source fidelity, any false P1–P6 coverage assumption, O1/O2/O3 distinction and the existing author Option A threshold before this audit could merge.
 
 ## 7. Source-native references (bibliographic / abstract-level checks; not code replication)
 
@@ -138,12 +138,51 @@ E2 success requires predeclared **held-out predictive improvement relative to na
 10. Haggard (2017), *Sense of agency in the human brain*, Nature Reviews Neuroscience 18:196–207, DOI 10.1038/nrn.2017.14.
 11. Synofzik, Vosgerau & Newen (2008), *Beyond the comparator model: A multifactorial two-step account of agency*, Consciousness and Cognition 17:219–239, DOI 10.1016/j.concog.2007.03.010.
 
-No single cited article has been demonstrated here to pass the exact E2 P1–P6 battery. No code, participant data, statistical test or new training run performed.
+No single cited article has been demonstrated here to pass the exact E2 P1–P6 battery. Source trees and selected scripts were **read** (§9); no code, participant data, statistical test or new training run was executed.
 
 ## 8. 外部对照三项
 
-1. **事实冲突：** 无（已核范围内未发现）。文献标题、DOI及摘要层机制描述相符，但**未核对所有论文全文和可执行代码**；不可外推为实现级源完整验证。
+1. **事实冲突：** 无（已核范围内未发现）。已进一步核对部分官方和第三方仓库的版本、目录、执行入口及明确的静态接口不一致，**但尚未运行模型、核验全部软件依赖或论文全文**；因此不是实现级结果验证。
 2. **内部矛盾：** 无（当前 owner/source 已核范围内未发现）。MG-2的 OWNERSHIP 存在多义风险，已将经验性 agency feeling/judgment 与理论性 Bearer 归属分层为临时 O1/O2/O3 审计项；**不是作者的新本体定义**。
 3. **已有说法：** 目标偏置、PBWM更新、EVC控制分配、RITL、GNW访问和两步 agency 皆为**成熟先行解释**；09-26 MG crosswalk/bridge、PH-AG02 对 access/control 和 content/structural bias 的区分与此处**完全或高度重合**；10-08 author Option A 与 CN-2 strong-H2 审计已经拥有具名同预算比较原则。**增量仅为源类型、接口完整性和可观察/不可识别范围清单**，不是 SRT 新机制或独特性的证明。
 
-**FINAL: MG-1 paper-level interface mapped / not frozen; MG-2 ACCESS/CONTROL/agency separated / no Bearer observable admitted; runnable E2 model pair NOT READY; all CN-3/experiment gates HOLD; STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.**
+## 9. Read-only public code-provenance screen — concrete source anchors (2026-10-08)
+
+**Source class and scope:** This section checks **repository identity, Git commit pin, top-level directories, selected READMEs and script interfaces** using publicly readable GitHub contents. It is **static code inspection**, not a reproduction test, installation, code execution, vulnerability audit or a permitted-use legal opinion. The main programme remains HOLD for execution. Exact commits are pinned to prevent changes in a moving default branch from silently altering this assessment.
+
+### 9.1 TEM: source-paper code versus separately authored implementation
+
+| Artifact | Grounded identity / pin | Original task and usable interface evidence | Gaps |
+|---|---|---|---|
+| Whittington et al. Cell 2020 **paper-linked code** | [djcrw/generalising-structural-knowledge](https://github.com/djcrw/generalising-structural-knowledge/tree/fa5d533ceb6f958e890d3f1cd83e777d090ef871), `master` at **`fa5d533c`** | The Cell paper's **Data and Code Availability** section points to this repository; README identifies `tem_tf1` (TF 1.9.0) and `tem_tf2` (TF 2.3.0). `tem_tf2/run_tem.py` instantiates `tem.TEM(params)`, prepares environments/training and prediction/loss logs. Source-native graph/sequence relational learning, **not** E2 P1–P6 | No runtime reproduced; historical TensorFlow/Python compatibility untested; no root `LICENSE` file and GitHub license metadata **null** at inspected pin, so do not presume reuse rights |
+| Bakermans **third-party Torch TEM** | [jbakermans/torch_tem](https://github.com/jbakermans/torch_tem/tree/bf103fb32b5fdc7541ebbd95ba77a2d35d049d7c), `main` at **`bf103fb3`** | README explicitly says new PyTorch implementation following the paper supplement, not original-author official code. `run.py`, `model.py`, `world.py` and `envs/5x5.json` exist; `run.py` refers to that path, trains a TEM Model; README suggests Python 3.6+ / PyTorch 1.6+ | No runtime reproduced or environment lock verified; no root `LICENSE` and API license field **null** at inspected pin. Do not infer permissions from public access |
+| Torch TEM **LSTM comparison script** | Same Bakermans pin; [run_lstm.py](https://github.com/jbakermans/torch_tem/blob/bf103fb32b5fdc7541ebbd95ba77a2d35d049d7c/run_lstm.py) and [model.py](https://github.com/jbakermans/torch_tem/blob/bf103fb32b5fdc7541ebbd95ba77a2d35d049d7c/model.py) | Defines an `LSTM` class, sequence prediction and loss on next observation. This is a **possible same-domain comparator skeleton** (graph walks), **not** evidence of a validated fair model bake-off | **Two static inconsistencies:** `run_lstm.py` points at `./graphs/5x5.json`, while the checked repo contains `envs/5x5.json` and no top-level `graphs`; it calls `parameters.parameters(grid)`, whereas checked `parameters.py` defines `def parameters():` without positional parameters. The positional `world.World(...,45)` also maps the value to a boolean-style optional parameter rather than the original `World` task count. Do **not** claim `run_lstm.py` runs as supplied; independently recheck and propose fixes only in a separately authorized task |
+
+**Important competitor distinction:** A Torch TEM model and the paper-linked TensorFlow TEM represent **implementations of the same model lineage**, so they may be used for a reproduction/cross-implementation check, **not** counted as unrelated competing model families. A simple LSTM next-observation predictor in the same repository may support a **source-native graph-sequence baseline** once repaired and budget-matched, but it is not by itself a *strong structure-learning H2 substitute* and is **not the prospective CN-2 P1–P6 task**. TEM-as-H2 itself can contain/shared relational geometry; a model-relative win does not establish an independent H3 mechanism.
+
+### 9.2 PBWM: actual gate-learning model, different task
+
+| Artifact | Verified source and pin | Native implementation/outputs | No automatic E2 implication |
+|---|---|---|---|
+| Leabra/Comp Cog Neuro **PBWM** | [emer/leabra](https://github.com/emer/leabra/tree/d88c85456952aa40cd29824788befb376dc2b8bc), `main` at **`d88c8545`**; repository declares **BSD-3-Clause**, root LICENSE present | README documents special PBWM layer/path types; [examples/sir2](https://github.com/emer/leabra/tree/d88c85456952aa40cd29824788befb376dc2b8bc/examples/sir2/README.md) describes a concrete **Store / Ignore / Recall** task, BG gating what PFC maintains, with variable distractors and phasic dopamine learning | **MG-2 CONTROL-native** target: working-memory gating and recall; NOT tested P1–P6 geometry and not a fair opponent to TEM in its native graph navigation task |
+| Newer Leabra lineage | [emer/axon](https://github.com/emer/axon/tree/774c01e1f525d4ddc97b4f302f14d0c3db7c8a7e), `main` at **`774c01e1`**, BSD-3-Clause; Leabra README recommends migration and calls Leabra algorithmically frozen | `axon/PCoreBG.md` details a **different/current basal-ganglia implementation** and `sims/pfcmaint`, `sims/bgdorsal` native-task directories exist | Do **not** relabel current PCore BG as the exact historical 2006 PBWM implementation or claim direct empirical equivalence without a source-native model/version trace |
+
+**Capability fairness:** PBWM's demonstrated action is *maintenance/update of a working-memory content*, not arbitrary generation of latent relational geometry. Recasting TEM relation learning and PBWM Store–Ignore–Recall as if they jointly score the same out-of-the-box outcome would violate **same-target** author Option A.
+
+### 9.3 Results of the source-read gate
+
+| Question | Exact result |
+|---|---|
+| Is an **original-paper-linked TEM implementation** public? | **YES: source paper explicitly points to `djcrw/generalising-structural-knowledge`; TF1/TF2 source** |
+| Is there an independently coded Torch TEM source? | **YES: Bakermans `torch_tem`, third-party author-acknowledged; not yet reproduced** |
+| Is there a source-native LSTM comparator scaffold? | **YES, but `run_lstm.py` shows static path/signature mismatches; NOT runtime-ready on evidence inspected** |
+| Is an independently useful PBWM native code/task available? | **YES: Leabra `examples/sir2`, BG/PFC Store–Ignore–Recall; BSD-3-Clause metadata** |
+| Are code licenses confirmed for both TEM repositories? | **NO**. At inspected pins, root trees lacked `LICENSE` and GitHub license API returned null. This is a **rights-clearance unknown**, not proof of absent copyright permission or prohibited academic reading |
+| Is either TEM or PBWM reproduced in this project? | **NO**. No dependency installation, execution, dataset reproduction, weight check, test or observed metric |
+| Can TEM **vs PBWM** be the first direct comparison? | **NO**: different native tasks, outputs and legal information; comparing papers is not comparing two implementations on one target |
+| Is a strong shared-geometry **vs named H1/H2** P1–P6 E2 test now frozen? | **NO**. No common P1–P6 task adapter, predeclared per-probe likelihood, dataset/split or matched capable comparison arms |
+| Is MG-2 Bearer ownership better identified by code availability? | **NO**. CONTROL task code does not furnish an O3/Bearer readout |
+
+**Next task recommendation, NOT execution authorization:** put candidate first in the **relational source-native reproduction lane** (paper-linked TEM, independent Torch TEM implementation and honest LSTM baseline screening) rather than asserting that PBWM and TEM are direct rivals; keep **PBWM Store–Ignore–Recall** as a separate, code-backed MG-2 control study surface. Before any install or run, independently verify platform compatibility, deps, rights/license terms and code issues, then present explicit same-task capability cards for approval under existing MG/FR-ADV requirements. **Do not modify upstream repositories, patch LSTM, pick winners, or unfreeze CN-3 based on this paper-only screen.**
+
+**FINAL: MG-1 source-provenance screened (TEM official source, Torch version, PBWM Leabra), **no reproduction**; paper-level interface mapped / not frozen; MG-2 ACCESS/CONTROL/agency separated / no Bearer observable admitted; runnable E2 model pair NOT READY; all CN-3/experiment gates HOLD; STATUS/CURRENT NEXT/canonical/HP-B/anti-tautology STOP unchanged.**
