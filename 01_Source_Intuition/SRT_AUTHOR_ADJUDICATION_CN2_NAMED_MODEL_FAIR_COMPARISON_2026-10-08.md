@@ -36,7 +36,11 @@ This is **explicit author selection of A** for the cognition research programme'
 
 Keep the root author-owned question of how pre-object cognitive organization forms, unifies, normalizes and recursively reconstructs. For the existing neutral CN-2 empirical discriminator only:
 
-> Can a **named and specified shared-geometry implementation** explain or prospectively predict coordinated changes across multiple local grouping, boundary and transition probes with **incremental held-out predictive, compression or causal-intervention utility** over **named and capability-declared H1/H2 model implementations**, under matched legitimate observations, adaptive/model-structure permissions, split design, and data/complexity/computation budgets? Does the same declared organizational model prospectively predict later recutting after consequences feed back?
+> **E2 — prediction:** Under matched legitimate observations, declared model/structure-learning capabilities, held-out split design and data/complexity/computation budgets, can a **named and specified shared-geometry implementation** improve **prespecified held-out prediction** of coordinated grouping, boundary and transition probes relative to **named and capability-declared H1/H2 model implementations**?
+>
+> **E2 — supplementary compression assessment:** At **comparable held-out predictive adequacy**, does it use a simpler or more compressed representation? Compression is separately scored, **not an alternative path to E2 predictive PASS**.
+>
+> **E3 — causality:** Does a separately justified intervention establish prospective causal leverage? **E4 — recursion:** Does the declared organization predict later recutting after consequences feed back? E3/E4 require their existing additional gates and are not satisfied by E2 alone.
 
 Each comparator may use its **specified, implementable** structure-learning or representation-revision capability. Do not weaken H2 to a fixed latent-state label or inflate it to an unimplemented universal super-family. No blanket 'H3 outperforms H2 family' statement: H3 is a consequence/description level that can be realized through H1/H2 and may be their coordinate/readout.
 
@@ -54,7 +58,7 @@ Each comparator may use its **specified, implementable** structure-learning or r
 
 ## 4. Editorial implementation and review
 
-Scope of authorized synchronization: STATUS immediate routing note; current cognition programme's immediate discriminator and CN-2 comparison line; 09-26 H1/H2/H3 classification's E2 and comparative question; E2-E4 candidate's PASS/baseline comparator guard. The review of #1107 remains a separate noncanonical audit and is not silently merged here.
+Scope of authorized synchronization: STATUS immediate routing note; current cognition programme's immediate discriminator and CN-2 comparison line; 09-26 H1/H2/H3 classification's E2 and comparative question; E2-E4 candidate's PASS/baseline comparator guard; and **routing-only corrections** in three known downstream companions that quote the historical discriminator (09-29 music E2 adversarial packet, 09-29 music bounded research route, 09-30 distributed-consciousness E2-E4 bridge). These downstream notes preserve their historical quotations as provenance and point to this 10-08 author source as the controlling comparator scope, without new theoretical claims. The review of #1107 remains a separate noncanonical audit and is not silently merged here.
 
 No numerical benchmark threshold, no pre-registered split, no machine-only model choice or cross-domain transfer claim is invented. Any future experimental freeze remains subject to governing gates and independent review.
 
