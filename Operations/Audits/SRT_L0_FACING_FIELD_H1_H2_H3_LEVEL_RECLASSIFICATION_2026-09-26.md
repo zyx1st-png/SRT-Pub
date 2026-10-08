@@ -10,6 +10,7 @@ created: 2026-09-26
 updated: 2026-09-26
 research_mode: U
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_L0_FACING_ATTRACTOR_FIELD_FORMATION_CORRECTION_2026-09-26.md
   - 01_Source_Intuition/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_RULING_2026-09-09.md
   - Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_PRESSURE_PASS3_2026-09-09.md
@@ -354,7 +355,7 @@ Require H3-level structure to predict held-out:
 - generalization;
 - anomaly detection
 
-better than strong local-feature and latent-state baselines.
+with **model-relative** held-out prediction/compression benefit over **named and capability-declared local-feature (H1) and latent/model-structure (H2) implementations**, using matched legitimate information and data/complexity/computation budgets (2026-10-08 author Option A). H3 is the effective-geometry description level, not a competing mechanism or an implementation that must beat every possible H2 model.
 
 Supports:
 
@@ -440,9 +441,9 @@ but this phrase must be operationalized.
 
 Candidate neutral criterion:
 
-> After a declared history manipulation, does one low-dimensional / structured change in effective geometry jointly explain changes in multiple local equivalence, grouping, transition and objectification probes better than independent local updates and strong latent-state models?
+> Following a declared history manipulation, does a **specified, named shared-geometry implementation** better predict or more compactly explain coordinated equivalence/grouping/transition/objectification readouts than **named, capable H1/H2 model implementations**, with matched training observations, permitted structural learning and resource budgets?
 
-This is testable.
+This is a concrete, model-relative neutral comparison (2026-10-08 author Option A), not a universal assertion that H3 beats a full H2 family. H3 can be realized within H2 via a shared latent geometry; coordinate-equivalent predictions cannot prove a separate H3 mechanism. It becomes testable only after the named models and data/holdout budgets are declared.
 
 But it remains compatible with:
 - representation learning;
@@ -473,7 +474,7 @@ What H3 whole-system geometry changes?
 Can H3 be fully reconstructed from H1/H2 with no loss?
 
 ### Increment test
-Does an H3 variable / operator add held-out prediction or causal leverage?
+Does a **specified shared-geometry implementation** add held-out prediction, compression or causal leverage beyond **specified, capable H1/H2 implementations** under fair inputs, hypothesis-space update permissions and compute budgets? Do not pose this as H3 versus every possible H2 model.
 
 ### Recursive test
 Does consequence-induced H3 change predict the next round of objectification?
@@ -493,9 +494,9 @@ Do not search for a phenomenon where geometry merely changes.
 Search for a design where one history / consequence manipulation causes a coordinated reorganization across several different local probes while:
 
 - current local stimuli are matched;
-- explicit rule knowledge is matched;
+- **pre-manipulation** explicit knowledge and baseline skill are measured and balanced where causally appropriate; post-manipulation knowledge is an outcome/mediator candidate, not an automatically safe matching or selection variable;
 - local transition frequencies are matched where feasible;
-- a strong latent-state / generative-model baseline is fitted;
+- **named H1/H2 implementations** with declared abilities to revise latent partitions/features/model structure are compared under matched available information and resource budgets;
 - the same inferred H3 geometry predicts held-out objectification / grouping / transition outcomes.
 
 Candidate domains:
@@ -507,9 +508,9 @@ Candidate domains:
 
 Preferred first formal question:
 
-> **Is there a common geometry transformation that explains multiple recutting effects better than task-specific local updates or a single fitted latent-state label?**
+> **Can a named, specified shared-geometry representation predict or compress multiple held-out recutting effects more effectively than named and capable local-update and latent/model-structure-learning implementations under comparable data and computational budgets?**
 
-This is the next valid neutral target.
+This 2026-10-08 author-approved **scoped comparator wording** replaces the weak 'single fitted latent-state label' as an immediate criterion; the original is retained as historical provenance in earlier versions. The larger whole-field research target remains unchanged, the E2-E3-E4 ladder is not accelerated, and no positive model or SRT ontic gain is presumed.
 
 ---
 
