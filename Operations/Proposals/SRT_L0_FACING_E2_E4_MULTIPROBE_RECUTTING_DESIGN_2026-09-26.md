@@ -10,6 +10,7 @@ created: 2026-09-26
 updated: 2026-09-26
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
   - Operations/Audits/SRT_AUTHOR_REENTRY_CYCLE2_PREOBJECT_FIELD_RECONSTITUTION_PRESSURE_PASS4_2026-09-09.md
@@ -122,9 +123,10 @@ Example:
 Important:
 
 ~~~text
-same item set
-similar local frequencies
+same training item set across A/B worlds
+similar local training frequencies
 different consequence topology
++ a separately preregistered and untouched novel item/combination pool if unseen-stimulus transfer is claimed
 ~~~
 
 The manipulation is not merely a verbal rule instruction.
@@ -195,15 +197,20 @@ Fit a shared geometry from only a subset of probes.
 For example:
 
 ~~~text
-train geometry on:
+train a **named** geometry implementation on:
 P1 similarity
 + P2 grouping
 + P4 transitions
 
-predict held-out:
+predict held-out **probe types**:
 P3 boundary
 + P5 anomaly
 + P6 transfer
+
+also declare whether stimuli are:
+- previously seen (cross-probe prediction)
+- untouched novel combinations/relations (unseen-stimulus generalization)
+and whether context/time/participant groups were independently held out
 ~~~
 
 Candidate geometry representations:
@@ -213,11 +220,11 @@ Candidate geometry representations:
 - context-conditioned transition kernel;
 - manifold with learned local neighborhoods.
 
-E2 PASS requires:
+E2 prospective PASS candidate (2026-10-08 **author Option A**; NOT preregistered or executed):
 
-> a common geometry predicts held-out local outcomes better than strong probe-specific local models.
+> A **named, specified shared-geometry implementation** produces a prespecified held-out predictive, cross-probe compression or subsequent intervention-forecast benefit relative to **named, capable H1/H2 implementation baselines**, under matched legal training observations, model-structure learning permissions, meaningful splits, prior-knowledge accounting and data/complexity/computation budgets.
 
-This only establishes predictive organizational value.
+This is a **concrete model-relative** comparison, never an assertion that H3 beats the unrestricted H2 family: shared geometry can itself be a latent/representational H2 readout. Split P1/P2/P4 to P3/P5/P6 measures cross-probe prediction on familiar stimuli only unless **untouched novel items/combinations/relations** are reserved before training and model selection. A forward-time split is additionally required when forecasting learning/revaluation and later recutting. No numerical PASS threshold, benchmark implementation or experiment authorization is supplied by this clarification. E2 positive gain remains NOT ESTABLISHED and this design remains HOLD.
 
 ---
 
@@ -256,13 +263,13 @@ Allow:
 - context-conditioned RL;
 - low-dimensional latent embeddings.
 
-H2 must be allowed to change state partitions and representation basis.
+H2 must be allowed to change state partitions and representation basis, including **source-native declared model-structure revision, exploration and relational/compositional transfer where applicable**. Any named H2 implementation is judged only on its actually implemented or prospectively specified abilities and resource budgets; no all-capable hypothetical H2 family is treated as a single testable baseline.
 
-Do not define H2 as fixed-state prediction.
+Do not define H2 as fixed-state prediction; neither give shared geometry privileged probe outcomes/knowledge nor force H2 to a single fitted latent-state label. The matched-model comparison is governed by the 2026-10-08 author decision linked in the frontmatter.
 
 ### H2 absorption rule
 
-If a strong latent / generative model:
+If a **named, capable** latent / generative model under fairly matched training data, test-time information and resource budgets:
 - predicts all probes;
 - captures context switches;
 - generalizes to novel combinations;
@@ -365,7 +372,7 @@ Before multi-probe testing, measure:
 - explicit category report;
 - transition knowledge.
 
-Where possible, select / weight participants or trials so groups are matched on explicit knowledge.
+**Do not select or reweight participants/trials to match explicit knowledge measured AFTER the World A/B intervention without an identified causal estimand and bias analysis.** Such conditioning can create post-treatment / collider selection bias, not just remove confounding. Prefer randomization of World assignment, prespecified pre-intervention skill/knowledge measures, and transparent reports of post-intervention knowledge as an outcome or sensitivity analysis. A distinct post-treatment controlled-effect question requires its own causal identification plan; this note does not supply one.
 
 Then ask:
 
