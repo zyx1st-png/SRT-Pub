@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: machine_analysis
 claim_mode: research_audit
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-08
 research_mode: U
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
