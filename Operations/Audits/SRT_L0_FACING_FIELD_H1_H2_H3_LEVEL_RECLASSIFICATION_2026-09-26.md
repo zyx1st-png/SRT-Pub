@@ -355,7 +355,7 @@ Require H3-level structure to predict held-out:
 - generalization;
 - anomaly detection
 
-with **model-relative** held-out prediction/compression benefit over **named and capability-declared local-feature (H1) and latent/model-structure (H2) implementations**, using matched legitimate information and data/complexity/computation budgets (2026-10-08 author Option A). H3 is the effective-geometry description level, not a competing mechanism or an implementation that must beat every possible H2 model.
+with **model-relative improvement in prespecified held-out prediction** over **named and capability-declared local-feature (H1) and latent/model-structure (H2) implementations**, using matched legitimate information and data/complexity/computation budgets (2026-10-08 author Option A). **Compression is scored separately only when predictive adequacy is comparable; compression alone is not E2 PASS.** Causal intervention and recursive recutting remain E3 and E4. H3 is the effective-geometry description level, not a competing mechanism or an implementation that must beat every possible H2 model.
 
 Supports:
 
@@ -441,7 +441,7 @@ but this phrase must be operationalized.
 
 Candidate neutral criterion:
 
-> Following a declared history manipulation, does a **specified, named shared-geometry implementation** better predict or more compactly explain coordinated equivalence/grouping/transition/objectification readouts than **named, capable H1/H2 model implementations**, with matched training observations, permitted structural learning and resource budgets?
+> Following a declared history manipulation, does a **specified, named shared-geometry implementation** improve **prespecified held-out prediction** of coordinated equivalence/grouping/transition/objectification readouts over **named, capable H1/H2 model implementations**, with matched training observations, permitted structural learning and resource budgets? If held-out predictive adequacy is comparable, does it also give a **separately scored compression advantage**? Intervention (E3) and recursive (E4) success require their own tests.
 
 This is a concrete, model-relative neutral comparison (2026-10-08 author Option A), not a universal assertion that H3 beats a full H2 family. H3 can be realized within H2 via a shared latent geometry; coordinate-equivalent predictions cannot prove a separate H3 mechanism. It becomes testable only after the named models and data/holdout budgets are declared.
 
@@ -474,7 +474,7 @@ What H3 whole-system geometry changes?
 Can H3 be fully reconstructed from H1/H2 with no loss?
 
 ### Increment test
-Does a **specified shared-geometry implementation** add held-out prediction, compression or causal leverage beyond **specified, capable H1/H2 implementations** under fair inputs, hypothesis-space update permissions and compute budgets? Do not pose this as H3 versus every possible H2 model.
+**E2:** Does a **specified shared-geometry implementation** improve **prespecified held-out prediction** beyond **specified, capable H1/H2 implementations** under fair inputs, hypothesis-space update permissions and compute budgets? Evaluate compression separately **only at comparable predictive adequacy**. **E3:** assess causal leverage through a separate intervention test, not as E2's alternative success route. Do not pose this as H3 versus every possible H2 model.
 
 ### Recursive test
 Does consequence-induced H3 change predict the next round of objectification?
@@ -508,7 +508,7 @@ Candidate domains:
 
 Preferred first formal question:
 
-> **Can a named, specified shared-geometry representation predict or compress multiple held-out recutting effects more effectively than named and capable local-update and latent/model-structure-learning implementations under comparable data and computational budgets?**
+> **Can a named, specified shared-geometry representation improve prespecified held-out prediction of multiple recutting effects relative to named and capable local-update and latent/model-structure-learning implementations under comparable information and computational budgets?** Report any compression advantage separately **only when predictive adequacy is comparable**. Intervention and recursion remain E3 and E4, not alternate E2 PASS criteria.
 
 This 2026-10-08 author-approved **scoped comparator wording** replaces the weak 'single fitted latent-state label' as an immediate criterion; the original is retained as historical provenance in earlier versions. The larger whole-field research target remains unchanged, the E2-E3-E4 ladder is not accelerated, and no positive model or SRT ontic gain is presumed.
 
