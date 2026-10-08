@@ -7,7 +7,7 @@ layer: operations
 epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
-updated: 2026-09-27
+updated: 2026-10-08
 priority: high
 research_mode: U_to_TEST
 dependency:
