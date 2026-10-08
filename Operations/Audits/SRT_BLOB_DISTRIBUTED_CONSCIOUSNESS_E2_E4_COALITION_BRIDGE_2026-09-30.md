@@ -7,13 +7,14 @@ layer: operations
 epistemic_layer: machine_analysis
 claim_mode: research_audit
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-08
 research_mode: U
 root_question: Can Skipper et al.'s distributed / context-sensitive consciousness meta-analysis supply a useful neural-analysis bridge for the existing neutral cognition E2-E4 programme without being overread as direct SRT or HP-B evidence?
 comparative_claim: neural-method routing and failure conditions only; no SRT superiority, novelty or consciousness-admission claim
 named_comparator: "GNW; IIT; active inference / predictive processing; latent-state / representation learning; ordinary distributed network dynamics"
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - Materials/2026/SRC_2026_09_30_Neuro_Skipper_Distributed_ContextSensitive_Consciousness.md
   - Glossary/SRT_Live_Term_Router.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
@@ -80,6 +81,8 @@ EXPERIMENT / PREREGISTRATION = NO
 The existing cognition programme already owns the downstream prospective question:
 
 > Can one inferred whole-system geometry / orientation transformation explain coordinated changes across multiple local objectification / grouping / transition probes better than strong local-update and latent-state models, and does that organization predict the next round of recutting after consequences feed back?
+
+**2026-10-08 comparator routing correction:** The quoted cognition-programme question above preserves the **historical 09-27 formulation**. For current CN-2 execution, use the author's Option A source (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md`): compare **named, capability-declared implementations**, with held-out prediction governing E2, compression only scored at comparable prediction, interventions separately assessed at E3, and recursion at E4. This neural-method bridge gains no ontology or experiment authority from that correction.
 
 The existing E2-E4 design already requires:
 
