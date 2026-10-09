@@ -7,10 +7,11 @@ layer: operations
 epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
-updated: 2026-10-08
+updated: 2026-10-09
 priority: high
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
@@ -152,6 +153,18 @@ This is a **bounded comparison of concrete model implementations**, not a victor
 
 The root pre-object whole-field formation/unity/normalization/recursive reconstitution question, existing E2 -> E3 -> E4 evidence ladder, single CURRENT NEXT, CN-3 HOLD, MG-1/MG-2 and Facing/FR-ADV gates remain unchanged. The 2026-09-27 author-source wording is retained historically, not silently rewritten. This section controls repository execution over the historical routing notes below.
 
+
+### 0.0c.1 2026-10-09 author choice — FIRST CN-2 E2 paper task family A
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md`.
+
+After independent review of the A/B/C/D E2 task-family choice packet, the author answered verbatim **"顺着来，先 A"**. **The FIRST paper-only CN-2 E2 task family is now A: consequence-driven multiattribute concept/category learning and associated representational/behavioral recutting.** This selects the *kind of task to examine on paper*, not a particular runnable experiment, shared-geometry architecture, GCM/ALCOVE/SUSTAIN baseline implementation, dataset or experiment start. The earlier `2026-10-08 author Option A` in §0.0c governs **named-model FAIR COMPARISON** and is **a different decision**; MG-1/MG-2 options A are also distinct.
+
+**Next bounded paper analysis, not an experiment authorization:** examine whether one recorded consequence/history in a parameterized stimulus task can supply *legitimate behavioral* P1 similarity, P2 grouping, P3 morph boundary, P4 transition forecast, P5 subjective anomaly and P6 **new action/affordance transfer** prediction. The preexisting GCM/MDS, ALCOVE, SUSTAIN, Goldstone, Mack 2016 and Ashby 2020 literature forms **strongest-neighbor pressure**: category judgments from a psychological space, feedback attention reweighting and **similarity-to-category generalization** are already known and **not automatically a novel whole-field effect**. In particular Ashby's generalization of category labels is *P6-adjacent*, **not yet the owner-defined action P6**. Mark each prospective probe `SOURCE-NATIVE / ADAPTABLE / MISSING / UNKNOWN`, identify real human/agent observations and potential leakage-safe heldouts. This does **not** freeze likelihoods, pick a candidate model, reserve a dataset or require all-six observations before meaningful paper triage.
+
+**No shortcut to E2 gain:** any eventual E2 predictive increment needs named, implementable capable H1/H2 rivals with matched allowed information, structure-learning permissions and compute/data budgets, and prespecified held-out **PREDICTION**; compression alone does not pass. If nothing beyond the strongest category learners' predictions remains, report `NO LOCAL COMPARATIVE INCREMENT` for that exact job, or `NOT READY` where observations cannot be defined. E3 intervention, E4 recursive evidence and full W1–W4 remain separate higher burdens.
+
+**Scope/HOLD:** only one CURRENT NEXT; **CN-3/toy, model reproduction, code experiments, preregistration, participant/data collection remain HOLD** under previous MG-1/MG-2, FR-ADV and express author requirements. **MG-1 eight-family review stays unscheduled**; its order relative to further CN-2 steps was not resolved by selecting this task family. Options B/C/D are not selected and are not automatically scheduled. Older programme notes saying the first E2 task family is undecided are **historical as-of 2026-10-08**, superseded only for this narrow family choice; P1–P6 likelihoods and all actual model implementations are still undecided.
 
 ### 0.0d 2026-10-04 unfinished-direction companion — routing only
 
