@@ -1,7 +1,7 @@
 ---
 id: SRT-NEURO-SLEEP-POPULATION-NULL-CALIBRATION-PREREGISTRATION-20261009
 type: experiment-preregistration
-status: draft_review_required
+status: draft
 record_stage: proposal_only_not_frozen_no_execution
 date: 2026-10-09
 programme: SRT Neuro Objectification–Scale Stability
