@@ -1,0 +1,837 @@
+{
+  "protocol": "RIKEN_SLEEP_POPULATION_SIZE_SCALING_2026-09-24",
+  "preregistration_commit": "c317d97f",
+  "execution_status": "complete",
+  "completed_jobs": 6006,
+  "total_jobs": 6006,
+  "target_grid": [
+    100,
+    150,
+    225,
+    340,
+    510,
+    765,
+    1150,
+    1725,
+    2600,
+    3900
+  ],
+  "subset_repeats_per_finite_target": 100,
+  "louvain_repeats_per_graph": 200,
+  "effective_worker_configuration": "timestamp=2026-10-09T14:32:10+0800\npython=3.14.0\nplatform=macOS-15.7.4-arm64-arm-64bit-Mach-O\nnumpy=2.5.3\nnetworkx=3.6.1\npython_louvain=unknown\nworkers=8\nrepeats=200\nsubsample_repeats=100\n",
+  "python_louvain_distribution_version": "0.16",
+  "runtime_code_sha256": {
+    "population_size_scaling.py": "0e7af206456348b9eb91d5771d7cd4d18fe312ea4508b71a5772d7a47370b625",
+    "multirecording_primary.py": "2421e4e21655199378aad81242aa1d0a5a02ba94a39c5cb83e0942689faa55f5"
+  },
+  "data_inventory": [
+    {
+      "recording_id": "mouse01_sleep",
+      "animal_id": "mouse01",
+      "filename": "mouse01_sleep.mat",
+      "bytes": "658474258",
+      "sha256": "a73526ff842633816a7d03f2578eaeb398fd928c9c2b4a62a2496273dc3c59e6",
+      "signal_shape": "9350x7843",
+      "accepted_neurons": "7843",
+      "wake_frames": "2359",
+      "nrem_frames": "5027",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    },
+    {
+      "recording_id": "mouse02_sleep",
+      "animal_id": "mouse02",
+      "filename": "mouse02_sleep.mat",
+      "bytes": "1093789677",
+      "sha256": "e7f283390791c5fbeade9dc2f579d9e89c772a46afcb7f36636d8d081bf99934",
+      "signal_shape": "18700x6574",
+      "accepted_neurons": "6574",
+      "wake_frames": "7000",
+      "nrem_frames": "8375",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    },
+    {
+      "recording_id": "mouse03_sleep",
+      "animal_id": "mouse03",
+      "filename": "mouse03_sleep.mat",
+      "bytes": "1197235306",
+      "sha256": "dcac3d396edcb188e88a7e1ff91efe335c904e9defdf2d26c11c36281bcb4277",
+      "signal_shape": "18700x7112",
+      "accepted_neurons": "7112",
+      "wake_frames": "1549",
+      "nrem_frames": "12527",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    },
+    {
+      "recording_id": "mouse04_day1_sleep",
+      "animal_id": "mouse04",
+      "filename": "mouse04_day1_sleep.mat",
+      "bytes": "1625754526",
+      "sha256": "3d78be67a6a192c511a41520062f6621b898661d2a2bc127e3f13012fb24ace3",
+      "signal_shape": "18700x9612",
+      "accepted_neurons": "9612",
+      "wake_frames": "2008",
+      "nrem_frames": "11502",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    },
+    {
+      "recording_id": "mouse04_day2_sleep",
+      "animal_id": "mouse04",
+      "filename": "mouse04_day2_sleep.mat",
+      "bytes": "2254368168",
+      "sha256": "84c843c06006a283a9df7fc3e081c550500e52909bafc96533b91861130f02c7",
+      "signal_shape": "24000x10197",
+      "accepted_neurons": "10197",
+      "wake_frames": "9235",
+      "nrem_frames": "6557",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    },
+    {
+      "recording_id": "mouse05_sleep",
+      "animal_id": "mouse05",
+      "filename": "mouse05_sleep.mat",
+      "bytes": "1263665343",
+      "sha256": "973c27b3e27451d153c108b1ad38e447b749622ac58de2c6c0c0c01ccb380181",
+      "signal_shape": "19000x7355",
+      "accepted_neurons": "7355",
+      "wake_frames": "9146",
+      "nrem_frames": "5660",
+      "finite_targets": "100;150;225;340;510;765;1150;1725;2600;3900"
+    }
+  ],
+  "source_data_sha256_by_filename": {
+    "mouse01_sleep.mat": "a73526ff842633816a7d03f2578eaeb398fd928c9c2b4a62a2496273dc3c59e6",
+    "mouse02_sleep.mat": "e7f283390791c5fbeade9dc2f579d9e89c772a46afcb7f36636d8d081bf99934",
+    "mouse03_sleep.mat": "dcac3d396edcb188e88a7e1ff91efe335c904e9defdf2d26c11c36281bcb4277",
+    "mouse04_day1_sleep.mat": "3d78be67a6a192c511a41520062f6621b898661d2a2bc127e3f13012fb24ace3",
+    "mouse04_day2_sleep.mat": "84c843c06006a283a9df7fc3e081c550500e52909bafc96533b91861130f02c7",
+    "mouse05_sleep.mat": "973c27b3e27451d153c108b1ad38e447b749622ac58de2c6c0c0c01ccb380181"
+  },
+  "validation": {
+    "job_count": 6006,
+    "window_graphs": 49049,
+    "all_jobs_complete": true,
+    "all_graphs_have_200_q_trials": true,
+    "all_q_max_values_match_trial_maxima": true,
+    "window_counts_by_recording": {
+      "mouse01_sleep": {
+        "wake": 1,
+        "NREM": 3
+      },
+      "mouse02_sleep": {
+        "wake": 4,
+        "NREM": 5
+      },
+      "mouse03_sleep": {
+        "wake": 1,
+        "NREM": 8
+      },
+      "mouse04_day1_sleep": {
+        "wake": 1,
+        "NREM": 7
+      },
+      "mouse04_day2_sleep": {
+        "wake": 6,
+        "NREM": 4
+      },
+      "mouse05_sleep": {
+        "wake": 6,
+        "NREM": 3
+      }
+    },
+    "accepted_neurons_by_recording": {
+      "mouse01_sleep": 7843,
+      "mouse02_sleep": 6574,
+      "mouse03_sleep": 7112,
+      "mouse04_day1_sleep": 9612,
+      "mouse04_day2_sleep": 10197,
+      "mouse05_sleep": 7355
+    },
+    "seed_examples": {
+      "mouse01_sleep": {
+        "actual_seed": 635240748,
+        "preregistered_numeric_N_seed": 2046770659
+      },
+      "mouse02_sleep": {
+        "actual_seed": 912237860,
+        "preregistered_numeric_N_seed": 2060364916
+      },
+      "mouse03_sleep": {
+        "actual_seed": 210638059,
+        "preregistered_numeric_N_seed": 22518005
+      },
+      "mouse04_day1_sleep": {
+        "actual_seed": 1233146577,
+        "preregistered_numeric_N_seed": 573670191
+      },
+      "mouse04_day2_sleep": {
+        "actual_seed": 1020964656,
+        "preregistered_numeric_N_seed": 428509053
+      },
+      "mouse05_sleep": {
+        "actual_seed": 1811738390,
+        "preregistered_numeric_N_seed": 32688115
+      }
+    },
+    "louvain_seed_ledger": ".local/phase2_population_size_scaling/louvain_seed_ledger.jsonl.gz"
+  },
+  "result_blind_execution_deviation": {
+    "kind": "deterministic_subset_seed_namespace_label",
+    "preregistered_seed_component": "numeric target_N, e.g. 100",
+    "implemented_seed_component": "string target label, e.g. N100",
+    "seed_root_and_uniform_without_replacement_sampling": "unchanged",
+    "example_actual_vs_numeric_seed": {
+      "mouse01_sleep": {
+        "actual_seed": 635240748,
+        "preregistered_numeric_N_seed": 2046770659
+      },
+      "mouse02_sleep": {
+        "actual_seed": 912237860,
+        "preregistered_numeric_N_seed": 2060364916
+      },
+      "mouse03_sleep": {
+        "actual_seed": 210638059,
+        "preregistered_numeric_N_seed": 22518005
+      },
+      "mouse04_day1_sleep": {
+        "actual_seed": 1233146577,
+        "preregistered_numeric_N_seed": 573670191
+      },
+      "mouse04_day2_sleep": {
+        "actual_seed": 1020964656,
+        "preregistered_numeric_N_seed": 428509053
+      },
+      "mouse05_sleep": {
+        "actual_seed": 1811738390,
+        "preregistered_numeric_N_seed": 32688115
+      }
+    },
+    "outcome_inspected_before_completion": false,
+    "interpretation": "The deterministic subset membership differs from the literal numeric-N seed recipe. Sampling remains uniform without replacement under fixed deterministic seeds; estimand and planned summaries are unchanged. This is disclosed and is not treated as exact seed-recipe compliance."
+  },
+  "kiyooka_anchor": {
+    "status": "ANCHOR-UNRESOLVED",
+    "reason": "The exact session-specific active-neuron anchor used by the Kiyooka network-size-matched control was not faithfully recoverable from the available source/method record; no approximation was substituted."
+  },
+  "animal_slopes_and_primary": {
+    "animals": {
+      "mouse01": {
+        "beta_n": 0.034382938684527305,
+        "spearman_rho": 0.9878787878787878,
+        "full_delta_q": 0.0516113441121947,
+        "full_accepted_neurons_by_session": "7843",
+        "smallest_n": 100,
+        "smallest_n_delta_q": 0.006454036458333312,
+        "finite_n_delta_q_range": [
+          0.004992824074074087,
+          0.055154559346235976
+        ],
+        "zero_crossing_brackets": [],
+        "n_points_in_slope": 10,
+        "positive_beta": true
+      },
+      "mouse02": {
+        "beta_n": 0.02816139285357094,
+        "spearman_rho": 0.9030303030303028,
+        "full_delta_q": 0.03053673314102434,
+        "full_accepted_neurons_by_session": "6574",
+        "smallest_n": 100,
+        "smallest_n_delta_q": 0.011949472656250043,
+        "finite_n_delta_q_range": [
+          0.010833272569444413,
+          0.051260817317790364
+        ],
+        "zero_crossing_brackets": [],
+        "n_points_in_slope": 10,
+        "positive_beta": true
+      },
+      "mouse03": {
+        "beta_n": 0.06729244053531966,
+        "spearman_rho": 0.9878787878787878,
+        "full_delta_q": 0.09684612126842473,
+        "full_accepted_neurons_by_session": "7112",
+        "smallest_n": 100,
+        "smallest_n_delta_q": 0.014309374999999958,
+        "finite_n_delta_q_range": [
+          0.014309374999999958,
+          0.10646594671666976
+        ],
+        "zero_crossing_brackets": [],
+        "n_points_in_slope": 10,
+        "positive_beta": true
+      },
+      "mouse04": {
+        "beta_n": 0.07896833401074912,
+        "spearman_rho": 0.9878787878787878,
+        "full_delta_q": 0.11093866184141243,
+        "full_accepted_neurons_by_session": "9612;10197",
+        "smallest_n": 100,
+        "smallest_n_delta_q": 0.019062551153273793,
+        "finite_n_delta_q_range": [
+          0.019062551153273793,
+          0.13189005740228316
+        ],
+        "zero_crossing_brackets": [],
+        "n_points_in_slope": 10,
+        "positive_beta": true
+      },
+      "mouse05": {
+        "beta_n": 0.08743650399924334,
+        "spearman_rho": 0.9999999999999999,
+        "full_delta_q": 0.10887264497195015,
+        "full_accepted_neurons_by_session": "7355",
+        "smallest_n": 100,
+        "smallest_n_delta_q": 0.004163736979166638,
+        "finite_n_delta_q_range": [
+          0.004163736979166638,
+          0.125301649262752
+        ],
+        "zero_crossing_brackets": [],
+        "n_points_in_slope": 10,
+        "positive_beta": true
+      }
+    },
+    "cross_animal": {
+      "positive_beta_animals": 5,
+      "n_animals": 5,
+      "median_beta_n": 0.06729244053531966,
+      "mean_beta_n": 0.05924832201668208,
+      "mean_beta_bootstrap_95_percentile_interval": [
+        0.03847622072230323,
+        0.08002042331106092
+      ],
+      "median_beta_bootstrap_95_percentile_interval": [
+        0.02816139285357094,
+        0.08743650399924334
+      ],
+      "bootstrap_animals_as_resampling_unit": true,
+      "bootstrap_seed": 98765,
+      "bootstrap_repeats": 10000,
+      "classification": "PS-A"
+    }
+  },
+  "animal_curves": {
+    "mouse01": [
+      {
+        "target_label": "N100",
+        "target_n": 100,
+        "log10_n": 2.0,
+        "delta_q_animal": 0.006454036458333312,
+        "subset_delta_q_median": 0.006454036458333312,
+        "subset_delta_q_p025": -0.01884345052083332,
+        "subset_delta_q_p975": 0.025049218749999963
+      },
+      {
+        "target_label": "N150",
+        "target_n": 150,
+        "log10_n": 2.1760912590556813,
+        "delta_q_animal": 0.004992824074074087,
+        "subset_delta_q_median": 0.004992824074074087,
+        "subset_delta_q_p025": -0.019520645254629602,
+        "subset_delta_q_p975": 0.02937204861111115
+      },
+      {
+        "target_label": "N225",
+        "target_n": 225,
+        "log10_n": 2.3521825181113627,
+        "delta_q_animal": 0.009882047325102894,
+        "subset_delta_q_median": 0.009882047325102894,
+        "subset_delta_q_p025": -0.012967237654320991,
+        "subset_delta_q_p975": 0.027509925411522626
+      },
+      {
+        "target_label": "N340",
+        "target_n": 340,
+        "log10_n": 2.531478917042255,
+        "delta_q_animal": 0.014215720065599763,
+        "subset_delta_q_median": 0.014215720065599763,
+        "subset_delta_q_p025": -0.008107469182525959,
+        "subset_delta_q_p975": 0.03530717283466697
+      },
+      {
+        "target_label": "N510",
+        "target_n": 510,
+        "log10_n": 2.7075701760979363,
+        "delta_q_animal": 0.02262972274285535,
+        "subset_delta_q_median": 0.02262972274285535,
+        "subset_delta_q_p025": 0.002977753448193038,
+        "subset_delta_q_p975": 0.04028302090341847
+      },
+      {
+        "target_label": "N765",
+        "target_n": 765,
+        "log10_n": 2.8836614351536176,
+        "delta_q_animal": 0.030428474358152824,
+        "subset_delta_q_median": 0.030428474358152824,
+        "subset_delta_q_p025": 0.007565220196648089,
+        "subset_delta_q_p975": 0.0490229524657539
+      },
+      {
+        "target_label": "N1150",
+        "target_n": 1150,
+        "log10_n": 3.060697840353612,
+        "delta_q_animal": 0.03532069647920602,
+        "subset_delta_q_median": 0.03532069647920602,
+        "subset_delta_q_p025": 0.016133208786231836,
+        "subset_delta_q_p975": 0.051773078577898486
+      },
+      {
+        "target_label": "N1725",
+        "target_n": 1725,
+        "log10_n": 3.2367890994092927,
+        "delta_q_animal": 0.04504343669047112,
+        "subset_delta_q_median": 0.04504343669047112,
+        "subset_delta_q_p025": 0.02761174112143797,
+        "subset_delta_q_p975": 0.06380003242491082
+      },
+      {
+        "target_label": "N2600",
+        "target_n": 2600,
+        "log10_n": 3.4149733479708178,
+        "delta_q_animal": 0.050427150748890426,
+        "subset_delta_q_median": 0.050427150748890426,
+        "subset_delta_q_p025": 0.03178230950289695,
+        "subset_delta_q_p975": 0.06544014093703784
+      },
+      {
+        "target_label": "N3900",
+        "target_n": 3900,
+        "log10_n": 3.591064607026499,
+        "delta_q_animal": 0.055154559346235976,
+        "subset_delta_q_median": 0.055154559346235976,
+        "subset_delta_q_p025": 0.04397947019076671,
+        "subset_delta_q_p975": 0.067199835416153
+      },
+      {
+        "target_label": "FULL",
+        "target_n": "",
+        "log10_n": "",
+        "delta_q_animal": 0.0516113441121947,
+        "subset_delta_q_median": 0.0516113441121947,
+        "subset_delta_q_p025": 0.0516113441121947,
+        "subset_delta_q_p975": 0.0516113441121947
+      }
+    ],
+    "mouse02": [
+      {
+        "target_label": "N100",
+        "target_n": 100,
+        "log10_n": 2.0,
+        "delta_q_animal": 0.011949472656250043,
+        "subset_delta_q_median": 0.011949472656250043,
+        "subset_delta_q_p025": -0.004330844726562489,
+        "subset_delta_q_p975": 0.029237263671874972
+      },
+      {
+        "target_label": "N150",
+        "target_n": 150,
+        "log10_n": 2.1760912590556813,
+        "delta_q_animal": 0.010833272569444413,
+        "subset_delta_q_median": 0.010833272569444413,
+        "subset_delta_q_p025": -0.004657596788194433,
+        "subset_delta_q_p975": 0.024321613715277794
+      },
+      {
+        "target_label": "N225",
+        "target_n": 225,
+        "log10_n": 2.3521825181113627,
+        "delta_q_animal": 0.017078885030864188,
+        "subset_delta_q_median": 0.017078885030864188,
+        "subset_delta_q_p025": -0.002817911651234582,
+        "subset_delta_q_p975": 0.03359969405864197
+      },
+      {
+        "target_label": "N340",
+        "target_n": 340,
+        "log10_n": 2.531478917042255,
+        "delta_q_animal": 0.023531540603373702,
+        "subset_delta_q_median": 0.023531540603373702,
+        "subset_delta_q_p025": 0.0064568502142354975,
+        "subset_delta_q_p975": 0.04114322159183061
+      },
+      {
+        "target_label": "N510",
+        "target_n": 510,
+        "log10_n": 2.7075701760979363,
+        "delta_q_animal": 0.032854686298539076,
+        "subset_delta_q_median": 0.032854686298539076,
+        "subset_delta_q_p025": 0.01588256394776047,
+        "subset_delta_q_p975": 0.05051832175425323
+      },
+      {
+        "target_label": "N765",
+        "target_n": 765,
+        "log10_n": 2.8836614351536176,
+        "delta_q_animal": 0.039236608048720534,
+        "subset_delta_q_median": 0.039236608048720534,
+        "subset_delta_q_p025": 0.02193970423034408,
+        "subset_delta_q_p975": 0.059731024108649416
+      },
+      {
+        "target_label": "N1150",
+        "target_n": 1150,
+        "log10_n": 3.060697840353612,
+        "delta_q_animal": 0.04773877909380908,
+        "subset_delta_q_median": 0.04773877909380908,
+        "subset_delta_q_p025": 0.03138061389413998,
+        "subset_delta_q_p975": 0.05924406160650985
+      },
+      {
+        "target_label": "N1725",
+        "target_n": 1725,
+        "log10_n": 3.2367890994092927,
+        "delta_q_animal": 0.051260817317790364,
+        "subset_delta_q_median": 0.051260817317790364,
+        "subset_delta_q_p025": 0.03725126827019005,
+        "subset_delta_q_p975": 0.06283775633729775
+      },
+      {
+        "target_label": "N2600",
+        "target_n": 2600,
+        "log10_n": 3.4149733479708178,
+        "delta_q_animal": 0.05060309700328225,
+        "subset_delta_q_median": 0.05060309700328225,
+        "subset_delta_q_p025": 0.03933155914414985,
+        "subset_delta_q_p975": 0.06133276481023493
+      },
+      {
+        "target_label": "N3900",
+        "target_n": 3900,
+        "log10_n": 3.591064607026499,
+        "delta_q_animal": 0.04454808208518246,
+        "subset_delta_q_median": 0.04454808208518246,
+        "subset_delta_q_p025": 0.03851186144369459,
+        "subset_delta_q_p975": 0.05149800579003332
+      },
+      {
+        "target_label": "FULL",
+        "target_n": "",
+        "log10_n": "",
+        "delta_q_animal": 0.03053673314102434,
+        "subset_delta_q_median": 0.03053673314102434,
+        "subset_delta_q_p025": 0.03053673314102434,
+        "subset_delta_q_p975": 0.03053673314102434
+      }
+    ],
+    "mouse03": [
+      {
+        "target_label": "N100",
+        "target_n": 100,
+        "log10_n": 2.0,
+        "delta_q_animal": 0.014309374999999958,
+        "subset_delta_q_median": 0.014309374999999958,
+        "subset_delta_q_p025": -0.018281701660156274,
+        "subset_delta_q_p975": 0.037423493652343744
+      },
+      {
+        "target_label": "N150",
+        "target_n": 150,
+        "log10_n": 2.1760912590556813,
+        "delta_q_animal": 0.01584084201388891,
+        "subset_delta_q_median": 0.01584084201388891,
+        "subset_delta_q_p025": -0.00929722113715275,
+        "subset_delta_q_p975": 0.04100965928819445
+      },
+      {
+        "target_label": "N225",
+        "target_n": 225,
+        "log10_n": 2.3521825181113627,
+        "delta_q_animal": 0.02570004822530858,
+        "subset_delta_q_median": 0.02570004822530858,
+        "subset_delta_q_p025": -0.0023154861111110976,
+        "subset_delta_q_p975": 0.049563385898919725
+      },
+      {
+        "target_label": "N340",
+        "target_n": 340,
+        "log10_n": 2.531478917042255,
+        "delta_q_animal": 0.038604601163765156,
+        "subset_delta_q_median": 0.038604601163765156,
+        "subset_delta_q_p025": 0.013258857911845818,
+        "subset_delta_q_p975": 0.06271729360402248
+      },
+      {
+        "target_label": "N510",
+        "target_n": 510,
+        "log10_n": 2.7075701760979363,
+        "delta_q_animal": 0.05470123044622266,
+        "subset_delta_q_median": 0.05470123044622266,
+        "subset_delta_q_p025": 0.03137592503108778,
+        "subset_delta_q_p975": 0.07887523118737381
+      },
+      {
+        "target_label": "N765",
+        "target_n": 765,
+        "log10_n": 2.8836614351536176,
+        "delta_q_animal": 0.07174466901752538,
+        "subset_delta_q_median": 0.07174466901752538,
+        "subset_delta_q_p025": 0.046898939485414196,
+        "subset_delta_q_p975": 0.09108675758055124
+      },
+      {
+        "target_label": "N1150",
+        "target_n": 1150,
+        "log10_n": 3.060697840353612,
+        "delta_q_animal": 0.08606752274338364,
+        "subset_delta_q_median": 0.08606752274338364,
+        "subset_delta_q_p025": 0.06124426108001525,
+        "subset_delta_q_p975": 0.10833515233636574
+      },
+      {
+        "target_label": "N1725",
+        "target_n": 1725,
+        "log10_n": 3.2367890994092927,
+        "delta_q_animal": 0.09719222885160678,
+        "subset_delta_q_median": 0.09719222885160678,
+        "subset_delta_q_p025": 0.07727559967214082,
+        "subset_delta_q_p975": 0.11708141999284542
+      },
+      {
+        "target_label": "N2600",
+        "target_n": 2600,
+        "log10_n": 3.4149733479708178,
+        "delta_q_animal": 0.10646594671666976,
+        "subset_delta_q_median": 0.10646594671666976,
+        "subset_delta_q_p025": 0.09131074545233908,
+        "subset_delta_q_p975": 0.11830245469674555
+      },
+      {
+        "target_label": "N3900",
+        "target_n": 3900,
+        "log10_n": 3.591064607026499,
+        "delta_q_animal": 0.10455453437037726,
+        "subset_delta_q_median": 0.10455453437037726,
+        "subset_delta_q_p025": 0.08831246771918383,
+        "subset_delta_q_p975": 0.12063522153394138
+      },
+      {
+        "target_label": "FULL",
+        "target_n": "",
+        "log10_n": "",
+        "delta_q_animal": 0.09684612126842473,
+        "subset_delta_q_median": 0.09684612126842473,
+        "subset_delta_q_p025": 0.09684612126842473,
+        "subset_delta_q_p975": 0.09684612126842473
+      }
+    ],
+    "mouse04": [
+      {
+        "target_label": "N100",
+        "target_n": 100,
+        "log10_n": 2.0,
+        "delta_q_animal": 0.019062551153273793,
+        "subset_delta_q_median": 0.021082666015624973,
+        "subset_delta_q_p025": -0.0024426350911458325,
+        "subset_delta_q_p975": 0.0346153347051711
+      },
+      {
+        "target_label": "N150",
+        "target_n": 150,
+        "log10_n": 2.1760912590556813,
+        "delta_q_animal": 0.029819066220238125,
+        "subset_delta_q_median": 0.029946347966269868,
+        "subset_delta_q_p025": 0.0107564864934689,
+        "subset_delta_q_p975": 0.05110289977058529
+      },
+      {
+        "target_label": "N225",
+        "target_n": 225,
+        "log10_n": 2.3521825181113627,
+        "delta_q_animal": 0.04435424015285125,
+        "subset_delta_q_median": 0.0446264173647854,
+        "subset_delta_q_p025": 0.023755520994084373,
+        "subset_delta_q_p975": 0.06783909214708256
+      },
+      {
+        "target_label": "N340",
+        "target_n": 340,
+        "log10_n": 2.531478917042255,
+        "delta_q_animal": 0.059767545661417176,
+        "subset_delta_q_median": 0.05984207593308459,
+        "subset_delta_q_p025": 0.0379332357957544,
+        "subset_delta_q_p975": 0.079929926219971
+      },
+      {
+        "target_label": "N510",
+        "target_n": 510,
+        "log10_n": 2.7075701760979363,
+        "delta_q_animal": 0.07880519828182495,
+        "subset_delta_q_median": 0.07918696304348946,
+        "subset_delta_q_p025": 0.05297516429531885,
+        "subset_delta_q_p975": 0.09589189917886584
+      },
+      {
+        "target_label": "N765",
+        "target_n": 765,
+        "log10_n": 2.8836614351536176,
+        "delta_q_animal": 0.0971048178712298,
+        "subset_delta_q_median": 0.09744750215468351,
+        "subset_delta_q_p025": 0.0807321756013249,
+        "subset_delta_q_p975": 0.11617615919370652
+      },
+      {
+        "target_label": "N1150",
+        "target_n": 1150,
+        "log10_n": 3.060697840353612,
+        "delta_q_animal": 0.11611938010214126,
+        "subset_delta_q_median": 0.11581589058561748,
+        "subset_delta_q_p025": 0.0983424649073949,
+        "subset_delta_q_p975": 0.1340608951875661
+      },
+      {
+        "target_label": "N1725",
+        "target_n": 1725,
+        "log10_n": 3.2367890994092927,
+        "delta_q_animal": 0.12455733388562584,
+        "subset_delta_q_median": 0.123820410792113,
+        "subset_delta_q_p025": 0.10601576831160424,
+        "subset_delta_q_p975": 0.14582846008319705
+      },
+      {
+        "target_label": "N2600",
+        "target_n": 2600,
+        "log10_n": 3.4149733479708178,
+        "delta_q_animal": 0.13189005740228316,
+        "subset_delta_q_median": 0.13186369035924506,
+        "subset_delta_q_p025": 0.11416900595778104,
+        "subset_delta_q_p975": 0.14898022293791632
+      },
+      {
+        "target_label": "N3900",
+        "target_n": 3900,
+        "log10_n": 3.591064607026499,
+        "delta_q_animal": 0.13031969274771255,
+        "subset_delta_q_median": 0.13078436284074044,
+        "subset_delta_q_p025": 0.11576362723993926,
+        "subset_delta_q_p975": 0.15232373433704233
+      },
+      {
+        "target_label": "FULL",
+        "target_n": "",
+        "log10_n": "",
+        "delta_q_animal": 0.11093866184141243,
+        "subset_delta_q_median": 0.11093866184141243,
+        "subset_delta_q_p025": 0.11093866184141243,
+        "subset_delta_q_p975": 0.11093866184141243
+      }
+    ],
+    "mouse05": [
+      {
+        "target_label": "N100",
+        "target_n": 100,
+        "log10_n": 2.0,
+        "delta_q_animal": 0.004163736979166638,
+        "subset_delta_q_median": 0.004163736979166638,
+        "subset_delta_q_p025": -0.017304176432291665,
+        "subset_delta_q_p975": 0.024502379557291672
+      },
+      {
+        "target_label": "N150",
+        "target_n": 150,
+        "log10_n": 2.1760912590556813,
+        "delta_q_animal": 0.010716840277777778,
+        "subset_delta_q_median": 0.010716840277777778,
+        "subset_delta_q_p025": -0.0038306163194444243,
+        "subset_delta_q_p975": 0.026543030960648115
+      },
+      {
+        "target_label": "N225",
+        "target_n": 225,
+        "log10_n": 2.3521825181113627,
+        "delta_q_animal": 0.023509169238683125,
+        "subset_delta_q_median": 0.023509169238683125,
+        "subset_delta_q_p025": 0.001600390303497934,
+        "subset_delta_q_p975": 0.03760852494855968
+      },
+      {
+        "target_label": "N340",
+        "target_n": 340,
+        "log10_n": 2.531478917042255,
+        "delta_q_animal": 0.03848631686130338,
+        "subset_delta_q_median": 0.03848631686130338,
+        "subset_delta_q_p025": 0.020096291934742647,
+        "subset_delta_q_p975": 0.057927664821673136
+      },
+      {
+        "target_label": "N510",
+        "target_n": 510,
+        "log10_n": 2.7075701760979363,
+        "delta_q_animal": 0.05691261574074069,
+        "subset_delta_q_median": 0.05691261574074069,
+        "subset_delta_q_p025": 0.03985220090129601,
+        "subset_delta_q_p975": 0.07375911345696369
+      },
+      {
+        "target_label": "N765",
+        "target_n": 765,
+        "log10_n": 2.8836614351536176,
+        "delta_q_animal": 0.08066608106568696,
+        "subset_delta_q_median": 0.08066608106568696,
+        "subset_delta_q_p025": 0.06352372167889483,
+        "subset_delta_q_p975": 0.10016998103026618
+      },
+      {
+        "target_label": "N1150",
+        "target_n": 1150,
+        "log10_n": 3.060697840353612,
+        "delta_q_animal": 0.10051756704867681,
+        "subset_delta_q_median": 0.10051756704867681,
+        "subset_delta_q_p025": 0.0801188370599007,
+        "subset_delta_q_p975": 0.11830845079158779
+      },
+      {
+        "target_label": "N1725",
+        "target_n": 1725,
+        "log10_n": 3.2367890994092927,
+        "delta_q_animal": 0.11461019262409855,
+        "subset_delta_q_median": 0.11461019262409855,
+        "subset_delta_q_p025": 0.10197145893501017,
+        "subset_delta_q_p975": 0.1258728785641145
+      },
+      {
+        "target_label": "N2600",
+        "target_n": 2600,
+        "log10_n": 3.4149733479708178,
+        "delta_q_animal": 0.1243915300057013,
+        "subset_delta_q_median": 0.1243915300057013,
+        "subset_delta_q_p025": 0.1162859291693634,
+        "subset_delta_q_p975": 0.13615042790098775
+      },
+      {
+        "target_label": "N3900",
+        "target_n": 3900,
+        "log10_n": 3.591064607026499,
+        "delta_q_animal": 0.125301649262752,
+        "subset_delta_q_median": 0.125301649262752,
+        "subset_delta_q_p025": 0.11516993435436867,
+        "subset_delta_q_p975": 0.1307726411275133
+      },
+      {
+        "target_label": "FULL",
+        "target_n": "",
+        "log10_n": "",
+        "delta_q_animal": 0.10887264497195015,
+        "subset_delta_q_median": 0.10887264497195015,
+        "subset_delta_q_p025": 0.10887264497195015,
+        "subset_delta_q_p975": 0.10887264497195015
+      }
+    ]
+  },
+  "subset_interval_method": "For each animal and N, finite-session subset draws are averaged across nested sessions at matching repeat indices; the displayed 2.5th–97.5th percentiles summarize this subset variability. Mouse04's primary curve point remains the mean of its session medians.",
+  "execution_parameters": {
+    "effective_workers": 8,
+    "state_checkpoint_workers_field_note": "The inherited runtime state began with workers=4 from the smoke run; the full process used SRT_POPULATION_WORKERS=8, recorded in environment.txt.",
+    "target_mean_degree": 16,
+    "seed_root": 12345,
+    "graph": "connected MST backbone plus strongest remaining ranked absolute-correlation edges; binary unweighted",
+    "max_q_rule": "maximum of 200 Louvain Q trials per state-window graph",
+    "state_contrast": "mean window max-Q in NREM minus mean window max-Q in Wake",
+    "primary_slope": "OLS of animal-level session-aggregated finite-N delta_q against log10(N); FULL excluded"
+  },
+  "canonical_outputs": {
+    "subsample_summary_csv": "SRT_NEURO_POPULATION_SIZE_SCALING_SUBSAMPLE_SUMMARY_2026-10-09.csv",
+    "animal_curves_csv": "SRT_NEURO_POPULATION_SIZE_SCALING_ANIMAL_CURVES_2026-10-09.csv",
+    "result_json": "SRT_NEURO_POPULATION_SIZE_SCALING_RESULT_2026-10-09.json",
+    "figure_png": "SRT_NEURO_POPULATION_SIZE_SCALING_FIGURE_2026-10-09.png"
+  },
+  "raw_job_directory": ".local/phase2_population_size_scaling/jobs/"
+}
