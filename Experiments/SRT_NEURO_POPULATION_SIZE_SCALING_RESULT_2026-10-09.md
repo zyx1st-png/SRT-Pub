@@ -1,9 +1,13 @@
 ---
+id: SRT-NEURO-POPULATION-SIZE-SCALING-RESULT-20261009
 status: active
 type: experiment-result
 date: 2026-10-09
 programme: SRT Neuro Objectification–Scale Stability
 preregistration: Experiments/SRT_NEURO_POPULATION_SIZE_SCALING_PREREGISTRATION_2026-09-24.md
+layer: operations
+epistemic_layer: experimental
+claim_mode: evidence
 ---
 
 # RIKEN Sleep Population-Size Scaling Holdout Test

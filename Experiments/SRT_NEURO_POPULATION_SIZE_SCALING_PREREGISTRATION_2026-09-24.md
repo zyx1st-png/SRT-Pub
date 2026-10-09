@@ -1,8 +1,12 @@
 ---
+id: SRT-NEURO-POPULATION-SIZE-SCALING-PREREGISTRATION-20260924
 status: frozen
 type: experiment-preregistration
 date: 2026-09-24
 programme: SRT Neuro Objectification–Scale Stability
+layer: operations
+epistemic_layer: experimental
+claim_mode: protocol
 ---
 
 # RIKEN Sleep Population-Size Scaling Extension
