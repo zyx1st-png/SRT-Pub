@@ -126,7 +126,7 @@ Author's exact reply:
 
 **Provenance:** the two question alternatives are assistant wording; “第一，前者” is author-owned selection of the assistant's first alternative, while the L2/not-ontology statement is direct author prose. This is a **noncanonical author second-adjudication source record**, not an authorization to edit the Spine or define a universal coarse-graining operator.
 
-### A0-Q25 — earlier author wording, 2026-09-25 (cross-date source recovery, not a fresh 10-10 quote)
+### A0-Q(09-25) — earlier author wording, 2026-09-25 (cross-date source recovery, not a fresh 10-10 quote)
 
 From `SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md` §1 A0-Q2, verbatim:
 
@@ -146,7 +146,7 @@ Triage classification: **OVERLOADED_SAME_NAME**, with **PARTIAL_OVERLAP** in pos
 
 **Exact outstanding author question:** does the 09-25 “gate 的粗粒化几何” refer to a historically retained *formed trace* of the selection-generative coarse-graining described on 10-10? This is a promising **M** interpretation, **not author-confirmed**. Nothing in A0-S9 alone says Gate always follows, or that coarse-graining always persists.
 
-### A0-Q10 / A0-S10 — author explicitly declines Gate genealogy certainty; endorses other bounded research directions
+### A0-Q10 — exact author response, with contextual agreement interpreted at M-level
 
 The immediately preceding assistant explicitly asked:
 
@@ -158,7 +158,17 @@ The author repeated that question and replied, **verbatim**:
 
 **A0-Q10 (substantive uncertainty):** The purported genealogy **Selection-generative coarse-graining → retained / historically stable Gate coarse-graining geometry** is **NOT AUTHOR ADJUDICATED**. No "yes", "no", causal identity, necessary historical-retention chain, or claim that formed Gate is just the retained trace may be inferred from the reply. Keep both source quotations (09-25 A0-Q2 and 10-10 A0-S9) distinct and their bridge explicitly **AUTHOR-OPEN**. This is a deliberate, valid research pause, not an unresolved blocker that must be closed by M speculation.
 
-**A0-S10 (bounded directional acceptance):** “其他的认同” follows the assistant's immediately preceding assessment of a further Claude M-level review. It licenses *directional research-method agreement* with (1) narrowing the scientific target to **generative formation/re-cutting of differences with prospectively testable cross-probe consequences**, rather than claiming legacy science simply erases differences, and (2) **position-participatory Beacon/ChoiceMap/GRG use with a shared public validation contract but heterogeneous local representations**, pursuing cross-context and cross-position useful stability rather than a universal formula. This is **not** author's endorsement of the external literature as fully verified, a novel SRT advantage, a new term-of-art, a new experiment, or every neighboring assistant sentence.
+**Immediately preceding assistant research recommendation, recovered verbatim (M; not author wording):**
+
+> 「我支持将 Claude 的两项收窄建议保留为 M 层研究方向：
+>
+> **理论侧：** 从“传统理论抹平差异”收窄到“差异切分的生成、重构及其跨探针联合预测”。
+>
+> **系统侧：** 从“统一 Beacon 语法”改为“共同检验契约下的位置参与、跨场景重构与持续有效性”。」
+
+**M-bounded interpretation of the contextual “其他的认同”:** this supports the two research directions in the directly preceding assistant quotation, **not** its individual external-literature assertions, a new SRT mechanism, or every sentence of surrounding machine analysis. The second direction favors dropping the *unqualified* term “Beacon 语法” for this use, but does not categorically forbid ordinary talk of grammar or create an author-admitted glossary definition. The public evaluation contract is an L2 tool for testing cross-position usefulness, **not the intended ontological unification**. No new experiment, model gain, novelty or cross-domain fusion is authorized.
+
+**Provenance:** “这个不太确定，其他的认同。” is preserved as direct **A0-Q10** author prose. Its scope is **M** reconstruction tied to the verbatim preceding machine suggestion, rather than an A0-S binary option-choice. This preserves the file's own A0-S rule.
 
 Explicit current boundaries: CN-2 E2 family A is **paper-only**; ID/ED shift is an **M comparator/task-family lead** within that paper survey, not a chosen/frozen experimental implementation. Beacon's local engineering evidence can support functional utility without constituting direct proof of primitive Selection or uniqueness. No PR merge approval is inferable from the reply.
 
@@ -175,7 +185,7 @@ Explicit current boundaries: CN-2 E2 family A is **paper-only**; ID/ED shift is 
 
 - The author answered “认同，继续” / “认同你前面的分析” / “认同” to earlier assistant analyses. This supports directional continuation, including the move away from a universal fitness scalar and toward position-participatory cross-context stability.
 - The later **explicit A0-S9/A0-Q9** is stronger evidence than unanchored prior machine reconciliation, but only for the two answered questions; it does not automatically accept every adjacent M-level claim.
-- **A0-Q10/A0-S10** adds an affirmative boundary: the Gate genealogy remains **author-uncertain / OPEN**, while the *other* two method and task-narrowing suggestions are directionally accepted, not promoted to established empirical claims.
+- **A0-Q10 (M-scoped contextual agreement)** adds an affirmative boundary: the Gate genealogy remains **author-uncertain / OPEN**, while the *other* two method and task-narrowing suggestions are directionally accepted, not promoted to established empirical claims.
 - It does NOT establish author acceptance of every assistant-invented diagram, term, mathematical notation, three-part taxonomy, experimental task, mechanism, literature verdict or putative SRT advantage.
 - “生成性稳定性”, “位置参与的有效公式”, “位置参与的形式化协议” and similar compact phrases remain M-level descriptive *working labels*, not separately admitted SRT/GRG terms-of-art.
 - The word “non-public” is not a claim that no third-person or mathematical model can capture any or all domain-relevant consequences; the strong ontological limitation is still OPEN.
