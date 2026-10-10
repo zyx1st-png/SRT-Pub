@@ -65,7 +65,7 @@ class ContractTests(unittest.TestCase):
         seq = self.s.propose_gts(Hypothesis("g1", "supplier link", "relink",
                                            "more reachable tasks", "no gain"))
         self.assertEqual(self.s.events[seq - 1]["evidence_status"], "untested")
-        evidence_seq = self.s.record_observation("e1", "supplier link changed")
+        evidence_seq = self.s.record_observation("e1", "supplier link changed", for_gts="g1")
         assessed_seq = self.s.assess_gts("g1", "e1", "inconclusive")
         self.assertGreater(assessed_seq, evidence_seq)
         self.assertEqual(self.s.events[-1]["verdict"], "inconclusive")
@@ -82,7 +82,7 @@ class ContractTests(unittest.TestCase):
 
     def test_gts_invalid_assessor_and_verdict(self):
         self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d"))
-        self.s.record_observation("e1", "observation")
+        self.s.record_observation("e1", "observation", for_gts="g1")
         with self.assertRaises(PermissionError):
             self.s.assess_gts("g1", "e1", "supported", actor="agent")
         with self.assertRaises(ValueError):
@@ -143,6 +143,59 @@ class ContractTests(unittest.TestCase):
     def test_unprotected_tool_operation(self):
         self.s.execute("read", "read-1")
         self.assertEqual(self.s.events[-1]["kind"], "action_executed")
+
+
+    def test_frame_update_invalidates_prior_approval(self):
+        self.s.grant_once("send", scope="recipient-A")
+        self.s.propose_frame("p1", "changed scope")
+        self.s.decide_frame("p1", True)
+        self.assertEqual(self.s.events[-2]["kind"], "approvals_invalidated")
+        with self.assertRaises(PermissionError):
+            self.s.execute("send", "after-reframe", scope="recipient-A")
+        self.s.grant_once("send", scope="recipient-A")
+        self.s.execute("send", "new-approval", scope="recipient-A")
+
+    def test_user_can_revoke_scoped_approval(self):
+        self.s.grant_once("send", scope="recipient-B")
+        self.s.revoke("send", scope="recipient-B")
+        with self.assertRaises(PermissionError):
+            self.s.execute("send", "revoked", scope="recipient-B")
+        with self.assertRaises(PermissionError):
+            self.s.revoke("send", scope="recipient-B", actor="agent")
+
+    def test_invalid_scope_and_ttl_are_permission_errors(self):
+        for scope in (None, "", " "):
+            with self.subTest(scope=scope):
+                with self.assertRaises(PermissionError):
+                    self.s.grant_once("send", scope=scope)
+                with self.assertRaises(PermissionError):
+                    self.s.execute("read", "not-sent", scope=scope)
+        for ttl in (None, 0, -1, True, 3601):
+            with self.subTest(ttl=ttl):
+                with self.assertRaises(PermissionError):
+                    self.s.grant_once("send", ttl_seconds=ttl)
+
+    def test_expired_grant_rejected(self):
+        from datetime import datetime, timedelta, timezone
+        self.s.grant_once("send", scope="recipient-A")
+        key = ("send", "recipient-A", self.s.frame_version)
+        self.s._approvals[key] = datetime.now(timezone.utc) - timedelta(seconds=1)
+        with self.assertRaisesRegex(PermissionError, "expired"):
+            self.s.execute("send", "expired-evidence", scope="recipient-A")
+
+    def test_only_linked_observation_can_assess_hypothesis(self):
+        self.s.propose_gts(Hypothesis("g1", "supplier", "link", "improve", "no improvement"))
+        self.s.propose_gts(Hypothesis("g2", "tariff", "change", "reduce cost", "no cost decrease"))
+        self.s.record_observation("unlinked", "some later event")
+        self.s.record_observation("different", "later other hypothesis", for_gts="g2")
+        with self.assertRaisesRegex(ValueError, "not registered"):
+            self.s.assess_gts("g1", "unlinked", "supported")
+        with self.assertRaisesRegex(ValueError, "not registered"):
+            self.s.assess_gts("g1", "different", "supported")
+        with self.assertRaises(ValueError):
+            self.s.record_observation("bad", "label", for_gts="does-not-exist")
+        self.s.record_observation("linked", "target measurement", for_gts="g1")
+        self.s.assess_gts("g1", "linked", "inconclusive")
 
 
 if __name__ == "__main__":
