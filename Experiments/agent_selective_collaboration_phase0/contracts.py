@@ -1,9 +1,11 @@
-"""Phase-0 executable contracts; not an Agent or proof of efficacy.
+"""Phase-0 event/state contracts; no model, benchmark, or security boundary.
 
-Actor labels here are test fixtures, NOT verified identities or a production
-security boundary. Real tools require external authentication + scoped grants.
+Actor arguments are test labels, not authenticated principals. This simulation
+MUST NOT be connected directly to side-effecting tools. Production security
+needs authenticated identities, scoped capability tokens and tool-side policy.
 """
-from dataclasses import dataclass, field
+from datetime import datetime, timezone
+from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
@@ -16,95 +18,177 @@ class Hypothesis:
     provenance: str = "model_hypothesis"
 
 
-@dataclass
 class CollaborationLedger:
-    root_goal: str
-    allowed_actions: frozenset[str]
-    protected_actions: frozenset[str]
-    frame_version: int = 1
-    events: list[dict] = field(default_factory=list)
-    proposals: dict[str, str] = field(default_factory=dict)
-    hypotheses: dict[str, Hypothesis] = field(default_factory=dict)
-    observations: dict[str, str] = field(default_factory=dict)
-    approvals: set[str] = field(default_factory=set)
-    beacons: dict[str, int] = field(default_factory=dict)
-    history: list[tuple[int, str]] = field(default_factory=list)
-
-    def __post_init__(self):
-        if not self.root_goal.strip():
+    def __init__(self, root_goal: str, allowed_actions: frozenset[str],
+                 protected_actions: frozenset[str]):
+        if not root_goal or not root_goal.strip():
             raise ValueError("root_goal required")
+        self.allowed_actions = frozenset(allowed_actions)
+        self.protected_actions = frozenset(protected_actions)
         if not self.protected_actions <= self.allowed_actions:
             raise ValueError("protected actions must be allowed actions")
-        self.history.append((self.frame_version, self.root_goal))
-        self._record("frame_created", "user", goal=self.root_goal)
+        self._goal = root_goal
+        self._history = [(1, root_goal)]
+        self._events = []
+        self._proposals = {}
+        self._hypotheses = {}
+        self._observations = {}
+        self._assessments = {}
+        self._approvals = set()
+        self._beacons = {}
+        self._record("frame_created", "user", goal=root_goal)
 
-    def _record(self, kind, actor, **fields):
-        event = {"seq": len(self.events) + 1, "kind": kind, "actor": actor, **fields}
-        self.events.append(event)
+    @property
+    def root_goal(self):
+        return self._goal
+
+    @property
+    def frame_version(self):
+        return len(self._history)
+
+    @property
+    def history(self):
+        return list(self._history)
+
+    @property
+    def events(self):
+        """Read-only snapshots, never references to the underlying event records."""
+        return tuple(dict(event) for event in self._events)
+
+    @property
+    def proposals(self):
+        return {key: dict(value) for key, value in self._proposals.items()}
+
+    @property
+    def hypotheses(self):
+        return dict(self._hypotheses)
+
+    def _record(self, kind, actor, *, branch_id=None, premise_revision=None,
+                reversibility=None, authorization_scope=None, source=None, **details):
+        event = dict(seq=len(self._events) + 1, kind=kind, actor=actor,
+                     timestamp=datetime.now(timezone.utc).isoformat(),
+                     frame_version=self.frame_version, branch_id=branch_id,
+                     premise_revision=premise_revision, reversibility=reversibility,
+                     authorization_scope=authorization_scope, source=source, **details)
+        self._events.append(event)
         return event["seq"]
 
-    def propose_frame(self, proposal_id: str, new_goal: str, *, actor="agent"):
-        if actor != "agent" or not proposal_id or not new_goal.strip():
+    def propose_frame(self, proposal_id: str, new_goal: str, *, actor="agent",
+                      branch_id="root", premise_revision=1):
+        if actor != "agent" or not proposal_id or not new_goal or not new_goal.strip():
             raise ValueError("invalid proposal")
-        if proposal_id in self.proposals:
-            raise ValueError("proposal id already used")
-        self.proposals[proposal_id] = new_goal
-        return self._record("frame_proposed", actor, proposal_id=proposal_id)
+        if proposal_id in self._proposals:
+            raise ValueError("duplicate proposal")
+        self._proposals[proposal_id] = dict(goal=new_goal, base_version=self.frame_version,
+                                            status="pending", branch_id=branch_id,
+                                            premise_revision=premise_revision)
+        return self._record("frame_proposed", actor, proposal_id=proposal_id, goal=new_goal,
+                            base_version=self.frame_version, branch_id=branch_id,
+                            premise_revision=premise_revision, source="model_proposal")
 
     def decide_frame(self, proposal_id: str, accept: bool, *, actor="user"):
-        if actor != "user" or proposal_id not in self.proposals:
-            raise PermissionError("only user can decide a pending frame")
-        goal = self.proposals.pop(proposal_id)
+        if actor != "user" or proposal_id not in self._proposals:
+            raise PermissionError("only the user can decide a known proposal")
+        p = self._proposals[proposal_id]
+        if p["status"] != "pending":
+            raise ValueError("proposal is not pending")
+        if p["base_version"] != self.frame_version:
+            p["status"] = "stale"
+            self._record("frame_stale", actor, proposal_id=proposal_id,
+                         base_version=p["base_version"], source="version_check")
+            raise ValueError("stale proposal: must be reconsidered on current frame")
+        p["status"] = "accepted" if accept else "rejected"
         if accept:
-            self.frame_version += 1
-            self.root_goal = goal
-            self.history.append((self.frame_version, goal))
+            self._goal = p["goal"]
+            self._history.append((self.frame_version + 1, self._goal))
         return self._record("frame_decided", actor, proposal_id=proposal_id,
-                            accepted=bool(accept), frame_version=self.frame_version)
+                            goal=p["goal"], accepted=bool(accept),
+                            branch_id=p["branch_id"], premise_revision=p["premise_revision"],
+                            source="user_decision")
 
     def propose_gts(self, hypothesis: Hypothesis, *, actor="agent"):
-        if actor != "agent" or hypothesis.gts_id in self.hypotheses:
-            raise ValueError("duplicate or invalid GTS")
-        if not all((hypothesis.condition, hypothesis.intervention,
-                    hypothesis.prediction, hypothesis.failure_condition)):
-            raise ValueError("GTS requires a testable prediction and failure condition")
-        self.hypotheses[hypothesis.gts_id] = hypothesis
+        if actor != "agent" or hypothesis.gts_id in self._hypotheses:
+            raise ValueError("duplicate or invalid hypothesis")
+        if not all((hypothesis.condition.strip(), hypothesis.intervention.strip(),
+                    hypothesis.prediction.strip(), hypothesis.failure_condition.strip(),
+                    hypothesis.provenance.strip())):
+            raise ValueError("a testable hypothesis with provenance is required")
+        self._hypotheses[hypothesis.gts_id] = hypothesis
         return self._record("gts_proposed", actor, gts_id=hypothesis.gts_id,
-                            evidence_status="untested")
+                            condition=hypothesis.condition, intervention=hypothesis.intervention,
+                            prediction=hypothesis.prediction,
+                            failure_condition=hypothesis.failure_condition,
+                            evidence_status="untested", source=hypothesis.provenance)
 
     def record_observation(self, evidence_id: str, description: str, *, actor="tool"):
         if actor != "tool" or not evidence_id or not description:
-            raise PermissionError("observations require a tool adapter")
-        if evidence_id in self.observations:
+            raise PermissionError("a tool adapter must supply a labeled observation")
+        if evidence_id in self._observations:
             raise ValueError("duplicate evidence")
-        self.observations[evidence_id] = description
-        return self._record("observed", actor, evidence_id=evidence_id)
+        seq = self._record("observed", actor, evidence_id=evidence_id,
+                           description=description, source="tool_observation")
+        self._observations[evidence_id] = seq
+        return seq
 
-    def grant_once(self, action: str, *, actor="user"):
-        if actor != "user" or action not in self.protected_actions:
-            raise PermissionError("only a user may grant an eligible protected action")
-        self.approvals.add(action)
-        return self._record("action_approved", actor, action=action)
+    def assess_gts(self, gts_id: str, evidence_id: str, verdict: str, *, actor="evaluator"):
+        """Post-observation assessment, NOT independent causal proof."""
+        if actor != "evaluator":
+            raise PermissionError("assessment requires a distinct evaluator adapter")
+        if gts_id not in self._hypotheses or evidence_id not in self._observations:
+            raise ValueError("unknown hypothesis or evidence")
+        if verdict not in {"supported", "refuted", "inconclusive"}:
+            raise ValueError("invalid verdict")
+        if gts_id in self._assessments:
+            raise ValueError("hypothesis already assessed")
+        proposal_seq = next(e["seq"] for e in self._events
+                            if e["kind"] == "gts_proposed" and e["gts_id"] == gts_id)
+        if self._observations[evidence_id] <= proposal_seq:
+            raise ValueError("prospective registration must precede evidence")
+        self._assessments[gts_id] = (evidence_id, verdict)
+        return self._record("gts_assessed", actor, gts_id=gts_id,
+                            evidence_id=evidence_id, verdict=verdict,
+                            source="bounded_assessment")
 
-    def execute(self, action: str, evidence_id: str, *, actor="tool"):
+    def grant_once(self, action: str, *, scope="task", actor="user"):
+        if actor != "user" or action not in self.protected_actions or not scope.strip():
+            raise PermissionError("user grant must be scoped to a protected action")
+        self._approvals.add((action, scope))
+        return self._record("action_approved", actor, action=action,
+                            authorization_scope=scope, source="user_grant_fixture")
+
+    def execute(self, action: str, evidence_id: str, *, scope="task", actor="tool"):
         if actor != "tool" or action not in self.allowed_actions:
-            raise PermissionError("tool action is not allowed")
-        if action in self.protected_actions and action not in self.approvals:
-            raise PermissionError("protected action needs fresh approval")
-        if not evidence_id or evidence_id in self.observations:
-            raise ValueError("unique evidence id required")
-        self.approvals.discard(action)  # one-shot approval, consumed upon attempt
+            raise PermissionError("tool adapter/action not authorized")
+        if action in self.protected_actions and (action, scope) not in self._approvals:
+            raise PermissionError("fresh matching scoped approval required")
+        if not evidence_id or evidence_id in self._observations:
+            raise ValueError("unique tool evidence id required")
+        self._approvals.discard((action, scope))  # one shot; no replay
         self.record_observation(evidence_id, f"tool result for {action}", actor="tool")
         return self._record("action_executed", actor, action=action,
-                            evidence_id=evidence_id)
+                            evidence_id=evidence_id,
+                            reversibility="unknown",
+                            authorization_scope=scope, source="tool_action_fixture")
 
-    def add_beacon(self, key: str, source_seq: int):
-        if not key.strip() or source_seq not in range(1, len(self.events) + 1):
-            raise ValueError("beacon must reference an existing event")
-        self.beacons[key] = source_seq
-        return self._record("beacon_added", "agent", key=key, source_seq=source_seq)
+    def add_beacon(self, key: str, source_seq: int, *, actor="agent"):
+        if actor != "agent" or not key or not key.strip():
+            raise ValueError("valid model cue required")
+        if not 1 <= source_seq <= len(self._events):
+            raise ValueError("cue must reference a recorded event")
+        self._beacons[key] = source_seq
+        return self._record("beacon_anchor_added", actor, key=key,
+                            source_seq=source_seq, source="working_label_only")
 
-    def recover_beacon(self, key: str):
-        if key not in self.beacons:
+    def retrieve_beacon_event(self, key: str):
+        """Retrieve an event record: this is NOT situated cognitive re-entry."""
+        if key not in self._beacons:
             raise KeyError(key)
-        return dict(self.events[self.beacons[key] - 1])
+        return dict(self._events[self._beacons[key] - 1])
+
+    def reenter_from_beacon(self, key: str, current_context: str, *, actor="user"):
+        """Represent a new situated re-entry event, distinct from source event."""
+        if actor != "user" or not current_context or not current_context.strip():
+            raise PermissionError("user context is required for re-entry")
+        source = self.retrieve_beacon_event(key)
+        return self._record("situated_reentry", actor, key=key, source_seq=source["seq"],
+                            current_context=current_context, source="new_event_not_recovery")
