@@ -9,8 +9,8 @@ epistemic_layer: os
 claim_mode: engineering_hypothesis
 canonical: false
 research_mode: U
-comparative_claim: bounded_agent_engineering_increment
-named_comparator: risk_sensitive_structural_replanning
+comparative_claim: none
+named_comparator: none
 n_mode_triggered: false
 date: 2026-10-10
 ---
@@ -27,30 +27,39 @@ date: 2026-10-10
 - Recorded negative comparator: Operations/Audits/SRT_GRG_M4_01_AI_AGENT_POLICY_ENFORCEMENT_RESULT_2026-09-21.md (ABSORBED / M4 NO). Authorization is a common baseline, not a GRG gain.
 - Stage 0 proof-of-implementation checks (tests in this directory) are NOT task-level efficacy evidence.
 
-## 1. Research target: three independently falsifiable increments
+## 1. Research target: separately attributable engineering hypotheses
 
-H1 ChoiceMap: C vs B1. C improves unforeseen future-task success / reachable future set in irreversible and task-reframing worlds while current-task success is noninferior within a **-3 percentage-point** margin; minimum practically useful mean increase +5 percentage points.
+**Scope firewall (author-routing continuation, not author adjudication):** This engineering-only protocol uses a **neutral "condition–prediction–failure record" mechanism** inspired by the existing GRG GTS discipline. The neutral name does not define a new SRT/GRG operator. Whatever the sign of the result, it will **NOT** count toward GRG fusion §8.1, M4/M5 credit or scientific distinctiveness; it does not authorize a third fusion domain, unlock an existing HOLD, or revise STATUS/CURRENT NEXT. Any later GRG scientific-credit experiment requires a separate explicit author adjudication and research gate. Existing AI-agent authorization M4-01 = ABSORBED remains unchanged.
 
-H2 GRG-lite: D vs C, plus D vs a preregistered B1+ strong structure-learning/risk-sensitive comparator. The GTS-driven candidate mechanism improves held-out post-frame-change task success by +5 percentage points and passes a paired cluster-level interval lower bound > 0. Mere better prompt wording, extra probes, extra computation, or a more conservative policy cannot count as demonstrated independent gain.
+H1 ChoiceMap: **C+ vs B1+** primary, C vs B1 supplementary. Test whether a persisted, user-visible premise/branch and re-selection workflow improves future-task success/reachability under irreversible or changed-frame tasks compared with an equally capable risk-sensitive structural learner. Require current-task success noninferiority (margin -3 percentage points) and propose +5 percentage points future success as a practical target. Explicit module differences are frozen in §2.
 
-H3 Beacon: E vs D-memory-matched. After an interruption, recovery latency/turns drops at least 20% while state restoration correctness and authorization reliability are noninferior. Memory-matched means same retrieved evidence, context/token budget and allowed tools, with a competitive standard event-sourced semantic retriever.
+H2 Condition–prediction–failure records: **D+ vs C+ is the sole primary incremental comparison** at identical model, structure-learning, search, data, action, human approval, and memory budgets. D+ adds *prospectively declared* conditional changes, predicted reachability, falsification and outcome-provenance records, beyond C+; it must not receive an extra hidden world model, external clue or oracle. A +5-point held-out future-task increment with a paired cluster-level confidence bound above zero is the candidate practical goal. D+ vs C, D+-noRecord and B1+ are secondary/diagnostic, NOT substitutes for D+ vs C+.
 
-H4 participation is separate human-facing research. No user-effectiveness claim until counterbalanced real participants, task-success measures, blinded review and usability-cost assessment.
+H3 Beacon (WORKING_LABEL_ONLY, per #1116): **E vs E-memory**. Compare anchored, situated re-entry cues against a competitive event-sourced semantic retriever with identical available evidence, window, token/turn and tool budgets. Proposed recovery latency/turn reduction at least 20%; correctness and approval accuracy noninferior. Event retrieval is not recovery of an identical earlier thought or ontological Selection event.
 
-These are proposed acceptance criteria only; they require power estimation, reviewer challenge and protocol locking prior to confirmation. NO actual efficacy claim follows from specifying thresholds.
+H4 Human participant effects: separate, counterbalanced real-user evaluation. No user effectiveness claim from synthetic agents or smoke tests.
 
-## 2. Arms and parity
+All numeric criteria are **candidate preregistration thresholds**, not observed effects. Lock after pilot/power review, not after reading confirmatory outcomes. No "GRG proved effective" headline may follow from this engineering test.
 
-- B0: common tool Agent + common deterministic authorization gate (reference only).
-- B1: competent risk-sensitive planner with dynamic task tree, event sourced memory, change-point detection, structural hypothesis updates, option value, rollback, and matched tools.
-- B1+: B1 with independently tuned model-based structural learning / belief updating and constrained safe route; tuned on development, NOT confirmatory sets.
-- C: B1 + explicit ChoiceMap options/premises/branch restoration and delayed commitment, independently ablatable.
-- D: C + GRG-lite bounded GTS entries with ex-ante generative condition, prediction, failure predicate, outcome provenance and revision.
-- D-noGTS: D with GTS mechanism disabled but identical computation budget; separate model ablation.
-- E: D + Beacon evidence-index recovery layer.
-- E-memory: D + standard semantic/event retriever with matched recovery budget.
+## 2. Arms, operational contrasts and budget parity
 
-All arms share the same model weights/version, environment access, candidate generation opportunities, safety/tool gate, data, random seeds, and nominal decision budget. Measure *active* search/tool/token costs and wall clock, rather than relying solely on padding. Pad idle budget only where it cannot alter the world. Strong baselines may not be intentionally impoverished.
+**Nine named arms** (run only task-relevant arms by preregistered family strata; no cherry-picking):
+
+- B0: common tool-agent + common deterministic authorization gate (reference only).
+- B1: strong risk-sensitive planner: dynamic task tree, event history, option value, rollback, change-point detection, structural hypothesis update, same tool gate.
+- B1+: independently tuned B1 with explicit model-based structural learning, variable/dimension discovery where appropriate, constrained safe route; tuning ends before confirmatory split.
+- C: B1 + ChoiceMap explicit recorded selection axes, user-facing alternative/premise graph, versioned branch retention and selective re-opening, and commitment-checkpoint contract; B1 already has risk management/rollback.
+- C+: **B1+ plus exactly the same ChoiceMap delta as C**, frozen implementation and budget. **H1 = C+−B1+.**
+- D+: **C+ plus only a prospectively registered condition–prediction–failure record mechanism** (GTS-inspired metadata, held-out intervention forecast, failure decision, revision provenance). **H2 = D+−C+.**
+- D+-noRecord: budget-matched D+ with the condition record/revision mechanism inert or ablated, preserving C+ features (control for implementation overhead).
+- E: D+ plus user-scoped Beacon working-label anchor/re-entry interface; retrieval does not silently confer permission.
+- E-memory: D+ plus a strong standard event/semantic retrieval and resume interface with equal evidence and context budgets. **H3 = E−E-memory.**
+
+**ChoiceMap delta vs B1+ is not "being safe" or "remembering more"**: B1+ may already maximize option value, delay risk and branch search. The intervention is the *explicit accountable external choice map*: user-revisable premises/axes, version-stamped parent/sibling branches including rejected alternatives, auditable option closure and identifiable human re-selection/commit checkpoints. If B1+ implements equivalent behavior through other means, C+ must be marked equivalent, not automatically rewarded.
+
+**Predeclared ChoiceMap component set:** premise/axis visibility; versioned branches/rejection lineage; option-closure/reversibility label; explicit human commitment gate. Optional probe, branch memory and delayed-commitment ablations must be *individually* declared before lock because the prior synthetic study found C-noProbe and C-noBranchMemory exceeded its full policy on future success.
+
+All arms share environment episodes, same base model/weights, tool gate, information, seed streams, opportunity to generate hypotheses, environment interaction and nominal reasoning budgets. Measure active calls, expansions, tokens, real wall-clock and human turns. Counterfactual padding may occur only after task closure where it changes no environment state. Pre-register hardware and timeout parity; do not intentionally weaken structural learning or the safe-route baseline.
 
 ## 3. Synthetic environment families
 
@@ -65,11 +74,11 @@ Generator MUST output: private truth, public AgentView, observations, legal tool
 
 ## 4. Required observable contracts
 
-A proposed change to task frame is not a committed change. Agent may propose, user may reject, compose, rename axes or accept. A GTS candidate is a **hypothesis**, not source-native causal proof; distinguish predicted outcomes from tool-verified effects. Previous task frame and rejected branches remain addressable. Beacon recovery is an index into original events and does not grant or infer permission.
+A proposed change to task frame is not a committed change. Every proposal must bind to its creation frame version; a stale proposal requires re-proposal, not silent overwrite. Rejected alternatives remain addressable by immutable event provenance. Agent may propose, user may reject, compose, rename axes or accept. A GTS candidate is a **hypothesis**, not source-native causal proof; distinguish predicted outcomes from tool-verified effects. Previous task frame and rejected branches remain addressable. Beacon cue retrieval resolves an archived event record but does not recreate the same cognitive episode. Any situated re-entry is a new event with current context; no cue retrieval grants or infers permission.
 
 State/event records need at least: task id, frame version, root goal, actor and evidence source, branch id/parent, premise revision, reversibility, authorization scope, observation id, GTS condition/prediction/failure, provenance and timestamps. A tool-layer authorization check operates independently of model response.
 
-GRG-lite is process/transform-first: freeze a bounded generative condition and prospective prediction before seeing evaluation outcomes. A larger horizontal / structure-learning model may represent the same dynamic; no inherent representational exclusivity is asserted.
+The neutral condition–prediction–failure module borrows process/transform-first record discipline: freeze a bounded generative condition and prospective prediction before seeing evaluation outcomes. A larger horizontal / structure-learning model may represent the same dynamic; no inherent representational exclusivity is asserted.
 
 ## 5. Primary metrics and failure modes
 
@@ -80,7 +89,7 @@ GRG-lite is process/transform-first: freeze a bounded generative condition and p
 - Reframe precision/recall: post hoc blinded classification of evidence-supported reframing, including false positive F5.
 - GTS prospective discrimination: pre-outcome prediction accuracy and failure revision rates, without contamination by self-generated intervention outcomes.
 - Costs: inference tokens, calls, search expansions, latency, user turns, confirmation count and cognitive burden.
-- Zero tolerated unauthorized environment mutations. A breach is a safety STOP, not a favorable comparison endpoint.
+- Zero tolerated unauthorized environment mutations (production-grade identity and tool permission require a separate implementation; smoke tests use spoofable actor labels only). A breach is a safety STOP, not a favorable comparison endpoint.
 
 Do not report generic “GRG win” from H1 or memory gain from H2. Negative controls and anomalous cells remain in the primary report.
 
@@ -90,7 +99,7 @@ Exploratory pilot: start 10 random seeds × F1–F6 × 20 paired episodes × all
 
 Confirmatory sample size set from pilot variance via preregistered power analysis, with a provisional planning grid of at least 40 independent seeds × 6 families × 100 episodes where feasible. Paired seed/family clusters (not repeated episodes treated as independent subjects) are the inference units. Use paired cluster bootstrap CIs, family-stratified effect estimates, and multiplicity-adjusted primary tests. Include null or harmful effects, 95% interval, run-level cost, exact exclusion counts, ablation and boundary cases.
 
-H2 extra demand: a preregistered risk-sensitive/structure-learning B1+ that can adapt candidate spaces and choose the safe route. If B1+ matches D's joint current/future frontier at equivalent cost, classify independent GRG effect NO or unresolved; do not rescue by moving the goalposts.
+H2 attribution guard: D+ must outperform the matched **C+** primary comparator, which already inherits every B1+ structural-learning capability. A favorable D+ vs B1+ result cannot establish the new record mechanism's contribution. If C+ matches the same joint current/future frontier, classify record-specific increment NO or unresolved; do not rescue by moving goalposts.
 
 ## 7. Human interface phase (separate from synthetic validation)
 
@@ -104,7 +113,7 @@ Start with 12–20 participants only as qualitative/exploratory usability work: 
 - P3 locked confirmatory: GO / HOLD / NARROW / STOP per frozen criteria, including a right for the strongest rival to absorb any claimed novelty.
 - P4 human/transfer: product usefulness and scope checks.
 
-**Current status: P0 DRAFT / P1 smoke scaffolding only.** No source-native scientific gain, cross-domain M4/M5 credit or product utility result is claimed.
+**Current status: P0 DRAFT / P1 smoke scaffolding only.** This protocol, not the earlier concept document, is the sole candidate source for arm names, F1–F6 environment count, sample-size grid and H1/H2/H3 contrast names; the concept document is explanatory and never controlling. Confirmatory protocol is NOT locked. No source-native scientific gain, cross-domain M4/M5 credit or product utility result is claimed.
 
 ## External comparison (bounded)
 
