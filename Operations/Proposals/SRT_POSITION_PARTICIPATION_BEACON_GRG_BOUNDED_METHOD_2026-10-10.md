@@ -53,11 +53,23 @@ The former is not false or inherently static. The latter is not licensed to asse
 ### Three analytic roles (M-level), not three interchangeable entities
 
 1. Primitive actualized Selection and event-level foreground/background verticality. No prior pre-formed chooser, global menu, objective fitness or formed Gate required.
-2. **Coarse-graining in the author's selected vertical sense:** the later explicit A0-S9 chooses **coarse-graining as a generative manifestation of Selection**, *rather than* only a formed organization bearing effects of Selection. Thus the research must examine how the foreground/background differentiating process operates, not merely track an already formed Gate or equivalence class. This is a selected conceptual direction, not an established domain mechanism or the global equality “all coarse-graining = all primitive Selection”.
-3. **Formed organizations where separately evidenced:** retained Gate, history-sensitive differential reach, anticipation and domain-specific coarse-graining *implementations* may subsequently influence Selection. Their persistence is not required for a one-shot Selection. These later roles do not exhaust or redefine the author-selected generative sense of “粗粒化”.
+2. **Coarse-graining in the author's selected vertical sense:** the later explicit A0-S9 chooses **coarse-graining as a generative manifestation of Selection** in the posed comparison, rather than treating it *only* as an already-formed organization bearing effects of Selection. Thus the research must examine how the foreground/background differentiating process operates, not merely track an already formed Gate or equivalence class. This is a selected conceptual direction, not an established domain mechanism or the global equality “all coarse-graining = all primitive Selection”.
+3. **Formed organizations where separately evidenced:** retained Gate (distinct from primitive Selection), history-sensitive differential reach, anticipation and domain-specific coarse-graining *implementations* may subsequently influence Selection. Their persistence is not required for a one-shot Selection. These later roles do not exhaust or redefine the author-selected generative sense of “粗粒化”.
 4. **L2 mathematical/representational scaffolds** (e.g. local landscape, similarity function, fitness, category, control model): fallible, revisable models of a declared scope, permitted and potentially useful, but **not ontology** (explicit A0-Q9). They can be used in position-involved intervention and may change later conditions. Their representational powers and losses require task-specific demonstrations.
 
 Use arrows of explanatory dependency, not a fabricated O0 timeline or a universal dynamical equation.
+
+### "粗粒化" overloading guard — do not collapse three burdens
+
+`Glossary/SRT_Live_Term_Router.md` triage for **粗粒化/coarse-graining = OVERLOADED_SAME_NAME**, not an admissible single universal operator:
+
+| Scoped usage | Owner / source | What it does **not** establish |
+| --- | --- | --- |
+| Selection-generative vertical coarse-graining (10-10 A0-S9) | [Author trace](../../01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md) | No global `π_λ`, Gate, guaranteed retention or selection-equals-coarse-graining theorem |
+| Formed Gate's coarse-graining geometry (09-25 A0-Q2) | [09-25 source](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md), symbol table `Ĝ` | Not primitive Selection; whether it is the *trace* of the generative sense is **AUTHOR-OPEN** |
+| Scale/coarse-graining mapping `π_λ` | [Reference scaling model](../../Core_Law/SRT_Reference_Scaling.md) | May merge state representations and lose information; does not prove that actual ontic differences were erased |
+
+`Ĝ != primitive Selection` is a **canonical** non-identity; the previous draft's opposite provenance was incorrect. The stronger **relation** “generative process → formed Gate geometry” is an intelligible **M** working hypothesis, not an author-supplied causal law. Maintain distinction between event, subsequent persistence (where paid), and public L2 map.
 
 ## 3. “Background to foreground” and newly generated differences
 
@@ -99,7 +111,7 @@ Possible operational readings:
 
 ### Beacon / ChoiceMap / GRG (possible downstream roles, not a new program)
 
-**Terminology triage:** Beacon is the author's own personal mnemonic label, not an automatically admitted SRT term-of-art. Following `Glossary/README.md` and `Glossary/SRT_Live_Term_Router.md`: **WORKING_LABEL_ONLY**; source/provenance = Oct-10 author trace; distinction = a context-dependent re-entry cue, not a primitive Selection operator, memory identity mechanism or universal energy scalar; failure/merge condition = if existing cue/retrieval methods explain the entire operational job, retain Beacon as the individual's practical label without claiming a new SRT mechanism. No new glossary definition or owner is created.
+**Terminology triage:** Beacon is the author's own personal mnemonic label, not an automatically admitted SRT term-of-art. **Aliases (working only):** Beacon cues; personal keyword anchors; context-sensitive re-entry cues; Tag-keyword prompts. These names are ordinary description, not newly registered SRT operators. Following `Glossary/README.md` and `Glossary/SRT_Live_Term_Router.md`: **WORKING_LABEL_ONLY**; source/provenance = Oct-10 author trace; distinction = a context-dependent re-entry cue, not a primitive Selection operator, memory identity mechanism or universal energy scalar; failure/merge condition = if existing cue/retrieval methods explain the entire operational job, retain Beacon as the individual's practical label without claiming a new SRT mechanism. No new glossary definition or owner is created.
 
 - **Beacon**: bounded recall/re-entry and context-sensitive meaning reconstruction interface. The key evidence is prospective usefulness under declared goals, not keyword extraction accuracy alone.
 - **ChoiceMap**: optional capture of historically situated decisions and revisions, explicit authorship, skipped options where actually presented, and admissibility/reach where evidence is available. A trace cannot by itself establish SRT One/Bearer.
