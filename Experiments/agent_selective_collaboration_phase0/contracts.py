@@ -15,6 +15,7 @@ class Hypothesis:
     intervention: str
     prediction: str
     failure_condition: str
+    measurement_key: str
     provenance: str = "model_hypothesis"
 
 
@@ -112,36 +113,46 @@ class CollaborationLedger:
                             source="user_decision")
 
     def propose_gts(self, hypothesis: Hypothesis, *, actor="agent"):
+        """GTS-inspired engineering hypothesis only; no GRG scientific claim."""
         if actor != "agent" or hypothesis.gts_id in self._hypotheses:
             raise ValueError("duplicate or invalid hypothesis")
         if not all((hypothesis.condition.strip(), hypothesis.intervention.strip(),
                     hypothesis.prediction.strip(), hypothesis.failure_condition.strip(),
-                    hypothesis.provenance.strip())):
+                    hypothesis.measurement_key.strip(), hypothesis.provenance.strip())):
             raise ValueError("a testable hypothesis with provenance is required")
         self._hypotheses[hypothesis.gts_id] = hypothesis
         return self._record("gts_proposed", actor, gts_id=hypothesis.gts_id,
                             condition=hypothesis.condition, intervention=hypothesis.intervention,
                             prediction=hypothesis.prediction,
                             failure_condition=hypothesis.failure_condition,
+                            measurement_key=hypothesis.measurement_key,
                             evidence_status="untested", source=hypothesis.provenance)
 
     def record_observation(self, evidence_id: str, description: str, *, actor="tool",
-                           for_gts=None):
-        """Label an observation for a pre-registered prediction, if applicable.
+                           for_gts=None, measurement_key=None,
+                           originating_intervention=None):
+        """Bounded tool fixture: measurement-key registration precedes observation.
 
-        This explicit evidence link prevents arbitrary later event reuse.
-        It is NOT a causal-validity or source-authentication guarantee.
+        Labels and sources are not authenticated; evidence identity, causal
+        validity and predeclared outcome evaluation require a real evaluator.
         """
         if actor != "tool" or not evidence_id or not description:
             raise PermissionError("a tool adapter must supply a labeled observation")
         if evidence_id in self._observations:
             raise ValueError("duplicate evidence")
-        if for_gts is not None and for_gts not in self._hypotheses:
-            raise ValueError("cannot label evidence with unknown hypothesis")
+        if for_gts is not None:
+            h = self._hypotheses.get(for_gts)
+            if h is None:
+                raise ValueError("cannot label evidence with unknown hypothesis")
+            if measurement_key != h.measurement_key:
+                raise ValueError("measurement key differs from predeclared hypothesis")
         seq = self._record("observed", actor, evidence_id=evidence_id,
                            description=description, for_gts=for_gts,
+                           measurement_key=measurement_key,
+                           originating_intervention=originating_intervention,
+                           self_generated=originating_intervention is not None,
                            source="tool_observation")
-        self._observations[evidence_id] = (seq, for_gts)
+        self._observations[evidence_id] = (seq, for_gts, measurement_key)
         return seq
 
     def assess_gts(self, gts_id: str, evidence_id: str, verdict: str, *, actor="evaluator"):
@@ -156,10 +167,10 @@ class CollaborationLedger:
             raise ValueError("hypothesis already assessed")
         proposal_seq = next(e["seq"] for e in self._events
                             if e["kind"] == "gts_proposed" and e["gts_id"] == gts_id)
-        observation_seq, linked_hypothesis = self._observations[evidence_id]
+        observation_seq, linked_hypothesis, measurement_key = self._observations[evidence_id]
         if observation_seq <= proposal_seq:
             raise ValueError("prospective registration must precede evidence")
-        if linked_hypothesis != gts_id:
+        if linked_hypothesis != gts_id or measurement_key != self._hypotheses[gts_id].measurement_key:
             raise ValueError("observation is not registered as evidence for this hypothesis")
         self._assessments[gts_id] = (evidence_id, verdict)
         return self._record("gts_assessed", actor, gts_id=gts_id,
@@ -187,18 +198,28 @@ class CollaborationLedger:
 
     def revoke(self, action: str, *, scope="task", actor="user"):
         """Explicit revocation within the current frame, even before first use."""
-        if actor != "user" or not isinstance(scope, str) or not scope.strip():
-            raise PermissionError("only user may revoke a scoped approval")
+        if (actor != "user" or action not in self.protected_actions
+                or not isinstance(scope, str) or not scope.strip()):
+            raise PermissionError("only a valid protected approval can be revoked by the user")
         key = (action, scope, self.frame_version)
-        self._approvals.pop(key, None)
+        if key not in self._approvals:
+            raise ValueError("no outstanding scoped approval to revoke")
+        self._approvals.pop(key)
         return self._record("action_revoked", actor, action=action,
                             authorization_scope=scope, source="user_revocation_fixture")
 
-    def execute(self, action: str, evidence_id: str, *, scope="task", actor="tool"):
+    def execute(self, action: str, evidence_id: str, *, scope="task", actor="tool",
+                for_gts=None, measurement_key=None):
         if actor != "tool" or action not in self.allowed_actions:
             raise PermissionError("tool adapter/action not authorized")
         if not isinstance(scope, str) or not scope.strip():
             raise PermissionError("valid scope required")
+        if for_gts is not None:
+            h = self._hypotheses.get(for_gts)
+            if h is None or h.intervention != action:
+                raise ValueError("action must match a pre-registered hypothesis intervention")
+            if measurement_key != h.measurement_key:
+                raise ValueError("measurement key differs from predeclared hypothesis")
         key = (action, scope, self.frame_version)
         if action in self.protected_actions:
             expires_at = self._approvals.get(key)
@@ -210,9 +231,12 @@ class CollaborationLedger:
         if not evidence_id or evidence_id in self._observations:
             raise ValueError("unique tool evidence id required")
         self._approvals.pop(key, None)  # one shot; no replay
-        self.record_observation(evidence_id, f"tool result for {action}", actor="tool")
+        self.record_observation(evidence_id, f"tool result for {action}", actor="tool",
+                                for_gts=for_gts, measurement_key=measurement_key,
+                                originating_intervention=action)
         return self._record("action_executed", actor, action=action,
-                            evidence_id=evidence_id,
+                            evidence_id=evidence_id, for_gts=for_gts,
+                            measurement_key=measurement_key,
                             reversibility="unknown",
                             authorization_scope=scope, source="tool_action_fixture")
 
