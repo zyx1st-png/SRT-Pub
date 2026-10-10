@@ -83,10 +83,10 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 
 ### 2026-10-10 later author response — narrow decisions / controlled no-decision
 
-The author answered the Gate-genealogy question with **「这个不太确定，其他的认同。」** (exact question and response archived as A0-Q10/A0-S10 in the source trace).
+The author answered the Gate-genealogy question with **「这个不太确定，其他的认同。」** (direct A0-Q10 wording and the immediately preceding machine recommendation are both archived in the source trace; the scoped reading of the assent remains **M**, not A0-S).
 
 - **No Gate lineage verdict:** Gate coarse-graining geometry being the retained result of Selection-generative coarse-graining is an intelligible **M** hypothesis **but remains author-uncertain / OPEN**. Do not silently infer "formed stable trace" from 09-25/10-10 lexical overlap, and do not pressure a premature author choice. The pre-existing `Ĝ != primitive Selection` guard remains canonical.
-- **Bounded acceptance:** the other two narrowing directions (a) prospective joint **re-cut formation** prediction against named capable attention/latent-structure rivals in the existing CN-2 family A paper survey; (b) **meta-level validation contract** with heterogeneous local Beacon/ChoiceMap expressions and cross-position/context functional stability tests are directionally accepted at source/method level, **not** as demonstrated or unique science.
+- **Bounded contextual agreement (M-source reading):** (a) prospective joint **re-cut formation** prediction against named capable attention/latent-structure rivals in the existing CN-2 family A paper survey; ID/ED-shift and learned irrelevance are only **comparator leads to route through [#1112](https://github.com/zyx1st-png/SRT-Pub/pull/1112)**; (b) a **meta-level validation contract** with heterogeneous local Beacon/ChoiceMap expressions and prospective cross-position/context stability testing. The assistant also proposed avoiding the unqualified “Beacon 语法”; this contextual assent does not forbid ordinary grammar vocabulary or create a new term. None of these directions is demonstrated or scientifically unique.
 - **No implicit operational selection:** no dataset, implementation, ID/ED task freeze, experiment, #1115 Phase-0 run, model gain, GRG fusion release, canonical revision, or merge instruction follows from “其他的认同”.
 
 ## 5. Narrow falsifiers and comparative failure rights
@@ -108,7 +108,7 @@ The author answered the Gate-genealogy question with **「这个不太确定，�
 | Mathematical/formal modeling as L2 scaffold not ontology | **A0-Q9 EXPLICIT AUTHOR CLARIFICATION**; model-specific utility requires evidence |
 | Coarse-graining as generative manifestation of Selection rather than only downstream Gate | **A0-S9 CHOSEN DIRECTION**; universal literal identity / domain mechanism NOT CLAIMED |
 | 09-25 Gate geometry as stable historical trace of generative coarse-graining | **A0-Q10 AUTHOR UNCERTAIN / OPEN**; no causal or identity inference licensed |
-| Cross-probe re-cutting and position-participatory meta-contract narrowings | **A0-S10 DIRECTIONALLY ACCEPTED**; local effectiveness / novelty NOT ESTABLISHED |
+| Cross-probe re-cutting and position-participatory meta-contract narrowings | **A0-Q10 CONTEXTUAL AGREEMENT (M-SCOPED)**; antecedent machine recommendation quoted; local effectiveness / novelty NOT ESTABLISHED |
 | Fitness-landscape / effective L2 interpretation | Compatible candidate / previous owners; no universal law |
 | Vertical distinction as uniquely SRT / historically unprecedented | NOT ESTABLISHED |
 | Non-public participation implies mathematical inexpressibility | NOT ESTABLISHED; stronger observability route OPEN |
