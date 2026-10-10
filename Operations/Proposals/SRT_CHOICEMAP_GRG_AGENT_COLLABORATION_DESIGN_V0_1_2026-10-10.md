@@ -4,7 +4,7 @@ type: proposal
 tags: [ChoiceMap, GRG, Beacon, Agent, Validation, Interaction]
 layer: operations
 epistemic_layer: os
-status: proposal_v0_1
+status: draft
 canonical: false
 claim_mode: product_engineering_hypothesis
 research_mode: U
