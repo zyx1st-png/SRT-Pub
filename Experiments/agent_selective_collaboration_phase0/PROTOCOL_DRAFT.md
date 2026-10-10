@@ -11,13 +11,13 @@ canonical: false
 research_mode: U
 comparative_claim: bounded_agent_engineering_increment
 named_comparator: risk_sensitive_structural_replanning
-n_mode_triggered: true
+n_mode_triggered: false
 date: 2026-10-10
 ---
 
 # Phase 0 — selective collaboration engineering protocol (DRAFT; NOT LOCKED)
 
-> Scope: noncanonical, downstream engineering. No test result in this directory is proof of SRT ontology, primitive Selection, GRG scientific distinctiveness, M4/M5 credit, or human-facing ChoiceMap benefit. Does not replace STATUS.md CURRENT NEXT. No experiment has yet been executed under this protocol.
+> Scope: noncanonical, downstream engineering. The U-mode label is for proposal drafting; any later bounded N-mode superiority claim requires author adjudication and a frozen strongest-neighbor comparison before promotion. No test result in this directory is proof of SRT ontology, primitive Selection, GRG scientific distinctiveness, M4/M5 credit, or human-facing ChoiceMap benefit. Does not replace STATUS.md CURRENT NEXT. No experiment has yet been executed under this protocol.
 
 ## 0. Evidence lineage and separation
 
