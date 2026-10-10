@@ -97,7 +97,7 @@ Legend: **SOURCE-NATIVE** = the named literature already collected essentially t
 | **Actual owner-target E2** | A paper question about **one learned consequence organization jointly predicting held-out probes from multiple independently measured input probe types**, against capable named H1/H2, is formulable. | **NOT READY:** P2/P4 inputs and P3/P5 outputs are unverified; P6 meaning is **AUTHOR-OPEN**; no joint dataset, model/readout contract or sealed holdout exists. One-input P1 fitting is not the original cross-probe shared-geometry test. |
 | **Future E3/E4/W1–W4** | Can state distinct stronger target and governance requirements. | **No causal/intervention or recursive success** is conferred by C0/C1 or a positive E2 correlation. |
 
-## 3. The smallest honest candidate scientific question (not an authorized experiment)
+## 3. Two different-strength paper questions (not authorized experiments)
 
 **Q-A0 — reduced observed-source calibration, NOT owner E2:**
 
@@ -111,7 +111,7 @@ Ashby 2020 provides P1 and novel-blend category-response precedents, though data
 
 **M-layer minimum safeguard proposed for the *joint* claim:** do not call a test "shared across probe types" without **at least two independently observed training probe types and a distinct held-out observed target probe**. This is a **proposed paper-interpretation floor**, **not** a new author-adjudicated universal E2 gate, nor a substitute for the owner's illustrative P1/P2/P4 -> P3/P5/P6 design; two types alone are not sufficient for an E2 PASS. Probe-readout calibration from lawful training sources must be available to *all* models and must not leak target probe responses.
 
-**Q-A1 = NOT READY**: P2/P4 training channels, P3/P5 target responses and same-history lawful participant links are unverified, P6 remains **AUTHOR-OPEN**, and no comparable full model/holdout protocol exists. Existing classification trials cannot be relabeled as observations from the missing probes.
+**Owner adjudication needed before fixing P6:** Does selecting a category label for a genuinely novel feature combination count as the P6 required "action with no direct training history", or does P6 require a distinct, consequential affordance/action decision? The present author source does not settle it. **Q-A1 = NOT READY**: P2/P4 training channels, P3/P5 target responses and same-history lawful participant links are unverified, P6 remains **AUTHOR-OPEN**, and no comparable full model/holdout protocol exists. Existing classification trials cannot be relabeled as observations from the missing probes.
 
 **Two distinct routes must never be fused:**
 
@@ -150,7 +150,7 @@ A candidate **same-target E2 predictive** future assessment must first have sepa
 
 ## 5. Independent review focus and next stop condition
 
-1. **Source fidelity:** verify the difference between Ashby 2020 directly observed P1 and P6-adjacent label generalization, ALCOVE learned attention, SUSTAIN recruitable clusters, **SAT-M 2022 sequence-sensitive encoding**, Ashby–Vucovich 2016 feedback contingency, and Mack's SUSTAIN-fitted fMRI. Confirm none is misrepresented as a complete six-probe same-history experiment.
+1. **Source fidelity:** verify the difference between Ashby 2020 directly observed P1 and new-blend category responses (**P6 admissibility AUTHOR-OPEN**), ALCOVE learned attention, SUSTAIN recruitable clusters, **SAT-M 2022 sequence-sensitive encoding**, Ashby–Vucovich 2016 feedback contingency, and Mack's SUSTAIN-fitted fMRI. Confirm none is misrepresented as a complete six-probe same-history experiment.
 2. **P1–P6 mapping:** check P2 unlabelled grouping, P3 continuous morph boundary, P4 actual *human* expectation, P5 human anomaly; **P6 novel category response vs separate consequential action is AUTHOR-OPEN**, not a machine-exclusion verdict.
 3. **Admissibility and scoring:** check reduced **Q-A0 != owner E2**, conditional **Q-A1** returns to joint multi-probe modeling, at least two independently observed training types as an **M paper safeguard** (not fixed author gate), and symmetric readout calibration/probe-order contamination.
 4. **New strongest-neighbor pressure:** check SAT-M, ALCOVE/SUSTAIN, Ashby–Vucovich's **RB vs II** high/low contingency, and ID/ED (Roberts 1988, Owen 1991), **learned irrelevance not universally confirmed** (Gauntlett-Gilbert 1999), without inventing a new task or proving SRT novelty.
