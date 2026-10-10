@@ -1,7 +1,8 @@
 ---
 id: SRT-POSITION-PARTICIPATION-BEACON-GRG-BOUNDED-METHOD-20261010
 type: research_proposal
-status: proposed
+status: draft
+record_stage: proposed
 date: 2026-10-10
 layer: operations
 epistemic_layer: analysis
@@ -16,6 +17,7 @@ n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
+  - Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
   - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
   - Core_Law/SRT_One_Formation.md
   - Glossary/SRT_Live_Term_Router.md
@@ -48,10 +50,10 @@ Do NOT silently replace the author's A0-Q7 with “all positions should share a 
 
 The former is not false or inherently static. The latter is not licensed to assert that a sufficiently rich formal domain model cannot represent relevant dynamics. The point is the *explanatory burden*, not a claim of mathematical inexpressibility.
 
-### Three typed burdens, not three interchangeable entities
+### Three analytic roles (M-level), not three interchangeable entities
 
 1. Primitive actualized Selection and event-level foreground/background verticality. No prior pre-formed chooser, global menu, objective fitness or formed Gate required.
-2. Formed retained organizations (where evidenced): coarse-graining / Gate, anticipation, reciprocal support/inhibition and history-sensitive differential reach. These may modify later Selection conditions, but need not exist for one-shot Selection.
+2. Formed retained organizations (where evidenced): Gate and candidate domain implementations such as coarse-graining, anticipation, reciprocal support/inhibition and history-sensitive differential reach. These may modify later Selection conditions, but need not exist for one-shot Selection. **This is an M-level reading; the author's exact “粗粒化实现 ... 生成过程” identity/realization scope is OPEN.**
 3. Public effective descriptions (e.g. local landscape, similarity function, fitness, category, control model): fallible, revisable models of some declared scope. They can themselves be used in a position-involved intervention and alter later conditions. Their representational powers and losses require task-specific demonstrations.
 
 Use arrows of explanatory dependency, not a fabricated O0 timeline or a universal dynamical equation.
@@ -84,7 +86,7 @@ This proposes a methodological bridge, not a theorem that all SRT selections are
 
 ## 5. Beacon as an example of situated re-entry, NOT identity-preserving memory recovery
 
-Author source: Beacon is highly personal and scene-dependent (A0-Q7). Earlier dialogue describes keyword/tag anchors which often cue broad thought without storing a full grammatical narrative; this section is M interpretation, not a new direct author quote.
+Author source: Beacon is highly personal and scene-dependent (A0-Q7). The user's earlier personal account of keyword/tag cues was given in prior conversation, but is **not established here as an independently inspectable `main`-branch Beacon source**. Those details below are M-level reconstruction of the user's reported technique, not source-verified details from a separate repository document.
 
 Possible operational readings:
 
@@ -94,14 +96,16 @@ Possible operational readings:
 - Cross-user coherence can emerge from interaction, negotiated use and consequential coordination **without** equating private semantics or claiming a new collective One.
 - A proposed “semantic energy map” is a *possible interface/metaphor*, not an admitted primitive scalar, universal manifold or target of obligatory convergence.
 
-### Beacon / ChoiceMap / GRG (research allocation, not new program)
+### Beacon / ChoiceMap / GRG (possible downstream roles, not a new program)
+
+**Terminology triage:** Beacon is the author's own personal mnemonic label, not an automatically admitted SRT term-of-art. Following `Glossary/README.md` and `Glossary/SRT_Live_Term_Router.md`: **WORKING_LABEL_ONLY**; source/provenance = Oct-10 author trace; distinction = a context-dependent re-entry cue, not a primitive Selection operator, memory identity mechanism or universal energy scalar; failure/merge condition = if existing cue/retrieval methods explain the entire operational job, retain Beacon as the individual's practical label without claiming a new SRT mechanism. No new glossary definition or owner is created.
 
 - **Beacon**: bounded recall/re-entry and context-sensitive meaning reconstruction interface. The key evidence is prospective usefulness under declared goals, not keyword extraction accuracy alone.
 - **ChoiceMap**: optional capture of historically situated decisions and revisions, explicit authorship, skipped options where actually presented, and admissibility/reach where evidence is available. A trace cannot by itself establish SRT One/Bearer.
-- **GRG**: compare *bounded generative dependency transformations* across positions and domains; allow heterogeneity and failed transfers; do not demand matching names, objects or formula syntax.
+- **GRG**: *if its existing fusion and broad-synthesis HOLD gates are later released*, it may compare bounded generative dependency transformations across positions and domains. For now only preserve this as a downstream possible use of the **existing** GRG grammar; no new cross-domain case, programme, comparison count or synthesis is authorized. The current foundation owner is `SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md`.
 - **System**: acts as an accountable mediator/scaffold. Human–AI collaboration may generate useful, jointly supported new relations without either partner independently representing the total process. The author's “AI may not independently produce AGI” is **analogy only**, not a factual impossibility claim.
 
-The existing **draft PR #1115**, “ChoiceMap × GRG agent collaboration design and phase-0 validation scaffold”, is a distinct engineering/protocol proposal, not this source's owner, not merged evidence and not a substitute for the user's latest author-directed method.
+The existing **draft PR #1115**, “ChoiceMap × GRG agent collaboration design and phase-0 validation scaffold”, is a distinct engineering/protocol proposal, not this source's owner, not merged evidence and not a substitute for the author's current source-level research direction. In its `contracts.py`, `recover_beacon()` returns a *copy of a recorded event dictionary*, not the original ontological Selection event. Its method name may mislead; this proposal does not alter #1115, and that PR should distinguish **record retrieval** from **situated re-entry** during its own review.
 
 ## 6. A useful local model: non-universal contract
 
@@ -116,9 +120,9 @@ Any formula/model used in this research should declare at least:
 
 This is a local model-use contract, not an L0 law nor a proposed new GRG global schema.
 
-## 7. Bounded paper-only probes under existing CN-2 / downstream design
+## 7. PARKED downstream thought probes — NOT the existing CN-2 task family A
 
-Do not start experiments or change the frozen CURRENT NEXT. For thought/design only:
+The following are possible **future, separate** method design ideas; they do **not** belong to CN-2 E2 task family A and are not currently an authorized study, paper task selection, research lane, charter, or preregistration. CN-2 remains the sole existing CURRENT NEXT, with its paper-only scope unchanged. No experiments may start from this section. For thought/design only:
 
 - **Within-position re-entry:** compare Beacon cue to full-note retrieval and semantic retrieval. Pre-register useful reconstruction/decision quality and scope, not verbatim memory recovery.
 - **Position-substitution test:** compare active participant history vs matched sensory/recorded traces. If effects differ, test whether action-contingent information, hidden state and motivation explain them.
@@ -142,7 +146,8 @@ Baseline rivals should include history-aware active learning, latent-state/POMDP
 - [Author primary trace](../../01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md)
 - [OPEN and rival-pressure map](../Audits/SRT_VERTICAL_SELECTION_POSITION_PUBLICNESS_PRESSURE_2026-10-10.md)
 - [Constitution position/objectification source](../../01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md)
-- [GRG mainline research framework](SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md)
+- [Current GRG foundation owner (v0.3)](SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md)
+- [Older GRG research framework (background reference)](SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md)
 - [GRG cross-objectification author correction](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md)
 - [Existing CN-2 paper-first author choice](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md)
 - Draft PR #1115 (not merged owner): https://github.com/zyx1st-png/SRT-Pub/pull/1115
