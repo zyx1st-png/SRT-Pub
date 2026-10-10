@@ -100,18 +100,42 @@ This is the latest and controlling sharpening: not “reject stability/unificati
 
 This licenses a bounded source/research writeback, not canonical changes or a blanket promotion of machine synthesis to author's definitions.
 
+### A0-S9 / A0-Q9 — explicit second adjudication of the two review questions (later, 2026-10-10)
+
+The assistant's two alternatives for the **first question**, verbatim:
+
+> 「这究竟意味着粗粒化是 Selection 的一种生成性表现，还是形成后组织承载 Selection 作用的过程？」
+
+The assistant's framing of the **second question**, verbatim:
+
+> 「你并不反对数学公式，而是在区分：
+>
+> - 脱离位置后得到的公共表达；
+> - 公式在实际选择位置参与下的使用及其生成作用。」
+
+Author's exact reply:
+
+> 「第一，前者。第二，不是反对数学化，而是数学化只是L2层面的脚手架，不是本体。」
+
+**A0-S9 (first question):** author explicitly selects **“粗粒化是 Selection 的一种生成性表现”** over **“形成后组织承载 Selection 作用的过程”** as the sole/primary interpretation of the earlier intuition. Do not silently reduce “粗粒化实现 ... 生成过程” to an exclusively downstream Gate function. This does not itself assert a literal one-to-one identity “all coarse-graining = every primitive Selection occurrence”, nor erase the canonical occurrence/retention distinction. Any necessary downstream typing is a further explanatory task, not permission to replace the author's chosen reading.
+
+**A0-Q9 (second question):** author explicitly states that mathematical formalization is **not rejected**; its status is **an L2 scaffold, not ontology**. This resolves the main earlier Q0/Q6 presentation-level tension over whether SRT disallows mathematics. The distinction between a portable mathematical representation and its possible position-involved use remains a bounded M explanation, not itself a new foundational author definition.
+
+**Provenance:** the two question alternatives are assistant wording; “第一，前者” is author-owned selection of the assistant's first alternative, while the L2/not-ontology statement is direct author prose. This is a **noncanonical author second-adjudication source record**, not an authorization to edit the Spine or define a universal coarse-graining operator.
+
 ## 1. Minimum A0-P directional reading — bounded
 
 1. Original actualizing Selection is not a fitness function choosing among a completed menu. A fitness landscape or value function is a possible effective L2 scaffold associated with formed relations, not primitive ontology.
 2. Foreground and Selection-relative background are two readings of one vertical actualizing differentiation; background is neither a complete warehouse of hidden objects nor necessarily annihilated information.
-3. The author's use of “粗粒化” targets *formation/organization* of Selection-related verticality, not only numerical compression of given objects or static states. **Whether “实现” entails an ontological identity with Selection or an account of later formed organization remains OPEN for explicit author clarification.** The machine reading distinguishing primitive Selection, formed Gate and domain coarse-graining is not itself an A1 author decision.
+3. **Author-selected clarification A0-S9:** “粗粒化是 Selection 的一种生成性表现”, not exclusively “形成后组织承载 Selection 作用的过程”. The research job concerns the formation of vertical foreground/background difference and position-involved generative organization, rather than only numerical compression of pre-given objects. This selected direction is stronger than a merely downstream Gate-only account, **without by itself imposing the universal identity coarse-graining = every primitive Selection**. Operational typing and rival comparison remain to be developed, not settled by machine preference.
 4. The author favors genuine new differentiation relations that need not already be present in the former vertical organization. Such relations are not necessarily deterministic reappearances of a stored background option. Constraint by history does not imply pre-enumerated alternatives.
-5. Vertical organization may be position-involved and not fully substitutable by a public representation. Nonetheless the author wants usable situated models and systems that can pursue stability and unification across positions and contexts.
+5. Vertical organization may be position-involved and not fully substitutable by a public representation. Nonetheless the author wants usable situated models and systems that can pursue stability and unification across positions and contexts. **Author A0-Q9:** mathematics is not rejected; it is L2 scaffolding, not primitive ontology.
 6. Beacon is supplied as a highly personal/context-sensitive analogy for position-dependent re-entry. Its utility does not require a shared keyword-to-meaning function, literal restoration of the historical Selection or identical interpretations across users.
 
 ## 2. Bounded in-dialogue acceptance, not automatic author promotion
 
 - The author answered “认同，继续” / “认同你前面的分析” / “认同” to earlier assistant analyses. This supports directional continuation, including the move away from a universal fitness scalar and toward position-participatory cross-context stability.
+- The later **explicit A0-S9/A0-Q9** is stronger evidence than unanchored prior machine reconciliation, but only for the two answered questions; it does not automatically accept every adjacent M-level claim.
 - It does NOT establish author acceptance of every assistant-invented diagram, term, mathematical notation, three-part taxonomy, experimental task, mechanism, literature verdict or putative SRT advantage.
 - “生成性稳定性”, “位置参与的有效公式”, “位置参与的形式化协议” and similar compact phrases remain M-level descriptive *working labels*, not separately admitted SRT/GRG terms-of-art.
 - The word “non-public” is not a claim that no third-person or mathematical model can capture any or all domain-relevant consequences; the strong ontological limitation is still OPEN.
@@ -122,8 +146,8 @@ This licenses a bounded source/research writeback, not canonical changes or a bl
 - O0 non-maximal indifference and S0 actualizing Selection are co-primitive; no O0-before-S0 causal/temporal pipeline.
 - Selection is not picking from pre-given options, does not require a completed One or subject, and may occur without later durable retention.
 - Event-level foreground/background verticality ≠ formation of One. One requires separately established Selection-mediated vertical reconstitution; formed Selection-position ≠ Bearer ≠ consciousness.
-- **Canonical** occurrence/retention guard: genuine Selection does not require later sedimentation; one-shot Selection remains genuine. The 2026-10-07 source contains the author's Gate/coarse-graining intuition and a distinct machine-side “Gate != primitive Selection” interpretation, not a categorical A1 adjudication of the author's word “粗粒化”. Keep that identity/realization issue **OPEN**. Background ≠ a second manifest object, global complement, or latent object inventory.
-- L0/L1/L2 are not three independently existing worlds. Effective landscape, utility and energy forms are local projections or domain models, not ontic definitions.
+- **Canonical** occurrence/retention guard: genuine Selection does not require later sedimentation; one-shot Selection remains genuine. The 2026-10-07 source's machine-side “Gate != primitive Selection” interpretation cannot override the explicit later A0-S9 selection of coarse-graining **as a generative manifestation of Selection**, rather than merely later formed Gate organization. A0-S9 is **not** a literal global equation coarse-graining = all primitive Selection. Background ≠ a second manifest object, global complement, or latent object inventory.
+- L0/L1/L2 are not three independently existing worlds. **Author A0-Q9 affirms mathematical models/formalizations are permissible L2 scaffolds, never ontology on their own**; effective landscape, utility and energy forms are domain-local descriptions, not primitive definitions.
 - A public or participatory research protocol does not itself prove an independent Selection-position exists in a given domain; field-indexed history-sensitive explanations remain valid rivals.
 - Existing CN-2 first E2 task family A is paper-only; no new task selection, experiment authorization, GRG fusion release or change to the single CURRENT NEXT.
 
