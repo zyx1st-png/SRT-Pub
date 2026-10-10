@@ -4,7 +4,7 @@ Actor arguments are test labels, not authenticated principals. This simulation
 MUST NOT be connected directly to side-effecting tools. Production security
 needs authenticated identities, scoped capability tokens and tool-side policy.
 """
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from dataclasses import dataclass
 
 
@@ -34,7 +34,7 @@ class CollaborationLedger:
         self._hypotheses = {}
         self._observations = {}
         self._assessments = {}
-        self._approvals = set()
+        self._approvals = {}  # (action, scope, frame_version) -> expiry UTC
         self._beacons = {}
         self._record("frame_created", "user", goal=root_goal)
 
@@ -101,6 +101,11 @@ class CollaborationLedger:
         if accept:
             self._goal = p["goal"]
             self._history.append((self.frame_version + 1, self._goal))
+            invalidated = len(self._approvals)
+            self._approvals.clear()
+            if invalidated:
+                self._record("approvals_invalidated", "system",
+                             count=invalidated, source="frame_version_changed")
         return self._record("frame_decided", actor, proposal_id=proposal_id,
                             goal=p["goal"], accepted=bool(accept),
                             branch_id=p["branch_id"], premise_revision=p["premise_revision"],
@@ -120,14 +125,23 @@ class CollaborationLedger:
                             failure_condition=hypothesis.failure_condition,
                             evidence_status="untested", source=hypothesis.provenance)
 
-    def record_observation(self, evidence_id: str, description: str, *, actor="tool"):
+    def record_observation(self, evidence_id: str, description: str, *, actor="tool",
+                           for_gts=None):
+        """Label an observation for a pre-registered prediction, if applicable.
+
+        This explicit evidence link prevents arbitrary later event reuse.
+        It is NOT a causal-validity or source-authentication guarantee.
+        """
         if actor != "tool" or not evidence_id or not description:
             raise PermissionError("a tool adapter must supply a labeled observation")
         if evidence_id in self._observations:
             raise ValueError("duplicate evidence")
+        if for_gts is not None and for_gts not in self._hypotheses:
+            raise ValueError("cannot label evidence with unknown hypothesis")
         seq = self._record("observed", actor, evidence_id=evidence_id,
-                           description=description, source="tool_observation")
-        self._observations[evidence_id] = seq
+                           description=description, for_gts=for_gts,
+                           source="tool_observation")
+        self._observations[evidence_id] = (seq, for_gts)
         return seq
 
     def assess_gts(self, gts_id: str, evidence_id: str, verdict: str, *, actor="evaluator"):
@@ -142,28 +156,60 @@ class CollaborationLedger:
             raise ValueError("hypothesis already assessed")
         proposal_seq = next(e["seq"] for e in self._events
                             if e["kind"] == "gts_proposed" and e["gts_id"] == gts_id)
-        if self._observations[evidence_id] <= proposal_seq:
+        observation_seq, linked_hypothesis = self._observations[evidence_id]
+        if observation_seq <= proposal_seq:
             raise ValueError("prospective registration must precede evidence")
+        if linked_hypothesis != gts_id:
+            raise ValueError("observation is not registered as evidence for this hypothesis")
         self._assessments[gts_id] = (evidence_id, verdict)
         return self._record("gts_assessed", actor, gts_id=gts_id,
                             evidence_id=evidence_id, verdict=verdict,
                             source="bounded_assessment")
 
-    def grant_once(self, action: str, *, scope="task", actor="user"):
-        if actor != "user" or action not in self.protected_actions or not scope.strip():
-            raise PermissionError("user grant must be scoped to a protected action")
-        self._approvals.add((action, scope))
+    def grant_once(self, action: str, *, scope="task", actor="user",
+                   ttl_seconds=300):
+        """Grant a one-shot approval scoped to action, frame and finite TTL.
+
+        Demo-only actor strings do not authenticate users or authorize live tools.
+        """
+        if (actor != "user" or action not in self.protected_actions
+                or not isinstance(scope, str) or not scope.strip()
+                or isinstance(ttl_seconds, bool)
+                or not isinstance(ttl_seconds, (float, int))
+                or not 0 < ttl_seconds <= 3600):
+            raise PermissionError("user grant requires action, valid scope and finite TTL")
+        expires_at = datetime.now(timezone.utc) + timedelta(seconds=ttl_seconds)
+        key = (action, scope, self.frame_version)
+        self._approvals[key] = expires_at
         return self._record("action_approved", actor, action=action,
-                            authorization_scope=scope, source="user_grant_fixture")
+                            authorization_scope=scope, expires_at=expires_at.isoformat(),
+                            source="user_grant_fixture")
+
+    def revoke(self, action: str, *, scope="task", actor="user"):
+        """Explicit revocation within the current frame, even before first use."""
+        if actor != "user" or not isinstance(scope, str) or not scope.strip():
+            raise PermissionError("only user may revoke a scoped approval")
+        key = (action, scope, self.frame_version)
+        self._approvals.pop(key, None)
+        return self._record("action_revoked", actor, action=action,
+                            authorization_scope=scope, source="user_revocation_fixture")
 
     def execute(self, action: str, evidence_id: str, *, scope="task", actor="tool"):
         if actor != "tool" or action not in self.allowed_actions:
             raise PermissionError("tool adapter/action not authorized")
-        if action in self.protected_actions and (action, scope) not in self._approvals:
-            raise PermissionError("fresh matching scoped approval required")
+        if not isinstance(scope, str) or not scope.strip():
+            raise PermissionError("valid scope required")
+        key = (action, scope, self.frame_version)
+        if action in self.protected_actions:
+            expires_at = self._approvals.get(key)
+            if expires_at is None:
+                raise PermissionError("fresh matching scoped frame approval required")
+            if datetime.now(timezone.utc) >= expires_at:
+                self._approvals.pop(key, None)
+                raise PermissionError("approval has expired")
         if not evidence_id or evidence_id in self._observations:
             raise ValueError("unique tool evidence id required")
-        self._approvals.discard((action, scope))  # one shot; no replay
+        self._approvals.pop(key, None)  # one shot; no replay
         self.record_observation(evidence_id, f"tool result for {action}", actor="tool")
         return self._record("action_executed", actor, action=action,
                             evidence_id=evidence_id,
