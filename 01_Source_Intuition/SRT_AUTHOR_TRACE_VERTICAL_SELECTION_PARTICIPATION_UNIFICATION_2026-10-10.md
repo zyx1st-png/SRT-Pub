@@ -21,6 +21,9 @@ dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
   - Core_Law/SRT_One_Formation.md
+  - Core_Law/SRT_Reference_Scaling.md
+  - _SRT_SYMBOL_TABLE.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
 tags: [AuthorTrace, Selection, Verticality, ForegroundBackground, CoarseGraining, Position, Objectification, Beacon, GRG, ChoiceMap]
 ---
 
@@ -117,11 +120,31 @@ Author's exact reply:
 
 > 「第一，前者。第二，不是反对数学化，而是数学化只是L2层面的脚手架，不是本体。」
 
-**A0-S9 (first question):** author explicitly selects **“粗粒化是 Selection 的一种生成性表现”** over **“形成后组织承载 Selection 作用的过程”** as the sole/primary interpretation of the earlier intuition. Do not silently reduce “粗粒化实现 ... 生成过程” to an exclusively downstream Gate function. This does not itself assert a literal one-to-one identity “all coarse-graining = every primitive Selection occurrence”, nor erase the canonical occurrence/retention distinction. Any necessary downstream typing is a further explanatory task, not permission to replace the author's chosen reading.
+**A0-S9 (first question):** author explicitly selects **“粗粒化是 Selection 的一种生成性表现”** over **“形成后组织承载 Selection 作用的过程”** in that posed pair. The short answer does **not** rule out the second process as a further downstream relation or make the first interpretation exclusive. Do not silently reduce “粗粒化实现 ... 生成过程” to an exclusively downstream Gate function. This does not itself assert a literal one-to-one identity “all coarse-graining = every primitive Selection occurrence”, nor erase the canonical occurrence/retention distinction. Any necessary downstream typing is a further explanatory task, not permission to replace the author's chosen reading.
 
 **A0-Q9 (second question):** author explicitly states that mathematical formalization is **not rejected**; its status is **an L2 scaffold, not ontology**. This resolves the main earlier Q0/Q6 presentation-level tension over whether SRT disallows mathematics. The distinction between a portable mathematical representation and its possible position-involved use remains a bounded M explanation, not itself a new foundational author definition.
 
 **Provenance:** the two question alternatives are assistant wording; “第一，前者” is author-owned selection of the assistant's first alternative, while the L2/not-ontology statement is direct author prose. This is a **noncanonical author second-adjudication source record**, not an authorization to edit the Spine or define a universal coarse-graining operator.
+
+### A0-Q25 — earlier author wording, 2026-09-25 (cross-date source recovery, not a fresh 10-10 quote)
+
+From `SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md` §1 A0-Q2, verbatim:
+
+> 「gate本质上就是一种关于稳定和粗粒化的几何关系」
+
+This is an **earlier author-owned expression**, not an AI premise. It creates a real **scope/relationship question** alongside 10-10 A0-Q2/A0-S9: the 09-25 formed Gate geometry was called “粗粒化的几何关系”; the later author selects “粗粒化是 Selection 的一种生成性表现.” The author has **not yet ruled** whether the earlier Gate geometry is a formed, historically effective trace of the later-described generative process, an independently usable Gate metaphor, or something else. Neither synonymy nor exclusion is a licensed inference.
+
+### Lexical triage: coarse-graining is OVERLOADED_SAME_NAME (M-level route, not a new definition)
+
+The same Chinese word “粗粒化” presently refers to at least three unlike burdens:
+
+1. **Mathematical scale projection**: `Core_Law/SRT_Reference_Scaling.md` uses `π_λ : S → S_λ` for a model-level, often many-to-one coarse-graining/scale mapping. This may **lose representational information**, and ordinary many-to-one `Λ` need not have `Λ^{-1}`. This **does not** by itself annihilate ontic differences.
+2. **Formed Gate / coarse-graining geometry**: the 09-25 A0-Q2 and `Glossary/SRT_Live_Term_Router.md` route “coarse-graining geometry” to formed gating and retained stability/differential reach. `_SRT_SYMBOL_TABLE.md` and the Spine explicitly preserve **primitive Selection != Ĝ/formal Gate role**.
+3. **Selection-generative vertical coarse-graining (author's 10-10 sense)**: 10-10 A0-Q2/A0-S9 aim at the formation of Selection-relative foreground/background organization, **not** a fixed `π_λ` applied to already formed states, and **not** only formed Gate's retained effects.
+
+Triage classification: **OVERLOADED_SAME_NAME**, with **PARTIAL_OVERLAP** in possible history-sensitive manifestations; label scope is noncanonical. These are disambiguating descriptions, **not new primitives**, and their ontological/causal bridges require separately grounded author decisions.
+
+**Exact outstanding author question:** does the 09-25 “gate 的粗粒化几何” refer to a historically retained *formed trace* of the selection-generative coarse-graining described on 10-10? This is a promising **M** interpretation, **not author-confirmed**. Nothing in A0-S9 alone says Gate always follows, or that coarse-graining always persists.
 
 ## 1. Minimum A0-P directional reading — bounded
 
@@ -146,7 +169,7 @@ Author's exact reply:
 - O0 non-maximal indifference and S0 actualizing Selection are co-primitive; no O0-before-S0 causal/temporal pipeline.
 - Selection is not picking from pre-given options, does not require a completed One or subject, and may occur without later durable retention.
 - Event-level foreground/background verticality ≠ formation of One. One requires separately established Selection-mediated vertical reconstitution; formed Selection-position ≠ Bearer ≠ consciousness.
-- **Canonical** occurrence/retention guard: genuine Selection does not require later sedimentation; one-shot Selection remains genuine. The 2026-10-07 source's machine-side “Gate != primitive Selection” interpretation cannot override the explicit later A0-S9 selection of coarse-graining **as a generative manifestation of Selection**, rather than merely later formed Gate organization. A0-S9 is **not** a literal global equation coarse-graining = all primitive Selection. Background ≠ a second manifest object, global complement, or latent object inventory.
+- **Canonical guards:** genuine Selection does not require later sedimentation; one-shot Selection remains genuine. **Primitive Selection != Ĝ / Ghost Operator** is directly supported by `_SRT_SYMBOL_TABLE.md` and Spine §3; formal/formed Gate is not the prior chooser or cause of primitive actualization. 10-10 A0-S9 instead differentiates the **author-intended generative sense of 粗粒化** from an explanation *solely* in terms of formed Gate; it does **not** repeal the Gate non-identity guard. The earlier machine-side *extension* “all coarse-graining != primitive Selection” must not be laundered into canonical fact. Background ≠ a second manifest object, global complement, or latent object inventory.
 - L0/L1/L2 are not three independently existing worlds. **Author A0-Q9 affirms mathematical models/formalizations are permissible L2 scaffolds, never ontology on their own**; effective landscape, utility and energy forms are domain-local descriptions, not primitive definitions.
 - A public or participatory research protocol does not itself prove an independent Selection-position exists in a given domain; field-indexed history-sensitive explanations remain valid rivals.
 - Existing CN-2 first E2 task family A is paper-only; no new task selection, experiment authorization, GRG fusion release or change to the single CURRENT NEXT.
@@ -156,6 +179,9 @@ Author's exact reply:
 - [O0 primitive generativity source](SRT_AUTHOR_ADJUDICATION_O0_PRIMITIVE_GENERATIVITY_2026-09-14.md)
 - [Selection-relative background / vertical recurrence source](SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md)
 - [Gate, coarse-graining and verticality correction](SRT_AUTHOR_ADJUDICATION_BEARER_GATE_VERTICALITY_MEMBRANE_GATING_2026-10-07.md)
+- [09-25 author's Gate/coarse-graining geometry statement](SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md)
+- [Symbol table: primitive Selection != Ĝ](../_SRT_SYMBOL_TABLE.md)
+- [π_λ model-level coarse-graining](../Core_Law/SRT_Reference_Scaling.md)
 - [Constitution: located ontology versus participatory methodology](SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md)
 - [GRG: cross-objectification, anti-God-view and failure rights](SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md)
 - [Canonical One-formation owner](../Core_Law/SRT_One_Formation.md)
