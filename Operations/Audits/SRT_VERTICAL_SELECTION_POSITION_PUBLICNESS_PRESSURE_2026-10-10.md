@@ -1,7 +1,8 @@
 ---
 id: SRT-VERTICAL-SELECTION-POSITION-PUBLICNESS-PRESSURE-20261010
 type: audit
-status: proposed
+status: draft
+record_stage: proposed
 date: 2026-10-10
 layer: operations
 epistemic_layer: analysis
@@ -39,6 +40,8 @@ tags: [Audit, ExternalComparison, OpenQuestions, ForegroundBackground, CoarseGra
 
 1. **P. Ao / stochastic evolution potential:** stochastic perturbation can help a system transition between peaks in a modeled landscape; potential geometry, drift and environmental/parameter changes also matter. Ao is NOT correctly summarized as “only random fluctuations on a permanently fixed fitness landscape.” The open SRT job concerns when the *formation of effective distinctions and boundaries* is itself explanandum, rather than a superior Ao equation. Full contemporary source fidelity and same-target audit remain to do if a comparative claim is advanced.
 2. **Dynamic coarse-graining (Mori–Zwanzig, information bottleneck, predictive-state models):** traditional science already handles process histories, conditional projections, noise and memory. Thus “traditional coarse-graining always static/horizontal flattening” is too broad. The narrower SRT question is provenance and revision of the difference/equivalence-making organization.
+   - **Flack (2017)**: “Coarse-graining as a downward causation mechanism”, *Phil. Trans. R. Soc. A* 375, 20160338, DOI 10.1098/rsta.2016.0338. This is a direct strong comparator for macro-level coarse-grained regularities constraining constituents.
+   - **Bourrat (2023)**: “A coarse-graining account of individuality: how the emergence of individuals represents a summary of lower-level evolutionary processes”, *Biology & Philosophy* 38:33, DOI 10.1007/s10539-023-09917-x. Direct comparison target: individuality and organized persistence. Both citations are **inherited from the 2026-10-07 in-repo source card**, not freshly full-text verified by this audit.
 3. **Gestalt, enactivism, Simondon, dynamical systems:** foreground/background, individuation, action-dependent meaning and historically coupled reorganization are established strong neighboring families. SRT cannot claim priority for foreground/background nor mere organizational recurrence.
 4. **Active inference, POMDP, RL, latent-state and representation learning:** capable models can dynamically infer new latent classes, action affordances, transitions, active sampling and change points. A study demonstrating flexible recategorization or active-learning advantage is insufficient to show an SRT-specific mechanism.
 5. **Neurophenomenology / microphenomenology / participatory sense-making:** established methods already study located experiences and reciprocal observer/participant involvement. The SRT-specific possible contribution must be bounded and causally testable; participation alone is inherited/shared.
@@ -58,9 +61,9 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 
 ## 4. Source-text tension that should remain explicit
 
-- Author Q2 says “粗粒化实现的是选择这种垂直结构的生成过程”; prior 2026-10-07 source and current One-formation owners explicitly say **coarse-graining / formed Gate != primitive Selection**, and event-level verticalization need not be retained. Compatible narrow reading: coarse-graining may organize/realize later-effective vertical formation; not an additional primitive. If the author intends literal identity, this is an **AUTHOR SEMANTIC DECISION NEEDED**, not something M should silently “fix”.
+- Author Q2 says “粗粒化实现的是选择这种垂直结构的生成过程”; the 2026-10-07 author's **A0-Q1** says 「这种门控形成和Bias既是选择和垂直结构形成」, which is aligned in direction rather than an author-on-author contradiction. The earlier source's **A0-S1** (“认同，继续”) accepts a *direction of machine continuation*, not every machine proposition at A1. “Gate != primitive Selection” is an **M-level proposed disentanglement**, NOT a verbatim canonical coarse-graining verdict in `Core_Law/SRT_One_Formation.md` or `Core_Law/SRT_Generative_Ontology_Spine.md`. The actual canonical guard is narrower: **Selection occurrence != retained historical efficacy/sedimentation**; terminal Selection is genuine. The author's stronger intended sense of “粗粒化实现” (formed realization versus literal identification) is **OPEN**, and must be queried without putting the M view in the author's mouth.
 - Author Q4 portrays traditional classification/normalization/coarse-graining as horizontal; mature dynamic/participatory models are counterexamples to the universal reading. Compatible narrow reading: contrast starting burdens rather than caricaturing all traditional science. The scope of the author's stronger comparison remains OPEN.
-- Author Q0 says formalization “注定无法完全还原一种原始的差异”; this is a stated philosophical view, **not** an established universal mathematical impossibility result. Any claim about particular losses must declare the target and representation.
+- **Potential internal scope tension requiring author adjudication:** Q0 says 「所有形式化的内容都是脱离选择位置下产生的」, whereas Q6 says 「在位置参与下的可用公式」. Possible M reconciliation: the **abstracted/transportable formula** differs from its **situated use** in a newly actualizing event; the author has not separately accepted this distinction as a definition. Separately, Q0's “注定无法完全还原一种原始的差异” is a philosophical intuition, **not** an established universal mathematical impossibility theorem; test any particular representational loss against a declared target.
 - Author Q6 makes the AGI remark as an analogy, not a theorem or current capability prediction.
 - Author Q7 prioritizes stability/unification **rather than formalization**; do not silently reframe its goal as “produce a common position-conditioned equation.” The method must demonstrate actual cross-context/cross-position useful continuation, not formula count.
 
@@ -90,11 +93,13 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 
 ## 7. 外部对照三项 (partial check only)
 
-- **事实冲突：** Under a universal reading, Q4 conflicts with the existence of dynamic, history-based scientific coarse-graining; repair by narrowing comparison to research starting points. Q6's AI/AGI is explicitly hypothetical and cannot be treated as a verified fact.
-- **内部矛盾：** Potential Q2 conflict with the earlier author-confirmed Gate/coarse-graining ≠ primitive Selection. It is compatible if “实现” refers to formed/recurrent organization rather than primitive identity; exact author scope remains an OPEN clarification, not resolved by this audit.
-- **已有说法：** Gestalt figure/ground, Simondon individuation, enactive participatory sense-making, dynamic predictive-state coarse-graining and neurophenomenology overlap *partially*. No source-native same-target completeness or novel SRT increment has been paid in this writeback.
+- **事实冲突：** Under a universal reading, Q4 (“传统研究...都是基于水平的抹平”) conflicts with dynamic / history-sensitive scientific coarse-graining, including the in-repo Flack/Bourrat comparators. Q1 about Ao asks a question, and Q6 expressly calls AI/AGI an analogy; neither is independently coded as a factual conflict.
+- **内部矛盾（解释范围待作者裁决）：** Q0 「所有形式化...脱离选择位置」 versus Q6 「在位置参与下的可用公式」 can look contradictory under the same unrestricted meaning of “形式化/公式”. A possible representation-versus-use repair is M only, not author adjudication. Q2 and the earlier 10-07 **A0-Q1** both link coarse-graining/Gate to vertical Selection formation; they are **not** themselves contradictory. Whether literal identity or formed realization is intended remains OPEN but is not classified here as an author-versus-author contradiction.
+- **已有说法：** Flack 2017 and Bourrat 2023 on dynamic coarse-graining/individuality; Gestalt/Rubin on figure–ground; Simondon on individuation; Haraway 1988 on situated knowledge; Tulving & Thomson 1973 on encoding specificity; Licklider 1960 on human–computer symbiosis; enactive participatory sense-making and neurophenomenology. **PARTIAL_OVERLAP** only (working map, with Flack/Bourrat source metadata inherited from 10-07); external works not re-reviewed here, no same-target completeness or SRT increment established.
 
 ## 8. No silent execution changes
+
+The related open draft PR #1115 uses `recover_beacon()` to fetch an event *record* dictionary, not to recreate the original ontological Selection. This is a terminology/interface risk to be reviewed in #1115, not a reason to alter its code in this PR.
 
 This record preserves a source-author methodological advance and its pressure points only. It is not a third main deep well, selected experiment, new GRG fused result, formalization authority, level increase or new research program release. Do not edit STATUS/CURRENT NEXT, Core_Law, published or submitted manuscripts, PR #1115, or frozen HP-B based on this record.
 
@@ -103,4 +108,5 @@ This record preserves a source-author methodological advance and its pressure po
 - [Constitution source](../../01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md)
 - [Selection relative background source](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md)
 - [One formation owner](../../Core_Law/SRT_One_Formation.md)
+- [Current GRG foundation v0.3](../Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md)
 - [CN-2 first E2 task family A](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md)
