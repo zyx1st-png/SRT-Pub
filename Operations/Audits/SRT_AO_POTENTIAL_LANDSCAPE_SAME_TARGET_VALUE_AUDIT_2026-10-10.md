@@ -50,13 +50,13 @@ tags: [Audit, PingAo, SRT, PotentialLandscape, NonEquilibrium, Objectification, 
 
 ### 1.1 来源处理的对象和起点
 
-Ao 和共同作者把系统的状态量、漂移、扩散／随机驱动、稳定性及非详细平衡动力学作为数学起点。2004 倾向于**构造** potential；2005 把 ascendancy、transverse、Wright potential 与随机驱动并列，提供一个含层级问题的形式框架；2007 探讨这个构造与更常见随机积分规则的差别；2009 说明生物网络景观的稳健／稳定应用；2017 年综述强调耗散 + detailed-balance-breaking 及 A-type；2017 年开放应用论文展示对高维强噪声系统的具体数值方法。
+Ao 和共同作者把系统的状态量、漂移、扩散／随机驱动、稳定性及非详细平衡动力学作为数学起点。2004 倾向于**构造** potential；2005 把 ascendancy、transverse、Wright potential 与随机驱动并列，提供一个含层级问题的形式框架；**其 F-theorem 重释的是 R. A. Fisher 的自然选择基本定理，不是 Fisher–Rao 信息几何度规**；2007 探讨这个构造与更常见随机积分规则的差别；2009 说明生物网络景观的稳健／稳定应用；2017 年综述强调耗散 + detailed-balance-breaking 及 A-type；2017 年开放应用论文展示对高维强噪声系统的具体数值方法。
 
 **关键修正：** Ao 的 landscape 不是只能预设为一幅不会变的地形，更不只是“变异在山谷间弹跳”。动力系统参数、噪声形式、稳定性结构及模型解释的变化都进入其研究范围。SRT 如仅描述“可随历史或环境变动的景观”，不能据此认领独特机制。
 
 ### 1.2 非梯度运动与稳态结构不是同一维度
 
-在非详细平衡系统中，系统动力学并非必然是纯粹对某个势函数作梯度下降。Ao17R 明示 detailed-balance-breaking 成分；Ao17E 明示非详细平衡可以造成**有方向的、非互易的转换作用**和路径差异。不能用一维固定 fitness 函数把这些全部重写为“随机选高峰”，也不能把 Ao 的 transverse component 当成某种 SRT 前对象 Selection 的数学等价物。
+在非详细平衡系统中，系统动力学并非必然是纯粹对某个势函数作梯度下降。Ao17R 明示 detailed-balance-breaking 成分；Ao17E 明示非详细平衡可以造成**有方向的、非互易的转换作用**和路径差异。其 **38 维前列腺癌网络使用单位扩散矩阵的加性噪声**，不能将其说成已在这个高维应用中验证任意乘性噪声；不能用一维固定 fitness 函数把这些全部重写为“随机选高峰”，也不能把 Ao 的 transverse component 当成某种 SRT 前对象 Selection 的数学等价物。
 
 ### 1.3 “生成的景观”与“生成切分”要分开
 
@@ -101,29 +101,35 @@ Ao 构造势函数并**不**在概念上将三者合一。作者对“Gate 粗�
 
 即使 SRT 位置参与对某些域可能重要，研究仍应区分客观的操作可重复条件／轨迹、参与者实际作用、局部因果响应和更强的本体解释。Ao 的群体／生物网络景观与位置参与任务也未必属于同一个 explanandum。它们不能因为领域不同自动互相否定或相互证明。
 
-## 4. 2016 独立数学争论：明确保留不确定性
+## 4. 2016 势/准势的已知对应与分解唯一性争论
 
-**强邻居不可绕过：** Zhou & Li, *J. Chem. Phys.* 144:094109 (2016), 讨论 steady-state potential、Freidlin–Wentzell quasi-potential 和 Ao A-type 路线的关系，提出一般 SDE decomposition **nonunique** 的论点。Yuan, Tang & Ao, *J. Chem. Phys.* 145:147104 (2016), 反驳并论述某些 OU 类及边界条件；Zhou & Li, *J. Chem. Phys.* 145:147105 (2016), 回应其定义和边界条件不足。2017 Ao 共同作者综述仍主张唯一性。
+### 4.1 势的数学对应（在已声明条件下）
 
-**本次审计不裁定哪方的完整数学论证赢得最终证明。** 用于 SRT 时，任何泛化都要完成：状态空间/变量定义、SDE 随机积分约定、扩散矩阵类别、适用域、边界条件、广义存在／唯一性、数据 identifiability 与 numerical validation。**“势函数唯一可得”不能是未经检验的 SRT 理论前提。**
+[Zhou & Li 2016, arXiv:1511.02088 Abstract](https://arxiv.org/abs/1511.02088) 明确提出：（1）**Jin Wang 一系利用稳态分布构造的势景观**在**零噪声极限**是 **Freidlin–Wentzell 准势**；（2）由 **Ao 的 SDE decomposition + A-type integral** 构造的势与该准势重合；（3）局部与全局准势、时间/噪声极限取序及跃迁最可能路径仍须区分。AO17E 的 Ref. 71 引述 ZL16。这意味着**在相应极限下，这三条势路线不是三个独立预测源，不得重复计数**；有限噪声模型、随机解释、flux 或数值算法仍可能有实质不同。
 
-这项争议不是 SRT 反驳 Ao 的直接证据，也不证明 SRT 因不要求数学化而“超越”数学争议。
+### 4.2 真正的唯一性争论
 
-## 5. Ao 与其他强邻居也不能合称一个 “Ao model”
+ZL16 的结论包括 **SDE decomposition 存在但一般不唯一**。Yuan、Tang、Ao [2016 arXiv:1603.07927](https://arxiv.org/abs/1603.07927) 则主张数学及物理证明可确保唯一性，并讨论**直接从稳态分布求 potential 的局限**。Zhou 与 Li [2016 回复 arXiv:1609.06587](https://arxiv.org/abs/1609.06587) 指出其具体、可操作的边界条件不足，并反对把附加假设下的 **Ornstein–Uhlenbeck (OU)** 特例推广到一般非线性系统。OU 局限的措辞属于 **ZL16R 对另一方的批评**，而非 YTA16 摘要原话。
 
-| 方法族 | 最强来源侧已做之事 | SRT 对照时的必要控制 |
+**AO17E 自身的限制：** 从漂移与随机积分解释得到的 SDE 表征可能不唯一；反对称 Q 矩阵一般需要额外边界／物理条件；只有在找到合适的全局最小作用路径时，作者才论述势的唯一性。这三种模型、Q 和势的“唯一性”与可观测 identifiability 是不同问题。
+
+**审计不判定数学争论哪一方最终胜出。** L2 借用必须声明状态变量、漂移/扩散、积分规则、有限/零噪声、边界条件、最小路径的准确范围。势层的对应不意味着完整动力学／通量等价，也不是 SRT 原初 Selection 的数学证明。
+
+## 5. 强邻居之间的对应与独立差异须分层
+
+| 方法族 | 来源已经支付的工作 | 公平对照条件 |
 | --- | --- | --- |
-| Ao SDE decomposition + A-type | 非平衡势构造、耗散/横向分解、与噪声解释相关的数学结构 | 明确 A-type 约定、边界及是否唯一；source-specific 预测 |
-| Freidlin–Wentzell quasipotential | 大偏差／小噪声极限中的逃逸与最可能路径；不是任意噪声通用式 | 不能用 FW 小噪声条件内的失败虚构所有随机方法失败 |
-| Wang–Xu–Wang potential-and-flux | 景观与 flux 对非平衡循环、稳健性和耗散的建模 | **另一作者体系**，不可混为 Ao 原创 |
-| Zhou–Li mathematical comparison | 明确讨论 steady-state, quasi-potential, Ao 及其非唯一性条件 | 任何数学“普遍唯一”都须审议反例和边界 |
-| Dynamical coarse-graining / active learning / latent cause | 模型可学习状态划分、特征权重、类别结构和参数漂移 | “原来背景成为前景”不自动比这些模型新；在 cognition 域还需 ALCOVE/SUSTAIN/latent-cause 对比 |
+| Ao SDE decomposition / A-type | 耗散/非梯度分解、势构造、随机解释以及具体高噪声求解 | ZL16 的相应势/准势重合必须计入；其独立负担在**有限噪声、积分解释、Q/边界、路径及算法** |
+| FW quasipotential | 小噪声大偏差、作用量和逃逸路径；相关极限下与 Ao 势相联系 | 不把同一极限下势差异虚构出来，也不将小噪声条件泛化到任何有限噪声 |
+| **Jin Wang–Li Xu–Erkang Wang** potential-and-flux | 稳态分布势与非平衡 flux 的独立研究体系 | Wang 的势在零噪声极限与 FW 准势相联系；区分作者贡献与 flux、有限噪声差异 |
+| Zhou–Li mathematical comparison | 论证势的对应，提出一般 SDE decomposition 不唯一 | 不能把“势对应”与“分解唯一性”写成同一个未决争论 |
+| 动态粗粒化、主动学习与潜在原因模型 | 状态切分、权重和历史约束变化的成熟解释工具 | 在认知域还须与 ALCOVE、SUSTAIN、latent-cause 等比较同目标预测 |
 
-**模型公平性：** 不把一个 *fixed-potential toy implementation* 当成 Ao 整个文献群；要比较可表达的机制、允许的条件、参数预算、可获取的历史／行动／反馈、held-out readouts 与外部可识别性。
+**模型公平性：** 不拿一个固定势玩具模型冒充 Ao 全部文献，也不把三种彼此相关的极限势记为三个独立 baseline。先列同一目标/条件的数学等价部分，再比较各自未被等价覆盖的有限噪声、flux、噪声解释、局部/全局和历史条件。
 
 ## 6. 正向技术价值：三个 L2 候选用例（不授权执行）
 
-1. **局部稳定和跃迁解释：** 当 domain 数据已提供可声明的 \`x(t)\`、漂移与噪声机制，研究 \`U(x)\` / quasi-potential / action / barrier 是否能描述稳定态占据、跨越概率、方向非对称和噪声响应；先比较 Ao、FW、Wang 及普通 SDE，不从这些结果推出 SRT 原初 Selection。
+1. **局部稳定和跃迁解释：** 当 domain 数据有声明好的 \`x(t)\`、漂移与噪声机制，比较稳态占据、势垒、作用量、方向非对称和噪声响应。**不要对 Ao/FW/Wang 已对应的零噪声势重复计数**；实际区别应放在有限噪声、A-type/Itô、局部与全局准势、flux、最优路径、Q 及边界条件。以上模型结果不能推出 SRT 原初 Selection。
 2. **景观模型更新诊断：** 给定参数扰动、外部条件变化或主动干预，区分 \`U(x;\theta,t)\` 变化、稳定态／盆地变化、因历史记忆改变可达性，与**分析者重新定义状态变量/等价类**；标明哪个是模型内部动力学，哪个是换对象化协议。以上符号仅候选模型语言，不是 SRT 理论方程。
 3. **跨位置参与式模型契约：** 记录谁/何种操作生成观测，干预是否改变以后的生成条件，跨场景模型重建如何执行；可让局部 Ao 动力学服务于不同角色的协作，但不能将单一 public \`U\` 视为所有位置共享的真实景观。这延续 Beacon/ChoiceMap 的 **meta-level validation contract** 方向，而非要求共同拥有完全一样的内部语义。
 
@@ -153,7 +159,7 @@ CN-2 当前作者选择的 first E2 family A = **后果结构化多属性概念�
 - crucial separation: **model-level** structural transition ≠ empirical claim that primitive Selection or an SRT One was identified.
 - reverse constraint: 若 Ao/Wang/FW/source-native 方法已完整支付所选解释工作，只记 **SOURCE-OWNED AT THIS EXPLANATORY JOB / NO LOCAL COMPARATIVE INCREMENT**，不从 SRT 全体系减去原初问题，也不硬凑 GRG 新语法。
 
-当前 GRG fusion/broad-synthesis §10.2 仍 **HOLD**。不得将 Ao 作为新的已获准跨域验证案例或独立深井；本节只是未来审批时可检索的方法地图。
+当前 GRG fusion / broad-synthesis **HOLD** 由 **`STATUS.md` programme state（约第 84 与 1162 行）**和对应治理关口控制；**GRG v0.3 的 §10.2 是 operative positionality view**，不能误引为 HOLD 所在节。不得将 Ao 作为新的已获准跨域验证案例或独立深井；本节只是未来审批时可检索的方法地图。
 
 ## 9. Owner-side bounded novelty probe / subtraction
 
@@ -161,7 +167,7 @@ CN-2 当前作者选择的 first E2 family A = **后果结构化多属性概念�
 | --- | --- | --- |
 | 势景观作为 SRT 新本体 operator | \`SRT_Fisher_FEP_Landscape_Interface.md\`, \`Core_Law/SRT_Reference_Dynamics.md\`, \`Core_Law/SRT_Generative_Ontology_Spine.md\` | **ALREADY OWNED AS L2/HYBRID INTERFACE, NOT NEW ONTOLOGY** |
 | “Selection 可生成前景与相对背景” | Spine §3；10-10 author trace A0-Q2/A0-S9 | **ALREADY OWNED / AUTHOR-SOURCE**, 不得从 Ao 倒灌为新 primitive |
-| 非详细平衡、非梯度动力学、势垒 | Ao + FW/Wang 成熟源；仓库 Reference Dynamics formed-side 方程 | **INHERITED SOURCE MECHANISM**；不可标记 SRT 独创 |
+| 非详细平衡、非梯度动力学、势垒 | Ao、FW、Wang 成熟来源与 ZL16 中的势对应；仓库 Reference Dynamics formed-side 方程 | **INHERITED SOURCE MECHANISM**；零噪声势层不能重复计数，也不可标记 SRT 独创 |
 | 泛化的 “Ao 景观重塑 → SRT Gate 几何” | 09-25 Gate author trace、#1116 OPEN map | **UNRESOLVED OVERLAP**；作者明确不确定，不从数学构造推导历史留存 |
 | 位置参与与重切分有新可检验增量 | CN-2 E2 family A / 2026-10-10 author source | **NOT ESTABLISHED**；现有最强邻居能处理部分任务 |
 | 本 PR 的新增价值 | 上述各 owner | **SOURCE-FIDELITY + REVERSE CONSTRAINT + BOUNDED RESEARCH ROUTING ONLY**；不新建平行 schema、level、primitive、equation 或 standalone lane |
@@ -182,7 +188,7 @@ CN-2 当前作者选择的 first E2 family A = **后果结构化多属性概念�
 
 1. **事实冲突：** 若作者 Q1 被扩张为「Ao 只研究在固定 landscape 中的随机扰动」，则与 AO04/AO05/AO17E/AO17R 来源冲突；但作者原话只是疑问，不登记为作者已犯事实错误。**核定结论：作者事实冲突无（仅在已核直接原话范围内）。**
 2. **内部矛盾：** 10-10 作者关于“粗粒化是 Selection 的生成性表现”与“数学化是 L2 脚手架”在本卡所核范围不冲突；09-25 Gate 粗粒化几何的因果谱系仍 **AUTHOR-OPEN**，而非自动矛盾。
-3. **已有说法：** AO04/AO05/AO17E 的非平衡势构造／噪声变化——**部分重合**（SRT formed/L2 动态）；ZL16/FW 的准势和跃迁路径——**部分重合**（形成后的稳定/路径）；Jin Wang potential/flux——**部分重合**（非梯度循环）；均不能无损转换成 SRT primitive ontology，也不由这种 scope 差异自动产生 SRT 科学增量。
+3. **已有说法：** AO04/AO05/AO17E 的非平衡势构造／噪声变化——**部分重合**（SRT formed/L2 动态）；ZL16 已联系 Jin Wang 稳态势的零噪声极限、FW 准势及 Ao A-type 势——**相关极限势层有条件的数学重合**，不是三个独立增量；Wang 的独立 flux 研究——**部分重合**（非梯度循环）；均不能无损转换成 SRT primitive ontology，也不由这种 scope 差异自动产生 SRT 科学增量。
 
 ## 12. Result, scope and traceability
 
@@ -196,5 +202,6 @@ CN-2 当前作者选择的 first E2 family A = **后果结构化多属性概念�
 - [现行 GRG GTS owner](../Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md)
 - [CN-2 family A paper-only 作者裁决](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md)
 - [Pipeline 1 official log](../Material_Log/2026-10_Part01.md)
+- [Programme HOLD owner](../../STATUS.md)
 
 **当前状态：** paper-level source comparison complete within declared accessible subset; full mathematical uniqueness proof review, reproducibility, and any same-target prospective SRT model comparison remain **OPEN**. No Core_Law, canonical symbol, STATUS/CURRENT NEXT, existing PR, draft paper, experiment, or new GRG fusion work modified.
