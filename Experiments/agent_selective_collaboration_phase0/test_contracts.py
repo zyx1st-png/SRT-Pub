@@ -63,9 +63,9 @@ class ContractTests(unittest.TestCase):
 
     def test_gts_has_prospective_observation_and_assessment(self):
         seq = self.s.propose_gts(Hypothesis("g1", "supplier link", "relink",
-                                           "more reachable tasks", "no gain"))
+                                           "more reachable tasks", "no gain", "future_reach"))
         self.assertEqual(self.s.events[seq - 1]["evidence_status"], "untested")
-        evidence_seq = self.s.record_observation("e1", "supplier link changed", for_gts="g1")
+        evidence_seq = self.s.record_observation("e1", "supplier link changed", for_gts="g1", measurement_key="future_reach")
         assessed_seq = self.s.assess_gts("g1", "e1", "inconclusive")
         self.assertGreater(assessed_seq, evidence_seq)
         self.assertEqual(self.s.events[-1]["verdict"], "inconclusive")
@@ -74,15 +74,15 @@ class ContractTests(unittest.TestCase):
 
     def test_old_evidence_cannot_score_new_gts(self):
         self.s.record_observation("e-old", "already known")
-        self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d"))
+        self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d", "m1"))
         with self.assertRaisesRegex(ValueError, "precede evidence"):
             self.s.assess_gts("g1", "e-old", "supported")
         with self.assertRaises(ValueError):
-            self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d"))
+            self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d", "m1"))
 
     def test_gts_invalid_assessor_and_verdict(self):
-        self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d"))
-        self.s.record_observation("e1", "observation", for_gts="g1")
+        self.s.propose_gts(Hypothesis("g1", "a", "b", "c", "d", "m1"))
+        self.s.record_observation("e1", "observation", for_gts="g1", measurement_key="m1")
         with self.assertRaises(PermissionError):
             self.s.assess_gts("g1", "e1", "supported", actor="agent")
         with self.assertRaises(ValueError):
@@ -138,7 +138,7 @@ class ContractTests(unittest.TestCase):
 
     def test_hypothesis_requires_all_fields(self):
         with self.assertRaises(ValueError):
-            self.s.propose_gts(Hypothesis("g2", "", "intervention", "prediction", "failure"))
+            self.s.propose_gts(Hypothesis("g2", "", "intervention", "prediction", "failure", "m2"))
 
     def test_unprotected_tool_operation(self):
         self.s.execute("read", "read-1")
@@ -184,18 +184,61 @@ class ContractTests(unittest.TestCase):
             self.s.execute("send", "expired-evidence", scope="recipient-A")
 
     def test_only_linked_observation_can_assess_hypothesis(self):
-        self.s.propose_gts(Hypothesis("g1", "supplier", "link", "improve", "no improvement"))
-        self.s.propose_gts(Hypothesis("g2", "tariff", "change", "reduce cost", "no cost decrease"))
+        self.s.propose_gts(Hypothesis("g1", "supplier", "link", "improve", "no improvement", "service_metric"))
+        self.s.propose_gts(Hypothesis("g2", "tariff", "change", "reduce cost", "no cost decrease", "cost_metric"))
         self.s.record_observation("unlinked", "some later event")
-        self.s.record_observation("different", "later other hypothesis", for_gts="g2")
+        self.s.record_observation("different", "later other hypothesis", for_gts="g2", measurement_key="cost_metric")
         with self.assertRaisesRegex(ValueError, "not registered"):
             self.s.assess_gts("g1", "unlinked", "supported")
         with self.assertRaisesRegex(ValueError, "not registered"):
             self.s.assess_gts("g1", "different", "supported")
         with self.assertRaises(ValueError):
             self.s.record_observation("bad", "label", for_gts="does-not-exist")
-        self.s.record_observation("linked", "target measurement", for_gts="g1")
+        self.s.record_observation("linked", "target measurement", for_gts="g1", measurement_key="service_metric")
         self.s.assess_gts("g1", "linked", "inconclusive")
+
+
+    def test_mismatched_measurement_key_is_rejected(self):
+        self.s.propose_gts(Hypothesis("g1", "supplier", "read",
+                                       "increased reachable tasks", "no gain", "future_task_count"))
+        with self.assertRaisesRegex(ValueError, "measurement key"):
+            self.s.record_observation("wrong", "later observation",
+                                      for_gts="g1", measurement_key="other_metric")
+        self.assertFalse(any(e.get("evidence_id") == "wrong" for e in self.s.events))
+        self.s.record_observation("right", "subsequent measurement",
+                                  for_gts="g1", measurement_key="future_task_count")
+        self.s.assess_gts("g1", "right", "inconclusive")
+
+    def test_intervention_own_result_is_linked_to_predeclared_measurement(self):
+        self.s.propose_gts(Hypothesis("g1", "new channel", "send",
+                                       "higher coverage", "no change", "coverage"))
+        self.s.grant_once("send", scope="test-recipient")
+        with self.assertRaisesRegex(ValueError, "measurement key"):
+            self.s.execute("send", "bad-evidence", scope="test-recipient",
+                           for_gts="g1", measurement_key="other")
+        self.s.execute("send", "intervention-evidence", scope="test-recipient",
+                       for_gts="g1", measurement_key="coverage")
+        observation = next(e for e in self.s.events
+                           if e.get("evidence_id") == "intervention-evidence"
+                           and e["kind"] == "observed")
+        self.assertTrue(observation["self_generated"])
+        self.assertEqual(observation["originating_intervention"], "send")
+        self.assertEqual(observation["measurement_key"], "coverage")
+        self.s.assess_gts("g1", "intervention-evidence", "supported")
+
+    def test_intervention_must_match_registered_action(self):
+        self.s.propose_gts(Hypothesis("g1", "condition", "read", "yes", "no", "metric"))
+        self.s.grant_once("send")
+        with self.assertRaisesRegex(ValueError, "pre-registered hypothesis intervention"):
+            self.s.execute("send", "evidence", for_gts="g1", measurement_key="metric")
+        self.s.execute("read", "correct-action", for_gts="g1", measurement_key="metric")
+
+    def test_revocation_of_nonexistent_or_nonprotected_action_is_rejected(self):
+        with self.assertRaises(PermissionError):
+            self.s.revoke("read")
+        with self.assertRaisesRegex(ValueError, "no outstanding"):
+            self.s.revoke("send")
+        self.assertFalse(any(e["kind"] == "action_revoked" for e in self.s.events))
 
 
 if __name__ == "__main__":
