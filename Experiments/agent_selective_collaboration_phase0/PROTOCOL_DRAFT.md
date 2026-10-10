@@ -2,7 +2,7 @@
 id: SRT-AGENT-COLLAB-PHASE0-PROTOCOL-20261010
 type: experiment_protocol
 tags: [ChoiceMap, GRG, Beacon, Agent, EngineeringValidation, PreregistrationDraft]
-status: draft_prelock
+status: draft
 version: v0.1
 layer: operations
 epistemic_layer: os
