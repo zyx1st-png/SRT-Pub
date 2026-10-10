@@ -17,6 +17,10 @@ n_mode_triggered: false
 dependency:
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_BEARER_GATE_VERTICALITY_MEMBRANE_GATING_2026-10-07.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - Core_Law/SRT_Reference_Scaling.md
+  - _SRT_SYMBOL_TABLE.md
   - 01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md
   - Operations/Proposals/SRT_GRG_RESEARCH_FRAMEWORK_V0_1_2026-09-21.md
 tags: [Audit, ExternalComparison, OpenQuestions, ForegroundBackground, CoarseGraining, Position, Publicness]
@@ -61,11 +65,21 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 
 ## 4. Source-text tension that should remain explicit
 
-- **Author Q2 was expressly clarified by A0-S9:** asked to select between **“粗粒化是 Selection 的一种生成性表现”** and **“形成后组织承载 Selection 作用的过程”**, the author answered **“第一，前者”**. Therefore the **directional choice is RESOLVED**: do not substitute an exclusively formed-Gate, post-selection account for the generative-manifestation thesis. The earlier 2026-10-07 author's A0-Q1 「这种门控形成和Bias既是选择和垂直结构形成」 is compatible as author direction, while the 10-07 machine-side Gate/Selection disentanglement remains M interpretation. The canonical constraints are **Selection occurrence != retained efficacy/sedimentation** and terminal Selection genuinely occurs; A0-S9 neither changes these nor establishes a universal literal identity of coarse-graining with primitive Selection. The **precise domain mechanisms and scope** of “generative manifestation” remain research OPEN, not the basic author option choice.
+- **A0-S9 scope:** asked to choose **“粗粒化是 Selection 的一种生成性表现”** versus **“形成后组织承载 Selection 作用的过程”**, the author chose **“第一，前者”**. This gives a direction **without** excluding every downstream Gate/coarse-graining-geometry role. The canonical **primitive Selection != Ĝ / Ghost Operator** guard is explicit in `_SRT_SYMBOL_TABLE.md` and Spine §3; no later author option selection revokes it. In contrast, applying this formal Gate non-identity to **every meaning of 粗粒化** was an overbroad machine inference. Spine §3 directly supports simultaneous differentiation/Selection-relative backgrounding, compatible with the generative author's intention but **does not define a universal coarse-graining operation**. The 2026-09-25 author's direct quote is 「gate本质上就是一种关于稳定和粗粒化的几何关系」; it must be kept alongside the 10-10 sense, not merged by name. **OPEN author question:** does the 09-25 Gate geometry denote a formed historical *trace* of the 10-10 generative process? If so, under what retention/One conditions? Neither universal persistence nor causal identity is decided.
 - Author Q4 portrays traditional classification/normalization/coarse-graining as horizontal; mature dynamic/participatory models are counterexamples to the universal reading. Compatible narrow reading: contrast starting burdens rather than caricaturing all traditional science. The scope of the author's stronger comparison remains OPEN.
-- **Q0/Q6 main normative tension explicitly resolved by A0-Q9:** the author states **“第二，不是反对数学化，而是数学化只是L2层面的脚手架，不是本体。”** The position-involved use of a formula is allowed; no uniform mathematical formula is required as a primitive ontological ground. As a narrower **M explanatory hypothesis**, abstract/transportable representation and its situated use may have different roles; this explanatory mechanism was not independently made canonical. Q0's “注定无法完全还原一种原始的差异” still remains a philosophical intuition, **not** a proved universal mathematical impossibility theorem; test actual representational losses under declared scopes.
+- **Q0/Q6 partially clarified by A0-Q9:** the author's exact statement **“第二，不是反对数学化，而是数学化只是L2层面的脚手架，不是本体。”** resolves **whether mathematics is rejected** (no) and **its ontological status** (L2 scaffold, not ontology). It does **not** decide the finer original wording about mathematical representations “在脱离位置下产生” versus their “在位置参与下” use. The portable-representation / situated-use distinction remains a plausible **M** hypothesis and explicitly **OPEN**. Q0's “注定无法完全还原一种原始的差异” is a philosophical intuition, not a proved universal impossibility theorem; test particular losses against declared tasks.
 - Author Q6 makes the AGI remark as an analogy, not a theorem or current capability prediction.
 - Author Q7 prioritizes stability/unification **rather than formalization**; do not silently reframe its goal as “produce a common position-conditioned equation.” The method must demonstrate actual cross-context/cross-position useful continuation, not formula count.
+
+### Term collision triage / merge guard
+
+**Classification: OVERLOADED_SAME_NAME** for “粗粒化 / coarse-graining”. No new core term or universal scalar is admitted:
+
+- **Generative vertical usage:** author trace A0-Q2/A0-S9; aliases only for retrieval: “生成性粗粒化”, “Selection 生成性表现”, “垂直分化中的粗粒化”. Status: author-selected direction, not formal operator. Source owner: author trace.
+- **Formed Gate geometry:** 09-25 A0-Q2, 09-24/25 formed gating route; aliases: “Gate 粗粒化几何”, “形成后粗粒化几何”. Existing canonical guard: primitive Selection != `Ĝ`; exact causal genealogy from first sense: AUTHOR-OPEN.
+- **L2 scale/projection mapping:** `Core_Law/SRT_Reference_Scaling.md` `π_λ`; aliases: “数学粗粒化映射”, “尺度投影”, “多对一抽象”. It can lose representational distinctions and may lack inverse; not ontic erasure by itself.
+
+**Proposed Router follow-up upon merge:** add a *navigation-only* three-way overload pointer to `Glossary/SRT_Live_Term_Router.md` referencing the author record, Gate 09-25 source, `π_λ` and existing `Ĝ` guard. Neither the router nor this audit may decide that Gate is always a necessary downstream product. **Failure/merge condition:** if independent author/owner audit demonstrates these words have identical referents, collapse labels through existing owner; if the causal “trace” link lacks a sufficient account, leave them distinct and OPEN.
 
 ## 5. Narrow falsifiers and comparative failure rights
 
@@ -82,7 +96,7 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 | Item | Current state |
 | --- | --- |
 | Accurate recording of current author corrections | SOURCE-LEVEL, noncanonical; original quotations in companion record |
-| Position-sensitive functional method | M working research proposal; user accepts directional aim |
+| Position-sensitive functional method | M working research proposal; author accepts directional aim |
 | Mathematical/formal modeling as L2 scaffold not ontology | **A0-Q9 EXPLICIT AUTHOR CLARIFICATION**; model-specific utility requires evidence |
 | Coarse-graining as generative manifestation of Selection rather than only downstream Gate | **A0-S9 CHOSEN DIRECTION**; universal literal identity / domain mechanism NOT CLAIMED |
 | Fitness-landscape / effective L2 interpretation | Compatible candidate / previous owners; no universal law |
@@ -96,7 +110,7 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 ## 7. 外部对照三项 (partial check only)
 
 - **事实冲突：** Under a universal reading, Q4 (“传统研究...都是基于水平的抹平”) conflicts with dynamic / history-sensitive scientific coarse-graining, including the in-repo Flack/Bourrat comparators. Q1 about Ao asks a question, and Q6 expressly calls AI/AGI an analogy; neither is independently coded as a factual conflict.
-- **内部矛盾：** Q0 「所有形式化...脱离选择位置」 versus Q6 「在位置参与下的可用公式」 posed a terminological tension, but A0-Q9 directly clarified **mathematics is permitted as L2 scaffold, not ontology**; no unresolved author-on-author contradiction about rejecting mathematics remains. Q2 and 10-07 A0-Q1 both concern generative vertical differentiation and are not an author-on-author contradiction. A0-S9 selects generative manifestation, not solely formed-Gate realization. Any further questions concern mechanism/scope rather than this choice.
+- **内部张力（已澄清一部分，剩余 OPEN）：** Q0 「所有形式化...脱离选择位置」 versus Q6 「在位置参与下的可用公式」：A0-Q9 clarifies *mathematics is allowed, L2 not ontology*, but not the exact generation-vs-use relation. **09-25 A0-Q2** 「gate本质上就是一种关于稳定和粗粒化的几何关系」 and **10-10 A0-S9** coarse-graining as Selection's generative manifestation invite a distinct author-owned scope question: is the 09-25 formed Gate geometry a retained trace of 10-10 generative coarse-graining? The causal/history relation is **UNDECIDED**, not a proven contradiction. `π_λ` mapping is a third mathematically distinct use; do not project its representational many-to-one loss into Selection-relative backgrounding.
 - **已有说法：** Flack 2017 and Bourrat 2023 on dynamic coarse-graining/individuality; Gestalt/Rubin on figure–ground; Simondon on individuation; Haraway 1988 on situated knowledge; Tulving & Thomson 1973 on encoding specificity; Licklider 1960 on human–computer symbiosis; enactive participatory sense-making and neurophenomenology. **PARTIAL_OVERLAP** only (working map, with Flack/Bourrat source metadata inherited from 10-07); external works not re-reviewed here, no same-target completeness or SRT increment established.
 
 ## 8. No silent execution changes
@@ -111,4 +125,7 @@ This record preserves a source-author methodological advance and its pressure po
 - [Selection relative background source](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md)
 - [One formation owner](../../Core_Law/SRT_One_Formation.md)
 - [Current GRG foundation v0.3](../Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md)
+- [09-25 Gate/coarse-graining author source](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md)
+- [π_λ reference scaling model](../../Core_Law/SRT_Reference_Scaling.md)
+- [Canonical Ĝ symbol non-identity](../../_SRT_SYMBOL_TABLE.md)
 - [CN-2 first E2 task family A](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md)
