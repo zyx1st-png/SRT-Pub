@@ -146,6 +146,22 @@ Triage classification: **OVERLOADED_SAME_NAME**, with **PARTIAL_OVERLAP** in pos
 
 **Exact outstanding author question:** does the 09-25 “gate 的粗粒化几何” refer to a historically retained *formed trace* of the selection-generative coarse-graining described on 10-10? This is a promising **M** interpretation, **not author-confirmed**. Nothing in A0-S9 alone says Gate always follows, or that coarse-graining always persists.
 
+### A0-Q10 / A0-S10 — author explicitly declines Gate genealogy certainty; endorses other bounded research directions
+
+The immediately preceding assistant explicitly asked:
+
+> 「9 月 25 日 Gate 的“粗粒化几何”，是否是你现在所说的生成性粗粒化，在满足历史保留条件后形成的稳定组织？」
+
+The author repeated that question and replied, **verbatim**:
+
+> 「这个不太确定，其他的认同。」
+
+**A0-Q10 (substantive uncertainty):** The purported genealogy **Selection-generative coarse-graining → retained / historically stable Gate coarse-graining geometry** is **NOT AUTHOR ADJUDICATED**. No "yes", "no", causal identity, necessary historical-retention chain, or claim that formed Gate is just the retained trace may be inferred from the reply. Keep both source quotations (09-25 A0-Q2 and 10-10 A0-S9) distinct and their bridge explicitly **AUTHOR-OPEN**. This is a deliberate, valid research pause, not an unresolved blocker that must be closed by M speculation.
+
+**A0-S10 (bounded directional acceptance):** “其他的认同” follows the assistant's immediately preceding assessment of a further Claude M-level review. It licenses *directional research-method agreement* with (1) narrowing the scientific target to **generative formation/re-cutting of differences with prospectively testable cross-probe consequences**, rather than claiming legacy science simply erases differences, and (2) **position-participatory Beacon/ChoiceMap/GRG use with a shared public validation contract but heterogeneous local representations**, pursuing cross-context and cross-position useful stability rather than a universal formula. This is **not** author's endorsement of the external literature as fully verified, a novel SRT advantage, a new term-of-art, a new experiment, or every neighboring assistant sentence.
+
+Explicit current boundaries: CN-2 E2 family A is **paper-only**; ID/ED shift is an **M comparator/task-family lead** within that paper survey, not a chosen/frozen experimental implementation. Beacon's local engineering evidence can support functional utility without constituting direct proof of primitive Selection or uniqueness. No PR merge approval is inferable from the reply.
+
 ## 1. Minimum A0-P directional reading — bounded
 
 1. Original actualizing Selection is not a fitness function choosing among a completed menu. A fitness landscape or value function is a possible effective L2 scaffold associated with formed relations, not primitive ontology.
@@ -159,6 +175,7 @@ Triage classification: **OVERLOADED_SAME_NAME**, with **PARTIAL_OVERLAP** in pos
 
 - The author answered “认同，继续” / “认同你前面的分析” / “认同” to earlier assistant analyses. This supports directional continuation, including the move away from a universal fitness scalar and toward position-participatory cross-context stability.
 - The later **explicit A0-S9/A0-Q9** is stronger evidence than unanchored prior machine reconciliation, but only for the two answered questions; it does not automatically accept every adjacent M-level claim.
+- **A0-Q10/A0-S10** adds an affirmative boundary: the Gate genealogy remains **author-uncertain / OPEN**, while the *other* two method and task-narrowing suggestions are directionally accepted, not promoted to established empirical claims.
 - It does NOT establish author acceptance of every assistant-invented diagram, term, mathematical notation, three-part taxonomy, experimental task, mechanism, literature verdict or putative SRT advantage.
 - “生成性稳定性”, “位置参与的有效公式”, “位置参与的形式化协议” and similar compact phrases remain M-level descriptive *working labels*, not separately admitted SRT/GRG terms-of-art.
 - The word “non-public” is not a claim that no third-person or mathematical model can capture any or all domain-relevant consequences; the strong ontological limitation is still OPEN.
