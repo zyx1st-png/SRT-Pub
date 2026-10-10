@@ -81,6 +81,14 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 
 **Proposed Router follow-up upon merge:** add a *navigation-only* three-way overload pointer to `Glossary/SRT_Live_Term_Router.md` referencing the author record, Gate 09-25 source, `π_λ` and existing `Ĝ` guard. Neither the router nor this audit may decide that Gate is always a necessary downstream product. **Failure/merge condition:** if independent author/owner audit demonstrates these words have identical referents, collapse labels through existing owner; if the causal “trace” link lacks a sufficient account, leave them distinct and OPEN.
 
+### 2026-10-10 later author response — narrow decisions / controlled no-decision
+
+The author answered the Gate-genealogy question with **「这个不太确定，其他的认同。」** (exact question and response archived as A0-Q10/A0-S10 in the source trace).
+
+- **No Gate lineage verdict:** Gate coarse-graining geometry being the retained result of Selection-generative coarse-graining is an intelligible **M** hypothesis **but remains author-uncertain / OPEN**. Do not silently infer "formed stable trace" from 09-25/10-10 lexical overlap, and do not pressure a premature author choice. The pre-existing `Ĝ != primitive Selection` guard remains canonical.
+- **Bounded acceptance:** the other two narrowing directions (a) prospective joint **re-cut formation** prediction against named capable attention/latent-structure rivals in the existing CN-2 family A paper survey; (b) **meta-level validation contract** with heterogeneous local Beacon/ChoiceMap expressions and cross-position/context functional stability tests are directionally accepted at source/method level, **not** as demonstrated or unique science.
+- **No implicit operational selection:** no dataset, implementation, ID/ED task freeze, experiment, #1115 Phase-0 run, model gain, GRG fusion release, canonical revision, or merge instruction follows from “其他的认同”.
+
 ## 5. Narrow falsifiers and comparative failure rights
 
 - Position-blind fixed-object model fully explains the declared future probes without loss, under matched complexity/history budget: no incremental local need for the proposed position-participatory scaffolding at that target.
@@ -99,6 +107,8 @@ A does not entail C, and A + B do not by themselves establish C. Operationally, 
 | Position-sensitive functional method | M working research proposal; author accepts directional aim |
 | Mathematical/formal modeling as L2 scaffold not ontology | **A0-Q9 EXPLICIT AUTHOR CLARIFICATION**; model-specific utility requires evidence |
 | Coarse-graining as generative manifestation of Selection rather than only downstream Gate | **A0-S9 CHOSEN DIRECTION**; universal literal identity / domain mechanism NOT CLAIMED |
+| 09-25 Gate geometry as stable historical trace of generative coarse-graining | **A0-Q10 AUTHOR UNCERTAIN / OPEN**; no causal or identity inference licensed |
+| Cross-probe re-cutting and position-participatory meta-contract narrowings | **A0-S10 DIRECTIONALLY ACCEPTED**; local effectiveness / novelty NOT ESTABLISHED |
 | Fitness-landscape / effective L2 interpretation | Compatible candidate / previous owners; no universal law |
 | Vertical distinction as uniquely SRT / historically unprecedented | NOT ESTABLISHED |
 | Non-public participation implies mathematical inexpressibility | NOT ESTABLISHED; stronger observability route OPEN |
