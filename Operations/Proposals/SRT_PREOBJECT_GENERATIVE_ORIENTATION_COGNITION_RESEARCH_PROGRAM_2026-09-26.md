@@ -7,10 +7,11 @@ layer: operations
 epistemic_layer: research_program
 claim_mode: preregistration_preparation
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-11
 priority: high
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_P6_CONSEQUENTIAL_INDEPENDENT_ACTION_2026-10-11.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG1_NEUTRAL_REVIEW_COMPLETION_SCOPE_2026-10-08.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_MG2_NEUTRAL_AUDIT_BEARER_SCOPE_SPLIT_2026-10-08.md
@@ -165,6 +166,14 @@ After independent review of the A/B/C/D E2 task-family choice packet, the author
 **No shortcut to E2 gain:** any eventual E2 predictive increment needs named, implementable capable H1/H2 rivals with matched allowed information, structure-learning permissions and compute/data budgets, and prespecified held-out **PREDICTION**; compression alone does not pass. If nothing beyond the strongest category learners' predictions remains, report `NO LOCAL COMPARATIVE INCREMENT` for that exact job, or `NOT READY` where observations cannot be defined. E3 intervention, E4 recursive evidence and full W1–W4 remain separate higher burdens.
 
 **Scope/HOLD:** only one CURRENT NEXT; **CN-3/toy, model reproduction, code experiments, preregistration, participant/data collection remain HOLD** under previous MG-1/MG-2, FR-ADV and express author requirements. **MG-1 eight-family review stays unscheduled**; its order relative to further CN-2 steps was not resolved by selecting this task family. Options B/C/D are not selected and are not automatically scheduled. Older programme notes saying the first E2 task family is undecided are **historical as-of 2026-10-08**, superseded only for this narrow family choice; P1–P6 likelihoods and all actual model implementations are still undecided.
+
+### 0.0c.2 2026-10-11 author P6 consequence/action boundary — within FIRST family A only
+
+Controlling direct author source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_P6_CONSEQUENTIAL_INDEPENDENT_ACTION_2026-10-11.md`. After explicit paired options, the author answered verbatim **“必须涉及有实际后果的独立行动选择，继续”**. **P6 for this CN-2 paper route means a genuinely chosen, consequential action on a novel feature/relation combination without direct combination-to-action training**. Category-label responses, including ordinary reward-scored classification buttons, **do not meet P6**. This is an **author-controlled observation-scope correction**, not a change to the ontology of Selection, the programme's root question or the threshold for E2 PASS.
+
+**Paper-only implications:** recorded P6 target should include the action alternatives, participant's independent selection/execution, novel-combination training exclusion, goal/context, **actual realized consequential outcome and timing**, and available action/history inputs. **Ashby 2020's new-blend category-label generalization remains P1-related prior-art calibration and is NOT a P6 success/failure assay**. Source inventory for a true P6 consequence-bearing choice is **MISSING** within the checked A-family papers. A later meaningful fair comparison must include capable **action-policy / action–outcome / planning/latent-context H2 models** in addition to category learners, with symmetric legal action/outcome history, and preserve probe-order, future-information and test-combination leakage guards; none is selected as an implemented baseline here.
+
+The current paper audit (draft PR #1112) may write candidate **observation schemas and stop conditions only**. **No stimuli, specific action affordance, cost/reward schedule, goal, outcome threshold, datasets, simulations, model implementations or experimental execution** are authorized. The preexisting proposed P1/P2/P4 -> P3/P5/P6 shared-geometry predictor remains a conditional paper target, not ready or author-frozen. **E2 requires prespecified held-out predictive improvement against named, capable H1/H2**, with compression secondary only; E3 intervention and E4 recursion remain distinct. **Single CURRENT NEXT, MG-1/MG-2 and independent FR-ADV, CN-3/toy HOLD, Bearer/Concern O3 OPEN, Gate genealogy AUTHOR-OPEN and STATUS routing unchanged.**
 
 ### 0.0d 2026-10-04 unfinished-direction companion — routing only
 
