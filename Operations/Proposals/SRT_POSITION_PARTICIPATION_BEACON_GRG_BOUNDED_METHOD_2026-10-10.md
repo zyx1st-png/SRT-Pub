@@ -61,7 +61,7 @@ Use arrows of explanatory dependency, not a fabricated O0 timeline or a universa
 
 ### "粗粒化" overloading guard — do not collapse three burdens
 
-`Glossary/SRT_Live_Term_Router.md` triage for **粗粒化/coarse-graining = OVERLOADED_SAME_NAME**, not an admissible single universal operator:
+**Proposed triage under the procedures of** `Glossary/SRT_Live_Term_Router.md` (**Router has not yet been edited**): **粗粒化/coarse-graining = OVERLOADED_SAME_NAME**, not an admissible single universal operator:
 
 | Scoped usage | Owner / source | What it does **not** establish |
 | --- | --- | --- |
@@ -73,10 +73,10 @@ Use arrows of explanatory dependency, not a fabricated O0 timeline or a universa
 
 ### Later author follow-up — bounded research direction, not new implementation authority
 
-The author replied **「这个不太确定，其他的认同。」** to the assistant's proposed link between 09-25 Gate coarse-graining geometry and 10-10 Selection-generative coarse-graining, after a discussion of Claude's two research narrowings (see A0-Q10/A0-S10 in the source trace).
+The author replied **「这个不太确定，其他的认同。」** to the assistant's proposed link between 09-25 Gate coarse-graining geometry and 10-10 Selection-generative coarse-graining, after a discussion of Claude's two research narrowings (see direct A0-Q10 and the M-scoped contextual reading in the source trace).
 
 - **Keep Gate lineage AUTHOR-OPEN.** Neither the "Gate is the historical trace of generative coarse-graining" hypothesis nor its negation is affirmed. This does not conflict with the existing canonical `primitive Selection != Ĝ` guard.
-- **Accepted bounded cognition direction:** ask how differences are formed/re-cut and how one declared conditional/history organization jointly predicts several outcomes prospectively, rather than asserting a universal legacy-science "flattening" straw man. This belongs to *existing* CN-2 E2 **paper-only** family A. Mature ID/ED-shift and learned-irrelevance tasks are comparator/readout leads, **not** newly selected datasets, model arms, study plans or experimental authorization.
+- **Accepted bounded cognition direction:** ask how differences are formed/re-cut and how one declared conditional/history organization jointly predicts several outcomes prospectively, rather than asserting a universal legacy-science "flattening" straw man. This belongs to *existing* CN-2 E2 **paper-only** family A. Mature ID/ED-shift and learned-irrelevance tasks are only comparator/readout **leads** to route through the existing **[CN-2 family A paper survey PR #1112](https://github.com/zyx1st-png/SRT-Pub/pull/1112)**, **not** newly selected datasets, model arms, study plans or experimental authorization. The CN-2 survey owns feasibility/fairness decisions; this file is a cross-reference.
 - **Accepted bounded systems direction:** local Beacon/ChoiceMap/GRG representations and keywords may differ; the **public meta-level evaluation contract** should make position, participation, purpose, re-entry, transfer and *failure* explicit. The contract is an L2 methodological instrument, **not** an ontological bridge by itself. Functional transfer/stability remains an open empirical goal, not proven SRT uniqueness.
 - There is no new canonical term or replacement research programme. **GRG broad synthesis remains HOLD**. #1115's local Phase-0 design remains a separate draft, not authorized to execute by this author assent.
 
