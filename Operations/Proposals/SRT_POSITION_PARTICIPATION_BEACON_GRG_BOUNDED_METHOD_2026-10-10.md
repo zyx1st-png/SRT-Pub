@@ -28,7 +28,7 @@ tags: [ResearchProposal, SituatedParticipation, Beacon, ChoiceMap, GRG, Objectif
 
 > **Status:** M-level analytical synthesis of [author source trace](../../01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md). Not a new CURRENT NEXT, not an experiment authorization, not a foundational GRG version, not a universal equation, and not proof of an SRT-only empirical signature.
 >
-> **Role:** retain the dialogue's practical implications *without reducing its goal to formalization*. The goal is cross-context / cross-position **stable usable organization**, while equations, diagrams, keywords and models are optional L2 supports.
+> **Role:** retain the dialogue's practical implications *without reducing its goal to formalization*. The goal is cross-context / cross-position **stable usable organization**; the author's later explicit ruling is **“不是反对数学化，而是数学化只是L2层面的脚手架，不是本体”**. Mathematics remains available as an L2 scaffold, not an ontic ground.
 
 ## 1. Main contrast — unification of what?
 
@@ -53,8 +53,9 @@ The former is not false or inherently static. The latter is not licensed to asse
 ### Three analytic roles (M-level), not three interchangeable entities
 
 1. Primitive actualized Selection and event-level foreground/background verticality. No prior pre-formed chooser, global menu, objective fitness or formed Gate required.
-2. Formed retained organizations (where evidenced): Gate and candidate domain implementations such as coarse-graining, anticipation, reciprocal support/inhibition and history-sensitive differential reach. These may modify later Selection conditions, but need not exist for one-shot Selection. **This is an M-level reading; the author's exact “粗粒化实现 ... 生成过程” identity/realization scope is OPEN.**
-3. Public effective descriptions (e.g. local landscape, similarity function, fitness, category, control model): fallible, revisable models of some declared scope. They can themselves be used in a position-involved intervention and alter later conditions. Their representational powers and losses require task-specific demonstrations.
+2. **Coarse-graining in the author's selected vertical sense:** the later explicit A0-S9 chooses **coarse-graining as a generative manifestation of Selection**, *rather than* only a formed organization bearing effects of Selection. Thus the research must examine how the foreground/background differentiating process operates, not merely track an already formed Gate or equivalence class. This is a selected conceptual direction, not an established domain mechanism or the global equality “all coarse-graining = all primitive Selection”.
+3. **Formed organizations where separately evidenced:** retained Gate, history-sensitive differential reach, anticipation and domain-specific coarse-graining *implementations* may subsequently influence Selection. Their persistence is not required for a one-shot Selection. These later roles do not exhaust or redefine the author-selected generative sense of “粗粒化”.
+4. **L2 mathematical/representational scaffolds** (e.g. local landscape, similarity function, fitness, category, control model): fallible, revisable models of a declared scope, permitted and potentially useful, but **not ontology** (explicit A0-Q9). They can be used in position-involved intervention and may change later conditions. Their representational powers and losses require task-specific demonstrations.
 
 Use arrows of explanatory dependency, not a fabricated O0 timeline or a universal dynamical equation.
 
@@ -118,7 +119,7 @@ Any formula/model used in this research should declare at least:
 5. **Success and failure:** predeclared future probes, controls, rivals, limits, and conditions under which it must be revised or retired.
 6. **Re-entry and transfer:** what survives across context/position change, what must be renegotiated, and what genuinely failed to transfer.
 
-This is a local model-use contract, not an L0 law nor a proposed new GRG global schema.
+This is a local **L2 scaffold-use contract**, not an L0 law, not a proposed GRG global schema, and not an instruction to privilege formalization over the author's cross-position stability objective.
 
 ## 7. PARKED downstream thought probes — NOT the existing CN-2 task family A
 
