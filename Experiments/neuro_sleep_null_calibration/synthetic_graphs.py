@@ -27,12 +27,43 @@ def _edge(a: int, b: int) -> Edge:
     return (a, b) if a < b else (b, a)
 
 
-def _seed(family: str, n: int, root: int = 20261009) -> int:
-    """Independent synthetic-generation seed, NOT inherited SRT stable_seed."""
-    if family not in FAMILIES:
-        raise ValueError("Unknown synthetic family")
-    payload = f"NC_SYNTH_V1|{root}|{family}|{n}".encode("ascii")
+def synthetic_seed(family: str, n: int, *, kind: str = "graph",
+                   chain_index: int | None = None, root: int = 20261009) -> int:
+    """Exact synthetic-only SHA-256 seed contract. NOT the biological stable_seed.
+
+    kind=graph:        NC_SYNTH_V1|root|family|n
+    kind=chain:        NC_SYNTH_V1|root|chain|family|n|chain_index
+    kind=bfs-identity: NC_SYNTH_V1|root|bfs-identity|family|n
+
+    UTF-8/ASCII payload, digest first 8 bytes, unsigned big-endian integer.
+    The 0..7 chain index is required and cannot silently be omitted.
+    """
+    if family not in FAMILIES or type(n) is not int or n < 1:
+        raise ValueError("Invalid synthetic family or node count")
+    if type(root) is not int or root < 0:
+        raise ValueError("Invalid synthetic seed root")
+    if kind == "graph":
+        if chain_index is not None:
+            raise ValueError("Graph fixture seeds have no chain index")
+        fields = ("NC_SYNTH_V1", str(root), family, str(n))
+    elif kind == "chain":
+        if type(chain_index) is not int or not 0 <= chain_index <= 7:
+            raise ValueError("Synthetic chain index must be an integer in 0..7")
+        fields = ("NC_SYNTH_V1", str(root), "chain", family, str(n),
+                  str(chain_index))
+    elif kind == "bfs-identity":
+        if chain_index is not None:
+            raise ValueError("BFS identity seeds have no chain index")
+        fields = ("NC_SYNTH_V1", str(root), "bfs-identity", family, str(n))
+    else:
+        raise ValueError("Unknown synthetic seed namespace")
+    payload = "|".join(fields).encode("ascii")
     return int.from_bytes(sha256(payload).digest()[:8], "big")
+
+
+def _seed(family: str, n: int, root: int = 20261009) -> int:
+    """Backward-compatible generator seed; preserves existing fixture hashes."""
+    return synthetic_seed(family, n, root=root)
 
 
 def _connected(n: int, edges: set[Edge]) -> bool:
@@ -104,6 +135,46 @@ def _ba_like(n: int, rng: random.Random) -> set[Edge]:
     return edges
 
 
+
+def _maximum_spanning_tree(scores) -> set[Edge]:
+    """Maximum spanning tree with exact canonical-edge lexicographic ties.
+
+    Takes a symmetric dense NumPy weight matrix with -inf diagonal. For
+    each Prim frontier vertex, equal-weight parent candidates also resolve
+    to the lexicographically smaller canonical edge. No epsilon ties.
+    """
+    import numpy as np
+
+    n = int(scores.shape[0])
+    if scores.shape != (n, n) or n < 2:
+        raise ValueError("Scores must be a nontrivial square matrix")
+    visited = np.zeros(n, dtype=bool)
+    visited[0] = True
+    best_score = scores[0].copy()
+    best_score[0] = -np.inf
+    parent = np.zeros(n, dtype=np.int32)
+    edges: set[Edge] = set()
+    for _ in range(n - 1):
+        top = float(np.max(best_score))
+        if not np.isfinite(top):
+            raise AssertionError("Synthetic MST disconnected")
+        tied = np.flatnonzero(best_score == top)
+        j = int(min((int(v) for v in tied),
+                    key=lambda v: _edge(int(parent[v]), v)))
+        edges.add(_edge(int(parent[j]), j))
+        visited[j] = True
+        best_score[j] = -np.inf
+        # For a fixed target vertex, lower parent ID is equivalent to the
+        # lexicographically smaller canonical edge pair.
+        improve = (~visited) & (
+            (scores[j] > best_score) |
+            ((scores[j] == best_score) & (j < parent))
+        )
+        best_score[improve] = scores[j, improve]
+        parent[improve] = j
+    return edges
+
+
 def _factor_mst(n: int, seed: int, target: int) -> set[Edge]:
     """Dense six-factor synthetic covariance, maximum |correlation| tree + edges.
 
@@ -117,23 +188,9 @@ def _factor_mst(n: int, seed: int, target: int) -> set[Edge]:
     norms = np.sqrt((b * b).sum(axis=1) + 1.0)
     scores = np.abs((b @ b.T) / norms[:, None] / norms[None, :])
     np.fill_diagonal(scores, -np.inf)
-    # Deterministic dense-Prim maximum spanning tree, stable smallest-ID tie break.
-    visited = np.zeros(n, dtype=bool)
-    visited[0] = True
-    best_score = scores[0].copy()
-    best_score[0] = -np.inf
-    parent = np.zeros(n, dtype=np.int32)
-    edges: set[Edge] = set()
-    for _ in range(n - 1):
-        j = int(np.argmax(best_score))
-        if not np.isfinite(best_score[j]):
-            raise AssertionError("Synthetic MST disconnected")
-        edges.add(_edge(int(parent[j]), j))
-        visited[j] = True
-        best_score[j] = -np.inf
-        improve = (~visited) & (scores[j] > best_score)
-        best_score[improve] = scores[j, improve]
-        parent[improve] = j
+    # Dense Prim. Tied maximum-weight *edges*, not merely tied vertex IDs,
+    # are chosen lexicographically by canonical (min(u,v), max(u,v)) pair.
+    edges = _maximum_spanning_tree(scores)
     upper = np.triu_indices(n, 1)
     values = scores[upper]
     k = min(len(values), target + n)
