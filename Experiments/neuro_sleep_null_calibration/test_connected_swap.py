@@ -34,7 +34,7 @@ class SwapTests(unittest.TestCase):
         a.assert_invariants()
 
     def test_connected_bridge_cases(self):
-        # Cycle with tree-like edges; every accepted proposal remains connected.
+        # Simple path (a tree with bridges); every accepted proposal remains connected.
         edges = [(i, i + 1) for i in range(13)]
         graph, _ = run_chain(14, edges, 200, 500, (20, 100, 500), oracle=True)
         graph.assert_invariants()
