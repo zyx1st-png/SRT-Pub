@@ -2,7 +2,8 @@
 import math
 import unittest
 
-from synthetic_graphs import FAMILIES, make_synthetic_graph, metrics
+from synthetic_graphs import (FAMILIES, make_synthetic_graph, metrics,
+                              synthetic_seed, _maximum_spanning_tree)
 
 
 def _connected(g):
@@ -49,6 +50,47 @@ class SyntheticGraphUnitTests(unittest.TestCase):
         edges = [(i, (i + 1) % 8) if i < (i + 1) % 8 else ((i + 1) % 8, i) for i in range(8)]
         m = metrics(8, edges, edges)
         self.assertTrue(math.isnan(m["assortativity"]))
+
+    def test_seed_namespaces_and_replay(self):
+        from hashlib import sha256
+        graph = "NC_SYNTH_V1|20261009|factor-mst|100"
+        chain = "NC_SYNTH_V1|20261009|chain|factor-mst|100|0"
+        bfs = "NC_SYNTH_V1|20261009|bfs-identity|factor-mst|100"
+        expect = lambda payload: int.from_bytes(
+            sha256(payload.encode("ascii")).digest()[:8], "big")
+        self.assertEqual(synthetic_seed("factor-mst", 100), expect(graph))
+        self.assertEqual(
+            synthetic_seed("factor-mst", 100, kind="chain", chain_index=0),
+            expect(chain))
+        self.assertEqual(
+            synthetic_seed("factor-mst", 100, kind="bfs-identity"),
+            expect(bfs))
+        self.assertEqual(len({
+            synthetic_seed("factor-mst", 100, kind="chain", chain_index=j)
+            for j in range(8)}), 8)
+        self.assertNotEqual(expect(graph), expect(bfs))
+
+    def test_seed_invalid_index_cannot_be_silently_reused(self):
+        for index in (-1, 8, 1.5, None):
+            with self.subTest(index=index), self.assertRaises(ValueError):
+                synthetic_seed("factor-mst", 100, kind="chain",
+                               chain_index=index)
+        with self.assertRaises(ValueError):
+            synthetic_seed("factor-mst", 100, kind="graph", chain_index=0)
+
+    def test_prim_global_lexicographic_edge_tie(self):
+        import numpy as np
+        # This fixture distinguishes canonical edge tie-breaking from
+        # choosing the smallest frontier vertex on equal scores.
+        matrix = np.array([
+            [-np.inf, 2, 1, 1, 3],
+            [2, -np.inf, 2, 3, 2],
+            [1, 2, -np.inf, 1, 2],
+            [1, 3, 1, -np.inf, 2],
+            [3, 2, 2, 2, -np.inf],
+        ], dtype=float)
+        expected = {(0, 1), (0, 4), (1, 2), (1, 3)}
+        self.assertEqual(_maximum_spanning_tree(matrix), expected)
 
     def test_invalid_family_and_n_rejected(self):
         with self.assertRaises(ValueError):
