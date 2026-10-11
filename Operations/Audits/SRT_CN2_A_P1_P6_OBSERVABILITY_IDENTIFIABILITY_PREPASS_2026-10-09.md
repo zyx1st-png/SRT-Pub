@@ -169,7 +169,7 @@ A candidate **same-target E2 predictive** future assessment must first have sepa
 - **UNDERDETERMINED:** equal available predictive distributions / H2 reparameterization / unidentifiable latent representations; a pretty geometry is a display choice, not an independent mechanism.
 - **POTENTIAL TESTABLE E2 TARGET (NOT PASS):** a fully specified and lawfully observable cross-probe prediction with capable fair named rivals, frozen leakage-safe targets and separate independent review/author experimental authorization still to come. **No positive prediction is asserted**.
 
-**E2 PASS is never awarded merely for compression.** At *comparable held-out predictive adequacy* compression may be a separate, secondary report. The older 09-26 E2–E4 draft §5's "predictive gain OR compression advantage" wording conflicts with the controlling 10-08 author comparator source / programme; this historical phrasing is **not edited here** and cannot be used to lower the current evidential bar.
+**E2 PASS is never awarded merely for compression.** At *comparable held-out predictive adequacy* compression may be a separate, secondary report. The older 09-26 E2–E4 design §5's historical "predictive gain OR compression advantage" phrase remains verbatim, **but this PR has already added a narrow historical-debt/controlling-criterion pointer immediately beneath it**. The controlling 10-08 author comparator source / active programme require held-out **predictive** gain; the retained historical phrase cannot lower the current E2 threshold.
 
 ## 5. Independent review focus and next stop condition
 
@@ -184,5 +184,5 @@ A candidate **same-target E2 predictive** future assessment must first have sepa
 ## 6. 外部对照三项
 
 1. **事实冲突：** 无（本轮已核材料范围内未发现作者陈述与实证事实的冲突）。本审计纠正的是候选测量可用性过度概括的风险；没有读取任何完整公开数据表，更没有给出新的实验结果。
-2. **内部矛盾：** 无（本轮已核范围内未发现新的作者陈述矛盾）。既有09-26 E2草案“压缩或预测PASS”与后续作者“预测PASS、压缩另列”的运行措辞冲突保留为另外的定点修正。
+2. **内部矛盾：** 无（本轮已核范围内未发现新的作者陈述矛盾）。既有09-26 E2草案“压缩或预测PASS”的历史原文保留，但**本PR已在该design §5新增控制口径指针**，明确现行E2必须有留出预测增益、压缩另列；不再把增加指针说成尚待其他PR的定点修正。
 3. **已有说法：** Nosofsky/GCM（1986）辨识->分类空间：**部分重合**；ALCOVE（1992）/SUSTAIN（2004）反馈注意与簇更新：**部分重合**；Ashby等（2020）P1样相似度->新面孔类别泛化：**部分重合**（作者已裁定不满足P6后果行动要求）；Ashby–Vucovich（2016）RB/II反馈关联学习：**部分重合**；Carvalho–Goldstone（2022）局部序列编码：**部分重合**；Roberts等（1988）/Owen等（1991）ID/ED与Gauntlett-Gilbert等（1999）习得性无关性检验：**部分重合**。以上仅为各自科学工作范围，不预断SRT独特性。
