@@ -7,9 +7,10 @@ layer: operations
 epistemic_layer: machine_proposal
 claim_mode: preregistration_preparation
 created: 2026-09-26
-updated: 2026-10-08
+updated: 2026-10-11
 research_mode: U_to_TEST
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_P6_CONSEQUENTIAL_INDEPENDENT_ACTION_2026-10-11.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_NAMED_MODEL_FAIR_COMPARISON_2026-10-08.md
   - Operations/Audits/SRT_L0_FACING_FIELD_H1_H2_H3_LEVEL_RECLASSIFICATION_2026-09-26.md
   - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
@@ -181,6 +182,8 @@ Present novel combinations and require an action with no direct training history
 Question:
 does learned field structure transfer to novel local objectifications?
 
+> **2026-10-11 author routing note; original 09-26 P6 wording preserved:** controlling source `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_P6_CONSEQUENTIAL_INDEPENDENT_ACTION_2026-10-11.md` records the author’s requirement **“必须涉及有实际后果的独立行动选择”**. A mere category-label judgment does not satisfy the present first-family A P6 target. **M-level study-design consequence:** predict/score **human first independent action choice** on reserved novel combinations; log realized task outcome to **validate genuine consequence** and feedback timestamp, **not** as an extra behavioral prediction target. Only **first encounter per participant × exact novel combination** can support naïve P6 held-out claims; predeclare P3/P5 order versus the P6 action and outcome-feedback visibility. **Scored correct-label buttons vs truly goal-directed score/resource consequences is a future task-validity distinction, NOT an author prohibition on all scoring systems.** This note is routing/measurement only, not a frozen experimental protocol, Gate/canonical change or CN-3 release.
+
 ### P7 — optional perceptual foregrounding
 
 Brief or noisy presentation.
@@ -223,6 +226,8 @@ Candidate geometry representations:
 E2 prospective PASS candidate (2026-10-08 **author Option A**; NOT preregistered or executed):
 
 > A **named, specified shared-geometry implementation** produces prespecified held-out **predictive** gain, or an explicitly scored **compression** advantage at comparable predictive adequacy, relative to **named, capable H1/H2 implementation baselines**, under matched legal training observations, model-structure learning permissions, meaningful splits, prior-knowledge accounting and data/complexity/computation budgets. Intervention-based causal leverage is **E3**, and recursive follow-on prediction after consequence feedback is **E4**; neither is automatically admitted by E2.
+
+**Historical-draft criterion debt (2026-10-11 pointer only):** the preceding 09-26 wording `predictive gain, or ... compression advantage` is retained as historical text. For any current E2 execution/readout, **the controlling 2026-10-08 author comparator source and active programme require prespecified held-out PREDICTIVE improvement; compression alone cannot PASS E2**. This is a routing correction, not a rewrite of the original author/source evidence, benchmark authorization or numerical success threshold.
 
 This is a **concrete model-relative** comparison, never an assertion that H3 beats the unrestricted H2 family: shared geometry can itself be a latent/representational H2 readout. Split P1/P2/P4 to P3/P5/P6 measures cross-probe prediction on familiar stimuli only unless **untouched novel items/combinations/relations** are reserved before training and model selection. A forward-time split is additionally required when forecasting learning/revaluation and later recutting. No numerical PASS threshold, benchmark implementation or experiment authorization is supplied by this clarification. E2 positive gain remains NOT ESTABLISHED and this design remains HOLD.
 
