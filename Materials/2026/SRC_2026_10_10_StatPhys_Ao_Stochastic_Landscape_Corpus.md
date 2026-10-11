@@ -31,19 +31,19 @@ tags: [SourceCard, PingAo, StochasticDynamics, PotentialLandscape, NonEquilibriu
 
 > **身份与来源纪律：** 本卡是多篇论文的**分篇证据矩阵**，不是将它们归为同一数学定理的“综合一手论文”。A = 论文原生主张；B = SRT 解释，仅在末节标为 M。不得把敖平与**王劲（Jin Wang）**的独立 potential-and-flux 研究误当同一作者团队。不得把本卡当作原初 Selection 的数学证明。状态：B1 候选／尚待独立内容评审，不是作者的本体论裁决。
 >
-> **检索记录（2026-10-10）：** 有 DOI 可核的出版社原文摘要、期刊 HTML/全文及相关公开评论／回应；2004、2005、2007、2009 的全文本轮均未逐页核查（2005、2009 已定位公开可取版本，不代表访问受限），不能宣称 exhaustive full-text source audit。2017 Scientific Reports 正文 HTML 中的 Abstract、Introduction、Results、Discussion 已核对；2016 争议双方的论文摘要／公开 arXiv 版本已由独立评审交叉核对，本轮补核原始摘要及其对应关系（ZL16/YTA16/ZL16R），未自行复算数学证明。刊物内数学定理的完整假设链、数值代码及原始实测数据未复现。以下每个超出摘要的技术细节均会单独限定。
+> **检索记录（2026-10-10）：** 有 DOI 可核的出版社原文摘要、期刊 HTML/全文及相关公开评论／回应；2004、2005、2007、2009 的全文本轮均未逐页核查：AO05、AO09 的公开全文可取得但未读；AO04 有第三方转载 PDF 线索，但本轮未核定其来源真实性和访问稳定性，不当作已确认的可用原文；AO07 也未完成全文核查，不能宣称 exhaustive full-text source audit。2017 Scientific Reports 正文 HTML 中的 Abstract、Introduction、Results、Discussion 已核对；2016 争议双方的论文摘要及公开 arXiv 版本用于核对 ZL16/YTA16/ZL16R 的原始主张和相互对应；独立评审仅提供复审问题线索，不是论文结论的替代证据；本轮未自行复算数学证明。刊物内数学定理的完整假设链、数值代码及原始实测数据未复现。以下每个超出摘要的技术细节均会单独限定。
 
 ## 1. Corpus bibliography and scope of checking
 
 | ID | 一手文献 / DOI | 可核锚点及检查级别 | 来源角色 |
 | --- | --- | --- | --- |
-| AO04 | Ping Ao (2004), “Potential in stochastic differential equations: novel construction”, *J. Phys. A: Math. Gen.* 37 L25–L30; [doi:10.1088/0305-4470/37/3/L01](https://doi.org/10.1088/0305-4470/37/3/L01) | [AO04 原文公开 PDF](https://nemenmanlab.org/~ilya/images/5/5e/Ao%2C_2004.pdf) 与 [摘要页](https://www.researchgate.net/publication/231110441_Potential_in_stochastic_differential_equations_Novel_construction)；摘要核验，正文逐页**未核** | 在非平衡 SDE 中构造势函数的方法主张 |
+| AO04 | Ping Ao (2004), “Potential in stochastic differential equations: novel construction”, *J. Phys. A: Math. Gen.* 37 L25–L30; [doi:10.1088/0305-4470/37/3/L01](https://doi.org/10.1088/0305-4470/37/3/L01) | [出版 DOI（主锚点）](https://doi.org/10.1088/0305-4470/37/3/L01)、[OpenAlex 文献记录](https://api.openalex.org/works/doi:10.1088/0305-4470/37/3/L01)及[公开摘要转录（含无须先求 Fokker–Planck 的作者陈述）](https://www.researchgate.net/publication/231110441_Potential_in_stochastic_differential_equations_novel_construction)；[第三方 PDF](https://nemenmanlab.org/~ilya/images/5/5e/Ao%2C_2004.pdf)仅为未经出版版本独立核验的备用链接；**仅摘要核验，未全文研读** | 在非平衡 SDE 中构造势函数的方法主张 |
 | AO05 | Ping Ao (2005), “Laws in Darwinian evolutionary theory”, *Physics of Life Reviews* 2:117–156; [doi:10.1016/j.plrev.2005.03.002](https://doi.org/10.1016/j.plrev.2005.03.002) | [出版社摘要](https://www.sciencedirect.com/science/article/pii/S1571064505000126)；[公开 arXiv 全文 q-bio/0605020](https://arxiv.org/abs/q-bio/0605020) **可取得但本轮未逐页研读**；不是对三条“laws”的独立数学确证 | 四个动力学构件 + 层级动力学构想 |
 | AO07 | Ping Ao, Chulan Kwon & Hong Qian (2007), “On the existence of potential landscape in the evolution of complex systems”, *Complexity* 12(4):19–27; [doi:10.1002/cplx.20171](https://doi.org/10.1002/cplx.20171) | [出版社摘要](https://onlinelibrary.wiley.com/doi/abs/10.1002/cplx.20171)；全文未核 | 非平衡势景观构造、与 Itô/Stratonovich 比较 |
 | AO09 | Ping Ao (2009), “Global view of bionetwork dynamics: adaptive landscape”, *J. Genet. Genomics* 36(2):63–73; [doi:10.1016/S1673-8527(08)60093-4](https://doi.org/10.1016/S1673-8527(08)60093-4) | [期刊摘要](https://www.sciencedirect.com/science/article/pii/S1673852708600934)；[公开 arXiv 全文 0902.0980](https://arxiv.org/abs/0902.0980)、[PMC3165055](https://pmc.ncbi.nlm.nih.gov/articles/PMC3165055/) 可取得但本轮未逐页研读 | 生物网络稳健性／稳定性及适应景观的量化价值 |
 | AO17R | Ruoshi Yuan, Ying Tang & Ping Ao (2017), “SDE decomposition and A-type stochastic interpretation in nonequilibrium processes”, *Frontiers of Physics* 12:120201; [doi:10.1007/s11467-017-0718-2](https://doi.org/10.1007/s11467-017-0718-2) | [期刊页 Abstract、References](https://academic.hep.com.cn/fop/EN/10.1007/s11467-017-0718-2)；争议中的**作者立场综述** | 耗散、破坏详细平衡的分量、势景观及 A-type 解释；主张唯一性 |
 | AO17E | Ying Tang, Ruoshi Yuan, Gaowei Wang, Xiaomei Zhu & Ping Ao (2017), “Potential landscape of high dimensional nonlinear stochastic dynamics with large noise”, *Scientific Reports* 7:15762; [doi:10.1038/s41598-017-15889-2](https://doi.org/10.1038/s41598-017-15889-2) | [公开全文](https://www.nature.com/articles/s41598-017-15889-2), Abstract、Introduction、Results: Formulation、Discussion；出版社注明 2019-08-06 correction，更新版本已在网站 | 大噪声高维例子、least-action 方法和 38 维癌症网络模型 |
-| ZL16 | Peijie Zhou & Tiejun Li (2016), “Construction of the landscape for multi-stable systems: Potential landscape, quasi-potential, A-type integral and beyond”, *J. Chem. Phys.* 144:094109; [doi:10.1063/1.4943096](https://doi.org/10.1063/1.4943096) | [期刊及 arXiv 摘要](https://arxiv.org/abs/1511.02088)；**独立对照／争议一方** | 证明稳态分布势的零噪声极限为 FW 准势、Ao A-type 积分势与准势重合；指出分解存在但一般非唯一 |
+| ZL16 | Peijie Zhou & Tiejun Li (2016), “Construction of the landscape for multi-stable systems: Potential landscape, quasi-potential, A-type integral and beyond”, *J. Chem. Phys.* 144:094109; [doi:10.1063/1.4943096](https://doi.org/10.1063/1.4943096) | [期刊及 arXiv 摘要](https://arxiv.org/abs/1511.02088)；**独立对照／争议一方** | 重述／梳理稳态分布势的零噪声极限与 FW 准势的对应、Ao A-type 积分势与准势的重合；指出分解存在但一般非唯一 |
 | YTA16 | Ruoshi Yuan, Ying Tang & Ping Ao (2016), “Comment on ‘Construction of the landscape…’”, *J. Chem. Phys.* 145:147104; [doi:10.1063/1.4964681](https://doi.org/10.1063/1.4964681) | [出版社与 arXiv 摘要](https://arxiv.org/abs/1603.07927)；**争议另一方** | 主张其数学/物理演示保障分解唯一性，并讨论从稳态分布反推势的局限；OU 特例的局限主要由 ZL16R 提出 |
 | ZL16R | Peijie Zhou & Tiejun Li (2016), “Response to ‘Comment…’”, *J. Chem. Phys.* 145:147105; [doi:10.1063/1.4964682](https://doi.org/10.1063/1.4964682) | [回应的 arXiv 摘要及公开版本](https://arxiv.org/abs/1609.06587)；**争议回应** | 反驳仅凭 OU 特例得一般唯一性，质疑充分可操作边界条件 |
 
@@ -104,7 +104,7 @@ AO07 研究 SDE 变换、相关不变量，以及与 Itô、Stratonovich 随机�
 
 ## 4. Source provenance, limitations, literature disambiguation
 
-- 2004、2005、2007、2009 本轮以**摘要级／局部预览**为实际核查强度；其中 AO04、AO05、AO09 已确认**公开全文可取得**，但本轮未逐页验证，不能误称访问受限。摘要核对不承担严格定理完整条件、算法复现或跨领域统一性的负担。
+- 2004、2005、2007、2009 本轮以**摘要级／局部预览**为实际核查强度。**AO05、AO09 公开全文可取得但本轮未逐页读**；**AO04 只确认 DOI、摘要和第三方 PDF 线索，尚未核定 PDF 的出版来源及访问稳定性**；AO07 全文未核，不能据此推断是否访问受限。摘要核对不承担严格定理完整条件、算法复现或跨领域统一性的负担。
 - AO17R 作为 **Ao 共同作者综述**，在唯一性争论上并非中立裁判；必须与 ZL16/YTA16/ZL16R 并读。
 - AO17E 是**公开全文可读**的主要本轮应用锚点；其数值示例和癌症模型为方法可行性展示，不是直接的临床验证，也不是 SRT 对应实验。
 - 避免混称：\`fitness landscape\`（演化适应度的模型对象）、\`potential landscape\`（SDE 势的模型对象）、\`FEP/free energy\`（另一形式体系）、SRT L2 \`landscape\`（有界对象化）没有未经证明的一一同义关系。
