@@ -12,9 +12,12 @@ from dataclasses import dataclass
 from hashlib import sha256
 import json
 import math
+import os
+from pathlib import Path
 import platform
 import random
 import statistics
+import tempfile
 import time
 
 from connected_swap import ConnectedDegreeSwap
@@ -169,6 +172,33 @@ def screen_case(chains: list[dict], *,
         n not in FORMAL_N or family not in FAMILIES
     ):
         raise NC0aContractError("Not a formal preregistered case")
+    if require_full_contract:
+        expected = set(map(str, CHECKPOINTS))
+        fixtures = {c.get("fixture_sha256") for c in chains}
+        if None in fixtures or len(fixtures) != 1:
+            raise NC0aContractError("Missing or mismatched fixture fingerprints")
+        for c in chains:
+            if c["seed"] != synthetic_seed(family, n, kind="chain",
+                                          chain_index=c["chain_index"]):
+                raise NC0aContractError("Incorrect chain seed")
+            if set(c["checkpoints"]) != expected:
+                raise NC0aContractError("Missing/extra formal checkpoint")
+            if c["audit"]["per_accepted_local"] != c["checkpoints"]["32"]["accepted"]:
+                raise NC0aContractError("Some accepted swaps were not audited")
+            if c["audit"]["full_connectivity_checkpoints"] != len(CHECKPOINTS):
+                raise NC0aContractError("Missing full-connectivity checkpoint audits")
+            edge_count = c["edge_count"]
+            for multiplier in CHECKPOINTS:
+                snap = c["checkpoints"][str(multiplier)]
+                if snap["attempts"] != multiplier * edge_count:
+                    raise NC0aContractError("Invalid checkpoint attempt count")
+                if snap["accepted"] != snap["audited_accepted_swaps"]:
+                    raise NC0aContractError("Unaudited accepted swaps")
+                if snap["attempts"] != (
+                    snap["accepted"] + snap["rejected_overlap"] +
+                    snap["rejected_duplicate"] + snap["rejected_disconnect"]
+                ):
+                    raise NC0aContractError("Invalid checkpoint rejection counts")
     if any(c["checkpoints"].get("4") is None or
            c["checkpoints"].get("32") is None for c in chains):
         raise NC0aContractError("Missing paired 4E/32E snapshots")
@@ -214,20 +244,68 @@ def screen_case(chains: list[dict], *,
     }
 
 
-def validate_full_battery(case_reports: list[dict]) -> dict:
-    """Enforce 16 unique case screens, 48 metrics, without selective omission."""
+def validate_full_battery(case_reports: list[dict],
+                          oracle_reports: list[dict] | None = None) -> dict:
+    """Enforce 16 screened cases PLUS all 16 oracle traces, no omission."""
     wanted = {(n, f) for n in FORMAL_N for f in FAMILIES}
     actual = [(r["n"], r["family"]) for r in case_reports]
     if len(actual) != len(wanted) or set(actual) != wanted:
         raise NC0aContractError("Incomplete or duplicate full battery")
     if any(set(r["metrics"]) != set(METRICS) for r in case_reports):
         raise NC0aContractError("Missing one of the 48 case/metric screens")
+    if oracle_reports is None or len(oracle_reports) != 16:
+        raise NC0aContractError("All 16 separate BFS-oracle traces required")
+    oracle_keys = [(x["n"], x["family"]) for x in oracle_reports]
+    if set(oracle_keys) != wanted or len(set(oracle_keys)) != 16:
+        raise NC0aContractError("Missing/duplicate oracle case")
+    if any(x.get("attempts") != ORACLE_PROPOSALS or
+           x.get("oracle_mismatches") != 0 or
+           x.get("accepted_local_audits") != x.get("accepted")
+           for x in oracle_reports):
+        raise NC0aContractError("Invalid oracle-proposal audit")
     return {
         "cases": 16, "comparisons": 48,
         "drift_screen_pass": all(r["anomaly_screen_pass"] for r in case_reports),
         "mixing_status": "MIXING-UNRESOLVED",
         "execution_authorized": False,  # Separate NC-0a resource / approval gate.
     }
+
+
+
+def save_report_once(path: str | Path, report: dict) -> str:
+    """Atomically persist a complete synthetic-only case report.
+
+    No in-place overwrite or silent result replacement is possible. Resume
+    policy: an interrupted case has no committed result and may only be
+    restarted from step zero with the *same* seed and declared attempt count,
+    explicitly recording the interruption in an external execution ledger.
+    """
+    destination = Path(path)
+    if destination.exists() or Path(str(destination) + ".sha256").exists():
+        raise NC0aContractError("Existing report cannot be silently overwritten")
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    payload = (json.dumps(report, sort_keys=True, allow_nan=False, indent=2)
+               + "\n").encode("utf-8")
+    digest = sha256(payload).hexdigest()
+    fd, temporary = tempfile.mkstemp(
+        prefix="." + destination.name + ".", dir=destination.parent)
+    try:
+        with os.fdopen(fd, "wb") as handle:
+            handle.write(payload)
+            handle.flush()
+            os.fsync(handle.fileno())
+        if destination.exists():
+            raise NC0aContractError("Concurrent writer created the destination")
+        os.replace(temporary, destination)
+        checksum = Path(str(destination) + ".sha256")
+        if checksum.exists():
+            raise NC0aContractError("Concurrent checksum writer")
+        checksum.write_text(digest + "  " + destination.name + "\n",
+                            encoding="ascii")
+    finally:
+        if os.path.exists(temporary):
+            os.remove(temporary)
+    return digest
 
 
 def contract_seed_manifest(root: int = 20261009) -> dict:
