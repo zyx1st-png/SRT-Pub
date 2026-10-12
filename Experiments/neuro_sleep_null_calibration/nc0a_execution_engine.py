@@ -34,7 +34,10 @@ from nc0a_contract_runner import (
     oracle_trace, save_report_once, screen_case,
     synthetic_chain, validate_full_battery,
 )
-from nc0a_watchdog import HashChainLog, WatchdogError, WatchdogLimits, supervise
+from nc0a_watchdog import (
+    HashChainLog, WatchdogError, WatchdogLimits, guard_watchdog_parent,
+    supervise,
+)
 from synthetic_graphs import FAMILIES, make_synthetic_graph, synthetic_seed
 
 
@@ -53,7 +56,7 @@ PROTOCOL = {
     "recovery": "TASK_LEVEL_FROM_ZERO_SAME_SEED_NO_OUTCOME_DEPENDENT_RETRY",
 }
 WATCHDOG_CONTRACT = {
-    "implementation": "NC0A_WATCHDOG_V1",
+    "implementation": "NC0A_WATCHDOG_V2",
     "poll_seconds": 0.5,
     "wall_clock": "UTC inclusive of sleep; monotonic divergence above 5s stops",
     "cpu_accounting": "process-group ps cumulative TIME plus waited-child rusage and watchdog CPU; 8-worker termination margin",
@@ -61,6 +64,7 @@ WATCHDOG_CONTRACT = {
     "disk_accounting": "run-directory bytes stop at 95% cap; free-disk stop at reserve plus 64MiB or 5% margin",
     "task_deadlines": "case/oracle UTC caps with 99% early-stop margin capped at 60s",
     "termination": "dedicated process group; SIGTERM 0.5s then SIGKILL",
+    "monitor_loss": "runner-side parent-PID lease kills the entire process group if watchdog disappears",
     "audit": "fsynced append-only hash chain; no overwrite; unique runner stdout per invocation",
 }
 APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V1"
@@ -739,6 +743,7 @@ def _runner_entry(run_dir: str, policy_path: str, policy_sha: str,
     parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
     if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
         raise ExecutionError("Internal runner must be an authenticated child of the watchdog launcher")
+    guard_watchdog_parent(int(parent))
     policy, approval = _verify_approval(Path(policy_path), Path(approval_path),
                                         Path(public_key_path))
     policy_bytes = Path(policy_path).read_bytes()

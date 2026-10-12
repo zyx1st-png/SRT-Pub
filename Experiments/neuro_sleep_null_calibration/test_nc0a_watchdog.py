@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import unittest
 
 from nc0a_watchdog import (
@@ -140,6 +141,65 @@ class WatchdogTests(unittest.TestCase):
                 state = subprocess.run(["/bin/ps", "-o", "stat=", "-p", str(child_pid)],
                                        capture_output=True, text=True).stdout.strip()
                 self.assertTrue(not state or state.startswith("Z"), state)
+
+    def test_watchdog_parent_loss_kills_runner_and_its_worker_group(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            supervisor = root / "supervisor.py"
+            runner_pid_file = root / "runner.pid"
+            worker_pid_file = root / "worker.pid"
+            runner_code = (
+                "import os,subprocess,time; from pathlib import Path; "
+                "from nc0a_watchdog import guard_watchdog_parent; "
+                "guard_watchdog_parent(os.getppid(),poll_seconds=.05,"
+                "terminate_grace_seconds=.15); "
+                "p=subprocess.Popen(['/bin/sleep','60']); "
+                f"Path({str(worker_pid_file)!r}).write_text(str(p.pid)); "
+                "time.sleep(60)"
+            )
+            supervisor.write_text(
+                "import subprocess,sys; from pathlib import Path; "
+                f"p=subprocess.Popen([sys.executable,'-c',{runner_code!r}],"
+                "start_new_session=True); "
+                f"Path({str(runner_pid_file)!r}).write_text(str(p.pid)); "
+                "p.wait()"
+            )
+            monitor = subprocess.Popen([sys.executable, str(supervisor)])
+            runner_pid = worker_pid = None
+            try:
+                deadline = time.monotonic() + 5
+                while time.monotonic() < deadline:
+                    if runner_pid_file.exists() and worker_pid_file.exists():
+                        runner_pid = int(runner_pid_file.read_text())
+                        worker_pid = int(worker_pid_file.read_text())
+                        break
+                    time.sleep(0.02)
+                self.assertIsNotNone(runner_pid, "runner did not start")
+                self.assertIsNotNone(worker_pid, "worker did not start")
+                monitor.kill()  # simulate SIGKILL of the external watchdog
+                monitor.wait(timeout=2)
+
+                def runnable(pid: int) -> bool:
+                    result = subprocess.run(["/bin/ps", "-o", "stat=", "-p", str(pid)],
+                                            capture_output=True, text=True)
+                    state = result.stdout.strip()
+                    return bool(state) and not state.startswith("Z")
+
+                deadline = time.monotonic() + 5
+                while time.monotonic() < deadline and (
+                        runnable(runner_pid) or runnable(worker_pid)):
+                    time.sleep(0.05)
+                self.assertFalse(runnable(runner_pid), "runner survived watchdog loss")
+                self.assertFalse(runnable(worker_pid), "worker survived watchdog loss")
+            finally:
+                if monitor.poll() is None:
+                    monitor.kill()
+                    monitor.wait()
+                if runner_pid is not None:
+                    try:
+                        os.killpg(runner_pid, 9)
+                    except ProcessLookupError:
+                        pass
 
     def test_wall_clock_discontinuity_is_a_stop_and_kills_runner(self):
         with tempfile.TemporaryDirectory() as tmp:

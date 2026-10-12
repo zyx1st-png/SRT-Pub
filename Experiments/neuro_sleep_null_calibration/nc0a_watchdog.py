@@ -23,12 +23,57 @@ import shutil
 import signal
 import subprocess
 import sys
+import threading
 import time
 from typing import Callable, Iterable
 
 
 class WatchdogError(RuntimeError):
     pass
+
+
+def guard_watchdog_parent(expected_parent_pid: int, *, poll_seconds: float = 0.25,
+                          terminate_grace_seconds: float = 0.5) -> threading.Thread:
+    """Kill the scientific process group if its external watchdog disappears.
+
+    This runner-side lease closes the gap where the monitor itself is killed:
+    the runner ignores SIGTERM long enough for its guardian thread to terminate
+    every process in the dedicated group, then the guardian escalates to
+    SIGKILL.  The normal watchdog still owns resource-limit decisions.
+    """
+    if (type(expected_parent_pid) is not int or expected_parent_pid <= 1 or
+            os.getppid() != expected_parent_pid):
+        raise WatchdogError("Runner was not started by its expected watchdog parent")
+    if (not isinstance(poll_seconds, (int, float)) or poll_seconds <= 0 or
+            not isinstance(terminate_grace_seconds, (int, float)) or
+            terminate_grace_seconds <= 0):
+        raise ValueError("Parent-guard intervals must be positive")
+    process_group = os.getpgrp()
+    if process_group != os.getpid():
+        raise WatchdogError("Runner must be the leader of its dedicated process group")
+
+    # Keep this process alive through the grace period so the guardian can
+    # escalate even if worker children also ignore SIGTERM.
+    signal.signal(signal.SIGTERM, signal.SIG_IGN)
+
+    def watch_parent() -> None:
+        while os.getppid() == expected_parent_pid:
+            time.sleep(poll_seconds)
+        try:
+            os.killpg(process_group, signal.SIGTERM)
+        except ProcessLookupError:
+            os._exit(70)
+        time.sleep(terminate_grace_seconds)
+        try:
+            os.killpg(process_group, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        os._exit(70)
+
+    thread = threading.Thread(target=watch_parent,
+                              name="nc0a-watchdog-parent-guard", daemon=True)
+    thread.start()
+    return thread
 
 
 def _canonical(value: object) -> bytes:
