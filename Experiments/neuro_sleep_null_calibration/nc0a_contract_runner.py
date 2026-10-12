@@ -294,9 +294,12 @@ def save_report_once(path: str | Path, report: dict) -> str:
             handle.write(payload)
             handle.flush()
             os.fsync(handle.fileno())
-        if destination.exists():
-            raise NC0aContractError("Concurrent writer created the destination")
-        os.replace(temporary, destination)
+        # An atomic hard-link create fails if another worker already won;
+        # unlike os.replace this cannot silently overwrite an existing result.
+        try:
+            os.link(temporary, destination)
+        except FileExistsError as exc:
+            raise NC0aContractError("Concurrent writer created the destination") from exc
         checksum = Path(str(destination) + ".sha256")
         if checksum.exists():
             raise NC0aContractError("Concurrent checksum writer")
