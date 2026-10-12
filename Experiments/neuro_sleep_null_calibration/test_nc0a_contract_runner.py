@@ -82,10 +82,33 @@ class ContractTests(unittest.TestCase):
                     "32": {"metrics": baseline},
                 }
             })
-        result = screen_case(chains)
+        result = screen_case(chains, require_full_contract=False)
         self.assertTrue(result["anomaly_screen_pass"])
         self.assertEqual(result["mixing_status"], "MIXING-UNRESOLVED")
         self.assertFalse(result["note"].startswith("stationary"))
+
+    def test_atomic_report_does_not_overwrite(self):
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        from hashlib import sha256
+        from nc0a_contract_runner import save_report_once
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / "micro.json"
+            checksum = save_report_once(path, {"synthetic": True})
+            self.assertEqual(sha256(path.read_bytes()).hexdigest(), checksum)
+            self.assertTrue(Path(str(path) + ".sha256").exists())
+            with self.assertRaises(NC0aContractError):
+                save_report_once(path, {"synthetic": False})
+
+    def test_formal_case_seed_and_audits_cannot_be_bypassed(self):
+        # Full-size cases are NEVER run here: synthetic stand-in metadata
+        # intentionally lacks valid seed/audit/fixture provenance and fails.
+        payloads = [{"n": 340, "family": "er-like", "chain_index": i,
+                     "checkpoints": {"4": {"metrics": {}},
+                                     "32": {"metrics": {}}}}
+                    for i in range(8)]
+        with self.assertRaises(NC0aContractError):
+            screen_case(payloads, require_full_contract=True)
 
     def test_missing_cases_cannot_be_upgraded_to_battery_pass(self):
         with self.assertRaises(NC0aContractError):
