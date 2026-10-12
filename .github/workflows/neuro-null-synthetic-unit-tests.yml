@@ -1,0 +1,33 @@
+name: Neuro Null Synthetic Contract Tests
+
+on:
+  pull_request:
+    paths:
+      - "Experiments/neuro_sleep_null_calibration/**"
+      - ".github/workflows/neuro-null-synthetic-unit-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install pinned synthetic-test dependencies
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.16.2
+      - name: Run only bounded synthetic and statistics unit tests
+        working-directory: Experiments/neuro_sleep_null_calibration
+        run: |
+          python -m unittest -v \
+            test_connected_swap.py \
+            test_synthetic_graphs.py \
+            test_anomaly_screen.py \
+            test_nc0a_contract_runner.py
+      - name: Confirm no formal NC-0a runner launched
+        run: |
+          echo "Only small unit tests; never start 16x8x32E or RIKEN biological nulls."
