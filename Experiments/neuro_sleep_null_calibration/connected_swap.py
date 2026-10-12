@@ -120,7 +120,38 @@ class ConnectedDegreeSwap:
         self.adj[u].add(v)
         self.adj[v].add(u)
 
-    def propose(self, rng: random.Random, *, oracle: bool = False) -> bool:
+    def assert_accepted_swap_local(self, old1: Edge, old2: Edge,
+                                   new1: Edge, new2: Edge,
+                                   slots: tuple[int, int]) -> None:
+        """O(local touched-degree) audit for one just-accepted two-edge switch.
+
+        Induction: if the input graph was simple, undirected and had the
+        original degree sequence, the only four vertices and two edge slots
+        modified by a legal swap suffice to check the same invariants afterward.
+        Full-graph *connectivity* still gets checked at fixed checkpoints.
+        """
+        i, j = slots
+        if i == j or new1 == new2 or old1 == old2:
+            raise AssertionError("Invalid two-edge swap slots")
+        if self.edges[i] != new1 or self.edges[j] != new2:
+            raise AssertionError("Accepted edge slots do not match proposal")
+        touched = {x for e in (old1, old2) for x in e}
+        if len(touched) != 4 or set(new1 + new2) != touched:
+            raise AssertionError("Accepted swap did not preserve endpoints")
+        if self.m < self.n - 1:
+            raise AssertionError("Accepted graph edge count invalid")
+        for u in touched:
+            if len(self.adj[u]) != self.initial_degrees[u]:
+                raise AssertionError("Accepted swap changed degree")
+        for u, v in (old1, old2):
+            if v in self.adj[u] or u in self.adj[v]:
+                raise AssertionError("Old accepted edge still present")
+        for u, v in (new1, new2):
+            if u >= v or v not in self.adj[u] or u not in self.adj[v]:
+                raise AssertionError("New accepted edge missing or asymmetric")
+
+    def propose(self, rng: random.Random, *, oracle: bool = False,
+                audit_local: bool = False) -> bool:
         """Try one move. Rejection counts as one chain step (stay put).
 
         When oracle=True, verify the short BFS decision with full connectivity
@@ -157,6 +188,8 @@ class ConnectedDegreeSwap:
             self.edges[i] = e1
             self.edges[j] = e2
             self.accepted += 1
+            if audit_local:
+                self.assert_accepted_swap_local(orig1, orig2, e1, e2, (i, j))
             return True
         self._erase(e1)
         self._erase(e2)
