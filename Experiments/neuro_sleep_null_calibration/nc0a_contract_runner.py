@@ -236,8 +236,21 @@ def screen_case(chains: list[dict], *,
             "bonferroni_adjusted_p": adjusted_p,
             "passed_anomaly_screen": passed,
         }
+    acceptance = []
+    if require_full_contract:
+        acceptance = [
+            {"chain_index": c["chain_index"],
+             "accepted_at_4E": c["checkpoints"]["4"]["accepted"],
+             "accepted_at_32E": c["checkpoints"]["32"]["accepted"],
+             "acceptance_rate_at_32E":
+                 c["checkpoints"]["32"]["acceptance_rate"]}
+            for c in sorted(chains, key=lambda x: x["chain_index"])
+        ]
     return {
         "n": n, "family": family, "metrics": output,
+        "chain_movement": acceptance,
+        "zero_accepted_chains_at_32E": sum(
+            x["accepted_at_32E"] == 0 for x in acceptance),
         "anomaly_screen_pass": all(v["passed_anomaly_screen"] for v in output.values()),
         "mixing_status": "MIXING-UNRESOLVED",
         "note": "This is only a low-power 4E-to-32E drift screen; not a mixing certificate.",
