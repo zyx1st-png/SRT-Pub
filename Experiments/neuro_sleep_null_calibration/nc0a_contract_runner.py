@@ -68,7 +68,8 @@ def synthetic_chain(n: int, family: str, chain_index: int, *,
                     root: int = 20261009,
                     checkpoints: tuple[int, ...] = CHECKPOINTS,
                     max_wall_seconds: float,
-                    max_proposals: int) -> dict:
+                    max_proposals: int,
+                    fixture=None) -> dict:
     """Deterministic checkpointed chain; a caller must supply absolute limits.
 
     Tiny nonformal unit tests use different checkpoints and a small N.
@@ -84,7 +85,11 @@ def synthetic_chain(n: int, family: str, chain_index: int, *,
         raise ValueError("Invalid checkpoint multipliers")
     start = time.monotonic()
     deadline = start + max_wall_seconds
-    fixture = make_synthetic_graph(n, family, root=root)
+    if fixture is None:
+        fixture = make_synthetic_graph(n, family, root=root)
+    elif (fixture.n != n or fixture.family != family or
+          fixture.seed != synthetic_seed(family, n, root=root)):
+        raise NC0aContractError("Injected fixture does not match fixed case identity")
     g = ConnectedDegreeSwap(n, fixture.edges)
     steps = tuple(c * g.m for c in checkpoints)
     if steps[-1] > max_proposals:
@@ -316,8 +321,25 @@ def save_report_once(path: str | Path, report: dict) -> str:
         checksum = Path(str(destination) + ".sha256")
         if checksum.exists():
             raise NC0aContractError("Concurrent checksum writer")
-        checksum.write_text(digest + "  " + destination.name + "\n",
-                            encoding="ascii")
+        checksum_tmp = checksum.with_name("." + checksum.name + ".tmp")
+        fd_sum = os.open(checksum_tmp, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+        try:
+            with os.fdopen(fd_sum, "w", encoding="ascii") as handle:
+                handle.write(digest + "  " + destination.name + "\n")
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.link(checksum_tmp, checksum)
+        finally:
+            if checksum_tmp.exists():
+                checksum_tmp.unlink()
+        # Persist directory entries as well as file contents before reporting
+        # the result committed. A crash between result and checksum leaves an
+        # invalid, non-resumable attempt that must be reviewed explicitly.
+        dir_fd = os.open(destination.parent, os.O_RDONLY)
+        try:
+            os.fsync(dir_fd)
+        finally:
+            os.close(dir_fd)
     finally:
         if os.path.exists(temporary):
             os.remove(temporary)
