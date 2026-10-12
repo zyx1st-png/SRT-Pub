@@ -151,8 +151,11 @@ def audit(manifest_path: str | Path) -> dict:
             raise EvidenceError("Activity basis requires externally verified evidence")
         if not interval.get("basis_note") or len(interval["basis_note"]) < 16:
             raise EvidenceError("Explain why entire interval was actively executing")
-        if type(interval["workers"]) is not int or not 1 <= interval["workers"] <= 8:
-            raise EvidenceError("Invalid original worker count")
+        if type(interval["workers"]) is not int or not 1 <= interval["workers"] <= 256:
+            raise EvidenceError("Missing/implausible original worker count")
+        # Archived worker configurations are observations, not new-run caps.
+        # Values different from the planned <=8 workers require a separate
+        # equivalence justification; do not discard historical evidence.
         machine = interval.get("machine_id", "")
         if not machine:
             raise EvidenceError("Machine identity missing")
@@ -192,6 +195,7 @@ def audit(manifest_path: str | Path) -> dict:
         "nominal_worker_seconds_not_actual_cpu_measurement": nominal_worker_seconds,
         "single_machine_id": next(iter(machines)),
         "original_worker_counts": sorted(set(s["workers"] for s in sessions)),
+        "worker_profile_requires_independent_comparability_review": True,
         "segments": sessions,
         "job_coverage": job_coverage,
         "source_file_hashes": {k: _sha(v[0]) for k, v in source_map.items()},
