@@ -69,6 +69,16 @@ class RuntimeEvidenceTests(unittest.TestCase):
             self.assertEqual(result["job_coverage"]["unique_completed_jobs"], 6006)
             self.assertIn("REVIEW_REQUIRED", result["status"])
 
+    def test_archived_worker_count_is_observed_not_future_cap(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path, manifest = self.fixture(root)
+            manifest["verified_active_intervals"][0]["workers"] = 16
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            result = audit(path)
+            self.assertEqual(result["original_worker_counts"], [4, 16])
+            self.assertTrue(result["worker_profile_requires_independent_comparability_review"])
+
     def test_source_sha_change_fails_closed(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
