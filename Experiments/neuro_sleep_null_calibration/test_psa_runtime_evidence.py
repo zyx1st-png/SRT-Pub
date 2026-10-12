@@ -6,7 +6,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from psa_runtime_evidence import audit, EvidenceError, _date
+from psa_runtime_evidence import audit, EvidenceError, _date, _anchor
 
 
 class RuntimeEvidenceTests(unittest.TestCase):
@@ -115,6 +115,20 @@ class RuntimeEvidenceTests(unittest.TestCase):
         self.assertEqual(d.isoformat(), "2026-09-24T10:00:00+00:00")
         with self.assertRaises(EvidenceError):
             _date("2026-09-24 18:00:00", "UNKNOWN")
+
+    def test_python_logging_comma_milliseconds_are_not_truncated(self):
+        # The original execution.log uses logging's comma fraction. Previously
+        # the regex silently matched only whole seconds, collapsing short spans.
+        lines = [
+            "2026-09-24 18:16:16,734 INFO checkpoint repeat=10/200",
+            "2026-09-24 18:16:16,753 INFO checkpoint repeat=20/200",
+        ]
+        a = _anchor(lines, {"line": 1, "unique_text": "checkpoint repeat=10"}, "+08:00")
+        b = _anchor(lines, {"line": 2, "unique_text": "checkpoint repeat=20"}, "+08:00")
+        self.assertEqual((b - a).total_seconds(), 0.019)
+        self.assertEqual(a.microsecond, 734000)
+        self.assertEqual(_date("2026-09-24T18:16:16.734+0800", ""), a)
+        self.assertEqual(_date("2026-09-24T18:16:16,734+0800", ""), a)
 
     def test_interleaved_log_offsets_are_not_inferred_as_active(self):
         with TemporaryDirectory() as tmp:

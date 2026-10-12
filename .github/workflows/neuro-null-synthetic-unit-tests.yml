@@ -29,6 +29,7 @@ jobs:
             test_anomaly_screen.py \
             test_nc0a_contract_runner.py \
             test_psa_runtime_evidence.py \
+            test_psa_history_inventory.py \
             test_nc0a_budget_preflight.py
       - name: Confirm no formal NC-0a runner launched
         run: |

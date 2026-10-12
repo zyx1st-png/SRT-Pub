@@ -22,7 +22,7 @@ import re
 import sys
 
 TIMESTAMP = re.compile(
-    r"20\d{2}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}(?:\.\d+)?"
+    r"20\d{2}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}(?:[.,]\d+)?"
     r"(?:Z|[+-]\d{2}:?\d{2})?"
 )
 ACTIVE_EVIDENCE = {"scheduler_active", "verified_progress", "process_cpu_accounting"}
@@ -34,7 +34,7 @@ class EvidenceError(ValueError):
 
 
 def _date(text: str, naive_offset: str) -> datetime:
-    value = text.replace(" ", "T").replace("Z", "+00:00")
+    value = text.replace(" ", "T").replace("Z", "+00:00").replace(",", ".")
     if re.search(r"[+-]\d{4}$", value):
         value = value[:-5] + value[-5:-2] + ":" + value[-2:]
     date = datetime.fromisoformat(value)

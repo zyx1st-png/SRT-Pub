@@ -57,6 +57,12 @@ Required evidence for an auditable `T_PS-A`:
 | Original worker/hardware comparability | **NOT VERIFIED** |
 | Defensible comparable `T_PS-A` | **UNAVAILABLE — NO-GO** |
 
+### Local evidence recovery follow-up — 2026-10-12
+
+The [H2 historical audit](H2_RUNTIME_AUDIT_2026-10-12.md) independently recovered all 6,006 completed-job / 49,049 window metadata matches, historical 4/8-worker evidence, early dependency versions, seven tool duration records, one additional failed launch and system sleep records. The [read-only inventory tool](psa_history_inventory.py) preserves gaps and clock backsteps without inferring activity. Source SHA-256 and exact anchors are in that audit.
+
+**H2 remains NO-GO.** Progress-supported partial intervals total 71.560963 elapsed hours; a mixed-clock conditional estimate is about 76.630770 hours. Neither is an accepted complete comparable `T_PS-A`. Actual aggregate process-tree CPU-hours remain unknown. The earlier unfilled table records the remote checkpoint; the linked local audit supplies recovered evidence without approving a denominator. Its absolute-budget candidate is only a prospective proposal requiring independent review, not a change to §6.1 or execution authority.
+
 ## 4. NC-0a independent absolute cap: unresolved before formal execution
 
 The formal synthetic battery needs **separate** precommitted limits even if the G0 denominator is eventually recovered. The proposed [NC-0a resource-policy schema checker](nc0a_budget_preflight.py) has **no implicit defaults, cannot launch the full battery, and always reports only schema validity rather than execution authorization**. Its [tests](test_nc0a_budget_preflight.py) use intentionally fictional numbers and invalid approval links solely as fail-closed unit fixtures; do **not** treat those fields as a suggested budget.
