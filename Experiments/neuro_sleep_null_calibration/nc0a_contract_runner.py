@@ -183,15 +183,27 @@ def screen_case(chains: list[dict], *,
         except (ValueError, statistics.StatisticsError) as exc:
             raise NC0aContractError(str(exc)) from exc
         sd = statistics.stdev(diffs)
+        from scipy.stats import t as student_t  # original pipeline already uses SciPy
+        two_sided_p = (0.0 if t_value == math.inf else
+                       float(2 * student_t.sf(t_value, df=7)))
+        adjusted_p = min(1.0, SCREEN_FAMILY * two_sided_p)
+        values_4 = [c["checkpoints"]["4"]["metrics"][metric] for c in chains]
+        values_32 = [c["checkpoints"]["32"]["metrics"][metric] for c in chains]
         if not math.isfinite(t_value) and t_value != math.inf:
             raise NC0aContractError("Non-finite unexpected t statistic")
         passed = t_value <= PAIRED_T_CRITICAL
         output[metric] = {
+            "values_at_4E": values_4,
+            "values_at_32E": values_32,
+            "mean_at_4E": statistics.mean(values_4),
+            "mean_at_32E": statistics.mean(values_32),
             "paired_differences": diffs,
             "mean_difference": statistics.mean(diffs),
             "sd_difference": sd,
             "critical_absolute_drift": PAIRED_T_CRITICAL * sd / math.sqrt(8),
             "abs_t": t_value if math.isfinite(t_value) else "infinity",
+            "two_sided_p": two_sided_p,
+            "bonferroni_adjusted_p": adjusted_p,
             "passed_anomaly_screen": passed,
         }
     return {
