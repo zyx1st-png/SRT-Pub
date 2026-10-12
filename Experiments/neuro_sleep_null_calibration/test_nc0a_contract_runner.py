@@ -110,6 +110,61 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(NC0aContractError):
             screen_case(payloads, require_full_contract=True)
 
+    def test_r5_three_state_exact_slow_chain_pass_does_not_certify_mixing(self):
+        # R5 independent review's *non-formal* counterexample: 8 universal
+        # vertices force almost every edge; among four other special vertices
+        # only three matching realizations are possible. These are not among
+        # the 16 prespecified NC-0a fixtures. No biological data are used.
+        import math
+        from synthetic_graphs import metrics
+        n = 340
+        edges = sorted(
+            {(u, v) for u in range(8) for v in range(u + 1, n)}
+            | {(8, 9), (10, 11)}
+        )
+        e = len(edges)
+        self.assertEqual(e, 2686)
+        p_leave = 1 / math.comb(e, 2)
+        tv_4 = (2 / 3) * (1 - 1.5 * p_leave) ** (4 * e)
+        tv_32 = (2 / 3) * (1 - 1.5 * p_leave) ** (32 * e)
+        self.assertGreater(tv_4, 0.66)
+        self.assertGreater(tv_32, 0.64)
+        results, total_accepted = [], 0
+        for index in range(8):
+            g = ConnectedDegreeSwap(n, edges)
+            rng = random.Random(2026101200 + index)
+            checkpoints = {}
+            for step in range(1, 32 * e + 1):
+                g.propose(rng, audit_local=True)
+                if step in (4 * e, 32 * e):
+                    g.assert_invariants()
+                    checkpoints[str(step // e)] = {
+                        "metrics": metrics(n, g.edges, edges)}
+            total_accepted += g.accepted
+            results.append({
+                "n": n, "family": "er-like",
+                "chain_index": index, "checkpoints": checkpoints,
+            })
+        self.assertEqual(total_accepted, 1)
+        screened = screen_case(results, require_full_contract=False)
+        self.assertTrue(screened["anomaly_screen_pass"])
+        self.assertEqual(screened["mixing_status"], "MIXING-UNRESOLVED")
+        self.assertTrue(all(
+            not data["passed_anomaly_screen"] is False
+            for data in screened["metrics"].values()
+        ))
+
+    def test_even_all_screen_passes_do_not_waive_oracle(self):
+        from nc0a_contract_runner import FORMAL_N, METRICS
+        from synthetic_graphs import FAMILIES
+        screens = [{
+            "n": n, "family": family,
+            "metrics": {m: {"passed_anomaly_screen": True} for m in METRICS},
+            "anomaly_screen_pass": True,
+        } for n in FORMAL_N for family in FAMILIES]
+        with self.assertRaises(NC0aContractError):
+            validate_full_battery(screens, oracle_reports=None)
+
     def test_missing_cases_cannot_be_upgraded_to_battery_pass(self):
         with self.assertRaises(NC0aContractError):
             validate_full_battery([])
