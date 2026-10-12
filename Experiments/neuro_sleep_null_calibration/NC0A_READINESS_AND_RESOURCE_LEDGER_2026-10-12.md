@@ -38,6 +38,8 @@ tags: [Neuroscience, SyntheticNull, ResourceGate, Provenance, Draft]
 
 ## 3. Historical original PS-A `T_PS-A`: unresolved, never invent
 
+The [private-source local handoff](PSA_RUNTIME_EVIDENCE_HANDOFF.md) and source-hashed offline [active-time auditor](psa_runtime_evidence.py) are now provided, alongside [synthetic-fixture unit tests](test_psa_runtime_evidence.py). These **do not** reconstruct the original intervals without the original private logs or independently verify source activity. A successful program result remains arithmetic-only and requires an independent evidentiary review.
+
 The R5 reviewer reported archival provenance of multiple PS-A launches on 2026-09-24, 09-25, 10-08 and 10-09, with overwritten `environment.txt` and a long logging gap. The archived final run snapshot (~2h) is not the whole experiment; wall calendar time across two weeks includes inactive gaps. **Neither is an acceptable denominator.**
 
 Required evidence for an auditable `T_PS-A`:
@@ -57,7 +59,9 @@ Required evidence for an auditable `T_PS-A`:
 
 ## 4. NC-0a independent absolute cap: unresolved before formal execution
 
-The formal synthetic battery needs **separate** precommitted limits even if the G0 denominator is eventually recovered:
+The formal synthetic battery needs **separate** precommitted limits even if the G0 denominator is eventually recovered. The proposed [NC-0a resource-policy schema checker](nc0a_budget_preflight.py) has **no implicit defaults, cannot launch the full battery, and always reports only schema validity rather than execution authorization**. Its [tests](test_nc0a_budget_preflight.py) use intentionally fictional numbers and invalid approval links solely as fail-closed unit fixtures; do **not** treat those fields as a suggested budget.
+
+The separately approved policy must specify:
 
 - Host identity and dependency lock; explicit maximum wall clock time for **the entire 16-case battery**, total CPU-hour limit and maximum concurrent workers;
 - Process/aggregate RAM ceiling and peak measurement method; baseline disk free-space bytes plus maximum temp/output allocation, output serialization policy and how failure/partial files count;
@@ -66,7 +70,7 @@ The formal synthetic battery needs **separate** precommitted limits even if the 
 - Case order/concurrency plan, atomic success artifact and immutable SHA-256, clear `interrupted` / `failed` status. A crash may be re-executed **from the original seed and step zero only under a documented recovery decision**, never using a new seed or silently filling in missing favorable cases;
 - If the cap is exceeded, final formal result must be **NC-0a NO-GO**, not “pass on finished cases”; any budget amendment requires prospective review before further trials.
 
-**Values have not been supplied/locked for this machine; do not launch the formal battery.** The bounded contract unit tests are separate, explicitly labeled and do not consume formal-case data.
+**Values have not been supplied/locked for this machine, and no reviewed `T_PS-A` is available; do not launch the formal battery.** The bounded contract unit tests are separate, explicitly labeled and do not consume formal-case data.
 
 ## 5. NC-0 historical graph-identity H3: separate gate
 
