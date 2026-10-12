@@ -27,7 +27,8 @@ jobs:
             test_connected_swap.py \
             test_synthetic_graphs.py \
             test_anomaly_screen.py \
-            test_nc0a_contract_runner.py
+            test_nc0a_contract_runner.py \
+            test_psa_runtime_evidence.py
       - name: Confirm no formal NC-0a runner launched
         run: |
           echo "Only small unit tests; never start 16x8x32E or RIKEN biological nulls."
