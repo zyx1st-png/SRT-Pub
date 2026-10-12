@@ -70,6 +70,7 @@ class ConnectedDegreeSwap:
         if not self.full_connected():
             raise ValueError("Input graph must be connected")
         self.initial_degrees = tuple(map(len, self.adj))
+        self.initial_edge_count = len(self.edges)
         self.attempts = self.accepted = 0
         self.rejected_overlap = self.rejected_duplicate = self.rejected_disconnect = 0
 
@@ -138,8 +139,8 @@ class ConnectedDegreeSwap:
         touched = {x for e in (old1, old2) for x in e}
         if len(touched) != 4 or set(new1 + new2) != touched:
             raise AssertionError("Accepted swap did not preserve endpoints")
-        if self.m < self.n - 1:
-            raise AssertionError("Accepted graph edge count invalid")
+        if self.m != self.initial_edge_count:
+            raise AssertionError("Accepted graph edge count changed")
         for u in touched:
             if len(self.adj[u]) != self.initial_degrees[u]:
                 raise AssertionError("Accepted swap changed degree")
@@ -205,6 +206,8 @@ class ConnectedDegreeSwap:
     def assert_invariants(self) -> None:
         if len(self.edges) != len(set(self.edges)) or any(u >= v for u, v in self.edges):
             raise AssertionError("Edge list is not simple and canonical")
+        if len(self.edges) != self.initial_edge_count:
+            raise AssertionError("Edge count changed")
         if tuple(map(len, self.adj)) != self.initial_degrees:
             raise AssertionError("Degree sequence changed")
         for u, v in self.edges:
