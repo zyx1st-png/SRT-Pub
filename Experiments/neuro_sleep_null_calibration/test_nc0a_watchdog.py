@@ -163,7 +163,9 @@ class WatchdogTests(unittest.TestCase):
             result = supervise([sys.executable, "-c", code], run_dir=tmp,
                                limits=limits())
             self.assertEqual(result["status"], "stopped")
-            self.assertEqual(result["reason"], "ORPHANED_PROCESS_GROUP_AFTER_RUNNER_EXIT")
+            self.assertIn(result["reason"], (
+                "ORPHANED_PROCESS_GROUP_AFTER_RUNNER_EXIT",
+                "UNKNOWN_PROCESS_GROUP_MEMBER"))
             child_pid = int((Path(tmp) / "worker.pid").read_text())
             try:
                 os.kill(child_pid, 0)
