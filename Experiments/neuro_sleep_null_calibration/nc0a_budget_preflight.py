@@ -14,6 +14,7 @@ import math
 from pathlib import Path
 import re
 import sys
+import uuid
 
 from nc0a_contract_runner import FORMAL_N, CHAIN_COUNT, ORACLE_PROPOSALS
 from synthetic_graphs import FAMILIES
@@ -59,11 +60,33 @@ def validate_policy(policy: dict) -> dict:
         "budget_approver",
         "budget_approval_record_url",
         "baseline_measurement_utc",
+        "formal_experiment_id",
+        "authority_ledger_path",
+        "authority_anchor_path",
+        "memory_enforcement_backend",
     ):
         if not isinstance(policy.get(field), str) or not policy[field].strip():
             raise ResourcePolicyError("Missing approval/provenance field: " + field)
     if not re.fullmatch(r"[0-9a-f]{40}", policy["target_repository_head_sha"]):
         raise ResourcePolicyError("Target HEAD must be full SHA-1")
+    try:
+        if str(uuid.UUID(policy["formal_experiment_id"])) != policy["formal_experiment_id"]:
+            raise ValueError
+    except (ValueError, AttributeError) as exc:
+        raise ResourcePolicyError("formal_experiment_id must be a canonical UUID") from exc
+    ledger_path = Path(policy["authority_ledger_path"])
+    anchor_path = Path(policy["authority_anchor_path"])
+    if (not ledger_path.is_absolute() or not anchor_path.is_absolute() or
+        ledger_path == anchor_path or ledger_path.parent == anchor_path.parent):
+        raise ResourcePolicyError(
+            "Authority ledger and independent anchor must be absolute paths in separate directories")
+    if policy["memory_enforcement_backend"] != "CGROUP_V2_HARD":
+        raise ResourcePolicyError(
+            "Formal NC-0a requires an OS-enforced cgroup v2 memory limit")
+    if (type(policy.get("host_memory_free_percent_stop")) is not int or
+        not 1 <= policy["host_memory_free_percent_stop"] <= 100):
+        raise ResourcePolicyError(
+            "Host memory pressure stop threshold must be an explicit integer percentage")
     for field in ("runtime_dependency_lock_sha256", "psa_evidence_report_sha256"):
         if not re.fullmatch(r"[0-9a-f]{64}", policy[field]):
             raise ResourcePolicyError("Invalid evidence SHA-256 for " + field)

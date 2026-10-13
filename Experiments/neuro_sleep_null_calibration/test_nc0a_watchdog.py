@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
+import resource
 import shutil
 import subprocess
 import sys
@@ -13,7 +14,7 @@ import time
 import unittest
 
 from nc0a_watchdog import (
-    WatchdogLimits, parse_ps_time, supervise, verify_hash_chain,
+    WatchdogLimits, parse_ps_time, sample_process_group, supervise, verify_hash_chain,
 )
 
 
@@ -76,6 +77,39 @@ class WatchdogTests(unittest.TestCase):
                                limits=limits(aggregate_rss_bytes=48 * 1024 * 1024))
             self.assertEqual(result["status"], "stopped")
             self.assertEqual(result["reason"], "AGGREGATE_RSS_LIMIT")
+
+    def test_short_lived_memory_peak_is_never_reported_as_a_hard_limit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            marker = root / "first-sample-complete"
+            peak_file = root / "child-peak-rss.txt"
+            code = (
+                "import os,resource,sys,time; from pathlib import Path; "
+                f"marker=Path({str(marker)!r}); peak=Path({str(peak_file)!r}); "
+                "deadline=time.monotonic()+5; "
+                "exec('while not marker.exists() and time.monotonic()<deadline: time.sleep(.001)'); "
+                "x=bytearray(120*1024*1024); x[::4096]=b'x'*(len(x)//4096); "
+                "peak.write_text(str(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)); "
+            )
+
+            def first_sample_then_release(pgid):
+                samples = sample_process_group(pgid)
+                if any(proc.pid == pgid for proc in samples):
+                    marker.write_text("sampled")
+                return samples
+
+            result = supervise([sys.executable, "-c", code], run_dir=root,
+                               sampler=first_sample_then_release,
+                               limits=limits(aggregate_rss_bytes=64 * 1024 * 1024))
+            observed_peak = int(peak_file.read_text())
+            peak_bytes = observed_peak if sys.platform == "darwin" else observed_peak * 1024
+            self.assertGreater(peak_bytes, 100 * 1024 * 1024)
+            self.assertEqual(result["usage"]["memory_enforcement"],
+                             "SAMPLED_ONLY_NOT_HARD")
+            # Sampling may miss the transient; the result must still state that
+            # no OS hard limit was enforced. Formal policy rejects this backend.
+            self.assertLess(result["usage"]["peak_aggregate_rss_bytes"],
+                            64 * 1024 * 1024)
 
     def test_disk_allocation_limit_kills_writer_and_logs_stop(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -164,7 +198,10 @@ class WatchdogTests(unittest.TestCase):
                 f"Path({str(runner_pid_file)!r}).write_text(str(p.pid)); "
                 "p.wait()"
             )
-            monitor = subprocess.Popen([sys.executable, str(supervisor)])
+            env = os.environ.copy()
+            module_dir = str(Path(__file__).resolve().parent)
+            env["PYTHONPATH"] = module_dir + os.pathsep + env.get("PYTHONPATH", "")
+            monitor = subprocess.Popen([sys.executable, str(supervisor)], env=env)
             runner_pid = worker_pid = None
             try:
                 deadline = time.monotonic() + 5

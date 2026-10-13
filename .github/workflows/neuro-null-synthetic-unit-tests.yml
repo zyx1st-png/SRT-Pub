@@ -26,6 +26,8 @@ jobs:
           python -m py_compile \
             nc0a_contract_runner.py \
             nc0a_execution_engine.py \
+            nc0a_authority_ledger.py \
+            nc0a_budget_preflight.py \
             nc0a_watchdog.py \
             nc0a_microbenchmark.py
       - name: Run only bounded synthetic and statistics unit tests
@@ -37,6 +39,8 @@ jobs:
             test_anomaly_screen.py \
             test_nc0a_contract_runner.py \
             test_nc0a_execution_engine.py \
+            test_nc0a_execution_integration.py \
+            test_nc0a_authority_ledger.py \
             test_nc0a_watchdog.py \
             test_psa_runtime_evidence.py \
             test_psa_history_inventory.py \

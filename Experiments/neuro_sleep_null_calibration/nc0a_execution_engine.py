@@ -36,8 +36,9 @@ from nc0a_contract_runner import (
 )
 from nc0a_watchdog import (
     HashChainLog, WatchdogError, WatchdogLimits, guard_watchdog_parent,
-    supervise,
+    supervise, validate_hard_memory_backend, verify_hash_chain,
 )
+from nc0a_authority_ledger import AuthorityLedger, AuthorityLedgerError
 from synthetic_graphs import FAMILIES, make_synthetic_graph, synthetic_seed
 
 
@@ -56,11 +57,12 @@ PROTOCOL = {
     "recovery": "TASK_LEVEL_FROM_ZERO_SAME_SEED_NO_OUTCOME_DEPENDENT_RETRY",
 }
 WATCHDOG_CONTRACT = {
-    "implementation": "NC0A_WATCHDOG_V2",
+    "implementation": "NC0A_WATCHDOG_V3",
     "poll_seconds": 0.5,
     "wall_clock": "UTC inclusive of sleep; monotonic divergence above 5s stops",
     "cpu_accounting": "process-group ps cumulative TIME plus waited-child rusage and watchdog CPU; 8-worker termination margin",
-    "rss_accounting": "sum process-group RSS conservatively including shared pages; stop at 90% cap",
+    "rss_accounting": "sampled process-group RSS is telemetry only; formal memory enforcement requires exact cgroup-v2 memory.max",
+    "worker_accounting": "count only identified multiprocessing.spawn compute workers; sample all group members; unknown members stop",
     "disk_accounting": "run-directory bytes stop at 95% cap; free-disk stop at reserve plus 64MiB or 5% margin",
     "task_deadlines": "case/oracle UTC caps with 99% early-stop margin capped at 60s",
     "termination": "dedicated process group; SIGTERM 0.5s then SIGKILL",
@@ -68,6 +70,7 @@ WATCHDOG_CONTRACT = {
     "audit": "fsynced append-only hash chain; no overwrite; unique runner stdout per invocation",
 }
 APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V1"
+ENGINEERING_TEST_APPROVAL_PURPOSE = "NC0A_BOUNDED_ENGINEERING_TEST_APPROVAL_V1"
 MODULE_DIR = Path(__file__).resolve().parent
 REPOSITORY_ROOT = MODULE_DIR.parents[1]
 PREREGISTRATION = REPOSITORY_ROOT / "Experiments" / "SRT_NEURO_SLEEP_POPULATION_NULL_CALIBRATION_PREREGISTRATION_2026-10-09.md"
@@ -175,6 +178,10 @@ def _watchdog_contract_hash() -> str:
     return sha256(_canonical(WATCHDOG_CONTRACT)).hexdigest()
 
 
+def _watchdog_source_hash() -> str:
+    return sha256((MODULE_DIR / "nc0a_watchdog.py").read_bytes()).hexdigest()
+
+
 def verify_ed25519_signature(public_key_path: Path, payload_bytes: bytes,
                              signature: bytes) -> bool:
     """Use the host OpenSSL Ed25519 implementation without shell evaluation."""
@@ -205,8 +212,9 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     if not expected_fingerprint or actual_fingerprint != expected_fingerprint:
         raise ExecutionError("No matching externally provisioned reviewer trust anchor")
     _assert_clean_source_tree()
-    policy = validate_policy(json.loads(policy_bytes))
-    _verify_runtime_lock(json.loads(policy_bytes))
+    raw_policy = _read_json(policy_path)
+    validation_summary = validate_policy(raw_policy)
+    _verify_runtime_lock(raw_policy)
     signed = dict(approval)
     signature_encoded = signed.pop("signature_ed25519_base64", None)
     if not isinstance(signature_encoded, str):
@@ -220,8 +228,12 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     head = _git_head()
     if approval.get("target_repository_head_sha") != head:
         raise ExecutionError("Approval is not bound to the current repository HEAD")
-    if policy.get("target_repository_head_sha") != head:
+    if raw_policy.get("target_repository_head_sha") != head:
         raise ExecutionError("Resource policy targets a different repository HEAD")
+    if validation_summary.get("review_head") != raw_policy.get("target_repository_head_sha"):
+        raise ExecutionError("Resource-policy validation summary does not reproduce its target HEAD")
+    if approval.get("formal_experiment_id") != raw_policy.get("formal_experiment_id"):
+        raise ExecutionError("Approval is not bound to the unique formal experiment identity")
     preregistration_sha = sha256(PREREGISTRATION.read_bytes()).hexdigest()
     if approval.get("preregistration_sha256") != preregistration_sha:
         raise ExecutionError("Approval does not bind the current preregistration bytes")
@@ -230,7 +242,9 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     if (approval.get("watchdog_contract_sha256") != _watchdog_contract_hash() or
         approval.get("watchdog_contract") != WATCHDOG_CONTRACT):
         raise ExecutionError("Approval does not bind the reviewed watchdog stop semantics")
-    if approval.get("resource_limits") != json.loads(policy_bytes).get("limits"):
+    if approval.get("watchdog_source_sha256") != _watchdog_source_hash():
+        raise ExecutionError("Approval does not bind the exact watchdog implementation bytes")
+    if approval.get("resource_limits") != raw_policy.get("limits"):
         raise ExecutionError("Approved resource limits differ from the policy")
     reviewer = approval.get("independent_reviewer")
     review_url = approval.get("independent_review_url")
@@ -246,7 +260,7 @@ def _verify_approval(policy_path: Path, approval_path: Path,
         raise ExecutionError("Malformed Ed25519 signature") from exc
     if not verify_ed25519_signature(public_key_path, _canonical(signed), signature):
         raise ExecutionError("Independent Ed25519 approval signature did not verify")
-    return json.loads(policy_bytes), approval
+    return raw_policy, approval
 
 
 def _environment(head: str) -> dict:
@@ -276,7 +290,8 @@ def _environment(head: str) -> dict:
             name: sha256((MODULE_DIR / name).read_bytes()).hexdigest()
             for name in ("nc0a_contract_runner.py", "synthetic_graphs.py",
                          "connected_swap.py", "test_anomaly_screen.py",
-                         "nc0a_execution_engine.py", "nc0a_watchdog.py")
+                         "nc0a_execution_engine.py", "nc0a_watchdog.py",
+                         "nc0a_budget_preflight.py", "nc0a_authority_ledger.py")
         },
     }
 
@@ -318,9 +333,10 @@ _WORKER_FIXTURE: tuple | None = None
 
 def _worker_init(n: int, family: str, root: int, edges: tuple,
                  checkpoints: tuple, case_seconds: float,
-                 max_proposals: int) -> None:
+                 max_proposals: int, test_worker_hold_seconds: float = 0.0) -> None:
     global _WORKER_SPEC, _WORKER_FIXTURE
-    _WORKER_SPEC = (n, family, root, checkpoints, case_seconds, max_proposals)
+    _WORKER_SPEC = (n, family, root, checkpoints, case_seconds, max_proposals,
+                    test_worker_hold_seconds)
     _WORKER_FIXTURE = (n, family, synthetic_seed(family, n, root=root), edges)
 
 
@@ -329,7 +345,7 @@ def _chain_worker(chain_index: int, crash_index: int | None = None) -> dict:
         os._exit(71)  # Integration-test fault injection; formal calls never set it.
     if _WORKER_SPEC is None or _WORKER_FIXTURE is None:
         raise ExecutionError("Worker fixture initializer was not run")
-    n, family, root, checkpoints, case_seconds, max_proposals = _WORKER_SPEC
+    n, family, root, checkpoints, case_seconds, max_proposals, hold_seconds = _WORKER_SPEC
     fn, ff, fseed, edges = _WORKER_FIXTURE
     if (fn, ff) != (n, family):
         raise ExecutionError("Worker received a mismatched immutable fixture")
@@ -344,10 +360,13 @@ def _chain_worker(chain_index: int, crash_index: int | None = None) -> dict:
             f"{u},{v}" for u, v in edges)
         return _sha(payload.encode("ascii")).hexdigest()
     fixture.fingerprint = fingerprint
-    return synthetic_chain(n, family, chain_index, root=root,
-                           checkpoints=checkpoints,
-                           max_wall_seconds=case_seconds,
-                           max_proposals=max_proposals, fixture=fixture)
+    result = synthetic_chain(n, family, chain_index, root=root,
+                             checkpoints=checkpoints,
+                             max_wall_seconds=case_seconds,
+                             max_proposals=max_proposals, fixture=fixture)
+    if hold_seconds:
+        time.sleep(hold_seconds)  # Signed engineering-test only; never formal.
+    return result
 
 
 def _verify_case_report(path: Path, spec: CaseSpec, report: dict) -> str:
@@ -422,7 +441,8 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
                           case_seconds: float, oracle_seconds: float,
                           formal: bool, crash_index: int | None = None,
                           crash_after_start: bool = False,
-                          phase_callback=None) -> dict:
+                          phase_callback=None,
+                          test_worker_hold_seconds: float = 0.0) -> dict:
     """Run one immutable task attempt. Toy specs exist only for engineering tests."""
     if formal != spec.formal:
         raise ExecutionError("Formal/test mode and case identity disagree")
@@ -447,7 +467,8 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
             max_workers=workers, mp_context=context,
             initializer=_worker_init,
             initargs=(spec.n, spec.family, seed_root, fixture.edges,
-                      CHECKPOINTS, case_seconds, max_proposals),
+                      CHECKPOINTS, case_seconds, max_proposals,
+                      test_worker_hold_seconds),
         ) as pool:
             futures = {pool.submit(_chain_worker, i, crash_index): i
                        for i in range(CHAIN_COUNT)}
@@ -532,7 +553,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                       head: str = "TEST_ONLY",
                       crash_index: int | None = None,
                       crash_after_start: bool = False,
-                      crash_after_start_case: str | None = None) -> dict:
+                      crash_after_start_case: str | None = None,
+                      test_worker_hold_seconds: float = 0.0) -> dict:
     """Fixed-order task recovery; completed SHA-verified cases are never replaced."""
     root = Path(run_dir).resolve()
     if root == REPOSITORY_ROOT or REPOSITORY_ROOT in root.parents:
@@ -549,7 +571,7 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
     manifest = _new_manifest(root, head=head, policy_hash=policy_hash,
                              protocol=PROTOCOL if formal else {
                                  "test_case_keys": [c.key for c in ordered],
-                                 "root_seed": ROOT_SEED,
+                                 "root_seed": ENGINEERING_TEST_SEED_ROOT,
                                  "recovery": PROTOCOL["recovery"]}, formal=formal)
     manifest_sha = _write_manifest_once(root, manifest)
     events = HashChainLog(root / "execution.jsonl")
@@ -658,7 +680,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                     crash_index=crash_index,
                     crash_after_start=(crash_after_start or
                                        spec.key == crash_after_start_case),
-                    phase_callback=set_phase)
+                    phase_callback=set_phase,
+                    test_worker_hold_seconds=(test_worker_hold_seconds if not formal else 0.0))
                 report["attempt"] = attempt_num
                 report["run_manifest_sha256"] = manifest_sha
                 report["resource_policy_sha256"] = policy_hash
@@ -733,7 +756,45 @@ def _limits_from_policy(policy: dict) -> WatchdogLimits:
         reserve_free_disk_bytes=caps["reserved_free_disk_bytes"],
         case_seconds=caps["case_timeout_seconds"],
         oracle_seconds=caps["oracle_timeout_seconds"],
+        memory_enforcement_backend=policy["memory_enforcement_backend"],
+        host_memory_free_percent_stop=policy["host_memory_free_percent_stop"],
     )
+
+
+def _assert_authority_store_outside_run(policy: dict, root: Path) -> tuple[Path, Path]:
+    ledger = Path(policy["authority_ledger_path"]).resolve()
+    anchor = Path(policy["authority_anchor_path"]).resolve()
+    for path in (ledger, anchor):
+        if path == root or path in root.parents or root in path.parents:
+            raise ExecutionError("Authority ledger and anchor must be outside the result directory tree")
+        if path == REPOSITORY_ROOT or REPOSITORY_ROOT in path.parents:
+            raise ExecutionError("Authority ledger and anchor must remain outside the repository")
+    if ledger == anchor or ledger.parent == anchor.parent:
+        raise ExecutionError("Authority ledger and anchor must use separate directories")
+    return ledger, anchor
+
+
+def _verify_watchdog_ledger_anchors(ledger: AuthorityLedger, experiment_id: str,
+                                    root: Path, is_resume: bool) -> None:
+    log_path = root / "watchdog.jsonl"
+    anchors = ledger.audit_anchors(experiment_id)
+    if not is_resume:
+        if any(root.iterdir()):
+            raise ExecutionError("A new authorization cannot adopt an existing run directory")
+        return
+    if not anchors or not log_path.is_file():
+        raise ExecutionError("Resumed authorization lacks its externally anchored watchdog log")
+    verify_hash_chain(log_path)
+    rows = [json.loads(line) for line in log_path.read_text(encoding="utf-8").splitlines()]
+    recorded = {row.get("record_sha256"): row.get("event", {}).get("event") for row in rows}
+    expected_terminals = {"runner_exited", "watchdog_stop"}
+    for anchor in anchors:
+        if anchor not in recorded or recorded[anchor] not in expected_terminals:
+            raise ExecutionError("Watchdog log is truncated or differs from the external authority anchor")
+    starts = sum(row.get("event", {}).get("event") == "run_started" for row in rows)
+    terminals = sum(recorded.get(anchor) in expected_terminals for anchor in anchors)
+    if starts != terminals or starts != len(anchors):
+        raise ExecutionError("Watchdog invocation starts and externally anchored terminals do not pair")
 
 
 def _runner_entry(run_dir: str, policy_path: str, policy_sha: str,
@@ -761,62 +822,258 @@ def _runner_entry(run_dir: str, policy_path: str, policy_sha: str,
     return 0
 
 
+def _test_source_hashes() -> dict:
+    names = ("nc0a_execution_engine.py", "nc0a_watchdog.py",
+             "nc0a_authority_ledger.py", "nc0a_contract_runner.py",
+             "synthetic_graphs.py", "connected_swap.py", "test_anomaly_screen.py")
+    return {name: sha256((MODULE_DIR / name).read_bytes()).hexdigest()
+            for name in names}
+
+
+def _validate_engineering_test_policy(policy: dict) -> tuple[tuple[CaseSpec, ...], int]:
+    if policy.get("purpose") != ENGINEERING_TEST_APPROVAL_PURPOSE:
+        raise ExecutionError("Wrong bounded engineering-test policy purpose")
+    try:
+        import uuid
+        if str(uuid.UUID(policy["test_experiment_id"])) != policy["test_experiment_id"]:
+            raise ValueError
+    except (ValueError, KeyError, TypeError, AttributeError) as exc:
+        raise ExecutionError("Test experiment identity must be a canonical UUID") from exc
+    rows = policy.get("cases")
+    if not isinstance(rows, list) or not 1 <= len(rows) <= 2:
+        raise ExecutionError("Engineering tests are limited to one or two toy cases")
+    cases = []
+    for row in rows:
+        if not isinstance(row, dict) or type(row.get("n")) is not int or not 2 <= row["n"] <= 50:
+            raise ExecutionError("Engineering test graph size must remain strictly sub-formal")
+        family = row.get("family")
+        if family not in FAMILIES:
+            raise ExecutionError("Unknown synthetic test family")
+        cases.append(CaseSpec(row["n"], family, False))
+    if len({case.key for case in cases}) != len(cases):
+        raise ExecutionError("Engineering test case identities must be unique")
+    workers = policy.get("max_workers")
+    if type(workers) is not int or not 1 <= workers <= 8:
+        raise ExecutionError("Engineering test worker count must be 1..8")
+    if policy.get("memory_enforcement_backend") != "SAMPLED_ONLY":
+        raise ExecutionError("Test-only authorization cannot claim a production hard-memory backend")
+    threshold = policy.get("host_memory_free_percent_stop")
+    if type(threshold) is not int or not 1 <= threshold <= 100:
+        raise ExecutionError("Engineering test requires an explicit host-pressure stop threshold")
+    if type(policy.get("max_invocations")) is not int or policy["max_invocations"] not in (1, 2):
+        raise ExecutionError("Engineering test may authorize at most two same-run invocations")
+    hold = policy.get("worker_hold_seconds", 0.0)
+    if type(hold) not in (int, float) or not 0 <= hold <= 1:
+        raise ExecutionError("Test worker hold must be bounded to at most one second")
+    fault = policy.get("fault_first_invocation")
+    if fault is not None and fault not in ({case.key for case in cases} |
+                                           {"worker_crash", "extra_compute_worker"}):
+        raise ExecutionError("Test fault injection must name a signed toy case")
+    caps = policy.get("limits")
+    if not isinstance(caps, dict):
+        raise ExecutionError("Missing bounded engineering-test resource caps")
+    for name in ("absolute_wall_seconds", "aggregate_cpu_seconds", "peak_aggregate_ram_bytes",
+                 "temporary_disk_allocation_bytes", "reserved_free_disk_bytes",
+                 "case_timeout_seconds", "oracle_timeout_seconds"):
+        if type(caps.get(name)) is not int or caps[name] <= 0:
+            raise ExecutionError("Invalid engineering-test resource cap: " + name)
+    if caps.get("max_workers", workers) != workers:
+        raise ExecutionError("Engineering-test worker caps disagree with the signed schedule")
+    if (caps["absolute_wall_seconds"] > 300 or caps["aggregate_cpu_seconds"] > 1800 or
+        caps["peak_aggregate_ram_bytes"] > 2 * 1024**3 or
+        caps["temporary_disk_allocation_bytes"] > 256 * 1024**2):
+        raise ExecutionError("Engineering-test authorization exceeds fixed toy-run bounds")
+    if caps["case_timeout_seconds"] > caps["absolute_wall_seconds"] or caps["oracle_timeout_seconds"] > caps["absolute_wall_seconds"]:
+        raise ExecutionError("Engineering-test task deadline exceeds its total wall cap")
+    for key in ("authority_ledger_path", "authority_anchor_path"):
+        if not isinstance(policy.get(key), str) or not Path(policy[key]).is_absolute():
+            raise ExecutionError("Engineering-test authority store paths must be absolute")
+    if Path(policy["authority_ledger_path"]).parent == Path(policy["authority_anchor_path"]).parent:
+        raise ExecutionError("Engineering-test ledger and anchor must be separately located")
+    return tuple(cases), workers
+
+
+def _verify_engineering_test_approval(policy_path: Path, approval_path: Path,
+                                      public_key_path: Path) -> tuple[dict, dict]:
+    policy_bytes = policy_path.read_bytes()
+    policy = _read_json(policy_path)
+    approval = _read_json(approval_path)
+    cases, workers = _validate_engineering_test_policy(policy)
+    key_bytes = public_key_path.read_bytes()
+    trusted = os.environ.get("NC0A_TEST_TRUSTED_PUBKEY_SHA256", "")
+    if not trusted or sha256(key_bytes).hexdigest() != trusted:
+        raise ExecutionError("No matching test-only trust anchor; formal trust is not accepted here")
+    signed = dict(approval)
+    encoded = signed.pop("signature_ed25519_base64", None)
+    if (approval.get("purpose") != ENGINEERING_TEST_APPROVAL_PURPOSE or
+        approval.get("decision") != "APPROVED_FOR_BOUNDED_ENGINEERING_TEST_ONLY"):
+        raise ExecutionError("Formal or unsigned authorization cannot enter test-only mode")
+    if approval.get("test_experiment_id") != policy.get("test_experiment_id"):
+        raise ExecutionError("Test approval identity differs from its policy")
+    if approval.get("policy_sha256") != sha256(policy_bytes).hexdigest():
+        raise ExecutionError("Test approval does not bind the exact resource policy")
+    head = _git_head()
+    if approval.get("target_repository_head_sha") != head:
+        raise ExecutionError("Test approval is not bound to the current repository HEAD")
+    if policy.get("target_repository_head_sha") != head:
+        raise ExecutionError("Test resource policy targets a different repository HEAD")
+    if (approval.get("cases") != policy["cases"] or
+        approval.get("max_workers") != workers or
+        approval.get("seed_root") != ENGINEERING_TEST_SEED_ROOT or
+        approval.get("recovery_rule") != PROTOCOL["recovery"]):
+        raise ExecutionError("Test approval differs from its bounded workload or fixed seeds")
+    if approval.get("test_source_sha256") != _test_source_hashes():
+        raise ExecutionError("Test approval does not bind the exact execution and watchdog code")
+    if approval.get("test_environment_sha256") != sha256(_canonical(_environment(head))).hexdigest():
+        raise ExecutionError("Test approval does not bind the current runtime environment")
+    if not isinstance(encoded, str):
+        raise ExecutionError("Detached test authorization signature is missing")
+    try:
+        signature = base64.b64decode(encoded, validate=True)
+    except ValueError as exc:
+        raise ExecutionError("Malformed bounded test signature") from exc
+    if not verify_ed25519_signature(public_key_path, _canonical(signed), signature):
+        raise ExecutionError("Bounded engineering-test signature did not verify")
+    return policy, approval
+
+
+def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
+                       approval_path: str, public_key_path: str,
+                       invocation: int) -> int:
+    token = os.environ.get("NC0A_WATCHDOG_LAUNCH_TOKEN", "")
+    parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
+    if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
+        raise ExecutionError("Test runner must be an authenticated child of the watchdog launcher")
+    guard_watchdog_parent(int(parent))
+    policy, _ = _verify_engineering_test_approval(
+        Path(policy_path), Path(approval_path), Path(public_key_path))
+    if sha256(Path(policy_path).read_bytes()).hexdigest() != policy_sha:
+        raise ExecutionError("Test resource policy changed after watchdog authorization")
+    cases, workers = _validate_engineering_test_policy(policy)
+    root = Path(run_dir)
+    fault_case = policy.get("fault_first_invocation") if invocation == 1 else None
+    crash_index = 0 if fault_case == "worker_crash" else None
+    crash_after_case = fault_case if fault_case in {case.key for case in cases} else None
+    extra_worker = None
+    if fault_case == "extra_compute_worker":
+        extra_worker = multiprocessing.get_context("spawn").Process(target=_test_extra_worker)
+        extra_worker.start()
+        time.sleep(0.25)
+    result = _run_battery_core(
+        root, cases=cases, workers=workers,
+        case_seconds=policy["limits"]["case_timeout_seconds"],
+        oracle_seconds=policy["limits"]["oracle_timeout_seconds"],
+        max_attempts_per_case=2, formal=False,
+        policy_hash=policy_sha, head=_git_head(),
+        crash_index=crash_index, crash_after_start_case=crash_after_case,
+        test_worker_hold_seconds=policy.get("worker_hold_seconds", 0.0))
+    if extra_worker is not None:
+        extra_worker.terminate()
+        extra_worker.join(timeout=2)
+    print(json.dumps(result, sort_keys=True))
+    return 0
+
+
+def _test_extra_worker() -> None:
+    time.sleep(30)
+
+
+def _prepare_authorized_invocation(policy: dict, approval: dict, run_dir: str | Path,
+                                   ledger: AuthorityLedger, approval_path: Path,
+                                   policy_sha: str, max_invocations: int) -> tuple[Path, dict]:
+    root = Path(run_dir).resolve()
+    if root == REPOSITORY_ROOT or REPOSITORY_ROOT in root.parents:
+        raise ExecutionError("Private run directory must be outside the repository checkout")
+    root.mkdir(parents=True, exist_ok=True, mode=0o700)
+    root.chmod(0o700)
+    _assert_authority_store_outside_run(policy, root)
+    begin = ledger.begin(
+        experiment_id=policy.get("formal_experiment_id", policy.get("test_experiment_id")),
+        run_dir=root, policy_sha256=policy_sha,
+        approval_sha256=sha256(approval_path.read_bytes()).hexdigest(),
+        wall_budget_seconds=policy["limits"]["absolute_wall_seconds"],
+        cpu_budget_seconds=policy["limits"]["aggregate_cpu_seconds"],
+        max_invocations=max_invocations,
+        pre_start_check=lambda is_resume: _verify_watchdog_ledger_anchors(
+            ledger, policy.get("formal_experiment_id", policy.get("test_experiment_id")),
+            root, is_resume))
+    return root, begin
+
+
 def launch_formal(policy_path: str | Path, approval_path: str | Path,
                   public_key_path: str | Path, run_dir: str | Path) -> dict:
     """Check external approval then launch the formal runner under watchdog."""
     policy_path, approval_path, public_key_path = map(Path,
         (policy_path, approval_path, public_key_path))
     policy, approval = _verify_approval(policy_path, approval_path, public_key_path)
-    root = Path(run_dir).resolve()
-    if root == REPOSITORY_ROOT or REPOSITORY_ROOT in root.parents:
-        raise ExecutionError("Private run directory must be outside the repository checkout")
-    root.mkdir(parents=True, exist_ok=True, mode=0o700)
-    root.chmod(0o700)
     policy_sha = sha256(policy_path.read_bytes()).hexdigest()
     limits = _limits_from_policy(policy)
-    # Aggregate resource limits are cumulative across launches in a resumed
-    # run. The watchdog event log is verified before any new process starts.
-    previous = _prior_watchdog_usage(root / "watchdog.jsonl")
-    remaining_wall = limits.wall_seconds - previous["wall_seconds"]
-    remaining_cpu = limits.cpu_seconds - previous["cpu_seconds"]
-    if remaining_wall <= 0 or remaining_cpu <= 0:
-        raise ExecutionError("Cumulative approved wall/CPU budget is exhausted")
-    limits = WatchdogLimits(**{**asdict(limits), "wall_seconds": remaining_wall,
-                               "cpu_seconds": remaining_cpu})
-    invocation = int(previous["invocations"]) + 1
-    runner_command = [sys.executable, str(Path(__file__).resolve()),
-                      "--runner-internal", str(root), str(policy_path.resolve()),
-                      policy_sha, str(approval_path.resolve()),
-                      str(public_key_path.resolve()),
-                      str(approval["operational_attempts_per_case"])]
-    # A completed formal run cannot be re-entered as a second statistical draw.
-    if (root / "formal_battery_summary.json").exists():
-        raise ExecutionError("Formal battery summary already exists; repeat run prohibited")
-    # Use a unique stdout name for each authorized operational continuation.
-    result = _supervise_named(runner_command, root, limits, invocation)
-    return {"watchdog": result, "prior_usage": previous,
-            "invocation": invocation,
-            "authorization": {"approval_sha256": sha256(approval_path.read_bytes()).hexdigest(),
-                              "policy_sha256": policy_sha,
-                              "reviewer": approval["independent_reviewer"]}}
+    cgroup = validate_hard_memory_backend(
+        policy["memory_enforcement_backend"], limits.aggregate_rss_bytes)
+    if cgroup is None:
+        raise ExecutionError("Formal execution requires verified hard cgroup-v2 memory enforcement")
+    ledger_path, anchor_path = _assert_authority_store_outside_run(policy, Path(run_dir).resolve())
+    with AuthorityLedger(ledger_path, anchor_path) as ledger:
+        root, begin = _prepare_authorized_invocation(
+            policy, approval, run_dir, ledger, approval_path, policy_sha,
+            approval["operational_attempts_per_case"])
+        limits = WatchdogLimits(**{**asdict(limits),
+                                   "wall_seconds": limits.wall_seconds - begin["wall_seconds"],
+                                   "cpu_seconds": limits.cpu_seconds - begin["cpu_seconds"]})
+        runner_command = [sys.executable, str(Path(__file__).resolve()),
+                          "--runner-internal", str(root), str(policy_path.resolve()),
+                          policy_sha, str(approval_path.resolve()),
+                          str(public_key_path.resolve()),
+                          str(approval["operational_attempts_per_case"])]
+        result = _supervise_named(runner_command, root, limits, begin["invocation"])
+        ledger.finish(experiment_id=policy["formal_experiment_id"],
+                      invocation=begin["invocation"], status=result["status"],
+                      usage=result["usage"], audit_sha256=result["audit_sha256"],
+                      completed=result["status"] == "completed")
+        return {"watchdog": result, "prior_usage": {
+                    "wall_seconds": begin["wall_seconds"],
+                    "cpu_seconds": begin["cpu_seconds"]},
+                "invocation": begin["invocation"],
+                "authorization": {"approval_sha256": sha256(approval_path.read_bytes()).hexdigest(),
+                                  "policy_sha256": policy_sha,
+                                  "reviewer": approval["independent_reviewer"]}}
 
 
-def _prior_watchdog_usage(path: Path) -> dict:
-    sequence, _ = __import__("nc0a_watchdog").verify_hash_chain(path)
-    totals = {"wall_seconds": 0.0, "cpu_seconds": 0.0, "invocations": 0}
-    if not path.exists():
-        return totals
-    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
-    # Exactly one terminal event is counted per watchdog invocation.
-    for row in rows:
-        event = row["event"]
-        if event.get("event") in ("runner_exited", "watchdog_stop",
-                                    "watchdog_exception", "watchdog_setup_failed"):
-            usage = event.get("usage", {})
-            totals["wall_seconds"] += float(usage.get("wall_seconds", 0))
-            totals["cpu_seconds"] += float(usage.get("cpu_seconds", 0))
-            totals["invocations"] += 1
-    return totals
+def launch_test_only(policy_path: str | Path, approval_path: str | Path,
+                     public_key_path: str | Path, run_dir: str | Path) -> dict:
+    """Signed bounded toy-test mode; its key and policy cannot authorize formal NC-0a."""
+    policy_path, approval_path, public_key_path = map(Path,
+        (policy_path, approval_path, public_key_path))
+    policy, approval = _verify_engineering_test_approval(
+        policy_path, approval_path, public_key_path)
+    policy_sha = sha256(policy_path.read_bytes()).hexdigest()
+    limits = _limits_from_policy(policy)
+    if limits.memory_enforcement_backend != "SAMPLED_ONLY":
+        raise ExecutionError("Bounded toy tests must label memory as sampled telemetry only")
+    ledger_path, anchor_path = _assert_authority_store_outside_run(policy, Path(run_dir).resolve())
+    with AuthorityLedger(ledger_path, anchor_path) as ledger:
+        root, begin = _prepare_authorized_invocation(
+            policy, approval, run_dir, ledger, approval_path, policy_sha,
+            policy["max_invocations"])
+        limits = WatchdogLimits(**{**asdict(limits),
+                                   "wall_seconds": limits.wall_seconds - begin["wall_seconds"],
+                                   "cpu_seconds": limits.cpu_seconds - begin["cpu_seconds"]})
+        command = [sys.executable, str(Path(__file__).resolve()),
+                   "--runner-test-internal", str(root), str(policy_path.resolve()),
+                   policy_sha, str(approval_path.resolve()),
+                   str(public_key_path.resolve()), str(begin["invocation"])]
+        result = _supervise_named(command, root, limits, begin["invocation"])
+        ledger.finish(experiment_id=policy["test_experiment_id"],
+                      invocation=begin["invocation"], status=result["status"],
+                      usage=result["usage"], audit_sha256=result["audit_sha256"],
+                      completed=result["status"] == "completed")
+        return {"watchdog": result, "prior_usage": {
+                    "wall_seconds": begin["wall_seconds"],
+                    "cpu_seconds": begin["cpu_seconds"]},
+                "invocation": begin["invocation"], "test_only": True,
+                "authorization": {"approval_sha256": sha256(approval_path.read_bytes()).hexdigest(),
+                                  "policy_sha256": policy_sha,
+                                  "identity": policy["test_experiment_id"]}}
 
 
 def _supervise_named(command: list[str], root: Path, limits: WatchdogLimits,
@@ -838,6 +1095,26 @@ def main(argv: list[str] | None = None) -> int:
         except BaseException as exc:
             print(f"FORMAL_NC0A_RUN_FAILED: {type(exc).__name__}: {exc}", file=sys.stderr)
             return 2
+    if argv and argv[0] == "--runner-test-internal":
+        if len(argv) != 7:
+            return 2
+        try:
+            return _runner_test_entry(argv[1], argv[2], argv[3], argv[4],
+                                      argv[5], int(argv[6]))
+        except BaseException as exc:
+            print(f"NC0A_TEST_RUN_FAILED: {type(exc).__name__}: {exc}", file=sys.stderr)
+            return 2
+    if argv and argv[0] == "--test-only":
+        if len(argv) != 5:
+            return 2
+        try:
+            result = launch_test_only(argv[1], argv[2], argv[3], argv[4])
+            print(json.dumps(result, indent=2, sort_keys=True))
+            return 0 if result["watchdog"]["status"] == "completed" else 2
+        except (ExecutionError, ValueError, OSError, WatchdogError,
+                AuthorityLedgerError) as exc:
+            print(f"NC0A_ENGINEERING_TEST_FAILED: {exc}", file=sys.stderr)
+            return 2
     if len(argv) != 4:
         print("Usage: nc0a_execution_engine.py RESOURCE_POLICY APPROVAL_JSON REVIEWER_PUBLIC_KEY RUN_DIR",
               file=sys.stderr)
@@ -848,7 +1125,8 @@ def main(argv: list[str] | None = None) -> int:
         if result["watchdog"]["status"] != "completed":
             return 2
         return 0
-    except (ExecutionError, ValueError, OSError, WatchdogError) as exc:
+    except (ExecutionError, ValueError, OSError, WatchdogError,
+            AuthorityLedgerError) as exc:
         print(f"FORMAL_NC0A_RESOURCE_NO_GO: {exc}", file=sys.stderr)
         return 2
 

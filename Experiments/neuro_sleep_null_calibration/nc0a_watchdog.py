@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 import fcntl
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -21,6 +22,7 @@ import resource
 import secrets
 import shutil
 import signal
+import shlex
 import subprocess
 import sys
 import threading
@@ -168,13 +170,15 @@ class WatchdogLimits:
     poll_seconds: float = 0.5
     suspend_tolerance_seconds: float = 5.0
     terminate_grace_seconds: float = 0.5
+    memory_enforcement_backend: str = "SAMPLED_ONLY"
+    host_memory_free_percent_stop: int | None = None
 
     def __post_init__(self) -> None:
         for name in ("wall_seconds", "cpu_seconds", "case_seconds",
                      "oracle_seconds", "poll_seconds",
                      "suspend_tolerance_seconds", "terminate_grace_seconds"):
             value = getattr(self, name)
-            if not isinstance(value, (int, float)) or value <= 0:
+            if not isinstance(value, (int, float)) or not math.isfinite(value) or value <= 0:
                 raise ValueError(f"{name} must be positive")
         for name in ("aggregate_rss_bytes", "max_workers", "run_disk_bytes",
                      "reserve_free_disk_bytes"):
@@ -183,6 +187,12 @@ class WatchdogLimits:
                 raise ValueError(f"{name} must be a positive integer")
         if self.max_workers > 8:
             raise ValueError("NC-0a cannot exceed eight workers")
+        if self.memory_enforcement_backend not in ("SAMPLED_ONLY", "CGROUP_V2_HARD"):
+            raise ValueError("Unknown memory-enforcement backend")
+        if self.host_memory_free_percent_stop is not None and not (
+                type(self.host_memory_free_percent_stop) is int and
+                1 <= self.host_memory_free_percent_stop <= 100):
+            raise ValueError("Host memory stop threshold must be an integer percentage")
 
 
 @dataclass(frozen=True)
@@ -193,6 +203,7 @@ class ProcessUsage:
     rss_bytes: int
     cpu_seconds: float
     state: str = ""
+    command: str = ""
 
 
 _SECONDS_RE = re.compile(r"^(\d{1,2})(?:\.(\d+))?$")
@@ -239,18 +250,143 @@ def parse_ps_time(value: str) -> float:
 def sample_process_group(pgid: int) -> list[ProcessUsage]:
     """Read process-group RSS and cumulative user+system CPU using macOS ps."""
     proc = subprocess.run(
-        ["/bin/ps", "-axo", "pid=,ppid=,pgid=,rss=,stat=,time="],
+        ["/bin/ps", "-axo", "pid=,ppid=,pgid=,rss=,stat=,time=,command="],
         check=True, capture_output=True, text=True, timeout=5)
     result = []
     for row in proc.stdout.splitlines():
-        fields = row.split(None, 5)
-        if len(fields) != 6:
+        fields = row.split(None, 6)
+        if len(fields) != 7:
             continue
         pid, ppid, group, rss_kib = map(int, fields[:4])
         if group == pgid:
             result.append(ProcessUsage(pid, ppid, group, rss_kib * 1024,
-                                       parse_ps_time(fields[5]), fields[4]))
+                                       parse_ps_time(fields[5]), fields[4], fields[6]))
     return result
+
+
+def _known_python_worker(process: ProcessUsage, runner_pid: int) -> bool:
+    return (process.ppid == runner_pid and
+            "from multiprocessing.spawn import spawn_main; spawn_main(" in process.command and
+            "--multiprocessing-fork" in process.command)
+
+
+def _known_resource_tracker(process: ProcessUsage, runner_pid: int) -> bool:
+    return (process.ppid == runner_pid and
+            "from multiprocessing.resource_tracker import main;main(" in process.command)
+
+
+def _known_runner_helper(process: ProcessUsage, runner_pid: int) -> bool:
+    if process.ppid != runner_pid:
+        return False
+    try:
+        args = shlex.split(process.command)
+    except ValueError:
+        return False
+    if not args:
+        return False
+    executable = Path(args[0]).name
+    if executable == "git":
+        return args[1:] in (["rev-parse", "HEAD"],
+                            ["status", "--porcelain", "--untracked-files=all"])
+    if executable == "openssl":
+        return args[1:3] == ["pkeyutl", "-verify"]
+    if executable == "sysctl":
+        return args[1:2] == ["-n"]
+    return False
+
+
+def classify_process_group(samples: list[ProcessUsage], runner_pid: int) -> dict:
+    """Classify actual pool workers separately from named Python/runtime helpers."""
+    active = [p for p in samples if not p.state.startswith("Z")]
+    runners = [p for p in active if p.pid == runner_pid]
+    workers = [p for p in active if _known_python_worker(p, runner_pid)]
+    trackers = [p for p in active if _known_resource_tracker(p, runner_pid)]
+    helpers = [p for p in active if _known_runner_helper(p, runner_pid)]
+    known = {p.pid for p in runners + workers + trackers + helpers}
+    unknown = [p for p in active if p.pid not in known]
+    return {"runner_pids": [p.pid for p in runners],
+            "worker_pids": sorted(p.pid for p in workers),
+            "resource_tracker_pids": sorted(p.pid for p in trackers),
+            "helper_pids": sorted(p.pid for p in helpers),
+            "unknown_pids": sorted(p.pid for p in unknown)}
+
+
+def sample_host_memory_pressure() -> dict:
+    """Return host pressure telemetry; this is not a per-process memory limit."""
+    if sys.platform == "darwin":
+        result = subprocess.run(["/usr/bin/memory_pressure", "-Q"],
+                                check=True, capture_output=True, text=True, timeout=5)
+        match = re.search(r"System-wide memory free percentage:\s*(\d+)%", result.stdout)
+        if not match:
+            raise WatchdogError("Cannot parse macOS memory_pressure output")
+        total_match = re.search(r"The system has\s+(\d+)\s*\(", result.stdout)
+        page_match = re.search(r"page size is\s+(\d+)", result.stdout)
+        total = int(total_match.group(1)) * (int(page_match.group(1)) if page_match else 1)
+        percent = int(match.group(1))
+        return {"source": "macOS memory_pressure -Q",
+                "free_percent": percent,
+                "estimated_available_bytes": total * percent // 100}
+    if sys.platform.startswith("linux"):
+        values = {}
+        for line in Path("/proc/meminfo").read_text().splitlines():
+            match = re.match(r"^(MemTotal|MemAvailable):\s+(\d+)\s+kB$", line)
+            if match:
+                values[match.group(1)] = int(match.group(2)) * 1024
+        if set(values) != {"MemTotal", "MemAvailable"}:
+            raise WatchdogError("Cannot parse Linux host memory telemetry")
+        return {"source": "/proc/meminfo", "free_percent":
+                min(100, values["MemAvailable"] * 100 // values["MemTotal"]),
+                "estimated_available_bytes": values["MemAvailable"]}
+    raise WatchdogError("Host memory-pressure telemetry is unsupported on this platform")
+
+
+def current_cgroup_v2_path() -> Path:
+    if not sys.platform.startswith("linux"):
+        raise WatchdogError("Hard aggregate memory enforcement requires Linux cgroup v2")
+    entries = Path("/proc/self/cgroup").read_text(encoding="ascii").splitlines()
+    unified = [row[3:] for row in entries if row.startswith("0::")]
+    if len(unified) != 1:
+        raise WatchdogError("Process is not in a unified cgroup v2 hierarchy")
+    root = Path("/sys/fs/cgroup").resolve()
+    path = (root / unified[0].lstrip("/")).resolve()
+    if path != root and root not in path.parents:
+        raise WatchdogError("Resolved cgroup escaped the unified hierarchy")
+    required = ("memory.max", "memory.current", "memory.peak", "memory.events")
+    if any(not (path / name).is_file() for name in required):
+        raise WatchdogError("Delegated cgroup lacks required memory-controller files")
+    return path
+
+
+def validate_hard_memory_backend(backend: str, memory_cap_bytes: int) -> Path | None:
+    if backend == "SAMPLED_ONLY":
+        return None
+    if backend != "CGROUP_V2_HARD":
+        raise WatchdogError("Unknown memory enforcement backend")
+    path = current_cgroup_v2_path()
+    try:
+        configured = int((path / "memory.max").read_text().strip())
+    except (ValueError, OSError) as exc:
+        raise WatchdogError("Cannot read cgroup v2 memory.max") from exc
+    if configured != memory_cap_bytes:
+        raise WatchdogError("Current cgroup memory.max differs from signed aggregate cap")
+    members = {int(row) for row in (path / "cgroup.procs").read_text().splitlines()
+               if row.strip()}
+    if members != {os.getpid()}:
+        raise WatchdogError("Hard memory cgroup must be an isolated scope containing only its watchdog")
+    return path
+
+
+def _cgroup_memory_snapshot(path: Path) -> dict:
+    try:
+        current = int((path / "memory.current").read_text().strip())
+        peak = int((path / "memory.peak").read_text().strip())
+        events = {}
+        for line in (path / "memory.events").read_text().splitlines():
+            key, value = line.split()
+            events[key] = int(value)
+    except (OSError, ValueError) as exc:
+        raise WatchdogError("Cannot sample hard cgroup-v2 memory accounting") from exc
+    return {"current_bytes": current, "peak_bytes": peak, "events": events}
 
 
 def _directory_bytes(root: Path) -> int:
@@ -350,6 +486,9 @@ def supervise(command: list[str], *, run_dir: str | Path,
     """
     if not command or any(not isinstance(x, str) for x in command):
         raise ValueError("A nonempty argument-vector command is required")
+    cgroup_path = validate_hard_memory_backend(
+        limits.memory_enforcement_backend, limits.aggregate_rss_bytes)
+    cgroup_initial = _cgroup_memory_snapshot(cgroup_path) if cgroup_path else None
     root = Path(run_dir).resolve()
     root.mkdir(parents=True, exist_ok=True, mode=0o700)
     root.chmod(0o700)
@@ -371,10 +510,16 @@ def supervise(command: list[str], *, run_dir: str | Path,
         raise
     wall_now = clock or (lambda: (time.time(), time.monotonic()))
     start_utc, start_mono = wall_now()
+    host_pressure_min = 100
+    cgroup_peak = cgroup_initial["peak_bytes"] if cgroup_initial else None
+    cgroup_events_initial = dict(cgroup_initial["events"]) if cgroup_initial else {}
     monitor_cpu_start = resource.getrusage(resource.RUSAGE_SELF)
     child_cpu_start = resource.getrusage(resource.RUSAGE_CHILDREN)
     cpu_seen: dict[tuple[int, int, int], float] = {}
     peak_rss = 0
+    peak_workers = 0
+    peak_resource_trackers = 0
+    peak_process_members = 0
     stop_reason: str | None = None
     last_utc, last_mono = start_utc, start_mono
     last_log = start_mono
@@ -418,6 +563,29 @@ def supervise(command: list[str], *, run_dir: str | Path,
             samples = sampler(proc.pid)
             if not samples and proc.poll() is None:
                 stop_reason = stop_reason or "WATCHDOG_CANNOT_OBSERVE_PROCESS_GROUP"
+            process_classes = classify_process_group(samples, proc.pid)
+            peak_workers = max(peak_workers, len(process_classes["worker_pids"]))
+            peak_resource_trackers = max(
+                peak_resource_trackers, len(process_classes["resource_tracker_pids"]))
+            peak_process_members = max(peak_process_members, len(samples))
+            try:
+                host_pressure = sample_host_memory_pressure()
+                host_pressure_min = min(host_pressure_min, host_pressure["free_percent"])
+            except (OSError, subprocess.SubprocessError, WatchdogError):
+                host_pressure = None
+                stop_reason = stop_reason or "HOST_MEMORY_PRESSURE_UNAVAILABLE"
+            cgroup_snapshot = _cgroup_memory_snapshot(cgroup_path) if cgroup_path else None
+            if cgroup_snapshot:
+                cgroup_peak = max(cgroup_peak or 0, cgroup_snapshot["peak_bytes"])
+                if cgroup_snapshot["current_bytes"] > limits.aggregate_rss_bytes:
+                    stop_reason = stop_reason or "CGROUP_MEMORY_CURRENT_EXCEEDS_SIGNED_LIMIT"
+                if any(cgroup_snapshot["events"].get(key, 0) > cgroup_events_initial.get(key, 0)
+                       for key in ("max", "oom", "oom_kill")):
+                    stop_reason = stop_reason or "CGROUP_MEMORY_LIMIT_EVENT"
+            if (host_pressure is not None and
+                limits.host_memory_free_percent_stop is not None and
+                host_pressure["free_percent"] < limits.host_memory_free_percent_stop):
+                stop_reason = stop_reason or "HOST_MEMORY_PRESSURE_LIMIT"
             current_rss = sum(p.rss_bytes for p in samples)  # conservative: shared pages may count twice
             peak_rss = max(peak_rss, current_rss)
             for p in samples:
@@ -459,37 +627,72 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 stop_reason = stop_reason or "RUN_DISK_ALLOCATION_LIMIT"
             elif free_bytes <= free_stop:
                 stop_reason = stop_reason or "FREE_DISK_RESERVE_BREACH"
-            elif len(samples) - (1 if any(p.pid == proc.pid for p in samples) else 0) > limits.max_workers:
+            elif process_classes["unknown_pids"]:
+                stop_reason = stop_reason or "UNKNOWN_PROCESS_GROUP_MEMBER"
+            elif len(process_classes["worker_pids"]) > limits.max_workers:
                 stop_reason = stop_reason or "WORKER_CONCURRENCY_LIMIT"
             elif phase == "case" and phase_elapsed is not None and phase_elapsed >= max(0.01, limits.case_seconds - case_margin):
                 stop_reason = stop_reason or "CASE_WALL_LIMIT"
             elif phase == "oracle" and phase_elapsed is not None and phase_elapsed >= max(0.01, limits.oracle_seconds - oracle_margin):
                 stop_reason = stop_reason or "ORACLE_WALL_LIMIT"
             if proc.poll() is not None:
-                # A runner that exits while children remain is a failure, even
-                # if its own status is zero; never strand an unmonitored worker.
-                remaining_processes = [p for p in samples
-                                       if p.pid != proc.pid and not p.state.startswith("Z")]
-                if remaining_processes:
-                    stop_reason = stop_reason or "ORPHANED_PROCESS_GROUP_AFTER_RUNNER_EXIT"
-                elif stop_reason is None:
+                # The first sample can race with a fast runner exit and miss a
+                # child just forked before exit. Require repeated post-exit
+                # observations of an empty process group before success.
+                for _ in range(3):
+                    try:
+                        after_exit = sampler(proc.pid)
+                    except (ProcessLookupError, subprocess.SubprocessError, WatchdogError):
+                        after_exit = None
+                    if after_exit is None:
+                        stop_reason = stop_reason or "WATCHDOG_CANNOT_OBSERVE_PROCESS_GROUP"
+                        break
+                    lingering = [p for p in after_exit
+                                 if p.pid != proc.pid and not p.state.startswith("Z")]
+                    if lingering:
+                        stop_reason = stop_reason or "ORPHANED_PROCESS_GROUP_AFTER_RUNNER_EXIT"
+                        break
+                    peak_process_members = max(peak_process_members, len(after_exit))
+                    sleeper(min(0.05, limits.poll_seconds))
+                confirmed_utc, _ = wall_now()
+                wall_elapsed = max(wall_elapsed, confirmed_utc - start_utc)
+                if stop_reason is None:
                     rc = proc.returncode
+                    monitor_cpu = resource.getrusage(resource.RUSAGE_SELF)
+                    monitor_cpu_seconds = ((monitor_cpu.ru_utime + monitor_cpu.ru_stime) -
+                                           (monitor_cpu_start.ru_utime + monitor_cpu_start.ru_stime))
                     child_cpu = resource.getrusage(resource.RUSAGE_CHILDREN)
                     waited_child_cpu_seconds = ((child_cpu.ru_utime + child_cpu.ru_stime) -
                                                 (child_cpu_start.ru_utime + child_cpu_start.ru_stime))
                     aggregate_cpu = max(aggregate_cpu,
                                         max(0.0, waited_child_cpu_seconds) + max(0.0, monitor_cpu_seconds))
-                    usage = {"wall_seconds": wall_elapsed, "cpu_seconds": aggregate_cpu,
-                             "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
-                             "peak_aggregate_rss_bytes": peak_rss,
-                             "run_directory_bytes": disk_bytes,
-                             "free_disk_bytes": free_bytes,
-                             "runner_stdout_sha256": _sha256_file(output_path)}
-                    log.append({"event": "runner_exited", "returncode": rc,
-                                "usage": usage})
-                    return {"status": "completed" if rc == 0 else "failed",
-                            "returncode": rc, "usage": usage,
-                            "audit_sha256": log.previous}
+                    if wall_elapsed >= max(0.01, limits.wall_seconds - wall_margin):
+                        stop_reason = "WALL_LIMIT"
+                    elif aggregate_cpu >= cpu_stop:
+                        stop_reason = "CPU_LIMIT_WITH_TERMINATION_MARGIN"
+                    if stop_reason is not None:
+                        # Fall through to the stop record; a completed runner
+                        # does not exempt the invocation from its budget cap.
+                        pass
+                    else:
+                        usage = {"wall_seconds": wall_elapsed, "cpu_seconds": aggregate_cpu,
+                                 "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
+                                 "peak_aggregate_rss_bytes": peak_rss,
+                                 "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
+                                                         "SAMPLED_ONLY_NOT_HARD"),
+                                 "host_memory_free_percent_min": host_pressure_min,
+                                 "cgroup_memory_peak_bytes": cgroup_peak,
+                                 "peak_compute_workers": peak_workers,
+                                 "peak_resource_trackers": peak_resource_trackers,
+                                 "peak_process_group_members": peak_process_members,
+                                 "run_directory_bytes": disk_bytes,
+                                 "free_disk_bytes": free_bytes,
+                                 "runner_stdout_sha256": _sha256_file(output_path)}
+                        log.append({"event": "runner_exited", "returncode": rc,
+                                    "usage": usage})
+                        return {"status": "completed" if rc == 0 else "failed",
+                                "returncode": rc, "usage": usage,
+                                "audit_sha256": log.previous}
             if stop_reason:
                 # Free the preallocated same-volume reserve before persisting
                 # the stop record. The audit remains append-only; the reserve
@@ -528,6 +731,13 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
                                "aggregate_rss_bytes": final_rss,
                                "peak_aggregate_rss_bytes": max(peak_rss, final_rss),
+                               "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
+                                                       "SAMPLED_ONLY_NOT_HARD"),
+                               "host_memory_free_percent_min": host_pressure_min,
+                               "cgroup_memory_peak_bytes": cgroup_peak,
+                               "peak_compute_workers": peak_workers,
+                               "peak_resource_trackers": peak_resource_trackers,
+                               "peak_process_group_members": peak_process_members,
                                "run_directory_bytes": final_disk,
                                "free_disk_bytes": final_free,
                                "runner_stdout_sha256": _sha256_file(output_path)}
@@ -548,7 +758,10 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                       "run_directory_bytes": disk_bytes,
                                       "free_disk_bytes": free_bytes},
                             "process_count": len(samples), "phase": phase,
-                            "task_id": task_id})
+                            "task_id": task_id,
+                            "process_classes": process_classes,
+                            "host_memory_pressure": host_pressure,
+                            "cgroup_memory": cgroup_snapshot})
                 last_log = now_mono
             sleeper(limits.poll_seconds)
     except BaseException as exc:
@@ -578,9 +791,16 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 stdout_sha = None
             log.append({"event": "watchdog_exception", "type": type(exc).__name__,
                         "message": str(exc)[:500],
-                        "usage": {"wall_seconds": max(0.0, end_utc - start_utc),
-                                  "cpu_seconds": cpu_seconds,
-                                  "runner_stdout_sha256": stdout_sha}})
+                            "usage": {"wall_seconds": max(0.0, end_utc - start_utc),
+                                      "cpu_seconds": cpu_seconds,
+                                      "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
+                                                              "SAMPLED_ONLY_NOT_HARD"),
+                                      "host_memory_free_percent_min": host_pressure_min,
+                                      "cgroup_memory_peak_bytes": cgroup_peak,
+                                      "peak_compute_workers": peak_workers,
+                                      "peak_resource_trackers": peak_resource_trackers,
+                                      "peak_process_group_members": peak_process_members,
+                                      "runner_stdout_sha256": stdout_sha}})
         except Exception:
             pass
         raise
