@@ -2,7 +2,7 @@
 id: SRT-PREMATURE-NOVELTY-DISMISSAL-GUARD-REPLAY-20261015
 type: proposal
 status: draft
-record_stage: independent_review_revised_pending_author
+record_stage: author_accepted_method_archive_pending_replay
 date: 2026-10-15
 updated: 2026-10-15
 layer: operations
@@ -16,6 +16,7 @@ comparative_claim: none
 named_comparator: none
 n_mode_triggered: false
 dependency:
+  - 01_Source_Intuition/SRT_AUTHOR_SOURCE_PREMATURE_NOVELTY_DISMISSAL_2026-10-15.md
   - AGENTS.md
   - SRT_AI_START.md
   - Operations/Proposals/SRT_HUMAN_AI_COLLABORATION_EXECUTION_PLAN_2026-09-08.md
@@ -32,15 +33,15 @@ tags: [AIResearch, Novelty, PrematureDismissal, UMode, NMode, AuthorReentry, Rep
 
 # SRT 过早否定创新防护与历史回放 V0.1 — 独立评审草案
 
-> **地位：** 非 canonical、M-level 方法提案；依据 2026-10-15 作者提出的“过早否定创新”协作问题，以及已合并的 2026-09/10 作者纠偏构造。它**不代表作者逐字认可下文**，不是新理论裁决或自动触发的研究程序。独立评审、作者对实质性含义的确认、回放证据未完成；本文暂不改动 `AGENTS.md` / `SRT_AI_START.md` 的现有控制规则。
+> **地位：** 非 canonical、M-level 方法提案；依据 2026-10-15 作者提出的“过早否定创新”协作问题，以及已合并的 2026-09/10 作者纠偏构造。它**不代表作者逐字认可下文**，不是新理论裁决或自动触发的研究程序。Claude 已完成独立评审；作者已就本文件的方法定位与有限执行范围表示认同；回放证据尚未形成；本文暂不改动 `AGENTS.md` / `SRT_AI_START.md` 的现有控制规则。
 >
 > **不启动：** 第二条 `CURRENT NEXT`、新 deep well、任何冻结项目、GRG fusion、正式实验、canonical owner 改写、已投稿文章重写或合并授权。当前研究任务的 `STATUS.md` 与相应 owner 不变。
 >
 > **相邻工作：** [AI 压平 / 缺失预期双轨研究](SRT_SYMBOL_POSITION_BACKGROUND_AI_FLATTENING_DUAL_TRACK_2026-10-15.md) 处理表示与位置背景的丢失；**本文只处理“文献相似 → 创新性结论 → 研究方向”之间的不当推断**。二者可以关联，但不得用其中一轨的判断证明另一轨。
 >
-> **来源缺口（2026-10-15 独立评审补记）：** 本仓库目前**没有**记录 2026-10-15 “过早否定创新”作者原话的 A0-Q 文件或会话定位；全仓检索仅命中本文件自身。在作者原话与定位补入前，“作者提出”只能读作 PR 起草方的转述（M），不得作为作者裁决、问题范围或严重程度的证据；也不得据此推断历史上确有多少次 AI 过早否定。
+> **作者来源补录（2026-10-15）：** [作者本轮原话与有界同意](../../01_Source_Intuition/SRT_AUTHOR_SOURCE_PREMATURE_NOVELTY_DISMISSAL_2026-10-15.md) 保存了“因为我已经碰到了，感觉确实有这个问题”及“我遇到的主要问题是过早否定创新……”的原句；来源定位仅为**本次 ChatGPT 对话（2026-10-15）**，尚无可外部独立验证的永久会话 URL。它证明作者确实提出该协作问题与确认本次五项执行建议，**不证明**过早否定的历史发生频率、哪些具体审计构成错误或理论的实质创新性。
 >
-> **独立评审后的定位（M，待作者确认）：** §1.1 显示 §1–§3 的规范内容已基本由现有 owner 承担；本文的实际增量是 **§5 对现有防护是否有效的可检验回放设计**，§3 只作为检索/自检清单。详见 §8。
+> **作者认可的方法定位（2026-10-15）：** §1.1 显示 §1–§3 的规范内容已基本由现有 owner 承担；本文定位为**现有防护的检索/自检清单 + §5 有效性回放设计**，而不是另一套新规范。作者认同这一定位，但**没有**认可任何尚未运行的效果结论。详见 §8–§9。
 
 ## 1. 真实故障的最低定义
 
@@ -69,7 +70,7 @@ tags: [AIResearch, Novelty, PrematureDismissal, UMode, NMode, AuthorReentry, Rep
 | 混淆主张状态、项目分配与理论库存 | `AGENTS.md` “Separate claim state, programme allocation, and theory inventory”（#1084/#1085 评审纠偏，经 #1086 合并）——即本文 §2 三分表的现有 owner。 |
 | 反方向：保护虚构新颖性 | 09-27 Selection A 裁决 §4–§6（D0–D4、translation alone insufficient、failure is informative）；§4.2 comparison trigger 与 universal critical duties；09-27 anti-tautology STOP 作为已付清负面结果的先例。 |
 
-**评审结论（M）：** 未发现 §1–§3 中有现有 owner 未覆盖的新规范判据。可能的局部新增只有两点，均为 M 提案而非现行规则：(a) §3 第 7 步把“一次显著改写与原问冲突”也列为 root-return 触发（现有 `AGENTS.md` 只规定“连续两次仅收缩”）；(b) 把上述规则按“即将给出否定性结论”这一时刻聚合为单一自检点。因此，**问题若确实存在，更可能是现有规则的检索/执行失效，而不是规则缺失**；这正是 §5 应检验的对象。
+**评审结论（M）：** 未发现 §1–§3 中有现有 owner 未覆盖的新规范判据。可能的局部新增只有两点，均为 M 提案而非现行规则：(a) §3 第 7 步现要求一次实质性改写与原问不一致时**标注意义偏移并向作者呈交原问/新问/理由**，不自动启动完整 root-return（现有 `AGENTS.md` 的“连续两次仅收缩”触发保持不变）；(b) 把上述规则按“即将给出否定性结论”这一时刻聚合为单一自检点。因此，**问题若确实存在，更可能是现有规则的检索/执行失效，而不是规则缺失**；这正是 §5 应检验的对象。
 
 ## 2. 三个不能合并的判断
 
@@ -93,7 +94,7 @@ tags: [AIResearch, Novelty, PrematureDismissal, UMode, NMode, AuthorReentry, Rep
 4. **同目标与层级审查**：使用 [10-01 来源追踪 §4](../../01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md) / 检索档案 §0.2 的**现有**对照靶点清单（primitive Selection / O0 burden；cross-level generative-organization burden；formed whole-field / Gate organization；retained historical efficacy / writeback；event / state / action implementation），只检查本轮实际相关项；Bearer 等其他 owner 的负担仅在该 owner 已在范围内时另行列出，不另造并行清单。这些只是对照靶点，**不是**新的本体层级或额外 claim ladder。不得把下游实现等价自动上推为原初消去。
 5. **双向重构**：问“邻居在不偷偷加入 SRT 前提时能否解释作者原问？”与“SRT 在明确附加假设下能否重构邻居及其已知困难？”引用已有 09-27 D0–D4 反向测试门槛。D0 改名不是重构，D2 才可谈有界特例，D3 以上才可能支持更深假说；**双向重构本身不保证任何增量**。
 6. **分别下结论**：明确 `prior-art finding`、`bounded novelty finding`、`root-question disposition`，每项写具名范围和证据缺口。局部无增量用现有 `NO LOCAL COMPARATIVE INCREMENT`，而非无边界的 “NO-GAIN”。
-7. **回到作者问题**：当连续两次邻近比较只导致范围缩小（现有 `AGENTS.md` 触发）、或一次显著改写与原问冲突（**本文 M 提案的新增触发，未经作者裁决**），按既有 ChoiceMap/root-return 将“当前仍在解释什么”返回作者；不可虚构作者新的认可或用“继续”自动批准实质性本体改变。
+7. **根问题保真与必要时返回作者**：连续两次邻近比较只导致范围缩小，仍按现有 `AGENTS.md` 启动 ChoiceMap/root-return。**一次实质性改写拟改变原始问题**时，先在现有工作包中标记 `MEANING-DRIFT / AUTHOR-CHECK`（仅为审计描述，不是新 ontology 标签或全仓强制状态），并列明**作者原问、改写后的问题、改写原因、需确认的意义差异**；修改前向作者核对该意义差异，**不自动触发全套 root-return**。不得将普通释义润色等同于根问题修改，也不能从“继续”推断作者已认可新的本体含义。该处理已在本轮得到作者的**方法性认可**，不对 `AGENTS.md` 另行加门。
 8. **执行诚实的终止**：对于被直接证伪、同目标替代充分、经认真论证仍无解释收益或明显资源不相称的具名路线，保留负面结论及证据；可建议暂停/停止该路线，不删除原始记录，也不自动撤销已有 HOLD / stop-loss。
 
 **最小三行结论样式（作为现有工作包内容；非新表单）：**
@@ -121,7 +122,7 @@ tags: [AIResearch, Novelty, PrematureDismissal, UMode, NMode, AuthorReentry, Rep
 
 ### Fixture A — 2026-08-28 Selection / Articulation novelty audit
 
-- **案例角色：LEGIT-OVERLAP CONTROL**（评审校正）。该审计 §0 的结论是 “potentially distinctive, but not yet established novel”，并保留 A–H residual package 与 §9 后续审计，**没有**作出整体无价值或停研判断。唯一可讨论的程序性压力点是 §7 / §8 把工作线从 “many become one” 引向 residual package 与稿件定位——这是否属于“改根问”应作为作者可裁决的开放问题，而不是预设的基线 FAIL。09-05 作者纠偏批评的是当时 programme 把 subtraction 排在本体形成之前的**节奏**，不是该审计的局部 N0 判断。
+- **案例角色：LEGIT-OVERLAP CONTROL**（评审校正）。该审计 §0 的结论是 “potentially distinctive, but not yet established novel”，并保留 A–H residual package 与 §9 后续审计，**没有**作出整体无价值或停研判断。唯一可讨论的程序性压力点是 §7 / §8 把工作线从 “many become one” 引向 residual package 与稿件定位——这是否属于“改根问”保持 **AUTHOR-OPEN / research-agenda-shift candidate**，**不**预设为基线 FAIL；本轮作者同意保留此开放状态而不作最终性质裁决。09-05 作者纠偏批评的是当时 programme 把 subtraction 排在本体形成之前的**节奏**，不是该审计的局部 N0 判断。
 - **可行性限制：** SRT-Pub 的 git 根提交 `b6af7c8`（2026-09-25）一次性导入了该审计、09-05 修正案和 09-10 Pass19 纠偏，**本仓库无法用 git checkout 恢复 08-28 当时状态**；只能按文件日期人工构造输入集，并须记为“近似基线”。
 - **当时材料**：[`SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md`](../Audits/SRT_SELECTION_ARTICULATION_EXTERNAL_NOVELTY_AUDIT_2026-08-28.md) 及其明确列出的前置 owner / patch；不要把后来的作者纠偏混入 08-28 盲测输入。
 - **强邻居**：Whitehead / Barad / Simondon / Peirce 的具体来源和已覆盖命题；不将“many become one”或“生成边界”包装成原创。
@@ -198,33 +199,33 @@ tags: [AIResearch, Novelty, PrematureDismissal, UMode, NMode, AuthorReentry, Rep
 
 **停止条件**：先完成 D、E 两例（输入可冻结、故障有记录）的输入追溯与至少一次独立内容复核，再决定是否值得为只能近似重建的 A/B/C 投入。若没有可合法恢复的冻结上下文或缺乏盲审能力，暂停量化结论，保留精确阻断点和后来需要的材料；不扩大到全仓自动扫描或新工作流。
 
-## 6. 合并前的独立审查重点（Claude / 其他独立审查者）
+## 6. 独立内容复审核验点（已完成一次 Claude 复审）
 
-审查者应**独立读取本文件所链的作者原话、§4.2、`AGENTS.md`、`SRT_AI_START.md` 和三个案例来源**，而非沿用起草 AI 的总结。请分别判定：
+审查者应**独立读取本文件所链的作者原话、§4.2、`AGENTS.md`、`SRT_AI_START.md` 和五个案例来源**，而非沿用起草 AI 的总结。请分别判定：
 
 1. 是否确有新增可执行判据，还是把现有 9/08、9/27、9/29、10/01 规则换词重复？
 2. §1 是否过度宽泛，误把严格的局部创新性否定当成“过早”？
 3. §2 是否正确区分源重合、限定比较主张、研究价值与资源取舍？
 4. §3 是否与既有 U/N-mode、ChoiceMap/root-return、六轮预算、author second adjudication、HOLD/stop-loss 完全兼容？
-5. A/B/C 的历史时间截断、作者纠偏盲化及比较公平性是否可实施？
+5. A–E 的历史时间截断、作者纠偏盲化及比较公平性是否可实施？
 6. 是否有“保护 SRT”带来的漏报、虚构新颖性、普适性免检和撤销真实负面结果的风险？
 7. 能否真正从现有仓库恢复一个可重复的 A 条件？若不能，应该怎样降格为前瞻性测试？
 8. 是否应该**只保留这个工作包**、撤销方法提案，或在回放显示实效后向 `AGENTS.md` 写入一条最小入口指针？
 
-**合并评估**：首先要求路径/元数据/引用检查，以及内容复审认可“这份 proposal 作为受限草案值得存档”；这**不等于** V0.1 的防护效果已获实验证明。没有独立评审前维持 Draft PR；不允许自动合并。不借此解除其他任何阻断。
+**合并评估（2026-10-15 更新）：** Claude 已完成源文件对照评审，作者已认可方法定位与本次范围；完成本次新增来源和 §3/§8–§9 的一致性、链接、CI 检查后，允许本文件以 `status: draft` 的非 canonical 方法记录合并。**合并不等于** V0.1 的防护有效、不授权当前运行回放、不激活 `AGENTS.md` 新规则，也不解除其他 HOLD。
 
 ## 7. 当前处置
 
 ```text
-Author goal (as relayed; A0-Q locator NOT YET RECORDED): reduce AI-assisted premature dismissal of SRT original research questions.
+Author goal: A0-Q1/Q2 preserved in 2026-10-15 conversation-source file; external permanent chat locator unavailable.
 This file: M-level retrieval checklist + retrospective evaluation design for EXISTING guards.
-New normative rule beyond existing owners: NONE IDENTIFIED (see §1.1; §3 step 7 extra trigger = M proposal only).
+New normative system beyond existing owners: NONE. One substantial rewrite now gets a bounded meaning-drift flag / author-check, not automatic full root-return.
 Protocol effectiveness (existing guards or this checklist): NOT TESTED.
 Historic AI-error prevalence: NOT ESTABLISHED (one recorded failure instance: Fixture D).
 New ontology / canonical interpretation: NONE.
 New CURRENT NEXT / deep well / experiment authority: NONE.
 Entry-point guard activation (AGENTS / SRT_AI_START): NOT AUTHORIZED; not recommended unless B1 fails and B2 repairs.
-Next permitted step: author records A0-Q source and adjudicates the §8 reframing; any replay run requires separate authorization.
+Next permitted step: merge this bounded draft after validation; later D/E replay planning is author-endorsed, but running models/rating requires a separate scoped execution setup.
 ```
 
 ## 8. 独立评审记录（2026-10-15）
@@ -232,10 +233,22 @@ Next permitted step: author records A0-Q source and adjudicates the §8 reframin
 - **评审者 / 输入范围：** 一次独立的 Claude Code 会话；评审修订 = PR #1121 head `67d3150`。独立读取：`AGENTS.md`、`SRT_AI_START.md`、`_SRT_AGENT_RETRIEVAL_PROFILE.md`、`STATUS.md §Fast Status`、治理修正案 §4.2 / §5.1、09-05 作者纠偏、两份 08-28 审计全文或结论节、09-27 Selection A 与 anti-tautology STOP 裁决、09-29 作者裁决与 recheck、#1084/#1085 纠偏回应、10-01 来源追踪、10-07 外部对照裁决、10-15 双轨提案与其作者来源；并以 `git log` 核对各截断提交。未读取任何原始聊天记录。
 - **最强异议：** §1–§3 的规范内容已由现有 owner 覆盖（§1.1），作为新防护会制造平行规则与第二个“三行”输出块；原 A/B/C 三例都不是已记录的 AI 过早否定，按“故障样本”使用会内置事后归因。
 - **处置（本评审在此 PR 内直接修订）：** 补来源缺口说明；新增 §1.1 覆盖映射；§2 标为 owner 投影；§3 加触发范围、改用 10-01 现有靶点清单、把新增 root-return 触发标为 M 提案、限定三行样式不作作者端输出；§4 给 A/B/C 标注角色并更正 Fixture B 的“作者纠偏”描述，补入 D（CogWAM）与 E（裸 NO-GAIN）；§5 改为 A0 / B1 / B2 三条件，补入多次采样、权重污染、词汇脱敏盲评、预注册与双判读者。
-- **未解决 / 需作者决定：**
+- **原评审列出的待作者决定（2026-10-15 后续处置见 §9）：**
   1. 补录 2026-10-15 作者原话（A0-Q）及会话定位，或确认本文仅为机器发起的提案。
   2. 是否接受“本文 = 现有防护的检索清单 + 有效性回放设计”的重新定位（这改变了原稿“提出防护”的含义）。
   3. §3 第 7 步“一次显著改写与原问冲突即 root-return”是否采纳为规则。
   4. Fixture A 中 08-28 审计 §7 的工作线改向，作者是否视为“改根问”；这决定 A 能否从 LEGIT-OVERLAP CONTROL 改列为 FAILURE-PRESENT。
   5. 是否授权实际运行回放（模型、判读者与预算均未指定）。
-- **合并建议：** 作为 `status: draft`、非 canonical 的方法存档，在第 1、2 项由作者处理后可合并；合并不等于防护有效、不激活任何入口规则、不解除任何 HOLD。
+- **合并建议（作者确认后）：** 作为 `status: draft`、非 canonical 方法存档，在 A0-Q 来源补录及定位确认、链接、CI 检查完成后可合并；不激活入口规则、不解除任何 HOLD。
+
+## 9. 2026-10-15 作者确认及结案范围
+
+**来源**：[本次 ChatGPT 对话原话和“认同”的上下文](../../01_Source_Intuition/SRT_AUTHOR_SOURCE_PREMATURE_NOVELTY_DISMISSAL_2026-10-15.md)。无永久外部可核 URL；不要把作者简短同意扩大为独立实证评审或新的 SRT ontology 决定。
+
+1. **作者 A0-Q 已补录**：包含问题出现、明确聚焦“过早否定创新”及对五项建议的“认同”；作者仅认可该协作问题存在于本人经验与有界方法处置，并未提供可测频率。
+2. **接受修订定位**：本文件是既有 `AGENTS.md`、§4.2 等规则的检索清单与历史回放设计；不用添加第二套强制审查制度或额外作者端输出块。
+3. **收紧 §3 第 7 步**：单次根问题实质性改写时，记录原问/新问/理由并先请作者核对意义差异；该情况**不是**自动全套 root-return。连续两次 residual-only narrowing 才按现有规则执行完整返回。
+4. **Fixture A 仍为合法重合对照**：08-28 §7 的转向是否构成根问题改变暂为 `AUTHOR-OPEN` 候选，不将 A 重标为确定的 `FAILURE-PRESENT`；日后如补齐原始问题与当时的委托范围，可以重审。
+5. **回放留待下一步**：作者认可优先考虑 D（CogWAM）/ E（裸 `NO-GAIN`）的有界验证，但**本次不运行任何回放、模型调用、评分或扩展研究项目**。后续执行须另定模型、输入快照、两名判读者和预算，在旧 STOP/HOLD 不变的条件下启动。
+
+**当前可作的有限结论**：研究过早否定是作者表达的现实协作关切；仓库确有一个明确记录的跨层不当推断与一类措辞误读风险；现行规则是否已足以避免再次发生、以及本清单是否有附加作用，仍属 `NOT TESTED`。合并只是归档、审查与方法性同意的完成。
