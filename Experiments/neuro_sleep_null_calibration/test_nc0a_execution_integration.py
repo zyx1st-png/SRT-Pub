@@ -121,7 +121,8 @@ class SignedToyLauncherTests(unittest.TestCase):
                     root, workers=workers)
                 with self.trusted_test_key():
                     result = launch_test_only(policy, approval, public_key, run_dir)
-                self.assertEqual(result["watchdog"]["status"], "completed")
+                self.assertEqual(result["watchdog"]["status"], "completed",
+                                 result["watchdog"])
                 usage = result["watchdog"]["usage"]
                 self.assertEqual(usage["peak_compute_workers"], workers)
                 self.assertGreaterEqual(usage["peak_resource_trackers"], 1)

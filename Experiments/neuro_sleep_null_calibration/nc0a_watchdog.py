@@ -311,6 +311,33 @@ def classify_process_group(samples: list[ProcessUsage], runner_pid: int) -> dict
             "unknown_pids": sorted(p.pid for p in unknown)}
 
 
+def _unexpected_process_diagnostics(samples: list[ProcessUsage],
+                                    unknown_pids: Iterable[int]) -> list[dict]:
+    """Record safe identifiers for fail-closed process-group stops.
+
+    Keep arguments out of the audit because process command lines may contain
+    sensitive values. The executable basename and process ancestry are enough
+    to distinguish a transient helper from an unapproved compute process.
+    """
+    wanted = set(unknown_pids)
+    diagnostics = []
+    for process in samples:
+        if process.pid not in wanted:
+            continue
+        try:
+            fields = shlex.split(process.command)
+        except ValueError:
+            fields = []
+        executable = Path(fields[0]).name if fields else "unknown"
+        diagnostics.append({"pid": process.pid, "ppid": process.ppid,
+                            "pgid": process.pgid, "state": process.state,
+                            "executable": executable,
+                            "command_sha256": hashlib.sha256(
+                                process.command.encode("utf-8", errors="replace")
+                            ).hexdigest()})
+    return diagnostics
+
+
 def sample_host_memory_pressure() -> dict:
     """Return host pressure telemetry; this is not a per-process memory limit."""
     if sys.platform == "darwin":
@@ -521,6 +548,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
     peak_resource_trackers = 0
     peak_process_members = 0
     stop_reason: str | None = None
+    unexpected_processes: list[dict] = []
     last_utc, last_mono = start_utc, start_mono
     last_log = start_mono
     proc: subprocess.Popen | None = None
@@ -564,6 +592,9 @@ def supervise(command: list[str], *, run_dir: str | Path,
             if not samples and proc.poll() is None:
                 stop_reason = stop_reason or "WATCHDOG_CANNOT_OBSERVE_PROCESS_GROUP"
             process_classes = classify_process_group(samples, proc.pid)
+            if process_classes["unknown_pids"]:
+                unexpected_processes = _unexpected_process_diagnostics(
+                    samples, process_classes["unknown_pids"])
             peak_workers = max(peak_workers, len(process_classes["worker_pids"]))
             peak_resource_trackers = max(
                 peak_resource_trackers, len(process_classes["resource_tracker_pids"]))
@@ -701,6 +732,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 log.append({"event": "watchdog_stop_requested", "reason": stop_reason,
                             "utc": datetime.now(timezone.utc).isoformat(),
                             "task_id": task_id, "phase": phase,
+                            "unexpected_processes": unexpected_processes,
                             "wall_seconds": wall_elapsed,
                             "sampled_cpu_seconds": aggregate_cpu})
                 _terminate_group(proc, limits.terminate_grace_seconds)
@@ -738,6 +770,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                "peak_compute_workers": peak_workers,
                                "peak_resource_trackers": peak_resource_trackers,
                                "peak_process_group_members": peak_process_members,
+                               "unexpected_processes": unexpected_processes,
                                "run_directory_bytes": final_disk,
                                "free_disk_bytes": final_free,
                                "runner_stdout_sha256": _sha256_file(output_path)}

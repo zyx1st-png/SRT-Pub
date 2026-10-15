@@ -167,6 +167,10 @@ class WatchdogTests(unittest.TestCase):
                 "ORPHANED_PROCESS_GROUP_AFTER_RUNNER_EXIT",
                 "UNKNOWN_PROCESS_GROUP_MEMBER"))
             child_pid = int((Path(tmp) / "worker.pid").read_text())
+            if result["reason"] == "UNKNOWN_PROCESS_GROUP_MEMBER":
+                self.assertTrue(any(
+                    row["pid"] == child_pid
+                    for row in result["usage"]["unexpected_processes"]))
             try:
                 os.kill(child_pid, 0)
             except ProcessLookupError:
