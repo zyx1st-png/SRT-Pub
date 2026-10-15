@@ -1,17 +1,23 @@
 ---
 id: SRT-AUTHOR-SYMBOL-POSITION-BACKGROUND-PRESSURE-AI-FLATTENING-20261015
-type: source_trace
+type: source_intuition
 status: active
 record_stage: author_dialogue_source
 date: 2026-10-15
-layer: meta
-epistemic_layer: os
-claim_mode: source_trace
+layer: source_intuition
+epistemic_layer: author
+claim_mode: author_source
 canonical: false
 ai_do_not_use_for_definition: true
+research_mode: U
+root_question: How does portable symbolic expression relate to positioned background pressure and AI flattening?
+comparative_claim: none
+named_comparator: none
+n_mode_triggered: false
 dependency:
-  - SRT-GENERATIVE-ONTOLOGY-SPINE
-  - SRT-AGENT-RETRIEVAL-PROFILE
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - _SRT_AGENT_RETRIEVAL_PROFILE.md
+  - 01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md
 tags: [AuthorSource, Symbol, Position, Background, Verticality, Communication, AI, Flattening, Anticipation]
 ---
 
