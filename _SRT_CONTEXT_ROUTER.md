@@ -896,7 +896,6 @@ Do not reconstruct a second competing classification for that period.
 - Historical second-order-Selection / comparison-scale-rewrite provenance from the 08-09 ChoiceMap chain is routed through §20; current selection-event judgments remain owned by this §23a route and current owners.
 ---
 
-
 ## 23b. Route: Symbol / Position / Background Pressure / AI Flattening and Missing Anticipation
 
 **Use when the query substantively concerns**: 符号与位置、编码/解码与跨位置生成、背景压力、AI 方法层面的理论压平、缺失预期，以及它们与 L0 反压平条件的关系。**Bare “压平” / “非平坦” queries FIRST check canonical L0 O0; this route is then conditional method/source context, never an O0 replacement.**
@@ -931,7 +930,6 @@ Do not reconstruct a second competing classification for that period.
 - No canonical edit, new glossary primitive, current-next change, experiment, CN-2 task selection, PR #1115 scope change or GRG fusion release follows from this route.
 
 ---
-
 
 ## 24. Maintenance Rule
 
