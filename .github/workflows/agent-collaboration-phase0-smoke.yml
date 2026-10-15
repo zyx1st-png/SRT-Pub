@@ -1,0 +1,22 @@
+name: Agent selective collaboration Phase0 smoke
+
+on:
+  pull_request:
+    paths:
+      - "Experiments/agent_selective_collaboration_phase0/**"
+      - ".github/workflows/agent-collaboration-phase0-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  phase0-contract-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run contract regression tests (not efficacy)
+        run: python -m unittest discover -s Experiments/agent_selective_collaboration_phase0 -p 'test_*.py' -v
