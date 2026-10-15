@@ -15,9 +15,9 @@ comparative_claim: none
 named_comparator: none
 n_mode_triggered: false
 dependency:
-  - SRT-GENERATIVE-ONTOLOGY-SPINE
-  - SRT-AGENT-RETRIEVAL-PROFILE
-  - SRT-AUTHOR-SYMBOL-POSITION-BACKGROUND-PRESSURE-AI-FLATTENING-20261015
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - _SRT_AGENT_RETRIEVAL_PROFILE.md
+  - 01_Source_Intuition/SRT_AUTHOR_SOURCE_SYMBOL_POSITION_BACKGROUND_PRESSURE_AI_FLATTENING_2026-10-15.md
 tags: [Symbol, Position, Background, Compression, Reconstruction, AIFlattening, MissingExpectation, Ontology, ParallelStudy]
 ---
 
