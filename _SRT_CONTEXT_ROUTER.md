@@ -896,6 +896,43 @@ Do not reconstruct a second competing classification for that period.
 - Historical second-order-Selection / comparison-scale-rewrite provenance from the 08-09 ChoiceMap chain is routed through §20; current selection-event judgments remain owned by this §23a route and current owners.
 ---
 
+## 23b. Route: Symbol / Position / Background Pressure / AI Flattening and Missing Anticipation
+
+**Use when the query substantively concerns**: 符号与位置、编码/解码与跨位置生成、背景压力、AI 方法层面的理论压平、缺失预期，以及它们与 L0 反压平条件的关系。**Bare “压平” / “非平坦” queries FIRST check canonical L0 O0; this route is then conditional method/source context, never an O0 replacement.**
+
+### Primary (typed, not interchangeable)
+
+- `Core_Law/SRT_L0_Metaphysics.md` §O0 — **canonical** primitive anti-flattening of non-interchangeable generative role-asymmetry. **Must not be bypassed** when “压平” is ontological.
+- `Core_Law/SRT_Generative_Ontology_Spine.md` §§2–6, especially §6.3, and §8 — canonical actualization/background/history/formed position; later-selectability **≠** formed anticipation; separately gated P and E/Bearer.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` — noncanonical author-adjudicated Expectation A statistical, B structural, C0 embodied, C1 model-mediated.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_EXPECTATION_GENERATIVITY_AI_BOUNDARY_2026-09-26.md` — author current-AI/expectation-shaped generation; later architecture/evidence scope narrowing.
+- `01_Source_Intuition/SRT_AUTHOR_SOURCE_SYMBOL_POSITION_BACKGROUND_PRESSURE_AI_FLATTENING_2026-10-15.md` — direct author 2026-10-15 quotes, **noncanonical source**; “缺失预期” meaning remains unadjudicated.
+- `Operations/Proposals/SRT_SYMBOL_POSITION_BACKGROUND_AI_FLATTENING_DUAL_TRACK_2026-10-15.md` — **M-level paper-only paired research method**, not new CURRENT NEXT or ontology.
+- `01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_EMPTY_BRAIN_MEMORY_INFORMATION_REPRESENTATION_BEARER_2026-10-07.md` §§3–4 — symbol carrier / situated semantic information and cross-position effect distinctions.
+- `01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md` — author-origin vertical generation, public formal scaffold vs position-involved use.
+
+### Secondary
+
+- `01_Source_Intuition/SRT_AUTHOR_WHOLE_SKELETON_MINIMAL_ONTOLOGY_CHECKPOINT_2026-09-13.md` — noncanonical author baseline: 「现实开放但并非平坦」; not an alternate canonical O0 owner. `Core/SRT_Core_12a_Ontology_L0L1.md` Ax-L0-03 is **conditional geometric realization**, not a primitive non-flatness proof.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md` and `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIFIED_TRACE_VERTICAL_GENERATIVE_RECONSTRUCTION_2026-09-28.md` — underidentified inverse; no trace -> unique generating process inference.
+- `Operations/Proposals/SRT_POSITION_PARTICIPATION_BEACON_GRG_BOUNDED_METHOD_2026-10-10.md` + `Operations/Audits/SRT_VERTICAL_SELECTION_POSITION_PUBLICNESS_PRESSURE_2026-10-10.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md` — cross-objectification repair without opening GRG fusion HOLD.
+- `AI/AI_POSITIONING_NOTE.md` — training/inference/persistent/embodied AI architectures; do not generalize across states.
+
+### Boundary and paired review
+
+- A public sign can travel unchanged while situated use differs; **lossless carrier decoding ≠ guaranteed reconstruction of original position/background/meaning**. Do not assert that all coding is lossy.
+- Relative background is **not** a stored list of unselected objects. Distinguish **same-event constitutive non-neutrality** from **later-effective retained pressure** requiring Spine §4, then One/position, C0/C1 and E/Bearer at their own gates. Exact channel decoding may be lossless even if situated reconstruction is not original-event recovery.
+- **Term triage:** `AI 方法层压平` vs `L0 O0 本体反压平` = **OVERLOADED_SAME_NAME / candidate PARTIAL_OVERLAP**, not identical claims. One possible **M** bridge is loss of constitutive role asymmetry by symbol-first representation, not a theorem that formal systems or all AI cannot preserve it.
+- **“缺失预期” is AUTHOR-OPEN:** working **MX-1** = failure to anticipate task-relevant missing background; **MX-2** = prospective-structure lost through flattening; **MX-3** = not establishing the stronger expectation-shaped generative reconstitution in a specified AI architecture. These are **not** 2026-09-20 A/B/C0/C1 redefinitions; see typed table in the paired proposal.
+- Separate **SRT-source fidelity** from domain-independent structure-preservation tests; only independently established task-relevant role/background perturbations can score methodological flattening. Compare against **capability-matched human researchers** and strong dynamic/contextual rivals; historical public SRT-Pub correction replay is leakage-exposed and cannot prove an AI-only deficit.
+- **Bidirectional scope:** **NO LOCAL FLATTENING** for a richer symbol/state model only means its declared task-relevant relations survived; it does **not** refute the Track O question of ontic generative-role non-equivalence. Conversely, SRT's ontological O0 guard does **not** license a methodological failure absent matched F1–F4 evidence. #3–#5 alone are candidate AI-specific discriminating cases; #1 fidelity, #2 negative control and #6 method illustration are not positive proof.
+- Couple a bounded **Track T (AI methodological diagnosis)** and **Track O (ontology/source reconstruction)** on the same cases, but keep **separate evidential verdicts**. Technical gains do not establish SRT ontology; ontological coherence does not establish a technical improvement.
+- No canonical edit, new glossary primitive, current-next change, experiment, CN-2 task selection, PR #1115 scope change or GRG fusion release follows from this route.
+
+---
+
 ## 24. Maintenance Rule
 
 Whenever a new deep file is created:
