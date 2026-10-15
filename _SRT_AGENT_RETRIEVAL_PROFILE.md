@@ -93,6 +93,18 @@ For the active cognition programme, also retrieve:
 
 ---
 
+
+### 0.3 Conditional anti-flattening retrieval — symbol / position / background
+
+When the task is substantively about **符号与位置、背景压力、语义跨位置重构、AI 理论压平 or 缺失预期**, follow `_SRT_CONTEXT_ROUTER.md §23b` after the ordinary task-profile bootstrap. Read the canonical Spine with the 2026-10-15 author source, the 2026-10-07 situated-information trace and the 2026-10-10 author position trace. The companion 2026-10-15 method is **M-level / noncanonical**, and any author-unsettled meaning remains OPEN.
+
+For a substantive AI-generated theory assessment, ask which **explanatory relationship**, not merely which named terms, survives the compression: (i) symbol / carrier vs situated efficacy, (ii) actualising foreground with Selection-relative background, (iii) omitted but potentially operative constraints, (iv) position and formation thresholds, (v) re-entry or new differentiation and future selectability. When relevant, separately flag **ME-A** (failure to anticipate task-relevant missing background) and **ME-B** (loss of prospective structure through flattening) as provisional *test questions*, not automatic fail verdicts.
+
+Do **not** require this full route for ordinary Git maintenance or unrelated tasks. Do not treat "AI cannot handle vertical structure" as an established universal impossibility. Any positive judgement must be checked against strong contextual, history-aware or dynamic rivals at the same target. Technical demonstration does not promote ontological truth, and an SRT reading does not itself demonstrate AI failure or SRT exclusivity. The router is navigation, not a second definition authority or second CURRENT NEXT.
+
+---
+
+
 ## 1. Mandatory Agent Contract
 
 After the minimal bootstrap, an agent must classify the task before deciding context depth.
