@@ -90,9 +90,9 @@ Source/provenance:
 For the active cognition programme, also retrieve:
 `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`.
 
-For questions **specifically** about AI theory-flattening, symbol/position, background pressure or “缺失预期”, conditionally load `_SRT_CONTEXT_ROUTER.md §23b`; this M-level research route never becomes a universal theory-review checklist or a second definition owner.
-
 ---
+
+**Conditional topic route (navigation only):** for questions specifically about AI theory-flattening, symbols/positions, background pressure or “缺失预期”, use `_SRT_CONTEXT_ROUTER.md §23b`. Its M-level method remains noncanonical and is not a universal review checklist.
 
 ## 1. Mandatory Agent Contract
 
