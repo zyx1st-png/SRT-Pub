@@ -899,11 +899,14 @@ Do not reconstruct a second competing classification for that period.
 
 ## 23b. Route: Symbol / Position / Background Pressure / AI Flattening and Missing Anticipation
 
-**Use when the query mentions**: 符号与位置、符号编码/解码、符号压缩、位置中的意义重构、背景压力、理论压平、AI 压平、缺失预期、跨位置/跨场景语义转移、非公共描述与公共符号。
+**Use when the query substantively concerns**: 符号与位置、编码/解码与跨位置生成、背景压力、AI 方法层面的理论压平、缺失预期，以及它们与 L0 反压平条件的关系。**Bare “压平” / “非平坦” queries FIRST check canonical L0 O0; this route is then conditional method/source context, never an O0 replacement.**
 
 ### Primary (typed, not interchangeable)
 
-- `Core_Law/SRT_Generative_Ontology_Spine.md` §§2–4 — canonical Selection-relative backgrounding and event/history/formed-position guards.
+- `Core_Law/SRT_L0_Metaphysics.md` §O0 — **canonical** primitive anti-flattening of non-interchangeable generative role-asymmetry. **Must not be bypassed** when “压平” is ontological.
+- `Core_Law/SRT_Generative_Ontology_Spine.md` §§2–6, especially §6.3, and §8 — canonical actualization/background/history/formed position; later-selectability **≠** formed anticipation; separately gated P and E/Bearer.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` — noncanonical author-adjudicated Expectation A statistical, B structural, C0 embodied, C1 model-mediated.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_EXPECTATION_GENERATIVITY_AI_BOUNDARY_2026-09-26.md` — author current-AI/expectation-shaped generation; later architecture/evidence scope narrowing.
 - `01_Source_Intuition/SRT_AUTHOR_SOURCE_SYMBOL_POSITION_BACKGROUND_PRESSURE_AI_FLATTENING_2026-10-15.md` — direct author 2026-10-15 quotes, **noncanonical source**; “缺失预期” meaning remains unadjudicated.
 - `Operations/Proposals/SRT_SYMBOL_POSITION_BACKGROUND_AI_FLATTENING_DUAL_TRACK_2026-10-15.md` — **M-level paper-only paired research method**, not new CURRENT NEXT or ontology.
 - `01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_EMPTY_BRAIN_MEMORY_INFORMATION_REPRESENTATION_BEARER_2026-10-07.md` §§3–4 — symbol carrier / situated semantic information and cross-position effect distinctions.
@@ -920,9 +923,10 @@ Do not reconstruct a second competing classification for that period.
 ### Boundary and paired review
 
 - A public sign can travel unchanged while situated use differs; **lossless carrier decoding ≠ guaranteed reconstruction of original position/background/meaning**. Do not assert that all coding is lossy.
-- Relative background is **not** a stored list of unselected objects; unexpressed pressure is not universally retained causal history. Distinguish event, later efficacy, One, Bearer and cognitive expectation.
-- **“缺失预期” is author-wording with OPEN scope.** Working ME-A = AI fails to anticipate task-relevant missing background; working ME-B = the flattened representation loses prospective/selectable-space organization. They are candidate questions, not accepted definitions or proof of an AI impossibility.
-- In AI theorizing, check symbol self-sufficiency, generic background substitution, inverted explanatory dependency, omission detection and position-sensitive prospective re-cutting; compare matched capable rivals. An uncertainty disclaimer alone is not evidence of anticipating relevant missing structure.
+- Relative background is **not** a stored list of unselected objects. Distinguish **same-event constitutive non-neutrality** from **later-effective retained pressure** requiring Spine §4, then One/position, C0/C1 and E/Bearer at their own gates. Exact channel decoding may be lossless even if situated reconstruction is not original-event recovery.
+- **Term triage:** `AI 方法层压平` vs `L0 O0 本体反压平` = **OVERLOADED_SAME_NAME / candidate PARTIAL_OVERLAP**, not identical claims. One possible **M** bridge is loss of constitutive role asymmetry by symbol-first representation, not a theorem that formal systems or all AI cannot preserve it.
+- **“缺失预期” is AUTHOR-OPEN:** working **MX-1** = failure to anticipate task-relevant missing background; **MX-2** = prospective-structure lost through flattening; **MX-3** = not establishing the stronger expectation-shaped generative reconstitution in a specified AI architecture. These are **not** 2026-09-20 A/B/C0/C1 redefinitions; see typed table in the paired proposal.
+- Separate **SRT-source fidelity** from domain-independent structure-preservation tests; only independently established task-relevant role/background perturbations can score methodological flattening. Compare against **capability-matched human researchers** and strong dynamic/contextual rivals; historical public SRT-Pub correction replay is leakage-exposed and cannot prove an AI-only deficit.
 - Couple a bounded **Track T (AI methodological diagnosis)** and **Track O (ontology/source reconstruction)** on the same cases, but keep **separate evidential verdicts**. Technical gains do not establish SRT ontology; ontological coherence does not establish a technical improvement.
 - No canonical edit, new glossary primitive, current-next change, experiment, CN-2 task selection, PR #1115 scope change or GRG fusion release follows from this route.
 
