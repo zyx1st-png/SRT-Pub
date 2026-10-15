@@ -896,6 +896,39 @@ Do not reconstruct a second competing classification for that period.
 - Historical second-order-Selection / comparison-scale-rewrite provenance from the 08-09 ChoiceMap chain is routed through §20; current selection-event judgments remain owned by this §23a route and current owners.
 ---
 
+
+## 23b. Route: Symbol / Position / Background Pressure / AI Flattening and Missing Anticipation
+
+**Use when the query mentions**: 符号与位置、符号编码/解码、符号压缩、位置中的意义重构、背景压力、理论压平、AI 压平、缺失预期、跨位置/跨场景语义转移、非公共描述与公共符号。
+
+### Primary (typed, not interchangeable)
+
+- `Core_Law/SRT_Generative_Ontology_Spine.md` §§2–4 — canonical Selection-relative backgrounding and event/history/formed-position guards.
+- `01_Source_Intuition/SRT_AUTHOR_SOURCE_SYMBOL_POSITION_BACKGROUND_PRESSURE_AI_FLATTENING_2026-10-15.md` — direct author 2026-10-15 quotes, **noncanonical source**; “缺失预期” meaning remains unadjudicated.
+- `Operations/Proposals/SRT_SYMBOL_POSITION_BACKGROUND_AI_FLATTENING_DUAL_TRACK_2026-10-15.md` — **M-level paper-only paired research method**, not new CURRENT NEXT or ontology.
+- `01_Source_Intuition/SRT_DIALOGUE_DERIVATION_TRACE_EMPTY_BRAIN_MEMORY_INFORMATION_REPRESENTATION_BEARER_2026-10-07.md` §§3–4 — symbol carrier / situated semantic information and cross-position effect distinctions.
+- `01_Source_Intuition/SRT_AUTHOR_TRACE_VERTICAL_SELECTION_PARTICIPATION_UNIFICATION_2026-10-10.md` — author-origin vertical generation, public formal scaffold vs position-involved use.
+
+### Secondary
+
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md` and `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIFIED_TRACE_VERTICAL_GENERATIVE_RECONSTRUCTION_2026-09-28.md` — underidentified inverse; no trace -> unique generating process inference.
+- `Operations/Proposals/SRT_POSITION_PARTICIPATION_BEACON_GRG_BOUNDED_METHOD_2026-10-10.md` + `Operations/Audits/SRT_VERTICAL_SELECTION_POSITION_PUBLICNESS_PRESSURE_2026-10-10.md`.
+- `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_CROSS_OBJECTIFICATION_METHOD_2026-09-23.md` — cross-objectification repair without opening GRG fusion HOLD.
+- `AI/AI_POSITIONING_NOTE.md` — training/inference/persistent/embodied AI architectures; do not generalize across states.
+
+### Boundary and paired review
+
+- A public sign can travel unchanged while situated use differs; **lossless carrier decoding ≠ guaranteed reconstruction of original position/background/meaning**. Do not assert that all coding is lossy.
+- Relative background is **not** a stored list of unselected objects; unexpressed pressure is not universally retained causal history. Distinguish event, later efficacy, One, Bearer and cognitive expectation.
+- **“缺失预期” is author-wording with OPEN scope.** Working ME-A = AI fails to anticipate task-relevant missing background; working ME-B = the flattened representation loses prospective/selectable-space organization. They are candidate questions, not accepted definitions or proof of an AI impossibility.
+- In AI theorizing, check symbol self-sufficiency, generic background substitution, inverted explanatory dependency, omission detection and position-sensitive prospective re-cutting; compare matched capable rivals. An uncertainty disclaimer alone is not evidence of anticipating relevant missing structure.
+- Couple a bounded **Track T (AI methodological diagnosis)** and **Track O (ontology/source reconstruction)** on the same cases, but keep **separate evidential verdicts**. Technical gains do not establish SRT ontology; ontological coherence does not establish a technical improvement.
+- No canonical edit, new glossary primitive, current-next change, experiment, CN-2 task selection, PR #1115 scope change or GRG fusion release follows from this route.
+
+---
+
+
 ## 24. Maintenance Rule
 
 Whenever a new deep file is created:
