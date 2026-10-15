@@ -913,6 +913,7 @@ Do not reconstruct a second competing classification for that period.
 
 ### Secondary
 
+- `01_Source_Intuition/SRT_AUTHOR_WHOLE_SKELETON_MINIMAL_ONTOLOGY_CHECKPOINT_2026-09-13.md` — noncanonical author baseline: 「现实开放但并非平坦」; not an alternate canonical O0 owner. `Core/SRT_Core_12a_Ontology_L0L1.md` Ax-L0-03 is **conditional geometric realization**, not a primitive non-flatness proof.
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md` and `Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md`.
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_OBJECTIFIED_TRACE_VERTICAL_GENERATIVE_RECONSTRUCTION_2026-09-28.md` — underidentified inverse; no trace -> unique generating process inference.
 - `Operations/Proposals/SRT_POSITION_PARTICIPATION_BEACON_GRG_BOUNDED_METHOD_2026-10-10.md` + `Operations/Audits/SRT_VERTICAL_SELECTION_POSITION_PUBLICNESS_PRESSURE_2026-10-10.md`.
@@ -926,6 +927,7 @@ Do not reconstruct a second competing classification for that period.
 - **Term triage:** `AI 方法层压平` vs `L0 O0 本体反压平` = **OVERLOADED_SAME_NAME / candidate PARTIAL_OVERLAP**, not identical claims. One possible **M** bridge is loss of constitutive role asymmetry by symbol-first representation, not a theorem that formal systems or all AI cannot preserve it.
 - **“缺失预期” is AUTHOR-OPEN:** working **MX-1** = failure to anticipate task-relevant missing background; **MX-2** = prospective-structure lost through flattening; **MX-3** = not establishing the stronger expectation-shaped generative reconstitution in a specified AI architecture. These are **not** 2026-09-20 A/B/C0/C1 redefinitions; see typed table in the paired proposal.
 - Separate **SRT-source fidelity** from domain-independent structure-preservation tests; only independently established task-relevant role/background perturbations can score methodological flattening. Compare against **capability-matched human researchers** and strong dynamic/contextual rivals; historical public SRT-Pub correction replay is leakage-exposed and cannot prove an AI-only deficit.
+- **Bidirectional scope:** **NO LOCAL FLATTENING** for a richer symbol/state model only means its declared task-relevant relations survived; it does **not** refute the Track O question of ontic generative-role non-equivalence. Conversely, SRT's ontological O0 guard does **not** license a methodological failure absent matched F1–F4 evidence. #3–#5 alone are candidate AI-specific discriminating cases; #1 fidelity, #2 negative control and #6 method illustration are not positive proof.
 - Couple a bounded **Track T (AI methodological diagnosis)** and **Track O (ontology/source reconstruction)** on the same cases, but keep **separate evidential verdicts**. Technical gains do not establish SRT ontology; ontological coherence does not establish a technical improvement.
 - No canonical edit, new glossary primitive, current-next change, experiment, CN-2 task selection, PR #1115 scope change or GRG fusion release follows from this route.
 
