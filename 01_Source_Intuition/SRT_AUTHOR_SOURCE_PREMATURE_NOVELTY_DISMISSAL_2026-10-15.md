@@ -14,8 +14,7 @@ root_question: How should AI-assisted SRT work avoid prematurely dismissing inno
 comparative_claim: none
 named_comparator: none
 n_mode_triggered: false
-dependency:
-  - Operations/Proposals/SRT_PREMATURE_NOVELTY_DISMISSAL_GUARD_REPLAY_V0_1_2026-10-15.md
+dependency: []
 tags: [AuthorSource, ResearchCollaboration, PrematureNoveltyDismissal, Provenance, UMode]
 ---
 
