@@ -59,22 +59,30 @@ tags: [AuthorSource, Symbol, Position, Background, Verticality, Communication, A
 
 ## 1a. Immediate machine antecedents to the author's “认同，继续” / “继续”
 
-The quotation in **A0-Q4** begins with 「认同，继续」. Its immediately preceding assistant turn was a **machine (M) explanation of the A0-Q3 analogy**, including the following recoverable excerpts from this dialogue:
+The quotation in **A0-Q4** begins with 「认同，继续」. Its immediately preceding assistant turn was a **machine (M) explanation of the A0-Q3 analogy**. The following spans are **M-EXCERPT / ASSISTANT, NEVER A0 AUTHOR QUOTES** (their exact transcript fidelity remains available for author confirmation; the independent reviewer did not have the full original conversation):
 
-> 「符号的可传递性，来源于它对特定位置背景的相对脱离；符号的具体意义与作用，则在位置关系中重新获得确定性。」
+```text
+[M-EXCERPT 1 — assistant / NOT AUTHOR]
+符号的可传递性，来源于它对特定位置背景的相对脱离；符号的具体意义与作用，则在位置关系中重新获得确定性。
 
-> 「符号可能并不是把发送方的完整意义搬运到接收方，而是在不同位置之间建立了一个能够触发意义重构的公共接口。」
+[M-EXCERPT 2 — assistant / NOT AUTHOR]
+符号可能并不是把发送方的完整意义搬运到接收方，而是在不同位置之间建立了一个能够触发意义重构的公共接口。
+```
 
 That turn also presented a provisional encoding / transmitted-carrier / situated-reconstruction model, argued that AI could substitute a generic background for the author's context, and cautioned against turning every site into an established SRT Selection-position. **A0-Q4 is directional assent and a request for repository review; it does not ratify the assistant's diagram, equations, mechanism or novelty claims as A0-P.**
 
-The **A0-Q5** 「继续」 follows a separate machine **repository-adequacy assessment**. Its recoverable conclusion was:
+The **A0-Q5** 「继续」 follows a separate machine **repository-adequacy assessment**. Its recoverable conclusion, preserved here as **M-EXCERPT / ASSISTANT, NOT an author assertion**, is:
 
-> 「在现有 SRT 主轴上补一层“符号—位置—背景压力—重构”的方法论整合，并对 AI 研究过程增加可操作的压平检验。」
+```text
+[M-EXCERPT 3 — assistant / NOT AUTHOR]
+在现有 SRT 主轴上补一层“符号—位置—背景压力—重构”的方法论整合，并对 AI 研究过程增加可操作的压平检验。
+```
 
-That assessment found the conceptual sources already distributed in the repo, with weaker retrievability and method-level continuity. **A0-Q5 requests the additional paired “缺失预期” and ontology work; it does not retrospectively authorize canonical editing, experimental claims or every machine gloss.** The excerpts above are machine-origin context from the present dialogue, not verbatim author claims and not a substitute for full transcript provenance.
+That assessment found the conceptual sources already distributed in the repo, with weaker retrievability and method-level continuity. **A0-Q5 requests the additional paired “缺失预期” and ontology work; it does not retrospectively authorize canonical editing, experimental claims or every machine gloss.** The excerpts above are machine-origin context from the present dialogue, **not verbatim author claims**. Their author-side transcript confirmation is **PENDING / NONBLOCKING**; until then, do not upgrade the precise phrasing or an inferred scope of assent. This section is not a substitute for original conversation provenance.
 
 ## 2. Previous source continuity (links and authority only)
 
+- [2026-09-13 author whole-skeleton checkpoint](SRT_AUTHOR_WHOLE_SKELETON_MINIMAL_ONTOLOGY_CHECKPOINT_2026-09-13.md) preserves 「现实开放但并非平坦」 as historical noncanonical author baseline; it does not override the current canonical O0 owner.
 - [2026-09-13 Selection-relative background / vertical recurrence](SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md): foreground/background are co-readings of a positioned Selection event; background is not a global object complement; event-level verticality does not require history, One or Bearer.
 - [Canonical L0 owner](../Core_Law/SRT_L0_Metaphysics.md) §O0: primitive role asymmetry is not exhaustible as a maximally interchangeable neutral relation. “Ontic anti-flattening” and the method-level charge “AI flattens theory” share wording but are **OVERLOADED_SAME_NAME** / candidate **PARTIAL_OVERLAP**, not identical propositions or established method→ontology inference.
 - [Canonical generative Spine](../Core_Law/SRT_Generative_Ontology_Spine.md) §§2–6 (especially §6.3), and §8: O0/S0, Selection-relative background, later historical efficacy, formed position and separately gated anticipation / prospective self-exposure.
