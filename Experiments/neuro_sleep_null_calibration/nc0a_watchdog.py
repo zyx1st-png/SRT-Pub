@@ -172,6 +172,15 @@ class WatchdogLimits:
     terminate_grace_seconds: float = 0.5
     memory_enforcement_backend: str = "SAMPLED_ONLY"
     host_memory_free_percent_stop: int | None = None
+    boot_volume_path: str | None = None
+    boot_reserve_free_disk_bytes: int | None = None
+    minimum_boot_free_disk_bytes: int | None = None
+    swap_growth_stop_bytes: int | None = None
+    swap_free_stop_bytes: int | None = None
+    minimum_swap_free_bytes: int | None = None
+    require_ac_power: bool = False
+    require_thermal_normal: bool = False
+    require_sleep_assertion: bool = False
 
     def __post_init__(self) -> None:
         for name in ("wall_seconds", "cpu_seconds", "case_seconds",
@@ -187,12 +196,31 @@ class WatchdogLimits:
                 raise ValueError(f"{name} must be a positive integer")
         if self.max_workers > 8:
             raise ValueError("NC-0a cannot exceed eight workers")
-        if self.memory_enforcement_backend not in ("SAMPLED_ONLY", "CGROUP_V2_HARD"):
+        if self.memory_enforcement_backend not in (
+                "SAMPLED_ONLY", "CGROUP_V2_HARD", "MACOS_SAMPLED_PRESSURE"):
             raise ValueError("Unknown memory-enforcement backend")
         if self.host_memory_free_percent_stop is not None and not (
                 type(self.host_memory_free_percent_stop) is int and
                 1 <= self.host_memory_free_percent_stop <= 100):
             raise ValueError("Host memory stop threshold must be an integer percentage")
+        if self.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
+            if self.max_workers > 4:
+                raise ValueError("macOS sampled-pressure policy is capped at four workers")
+            for name in ("boot_reserve_free_disk_bytes", "minimum_boot_free_disk_bytes",
+                         "swap_growth_stop_bytes", "swap_free_stop_bytes",
+                         "minimum_swap_free_bytes"):
+                value = getattr(self, name)
+                if type(value) is not int or value <= 0:
+                    raise ValueError(f"{name} is required by the macOS resource policy")
+            if self.swap_free_stop_bytes >= self.minimum_swap_free_bytes:
+                raise ValueError("Swap-free stop reserve must be below the launch minimum")
+            if self.boot_volume_path != "/System/Volumes/Data":
+                raise ValueError("macOS policy must monitor the internal Data/boot volume")
+            if self.host_memory_free_percent_stop is None:
+                raise ValueError("macOS policy requires a host-memory-pressure threshold")
+            if not (self.require_ac_power and self.require_thermal_normal and
+                    self.require_sleep_assertion):
+                raise ValueError("macOS policy must require AC, thermal telemetry, and sleep assertion")
 
 
 @dataclass(frozen=True)
@@ -295,19 +323,69 @@ def _known_runner_helper(process: ProcessUsage, runner_pid: int) -> bool:
     return False
 
 
-def classify_process_group(samples: list[ProcessUsage], runner_pid: int) -> dict:
-    """Classify actual pool workers separately from named Python/runtime helpers."""
+def read_process_role_registry(path: Path, launch_token: str,
+                               runner_pid: int) -> dict[int, str]:
+    """Read the runner's atomic per-invocation PID-role bridge fail-closed."""
+    if path.is_symlink():
+        raise WatchdogError("Process-role registry cannot be a symlink")
+    if not path.exists():
+        return {}
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise WatchdogError("Process-role registry is unreadable or malformed") from exc
+    if (not isinstance(document, dict) or
+        document.get("format") != "NC0A_PROCESS_ROLE_REGISTRY_V1" or
+        document.get("launch_token") != launch_token or
+        document.get("runner_pid") != runner_pid or
+        not isinstance(document.get("roles"), dict)):
+        raise WatchdogError("Process-role registry identity does not match this invocation")
+    roles: dict[int, str] = {}
+    for raw_pid, role in document["roles"].items():
+        try:
+            pid = int(raw_pid)
+        except (TypeError, ValueError) as exc:
+            raise WatchdogError("Process-role registry contains an invalid PID") from exc
+        if pid <= 1 or role not in {"compute_worker", "resource_tracker", "runner_helper"}:
+            raise WatchdogError("Process-role registry contains an invalid role")
+        roles[pid] = role
+    return roles
+
+
+def classify_process_group(samples: list[ProcessUsage], runner_pid: int,
+                           registered_roles: dict[int, str] | None = None) -> dict:
+    """Classify known workers/helpers and leave unresolved titles fail-closed.
+
+    Darwin sometimes replaces a process's command with ``(Python)`` or
+    ``(git)``. Those titles are only pending identities: the exact PID must
+    appear in the current token-bound runner registry before the resolution
+    grace expires. The executable title alone never grants a role.
+    """
+    registered_roles = registered_roles or {}
     active = [p for p in samples if not p.state.startswith("Z")]
     runners = [p for p in active if p.pid == runner_pid]
-    workers = [p for p in active if _known_python_worker(p, runner_pid)]
-    trackers = [p for p in active if _known_resource_tracker(p, runner_pid)]
-    helpers = [p for p in active if _known_runner_helper(p, runner_pid)]
+    workers = [p for p in active if (
+        _known_python_worker(p, runner_pid) or
+        (registered_roles.get(p.pid) == "compute_worker" and p.ppid == runner_pid and
+         p.pgid == runner_pid))]
+    trackers = [p for p in active if (
+        _known_resource_tracker(p, runner_pid) or
+        (registered_roles.get(p.pid) == "resource_tracker" and p.ppid == runner_pid and
+         p.pgid == runner_pid))]
+    helpers = [p for p in active if (
+        _known_runner_helper(p, runner_pid) or
+        (registered_roles.get(p.pid) == "runner_helper" and p.ppid == runner_pid and
+         p.pgid == runner_pid))]
     known = {p.pid for p in runners + workers + trackers + helpers}
-    unknown = [p for p in active if p.pid not in known]
+    pending = [p for p in active if p.pid not in known and p.ppid == runner_pid and
+               sys.platform == "darwin" and p.command.strip() in {"(Python)", "(git)"}]
+    pending_pids = {p.pid for p in pending}
+    unknown = [p for p in active if p.pid not in known and p.pid not in pending_pids]
     return {"runner_pids": [p.pid for p in runners],
             "worker_pids": sorted(p.pid for p in workers),
             "resource_tracker_pids": sorted(p.pid for p in trackers),
             "helper_pids": sorted(p.pid for p in helpers),
+            "pending_pids": sorted(p.pid for p in pending),
             "unknown_pids": sorted(p.pid for p in unknown)}
 
 
@@ -365,6 +443,113 @@ def sample_host_memory_pressure() -> dict:
                 min(100, values["MemAvailable"] * 100 // values["MemTotal"]),
                 "estimated_available_bytes": values["MemAvailable"]}
     raise WatchdogError("Host memory-pressure telemetry is unsupported on this platform")
+
+
+_SWAP_FIELD_RE = re.compile(
+    r"\b(total|used|free)\s*=\s*([0-9]+(?:\.[0-9]+)?)\s*([KMGTP])\b", re.I)
+
+
+def parse_macos_swap_state(output: str) -> dict[str, int]:
+    values = {}
+    exponents = {"K": 1, "M": 2, "G": 3, "T": 4, "P": 5}
+    for label, quantity, unit in _SWAP_FIELD_RE.findall(output):
+        values[label.lower() + "_bytes"] = int(
+            float(quantity) * 1024 ** exponents[unit.upper()])
+    if set(values) != {"total_bytes", "used_bytes", "free_bytes"}:
+        raise WatchdogError("Cannot parse complete macOS vm.swapusage state")
+    return values
+
+
+def parse_macos_swap_used_bytes(output: str) -> int:
+    return parse_macos_swap_state(output)["used_bytes"]
+
+
+def sample_macos_native_state() -> dict:
+    """Sample host swap, power and thermal telemetry; none is a hard RAM cap."""
+    if sys.platform != "darwin":
+        raise WatchdogError("macOS native resource telemetry is unavailable")
+    swap = subprocess.run(["/usr/sbin/sysctl", "vm.swapusage"], check=True,
+                          capture_output=True, text=True, timeout=5).stdout
+    battery = subprocess.run(["/usr/bin/pmset", "-g", "batt"], check=True,
+                             capture_output=True, text=True, timeout=5).stdout
+    thermal = subprocess.run(["/usr/bin/pmset", "-g", "therm"], check=True,
+                             capture_output=True, text=True, timeout=5).stdout
+    lowered = thermal.lower()
+    warning_levels = []
+    for label in ("thermal", "performance"):
+        if f"no {label} warning level" in lowered:
+            warning_levels.append(0)
+            continue
+        match = re.search(label + r" warning level\s*[:=]\s*(\d+)\b", lowered)
+        if not match:
+            raise WatchdogError("macOS thermal/performance status is unparseable")
+        warning_levels.append(int(match.group(1)))
+    swap_state = parse_macos_swap_state(swap)
+    return {"swap_total_bytes": swap_state["total_bytes"],
+            "swap_used_bytes": swap_state["used_bytes"],
+            "swap_free_bytes": swap_state["free_bytes"],
+            "ac_power": "Now drawing from 'AC Power'" in battery,
+            "thermal_normal": all(level == 0 for level in warning_levels),
+            "thermal_warning_level": warning_levels[0],
+            "performance_warning_level": warning_levels[1]}
+
+
+def validate_macos_sampled_backend(limits: WatchdogLimits) -> dict:
+    """Fail-closed preflight for the prospective, explicitly non-hard backend."""
+    if limits.memory_enforcement_backend != "MACOS_SAMPLED_PRESSURE":
+        raise WatchdogError("Expected the explicitly named macOS sampled-pressure backend")
+    if sys.platform != "darwin" or os.uname().machine != "arm64":
+        raise WatchdogError("MACOS_SAMPLED_PRESSURE is locked to Apple Silicon macOS")
+    state = sample_macos_native_state()
+    if state["swap_free_bytes"] < limits.minimum_swap_free_bytes:
+        raise WatchdogError("macOS swap free-space launch minimum is not met")
+    if not state["ac_power"]:
+        raise WatchdogError("macOS run requires AC power")
+    if not state["thermal_normal"]:
+        raise WatchdogError("macOS run requires normal thermal/performance status")
+    boot_free = shutil.disk_usage(limits.boot_volume_path).free
+    if boot_free < limits.minimum_boot_free_disk_bytes:
+        raise WatchdogError("Internal boot-volume free space is below the signed launch minimum")
+    if boot_free < limits.boot_reserve_free_disk_bytes:
+        raise WatchdogError("Internal boot-volume reserve is already breached")
+    return {**state, "boot_volume_free_bytes": boot_free}
+
+
+def _start_sleep_assertion(watchdog_pid: int, required: bool) -> subprocess.Popen | None:
+    if not required:
+        return None
+    if sys.platform != "darwin":
+        raise WatchdogError("macOS sleep assertion requested on another platform")
+    # Tie the assertion to the watchdog process, so a watchdog crash releases
+    # it even if the supervised runner's parent guard is still terminating.
+    helper = subprocess.Popen(["/usr/bin/caffeinate", "-is", "-w", str(watchdog_pid)],
+                              stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                              stderr=subprocess.DEVNULL, start_new_session=True,
+                              close_fds=True)
+    time.sleep(0.05)
+    if helper.poll() is not None:
+        raise WatchdogError("macOS caffeinate sleep assertion failed to start")
+    return helper
+
+
+def _stop_sleep_assertion(helper: subprocess.Popen | None) -> None:
+    if helper is None:
+        return
+    if helper.poll() is None:
+        helper.terminate()
+        try:
+            helper.wait(timeout=1)
+        except subprocess.TimeoutExpired:
+            helper.kill()
+            helper.wait()
+
+
+def _memory_backend_label(limits: WatchdogLimits, cgroup_path: Path | None) -> str:
+    if cgroup_path is not None:
+        return "CGROUP_V2_HARD"
+    if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
+        return "MACOS_SAMPLED_PRESSURE_NOT_HARD"
+    return "SAMPLED_ONLY_NOT_HARD"
 
 
 def current_cgroup_v2_path() -> Path:
@@ -513,8 +698,13 @@ def supervise(command: list[str], *, run_dir: str | Path,
     """
     if not command or any(not isinstance(x, str) for x in command):
         raise ValueError("A nonempty argument-vector command is required")
-    cgroup_path = validate_hard_memory_backend(
-        limits.memory_enforcement_backend, limits.aggregate_rss_bytes)
+    macos_initial = None
+    if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
+        macos_initial = validate_macos_sampled_backend(limits)
+        cgroup_path = None
+    else:
+        cgroup_path = validate_hard_memory_backend(
+            limits.memory_enforcement_backend, limits.aggregate_rss_bytes)
     cgroup_initial = _cgroup_memory_snapshot(cgroup_path) if cgroup_path else None
     root = Path(run_dir).resolve()
     root.mkdir(parents=True, exist_ok=True, mode=0o700)
@@ -537,6 +727,14 @@ def supervise(command: list[str], *, run_dir: str | Path,
         raise
     wall_now = clock or (lambda: (time.time(), time.monotonic()))
     start_utc, start_mono = wall_now()
+    boot_free = macos_initial["boot_volume_free_bytes"] if macos_initial else None
+    boot_free_min = boot_free
+    swap_initial = macos_initial["swap_used_bytes"] if macos_initial else None
+    swap_peak = swap_initial
+    swap_free_min = macos_initial["swap_free_bytes"] if macos_initial else None
+    latest_macos_state = macos_initial
+    last_native_sample = start_mono
+    sleep_assertion: subprocess.Popen | None = None
     host_pressure_min = 100
     cgroup_peak = cgroup_initial["peak_bytes"] if cgroup_initial else None
     cgroup_events_initial = dict(cgroup_initial["events"]) if cgroup_initial else {}
@@ -549,19 +747,28 @@ def supervise(command: list[str], *, run_dir: str | Path,
     peak_process_members = 0
     stop_reason: str | None = None
     unexpected_processes: list[dict] = []
+    pending_process_first_seen: dict[tuple[int, int, int, str], float] = {}
+    pending_process_resolution_grace = max(2.0, 4 * limits.poll_seconds)
     last_utc, last_mono = start_utc, start_mono
     last_log = start_mono
     proc: subprocess.Popen | None = None
     try:
         child_env = os.environ.copy()
         child_env["NC0A_WATCHDOG_PARENT_PID"] = str(os.getpid())
-        child_env["NC0A_WATCHDOG_LAUNCH_TOKEN"] = secrets.token_hex(32)
+        launch_token = secrets.token_hex(32)
+        child_env["NC0A_WATCHDOG_LAUNCH_TOKEN"] = launch_token
+        role_registry_path = root / f".nc0a-process-roles-{launch_token}.json"
+        child_env["NC0A_PROCESS_ROLE_REGISTRY"] = str(role_registry_path)
         proc = subprocess.Popen(command, cwd=root, stdin=subprocess.DEVNULL,
                                 stdout=output, stderr=subprocess.STDOUT,
                                 start_new_session=True, close_fds=True, env=child_env)
+        if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
+            sleep_assertion = _start_sleep_assertion(
+                os.getpid(), limits.require_sleep_assertion)
         log.append({"event": "run_started", "utc": datetime.now(timezone.utc).isoformat(),
                     "pid": proc.pid, "pgid": proc.pid, "command": command,
                     "limits": asdict(limits),
+                    "macos_initial_state": macos_initial,
                     "stop_thresholds": {
                         "wall_seconds": max(0.01, limits.wall_seconds -
                                              max(2 * limits.poll_seconds,
@@ -591,10 +798,28 @@ def supervise(command: list[str], *, run_dir: str | Path,
             samples = sampler(proc.pid)
             if not samples and proc.poll() is None:
                 stop_reason = stop_reason or "WATCHDOG_CANNOT_OBSERVE_PROCESS_GROUP"
-            process_classes = classify_process_group(samples, proc.pid)
-            if process_classes["unknown_pids"]:
+            try:
+                registered_roles = read_process_role_registry(
+                    role_registry_path, launch_token, proc.pid)
+            except WatchdogError:
+                registered_roles = {}
+                stop_reason = stop_reason or "PROCESS_ROLE_REGISTRY_INVALID"
+            process_classes = classify_process_group(samples, proc.pid, registered_roles)
+            pending = [p for p in samples if p.pid in process_classes["pending_pids"]]
+            current_pending_keys = {(p.pid, p.ppid, p.pgid, p.command) for p in pending}
+            pending_process_first_seen = {
+                key: value for key, value in pending_process_first_seen.items()
+                if key in current_pending_keys}
+            unresolved_expired = []
+            for process in pending:
+                key = (process.pid, process.ppid, process.pgid, process.command)
+                first_seen = pending_process_first_seen.setdefault(key, now_mono)
+                if now_mono - first_seen >= pending_process_resolution_grace:
+                    unresolved_expired.append(process.pid)
+            unresolved_pids = sorted(set(process_classes["unknown_pids"] + unresolved_expired))
+            if unresolved_pids:
                 unexpected_processes = _unexpected_process_diagnostics(
-                    samples, process_classes["unknown_pids"])
+                    samples, unresolved_pids)
             peak_workers = max(peak_workers, len(process_classes["worker_pids"]))
             peak_resource_trackers = max(
                 peak_resource_trackers, len(process_classes["resource_tracker_pids"]))
@@ -617,6 +842,35 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 limits.host_memory_free_percent_stop is not None and
                 host_pressure["free_percent"] < limits.host_memory_free_percent_stop):
                 stop_reason = stop_reason or "HOST_MEMORY_PRESSURE_LIMIT"
+            if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
+                try:
+                    boot_free = shutil.disk_usage(limits.boot_volume_path).free
+                    boot_free_min = min(boot_free_min or boot_free, boot_free)
+                    if now_mono - last_native_sample >= 2.0:
+                        latest_macos_state = sample_macos_native_state()
+                        last_native_sample = now_mono
+                        swap_peak = max(swap_peak or 0,
+                                        latest_macos_state["swap_used_bytes"])
+                        swap_free_min = min(swap_free_min or latest_macos_state[
+                            "swap_free_bytes"], latest_macos_state["swap_free_bytes"])
+                    if sleep_assertion is None or sleep_assertion.poll() is not None:
+                        stop_reason = stop_reason or "SLEEP_ASSERTION_LOST"
+                    if not latest_macos_state["ac_power"]:
+                        stop_reason = stop_reason or "AC_POWER_LOST"
+                    if not latest_macos_state["thermal_normal"]:
+                        stop_reason = stop_reason or "THERMAL_WARNING"
+                    if (swap_initial is not None and swap_peak is not None and
+                        swap_peak - swap_initial > limits.swap_growth_stop_bytes):
+                        stop_reason = stop_reason or "SWAP_GROWTH_LIMIT"
+                    if latest_macos_state["swap_free_bytes"] <= limits.swap_free_stop_bytes:
+                        stop_reason = stop_reason or "SWAP_FREE_RESERVE_BREACH"
+                    boot_free_stop = limits.boot_reserve_free_disk_bytes + max(
+                        64 * 1024 * 1024,
+                        int(limits.boot_reserve_free_disk_bytes * 0.05))
+                    if boot_free <= boot_free_stop:
+                        stop_reason = stop_reason or "BOOT_VOLUME_FREE_DISK_RESERVE_BREACH"
+                except (OSError, subprocess.SubprocessError, WatchdogError):
+                    stop_reason = stop_reason or "MACOS_NATIVE_RESOURCE_TELEMETRY_UNAVAILABLE"
             current_rss = sum(p.rss_bytes for p in samples)  # conservative: shared pages may count twice
             peak_rss = max(peak_rss, current_rss)
             for p in samples:
@@ -658,7 +912,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 stop_reason = stop_reason or "RUN_DISK_ALLOCATION_LIMIT"
             elif free_bytes <= free_stop:
                 stop_reason = stop_reason or "FREE_DISK_RESERVE_BREACH"
-            elif process_classes["unknown_pids"]:
+            elif unresolved_pids:
                 stop_reason = stop_reason or "UNKNOWN_PROCESS_GROUP_MEMBER"
             elif len(process_classes["worker_pids"]) > limits.max_workers:
                 stop_reason = stop_reason or "WORKER_CONCURRENCY_LIMIT"
@@ -709,9 +963,14 @@ def supervise(command: list[str], *, run_dir: str | Path,
                         usage = {"wall_seconds": wall_elapsed, "cpu_seconds": aggregate_cpu,
                                  "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
                                  "peak_aggregate_rss_bytes": peak_rss,
-                                 "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
-                                                         "SAMPLED_ONLY_NOT_HARD"),
+                                 "memory_enforcement": _memory_backend_label(limits, cgroup_path),
                                  "host_memory_free_percent_min": host_pressure_min,
+                                 "boot_volume_free_bytes_min": boot_free_min,
+                                 "swap_used_bytes_initial": swap_initial,
+                                 "swap_used_bytes_peak_sampled": swap_peak,
+                                 "swap_free_bytes_min_sampled": swap_free_min,
+                                 "sleep_assertion": "CAFFEINATE_ACTIVE" if sleep_assertion else "NOT_REQUESTED",
+                                 "macos_native_state": latest_macos_state,
                                  "cgroup_memory_peak_bytes": cgroup_peak,
                                  "peak_compute_workers": peak_workers,
                                  "peak_resource_trackers": peak_resource_trackers,
@@ -763,9 +1022,14 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
                                "aggregate_rss_bytes": final_rss,
                                "peak_aggregate_rss_bytes": max(peak_rss, final_rss),
-                               "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
-                                                       "SAMPLED_ONLY_NOT_HARD"),
+                               "memory_enforcement": _memory_backend_label(limits, cgroup_path),
                                "host_memory_free_percent_min": host_pressure_min,
+                               "boot_volume_free_bytes_min": boot_free_min,
+                               "swap_used_bytes_initial": swap_initial,
+                               "swap_used_bytes_peak_sampled": swap_peak,
+                               "swap_free_bytes_min_sampled": swap_free_min,
+                               "sleep_assertion": "CAFFEINATE_ACTIVE" if sleep_assertion else "NOT_REQUESTED",
+                               "macos_native_state": latest_macos_state,
                                "cgroup_memory_peak_bytes": cgroup_peak,
                                "peak_compute_workers": peak_workers,
                                "peak_resource_trackers": peak_resource_trackers,
@@ -794,6 +1058,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
                             "task_id": task_id,
                             "process_classes": process_classes,
                             "host_memory_pressure": host_pressure,
+                            "macos_native_state": latest_macos_state,
+                            "boot_volume_free_bytes": boot_free,
                             "cgroup_memory": cgroup_snapshot})
                 last_log = now_mono
             sleeper(limits.poll_seconds)
@@ -826,8 +1092,11 @@ def supervise(command: list[str], *, run_dir: str | Path,
                         "message": str(exc)[:500],
                             "usage": {"wall_seconds": max(0.0, end_utc - start_utc),
                                       "cpu_seconds": cpu_seconds,
-                                      "memory_enforcement": ("CGROUP_V2_HARD" if cgroup_path else
-                                                              "SAMPLED_ONLY_NOT_HARD"),
+                                      "memory_enforcement": _memory_backend_label(limits, cgroup_path),
+                                      "boot_volume_free_bytes_min": boot_free_min,
+                                      "swap_used_bytes_initial": swap_initial,
+                                      "swap_used_bytes_peak_sampled": swap_peak,
+                                      "swap_free_bytes_min_sampled": swap_free_min,
                                       "host_memory_free_percent_min": host_pressure_min,
                                       "cgroup_memory_peak_bytes": cgroup_peak,
                                       "peak_compute_workers": peak_workers,
@@ -838,6 +1107,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
             pass
         raise
     finally:
+        _stop_sleep_assertion(sleep_assertion)
         output.close()
         log.close()
 

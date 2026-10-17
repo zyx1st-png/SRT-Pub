@@ -21,9 +21,11 @@ import platform
 import re
 import resource
 import shutil
+import stat
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import traceback
 from typing import Iterable
@@ -36,7 +38,8 @@ from nc0a_contract_runner import (
 )
 from nc0a_watchdog import (
     HashChainLog, WatchdogError, WatchdogLimits, guard_watchdog_parent,
-    supervise, validate_hard_memory_backend, verify_hash_chain,
+    supervise, validate_hard_memory_backend, validate_macos_sampled_backend,
+    verify_hash_chain,
 )
 from nc0a_authority_ledger import AuthorityLedger, AuthorityLedgerError
 from synthetic_graphs import FAMILIES, make_synthetic_graph, synthetic_seed
@@ -57,24 +60,28 @@ PROTOCOL = {
     "recovery": "TASK_LEVEL_FROM_ZERO_SAME_SEED_NO_OUTCOME_DEPENDENT_RETRY",
 }
 WATCHDOG_CONTRACT = {
-    "implementation": "NC0A_WATCHDOG_V3",
+    "implementation": "NC0A_WATCHDOG_V5",
     "poll_seconds": 0.5,
     "wall_clock": "UTC inclusive of sleep; monotonic divergence above 5s stops",
     "cpu_accounting": "process-group ps cumulative TIME plus waited-child rusage and watchdog CPU; 8-worker termination margin",
-    "rss_accounting": "sampled process-group RSS is telemetry only; formal memory enforcement requires exact cgroup-v2 memory.max",
+    "rss_accounting": "CGROUP_V2_HARD enforces exact cgroup memory.max; MACOS_SAMPLED_PRESSURE is sampled telemetry and host-pressure abort only, not a hard cap and may miss transient peaks",
     "worker_accounting": "count only identified multiprocessing.spawn compute workers; sample all group members; unknown members stop",
     "disk_accounting": "run-directory bytes stop at 95% cap; free-disk stop at reserve plus 64MiB or 5% margin",
     "task_deadlines": "case/oracle UTC caps with 99% early-stop margin capped at 60s",
     "termination": "dedicated process group; SIGTERM 0.5s then SIGKILL",
     "monitor_loss": "runner-side parent-PID lease kills the entire process group if watchdog disappears",
     "audit": "fsynced append-only hash chain; no overwrite; unique runner stdout per invocation",
+    "macos_controls": "AC power, caffeinate system-sleep assertion, pmset thermal status, sampled swap-growth plus free-swap reserve, and independent internal boot/output disk reserves",
 }
 APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V1"
+MACOS_APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V2_MACOS"
 ENGINEERING_TEST_APPROVAL_PURPOSE = "NC0A_BOUNDED_ENGINEERING_TEST_APPROVAL_V1"
 MODULE_DIR = Path(__file__).resolve().parent
 REPOSITORY_ROOT = MODULE_DIR.parents[1]
 PREREGISTRATION = REPOSITORY_ROOT / "Experiments" / "SRT_NEURO_SLEEP_POPULATION_NULL_CALIBRATION_PREREGISTRATION_2026-10-09.md"
 RUNTIME_LOCK = MODULE_DIR / "nc0a-runtime-macos-arm64.lock"
+REVIEWER_TRUST_ANCHOR = Path(
+    "/Library/Application Support/SRT/NC0A/trusted-reviewer-key.sha256")
 
 
 class ExecutionError(RuntimeError):
@@ -97,22 +104,22 @@ def formal_cases() -> tuple[CaseSpec, ...]:
 
 
 def _git_head() -> str:
-    return subprocess.run(["git", "rev-parse", "HEAD"], check=True,
-                          capture_output=True, text=True,
-                          cwd=REPOSITORY_ROOT).stdout.strip()
+    return _run_registered(["git", "rev-parse", "HEAD"], check=True,
+                           capture_output=True, text=True,
+                           cwd=REPOSITORY_ROOT).stdout.strip()
 
 
 def _assert_clean_source_tree() -> None:
-    result = subprocess.run(["git", "status", "--porcelain", "--untracked-files=all"],
-                            check=True, capture_output=True, text=True,
-                            cwd=REPOSITORY_ROOT)
+    result = _run_registered(["git", "status", "--porcelain", "--untracked-files=all"],
+                             check=True, capture_output=True, text=True,
+                             cwd=REPOSITORY_ROOT)
     if result.stdout.strip():
         raise ExecutionError("Formal execution requires the approved clean repository tree")
 
 
 def _sysctl(name: str) -> str:
-    result = subprocess.run(["/usr/sbin/sysctl", "-n", name], check=True,
-                            capture_output=True, text=True, timeout=5)
+    result = _run_registered(["/usr/sbin/sysctl", "-n", name], check=True,
+                             capture_output=True, text=True, timeout=5)
     return result.stdout.strip()
 
 
@@ -121,6 +128,30 @@ def _host_identifier() -> str:
         raise ExecutionError("Formal execution is locked to the reviewed macOS/Apple Silicon host class")
     identity = "|".join((platform.node(), platform.machine(), _sysctl("hw.model")))
     return sha256(identity.encode("utf-8")).hexdigest()
+
+
+def _trusted_reviewer_fingerprint() -> str:
+    """Read an administrator-installed trust anchor outside the user's control."""
+    if sys.platform != "darwin" or os.geteuid() == 0:
+        raise ExecutionError("No administrator-provisioned reviewer trust anchor on the reviewed non-root macOS host")
+    chain = [REVIEWER_TRUST_ANCHOR, *REVIEWER_TRUST_ANCHOR.parents]
+    try:
+        for path in chain:
+            if path == Path("/"):
+                break
+            metadata = path.lstat()
+            if stat.S_ISLNK(metadata.st_mode) or metadata.st_uid != 0 or \
+               metadata.st_mode & 0o022:
+                raise ExecutionError("Reviewer trust-anchor path is not administrator-protected")
+        metadata = REVIEWER_TRUST_ANCHOR.lstat()
+        if not stat.S_ISREG(metadata.st_mode):
+            raise ExecutionError("Reviewer trust anchor is not a regular file")
+        value = REVIEWER_TRUST_ANCHOR.read_text(encoding="ascii").strip()
+    except OSError as exc:
+        raise ExecutionError("No administrator-provisioned independent reviewer trust anchor") from exc
+    if not re.fullmatch(r"[0-9a-f]{64}", value):
+        raise ExecutionError("Administrator reviewer trust anchor must be a SHA-256 fingerprint")
+    return value
 
 
 def _verify_runtime_lock(policy: dict) -> None:
@@ -190,27 +221,182 @@ def verify_ed25519_signature(public_key_path: Path, payload_bytes: bytes,
         sigfile = Path(tmp) / "approval.sig"
         payload.write_bytes(payload_bytes)
         sigfile.write_bytes(signature)
-        check = subprocess.run([
+        check = _run_registered([
             "openssl", "pkeyutl", "-verify", "-pubin", "-inkey",
             str(public_key_path), "-rawin", "-in", str(payload), "-sigfile", str(sigfile),
         ], capture_output=True, text=True)
         return check.returncode == 0
 
 
+class ProcessRoleRegistry:
+    """Atomic live PID roles for Darwin's lossy ``ps`` command rendering.
+
+    This file is only a live identity bridge. The watchdog still samples every
+    process and rejects any PID that is absent from this per-invocation,
+    token-bound registry and lacks an independently recognizable command.
+    """
+
+    def __init__(self, path: Path, token: str, runner_pid: int):
+        if not re.fullmatch(r"[0-9a-f]{64}", token):
+            raise ExecutionError("Invalid process-role registry launch token")
+        self.path = path
+        self.token = token
+        self.runner_pid = runner_pid
+        self._roles: dict[str, str] = {}
+        self._pool_worker_pids: set[str] = set()
+        self._tracker_pid: str | None = None
+        self._lock = threading.Lock()
+        self.publish()
+
+    def publish(self) -> None:
+        document = {"format": "NC0A_PROCESS_ROLE_REGISTRY_V1",
+                    "launch_token": self.token,
+                    "runner_pid": self.runner_pid,
+                    "roles": self._roles}
+        temporary = self.path.with_name(self.path.name + f".{os.getpid()}.tmp")
+        flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL
+        fd = os.open(temporary, flags, 0o600)
+        try:
+            raw = _canonical(document) + b"\n"
+            view = memoryview(raw)
+            while view:
+                written = os.write(fd, view)
+                if written <= 0:
+                    raise ExecutionError("Short write to process-role registry")
+                view = view[written:]
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+        os.replace(temporary, self.path)
+
+    def _record(self, pid: int, role: str) -> None:
+        try:
+            pgid = os.getpgid(pid)
+        except (OSError, ProcessLookupError):
+            return
+        # These PIDs are obtained from Popen/ProcessPoolExecutor objects created
+        # by this runner, so their direct parent identity is known at creation;
+        # avoid spawning ``ps`` here, which would itself be an unregistered
+        # process-group member during the watchdog's sampling window.
+        if pgid != self.runner_pid:
+            return
+        self._roles[str(pid)] = role
+
+    def register_helper(self, pid: int) -> None:
+        with self._lock:
+            self._record(pid, "runner_helper")
+            self.publish()
+
+    def unregister_helper(self, pid: int) -> None:
+        with self._lock:
+            self._roles.pop(str(pid), None)
+            self.publish()
+
+    def register_compute_worker(self, pid: int) -> None:
+        with self._lock:
+            self._record(pid, "compute_worker")
+            self.publish()
+
+    def sync_pool(self, pool: ProcessPoolExecutor) -> None:
+        workers = set()
+        for process in getattr(pool, "_processes", {}).values():
+            pid = getattr(process, "pid", None)
+            if pid is not None and process.is_alive():
+                workers.add(str(pid))
+        from multiprocessing import resource_tracker
+        tracker = getattr(resource_tracker, "_resource_tracker", None)
+        tracker_pid = getattr(tracker, "_pid", None)
+        with self._lock:
+            for old_pid in self._pool_worker_pids:
+                self._roles.pop(old_pid, None)
+            if self._tracker_pid is not None:
+                self._roles.pop(self._tracker_pid, None)
+            self._pool_worker_pids = set()
+            self._tracker_pid = None
+            for pid_text in workers:
+                self._record(int(pid_text), "compute_worker")
+                if pid_text in self._roles:
+                    self._pool_worker_pids.add(pid_text)
+            if tracker_pid is not None:
+                self._record(int(tracker_pid), "resource_tracker")
+                if str(tracker_pid) in self._roles:
+                    self._tracker_pid = str(tracker_pid)
+            self.publish()
+
+    def clear_pool(self) -> None:
+        # Python 3.11's spawn resource_tracker may otherwise outlive the runner
+        # briefly and be adopted by launchd/PPID 1. The watchdog correctly
+        # treats that as an orphaned group member, so reap it before the runner
+        # can exit successfully. The runtime is pinned and this private API is
+        # covered by end-to-end macOS spawn tests.
+        from multiprocessing import resource_tracker
+        tracker = getattr(resource_tracker, "_resource_tracker", None)
+        if tracker is not None and getattr(tracker, "_pid", None) is not None:
+            tracker._stop()
+        with self._lock:
+            for old_pid in self._pool_worker_pids:
+                self._roles.pop(old_pid, None)
+            if self._tracker_pid is not None:
+                self._roles.pop(self._tracker_pid, None)
+            self._pool_worker_pids = set()
+            self._tracker_pid = None
+            self.publish()
+
+
+_ACTIVE_PROCESS_ROLE_REGISTRY: ProcessRoleRegistry | None = None
+
+
+def _run_registered(*popenargs, **kwargs):
+    """subprocess.run semantics with its child PID registered while active."""
+    registry = _ACTIVE_PROCESS_ROLE_REGISTRY
+    if registry is None:
+        return subprocess.run(*popenargs, **kwargs)
+    check = kwargs.pop("check", False)
+    timeout = kwargs.pop("timeout", None)
+    input_data = kwargs.pop("input", None)
+    capture_output = kwargs.pop("capture_output", False)
+    if capture_output:
+        if "stdout" in kwargs or "stderr" in kwargs:
+            raise ValueError("stdout and stderr arguments may not be used with capture_output")
+        kwargs["stdout"] = subprocess.PIPE
+        kwargs["stderr"] = subprocess.PIPE
+    if input_data is not None:
+        if "stdin" in kwargs:
+            raise ValueError("stdin and input arguments may not both be used")
+        kwargs["stdin"] = subprocess.PIPE
+    with subprocess.Popen(*popenargs, **kwargs) as process:
+        registry.register_helper(process.pid)
+        try:
+            try:
+                stdout, stderr = process.communicate(input_data, timeout=timeout)
+            except subprocess.TimeoutExpired:
+                process.kill()
+                stdout, stderr = process.communicate()
+                raise
+        finally:
+            registry.unregister_helper(process.pid)
+        result = subprocess.CompletedProcess(process.args, process.returncode,
+                                             stdout, stderr)
+        if check:
+            result.check_returncode()
+        return result
+
+
 def _verify_approval(policy_path: Path, approval_path: Path,
                      public_key_path: Path) -> tuple[dict, dict]:
     """Verify policy schema, exact HEAD/workload and detached Ed25519 approval.
 
-    The trusted public-key fingerprint is injected by the execution host, not
-    stored in this PR. An empty/missing trust anchor always blocks formal runs.
+    The trust fingerprint is administrator-installed outside the repository,
+    user home, output directory, and run ledger. Missing or user-writable trust
+    state always blocks formal execution.
     """
     policy_bytes = policy_path.read_bytes()
     approval = _read_json(approval_path)
     public_key = public_key_path.read_bytes()
-    expected_fingerprint = os.environ.get("NC0A_TRUSTED_REVIEWER_PUBKEY_SHA256", "")
+    expected_fingerprint = _trusted_reviewer_fingerprint()
     actual_fingerprint = sha256(public_key).hexdigest()
-    if not expected_fingerprint or actual_fingerprint != expected_fingerprint:
-        raise ExecutionError("No matching externally provisioned reviewer trust anchor")
+    if actual_fingerprint != expected_fingerprint:
+        raise ExecutionError("Reviewer signing key differs from the administrator trust anchor")
     _assert_clean_source_tree()
     raw_policy = _read_json(policy_path)
     validation_summary = validate_policy(raw_policy)
@@ -219,7 +405,10 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     signature_encoded = signed.pop("signature_ed25519_base64", None)
     if not isinstance(signature_encoded, str):
         raise ExecutionError("Detached reviewer signature is missing")
-    if approval.get("purpose") != APPROVAL_PURPOSE:
+    expected_purpose = (MACOS_APPROVAL_PURPOSE
+                        if raw_policy.get("memory_enforcement_backend") == "MACOS_SAMPLED_PRESSURE"
+                        else APPROVAL_PURPOSE)
+    if approval.get("purpose") != expected_purpose:
         raise ExecutionError("Wrong formal approval purpose")
     if approval.get("decision") != "APPROVED_FOR_FORMAL_NC0A":
         raise ExecutionError("Formal NC-0a approval decision is absent")
@@ -250,6 +439,21 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     review_url = approval.get("independent_review_url")
     if not isinstance(reviewer, str) or not reviewer.strip() or not isinstance(review_url, str) or not review_url.startswith("https://"):
         raise ExecutionError("Independent reviewer identity and review URL are required")
+    if expected_purpose == MACOS_APPROVAL_PURPOSE:
+        bound_fields = {
+            "resource_amendment_status": "INDEPENDENTLY_APPROVED",
+            "resource_amendment_approver": raw_policy.get("resource_amendment_approver"),
+            "resource_amendment_sha256": raw_policy.get("resource_amendment_sha256"),
+            "resource_amendment_approval_record_url": raw_policy.get(
+                "resource_amendment_approval_record_url"),
+            "macos_memory_semantics": raw_policy.get("memory_limit_semantics"),
+            "macos_residual_risk_acceptance": raw_policy.get(
+                "macos_residual_risk_acceptance"),
+            "reviewer_key_fingerprint_sha256": expected_fingerprint,
+        }
+        for field, expected_value in bound_fields.items():
+            if approval.get(field) != expected_value:
+                raise ExecutionError("macOS signed approval is missing/changing " + field)
     if approval.get("operational_attempts_per_case") not in (1, 2):
         raise ExecutionError("Only one or two prospectively approved operational attempts are supported")
     if approval.get("retry_rule") != PROTOCOL["recovery"]:
@@ -442,7 +646,8 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
                           formal: bool, crash_index: int | None = None,
                           crash_after_start: bool = False,
                           phase_callback=None,
-                          test_worker_hold_seconds: float = 0.0) -> dict:
+                          test_worker_hold_seconds: float = 0.0,
+                          process_role_registry: ProcessRoleRegistry | None = None) -> dict:
     """Run one immutable task attempt. Toy specs exist only for engineering tests."""
     if formal != spec.formal:
         raise ExecutionError("Formal/test mode and case identity disagree")
@@ -470,15 +675,23 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
                       CHECKPOINTS, case_seconds, max_proposals,
                       test_worker_hold_seconds),
         ) as pool:
-            futures = {pool.submit(_chain_worker, i, crash_index): i
-                       for i in range(CHAIN_COUNT)}
+            futures = {}
+            for i in range(CHAIN_COUNT):
+                futures[pool.submit(_chain_worker, i, crash_index)] = i
+                if process_role_registry is not None:
+                    process_role_registry.sync_pool(pool)
             for future in as_completed(futures):
                 chains.append(future.result())
+                if process_role_registry is not None:
+                    process_role_registry.sync_pool(pool)
     except BaseException:
         # ProcessPoolExecutor.shutdown waits for workers. On abnormal worker
         # death, terminate the executor's remaining workers promptly; the
         # outer watchdog remains the final process-group kill authority.
         raise
+    finally:
+        if process_role_registry is not None:
+            process_role_registry.clear_pool()
     child_after = resource.getrusage(resource.RUSAGE_CHILDREN)
     worker_cpu_seconds = ((child_after.ru_utime + child_after.ru_stime) -
                           (child_before.ru_utime + child_before.ru_stime))
@@ -554,7 +767,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                       crash_index: int | None = None,
                       crash_after_start: bool = False,
                       crash_after_start_case: str | None = None,
-                      test_worker_hold_seconds: float = 0.0) -> dict:
+                      test_worker_hold_seconds: float = 0.0,
+                      process_role_registry: ProcessRoleRegistry | None = None) -> dict:
     """Fixed-order task recovery; completed SHA-verified cases are never replaced."""
     root = Path(run_dir).resolve()
     if root == REPOSITORY_ROOT or REPOSITORY_ROOT in root.parents:
@@ -681,7 +895,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                     crash_after_start=(crash_after_start or
                                        spec.key == crash_after_start_case),
                     phase_callback=set_phase,
-                    test_worker_hold_seconds=(test_worker_hold_seconds if not formal else 0.0))
+                    test_worker_hold_seconds=(test_worker_hold_seconds if not formal else 0.0),
+                    process_role_registry=process_role_registry)
                 report["attempt"] = attempt_num
                 report["run_manifest_sha256"] = manifest_sha
                 report["resource_policy_sha256"] = policy_hash
@@ -747,6 +962,7 @@ def run_battery(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers: int,
 
 def _limits_from_policy(policy: dict) -> WatchdogLimits:
     caps = policy["limits"]
+    macos = policy["memory_enforcement_backend"] == "MACOS_SAMPLED_PRESSURE"
     return WatchdogLimits(
         wall_seconds=caps["absolute_wall_seconds"],
         cpu_seconds=caps["aggregate_cpu_seconds"],
@@ -758,6 +974,15 @@ def _limits_from_policy(policy: dict) -> WatchdogLimits:
         oracle_seconds=caps["oracle_timeout_seconds"],
         memory_enforcement_backend=policy["memory_enforcement_backend"],
         host_memory_free_percent_stop=policy["host_memory_free_percent_stop"],
+        boot_volume_path=policy.get("macos_boot_volume_path") if macos else None,
+        boot_reserve_free_disk_bytes=caps.get("boot_reserve_free_disk_bytes") if macos else None,
+        minimum_boot_free_disk_bytes=caps.get("minimum_boot_free_disk_bytes") if macos else None,
+        swap_growth_stop_bytes=caps.get("swap_growth_stop_bytes") if macos else None,
+        swap_free_stop_bytes=caps.get("swap_free_stop_bytes") if macos else None,
+        minimum_swap_free_bytes=caps.get("minimum_swap_free_bytes") if macos else None,
+        require_ac_power=policy.get("require_ac_power", False) if macos else False,
+        require_thermal_normal=policy.get("require_thermal_normal", False) if macos else False,
+        require_sleep_assertion=policy.get("require_sleep_assertion", False) if macos else False,
     )
 
 
@@ -800,10 +1025,15 @@ def _verify_watchdog_ledger_anchors(ledger: AuthorityLedger, experiment_id: str,
 def _runner_entry(run_dir: str, policy_path: str, policy_sha: str,
                   approval_path: str, public_key_path: str,
                   max_attempts: int) -> int:
+    global _ACTIVE_PROCESS_ROLE_REGISTRY
     token = os.environ.get("NC0A_WATCHDOG_LAUNCH_TOKEN", "")
     parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
     if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
         raise ExecutionError("Internal runner must be an authenticated child of the watchdog launcher")
+    role_path = Path(os.environ.get("NC0A_PROCESS_ROLE_REGISTRY", ""))
+    if role_path.parent.resolve() != Path(run_dir).resolve():
+        raise ExecutionError("Process-role registry must be in this invocation's run directory")
+    _ACTIVE_PROCESS_ROLE_REGISTRY = ProcessRoleRegistry(role_path, token, os.getpid())
     guard_watchdog_parent(int(parent))
     policy, approval = _verify_approval(Path(policy_path), Path(approval_path),
                                         Path(public_key_path))
@@ -817,7 +1047,8 @@ def _runner_entry(run_dir: str, policy_path: str, policy_sha: str,
         case_seconds=policy["limits"]["case_timeout_seconds"],
         oracle_seconds=policy["limits"]["oracle_timeout_seconds"],
         max_attempts_per_case=max_attempts, formal=True,
-        policy_hash=policy_sha, head=_git_head())
+        policy_hash=policy_sha, head=_git_head(),
+        process_role_registry=_ACTIVE_PROCESS_ROLE_REGISTRY)
     print(json.dumps(result, sort_keys=True))
     return 0
 
@@ -940,10 +1171,15 @@ def _verify_engineering_test_approval(policy_path: Path, approval_path: Path,
 def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
                        approval_path: str, public_key_path: str,
                        invocation: int) -> int:
+    global _ACTIVE_PROCESS_ROLE_REGISTRY
     token = os.environ.get("NC0A_WATCHDOG_LAUNCH_TOKEN", "")
     parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
     if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
         raise ExecutionError("Test runner must be an authenticated child of the watchdog launcher")
+    role_path = Path(os.environ.get("NC0A_PROCESS_ROLE_REGISTRY", ""))
+    if role_path.parent.resolve() != Path(run_dir).resolve():
+        raise ExecutionError("Test process-role registry must be in this invocation's run directory")
+    _ACTIVE_PROCESS_ROLE_REGISTRY = ProcessRoleRegistry(role_path, token, os.getpid())
     guard_watchdog_parent(int(parent))
     policy, _ = _verify_engineering_test_approval(
         Path(policy_path), Path(approval_path), Path(public_key_path))
@@ -958,6 +1194,8 @@ def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
     if fault_case == "extra_compute_worker":
         extra_worker = multiprocessing.get_context("spawn").Process(target=_test_extra_worker)
         extra_worker.start()
+        if _ACTIVE_PROCESS_ROLE_REGISTRY is not None:
+            _ACTIVE_PROCESS_ROLE_REGISTRY.register_compute_worker(extra_worker.pid)
         time.sleep(0.25)
     result = _run_battery_core(
         root, cases=cases, workers=workers,
@@ -966,7 +1204,8 @@ def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
         max_attempts_per_case=2, formal=False,
         policy_hash=policy_sha, head=_git_head(),
         crash_index=crash_index, crash_after_start_case=crash_after_case,
-        test_worker_hold_seconds=policy.get("worker_hold_seconds", 0.0))
+        test_worker_hold_seconds=policy.get("worker_hold_seconds", 0.0),
+        process_role_registry=_ACTIVE_PROCESS_ROLE_REGISTRY)
     if extra_worker is not None:
         extra_worker.terminate()
         extra_worker.join(timeout=2)
@@ -1008,10 +1247,18 @@ def launch_formal(policy_path: str | Path, approval_path: str | Path,
     policy, approval = _verify_approval(policy_path, approval_path, public_key_path)
     policy_sha = sha256(policy_path.read_bytes()).hexdigest()
     limits = _limits_from_policy(policy)
-    cgroup = validate_hard_memory_backend(
-        policy["memory_enforcement_backend"], limits.aggregate_rss_bytes)
-    if cgroup is None:
-        raise ExecutionError("Formal execution requires verified hard cgroup-v2 memory enforcement")
+    if policy["memory_enforcement_backend"] == "MACOS_SAMPLED_PRESSURE":
+        try:
+            validate_macos_sampled_backend(limits)
+        except WatchdogError as exc:
+            raise ExecutionError(str(exc)) from exc
+    elif policy["memory_enforcement_backend"] == "CGROUP_V2_HARD":
+        cgroup = validate_hard_memory_backend(
+            policy["memory_enforcement_backend"], limits.aggregate_rss_bytes)
+        if cgroup is None:
+            raise ExecutionError("Formal execution requires verified hard cgroup-v2 memory enforcement")
+    else:
+        raise ExecutionError("Formal execution requires an approved hard or macOS sampled-pressure backend")
     ledger_path, anchor_path = _assert_authority_store_outside_run(policy, Path(run_dir).resolve())
     with AuthorityLedger(ledger_path, anchor_path) as ledger:
         root, begin = _prepare_authorized_invocation(

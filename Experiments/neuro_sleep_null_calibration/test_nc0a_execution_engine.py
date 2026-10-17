@@ -9,6 +9,7 @@ import tempfile
 import unittest
 from unittest import mock
 
+import nc0a_execution_engine as engine
 from nc0a_execution_engine import (
     CaseSpec, ExecutionError, formal_cases, run_battery, run_case_attempt,
 )
@@ -64,13 +65,11 @@ class NC0aExecutionEngineTests(unittest.TestCase):
             policy.write_text("{}")
             approval.write_text("{}")
             pubkey.write_text("not-a-public-key")
-            old = os.environ.pop("NC0A_TRUSTED_REVIEWER_PUBKEY_SHA256", None)
-            try:
+            with mock.patch.object(
+                    engine, "_trusted_reviewer_fingerprint",
+                    side_effect=ExecutionError("No administrator-provisioned reviewer trust anchor")):
                 with self.assertRaisesRegex(ExecutionError, "reviewer trust anchor"):
                     launch_formal(policy, approval, pubkey, root / "run")
-            finally:
-                if old is not None:
-                    os.environ["NC0A_TRUSTED_REVIEWER_PUBKEY_SHA256"] = old
 
     def test_ed25519_approval_signature_adapter_verifies_and_rejects_tampering(self):
         import shutil

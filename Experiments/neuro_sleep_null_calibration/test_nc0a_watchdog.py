@@ -12,9 +12,13 @@ import sys
 import tempfile
 import time
 import unittest
+from unittest import mock
 
 from nc0a_watchdog import (
-    WatchdogLimits, parse_ps_time, sample_process_group, supervise, verify_hash_chain,
+    ProcessUsage, WatchdogLimits, classify_process_group, parse_ps_time,
+    parse_macos_swap_state, parse_macos_swap_used_bytes,
+    read_process_role_registry, sample_macos_native_state,
+    sample_process_group, supervise, verify_hash_chain,
 )
 
 
@@ -31,11 +35,150 @@ def limits(**overrides):
 
 
 class WatchdogTests(unittest.TestCase):
+    def test_darwin_collapsed_titles_require_current_process_role_registry(self):
+        runner_pid = 100
+        marker = ProcessUsage(
+            201, runner_pid, runner_pid, 10, 0.1, "S",
+            "/python -c from multiprocessing.spawn import spawn_main; "
+            "spawn_main(tracker_fd=11, pipe_handle=19) --multiprocessing-fork")
+        transition = ProcessUsage(201, runner_pid, runner_pid, 10, 0.1,
+                                  "S", "(Python)")
+        unrelated = ProcessUsage(202, runner_pid, runner_pid, 10, 0.1,
+                                 "S", "(Python)")
+        with mock.patch("nc0a_watchdog.sys.platform", "darwin"):
+            first = classify_process_group([marker], runner_pid)
+            self.assertEqual(first["worker_pids"], [201])
+            self.assertEqual(first["pending_pids"], [])
+
+            # A bare title has no role until the exact PID is published by the
+            # current runner. New PIDs and changed ancestry remain unknown.
+            pending = classify_process_group([transition], runner_pid)
+            self.assertEqual(pending["pending_pids"], [201])
+            self.assertEqual(pending["worker_pids"], [])
+            registered = classify_process_group(
+                [transition], runner_pid, {201: "compute_worker"})
+            self.assertEqual(registered["worker_pids"], [201])
+            self.assertEqual(registered["unknown_pids"], [])
+            self.assertEqual(classify_process_group(
+                [unrelated], runner_pid, {201: "compute_worker"}
+            )["pending_pids"], [202])
+            self.assertEqual(classify_process_group(
+                [unrelated], runner_pid, {202: "compute_worker"}
+            )["worker_pids"], [202])
+            changed_parent = ProcessUsage(201, 999, runner_pid, 10, 0.1,
+                                          "S", "(Python)")
+            self.assertEqual(classify_process_group(
+                [changed_parent], runner_pid, {201: "compute_worker"}
+            )["unknown_pids"], [201])
+
+    def test_role_registry_is_bound_to_run_token_and_runner_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "roles.json"
+            path.write_text(json.dumps({
+                "format": "NC0A_PROCESS_ROLE_REGISTRY_V1",
+                "launch_token": "a" * 64,
+                "runner_pid": 100,
+                "roles": {"201": "compute_worker"},
+            }))
+            self.assertEqual(read_process_role_registry(path, "a" * 64, 100),
+                             {201: "compute_worker"})
+            with self.assertRaisesRegex(Exception, "identity"):
+                read_process_role_registry(path, "b" * 64, 100)
+
     def test_darwin_bsd_ps_time_parser(self):
         self.assertAlmostEqual(parse_ps_time("00:00.32"), 0.32)
         self.assertEqual(parse_ps_time("01:02:03"), 3723)
         self.assertEqual(parse_ps_time("2-01:02:03"), 176523)
         self.assertAlmostEqual(parse_ps_time("318:13.09"), 19093.09)
+
+    def test_mac_swap_usage_parser(self):
+        sample = "vm.swapusage: total = 12288.00M used = 11501.38M free = 786.62M (encrypted)"
+        self.assertEqual(parse_macos_swap_used_bytes(sample), int(11501.38 * 1024**2))
+        self.assertEqual(parse_macos_swap_state(sample), {
+            "total_bytes": int(12288.00 * 1024**2),
+            "used_bytes": int(11501.38 * 1024**2),
+            "free_bytes": int(786.62 * 1024**2),
+        })
+
+    @unittest.skipUnless(sys.platform == "darwin", "requires real macOS native telemetry")
+    def test_macos_sampled_pressure_backend_runs_protected_toy_and_records_limits(self):
+        native_limits = limits(
+            wall_seconds=20, cpu_seconds=120, aggregate_rss_bytes=2 * 1024**3,
+            max_workers=4, reserve_free_disk_bytes=1024,
+            memory_enforcement_backend="MACOS_SAMPLED_PRESSURE",
+            host_memory_free_percent_stop=10,
+            boot_volume_path="/System/Volumes/Data",
+            boot_reserve_free_disk_bytes=10 * 1024**3,
+            minimum_boot_free_disk_bytes=20 * 1024**3,
+            swap_growth_stop_bytes=4 * 1024**3,
+            swap_free_stop_bytes=512 * 1024,
+            minimum_swap_free_bytes=1024 * 1024,
+            require_ac_power=True, require_thermal_normal=True,
+            require_sleep_assertion=True)
+        with tempfile.TemporaryDirectory() as tmp:
+            result = supervise([sys.executable, "-c", "print('bounded-macos-watchdog-ok')"],
+                               run_dir=tmp, limits=native_limits)
+        self.assertEqual(result["status"], "completed", result)
+        usage = result["usage"]
+        self.assertEqual(usage["memory_enforcement"],
+                         "MACOS_SAMPLED_PRESSURE_NOT_HARD")
+        self.assertEqual(usage["sleep_assertion"], "CAFFEINATE_ACTIVE")
+        self.assertGreater(usage["boot_volume_free_bytes_min"], 0)
+        self.assertGreater(usage["swap_used_bytes_initial"], 0)
+        self.assertGreater(usage["swap_free_bytes_min_sampled"], 0)
+        self.assertIn("ac_power", usage["macos_native_state"])
+        self.assertTrue(usage["macos_native_state"]["thermal_normal"])
+
+    @unittest.skipUnless(sys.platform == "darwin", "requires macOS preflight semantics")
+    def test_macos_backend_rejects_low_swap_free_headroom_before_start(self):
+        from nc0a_watchdog import validate_macos_sampled_backend
+        native = {"swap_total_bytes": 12 * 1024**3,
+                  "swap_used_bytes": 11 * 1024**3,
+                  "swap_free_bytes": 256 * 1024**2,
+                  "ac_power": True, "thermal_normal": True,
+                  "thermal_warning_level": 0, "performance_warning_level": 0}
+        values = limits(
+            memory_enforcement_backend="MACOS_SAMPLED_PRESSURE",
+            max_workers=4, host_memory_free_percent_stop=20,
+            boot_volume_path="/System/Volumes/Data",
+            boot_reserve_free_disk_bytes=10 * 1024**3,
+            minimum_boot_free_disk_bytes=20 * 1024**3,
+            swap_growth_stop_bytes=2 * 1024**3,
+            swap_free_stop_bytes=512 * 1024**2,
+            minimum_swap_free_bytes=1024**3,
+            require_ac_power=True, require_thermal_normal=True,
+            require_sleep_assertion=True)
+        with mock.patch("nc0a_watchdog.sample_macos_native_state", return_value=native):
+            with self.assertRaisesRegex(Exception, "swap free-space launch minimum"):
+                validate_macos_sampled_backend(values)
+
+    @unittest.skipUnless(sys.platform == "darwin", "requires macOS Watchdog execution")
+    def test_macos_swap_free_reserve_breach_kills_the_process_group(self):
+        normal = {"swap_total_bytes": 12 * 1024**3,
+                  "swap_used_bytes": 11 * 1024**3,
+                  "swap_free_bytes": 10 * 1024**2,
+                  "ac_power": True, "thermal_normal": True,
+                  "thermal_warning_level": 0, "performance_warning_level": 0}
+        low = {**normal, "swap_free_bytes": 256 * 1024}
+        native_limits = limits(
+            wall_seconds=15, cpu_seconds=120, aggregate_rss_bytes=2 * 1024**3,
+            max_workers=4, memory_enforcement_backend="MACOS_SAMPLED_PRESSURE",
+            host_memory_free_percent_stop=10,
+            boot_volume_path="/System/Volumes/Data",
+            boot_reserve_free_disk_bytes=10 * 1024**3,
+            minimum_boot_free_disk_bytes=20 * 1024**3,
+            swap_growth_stop_bytes=4 * 1024**3,
+            swap_free_stop_bytes=512 * 1024,
+            minimum_swap_free_bytes=1024 * 1024,
+            require_ac_power=True, require_thermal_normal=True,
+            require_sleep_assertion=True)
+        with tempfile.TemporaryDirectory() as tmp, \
+             mock.patch("nc0a_watchdog.sample_macos_native_state",
+                        side_effect=[normal, low]):
+            result = supervise([sys.executable, "-c", "import time; time.sleep(20)"],
+                               run_dir=tmp, limits=native_limits)
+        self.assertEqual(result["status"], "stopped")
+        self.assertEqual(result["reason"], "SWAP_FREE_RESERVE_BREACH")
 
     def test_normal_exit_records_hash_chained_usage(self):
         with tempfile.TemporaryDirectory() as tmp:

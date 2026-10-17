@@ -2,7 +2,9 @@
 import copy
 import unittest
 
-from nc0a_budget_preflight import ResourcePolicyError, validate_policy
+from nc0a_budget_preflight import (
+    MACOS_MEMORY_SEMANTICS, POLICY_V2_MACOS, ResourcePolicyError, validate_policy,
+)
 
 
 def toy_policy():
@@ -39,6 +41,44 @@ def toy_policy():
             "oracle_timeout_seconds": 300,
         },
     }
+
+
+def macos_policy():
+    policy = toy_policy()
+    policy.update({
+        "purpose": POLICY_V2_MACOS,
+        "memory_enforcement_backend": "MACOS_SAMPLED_PRESSURE",
+        "host_memory_free_percent_stop": 20,
+        "resource_amendment_status": "INDEPENDENTLY_APPROVED",
+        "resource_amendment_approver": "Independent reviewer fixture, not a human approval",
+        "resource_amendment_approval_record_url": "https://example.invalid/amendment-review",
+        "resource_amendment_sha256": "d" * 64,
+        "memory_limit_semantics": MACOS_MEMORY_SEMANTICS,
+        "macos_residual_risk_acceptance":
+            "TRANSIENT_RSS_PEAK_MAY_BE_MISSED_OS_OOM_AND_APP_DISRUPTION_REMAIN",
+        "macos_boot_volume_path": "/System/Volumes/Data",
+        "require_ac_power": True,
+        "require_thermal_normal": True,
+        "require_sleep_assertion": True,
+    })
+    policy["limits"].update({
+        "absolute_wall_seconds": 72 * 3600,
+        "aggregate_cpu_seconds": 288 * 3600,
+        "max_workers": 4,
+        "peak_aggregate_ram_bytes": 4 * 1024**3,
+        "temporary_disk_allocation_bytes": 4 * 1024**3,
+        "reserved_free_disk_bytes": 30 * 1024**3,
+        "measured_baseline_free_disk_bytes": 40 * 1024**3,
+        "measured_physical_ram_bytes": 16 * 1024**3,
+        "case_timeout_seconds": 12 * 3600,
+        "oracle_timeout_seconds": 1800,
+        "boot_reserve_free_disk_bytes": 30 * 1024**3,
+        "minimum_boot_free_disk_bytes": 40 * 1024**3,
+        "swap_growth_stop_bytes": 2 * 1024**3,
+        "swap_free_stop_bytes": 1 * 1024**3,
+        "minimum_swap_free_bytes": 2 * 1024**3,
+    })
+    return policy
 
 
 class BudgetPreflightTests(unittest.TestCase):
@@ -81,6 +121,28 @@ class BudgetPreflightTests(unittest.TestCase):
         p["formal_run_completed"] = True
         with self.assertRaises(ResourcePolicyError):
             validate_policy(p)
+
+    def test_macos_v2_schema_preserves_non_hard_memory_semantics(self):
+        policy = macos_policy()
+        result = validate_policy(policy)
+        self.assertEqual(result["memory_enforcement_backend"], "MACOS_SAMPLED_PRESSURE")
+        self.assertEqual(result["memory_limit_semantics"], MACOS_MEMORY_SEMANTICS)
+        self.assertTrue(result["independent_approval_still_must_be_verified"])
+
+    def test_macos_policy_rejects_unapproved_amendment_weak_limits_and_more_workers(self):
+        for mutate in (
+            lambda p: p.update(resource_amendment_status="DRAFT"),
+            lambda p: p.update(memory_limit_semantics="HARD_MEMORY_LIMIT"),
+            lambda p: p["limits"].update(max_workers=5),
+            lambda p: p["limits"].update(minimum_boot_free_disk_bytes=39 * 1024**3),
+            lambda p: p["limits"].update(swap_free_stop_bytes=2 * 1024**3),
+            lambda p: p["limits"].update(minimum_swap_free_bytes=1536 * 1024**2),
+            lambda p: p.update(require_sleep_assertion=False),
+        ):
+            with self.subTest(mutation=mutate), self.assertRaises(ResourcePolicyError):
+                policy = macos_policy()
+                mutate(policy)
+                validate_policy(policy)
 
 
 if __name__ == "__main__":

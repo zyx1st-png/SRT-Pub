@@ -113,50 +113,52 @@ class SignedToyLauncherTests(unittest.TestCase):
         approval_path.write_bytes(canonical(approval) + b"\n")
         return policy_path, approval_path, self.public_key, root / "run-one"
 
-    def test_signed_test_only_launch_runs_4_and_8_spawn_workers_under_watchdog(self):
-        for workers in (4, 8):
-            with self.subTest(workers=workers), tempfile.TemporaryDirectory() as tmp:
-                root = Path(tmp)
-                policy, approval, public_key, run_dir = self.make_authorization(
-                    root, workers=workers)
-                with self.trusted_test_key():
-                    result = launch_test_only(policy, approval, public_key, run_dir)
-                self.assertEqual(result["watchdog"]["status"], "completed",
-                                 result["watchdog"])
-                usage = result["watchdog"]["usage"]
-                self.assertEqual(usage["peak_compute_workers"], workers)
-                self.assertGreaterEqual(usage["peak_resource_trackers"], 1)
-                self.assertGreater(usage["peak_process_group_members"], workers + 1)
-                self.assertEqual(usage["memory_enforcement"], "SAMPLED_ONLY_NOT_HARD")
-                summary = json.loads((run_dir / "test_battery_summary.json").read_text())
-                case_path = run_dir / "cases/er-like-20/attempt-01/result.json"
-                case_bytes = case_path.read_bytes()
-                case = json.loads(case_bytes)
-                self.assertEqual(summary["status"], "TEST_ONLY_NOT_FORMAL_NC0A")
-                self.assertEqual(case["attempt"], 1)
-                self.assertEqual(case["oracle"]["attempts"], 1000)
-                self.assertEqual(len(case["chains"]), 8)
-                self.assertEqual(case["seed_root"], engine.ENGINEERING_TEST_SEED_ROOT)
-                self.assertEqual(case["mixing_status"], "MIXING-UNRESOLVED")
-                self.assertEqual(case["screen"]["mixing_status"], "MIXING-UNRESOLVED")
-                self.assertEqual(
-                    Path(str(case_path) + ".sha256").read_text().split()[0],
-                    hashlib.sha256(case_bytes).hexdigest())
-                with self.assertRaisesRegex(AuthorityLedgerError, "already complete"):
-                    with AuthorityLedger(
-                        root / "external-authority/ledger/authority.jsonl",
-                        root / "external-authority/anchor/tip.json") as ledger:
-                        ledger.begin(
-                            experiment_id=json.loads(policy.read_text())["test_experiment_id"],
-                            run_dir=run_dir,
-                            policy_sha256=hashlib.sha256(policy.read_bytes()).hexdigest(),
-                            approval_sha256=hashlib.sha256(approval.read_bytes()).hexdigest(),
-                            wall_budget_seconds=120, cpu_budget_seconds=600,
-                            max_invocations=1)
-                # The same signature cannot create a second result directory.
-                with self.trusted_test_key(), self.assertRaisesRegex(
-                        AuthorityLedgerError, "another run"):
-                    launch_test_only(policy, approval, public_key, root / "run-two")
+    def test_signed_test_only_launch_repeats_2_4_8_spawn_workers_under_watchdog(self):
+        for workers in (2, 4, 8):
+            for repetition in range(3):
+                with self.subTest(workers=workers, repetition=repetition), \
+                     tempfile.TemporaryDirectory() as tmp:
+                    root = Path(tmp)
+                    policy, approval, public_key, run_dir = self.make_authorization(
+                        root, workers=workers)
+                    with self.trusted_test_key():
+                        result = launch_test_only(policy, approval, public_key, run_dir)
+                    watchdog = result["watchdog"]
+                    self.assertEqual(watchdog["status"], "completed", watchdog)
+                    usage = watchdog["usage"]
+                    self.assertEqual(usage["peak_compute_workers"], workers)
+                    self.assertGreaterEqual(usage["peak_resource_trackers"], 1)
+                    self.assertGreater(usage["peak_process_group_members"], workers + 1)
+                    self.assertEqual(usage["memory_enforcement"], "SAMPLED_ONLY_NOT_HARD")
+                    summary = json.loads((run_dir / "test_battery_summary.json").read_text())
+                    case_path = run_dir / "cases/er-like-20/attempt-01/result.json"
+                    case_bytes = case_path.read_bytes()
+                    case = json.loads(case_bytes)
+                    self.assertEqual(summary["status"], "TEST_ONLY_NOT_FORMAL_NC0A")
+                    self.assertEqual(case["attempt"], 1)
+                    self.assertEqual(case["oracle"]["attempts"], 1000)
+                    self.assertEqual(len(case["chains"]), 8)
+                    self.assertEqual(case["seed_root"], engine.ENGINEERING_TEST_SEED_ROOT)
+                    self.assertEqual(case["mixing_status"], "MIXING-UNRESOLVED")
+                    self.assertEqual(case["screen"]["mixing_status"], "MIXING-UNRESOLVED")
+                    self.assertEqual(
+                        Path(str(case_path) + ".sha256").read_text().split()[0],
+                        hashlib.sha256(case_bytes).hexdigest())
+                    with self.assertRaisesRegex(AuthorityLedgerError, "already complete"):
+                        with AuthorityLedger(
+                            root / "external-authority/ledger/authority.jsonl",
+                            root / "external-authority/anchor/tip.json") as ledger:
+                            ledger.begin(
+                                experiment_id=json.loads(policy.read_text())["test_experiment_id"],
+                                run_dir=run_dir,
+                                policy_sha256=hashlib.sha256(policy.read_bytes()).hexdigest(),
+                                approval_sha256=hashlib.sha256(approval.read_bytes()).hexdigest(),
+                                wall_budget_seconds=120, cpu_budget_seconds=600,
+                                max_invocations=1)
+                    # The same signature cannot create a second result directory.
+                    with self.trusted_test_key(), self.assertRaisesRegex(
+                            AuthorityLedgerError, "another run"):
+                        launch_test_only(policy, approval, public_key, root / "run-two")
 
     def test_worker_crash_is_accounted_then_same_run_recovers_with_fixed_seeds(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -175,7 +177,7 @@ class SignedToyLauncherTests(unittest.TestCase):
             self.assertEqual(second["invocation"], 2)
             self.assertEqual(second["prior_usage"]["wall_seconds"],
                              first["watchdog"]["usage"]["wall_seconds"])
-            self.assertEqual(second["watchdog"]["status"], "completed")
+            self.assertEqual(second["watchdog"]["status"], "completed", second["watchdog"])
             result = json.loads((run_dir / "cases/er-like-20/attempt-02/result.json").read_text())
             self.assertEqual(result["attempt"], 2)
             self.assertEqual(result["seed_root"], engine.ENGINEERING_TEST_SEED_ROOT)
@@ -261,8 +263,8 @@ class SignedToyLauncherTests(unittest.TestCase):
             approval["signature_ed25519_base64"] = base64.b64encode(
                 signature.read_bytes()).decode("ascii")
             approval_path.write_bytes(canonical(approval) + b"\n")
-            env = {"NC0A_TRUSTED_REVIEWER_PUBKEY_SHA256": self.fingerprint}
-            with mock.patch.dict(os.environ, env), \
+            with mock.patch.object(engine, "_trusted_reviewer_fingerprint",
+                                   return_value=self.fingerprint), \
                  mock.patch.object(engine, "_assert_clean_source_tree"), \
                  mock.patch.object(engine, "_verify_runtime_lock"), \
                  mock.patch.object(engine, "_git_head", return_value=policy["target_repository_head_sha"]):
@@ -272,6 +274,69 @@ class SignedToyLauncherTests(unittest.TestCase):
             self.assertEqual(returned_policy["limits"], policy["limits"])
             self.assertEqual(returned_approval["resource_limits"], policy["limits"])
             self.assertNotIn("limits_recorded", returned_policy)
+
+    def test_macos_v2_signature_binds_amendment_and_non_hard_memory_semantics(self):
+        from test_nc0a_budget_preflight import macos_policy
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            policy = macos_policy()
+            head = engine._git_head()
+            policy["target_repository_head_sha"] = head
+            policy["runtime_dependency_lock_sha256"] = hashlib.sha256(
+                engine.RUNTIME_LOCK.read_bytes()).hexdigest()
+            policy_path = root / "macos-policy.json"
+            policy_path.write_bytes(canonical(policy) + b"\n")
+            approval = {
+                "purpose": engine.MACOS_APPROVAL_PURPOSE,
+                "decision": "APPROVED_FOR_FORMAL_NC0A",
+                "policy_sha256": hashlib.sha256(policy_path.read_bytes()).hexdigest(),
+                "target_repository_head_sha": head,
+                "formal_experiment_id": policy["formal_experiment_id"],
+                "preregistration_sha256": hashlib.sha256(
+                    engine.PREREGISTRATION.read_bytes()).hexdigest(),
+                "protocol_sha256": engine._protocol_hash(),
+                "protocol": engine.PROTOCOL,
+                "watchdog_contract_sha256": engine._watchdog_contract_hash(),
+                "watchdog_contract": engine.WATCHDOG_CONTRACT,
+                "watchdog_source_sha256": engine._watchdog_source_hash(),
+                "resource_limits": policy["limits"],
+                "independent_reviewer": "Temporary test signer; not a real approval",
+                "independent_review_url": "https://example.invalid/test-only",
+                "operational_attempts_per_case": 1,
+                "retry_rule": engine.PROTOCOL["recovery"],
+                "resource_amendment_status": policy["resource_amendment_status"],
+                "resource_amendment_approver": policy["resource_amendment_approver"],
+                "resource_amendment_sha256": policy["resource_amendment_sha256"],
+                "resource_amendment_approval_record_url":
+                    policy["resource_amendment_approval_record_url"],
+                "macos_memory_semantics": policy["memory_limit_semantics"],
+                "macos_residual_risk_acceptance":
+                    policy["macos_residual_risk_acceptance"],
+                "reviewer_key_fingerprint_sha256": self.fingerprint,
+            }
+            payload = root / "macos-approval.payload"
+            signature = root / "macos-approval.signature"
+            approval_path = root / "macos-approval.json"
+            payload.write_bytes(canonical(approval))
+            subprocess.run(["openssl", "pkeyutl", "-sign", "-inkey",
+                            str(self.private_key), "-rawin", "-in", str(payload),
+                            "-out", str(signature)], check=True, capture_output=True)
+            approval["signature_ed25519_base64"] = base64.b64encode(
+                signature.read_bytes()).decode("ascii")
+            approval_path.write_bytes(canonical(approval) + b"\n")
+            with mock.patch.object(engine, "_trusted_reviewer_fingerprint",
+                                   return_value=self.fingerprint), \
+                 mock.patch.object(engine, "_assert_clean_source_tree"), \
+                 mock.patch.object(engine, "_verify_runtime_lock"), \
+                 mock.patch.object(engine, "_git_head", return_value=head):
+                returned_policy, returned_approval = engine._verify_approval(
+                    policy_path, approval_path, self.public_key)
+            self.assertEqual(returned_policy["memory_enforcement_backend"],
+                             "MACOS_SAMPLED_PRESSURE")
+            self.assertEqual(returned_approval["macos_memory_semantics"],
+                             "SAMPLED_RSS_AND_HOST_PRESSURE_ABORTS_ONLY_NOT_OS_HARD_LIMIT")
+            self.assertEqual(returned_approval["reviewer_key_fingerprint_sha256"],
+                             self.fingerprint)
 
     def test_valid_hash_chain_with_deleted_terminal_is_rejected_by_external_anchor(self):
         with tempfile.TemporaryDirectory() as tmp:
