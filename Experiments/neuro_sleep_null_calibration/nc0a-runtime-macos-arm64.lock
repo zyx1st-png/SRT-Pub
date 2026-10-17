@@ -1,0 +1,8 @@
+# Engineering-test runtime pinned from the current Apple Silicon workspace.
+# A formal run is rejected if any of these differ; changing this lock requires
+# a new independent review and an approval bound to its SHA-256.
+# python==3.11.15
+# macOS==15.7.4
+# architecture==arm64
+numpy==2.3.5
+scipy==1.17.1
