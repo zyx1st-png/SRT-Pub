@@ -347,7 +347,7 @@ Demotion is not deletion. It means:
 - its voice becomes more honest;
 - domain files lose permission to quote it as primitive.
 
-This is the default response to ambiguity **in the claim's asserted level**, not a default instruction to weaken its substantive meaning. For a substantive demotion/revision, distinguish (a) wrong or unsupported asserted force, (b) warranted evidence-scoped correction, and (c) an independently viable question or candidate relation that remains exploratory. Preserve the original proposition and its provenance where relevant; do not convert lack of verification into disproof, or a local no-increment result into global deletion. Do not retain a disproven proposition as if it were still established.
+This is the default response to ambiguity **in the claim's asserted level**; where warranted, demotion also requires narrowing the actual proposition to a supported scope. For a substantive demotion/revision, distinguish (a) wrong or unsupported asserted force, (b) warranted evidence-scoped correction including genuine semantic narrowing, and (c) an independently viable question or candidate relation that remains exploratory. Preserve the original proposition and its provenance where relevant; do not convert lack of verification into disproof, or a local no-increment result into global deletion. Do not retain a disproven proposition as if it were still established.
 
 ---
 
