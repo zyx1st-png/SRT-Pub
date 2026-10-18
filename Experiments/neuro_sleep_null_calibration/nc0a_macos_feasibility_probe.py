@@ -29,6 +29,7 @@ from synthetic_graphs import SyntheticGraph, make_synthetic_graph, synthetic_see
 
 
 PROBE_ROOT = 8062026
+R11_LONG_PROBE_ROOT = 20261018
 PROBE_N = 3900
 PROBE_CHAIN_INDEX = 0
 MAX_WORKER_PROPOSALS = 5000
@@ -39,6 +40,13 @@ def _usage() -> dict:
     usage = resource.getrusage(resource.RUSAGE_SELF)
     return {"cpu_seconds": usage.ru_utime + usage.ru_stime,
             "maxrss_bytes": int(usage.ru_maxrss)}  # Darwin reports bytes.
+
+
+def _checkpoint_schedule(multiplier: int) -> tuple[int, ...]:
+    allowed = (1, 2, 4, 8, 32)
+    if multiplier not in allowed:
+        raise ValueError("Unsupported probe checkpoint multiplier")
+    return tuple(value for value in allowed if value <= multiplier)
 
 
 def _worker(n: int, family: str, edges: tuple, index: int, attempts: int) -> dict:
@@ -98,8 +106,7 @@ def chain_probe(family: str, report_dir: Path, checkpoint_multiplier: int) -> di
     fixture = make_synthetic_graph(PROBE_N, family, root=PROBE_ROOT)
     fixture_seconds = time.perf_counter() - started
     attempts = checkpoint_multiplier * fixture.m
-    checkpoints = tuple(value for value in (1, 2, 4, 8)
-                        if value <= checkpoint_multiplier)
+    checkpoints = _checkpoint_schedule(checkpoint_multiplier)
     chain = synthetic_chain(PROBE_N, family, PROBE_CHAIN_INDEX,
                             root=PROBE_ROOT, fixture=fixture,
                             checkpoints=checkpoints,
@@ -129,15 +136,15 @@ def chain_probe(family: str, report_dir: Path, checkpoint_multiplier: int) -> di
 
 
 def _parallel_chain_worker(fixture: SyntheticGraph, index: int,
-                           checkpoint_multiplier: int) -> dict:
+                           checkpoint_multiplier: int, seed_root: int,
+                           max_wall_seconds: int) -> dict:
     before = _usage()
     started = time.perf_counter()
-    checkpoints = tuple(value for value in (1, 2, 4, 8)
-                        if value <= checkpoint_multiplier)
+    checkpoints = _checkpoint_schedule(checkpoint_multiplier)
     chain = synthetic_chain(
-        fixture.n, fixture.family, index, root=PROBE_ROOT,
+        fixture.n, fixture.family, index, root=seed_root,
         fixture=fixture, checkpoints=checkpoints,
-        max_wall_seconds=360,
+        max_wall_seconds=max_wall_seconds,
         max_proposals=checkpoint_multiplier * fixture.m)
     after = _usage()
     stable = {key: value for key, value in chain.items()
@@ -151,12 +158,20 @@ def _parallel_chain_worker(fixture: SyntheticGraph, index: int,
 
 
 def parallel_chain_probe(family: str, workers: int, report_dir: Path,
-                          checkpoint_multiplier: int) -> dict:
+                         checkpoint_multiplier: int, *,
+                         seed_root: int = PROBE_ROOT,
+                         max_wall_seconds: int = 360) -> dict:
+    if checkpoint_multiplier == 32:
+        if (seed_root != R11_LONG_PROBE_ROOT or family != "factor-mst" or
+                workers != 4 or max_wall_seconds != 1200):
+            raise ValueError("32E is reserved for the fixed four-worker R11 factor-MST probe")
+    elif (seed_root != PROBE_ROOT or checkpoint_multiplier not in (1, 2, 4, 8) or
+          max_wall_seconds != 360):
+        raise ValueError("Non-long probes remain on the bounded 1/2/4/8E profile")
     started = time.perf_counter()
-    fixture = make_synthetic_graph(PROBE_N, family, root=PROBE_ROOT)
+    fixture = make_synthetic_graph(PROBE_N, family, root=seed_root)
     fixture_seconds = time.perf_counter() - started
-    checkpoints = tuple(value for value in (1, 2, 4, 8)
-                        if value <= checkpoint_multiplier)
+    checkpoints = _checkpoint_schedule(checkpoint_multiplier)
     report_dir.mkdir(parents=True, exist_ok=True)
     registry = execution_engine._ACTIVE_PROCESS_ROLE_REGISTRY
     try:
@@ -165,7 +180,8 @@ def parallel_chain_probe(family: str, workers: int, report_dir: Path,
             futures = {}
             for index in range(workers):
                 futures[pool.submit(_parallel_chain_worker, fixture, index,
-                                    checkpoint_multiplier)] = index
+                                    checkpoint_multiplier, seed_root,
+                                    max_wall_seconds)] = index
                 if registry is not None:
                     registry.sync_pool(pool)
             rows = []
@@ -203,7 +219,7 @@ def parallel_chain_probe(family: str, workers: int, report_dir: Path,
     return {"mode": "parallel-chain", "family": family, "n": fixture.n,
             "fixture_sha256": fixture.fingerprint(), "edges": fixture.m,
             "workers": workers, "checkpoint_multipliers": checkpoints,
-            "seed_root": PROBE_ROOT, "total_attempts": total,
+            "seed_root": seed_root, "total_attempts": total,
             "fixture_generation_seconds": fixture_seconds,
             "wall_seconds_including_generation_pool_and_result_writes": elapsed,
             "aggregate_proposals_per_wall_second": total / elapsed,
@@ -229,8 +245,8 @@ def configure_watchdog_process_identity() -> None:
 def main() -> int:
     configure_watchdog_process_identity()
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=("parallel", "chain", "parallel-chain"))
-    parser.add_argument("--family", choices=("ba-like", "factor-mst"), required=True)
+    parser.add_argument("mode", choices=("parallel", "chain", "parallel-chain", "long-chain"))
+    parser.add_argument("--family", choices=("ba-like", "factor-mst"))
     parser.add_argument("--workers", type=int, choices=(1, 2, 4, 8))
     parser.add_argument("--attempts-per-worker", type=int, default=MAX_WORKER_PROPOSALS)
     parser.add_argument("--checkpoint-multiplier", type=int, choices=(1, 2, 4, 8), default=4)
@@ -238,24 +254,39 @@ def main() -> int:
     args = parser.parse_args()
     if sys.platform != "darwin" or platform.machine() != "arm64":
         parser.error("This bounded probe is reviewed only for macOS/Apple Silicon")
-    if args.mode == "parallel":
+    if args.mode == "long-chain":
+        if (args.family != "factor-mst" or args.workers != 4 or
+                args.report_dir is None or args.attempts_per_worker != MAX_WORKER_PROPOSALS or
+                args.checkpoint_multiplier != 4):
+            parser.error("long-chain is fixed to one N=3900 factor-MST, four chains, fixed seed, and 32E")
+        result = parallel_chain_probe(
+            "factor-mst", 4, args.report_dir, 32,
+            seed_root=R11_LONG_PROBE_ROOT, max_wall_seconds=1200)
+    elif args.mode == "parallel":
+        if args.family is None:
+            parser.error("parallel mode requires --family")
         if args.workers is None or args.report_dir is not None:
             parser.error("Parallel probe needs --workers and no --report-dir")
         if not 1 <= args.attempts_per_worker <= MAX_WORKER_PROPOSALS:
             parser.error("Proposal count exceeds the nonformal cap")
         result = parallel_probe(args.family, args.workers, args.attempts_per_worker)
     elif args.mode == "chain":
+        if args.family is None:
+            parser.error("chain mode requires --family")
         if args.workers is not None or args.report_dir is None:
             parser.error("Chain probe needs --report-dir and no --workers")
         result = chain_probe(args.family, args.report_dir, args.checkpoint_multiplier)
     else:
+        if args.family is None:
+            parser.error("parallel-chain mode requires --family")
         if args.workers is None or not 1 <= args.workers <= 4 or args.report_dir is None:
             parser.error("Parallel-chain probe needs 1..4 workers and a report directory")
         result = parallel_chain_probe(args.family, args.workers, args.report_dir,
                                       args.checkpoint_multiplier)
-    result.update({"status": "NONFORMAL_ENGINEERING_PROBE", "seed_root": PROBE_ROOT,
+    result.update({"status": "NONFORMAL_ENGINEERING_PROBE",
                    "host": platform.platform(), "python": sys.version.split()[0],
                    "pid": os.getpid()})
+    result.setdefault("seed_root", PROBE_ROOT)
     print(json.dumps(result, sort_keys=True, allow_nan=False), flush=True)
     return 0
 

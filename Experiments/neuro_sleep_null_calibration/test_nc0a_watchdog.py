@@ -152,6 +152,79 @@ class WatchdogTests(unittest.TestCase):
             with self.assertRaisesRegex(Exception, "swap free-space launch minimum"):
                 validate_macos_sampled_backend(values)
 
+    @unittest.skipUnless(sys.platform == "darwin", "requires macOS V3 preflight semantics")
+    def test_macos_v3_uses_swap_growth_and_vm_volume_without_free_swap_gate(self):
+        from nc0a_watchdog import validate_macos_sampled_backend
+        from types import SimpleNamespace
+        native = {"swap_total_bytes": 12 * 1024**3,
+                  "swap_used_bytes": 11 * 1024**3,
+                  "swap_free_bytes": 256 * 1024**2,
+                  "ac_power": True, "thermal_normal": True,
+                  "thermal_warning_level": 0, "performance_warning_level": 0}
+        values = limits(
+            memory_enforcement_backend="MACOS_SAMPLED_PRESSURE",
+            max_workers=4, host_memory_free_percent_stop=20,
+            boot_volume_path="/System/Volumes/Data",
+            boot_reserve_free_disk_bytes=30 * 1024**3,
+            minimum_boot_free_disk_bytes=40 * 1024**3,
+            swap_volume_path="/System/Volumes/VM",
+            swap_volume_reserve_free_disk_bytes=30 * 1024**3,
+            minimum_swap_volume_free_disk_bytes=40 * 1024**3,
+            swap_growth_stop_bytes=2 * 1024**3,
+            require_ac_power=True, require_thermal_normal=True,
+            require_sleep_assertion=True)
+        original = shutil.disk_usage
+        with mock.patch("nc0a_watchdog.sample_macos_native_state", return_value=native), \
+             mock.patch("nc0a_watchdog.shutil.disk_usage",
+                        side_effect=lambda path: SimpleNamespace(free=50 * 1024**3)
+                        if str(path) in ("/System/Volumes/Data", "/System/Volumes/VM")
+                        else original(path)):
+            result = validate_macos_sampled_backend(values)
+        self.assertEqual(result["swap_free_bytes"], 256 * 1024**2)
+        self.assertEqual(result["swap_volume_free_bytes"], 50 * 1024**3)
+
+    @unittest.skipUnless(sys.platform == "darwin", "requires macOS VM-volume monitoring")
+    def test_macos_v3_vm_volume_reserve_breach_kills_process_group(self):
+        from types import SimpleNamespace
+        normal = {"swap_total_bytes": 12 * 1024**3,
+                  "swap_used_bytes": 1 * 1024**3,
+                  "swap_free_bytes": 11 * 1024**3,
+                  "ac_power": True, "thermal_normal": True,
+                  "thermal_warning_level": 0, "performance_warning_level": 0}
+        native_limits = limits(
+            wall_seconds=15, cpu_seconds=120, aggregate_rss_bytes=2 * 1024**3,
+            max_workers=4, memory_enforcement_backend="MACOS_SAMPLED_PRESSURE",
+            host_memory_free_percent_stop=10,
+            boot_volume_path="/System/Volumes/Data",
+            boot_reserve_free_disk_bytes=10 * 1024**3,
+            minimum_boot_free_disk_bytes=20 * 1024**3,
+            swap_volume_path="/System/Volumes/VM",
+            swap_volume_reserve_free_disk_bytes=10 * 1024**3,
+            minimum_swap_volume_free_disk_bytes=20 * 1024**3,
+            swap_growth_stop_bytes=4 * 1024**3,
+            require_ac_power=True, require_thermal_normal=True,
+            require_sleep_assertion=True)
+        original = shutil.disk_usage
+        calls = {"vm": 0}
+
+        def disk_usage(path):
+            if str(path) == "/System/Volumes/Data":
+                return SimpleNamespace(free=40 * 1024**3)
+            if str(path) == "/System/Volumes/VM":
+                calls["vm"] += 1
+                free = 40 * 1024**3 if calls["vm"] <= 1 else 9 * 1024**3
+                return SimpleNamespace(free=free)
+            return original(path)
+
+        with tempfile.TemporaryDirectory() as tmp, \
+             mock.patch("nc0a_watchdog.sample_macos_native_state", return_value=normal), \
+             mock.patch("nc0a_watchdog.shutil.disk_usage", side_effect=disk_usage):
+            result = supervise([sys.executable, "-c", "import time; time.sleep(20)"],
+                               run_dir=tmp, limits=native_limits)
+        self.assertEqual(result["status"], "stopped")
+        self.assertEqual(result["reason"], "VM_VOLUME_FREE_DISK_RESERVE_BREACH")
+        self.assertGreaterEqual(calls["vm"], 2)
+
     @unittest.skipUnless(sys.platform == "darwin", "requires macOS Watchdog execution")
     def test_macos_swap_free_reserve_breach_kills_the_process_group(self):
         normal = {"swap_total_bytes": 12 * 1024**3,

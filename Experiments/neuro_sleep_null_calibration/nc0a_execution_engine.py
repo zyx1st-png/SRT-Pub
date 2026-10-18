@@ -30,7 +30,9 @@ import time
 import traceback
 from typing import Iterable
 
-from nc0a_budget_preflight import validate_policy
+from nc0a_budget_preflight import (
+    MACOS_SWAP_TELEMETRY_SEMANTICS, POLICY_V3_MACOS, validate_policy,
+)
 from nc0a_contract_runner import (
     CHECKPOINTS, CHAIN_COUNT, FORMAL_N, ORACLE_PROPOSALS,
     oracle_trace, save_report_once, screen_case,
@@ -71,10 +73,11 @@ WATCHDOG_CONTRACT = {
     "termination": "dedicated process group; SIGTERM 0.5s then SIGKILL",
     "monitor_loss": "runner-side parent-PID lease kills the entire process group if watchdog disappears",
     "audit": "fsynced append-only hash chain; no overwrite; unique runner stdout per invocation",
-    "macos_controls": "AC power, caffeinate system-sleep assertion, pmset thermal status, sampled swap-growth plus free-swap reserve, and independent internal boot/output disk reserves",
+    "macos_controls": "AC power, caffeinate system-sleep assertion, pmset thermal status, sampled current swap-pool telemetry and used-growth abort, V2 free-swap reserve only for V2, internal Data/VM volume reserves, and output-disk reserve",
 }
 APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V1"
 MACOS_APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V2_MACOS"
+MACOS_V3_APPROVAL_PURPOSE = "NC0A_FORMAL_EXECUTION_APPROVAL_V3_MACOS"
 ENGINEERING_TEST_APPROVAL_PURPOSE = "NC0A_BOUNDED_ENGINEERING_TEST_APPROVAL_V1"
 MODULE_DIR = Path(__file__).resolve().parent
 REPOSITORY_ROOT = MODULE_DIR.parents[1]
@@ -405,9 +408,12 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     signature_encoded = signed.pop("signature_ed25519_base64", None)
     if not isinstance(signature_encoded, str):
         raise ExecutionError("Detached reviewer signature is missing")
-    expected_purpose = (MACOS_APPROVAL_PURPOSE
-                        if raw_policy.get("memory_enforcement_backend") == "MACOS_SAMPLED_PRESSURE"
-                        else APPROVAL_PURPOSE)
+    if raw_policy.get("purpose") == POLICY_V3_MACOS:
+        expected_purpose = MACOS_V3_APPROVAL_PURPOSE
+    elif raw_policy.get("memory_enforcement_backend") == "MACOS_SAMPLED_PRESSURE":
+        expected_purpose = MACOS_APPROVAL_PURPOSE
+    else:
+        expected_purpose = APPROVAL_PURPOSE
     if approval.get("purpose") != expected_purpose:
         raise ExecutionError("Wrong formal approval purpose")
     if approval.get("decision") != "APPROVED_FOR_FORMAL_NC0A":
@@ -439,7 +445,7 @@ def _verify_approval(policy_path: Path, approval_path: Path,
     review_url = approval.get("independent_review_url")
     if not isinstance(reviewer, str) or not reviewer.strip() or not isinstance(review_url, str) or not review_url.startswith("https://"):
         raise ExecutionError("Independent reviewer identity and review URL are required")
-    if expected_purpose == MACOS_APPROVAL_PURPOSE:
+    if expected_purpose in (MACOS_APPROVAL_PURPOSE, MACOS_V3_APPROVAL_PURPOSE):
         bound_fields = {
             "resource_amendment_status": "INDEPENDENTLY_APPROVED",
             "resource_amendment_approver": raw_policy.get("resource_amendment_approver"),
@@ -454,6 +460,12 @@ def _verify_approval(policy_path: Path, approval_path: Path,
         for field, expected_value in bound_fields.items():
             if approval.get(field) != expected_value:
                 raise ExecutionError("macOS signed approval is missing/changing " + field)
+        if raw_policy.get("purpose") == POLICY_V3_MACOS:
+            if approval.get("macos_swap_telemetry_semantics") != \
+                    raw_policy.get("macos_swap_telemetry_semantics") or \
+                    approval.get("macos_swap_telemetry_semantics") != \
+                    MACOS_SWAP_TELEMETRY_SEMANTICS:
+                raise ExecutionError("V3 approval does not bind current-pool-only swap telemetry semantics")
     if approval.get("operational_attempts_per_case") not in (1, 2):
         raise ExecutionError("Only one or two prospectively approved operational attempts are supported")
     if approval.get("retry_rule") != PROTOCOL["recovery"]:
@@ -977,6 +989,11 @@ def _limits_from_policy(policy: dict) -> WatchdogLimits:
         boot_volume_path=policy.get("macos_boot_volume_path") if macos else None,
         boot_reserve_free_disk_bytes=caps.get("boot_reserve_free_disk_bytes") if macos else None,
         minimum_boot_free_disk_bytes=caps.get("minimum_boot_free_disk_bytes") if macos else None,
+        swap_volume_path=policy.get("macos_swap_volume_path") if macos else None,
+        swap_volume_reserve_free_disk_bytes=caps.get(
+            "swap_volume_reserve_free_disk_bytes") if macos else None,
+        minimum_swap_volume_free_disk_bytes=caps.get(
+            "minimum_swap_volume_free_disk_bytes") if macos else None,
         swap_growth_stop_bytes=caps.get("swap_growth_stop_bytes") if macos else None,
         swap_free_stop_bytes=caps.get("swap_free_stop_bytes") if macos else None,
         minimum_swap_free_bytes=caps.get("minimum_swap_free_bytes") if macos else None,
@@ -1267,11 +1284,9 @@ def launch_formal(policy_path: str | Path, approval_path: str | Path,
         limits = WatchdogLimits(**{**asdict(limits),
                                    "wall_seconds": limits.wall_seconds - begin["wall_seconds"],
                                    "cpu_seconds": limits.cpu_seconds - begin["cpu_seconds"]})
-        runner_command = [sys.executable, str(Path(__file__).resolve()),
-                          "--runner-internal", str(root), str(policy_path.resolve()),
-                          policy_sha, str(approval_path.resolve()),
-                          str(public_key_path.resolve()),
-                          str(approval["operational_attempts_per_case"])]
+        runner_command = _formal_runner_command(
+            root, policy_path, policy_sha, approval_path, public_key_path,
+            approval["operational_attempts_per_case"])
         result = _supervise_named(runner_command, root, limits, begin["invocation"])
         ledger.finish(experiment_id=policy["formal_experiment_id"],
                       invocation=begin["invocation"], status=result["status"],
@@ -1284,6 +1299,16 @@ def launch_formal(policy_path: str | Path, approval_path: str | Path,
                 "authorization": {"approval_sha256": sha256(approval_path.read_bytes()).hexdigest(),
                                   "policy_sha256": policy_sha,
                                   "reviewer": approval["independent_reviewer"]}}
+
+
+def _formal_runner_command(root: Path, policy_path: Path, policy_sha: str,
+                           approval_path: Path, public_key_path: Path,
+                           max_attempts: int) -> list[str]:
+    """Production science runner; tests may replace only this executor seam."""
+    return [sys.executable, str(Path(__file__).resolve()),
+            "--runner-internal", str(root), str(policy_path.resolve()),
+            policy_sha, str(approval_path.resolve()), str(public_key_path.resolve()),
+            str(max_attempts)]
 
 
 def launch_test_only(policy_path: str | Path, approval_path: str | Path,

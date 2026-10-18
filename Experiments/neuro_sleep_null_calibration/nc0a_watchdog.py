@@ -175,6 +175,9 @@ class WatchdogLimits:
     boot_volume_path: str | None = None
     boot_reserve_free_disk_bytes: int | None = None
     minimum_boot_free_disk_bytes: int | None = None
+    swap_volume_path: str | None = None
+    swap_volume_reserve_free_disk_bytes: int | None = None
+    minimum_swap_volume_free_disk_bytes: int | None = None
     swap_growth_stop_bytes: int | None = None
     swap_free_stop_bytes: int | None = None
     minimum_swap_free_bytes: int | None = None
@@ -207,15 +210,35 @@ class WatchdogLimits:
             if self.max_workers > 4:
                 raise ValueError("macOS sampled-pressure policy is capped at four workers")
             for name in ("boot_reserve_free_disk_bytes", "minimum_boot_free_disk_bytes",
-                         "swap_growth_stop_bytes", "swap_free_stop_bytes",
-                         "minimum_swap_free_bytes"):
+                         "swap_growth_stop_bytes"):
                 value = getattr(self, name)
                 if type(value) is not int or value <= 0:
                     raise ValueError(f"{name} is required by the macOS resource policy")
-            if self.swap_free_stop_bytes >= self.minimum_swap_free_bytes:
-                raise ValueError("Swap-free stop reserve must be below the launch minimum")
+            if (self.swap_free_stop_bytes is None) != (self.minimum_swap_free_bytes is None):
+                raise ValueError("Legacy free-swap limits must be both present or both absent")
+            if self.swap_free_stop_bytes is not None:
+                if (type(self.swap_free_stop_bytes) is not int or
+                        type(self.minimum_swap_free_bytes) is not int or
+                        self.swap_free_stop_bytes <= 0 or self.minimum_swap_free_bytes <= 0 or
+                        self.swap_free_stop_bytes >= self.minimum_swap_free_bytes):
+                    raise ValueError("Invalid legacy free-swap launch/stop thresholds")
             if self.boot_volume_path != "/System/Volumes/Data":
                 raise ValueError("macOS policy must monitor the internal Data/boot volume")
+            vm_values = (self.swap_volume_path,
+                         self.swap_volume_reserve_free_disk_bytes,
+                         self.minimum_swap_volume_free_disk_bytes)
+            if any(value is not None for value in vm_values) and any(
+                    value is None for value in vm_values):
+                raise ValueError("VM-volume path and both disk thresholds must be supplied together")
+            if all(value is not None for value in vm_values):
+                if (self.swap_volume_path != "/System/Volumes/VM" or
+                        type(self.swap_volume_reserve_free_disk_bytes) is not int or
+                        type(self.minimum_swap_volume_free_disk_bytes) is not int or
+                        self.swap_volume_reserve_free_disk_bytes <= 0 or
+                        self.minimum_swap_volume_free_disk_bytes <= 0 or
+                        self.swap_volume_reserve_free_disk_bytes >=
+                        self.minimum_swap_volume_free_disk_bytes):
+                    raise ValueError("Invalid internal VM-volume launch/reserve settings")
             if self.host_memory_free_percent_stop is None:
                 raise ValueError("macOS policy requires a host-memory-pressure threshold")
             if not (self.require_ac_power and self.require_thermal_normal and
@@ -465,7 +488,12 @@ def parse_macos_swap_used_bytes(output: str) -> int:
 
 
 def sample_macos_native_state() -> dict:
-    """Sample host swap, power and thermal telemetry; none is a hard RAM cap."""
+    """Sample current swap-pool telemetry, power and thermal state.
+
+    ``vm.swapusage.free`` is current availability in the configured pool; it
+    does not promise future swap capacity. None of these samples is a hard RAM
+    cap or an OS-enforced memory limit.
+    """
     if sys.platform != "darwin":
         raise WatchdogError("macOS native resource telemetry is unavailable")
     swap = subprocess.run(["/usr/sbin/sysctl", "vm.swapusage"], check=True,
@@ -501,7 +529,8 @@ def validate_macos_sampled_backend(limits: WatchdogLimits) -> dict:
     if sys.platform != "darwin" or os.uname().machine != "arm64":
         raise WatchdogError("MACOS_SAMPLED_PRESSURE is locked to Apple Silicon macOS")
     state = sample_macos_native_state()
-    if state["swap_free_bytes"] < limits.minimum_swap_free_bytes:
+    if (limits.minimum_swap_free_bytes is not None and
+            state["swap_free_bytes"] < limits.minimum_swap_free_bytes):
         raise WatchdogError("macOS swap free-space launch minimum is not met")
     if not state["ac_power"]:
         raise WatchdogError("macOS run requires AC power")
@@ -512,7 +541,15 @@ def validate_macos_sampled_backend(limits: WatchdogLimits) -> dict:
         raise WatchdogError("Internal boot-volume free space is below the signed launch minimum")
     if boot_free < limits.boot_reserve_free_disk_bytes:
         raise WatchdogError("Internal boot-volume reserve is already breached")
-    return {**state, "boot_volume_free_bytes": boot_free}
+    result = {**state, "boot_volume_free_bytes": boot_free}
+    if limits.swap_volume_path is not None:
+        swap_volume_free = shutil.disk_usage(limits.swap_volume_path).free
+        if swap_volume_free < limits.minimum_swap_volume_free_disk_bytes:
+            raise WatchdogError("Internal VM-volume launch free-space minimum is not met")
+        if swap_volume_free < limits.swap_volume_reserve_free_disk_bytes:
+            raise WatchdogError("Internal VM-volume free-space reserve is already breached")
+        result["swap_volume_free_bytes"] = swap_volume_free
+    return result
 
 
 def _start_sleep_assertion(watchdog_pid: int, required: bool) -> subprocess.Popen | None:
@@ -729,8 +766,13 @@ def supervise(command: list[str], *, run_dir: str | Path,
     start_utc, start_mono = wall_now()
     boot_free = macos_initial["boot_volume_free_bytes"] if macos_initial else None
     boot_free_min = boot_free
+    swap_volume_free_min = (macos_initial.get("swap_volume_free_bytes")
+                            if macos_initial else None)
     swap_initial = macos_initial["swap_used_bytes"] if macos_initial else None
     swap_peak = swap_initial
+    swap_total_initial = macos_initial["swap_total_bytes"] if macos_initial else None
+    swap_total_peak = swap_total_initial
+    swap_free_initial = macos_initial["swap_free_bytes"] if macos_initial else None
     swap_free_min = macos_initial["swap_free_bytes"] if macos_initial else None
     latest_macos_state = macos_initial
     last_native_sample = start_mono
@@ -851,8 +893,19 @@ def supervise(command: list[str], *, run_dir: str | Path,
                         last_native_sample = now_mono
                         swap_peak = max(swap_peak or 0,
                                         latest_macos_state["swap_used_bytes"])
+                        swap_total_peak = max(swap_total_peak or 0,
+                                              latest_macos_state["swap_total_bytes"])
                         swap_free_min = min(swap_free_min or latest_macos_state[
                             "swap_free_bytes"], latest_macos_state["swap_free_bytes"])
+                    if limits.swap_volume_path is not None:
+                        swap_volume_free = shutil.disk_usage(limits.swap_volume_path).free
+                        swap_volume_free_min = min(
+                            swap_volume_free_min or swap_volume_free, swap_volume_free)
+                        swap_volume_stop = limits.swap_volume_reserve_free_disk_bytes + max(
+                            64 * 1024 * 1024,
+                            int(limits.swap_volume_reserve_free_disk_bytes * 0.05))
+                        if swap_volume_free <= swap_volume_stop:
+                            stop_reason = stop_reason or "VM_VOLUME_FREE_DISK_RESERVE_BREACH"
                     if sleep_assertion is None or sleep_assertion.poll() is not None:
                         stop_reason = stop_reason or "SLEEP_ASSERTION_LOST"
                     if not latest_macos_state["ac_power"]:
@@ -862,7 +915,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
                     if (swap_initial is not None and swap_peak is not None and
                         swap_peak - swap_initial > limits.swap_growth_stop_bytes):
                         stop_reason = stop_reason or "SWAP_GROWTH_LIMIT"
-                    if latest_macos_state["swap_free_bytes"] <= limits.swap_free_stop_bytes:
+                    if (limits.swap_free_stop_bytes is not None and
+                            latest_macos_state["swap_free_bytes"] <= limits.swap_free_stop_bytes):
                         stop_reason = stop_reason or "SWAP_FREE_RESERVE_BREACH"
                     boot_free_stop = limits.boot_reserve_free_disk_bytes + max(
                         64 * 1024 * 1024,
@@ -968,7 +1022,11 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                  "boot_volume_free_bytes_min": boot_free_min,
                                  "swap_used_bytes_initial": swap_initial,
                                  "swap_used_bytes_peak_sampled": swap_peak,
+                                 "swap_total_bytes_initial": swap_total_initial,
+                                 "swap_total_bytes_peak_sampled": swap_total_peak,
+                                 "swap_free_bytes_initial": swap_free_initial,
                                  "swap_free_bytes_min_sampled": swap_free_min,
+                                 "vm_volume_free_bytes_min": swap_volume_free_min,
                                  "sleep_assertion": "CAFFEINATE_ACTIVE" if sleep_assertion else "NOT_REQUESTED",
                                  "macos_native_state": latest_macos_state,
                                  "cgroup_memory_peak_bytes": cgroup_peak,
@@ -1027,7 +1085,11 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                "boot_volume_free_bytes_min": boot_free_min,
                                "swap_used_bytes_initial": swap_initial,
                                "swap_used_bytes_peak_sampled": swap_peak,
+                               "swap_total_bytes_initial": swap_total_initial,
+                               "swap_total_bytes_peak_sampled": swap_total_peak,
+                               "swap_free_bytes_initial": swap_free_initial,
                                "swap_free_bytes_min_sampled": swap_free_min,
+                               "vm_volume_free_bytes_min": swap_volume_free_min,
                                "sleep_assertion": "CAFFEINATE_ACTIVE" if sleep_assertion else "NOT_REQUESTED",
                                "macos_native_state": latest_macos_state,
                                "cgroup_memory_peak_bytes": cgroup_peak,

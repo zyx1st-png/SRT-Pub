@@ -39,9 +39,13 @@ POSITIVE_INTEGERS = (
 
 POLICY_V1 = "NC0A_FORMAL_SYNTHETIC_RESOURCE_POLICY_V1"
 POLICY_V2_MACOS = "NC0A_FORMAL_SYNTHETIC_RESOURCE_POLICY_V2_MACOS"
+POLICY_V3_MACOS = "NC0A_FORMAL_SYNTHETIC_RESOURCE_POLICY_V3_MACOS"
 MACOS_MEMORY_SEMANTICS = "SAMPLED_RSS_AND_HOST_PRESSURE_ABORTS_ONLY_NOT_OS_HARD_LIMIT"
+MACOS_SWAP_TELEMETRY_SEMANTICS = (
+    "CURRENT_CONFIGURED_SWAP_POOL_USAGE_TELEMETRY_ONLY_NOT_FUTURE_PAGING_CAPACITY")
 MIN_MACOS_BOOT_FREE_BYTES = 40 * 1024**3
 MIN_MACOS_BOOT_RESERVE_BYTES = 30 * 1024**3
+MIN_MACOS_SWAP_VOLUME_RESERVE_BYTES = 30 * 1024**3
 MIN_MACOS_SWAP_FREE_BYTES = 2 * 1024**3
 MIN_MACOS_SWAP_FREE_STOP_BYTES = 1 * 1024**3
 
@@ -55,7 +59,7 @@ def _positive_int(payload: dict, field: str) -> int:
 
 def validate_policy(policy: dict) -> dict:
     purpose = policy.get("purpose")
-    if purpose not in (POLICY_V1, POLICY_V2_MACOS):
+    if purpose not in (POLICY_V1, POLICY_V2_MACOS, POLICY_V3_MACOS):
         raise ResourcePolicyError("Wrong resource policy purpose")
     if policy.get("nc0a_protocol_decision") != "CONDITIONALLY_GO_AFTER_INDEPENDENT_REVIEW":
         raise ResourcePolicyError("Cannot silently claim an unconditional GO")
@@ -92,7 +96,7 @@ def validate_policy(policy: dict) -> dict:
     backend = policy["memory_enforcement_backend"]
     if purpose == POLICY_V1 and backend != "CGROUP_V2_HARD":
         raise ResourcePolicyError("Policy V1 is reserved for the cgroup-v2 hard-memory backend")
-    if purpose == POLICY_V2_MACOS and backend != "MACOS_SAMPLED_PRESSURE":
+    if purpose in (POLICY_V2_MACOS, POLICY_V3_MACOS) and backend != "MACOS_SAMPLED_PRESSURE":
         raise ResourcePolicyError("Policy V2 is reserved for the explicit macOS sampled-pressure backend")
     if (type(policy.get("host_memory_free_percent_stop")) is not int or
         not 1 <= policy["host_memory_free_percent_stop"] <= 100):
@@ -150,8 +154,7 @@ def validate_policy(policy: dict) -> dict:
         if policy["host_memory_free_percent_stop"] < 20:
             raise ResourcePolicyError("macOS host-pressure stop may not be weaker than 20% free")
         for name in ("boot_reserve_free_disk_bytes", "minimum_boot_free_disk_bytes",
-                     "swap_growth_stop_bytes", "swap_free_stop_bytes",
-                     "minimum_swap_free_bytes"):
+                     "swap_growth_stop_bytes"):
             _positive_int(caps, name)
         if caps["minimum_boot_free_disk_bytes"] < MIN_MACOS_BOOT_FREE_BYTES:
             raise ResourcePolicyError("macOS boot-volume launch minimum must be at least 40 GiB")
@@ -159,12 +162,34 @@ def validate_policy(policy: dict) -> dict:
             raise ResourcePolicyError("macOS boot-volume free reserve must be at least 30 GiB")
         if caps["boot_reserve_free_disk_bytes"] >= caps["minimum_boot_free_disk_bytes"]:
             raise ResourcePolicyError("macOS boot reserve must be below its launch minimum")
-        if caps["minimum_swap_free_bytes"] < MIN_MACOS_SWAP_FREE_BYTES:
-            raise ResourcePolicyError("macOS launch requires at least 2 GiB free swap headroom")
-        if caps["swap_free_stop_bytes"] < MIN_MACOS_SWAP_FREE_STOP_BYTES:
-            raise ResourcePolicyError("macOS must stop before free swap falls below 1 GiB")
-        if caps["swap_free_stop_bytes"] >= caps["minimum_swap_free_bytes"]:
-            raise ResourcePolicyError("macOS swap stop reserve must be below its launch minimum")
+        if purpose == POLICY_V2_MACOS:
+            # V2 remains byte-for-byte conservative until superseded by a
+            # separately approved amendment. Its old free-swap gates are not
+            # silently removed by the V3 proposal.
+            for name in ("swap_free_stop_bytes", "minimum_swap_free_bytes"):
+                _positive_int(caps, name)
+            if caps["minimum_swap_free_bytes"] < MIN_MACOS_SWAP_FREE_BYTES:
+                raise ResourcePolicyError("macOS launch requires at least 2 GiB free swap headroom")
+            if caps["swap_free_stop_bytes"] < MIN_MACOS_SWAP_FREE_STOP_BYTES:
+                raise ResourcePolicyError("macOS must stop before free swap falls below 1 GiB")
+            if caps["swap_free_stop_bytes"] >= caps["minimum_swap_free_bytes"]:
+                raise ResourcePolicyError("macOS swap stop reserve must be below its launch minimum")
+        else:
+            if policy.get("macos_swap_volume_path") != "/System/Volumes/VM":
+                raise ResourcePolicyError("V3 must monitor macOS's internal VM volume")
+            if policy.get("macos_swap_telemetry_semantics") != MACOS_SWAP_TELEMETRY_SEMANTICS:
+                raise ResourcePolicyError("V3 must not treat vm.swapusage.free as future capacity")
+            _positive_int(caps, "swap_volume_reserve_free_disk_bytes")
+            _positive_int(caps, "minimum_swap_volume_free_disk_bytes")
+            if caps["swap_volume_reserve_free_disk_bytes"] < MIN_MACOS_SWAP_VOLUME_RESERVE_BYTES:
+                raise ResourcePolicyError("V3 VM-volume free-space reserve must be at least 30 GiB")
+            if caps["minimum_swap_volume_free_disk_bytes"] < MIN_MACOS_BOOT_FREE_BYTES:
+                raise ResourcePolicyError("V3 VM-volume launch minimum must be at least 40 GiB")
+            if (caps["swap_volume_reserve_free_disk_bytes"] >=
+                    caps["minimum_swap_volume_free_disk_bytes"]):
+                raise ResourcePolicyError("V3 VM-volume reserve must be below its launch minimum")
+            if "minimum_swap_free_bytes" in caps or "swap_free_stop_bytes" in caps:
+                raise ResourcePolicyError("V3 may not use current free-swap values as launch/stop gates")
     sizes = tuple(FORMAL_N)
     expected_attempts = (
         sum(
@@ -182,8 +207,10 @@ def validate_policy(policy: dict) -> dict:
         "limits_recorded": values,
         "review_head": policy["target_repository_head_sha"],
         "memory_enforcement_backend": backend,
+        "resource_policy_version": purpose,
         "memory_limit_semantics": policy.get("memory_limit_semantics",
                                                "CGROUP_V2_HARD_OS_ENFORCED"),
+        "swap_telemetry_semantics": policy.get("macos_swap_telemetry_semantics"),
         "independent_approval_still_must_be_verified": True,
     }
 
