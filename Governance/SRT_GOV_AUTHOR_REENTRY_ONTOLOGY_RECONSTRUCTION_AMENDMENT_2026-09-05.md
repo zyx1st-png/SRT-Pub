@@ -284,9 +284,11 @@ This does not require the author to invent in isolation. It requires AI and sour
 
 ### 4.1 AI role refinement
 
-For identity-level reconstruction, machine review should be separated into distinct roles where useful:
+For identity-level reconstruction, machine work should be separated into constructive and critical roles where useful; **constructive roles may precede the review roles** in an exploration task:
 
 ```text
+generative-reconstruction collaborator — proposes new relations, questions and provisional architectures
+framework-assumption challenger — tests whether inherited object/categories/premises foreclose a live SRT problem
 source-recovery auditor
 canonical-constraint auditor
 internal-consistency red-team
@@ -310,6 +312,8 @@ and unresolved relations. Neighboring theories supply mechanisms, local explanat
 conceptual distinctions, arguments, evidence and constraints. They need not leave an
 unexplained remainder before SRT may use them. Theories can be absorbed into a proposed
 SRT organization without asserting that SRT derives, contains or replaces them.
+
+**Exploration and framework-challenge authority (2026-10-18 author clarification).** SRT may investigate changes to a field's assumed objects, units of explanation, distinctions and premises, from ontology toward cognition, life, social relations and institutions. Mature neighbors must be learned fairly, but are not a prior permission test for constructing SRT-led alternatives. The current canonical `K` is a binding statement of *current doctrine*, not an absolute boundary on **separately labeled** `M` candidates or author-proposed reopenings; a challenge must identify the exact owner, its reasons and possible disconfirming evidence before any canonical promotion. AI may proactively construct candidates and new questions; only the author can attribute/accept a substantive SRT decision. A proposed ontological-to-social relationship is not thereby a proven entailment, empirical result or normative/political legitimacy claim.
 
 **Constructive work.** Reuse U-mode / O-track; do not create another mode, ladder or
 per-turn ledger. In an existing bounded work package, make recoverable:
@@ -357,6 +361,8 @@ comparative assertion was found in the reviewed text, with its revision/section 
 If a comparison is due, route it to the scoped audit; unsupported wording may instead
 be withdrawn or retained as an explicitly unverified proposal without erasing a paid
 adverse verdict. This review itself does not force a full novelty search.
+
+**Bidirectional critical duties / non-defensive revision.** Critique must test for mistaken strengthening **and** mistaken weakening: evidence-backed narrowing is welcome; generic reviewer-threat language, repeated scope disclaimers, preemptive denial of claims not made, and silent substitution with neighboring theories are not reasons on their own to reduce or retract an author's proposition. When revising a substantive claim, expose the changed proposition, evidence or reasoning, and any lost productive open question; apply the existing Edit Protocol and author-gates for changes of meaning. Local negative evidence remains adverse to the target actually tested.
 
 **Universal critical duties.** All substantive claims still face the appropriate logic,
 source, counterexample and factual checks. Necessity requires an argument and exposure
@@ -673,6 +679,8 @@ NARROW / DROP CANDIDATE
 ### 10.2 Broad cross-domain synthesis remains separately gated
 
 Releasing one third well does **not** automatically release broad cross-domain synthesis. Broad synthesis remains downstream of multiple independent usable domain results and the existing U-mode semantic-invariance burden.
+
+**Exploration versus programme authorization (2026-10-18 clarification).** These HOLD gates restrict launching new funded/formal deep wells, committing a broad synthesis programme, upgrading comparative/empirical claims and allocating their execution resources. They do not bar author-led or clearly AI-origin provisional discussion, thought experiments, literature comparison or preservation of new ontology-to-social questions within authorized existing work. Do not present those candidate connections as validated cross-domain synthesis, create a second `CURRENT NEXT`, begin a new experiment or treat this clarification as a HOLD release.
 
 ---
 
