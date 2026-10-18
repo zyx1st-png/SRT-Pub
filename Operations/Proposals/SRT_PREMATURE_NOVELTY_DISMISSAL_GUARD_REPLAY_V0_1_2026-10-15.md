@@ -4,7 +4,7 @@ type: proposal
 status: draft
 record_stage: author_accepted_method_archive_pending_replay
 date: 2026-10-15
-updated: 2026-10-15
+updated: 2026-10-18
 layer: operations
 epistemic_layer: analysis
 claim_mode: research_programme
