@@ -3,7 +3,7 @@ id: SRT-GOV-AUTHOR-REENTRY-ONTOLOGY-RECONSTRUCTION-AMENDMENT-20260905
 type: framework
 status: active
 date: 2026-09-05
-updated: 2026-09-09
+updated: 2026-10-18
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -207,7 +207,7 @@ Rules:
 - `K` constrains current reconstruction until explicitly reopened and edited under existing canonical rules;
 - `A` may pressure or explicitly reopen `K`, but does not silently overwrite it;
 - `B` may inform current reconstruction, but historical presence does not make it current authority;
-- `C` may organize or propose, but may not silently become `A` or `K`;
+- `C` (AI reconstruction state; M-origin indicates machine provenance on a different axis) may organize or propose, but may not silently become `A` or `K`. A clearly marked `C` can propose a rival to a specific current `K` without **reopening** that `K`; actual reopening requires an explicitly named author `A` decision and the canonical owner/edit gates;
 - `D` must remain visibly open and must not be manufactured by relabeling a `K` commitment as undecided.
 
 The same ontology axis may contain more than one status. For example, the exact relation between Selection and broader One-formation may be `D` while constraints on determinate world-side manifest actuality remain `K`.
@@ -284,9 +284,11 @@ This does not require the author to invent in isolation. It requires AI and sour
 
 ### 4.1 AI role refinement
 
-For identity-level reconstruction, machine review should be separated into distinct roles where useful:
+For identity-level reconstruction, machine work should be separated into constructive and critical roles where useful; **constructive roles may precede the review roles** in an exploration task:
 
 ```text
+generative-reconstruction collaborator — proposes new relations, questions and provisional architectures
+framework-assumption challenger — tests whether inherited object/categories/premises foreclose a live SRT problem
 source-recovery auditor
 canonical-constraint auditor
 internal-consistency red-team
@@ -310,6 +312,10 @@ and unresolved relations. Neighboring theories supply mechanisms, local explanat
 conceptual distinctions, arguments, evidence and constraints. They need not leave an
 unexplained remainder before SRT may use them. Theories can be absorbed into a proposed
 SRT organization without asserting that SRT derives, contains or replaces them.
+
+**Generative-first / framework-challenge authority (2026-10-18 author decision).** Controlling author source: `01_Source_Intuition/SRT_AUTHOR_SOURCE_GENERATIVE_RESEARCH_GOVERNANCE_2026-10-18.md`; the earlier retrieval/replay method remains at `Operations/Proposals/SRT_PREMATURE_NOVELTY_DISMISSAL_GUARD_REPLAY_V0_1_2026-10-15.md`. **Sequence for exploratory theory tasks:** grounded recovery of relevant current SRT concepts and source-native mature neighbors -> AI divergence and generative construction -> substantive critique and possible correction -> author judgment -> gated promotion only when authorized. This refines the existing §4 author-reentry route rather than replacing its author-convergence sequence; an explicitly requested audit may begin with critique. AI should proactively generate `C` (M-origin) concepts, revised premises, framework challenges, cross-domain questions and candidate consequences without requiring a novelty victory or fitting inherited categories. A present `K` controls current doctrine, but §3.1 permits separately marked `C` alternatives that challenge it; the exact owner, conflict, supporting reasons and potential defeater should remain visible. The author alone accepts new doctrinal meaning or author-attributed decisions. Candidate work stays in dialogue or an already-authorized working package; do not establish new theory files/programmes without the author's request. Ontology-to-social conjectures are not thereby proven entailments, empirical claims or political/normative legitimacy warrants.
+
+**Constructive and critical symmetry.** Assess unsupported universal assertions, factual/logical conflicts and strong rival accounts **and** unwarranted deflation, empty caveats, altered author questions, deleted viable conjectures or neighbor vocabulary silently substituted into the author's language. Findings should help reconstruct/retain/reject an actual proposition, not automatically shrink it. A genuine counterexample can defeat a claim; lack of verification alone does not refute an open question. In exploratory conversation, report consequential discovered conflicts or verified prior formulations briefly and with sources; full `外部对照三项` formatting belongs to explicit comparison, substantive claim review and publication-facing tasks, per the 10-07 owner as narrowed by the 10-18 source.
 
 **Constructive work.** Reuse U-mode / O-track; do not create another mode, ladder or
 per-turn ledger. In an existing bounded work package, make recoverable:
@@ -673,6 +679,8 @@ NARROW / DROP CANDIDATE
 ### 10.2 Broad cross-domain synthesis remains separately gated
 
 Releasing one third well does **not** automatically release broad cross-domain synthesis. Broad synthesis remains downstream of multiple independent usable domain results and the existing U-mode semantic-invariance burden.
+
+**Exploration versus programme authorization (2026-10-18 clarification).** These HOLD gates restrict launching new formal deep wells, committing a broad synthesis programme, upgrading comparative/empirical claims and allocating their execution resources. They do not bar author-led or clearly AI-origin provisional discussion, thought experiments, literature comparison or preservation of new ontology-to-social questions within authorized existing work. Do not present those candidate connections as validated cross-domain synthesis, create a second `CURRENT NEXT`, begin a new experiment or treat this clarification as a HOLD release.
 
 ---
 

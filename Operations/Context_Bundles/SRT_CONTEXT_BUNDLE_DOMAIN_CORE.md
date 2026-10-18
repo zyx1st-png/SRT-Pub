@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-09-24
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-10-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-24
-source_commit: 6e443445
-source_branch: claude/pr-1047-review-87u510
+generated: 2026-10-19
+source_commit: e3423df4f
+source_branch: codex/generative-research-anti-defensive-governance-20261018
 source_dirty: false
-inputs_digest: 83d58549bca5c6c3
+inputs_digest: d21170115fd5e00e
 ---
 
 # SRT 核心动力学上下文包
@@ -26,9 +26,9 @@ inputs_digest: 83d58549bca5c6c3
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-24 |
-| 来源 commit | `6e443445` |
-| 来源分支 | `claude/pr-1047-review-87u510` |
+| 生成日期 | 2026-10-19 |
+| 来源 commit | `e3423df4f` |
+| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 

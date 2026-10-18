@@ -141,6 +141,8 @@ Neither A nor B defines the whole SRT ontology.
 
 Use `AGENTS.md §Constitution / Ontology Dialogue Hard Guard` and the governance amendment §4.2 for author convergence, U/N-mode, neighbor adaptation and HOLD gates. These protect substantive decisions; they do not require repeated approval for authorized mechanical work.
 
+**Generative-first collaboration (2026-10-18):** See `AGENTS.md §Generative research collaboration` and the controlling governance amendment §4.2; **AI** retrieves task-relevant SRT concepts and mature neighboring theories, proposes `C` (M-origin) alternatives without silently changing `K`, and follows the 10-07 three-item comparison format only at its phase-appropriate scope. HOLD and `CURRENT NEXT` still govern formal execution, not provisional thinking.
+
 ## 4. Source recovery before invention
 
 For ontology / Constitution work, recover existing value before greenfield writing:

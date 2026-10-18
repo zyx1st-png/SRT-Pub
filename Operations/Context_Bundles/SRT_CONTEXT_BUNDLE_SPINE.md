@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-09-24
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-10-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-09-24
-source_commit: 6e443445
-source_branch: claude/pr-1047-review-87u510
+generated: 2026-10-19
+source_commit: e3423df4f
+source_branch: codex/generative-research-anti-defensive-governance-20261018
 source_dirty: false
-inputs_digest: 83d58549bca5c6c3
+inputs_digest: d21170115fd5e00e
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 83d58549bca5c6c3
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-09-24 |
-| 来源 commit | `6e443445` |
-| 来源分支 | `claude/pr-1047-review-87u510` |
+| 生成日期 | 2026-10-19 |
+| 来源 commit | `e3423df4f` |
+| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -43,10 +43,10 @@ inputs_digest: 83d58549bca5c6c3
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-09-23 |
+| 1 | `SRT_AI_START.md` | 2026-10-18 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-23 |
-| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-09-15 |
+| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-18 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-23 |
 | 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
@@ -449,7 +449,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-10-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -585,6 +585,8 @@ Neither A nor B defines the whole SRT ontology.
 ## 3. Constitution / ontology dialogue guard
 
 Use `AGENTS.md §Constitution / Ontology Dialogue Hard Guard` and the governance amendment §4.2 for author convergence, U/N-mode, neighbor adaptation and HOLD gates. These protect substantive decisions; they do not require repeated approval for authorized mechanical work.
+
+**Generative-first collaboration (2026-10-18):** See `AGENTS.md §Generative research collaboration` and the controlling governance amendment §4.2; **AI** retrieves task-relevant SRT concepts and mature neighboring theories, proposes `C` (M-origin) alternatives without silently changing `K`, and follows the 10-07 three-item comparison format only at its phase-appropriate scope. HOLD and `CURRENT NEXT` still govern formal execution, not provisional thinking.
 
 ## 4. Source recovery before invention
 
@@ -1853,7 +1855,7 @@ OPEN = open until separately adjudicated and landed.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| last_commit | 2026-10-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1870,6 +1872,8 @@ OPEN = open until separately adjudicated and landed.
 Never let a lower-hardness claim wear the voice of a higher-hardness claim.
 
 In particular, domain files must not present P3/P4/P5 claims as if they were P0/P1.
+
+**Claim hardness is not a research-idea admission score (2026-10-18 clarification).** P-levels determine what may be asserted, cited or promoted at a given evidence/authority strength. They do not determine whether an author-origin question or marked AI-origin candidate may be formulated, explored or retained. A candidate may challenge a current P0/P1 or K commitment without being represented as accepted doctrine; any actual promotion, replacement or publication still follows owner, author and evidence gates.
 
 ---
 
@@ -2197,7 +2201,7 @@ Demotion is not deletion. It means:
 - its voice becomes more honest;
 - domain files lose permission to quote it as primitive.
 
-This is the default response to ambiguity.
+This is the default response to ambiguity **in the claim's asserted level**; where warranted, demotion also requires narrowing the actual proposition to a supported scope. For a substantive demotion/revision, distinguish (a) wrong or unsupported asserted force, (b) warranted evidence-scoped correction including genuine semantic narrowing, and (c) an independently viable question or candidate relation that remains exploratory. Preserve the original proposition and its provenance where relevant; do not convert lack of verification into disproof, or a local no-increment result into global deletion. Do not retain a disproven proposition as if it were still established.
 
 ---
 

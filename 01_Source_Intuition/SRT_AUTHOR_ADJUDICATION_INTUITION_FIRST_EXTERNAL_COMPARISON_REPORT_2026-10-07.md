@@ -7,7 +7,7 @@ layer: source_intuition
 epistemic_layer: source
 claim_mode: author_adjudication
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-18
 research_mode: U
 priority: governance_correction
 dependency:
@@ -45,11 +45,22 @@ The author's second statement accepted the following machine proposal from the s
 >
 > 评审不引入对方的术语和框架。」
 
-## 1. Default output rule
+## 0. Later author limitation — 2026-10-18 (controlling current presentation)
 
-**Scope.** SRT theory dialogue, ontology / Constitution / GRG derivation, domain reconstruction, dialogue-trace writeback, and author-facing review of such work. Ordinary Git, tooling, typo, formatting or status-maintenance tasks are out of scope.
+A later, explicitly aligned author decision is preserved verbatim in `01_Source_Intuition/SRT_AUTHOR_SOURCE_GENERATIVE_RESEARCH_GOVERNANCE_2026-10-18.md` (conversation-only provenance as disclosed there). **It narrows this document's mandatory *per-response output* rule, not its source-comparison obligation or the historical content of the 2026-10-07 decision.** The author's newly stated motive for the original rule includes frustration that ChatGPT sometimes fails to read existing repository concepts and mature adjacent theories; this is a **2026-10-18 explanation**, not wording from the 2026-10-07 original.
 
-**Default.** Each substantive author-facing response in scope ends with this block:
+Current application:
+- In **open exploration, ontology dialogue and provisional derivation**, AI should continue relevant SRT-owner and mature-neighbor retrieval, fairly check already-known sources, and report any substantive discovered empirical fact conflict, internal contradiction or verified prior formulation briefly, with an honest scope/source note. The fixed three-item closing block is **not mandatory** for every such turn; never silently replace the author's terminology or frame with a neighbor's.
+- In an **explicit external comparison**, substantive claim/hardening adjudication, named-neighbor evaluation or publication-facing review, the compact `外部对照三项` block in §1 remains the default, with the same `无` / `未核` accuracy guards and the author's adjudication rights.
+- The author retained AI responsibility for source comparison; relaxing the display format **does not prove checks occurred** and creates a possible loss of routine visibility. Report real findings rather than hiding them, do not claim missing checks were performed, and allow the author to request the full block at any point.
+
+§1 below remains the original 2026-10-07 record and controls the **content** of the three-item report when triggered. This §0 and the author source above control its **current applicability**.
+
+## 1. 2026-10-07 default output rule (historical text; current scope defined in §0)
+
+**Historical 2026-10-07 scope.** SRT theory dialogue, ontology / Constitution / GRG derivation, domain reconstruction, dialogue-trace writeback, and author-facing review of such work. **Current mandatory scope is narrowed by §0.** Ordinary Git, tooling, typo, formatting or status-maintenance tasks are out of scope.
+
+**Original 2026-10-07 default (now only mandatory when §0 triggers it).** Each substantive author-facing response in the original scope ended with this block:
 
 ~~~text
 外部对照三项
