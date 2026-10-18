@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11.15"
       - name: Install pinned synthetic-test dependencies
-        run: python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.1
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.1 ruff==0.14.10
       - name: Compile the synthetic execution and watchdog modules
         working-directory: Experiments/neuro_sleep_null_calibration
         run: |
@@ -33,6 +33,9 @@ jobs:
             nc0a_macos_long_probe.py \
             nc0a_microbenchmark.py \
             nc0a_researcher_authorization.py
+      - name: Reject undefined names in synthetic execution modules
+        working-directory: Experiments/neuro_sleep_null_calibration
+        run: ruff check --select F821 .
       - name: Run only bounded synthetic and statistics unit tests
         working-directory: Experiments/neuro_sleep_null_calibration
         run: |

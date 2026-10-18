@@ -849,7 +849,7 @@ def _researcher_runner_entry(run_dir: str, snapshot_path: str,
     snapshot = _read_json(Path(snapshot_path))
     commitment = snapshot.get("commitment")
     if (snapshot.get("format") != RESEARCHER_PACKAGE_FORMAT or
-            _researcher_commitment_sha(commitment) != commitment_sha or
+            _researcher_commitment_sha256(commitment) != commitment_sha or
             snapshot.get("commitment_sha256") != commitment_sha or
             Path(commitment["resource_policy"]["output_directory"]).resolve() != root):
         raise ExecutionError("Researcher commitment snapshot is invalid or belongs to another run")

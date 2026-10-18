@@ -852,5 +852,135 @@ class ResearcherAuthorizedLauncherTests(unittest.TestCase):
         self.assertEqual(self.calls, 1)
 
 
+class ResearcherInternalRunnerIdentityTests(unittest.TestCase):
+    """Exercise the real runner identity gate, stopping before case execution."""
+
+    class DispatchReached(Exception):
+        pass
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(prefix="nc0a-internal-runner-")
+        self.root = Path(self.tmp.name) / "run"
+        self.root.mkdir()
+        self.snapshot_path = self.root / "researcher_authorization.json"
+        self.package, self.context = make_package(self.root)
+        self.commitment = deepcopy(self.package["commitment"])
+        self.commitment_sha = self.package["commitment_sha256"]
+        self._write_snapshot(self.commitment, self.commitment_sha)
+        self.role_path = self.root / "process_roles.json"
+        self.token = "a" * 64
+        self.max_attempts = self.commitment["resource_policy"]["limits"][
+            "max_attempts_per_case"]
+        self._old_registry = engine._ACTIVE_PROCESS_ROLE_REGISTRY
+        self._old_environment = engine._ACTIVE_EXECUTION_ENVIRONMENT
+
+    def tearDown(self):
+        engine._ACTIVE_PROCESS_ROLE_REGISTRY = self._old_registry
+        engine._ACTIVE_EXECUTION_ENVIRONMENT = self._old_environment
+        self.tmp.cleanup()
+
+    def _write_snapshot(self, commitment: dict, commitment_sha: str) -> None:
+        value = {"format": PACKAGE_FORMAT, "commitment": commitment,
+                 "commitment_sha256": commitment_sha}
+        self.snapshot_path.write_bytes(canonical_bytes(value) + b"\n")
+
+    def _runner_environment(self):
+        return mock.patch.dict(os.environ, {
+            "NC0A_WATCHDOG_LAUNCH_TOKEN": self.token,
+            "NC0A_WATCHDOG_PARENT_PID": str(os.getppid()),
+            "NC0A_PROCESS_ROLE_REGISTRY": str(self.role_path),
+        })
+
+    def _identity_gate_patches(self):
+        return (
+            mock.patch.object(engine, "_git_head", return_value=self.context["head_sha"]),
+            mock.patch.object(engine, "_assert_clean_source_tree"),
+            mock.patch.object(engine, "guard_watchdog_parent"),
+        )
+
+    def test_valid_commitment_enters_dispatch_without_running_science(self):
+        patches = self._identity_gate_patches()
+        with self._runner_environment(), patches[0], patches[1], patches[2], \
+                mock.patch.object(engine, "_run_battery_core",
+                                  side_effect=self.DispatchReached) as dispatch:
+            with self.assertRaises(self.DispatchReached):
+                engine._researcher_runner_entry(
+                    str(self.root), str(self.snapshot_path), self.commitment_sha,
+                    self.max_attempts)
+
+        dispatch.assert_called_once()
+        args, kwargs = dispatch.call_args
+        self.assertEqual(args[0], self.root.resolve())
+        self.assertEqual(
+            kwargs["workers"],
+            self.commitment["resource_policy"]["limits"]["max_workers"])
+        self.assertEqual(kwargs["formal"], True)
+        self.assertEqual(kwargs["policy_hash"], self.commitment_sha)
+        self.assertEqual(kwargs["head"], self.context["head_sha"])
+        self.assertTrue(self.role_path.is_file())
+        self.assertFalse((self.root / "cases").exists())
+        self.assertFalse((self.root / "execution.jsonl").exists())
+
+    def test_wrong_commitment_hash_and_output_directory_are_rejected_before_dispatch(self):
+        scenarios = ("wrong_commitment", "wrong_hash", "wrong_directory")
+        for scenario in scenarios:
+            with self.subTest(scenario=scenario):
+                root = Path(self.tmp.name) / scenario
+                root.mkdir()
+                snapshot = root / "researcher_authorization.json"
+                roles = root / "process_roles.json"
+                commitment = deepcopy(self.commitment)
+                digest = self.commitment_sha
+                if scenario == "wrong_commitment":
+                    commitment["experiment_uuid"] = str(uuid.uuid4())
+                    value = {"format": PACKAGE_FORMAT, "commitment": commitment,
+                             "commitment_sha256": digest}
+                elif scenario == "wrong_directory":
+                    commitment["resource_policy"]["output_directory"] = str(
+                        (Path(self.tmp.name) / "different-run").resolve())
+                    digest = commitment_sha256(commitment)
+                    value = {"format": PACKAGE_FORMAT, "commitment": commitment,
+                             "commitment_sha256": digest}
+                else:
+                    value = {"format": PACKAGE_FORMAT, "commitment": commitment,
+                             "commitment_sha256": digest}
+                    digest = "f" * 64
+                snapshot.write_bytes(canonical_bytes(value) + b"\n")
+                with mock.patch.dict(os.environ, {
+                        "NC0A_WATCHDOG_LAUNCH_TOKEN": self.token,
+                        "NC0A_WATCHDOG_PARENT_PID": str(os.getppid()),
+                        "NC0A_PROCESS_ROLE_REGISTRY": str(roles)}), \
+                        mock.patch.object(engine, "_git_head",
+                                          return_value=self.context["head_sha"]), \
+                        mock.patch.object(engine, "_assert_clean_source_tree"), \
+                        mock.patch.object(engine, "guard_watchdog_parent"), \
+                        mock.patch.object(engine, "_run_battery_core") as dispatch:
+                    with self.assertRaises(engine.ExecutionError):
+                        engine._researcher_runner_entry(
+                            str(root), str(snapshot), digest, self.max_attempts)
+                dispatch.assert_not_called()
+                self.assertFalse(roles.exists())
+
+    def test_watchdog_command_arguments_reach_internal_cli_and_stop_at_stub(self):
+        command = engine._researcher_runner_command(
+            self.root, self.snapshot_path, self.commitment_sha, self.max_attempts)
+        self.assertEqual(command[0], sys.executable)
+        self.assertEqual(command[1], str(Path(engine.__file__).resolve()))
+        self.assertEqual(command[2], "--researcher-runner-internal")
+        self.assertEqual(command[3:], [str(self.root), str(self.snapshot_path),
+                                       self.commitment_sha, str(self.max_attempts)])
+
+        patches = self._identity_gate_patches()
+        with self._runner_environment(), patches[0], patches[1], patches[2], \
+                mock.patch.object(engine, "_run_battery_core",
+                                  return_value={"bounded_test_dispatch": True}) as dispatch:
+            result = engine.main(command[2:])
+
+        self.assertEqual(result, 0)
+        dispatch.assert_called_once()
+        self.assertFalse((self.root / "cases").exists())
+        self.assertFalse((self.root / "execution.jsonl").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
