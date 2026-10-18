@@ -7,8 +7,11 @@ from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
+import plistlib
+import os
 from pathlib import Path
 import tempfile
+from types import SimpleNamespace
 import unittest
 import uuid
 from unittest import mock
@@ -201,6 +204,74 @@ def fake_remote_comments(package: dict, *, audit_body: str | None = None) -> dic
 
 
 class ResearcherAuthorizationSchemaTests(unittest.TestCase):
+    def test_output_directory_maps_by_device_to_internal_volume_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            directory_name = str(directory.resolve())
+            original_stat = os.stat
+            volumes = {
+                "/System/Volumes/Data": (101, {
+                    "MountPoint": "/System/Volumes/Data", "FilesystemName": "apfs",
+                    "Internal": True, "VolumeUUID": "DATA-UUID",
+                    "DeviceIdentifier": "disk3s5"}),
+                "/System/Volumes/VM": (202, {
+                    "MountPoint": "/System/Volumes/VM", "FilesystemName": "apfs",
+                    "Internal": True, "VolumeUUID": "VM-UUID",
+                    "DeviceIdentifier": "disk3s6"}),
+            }
+
+            def fake_stat(path, *args, **kwargs):
+                name = os.fspath(path)
+                if name == directory_name:
+                    return SimpleNamespace(st_dev=101)
+                for mount, (device, _) in volumes.items():
+                    if name == mount:
+                        return SimpleNamespace(st_dev=device)
+                return original_stat(path, *args, **kwargs)
+
+            def fake_diskutil(args, **kwargs):
+                payload = plistlib.dumps(volumes[args[-1]][1])
+                return SimpleNamespace(stdout=payload)
+
+            with mock.patch.object(engine.os, "stat", side_effect=fake_stat), \
+                    mock.patch.object(engine.subprocess, "run", side_effect=fake_diskutil):
+                identity = engine._disk_volume_identity(directory)
+            self.assertEqual(identity["mount_point"], "/System/Volumes/Data")
+            self.assertEqual(identity["volume_uuid"], "DATA-UUID")
+            self.assertTrue(identity["internal"])
+
+    def test_output_directory_on_unreviewed_volume_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            directory_name = str(directory.resolve())
+            original_stat = os.stat
+            devices = {"/System/Volumes/Data": 101,
+                       "/System/Volumes/VM": 202}
+            records = {
+                "/System/Volumes/Data": {"MountPoint": "/System/Volumes/Data",
+                    "FilesystemName": "apfs", "Internal": True,
+                    "VolumeUUID": "DATA-UUID", "DeviceIdentifier": "disk3s5"},
+                "/System/Volumes/VM": {"MountPoint": "/System/Volumes/VM",
+                    "FilesystemName": "apfs", "Internal": True,
+                    "VolumeUUID": "VM-UUID", "DeviceIdentifier": "disk3s6"},
+            }
+
+            def fake_stat(path, *args, **kwargs):
+                name = os.fspath(path)
+                if name == directory_name:
+                    return SimpleNamespace(st_dev=303)
+                if name in devices:
+                    return SimpleNamespace(st_dev=devices[name])
+                return original_stat(path, *args, **kwargs)
+
+            def fake_diskutil(args, **kwargs):
+                return SimpleNamespace(stdout=plistlib.dumps(records[args[-1]]))
+
+            with mock.patch.object(engine.os, "stat", side_effect=fake_stat), \
+                    mock.patch.object(engine.subprocess, "run", side_effect=fake_diskutil):
+                with self.assertRaisesRegex(ExecutionError, "not on either reviewed internal"):
+                    engine._disk_volume_identity(directory)
+
     def test_exact_plan_passes_schema_but_does_not_claim_external_authorization(self):
         with tempfile.TemporaryDirectory() as tmp:
             run_dir = Path(tmp) / "run"

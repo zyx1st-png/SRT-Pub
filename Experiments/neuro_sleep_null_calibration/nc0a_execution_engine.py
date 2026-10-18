@@ -584,29 +584,44 @@ def _researcher_scientific_protocol() -> dict:
 
 
 def _disk_volume_identity(path: str | Path) -> dict:
-    """Read the mounted APFS identity without changing any volume state."""
+    """Map a path to one of the reviewed internal Data/VM APFS volumes.
+
+    ``diskutil info`` accepts mounted-volume paths, not arbitrary directories.
+    Identify Data and VM directly, then map a result directory by its device
+    number; never infer a volume identity from its spelling or parent name.
+    """
     target = Path(path).expanduser().resolve(strict=False)
     probe = target
     while not probe.exists() and probe != probe.parent:
         probe = probe.parent
     if not probe.exists():
         raise ExecutionError("Output path has no existing parent volume")
-    result = subprocess.run(["/usr/sbin/diskutil", "info", "-plist", str(probe)],
-                            check=True, capture_output=True, timeout=10)
     try:
-        info = plistlib.loads(result.stdout)
-    except Exception as exc:
-        raise ExecutionError("Cannot parse diskutil APFS volume identity") from exc
-    try:
-        return {
-            "mount_point": str(info["MountPoint"]),
-            "filesystem": str(info.get("FilesystemName") or info["FilesystemType"]).upper(),
-            "internal": bool(info["Internal"]),
-            "volume_uuid": str(info.get("VolumeUUID") or info["DiskUUID"]).upper(),
-            "device_identifier": str(info["DeviceIdentifier"]),
-        }
-    except (KeyError, TypeError) as exc:
-        raise ExecutionError("diskutil did not return a complete volume identity") from exc
+        target_device = os.stat(probe).st_dev
+    except OSError as exc:
+        raise ExecutionError("Cannot stat the existing output-path parent") from exc
+    for mount in ("/System/Volumes/Data", "/System/Volumes/VM"):
+        result = subprocess.run(["/usr/sbin/diskutil", "info", "-plist", mount],
+                                check=True, capture_output=True, timeout=10)
+        try:
+            info = plistlib.loads(result.stdout)
+            mount_point = str(info["MountPoint"])
+            mount_device = os.stat(mount_point).st_dev
+        except (KeyError, TypeError, OSError, ValueError) as exc:
+            raise ExecutionError("Cannot parse/stat internal APFS volume identity") from exc
+        if target_device != mount_device:
+            continue
+        try:
+            return {
+                "mount_point": mount_point,
+                "filesystem": str(info.get("FilesystemName") or info["FilesystemType"]).upper(),
+                "internal": bool(info["Internal"]),
+                "volume_uuid": str(info.get("VolumeUUID") or info["DiskUUID"]).upper(),
+                "device_identifier": str(info["DeviceIdentifier"]),
+            }
+        except (KeyError, TypeError) as exc:
+            raise ExecutionError("diskutil did not return a complete APFS volume identity") from exc
+    raise ExecutionError("Path is not on either reviewed internal Data or VM volume")
 
 
 def _resolved_non_symlink_path(path: str | Path) -> Path:
