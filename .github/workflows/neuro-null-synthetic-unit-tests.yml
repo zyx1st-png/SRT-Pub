@@ -31,7 +31,7 @@ jobs:
             nc0a_watchdog.py \
             nc0a_macos_feasibility_probe.py \
             nc0a_macos_long_probe.py \
-            nc0a_microbenchmark.py
+            nc0a_microbenchmark.py \
             nc0a_researcher_authorization.py
       - name: Run only bounded synthetic and statistics unit tests
         working-directory: Experiments/neuro_sleep_null_calibration
