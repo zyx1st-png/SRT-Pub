@@ -67,6 +67,7 @@ class SignedToyLauncherTests(unittest.TestCase):
             "purpose": engine.ENGINEERING_TEST_APPROVAL_PURPOSE,
             "test_experiment_id": str(uuid.uuid4()),
             "target_repository_head_sha": engine._git_head(),
+            "execution_environment": engine._environment(engine._git_head()),
             "authority_ledger_path": str(ledger_path),
             "authority_anchor_path": str(anchor_path),
             "memory_enforcement_backend": "SAMPLED_ONLY",
@@ -101,7 +102,7 @@ class SignedToyLauncherTests(unittest.TestCase):
             "recovery_rule": engine.PROTOCOL["recovery"],
             "test_source_sha256": engine._test_source_hashes(),
             "test_environment_sha256": hashlib.sha256(
-                canonical(engine._environment(engine._git_head()))).hexdigest(),
+                canonical(policy["execution_environment"])).hexdigest(),
         }
         unsigned = canonical(approval)
         payload = root / "approval.payload"

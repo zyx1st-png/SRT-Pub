@@ -368,6 +368,16 @@ class ProcessRoleRegistry:
 
 
 _ACTIVE_PROCESS_ROLE_REGISTRY: ProcessRoleRegistry | None = None
+_ACTIVE_EXECUTION_ENVIRONMENT: dict | None = None
+
+
+def _execution_environment(head: str) -> dict:
+    """Use the launcher's frozen environment inside a supervised process group."""
+    snapshot = _ACTIVE_EXECUTION_ENVIRONMENT
+    if (isinstance(snapshot, dict) and
+            snapshot.get("repository_head") == head):
+        return snapshot
+    return _environment(head)
 
 
 def _run_registered(*popenargs, **kwargs):
@@ -812,7 +822,7 @@ def _researcher_limits(commitment: dict) -> WatchdogLimits:
 
 def _researcher_runner_entry(run_dir: str, snapshot_path: str,
                              commitment_sha: str, max_attempts: int) -> int:
-    global _ACTIVE_PROCESS_ROLE_REGISTRY
+    global _ACTIVE_PROCESS_ROLE_REGISTRY, _ACTIVE_EXECUTION_ENVIRONMENT
     token = os.environ.get("NC0A_WATCHDOG_LAUNCH_TOKEN", "")
     parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
     if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
@@ -834,6 +844,7 @@ def _researcher_runner_entry(run_dir: str, snapshot_path: str,
         raise ExecutionError("Repository HEAD changed after researcher precommit")
     _assert_clean_source_tree()
     _ACTIVE_PROCESS_ROLE_REGISTRY = ProcessRoleRegistry(role_path, token, os.getpid())
+    _ACTIVE_EXECUTION_ENVIRONMENT = commitment["environment"]
     guard_watchdog_parent(int(parent))
     limits = _researcher_limits(commitment)
     result = _run_battery_core(
@@ -1237,7 +1248,8 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
                           crash_after_start: bool = False,
                           phase_callback=None,
                           test_worker_hold_seconds: float = 0.0,
-                          process_role_registry: ProcessRoleRegistry | None = None) -> dict:
+                          process_role_registry: ProcessRoleRegistry | None = None,
+                          head: str | None = None) -> dict:
     """Run one immutable task attempt. Toy specs exist only for engineering tests."""
     if formal != spec.formal:
         raise ExecutionError("Formal/test mode and case identity disagree")
@@ -1307,7 +1319,7 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
         "chains": chains,
         "screen": screen,
         "oracle": oracle,
-        "execution_environment": _environment(_git_head()),
+        "execution_environment": _execution_environment(head or _git_head()),
         "mixing_status": "MIXING-UNRESOLVED",
     }
 
@@ -1335,7 +1347,7 @@ def _new_manifest(run_dir: Path, *, head: str, policy_hash: str,
         "resource_policy_sha256": policy_hash,
         "protocol": protocol,
         "watchdog_contract": WATCHDOG_CONTRACT,
-        "environment": _environment(head),
+        "environment": _execution_environment(head),
         "seed_manifest": {
             spec.key: {
                 "fixture_seed": synthetic_seed(spec.family, spec.n, root=ROOT_SEED),
@@ -1486,7 +1498,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                                        spec.key == crash_after_start_case),
                     phase_callback=set_phase,
                     test_worker_hold_seconds=(test_worker_hold_seconds if not formal else 0.0),
-                    process_role_registry=process_role_registry)
+                    process_role_registry=process_role_registry,
+                    head=head)
                 report["attempt"] = attempt_num
                 report["run_manifest_sha256"] = manifest_sha
                 report["resource_policy_sha256"] = policy_hash
@@ -1720,7 +1733,8 @@ def _validate_engineering_test_policy(policy: dict) -> tuple[tuple[CaseSpec, ...
 
 
 def _verify_engineering_test_approval(policy_path: Path, approval_path: Path,
-                                      public_key_path: Path) -> tuple[dict, dict]:
+                                      public_key_path: Path, *,
+                                      verify_current_environment: bool = True) -> tuple[dict, dict]:
     policy_bytes = policy_path.read_bytes()
     policy = _read_json(policy_path)
     approval = _read_json(approval_path)
@@ -1750,8 +1764,14 @@ def _verify_engineering_test_approval(policy_path: Path, approval_path: Path,
         raise ExecutionError("Test approval differs from its bounded workload or fixed seeds")
     if approval.get("test_source_sha256") != _test_source_hashes():
         raise ExecutionError("Test approval does not bind the exact execution and watchdog code")
-    if approval.get("test_environment_sha256") != sha256(_canonical(_environment(head))).hexdigest():
-        raise ExecutionError("Test approval does not bind the current runtime environment")
+    execution_environment = policy.get("execution_environment")
+    if not isinstance(execution_environment, dict):
+        raise ExecutionError("Test policy must freeze the pre-launch runtime environment")
+    if (approval.get("test_environment_sha256") !=
+            sha256(_canonical(execution_environment)).hexdigest()):
+        raise ExecutionError("Test approval does not bind its frozen runtime environment")
+    if verify_current_environment and execution_environment != _environment(head):
+        raise ExecutionError("Test policy runtime environment differs from the launch host")
     if not isinstance(encoded, str):
         raise ExecutionError("Detached test authorization signature is missing")
     try:
@@ -1766,7 +1786,7 @@ def _verify_engineering_test_approval(policy_path: Path, approval_path: Path,
 def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
                        approval_path: str, public_key_path: str,
                        invocation: int) -> int:
-    global _ACTIVE_PROCESS_ROLE_REGISTRY
+    global _ACTIVE_PROCESS_ROLE_REGISTRY, _ACTIVE_EXECUTION_ENVIRONMENT
     token = os.environ.get("NC0A_WATCHDOG_LAUNCH_TOKEN", "")
     parent = os.environ.get("NC0A_WATCHDOG_PARENT_PID", "")
     if not re.fullmatch(r"[0-9a-f]{64}", token) or parent != str(os.getppid()):
@@ -1777,9 +1797,11 @@ def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
     _ACTIVE_PROCESS_ROLE_REGISTRY = ProcessRoleRegistry(role_path, token, os.getpid())
     guard_watchdog_parent(int(parent))
     policy, _ = _verify_engineering_test_approval(
-        Path(policy_path), Path(approval_path), Path(public_key_path))
+        Path(policy_path), Path(approval_path), Path(public_key_path),
+        verify_current_environment=False)
     if sha256(Path(policy_path).read_bytes()).hexdigest() != policy_sha:
         raise ExecutionError("Test resource policy changed after watchdog authorization")
+    _ACTIVE_EXECUTION_ENVIRONMENT = policy["execution_environment"]
     cases, workers = _validate_engineering_test_policy(policy)
     root = Path(run_dir)
     fault_case = policy.get("fault_first_invocation") if invocation == 1 else None
@@ -1797,7 +1819,7 @@ def _runner_test_entry(run_dir: str, policy_path: str, policy_sha: str,
         case_seconds=policy["limits"]["case_timeout_seconds"],
         oracle_seconds=policy["limits"]["oracle_timeout_seconds"],
         max_attempts_per_case=2, formal=False,
-        policy_hash=policy_sha, head=_git_head(),
+        policy_hash=policy_sha, head=policy["target_repository_head_sha"],
         crash_index=crash_index, crash_after_start_case=crash_after_case,
         test_worker_hold_seconds=policy.get("worker_hold_seconds", 0.0),
         process_role_registry=_ACTIVE_PROCESS_ROLE_REGISTRY)
