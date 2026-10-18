@@ -726,7 +726,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
               sleeper: Callable[[float], None] = time.sleep,
               clock: Callable[[], tuple[float, float]] | None = None,
               audit_name: str = "watchdog.jsonl",
-              stdout_name: str = "runner.stdout.log") -> dict:
+              stdout_name: str = "runner.stdout.log",
+              invocation_id: int | None = None) -> dict:
     """Run and monitor a single scientific runner; terminate its whole group.
 
     ``clock`` returns (UTC epoch seconds, suspend-aware-comparison monotonic
@@ -735,6 +736,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
     """
     if not command or any(not isinstance(x, str) for x in command):
         raise ValueError("A nonempty argument-vector command is required")
+    if invocation_id is not None and (type(invocation_id) is not int or invocation_id < 1):
+        raise ValueError("Watchdog invocation_id must be a positive integer")
     macos_initial = None
     if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
         macos_initial = validate_macos_sampled_backend(limits)
@@ -748,6 +751,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
     root.chmod(0o700)
     log = HashChainLog(root / audit_name)
     output_path = root / stdout_name
+    reserve: Path | None = None
     if output_path.exists() or output_path.is_symlink():
         log.close()
         raise WatchdogError("Runner output already exists; run IDs cannot be reused")
@@ -757,8 +761,12 @@ def supervise(command: list[str], *, run_dir: str | Path,
         reserve = _prepare_emergency_reserve(root, limits.run_disk_bytes)
     except BaseException as exc:
         try:
+            stdout_digest = (_sha256_file(output_path)
+                             if output_path.is_file() and not output_path.is_symlink()
+                             else None)
             log.append({"event": "watchdog_setup_failed", "type": type(exc).__name__,
-                        "message": str(exc)[:500]})
+                        "message": str(exc)[:500], "invocation": invocation_id,
+                        "runner_stdout_sha256": stdout_digest})
         finally:
             log.close()
         raise
@@ -794,6 +802,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
     last_utc, last_mono = start_utc, start_mono
     last_log = start_mono
     proc: subprocess.Popen | None = None
+    role_registry_path: Path | None = None
     try:
         child_env = os.environ.copy()
         child_env["NC0A_WATCHDOG_PARENT_PID"] = str(os.getpid())
@@ -808,6 +817,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
             sleep_assertion = _start_sleep_assertion(
                 os.getpid(), limits.require_sleep_assertion)
         log.append({"event": "run_started", "utc": datetime.now(timezone.utc).isoformat(),
+                    "invocation": invocation_id,
                     "pid": proc.pid, "pgid": proc.pid, "command": command,
                     "limits": asdict(limits),
                     "macos_initial_state": macos_initial,
@@ -1037,6 +1047,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                  "free_disk_bytes": free_bytes,
                                  "runner_stdout_sha256": _sha256_file(output_path)}
                         log.append({"event": "runner_exited", "returncode": rc,
+                                    "invocation": invocation_id,
                                     "usage": usage})
                         return {"status": "completed" if rc == 0 else "failed",
                                 "returncode": rc, "usage": usage,
@@ -1102,6 +1113,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                "runner_stdout_sha256": _sha256_file(output_path)}
                 log.append({"event": "watchdog_stop", "reason": stop_reason,
                             "utc": datetime.now(timezone.utc).isoformat(),
+                            "invocation": invocation_id,
                             "task_id": task_id, "phase": phase,
                             "usage": final_usage})
                 return {"status": "stopped", "reason": stop_reason,
@@ -1151,6 +1163,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
             except OSError:
                 stdout_sha = None
             log.append({"event": "watchdog_exception", "type": type(exc).__name__,
+                        "invocation": invocation_id,
                         "message": str(exc)[:500],
                             "usage": {"wall_seconds": max(0.0, end_utc - start_utc),
                                       "cpu_seconds": cpu_seconds,
@@ -1164,14 +1177,30 @@ def supervise(command: list[str], *, run_dir: str | Path,
                                       "peak_compute_workers": peak_workers,
                                       "peak_resource_trackers": peak_resource_trackers,
                                       "peak_process_group_members": peak_process_members,
-                                      "runner_stdout_sha256": stdout_sha}})
+                                 "runner_stdout_sha256": stdout_sha}})
         except Exception:
             pass
         raise
     finally:
         _stop_sleep_assertion(sleep_assertion)
+        cleanup_error = None
+        if reserve is not None:
+            try:
+                reserve.unlink(missing_ok=True)
+            except OSError as exc:
+                cleanup_error = ("Cannot remove the invocation's emergency reserve", exc)
+        if role_registry_path is not None:
+            try:
+                role_registry_path.unlink(missing_ok=True)
+            except OSError as exc:
+                if cleanup_error is None:
+                    cleanup_error = (
+                        "Cannot remove the invocation's process-role registry", exc)
         output.close()
         log.close()
+        if cleanup_error is not None:
+            message, cause = cleanup_error
+            raise WatchdogError(message) from cause
 
 
 def main(argv: list[str] | None = None) -> int:

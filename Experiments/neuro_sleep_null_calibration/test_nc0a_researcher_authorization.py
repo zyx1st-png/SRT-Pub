@@ -1,4 +1,4 @@
-"""Researcher-authorized gate tests use synthetic records and a stub executor."""
+"""Researcher-gate tests use synthetic records and bounded nonformal workers."""
 
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ import json
 import plistlib
 import os
 from pathlib import Path
+import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
@@ -17,6 +18,7 @@ import uuid
 from unittest import mock
 
 import nc0a_execution_engine as engine
+import nc0a_watchdog as watchdog
 from nc0a_execution_engine import ExecutionError
 from nc0a_researcher_authorization import (
     MEMORY_RISK, PACKAGE_FORMAT, ResearcherAuthorizationError,
@@ -420,6 +422,28 @@ class ResearcherAuthorizationSchemaTests(unittest.TestCase):
                 validate_package(package, context=context, run_dir=run_dir)
 
 
+class WatchdogStdoutRecoveryCompatibilityTests(unittest.TestCase):
+    def test_legacy_watchdog_stdout_digest_is_paired_by_invocation_order(self):
+        with tempfile.TemporaryDirectory(prefix="nc0a-stdout-legacy-") as tmp:
+            root = Path(tmp)
+            stdout = root / "runner.stdout.01.log"
+            payload = b"legacy watchdog runner output\n"
+            stdout.write_bytes(payload)
+            log = HashChainLog(root / "watchdog.jsonl")
+            try:
+                log.append({"event": "run_started", "pid": 101, "pgid": 101})
+                log.append({"event": "runner_exited", "returncode": 17,
+                            "usage": {"wall_seconds": 1.0, "cpu_seconds": 1.0,
+                                      "runner_stdout_sha256": hashlib.sha256(
+                                          payload).hexdigest()}})
+            finally:
+                log.close()
+            self.assertEqual(
+                engine._verify_researcher_stdout_history(
+                    root, [{"invocation": 1, "watchdog_started": True}]),
+                {"runner.stdout.01.log"})
+
+
 class ResearcherAuthorizedLauncherTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(prefix="nc0a-researcher-gate-")
@@ -444,16 +468,23 @@ class ResearcherAuthorizedLauncherTests(unittest.TestCase):
         self.calls += 1
         usage = {"wall_seconds": 2.0, "cpu_seconds": 3.0,
                  "peak_aggregate_rss_bytes": 123456, "run_directory_bytes": 4096}
+        stdout_path = Path(root) / f"runner.stdout.{invocation:02d}.log"
+        stdout_bytes = f"fake watchdog invocation {invocation}\n".encode()
+        stdout_path.write_bytes(stdout_bytes)
+        stdout_sha256 = hashlib.sha256(stdout_bytes).hexdigest()
         log = HashChainLog(Path(root) / "watchdog.jsonl")
         try:
-            log.append({"event": "run_started", "utc": "test", "pid": 10,
+            log.append({"event": "run_started", "utc": "test",
+                        "invocation": invocation, "pid": 10,
                         "pgid": 10, "limits": {"wall_seconds": limits.wall_seconds}})
-            log.append({"event": "runner_exited", "returncode": 0, "usage": usage})
+            log.append({"event": "runner_exited", "invocation": invocation,
+                        "returncode": 17, "usage": {
+                            **usage, "runner_stdout_sha256": stdout_sha256}})
         finally:
             log.close()
         # No formal result is created: the launcher must preserve this as an
-        # incomplete/non-successful run rather than treating exit 0 as NC-0a.
-        return {"status": "completed", "returncode": 0, "usage": usage,
+        # incomplete/non-successful run rather than treating a child exit as NC-0a.
+        return {"status": "failed", "returncode": 17, "usage": usage,
                 "command": command}
 
     def launch_patches(self):
@@ -562,6 +593,203 @@ class ResearcherAuthorizedLauncherTests(unittest.TestCase):
         self.assertEqual(second["cumulative_cpu_seconds"], 6.0)
         self.assertEqual(self.calls, 2)
 
+    def test_actual_watchdog_failure_stdout_public_anchor_and_same_uuid_resume(self):
+        class AliveAssertion:
+            @staticmethod
+            def poll():
+                return None
+
+        real_disk_usage = watchdog.shutil.disk_usage
+
+        def disk_usage(path):
+            if str(path) in ("/System/Volumes/Data", "/System/Volumes/VM"):
+                return SimpleNamespace(total=100 * GIB, used=50 * GIB, free=50 * GIB)
+            return real_disk_usage(path)
+
+        native = {
+            "swap_total_bytes": 14 * GIB, "swap_used_bytes": 10 * GIB,
+            "swap_free_bytes": 4 * GIB, "ac_power": True,
+            "thermal_normal": True, "thermal_warning_level": 0,
+            "performance_warning_level": 0,
+        }
+        script = (
+            "import json, os, sys; "
+            "json.dump({'format':'NC0A_PROCESS_ROLE_REGISTRY_V1', "
+            "'launch_token':os.environ['NC0A_WATCHDOG_LAUNCH_TOKEN'], "
+            "'runner_pid':os.getpid(), 'roles':{}}, "
+            "open(os.environ['NC0A_PROCESS_ROLE_REGISTRY'],'w')); "
+            "print('bounded watchdog worker', sys.argv[1], flush=True); "
+            "raise SystemExit(17 if sys.argv[1] == '1' else 0)"
+        )
+        command_invocations = []
+
+        def test_worker_command(*_args):
+            invocation = len(command_invocations) + 1
+            command_invocations.append(invocation)
+            return [sys.executable, "-c", script, str(invocation)]
+
+        engine_patches = {
+            "_assert_clean_source_tree": mock.DEFAULT,
+            "_researcher_context": mock.DEFAULT,
+            "_verify_runtime_lock": mock.DEFAULT,
+            "_verify_current_remote_pr_head": mock.DEFAULT,
+            "validate_macos_sampled_backend": mock.DEFAULT,
+            "sample_host_memory_pressure": mock.DEFAULT,
+            "_researcher_runner_command": mock.DEFAULT,
+        }
+        watchdog_patches = {
+            "validate_macos_sampled_backend": mock.DEFAULT,
+            "sample_host_memory_pressure": mock.DEFAULT,
+            "sample_macos_native_state": mock.DEFAULT,
+            "_start_sleep_assertion": mock.DEFAULT,
+            "_stop_sleep_assertion": mock.DEFAULT,
+        }
+        with mock.patch.multiple(engine, **engine_patches) as engine_mock, \
+             mock.patch.multiple(watchdog, **watchdog_patches) as watchdog_mock, \
+             mock.patch.object(watchdog.shutil, "disk_usage", side_effect=disk_usage):
+            engine_mock["_researcher_context"].return_value = self.context
+            engine_mock["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            engine_mock["_researcher_runner_command"].side_effect = test_worker_command
+            watchdog_mock["validate_macos_sampled_backend"].return_value = {
+                **native, "boot_volume_free_bytes": 50 * GIB,
+                "swap_volume_free_bytes": 50 * GIB,
+            }
+            watchdog_mock["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            watchdog_mock["sample_macos_native_state"].return_value = native
+            watchdog_mock["_start_sleep_assertion"].return_value = AliveAssertion()
+            watchdog_mock["_stop_sleep_assertion"].return_value = None
+
+            first = engine.launch_researcher_authorized(
+                self.package_path, self.run_dir,
+                "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                self.package["commitment"]["experiment_uuid"],
+                comment_fetcher=self.comment_fetcher,
+                comment_lister=self.comment_lister)
+
+            stdout_path = self.run_dir / "runner.stdout.01.log"
+            self.assertTrue(stdout_path.is_file())
+            self.assertEqual(first["watchdog"]["status"], "failed")
+            self.assertEqual(first["run_integrity"], "NOT_COMPLETE")
+            stdout_digest = hashlib.sha256(stdout_path.read_bytes()).hexdigest()
+            watchdog_rows, _ = engine._read_chain_rows(self.run_dir / "watchdog.jsonl")
+            terminal = [row["event"] for row in watchdog_rows
+                        if row["event"].get("event") == "runner_exited"][-1]
+            self.assertEqual(terminal["invocation"], 1)
+            self.assertEqual(terminal["usage"]["runner_stdout_sha256"], stdout_digest)
+            audit_rows, _ = engine._read_chain_rows(
+                self.run_dir / "researcher_authorization.jsonl")
+            self.assertEqual(audit_rows[-1]["event"]["event"], "invocation_finished")
+            self.assertEqual(audit_rows[-1]["event"]["status"], "failed")
+
+            anchor_url = "https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-104"
+            self.comments.update(fake_remote_comments(
+                self.package, audit_body=first["github_anchor_body"]))
+            second = engine.launch_researcher_authorized(
+                self.package_path, self.run_dir,
+                "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                self.package["commitment"]["experiment_uuid"],
+                resume_anchor_url=anchor_url,
+                comment_fetcher=self.comment_fetcher,
+                comment_lister=self.comment_lister)
+
+        self.assertEqual(command_invocations, [1, 2])
+        self.assertEqual(second["experiment_uuid"],
+                         self.package["commitment"]["experiment_uuid"])
+        self.assertEqual(second["invocation"], 2)
+        self.assertEqual(second["watchdog"]["status"], "completed")
+        self.assertEqual(second["run_integrity"], "NOT_COMPLETE")
+        self.assertEqual(second["watchdog"]["returncode"], 0)
+        self.assertTrue((self.run_dir / "runner.stdout.01.log").is_file())
+        self.assertTrue((self.run_dir / "runner.stdout.02.log").is_file())
+        self.assertFalse(any(self.run_dir.glob(".nc0a-process-roles-*.json")))
+        self.assertFalse((self.run_dir / ".watchdog-emergency.reserve").exists())
+        self.assertGreaterEqual(
+            second["cumulative_wall_seconds"],
+            first["cumulative_wall_seconds"] +
+            second["watchdog"]["usage"]["wall_seconds"])
+
+    def test_resume_rejects_stdout_with_noncanonical_invocation_number(self):
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            patched["_supervise_named"].side_effect = self.fake_supervisor
+            first = engine.launch_researcher_authorized(
+                self.package_path, self.run_dir,
+                "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                self.package["commitment"]["experiment_uuid"],
+                comment_fetcher=self.comment_fetcher,
+                comment_lister=self.comment_lister)
+        self.comments.update(fake_remote_comments(
+            self.package, audit_body=first["github_anchor_body"]))
+        (self.run_dir / "runner.stdout.0001.log").write_text("unbound\n")
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            with self.assertRaisesRegex(ExecutionError, "not canonical"):
+                engine.launch_researcher_authorized(
+                    self.package_path, self.run_dir,
+                    "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                    self.package["commitment"]["experiment_uuid"],
+                    resume_anchor_url="https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-104",
+                    comment_fetcher=self.comment_fetcher,
+                    comment_lister=self.comment_lister)
+        self.assertEqual(self.calls, 1)
+
+    def test_resume_still_rejects_unrecognized_run_files(self):
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            patched["_supervise_named"].side_effect = self.fake_supervisor
+            first = engine.launch_researcher_authorized(
+                self.package_path, self.run_dir,
+                "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                self.package["commitment"]["experiment_uuid"],
+                comment_fetcher=self.comment_fetcher,
+                comment_lister=self.comment_lister)
+        self.comments.update(fake_remote_comments(
+            self.package, audit_body=first["github_anchor_body"]))
+        (self.run_dir / "unexpected-output.bin").write_bytes(b"not watchdog output\n")
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            with self.assertRaisesRegex(ExecutionError, "unrecognized files"):
+                engine.launch_researcher_authorized(
+                    self.package_path, self.run_dir,
+                    "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                    self.package["commitment"]["experiment_uuid"],
+                    resume_anchor_url="https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-104",
+                    comment_fetcher=self.comment_fetcher,
+                    comment_lister=self.comment_lister)
+        self.assertEqual(self.calls, 1)
+
+    def test_resume_rejects_modified_watchdog_stdout(self):
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            patched["_supervise_named"].side_effect = self.fake_supervisor
+            first = engine.launch_researcher_authorized(
+                self.package_path, self.run_dir,
+                "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                self.package["commitment"]["experiment_uuid"],
+                comment_fetcher=self.comment_fetcher,
+                comment_lister=self.comment_lister)
+        self.comments.update(fake_remote_comments(
+            self.package, audit_body=first["github_anchor_body"]))
+        with (self.run_dir / "runner.stdout.01.log").open("ab") as output:
+            output.write(b"tampered\n")
+        with self.launch_patches() as patched:
+            patched["_researcher_context"].return_value = self.context
+            patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}
+            with self.assertRaisesRegex(ExecutionError, "stdout hash differs"):
+                engine.launch_researcher_authorized(
+                    self.package_path, self.run_dir,
+                    "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS " +
+                    self.package["commitment"]["experiment_uuid"],
+                    resume_anchor_url="https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-104",
+                    comment_fetcher=self.comment_fetcher,
+                    comment_lister=self.comment_lister)
+        self.assertEqual(self.calls, 1)
+
     def test_truncated_watchdog_hash_chain_blocks_resume(self):
         with self.launch_patches() as patched:
             patched["_researcher_context"].return_value = self.context
@@ -609,6 +837,7 @@ class ResearcherAuthorizedLauncherTests(unittest.TestCase):
         watchdog_path = self.run_dir / "watchdog.jsonl"
         if watchdog_path.exists():
             watchdog_path.unlink()
+        (self.run_dir / "runner.stdout.01.log").unlink()
         with self.launch_patches() as patched:
             patched["_researcher_context"].return_value = self.context
             patched["sample_host_memory_pressure"].return_value = {"free_percent": 35}

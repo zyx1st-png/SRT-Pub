@@ -932,6 +932,97 @@ def _watchdog_invocation_history(root: Path) -> tuple[int, int, str]:
     return starts, terminals, tip
 
 
+def _verify_researcher_stdout_history(root: Path,
+                                     finished: list[dict]) -> set[str]:
+    """Admit only Watchdog stdout files bound to a finished invocation.
+
+    Current Watchdog records carry the researcher invocation number directly.
+    Logs written before that field was added are supported by pairing their
+    ordered stdout digests with the ordered watchdog_started records.
+    Every output must be present, a regular non-symlink file, canonically
+    numbered, and byte-for-byte consistent with the Watchdog hash record.
+    """
+    auth_by_invocation = {}
+    for expected_number, event in enumerate(finished, start=1):
+        invocation = event.get("invocation")
+        if type(invocation) is not int or invocation != expected_number:
+            raise ExecutionError("Researcher invocation numbering is not contiguous")
+        auth_by_invocation[invocation] = event
+    rows, _ = _read_chain_rows(root / "watchdog.jsonl")
+    output_events: list[tuple[int | None, str]] = []
+    for row in rows:
+        event = row.get("event", {})
+        name = event.get("event")
+        if name not in ("runner_exited", "watchdog_stop", "watchdog_exception",
+                        "watchdog_setup_failed"):
+            continue
+        usage = event.get("usage", {})
+        digest = event.get("runner_stdout_sha256")
+        if digest is None and isinstance(usage, dict):
+            digest = usage.get("runner_stdout_sha256")
+        if digest is None:
+            if name in ("runner_exited", "watchdog_stop"):
+                raise ExecutionError("Watchdog terminal record lacks its stdout digest")
+            continue
+        if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+            raise ExecutionError("Watchdog stdout digest is malformed")
+        invocation = event.get("invocation")
+        if invocation is not None and (type(invocation) is not int or invocation < 1):
+            raise ExecutionError("Watchdog stdout invocation number is invalid")
+        output_events.append((invocation, digest))
+
+    expected: dict[int, str] = {}
+    legacy_digests = []
+    for invocation, digest in output_events:
+        if invocation is None:
+            legacy_digests.append(digest)
+            continue
+        if invocation not in auth_by_invocation:
+            raise ExecutionError("Watchdog stdout refers to an unknown researcher invocation")
+        if invocation in expected:
+            raise ExecutionError("Watchdog recorded more than one stdout digest for an invocation")
+        expected[invocation] = digest
+
+    legacy_invocations = [
+        invocation for invocation, event in sorted(auth_by_invocation.items())
+        if event.get("watchdog_started") and invocation not in expected
+    ]
+    if len(legacy_invocations) != len(legacy_digests):
+        raise ExecutionError("Legacy Watchdog stdout history cannot be paired with invocation records")
+    expected.update(zip(legacy_invocations, legacy_digests))
+
+    for invocation, event in auth_by_invocation.items():
+        if event.get("watchdog_started") and invocation not in expected:
+            raise ExecutionError("A started Watchdog invocation has no stdout digest record")
+
+    actual: dict[int, Path] = {}
+    for entry in root.iterdir():
+        if not entry.name.startswith("runner.stdout"):
+            continue
+        match = re.fullmatch(r"runner\.stdout\.(\d{2,})\.log", entry.name)
+        if not match:
+            raise ExecutionError("Run directory contains an invalid Watchdog stdout filename")
+        invocation = int(match.group(1))
+        if invocation < 1 or entry.name != f"runner.stdout.{invocation:02d}.log":
+            raise ExecutionError("Watchdog stdout invocation number is not canonical")
+        if entry.is_symlink() or not entry.is_file():
+            raise ExecutionError("Watchdog stdout must be a regular non-symlink file")
+        if invocation in actual:
+            raise ExecutionError("Duplicate Watchdog stdout invocation number")
+        actual[invocation] = entry
+
+    if set(actual) != set(expected):
+        raise ExecutionError("Watchdog stdout files do not match the recorded invocation history")
+    for invocation, path in actual.items():
+        digest = sha256()
+        with path.open("rb") as handle:
+            for block in iter(lambda: handle.read(1 << 20), b""):
+                digest.update(block)
+        if digest.hexdigest() != expected[invocation]:
+            raise ExecutionError("Watchdog stdout hash differs from its chained audit record")
+    return {path.name for path in actual.values()}
+
+
 def _first_invocation_epoch(root: Path) -> float | None:
     rows, _ = _read_chain_rows(root / "researcher_authorization.jsonl")
     for row in rows:
@@ -2097,9 +2188,19 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
     existing_entries = list(root.iterdir())
     if any(entry.is_symlink() for entry in existing_entries):
         raise ExecutionError("Run-directory entries cannot be symlinks")
-    if any(entry.name not in allowed_before for entry in existing_entries):
-        raise ExecutionError("Run directory contains unrecognized files; refusing adoption")
+    stdout_entries = {entry.name for entry in existing_entries
+                      if entry.name.startswith("runner.stdout")}
+    unrecognized = sorted(entry.name for entry in existing_entries
+                          if entry.name not in allowed_before and
+                          entry.name not in stdout_entries)
+    if unrecognized:
+        raise ExecutionError(
+            "Run directory contains unrecognized files; refusing adoption: " +
+            ", ".join(unrecognized[:8]))
     prior_finished, _ = _researcher_invocation_history(root)
+    verified_stdout = _verify_researcher_stdout_history(root, prior_finished)
+    if stdout_entries != verified_stdout:
+        raise ExecutionError("Run directory contains unverified Watchdog stdout files")
     _verify_remote_audit_history(
         package, prior_finished, resume_anchor_url,
         comment_lister=comment_lister)
@@ -2257,7 +2358,8 @@ def _supervise_named(command: list[str], root: Path, limits: WatchdogLimits,
     """Monitor the actual run directory and keep stdout unique per invocation."""
     return supervise(command, run_dir=root, limits=limits,
                      audit_name="watchdog.jsonl",
-                     stdout_name=f"runner.stdout.{invocation:02d}.log")
+                     stdout_name=f"runner.stdout.{invocation:02d}.log",
+                     invocation_id=invocation)
 
 
 def main(argv: list[str] | None = None) -> int:
