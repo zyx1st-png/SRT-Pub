@@ -45,7 +45,7 @@ from nc0a_contract_runner import (
 )
 from nc0a_watchdog import (
     HashChainLog, WatchdogError, WatchdogLimits, guard_watchdog_parent,
-    sample_host_memory_pressure, supervise, validate_hard_memory_backend,
+    sample_host_memory_pressure, sample_macos_native_state, supervise, validate_hard_memory_backend,
     validate_macos_sampled_backend,
     verify_hash_chain,
 )
