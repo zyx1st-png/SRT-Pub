@@ -80,6 +80,17 @@ updated: 2026-09-23
 
 这条规则不把普通 A/B 类编辑升级成 C 类，也不要求为纯 typo、导航、版本号或 deterministic regeneration 重复做内容复审。
 
+### Claim Preservation Check — substantive B/C semantic revisions (2026-10-18)
+
+When a B or C edit substantively rewrites an author's or current owner's theory claim, carry a **proportional, existing-diff/PR-level** check rather than a new per-turn form or separate approval ladder:
+
+1. Identify the original proposition and the proposed change: `kept / strengthened / weakened / scoped / retracted / dropped`; point to the affected author source/owner and note if an open generative question, framework challenge or concept is lost.
+2. Give the concrete basis for a change in force (source conflict, logical error, counterexample, evidence, or an explicit author decision). A possible future reviewer objection, generic caution or AI-model consensus alone is insufficient.
+3. Distinguish correction of genuine overclaim from redundant hedging. Repair proven errors and unsupported assertions; preserve accurately scoped positive results and unresolved exploratory questions instead of adding unsupported universal disclaimers.
+4. Surface any substantive author-meaning change for the already-required adjudication; preserve independent semantic review for C-class edits. Do not let this check block routine wording/format changes, create a new mandatory standalone artifact, or authorize unilateral canonical edits.
+
+This check applies in addition to existing source-fidelity and evidence rules. Its purpose is to avoid both unwarranted deflation and overclaim, not to give untested claims immunity from criticism.
+
 ### Same-day rapid author-dialogue guard
 
 当同一天的 author dialogue 仍在快速生成、修正或相互覆盖 foundation-level 概念时：
