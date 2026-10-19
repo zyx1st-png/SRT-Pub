@@ -5,7 +5,10 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+import signal
+import sys
 import tempfile
+import time
 import unittest
 from unittest import mock
 
@@ -17,7 +20,9 @@ from nc0a_contract_runner import (
     NC0aContractError, OperationalExecutionFailure, ScientificIntegrityFailure, save_report_once,
     synthetic_chain,
 )
-from nc0a_watchdog import HashChainLog, WatchdogError, verify_hash_chain
+from nc0a_watchdog import (
+    HashChainLog, WatchdogError, WatchdogLimits, supervise, verify_hash_chain,
+)
 from synthetic_graphs import synthetic_seed
 
 
@@ -242,6 +247,107 @@ class NC0aExecutionEngineTests(unittest.TestCase):
                                 oracle_seconds=30, max_attempts_per_case=2,
                                 formal=False)
                 execute.assert_not_called()
+
+    def test_report_persistence_contract_error_is_unclassified_and_blocks_recovery(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(engine, "_execute_case_attempt",
+                                   return_value={"toy": True}), \
+                    mock.patch.object(engine, "save_report_once",
+                                      side_effect=NC0aContractError(
+                                          "Existing report cannot be silently overwritten")):
+                with self.assertRaisesRegex(NC0aContractError, "silently overwritten"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "UNCLASSIFIED_REQUIRES_REVIEW")
+            self.assertEqual(failure["reason_code"], "UNCLASSIFIED_EXCEPTION")
+            self.assertFalse(failure["recovery_allowed"])
+            with mock.patch.object(engine, "_execute_case_attempt") as execute:
+                with self.assertRaisesRegex(ExecutionError, "manual review"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+                execute.assert_not_called()
+
+    def test_confirmed_watchdog_signal_exit_is_logged_and_same_seed_recovery_is_bounded(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            attempt_dir = root / "cases" / TOY_A.key / "attempt-01"
+            attempt_dir.mkdir(parents=True)
+            manifest = engine._new_manifest(
+                root, head="TEST_ONLY", policy_hash="TEST_ONLY",
+                protocol={"test_case_keys": [TOY_A.key],
+                          "root_seed": engine.ENGINEERING_TEST_SEED_ROOT,
+                          "recovery": engine.PROTOCOL["recovery"]}, formal=False)
+            engine._write_manifest_once(root, manifest)
+            (root / "active_task.json").write_text(json.dumps({
+                "phase": "case", "task_id": f"{TOY_A.key}/attempt-01",
+                "started_utc_epoch": time.time()}))
+            as_log = HashChainLog(root / "execution.jsonl")
+            try:
+                as_log.append({"event": "case_attempt_started", "case": TOY_A.key,
+                               "attempt": 1, "fixed_seeds": None})
+            finally:
+                as_log.close()
+            limits = WatchdogLimits(
+                wall_seconds=10, cpu_seconds=100,
+                aggregate_rss_bytes=512 * 1024 * 1024, max_workers=2,
+                run_disk_bytes=64 * 1024 * 1024, reserve_free_disk_bytes=1,
+                case_seconds=5, oracle_seconds=5, poll_seconds=0.05,
+                suspend_tolerance_seconds=1, terminate_grace_seconds=0.1)
+            watched = supervise(
+                [sys.executable, "-c",
+                 f"import os, signal; os.kill(os.getpid(), signal.{signal.Signals(signal.SIGKILL).name})"],
+                run_dir=root, limits=limits, stdout_name="runner.stdout.01.log",
+                invocation_id=1)
+            self.assertEqual(watched["status"], "failed")
+            self.assertEqual(watched["returncode"], -signal.SIGKILL)
+            self.assertTrue(engine._append_runner_signal_failure(root, 1, watched))
+            engine._append_invocation_disposition(
+                root, 1, status="failed", returncode=watched["returncode"],
+                run_integrity="NOT_COMPLETE", result=watched, prior_event_count=1)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "OPERATIONAL_FAILURE")
+            self.assertEqual(failure["reason_code"], "RUNNER_SIGNAL_EXIT_SIGKILL")
+            self.assertTrue(failure["recovery_allowed"])
+            result = run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                 oracle_seconds=30, max_attempts_per_case=2,
+                                 formal=False)
+            self.assertEqual(result["completed_cases"], 1)
+            report = json.loads((root / "cases" / TOY_A.key /
+                                 "attempt-02" / "result.json").read_text())
+            self.assertEqual(report["attempt"], 2)
+            self.assertEqual(report["chain_seeds"], [
+                synthetic_seed(TOY_A.family, TOY_A.n, kind="chain",
+                               chain_index=i, root=engine.ENGINEERING_TEST_SEED_ROOT)
+                for i in range(8)])
+
+    def test_positive_runner_exit_and_signal_without_valid_active_task_are_not_recoverable(self):
+        self.assertFalse(engine._append_runner_signal_failure(
+            Path("/not-used"), 1, {"status": "failed", "returncode": 17}))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.assertFalse(engine._append_runner_signal_failure(
+                root, 1, {"status": "failed", "returncode": -signal.SIGKILL}))
+
+    def test_invalid_paired_statistics_are_explicit_scientific_failures(self):
+        chains = []
+        for index in range(8):
+            metrics = {"triangles": float("nan"),
+                       "assortativity": 0.0, "edge_overlap": 0.0}
+            chains.append({"chain_index": index, "n": TOY_A.n,
+                           "family": TOY_A.family,
+                           "checkpoints": {"4": {"metrics": metrics},
+                                           "32": {"metrics": metrics}}})
+        with self.assertRaises(ScientificIntegrityFailure) as caught:
+            engine.screen_case(chains, require_full_contract=False)
+        self.assertEqual(caught.exception.reason_code, "INVALID_PAIRED_STATISTIC")
 
     def test_two_operational_attempts_exhaust_the_allowance(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -25,6 +25,7 @@ import plistlib
 import re
 import resource
 import shutil
+import signal
 import stat
 import subprocess
 import sys
@@ -1510,9 +1511,6 @@ def _classify_attempt_failure(exc: BaseException) -> dict:
     if isinstance(exc, ScientificIntegrityFailure):
         return {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
                 "reason_code": exc.reason_code, "recovery_allowed": False}
-    if isinstance(exc, NC0aContractError):
-        return {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
-                "reason_code": "SCIENTIFIC_CONTRACT_FAILURE", "recovery_allowed": False}
     if isinstance(exc, BrokenProcessPool):
         return {"failure_category": "OPERATIONAL_FAILURE",
                 "reason_code": "COMPUTE_WORKER_PROCESS_CRASH", "recovery_allowed": True}
@@ -1702,6 +1700,99 @@ def _append_watchdog_interruption(root: Path, invocation: int, result: dict) -> 
         log.close()
 
 
+def _append_runner_signal_failure(root: Path, invocation: int,
+                                  result: dict) -> bool:
+    """Persist a task failure only when Watchdog proves a signal-killed runner.
+
+    A negative subprocess return code is an OS-reported signal termination.
+    Recovery is permitted only if the same invocation has a paired Watchdog
+    terminal/usage record and an active task marker matched to one unfinished,
+    hash-chained attempt start. Positive exit codes remain unclassified unless
+    the runner itself persisted a more specific failure.
+    """
+    returncode = result.get("returncode")
+    if result.get("status") != "failed" or type(returncode) is not int or returncode >= 0:
+        return False
+    try:
+        signal_name = signal.Signals(-returncode).name
+    except ValueError:
+        return False
+
+    root = Path(root)
+    watchdog_rows, _ = _read_chain_rows(root / "watchdog.jsonl")
+    starts_for_invocation = [row.get("event", {}) for row in watchdog_rows
+                             if row.get("event", {}).get("event") == "run_started" and
+                             row.get("event", {}).get("invocation") == invocation]
+    terminals = [row.get("event", {}) for row in watchdog_rows
+                 if row.get("event", {}).get("event") in
+                 ("runner_exited", "watchdog_stop", "watchdog_exception")]
+    if len(starts_for_invocation) != 1 or not terminals:
+        return False
+    terminal = terminals[-1]
+    if (terminal.get("event") != "runner_exited" or
+        terminal.get("invocation") != invocation or
+        terminal.get("returncode") != returncode or
+        not isinstance(terminal.get("usage"), dict) or
+        terminal.get("usage") != result.get("usage")):
+        return False
+
+    active_path = root / "active_task.json"
+    if not active_path.is_file() or active_path.is_symlink():
+        return False
+    try:
+        active = _read_json(active_path)
+    except ExecutionError:
+        return False
+    parsed = _attempt_number_from_task_id(active.get("task_id"))
+    if parsed is None:
+        return False
+    case, attempt = parsed
+    try:
+        manifest = _read_json(root / "run_manifest.json")
+    except ExecutionError:
+        return False
+    if manifest.get("formal_contract") is True:
+        allowed_cases = {spec.key for spec in formal_cases()}
+    else:
+        protocol = manifest.get("protocol", {})
+        allowed_cases = set(protocol.get("test_case_keys", []))
+    if case not in allowed_cases:
+        return False
+    attempt_dir = root / "cases" / case / f"attempt-{attempt:02d}"
+    if (not attempt_dir.is_dir() or attempt_dir.is_symlink() or
+        active_path.resolve().parent != root.resolve()):
+        return False
+
+    rows = _read_execution_records(root / "execution.jsonl")
+    starts = [row.get("event", {}) for row in rows
+              if row.get("event", {}).get("event") == "case_attempt_started" and
+              row.get("event", {}).get("case") == case and
+              row.get("event", {}).get("attempt") == attempt]
+    terminals_for_attempt = [row.get("event", {}) for row in rows
+                             if row.get("event", {}).get("event") in
+                             ("case_attempt_failed", "case_attempt_completed") and
+                             row.get("event", {}).get("case") == case and
+                             row.get("event", {}).get("attempt") == attempt]
+    if len(starts) != 1 or terminals_for_attempt:
+        return False
+    expected_seeds = manifest.get("seed_manifest", {}).get(case)
+    if starts[0].get("fixed_seeds") != expected_seeds:
+        return False
+
+    log = HashChainLog(root / "execution.jsonl")
+    try:
+        log.append({"event": "case_attempt_failed", "case": case,
+                    "attempt": attempt, "exception_type": "RunnerSignalExit",
+                    "message": f"Watchdog-recorded runner termination by {signal_name}",
+                    "failure_category": "OPERATIONAL_FAILURE",
+                    "reason_code": "RUNNER_SIGNAL_EXIT_" + signal_name,
+                    "recovery_allowed": True, "invocation": invocation,
+                    "traceback": ""})
+    finally:
+        log.close()
+    return True
+
+
 def _append_invocation_disposition(root: Path, invocation: int, *, status: str,
                                    returncode: int | None, run_integrity: str,
                                    result: dict, prior_event_count: int) -> None:
@@ -1720,7 +1811,7 @@ def _append_invocation_disposition(root: Path, invocation: int, *, status: str,
                                   ("failure_category", "reason_code", "recovery_allowed")}
     elif status == "COMPLETED_PROCESS_BUT_RESULT_INVALID":
         error = result.get("result_integrity_error", "")
-        if "NC0aContractError" in error or "ScientificIntegrityFailure" in error:
+        if "ScientificIntegrityFailure" in error:
             classification = {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
                               "reason_code": "COMPLETED_RESULT_CONTRACT_MISMATCH",
                               "recovery_allowed": False}
@@ -2687,6 +2778,8 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
             status = result.get("status", "unknown")
         if status == "stopped":
             _append_watchdog_interruption(root, invocation, result)
+        elif status == "failed":
+            _append_runner_signal_failure(root, invocation, result)
         run_integrity = "NOT_COMPLETE"
         if status == "completed" and returncode == 0:
             try:

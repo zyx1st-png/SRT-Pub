@@ -67,9 +67,11 @@ def _snapshot(g: ConnectedDegreeSwap, initial: tuple[tuple[int, int], ...],
         raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", str(exc)) from exc
     values = metrics(g.n, g.edges, initial)
     if not all(math.isfinite(v) for v in values.values()):
-        raise NC0aContractError("Invalid graph metric (including assortativity)")
+        raise ScientificIntegrityFailure(
+            "INVALID_GRAPH_METRIC", "Invalid graph metric (including assortativity)")
     if audited_accepts != g.accepted:
-        raise NC0aContractError("Per-accepted local audit count mismatch")
+        raise ScientificIntegrityFailure(
+            "ACCEPTED_SWAP_AUDIT_MISMATCH", "Per-accepted local audit count mismatch")
     return {
         "attempts": g.attempts,
         "accepted": g.accepted,
@@ -109,7 +111,9 @@ def synthetic_chain(n: int, family: str, chain_index: int, *,
         fixture = make_synthetic_graph(n, family, root=root)
     elif (fixture.n != n or fixture.family != family or
           fixture.seed != synthetic_seed(family, n, root=root)):
-        raise NC0aContractError("Injected fixture does not match fixed case identity")
+        raise ScientificIntegrityFailure(
+            "FIXED_FIXTURE_IDENTITY_MISMATCH",
+            "Injected fixture does not match fixed case identity")
     g = ConnectedDegreeSwap(n, fixture.edges)
     steps = tuple(c * g.m for c in checkpoints)
     if steps[-1] > max_proposals:
@@ -135,7 +139,8 @@ def synthetic_chain(n: int, family: str, chain_index: int, *,
                 g, fixture.edges, seed, locally_audited)
     _assert_budget(deadline)
     if g.attempts != g.accepted + g.rejected_overlap + g.rejected_duplicate + g.rejected_disconnect:
-        raise NC0aContractError("Exact proposal/rejection conservation failed")
+        raise ScientificIntegrityFailure(
+            "PROPOSAL_ACCOUNTING_MISMATCH", "Exact proposal/rejection conservation failed")
     return {
         "family": family,
         "n": n,
@@ -181,7 +186,9 @@ def oracle_trace(n: int, family: str, *, root: int = 20261009,
         raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", str(exc)) from exc
     _assert_budget(deadline)
     if graph.attempts != attempts or graph.accepted != accepted_audits:
-        raise NC0aContractError("Oracle integrity / proposal accounting failure")
+        raise ScientificIntegrityFailure(
+            "BFS_ORACLE_ACCOUNTING_MISMATCH",
+            "Oracle integrity / proposal accounting failure")
     return {
         "family": family, "n": n, "fixture_sha256": fixture.fingerprint(),
         "seed": seed, "attempts": graph.attempts, "accepted": graph.accepted,
@@ -196,47 +203,61 @@ def screen_case(chains: list[dict], *,
                 require_full_contract: bool = True) -> dict:
     """Never replace non-rejection with 'mixed' or equilibrium calibration."""
     if len(chains) != CHAIN_COUNT:
-        raise NC0aContractError("Case requires exactly eight independent chains")
+        raise ScientificIntegrityFailure(
+            "CHAIN_COUNT_MISMATCH", "Case requires exactly eight independent chains")
     ids = {c["chain_index"] for c in chains}
     if ids != set(range(CHAIN_COUNT)):
-        raise NC0aContractError("Missing/duplicate chain IDs")
+        raise ScientificIntegrityFailure("CHAIN_ID_MISMATCH", "Missing/duplicate chain IDs")
     n, family = chains[0]["n"], chains[0]["family"]
     if any(c["n"] != n or c["family"] != family for c in chains):
-        raise NC0aContractError("Mixed case identities")
+        raise ScientificIntegrityFailure("MIXED_CASE_IDENTITY", "Mixed case identities")
     if require_full_contract and (
         n not in FORMAL_N or family not in FAMILIES
     ):
-        raise NC0aContractError("Not a formal preregistered case")
+        raise ScientificIntegrityFailure(
+            "CASE_NOT_IN_PREREGISTRATION", "Not a formal preregistered case")
     if require_full_contract:
         expected = set(map(str, CHECKPOINTS))
         fixtures = {c.get("fixture_sha256") for c in chains}
         if None in fixtures or len(fixtures) != 1:
-            raise NC0aContractError("Missing or mismatched fixture fingerprints")
+            raise ScientificIntegrityFailure(
+                "FIXTURE_FINGERPRINT_MISMATCH",
+                "Missing or mismatched fixture fingerprints")
         for c in chains:
             if c["seed"] != synthetic_seed(family, n, kind="chain",
                                           chain_index=c["chain_index"]):
-                raise NC0aContractError("Incorrect chain seed")
+                raise ScientificIntegrityFailure("FIXED_SEED_MISMATCH", "Incorrect chain seed")
             if set(c["checkpoints"]) != expected:
-                raise NC0aContractError("Missing/extra formal checkpoint")
+                raise ScientificIntegrityFailure(
+                    "CHECKPOINT_SET_MISMATCH", "Missing/extra formal checkpoint")
             if c["audit"]["per_accepted_local"] != c["checkpoints"]["32"]["accepted"]:
-                raise NC0aContractError("Some accepted swaps were not audited")
+                raise ScientificIntegrityFailure(
+                    "ACCEPTED_SWAP_AUDIT_MISMATCH", "Some accepted swaps were not audited")
             if c["audit"]["full_connectivity_checkpoints"] != len(CHECKPOINTS):
-                raise NC0aContractError("Missing full-connectivity checkpoint audits")
+                raise ScientificIntegrityFailure(
+                    "CONNECTIVITY_CHECKPOINT_AUDIT_MISMATCH",
+                    "Missing full-connectivity checkpoint audits")
             edge_count = c["edge_count"]
             for multiplier in CHECKPOINTS:
                 snap = c["checkpoints"][str(multiplier)]
                 if snap["attempts"] != multiplier * edge_count:
-                    raise NC0aContractError("Invalid checkpoint attempt count")
+                    raise ScientificIntegrityFailure(
+                        "CHECKPOINT_PROPOSAL_COUNT_MISMATCH",
+                        "Invalid checkpoint attempt count")
                 if snap["accepted"] != snap["audited_accepted_swaps"]:
-                    raise NC0aContractError("Unaudited accepted swaps")
+                    raise ScientificIntegrityFailure(
+                        "ACCEPTED_SWAP_AUDIT_MISMATCH", "Unaudited accepted swaps")
                 if snap["attempts"] != (
                     snap["accepted"] + snap["rejected_overlap"] +
                     snap["rejected_duplicate"] + snap["rejected_disconnect"]
                 ):
-                    raise NC0aContractError("Invalid checkpoint rejection counts")
+                    raise ScientificIntegrityFailure(
+                        "CHECKPOINT_REJECTION_ACCOUNTING_MISMATCH",
+                        "Invalid checkpoint rejection counts")
     if any(c["checkpoints"].get("4") is None or
            c["checkpoints"].get("32") is None for c in chains):
-        raise NC0aContractError("Missing paired 4E/32E snapshots")
+        raise ScientificIntegrityFailure(
+            "PAIRED_CHECKPOINT_MISSING", "Missing paired 4E/32E snapshots")
     output = {}
     for metric in METRICS:
         diffs = [
@@ -246,7 +267,8 @@ def screen_case(chains: list[dict], *,
         try:
             t_value = abs_paired_t(diffs)
         except (ValueError, statistics.StatisticsError) as exc:
-            raise NC0aContractError(str(exc)) from exc
+            raise ScientificIntegrityFailure(
+                "INVALID_PAIRED_STATISTIC", str(exc)) from exc
         sd = statistics.stdev(diffs)
         from scipy.stats import t as student_t  # original pipeline already uses SciPy
         two_sided_p = (0.0 if t_value == math.inf else
@@ -255,7 +277,8 @@ def screen_case(chains: list[dict], *,
         values_4 = [c["checkpoints"]["4"]["metrics"][metric] for c in chains]
         values_32 = [c["checkpoints"]["32"]["metrics"][metric] for c in chains]
         if not math.isfinite(t_value) and t_value != math.inf:
-            raise NC0aContractError("Non-finite unexpected t statistic")
+            raise ScientificIntegrityFailure(
+                "INVALID_PAIRED_STATISTIC", "Non-finite unexpected t statistic")
         passed = t_value <= PAIRED_T_CRITICAL
         output[metric] = {
             "values_at_4E": values_4,
@@ -298,19 +321,25 @@ def validate_full_battery(case_reports: list[dict],
     wanted = {(n, f) for n in FORMAL_N for f in FAMILIES}
     actual = [(r["n"], r["family"]) for r in case_reports]
     if len(actual) != len(wanted) or set(actual) != wanted:
-        raise NC0aContractError("Incomplete or duplicate full battery")
+        raise ScientificIntegrityFailure(
+            "FULL_BATTERY_CASE_COVERAGE_MISMATCH", "Incomplete or duplicate full battery")
     if any(set(r["metrics"]) != set(METRICS) for r in case_reports):
-        raise NC0aContractError("Missing one of the 48 case/metric screens")
+        raise ScientificIntegrityFailure(
+            "STATISTICAL_COMPARISON_COVERAGE_MISMATCH",
+            "Missing one of the 48 case/metric screens")
     if oracle_reports is None or len(oracle_reports) != 16:
-        raise NC0aContractError("All 16 separate BFS-oracle traces required")
+        raise ScientificIntegrityFailure(
+            "BFS_ORACLE_COVERAGE_MISMATCH", "All 16 separate BFS-oracle traces required")
     oracle_keys = [(x["n"], x["family"]) for x in oracle_reports]
     if set(oracle_keys) != wanted or len(set(oracle_keys)) != 16:
-        raise NC0aContractError("Missing/duplicate oracle case")
+        raise ScientificIntegrityFailure(
+            "BFS_ORACLE_CASE_COVERAGE_MISMATCH", "Missing/duplicate oracle case")
     if any(x.get("attempts") != ORACLE_PROPOSALS or
            x.get("oracle_mismatches") != 0 or
            x.get("accepted_local_audits") != x.get("accepted")
            for x in oracle_reports):
-        raise NC0aContractError("Invalid oracle-proposal audit")
+        raise ScientificIntegrityFailure(
+            "BFS_ORACLE_AUDIT_MISMATCH", "Invalid oracle-proposal audit")
     return {
         "cases": 16, "comparisons": 48,
         "drift_screen_pass": all(r["anomaly_screen_pass"] for r in case_reports),
