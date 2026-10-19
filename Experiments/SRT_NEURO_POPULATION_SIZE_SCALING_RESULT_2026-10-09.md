@@ -51,7 +51,7 @@ Positive slopes: **5/5**. Cross-animal median β_N: **0.06729**; mean β_N: **0.
 
 The legacy ±0.01 band is shown only as a descriptive reference. It is not an uncertainty interval, significance threshold, or success criterion.
 
-![RIKEN Sleep ΔQ by population size](/Users/zhangyuxin/Documents/研究/SRT-Pub/Experiments/SRT_NEURO_POPULATION_SIZE_SCALING_FIGURE_2026-10-09.png)
+![RIKEN Sleep ΔQ by population size](SRT_NEURO_POPULATION_SIZE_SCALING_FIGURE_2026-10-09.png)
 
 ## Kiyooka comparison and anchor
 

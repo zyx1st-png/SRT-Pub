@@ -1,0 +1,104 @@
+{
+  "format": "NC0A_RESEARCHER_AUTHORIZED_EXECUTION_PACKAGE_V1",
+  "commitment": {
+    "format": "NC0A_RESEARCHER_AUTHORIZED_COMMITMENT_V1",
+    "experiment_uuid": "REPLACE_WITH_NEW_CANONICAL_UUID",
+    "researcher": {
+      "name": "RESEARCHER_NAME",
+      "github_login": "RESEARCHER_GITHUB_LOGIN",
+      "decision": "I_APPROVE_FORMAL_NC0A_AND_ACCEPT_THE_RECORDED_LIMITS_AND_RISKS",
+      "confirmed_at_utc": "REPLACE_WITH_UTC_TIMESTAMP",
+      "confirmation_phrase": "I ACCEPT NC-0a RESEARCHER-AUTHORIZED EXECUTION AND RECORDED RISKS"
+    },
+    "repository": {
+      "head_sha": "COPY_FROM_RESEARCHER_INVENTORY",
+      "clean_tree": true,
+      "preregistration_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "resource_amendment_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "runtime_lock_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "protocol_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "seed_manifest_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "watchdog_contract_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "watchdog_source_sha256": "COPY_FROM_RESEARCHER_INVENTORY",
+      "source_sha256": "COPY_THE_COMPLETE_SOURCE_HASH_OBJECT_FROM_INVENTORY"
+    },
+    "environment": "COPY_COMPLETE_ENVIRONMENT_OBJECT_FROM_INVENTORY",
+    "scientific_protocol": "COPY_COMPLETE_SCIENTIFIC_PROTOCOL_OBJECT_FROM_INVENTORY",
+    "independent_science_reviews": [
+      {
+        "reviewer_id": "DISTINCT_REVIEWER_OR_MODEL_ID_1",
+        "reviewer_type": "AI_MODEL_OR_HUMAN_REVIEWER",
+        "reviewed_head_sha": "SAME_FROZEN_HEAD_SHA",
+        "decision": "NO_BLOCKING_FINDINGS_FOR_NC0A_EXECUTION",
+        "scope": ["methods", "statistics"],
+        "blocking_findings": [],
+        "human_peer_review": false,
+        "github_comment_url": "https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-REPLACE"
+      },
+      {
+        "reviewer_id": "DISTINCT_REVIEWER_OR_MODEL_ID_2",
+        "reviewer_type": "AI_MODEL_OR_HUMAN_REVIEWER",
+        "reviewed_head_sha": "SAME_FROZEN_HEAD_SHA",
+        "decision": "NO_BLOCKING_FINDINGS_FOR_NC0A_EXECUTION",
+        "scope": ["implementation"],
+        "blocking_findings": [],
+        "human_peer_review": false,
+        "github_comment_url": "https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-REPLACE"
+      }
+    ],
+    "resource_policy": {
+      "version": "NC0A_MACOS_RESEARCHER_RESOURCE_POLICY_V1",
+      "memory_backend": "MACOS_SAMPLED_PRESSURE",
+      "macos_memory_semantics": "SAMPLED_RSS_AND_HOST_PRESSURE_ABORTS_ONLY_NOT_OS_HARD_LIMIT; TRANSIENT_RSS_PEAK_MAY_BE_MISSED_AND_OS_OOM_OR_OTHER_APP_DISRUPTION_REMAINS",
+      "output_directory": "/ABSOLUTE/PRIVATE/PATH/ON/INTERNAL/DATA/APFS",
+      "output_volume": "COPY_DATA_OUTPUT_VOLUME_OBJECT_FROM_INVENTORY",
+      "internal_volumes": {
+        "data": "COPY_DATA_VOLUME_OBJECT_FROM_INVENTORY",
+        "vm": "COPY_VM_VOLUME_OBJECT_FROM_INVENTORY"
+      },
+      "baseline_measurement": {
+        "measured_at_utc": "REPLACE_WITH_FRESH_UTC_TIMESTAMP",
+        "data_free_bytes": 0,
+        "vm_free_bytes": 0,
+        "host_memory_free_percent": 0,
+        "swap_total_bytes": 0,
+        "swap_used_bytes": 0,
+        "swap_free_bytes": 0
+      },
+      "limits": {
+        "max_workers": 4,
+        "wall_seconds": 259200,
+        "cpu_seconds": 1036800,
+        "per_case_seconds": 43200,
+        "oracle_seconds": 1800,
+        "sampled_rss_bytes": 4294967296,
+        "host_free_percent_stop": 20,
+        "swap_growth_bytes": 2147483648,
+        "data_min_free_bytes": 42949672960,
+        "data_reserve_bytes": 32212254720,
+        "vm_min_free_bytes": 42949672960,
+        "vm_reserve_bytes": 32212254720,
+        "run_output_cap_bytes": 4294967296,
+        "run_output_reserve_bytes": 32212254720,
+        "max_attempts_per_case": 2
+      },
+      "require_ac_power": true,
+      "require_normal_thermal_state": true,
+      "require_sleep_assertion": true,
+      "recovery_rule": "TASK_LEVEL_FROM_ZERO_SAME_SEED_NO_OUTCOME_DEPENDENT_RETRY"
+    },
+    "risk_acknowledgements": {
+      "macos_sampled_memory_is_not_a_hard_limit": true,
+      "transient_memory_peaks_can_be_missed": true,
+      "T_PS_A_remains_unresolved": true,
+      "NC0a_budget_does_not_clear_G0_or_T1": true,
+      "all_passes_retain_MIXING_UNRESOLVED": true,
+      "prior_informal_result_exposure_is_disclosed": true,
+      "no_outcome_dependent_seed_change_retry_or_threshold_change": true,
+      "researcher_accepts_execution_risk_without_third_party_authorization": true,
+      "AI_review_is_not_external_human_peer_review": true
+    }
+  },
+  "commitment_sha256": "COMPUTE_SHA256_OF_CANONICAL_COMMITMENT_OBJECT",
+  "precommit_comment_url": "https://github.com/zyx1st-png/SRT-Pub/pull/1114#issuecomment-REPLACE"
+}
