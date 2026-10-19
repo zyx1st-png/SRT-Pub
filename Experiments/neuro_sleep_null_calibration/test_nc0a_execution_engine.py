@@ -13,7 +13,10 @@ import nc0a_execution_engine as engine
 from nc0a_execution_engine import (
     CaseSpec, ExecutionError, formal_cases, run_battery, run_case_attempt,
 )
-from nc0a_contract_runner import save_report_once, synthetic_chain
+from nc0a_contract_runner import (
+    NC0aContractError, OperationalExecutionFailure, ScientificIntegrityFailure, save_report_once,
+    synthetic_chain,
+)
 from nc0a_watchdog import HashChainLog, WatchdogError, verify_hash_chain
 from synthetic_graphs import synthetic_seed
 
@@ -175,6 +178,160 @@ class NC0aExecutionEngineTests(unittest.TestCase):
                             oracle_seconds=30, max_attempts_per_case=2,
                             formal=False)
 
+    def test_scientific_integrity_failure_is_persisted_and_cannot_be_retried(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(engine, "_execute_case_attempt",
+                                   side_effect=ScientificIntegrityFailure(
+                                       "BFS_ORACLE_MISMATCH", "oracle mismatch")):
+                with self.assertRaisesRegex(ScientificIntegrityFailure, "oracle mismatch"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "SCIENTIFIC_INTEGRITY_FAILURE")
+            self.assertEqual(failure["reason_code"], "BFS_ORACLE_MISMATCH")
+            self.assertFalse(failure["recovery_allowed"])
+            with mock.patch.object(engine, "_execute_case_attempt") as execute:
+                with self.assertRaisesRegex(ScientificIntegrityFailure, "recovery is prohibited"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+                execute.assert_not_called()
+            self.assertFalse((root / "cases" / TOY_A.key / "attempt-02").exists())
+
+    def test_graph_oracle_assertion_is_converted_to_scientific_integrity_failure(self):
+        import connected_swap
+        for route in ("chain", "oracle"):
+            with self.subTest(route=route), mock.patch.object(
+                    connected_swap.ConnectedDegreeSwap, "propose",
+                    side_effect=AssertionError("injected graph invariant disagreement")):
+                with self.assertRaises(ScientificIntegrityFailure) as caught:
+                    if route == "chain":
+                        synthetic_chain(20, "er-like", 0,
+                                        root=8062026,
+                                        checkpoints=(1,), max_wall_seconds=5,
+                                        max_proposals=500)
+                    else:
+                        from nc0a_contract_runner import oracle_trace
+                        oracle_trace(20, "er-like", root=8062026, attempts=1,
+                                     max_wall_seconds=5, max_proposals=1)
+                self.assertIn(caught.exception.reason_code,
+                              {"GRAPH_INVARIANT_FAILURE",
+                               "BFS_ORACLE_OR_GRAPH_INVARIANT_FAILURE"})
+
+    def test_unknown_exception_is_persisted_and_blocks_automatic_recovery(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(engine, "_execute_case_attempt",
+                                   side_effect=ValueError("unclassified injected fault")):
+                with self.assertRaisesRegex(ValueError, "unclassified injected fault"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "UNCLASSIFIED_REQUIRES_REVIEW")
+            self.assertFalse(failure["recovery_allowed"])
+            with mock.patch.object(engine, "_execute_case_attempt") as execute:
+                with self.assertRaisesRegex(ExecutionError, "manual review"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+                execute.assert_not_called()
+
+    def test_two_operational_attempts_exhaust_the_allowance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            injected = OperationalExecutionFailure("INJECTED_RESOURCE_STOP", "bounded test stop")
+            for attempt in (1, 2):
+                with mock.patch.object(engine, "_execute_case_attempt", side_effect=injected):
+                    with self.assertRaisesRegex(OperationalExecutionFailure, "bounded test stop"):
+                        run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                    oracle_seconds=30, max_attempts_per_case=2,
+                                    formal=False)
+                self.assertTrue((root / "cases" / TOY_A.key /
+                                 f"attempt-{attempt:02d}").is_dir())
+            with mock.patch.object(engine, "_execute_case_attempt") as execute:
+                with self.assertRaisesRegex(ExecutionError, "exhausted its 2-attempt"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+                execute.assert_not_called()
+
+    def test_started_attempt_without_terminal_failure_record_is_not_recoverable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with mock.patch.object(engine, "_execute_case_attempt",
+                                   side_effect=OperationalExecutionFailure(
+                                       "INJECTED_CRASH", "injected")):
+                with self.assertRaises(OperationalExecutionFailure):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+            log_path = root / "execution.jsonl"
+            lines = log_path.read_bytes().splitlines(keepends=True)
+            failure_index = next(i for i, line in enumerate(lines)
+                                 if json.loads(line)["event"]["event"] == "case_attempt_failed")
+            log_path.write_bytes(b"".join(lines[:failure_index]))
+            self.assertIsNotNone(verify_hash_chain(log_path))  # Valid prefix, missing terminal.
+            with mock.patch.object(engine, "_execute_case_attempt") as execute:
+                with self.assertRaisesRegex(ExecutionError, "incomplete or conflicting terminal"):
+                    run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                oracle_seconds=30, max_attempts_per_case=2,
+                                formal=False)
+                execute.assert_not_called()
+
+    def test_watchdog_recovery_is_limited_to_explicit_operational_stop_reasons(self):
+        recoverable = engine._classify_watchdog_stop("AGGREGATE_RSS_LIMIT")
+        self.assertEqual(recoverable["failure_category"], "OPERATIONAL_FAILURE")
+        self.assertTrue(recoverable["recovery_allowed"])
+        unresolved = engine._classify_watchdog_stop("UNKNOWN_PROCESS_GROUP_MEMBER")
+        self.assertEqual(unresolved["failure_category"], "UNCLASSIFIED_REQUIRES_REVIEW")
+        self.assertFalse(unresolved["recovery_allowed"])
+
+    def test_reason_coded_watchdog_stop_is_logged_before_same_seed_task_recovery(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "cases" / TOY_A.key / "attempt-01").mkdir(parents=True)
+            manifest = engine._new_manifest(
+                root, head="TEST_ONLY", policy_hash="TEST_ONLY",
+                protocol={"test_case_keys": [TOY_A.key],
+                          "root_seed": engine.ENGINEERING_TEST_SEED_ROOT,
+                          "recovery": engine.PROTOCOL["recovery"]}, formal=False)
+            engine._write_manifest_once(root, manifest)
+            active = {"phase": "case", "task_id": f"{TOY_A.key}/attempt-01",
+                      "started_utc_epoch": 1.0}
+            (root / "active_task.json").write_text(json.dumps(active))
+            as_log = HashChainLog(root / "execution.jsonl")
+            try:
+                as_log.append({"event": "case_attempt_started", "case": TOY_A.key,
+                               "attempt": 1, "fixed_seeds": None})
+            finally:
+                as_log.close()
+            engine._append_watchdog_interruption(
+                root, 1, {"status": "stopped", "reason": "CASE_WALL_LIMIT"})
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "OPERATIONAL_FAILURE")
+            self.assertEqual(failure["reason_code"], "WATCHDOG_CASE_WALL_LIMIT")
+            self.assertTrue(failure["recovery_allowed"])
+            result = run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                 oracle_seconds=30, max_attempts_per_case=2,
+                                 formal=False)
+            self.assertEqual(result["completed_cases"], 1)
+            report = json.loads((root / "cases" / TOY_A.key /
+                                 "attempt-02" / "result.json").read_text())
+            self.assertEqual(report["attempt"], 2)
+            self.assertEqual(report["chain_seeds"], [
+                synthetic_seed(TOY_A.family, TOY_A.n, kind="chain",
+                               chain_index=i, root=8062026)
+                for i in range(8)])
+
     def test_worker_crash_is_a_failed_task_not_a_successful_oracle_case(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -185,7 +342,13 @@ class NC0aExecutionEngineTests(unittest.TestCase):
             attempt = root / "cases" / TOY_A.key / "attempt-01"
             self.assertFalse((attempt / "result.json").exists())
             self.assertFalse((root / "test_battery_summary.json").exists())
-            with self.assertRaisesRegex(ExecutionError, "allowance is exhausted"):
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            failure = next(event for event in rows if event["event"] == "case_attempt_failed")
+            self.assertEqual(failure["failure_category"], "OPERATIONAL_FAILURE")
+            self.assertEqual(failure["reason_code"], "COMPUTE_WORKER_PROCESS_CRASH")
+            self.assertTrue(failure["recovery_allowed"])
+            with self.assertRaisesRegex(ExecutionError, "exhausted"):
                 run_battery(root, cases=(TOY_A,), workers=4, case_seconds=30,
                             oracle_seconds=30, max_attempts_per_case=1,
                             formal=False)

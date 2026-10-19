@@ -37,14 +37,34 @@ class NC0aContractError(RuntimeError):
     """Fail closed: never substitute, silently retry, or drop an invalid cell."""
 
 
+class ScientificIntegrityFailure(NC0aContractError):
+    """A scientific contract or graph-integrity failure is terminal for the case."""
+
+    def __init__(self, reason_code: str, message: str):
+        super().__init__(message)
+        self.reason_code = reason_code
+
+
+class OperationalExecutionFailure(RuntimeError):
+    """A known execution/resource failure eligible for bounded task recovery."""
+
+    def __init__(self, reason_code: str, message: str):
+        super().__init__(message)
+        self.reason_code = reason_code
+
+
 def _assert_budget(deadline: float) -> None:
     if time.monotonic() > deadline:
-        raise NC0aContractError("Absolute case wall-clock cap exceeded")
+        raise OperationalExecutionFailure(
+            "TASK_WALL_TIMEOUT", "Absolute case wall-clock cap exceeded")
 
 
 def _snapshot(g: ConnectedDegreeSwap, initial: tuple[tuple[int, int], ...],
               seed: int, audited_accepts: int) -> dict:
-    g.assert_invariants()  # full-graph connectivity ONLY at checkpoints
+    try:
+        g.assert_invariants()  # full-graph connectivity ONLY at checkpoints
+    except AssertionError as exc:
+        raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", str(exc)) from exc
     values = metrics(g.n, g.edges, initial)
     if not all(math.isfinite(v) for v in values.values()):
         raise NC0aContractError("Invalid graph metric (including assortativity)")
@@ -103,7 +123,10 @@ def synthetic_chain(n: int, family: str, chain_index: int, *,
     for step in range(1, steps[-1] + 1):
         if step % 1000 == 0:
             _assert_budget(deadline)
-        accepted = g.propose(rng, audit_local=True)
+        try:
+            accepted = g.propose(rng, audit_local=True)
+        except AssertionError as exc:
+            raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", str(exc)) from exc
         if accepted:
             locally_audited += 1
         if step in targets:
@@ -146,9 +169,16 @@ def oracle_trace(n: int, family: str, *, root: int = 20261009,
     for i in range(attempts):
         if i % 100 == 0:
             _assert_budget(deadline)
-        changed = graph.propose(rng, oracle=True, audit_local=True)
+        try:
+            changed = graph.propose(rng, oracle=True, audit_local=True)
+        except AssertionError as exc:
+            raise ScientificIntegrityFailure(
+                "BFS_ORACLE_OR_GRAPH_INVARIANT_FAILURE", str(exc)) from exc
         accepted_audits += bool(changed)
-    graph.assert_invariants()
+    try:
+        graph.assert_invariants()
+    except AssertionError as exc:
+        raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", str(exc)) from exc
     _assert_budget(deadline)
     if graph.attempts != attempts or graph.accepted != accepted_audits:
         raise NC0aContractError("Oracle integrity / proposal accounting failure")

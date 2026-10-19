@@ -9,10 +9,12 @@ route changes the locked scientific workload; tests cannot emit a formal PASS.
 from __future__ import annotations
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures.process import BrokenProcessPool
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from hashlib import sha256
 import base64
+import errno
 import importlib.metadata
 import json
 import multiprocessing
@@ -40,6 +42,7 @@ from nc0a_budget_preflight import (
 )
 from nc0a_contract_runner import (
     CHECKPOINTS, CHAIN_COUNT, FORMAL_N, ORACLE_PROPOSALS,
+    NC0aContractError, OperationalExecutionFailure, ScientificIntegrityFailure,
     oracle_trace, save_report_once, screen_case,
     synthetic_chain, validate_full_battery,
 )
@@ -1291,52 +1294,67 @@ def _verify_case_report(path: Path, spec: CaseSpec, report: dict) -> str:
     if actual != expected:
         raise ExecutionError("Case report SHA-256 mismatch")
     if report.get("n") != spec.n or report.get("family") != spec.family:
-        raise ExecutionError("Case report identity mismatch")
+        raise ScientificIntegrityFailure("FIXED_CASE_IDENTITY_MISMATCH",
+                                          "Case report identity mismatch")
     chains = report.get("chains")
     if not isinstance(chains, list) or len(chains) != CHAIN_COUNT:
-        raise ExecutionError("Cannot resume a case without all eight chains")
+        raise ScientificIntegrityFailure("CHAIN_COMPLETENESS_MISMATCH",
+                                          "Cannot resume a case without all eight chains")
     expected_root = ROOT_SEED if spec.formal else ENGINEERING_TEST_SEED_ROOT
     expected_seeds = {synthetic_seed(spec.family, spec.n, kind="chain",
                                       chain_index=i, root=expected_root)
                       for i in range(CHAIN_COUNT)}
     if {c.get("seed") for c in chains} != expected_seeds:
-        raise ExecutionError("Completed case has changed/missing chain seeds")
+        raise ScientificIntegrityFailure("FIXED_SEED_MISMATCH",
+                                          "Completed case has changed/missing chain seeds")
     if set(c.get("chain_index") for c in chains) != set(range(CHAIN_COUNT)):
-        raise ExecutionError("Completed case has missing/duplicate chain indices")
+        raise ScientificIntegrityFailure("CHAIN_INDEX_MISMATCH",
+                                          "Completed case has missing/duplicate chain indices")
     if (report.get("seed_root") != expected_root or
         report.get("fixture_seed") != synthetic_seed(spec.family, spec.n,
                                                        root=expected_root)):
-        raise ExecutionError("Completed case has a changed fixture seed")
+        raise ScientificIntegrityFailure("FIXED_FIXTURE_SEED_MISMATCH",
+                                          "Completed case has a changed fixture seed")
     fixture_hash = report.get("fixture_sha256")
     if not isinstance(fixture_hash, str) or len(fixture_hash) != 64:
-        raise ExecutionError("Completed case lacks a fixture SHA-256")
+        raise ScientificIntegrityFailure("FIXTURE_FINGERPRINT_MISSING",
+                                          "Completed case lacks a fixture SHA-256")
     for chain in chains:
         if chain.get("fixture_sha256") != fixture_hash or chain.get("fixture_seed") != report["fixture_seed"]:
-            raise ExecutionError("Chain fixture identity differs from its case")
+            raise ScientificIntegrityFailure("CHAIN_FIXTURE_IDENTITY_MISMATCH",
+                                              "Chain fixture identity differs from its case")
         if set(chain.get("checkpoints", {})) != set(map(str, CHECKPOINTS)):
-            raise ExecutionError("Completed chain is missing a locked checkpoint")
+            raise ScientificIntegrityFailure("CHECKPOINT_SET_MISMATCH",
+                                              "Completed chain is missing a locked checkpoint")
         if chain.get("mixing_status") != "MIXING-UNRESOLVED":
-            raise ExecutionError("A chain may not claim certified mixing")
+            raise ScientificIntegrityFailure("MIXING_STATUS_CONTRACT_VIOLATION",
+                                              "A chain may not claim certified mixing")
         for multiplier in CHECKPOINTS:
             snapshot = chain["checkpoints"][str(multiplier)]
             if snapshot.get("attempts") != multiplier * report.get("edge_count", 0):
-                raise ExecutionError("Completed chain checkpoint proposal count mismatch")
+                raise ScientificIntegrityFailure("CHECKPOINT_PROPOSAL_COUNT_MISMATCH",
+                                                  "Completed chain checkpoint proposal count mismatch")
             if snapshot.get("accepted") != snapshot.get("audited_accepted_swaps"):
-                raise ExecutionError("Completed chain contains unaudited accepted swaps")
+                raise ScientificIntegrityFailure("ACCEPTED_SWAP_AUDIT_MISMATCH",
+                                                  "Completed chain contains unaudited accepted swaps")
     oracle = report.get("oracle", {})
     if (oracle.get("attempts") != ORACLE_PROPOSALS or
         oracle.get("seed") != synthetic_seed(spec.family, spec.n, kind="bfs-identity",
                                                root=expected_root) or
         oracle.get("fixture_sha256") != fixture_hash or
         oracle.get("oracle_mismatches") != 0):
-        raise ExecutionError("Completed case lacks its fixed 1,000-proposal oracle")
+        raise ScientificIntegrityFailure("BFS_ORACLE_CONTRACT_MISMATCH",
+                                          "Completed case lacks its fixed 1,000-proposal oracle")
     if report.get("mixing_status") != "MIXING-UNRESOLVED":
-        raise ExecutionError("Formal screening may never be reported as convergence")
+        raise ScientificIntegrityFailure("MIXING_STATUS_CONTRACT_VIOLATION",
+                                          "Formal screening may never be reported as convergence")
     recalculated = screen_case(chains, require_full_contract=spec.formal)
     if recalculated != report.get("screen"):
-        raise ExecutionError("Stored statistical screen does not reproduce from chain data")
+        raise ScientificIntegrityFailure("STATISTICAL_SCREEN_REPRODUCTION_FAILURE",
+                                          "Stored statistical screen does not reproduce from chain data")
     if report.get("screen", {}).get("mixing_status") != "MIXING-UNRESOLVED":
-        raise ExecutionError("A result may not claim a mixing certificate")
+        raise ScientificIntegrityFailure("MIXING_STATUS_CONTRACT_VIOLATION",
+                                          "A result may not claim a mixing certificate")
     return actual
 
 
@@ -1370,7 +1388,8 @@ def _execute_case_attempt(spec: CaseSpec, attempt_dir: Path, *, workers: int,
     seed_root = ROOT_SEED if formal else ENGINEERING_TEST_SEED_ROOT
     fixture = make_synthetic_graph(spec.n, spec.family, root=seed_root)
     if crash_after_start:
-        raise RuntimeError("Injected parent-runner failure")
+        raise OperationalExecutionFailure(
+            "INJECTED_PARENT_RUNNER_FAILURE", "Injected parent-runner failure")
     max_proposals = 32 * fixture.m
     context = multiprocessing.get_context("spawn")
     chains: list[dict] = []
@@ -1467,6 +1486,278 @@ def _new_manifest(run_dir: Path, *, head: str, policy_hash: str,
     }
 
 
+_FAILURE_CATEGORIES = {
+    "SCIENTIFIC_INTEGRITY_FAILURE",
+    "OPERATIONAL_FAILURE",
+    "UNCLASSIFIED_REQUIRES_REVIEW",
+}
+
+_RECOVERABLE_WATCHDOG_REASONS = {
+    "WALL_LIMIT", "CPU_LIMIT_WITH_TERMINATION_MARGIN", "AGGREGATE_RSS_LIMIT",
+    "RUN_DISK_ALLOCATION_LIMIT", "FREE_DISK_RESERVE_BREACH", "CASE_WALL_LIMIT",
+    "ORACLE_WALL_LIMIT", "HOST_MEMORY_PRESSURE_LIMIT", "SWAP_GROWTH_LIMIT",
+    "SWAP_FREE_RESERVE_BREACH", "VM_VOLUME_FREE_DISK_RESERVE_BREACH",
+    "BOOT_VOLUME_FREE_DISK_RESERVE_BREACH", "AC_POWER_LOST", "THERMAL_WARNING",
+    "SLEEP_ASSERTION_LOST",
+}
+
+
+def _classify_attempt_failure(exc: BaseException) -> dict:
+    """Classify only known causes; everything else requires human review."""
+    if isinstance(exc, OperationalExecutionFailure):
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": exc.reason_code, "recovery_allowed": True}
+    if isinstance(exc, ScientificIntegrityFailure):
+        return {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
+                "reason_code": exc.reason_code, "recovery_allowed": False}
+    if isinstance(exc, NC0aContractError):
+        return {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
+                "reason_code": "SCIENTIFIC_CONTRACT_FAILURE", "recovery_allowed": False}
+    if isinstance(exc, BrokenProcessPool):
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": "COMPUTE_WORKER_PROCESS_CRASH", "recovery_allowed": True}
+    if isinstance(exc, TimeoutError):
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": "COMPUTE_TASK_TIMEOUT", "recovery_allowed": True}
+    if isinstance(exc, MemoryError):
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": "COMPUTE_MEMORY_EXHAUSTION", "recovery_allowed": True}
+    if isinstance(exc, OSError) and exc.errno in (errno.ENOSPC, errno.EIO, errno.ENODEV):
+        reason = {errno.ENOSPC: "STORAGE_FULL", errno.EIO: "STORAGE_IO_FAILURE",
+                  errno.ENODEV: "STORAGE_DEVICE_UNAVAILABLE"}[exc.errno]
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": reason, "recovery_allowed": True}
+    return {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+            "reason_code": "UNCLASSIFIED_EXCEPTION", "recovery_allowed": False}
+
+
+def _classify_watchdog_stop(reason: object) -> dict:
+    if isinstance(reason, str) and reason in _RECOVERABLE_WATCHDOG_REASONS:
+        return {"failure_category": "OPERATIONAL_FAILURE",
+                "reason_code": "WATCHDOG_" + reason, "recovery_allowed": True}
+    safe_reason = reason if isinstance(reason, str) and reason else "MISSING_STOP_REASON"
+    return {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+            "reason_code": "WATCHDOG_REQUIRES_REVIEW_" + safe_reason[:80],
+            "recovery_allowed": False}
+
+
+def _validate_failure_classification(event: dict) -> None:
+    category = event.get("failure_category")
+    reason = event.get("reason_code")
+    allowed = event.get("recovery_allowed")
+    if category not in _FAILURE_CATEGORIES or not isinstance(reason, str) or not reason:
+        raise ExecutionError("Attempt failure lacks a valid persisted classification")
+    if type(allowed) is not bool:
+        raise ExecutionError("Attempt recovery decision is not an explicit boolean")
+    if category == "OPERATIONAL_FAILURE" and not allowed:
+        raise ExecutionError("Known operational failure lacks its recovery decision")
+    if category != "OPERATIONAL_FAILURE" and allowed:
+        raise ExecutionError("Scientific or unclassified failure cannot be recoverable")
+
+
+def _attempt_number_from_task_id(task_id: object) -> tuple[str, int] | None:
+    if not isinstance(task_id, str):
+        return None
+    match = re.fullmatch(r"([^/]+)/attempt-(\d{2})(?:/[^/]+)?", task_id)
+    if not match:
+        return None
+    return match.group(1), int(match.group(2))
+
+
+def _case_attempt_history(case_dir: Path, spec: CaseSpec,
+                          prior_events: list[dict], max_attempts: int) -> list[dict]:
+    """Validate each on-disk attempt against exactly one hash-chained terminal."""
+    attempt_paths: dict[int, Path] = {}
+    if case_dir.exists():
+        for path in case_dir.iterdir():
+            match = re.fullmatch(r"attempt-(\d{2})", path.name)
+            if not match or path.is_symlink() or not path.is_dir():
+                raise ExecutionError("Case directory contains an invalid attempt path")
+            number = int(match.group(1))
+            if number < 1 or number > max_attempts or path.name != f"attempt-{number:02d}":
+                raise ExecutionError("Attempt number is outside the frozen recovery allowance")
+            attempt_paths[number] = path
+
+    grouped: dict[int, dict[str, list[dict]]] = {}
+    for row in prior_events:
+        event = row.get("event", {})
+        name = event.get("event")
+        if name == "case_result_revalidation_failed" and event.get("case") == spec.key:
+            _validate_failure_classification(event)
+            if event["failure_category"] == "SCIENTIFIC_INTEGRITY_FAILURE":
+                raise ScientificIntegrityFailure(
+                    event["reason_code"], "A completed case failed scientific result revalidation")
+            raise ExecutionError("A completed case result failed revalidation; manual review required")
+        if name not in ("case_attempt_started", "case_attempt_failed", "case_attempt_completed"):
+            continue
+        if event.get("case") != spec.key:
+            continue
+        number = event.get("attempt")
+        if type(number) is not int or number < 1 or number > max_attempts:
+            raise ExecutionError("Case event has an invalid attempt number")
+        bucket = {"case_attempt_started": "started", "case_attempt_failed": "failed",
+                  "case_attempt_completed": "completed"}[name]
+        grouped.setdefault(number, {"started": [], "failed": [], "completed": []})[bucket].append(event)
+
+    if set(grouped) != set(attempt_paths):
+        raise ExecutionError("Attempt directories and hash-chained execution events do not match")
+    if sorted(attempt_paths) != list(range(1, len(attempt_paths) + 1)):
+        raise ExecutionError("Attempt numbering has a gap; manual audit required")
+
+    history = []
+    expected_seeds = ({
+        "fixture_seed": synthetic_seed(spec.family, spec.n, root=ROOT_SEED),
+        "chain_seeds": [synthetic_seed(spec.family, spec.n, kind="chain",
+                                        chain_index=i, root=ROOT_SEED)
+                        for i in range(CHAIN_COUNT)],
+        "bfs_seed": synthetic_seed(spec.family, spec.n, kind="bfs-identity",
+                                   root=ROOT_SEED),
+    } if spec.formal else None)
+    for number in sorted(attempt_paths):
+        records = grouped[number]
+        if (len(records["started"]) != 1 or
+            len(records["failed"]) + len(records["completed"]) != 1):
+            raise ExecutionError("Attempt has an incomplete or conflicting terminal record")
+        started = records["started"][0]
+        if expected_seeds is not None and started.get("fixed_seeds") != expected_seeds:
+            raise ScientificIntegrityFailure("FIXED_SEED_MANIFEST_MISMATCH",
+                                              "Attempt start differs from the fixed seed manifest")
+        if records["completed"]:
+            completed = records["completed"][0]
+            digest = completed.get("report_sha256")
+            if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+                raise ExecutionError("Completed attempt lacks its result hash anchor")
+            history.append({"attempt": number, "status": "completed",
+                            "report_sha256": digest})
+        else:
+            failed = records["failed"][0]
+            _validate_failure_classification(failed)
+            history.append({"attempt": number, "status": "failed",
+                            "failure_category": failed["failure_category"],
+                            "reason_code": failed["reason_code"],
+                            "recovery_allowed": failed["recovery_allowed"]})
+
+    for index, record in enumerate(history):
+        if index and (history[index - 1]["status"] != "failed" or
+                      history[index - 1].get("failure_category") != "OPERATIONAL_FAILURE" or
+                      history[index - 1].get("recovery_allowed") is not True):
+            raise ExecutionError("A later attempt lacks a preceding recoverable operational failure")
+        if record["status"] == "completed" and index != len(history) - 1:
+            raise ExecutionError("A completed attempt is followed by another attempt")
+    return history
+
+
+def _append_watchdog_interruption(root: Path, invocation: int, result: dict) -> None:
+    """Persist a reason-coded stop before a researcher can request recovery."""
+    classification = _classify_watchdog_stop(result.get("reason"))
+    log = HashChainLog(root / "execution.jsonl")
+    try:
+        rows = _read_execution_records(root / "execution.jsonl")
+        active_path = root / "active_task.json"
+        if active_path.exists():
+            if active_path.is_symlink():
+                classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                  "reason_code": "ACTIVE_TASK_MARKER_IS_SYMLINK",
+                                  "recovery_allowed": False}
+                active = {}
+            else:
+                try:
+                    active = _read_json(active_path)
+                except ExecutionError:
+                    classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                      "reason_code": "ACTIVE_TASK_MARKER_INVALID",
+                                      "recovery_allowed": False}
+                    active = {}
+            parsed = _attempt_number_from_task_id(active.get("task_id"))
+            if parsed is None:
+                classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                  "reason_code": "ACTIVE_TASK_ID_INVALID",
+                                  "recovery_allowed": False}
+            else:
+                case, attempt = parsed
+                started = any(
+                    row.get("event", {}).get("event") == "case_attempt_started" and
+                    row.get("event", {}).get("case") == case and
+                    row.get("event", {}).get("attempt") == attempt
+                    for row in rows)
+                if not started:
+                    classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                      "reason_code": "WATCHDOG_STOP_WITHOUT_ATTEMPT_START",
+                                      "recovery_allowed": False}
+                existing = [row.get("event", {}) for row in rows
+                            if row.get("event", {}).get("event") == "case_attempt_failed" and
+                            row.get("event", {}).get("case") == case and
+                            row.get("event", {}).get("attempt") == attempt]
+                if existing:
+                    raise ExecutionError("Watchdog stop duplicates an existing attempt failure")
+                log.append({"event": "case_attempt_failed", "case": case,
+                            "attempt": attempt, "exception_type": "WatchdogStop",
+                            "message": str(result.get("reason", ""))[:500],
+                            **classification, "invocation": invocation, "traceback": ""})
+        log.append({"event": "watchdog_invocation_disposition",
+                    "invocation": invocation, "status": "stopped",
+                    **classification,
+                    "reason": str(result.get("reason", ""))[:500]})
+    finally:
+        log.close()
+
+
+def _append_invocation_disposition(root: Path, invocation: int, *, status: str,
+                                   returncode: int | None, run_integrity: str,
+                                   result: dict, prior_event_count: int) -> None:
+    if status == "stopped":
+        return
+    classification = None
+    if status == "failed":
+        rows = _read_execution_records(root / "execution.jsonl")[prior_event_count:]
+        failures = [row.get("event", {}) for row in rows
+                    if row.get("event", {}).get("event") in
+                    ("case_attempt_failed", "battery_validation_failed")]
+        if failures:
+            last = failures[-1]
+            if last.get("failure_category") in _FAILURE_CATEGORIES:
+                classification = {key: last.get(key) for key in
+                                  ("failure_category", "reason_code", "recovery_allowed")}
+    elif status == "COMPLETED_PROCESS_BUT_RESULT_INVALID":
+        error = result.get("result_integrity_error", "")
+        if "NC0aContractError" in error or "ScientificIntegrityFailure" in error:
+            classification = {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
+                              "reason_code": "COMPLETED_RESULT_CONTRACT_MISMATCH",
+                              "recovery_allowed": False}
+    elif status == "completed" and returncode == 0 and run_integrity == "VERIFIED_COMPLETE":
+        classification = {"failure_category": "SUCCESS",
+                          "reason_code": "VERIFIED_COMPLETE",
+                          "recovery_allowed": False}
+    if classification is None:
+        classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                          "reason_code": "INVOCATION_TERMINAL_UNCLASSIFIED",
+                          "recovery_allowed": False}
+    log = HashChainLog(root / "execution.jsonl")
+    try:
+        log.append({"event": "watchdog_invocation_disposition",
+                    "invocation": invocation, "status": status,
+                    "returncode": returncode, **classification})
+    finally:
+        log.close()
+
+
+def _validate_prior_invocation_dispositions(prior_events: list[dict]) -> None:
+    dispositions = [row.get("event", {}) for row in prior_events
+                    if row.get("event", {}).get("event") == "watchdog_invocation_disposition"]
+    numbers = [event.get("invocation") for event in dispositions]
+    if any(type(number) is not int or number < 1 for number in numbers):
+        raise ExecutionError("Prior invocation disposition has an invalid number")
+    if numbers != list(range(1, len(numbers) + 1)):
+        raise ExecutionError("Prior invocation dispositions are missing or reordered")
+    for event in dispositions:
+        if (event.get("status") not in ("failed", "stopped") or
+            event.get("failure_category") != "OPERATIONAL_FAILURE" or
+            event.get("recovery_allowed") is not True):
+            raise ExecutionError("Prior invocation is not explicitly eligible for operational recovery")
+        if not isinstance(event.get("reason_code"), str) or not event["reason_code"]:
+            raise ExecutionError("Prior invocation recovery reason is missing")
+
+
 def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers: int,
                       case_seconds: float, oracle_seconds: float,
                       max_attempts_per_case: int = 1,
@@ -1498,6 +1789,15 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
     manifest_sha = _write_manifest_once(root, manifest)
     events = HashChainLog(root / "execution.jsonl")
     prior_events = _read_execution_records(root / "execution.jsonl")
+    _validate_prior_invocation_dispositions(prior_events)
+    allowed_case_keys = {spec.key for spec in ordered}
+    for row in prior_events:
+        event = row.get("event", {})
+        if (event.get("event") in ("case_attempt_started", "case_attempt_failed",
+                                    "case_attempt_completed") and
+                event.get("case") not in allowed_case_keys):
+            events.close()
+            raise ExecutionError("Execution log contains a case outside the frozen schedule")
     active_file = root / "active_task.json"
     if active_file.exists():
         if active_file.is_symlink():
@@ -1505,12 +1805,43 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
             raise ExecutionError("Active-task marker cannot be a symlink")
         try:
             prior_active = _read_json(active_file)
-        except ExecutionError:
+        except BaseException:
+            events.close()
+            raise
+        active_identity = _attempt_number_from_task_id(prior_active.get("task_id"))
+        if active_identity is None:
+            events.close()
+            raise ExecutionError("Interrupted task identity is invalid; manual audit required")
+        active_case, active_attempt = active_identity
+        active_spec = next((spec for spec in ordered if spec.key == active_case), None)
+        if active_spec is None:
+            events.close()
+            raise ExecutionError("Interrupted task is outside the frozen case schedule")
+        prior_failure = next((row.get("event", {}) for row in reversed(prior_events)
+                              if row.get("event", {}).get("event") == "case_attempt_failed" and
+                              row.get("event", {}).get("case") == active_case and
+                              row.get("event", {}).get("attempt") == active_attempt), None)
+        if prior_failure is None:
+            events.close()
+            raise ExecutionError("Interrupted attempt lacks a persisted failure classification")
+        try:
+            _validate_failure_classification(prior_failure)
+            _case_attempt_history(root / "cases" / active_case, active_spec,
+                                  prior_events, max_attempts_per_case)
+        except BaseException:
             events.close()
             raise
         events.append({"event": "prior_attempt_interrupted_at_restart",
                        "active_task": prior_active,
+                       "failure_category": prior_failure["failure_category"],
+                       "reason_code": prior_failure["reason_code"],
+                       "recovery_allowed": prior_failure["recovery_allowed"],
                        "utc": datetime.now(timezone.utc).isoformat()})
+        prior_events.append({"event": {"event": "prior_attempt_interrupted_at_restart",
+                                        "active_task": prior_active,
+                                        "failure_category": prior_failure["failure_category"],
+                                        "reason_code": prior_failure["reason_code"],
+                                        "recovery_allowed": prior_failure["recovery_allowed"]}})
         active_file.unlink()
     reports = []
     try:
@@ -1519,6 +1850,8 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
             if case_dir.is_symlink():
                 raise ExecutionError("Case directory cannot be a symlink")
             case_dir.mkdir(parents=True, exist_ok=True)
+            history = _case_attempt_history(case_dir, spec, prior_events,
+                                            max_attempts_per_case)
             # Completion requires both a valid immutable report and its durable
             # completion-event hash anchor; an unanchored file is quarantined.
             valid = []
@@ -1527,7 +1860,25 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                 try:
                     report = json.loads(result_path.read_text(encoding="utf-8"))
                     digest = _verify_case_report(result_path, spec, report)
-                except (ValueError, OSError, ExecutionError) as exc:
+                except (ValueError, OSError, ExecutionError,
+                        ScientificIntegrityFailure) as exc:
+                    attempt_name = result_path.parent.name
+                    match = re.fullmatch(r"attempt-(\d{2})", attempt_name)
+                    if match:
+                        attempt_num = int(match.group(1))
+                        classification = _classify_attempt_failure(exc)
+                        already_recorded = any(
+                            row.get("event", {}).get("event") == "case_result_revalidation_failed" and
+                            row.get("event", {}).get("case") == spec.key and
+                            row.get("event", {}).get("attempt") == attempt_num
+                            for row in prior_events)
+                        if not already_recorded:
+                            event = {"event": "case_result_revalidation_failed",
+                                     "case": spec.key, "attempt": attempt_num,
+                                     "exception_type": type(exc).__name__,
+                                     "message": str(exc)[:500], **classification}
+                            events.append(event)
+                            prior_events.append({"event": event})
                     raise ExecutionError(f"Invalid existing case result {result_path}: {exc}") from exc
                 attempt_num = int(result_path.parent.name.split("-")[-1])
                 if report.get("attempt") != attempt_num:
@@ -1546,6 +1897,12 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                     quarantined.append((result_path, digest, attempt_num))
             if len(valid) > 1:
                 raise ExecutionError("Multiple completed results for one fixed case")
+            completed_history = [item for item in history if item["status"] == "completed"]
+            if completed_history:
+                expected = completed_history[0]
+                if (len(completed_history) != 1 or len(valid) != 1 or
+                    expected["report_sha256"] != valid[0][2]):
+                    raise ExecutionError("Completed-attempt event lacks its matching verified result")
             for result_path, digest, attempt_num in quarantined:
                 already_logged = any(
                     row.get("event", {}).get("event") == "unanchored_result_quarantined" and
@@ -1569,14 +1926,21 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                                                  "case": spec.key,
                                                  "report_sha256": valid[0][2]}})
                 continue
-            attempts = sorted(case_dir.glob("attempt-*"))
-            if any(path.is_symlink() or not path.is_dir() for path in attempts):
-                raise ExecutionError("Attempt paths must be ordinary directories")
-            if len(attempts) >= max_attempts_per_case:
-                raise ExecutionError(
-                    f"Case {spec.key} has {len(attempts)} failed/interrupted attempt(s); "
-                    "approved retry allowance is exhausted")
-            attempt_num = len(attempts) + 1
+            if history:
+                latest = history[-1]
+                if latest["status"] != "failed":
+                    raise ExecutionError("A prior completed attempt cannot be silently repeated")
+                if latest["failure_category"] == "SCIENTIFIC_INTEGRITY_FAILURE":
+                    raise ScientificIntegrityFailure(
+                        latest["reason_code"],
+                        f"Case {spec.key} has a terminal scientific-integrity failure; recovery is prohibited")
+                if latest["failure_category"] != "OPERATIONAL_FAILURE" or not latest["recovery_allowed"]:
+                    raise ExecutionError(
+                        f"Case {spec.key} has an unclassified failure; manual review is required")
+                if len(history) >= max_attempts_per_case:
+                    raise ExecutionError(
+                        f"Case {spec.key} has exhausted its {max_attempts_per_case}-attempt operational allowance")
+            attempt_num = len(history) + 1
             attempt_dir = case_dir / f"attempt-{attempt_num:02d}"
             attempt_dir.mkdir(mode=0o700)
             task_started = time.time()
@@ -1620,9 +1984,11 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                                "mixing_status": "MIXING-UNRESOLVED"})
                 active_file.unlink(missing_ok=True)
             except BaseException as exc:
+                classification = _classify_attempt_failure(exc)
                 events.append({"event": "case_attempt_failed", "case": spec.key,
                                "attempt": attempt_num, "exception_type": type(exc).__name__,
                                "message": str(exc)[:500],
+                               **classification,
                                "traceback": traceback.format_exc(limit=8)[-3000:]})
                 active_file.unlink(missing_ok=True)
                 raise
@@ -1637,7 +2003,15 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
                         "oracle_mismatches": r["oracle"]["oracle_mismatches"],
                         "accepted_local_audits": r["oracle"]["accepted_local_audits"],
                         "accepted": r["oracle"]["accepted"]} for r in reports]
-            final = validate_full_battery(cases_report, oracles)
+            try:
+                final = validate_full_battery(cases_report, oracles)
+            except NC0aContractError as exc:
+                classification = _classify_attempt_failure(exc)
+                events.append({"event": "battery_validation_failed",
+                               "exception_type": type(exc).__name__,
+                               "message": str(exc)[:500], **classification,
+                               "traceback": traceback.format_exc(limit=8)[-3000:]})
+                raise
         else:
             final = {"status": "TEST_ONLY_NOT_FORMAL_NC0A",
                      "completed_cases": len(reports), "mixing_status": "MIXING-UNRESOLVED"}
@@ -2269,6 +2643,7 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
         before_watchdog_starts, _, _ = _watchdog_invocation_history(root)
         runner_command = _researcher_runner_command(
             root, snapshot_path, commitment_sha, caps["max_attempts_per_case"])
+        execution_event_count = len(_read_execution_records(root / "execution.jsonl"))
         local_cpu_before = resource.getrusage(resource.RUSAGE_SELF)
         call_start = time.monotonic()
         try:
@@ -2310,15 +2685,21 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
             usage = result["usage"]
             returncode = result.get("returncode")
             status = result.get("status", "unknown")
+        if status == "stopped":
+            _append_watchdog_interruption(root, invocation, result)
         run_integrity = "NOT_COMPLETE"
         if status == "completed" and returncode == 0:
             try:
                 result["formal_summary"] = _verify_completed_researcher_battery(
                     root, commitment)
                 run_integrity = "VERIFIED_COMPLETE"
-            except (ExecutionError, ValueError, OSError, KeyError) as exc:
+            except Exception as exc:
                 status = "COMPLETED_PROCESS_BUT_RESULT_INVALID"
                 result["result_integrity_error"] = f"{type(exc).__name__}: {exc}"
+        _append_invocation_disposition(
+            root, invocation, status=status, returncode=returncode,
+            run_integrity=run_integrity, result=result,
+            prior_event_count=execution_event_count)
         local_cpu_after = resource.getrusage(resource.RUSAGE_SELF)
         launcher_cpu = max(0.0, local_cpu_after.ru_utime + local_cpu_after.ru_stime -
                            local_cpu_before.ru_utime - local_cpu_before.ru_stime)
