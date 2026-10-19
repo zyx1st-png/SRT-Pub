@@ -44,6 +44,10 @@ class ScientificIntegrityFailure(NC0aContractError):
         super().__init__(message)
         self.reason_code = reason_code
 
+    def __reduce__(self):
+        """Preserve the classification code when crossing a process boundary."""
+        return type(self), (self.reason_code, str(self))
+
 
 class OperationalExecutionFailure(RuntimeError):
     """A known execution/resource failure eligible for bounded task recovery."""
@@ -51,6 +55,10 @@ class OperationalExecutionFailure(RuntimeError):
     def __init__(self, reason_code: str, message: str):
         super().__init__(message)
         self.reason_code = reason_code
+
+    def __reduce__(self):
+        """Preserve the classification code when crossing a process boundary."""
+        return type(self), (self.reason_code, str(self))
 
 
 def _assert_budget(deadline: float) -> None:

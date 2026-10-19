@@ -4,12 +4,14 @@ from __future__ import annotations
 
 import hashlib
 import json
+import multiprocessing
 from pathlib import Path
 import signal
 import sys
 import tempfile
 import time
 import unittest
+from concurrent.futures import ProcessPoolExecutor
 from unittest import mock
 
 import nc0a_execution_engine as engine
@@ -30,7 +32,39 @@ TOY_A = CaseSpec(20, "er-like", False)
 TOY_B = CaseSpec(20, "ws-like", False)
 
 
+def _spawn_raise_scientific_integrity_failure():
+    raise ScientificIntegrityFailure("GRAPH_INVARIANT_FAILURE", "injected invariant failure")
+
+
+def _spawn_raise_operational_execution_failure():
+    raise OperationalExecutionFailure("TASK_WALL_TIMEOUT", "injected task timeout")
+
+
 class NC0aExecutionEngineTests(unittest.TestCase):
+    def test_spawn_workers_preserve_failure_types_and_recovery_classification(self):
+        cases = (
+            (_spawn_raise_scientific_integrity_failure,
+             ScientificIntegrityFailure, "SCIENTIFIC_INTEGRITY_FAILURE",
+             "GRAPH_INVARIANT_FAILURE", False),
+            (_spawn_raise_operational_execution_failure,
+             OperationalExecutionFailure, "OPERATIONAL_FAILURE",
+             "TASK_WALL_TIMEOUT", True),
+        )
+        for target, exception_type, category, reason_code, recovery_allowed in cases:
+            with self.subTest(exception=exception_type.__name__):
+                context = multiprocessing.get_context("spawn")
+                with ProcessPoolExecutor(max_workers=1, mp_context=context) as pool:
+                    future = pool.submit(target)
+                    with self.assertRaises(exception_type) as caught:
+                        future.result(timeout=30)
+
+                classification = engine._classify_attempt_failure(caught.exception)
+                self.assertIs(type(caught.exception), exception_type)
+                self.assertEqual(caught.exception.reason_code, reason_code)
+                self.assertEqual(classification["failure_category"], category)
+                self.assertEqual(classification["reason_code"], reason_code)
+                self.assertIs(classification["recovery_allowed"], recovery_allowed)
+
     def test_direct_formal_scale_entrypoints_refuse_without_signed_launcher(self):
         import os
         from nc0a_execution_engine import _runner_entry
