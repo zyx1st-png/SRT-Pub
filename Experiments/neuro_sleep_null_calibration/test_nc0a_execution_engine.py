@@ -328,6 +328,95 @@ class NC0aExecutionEngineTests(unittest.TestCase):
                                chain_index=i, root=engine.ENGINEERING_TEST_SEED_ROOT)
                 for i in range(8)])
 
+    def test_watchdog_stop_after_durable_completion_reconciles_stale_active_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                        oracle_seconds=30, max_attempts_per_case=2, formal=False)
+            summary = root / "test_battery_summary.json"
+            summary.unlink()
+            Path(str(summary) + ".sha256").unlink()
+            completed_attempt = root / "cases" / TOY_A.key / "attempt-01"
+            active_payload = json.dumps({
+                "phase": "case", "task_id": f"{TOY_A.key}/attempt-01",
+                "started_utc_epoch": 0})
+            runner_code = (
+                "import json,time; from pathlib import Path; active=json.loads(" +
+                repr(active_payload) + "); active['started_utc_epoch']=time.time(); "
+                "Path('active_task.json').write_text(json.dumps(active)); time.sleep(10)")
+            limits = WatchdogLimits(
+                wall_seconds=10, cpu_seconds=100,
+                aggregate_rss_bytes=512 * 1024 * 1024, max_workers=2,
+                run_disk_bytes=64 * 1024 * 1024, reserve_free_disk_bytes=1,
+                case_seconds=0.2, oracle_seconds=5, poll_seconds=0.05,
+                suspend_tolerance_seconds=1, terminate_grace_seconds=0.1)
+            stopped = supervise(
+                [sys.executable, "-c", runner_code],
+                run_dir=root, limits=limits, stdout_name="runner.stdout.01.log",
+                invocation_id=1)
+            self.assertEqual(stopped["status"], "stopped")
+            self.assertEqual(stopped["reason"], "CASE_WALL_LIMIT")
+            engine._append_watchdog_interruption(root, 1, stopped)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            self.assertEqual(sum(event["event"] == "case_attempt_failed" and
+                                 event.get("case") == TOY_A.key for event in rows), 0)
+            self.assertEqual(sum(event["event"] == "case_attempt_completed" and
+                                 event.get("case") == TOY_A.key for event in rows), 1)
+            result = run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                 oracle_seconds=30, max_attempts_per_case=2,
+                                 formal=False)
+            self.assertEqual(result["completed_cases"], 1)
+            self.assertTrue((completed_attempt / "result.json").is_file())
+            self.assertFalse((root / "cases" / TOY_A.key / "attempt-02").exists())
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            self.assertTrue(any(event["event"] ==
+                                "completed_attempt_active_marker_reconciled"
+                                for event in rows))
+
+    def test_runner_signal_after_durable_completion_preserves_completed_attempt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                        oracle_seconds=30, max_attempts_per_case=2, formal=False)
+            summary = root / "test_battery_summary.json"
+            summary.unlink()
+            Path(str(summary) + ".sha256").unlink()
+            (root / "active_task.json").write_text(json.dumps({
+                "phase": "case", "task_id": f"{TOY_A.key}/attempt-01",
+                "started_utc_epoch": time.time()}))
+            limits = WatchdogLimits(
+                wall_seconds=10, cpu_seconds=100,
+                aggregate_rss_bytes=512 * 1024 * 1024, max_workers=2,
+                run_disk_bytes=64 * 1024 * 1024, reserve_free_disk_bytes=1,
+                case_seconds=5, oracle_seconds=5, poll_seconds=0.05,
+                suspend_tolerance_seconds=1, terminate_grace_seconds=0.1)
+            watched = supervise(
+                [sys.executable, "-c",
+                 f"import os, signal; os.kill(os.getpid(), signal.{signal.Signals(signal.SIGKILL).name})"],
+                run_dir=root, limits=limits, stdout_name="runner.stdout.01.log",
+                invocation_id=1)
+            classification = engine._append_runner_signal_failure(root, 1, watched)
+            self.assertEqual(classification["failure_category"], "OPERATIONAL_FAILURE")
+            self.assertEqual(classification["reason_code"],
+                             "RUNNER_SIGNAL_EXIT_SIGKILL_AFTER_CASE_COMPLETION")
+            engine._append_invocation_disposition(
+                root, 1, status="failed", returncode=watched["returncode"],
+                run_integrity="NOT_COMPLETE", result=watched,
+                prior_event_count=len(engine._read_execution_records(
+                    root / "execution.jsonl")),
+                classification_override=classification)
+            rows = [json.loads(line)["event"] for line in
+                    (root / "execution.jsonl").read_text().splitlines()]
+            self.assertEqual(sum(event["event"] == "case_attempt_failed" and
+                                 event.get("case") == TOY_A.key for event in rows), 0)
+            result = run_battery(root, cases=(TOY_A,), workers=2, case_seconds=30,
+                                 oracle_seconds=30, max_attempts_per_case=2,
+                                 formal=False)
+            self.assertEqual(result["completed_cases"], 1)
+            self.assertFalse((root / "cases" / TOY_A.key / "attempt-02").exists())
+
     def test_positive_runner_exit_and_signal_without_valid_active_task_are_not_recoverable(self):
         self.assertFalse(engine._append_runner_signal_failure(
             Path("/not-used"), 1, {"status": "failed", "returncode": 17}))

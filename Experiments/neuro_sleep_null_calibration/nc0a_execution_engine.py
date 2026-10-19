@@ -1673,25 +1673,48 @@ def _append_watchdog_interruption(root: Path, invocation: int, result: dict) -> 
                                   "recovery_allowed": False}
             else:
                 case, attempt = parsed
-                started = any(
-                    row.get("event", {}).get("event") == "case_attempt_started" and
-                    row.get("event", {}).get("case") == case and
-                    row.get("event", {}).get("attempt") == attempt
-                    for row in rows)
-                if not started:
-                    classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
-                                      "reason_code": "WATCHDOG_STOP_WITHOUT_ATTEMPT_START",
-                                      "recovery_allowed": False}
-                existing = [row.get("event", {}) for row in rows
+                starts = [row.get("event", {}) for row in rows
+                          if row.get("event", {}).get("event") == "case_attempt_started" and
+                          row.get("event", {}).get("case") == case and
+                          row.get("event", {}).get("attempt") == attempt]
+                failures = [row.get("event", {}) for row in rows
                             if row.get("event", {}).get("event") == "case_attempt_failed" and
                             row.get("event", {}).get("case") == case and
                             row.get("event", {}).get("attempt") == attempt]
-                if existing:
-                    raise ExecutionError("Watchdog stop duplicates an existing attempt failure")
-                log.append({"event": "case_attempt_failed", "case": case,
-                            "attempt": attempt, "exception_type": "WatchdogStop",
-                            "message": str(result.get("reason", ""))[:500],
-                            **classification, "invocation": invocation, "traceback": ""})
+                completions = [row.get("event", {}) for row in rows
+                               if row.get("event", {}).get("event") == "case_attempt_completed" and
+                               row.get("event", {}).get("case") == case and
+                               row.get("event", {}).get("attempt") == attempt]
+                if len(starts) != 1:
+                    classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                      "reason_code": "WATCHDOG_STOP_WITHOUT_UNIQUE_ATTEMPT_START",
+                                      "recovery_allowed": False}
+                elif (len(completions) == 1 and not failures and
+                      isinstance(completions[0].get("report_sha256"), str) and
+                      re.fullmatch(r"[0-9a-f]{64}", completions[0]["report_sha256"])):
+                    # The scientific result is already durably committed. Leave
+                    # the stale active marker for resume-time report/hash
+                    # revalidation; never append a contradictory failed terminal.
+                    pass
+                elif len(failures) == 1 and not completions:
+                    try:
+                        _validate_failure_classification(failures[0])
+                        classification = {key: failures[0][key] for key in
+                                          ("failure_category", "reason_code",
+                                           "recovery_allowed")}
+                    except (ExecutionError, KeyError):
+                        classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                          "reason_code": "EXISTING_ATTEMPT_FAILURE_INVALID",
+                                          "recovery_allowed": False}
+                elif not failures and not completions:
+                    log.append({"event": "case_attempt_failed", "case": case,
+                                "attempt": attempt, "exception_type": "WatchdogStop",
+                                "message": str(result.get("reason", ""))[:500],
+                                **classification, "invocation": invocation, "traceback": ""})
+                else:
+                    classification = {"failure_category": "UNCLASSIFIED_REQUIRES_REVIEW",
+                                      "reason_code": "CONFLICTING_ATTEMPT_TERMINALS",
+                                      "recovery_allowed": False}
         log.append({"event": "watchdog_invocation_disposition",
                     "invocation": invocation, "status": "stopped",
                     **classification,
@@ -1701,7 +1724,7 @@ def _append_watchdog_interruption(root: Path, invocation: int, result: dict) -> 
 
 
 def _append_runner_signal_failure(root: Path, invocation: int,
-                                  result: dict) -> bool:
+                                  result: dict) -> dict | None:
     """Persist a task failure only when Watchdog proves a signal-killed runner.
 
     A negative subprocess return code is an OS-reported signal termination.
@@ -1712,11 +1735,11 @@ def _append_runner_signal_failure(root: Path, invocation: int,
     """
     returncode = result.get("returncode")
     if result.get("status") != "failed" or type(returncode) is not int or returncode >= 0:
-        return False
+        return None
     try:
         signal_name = signal.Signals(-returncode).name
     except ValueError:
-        return False
+        return None
 
     root = Path(root)
     watchdog_rows, _ = _read_chain_rows(root / "watchdog.jsonl")
@@ -1727,41 +1750,41 @@ def _append_runner_signal_failure(root: Path, invocation: int,
                  if row.get("event", {}).get("event") in
                  ("runner_exited", "watchdog_stop", "watchdog_exception")]
     if len(starts_for_invocation) != 1 or not terminals:
-        return False
+        return None
     terminal = terminals[-1]
     if (terminal.get("event") != "runner_exited" or
         terminal.get("invocation") != invocation or
         terminal.get("returncode") != returncode or
         not isinstance(terminal.get("usage"), dict) or
         terminal.get("usage") != result.get("usage")):
-        return False
+        return None
 
     active_path = root / "active_task.json"
     if not active_path.is_file() or active_path.is_symlink():
-        return False
+        return None
     try:
         active = _read_json(active_path)
     except ExecutionError:
-        return False
+        return None
     parsed = _attempt_number_from_task_id(active.get("task_id"))
     if parsed is None:
-        return False
+        return None
     case, attempt = parsed
     try:
         manifest = _read_json(root / "run_manifest.json")
     except ExecutionError:
-        return False
+        return None
     if manifest.get("formal_contract") is True:
         allowed_cases = {spec.key for spec in formal_cases()}
     else:
         protocol = manifest.get("protocol", {})
         allowed_cases = set(protocol.get("test_case_keys", []))
     if case not in allowed_cases:
-        return False
+        return None
     attempt_dir = root / "cases" / case / f"attempt-{attempt:02d}"
     if (not attempt_dir.is_dir() or attempt_dir.is_symlink() or
         active_path.resolve().parent != root.resolve()):
-        return False
+        return None
 
     rows = _read_execution_records(root / "execution.jsonl")
     starts = [row.get("event", {}) for row in rows
@@ -1773,33 +1796,54 @@ def _append_runner_signal_failure(root: Path, invocation: int,
                              ("case_attempt_failed", "case_attempt_completed") and
                              row.get("event", {}).get("case") == case and
                              row.get("event", {}).get("attempt") == attempt]
-    if len(starts) != 1 or terminals_for_attempt:
-        return False
+    if len(starts) != 1:
+        return None
     expected_seeds = manifest.get("seed_manifest", {}).get(case)
     if starts[0].get("fixed_seeds") != expected_seeds:
-        return False
+        return None
 
+    if len(terminals_for_attempt) == 1:
+        existing_terminal = terminals_for_attempt[0]
+        if (existing_terminal.get("event") == "case_attempt_completed" and
+            not (root / "cases" / case /
+                 f"attempt-{attempt:02d}" / "result.json").is_symlink() and
+            isinstance(existing_terminal.get("report_sha256"), str) and
+            re.fullmatch(r"[0-9a-f]{64}", existing_terminal["report_sha256"])):
+            # Preserve the completed case. Resume will independently re-hash
+            # and validate the immutable report before reusing it.
+            return {"failure_category": "OPERATIONAL_FAILURE",
+                    "reason_code": "RUNNER_SIGNAL_EXIT_" + signal_name +
+                                   "_AFTER_CASE_COMPLETION",
+                    "recovery_allowed": True}
+        # An already-persisted failure owns the task classification. Never
+        # overwrite a scientific/unclassified terminal with a signal label.
+        return None
+    if terminals_for_attempt:
+        return None
+
+    classification = {"failure_category": "OPERATIONAL_FAILURE",
+                      "reason_code": "RUNNER_SIGNAL_EXIT_" + signal_name,
+                      "recovery_allowed": True}
     log = HashChainLog(root / "execution.jsonl")
     try:
         log.append({"event": "case_attempt_failed", "case": case,
                     "attempt": attempt, "exception_type": "RunnerSignalExit",
                     "message": f"Watchdog-recorded runner termination by {signal_name}",
-                    "failure_category": "OPERATIONAL_FAILURE",
-                    "reason_code": "RUNNER_SIGNAL_EXIT_" + signal_name,
-                    "recovery_allowed": True, "invocation": invocation,
+                    **classification, "invocation": invocation,
                     "traceback": ""})
     finally:
         log.close()
-    return True
+    return classification
 
 
 def _append_invocation_disposition(root: Path, invocation: int, *, status: str,
                                    returncode: int | None, run_integrity: str,
-                                   result: dict, prior_event_count: int) -> None:
+                                   result: dict, prior_event_count: int,
+                                   classification_override: dict | None = None) -> None:
     if status == "stopped":
         return
-    classification = None
-    if status == "failed":
+    classification = classification_override
+    if classification is None and status == "failed":
         rows = _read_execution_records(root / "execution.jsonl")[prior_event_count:]
         failures = [row.get("event", {}) for row in rows
                     if row.get("event", {}).get("event") in
@@ -1809,13 +1853,14 @@ def _append_invocation_disposition(root: Path, invocation: int, *, status: str,
             if last.get("failure_category") in _FAILURE_CATEGORIES:
                 classification = {key: last.get(key) for key in
                                   ("failure_category", "reason_code", "recovery_allowed")}
-    elif status == "COMPLETED_PROCESS_BUT_RESULT_INVALID":
+    elif classification is None and status == "COMPLETED_PROCESS_BUT_RESULT_INVALID":
         error = result.get("result_integrity_error", "")
         if "ScientificIntegrityFailure" in error:
             classification = {"failure_category": "SCIENTIFIC_INTEGRITY_FAILURE",
                               "reason_code": "COMPLETED_RESULT_CONTRACT_MISMATCH",
                               "recovery_allowed": False}
-    elif status == "completed" and returncode == 0 and run_integrity == "VERIFIED_COMPLETE":
+    elif (classification is None and status == "completed" and returncode == 0 and
+          run_integrity == "VERIFIED_COMPLETE"):
         classification = {"failure_category": "SUCCESS",
                           "reason_code": "VERIFIED_COMPLETE",
                           "recovery_allowed": False}
@@ -1908,32 +1953,54 @@ def _run_battery_core(run_dir: str | Path, *, cases: Iterable[CaseSpec], workers
         if active_spec is None:
             events.close()
             raise ExecutionError("Interrupted task is outside the frozen case schedule")
-        prior_failure = next((row.get("event", {}) for row in reversed(prior_events)
-                              if row.get("event", {}).get("event") == "case_attempt_failed" and
-                              row.get("event", {}).get("case") == active_case and
-                              row.get("event", {}).get("attempt") == active_attempt), None)
-        if prior_failure is None:
-            events.close()
-            raise ExecutionError("Interrupted attempt lacks a persisted failure classification")
         try:
-            _validate_failure_classification(prior_failure)
-            _case_attempt_history(root / "cases" / active_case, active_spec,
-                                  prior_events, max_attempts_per_case)
+            active_history = _case_attempt_history(
+                root / "cases" / active_case, active_spec, prior_events,
+                max_attempts_per_case)
         except BaseException:
             events.close()
             raise
-        events.append({"event": "prior_attempt_interrupted_at_restart",
-                       "active_task": prior_active,
-                       "failure_category": prior_failure["failure_category"],
-                       "reason_code": prior_failure["reason_code"],
-                       "recovery_allowed": prior_failure["recovery_allowed"],
-                       "utc": datetime.now(timezone.utc).isoformat()})
-        prior_events.append({"event": {"event": "prior_attempt_interrupted_at_restart",
-                                        "active_task": prior_active,
-                                        "failure_category": prior_failure["failure_category"],
-                                        "reason_code": prior_failure["reason_code"],
-                                        "recovery_allowed": prior_failure["recovery_allowed"]}})
-        active_file.unlink()
+        active_record = next((item for item in active_history
+                              if item["attempt"] == active_attempt), None)
+        if (active_record is None or not active_history or
+            active_history[-1]["attempt"] != active_attempt):
+            events.close()
+            raise ExecutionError("Active marker does not identify the latest recorded attempt")
+        if active_record["status"] == "completed":
+            events.append({"event": "completed_attempt_active_marker_reconciled",
+                           "case": active_case, "attempt": active_attempt,
+                           "report_sha256": active_record["report_sha256"],
+                           "utc": datetime.now(timezone.utc).isoformat()})
+            prior_events.append({"event": {
+                "event": "completed_attempt_active_marker_reconciled",
+                "case": active_case, "attempt": active_attempt,
+                "report_sha256": active_record["report_sha256"]}})
+            active_file.unlink()
+        else:
+            prior_failure = next((row.get("event", {}) for row in reversed(prior_events)
+                                  if row.get("event", {}).get("event") == "case_attempt_failed" and
+                                  row.get("event", {}).get("case") == active_case and
+                                  row.get("event", {}).get("attempt") == active_attempt), None)
+            if prior_failure is None:
+                events.close()
+                raise ExecutionError("Interrupted attempt lacks a persisted failure classification")
+            try:
+                _validate_failure_classification(prior_failure)
+            except BaseException:
+                events.close()
+                raise
+            events.append({"event": "prior_attempt_interrupted_at_restart",
+                           "active_task": prior_active,
+                           "failure_category": prior_failure["failure_category"],
+                           "reason_code": prior_failure["reason_code"],
+                           "recovery_allowed": prior_failure["recovery_allowed"],
+                           "utc": datetime.now(timezone.utc).isoformat()})
+            prior_events.append({"event": {"event": "prior_attempt_interrupted_at_restart",
+                                            "active_task": prior_active,
+                                            "failure_category": prior_failure["failure_category"],
+                                            "reason_code": prior_failure["reason_code"],
+                                            "recovery_allowed": prior_failure["recovery_allowed"]}})
+            active_file.unlink()
     reports = []
     try:
         for spec in ordered:
@@ -2776,10 +2843,11 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
             usage = result["usage"]
             returncode = result.get("returncode")
             status = result.get("status", "unknown")
+        signal_classification = None
         if status == "stopped":
             _append_watchdog_interruption(root, invocation, result)
         elif status == "failed":
-            _append_runner_signal_failure(root, invocation, result)
+            signal_classification = _append_runner_signal_failure(root, invocation, result)
         run_integrity = "NOT_COMPLETE"
         if status == "completed" and returncode == 0:
             try:
@@ -2792,7 +2860,8 @@ def launch_researcher_authorized(package_path: str | Path, run_dir: str | Path,
         _append_invocation_disposition(
             root, invocation, status=status, returncode=returncode,
             run_integrity=run_integrity, result=result,
-            prior_event_count=execution_event_count)
+            prior_event_count=execution_event_count,
+            classification_override=signal_classification)
         local_cpu_after = resource.getrusage(resource.RUSAGE_SELF)
         launcher_cpu = max(0.0, local_cpu_after.ru_utime + local_cpu_after.ru_stime -
                            local_cpu_before.ru_utime - local_cpu_before.ru_stime)
