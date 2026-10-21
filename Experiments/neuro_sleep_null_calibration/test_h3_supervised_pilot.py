@@ -265,6 +265,14 @@ class TestH3SupervisedPilot(unittest.TestCase):
             _verify_recovery_directory(self.runs / "evidence-prefix",
                                        host_state_dir=self.state)
 
+    def test_stdout_tampering_is_rejected_even_when_watchdog_chain_is_valid(self) -> None:
+        self.run_case("stdout-tamper", rows=[{}])
+        stdout = self.runs / "stdout-tamper" / "runner.stdout.log"
+        stdout.write_bytes(stdout.read_bytes() + b"changed after supervision")
+        with self.assertRaisesRegex(H3PilotError, "stdout"):
+            _verify_recovery_directory(self.runs / "stdout-tamper",
+                                       host_state_dir=self.state)
+
     def test_control_log_suffix_loss_is_not_accepted_as_terminal(self) -> None:
         self.run_case("truncated-control", rows=[{}])
         control = self.runs / "truncated-control" / "h3-control.jsonl"

@@ -861,6 +861,24 @@ def _verify_recovery_directory(run_dir: Path, *,
         if control_path.is_symlink() or not control_path.is_file() or \
                 _CONTROL_LOG not in tips:
             raise H3PilotError("Terminal run lacks a verifiable control hash chain")
+        watchdog_path = run_dir / _WATCHDOG_LOG
+        watchdog_events = [json.loads(line)["event"] for line in
+                           watchdog_path.read_text(encoding="utf-8").splitlines()] \
+            if watchdog_path.is_file() and not watchdog_path.is_symlink() else []
+        stdout_path = run_dir / "runner.stdout.log"
+        stdout_hashes = []
+        for event in watchdog_events:
+            usage = event.get("usage")
+            digest = usage.get("runner_stdout_sha256") if isinstance(usage, dict) else None
+            digest = digest or event.get("runner_stdout_sha256")
+            if digest is not None:
+                stdout_hashes.append(digest)
+        if stdout_path.exists():
+            if (stdout_path.is_symlink() or not stdout_path.is_file() or not stdout_hashes or
+                    any(value != sha256_file(stdout_path) for value in stdout_hashes)):
+                raise H3PilotError("Runner stdout is not authenticated by the Watchdog record")
+        elif stdout_hashes:
+            raise H3PilotError("Watchdog record references missing runner stdout")
         control_events = [json.loads(line)["event"] for line in
                           control_path.read_text(encoding="utf-8").splitlines()]
         started = [event for event in control_events
