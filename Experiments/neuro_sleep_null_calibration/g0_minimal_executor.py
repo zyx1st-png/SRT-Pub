@@ -65,6 +65,17 @@ class G0OperationalFailure(RuntimeError):
         return (type(self), (self.reason_code, str(self)))
 
 
+class G0UnknownFailure(RuntimeError):
+    """Unclassified failures; persisted fail-closed and never auto-retried."""
+
+    def __init__(self, reason_code: str, message: str):
+        super().__init__(message)
+        self.reason_code = reason_code
+
+    def __reduce__(self):
+        return (type(self), (self.reason_code, str(self)))
+
+
 def canonical_json(value: object) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":"),
                       ensure_ascii=False, allow_nan=False).encode("utf-8")
@@ -294,6 +305,10 @@ def _louvain_trial(trial_index: int, seed: int) -> dict[str, object]:
     if _LOUVAIN_TEST_FAULT == "worker_scientific_failure" and trial_index == 0:
         raise G0ScientificFailure("G0_INJECTED_WORKER_SCIENTIFIC_FAILURE",
                                   "Synthetic-only spawn scientific failure injection")
+    if _LOUVAIN_TEST_FAULT == "worker_abrupt_exit" and trial_index == 0:
+        # Test-only process death validates fail-closed classification across
+        # the real spawn / BrokenProcessPool boundary.
+        os._exit(73)
     if _LOUVAIN_TEST_FAULT == "worker_operational_failure" and trial_index == 0:
         raise G0OperationalFailure("G0_WORKER_PROCESS_EXIT",
                                    "Synthetic-only spawn operational failure injection")
@@ -514,19 +529,22 @@ def _worker_entry(config_path: Path, expected_sha256: str,
                             _terminate_louvain_pool(pool, pool_processes)
                             raise
                         except BrokenProcessPool as exc:
+                            exit_codes = sorted({process.exitcode for process in pool_processes
+                                                 if process.exitcode is not None})
                             _terminate_louvain_pool(pool, pool_processes)
-                            raise G0OperationalFailure(
-                                "G0_WORKER_PROCESS_EXIT",
-                                "A supervised Louvain spawn worker exited unexpectedly") from exc
+                            raise G0UnknownFailure(
+                                "G0_WORKER_EXIT_UNCLASSIFIED",
+                                "A Louvain spawn worker exited without a typed operational cause "
+                                f"(exit codes: {exit_codes})") from exc
                     if pending:
                         exited = [process for process in pool_processes
                                   if process.exitcode is not None]
                         if exited:
                             codes = sorted({process.exitcode for process in exited})
                             _terminate_louvain_pool(pool, pool_processes)
-                            raise G0OperationalFailure(
-                                "G0_WORKER_PROCESS_EXIT",
-                                "A supervised Louvain spawn worker exited unexpectedly "
+                            raise G0UnknownFailure(
+                                "G0_WORKER_EXIT_UNCLASSIFIED",
+                                "A Louvain spawn worker exited without a typed operational cause "
                                 f"(exit codes: {codes})")
                     roles.sync_pool(pool)
         finally:
@@ -595,6 +613,11 @@ def _worker_entry(config_path: Path, expected_sha256: str,
                         "reason": str(exc)[:500]})
         sys.stdout.flush()
         return 75
+    except G0UnknownFailure as exc:
+        _emit("FAIL", {"failure_class": "UNKNOWN", "reason_code": exc.reason_code,
+                        "reason": str(exc)[:500]})
+        sys.stdout.flush()
+        return 70
     except BaseException as exc:
         _emit("FAIL", {"failure_class": "UNKNOWN",
                         "reason_code": "G0_UNCLASSIFIED_EXCEPTION",
@@ -728,6 +751,8 @@ def _failure_from_worker(value: dict) -> BaseException:
         return G0ScientificFailure(code, reason)
     if category == "OPERATIONAL":
         return G0OperationalFailure(code, reason)
+    if category == "UNKNOWN":
+        return G0UnknownFailure(code, reason)
     return RuntimeError(reason)
 
 
@@ -816,14 +841,19 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
     """Run one synthetic-only G0 null task through store -> watchdog -> result.
 
     This creates exactly 4E proposals and 200 independent, fixed-seed Louvain
-    trials. It deliberately has no biological input or full-battery launcher.
+    trials. Synthetic identity prefixes are caller declarations, not source
+    provenance authentication; this module has no biological loader or
+    full-battery launcher.
     """
     if not graph.source_id.startswith("SYNTHETIC_") or not identity.recording_id.startswith("SYNTHETIC_"):
         raise ValueError("run_synthetic_g0_task accepts only visibly synthetic identities")
+    if graph.source_artifact_sha256 is None:
+        raise ValueError("Synthetic task input requires a source-artifact SHA-256 identity")
     if not 1 <= workers <= 4 or limits.max_workers != workers:
         raise ValueError("Worker count must be 1..4 and match the Watchdog limit")
     if _test_fault not in (None, "scientific_failure", "unknown_failure",
-                           "worker_scientific_failure", "worker_operational_failure"):
+                           "worker_scientific_failure", "worker_operational_failure",
+                           "worker_abrupt_exit"):
         raise ValueError("Unrecognized synthetic-only fault injection")
     identity.validate(graph)
     environment = runtime_manifest(require_target=require_target_runtime)
@@ -946,6 +976,14 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
                                       failure_class="SCIENTIFIC",
                                       reason_code=exc.reason_code, reason=str(exc))
             return {"status": "scientific_failure", "task_id": task_id,
+                    "attempt_id": attempt_uuid, "reason_code": exc.reason_code,
+                    "seed_fingerprint": seed_fingerprint,
+                    "watchdog": watchdog, "stderr_record": stderr_record}
+        except G0UnknownFailure as exc:
+            store.record_task_failure(task_id=task_id, attempt_id=attempt_uuid,
+                                      failure_class="UNKNOWN",
+                                      reason_code=exc.reason_code, reason=str(exc))
+            return {"status": "unknown_failure", "task_id": task_id,
                     "attempt_id": attempt_uuid, "reason_code": exc.reason_code,
                     "seed_fingerprint": seed_fingerprint,
                     "watchdog": watchdog, "stderr_record": stderr_record}

@@ -53,14 +53,16 @@ def small_fault_graph():
             b"synthetic spawn-failure fixture 20261021").hexdigest())
 
 
-def watchdog_limits(workers=4):
-    return WatchdogLimits(
+def watchdog_limits(workers=4, **overrides):
+    values = dict(
         wall_seconds=300, cpu_seconds=300,
         aggregate_rss_bytes=4 * 1024**3, max_workers=workers,
         run_disk_bytes=16 * 1024**2, reserve_free_disk_bytes=1024,
         case_seconds=240, oracle_seconds=240, poll_seconds=0.1,
         suspend_tolerance_seconds=3, terminate_grace_seconds=0.5,
         memory_enforcement_backend="SAMPLED_ONLY")
+    values.update(overrides)
+    return WatchdogLimits(**values)
 
 
 class G0MinimalExecutorTests(StorageFixture):
@@ -70,12 +72,13 @@ class G0MinimalExecutorTests(StorageFixture):
             internal_ledger_dir=self.internal / "control" / run_id,
             policy=self.policy, probe=self.probe, usage_provider=self.usage)
 
-    def execute(self, store, *, attempt=1, invocation=1, fault=None, graph=None):
+    def execute(self, store, *, attempt=1, invocation=1, fault=None, graph=None,
+                workers=4, limits=None):
         graph = graph or fixture_graph()
         return run_synthetic_g0_task(
             store=store, graph=graph, identity=fixture_identity(graph),
             attempt_id=str(uuid.UUID(int=attempt)), invocation_id=invocation,
-            limits=watchdog_limits(), workers=4,
+            limits=limits or watchdog_limits(workers=workers), workers=workers,
             require_target_runtime=False, _test_fault=fault)
 
     def test_target_runtime_matches_historical_versions_on_local_mac(self):
@@ -121,6 +124,17 @@ class G0MinimalExecutorTests(StorageFixture):
                     limits=watchdog_limits(), workers=4)
             finally:
                 store.close()
+
+    def test_synthetic_task_requires_source_artifact_hash(self):
+        fixture = small_fault_graph()
+        graph = normalize_graph_input(
+            "SYNTHETIC_MISSING_SOURCE_HASH", fixture.nodes, fixture.edges)
+        store = self.open_store()
+        try:
+            with self.assertRaisesRegex(ValueError, "source-artifact SHA-256"):
+                self.execute(store, graph=graph)
+        finally:
+            store.close()
 
     def test_four_worker_end_to_end_4e_200_louvain_audit_and_reuse(self):
         graph = fixture_graph()
@@ -232,6 +246,27 @@ class G0MinimalExecutorTests(StorageFixture):
                 self.assertEqual(recovered["result"]["seed_manifest"]["graph_seed"],
                                  g0_graph_seed(identity))
             store.close()
+
+    def test_abrupt_spawn_worker_exit_is_unknown_and_cannot_be_retried(self):
+        graph = small_fault_graph()
+        store = self.open_store_for("eeeeeeee-ffff-4000-8000-000000000003")
+        result = self.execute(
+            store, fault="worker_abrupt_exit", graph=graph, workers=1,
+            limits=watchdog_limits(workers=1, wall_seconds=45,
+                                   cpu_seconds=45, case_seconds=20))
+        self.assertEqual(result["status"], "unknown_failure", result)
+        self.assertEqual(result["reason_code"], "G0_WORKER_EXIT_UNCLASSIFIED")
+        state = store._task_state(result["task_id"])
+        self.assertEqual(state["failures"][-1]["failure_class"], "UNKNOWN")
+        self.assertFalse(state["failures"][-1]["recovery_allowed"])
+        identity = fixture_identity(graph)
+        seed_fingerprint = hashlib.sha256(canonical_json({
+            "graph_seed": g0_graph_seed(identity),
+            "louvain_seeds": [g0_louvain_seed(identity, i) for i in range(200)],
+        })).hexdigest()
+        with self.assertRaises(RecoveryRefused):
+            store.verify_recovery({result["task_id"]: seed_fingerprint})
+        store.close()
 
 
 if __name__ == "__main__":

@@ -41,9 +41,9 @@ _OPERATIONAL_STORAGE_CODES = frozenset({
     "G0_INTERNAL_SPACE_LIMIT",
     "G0_EXTERNAL_IO_FAILURE",
     "G0_EXTERNAL_POSTWRITE_IDENTITY_FAILURE",
-    # An independently monitored computation worker can die without emitting
-    # a result. This exact reason is operational and may be retried once with
-    # the same task/seed; arbitrary worker exceptions remain UNKNOWN.
+    # This exact typed reason may be used only when an independent supervisor
+    # has established an operational interruption. The G0 executor records an
+    # unexplained BrokenProcessPool/worker exit as UNKNOWN and never retries it.
     "G0_WORKER_PROCESS_EXIT",
 })
 
