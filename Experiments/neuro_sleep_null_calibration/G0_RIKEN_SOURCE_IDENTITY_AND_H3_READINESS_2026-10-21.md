@@ -152,7 +152,14 @@ The candidate trial-Q tolerance is now fixed in the validator, before any
 biological replay: absolute error `1e-10`, relative tolerance `0`; Qmax remains
 within the already specified `1e-6`, with the first maximum index required to
 match exactly. This candidate is proposed for independent/researcher review,
-not yet approved. The historical run record captures Python 3.14.0, macOS
+not yet approved. The validator compares each finite trial using
+`abs(actual - reference) > 1e-10`; equality at the threshold passes and no
+relative term is applied. Its Qmax comparison is independently
+`abs(max(actual) - reference_max) > 1e-6`, plus exact equality of the first
+maximizing index. The supervised synthetic regression checks both the exact
+`1e-10` boundary and the next value above it. I recommend freezing these
+pre-run rules as written; that recommendation is not the researcher's approval.
+The historical run record captures Python 3.14.0, macOS
 15.7.4 arm64, NumPy 2.5.3, NetworkX 3.6.1 and python-louvain 0.16, but does
 not record the SciPy version used by the historical MST or h5py/HDF5 versions.
 The replay environment therefore uses a candidate lock (including SciPy
@@ -326,14 +333,48 @@ output names, then copied into this Draft PR.
 The first command verifies expected source identities and hashes without
 reading signal values or constructing graphs. The second verifies the fixed
 ten job/Q/seed references and writes the public-safe packet. They were run for
-this update. There is not yet a single H3-specific, resource-supervised
-execution CLI that consumes this packet; `run_h3_replay_for_graph` is a
-library function, not a safe pilot launcher. Therefore no executable replay
-command is supplied or run in this preparation. Before B-stage authorization,
-the existing watchdog must supervise a bounded driver that checks the packet
-hash and runs the ten rows in fixed order; alternatively an already reviewed
-supervised entry point must be provided. Do not improvise with an inline
-Python command that bypasses a separate process-group watchdog.
+this update. The H3-specific launcher is now
+`h3_supervised_pilot.py`. It verifies the fixed packet and manifest SHA-256,
+exact ten-row order and source/job/subset/window/seed/reference-Q hashes, and
+the locked Python/dependency environment before opening private source roots.
+It then runs the historical graph-builder/order as the authority, reports
+source identity, historical-order Q replay, and #1126 sorted-order
+compatibility separately, and writes a bounded per-row evidence chain plus
+Watchdog and control records. Any source identity, authoritative historical-Q,
+resource, or audit failure stops the ordered pilot. A mismatch only in sorted
+insertion compatibility is diagnostic and does not invalidate the historical
+graph. Recovery inspection is audit-only; neither failed rows nor incomplete
+activities are automatically retried.
+
+The launch template, for a later separately approved run, is:
+
+```sh
+export SRT_PHASE2_ROOT="<private Phase-2 root>"
+export SRT_PSA_ROOT="<private PS-A root>"
+RUN_ID="<new UUID>"
+HEAD="<reviewed clean HEAD>"
+PILOT_SHA="286fa084f125d205463218951e3ccf2640701dc7712a9a48cec62b323a49c36b"
+uv run --python 3.14.0 python \
+  Experiments/neuro_sleep_null_calibration/h3_supervised_pilot.py \
+  --pilot "$SRT_PSA_ROOT/h3_identity_calibration_2026-10-21/prepared/G0_RIKEN_H3_CALIBRATION_PILOT.json" \
+  --manifest Experiments/neuro_sleep_null_calibration/G0_RIKEN_SOURCE_GRAPH_EXPECTED_MANIFEST_2026-10-21.json \
+  --run-directory "$SRT_PSA_ROOT/h3_identity_calibration_2026-10-21/$RUN_ID" \
+  --run-id "$RUN_ID" --expected-head "$HEAD" \
+  --researcher-confirmation "I AUTHORIZE H3 PILOT $RUN_ID $PILOT_SHA $HEAD"
+```
+
+The candidate ceilings remain **not authorized**: 8 wall-hours, 32
+process-tree CPU-hours, at most four compute workers (this launcher currently
+executes the replay serially in one compute process), 4 GiB sampled aggregate
+RSS, and 1 GiB run-directory output. RSS is sampled observation, not a hard
+memory cap or a guarantee against short peaks. The Watchdog serializes
+Watchdog-supervised activities through a persistent host-wide advisory lock;
+activities that do not use this Watchdog are outside that exclusion. A parent
+Watchdog crash triggers a runner-side process-group kill, while an unclosed
+activity ledger blocks subsequent launches and permits audit-only inspection.
+No biological H3 replay ran in this implementation round; the launcher was
+tested only with synthetic graphs, virtual Q references, and injected
+operational failures.
 
 When that supervised runner is available and the researcher approves the
 packet hash and limits, the manual review record belongs in a new top-level
@@ -392,10 +433,11 @@ extrapolate the pilot as an upper bound.
    tolerance zero), retaining the existing `1e-6` Qmax and exact first-max
    index checks. The archived environment did not record SciPy, so exact
    floating-point compatibility cannot be established before replay.
-3. Implement or independently review a watchdog-supervised H3 pilot launcher;
-   then the researcher may decide whether to approve the prepared packet and
-   candidate ceilings. No 10-graph replay ran here. If it passes, submit a
-   separate full-panel resource request; no 120-panel replay ran here.
+3. Independently review the watchdog-supervised H3 pilot launcher and its
+   synthetic fault tests; the researcher must separately approve the prepared
+   packet, proposed tolerance and candidate ceilings before a real pilot.
+   No 10-graph replay ran here. If it passes, submit a separate full-panel
+   resource request; no 120-panel replay ran here.
 4. Resolve the gzip JSONL versus packed audit format and demonstrate the
    14-GiB output cap with a representative, preapproved synthetic measurement.
 5. Make the resource simulator match the actual serial-per-task/four-worker
