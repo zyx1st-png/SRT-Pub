@@ -16,6 +16,7 @@ from concurrent.futures import ThreadPoolExecutor
 from types import SimpleNamespace
 from unittest import mock
 
+import g0_external_storage as storage_module
 from g0_external_storage import (
     ExternalStoragePolicy, G0ExternalStore, G0StorageError, RecoveryRefused,
     VolumeInfo,
@@ -156,6 +157,9 @@ class StorageFixture(unittest.TestCase):
                                           "case-002": hashlib.sha256(b"other").hexdigest()})
         self.assertEqual(report.completed_task_ids, ("case-001",))
         self.assertEqual(report.not_started_task_ids, ("case-002",))
+        self.assertEqual(resumed.read_completed_task_result(
+            task_id="case-001", seed_fingerprint=SEED_FINGERPRINT),
+            b"small synthetic output")
         with self.assertRaisesRegex(RecoveryRefused, "Completed task"):
             resumed.write_task_result(task_id="case-001", attempt_id=self.attempt(2),
                                       seed_fingerprint=SEED_FINGERPRINT, payload=b"again")
@@ -200,6 +204,29 @@ class StorageFixture(unittest.TestCase):
         count, _ = verify_hash_chain(self.ledger_dir / "storage-ledger.jsonl")
         self.assertEqual(count, 9)
         store.close()
+
+    def test_concurrent_directory_creation_race_reopens_with_no_follow(self):
+        parent_fd = os.open(self.external, os.O_RDONLY | os.O_DIRECTORY)
+        real_mkdir = os.mkdir
+
+        def competing_create(name, mode=0o777, *, dir_fd=None):
+            real_mkdir(name, mode, dir_fd=dir_fd)
+            raise FileExistsError(name)
+
+        try:
+            with mock.patch.object(storage_module.os, "mkdir",
+                                   side_effect=competing_create):
+                child_fd = storage_module._open_or_create_dir(
+                    parent_fd, "raced-directory", create=True,
+                    expected_dev=os.fstat(parent_fd).st_dev)
+            try:
+                self.assertTrue(Path(self.external, "raced-directory").is_dir())
+                self.assertEqual(os.fstat(child_fd).st_dev,
+                                 os.fstat(parent_fd).st_dev)
+            finally:
+                os.close(child_fd)
+        finally:
+            os.close(parent_fd)
 
     def test_hot_paths_do_not_rescan_100_1000_or_5000_task_histories(self):
         expected = write_synthetic_task_history(self.ledger_dir, 5000)
@@ -386,6 +413,23 @@ class StorageFixture(unittest.TestCase):
                                 seed_fingerprint=SEED_FINGERPRINT, payload=b"recovered")
         report = store.verify_recovery({"retry": SEED_FINGERPRINT})
         self.assertEqual(report.completed_task_ids, ("retry",))
+        store.close()
+
+    def test_known_worker_process_exit_is_retryable_with_same_seed_once(self):
+        store = self.open_store()
+        store.begin_task(task_id="worker-exit", attempt_id=self.attempt(1),
+                         seed_fingerprint=SEED_FINGERPRINT)
+        store.record_task_failure(
+            task_id="worker-exit", attempt_id=self.attempt(1),
+            failure_class="OPERATIONAL", reason_code="G0_WORKER_PROCESS_EXIT",
+            reason="synthetic worker exited before producing a result")
+        report = store.verify_recovery({"worker-exit": SEED_FINGERPRINT})
+        self.assertEqual(report.retryable_task_ids, ("worker-exit",))
+        store.write_task_result(task_id="worker-exit", attempt_id=self.attempt(2),
+                                seed_fingerprint=SEED_FINGERPRINT,
+                                payload=b"recovered same-seed output")
+        report = store.verify_recovery({"worker-exit": SEED_FINGERPRINT})
+        self.assertEqual(report.completed_task_ids, ("worker-exit",))
         store.close()
 
     def test_two_operational_attempts_exhaust_retry_quota(self):

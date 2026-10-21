@@ -13,6 +13,7 @@ import time
 import unittest
 from unittest import mock
 
+import nc0a_watchdog as watchdog_module
 from nc0a_watchdog import (
     ProcessUsage, WatchdogLimits, classify_process_group, parse_ps_time,
     parse_macos_swap_state, parse_macos_swap_used_bytes,
@@ -34,6 +35,46 @@ def limits(**overrides):
 
 
 class WatchdogTests(unittest.TestCase):
+    def test_directory_byte_snapshot_retries_atomic_log_disappearance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transient = root / "control.json.123.tmp"
+            transient.write_bytes(b"temporary")
+            real_scandir = os.scandir
+            injected = {"done": False}
+
+            class EntryProxy:
+                def __init__(self, entry):
+                    self._entry = entry
+                    self.path = entry.path
+
+                def stat(self, *, follow_symlinks=True):
+                    if not injected["done"] and Path(self.path) == transient:
+                        injected["done"] = True
+                        transient.unlink()
+                        raise FileNotFoundError(self.path)
+                    return self._entry.stat(follow_symlinks=follow_symlinks)
+
+            class ScanProxy:
+                def __init__(self, entries):
+                    self._entries = entries
+
+                def __enter__(self):
+                    return iter(self._entries)
+
+                def __exit__(self, *_):
+                    return False
+
+            def racing_scandir(directory):
+                with real_scandir(directory) as entries:
+                    snapshot = [EntryProxy(entry) for entry in entries]
+                return ScanProxy(snapshot)
+
+            with mock.patch.object(watchdog_module.os, "scandir",
+                                   side_effect=racing_scandir):
+                self.assertEqual(watchdog_module._directory_bytes(root), 0)
+            self.assertTrue(injected["done"])
+
     def test_darwin_collapsed_titles_require_current_process_role_registry(self):
         runner_pid = 100
         marker = ProcessUsage(
@@ -298,19 +339,32 @@ class WatchdogTests(unittest.TestCase):
             root = Path(tmp)
             marker = root / "first-sample-complete"
             peak_file = root / "child-peak-rss.txt"
+            release = root / "release-after-peak"
             code = (
                 "import os,resource,sys,time; from pathlib import Path; "
                 f"marker=Path({str(marker)!r}); peak=Path({str(peak_file)!r}); "
+                f"release=Path({str(release)!r}); "
                 "deadline=time.monotonic()+5; "
                 "exec('while not marker.exists() and time.monotonic()<deadline: time.sleep(.001)'); "
                 "x=bytearray(120*1024*1024); x[::4096]=b'x'*(len(x)//4096); "
                 "peak.write_text(str(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)); "
+                "deadline=time.monotonic()+5; "
+                "exec('while not release.exists() and time.monotonic()<deadline: time.sleep(.001)'); "
             )
 
             def first_sample_then_release(pgid):
                 samples = sample_process_group(pgid)
-                if any(proc.pid == pgid for proc in samples):
+                if any(proc.pid == pgid for proc in samples) and not marker.exists():
                     marker.write_text("sampled")
+                    # Freeze this sample while the child creates a known short
+                    # high-water event, then let it exit before the next sample.
+                    # This removes scheduler-speed dependence from a test whose
+                    # contract is only that sampled RSS is not called a hard cap.
+                    deadline = time.monotonic() + 5
+                    while not peak_file.exists() and time.monotonic() < deadline:
+                        time.sleep(0.001)
+                    if peak_file.exists():
+                        release.write_text("release")
                 return samples
 
             result = supervise([sys.executable, "-c", code], run_dir=root,

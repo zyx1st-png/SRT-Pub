@@ -23,6 +23,7 @@ import secrets
 import shutil
 import signal
 import shlex
+import stat
 import subprocess
 import sys
 import threading
@@ -639,13 +640,33 @@ def _cgroup_memory_snapshot(path: Path) -> dict:
 
 
 def _directory_bytes(root: Path) -> int:
-    total = 0
-    for item in root.rglob("*"):
-        if item.is_symlink():
-            raise WatchdogError("Run directory may not contain symlinks")
-        if item.is_file():
-            total += item.stat().st_size
-    return total
+    # Atomic control-log replacement can remove a directory entry after
+    # scandir enumerates it but before stat. Retry the whole snapshot a few
+    # times; persistent churn remains a fail-closed sampling error.
+    for _ in range(3):
+        total = 0
+        changed = False
+        pending = [root]
+        while pending and not changed:
+            directory = pending.pop()
+            with os.scandir(directory) as entries:
+                for entry in entries:
+                    try:
+                        info = entry.stat(follow_symlinks=False)
+                    except FileNotFoundError:
+                        changed = True
+                        break
+                    if stat.S_ISLNK(info.st_mode):
+                        raise WatchdogError("Run directory may not contain symlinks")
+                    if stat.S_ISDIR(info.st_mode):
+                        pending.append(Path(entry.path))
+                    elif stat.S_ISREG(info.st_mode):
+                        total += info.st_size
+                    else:
+                        raise WatchdogError("Run directory contains an unsupported entry")
+        if not changed:
+            return total
+    raise WatchdogError("Run directory changed during every disk-usage snapshot")
 
 
 def _prepare_emergency_reserve(root: Path, allocation_cap: int) -> Path:
@@ -728,7 +749,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
               audit_name: str = "watchdog.jsonl",
               stdout_name: str = "runner.stdout.log",
               invocation_id: int | None = None,
-              stop_guard: Callable[[], str | None] | None = None) -> dict:
+              stop_guard: Callable[[], str | None] | None = None,
+              inherited_fds: tuple[int, ...] = ()) -> dict:
     """Run and monitor a single scientific runner; terminate its whole group.
 
     ``clock`` returns (UTC epoch seconds, suspend-aware-comparison monotonic
@@ -739,6 +761,12 @@ def supervise(command: list[str], *, run_dir: str | Path,
         raise ValueError("A nonempty argument-vector command is required")
     if invocation_id is not None and (type(invocation_id) is not int or invocation_id < 1):
         raise ValueError("Watchdog invocation_id must be a positive integer")
+    if (not isinstance(inherited_fds, tuple) or
+            any(type(fd) is not int or fd < 0 for fd in inherited_fds) or
+            len(set(inherited_fds)) != len(inherited_fds)):
+        raise ValueError("inherited_fds must be a tuple of distinct open file descriptors")
+    for fd in inherited_fds:
+        os.fstat(fd)
     macos_initial = None
     if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
         macos_initial = validate_macos_sampled_backend(limits)
@@ -813,7 +841,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
         child_env["NC0A_PROCESS_ROLE_REGISTRY"] = str(role_registry_path)
         proc = subprocess.Popen(command, cwd=root, stdin=subprocess.DEVNULL,
                                 stdout=output, stderr=subprocess.STDOUT,
-                                start_new_session=True, close_fds=True, env=child_env)
+                                start_new_session=True, close_fds=True, env=child_env,
+                                pass_fds=inherited_fds)
         if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
             sleep_assertion = _start_sleep_assertion(
                 os.getpid(), limits.require_sleep_assertion)

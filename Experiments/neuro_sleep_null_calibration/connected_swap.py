@@ -199,6 +199,68 @@ class ConnectedDegreeSwap:
         self.rejected_disconnect += 1
         return False
 
+    def propose_audited(self, rng: random.Random, *, oracle: bool = False,
+                        audit_local: bool = False) -> tuple[bool, dict[str, object]]:
+        """Run one proposal and return its complete decision record.
+
+        This is kept separate from ``propose`` so existing long NC-0a chains
+        do not allocate an audit object at every step. The random draws and
+        graph updates intentionally mirror ``propose``; the equivalence test
+        protects them from drifting apart.
+        """
+        self.attempts += 1
+        i = rng.randrange(self.m)
+        j = rng.randrange(self.m - 1)
+        if j >= i:
+            j += 1
+        a, b = self.edges[i]
+        c, d = self.edges[j]
+        orientation = rng.randrange(2)
+        old_edges = (self.edges[i], self.edges[j])
+        event: dict[str, object] = {
+            "attempt": self.attempts,
+            "edge_slots": [i, j],
+            "selected_edges": [list(old_edges[0]), list(old_edges[1])],
+            "orientation": orientation,
+        }
+        if len({a, b, c, d}) < 4:
+            self.rejected_overlap += 1
+            event.update({"candidate_edges": None, "decision": "REJECT_OVERLAP"})
+            return False, event
+        if orientation == 0:
+            e1, e2 = normalize_edge(a, c), normalize_edge(b, d)
+        else:
+            e1, e2 = normalize_edge(a, d), normalize_edge(b, c)
+        event["candidate_edges"] = [list(e1), list(e2)]
+        if e1[1] in self.adj[e1[0]] or e2[1] in self.adj[e2[0]]:
+            self.rejected_duplicate += 1
+            event["decision"] = "REJECT_DUPLICATE"
+            return False, event
+
+        orig1, orig2 = self.edges[i], self.edges[j]
+        self._erase(orig1)
+        self._erase(orig2)
+        self._insert(e1)
+        self._insert(e2)
+        local_ok = self.endpoints_connected((a, b, c, d))
+        if oracle and local_ok != self.full_connected():
+            raise AssertionError("Endpoint BFS and full graph connectivity disagree")
+        if local_ok:
+            self.edges[i] = e1
+            self.edges[j] = e2
+            self.accepted += 1
+            if audit_local:
+                self.assert_accepted_swap_local(orig1, orig2, e1, e2, (i, j))
+            event["decision"] = "ACCEPT"
+            return True, event
+        self._erase(e1)
+        self._erase(e2)
+        self._insert(orig1)
+        self._insert(orig2)
+        self.rejected_disconnect += 1
+        event["decision"] = "REJECT_DISCONNECT"
+        return False, event
+
     def fingerprint(self) -> str:
         payload = "\n".join(f"{u},{v}" for u, v in sorted(self.edges))
         return sha256((f"n={self.n}\n" + payload + "\n").encode("utf-8")).hexdigest()

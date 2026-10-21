@@ -12,6 +12,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import hashlib
 import json
+import math
 import os
 from pathlib import Path, PurePosixPath
 import plistlib
@@ -22,6 +23,7 @@ import subprocess
 import threading
 import time
 import uuid
+from contextlib import contextmanager
 from typing import Callable, Iterable, Mapping
 
 from nc0a_watchdog import (HashChainLog, WatchdogError, WatchdogLimits,
@@ -41,6 +43,17 @@ _OPERATIONAL_STORAGE_CODES = frozenset({
     "G0_INTERNAL_SPACE_LIMIT",
     "G0_EXTERNAL_IO_FAILURE",
     "G0_EXTERNAL_POSTWRITE_IDENTITY_FAILURE",
+    "WALL_LIMIT", "CPU_LIMIT_WITH_TERMINATION_MARGIN",
+    "AGGREGATE_RSS_LIMIT", "RUN_DISK_ALLOCATION_LIMIT",
+    "FREE_DISK_RESERVE_BREACH", "CASE_WALL_LIMIT", "ORACLE_WALL_LIMIT",
+    "HOST_MEMORY_PRESSURE_LIMIT", "SWAP_GROWTH_LIMIT",
+    "SWAP_FREE_RESERVE_BREACH", "BOOT_VOLUME_FREE_DISK_RESERVE_BREACH",
+    "VM_VOLUME_FREE_DISK_RESERVE_BREACH", "SLEEP_ASSERTION_LOST",
+    "AC_POWER_LOST", "THERMAL_WARNING",
+    # This exact typed reason may be used only when an independent supervisor
+    # has established an operational interruption. The G0 executor records an
+    # unexplained BrokenProcessPool/worker exit as UNKNOWN and never retries it.
+    "G0_WORKER_PROCESS_EXIT",
 })
 
 
@@ -196,7 +209,15 @@ def _open_or_create_dir(parent_fd: int, name: str, *, create: bool,
     except FileNotFoundError:
         if not create:
             raise
-        os.mkdir(name, 0o700, dir_fd=parent_fd)
+        try:
+            os.mkdir(name, 0o700, dir_fd=parent_fd)
+        except FileExistsError:
+            # Another supervised task may have created the same namespace
+            # directory after our initial open failed. Re-open below with
+            # O_NOFOLLOW and verify the device exactly as for an existing dir.
+            pass
+        # Sync the parent after either our mkdir or a racing creator's mkdir,
+        # so a task result cannot become durable before this entry is.
         os.fsync(parent_fd)
         fd = os.open(name, flags, dir_fd=parent_fd)
         os.fsync(fd)
@@ -314,10 +335,17 @@ class G0ExternalStore:
         self._inflight_result_paths: set[str] = set()
         self._inflight_artifact_paths: set[str] = set()
         self._task_event_index: dict[str, dict[str, list[dict]]] = {}
+        self._active_task_ids: set[str] = set()
+        self._activity_manifest: dict | None = None
+        self._activity_task_seeds: dict[str, str] | None = None
+        self._activity_task_order: tuple[str, ...] | None = None
+        self._activity_verified = False
+        self._activity_execution_lock = threading.Lock()
         self._used_external_paths: set[str] = set()
         self._expected_external_paths: set[str] = set()
         self._committed_external_files: dict[str, dict] = {}
         self._watchdog_invocation_ids: set[int] = set()
+        self._watchdog_invocations: dict[int, dict[str, dict | None]] = {}
         self._external_run_bytes = 0
         self._external_reserved_bytes = 0
         self._ledger_bytes = 0
@@ -556,6 +584,49 @@ class G0ExternalStore:
     def _index_event(self, event: dict) -> None:
         """Update rebuildable hot-path indexes after an authoritative append."""
         kind = event.get("event")
+        if kind == "g0_activity_manifest_started":
+            if self._activity_manifest is not None:
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_DUPLICATE",
+                                      "A run may contain only one frozen activity manifest")
+            activity_id = event.get("activity_id")
+            tasks = event.get("expected_tasks")
+            task_order = event.get("task_order")
+            manifest_sha256 = event.get("manifest_sha256")
+            try:
+                canonical_activity_id = str(uuid.UUID(activity_id))
+            except (ValueError, TypeError, AttributeError):
+                canonical_activity_id = None
+            if (not isinstance(activity_id, str) or not _SAFE_ID.fullmatch(activity_id) or
+                    canonical_activity_id != activity_id.lower() or
+                    not isinstance(tasks, dict) or not tasks or
+                    not isinstance(task_order, list) or
+                    not isinstance(manifest_sha256, str) or not _HEX64.fullmatch(manifest_sha256)):
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_INVALID",
+                                      "Activity manifest identity or task map is malformed")
+            if any(not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id) or
+                   not isinstance(seed, str) or not _HEX64.fullmatch(seed)
+                   for task_id, seed in tasks.items()):
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_INVALID",
+                                      "Activity manifest contains an invalid task or seed")
+            canonical_tasks = dict(sorted(tasks.items()))
+            if (any(not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id)
+                    for task_id in task_order) or len(task_order) != len(tasks) or
+                    len(set(task_order)) != len(task_order) or set(task_order) != set(tasks)):
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_INVALID",
+                                      "Activity task order is malformed or incomplete")
+            expected_digest = hashlib.sha256(_canonical({
+                "activity_id": activity_id,
+                "expected_tasks": canonical_tasks,
+                "task_order": task_order})).hexdigest()
+            if canonical_tasks != tasks or manifest_sha256 != expected_digest:
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_HASH_MISMATCH",
+                                      "Activity manifest digest or order is invalid")
+            self._activity_manifest = dict(event)
+            self._activity_task_seeds = canonical_tasks
+            self._activity_task_order = tuple(task_order)
+            self._activity_verified = False
+            self._has_prior_work = True
+            return
         task_kinds = {
             "g0_task_started": "starts",
             "g0_task_completed": "completions",
@@ -576,6 +647,7 @@ class G0ExternalStore:
                 _safe_relative(path)
                 self._used_external_paths.add(path)
                 self._expected_external_paths.add(path)
+                self._active_task_ids.add(task_id)
             elif kind == "g0_task_completed":
                 path = event.get("result_path")
                 if not isinstance(path, str):
@@ -586,6 +658,9 @@ class G0ExternalStore:
                     "size_bytes": event.get("size_bytes"),
                     "event": kind,
                 }
+                self._active_task_ids.discard(task_id)
+            elif kind == "g0_task_failed":
+                self._active_task_ids.discard(task_id)
             return
         artifact_kinds = {
             "g0_external_artifact_started",
@@ -615,7 +690,24 @@ class G0ExternalStore:
             if type(invocation_id) is not int or invocation_id < 1:
                 raise RecoveryRefused("G0_WATCHDOG_RECORD_INVALID",
                                       "Invalid watchdog invocation ID")
+            records = self._watchdog_invocations.setdefault(
+                invocation_id, {"started": None, "finished": None})
+            slot = ("started" if kind == "g0_watchdog_invocation_started"
+                    else "finished")
+            if records[slot] is not None:
+                raise RecoveryRefused("G0_WATCHDOG_RECORD_DUPLICATE",
+                                      f"Duplicate watchdog {slot} record: {invocation_id}")
+            if slot == "finished" and records["started"] is None:
+                raise RecoveryRefused("G0_WATCHDOG_RECORD_ORDER_INVALID",
+                                      f"Watchdog terminal record precedes start: {invocation_id}")
+            if slot == "finished" and any(
+                    records["started"].get(name) != event.get(name)
+                    for name in ("task_id", "attempt_id", "activity_id")):
+                raise RecoveryRefused("G0_WATCHDOG_TASK_IDENTITY_MISMATCH",
+                                      f"Watchdog task identity changed: {invocation_id}")
+            records[slot] = dict(event)
             self._watchdog_invocation_ids.add(invocation_id)
+            return
 
     def _rebuild_incremental_indexes(self) -> None:
         """Rebuild hot-path state and committed-byte totals on open or resume."""
@@ -678,6 +770,215 @@ class G0ExternalStore:
         if not self._recovery_verified:
             raise RecoveryRefused("G0_RECOVERY_VALIDATION_REQUIRED",
                                   "Existing run state must pass full recovery validation before writes")
+
+    @property
+    def activity_task_seeds(self) -> dict[str, str] | None:
+        with self._ledger_lock:
+            self._assert_index_current()
+            return (dict(self._activity_task_seeds)
+                    if self._activity_task_seeds is not None else None)
+
+    @property
+    def activity_id(self) -> str | None:
+        with self._ledger_lock:
+            self._assert_index_current()
+            return (str(self._activity_manifest["activity_id"])
+                    if self._activity_manifest is not None else None)
+
+    def next_watchdog_invocation_id(self) -> int:
+        """Return the next unused invocation ID from the verified in-memory index."""
+        with self._ledger_lock:
+            self._assert_index_current()
+            return max(self._watchdog_invocation_ids, default=0) + 1
+
+    @contextmanager
+    def activity_execution(self):
+        """Serialize schedulers sharing this store before they create artifacts."""
+        if not self._activity_execution_lock.acquire(blocking=False):
+            raise RecoveryRefused("G0_ACTIVITY_ALREADY_RUNNING",
+                                  "Another scheduler is already using this activity store")
+        try:
+            yield
+        finally:
+            self._activity_execution_lock.release()
+
+    def activity_resource_accounting(self, activity_id: str) -> dict:
+        """Return cumulative supervised usage from all attempts in one activity."""
+        self._require_recovery_verified()
+        with self._ledger_lock:
+            self._assert_index_current()
+            if (self._activity_manifest is None or
+                    self._activity_manifest.get("activity_id") != activity_id):
+                raise RecoveryRefused("G0_ACTIVITY_IDENTITY_MISMATCH",
+                                      "Resource accounting activity does not match frozen manifest")
+            selected = [record for record in self._watchdog_invocations.values()
+                        if isinstance(record.get("started"), dict) and
+                        record["started"].get("activity_id") == activity_id]
+            total_wall = 0.0
+            total_cpu = 0.0
+            peak_workers = 0
+            unaccounted = []
+            for record in selected:
+                started, finished = record["started"], record["finished"]
+                invocation_id = started.get("invocation_id")
+                result = finished.get("result") if isinstance(finished, dict) else None
+                usage = result.get("usage") if isinstance(result, dict) else None
+                if not isinstance(usage, dict):
+                    unaccounted.append(invocation_id)
+                    continue
+                wall, cpu, workers = (usage.get("wall_seconds"),
+                                      usage.get("cpu_seconds"),
+                                      usage.get("peak_compute_workers"))
+                if (type(wall) not in (int, float) or not math.isfinite(wall) or wall < 0 or
+                        type(cpu) not in (int, float) or not math.isfinite(cpu) or cpu < 0 or
+                        type(workers) is not int or workers < 0):
+                    unaccounted.append(invocation_id)
+                    continue
+                total_wall += float(wall)
+                total_cpu += float(cpu)
+                peak_workers = max(peak_workers, workers)
+            return {"watchdog_invocation_count": len(selected),
+                    "accounted_invocation_count": len(selected) - len(unaccounted),
+                    "resource_accounting_complete": not unaccounted,
+                    "unaccounted_invocation_ids": sorted(unaccounted),
+                    "summed_watchdog_wall_seconds": total_wall,
+                    "summed_watchdog_cpu_seconds": total_cpu,
+                    "peak_compute_workers": peak_workers,
+                    "wall_semantics": "sum_of_supervised_invocation_wall_seconds_not_calendar_elapsed"}
+
+    def prepare_activity(self, *, activity_id: str,
+                         expected_tasks: Mapping[str, str]) -> RecoveryReport:
+        """Freeze one complete task/seed inventory and validate it once.
+
+        A newly opened store with prior records performs the full recovery
+        scan. While the same verified store remains open, calls for the
+        identical manifest use append-validated indexes.
+        """
+        try:
+            if str(uuid.UUID(activity_id)) != activity_id.lower():
+                raise ValueError("noncanonical activity UUID")
+        except (ValueError, TypeError, AttributeError) as exc:
+            raise G0StorageError("G0_ACTIVITY_ID_INVALID",
+                                 "activity_id must be a canonical UUID") from exc
+        if not isinstance(expected_tasks, Mapping) or not expected_tasks:
+            raise G0StorageError("G0_ACTIVITY_MANIFEST_INVALID",
+                                 "An activity requires a nonempty task/seed inventory")
+        tasks = dict(expected_tasks)
+        if any(not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id) or
+               not isinstance(seed, str) or not _HEX64.fullmatch(seed)
+               for task_id, seed in tasks.items()):
+            raise G0StorageError("G0_ACTIVITY_MANIFEST_INVALID",
+                                 "Activity inventory contains an invalid task or seed")
+        task_order = list(tasks)
+        canonical_tasks = dict(sorted(tasks.items()))
+        manifest_sha256 = hashlib.sha256(_canonical({
+            "activity_id": activity_id, "expected_tasks": canonical_tasks,
+            "task_order": task_order})).hexdigest()
+        with self._ledger_lock:
+            self._assert_index_current()
+            if self._activity_manifest is None:
+                if self._has_prior_work:
+                    raise RecoveryRefused("G0_ACTIVITY_MANIFEST_MISSING",
+                                          "Existing run work cannot be retrofitted with a new inventory")
+                self._append({"event": "g0_activity_manifest_started",
+                              "activity_id": activity_id,
+                              "expected_tasks": canonical_tasks,
+                              "task_order": task_order,
+                              "manifest_sha256": manifest_sha256,
+                              "utc_epoch": time.time()})
+            else:
+                current = self._activity_manifest
+                if (current.get("activity_id") != activity_id or
+                        current.get("expected_tasks") != canonical_tasks or
+                        current.get("task_order") != task_order or
+                        current.get("manifest_sha256") != manifest_sha256):
+                    raise RecoveryRefused("G0_ACTIVITY_MANIFEST_CHANGED",
+                                          "Activity ID and full task/seed inventory are immutable")
+                if self._activity_verified and self._recovery_verified:
+                    return self._incremental_recovery_report(tasks)
+        return self.verify_recovery(tasks)
+
+    def assert_activity_task(self, *, task_id: str, seed_fingerprint: str) -> None:
+        """O(1) admission check for one task in the verified frozen inventory."""
+        self._require_recovery_verified()
+        with self._ledger_lock:
+            self._assert_index_current()
+            if (not self._activity_verified or self._activity_task_seeds is None or
+                    self._activity_task_seeds.get(task_id) != seed_fingerprint):
+                raise RecoveryRefused("G0_TASK_OUTSIDE_VERIFIED_ACTIVITY",
+                                      "Task/seed is not in the full verified activity manifest")
+
+    def task_recovery_state(self, *, task_id: str,
+                            seed_fingerprint: str) -> str:
+        """Read one task's verified indexed state without rescanning the ledger."""
+        self.assert_activity_task(task_id=task_id, seed_fingerprint=seed_fingerprint)
+        state = self._task_state(task_id)
+        starts = state["starts"]
+        completions = state["completions"]
+        failures = state["failures"]
+        if len(completions) > 1 or len(starts) > 2:
+            raise RecoveryRefused("G0_TASK_HISTORY_INVALID", f"Task history invalid: {task_id}")
+        attempts = [item.get("attempt_id") for item in starts]
+        if (any(not isinstance(value, str) for value in attempts) or
+                len(set(attempts)) != len(attempts)):
+            raise RecoveryRefused("G0_ATTEMPT_DUPLICATE", f"Task attempts are invalid: {task_id}")
+        if any(item.get("seed_fingerprint") != seed_fingerprint for item in starts):
+            raise RecoveryRefused("G0_TASK_SEED_CHANGED", f"Task seed changed: {task_id}")
+        failure_by_attempt: dict[str, list[dict]] = {}
+        for failure in failures:
+            failure_by_attempt.setdefault(str(failure.get("attempt_id")), []).append(failure)
+        if set(failure_by_attempt) - set(attempts):
+            raise RecoveryRefused("G0_TASK_HISTORY_INVALID",
+                                  f"Failure exists without a matching attempt: {task_id}")
+        prior_attempts = set(attempts[:-1])
+        for prior_attempt in prior_attempts:
+            prior = failure_by_attempt.get(prior_attempt, [])
+            if (len(prior) != 1 or prior[0].get("failure_class") != "OPERATIONAL" or
+                    prior[0].get("reason_code") not in _OPERATIONAL_STORAGE_CODES or
+                    not prior[0].get("recovery_allowed")):
+                raise RecoveryRefused("G0_TASK_RETRY_FORBIDDEN",
+                                      f"Prior task attempt is not a verified retryable operation: {task_id}")
+        if completions:
+            if (not starts or completions[0].get("attempt_id") != attempts[-1] or
+                    completions[0].get("seed_fingerprint") != seed_fingerprint or
+                    set(failure_by_attempt) != prior_attempts or
+                    len(failures) != len(prior_attempts)):
+                raise RecoveryRefused("G0_TASK_COMPLETION_CONFLICT",
+                                      f"Completed task history is inconsistent: {task_id}")
+            return "completed"
+        if not starts:
+            if failures:
+                raise RecoveryRefused("G0_TASK_HISTORY_INVALID",
+                                      f"Failure exists without a start: {task_id}")
+            return "not_started"
+        terminal = failure_by_attempt.get(attempts[-1], [])
+        if len(terminal) != 1 or len(failures) != len(attempts):
+            raise RecoveryRefused("G0_TASK_INTERRUPTION_UNCLASSIFIED",
+                                  f"Task has incomplete or ambiguous prior state: {task_id}")
+        failure = terminal[0]
+        if (failure.get("failure_class") == "OPERATIONAL" and
+                failure.get("reason_code") in _OPERATIONAL_STORAGE_CODES and
+                failure.get("recovery_allowed")):
+            return "attempts_exhausted" if len(starts) >= 2 else "retryable"
+        return "blocked"
+
+    def _incremental_recovery_report(self, expected_tasks: Mapping[str, str]) -> RecoveryReport:
+        completed, retryable, not_started, exhausted = [], [], [], []
+        for task_id, seed in expected_tasks.items():
+            state = self.task_recovery_state(task_id=task_id, seed_fingerprint=seed)
+            if state == "completed":
+                completed.append(task_id)
+            elif state == "retryable":
+                retryable.append(task_id)
+            elif state == "not_started":
+                not_started.append(task_id)
+            elif state == "attempts_exhausted":
+                exhausted.append(task_id)
+            elif state == "blocked":
+                raise RecoveryRefused("G0_TASK_RETRY_FORBIDDEN",
+                                      f"Task failure is not eligible for automatic recovery: {task_id}")
+        return RecoveryReport(tuple(sorted(completed)), tuple(sorted(retryable)),
+                              tuple(sorted(not_started)), tuple(sorted(exhausted)))
 
     def _reserve_external_write(self, size: int) -> None:
         """Reserve a bounded write against run and independent volume limits."""
@@ -821,15 +1122,41 @@ class G0ExternalStore:
             return exc.code if re.fullmatch(r"[A-Z][A-Z0-9_]{2,119}", exc.code) else "G0_STORAGE_GUARD_FAILED"
 
     def supervise_worker(self, command: list[str], *, limits: WatchdogLimits,
-                         invocation_id: int, **watchdog_options) -> dict:
+                         invocation_id: int,
+                         task_id: str | None = None,
+                         attempt_id: str | None = None,
+                         activity_id: str | None = None,
+                         inherited_fds: tuple[int, ...] = (),
+                         additional_stop_guard: Callable[[], str | None] | None = None,
+                         **watchdog_options) -> dict:
         """Run one bounded worker under the internal-disk watchdog and guard.
 
-        A future G0 executor should call this boundary instead of invoking the
-        watchdog directly, so audit/stdout remain on APFS while data writes go
-        through this store. It does not schedule scientific tasks.
+        A G0 executor calls this boundary instead of invoking the watchdog
+        directly. Watchdog control audit and small protocol stdout stay on
+        APFS; proposal traces must be passed separately through a bounded pipe
+        to write_immutable_artifact. This adapter does not schedule tasks.
         """
         if type(invocation_id) is not int or invocation_id < 1:
             raise ValueError("invocation_id must be a positive integer")
+        task_identity = (task_id, attempt_id, activity_id)
+        if any(value is not None for value in task_identity):
+            try:
+                valid_attempt = (isinstance(attempt_id, str) and
+                                 str(uuid.UUID(attempt_id)) == attempt_id.lower())
+                valid_activity = (isinstance(activity_id, str) and
+                                  str(uuid.UUID(activity_id)) == activity_id.lower())
+            except (ValueError, TypeError, AttributeError):
+                valid_attempt = valid_activity = False
+            if (not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id) or
+                    not valid_attempt or not valid_activity):
+                raise G0StorageError("G0_WATCHDOG_TASK_IDENTITY_INVALID",
+                                     "Watchdog task, attempt and activity identities must be supplied together")
+            task_state = self._task_state(task_id)
+            if not any(event.get("attempt_id") == attempt_id and
+                       event.get("invocation_id") == invocation_id
+                       for event in task_state["starts"]):
+                raise RecoveryRefused("G0_WATCHDOG_TASK_START_MISMATCH",
+                                      "Watchdog invocation has no matching task-start record")
         self._require_recovery_verified()
         controlled_options = {"run_dir", "stop_guard", "audit_name", "stdout_name",
                              "invocation_id"}
@@ -852,23 +1179,38 @@ class G0ExternalStore:
                                       "Watchdog invocation IDs are single-use")
             self._append({"event": "g0_watchdog_invocation_started",
                           "invocation_id": invocation_id,
+                          "task_id": task_id, "attempt_id": attempt_id,
+                          "activity_id": activity_id,
                           "audit_name": audit_name, "stdout_name": stdout_name,
                           "utc_epoch": time.time()})
+        if additional_stop_guard is not None and not callable(additional_stop_guard):
+            raise TypeError("additional_stop_guard must be callable")
+
+        def combined_stop_guard() -> str | None:
+            storage_reason = self.watchdog_stop_guard()
+            if storage_reason is not None:
+                return storage_reason
+            return additional_stop_guard() if additional_stop_guard is not None else None
+
         try:
             result = supervise(command, run_dir=self.control_dir, limits=limits,
                                invocation_id=invocation_id,
                                audit_name=audit_name, stdout_name=stdout_name,
-                               stop_guard=self.watchdog_stop_guard,
+                               stop_guard=combined_stop_guard,
+                               inherited_fds=inherited_fds,
                                **watchdog_options)
         except BaseException as exc:
             self._record_watchdog_terminal(invocation_id, audit_name, stdout_name,
                                            status="watchdog_exception",
+                                           task_id=task_id, attempt_id=attempt_id,
+                                           activity_id=activity_id,
                                            exception_type=type(exc).__name__,
                                            exception_message=str(exc)[:500])
             raise
         terminal = self._record_watchdog_terminal(
             invocation_id, audit_name, stdout_name,
-            status=str(result.get("status", "unknown")), result=result)
+            status=str(result.get("status", "unknown")), result=result,
+            task_id=task_id, attempt_id=attempt_id, activity_id=activity_id)
         if result.get("audit_sha256") and result["audit_sha256"] != terminal.get("audit_tip_sha256"):
             raise RecoveryRefused("G0_WATCHDOG_AUDIT_TIP_MISMATCH",
                                   "Watchdog result tip differs from the persisted log")
@@ -876,6 +1218,9 @@ class G0ExternalStore:
 
     def _record_watchdog_terminal(self, invocation_id: int, audit_name: str,
                                   stdout_name: str, *, status: str,
+                                  task_id: str | None = None,
+                                  attempt_id: str | None = None,
+                                  activity_id: str | None = None,
                                   result: dict | None = None,
                                   exception_type: str | None = None,
                                   exception_message: str | None = None) -> dict:
@@ -897,6 +1242,8 @@ class G0ExternalStore:
             audit_error = (audit_error + "; " if audit_error else "") + f"stdout {type(exc).__name__}: {exc}"[:500]
         terminal = {"event": "g0_watchdog_invocation_finished",
                     "invocation_id": invocation_id, "status": status,
+                    "task_id": task_id, "attempt_id": attempt_id,
+                    "activity_id": activity_id,
                     "audit_name": audit_name, "stdout_name": stdout_name,
                     "audit_sequence": audit_sequence, "audit_tip_sha256": audit_tip,
                     "audit_file_sha256": audit_file_sha, "stdout_sha256": stdout_sha,
@@ -1004,7 +1351,7 @@ class G0ExternalStore:
         return parent, parts[-1]
 
     def begin_task(self, *, task_id: str, attempt_id: str,
-                   seed_fingerprint: str) -> str:
+                   seed_fingerprint: str, invocation_id: int | None = None) -> str:
         """Record a task attempt before work begins and return its fixed path."""
         self._require_recovery_verified()
         if not _HEX64.fullmatch(seed_fingerprint):
@@ -1016,6 +1363,18 @@ class G0ExternalStore:
             self._run_fd, _safe_relative(relative)[:-1],
             self._external_initial.st_dev)
         with self._ledger_lock:
+            self._assert_index_current()
+            if (self._activity_task_seeds is not None and
+                    self._activity_task_seeds.get(task_id) != seed_fingerprint):
+                raise RecoveryRefused("G0_TASK_OUTSIDE_ACTIVITY_MANIFEST",
+                                      "Task/seed is not in the frozen activity inventory")
+            if self._activity_task_seeds is not None and (
+                    type(invocation_id) is not int or invocation_id < 1):
+                raise RecoveryRefused("G0_TASK_WATCHDOG_MAPPING_INVALID",
+                                      "Every activity task must bind a positive Watchdog invocation ID")
+            if self._activity_task_seeds is not None and self._active_task_ids:
+                raise RecoveryRefused("G0_ACTIVITY_TASK_ALREADY_ACTIVE",
+                                      "The activity scheduler permits only one active task at a time")
             prior = self._task_state(task_id)
             if prior["completions"]:
                 raise RecoveryRefused("G0_TASK_ALREADY_COMPLETE", "Completed task cannot be recomputed")
@@ -1035,6 +1394,7 @@ class G0ExternalStore:
                 raise RecoveryRefused("G0_ATTEMPT_DUPLICATE", "Attempt ID has already been used")
             self._append({"event": "g0_task_started", "task_id": task_id,
                           "attempt_id": attempt_id, "seed_fingerprint": seed_fingerprint,
+                          "invocation_id": invocation_id,
                           "result_path": relative, "utc_epoch": time.time()})
         return relative
 
@@ -1046,10 +1406,82 @@ class G0ExternalStore:
         return self.complete_task_result(task_id=task_id, attempt_id=attempt_id,
                                          seed_fingerprint=seed_fingerprint, payload=payload)
 
+    def read_completed_task_result(self, *, task_id: str,
+                                   seed_fingerprint: str) -> bytes:
+        """Read a previously verified immutable task result without recompute.
+
+        Callers must first run ``verify_recovery`` for the frozen inventory.
+        This method checks the indexed completion identity again and verifies
+        the bytes against the authoritative completion record before return.
+        """
+        self._require_recovery_verified()
+        if not _HEX64.fullmatch(seed_fingerprint):
+            raise G0StorageError("G0_SEED_FINGERPRINT_INVALID",
+                                 "Seed fingerprint must be SHA-256 hex")
+        with self._ledger_lock:
+            state = self._task_state(task_id)
+            if len(state["completions"]) != 1 or not state["starts"]:
+                raise RecoveryRefused("G0_TASK_RESULT_NOT_COMPLETE",
+                                      "Task has no uniquely completed result")
+            completion = state["completions"][0]
+            start = state["starts"][-1]
+            relative = self._expected_result_path(task_id, start["attempt_id"])
+            if (start.get("seed_fingerprint") != seed_fingerprint or
+                    completion.get("seed_fingerprint") != seed_fingerprint or
+                    completion.get("attempt_id") != start.get("attempt_id") or
+                    completion.get("result_path") != relative):
+                raise RecoveryRefused("G0_TASK_RESULT_IDENTITY_MISMATCH",
+                                      "Completed task result does not match task/seed identity")
+            expected_digest = completion.get("sha256")
+            expected_size = completion.get("size_bytes")
+            if (not isinstance(expected_digest, str) or
+                    not _HEX64.fullmatch(expected_digest) or
+                    type(expected_size) is not int or expected_size < 0):
+                raise RecoveryRefused("G0_TASK_RESULT_RECORD_INVALID",
+                                      "Completion record has invalid result hash or size")
+        self.check_health()
+        parent_fd, name = self._open_parent(relative, create=False)
+        fd = -1
+        try:
+            flags = os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0)
+            fd = os.open(name, flags, dir_fd=parent_fd)
+            info = os.fstat(fd)
+            if (not stat.S_ISREG(info.st_mode) or
+                    info.st_dev != self._external_initial.st_dev or
+                    info.st_size != expected_size):
+                raise RecoveryRefused("G0_TASK_ARTIFACT_IDENTITY_MISMATCH",
+                                      "Completed result is not the recorded regular file")
+            digest = hashlib.sha256()
+            chunks = []
+            remaining = expected_size
+            while remaining:
+                block = os.read(fd, min(1 << 20, remaining))
+                if not block:
+                    raise RecoveryRefused("G0_TASK_ARTIFACT_TRUNCATED",
+                                          "Completed result ended before recorded size")
+                digest.update(block)
+                chunks.append(block)
+                remaining -= len(block)
+            if os.read(fd, 1):
+                raise RecoveryRefused("G0_TASK_ARTIFACT_SIZE_CHANGED",
+                                      "Completed result exceeds recorded size")
+            if digest.hexdigest() != expected_digest:
+                raise RecoveryRefused("G0_TASK_ARTIFACT_CORRUPT",
+                                      "Completed result hash differs from its ledger record")
+            return b"".join(chunks)
+        except OSError as exc:
+            raise RecoveryRefused("G0_TASK_ARTIFACT_UNAVAILABLE",
+                                  f"Cannot safely read completed result: {exc}") from exc
+        finally:
+            if fd >= 0:
+                os.close(fd)
+            os.close(parent_fd)
+
     def write_immutable_artifact(self, *, relative_path: str,
                                  artifact_kind: str, identity: Mapping[str, object],
-                                 chunks: bytes | Iterable[bytes]) -> dict:
-        """Stream an immutable cache/checkpoint/audit/source-graph artifact.
+                                 chunks: bytes | Iterable[bytes],
+                                 stream_metadata: dict | None = None) -> dict:
+        """Stream an immutable cache/checkpoint/audit/source-graph/diagnostic artifact.
 
         The namespace is constrained by kind, the content is hashed while
         writing and read back before the internal ledger marks it committed.
@@ -1060,6 +1492,7 @@ class G0ExternalStore:
         expected_namespace = {
             "cache": "cache", "checkpoint": "checkpoints",
             "audit": "audit", "source_graph": "source-graphs",
+            "diagnostic_log": "diagnostic-logs",
         }.get(artifact_kind)
         if expected_namespace is None or parts[0] != expected_namespace:
             raise G0StorageError("G0_ARTIFACT_NAMESPACE_INVALID",
@@ -1067,6 +1500,9 @@ class G0ExternalStore:
         if not isinstance(identity, Mapping):
             raise G0StorageError("G0_ARTIFACT_IDENTITY_INVALID", "Artifact identity must be a mapping")
         identity_record = dict(identity)
+        if stream_metadata is not None and not isinstance(stream_metadata, dict):
+            raise G0StorageError("G0_ARTIFACT_STREAM_METADATA_INVALID",
+                                 "stream_metadata must be a dict populated by the stream producer")
         try:
             _canonical(identity_record)
         except (TypeError, ValueError) as exc:
@@ -1110,16 +1546,24 @@ class G0ExternalStore:
             if actual_digest != digest.hexdigest() or actual_size != size:
                 raise G0StorageError("G0_EXTERNAL_IO_FAILURE",
                                      "Artifact readback hash or size mismatch")
+            if stream_metadata is not None:
+                try:
+                    _canonical(stream_metadata)
+                except (TypeError, ValueError) as exc:
+                    raise G0StorageError("G0_ARTIFACT_STREAM_METADATA_INVALID",
+                                         "Stream metadata is not canonical JSON") from exc
             health = self.check_health()
             self._append({"event": "g0_external_artifact_written",
                           "relative_path": relative_path,
                           "artifact_kind": artifact_kind,
                           "identity": identity_record,
+                          "stream_metadata": stream_metadata,
                           "size_bytes": size, "sha256": actual_digest,
                           "external_volume_uuid": self._external_initial.volume_uuid,
                           "utc_epoch": time.time()})
             return {"relative_path": relative_path, "artifact_kind": artifact_kind,
-                    "size_bytes": size, "sha256": actual_digest, "health": health}
+                    "size_bytes": size, "sha256": actual_digest,
+                    "stream_metadata": stream_metadata, "health": health}
         except BaseException as exc:
             code = exc.code if isinstance(exc, G0StorageError) else "G0_EXTERNAL_IO_FAILURE" if isinstance(exc, OSError) else "G0_UNKNOWN_STORAGE_FAILURE"
             try:
@@ -1250,6 +1694,24 @@ class G0ExternalStore:
         if self._ledger is None or self._ledger_fd is None:
             raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Cannot inspect recovery ledger")
         ledger_events = self._task_events()
+        manifest_events = [event for event in ledger_events
+                           if event.get("event") == "g0_activity_manifest_started"]
+        if len(manifest_events) > 1:
+            raise RecoveryRefused("G0_ACTIVITY_MANIFEST_DUPLICATE",
+                                  "Run contains multiple activity manifests")
+        if manifest_events:
+            manifest = manifest_events[0]
+            manifest_tasks = manifest.get("expected_tasks")
+            manifest_hash = hashlib.sha256(_canonical({
+                "activity_id": manifest.get("activity_id"),
+                "expected_tasks": manifest_tasks,
+                "task_order": manifest.get("task_order")})).hexdigest()
+            if (not isinstance(manifest_tasks, dict) or
+                    manifest_tasks != dict(sorted(expected_tasks.items())) or
+                    manifest.get("task_order") != list(expected_tasks) or
+                    manifest.get("manifest_sha256") != manifest_hash):
+                raise RecoveryRefused("G0_ACTIVITY_MANIFEST_MISMATCH",
+                                      "Recovery inventory differs from the frozen activity manifest")
         states: dict[str, dict[str, list[dict]]] = {}
         for event in ledger_events:
             bucket = {"g0_task_started": "starts",
@@ -1300,7 +1762,8 @@ class G0ExternalStore:
         for path, started in artifact_started.items():
             committed = artifact_written[path]
             namespace_by_kind = {"cache": "cache", "checkpoint": "checkpoints",
-                                 "audit": "audit", "source_graph": "source-graphs"}
+                                 "audit": "audit", "source_graph": "source-graphs",
+                                 "diagnostic_log": "diagnostic-logs"}
             kind = started.get("artifact_kind")
             if (kind not in namespace_by_kind or _safe_relative(path)[0] != namespace_by_kind[kind] or
                     not isinstance(started.get("identity"), dict) or
@@ -1308,6 +1771,31 @@ class G0ExternalStore:
                     started.get("identity") != committed.get("identity") or
                     committed.get("external_volume_uuid") != self._external_initial.volume_uuid):
                 raise RecoveryRefused("G0_ARTIFACT_IDENTITY_MISMATCH", f"Artifact identity changed: {path}")
+            identity = started["identity"]
+            if (kind == "audit" and
+                    identity.get("stream_format") == "G0_GZIP_CANONICAL_JSONL_AUDIT_V1"):
+                metadata = committed.get("stream_metadata")
+                expected_count = identity.get("expected_record_count")
+                actual_count = metadata.get("record_count") if isinstance(metadata, dict) else None
+                complete = metadata.get("complete") if isinstance(metadata, dict) else None
+                tip = metadata.get("chain_tip_sha256") if isinstance(metadata, dict) else None
+                if (type(expected_count) is not int or expected_count < 0 or
+                        type(actual_count) is not int or not 0 <= actual_count <= expected_count or
+                        type(complete) is not bool or not isinstance(tip, str) or
+                        not _HEX64.fullmatch(tip) or
+                        (complete and actual_count != expected_count) or
+                        (not complete and actual_count >= expected_count)):
+                    raise RecoveryRefused("G0_AUDIT_STREAM_METADATA_INVALID",
+                                          f"Audit record-count metadata is invalid: {path}")
+                if not complete:
+                    task_id = identity.get("task_id")
+                    attempt_id = identity.get("attempt_id")
+                    task_state = states.get(task_id, {})
+                    failures = [failure for failure in task_state.get("failures", [])
+                                if failure.get("attempt_id") == attempt_id]
+                    if len(failures) != 1:
+                        raise RecoveryRefused("G0_PARTIAL_AUDIT_UNCLASSIFIED",
+                                              f"Partial audit has no unique terminal task failure: {path}")
             parent, name = self._open_parent(path, create=False)
             try:
                 digest, size = _hash_open_file(parent, name, self._external_initial.st_dev)
@@ -1341,6 +1829,8 @@ class G0ExternalStore:
                     started.get("stdout_name") != stdout_name or
                     finished.get("audit_name") != audit_name or
                     finished.get("stdout_name") != stdout_name or
+                    any(started.get(name) != finished.get(name)
+                        for name in ("task_id", "attempt_id", "activity_id")) or
                     finished.get("artifact_error") or
                     finished.get("status") not in ("completed", "failed", "stopped")):
                 raise RecoveryRefused("G0_WATCHDOG_ARTIFACT_INVALID",
@@ -1354,6 +1844,38 @@ class G0ExternalStore:
                     _sha256_path(stdout_path) != finished.get("stdout_sha256")):
                 raise RecoveryRefused("G0_WATCHDOG_ARTIFACT_HASH_MISMATCH",
                                       f"Watchdog audit or stdout changed: {invocation_id}")
+        if manifest_events:
+            manifest_activity_id = manifest_events[0].get("activity_id")
+            if any(
+                    any(event.get(name) is None for name in
+                        ("task_id", "attempt_id", "activity_id"))
+                    for event in watchdog_starts.values()):
+                raise RecoveryRefused("G0_TASK_WATCHDOG_MAPPING_INVALID",
+                                      "Every Watchdog invocation in a frozen activity must bind a task")
+            mapped_invocations: set[int] = set()
+            for task_id, state in states.items():
+                for started in state["starts"]:
+                    invocation_id = started.get("invocation_id")
+                    if (type(invocation_id) is not int or invocation_id < 1 or
+                            invocation_id in mapped_invocations):
+                        raise RecoveryRefused("G0_TASK_WATCHDOG_MAPPING_INVALID",
+                                              f"Task start has invalid or duplicate invocation: {task_id}")
+                    watchdog_start = watchdog_starts.get(invocation_id)
+                    watchdog_finish = watchdog_finishes.get(invocation_id)
+                    if (watchdog_start is None or watchdog_finish is None or
+                            watchdog_start.get("task_id") != task_id or
+                            watchdog_start.get("attempt_id") != started.get("attempt_id") or
+                            watchdog_start.get("activity_id") != manifest_activity_id):
+                        raise RecoveryRefused("G0_TASK_WATCHDOG_MAPPING_INVALID",
+                                              f"Task start does not match its Watchdog invocation: {task_id}")
+                    mapped_invocations.add(invocation_id)
+            task_bound_invocations = {
+                invocation_id for invocation_id, event in watchdog_starts.items()
+                if event.get("task_id") is not None or event.get("attempt_id") is not None or
+                event.get("activity_id") is not None}
+            if task_bound_invocations != mapped_invocations:
+                raise RecoveryRefused("G0_TASK_WATCHDOG_MAPPING_INVALID",
+                                      "Task and Watchdog invocation inventories differ")
         for task_id, seed_fingerprint in expected_tasks.items():
             if not _SAFE_ID.fullmatch(task_id) or not _HEX64.fullmatch(seed_fingerprint):
                 raise RecoveryRefused("G0_EXPECTED_INVENTORY_INVALID", "Task/seed inventory is malformed")
@@ -1438,15 +1960,22 @@ class G0ExternalStore:
                                   f"Managed file set differs from ledger; unexpected={sorted(actual_files-expected_files)}, missing_completed={sorted(completed_files-actual_files)}")
         with self._ledger_lock:
             self._task_event_index.clear()
+            self._active_task_ids.clear()
             self._used_external_paths.clear()
             self._expected_external_paths.clear()
             self._committed_external_files.clear()
             self._watchdog_invocation_ids.clear()
+            self._watchdog_invocations.clear()
+            self._activity_manifest = None
+            self._activity_task_seeds = None
+            self._activity_task_order = None
+            self._activity_verified = False
             self._has_prior_work = False
             for event in ledger_events:
                 self._index_event(event)
             self._external_run_bytes = run_bytes
             self._recovery_verified = True
+            self._activity_verified = bool(manifest_events)
         return RecoveryReport(tuple(sorted(completed)), tuple(sorted(retryable)),
                               tuple(sorted(set(expected_tasks) - set(states))),
                               tuple(sorted(exhausted)))

@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11.15"
       - name: Install pinned synthetic-test dependencies
-        run: python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.1 ruff==0.14.10
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.1 networkx==3.6.1 python-louvain==0.16 ruff==0.14.10
       - name: Compile the synthetic execution and watchdog modules
         working-directory: Experiments/neuro_sleep_null_calibration
         run: |
@@ -33,7 +33,8 @@ jobs:
             nc0a_macos_feasibility_probe.py \
             nc0a_macos_long_probe.py \
             nc0a_microbenchmark.py \
-            nc0a_researcher_authorization.py
+            nc0a_researcher_authorization.py \
+            g0_minimal_executor.py
       - name: Reject undefined names in synthetic execution modules
         working-directory: Experiments/neuro_sleep_null_calibration
         run: ruff check --select F821 .
@@ -54,7 +55,8 @@ jobs:
             test_nc0a_macos_feasibility_probe.py \
             test_psa_runtime_evidence.py \
             test_psa_history_inventory.py \
-            test_nc0a_budget_preflight.py
+            test_nc0a_budget_preflight.py \
+            test_g0_minimal_executor.py
       - name: Confirm no formal NC-0a runner launched
         run: |
           echo "Only small unit tests; never start 16x8x32E or RIKEN biological nulls."

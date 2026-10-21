@@ -1,0 +1,12 @@
+# Historical PS-A environment captured in H2_RUNTIME_AUDIT_2026-10-12.md.
+# Recreated prospectively for G0 engineering on macOS arm64; this was not an
+# immutable lock for every historical PS-A session and does not prove graph
+# or seed identity.
+# python==3.14.0
+# macOS==15.7.4 (recorded historical host; strict runtime check records current)
+# architecture==arm64
+h5py==3.16.0
+networkx==3.6.1
+numpy==2.5.3
+python-louvain==0.16
+scipy==1.18.1
