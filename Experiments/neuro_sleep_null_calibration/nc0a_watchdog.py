@@ -23,6 +23,7 @@ import secrets
 import shutil
 import signal
 import shlex
+import stat
 import subprocess
 import sys
 import threading
@@ -639,13 +640,33 @@ def _cgroup_memory_snapshot(path: Path) -> dict:
 
 
 def _directory_bytes(root: Path) -> int:
-    total = 0
-    for item in root.rglob("*"):
-        if item.is_symlink():
-            raise WatchdogError("Run directory may not contain symlinks")
-        if item.is_file():
-            total += item.stat().st_size
-    return total
+    # Atomic control-log replacement can remove a directory entry after
+    # scandir enumerates it but before stat. Retry the whole snapshot a few
+    # times; persistent churn remains a fail-closed sampling error.
+    for _ in range(3):
+        total = 0
+        changed = False
+        pending = [root]
+        while pending and not changed:
+            directory = pending.pop()
+            with os.scandir(directory) as entries:
+                for entry in entries:
+                    try:
+                        info = entry.stat(follow_symlinks=False)
+                    except FileNotFoundError:
+                        changed = True
+                        break
+                    if stat.S_ISLNK(info.st_mode):
+                        raise WatchdogError("Run directory may not contain symlinks")
+                    if stat.S_ISDIR(info.st_mode):
+                        pending.append(Path(entry.path))
+                    elif stat.S_ISREG(info.st_mode):
+                        total += info.st_size
+                    else:
+                        raise WatchdogError("Run directory contains an unsupported entry")
+        if not changed:
+            return total
+    raise WatchdogError("Run directory changed during every disk-usage snapshot")
 
 
 def _prepare_emergency_reserve(root: Path, allocation_cap: int) -> Path:

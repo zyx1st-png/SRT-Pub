@@ -13,6 +13,7 @@ import time
 import unittest
 from unittest import mock
 
+import nc0a_watchdog as watchdog_module
 from nc0a_watchdog import (
     ProcessUsage, WatchdogLimits, classify_process_group, parse_ps_time,
     parse_macos_swap_state, parse_macos_swap_used_bytes,
@@ -34,6 +35,46 @@ def limits(**overrides):
 
 
 class WatchdogTests(unittest.TestCase):
+    def test_directory_byte_snapshot_retries_atomic_log_disappearance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transient = root / "control.json.123.tmp"
+            transient.write_bytes(b"temporary")
+            real_scandir = os.scandir
+            injected = {"done": False}
+
+            class EntryProxy:
+                def __init__(self, entry):
+                    self._entry = entry
+                    self.path = entry.path
+
+                def stat(self, *, follow_symlinks=True):
+                    if not injected["done"] and Path(self.path) == transient:
+                        injected["done"] = True
+                        transient.unlink()
+                        raise FileNotFoundError(self.path)
+                    return self._entry.stat(follow_symlinks=follow_symlinks)
+
+            class ScanProxy:
+                def __init__(self, entries):
+                    self._entries = entries
+
+                def __enter__(self):
+                    return iter(self._entries)
+
+                def __exit__(self, *_):
+                    return False
+
+            def racing_scandir(directory):
+                with real_scandir(directory) as entries:
+                    snapshot = [EntryProxy(entry) for entry in entries]
+                return ScanProxy(snapshot)
+
+            with mock.patch.object(watchdog_module.os, "scandir",
+                                   side_effect=racing_scandir):
+                self.assertEqual(watchdog_module._directory_bytes(root), 0)
+            self.assertTrue(injected["done"])
+
     def test_darwin_collapsed_titles_require_current_process_role_registry(self):
         runner_pid = 100
         marker = ProcessUsage(
