@@ -50,6 +50,25 @@ class SwapTests(unittest.TestCase):
         self.assertEqual(stats.attempts, 400)
         graph.assert_invariants()
 
+    def test_audited_proposal_surface_preserves_existing_kernel_stream(self):
+        plain = ConnectedDegreeSwap(14, toy_graph())
+        audited = ConnectedDegreeSwap(14, toy_graph())
+        plain_rng = random.Random(917)
+        audited_rng = random.Random(917)
+        records = []
+        for _ in range(1000):
+            plain_decision = plain.propose(plain_rng)
+            audited_decision, record = audited.propose_audited(audited_rng)
+            records.append(record)
+            self.assertEqual(plain_decision, audited_decision)
+        self.assertEqual(plain.fingerprint(), audited.fingerprint())
+        self.assertEqual(plain.stats(917), audited.stats(917))
+        self.assertEqual([row["attempt"] for row in records], list(range(1, 1001)))
+        decisions = {row["decision"] for row in records}
+        self.assertTrue({"ACCEPT", "REJECT_OVERLAP", "REJECT_DUPLICATE"} <= decisions)
+        self.assertLessEqual(decisions, {
+            "ACCEPT", "REJECT_OVERLAP", "REJECT_DUPLICATE", "REJECT_DISCONNECT"})
+
     def test_snapshot_errors(self):
         with self.assertRaises(ValueError):
             run_chain(14, toy_graph(), 1, 3, (4,))

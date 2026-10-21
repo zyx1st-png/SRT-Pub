@@ -156,6 +156,9 @@ class StorageFixture(unittest.TestCase):
                                           "case-002": hashlib.sha256(b"other").hexdigest()})
         self.assertEqual(report.completed_task_ids, ("case-001",))
         self.assertEqual(report.not_started_task_ids, ("case-002",))
+        self.assertEqual(resumed.read_completed_task_result(
+            task_id="case-001", seed_fingerprint=SEED_FINGERPRINT),
+            b"small synthetic output")
         with self.assertRaisesRegex(RecoveryRefused, "Completed task"):
             resumed.write_task_result(task_id="case-001", attempt_id=self.attempt(2),
                                       seed_fingerprint=SEED_FINGERPRINT, payload=b"again")
@@ -386,6 +389,23 @@ class StorageFixture(unittest.TestCase):
                                 seed_fingerprint=SEED_FINGERPRINT, payload=b"recovered")
         report = store.verify_recovery({"retry": SEED_FINGERPRINT})
         self.assertEqual(report.completed_task_ids, ("retry",))
+        store.close()
+
+    def test_known_worker_process_exit_is_retryable_with_same_seed_once(self):
+        store = self.open_store()
+        store.begin_task(task_id="worker-exit", attempt_id=self.attempt(1),
+                         seed_fingerprint=SEED_FINGERPRINT)
+        store.record_task_failure(
+            task_id="worker-exit", attempt_id=self.attempt(1),
+            failure_class="OPERATIONAL", reason_code="G0_WORKER_PROCESS_EXIT",
+            reason="synthetic worker exited before producing a result")
+        report = store.verify_recovery({"worker-exit": SEED_FINGERPRINT})
+        self.assertEqual(report.retryable_task_ids, ("worker-exit",))
+        store.write_task_result(task_id="worker-exit", attempt_id=self.attempt(2),
+                                seed_fingerprint=SEED_FINGERPRINT,
+                                payload=b"recovered same-seed output")
+        report = store.verify_recovery({"worker-exit": SEED_FINGERPRINT})
+        self.assertEqual(report.completed_task_ids, ("worker-exit",))
         store.close()
 
     def test_two_operational_attempts_exhaust_retry_quota(self):

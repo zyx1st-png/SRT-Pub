@@ -41,6 +41,10 @@ _OPERATIONAL_STORAGE_CODES = frozenset({
     "G0_INTERNAL_SPACE_LIMIT",
     "G0_EXTERNAL_IO_FAILURE",
     "G0_EXTERNAL_POSTWRITE_IDENTITY_FAILURE",
+    # An independently monitored computation worker can die without emitting
+    # a result. This exact reason is operational and may be retried once with
+    # the same task/seed; arbitrary worker exceptions remain UNKNOWN.
+    "G0_WORKER_PROCESS_EXIT",
 })
 
 
@@ -1046,10 +1050,81 @@ class G0ExternalStore:
         return self.complete_task_result(task_id=task_id, attempt_id=attempt_id,
                                          seed_fingerprint=seed_fingerprint, payload=payload)
 
+    def read_completed_task_result(self, *, task_id: str,
+                                   seed_fingerprint: str) -> bytes:
+        """Read a previously verified immutable task result without recompute.
+
+        Callers must first run ``verify_recovery`` for the frozen inventory.
+        This method checks the indexed completion identity again and verifies
+        the bytes against the authoritative completion record before return.
+        """
+        self._require_recovery_verified()
+        if not _HEX64.fullmatch(seed_fingerprint):
+            raise G0StorageError("G0_SEED_FINGERPRINT_INVALID",
+                                 "Seed fingerprint must be SHA-256 hex")
+        with self._ledger_lock:
+            state = self._task_state(task_id)
+            if len(state["completions"]) != 1 or not state["starts"]:
+                raise RecoveryRefused("G0_TASK_RESULT_NOT_COMPLETE",
+                                      "Task has no uniquely completed result")
+            completion = state["completions"][0]
+            start = state["starts"][-1]
+            relative = self._expected_result_path(task_id, start["attempt_id"])
+            if (start.get("seed_fingerprint") != seed_fingerprint or
+                    completion.get("seed_fingerprint") != seed_fingerprint or
+                    completion.get("attempt_id") != start.get("attempt_id") or
+                    completion.get("result_path") != relative):
+                raise RecoveryRefused("G0_TASK_RESULT_IDENTITY_MISMATCH",
+                                      "Completed task result does not match task/seed identity")
+            expected_digest = completion.get("sha256")
+            expected_size = completion.get("size_bytes")
+            if (not isinstance(expected_digest, str) or
+                    not _HEX64.fullmatch(expected_digest) or
+                    type(expected_size) is not int or expected_size < 0):
+                raise RecoveryRefused("G0_TASK_RESULT_RECORD_INVALID",
+                                      "Completion record has invalid result hash or size")
+        self.check_health()
+        parent_fd, name = self._open_parent(relative, create=False)
+        fd = -1
+        try:
+            flags = os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0)
+            fd = os.open(name, flags, dir_fd=parent_fd)
+            info = os.fstat(fd)
+            if (not stat.S_ISREG(info.st_mode) or
+                    info.st_dev != self._external_initial.st_dev or
+                    info.st_size != expected_size):
+                raise RecoveryRefused("G0_TASK_ARTIFACT_IDENTITY_MISMATCH",
+                                      "Completed result is not the recorded regular file")
+            digest = hashlib.sha256()
+            chunks = []
+            remaining = expected_size
+            while remaining:
+                block = os.read(fd, min(1 << 20, remaining))
+                if not block:
+                    raise RecoveryRefused("G0_TASK_ARTIFACT_TRUNCATED",
+                                          "Completed result ended before recorded size")
+                digest.update(block)
+                chunks.append(block)
+                remaining -= len(block)
+            if os.read(fd, 1):
+                raise RecoveryRefused("G0_TASK_ARTIFACT_SIZE_CHANGED",
+                                      "Completed result exceeds recorded size")
+            if digest.hexdigest() != expected_digest:
+                raise RecoveryRefused("G0_TASK_ARTIFACT_CORRUPT",
+                                      "Completed result hash differs from its ledger record")
+            return b"".join(chunks)
+        except OSError as exc:
+            raise RecoveryRefused("G0_TASK_ARTIFACT_UNAVAILABLE",
+                                  f"Cannot safely read completed result: {exc}") from exc
+        finally:
+            if fd >= 0:
+                os.close(fd)
+            os.close(parent_fd)
+
     def write_immutable_artifact(self, *, relative_path: str,
                                  artifact_kind: str, identity: Mapping[str, object],
                                  chunks: bytes | Iterable[bytes]) -> dict:
-        """Stream an immutable cache/checkpoint/audit/source-graph artifact.
+        """Stream an immutable cache/checkpoint/audit/source-graph/diagnostic artifact.
 
         The namespace is constrained by kind, the content is hashed while
         writing and read back before the internal ledger marks it committed.
@@ -1060,6 +1135,7 @@ class G0ExternalStore:
         expected_namespace = {
             "cache": "cache", "checkpoint": "checkpoints",
             "audit": "audit", "source_graph": "source-graphs",
+            "diagnostic_log": "diagnostic-logs",
         }.get(artifact_kind)
         if expected_namespace is None or parts[0] != expected_namespace:
             raise G0StorageError("G0_ARTIFACT_NAMESPACE_INVALID",
@@ -1300,7 +1376,8 @@ class G0ExternalStore:
         for path, started in artifact_started.items():
             committed = artifact_written[path]
             namespace_by_kind = {"cache": "cache", "checkpoint": "checkpoints",
-                                 "audit": "audit", "source_graph": "source-graphs"}
+                                 "audit": "audit", "source_graph": "source-graphs",
+                                 "diagnostic_log": "diagnostic-logs"}
             kind = started.get("artifact_kind")
             if (kind not in namespace_by_kind or _safe_relative(path)[0] != namespace_by_kind[kind] or
                     not isinstance(started.get("identity"), dict) or
