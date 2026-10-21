@@ -298,19 +298,32 @@ class WatchdogTests(unittest.TestCase):
             root = Path(tmp)
             marker = root / "first-sample-complete"
             peak_file = root / "child-peak-rss.txt"
+            release = root / "release-after-peak"
             code = (
                 "import os,resource,sys,time; from pathlib import Path; "
                 f"marker=Path({str(marker)!r}); peak=Path({str(peak_file)!r}); "
+                f"release=Path({str(release)!r}); "
                 "deadline=time.monotonic()+5; "
                 "exec('while not marker.exists() and time.monotonic()<deadline: time.sleep(.001)'); "
                 "x=bytearray(120*1024*1024); x[::4096]=b'x'*(len(x)//4096); "
                 "peak.write_text(str(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)); "
+                "deadline=time.monotonic()+5; "
+                "exec('while not release.exists() and time.monotonic()<deadline: time.sleep(.001)'); "
             )
 
             def first_sample_then_release(pgid):
                 samples = sample_process_group(pgid)
-                if any(proc.pid == pgid for proc in samples):
+                if any(proc.pid == pgid for proc in samples) and not marker.exists():
                     marker.write_text("sampled")
+                    # Freeze this sample while the child creates a known short
+                    # high-water event, then let it exit before the next sample.
+                    # This removes scheduler-speed dependence from a test whose
+                    # contract is only that sampled RSS is not called a hard cap.
+                    deadline = time.monotonic() + 5
+                    while not peak_file.exists() and time.monotonic() < deadline:
+                        time.sleep(0.001)
+                    if peak_file.exists():
+                        release.write_text("release")
                 return samples
 
             result = supervise([sys.executable, "-c", code], run_dir=root,
