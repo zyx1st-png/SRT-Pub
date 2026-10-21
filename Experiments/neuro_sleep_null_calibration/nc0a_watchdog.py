@@ -727,7 +727,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
               clock: Callable[[], tuple[float, float]] | None = None,
               audit_name: str = "watchdog.jsonl",
               stdout_name: str = "runner.stdout.log",
-              invocation_id: int | None = None) -> dict:
+              invocation_id: int | None = None,
+              stop_guard: Callable[[], str | None] | None = None) -> dict:
     """Run and monitor a single scientific runner; terminate its whole group.
 
     ``clock`` returns (UTC epoch seconds, suspend-aware-comparison monotonic
@@ -847,6 +848,26 @@ def supervise(command: list[str], *, run_dir: str | Path,
             if abs(divergence) > limits.suspend_tolerance_seconds:
                 stop_reason = "SUSPEND_OR_CLOCK_ANOMALY"
             last_utc, last_mono = now_utc, now_mono
+            if stop_guard is not None and stop_reason is None:
+                try:
+                    guarded_reason = stop_guard()
+                    if guarded_reason is not None:
+                        if (not isinstance(guarded_reason, str) or
+                                not re.fullmatch(r"[A-Z][A-Z0-9_]{2,119}", guarded_reason)):
+                            guarded_reason = "WATCHDOG_STOP_GUARD_INVALID_REASON"
+                        stop_reason = guarded_reason
+                        log.append({"event": "watchdog_stop_guard_triggered",
+                                    "reason": stop_reason,
+                                    "utc": datetime.now(timezone.utc).isoformat(),
+                                    "invocation": invocation_id})
+                except BaseException as exc:
+                    stop_reason = "WATCHDOG_STOP_GUARD_FAILED"
+                    log.append({"event": "watchdog_stop_guard_failed",
+                                "reason": stop_reason,
+                                "type": type(exc).__name__,
+                                "message": str(exc)[:500],
+                                "utc": datetime.now(timezone.utc).isoformat(),
+                                "invocation": invocation_id})
             samples = sampler(proc.pid)
             if not samples and proc.poll() is None:
                 stop_reason = stop_reason or "WATCHDOG_CANNOT_OBSERVE_PROCESS_GROUP"
