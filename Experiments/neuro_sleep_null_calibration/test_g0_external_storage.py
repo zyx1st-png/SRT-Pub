@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import os
 from pathlib import Path
 import sys
@@ -26,6 +27,46 @@ EXPECTED_UUID = "0E5DC84B-1E22-3C9B-9E3B-220EBA8607C1"
 OTHER_UUID = "11111111-2222-3333-4444-555555555555"
 RUN_UUID = "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee"
 SEED_FINGERPRINT = hashlib.sha256(b"engineering-only-seed").hexdigest()
+
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"),
+                      ensure_ascii=False, allow_nan=False).encode("utf-8")
+
+
+def write_synthetic_task_history(ledger_dir: Path, task_count: int) -> dict[str, str]:
+    """Create a valid authoritative hash chain without thousands of fsyncs."""
+    ledger_dir.mkdir(parents=True, exist_ok=True)
+    ledger_path = ledger_dir / "storage-ledger.jsonl"
+    previous = "0" * 64
+    sequence = 0
+    lines = []
+    expected = {}
+    for index in range(task_count):
+        task_id = f"task-{index:05d}"
+        attempt_id = str(uuid.UUID(int=index + 1))
+        expected[task_id] = SEED_FINGERPRINT
+        events = (
+            {"event": "g0_task_started", "task_id": task_id,
+             "attempt_id": attempt_id, "seed_fingerprint": SEED_FINGERPRINT,
+             "result_path": f"tasks/{task_id}/attempts/{attempt_id}/result.bin"},
+            {"event": "g0_task_failed", "task_id": task_id,
+             "attempt_id": attempt_id, "failure_class": "OPERATIONAL",
+             "reason_code": "G0_EXTERNAL_IO_FAILURE", "reason": "synthetic probe",
+             "recovery_allowed": True},
+        )
+        for event in events:
+            payload = {"run_uuid": RUN_UUID, **event}
+            record = {"sequence": sequence, "previous_sha256": previous,
+                      "event": payload}
+            digest = hashlib.sha256(canonical(record)).hexdigest()
+            lines.append(canonical({**record, "record_sha256": digest}) + b"\n")
+            sequence += 1
+            previous = digest
+    ledger_path.write_bytes(b"".join(lines))
+    anchor = {"sequence": sequence, "tip_sha256": previous, "run_uuid": RUN_UUID}
+    (ledger_dir / "storage-ledger.anchor.json").write_bytes(canonical(anchor) + b"\n")
+    return expected
 
 
 class FakeProbe:
@@ -108,6 +149,9 @@ class StorageFixture(unittest.TestCase):
         self.assertEqual(audit["size_bytes"], len(b"compressed-audit-placeholder"))
         store.close()
         resumed = self.open_store()
+        with self.assertRaisesRegex(RecoveryRefused, "full recovery validation"):
+            resumed.begin_task(task_id="case-003", attempt_id=self.attempt(3),
+                               seed_fingerprint=SEED_FINGERPRINT)
         report = resumed.verify_recovery({"case-001": SEED_FINGERPRINT,
                                           "case-002": hashlib.sha256(b"other").hexdigest()})
         self.assertEqual(report.completed_task_ids, ("case-001",))
@@ -155,6 +199,78 @@ class StorageFixture(unittest.TestCase):
         self.assertEqual(report.completed_task_ids, tuple(sorted(tasks)))
         count, _ = verify_hash_chain(self.ledger_dir / "storage-ledger.jsonl")
         self.assertEqual(count, 9)
+        store.close()
+
+    def test_hot_paths_do_not_rescan_100_1000_or_5000_task_histories(self):
+        expected = write_synthetic_task_history(self.ledger_dir, 5000)
+        store = self.open_store()
+        self.assertEqual(len(store._task_event_index), 5000)
+        report = store.verify_recovery(expected)
+        self.assertEqual(len(report.retryable_task_ids), 5000)
+
+        lookup_count = 0
+        original_task_state = store._task_state
+
+        def counted_lookup(task_id):
+            nonlocal lookup_count
+            lookup_count += 1
+            return original_task_state(task_id)
+
+        with (mock.patch.object(store, "_task_events",
+                                side_effect=AssertionError("hot path rescanned ledger")),
+              mock.patch.object(store, "_scan_managed_tree",
+                                side_effect=AssertionError("hot path walked output tree")),
+              mock.patch("g0_external_storage._tree_bytes",
+                         side_effect=AssertionError("hot path counted the tree")),
+              mock.patch.object(store, "_task_state", side_effect=counted_lookup)):
+            for task_count in (100, 1000, 5000):
+                for index in range(task_count):
+                    task_id = f"task-{index:05d}"
+                    state = store._task_state(task_id)
+                    self.assertEqual(len(state["starts"]), 1)
+                    if index == 0:
+                        state["starts"].clear()
+                        self.assertEqual(len(store._task_state(task_id)["starts"]), 1)
+                for _ in range(5):
+                    self.assertGreaterEqual(store.check_health()["external_free_bytes"], 0)
+            next_attempt = self.attempt(9000)
+            store.begin_task(task_id="post-index-task", attempt_id=next_attempt,
+                             seed_fingerprint=SEED_FINGERPRINT)
+            store.complete_task_result(task_id="post-index-task", attempt_id=next_attempt,
+                                       seed_fingerprint=SEED_FINGERPRINT,
+                                       payload=b"indexed task result")
+            store.write_immutable_artifact(
+                relative_path="cache/post-index/artifact.bin", artifact_kind="cache",
+                identity={"task_id": "post-index-task"}, chunks=b"indexed artifact")
+            limits = WatchdogLimits(
+                wall_seconds=10, cpu_seconds=30, aggregate_rss_bytes=512 * 1024**2,
+                max_workers=1, run_disk_bytes=2 * 1024**2,
+                reserve_free_disk_bytes=1024, case_seconds=5, oracle_seconds=5,
+                poll_seconds=0.05, suspend_tolerance_seconds=2,
+                terminate_grace_seconds=0.1)
+            store.supervise_worker([sys.executable, "-c", "pass"], limits=limits,
+                                   invocation_id=999)
+        self.assertEqual(lookup_count, 6105)
+        expected["post-index-task"] = SEED_FINGERPRINT
+        report = store.verify_recovery(expected)
+        self.assertIn("post-index-task", report.completed_task_ids)
+        store.close()
+
+    def test_streamed_file_cannot_cross_run_byte_budget_between_watchdog_samples(self):
+        from dataclasses import replace
+
+        self.policy = replace(self.policy, maximum_run_bytes=(3 * 1024 * 1024) // 2)
+        store = self.open_store()
+        with self.assertRaisesRegex(G0StorageError, "Bounded external write"):
+            store.write_immutable_artifact(
+                relative_path="audit/large/stream.bin", artifact_kind="audit",
+                identity={"task_id": "large-stream"},
+                chunks=(b"x" * (8 * 1024 * 1024),))
+        path = Path(self.external, "adapter-test", "runs", RUN_UUID,
+                    "audit/large/stream.bin")
+        self.assertEqual(path.stat().st_size, 1024 * 1024)
+        self.assertLessEqual(store.check_health()["external_run_bytes"],
+                             self.policy.maximum_run_bytes)
         store.close()
 
     def test_wrong_uuid_fails_before_creating_external_or_internal_run_paths(self):
@@ -214,20 +330,16 @@ class StorageFixture(unittest.TestCase):
                     result["result_path"])
         store.close()
         path.write_bytes(b"tampered")
-        resumed = self.open_store()
-        with self.assertRaisesRegex(RecoveryRefused, "artifact changed"):
-            resumed.verify_recovery({"case-001": SEED_FINGERPRINT})
-        resumed.close()
+        with self.assertRaisesRegex(RecoveryRefused, "Committed file changed"):
+            self.open_store()
 
     def test_unknown_file_under_run_root_is_rejected(self):
         store = self.open_store()
         store.close()
         unknown = Path(self.external, "adapter-test", "runs", RUN_UUID, "untracked.bin")
         unknown.write_bytes(b"untracked")
-        resumed = self.open_store()
-        with self.assertRaisesRegex(RecoveryRefused, "Managed file set differs"):
-            resumed.verify_recovery({"case-001": SEED_FINGERPRINT})
-        resumed.close()
+        with self.assertRaisesRegex(RecoveryRefused, "Untracked external files"):
+            self.open_store()
 
     def test_scientific_and_unknown_failures_are_never_retryable(self):
         store = self.open_store()
@@ -301,6 +413,31 @@ class StorageFixture(unittest.TestCase):
         ledger.write_bytes(b"".join(raw.splitlines(keepends=True)[:-1]))
         with self.assertRaises(RecoveryRefused):
             self.open_store()
+
+    def test_stale_incremental_index_rejects_external_ledger_change(self):
+        store = self.open_store()
+        ledger = self.ledger_dir / "storage-ledger.jsonl"
+        with ledger.open("ab") as handle:
+            handle.write(b"tampered-tail\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        with self.assertRaisesRegex(RecoveryRefused, "Ledger identity, size, change metadata or tip changed"):
+            store.check_health()
+        store.close()
+
+    def test_same_size_in_place_ledger_tampering_invalidates_incremental_index(self):
+        store = self.open_store()
+        ledger = self.ledger_dir / "storage-ledger.jsonl"
+        original = ledger.read_bytes()
+        old = b"g0_external_store_opened"
+        new = b"g0_external_st0re_opened"
+        self.assertEqual(len(old), len(new))
+        self.assertIn(old, original)
+        ledger.write_bytes(original.replace(old, new, 1))
+        self.assertEqual(ledger.stat().st_size, len(original))
+        with self.assertRaisesRegex(RecoveryRefused, "Ledger identity, size, change metadata or tip changed"):
+            store.check_health()
+        store.close()
 
     def test_watchdog_stop_guard_kills_supervised_process_on_mount_loss(self):
         store = self.open_store()

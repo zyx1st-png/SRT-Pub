@@ -32,6 +32,7 @@ EXPECTED_KIOXIA_VOLUME_UUID = "0E5DC84B-1E22-3C9B-9E3B-220EBA8607C1"
 GIB = 1024 ** 3
 _HEX64 = re.compile(r"^[0-9a-f]{64}$")
 _SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,119}$")
+_STREAM_WRITE_CHUNK_BYTES = 1 << 20
 _OPERATIONAL_STORAGE_CODES = frozenset({
     "G0_EXTERNAL_MOUNT_UNAVAILABLE",
     "G0_EXTERNAL_VOLUME_IDENTITY_MISMATCH",
@@ -221,6 +222,26 @@ def _open_or_create_beneath(root_fd: int, parts: tuple[str, ...],
         raise
 
 
+def _validate_existing_parent_beneath(root_fd: int, parts: tuple[str, ...],
+                                      expected_dev: int) -> None:
+    """Walk existing parent components without creating directories or following links."""
+    current = os.dup(root_fd)
+    try:
+        for part in parts:
+            try:
+                next_fd = _open_or_create_dir(current, part, create=False,
+                                              expected_dev=expected_dev)
+            except FileNotFoundError:
+                return
+            except OSError as exc:
+                raise G0StorageError("G0_EXTERNAL_PATH_UNSAFE",
+                                     f"Unsafe existing path component: {part}") from exc
+            os.close(current)
+            current = next_fd
+    finally:
+        os.close(current)
+
+
 def _tree_bytes(fd: int, expected_dev: int) -> int:
     total = 0
     for name in os.listdir(fd):
@@ -292,6 +313,19 @@ class G0ExternalStore:
         self._ledger_lock = threading.RLock()
         self._inflight_result_paths: set[str] = set()
         self._inflight_artifact_paths: set[str] = set()
+        self._task_event_index: dict[str, dict[str, list[dict]]] = {}
+        self._used_external_paths: set[str] = set()
+        self._expected_external_paths: set[str] = set()
+        self._committed_external_files: dict[str, dict] = {}
+        self._watchdog_invocation_ids: set[int] = set()
+        self._external_run_bytes = 0
+        self._external_reserved_bytes = 0
+        self._ledger_bytes = 0
+        self._ledger_stat_signature: tuple[int, int, int, int, int] | None = None
+        self._indexed_sequence = 0
+        self._indexed_tip = "0" * 64
+        self._has_prior_work = False
+        self._recovery_verified = True
         self._mount_fd: int | None = None
         self._run_fd: int | None = None
         self._ledger_fd: int | None = None
@@ -313,6 +347,7 @@ class G0ExternalStore:
                 self._mount_fd,
                 _safe_relative(policy.run_root_relative) + (self.run_uuid,),
                 self._external_initial.st_dev, create=True)
+            self._rebuild_incremental_indexes()
             self._append({"event": "g0_external_store_opened",
                           "run_uuid": self.run_uuid,
                           "external_volume_uuid": self._external_initial.volume_uuid,
@@ -428,6 +463,17 @@ class G0ExternalStore:
         else:
             self._write_anchor(anchor_path, self._ledger.sequence, self._ledger.previous)
         self._anchor_path = anchor_path
+        self._ledger_bytes = os.fstat(self._ledger.fd).st_size
+        self._ledger_stat_signature = self._ledger_file_signature()
+        self._indexed_sequence = self._ledger.sequence
+        self._indexed_tip = self._ledger.previous
+
+    def _ledger_file_signature(self) -> tuple[int, int, int, int, int]:
+        """Return APFS file identity and change metadata for cheap drift detection."""
+        assert self._ledger is not None
+        info = os.fstat(self._ledger.fd)
+        return (info.st_dev, info.st_ino, info.st_size,
+                info.st_mtime_ns, info.st_ctime_ns)
 
     def _read_anchor(self, path: Path) -> dict:
         try:
@@ -473,15 +519,22 @@ class G0ExternalStore:
 
     def _append(self, event: dict) -> str:
         with self._ledger_lock:
-            if self._poisoned or self._ledger is None:
-                raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Control ledger is unavailable")
-            digest = self._ledger.append({"run_uuid": self.run_uuid, **event})
+            self._assert_index_current()
+            assert self._ledger is not None
+            sequence = self._indexed_sequence
+            payload = {"run_uuid": self.run_uuid, **event}
+            digest = self._ledger.append(payload)
             try:
                 self._write_anchor(self._anchor_path, self._ledger.sequence, self._ledger.previous)
+                self._index_event(payload)
+                self._indexed_sequence = self._ledger.sequence
+                self._indexed_tip = self._ledger.previous
+                self._ledger_bytes = os.fstat(self._ledger.fd).st_size
+                self._ledger_stat_signature = self._ledger_file_signature()
             except BaseException:
                 self._poisoned = True
                 raise RecoveryRefused("G0_LEDGER_ANCHOR_WRITE_FAILED",
-                                      "Ledger advanced but its anchor did not; stop and reconcile")
+                                      f"Ledger/index commit failed after sequence {sequence}; stop and reconcile")
             return digest
 
     def _policy_record(self) -> dict:
@@ -499,6 +552,206 @@ class G0ExternalStore:
             "external_start_free_bytes": self._external_start_free,
             "internal_start_free_bytes": self._internal_start_free,
         }
+
+    def _index_event(self, event: dict) -> None:
+        """Update rebuildable hot-path indexes after an authoritative append."""
+        kind = event.get("event")
+        task_kinds = {
+            "g0_task_started": "starts",
+            "g0_task_completed": "completions",
+            "g0_task_failed": "failures",
+        }
+        if kind in task_kinds:
+            self._has_prior_work = True
+            task_id = event.get("task_id")
+            if not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id):
+                raise RecoveryRefused("G0_TASK_ID_INVALID", "Task audit contains invalid identity")
+            state = self._task_event_index.setdefault(
+                task_id, {"starts": [], "completions": [], "failures": []})
+            state[task_kinds[kind]].append(dict(event))
+            if kind == "g0_task_started":
+                path = event.get("result_path")
+                if not isinstance(path, str):
+                    raise RecoveryRefused("G0_TASK_PATH_MISMATCH", "Task start lacks a result path")
+                _safe_relative(path)
+                self._used_external_paths.add(path)
+                self._expected_external_paths.add(path)
+            elif kind == "g0_task_completed":
+                path = event.get("result_path")
+                if not isinstance(path, str):
+                    raise RecoveryRefused("G0_TASK_PATH_MISMATCH", "Task completion lacks a result path")
+                _safe_relative(path)
+                self._committed_external_files[path] = {
+                    "sha256": event.get("sha256"),
+                    "size_bytes": event.get("size_bytes"),
+                    "event": kind,
+                }
+            return
+        artifact_kinds = {
+            "g0_external_artifact_started",
+            "g0_external_artifact_written",
+            "g0_external_artifact_failed",
+        }
+        if kind in artifact_kinds:
+            self._has_prior_work = True
+            path = event.get("relative_path")
+            if not isinstance(path, str):
+                raise RecoveryRefused("G0_ARTIFACT_HISTORY_INVALID", "Artifact audit lacks a path")
+            _safe_relative(path)
+            if kind == "g0_external_artifact_started":
+                self._used_external_paths.add(path)
+                self._expected_external_paths.add(path)
+            elif kind == "g0_external_artifact_written":
+                self._committed_external_files[path] = {
+                    "sha256": event.get("sha256"),
+                    "size_bytes": event.get("size_bytes"),
+                    "event": kind,
+                }
+            return
+        if kind in ("g0_watchdog_invocation_started",
+                    "g0_watchdog_invocation_finished"):
+            self._has_prior_work = True
+            invocation_id = event.get("invocation_id")
+            if type(invocation_id) is not int or invocation_id < 1:
+                raise RecoveryRefused("G0_WATCHDOG_RECORD_INVALID",
+                                      "Invalid watchdog invocation ID")
+            self._watchdog_invocation_ids.add(invocation_id)
+
+    def _rebuild_incremental_indexes(self) -> None:
+        """Rebuild hot-path state and committed-byte totals on open or resume."""
+        assert self._ledger is not None and self._run_fd is not None
+        events = self._task_events()
+        for event in events:
+            self._index_event(event)
+        self._indexed_sequence = self._ledger.sequence
+        self._indexed_tip = self._ledger.previous
+        self._ledger_bytes = os.fstat(self._ledger.fd).st_size
+        anchor = self._read_anchor(self._anchor_path)
+        if anchor != {"sequence": self._indexed_sequence,
+                      "tip_sha256": self._indexed_tip,
+                      "run_uuid": self.run_uuid}:
+            raise RecoveryRefused("G0_LEDGER_ANCHOR_MISMATCH",
+                                  "Ledger changed while its incremental index was rebuilt")
+
+        actual_files, run_bytes = self._scan_managed_tree(
+            self._run_fd, self._external_initial.st_dev)
+        unexpected = actual_files - self._expected_external_paths
+        if unexpected:
+            raise RecoveryRefused("G0_EXTERNAL_FILE_INVENTORY_MISMATCH",
+                                  f"Untracked external files exist: {sorted(unexpected)[:20]}")
+        for path, commitment in self._committed_external_files.items():
+            if path not in actual_files:
+                raise RecoveryRefused("G0_EXTERNAL_FILE_INVENTORY_MISMATCH",
+                                      f"Committed file is absent: {path}")
+            parent, name = self._open_parent(path, create=False)
+            try:
+                digest, size = _hash_open_file(parent, name,
+                                               self._external_initial.st_dev)
+            finally:
+                os.close(parent)
+            if digest != commitment.get("sha256") or size != commitment.get("size_bytes"):
+                raise RecoveryRefused("G0_EXTERNAL_ARTIFACT_CORRUPT",
+                                      f"Committed file changed: {path}")
+        self._external_run_bytes = run_bytes
+        self._recovery_verified = not self._has_prior_work
+
+    def _assert_index_current(self) -> None:
+        """Reject stale in-memory state after a partial or external ledger change."""
+        if self._poisoned or self._ledger is None:
+            raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Control ledger is unavailable")
+        if (os.fstat(self._ledger.fd).st_size != self._ledger_bytes or
+                self._ledger_file_signature() != self._ledger_stat_signature or
+                self._ledger.sequence != self._indexed_sequence or
+                self._ledger.previous != self._indexed_tip):
+            self._poisoned = True
+            raise RecoveryRefused("G0_LEDGER_INDEX_STALE",
+                                  "Ledger identity, size, change metadata or tip changed")
+        anchor = self._read_anchor(self._anchor_path)
+        if anchor != {"sequence": self._indexed_sequence,
+                      "tip_sha256": self._indexed_tip,
+                      "run_uuid": self.run_uuid}:
+            self._poisoned = True
+            raise RecoveryRefused("G0_LEDGER_INDEX_STALE",
+                                  "Ledger tip anchor differs from the in-memory index")
+
+    def _require_recovery_verified(self) -> None:
+        if not self._recovery_verified:
+            raise RecoveryRefused("G0_RECOVERY_VALIDATION_REQUIRED",
+                                  "Existing run state must pass full recovery validation before writes")
+
+    def _reserve_external_write(self, size: int) -> None:
+        """Reserve a bounded write against run and independent volume limits."""
+        if type(size) is not int or size <= 0 or size > _STREAM_WRITE_CHUNK_BYTES:
+            raise ValueError("External writes must use positive bounded chunks")
+        try:
+            if self._require_os_mount and not os.path.ismount(self.policy.external_mount):
+                raise G0StorageError("G0_EXTERNAL_MOUNT_UNAVAILABLE",
+                                     "External data path is no longer a mountpoint")
+            current = Path(self.policy.external_mount).stat()
+            if (current.st_dev != self._external_initial.st_dev or
+                    current.st_ino != self._external_initial.st_ino or
+                    self._mount_fd is None or
+                    os.fstat(self._mount_fd).st_dev != self._external_initial.st_dev):
+                raise G0StorageError("G0_EXTERNAL_VOLUME_IDENTITY_MISMATCH",
+                                     "External mount root changed before a bounded write")
+            with self._ledger_lock:
+                if self._poisoned or self._ledger is None:
+                    raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Control ledger is unavailable")
+                if os.fstat(self._ledger.fd).st_size != self._ledger_bytes:
+                    self._poisoned = True
+                    raise RecoveryRefused("G0_LEDGER_INDEX_STALE",
+                                          "Ledger size changed during a bounded write")
+                ext_free = self.usage_provider(self.policy.external_mount).free
+                internal_free = self.usage_provider(self.policy.internal_mount).free
+                reserved = self._external_reserved_bytes
+                next_run_bytes = self._external_run_bytes + reserved + size
+                if (next_run_bytes > self.policy.maximum_run_bytes or
+                        ext_free - reserved - size < self.policy.minimum_external_reserve_free_bytes or
+                        max(0, self._external_start_free - ext_free) + reserved + size >
+                        int(self._external_start_free * self.policy.maximum_projected_use_fraction)):
+                    raise G0StorageError("G0_EXTERNAL_SPACE_LIMIT",
+                                         "Bounded external write would breach run or volume limits")
+                if (internal_free < self.policy.minimum_internal_reserve_free_bytes or
+                        max(0, self._internal_start_free - internal_free) >
+                        int(self._internal_start_free * self.policy.maximum_projected_use_fraction)):
+                    raise G0StorageError("G0_INTERNAL_SPACE_LIMIT",
+                                         "Internal APFS reserve would be breached during external write")
+                self._external_reserved_bytes += size
+        except G0StorageError:
+            raise
+        except OSError as exc:
+            raise G0StorageError("G0_EXTERNAL_IO_FAILURE",
+                                 f"Cannot reserve external write capacity: {exc}") from exc
+
+    def _finish_external_write(self, reserved: int, written: int) -> None:
+        with self._ledger_lock:
+            self._external_reserved_bytes -= reserved
+            if self._external_reserved_bytes < 0:
+                self._poisoned = True
+                raise RecoveryRefused("G0_EXTERNAL_COUNTER_INVALID",
+                                      "External write reservation underflow")
+            self._external_run_bytes += written
+
+    def _write_bounded_payload(self, fd: int, payload: bytes | memoryview,
+                               digest: object) -> int:
+        view = memoryview(payload)
+        total = 0
+        while view:
+            chunk = view[:_STREAM_WRITE_CHUNK_BYTES]
+            reserved = len(chunk)
+            self._reserve_external_write(reserved)
+            try:
+                written = os.write(fd, chunk)
+            except BaseException:
+                self._finish_external_write(reserved, 0)
+                raise
+            self._finish_external_write(reserved, written)
+            if written <= 0:
+                raise OSError("short external artifact write")
+            digest.update(chunk[:written])
+            total += written
+            view = view[written:]
+        return total
 
     def _validate_current_mounts(self) -> None:
         if self._require_os_mount and not os.path.ismount(self.policy.external_mount):
@@ -526,15 +779,15 @@ class G0ExternalStore:
                                  "External mount root was replaced")
 
     def check_health(self) -> dict:
-        """Recheck both identities and separate free-space/run-allocation limits."""
+        """Recheck volume identity and O(1) counters without walking prior outputs."""
         try:
             self._validate_current_mounts()
             ext_free = self.usage_provider(self.policy.external_mount).free
             internal_free = self.usage_provider(self.policy.internal_mount).free
-            assert self._run_fd is not None and self._ledger_fd is not None
-            run_bytes = _tree_bytes(self._run_fd, self._external_initial.st_dev)
             with self._ledger_lock:
-                ledger_bytes = _tree_bytes(self._ledger_fd, self._internal_root_dev)
+                self._assert_index_current()
+                run_bytes = self._external_run_bytes + self._external_reserved_bytes
+                ledger_bytes = os.fstat(self._ledger.fd).st_size
             ext_use = max(0, self._external_start_free - ext_free)
             internal_use = max(0, self._internal_start_free - internal_free)
             if (ext_free < self.policy.minimum_external_reserve_free_bytes or
@@ -556,7 +809,7 @@ class G0ExternalStore:
                     "internal_volume_uuid": self._internal_initial.volume_uuid,
                     "internal_filesystem": self._internal_initial.filesystem,
                     "internal_free_bytes": internal_free,
-                    "internal_control_bytes": ledger_bytes,
+                    "internal_ledger_bytes": ledger_bytes,
                     "internal_projected_use_bytes": internal_use}
         except G0StorageError:
             raise
@@ -582,6 +835,7 @@ class G0ExternalStore:
         """
         if type(invocation_id) is not int or invocation_id < 1:
             raise ValueError("invocation_id must be a positive integer")
+        self._require_recovery_verified()
         controlled_options = {"run_dir", "stop_guard", "audit_name", "stdout_name",
                              "invocation_id"}
         if controlled_options.intersection(watchdog_options):
@@ -597,10 +851,8 @@ class G0ExternalStore:
         audit_name = f"watchdog.g0.{invocation_id}.jsonl"
         stdout_name = f"runner.g0.{invocation_id}.stdout.log"
         with self._ledger_lock:
-            existing_ids = {event.get("invocation_id") for event in self._task_events()
-                            if event.get("event") in ("g0_watchdog_invocation_started",
-                                                       "g0_watchdog_invocation_finished")}
-            if invocation_id in existing_ids:
+            self._assert_index_current()
+            if invocation_id in self._watchdog_invocation_ids:
                 raise RecoveryRefused("G0_WATCHDOG_INVOCATION_REUSED",
                                       "Watchdog invocation IDs are single-use")
             self._append({"event": "g0_watchdog_invocation_started",
@@ -660,37 +912,83 @@ class G0ExternalStore:
         return terminal
 
     def _task_events(self) -> list[dict]:
+        """Read and verify the complete authoritative ledger for open/recovery only."""
         with self._ledger_lock:
             assert self._ledger is not None
             events = []
-            raw = Path(self._ledger.path).read_bytes()
-            if raw and not raw.endswith(b"\n"):
-                raise RecoveryRefused("G0_LEDGER_PARTIAL_TAIL", "Control audit has an incomplete tail")
-            for line in raw.splitlines():
-                item = json.loads(line)
-                event = item["event"]
-                if event.get("run_uuid") != self.run_uuid:
-                    raise RecoveryRefused("G0_LEDGER_RUN_ID_MISMATCH", "Ledger contains another run UUID")
-                events.append(event)
+            previous = "0" * 64
+            sequence = 0
+            read_fd = os.open(self._ledger.path, os.O_RDONLY |
+                              getattr(os, "O_NOFOLLOW", 0))
+            handle = None
+            try:
+                read_info = os.fstat(read_fd)
+                write_info = os.fstat(self._ledger.fd)
+                if (read_info.st_dev, read_info.st_ino) != (write_info.st_dev,
+                                                            write_info.st_ino):
+                    raise RecoveryRefused("G0_LEDGER_IDENTITY_CHANGED",
+                                          "Ledger path no longer names the locked file")
+                read_signature = (read_info.st_dev, read_info.st_ino, read_info.st_size,
+                                  read_info.st_mtime_ns, read_info.st_ctime_ns)
+                if read_signature != self._ledger_stat_signature:
+                    raise RecoveryRefused("G0_LEDGER_CHANGED_DURING_SCAN",
+                                          "Ledger metadata differs from the indexed version")
+                handle = os.fdopen(read_fd, "rb", closefd=False)
+                while True:
+                    offset = handle.tell()
+                    line = handle.readline()
+                    if not line:
+                        break
+                    if not line.endswith(b"\n"):
+                        raise RecoveryRefused("G0_LEDGER_PARTIAL_TAIL",
+                                              "Control audit has an incomplete tail")
+                    try:
+                        item = json.loads(line)
+                        digest = item.pop("record_sha256")
+                        if (set(item) != {"sequence", "previous_sha256", "event"} or
+                                item.get("sequence") != sequence or
+                                item.get("previous_sha256") != previous or
+                                not isinstance(digest, str) or not _HEX64.fullmatch(digest) or
+                                hashlib.sha256(_canonical(item)).hexdigest() != digest):
+                            raise ValueError("hash-chain fields or digest mismatch")
+                        event = item["event"]
+                        if not isinstance(event, dict):
+                            raise ValueError("event must be an object")
+                    except (ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+                        raise RecoveryRefused("G0_LEDGER_INVALID",
+                                              f"Control audit is invalid at byte {offset}: {exc}") from exc
+                    if event.get("run_uuid") != self.run_uuid:
+                        raise RecoveryRefused("G0_LEDGER_RUN_ID_MISMATCH",
+                                              "Ledger contains another run UUID")
+                    events.append(event)
+                    previous = digest
+                    sequence += 1
+            finally:
+                if handle is not None:
+                    handle.close()
+                os.close(read_fd)
+            if (sequence != self._ledger.sequence or previous != self._ledger.previous or
+                    self._ledger_file_signature() != read_signature or
+                    read_signature != self._ledger_stat_signature):
+                raise RecoveryRefused("G0_LEDGER_CHANGED_DURING_SCAN",
+                                      "Ledger differs from the locked in-memory tip")
+            anchor = self._read_anchor(self._anchor_path)
+            if anchor != {"sequence": sequence, "tip_sha256": previous,
+                          "run_uuid": self.run_uuid}:
+                raise RecoveryRefused("G0_LEDGER_ANCHOR_MISMATCH",
+                                      "Audit records do not match the local tip anchor")
             return events
 
-    def _task_state(self) -> dict[str, dict]:
-        states: dict[str, dict] = {}
-        for event in self._task_events():
-            kind = event.get("event")
-            if kind not in ("g0_task_started", "g0_task_completed", "g0_task_failed"):
-                continue
-            task_id = event.get("task_id")
+    def _task_state(self, task_id: str) -> dict[str, list[dict]]:
+        """Return one task's indexed event state without rescanning old records."""
+        with self._ledger_lock:
+            self._assert_index_current()
             if not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id):
-                raise RecoveryRefused("G0_TASK_ID_INVALID", "Task audit contains invalid identity")
-            state = states.setdefault(task_id, {"starts": [], "completions": [], "failures": []})
-            if kind == "g0_task_started":
-                state["starts"].append(event)
-            elif kind == "g0_task_completed":
-                state["completions"].append(event)
-            else:
-                state["failures"].append(event)
-        return states
+                raise RecoveryRefused("G0_TASK_ID_INVALID", "Task ID is malformed")
+            state = self._task_event_index.get(
+                task_id, {"starts": [], "completions": [], "failures": []})
+            return {kind: [dict(event) for event in events]
+                    for kind, events in state.items()}
 
     def _expected_result_path(self, task_id: str, attempt_id: str) -> str:
         if not _SAFE_ID.fullmatch(task_id):
@@ -713,13 +1011,17 @@ class G0ExternalStore:
     def begin_task(self, *, task_id: str, attempt_id: str,
                    seed_fingerprint: str) -> str:
         """Record a task attempt before work begins and return its fixed path."""
+        self._require_recovery_verified()
         if not _HEX64.fullmatch(seed_fingerprint):
             raise G0StorageError("G0_SEED_FINGERPRINT_INVALID", "Seed fingerprint must be SHA-256 hex")
         relative = self._expected_result_path(task_id, attempt_id)
         self.check_health()
+        assert self._run_fd is not None
+        _validate_existing_parent_beneath(
+            self._run_fd, _safe_relative(relative)[:-1],
+            self._external_initial.st_dev)
         with self._ledger_lock:
-            states = self._task_state()
-            prior = states.get(task_id, {"starts": [], "completions": [], "failures": []})
+            prior = self._task_state(task_id)
             if prior["completions"]:
                 raise RecoveryRefused("G0_TASK_ALREADY_COMPLETE", "Completed task cannot be recomputed")
             if len(prior["starts"]) >= 2:
@@ -775,6 +1077,7 @@ class G0ExternalStore:
         except (TypeError, ValueError) as exc:
             raise G0StorageError("G0_ARTIFACT_IDENTITY_INVALID",
                                  "Artifact identity must be canonical JSON data") from exc
+        self._require_recovery_verified()
         iterator = iter((chunks,)) if isinstance(chunks, bytes) else iter(chunks)
         self.check_health()
         parent_fd = -1
@@ -782,12 +1085,9 @@ class G0ExternalStore:
         digest = hashlib.sha256()
         size = 0
         with self._ledger_lock:
-            prior_paths = {event.get("relative_path") for event in self._task_events()
-                           if event.get("event") in (
-                               "g0_external_artifact_started",
-                               "g0_external_artifact_written",
-                               "g0_external_artifact_failed")}
-            if relative_path in prior_paths or relative_path in self._inflight_artifact_paths:
+            self._assert_index_current()
+            if (relative_path in self._used_external_paths or
+                    relative_path in self._inflight_artifact_paths):
                 raise RecoveryRefused("G0_ARTIFACT_PATH_REUSED",
                                       "External artifact paths are immutable and single-use")
             self._inflight_artifact_paths.add(relative_path)
@@ -804,14 +1104,7 @@ class G0ExternalStore:
             for block in iterator:
                 if not isinstance(block, bytes):
                     raise TypeError("artifact chunks must be bytes")
-                view = memoryview(block)
-                while view:
-                    written = os.write(fd, view)
-                    if written <= 0:
-                        raise OSError("short external artifact write")
-                    digest.update(view[:written])
-                    size += written
-                    view = view[written:]
+                size += self._write_bounded_payload(fd, block, digest)
             os.fsync(fd)
             os.close(fd)
             fd = -1
@@ -859,11 +1152,12 @@ class G0ExternalStore:
         """Persist one immutable result for a previously started task attempt."""
         if not isinstance(payload, bytes):
             raise TypeError("payload must be bytes")
+        self._require_recovery_verified()
         if not _HEX64.fullmatch(seed_fingerprint):
             raise G0StorageError("G0_SEED_FINGERPRINT_INVALID", "Seed fingerprint must be SHA-256 hex")
         relative = self._expected_result_path(task_id, attempt_id)
         with self._ledger_lock:
-            state = self._task_state().get(task_id)
+            state = self._task_state(task_id)
             if (state is None or not any(x.get("attempt_id") == attempt_id and
                                          x.get("seed_fingerprint") == seed_fingerprint and
                                          x.get("result_path") == relative
@@ -881,13 +1175,12 @@ class G0ExternalStore:
             parent_fd, name = self._open_parent(relative, create=True)
             flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0)
             fd = os.open(name, flags, 0o600, dir_fd=parent_fd)
-            digest = hashlib.sha256(payload).hexdigest()
-            view = memoryview(payload)
-            while view:
-                written = os.write(fd, view)
-                if written <= 0:
-                    raise OSError("short external artifact write")
-                view = view[written:]
+            write_digest = hashlib.sha256()
+            written_size = self._write_bounded_payload(
+                fd, payload, write_digest)
+            digest = write_digest.hexdigest()
+            if written_size != len(payload):
+                raise OSError("short task result write")
             os.fsync(fd)
             os.close(fd)
             fd = -1
@@ -935,9 +1228,9 @@ class G0ExternalStore:
                             failure_class: str, reason_code: str,
                             reason: str) -> None:
         """Persist executor classification; only known operational codes permit retry."""
+        self._require_recovery_verified()
         with self._ledger_lock:
-            states = self._task_state()
-            state = states.get(task_id)
+            state = self._task_state(task_id)
             if not state or not any(x.get("attempt_id") == attempt_id for x in state["starts"]):
                 raise RecoveryRefused("G0_FAILURE_WITHOUT_START", "Failure has no matching started attempt")
             if any(x.get("attempt_id") == attempt_id for x in state["completions"] + state["failures"]):
@@ -961,11 +1254,19 @@ class G0ExternalStore:
                                       "Recovery verification requires all storage writes to stop")
         if self._ledger is None or self._ledger_fd is None:
             raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Cannot inspect recovery ledger")
-        sequence, tip = verify_hash_chain(self._ledger.path)
-        anchor = self._read_anchor(self._anchor_path)
-        if anchor != {"sequence": sequence, "tip_sha256": tip, "run_uuid": self.run_uuid}:
-            raise RecoveryRefused("G0_LEDGER_ANCHOR_MISMATCH", "Audit suffix is missing or anchor differs")
-        states = self._task_state()
+        ledger_events = self._task_events()
+        states: dict[str, dict[str, list[dict]]] = {}
+        for event in ledger_events:
+            bucket = {"g0_task_started": "starts",
+                      "g0_task_completed": "completions",
+                      "g0_task_failed": "failures"}.get(event.get("event"))
+            if bucket is None:
+                continue
+            task_id = event.get("task_id")
+            if not isinstance(task_id, str) or not _SAFE_ID.fullmatch(task_id):
+                raise RecoveryRefused("G0_TASK_ID_INVALID", "Task audit contains invalid identity")
+            state = states.setdefault(task_id, {"starts": [], "completions": [], "failures": []})
+            state[bucket].append(event)
         unknown_tasks = set(states) - set(expected_tasks)
         if unknown_tasks:
             raise RecoveryRefused("G0_UNEXPECTED_TASK", f"Unexpected task records: {sorted(unknown_tasks)}")
@@ -975,7 +1276,7 @@ class G0ExternalStore:
         artifact_started: dict[str, dict] = {}
         artifact_written: dict[str, dict] = {}
         artifact_failed: set[str] = set()
-        for event in self._task_events():
+        for event in ledger_events:
             kind = event.get("event")
             if kind == "g0_external_artifact_started":
                 path = event.get("relative_path")
@@ -1020,7 +1321,7 @@ class G0ExternalStore:
             if digest != committed.get("sha256") or size != committed.get("size_bytes"):
                 raise RecoveryRefused("G0_ARTIFACT_CORRUPT", f"Artifact changed after commit: {path}")
             completed_files.add(path)
-        watchdog_events = [event for event in self._task_events()
+        watchdog_events = [event for event in ledger_events
                            if event.get("event") in (
                                "g0_watchdog_invocation_started",
                                "g0_watchdog_invocation_finished")]
@@ -1135,20 +1436,38 @@ class G0ExternalStore:
                 exhausted.append(task_id)
             else:
                 retryable.append(task_id)
-        actual_files = self._managed_files(self._run_fd, self._external_initial.st_dev)
+        actual_files, run_bytes = self._scan_managed_tree(
+            self._run_fd, self._external_initial.st_dev)
         if not actual_files.issubset(expected_files) or not completed_files.issubset(actual_files):
             raise RecoveryRefused("G0_EXTERNAL_FILE_INVENTORY_MISMATCH",
                                   f"Managed file set differs from ledger; unexpected={sorted(actual_files-expected_files)}, missing_completed={sorted(completed_files-actual_files)}")
+        with self._ledger_lock:
+            self._task_event_index.clear()
+            self._used_external_paths.clear()
+            self._expected_external_paths.clear()
+            self._committed_external_files.clear()
+            self._watchdog_invocation_ids.clear()
+            self._has_prior_work = False
+            for event in ledger_events:
+                self._index_event(event)
+            self._external_run_bytes = run_bytes
+            self._recovery_verified = True
         return RecoveryReport(tuple(sorted(completed)), tuple(sorted(retryable)),
                               tuple(sorted(set(expected_tasks) - set(states))),
                               tuple(sorted(exhausted)))
 
     def _managed_files(self, root_fd: int | None, expected_dev: int) -> set[str]:
+        return self._scan_managed_tree(root_fd, expected_dev)[0]
+
+    def _scan_managed_tree(self, root_fd: int | None,
+                           expected_dev: int) -> tuple[set[str], int]:
         if root_fd is None:
             raise G0StorageError("G0_EXTERNAL_STORE_CLOSED", "External store is closed")
         files: set[str] = set()
+        total_bytes = 0
 
         def visit(fd: int, prefix: tuple[str, ...]) -> None:
+            nonlocal total_bytes
             for name in os.listdir(fd):
                 info = os.stat(name, dir_fd=fd, follow_symlinks=False)
                 if info.st_dev != expected_dev or stat.S_ISLNK(info.st_mode):
@@ -1162,11 +1481,12 @@ class G0ExternalStore:
                         os.close(child)
                 elif stat.S_ISREG(info.st_mode):
                     files.add("/".join(path))
+                    total_bytes += info.st_size
                 else:
                     raise RecoveryRefused("G0_EXTERNAL_UNSAFE_ENTRY", "Unsupported filesystem entry found")
 
         visit(root_fd, ())
-        return files
+        return files, total_bytes
 
     def close(self) -> None:
         if self._closed:
