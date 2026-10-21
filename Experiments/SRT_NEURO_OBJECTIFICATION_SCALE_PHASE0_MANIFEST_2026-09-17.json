@@ -1,7 +1,7 @@
 {
   "phase0_id": "SRT-NEURO-OBJECTIFICATION-SCALE-PHASE0-20260917",
   "created": "2026-09-17",
-  "status": "r0a_numeric_pass_r0b_pending",
+  "status": "r0_partial_r0b_deterministic_pass_native_louvain_pending",
   "paper": {
     "title": "Single-cell resolution functional networks during unconsciousness are segregated into spatially intermixed modules",
     "doi": "10.1016/j.celrep.2025.116902"
@@ -19,7 +19,29 @@
       "bytes": 147233118,
       "sha256": "24edc39620e704ecfa74436395316dc9e7195c8105589494e28fe0f4412fded2",
       "scientific_result_files": 33,
-      "materialized": true
+      "materialized": true,
+      "r0b_extractions": [
+        {
+          "name": "phase0_sleep_r0b.npz",
+          "source": "sleep_data.mat",
+          "bytes": 23438127,
+          "sha256": "b293f00ea52e3b4e484d9b175ebb488d57766ef895e5a234cf8a2c9077b5af8e",
+          "wake_shape": [6920, 1500],
+          "target_shape": [6920, 1500],
+          "target": "NREM",
+          "materialized": true
+        },
+        {
+          "name": "phase0_ane_r0b.npz",
+          "source": "ane_data.mat",
+          "bytes": 9747954,
+          "sha256": "85b007715f6d66eaf8c64892d70ea57cb3b2727fde646b1f78c31379e9896108",
+          "wake_shape": [3210, 2900],
+          "target_shape": [3210, 2900],
+          "target": "anesthesia",
+          "materialized": true
+        }
+      ]
     }
   },
   "source_code": {
@@ -35,10 +57,11 @@
   },
   "runtime": {
     "required_family": "MATLAB-compatible runtime capable of executing the pinned source code",
-    "actual_runtime": "Python read-only numerical reconstruction of released MATLAB result arrays",
+    "actual_runtime": "Python released-result reconstruction plus processed-time-series deterministic recalculation and numerical-equivalent Louvain diagnostic",
     "toolbox_versions": {},
     "available_in_current_agent_environment": false,
-    "native_source_runtime_executed": false
+    "native_source_runtime_executed": false,
+    "python_louvain_diagnostic_is_source_native": false
   },
   "locked_source_parameters": {
     "input_signal": "smoothed_spike",
@@ -83,22 +106,35 @@
     "unexpected_discrepancy": false
   },
   "r0b": {
-    "status": "not_run",
+    "status": "partial_deterministic_pass_native_louvain_pending",
     "targets": [
       "sleep single-cell recalculation",
       "sleep N_neighbors=40 recalculation",
       "anesthesia single-cell recalculation",
       "anesthesia N_neighbors=40 recalculation"
     ],
-    "outputs": []
+    "outputs": [
+      "Experiments/SRT_NEURO_OBJECTIFICATION_SCALE_PHASE0_R0B_RESULT_2026-09-17.md"
+    ],
+    "input_integrity": "pass_for_bounded_extractions",
+    "single_cell_graph_recalculation": "pass",
+    "coarse40_graph_recalculation": "pass",
+    "selected_state_effect_directions_preserved": true,
+    "python_numerical_equivalent_200_run_completed": true,
+    "native_unmodified_matlab_execution": "not_run",
+    "exact_q_acceptance": "not_met",
+    "source_level_material_contradiction": false
   },
-  "verdict": "UNASSIGNED",
+  "verdict": "R0-PARTIAL",
   "phase1_authorized": false,
   "notes": [
     "Phase 0 uses the official paper replication package; RIKEN v3.0 is reserved for Phase 1.",
-    "No SRT-facing interpretation is authorized before an R0 verdict.",
+    "No SRT-facing interpretation is authorized before an R0 verdict and the applicable Phase-1 gate.",
     "The results.zip hash identifies a user-created re-zip of the released results directory and is not the original Zenodo archive checksum.",
     "Released result matrices numerically reconstruct the source Fig.3/Fig.7 pattern without detected discrepancy.",
-    "Full R0-PASS remains unavailable until R0B raw/processed-time-series recalculation is completed and the native-runtime requirement is resolved or explicitly reviewed."
+    "Bounded R0B extraction hashes match the extraction log and deterministic single-cell/coarse-40 graph construction was independently recomputed.",
+    "The Python numerical-equivalent Louvain diagnostic preserves all four selected wake-target directions but does not reproduce every packaged 200-run max-Q within the locked 1e-4 ceiling; several Python runs find higher local optima than the packaged author maxima.",
+    "The unresolved discrepancy is therefore routed as stochastic runtime / RNG-search equivalence pending native MATLAB execution, not as a source-level qualitative contradiction.",
+    "Full R0-PASS remains unavailable until native source-runtime exact-Q reproduction and original archive integrity requirements are resolved."
   ]
 }
