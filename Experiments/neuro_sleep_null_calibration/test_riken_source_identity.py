@@ -18,6 +18,7 @@ from riken_source_identity import (
     hash_int64,
     load_h3_reference,
     read_source_abs_correlation,
+    select_h3_first_by_n,
     select_g0_repeats,
     select_h3_panel,
     stable_seed,
@@ -57,6 +58,7 @@ class TestRikenSourceIdentity(unittest.TestCase):
                                 "source_file_sha256": "a" * 64,
                                 "selected_neuron_indices_sha256": "b" * 64,
                                 "source_frame_indices_sha256": "c" * 64,
+                                "expected_input_identity_sha256": "0" * 64,
                                 "expected_edge_count": 8 * n,
                                 "historical_job_sha256": "9" * 64,
                                 "historical_q_vector_sha256": "d" * 64,
@@ -75,6 +77,13 @@ class TestRikenSourceIdentity(unittest.TestCase):
                          [(r["graph_id"], r["identity_panel_seed"]) for r in changed_panel])
         self.assertEqual(len({row["graph_id"] for row in panel}), 120)
         self.assertTrue(all(row["edge_identity"] == "NOT_RECONSTRUCTED" for row in panel))
+        pilot = select_h3_first_by_n(panel)
+        self.assertEqual([row["N"] for row in pilot],
+                         [100, 150, 225, 340, 510, 765, 1150, 1725, 2600, 3900])
+        self.assertTrue(all(row["recording_id"] == "mouse01_sleep" for row in pilot))
+        self.assertEqual([(row["graph_id"], row["pilot_order"]) for row in pilot],
+                         [(row["graph_id"], index + 1)
+                          for index, row in enumerate(select_h3_first_by_n(changed_panel))])
 
     def test_h3_replay_requires_frozen_tolerance_and_complete_identity(self) -> None:
         values = [i / 1000 for i in range(200)]
@@ -85,34 +94,91 @@ class TestRikenSourceIdentity(unittest.TestCase):
                      "historical_louvain_seed_vector_sha256": hash_int64(seeds),
                      "historical_q_max_first_index": 199,
                      "expected_node_order_sha256": "a" * 64,
+                     "source_artifact_sha256": "f" * 64,
+                     "selected_neuron_indices_sha256": "a" * 64,
+                     "source_frame_indices_sha256": "c" * 64,
+                     "expected_input_identity_sha256": "0" * 64,
                      "expected_edge_count": 800, "N": 100}]
         replay = [{"graph_id": graph_id,
                    "historical_edge_set_sha256": "b" * 64,
                    "candidate_edge_set_sha256": "b" * 64,
+                   "historical_labeled_edge_set_sha256": "b" * 64,
+                   "candidate_labeled_edge_set_sha256": "b" * 64,
                    "historical_node_order_sha256": "a" * 64,
                    "candidate_node_order_sha256": "a" * 64,
+                   "source_artifact_sha256": "f" * 64,
+                   "selected_neuron_indices_sha256": "a" * 64,
+                   "expected_input_identity_sha256": "0" * 64,
+                   "expected_source_frame_indices_sha256": "c" * 64,
+                   "reconstructed_source_frame_indices_sha256": "c" * 64,
+                   "historical_builder_function_sha256":
+                       identity.EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256,
                    "historical_N": 100, "candidate_N": 100,
                    "historical_E": 800, "candidate_E": 800,
                    "historical_adjacency_iteration_sha256": "f" * 64,
-                   "executor_sorted_adjacency_iteration_sha256": "f" * 64,
+                   "candidate_adjacency_iteration_sha256": "f" * 64,
+                   "executor_sorted_adjacency_iteration_sha256": "g" * 64,
+                   "historical_candidate_adjacency_order_equal": True,
+                   "historical_executor_adjacency_order_equal": False,
                    "historical_degree_sequence_sha256": "c" * 64,
                    "candidate_degree_sequence_sha256": "c" * 64,
                    "louvain_seeds": seeds, "q_values": values,
                    "historical_builder_q_values": values,
                    "historical_builder_q_max_first_index": 199,
                    "historical_q_values": values, "historical_q_max": max(values),
+                   "historical_q_max_first_index": 199,
                    "q_max_first_index": 199}]
-        with self.assertRaisesRegex(IdentityEvidenceError, "tolerance is not frozen"):
+        with self.assertRaisesRegex(IdentityEvidenceError, "must equal.*1e-10"):
             validate_h3_replay(expected, replay, trial_q_atol=None)
-        self.assertEqual(validate_h3_replay(expected, replay, trial_q_atol=0.0)["status"],
-                         "PASS")
+        with self.assertRaisesRegex(IdentityEvidenceError, "must equal.*1e-10"):
+            validate_h3_replay(expected, replay, trial_q_atol=1e-6)
+        report = validate_h3_replay(expected, replay, trial_q_atol=1e-10)
+        self.assertEqual(report["status"], "SOURCE_GRAPH_AND_HISTORICAL_Q_PASS")
+        self.assertEqual(report["source_graph_identity"]["status"], "PASS")
+        self.assertEqual(report["historical_order_q_replay"]["status"], "PASS")
+        self.assertEqual(report["executor_sorted_order_compatibility"]["status"],
+                         "RESULTS_MATCH_WITH_DIFFERENT_ADJACENCY_ORDER")
+        self.assertTrue(report["executor_sorted_order_compatibility"][
+            "does_not_invalidate_source_graph_or_historical_replay"])
+        with self.assertRaisesRegex(IdentityEvidenceError, "missing, duplicated"):
+            validate_h3_replay(expected * 2, replay, trial_q_atol=1e-10)
+        changed_executor = list(values)
+        changed_executor[0] += 0.01
+        replay[0]["q_values"] = changed_executor
+        report = validate_h3_replay(expected, replay, trial_q_atol=1e-10)
+        self.assertEqual(report["source_graph_identity"]["status"], "PASS")
+        self.assertEqual(report["historical_order_q_replay"]["status"], "PASS")
+        self.assertEqual(report["executor_sorted_order_compatibility"]["status"],
+                         "INCOMPATIBLE")
+        self.assertEqual(report["status"], "SOURCE_GRAPH_AND_HISTORICAL_Q_PASS")
+        replay[0]["q_values"] = values
+        del replay[0]["q_values"]
+        report = validate_h3_replay(expected, replay, trial_q_atol=1e-10)
+        self.assertEqual(report["source_graph_identity"]["status"], "PASS")
+        self.assertEqual(report["historical_order_q_replay"]["status"], "PASS")
+        self.assertEqual(report["executor_sorted_order_compatibility"]["status"],
+                         "INCOMPLETE_OR_INVALID")
+        self.assertEqual(report["status"], "SOURCE_GRAPH_AND_HISTORICAL_Q_PASS")
+        replay[0]["q_values"] = values
         replay[0]["candidate_edge_set_sha256"] = "d" * 64
-        self.assertEqual(validate_h3_replay(expected, replay, trial_q_atol=0.0)["status"],
-                         "NC-INVALID")
+        report = validate_h3_replay(expected, replay, trial_q_atol=1e-10)
+        self.assertEqual(report["source_graph_identity"]["status"], "NC-INVALID")
+        self.assertEqual(report["historical_order_q_replay"]["status"], "PASS")
+        self.assertEqual(report["status"], "NC-INVALID_SOURCE_GRAPH_IDENTITY")
         replay[0]["candidate_edge_set_sha256"] = "b" * 64
-        replay[0]["executor_sorted_adjacency_iteration_sha256"] = "g" * 64
-        self.assertEqual(validate_h3_replay(expected, replay, trial_q_atol=0.0)["status"],
-                         "NC-INVALID")
+        replay[0]["historical_builder_q_values"] = [*values]
+        replay[0]["historical_builder_q_values"][0] += 0.01
+        report = validate_h3_replay(expected, replay, trial_q_atol=1e-10)
+        self.assertEqual(report["source_graph_identity"]["status"], "PASS")
+        self.assertEqual(report["historical_order_q_replay"]["status"], "NC-INVALID")
+        self.assertEqual(report["status"], "NC-INVALID_HISTORICAL_Q_REPLAY")
+
+    def test_h3_runtime_does_not_claim_unrecorded_scipy_was_historical(self) -> None:
+        runtime = identity.h3_runtime_manifest()
+        self.assertFalse(runtime["historical_environment_fully_pinned"])
+        self.assertEqual(runtime["historical_float_environment_exactness"],
+                         "UNPROVEN_SCIPY_VERSION_NOT_RECORDED")
+        self.assertIn("SciPy", runtime["historical_environment_gaps"][0])
 
     def test_h3_reference_loader_checks_saved_job_hash_q_and_seed_identity(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

@@ -36,8 +36,8 @@ read source-file bytes for SHA-256, HDF5 shapes and
 construct a biological correlation matrix or graph, or run Louvain.
 
 The generated manifest is
-`G0_RIKEN_SOURCE_GRAPH_EXPECTED_MANIFEST_2026-10-21.json`, 9,366,233 bytes,
-SHA-256 `e31c2038e5479867b19d6e70bf7ede30242282f1d9bb65d25c1333697193488e`.
+`G0_RIKEN_SOURCE_GRAPH_EXPECTED_MANIFEST_2026-10-21.json`, 9,379,060 bytes,
+SHA-256 `6a8357ac0b815c434421a31dc6c294c292b5c144713f49c52b5344038235ece2`.
 It includes the identity-tool hash and verification package/runtime versions.
 It contains source and job hashes, graph coordinates and Q/seed hashes, but
 not raw signals, saved Q values, private absolute paths or local job files.
@@ -113,15 +113,60 @@ import side effects. A small synthetic tie-heavy N=20 fixture confirmed exact
 edge-set and adjacency-iteration agreement between that historical function
 and the independently written faithful builder. The specific test fixture is
 not a RIKEN input and does not stand in for any real source graph.
+The hash of those exact extracted historical functions is
+`59ed4ea1537d3b104e8ff9903ce98c51f69bb58edc09854933886f637ad90866`.
 
-The inventory and H3 tooling can now rebuild one source correlation matrix,
-compare historical and faithful-builder labeled edge sets, and run both the
-historical-order and PR #1126 normalized-order Louvain paths. The H3 reference
-loader verifies each saved job hash, Q-vector hash, seed-vector hash and
-coordinates. The validator requires exact graph/degree/adjacency identities,
-all 200 seeds, the archived ordered Q vector, Qmax within the preregistered
-`1e-6`, and first-max index agreement. It refuses to run comparison without an
-explicit, previously fixed trial-Q tolerance; that tolerance is still unset.
+The graph reconstruction path now preserves and separately measures three
+questions: (1) whether the source input and reconstructed historical graph
+match the identity record, (2) whether a 200-seed replay on the historical
+adjacency order reproduces the archived Q vector, and (3) whether PR #1126's
+sorted-edge insertion order is compatible. The third result is diagnostic:
+an executor-order mismatch cannot invalidate a source graph or a passing
+historical-order replay. Historical insertion order is authoritative for
+observed-Q reproduction; the sorted-edge path remains a compatibility test.
+
+The frozen historical insertion sequence is: add nodes `0..N-1`; add the
+`N-1` minimum-spanning-tree edges sorted by normalized endpoint pair; add all
+strict-above-threshold edges in `np.flatnonzero` upper-triangle row-major
+order; then add only the required threshold ties in that same row-major order.
+The PS-A wrapper imported this exact `connected_graph` function from the
+hash-pinned `multirecording_primary.py`. NetworkX preserves the resulting
+per-node neighbor insertion order, which can affect seeded Louvain tie
+handling even when labeled edge sets are equal. The independent builder is
+checked against the exact AST-extracted historical function and against
+source-node and frame-index hashes.
+
+The PS-A worker computes each saved trial with
+`community_louvain.best_partition(graph, weight="weight", resolution=1.0,
+random_state=seed)`, then evaluates
+`community_louvain.modularity(partition, graph, weight="weight")`. The saved
+seed recipe is `stable_seed(12345, recording_id, "sleep", "S3", "C1",
+analysis_label, state_index*1000 + window_index, repeat_index)`. The runtime
+used a `fork` process pool, `chunksize=1`, and checkpointed every ten Q values;
+the environment record lists eight workers and 200 repeats. H3 replay reuses
+the saved seed vector in order and performs no edge swaps. Worker count affects
+the schedule, while each trial's graph, seed, Louvain call and Q definition
+remain the comparison target.
+
+The candidate trial-Q tolerance is now fixed in the validator, before any
+biological replay: absolute error `1e-10`, relative tolerance `0`; Qmax remains
+within the already specified `1e-6`, with the first maximum index required to
+match exactly. This candidate is proposed for independent/researcher review,
+not yet approved. The historical run record captures Python 3.14.0, macOS
+15.7.4 arm64, NumPy 2.5.3, NetworkX 3.6.1 and python-louvain 0.16, but does
+not record the SciPy version used by the historical MST or h5py/HDF5 versions.
+The replay environment therefore uses a candidate lock (including SciPy
+1.18.1 and h5py 3.16.0) that matches the recorded versions where known; it
+cannot prove exact historical floating-point equivalence. No tolerance may be
+changed after seeing pilot Q differences. A failure at `1e-10` remains a
+failure unless a prospective amendment is independently reviewed before any
+replay.
+
+The saved job loader verifies each selected source MAT hash, job-file hash,
+coordinate, 200-seed vector hash, archived ordered Q-vector hash, Qmax and
+first-max index. It does not copy signal values or the Q vector into the
+public preparation packet. The validator requires all 200 seeds and finite Q
+values and independently reports the three outcomes above.
 
 ## Synthetic Louvain-order difference
 
@@ -145,13 +190,15 @@ biological finding. It demonstrates that edge-set equality alone does not
 establish replay equivalence for the current Louvain call path.
 
 The existing H3 protocol requires exact labeled edge-set identity and Q
-comparison to the saved historical vector. The actual RIKEN panel must now
-determine whether the executor's sorted insertion order changes any of the
-120 source Q vectors or first-max indices. No biological correlation matrix
-was built in this round, so the real H3 compatibility outcome remains
-**UNRESOLVED**. Do not run biological G0 null tasks unless the H3 identity
-gate is resolved under the existing protocol or an explicit prospective
-amendment is independently reviewed before any null outcome is inspected.
+comparison to the saved historical vector. No biological correlation matrix
+was built and no biological Louvain replay ran in this round, so the real H3
+compatibility outcome remains **UNRESOLVED**. A sorted-order mismatch during
+the fixed pilot is a compatibility finding, not a source-identity failure;
+the pilot must still stop at the first source/graph or authoritative
+historical-order Q integrity failure. Do not run biological G0 null tasks
+unless the H3 identity gate is resolved under the existing protocol or an
+explicit prospective amendment is independently reviewed before any null
+outcome is inspected.
 
 The original PS-A runner used NetworkX `fork` multiprocessing; the current G0
 path uses `spawn` and a fresh ProcessPool per task. The Q/seed algorithm is the
@@ -207,7 +254,110 @@ validated it, and removing per-record predecessor/digest fields must be
 reviewed against the existing per-proposal audit obligation. The storage cap
 therefore remains unvalidated and RESOURCE NO-GO remains in force.
 
-## H3 cost request before any real replay
+## Fixed ten-graph H3 pilot packet (prepared, not run)
+
+The Q-independent first row of the already frozen H3 panel was selected for
+each ascending N. This means the pilot intentionally uses the first registered
+recording (`mouse01_sleep`) and `wake` state at each N; it is a fixed identity
+diagnostic, not a representative sample of animals or states. The subset
+repeat and window are inherited from the frozen H3 panel selection and were
+not chosen after seeing Q values.
+
+| Order | N | Fixed graph identity |
+|---:|---:|---|
+| 1 | 100 | `mouse01_sleep|N100|rep-055|wake|window-000` |
+| 2 | 150 | `mouse01_sleep|N150|rep-070|wake|window-000` |
+| 3 | 225 | `mouse01_sleep|N225|rep-033|wake|window-000` |
+| 4 | 340 | `mouse01_sleep|N340|rep-083|wake|window-000` |
+| 5 | 510 | `mouse01_sleep|N510|rep-067|wake|window-000` |
+| 6 | 765 | `mouse01_sleep|N765|rep-021|wake|window-000` |
+| 7 | 1,150 | `mouse01_sleep|N1150|rep-089|wake|window-000` |
+| 8 | 1,725 | `mouse01_sleep|N1725|rep-014|wake|window-000` |
+| 9 | 2,600 | `mouse01_sleep|N2600|rep-045|wake|window-000` |
+| 10 | 3,900 | `mouse01_sleep|N3900|rep-070|wake|window-000` |
+
+`G0_RIKEN_H3_CALIBRATION_PILOT_2026-10-21.json` records the complete source
+MAT, selected-neuron-index, source-frame-index, historical job, 200-seed and
+saved Q-vector SHA-256 values for these ten identities, plus Qmax and first
+maximum index. The source MAT hash is
+`a73526ff842633816a7d03f2578eaeb398fd928c9c2b4a62a2496273dc3c59e6`; each
+pilot record says `HASHES_AND_200_SEEDS_VERIFIED; GRAPH_NOT_REBUILT`. The
+packet SHA-256 is
+`286fa084f125d205463218951e3ccf2640701dc7712a9a48cec62b323a49c36b` and the
+identity manifest SHA-256 it binds is
+`6a8357ac0b815c434421a31dc6c294c292b5c144713f49c52b5344038235ece2`. The
+current preparation tool SHA-256 is
+`ba7c855c1744fcfa1f94dc3d6ffe79cf4196695af1d6d5803beffc83d9c5d73e`. The
+public packet contains no raw signal values, Q values, private paths or job
+JSON; an output scan found none of `/Users/`, `.local/`, `q_values` or
+`spike_smoothed`.
+
+The packet status is `PREPARED_NOT_APPROVED_NOT_EXECUTED`. Candidate ceilings,
+not approved limits, are 8 wall-hours, 32 process-tree CPU-hours, at most four
+compute workers, 4 GiB sampled aggregate process-tree RSS, and 1 GiB output.
+The workload is at most 10 graph reconstructions and 4,000 Louvain trials
+(the 200 saved seeds on both authoritative historical and diagnostic sorted
+edge orders). These are stop ceilings, not an estimate of completion time;
+the RSS figure is sampling and is not a macOS hard memory limit.
+
+The reproducible preparation commands (not a replay) are:
+
+```sh
+PHASE2_ROOT="/path/to/private/.local/phase2_multirecording"
+PSA_ROOT="/path/to/private/.local/phase2_population_size_scaling"
+IDENTITY_OUT="/tmp/G0_RIKEN_SOURCE_GRAPH_EXPECTED_MANIFEST_REPRODUCE.json"
+PILOT_OUT="$PSA_ROOT/h3_identity_calibration_2026-10-21/prepared/G0_RIKEN_H3_CALIBRATION_PILOT.json"
+uv run --python 3.14.0 --with numpy==2.5.3 --with scipy==1.18.1 \
+  --with h5py==3.16.0 --with networkx==3.6.1 --with python-louvain==0.16 \
+  python Experiments/neuro_sleep_null_calibration/riken_source_identity.py \
+  --phase2-root "$PHASE2_ROOT" --psa-root "$PSA_ROOT" --output "$IDENTITY_OUT"
+uv run --python 3.14.0 --with numpy==2.5.3 --with scipy==1.18.1 \
+  --with h5py==3.16.0 --with networkx==3.6.1 --with python-louvain==0.16 \
+  python Experiments/neuro_sleep_null_calibration/riken_source_identity.py \
+  --phase2-root "$PHASE2_ROOT" --psa-root "$PSA_ROOT" \
+  --manifest "$IDENTITY_OUT" --prepare-h3-pilot --output "$PILOT_OUT"
+```
+
+The second command intentionally refuses to overwrite its output; use a new
+empty `prepared/` directory for a fresh packet. The committed manifest and
+pilot packet were produced by the same two invocations with unique `/tmp`
+output names, then copied into this Draft PR.
+
+The first command verifies expected source identities and hashes without
+reading signal values or constructing graphs. The second verifies the fixed
+ten job/Q/seed references and writes the public-safe packet. They were run for
+this update. There is not yet a single H3-specific, resource-supervised
+execution CLI that consumes this packet; `run_h3_replay_for_graph` is a
+library function, not a safe pilot launcher. Therefore no executable replay
+command is supplied or run in this preparation. Before B-stage authorization,
+the existing watchdog must supervise a bounded driver that checks the packet
+hash and runs the ten rows in fixed order; alternatively an already reviewed
+supervised entry point must be provided. Do not improvise with an inline
+Python command that bypasses a separate process-group watchdog.
+
+When that supervised runner is available and the researcher approves the
+packet hash and limits, the manual review record belongs in a new top-level
+PR #1127 comment, with the packet SHA-256, pilot run UUID, runtime-lock result,
+source/edge-order hashes, per-graph source and historical-Q statuses, sorted
+compatibility status, 200 Q deltas, Qmax/first-index checks, process-tree
+wall/CPU/RSS/disk accounting, watchdog audit hash, and any stop reason. The
+result directory is the private, ignored path
+`$PSA_ROOT/h3_identity_calibration_2026-10-21/<pilot-run-uuid>/`; it must be
+new and empty, and must not overwrite the PS-A source jobs or logs.
+
+On a future run, stop immediately and preserve the partial audit on any source
+MAT/job/subset/frame/seed identity mismatch, graph edge/node/degree invariant
+failure, nonfinite or missing Q, authoritative historical-order trial-Q
+delta exceeding `1e-10`, Qmax difference exceeding `1e-6`, or first-max-index
+mismatch. A mismatch confined to the #1126 sorted-order diagnostic is recorded
+as incompatibility but does not invalidate source identity or the authoritative
+historical replay; it does not justify changing order, seeds, tolerance or
+sample membership. The first fixed N=100 row is evaluated first; only if its
+source and historical replay checks pass may the runner proceed to the next
+preselected N. Resource ceiling, watchdog, output-integrity, or unknown failure
+also stops the run; no row is replaced or retried.
+
+## H3 cost request before any full-panel replay
 
 No H3 graph or Louvain replay ran. The minimum diagnostic that can separate a
 historical-builder/runtime mismatch from the PR #1126 sorted-insertion path is
@@ -220,15 +370,16 @@ These are array-size calculations, not measured peak RAM or elapsed time.
 Because T_PS-A remains unresolved and no matching 120-graph performance
 sample exists, a defensible completion-time range is not available.
 
-A bounded first-stage estimate could use the first fixed H3 ID at each of the
+A bounded first-stage pilot uses the prepared first fixed H3 ID at each of the
 ten N values: 10 graph rebuilds and 4,000 Louvain trials (both graph orders),
-including a maximum-N graph. A candidate ceiling for researcher review is
+including a maximum-N graph. Its candidate ceiling for researcher review is
 **8 wall-hours / 32 process-tree CPU-hours, four workers, sampled process RSS
 ≤4 GiB, and ≤1 GiB output**, stopping on the first integrity mismatch. These
 are proposed loss limits, not a measured completion bound or current
-authorization. Before this pilot, fix the trial-Q tolerance and resolve the
-executor insertion-order semantics; then record the exact ten graph IDs and
-all resource readings in a separate commitment. If it passes, the full 120
+authorization. The trial-Q tolerance and exact ten graph IDs are now fixed in
+the preparation packet; the tolerance still requires review before execution,
+and the sorted executor compatibility is intentionally measured by the pilot.
+If it passes, the full 120
 graph H3 run still needs its own approved budget based on the pilot; do not
 extrapolate the pilot as an upper bound.
 
@@ -237,13 +388,14 @@ extrapolate the pilot as an upper bound.
 1. Independently review the generated manifest, source-hash checks and exact
    historical graph extraction. The 4,900 source graph edge hashes remain
    pending; do not bulk-build them as a side effect of inventory generation.
-2. Resolve how the current G0 Louvain path will be compared with the historical
-   insertion order. Preserve the fixed source graph and seeds; do not change
-   the scientific graph rule or silently rewrite edge order. Freeze the
-   trial-Q tolerance before H3 replay.
-3. Obtain researcher approval for the bounded ten-ID H3 diagnostic budget.
-   Run only after approval. If it passes, submit a separate full-panel resource
-   request; no 120-panel replay ran here.
+2. Review and freeze the proposed `1e-10` absolute trial-Q tolerance (relative
+   tolerance zero), retaining the existing `1e-6` Qmax and exact first-max
+   index checks. The archived environment did not record SciPy, so exact
+   floating-point compatibility cannot be established before replay.
+3. Implement or independently review a watchdog-supervised H3 pilot launcher;
+   then the researcher may decide whether to approve the prepared packet and
+   candidate ceilings. No 10-graph replay ran here. If it passes, submit a
+   separate full-panel resource request; no 120-panel replay ran here.
 4. Resolve the gzip JSONL versus packed audit format and demonstrate the
    14-GiB output cap with a representative, preapproved synthetic measurement.
 5. Make the resource simulator match the actual serial-per-task/four-worker

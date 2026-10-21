@@ -32,6 +32,13 @@ STATES = ("wake", "NREM")  # exact serialized tokens in the PS-A job records
 WINDOW_SIZE = 1500
 MEAN_DEGREE = 16
 LOUVAIN_TRIALS = 200
+H3_TRIAL_Q_ATOL_PROPOSED = 1e-10
+H3_QMAX_ATOL = 1e-6
+H3_PILOT_WALL_SECONDS = 8 * 60 * 60
+H3_PILOT_CPU_SECONDS = 32 * 60 * 60
+H3_PILOT_MAX_WORKERS = 4
+H3_PILOT_RSS_BYTES = 4 * 1024**3
+H3_PILOT_OUTPUT_BYTES = 1 * 1024**3
 PSA_SEED_ROOT = 12345
 PANEL_SEED_ROOT = 20261009
 SUBSET_NAMESPACE = "NC_SUBSET_SELECTION_V1"
@@ -40,6 +47,8 @@ EXPECTED_SOURCE_CODE_HASHES = {
     "population_size_scaling.py": "0e7af206456348b9eb91d5771d7cd4d18fe312ea4508b71a5772d7a47370b625",
     "multirecording_primary.py": "2421e4e21655199378aad81242aa1d0a5a02ba94a39c5cb83e0942689faa55f5",
 }
+EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256 = (
+    "59ed4ea1537d3b104e8ff9903ce98c51f69bb58edc09854933886f637ad90866")
 EXPECTED_PREREG_SHA256 = "bf497d89e5695498451e49071007aec290d8a899b30b0fd31026f8f3faa55aaa"
 EXPECTED_RESULT_SHA256 = "955e78301b9a85a05dda1cb00e20ab2445f21a64799a7b077a74f43eba29b9f3"
 EXPECTED_SUMMARY_SHA256 = "eba10f8758894a91bd5c39fd8826bfc86d45cc0e05ea23cd05d20095a1c77dbe"
@@ -128,6 +137,8 @@ def select_h3_panel(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "source_artifact_sha256": choice["source_file_sha256"],
                     "selected_neuron_indices_sha256": choice["selected_neuron_indices_sha256"],
                     "source_frame_indices_sha256": choice["source_frame_indices_sha256"],
+                    "expected_input_identity_sha256":
+                        choice["expected_input_identity_sha256"],
                     "expected_node_order_sha256": choice["selected_neuron_indices_sha256"],
                     "expected_edge_count": choice["expected_edge_count"],
                     "historical_job_sha256": choice["historical_job_sha256"],
@@ -141,6 +152,28 @@ def select_h3_panel(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     if len(panel) != 120:
         raise IdentityEvidenceError(f"H3 panel has {len(panel)} records, expected 120")
     return panel
+
+
+def select_h3_first_by_n(panel: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Select the first frozen H3 panel identity per N, without consulting Q."""
+    ids = [row.get("graph_id") for row in panel]
+    if len(ids) != len(set(ids)) or len(panel) != 120:
+        raise IdentityEvidenceError("Expected the unique, complete frozen 120-row H3 panel")
+    selected = []
+    for n in TARGETS:
+        candidates = [row for row in panel if int(row["N"]) == n]
+        if len(candidates) != len(EXPECTED_RECORDINGS) * len(STATES):
+            raise IdentityEvidenceError(f"Incomplete H3 panel stratum N{n}")
+        first = min(candidates, key=lambda row: (
+            EXPECTED_RECORDINGS.index(str(row["recording_id"])),
+            STATES.index(str(row["state"])), int(row["subset_repeat"]),
+            int(row["window_id"]),
+        ))
+        selected.append({**first, "pilot_order": len(selected) + 1,
+                         "pilot_selection": "FIRST_FROZEN_PANEL_ID_PER_ASCENDING_N"})
+    if len({row["graph_id"] for row in selected}) != len(TARGETS):
+        raise IdentityEvidenceError("H3 calibration pilot identities are not unique")
+    return selected
 
 
 def _h5_frames(path: Path, expected_shape: str,
@@ -546,11 +579,14 @@ def build_inventory(*, repo_root: Path, phase2_root: Path,
         "source_data": source_records,
         "graph_builder": {
             "source_sha256": local_code_hashes["multirecording_primary.py"],
+            "historical_function_sha256": EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256,
             "signal": "spike_smoothed, S3/C1, 1,500-frame source windows",
             "correlation": "numpy.corrcoef by selected-neuron rows; nonfinite values to zero; diagonal zero; absolute value",
             "mst": "scipy.sparse.csgraph.minimum_spanning_tree on 1-abs(correlation), diagonal infinity",
             "edge_addition": "rank remaining abs-correlation values; threshold ties resolved by upper-triangle row-major source order",
-            "mst_tie_semantics": "inherited from SciPy 1.18.1 implementation and row/node order",
+            "mst_tie_semantics": (
+                "candidate reconstruction uses SciPy 1.18.1; historical PS-A SciPy version "
+                "was not recorded, so historical MST tie semantics are empirically unverified"),
             "edge_insertion": "sorted MST edges; strict-above-threshold edges in row-major order; boundary ties in row-major order",
             "historical_edge_lists": "NOT ARCHIVED; only source-code/data/subset reconstruction anchors exist",
         },
@@ -696,25 +732,52 @@ def reconstruct_graph_pair(abs_corr, historical_source: Path,
 
 def h3_runtime_manifest() -> dict[str, Any]:
     from importlib import metadata
-    expected = {"h5py": "3.16.0", "networkx": "3.6.1", "numpy": "2.5.3",
-                "python-louvain": "0.16", "scipy": "1.18.1"}
+    candidate_lock = {"h5py": "3.16.0", "networkx": "3.6.1", "numpy": "2.5.3",
+                      "python-louvain": "0.16", "scipy": "1.18.1"}
     actual = {}
-    for package in expected:
+    for package in candidate_lock:
         try:
             actual[package] = metadata.version(package)
         except metadata.PackageNotFoundError:
             actual[package] = None
-    checks = {"python": platform.python_version() == "3.14.0",
-              "macos_arm64": sys.platform == "darwin" and platform.machine() == "arm64",
-              "macos_patch": platform.mac_ver()[0] == "15.7.4",
-              "packages": actual == expected}
-    return {"expected": expected, "actual": actual, "checks": checks,
-            "matches_historical_target": all(checks.values())}
+    historical_record = {
+        "python": "3.14.0", "platform": "macOS 15.7.4 arm64",
+        "numpy": "2.5.3", "networkx": "3.6.1", "python-louvain": "0.16",
+    }
+    recorded_checks = {
+        "python": platform.python_version() == historical_record["python"],
+        "macos_arm64_and_patch": (
+            sys.platform == "darwin" and platform.machine() == "arm64" and
+            platform.mac_ver()[0] == "15.7.4"),
+        "numpy": actual["numpy"] == historical_record["numpy"],
+        "networkx": actual["networkx"] == historical_record["networkx"],
+        "python_louvain_distribution": actual["python-louvain"] ==
+        historical_record["python-louvain"],
+    }
+    candidate_lock_match = actual == candidate_lock
+    return {
+        "historical_environment_record": historical_record,
+        "historical_recorded_checks": recorded_checks,
+        "matches_historical_recorded_versions": all(recorded_checks.values()),
+        "historical_environment_gaps": [
+            "PS-A environment.txt does not record the SciPy version used by its MST builder",
+            "PS-A environment.txt does not record h5py or the HDF5 library version",
+        ],
+        "historical_environment_fully_pinned": False,
+        "candidate_replay_lock": candidate_lock,
+        "actual": actual,
+        "matches_candidate_replay_lock": candidate_lock_match,
+        "replay_environment_matches_recorded_versions_and_candidate_lock":
+            all(recorded_checks.values()) and candidate_lock_match,
+        "historical_float_environment_exactness": "UNPROVEN_SCIPY_VERSION_NOT_RECORDED",
+    }
 
 
 def replay_louvain_q(graph, seeds: Iterable[int], *, require_target: bool = True):
-    if require_target and not h3_runtime_manifest()["matches_historical_target"]:
-        raise IdentityEvidenceError("H3 runtime does not match the historical environment")
+    if (require_target and not h3_runtime_manifest()[
+            "replay_environment_matches_recorded_versions_and_candidate_lock"]):
+        raise IdentityEvidenceError(
+            "H3 runtime does not match recorded PS-A versions and candidate replay lock")
     from community import community_louvain
     seed_list = list(map(int, seeds))
     if len(seed_list) != LOUVAIN_TRIALS:
@@ -770,10 +833,106 @@ def load_h3_reference(panel_record: dict[str, Any], psa_root: Path) -> dict[str,
             "historical_job_sha256": panel_record["historical_job_sha256"]}
 
 
+def prepare_h3_pilot_manifest(manifest: dict[str, Any], manifest_path: Path,
+                              phase2_root: Path, psa_root: Path) -> dict[str, Any]:
+    """Freeze and verify the first preselected H3 identity at each N; no graph/Q replay."""
+    panel = manifest.get("h3_panel", {}).get("records")
+    if not isinstance(panel, list):
+        raise IdentityEvidenceError("Source manifest has no H3 panel records")
+    chosen = select_h3_first_by_n(panel)
+    source_by_recording = {row["recording_id"]: row
+                           for row in manifest.get("source_data", [])}
+    historical_builder = phase2_root / "multirecording_primary.py"
+    if historical_builder.is_symlink() or not historical_builder.is_file():
+        raise IdentityEvidenceError("Historical graph builder source is missing or symlinked")
+    if sha256_file(historical_builder) != EXPECTED_SOURCE_CODE_HASHES[
+            "multirecording_primary.py"]:
+        raise IdentityEvidenceError("Historical graph builder source hash differs")
+
+    source_hashes_checked: dict[str, str] = {}
+    records = []
+    for row in chosen:
+        recording = str(row["recording_id"])
+        source = source_by_recording.get(recording)
+        if source is None:
+            raise IdentityEvidenceError(f"Source file identity is missing for {recording}")
+        filename = str(source["filename"])
+        source_path = phase2_root / "data" / filename
+        if source_path.is_symlink() or not source_path.is_file():
+            raise IdentityEvidenceError(f"Source MAT is missing or symlinked: {filename}")
+        if filename not in source_hashes_checked:
+            source_hashes_checked[filename] = sha256_file(source_path)
+        source_sha = source_hashes_checked[filename]
+        if source_sha != source["sha256"] or source_sha != row["source_artifact_sha256"]:
+            raise IdentityEvidenceError(f"Source MAT hash mismatch for {recording}")
+        reference = load_h3_reference(row, psa_root)
+        q_values = reference["q_values"]
+        seeds = reference["louvain_seeds"]
+        if (len(q_values) != LOUVAIN_TRIALS or len(seeds) != LOUVAIN_TRIALS or
+                any(not math.isfinite(value) for value in q_values) or
+                max(q_values) != reference["historical_q_max"] or
+                reference["q_max_first_index"] != row["historical_q_max_first_index"]):
+            raise IdentityEvidenceError(
+                f"H3 reference completeness check failed: {row['graph_id']}")
+        records.append({
+            "pilot_order": int(row["pilot_order"]), "N": int(row["N"]),
+            "graph_id": row["graph_id"], "recording_id": recording,
+            "source_filename": filename, "source_mat_sha256": source_sha,
+            "state": row["state"], "window_id": int(row["window_id"]),
+            "subset_repeat": int(row["subset_repeat"]),
+            "selected_neuron_indices_sha256": row["selected_neuron_indices_sha256"],
+            "expected_node_order_sha256": row["expected_node_order_sha256"],
+            "source_frame_indices_sha256": row["source_frame_indices_sha256"],
+            "expected_edge_count": int(row["expected_edge_count"]),
+            "historical_job_sha256": reference["historical_job_sha256"],
+            "historical_louvain_seed_vector_sha256": hash_int64(seeds),
+            "historical_q_vector_sha256": hash_float64(q_values),
+            "historical_q_max": reference["historical_q_max"],
+            "historical_q_max_first_index": reference["q_max_first_index"],
+            "source_and_reference_status": "HASHES_AND_200_SEEDS_VERIFIED; GRAPH_NOT_REBUILT",
+        })
+    return {
+        "schema": "SRT_RIKEN_H3_IDENTITY_CALIBRATION_PILOT_V1",
+        "status": "PREPARED_NOT_APPROVED_NOT_EXECUTED",
+        "source_manifest_sha256": sha256_file(manifest_path),
+        "source_manifest_identity_tool_sha256": manifest.get("identity_tool_sha256"),
+        "pilot_preparation_tool_sha256": sha256_file(Path(__file__)),
+        "historical_graph_builder_sha256": EXPECTED_SOURCE_CODE_HASHES[
+            "multirecording_primary.py"],
+        "historical_graph_builder_function_sha256":
+            EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256,
+        "selection_rule": (
+            "First row in the Q-independent frozen 120-row H3 panel for each ascending N; "
+            "tie order is registered recording order then wake before NREM"),
+        "scientific_comparison": {
+            "historical_order_is_authoritative": True,
+            "trial_q_absolute_tolerance_proposed": H3_TRIAL_Q_ATOL_PROPOSED,
+            "trial_q_relative_tolerance": 0.0,
+            "qmax_absolute_tolerance": H3_QMAX_ATOL,
+            "first_max_index_must_match": True,
+            "tolerance_status": "PROPOSED_FOR_REVIEW_NOT_YET_RESEARCHER_APPROVED",
+        },
+        "candidate_limits_not_authorized": {
+            "wall_seconds": H3_PILOT_WALL_SECONDS,
+            "process_tree_cpu_seconds": H3_PILOT_CPU_SECONDS,
+            "max_compute_workers": H3_PILOT_MAX_WORKERS,
+            "sampled_aggregate_rss_bytes": H3_PILOT_RSS_BYTES,
+            "output_bytes": H3_PILOT_OUTPUT_BYTES,
+            "louvain_trials_total": len(records) * LOUVAIN_TRIALS * 2,
+        },
+        "stop_rule": (
+            "Stop immediately on source identity, graph construction, historical-order Q-vector, "
+            "Qmax, or first-max integrity failure; sorted-executor mismatch is a separate "
+            "compatibility diagnostic and does not invalidate a passing historical graph/Q"),
+        "source_hashes_checked": source_hashes_checked,
+        "pilot_count": len(records), "records": records,
+    }
+
+
 def run_h3_replay_for_graph(graph_pair: dict[str, Any], panel_record: dict[str, Any],
                             reference: dict[str, Any], *,
                             require_target_runtime: bool = True) -> dict[str, Any]:
-    """Replay saved seeds on historical-order and PR #1126 executor-order graphs."""
+    """Replay saved seeds on authoritative historical and diagnostic sorted orders."""
     if reference.get("graph_id") != panel_record.get("graph_id"):
         raise IdentityEvidenceError("H3 Q reference does not match the panel graph ID")
     historical_graph = graph_pair["historical_graph"]
@@ -791,16 +950,37 @@ def run_h3_replay_for_graph(graph_pair: dict[str, Any], panel_record: dict[str, 
         "graph_id": panel_record["graph_id"],
         "historical_edge_set_sha256": graph_pair["historical_edge_set_sha256"],
         "candidate_edge_set_sha256": graph_pair["candidate_edge_set_sha256"],
+        "historical_labeled_edge_set_sha256":
+            graph_pair["historical_labeled_edge_set_sha256"],
+        "candidate_labeled_edge_set_sha256":
+            graph_pair["candidate_labeled_edge_set_sha256"],
         "historical_node_order_sha256": graph_pair["node_order_sha256"],
         "candidate_node_order_sha256": graph_pair["node_order_sha256"],
+        "source_artifact_sha256": panel_record["source_artifact_sha256"],
+        "selected_neuron_indices_sha256":
+            panel_record["selected_neuron_indices_sha256"],
+        "expected_input_identity_sha256":
+            panel_record.get("expected_input_identity_sha256"),
+        "expected_source_frame_indices_sha256":
+            panel_record["source_frame_indices_sha256"],
+        "reconstructed_source_frame_indices_sha256":
+            graph_pair["source_frame_indices_sha256"],
+        "historical_builder_function_sha256":
+            graph_pair["historical_builder_function_sha256"],
         "historical_N": historical_graph.number_of_nodes(),
         "candidate_N": executor_graph.number_of_nodes(),
         "historical_E": historical_graph.number_of_edges(),
         "candidate_E": executor_graph.number_of_edges(),
         "historical_adjacency_iteration_sha256":
             graph_pair["historical_adjacency_iteration_sha256"],
+        "candidate_adjacency_iteration_sha256":
+            graph_pair["candidate_adjacency_iteration_sha256"],
         "executor_sorted_adjacency_iteration_sha256":
             graph_pair["executor_sorted_adjacency_iteration_sha256"],
+        "historical_candidate_adjacency_order_equal":
+            graph_pair["adjacency_iteration_order_equal"],
+        "historical_executor_adjacency_order_equal":
+            graph_pair["historical_executor_adjacency_order_equal"],
         "historical_degree_sequence_sha256": degree_hash(historical_graph),
         "candidate_degree_sequence_sha256": degree_hash(executor_graph),
         "louvain_seeds": seeds,
@@ -822,63 +1002,189 @@ def run_h3_replay_for_graph(graph_pair: dict[str, Any], panel_record: dict[str, 
 def validate_h3_replay(expected_panel: list[dict[str, Any]],
                        replay_rows: list[dict[str, Any]], *,
                        trial_q_atol: float | None) -> dict[str, Any]:
-    if trial_q_atol is None or not math.isfinite(trial_q_atol) or trial_q_atol < 0:
-        raise IdentityEvidenceError("Trial-Q tolerance is not frozen; keep H3 unresolved")
+    if (trial_q_atol is None or not math.isfinite(trial_q_atol) or
+            float(trial_q_atol) != H3_TRIAL_Q_ATOL_PROPOSED):
+        raise IdentityEvidenceError(
+            "Trial-Q tolerance must equal the proposed pre-run 1e-10 absolute threshold")
     expected = {row["graph_id"]: row for row in expected_panel}
     actual = {row.get("graph_id"): row for row in replay_rows}
-    if len(actual) != len(replay_rows) or set(actual) != set(expected):
+    if (len(expected) != len(expected_panel) or len(actual) != len(replay_rows) or
+            set(actual) != set(expected)):
         raise IdentityEvidenceError("H3 replay IDs are missing, duplicated, or unexpected")
-    edge_failures, qmax_failures, qvector_failures = [], [], []
+
+    source_failures: list[str] = []
+    graph_failures: list[str] = []
+    historical_qvector_failures: list[str] = []
+    historical_qmax_failures: list[str] = []
+    executor_qvector_failures: list[str] = []
+    executor_qmax_failures: list[str] = []
+    executor_input_failures: list[str] = []
+    graph_summaries, q_summaries, executor_summaries = [], [], []
+
+    def q_comparison(left: list, right: list) -> tuple[float, int]:
+        differences = [abs(float(a) - float(b))
+                       for a, b in zip(left, right, strict=True)]
+        return max(differences, default=0.0), sum(value > trial_q_atol
+                                                  for value in differences)
+
+    def finite_q_vector(values: Any) -> bool:
+        return (isinstance(values, list) and len(values) == LOUVAIN_TRIALS and
+                all(type(value) in (int, float) and math.isfinite(value)
+                    for value in values))
+
     for graph_id, ref in expected.items():
         row = actual[graph_id]
-        edge_equal = (
+        source_equal = (
+            row.get("source_artifact_sha256") == ref.get("source_artifact_sha256") and
+            row.get("selected_neuron_indices_sha256") ==
+            ref.get("selected_neuron_indices_sha256") and
+            row.get("expected_source_frame_indices_sha256") ==
+            ref.get("source_frame_indices_sha256") and
+            row.get("reconstructed_source_frame_indices_sha256") ==
+            ref.get("source_frame_indices_sha256") and
+            row.get("historical_builder_function_sha256") ==
+            EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256 and
+            row.get("expected_input_identity_sha256") ==
+            ref.get("expected_input_identity_sha256"))
+        if not source_equal:
+            source_failures.append(graph_id)
+        graph_equal = (
             row.get("historical_edge_set_sha256") == row.get("candidate_edge_set_sha256") and
             row.get("historical_edge_set_sha256") is not None and
+            row.get("historical_labeled_edge_set_sha256") ==
+            row.get("candidate_labeled_edge_set_sha256") and
             row.get("historical_node_order_sha256") == ref["expected_node_order_sha256"] and
             row.get("candidate_node_order_sha256") == ref["expected_node_order_sha256"] and
             int(row.get("historical_N", -1)) == ref["N"] and
             int(row.get("candidate_N", -1)) == ref["N"] and
             int(row.get("historical_E", -1)) == ref["expected_edge_count"] and
             int(row.get("candidate_E", -1)) == ref["expected_edge_count"] and
-            row.get("historical_adjacency_iteration_sha256") is not None and
             row.get("historical_adjacency_iteration_sha256") ==
-            row.get("executor_sorted_adjacency_iteration_sha256") and
+            row.get("candidate_adjacency_iteration_sha256") and
+            row.get("historical_candidate_adjacency_order_equal") is True and
             row.get("historical_degree_sequence_sha256") ==
             row.get("candidate_degree_sequence_sha256"))
-        if not edge_equal:
-            edge_failures.append(graph_id)
+        if not graph_equal:
+            graph_failures.append(graph_id)
+        graph_summaries.append({
+            "graph_id": graph_id,
+            "source_input_identity": "PASS" if source_equal else "NC-INVALID",
+            "historical_builder_consistency": "PASS" if graph_equal else "NC-INVALID",
+        })
+
         seeds = row.get("louvain_seeds")
-        q = row.get("q_values")
+        executor_q = row.get("q_values")
         old_q = row.get("historical_q_values")
-        builder_q = row.get("historical_builder_q_values")
-        if (not isinstance(seeds, list) or len(seeds) != LOUVAIN_TRIALS or
-                hash_int64(seeds) != ref["historical_louvain_seed_vector_sha256"] or
-                not isinstance(q, list) or len(q) != LOUVAIN_TRIALS or
-                not isinstance(old_q, list) or len(old_q) != LOUVAIN_TRIALS or
-                not isinstance(builder_q, list) or len(builder_q) != LOUVAIN_TRIALS):
-            qvector_failures.append(graph_id)
-            continue
-        if (any(not math.isfinite(float(x)) for x in [*q, *old_q, *builder_q]) or
-                hash_float64(old_q) != ref["historical_q_vector_sha256"] or
-                max(map(float, old_q)) != float(row.get("historical_q_max")) or
-                any(abs(float(a) - float(b)) > trial_q_atol
-                    for a, b in zip(q, old_q, strict=True)) or
-                any(abs(float(a) - float(b)) > trial_q_atol
-                    for a, b in zip(builder_q, old_q, strict=True))):
-            qvector_failures.append(graph_id)
-        if (abs(max(map(float, q)) - float(row.get("historical_q_max"))) > 1e-6 or
-                int(row.get("q_max_first_index", -1)) !=
-                int(ref["historical_q_max_first_index"]) or
-                abs(max(map(float, builder_q)) - float(row.get("historical_q_max"))) > 1e-6 or
-                int(row.get("historical_builder_q_max_first_index", -1)) !=
-                int(ref["historical_q_max_first_index"])):
-            qmax_failures.append(graph_id)
-    return {"panel_count": len(expected_panel),
-            "edge_identity_failures": edge_failures,
-            "historical_qmax_failures_over_1e-6": qmax_failures,
-            "ordered_trial_q_failures": qvector_failures,
-            "status": "PASS" if not (edge_failures or qmax_failures or qvector_failures)
-            else "NC-INVALID"}
+        historical_q = row.get("historical_builder_q_values")
+        try:
+            seeds_valid = (
+                isinstance(seeds, list) and len(seeds) == LOUVAIN_TRIALS and
+                hash_int64(seeds) == ref["historical_louvain_seed_vector_sha256"])
+        except (TypeError, ValueError, OverflowError):
+            seeds_valid = False
+        try:
+            archived_qmax = float(row.get("historical_q_max"))
+            reference_q_hash_matches = (
+                finite_q_vector(old_q) and hash_float64(old_q) ==
+                ref["historical_q_vector_sha256"])
+        except (TypeError, ValueError, OverflowError):
+            archived_qmax = math.nan
+            reference_q_hash_matches = False
+        reference_q_valid = (
+            reference_q_hash_matches and math.isfinite(archived_qmax) and
+            max(old_q) == archived_qmax and
+            row.get("historical_q_max_first_index") ==
+            ref["historical_q_max_first_index"])
+        historical_q_valid = (
+            finite_q_vector(historical_q))
+        if not seeds_valid or not reference_q_valid or not historical_q_valid:
+            historical_qvector_failures.append(graph_id)
+        else:
+            hist_max_delta, hist_exceed = q_comparison(historical_q, old_q)
+            if hist_exceed:
+                historical_qvector_failures.append(graph_id)
+            if (abs(max(map(float, historical_q)) - float(row.get("historical_q_max"))) >
+                    H3_QMAX_ATOL or
+                    row.get("historical_builder_q_max_first_index") !=
+                    ref["historical_q_max_first_index"]):
+                historical_qmax_failures.append(graph_id)
+            q_summaries.append({
+                "graph_id": graph_id,
+                "historical_order_max_abs_trial_q_delta": hist_max_delta,
+                "historical_order_trials_over_atol": hist_exceed,
+            })
+
+        executor_q_valid = (
+            seeds_valid and finite_q_vector(executor_q))
+        if not executor_q_valid:
+            executor_input_failures.append(graph_id)
+        elif reference_q_valid:
+            executor_max_delta, executor_exceed = q_comparison(executor_q, old_q)
+            if executor_exceed:
+                executor_qvector_failures.append(graph_id)
+            if (abs(max(map(float, executor_q)) - float(row.get("historical_q_max"))) >
+                    H3_QMAX_ATOL or
+                    row.get("q_max_first_index") != ref["historical_q_max_first_index"]):
+                executor_qmax_failures.append(graph_id)
+            executor_summaries.append({
+                "graph_id": graph_id,
+                "sorted_path_adjacency_order_equal":
+                    row.get("historical_executor_adjacency_order_equal") is True,
+                "sorted_path_max_abs_trial_q_delta": executor_max_delta,
+                "sorted_path_trials_over_atol": executor_exceed,
+            })
+        else:
+            executor_input_failures.append(graph_id)
+
+    source_failures = sorted(set(source_failures))
+    graph_failures = sorted(set(graph_failures))
+    historical_qvector_failures = sorted(set(historical_qvector_failures))
+    historical_qmax_failures = sorted(set(historical_qmax_failures))
+    executor_qvector_failures = sorted(set(executor_qvector_failures))
+    executor_qmax_failures = sorted(set(executor_qmax_failures))
+    executor_input_failures = sorted(set(executor_input_failures))
+    source_status = "PASS" if not (source_failures or graph_failures) else "NC-INVALID"
+    historical_status = "PASS" if not (
+        historical_qvector_failures or historical_qmax_failures) else "NC-INVALID"
+    executor_problem = bool(executor_qvector_failures or executor_qmax_failures)
+    executor_order_differs = any(
+        not row["sorted_path_adjacency_order_equal"] for row in executor_summaries)
+    executor_status = (
+        "INCOMPLETE_OR_INVALID" if executor_input_failures else
+        "INCOMPATIBLE" if executor_problem else
+        "RESULTS_MATCH_WITH_DIFFERENT_ADJACENCY_ORDER" if executor_order_differs else
+        "COMPATIBLE")
+    overall = (
+        "NC-INVALID_SOURCE_GRAPH_IDENTITY" if source_status != "PASS" else
+        "NC-INVALID_HISTORICAL_Q_REPLAY" if historical_status != "PASS" else
+        "SOURCE_GRAPH_AND_HISTORICAL_Q_PASS")
+    return {
+        "panel_count": len(expected_panel),
+        "trial_q_tolerance": {"absolute": H3_TRIAL_Q_ATOL_PROPOSED,
+                               "relative": 0.0, "qmax_absolute": H3_QMAX_ATOL,
+                               "first_max_index_exact": True},
+        "source_graph_identity": {
+            "status": source_status,
+            "source_input_failures": source_failures,
+            "historical_vs_faithful_builder_failures": graph_failures,
+            "per_graph": graph_summaries,
+        },
+        "historical_order_q_replay": {
+            "status": historical_status,
+            "trial_q_failures": historical_qvector_failures,
+            "qmax_or_first_index_failures": historical_qmax_failures,
+            "per_graph": q_summaries,
+        },
+        "executor_sorted_order_compatibility": {
+            "status": executor_status,
+            "incomplete_or_invalid_inputs": executor_input_failures,
+            "trial_q_failures": executor_qvector_failures,
+            "qmax_or_first_index_failures": executor_qmax_failures,
+            "per_graph": executor_summaries,
+            "does_not_invalidate_source_graph_or_historical_replay": True,
+        },
+        "status": overall,
+    }
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -888,22 +1194,51 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--psa-root", type=Path, required=True,
                         help="Private local PS-A runtime root containing jobs/ and seed ledger")
     parser.add_argument("--output", type=Path, required=True,
-                        help="Public-safe manifest output path")
+                        help="Public-safe manifest or pilot-inventory output path")
+    parser.add_argument("--prepare-h3-pilot", action="store_true",
+                        help="Verify and freeze the first fixed H3 identity at each N only")
+    parser.add_argument("--manifest", type=Path,
+                        help="Existing public-safe source-identity manifest for H3 preparation")
     args = parser.parse_args(argv)
-    manifest = build_inventory(repo_root=ROOT, phase2_root=args.phase2_root,
-                               psa_root=args.psa_root)
-    payload = canonical_json(manifest) + b"\n"
+    if args.prepare_h3_pilot:
+        if args.manifest is None:
+            parser.error("--prepare-h3-pilot requires --manifest")
+        if args.output.exists() or args.output.is_symlink():
+            parser.error("Pilot manifest output already exists; refusing to overwrite")
+        manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+        prepared = prepare_h3_pilot_manifest(
+            manifest, args.manifest, args.phase2_root, args.psa_root)
+        summary = {"status": prepared["status"],
+                   "pilot_count": prepared["pilot_count"],
+                   "louvain_trials_total": prepared["candidate_limits_not_authorized"][
+                       "louvain_trials_total"]}
+    else:
+        if args.manifest is not None:
+            parser.error("--manifest is only valid with --prepare-h3-pilot")
+        prepared = build_inventory(repo_root=ROOT, phase2_root=args.phase2_root,
+                                   psa_root=args.psa_root)
+        summary = {"status": prepared["status"],
+                   "source_graphs": prepared["g0_source_graph_count"],
+                   "h3_panel": prepared["h3_panel"]["count"]}
+    payload = canonical_json(prepared) + b"\n"
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_name(args.output.name + ".tmp")
+    if temporary.exists() or temporary.is_symlink():
+        parser.error("Output temporary path already exists; refusing to overwrite")
     with temporary.open("wb") as stream:
         stream.write(payload)
         stream.flush()
         os.fsync(stream.fileno())
-    os.replace(temporary, args.output)
-    print(json.dumps({"status": manifest["status"],
-                      "source_graphs": manifest["g0_source_graph_count"],
-                      "h3_panel": manifest["h3_panel"]["count"],
-                      "manifest_sha256": sha256_bytes(payload),
+    if args.prepare_h3_pilot:
+        try:
+            os.link(temporary, args.output)
+        except FileExistsError:
+            temporary.unlink(missing_ok=True)
+            parser.error("Pilot output appeared concurrently; refusing to overwrite")
+        temporary.unlink()
+    else:
+        os.replace(temporary, args.output)
+    print(json.dumps({**summary, "manifest_sha256": sha256_bytes(payload),
                       "bytes": len(payload)}, sort_keys=True))
     return 0
 
