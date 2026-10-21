@@ -16,6 +16,7 @@ from concurrent.futures import ThreadPoolExecutor
 from types import SimpleNamespace
 from unittest import mock
 
+import g0_external_storage as storage_module
 from g0_external_storage import (
     ExternalStoragePolicy, G0ExternalStore, G0StorageError, RecoveryRefused,
     VolumeInfo,
@@ -203,6 +204,29 @@ class StorageFixture(unittest.TestCase):
         count, _ = verify_hash_chain(self.ledger_dir / "storage-ledger.jsonl")
         self.assertEqual(count, 9)
         store.close()
+
+    def test_concurrent_directory_creation_race_reopens_with_no_follow(self):
+        parent_fd = os.open(self.external, os.O_RDONLY | os.O_DIRECTORY)
+        real_mkdir = os.mkdir
+
+        def competing_create(name, mode=0o777, *, dir_fd=None):
+            real_mkdir(name, mode, dir_fd=dir_fd)
+            raise FileExistsError(name)
+
+        try:
+            with mock.patch.object(storage_module.os, "mkdir",
+                                   side_effect=competing_create):
+                child_fd = storage_module._open_or_create_dir(
+                    parent_fd, "raced-directory", create=True,
+                    expected_dev=os.fstat(parent_fd).st_dev)
+            try:
+                self.assertTrue(Path(self.external, "raced-directory").is_dir())
+                self.assertEqual(os.fstat(child_fd).st_dev,
+                                 os.fstat(parent_fd).st_dev)
+            finally:
+                os.close(child_fd)
+        finally:
+            os.close(parent_fd)
 
     def test_hot_paths_do_not_rescan_100_1000_or_5000_task_histories(self):
         expected = write_synthetic_task_history(self.ledger_dir, 5000)

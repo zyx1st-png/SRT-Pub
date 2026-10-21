@@ -1,15 +1,19 @@
-"""Synthetic-only, one-null-task G0 execution path.
+"""Synthetic-only, bounded multi-task G0 execution path.
 
 This module exercises the registered 4E connected degree-preserving proposal
 kernel, 200 seeded python-louvain trials, complete hash-chained proposal audit,
-and G0ExternalStore/Watchdog integration on explicitly synthetic graphs. It is
-not a biological G0 launcher and rejects inputs outside the synthetic scope.
+and G0ExternalStore/Watchdog integration on explicitly synthetic graphs. A
+single activity freezes its task/seed inventory and schedules tasks serially;
+each Louvain pool is capped at four workers. It is not a biological G0
+launcher and rejects inputs outside the synthetic scope.
 """
 
 from __future__ import annotations
 
 from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
+from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures.process import BrokenProcessPool
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass
 import gzip
 import hashlib
@@ -23,6 +27,7 @@ import random
 import resource
 import sys
 import time
+import traceback
 import uuid
 import zlib
 
@@ -40,6 +45,10 @@ _HEX64 = frozenset("0123456789abcdef")
 _LOUVAIN_GRAPH = None
 _LOUVAIN_LABELS: tuple[str | int, ...] = ()
 _LOUVAIN_TEST_FAULT: str | None = None
+_SYNTHETIC_TEST_FAULTS = frozenset({
+    "scientific_failure", "unknown_failure", "worker_scientific_failure",
+    "worker_operational_failure", "worker_abrupt_exit",
+})
 
 
 class G0ScientificFailure(RuntimeError):
@@ -410,9 +419,27 @@ def _write_phase(path: Path, task_id: str, phase: str) -> None:
     os.replace(temporary, path)
 
 
+def _write_fd_all(fd: int, payload: bytes) -> None:
+    view = memoryview(payload)
+    while view:
+        written = os.write(fd, view)
+        if written <= 0:
+            raise OSError("short write to supervised audit pipe")
+        view = view[written:]
+
+
+def _close_fd(fd: int) -> None:
+    if fd >= 0:
+        try:
+            os.close(fd)
+        except OSError:
+            pass
+
+
 def _worker_entry(config_path: Path, expected_sha256: str,
-                  control_dir: Path, stderr_path: Path) -> int:
-    """Watchdog child entry. All worker output is framed JSON on stdout."""
+                  control_dir: Path, stderr_path: Path,
+                  audit_fd: int, result_fd: int) -> int:
+    """Watchdog child entry; control frames go to stdout, trace goes to audit_fd."""
     from nc0a_execution_engine import ProcessRoleRegistry
     from nc0a_watchdog import guard_watchdog_parent
 
@@ -463,11 +490,12 @@ def _worker_entry(config_path: Path, expected_sha256: str,
             raise ValueError("Synthetic-only unknown failure injection")
 
         attempts = PROPOSALS_PER_EDGE * graph.m
+        os.fstat(audit_fd)
+        os.fstat(result_fd)
         _emit("HEADER", {"format": "G0_WORKER_HEADER_V1", "task_id": task_id,
                          "task_identity_sha256": config["task_identity_sha256"],
                          "graph_sha256": config["graph_sha256"],
                          "source_artifact_sha256": config["source_artifact_sha256"],
-                         "graph_seed": graph_seed, "louvain_seeds": louvain_seeds,
                          "proposal_attempts": attempts})
         sys.stdout.flush()
         _write_phase(control_dir / "active_task.json", task_id, "case")
@@ -478,12 +506,15 @@ def _worker_entry(config_path: Path, expected_sha256: str,
         for _ in range(attempts):
             accepted, event = graph.propose_audited(rng, audit_local=True)
             record = _hash_audit_record(audit_sequence, previous, event)
-            sys.stdout.buffer.write(b"AUDIT\t" + canonical_json(record) + b"\n")
+            _write_fd_all(audit_fd, canonical_json(record) + b"\n")
             previous = str(record["record_sha256"])
             audit_sequence += 1
             if accepted and graph.attempts != graph.accepted + graph.rejected_overlap + graph.rejected_duplicate + graph.rejected_disconnect:
                 raise G0ScientificFailure("G0_PROPOSAL_ACCOUNTING_INVALID",
                                           "Attempt counters do not reconcile")
+        _close_fd(audit_fd)
+        audit_fd = -1
+        os.fstat(result_fd)
         sys.stdout.flush()
         graph.assert_invariants()
         if graph.attempts != attempts or graph.attempts != (
@@ -549,6 +580,7 @@ def _worker_entry(config_path: Path, expected_sha256: str,
                     roles.sync_pool(pool)
         finally:
             roles.clear_pool()
+        os.fstat(result_fd)
         after_children = resource.getrusage(resource.RUSAGE_CHILDREN)
         louvain_cpu_seconds = ((after_children.ru_utime + after_children.ru_stime) -
                                (before_children.ru_utime + before_children.ru_stime))
@@ -598,30 +630,50 @@ def _worker_entry(config_path: Path, expected_sha256: str,
                         "child_cpu_seconds": max(0.0, louvain_cpu_seconds)},
         }
         _emit("GRAPH", {"graph_sha256": final_graph_hash,
-                         "edges": [list(edge) for edge in final_edges]})
-        _emit("RESULT", result)
+                         "edge_count": len(final_edges),
+                         "node_count": graph.n})
+        result_bundle = canonical_json({
+            "format": "G0_TASK_OUTPUT_BUNDLE_V1",
+            "result": result,
+            "final_edges": [list(edge) for edge in final_edges],
+        })
+        _write_fd_all(result_fd, result_bundle)
+        _close_fd(result_fd)
+        result_fd = -1
+        _emit("RESULT_REF", {"sha256": sha256_bytes(result_bundle),
+                              "size_bytes": len(result_bundle),
+                              "audit_tip_sha256": previous})
         sys.stdout.flush()
         (control_dir / "active_task.json").unlink(missing_ok=True)
         return 0
     except G0ScientificFailure as exc:
+        _close_fd(audit_fd)
+        _close_fd(result_fd)
         _emit("FAIL", {"failure_class": "SCIENTIFIC", "reason_code": exc.reason_code,
                         "reason": str(exc)[:500]})
         sys.stdout.flush()
         return 65
     except G0OperationalFailure as exc:
+        _close_fd(audit_fd)
+        _close_fd(result_fd)
         _emit("FAIL", {"failure_class": "OPERATIONAL", "reason_code": exc.reason_code,
                         "reason": str(exc)[:500]})
         sys.stdout.flush()
         return 75
     except G0UnknownFailure as exc:
+        _close_fd(audit_fd)
+        _close_fd(result_fd)
         _emit("FAIL", {"failure_class": "UNKNOWN", "reason_code": exc.reason_code,
                         "reason": str(exc)[:500]})
         sys.stdout.flush()
         return 70
     except BaseException as exc:
+        _close_fd(audit_fd)
+        _close_fd(result_fd)
         _emit("FAIL", {"failure_class": "UNKNOWN",
                         "reason_code": "G0_UNCLASSIFIED_EXCEPTION",
-                        "reason": f"{type(exc).__name__}: {exc}"[:500]})
+                        "reason": (f"{type(exc).__name__}: {exc}; "
+                                   f"{traceback.format_exc()[-300:]}")[:500]})
         sys.stdout.flush()
         return 70
 
@@ -645,14 +697,14 @@ def _write_once(path: Path, payload: bytes) -> str:
 def _parse_worker_stdout(path: Path, *, expected_attempts: int,
                          expected_identity_sha256: str,
                          expected_graph_sha256: str,
-                         expected_degree_sequence: tuple[int, ...]
+                         expected_degree_sequence: tuple[int, ...],
+                         expected_seed_manifest: dict[str, object],
+                         result_bundle: bytes
                          ) -> tuple[dict, str, tuple[tuple[int, int], ...]]:
     header = None
     final_graph = None
-    result = None
+    result_ref = None
     failure = None
-    previous = "0" * 64
-    count = 0
     with path.open("rb") as handle:
         for line_number, raw in enumerate(handle, start=1):
             if not raw.endswith(b"\n"):
@@ -668,40 +720,26 @@ def _parse_worker_stdout(path: Path, *, expected_attempts: int,
                 raise G0ScientificFailure("G0_WORKER_STDOUT_JSON_INVALID",
                                           f"Worker stdout JSON invalid at line {line_number}") from exc
             if tag == b"HEADER":
-                if header is not None or count or result is not None:
+                if header is not None or result_ref is not None:
                     raise G0ScientificFailure("G0_WORKER_HEADER_DUPLICATE",
                                               "Worker header is duplicated or out of order")
                 header = value
-            elif tag == b"AUDIT":
-                if header is None or result is not None or failure is not None:
-                    raise G0ScientificFailure("G0_AUDIT_RECORD_ORDER_INVALID",
-                                              "Proposal audit record occurred outside worker phase")
-                digest = value.pop("record_sha256", None)
-                body = {"sequence": value.get("sequence"),
-                        "previous_sha256": value.get("previous_sha256"),
-                        "event": value.get("event")}
-                if (set(value) != {"sequence", "previous_sha256", "event"} or
-                        body["sequence"] != count or body["previous_sha256"] != previous or
-                        not _is_sha256(digest) or sha256_bytes(canonical_json(body)) != digest or
-                        not isinstance(body["event"], dict) or
-                        body["event"].get("attempt") != count + 1):
-                    raise G0ScientificFailure("G0_PROPOSAL_AUDIT_HASH_INVALID",
-                                              f"Proposal audit chain invalid at record {count}")
-                previous = digest
-                count += 1
             elif tag == b"RESULT":
-                if (header is None or final_graph is None or result is not None or
-                        failure is not None):
-                    raise G0ScientificFailure("G0_WORKER_RESULT_DUPLICATE",
-                                              "Worker result is duplicated or precedes the graph frame")
-                result = value
+                raise G0ScientificFailure("G0_WORKER_RESULT_INLINE_FORBIDDEN",
+                                          "Large scientific results must use the bounded result pipe")
             elif tag == b"GRAPH":
-                if header is None or final_graph is not None or result is not None or failure is not None:
+                if header is None or final_graph is not None or result_ref is not None or failure is not None:
                     raise G0ScientificFailure("G0_WORKER_GRAPH_FRAME_INVALID",
                                               "Worker graph frame is duplicated or out of order")
                 final_graph = value
+            elif tag == b"RESULT_REF":
+                if (header is None or final_graph is None or result_ref is not None or
+                        failure is not None):
+                    raise G0ScientificFailure("G0_WORKER_RESULT_REFERENCE_INVALID",
+                                              "Worker result reference is duplicated or out of order")
+                result_ref = value
             elif tag == b"FAIL":
-                if failure is not None or result is not None:
+                if failure is not None or result_ref is not None:
                     raise G0ScientificFailure("G0_WORKER_FAILURE_FRAME_INVALID",
                                               "Worker failure frame is duplicated or follows a result")
                 failure = value
@@ -710,17 +748,43 @@ def _parse_worker_stdout(path: Path, *, expected_attempts: int,
                                           f"Unrecognized worker output frame at line {line_number}")
     if failure is not None:
         raise _failure_from_worker(failure)
-    if (header is None or final_graph is None or result is None or count != expected_attempts or
+    if (header is None or final_graph is None or result_ref is None or
+            not isinstance(result_bundle, bytes) or
+            result_ref.get("size_bytes") != len(result_bundle) or
+            result_ref.get("sha256") != sha256_bytes(result_bundle) or
+            len(result_bundle) > _MAX_RESULT_BUNDLE_BYTES or
             header.get("proposal_attempts") != expected_attempts or
             header.get("task_identity_sha256") != expected_identity_sha256 or
-            header.get("graph_sha256") != expected_graph_sha256 or
-            result.get("task_identity_sha256") != expected_identity_sha256 or
-            result.get("input_graph_sha256") != expected_graph_sha256 or
-            result.get("swap", {}).get("proposal_audit_records") != expected_attempts or
-            result.get("swap", {}).get("proposal_audit_tip_sha256") != previous):
+            header.get("graph_sha256") != expected_graph_sha256):
         raise G0ScientificFailure("G0_WORKER_RESULT_INCOMPLETE",
                                   "Worker result, identity or proposal audit does not reconcile")
-    final_edges = tuple(tuple(edge) for edge in final_graph.get("edges", []))
+    try:
+        bundle = json.loads(result_bundle)
+    except (ValueError, UnicodeDecodeError) as exc:
+        raise G0ScientificFailure("G0_WORKER_RESULT_BUNDLE_INVALID",
+                                  "Worker result bundle is not valid JSON") from exc
+    if (canonical_json(bundle) != result_bundle or
+            not isinstance(bundle, dict) or
+            set(bundle) != {"format", "result", "final_edges"} or
+            bundle.get("format") != "G0_TASK_OUTPUT_BUNDLE_V1" or
+            not isinstance(bundle.get("result"), dict) or
+            not isinstance(bundle.get("final_edges"), list)):
+        raise G0ScientificFailure("G0_WORKER_RESULT_BUNDLE_INVALID",
+                                  "Worker result bundle is noncanonical or incomplete")
+    result = bundle["result"]
+    final_edges = tuple(tuple(edge) for edge in bundle["final_edges"])
+    if (final_graph.get("edge_count") != len(final_edges) or
+            final_graph.get("node_count") != len(expected_degree_sequence) or
+            final_graph.get("graph_sha256") != result.get("null_graph_sha256") or
+            result_ref.get("audit_tip_sha256") !=
+            result.get("swap", {}).get("proposal_audit_tip_sha256") or
+            result.get("task_identity_sha256") != expected_identity_sha256 or
+            result.get("input_graph_sha256") != expected_graph_sha256 or
+            result.get("seed_manifest") != expected_seed_manifest or
+            result.get("swap", {}).get("proposal_audit_records") != expected_attempts or
+            not _is_sha256(result.get("swap", {}).get("proposal_audit_tip_sha256"))):
+        raise G0ScientificFailure("G0_WORKER_RESULT_BUNDLE_IDENTITY_INVALID",
+                                  "Result bundle identities do not match the control frames")
     if final_edges != tuple(sorted(final_edges)):
         raise G0ScientificFailure("G0_WORKER_GRAPH_FRAME_ORDER_INVALID",
                                   "Final graph edge list is not canonical")
@@ -735,7 +799,7 @@ def _parse_worker_stdout(path: Path, *, expected_attempts: int,
         raise G0ScientificFailure("G0_WORKER_GRAPH_FRAME_HASH_INVALID",
                                   "Worker graph frame does not match the validated task result")
     _validate_result(result, expected_attempts)
-    return result, previous, final_edges
+    return result, result["swap"]["proposal_audit_tip_sha256"], final_edges
 
 
 def _failure_from_worker(value: dict) -> BaseException:
@@ -784,17 +848,170 @@ def _validate_result(result: dict, expected_attempts: int) -> None:
                                   "Saved Q vector or first-maximum definition is inconsistent")
 
 
-def _compressed_audit_chunks(stdout_path: Path):
+_MAX_AUDIT_RECORD_BYTES = 64 * 1024
+_MAX_RESULT_BUNDLE_BYTES = 32 * 1024 * 1024
+_AUDIT_STREAM_FORMAT = "G0_GZIP_CANONICAL_JSONL_AUDIT_V1"
+
+
+def _read_bounded_result_pipe(read_fd: int, stream_metadata: dict,
+                              close_reader=None) -> bytes:
+    """Collect only the bounded final result/checkpoint bundle, never proposal logs."""
+    payload = bytearray()
+    try:
+        while True:
+            block = os.read(read_fd, 64 * 1024)
+            if not block:
+                break
+            payload.extend(block)
+            if len(payload) > _MAX_RESULT_BUNDLE_BYTES:
+                raise G0UnknownFailure(
+                    "G0_RESULT_BUNDLE_TOO_LARGE",
+                    "Final scientific result bundle exceeds the 32 MiB internal bound")
+        stream_metadata["size_bytes"] = len(payload)
+        stream_metadata["sha256"] = sha256_bytes(payload)
+        return bytes(payload)
+    finally:
+        if close_reader is None:
+            os.close(read_fd)
+        else:
+            close_reader()
+
+
+def _compressed_audit_pipe_chunks(read_fd: int, *, expected_records: int,
+                                  stream_metadata: dict,
+                                  close_reader=None):
+    """Validate and gzip a bounded audit-pipe stream as the adapter writes it.
+
+    Complete records are checked for canonical encoding, sequence, previous
+    digest, record digest and proposal ordinal. A short clean EOF is sealed as
+    an explicitly incomplete evidence artifact; a malformed record raises and
+    leaves the storage layer fail-closed.
+    """
     compressor = zlib.compressobj(level=6, wbits=16 + zlib.MAX_WBITS)
-    with stdout_path.open("rb") as handle:
-        for raw in handle:
-            if raw.startswith(b"AUDIT\t"):
-                block = compressor.compress(raw[len(b"AUDIT\t"):])
-                if block:
-                    yield block
-    tail = compressor.flush()
-    if tail:
-        yield tail
+    pending = bytearray()
+    previous = "0" * 64
+    count = 0
+    trailing_partial_bytes = 0
+    try:
+        while True:
+            block = os.read(read_fd, 64 * 1024)
+            if not block:
+                break
+            pending.extend(block)
+            while True:
+                newline = pending.find(b"\n")
+                if newline < 0:
+                    if len(pending) > _MAX_AUDIT_RECORD_BYTES:
+                        raise G0ScientificFailure(
+                            "G0_AUDIT_RECORD_TOO_LARGE",
+                            "Audit pipe record exceeds the frozen record-size guard")
+                    break
+                raw = bytes(pending[:newline + 1])
+                del pending[:newline + 1]
+                payload = raw[:-1]
+                try:
+                    record = json.loads(payload)
+                    if (len(payload) > _MAX_AUDIT_RECORD_BYTES or
+                            canonical_json(record) != payload):
+                        raise ValueError("record is oversized or not canonical JSON")
+                    digest = record.pop("record_sha256")
+                    body = {"sequence": record.get("sequence"),
+                            "previous_sha256": record.get("previous_sha256"),
+                            "event": record.get("event")}
+                    if (set(record) != {"sequence", "previous_sha256", "event"} or
+                            body["sequence"] != count or
+                            body["previous_sha256"] != previous or
+                            not _is_sha256(digest) or
+                            sha256_bytes(canonical_json(body)) != digest or
+                            not isinstance(body["event"], dict) or
+                            body["event"].get("attempt") != count + 1):
+                        raise ValueError("audit hash chain or proposal ordinal mismatch")
+                except (ValueError, KeyError, TypeError, UnicodeDecodeError) as exc:
+                    raise G0ScientificFailure(
+                        "G0_PROPOSAL_AUDIT_HASH_INVALID",
+                        f"Streamed proposal audit is invalid at record {count}: {exc}") from exc
+                if count >= expected_records:
+                    raise G0ScientificFailure("G0_PROPOSAL_COUNT_INVALID",
+                                              "Audit stream contains more than the registered proposals")
+                previous = digest
+                count += 1
+                compressed = compressor.compress(raw)
+                if compressed:
+                    yield compressed
+        if pending:
+            if count >= expected_records:
+                raise G0ScientificFailure("G0_AUDIT_TRAILING_BYTES",
+                                          "Unexpected bytes followed the final registered audit record")
+            trailing_partial_bytes = len(pending)
+            compressed = compressor.compress(bytes(pending))
+            if compressed:
+                yield compressed
+        tail = compressor.flush()
+        if tail:
+            yield tail
+        stream_metadata.update({
+            "stream_format": _AUDIT_STREAM_FORMAT,
+            "record_count": count,
+            "chain_tip_sha256": previous,
+            "complete": count == expected_records and trailing_partial_bytes == 0,
+            "trailing_partial_bytes": trailing_partial_bytes,
+        })
+    finally:
+        if close_reader is None:
+            os.close(read_fd)
+        else:
+            close_reader()
+
+
+def _synthetic_task_plan(graph: NormalizedGraph, identity: G0TaskIdentity,
+                         environment: dict) -> dict[str, object]:
+    if (not graph.source_id.startswith("SYNTHETIC_") or
+            not identity.recording_id.startswith("SYNTHETIC_")):
+        raise ValueError("run_synthetic_g0_task accepts only visibly synthetic identities")
+    if graph.source_artifact_sha256 is None:
+        raise ValueError("Synthetic task input requires a source-artifact SHA-256 identity")
+    identity.validate(graph)
+    graph_seed = g0_graph_seed(identity)
+    louvain_seeds = [g0_louvain_seed(identity, index)
+                     for index in range(LOUVAIN_TRIALS)]
+    seed_manifest = {"graph_seed": graph_seed, "louvain_seeds": louvain_seeds}
+    seed_fingerprint = sha256_bytes(canonical_json(seed_manifest))
+    protocol_identity = {
+        "protocol": "NC_G0_CONNECTED_DOUBLE_EDGE_SWAP_V1",
+        "attempts": PROPOSALS_PER_EDGE * graph.m,
+        "louvain_trials": LOUVAIN_TRIALS,
+        "task_coordinates": identity.as_dict(),
+        "graph_sha256": graph.graph_sha256,
+        "seed_fingerprint": seed_fingerprint,
+        "environment": environment,
+    }
+    task_identity_sha256 = sha256_bytes(canonical_json(protocol_identity))
+    task_id = f"g0synth-{task_identity_sha256[:48]}"
+    return {"graph": graph, "identity": identity, "environment": environment,
+            "graph_seed": graph_seed, "louvain_seeds": louvain_seeds,
+            "seed_manifest": seed_manifest,
+            "seed_fingerprint": seed_fingerprint,
+            "task_identity_sha256": task_identity_sha256, "task_id": task_id}
+
+
+def _activity_outcome_summary(outcome: dict[str, object]) -> dict[str, object]:
+    """Keep activity reports bounded; task payloads already live in external storage."""
+    summary_keys = ("status", "task_id", "attempt_id", "seed_fingerprint",
+                    "task_identity_sha256", "reason_code", "reason")
+    summary = {key: outcome[key] for key in summary_keys if key in outcome}
+    for record_key in ("result_record", "audit_record", "stderr_record"):
+        record = outcome.get(record_key)
+        if isinstance(record, dict):
+            ref_keys = ("task_id", "attempt_id", "result_path", "relative_path",
+                        "artifact_kind", "size_bytes", "sha256")
+            summary[record_key] = {key: record[key] for key in ref_keys if key in record}
+    watchdog = outcome.get("watchdog")
+    if isinstance(watchdog, dict):
+        watchdog_keys = ("status", "returncode", "invocation_id",
+                         "control_ledger_tip_sha256", "usage")
+        summary["watchdog"] = {key: watchdog[key] for key in watchdog_keys
+                                if key in watchdog}
+    return summary
 
 
 def _audit_replay_verifier(graph: NormalizedGraph, seed: int,
@@ -845,43 +1062,175 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
     provenance authentication; this module has no biological loader or
     full-battery launcher.
     """
-    if not graph.source_id.startswith("SYNTHETIC_") or not identity.recording_id.startswith("SYNTHETIC_"):
-        raise ValueError("run_synthetic_g0_task accepts only visibly synthetic identities")
-    if graph.source_artifact_sha256 is None:
-        raise ValueError("Synthetic task input requires a source-artifact SHA-256 identity")
     if not 1 <= workers <= 4 or limits.max_workers != workers:
         raise ValueError("Worker count must be 1..4 and match the Watchdog limit")
-    if _test_fault not in (None, "scientific_failure", "unknown_failure",
-                           "worker_scientific_failure", "worker_operational_failure",
-                           "worker_abrupt_exit"):
+    if _test_fault not in (None, *_SYNTHETIC_TEST_FAULTS):
         raise ValueError("Unrecognized synthetic-only fault injection")
-    identity.validate(graph)
     environment = runtime_manifest(require_target=require_target_runtime)
-    graph_seed = g0_graph_seed(identity)
-    louvain_seeds = [g0_louvain_seed(identity, index) for index in range(LOUVAIN_TRIALS)]
-    seed_manifest = {"graph_seed": graph_seed, "louvain_seeds": louvain_seeds}
-    seed_fingerprint = sha256_bytes(canonical_json(seed_manifest))
-    protocol_identity = {"protocol": "NC_G0_CONNECTED_DOUBLE_EDGE_SWAP_V1",
-                         "attempts": PROPOSALS_PER_EDGE * graph.m,
-                         "louvain_trials": LOUVAIN_TRIALS,
-                         "task_coordinates": identity.as_dict(),
-                         "graph_sha256": graph.graph_sha256,
-                         "seed_fingerprint": seed_fingerprint,
-                         "environment": environment}
-    task_identity_sha256 = sha256_bytes(canonical_json(protocol_identity))
-    task_id = f"g0synth-{task_identity_sha256[:48]}"
+    plan = _synthetic_task_plan(graph, identity, environment)
+    task_id = str(plan["task_id"])
+    seed_fingerprint = str(plan["seed_fingerprint"])
     expected = {task_id: seed_fingerprint}
-    recovery = store.verify_recovery(expected)
-    if task_id in recovery.completed_task_ids:
+    store.prepare_activity(activity_id=store.run_uuid, expected_tasks=expected)
+    return _execute_synthetic_g0_plan(
+        store=store, plan=plan, attempt_id=attempt_id,
+        invocation_id=invocation_id, limits=limits, workers=workers,
+        test_fault=_test_fault, expected_tasks=expected, final_report=True)
+
+
+def run_synthetic_g0_activity(*, store: G0ExternalStore,
+                               tasks: (Sequence[tuple[NormalizedGraph, G0TaskIdentity]] |
+                                       Callable[[], Iterable[tuple[NormalizedGraph, G0TaskIdentity]]]),
+                               limits: WatchdogLimits, workers: int = 4,
+                               activity_id: str | None = None,
+                               require_target_runtime: bool = False,
+                               _test_faults: dict[str, str] | None = None) -> dict[str, object]:
+    with store.activity_execution():
+        return _run_synthetic_g0_activity_locked(
+            store=store, tasks=tasks, limits=limits, workers=workers,
+            activity_id=activity_id,
+            require_target_runtime=require_target_runtime,
+            _test_faults=_test_faults)
+
+
+def _run_synthetic_g0_activity_locked(*, store: G0ExternalStore,
+                                      tasks: (Sequence[tuple[NormalizedGraph, G0TaskIdentity]] |
+                                              Callable[[], Iterable[tuple[NormalizedGraph, G0TaskIdentity]]]),
+                                      limits: WatchdogLimits, workers: int = 4,
+                                      activity_id: str | None = None,
+                                      require_target_runtime: bool = False,
+                                      _test_faults: dict[str, str] | None = None
+                                      ) -> dict[str, object]:
+    """Run a frozen synthetic task inventory sequentially with per-task watchdogs.
+
+    Serial scheduling is intentional: at no time can concurrent task pools
+    multiply the per-task worker cap. Each invocation has its own Watchdog
+    limits; cumulative supervised CPU and worker-wall usage is reconstructed
+    from the activity's append-only control ledger. A failed task stops the
+    activity; resume revalidates the full frozen inventory, then uses indexed
+    per-task state.
+    """
+    if not callable(tasks) and not isinstance(tasks, Sequence):
+        raise TypeError("tasks must be a replayable Sequence or a zero-argument iterator factory")
+    if not 1 <= workers <= 4 or limits.max_workers != workers:
+        raise ValueError("Worker count must be 1..4 and match the Watchdog limit")
+    environment = runtime_manifest(require_target=require_target_runtime)
+    task_seeds: dict[str, str] = {}
+    task_order: list[str] = []
+    first_pass = tasks() if callable(tasks) else iter(tasks)
+    for graph, identity in first_pass:
+        plan = _synthetic_task_plan(graph, identity, environment)
+        task_id = str(plan["task_id"])
+        if task_id in task_seeds:
+            raise ValueError("Activity contains duplicate task identities")
+        task_seeds[task_id] = str(plan["seed_fingerprint"])
+        task_order.append(task_id)
+    task_count = len(task_order)
+    if not task_count:
+        raise ValueError("A G0 activity requires at least one task")
+    test_faults = dict(_test_faults or {})
+    if (set(test_faults) - set(task_seeds) or
+            any(fault not in _SYNTHETIC_TEST_FAULTS for fault in test_faults.values())):
+        raise ValueError("Activity fault injection must use known synthetic tasks and faults")
+    frozen_activity_id = activity_id or store.run_uuid
+    activity_started = time.perf_counter()
+    store.prepare_activity(activity_id=frozen_activity_id,
+                           expected_tasks=task_seeds)
+    outcomes = []
+    second_pass = tasks() if callable(tasks) else iter(tasks)
+    processed = 0
+    for graph, identity in second_pass:
+        # Keep the all-task manifest small. In particular, do not retain the
+        # 200-seed array and full plan object for every task while executing a
+        # large activity; reconstruct only the current task's plan.
+        plan = _synthetic_task_plan(graph, identity, environment)
+        task_id = str(plan["task_id"])
+        seed_fingerprint = str(plan["seed_fingerprint"])
+        if (processed >= task_count or task_id != task_order[processed] or
+                task_seeds.get(task_id) != seed_fingerprint):
+            raise RecoveryRefused("G0_ACTIVITY_PLAN_CHANGED",
+                                  "Task identity or seed changed after inventory freeze")
+        processed += 1
+        state = store.task_recovery_state(task_id=task_id,
+                                          seed_fingerprint=seed_fingerprint)
+        if state == "completed":
+            # prepare_activity() already fully verified the ledger and every
+            # referenced file for this process. Reuse the verified completion
+            # index instead of loading the potentially large result payload.
+            completion = store._task_state(task_id)["completions"][0]
+            outcomes.append({"status": "reused_verified_completion",
+                             "task_id": task_id,
+                             "seed_fingerprint": seed_fingerprint,
+                             "result_record": {
+                                 "task_id": task_id,
+                                 "attempt_id": completion["attempt_id"],
+                                 "result_path": completion["result_path"],
+                                 "size_bytes": completion["size_bytes"],
+                                 "sha256": completion["sha256"]}})
+            continue
+        if state == "attempts_exhausted":
+            raise RecoveryRefused("G0_TASK_ATTEMPT_LIMIT",
+                                  f"Task recovery quota is exhausted: {task_id}")
+        if state not in ("not_started", "retryable"):
+            raise RecoveryRefused("G0_TASK_RECOVERY_NOT_AUTHORIZED",
+                                  f"Prior task state is not eligible: {task_id}")
+        outcome = _execute_synthetic_g0_plan(
+            store=store, plan=plan, attempt_id=str(uuid.uuid4()),
+            invocation_id=store.next_watchdog_invocation_id(),
+            limits=limits, workers=workers, test_fault=test_faults.get(task_id),
+            expected_tasks=task_seeds, final_report=False)
+        outcomes.append(_activity_outcome_summary(outcome))
+        if outcome.get("status") != "completed":
+            return {"status": "stopped_after_task_failure",
+                    "activity_id": frozen_activity_id, "outcomes": outcomes,
+                    "recovery_state": store.task_recovery_state(
+                        task_id=task_id, seed_fingerprint=seed_fingerprint),
+                    "resource_accounting": {
+                        **store.activity_resource_accounting(frozen_activity_id),
+                        "process_session_wall_seconds": time.perf_counter() - activity_started}}
+    if processed != task_count:
+        raise RecoveryRefused("G0_ACTIVITY_PLAN_CHANGED",
+                              "Task source ended before the frozen activity inventory")
+    report = store._incremental_recovery_report(task_seeds)
+    return {"status": "completed", "activity_id": frozen_activity_id,
+            "outcomes": outcomes, "recovery_report": report,
+            "task_count": task_count, "global_compute_worker_cap": workers,
+            "schedule": "serial_tasks",
+            "resource_accounting": {
+                **store.activity_resource_accounting(frozen_activity_id),
+                "process_session_wall_seconds": time.perf_counter() - activity_started}}
+
+
+def _execute_synthetic_g0_plan(*, store: G0ExternalStore, plan: dict[str, object],
+                               attempt_id: str, invocation_id: int,
+                               limits: WatchdogLimits, workers: int,
+                               test_fault: str | None,
+                               expected_tasks: dict[str, str],
+                               final_report: bool) -> dict[str, object]:
+    graph = plan["graph"]
+    identity = plan["identity"]
+    environment = plan["environment"]
+    graph_seed = plan["graph_seed"]
+    louvain_seeds = plan["louvain_seeds"]
+    seed_manifest = plan["seed_manifest"]
+    seed_fingerprint = str(plan["seed_fingerprint"])
+    task_identity_sha256 = str(plan["task_identity_sha256"])
+    task_id = str(plan["task_id"])
+    if not isinstance(graph, NormalizedGraph) or not isinstance(identity, G0TaskIdentity):
+        raise TypeError("Invalid planned G0 task")
+    store.assert_activity_task(task_id=task_id, seed_fingerprint=seed_fingerprint)
+    state = store.task_recovery_state(task_id=task_id,
+                                      seed_fingerprint=seed_fingerprint)
+    if state == "completed":
         payload = store.read_completed_task_result(task_id=task_id,
                                                    seed_fingerprint=seed_fingerprint)
         return {"status": "reused_verified_completion", "task_id": task_id,
                 "seed_fingerprint": seed_fingerprint,
                 "result_payload": payload,
                 "task_identity_sha256": task_identity_sha256}
-    if task_id in recovery.exhausted_task_ids:
+    if state == "attempts_exhausted":
         raise RecoveryRefused("G0_TASK_ATTEMPT_LIMIT", "Synthetic task recovery quota is exhausted")
-    if task_id not in recovery.retryable_task_ids and task_id not in recovery.not_started_task_ids:
+    if state not in ("retryable", "not_started"):
         raise RecoveryRefused("G0_TASK_RECOVERY_NOT_AUTHORIZED",
                               "Prior attempt is not eligible under the verified task ledger")
 
@@ -895,7 +1244,8 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
                   "source_artifact_sha256": graph.source_artifact_sha256,
                   "scope": SYNTHETIC_SCOPE}, chunks=source_payload)
     store.begin_task(task_id=task_id, attempt_id=attempt_uuid,
-                     seed_fingerprint=seed_fingerprint)
+                     seed_fingerprint=seed_fingerprint,
+                     invocation_id=invocation_id)
     kernel_graph = ConnectedDegreeSwap(graph.n, graph.edges)
     config = {"scope": SYNTHETIC_SCOPE, "task_id": task_id,
               "task_identity_sha256": task_identity_sha256,
@@ -906,21 +1256,128 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
               "kernel_graph_sha256": kernel_graph.fingerprint(),
               "source_artifact_sha256": source_record["sha256"],
               "graph_seed": graph_seed, "louvain_seeds": louvain_seeds,
-              "workers": workers, "test_fault": _test_fault}
+              "workers": workers, "test_fault": test_fault}
     config_bytes = canonical_json(config)
     config_path = store.control_dir / f"g0-worker-config.{invocation_id}.json"
     config_sha256 = _write_once(config_path, config_bytes)
     stderr_path = store.control_dir / f"runner.g0.{invocation_id}.stderr.log"
     _write_once(stderr_path, b"")
     worker_script = Path(__file__).resolve()
+    expected_proposals = PROPOSALS_PER_EDGE * graph.m
+    audit_identity = {
+        "task_id": task_id, "attempt_id": attempt_uuid,
+        "graph_sha256": graph.graph_sha256,
+        "seed_fingerprint": seed_fingerprint,
+        "stream_format": _AUDIT_STREAM_FORMAT,
+        "expected_record_count": expected_proposals,
+        "invocation_id": invocation_id,
+    }
+    stream_metadata: dict[str, object] = {}
+    audit_read_fd, audit_write_fd = os.pipe()
+    audit_reader_state = {"open": True}
+
+    def close_audit_reader() -> None:
+        if audit_reader_state["open"]:
+            _close_fd(audit_read_fd)
+            audit_reader_state["open"] = False
+
+    audit_chunks = _compressed_audit_pipe_chunks(
+        audit_read_fd, expected_records=expected_proposals,
+        stream_metadata=stream_metadata, close_reader=close_audit_reader)
+    audit_writer = ThreadPoolExecutor(
+        max_workers=2, thread_name_prefix="g0-artifact-stream-reader")
+    audit_future = audit_writer.submit(
+        store.write_immutable_artifact,
+        relative_path=f"audit/{task_id}/{attempt_uuid}/proposals.jsonl.gz",
+        artifact_kind="audit", identity=audit_identity,
+        chunks=audit_chunks, stream_metadata=stream_metadata)
+    result_read_fd, result_write_fd = os.pipe()
+    result_stream_metadata: dict[str, object] = {}
+    result_reader_state = {"open": True}
+
+    def close_result_reader() -> None:
+        if result_reader_state["open"]:
+            _close_fd(result_read_fd)
+            result_reader_state["open"] = False
+
+    result_future = audit_writer.submit(
+        _read_bounded_result_pipe, result_read_fd, result_stream_metadata,
+        close_result_reader)
     command = [sys.executable, str(worker_script), "--worker",
                str(config_path), config_sha256, str(store.control_dir),
-               str(stderr_path)]
+               str(stderr_path), str(audit_write_fd), str(result_write_fd)]
     before_cpu = time.process_time()
     began = time.perf_counter()
+    watchdog: dict | None = None
+    watchdog_error: BaseException | None = None
+
+    def audit_writer_guard() -> str | None:
+        if audit_future.done():
+            try:
+                audit_future.result()
+            except BaseException as exc:
+                close_audit_reader()
+                code = getattr(exc, "code", "G0_EXTERNAL_IO_FAILURE")
+                if code not in {
+                        "G0_EXTERNAL_MOUNT_UNAVAILABLE",
+                        "G0_EXTERNAL_VOLUME_IDENTITY_MISMATCH",
+                        "G0_EXTERNAL_SPACE_LIMIT", "G0_INTERNAL_SPACE_LIMIT",
+                        "G0_EXTERNAL_IO_FAILURE", "G0_EXTERNAL_POSTWRITE_IDENTITY_FAILURE"}:
+                    code = "G0_EXTERNAL_IO_FAILURE"
+                return code
+        if result_future.done():
+            try:
+                result_future.result()
+            except BaseException:
+                close_result_reader()
+                return "G0_RESULT_PIPE_FAILED"
+        return None
+
     try:
-        watchdog = store.supervise_worker(command, limits=limits,
-                                          invocation_id=invocation_id)
+        try:
+            watchdog = store.supervise_worker(
+                command, limits=limits, invocation_id=invocation_id,
+                task_id=task_id, attempt_id=attempt_uuid,
+                activity_id=str(store.activity_id),
+                inherited_fds=(audit_write_fd, result_write_fd),
+                additional_stop_guard=audit_writer_guard)
+        except BaseException as exc:
+            watchdog_error = exc
+        finally:
+            _close_fd(audit_write_fd)
+            _close_fd(result_write_fd)
+            audit_write_fd = -1
+            result_write_fd = -1
+        try:
+            audit_record = audit_future.result()
+        except BaseException as exc:
+            state = store._task_state(task_id)
+            if state["starts"] and not state["completions"] and not state["failures"]:
+                store.record_task_failure(
+                    task_id=task_id, attempt_id=attempt_uuid,
+                    # Loss or uncertain persistence of the proposal trace is
+                    # not automatically retryable: the missing evidence cannot
+                    # be repaired by re-running the same stochastic task.
+                    failure_class="UNKNOWN",
+                    reason_code="G0_AUDIT_STREAM_WRITE_FAILED",
+                    reason=f"External audit stream failed: {type(exc).__name__}: {exc}")
+            raise
+        finally:
+            audit_writer.shutdown(wait=True)
+        try:
+            result_bundle = result_future.result()
+        except BaseException as exc:
+            state = store._task_state(task_id)
+            if state["starts"] and not state["completions"] and not state["failures"]:
+                store.record_task_failure(
+                    task_id=task_id, attempt_id=attempt_uuid,
+                    failure_class="UNKNOWN",
+                    reason_code="G0_RESULT_BUNDLE_READ_FAILED",
+                    reason=f"Result pipe failed: {type(exc).__name__}: {exc}")
+            raise
+        if watchdog_error is not None:
+            raise watchdog_error
+        assert watchdog is not None
         stdout_path = store.control_dir / f"runner.g0.{invocation_id}.stdout.log"
         stdout_hash = sha256_bytes(stdout_path.read_bytes())
         if watchdog.get("usage", {}).get("runner_stdout_sha256") != stdout_hash:
@@ -936,11 +1393,26 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
             chunks=stderr_path.read_bytes())
         if watchdog.get("status") == "stopped":
             reason = str(watchdog.get("reason", "unspecified watchdog stop"))
-            store.record_task_failure(task_id=task_id, attempt_id=attempt_uuid,
-                                      failure_class="OPERATIONAL",
-                                      reason_code="G0_WATCHDOG_STOP",
-                                      reason=reason)
-            return {"status": "stopped", "task_id": task_id,
+            operational_reasons = {
+                "WALL_LIMIT", "CPU_LIMIT_WITH_TERMINATION_MARGIN",
+                "AGGREGATE_RSS_LIMIT", "RUN_DISK_ALLOCATION_LIMIT",
+                "FREE_DISK_RESERVE_BREACH", "CASE_WALL_LIMIT", "ORACLE_WALL_LIMIT",
+                "HOST_MEMORY_PRESSURE_LIMIT", "SWAP_GROWTH_LIMIT",
+                "SWAP_FREE_RESERVE_BREACH", "BOOT_VOLUME_FREE_DISK_RESERVE_BREACH",
+                "VM_VOLUME_FREE_DISK_RESERVE_BREACH", "SLEEP_ASSERTION_LOST",
+                "AC_POWER_LOST", "THERMAL_WARNING", "G0_EXTERNAL_MOUNT_UNAVAILABLE",
+                "G0_EXTERNAL_VOLUME_IDENTITY_MISMATCH", "G0_EXTERNAL_SPACE_LIMIT",
+                "G0_INTERNAL_SPACE_LIMIT", "G0_EXTERNAL_IO_FAILURE",
+                "G0_EXTERNAL_POSTWRITE_IDENTITY_FAILURE",
+            }
+            retryable_stop = reason in operational_reasons
+            store.record_task_failure(
+                task_id=task_id, attempt_id=attempt_uuid,
+                failure_class="OPERATIONAL" if retryable_stop else "UNKNOWN",
+                reason_code=reason if retryable_stop else "G0_WATCHDOG_STOP_UNCLASSIFIED",
+                reason=reason)
+            return {"status": "stopped" if retryable_stop else "unknown_failure",
+                    "task_id": task_id,
                     "attempt_id": attempt_uuid, "seed_fingerprint": seed_fingerprint,
                     "watchdog": watchdog, "stderr_record": stderr_record}
         if (watchdog.get("status") == "failed" and
@@ -962,7 +1434,9 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
                 stdout_path, expected_attempts=4 * graph.m,
                 expected_identity_sha256=task_identity_sha256,
                 expected_graph_sha256=graph.graph_sha256,
-                expected_degree_sequence=graph.degree_sequence)
+                expected_degree_sequence=graph.degree_sequence,
+                expected_seed_manifest=seed_manifest,
+                result_bundle=result_bundle)
         except G0OperationalFailure as exc:
             store.record_task_failure(task_id=task_id, attempt_id=attempt_uuid,
                                       failure_class="OPERATIONAL",
@@ -985,6 +1459,7 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
                                       reason_code=exc.reason_code, reason=str(exc))
             return {"status": "unknown_failure", "task_id": task_id,
                     "attempt_id": attempt_uuid, "reason_code": exc.reason_code,
+                    "reason": str(exc),
                     "seed_fingerprint": seed_fingerprint,
                     "watchdog": watchdog, "stderr_record": stderr_record}
         except RuntimeError as exc:
@@ -1004,16 +1479,25 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
                     "attempt_id": attempt_uuid, "watchdog": watchdog,
                     "stderr_record": stderr_record}
 
-        audit_path = f"audit/{task_id}/{attempt_uuid}/proposals.jsonl.gz"
-        audit_record = store.write_immutable_artifact(
-            relative_path=audit_path, artifact_kind="audit",
-            identity={"task_id": task_id, "attempt_id": attempt_uuid,
-                      "graph_sha256": graph.graph_sha256,
-                      "seed_fingerprint": seed_fingerprint,
-                      "record_count": result["swap"]["proposal_audit_records"],
-                      "chain_tip_sha256": audit_tip,
-                      "encoding": "gzip-framed-canonical-jsonl"},
-            chunks=_compressed_audit_chunks(stdout_path))
+        expected_stream_metadata = {
+            "stream_format": _AUDIT_STREAM_FORMAT,
+            "record_count": 4 * graph.m,
+            "chain_tip_sha256": audit_tip,
+            "complete": True,
+            "trailing_partial_bytes": 0,
+        }
+        if stream_metadata != expected_stream_metadata:
+            store.record_task_failure(
+                task_id=task_id, attempt_id=attempt_uuid,
+                failure_class="SCIENTIFIC",
+                reason_code="G0_PROPOSAL_AUDIT_STREAM_INCOMPLETE",
+                reason="External proposal trace differs from the worker's complete count/tip")
+            return {"status": "scientific_failure", "task_id": task_id,
+                    "attempt_id": attempt_uuid,
+                    "reason_code": "G0_PROPOSAL_AUDIT_STREAM_INCOMPLETE",
+                    "seed_fingerprint": seed_fingerprint,
+                    "watchdog": watchdog, "stderr_record": stderr_record,
+                    "audit_record": audit_record}
         final_graph_payload = {"format": "G0_NULL_GRAPH_V1",
                                "nodes": [_node_record(node) for node in graph.nodes],
                                "edges": [list(edge) for edge in final_edges]}
@@ -1028,6 +1512,7 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
         result["environment"] = environment
         result["runtime_accounting"] = {
             "watchdog": watchdog.get("usage"),
+            "watchdog_invocation_id": invocation_id,
             "executor_parent_wall_seconds": time.perf_counter() - began,
             "executor_parent_process_cpu_seconds": max(0.0, time.process_time() - before_cpu),
             "watchdog_control_ledger_tip_sha256": watchdog.get("control_ledger_tip_sha256"),
@@ -1043,14 +1528,17 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
         completion = store.complete_task_result(
             task_id=task_id, attempt_id=attempt_uuid,
             seed_fingerprint=seed_fingerprint, payload=result_bytes)
-        report = store.verify_recovery(expected)
-        if task_id not in report.completed_task_ids:
+        if store.task_recovery_state(task_id=task_id,
+                                     seed_fingerprint=seed_fingerprint) != "completed":
             raise G0ScientificFailure("G0_TASK_COMPLETION_NOT_VERIFIED",
-                                      "Storage recovery verification did not accept completed task")
+                                      "Incremental task index does not accept committed completion")
+        report = (store._incremental_recovery_report(expected_tasks)
+                  if final_report else None)
         return {"status": "completed", "task_id": task_id,
                 "attempt_id": attempt_uuid, "task_identity_sha256": task_identity_sha256,
                 "result": result, "result_record": completion,
-                "recovery_report": report, "watchdog": watchdog}
+                "recovery_report": report, "watchdog": watchdog,
+                "audit_record": audit_record}
     except (G0StorageError, RecoveryRefused):
         raise
     except BaseException as exc:
@@ -1068,31 +1556,11 @@ def run_synthetic_g0_task(*, store: G0ExternalStore, graph: NormalizedGraph,
         raise
 
 
-def _final_edges_from_worker(result: dict, stdout_path: Path,
-                             graph: NormalizedGraph) -> tuple[tuple[int, int], ...]:
-    """Replay the compact proposal trace to derive a verified final edge list."""
-    audit_compressed = b"".join(_compressed_audit_chunks(stdout_path))
-    replay = _audit_replay_verifier(graph, int(result["seed_manifest"]["graph_seed"]),
-                                    audit_compressed, str(result["null_graph_sha256"]))
-    if (replay["proposal_count"] != result["swap"]["attempts"] or
-            replay["accepted"] != result["swap"]["accepted"] or
-            replay["audit_tip_sha256"] != result["swap"]["proposal_audit_tip_sha256"]):
-        raise G0ScientificFailure("G0_AUDIT_REPLAY_SUMMARY_MISMATCH",
-                                  "Proposal audit replay differs from worker summary")
-    # Audit replay above verifies the final fingerprint. Re-run to return its
-    # edge list; this is intentionally bounded to the small engineering path.
-    state = ConnectedDegreeSwap(graph.n, graph.edges)
-    rng = random.Random(int(result["seed_manifest"]["graph_seed"]))
-    for _ in range(4 * graph.m):
-        state.propose(rng, audit_local=True)
-    state.assert_invariants()
-    return tuple(sorted(state.edges))
-
-
 def main(argv: list[str] | None = None) -> int:
-    if len(sys.argv if argv is None else argv) == 6 and (sys.argv if argv is None else argv)[1] == "--worker":
+    if len(sys.argv if argv is None else argv) == 8 and (sys.argv if argv is None else argv)[1] == "--worker":
         args = sys.argv if argv is None else argv
-        return _worker_entry(Path(args[2]), args[3], Path(args[4]), Path(args[5]))
+        return _worker_entry(Path(args[2]), args[3], Path(args[4]), Path(args[5]),
+                             int(args[6]), int(args[7]))
     print("This module exposes only the synthetic task API; no biological G0 CLI exists.",
           file=sys.stderr)
     return 2

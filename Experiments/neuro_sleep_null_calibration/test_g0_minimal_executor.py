@@ -8,11 +8,13 @@ import platform
 import sys
 import unittest
 import uuid
+from unittest import mock
 
 from g0_external_storage import G0ExternalStore, RecoveryRefused
 from g0_minimal_executor import (
     G0TaskIdentity, _audit_replay_verifier, canonical_json, g0_graph_seed,
-    g0_louvain_seed, normalize_graph_input, run_synthetic_g0_task,
+    g0_louvain_seed, normalize_graph_input, run_synthetic_g0_activity,
+    run_synthetic_g0_task,
     runtime_manifest,
 )
 from nc0a_watchdog import WatchdogLimits
@@ -24,10 +26,10 @@ ENGINEERING_ROOT = 20261021
 SYNTHETIC_RUN_ID = "bbbbbbbb-cccc-4ddd-8eee-ffffffffffff"
 
 
-def fixture_graph():
-    fixture = make_synthetic_graph(100, "factor-mst", root=ENGINEERING_ROOT)
+def fixture_graph(root=ENGINEERING_ROOT, suffix=""):
+    fixture = make_synthetic_graph(100, "factor-mst", root=root)
     return normalize_graph_input(
-        "SYNTHETIC_FACTOR_MST_N100_ENGINEERING_20261021",
+        f"SYNTHETIC_FACTOR_MST_N100_ENGINEERING_20261021{suffix}",
         tuple(range(fixture.n)), fixture.edges,
         source_artifact_sha256=fixture.fingerprint())
 
@@ -171,12 +173,266 @@ class G0MinimalExecutorTests(StorageFixture):
                          result["swap"]["proposal_audit_tip_sha256"])
         self.assertEqual(hashlib.sha256(compressed).hexdigest(),
                          result["artifacts"]["proposal_audit"]["sha256"])
+        self.assertEqual(result["artifacts"]["proposal_audit"]["stream_metadata"][
+            "stream_format"], "G0_GZIP_CANONICAL_JSONL_AUDIT_V1")
+        stdout_path = store.control_dir / "runner.g0.1.stdout.log"
+        stdout = stdout_path.read_bytes()
+        self.assertNotIn(b"AUDIT\t", stdout)
+        self.assertNotIn(b"final_edges", stdout)
+        self.assertNotIn(b"best_partition", stdout)
+        self.assertIn(b"RESULT_REF\t", stdout)
+        self.assertLess(len(stdout), 1024 * 1024)
+        self.assertFalse(any(self.internal.rglob("proposals.jsonl.gz")))
 
         reused = self.execute(store, attempt=2, invocation=2)
         self.assertEqual(reused["status"], "reused_verified_completion")
         saved = json.loads(reused["result_payload"])
         self.assertEqual(saved["task_identity_sha256"], result["task_identity_sha256"])
         self.assertEqual(store._watchdog_invocation_ids, {1})
+        store.close()
+
+    def test_multi_task_activity_freezes_inventory_streams_audits_and_reuses(self):
+        graphs = [fixture_graph(), fixture_graph(ENGINEERING_ROOT + 1, "_SECOND")]
+        identities = [
+            G0TaskIdentity("SYNTHETIC_ACTIVITY_20261021", 100, 0,
+                           "SYNTHETIC", index, 0)
+            for index in range(2)
+        ]
+        tasks = list(zip(graphs, identities, strict=True))
+        factory_calls = []
+
+        def task_source():
+            factory_calls.append("called")
+            return iter(tasks)
+
+        store = self.open_store_for("11111111-2222-4333-8444-555555555555")
+        original_verify = store.verify_recovery
+        with mock.patch.object(store, "verify_recovery", wraps=original_verify) as verify:
+            first = run_synthetic_g0_activity(
+                store=store, tasks=task_source, limits=watchdog_limits(), workers=4)
+            self.assertEqual(verify.call_count, 1,
+                             "full ledger/file verification must occur once at activity start")
+            self.assertEqual(first["status"], "completed", first)
+            self.assertEqual(first["task_count"], 2)
+            self.assertEqual(first["schedule"], "serial_tasks")
+            self.assertEqual(first["global_compute_worker_cap"], 4)
+            self.assertEqual(first["recovery_report"].completed_task_ids,
+                             tuple(sorted(first_outcome["task_id"]
+                                          for first_outcome in first["outcomes"])))
+            self.assertEqual(first["resource_accounting"]["peak_compute_workers"], 4)
+            self.assertEqual(first["resource_accounting"]["watchdog_invocation_count"], 2)
+            self.assertTrue(first["resource_accounting"]["resource_accounting_complete"])
+            self.assertTrue(all("result" not in item and "result_payload" not in item
+                                for item in first["outcomes"]))
+            self.assertTrue(all("sha256" in item["result_record"]
+                                for item in first["outcomes"]))
+            self.assertEqual(store._active_task_ids, set())
+            # The frozen manifest contains the whole inventory and its seed
+            # fingerprint map, not just the currently running task.
+            self.assertEqual(len(store.activity_task_seeds), 2)
+
+            second = run_synthetic_g0_activity(
+                store=store, tasks=task_source, limits=watchdog_limits(), workers=4)
+            self.assertEqual(verify.call_count, 1,
+                             "normal task reuse must use the verified incremental index")
+            self.assertEqual([item["status"] for item in second["outcomes"]],
+                             ["reused_verified_completion"] * 2)
+            self.assertTrue(all("result_payload" not in item and "result" not in item
+                                for item in second["outcomes"]))
+            self.assertTrue(all("sha256" in item["result_record"]
+                                for item in second["outcomes"]))
+            self.assertEqual(second["recovery_report"].completed_task_ids,
+                             first["recovery_report"].completed_task_ids)
+            self.assertEqual(second["resource_accounting"]["watchdog_invocation_count"], 2)
+            self.assertEqual(second["resource_accounting"]["accounted_invocation_count"], 2)
+            self.assertEqual(second["resource_accounting"]["summed_watchdog_cpu_seconds"],
+                             first["resource_accounting"]["summed_watchdog_cpu_seconds"])
+            self.assertEqual(len(factory_calls), 4,
+                             "replayable task factories are streamed twice per activity call")
+        with self.assertRaisesRegex(RecoveryRefused, "inventory are immutable"):
+            run_synthetic_g0_activity(
+                store=store, tasks=tasks[:1], limits=watchdog_limits(), workers=4)
+        with self.assertRaisesRegex(RecoveryRefused, "inventory are immutable"):
+            run_synthetic_g0_activity(
+                store=store, tasks=list(reversed(tasks)),
+                limits=watchdog_limits(), workers=4)
+        store.close()
+        resumed = self.open_store_for("11111111-2222-4333-8444-555555555555")
+        with mock.patch.object(resumed, "verify_recovery",
+                               wraps=resumed.verify_recovery) as full_verify:
+            restored = run_synthetic_g0_activity(
+                store=resumed, tasks=tasks, limits=watchdog_limits(), workers=4)
+            self.assertEqual(full_verify.call_count, 1,
+                             "new process must fully verify ledger and archived audit streams")
+            self.assertEqual([item["status"] for item in restored["outcomes"]],
+                             ["reused_verified_completion"] * 2)
+        resumed.close()
+
+    def test_active_task_guard_prevents_a_second_concurrent_task(self):
+        graph_a = fixture_graph()
+        graph_b = fixture_graph(ENGINEERING_ROOT + 2, "_THIRD")
+        identity_a = G0TaskIdentity("SYNTHETIC_CONCURRENCY", 100, 0,
+                                    "SYNTHETIC", 0, 0)
+        identity_b = G0TaskIdentity("SYNTHETIC_CONCURRENCY", 100, 0,
+                                    "SYNTHETIC", 1, 0)
+        from g0_minimal_executor import _synthetic_task_plan
+        environment = runtime_manifest(require_target=False)
+        plans = [_synthetic_task_plan(graph_a, identity_a, environment),
+                 _synthetic_task_plan(graph_b, identity_b, environment)]
+        inventory = {str(plan["task_id"]): str(plan["seed_fingerprint"])
+                     for plan in plans}
+        store = self.open_store_for("22222222-3333-4444-8555-666666666666")
+        store.prepare_activity(activity_id=store.run_uuid, expected_tasks=inventory)
+        first = plans[0]
+        attempt = str(uuid.UUID(int=901))
+        store.begin_task(task_id=str(first["task_id"]), attempt_id=attempt,
+                         seed_fingerprint=str(first["seed_fingerprint"]),
+                         invocation_id=1)
+        with self.assertRaisesRegex(RecoveryRefused, "one active task"):
+            store.begin_task(task_id=str(plans[1]["task_id"]),
+                             attempt_id=str(uuid.UUID(int=902)),
+                             seed_fingerprint=str(plans[1]["seed_fingerprint"]),
+                             invocation_id=2)
+        store.record_task_failure(task_id=str(first["task_id"]), attempt_id=attempt,
+                                  failure_class="UNKNOWN",
+                                  reason_code="G0_TEST_INTERRUPTION",
+                                  reason="Guard-only test cleanup")
+        store.close()
+
+    def test_activity_recovery_reuses_prior_success_and_retries_only_failed_task(self):
+        graphs = [fixture_graph(), fixture_graph(ENGINEERING_ROOT + 3, "_RECOVERY")]
+        tasks = [
+            (graphs[0], G0TaskIdentity("SYNTHETIC_ACTIVITY_RECOVERY", 100, 0,
+                                       "SYNTHETIC", 0, 0)),
+            (graphs[1], G0TaskIdentity("SYNTHETIC_ACTIVITY_RECOVERY", 100, 0,
+                                       "SYNTHETIC", 1, 0)),
+        ]
+        run_id = "44444444-5555-4666-8777-888888888888"
+        from g0_minimal_executor import _synthetic_task_plan
+        operational_task_id = _synthetic_task_plan(
+            graphs[1], tasks[1][1], runtime_manifest(require_target=False))["task_id"]
+        store = self.open_store_for(run_id)
+        first = run_synthetic_g0_activity(
+            store=store, tasks=tasks, limits=watchdog_limits(), workers=4,
+            _test_faults={
+                # The second task fails after its complete proposal trace, with
+                # a typed operational worker error eligible for one recovery.
+                operational_task_id: "worker_operational_failure"
+            })
+        self.assertEqual(first["status"], "stopped_after_task_failure", first)
+        self.assertEqual(first["resource_accounting"]["watchdog_invocation_count"], 2)
+        self.assertEqual(first["resource_accounting"]["accounted_invocation_count"], 2)
+        self.assertEqual([item["status"] for item in first["outcomes"]],
+                         ["completed", "operational_failure"])
+        failed_task = first["outcomes"][1]["task_id"]
+        self.assertEqual(first["recovery_state"], "retryable")
+        self.assertEqual(len(store._task_state(failed_task)["starts"]), 1)
+        store.close()
+
+        resumed = self.open_store_for(run_id)
+        second = run_synthetic_g0_activity(
+            store=resumed, tasks=tasks, limits=watchdog_limits(), workers=4)
+        self.assertEqual(second["status"], "completed", second)
+        self.assertEqual(second["resource_accounting"]["watchdog_invocation_count"], 3)
+        self.assertEqual(second["resource_accounting"]["accounted_invocation_count"], 3)
+        self.assertEqual([item["status"] for item in second["outcomes"]],
+                         ["reused_verified_completion", "completed"])
+        self.assertTrue(all("result_payload" not in item and "result" not in item
+                            for item in second["outcomes"]))
+        self.assertTrue(all("sha256" in item["result_record"]
+                            for item in second["outcomes"]))
+        self.assertEqual(len(resumed._task_state(failed_task)["starts"]), 2)
+        self.assertEqual(resumed._task_state(failed_task)["starts"][0]["seed_fingerprint"],
+                         resumed._task_state(failed_task)["starts"][1]["seed_fingerprint"])
+        watchdog_usage = [record["finished"]["result"]["usage"]
+                          for record in resumed._watchdog_invocations.values()]
+        self.assertAlmostEqual(
+            second["resource_accounting"]["summed_watchdog_cpu_seconds"],
+            sum(item["cpu_seconds"] for item in watchdog_usage))
+        resumed.close()
+
+    def test_activity_scheduler_lock_rejects_concurrent_entry_before_writes(self):
+        graph = fixture_graph()
+        tasks = [(graph, fixture_identity(graph))]
+        store = self.open_store_for("55555555-6666-4777-8888-999999999999")
+        with store.activity_execution():
+            with self.assertRaisesRegex(RecoveryRefused, "Another scheduler"):
+                run_synthetic_g0_activity(
+                    store=store, tasks=tasks, limits=watchdog_limits(), workers=4)
+        self.assertFalse(store._has_prior_work)
+        store.close()
+
+    def test_replayable_task_source_drift_is_rejected_before_scientific_work(self):
+        graphs = [fixture_graph(), fixture_graph(ENGINEERING_ROOT + 4, "_DRIFT")]
+        tasks = [
+            (graphs[0], G0TaskIdentity("SYNTHETIC_SOURCE_DRIFT", 100, 0,
+                                       "SYNTHETIC", 0, 0)),
+            (graphs[1], G0TaskIdentity("SYNTHETIC_SOURCE_DRIFT", 100, 0,
+                                       "SYNTHETIC", 1, 0)),
+        ]
+        calls = []
+
+        def changing_source():
+            calls.append(len(calls))
+            return iter(tasks if len(calls) == 1 else list(reversed(tasks)))
+
+        store = self.open_store_for("66666666-7777-4888-8999-000000000000")
+        with self.assertRaisesRegex(RecoveryRefused, "after inventory freeze"):
+            run_synthetic_g0_activity(
+                store=store, tasks=changing_source,
+                limits=watchdog_limits(), workers=4)
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(store._task_event_index, {})
+        store.close()
+
+    def test_audit_stream_write_failure_stops_and_fails_closed_for_recovery(self):
+        # Enough bounded engineering records to fill the OS pipe if its
+        # external consumer fails before task completion.
+        graph = fixture_graph()
+        identity = fixture_identity(graph)
+        store = self.open_store_for("33333333-4444-4555-8666-777777777777")
+        original_write = store.write_immutable_artifact
+
+        def injected_write_failure(*, relative_path, artifact_kind,
+                                   identity, chunks, stream_metadata=None):
+            if artifact_kind != "audit":
+                return original_write(relative_path=relative_path,
+                                      artifact_kind=artifact_kind,
+                                      identity=identity, chunks=chunks,
+                                      stream_metadata=stream_metadata)
+
+            def broken_stream():
+                for index, block in enumerate(chunks):
+                    if index == 1:
+                        raise OSError("injected external SSD write interruption")
+                    yield block
+
+            return original_write(relative_path=relative_path,
+                                  artifact_kind=artifact_kind,
+                                  identity=identity, chunks=broken_stream(),
+                                  stream_metadata=stream_metadata)
+
+        with mock.patch.object(store, "write_immutable_artifact",
+                               side_effect=injected_write_failure):
+            with self.assertRaises(Exception):
+                self.execute(store, graph=graph, workers=1,
+                             limits=watchdog_limits(workers=1))
+        task_plan = __import__("g0_minimal_executor")._synthetic_task_plan(
+            graph, identity, runtime_manifest(require_target=False))
+        state = store._task_state(str(task_plan["task_id"]))
+        self.assertEqual(state["failures"][-1]["failure_class"], "UNKNOWN")
+        self.assertEqual(state["failures"][-1]["reason_code"],
+                         "G0_AUDIT_STREAM_WRITE_FAILED")
+        watchdog_terminals = [event for event in store._task_events()
+                              if event.get("event") ==
+                              "g0_watchdog_invocation_finished"]
+        self.assertEqual(len(watchdog_terminals), 1)
+        self.assertEqual(watchdog_terminals[0]["status"], "stopped")
+        self.assertEqual(watchdog_terminals[0]["result"]["reason"],
+                         "G0_EXTERNAL_IO_FAILURE")
+        with self.assertRaises(RecoveryRefused):
+            store.verify_recovery({str(task_plan["task_id"]):
+                                   str(task_plan["seed_fingerprint"])})
         store.close()
 
     def test_fixed_seed_rerun_reproduces_graph_q_vector_and_best_partition(self):

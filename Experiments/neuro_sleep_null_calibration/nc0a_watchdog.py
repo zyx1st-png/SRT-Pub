@@ -728,7 +728,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
               audit_name: str = "watchdog.jsonl",
               stdout_name: str = "runner.stdout.log",
               invocation_id: int | None = None,
-              stop_guard: Callable[[], str | None] | None = None) -> dict:
+              stop_guard: Callable[[], str | None] | None = None,
+              inherited_fds: tuple[int, ...] = ()) -> dict:
     """Run and monitor a single scientific runner; terminate its whole group.
 
     ``clock`` returns (UTC epoch seconds, suspend-aware-comparison monotonic
@@ -739,6 +740,12 @@ def supervise(command: list[str], *, run_dir: str | Path,
         raise ValueError("A nonempty argument-vector command is required")
     if invocation_id is not None and (type(invocation_id) is not int or invocation_id < 1):
         raise ValueError("Watchdog invocation_id must be a positive integer")
+    if (not isinstance(inherited_fds, tuple) or
+            any(type(fd) is not int or fd < 0 for fd in inherited_fds) or
+            len(set(inherited_fds)) != len(inherited_fds)):
+        raise ValueError("inherited_fds must be a tuple of distinct open file descriptors")
+    for fd in inherited_fds:
+        os.fstat(fd)
     macos_initial = None
     if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
         macos_initial = validate_macos_sampled_backend(limits)
@@ -813,7 +820,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
         child_env["NC0A_PROCESS_ROLE_REGISTRY"] = str(role_registry_path)
         proc = subprocess.Popen(command, cwd=root, stdin=subprocess.DEVNULL,
                                 stdout=output, stderr=subprocess.STDOUT,
-                                start_new_session=True, close_fds=True, env=child_env)
+                                start_new_session=True, close_fds=True, env=child_env,
+                                pass_fds=inherited_fds)
         if limits.memory_enforcement_backend == "MACOS_SAMPLED_PRESSURE":
             sleep_assertion = _start_sleep_assertion(
                 os.getpid(), limits.require_sleep_assertion)
