@@ -436,7 +436,7 @@ class StorageFixture(unittest.TestCase):
         ledger.write_bytes(original.replace(old, new, 1))
         self.assertEqual(ledger.stat().st_size, len(original))
         with self.assertRaisesRegex(RecoveryRefused, "Ledger identity, size, change metadata or tip changed"):
-            store.check_health()
+            store._reserve_external_write(1)
         store.close()
 
     def test_watchdog_stop_guard_kills_supervised_process_on_mount_loss(self):

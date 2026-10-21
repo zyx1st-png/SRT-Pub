@@ -695,12 +695,7 @@ class G0ExternalStore:
                 raise G0StorageError("G0_EXTERNAL_VOLUME_IDENTITY_MISMATCH",
                                      "External mount root changed before a bounded write")
             with self._ledger_lock:
-                if self._poisoned or self._ledger is None:
-                    raise RecoveryRefused("G0_LEDGER_UNAVAILABLE", "Control ledger is unavailable")
-                if os.fstat(self._ledger.fd).st_size != self._ledger_bytes:
-                    self._poisoned = True
-                    raise RecoveryRefused("G0_LEDGER_INDEX_STALE",
-                                          "Ledger size changed during a bounded write")
+                self._assert_index_current()
                 ext_free = self.usage_provider(self.policy.external_mount).free
                 internal_free = self.usage_provider(self.policy.internal_mount).free
                 reserved = self._external_reserved_bytes
