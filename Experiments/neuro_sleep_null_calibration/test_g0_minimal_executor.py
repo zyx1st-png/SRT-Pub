@@ -86,6 +86,7 @@ class G0MinimalExecutorTests(StorageFixture):
         manifest = runtime_manifest(require_target=True)
         self.assertEqual(manifest["python"], "3.14.0")
         self.assertEqual(manifest["machine"], "arm64")
+        self.assertEqual(manifest["macos_version"], "15.7.4")
         self.assertEqual(manifest["packages"]["python-louvain"], "0.16")
         self.assertEqual(manifest["packages"]["networkx"], "3.6.1")
         self.assertEqual(manifest["packages"]["numpy"], "2.5.3")

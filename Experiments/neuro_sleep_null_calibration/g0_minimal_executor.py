@@ -35,6 +35,7 @@ PREREG_ROOT_SEED = 20261009
 PROPOSALS_PER_EDGE = 4
 LOUVAIN_TRIALS = 200
 SYNTHETIC_SCOPE = "SYNTHETIC_ENGINEERING_ONLY"
+TARGET_MACOS_VERSION = "15.7.4"
 _HEX64 = frozenset("0123456789abcdef")
 _LOUVAIN_GRAPH = None
 _LOUVAIN_LABELS: tuple[str | int, ...] = ()
@@ -238,17 +239,20 @@ def runtime_manifest(*, require_target: bool = False) -> dict[str, object]:
             actual[name] = None
     python = platform.python_version()
     machine = platform.machine()
+    macos_version = platform.mac_ver()[0] or None
     if require_target and actual != expected:
         raise RuntimeError(f"G0 dependency lock mismatch: expected={expected}, actual={actual}")
     if require_target and (python != "3.14.0" or sys.platform != "darwin" or machine != "arm64"):
         raise RuntimeError("Target G0 engineering runtime requires Python 3.14.0 on macOS arm64")
+    if require_target and macos_version != TARGET_MACOS_VERSION:
+        raise RuntimeError(f"Target G0 engineering runtime requires macOS {TARGET_MACOS_VERSION}")
     source_hashes = {}
     for name in ("g0_minimal_executor.py", "connected_swap.py", "g0_external_storage.py",
-                 "nc0a_watchdog.py"):
+                 "nc0a_watchdog.py", "nc0a_execution_engine.py"):
         source_hashes[name] = sha256_bytes(Path(__file__).with_name(name).read_bytes())
     return {"python": python, "executable": sys.executable,
             "platform": sys.platform, "machine": machine,
-            "macos_version": platform.mac_ver()[0] or None,
+            "macos_version": macos_version,
             "packages": actual, "locked_packages": expected,
             "runtime_lock_sha256": sha256_bytes(lock_bytes),
             "source_sha256": source_hashes}
