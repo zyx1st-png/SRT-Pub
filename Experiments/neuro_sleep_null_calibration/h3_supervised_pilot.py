@@ -17,6 +17,7 @@ import math
 import os
 from pathlib import Path
 import secrets
+import shutil
 import subprocess
 import sys
 import time
@@ -28,8 +29,10 @@ from nc0a_watchdog import (
     WatchdogError,
     WatchdogLimits,
     guard_watchdog_parent,
+    sample_host_memory_pressure,
     supervise,
     supervised_activity_lock,
+    validate_macos_sampled_backend,
     verify_hash_chain,
 )
 from riken_source_identity import (
@@ -82,6 +85,26 @@ LIMITS = {
     "max_compute_workers": H3_PILOT_MAX_WORKERS,
     "sampled_aggregate_rss_bytes": H3_PILOT_RSS_BYTES,
     "output_bytes": H3_PILOT_OUTPUT_BYTES,
+}
+GIB = 1024 ** 3
+H3_MACOS_RESOURCE_POLICY_CANDIDATE = {
+    "backend": "MACOS_SAMPLED_PRESSURE",
+    "host_memory_free_percent_stop": 20,
+    "internal_data_volume_path": "/System/Volumes/Data",
+    "internal_data_minimum_free_bytes": 40 * GIB,
+    "internal_data_runtime_reserve_bytes": 30 * GIB,
+    "internal_vm_volume_path": "/System/Volumes/VM",
+    "internal_vm_minimum_free_bytes": 40 * GIB,
+    "internal_vm_runtime_reserve_bytes": 30 * GIB,
+    "output_volume_runtime_reserve_bytes": 30 * GIB,
+    "reserve_breach_margin_fraction": 0.05,
+    "minimum_reserve_breach_margin_bytes": 64 * 1024 * 1024,
+    "swap_used_growth_stop_bytes": 2 * GIB,
+    "require_ac_power": True,
+    "require_normal_thermal_state": True,
+    "require_caffeinate_sleep_assertion": True,
+    "memory_limit_semantics": "4_GIB_RSS_IS_SAMPLED_NOT_HARD",
+    "status": "CANDIDATE_NOT_RESEARCHER_APPROVED",
 }
 _HOST_LEDGER = "h3-host-activity.jsonl"
 _HOST_LOCK = "h3-host-activity.lock"
@@ -567,21 +590,59 @@ def _run_real_rows(pilot: dict[str, Any], manifest: dict[str, Any],
 
 def _build_watchdog_limits(candidate: dict[str, Any], *, test_overrides: dict | None = None
                            ) -> WatchdogLimits:
+    policy = H3_MACOS_RESOURCE_POLICY_CANDIDATE
     values = {
         "wall_seconds": float(candidate["wall_seconds"]),
         "cpu_seconds": float(candidate["process_tree_cpu_seconds"]),
         "aggregate_rss_bytes": int(candidate["sampled_aggregate_rss_bytes"]),
         "max_workers": int(candidate["max_compute_workers"]),
         "run_disk_bytes": int(candidate["output_bytes"]),
-        "reserve_free_disk_bytes": 1,
+        "reserve_free_disk_bytes": policy["output_volume_runtime_reserve_bytes"],
         "case_seconds": float(candidate["wall_seconds"]),
         "oracle_seconds": float(candidate["wall_seconds"]),
-        "memory_enforcement_backend": "SAMPLED_ONLY",
+        "memory_enforcement_backend": policy["backend"],
+        "host_memory_free_percent_stop": policy["host_memory_free_percent_stop"],
+        "boot_volume_path": policy["internal_data_volume_path"],
+        "boot_reserve_free_disk_bytes": policy["internal_data_runtime_reserve_bytes"],
+        "minimum_boot_free_disk_bytes": policy["internal_data_minimum_free_bytes"],
+        "swap_volume_path": policy["internal_vm_volume_path"],
+        "swap_volume_reserve_free_disk_bytes": policy["internal_vm_runtime_reserve_bytes"],
+        "minimum_swap_volume_free_disk_bytes": policy["internal_vm_minimum_free_bytes"],
+        "swap_growth_stop_bytes": policy["swap_used_growth_stop_bytes"],
+        "require_ac_power": policy["require_ac_power"],
+        "require_thermal_normal": policy["require_normal_thermal_state"],
+        "require_sleep_assertion": policy["require_caffeinate_sleep_assertion"],
         "poll_seconds": 0.5,
     }
     if test_overrides:
         values.update(test_overrides)
     return WatchdogLimits(**values)
+
+
+def _preflight_macos_resources(limits: WatchdogLimits, output_root: Path) -> dict[str, Any]:
+    """Refuse production preparation unless all prospective Mac telemetry works."""
+    try:
+        native = validate_macos_sampled_backend(limits)
+        pressure = sample_host_memory_pressure()
+        output_free = shutil.disk_usage(output_root).free
+    except (OSError, subprocess.SubprocessError, WatchdogError) as exc:
+        raise H3PilotError("macOS resource telemetry/preflight is unavailable") from exc
+    if (type(pressure.get("free_percent")) is not int or
+            pressure["free_percent"] < limits.host_memory_free_percent_stop):
+        raise H3PilotError("System memory pressure is below the candidate free-memory threshold")
+    output_stop = limits.reserve_free_disk_bytes + max(
+        H3_MACOS_RESOURCE_POLICY_CANDIDATE[
+            "minimum_reserve_breach_margin_bytes"],
+        int(limits.reserve_free_disk_bytes * H3_MACOS_RESOURCE_POLICY_CANDIDATE[
+            "reserve_breach_margin_fraction"]))
+    output_start_minimum = output_stop + limits.run_disk_bytes
+    if output_free <= output_start_minimum:
+        raise H3PilotError(
+            "Output-volume free space cannot preserve its reserve and full run allocation")
+    return {"macos_native_state": native, "host_memory_pressure": pressure,
+            "output_volume_free_bytes": output_free,
+            "output_volume_start_minimum_bytes_exclusive": output_start_minimum,
+            "memory_enforcement": "MACOS_SAMPLED_PRESSURE_NOT_HARD"}
 
 
 def _git_identity(expected_head: str) -> dict[str, str]:
@@ -598,21 +659,117 @@ def _git_identity(expected_head: str) -> dict[str, str]:
     return {"head_sha": head, "working_tree": "CLEAN"}
 
 
-def _prepare_run_directory(run_dir: Path, psa_root: Path) -> None:
+def _checked_run_target(run_dir: Path, psa_root: Path) -> tuple[Path, Path]:
     if psa_root.is_symlink():
         raise H3PilotError("PS-A output root must not be a symlink")
-    root = psa_root.resolve(strict=True)
+    try:
+        root = psa_root.resolve(strict=True)
+    except OSError as exc:
+        raise H3PilotError("PS-A output root must exist before H3 launch") from exc
     if not root.is_dir():
         raise H3PilotError("PS-A output root must be a mounted, non-symlink directory")
-    target = run_dir.absolute()
+    if root != Path(os.path.abspath(psa_root.expanduser())):
+        raise H3PilotError("PS-A output root cannot contain symlink path components")
+    if not run_dir.is_absolute():
+        raise H3PilotError("H3 run directory must be an absolute path")
+    if ".." in run_dir.parts:
+        raise H3PilotError("H3 run directory cannot contain path traversal")
+    target = Path(os.path.abspath(run_dir.expanduser()))
     expected_parent = root / "h3_identity_calibration_2026-10-21"
-    if target.parent.parent.resolve(strict=False) != expected_parent:
+    if target.parent != expected_parent:
         raise H3PilotError("H3 run directory must be under the fixed private PSA output root")
+    if expected_parent.is_symlink():
+        raise H3PilotError("H3 output parent cannot be a symlink")
     if target.exists() or target.is_symlink():
         raise H3PilotError("H3 output directory must be new and empty; refusing reuse")
+    return target, expected_parent
+
+
+def _prepare_run_directory(run_dir: Path, psa_root: Path) -> Path:
+    target, expected_parent = _checked_run_target(run_dir, psa_root)
     target.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
-    if target.parent.is_symlink():
+    if (target.parent.is_symlink() or
+            target.parent.resolve(strict=True) != expected_parent):
         raise H3PilotError("H3 output parent cannot be a symlink")
+    return target
+
+
+def _resolve_private_root(path: Path, label: str) -> Path:
+    if not isinstance(path, Path) or not str(path).strip():
+        raise H3PilotError(f"{label} must be a nonempty absolute directory")
+    expanded = path.expanduser()
+    if not expanded.is_absolute() or ".." in expanded.parts:
+        raise H3PilotError(f"{label} must be an absolute path without traversal")
+    absolute = Path(os.path.abspath(expanded))
+    if absolute.is_symlink():
+        raise H3PilotError(f"{label} cannot be a symlink")
+    try:
+        resolved = absolute.resolve(strict=True)
+    except OSError as exc:
+        raise H3PilotError(f"{label} does not exist") from exc
+    if resolved != absolute or not resolved.is_dir():
+        raise H3PilotError(f"{label} must be a real directory without symlink components")
+    return resolved
+
+
+def _require_private_file(path: Path, root: Path, label: str) -> None:
+    if path.is_symlink() or not path.is_file() or not _is_contained(path, root):
+        raise H3PilotError(f"{label} is missing, symlinked, or outside its private root")
+
+
+def _validate_private_roots(phase2_root: Path, psa_root: Path,
+                            pilot: dict[str, Any], manifest: dict[str, Any]
+                            ) -> tuple[Path, Path]:
+    """Validate private root identity without reading signal contents or running Louvain."""
+    phase2 = _resolve_private_root(phase2_root, "SRT_PHASE2_ROOT")
+    psa = _resolve_private_root(psa_root, "SRT_PSA_ROOT")
+    if phase2 == psa or phase2 in psa.parents or psa in phase2.parents:
+        raise H3PilotError("Phase-2 and PS-A roots must be distinct, non-nested directories")
+    data_dir, jobs_dir = phase2 / "data", psa / "jobs"
+    if data_dir.is_symlink() or not data_dir.is_dir():
+        raise H3PilotError("SRT_PHASE2_ROOT is not the expected private data root")
+    if jobs_dir.is_symlink() or not jobs_dir.is_dir():
+        raise H3PilotError("SRT_PSA_ROOT is not the expected historical jobs root")
+    expected_codes = manifest.get("historical_code_hashes")
+    if not isinstance(expected_codes, dict):
+        raise H3PilotError("Frozen manifest lacks historical source-code identities")
+    if pilot.get("historical_graph_builder_sha256") != \
+            expected_codes.get("multirecording_primary.py"):
+        raise H3PilotError("Pilot and manifest disagree on historical graph-builder identity")
+    builder = phase2 / "multirecording_primary.py"
+    population = psa / "population_size_scaling.py"
+    _require_private_file(builder, phase2, "Historical graph builder")
+    _require_private_file(population, psa, "Historical population runner")
+    if (sha256_file(builder) != expected_codes.get("multirecording_primary.py") or
+            sha256_file(population) != expected_codes.get("population_size_scaling.py")):
+        raise H3PilotError("Private roots do not contain the frozen historical source code")
+    source_by_id = {row.get("recording_id"): row
+                    for row in manifest.get("source_data", [])
+                    if isinstance(row, dict)}
+    seen_sources: set[str] = set()
+    for row in pilot.get("records", []):
+        if not isinstance(row, dict):
+            raise H3PilotError("Pilot row is malformed during private-root validation")
+        source = source_by_id.get(row.get("recording_id"))
+        filename = row.get("source_filename")
+        if (source is None or not isinstance(filename, str) or
+                Path(filename).name != filename or filename != source.get("filename")):
+            raise H3PilotError("Private source root does not match the frozen pilot rows")
+        source_path = data_dir / filename
+        _require_private_file(source_path, phase2, "Source MAT")
+        if filename not in seen_sources:
+            expected_size = source.get("bytes")
+            if expected_size is not None and source_path.stat().st_size != expected_size:
+                raise H3PilotError("Source MAT size differs from frozen inventory")
+            seen_sources.add(filename)
+        repeat, n, recording = row.get("subset_repeat"), row.get("N"), row.get("recording_id")
+        if type(repeat) is not int or type(n) is not int or not isinstance(recording, str):
+            raise H3PilotError("Pilot row has an invalid historical job coordinate")
+        job_path = jobs_dir / f"{recording}__N{n}__rep-{repeat:03d}.json"
+        _require_private_file(job_path, psa, "Historical H3 job")
+        if sha256_file(job_path) != row.get("historical_job_sha256"):
+            raise H3PilotError("Private historical job hash differs from the fixed pilot")
+    return phase2, psa
 
 
 def _load_child_result(run_dir: Path) -> dict[str, Any] | None:
@@ -625,14 +782,20 @@ def _load_child_result(run_dir: Path) -> dict[str, Any] | None:
 def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                        pilot_sha256: str, run_id: str, head: dict[str, str],
                        candidate: dict[str, Any], env_extra: dict[str, str] | None = None,
-                       limits: WatchdogLimits | None = None) -> dict[str, Any]:
+                       limits: WatchdogLimits | None = None,
+                       expected_run_parent: Path | None = None) -> dict[str, Any]:
     try:
         if str(uuid.UUID(run_id)) != run_id:
             raise ValueError("noncanonical UUID")
     except (ValueError, TypeError, AttributeError) as exc:
         raise H3PilotError("H3 pilot run identity must be a canonical UUID") from exc
-    run_dir = run_dir.absolute()
-    state_dir = state_dir.absolute()
+    run_dir = Path(os.path.abspath(run_dir.expanduser()))
+    state_dir = Path(os.path.abspath(state_dir.expanduser()))
+    if expected_run_parent is not None:
+        expected_run_parent = Path(os.path.abspath(expected_run_parent.expanduser()))
+        if (run_dir.parent != expected_run_parent or expected_run_parent.is_symlink() or
+                expected_run_parent.resolve(strict=True) != expected_run_parent):
+            raise H3PilotError("Prepared output parent changed before activity admission")
     ledger_path = state_dir / _HOST_LEDGER
     token = secrets.token_hex(32)
     with _host_lock(state_dir) as activity_lock_fd:
@@ -641,7 +804,13 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
         if run_dir.exists() or run_dir.is_symlink():
             raise H3PilotError("Run directory exists; H3 pilot attempts cannot be overwritten")
         run_dir.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+        if expected_run_parent is not None and (
+                run_dir.parent.is_symlink() or
+                run_dir.parent.resolve(strict=True) != expected_run_parent):
+            raise H3PilotError("Prepared output parent changed before activity ledger write")
         run_dir.mkdir(mode=0o700)
+        if run_dir.is_symlink() or not run_dir.is_dir():
+            raise H3PilotError("H3 run directory was replaced during secure creation")
         started = {"kind": "activity_started", "run_id": run_id,
                    "pilot_sha256": pilot_sha256, "head_sha": head["head_sha"],
                    "run_directory": str(run_dir), "started_utc":
@@ -652,7 +821,9 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                 control.append({"kind": "activity_started", "run_id": run_id,
                                 "pilot_sha256": pilot_sha256,
                                 "head_sha": head["head_sha"],
-                                "limits": candidate})
+                                "limits": candidate,
+                                "macos_resource_policy_candidate_not_authorized":
+                                    H3_MACOS_RESOURCE_POLICY_CANDIDATE})
                 _write_new_json(run_dir / "run-manifest.json", {
                     "schema": "SRT_RIKEN_H3_SUPERVISED_RUN_V1",
                     "status": "STARTED",
@@ -663,7 +834,9 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                     "identity_tool_sha256": sha256_file(HERE / "riken_source_identity.py"),
                     "runtime": h3_runtime_manifest(),
                     "candidate_limits_not_authorized_in_packet": candidate,
-                    "memory_enforcement": "SAMPLED_ONLY_NOT_HARD",
+                    "macos_resource_policy_candidate_not_authorized":
+                        H3_MACOS_RESOURCE_POLICY_CANDIDATE,
+                    "memory_enforcement": "MACOS_SAMPLED_PRESSURE_NOT_HARD",
                     "created_utc": datetime.now(timezone.utc).isoformat(),
                 })
                 env = os.environ.copy()
@@ -1209,7 +1382,12 @@ def launch_real_pilot(*, pilot_path: Path, manifest_path: Path,
                       phase2_root: Path, psa_root: Path, run_dir: Path,
                       state_dir: Path, run_id: str, expected_head: str,
                       researcher_confirmation: str) -> dict[str, Any]:
-    validate_pilot_bundle(pilot_path, manifest_path)
+    try:
+        if str(uuid.UUID(run_id)) != run_id:
+            raise ValueError("noncanonical UUID")
+    except (ValueError, TypeError, AttributeError) as exc:
+        raise H3PilotError("H3 pilot run identity must be a canonical UUID") from exc
+    pilot, manifest = validate_pilot_bundle(pilot_path, manifest_path)
     if run_dir.name != run_id:
         raise H3PilotError("Run directory basename must equal the frozen pilot UUID")
     if state_dir.expanduser().resolve(strict=False) != \
@@ -1220,7 +1398,11 @@ def launch_real_pilot(*, pilot_path: Path, manifest_path: Path,
     if researcher_confirmation != confirmation:
         raise H3PilotError("UUID/package/HEAD-bound researcher confirmation is missing")
     head = _git_identity(expected_head)
-    _prepare_run_directory(run_dir, psa_root)
+    phase2_root, psa_root = _validate_private_roots(
+        phase2_root, psa_root, pilot, manifest)
+    limits = _build_watchdog_limits(LIMITS)
+    resource_preflight = _preflight_macos_resources(limits, psa_root)
+    run_dir = _prepare_run_directory(run_dir, psa_root)
     env_extra = {
         "SRT_H3_PILOT_PATH": str(pilot_path.resolve(strict=True)),
         "SRT_H3_MANIFEST_PATH": str(manifest_path.resolve(strict=True)),
@@ -1231,16 +1413,20 @@ def launch_real_pilot(*, pilot_path: Path, manifest_path: Path,
     return _launch_supervised(
         command, run_dir=run_dir, state_dir=state_dir,
         pilot_sha256=EXPECTED_PILOT_SHA256, run_id=run_id, head=head,
-        candidate=LIMITS, env_extra=env_extra,
-        limits=_build_watchdog_limits(LIMITS))
+        candidate={**LIMITS, "macos_resource_policy_candidate_not_authorized":
+                  H3_MACOS_RESOURCE_POLICY_CANDIDATE,
+                  "preflight_sample": resource_preflight},
+        env_extra=env_extra, limits=limits, expected_run_parent=run_dir.parent)
 
 
 def _default_paths() -> tuple[Path, Path]:
-    psa = Path(os.environ.get("SRT_PSA_ROOT", ""))
-    phase2 = Path(os.environ.get("SRT_PHASE2_ROOT", ""))
-    if not str(psa) or not str(phase2):
+    raw_psa = os.environ.get("SRT_PSA_ROOT")
+    raw_phase2 = os.environ.get("SRT_PHASE2_ROOT")
+    if (raw_psa is None or not raw_psa.strip() or raw_phase2 is None or
+            not raw_phase2.strip()):
         raise H3PilotError("Set private SRT_PSA_ROOT and SRT_PHASE2_ROOT first")
-    return phase2, psa
+    return (_resolve_private_root(Path(raw_phase2.strip()), "SRT_PHASE2_ROOT"),
+            _resolve_private_root(Path(raw_psa.strip()), "SRT_PSA_ROOT"))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1267,7 +1453,10 @@ def main(argv: list[str] | None = None) -> int:
                 args.expected_head, args.researcher_confirmation)
     if any(item is None for item in required):
         parser.error("production launch requires pilot, manifest, run-directory, run-id, expected-head and researcher-confirmation")
-    phase2_root, psa_root = _default_paths()
+    try:
+        phase2_root, psa_root = _default_paths()
+    except H3PilotError as exc:
+        parser.error(str(exc))
     result = launch_real_pilot(
         pilot_path=args.pilot, manifest_path=args.manifest,
         phase2_root=phase2_root, psa_root=psa_root, run_dir=args.run_directory,

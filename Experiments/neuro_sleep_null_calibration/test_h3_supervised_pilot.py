@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 import hashlib
+import io
 import json
+import os
+from dataclasses import asdict
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
 import time
+import uuid
 import unittest
 from unittest.mock import patch
 
@@ -17,13 +22,22 @@ if str(MODULE_DIR) not in sys.path:
 from h3_supervised_pilot import (  # noqa: E402
     EXPECTED_GRAPH_IDS,
     EXPECTED_MANIFEST_SHA256,
+    EXPECTED_PILOT_SHA256,
     HERE,
+    H3_MACOS_RESOURCE_POLICY_CANDIDATE,
     H3PilotError,
+    LIMITS,
     _HOST_LEDGER,
+    _build_watchdog_limits,
+    _default_paths,
+    _prepare_run_directory,
+    _preflight_macos_resources,
     _synthetic_row,
     _trial_deltas,
     _verify_recovery_directory,
+    launch_real_pilot,
     launch_synthetic_test,
+    main,
     validate_pilot_bundle,
 )
 from nc0a_watchdog import (  # noqa: E402
@@ -44,7 +58,7 @@ from riken_source_identity import (  # noqa: E402
 class TestH3SupervisedPilot(unittest.TestCase):
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory(prefix="h3-supervised-synthetic-")
-        self.root = Path(self.temp.name)
+        self.root = Path(self.temp.name).resolve()
         self.state = self.root / "state"
         self.runs = self.root / "runs"
 
@@ -54,6 +68,409 @@ class TestH3SupervisedPilot(unittest.TestCase):
     def run_case(self, name: str, **kwargs):
         return launch_synthetic_test(
             run_dir=self.runs / name, state_dir=self.state, **kwargs)
+
+    def _private_root_fixture(self):
+        phase2 = self.root / "phase2"
+        psa = self.root / "psa"
+        (phase2 / "data").mkdir(parents=True)
+        (psa / "jobs").mkdir(parents=True)
+        builder = phase2 / "multirecording_primary.py"
+        population = psa / "population_size_scaling.py"
+        source = phase2 / "data" / "synthetic-source.mat"
+        builder.write_bytes(b"synthetic historical graph builder")
+        population.write_bytes(b"synthetic historical population runner")
+        source_bytes = b"synthetic placeholder; never parsed as signal data"
+        source.write_bytes(source_bytes)
+        job = psa / "jobs" / "recording-synthetic__N100__rep-001.json"
+        job_bytes = b'{"synthetic_fixture":true}\n'
+        job.write_bytes(job_bytes)
+        builder_sha = hashlib.sha256(builder.read_bytes()).hexdigest()
+        population_sha = hashlib.sha256(population.read_bytes()).hexdigest()
+        job_sha = hashlib.sha256(job_bytes).hexdigest()
+        pilot = {
+            "historical_graph_builder_sha256": builder_sha,
+            "records": [{
+                "recording_id": "recording-synthetic",
+                "source_filename": source.name,
+                "subset_repeat": 1,
+                "N": 100,
+                "historical_job_sha256": job_sha,
+            }],
+        }
+        manifest = {
+            "historical_code_hashes": {
+                "multirecording_primary.py": builder_sha,
+                "population_size_scaling.py": population_sha,
+            },
+            "source_data": [{
+                "recording_id": "recording-synthetic",
+                "filename": source.name,
+                "bytes": len(source_bytes),
+            }],
+        }
+        pilot_path = self.root / "synthetic-pilot.json"
+        manifest_path = self.root / "synthetic-manifest.json"
+        pilot_path.write_text("{}", encoding="utf-8")
+        manifest_path.write_text("{}", encoding="utf-8")
+        return phase2, psa, pilot_path, manifest_path, pilot, manifest
+
+    def test_run_directory_requires_exact_fixed_parent_and_refuses_symlinks(self) -> None:
+        psa = self.root / "psa"
+        psa.mkdir()
+        run_id = str(uuid.uuid4())
+        expected_parent = psa / "h3_identity_calibration_2026-10-21"
+        target = expected_parent / run_id
+        prepared = _prepare_run_directory(target, psa)
+        self.assertEqual(prepared, target)
+        self.assertTrue(expected_parent.is_dir())
+        self.assertFalse(target.exists())
+
+        with self.assertRaisesRegex(H3PilotError, "fixed private PSA output root"):
+            _prepare_run_directory(psa / "other" / run_id, psa)
+        with self.assertRaisesRegex(H3PilotError, "path traversal"):
+            _prepare_run_directory(expected_parent / ".." / run_id, psa)
+        target.mkdir()
+        with self.assertRaisesRegex(H3PilotError, "new and empty"):
+            _prepare_run_directory(target, psa)
+
+        link_parent = psa / "h3_identity_calibration_2026-10-21"
+        target.rmdir()
+        link_parent.rmdir()
+        real_parent = self.root / "redirected-parent"
+        real_parent.mkdir()
+        link_parent.symlink_to(real_parent, target_is_directory=True)
+        with self.assertRaisesRegex(H3PilotError, "cannot be a symlink"):
+            _prepare_run_directory(link_parent / str(uuid.uuid4()), psa)
+
+        alias_root_parent = self.root / "psa-parent-alias"
+        alias_root_parent.symlink_to(self.root, target_is_directory=True)
+        aliased_psa = alias_root_parent / "psa"
+        with self.assertRaisesRegex(H3PilotError, "symlink path components"):
+            _prepare_run_directory(
+                expected_parent / str(uuid.uuid4()), aliased_psa)
+
+    def test_default_paths_reject_missing_empty_relative_and_symlink_roots(self) -> None:
+        valid_phase2 = self.root / "valid-phase2"
+        valid_psa = self.root / "valid-psa"
+        valid_phase2.mkdir()
+        valid_psa.mkdir()
+        for phase2_value, psa_value in (
+                (None, str(valid_psa)), ("", str(valid_psa)),
+                ("   ", str(valid_psa)), ("relative", str(valid_psa)),
+                (str(valid_phase2), None), (str(valid_phase2), ""),
+                (str(valid_phase2), "relative")):
+            env = {}
+            if phase2_value is not None:
+                env["SRT_PHASE2_ROOT"] = phase2_value
+            if psa_value is not None:
+                env["SRT_PSA_ROOT"] = psa_value
+            with self.subTest(phase2=phase2_value, psa=psa_value):
+                with patch.dict(os.environ, env, clear=True):
+                    with self.assertRaises(H3PilotError):
+                        _default_paths()
+        link = self.root / "phase2-link"
+        link.symlink_to(valid_phase2, target_is_directory=True)
+        with patch.dict(os.environ, {
+                "SRT_PHASE2_ROOT": str(link), "SRT_PSA_ROOT": str(valid_psa)},
+                clear=True):
+            with self.assertRaisesRegex(H3PilotError, "symlink"):
+                _default_paths()
+
+    def test_cli_rejects_empty_environment_before_any_production_write(self) -> None:
+        run_id = str(uuid.uuid4())
+        run_dir = self.root / "psa" / "h3_identity_calibration_2026-10-21" / run_id
+        state = self.root / "must-not-be-created"
+        args = [
+            "--pilot", str(self.root / "unused-pilot.json"),
+            "--manifest", str(self.root / "unused-manifest.json"),
+            "--run-directory", str(run_dir), "--run-id", run_id,
+            "--expected-head", "3" * 40,
+            "--researcher-confirmation", "test-only",
+        ]
+        with (
+            patch.dict(os.environ, {"SRT_PSA_ROOT": "  ", "SRT_PHASE2_ROOT": ""},
+                       clear=True),
+            patch("h3_supervised_pilot.default_host_state_dir", return_value=state),
+            patch("h3_supervised_pilot.launch_real_pilot",
+                  side_effect=AssertionError("launch must not be entered")),
+            patch("sys.stderr", new=io.StringIO()),
+        ):
+            with self.assertRaises(SystemExit):
+                main(args)
+        self.assertFalse(run_dir.parent.exists())
+        self.assertFalse(state.exists())
+
+    def test_production_run_path_mismatch_is_rejected_before_activity_ledger(self) -> None:
+        phase2, psa, pilot_path, manifest_path, pilot, manifest = \
+            self._private_root_fixture()
+        run_id = str(uuid.uuid4())
+        wrong_run_dir = psa / "wrong-parent" / run_id
+        state = self.root / "must-not-be-created-for-path-mismatch"
+        head_sha = "4" * 40
+        confirmation = (f"I AUTHORIZE H3 PILOT {run_id} "
+                        f"{EXPECTED_PILOT_SHA256} {head_sha}")
+        with (
+            patch("h3_supervised_pilot.validate_pilot_bundle",
+                  return_value=(pilot, manifest)),
+            patch("h3_supervised_pilot.default_host_state_dir", return_value=state),
+            patch("h3_supervised_pilot._git_identity", return_value={
+                "head_sha": head_sha, "working_tree": "CLEAN"}),
+            patch("h3_supervised_pilot._preflight_macos_resources", return_value={
+                "synthetic_preflight": True}),
+        ):
+            with self.assertRaisesRegex(H3PilotError, "fixed private PSA output root"):
+                launch_real_pilot(
+                    pilot_path=pilot_path, manifest_path=manifest_path,
+                    phase2_root=phase2, psa_root=psa, run_dir=wrong_run_dir,
+                    state_dir=state, run_id=run_id, expected_head=head_sha,
+                    researcher_confirmation=confirmation)
+        self.assertFalse(wrong_run_dir.parent.exists())
+        self.assertFalse(state.exists())
+
+    def test_production_launch_preflights_roots_then_reaches_watchdog_without_science(self) -> None:
+        phase2, psa, pilot_path, manifest_path, pilot, manifest = \
+            self._private_root_fixture()
+        run_id = str(uuid.uuid4())
+        run_dir = psa / "h3_identity_calibration_2026-10-21" / run_id
+        state = self.root / "host-state"
+        head_sha = "1" * 40
+        calls = []
+
+        def stop_after_admission(command, *, run_dir, limits, audit_name,
+                                 stdout_name, **_kwargs):
+            # Exercise launch_real_pilot's real production route into supervise,
+            # while never starting the real runner-child scientific computation.
+            self.assertEqual(command[-1], "--runner-child")
+            self.assertEqual(limits.memory_enforcement_backend,
+                             "MACOS_SAMPLED_PRESSURE")
+            self.assertEqual(limits.max_workers, 4)
+            calls.append((command, limits))
+            (run_dir / stdout_name).write_bytes(b"synthetic preflight-only watchdog stub\n")
+            stdout_sha = hashlib.sha256((run_dir / stdout_name).read_bytes()).hexdigest()
+            with HashChainLog(run_dir / audit_name) as audit:
+                audit.append({"event": "test_stopped_after_admission",
+                              "runner_stdout_sha256": stdout_sha})
+            return {"status": "stopped", "reason": "TEST_STOP_AFTER_ADMISSION",
+                    "returncode": None,
+                    "usage": {"wall_seconds": 0.01, "cpu_seconds": 0.0}}
+
+        confirmation = (f"I AUTHORIZE H3 PILOT {run_id} "
+                        f"{EXPECTED_PILOT_SHA256} {head_sha}")
+        with (
+            patch("h3_supervised_pilot.validate_pilot_bundle",
+                  return_value=(pilot, manifest)),
+            patch("h3_supervised_pilot.default_host_state_dir", return_value=state),
+            patch("h3_supervised_pilot._git_identity", return_value={
+                "head_sha": head_sha, "working_tree": "CLEAN"}),
+            patch("h3_supervised_pilot._preflight_macos_resources", return_value={
+                "memory_enforcement": "MACOS_SAMPLED_PRESSURE_NOT_HARD",
+                "synthetic_preflight": True}),
+            patch("h3_supervised_pilot.supervise", side_effect=stop_after_admission),
+            patch("h3_supervised_pilot.reconstruct_source_graph",
+                  side_effect=AssertionError("real source graph must not be reconstructed")),
+            patch("h3_supervised_pilot.run_h3_replay_for_graph",
+                  side_effect=AssertionError("Louvain must not run in this test")),
+        ):
+            result = launch_real_pilot(
+                pilot_path=pilot_path, manifest_path=manifest_path,
+                phase2_root=phase2, psa_root=psa, run_dir=run_dir,
+                state_dir=state, run_id=run_id, expected_head=head_sha,
+                researcher_confirmation=confirmation)
+
+        self.assertEqual(result["status"], "STOPPED_BY_WATCHDOG")
+        self.assertEqual(len(calls), 1)
+        self.assertTrue(run_dir.is_dir())
+        self.assertTrue((state / _HOST_LEDGER).is_file())
+        report = _verify_recovery_directory(run_dir, host_state_dir=state)
+        self.assertEqual(report["status"], "VERIFIED_TERMINAL")
+        self.assertFalse(report["resume_allowed"])
+
+    def test_wrong_private_root_rejected_before_output_or_activity_ledger(self) -> None:
+        _phase2, psa, pilot_path, manifest_path, pilot, manifest = \
+            self._private_root_fixture()
+        wrong_phase2 = self.root / "wrong-phase2"
+        wrong_phase2.mkdir()
+        run_id = str(uuid.uuid4())
+        run_dir = psa / "h3_identity_calibration_2026-10-21" / run_id
+        state = self.root / "must-not-be-created"
+        head_sha = "2" * 40
+        confirmation = (f"I AUTHORIZE H3 PILOT {run_id} "
+                        f"{EXPECTED_PILOT_SHA256} {head_sha}")
+        with (
+            patch("h3_supervised_pilot.validate_pilot_bundle",
+                  return_value=(pilot, manifest)),
+            patch("h3_supervised_pilot.default_host_state_dir", return_value=state),
+            patch("h3_supervised_pilot._git_identity", return_value={
+                "head_sha": head_sha, "working_tree": "CLEAN"}),
+        ):
+            with self.assertRaisesRegex(H3PilotError, "expected private data root"):
+                launch_real_pilot(
+                    pilot_path=pilot_path, manifest_path=manifest_path,
+                    phase2_root=wrong_phase2, psa_root=psa, run_dir=run_dir,
+                    state_dir=state, run_id=run_id, expected_head=head_sha,
+                    researcher_confirmation=confirmation)
+        self.assertFalse(run_dir.parent.exists())
+        self.assertFalse(state.exists())
+
+    def test_mac_resource_candidate_maps_to_full_sampled_pressure_policy(self) -> None:
+        limits = _build_watchdog_limits(LIMITS)
+        policy = H3_MACOS_RESOURCE_POLICY_CANDIDATE
+        self.assertEqual(limits.memory_enforcement_backend, "MACOS_SAMPLED_PRESSURE")
+        self.assertEqual(limits.max_workers, 4)
+        self.assertEqual(limits.wall_seconds, 8 * 60 * 60)
+        self.assertEqual(limits.cpu_seconds, 32 * 60 * 60)
+        self.assertEqual(limits.aggregate_rss_bytes, 4 * 1024**3)
+        self.assertEqual(limits.run_disk_bytes, 1 * 1024**3)
+        self.assertEqual(limits.reserve_free_disk_bytes, 30 * 1024**3)
+        self.assertEqual(limits.boot_volume_path, "/System/Volumes/Data")
+        self.assertEqual(limits.minimum_boot_free_disk_bytes, 40 * 1024**3)
+        self.assertEqual(limits.boot_reserve_free_disk_bytes, 30 * 1024**3)
+        self.assertEqual(limits.swap_volume_path, "/System/Volumes/VM")
+        self.assertEqual(limits.minimum_swap_volume_free_disk_bytes, 40 * 1024**3)
+        self.assertEqual(limits.swap_volume_reserve_free_disk_bytes, 30 * 1024**3)
+        self.assertEqual(limits.swap_growth_stop_bytes, 2 * 1024**3)
+        self.assertEqual(limits.host_memory_free_percent_stop, 20)
+        self.assertEqual(policy["reserve_breach_margin_fraction"], 0.05)
+        self.assertEqual(policy["minimum_reserve_breach_margin_bytes"], 64 * 1024**2)
+        self.assertTrue(limits.require_ac_power)
+        self.assertTrue(limits.require_thermal_normal)
+        self.assertTrue(limits.require_sleep_assertion)
+        self.assertIn("NOT_RESEARCHER_APPROVED", policy["status"])
+        self.assertIn("NOT_HARD", policy["memory_limit_semantics"])
+
+    def test_mac_resource_preflight_requires_telemetry_pressure_and_space(self) -> None:
+        limits = _build_watchdog_limits(LIMITS)
+        disk = shutil._ntuple_diskusage(100 * 1024**3, 60 * 1024**3, 40 * 1024**3)
+        with (
+            patch("h3_supervised_pilot.validate_macos_sampled_backend",
+                  return_value={"ac_power": True, "thermal_normal": True}),
+            patch("h3_supervised_pilot.sample_host_memory_pressure",
+                  return_value={"free_percent": 30, "estimated_available_bytes": 5}),
+            patch("h3_supervised_pilot.shutil.disk_usage", return_value=disk),
+        ):
+            evidence = _preflight_macos_resources(limits, self.root)
+        self.assertEqual(evidence["memory_enforcement"],
+                         "MACOS_SAMPLED_PRESSURE_NOT_HARD")
+        self.assertEqual(evidence["output_volume_start_minimum_bytes_exclusive"],
+                         65 * 1024**3 // 2)
+
+        with patch("h3_supervised_pilot.validate_macos_sampled_backend",
+                   side_effect=WatchdogError("native state unavailable")):
+            with self.assertRaisesRegex(H3PilotError, "unavailable"):
+                _preflight_macos_resources(limits, self.root)
+        with (
+            patch("h3_supervised_pilot.validate_macos_sampled_backend", return_value={}),
+            patch("h3_supervised_pilot.sample_host_memory_pressure",
+                  return_value={"free_percent": 19}),
+        ):
+            with self.assertRaisesRegex(H3PilotError, "memory pressure"):
+                _preflight_macos_resources(limits, self.root)
+        low_disk = shutil._ntuple_diskusage(100 * 1024**3, 68 * 1024**3,
+                                            32 * 1024**3)
+        with (
+            patch("h3_supervised_pilot.validate_macos_sampled_backend", return_value={}),
+            patch("h3_supervised_pilot.sample_host_memory_pressure",
+                  return_value={"free_percent": 50}),
+            patch("h3_supervised_pilot.shutil.disk_usage", return_value=low_disk),
+        ):
+            with self.assertRaisesRegex(
+                    H3PilotError, "preserve its reserve and full run allocation"):
+                _preflight_macos_resources(limits, self.root)
+
+    def test_mac_watchdog_stops_worker_when_pressure_telemetry_fails(self) -> None:
+        limits = _build_watchdog_limits(LIMITS, test_overrides={
+            "wall_seconds": 8.0, "cpu_seconds": 30.0,
+            "case_seconds": 8.0, "oracle_seconds": 8.0,
+            "poll_seconds": 0.05, "terminate_grace_seconds": 0.1,
+        })
+        state = {"swap_used_bytes": 1024, "swap_total_bytes": 4096,
+                 "swap_free_bytes": 3072, "ac_power": True,
+                 "thermal_normal": True, "boot_volume_free_bytes": 80 * 1024**3,
+                 "swap_volume_free_bytes": 80 * 1024**3}
+        actual_disk_usage = shutil.disk_usage
+
+        def disk_usage(path):
+            if str(path) in {"/System/Volumes/Data", "/System/Volumes/VM"}:
+                return shutil._ntuple_diskusage(100 * 1024**3,
+                                                80 * 1024**3,
+                                                20 * 1024**3)
+            return actual_disk_usage(path)
+
+        with (
+            patch("nc0a_watchdog.validate_macos_sampled_backend", return_value=state),
+            patch("nc0a_watchdog.sample_host_memory_pressure",
+                  side_effect=WatchdogError("injected host-pressure telemetry loss")),
+            patch("nc0a_watchdog._start_sleep_assertion", return_value=None),
+            patch("nc0a_watchdog.shutil.disk_usage", side_effect=disk_usage),
+        ):
+            result = self.run_case("mac-pressure-telemetry-loss", scenario="sleep",
+                                   test_limits=asdict(limits))
+        self.assertEqual(result["status"], "STOPPED_BY_WATCHDOG")
+        self.assertEqual(result["watchdog"]["reason"],
+                         "HOST_MEMORY_PRESSURE_UNAVAILABLE")
+
+    def test_mac_watchdog_sleep_assertion_failure_kills_started_worker_group(self) -> None:
+        limits = _build_watchdog_limits(LIMITS, test_overrides={
+            "wall_seconds": 8.0, "cpu_seconds": 30.0,
+            "case_seconds": 8.0, "oracle_seconds": 8.0,
+            "poll_seconds": 0.05, "terminate_grace_seconds": 0.1,
+        })
+        state = {"swap_used_bytes": 1024, "swap_total_bytes": 4096,
+                 "swap_free_bytes": 3072, "ac_power": True,
+                 "thermal_normal": True, "boot_volume_free_bytes": 80 * 1024**3,
+                 "swap_volume_free_bytes": 80 * 1024**3}
+        run_dir = self.runs / "mac-sleep-assertion-failure"
+        actual_disk_usage = shutil.disk_usage
+        real_popen = subprocess.Popen
+        captured = {}
+
+        def disk_usage(path):
+            if str(path) in {"/System/Volumes/Data", "/System/Volumes/VM"}:
+                return shutil._ntuple_diskusage(100 * 1024**3,
+                                                80 * 1024**3,
+                                                20 * 1024**3)
+            return actual_disk_usage(path)
+
+        def fail_after_runner_is_live(_watchdog_pid, required):
+            self.assertTrue(required)
+            lease = run_dir / "h3-active-lease.json"
+            deadline = time.monotonic() + 3
+            while not lease.is_file() and time.monotonic() < deadline:
+                time.sleep(0.01)
+            self.assertTrue(lease.is_file(), "synthetic runner did not start")
+            raise WatchdogError("injected caffeinate startup failure")
+
+        def capture_popen(*args, **kwargs):
+            proc = real_popen(*args, **kwargs)
+            captured["pid"] = proc.pid
+            return proc
+
+        with (
+            patch("nc0a_watchdog.validate_macos_sampled_backend", return_value=state),
+            patch("nc0a_watchdog.sample_host_memory_pressure",
+                  return_value={"free_percent": 50, "estimated_available_bytes": 8}),
+            patch("nc0a_watchdog._start_sleep_assertion",
+                  side_effect=fail_after_runner_is_live),
+            patch("nc0a_watchdog.shutil.disk_usage", side_effect=disk_usage),
+            patch("nc0a_watchdog.subprocess.Popen", side_effect=capture_popen),
+        ):
+            result = self.run_case("mac-sleep-assertion-failure", scenario="sleep",
+                                   test_limits=asdict(limits))
+        self.assertEqual(result["status"], "FAILED_AUDIT_OR_WATCHDOG")
+        self.assertEqual(result["watchdog_exception"]["type"], "WatchdogError")
+        self.assertIn("pid", captured)
+        deadline = time.monotonic() + 3
+        live_members = [object()]
+        while live_members and time.monotonic() < deadline:
+            try:
+                members = sample_process_group(captured["pid"])
+            except (ProcessLookupError, WatchdogError, subprocess.SubprocessError):
+                members = []
+            live_members = [member for member in members
+                            if not member.state.startswith("Z")]
+            if live_members:
+                time.sleep(0.05)
+        self.assertEqual(live_members, [], "worker survived sleep-assertion failure")
 
     def test_public_pilot_bundle_hashes_order_and_all_row_identities(self) -> None:
         pilot_path = HERE / "G0_RIKEN_H3_CALIBRATION_PILOT_2026-10-21.json"
