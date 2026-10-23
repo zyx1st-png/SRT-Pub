@@ -34,7 +34,9 @@ jobs:
             nc0a_macos_long_probe.py \
             nc0a_microbenchmark.py \
             nc0a_researcher_authorization.py \
-            g0_minimal_executor.py
+            riken_source_identity.py \
+            g0_minimal_executor.py \
+            h3_supervised_pilot.py
       - name: Reject undefined names in synthetic execution modules
         working-directory: Experiments/neuro_sleep_null_calibration
         run: ruff check --select F821 .
@@ -56,7 +58,9 @@ jobs:
             test_psa_runtime_evidence.py \
             test_psa_history_inventory.py \
             test_nc0a_budget_preflight.py \
-            test_g0_minimal_executor.py
+            test_riken_source_identity.py \
+            test_g0_minimal_executor.py \
+            test_h3_supervised_pilot.py
       - name: Confirm no formal NC-0a runner launched
         run: |
           echo "Only small unit tests; never start 16x8x32E or RIKEN biological nulls."

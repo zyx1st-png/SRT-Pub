@@ -9,6 +9,7 @@ separately signed approval record and trusted reviewer key.
 
 from __future__ import annotations
 
+from contextlib import contextmanager
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 import fcntl
@@ -33,6 +34,47 @@ from typing import Callable, Iterable
 
 class WatchdogError(RuntimeError):
     pass
+
+
+def _default_activity_lock_path() -> Path:
+    if sys.platform == "darwin":
+        state_root = Path.home() / "Library" / "Application Support" / "SRT-Pub" / "h3-state"
+    else:
+        state_home = Path(os.environ.get("XDG_STATE_HOME", Path.home() / ".local/state"))
+        state_root = state_home / "srt-pub" / "h3-state"
+    return state_root / "supervised-activity.lock"
+
+
+@contextmanager
+def supervised_activity_lock():
+    """Serialize Watchdog-supervised compute activities on this host.
+
+    The advisory lock is released by the kernel after process death. Persistent
+    activity ledgers remain the caller's responsibility and can fail closed on
+    an unpaired start record.
+    """
+    path = _default_activity_lock_path()
+    path.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+    if path.parent.is_symlink() or not path.parent.is_dir():
+        raise WatchdogError("Host activity state directory must be a real directory")
+    path.parent.chmod(0o700)
+    if path.is_symlink():
+        raise WatchdogError("Host activity lock cannot be a symlink")
+    fd = os.open(path, os.O_RDWR | os.O_CREAT | getattr(os, "O_NOFOLLOW", 0), 0o600)
+    try:
+        if not os.path.isfile(path) or os.fstat(fd).st_nlink != 1:
+            raise WatchdogError("Host activity lock must be a single regular file")
+        os.fchmod(fd, 0o600)
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise WatchdogError("Another Watchdog-supervised compute activity holds the host lock") from exc
+        yield fd
+    finally:
+        try:
+            fcntl.flock(fd, fcntl.LOCK_UN)
+        finally:
+            os.close(fd)
 
 
 def guard_watchdog_parent(expected_parent_pid: int, *, poll_seconds: float = 0.25,
@@ -131,6 +173,13 @@ class HashChainLog:
     def close(self) -> None:
         fcntl.flock(self.fd, fcntl.LOCK_UN)
         os.close(self.fd)
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, traceback):
+        self.close()
+        return False
 
 
 def verify_hash_chain(path: str | Path) -> tuple[int, str]:
@@ -750,13 +799,36 @@ def supervise(command: list[str], *, run_dir: str | Path,
               stdout_name: str = "runner.stdout.log",
               invocation_id: int | None = None,
               stop_guard: Callable[[], str | None] | None = None,
-              inherited_fds: tuple[int, ...] = ()) -> dict:
+              inherited_fds: tuple[int, ...] = (),
+              runner_is_compute_worker: bool = False,
+              environment: dict[str, str] | None = None,
+              _activity_lock_fd: int | None = None) -> dict:
     """Run and monitor a single scientific runner; terminate its whole group.
 
     ``clock`` returns (UTC epoch seconds, suspend-aware-comparison monotonic
     seconds) and is injectable for bounded tests. Wall accounting uses UTC so
     system sleep is included; any material UTC/monotonic divergence is a stop.
     """
+    if _activity_lock_fd is None:
+        with supervised_activity_lock() as activity_lock_fd:
+            return supervise(
+                command, run_dir=run_dir, limits=limits, sampler=sampler,
+                sleeper=sleeper, clock=clock, audit_name=audit_name,
+                stdout_name=stdout_name, invocation_id=invocation_id,
+                stop_guard=stop_guard, inherited_fds=inherited_fds,
+                runner_is_compute_worker=runner_is_compute_worker,
+                environment=environment, _activity_lock_fd=activity_lock_fd)
+    expected_lock = _default_activity_lock_path()
+    if expected_lock.is_symlink():
+        raise WatchdogError("Host activity lock cannot be a symlink")
+    try:
+        lock_stat = os.fstat(_activity_lock_fd)
+        path_stat = os.stat(expected_lock, follow_symlinks=False)
+        if (lock_stat.st_dev, lock_stat.st_ino) != (path_stat.st_dev, path_stat.st_ino):
+            raise WatchdogError("Internal activity lock descriptor is not the host lock")
+        fcntl.flock(_activity_lock_fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except (OSError, TypeError, ValueError) as exc:
+        raise WatchdogError("Host activity lock is not held by this invocation") from exc
     if not command or any(not isinstance(x, str) for x in command):
         raise ValueError("A nonempty argument-vector command is required")
     if invocation_id is not None and (type(invocation_id) is not int or invocation_id < 1):
@@ -765,6 +837,13 @@ def supervise(command: list[str], *, run_dir: str | Path,
             any(type(fd) is not int or fd < 0 for fd in inherited_fds) or
             len(set(inherited_fds)) != len(inherited_fds)):
         raise ValueError("inherited_fds must be a tuple of distinct open file descriptors")
+    if type(runner_is_compute_worker) is not bool:
+        raise ValueError("runner_is_compute_worker must be a boolean")
+    if environment is not None and (
+            not isinstance(environment, dict) or
+            any(not isinstance(key, str) or not isinstance(value, str) or
+                "\0" in key or "\0" in value for key, value in environment.items())):
+        raise ValueError("environment must map strings to strings without NUL bytes")
     for fd in inherited_fds:
         os.fstat(fd)
     macos_initial = None
@@ -834,6 +913,8 @@ def supervise(command: list[str], *, run_dir: str | Path,
     role_registry_path: Path | None = None
     try:
         child_env = os.environ.copy()
+        if environment:
+            child_env.update(environment)
         child_env["NC0A_WATCHDOG_PARENT_PID"] = str(os.getpid())
         launch_token = secrets.token_hex(32)
         child_env["NC0A_WATCHDOG_LAUNCH_TOKEN"] = launch_token
@@ -849,6 +930,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
         log.append({"event": "run_started", "utc": datetime.now(timezone.utc).isoformat(),
                     "invocation": invocation_id,
                     "pid": proc.pid, "pgid": proc.pid, "command": command,
+                    "runner_is_compute_worker": runner_is_compute_worker,
                     "limits": asdict(limits),
                     "macos_initial_state": macos_initial,
                     "stop_thresholds": {
@@ -922,7 +1004,10 @@ def supervise(command: list[str], *, run_dir: str | Path,
             if unresolved_pids:
                 unexpected_processes = _unexpected_process_diagnostics(
                     samples, unresolved_pids)
-            peak_workers = max(peak_workers, len(process_classes["worker_pids"]))
+            compute_worker_count = (len(process_classes["worker_pids"]) +
+                                    int(runner_is_compute_worker and
+                                        proc.pid in process_classes["runner_pids"]))
+            peak_workers = max(peak_workers, compute_worker_count)
             peak_resource_trackers = max(
                 peak_resource_trackers, len(process_classes["resource_tracker_pids"]))
             peak_process_members = max(peak_process_members, len(samples))
@@ -1028,7 +1113,7 @@ def supervise(command: list[str], *, run_dir: str | Path,
                 stop_reason = stop_reason or "FREE_DISK_RESERVE_BREACH"
             elif unresolved_pids:
                 stop_reason = stop_reason or "UNKNOWN_PROCESS_GROUP_MEMBER"
-            elif len(process_classes["worker_pids"]) > limits.max_workers:
+            elif compute_worker_count > limits.max_workers:
                 stop_reason = stop_reason or "WORKER_CONCURRENCY_LIMIT"
             elif phase == "case" and phase_elapsed is not None and phase_elapsed >= max(0.01, limits.case_seconds - case_margin):
                 stop_reason = stop_reason or "CASE_WALL_LIMIT"
