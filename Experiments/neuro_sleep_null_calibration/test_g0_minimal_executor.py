@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import platform
 import sys
@@ -12,7 +13,8 @@ from unittest import mock
 
 from g0_external_storage import G0ExternalStore, RecoveryRefused
 from g0_minimal_executor import (
-    G0TaskIdentity, _audit_replay_verifier, canonical_json, g0_graph_seed,
+    G0ScientificFailure, G0TaskIdentity, _audit_replay_verifier, _validate_result,
+    canonical_json, g0_graph_seed,
     g0_louvain_seed, normalize_graph_input, run_synthetic_g0_activity,
     run_synthetic_g0_task,
     runtime_manifest,
@@ -155,6 +157,16 @@ class G0MinimalExecutorTests(StorageFixture):
                          result["swap"]["rejected_disconnect"])
         self.assertEqual(result["louvain"]["trial_count"], 200)
         self.assertEqual(len(result["louvain"]["q_values"]), 200)
+        self.assertEqual(result["louvain"]["order_policy"],
+                         "CANONICAL_SORTED_EDGE_V1")
+        self.assertTrue(result["louvain"]["q_graph_topology_sha256"])
+        self.assertTrue(result["louvain"][
+            "q_graph_ordered_representation_sha256"])
+        from g0_q_protocol import q_vector_sha256, seed_vector_sha256
+        self.assertEqual(result["louvain"]["q_vector_sha256"],
+                         q_vector_sha256(result["louvain"]["q_values"]))
+        self.assertEqual(result["louvain"]["seed_vector_sha256"],
+                         seed_vector_sha256(result["seed_manifest"]["louvain_seeds"]))
         self.assertEqual(report["watchdog"]["status"], "completed")
         self.assertEqual(report["watchdog"]["usage"]["peak_compute_workers"], 4)
         self.assertEqual(report["recovery_report"].completed_task_ids,
@@ -173,6 +185,23 @@ class G0MinimalExecutorTests(StorageFixture):
                          result["swap"]["proposal_audit_tip_sha256"])
         self.assertEqual(hashlib.sha256(compressed).hexdigest(),
                          result["artifacts"]["proposal_audit"]["sha256"])
+        checkpoint_rel = result["artifacts"]["null_graph_checkpoint"]["relative_path"]
+        checkpoint = (self.external / self.policy.run_root_relative / store.run_uuid /
+                      checkpoint_rel)
+        checkpoint_payload = json.loads(gzip.decompress(checkpoint.read_bytes()))
+        final_edges = tuple(tuple(edge) for edge in checkpoint_payload["edges"])
+        _validate_result(
+            result, 4 * graph.m, expected_node_labels=graph.nodes,
+            final_edges=final_edges,
+            expected_seeds=tuple(result["seed_manifest"]["louvain_seeds"]))
+        original_q_hash = result["louvain"]["q_vector_sha256"]
+        result["louvain"]["q_vector_sha256"] = "0" * 64
+        with self.assertRaisesRegex(G0ScientificFailure, "Q vector hash"):
+            _validate_result(
+                result, 4 * graph.m, expected_node_labels=graph.nodes,
+                final_edges=final_edges,
+                expected_seeds=tuple(result["seed_manifest"]["louvain_seeds"]))
+        result["louvain"]["q_vector_sha256"] = original_q_hash
         self.assertEqual(result["artifacts"]["proposal_audit"]["stream_metadata"][
             "stream_format"], "G0_GZIP_CANONICAL_JSONL_AUDIT_V1")
         stdout_path = store.control_dir / "runner.g0.1.stdout.log"
