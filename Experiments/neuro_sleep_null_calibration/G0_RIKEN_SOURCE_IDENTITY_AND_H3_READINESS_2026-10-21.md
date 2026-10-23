@@ -2,7 +2,7 @@
 id: SRT-NEURO-G0-RIKEN-SOURCE-IDENTITY-H3-READINESS-20261021
 type: audit
 status: draft
-updated: 2026-10-21
+updated: 2026-10-23
 layer: operations
 epistemic_layer: experimental
 claim_mode: evidence
@@ -20,6 +20,162 @@ This record accompanies the public-safe inventory generated from the preserved
 local PS-A artifacts. It does not change the preregistered graph rule, produce
 any biological null graph or Q value, or authorize resource benchmarking.
 Formal G0/T1 status remains **RESOURCE NO-GO**.
+
+## Current status and prospective Q-order decision (2026-10-23)
+
+This section updates the preparation-era execution status below. It does not
+change the frozen graph/null/statistical protocol, authorize another biological
+run, or make the resource amendment effective.
+
+### Completed H3 pilot: 10 of the fixed 120 graphs
+
+The fixed pilot completed under the report at
+[PR #1127 comment #6358214859](https://github.com/zyx1st-png/SRT-Pub/pull/1127#issuecomment-6358214859): run UUID
+`7f69d7bf-6454-4d78-8e72-43af5b8d63a7`, execution HEAD
+`7be6d57cb4e55d0abfeb4b4491fe402b8c51beeb`, pilot SHA-256
+`286fa084f125d205463218951e3ccf2640701dc7712a9a48cec62b323a49c36b`, and
+identity-manifest SHA-256
+`6a8357ac0b815c434421a31dc6c294c292b5c144713f49c52b5344038235ece2`.
+All 10 fixed graphs passed source/edge identity and authoritative historical-
+order replay: 2,000/2,000 trial Q values matched exactly, Qmax and first-max
+index matched for all ten. The #1126 sorted-edge insertion diagnostic was
+incompatible on all ten: 1,812/2,000 trial values exceeded the `1e-10`
+absolute comparison, maximum per-graph absolute difference `0.02179`, Qmax
+outside `1e-6` on 9/10, and first-max index differed on 9/10. This is a
+representation-sensitive Louvain result, not a graph-identity failure.
+
+The 10 completed IDs are members of both the fixed 120-graph H3 panel and the
+4,900-row expected G0 source inventory. They are all `mouse01_sleep`, Wake,
+one graph at each registered N. Thus 10/120 H3 graph reconstructions and
+10/4,900 G0 edge sets are verified; the other 110 H3 panel edge sets and the
+other 4,890 G0 edge sets remain un-reconstructed. The 4,900-row expected
+source identity mapping itself remains verified; that mapping is not evidence
+that the corresponding edge sets were built. The completed panel has not yet
+covered the other five recorded sources, NREM, or the within-N repeat/window
+variation. The full 120 replay has not run. The independent incremental audit
+verified artifacts and identity/hash evidence but did not independently rerun
+Louvain.
+
+The run used 573.25 seconds wall, 606.34 process-tree CPU seconds, 1.832 GB
+maximum sampled aggregate RSS, and 1.244 MB output; the runner executed one
+compute worker. RSS is sampled monitoring, not a hard memory limit. These
+measurements describe this fixed 10-graph pilot only.
+
+### Prospective common observed/null Q policy — researcher decision pending
+
+The comparison needs one graph-order policy because `python-louvain 0.16`
+uses adjacency iteration order in seeded community moves and tie resolution.
+Identical labeled topology and seed do not guarantee identical finite-run Q
+when neighbor insertion order differs. The 10-graph result directly confirms
+that the historical and #1126 sorted-edge paths do not produce the same
+finite-200 Q statistic.
+
+**Recommended candidate: one canonical representation for observed and null
+graphs.** Add nodes in ascending saved original-neuron index; add each
+undirected edge once as `(min(u,v), max(u,v))`, in lexicographic pair order,
+with weight `1.0`. Apply this same builder to each reconstructed observation
+and each final 4E null graph. Use the existing, hash-bound ordered 200-seed
+vector for each observed source graph and the already fixed per-null seed
+vector for each null task; do not regenerate or reorder seeds. For each seed,
+call `best_partition(weight="weight", resolution=1.0, random_state=seed)` and
+evaluate modularity on that same graph. The primary graph statistic remains
+`Qmax_200 = max(Q[0:200])`; ties retain the first maximizing trial index.
+Record all 200 trial Q values, seed-vector hash, topology hash, ordered
+representation hash, environment, and first-max index. A candidate policy
+identifier is `CANONICAL_SORTED_EDGE_V1`.
+
+This gives observed and null graphs the same deterministic mapping from
+labeled topology to Louvain input. It does **not** make Louvain an exact
+optimizer, remove stochastic heuristic error, establish order invariance, or
+prove that 200 trials find a global maximum. Retain the 200-trial maximum as
+the primary statistic. As descriptive diagnostics, report Q maxima at the
+fixed seed prefixes 50/100/150/200 and the number of distinct returned
+partitions; these diagnostics do not change the 200-trial endpoint, create a
+new pass threshold, or authorize extra result-dependent trials.
+
+The alternative is to retain historical insertion order and define a
+source-derived null order (for example, source edges that remain in the final
+graph in their original historical order, followed by non-source edges in
+lexicographic order). This could preserve the published historical Q baseline
+and be deterministic if edge provenance is retained, but it leaves null Q
+dependent on which source edges survive and gives the observed and null
+topologies different adjacency sequences. Carrying each accepted swap's
+insertion order instead would also make Q depend on the random proposal path.
+Neither rule is currently implemented or validated. I do not recommend it as
+the primary comparison because it retains an avoidable representation effect.
+
+Adopting the canonical candidate is a **prospective method amendment**, not a
+mechanical fix. Historical PS-A Q vectors remain immutable provenance, while
+the primary observed baseline would need canonical recomputation for all
+4,900 source graphs: 980,000 Louvain trials. The observed slopes, paired
+`D_excess`, and downstream NC-A/NC-B/NC-C classifications can change because
+the finite-heuristic Q values change. Graph construction, 4E kernel, fixed
+seeds, 200-trial maximum, aggregation, inferential thresholds, and failure
+rules remain unchanged; the amended protocol must explicitly distinguish
+legacy historical replay from the new primary canonical Q baseline before any
+biological null Q is inspected. No amendment is approved by this document.
+
+### Fixed 120-graph H3 completion plan and candidate limits
+
+Keep the exact Q-independent 120 IDs already frozen in the manifest: 6
+recorded sources (5 animals, with mouse04 day1/day2 separately represented),
+two states, ten N values, one fixed graph per source × state × N. This covers
+60 Wake and 60 NREM graphs, with 12 per N. Do not reselect rows. Run the two
+representations in fixed order and report source identity, historical-order
+Q replay, and canonical-order Q comparison separately. A canonical-order
+mismatch against historical Q is a compatibility result, not a reason to
+invalidate an otherwise passing source identity or historical replay.
+
+The current launcher is hard-wired to ten IDs and 4,000 Q trials; it is not a
+120-graph production entry point. Before a separately authorized H3 run, the
+minimum scoped preparation is a new hash-bound 120-row packet/schema, runner
+support for exactly those 120 IDs and 48,000 graph-order/seed evaluations,
+and private persistence of complete canonical Q vectors so verified results
+can be reused by the 4,900-graph baseline. Use a new UUID and audit directory;
+retain the completed 10-graph run as immutable history. Re-run live source,
+environment, disk, memory-pressure, power, thermal, Watchdog, lock and output
+preflight before execution.
+
+Candidate stop ceilings for researcher review are **8 wall-hours, 8
+process-tree CPU-hours, one compute worker, 4 GiB sampled aggregate RSS, and
+1 GiB output**. The 10-graph run gives a naive ×12 reference of about 1.91
+wall-hours and 2.02 CPU-hours, so the candidates are about four times those
+linear estimates. This is not a U95 bound: all ten pilot rows were from one
+recording and Wake, while the full panel includes other sources and NREM.
+Observed output scaled linearly would be about 15 MB, also not a validated
+output bound. The 4 GiB RSS ceiling is about 2.2 times the largest sampled
+pilot value, not a hard limit. Retain the existing independent Data/VM free
+space checks (40 GiB at start, 30 GiB reserve while running), free-memory
+floor (at least 20% available memory), Swap-growth stop (>2 GiB increase), AC
+power, normal thermal state, sleep-prevention and fail-stop Watchdog
+conditions. These are candidate loss limits, not an authorization or a
+completion guarantee; stop on the first identity, historical-Q, audit or
+resource failure, with no sample replacement or outcome-directed retry.
+
+### Canonical baseline and G0/T1 boundary
+
+Only after the Q policy is prospectively approved, rebuild and hash-bind all
+4,900 observed graphs and compute the canonical 200-seed Q vector for each.
+The fixed 120 H3 canonical vectors may count toward this total only if their
+source, edge-set, order-policy, seed-vector and environment hashes match the
+baseline manifest exactly. The current 10-graph artifact contains comparisons,
+not a reusable complete canonical Q-vector cache. Then complete the other
+4,780 rows (956,000 trials); the aggregate remains 980,000 observed trials.
+Keep raw signals private. Cache only validated graph/result artifacts under
+keys that bind MAT hash, selected-neuron/frame hashes, graph-builder version,
+edge-set/order hashes, seed-vector hash, and environment lock. Do not overwrite
+historical PS-A jobs or H3 audit files.
+
+Each of the 4,900 graph reconstructions requires source-window loading,
+correlation construction, MST, and strongest-edge selection. At N=3,900 one
+dense float64 correlation matrix alone is 116.1 MiB; correlation, absolute-
+value, distance and MST temporaries can coexist, so this is not a peak-RAM
+estimate. The 980,000 Louvain trials and graph rebuilds must be separately
+timed on preapproved representative strata before a total budget can be
+proposed. Do not scale the H3 pilot into a completion bound. Add the full
+observed-baseline cost to PR #1124's resource model; G0's 9.8 million null
+Louvain trials remain a separate additional workload. Neither this plan nor
+the H3 result changes **G0/T1 RESOURCE NO-GO**.
 
 ## Evidence checked
 
@@ -116,14 +272,15 @@ not a RIKEN input and does not stand in for any real source graph.
 The hash of those exact extracted historical functions is
 `59ed4ea1537d3b104e8ff9903ce98c51f69bb58edc09854933886f637ad90866`.
 
-The graph reconstruction path now preserves and separately measures three
-questions: (1) whether the source input and reconstructed historical graph
-match the identity record, (2) whether a 200-seed replay on the historical
-adjacency order reproduces the archived Q vector, and (3) whether PR #1126's
-sorted-edge insertion order is compatible. The third result is diagnostic:
-an executor-order mismatch cannot invalidate a source graph or a passing
-historical-order replay. Historical insertion order is authoritative for
-observed-Q reproduction; the sorted-edge path remains a compatibility test.
+The preparation-time reconstruction path separates three questions: (1)
+whether source input and reconstructed historical graph match the identity
+record, (2) whether a 200-seed replay on historical adjacency order reproduces
+the archived Q vector, and (3) whether PR #1126's sorted-edge insertion order
+is compatible. The third result is diagnostic: an executor-order mismatch
+cannot invalidate a source graph or a passing historical-order replay. Under
+the original PS-A protocol, historical insertion order is authoritative for
+reproducing legacy observed Q. The prospective primary order for future G0
+comparisons is a separate, unresolved researcher decision documented above.
 
 The frozen historical insertion sequence is: add nodes `0..N-1`; add the
 `N-1` minimum-spanning-tree edges sorted by normalized endpoint pair; add all
@@ -148,26 +305,25 @@ the saved seed vector in order and performs no edge swaps. Worker count affects
 the schedule, while each trial's graph, seed, Louvain call and Q definition
 remain the comparison target.
 
-The candidate trial-Q tolerance is now fixed in the validator, before any
-biological replay: absolute error `1e-10`, relative tolerance `0`; Qmax remains
-within the already specified `1e-6`, with the first maximum index required to
-match exactly. This candidate is proposed for independent/researcher review,
-not yet approved. The validator compares each finite trial using
-`abs(actual - reference) > 1e-10`; equality at the threshold passes and no
-relative term is applied. Its Qmax comparison is independently
+The H3 pilot applied absolute trial-Q tolerance `1e-10`, relative tolerance
+zero; Qmax tolerance `1e-6`; and exact first-maximum-index agreement. The
+validator compares each finite trial using `abs(actual - reference) > 1e-10`;
+equality at the threshold passes. Its Qmax comparison is independently
 `abs(max(actual) - reference_max) > 1e-6`, plus exact equality of the first
-maximizing index. The supervised synthetic regression checks both the exact
-`1e-10` boundary and the next value above it. I recommend freezing these
-pre-run rules as written; that recommendation is not the researcher's approval.
-The historical run record captures Python 3.14.0, macOS
-15.7.4 arm64, NumPy 2.5.3, NetworkX 3.6.1 and python-louvain 0.16, but does
-not record the SciPy version used by the historical MST or h5py/HDF5 versions.
-The replay environment therefore uses a candidate lock (including SciPy
-1.18.1 and h5py 3.16.0) that matches the recorded versions where known; it
-cannot prove exact historical floating-point equivalence. No tolerance may be
-changed after seeing pilot Q differences. A failure at `1e-10` remains a
-failure unless a prospective amendment is independently reviewed before any
-replay.
+maximizing index. The supervised synthetic regression checks the exact
+`1e-10` boundary and the next value above it. These limits remain fixed for
+the H3 historical-Q integrity check and are not a post-hoc acceptance
+threshold for declaring the canonical-order Q vector equal to the historical
+one. A canonical-vs-historical difference is reported as representation
+compatibility, without loosening these checks. The historical run record
+captures Python 3.14.0, macOS 15.7.4 arm64, NumPy 2.5.3, NetworkX 3.6.1 and
+python-louvain 0.16, but does not record the SciPy version used by the
+historical MST or h5py/HDF5 versions. The replay environment therefore uses a
+candidate lock (including SciPy 1.18.1 and h5py 3.16.0) that matches the
+recorded versions where known; it cannot prove exact historical floating-point
+equivalence. No tolerance may be changed after seeing pilot Q differences. A
+failure at `1e-10` remains a failure unless a prospective amendment is
+reviewed before the affected replay.
 
 The saved job loader verifies each selected source MAT hash, job-file hash,
 coordinate, 200-seed vector hash, archived ordered Q-vector hash, Qmax and
@@ -196,16 +352,13 @@ absolute trial-Q difference was `0.019921875000000117`. This is not a
 biological finding. It demonstrates that edge-set equality alone does not
 establish replay equivalence for the current Louvain call path.
 
-The existing H3 protocol requires exact labeled edge-set identity and Q
-comparison to the saved historical vector. No biological correlation matrix
-was built and no biological Louvain replay ran in this round, so the real H3
-compatibility outcome remains **UNRESOLVED**. A sorted-order mismatch during
-the fixed pilot is a compatibility finding, not a source-identity failure;
-the pilot must still stop at the first source/graph or authoritative
-historical-order Q integrity failure. Do not run biological G0 null tasks
-unless the H3 identity gate is resolved under the existing protocol or an
-explicit prospective amendment is independently reviewed before any null
-outcome is inspected.
+At the time this preparation snapshot was written, no biological correlation
+matrix or Louvain replay had run and real H3 compatibility was unresolved.
+That historical status is superseded by the completed 10-graph result in the
+current-status section above. The observed sorted-order mismatch remains a
+compatibility finding, not a source-identity failure. Do not run biological
+G0 null tasks until the identity and Q-order policy are resolved prospectively
+before any null outcome is inspected.
 
 The original PS-A runner used NetworkX `fork` multiprocessing; the current G0
 path uses `spawn` and a fresh ProcessPool per task. The Q/seed algorithm is the
@@ -261,7 +414,7 @@ validated it, and removing per-record predecessor/digest fields must be
 reviewed against the existing per-proposal audit obligation. The storage cap
 therefore remains unvalidated and RESOURCE NO-GO remains in force.
 
-## Fixed ten-graph H3 pilot packet (prepared, not run)
+## Fixed ten-graph H3 pilot packet (preparation record; subsequently executed)
 
 The Q-independent first row of the already frozen H3 panel was selected for
 each ascending N. This means the pilot intentionally uses the first registered
@@ -299,9 +452,11 @@ public packet contains no raw signal values, Q values, private paths or job
 JSON; an output scan found none of `/Users/`, `.local/`, `q_values` or
 `spike_smoothed`.
 
-The packet status is `PREPARED_NOT_APPROVED_NOT_EXECUTED`. Candidate ceilings,
-not approved limits, are 8 wall-hours, 32 process-tree CPU-hours, at most four
-compute workers, 4 GiB sampled aggregate process-tree RSS, and 1 GiB output.
+At packet creation its status was `PREPARED_NOT_APPROVED_NOT_EXECUTED`; the
+later completed execution is documented above and in the linked PR comment.
+The original 10-graph request proposed ceilings of 8 wall-hours, 32
+process-tree CPU-hours, at most four compute workers, 4 GiB sampled aggregate
+process-tree RSS, and 1 GiB output.
 The workload is at most 10 graph reconstructions and 4,000 Louvain trials
 (the 200 saved seeds on both authoritative historical and diagnostic sorted
 edge orders). These are stop ceilings, not an estimate of completion time;
@@ -346,7 +501,9 @@ insertion compatibility is diagnostic and does not invalidate the historical
 graph. Recovery inspection is audit-only; neither failed rows nor incomplete
 activities are automatically retried.
 
-The launch template, for a later separately approved run, is:
+The following was the launch template for the original 10-graph run; it is
+retained as execution provenance and must not be reused for the 120-graph
+panel:
 
 ```sh
 export SRT_PHASE2_ROOT="<private Phase-2 root>"
@@ -363,28 +520,22 @@ uv run --python 3.14.0 python \
   --researcher-confirmation "I AUTHORIZE H3 PILOT $RUN_ID $PILOT_SHA $HEAD"
 ```
 
-The candidate ceilings remain **not authorized**: 8 wall-hours, 32
-process-tree CPU-hours, at most four compute workers (this launcher currently
-executes the replay serially in one compute process), 4 GiB sampled aggregate
-RSS, and 1 GiB run-directory output. RSS is sampled observation, not a hard
-memory cap or a guarantee against short peaks. The Watchdog serializes
-Watchdog-supervised activities through a persistent host-wide advisory lock;
-activities that do not use this Watchdog are outside that exclusion. A parent
-Watchdog crash triggers a runner-side process-group kill, while an unclosed
-activity ledger blocks subsequent launches and permits audit-only inspection.
-No biological H3 replay ran in this implementation round; the launcher was
-tested only with synthetic graphs, virtual Q references, and injected
-operational failures.
+For the original 10-graph execution, the approved stop ceilings and actual
+use are in the linked completion report. The 120-graph candidate ceilings are
+listed in the current-status section and require a separate researcher
+decision. RSS remains sampled observation, not a hard cap. The Watchdog
+serializes Watchdog-supervised activities through a persistent host-wide
+advisory lock; activities that do not use it are outside that exclusion.
+Parent-Watchdog failure triggers runner-side process-group termination, and
+an unclosed activity ledger blocks a new launch pending audit-only inspection.
 
-When that supervised runner is available and the researcher approves the
-packet hash and limits, the manual review record belongs in a new top-level
-PR #1127 comment, with the packet SHA-256, pilot run UUID, runtime-lock result,
-source/edge-order hashes, per-graph source and historical-Q statuses, sorted
-compatibility status, 200 Q deltas, Qmax/first-index checks, process-tree
-wall/CPU/RSS/disk accounting, watchdog audit hash, and any stop reason. The
-result directory is the private, ignored path
-`$PSA_ROOT/h3_identity_calibration_2026-10-21/<pilot-run-uuid>/`; it must be
-new and empty, and must not overwrite the PS-A source jobs or logs.
+The completed 10-graph execution record is already in the linked top-level
+PR #1127 comment. A future 120-graph report needs a new UUID and private,
+empty audit directory; it must include the 120 packet hash, runtime-lock
+result, source/edge/order hashes, separate per-graph source/historical-Q/
+canonical-Q results, complete Q-vector hashes, Qmax/first-index checks,
+resource accounting, Watchdog audit hash, and any stop reason. It must not
+overwrite PS-A jobs or the completed 10-graph audit.
 
 On a future run, stop immediately and preserve the partial audit on any source
 MAT/job/subset/frame/seed identity mismatch, graph edge/node/degree invariant
@@ -398,53 +549,52 @@ source and historical replay checks pass may the runner proceed to the next
 preselected N. Resource ceiling, watchdog, output-integrity, or unknown failure
 also stops the run; no row is replaced or retried.
 
-## H3 cost request before any full-panel replay
+## H3 cost evidence and remaining full-panel request
 
-No H3 graph or Louvain replay ran. The minimum diagnostic that can separate a
-historical-builder/runtime mismatch from the PR #1126 sorted-insertion path is
-one replay of the saved 200-seed vector on both graph orders for each fixed
-panel member: **120 source graph rebuilds and 48,000 Louvain trials**, with no
-edge swaps and no biological null output. The largest panel matrix is 3,900 ×
-3,900 float64 (121,680,000 bytes / 116.1 MiB) for one dense matrix; the source
-window has 46.8 MB of float64 values before correlation and MST temporaries.
-These are array-size calculations, not measured peak RAM or elapsed time.
-Because T_PS-A remains unresolved and no matching 120-graph performance
-sample exists, a defensible completion-time range is not available.
+The fixed pilot has now run both graph orders for ten members: 10 source graph
+rebuilds and 4,000 Louvain trials, with no edge swaps and no biological null
+output. A full panel remains 120 graph rebuilds and 48,000 Louvain trials.
+The largest panel matrix is 3,900 × 3,900 float64 (121,680,000 bytes / 116.1
+MiB) for one dense matrix; the source window has 46.8 MB of float64 values
+before correlation and MST temporaries. These are array-size calculations,
+not peak-RAM or runtime measurements. T_PS-A remains unresolved, and the
+single-recording/Wake pilot is not a defensible completion-time bound for the
+full cross-recording/state panel.
 
-A bounded first-stage pilot uses the prepared first fixed H3 ID at each of the
-ten N values: 10 graph rebuilds and 4,000 Louvain trials (both graph orders),
-including a maximum-N graph. Its candidate ceiling for researcher review is
-**8 wall-hours / 32 process-tree CPU-hours, four workers, sampled process RSS
-≤4 GiB, and ≤1 GiB output**, stopping on the first integrity mismatch. These
-are proposed loss limits, not a measured completion bound or current
-authorization. The trial-Q tolerance and exact ten graph IDs are now fixed in
-the preparation packet; the tolerance still requires review before execution,
-and the sorted executor compatibility is intentionally measured by the pilot.
-If it passes, the full 120
-graph H3 run still needs its own approved budget based on the pilot; do not
-extrapolate the pilot as an upper bound.
+A rough linear scaling of the measured 10-graph execution gives 1.91 wall-
+hours and 2.02 CPU-hours for 120 graphs, but this is only an order-of-magnitude
+reference: each N in the pilot came from the same Wake recording, and costs
+can vary with source/session, state, correlation ties, and Louvain partition
+trajectory. The candidate 8 wall-hours / 8 CPU-hours / one worker / 4 GiB
+sampled RSS / 1 GiB output limits in the current-status section provide about
+four times that simple scaling, but no validated upper prediction. Do not
+start until the fixed 120 packet and launcher support, method decision,
+resource review, and fresh live preflight are complete.
 
 ## Required next steps
 
-1. Independently review the generated manifest, source-hash checks and exact
-   historical graph extraction. The 4,900 source graph edge hashes remain
-   pending; do not bulk-build them as a side effect of inventory generation.
-2. Review and freeze the proposed `1e-10` absolute trial-Q tolerance (relative
-   tolerance zero), retaining the existing `1e-6` Qmax and exact first-max
-   index checks. The archived environment did not record SciPy, so exact
-   floating-point compatibility cannot be established before replay.
-3. Independently review the watchdog-supervised H3 pilot launcher and its
-   synthetic fault tests; the researcher must separately approve the prepared
-   packet, proposed tolerance and candidate ceilings before a real pilot.
-   No 10-graph replay ran here. If it passes, submit a separate full-panel
-   resource request; no 120-panel replay ran here.
-4. Resolve the gzip JSONL versus packed audit format and demonstrate the
-   14-GiB output cap with a representative, preapproved synthetic measurement.
-5. Make the resource simulator match the actual serial-per-task/four-worker
-   executor and enforce a host-wide four-worker ceiling before any formal
-   benchmark.
+1. Decide whether to prospectively amend the G0 observed/null Q representation
+   to `CANONICAL_SORTED_EDGE_V1`. Keep the historic PS-A vectors immutable;
+   if approved, update the relevant preregistration/resource documents before
+   any biological null outcome is inspected.
+2. If the policy is approved, make the minimal versioned 120-row H3 packet and
+   runner extension, persist full canonical Q vectors, and obtain a separate
+   researcher decision on the candidate 8h/8 CPU-hour/one-worker limits.
+3. Execute the fixed 120 panel only after fresh identity, environment and
+   resource preflight and explicit authorization. Stop on any source identity
+   or historical-Q failure; record canonical-order differences without
+   changing tolerance or sample membership.
+4. Use the completed 120 panel to validate strata and reuse exact canonical
+   Q vectors where hashes match. Then separately review and resource-plan the
+   remaining observed baseline and G0 null workload. Do not use the H3 runtime
+   as a G0 completion bound.
+5. Resolve the proposed G0 audit encoding and validate the 14-GiB cap on
+   representative synthetic tasks; preserve G0/T1 RESOURCE NO-GO until the
+   full cost and storage model is independently reviewed.
 
-Until those gates are resolved, **0/4,900 real edge sets and 0/120 H3 replay
-rows are confirmed**. The verified result is a complete, hash-bound expected
-identity map and existing-Q reference inventory, not a completed source graph
-reconstruction or resource GO.
+Current verified state: **10/4,900 G0 source graphs have reconstructed edge
+identities; 10/120 fixed H3 graphs have source identity and historical-Q
+replay; 110 H3 panel and 4,890 other G0 edge sets remain pending.** All 4,900
+expected source identity rows and all 120 frozen H3 selections are present in
+the manifest. This is not a completed full-panel reconstruction, canonical
+baseline, resource GO, or G0/T1 authorization.
