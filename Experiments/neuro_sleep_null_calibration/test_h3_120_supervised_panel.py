@@ -189,15 +189,22 @@ class TestH3Supervised120Panel(unittest.TestCase):
 
     def test_synthetic_graph_dual_200_q_replay_and_runtime(self) -> None:
         import networkx as nx
+        import platform
 
         runtime = h3_runtime_manifest()
-        self.assertEqual(runtime["actual"], {
-            "h5py": "3.16.0", "networkx": "3.6.1", "numpy": "2.5.3",
-            "python-louvain": "0.16", "scipy": "1.18.1"})
-        self.assertTrue(runtime["replay_environment_matches_recorded_versions_and_candidate_lock"])
-        self.assertEqual(sys.version_info[:3], (3, 14, 0))
-        import platform
-        self.assertEqual(platform.machine(), "arm64")
+        is_target_runtime = (sys.version_info[:3] == (3, 14, 0) and
+                             platform.machine() == "arm64")
+        if is_target_runtime:
+            self.assertEqual(runtime["actual"], {
+                "h5py": "3.16.0", "networkx": "3.6.1", "numpy": "2.5.3",
+                "python-louvain": "0.16", "scipy": "1.18.1"})
+            self.assertTrue(
+                runtime["replay_environment_matches_recorded_versions_and_candidate_lock"])
+        else:
+            # Portable CI may exercise the synthetic logic on another runner,
+            # but it must never report that environment as the target replay.
+            self.assertFalse(
+                runtime["replay_environment_matches_recorded_versions_and_candidate_lock"])
 
         graph = nx.Graph()
         graph.add_nodes_from(range(16))
