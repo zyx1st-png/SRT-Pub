@@ -218,7 +218,9 @@ class TestH3Supervised120Panel(unittest.TestCase):
             historical_graph=graph, source_ids=tuple(range(16)), seeds=seeds,
             reference_q=reference,
             reference_qmax_first_index=first_maximum_index(reference),
-            reference_qmax=max(reference))
+            reference_qmax=max(reference),
+            historical_replay=lambda g, seed_values, **_: replay_louvain_q(
+                g, seed_values, require_target=is_target_runtime))
         self.assertEqual(result["historical_order_q_replay"], "PASS")
         self.assertEqual(result["historical_reference_max_abs_delta"], 0.0)
         self.assertEqual(len(result["historical_q_vector"]), 200)
