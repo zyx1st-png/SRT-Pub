@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-import resource
 import shutil
 import subprocess
 import sys
@@ -17,8 +16,8 @@ from unittest import mock
 from nc0a_watchdog import (
     ProcessUsage, WatchdogLimits, classify_process_group, parse_ps_time,
     parse_macos_swap_state, parse_macos_swap_used_bytes,
-    read_process_role_registry, sample_macos_native_state,
-    sample_process_group, supervise, verify_hash_chain,
+    read_process_role_registry, sample_process_group, supervise,
+    verify_hash_chain,
 )
 
 
@@ -323,9 +322,17 @@ class WatchdogTests(unittest.TestCase):
             self.assertEqual(result["usage"]["memory_enforcement"],
                              "SAMPLED_ONLY_NOT_HARD")
             # Sampling may miss the transient; the result must still state that
-            # no OS hard limit was enforced. Formal policy rejects this backend.
-            self.assertLess(result["usage"]["peak_aggregate_rss_bytes"],
-                            64 * 1024 * 1024)
+            # no OS hard limit was enforced. Depending on scheduler timing, the
+            # allocation may be sampled before the short-lived child exits. In
+            # that case the sampled policy must stop the group; otherwise this
+            # test demonstrates the documented sampling gap. Formal policy
+            # rejects this backend either way.
+            sampled_peak = result["usage"]["peak_aggregate_rss_bytes"]
+            if sampled_peak >= 64 * 1024 * 1024:
+                self.assertEqual(result["status"], "stopped")
+                self.assertEqual(result["reason"], "AGGREGATE_RSS_LIMIT")
+            else:
+                self.assertEqual(result["status"], "completed")
 
     def test_disk_allocation_limit_kills_writer_and_logs_stop(self):
         with tempfile.TemporaryDirectory() as tmp:

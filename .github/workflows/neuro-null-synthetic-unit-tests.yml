@@ -29,6 +29,7 @@ jobs:
             nc0a_authority_ledger.py \
             nc0a_budget_preflight.py \
             nc0a_watchdog.py \
+            g0_external_storage.py \
             nc0a_macos_feasibility_probe.py \
             nc0a_macos_long_probe.py \
             nc0a_microbenchmark.py \
@@ -49,6 +50,7 @@ jobs:
             test_nc0a_researcher_authorization.py \
             test_nc0a_authority_ledger.py \
             test_nc0a_watchdog.py \
+            test_g0_external_storage.py \
             test_nc0a_macos_feasibility_probe.py \
             test_psa_runtime_evidence.py \
             test_psa_history_inventory.py \
