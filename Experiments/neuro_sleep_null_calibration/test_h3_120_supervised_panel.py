@@ -212,7 +212,8 @@ class TestH3Supervised120Panel(unittest.TestCase):
         graph.add_edges_from((i, (i + 1) % 16) for i in range(16))
         graph.add_edges_from((i, (i + 4) % 16) for i in range(16))
         seeds = tuple(range(1, LOUVAIN_TRIALS + 1))
-        reference = replay_louvain_q(graph, seeds, require_target=True)["q_values"]
+        reference = replay_louvain_q(
+            graph, seeds, require_target=is_target_runtime)["q_values"]
         result = h3_120.compute_dual_order_q(
             historical_graph=graph, source_ids=tuple(range(16)), seeds=seeds,
             reference_q=reference,
