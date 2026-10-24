@@ -188,8 +188,9 @@ class TestH3Supervised120Panel(unittest.TestCase):
         self.assertEqual(calls, [])
 
     def test_synthetic_graph_dual_200_q_replay_and_runtime(self) -> None:
-        import networkx as nx
         import platform
+
+        import networkx as nx
 
         runtime = h3_runtime_manifest()
         is_target_runtime = (sys.version_info[:3] == (3, 14, 0) and
@@ -236,7 +237,8 @@ class TestH3Supervised120Panel(unittest.TestCase):
             seen.append(row["graph_id"])
             return self._fake_result(row)
 
-        result = h3_120.execute_ordered_panel(rows, run_dir=run_dir, process_row=process)
+        result = h3_120.execute_ordered_panel(
+            rows, run_dir=run_dir, process_row=process, synthetic_test_only=True)
         self.assertEqual(result["status"], "completed")
         self.assertEqual(seen, [row["graph_id"] for row in rows])
         self.assertEqual(len(list((run_dir / h3_120.ROW_DIR).glob("*.json"))), 120)
@@ -244,6 +246,7 @@ class TestH3Supervised120Panel(unittest.TestCase):
         # Artifact verification alone is not a completed supervised run: the
         # Watchdog summary and host activity ledger are required as well.
         self.assertFalse(verified["completed_120_row_panel"])
+        self.assertTrue(verified["synthetic_test_only"])
         self.assertEqual(verified["result_artifacts_verified"], 120)
         self.assertFalse(verified["resume_allowed"])
 
@@ -307,7 +310,8 @@ class TestH3Supervised120Panel(unittest.TestCase):
             return result
 
         outcome = h3_120.execute_ordered_panel(
-            packet["rows"], run_dir=run_dir, process_row=bad_identity)
+            packet["rows"], run_dir=run_dir, process_row=bad_identity,
+            synthetic_test_only=True)
         self.assertEqual(outcome["status"], "scientific_integrity_failure")
         self.assertEqual(calls, [packet["rows"][0]["graph_id"]])
         audit = h3_120.verify_h3_120_run(run_dir)

@@ -399,7 +399,8 @@ def _cache_identity(row: dict[str, Any], *, labeled_edge_set_sha256: str,
 
 def _validate_result_identity(result: dict[str, Any], row: dict[str, Any], *,
                               expected_runtime_sha256: str,
-                              expected_implementation_sha256: str) -> None:
+                              expected_implementation_sha256: str,
+                              allow_non_target_runtime: bool = False) -> None:
     """Bind each result and both order identities to its frozen panel row/run."""
     expected_fields = {
         "panel_order": row["panel_order"],
@@ -424,7 +425,8 @@ def _validate_result_identity(result: dict[str, Any], row: dict[str, Any], *,
     if (not isinstance(runtime, dict) or _runtime_hash(runtime) !=
             result.get("runtime_manifest_sha256") or
             result.get("runtime_manifest_sha256") != expected_runtime_sha256 or
-            not runtime.get("replay_environment_matches_recorded_versions_and_candidate_lock")):
+            (not allow_non_target_runtime and not runtime.get(
+                "replay_environment_matches_recorded_versions_and_candidate_lock"))):
         raise H3PanelError("Result runtime manifest differs from the supervised run identity")
     if result.get("implementation_sha256") != expected_implementation_sha256:
         raise H3PanelError("Result implementation hash differs from the supervised run identity")
@@ -642,7 +644,8 @@ def execute_ordered_panel(rows: list[dict[str, Any]], *, run_dir: Path,
                 implementation_sha = _implementation_hash()
                 _validate_result_identity(
                     result, row, expected_runtime_sha256=runtime_sha,
-                    expected_implementation_sha256=implementation_sha)
+                    expected_implementation_sha256=implementation_sha,
+                    allow_non_target_runtime=synthetic_test_only)
                 artifact_name = f"{row['panel_order']:03d}-{hashlib.sha256(row['graph_id'].encode()).hexdigest()[:12]}.json"
                 artifact_path = row_dir / artifact_name
                 artifact_sha = _write_new_json(artifact_path, result)
@@ -833,6 +836,8 @@ def verify_h3_120_run(run_dir: Path, *, expected_packet_sha256: str = EXPECTED_P
     if len(rows) > 120 or [event.get("graph_id") for event in rows] != [
             row["graph_id"] for row in expected[:len(rows)]]:
         raise H3PanelError("H3-120 result events are missing, duplicated, or out of order")
+    terminal_path = run_dir / "runner-terminal.json"
+    terminal = _read_json(terminal_path) if terminal_path.is_file() else {}
     verified_artifacts = 0
     expected_artifact_names: set[str] = set()
     for event in rows:
@@ -871,7 +876,8 @@ def verify_h3_120_run(run_dir: Path, *, expected_packet_sha256: str = EXPECTED_P
         _validate_result_identity(
             artifact, expected_row,
             expected_runtime_sha256=starts[0].get("runtime_manifest_sha256", ""),
-            expected_implementation_sha256=starts[0].get("implementation_sha256", ""))
+            expected_implementation_sha256=starts[0].get("implementation_sha256", ""),
+            allow_non_target_runtime=terminal.get("synthetic_test_only") is True)
         if (event.get("runtime_manifest_sha256") !=
                 artifact.get("runtime_manifest_sha256") or
                 event.get("implementation_sha256") != artifact.get("implementation_sha256") or
@@ -911,8 +917,6 @@ def verify_h3_120_run(run_dir: Path, *, expected_packet_sha256: str = EXPECTED_P
             raise H3PanelError("H3-120 row artifacts include missing or unlogged files")
     elif expected_artifact_names:
         raise H3PanelError("H3-120 row-artifact directory is missing")
-    terminal = _read_json(run_dir / "runner-terminal.json") if \
-        (run_dir / "runner-terminal.json").is_file() else {}
     completed = (base.get("completed") is True and
                  terminal.get("kind") == "pilot_completed" and
                  terminal.get("synthetic_test_only") is not True and
