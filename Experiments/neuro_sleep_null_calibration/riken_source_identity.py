@@ -15,11 +15,14 @@ import gzip
 import hashlib
 import json
 import math
+import numbers
 import os
 import platform
 import struct
 import sys
 from collections.abc import Iterable
+
+from g0_q_protocol import canonical_louvain_q_vector
 from pathlib import Path
 from typing import Any
 
@@ -802,6 +805,38 @@ def replay_louvain_q(graph, seeds: Iterable[int], *, require_target: bool = True
     return {"q_values": values, "q_max": values[best], "q_max_first_index": best,
             "best_partition_sha256": sha256_bytes(canonical_json(canonical_partition)),
             "partition_comparison": "NO_ARCHIVED_HISTORICAL_PARTITION"}
+
+
+def replay_canonical_louvain_q(graph, source_neuron_indices: Iterable[int],
+                                seeds: Iterable[int], *,
+                                require_target: bool = True) -> dict[str, Any]:
+    """Run the candidate common Q contract using stable source neuron IDs.
+
+    The historical replay function above remains authoritative for legacy
+    comparison. This separate entry point requires the prospective amendment
+    and must not be interpreted as activating it.
+    """
+    if (require_target and not h3_runtime_manifest()[
+            "replay_environment_matches_recorded_versions_and_candidate_lock"]):
+        raise IdentityEvidenceError(
+            "Canonical replay runtime does not match recorded PS-A versions and candidate lock")
+    raw_source_ids = tuple(source_neuron_indices)
+    if any(isinstance(value, bool) or not isinstance(value, numbers.Integral) or value < 0
+           for value in raw_source_ids):
+        raise IdentityEvidenceError(
+            "Canonical replay requires nonnegative integer source-neuron indices")
+    source_ids = tuple(int(value) for value in raw_source_ids)
+    expected_local_nodes = set(range(len(source_ids)))
+    if set(graph.nodes) != expected_local_nodes or len(source_ids) != len(graph):
+        raise IdentityEvidenceError(
+            "Historical graph nodes do not map one-to-one to the source neuron ID vector")
+    labeled_edges = tuple((source_ids[int(u)], source_ids[int(v)])
+                          for u, v in graph.edges)
+    try:
+        return canonical_louvain_q_vector(source_ids, labeled_edges, seeds)
+    except (TypeError, ValueError) as exc:
+        raise IdentityEvidenceError(
+            f"Canonical Louvain Q replay input failed validation: {exc}") from exc
 
 
 def load_h3_reference(panel_record: dict[str, Any], psa_root: Path) -> dict[str, Any]:

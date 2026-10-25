@@ -32,6 +32,13 @@ import uuid
 import zlib
 
 from connected_swap import ConnectedDegreeSwap
+from g0_q_protocol import (
+    CANONICAL_ORDER_POLICY, build_canonical_louvain_graph,
+    canonical_graph_payload, canonical_graph_manifest,
+    canonical_partition_encoding, first_maximum_index, heuristic_diagnostics,
+    louvain_partition_q_for_seed, q_vector_sha256, seed_vector_sha256,
+    validate_louvain_runtime,
+)
 from g0_external_storage import G0ExternalStore, G0StorageError, RecoveryRefused
 from nc0a_watchdog import WatchdogLimits
 
@@ -267,8 +274,10 @@ def runtime_manifest(*, require_target: bool = False) -> dict[str, object]:
     if require_target and macos_version != TARGET_MACOS_VERSION:
         raise RuntimeError(f"Target G0 engineering runtime requires macOS {TARGET_MACOS_VERSION}")
     source_hashes = {}
-    for name in ("g0_minimal_executor.py", "connected_swap.py", "g0_external_storage.py",
-                 "nc0a_watchdog.py", "nc0a_execution_engine.py"):
+    for name in ("g0_minimal_executor.py", "g0_q_protocol.py",
+                 "riken_source_identity.py", "connected_swap.py",
+                 "g0_external_storage.py", "nc0a_watchdog.py",
+                 "nc0a_execution_engine.py"):
         source_hashes[name] = sha256_bytes(Path(__file__).with_name(name).read_bytes())
     return {"python": python, "executable": sys.executable,
             "platform": sys.platform, "machine": machine,
@@ -278,33 +287,23 @@ def runtime_manifest(*, require_target: bool = False) -> dict[str, object]:
             "source_sha256": source_hashes}
 
 
-def _partition_encoding(labels: tuple[str | int, ...], partition: dict) -> list[int]:
-    groups: dict[object, list[int]] = {}
-    for index, label in enumerate(labels):
-        groups.setdefault(partition[label], []).append(index)
-    ordered_groups = sorted(groups.values(), key=lambda members: min(members))
-    encoded = [0] * len(labels)
-    for community_id, members in enumerate(ordered_groups):
-        for index in members:
-            encoded[index] = community_id
-    return encoded
-
-
 def _louvain_worker_init(n: int, labels: tuple[str | int, ...],
                          edges: tuple[tuple[int, int], ...],
                          test_fault: str | None) -> None:
     global _LOUVAIN_GRAPH, _LOUVAIN_LABELS, _LOUVAIN_TEST_FAULT
-    import networkx as nx
-
-    graph = nx.Graph()
-    graph.add_nodes_from(labels)
-    graph.add_weighted_edges_from(
-        (labels[u], labels[v], 1.0) for u, v in edges)
-    if graph.number_of_nodes() != n or not nx.is_connected(graph):
+    labeled_edges = tuple((labels[u], labels[v]) for u, v in edges)
+    try:
+        validate_louvain_runtime()
+        graph, _ = build_canonical_louvain_graph(labels, labeled_edges)
+    except (TypeError, ValueError) as exc:
+        raise G0ScientificFailure(
+            "G0_LOUVAIN_INPUT_GRAPH_INVALID",
+            f"Canonical Louvain graph construction failed: {exc}") from exc
+    if graph.number_of_nodes() != n:
         raise G0ScientificFailure("G0_LOUVAIN_INPUT_GRAPH_INVALID",
-                                  "Louvain worker received a nonconnected graph")
+                                  "Canonical Louvain graph node count changed")
     _LOUVAIN_GRAPH = graph
-    _LOUVAIN_LABELS = labels
+    _LOUVAIN_LABELS = tuple(graph.nodes)
     _LOUVAIN_TEST_FAULT = test_fault
 
 
@@ -321,16 +320,13 @@ def _louvain_trial(trial_index: int, seed: int) -> dict[str, object]:
     if _LOUVAIN_TEST_FAULT == "worker_operational_failure" and trial_index == 0:
         raise G0OperationalFailure("G0_WORKER_PROCESS_EXIT",
                                    "Synthetic-only spawn operational failure injection")
-    from community import community_louvain
-
-    partition = community_louvain.best_partition(
-        _LOUVAIN_GRAPH, weight="weight", resolution=1.0, random_state=seed)
-    q_value = float(community_louvain.modularity(
-        partition, _LOUVAIN_GRAPH, weight="weight"))
-    if not math.isfinite(q_value):
-        raise G0ScientificFailure("G0_LOUVAIN_Q_NONFINITE",
-                                  f"Trial {trial_index} returned a nonfinite modularity")
-    encoded_partition = _partition_encoding(_LOUVAIN_LABELS, partition)
+    try:
+        partition, q_value = louvain_partition_q_for_seed(_LOUVAIN_GRAPH, seed)
+    except ValueError as exc:
+        raise G0ScientificFailure(
+            "G0_LOUVAIN_Q_NONFINITE",
+            f"Trial {trial_index} returned invalid modularity: {exc}") from exc
+    encoded_partition = canonical_partition_encoding(_LOUVAIN_LABELS, partition)
     return {"trial_index": trial_index, "seed": seed, "modularity": q_value,
             "partition_sha256": sha256_bytes(canonical_json(encoded_partition)),
             "partition": encoded_partition,
@@ -526,6 +522,9 @@ def _worker_entry(config_path: Path, expected_sha256: str,
         final_edges = tuple(sorted(graph.edges))
         final_graph_hash = graph.fingerprint()
         metrics = _graph_metrics(labels, final_edges, tuple(edges))
+        final_labeled_edges = tuple((labels[u], labels[v]) for u, v in final_edges)
+        q_graph_payload = canonical_graph_payload(labels, final_labeled_edges)
+        q_order_manifest = canonical_graph_manifest(q_graph_payload)
 
         _write_phase(control_dir / "active_task.json", task_id, "case")
         before_children = resource.getrusage(resource.RUSAGE_CHILDREN)
@@ -593,7 +592,7 @@ def _worker_entry(config_path: Path, expected_sha256: str,
         if any(not math.isfinite(value) for value in q_values):
             raise G0ScientificFailure("G0_LOUVAIN_Q_NONFINITE",
                                       "At least one Louvain modularity is nonfinite")
-        best_index = max(range(len(q_values)), key=q_values.__getitem__)
+        best_index = first_maximum_index(q_values)
         best_partition = list(trials[best_index]["partition"])
         for item in trials:
             item.pop("partition", None)
@@ -621,6 +620,14 @@ def _worker_entry(config_path: Path, expected_sha256: str,
             "topology": metrics,
             "louvain": {"algorithm": "community.community_louvain.best_partition",
                         "q_function": "community.community_louvain.modularity",
+                        "order_policy": CANONICAL_ORDER_POLICY,
+                        "q_graph_topology_sha256": q_order_manifest["topology_sha256"],
+                        "q_graph_ordered_representation_sha256":
+                            q_order_manifest["ordered_representation_sha256"],
+                        "seed_vector_sha256": seed_vector_sha256(louvain_seeds),
+                        "q_vector_sha256": q_vector_sha256(q_values),
+                        "heuristic_diagnostics": heuristic_diagnostics(
+                            q_values, [str(item["partition_sha256"]) for item in trials]),
                         "resolution": 1.0, "weight": "weight", "trials": trials,
                         "trial_count": len(trials), "q_values": q_values,
                         "max_q": q_values[best_index],
@@ -698,6 +705,7 @@ def _parse_worker_stdout(path: Path, *, expected_attempts: int,
                          expected_identity_sha256: str,
                          expected_graph_sha256: str,
                          expected_degree_sequence: tuple[int, ...],
+                         expected_node_labels: tuple[str | int, ...],
                          expected_seed_manifest: dict[str, object],
                          result_bundle: bytes
                          ) -> tuple[dict, str, tuple[tuple[int, int], ...]]:
@@ -798,7 +806,10 @@ def _parse_worker_stdout(path: Path, *, expected_attempts: int,
             expected_degree_sequence):
         raise G0ScientificFailure("G0_WORKER_GRAPH_FRAME_HASH_INVALID",
                                   "Worker graph frame does not match the validated task result")
-    _validate_result(result, expected_attempts)
+    _validate_result(result, expected_attempts,
+                     expected_node_labels=expected_node_labels,
+                     final_edges=final_edges,
+                     expected_seeds=tuple(expected_seed_manifest["louvain_seeds"]))
     return result, result["swap"]["proposal_audit_tip_sha256"], final_edges
 
 
@@ -820,7 +831,10 @@ def _failure_from_worker(value: dict) -> BaseException:
     return RuntimeError(reason)
 
 
-def _validate_result(result: dict, expected_attempts: int) -> None:
+def _validate_result(result: dict, expected_attempts: int, *,
+                     expected_node_labels: tuple[str | int, ...],
+                     final_edges: tuple[tuple[int, int], ...],
+                     expected_seeds: tuple[int, ...]) -> None:
     swap = result.get("swap", {})
     if (swap.get("attempts") != expected_attempts or
             swap.get("proposal_audit_records") != expected_attempts or
@@ -839,13 +853,41 @@ def _validate_result(result: dict, expected_attempts: int) -> None:
     q_values = [float(item["modularity"]) for item in trials]
     if any(not math.isfinite(value) for value in q_values):
         raise G0ScientificFailure("G0_LOUVAIN_Q_NONFINITE", "Nonfinite Louvain Q in result")
-    first_max = max(range(len(q_values)), key=q_values.__getitem__)
-    if (louvain.get("q_values") != q_values or
+    first_max = first_maximum_index(q_values)
+    trial_seeds = tuple(item.get("seed") for item in trials)
+    if (len(expected_seeds) != LOUVAIN_TRIALS or
+            trial_seeds != expected_seeds or
+            louvain.get("order_policy") != CANONICAL_ORDER_POLICY or
+            louvain.get("seed_vector_sha256") != seed_vector_sha256(expected_seeds) or
+            louvain.get("q_vector_sha256") != q_vector_sha256(q_values) or
+            louvain.get("q_values") != q_values or
             louvain.get("max_q") != q_values[first_max] or
             louvain.get("first_max_trial_index") != first_max or
             len(louvain.get("best_partition", [])) != result.get("topology", {}).get("node_count")):
         raise G0ScientificFailure("G0_LOUVAIN_MAXIMUM_INVALID",
-                                  "Saved Q vector or first-maximum definition is inconsistent")
+                                  "Saved seed/Q vector hash or first-maximum definition is inconsistent")
+    partition_hashes = [item.get("partition_sha256") for item in trials]
+    if any(not _is_sha256(value) for value in partition_hashes):
+        raise G0ScientificFailure("G0_LOUVAIN_PARTITION_HASH_INVALID",
+                                  "A Louvain trial lacks a valid partition hash")
+    if louvain.get("heuristic_diagnostics") != heuristic_diagnostics(
+            q_values, partition_hashes):
+        raise G0ScientificFailure("G0_LOUVAIN_DIAGNOSTICS_INVALID",
+                                  "Saved prefix maxima/partition count do not match the trials")
+    try:
+        payload = canonical_graph_payload(
+            expected_node_labels,
+            ((expected_node_labels[u], expected_node_labels[v])
+             for u, v in final_edges))
+        manifest = canonical_graph_manifest(payload)
+    except (IndexError, TypeError, ValueError) as exc:
+        raise G0ScientificFailure("G0_LOUVAIN_CANONICAL_GRAPH_INVALID",
+                                  f"Cannot verify canonical graph identity: {exc}") from exc
+    if (louvain.get("q_graph_topology_sha256") != manifest["topology_sha256"] or
+            louvain.get("q_graph_ordered_representation_sha256") !=
+            manifest["ordered_representation_sha256"]):
+        raise G0ScientificFailure("G0_LOUVAIN_CANONICAL_GRAPH_HASH_INVALID",
+                                  "Saved Q graph hashes do not match the canonical final graph")
 
 
 _MAX_AUDIT_RECORD_BYTES = 64 * 1024
@@ -970,6 +1012,8 @@ def _synthetic_task_plan(graph: NormalizedGraph, identity: G0TaskIdentity,
         raise ValueError("run_synthetic_g0_task accepts only visibly synthetic identities")
     if graph.source_artifact_sha256 is None:
         raise ValueError("Synthetic task input requires a source-artifact SHA-256 identity")
+    if any(type(node) is not int or node < 0 for node in graph.nodes):
+        raise ValueError("CANONICAL_SORTED_EDGE_V1 requires original nonnegative integer node IDs")
     identity.validate(graph)
     graph_seed = g0_graph_seed(identity)
     louvain_seeds = [g0_louvain_seed(identity, index)
@@ -1435,6 +1479,7 @@ def _execute_synthetic_g0_plan(*, store: G0ExternalStore, plan: dict[str, object
                 expected_identity_sha256=task_identity_sha256,
                 expected_graph_sha256=graph.graph_sha256,
                 expected_degree_sequence=graph.degree_sequence,
+                expected_node_labels=graph.nodes,
                 expected_seed_manifest=seed_manifest,
                 result_bundle=result_bundle)
         except G0OperationalFailure as exc:
