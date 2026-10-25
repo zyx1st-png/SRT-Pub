@@ -1,8 +1,8 @@
 """Draft, fail-closed supervised runner for the fixed 120-row H3 panel.
 
-The packet and candidate limits are engineering preparation only. Biological
-execution is rejected until the prospective Q-order amendment is effective
-and a current-head, UUID-bound researcher authorization is supplied.
+The canonical scientific method is effective in this stacked execution branch,
+but the fixed packet remains NOT EXECUTION AUTHORIZED. Biological execution
+requires a current-head, UUID-bound researcher authorization and live preflight.
 """
 
 from __future__ import annotations
@@ -57,7 +57,7 @@ MANIFEST_FILENAME = "G0_RIKEN_SOURCE_GRAPH_EXPECTED_MANIFEST_2026-10-21.json"
 METHOD_FILENAME = "G0_CANONICAL_Q_ORDER_PROSPECTIVE_AMENDMENT_DRAFT_2026-10-23.md"
 EXPECTED_MANIFEST_SHA256 = "6a8357ac0b815c434421a31dc6c294c292b5c144713f49c52b5344038235ece2"
 EXPECTED_IDENTITY_TOOL_SHA256 = "ba7c855c1744fcfa1f94dc3d6ffe79cf4196695af1d6d5803beffc83d9c5d73e"
-EXPECTED_PACKET_SHA256 = "80b7e49a60082f9827130545f7fcb1dd0ddd6ce43278c538a686ba6b5b757dbb"
+EXPECTED_PACKET_SHA256 = "669cc9148cb92e1d6bd57dce5276fe8ecdbda04bb7b35c2c9dbeef32a1875a4a"
 HISTORICAL_ORDER_POLICY = "HISTORICAL_GRAPH_INSERTION_ORDER_V1"
 PACKET_SCHEMA = "SRT_RIKEN_H3_FIXED_120_DUAL_ORDER_PANEL_V1"
 RESULT_SCHEMA = "SRT_RIKEN_H3_120_ROW_RESULT_V1"
@@ -145,13 +145,14 @@ def validate_h3_120_packet(packet_path: Path, manifest_path: Path) -> tuple[dict
         raise H3PanelError("H3-120 source manifest SHA-256 differs from its pin")
     packet, manifest = _read_json(packet_path), _read_json(manifest_path)
     if packet.get("schema") != PACKET_SCHEMA or packet.get("status") != \
-            "PREPARED_DRAFT_NOT_AUTHORIZED":
+            "PREPARED_EFFECTIVE_METHOD_NOT_AUTHORIZED":
         raise H3PanelError("H3-120 packet schema or non-authorized status changed")
     if (packet.get("source_manifest_sha256") != EXPECTED_MANIFEST_SHA256 or
             packet.get("identity_tool_sha256") != EXPECTED_IDENTITY_TOOL_SHA256 or
             manifest.get("identity_tool_sha256") != EXPECTED_IDENTITY_TOOL_SHA256):
         raise H3PanelError("H3-120 packet does not bind the frozen identity tooling")
-    if (packet.get("historical_order_policy") != HISTORICAL_ORDER_POLICY or
+    if (packet.get("canonical_method_amendment_status") != "EFFECTIVE" or
+            packet.get("historical_order_policy") != HISTORICAL_ORDER_POLICY or
             packet.get("canonical_order_policy") != CANONICAL_ORDER_POLICY or
             packet.get("trials_per_order_per_row") != LOUVAIN_TRIALS or
             packet.get("gross_louvain_trials") != 48_000 or
@@ -176,7 +177,7 @@ def validate_h3_120_packet(packet_path: Path, manifest_path: Path) -> tuple[dict
 
 
 def _resource_candidate() -> dict[str, Any]:
-    """Expose candidate values to review; this does not activate them."""
+    """Return researcher-approved stop ceilings, not a run authorization."""
     return dict(MINIMAL_CANDIDATE_LIMITS)
 
 
