@@ -115,6 +115,8 @@ class TestH3Supervised120Panel(unittest.TestCase):
 
     def test_fixed_packet_hash_order_and_coverage(self) -> None:
         packet, manifest = self._packet()
+        self.assertEqual(packet["status"], "PREPARED_EFFECTIVE_METHOD_NOT_AUTHORIZED")
+        self.assertEqual(packet["canonical_method_amendment_status"], "EFFECTIVE")
         self.assertEqual(packet["row_count"], 120)
         self.assertEqual(len(packet["rows"]), 120)
         self.assertEqual(manifest["h3_panel"]["count"], 120)
@@ -135,10 +137,10 @@ class TestH3Supervised120Panel(unittest.TestCase):
         self.assertEqual(packet["candidate_cache_credit"][
             "current_10_graph_pilot_credit"], "NOT_ESTABLISHED")
 
-    def test_method_draft_and_missing_authorization_fail_closed(self) -> None:
-        effective, reason = h3_120._method_is_effective(MODULE_DIR / h3_120.METHOD_FILENAME)
-        self.assertFalse(effective)
-        self.assertIn("DRAFT", reason)
+    def test_method_effective_but_missing_run_authorization_fail_closed(self) -> None:
+        effective, method_sha = h3_120._method_is_effective(MODULE_DIR / h3_120.METHOD_FILENAME)
+        self.assertTrue(effective)
+        self.assertEqual(len(method_sha), 64)
         spoofed_status = self.root / "spoofed-method-status.md"
         spoofed_status.write_text(
             "---\nstatus: draft\nnote: prior status: active\n---\n",
@@ -149,7 +151,7 @@ class TestH3Supervised120Panel(unittest.TestCase):
         run_id = str(uuid.uuid4())
         confirmation = (f"I AUTHORIZE H3-120 {run_id} "
                         f"{h3_120.EXPECTED_PACKET_SHA256} synthetic-head")
-        with self.assertRaisesRegex(h3_120.H3PanelError, "DRAFT"):
+        with self.assertRaisesRegex(h3_120.H3PanelError, "Researcher authorization does not bind"):
             h3_120.validate_researcher_authorization(
                 auth, packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
                 method_path=MODULE_DIR / h3_120.METHOD_FILENAME,
@@ -304,7 +306,7 @@ class TestH3Supervised120Panel(unittest.TestCase):
         self.assertEqual(limits.minimum_boot_free_disk_bytes, 40 * 1024**3)
         self.assertEqual(limits.boot_reserve_free_disk_bytes, 30 * 1024**3)
         self.assertEqual(limits.swap_growth_stop_bytes, 2 * 1024**3)
-        self.assertFalse(h3_120._method_is_effective(
+        self.assertTrue(h3_120._method_is_effective(
             MODULE_DIR / h3_120.METHOD_FILENAME)[0])
 
     def test_historical_failure_does_not_call_canonical_replay(self) -> None:
