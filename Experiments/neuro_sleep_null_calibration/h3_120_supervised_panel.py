@@ -337,7 +337,7 @@ def compute_dual_order_q(*, historical_graph, source_ids: Iterable[int],
     qmax_abs = abs(history["q_max_200"] - float(reference_qmax))
     if (max_trial_abs > H3_TRIAL_Q_ATOL_PROPOSED or
             qmax_abs > H3_QMAX_ATOL or
-            ref_stats["q_max_200"] != float(reference_qmax) or
+            abs(ref_stats["q_max_200"] - float(reference_qmax)) > H3_QMAX_ATOL or
             ref_stats["first_max_trial_index"] != reference_qmax_first_index or
             history["first_max_trial_index"] != reference_qmax_first_index):
         raise H3PanelError("HISTORICAL_Q_INTEGRITY_FAILURE; canonical replay not started")
@@ -940,7 +940,7 @@ def launch_real_h3_120(*, packet_path: Path, manifest_path: Path,
                        authorization_path: Path,
                        researcher_confirmation: str) -> dict[str, Any]:
     packet, manifest = validate_h3_120_packet(packet_path, manifest_path)
-    validate_researcher_authorization(
+    authorization_evidence = validate_researcher_authorization(
         authorization_path, packet_sha256=EXPECTED_PACKET_SHA256,
         method_path=HERE / METHOD_FILENAME, expected_head=expected_head,
         run_id=run_id, confirmation=researcher_confirmation)
@@ -967,6 +967,7 @@ def launch_real_h3_120(*, packet_path: Path, manifest_path: Path,
         candidate={**_resource_candidate(),
                   "macos_resource_policy_candidate_not_authorized":
                       pilot.H3_MACOS_RESOURCE_POLICY_CANDIDATE,
+                  "researcher_authorization": authorization_evidence,
                   "preflight_sample": resource_preflight,
                   "packet_sha256": EXPECTED_PACKET_SHA256,
                   "panel_rows": 120, "louvain_trials_gross": 48_000},

@@ -6,6 +6,7 @@ import tempfile
 import unittest
 import uuid
 from pathlib import Path
+from unittest.mock import patch
 
 MODULE_DIR = Path(__file__).resolve().parent
 if str(MODULE_DIR) not in sys.path:
@@ -150,6 +151,143 @@ class TestH3Supervised120Panel(unittest.TestCase):
                 expected_head="synthetic-head", run_id=run_id,
                 confirmation=confirmation)
 
+    def test_researcher_authorization_accepts_exact_binding_and_rejects_mismatches(self) -> None:
+        method_path = self.root / "method-amendment.md"
+        method_path.write_text(
+            "---\nstatus: active\n---\n# Synthetic effective method\n",
+            encoding="utf-8")
+        method_sha = h3_120.sha256_file(method_path)
+        run_id = str(uuid.uuid4())
+        expected_head = "a" * 40
+        approval = {
+            "schema": "SRT_H3_120_RESEARCHER_AUTHORIZATION_V1",
+            "status": "APPROVED_FOR_EXECUTION",
+            "method_amendment_status": "EFFECTIVE",
+            "method_amendment_sha256": method_sha,
+            "packet_sha256": h3_120.EXPECTED_PACKET_SHA256,
+            "head_sha": expected_head,
+            "run_uuid": run_id,
+            "resource_limits": dict(h3_120.MINIMAL_CANDIDATE_LIMITS),
+            "max_compute_workers": 1,
+            "memory_semantics": "SAMPLED_RSS_NOT_A_HARD_LIMIT",
+        }
+        authorization_path = self.root / "authorization.json"
+        authorization_path.write_text(json.dumps(approval), encoding="utf-8")
+        confirmation = (f"I AUTHORIZE H3-120 {run_id} "
+                        f"{h3_120.EXPECTED_PACKET_SHA256} {expected_head}")
+
+        accepted = h3_120.validate_researcher_authorization(
+            authorization_path, packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
+            method_path=method_path, expected_head=expected_head,
+            run_id=run_id, confirmation=confirmation)
+        self.assertEqual(accepted["status"], "APPROVED_FOR_EXECUTION")
+        self.assertEqual(accepted["method_amendment_sha256"], method_sha)
+        self.assertEqual(accepted["authorization_sha256"],
+                         h3_120.sha256_file(authorization_path))
+
+        mutations = {
+            "schema": lambda item: item.update(schema="WRONG_SCHEMA"),
+            "status": lambda item: item.update(status="DRAFT"),
+            "method state": lambda item: item.update(method_amendment_status="DRAFT"),
+            "method hash": lambda item: item.update(method_amendment_sha256="0" * 64),
+            "packet hash": lambda item: item.update(packet_sha256="0" * 64),
+            "HEAD": lambda item: item.update(head_sha="b" * 40),
+            "UUID": lambda item: item.update(run_uuid=str(uuid.uuid4())),
+            "worker ceiling": lambda item: item.update(max_compute_workers=2),
+            "memory semantics": lambda item: item.update(memory_semantics="HARD_LIMIT"),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(mismatch=name):
+                altered = json.loads(json.dumps(approval))
+                mutate(altered)
+                authorization_path.write_text(json.dumps(altered), encoding="utf-8")
+                with self.assertRaises(h3_120.H3PanelError):
+                    h3_120.validate_researcher_authorization(
+                        authorization_path,
+                        packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
+                        method_path=method_path, expected_head=expected_head,
+                        run_id=run_id, confirmation=confirmation)
+
+        for name in h3_120.MINIMAL_CANDIDATE_LIMITS:
+            with self.subTest(mismatched_budget=name):
+                altered = json.loads(json.dumps(approval))
+                altered["resource_limits"][name] = "MISMATCH"
+                authorization_path.write_text(json.dumps(altered), encoding="utf-8")
+                with self.assertRaises(h3_120.H3PanelError):
+                    h3_120.validate_researcher_authorization(
+                        authorization_path,
+                        packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
+                        method_path=method_path, expected_head=expected_head,
+                        run_id=run_id, confirmation=confirmation)
+
+        authorization_path.write_text(json.dumps(approval), encoding="utf-8")
+        with self.assertRaisesRegex(h3_120.H3PanelError, "confirmation"):
+            h3_120.validate_researcher_authorization(
+                authorization_path, packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
+                method_path=method_path, expected_head=expected_head,
+                run_id=run_id, confirmation="wrong confirmation")
+        method_path.write_text(method_path.read_text(encoding="utf-8") + "\n",
+                               encoding="utf-8")
+        with self.assertRaisesRegex(h3_120.H3PanelError, "does not bind"):
+            h3_120.validate_researcher_authorization(
+                authorization_path, packet_sha256=h3_120.EXPECTED_PACKET_SHA256,
+                method_path=method_path, expected_head=expected_head,
+                run_id=run_id, confirmation=confirmation)
+
+    def test_production_launcher_binds_accepted_authorization_to_watchdog_run(self) -> None:
+        self._packet()
+        state_dir = self.root / "host-state"
+        phase2_root = self.root / "phase2"
+        psa_root = self.root / "psa"
+        run_id = str(uuid.uuid4())
+        run_dir = psa_root / "h3_identity_calibration_120_2026-10-24" / run_id
+        expected_parent = run_dir.parent
+        head_sha = "c" * 40
+        authorization_evidence = {
+            "authorization_sha256": "1" * 64,
+            "method_amendment_sha256": "2" * 64,
+            "status": "APPROVED_FOR_EXECUTION",
+        }
+        captured = {}
+
+        def capture_launch(command, **kwargs):
+            captured["command"] = command
+            captured.update(kwargs)
+            return {"status": "COMPLETED"}
+
+        with (
+            patch.object(h3_120, "validate_researcher_authorization",
+                         return_value=authorization_evidence),
+            patch.object(h3_120.pilot, "default_host_state_dir", return_value=state_dir),
+            patch.object(h3_120.pilot, "_git_identity",
+                         return_value={"head_sha": head_sha, "working_tree": "CLEAN"}),
+            patch.object(h3_120, "validate_h3_120_private_roots",
+                         return_value=(phase2_root, psa_root)),
+            patch.object(h3_120.pilot, "_preflight_macos_resources",
+                         return_value={"synthetic_preflight": "PASS"}),
+            patch.object(h3_120, "_prepare_output_directory",
+                         return_value=(run_dir, expected_parent)),
+            patch.object(h3_120.pilot, "_launch_supervised", side_effect=capture_launch),
+        ):
+            launched = h3_120.launch_real_h3_120(
+                packet_path=self.packet_path, manifest_path=self.manifest_path,
+                phase2_root=phase2_root, psa_root=psa_root, run_dir=run_dir,
+                state_dir=state_dir, run_id=run_id, expected_head=head_sha,
+                authorization_path=self.root / "unused-auth.json",
+                researcher_confirmation="synthetic UUID/packet/HEAD confirmation")
+
+        self.assertEqual(launched["status"], "COMPLETED")
+        self.assertIn("--runner-child", captured["command"])
+        self.assertEqual(captured["run_id"], run_id)
+        self.assertEqual(captured["head"]["head_sha"], head_sha)
+        self.assertEqual(captured["candidate"]["researcher_authorization"],
+                         authorization_evidence)
+        self.assertEqual(captured["candidate"]["panel_rows"], 120)
+        self.assertEqual(captured["candidate"]["louvain_trials_gross"], 48_000)
+        self.assertEqual(captured["limits"].max_workers, 1)
+        self.assertEqual(captured["limits"].memory_enforcement_backend,
+                         "MACOS_SAMPLED_PRESSURE")
+
     def test_production_candidate_maps_to_macos_sampled_pressure_without_activation(self) -> None:
         limits = h3_120._candidate_watchdog_limits()
         self.assertEqual(limits.memory_enforcement_backend, "MACOS_SAMPLED_PRESSURE")
@@ -186,6 +324,37 @@ class TestH3Supervised120Panel(unittest.TestCase):
                 reference_qmax=0.1, historical_replay=bad_history,
                 canonical_replay=canonical)
         self.assertEqual(calls, [])
+
+    def test_qmax_reference_uses_declared_absolute_tolerance(self) -> None:
+        import networkx as nx
+
+        graph = nx.cycle_graph(8)
+        seeds = tuple(range(1, LOUVAIN_TRIALS + 1))
+        reference = [0.4, *([0.1] * (LOUVAIN_TRIALS - 1))]
+        stored_qmax = reference[0] + 5e-7
+        canonical_calls = []
+        result = h3_120.compute_dual_order_q(
+            historical_graph=graph, source_ids=tuple(range(8)), seeds=seeds,
+            reference_q=reference, reference_qmax_first_index=0,
+            reference_qmax=stored_qmax,
+            historical_replay=lambda *_args, **_kwargs: {"q_values": reference},
+            canonical_replay=lambda *_args, **_kwargs: (
+                canonical_calls.append(True) or {"q_values": reference}))
+        self.assertEqual(result["historical_order_q_replay"], "PASS")
+        self.assertAlmostEqual(
+            result["historical_reference_qmax_abs_delta"], 5e-7, places=12)
+        self.assertEqual(canonical_calls, [True])
+        canonical_calls.clear()
+        with self.assertRaisesRegex(
+                h3_120.H3PanelError, "HISTORICAL_Q_INTEGRITY_FAILURE"):
+            h3_120.compute_dual_order_q(
+                historical_graph=graph, source_ids=tuple(range(8)), seeds=seeds,
+                reference_q=reference, reference_qmax_first_index=0,
+                reference_qmax=reference[0] + 2e-6,
+                historical_replay=lambda *_args, **_kwargs: {"q_values": reference},
+                canonical_replay=lambda *_args, **_kwargs:
+                    canonical_calls.append(True) or {"q_values": reference})
+        self.assertEqual(canonical_calls, [])
 
     def test_synthetic_graph_dual_200_q_replay_and_runtime(self) -> None:
         import platform
