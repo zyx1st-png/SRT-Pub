@@ -1,26 +1,30 @@
 ---
 id: SRT-NEURO-G0-CANONICAL-Q-ORDER-AMENDMENT-20261023
 type: proposal
-status: draft
+status: active
 layer: operations
 epistemic_layer: experimental
 claim_mode: proposal
 canonical: false
 ai_do_not_use_for_definition: true
 date: 2026-10-23
+effective_date: 2026-10-25
+researcher_method_decision: https://github.com/zyx1st-png/SRT-Pub/pull/1128#issuecomment-6392797650
+researcher_resource_decision: https://github.com/zyx1st-png/SRT-Pub/pull/1130#issuecomment-6392797999
+h3_ai_review_decision_route: https://github.com/zyx1st-png/SRT-Pub/pull/1131#issuecomment-6398569613
 scope: prospective common observed/null Louvain-Q representation and resource-plan amendment
 dependency:
   - Experiments/SRT_NEURO_SLEEP_POPULATION_NULL_CALIBRATION_PREREGISTRATION_2026-10-09.md
   - Experiments/neuro_sleep_null_calibration/G0_RIKEN_SOURCE_IDENTITY_AND_H3_READINESS_2026-10-21.md
   - Experiments/neuro_sleep_null_calibration/G0_T1_PROSPECTIVE_RESOURCE_BUDGET_AMENDMENT_DRAFT_2026-10-20.md
-tags: [Neuroscience, RIKEN, G0, Louvain, Q, ProspectiveAmendment, Draft]
+tags: [Neuroscience, RIKEN, G0, Louvain, Q, ProspectiveAmendment]
 ---
 
 # G0 common observed/null Q-order amendment
 
-**DRAFT / NOT EFFECTIVE.** The researcher recorded approval of this prospective method on 2026-10-25 in [the #1128 method decision](https://github.com/zyx1st-png/SRT-Pub/pull/1128#issuecomment-6392797650), and separately approved the H3-120 stop ceilings in [the #1130 resource decision](https://github.com/zyx1st-png/SRT-Pub/pull/1130#issuecomment-6392797999). Those records are researcher decisions; neither is an independent methods/resource confirmation, an effective-dated activation, or authorization to run. This amendment remains non-effective until an independent reviewer confirms the method and H3 stop limits against the prepared record and an effective-dated decision is entered. It is not a routine code fix, result claim, NC-0 freeze, or authorization to run H3, a canonical observed baseline, G0, or T1. G0/T1 remain **RESOURCE NO-GO** pending their separate resource gates.
+**METHOD EFFECTIVE FOR PROSPECTIVE CANONICAL REPRESENTATION (2026-10-25); NOT AN H3 RUN AUTHORIZATION.** The researcher approved this method on 2026-10-25 in [#1128](https://github.com/zyx1st-png/SRT-Pub/pull/1128#issuecomment-6392797650) and separately approved the limited H3 resource envelope in [#1130](https://github.com/zyx1st-png/SRT-Pub/pull/1130#issuecomment-6392797999). A separately conducted Claude Opus 5.5 AI technical review of the fixed reviewed HEADs is recorded with its attribution and limitations on [#1128](https://github.com/zyx1st-png/SRT-Pub/pull/1128#issuecomment-6398373104) and [#1130](https://github.com/zyx1st-png/SRT-Pub/pull/1130#issuecomment-6398373478); it is **not external human peer review**. The researcher then separately adopted the prospective [H3-120-only AI technical review + researcher-accountable approval route](https://github.com/zyx1st-png/SRT-Pub/pull/1131#issuecomment-6398569613). This dated amendment makes the canonical graph representation scientifically effective for the described **prospective H3-120 comparison** and specifies the common rule for later G0 observed/null work, but **does not** authorize real H3, a canonical observed baseline, G0, T1, or a G0 resource benchmark. G0/T1 remain **RESOURCE NO-GO**, subject to their separate final scientific/resource gates. Any differences between historical and canonical Q in H3 are diagnostics, not a protocol-selection threshold.
 
-## Researcher-selected method (pending independent confirmation)
+## Effective researcher-selected canonical method (2026-10-25)
 
 Adopt **CANONICAL_SORTED_EDGE_V1** as the single graph-to-Louvain representation for both selected observed graphs used by the G0 analysis and every final 4E null graph.
 
@@ -63,7 +67,7 @@ The resource model must add the canonical observed baseline as a distinct stage:
 
 ### Fixed 120-graph H3 execution plan (not authorized)
 
-Use the already frozen 120-row panel without reselection: six recorded sources (five animals, with mouse04 day1/day2 represented separately) × two states × ten N values, one graph per source/state/N. This is 60 Wake and 60 NREM graphs, 12 at each N. Follow the order in the hash-bound 120-row packet. For each row, verify source/window/subset/job and graph identity, replay the historical-order 200-Q vector, then compute the separate `CANONICAL_SORTED_EDGE_V1` 200-Q vector. Report source identity, historical replay, and canonical result independently. A canonical-order Q difference is a compatibility result; a source-identity or historical-Q failure stops the panel. The proposed canonical method remains DRAFT / NOT EFFECTIVE until prospective approval.
+Use the already frozen 120-row panel without reselection: six recorded sources (five animals, with mouse04 day1/day2 represented separately) × two states × ten N values, one graph per source/state/N. This is 60 Wake and 60 NREM graphs, 12 at each N. Follow the order in the hash-bound 120-row packet. For each row, verify source/window/subset/job and graph identity, replay the historical-order 200-Q vector, then compute the separate `CANONICAL_SORTED_EDGE_V1` 200-Q vector. Report source identity, historical replay, and canonical result independently. A canonical-order Q difference is a **descriptive compatibility result only**, never a reason to change the method or sample after viewing outcomes; a source-identity or historical-Q failure stops the panel. The canonical method is effective as stated above but each actual H3 execution remains separately unauthorized until final HEAD/packet/runtime pinning, live host preflight and explicit UUID-bound researcher authorization.
 
 The gross workload is 120 graphs × 2 graph representations × 200 Louvain trials = **48,000 trials**: 24,000 historical-order and 24,000 canonical-order. Reuse previously completed results only after the complete identity predicate below passes. The ten-graph pilot's 2,000 historical-order Q values are candidates for historical replay reuse; its positional sorted-edge diagnostic is **not presumed to be `CANONICAL_SORTED_EDGE_V1`** and cannot be counted as canonical cache. Thus, if and only if all 2,000 historical pilot trials pass the complete reuse predicate, the new panel run would require 46,000 trials; otherwise retain the 48,000 gross requirement. Never treat a matching Qmax alone as sufficient.
 
@@ -71,7 +75,7 @@ The 24,000 canonical H3 trials are a subset of, not an addition to, the 980,000 
 
 Before a run, the H3 launcher must support the exact hash-bound 120-row packet, both explicit graph-order paths, separate outcome fields, complete Q-vector persistence, resume validation, and one-worker supervision. Test on the target macOS arm64 host with Python 3.14.0 and the exact `g0-runtime-macos-arm64.lock` versions (h5py 3.16.0, NetworkX 3.6.1, NumPy 2.5.3, python-louvain 0.16, SciPy 1.18.1), plus a test-only pytest install. Run `test_h3_supervised_pilot.py`, `test_riken_source_identity.py`, `test_g0_q_protocol.py`, and `test_g0_minimal_executor.py` under that runtime, including synthetic 120-row scheduling/cache and fault-injection cases; assert the runtime manifest and architecture. These tests must use generated graphs/virtual references and must not load private RIKEN signals or launch biological Louvain work. Then perform the documented real-data identity and live-resource preflight without starting computation.
 
-The researcher approved these H3-120 stop ceilings in the dated #1130 resource decision: 8 wall-hours, 8 process-tree CPU-hours, one compute worker, 4 GiB sampled aggregate RSS, and 1 GiB output. They remain subject to independent resource confirmation and are not a run authorization. Preserve the established Data/VM launch minimums and runtime reserves, host free-memory threshold, Swap-growth stop, AC power, normal thermal state, sleep-prevention assertion, host lock, and Watchdog/telemetry stops. The prior ten-graph run measured 573.25 wall seconds and 606.34 process-tree CPU seconds for both orders. Naive 12× scaling of the 48,000 gross trials is about 1.91 wall-hours / 2.02 CPU-hours; if 2,000 historical trials are validly reused, 11.5× scaling of 46,000 new trials is about 1.83 wall-hours / 1.94 CPU-hours. These are sensitivity references from one source in Wake, not validated upper bounds for six sources, both states, all N values, the target runner, or recovery/audit overhead. Treat the approved ceilings only as maximum acceptable losses; do not extend them mid-run. The 4-GiB RSS value is sampled, not a hard memory limit. Fresh live preflight and separate UUID-bound run authorization remain required.
+The researcher approved these H3-120 stop ceilings in the dated #1130 resource decision: 8 wall-hours, 8 process-tree CPU-hours, one compute worker, 4 GiB sampled aggregate RSS, and 1 GiB output. The adopted H3-specific AI review route and independent Claude technical resource assessment are recorded as linked above; this is **not a run authorization**. Preserve the established Data/VM launch minimums and runtime reserves, host free-memory threshold, Swap-growth stop, AC power, normal thermal state, sleep-prevention assertion, host lock, and Watchdog/telemetry stops. The prior ten-graph run measured 573.25 wall seconds and 606.34 process-tree CPU seconds for both orders. Naive 12× scaling of the 48,000 gross trials is about 1.91 wall-hours / 2.02 CPU-hours; this is **not** a validated upper bound for six sources, both states, target runtime, or recovery overhead. Source-window data loading can depend on all source-neuron counts, not only target graph N. The approved ceilings are maximum acceptable losses; do not extend them mid-run. The 4-GiB RSS is sampled, not a hard memory limit. Fresh live preflight and separate UUID-bound run authorization remain required.
 
 ## More efficient synthetic resource-calibration candidate
 
@@ -97,6 +101,6 @@ The underlying 2026-10-09 preregistration remains unchanged until a separately d
 
 ## Decisions and gates still open
 
-The researcher has selected the common order policy and approved the H3-120 stop ceilings in the two dated decision records linked above. The single outstanding independent-review gate for this amendment is a written reviewer confirmation, against this pending revision and the H3-120 resource record, of the original-neuron ordering rule, unchanged seed vectors, finite-`Qmax_200` interpretation, historical PS-A boundary, downstream observed-baseline recomputation scope, and the 8/8-hour H3 ceilings as stop-loss limits. The reviewer may reject or require a bounded correction. Until that confirmation is recorded and a separate effective date is entered, this file must remain `status: draft` and H3 must not launch.
+The researcher approved the canonical ordering method and the H3 stop-loss envelope, a separately conducted AI review with stated provenance/limitations recommended technical H3 approval, and the researcher separately adopted the H3-specific AI scrutiny + researcher-owned decision route on 2026-10-25. These are **dated, scope-specific decisions**, not fabricated independent human signatures. The historical replay acceptance criteria remain **per-trial |ΔQ| ≤ 1e-10, Qmax |Δ| ≤ 1e-6, exact first-max trial index match**; any identity or historical-Q failure is terminal. The canonical-vs-historical comparison is diagnostic only and **must not drive method, seed, selection, or threshold changes**. This method is effective prospectively, but no H3 is licensed until the exact final #1130 runner and revised packet have passed synthetic checks, hashes/head are frozen, and a separate run-specific researcher authorization follows current macOS host/resource preflight.
 
 Separately, the synthetic G0 benchmark design, its sample counts/expansion/holdout rules, U95 method, storage allocation, and total G0/T1 budgets remain draft resource decisions. They require their own review and approval before any resource benchmark or G0/T1 execution. This method decision does not approve those budgets or change G0/T1 **RESOURCE NO-GO**.
