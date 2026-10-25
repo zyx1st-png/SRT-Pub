@@ -185,7 +185,11 @@ def _method_is_effective(method_path: Path) -> tuple[bool, str]:
         return False, "method amendment is missing or symlinked"
     text = method_path.read_text(encoding="utf-8")
     frontmatter = text.split("---", 2)
-    if len(frontmatter) < 3 or "status: active" not in frontmatter[1]:
+    status_values = ([line.partition(":")[2].strip()
+                      for line in frontmatter[1].splitlines()
+                      if line.startswith("status:")]
+                     if len(frontmatter) >= 3 else [])
+    if status_values != ["active"]:
         return False, "canonical-Q method amendment is still DRAFT / NOT EFFECTIVE"
     if "DRAFT / NOT EFFECTIVE" in text[:3000]:
         return False, "method amendment still declares DRAFT / NOT EFFECTIVE"

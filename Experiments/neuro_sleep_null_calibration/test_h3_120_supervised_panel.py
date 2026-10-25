@@ -139,6 +139,11 @@ class TestH3Supervised120Panel(unittest.TestCase):
         effective, reason = h3_120._method_is_effective(MODULE_DIR / h3_120.METHOD_FILENAME)
         self.assertFalse(effective)
         self.assertIn("DRAFT", reason)
+        spoofed_status = self.root / "spoofed-method-status.md"
+        spoofed_status.write_text(
+            "---\nstatus: draft\nnote: prior status: active\n---\n",
+            encoding="utf-8")
+        self.assertFalse(h3_120._method_is_effective(spoofed_status)[0])
         auth = self.root / "approval.json"
         auth.write_text("{}", encoding="utf-8")
         run_id = str(uuid.uuid4())
