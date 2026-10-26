@@ -79,12 +79,17 @@ attempt and absence of an earlier exception. It creates an exclusive,
 non-replaceable `observed-remediation-<OLD_UUID>.claim.json` receipt and fsyncs
 it, then appends/fsyncs `observed_remediation_claimed` in the existing ledger.
 The receipt binds the predicted hash-chain record and its binding/auth hash.
-It precedes expensive old/source identity checks and all signal processing.
+It follows complete read-only old/source/resource admission under the same locks,
+and precedes the mandatory repeated post-claim checks and all signal processing.
 An interrupted receipt remains an uncertain consumed marker; it is not cleaned
 up for retry. A receipt without a claim, a claim without a receipt, a removed
 whole claim suffix, a duplicate/new-UUID claim or an incomplete invocation all
-fail closed. A preflight failure consumes the exception and records its reason
-and measured or explicitly unknown cost. No automated recovery is implemented.
+fail closed. A failure **after claim**, including the repeated admission checks,
+consumes the exception and records its reason and measured or explicitly unknown
+cost. A pre-claim refusal consumes no exception. No automated recovery is implemented.
+The existing receipt/claim status token `CONSUMED_BEFORE_PREFLIGHT_NO_AUTORETRY`
+is retained for record compatibility; “preflight” in that historical token now
+means the repeated **post-claim** checks, not the new non-consuming entry.
 
 Existing supervision is reused with additional admission, cumulative-stop and
 closing hooks. Those hooks do not skip the shared host-lock/packet checks.
@@ -244,3 +249,100 @@ Future commands use `observed_calibration_remediation.py --authorization-draft`,
 No real new UUID, approved JSON, claim or computation was created in this work.
 The 40 reserve graphs, full baseline, biological 4E nulls, G0 and T1 remain excluded;
 G0/T1 remain RESOURCE NO-GO. Draft PRs remain unmerged.
+
+
+## B1 non-consuming preflight (2026-10-26)
+
+This targeted change responds to [the B1 review](https://github.com/zyx1st-png/SRT-Pub/pull/1134#issuecomment-6416716741).
+It does not authorize a real run, replace the original evidence, or alter science,
+resource caps, cumulative accounting, the exclusive receipt or joint verification.
+
+```sh
+# Explicit existing private roots must already be set; use a researcher-selected
+# future UUID/path and the final reviewed clean HEAD. No UUID is allocated here.
+"$LOCKED_PYTHON" Experiments/neuro_sleep_null_calibration/observed_calibration_remediation.py \
+  --preflight --head <FROZEN_HEAD> --run-id <CANDIDATE_UUID> \
+  --run-dir "$SRT_PSA_ROOT/canonical_observed_resource_calibration_2026-10-26/<CANDIDATE_UUID>"
+```
+
+JSON schema `SRT_OBSERVED_REMEDIATION_PREFLIGHT_V1` returns `PREFLIGHT PASS`
+(exit 0) or `PREFLIGHT NO-GO` (exit 2), named PASS/FAIL/NOT_CHECKED checks,
+identity/resource/budget evidence and a snapshot-only caveat. It requires no
+approved authorization. Both existing host lock files are opened read-only and
+locked without creating/chmodding them; a missing or occupied lock refuses.
+It verifies the entire existing host chain, unused receipt/claim, original six
+results and incident audits, fixed suffix, clean HEAD, effective method, runtime
+lock and actual runtime, private sources/jobs/seeds, fresh fixed output path,
+internal APFS, unchanged Mac telemetry gates and cumulative remaining budget.
+A short controller-side sleep-assertion capability probe is started and stopped;
+no result directory, receipt, authorization or host-ledger entry is created.
+
+Formal `--run` obtains the existing two host locks and repeats all these checks
+before `O_EXCL` receipt/atomic claim. Refusal returns NO-GO without consuming the
+exception. A prior standalone PASS is never a bypass. After claim the original
+second checks, external Watchdog, child admission, cumulative guards and durable
+failure accounting remain in force. Any failure after claim consumes the sole
+exception, even if no scientific row starts. Separate read-only preflight
+observations are not reservations and are not saved as new formal activity or
+retroactively added to the unchanged cumulative accounting policy; the formal
+controller charges its own complete pre-/post-claim lifetime as before.
+
+B1 regression fixtures retain scratch-home/temp-ledger snapshots and cover
+38-GiB refusal against the actual unchanged 40-GiB Data/VM limits, Python/runtime,
+HEAD/method/original-evidence refusal, unused/used claims, occupied/missing locks,
+non-writing successful CLI preflight and post-claim failure consumption. Existing
+real-spawn concurrent-claim, crash/receipt/ledger-loss, unknown-child termination,
+scientific-kernel and joint-verification regressions remain part of validation.
+All synthetic evidence is retained; no real claim or private signal computation
+is permitted. Native integration trials retain production Mac safety thresholds;
+an unmet host threshold is `ENVIRONMENT NO-GO`, not a code-test pass.
+
+
+B1 validation evidence (2026-10-26, macOS 15.7.4 arm64 / Python 3.14.0):
+
+- Full affected R2 suite: **141 passed, 102 subtests passed, 92.74 s, no skips**;
+  includes exactly the three predeclared native Mac supervised suffix trials,
+  unchanged unknown-child stops, real-spawn claim race, post-claim crash/ledger
+  loss, cumulative limits and canonical-Q regressions.
+- Final B1-only R3 checks: **8 passed, 3 subtests passed, 1.67 s**, after clarifying
+  `claim_consumed_by_preflight` (not a claim-history assertion), including directory
+  snapshots and adding CLI resource-refusal exit-2 coverage. No native rerun.
+- First R1 invocation stopped with 2 passed / 3 subtests and one synthetic-fixture
+  `KeyError: authorization_bytes`; the unchanged claim API required a field omitted
+  by the new test fixture. Fixture fixed, complete failure evidence retained.
+  No native trial ran in R1; this was not a successful trial selection.
+- Ruff 0.17.2, Python compilation, `git diff --check`, split metadata and strict
+  repository governance checks passed. An initial invocation of the older local
+  Ruff 0.14.10 flagged the existing bootstrap import pattern; final checks use
+  the target environment's Ruff, matching current CI behavior. No ignore baseline
+  was broadened.
+- Real OLD re-verification: `VERIFIED_TERMINAL`, six rows, incomplete, non-resumable;
+  fixed 47-source/job/seed identities were read-only verified, with no signal/Q
+  computation. Real host ledger SHA stayed
+  `c124b0b833c499adce8a1d82bcdc1a1c4c25733952d8e6a4a576da5d881bb36d`;
+  the real exception receipt remains absent. Both existing locks were acquired
+  read-only and released. No candidate real UUID or authorization was generated.
+- A later resource snapshot: Data/VM each **40.5653 GiB**, host free-memory **37%**,
+  Swap used **6.7162 GiB**, free **0.2838 GiB**, AC and thermal-normal true.
+  Existing resource launch gates passed at this snapshot. The very narrow disk
+  margin and low Swap free value remain risks, not guaranteed future eligibility.
+  Swap total/free is dynamic, not a fixed capacity promise; existing used-growth,
+  memory-pressure and volume-space rules are unchanged. No cleanup was performed.
+
+Retained local validation log/XML and read-only audit SHA-256:
+
+- `srt-remediation-b1-validation-r1-20261026.log`: `059399bdad98e0e12cffe84a2f02e4b535d03561ac10a9a892e6e6bd65712afd`.
+- `srt-remediation-b1-validation-r1-20261026.xml`: `0843feab9e7ac75cd14a0740291d76912cf0e46fe6f268616e584d9fd7e57367`.
+- `srt-remediation-b1-validation-r2-20261026.log`: `ac4f3d1d7fc1a340a2a110adb840ed0fb31490f659bb4e016128432a00adda41`.
+- `srt-remediation-b1-validation-r2-20261026.xml`: `561f45240e0f995a723170121c5112ef000d9334c73826317f22e70c599d07da`.
+- `srt-remediation-b1-validation-r3-20261026.log`: `5bbfa211b761ba4132dfd9efe214f4198cc8b395f1d03459b19e4a9fb7924045`.
+- `srt-remediation-b1-validation-r3-20261026.xml`: `8c82f9d2a925efebafd8bcd5f7edf4d2a01523a49079c0f50ef422adc2430d5c`.
+- `srt-remediation-b1-local-readonly-20261026.json`: `284ea873791d961d9c9c5eff1a0da69896875c3e0be2c880167a4f9fd47d91c5`.
+
+These retained local files/fixtures are engineering evidence, not new experiment
+artifacts or immutable external custody. CI separately retains synthetic fixtures.
+
+**READY FOR INDEPENDENT B1 RE-REVIEW.** Actual resource eligibility must be checked
+again at any future authorized launch. Independent B1 acceptance and a new
+researcher-bound one-run authorization remain outstanding; no real run is allowed
+by this engineering handoff.

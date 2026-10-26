@@ -33,6 +33,7 @@ jobs:
       - name: Synthetic sources, canonical Q and real supervised fault tests
         run: >-
           python -m pytest -x -p no:cacheprovider -q --junitxml=/tmp/srt-remediation-ci.xml
+          Experiments/neuro_sleep_null_calibration/test_observed_remediation_preflight.py
           Experiments/neuro_sleep_null_calibration/test_observed_remediation_identity.py
           Experiments/neuro_sleep_null_calibration/test_observed_remediation_budget.py
           Experiments/neuro_sleep_null_calibration/test_observed_calibration_remediation.py

@@ -32,7 +32,11 @@ import observed_calibration_runner as runner
 import observed_remediation_identity as provenance
 import riken_source_identity as identity
 from observed_calibration_sample import canonical
-from test_observed_calibration import fixture, synthetic_builder
+from test_observed_calibration import (
+    fixture,
+    require_native_environment,
+    synthetic_builder,
+)
 
 SYNTHETIC_SCHEMA = "SRT_REMEDIATION_SYNTHETIC_FIXTURE_ONLY"
 
@@ -200,6 +204,8 @@ class TestObservedRemediation(unittest.TestCase):
         runtime = identity.h3_runtime_manifest()
         runtime["replay_environment_matches_recorded_versions_and_candidate_lock"] = True
         stack.enter_context(patch.object(identity, "h3_runtime_manifest", return_value=runtime))
+        stack.enter_context(patch.object(remedy, "_sleep_assertion_probe",
+                                         return_value={"status": "SYNTHETIC_CAPABILITY_ONLY"}))
         return stack
 
     def make_auth(self, *, approved=True):
@@ -529,18 +535,35 @@ class TestObservedRemediation(unittest.TestCase):
             with self.assertRaises((ValueError, pilot.H3PilotError)):
                 remedy.verify_joint(run, state_dir=self.state)
 
-    def test_preflight_budget_refusal_consumes_claim_without_creating_results(self):
+    def test_preflight_budget_refusal_does_not_consume_claim(self):
         with self.patches():
             path, _, args = self.make_auth()
+            before = (self.state / pilot._HOST_LEDGER).read_bytes()
             with patch.object(pilot, "_git_identity"), \
                  patch.object(remedy, "_original_budget", return_value={
                      **self.prior_info, "old_wall_charge_seconds": 14400}), \
                  patch.object(remedy, "_identity_preflight", return_value={}), \
-                 self.assertRaises(remedy.RemediationBudgetError):
+                 patch.object(remedy, "host_observation", return_value={"synthetic": True}):
+                result = remedy.launch(**args, authorization=path, phase2=self.signal_dir,
+                                       psa=self.psa, state_dir=self.state)
+            self.assertEqual(result["status"], "PREFLIGHT NO-GO")
+            self.assertFalse(args["run_dir"].exists())
+            self.assertEqual((self.state / pilot._HOST_LEDGER).read_bytes(), before)
+            self.assertFalse(list(self.state.glob("*.claim.json")))
+
+    def test_postclaim_second_identity_failure_still_consumes_exception(self):
+        with self.patches():
+            path, _, args = self.make_auth()
+            with patch.object(pilot, "_git_identity"), \
+                 patch.object(remedy, "_original_budget", return_value=self.prior_info), \
+                 patch.object(remedy, "_identity_preflight", side_effect=[
+                     {}, remedy.RemediationError("postclaim resource change")]), \
+                 self.assertRaisesRegex(ValueError, "postclaim"):
                 remedy.launch(**args, authorization=path, phase2=self.signal_dir,
                               psa=self.psa, state_dir=self.state)
             self.assertFalse(args["run_dir"].exists())
             self.assertEqual(self.events()[-1]["kind"], "observed_remediation_admission_failed")
+            self.assertTrue(list(self.state.glob("*.claim.json")))
             with self.assertRaises(ValueError):
                 remedy.assert_claim_state(self.events(), remedy.bindings(
                     self.head, str(uuid.uuid4()), self.parent / str(uuid.uuid4()), self.old_run),
@@ -553,6 +576,7 @@ class TestObservedRemediation(unittest.TestCase):
         for trial in range(3):
             if trial:
                 self.setUp()
+            require_native_environment(self)
             with self.patches():
                 run, result, _ = self.run_activity(native=True)
                 self.assertEqual(result["status"], "COMPLETED", json.dumps({

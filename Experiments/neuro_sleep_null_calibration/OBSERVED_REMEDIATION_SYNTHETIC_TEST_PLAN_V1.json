@@ -5,6 +5,7 @@
   "data_scope": "synthetic HDF5 signals and engineering seeds only; no RIKEN signal reads or real claim",
   "initial_validation": "one collection/import/static check, then one full affected-suite invocation per implementation revision",
   "targets": [
+    "test_observed_remediation_preflight.py",
     "test_observed_remediation_identity.py",
     "test_observed_remediation_budget.py",
     "test_observed_calibration_remediation.py",
@@ -29,5 +30,14 @@
     "sampled_RSS_bytes": 536870912,
     "output_bytes": 33554432
   },
-  "real_activity_prohibitions": ["no real UUID authorization", "no real host-ledger claim", "no real calibration", "no reserve40", "no baseline or nulls"]
+  "real_activity_prohibitions": [
+    "no real UUID authorization",
+    "no real host-ledger claim",
+    "no real calibration",
+    "no reserve40",
+    "no baseline or nulls"
+  ],
+  "B1_validation": "One full affected-suite invocation with -x per code revision, plus static/governance checks. Three native trials only if unchanged production Mac resource gates pass before each trial; resource refusal is ENVIRONMENT NO-GO with retained evidence, never a relaxed threshold or retry. B1 cases use scratch Path.home(), synthetic resources and temporary ledgers only.",
+  "B1_R1_outcome": "Stopped at first failure: 2 passed / 3 subtests; new already-claimed synthetic fixture omitted authorization_bytes required by unchanged claim API (KeyError). Complete retained fixture and R1 log/XML preserved. R2 adds the missing synthetic fixture field only, then one full-suite invocation; no native trial ran in R1.",
+  "B1_R2_outcome": "141 passed / 102 subtests / 92.74 seconds; zero skips, including the fixed three native Mac supervised trials. B1 R3 only clarifies the report flag as claim_consumed_by_preflight (not a claim-history assertion), snapshots directories as well as files, and adds CLI NO-GO exit-2 coverage. One run of the eight B1 tests only; no native repeat."
 }

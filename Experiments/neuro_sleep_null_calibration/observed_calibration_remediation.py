@@ -7,14 +7,20 @@ requires a separate exact-HEAD/UUID authorization and a durable one-time claim.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import json
 import os
+import shutil
+import stat
+import subprocess
 import sys
+from contextlib import contextmanager
 from dataclasses import replace
 from datetime import UTC, datetime
 from pathlib import Path
 
 import h3_supervised_pilot as pilot
+import nc0a_watchdog as watchdog
 import observed_calibration_runner as runner
 import observed_remediation_identity as provenance
 import riken_source_identity as identity
@@ -194,7 +200,7 @@ def assert_claim_state(events: list[dict], binding: dict, auth_sha: str, *, phas
 
 
 def claim_locked(log: HashChainLog, events: list[dict], approved: dict) -> str:
-    """Caller holds both existing host locks; claim is fsynced before preflight."""
+    """Caller holds both existing host locks; claim is fsynced before the repeated post-claim preflight."""
     binding, digest = approved["binding"], approved["authorization_sha256"]
     pilot._assert_host_ledger_allows(events, provenance.PACKET_SHA256)
     assert_claim_state(events, binding, digest, phase="unclaimed")
@@ -250,7 +256,12 @@ def _identity_preflight(binding: dict, phase2: Path, psa: Path) -> dict:
     """Reuse all admission checks except the intentionally consumed normal gate."""
     packet = provenance.load_packet()
     sample, manifest = validate_sample()
+    if binding["runtime_lock_sha256"] != packet["runtime_lock_sha256"]:
+        raise RemediationError("Frozen runtime lock hash mismatch")
     git = pilot._git_identity(binding["head_sha"])
+    effective, method_sha = runner.h3._method_is_effective(HERE / runner.METHOD_FILENAME)
+    if not effective or method_sha != packet["method_sha256"]:
+        raise RemediationError("Effective method hash/state mismatch")
     if bindings(binding["head_sha"], binding["run_uuid"], Path(binding["output_directory"]),
                 Path(binding["prior_run_directory"])) != binding:
         raise RemediationError("Bindings changed during admission")
@@ -278,6 +289,114 @@ def _identity_preflight(binding: dict, phase2: Path, psa: Path) -> dict:
             "implementation": runner.implementation_identity()}
 
 
+@contextmanager
+def _read_only_host_locks(state: Path):
+    """Inspect and lock existing admission files without creating/chmodding them."""
+    if state.resolve(strict=True) != Path(os.path.abspath(state)) or not state.is_dir():
+        raise RemediationError("Existing host-state directory is missing or redirected")
+    descriptors = []
+    try:
+        for path in (watchdog._default_activity_lock_path(), state / pilot._HOST_LOCK):
+            if path.resolve(strict=True) != Path(os.path.abspath(path)):
+                raise RemediationError("Host activity lock is redirected")
+            fd = os.open(path, os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0))
+            descriptors.append(fd)
+            info = os.fstat(fd)
+            if not stat.S_ISREG(info.st_mode) or info.st_nlink != 1:
+                raise RemediationError("Host activity lock must be a single regular file")
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        yield
+    finally:
+        for fd in reversed(descriptors):
+            fcntl.flock(fd, fcntl.LOCK_UN)
+            os.close(fd)
+
+
+def _sleep_assertion_probe() -> dict:
+    helper = watchdog._start_sleep_assertion(os.getpid(), True)
+    try:
+        if helper is None or helper.poll() is not None:
+            raise RemediationError("Required sleep assertion capability unavailable")
+        return {"status": "STARTED_AND_STOPPED", "continuous_assertion_reserved": False}
+    finally:
+        watchdog._stop_sleep_assertion(helper)
+
+
+def host_observation(psa: Path) -> dict:
+    """Diagnostic snapshot only; thresholds are still validated by the Watchdog."""
+    try:
+        return {"status": "OBSERVED_NOT_RESERVED",
+                "macos": watchdog.sample_macos_native_state(),
+                "memory": watchdog.sample_host_memory_pressure(),
+                "Data_free_bytes": shutil.disk_usage(runner.MACOS_POLICY["internal_data_volume_path"]).free,
+                "VM_free_bytes": shutil.disk_usage(runner.MACOS_POLICY["internal_vm_volume_path"]).free,
+                "output_free_bytes": shutil.disk_usage(psa).free}
+    except (OSError, ValueError, subprocess.SubprocessError, WatchdogError) as exc:
+        return {"status": "UNAVAILABLE", "reason": str(exc)[:300]}
+
+
+def _preflight_locked(binding: dict, phase2: Path, psa: Path, state: Path,
+                       meter: ControllerMeter, authorization: Path | None = None) -> dict:
+    """Caller holds the host locks; every operation before claim is read-only."""
+    names = ("unused_exception", "original_six_and_audits", "identity_sources_and_resources",
+             "sleep_assertion_capability", "remaining_cumulative_budget")
+    report = {"schema": "SRT_OBSERVED_REMEDIATION_PREFLIGHT_V1", "status": "PREFLIGHT NO-GO",
+              "checked_at_utc": datetime.now(UTC).isoformat(), "binding": binding,
+              "claim_consumed_by_preflight": False, "created_by_preflight": [],
+              "execution_authorized": False, "checks": [], "verified": {},
+              "dynamic_state": "Snapshot only; no resource reservation or future guarantee. "
+                               "Formal launch repeats checks under locks, then rechecks after claim."}
+    current = names[0]
+    try:
+        if str(state) != binding["host_state_directory"]:
+            raise RemediationError("Preflight ledger is not the bound host-state directory")
+        events = pilot._verified_host_events(state / pilot._HOST_LEDGER)
+        pilot._assert_host_ledger_allows(events, provenance.PACKET_SHA256)
+        assert_claim_state(events, binding, "", phase="unclaimed")
+        report["checks"].append({"name": current, "status": "PASS"})
+        current = names[1]
+        prior = _original_budget(Path(binding["prior_run_directory"]), state)
+        report["verified"]["original"] = prior
+        report["checks"].append({"name": current, "status": "PASS"})
+        current = names[2]
+        report["verified"]["environment"] = _identity_preflight(binding, phase2, psa)
+        report["checks"].append({"name": current, "status": "PASS"})
+        current = names[3]
+        report["verified"]["sleep_probe"] = _sleep_assertion_probe()
+        report["checks"].append({"name": current, "status": "PASS"})
+        current = names[4]
+        snapshot = meter.snapshot()
+        report["verified"]["controller_observation"] = snapshot
+        extra = authorization.stat().st_size if authorization is not None else 0
+        report["verified"]["allocation_if_admitted_now"] = budget_allocation(prior, snapshot, extra)
+        report["checks"].append({"name": current, "status": "PASS"})
+        report["status"] = "PREFLIGHT PASS"
+    except (OSError, ValueError, subprocess.SubprocessError, WatchdogError, RemediationBudgetError, pilot.H3PilotError) as exc:
+        report["checks"].append({"name": current, "status": "FAIL",
+                                 "failure_type": type(exc).__name__, "reason": str(exc)[:500]})
+        report["observed_host_state"] = host_observation(psa)
+    checked = {check["name"] for check in report["checks"]}
+    report["checks"].extend({"name": name, "status": "NOT_CHECKED"} for name in names if name not in checked)
+    return report
+
+
+def preflight(*, head: str, run_id: str, run_dir: Path, old_run_dir: Path,
+              phase2: Path, psa: Path, state_dir: Path | None = None) -> dict:
+    """Non-consuming read-only preflight: no authorization, ledger or result writes."""
+    try:
+        meter = ControllerMeter()
+        binding = bindings(head, run_id, run_dir, old_run_dir)
+        state = state_dir or pilot.default_host_state_dir()
+        with _read_only_host_locks(state):
+            return _preflight_locked(binding, phase2, psa, state, meter)
+    except (OSError, ValueError, subprocess.SubprocessError, WatchdogError, RemediationBudgetError, pilot.H3PilotError) as exc:
+        return {"schema": "SRT_OBSERVED_REMEDIATION_PREFLIGHT_V1", "status": "PREFLIGHT NO-GO",
+                "claim_consumed_by_preflight": False, "execution_authorized": False, "created_by_preflight": [],
+                "checks": [{"name": "binding_and_existing_host_locks", "status": "FAIL",
+                            "failure_type": type(exc).__name__, "reason": str(exc)[:500]}],
+                "observed_host_state": host_observation(psa)}
+
+
 def launch(*, head: str, run_id: str, run_dir: Path, old_run_dir: Path, authorization: Path,
            confirmation: str, phase2: Path, psa: Path, state_dir: Path | None = None) -> dict:
     meter = ControllerMeter()  # process lifetime, including imports and approval validation
@@ -296,6 +415,11 @@ def launch(*, head: str, run_id: str, run_dir: Path, old_run_dir: Path, authoriz
     # The ordinary entry still refuses the old full sample. Only this distinct
     # frozen packet and the explicit claim can reach the already-reviewed kernel.
     with pilot._host_lock(state):
+        # B1: environment/identity refusal must precede the irreversible claim.
+        # These checks hold the same locks as the immediately following claim.
+        before_claim = _preflight_locked(binding, phase2, psa, state, meter, authorization)
+        if before_claim["status"] != "PREFLIGHT PASS":
+            return before_claim
         events = pilot._verified_host_events(ledger)
         ledger_start_bytes = ledger.stat().st_size
         with HashChainLog(ledger) as log:
@@ -610,6 +734,7 @@ def main(argv=None) -> int:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--validate-packet", action="store_true")
     mode.add_argument("--authorization-draft", action="store_true")
+    mode.add_argument("--preflight", action="store_true")
     mode.add_argument("--run", action="store_true")
     mode.add_argument("--verify", type=Path)
     mode.add_argument("--runner-child", action="store_true", help=argparse.SUPPRESS)
@@ -637,15 +762,21 @@ def main(argv=None) -> int:
         parser.error("Both private roots must be explicitly set")
     phase2, psa = map(Path, roots)
     old = psa / runner.OUTPUT_PARENT / provenance.load_packet()["prior_run"]["uuid"]
+    if args.preflight:
+        result = preflight(head=args.head, run_id=args.run_id, run_dir=args.run_dir,
+                           old_run_dir=old, phase2=phase2, psa=psa)
+        print(json.dumps(result))
+        return 0 if result["status"] == "PREFLIGHT PASS" else 2
     if args.authorization_draft:
         print(json.dumps(authorization_draft(args.head, args.run_id, args.run_dir, old)))
         return 0
     if not args.authorization or not args.researcher_confirmation:
         parser.error("Separate approved remediation JSON and personal confirmation required")
-    print(json.dumps(launch(head=args.head, run_id=args.run_id, run_dir=args.run_dir,
+    result = launch(head=args.head, run_id=args.run_id, run_dir=args.run_dir,
         old_run_dir=old, authorization=args.authorization, confirmation=args.researcher_confirmation,
-        phase2=phase2, psa=psa)))
-    return 0
+        phase2=phase2, psa=psa)
+    print(json.dumps(result))
+    return 2 if result["status"] == "PREFLIGHT NO-GO" else 0
 
 
 if __name__ == "__main__":
