@@ -4,6 +4,7 @@ from __future__ import annotations
 import copy
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import time
@@ -57,6 +58,7 @@ def fixture(root: Path):
         rows.append({"sample_order": i, "graph_id": graph_id,
                      "N": len(selected), "expected_edge_count": 8 * len(selected),
                      "recording_id": "synthetic", "state": "wake", "window_id": 0,
+                     "source_filename": source.name,
                      "source_file_sha256": identity.sha256_file(source),
                      "source_frame_indices_sha256": identity.hash_int64(range(1500)),
                      "selected_neuron_indices_sha256": identity.hash_int64(selected),
@@ -83,6 +85,23 @@ def synthetic_builder(corr):
 
 def row_processor(source, selections, cache, scenario="normal"):
     def process(row, phase_sink=None):
+        if scenario == "private_row_path":
+            # Exercise the production row function; replace only private input
+            # admission and the historical builder with synthetic equivalents.
+            with patch.object(runner, "load_row_inputs", return_value=(
+                    source, selections[row["graph_id"]], list(range(700, 900)))), \
+                 patch.object(identity, "_historical_connected_graph", return_value=(
+                     synthetic_builder, identity.EXPECTED_HISTORICAL_GRAPH_FUNCTION_SHA256)), \
+                 patch.object(subprocess, "Popen", side_effect=AssertionError(
+                     "Scientific row must not spawn resource telemetry helpers")):
+                return runner._private_process_row(
+                    row, {}, source.parent, source.parent,
+                    {source.name: runner._signature(source)}, cache, phase_sink)
+        if scenario == "unknown_child":
+            # Keep a genuinely unregistered child alive until supervision
+            # detects it; no helper title or blanket allowance is involved.
+            subprocess.Popen([sys.executable, "-c", "import time; time.sleep(30)"])
+            time.sleep(30)
         if scenario == "slow":
             time.sleep(3)
         if scenario == "scientific_failure":
@@ -182,6 +201,31 @@ class TestObservedCalibration(unittest.TestCase):
             runner.validate_result(result, row)
             self.assertTrue(all(v["wall_seconds"] >= 0 for v in result["phases"].values()))
         self.assertEqual(first["zero_variance"]["raw_nonfinite_values"], 0)
+
+    def test_production_row_uses_only_native_endpoints_and_preserves_science(self):
+        row = self.rows[0]
+        reference = row_processor(self.source, self.selected, RawWindowCache(2 * 1024**2))(row)
+        measured = row_processor(self.source, self.selected, RawWindowCache(2 * 1024**2),
+                                 "private_row_path")(row)
+        for field in ("canonical", "labeled_edges", "original_neuron_ids", "louvain_seeds",
+                      "zero_variance"):
+            self.assertEqual(measured[field], reference[field])
+        runner.validate_result(measured, row)
+        for endpoint in ("before", "after"):
+            self.assertEqual(set(measured["resource_endpoints"][endpoint]),
+                             {"process", "output_free_bytes"})
+        host = measured["resource_endpoints"]["host_telemetry"]
+        self.assertEqual(host["artifact"], "watchdog.jsonl")
+        self.assertEqual(host["task_id"], row["graph_id"])
+        self.assertIn("unknown, not zero", host["semantics"])
+
+    def test_pmset_and_other_host_commands_are_still_unknown_inside_worker_group(self):
+        for command in ("(pmset)", "/usr/bin/pmset -g batt", "/usr/bin/pmset -g therm",
+                        "/usr/bin/memory_pressure -Q", "/usr/sbin/sysctl vm.swapusage"):
+            with self.subTest(command=command), patch.object(watchdog.sys, "platform", "darwin"):
+                observed = watchdog.ProcessUsage(85411, 84340, 84340, 16, 0.0, "U", command)
+                self.assertEqual(watchdog.classify_process_group([observed], 84340)["unknown_pids"],
+                                 [85411])
 
     def test_cache_state_frame_source_invalidation_and_cap(self):
         cache = RawWindowCache(2 * 1024**2)
@@ -368,6 +412,42 @@ class TestObservedCalibration(unittest.TestCase):
         artifact.write_bytes(artifact.read_bytes() + b" ")
         with self.assertRaisesRegex(ValueError, "artifact"):
             runner.verify_run(run, state_dir=state)
+
+    def test_real_watchdog_production_row_path_and_unknown_child_fail_closed(self):
+        run, state, summary = self.run_supervised("private_row_path")
+        self.assertEqual(summary["status"], "COMPLETED", json.dumps(summary))
+        self.assertEqual(runner.verify_run(run, state_dir=state)["rows_verified"], 2)
+        run, state, summary = self.run_supervised("unknown_child")
+        self.assertEqual(summary["status"], "STOPPED_BY_WATCHDOG")
+        self.assertEqual(summary["watchdog"]["reason"], "UNKNOWN_PROCESS_GROUP_MEMBER")
+        audit = runner.verify_run(run, state_dir=state)
+        self.assertFalse(audit["completed"])
+        self.assertFalse(audit["resume_allowed"])
+        self.assertEqual(audit["rows_verified"], 0)
+        # A different UUID cannot reset this sample's consumed attempt.
+        events = pilot._verified_host_events(state / pilot._HOST_LEDGER)
+        with self.assertRaisesRegex(pilot.H3PilotError, "recorded attempt"):
+            pilot._assert_host_ledger_allows(events, summary["pilot_sha256"])
+
+    @unittest.skipUnless(sys.platform == "darwin", "real macOS external telemetry/sleep assertion")
+    def test_real_macos_watchdog_samples_host_outside_production_row_group(self):
+        native = pilot._build_watchdog_limits(runner.RESOURCE_CANDIDATE)
+        names = ("reserve_free_disk_bytes", "memory_enforcement_backend",
+                 "host_memory_free_percent_stop", "boot_volume_path", "boot_reserve_free_disk_bytes",
+                 "minimum_boot_free_disk_bytes", "swap_volume_path", "swap_volume_reserve_free_disk_bytes",
+                 "minimum_swap_volume_free_disk_bytes", "swap_growth_stop_bytes",
+                 "require_ac_power", "require_thermal_normal", "require_sleep_assertion")
+        run, state, summary = self.run_supervised(
+            "private_row_path", **{name: getattr(native, name) for name in names})
+        self.assertEqual(summary["status"], "COMPLETED", json.dumps(summary))
+        self.assertTrue(runner.verify_run(run, state_dir=state)["completed"])
+        events = [json.loads(line)["event"] for line in (run / "watchdog.jsonl").read_text().splitlines()]
+        samples = [e for e in events if e.get("event") == "resource_sample"]
+        self.assertTrue(samples)
+        self.assertTrue(all(e["host_memory_pressure"] is not None for e in samples))
+        self.assertTrue(all(e["macos_native_state"] is not None for e in samples))
+        self.assertTrue(all(not e["process_classes"]["unknown_pids"] for e in samples))
+        self.assertEqual(summary["watchdog"]["usage"]["sleep_assertion"], "CAFFEINATE_ACTIVE")
 
     def test_failures_never_retry_or_succeed_and_preserve_accounting(self):
         for scenario, category in (("scientific_failure", "SCIENTIFIC_INTEGRITY"), ("io_failure", "OPERATIONAL_IO")):

@@ -1,0 +1,284 @@
+{
+  "canonical": false,
+  "completed_rows": [
+    {
+      "N": 100,
+      "artifact_bytes": 38539,
+      "artifact_sha256": "7f8dfd0af0dbc9a6129b02c85e687c93b1c9c4b36107b6abbb0785435c0d6e5e",
+      "canonical_200_Q_cpu_seconds": 1.6969199999999995,
+      "canonical_200_Q_wall_seconds": 1.7447254579747096,
+      "graph_id": "mouse01_sleep|N100|rep-065|wake|window-000",
+      "raw_window_cache_hit": false,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 0.5012310000000006,
+      "reconstruction_outer_wall_seconds": 0.6228919590357691,
+      "row_durable_wall_seconds": 2.959923,
+      "sample_order": 1,
+      "source": "mouse01_sleep",
+      "state": "wake",
+      "watchdog_RSS": {
+        "sample_count": 0,
+        "sampled_max_bytes": null
+      },
+      "window_id": 0
+    },
+    {
+      "N": 1150,
+      "artifact_bytes": 142702,
+      "artifact_sha256": "5c9e249c7693af4267dae8d8d87149a8b3742fd825fce3320e9d1b2f4a3b4f36",
+      "canonical_200_Q_cpu_seconds": 25.271527,
+      "canonical_200_Q_wall_seconds": 26.573171583004296,
+      "graph_id": "mouse01_sleep|N1150|rep-075|wake|window-000",
+      "raw_window_cache_hit": true,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 1.1710389999999986,
+      "reconstruction_outer_wall_seconds": 1.1858045830158517,
+      "row_durable_wall_seconds": 27.885303,
+      "sample_order": 2,
+      "source": "mouse01_sleep",
+      "state": "wake",
+      "watchdog_RSS": {
+        "sample_count": 6,
+        "sampled_max_bytes": 288178176
+      },
+      "window_id": 0
+    },
+    {
+      "N": 340,
+      "artifact_bytes": 62640,
+      "artifact_sha256": "a2a2b9bb2ff57daba7c56744ef7fb6cbd78673c7a47085d7313ede6910b3fba0",
+      "canonical_200_Q_cpu_seconds": 6.9498140000000035,
+      "canonical_200_Q_wall_seconds": 7.19126008299645,
+      "graph_id": "mouse01_sleep|N340|rep-081|NREM|window-001",
+      "raw_window_cache_hit": false,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 0.5758149999999986,
+      "reconstruction_outer_wall_seconds": 0.7244474160252139,
+      "row_durable_wall_seconds": 8.025213,
+      "sample_order": 3,
+      "source": "mouse01_sleep",
+      "state": "NREM",
+      "watchdog_RSS": {
+        "sample_count": 1,
+        "sampled_max_bytes": 296304640
+      },
+      "window_id": 1
+    },
+    {
+      "N": 3900,
+      "artifact_bytes": 414609,
+      "artifact_sha256": "0625cb4f43c53051726649e45c6d5da20dae5ffc085412b4a3bea78358cca56d",
+      "canonical_200_Q_cpu_seconds": 83.49907500000002,
+      "canonical_200_Q_wall_seconds": 87.17943733400898,
+      "graph_id": "mouse01_sleep|N3900|rep-030|NREM|window-001",
+      "raw_window_cache_hit": true,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 27.696540999999996,
+      "reconstruction_outer_wall_seconds": 29.39900120900711,
+      "row_durable_wall_seconds": 116.828832,
+      "sample_order": 4,
+      "source": "mouse01_sleep",
+      "state": "NREM",
+      "watchdog_RSS": {
+        "sample_count": 22,
+        "sampled_max_bytes": 1324351488
+      },
+      "window_id": 1
+    },
+    {
+      "N": 100,
+      "artifact_bytes": 38564,
+      "artifact_sha256": "94d10a88a21555386d2c2466eb1d914904af9a9c8e73ec7cbfe6f21a25ce1607",
+      "canonical_200_Q_cpu_seconds": 1.617840000000001,
+      "canonical_200_Q_wall_seconds": 1.6893145829671994,
+      "graph_id": "mouse01_sleep|N100|rep-003|NREM|window-002",
+      "raw_window_cache_hit": false,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 0.43606399999995915,
+      "reconstruction_outer_wall_seconds": 0.4987739990465343,
+      "row_durable_wall_seconds": 2.283098,
+      "sample_order": 5,
+      "source": "mouse01_sleep",
+      "state": "NREM",
+      "watchdog_RSS": {
+        "sample_count": 0,
+        "sampled_max_bytes": null
+      },
+      "window_id": 2
+    },
+    {
+      "N": 765,
+      "artifact_bytes": 104974,
+      "artifact_sha256": "e22d7b6360bef035ccc5927ba8de7ca785f5ba83f1b1f23bb439f84cbd8ef96d",
+      "canonical_200_Q_cpu_seconds": 15.897390999999999,
+      "canonical_200_Q_wall_seconds": 16.79989254195243,
+      "graph_id": "mouse01_sleep|N765|rep-085|NREM|window-002",
+      "raw_window_cache_hit": true,
+      "raw_window_retained_bytes": 94116000,
+      "reconstruction_outer_cpu_seconds": 0.5144629999999779,
+      "reconstruction_outer_wall_seconds": 0.5174452079809271,
+      "row_durable_wall_seconds": 17.452754,
+      "sample_order": 6,
+      "source": "mouse01_sleep",
+      "state": "NREM",
+      "watchdog_RSS": {
+        "sample_count": 4,
+        "sampled_max_bytes": 360513536
+      },
+      "window_id": 2
+    }
+  ],
+  "detection": {
+    "command_hash_scope": "SHA-256 of captured title (pmset); full argv and command launch timestamp not recorded",
+    "first_seen_limitation": "only detection/stop-request timestamp is recorded; first process lifetime timestamp unknown",
+    "phase_reported": "case",
+    "process": {
+      "command_sha256": "3bc59fe9f1cb1631b2b38d66a47283601beea8f9a120e7813965f24b09083482",
+      "executable": "(pmset)",
+      "pgid": 84340,
+      "pid": 85411,
+      "ppid": 84340,
+      "state": "U"
+    },
+    "stop_requested_utc": "2026-10-26T08:18:46.099420+00:00",
+    "task_id_reported": "mouse01_sleep|N765|rep-085|NREM|window-002"
+  },
+  "elapsed_controller_seconds": 183.41102137503913,
+  "executed_head": "b4a4b34ed7432efbf0d289a8b244345f73cf6a43",
+  "host_finished_utc": "2026-10-26T08:18:46.657906+00:00",
+  "host_started_utc": "2026-10-26T08:15:43.222102+00:00",
+  "last_evidence_markers": [
+    {
+      "finished_utc_ns": 1793002726110438000,
+      "graph_id": "mouse01_sleep|N765|rep-085|NREM|window-002",
+      "kind": "graph_result",
+      "started_utc_ns": 1793002708657684000
+    },
+    {
+      "graph_id": "mouse01_sleep|N765|rep-085|NREM|window-002",
+      "kind": "artifact_cost"
+    },
+    {
+      "graph_id": "mouse01_sleep|N3900|rep-032|NREM|window-002",
+      "kind": "graph_started",
+      "started_utc_ns": 1793002726110964000
+    },
+    {
+      "graph_id": "mouse01_sleep|N3900|rep-032|NREM|window-002",
+      "kind": "phase_measured",
+      "phase": "private_job_subset_seed_identity"
+    },
+    {
+      "graph_id": "mouse01_sleep|N3900|rep-032|NREM|window-002",
+      "kind": "phase_measured",
+      "phase": "resource_snapshot_before"
+    },
+    {
+      "graph_id": "mouse01_sleep|N3900|rep-032|NREM|window-002",
+      "kind": "phase_measured",
+      "phase": "source_hdf5_and_raw_window"
+    },
+    {
+      "graph_id": "mouse01_sleep|N3900|rep-032|NREM|window-002",
+      "kind": "phase_measured",
+      "phase": "correlation_and_zero_variance_diagnostics"
+    }
+  ],
+  "limitations": [
+    "Only first six ordered rows, all one recording; 41 rows unmeasured.",
+    "Five N levels, three windows, three cold raw loads and three raw-cache hits.",
+    "No random representative/U95 or complete 47-row inference.",
+    "Worker lifetime self ru_maxrss and sampled process-tree RSS are different; zero row samples mean unknown.",
+    "Old endpoint telemetry overhead differs from repaired path; do not merge cost estimates silently.",
+    "No new signal processing or Louvain performed for this audit."
+  ],
+  "original_formal_preflight": {
+    "preflight_process_cpu_seconds": 6.2890250000000005,
+    "preflight_wall_seconds": 7.245956416998524
+  },
+  "original_host_ledger_sha256": "c124b0b833c499adce8a1d82bcdc1a1c4c25733952d8e6a4a576da5d881bb36d",
+  "original_run_file_sha256": {
+    "active_task.json": "6a66ba13828f58a9035f646558bd53ff92d1ea12a2c622e1fa0ae76cdddbd496",
+    "h3-active-lease.json": "46c48dbe5853c90d4e4a53866e33b3abebc046b8f2a65788c257f7d758b5bd94",
+    "h3-control.jsonl": "10db06b6e23ad7c1279096cb888669ae5c96e9bd44ac3fc2d6108fd82d3c7b03",
+    "h3-evidence.jsonl": "cca12ae08034fbe8026543085783a6d810e1414c9e2649abc3df6260ef5900a4",
+    "h3-summary.json": "4eae491304bd80294854c79227067144f2d6bb42ecdec42ae085adb1d81cc0b1",
+    "observed-cost-rows/001.json": "7f8dfd0af0dbc9a6129b02c85e687c93b1c9c4b36107b6abbb0785435c0d6e5e",
+    "observed-cost-rows/002.json": "5c9e249c7693af4267dae8d8d87149a8b3742fd825fce3320e9d1b2f4a3b4f36",
+    "observed-cost-rows/003.json": "a2a2b9bb2ff57daba7c56744ef7fb6cbd78673c7a47085d7313ede6910b3fba0",
+    "observed-cost-rows/004.json": "0625cb4f43c53051726649e45c6d5da20dae5ffc085412b4a3bea78358cca56d",
+    "observed-cost-rows/005.json": "94d10a88a21555386d2c2466eb1d914904af9a9c8e73ec7cbfe6f21a25ce1607",
+    "observed-cost-rows/006.json": "e22d7b6360bef035ccc5927ba8de7ca785f5ba83f1b1f23bb439f84cbd8ef96d",
+    "run-manifest.json": "92f52e49d82c81c208693f96ab4e2a0791dbdbc7dde04f710f6e28a8c1907a97",
+    "runner.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "watchdog.jsonl": "c7b406a135de2067e6512d04adb6ed182db99f7e2b54b6540d57bdfecef51aca"
+  },
+  "partial_seventh_row_has_no_committed_Q_result": true,
+  "public_incident": "https://github.com/zyx1st-png/SRT-Pub/pull/1132#issuecomment-6411647409",
+  "read_only_audit_utc": "2026-10-26T08:43:53.985500+00:00",
+  "reported_usage": {
+    "aggregate_rss_bytes": 0,
+    "boot_volume_free_bytes_min": 49150107648,
+    "cgroup_memory_peak_bytes": null,
+    "cpu_accounting": "max_process_group_ps_and_waited_child_rusage_plus_watchdog",
+    "cpu_seconds": 188.48465399999998,
+    "free_disk_bytes": 49221525504,
+    "host_memory_free_percent_min": 33,
+    "macos_native_state": {
+      "ac_power": true,
+      "performance_warning_level": 0,
+      "swap_free_bytes": 1024395837,
+      "swap_total_bytes": 6442450944,
+      "swap_used_bytes": 5418055106,
+      "thermal_normal": true,
+      "thermal_warning_level": 0
+    },
+    "memory_enforcement": "MACOS_SAMPLED_PRESSURE_NOT_HARD",
+    "peak_aggregate_rss_bytes": 1465270272,
+    "peak_compute_workers": 1,
+    "peak_process_group_members": 2,
+    "peak_resource_trackers": 0,
+    "run_directory_bytes": 963530,
+    "runner_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sleep_assertion": "CAFFEINATE_ACTIVE",
+    "swap_free_bytes_initial": 1045031813,
+    "swap_free_bytes_min_sampled": 999230013,
+    "swap_total_bytes_initial": 6442450944,
+    "swap_total_bytes_peak_sampled": 6442450944,
+    "swap_used_bytes_initial": 5397419130,
+    "swap_used_bytes_peak_sampled": 5443220930,
+    "unexpected_processes": [
+      {
+        "command_sha256": "3bc59fe9f1cb1631b2b38d66a47283601beea8f9a120e7813965f24b09083482",
+        "executable": "(pmset)",
+        "pgid": 84340,
+        "pid": 85411,
+        "ppid": 84340,
+        "state": "U"
+      }
+    ],
+    "vm_volume_free_bytes_min": 49150107648,
+    "wall_seconds": 183.26759672164917
+  },
+  "run_uuid": "cf726336-0f3b-4506-9cd3-cb36da3f7e12",
+  "sample_sha256": "f29acb99a05387b128f724bf818e3f402f7ced8a4080c12da4a936b9284d95c4",
+  "schema": "SRT_OBSERVED_CALIBRATION_INCIDENT_EVIDENCE_V1",
+  "status": "draft",
+  "terminal": {
+    "failure_category": "OPERATIONAL_RESOURCE_STOP",
+    "resume_allowed": false,
+    "status": "STOPPED_BY_WATCHDOG"
+  },
+  "verification": {
+    "completed": false,
+    "hash_chain_tips": {
+      "h3-control.jsonl": "c2dfcdac2046f26ef7531903fb1c420473bd48bab694caa0806e5d68988ff845",
+      "h3-evidence.jsonl": "212f93b225146aabfb6a7eebb458856f5c90075c7f8993441d1a8cc7a28fe3da",
+      "watchdog.jsonl": "11c0e7b90dcc5b58bac6a4a7c436506f51fdf7bf0386535dddccdb23b81730f4"
+    },
+    "resume_allowed": false,
+    "rows_verified": 6,
+    "status": "VERIFIED_TERMINAL"
+  },
+  "verified_louvain_trials": 1200
+}
