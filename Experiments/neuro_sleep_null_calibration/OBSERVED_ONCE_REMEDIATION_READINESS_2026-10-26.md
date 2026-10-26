@@ -346,3 +346,18 @@ artifacts or immutable external custody. CI separately retains synthetic fixture
 again at any future authorized launch. Independent B1 acceptance and a new
 researcher-bound one-run authorization remain outstanding; no real run is allowed
 by this engineering handoff.
+
+
+CI follow-up: the first B1 push (`4d15148bf4a2c4bce1065dd48d211441dc4360e9`)
+passed Governance and static checks but its Linux synthetic job stopped at the
+new positive preflight test (3 passed / 3 subtests). The synthetic sensor fixture
+set `sys.platform=darwin` to exercise the unchanged Mac thresholds; its unmocked
+native process-I/O sensor consequently attempted macOS `libproc` on Linux.
+Only that test sensor is now mocked; production sensor validation is unchanged.
+R4 B1-only validation: **8 passed / 3 subtests / 1.61 s**. One additional positive
+case with `ctypes.CDLL` forced to fail also passed, confirming that synthetic
+preflight no longer depends on Mac native libraries. No native batch was repeated.
+The failed [CI job](https://github.com/zyx1st-png/SRT-Pub/actions/runs/40330911842)
+and [full synthetic artifact](https://github.com/zyx1st-png/SRT-Pub/actions/runs/40330911842/artifacts/12654942159)
+remain available; artifact ZIP SHA-256 is
+`1710c3c77725c384ceef56db3b197d6e55e339c1e5dcee5b00e164bc1d0068ec`.

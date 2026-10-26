@@ -56,6 +56,8 @@ class TestReadOnlyPreflight(unittest.TestCase):
             True, method or runner.METHOD_SHA256)))
         stack.enter_context(patch.object(identity, "h3_runtime_manifest", return_value={
             "replay_environment_matches_recorded_versions_and_candidate_lock": runtime}))
+        stack.enter_context(patch.object(remedy, "process_counters", return_value={
+            "native_io_semantics": "SYNTHETIC_PREFLIGHT_SENSORS"}))
         stack.enter_context(patch.object(runner, "validate_private_identities", return_value=(
             self.f.signal_dir, self.f.psa, {"synthetic": True})))
         stack.enter_context(patch.object(runner, "validate_internal_apfs", return_value={"filesystem": "APFS"}))
@@ -155,7 +157,7 @@ class TestReadOnlyPreflight(unittest.TestCase):
             with redirect_stdout(output):
                 code = remedy.main(["--preflight", "--head", self.f.head, "--run-id", self.new_id,
                                     "--run-dir", str(self.args["run_dir"])])
-            self.assertEqual(code, 0)
+            self.assertEqual(code, 0, output.getvalue())
             self.assertEqual(json.loads(output.getvalue())["status"], "PREFLIGHT PASS")
             self.assertEqual(before, self.snapshot())
 
