@@ -32,8 +32,6 @@ from nc0a_watchdog import (
     HashChainLog,
     WatchdogError,
     guard_watchdog_parent,
-    sample_host_memory_pressure,
-    sample_macos_native_state,
     verify_hash_chain,
 )
 from observed_calibration_measurement import (
@@ -443,8 +441,10 @@ def _private_process_row(row, manifest, phase2, psa, signatures, cache, phase_si
         if _signature(source) != tuple(signatures[row["source_filename"]]):
             raise identity.IdentityEvidenceError("Source changed after admission")
     with Phase(phases, "resource_snapshot_before"):
-        before = {"host_memory_pressure": sample_host_memory_pressure(),
-                  "macos": sample_macos_native_state(), "process": process_counters(),
+        # Host telemetry belongs to the external Watchdog. Its command-line
+        # helpers would inherit this scientific process group and correctly
+        # trigger UNKNOWN_PROCESS_GROUP_MEMBER if launched here.
+        before = {"process": process_counters(),
                   "output_free_bytes": shutil.disk_usage(psa).free}
     def historical_factory():
         function, digest = identity._historical_connected_graph(phase2 / "multirecording_primary.py")
@@ -455,10 +455,15 @@ def _private_process_row(row, manifest, phase2, psa, signatures, cache, phase_si
     result = measure_row(row, source_path=source, selected=selected, seeds=seeds,
                          cache=cache, initial_phases=phases, builder_factory=historical_factory)
     with Phase(result["phases"], "resource_snapshot_after"):
-        after = {"host_memory_pressure": sample_host_memory_pressure(),
-                 "macos": sample_macos_native_state(), "process": process_counters(),
+        after = {"process": process_counters(),
                  "output_free_bytes": shutil.disk_usage(psa).free}
-    result["resource_endpoints"] = {"before": before, "after": after}
+    result["resource_endpoints"] = {
+        "before": before, "after": after,
+        "host_telemetry": {"artifact": "watchdog.jsonl", "task_id": row["graph_id"],
+                           "semantics": "external periodic task-ID samples may lag row boundaries, "
+                                        "not exact row endpoints; "
+                                        "no matching sample means unknown, not zero"},
+    }
     return result
 
 
