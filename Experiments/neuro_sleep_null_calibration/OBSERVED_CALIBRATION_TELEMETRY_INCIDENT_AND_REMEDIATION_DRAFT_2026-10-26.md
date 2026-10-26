@@ -16,7 +16,7 @@ tags: [RIKEN, ObservedBaseline, Watchdog, Incident, NoRetry]
 
 # First observed-only attempt: worker telemetry conflict
 
-**Verified operational interruption; no remediation execution authorized or enabled.**
+**Verified operational interruption; researcher-approved remediation policy for engineering only (2026-10-26); no remediation execution authorized or enabled.**
 This corrective branch is stacked on #1132's executed HEAD
 `b4a4b34ed7432efbf0d289a8b244345f73cf6a43`.
 The original UUID `cf726336-0f3b-4506-9cd3-cb36da3f7e12` remains consumed,
@@ -155,14 +155,13 @@ all N strata, complete 47-row runtime, U95, a 4,900-graph baseline or G0/T1.
 The repaired path removes old host-command endpoint overhead: preserve that
 version difference when using the prefix as historical cost evidence.
 
-## Separate prospective remediation proposal — NOT EFFECTIVE
+## Separate prospective remediation policy — RESEARCHER-APPROVED FOR ENGINEERING ONLY / NOT RUN ENABLED
 
 Current code still rejects this sample after its recorded attempt, even with a
 different UUID. The old authorization cannot match a new HEAD. This PR creates
 no exception, new real UUID, authorization, precommit or run directory.
 
-For researcher discussion, recommend at most **one** explicitly approved
-remedial activity for the exact remaining 41-row suffix, after repair review.
+The researcher **approved the one-time 41-row suffix remediation principle and aggregate resource boundary for engineering preparation**, recorded in [#1133 decision](https://github.com/zyx1st-png/SRT-Pub/pull/1133#issuecomment-6412266654) after [limited repair review](https://github.com/zyx1st-png/SRT-Pub/pull/1133#issuecomment-6412223225). This is an explicit scope-limited **policy approval to build and test a prospective exception**, **not a real run authorization, not approval of unimplemented exception code and not a bypass of the consumed-run ledger gate**. The review was source/evidence-based, not human peer review or independent Mac-machine replication. Any future exception is restricted to at most **one** new separately authorized activity on exactly the originally frozen 41-row suffix.
 The six completed rows remain immutable scientific/old-instrumentation cost
 evidence and are not recomputed or represented as newly measured repaired rows.
 The combined inventory would still be the same 47 graphs, reported as two
@@ -179,18 +178,7 @@ append-only host-ledger claim would reference the old run and consume the sole
 exception before any signal processing. A fresh UUID alone grants nothing;
 old ledger entries must never be removed, reset, or relabeled.
 
-Propose retaining 4h wall / 4 CPUh as an **aggregate finite-loss envelope** for
-the original formal attempt plus the one remedy, subtracting the verified old
-controller/preflight and accounted CPU costs before new admission. Reconcile
-any accounting uncertainty before fixing the remaining allocation; unused old
-allocation is not itself an authorization. Keep 1 worker, 4 GiB sampled RSS,
-1 GiB output, one ≤256 MiB cache and every Mac safety threshold. Cache reload,
-new identity preflight, failed work, logging and stopping all consume the new
-approved remaining allocation. Any new stop exhausts the exception. No reserve
+The researcher **approved retaining 4h wall / 4 CPUh as the aggregate finite-loss envelope** across the original attempt and any single authorized remedy, not a fresh four-hour allocation. The recorded old supervised interval used 183.26759672164917 s wall / 188.48465399999998 s CPU, and old formal preflight used 7.245956416998524 s wall / 6.2890250000000005 s CPU. Assuming these are non-overlapping charges, the upper remaining amount **before all new preparation is 14,209.486446861352 s wall / 14,205.226321 s CPU**; verify charge semantics and any overlaps, then subtract new source/ledger verification, live preflight, runtime and monitoring costs before freezing the new budget. Unused capacity is not authorization. Keep 1 worker, 4 GiB **sampled** RSS (not hard RAM containment), **1 GiB combined output across both attempts**, one ≤256 MiB retained cache, 32 MiB per-result cap and every existing Mac safety threshold. Cache reload, new identity preflight, failed work, logging and stopping consume the approved remaining envelope. Any new stop exhausts the exception. No reserve
 40, sample replacement, further retry, full baseline or null computation follows.
 
-The researcher must decide whether this one exception and the split-measurement
-interpretation are acceptable. Independent incremental review and a subsequent
-personal UUID-bound authorization are required before a future implementation
-could enable it. This proposal does not amend the active resource request or
-unlock the current consumed-attempt gate. G0/T1 remain RESOURCE NO-GO.
+The researcher has accepted the **prospective one-exception policy** and the requirement to report combined coverage as **six old-instrumentation plus 41 new-instrumentation rows, not a single homogeneous 47-row run**. The exceptional launcher, atomic append-only one-use claim, fixed exact suffix hash, original hash verification, and aggregate charging must now be implemented and synthetic-tested; no real exceptional attempt is enabled. The one unresolved native-Mac synthetic supervision stop must remain disclosed, and future predeclared tests must retain full terminal/Watchdog evidence on failure. Independent incremental review of that **new code** and a subsequent final-HEAD, fresh-UUID, privately confirmed researcher **run-specific authorization** remain required. The active original resource request and its consumed-attempt host ledger are not rewritten or unlocked by this policy record. No reserve 40, additional retry, full observed baseline, G0 or T1; **G0/T1 stay RESOURCE NO-GO**.
