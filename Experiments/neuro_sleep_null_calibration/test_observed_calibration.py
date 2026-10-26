@@ -42,6 +42,18 @@ from observed_calibration_sample import (
 from scipy.sparse.csgraph import minimum_spanning_tree
 
 
+def require_native_environment(testcase):
+    """Do not lower production host gates for an actual Mac synthetic trial."""
+    try:
+        report = pilot._preflight_macos_resources(
+            pilot._build_watchdog_limits(runner.RESOURCE_CANDIDATE), testcase.root)
+    except pilot.H3PilotError as exc:
+        report = {"status": "ENVIRONMENT NO-GO", "reason": str(exc)}
+        (testcase.root / "native-environment-no-go.json").write_text(json.dumps(report))
+        testcase.skipTest(f"ENVIRONMENT NO-GO: {exc}; evidence={testcase.root}")
+    (testcase.root / "native-environment-preflight.json").write_text(json.dumps(report))
+
+
 def fixture(root: Path):
     """Engineering seed only. Never imports or points to a RIKEN data root."""
     source = root / "synthetic_signal.mat"
@@ -135,12 +147,13 @@ def supervised_child(payload_path: Path) -> int:
 
 class TestObservedCalibration(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(prefix="srt-observed-synthetic-")
-        self.root = Path(self.temp.name).resolve()
+        # Retain complete synthetic logs even after an unexpected native stop.
+        # A successful later test must not erase the first failure's evidence.
+        self.root = Path(tempfile.mkdtemp(prefix="srt-observed-synthetic-")).resolve()
         self.source, self.rows, self.selected = fixture(self.root)
 
     def tearDown(self):
-        self.temp.cleanup()
+        pass  # Explicit synthetic evidence retention; no real source data here.
 
     def run_supervised(self, scenario="normal", **overrides):
         run_dir = self.root / "runs" / str(uuid.uuid4())
@@ -431,6 +444,7 @@ class TestObservedCalibration(unittest.TestCase):
 
     @unittest.skipUnless(sys.platform == "darwin", "real macOS external telemetry/sleep assertion")
     def test_real_macos_watchdog_samples_host_outside_production_row_group(self):
+        require_native_environment(self)
         native = pilot._build_watchdog_limits(runner.RESOURCE_CANDIDATE)
         names = ("reserve_free_disk_bytes", "memory_enforcement_backend",
                  "host_memory_free_percent_stop", "boot_volume_path", "boot_reserve_free_disk_bytes",

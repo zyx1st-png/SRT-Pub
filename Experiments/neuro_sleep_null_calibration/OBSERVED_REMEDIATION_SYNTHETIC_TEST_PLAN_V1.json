@@ -1,0 +1,44 @@
+{
+  "schema": "SRT_OBSERVED_REMEDIATION_SYNTHETIC_TEST_PLAN_V1",
+  "status": "FROZEN_ENGINEERING_TESTS_NOT_RUN_AUTHORIZATION",
+  "date": "2026-10-26",
+  "data_scope": "synthetic HDF5 signals and engineering seeds only; no RIKEN signal reads or real claim",
+  "initial_validation": "one collection/import/static check, then one full affected-suite invocation per implementation revision",
+  "targets": [
+    "test_observed_remediation_preflight.py",
+    "test_observed_remediation_identity.py",
+    "test_observed_remediation_budget.py",
+    "test_observed_calibration_remediation.py",
+    "test_observed_calibration.py",
+    "test_g0_q_protocol.py",
+    "test_nc0a_watchdog.py",
+    "test_h3_supervised_pilot.py",
+    "test_h3_120_supervised_panel.py"
+  ],
+  "new_native_macos_repetition_count": 3,
+  "post_R1_read_only_verifier_change_validation": "one targeted non-native complete-suffix synthetic case for attribution of future shared-ledger appends; no repeated native batch",
+  "R3_closure_revision_validation": "one invocation of exactly four non-native synthetic cases: complete suffix, unknown child, child exit, and tail-overrun plus complete violation-line loss; full logs retained, stop at first failure; no native batch repetition",
+  "R4_exact_closing_bytes_validation": "one metadata-only boundary test for including prospective closed-receipt bytes before creation; no supervised repeat",
+  "R5_failure_recording_validation": "one non-native tail-overrun case after adding durable final-audit failure recording; remove the entire violation suffix and require failure without a closure receipt; no native batch repetition",
+  "native_rule": "fixed consecutive three-run batch; stop at first failure, preserve all earlier successes and failure; no fourth run to obtain a pass",
+  "failure_rule": "preserve complete fixture, control/evidence/watchdog/terminal files and process-group diagnostics; any code correction is separately recorded before a new revision's validation",
+  "fault_cases_per_revision": "one each: unauthorized/mismatched identity, corrupted prior record, duplicate/concurrent claim, claim-then-controller-exit, unknown child, child exit, budget exhaustion, output/closure corruption",
+  "bounded_supervised_fixture": {
+    "wall_seconds_max": 30,
+    "cpu_seconds_max": 30,
+    "compute_workers": 1,
+    "sampled_RSS_bytes": 536870912,
+    "output_bytes": 33554432
+  },
+  "real_activity_prohibitions": [
+    "no real UUID authorization",
+    "no real host-ledger claim",
+    "no real calibration",
+    "no reserve40",
+    "no baseline or nulls"
+  ],
+  "B1_validation": "One full affected-suite invocation with -x per code revision, plus static/governance checks. Three native trials only if unchanged production Mac resource gates pass before each trial; resource refusal is ENVIRONMENT NO-GO with retained evidence, never a relaxed threshold or retry. B1 cases use scratch Path.home(), synthetic resources and temporary ledgers only.",
+  "B1_R1_outcome": "Stopped at first failure: 2 passed / 3 subtests; new already-claimed synthetic fixture omitted authorization_bytes required by unchanged claim API (KeyError). Complete retained fixture and R1 log/XML preserved. R2 adds the missing synthetic fixture field only, then one full-suite invocation; no native trial ran in R1.",
+  "B1_R2_outcome": "141 passed / 102 subtests / 92.74 seconds; zero skips, including the fixed three native Mac supervised trials. B1 R3 only clarifies the report flag as claim_consumed_by_preflight (not a claim-history assertion), snapshots directories as well as files, and adds CLI NO-GO exit-2 coverage. One run of the eight B1 tests only; no native repeat.",
+  "B1_CI_R4_fix": "Linux CI run 40330911842 stopped after 3 passed / 3 subtests: synthetic darwin sensor fixture changed global sys.platform, causing the otherwise-real process_counters() to load macOS libproc on Linux. R4 mocks this additional native sensor in the synthetic-only fixture; no production change or relaxed gate. One B1-only invocation, plus one CLI positive case with injected missing libproc, then one new-commit CI invocation; no native repeat. Failed CI artifacts remain at artifact 12654942159."
+}
