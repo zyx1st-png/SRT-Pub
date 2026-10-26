@@ -347,13 +347,15 @@ def write_result_payload(path: Path, payload: bytes) -> str:
 
 
 def execute_rows(rows: list[dict], *, run_dir: Path, process_row,
-                 synthetic: bool = False, admission_phases: dict | None = None) -> dict:
+                 synthetic: bool = False, admission_phases: dict | None = None,
+                 remediation_identity: dict | None = None) -> dict:
     """No retries, skipped failures or output replacement; durable ordered prefix."""
     row_dir = run_dir / ROW_DIR
     row_dir.mkdir(mode=0o700)  # existing directory is never silently reused
     results, zero_pairs, zero_windows = [], set(), set()
     with HashChainLog(run_dir / EVIDENCE) as log:
         log.append({"kind": "observed_calibration_started", "sample_sha256": EXPECTED_SAMPLE_SHA256,
+                    "remediation_identity": remediation_identity,
                     "synthetic_test_only": synthetic, "rows": rows,
                     "implementation": implementation_identity(),
                     "supervised_admission_phases": admission_phases or {},
@@ -534,13 +536,21 @@ def launch(*, head: str, run_id: str, run_dir: Path, authorization: Path,
         env_extra=env, limits=limits, expected_run_parent=parent)
 
 
-def verify_run(run_dir: Path, *, state_dir: Path | None = None) -> dict:
+def verify_run(run_dir: Path, *, state_dir: Path | None = None,
+               _remediation_packet: dict | None = None, _audit_guard=None) -> dict:
     """Audit-only: verify ordered results and anchors. Never resume/retry a row."""
     if run_dir.is_symlink() or run_dir.resolve(strict=True) != Path(os.path.abspath(run_dir)):
         raise ValueError("Run directory redirected")
+    if _audit_guard is not None:
+        _audit_guard()
     summary = pilot._read_json(run_dir / "h3-summary.json")
     allowed = {"h3-summary.json", "h3-control.jsonl", EVIDENCE, "watchdog.jsonl", "run-manifest.json",
                "runner-terminal.json", "runner.stdout.log", "active_task.json", pilot._LEASE, ROW_DIR}
+    if _remediation_packet is not None:
+        from observed_remediation_identity import PACKET_SHA256, load_packet
+        if _remediation_packet != load_packet():
+            raise ValueError("Remediation verifier requires the exact frozen packet")
+        allowed.update({"remediation-account.json", "remediation-closed.json"})
     if any(p.name not in allowed or p.is_symlink() for p in run_dir.iterdir()):
         raise ValueError("Unknown or redirected run artifact")
     control_events = []
@@ -589,9 +599,12 @@ def verify_run(run_dir: Path, *, state_dir: Path | None = None) -> dict:
     rows = begin["rows"]
     if begin["synthetic_test_only"] is not True:
         sample, _ = validate_sample()
-        if rows != sample["primary_rows"] or begin["sample_sha256"] != EXPECTED_SAMPLE_SHA256:
+        expected_rows = (sample["primary_rows"] if _remediation_packet is None else
+                         _remediation_packet["suffix_rows"])
+        expected_packet = EXPECTED_SAMPLE_SHA256 if _remediation_packet is None else PACKET_SHA256
+        if rows != expected_rows or begin["sample_sha256"] != EXPECTED_SAMPLE_SHA256:
             raise ValueError("Run row identities differ from fixed sample")
-        if summary["pilot_sha256"] != EXPECTED_SAMPLE_SHA256:
+        if summary["pilot_sha256"] != expected_packet:
             raise ValueError("Run summary does not bind observed sample")
         check = manifest["candidate_limits_not_authorized_in_packet"]["preflight"]
         if (begin["implementation"] != check["implementation"] or begin["runtime"] != check["runtime"] or
@@ -605,6 +618,8 @@ def verify_run(run_dir: Path, *, state_dir: Path | None = None) -> dict:
         raise ValueError("Incomplete or duplicate artifact resource accounting")
     files = set()
     for row, event in zip(rows, result_events, strict=False):
+        if _audit_guard is not None:
+            _audit_guard()
         relative = Path(ROW_DIR) / f"{row['sample_order']:03d}.json"
         path = run_dir / relative
         if str(relative) != event["artifact"] or path.is_symlink() or identity.sha256_file(path) != event["artifact_sha256"]:
@@ -621,6 +636,8 @@ def verify_run(run_dir: Path, *, state_dir: Path | None = None) -> dict:
                 len([e for e in costs if e["artifact_sha256"] == event["artifact_sha256"]]) != 1):
             raise ValueError("Row runtime/implementation/resource-cost record mismatch")
         files.add(path.name)
+        if _audit_guard is not None:
+            _audit_guard()
     if (run_dir / ROW_DIR).is_symlink() or {p.name for p in (run_dir / ROW_DIR).iterdir()} != files:
         raise ValueError("Unlogged row artifact")
     if state_dir is not None:

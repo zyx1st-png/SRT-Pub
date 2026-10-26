@@ -135,12 +135,13 @@ def supervised_child(payload_path: Path) -> int:
 
 class TestObservedCalibration(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(prefix="srt-observed-synthetic-")
-        self.root = Path(self.temp.name).resolve()
+        # Retain complete synthetic logs even after an unexpected native stop.
+        # A successful later test must not erase the first failure's evidence.
+        self.root = Path(tempfile.mkdtemp(prefix="srt-observed-synthetic-")).resolve()
         self.source, self.rows, self.selected = fixture(self.root)
 
     def tearDown(self):
-        self.temp.cleanup()
+        pass  # Explicit synthetic evidence retention; no real source data here.
 
     def run_supervised(self, scenario="normal", **overrides):
         run_dir = self.root / "runs" / str(uuid.uuid4())

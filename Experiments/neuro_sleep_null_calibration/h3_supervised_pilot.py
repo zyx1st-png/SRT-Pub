@@ -783,7 +783,8 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                        pilot_sha256: str, run_id: str, head: dict[str, str],
                        candidate: dict[str, Any], env_extra: dict[str, str] | None = None,
                        limits: WatchdogLimits | None = None,
-                       expected_run_parent: Path | None = None) -> dict[str, Any]:
+                       expected_run_parent: Path | None = None,
+                       admission_check=None, stop_guard=None, completion_hook=None) -> dict[str, Any]:
     try:
         if str(uuid.UUID(run_id)) != run_id:
             raise ValueError("noncanonical UUID")
@@ -801,6 +802,10 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
     with _host_lock(state_dir) as activity_lock_fd:
         events = _verified_host_events(ledger_path)
         _assert_host_ledger_allows(events, pilot_sha256)
+        # An exceptional workflow can add stricter, token/hash-bound admission.
+        # The default packet-consumption and host-lock checks always run first.
+        if admission_check is not None:
+            admission_check(events)
         if run_dir.exists() or run_dir.is_symlink():
             raise H3PilotError("Run directory exists; H3 pilot attempts cannot be overwritten")
         run_dir.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
@@ -856,6 +861,7 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                         stdout_name="runner.stdout.log", invocation_id=1,
                         runner_is_compute_worker=True,
                         environment=env, _activity_lock_fd=activity_lock_fd,
+                        stop_guard=stop_guard,
                     )
                 except BaseException as exc:
                     watchdog_exception = {"type": type(exc).__name__,
@@ -951,6 +957,8 @@ def _launch_supervised(command: list[str], *, run_dir: Path, state_dir: Path,
                     "lease_token": token, "state": "TERMINAL",
                     "terminal_status": status,
                     "updated_utc": datetime.now(timezone.utc).isoformat()})
+                if completion_hook is not None:
+                    completion_hook(summary, host_log)
                 return summary
 
 
