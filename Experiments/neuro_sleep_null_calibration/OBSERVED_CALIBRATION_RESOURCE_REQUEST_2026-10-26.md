@@ -1,9 +1,12 @@
 ---
 id: SRT-OBSERVED-CALIBRATION-RESOURCE-REQUEST-20261026
 type: experiment-proposal
-status: draft
-record_stage: synthetic-tested-awaiting-independent-resource-review
+status: active
+record_stage: researcher-resource-approved-awaiting-single-run-authorization
 date: 2026-10-26
+effective_date: 2026-10-26
+independent_ai_review_record: https://github.com/zyx1st-png/SRT-Pub/pull/1132#issuecomment-6409902896
+researcher_resource_decision: https://github.com/zyx1st-png/SRT-Pub/pull/1132#issuecomment-6409967378
 layer: operations
 epistemic_layer: experimental
 claim_mode: proposal
@@ -13,12 +16,12 @@ dependency:
   - Experiments/neuro_sleep_null_calibration/H3_120_SCIENTIFIC_CLOSURE_2026-10-26.md
   - Experiments/neuro_sleep_null_calibration/OBSERVED_CALIBRATION_FIXED_SAMPLE_V1_2026-10-26.json
   - Experiments/neuro_sleep_null_calibration/G0_CANONICAL_Q_ORDER_PROSPECTIVE_AMENDMENT_DRAFT_2026-10-23.md
-tags: [RIKEN, ObservedBaseline, ResourceCalibration, Draft]
+tags: [RIKEN, ObservedBaseline, ResourceCalibration, ResourceApproved]
 ---
 
 # Observed-only resource calibration request
 
-**DRAFT / NOT APPROVED / NO REAL CALIBRATION HAS RUN.** This bounded request prepares cost measurement for the canonical observed stage. It does not authorize the full 4,900-graph baseline, biological 4E nulls, G0, T1 or a representative G0 benchmark. G0/T1 remain RESOURCE NO-GO. The H3-specific review route and its 8-hour resource approval do not themselves approve this new activity. Future execution requires a separate independent resource assessment, researcher resource decision and single-run UUID/HEAD/sample-bound authorization.
+**RESEARCHER-APPROVED RESOURCE ENVELOPE ONLY (2026-10-26) / NO REAL CALIBRATION HAS RUN / NO RUN AUTHORIZATION.** The researcher separately accepted the limited [Claude Opus 5.5 AI technical/resource review (owner-relayed, not independent human/GitHub signature)](https://github.com/zyx1st-png/SRT-Pub/pull/1132#issuecomment-6409902896) and approved the [fixed 47-graph, 4h/4-CPUh stop-loss request and disclosed risks](https://github.com/zyx1st-png/SRT-Pub/pull/1132#issuecomment-6409967378). This is a **new prospective observed-only decision**, not an automatic extension of the #1131 H3-specific review route. The status `active` means **this exact resource proposal is approved on the currently unmerged #1132 branch**; it does **not** activate a run, create an authorization credential, or modify frozen science. Before biological signal processing, a clean final execution HEAD, new UUID/private internal-APFS output path, fresh live Mac/source/host checks and a **separate personally entered UUID-bound researcher confirmation** are mandatory. This request does not approve a full 4,900-graph baseline, biological 4E nulls, G0, T1 or a representative G0 benchmark. G0/T1 remain **RESOURCE NO-GO**.
 
 Dependencies checked on 2026-10-26: #1124 `ff85deec88ff700affeb489c95d0ea6c6295eb4b` (resource discussion Draft); #1128 `577cfde1000090c1325419417aa5b2c83325a3a2`; #1131 `a56ef684caf03b7748c8c9d713e44db75d17a43d` (method activation on that unmerged branch); #1130 executed `147d5ca268ef0c579c41f314a6f5e5ec8cafc6d2`. This PR is stacked on #1130; inherited original records and scientific protocol are unchanged. The engineering supplies the existing task's bounded follow-up, not another programme owner or STATUS next route.
 
@@ -32,9 +35,9 @@ The 4,900 rows contain 49 distinct source-frame windows, each used by 100 graph 
 
 This is a deliberately structured initial measurement sample, **not a probability sample or sufficient full-population U95 calibration**. N=100/765/3900 and uncovered windows are oversampled. The manifest also freezes a 40-row optional reserve, four non-H3/non-primary rows per N selected by a separate identity-only hash: two training and two sealed validation rows per N. No reserve row is executable by this launcher. Activation requires a separately reviewed amendment/authorization for the entire 40, not a result-selected subset. Training-only triggers are missing cost support, >25% held-row underprediction or U95/median >1.5; an instrumentation/integrity failure stops and requires correction review, never substitution by reserve rows. Freeze the training resource model/code/hash before exposing sealed validation costs; no refit after opening. Q values never enter cost-based expansion. Neither batch automatically grants baseline/G0 GO.
 
-## Candidate finite loss limits
+## Researcher-approved finite loss limits (2026-10-26; single-run authorization still pending)
 
-| Item | Candidate stop ceiling / condition |
+| Item | Approved stop ceiling / condition |
 |---|---|
 | Total wall | 4 hours; measured identity preflight is subtracted from supervised remaining allocation |
 | Total accounted CPU | 4 process-tree/controller CPU-hours; measured preflight process CPU is subtracted |
@@ -47,7 +50,7 @@ This is a deliberately structured initial measurement sample, **not a probabilit
 | Host memory / Swap | Stop below 20% free-memory telemetry or >2 GiB growth in used Swap; record used/current-pool total/free separately |
 | Power / temperature / sleep | AC required; normal thermal state required; live caffeinate assertion required; unavailable telemetry or material sleep/clock anomaly stops |
 
-H3 measured 6,269 s wall / 6,480 s accounted CPU for 120 reconstructions plus 48,000 Q trials. Weighting its per-N median dual-order row times by this initial sample's N counts gives about 50 minutes; using the per-N largest of twelve measured row times gives about 67 minutes. Those use the whole 400-Q row cost for a 200-Q activity, but are still **sensitivity calculations**, not completion bounds: windows/subsets, separate counters, durable phase logging and cache patterns differ. Four hours allows about 3.6× the latter wall scenario as a finite-loss allowance, pending independent acceptance. It is not a measured safety factor or approved budget. Source identity hashing and HDF5/metrology overhead are separately recorded and consume allocation. The serial budget does not assume fourfold speedup. Raw `T_PS-A` is still unresolved; this prospective request does not resolve the G0/T1 historical resource gate.
+H3 measured 6,269 s wall / 6,480 s accounted CPU for 120 reconstructions plus 48,000 Q trials. Weighting its per-N median dual-order row times by this initial sample's N counts gives about 50 minutes; using the per-N largest of twelve measured row times gives about 67 minutes. Those use the whole 400-Q row cost for a 200-Q activity, but are still **sensitivity calculations**, not completion bounds: windows/subsets, separate counters, durable phase logging and cache patterns differ. Four hours allows about 3.6× the latter wall scenario as a finite-loss allowance; the owner-relayed independent AI review recommended APPROVE and the researcher approved that loss envelope. This is **not a validated safety factor or completion guarantee**. Source identity hashing and HDF5/metrology overhead are separately recorded and consume allocation. The serial budget does not assume fourfold speedup. Raw `T_PS-A` is still unresolved; this prospective request does not resolve the G0/T1 historical resource gate.
 
 ## Measured computation and integrity
 
@@ -69,4 +72,4 @@ One fixed sample has at most one recorded attempt in the existing host activity 
 
 Researcher approval is an explicit local accountable record, not third-party cryptographic authorization or external human peer review. Local hash chains and GitHub snapshots are verifiable copies, not immutable custody. The H3 legacy environment gaps and macOS transient-memory/OS-disruption risks remain disclosed.
 
-Before real timing, independent review must accept this exact sample, cache/phase semantics, loss envelope and scope. The researcher must then approve the resource record, generate a new UUID/output directory, freeze the final clean execution HEAD, create a pending run-bound authorization draft, inspect live resources and personally provide the exact confirmation line. No UUID or real approved authorization was created for this preparation PR. Full 4,900 baseline approval requires an independently reviewed model that separates reconstruction/Q/I/O, treats repeated source windows as clusters, covers unsupported tails and distinguishes model-conditional prediction limits from confidence bounds on a mean. G0's 49,000 nulls, 9.8 million null Q trials, 1,797,712,000 proposals and independent T1 admission remain separate.
+The exact sample, cache/phase semantics, and finite loss envelope have received owner-relayed independent AI technical review and **separate explicit researcher resource approval** on 2026-10-26, as linked above. The AI review was not independently authenticated as human peer review; its private-hash and native-host-verification limitations remain disclosed. **The next step is preparation only:** freeze/recheck the final clean execution HEAD (which may change after this documentation-only approval record), generate a fresh UUID/unique private output directory, and produce a **PENDING** run-bound authorization draft only after a fresh current Mac/source/host preflight. Present the exact UUID/HEAD/sample/method/runtime/budget package and all live resource readings to the researcher, then **wait for the researcher's separate, personally entered exact confirmation line** before any approval JSON is marked `APPROVED_FOR_SINGLE_RUN` or any real task starts. No UUID, approved authorization package or biological calculation was created by this documentation-only approval update. Any host-induced early stop, even without a scientific error, exhausts the current fixed sample's single attempt: no automatic restart, replacement, UUID rotation or budget extension. Any prospective exception needs a wholly new scoped review and researcher decision, preserving original failure evidence. Full 4,900 baseline approval requires an independently reviewed model that separates reconstruction/Q/I/O, treats repeated source windows as clusters, covers unsupported tails and distinguishes model-conditional prediction limits from confidence bounds on a mean. G0's 49,000 nulls, 9.8 million null Q trials, 1,797,712,000 proposals and independent T1 admission remain separate.
