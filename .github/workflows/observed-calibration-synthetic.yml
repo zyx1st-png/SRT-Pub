@@ -1,0 +1,32 @@
+name: Observed Calibration Synthetic
+
+on:
+  pull_request:
+    paths:
+      - "Experiments/neuro_sleep_null_calibration/**"
+      - ".github/workflows/observed-calibration-synthetic.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14.0"
+      - uses: astral-sh/setup-uv@v5
+      - name: Install locked science dependencies and test-only tools
+        run: uv pip install --system -r Experiments/neuro_sleep_null_calibration/g0-runtime-macos-arm64.lock pytest ruff
+      - name: Static checks
+        run: |
+          ruff check Experiments/neuro_sleep_null_calibration/observed_calibration*.py Experiments/neuro_sleep_null_calibration/h3_120_closure.py Experiments/neuro_sleep_null_calibration/test_observed_calibration.py
+          python -m py_compile Experiments/neuro_sleep_null_calibration/observed_calibration*.py Experiments/neuro_sleep_null_calibration/h3_120_closure.py
+      - name: Generated sample identity
+        run: python Experiments/neuro_sleep_null_calibration/observed_calibration_runner.py --validate-sample
+      - name: Synthetic sources, canonical Q and real supervised fault tests
+        run: python -m pytest -p no:cacheprovider -q Experiments/neuro_sleep_null_calibration/test_observed_calibration.py Experiments/neuro_sleep_null_calibration/test_g0_q_protocol.py
