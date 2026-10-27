@@ -1,0 +1,31 @@
+{
+  "schema": "SRT_RCE20_ANALYSIS_PROVENANCE_V1",
+  "status": "DESCRIPTIVE_READ_ONLY_ANALYSIS_NOT_EXECUTION_APPROVAL",
+  "date": "2026-10-27",
+  "input_PR1135_head": "f1f0e8eba64fd95fff23838aaef44240df42979e",
+  "frozen_verifier_head": "a415d6315a1c620e00227bf7df0b3666133778b6",
+  "private_script_sha256": {
+    "finalize_rce20.py": "75a4700ddb7057aed231f612dbb715b38f1d27f0e0ecf8bd4c902fbe51352a38",
+    "extract_rce20.py": "67006c53372eb71d15b9db8397e9897d681008d37ae5d387588419a4a9836bcf",
+    "write_reports.py": "1fec819c42952bfad788136bb8d855dcefc464520a996758628c36ed71d5a191",
+    "analyze_rce20.py": "d5d774a9b3b6a4e7e10385dce82c0d57ec984ac5319b7026122d43758f159bdc"
+  },
+  "private_official_verification_sha256": "d7ff52a5a10526677cd12b4afe70c28105d96efeba2ecbba8893fae4565b1877",
+  "private_before_inventory_sha256": "6971ee8ed9b2b6b621b3a30559195b1a8a27151e320a7eeeff89498eef0be584",
+  "private_final_unchanged_check_sha256": "e1ea8ab38aa4fe7cdc236af60ec3e529f0357a0541355ef8f46b356c0c0f4aba",
+  "public_data_sha256": {
+    "coverage_cost_47.csv": "4245da50bbde2649f0b300e7ca4a3cffbd225991c3884366a3aef169d97d1e84",
+    "evidence_sha256.csv": "c68ba84f24625f845c06c31eedbb3da828de82df6a926ee3cf0572187e99495a",
+    "phase_costs.csv": "38ae5933ec6c2e9d44dfb3b980adf5240eeb8fa457ce6368c976d5b2c5571167",
+    "verification_summary.json": "ca01265c742080cdc9caf99d955739f839565038a2bf0ec9afe3166b7b30fc15",
+    "descriptive_summary.json": "a0282d3bab1777eac8839a9a86e48cf7af18fda16d0d4b472051d94d860b102e",
+    "swap_timeline.csv": "b14045391c2753b1dea8005c6d5c569fd5a17491e8f82ea5bc69ac096473c102"
+  },
+  "reproducibility_scope": "Source scripts retained privately; scalar extraction rules in report. Run-specific audit timestamps are metadata, not deterministic costs. Original files untouched; no raw signals or new Q.",
+  "bounded_AI_review": {
+    "reviewer": "GPT-6.1-sol, separate agent",
+    "scope": "exports vs already-derived evidence; no raw replay or underlying verifier rerun",
+    "result": "PASS on exported numerical/coverage/phase/Swap/privacy consistency; missing provenance link repaired and all six public-data digests verified in limited follow-up",
+    "human_peer_review": false
+  }
+}

@@ -18,6 +18,8 @@ tags: [RIKEN, ObservedBaseline, Terminal, ResourceCalibration, StopLoss, NoRetry
 
 # Observed-only 47-graph calibration: two-attempt terminal closeout
 
+**2026-10-27 evidence follow-up:** [RCE-20](RCE20_READ_ONLY_RESOURCE_EVIDENCE_REPORT_2026-10-27.md) directly verified the saved local OLD/NEW/joint terminals, completed-row identities, host claim/closure and exact file/hash-chain inventory. Its measured cost and Swap analysis supersedes the researcher-reported-only evidence boundary below for those checked artifacts. The original executions remain unchanged; this note preserves the provenance of the initial closeout.
+
 **Historical closeout / non-canonical / no new execution authorization.** This document records the researcher's 2026-10-26 report of **two already-ended activities**. It is a documentation-only successor to engineering preparation records in #1132–#1134; their historically accurate, earlier `NOT YET RUN` statements must **not** be retroactively rewritten. The GitHub author has inspected the frozen execution-source Watchdog condition and related PRs, **not** the private Mac terminal files or numerical Q arrays. Local terminal quantities and verification outcomes below are **researcher-reported**, not newly replicated by this documentation commit. The [terminal conversation archive](https://github.com/zyx1st-png/SRT-Pub/pull/1134#issuecomment-6420229211) preserves the same provenance distinction.
 
 ## Fixed subject and immutable execution identities
@@ -39,7 +41,7 @@ tags: [RIKEN, ObservedBaseline, Terminal, ResourceCalibration, StopLoss, NoRetry
 
 ## Second stop and measured/charged resources
 
-The researcher-reported Watchdog sampled host **Swap used** growth from approximately **7.93 GiB** to **10.08 GiB**, with exact recorded difference **2,149,916,344 bytes**. The fixed safety threshold is **2 GiB = 2,147,483,648 bytes**; this exceeded the threshold by **2,432,696 bytes** (approximately **2.32 MiB**). Mac dynamically expanded the swap pool from about 8 to 10 GiB. Frozen `nc0a_watchdog.py` uses `swap_peak - swap_initial > limits.swap_growth_stop_bytes`, so **`SWAP_GROWTH_LIMIT` is consistent with the approved fail-stop rule**, irrespective of the narrow overage.
+The Watchdog recorded host **Swap used** growth from **7,925,200,322 bytes (7.380918 GiB)** to **10,075,116,666 bytes (9.383184 GiB)**, with exact recorded difference **2,149,916,344 bytes**. The earlier 7.93/10.08 values were decimal GB and were incorrectly labeled GiB; RCE-20 corrects that unit error. The fixed safety threshold is **2 GiB = 2,147,483,648 bytes**; this exceeded the threshold by **2,432,696 bytes** (approximately **2.32 MiB**). Mac dynamically expanded the swap pool from 8 to 10 GiB. Frozen `nc0a_watchdog.py` uses `swap_peak - swap_initial > limits.swap_growth_stop_bytes`, so **`SWAP_GROWTH_LIMIT` is consistent with the approved fail-stop rule**, irrespective of the narrow overage. The terminal native-state values were cached before termination; terminal RSS=0 was measured after killing the group, not simultaneously with those Swap readings.
 
 | Accounting field | Researcher-reported terminal |
 |---|---:|
@@ -57,7 +59,7 @@ Wall/CPU/sample-RSS, disk, temperature, AC and unknown-process group conditions 
 
 ## Audit and custody
 
-The researcher reports that the private NEW summary, run manifest, Control/Evidence/Watchdog chains, single-use host ledger, combined accounting JSON and terminal closure receipt were independently re-read and accepted by the official `VERIFIED_JOINT_TERMINAL` verifier. Private authorization hash is given above; **the exact hashes of the NEW summary, manifest, control/evidence/Watchdog tips, `remediation-account.json` and closure receipt are not present in this public note and must not be invented**. The owner may add a separate read-only SHA inventory after local verification, but never alter the immutable old/new files. Keep raw signals, graph neuron identities, partitions, Q arrays and private filesystem paths out of the public PR.
+The initial closeout recorded the researcher's report that the private NEW summary, run manifest, Control/Evidence/Watchdog chains, single-use host ledger, combined accounting JSON and terminal closure receipt were accepted by the official `VERIFIED_JOINT_TERMINAL` verifier. **RCE-20 has now repeated that read-only verification and independently recalculated file/chain hashes**: see the [exact SHA-256 inventory](RCE20_2026-10-27/evidence_sha256.csv) and [verification/chain-tip summary](RCE20_2026-10-27/verification_summary.json). File hashes and chain tips are distinct; in particular the NEW Watchdog file hash is `9911da472c11cafb59858df62d67195c8d8134c421c75a6af642eab008aea964`, while its chain tip is `5b0ee884a0b826e40e9fa4e25e4c6b10142b8f3490f99dffa6acf67b20c78d9a`. No original artifact was changed. Raw signals, neuron lists, partitions, Q arrays and private absolute paths remain private.
 
 ## Scientific and governance conclusion
 

@@ -17,6 +17,8 @@ tags: [RIKEN, ResourceCalibration, DecisionGate, ReadOnly, NoNewRun]
 
 # Next-task evaluation after the 6 OLD + 14 NEW terminal
 
+**2026-10-27 follow-up:** the bounded T0–T3 analysis has been completed in [RCE-20](RCE20_READ_ONLY_RESOURCE_EVIDENCE_REPORT_2026-10-27.md). It supplies direct local evidence verification, 47-row coverage/cost tables and Swap attribution limits. T4 remains NO-GO; the historical proposal below does not grant new execution authority.
+
 **Recommendation: `GO` for a narrow, read-only 20-row evidence audit; `NO-GO` for any fresh 27-row/full-baseline/null execution now.** No execution permission, additional UUID, retry or alternate run is created by this proposal. Source and cost facts come from the [two-attempt closeout](OBSERVED_CALIBRATION_TWO_ATTEMPT_TERMINAL_CLOSEOUT_2026-10-26.md) and the researcher's report, not a fresh direct read of private Q or Mac artifacts.
 
 ## 1. Why this new task is worth doing
