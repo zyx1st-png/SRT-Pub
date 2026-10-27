@@ -1,0 +1,111 @@
+{
+  "analysis_time_utc": "2026-10-27T01:23:12.466923+00:00",
+  "original_evidence_files": 52,
+  "official_verifier_code_head": "a415d6315a1c620e00227bf7df0b3666133778b6",
+  "OLD": {
+    "status": "VERIFIED_TERMINAL",
+    "completed": false,
+    "rows_verified": 6,
+    "resume_allowed": false
+  },
+  "NEW": {
+    "status": "VERIFIED_TERMINAL",
+    "completed": false,
+    "rows_verified": 14,
+    "resume_allowed": false
+  },
+  "JOINT": {
+    "status": "VERIFIED_JOINT_TERMINAL",
+    "completed": false,
+    "failure_category": "OPERATIONAL_RESOURCE_STOP",
+    "OLD": {
+      "rows": 6,
+      "trials": 1200,
+      "run_id": "cf726336-0f3b-4506-9cd3-cb36da3f7e12",
+      "measurement_version": "ORIGINAL_WORKER_HOST_ENDPOINTS"
+    },
+    "NEW": {
+      "rows": 14,
+      "trials": 2800,
+      "run_id": "69fd0045-ac42-4711-bd26-c8dd9bb3a7c6",
+      "measurement_version": "EXTERNAL_WATCHDOG_HOST_SAMPLES"
+    },
+    "TOTAL": {
+      "unique_rows": 20,
+      "trials": 4000,
+      "resource_charge": {
+        "charged_new_cpu_seconds": 688.056392,
+        "charged_new_wall_seconds": 606.5752420425415,
+        "charged_total_cpu_seconds": 1020.9476162268066,
+        "charged_total_output_bytes": 3856440,
+        "charged_total_wall_seconds": 807.8936600425416,
+        "closing_reserve": {
+          "cpu_seconds": 40.0,
+          "output_bytes": 65536,
+          "wall_seconds": 5.0
+        },
+        "closure_semantics": "fixed tail allowance is charged, not measured; missing/over-reserve closure must fail closed",
+        "extra_output_bytes": 2719901,
+        "new_cpu_highwater_charge_before_closing_seconds": 648.056392,
+        "new_output_bytes_before_closing": 2719901,
+        "new_wall_charge_before_closing_seconds": 601.5752420425415,
+        "observed_new_native_cpu_seconds": 648.056392,
+        "observed_new_wall_seconds": 601.5752420425415,
+        "old_auxiliary_output_bytes": 102640,
+        "within_caps": true
+      }
+    },
+    "resume_allowed": false,
+    "single_continuous_run": false,
+    "full_population_U95_supported": false
+  },
+  "independent_stdlib_hash_chain_recalculation": {
+    "OLD": {
+      "h3-control.jsonl": {
+        "events": 2,
+        "tip_sha256": "c2dfcdac2046f26ef7531903fb1c420473bd48bab694caa0806e5d68988ff845",
+        "file_sha256": "10db06b6e23ad7c1279096cb888669ae5c96e9bd44ac3fc2d6108fd82d3c7b03"
+      },
+      "h3-evidence.jsonl": {
+        "events": 84,
+        "tip_sha256": "212f93b225146aabfb6a7eebb458856f5c90075c7f8993441d1a8cc7a28fe3da",
+        "file_sha256": "cca12ae08034fbe8026543085783a6d810e1414c9e2649abc3df6260ef5900a4"
+      },
+      "watchdog.jsonl": {
+        "events": 37,
+        "tip_sha256": "11c0e7b90dcc5b58bac6a4a7c436506f51fdf7bf0386535dddccdb23b81730f4",
+        "file_sha256": "c7b406a135de2067e6512d04adb6ed182db99f7e2b54b6540d57bdfecef51aca"
+      }
+    },
+    "NEW": {
+      "h3-control.jsonl": {
+        "events": 2,
+        "tip_sha256": "1894e34ee974551042f7c65d745de0ab92eb03a179f0dd62c6d5653f5934c37a",
+        "file_sha256": "d5d349387a5b0ca4129d7ac99ff60f56a02abbcb690dd3f9c0cdfee270920796"
+      },
+      "h3-evidence.jsonl": {
+        "events": 191,
+        "tip_sha256": "a9cf257ae9f11167ba686f9dfae360b9aba3450b32836c8d3de4b5773c9e3906",
+        "file_sha256": "8cc7336eb00320aa63e2d63b4f713204cea8b6442be59494802a253c13d571ab"
+      },
+      "watchdog.jsonl": {
+        "events": 113,
+        "tip_sha256": "5b0ee884a0b826e40e9fa4e25e4c6b10142b8f3490f99dffa6acf67b20c78d9a",
+        "file_sha256": "9911da472c11cafb59858df62d67195c8d8134c421c75a6af642eab008aea964"
+      }
+    },
+    "HOST": {
+      "events": 11,
+      "tip_sha256": "b0d03d0dae98c7b6772bed7415c860db6cadf4c4f7874c9db88953c3a6d05162",
+      "file_sha256": "5ca19c2abec787adb9dd6687114ffc9f67437d00c48d39bdc3d95ffee9dad2a2"
+    }
+  },
+  "claim_and_closed_tip_equal": true,
+  "old_original_ledger_prefix_sha256": "c124b0b833c499adce8a1d82bcdc1a1c4c25733952d8e6a4a576da5d881bb36d",
+  "receipt_file_sha256": "fda337218f3a6a7685895ff631d9f64bab741b6711628f0a4974a6c5d269182c",
+  "all_original_evidence_unchanged": true,
+  "raw_signal_read": false,
+  "Louvain_recomputed": false,
+  "external_human_review": false,
+  "custody_limit": "Local hashes/Git copies are not independently immutable custody."
+}
