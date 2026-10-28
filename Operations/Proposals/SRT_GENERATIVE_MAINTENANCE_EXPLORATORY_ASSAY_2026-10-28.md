@@ -1,0 +1,157 @@
+---
+id: SRT-GENERATIVE-MAINTENANCE-EXPLORATORY-ASSAY-20261028
+type: proposal
+status: draft
+canonical: false
+layer: operations
+epistemic_layer: machine_analysis
+claim_mode: exploratory_hypothesis_and_paper_only_experiment_design
+created: 2026-10-28
+updated: 2026-10-28
+research_mode: U
+root_question: Can individual-relative salience, adaptive coarse-graining and organizational self-maintenance jointly account for continuing generation and concrete direction formation without presupposing an ultimate telos?
+comparative_claim: none; rival-first exploratory design, no SRT advantage asserted
+named_comparator: homeostatic reinforcement learning; predictive state abstraction; successor representation/options; organizational closure
+n_mode_triggered: false
+dependency:
+  - STATUS.md
+  - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CN2_FIRST_E2_TASK_FAMILY_A_2026-10-09.md
+  - Operations/Audits/SRT_CN2_A_P1_P6_OBSERVABILITY_IDENTIFIABILITY_PREPASS_2026-10-09.md
+  - papers/CostlySelectiveClosure_v19_1_ArtificialLife_candidate.md
+  - papers/costly_selective_closure_supplement/CONSEQUENCE_SCOPE_MECHANISM_AUDIT_POST_E4_CLOSURE_2026-09-15.md
+  - 03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md
+  - 01_Source_Intuition/SRT_GRG_DIALOGUE_DERIVATION_TRACE_DOWNSTREAM_STACK_2026-09-23.md
+tags: [ArtificialLife, Exploratory, IndividualSalience, CoarseGraining, SelfMaintenance, Agent, RivalFirst, NoExecution]
+---
+
+# 生成性自维系、个体显著性与粗粒化：探索性机制问题及机器学习验证草案
+
+> **权属／执行边界（必须保留）：** 本文是 2026-10-28 对话触发的 **M-origin 探索性研究备忘**；其中作者已表达的方向单列于 §1，具体机制链、术语组织、实验候选、预期和优先级属于 AI 提案而非作者已裁决的 SRT 结论。不是新理论 owner、不是新 programme/CURRENT NEXT、不是 preregistration、不是实验运行授权。**现有唯一 CURRENT NEXT、CN-2 A 的 PAPER ONLY / E2→E3→E4 门槛、CN-3 和 toy execution HOLD、MG-1/MG-2、FR-ADV、canonical freeze 均不变。** 不变更 STATUS、canonical、已投稿论文或现有实验的结论。
+>
+> **研究模式：U；working labels only。** “个体相对显著性”“生成性自维系”“可重切粗粒化”仅是本文件的普通描述/实验候选，不为 SRT 创设硬化的术语、原初算子或目的论。
+
+## 1. 来源边界：作者表达与机器增量严格分开
+
+### 1.1 本次对话中作者明确表达的方向（对话证据，不是仓库 canonical 裁决）
+
+- 「主动维系自己是第一步，不断产生和重构是过程。」
+- 「我说的主动维系自身，维系的不是一个固定的本体，而是一个持续生成的结构。之所以说第一步，是因为维系自身不是终极目标，而是为了实现终极目标所必须经历的第一步过程。」
+- 「有先于生命活动的部分，但又是在生成过程中逐渐形成的具体方向。」
+- 「我们先不预设具有目的性的根本方向，看下一种基础的生成和粗粒化的倾向是否能完整解释。」
+- 随后作者提议讨论机器学习验证，并以「从个体出发的显著性和粗粒化角度」作为**抛砖引玉**，没有选择任何具体算法、任务、结果阈值或项目启动。
+
+忠实保留两个张力： (i) 自维系对象是 **持续生成的组织过程**，非不变实体；(ii) 作者曾提出比维系更深的方向问题，当前**方法选择是暂停预设有目的性的根本方向**，并非宣布终极目的已不存在或已由某个理论证明。所谓“先于生命的部分”暂只作待探究的非目的性生成/约束条件，不能偷换为外部预设目标或普适复杂化规律。
+
+### 1.2 AI 的待检验工作性重述（未获作者二次裁决）
+
+在非目的论前提下，可先探索：微观变化与环境通量 → 在真实相互作用中产生跨尺度组织/约束 → 某些耦合回路参与维持下一轮生成条件 → 系统历史与当下可维持结构共同改变其对差异的响应、压缩/划分方式和可实现的行为 → 形成局部、可更改的具体方向。
+
+此为**可能的机制链而非必然的生成阶梯**。生成 ≠ 自动复杂化；观察者粗粒化 ≠ 世界中新增的力；稳定 ≠ 主动自维系；自维系 ≠ 主体性、意识、规范性或 SRT Selection 的充分条件；策略优化 ≠ 自己的目标生成。尤其不能把候选 proxy 等同于 canonical d、Ψ_f 或原初 Selection。
+
+## 2. 既有仓库边界与真正新增的切口
+
+1. 原 CSC E1 中终止相对于恢复产生较大合作差异，但它同时改变共享机会、回报截断、实际轨迹长度、训练归一化；E2 持续损伤不支持强正效应、E3 个体恢复时长产生负向关联、E4 共同限制有小而稳定的正向效应。**它们既没有验证生命本质，也没有解决生成性组织自维系。** 值得复用的是反例优先、匹配对照、冻结策略共同状态评估、否定结果保留和训练算法混杂排查。
+2. 已有耗散／选择桥区分物理通量形成的局部秩序和更强的后果/组织判断；本文件不升级该 P3 桥。
+3. 已有 GRG downstream trace 将 proxy 视为相对于声明位置和功能负担的差异等价配置；既有粗粒化／ob​​jectification 不等于生命的主动维持。
+4. 当前 CN-2 A 仍是**后果驱动多属性概念学习的 P1–P6 纸面可观测性**，特别是 P6 必须是未训练组合上的有实际后果的独立行动；缺少同主体同后果历史 P1–P6 成套数据，E2 预测增益尚不成立。本备忘不是这个任务的完成物，也不把小型模拟假充为人类认知证据。
+5. 本文件的增量：对“个体状态导致哪些差异具有行为上的显著性”“等价类划分如何随着自身组织条件改变”“自维持结构如何实质参与后续可行动性生成”提出**可以单独失败的、与强邻居比较的干预设计**。
+
+## 3. 外部成熟解释需要先给予完整能力
+
+- **Homeostatic RL** — Keramati & Gutkin (2014), *eLife*, DOI 10.7554/eLife.04811：内部生理状态可调制奖励与行为；不能把“个体状态影响显著性”当作新机制。
+- **Organizational closure** — Montévil & Mossio (2015), *J. Theor. Biol.*, DOI 10.1016/j.jtbi.2015.02.029：互相依赖且相互维持的组织约束；不能把自维系/相互生产仅凭改名归为 SRT 增量。
+- **Successor representation / option discovery** — Machado et al. (2023), *JMLR* 24(80), https://www.jmlr.org/papers/v24/21-1213.html ：表征与长期动作选项相互改善已有成熟机制。
+- **Successor features & reward transfer** — Lehnert & Littman (2020), *JMLR* 21(196), https://jmlr.org/papers/v21/19-060.html ：已有任务与动态改变下可迁移的未来状态表征。
+- **Autopoiesis in Game of Life** — Beer (2015), *Artificial Life*, DOI 10.1162/ARTL_a_00143：动态网络与边界的简化建模先例。
+- **Homeostatic control, recurrent belief/world-model RL, predictive-information/state abstraction, bottleneck/attention, empowerment and open-endedness** 均属需要认真实现的解释家族；不得将只会固定阈值的弱 baseline 作为充分比较。
+- Open-endedness 的“新颖性持续发生”不能仅凭固定动作集合上偶见新策略支持；参照 Channon (2024), *Artificial Life*, DOI 10.1162/artl_a_00430.
+
+在以上相同解释目标下，先问已有机制能否完整吸收结果；本文件不声称发现空白、不声称超越。
+
+## 4. 五个可分离、可失败的探索性问题
+
+**Q1 个体相对显著性：** 同一外界线索，在世界分布、即时外部任务奖励和观测预算相同情况下，若它对两个组织状态不同的个体造成不同的未来可维持性后果，学习得到的注意/表征权重是否相应改变？这里“显著性”是行为/表征 readout，不是 d、Concern 或主体性鉴定。
+
+**Q2 可重切的粗粒化：** 两个微观状态今天对未来可行动性等价，但在内部组织受损或环境约束改变后不再等价。模型是否能自行修改合并/划分？单纯提高编码维度、追加时间步或给出 oracle 标签不算涌现。
+
+**Q3 约束的实际因果作用：** 维护/修复行为是否通过修复自身感知、资源控制或行动能力，改变未来学习、感知和行动的可达状态；与外部自动维持、显式生存奖励或内稳态 RL 分开？
+
+**Q4 具体方向的形成：** 新资源、结构组合或组织更改到来后，系统是否产生以前未使用、但确实可执行且带有后果的行动组合？“行动组合”仍依赖设计者提供的原语，不证明无限开放式创新或内生终极目的。
+
+**Q5 反馈的必要性：** 移除维护网络中的某条反馈边、冻结表征粗粒化或断开行为对自身运行能力的影响时，Q1–Q4 的效果是否消失？若强 H1/H2 rival 的记忆、奖励和表征足以恢复表现，则把结论留在成熟机制层，不往 SRT 映射。
+
+## 5. 纸面 MVP：个体状态—显著性—粗粒化（最先评估，不运行）
+
+### 5.1 微型世界与个体
+
+- **World:** 低维、程序生成的 2D/图网络世界，局部资源、温度/毒性/干扰、通道阻断和具有时滞的前兆线索；配置可在训练后重组。应先有无需重构的静态控制环境。
+- **Organism-like agent:** 至少三个耦合内部过程：能量 `E`、边界/组织完整性 `M`、感知校准或执行功能 `C`；均为 **模拟内部状态**，不是生命本体标志。行为可采集、交换、保护、修复、观察、组合原始动作；一项过程的失效会改变其余过程的真实转移和后续观察/动作精度。
+- **Consequences:** 超过失效阈值会真实停用当前智能体的传感/动作/继续学习通路，而不只是扣分；训练过程对死亡和重启需要明确声明控制器参数是否幸存，分别测试。**严禁只在奖励函数里写一个“自我维系 bonus”就宣称实现了内生组织维持。**
+- **Input budget:** 每步多个信号、可读取的通道数 `k` 固定且较小；将高相关却对维持无用的“诱饵”信号与低频、具时滞的维持前兆一起放入。测试时改变内部损伤或后果映射但保持输入熵/外部任务得分可比。
+- **Grain:** 从原始观测学习压缩表示/划分；实验者可以在事后用严格匹配的干预读出“何种差异被保留”，但不得把目标划分或“自我显著性 oracle”直接提供给被测模型。
+- **Action repertoire:** 初始行动原语明确记录；后续从可组合动作产生未训练组合的后果。要坦承这是有限语法下的新组合，不是从无生成无界动作本体。
+
+### 5.2 必须进行的两种正交操纵
+
+**因子一：维持关系。** `external`（系统外部按规则自动修复）与 `internal`（修复/维持必须由智能体选择并影响其后续运作）；比较须控制修复资源净成本、失败后重启、获得的维护信息、决策数和环境步数。因两类世界的动力学仍有区别，不能单独用因子均值称为“生命性因果量”。
+
+**因子二：表征组织。** `fixed`（冻结划分/编码）与 `adaptive`（可根据历史数据重切）；能力、公平预算、输入通道数和可调用的策略更新保持匹配。固定编码不是唯一 rival，**另加具有可学习状态表示和记忆的强 H2**。
+
+主要检验交互：`maintenance × adaptive representation` 是否带来超出各自独立贡献的稳定保持、环境突变迁移或未来行动可达性提升。即使显著，也首先是机制交互而非“生命本质已证实”。
+
+### 5.3 竞争基线（都须能力对齐）
+
+- B0：recurrent PPO/其他能胜任的 RL，完整可用内部状态与同预算观察，含相同稀疏外部任务奖励和组织失败后果。
+- B1：**homeostatic RL + learned state-dependent attention**，充分利用内部状态和变化的需要。
+- B2：**predictive latent-state/world model + learned bottleneck**，允许更新内部表征与历史记忆；不将 H2 偷换为固定类别。
+- B3：**successor features/options/empowerment** 中至少一个任务相关的胜任实现，用于“保持未来可行动选项”的最强比较。
+- Candidate：维护过程因果耦合 + 自适应粗粒化/可组合行为。它依旧可是一种 H2 算法，不因命名变为独立于 RL 的存在论机制。
+- Negative controls：无自维护反馈边、显著性通道置乱、对未来维持无效但统计可预测的伪线索、冻结表征、资源等量但不影响自身组织的外部维修。
+
+所有比较必须预先声明是否使用未来信息、环境 transition/oracle、隐状态、特权身体变量；matched lawful information、观测与更新预算、种子、网络容量、训练步数、算法超参数搜索空间。不同生存时长带来的经验量不等问题必须单独控制；不能让仅生存更久的模型白白多训练。
+
+### 5.4 读数：避免奖励/生存率一维化
+
+1. **Viability & maintenance:** 真正失能时间、恢复曲线、失效后可继续动作/学习的比例、部件互依的消融因果效应；不能单靠 survival reward。
+2. **Individual-relative salience:** 相同外界线索在内部状态干预前后，对注意选择、策略和后续可维持状态预测的**联合变化**；事后 counterfactual oracle 仅做分析，不可作为学习标签泄漏。
+3. **Repartition / coarse-graining:** 给定相同样本和表征容量，潜在状态的等价类边界是否随维护后果改变，并在 held-out 后果预测中显示实际收益；应在变量重命名与等价变换下尽量保持结论。
+4. **Future reachable repertoire:** 保持有限时间内可执行的独立动作组合数及其在真实 perturbation 下可成功达到的状态，不以熵或行动数量代理无限开放性。
+5. **Consequential novel-action probe:** 在未见过的资源/损伤组合上执行此前未训练过的动作组合，并引起预先记录的可检验实际后果；仅分类正确或策略输出不同不够。
+6. **Direction change:** 记录训练后行为组织对新的环境后果的适配，而不从偏好变化直接推出“自生目的”或伦理价值。
+
+### 5.5 证伪门槛与停止条件
+
+- 若 B1/B2/B3 在匹配预算下同样实现了个体相对显著性、重切和组织维持，则归为成熟 RL/信息表征机制：**NO LOCAL COMPARATIVE INCREMENT**，不据此推 SRT 排他优势。
+- 若只有 explicit survival reward 版本通过，而无此奖励的机制版本无法维持，则本轮主要说明优化目标设计，不证明方向内生出现。
+- 若表征重切仅在增加容量或读取隐含 oracle 后有效，判定不支持 Q2。
+- 若“新行动”只是在预置动作菜单中换选项，判定 Q4 未通过。
+- 若移除互依维护边效果不变，则 Q3 的组织依赖解释受到反例压力。
+- 若动态粗粒化影响动作却不能预测预先保留的未来后果，不能声称 E2 预测收益。
+- 若模型靠死亡后跨回合继续训练或外部自动维修才存活，不能称为个体自维系。
+- 即便全部通过，也**不能推出意识、自由意志、天然价值、生命充分条件、原初 Selection 或先验方向性**。
+
+### 5.6 纸面最小阶段顺序（全部未授权运行）
+
+`P0` 先做环境/干预的**识别性可行性证明**：能否设计两种内部状态拥有相同外部即时奖励，却使某个线索的维护后果方向相反？强 B1/B2 是否有充分能力同样读出？如果做不到，停止。
+
+`P1` 若 P0 可行，才形成清晰的环境规格、失败测试、运行成本表和模型权利清单，提交独立 red-team。此时仍不运行。
+
+`P2` 经独立评审与作者针对实验的单独授权后，才考虑小种子 pilot；若 pilot 能排除算法混杂，再拟定预注册与扩样。不得将预览/先导结果回写为事前假说。
+
+`P3` 若完整的机制识别仍成立，再讨论是否接入现有 CN-2 A 的人类跨探针研究或作为独立 ALife 候选；此步须重评单一 CURRENT NEXT / CN-3 HOLD，不自动进实验。
+
+## 6. 内部红队：可能的彻底替代解释
+
+- “个体相对”可仅是充分观测内部变量的条件策略（contextual RL），不要求真实自我或本体性的 bearer。
+- 表征重切可仅是 reward-/dynamics-predictive bottleneck、Bayesian belief update 或 successor representation，不能仅由行为差异推强本体。
+- 真正组织闭合（物理材料的相互制成）与计算机模拟的 E/M/C 三变量是不同强度的主张；此 MVP 只能测组织式因果耦合的代理。
+- 后果中止训练仍可能被一般 return truncation/样本选择偏差解释，复用 E1 confound lesson。
+- “先于生命的基础生成倾向”不能在已由设计者固定的世界、特征、动作原语中获得实证证明；这个玩具实验至多显示某类局部机制的充分/必要线索。
+- 个体维持与新方向生成之间可能根本没有必要性；某些高新颖性系统短暂存在，某些长期维持系统无重构。应纳入**生存持久但不能重构**与**高探索但易消亡**两类反例。
+
+## 7. 本次允许的落库范围与后续决策点
+
+**只保存本文非 canonical 备忘**。不修改正式 CSC 论文/数据、不写算法、不生成结果、不选定模型、不冻结任务/阈值、不升级 claim，不更改 CURRENT NEXT、不重开任何 deep well。记录本次作者原话是 provenance，不视为作者已裁决本文件实验细节。下次继续时首先检查 STATUS 和现有 CN2 A paper-only 进展；从 **§5.6 P0 的识别性问题**展开，列出足够强的 B1/B2 可吸收情形，再决定是否有必要进一步设计。
+
+**作者需要单独决定的事项（现在不预置答案）：** 是否把这一方向列为已选研究题、哪一种“组织仍然相同”的纵向标识、何种环境中的维护关系是真正有意义的因果机制，以及是否申请释放任何实验 HOLD。
