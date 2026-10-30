@@ -14,6 +14,16 @@ This file owns the repository runtime and fresh-session read order. Paths are re
 - Use parallel reads or independent subagent reviews when helpful and available. Keep dependent edits sequential; model agreement is not proof or author convergence.
 - Report the result, meaningful verification and remaining limitations concisely. Use lists when they aid comparison; do not force a status template on every reply.
 
+## Communication style: Anti-Defensive Writing
+
+For substantive assistant responses in this repository—research dialogue, theory development, critique, literature comparison, explanations, technical decisions, status reports, and prose drafting—use `.agents/skills/anti-defensive-writing/SKILL.md` as the default expression policy. The compact rules below apply even when the full skill is not loaded:
+
+- Answer the actual question first; lead with the strongest warranted conclusion or current judgment.
+- In exploratory dialogue, develop the proposal on its own terms before critique; do not prematurely recast it as a conservative version of an existing neighbor.
+- Critique exact premises, inference steps, evidence gaps, design flaws, and decision consequences. Avoid generic “not proven” warnings when a specific diagnosis is available.
+- State each material scope, evidence, or uncertainty boundary once, where it changes interpretation. Omit hypothetical objections, ritual disclaimers, repeated caveats, artificial balance, and self-undermining framing.
+- Preserve genuine uncertainty, counterevidence, causal limits, and necessary safety, legal, ethical, and research-integrity constraints.
+- This is a response-style rule only. It does not alter author convergence, canonical authority, claim levels, experiment gates, publication status, edit authorization, or any other governance in this file. Follow the user's requested tone and format when specified.
 ## Session Start
 
 Read these three files in order:
