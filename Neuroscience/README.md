@@ -44,6 +44,10 @@ This directory contains SRT's neuroscience-facing reconstruction, bridge and lab
 
 - **NEURAL35 — psychedelic reopening / re-anchoring:** [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md), with [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md). P3/P4 only: its surviving increment is `reopening != reselectability`, plus `under-anchoring` as a positively testable but disposable mirror-failure label and `Opening × Reanchoring` as a complexity-controlled differential-test form. It does not redefine ST-A / Core 21C B13, and it inherits NEURAL16's BOLD proxy gate and NEURAL26's capacity/accessibility/control/write-back distinctions. **Any clinical, therapeutic, safety, or public-facing use must also retrieve [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md).**
 
+## New bounded NME mechanism bridge (2026-10-24)
+
+- **NME × SRT neurometabolic implementation (P3/P4 candidate):** [`SRT_NME_Neurometabolic_Implementation_Bridge_v0_1.md`](SRT_NME_Neurometabolic_Implementation_Bridge_v0_1.md). Concrete cortex → forebrain value → midbrain/brainstem neuromodulation → vascular/glial/metabolic support → later neural access and history model; six matched-control tests, multi-timescale readouts, ordinary-neuroscience rivals and strict Ψ_f/d/Bearer/phenomenality boundaries. This is a noncanonical source-facing bridge, **not an active deep well, a landed NEURAL hook, a settled NME mechanism or a change to consciousness admission**.
+
 ## Status distinction
 
 - `SRT_Neuroscience_Reconstruction_Framework.md`: active Layer-2 domain problem map; question routing, material re-entry and Phase-9.5 writeback only; not canonical and not a neural mechanism owner.
