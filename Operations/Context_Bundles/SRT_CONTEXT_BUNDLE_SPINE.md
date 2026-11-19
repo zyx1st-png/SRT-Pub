@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-10-19
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
-source_dirty: false
-inputs_digest: d21170115fd5e00e
+generated: 2026-11-19
+source_commit: 177dc0cdb
+source_branch: research/full-archive-q01-q15-reconstruction-2026-11-18
+source_dirty: true
+inputs_digest: eed0c5769fbb0299
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,10 +26,10 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-11-19 |
+| 来源 commit | `177dc0cdb` |
+| 来源分支 | `research/full-archive-q01-q15-reconstruction-2026-11-18` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,10 +43,10 @@ inputs_digest: d21170115fd5e00e
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-10-18 |
+| 1 | `SRT_AI_START.md` | 2026-10-19 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-23 |
-| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-18 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-19 |
+| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-23 |
 | 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
@@ -449,7 +449,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-10-18 |
+| last_commit | 2026-10-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1290,7 +1290,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-11-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1749,6 +1749,26 @@ Formal domain objects named `L0`, `L1` and `L2` may remain useful in scoped mode
 
 ---
 
+## 11.4 Full-archive reconstruction routing (2026-11-18 `Q01–Q06`)
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`. Routing summary only; no §13 OPEN gate or registered symbol definition is closed here.
+
+```text
+Q01 dual parallel extraction:
+primitive Selection reality (物自体) -> parallel physical state-cuts (物理表象) & psychological value-orientations (心理体验);
+no unilateral epiphenomenal or idealist reduction; 心理监督物理 applies only within formed Bearer/Agency systems.
+
+Q02/Q05 four-tier selection regimes (de-anthropomorphized):
+物择 (S0->One) | 生物择 (Stable ISP, 3-layer membrane with 中膜 in One Formation §6a) | 人择 (Bearer/Agency, Q08–Q09) | 神择 (O0/long-range nonclosure);
+cosmic "generalized consciousness / quantum field" notes route to O0/S0 directionality, never panpsychism.
+
+Q04/Q06 time & persistence split:
+Tier-1 relational step-ratio time (τ_ontic; relation to registered t_onto OPEN) != Tier-2 finite-agent error-correction window time (t_exp);
+first-order S0 occurrence (0/1 actuality) != second-order L2 link/trust persistence weight.
+```
+
+---
+
 ## 12. Facet-before-kind governance guard
 
 Before adding a new ontological noun, require:
@@ -1855,7 +1875,7 @@ OPEN = open until separately adjudicated and landed.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-10-18 |
+| last_commit | 2026-10-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
