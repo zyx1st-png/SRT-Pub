@@ -481,7 +481,7 @@ Q02/Q05 four-tier selection regimes (de-anthropomorphized):
 cosmic "generalized consciousness / quantum field" notes route to O0/S0 directionality, never panpsychism.
 
 Q04/Q06 time & persistence split:
-Tier-1 relational step-ratio time (τ_ontic) != Tier-2 finite-agent error-correction window time (t_exp);
+Tier-1 relational step-ratio time (τ_ontic; relation to registered t_onto OPEN) != Tier-2 finite-agent error-correction window time (t_exp);
 first-order S0 occurrence (0/1 actuality) != second-order L2 link/trust persistence weight.
 ```
 

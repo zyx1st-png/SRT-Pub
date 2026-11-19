@@ -301,7 +301,7 @@ Stable ISP
 
 Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
 
-### 1. Domain-indexed complete identifier (`完整标识 = 存在标识 × 域标识`)
+### 1. Domain-indexed complete identifier (`完整标识 = 存在标识 × 域标识`, `P2/P3` structural bridge profile; not a `P1` theorem)
 
 When a formed `One` participates in determinate manifestation (`L0 -> L1`), its operative profile is jointly indexed by its internal organization (`存在标识`) and the coupled interaction domain (`域标识`: temporal, spatial, frequency, or social domain, `F_6223`, `F_5975`, `F_2872`):
 
@@ -312,9 +312,9 @@ Complete Manifest Profile(One, D)
 
 A system that appears high-dimensional or chaotic in aggregate may therefore exhibit deterministic regularity along an orthogonal domain cut (`K012/K013`, `F_2872`), without reducing the underlying `One` to any single domain projection.
 
-### 2. Topological transition from generic physical `One` to living `Stable ISP / Bearer` (`双层膜 vs 三层动态泡泡膜`)
+### 2. Topological transition heuristic from generic physical `One` to living `Stable ISP / Bearer` (`双层膜 vs 三层动态泡泡膜`, `P2/P3` candidate architecture)
 
-Historical bubble-membrane models (`F_6232`, `F_2868`) supply a structural discriminant (`P2/P3` architecture) between ordinary physical `One`s (`物择`) and self-maintaining biological/cognitive `Stable ISP / Bearer` systems (`生物择 / 人择`):
+Historical bubble-membrane models (`F_6232`, `F_2868`) supply a **bubble-membrane heuristic contrast** (`P2/P3` structural discriminant, not a fixed spatial enclosure boundary imposed on all `One`s) between ordinary physical `One`s (`物择`) and self-maintaining biological/cognitive `Stable ISP / Bearer` systems (`生物择 / 人择`):
 
 ```text
 Two-layer boundary (non-living physical One)

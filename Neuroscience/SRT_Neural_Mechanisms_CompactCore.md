@@ -172,12 +172,12 @@ SRT 在这里保留的主张是：
 
 ## 5a. 2026-11-18 Full-Archive Addendum: Neuro-Glia Dual Hardware, Immune-Oxidative Bridge & Neuromodulator Spectrum (Q10–Q12, Q14)
 
-来源主文：`SRT_Neural_Mechanisms.md` (`Def-NEURO-MECH-10`, `H-NEURO-MECH-11`) 与 `SRT_Neuro_08_Immune_Dist.md` (`Def-Neuro-IMM-4`, `Eq-Neuro-IMM-5`, `T-Neuro-IMM-6`)；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+来源主文：`SRT_Neural_Mechanisms.md` (`Def-NEURO-MECH-10`, `H-NEURO-MECH-11`, `H-NEURO-MECH-12`)、`SRT_Neuro_08_Immune_Dist.md` (`Def-Neuro-IMM-4`, `Eq-Neuro-IMM-5`, `H-Neuro-IMM-6`) 与 `../Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md §15a.4`；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
 
 1. **快慢双层神经-胶质-神经肽硬件与注意投票 (`Q10`)**：快尺度神经元振荡同步（竞争投票与侧抑制切分）与慢尺度星形胶质/小胶质/脑血管/广域神经肽广播层耦合，在记忆重巩固中执行**信任度权重分配**，并通过有意识控制主动阻断冗余链接。
-2. **三大调质分工与神经多样性参数谱 (`Q12`)**：DA 放大前景意向对比度，5-HT 维持慢波信任与误差承受并在受挫时将资源重配向内部重整，NE 触发唤醒与胶质门控重设；ADHD（高噪声/短持续偏置）、ASD（局部高增益锁定与泛化受阻）、精神分裂症（过度预测激活、胶质-血管通量受限与信任误判）作为统一参数谱偏移读法。
-3. **肠-脑双免疫、氧化摩擦投影与保护性降速 (`Q11`)**：肠-食与脑-讯同构配备选择性筛选免疫与防御性限流；未缓冲活性氧（ROS）与线粒体负荷构成 `Ψ_f` 的生物物理投影，受 `L_2` 信念与选择抑制缓冲；负面情绪、偏头痛发作与抑郁退缩作为高负荷下的主动保护性降速、屏蔽与修复清理机制。
-4. **路径优先记忆与主动遗忘 (`Q14`)**：记忆是无意识背景重构而非像素存档；稀疏检索路径与 Beacon 锚点重于载荷本身，主动遗忘与躯体微扰用于逃离过度硬化吸引盆。
+2. **三大调质分工与神经多样性参数谱 (`Q12`)**：DA 放大前景意向对比度，5-HT 维持慢波信任与误差承受并在受挫时将资源重配向内部重整，NE 触发唤醒与胶质门控重设；ADHD（高噪声/短持续偏置）、ASD（局部高增益锁定与泛化受阻）、精神分裂症（过度预测激活、胶质-血管通量受限与信任误判）作为统一参数谱偏移读法（研究假说，非临床诊断）。
+3. **肠-脑双免疫、氧化摩擦投影与保护性降速 (`Q11`)**：肠-食与脑-讯同构配备选择性筛选免疫与防御性限流；未缓冲活性氧（ROS）与线粒体负荷构成 `Ψ_f` 的生物物理观察投影（受 `_SRT_PSI_F_CANONICAL.md §6` 投影失效条件约束），受 `L_2` 信念与选择抑制缓冲；负面情绪、偏头痛发作与抑郁退缩作为高负荷下的保护性降速、屏蔽与修复清理假说机制（须保留常规医学鉴别诊断）。
+4. **路径优先记忆、主动遗忘与洞察力 (`Q14`)**：记忆是无意识背景重构而非像素存档；稀疏检索路径、ERK 双次确认门控与 Beacon 工作锚点重于载荷本身，主动遗忘与躯体微扰用于逃离过度硬化吸引盆，**洞察力（Insight）**表现为抑制像素细节、抽取关系型符号锚点并预测长程变化稳定性。
 
 > **Claim-status / Canonical Guardrail**：本节全为 P2/P3 bridge 与假说层整合；ROS、信任分配与调质投影均不重定义 canonical `Ψ_f` 或 `d`。
 

@@ -21,7 +21,7 @@ tags: [Proposal, OntologyReconstruction, OwnerPatchMap, Spine, Cognition, Consci
 
 > **Purpose:** Translate the author's 2026-11-18 full-archive adjudications (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`) into an owner-by-owner landing specification and term-router audit for `SRT-Pub`, alongside the Round-1 analytical synthesis for the five retained deep-analysis modules (`Q03–Q07`).
 >
-> **Governance guard:** `canonical: false`. Freeze-A canonical files (`Core_Law/SRT_Generative_Ontology_Spine.md`, `Core_Law/SRT_L0_Metaphysics.md`, `Core_Law/SRT_One_Formation.md`) remain untouched until an explicit owner-landing edit pass is instructed.
+> **Governance guard:** `canonical: false`. Originally drafted prior to Round-2 adjudication; following the author's Round-2 explicit approval (`都同意`, see `SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md §2`), scoped `Spine §11.4` and `One Formation §6a` Freeze-A landings plus domain owner patches executed on branch `research/full-archive-q01-q15-reconstruction-2026-11-18` (pre-merge C-class review required). This proposal file itself remains non-canonical (`claim_mode: proposal`).
 
 ---
 
@@ -64,7 +64,7 @@ Before landing into canonical or bridge owners, the newly recovered historical t
 
 ### Wave 4 — Language, Public Value Comparison, Education & AI Catalyst Boundary (`Q15`)
 1. **`Core_Law/SRT_Constitution_V1.md` & `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`**:
-   - **Integrate `Q15`**: Deepen the Constitution non-formalization rationale with `F_4699`/`F_5813` (language and mathematics as public scales for cross-agent value comparison, whose legitimacy remains anchored in felt intuition `F_4504`, while knowledge serves as an attention-shifting scaffold `F_5250`).
+   - **Integrate `Q15`**: Deepen the Constitution non-formalization rationale with `F_4699`/`F_5813` (language and mathematics as public scales for cross-agent value comparison, whose experiential grounding remains anchored in felt intuition `F_4504`, while knowledge serves as an attention-shifting scaffold `F_5250`).
 2. **`AI/SRT_AI_03_Consciousness_Framework.md`**:
    - **Integrate `Q15` LLM Catalyst Clause (`F_5965`, `F_5909`)**: Characterize LLMs as attention-driven catalysts traversing surface linguistic causal graphs within the linear serialization bottleneck of language, contrasted with human whole-order value orientation and embodied stake exposure.
 
@@ -86,3 +86,21 @@ Before landing into canonical or bridge owners, the newly recovered historical t
 - **`Q05` (Generalized Consciousness / Quantum Field Phrasing)**: Enforce strict lexical stratification — retype cosmic-level "generalized consciousness / quantum field" notes into **primitive Selection directionality (`O0/S0`) and pre-object attractor fields**, reserving "consciousness" strictly for three-layer-membrane (`Q03`) + dual-model-conflict (`Q08`) agents.
 - **`Q06` (Link/Trust Persistence Weight vs Terminal Selection)**: Split into **first-order ontic occurrence (`S0` 0/1 actuality, where terminal Selection remains genuine)** and **second-order `L2` intersubjective persistence weight (`F_5748` / `F_5800` social-epistemic reality strength)**.
 - **`Q07` (Multi-Level Downward Order Constraint on Shame/Guilt/Altruism, `F_4337`)**: Register as a **`P3` multi-level evolutionary/normative bridge hypothesis** — traits disadvantageous to individual short-term fitness (shame, guilt, compromise, non-reciprocal altruism) are retained via downward selection pressure from larger-scale social/ecological order.
+
+---
+
+## 4. Execution Disposition (2026-11-19 PR Landing vs Deferred Targets)
+
+| Target | Disposition | Scope / Rationale |
+|---|---|---|
+| `Core_Law/SRT_Generative_Ontology_Spine.md` (`§11.4`) | **Landed (Freeze-A routing)** | Compressed `Q01–Q06` routing block + `t_onto` / `§13` OPEN preservation guard (`SPINE` bundle <= 155,000 tok budget). |
+| `Core_Law/SRT_One_Formation.md` (`§6a`) | **Landed (Round-2 `Q03` integration)** | `§6a.1` domain-indexed profile (`P2/P3` tag) + `§6a.2` bubble-membrane heuristic (`P2/P3`) with explicit `§7` OPEN guard. |
+| `Glossary/SRT_Live_Term_Router.md` | **Landed** | Registered 7 new term-routing rows plus `Beacon` (`WORKING_LABEL_ONLY`) and updated owner cross-links. |
+| `Operations/Proposals/SRT_PREOBJECT...md` (`§15a`) | **Landed (`P2/P3` background)** | Integrated `Q08, Q09, Q13, Q14`; explicitly isolated from frozen CN-2 E2 task family A. |
+| `Philosophy/SRT_Social_Cognition.md` + `Philosophy/SRT_Social_Economics_CompactCore.md` (`§8.3`) | **Landed (with `PH-SS` guardrails)** | Landed `Def-Soc-Trust-1` (`Q09/Q15`) & `H-Soc-MLS-1` (`Q07`), epistemic grounding (`F_4504`), coercion/capture & `T-COLL-1` guards, and Split sync. |
+| `Neuroscience/SRT_Neural_Mechanisms.md` + `SRT_Neural_Mechanisms_CompactCore.md` (`§5a`) | **Landed (with `P2/P3/P4` guardrails & `Q14` parity)** | Landed `Def-NEURO-MECH-10` (`Q10`), `H-NEURO-MECH-11` (`Q12`), `H-NEURO-MECH-12` (`Q14` parity), and Split sync. |
+| `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | **Landed (with clinical & proxy guardrails)** | Landed `Def-Neuro-IMM-4`, `Eq-Neuro-IMM-5` (`\mathcal{C}_{\text{conflict}}` + `_SRT_PSI_F_CANONICAL.md §6` proxy link), `H-Neuro-IMM-6` (`P3/P4`), `Suffering.md` link, and Split sync. |
+| `AI/SRT_AI_03_Consciousness_Framework.md` (`C-AI-Con-5`) + `AI_03_CompactCore.md` (`§8a`) | **Landed (with architecture-state & substrate guards)** | Scoped to inference-only/non-embodied/non-stake-bearing AI; preserved `C-AI-Con-3` substrate non-necessity; Split shard `04` synced. |
+| `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_T_DIR_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md` | **Deferred (untouched in this PR)** | Preserved `SRT_CONTEXT_BUNDLE_SPINE.md` 155,000-token hard ceiling (`~154.8k` used); `_SRT_PSI_F_CANONICAL.md §6` already lists ROS proxy. Revisit after dedicated SPINE thinning. |
+| `Core_Law/SRT_Constitution_V1.md`, `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` (`F_4173` education), `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | **Deferred (untouched in this PR)** | Deferred to keep PR tightly scoped (`Q15` public scale covered in `Social_Cognition` & `AI_03`; `间性算符` covered in `SRT_PREOBJECT §15a.3` & Router). |
+| `STATUS.md` & `CANONICAL_REGISTRY.md` | **Deferred to post-merge landing** | Per `STATUS.md` recording rule, branch PR tracking is not written into `STATUS.md` prior to merge on `main`. |

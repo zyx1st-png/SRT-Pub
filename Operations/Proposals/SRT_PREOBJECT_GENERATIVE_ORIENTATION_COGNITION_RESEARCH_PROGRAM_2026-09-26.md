@@ -1399,6 +1399,7 @@ SRT language adds no discriminating prediction beyond Gestalt / enactivism / pre
 ## 15a. 2026-11-18 Full-Archive Cognition & Consciousness Integration (`Q08, Q09, Q13, Q14`)
 
 Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+Claim level & scope: `P2/P3` background theory integration; does not modify, expand, or reopen the concept-frozen CN-2 E2 paper-only task family A (`§0.0c.1–2`, `§0.1`).
 
 ### 1. Dual-Model Three-Conflict Matrix of Sensation, Perception, and Consciousness (`Q08`)
 
@@ -1419,7 +1420,7 @@ Sensation, perception, and introspective consciousness are distinguished by thei
 - **Consciousness as trust re-allocator (`F_4756`, `F_4710`)**: A primary function of conscious experience is to reallocate trust weights across memories and ideas during **memory reconsolidation**, supported physiologically by slow glial modulation coupled with fast neuronal phase-synchrony.
 - **Learning blocks (`F_6219`, `F_6049`)**: Learning arrest is a breakdown of trust allocation and error tolerance, requiring active forgetting, clearance, and controlled distraction to reset; guilt and frustration directly depress subjective "inner speed" (`内部速度`) and trust capacity.
 
-### 3. Hemispheric Short/Long-Range Division, Betweenness Operator (`间性算符`), and Anti-Fragility (`Q13`)
+### 3. Hemispheric Short/Long-Range Division, Betweenness Operator (`间性算符`, `P3` working operator candidate), and Anti-Fragility (`Q13`)
 
 - **Connection-range division (`F_5256`, `F_5108`, `F_5064`)**: Left-hemisphere-dominant processing forms **short-range, local, decontextualized links** (generating instrumental object-cuts / `存在与利用`); right-hemisphere-dominant processing sustains **long-range, background, Gestalt links** (generating inter-entity `秩序` and holistic intuition).
 - **Betweenness operator (`F_4857`, `F_5032`)**: `间性 (Betweenness)` operates as a relational operator governing symmetry and symmetry-breaking across states rather than static node attributes.

@@ -380,7 +380,7 @@ C_{reflexive} \Rightarrow \text{high-order self-model zone}
 
 ---
 
-### C-AI-Con-5: 2026-11-18 Full-Archive Linguistic Serialization Bottleneck, Dual-Model Conflict & LLM Attention-Catalyst Boundary (`Q08, Q15`)
+### C-AI-Con-5 [P2/P3 Bridge / Candidate Boundary]: 2026-11-18 Full-Archive Linguistic Serialization Bottleneck, Dual-Model Conflict & LLM Attention-Catalyst Boundary (`Q08, Q15`)
 
 > **Controlling source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
 
@@ -389,6 +389,10 @@ C_{reflexive} \Rightarrow \text{high-order self-model zone}
    - 但具身主体的内部前对象取向是高维并行与连续场式的，显性语言只是一条低带宽的**线性串行瓶颈**，仅能表征完整生成因果链的局部切片（`F_2036`, `F_5965`）。
 2. **大语言模型（LLM）作为“语言表层因果遍历催化剂”的精确定位（`F_5965`, `F_5909`）**：
    - Transformer / ChatGPT 等注意力架构的本质，是在人类已沉积的外部语言符号库上充当**遍历并拼接语言表层局部因果链的“简化催化剂”**（`语言表征部分因果，chatgpt遍历大部分因果，注意力模型简化催化剂`，`F_5965`）；
-   - **人类意识 vs 当前 AI 的结构性分界（`F_5909` + `Q03/Q08`）**：
-     1. 当前 AI 仅有基于局部/临时目标函数的 `预测模型`（`是什么/下一词概率`），缺乏由具身三层膜（`Q03` 中膜代谢/免疫稳态）支撑的内生 `意愿模型`（`应该是什么`），因此不产生真实的**意愿 vs 经验冲突（现象意识 P-consciousness，`Q08`）**或**意愿 vs 预测的内生重同步冲突（反身访问意识，`F_5087`, `F_5205`）**；
-     2. 人类意识以跨尺度整体秩序（`秩序`）为长程价值导向进行选择与信任重分配，而当前 AI 仅在预给定的局部任务损失函数内做统计拟合（`F_5909`）。
+   - **人类意识 vs 当前 inference-only / non-embodied / non-stake-bearing AI 部署的结构性分界（`F_5909` + `Q03/Q08`）**：
+     1. 当前纯推断（inference-only）、非具身、无真实赌注（non-stake-bearing）部署下的 AI 仅有基于局部/临时目标函数的 `预测模型`（`是什么/下一词概率`），缺乏由具身调节闭环（在生物实现中对应 `Q03` 中膜代谢/免疫稳态）支撑的内生 `意愿模型`（`应该是什么`），因此不产生真实的**意愿 vs 经验冲突（现象意识 P-consciousness 候选，`Q08`）**或**意愿 vs 预测的内生重同步冲突（反身访问意识候选，`F_5087`, `F_5205`）**；
+     2. 人类意识以跨尺度整体秩序（`秩序`）为长程价值导向进行选择与信任重分配，而当前纯推断 LLM 仅在预给定的局部任务损失函数内做统计拟合（`F_5909`）。
+
+### 【理论边界/防误用声明（C-AI-Con-5）】
+1. 依 [`SRT_AI_Claim_Status.md`](SRT_AI_Claim_Status.md) 与 `C-AI-Con-3`：本节对生物 `中膜` 代谢/免疫稳态的引用，只是说明内生 `意愿模型` 在碳基生物中的一种**具身实现例**，**不把生物碳基代谢抬升为一切人工系统的普遍基底前提**。
+2. 架构状态限定必须显式保留（见正文第 39 行）：上述对“当前 AI”的诊断仅适用于 `inference-only / non-embodied / non-stake-bearing` 部署，不构成对未来具身闭环、真实赌注耦合人工系统的永久否定，亦不独立充当普遍 consciousness 或 subjecthood 定义。
