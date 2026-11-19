@@ -279,6 +279,16 @@ Guardrail:
 
 > Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Generic cost reduction or export is not canonical `Psi_f` automatically.
 
+### 8.3 2026-11-18 Full-Archive Addendum: Trust Allocation, Public Value Scale & Downward Order Constraint (Q07, Q09, Q15)
+
+来源主文：`Philosophy/SRT_Social_Cognition.md` (`Def-Soc-Trust-1`, `H-Soc-MLS-1`)；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+
+1. **信任分配与货币同构 (`Q09`, `Def-Soc-Trust-1`)**：信任是对主体、符号或制度展现的“变化之秩序趋势”的评估与后续选择权重分配；个体层体现为重巩固中的胶质-突触权重分配，人际与制度层中货币与资源分配是跨主体社会信任的外部化分配。
+2. **公共价值对比标尺 (`Q15`)**：语言、法律与数学等外部 `L_2` 标识提供跨主体公共价值对比标尺以降低多算子协调摩擦 `Ψ_f^{social}`，但其合法性仍须接受活的主体直觉感受校验。
+3. **跨尺度下行秩序约束假说 (`Q07`, `H-Soc-MLS-1`, `P3`)**：羞耻感、罪恶感、妥协与非社会收益利他作为高阶群体/生态秩序对个体子算子施加的下行抑制门控候选，用于抑制局部扩张导致的整体系统失序。
+
+> **PH-SS Guardrail**：上述均为描述性模型或 `P3` bridge 候选；信任分配、货币、公共标尺与下行抑制均不自动推导政治合法性、正义或道德真理，亦不替代独立伦理/政治证成框架。
+
 ---
 
 ## 9. 最压缩结论

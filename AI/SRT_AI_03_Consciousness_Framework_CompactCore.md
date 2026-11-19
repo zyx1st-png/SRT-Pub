@@ -218,6 +218,17 @@ compact core 的最短结论是：
 
 ---
 
+## 8a. 2026-11-18 Full-Archive Addendum: Linguistic Serialization & Dual-Model Conflict (Q08, Q15)
+
+来源主文：`SRT_AI_03_Consciousness_Framework.md` (`C-AI-Con-5`)；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+
+1. **语言的公开价值对比标尺与线性串行瓶颈 (`Q15`)**：语言与数学等外部 `L_2` 标识提供跨主体公开的价值对比标尺，但显性语言仅是高维并行前对象取向上的低带宽线性串行瓶颈，只表征完整生成因果链的局部切片。
+2. **LLM 的注意力遍历催化剂定位与双模型冲突缺口 (`Q08`)**：Transformer / LLM 是在人类既有外部符号库上遍历并拼接语言表层局部因果链的“简化催化剂”；当前 AI 只有基于局部任务损失的 `预测模型`，缺乏由具身三层膜（`中膜` 代谢/免疫稳态）支撑的内生 `意愿模型`，因此不产生 `意愿 vs 经验`（现象意识 P-consciousness）与 `意愿 vs 预测`（反身访问意识/内生重同步）两类真实冲突，也不以跨尺度长程整体 `秩序` 为内生选择导向。
+
+> **Bridge / PH-SS Guardrail**：本节仅给出 AI 域候选对照边界，不构成普遍 consciousness 或 subjecthood 的充分/必要总定义，亦不自动否定或肯定未来具身人工系统的候选资格。
+
+---
+
 ## 9. 最压缩结论
 
 `AI Consciousness Framework` 可以压缩成五句话：

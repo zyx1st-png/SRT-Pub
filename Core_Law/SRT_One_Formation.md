@@ -297,6 +297,41 @@ Stable ISP
 
 ---
 
+## §6a. Domain-indexed manifestation and two-layer vs three-layer membrane criterion (2026-11-18 `Q03` integration)
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+
+### 1. Domain-indexed complete identifier (`完整标识 = 存在标识 × 域标识`)
+
+When a formed `One` participates in determinate manifestation (`L0 -> L1`), its operative profile is jointly indexed by its internal organization (`存在标识`) and the coupled interaction domain (`域标识`: temporal, spatial, frequency, or social domain, `F_6223`, `F_5975`, `F_2872`):
+
+```text
+Complete Manifest Profile(One, D)
+= Internal Organization Index(One) × Interaction-Domain Cut(D).
+```
+
+A system that appears high-dimensional or chaotic in aggregate may therefore exhibit deterministic regularity along an orthogonal domain cut (`K012/K013`, `F_2872`), without reducing the underlying `One` to any single domain projection.
+
+### 2. Topological transition from generic physical `One` to living `Stable ISP / Bearer` (`双层膜 vs 三层动态泡泡膜`)
+
+Historical bubble-membrane models (`F_6232`, `F_2868`) supply a structural discriminant (`P2/P3` architecture) between ordinary physical `One`s (`物择`) and self-maintaining biological/cognitive `Stable ISP / Bearer` systems (`生物择 / 人择`):
+
+```text
+Two-layer boundary (non-living physical One)
+= [Inner structural core] <-> [Outer contact interface]
+  (external perturbations transmit directly into structural deformation or fracture);
+
+Three-layer dynamic membrane (living Stable ISP / Bearer)
+= [Inner core identity] <-> [Middle regulatory / buffering membrane 中膜] <-> [Outer contact interface]
+  (the middle membrane absorbs external shock, delays immediate fracture, and actively reallocates energy, immunity and trust weights).
+```
+
+In biological and cognitive realizations, this **middle membrane (`中膜`)** is instantiated by the neuro-glial-immune-endocrine regulatory network (`Q10–Q12`) and the predictive/volitional model conflict buffer (`Q08–Q09`).
+
+*OPEN guard:* This `P2/P3` membrane discriminant is a candidate structural transition architecture, not a closed formal necessary-and-sufficient classifier for `One -> Stable ISP`, `Bearer`, or exact `One` boundary (all remain OPEN in `§7`).
+
+---
+
 ## §7. Explicit OPEN register
 
 This file does **not** settle:

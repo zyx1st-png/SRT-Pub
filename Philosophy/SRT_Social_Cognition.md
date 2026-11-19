@@ -850,3 +850,22 @@ L_1^{other}(t)=\hat G_{\theta}^{social}\!\big[L_0^{haptic}(t)\oplus R_{reciproca
 1. 不采纳“7 人 pilot study 已足以确证精神分裂症社会机制”的推论；当前更适合作为 feasibility window 与实验接口，而非定论。
 2. 不采纳“精神分裂症可被还原为单一 second-person deficit”的推论；妄想、幻觉、药物、异质性与长期病程仍需并行建模。
 3. 不采纳“虚拟触觉 avatar 范式即可替代自然社会生活”的推论；该任务只是高可控的 interaction assay，而非全部现实社交。
+
+---
+
+## 2026-11-18 Full-Archive Social Trust Allocation & Multi-Level Downward Order Constraint Patch (`Q07, Q09, Q15`)
+
+> **Controlling source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+
+### Def-Soc-Trust-1: Trust Allocation as Order-Trend Weighting (`Q09`, `F_4478`, `F_3538`)
+在 SRT 社会与认知统一桥接下，**信任（Trust）**定义为对主体、符号或制度表征所展现出的“变化之秩序趋势（order-trend across change）”的评估，并据此分配后续选择权重与资源敞口的过程：
+\[
+\mathrm{Trust}_i(X, t) = \mathcal{A}\!\left(\frac{\Delta \text{Order}(X)}{\Delta t}\;\Big|\; H_{\text{retained}}\right)
+\]
+- **跨层同构**：在个体层，信任体现为记忆重巩固中的胶质-突触权重分配（`F_4756`, `F_4710`）；在人际与制度层，**货币与资源分配本质上是对跨主体社会信任的外部化分配**（`钱的分配是对信任的分配`, `F_3538`, `F_3176`）。
+- **公共价值对比标尺（`Q15`, `F_4699`, `F_5813`）**：语言、法律与数学等外部 `L2` 标识的核心社会功能，是提供跨主体的**公开价值对比标尺（public scale for value comparison）**，从而降低多算子耦合中的协调摩擦 $\Psi_f^{social}$；但其合法性根基仍须服务于活的主体直觉感受（`F_4504`）。
+
+### H-Soc-MLS-1: Multi-Level Downward Order Constraint on Moral Emotions (`Q07`, `F_4337`, `K032`, `P3` Bridge Hypothesis)
+针对非社会收益利他行为及羞耻感、罪恶感、不自信、妥协等对个体短期竞争不利的心理/遗传特征（`F_4337`），SRT 提出跨尺度下行秩序约束假说：
+1. 生命与社会系统对抗的不仅是单一有机体的局部熵增，还包括所嵌更大尺度生态与社会 `One` 的整体失序。
+2. 基因库与文化 `L2` 之所以保留羞耻感、罪恶感与妥协倾向，是因为它们充当了**高阶群体/生态秩序对个体子算子施加的下行抑制门控（downward inhibitory gating）**，防止局部个体无约束扩张导致整体系统崩溃。
