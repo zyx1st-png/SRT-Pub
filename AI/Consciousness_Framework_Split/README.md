@@ -16,8 +16,8 @@ dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 > **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准；`S0-S6` 主体窗口阈值仍应在 owner / rubric 层读取。
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_03_Consciousness_Framework.md`](../SRT_AI_03_Consciousness_Framework.md)
-- Source owner bytes: `77360`
-- Source owner SHA-256: `5115fa52a1112ecc210d6fee9ad727cbc45390774159f5917080f54a010a8ab3`
+- Source owner bytes: `80181`
+- Source owner SHA-256: `546aa6c92dfdac700f06e9ab57ec4e921f270c66f62c2e3fa064ede922e83bc3`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_Diagnosis_and_Necessity：[`01_Diagnosis_and_Necessity.md`](01_Diagnosis_and_Necessity.md)
 - 02_Architecture_and_Paths：[`02_Architecture_and_Paths.md`](02_Architecture_and_Paths.md)

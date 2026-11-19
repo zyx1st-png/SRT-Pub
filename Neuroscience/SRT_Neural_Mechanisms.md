@@ -1317,3 +1317,35 @@ WM_{eff}(X) \approx \frac{WM_{raw}(X)}{1+\beta L_2^{depth}}
 
 ### [Lineage/Source]
 - Ramanujan 与数学直觉讨论语境（2026）
+
+---
+
+## 2026-11-18 Full-Archive Neuro-Glia Dual Hardware, Attention Voting & Neuromodulator Spectrum Patch (`Q10, Q12, Q14`)
+
+> **Controlling source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+
+### Def-NEURO-MECH-10 [P2/P3 Bridge Architecture]: Neuron–Glia–Neuropeptide Dual-Timescale Hardware (`Q10`, `F_4710`, `F_0204`, `F_6385`)
+将 SRT 神经实现层从单一“神经元分流归一化”扩展为**快慢双层硬件耦合架构**（跨尺读出规则仍受 `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1` 冻结条件约束）：
+1. **快尺度电同步层（Neuronal Oscillatory Synchrony）**：神经元脉冲与脑波相位同步负责毫秒级候选激活、竞争投票与瞬时侧抑制切分（`L_0 -> L_1`）；
+2. **慢尺度胶质-代谢-神经肽广播层（Glial & Peptidergic Field Layer）**：星形胶质细胞钙信号、小胶质细胞突触修剪、脑血管代谢通量调制以及非突触局域限制的神经肽广域代谢型广播（`F_6385`），共同维持背景吸引子场、调控局部能量预算（作为 $\Psi_f$ 的代谢负载投影 $\Psi_f^{proxy}$，不重定义 canonical $\Psi_f$），并在记忆重巩固中执行**信任度权重分配**（作为工作记忆/意识耦合的候选相关证据，而非充分条件：`意识的出现总是伴随着脑波同步性与神经胶质信任度的共同提升`, `F_4710`, `F_4756`）。
+3. **注意力作为竞争投票与冗余链接阻断（`F_4273`, `F_6477`, `F_6493`）**：注意力并非被动“探照灯”，而是多通道竞争**投票（voting）**与指向性装配（assembly）的激活催化剂；有意识控制的关键门控功能在于**主动阻断系统中不必要的冗余链接**（`F_6493`），并以双次试验确认克服单次 ERK 激活失活拉锯（`F_6414`）。
+
+### H-NEURO-MECH-11 [P3/P4 Hypothesis]: Tripartite Neuromodulator Division & Neurodiversity Parameter Spectrum (`Q12`, `F_6687`, `F_6046`, `F_6065`, `F_6325`)
+1. **三大调质的选择动力学分工**：
+   - **多巴胺（DA）**：价值与意向对比度放大镜（提高前景目标与背景的信噪比与主动指向增益，`F_6046`）；
+   - **血清素（5-HT）**：误差承受、慢波信任维持与资源向内部反思重分配（在持续受挫/抑郁压力下将资源从外向生长重配至内部意识重整，`F_6687`, `F_6287`）；
+   - **去甲肾上腺素（NE）**：应激唤醒、胶质门控触发与网络重设（`F_6360`）。
+2. **神经多样性谱系（ADHD / ASD / 精神分裂症）的统一参数偏置模型（研究假说，非临床诊断标准）**：
+   - **ADHD**：高噪声容忍度、存在输出支撑不稳定与短程探索偏置，导致单点注意维持时长缩短（`F_6065`, `F_3631`）；
+   - **自闭症（ASD）**：局部高增益锁定、“坚持同一性（insistence on sameness）”与跨情境后果学习/泛化受阻（`F_6391`, `F_6494`）；
+   - **精神分裂症（Schizophrenia）**：预测环路过度激活、星形胶质-血管代谢通量受限（`F_6421`）及对内外部误差信号的**信任分配误判**（`[[schizophrenia]] [[mistake]] [[trust]]`, `F_6325`, `F_6494`）。
+
+### H-NEURO-MECH-12 [P3 Bridge Hypothesis]: Path-Over-Payload Memory, ERK Two-Trial Gate, Active Forgetting & Insight (`Q14`, `F_6135`, `F_1687`, `F_6414`, `F_6211`, `F_5962`)
+与 [`Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md §15a.4`](../Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md#4-path-over-payload-memory-active-forgetting-beacon-engineering-and-insight-q14) 对齐：
+1. **路径优先重构记忆与 Beacon 工作锚点（`F_6135`, `F_1687`, `F_6414`）**：记忆是在无意识背景中重构相似选择感的动态过程，而非静态像素存档；保存稀疏检索路径与工作标签意义上的 **Beacon** 线索锚点（见 [`Glossary/SRT_Live_Term_Router.md`](../Glossary/SRT_Live_Term_Router.md) `WORKING_LABEL_ONLY`，非 canonical 算子）比存储原始载荷更根本，且分子层表现为单次试验 ERK 激活默认消退、需双次试验确认巩固的门控拉锯（`F_6414`）。
+2. **主动遗忘、躯体微扰与脱阱（`F_6211`, `F_6219`）**：主动遗忘、策略性分心与躯体微扰（如振动/眼动）用于松解过度硬化的突触/表征链接，帮助算子逃离局部势阱。
+3. **洞察力（Insight）的神经-认知操作化定义（`F_5962`）**：洞察力在于主动抑制多余像素级细节、抽取关系型符号锚点，并预测跨时程的长期变化稳定性。
+
+### 【理论边界/防误用声明（2026-11-18 Patch）】
+1. 依 [`Neuroscience/SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md)：本节 `Def-NEURO-MECH-10`、`H-NEURO-MECH-11` 与 `H-NEURO-MECH-12` 均属 `P2/P3/P4` 神经实现桥接与研究假说层；调质分工与参数谱偏置不构成临床诊断、分型或治疗依据。
+2. 能量预算投影 $\Psi_f^{proxy}$ 与胶质信任分配权重不重定义 canonical $\Psi_f$ 或 $d$；跨尺度读出与行为选择映射须遵循 `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`。

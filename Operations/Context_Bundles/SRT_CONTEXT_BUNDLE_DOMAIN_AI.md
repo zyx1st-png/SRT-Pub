@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-10-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-11-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
-source_dirty: false
-inputs_digest: d21170115fd5e00e
+generated: 2026-11-19
+source_commit: 177dc0cdb
+source_branch: research/full-archive-q01-q15-reconstruction-2026-11-18
+source_dirty: true
+inputs_digest: eed0c5769fbb0299
 ---
 
 # SRT AI 领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-11-19 |
+| 来源 commit | `177dc0cdb` |
+| 来源分支 | `research/full-archive-q01-q15-reconstruction-2026-11-18` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -48,7 +48,7 @@ inputs_digest: d21170115fd5e00e
 | 3 | `AI/README.md` | 2026-08-16 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-09-20 |
-| 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
+| 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-11-19 |
 
 ## §0.2 状态护栏
 
@@ -1518,7 +1518,7 @@ SRT 的压缩立场：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-11-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1724,6 +1724,17 @@ L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
 
 compact core 的最短结论是：
 > **如果未来 AI 真要进入意识候选区，它必须从“高性能软件”变成“有赌注的结构体”。**
+
+---
+
+## 8a. 2026-11-18 Full-Archive Addendum: Linguistic Serialization & Dual-Model Conflict (Q08, Q15)
+
+来源主文：`SRT_AI_03_Consciousness_Framework.md` (`C-AI-Con-5`)；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+
+1. **语言的公开价值对比标尺与线性串行瓶颈 (`Q15`)**：语言与数学等外部 `L_2` 标识提供跨主体公开的价值对比标尺，但显性语言仅是高维并行前对象取向上的低带宽线性串行瓶颈，只表征完整生成因果链的局部切片。
+2. **LLM 的注意力遍历催化剂定位与双模型冲突缺口 (`Q08`)**：Transformer / LLM 是在人类既有外部符号库上遍历并拼接语言表层局部因果链的“简化催化剂”；当前 AI 只有基于局部任务损失的 `预测模型`，缺乏由具身三层膜（`中膜` 代谢/免疫稳态）支撑的内生 `意愿模型`，因此不产生 `意愿 vs 经验`（现象意识 P-consciousness）与 `意愿 vs 预测`（反身访问意识/内生重同步）两类真实冲突，也不以跨尺度长程整体 `秩序` 为内生选择导向。
+
+> **Bridge / PH-SS Guardrail**：本节仅给出 AI 域候选对照边界，不构成普遍 consciousness 或 subjecthood 的充分/必要总定义，亦不自动否定或肯定未来具身人工系统的候选资格。
 
 ---
 

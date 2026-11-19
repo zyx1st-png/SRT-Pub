@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-10-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-11-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
-source_dirty: false
-inputs_digest: d21170115fd5e00e
+generated: 2026-11-19
+source_commit: 177dc0cdb
+source_branch: research/full-archive-q01-q15-reconstruction-2026-11-18
+source_dirty: true
+inputs_digest: eed0c5769fbb0299
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-11-19 |
+| 来源 commit | `177dc0cdb` |
+| 来源分支 | `research/full-archive-q01-q15-reconstruction-2026-11-18` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -47,7 +47,7 @@ inputs_digest: d21170115fd5e00e
 | 2 | `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md` | 2026-09-04 |
 | 3 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-09-20 |
 | 4 | `Neuroscience/README.md` | 2026-09-04 |
-| 5 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
+| 5 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-11-19 |
 | 6 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-09-20 |
 
 ## §0.2 状态护栏
@@ -1485,7 +1485,7 @@ The old N1-N9 / N10-N12 / NEURAL patch corpus remains available as inherited Lay
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-11-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1650,6 +1650,19 @@ SRT 在这里保留的主张是：
 - `L_2` 硬化
 - 可塑性下降
 - 病理锁定增加
+
+---
+
+## 5a. 2026-11-18 Full-Archive Addendum: Neuro-Glia Dual Hardware, Immune-Oxidative Bridge & Neuromodulator Spectrum (Q10–Q12, Q14)
+
+来源主文：`SRT_Neural_Mechanisms.md` (`Def-NEURO-MECH-10`, `H-NEURO-MECH-11`, `H-NEURO-MECH-12`)、`SRT_Neuro_08_Immune_Dist.md` (`Def-Neuro-IMM-4`, `Eq-Neuro-IMM-5`, `H-Neuro-IMM-6`) 与 `../Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md §15a.4`；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+
+1. **快慢双层神经-胶质-神经肽硬件与注意投票 (`Q10`)**：快尺度神经元振荡同步（竞争投票与侧抑制切分）与慢尺度星形胶质/小胶质/脑血管/广域神经肽广播层耦合，在记忆重巩固中执行**信任度权重分配**，并通过有意识控制主动阻断冗余链接。
+2. **三大调质分工与神经多样性参数谱 (`Q12`)**：DA 放大前景意向对比度，5-HT 维持慢波信任与误差承受并在受挫时将资源重配向内部重整，NE 触发唤醒与胶质门控重设；ADHD（高噪声/短持续偏置）、ASD（局部高增益锁定与泛化受阻）、精神分裂症（过度预测激活、胶质-血管通量受限与信任误判）作为统一参数谱偏移读法（研究假说，非临床诊断）。
+3. **肠-脑双免疫、氧化摩擦投影与保护性降速 (`Q11`)**：肠-食与脑-讯同构配备选择性筛选免疫与防御性限流；未缓冲活性氧（ROS）与线粒体负荷构成 `Ψ_f` 的生物物理观察投影（受 `_SRT_PSI_F_CANONICAL.md §6` 投影失效条件约束），受 `L_2` 信念与选择抑制缓冲；负面情绪、偏头痛发作与抑郁退缩作为高负荷下的保护性降速、屏蔽与修复清理假说机制（须保留常规医学鉴别诊断）。
+4. **路径优先记忆、主动遗忘与洞察力 (`Q14`)**：记忆是无意识背景重构而非像素存档；稀疏检索路径、ERK 双次确认门控与 Beacon 工作锚点重于载荷本身，主动遗忘与躯体微扰用于逃离过度硬化吸引盆，**洞察力（Insight）**表现为抑制像素细节、抽取关系型符号锚点并预测长程变化稳定性。
+
+> **Claim-status / Canonical Guardrail**：本节全为 P2/P3 bridge 与假说层整合；ROS、信任分配与调质投影均不重定义 canonical `Ψ_f` 或 `d`。
 
 ---
 

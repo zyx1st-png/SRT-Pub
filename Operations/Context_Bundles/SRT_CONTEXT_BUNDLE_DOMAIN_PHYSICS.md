@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-10-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-11-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
-source_dirty: false
-inputs_digest: d21170115fd5e00e
+generated: 2026-11-19
+source_commit: 177dc0cdb
+source_branch: research/full-archive-q01-q15-reconstruction-2026-11-18
+source_dirty: true
+inputs_digest: eed0c5769fbb0299
 ---
 
 # SRT 物理领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-11-19 |
+| 来源 commit | `177dc0cdb` |
+| 来源分支 | `research/full-archive-q01-q15-reconstruction-2026-11-18` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

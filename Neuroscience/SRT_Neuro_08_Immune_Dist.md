@@ -898,3 +898,27 @@ $\kappa_{tan}$ 决定下丘脑-垂体轴的自由能转换效率，在受控实�
 1. 不采纳“tanycyte 单机制已解释全部 AD 病程”的推论；其更可能是多通道病理中的关键门控节点之一。  
 2. 不采纳“提高血 tau 一定代表病情恶化”的推论；在清除框架下需区分‘病理释放’与‘有效外排’。  
 3. 不采纳“动物与组织证据可直接替代长期人群因果结论”的推论；仍需纵向、干预与机制闭环验证。
+
+---
+
+## 2026-11-18 Full-Archive Gut–Brain Dual Immunity, Oxidative Friction ($\Psi_f$) & Protective Down-Regulation Patch (`Q11`)
+
+> **Controlling source:** `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+
+### Def-Neuro-IMM-4 [P2/P3 Bridge]: Gut–Food ↔ Brain–Information Dual Immune Isomorphism (`F_6345`, `F_6070`)
+个体与外部环境的接触存在两条基本同构通道：**食物输入（肠道）**与**信息输入（大脑）**（`F_6345`）。两条通道均需配备选择性“免疫筛选系统”，以区分高价值可同化输入、无价值背景噪声与破坏内部秩序的有害输入。当认知运转速度下降或信任基线受损时，系统会主动采取**防御性信息限流**（减少信息摄取与注意力投入，防止误吸错误/有害表征，`F_6070`, `F_6152`）。
+
+### Eq-Neuro-IMM-5 [P3 Biophysical Proxy]: Oxidative Stress (ROS) as Biophysical Projection of $\Psi_f$ & Belief Buffering (`F_6123`, `F_6361`, `F_6293`, `F_6330`)
+高不确定性探索、高可能性认知负荷（“认知发热”，`F_6293`）与未决选择冲突在细胞层面可投影为**活性氧（ROS）/ 氧化应激与线粒体代谢负担**（`oxytosis`，`F_6330`）。依 [`../_SRT_PSI_F_CANONICAL.md §6 Def-Ψ-Obs-1`](../_SRT_PSI_F_CANONICAL.md)，`ROS` 是特定生物学实现下的**观察性生物物理投影（observational biophysical proxy）**，受其投影失效条件约束，**不与 canonical $\Psi_f$ 构成字面本体论同一**：
+\[
+\Psi_f^{\text{oxidative}}(t) \propto \mathrm{ROS}_{\text{unbuffered}}\!\left(\mathcal{C}_{\text{conflict}}(t) - \Gamma_{\text{belief/inhibition}}(t)\right)
+\]
+（其中 $\mathcal{C}_{\text{conflict}}(t)$ 为未决选择冲突负荷，区分于 `Def-d-canonical` 中的效用泛函 $\mathcal{U}$。）
+- **信念系统与选择性抑制的抗氧化功能（`F_6123`, `F_6361`）**：稳定的 `L2` 信念系统与有意识的选择性抑制（$\Gamma_{\text{belief/inhibition}}$）可将局部氧化反应约束在良性信号区间内；若缺乏信念收敛或选择抑制失灵，过量氧化应激将激活小胶质细胞/外周免疫级联并引发不可逆清除损伤（甚至如睡眠剥夺改变免疫干细胞染色质结构般留下长期非病原体形状特异的炎症记忆（non-shape-specific inflammatory memory），`F_6337`, `F_6474`）。
+
+### H-Neuro-IMM-6 [P3/P4 Bridge Hypothesis]: Protective Down-Regulation & Clearance View of Symptoms (`F_6198`, `F_6326`, `F_6381`, `F_6437`)
+在 SRT 心身病理假说下，负面情绪、偏头痛发作、抑郁退缩、认知疲劳与慢波睡眠未必只是单纯的“硬件故障”，也可能是在局部焦点资源过度分配导致**应激遮蔽**（`F_6437`）或氧化代谢废物（如认知垃圾，`F_3161`）突破阈值时，身体启动的**保护性降速、防御屏蔽与修复清理假说机制**（`负面情绪使人慢下来应对内部问题` `F_6198`；`偏头痛发作不仅是氧化应激触发，更是保护和修复大脑` `F_6326`, `F_6381`）。
+
+### 【理论边界/防误用声明（2026-11-18 Patch）】
+1. 依 [`Neuroscience/SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md)：本节 `Def-Neuro-IMM-4`、`Eq-Neuro-IMM-5` 与 `H-Neuro-IMM-6` 均属 `P2/P3/P4` 机制桥接与研究假说，**不构成临床诊断、治疗指南或医疗建议**；偏头痛、抑郁发作与慢性疲劳须先经标准医学鉴别诊断排除器质性与危重病因，不得因“保护性假说”延误规范治疗。
+2. 氧化应激投影与保护性降速机制亦不等同于主观受苦（suffering）本体；受苦本体边界见 [`../Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md)。

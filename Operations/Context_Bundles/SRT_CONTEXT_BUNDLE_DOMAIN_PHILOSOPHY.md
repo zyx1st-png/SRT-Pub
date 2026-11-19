@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-10-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-11-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
-source_dirty: false
-inputs_digest: d21170115fd5e00e
+generated: 2026-11-19
+source_commit: 177dc0cdb
+source_branch: research/full-archive-q01-q15-reconstruction-2026-11-18
+source_dirty: true
+inputs_digest: eed0c5769fbb0299
 ---
 
 # SRT 哲学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-11-19 |
+| 来源 commit | `177dc0cdb` |
+| 来源分支 | `research/full-archive-q01-q15-reconstruction-2026-11-18` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -47,7 +47,7 @@ inputs_digest: d21170115fd5e00e
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-09-04 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-20 |
-| 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
+| 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-11-19 |
 | 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
 
 ## §0.2 状态护栏
@@ -1669,7 +1669,7 @@ Minimal statement:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-17 |
+| last_commit | 2026-11-19 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -1932,6 +1932,16 @@ G_{agency}=\text{Gini}(d_i)
 Guardrail:
 
 > Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Generic cost reduction or export is not canonical `Psi_f` automatically.
+
+### 8.3 2026-11-18 Full-Archive Addendum: Trust Allocation, Public Value Scale & Downward Order Constraint (Q07, Q09, Q15)
+
+来源主文：`Philosophy/SRT_Social_Cognition.md` (`Def-Soc-Trust-1`, `H-Soc-MLS-1`)；裁决来源：`../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`。
+
+1. **信任分配与货币同构 (`Q09`, `Def-Soc-Trust-1`)**：作为上节 `§8.2` 摩擦缩减代理式（$\text{Trust} = \arg\min(\Psi_f, S_{soc})$）的细化模型，信任是对主体、符号或制度展现的“变化之秩序趋势”的评估与后续选择权重分配；个体层体现为重巩固中的胶质-突触权重分配，人际与制度层中货币与资源分配建模了一类外部化社会信任分配机制（同时继承 `§8.2` 对强迫、俘获与强制服从的排除护栏）。
+2. **公共价值对比标尺 (`Q15`)**：语言、法律与数学等外部 `L_2` 标识提供跨主体公共价值对比标尺以降低多算子协调成本代理量 `Ψ_f^{social}`，但其经验/直觉校验根基仍须服务于活的主体直觉感受（非自动政治/法律合法性）。
+3. **跨尺度下行秩序约束假说 (`Q07`, `H-Soc-MLS-1`, `P3`)**：羞耻感、罪恶感、妥协与非社会收益利他作为高阶群体/生态秩序对个体子算子施加的下行抑制门控候选，用于抑制局部扩张导致的整体系统失序（不规范性证成惩罚性羞辱，且不绕过 `T-COLL-1`）。
+
+> **PH-SS Guardrail**：上述均为描述性模型或 `P3` bridge 候选；信任分配、货币、公共标尺与下行抑制均不自动推导政治合法性、正义或道德真理，亦不替代独立伦理/政治证成框架。
 
 ---
 

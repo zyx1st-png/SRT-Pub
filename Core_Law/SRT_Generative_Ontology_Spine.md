@@ -467,6 +467,26 @@ Formal domain objects named `L0`, `L1` and `L2` may remain useful in scoped mode
 
 ---
 
+## 11.4 Full-archive reconstruction routing (2026-11-18 `Q01–Q06`)
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`. Routing summary only; no §13 OPEN gate or registered symbol definition is closed here.
+
+```text
+Q01 dual parallel extraction:
+primitive Selection reality (物自体) -> parallel physical state-cuts (物理表象) & psychological value-orientations (心理体验);
+no unilateral epiphenomenal or idealist reduction; 心理监督物理 applies only within formed Bearer/Agency systems.
+
+Q02/Q05 four-tier selection regimes (de-anthropomorphized):
+物择 (S0->One) | 生物择 (Stable ISP, 3-layer membrane with 中膜 in One Formation §6a) | 人择 (Bearer/Agency, Q08–Q09) | 神择 (O0/long-range nonclosure);
+cosmic "generalized consciousness / quantum field" notes route to O0/S0 directionality, never panpsychism.
+
+Q04/Q06 time & persistence split:
+Tier-1 relational step-ratio time (τ_ontic; relation to registered t_onto OPEN) != Tier-2 finite-agent error-correction window time (t_exp);
+first-order S0 occurrence (0/1 actuality) != second-order L2 link/trust persistence weight.
+```
+
+---
+
 ## 12. Facet-before-kind governance guard
 
 Before adding a new ontological noun, require:

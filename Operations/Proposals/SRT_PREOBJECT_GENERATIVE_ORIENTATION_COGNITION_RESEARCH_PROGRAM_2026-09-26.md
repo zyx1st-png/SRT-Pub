@@ -1396,6 +1396,44 @@ SRT language adds no discriminating prediction beyond Gestalt / enactivism / pre
 
 ---
 
+## 15a. 2026-11-18 Full-Archive Cognition & Consciousness Integration (`Q08, Q09, Q13, Q14`)
+
+Controlling source: `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md`.
+Claim level & scope: `P2/P3` background theory integration; does not modify, expand, or reopen the concept-frozen CN-2 E2 paper-only task family A (`§0.0c.1–2`, `§0.1`).
+
+### 1. Dual-Model Three-Conflict Matrix of Sensation, Perception, and Consciousness (`Q08`)
+
+Within the pre-object generative orientation architecture, internal modeling is split into two distinct functional sets (`F_4066`):
+
+- **`预测模型` (Predictive / Descriptive Model)**: models what an entity or state *is* (the set of stabilized attributes and regularities);
+- **`意愿模型` (Volitional / Normative Model)**: models what a state *ought to become* (the set of directed transitions and normative expectations).
+
+Sensation, perception, and introspective consciousness are distinguished by their exact locus of conflict (`F_5087`, `F_5205`, `F_5599`, `F_6443`):
+
+1. **Sensation / Phenomenal Consciousness (`感觉 / P-意识`, e.g., affect, pain, flight urgency)** = conflict between **`意愿模型` and current `经验`**;
+2. **Perception (`知觉`, e.g., object recognition, epistemic updating)** = conflict between **`预测模型` and current `经验`**;
+3. **Access Consciousness / Introspection (`访问意识 / A-意识 / 内省`, e.g., reflective value judgment)** = conflict between **`意愿模型` and `预测模型`**, serving to re-synchronize the actively intended world with the passively received world.
+
+### 2. Trust Allocation (`信任分配`) and Memory Reconsolidation (`Q09`)
+
+- **Definition (`F_4478`, `F_6057`)**: `信任` is the process of tracking the order-trend of change and allocating reliability weight to representations, pathways, or agents (`那些被链接和信任的观念，我们称之为经验`).
+- **Consciousness as trust re-allocator (`F_4756`, `F_4710`)**: A primary function of conscious experience is to reallocate trust weights across memories and ideas during **memory reconsolidation**, supported physiologically by slow glial modulation coupled with fast neuronal phase-synchrony.
+- **Learning blocks (`F_6219`, `F_6049`)**: Learning arrest is a breakdown of trust allocation and error tolerance, requiring active forgetting, clearance, and controlled distraction to reset; guilt and frustration directly depress subjective "inner speed" (`内部速度`) and trust capacity.
+
+### 3. Hemispheric Short/Long-Range Division, Betweenness Operator (`间性算符`, `P3` working operator candidate), and Anti-Fragility (`Q13`)
+
+- **Connection-range division (`F_5256`, `F_5108`, `F_5064`)**: Left-hemisphere-dominant processing forms **short-range, local, decontextualized links** (generating instrumental object-cuts / `存在与利用`); right-hemisphere-dominant processing sustains **long-range, background, Gestalt links** (generating inter-entity `秩序` and holistic intuition).
+- **Betweenness operator (`F_4857`, `F_5032`)**: `间性 (Betweenness)` operates as a relational operator governing symmetry and symmetry-breaking across states rather than static node attributes.
+- **Over-convergence fragility (`F_5649`, `F_4729`)**: Functionalist regimes that maximize immediate utility through aggressive convergence and inhibition while excluding controlled chaos lose weight-recalibration capacity and become structurally fragile (`易碎性`).
+
+### 4. Path-Over-Payload Memory, Active Forgetting, Beacon Engineering, and Insight (`Q14`)
+
+- **Reconstructive path memory (`F_6135`, `F_1687`, `F_6414`)**: Memory is an unconscious background reconstruction that evokes a sense of similar selection rather than a pixel-level archive; preserving sparse retrieval paths and **Beacon** anchors is more fundamental than storing raw payload (with single-trial ERK activation defaulting to erasure unless confirmed by a second trial).
+- **Active forgetting & well-escape (`F_6211`, `F_6219`)**: Active forgetting, distraction, and somatic perturbation (e.g., vibration / eye movement) serve to dissolve over-hardened links and escape local potential wells.
+- **Operational definition of Insight (`洞察力`, `F_5962`)**: Insight consists in suppressing pixel-level detail, extracting relational symbol anchors, and predicting long-range change stability.
+
+---
+
 ## 16. Current status
 
 ~~~text
