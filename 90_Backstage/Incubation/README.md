@@ -3,7 +3,7 @@ id: SRT-BACKSTAGE-INCUBATION
 type: index
 status: active
 claim_mode: navigation
-updated: 2026-07-20
+updated: 2026-10-19
 ---
 
 # Incubation — 研究种子孵化区
@@ -15,3 +15,7 @@ updated: 2026-07-20
 - 停驻不等于废弃。每个文件的复活触发条件登记在根目录 [`_SRT_PARKED_INDEX.md`](../../_SRT_PARKED_INDEX.md)，触发条件绑定工作线事件，不绑日历。
 - 本目录文件不是 canonical 定义源，不进入 fresh-session 读单，不产生维护义务。
 - 复活时：先对照当前 canonical 锚点重校符号与口径（迁入后 canonical 层可能已演化），再回到活跃层施工。
+
+## 历史知识回填入口
+
+[`Historical_Knowledge_Reentry/`](Historical_Knowledge_Reentry/README.md) 保存从私有历史档案筛选出的 H1/H2 研究释义、Beacon 作者补全进度和待核的 SRT 问题。该目录仅供非 canonical 检索与续谈；原文和 UID 对应仍在私有档案中，不进入当前正式理论主线。
