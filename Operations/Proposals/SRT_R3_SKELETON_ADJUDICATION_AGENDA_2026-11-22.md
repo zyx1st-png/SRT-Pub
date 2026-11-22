@@ -66,7 +66,7 @@ tags: [Proposal, R3Agenda, OntologyReconstruction, SkeletonAdjudication, Selecti
 - **来源锚点：** [`Core_Law/SRT_Generative_Ontology_Spine.md §13`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L509-L510)（`scientific distinctiveness` / `whole-architecture non-substitutability`）；[`#1144` 审计](../../Operations/Audits/SRT_Q08_Q09_CONCURRENT_WILL_TRUST_RECONSOLIDATION_NEIGHBOR_AUDIT_2026-11-22.md)；`R2` 反向修正义务表。
 - **需作者拍板问题：**
   1. 当主动推断（`G(π)+ln E(π)+effort`）、3 级 HGF、Solms 2021、Empowerment、Doya/Yu–Dayan、Dantzer sickness behavior、Kalai 幻觉理论分别承接各局部预测后，SRT 整体架构保留不可替代性的**核心关系究竟是哪一条**？（例如：`原初切分 -> 形成后的非对称后果暴露/不可外包性 -> 历史痕迹与可修订信任的分离 -> 选择机制自身的二阶重入` 之间的跨尺度生成约束）
-  2. 核准总报告提出的三阶撤回标准（撤回任务经验增量 / 撤回中间生理机制必要性 / 修订本体结构主张），明确何种跨领域失败集才会触发本体骨架收缩。
+  2. 核准总报告提出的三阶撤回标准（撤回任务经验增量 / 撤回中间生理机制必要性 / 修订本体结构主张），并明确第 Ⅲ 阶本体修订条件：**内部逻辑矛盾、普遍必要性反例、非循环判准失败或跨领域证据冲突，均可以分别触发相应范围的结构修订，不以跨领域失败为唯一条件**。
 
 ### `R3-03`：原初内向面、现象性边界与 `#1140` 二轮审查（Theme A `A1` + `A3`）
 - **来源锚点：** `A1-乙`（事件关系型原初内向面）、`A2-甲`（神择仅作 `O0` 开放性视域）、`A3-甲修订`（双向监督耦合）；PR `#1140`（2026-11-11 对话 trace）。
@@ -86,7 +86,7 @@ tags: [Proposal, R3Agenda, OntologyReconstruction, SkeletonAdjudication, Selecti
 - **来源锚点：** [`Core/SRT_Core_21b_Constitutive_Theorems.md`](../../Core/SRT_Core_21b_Constitutive_Theorems.md#L51-L98)（`P1-T02 t_onto`）；[`Philosophy/SRT_Causality_Time.md`](../../Philosophy/SRT_Causality_Time.md)；[`Core/SRT_Core_12b_Ontology_L2.md`](../../Core/SRT_Core_12b_Ontology_L2.md)（`Def-PathTrace ρ≥0`）；[`#1144` 审计](../../Operations/Audits/SRT_Q08_Q09_CONCURRENT_WILL_TRUST_RECONSOLIDATION_NEIGHBOR_AUDIT_2026-11-22.md)。
 - **需作者拍板问题：**
   1. 在规范层确定 $\tau_{\text{ontic}}$（物择关系步比候选）、模型限定的 `P1-T02 t_onto` 与主体体验持续时间 $t_{\text{exp}}$ 之间的引用边界，更新 `_SRT_SYMBOL_TABLE.md` 对 `t_onto` 的宽泛译名（仅当 `R4` 获批时写入）。
-  2. 保持 [`Spine §11`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L449-L466) 对 **`L2` 普遍定义**（先前 `Selection` 对后续 `Selection` 条件保持实际有效性）不变，且尊重 [`Core_12b Def-PathTrace`](../../Core/SRT_Core_12b_Ontology_L2.md) 中 `ρ` 的特定映射与门控前提（非 `L2` 普遍本体原语）；**在声明了保留历史、信任重估与跨主体关系的适用模型中**，裁定区分 **非负痕迹密度 $\rho(p,t)\ge 0$**（保 `Def-PathTrace` 单调性）、**个体有符号信任重估 $\Delta w_{\text{trust}}^{(i)}\in\mathbb R$** 与 **跨主体关系权重接口 $W_{\text{social}}$（暂不固定数学形式）**，并将 `B3-a` 被排开者三分（阴影/张力/后续摩擦）与主动遗忘二式写入适用模型的候选修订计划（不写成所有 `L2` 必然具有的三部分）。
+  2. 保持 [`Spine §11`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L449-L466) 对 **`L2` 普遍定义**（先前 `Selection` 对后续 `Selection` 条件保持实际有效性）不变，且尊重 [`Core_12b Def-PathTrace`](../../Core/SRT_Core_12b_Ontology_L2.md) 中 `ρ` 的特定映射与门控前提（非 `L2` 普遍本体原语）；**在声明了保留历史、信任重估与跨主体关系的适用模型中**，裁定区分 **非负痕迹密度 $\rho(p,t)\ge 0$**（保留 `Def-PathTrace` 的 $\rho\ge 0$ 非负性及 $\Delta\rho^+\ge 0$ 正向沉积性质；$\rho$ 本身可以自然衰减，不要求随时间单调增长）、**个体有符号信任重估 $\Delta w_{\text{trust}}^{(i)}\in\mathbb R$** 与 **跨主体关系权重接口 $W_{\text{social}}$（暂不固定数学形式）**，并将 `B3-a` 被排开者三分（阴影/张力/后续摩擦）与主动遗忘二式写入适用模型的候选修订计划（不写成所有 `L2` 必然具有的三部分）。
 
 ### `R3-06`：`RQ-2026-08-A02` 遗留悬案与 `d_canonical / d_stakes` 数学债务（Theme C `C1`）
 - **来源锚点：** [`_SRT_D_VALUE_CANONICAL.md`](../../_SRT_D_VALUE_CANONICAL.md#L240-L297)；[`07-25 d/q/o 收尾审计`](../../01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)；[`Operations/_SRT_REVIEW_QUEUE.md`](../_SRT_REVIEW_QUEUE.md#L30)；[`Core/SRT_OPEN_TENSIONS.md §9`](../../Core/SRT_OPEN_TENSIONS.md#L517-L546)。
