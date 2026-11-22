@@ -66,10 +66,10 @@ flowchart TB
 
     BEARER["Bearer：formed One / Selection-position ＋ P ＋ E [现行 canonical 路由]<br/>（P 前瞻自我索引 ＋ E 同系统不可完全外包后果暴露；正面 E 充分性 [OPEN分叉]）"]
 
-    L2["L2 保留历史功效 [现行 canonical 层面，非仓库]<br/>A4b 三分：ρ≥0 痕迹 / Δw_trust∈ℝ / 候选 W_social [R2候选]<br/>＋ B3-a 阴影/张力/摩擦去向三分 [R2候选] ＋ 主动遗忘二式 [待证条件]"]
+    L2["L2 保留历史功效 [现行 canonical 层面：先前 Selection 对后续 Selection 条件保持有效约束]<br/>适用模型条件性接口 [R2候选]：ρ≥0 痕迹 / Δw_trust∈ℝ / W_social（非 L2 普遍三组成部分）<br/>＋ B3-a 阴影/张力/摩擦去向三分 [R2候选] ＋ 主动遗忘二式 [待证条件]"]
 
-    CONSC["体验 / 意识支线（PH-CONSC01 / Q08 冲突位点 / t_exp）[R2候选]<br/>（需独立意识与现象准入门；#1129 NME != 意识证明 [待证条件]）"]
-    AGENCY["能动性支线（第三态连续谱系 -> 意向 -> S6 归责）[R2候选]<br/>（需独立能动准入门；AI S0-S4 为承载证据审查 != 意识定理 [R2候选/OPEN]）"]
+    CONSC["体验 / 意识支线（PH-CONSC01 / Q08 冲突位点 / t_exp）[R2候选]<br/>（以 Bearer 为条件的研究支路；Bearer 是否为其普遍必要前提仍 [OPEN分叉]；#1129 NME != 意识证明 [待证条件]）"]
+    AGENCY["能动性支线（第三态连续谱系 -> 意向 -> S6 归责）[R2候选]<br/>（以 Bearer 为条件的研究支路；Bearer 是否为其普遍必要前提仍 [OPEN分叉]；AI S0-S4 != 意识定理）"]
 
     INOUT["Bearer 内/外对称分叉 [OPEN分叉]<br/>向内：C1-b 丙 构成深度 q 与 N4 退位（C_i+非替代双测试+ρ+w_trust 试承）<br/>向外：N2 客体性≠客观性 -> C1-c 多维可推翻客观性＋§9 共享遮蔽排查"]
 
@@ -86,8 +86,8 @@ flowchart TB
     SISP -.->|"强循环立身对 Bearer 的支持路径（非必要前置）"| BEARER
     CAND_TRANS -.->|"特定过渡实现 / 下游赌注评估支持（不作普遍门槛）"| BEARER
 
-    BEARER -.->|"条件性支路（须过独立意识/现象准入门）"| CONSC
-    BEARER -.->|"条件性支路（须过独立能动/控制准入门）"| AGENCY
+    BEARER -.->|"以 Bearer 为条件的研究路径（须过独立意识准入门；不代表 Bearer 为普遍必要前提）"| CONSC
+    BEARER -.->|"以 Bearer 为条件的研究路径（须过独立能动准入门；Bearer <-> Agency 必要性 OPEN）"| AGENCY
     BEARER <-->|"A3 形成后同一具身系统内双向监督耦合 [R2候选]"| L2
     BEARER --> INOUT
     L2 <-->|"尺度与选择机制自身重入选择"| META
@@ -103,7 +103,7 @@ flowchart TB
 > **三阶失败与反向修正纪律：** 按 `R2` 收敛原则，任何竞争理论拟合或机制反例均严禁直接外推为“推翻整个 SRT”，必须明确落在下列三阶中的具体一层：
 > - **Ⅰ 阶（任务增量撤回）：** 撤回某具体任务/范式下 SRT 模型相比成熟平替的额外经验预测增量；
 > - **Ⅱ 阶（机制必要性撤回）：** 撤回某候选生理/认知实现载体（如慢星形胶质资格迹、`中膜`、`微效价`）对上层功能的**唯一或普遍必要性**；
-> - **Ⅲ 阶（本体结构修订）：** 仅当跨领域形成不可修复的反例集或同源张力时，修订骨架结构主张。
+> - **Ⅲ 阶（本体结构修订）：** 防止局部失败直接推翻全部理论，**同时不把跨领域同时失败设为修订本体主张的唯一触发条件**——确定的内部逻辑矛盾、对声称普遍必要条件的有效反例、或核心概念无法非循环判别，均可单独触发对应强度的结构修订。
 
 | 主题/子题 | 关键来源（`H` 历史 / `A` 裁决 / `M` 桥接） | `R2` 收敛候选主张 | 当前或目标 owner 表面 | 识别出的冲突 / 张力 | `R3/R4` 候选修改与位置 | 失败条件与对应三阶反向修正目标 |
 |---|---|---|---|---|---|---|
@@ -111,9 +111,9 @@ flowchart TB
 | **A2** 四界去拟人化 | `Q02` (`F_4817`, `F_2675`); `A2-甲`; `F_6702` | `物择/生物择/人择` 对应既有形成层级；**`神择` 仅为 `O0` 开放性与跨位置涌现秩序视域标签**，非第 4 机制 | `Core_Law/SRT_Generative_Ontology_Spine.md`; `Glossary/SRT_Live_Term_Router.md` | 早期文案将神择写为平行主选择者、且有 `O0` 目的论偷渡风险 | `Proposal §5.1` 候选校准：`神择` 仅作非超自然研究标签 | **Ⅲ 阶：** 若无法剥离目的论或导致误读 `O0` 带先验方向，立即从正典词表撤除“神择”，仅留历史档案注释 |
 | **A3** 形成后双向耦合 | `A3-甲修订`; `A1/Q01` | 原初无主从；**形成后同一具身系统内**，心理体验与价值评估可通过物理实现反向约束注意、可塑性与后续选择；`A3-丙` 作派生监督保留 | `Core_Law/SRT_Generative_Ontology_Spine.md`; `Operations/Audits/SRT_PASS19...` | 需严防与实体二元论或独立心灵控制者混同 | 将双向因果耦合限定于形成后 `Bearer/Agency` 具身回路 | **Ⅱ 阶：** 若声明模型中宏观心理变量可无信息损失地由底层局域动力学完全等价替代（无跨水平约束增量），缩窄为纯粹高层描述便利语 |
 | **A4a** 三层时间 | `Q04` (`F_5035`, `F_5539`, `F_2763`); `A4a-甲修订`; `P1-T02`; `Causality_Time.md` | 严格区分 **$\tau_{\text{ontic}}$（物择条件步比）**、**`P1-T02` $t_{\text{onto}}$（模型局部历史积分）**、**$t_{\text{exp}}$（连续变化组织+纠错/记忆/注意调节的体验时间）** ＋ 参数 `t` | `Core/SRT_Core_21b_Constitutive_Theorems.md`; `Philosophy/SRT_Causality_Time.md`; `_SRT_SYMBOL_TABLE.md` | `t_onto` 符号表仍写较宽泛的 Ontological Time；$\tau_{\text{ontic}}$ 尚未证明导出统一物理时钟；不能将错误当时间体验必要条件 | 修正 `_SRT_SYMBOL_TABLE.md` `t_onto` 范围说明；$\tau_{\text{ontic}}$ 保持 `OPEN` 候选 | **Ⅰ/Ⅱ 阶：** 若无明显错误下的持续体验实验推翻纠错调制权重，仅调整 $t_{\text{exp}}$ 模型权重而不动 $\tau_{\text{ontic}}$ 与 `P1-T02` |
-| **A4b** 痕迹与信任三分 | `Q09` (`F_4478`, `F_4756`, `F_6219`, `F_3538`); `A4b-甲修订`; `#1144` | **$\rho(p,t)\ge 0$**（保 `Def-PathTrace` 单调性）与 **$\Delta w_{\text{trust}}^{(i)}\in\mathbb R$**（个体有符号信任重估）及 **$W_{\text{social}}(i,j,p,t)$**（跨主体关系候选）三分；主动遗忘含停止遍历自然衰减与候选主动解固 | `Core/SRT_Core_12b_Ontology_L2.md`; `#1144 审计`; `Philosophy/SRT_Social_Cognition.md` | 禁止负号污染 `Def-PathTrace`；不可把制度惯性（高 $\rho$）与个人/群体认可混同 | `Core_12b` 增补非负 $\rho$ 与 `w_trust` 分离注；`W_social` 暂不固定公式或入符号表 | **Ⅰ/Ⅱ 阶：** 若 3 级 HGF + 动态遗忘在 `P-Q09-1` 双分离上无残差，撤回 `w_trust` 在该任务族的额外经验增量，保留 `ρ` 结构角色 |
+| **A4b** 痕迹与信任三分 | `Q09` (`F_4478`, `F_4756`, `F_6219`, `F_3538`); `A4b-甲修订`; `#1144` | 保持 `Spine §11` 的 `L2` 普遍约束定义不变；在**声明了保留历史、信任重估与跨主体关系的适用模型**中，三分 **$\rho(p,t)\ge 0$**（保 `Def-PathTrace` 单调性）、**$\Delta w_{\text{trust}}^{(i)}\in\mathbb R$**（个体有符号信任重估）与 **$W_{\text{social}}(i,j,p,t)$**（跨主体关系候选）（非所有 `L2` 的普遍三组成部分）；主动遗忘含停止遍历自然衰减与候选主动解固 | `Core/SRT_Core_12b_Ontology_L2.md`; `#1144 审计`; `Philosophy/SRT_Social_Cognition.md` | 禁止负号污染 `Def-PathTrace`；不可把制度惯性（高 $\rho$）与个人/群体认可混同；防将模型级 `ρ` 写成 `L2` 普遍原语 | `Core_12b` 增补适用模型中非负 $\rho$ 与 `w_trust` 分离注；`W_social` 暂不固定公式或入符号表 | **Ⅰ/Ⅱ 阶：** 若 3 级 HGF + 动态遗忘在 `P-Q09-1` 双分离上无残差，撤回 `w_trust` 在该任务族的额外经验增量，保留 `ρ` 条件历史角色 |
 | **B1** 中膜功能角色 | `Q03` (`F_6232`, `F_2868`, `F_6223`); `B1-甲` | `中膜` 定位为 `Stable ISP -> Bearer` 过渡的**抽象缓冲与资源再分配功能槽位**；物理双层 vs 生命三层膜仅为 `P2/P3` 启发对比 | `Core_Law/SRT_One_Formation.md`; `Core_Law/SRT_Generative_Ontology_Spine.md` | 禁止把碳基/生物皮肤或固定空间膜变成 `Bearer` 通用必要条件 | `One_Formation §6a` 候选落点，显式维持 `relative separability != fixed spatial skin` | **Ⅱ 阶：** 若存在不含中膜缓冲仍完整实现 `One + P + E` 的物理/人工系统，直接证实其非普遍必要，保留为特定生命实现模型 |
-| **B2** `Bearer` 正交分叉 | `B2-甲`; `SRT_Philosophy_Agency_Subjecthood_v0_2.md` (`PH-CONSC01`); `#1144 Order_hat` | `Bearer (One + P + E)` 为后续分叉中枢（非自动推出），在满足各自独立准入门后进入 **第三态能动性谱系** 与 **体验链（`A1-乙`→`PH-CONSC01`）** | `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`; `Core_Law/SRT_Generative_Ontology_Spine.md §8` | 严防把 `Bearer`、`Agency`、`Subjecthood`、`Consciousness` 压成单一连续滑梯 | 明确各分支各自独立准入门，同步打通 `EA-4` | **Ⅲ 阶：** 若发现无法为特定系统稳定切分 `P` 与 `E` 却明确具备 `Agency`，重新审查 `Spine §8` 的通用路由范围 |
+| **B2** `Bearer` 正交分叉 | `B2-甲`; `SRT_Philosophy_Agency_Subjecthood_v0_2.md` (`PH-CONSC01`); `#1144 Order_hat` | `Bearer (One + P + E)` 为后续正交研究支路的中枢之一（非自动推出，且不宣称其是 `Agency`/`Consciousness` 的普遍必要前提），在满足各自独立准入门后进入 **第三态能动性谱系** 与 **体验链（`A1-乙`→`PH-CONSC01`）** | `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`; `Core_Law/SRT_Generative_Ontology_Spine.md §8, §13` | 严防把 `Bearer`、`Agency`、`Subjecthood`、`Consciousness` 压成单一连续滑梯；`Bearer <-> Agency / Consciousness` 必要性方向仍 `OPEN` | 明确各分支各自独立准入门并登记 `Bearer` 必要性方向为 `OPEN`，同步打通 `EA-4` | **Ⅱ/Ⅲ 阶：** 若发现某系统具备 `Agency` 却未满足 `Bearer P/E` 准入，并不自动反驳 `Bearer` 自身的 `P+E` 定义——它首先检验（并可推翻）“`Bearer` 是 `Agency` 的普遍必要前提”这一未定假设（`Spine §13`），再视实证决定是否收缩相应必要性声称 |
 | **B3** 阴影 / 微效价 / 孤岛 | `B3-a/b/c`; `Sync_Bridge §2.2, §2.4, §2.7, §2.8`; `F_5845`, `F_4189`, `F_6761` | ① `阴影/张力/后续摩擦` 三分进 `L1->L2` 条件层（`阴影 != 平行实体`）；② `微效价` 位于后 `ε_pg` / 前 `d_stakes` 缓冲界面；③ `自检三问` 归 `Core_24`，`AI 三型` 归 Theme D | `Core/SRT_Core_12b_Ontology_L2.md`; `_SRT_D_VALUE_CANONICAL.md §2a`; `Core_24` | 需严格履行 `_SRT_D_VALUE_CANONICAL.md §2a.5`“若不承重则撤回”条款 | 在 `Core_12b` 登记历史条件性去向；维持 `§2a` 候选地位 | **Ⅱ 阶：** 若去掉“微效价”后 `ε_pg` 与价值深度之间无解释力损耗，按 `§2a.5` 撤回并直接回退 `非替代性` 判据 |
 | **C1** 五量边界与 `d/q/o` | `C1-a/b/c`; `_SRT_D_VALUE_CANONICAL.md §2b`; `_SRT_T_DIR_CANONICAL.md`; `07-25 d/q/o 审计`; `RQ-2026-08-A02` | 五量各守职责（非单向因果链）；`Order_hat` 仅作 `P3` 工作核且与 `T_dir` 条件分离；登记 **`d_canonical`（范数）vs `d_stakes`（参与率）数学债务**；`C1-b 丙` 保留构成深度 `q` 问题进 `R3`（先用 `C_i`+非替代性双测试+`ρ`+`w_trust` 检验）；`N2（客体性≠客观性）` 归位；不设裸 `o` 符号/单标量，保留多维可推翻检查+共享遮蔽排查+可失败性 | `_SRT_D_VALUE_CANONICAL.md`; `_SRT_T_DIR_CANONICAL.md`; `Core/SRT_OPEN_TENSIONS.md §1, §9` | `Def-d-stakes` 参与率与 `d_canonical` 范数一般不等价；`q` 之“一次性构成事件/铭刻 vs 召回/`N4` 退位”尚未审清；**`RQ-2026-08-A02` 禁运暂不解除** | `R3` 审计数学对账、构成深度残差与客体性/客观性落点；`EA-2` 记为账本滞后 | **Ⅰ/Ⅱ 阶：** 若 `C_i`+双测试+`ρ`+`w_trust` 完全覆盖 `q` 情景，则不新立符号并将其吸收归位；若 `Empowerment`+正则项在 `P-Q08-1`/`P-Q09-1` 与 `Order_hat` 观测不可分，撤回 `Order_hat` 增量主张 |
 | **C2** 规范性 · `EA-1` · `CΨ` | `C2-a/b/c`; `Q07` (`F_4337`); `2B/3B`; `T-COLL-1/2`; Ghost 3 卡; `F_3223`; `§18 CΨ` | ① `2B` 仅作能动建构（不否认羞耻现实因果），保留非羞耻亲社会路径；`3B` 仅作 `O2-C` 优先审查倾斜（禁无条件词典牺牲）；`F_3538` 须区分可纠错 `W_social` vs 强制/惯性；**`O2-M = OPEN/HOLD`**。<br>② `EA-1` 采用 `C2-b 丙` 分层核对（算子历史互写 / 非闭合压力 / `U5` 二阶再选择，保“幽灵”≠`\hat G_\theta`）。<br>③ `F_3223`“去选择”拆三义及“与摩擦关系改变”，不新设 `Ψ_f` 变量 | `Philosophy/SRT_Ethics_PH_SS_Guardrails.md`; `Core_Law/SRT_Collective_Selection.md`; `Core_Law/SRT_Reference_Dynamics.md`; `Core/SRT_OPEN_TENSIONS.md §18` | `Reference_Dynamics §1` 已含 `Ĝ_θ != primitive Selection`，需防重复打补丁；不能把 `U5` 反绝对化写成必然定理；**`EA-1` 与 `CΨ` 暂不关闭** | 明确 `O1/O2-C/O2-A` 各自规范性责任边界入 `R3`；Ghost 三项经对账后再定 `EA-1` 结项 | **Ⅱ/Ⅲ 阶：** 若货币/资源流全由产权、权力强制与路径粘性解释，撤回 `F_3538` 的可修正信任增量读法，保留其 `M(t)` 不对称吸收诊断 |
@@ -156,7 +156,7 @@ flowchart TB
 
 ## 4. `30` 个开放 PR 双轴分诊全表与物理域独立边界
 
-> **基线核实（2026-11-22）：** GitHub `zyx1st-png/SRT-Pub` 当前共 **30 个开放 PR**（全部为 `Draft`）。全部不随 `R2` 集中合并，仅按 **`工作性质 × 治理与处置状态`** 双轴入档。
+> **基线核实（2026-11-22）：** 下表记录的是 **PR `#1145` 创建前仓库的 `30` 个存量开放 PR 快照**（全部为 `Draft`）；计入本交付自身所在的 PR `#1145` 后，仓库当前共有 **`31` 个开放 PR**。存量 `30` 个 PR 全部不随 `R2` 集中合并，仅按 **`工作性质 × 治理与处置状态`** 双轴入档。
 
 | PR | 工作性质 | 主题与分支概览 | 治理与 `R2` 处置状态 |
 |---|---|---|---|
@@ -194,6 +194,7 @@ flowchart TB
 - **`Uncertain` 队列（`1,405` 条）：**
   - **早期池（2011–2015，`1,208` 条）：** 已抽样 12 条复核为旧语汇前置片段，全数归档作按需检索；
   - **后期池（2016–2023，`197` 条）：** **100% 逐条清筛完毕**——其中 **`78` 条** 经作者同意新晋升为强化直觉（首批 `51` + 抽样 `6` + 扫尾 `21`），加上已在 `Q12` 登记的 **`F_6325`**，共形成 **`79` 条精选索引**；其余 `118` 条后期残片按需检索归档。
+  - **来源日期透明注：** 79 条索引中有 `60` 条的 `earliest_src_year` 字段记为 `unknown`（主要因后期笔记未自带显式源日期字段；当前表保障了公开索引的 `family_id` 唯一性与批次一致，原始文本与具体生成年代的逐条核验仍按 `F_*` 回溯私密归档库）。
 
 ### 5.2 `79` 条精选 `F_*` 完整可追溯表（无私有路径、UID 或邮箱外泄）
 

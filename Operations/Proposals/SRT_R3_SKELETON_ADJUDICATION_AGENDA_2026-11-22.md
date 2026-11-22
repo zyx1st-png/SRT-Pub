@@ -80,12 +80,13 @@ tags: [Proposal, R3Agenda, OntologyReconstruction, SkeletonAdjudication, Selecti
   1. 维持 [`Spine §8`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L353) `formed One / Selection-position + P + E -> Bearer` 为唯一法定主路由不变，`B1-甲（中膜缓冲）`与 `B3-b（微效价）` 是否确认为 **仅作特定实现域/生命认知层的 `P2/P3` 过渡候选支路**，不升级为 `Bearer` 的普遍必要前提？
   2. 对照 [`_SRT_D_VALUE_CANONICAL.md §2a.5`](../../_SRT_D_VALUE_CANONICAL.md#L247-L251)，“微效价”在 `ε_pg` 与价值深度之间究竟承担哪一项不可由 `d_stakes` 替代的过渡工作？
   3. 明确 `ε_pg / κ_0` 向更强形成态的继承门以及正交 `E`（不可完全外包的后果暴露）与物理/生物双层—三层膜启发对比的 `R4` 落点边界。
+  4. **裁定 `Bearer <-> Agency / Consciousness / Concern` 的必要性方向（[`Spine §13`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L500) `OPEN`）：** 明确以 `Bearer (P+E)` 为条件的研究路径，**并不自动宣称 `Bearer` 是 `Agency` 或 `Consciousness` 的普遍必要前提**；确立在“不满足 `P/E` 却呈现 `Agency`”情形下的准确检验方向（可参考并入 `R3-07` `O2-A` 讨论）。
 
 ### `R3-05`：三层时间接口与 `L2` 痕迹—信任三分落骨（Theme A `A4a` + `A4b`）
 - **来源锚点：** [`Core/SRT_Core_21b_Constitutive_Theorems.md`](../../Core/SRT_Core_21b_Constitutive_Theorems.md#L51-L98)（`P1-T02 t_onto`）；[`Philosophy/SRT_Causality_Time.md`](../../Philosophy/SRT_Causality_Time.md)；[`Core/SRT_Core_12b_Ontology_L2.md`](../../Core/SRT_Core_12b_Ontology_L2.md)（`Def-PathTrace ρ≥0`）；[`#1144` 审计](../../Operations/Audits/SRT_Q08_Q09_CONCURRENT_WILL_TRUST_RECONSOLIDATION_NEIGHBOR_AUDIT_2026-11-22.md)。
 - **需作者拍板问题：**
   1. 在规范层确定 $\tau_{\text{ontic}}$（物择关系步比候选）、模型限定的 `P1-T02 t_onto` 与主体体验持续时间 $t_{\text{exp}}$ 之间的引用边界，更新 `_SRT_SYMBOL_TABLE.md` 对 `t_onto` 的宽泛译名（仅当 `R4` 获批时写入）。
-  2. 拍板将 `L2` 历史写回在骨架层正式拆为 **非负痕迹密度 $\rho(p,t)\ge 0$**（保 `Def-PathTrace` 单调性）＋ **个体有符号信任重估 $\Delta w_{\text{trust}}^{(i)}\in\mathbb R$** ＋ **跨主体关系权重接口 $W_{\text{social}}$（暂不固定数学形式）**，并将 `B3-a` 被排开者三分（阴影/张力/后续摩擦）与主动遗忘二式写入 `Core_12b` 候选修订计划。
+  2. 保持 [`Spine §11`](../../Core_Law/SRT_Generative_Ontology_Spine.md#L449-L466) 对 **`L2` 普遍定义**（先前 `Selection` 对后续 `Selection` 条件保持实际有效性）不变，且尊重 [`Core_12b Def-PathTrace`](../../Core/SRT_Core_12b_Ontology_L2.md) 中 `ρ` 的特定映射与门控前提（非 `L2` 普遍本体原语）；**在声明了保留历史、信任重估与跨主体关系的适用模型中**，裁定区分 **非负痕迹密度 $\rho(p,t)\ge 0$**（保 `Def-PathTrace` 单调性）、**个体有符号信任重估 $\Delta w_{\text{trust}}^{(i)}\in\mathbb R$** 与 **跨主体关系权重接口 $W_{\text{social}}$（暂不固定数学形式）**，并将 `B3-a` 被排开者三分（阴影/张力/后续摩擦）与主动遗忘二式写入适用模型的候选修订计划（不写成所有 `L2` 必然具有的三部分）。
 
 ### `R3-06`：`RQ-2026-08-A02` 遗留悬案与 `d_canonical / d_stakes` 数学债务（Theme C `C1`）
 - **来源锚点：** [`_SRT_D_VALUE_CANONICAL.md`](../../_SRT_D_VALUE_CANONICAL.md#L240-L297)；[`07-25 d/q/o 收尾审计`](../../01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)；[`Operations/_SRT_REVIEW_QUEUE.md`](../_SRT_REVIEW_QUEUE.md#L30)；[`Core/SRT_OPEN_TENSIONS.md §9`](../../Core/SRT_OPEN_TENSIONS.md#L517-L546)。
