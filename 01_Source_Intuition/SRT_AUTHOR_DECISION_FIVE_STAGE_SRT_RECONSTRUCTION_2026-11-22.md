@@ -14,7 +14,7 @@ dependency:
   - STATUS.md
   - AGENTS.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
-  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md
 tags: [AuthorDecision, Reconstruction, HistoricalIntuition, MaterialsIntegration, Spine, Canonical, Domains]
 ---
 
