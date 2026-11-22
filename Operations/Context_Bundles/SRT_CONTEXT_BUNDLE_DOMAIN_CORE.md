@@ -1,14 +1,14 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-10-19
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-11-22
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
+generated: 2026-11-22
+source_commit: 7b00a3bc1
+source_branch: HEAD
 source_dirty: false
 inputs_digest: d21170115fd5e00e
 ---
@@ -26,9 +26,9 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
+| 生成日期 | 2026-11-22 |
+| 来源 commit | `7b00a3bc1` |
+| 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
