@@ -1,14 +1,14 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-10-19
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-22
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-10-19
-source_commit: e3423df4f
-source_branch: codex/generative-research-anti-defensive-governance-20261018
+generated: 2026-11-22
+source_commit: 7b00a3bc1
+source_branch: HEAD
 source_dirty: false
 inputs_digest: d21170115fd5e00e
 ---
@@ -26,9 +26,9 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-10-19 |
-| 来源 commit | `e3423df4f` |
-| 来源分支 | `codex/generative-research-anti-defensive-governance-20261018` |
+| 生成日期 | 2026-11-22 |
+| 来源 commit | `7b00a3bc1` |
+| 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -43,10 +43,10 @@ inputs_digest: d21170115fd5e00e
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-10-18 |
+| 1 | `SRT_AI_START.md` | 2026-10-19 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-23 |
-| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-18 |
+| 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-23 |
 | 7 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
@@ -449,7 +449,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-10-18 |
+| last_commit | 2026-10-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1855,7 +1855,7 @@ OPEN = open until separately adjudicated and landed.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-10-18 |
+| last_commit | 2026-10-19 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
