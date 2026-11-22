@@ -18,6 +18,43 @@ updated: 2026-10-09
 
 ## Fast Status
 
+### CURRENT NEXT — 2026-11-22 作者五阶段重构决策（唯一当前执行入口）
+
+> **最新作者来源 / Gemini handoff**：`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`。作者明确设定「早期笔记价值回流 → 仓库散落材料整合 → 骨架方向/原则修订 → canonical 重构 → 领域延伸、研究验证、出版」的总体次序。此处只调整仓库**当前工作优先级和接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
+>
+> **冲突优先级**：本节是截至 2026-11-22 的单一 live `CURRENT NEXT`。下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 是当时的历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+
+```text
+CURRENT NEXT (single active execution focus)
+= R2 全仓材料—理论关系整合（先核对 R1 早期笔记主批次的合入收口）
+= SRT-wide source/material/theory reconciliation, NOT a new science experiment;
+
+CURRENT AUTHOR DIRECTION
+= R1 早期笔记：价值提炼、修正/优化/补齐
+  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系
+  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN
+  -> R4 canonical：依据审定骨架分 owner 重构
+  -> R5 各领域延伸、形式化/实证检验与出版;
+
+CURRENT IMMEDIATE TASK
+= 核对 R1 主要裁决与相关重构成果是否已合入 merged main
+  -> 对尚未合入的作者来源 / PR 仅登记候选与差异
+  -> 按“理论问题”而非“文件清单”梳理 R2 的来源/现有 owner/价值/重复/冲突/OPEN
+  -> 交付 R2 整合图 + R3 骨架候选分歧与作者待裁决问题;
+
+ACTIVE NOW = R1 交接核对 + R2 归并分析（同一 CURRENT NEXT）;
+R3 = 下一阶段的作者骨架裁决准备，不自动进入 canonical 改写;
+R4/R5 = 后续规划，不因列入路线而提前启用;
+PR MERGE / canonical writes / experiment / preregistration / publication
+= require their own existing reviews, gates and relevant authorization;
+§10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / other HOLD
+= UNCHANGED; no blanket release;
+```
+
+**给 Gemini 的第一轮执行指令**：先按 `AGENTS.md §Session Start` 完成 bootstrap，读上面的作者决策文件，并从 **merged `main`** 复核 2026-11-18 Q01–Q15 历史整合及相关未合并 PR 的实际落地差额。再沿 `_SRT_CONTEXT_ROUTER.md`、`_SRT_DEEP_THEORY_MAP.md`、`Operations/_SRT_MATERIAL_LOG.md` 等已有入口做 R2 主题归并。每项记录作者原意/机器建议/外部证据、权威 owner、现有主张与新材料关系、需要改什么及哪些需要作者再裁决；输出 R2 汇总和 R3 骨架待定方案。**本轮不另开 Q08/Q09 仿真、不因重构愿景解冻实验/跨域深井、不自动把历史猜想写成 canonical。** 原有认知 CURRENT NEXT 是研究历史，不是抹除研究结果。
+
+---
+
 ### 0. Landing ledger — 已落地事实（2026-09-13）
 
 ```text
@@ -239,7 +276,7 @@ new primitive = NO.
 
 Reopen only for a genuinely new primitive distinction, a non-circular downstream derivation that fails under a fair role-matched rival, an O0/S0-specific prospective intervention/exclusion, or a representation-invariant world-facing relation not already paid by mature neighboring theories.
 
-Single next route:
+Historical single-next route **as of 2026-09-27** (superseded for current priority by the 2026-11-22 Fast Status CURRENT NEXT above; evidence/guards retained):
 
 ~~~text
 CURRENT NEXT
@@ -631,6 +668,8 @@ research_mode = U.
 ```
 
 ### 2. Current controlling route — ontology / canonical edits only
+
+> **2026-11-22 当前顺序**：本节仍是将来 R3/R4 骨架与 canonical 修订时的 authority/冻结约束，不是当前 R2 资料整合的改写授权。作者五阶段决定允许先做非 canonical 的信息整合与骨架候选讨论；具体 Freeze-A owner 语义修改仍须逐项作者裁决、现有审查和一致性落地。当前唯一执行路由在 §Fast Status 顶部。
 
 > `CANONICAL_REGISTRY.md §C` is the single owner of complete citation priority. The list below is a **task-local working read sequence**, not a second authority chain; cross-owner adjudication still resolves through Registry §C -> Generative Ontology Spine -> compatible local owners.
 
