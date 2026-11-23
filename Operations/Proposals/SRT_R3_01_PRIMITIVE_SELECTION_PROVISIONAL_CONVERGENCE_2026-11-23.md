@@ -13,7 +13,10 @@ research_mode: U_and_N_bounded
 dependency:
   - STATUS.md
   - 01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md
+  - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md
   - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FULL_ARCHIVE_10_MODULES_RECONSTRUCTION_2026-11-18.md
+  - 01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md
+  - Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md
   - Operations/Proposals/SRT_R1_R2_FULL_RECONSTRUCTION_CONSOLIDATION_REPORT_2026-11-22.md
   - Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md
   - Core_Law/SRT_Generative_Ontology_Spine.md
@@ -28,7 +31,7 @@ tags: [Proposal, R3, R3-01, PrimitiveSelection, ProvisionalConvergence, MinimalN
 
 > **治理定位（`canonical: false`）：** 本文为五阶段重构（[`SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](../../01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md)）进入 **`R3` 理论骨架作者深度参与共创** 后的第一份阶段性收敛候选文档，承接 [`SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md`](SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md) 中的 `R3-01` 议题，并为下一步进入 `R3-02` 提供清晰接口。
 >
-> **权威与边界声明：** 本文记录的是经作者确认的 **`R3-01` 阶段性研究整合候选**，**不构成** canonical 最终定义、经验验证结论或对 `OPEN` 问题的自动封闭。本文**不修改**任何 `Core_Law/`、`Core/` 或 Freeze-A 权威文件，**不解除**任何现行 `HOLD`（`CN-2 E2`、`§10.1`、`§10.2`、`O2-M`、`CN-3 toy`、`1B` 模拟、`DATA-ACCESS-0 = NO-GO`），也不触碰封存的 25 条 `validation_holdout`。
+> **权威与边界声明：** 本文记录的是经作者 2026-11-23 确认允许归档探索的 **`R3-01` 阶段性研究检查点与整合候选**（作者原话、AI 整理候选与未决项的严格分界见 [`SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md`](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md)），**不构成** canonical 最终定义、经验验证结论或对 `R3-01` 非循环判准等 `OPEN` 问题的已通过总闸。本文**不修改**任何 `Core_Law/`、`Core/` 或 Freeze-A 权威文件，**不解除**任何现行 `HOLD`（`CN-2 E2`、`§10.1`、`§10.2`、`O2-M`、`CN-3 toy`、`1B` 模拟、`DATA-ACCESS-0 = NO-GO`），也不触碰封存的 25 条 `validation_holdout`。
 
 ---
 
@@ -78,27 +81,31 @@ tags: [Proposal, R3, R3-01, PrimitiveSelection, ProvisionalConvergence, MinimalN
 1. **有限位置与 `L2` 脚手架边界**：
    - 有限具身位置无法以“上帝视角”直接摸到现实生成本身的终极真实；概念、语言、数学、模型与规则可以作为形成后的认识及组织脚手架（`L2` 脚手架），帮助不同位置表达、比较、协调和修正理解，但不等同于本体来源本身；
    - **严格区分两层 `L2`**：人类使用历史形成的 `L2` 数学/概念脚手架去描述一次 `Selection` 事件，**不意味着**该被描述事件自身在本体上必然产生了 `L2` 历史留存。
-2. **脚手架、规则与活的选择之间的核心机制**：
+2. **脚手架、规则与活的选择之间的核心机制（含适用范围界定）**：
    - `L2` 脚手架的核心功能在于**拉近两种需要区分的对象或方向**（建立公共对比尺度、提高分辨力），从而服务于当下鲜活的选择；
    - **规则是硬化的选择**；在形成后的系统中，**判断与行动需要当下活的选择与既有规则同时作用**；
+   - **适用范围护栏**：此处“规则是硬化的选择”当前主要限定在**历史积累形成的认知脚手架、组织规则与制度规范**范围内，**不自动推广等同于一切物理学自然律**（自然律是否以及如何与“硬化选择”相关保持 `OPEN`，避免过度泛化）；
    - 规则不是永恒客观的绝对实在，因为硬化后的旧规则可能**脱离当下活的选择**而沦为空转或僵化外壳。
-3. **多维本体论摩擦的交叉制衡（反相对主义防线）**：
+3. **多维本体论摩擦的独立约束与交叉检验（反相对主义防线）**：
    - 规则与脚手架的有效性、适用边界以及“是否已脱离活的选择”，不能由规则自身宣称，而须在具体选择位置中通过**脚手架形成后积累的本体论摩擦（选择压力的积累）、干预后果、内部失配与跨位置校准**接受持续检验；
    - **明确护栏**：**低摩擦不自动等于真理、有效性或道德正当性**（全群体共谋的错误观念可能呈现低社会交流摩擦，而挑战旧制度的正确发现初期可能承受高社会摩擦；伦理正当性仍受 [`SRT_Ethics_PH_SS_Guardrails.md`](../../Philosophy/SRT_Ethics_PH_SS_Guardrails.md) 独立约束）；
-   - 真正挡住彻底相对主义的，是**不同维度摩擦之间的交叉制衡与不可任意抹平**——特别是**物理/干预摩擦（`R3`）**、**跨主体交流与社会对齐摩擦（`R2`）**以及**系统长期承重/内部失配摩擦**之间的相互校核（与 [`Before_Objects_Selection_Realism.md §4.2–§4.3`](../../Philosophy/Papers/Before_Objects_Selection_Realism.md#L327-L355) 衔接）。
+   - **独立约束与不可简单互代**：承接 [`Before_Objects_Selection_Realism.md §4.2–§4.3`](../../Philosophy/Papers/Before_Objects_Selection_Realism.md#L327-L355) 的区分，**物理/反事实干预抵抗（`R3`）承担独立的非任意约束功能，不能被跨主体交流与社会对齐摩擦（`R2`）简单替代**；物理干预抵抗、跨主体交流摩擦与系统长期承重/内部失配摩擦之间可以互相暴露盲点，但**不能简单互代，也不能靠摩擦指标的综合值直接推导真理或道德正当性**。
 
 ---
 
-### 四、理论使命：跨尺度统一、三层价值区分与 `R3-02` 衔接标尺
+### 四、理论使命：跨尺度统一、三层价值区分与 `R3-02` 开放研究入口
 
 1. **非替代定位**：SRT 不以在单一垂直领域内推翻或替代现行物理、生命、心理或社会科学为目标，而是尝试建立贯通存在与秩序的跨尺度生成视角，以更充分地理解并处理具身存在中的真实生存性问题。
 2. **明确区分三种不同标准的理论成果（不可彼此冒充）**：
    - **① 本体论解释连贯性**：对存在非自明性、差异生成、对象/组织形成与价值来源提供连贯且不循环的解释；
    - **② 跨领域解释迁移与约束澄清**：某一尺度中澄清的生成关系，能够帮助另一领域识别此前遗漏的约束、失配条件或失败模式；
    - **③ 具体科学预测或实践增量**：在具体实验、临床、认知或社会场景中产生可检验的更好区分、预测或干预方案（此项须另由独立实证建立，目前不宣称已获证）。
-3. **进入 `R3-02` 的“非换名检验”标尺**：
+3. **进入 `R3-02` 的开放定位与平行候选范围**：
    - 统一性不意味着要求物理、生命、心理与社会服从同一个形式方程，更不是把各学科已有机制重新改名为 `Selection`；
-   - 下一议题 `R3-02` 将直面 **Whitehead、Simondon、协同学/耗散结构、自由能原理（Friston）** 等跨尺度统一竞争框架，以**非换名检验（anti-relabeling test）**为核心标尺：在保留各领域具体机制差异的前提下，检验 SRT 的跨尺度骨架（如“垂直切分 $\to$ 规则硬化 $\to$ 脱离与多维摩擦”）能否指出竞争框架未能同样清晰抓住的结构盲点、失配诊断或跨领域迁移洞见。
+   - **`R3-02` 的中心任务保持开放**：**探索跨尺度生成关系及其相对于成熟竞争理论（Whitehead、Simondon、协同学/耗散结构、自由能原理等）的实际增量，并核准三阶撤回标准；允许替代、重组或放弃既有候选路径**，同时守住“非换名检验（anti-relabeling test）”纪律；
+   - 以下两条线索在 `R3-02` 中列为**同等地位的优先考察候选之一**（均不预设为最终唯一骨架）：
+     1. **候选线索甲（垂直切分与规则演化）**：`垂直切分 -> 规则硬化 -> 脱离与多维摩擦`；
+     2. **候选线索乙（2026-07-12 跨尺度涌现与代理接缝）**：承接 [`SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`](../../01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md) 与 [`SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`](../SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md) 标识的未解接缝——**`局部独立可选择性下降 -> 组织协调形成 -> 整体获得新的有效选择能力`**，系统检验装配、归一化与跨尺度 `Proxy`（严格区分 `Proxy` 与 `Delegation`，并显式保留“装配未必产生 `Proxy`”“归一化未必是所有装配的必要条件”等可推翻方向）。
 
 ---
 
@@ -117,8 +124,11 @@ tags: [Proposal, R3, R3-01, PrimitiveSelection, ProvisionalConvergence, MinimalN
 
 ## 3. 关联索引与下一步入口
 
-- **状态路由**：[`STATUS.md`](../../STATUS.md)（`CURRENT NEXT` 随本轮作者授权切换至 `R3` 理论骨架作者共创与逐条裁决）。
-- **上游议程与总报告**：
+- **作者裁决与溯源留痕**：[`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md`](../../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md)
+- **状态路由**：[`STATUS.md`](../../STATUS.md)（`CURRENT NEXT` 随 2026-11-23 作者授权切换至 `R3` 理论骨架作者共创与逐条裁决）。
+- **上游议程、总报告与跨尺度历史材料**：
   - [`Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md`](SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md)
   - [`Operations/Proposals/SRT_R1_R2_FULL_RECONSTRUCTION_CONSOLIDATION_REPORT_2026-11-22.md`](SRT_R1_R2_FULL_RECONSTRUCTION_CONSOLIDATION_REPORT_2026-11-22.md)
-- **下一步推荐议题（`R3-02`）**：围绕“**垂直切分 $\to$ 规则硬化 $\to$ 脱离与多维摩擦**”这一跨尺度贯穿线索，与 **自由能原理、协同学、Whitehead / Simondon** 展开正面“非换名检验”对照。
+  - [`01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`](../../01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md)
+  - [`Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`](../SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md)
+- **下一步开放议题（`R3-02`）**：探索跨尺度生成关系及其相对于成熟竞争理论（**Whitehead、Simondon、协同学、自由能原理**）的实际增量，并核准三阶撤回标准——将“垂直切分 $\to$ 规则硬化 $\to$ 脱离与多维摩擦”与 2026-07-12 跨尺度装配 / 归一化 / `Proxy`（与 `Delegation` 区分）并列为优先考察候选，允许替代、重组或放弃既有路径。

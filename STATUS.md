@@ -20,9 +20,9 @@ updated: 2026-11-23
 
 ### CURRENT NEXT — 2026-11-23 作者授权切换至 `R3` 理论骨架共创与逐条裁决（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 整合总报告与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地。2026-11-23 作者正式启动 `R3` 深度共创协作，完成 `R3-01` 阶段性收敛候选（见 [`Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md`](Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md)）并明确授权将 `CURRENT NEXT` 切换至 `R3`。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地。2026-11-23 作者正式启动 `R3` 深度共创协作，确认归档 `R3-01` 阶段性研究检查点（作者原话与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md)，整理稿见 [`Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md`](Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md)）并明确授权将 `CURRENT NEXT` 切换至 `R3`。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
 >
-> **冲突优先级**：本节是截至 2026-11-23 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+> **冲突优先级**：本节是截至 2026-11-23 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
@@ -30,18 +30,18 @@ CURRENT NEXT (single active execution focus)
 = SRT-wide author-led skeleton co-construction & adjudication, NOT canonical rewrite or science experiment;
 
 CURRENT AUTHOR DIRECTION
-= R1 早期笔记：价值提炼、修正/优化/补齐 [DONE / #1145 merged]
-  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [DONE / #1145 merged]
+= R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145，遗留语义/未合入 PR/封存验证集带入 R3/R4]
+  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145，遗留问题带入 R3/R4]
   -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN [ACTIVE NOW]
   -> R4 canonical：依据审定骨架分 owner 重构 [PENDING R3 CLOSURE]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01 阶段性收敛候选已归档（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md，6项核心 OPEN 保持开放）
-  -> 下一步进入 R3-02：跨尺度统一理论的“非换名检验”（围绕“垂直切分 -> 规则硬化 -> 脱离与多维摩擦”正面对照 Whitehead / Simondon / 协同学 / 自由能原理，并核准三阶撤回标准）
+= R3-01 已形成阶段性研究检查点（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md；原初 Selection 非循环判准等 6 项核心问题仍保持 OPEN，不等于已通过理论总闸）
+  -> 下一步进入 R3-02：探索跨尺度生成关系及其相对于成熟竞争理论（Whitehead / Simondon / 协同学 / 自由能原理等）的实际增量，并核准三阶撤回标准（允许替代、重组或放弃既有候选路径；将“垂直切分 -> 规则硬化 -> 脱离与多维摩擦”与 2026-07-12 跨尺度装配 / 归一化 / Proxy(≠Delegation) / 局部可选择性下降->整体新能力涌现并列为优先考察候选）
   -> 随后沿 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 依次推进 R3-03..R3-08 与前置工程项 ENG-01..ENG-04;
 
-ACTIVE NOW = R3 理论骨架作者共创（R3-01 阶段性收敛候选 -> 进入 R3-02）;
+ACTIVE NOW = R3 理论骨架作者共创（R3-01 阶段性检查点 -> 进入 R3-02 开放跨尺度探索）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
