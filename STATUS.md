@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-10-09
+updated: 2026-11-23
 ---
 
 # SRT 当前状态仪表盘
@@ -18,40 +18,38 @@ updated: 2026-10-09
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-22 作者五阶段重构决策（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-23 作者授权切换至 `R3` 理论骨架共创与逐条裁决（唯一当前执行入口）
 
-> **最新作者来源 / Gemini handoff**：`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`。作者明确设定「早期笔记价值回流 → 仓库散落材料整合 → 骨架方向/原则修订 → canonical 重构 → 领域延伸、研究验证、出版」的总体次序。此处只调整仓库**当前工作优先级和接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 整合总报告与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地。2026-11-23 作者正式启动 `R3` 深度共创协作，完成 `R3-01` 阶段性收敛候选（见 [`Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md`](Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md)）并明确授权将 `CURRENT NEXT` 切换至 `R3`。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
 >
-> **冲突优先级**：本节是截至 2026-11-22 的单一 live `CURRENT NEXT`。下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 是当时的历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+> **冲突优先级**：本节是截至 2026-11-23 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R2 全仓材料—理论关系整合（先核对 R1 早期笔记主批次的合入收口）
-= SRT-wide source/material/theory reconciliation, NOT a new science experiment;
+= R3 理论骨架作者深度参与共创与逐条裁决（按 R3-01..R3-08 议程推进）
+= SRT-wide author-led skeleton co-construction & adjudication, NOT canonical rewrite or science experiment;
 
 CURRENT AUTHOR DIRECTION
-= R1 早期笔记：价值提炼、修正/优化/补齐
-  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系
-  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN
-  -> R4 canonical：依据审定骨架分 owner 重构
-  -> R5 各领域延伸、形式化/实证检验与出版;
+= R1 早期笔记：价值提炼、修正/优化/补齐 [DONE / #1145 merged]
+  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [DONE / #1145 merged]
+  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN [ACTIVE NOW]
+  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING R3 CLOSURE]
+  -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= 核对 R1 主要裁决与相关重构成果是否已合入 merged main
-  -> 对尚未合入的作者来源 / PR 仅登记候选与差异
-  -> 按“理论问题”而非“文件清单”梳理 R2 的来源/现有 owner/价值/重复/冲突/OPEN
-  -> 交付 R2 整合图 + R3 骨架候选分歧与作者待裁决问题;
+= R3-01 阶段性收敛候选已归档（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md，6项核心 OPEN 保持开放）
+  -> 下一步进入 R3-02：跨尺度统一理论的“非换名检验”（围绕“垂直切分 -> 规则硬化 -> 脱离与多维摩擦”正面对照 Whitehead / Simondon / 协同学 / 自由能原理，并核准三阶撤回标准）
+  -> 随后沿 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 依次推进 R3-03..R3-08 与前置工程项 ENG-01..ENG-04;
 
-ACTIVE NOW = R1 交接核对 + R2 归并分析（同一 CURRENT NEXT）;
-R3 = 下一阶段的作者骨架裁决准备，不自动进入 canonical 改写;
-R4/R5 = 后续规划，不因列入路线而提前启用;
+ACTIVE NOW = R3 理论骨架作者共创（R3-01 阶段性收敛候选 -> 进入 R3-02）;
+R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
-§10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / other HOLD
+§10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / CN-2 E2 / 1B sim / DATA-ACCESS-0 = NO-GO / other HOLD
 = UNCHANGED; no blanket release;
 ```
 
-**给 Gemini 的第一轮执行指令**：先按 `AGENTS.md §Session Start` 完成 bootstrap，读上面的作者决策文件，并从 **merged `main`** 复核 2026-11-18 Q01–Q15 历史整合及相关未合并 PR 的实际落地差额。再沿 `_SRT_CONTEXT_ROUTER.md`、`_SRT_DEEP_THEORY_MAP.md`、`Operations/_SRT_MATERIAL_LOG.md` 等已有入口做 R2 主题归并。每项记录作者原意/机器建议/外部证据、权威 owner、现有主张与新材料关系、需要改什么及哪些需要作者再裁决；输出 R2 汇总和 R3 骨架待定方案。**本轮不另开 Q08/Q09 仿真、不因重构愿景解冻实验/跨域深井、不自动把历史猜想写成 canonical。** 原有认知 CURRENT NEXT 是研究历史，不是抹除研究结果。
+**当前 `R3` 执行口径**：遵循作者深度参与的 `R3` 理论协作原则——以作者正在形成的理论判断为中心，把现行 canonical 视为比较基线而非不可挑战答案，主动提供有解释力的候选机制、严厉的内部批判与成熟理论压力测试；**任何 canonical 改写均留待 `R3` 充分裁决并获 `R4` 单独授权后执行**。不另开未授权仿真，不解冻任何既有 `HOLD`。
 
 ---
 
@@ -106,6 +104,8 @@ CANONICAL TRUNK FOLLOW-UP SYNC = COMPLETE / FURTHER OWNER CLEANUP PAUSED BY DEFA
 Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_FACING_V03_POST_REVIEW_CORRECTIVE_2026-09-27.md
 #1078 Facing v0.3 corrective implementation = AUTHOR-ACCEPTED NONCANONICAL METHOD + ROUTING REPAIR PACKAGE
 #1078 role = BLIND-FIRST FR-AUTH + AUTHOR CLAIM-PROMOTION GUARD + GRADED INDEPENDENT FR-ADV + SINGLE CURRENT NEXT ROUTING CLOSURE
+#1145 R1-R2 full reconstruction consolidation report + R3 skeleton adjudication agenda = MERGED / 25721de51
+#1145 role = NONCANONICAL R1/R2 CONSOLIDATION & R3 AGENDA BASELINE; R3-01 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
