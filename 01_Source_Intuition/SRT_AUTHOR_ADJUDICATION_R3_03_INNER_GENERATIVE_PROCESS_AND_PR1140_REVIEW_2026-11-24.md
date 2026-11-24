@@ -47,12 +47,12 @@ tags: [AuthorAdjudication, R3, R3-03, InnerGenerativeProcess, Feeling, Cognition
 
 ## 2. PR `#1140`（2026-11-11 原初内在感受性源材料）正式二轮审查结论
 
-依据 [`SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md`](../Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md#L71-L75) 的 `R3-03 #1` 硬审查门，本轮对 Draft PR `#1140`（`author/feeling-cognition-actualisation-20261111`：`01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md`）完成了正式二轮理论审查，裁定处置如下：
+依据 [`SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md`](../Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md#L71-L75) 的 `R3-03 #1` 硬审查门，本轮对 Draft PR `#1140`（分支 `author/feeling-cognition-actualisation-20261111`，审查固定提交版本 `4af028a2ab4fa898775b58040b053d5a98fe24d7`，历史作者源文件固定链接：[SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md](https://github.com/zyx1st-png/SRT-Pub/blob/4af028a2ab4fa898775b58040b053d5a98fe24d7/01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md)）完成了正式二轮理论审查，裁定处置如下：
 
 1. **完整保留历史原话**：不改写、不删节 2026-11-11 对话中作者的原始表达（包括“比较与实际化”“具身能量梯度式差异感知”“感觉—认知—实现”“最深层无脚手架的感觉是一种神性”及当时对“原初内在感受性”的 B 倾向），保持真实理论演进溯源；
-2. **明确二轮口径校准**：依据 2026-11-24 作者最新两项原话裁决，将 `#1140` 中的“原初内在感受性”正式校准为：**原初 `Selection` 保留的是“内在生成过程”（内生且具位置参与性，不可被外部第三人称模型穷尽，不将成熟感觉或微观心理体验倒写进原初层），而“感觉”是这一内在生成过程在认知位置上的实际展开与参与**；
-3. **与旧线及 `HP-B` 的兼容性结论**：此校准同时守住了 `2026-09-06` 原初路线（`without primitive phenomenality`，不预设原初成熟现象性或微粒泛心论）与 `#1140` 的反纯第三人称还原方向，并维持 [`Philosophy/SRT_HardProblem_Epistemology.md`](../Philosophy/SRT_HardProblem_Epistemology.md) 中 `B_s != B_p` 与 `HP-B OPEN` 不变；
-4. **PR `#1140` 自身合并边界**：本轮仅在 `R3-03` 文档中正式登记上述二轮审查结论；为 PR `#1140` 文件补充指向本二轮裁决的指针及其后续是否作为历史源材料合并，均**另行单独处理**（不在本 PR 中直接修改或合并 `#1140`）。
+2. **明确二轮口径校准**：依据 2026-11-24 作者最新两项原话裁决，将 `#1140` 中的“原初内在感受性”正式校准为：**原初 `Selection` 保留的是“内在生成过程”（内生且具位置参与性，不将成熟感觉或微观心理体验倒写进原初层），而“感觉”是这一内在生成过程在认知位置上的实际展开与参与**；
+3. **与旧线及 `HP-B` 的候选兼容性结论**：严格区分 `2026-09-06` 原始约束 `without primitive phenomenality`（无原初现象性）与“无原初成熟现象性”——本轮裁决已确立“原初生成具有内在过程”和“感觉属于认知位置上的实际展开”，但**内在生成过程是否包含任何前现象性质仍明确保留为 `OPEN`**（不新增本体实体，建立与 `2026-09-06` 旧线的**候选兼容性**而非宣告旧版哲学张力已全部消除），并维持 [`Philosophy/SRT_HardProblem_Epistemology.md`](../Philosophy/SRT_HardProblem_Epistemology.md) 中 `B_s != B_p` 与 `HP-B OPEN` 不变；
+4. **PR `#1140` 自身合并边界**：本轮仅在 `R3-03` 文档中正式登记上述二轮审查结论与固定版本锚点；为 PR `#1140` 文件补充指向本二轮裁决的指针及其后续是否作为历史源材料合并，均**另行单独处理**（不在本 PR 中直接修改或合并 `#1140`）。
 
 ---
 
@@ -77,7 +77,7 @@ tags: [AuthorAdjudication, R3, R3-03, InnerGenerativeProcess, Feeling, Cognition
    - **意识硬问题（`HP-B`）与现象性成立条件**：为何以及在何种组织条件下，特定垂直生成结构与有限位置关系会伴随第一人称在场与具体感受质（`qualia`）；
    - **因果排除问题（Kim）的最后硬刺**：现象体验**作为体验本身**（而不仅是其对应的物理/结构垂直组织实现）是否具有非冗余的独立因果效力；
    - **意识区别于无意识层级认知的充要条件**：“生成关系与所在位置之间的关系”及各项候选组织特征能否给出非循环的意识区分判据；
-   - **“内在生成过程”的本体论正面边界**：在保留“内生性 + 位置参与性”的前提下，如何与一般物理学内生动力学过程作出清晰非换名区分，同时避免偷渡微粒泛心论；
+   - **“内在生成过程”的本体论正面边界与前现象性质问题**：在保留“内生性 + 位置参与性”的前提下，如何与一般物理学内生动力学过程作出清晰非换名区分，以及**内在生成过程是否包含任何前现象性质**（与 `2026-09-06` `without primitive phenomenality` 之间的残余张力保持 `OPEN`，不新增本体实体）；
    - **跨位置相对独立与共同生成的本体论成立条件**及 `One` 形成门槛（移交 `R3-04` 主攻）；
    - **`R4` 阶段 `Core_Law` 因果闭合措辞的具体复审范围**（是否混入物理本体穷尽性主张，留待 `R4` 逐 owner 核查）；
    - **神性双面表述的最终统一方式**（`#1140` 有限位置直接生成性视角 vs `R3-02` 跨尺度从存在到秩序倾向视角）；
