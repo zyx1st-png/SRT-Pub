@@ -18,9 +18,9 @@ updated: 2026-11-24
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-24 `R3` 理论骨架共创持续推进（`R3-02` 阶段性检查点 → `R3-03`，唯一当前执行入口）
+### CURRENT NEXT — 2026-11-24 `R3` 理论骨架共创持续推进（`R3-03` 阶段性检查点 → `R3-04`，唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 阶段性检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地。2026-11-24 作者正式确认归档 **`R3-02` 阶段性研究检查点**（作者原话与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_2026-11-24.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_2026-11-24.md)，整理稿见 [`Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md`](Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md)），正式核准三阶撤回标准并确立“共同生成性母体 + 跨主体/跨时间/跨层次共同协议研究目标 + 双向跨尺度研究循环”主轴，授权将 `CURRENT IMMEDIATE TASK` 推进至 **`R3-03`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地；`R3-02` 共同生成性母体、共同协议与三阶撤回标准已于 `#1147`（`5f3bdf40b`）合并落地。2026-11-24 作者正式确认归档 **`R3-03` 阶段性研究检查点**（作者两项核心原话裁决、2026-11-11 原初内在感受性源材料二轮审查结论与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_03_INNER_GENERATIVE_PROCESS_AND_PR1140_REVIEW_2026-11-24.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_03_INNER_GENERATIVE_PROCESS_AND_PR1140_REVIEW_2026-11-24.md)，整理稿见 [`Operations/Proposals/SRT_R3_03_INNER_GENERATIVE_PROCESS_PROVISIONAL_CONVERGENCE_2026-11-24.md`](Operations/Proposals/SRT_R3_03_INNER_GENERATIVE_PROCESS_PROVISIONAL_CONVERGENCE_2026-11-24.md)），并授权将 `CURRENT IMMEDIATE TASK` 推进至 **`R3-04`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、意识证明、实证成功或自动解冻。
 >
 > **冲突优先级**：本节是截至 2026-11-24 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
@@ -37,11 +37,11 @@ CURRENT AUTHOR DIRECTION
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md）与 R3-02（Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md）已形成阶段性研究检查点（正式核准三阶撤回标准，确立“共同生成性母体 + 跨主体/跨时间/跨层次共同协议研究目标 + 双向跨尺度研究循环”主轴；R3-01 原有 6 项与 R3-02 新增 7 项核心 OPEN 均显式保持开放，六项原初属性候选不提前冻结）
-  -> 下一步进入 R3-03：围绕共同生成主轴研究“共同生成性、跨位置关系与原初内向面”的关系，并执行原议程硬审查项（2026-11-11 原初内在感受性源材料工作包正式二轮审查、A1-乙 与 without primitive phenomenality / HP-B OPEN 的兼容边界、形成后同一具身系统内双向约束与因果闭合边界）
-  -> 随后围绕 R3-02 共同生成主轴、并完整承接 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 原议程硬审查债，依次推进 R3-04..R3-08 与前置工程项 ENG-01..ENG-04;
+= R3-01（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md）、R3-02（Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md）与 R3-03（Operations/Proposals/SRT_R3_03_INNER_GENERATIVE_PROCESS_PROVISIONAL_CONVERGENCE_2026-11-24.md）已形成阶段性研究检查点（确立“原初内在生成过程 + 感觉为认知位置上的实际展开与参与 + 意识与认知的垂直生成 + 双平行抽取与高阶垂直背景约束”，并完成 2026-11-11 原初内在感受性源材料工作包正式二轮审查；HP-B、体验的非冗余因果效力及 R3-01/R3-02/R3-03 全部 OPEN 继续显式保持开放）
+  -> 下一步进入 R3-04：围绕共同生成主轴研究“垂直组织如何形成新的相对独立存在位置（One）与承载者（Bearer）”，并完整承接原议程硬审查项（维持 One + P + E -> Bearer 法定主路由、B1-甲 中膜与 B3-b 微效价的 P2/P3 过渡定位、ε_pg/κ_0 继承门与物理双层/生命三层膜边界、以及 Bearer <-> Agency / Consciousness / Concern 的必要性方向裁决）
+  -> 随后围绕共同生成主轴、并完整承接 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 原议程硬审查债，依次推进 R3-05..R3-08 与前置工程项 ENG-01..ENG-04;
 
-ACTIVE NOW = R3 理论骨架作者共创（R3-01/R3-02 阶段性检查点 -> 进入 R3-03 共同生成性与原初内向面 / 2026-11-11 源材料二轮审查）;
+ACTIVE NOW = R3 理论骨架作者共创（R3-01..R3-03 阶段性检查点 -> 进入 R3-04 垂直组织形成 One 与 Bearer）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -107,7 +107,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1145 R1-R2 full reconstruction consolidation report + R3 skeleton adjudication agenda = MERGED / 25721de51
 #1145 role = NONCANONICAL R1/R2 CONSOLIDATION & R3 AGENDA BASELINE
 #1146 R3-01 provisional convergence candidate + author source trace + STATUS CURRENT NEXT switch to R3 = MERGED / 3cfaf9450
-#1146 role = NONCANONICAL R3-01 CHECKPOINT & R3 ACTIVATION; R3-02 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md
+#1146 role = NONCANONICAL R3-01 CHECKPOINT & R3 ACTIVATION
+#1147 R3-02 cross-scale generative matrix convergence + shared protocol + three-tier withdrawal standard + STATUS advance to R3-03 = MERGED / 5f3bdf40b
+#1147 role = NONCANONICAL R3-02 CHECKPOINT & UNIFIED GENERATIVE AXIS; R3-03 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_03_INNER_GENERATIVE_PROCESS_PROVISIONAL_CONVERGENCE_2026-11-24.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
