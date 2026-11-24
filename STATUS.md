@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # SRT 当前状态仪表盘
@@ -18,11 +18,11 @@ updated: 2026-11-23
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-23 作者授权切换至 `R3` 理论骨架共创与逐条裁决（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-24 `R3` 理论骨架共创持续推进（`R3-02` 阶段性检查点 → `R3-03`，唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地。2026-11-23 作者正式启动 `R3` 深度共创协作，确认归档 `R3-01` 阶段性研究检查点（作者原话与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_01_CONVERGENCE_AND_STATUS_SWITCH_2026-11-23.md)，整理稿见 [`Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md`](Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md)）并明确授权将 `CURRENT NEXT` 切换至 `R3`。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 阶段性检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地。2026-11-24 作者正式确认归档 **`R3-02` 阶段性研究检查点**（作者原话与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_2026-11-24.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_2026-11-24.md)，整理稿见 [`Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md`](Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md)），正式核准三阶撤回标准并确立“共同生成性母体 + 跨主体/跨时间/跨层次共同协议研究目标 + 双向跨尺度研究循环”主轴，授权将 `CURRENT IMMEDIATE TASK` 推进至 **`R3-03`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、实证成功或自动解冻。
 >
-> **冲突优先级**：本节是截至 2026-11-23 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+> **冲突优先级**：本节是截至 2026-11-24 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
@@ -37,11 +37,11 @@ CURRENT AUTHOR DIRECTION
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01 已形成阶段性研究检查点（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md；原初 Selection 非循环判准等 6 项核心问题仍保持 OPEN，不等于已通过理论总闸）
-  -> 下一步进入 R3-02：探索跨尺度生成关系及其相对于成熟竞争理论（Whitehead / Simondon / 协同学 / 自由能原理等）的实际增量，并核准三阶撤回标准（允许替代、重组或放弃既有候选路径；将“垂直切分 -> 规则硬化 -> 脱离与多维摩擦”与 2026-07-12 跨尺度装配 / 归一化 / Proxy(≠Delegation) / 局部可选择性下降->整体新能力涌现并列为优先考察候选）
-  -> 随后沿 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 依次推进 R3-03..R3-08 与前置工程项 ENG-01..ENG-04;
+= R3-01（Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md）与 R3-02（Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md）已形成阶段性研究检查点（正式核准三阶撤回标准，确立“共同生成性母体 + 跨主体/跨时间/跨层次共同协议研究目标 + 双向跨尺度研究循环”主轴；R3-01 原有 6 项与 R3-02 新增 7 项核心 OPEN 均显式保持开放，六项原初属性候选不提前冻结）
+  -> 下一步进入 R3-03：围绕共同生成主轴研究“共同生成性、跨位置关系与原初内向面”的关系，并执行原议程硬审查项（2026-11-11 原初内在感受性源材料工作包正式二轮审查、A1-乙 与 without primitive phenomenality / HP-B OPEN 的兼容边界、形成后同一具身系统内双向约束与因果闭合边界）
+  -> 随后围绕 R3-02 共同生成主轴、并完整承接 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 原议程硬审查债，依次推进 R3-04..R3-08 与前置工程项 ENG-01..ENG-04;
 
-ACTIVE NOW = R3 理论骨架作者共创（R3-01 阶段性检查点 -> 进入 R3-02 开放跨尺度探索）;
+ACTIVE NOW = R3 理论骨架作者共创（R3-01/R3-02 阶段性检查点 -> 进入 R3-03 共同生成性与原初内向面 / 2026-11-11 源材料二轮审查）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -49,7 +49,7 @@ PR MERGE / canonical writes / experiment / preregistration / publication
 = UNCHANGED; no blanket release;
 ```
 
-**当前 `R3` 执行口径**：遵循作者深度参与的 `R3` 理论协作原则——以作者正在形成的理论判断为中心，把现行 canonical 视为比较基线而非不可挑战答案，主动提供有解释力的候选机制、严厉的内部批判与成熟理论压力测试；**任何 canonical 改写均留待 `R3` 充分裁决并获 `R4` 单独授权后执行**。不另开未授权仿真，不解冻任何既有 `HOLD`。
+**当前 `R3` 执行口径**：遵循作者深度参与的 `R3` 理论协作原则与 `R3-02` 确立的**双向跨尺度研究循环**——以作者正在形成的理论判断为中心，把现行 canonical 视为比较基线而非不可挑战答案，主动提供有解释力的候选机制、严厉的内部批判与成熟理论压力测试；**任何 canonical 改写均留待 `R3` 充分裁决并获 `R4` 单独授权后执行**。不另开未授权仿真，不解冻任何既有 `HOLD`。
 
 ---
 
@@ -105,7 +105,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1078 Facing v0.3 corrective implementation = AUTHOR-ACCEPTED NONCANONICAL METHOD + ROUTING REPAIR PACKAGE
 #1078 role = BLIND-FIRST FR-AUTH + AUTHOR CLAIM-PROMOTION GUARD + GRADED INDEPENDENT FR-ADV + SINGLE CURRENT NEXT ROUTING CLOSURE
 #1145 R1-R2 full reconstruction consolidation report + R3 skeleton adjudication agenda = MERGED / 25721de51
-#1145 role = NONCANONICAL R1/R2 CONSOLIDATION & R3 AGENDA BASELINE; R3-01 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_01_PRIMITIVE_SELECTION_PROVISIONAL_CONVERGENCE_2026-11-23.md
+#1145 role = NONCANONICAL R1/R2 CONSOLIDATION & R3 AGENDA BASELINE
+#1146 R3-01 provisional convergence candidate + author source trace + STATUS CURRENT NEXT switch to R3 = MERGED / 3cfaf9450
+#1146 role = NONCANONICAL R3-01 CHECKPOINT & R3 ACTIVATION; R3-02 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_PROVISIONAL_CONVERGENCE_2026-11-24.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
