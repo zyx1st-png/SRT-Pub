@@ -18,9 +18,9 @@ updated: 2026-11-24
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-24 `R3` 理论骨架共创持续推进（`R3-04` 阶段性检查点 → `R3-05`，唯一当前执行入口）
+### CURRENT NEXT — 2026-11-24 `R3` 理论骨架共创持续推进（`R3-05` 阶段性检查点 → `R3-06`，唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地；`R3-02` 共同生成性母体、共同协议与三阶撤回标准已于 `#1147`（`5f3bdf40b`）合并落地；`R3-03` 原初内在生成过程、认知与意识垂直展开及 2026-11-11 原初内在感受性源材料二轮审查已于 `#1148`（`2a06b66fd`）合并落地。2026-11-24 作者正式确认归档 **`R3-04` 阶段性研究检查点**（作者原话裁决与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_04_ONE_BEARER_EXISTENCE_ORDER_2026-11-24.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_04_ONE_BEARER_EXISTENCE_ORDER_2026-11-24.md)，整理稿见 [`Operations/Proposals/SRT_R3_04_ONE_BEARER_EXISTENCE_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md`](Operations/Proposals/SRT_R3_04_ONE_BEARER_EXISTENCE_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md)），并授权将 `CURRENT IMMEDIATE TASK` 推进至 **`R3-05`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、意识证明、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地；`R3-02` 共同生成性母体、共同协议与三阶撤回标准已于 `#1147`（`5f3bdf40b`）合并落地；`R3-03` 原初内在生成过程、认知与意识垂直展开及 2026-11-11 原初内在感受性源材料二轮审查已于 `#1148`（`2a06b66fd`）合并落地；`R3-04` 存在与秩序一体、`One / Bearer` 双面重定位（含 `R4` 前过渡引用规则与 `P/E` 语义保真）、脚手架维持与原议程四项硬债闭环已于 `#1149`（`5bfceee29`）合并落地。2026-11-24 作者正式确认归档 **`R3-05` 阶段性研究检查点**（作者原话裁决与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_05_TIME_HISTORY_TRUST_ORDER_2026-11-24.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_05_TIME_HISTORY_TRUST_ORDER_2026-11-24.md)，整理稿见 [`Operations/Proposals/SRT_R3_05_TIME_HISTORY_TRUST_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md`](Operations/Proposals/SRT_R3_05_TIME_HISTORY_TRUST_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md)），并授权将 `CURRENT IMMEDIATE TASK` 推进至 **`R3-06`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、物理时间证明、实证成功或自动解冻。
 >
 > **冲突优先级**：本节是截至 2026-11-24 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
@@ -37,11 +37,11 @@ CURRENT AUTHOR DIRECTION
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01..R3-03 检查点与 R3-04（Operations/Proposals/SRT_R3_04_ONE_BEARER_EXISTENCE_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md）已形成阶段性研究检查点（确立“存在与秩序一体 + 多单元前背景自发协作与脚手架双功能 + One/Bearer 同一垂直组织存在与秩序双面重定位 + P/E 回归分别研究的组织属性且保留现行 Spine §8 为强承载基线 + 四类边界/三类生成关系/跨尺度递归 + B1-甲中膜实现候选/B3-b微效价2C/Agency五维/ε_pg-κ_0与物理三态门槛 OPEN”；上游 20 项与 R3-04 新增 7 项 OPEN 全部显式保持开放）
-  -> 下一步进入 R3-05：围绕共同生成主轴与“存在—秩序”框架研究“生成关系与历史如何跨时间延续、沉积并参与秩序的维持、发展与重构（为何部分历史成为生成性脚手架、另一些成为固化势阱）”，并完整承接原议程硬审查项（三层时间接口 τ_ontic / P1-T02 t_onto / t_exp 与符号表 R4 边界、保持 Spine §11 L2 普遍定义不变并在适用模型中分离非负痕迹密度 ρ>=0 / 有符号信任重估 Δw_trust / 跨主体关系权重接口 W_social、以及 B3-a 被排开者三分与主动遗忘二式）
-  -> 随后围绕共同生成主轴、并完整承接 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 原议程硬审查债，依次推进 R3-06..R3-08 与前置工程项 ENG-01..ENG-04;
+= R3-01..R3-04 检查点与 R3-05（Operations/Proposals/SRT_R3_05_TIME_HISTORY_TRUST_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md）已形成阶段性研究检查点（确立“时间作为秩序的关系度量与多单位对比标尺（横向+纵向统一）+ 度量脚手架双向生成参与候选 + 七项时间接口分离与 t_onto R4 译名修订边界 + 历史作为当下持续生成效力（不以已成 One 为前提）与前背景五种交叠条件性去向（含 B3-a）+ 适用模型下 ρ>=0 / Δw_trust / W_social 三分 + 背景化非必遗忘与历史调用四种调整方式（承接主动遗忘二式）”；上游 27 项与 R3-05 新增 7 项 OPEN 全部显式保持开放）
+  -> 下一步进入 R3-06：先围绕共同生成主轴回答根问题（“既然所有生成方向同源于共同生成性，为什么对特定生成位置不同方向具有不同价值重量？价值究竟是原初生成性本身的择优倾向，还是生成方向相对于特定垂直组织形成的关系属性，抑或同源而在不同组织条件下的表现？”），再完整承接原议程硬审查债（d_canonical 梯度范数与 d_stakes 谱参与率的数学对账债务、构成深度 q 以 C_i+非替代双测试+ρ+w_trust 的残差检验、N2 客体性≠客观性与多维可推翻客观性落点、以及是否/何时满足解除 RQ-2026-08-A02 符号禁运条件）
+  -> 随后围绕共同生成主轴、并完整承接 Operations/Proposals/SRT_R3_SKELETON_ADJUDICATION_AGENDA_2026-11-22.md 原议程硬审查债，依次推进 R3-07..R3-08 与前置工程项 ENG-01..ENG-04;
 
-ACTIVE NOW = R3 理论骨架作者共创（R3-01..R3-04 阶段性检查点 -> 进入 R3-05 时间、历史与秩序的维持、发展与重构）;
+ACTIVE NOW = R3 理论骨架作者共创（R3-01..R3-05 阶段性检查点 -> 进入 R3-06 关切、价值与构成深度）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -111,7 +111,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1147 R3-02 cross-scale generative matrix convergence + shared protocol + three-tier withdrawal standard + STATUS advance to R3-03 = MERGED / 5f3bdf40b
 #1147 role = NONCANONICAL R3-02 CHECKPOINT & UNIFIED GENERATIVE AXIS
 #1148 R3-03 inner generative process convergence + PR #1140 formal second-round review + STATUS advance to R3-04 = MERGED / 2a06b66fd
-#1148 role = NONCANONICAL R3-03 CHECKPOINT & PR #1140 SECOND-ROUND REVIEW; R3-04 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_04_ONE_BEARER_EXISTENCE_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md
+#1148 role = NONCANONICAL R3-03 CHECKPOINT & PR #1140 SECOND-ROUND REVIEW
+#1149 R3-04 existence-order unity + One/Bearer dual-aspect reframing + P1-01/P2-02..P2-04 calibrations + STATUS advance to R3-05 = MERGED / 5bfceee29
+#1149 role = NONCANONICAL R3-04 CHECKPOINT & EXISTENCE-ORDER UNITY; R3-05 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_05_TIME_HISTORY_TRUST_ORDER_PROVISIONAL_CONVERGENCE_2026-11-24.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
