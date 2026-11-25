@@ -24,6 +24,8 @@ tags: [ENG02, Audit, Assimilation, EA1-EA5, Reconciliation, ActiveLayer, R4Hando
 # `ENG-02` 活跃理论吸收台账与正文/检索路径对账审计（`2026-11-25`）
 
 > **目标与治理边界（`canonical: false`）：** 本轮 `ENG-02` 从 `main@04dfe961d`（PR `#1155` 合并后）启动，以**理论正文、检索路径与吸收台账的真实一致性**为唯一目标，**不以提高节点完成率为目标**。**内容同步核查**与**台账刷新**严格分开验收；凡涉及实质理论语义修改或 canonical / Freeze-A 文件改写的真实缺口，一律保持诚实阻塞状态并移交 `R4`，本轮不修改任何 canonical 正文或理论桥接正文，不解除任何既有 `HOLD`、`63` 项 `OPEN` 或 `25` 条封存 `validation_holdout`。
+>
+> **状态时间边界（`P2-02`）**：本报告与台账中的 **`active_complete` 仅表示既有登记增量在当前运行结构中的结构吸收完成，不表示 `R3` 新裁决（`R3-01..R3-08` 与总收口）已完成 `R4` canonical 回写**。凡涉及 `R3` 新骨架重塑的节点（包括 `NODE-T-DIR` 与 `NODE-SUBJECTHOOD`），仍须按 `Wave R4-1..R4-4` 接受重构。
 
 ---
 
@@ -72,4 +74,17 @@ tags: [ENG02, Audit, Assimilation, EA1-EA5, Reconciliation, ActiveLayer, R4Hando
 | Axis A: `engineered_not_active` | 1 | **1** | `NODE-BOOK-BACKFLOW` 诚实保持，仅消除 `EA-3` 路由 `WARN` |
 | Axis A: `author_gate` | 1 | **1** | `NODE-D-VALUE` 禁运不变 |
 | Axis B: `robustly_observed (bounded)` / `effectively_assimilated` | 3 / 3 | **3 / 3** | **零虚增**；本轮不开展或宣称任何新 Axis B 运行 |
-| `check_active_theory_assimilation.py` 报告问题数 | 1 WARN | **0 WARN** | `NODE-BOOK-BACKFLOW` `_SRT_CONTEXT_ROUTER.md#19` 路由已闭环 |
+| `check_active_theory_assimilation.py` 报告问题数 | 1 WARN | **0 WARN** | 收紧 `EA-3 / EA-4` 校验后，一并补齐 `NODE-BOOK-BACKFLOW` 与 3 处暴露的 `_SRT_DEEP_THEORY_MAP.md` 导航遗漏 |
+
+---
+
+## 4. `EA-3 / EA-4` 检查器收紧与暴露的历史假阳性处置（`P1-01 / P1-02 / P2-01`）
+
+1. **`G3` 历史快照与现行规则一致性修复（`P1-01`）**：[`scripts/build_srt_context_bundles.py`](../../scripts/build_srt_context_bundles.py) `guard_hooks()` 保留 `2026-07-25` 历史审计表与分组，但同步修订标题、`affected`、解释段与 `USAGE POLICY`，明确历史表不自动等同于当前仍未落地，现行状态以各 hook 实时 `landing_ledger` 与目标 owner 正文为准，彻底消除与 `NODE-T-DIR`（`2026-08-11` 已落地）的口径矛盾。
+2. **`EA-3 / EA-4` 检查器假阳性修复与全量复核（`P1-02`）**：
+   - [`scripts/check_active_theory_assimilation.py`](../../scripts/check_active_theory_assimilation.py) 收紧 `EA-3` 为**仅在指定路由章节及其下属子节内检查目标文件名**（不再全文件搜索），收紧 `EA-4` 为**仅扫描真实上下文包 `SRT_CONTEXT_BUNDLE_*.md`（排除 `README.md`）并要求命中 `## FILE: \`<path>\`` 正文块**（防止未收录清单、索引或 `G5` 提及被误判为已装载）；并在 [`scripts/test_check_active_theory_assimilation.py`](../../scripts/test_check_active_theory_assimilation.py) 补入 4 项反例回归测试。
+   - 收紧后对全部 16 个节点重跑实查：**全部 `16/16` `EA-4` 与全部 `14/14` `_SRT_CONTEXT_ROUTER.md` 锚点均无假阳性**；但在 [`_SRT_DEEP_THEORY_MAP.md`](../../_SRT_DEEP_THEORY_MAP.md) 暴露出 **3 处真实历史 `EA-3` 导航遗漏**：
+     - `NODE-NEURAL-DECODABILITY`（`_SRT_DEEP_THEORY_MAP.md#8`）：原只列 `SRT_Neural_Mechanisms.md`，未列 `SRT_Neural_Mechanisms_CompactCore.md`、`_SRT_Neuroscience_Hardening_Index.md` 与 `SRT_Neuroscience_Claim_Status.md` → 本轮已在 `§8 Support files` 补齐（纯导航，不改理论正文）；
+     - `NODE-PHYSICS-MEASUREMENT`（`_SRT_DEEP_THEORY_MAP.md#11`）：原只列长文 `SRT_Quant_01_Selection.md`，未列 `SRT_Quant_01_Selection_CompactCore.md`、`SRT_Physics_Claim_Status.md` 与 `REP01` 补丁 → 本轮已在 `§11 Primary / Support files` 补齐；
+     - `NODE-SOCIAL-L2`（`_SRT_DEEP_THEORY_MAP.md#12`）：原未列 `SRT_Soc_03_Institutions.md`、`Core_Law/SRT_Collective_Selection.md` 与 `SRT_Political_Philosophy_CompactCore.md` → 本轮已在 `§12 Primary files` 补齐。
+3. **`§8a` 查询条件分流（`P2-01`）**：在 [`_SRT_CONTEXT_ROUTER.md §8a`](../../_SRT_CONTEXT_ROUTER.md#L269-L288) 顶部增补物体个体化负对照 vs Agency / Subjecthood / S5–S6 门槛的条件分流，并将 `SRT_Philosophy_Agency_Subjecthood_v0_2.md` 与 `SRT_Subjecthood_Threshold_Interface.md` 升入 `§8a Primary`（注明 `canonical: false`）。

@@ -270,15 +270,17 @@ When answering or editing a non-simple SRT question:
 
 **Use when the query mentions**: object individuation, object identification, object tracking, object index, infant object representation, `still this one`, minimal subject, bearer individuation, subjecthood negative control, agency synthesis, controlled transition-readiness, responsibility-position trace, S5 agency, S6 responsibility gate.
 
+> **查询分流（ENG-02）**：涉及**物体个体化 / 识别前跟踪 / 主体性负对照**时，先读 `Philosophy/_SRT_Philosophy_Hardening_Index.md`（§ PH-IND01）与 `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md`；涉及**能动性综合 / 责任位置 / S5–S6 主体门槛**时，直接读 `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`（`canonical: false`）与 `Philosophy/SRT_Subjecthood_Threshold_Interface.md`，不必绕行物体识别负对照。
+
 ### Primary
 
-- `Philosophy/_SRT_Philosophy_Hardening_Index.md`（§ PH-IND01 object / subject individuation bridge）
+- `Philosophy/_SRT_Philosophy_Hardening_Index.md`（§ PH-IND01 object / subject individuation bridge；物体个体化与主体性负对照入口）
+- `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`（`canonical: false`；S5 能动性综合与 S5→S6 责任位置桥接入口，不替代 canonical 定义）
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`（S0–S6 主体与归责门槛接口）
 
 ### Secondary
 
 - `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md`
-- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
-- `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`（`canonical: false`；S5 能动性综合与 S5→S6 责任位置桥接，不替代 canonical 定义）
 - `Core_Law/SRT_Individuation.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`（use when objectification / coarse-graining / Bearer boundary / reflective gate-objectification enter the question）
 

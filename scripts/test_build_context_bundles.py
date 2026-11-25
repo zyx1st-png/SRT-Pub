@@ -75,6 +75,10 @@ def test_hook_grouping() -> None:
     check("G3 does not claim all three partials share one blocker",
           "三张 partial 的共同阻塞点" not in rendered)
     check("G3 names Occlusion_Dynamics in the grouping", "Occlusion_Dynamics" in rendered)
+    check("P1-01 G3 does not unconditionally assert historical table targets remain unabsorbed",
+          "回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写" not in rendered)
+    check("P1-01 G3 policy routes current absorption check to live landing_ledger",
+          "landing_ledger" in B.guard_hooks().policy and "2026-07-25" in B.guard_hooks().policy)
 
 
 # --------------------------------------------------------------------------
@@ -142,6 +146,8 @@ def test_guard_active_theory_schema() -> None:
           "`NODE-CHOICE-GENERATION`" not in extract_text)
     check("G5 reports non-zero active_complete count",
           re.search(r"(?<!\d)0 个达到 `active_complete`", g.interpretation) is None)
+    check("P2-02 G5 clarifies active_complete does not mean R3 rulings landed in canonical",
+          "不表示 `R3` 新裁决已完成 `R4` canonical 回写" in g.interpretation)
 
 
 # --------------------------------------------------------------------------
