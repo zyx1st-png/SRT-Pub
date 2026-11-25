@@ -266,9 +266,9 @@ When answering or editing a non-simple SRT question:
 
 ---
 
-## 8a. Route: Object Individuation / Identification / Subjecthood Negative Control
+## 8a. Route: Object Individuation / Identification / Subjecthood & Agency Synthesis
 
-**Use when the query mentions**: object individuation, object identification, object tracking, object index, infant object representation, `still this one`, minimal subject, bearer individuation, subjecthood negative control.
+**Use when the query mentions**: object individuation, object identification, object tracking, object index, infant object representation, `still this one`, minimal subject, bearer individuation, subjecthood negative control, agency synthesis, controlled transition-readiness, responsibility-position trace, S5 agency, S6 responsibility gate.
 
 ### Primary
 
@@ -278,6 +278,7 @@ When answering or editing a non-simple SRT question:
 
 - `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md`
 - `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+- `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`（`canonical: false`；S5 能动性综合与 S5→S6 责任位置桥接，不替代 canonical 定义）
 - `Core_Law/SRT_Individuation.md`
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`（use when objectification / coarse-graining / Bearer boundary / reflective gate-objectification enter the question）
 
@@ -648,6 +649,7 @@ When answering or editing a non-simple SRT question:
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/philosophical_style_rules.md`
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_precision_pass_2026-05-10.md`
+- `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md`（`canonical: false`；书稿术语表→理论层对账与未回流候选登记，非定义源）
 - relevant current chapter files under `01_Source_Intuition/BOOK/Drafts_26Q/`
 - relevant formal anchors only as accuracy guardrails
 
@@ -856,6 +858,7 @@ Do not reconstruct a second competing classification for that period.
 - Do **not** claim the toy wedge validates SRT ontology or morality, or infer equal moral status for all objects.
 - Do **not** use this route to derive or override AM-A's P0-04 primitive boundary, nor to solve closure-boundary or externalization/X.
 - Keep three layers separate: ontology (objecthood as maintained consequence-bearing reselectable closure), dynamics (reward/performance can diverge from future reselectability), morality/governance (moral pressure opens when one position's selection compresses another's reselectability, but X/externalization remains under-defined).
+- For S5 agency synthesis and S0–S6 subjecthood threshold interfaces (`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`, `Philosophy/SRT_Subjecthood_Threshold_Interface.md`), use §8a rather than parked incubation files.
 - For the reviewed 07-28 -> 08-10 ChoiceMap segment, concern–path-space wording, or support-vs-replacement provenance, consult §20 conditionally.
 
 ---

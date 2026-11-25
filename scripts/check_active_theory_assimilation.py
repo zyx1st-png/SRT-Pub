@@ -273,13 +273,13 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     needle = compact or (owners[0] if owners else "")
     bundle_loaded = bool(needle) and any(needle in text for text in bundles.values())
 
-    # --- EA-5: behavior regression tests ---
+    # --- Axis B prerequisite: behavior regression tests ---
     suites = regression_suites(node)
     n_tests, empty_suites = count_regression_tests(suites)
     for rel in empty_suites:
         problems.append(f"regression suite declares no items (no `## T-NN` blocks, no `suite_items:`): {rel}")
 
-    # --- EA-4: old-formulation handling ---
+    # --- EA-5: old-formulation handling (JSON Axis A numbering; historical 2026-08-06 audit called this EA-4) ---
     # `n/a` is ambiguous between "assessed, nothing was superseded" and "nobody
     # looked", so it does not count. A node with no superseded formulation must
     # say so explicitly with `none-required: <reason>`.

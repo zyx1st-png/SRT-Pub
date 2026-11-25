@@ -142,6 +142,11 @@ DOMAINS = {
             "Philosophy/SRT_Social_Economics_CompactCore.md",
             "Philosophy/SRT_Political_Philosophy_CompactCore.md",
         ],
+        # ENG-02 (2026-11-25): NODE-SUBJECTHOOD EA-4 default domain load (canonical: false;
+        # kept out of COMPACTCORE since this is a domain bridge synthesis, not a CompactCore).
+        "bridges": [
+            "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md",
+        ],
     },
     "Neuroscience": {
         "title": "神经科学领域",
@@ -407,7 +412,7 @@ def all_inputs() -> list[str]:
         *active_theory_compacts(),
     ]
     for cfg in DOMAINS.values():
-        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"], *cfg.get("bridges", [])]
     return sorted(set(files))
 
 
@@ -687,7 +692,11 @@ def guard_hooks() -> Guardrail:
             "| 阻塞目标 | hook 数 | hooks |\n|---|---:|---|\n" + grouped + "\n\n"
             f"三张 pending 的 target 文档 `{planned.group(1)}` 从未创建。"
             "改 canonical 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，"
-            "须作者授权，ledger 记 `blocked_by: canonical freeze`。"
+            "须作者授权，ledger 记 `blocked_by: canonical freeze`。\n\n"
+            "注：上表抽取自 `2026-07-25` 历史闭环审计快照；各 hook 实时落地状态以对应 hook 的 "
+            "`landing_ledger` 与 `scripts/check_hooks.py` 为准（其中 `PH_AG02` / `PH_AG03` 对 "
+            "`_SRT_T_DIR_CANONICAL.md` 的负面判据补注已于 `2026-08-11` 落地，两张 hook 仍为 `partial` "
+            "仅因停驻的 ChoiceMap 孵化目标保持 `pending`）。"
         ),
         policy=(
             "- 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。\n"
@@ -1402,17 +1411,19 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
     }
     for key, cfg in DOMAINS.items():
         name = f"SRT_CONTEXT_BUNDLE_DOMAIN_{key.upper()}.md"
+        bridges = cfg.get("bridges", [])
         plan.append(
             (
                 f"领域 {key}", name,
                 f"SRT-CONTEXT-BUNDLE-DOMAIN-{key.upper()}-{prov.generated}",
                 f"SRT {cfg['title']}上下文包",
-                [*cfg["guards"], *cfg["nav"], *cfg["cores"]],
+                [*cfg["guards"], *cfg["nav"], *cfg["cores"], *bridges],
                 SPINE_POINTER,
                 "domain",
             )
         )
-        purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航与 CompactCore 主线。"
+        bridge_suffix = "与非 canonical 领域桥接综合层" if bridges else ""
+        purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航、CompactCore 主线{bridge_suffix}。"
 
     results = []
     for label, name, bid, title, files, note, kind in plan:

@@ -2,7 +2,8 @@
   "schema_version": 1,
   "manifest_id": "SRT-ACTIVE-THEORY-NODES",
   "generated_for": "Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md",
-  "updated": "2026-08-07",
+  "reconciled_by": "Operations/Audits/SRT_ENG02_ACTIVE_THEORY_ASSIMILATION_RECONCILIATION_2026-11-25.md",
+  "updated": "2026-11-25",
   "canonical": false,
   "role": "Hand-maintained list of SRT theory nodes and where each one actually lives on the AI-active retrieval surface. Read by scripts/check_active_theory_assimilation.py and scripts/build_srt_context_bundles.py. This file routes and records; it never defines.",
   "nodes": [
@@ -69,7 +70,7 @@
       "old_text_handled": "none-required: the node's active content is long-standing canonical; the pending increment (GOV-SUB01 deletion test) has never been executed, so nothing has been superseded.",
       "author_gates": [],
       "next_step": "GOV-SUB01 deletion test for the selection primitive has never been executed; residue register stays UNASSIGNED. No regression tests exist.",
-      "notes": "Well routed and bundled; capped at partially_active only by the missing EA-5 layer.",
+      "notes": "Well routed and bundled; Axis A structural_assimilation is active_complete while Axis B behavioral_availability remains untested (ENG-02 cleared obsolete 2026-08-06 'missing EA-5' note).",
       "active_complete_blockers": [],
       "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
@@ -167,15 +168,12 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#3",
-      "old_text_handled": "n/a",
-      "author_gates": [
-        "Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization"
-      ],
-      "next_step": "PH_AG02 and PH_AG03 writebacks to _SRT_T_DIR_CANONICAL.md remain unlanded; bundle guardrail G3 already reports this.",
-      "active_complete_blockers": [
-        "EA-2: PH_AG02/PH_AG03 increments adjudicated but not written into _SRT_T_DIR_CANONICAL.md (0 matches for their content)"
-      ],
-      "structural_assimilation": "partially_active",
+      "old_text_handled": "none-required: PH_AG02/PH_AG03 negative-criterion notes (2026-08-11) tightened _SRT_T_DIR_CANONICAL.md §3.1 evidence boundaries without superseding Def-T-1; Part II bridge cleanup is deferred to R4 (Wave R4-2).",
+      "author_gates": [],
+      "next_step": "ENG-02 (2026-11-25) verified PH_AG02 and PH_AG03 negative-criterion writebacks already landed in _SRT_T_DIR_CANONICAL.md L129-132 on 2026-08-11 (only the parked ChoiceMap incubation target remains pending in their hook ledgers). Axis B remains untested; Wave R4-2 handles Part II bridge cleanup and broad-concern vs T_dir separation.",
+      "notes": "Hook_Closure_Audit_2026-07-25.md predated the 2026-08-11 landing into _SRT_T_DIR_CANONICAL.md. Ledger refreshed in ENG-02 without modifying canonical text.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []
@@ -196,9 +194,9 @@
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "next_step": "Ghost source-intuition cards (nonclosure pressure, yin-yang object friction, U5 correction) are archived only and have never been compressed into propositions for this node.",
+      "next_step": "ENG-02 (2026-11-25) confirmed 0 matches for the three ghost source cards in Core_21_Minimal_Axioms.md and _SRT_SYMBOL_TABLE.md (Reference_Dynamics §1 only holds G_hat_theta != primitive Selection). Deferred to R4 (Wave R4-1..R4-3 per R3-08) plus Axis B bounded verification.",
       "active_complete_blockers": [
-        "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md)"
+        "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md); handed off to R4 (R3-08)"
       ],
       "structural_assimilation": "partially_active",
       "behavioral_availability": "untested",
@@ -215,19 +213,17 @@
         "Core/SRT_Core_21b_Constitutive_Theorems.md"
       ],
       "compact_layer": null,
-      "router_anchor": "_SRT_CONTEXT_ROUTER.md#23",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#8a",
       "deep_map_anchor": null,
-      "bundle": false,
+      "bundle": true,
       "regression_tests": null,
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#5",
-      "old_text_handled": "n/a",
+      "old_text_handled": "SRT_Philosophy_Agency_Subjecthood_v0_2.md §1 explicitly downgrades the older linear agency ladder to simplified navigation; former P1-T07 demotion is carried by Core_21b ST-A and bundle guardrail G1.",
       "author_gates": [],
-      "next_step": "Agency owner is not in any context bundle; four PH_AG patches landed there but the file is unreachable by default load. Route 23 points primarily at parked incubation files.",
-      "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1.",
-      "active_complete_blockers": [
-        "EA-4: Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md appears in 0 of 8 context bundles"
-      ],
-      "structural_assimilation": "partially_active",
+      "next_step": "ENG-02 (2026-11-25) bundled Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md (canonical: false) into DOMAIN_PHILOSOPHY and updated _SRT_CONTEXT_ROUTER.md#8a. Axis B remains untested; Bearer <-> Agency necessity (R3-04), O2-A accountability (R3-07), and PH_SEM01 -> Occlusion_Dynamics remain deferred to R4.",
+      "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1. Agency_Subjecthood_v0_2 stays canonical: false and is loaded in DOMAIN_PHILOSOPHY without duplicating into COMPACTCORE.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []
@@ -348,9 +344,9 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
       "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
       "author_gates": [],
-      "next_step": "T-E bridge itself still awaits first-hand physics evidence cards and cross-domain support/counterexamples; only its stratification verdict has reached the active layer.",
+      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still carries only G2 stratification (0 matches for T-E §2 substrate/mechanism/sufficiency three-way distinction). Kept honestly at partially_active; fast-layer compression handed off to R4 (Wave R4-4 Physics/Bridge) alongside T-E physics evidence cards.",
       "active_complete_blockers": [
-        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches)"
+        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches); handed off to R4 (Wave R4-4)"
       ],
       "structural_assimilation": "partially_active",
       "behavioral_availability": "untested",
@@ -405,9 +401,9 @@
       "open_tension": null,
       "old_text_handled": "Partly: the CBP-3/CBP-4 outsourcing-chain distinction now reaches the active layer via the selection-event compact and regression test T-08.",
       "author_gates": [],
-      "next_step": "The SEA institutional paired audits and the coding manual remain Operations-only; the method-paper strategy is a candidate and the reliability pilot is deferred.",
+      "next_step": "ENG-02 (2026-11-25) confirmed 0 matches for SEA protocol / coding manual in SRT_Soc_03_Institutions.md and Core_Law/SRT_Collective_Selection.md. Kept honestly at partially_active without modifying canonical files; handed off to R4 (Wave R4-3 Collective_Selection).",
       "active_complete_blockers": [
-        "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md"
+        "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md; handed off to R4 (Wave R4-3)"
       ],
       "structural_assimilation": "partially_active",
       "behavioral_availability": "untested",
@@ -434,9 +430,9 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#12",
       "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for a selection to occur) now reaches the active layer via the compact section 6 and regression test T-11.",
       "author_gates": [],
-      "next_step": "T-B process layer and the pain/distress/suffering typology interface are still only in the bridge; the suffering typology has no compact layer.",
+      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still lacks T-B §2 process chain and §5 pain/distress/suffering typology interface. Kept honestly at partially_active; fast-layer compression handed off to R4 (Wave R4-3 Suffering / Bridge sync).",
       "active_complete_blockers": [
-        "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore"
+        "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore; handed off to R4 (Wave R4-3)"
       ],
       "structural_assimilation": "partially_active",
       "behavioral_availability": "untested",
@@ -458,9 +454,9 @@
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "next_step": "The sync bridge classifies seven candidate term groups. Two (micro-valence, pre-trimming) have reached _SRT_D_VALUE_CANONICAL.md. Three (third-state agency, three-way fate of the displaced, three self-check questions) exist only in the book, the bridge, and exported Output files.",
+      "next_step": "ENG-02 (2026-11-25) added 03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md to _SRT_CONTEXT_ROUTER.md#19 (closing the EA-3 route warning) and confirmed 0 matches for 第三态能动性 / 被排开者去向三分 / 自检三问 in Core_Law/, Core/, and Philosophy/. Kept honestly at engineered_not_active; substantive landing handed off to R4 (Wave R4-2 / R4-4 per R3-05/08).",
       "active_complete_blockers": [
-        "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all"
+        "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all; handed off to R4 (Wave R4-2 / R4-4)"
       ],
       "structural_assimilation": "engineered_not_active",
       "behavioral_availability": "untested",
