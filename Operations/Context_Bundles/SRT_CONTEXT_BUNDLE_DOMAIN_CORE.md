@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-11-22
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-11-25
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-22
-source_commit: 7b00a3bc1
-source_branch: HEAD
+generated: 2026-11-25
+source_commit: e9c0fafc9
+source_branch: eng/eng-01-spine-bundle-layering-2026-11-25
 source_dirty: false
-inputs_digest: d21170115fd5e00e
+inputs_digest: 04a78cc8cf5b1240
 ---
 
 # SRT 核心动力学上下文包
@@ -26,14 +26,14 @@ inputs_digest: d21170115fd5e00e
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-22 |
-| 来源 commit | `7b00a3bc1` |
-| 来源分支 | `HEAD` |
+| 生成日期 | 2026-11-25 |
+| 来源 commit | `e9c0fafc9` |
+| 来源分支 | `eng/eng-01-spine-bundle-layering-2026-11-25` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
-> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）、全部正文文件与 `SPINE §0.5` 索引抽取源（`Core_22` / `Core_21c`）的联合内容摘要。`--check` 重算并比对该摘要，
 > 因此改动其中任何一项都会被发现。
 >
 > `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
@@ -151,39 +151,36 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 - 不要把 planned-but-never-created 的 target 当作已存在的文件引用。
 
 
-### G5 — 多数理论节点未进入活跃层；进入的也未经行为验证（严重度：中）
+### G5 — 部分理论节点未进入活跃层；已进入的多数仍未经有界重复行为验证（严重度：中）
 
-**受影响**：下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上
+**受影响**：下表所列节点；未达到 `effectively_assimilated` 的节点在默认读取路径上仍存在结构或行为验证缺口
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**来自 `Operations/Audits/data/srt_active_theory_nodes.json`（逐条抽取 `assimilation_status` 非 `effectively_assimilated` 的节点）**：
+**来自 `Operations/Audits/data/srt_active_theory_nodes.json`（逐条抽取派生状态非 `effectively_assimilated` 的节点）**：
 
 > | node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |
 > |---|---|---|---|---|
-> | `NODE-CHOICE-GENERATION` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-SELECTION-ONTOLOGY` |  |  | — | — |
-> | `NODE-L0-L1-L2` |  |  | — | — |
-> | `NODE-D-VALUE` |  |  | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
-> | `NODE-PSI-F` |  |  | — | — |
-> | `NODE-T-DIR` |  |  | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
-> | `NODE-GHOST-OPERATOR` |  |  | — | — |
-> | `NODE-SUBJECTHOOD` |  |  | — | — |
-> | `NODE-CONSCIOUSNESS` |  |  | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
-> | `NODE-AI-REASONING` |  |  | `AI/SRT_AI_Architecture_CompactCore.md` | — |
-> | `NODE-NEURAL-DECODABILITY` |  |  | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
-> | `NODE-LIFE-DISSIPATIVE` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-PHYSICS-MEASUREMENT` |  |  | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` |  |  | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` |  |  | — | — |
+> | `NODE-SELECTION-ONTOLOGY` | active_complete | untested | — | — |
+> | `NODE-L0-L1-L2` | active_complete | untested | — | — |
+> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-PSI-F` | active_complete | untested | — | — |
+> | `NODE-T-DIR` | partially_active | untested | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
+> | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
+> | `NODE-SUBJECTHOOD` | partially_active | untested | — | — |
+> | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
+> | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
+> | `NODE-SOCIAL-L2` | partially_active | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` | engineered_not_active | untested | — | — |
 
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：0 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
-- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 0 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：8 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 3 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
@@ -197,7 +194,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 #### USAGE POLICY — 使用规则
 
-*授权依据：`Operations/Audits/data/srt_active_theory_nodes.json` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`*
+*授权依据：`Operations/Audits/data/srt_active_theory_nodes.json` 的 `derived_status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`*
 
 - 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；先按清单的 `active_owners` 去取。
 - `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。
@@ -286,7 +283,7 @@ For substantive SRT answers:
 
 ### 未收录支持文件
 
-**Registry §C priority 点名、文件存在、但本包未收（19 个）**——回答涉及它们时本包不足以裁定：
+**Registry §C priority 点名、文件存在、但本包未收（19 个）**——回答涉及它们时本包不足以单独裁定（已显式分流条目附去向）：
 
 - `CANONICAL_REGISTRY.md`
 - `Core_Law/SRT_Generative_Ontology_Spine.md`
@@ -299,10 +296,10 @@ For substantive SRT answers:
 - `_SRT_T_DIR_CANONICAL.md`
 - `_SRT_CROSS_DOMAIN_MATRIX.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
-- `Core/SRT_Core_22_Equations.md`
+- `Core/SRT_Core_22_Equations.md` — 已拆至独立 `FORMAL` 路线（`Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`）；默认 `SPINE` §0.5 保留方程目录索引与检索指针
 - `Core/SRT_Core_21_Minimal_Axioms.md`
 - `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md` — 已移至按需桥接层（P2/P3/P4，按需直接读仓库原文件）；默认 `SPINE` §0.5 保留 B01–B14 条目标引与检索指针
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 - `Core_Law/SRT_Reference_Dynamics.md`
 - `AI/SRT_AI_01_Ontology.md`
@@ -315,7 +312,7 @@ For substantive SRT answers:
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
 **registry 提及、文件存在、但本包未收（97 个）**——多为领域主轴、
-展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
+展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
 
@@ -419,16 +416,16 @@ For substantive SRT answers:
 
 </details>
 
-
 ---
 
 
-> **注意**：本包**不含** canonical 骨架（`d` / `Ψ_f` / `T_dir` 定义、核心公理、
-> 主方程、符号表），因此**仅凭本包不得裁定任何 SRT 术语的定义**。
+> **注意**：本包**不含** canonical 定义骨架（`Spine` / `L0` / `One Formation` / `d` / `Ψ_f` / `T_dir` 定义、
+> `P0/P1` 核心公理、符号表），亦**不含** `Core_22` 主方程正文，因此**仅凭本包不得裁定任何 SRT 术语的定义**。
 >
 > 需要裁定定义时，请**改用骨架路线**——新开一次对话，只装
-> `SRT_CONTEXT_BUNDLE_SPINE.md`。**不要在本包之上再叠加骨架包**：两者合计会超出
-> 上下文预算（见 `README.md` 的预算表）。两条路线互斥，是切换关系，不是叠加关系。
+> `SRT_CONTEXT_BUNDLE_SPINE.md`（其 §0.5 亦提供主方程索引与按需桥接指针）；
+> 需要查阅 `Core_22` 主方程正文时，请改用独立形式方程路线 `SRT_CONTEXT_BUNDLE_FORMAL.md`。
+> **不要在本包之上再叠加骨架包**：叠加会稀释注意力或超出上下文预算（见 `README.md` 的预算表）。各路线互斥，是切换关系，不是叠加关系。
 
 
 
