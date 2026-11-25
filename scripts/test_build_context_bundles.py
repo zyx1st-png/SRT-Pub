@@ -75,6 +75,10 @@ def test_hook_grouping() -> None:
     check("G3 does not claim all three partials share one blocker",
           "三张 partial 的共同阻塞点" not in rendered)
     check("G3 names Occlusion_Dynamics in the grouping", "Occlusion_Dynamics" in rendered)
+    check("P1-01 G3 does not unconditionally assert historical table targets remain unabsorbed",
+          "回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写" not in rendered)
+    check("P1-01 G3 policy routes current absorption check to live landing_ledger",
+          "landing_ledger" in B.guard_hooks().policy and "2026-07-25" in B.guard_hooks().policy)
 
 
 # --------------------------------------------------------------------------
@@ -141,7 +145,9 @@ def test_guard_active_theory_schema() -> None:
     check("G5 excludes robustly_observed bounded active_complete nodes from gap table",
           "`NODE-CHOICE-GENERATION`" not in extract_text)
     check("G5 reports non-zero active_complete count",
-          "0 个达到 `active_complete`" not in g.interpretation)
+          re.search(r"(?<!\d)0 个达到 `active_complete`", g.interpretation) is None)
+    check("P2-02 G5 clarifies active_complete does not mean R3 rulings landed in canonical",
+          "不表示 `R3` 新裁决已完成 `R4` canonical 回写" in g.interpretation)
 
 
 # --------------------------------------------------------------------------
@@ -420,7 +426,9 @@ def test_loadouts_have_no_duplicate_sources() -> None:
                 "FORMAL": list(B.FORMAL),
                 "COMPACTCORE": [f for c in B.DOMAINS.values() for f in c["cores"]]}
     for key, cfg in B.DOMAINS.items():
-        contents[f"DOMAIN_{key.upper()}"] = [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+        contents[f"DOMAIN_{key.upper()}"] = [
+            *cfg["guards"], *cfg["nav"], *cfg["cores"], *cfg.get("bridges", [])
+        ]
 
     for label, keys, _ in B.RECOMMENDED_LOADOUTS:
         seen: dict[str, int] = {}
@@ -512,6 +520,7 @@ def test_layered_routing_and_structural_retrieval_reachability() -> None:
         formal_text = (out / B.FORMAL_BUNDLE_NAME).read_text(encoding="utf-8")
         compact_text = (out / "SRT_CONTEXT_BUNDLE_COMPACTCORE.md").read_text(encoding="utf-8")
         domain_ai_text = (out / "SRT_CONTEXT_BUNDLE_DOMAIN_AI.md").read_text(encoding="utf-8")
+        domain_phil_text = (out / "SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md").read_text(encoding="utf-8")
         readme_text = (out / "README.md").read_text(encoding="utf-8")
 
         # 3a. P1-01: G5 声明必须与当前包实际 Manifest 一致
@@ -519,6 +528,7 @@ def test_layered_routing_and_structural_retrieval_reachability() -> None:
             ("SPINE", spine_text),
             ("FORMAL", formal_text),
             ("DOMAIN_AI", domain_ai_text),
+            ("DOMAIN_PHILOSOPHY", domain_phil_text),
         ]:
             check(f"P1-01 G5[{label}]: 不误称本包额外装载了清单跨域快速层",
                   "本包按清单额外装载了以下" not in txt
@@ -526,6 +536,14 @@ def test_layered_routing_and_structural_retrieval_reachability() -> None:
         if B.active_theory_compacts():
             check("P1-01 G5[COMPACTCORE]: 如实声明本包额外装载了清单跨域快速层",
                   "本包按清单额外装载了以下跨域快速层" in compact_text)
+
+        # 3a-2. ENG-02: NODE-SUBJECTHOOD 桥接综合层进入 DOMAIN_PHILOSOPHY（canonical: false），不混入 COMPACTCORE
+        check("ENG-02[NODE-SUBJECTHOOD]: Agency_Subjecthood_v0_2 纳入 DOMAIN_PHILOSOPHY",
+              "## FILE: `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`" in domain_phil_text)
+        check("ENG-02[NODE-SUBJECTHOOD]: Agency_Subjecthood_v0_2 保持非 canonical 标识",
+              "| canonical(字段) | false |" in domain_phil_text)
+        check("ENG-02[NODE-SUBJECTHOOD]: Agency_Subjecthood_v0_2 不混入 COMPACTCORE",
+              "## FILE: `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`" not in compact_text)
 
         # 3b. [1/4] One Formation 结构性可达
         check("结构可达[One Formation]: SPINE 含完整正文块",

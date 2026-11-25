@@ -227,6 +227,9 @@ How can SRT core concepts be hardened into modelable structures?
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `Neuroscience/SRT_Neural_Mechanisms.md`
+- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
+- `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 - `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`
 
@@ -300,12 +303,15 @@ How does physical measurement, decoherence, and cosmology interface with SRT sel
 ### Primary files
 
 - `Physics/_SRT_Phys_Bridge.md`
+- `Physics/SRT_Physics_Claim_Status.md`
 - `Physics/SRT_Quant_00_Intro.md`
 - `Physics/SRT_Quant_01_Selection.md`
+- `Physics/SRT_Quant_01_Selection_CompactCore.md`
 - `Physics/SRT_Physics_Cosmology_CompactCore.md`
 
 ### Support files
 
+- `Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`
 - `graphify-out/wiki/Measurement_as_Selection.md`
 - `graphify-out/wiki/Quantum_Darwinism_Equivalence.md`
 - `graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md`
@@ -328,6 +334,9 @@ How do language, shared intentionality, social cognition, institutions, and norm
 - `Philosophy/SRT_Social_Cognition.md`
 - `Philosophy/SRT_Social_Economics.md`
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
+- `Philosophy/SRT_Political_Philosophy_CompactCore.md`
+- `Philosophy/SRT_Soc_03_Institutions.md`
+- `Core_Law/SRT_Collective_Selection.md`
 - `Philosophy/SRT_Social_MacroDynamics.md`
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
 - `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`

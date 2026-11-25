@@ -74,7 +74,7 @@ def run() -> None:
         write(root, "Tensions.md", "## 3. A tension\n")
         write(root, "Tests.md", "\n".join(f"## T-{i:02d} · case\n" for i in range(1, 13)))
 
-        good_bundles = {"B.md": "... Compact.md ..."}
+        good_bundles = {"SRT_CONTEXT_BUNDLE_TEST.md": "## FILE: `Compact.md`\n\n# compact\n"}
         empty_bundles: dict[str, str] = {}
 
         # 1. Everything present -> clean, and the full bar is met.
@@ -89,6 +89,25 @@ def run() -> None:
         write(root, "Router.md", "## 7. Route: something else\n\n- `Unrelated.md`\n")
         row = mod.check_node(base_node(), good_bundles)
         expect("route names nothing", row["problems"], "names none of the node's files")
+
+        # 2b. P1-02 counterexample (EA-3): target appears ONLY in an unrelated sibling
+        #     section (`## 9.`), NOT under the declared `Router.md#7` section.
+        write(
+            root,
+            "Router.md",
+            "## 7. Route: unrelated\n\n- `Unrelated.md`\n\n## 9. Route: other\n\n- `Compact.md`\n- `Owner.md`\n",
+        )
+        row = mod.check_node(base_node(), good_bundles)
+        expect("EA-3 cross-section false positive rejected", row["problems"], "names none of the node's files")
+
+        # 2c. P1-02 positive (EA-3): target appears inside a subsection (`### Secondary`) of `## 7.`.
+        write(
+            root,
+            "Router.md",
+            "## 7. Route: test\n\n### Primary\n- `Other.md`\n\n### Secondary\n- `Compact.md`\n\n## 8. Next\n",
+        )
+        row = mod.check_node(base_node(), good_bundles)
+        expect("EA-3 subsection mention accepted", row["problems"], None)
         write(root, "Router.md", "## 7. Route: test\n\n- `Compact.md`\n- `Owner.md`\n")
 
         # 3. Anchor number must match exactly: `#3` must not be satisfied by `## 31`.
@@ -100,6 +119,32 @@ def run() -> None:
         # 4. Bundled nowhere -> cannot claim the structural bar.
         row = mod.check_node(base_node(), empty_bundles)
         expect("unbundled", row["problems"], "no default load path reads it")
+
+        # 4b. P1-02 counterexample (EA-4): file path appears ONLY in §0.4 unbundled manifest,
+        #     §0.5 offloaded index, G5 gap table, or prose reference — NOT as a `## FILE:` body block.
+        mention_only_bundles = {
+            "SRT_CONTEXT_BUNDLE_SPINE.md": (
+                "### G5\n| `NODE-TEST` | partially_active | untested | `Compact.md` | — |\n"
+                "### 未收录支持文件\n- `Compact.md`\n"
+                "### §0.5 索引\n| `Eq-1` | `Compact.md#L10` |\n"
+            )
+        }
+        row = mod.check_node(base_node(), mention_only_bundles)
+        expect("EA-4 mention-only rejected for active_complete", row["problems"], "no default load path reads it")
+        expect("EA-4 mention-only rejected for bundle:true", row["problems"], "manifest says bundle: true")
+
+        # 4c. P1-02 counterexample (EA-4): bundle_files() must ignore README.md even if it names a FILE block.
+        old_bundle_dir = mod.BUNDLE_DIR
+        try:
+            mod.BUNDLE_DIR = root / "Operations" / "Context_Bundles"
+            write(root, "Operations/Context_Bundles/README.md", "## FILE: `Compact.md`\n")
+            if mod.bundle_files():
+                FAILURES.append("EA-4 bundle_files() must ignore README.md")
+            write(root, "Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md", "## FILE: `Compact.md`\n")
+            if list(mod.bundle_files()) != ["SRT_CONTEXT_BUNDLE_SPINE.md"]:
+                FAILURES.append(f"EA-4 bundle_files() expected only SRT_CONTEXT_BUNDLE_SPINE.md, got {list(mod.bundle_files())}")
+        finally:
+            mod.BUNDLE_DIR = old_bundle_dir
 
         # 5. THE LOAD-BEARING CASE. A written suite is not a result: claiming a
         #    behavior verdict without recorded evidence must be rejected, even

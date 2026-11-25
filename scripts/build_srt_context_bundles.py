@@ -142,6 +142,11 @@ DOMAINS = {
             "Philosophy/SRT_Social_Economics_CompactCore.md",
             "Philosophy/SRT_Political_Philosophy_CompactCore.md",
         ],
+        # ENG-02 (2026-11-25): NODE-SUBJECTHOOD EA-4 default domain load (canonical: false;
+        # kept out of COMPACTCORE since this is a domain bridge synthesis, not a CompactCore).
+        "bridges": [
+            "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md",
+        ],
     },
     "Neuroscience": {
         "title": "神经科学领域",
@@ -407,7 +412,7 @@ def all_inputs() -> list[str]:
         *active_theory_compacts(),
     ]
     for cfg in DOMAINS.values():
-        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"], *cfg.get("bridges", [])]
     return sorted(set(files))
 
 
@@ -673,26 +678,35 @@ def guard_hooks() -> Guardrail:
 
     return Guardrail(
         gid="G3",
-        title="存在已裁决但未落地的回写",
+        title="历史 hook 闭环快照（2026-07-25）与现行未落地回写核验",
         severity="中",
-        affected="下表所列各阻塞目标对应的主文；相关正文在本包中是不完整的",
+        affected="2026-07-25 历史快照所列阻塞目标；仅当对应 hook 实时 `landing_ledger` 仍为 `pending` 时，目标正文才仍未吸收该笔回写",
         extracts=[
             (
-                f"来自 `{src}` 的 partial / pending 行（逐字）",
+                f"来自 `{src}` 的 2026-07-25 历史审计快照 partial / pending 行（逐字，不代表当前实时状态）",
                 "| Hook | 声明状态 | 实际 | 判定 |\n|---|---|---|---|\n" + table,
             )
         ],
         interpretation=(
-            "按**阻塞目标**分组如下（分组由脚本从上表解析得出，非手写摘要）：\n\n"
-            "| 阻塞目标 | hook 数 | hooks |\n|---|---:|---|\n" + grouped + "\n\n"
-            f"三张 pending 的 target 文档 `{planned.group(1)}` 从未创建。"
+            "按 `2026-07-25` 历史审计快照的**阻塞目标**分组如下（分组由脚本从上表解析得出，非手写摘要）：\n\n"
+            "| 阻塞目标（2026-07-25 快照） | hook 数 | hooks |\n|---|---:|---|\n" + grouped + "\n\n"
+            f"三张 pending 的 target 文档 `{planned.group(1)}` 至今从未创建。"
             "改 canonical 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，"
-            "须作者授权，ledger 记 `blocked_by: canonical freeze`。"
+            "须作者授权，ledger 记 `blocked_by: canonical freeze`。\n\n"
+            "**历史快照 vs 实时状态分界**：上表是 `2026-07-25` 闭环审计快照，不自动等同于当前仍未落地。"
+            "逐张 hook 的实时落地状态以对应 hook 文件 frontmatter 的 `landing_ledger` 与 "
+            "`scripts/check_hooks.py` 为准——其中 `PH_AG02` / `PH_AG03` 对 `_SRT_T_DIR_CANONICAL.md` "
+            "的负面判据补注已于 `2026-08-11` 落地（见 `_SRT_T_DIR_CANONICAL.md §3.1`，两张 hook 仍为 "
+            "`partial` 仅因停驻的 ChoiceMap 孵化目标保持 `pending`）；`PH_SEM01 -> Core_Law/SRT_Occlusion_Dynamics.md` "
+            "及三张 Physics planned target 则仍未落地。"
         ),
         policy=(
-            "- 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。\n"
+            "- 上表为 `2026-07-25` 历史快照，**不得仅凭该历史表无条件断言某目标当前仍未落地**；"
+            "判断现行吸收状态须核对对应 hook 的实时 `landing_ledger` 与目标 owner 正文。\n"
+            "- 仅当对应 hook 的实时 `landing_ledger` 对该目标仍记为 `pending`（如 `PH_SEM01 -> Core_Law/SRT_Occlusion_Dynamics.md`）时，"
+            "按对应正文尚未吸收该笔回写处理。\n"
             "- 各阻塞目标彼此独立：不要把某一目标的缺口范围套用到另一个上。\n"
-            "- 不要把 planned-but-never-created 的 target 当作已存在的文件引用。"
+            "- 不要把 planned-but-never-created 的 target（如 `Physics/SRT_Physics_Bridge_v0_2.md`）当作已存在的文件引用。"
         ),
         policy_source="`Governance/SRT_EDIT_PROTOCOL.md`（C 类编辑）与 `Operations/_SRT_MATERIAL_PIPELINE.md` §5.6.1（ledger 契约）",
     )
@@ -798,7 +812,8 @@ def guard_active_theory(current_files: list[str] | None = None) -> Guardrail:
         interpretation=(
             f"清单共 {len(nodes)} 个节点。状态分**两个轴**，不可合并读：\n\n"
             f"- **Axis A（结构）**：{len(complete_all)} 个达到 "
-            "`active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。\n"
+            "`active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，"
+            "**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。\n"
             f"- **Axis B（行为）**：**{len(assimilated)} 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），"
             f"{len(complete_observed_only)} 个为 `observed`（尚缺重复有界运行），"
             f"其余 {len(complete_untested)} 个结构完整的节点是 `untested`：**没有任何证据表明"
@@ -1402,17 +1417,19 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
     }
     for key, cfg in DOMAINS.items():
         name = f"SRT_CONTEXT_BUNDLE_DOMAIN_{key.upper()}.md"
+        bridges = cfg.get("bridges", [])
         plan.append(
             (
                 f"领域 {key}", name,
                 f"SRT-CONTEXT-BUNDLE-DOMAIN-{key.upper()}-{prov.generated}",
                 f"SRT {cfg['title']}上下文包",
-                [*cfg["guards"], *cfg["nav"], *cfg["cores"]],
+                [*cfg["guards"], *cfg["nav"], *cfg["cores"], *bridges],
                 SPINE_POINTER,
                 "domain",
             )
         )
-        purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航与 CompactCore 主线。"
+        bridge_suffix = "与非 canonical 领域桥接综合层" if bridges else ""
+        purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航、CompactCore 主线{bridge_suffix}。"
 
     results = []
     for label, name, bid, title, files, note, kind in plan:

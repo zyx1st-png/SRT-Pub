@@ -131,6 +131,24 @@ def split_anchor(spec: str | None) -> tuple[str, str] | tuple[None, None]:
     return spec, ""
 
 
+def extract_section(text: str, anchor: str) -> str | None:
+    """Return the Markdown section for a numbered heading anchor (`23a`, `8a`, `14`),
+    including its subsections, stopping at the next heading of the same or higher level.
+
+    Returns `None` if the heading does not exist. When `anchor` is empty, returns `text`.
+    """
+    if not anchor:
+        return text
+    pattern = rf"^(#{{1,4}})\s+{re.escape(anchor)}(?![0-9a-zA-Z]).*$"
+    match = re.search(pattern, text, re.M)
+    if not match:
+        return None
+    level = len(match.group(1))
+    nxt = re.search(rf"^#{{1,{level}}}\s+", text[match.end():], re.M)
+    end = match.end() + nxt.start() if nxt else len(text)
+    return text[match.start():end]
+
+
 def heading_exists(text: str, anchor: str) -> bool:
     """Anchors here are section numbers (`23a`, `19a`, `14`), not slugs.
 
@@ -138,16 +156,17 @@ def heading_exists(text: str, anchor: str) -> bool:
     Markdown heading whose number matches exactly. `14` must not match `14a`
     or `140`, hence the trailing boundary.
     """
-    if not anchor:
-        return True
-    pattern = rf"^#{{1,4}}\s+{re.escape(anchor)}(?![0-9a-zA-Z])"
-    return re.search(pattern, text, re.M) is not None
+    return extract_section(text, anchor) is not None
 
 
 def bundle_files() -> dict[str, str]:
+    """Read only actual context bundle files (`SRT_CONTEXT_BUNDLE_*.md`), excluding `README.md`."""
     if not BUNDLE_DIR.is_dir():
         return {}
-    return {p.name: p.read_text(encoding="utf-8", errors="ignore") for p in BUNDLE_DIR.glob("*.md")}
+    return {
+        p.name: p.read_text(encoding="utf-8", errors="ignore")
+        for p in sorted(BUNDLE_DIR.glob("SRT_CONTEXT_BUNDLE_*.md"))
+    }
 
 
 def regression_suites(node: dict) -> list[str]:
@@ -244,7 +263,7 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     if compact and not compact_ok:
         problems.append(f"compact layer not found: {compact}")
 
-    # --- EA-3: is there a retrieval path that actually resolves? ---
+    # --- EA-3: is there a retrieval path that actually resolves in the targeted section? ---
     def anchor_ok(spec: str | None, must_mention: list[str]) -> bool:
         path, anchor = split_anchor(spec)
         if not path:
@@ -253,13 +272,14 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
         if not text:
             problems.append(f"routing file not found: {path}")
             return False
-        if not heading_exists(text, anchor or ""):
+        section = extract_section(text, anchor or "")
+        if section is None:
             problems.append(f"anchor not found: {spec}")
             return False
-        # An anchor that does not name any owner or the compact layer is a
-        # heading, not a route. This is the check that distinguishes "the file
-        # is mentioned somewhere" from "the AI is sent there".
-        if must_mention and not any(m and m in text for m in must_mention):
+        # An anchor that does not name any owner or the compact layer inside that
+        # section (or its subsections) is a heading, not a route. Checking only
+        # the targeted section prevents false positives from mentions in unrelated routes.
+        if must_mention and not any(m and m in section for m in must_mention):
             problems.append(f"route {spec} names none of the node's files")
             return False
         return True
@@ -268,18 +288,21 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     router_ok = anchor_ok(node.get("router_anchor"), targets)
     deep_ok = anchor_ok(node.get("deep_map_anchor"), targets)
 
-    # --- context bundle membership ---
+    # --- EA-4: context bundle membership (must be a loaded `## FILE:` block, not a mere mention) ---
     declared_bundle = bool(node.get("bundle"))
     needle = compact or (owners[0] if owners else "")
-    bundle_loaded = bool(needle) and any(needle in text for text in bundles.values())
+    file_block_marker = f"## FILE: `{needle}`" if needle else ""
+    bundle_loaded = bool(file_block_marker) and any(
+        file_block_marker in text for text in bundles.values()
+    )
 
-    # --- EA-5: behavior regression tests ---
+    # --- Axis B prerequisite: behavior regression tests ---
     suites = regression_suites(node)
     n_tests, empty_suites = count_regression_tests(suites)
     for rel in empty_suites:
         problems.append(f"regression suite declares no items (no `## T-NN` blocks, no `suite_items:`): {rel}")
 
-    # --- EA-4: old-formulation handling ---
+    # --- EA-5: old-formulation handling (JSON Axis A numbering; historical 2026-08-06 audit called this EA-4) ---
     # `n/a` is ambiguous between "assessed, nothing was superseded" and "nobody
     # looked", so it does not count. A node with no superseded formulation must
     # say so explicitly with `none-required: <reason>`.
