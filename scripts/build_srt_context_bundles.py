@@ -715,7 +715,7 @@ def guard_shorthands() -> Guardrail:
     )
 
 
-def guard_active_theory() -> Guardrail:
+def guard_active_theory(current_files: list[str] | None = None) -> Guardrail:
     """G5：清单里哪些理论节点**还没有**进入活跃层。
 
     这条护栏存在的理由，与 G3 是同一类但更根本：G3 说"某笔回写没落地"，G5 说
@@ -723,7 +723,7 @@ def guard_active_theory() -> Guardrail:
     就是仓库里没有的东西——而实际情况是内容在仓库深处，只是没有任何入口指过去。
     """
     nodes = load_active_theory_nodes()
-    bundled = set(active_theory_compacts())
+    global_extra = sorted(active_theory_compacts())
 
     def derived(node: dict) -> bool:
         return (
@@ -749,7 +749,28 @@ def guard_active_theory() -> Guardrail:
     if not rows:
         rows.append("| — | 全部节点均已结构激活且行为验证通过 | — | — | — |")
 
-    loaded = "\n".join(f"- `{f}`" for f in sorted(bundled)) or "- （无）"
+    global_list_md = "\n".join(f"- `{f}`" for f in global_extra) or "- （无）"
+    global_inline = "、".join(f"`{f}`" for f in global_extra) if global_extra else "（无）"
+    if current_files is None:
+        bundle_extra_note = (
+            "全仓由 `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` 按清单额外装载的跨域快速层"
+            f"（除各领域 CompactCore 之外）为：\n\n{global_list_md}\n\n"
+            "各具体包的实际装载范围以其 §0.1 文件清单为准。"
+        )
+    else:
+        loaded_here = sorted(set(global_extra) & set(current_files))
+        if loaded_here:
+            here_md = "\n".join(f"- `{f}`" for f in loaded_here)
+            bundle_extra_note = (
+                "本包按清单额外装载了以下跨域快速层（除各领域 CompactCore 之外，已列入本包 §0.1 文件清单）：\n\n"
+                f"{here_md}"
+            )
+        else:
+            bundle_extra_note = (
+                f"本包**未额外装载**清单跨域快速层（全仓此类快速层仅由 `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` "
+                f"额外装载：{global_inline}；本包实际装载文件以 §0.1 文件清单为准）。"
+            )
+
     assimilated = [n for n in nodes if derived(n)]
     complete_all = [n for n in nodes if n.get("structural_assimilation") == "active_complete"]
     complete_untested = [
@@ -786,8 +807,7 @@ def guard_active_theory() -> Guardrail:
             "回归测试文件存在**不等于**回归测试通过。\n\n"
             "其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被"
             "**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。\n\n"
-            "本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：\n\n"
-            f"{loaded}\n\n"
+            f"{bundle_extra_note}\n\n"
             "轴的含义见清单 `axes` 与 "
             "`Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。"
         ),
@@ -795,7 +815,7 @@ def guard_active_theory() -> Guardrail:
             "- 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；"
             "先按清单的 `active_owners` 去取。\n"
             "- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。\n"
-            "- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。\n"
+            "- 清单额外装载的跨域快速层（由 `COMPACTCORE` 承载）均为 **P2-P3**，不得用于裁定任何 canonical 定义。\n"
             "- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。\n"
             "- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。"
         ),
@@ -803,10 +823,16 @@ def guard_active_theory() -> Guardrail:
     )
 
 
-def build_guardrails() -> str:
+def build_guardrails(current_files: list[str] | None = None) -> str:
     return "\n\n".join(
         render_guardrail(g)
-        for g in (guard_p1_t07(), guard_dqo(), guard_hooks(), guard_active_theory(), guard_shorthands())
+        for g in (
+            guard_p1_t07(),
+            guard_dqo(),
+            guard_hooks(),
+            guard_active_theory(current_files),
+            guard_shorthands(),
+        )
     )
 
 
@@ -1010,10 +1036,11 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
 # --------------------------------------------------------------------------
 
 def extract_equation_index(rel: str = "Core/SRT_Core_22_Equations.md") -> list[tuple[str, int, str, str]]:
-    """从 Core_22 主方程文件按标题与行号自动抽取方程/定义索引；锚点缺失即失败。"""
+    """从 Core_22 主方程文件按标题与行号自动抽取方程/定义索引；缺漏、格式异常或重复编号均 fail-loud。"""
     text = read_text(rel)
     section = "(未分节)"
     entries: list[tuple[str, int, str, str]] = []
+    seen_ids: dict[str, int] = {}
     for lineno, raw in enumerate(text.splitlines(), 1):
         line = raw.strip()
         m_part = re.match(r"^#\s+(Part\s+.+)$", line)
@@ -1028,9 +1055,16 @@ def extract_equation_index(rel: str = "Core/SRT_Core_22_Equations.md") -> list[t
         if m_subsec:
             section = m_subsec.group(1).strip()
             continue
-        m_eq = re.match(r"^###\s+((?:Eq|Def)-[A-Za-z0-9-]+):\s*(.+)$", line)
-        if m_eq:
-            entries.append((section, lineno, m_eq.group(1).strip(), m_eq.group(2).strip()))
+        if re.match(r"^###\s+(?:Eq|Def)-", line):
+            m_eq = re.match(r"^###\s+((?:Eq|Def)-[A-Za-z0-9-]+):\s*(.+)$", line)
+            if not m_eq:
+                fail(f"方程标题格式异常（防止部分静默遗漏）：{rel}#L{lineno} -> `{line}`")
+            eq_id = m_eq.group(1).strip()
+            title = m_eq.group(2).strip()
+            if eq_id in seen_ids:
+                fail(f"方程编号重复：{rel}#L{lineno} 重复出现 `{eq_id}`（首次见 #L{seen_ids[eq_id]}）")
+            seen_ids[eq_id] = lineno
+            entries.append((section, lineno, eq_id, title))
     if not entries:
         fail(f"锚点缺失：在 {rel} 中解析不到任何 `### Eq-*` / `### Def-*` 主方程标题")
     return entries
@@ -1039,14 +1073,22 @@ def extract_equation_index(rel: str = "Core/SRT_Core_22_Equations.md") -> list[t
 def extract_bridge_hypotheses_index(
     rel: str = "Core/SRT_Core_21c_Bridge_Hypotheses.md",
 ) -> list[tuple[int, str, str]]:
-    """从 Core_21c 按需桥接文件自动抽取 B01–B14 条目索引；锚点缺失即失败。"""
+    """从 Core_21c 按需桥接文件自动抽取 B* 条目索引；缺漏、格式异常或重复编号均 fail-loud。"""
     text = read_text(rel)
     entries: list[tuple[int, str, str]] = []
+    seen_ids: dict[str, int] = {}
     for lineno, raw in enumerate(text.splitlines(), 1):
         line = raw.strip()
-        m = re.match(r"^##\s+(P\d+(?:/P\d+)*-B\d+):\s*(.+)$", line)
-        if m:
-            entries.append((lineno, m.group(1).strip(), m.group(2).strip()))
+        if re.match(r"^##\s+.*(?:\bP\d+[^:]*-B\d+|\bB\d+:)", line):
+            m = re.match(r"^##\s+(P\d+(?:/P\d+)*-B\d+):\s*(.+)$", line)
+            if not m:
+                fail(f"桥接假说标题格式异常（防止部分静默遗漏）：{rel}#L{lineno} -> `{line}`")
+            bid = m.group(1).strip()
+            title = m.group(2).strip()
+            if bid in seen_ids:
+                fail(f"桥接假说编号重复：{rel}#L{lineno} 重复出现 `{bid}`（首次见 #L{seen_ids[bid]}）")
+            seen_ids[bid] = lineno
+            entries.append((lineno, bid, title))
     if not entries:
         fail(f"锚点缺失：在 {rel} 中解析不到任何 `## P*-B*` 桥接假说标题")
     return entries
@@ -1072,7 +1114,7 @@ def build_spine_offloaded_index() -> str:
 
 > **分层完备性声明（`ENG-01`）**：默认 `SPINE` 仅装载承担核心定义权、形成层 owner（`Core_Law/SRT_One_Formation.md`）、`P0/P1` 核心公理、符号表与治理护栏（含 `Governance/SRT_CLAIM_MODE_AUDIT.md` 全文与 `_SRT_CROSS_DOMAIN_MATRIX.md`）的主干文件。以下三类材料**刻意不内置全文于本包**，也不因外置而被废止或降权：
 >
-> 1. **`FORMAL` 独立方程路线（`Core/SRT_Core_22_Equations.md`）**：主动力学/热力学/桥接方程正文已拆至独立包 `Operations/Context_Bundles/{FORMAL_BUNDLE_NAME}`；需要完整方程推导时请切换至 `FORMAL` 路线或直接读仓库原文件。局部方程语义仍从属于本包 `SPINE` 对应 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`。
+> 1. **`FORMAL` 独立方程路线（`Core/SRT_Core_22_Equations.md`）**：主动力学/热力学/桥接方程正文已拆至独立包 `Operations/Context_Bundles/{FORMAL_BUNDLE_NAME}`；需要完整方程推导时请切换至 `FORMAL` 路线或直接读仓库原文件。局部方程语义仍从属于本包 `SPINE` 对应 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`。（注：外部单次对话禁止默认整包叠加 `SPINE + FORMAL`，但**不禁止**具备仓库访问能力的工具或研究者围绕具体问题按需联合读取局部方程与对应定义 owner 原文件。）
 > 2. **按需桥接层（`Core/SRT_Core_21c_Bridge_Hypotheses.md`）**：`P2/P3/P4` 桥接假说与规范诠释不入默认 `SPINE`，按需直接回读仓库原文件；下游不得将其中任何 `B*` 假说提升为 `P0/P1` 核心定理。
 > 3. **动态运行状态与非 canonical 作者裁决（含 `R3` 骨架裁决）**：`STATUS.md`、`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_*` 与 `Operations/Proposals/SRT_R3_*` 刻意不纳入静态上下文包（避免高 churn 状态更新使全量包频繁过期）；涉及当前 `CURRENT NEXT`、`HOLD`、`OPEN` 进展或最新作者裁决时，必须直接读取仓库 `STATUS.md §Fast Status` 及其控制指针。
 
@@ -1280,7 +1322,7 @@ inputs_digest: {prov.digest}
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
 > - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
-{build_guardrails()}
+{build_guardrails(files)}
 
 ## §0.3 claim 阶梯与回答纪律
 
@@ -1300,7 +1342,7 @@ SPINE_POINTER = """
 > 需要裁定定义时，请**改用骨架路线**——新开一次对话，只装
 > `SRT_CONTEXT_BUNDLE_SPINE.md`（其 §0.5 亦提供主方程索引与按需桥接指针）；
 > 需要查阅 `Core_22` 主方程正文时，请改用独立形式方程路线 `SRT_CONTEXT_BUNDLE_FORMAL.md`。
-> **不要在本包之上再叠加骨架包**：叠加会稀释注意力或超出上下文预算（见 `README.md` 的预算表）。各路线互斥，是切换关系，不是叠加关系。
+> **不要在本包之上再叠加骨架包**：叠加会稀释注意力或超出上下文预算（见 `README.md` 的预算表）。各路线在默认整包意义下互斥（是切换关系，不是整包叠加关系）；若具备仓库直读能力，仍可围绕具体研究问题按需联合读取局部方程与对应定义 owner 原文件。
 """
 
 FORMAL_POINTER = """
@@ -1309,7 +1351,7 @@ FORMAL_POINTER = """
 > 局部方程语义仍从属于当前 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`，不得以局部方程反向恢复或覆盖主定义。
 >
 > 需要裁定术语定义或跨 owner 边界时，请**改用骨架路线**——新开一次对话，只装 `SRT_CONTEXT_BUNDLE_SPINE.md`。
-> **不要在本包之上再叠加骨架包**：各路线互斥，是切换关系，不是叠加关系（见 `README.md` 的预算表）。
+> **不要在本包之上再叠加骨架包**：各路线在默认整包意义下互斥（见 `README.md` 的预算表）。但禁止默认整包叠加**不等于**禁止按需局部跨 owner 检索——具备仓库访问能力的工具/研究者可在同一研究对话中直接联合读取具体方程条款与对应定义 owner 原文件。
 """
 
 
@@ -1489,11 +1531,11 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 {spine_plus_rows}
 
-**各路线互斥。** `SPINE` 路线用于裁定定义（已内置 `Core_Law/SRT_One_Formation.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 全文、`_SRT_CROSS_DOMAIN_MATRIX.md` 及 `§0.5` 方程/按需桥接索引）；`FORMAL` 路线用于查阅 `Core/SRT_Core_22_Equations.md` 主方程正文；`COMPACTCORE` / `DOMAIN_*` 路线用于轻量跨域或单领域问答；`Core/SRT_Core_21c_Bridge_Hypotheses.md` 走按需桥接层（直接读仓库原文件）。
+**各路线在默认整包意义下互斥。** `SPINE` 路线用于裁定定义（已内置 `Core_Law/SRT_One_Formation.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 全文、`_SRT_CROSS_DOMAIN_MATRIX.md` 及 `§0.5` 方程/按需桥接索引）；`FORMAL` 路线用于查阅 `Core/SRT_Core_22_Equations.md` 主方程正文；`COMPACTCORE` / `DOMAIN_*` 路线用于轻量跨域或单领域问答；`Core/SRT_Core_21c_Bridge_Hypotheses.md` 走按需桥接层（直接读仓库原文件）。
 
-上表中部分组合虽在预算内，仍不推荐叠加：各包已自带完整状态护栏与导航，
-叠加骨架会把大量无关正文压进上下文，稀释注意力，收益远低于成本。
-需要裁定定义时，**换一次对话只装 `SPINE`**；需要主方程正文时，**换一次对话只装 `FORMAL`**。
+上表中部分组合虽在预算内，仍不推荐**整包叠加**：各包已自带完整状态护栏与导航，
+叠加整包会把大量无关正文压进上下文，稀释注意力，收益远低于成本。
+在外部静态对话中，需要裁定定义时**换一次对话只装 `SPINE`**，需要主方程正文时**换一次对话只装 `FORMAL`**；但禁止默认整包叠加**不等于**禁止局部跨 owner 检索——具备仓库直读能力的工具或研究者仍可围绕具体问题按需联合读取局部方程与对应定义 owner 原文件。
 
 ## 四条使用纪律
 
@@ -1511,7 +1553,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 ```bash
 uv run python scripts/build_srt_context_bundles.py
 uv run python scripts/build_srt_context_bundles.py --check     # 生成一致性校验（字节级复现）
-uv run python scripts/test_build_context_bundles.py             # 构造器单元测试 + 轻量检索语义验收
+uv run python scripts/test_build_context_bundles.py             # 构造器单元测试 + 结构性检索可达性验收（structural retrieval reachability）
 ```
 
 `--check` 先核对 `inputs_digest`（输入闭包的联合内容摘要，覆盖生成脚本、护栏来源、
