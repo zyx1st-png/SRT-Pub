@@ -7,16 +7,16 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-25
-source_commit: e1ed2a77a
-source_branch: eng/eng-01-spine-bundle-layering-2026-11-25
+source_commit: 31adb672d
+source_branch: eng/eng-02-assimilation-reconciliation-2026-11-25
 source_dirty: false
-inputs_digest: dee0240159894017
+inputs_digest: 08c5e5e7686f5cf3
 ---
 
 # SRT 神经科学领域上下文包
 
 > **这是什么**：由 `scripts/build_srt_context_bundles.py` 从 SRT 仓库自动拼装的上下文包。
-> 收录神经科学领域的 claim-status 护栏、领域导航与 CompactCore 主线。
+> 收录神经科学领域的 claim-status 护栏、领域导航、CompactCore 主线。
 >
 > **这不是什么**：不是新的 canonical 文件，不是摘要，不是改写。每个来源文件的正文
 > 逐字保留；脚本只把 YAML frontmatter 转成显式 provenance 头。**若本包与仓库中的
@@ -27,8 +27,8 @@ inputs_digest: dee0240159894017
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-25 |
-| 来源 commit | `e1ed2a77a` |
-| 来源分支 | `eng/eng-01-spine-bundle-layering-2026-11-25` |
+| 来源 commit | `31adb672d` |
+| 来源分支 | `eng/eng-02-assimilation-reconciliation-2026-11-25` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -147,6 +147,8 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 三张 pending 的 target 文档 `Physics/SRT_Physics_Bridge_v0_2.md` 从未创建。改 canonical 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，须作者授权，ledger 记 `blocked_by: canonical freeze`。
 
+注：上表抽取自 `2026-07-25` 历史闭环审计快照；各 hook 实时落地状态以对应 hook 的 `landing_ledger` 与 `scripts/check_hooks.py` 为准（其中 `PH_AG02` / `PH_AG03` 对 `_SRT_T_DIR_CANONICAL.md` 的负面判据补注已于 `2026-08-11` 落地，两张 hook 仍为 `partial` 仅因停驻的 ChoiceMap 孵化目标保持 `pending`）。
+
 #### USAGE POLICY — 使用规则
 
 *授权依据：`Governance/SRT_EDIT_PROTOCOL.md`（C 类编辑）与 `Operations/_SRT_MATERIAL_PIPELINE.md` §5.6.1（ledger 契约）*
@@ -170,9 +172,9 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > | `NODE-L0-L1-L2` | active_complete | untested | — | — |
 > | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
 > | `NODE-PSI-F` | active_complete | untested | — | — |
-> | `NODE-T-DIR` | partially_active | untested | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
+> | `NODE-T-DIR` | active_complete | untested | — | — |
 > | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
-> | `NODE-SUBJECTHOOD` | partially_active | untested | — | — |
+> | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
 > | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
@@ -184,8 +186,8 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：8 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 3 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：10 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 5 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
