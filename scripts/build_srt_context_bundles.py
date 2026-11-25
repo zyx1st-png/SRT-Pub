@@ -40,18 +40,22 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT_DIR = REPO_ROOT / "Operations" / "Context_Bundles"
 BUNDLE_DIR_REL = "Operations/Context_Bundles/"
 SPINE_BUNDLE_NAME = "SRT_CONTEXT_BUNDLE_SPINE.md"
+FORMAL_BUNDLE_NAME = "SRT_CONTEXT_BUNDLE_FORMAL.md"
 
 
 # --------------------------------------------------------------------------
 # 包定义
 # --------------------------------------------------------------------------
 
-# 骨架：**人工选择的高优先级 spine**，不是定义权的完备闭包。
+# 骨架：**人工选择的高优先级 canonical 骨架（ENG-01 分层瘦身版）**，不是定义权的完备闭包。
 #
-# 收录依据是 `SRT_AI_START.md` §2 Registry §C priority 与 `CANONICAL_REGISTRY.md` §A/§B，
-# 但 registry 列名的文件有 90 余个，本表只取其中一部分。哪些收了、哪些没收、各自在
-# registry 里的角色，由 §0.4 的 manifest 差异报告逐条列出——那份报告是本包对
-# "完备性"的唯一诚实交代，不要用本表的长度替代它。
+# 收录依据是 `CANONICAL_REGISTRY.md` §A/§B/§C，但 registry 列名的文件有 90 余个，本表只取
+# 承担核心定义与治理护栏的主干层。自 ENG-01 起：
+# - 补入 `Core_Law/SRT_One_Formation.md`（Registry §C #4 形成层 owner）；
+# - `Core/SRT_Core_21c_Bridge_Hypotheses.md`（P2/P3/P4）移至按需桥接层，在 SPINE §0.5 留索引与指针；
+# - `Core/SRT_Core_22_Equations.md` 拆至独立 `FORMAL` 路线，在 SPINE §0.5 留方程索引、指针与完备性声明；
+# - 保留 `Governance/SRT_CLAIM_MODE_AUDIT.md` 全文与 `_SRT_CROSS_DOMAIN_MATRIX.md`。
+# 哪些收了、哪些没收、各自在 registry 里的角色，由 §0.4 Manifest 差异报告与 §0.5 诚实交代。
 SPINE = [
     "SRT_AI_START.md",
     "CANONICAL_REGISTRY.md",
@@ -62,30 +66,43 @@ SPINE = [
     "Governance/SRT_CLAIM_LADDER.md",
     "Governance/SRT_CLAIM_MODE_AUDIT.md",
     "Core_Law/SRT_L0_Metaphysics.md",
+    # ENG-01 (2026-11-25): One / Selection-position formation owner (Registry §C #4).
+    "Core_Law/SRT_One_Formation.md",
     # 七命题摘要 + Reference_Axioms / Reference_Ontology 三者一并移出（2026-07-27）。
-    # 起因是预算：估算是字符启发式而非真实 tokenizer，必须留够误差余量。取舍逻辑是
-    # 连带的——registry §B.5 说七命题摘要"不替代"那两个 Reference 文件，所以先前
-    # 「收摘要、漏 Reference」是不自洽的；把摘要一并移出后，骨架只留真正的 canonical
-    # 定义锚点（d / Ψ_f / T_dir / Core_21* / Core_22 / 符号表）与治理护栏，自洽且更瘦。
     # 三者都在 §0.4「未收录支持文件」里逐条列名并说明关系，不是被悄悄丢掉。
-    # 三者均不在 Registry §C Registry §C priority 内，故 Registry §C priority 覆盖率不受影响。
     "Core/SRT_Core_21_Formal_Axioms.md",
     "Core/SRT_Core_21_Minimal_Axioms.md",
     "Core/SRT_Core_21b_Constitutive_Theorems.md",
-    "Core/SRT_Core_21c_Bridge_Hypotheses.md",
     "_SRT_D_VALUE_CANONICAL.md",
     "_SRT_PSI_F_CANONICAL.md",
     "_SRT_T_DIR_CANONICAL.md",
     "_SRT_CROSS_DOMAIN_MATRIX.md",
-    "Core/SRT_Core_22_Equations.md",
     "_SRT_SYMBOL_TABLE.md",
     # OPEN_TENSIONS is a conditional source in SRT_AI_START ("when a concept is known
-    # to be not fully sealed"), not one of §2 Registry §C priority. Its full text now exceeds
-    # 20K estimated tokens and would push the definition spine over the reserved budget.
-    # The spine keeps fail-loud status guard extracts and lists OPEN_TENSIONS explicitly
-    # in §0.4; deep/open-pressure work must load the owner separately rather than silently
-    # sacrificing the 45K headroom reserve.
+    # to be not fully sealed"). It stays explicitly listed in §0.4 and §0.5.3.
 ]
+
+# 独立 FORMAL 形式方程路线：仅收录主方程锚点正文，定义裁定仍归 SPINE。
+FORMAL = [
+    "Core/SRT_Core_22_Equations.md",
+]
+
+# 按需桥接层：不在默认 SPINE 中装载正文，但在 SPINE §0.5 自动抽取条目标引并纳入输入摘要闭包。
+ON_DEMAND_BRIDGES = [
+    "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+]
+
+# §0.4 Manifest 差异报告对已显式分流条目的去向说明。
+OFFLOADED_ROUTE_NOTES: dict[str, str] = {
+    "Core/SRT_Core_22_Equations.md": (
+        "已拆至独立 `FORMAL` 路线（`Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`）；"
+        "默认 `SPINE` §0.5 保留方程目录索引与检索指针"
+    ),
+    "Core/SRT_Core_21c_Bridge_Hypotheses.md": (
+        "已移至按需桥接层（P2/P3/P4，按需直接读仓库原文件）；"
+        "默认 `SPINE` §0.5 保留 B01–B14 条目标引与检索指针"
+    ),
+}
 
 DOMAINS = {
     "AI": {
@@ -165,9 +182,18 @@ CONTEXT_WINDOW = 200_000
 HEADROOM_RESERVE = 45_000
 MAX_RECOMMENDED_LOAD = CONTEXT_WINDOW - HEADROOM_RESERVE  # 155_000
 
-# 推荐装载路线。两条路线互斥：骨架路线用于裁定定义，轻量路线用于领域问答。
+# 推荐装载路线。各路线互斥：骨架路线用于裁定定义，形式方程路线用于查阅主方程正文，轻量路线用于领域问答。
 RECOMMENDED_LOADOUTS: list[tuple[str, list[str], str]] = [
-    ("骨架路线（裁定定义时用）", ["SPINE"], "需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。"),
+    (
+        "骨架路线（裁定定义时用）",
+        ["SPINE"],
+        "需要确定 SRT 术语、生成主轴、One Formation、P0/P1 核心公理与符号含义时，只装这一个；Core_22 方程索引与按需桥接指针见 §0.5。",
+    ),
+    (
+        "形式方程路线（查阅主方程时用）",
+        ["FORMAL"],
+        "需要查阅 Core_22 主动力学/热力学/桥接方程正文时使用；不含完整定义骨架，定义裁定须切回 SPINE。",
+    ),
     ("轻量跨域", ["COMPACTCORE"], "只需领域主线、不需裁定定义时用。"),
     # 不推荐 COMPACTCORE + DOMAIN_X：COMPACTCORE 已含全部领域的 CompactCore，
     # 领域包会把同一批文件再装一遍（Philosophy 情形下重复 3 个文件）。领域包自带
@@ -371,8 +397,15 @@ def active_theory_compacts() -> list[str]:
 
 
 def all_inputs() -> list[str]:
-    """生成结果依赖的**全部**输入：生成脚本 + 护栏来源 + 各包正文。"""
-    files = [GENERATOR_SELF, *GUARDRAIL_SOURCES, *SPINE, *active_theory_compacts()]
+    """生成结果依赖的**全部**输入：生成脚本 + 护栏来源 + 各包正文 + SPINE §0.5 索引抽取源。"""
+    files = [
+        GENERATOR_SELF,
+        *GUARDRAIL_SOURCES,
+        *SPINE,
+        *FORMAL,
+        *ON_DEMAND_BRIDGES,
+        *active_theory_compacts(),
+    ]
     for cfg in DOMAINS.values():
         files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
     return sorted(set(files))
@@ -694,8 +727,9 @@ def guard_active_theory() -> Guardrail:
 
     def derived(node: dict) -> bool:
         return (
-            node.get("assimilation_state") == "active_complete"
-            and node.get("behavior_validation") == "passed"
+            node.get("structural_assimilation") == "active_complete"
+            and node.get("behavioral_availability") == "robustly_observed"
+            and node.get("behavior_observation_mode") == "bounded"
         )
 
     rows = []
@@ -704,9 +738,12 @@ def guard_active_theory() -> Guardrail:
             continue
         compact = node.get("compact_layer") or "—"
         gates = "；".join(node.get("author_gates") or []) or "—"
+        axis_a = node.get("structural_assimilation", "")
+        axis_b = node.get("behavioral_availability", "")
+        mode = node.get("behavior_observation_mode") or ""
+        axis_b_disp = f"{axis_b} ({mode})" if mode and axis_b not in {"untested", "not_applicable", ""} else axis_b
         rows.append(
-            f"| `{node.get('node_id')}` | {node.get('assimilation_state', '')} | "
-            f"{node.get('behavior_validation', '')} | "
+            f"| `{node.get('node_id')}` | {axis_a} | {axis_b_disp} | "
             f"{'`' + compact + '`' if compact != '—' else '—'} | {gates} |"
         )
     if not rows:
@@ -714,30 +751,35 @@ def guard_active_theory() -> Guardrail:
 
     loaded = "\n".join(f"- `{f}`" for f in sorted(bundled)) or "- （无）"
     assimilated = [n for n in nodes if derived(n)]
+    complete_all = [n for n in nodes if n.get("structural_assimilation") == "active_complete"]
     complete_untested = [
-        n for n in nodes
-        if n.get("assimilation_state") == "active_complete"
-        and n.get("behavior_validation") == "untested"
+        n for n in complete_all
+        if n.get("behavioral_availability") == "untested"
+    ]
+    complete_observed_only = [
+        n for n in complete_all
+        if n not in assimilated and n.get("behavioral_availability") == "observed"
     ]
 
     return Guardrail(
         gid="G5",
-        title="多数理论节点未进入活跃层；进入的也未经行为验证",
+        title="部分理论节点未进入活跃层；已进入的多数仍未经有界重复行为验证",
         severity="中",
-        affected="下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上",
+        affected="下表所列节点；未达到 `effectively_assimilated` 的节点在默认读取路径上仍存在结构或行为验证缺口",
         extracts=[
             (
-                f"来自 `{ACTIVE_THEORY_MANIFEST}`（逐条抽取 `assimilation_status` 非 "
-                f"`effectively_assimilated` 的节点）",
+                f"来自 `{ACTIVE_THEORY_MANIFEST}`（逐条抽取派生状态非 "
+                "`effectively_assimilated` 的节点）",
                 "| node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |\n"
                 "|---|---|---|---|---|\n" + "\n".join(rows),
             )
         ],
         interpretation=(
             f"清单共 {len(nodes)} 个节点。状态分**两个轴**，不可合并读：\n\n"
-            f"- **Axis A（结构）**：{len(complete_untested) + len(assimilated)} 个达到 "
-            f"`active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。\n"
-            f"- **Axis B（行为）**：**{len(assimilated)} 个**有已记录的通过运行。"
+            f"- **Axis A（结构）**：{len(complete_all)} 个达到 "
+            "`active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。\n"
+            f"- **Axis B（行为）**：**{len(assimilated)} 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），"
+            f"{len(complete_observed_only)} 个为 `observed`（尚缺重复有界运行），"
             f"其余 {len(complete_untested)} 个结构完整的节点是 `untested`：**没有任何证据表明"
             "它们真的改变了判断**。\n\n"
             "`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。"
@@ -757,7 +799,7 @@ def guard_active_theory() -> Guardrail:
             "- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。\n"
             "- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。"
         ),
-        policy_source=f"`{ACTIVE_THEORY_MANIFEST}` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`",
+        policy_source=f"`{ACTIVE_THEORY_MANIFEST}` 的 `derived_status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`",
     )
 
 
@@ -786,9 +828,10 @@ SPINE_BUCKETS: dict[str, tuple[str, str]] = {
     "Core/SRT_Core_21_Formal_Axioms.md": ("定义源", "registry §A.4 主锚点（公理路由索引）"),
     "Core/SRT_Core_21_Minimal_Axioms.md": ("定义源", "registry §A.4 分层正文 P0"),
     "Core/SRT_Core_21b_Constitutive_Theorems.md": ("定义源", "registry §A.4 分层正文 P1"),
-    "Core/SRT_Core_21c_Bridge_Hypotheses.md": ("定义源", "registry §A.4 分层正文 P2/P3/P4"),
-    "Core/SRT_Core_22_Equations.md": ("定义源", "registry §A.4b 主锚点"),
+    "Core/SRT_Core_21c_Bridge_Hypotheses.md": ("展开层", "registry §A.4 / §C #5 P2/P3/P4 桥接假说（按需桥接层，不入默认 SPINE）"),
+    "Core/SRT_Core_22_Equations.md": ("定义源", "registry §A.4b / §C #4 主方程锚点（独立 FORMAL 路线）"),
     "Core_Law/SRT_L0_Metaphysics.md": ("定义源", "registry §C local-owner layer"),
+    "Core_Law/SRT_One_Formation.md": ("定义源", "registry §B.13 / §C #4 One / Selection-position 形成层 owner"),
     "_SRT_SYMBOL_TABLE.md": ("定义源", "symbol owner；Registry/local routing as applicable"),
     "Core/SRT_OPEN_TENSIONS.md": ("治理护栏", "registry §A.4c；未闭合登记，claim_mode: open"),
     "_SRT_CROSS_DOMAIN_MATRIX.md": ("治理护栏", "registry §A.4d 自称 governance-canonical usage layer"),
@@ -857,7 +900,8 @@ def bucket_for(path: str) -> tuple[str, str]:
 
 
 BUNDLE_KIND_BLURB = {
-    "spine": "**人工选择的高优先级 canonical 骨架**，不是定义权的完备闭包",
+    "spine": "**人工选择的高优先级 canonical 骨架（ENG-01 分层瘦身版）**，不是定义权的完备闭包",
+    "formal": "**独立形式方程包**（仅收录 `Core/SRT_Core_22_Equations.md`），**不含完整定义骨架**；局部方程语义仍受 `SPINE` 对应 owner 与 `Governance/SRT_CLAIM_LADDER.md` 约束",
     "compactcore": "**轻量跨域包**（各领域 CompactCore 主线），**不含定义源**",
     "domain": "**单领域支持包**（claim-status 护栏 + 导航 + CompactCore），**不含定义源**",
 }
@@ -905,7 +949,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
     parts += ["### 未收录支持文件", ""]
     if fs_broken:
         parts += [
-            f"**⚠ 高严重度：`SRT_AI_START.md` §2 Registry §C priority 中有 {len(fs_broken)} 条路径"
+            f"**⚠ 高严重度：`CANONICAL_REGISTRY.md` §C priority 中有 {len(fs_broken)} 条路径"
             "指向不存在的文件**——这类条目既收不进来，也不该被算作「已覆盖」：",
             "",
             *[f"- `{p}`" for p in fs_broken],
@@ -914,14 +958,17 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
     if fs_missing:
         parts += [
             f"**Registry §C priority 点名、文件存在、但本包未收（{len(fs_missing)} 个）**"
-            "——回答涉及它们时本包不足以裁定：",
+            "——回答涉及它们时本包不足以单独裁定（已显式分流条目附去向）：",
             "",
-            *[f"- `{p}`" for p in fs_missing],
+            *[
+                f"- `{p}` — {OFFLOADED_ROUTE_NOTES[p]}" if p in OFFLOADED_ROUTE_NOTES else f"- `{p}`"
+                for p in fs_missing
+            ],
             "",
         ]
     if not fs_broken and not fs_missing:
         parts += [
-            f"`SRT_AI_START.md` §2 Registry §C priority **已全部收录**（{len(first_sources)} 条，"
+            f"`CANONICAL_REGISTRY.md` §C priority **已全部收录**（{len(first_sources)} 条，"
             "且全部指向存在的文件）。",
             "",
         ]
@@ -946,7 +993,7 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
 
     parts += [
         f"**registry 提及、文件存在、但本包未收（{len(missing_reg)} 个）**——多为领域主轴、",
-        "展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：",
+        "展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：",
         "",
         "<details><summary>展开完整清单</summary>",
         "",
@@ -956,6 +1003,107 @@ def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
         "",
     ]
     return "\n".join(parts)
+
+
+# --------------------------------------------------------------------------
+# §0.5 分层外置路线、方程索引与完备性声明（仅 SPINE 渲染）
+# --------------------------------------------------------------------------
+
+def extract_equation_index(rel: str = "Core/SRT_Core_22_Equations.md") -> list[tuple[str, int, str, str]]:
+    """从 Core_22 主方程文件按标题与行号自动抽取方程/定义索引；锚点缺失即失败。"""
+    text = read_text(rel)
+    section = "(未分节)"
+    entries: list[tuple[str, int, str, str]] = []
+    for lineno, raw in enumerate(text.splitlines(), 1):
+        line = raw.strip()
+        m_part = re.match(r"^#\s+(Part\s+.+)$", line)
+        if m_part:
+            section = m_part.group(1).strip()
+            continue
+        m_h2 = re.match(r"^##\s+(.+)$", line)
+        if m_h2:
+            section = m_h2.group(1).strip()
+            continue
+        m_subsec = re.match(r"^###\s+(§.+)$", line)
+        if m_subsec:
+            section = m_subsec.group(1).strip()
+            continue
+        m_eq = re.match(r"^###\s+((?:Eq|Def)-[A-Za-z0-9-]+):\s*(.+)$", line)
+        if m_eq:
+            entries.append((section, lineno, m_eq.group(1).strip(), m_eq.group(2).strip()))
+    if not entries:
+        fail(f"锚点缺失：在 {rel} 中解析不到任何 `### Eq-*` / `### Def-*` 主方程标题")
+    return entries
+
+
+def extract_bridge_hypotheses_index(
+    rel: str = "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+) -> list[tuple[int, str, str]]:
+    """从 Core_21c 按需桥接文件自动抽取 B01–B14 条目索引；锚点缺失即失败。"""
+    text = read_text(rel)
+    entries: list[tuple[int, str, str]] = []
+    for lineno, raw in enumerate(text.splitlines(), 1):
+        line = raw.strip()
+        m = re.match(r"^##\s+(P\d+(?:/P\d+)*-B\d+):\s*(.+)$", line)
+        if m:
+            entries.append((lineno, m.group(1).strip(), m.group(2).strip()))
+    if not entries:
+        fail(f"锚点缺失：在 {rel} 中解析不到任何 `## P*-B*` 桥接假说标题")
+    return entries
+
+
+def build_spine_offloaded_index() -> str:
+    """生成 SPINE §0.5：分层完备性声明 + Core_22 方程索引 + Core_21c 按需桥接索引 + 动态状态/R3 指针。"""
+    eq_src = "Core/SRT_Core_22_Equations.md"
+    br_src = "Core/SRT_Core_21c_Bridge_Hypotheses.md"
+    eqs = extract_equation_index(eq_src)
+    bridges = extract_bridge_hypotheses_index(br_src)
+
+    eq_rows = "\n".join(
+        f"| `{eq_id}` | {title} | {sec} | `{eq_src}#L{ln}` |"
+        for sec, ln, eq_id, title in eqs
+    )
+    br_rows = "\n".join(
+        f"| `{bid}` | {title} | `{br_src}#L{ln}` |"
+        for ln, bid, title in bridges
+    )
+
+    return f"""## §0.5 分层外置路线、方程索引与完备性声明
+
+> **分层完备性声明（`ENG-01`）**：默认 `SPINE` 仅装载承担核心定义权、形成层 owner（`Core_Law/SRT_One_Formation.md`）、`P0/P1` 核心公理、符号表与治理护栏（含 `Governance/SRT_CLAIM_MODE_AUDIT.md` 全文与 `_SRT_CROSS_DOMAIN_MATRIX.md`）的主干文件。以下三类材料**刻意不内置全文于本包**，也不因外置而被废止或降权：
+>
+> 1. **`FORMAL` 独立方程路线（`Core/SRT_Core_22_Equations.md`）**：主动力学/热力学/桥接方程正文已拆至独立包 `Operations/Context_Bundles/{FORMAL_BUNDLE_NAME}`；需要完整方程推导时请切换至 `FORMAL` 路线或直接读仓库原文件。局部方程语义仍从属于本包 `SPINE` 对应 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`。
+> 2. **按需桥接层（`Core/SRT_Core_21c_Bridge_Hypotheses.md`）**：`P2/P3/P4` 桥接假说与规范诠释不入默认 `SPINE`，按需直接回读仓库原文件；下游不得将其中任何 `B*` 假说提升为 `P0/P1` 核心定理。
+> 3. **动态运行状态与非 canonical 作者裁决（含 `R3` 骨架裁决）**：`STATUS.md`、`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_*` 与 `Operations/Proposals/SRT_R3_*` 刻意不纳入静态上下文包（避免高 churn 状态更新使全量包频繁过期）；涉及当前 `CURRENT NEXT`、`HOLD`、`OPEN` 进展或最新作者裁决时，必须直接读取仓库 `STATUS.md §Fast Status` 及其控制指针。
+
+### 0.5.1 `Core/SRT_Core_22_Equations.md` 主方程索引（独立 `FORMAL` 路线）
+
+- **原文件**：`{eq_src}`（last_commit: `{last_commit_date(eq_src)}`）
+- **独立上下文包**：`Operations/Context_Bundles/{FORMAL_BUNDLE_NAME}`（单独装载，不叠加在 `SPINE` 上）
+- **条目数**：自动抽取 {len(eqs)} 条 `Eq-* / Def-*`（已纳入 `inputs_digest` 闭包）
+
+| 编号 | 标题 | 所属章节 | 仓库定位 |
+|---|---|---|---|
+{eq_rows}
+
+### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
+
+- **原文件**：`{br_src}`（last_commit: `{last_commit_date(br_src)}`；按需直接读仓库，不入默认 `SPINE`）
+- **条目数**：自动抽取 {len(bridges)} 条 `P2/P3/P4-B*`（已纳入 `inputs_digest` 闭包）
+
+| 编号 | 标题 | 仓库定位 |
+|---|---|---|
+{br_rows}
+
+### 0.5.3 动态运行状态、未闭合张力与当前作者裁决检索指针
+
+| 检索目标 | 仓库权威入口（实时读取，不入静态包） | 说明 |
+|---|---|---|
+| 当前执行焦点 / `CURRENT NEXT` / `HOLD` | `STATUS.md`（`§Fast Status`） | 唯一当前状态与最新作者裁决路由入口 |
+| 作者直觉裁决与 `R3` 骨架裁决溯源 | `01_Source_Intuition/`（由 `STATUS.md §Fast Status` 指向具体 `SRT_AUTHOR_ADJUDICATION_*` / `SRT_AUTHOR_DECISION_*`） | 非 canonical 作者源与决策边界 |
+| `R3` 阶段性收敛主稿与全局减法地图 | `Operations/Proposals/`（由 `STATUS.md §Fast Status` 指向具体 `SRT_R3_*` 主稿） | 非 canonical 理论骨架收敛提案 |
+| 未封口核心张力登记 | `Core/SRT_OPEN_TENSIONS.md` | 按条件检索；其中条目不得陈述为已封口 |
+"""
 
 
 # --------------------------------------------------------------------------
@@ -970,6 +1118,8 @@ def estimate_tokens(text: str) -> int:
 def bundle_filename(key: str) -> str:
     if key == "SPINE":
         return SPINE_BUNDLE_NAME
+    if key == "FORMAL":
+        return FORMAL_BUNDLE_NAME
     if key == "COMPACTCORE":
         return "SRT_CONTEXT_BUNDLE_COMPACTCORE.md"
     return f"SRT_CONTEXT_BUNDLE_{key}.md"
@@ -1069,6 +1219,7 @@ def bundle_header(prov: Provenance, bundle_id: str, title: str,
     manifest = "\n".join(
         f"| {i} | `{f}` | {last_commit_date(f)} |" for i, f in enumerate(files, 1)
     )
+    offloaded_section = f"\n{build_spine_offloaded_index()}" if kind == "spine" else ""
     return f"""---
 id: {bundle_id}
 type: context_bundle
@@ -1104,7 +1255,7 @@ inputs_digest: {prov.digest}
 | 包含文件数 | {len(files)} |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
-> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> （`Governance/SRT_DOWNSTREAM_GUARDRAILS.md`、两份审计）、全部正文文件与 `SPINE §0.5` 索引抽取源（`Core_22` / `Core_21c`）的联合内容摘要。`--check` 重算并比对该摘要，
 > 因此改动其中任何一项都会被发现。
 >
 > `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
@@ -1137,19 +1288,28 @@ inputs_digest: {prov.digest}
 
 ## §0.4 Manifest 差异报告（本包 vs `CANONICAL_REGISTRY.md`）
 
-{build_manifest_report(files, kind)}
-
+{build_manifest_report(files, kind)}{offloaded_section}
 ---
 """
 
 
 SPINE_POINTER = """
-> **注意**：本包**不含** canonical 骨架（`d` / `Ψ_f` / `T_dir` 定义、核心公理、
-> 主方程、符号表），因此**仅凭本包不得裁定任何 SRT 术语的定义**。
+> **注意**：本包**不含** canonical 定义骨架（`Spine` / `L0` / `One Formation` / `d` / `Ψ_f` / `T_dir` 定义、
+> `P0/P1` 核心公理、符号表），亦**不含** `Core_22` 主方程正文，因此**仅凭本包不得裁定任何 SRT 术语的定义**。
 >
 > 需要裁定定义时，请**改用骨架路线**——新开一次对话，只装
-> `SRT_CONTEXT_BUNDLE_SPINE.md`。**不要在本包之上再叠加骨架包**：两者合计会超出
-> 上下文预算（见 `README.md` 的预算表）。两条路线互斥，是切换关系，不是叠加关系。
+> `SRT_CONTEXT_BUNDLE_SPINE.md`（其 §0.5 亦提供主方程索引与按需桥接指针）；
+> 需要查阅 `Core_22` 主方程正文时，请改用独立形式方程路线 `SRT_CONTEXT_BUNDLE_FORMAL.md`。
+> **不要在本包之上再叠加骨架包**：叠加会稀释注意力或超出上下文预算（见 `README.md` 的预算表）。各路线互斥，是切换关系，不是叠加关系。
+"""
+
+FORMAL_POINTER = """
+> **注意**：本包为独立 `FORMAL` 形式方程路线，**仅收录 `Core/SRT_Core_22_Equations.md` 主方程正文**，
+> **不含** canonical 定义骨架（`Spine` / `L0` / `One Formation` / `d` / `Ψ_f` / `T_dir` 定义、`P0/P1` 公理、符号表）。
+> 局部方程语义仍从属于当前 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`，不得以局部方程反向恢复或覆盖主定义。
+>
+> 需要裁定术语定义或跨 owner 边界时，请**改用骨架路线**——新开一次对话，只装 `SRT_CONTEXT_BUNDLE_SPINE.md`。
+> **不要在本包之上再叠加骨架包**：各路线互斥，是切换关系，不是叠加关系（见 `README.md` 的预算表）。
 """
 
 
@@ -1166,6 +1326,13 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
             "spine",
         ),
         (
+            "形式方程 FORMAL", FORMAL_BUNDLE_NAME, f"SRT-CONTEXT-BUNDLE-FORMAL-{prov.generated}",
+            "SRT Formal 主方程上下文包",
+            FORMAL,
+            FORMAL_POINTER,
+            "formal",
+        ),
+        (
             "CompactCore 全集", "SRT_CONTEXT_BUNDLE_COMPACTCORE.md",
             f"SRT-CONTEXT-BUNDLE-COMPACTCORE-{prov.generated}",
             "SRT CompactCore 全集上下文包",
@@ -1175,7 +1342,15 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
         ),
     ]
     purposes = {
-        SPINE_BUNDLE_NAME: "收录承载定义权的 canonical 主干，供大模型确定 SRT 术语、公理、方程与符号的含义。",
+        SPINE_BUNDLE_NAME: (
+            "收录承载定义权的 canonical 主干（含跨 owner 生成主轴、One Formation、P0/P1 核心公理、符号表与治理护栏），"
+            "供大模型确定 SRT 术语、公理与符号含义；Core_22 主方程已分流至独立 `FORMAL` 路线（本包 §0.5 留索引与指针），"
+            "Core_21c 移至按需桥接层。"
+        ),
+        FORMAL_BUNDLE_NAME: (
+            "收录 `Core/SRT_Core_22_Equations.md` 主动力学、热力学与桥接方程正文，"
+            "作为从默认 `SPINE` 分流出的独立形式方程路线（定义裁定仍回 `SPINE`）。"
+        ),
         "SRT_CONTEXT_BUNDLE_COMPACTCORE.md": (
             f"收录全部 {sum(len(cfg['cores']) for cfg in DOMAINS.values())} 个领域 CompactCore"
             f"（AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学），"
@@ -1244,16 +1419,20 @@ def write_readme(prov: Provenance, out_dir: Path,
             for label, keys, note in FORBIDDEN_LOADOUTS
         ]
     )
-    # 逐个领域列出，而不是拿最大的一个代表"任一领域包"。
+    # 逐个列出 SPINE 与独立方程包/各领域包的叠加预算，均不推荐叠加。
+    spine_overlay_targets = [("`SPINE` + `FORMAL`", ["SPINE", "FORMAL"])] + [
+        (f"`SPINE` + `DOMAIN_{k.upper()}`", ["SPINE", f"DOMAIN_{k.upper()}"])
+        for k in DOMAINS
+    ]
     spine_plus_rows = "\n".join(
         ["| 组合 | 合计 ≈token | 是否在预算内 |", "|---|---:|:---:|"]
         + [
-            f"| `SPINE` + `DOMAIN_{k.upper()}` | {total(['SPINE', f'DOMAIN_{k.upper()}']):,} | "
+            f"| {label} | {total(keys):,} | "
             + ("在预算内（但仍不推荐，见下）"
-               if total(["SPINE", f"DOMAIN_{k.upper()}"]) <= MAX_RECOMMENDED_LOAD
+               if total(keys) <= MAX_RECOMMENDED_LOAD
                else "**超预算**")
             + " |"
-            for k in DOMAINS
+            for label, keys in spine_overlay_targets
         ]
     )
 
@@ -1306,39 +1485,41 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 {forbidden_rows}
 
-### `SPINE` + 各领域包（逐个列出，均不推荐）
+### `SPINE` + `FORMAL` / 各领域包（逐个列出，均不推荐叠加）
 
 {spine_plus_rows}
 
-**两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
+**各路线互斥。** `SPINE` 路线用于裁定定义（已内置 `Core_Law/SRT_One_Formation.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 全文、`_SRT_CROSS_DOMAIN_MATRIX.md` 及 `§0.5` 方程/按需桥接索引）；`FORMAL` 路线用于查阅 `Core/SRT_Core_22_Equations.md` 主方程正文；`COMPACTCORE` / `DOMAIN_*` 路线用于轻量跨域或单领域问答；`Core/SRT_Core_21c_Bridge_Hypotheses.md` 走按需桥接层（直接读仓库原文件）。
 
-上表中部分组合虽在预算内，仍不推荐叠加：领域包已自带 claim-status 护栏与导航，
-叠加骨架会把大量与该领域无关的定义正文压进上下文，稀释注意力，收益远低于成本。
-需要裁定定义时，**换一次对话只装 `SPINE`**。
+上表中部分组合虽在预算内，仍不推荐叠加：各包已自带完整状态护栏与导航，
+叠加骨架会把大量无关正文压进上下文，稀释注意力，收益远低于成本。
+需要裁定定义时，**换一次对话只装 `SPINE`**；需要主方程正文时，**换一次对话只装 `FORMAL`**。
 
-## 三条使用纪律
+## 四条使用纪律
 
 1. **本目录不是 canonical，也不是定义权的完备闭包。** `SPINE` 是**人工选择的高优先级
-   spine**：registry 列名的文件有 90 余个，骨架只取其中一部分。收了什么、漏了什么、
-   各自角色如何，见每个包的 **§0.4 Manifest 差异报告**。与仓库来源文件冲突时以仓库为准。
+   spine（`ENG-01` 分层瘦身版）**：registry 列名的文件有 90 余个，骨架只取其中核心定义与治理护栏。收了什么、漏了什么、
+   各自角色与外置去向如何，见每个包的 **§0.4 Manifest 差异报告** 与 `SPINE` **§0.5 分层外置路线、方程索引与完备性声明**。与仓库来源文件冲突时以仓库为准。
 2. **§0.2 状态护栏必读**，并注意其三段的权威等级不同：SOURCE EXTRACT 是逐字原文，
    GENERATED INTERPRETATION 是生成器归纳（可能丢失限定条件），USAGE POLICY 是
    由治理文件授权的规则。有疑问以 SOURCE EXTRACT 为准。
-3. **仓库内部工作不要读本目录。** 直接读来源文件。本目录是给外部对话用的。
+3. **动态状态与当前作者裁决不入静态包。** `STATUS.md`、当前 `R3` 作者裁决（`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_*`）与阶段性收敛主稿（`Operations/Proposals/SRT_R3_*`）刻意不在静态包闭包内；涉及最新 `CURRENT NEXT`、`HOLD`、`OPEN` 或作者裁决时，直接读取仓库 `STATUS.md §Fast Status` 及其控制指针。
+4. **仓库内部工作不要读本目录。** 直接读来源文件。本目录是给外部对话用的。
 
 ## 重新生成与校验
 
 ```bash
 uv run python scripts/build_srt_context_bundles.py
-uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
+uv run python scripts/build_srt_context_bundles.py --check     # 生成一致性校验（字节级复现）
+uv run python scripts/test_build_context_bundles.py             # 构造器单元测试 + 轻量检索语义验收
 ```
 
-`--check` 先核对 `inputs_digest`（输入闭包的联合内容摘要，覆盖生成脚本、护栏来源与
-全部正文），再按既有产出 frontmatter 记录的 provenance 重新生成到临时目录逐字比对。
+`--check` 先核对 `inputs_digest`（输入闭包的联合内容摘要，覆盖生成脚本、护栏来源、
+全部正文与 `SPINE §0.5` 索引抽取源），再按既有产出 frontmatter 记录的 provenance 重新生成到临时目录逐字比对。
 唯一的固定参数是 `--generated-date`，且它只是日期标签，不声称内容来源。
 
-护栏层按锚点抽取自 `Operations/` 审计台账与 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md`。**任一锚点失效，脚本会
-直接以非零码退出**，而不会产出一个缺护栏的包。P1-T07 若日后被修订，脚本同样会
+护栏层按锚点抽取自 `Operations/` 审计台账与 `Governance/SRT_DOWNSTREAM_GUARDRAILS.md`；`SPINE §0.5` 方程与桥接索引按锚点抽取自 `Core_22` 与 `Core_21c`。**任一锚点失效，脚本会
+直接以非零码退出**，而不会产出一个缺护栏或缺索引的包。P1-T07 若日后被修订，脚本同样会
 失败，强制复核该护栏是否仍适用——这是刻意的防漂移设计。
 
 真实性判据是 `inputs_digest`（输入闭包的联合内容摘要），不是 `source_commit`。
