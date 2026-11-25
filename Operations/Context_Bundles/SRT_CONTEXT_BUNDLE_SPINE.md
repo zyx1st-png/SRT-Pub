@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-25
-source_commit: e9c0fafc9
+source_commit: e1ed2a77a
 source_branch: eng/eng-01-spine-bundle-layering-2026-11-25
 source_dirty: false
-inputs_digest: 04a78cc8cf5b1240
+inputs_digest: dee0240159894017
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 04a78cc8cf5b1240
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-25 |
-| 来源 commit | `e9c0fafc9` |
+| 来源 commit | `e1ed2a77a` |
 | 来源分支 | `eng/eng-01-spine-bundle-layering-2026-11-25` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
@@ -200,9 +200,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。
 
-本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：
-
-- `03_Bridges/SRT_Selection_Event_CompactCore.md`
+本包**未额外装载**清单跨域快速层（全仓此类快速层仅由 `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` 额外装载：`03_Bridges/SRT_Selection_Event_CompactCore.md`；本包实际装载文件以 §0.1 文件清单为准）。
 
 轴的含义见清单 `axes` 与 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。
 
@@ -212,7 +210,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 - 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；先按清单的 `active_owners` 去取。
 - `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。
-- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。
+- 清单额外装载的跨域快速层（由 `COMPACTCORE` 承载）均为 **P2-P3**，不得用于裁定任何 canonical 定义。
 - 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。
 - 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。
 
@@ -432,7 +430,7 @@ For substantive SRT answers:
 
 > **分层完备性声明（`ENG-01`）**：默认 `SPINE` 仅装载承担核心定义权、形成层 owner（`Core_Law/SRT_One_Formation.md`）、`P0/P1` 核心公理、符号表与治理护栏（含 `Governance/SRT_CLAIM_MODE_AUDIT.md` 全文与 `_SRT_CROSS_DOMAIN_MATRIX.md`）的主干文件。以下三类材料**刻意不内置全文于本包**，也不因外置而被废止或降权：
 >
-> 1. **`FORMAL` 独立方程路线（`Core/SRT_Core_22_Equations.md`）**：主动力学/热力学/桥接方程正文已拆至独立包 `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`；需要完整方程推导时请切换至 `FORMAL` 路线或直接读仓库原文件。局部方程语义仍从属于本包 `SPINE` 对应 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`。
+> 1. **`FORMAL` 独立方程路线（`Core/SRT_Core_22_Equations.md`）**：主动力学/热力学/桥接方程正文已拆至独立包 `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`；需要完整方程推导时请切换至 `FORMAL` 路线或直接读仓库原文件。局部方程语义仍从属于本包 `SPINE` 对应 canonical owner 与 `Governance/SRT_CLAIM_LADDER.md`。（注：外部单次对话禁止默认整包叠加 `SPINE + FORMAL`，但**不禁止**具备仓库访问能力的工具或研究者围绕具体问题按需联合读取局部方程与对应定义 owner 原文件。）
 > 2. **按需桥接层（`Core/SRT_Core_21c_Bridge_Hypotheses.md`）**：`P2/P3/P4` 桥接假说与规范诠释不入默认 `SPINE`，按需直接回读仓库原文件；下游不得将其中任何 `B*` 假说提升为 `P0/P1` 核心定理。
 > 3. **动态运行状态与非 canonical 作者裁决（含 `R3` 骨架裁决）**：`STATUS.md`、`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_*` 与 `Operations/Proposals/SRT_R3_*` 刻意不纳入静态上下文包（避免高 churn 状态更新使全量包频繁过期）；涉及当前 `CURRENT NEXT`、`HOLD`、`OPEN` 进展或最新作者裁决时，必须直接读取仓库 `STATUS.md §Fast Status` 及其控制指针。
 
