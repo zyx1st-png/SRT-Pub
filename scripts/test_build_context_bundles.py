@@ -118,7 +118,7 @@ def test_p1_t07_semantics() -> None:
 # --------------------------------------------------------------------------
 
 def test_guardrail_sections() -> None:
-    for factory in (B.guard_p1_t07, B.guard_dqo, B.guard_hooks, B.guard_shorthands):
+    for factory in (B.guard_p1_t07, B.guard_dqo, B.guard_hooks, B.guard_active_theory, B.guard_shorthands):
         g = factory()
         rendered = B.render_guardrail(g)
         check(f"{g.gid} labels its interpretation as generated",
@@ -127,6 +127,21 @@ def test_guardrail_sections() -> None:
         check(f"{g.gid} cites a policy source", bool(g.policy_source.strip()))
         if g.extracts:
             check(f"{g.gid} labels its source extract", "SOURCE EXTRACT" in rendered)
+
+
+def test_guard_active_theory_schema() -> None:
+    """G5 must read the actual JSON schema (`structural_assimilation`, `behavioral_availability`),
+    not legacy empty fields."""
+    g = B.guard_active_theory()
+    extract_text = "\n".join(text for _, text in g.extracts)
+    check("G5 extracts non-empty Axis A values",
+          "active_complete" in extract_text or "partially_active" in extract_text)
+    check("G5 extracts non-empty Axis B values",
+          "untested" in extract_text or "observed" in extract_text)
+    check("G5 excludes robustly_observed bounded active_complete nodes from gap table",
+          "`NODE-CHOICE-GENERATION`" not in extract_text)
+    check("G5 reports non-zero active_complete count",
+          "0 个达到 `active_complete`" not in g.interpretation)
 
 
 # --------------------------------------------------------------------------
@@ -143,6 +158,9 @@ def test_fail_loud() -> None:
         ("hook audit table", "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
          B.guard_hooks),
         ("claim ladder section", "SRT_AI_START.md", B.build_claim_discipline),
+        ("Core_22 equation index", "Core/SRT_Core_22_Equations.md", B.extract_equation_index),
+        ("Core_21c bridge index", "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+         B.extract_bridge_hypotheses_index),
     ]
     for label, target, fn in cases:
         B.read_text = lambda rel, _t=target: ("" if rel == _t else real(rel))
@@ -399,6 +417,7 @@ def test_loadouts_have_no_duplicate_sources() -> None:
     `COMPACTCORE + DOMAIN_X` 就是这种情况：COMPACTCORE 已含全部领域的 CompactCore，
     领域包又装一遍同样的 cores。即便仍在预算内，也是白费上下文。"""
     contents = {"SPINE": list(B.SPINE),
+                "FORMAL": list(B.FORMAL),
                 "COMPACTCORE": [f for c in B.DOMAINS.values() for f in c["cores"]]}
     for key, cfg in B.DOMAINS.items():
         contents[f"DOMAIN_{key.upper()}"] = [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
@@ -410,6 +429,187 @@ def test_loadouts_have_no_duplicate_sources() -> None:
                 seen[f] = seen.get(f, 0) + 1
         dupes = sorted(f for f, n in seen.items() if n > 1)
         check(f"推荐组合「{label}」无重复来源文件", not dupes, f"重复 {dupes}")
+
+
+def test_index_completeness_and_uniqueness_fail_loud() -> None:
+    """P2-01: 方程与桥接索引必须对部分格式异常与重复编号 fail-loud，避免局部条目静默遗漏。"""
+    real = B.read_text
+    bad_cases = [
+        (
+            "malformed equation heading",
+            "Core/SRT_Core_22_Equations.md",
+            "### Eq-Evo-01: ok\n### Eq-Broken-NoColon\n",
+            B.extract_equation_index,
+        ),
+        (
+            "duplicate equation id",
+            "Core/SRT_Core_22_Equations.md",
+            "### Eq-Evo-01: first\n### Eq-Evo-01: duplicate\n",
+            B.extract_equation_index,
+        ),
+        (
+            "malformed bridge heading",
+            "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+            "## P3-B06: ok\n## P3/P4-B99 missing colon\n",
+            B.extract_bridge_hypotheses_index,
+        ),
+        (
+            "duplicate bridge id",
+            "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+            "## P3-B06: first\n## P3-B06: duplicate\n",
+            B.extract_bridge_hypotheses_index,
+        ),
+    ]
+    for label, target, payload, fn in bad_cases:
+        B.read_text = lambda rel, _t=target, _p=payload: (_p if rel == _t else real(rel))
+        stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
+        try:
+            fn()
+            FAILURES.append(f"index fail-loud {label}: did not abort")
+        except SystemExit as exc:
+            if not exc.code:
+                FAILURES.append(f"index fail-loud {label}: exited 0")
+        finally:
+            sys.stderr.close()
+            sys.stderr = stderr
+            B.read_text = real
+
+
+def test_layered_routing_and_structural_retrieval_reachability() -> None:
+    """长期分层结构契约 + 4/4 结构性检索可达性验收（structural retrieval reachability）。
+
+    本测试与 `--check`（字节级生成一致性）分离，并明确界定为**结构性检索可达性**
+    （验证文件存在、标识可达、索引行号与路由链条），不宣称已完成模型行为验证（Axis B）。
+    不把 ENG-01 阶段性边界（如 ENG-02 前的 NODE-SUBJECTHOOD 排除或额外 15K 余量指标）
+    固化为永久测试锁；正式长期预算硬约束由 `MAX_RECOMMENDED_LOAD`（155K）承担。
+    """
+    # 1. 长期分层结构契约
+    check("SPINE 含 One Formation", "Core_Law/SRT_One_Formation.md" in B.SPINE)
+    check("SPINE 中 One Formation 位于 Generative Spine 与 L0 之后",
+          B.SPINE.index("Core_Law/SRT_Generative_Ontology_Spine.md")
+          < B.SPINE.index("Core_Law/SRT_L0_Metaphysics.md")
+          < B.SPINE.index("Core_Law/SRT_One_Formation.md"))
+    check("SPINE 保留 CLAIM_MODE_AUDIT 全文", "Governance/SRT_CLAIM_MODE_AUDIT.md" in B.SPINE)
+    check("SPINE 保留 CROSS_DOMAIN_MATRIX", "_SRT_CROSS_DOMAIN_MATRIX.md" in B.SPINE)
+    check("SPINE 已移出 Core_21c", "Core/SRT_Core_21c_Bridge_Hypotheses.md" not in B.SPINE)
+    check("SPINE 已移出 Core_22", "Core/SRT_Core_22_Equations.md" not in B.SPINE)
+    check("FORMAL 独立路线收录 Core_22", B.FORMAL == ["Core/SRT_Core_22_Equations.md"])
+
+    # 2. 输入摘要闭包覆盖外置索引源且仍不含 STATUS.md
+    inputs = B.all_inputs()
+    check("输入闭包含 Core_22（FORMAL + SPINE §0.5）", "Core/SRT_Core_22_Equations.md" in inputs)
+    check("输入闭包含 Core_21c（SPINE §0.5 桥接索引）",
+          "Core/SRT_Core_21c_Bridge_Hypotheses.md" in inputs)
+    check("输入闭包含 One Formation", "Core_Law/SRT_One_Formation.md" in inputs)
+
+    # 3. 在临时目录生成并验证 4/4 结构性检索可达性 + G5 装载声明一致性
+    prov = B.Provenance("eng01", "test", "2026-01-01", False, B.inputs_digest())
+    with tempfile.TemporaryDirectory() as td:
+        out = Path(td)
+        B.generate(prov, out)
+
+        spine_text = (out / B.SPINE_BUNDLE_NAME).read_text(encoding="utf-8")
+        formal_text = (out / B.FORMAL_BUNDLE_NAME).read_text(encoding="utf-8")
+        compact_text = (out / "SRT_CONTEXT_BUNDLE_COMPACTCORE.md").read_text(encoding="utf-8")
+        domain_ai_text = (out / "SRT_CONTEXT_BUNDLE_DOMAIN_AI.md").read_text(encoding="utf-8")
+        readme_text = (out / "README.md").read_text(encoding="utf-8")
+
+        # 3a. P1-01: G5 声明必须与当前包实际 Manifest 一致
+        for label, txt in [
+            ("SPINE", spine_text),
+            ("FORMAL", formal_text),
+            ("DOMAIN_AI", domain_ai_text),
+        ]:
+            check(f"P1-01 G5[{label}]: 不误称本包额外装载了清单跨域快速层",
+                  "本包按清单额外装载了以下" not in txt
+                  and "本包**未额外装载**清单跨域快速层" in txt)
+        if B.active_theory_compacts():
+            check("P1-01 G5[COMPACTCORE]: 如实声明本包额外装载了清单跨域快速层",
+                  "本包按清单额外装载了以下跨域快速层" in compact_text)
+
+        # 3b. [1/4] One Formation 结构性可达
+        check("结构可达[One Formation]: SPINE 含完整正文块",
+              "## FILE: `Core_Law/SRT_One_Formation.md`" in spine_text)
+        check("结构可达[One Formation]: 含 Def-OF-1/2/3 标识",
+              all(tok in spine_text for tok in ("Def-OF-1", "Def-OF-2", "Def-OF-3")))
+
+        # 3c. [2/4] FORMAL 方程结构性可达（标题全集一致 + 编号唯一 + 局部跨 owner 检索允许）
+        check("结构可达[FORMAL]: SPINE 含 §0.5 分层外置索引", "## §0.5 " in spine_text)
+        check("结构可达[FORMAL]: SPINE §0.5 指向独立 FORMAL 包",
+              B.FORMAL_BUNDLE_NAME in spine_text)
+        check("结构可达[FORMAL]: SPINE 不再内嵌 Core_22 全文块",
+              "## FILE: `Core/SRT_Core_22_Equations.md`" not in spine_text)
+        eq_lines = (B.REPO_ROOT / "Core/SRT_Core_22_Equations.md").read_text(encoding="utf-8").splitlines()
+        raw_eq_headings = [
+            (i, ln.strip()) for i, ln in enumerate(eq_lines, 1)
+            if re.match(r"^###\s+(?:Eq|Def)-", ln.strip())
+        ]
+        eqs = B.extract_equation_index()
+        eq_ids = [eq_id for _, _, eq_id, _ in eqs]
+        check("结构可达[FORMAL]: 方程索引集合与原文全部 ### Eq/Def 标题无遗漏一致",
+              len(eqs) == len(raw_eq_headings) and len(eqs) > 0,
+              f"indexed={len(eqs)}, raw={len(raw_eq_headings)}")
+        check("结构可达[FORMAL]: 方程编号唯一", len(eq_ids) == len(set(eq_ids)))
+        for _, ln, eq_id, _ in eqs:
+            check(f"结构可达[FORMAL]: {eq_id} 行号 #L{ln} 与原文件一致",
+                  1 <= ln <= len(eq_lines) and eq_id in eq_lines[ln - 1])
+            check(f"结构可达[FORMAL]: {eq_id} 出现在 SPINE §0.5", f"`{eq_id}`" in spine_text)
+        check("结构可达[FORMAL]: FORMAL 包收录 Core_22 全文与从属护栏",
+              "## FILE: `Core/SRT_Core_22_Equations.md`" in formal_text
+              and "改用骨架路线" in formal_text
+              and "不要在本包之上再叠加骨架包" in formal_text)
+        check("P2-02[FORMAL/README]: 明确默认整包互斥不等于禁止按需联合读取局部 owner",
+              "不等于" in formal_text and "联合读取" in formal_text
+              and "不等于" in readme_text and "联合读取" in readme_text)
+
+        # 3d. [3/4] Core_21c 按需桥接假说结构性可达（标题全集一致 + 编号唯一，不硬锁长期数量）
+        check("结构可达[Bridge]: SPINE 不再内嵌 Core_21c 全文块",
+              "## FILE: `Core/SRT_Core_21c_Bridge_Hypotheses.md`" not in spine_text)
+        br_lines = (B.REPO_ROOT / "Core/SRT_Core_21c_Bridge_Hypotheses.md").read_text(encoding="utf-8").splitlines()
+        raw_br_headings = [
+            (i, ln.strip()) for i, ln in enumerate(br_lines, 1)
+            if re.match(r"^##\s+.*(?:\bP\d+[^:]*-B\d+|\bB\d+:)", ln.strip())
+        ]
+        bridges = B.extract_bridge_hypotheses_index()
+        br_ids = [bid for _, bid, _ in bridges]
+        check("结构可达[Bridge]: 桥接索引集合与原文全部 ## P*-B* 标题无遗漏一致",
+              len(bridges) == len(raw_br_headings) and len(bridges) > 0,
+              f"indexed={len(bridges)}, raw={len(raw_br_headings)}")
+        check("结构可达[Bridge]: 桥接假说编号唯一", len(br_ids) == len(set(br_ids)))
+        for ln, bid, _ in bridges:
+            check(f"结构可达[Bridge]: {bid} 行号 #L{ln} 与原文件一致",
+                  1 <= ln <= len(br_lines) and bid in br_lines[ln - 1])
+            check(f"结构可达[Bridge]: {bid} 出现在 SPINE §0.5.2", f"`{bid}`" in spine_text)
+
+        # 3e. [4/4] 动态 STATUS.md §Fast Status -> 当前作者裁决链条结构性可达
+        check("结构可达[R3/Status]: SPINE §0.5.3 与 README 指向 STATUS.md §Fast Status",
+              "STATUS.md" in spine_text and "§Fast Status" in spine_text
+              and "STATUS.md §Fast Status" in readme_text)
+        status_text = (B.REPO_ROOT / "STATUS.md").read_text(encoding="utf-8")
+        m_fast = re.search(r"^## Fast Status\s*$(.*?)(?=^---|\Z)", status_text, re.M | re.S)
+        check("结构可达[R3/Status]: STATUS.md 含 Fast Status 节", m_fast is not None)
+        if m_fast:
+            fast_body = m_fast.group(1)
+            linked = re.findall(r"\]\(([^)#]+\.md)(?:#[^)]+)?\)", fast_body)
+            adjudication_links = [
+                p for p in linked
+                if p.startswith(("01_Source_Intuition/", "Operations/Proposals/"))
+            ]
+            check("结构可达[R3/Status]: Fast Status 含可解析的作者裁决/提案指针",
+                  len(adjudication_links) >= 2, f"got {adjudication_links}")
+            for rel in adjudication_links:
+                check(f"结构可达[R3/Status]: 指针目标存在 {rel}",
+                      (B.REPO_ROOT / rel).is_file())
+
+        # 3f. 正式长期预算硬约束（155K 上限，不叠加额外阶段性余量锁）
+        spine_tok = B.estimate_tokens(spine_text)
+        formal_tok = B.estimate_tokens(formal_text)
+        check("长期预算约束: SPINE 单包 <= MAX_RECOMMENDED_LOAD",
+              spine_tok <= B.MAX_RECOMMENDED_LOAD,
+              f"SPINE={spine_tok:,} > {B.MAX_RECOMMENDED_LOAD:,}")
+        check("长期预算约束: FORMAL 单包 <= MAX_RECOMMENDED_LOAD",
+              formal_tok <= B.MAX_RECOMMENDED_LOAD,
+              f"FORMAL={formal_tok:,} > {B.MAX_RECOMMENDED_LOAD:,}")
 
 
 # --------------------------------------------------------------------------
@@ -502,6 +702,7 @@ def run() -> None:
     test_hook_grouping()
     test_p1_t07_semantics()
     test_guardrail_sections()
+    test_guard_active_theory_schema()
     test_fail_loud()
     test_determinism()
     test_porcelain_path()
@@ -510,6 +711,8 @@ def run() -> None:
     test_manifest_completeness()
     test_no_conflicting_load_instructions()
     test_loadouts_have_no_duplicate_sources()
+    test_index_completeness_and_uniqueness_fail_loud()
+    test_layered_routing_and_structural_retrieval_reachability()
     test_provenance_is_content_digest()
     test_broken_registry_paths_surface()
     test_dirty_excludes_bundle_dir()
