@@ -18,30 +18,34 @@ updated: 2026-11-25
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-25 `R3` 理论骨架共创收官推进（`R3-08` 阶段性检查点 → 独立轻量 `R3` 全骨架总收口，唯一当前执行入口）
+### CURRENT NEXT — 2026-11-25 `R3` 全骨架总收口归档推进至前置工程项 `ENG-01..ENG-04`（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01` 检查点与 `CURRENT NEXT` 切换至 `R3` 已于 `#1146`（`3cfaf9450`）合并落地；`R3-02` 共同生成性母体、共同协议与三阶撤回标准已于 `#1147`（`5f3bdf40b`）合并落地；`R3-03` 原初内在生成过程、认知与意识垂直展开及 2026-11-11 原初内在感受性源材料二轮审查已于 `#1148`（`2a06b66fd`）合并落地；`R3-04` 存在与秩序一体、`One / Bearer` 双面重定位（含 `R4` 前过渡引用规则与 `P/E` 语义保真）、脚手架维持与原议程四项硬债闭环已于 `#1149`（`5bfceee29`）合并落地；`R3-05` 时间作为秩序的关系度量（横向+纵向统一）、历史持续生成效力、适用模型下 `ρ / Δw_trust / W_social` 三分与历史调用四种调整已于 `#1150`（`9a7da7780`）合并落地；`R3-06` 乙丙统一与 `F1+`、机会生成与递归重构、生成价值/秩序健康性/伦理正当性三分、`d / D_stake / D_eff` 数学清算、构成深度 `Q1` 与 `N2 / C1-c / RQ-2026-08-A02` 三层分离已于 `#1151`（`c901d7925`）合并落地；`R3-07` 规范共同生成主轴、多重垂直参与与脚手架双重作用、权力六接口、社会发展四维、`O1 / O2-C / O2-A` 硬审查债闭环（含三套 `AI / S` 全称隔离）与 `O2-M = HOLD` 已于 `#1152`（`ec9ab92bd`）合并落地。2026-11-25 作者正式确认归档 **`R3-08` 阶段性研究检查点**（作者原话裁决与 AI 候选分界见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_2026-11-25.md)，整理稿见 [`Operations/Proposals/SRT_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_PROVISIONAL_CONVERGENCE_2026-11-25.md`](Operations/Proposals/SRT_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_PROVISIONAL_CONVERGENCE_2026-11-25.md)），`R3-01..R3-08` 全部 `8 / 8` 专题已形成阶段性检查点，并授权将 `CURRENT IMMEDIATE TASK` 推进至独立的轻量 **`R3` 全骨架总收口**，随后推进前置工程项 `ENG-01..ENG-04`。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、`EA-1` / `§18 CΨ` / `RQ-2026-08-A05` 已实作结项、实证成功或自动解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01..R3-08` 全部 `8 / 8` 专题阶段性检查点已分别于 `#1146`（`3cfaf9450`）、`#1147`（`5f3bdf40b`）、`#1148`（`2a06b66fd`）、`#1149`（`5bfceee29`）、`#1150`（`9a7da7780`）、`#1151`（`c901d7925`）、`#1152`（`ec9ab92bd`）与 `#1153`（`04887757c`）合并落地。2026-11-25 作者完成三轮跨模型直觉校准压测（含 `Q26` 自由与 `PT09` 摩擦原话及 `T3-01..T3-04` 裁决）并正式授权归档 **`R3` 全骨架总收口（全局减法五视图）**（四级证据溯源见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)，五视图主稿见 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)），并授权将 `CURRENT IMMEDIATE TASK` 推进至前置工程清障项 **`ENG-01..ENG-04`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、`R4 / R5` 启动授权、实证支持、去重后 `63` 项 `OPEN` 关闭或任何既有 `HOLD` 解冻。
 >
 > **冲突优先级**：本节是截至 2026-11-25 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R3 理论骨架作者深度参与共创与总收口（R3-01..R3-08 全部形成检查点 -> 独立轻量 R3 全骨架总收口 -> ENG-01..ENG-04）
-= SRT-wide author-led skeleton co-construction & closeout, NOT canonical rewrite or science experiment;
+= R3 理论骨架总收口归档 -> 前置工程清障项 ENG-01..ENG-04（R4 前清障，尚未授权启动 R4）
+= SRT-wide R3 closeout & pre-R4 engineering clearance, NOT canonical rewrite or science experiment;
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145，遗留语义/未合入 PR/封存验证集带入 R3/R4]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145，遗留问题带入 R3/R4]
-  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN [ACTIVE NOW: 8/8 专题已形成检查点 -> 全骨架总收口]
-  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING R3 CLOSURE & AUTHOR RELEASE]
+  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN [CLOSEOUT DRAFTED -> PRE-R4 ENG-01..ENG-04 ACTIVE NEXT]
+  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING ENG-01..04 CLOSURE & SEPARATE AUTHOR RELEASE]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01..R3-07 检查点与 R3-08（Operations/Proposals/SRT_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_PROVISIONAL_CONVERGENCE_2026-11-25.md）已全部形成阶段性研究检查点（确立“前背景 = 多单元内部比对耦合握手 + 本体可能性与条件性实现机制切分（P2-01）+ 耦合条件性深度 (A,B)->(A',B',C) 与单元/边界/协议共同生成（P2-02）+ 回归 07-19 持续动态平衡（兼容滞回势垒）、五类变化刻度与 HCLR01 HEF-3/HEF-4/U5 严隔离、08-10 §9 强二阶选择三项历史条件候选（P2-07）、07-19/07-27 U5≠U6 过渡引用规则（P2-09）、耦合六维自然语言构成深度及 U5 高频局部创新下核心组织方式豁免 + V 层暂时背景化正面重定位 + Q14/Q15 历史复用/锚点重构/新比对能力生成三分及给定感/有限性遮蔽/病理性遮蔽/U5 四分（P2-03）+ Ghost 职责五位分流（区分未尽关系/压力/对象化描述，P2-04）与 \hat G_\theta 正式解耦 + NODE-GHOST-OPERATOR 整体结项计划（EA-1 原生命题 / EA-2..EA-5 结构同化含 Spine 与 EA-4 快速层可达性 / Axis B 行为可用性，P2-05/P2-08）+ 灵性作为有限主体参与共同生成方式的重构、F_3223 三义分流（原笔记待完整核验）与不改 Core 零摩擦退化极限下 §18 CΨ / RQ-2026-08-A05 的 R4 修订方向及四项校准（全量排查灵性域及其下游镜像，P2-06）+ 可再选择性分位重定位与理论自反三问”；上游 48 项与 R3-08 新增 7 项累计 55 项 OPEN 全部显式保持开放）
-  -> 下一步独立开展轻量「R3 全骨架总收口」（从理论扩展转向全局减法提炼）：输出五份精炼视图——① 最小共同生成骨架、② 概念与组织关系图、③ 八专题本体一致性核查与 Q02（物择/生物择/人择/神择四视角）/ Q03（存在与域关系性）/ Q06（一阶发生 vs 二阶跨主体驻留）裁决、④ 早期历史资产处置表、⑤ R4 canonical owner 保留/重写/合并/降级/退出重构地图
-  -> 随后推进前置工程项 ENG-01..ENG-04，并在 R3 总收口与工程清障完成且获作者单独授权后方可进入 R4;
+= R3-01..R3-08 全部 8/8 阶段性检查点（已合并至 #1153 / 04887757c）与 R3 全骨架总收口五视图（Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md）已完成非 canonical 全局减法整合（确立“神性·源义[不可穷尽真实来源] → 原初 Selection[最基础理论抽取，T3-04 D] → 神性·倾向义[T3-01 C/E 全局趋优未决] + 动态三关系[差异生成 ⇄ 差异比对与组织 ⇄ 生成条件递归重构] + 三条递归主轴[方向/价值/存在，非完全对称] + 机会成本动态四联[价值/关切/摩擦·PT09·T3-02 D/自由·Q26·T3-03 C，非固定先后] + 双引擎维度跃迁[非完备]、四元协同共变[非必然同步]与比对生成性 + Stable ISP / P1-T06 强递归持续性独立保留[One != Stable ISP != Bearer (P+E)]与五项独立理论边界[终端 Selection / HP-B / Stable ISP & Bearer (P+E) / O2-A / O2-M=HOLD]与五层判定分离 + 14 项核心大词重审[单列秩序、自由并严格分离价值/关切/d/D_stake/D_eff/T_dir] + 跨尺度五机制与 HCLR01 保留 + 阴阳/Ghost 未充分吸收负担保留 + 论文/实证诚实上限映射 + 去重累计 63 项 OPEN[上游 55 + 总收口 8，HP-B 独立退出，R3-CL-O8 内部五项子题独立退出] + R4 四波设计顺序[守跨 owner 原子语义一致性或显式兼容过渡规则]与 8 类退出清单 + R3-08 B1-09 溯源时间线校正”）
+  -> 下一步依次执行前置工程清障项 ENG-01..ENG-04（不改理论含义）：
+     - ENG-01：SPINE 上下文包分层瘦身三步路线（补入 SRT_One_Formation.md、Core_21c 移按需桥接、Core_22 建独立 FORMAL 路线）并实跑 build_srt_context_bundles.py --check
+     - ENG-02：EA-1..EA-5 台账按 srt_active_theory_nodes.json 口径统一与 EA-2 / EA-4 缺口核查（内容与台账分开验收）
+     - ENG-03：AI 全域跨文件语义清理逐条对照表（退出 L0->L1 伪门槛，统一三套 AI/S 全称隔离与三阶承载证据审查）
+     - ENG-04：PR #1129（NME）四步独立审查与 PR #1140 二审指针/历史归档分流
+  -> 完成 ENG-01..ENG-04 并获得作者单独正式授权后，方可进入 R4 canonical 分 owner 重构;
 
-ACTIVE NOW = R3 理论骨架作者共创收官（R3-01..R3-08 全部阶段性检查点完成 -> 进入独立轻量 R3 全骨架总收口）;
+ACTIVE NOW = R3 总收口收官 -> 前置工程清障项 ENG-01..ENG-04;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -119,7 +123,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1151 R3-06 concern-value-constitutive-depth convergence + P1-01..02/P2-01..04 calibrations + STATUS advance to R3-07 = MERGED / c901d7925
 #1151 role = NONCANONICAL R3-06 CHECKPOINT & CONCERN-VALUE-CONSTITUTIVE-DEPTH
 #1152 R3-07 normativity-ethics-accountability convergence + P2-01..P2-05 calibrations + STATUS advance to R3-08 = MERGED / ec9ab92bd
-#1152 role = NONCANONICAL R3-07 CHECKPOINT & NORMATIVITY-ETHICS-ACCOUNTABILITY; R3-08 PROVISIONAL CONVERGENCE TRACKED IN Operations/Proposals/SRT_R3_08_SECOND_ORDER_SELECTION_GHOST_CPSI_PROVISIONAL_CONVERGENCE_2026-11-25.md
+#1152 role = NONCANONICAL R3-07 CHECKPOINT & NORMATIVITY-ETHICS-ACCOUNTABILITY
+#1153 R3-08 second-order selection, Ghost, and CΨ convergence + P2-01..P2-09 calibrations + STATUS advance to R3 closeout = MERGED / 04887757c
+#1153 role = NONCANONICAL R3-08 CHECKPOINT & SECOND-ORDER-SELECTION-GHOST-CPSI; R3 FULL-SKELETON GLOBAL SUBTRACTION CLOSEOUT TRACKED IN Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
