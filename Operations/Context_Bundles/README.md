@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: bdaa85c22
+source_commit: 8d1e700db
 source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
 source_dirty: false
 inputs_digest: 5da8c8a81054268f

@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: bdaa85c22
+source_commit: 8d1e700db
 source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
 source_dirty: false
 inputs_digest: 5da8c8a81054268f
@@ -27,7 +27,7 @@ inputs_digest: 5da8c8a81054268f
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `bdaa85c22` |
+| 来源 commit | `8d1e700db` |
 | 来源分支 | `canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
