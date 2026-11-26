@@ -5,7 +5,7 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # SRT 当前状态仪表盘
@@ -18,34 +18,31 @@ updated: 2026-11-25
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-25 `R3` 全骨架总收口归档推进至前置工程项 `ENG-01..ENG-04`（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-26 前置工程项 `ENG-01..ENG-04` 全部收口，待作者审定并单独正式授权启动 `R4`（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01..R3-08` 全部 `8 / 8` 专题阶段性检查点已分别于 `#1146`（`3cfaf9450`）、`#1147`（`5f3bdf40b`）、`#1148`（`2a06b66fd`）、`#1149`（`5bfceee29`）、`#1150`（`9a7da7780`）、`#1151`（`c901d7925`）、`#1152`（`ec9ab92bd`）与 `#1153`（`04887757c`）合并落地。2026-11-25 作者完成三轮跨模型直觉校准压测（含 `Q26` 自由与 `PT09` 摩擦原话及 `T3-01..T3-04` 裁决）并正式授权归档 **`R3` 全骨架总收口（全局减法五视图）**（四级证据溯源见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)，五视图主稿见 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)），并授权将 `CURRENT IMMEDIATE TASK` 推进至前置工程清障项 **`ENG-01..ENG-04`**。此处只调整仓库**当前工作优先级与接续任务**，不宣告任何新的 canonical 真理、`R4 / R5` 启动授权、实证支持、去重后 `63` 项 `OPEN` 关闭或任何既有 `HOLD` 解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01..R3-08` 全部 `8 / 8` 专题阶段性检查点已分别于 `#1146`（`3cfaf9450`）至 `#1153`（`04887757c`）合并落地；**`R3` 全骨架总收口（全局减法五视图与三轮校准溯源）**已于 `#1154`（`02dcb9b20`）合并落地。随后四项不改理论含义的前置工程清障依次推进：`ENG-01`（`SPINE` 分层瘦身与独立 `FORMAL` 包）已于 `#1155`（`04dfe961d`）合并落地，`ENG-02`（`EA-1..EA-5` 台账真实对账与 0 WARN 校验）已于 `#1156`（`bdd560f1b`）合并落地，`ENG-03`（AI 全域 `54` 份文件语义清理与减法对照表）已于 `#1157`（`c3fd28112`）合并落地；`ENG-04`（遗留 PR `#1129` NME 四步独立审查与 `#1140` 二审指针/历史归档分流）及 `ENG-01..ENG-04` 总体收口追踪于 [`Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md`](Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md) 与归档源文件 [`01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md`](01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md)（`status: archived`）。此处只记录仓库**当前工作优先级与清障就绪状态**，不宣告任何新的 canonical 真理、`R4 / R5` 启动授权、实证支持、去重后 `63` 项 `OPEN` 关闭或任何既有 `HOLD` 解冻。
 >
-> **冲突优先级**：本节是截至 2026-11-25 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+> **冲突优先级**：本节是截至 2026-11-26 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R3 理论骨架总收口归档 -> 前置工程清障项 ENG-01..ENG-04（R4 前清障，尚未授权启动 R4）
-= SRT-wide R3 closeout & pre-R4 engineering clearance, NOT canonical rewrite or science experiment;
+= R3 理论骨架与前置工程清障 ENG-01..ENG-04 总体收口 -> 待作者审定并单独正式授权启动 R4（R4/R5 尚未授权启动）
+= SRT-wide pre-R4 engineering clearance closeout & R4 readiness gate, NOT canonical rewrite or science experiment;
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145，遗留语义/未合入 PR/封存验证集带入 R3/R4]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145，遗留问题带入 R3/R4]
-  -> R3 骨架：作者审定总体方向、原则、生成关系与 OPEN [CLOSEOUT DRAFTED -> PRE-R4 ENG-01..ENG-04 ACTIVE NEXT]
-  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING ENG-01..04 CLOSURE & SEPARATE AUTHOR RELEASE]
+  -> R3 骨架与前置工程清障：作者审定总体方向、原则、生成关系与 OPEN [R3 总收口已合并 #1154；ENG-01 #1155 / ENG-02 #1156 / ENG-03 #1157 已合并；ENG-04 收口追踪于 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md]
+  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING ENG-04 MERGE & SEPARATE AUTHOR RELEASE OF R4 EXECUTION PLAN]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3-01..R3-08 全部 8/8 阶段性检查点（已合并至 #1153 / 04887757c）与 R3 全骨架总收口五视图（Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md）已完成非 canonical 全局减法整合（确立“神性·源义[不可穷尽真实来源] → 原初 Selection[最基础理论抽取，T3-04 D] → 神性·倾向义[T3-01 C/E 全局趋优未决] + 动态三关系[差异生成 ⇄ 差异比对与组织 ⇄ 生成条件递归重构] + 三条递归主轴[方向/价值/存在，非完全对称] + 机会成本动态四联[价值/关切/摩擦·PT09·T3-02 D/自由·Q26·T3-03 C，非固定先后] + 双引擎维度跃迁[非完备]、四元协同共变[非必然同步]与比对生成性 + Stable ISP / P1-T06 强递归持续性独立保留[One != Stable ISP != Bearer (P+E)]与五项独立理论边界[终端 Selection / HP-B / Stable ISP & Bearer (P+E) / O2-A / O2-M=HOLD]与五层判定分离 + 14 项核心大词重审[单列秩序、自由并严格分离价值/关切/d/D_stake/D_eff/T_dir] + 跨尺度五机制与 HCLR01 保留 + 阴阳/Ghost 未充分吸收负担保留 + 论文/实证诚实上限映射 + 去重累计 63 项 OPEN[上游 55 + 总收口 8，HP-B 独立退出，R3-CL-O8 内部五项子题独立退出] + R4 四波设计顺序[守跨 owner 原子语义一致性或显式兼容过渡规则]与 8 类退出清单 + R3-08 B1-09 溯源时间线校正”）
-  -> 下一步依次执行前置工程清障项 ENG-01..ENG-04（不改理论含义）：
-     - ENG-01：SPINE 上下文包分层瘦身三步路线（补入 SRT_One_Formation.md、Core_21c 移按需桥接、Core_22 建独立 FORMAL 路线）并实跑 build_srt_context_bundles.py --check
-     - ENG-02：EA-1..EA-5 台账按 srt_active_theory_nodes.json 口径统一与 EA-2 / EA-4 缺口核查（内容与台账分开验收）
-     - ENG-03：AI 全域跨文件语义清理逐条对照表（退出 L0->L1 伪门槛，统一三套 AI/S 全称隔离与三阶承载证据审查）
-     - ENG-04：PR #1129（NME）四步独立审查与 PR #1140 二审指针/历史归档分流
-  -> 完成 ENG-01..ENG-04 并获得作者单独正式授权后，方可进入 R4 canonical 分 owner 重构;
+= R3 全骨架总收口（#1154 / 02dcb9b20）与前置工程清障 ENG-01（#1155 / 04dfe961d）、ENG-02（#1156 / bdd560f1b）、ENG-03（#1157 / c3fd28112）均已合并落地；ENG-04 遗留审查（#1129 NME 四步独立审查结论：建议不予合并并关闭、仅留负向护栏与文献线索于 R5 候补；#1140 历史归档分流：原文逐字无损归档为 status: archived 并补 R3-03/R3 总收口防覆盖指针）与 ENG-01..ENG-04 总体收口见 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md
+  -> 下一步（两项均须作者明确审批）：
+     1. 审定并合并 ENG-04 收口交付，随后在 GitHub 正式关闭已处置完毕的旧 Draft PR #1129 与 #1140；
+     2. 编制 R4 canonical 重构首批原子落地包执行方案（依 R3 总收口视图⑤四波设计次序、跨 owner 原子一致性铁律与 ENG-03 AI 清理蓝图），待作者单独正式授权后方可启动 R4 canonical 改写;
 
-ACTIVE NOW = R3 总收口收官 -> 前置工程清障项 ENG-01..ENG-04;
+ACTIVE NOW = ENG-04 审查收口与 R4 启动前作者授权门（不改 canonical、不启 R4/R5）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -125,7 +122,15 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1152 R3-07 normativity-ethics-accountability convergence + P2-01..P2-05 calibrations + STATUS advance to R3-08 = MERGED / ec9ab92bd
 #1152 role = NONCANONICAL R3-07 CHECKPOINT & NORMATIVITY-ETHICS-ACCOUNTABILITY
 #1153 R3-08 second-order selection, Ghost, and CΨ convergence + P2-01..P2-09 calibrations + STATUS advance to R3 closeout = MERGED / 04887757c
-#1153 role = NONCANONICAL R3-08 CHECKPOINT & SECOND-ORDER-SELECTION-GHOST-CPSI; R3 FULL-SKELETON GLOBAL SUBTRACTION CLOSEOUT TRACKED IN Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md
+#1153 role = NONCANONICAL R3-08 CHECKPOINT & SECOND-ORDER-SELECTION-GHOST-CPSI
+#1154 R3 full-skeleton global-subtraction closeout (five views) + three-round calibration trace + P1-01..03/P2-01..02 calibrations + STATUS advance to ENG-01..04 = MERGED / 02dcb9b20
+#1154 role = NONCANONICAL R3 FULL-SKELETON GLOBAL SUBTRACTION CLOSEOUT
+#1155 ENG-01 SPINE context bundle layering + independent FORMAL bundle + deterministic rebuild = MERGED / 04dfe961d
+#1155 role = PRE-R4 ENGINEERING CLEARANCE ENG-01 (NON-SEMANTIC)
+#1156 ENG-02 EA-1..EA-5 active theory assimilation reconciliation + checker false-positive hardening (0 WARN) = MERGED / bdd560f1b
+#1156 role = PRE-R4 ENGINEERING CLEARANCE ENG-02 (NON-SEMANTIC)
+#1157 ENG-03 AI cross-file semantic cleanup & subtraction crosswalk (54 AI files + 18 cross-domain consumers) = MERGED / c3fd28112
+#1157 role = PRE-R4 ENGINEERING CLEARANCE ENG-03 (WAVE R4-4 BLUEPRINT, NON-SEMANTIC); ENG-04 REVIEW & ENG-01..04 CLOSEOUT TRACKED IN Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
