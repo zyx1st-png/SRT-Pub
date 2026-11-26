@@ -18,31 +18,30 @@ updated: 2026-11-26
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-26 前置工程项 `ENG-01..ENG-04` 全部收口，待作者审定并单独正式授权启动 `R4`（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-26 前置工程项 `ENG-01..ENG-04` 已完成交付，下一步编制 `R4` 首批原子落地包执行方案并提交作者单独正式授权（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01..R3-08` 全部 `8 / 8` 专题阶段性检查点已分别于 `#1146`（`3cfaf9450`）至 `#1153`（`04887757c`）合并落地；**`R3` 全骨架总收口（全局减法五视图与三轮校准溯源）**已于 `#1154`（`02dcb9b20`）合并落地。随后四项不改理论含义的前置工程清障依次推进：`ENG-01`（`SPINE` 分层瘦身与独立 `FORMAL` 包）已于 `#1155`（`04dfe961d`）合并落地，`ENG-02`（`EA-1..EA-5` 台账真实对账与 0 WARN 校验）已于 `#1156`（`bdd560f1b`）合并落地，`ENG-03`（AI 全域 `54` 份文件语义清理与减法对照表）已于 `#1157`（`c3fd28112`）合并落地；`ENG-04`（遗留 PR `#1129` NME 四步独立审查与 `#1140` 二审指针/历史归档分流）及 `ENG-01..ENG-04` 总体收口追踪于 [`Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md`](Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md) 与归档源文件 [`01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md`](01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md)（`status: archived`）。此处只记录仓库**当前工作优先级与清障就绪状态**，不宣告任何新的 canonical 真理、`R4 / R5` 启动授权、实证支持、去重后 `63` 项 `OPEN` 关闭或任何既有 `HOLD` 解冻。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 本轮主要整合交付与 `R3` 裁决议程已于 `#1145`（`25721de51`）合并落地；`R3-01..R3-08` 全部 `8 / 8` 专题阶段性检查点已分别于 `#1146`（`3cfaf9450`）至 `#1153`（`04887757c`）合并落地；**`R3` 全骨架总收口（全局减法五视图与三轮校准溯源）**已于 `#1154`（`02dcb9b20`）合并落地。随后四项不改理论含义的前置工程清障全部完成工程交付：`ENG-01`（`SPINE` 分层瘦身与独立 `FORMAL` 包）已于 `#1155`（`04dfe961d`）合并落地，`ENG-02`（`EA-1..EA-5` 台账真实对账与 0 WARN 校验）已于 `#1156`（`bdd560f1b`）合并落地，`ENG-03`（AI 全域 `54` 份文件语义清理与减法对照表）已于 `#1157`（`c3fd28112`）合并落地，`ENG-04`（遗留 PR `#1129` NME 四步独立审查与 `#1140` 二审指针/历史归档分流）及 `ENG-01..ENG-04` 总体收口交付于 [`Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md`](Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md) 与归档源文件 [`01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md`](01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md)（`status: archived`）。此处只记录仓库**当前工作优先级与清障就绪状态**，不提前宣告遗留旧 PR 已关闭，亦不宣告任何新的 canonical 真理、`R4 / R5` 启动授权、实证支持、去重后 `63` 项 `OPEN` 关闭或任何既有 `HOLD` 解冻。
 >
 > **冲突优先级**：本节是截至 2026-11-26 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R3 理论骨架与前置工程清障 ENG-01..ENG-04 总体收口 -> 待作者审定并单独正式授权启动 R4（R4/R5 尚未授权启动）
-= SRT-wide pre-R4 engineering clearance closeout & R4 readiness gate, NOT canonical rewrite or science experiment;
+= 编制 R4 canonical 重构首批原子落地包执行方案并提交作者单独正式授权（ENG-01..ENG-04 已完成工程交付；R4/R5 尚未授权启动）
+= Prepare R4 first-wave atomic landing execution plan for separate author release, NOT canonical rewrite or science experiment;
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145，遗留语义/未合入 PR/封存验证集带入 R3/R4]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145，遗留问题带入 R3/R4]
-  -> R3 骨架与前置工程清障：作者审定总体方向、原则、生成关系与 OPEN [R3 总收口已合并 #1154；ENG-01 #1155 / ENG-02 #1156 / ENG-03 #1157 已合并；ENG-04 收口追踪于 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md]
-  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING ENG-04 MERGE & SEPARATE AUTHOR RELEASE OF R4 EXECUTION PLAN]
+  -> R3 骨架与前置工程清障：作者审定总体方向、原则、生成关系与 OPEN [R3 总收口已合并 #1154；ENG-01 #1155 / ENG-02 #1156 / ENG-03 #1157 已合并；ENG-04 独立审查、#1140 历史归档与总体收口已交付于 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md]
+  -> R4 canonical：依据审定骨架分 owner 重构 [PENDING R4 FIRST-WAVE ATOMIC EXECUTION PLAN & SEPARATE AUTHOR RELEASE]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= R3 全骨架总收口（#1154 / 02dcb9b20）与前置工程清障 ENG-01（#1155 / 04dfe961d）、ENG-02（#1156 / bdd560f1b）、ENG-03（#1157 / c3fd28112）均已合并落地；ENG-04 遗留审查（#1129 NME 四步独立审查结论：建议不予合并并关闭、仅留负向护栏与文献线索于 R5 候补；#1140 历史归档分流：原文逐字无损归档为 status: archived 并补 R3-03/R3 总收口防覆盖指针）与 ENG-01..ENG-04 总体收口见 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md
-  -> 下一步（两项均须作者明确审批）：
-     1. 审定并合并 ENG-04 收口交付，随后在 GitHub 正式关闭已处置完毕的旧 Draft PR #1129 与 #1140；
-     2. 编制 R4 canonical 重构首批原子落地包执行方案（依 R3 总收口视图⑤四波设计次序、跨 owner 原子一致性铁律与 ENG-03 AI 清理蓝图），待作者单独正式授权后方可启动 R4 canonical 改写;
+= 前置工程清障 ENG-01..ENG-04 已完成全部工程交付（#1155/#1156/#1157 与 ENG-04 报告 Operations/Proposals/SRT_ENG04_PR1129_PR1140_REVIEW_AND_ENG_CLOSEOUT_2026-11-26.md 及 #1140 归档源文件 01_Source_Intuition/SRT_AUTHOR_TRACE_FEELING_COGNITION_ACTUALISATION_2026-11-11.md）：
+  -> 唯一下一步准备任务：编制 R4 canonical 重构首批原子落地包执行方案（以 Spine 与 One Formation 正面理论重构为主，同步界定直接依赖的核心定义 owner、减法目标、原子合并边界、未决事项与验收标准），提交作者单独正式授权；获授权前绝不执行 canonical 实质改写或 R5 实验；
+  -> 剩余行政收尾（不阻塞方案编制）：按 ENG-04 结论由作者在 GitHub 正式关闭已处置完毕的旧 Draft PR #1129 与 #1140（本页不提前声明二者已关闭）;
 
-ACTIVE NOW = ENG-04 审查收口与 R4 启动前作者授权门（不改 canonical、不启 R4/R5）;
+ACTIVE NOW = 编制 R4 首批原子落地包执行方案待作者单独正式授权（不改 canonical、不启 R4/R5；遗留 NME 与 2026-11-11 源记录草案关闭属行政收尾）;
 R4/R5 = 后续规划，未经作者单独授权不提前启动 canonical 改写或实验;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
