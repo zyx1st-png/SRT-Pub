@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: e56ebd8bf
-source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
+source_commit: 64820c22d
+source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
 source_dirty: false
-inputs_digest: c7c92cdfa26c5d8c
+inputs_digest: 89d2676e20aaf8b0
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: c7c92cdfa26c5d8c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `e56ebd8bf` |
-| 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
+| 来源 commit | `64820c22d` |
+| 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -180,24 +180,24 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > |---|---|---|---|---|
 > | `NODE-SELECTION-ONTOLOGY` | active_complete | untested | — | — |
 > | `NODE-L0-L1-L2` | active_complete | untested | — | — |
-> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile (q symbol deferred pending R5 residual tests; colliding 2026-07-23/24 draft glyphs remain embargoed; bare scalar o retired in R4-A) |
 > | `NODE-PSI-F` | active_complete | untested | — | — |
 > | `NODE-T-DIR` | active_complete | untested | — | — |
-> | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
+> | `NODE-GHOST-OPERATOR` | active_complete | untested | — | — |
 > | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
 > | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` | partially_active | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` | engineered_not_active | untested | — | — |
+> | `NODE-SOCIAL-L2` | active_complete | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` | active_complete | untested | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | — |
 
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：10 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 5 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：14 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 9 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
@@ -3281,6 +3281,15 @@ No selector, subject, agent or stable operator-pattern is required before primit
 
 Attention, intention, agency, embodied parameters, normalization, cost, gradients, fixed points and readout rules belong to stronger realization / domain layers unless independently established at the relevant claim level.
 
+### Downstream Ghost Source-Card Compression Boundary (`NODE-GHOST-OPERATOR EA-1`, `R4-C1` sync)
+
+To prevent the historical label *"Ghost Operator"* from blurring formal representation with unresolved nonclosure dynamics, `P0-04` fixes the separation **`\hat{G}_\theta != primitive Selection != 幽灵实体`** while routing the three author-confirmed Ghost source cards (`2026-07-19` nonclosure/yin-yang dynamic balance, `2026-07-27` `U5` selection-mechanism self-exemption, `2026-08-10` Simondon `Operation → Structure → Operation`) to their active downstream L1 mechanism owners (explicitly **downstream of P0**, adding no P0 axiom or new symbol):
+
+1. **Nonclosure & object-friction mutual writing (`07-19`)**: objectification locally relieves rather than annihilates reality-change pressure; finite convergence and unexhausted nonclosure co-exist in continuous dynamic balance (retiring switch-like close-then-reopen models), with object and friction mutually rewriting each other → `Core_Law/SRT_Reference_Dynamics.md §1.5`, `Core/SRT_Core_13a_Operator_Basics.md §0`.
+2. **Historical operator-structure loop (`08-10`)**: in formed realizations, `\hat{G}_\theta` is both a structure sedimented by prior selections and the current converging operation (`Operation_t → Structure_{t+1} → Operation_{t+1}`), never a static external chooser → `Core_Law/SRT_Reference_Dynamics.md §1.5`, `Core_Law/SRT_Individuation.md §4.6`.
+3. **`U5` meta-selection self-exemption (`07-27`)**: choice absolutization occurs most fundamentally when a formed selection mechanism exits subsequent selection and disguises its own selection history as neutral background (`U5` author-selected; `U6` 4 visible facets derived) → `Core_Law/SRT_Occlusion_Dynamics.md §4.1`, `Core/SRT_Core_12b_Ontology_L2.md §0`.
+4. **Open tensions preserved**: `T-GH-01..07` and V-layer legitimate temporary backgrounding (`T-CU-04`) remain explicitly **`OPEN`**.
+
 ---
 
 ## P0 Non-Flatness Boundary
@@ -4373,7 +4382,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 | **L₀** | `L_0` | Open / Non-Preclosed Aspect | Model-facing notation for Selection's open / non-preclosed aspect before determinate actuality in the representation at hand. It is not a pregiven completed set, inventory or warehouse of all possibilities. | Analytic / model-facing aspect; no measure or cardinality fixed by registration | Metaphysical authority remains `Core_Law/SRT_L0_Metaphysics.md` under `Core_Law/SRT_Generative_Ontology_Spine.md`. **Domain projection**: an `∞`-dimensional Hilbert space or another declared state space is a physics / statistics realization, not the universal atomic definition. |
 | **L₁** | `L_1` | Determinate-Actuality / Manifest Aspect | Model-facing notation for Selection under determinate actuality / manifestation; not a product chosen by a prior chooser. | Thin: manifest actuality / reality slice (domain-dependent realization) | Core-facing analytic aspect. **EX-A**: manifest event actuality does not by itself imply anchoring persistence, structural stability, or stable-ISP identity. Domain realizations do not replace `Core_Law/SRT_L0_Metaphysics.md` or the Generative Ontology Spine. |
 | **L₂** | `L_2` | Retained Historical-Efficacy / Stabilized-Constraint Aspect | Model-facing notation for retained or sedimented historical efficacy and stabilized constraints where such retention is established. | Realization-dependent; no universal manifold fixed by registration | Selection occurrence does not automatically establish L₂-grade retained history, durable trace or stabilization. Local L₂ models must state their retention / writeback conditions. |
-| **Ĝ** | `\hat{G}` | Ghost Operator | Formal / formed / model-level role-carrier for a declared Selection realization; an $L_0 \to L_1$ form is a model representation, not the metaphysical definition of primitive Selection. | Operator / model role | `\hat{G}_\theta != primitive Selection != 幽灵实体`; `Ĝ` is neither a prior chooser nor the cause of actualisation. Domain implementations are plural. Never use plain `G` for this. |
+| **Ĝ** | `\hat{G}` | Ghost Operator | Formal / formed / model-level role-carrier for a declared Selection realization; an $L_0 \to L_1$ form is a model representation, not the metaphysical definition of primitive Selection. | Operator / model role | `\hat{G}_\theta != primitive Selection != 幽灵实体`; `Ĝ` is neither a prior chooser nor the cause of actualisation. Domain implementations are plural. Never use plain `G` for this. Active downstream compression of the three Ghost source cards (`07-19` nonclosure dynamic balance & object-friction mutual writing, `08-10` Simondon `Operation → Structure → Operation` operator historicity, `07-27` `U5` selection-mechanism self-exemption) and 5-duty triage live in `Core_Law/SRT_Reference_Dynamics.md §1.5`, `Core/SRT_Core_13a_Operator_Basics.md §0`, `Core_Law/SRT_Occlusion_Dynamics.md §4.1`, and `Core/SRT_Core_21_Minimal_Axioms.md` (`P0-04` pointer); no separate "Yin operator" `\hat{G}_-` or `\chi = Yang/(Yang+Yin)` symbol is admitted (`T-GH-01..07` remain `OPEN`). |
 | **Ĝ†** | `\hat{G}^\dagger` | Reverse-Writing Operator (Adjoint) | Formal role-carrier for a **gated, declared** history-writeback model $L_1 \to L_2$: $\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$ when that model's admission conditions are met. | Operator (adjoint of $\hat{G}_\theta$ under the declared non-commutative model) | Core model source `Core/SRT_Core_12b_Ontology_L2.md` **Ax-L2-06b**; writeback-magnitude source `Core/SRT_Core_13a_Operator_Basics.md` **Ax-Op-03b**. Registration does not imply that every Selection produces retained history. Mirrors the `Ĝ` caution: formal role-carrier, not a prior entity or cause. `Ĝ†_{encoding} = Ĥ ∘ Ĝ†_θ` is a neuro realization. Never use plain `G†` or an ad-hoc writeback symbol for this. |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
 | **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity (`Def-d-canonical`); geometric capacity (`D_eff`), stake-gated spectral diversity (`D_stake`), vector, and gate readings are distinct and require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`. Conceptual interface between canonical `d` and generalized concern (`PT06 C` / `P1-05`) remains `OPEN`. Falsified `d_canonical ≡ d_stakes`, `D_eff ≥ d_stakes`, and `Δd_free = D_eff - d_stakes ≥ 0` are retired. Do not mix scalar `d`, `D_stake`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation. |
@@ -4490,7 +4499,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 
 18. **C-A — global-optimum scope guard** (author-decided 2026-08-12; `R4-A` boundary sync 2026-11-26): this decision adds **no symbol** and does not repurpose `\Omega`. Bare `\Omega` remains Ontological Consistency under Rule 4; it must not be reused for a reachable-path set, a theological source horizon, or a global optimum. A model-local optimum must state the finite position, reachable／admissible domain, comparison rule or functional, horizon, constraints, and failure conditions; write those indices locally rather than registering a repo-wide optimum glyph. Regulative horizons are non-attainable L₁/P2 or P5 language; finite attractors remain P3/P4 model objects. A universe-wide semantic／evaluative optimum (`PT10 E`) is not a current positive SRT object. Technical “global optimum” usage remains valid inside a fully declared optimization problem and does not license universe-wide or normative extrapolation. **Boundary with `T3-01 C/E`**: `C-A` blocks universe-wide moral/evaluative optima and does not close the separate `OPEN` non-moral theoretical inquiry into whether generation exhibits an objective intrinsic global optimizing or extremal orientation (`Core_Law/SRT_Generative_Ontology_Spine.md §1`). Decision record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. C-A does not decide the separate `Ψ_f → 0` valence question (CΨ).
 
-19. **`S` namespace isolation** (`ENG-03 / R4-A`, 2026-11-26): three `S`-prefixed taxonomies exist across the repository and must **never** be conflated or left unqualified: (a) **primitive `S0`** (`Selection` ontological anchor in `Spine`), (b) **AI 赌注谱系 `S0–S4`** (AI stake-bearing operational taxonomy in `_SRT_D_VALUE_CANONICAL.md §3` and `_SRT_CROSS_DOMAIN_MATRIX.md §1`), and (c) **Subjecthood Threshold `S0–S6`** (subjecthood ladder in `Core_Law/SRT_Subjecthood_Threshold.md`). Bare `S` must not be used as a canonical sentience tensor, and the legacy equation `\rho \equiv I / d` is retired and forbidden in canonical use.
+19. **`S` namespace isolation** (`ENG-03 / R4-A / R4-C1`, 2026-11-26): three `S`-prefixed taxonomies exist across the repository and must **never** be conflated or left unqualified: (a) **primitive `S0`** (`Selection` ontological anchor in `Spine`), (b) **AI 赌注谱系 `S0–S4`** (AI stake-bearing operational taxonomy in `AI/AI_POSITIONING_NOTE.md`, `_SRT_D_VALUE_CANONICAL.md §3`, and `_SRT_CROSS_DOMAIN_MATRIX.md §1`), and (c) **Subjecthood Threshold `S0–S6`** (conditional subjecthood/agency/responsibility audit interface in `Philosophy/SRT_Subjecthood_Threshold_Interface.md`), alongside the orthogonal **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`). Bare `S` must not be used as a canonical sentience tensor, and the legacy equation `\rho \equiv I / d` is retired and forbidden in canonical use.
 
 20. **`07-23/24` embargo, `q` deferral, `A-9` no new `Ψ_f` sub-symbols, and retired canonical vocabulary** (`R4-A`, 2026-11-26): (a) colliding draft glyphs from `2026-07-23/24` remain embargoed and must not be introduced into canonical files; (b) no new canonical scalar symbol `q` is registered for constitutive depth (describe constitutive depth via natural-language structural profiles per `_SRT_D_VALUE_CANONICAL.md §2`); (c) under the controlling `A-9` adjudication (`2026-09-25`), no new canonical `Ψ_f^{...}` subtype symbols are admitted—legacy `Ψ_f^{maint}` and `ΔΨ_f^{active}` remain historical model-local aliases only; (d) bare `o` is retired as a canonical symbol; (e) **「神择」is retired from formal canonical theory vocabulary** (formal canonical theory uses `神性·源义`、`神性·倾向义`、`整体共同生成视域` per `Core_Law/SRT_Generative_Ontology_Spine.md §1`), while「神择」is explicitly retained for historical provenance and *From Existence to Order* book-level prose.
 

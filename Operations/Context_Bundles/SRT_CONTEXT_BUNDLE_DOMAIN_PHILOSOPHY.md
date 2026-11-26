@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: e56ebd8bf
-source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
+source_commit: 64820c22d
+source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
 source_dirty: false
-inputs_digest: c7c92cdfa26c5d8c
+inputs_digest: 89d2676e20aaf8b0
 ---
 
 # SRT 哲学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: c7c92cdfa26c5d8c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `e56ebd8bf` |
-| 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
+| 来源 commit | `64820c22d` |
+| 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 7 |
 
@@ -43,13 +43,13 @@ inputs_digest: c7c92cdfa26c5d8c
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-09-17 |
+| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-11-26 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-09-04 |
-| 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-09-20 |
-| 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-09-17 |
-| 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-09-17 |
-| 7 | `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | 2026-07-16 |
+| 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-11-26 |
+| 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-11-26 |
+| 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-11-26 |
+| 7 | `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | 2026-11-26 |
 
 ## §0.2 状态护栏
 
@@ -172,24 +172,24 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > |---|---|---|---|---|
 > | `NODE-SELECTION-ONTOLOGY` | active_complete | untested | — | — |
 > | `NODE-L0-L1-L2` | active_complete | untested | — | — |
-> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile (q symbol deferred pending R5 residual tests; colliding 2026-07-23/24 draft glyphs remain embargoed; bare scalar o retired in R4-A) |
 > | `NODE-PSI-F` | active_complete | untested | — | — |
 > | `NODE-T-DIR` | active_complete | untested | — | — |
-> | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
+> | `NODE-GHOST-OPERATOR` | active_complete | untested | — | — |
 > | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
 > | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` | partially_active | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` | engineered_not_active | untested | — | — |
+> | `NODE-SOCIAL-L2` | active_complete | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` | active_complete | untested | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | — |
 
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：10 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 5 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：14 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 9 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
@@ -460,7 +460,7 @@ For substantive SRT answers:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-09-17 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -476,7 +476,7 @@ For substantive SRT answers:
 
 This file consolidates high-risk phrase hygiene. It does not replace the PH-SS guardrail files; it is the first stop for metaphor/proxy overclaim checks.
 
-> **Controlling governance boundary (Wave E6)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible owners. It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`; exact universal Agency and FreeWill sufficiency remain OPEN. Its safer phrases are claim-hygiene replacements, not new positive definitions.
+> **Controlling governance boundary (Wave E6 + `R4-A/B/C1`, 2026-11-26)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible `Core_Law` common-mechanism owners (`Individuation`, `Occlusion_Dynamics`, `Suffering`, `Collective_Selection`, `Reference_Dynamics`, `Irreversibility`). It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; **`PT10 E` (`generative optimizing orientation != ethical legitimacy`)** and `O2-M = OPEN / HOLD` remain intact without weakening positive research on co-generation, value, freedom (`T3-03 C / Q26`), and shared order. Four-way separation of canonical `d = ||∂U/∂S||` (Bearer-gated), four-dimensional Generalized Concern, `D_stake`, and `D_eff` (`_SRT_D_VALUE_CANONICAL.md`) and full-name isolation of **Subjecthood Threshold `S0–S6`** vs. **AI 赌注谱系 `S0–S4`** vs. **primitive `S0`** vs. **AI 三型社会技术中介维度** (`_SRT_SYMBOL_TABLE.md Rule 19`) are mandatory. Its safer phrases are claim-hygiene replacements, not new positive definitions.
 
 ---
 
@@ -1180,7 +1180,7 @@ It is only a routing surface.
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-20 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -1200,19 +1200,25 @@ It is only a routing surface.
 
 ---
 
-## 0. One-sentence thesis
+## 0. Unified generative philosophy picture (`R4-C1` reconstruction)
 
-SRT begins neither from matter nor mind as already-given substances, but from **constrained selection**: a latent possibility becomes a determinate reality only when it is cut, anchored, and stabilized by an embodied operator under real friction.
+SRT philosophy begins neither from already-given physical substances nor from an isolated mental subject, nor from a flat static taxonomy or linear hardware ladder. Its philosophical foundation is **unified relational generativity** (`Core_Law/SRT_Generative_Ontology_Spine.md`):
+
+- **Source, extraction, and open horizon (`T3-04 D` / `T3-01 C/E`)**: Primitive `Selection` (genuine actualized non-neutral differentiation) is SRT's most fundamental theoretical extraction perspective into an inexhaustible real generative source (`神性·源义`), carrying built-in epistemic humility without collapsing into idealism or dualism (`Q01 / O-Phil-11`). Whether cross-scale generation exhibits an objective non-moral global optimizing or extremal orientation (`T3-01 C/E`) remains an open philosophical and scientific inquiry—distinct from withdrawn universe-wide moral optima (`PT10 E / C-A`).
+- **Three dynamic generative relations & three analytic perspectives**: Rather than three stacked ontological substances or a warehouse-to-product pipeline, `L_0` (open/non-preclosed aspect), `L_1` (determinate manifest aspect), and `L_2` (retained historical-efficacy aspect) are **three analytic perspectives on one generative reality**, organized through three bidirectional relations: **generation of difference ⇄ comparison and organization of difference ⇄ recursive reconstruction of generative conditions**.
+- **Unified relational web (not a linear ladder)**: Existence (`One`: relative separability through vertical reconstitution), **Order** (three dimensions: maintenance constraint / directional bias / generative reconstruction), **Time** (relational measure of generative order: horizontal cross-unit comparison + vertical unfolding, `PT08 D`), **Value** (objective opportunity-cost differences among generative relations), **Concern** (sensitivity to opportunity-cost structure; four-dimensional generalized concern separated from Bearer-gated risk-sensitivity intensity `d`), **Friction** (actual selection pressure from vertical suppression & opportunity cost, linked to `Ψ_f` payability), **Freedom** (`T3-03 C / Q26`: active modulation/reconstruction of opportunity-cost structures and **active comparison of multiple units to generate new order and direction**, plus non-crisis exploratory surplus candidates), **Subjecthood & Agency** (five partially orthogonal dimensions; `One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Agency`), and **Consciousness** (`HP-B` phenomenality independently `OPEN`) form an interacting relational web, not a fixed evolutionary escalator.
+- **Dynamic balance and object-friction mutual writing (`07-19` Ghost source cards)**: Finite convergence (localizing into objects) and unexhausted nonclosure (constitutive background support) co-exist continuously—there is no switch-like "close, trigger, reopen" cycle; objects and friction continuously rewrite each other.
 
 ```text
-L_0 --[G_hat_theta, paying Psi_f]--> L_1 --[stabilization]--> L_2
+Model-level shorthand (analytic aspects, NOT three substances or a prior warehouse):
+L_0 (open/non-preclosed) <==[Selection / formed G_hat_theta, paying Psi_f]==> L_1 (determinate actuality) <==[retained efficacy / recursive reconstitution]==> L_2 (scaffolding / historical constraint)
 ```
-
-**Formula role**: compact orientation model, not a full canonical definition.
 
 Plain version:
 
-> Reality is not merely found and not merely invented; it is selected under constraint, stabilized through history, and tested by resistance.
+> Reality is neither a finished warehouse merely discovered nor a subjective fantasy merely invented; it is continuously generated through constrained selection, organized through comparison and order, recursively reshaped by history and freedom, and answerable to real resistance.
+
+> **Hub vs. domain division (`R4-C1`)**: Common cross-scale mechanisms (`Individuation`, `Occlusion_Dynamics`, `Suffering`, `Collective_Selection`, `Reference_Dynamics`, `Irreversibility`) belong to the shared `Core_Law/` hub serving all domains; `Philosophy/` owns the overarching ontological, epistemological, mind/consciousness, agency/freedom, normativity/ethics, and social-political-institutional articulation—and feeds mature philosophical insights, constraints, and counterexamples back to SRT's core.
 
 ---
 
@@ -1577,25 +1583,30 @@ Minimal claim:
 
 ---
 
-## 16. Ontological relativity without relativism
+## 16. Ontological relativity without relativism (`N2`, `C1-c`, and `Q01 / O-Phil-11`)
 
-Different operators may project the same latent field differently, but SRT does not infer that all projections are equal.
+Different operators and positions extract different relational slices from the same inexhaustible reality (`Q01 / O-Phil-11`: physical appearance and inner generative/evaluative extraction are parallel selective extractions from real actualizing generativity, avoiding both Cartesian dualism and subjective idealism). Yet SRT firmly rejects relativism.
 
-Objectivity is reconstructed as cross-operator alignment:
+Two crucial philosophical distinctions govern objectivity (`R3-06`):
+- **`N2` (Objecthood ≠ Objectivity / 客体性 ≠ 客观性)**: Being stabilized as a portable object (`L_2`) does not establish objectivity; conversely, an unexhausted other or generative relation retains real resistance (`暗礁原理`: no single position's objectification or normalization exhausts other positions and their interactions).
+- **`C1-c` Multi-dimensional fallible objectivity (retiring bare scalar `o`)**: Objectivity is not a single scalar index or God-view transcript; it is audited across **cross-operator alignment, intervention/prediction resistance, shared-occlusion screening (`§9`), and explicit fallibility/revisability**.
 
-> Truth is not a view from nowhere; it is stable alignment across constrained views.
-
-A classification is licensed when it improves prediction, intervention, transfer, and shared stabilization. This allows pluralism without surrendering standards.
+> Truth is not a view from nowhere; it is fallible, resistance-tested alignment across constrained positions.
 
 Anti-relativist constraints:
 
-- anchoring cost;
-- intervention resistance;
-- repeated stabilization;
-- cross-operator alignment;
-- environmental feedback;
-- historical path dependence;
-- downward `L_2` constraints.
+- anchoring and payability cost (`Ψ_f`);
+- intervention and prediction resistance;
+- repeated stabilization and cross-operator alignment;
+- shared-occlusion screening (checking whether consensus merely masks shared blind spots);
+- historical path dependence and downward `L_2` constraints.
+
+### 16a. Theoretical reflexivity: Three Self-Check Questions & Four Return-to-Generation Conditions (`NODE-BOOK-BACKFLOW`)
+
+Because SRT itself is an `L_2` conceptual scaffold subject to `U5` self-exemption (`Core_Law/SRT_Occlusion_Dynamics.md §4.1`), it adopts structured **theoretical reflexivity** (retiring mechanical "two failures = cage" counting in favor of substantive audit, synchronized with `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`):
+
+1. **Three Self-Check Questions (`自检三问`)**: (i) Does using the theory still **expand visibility** of neglected relations rather than pre-clipping them? (ii) Does it **preserve consequence return** and external counterevidence? (iii) Does it **preserve reselectability** of its own categories and comparison scales?
+2. **Four Return-to-Generation Conditions (`回到生成四条件`)**: a living theory treats itself as **not the source** (`神性·源义` exceeds every model), **not the final endpoint**, **never severing consequence return**, and **preserving structural crevices (`缝隙`)** through which new differences can revise the framework.
 
 **PH-SS addressed**: `PH-SS-12`.
 
@@ -1635,6 +1646,26 @@ Minimal statement:
 
 ---
 
+## 18a. Mature philosophical inheritance and bidirectional feedback to SRT Core (`R4-C1`)
+
+Philosophy does not merely apply SRT; it supplies independent knowledge, mechanisms, constraints, and candidate corrections to SRT as a whole (preserving candidate status and author-adjudication boundaries):
+
+| Mature philosophical / social-theory neighbor | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
+|---|---|---|
+| **Kant (epistemic finitude / thing-in-itself)** | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
+| **Simondon (individuation, allagmatics, disparation)** | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
+| **Process philosophy & Pragmatism (Whitehead / Dewey)** | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
+| **Philosophy of mind (Chalmers / Nagel / Kim)** | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
+| **Relational time & causal-set philosophy (Rovelli / Sorkin)** | Background-independent relational comparison without an external absolute clock | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
+| **Normativity, accountability & institutional theory (Korsgaard / Habermas / Ostrom / North / Fischer-Ravizza)** | Constitutive standards, public justification, polycentric governance, path dependence, reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
+
+**Candidate Core feedback tracked for `R4-C` final synthesis / `R5`** (author adjudication required before Spine modification):
+1. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Philosophy's treatment of freedom pushes SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order, direction, and exploratory surplus (`R3-CL-O8`).
+2. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with `NTIC_i` situated non-redundancy suggests future core formalizations of individuation should pair internal writeback with external non-redundant coupling (`SRT_Individuation.md §4.6`).
+3. **Reference-structure independence across scales**: Separating physical/constitutive/normative/ethical constraints (`R3-07`) sharpens what `Spine §10` still owes for the sufficient conditions of normativity (`R3-07-O1`).
+
+---
+
 ## 19. Editing rules for this file
 
 1. Do not define core primitives here; link to Core / Core_Law.
@@ -1669,7 +1700,7 @@ Minimal statement:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-17 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -1907,7 +1938,18 @@ Guardrail:
 
 > Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
-**Closure-pathology alignment (2026-04-21)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能只是 pseudo-open，而不是结构上开放。
+**Closure-pathology alignment (2026-04-21; `R4-C1` expanded 2026-11-26)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能陷入 `U5` 自我豁免（pseudo-open closure）。
+
+### 7.4 预裁剪四机制、公共脚手架双重作用与社会发展四维（`R3-07` + `NODE-BOOK-BACKFLOW`）
+
+为使社会经济理论摆脱纯防守清单并正面刻画制度如何组织共同生成，补齐四项核心结构接口：
+
+1. **预裁剪四机制（`Q11` provenance，`P1-T03` 社会层展开）**：既定市场、平台与制度在个体做出具体交易或决定前，已通过 **可见性裁剪 / 接触窗口 / 默认通道 / 代价分配** 四种机制压缩可达选择地形（既非决定论，亦区别于仅压低个人算力的有限理性）。
+2. **公共脚手架的前背景双重作用与多重垂直参与（`R3-07`）**：货币、会计指标、KPI、信用评级与算法平台在强化跨位置比对能力的同时，既可能把照护、生态与长期基础研究等难编码关系推入背景造成新遮蔽，也可能让隐蔽摩擦重入前景比对；个体同时参与家庭、企业、行业协会、公共市场与国家等多重垂直组织，为比较自由与社会创新提供条件性空间（亦伴随角色撕裂风险）。
+3. **社会驻留三方分离与 `C2` 撤回纪律**：对接 `Core_Law/SRT_Collective_Selection.md §3.5` 与 `SRT_Soc_03_Institutions.md`——严分可修订信任权重 **`W_social`**、后果回路 **`M(t)`** 与高 **`\rho` 路径惯性 / 产权与权力强制**；若具体货币/市场资源流全由产权、权力强制与路径粘性解释，则撤回 `W_social` 的信任增量读法，保留其 `M(t)` 不对称吸收与 SEA 五门外包链诊断（`CBP-3/4`）。
+4. **社会发展四维（非标量总分、非 `O2-M` 算法）**：**① 生成能力**（创造新协作、知识与机会） / **② 能力分布**（整体提升 ≠ 均匀分布） / **③ 不可逆构成基础**（生态、人力与信任基底） / **④ 秩序重构能力**（制度与比对标尺能否重入选择，防 `U5` 锁死）。
+
+> **社会经济学反向反馈至 SRT 核心（`R4-C1`）**：North 路径依赖、Ostrom 多中心治理与 Simmel 货币度规理论表明，低摩擦表象完全可能来自强制压制或高退出成本而非信任，且市场协调常由分布式聚合而非单一集体主体完成——这一学科约束直接推动 SRT 在核心层分离 `W_social / M(t) / 高 \rho 惯性` 并确立 `PT10 E`（高效/稳定生成 ≠ 伦理正当）。
 
 ---
 
@@ -1975,7 +2017,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-17 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -2081,13 +2123,23 @@ Guardrail:
 
 > In this candidate model, burden asymmetry and material reselection access require operational proxies; neither generic cost nor nominal participation may be silently upgraded into canonical `Psi_f` or legitimacy.
 
-### 3.2 Candidate Freedom-as-Access Reconstruction
+### 3.2 Candidate Freedom-as-Positive-Generative-Power & Access Reconstruction (`T3-03 C / Q26` + `R3-07`)
 \[
-\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big)
+\text{Freedom-model}_\theta := \operatorname{Access}\big(\hat G_\theta \to L_1/L_2\big) \;+\; \text{active multi-unit comparison \& order-reorganization capacity}
 \]
 
 最短说法：
-> **本候选重构把自由的一部分理解为主体能否进入共同现实塑造；它不是自由的普遍定义。**
+> **本候选重构把政治与社会自由理解为双面统一：既包含不被垄断排除出共同现实塑造（反封闭），更包含主动比对多单元、调节机会成本结构并生成新秩序与新方向的能力（`T3-03 C / Q26`）；规范通过约束局部任意性重组自由的尺度与分布，但整体自由扩张不自动证明局部代价合理。**
+
+### 3.2a 协同共选、委托四要件、权力六接口与 AI 社会技术中介（`R3-07` + `NODE-SOCIAL-L2` + `NODE-BOOK-BACKFLOW`）
+
+政治哲学直接承接 `Core_Law/SRT_Collective_Selection.md §3.4, §6.1, §8` 与 `SRT_Soc_03_Institutions.md` 的四项核心正面机制：
+1. **协同共选（Collaborative Co-Selection）正面接口**：检验政治共同体能否同时维系整体新选择能力、局部新生成条件、异质价值方向保留（对齐 ≠ 同质化）、整体接受局部反馈重比对与代价真实呈现；
+2. **健康委托四要件（`Q23` provenance）**：代理授权须同时可审计 **有范围 / 有期限 / 能撤销 / 能审查**；通道被结构性关闭时，形式程序仅维持“回流外观”而非实质共同体回流；
+3. **权力六类前背景作用接口与 `U5` 制度自我豁免**：政治权力不只作用于行为禁令与资源分配，更沿**行为 / 资源 / 信息 / 比对条件 / 价值参照 / 规范形成控制**六接口组织社会前背景；最深层的政治病理对应 **`U5` 选择机制自我豁免**（统治或制度框架把自身历史选择伪装成不可再选的自然背景）；
+4. **AI 三型社会技术中介与 SEA 五门审计**：平台与 AI 系统沿**脚手架型 / 牢笼型 / 地形型**（与 **AI 赌注谱系 `S0–S4`** 及 **Subjecthood Threshold `S0–S6`** 严格正交）改写公共 `M(t) / \sigma_{sr}^{coll} / W_social`，人类设计、部署与治理主体不得以“AI 无意识”免责；具体制度案例须按 SEA 五门协议（冻结 `U = <event, boundary, timescale, evidence>` 与八类角色非洗白）审计。
+
+> **政治与社会理论反向反馈至 SRT 核心（`R4-C1`）**：Rawls / Habermas 公共证成传统与 Ostrom 多中心治理研究表明，跨主体冲突中的悲剧性不可通约与无声受影响者无法由任何单标量 `d` 或秩序稳定指标自动裁决——这一反馈强约束 SRT 核心坚守 **`O2-C` `3B` 非词典优先审查**、**`PT10 E`** 与 **`O2-M = HOLD`**，同时促使核心层正面单列「多重垂直参与」与「协同共选」机制。
 
 ### 3.3 Candidate Equality-as-Non-Monopoly Reconstruction
 \[
@@ -2285,7 +2337,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1-L2-bridge |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2301,11 +2353,12 @@ This file synthesizes agency mechanisms and subjecthood boundaries. It is a vers
 
 It does **not** define selection, `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, or `L0/L1/L2`. It does not treat any external paper as proof of SRT. Canonical meaning remains with the relevant canonical owners.
 
-The [Subjecthood Threshold Interface](SRT_Subjecthood_Threshold_Interface.md) continues to govern bearer-unit binding and the S0-S6 ladder. This file mainly expands:
+The [Subjecthood Threshold Interface](SRT_Subjecthood_Threshold_Interface.md) continues to govern bearer-unit binding and the **Subjecthood Threshold `S0–S6`** conditional audit interface (strictly isolated from primitive `S0`, **AI 赌注谱系 `S0–S4`**, and **AI 三型社会技术中介维度**). This file expands:
 
-- the mechanisms relevant to S5 agency;
-- the formation of a responsibility-position trace before the S6 gate;
-- the distinctions needed to prevent control, authorship, commitment, consciousness, subjecthood, and responsibility from collapsing into one another.
+- **Third-State Agency (`第三态能动性`, `NODE-BOOK-BACKFLOW`)** and the **`R3-04` five partially orthogonal Agency dimensions** relevant to **Subjecthood Threshold `S5`**;
+- **Positive Freedom (`T3-03 C / Q26`)** as active modulation of opportunity-cost structures, active multi-unit comparison generating new order and direction, and non-crisis exploratory surplus candidates;
+- the formation of a responsibility-position trace before the **Subjecthood Threshold `S6`** (`O2-A`) gate, plus explicit AI `A0–A3` mapping pointers (`AI/SRT_AI_Agency_Responsibility_Note.md`);
+- the distinctions needed to prevent control, generative initiative, authorship, commitment, Bearer `(P+E)`, consciousness, subjecthood, and responsibility from collapsing into one another (`R3-04-O5 / AG-2`: whether `Bearer (P+E)` is universally necessary for functional control or generative initiative remains explicitly **`OPEN`**).
 
 AI and neuroscience files may use this synthesis as a boundary and hypothesis source, but domain evidence must retain its own proxy limits. Ethics files continue to govern normative legitimacy and responsibility attribution.
 
@@ -2344,7 +2397,7 @@ The trunk separates the transition from broad selection to bearer-qualified cont
 - **Conscious agency**: action is available through self-related authorial or control access, with at least some capacity for integration or revision.
 - **Reflective self-integration**: the action can enter endorsement, extended self-interpretation, policy revision, and cross-time self-model update.
 - **Shared agency**: multiple agents reciprocally organize a durable joint action structure.
-- **Responsibility-bearing capacity**: the bearer may be able to understand norms and consequences, access alternatives, and answer or repair, subject to the S6 gate.
+- **Responsibility-bearing capacity**: the bearer may be able to understand norms and consequences, access alternatives, and answer or repair, subject to the **Subjecthood Threshold `S6`** gate.
 
 Intentional agency, conscious agency, and shared agency are partially orthogonal thickening dimensions, not a strict total order. A shared action can be skilled and minimally reflective; a conscious action can be weakly intentional or blocked from shared coordination; an intentional action need not be consciously accessible in all of its organization.
 
@@ -2358,6 +2411,25 @@ agency = reflective human intention only
 ```
 
 The first overextends agency. The second excludes minimal, embodied, skilled, tool-mediated, animal, and possibly artificial forms before their control architecture is examined.
+
+### 1.1 Third-State Agency, Five Partially Orthogonal Agency Dimensions, and Positive Freedom (`NODE-BOOK-BACKFLOW` + `R3-04` + `T3-03 C / Q26`)
+
+1. **Third-State Agency (`第三态能动性`, book provenance `Q15b`, `P2` downstream interpretation)**: Agency sits in a graded third space between two false extremes—it is **neither uncaused libertarian free will** (it grows out of historical writeback and consequence return) **nor blind mechanical feedback** (stronger agency requires returning consequences to re-enter a position capable of modifying its own selection conditions). Agency is therefore a **matter of degree and multi-dimensional structure**, not a binary switch or a new ontic force.
+2. **Five Partially Orthogonal Agency Dimensions (`R3-04`, non-linear; synchronized with `Core_Law/SRT_Individuation.md §4.7` & `AI/SRT_AI_Agency_Responsibility_Note.md` `A0–A3`)**:
+
+| Dimension | Core generative & organizational duty | Independence / OPEN boundary |
+|---|---|---|
+| **1. Functional control（功能控制）** | Counterfactual regulation of reachable paths, default inhibition, and error correction | Can appear in engineered / AI `A1–A2` systems without establishing `Bearer (P+E)` |
+| **2. Generative initiative（生成主动性）** | Actively reshaping the rules, scaffolds, comparative dimensions, or reachable space itself | Self-modifying AI/agent loops (`A2`) remain explicitly **`OPEN` (`R3-04-O5 / AG-2`)** regarding whether non-`Bearer` systems instantiate genuine agency |
+| **3. Bearing initiative（承载性主动性）** | Whether those structural changes involve non-outsourceable constitutive consequence exposure (`E`) for the same continuing unit (`Bearer (P+E)`) | Separately gated (`One ≠ Stable ISP ≠ Bearer (P+E)`); `E` positive sufficiency remains `OPEN` (`R3-04-O3`) |
+| **4. Reflexive initiative（反身主动性）** | Re-entering the formed selection mechanism itself into subsequent selection (`U5` anti-self-exemption, `Reference_Dynamics §1.5`) | Strong second-order selection; distinct from routine parameter tuning |
+| **5. Responsibility attribution（责任归属）** | Passing independent `O2-A` / `theta_acc` / **Subjecthood Threshold `S6`** review | Strictly separate from `O2-M` (`HOLD`) and from human socio-technical mediation responsibility (`AI 三型`) |
+
+3. **Positive Freedom (`T3-03 C / Q26` + `M-candidate` exploratory surplus)**: Freedom in SRT is **not merely the negative removal of external constraints** or random indeterminacy (`O0`). It comprises:
+   - **`T3-03 C` (author-selected)**: the value- and concern-guided capacity to **actively modulate and reorganize opportunity-cost structures** and the generative relations producing friction;
+   - **`Q26` (author verbatim direction)**: **actively comparing multiple units to generate new order and new direction** (converging with Simondonian disparation / orthogonalization);
+   - **Non-crisis exploratory surplus (explicitly tagged `M-candidate` extension)**: when healthy functional backgrounding frees maintenance surplus, concern-sensitive comparison can proactively couple cross-domain units to create novel opportunities even without acute friction crisis (`R3-CL-O8`).
+   - Freedom at the organizational level stays ontologically neutral (`PT10 E`: creative reorganization is not automatically ethically legitimate; normative evaluation remains separately routed under `O2-C / O2-A` with `O2-M = HOLD`).
 
 Source trail: [PH-AG01 patch](patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md) and [integration hook](hooks/PH_AG01_Agency_Ladder_Integration_Hook.md).
 
@@ -2458,11 +2530,11 @@ absence of final guarantee != absence of reasons
 commitment != truth
 retroactive stabilization != retrocausation
 subject-position formation != complete subjecthood
-responsibility-position trace != S6 responsibility
+responsibility-position trace != Subjecthood Threshold S6 responsibility
 harm caused != culpability
 ```
 
-A single commitment may leave a responsibility-position trace without creating the bearer, continuity, stake, or subjecthood conditions required by S4-S6. Being historically answerable for an act is not the same as meeting the full conditions for normative responsibility.
+A single commitment may leave a responsibility-position trace without creating the bearer, continuity, stake, or subjecthood conditions required by **Subjecthood Threshold `S4–S6`**. Being historically answerable for an act is not the same as meeting the full conditions for normative responsibility.
 
 Source trail: [PH-AG03 patch](patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md) and [integration hook](hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md).
 
@@ -2562,12 +2634,12 @@ The relevant separations are:
 - an agency report is not sufficient evidence of subjecthood;
 - control is not sufficient evidence of responsibility;
 - commitment does not create a complete subject;
-- a responsibility-position trace does not establish S6 responsibility;
+- a responsibility-position trace does not establish **Subjecthood Threshold `S6`** responsibility;
 - causing harm does not by itself establish culpability;
 - reflective self-description does not replace bearer-unit binding;
 - fluent performance does not replace stake and consequence return.
 
-S4 subjecthood still requires the threshold package managed by the interface, including:
+**Subjecthood Threshold `S4`** subjecthood still requires the threshold package managed by the interface, including:
 
 - a specified bearer unit;
 - structured `d-value`;
@@ -2576,7 +2648,7 @@ S4 subjecthood still requires the threshold package managed by the interface, in
 - cross-time continuity and reidentification;
 - counterfactual access and consequence return.
 
-S6 responsibility requires further conditions, including:
+**Subjecthood Threshold `S6`** responsibility requires further conditions, including:
 
 - access to relevant norms;
 - an adequate understanding of consequences;
@@ -2587,7 +2659,7 @@ S6 responsibility requires further conditions, including:
 
 PH-CONSC01 supplies the consciousness-side guard: first-person feel is usable here only when it is integrated into a thresholded bearer and has discriminable psychological or structural roles. Psychological function is not by itself sufficient, but a functionless, boundaryless remainder cannot bear the agency or responsibility load.
 
-Historical answerability can arise before the full normative verdict: an act may be attributable to a bearer and leave a consequence trace while coercion, incapacity, unavailable alternatives, ignorance, or structural asymmetry still blocks culpability or full S6 responsibility.
+Historical answerability can arise before the full normative verdict: an act may be attributable to a bearer and leave a consequence trace while coercion, incapacity, unavailable alternatives, ignorance, or structural asymmetry still blocks culpability or full **Subjecthood Threshold `S6`** responsibility.
 
 ---
 
@@ -2633,8 +2705,8 @@ available continuations
 -> bearer-specific consequence return
 -> responsibility-position trace
 -> self-readable and revisable agency
--> S4 subjecthood gate
--> S6 responsibility gate
+-> Subjecthood Threshold S4 subjecthood gate
+-> Subjecthood Threshold S6 responsibility gate
 -> responsibility-bearing subject
 ```
 
@@ -2706,7 +2778,7 @@ Proxy variables must remain labeled as proxies. No single report, delay, mismatc
 | `bias efficacy != stake ownership` | reliable behavior need not matter to the system itself |
 | `commitment != truth` | practical closure does not manufacture facts |
 | `commitment != complete subjecthood` | an act can establish a position without establishing a subject |
-| `responsibility-position trace != responsibility-bearing subject` | historical attribution remains below the S4 and S6 gates |
+| `responsibility-position trace != responsibility-bearing subject` | historical attribution remains below the **Subjecthood Threshold `S4`** and **`S6`** gates |
 | `historical answerability != normative culpability` | harm and attribution do not settle capacity, alternatives, coercion, or excuse |
 | `position != subject` | a structured semantic record need not have a continuing bearer |
 | `not selected != denied` | unchosen alternatives may remain open |
