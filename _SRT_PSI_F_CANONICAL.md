@@ -66,15 +66,13 @@ $$\boxed{\Psi_f := \text{在已声明的 } \hat{G}_\theta \text{ 形成态／模
 
 ### Def-Ψ-2: Fisher 信息几何投影与记号分层 ⭐ FORMAL WORKING FORM
 
-当选择域可表示为平滑统计流形 $\{p(x\mid\theta)\}$ 且局部二阶展开有效时，Fisher–Rao metric $g^F_{ij}(\theta) = \mathbb{E}_{p(x\mid\theta)}[\partial_i \log p\,\partial_j \log p]$ 诱导局部二阶几何投影与路径泛函：
+- **Def-Ψ-2a（局部二阶信息几何投影，禁止裸等号）**：当选择域可表示为平滑统计流形 $\{p(x\mid\theta)\}$ 且局部二阶展开有效时，Fisher–Rao metric $g^F_{ij}(\theta) = \mathbb{E}_{p(x\mid\theta)}[\partial_i \log p\,\partial_j \log p]$ 诱导局部二阶几何代价与有限路径泛函：
 
 $$\boxed{\delta \Psi_f^{geom} := \frac{1}{2} d\theta^\top g_F(\theta) d\theta + O(\|d\theta\|^3)}, \qquad \boxed{\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g^F_{ij}(\theta)\,\dot{\theta}^i\dot{\theta}^j}\,dt}$$
 
 （能量式累计可写 $\mathcal{E}_{\Psi}^{geom}[\gamma] = \frac{1}{2}\int_\gamma \dot{\theta}^\top g_F(\theta)\dot{\theta}\,dt$。）
-
-**`Ψ_f` 与 `Φ` 分层**：$\boxed{\Phi(\Delta t) = \int_{\Delta t} \Psi_f(t)\,dt}$。`Ψ_f(x,t)` 表局部摩擦负荷，`Φ(\Delta t)` 表时间窗内累积总账，`Ψ_f^{geom}` 表信息几何投影。
-
-**适用边界**：仅当参数空间可解释、二阶近似未被奇异点/相变/冗余破坏、Fisher 方向确实回流闭包与后续选择能力，且本尺度状态空间与 proxy 已声明时有效；否则标记为 `projection failure`。
+- **Def-Ψ-2b（适用条件与失效边界）**：仅当参数空间可解释、二阶近似未被奇异点/相变/参数冗余破坏、Fisher 可分辨方向确实回流闭包与后续选择能力，且本尺度状态空间与 proxy 已声明时有效；否则必须标记为 `projection failure`，不得将几何距离冒充全局 `Ψ_f`。
+- **Def-Ψ-2c（`Ψ_f` 与 `Φ` 分层）**：$\boxed{\Phi(\Delta t) = \int_{\Delta t} \Psi_f(t)\,dt}$。`Ψ_f(x,t)` 表局部摩擦负荷，`Φ(\Delta t)` 表时间窗内累积总账，`Ψ_f^{geom}` 表信息几何投影；不得在未声明尺度与积分窗口时混写。
 
 ### Def-Ψ-3: 可支付性条件 ⭐ CROSS-SCALE CANONICAL INVARIANT
 
@@ -118,8 +116,28 @@ $$\boxed{\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{in the weak-fi
 
 ## §6 实验代理与推断性选择摩擦规则
 
-- 痛苦/焦虑/惊讶接近报警读数或逼近不可支付边界时的变化率，**不是 `Ψ_f` 本体**；HRV / SCR / 皮质醇 / ATP / BOLD–CMRO2 等均为观察侧代理（分预算侧 / 负荷侧 / 塌缩侧），须同时满足**跃迁特异性、可支付相关性与竞争解释排除**三门槛。
-- 失败条件：若 `Ψ_f` 在具体任务中无法产出区别于一般任务难度、预测误差、原始能耗或主观努力的跃迁代价签名，则对应桥接须收窄或撤回。
+### Def-Ψ-Obs-1: 现象学与代理测量规则
+
+- **痛苦 / 焦虑 / 惊讶**：不是 `Ψ_f` 本体，更接近其尖峰、变化率或逼近不可支付边界时的报警读数；
+- **HRV / SCR / 皮质醇 / ROS / ATP / BOLD–CMRO2 / 情态词比例**：不是 `Ψ_f` 本体，而是观察侧代理；实验上须至少拆为三侧：**预算侧**（可动用选择预算 / 恢复能力 / 协同缓冲）、**负荷侧**（当前承担的摩擦负荷）与**塌缩侧**（逼近或越过可支付边界时的失稳信号）；
+- **Landauer 代价 / ATP / 制度摩擦**：不是同单位的同一数值，而是同一阻抗结构在不同尺度的投影读数。
+
+### `Ψ_f` as Inferred Selection Friction（被推断的选择摩擦与测量硬边界）
+
+`Ψ_f` 不必作为实体性物质直接测量，而可从**结构化跃迁困难度（structured transition difficulty）**中推断，当且仅当该困难度追踪“在可支付约束下压缩、维持或重构现实切片同时保住闭包、延续与后续选择能力”的负担：
+
+```text
+Ψ_f != task difficulty       Ψ_f != subjective effort    Ψ_f != pain
+Ψ_f != raw energy cost       Ψ_f != Fisher metric        Ψ_f != prediction error
+Ψ_f != any single stress marker
+```
+
+- **候选操作化迹象（bridge-level indicators，非本体等同）**：切换代价上升、扰动后恢复时间延长、表征或策略竞争、更新路径长度/曲率负担、重构中的闭包维持失败、不可逆或非对称跃迁路径、学习/重框/规范切换早期的非单调波动，以及逼近不可支付边界时的过载签名。
+- **三项最低桥接准入门槛（Minimum Bridge Criteria，须同时满足）**：
+  1. **跃迁特异性（Transition specificity）**：信号绑定于选择结构的改变、维持或重构，而不只是任务本身困难；
+  2. **可支付相关性（Payability relevance）**：信号直接关系到系统承担负担时能否保住闭包、延续性与后续选择能力；
+  3. **竞争解释排除（Alternative exclusion）**：信号不能被一般努力、任务难度、预测误差、原始能耗、痛苦或测量噪声完全解释。
+- **失败条件（Failure condition）**：若 `Ψ_f` 在具体任务中无法产出区别于一般损失、预测误差、能耗、痛苦或任务难度的跃迁代价签名，则对应桥接削弱并须收窄或撤回。
 
 ---
 

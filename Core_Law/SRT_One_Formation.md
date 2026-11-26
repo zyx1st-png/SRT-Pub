@@ -65,41 +65,75 @@ Minimum commitments:
 
 ---
 
-## §2. Def-OF-2 — `One` at D4a Strength: Existence and Order Perspectives (`2A`)
+## §2. Def-OF-2 — `One` at D4a Strength: Positive Formation, Dependence Reorganization, and Existence/Order Perspectives (`2A`)
 
-**`One`** is a **relatively independent vertical generative organization carried by a Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially enters and conditions later Selection, and later Selection generates renewed vertical organization capable of carrying that conditioning role again.
+**`One`** is a **formed process-unity carried by a relatively separable Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially enters and conditions later Selection, and later Selection generates renewed vertical organization capable of carrying that conditioning role again.
+
+This is an admission-level semantic description at **D4a strength**, not a formal necessary-and-sufficient theorem. It is intentionally thinner than `Stable ISP` and intentionally stronger than one-shot verticalization, mere external statistical regularity, generic persistence, or ordinary causal recurrence:
 
 ```text
+surface statistical regularity / accidental macro-pattern != One;
+process persistence / self-maintenance / repeated similarity / ordinary path dependence != One automatically;
+static background conditioning alone != One.
+
 vertical organization_t
   -> materially conditions later Selection_(t+1)
   -> generates renewed vertical organization_(t+1)
   -> carries renewed conditioning role
   -> repeated non-equivalent reconstitution supports relative continuation separability
-  -> One.
+  -> One (D4a strength).
 ```
 
-### §2.1 Existence Perspective and Order Perspective (No Second Ontic Noun)
+### §2.1 Positive Formation Mechanisms: Dependence Reorganization, Anti-Pre-One Circularity, Scaffolding & Multi-`One` Ecology (`R3-04`)
 
-Because `One` is inherently a dynamic generative organization, SRT examines it—and relations among multiple `One`s—through **two complementary analytical perspectives** rather than splitting existence and order into two substances or inventing a separate bearer noun:
+`One` formation is not merely a negative filter; it is a positive cross-scale generative mechanism with four core commitments:
 
-1. **存在视角（Existence Perspective）**：考察该相对独立组织如何通过垂直再构成**形成、维持与延续**，以及如何在扰动与成分更替中保持相对可分的延续路径。
-2. **秩序视角（Order Perspective）**：考察生成关系如何**发展、形成方向偏向、演化变化并发生生成重构**，覆盖三个维度：
-   - **维系约束（Maintenance constraint）**：稳定与延续所需的关系边界（稳定性是持续条件，但**不是**所有秩序成立的必要条件；僵化锁定亦属秩序，即不健康固化）；
-   - **方向偏向（Directional bias）**：先前选择与结构关系对后续可达方向的倾斜塑造；
-   - **生成重构（Generative reconstruction）**：在耦合、摩擦或盈余条件下打开新接口、新维度与新组织方式。
-   - **跨组织域（Multi-`One` Scope）**：秩序视角**不仅**描述单个 `One` 的内部发展，还直接考察**多个 `One` 之间的相互作用、公共脚手架与新高阶组织的形成**。
+1. **Relative independence arises from reorganizing dependencies, not eliminating them**:
+   - Relative independence is **not** achieved by reducing or severing dependencies; it arises when previously dispersed generative conditions are reorganized through endogenous foreground–background comparison and vertical organization into shared generative conditions, thereby supporting new relative independence at a higher scale. **Deeper local interdependence can generate higher-scale relative independence.**
+   - *Cross-scale assembly path (`2026-07-12` trace)*: when multiple already-formed units couple into a higher-order whole, decreasing local independent selectability can open genuinely new effective selective capability at the whole level. This is a core cross-scale assembly pathway—whose essence is **reorganizing how selectability is structured**, not merely adding or subtracting option count—and is **not** presupposed as the sole universal prerequisite for every `One`.
+2. **Anti-pre-One circularity (how the first `One` can form)**:
+   - Multi-unit spontaneous foreground–background collaboration that generates and maintains a vertical structure **does not presuppose that the participating units are already `One`s**. Participating terms may be unformed local generative loci/relations (first-order emergence) *or* already-formed `One`s entering cross-scale assembly—each carrying distinct organizational conditions.
+3. **Dual function of Scaffolding & role-relativity of `One` / Scaffolding / `L2`**:
+   - Public language, biological membranes, institutional norms, and cognitive schemas act as **scaffolds** carrying **two coupled positive functions**: (a) **organizing differential comparison conditions** (`R3-01`), and (b) **actively maintaining already-generated vertical structures** (`R3-04`).
+   - **`One`, Scaffolding, and `L2` are scale- and position-relative analytical roles, not three disjoint ontic entities**: **`One`** asks whether an organization possesses a relatively independent vertical reconstitution path; **Scaffolding** asks how that organization maintains and organizes other generative relations; **`L2`** asks how prior generated results persist and continue to condition later Selection. An organization satisfying `One` (molecule, cell, institution) often simultaneously serves as Scaffolding for higher-scale generation; conversely, not every Scaffold possesses its own independent reconstitution path (compatible with `Core_Law/SRT_Collective_Selection.md T-COLL-1`).
+4. **Ontological neutrality & multi-`One` ecology**:
+   - Because vertical reconstitution does not presuppose rigid spatial walls or autopoiesis, SRT explicitly encompasses **nested `One`s, overlapping `One`s, `One`s sharing generative conditions, and mutually conflicting `One`s**.
+   - `One` is **ontologically neutral**: a tumor, an addiction loop, or a rigid pathological institution that actually satisfies Selection-mediated vertical reconstitution is a genuinely formed `One`. Harm or rigidity does not erase its ontic standing; multi-scale `One` conflicts route directly to `_SRT_D_VALUE_CANONICAL.md` (concern/value) and `O1 / O2-C / O2-A` (normativity) without smuggling ethics into `One` admission.
 
-### §2.2 Relative Separability, Physical Maintenance Regimes, and Four Boundary Types
+### §2.2 Existence Perspective and Order Perspective (No Second Ontic Noun)
 
-- **Relative continuation separability / formed locality** means the relevant reconstitution dependence is not freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path (`!= causal isolation`, `!= fixed spatial wall`, `!= independent substrate`, `!= autopoiesis` by definition).
-- **Three physical maintenance regimes (R3-04 spectrum, non-exhaustive)**:
-  1. *Bound equilibrium* (束缚平衡态，如原子/晶体束缚结构)；
-  2. *Dissipative dynamic maintenance* (耗散动态维持态，如稳态对流、化学振荡)；
-  3. *Endogenous mutual maintenance* (内生互维态，如代谢—膜—调控自维持网络)。
-  The exact structural threshold at which each regime crosses into `One` reconstitution remains `OPEN` (`R3-04-O1`).
-- **Four boundary types & three relation depths**: Boundaries may be spatial/physical, functional/interface, historical/lineage, or normative/institutional; relational participation varies from transient contact to persistent coupling to constitutive mutual dependence.
+Because `One` is inherently a dynamic generative organization, SRT examines it—and relations among multiple `One`s—through **two complementary analytical perspectives** rather than splitting existence and order into two substances or inventing a separate bearer noun (`Order-bearing aspect` is explicitly rejected):
 
-### §2.3 Generative Normalization Dual Threshold and Anti-Circularity Guard (`One` vs Value)
+1. **存在视角（Existence Perspective）**：考察该相对独立组织如何通过垂直再构成**形成、维持与延续**，以及如何在扰动与成分更替中保持相对可分的延续路径（`存在形成 / 存在维系 / 存在发展 / 存在重构 / 存在解体` 均属同一生成过程的不同形态）。
+2. **秩序视角（Order Perspective）**：考察生成关系如何**发展、形成方向偏向、演化变化并发生生成重构**，覆盖三个可分离维度：
+   - **维系约束（Maintenance constraint）**：垂直结构赖以成立和延续的核心构成性约束（相对稳定是持续性判据，**不是**一般秩序成立的必要条件）；
+   - **方向偏向（Directional bias）**：内部不同生成方向之间的非平坦选择倾向与前背景配置；
+   - **生成重构（Generative reconstruction）**：在维系必要约束的同时打开、协调与重构新关系与新路径的能力（低重构能力不自动等于不健康，高重构能力亦不自动等于健康；不健康选择固化与“既有规则/脚手架同变化后生成条件的持续失配且前背景锁死”相关，具体非循环判据保持 `OPEN`）。
+   - **跨组织域（Multi-`One` Scope）**：秩序视角**不仅**描述单个 `One` 的内部发展，还直接考察**多个 `One` 之间的相互作用、公共脚手架与新高阶组织的形成**——低尺度的秩序可以成为高尺度存在的生成条件，高尺度存在形成后展开自身的秩序并反向改变低尺度的生成条件。
+
+### §2.3 Relative Separability, Four Boundary Types, Three Generative Relation Depths, and Physical Maintenance Regimes (`R3-04 §三`)
+
+- **Relative continuation separability / formed locality** means the relevant reconstitution dependence is not freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path (`!= causal isolation`, `!= fixed spatial skin`, `!= independent substrate`, `!= autopoiesis` by definition). Stability after onset may be graded; this file adopts no scalar stability threshold.
+- **Four Boundary Types (`R3-04 §三` exact adjudication)**:
+
+| 边界类型 | 核心关注负担 | 与 `One` 及下游研究的定位 |
+|---|---|---|
+| **空间边界（Spatial boundary）** | 内部与外部的物理空间分隔 | 可帮助稳定后端边界，**非**普遍必要前提 |
+| **作用边界（Action / Causal-coupling boundary）** | 局部关系的因果耦合与约束作用范围 | 允许外部扰动（如辐射）直接穿透而不自动摧毁整体独立性 |
+| **生成边界（Generative boundary）** | 不同生成条件参与整体垂直再构成的关系深度与相对归属 | 与 `One` 相对延续可分性直接相关，体现持续组织化的前背景分化 |
+| **承载边界（Bearing boundary）** | 特定变化与后果如何真实归属于该延续位置 | 对接秩序变化后果与 `Bearer (P+E)` 中不可外包暴露 `E` 的研究 |
+
+- **Three Generative Relation Depths within Generative Boundary (`R3-04 §三`, avoiding organizational closure as a universal threshold)**:
+  1. **环境供给条件（Environmental supply conditions）**：必要外部依赖，不被该路径内生再生（如太阳对树木的能量供给）；
+  2. **构成性组织条件（Constitutive organizational conditions）**：参与构成该组织内部垂直再构成的核心关系（如树木内部的根、叶与输导组织关系）；
+  3. **生成性协作条件（Generative collaborative conditions）**：兼具自身独立生成路径与更大组织构成条件的持续互赖（如树木与共生微生物），不必硬切为绝对内部或绝对外部——由此自然兼容嵌套、重叠、共享条件与相互冲突的多 `One` 关系。
+- **Three Physical Maintenance Regimes (`R3-04 §三` spectrum, non-exhaustive; maintenance-mode classification, never a life/non-life ontic chasm)**:
+  1. *态 I · 束缚与平衡结构（Bound equilibrium）*：如原子、分子、晶体，通过耦合约束形成相对稳定结构与有效接口；
+  2. *态 II · 耗散与动态结构（Dissipative dynamic maintenance）*：如漩涡、火焰、对流胞、非平衡记忆系统，物质换流但通过持续交换与动态垂直过程维持组织；
+  3. *态 III · 内生约束互维结构（Endogenous mutual maintenance）*：如细胞、生命体、部分自组织认知/社会组织，内部多种生成条件相互维持、调节、缓冲与修复。
+  The exact structural threshold at which each regime crosses into `One` reconstitution remains `OPEN` (`R3-04-O1`), while **life or biological cell membranes are explicitly barred from serving as a universal threshold for `One`**.
+
+### §2.4 Generative Normalization Dual Threshold and Anti-Circularity Guard (`One` vs Value)
 
 A key mechanism by which coupled units form a `One` that can act as a whole in wider generation is **normalization**:
 - **Three normalization types**: cognitive-representational normalization / actual physical-coupling normalization / organizational-generative normalization.
@@ -110,7 +144,7 @@ A key mechanism by which coupled units form a `One` that can act as a whole in w
   1. **Organizational continuity test (existence side)**: whether a relatively separable vertical reconstitution path persists;
   2. **Opportunity / consequence change test (value side)**: whether treating/operating the unit as an integrated whole genuinely alters opportunity costs and downstream generative consequences.
 
-### §2.4 Continuity, Lineage, and Identity Under Change (`07-19` Y-Layer Interface)
+### §2.5 Continuity, Lineage, and Identity Under Change (`07-19` Y-Layer Interface)
 
 Formation does not presuppose a pre-given token or completed lineage:
 

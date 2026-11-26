@@ -57,6 +57,26 @@ five evaluative layers remain strictly separate:
 
 Never infer merely from `X is Selection` or `X persists` that X is One, Stable ISP, Bearer, Agency, conscious, valuable, healthy, or legitimate. Each stronger standing pays its own typed burden.
 
+### 0.1 `R4-A` Section Migration Crosswalk (`v4 → v5`) & Unreconstructed-Domain Transition Rule
+
+To preserve cross-repository reference integrity during wave-by-wave `R4` reconstruction:
+
+| Topic | Legacy `v4` Section | Current `v5` Section |
+|---|---|---|
+| Selection occurrence & event-level verticality | `§§2–3` | `§1.1`, `§3.1` |
+| History / retained efficacy | `§4` | `§3.2` |
+| `One` formation & existence/order perspectives | `§5` | `§5.1` (`Core_Law/SRT_One_Formation.md §2`) |
+| `Selection-position` & anticipation boundary | `§6`, `§6.3` | `§5.2`, `§6.2` |
+| `Stable ISP` (`P1-T06`) | `§7` | `§6.1` |
+| `Bearer (P+E)` | `§8` | `§6.2` |
+| `Agency` | `§9` | `§6.3` |
+| Normativity (`O1 / O2-C / O2-A`, `O2-M = HOLD`) | `§10` | `§6.5` |
+| `L0 / L1 / L2` analytic aspects | `§11` | `§7` |
+| Facet-before-kind guard | `§12` | `§8.2` |
+| Cross-owner `OPEN` register | `§13` | `§9` |
+
+- **Transition rule for unreconstructed downstream domains (`R4-B / R4-C`)**: Until a domain file (`Core/`, `AI/`, `Physics/`, `Neuroscience/`, `Philosophy/`, `Spirituality/`) completes its own `R4` wave, **any pre-`R4` clause that conflicts with this Spine or the `R4-A` canonical core owners (`One_Formation`, `L0`, `D_VALUE`, `PSI_F`, `T_DIR`, `SYMBOL_TABLE`) yields immediately to the `R4-A` owner** and must be read as legacy cleanup debt, never as a live co-equal definition.
+
 ---
 
 ## 1. Primitive Generation: Source, Extraction, and Global Orientation (`T3-04 D`, `T3-01 C/E`, `3A`)
@@ -128,13 +148,29 @@ Rather than a linear ontic ladder, SRT organizes cross-scale generation through 
 3. **生成条件的递归重构（Recursive Reconstitution of Generative Conditions）**：当先前选择的差异得以留存并持续生效时，历史（`L2`）、公共脚手架、信任分配、规范制度、自由调节与二阶/反身再选择反过来改写后续选择得以发生的边界、可达空间、位置结构与**比对尺度本身**。
 - **贯通枢纽（`② ⇄ ③`）**：**前背景转换与垂直生成**同时活跃于关系 ② 与 ③。前景对齐成果沉淀为背景能力、自动化路径或公共脚手架，释放生成盈余，并在新的价值比对或选择压力下重新进入前景。
 
-### 2.2 Three Recursive Generative Axes (Asymmetric, Distinct Burdens)
+### 2.2 Three Recursive Generative Axes & Three Unifying Generative Mechanisms
 
 Across scales, the three dynamic relations manifest three recurring generative loops (each carries a distinct theoretical burden and is not reducible to the others):
 
 1. **方向递归轴**：方向既是选择的结果，也是后续选择的条件。
 2. **价值递归轴**：价值既是比对的结果，也能反过来改变比对本身（包括改写比对的维度、尺度与哪些差异能够进入比对——即**比对本身的生成性**）。
 3. **存在递归轴**：存在（相对独立的生成组织）既是生成关系的组织结果，也能以相对独立的位置反向参与并改变后续生成（须由组织连续性检验与机会/后果变化检验双轨独立确立，防止存在与价值循环互定义）。
+
+Three unifying positive generative mechanisms bind these axes across physics, life, cognition, and social order:
+- **依赖重组生成相对独立性（Dependence Reorganization → Relative Independence）**：相对独立性不是通过减少依赖获得，而是通过局部生成条件经内生比对与垂直组织重组为共同生成条件而涌现（局部更深的相互依赖反而支撑更高尺度的相对独立与新有效接口）；由此存在研究从“对象是什么”转向“组织如何生成自身的相对独立性”。
+- **比对本身生成新机会（Comparison Generates New Opportunities）**：价值研究不仅考察既有路径的取舍，更考察跨位置/跨关系的比对如何改变可比对维度与关系结构，从而生成原先不存在的新价值空间与现实可承接机会。
+- **生成结果反过来重构生成条件（Generated Results Reconstruct Generative Conditions）**：历史（`L2`）、脚手架、认知框架、制度规范与自由调节使先前生成的结果参与改写后续选择的条件本身；由此自由研究从“有多少既定选项”转向“组织如何参与生成新的选择条件”。
+
+### 2.3 Unabsorbed Positive Burdens of Yin-Yang & Historical Ghost Intuition (`R3-08`, `07-19` / `07-27`)
+
+Replacing the old linear operator pipeline (`L0 -> Ĝ_θ -> L1 -> L2`) with recursive generative relations does **not** discard the positive theoretical burdens historically carried by **Yin-Yang (阴阳)** and **Ghost (幽灵)** source intuition; they are explicitly routed and preserved here:
+
+1. **阴阳（Yin-Yang）——非穷尽生成极性与构成性背阴面**：前背景分化不是静态开关，而是显现前景与**构成性背阴面（active constitutive background support）**的相互构成与持续转化（如山脊阳面赖背阴面支撑），二者在持续动态耦合中可相互转化而不设固定内外墙。
+2. **幽灵（Ghost）历史源直觉的五位职责分流（`R3-08 §四` + `07-19` / `07-27`，`T-GH-01..07` 保持 `OPEN`）**：严守 **`\hat{G}_\theta`（条件性形式参数载体）$\neq$ 原初 `Selection` $\neq$ 幽灵实体**，并禁止将 Ghost 压成单一神秘黑箱；须严格区分 ① **尚未被当前组织充分承接的未尽生成关系**、② **这些关系继续作用时形成的非闭合压力与张力**、③ **有限认知位置对之形成的对象化描述**，同时保留以下四项正面理论职责：
+   - **对象—摩擦持续互写（`07-19 X5` / 持续动态平衡）**：废除机械的“关闭 → 触发 → 重新开放”开关模型，转向相对稳定秩序在持续动态互写中维持并改写自身组织方式（同时兼容动力学层面的滞回、结构势垒与非线性重构窗口）；
+   - **构成性背阴面主动支撑**：背景条件不仅是被动痕迹，而是持续参与托举与约束前景生成的活跃条件；
+   - **非闭合压力**：当前组织无法充分承接的生成关系持续施加的重构压力；
+   - **`U5` 选择机制绝对化（严守 `U5 ≠ U6`，`2026-07-27` 校正）**：已形成的耦合组织方式退出有效再比对、获得事实上的自我豁免（即使系统仍高频局部调整策略）；反绝对化不写成必然定理，操作化判据保持 `OPEN`。
 
 ---
 

@@ -39,7 +39,7 @@ dependency: [SRT-CORE-21]
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 - 本方程层只在已准入的 formed / model realization 内，假定一个可用的 formal role-carrier `\hat{G}_\theta` 已给定。这不表示 primitive Selection 由该算子生成或与其同一，也不推出 selectability 的起源。
-- `D_eff`、Fisher rank、Hessian effective dimension 等式是无赌注容量 / 几何代理（capacity proxy），`D_stake` 是赌注门控有效谱多样性代理（stake-gated spectral-diversity proxy，真界为 `1 ≤ D_stake ≤ N_active ≤ rank(M)`，全零赌注时为 `0 / NOT ADMITTED`）；三者与 canonical `d(x) ≡ ||∂U/∂S||` 均不恒等，且已证伪的 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 均已退役（见 `_SRT_D_VALUE_CANONICAL.md §2a–§2b`）。
+- `D_eff`、Fisher rank、Hessian effective dimension 等式是无赌注容量 / 几何代理（capacity proxy）；`D_stake` 的一般谱参与率定义由 `_SRT_D_VALUE_CANONICAL.md §2b` 持有（真界为 `1 ≤ D_stake ≤ N_active ≤ rank(M)`，零有效谱乘积时走显式 `0` 分支），本文件 `Eq-Bridge-D-01` 中的阈值门控式 $g_i$ 为其下一种具体声明模型实例（不默认与三因子 $w_i = R_i A_i C_i$ 数学等价）。`d(x) ≡ ||∂U/∂S||`、`D_stake` 与 `D_eff` 三者互不恒等，且已证伪的 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 均已退役；同时严格区分零有效谱乘积分支、`NOT ESTABLISHED`、`NOT ADMITTED` 与 `NOT APPLICABLE`。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
 - **Wave-D2 authority truth-up（2026-09-15）**：当前 symbol / claim typing 覆盖较早的方程解释。本文件中的 `\kappa_0` 不因注册或从 O0 / Selection 继承而成为 primitive；当它进入方程时，只能表示独立声明的 curvature / anisotropy / per-direction-cost realization parameter。本文件中没有任何方程可以用 `\kappa_0` 提供 universal value / order direction。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于已声明模型中 analytic `L_0 -> L_1` interface 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程，也不反向定义 primitive Selection。
@@ -138,11 +138,11 @@ $$
 
 This path functional is used for finite update paths when the statistical-manifold projection is valid. It is a geometry proxy, not the global definition of `Ψ_f`.
 
-### Eq-Bridge-D-01: Stake-Gated Effective Spectral Diversity Proxy (`D_stake`)
+### Eq-Bridge-D-01: Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`)
 
 $$
 \boxed{
-D_{\text{stake}}
+D_{\text{stake}}^{\text{thresh}}(\theta)
 =
 \begin{cases}
 \dfrac{
@@ -150,13 +150,13 @@ D_{\text{stake}}
 }{
 \sum_i \tilde{\lambda}_i^2
 }, & \text{if } \exists i,\; \tilde{\lambda}_i > 0, \\[10pt]
-0 \text{ (NOT ADMITTED)}, & \text{if } \forall i,\; \tilde{\lambda}_i = 0,
+0 \text{ (zero-effective-spectrum branch; }0/0\text{ mathematically undefined)}, & \text{if } \forall i,\; \tilde{\lambda}_i = 0,
 \end{cases}
 \qquad \tilde{\lambda}_i = \lambda_i \cdot g_i,\quad g_i = \max\!\left(0,\frac{s_i - \varepsilon_s}{1 - \varepsilon_s}\right)
 }
 $$
 
-Here `λ_i` are Fisher-spectrum eigenvalues, `s_i ∈ [0,1]` is the irreversible-risk stake-coupling weight, and `ε_s` is the minimum stake threshold (`_SRT_SYMBOL_TABLE.md`). `D_stake` is a **bridge-level spectral-diversity proxy** whose true algebraic bound is **`1 ≤ D_stake ≤ N_active ≤ rank(M)`** (`N_active = #{i : λ̃_i > 0}`). It is **NOT** canonical `d(x) = ||∂𝒰/∂𝒮||` (a gradient norm) and is **NOT** bounded above by `D_eff` (`D_eff ≥ D_stake` and `Δd_free = D_eff - D_stake ≥ 0` are algebraically false and retired; see `_SRT_D_VALUE_CANONICAL.md §2b`).
+Here `λ_i ≥ 0` are Fisher-spectrum eigenvalues, `s_i ∈ [0,1]` is a declared scalar coupling strength, and `ε_s` is the minimum stake threshold (`_SRT_SYMBOL_TABLE.md`). **Instance-vs-general boundary (`P1-04`)**: `_SRT_D_VALUE_CANONICAL.md §2b` owns the general spectral participation ratio `D_stake` (with canonical three-factor weight `w_i = R_i A_i C_i`); this equation is **one concrete threshold-gated model instance (`w_i := g_i`)** and does **NOT** assert unproven mathematical equivalence between `g_i` and `R_i A_i C_i`. Its true algebraic bound when `N_active = #{i : λ̃_i > 0} ≥ 1` is **`1 ≤ D_stake^{thresh} ≤ N_active ≤ rank(M)`**. It is **NOT** canonical `d(x) = ||∂𝒰/∂𝒮||` (a utility-scaled gradient norm) and is **NOT** bounded above by `D_eff` (`D_eff ≥ D_stake` and `Δd_free = D_eff - D_stake ≥ 0` are algebraically false and retired). Keep strictly separate: the **zero-effective-spectrum branch** (`∀i, λ̃_i = 0` inside an admitted model), **`NOT ESTABLISHED`** (standing unproven), **`NOT ADMITTED`** (model preconditions unmet), and **`NOT APPLICABLE`** (metric domain/dimensionality inapplicable).
 
 ### Eq-Bridge-G-01: Ghost Operator Normalization Proxy
 
@@ -211,7 +211,7 @@ This bridge-level loop reads a declared model's analytic `L_0 -> L_1` interface 
 ### Boundary Notes
 
 - Fisher geometry is local and projection-dependent; it does not define the whole of `Ψ_f`.
-- `D_stake` is a stake-gated spectral-diversity proxy (with explicit zero-effective-stake branch `0 / NOT ADMITTED` and true bound `1 ≤ D_stake ≤ N_active ≤ rank(M)`), distinct from both canonical `d` and capacity proxy `D_eff`.
+- `D_stake^{thresh}` (`Eq-Bridge-D-01`) is a concrete threshold-gated model instance (`w_i := g_i`) of `_SRT_D_VALUE_CANONICAL.md §2b`'s general spectral participation ratio `D_stake` (with explicit zero-effective-spectrum branch and true bound `1 ≤ D_stake ≤ N_active ≤ rank(M)`), distinct from both canonical `d` and capacity proxy `D_eff`, and without unproven equivalence to `w_i = R_i A_i C_i`.
 - Divisive normalization is an implementation proxy, not the full Ghost Operator.
 - `L2` is thicker than any one energy or free-energy landscape.
 - This section should be cited together with `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`.
@@ -222,7 +222,7 @@ This bridge-level loop reads a declared model's analytic `L_0 -> L_1` interface 
 
 **新增（2026-04-10）**：给出单个算子在给定参数结构与稳定性预算下可实现的 d 值上限。
 
-> **Status（Wave D2）**：conditional model / realization equation，不是 universal d law。本式仅在某个模型独立声明 compatible `\kappa_0`-like 每方向有效代价／曲率参数，并给出相容单位与作用域时才准入；无该 realization 时，`Eq-DValue-Max-1` 不适用。
+> **Status（Wave D2 + `R4-A P1-04` 量纲兼容护栏）**：conditional model / realization equation，不是 universal d law。本式仅在某个模型独立声明 compatible `\kappa_0`-like 每方向有效代价／曲率参数，**并显式给出单位归一化与单方向风险灵敏度校准映射**时才可关联至规范 `d`；因为 $\operatorname{rank}_{\text{eff}}(\mathcal{I}_F(\theta))$ 是**无量纲有效谱维数容量上界**，而规范 $d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 是随效用缩放的梯度范数，**未声明量纲校准映射时，本式仅作为有效方向容量上限（direction-capacity bound），不得将谱维数冒充为梯度范数 `d` 的普遍数学上界**。无兼容 `\kappa_0` realization 时，`Eq-DValue-Max-1` 标为 `NOT APPLICABLE / NOT ADMITTED`。
 
 $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(\mathcal{I}_F(\theta)\right),\;\; \frac{\Psi_f^{\text{budget}}}{\kappa_0}\right)}$$
 
@@ -234,7 +234,7 @@ $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(
 
 **$\kappa_0$ 的角色边界**：在该模型内，$\kappa_0$ 只进入每方向成本项。它不选择、排序、赋值或合法化方向，不导致 first Selection，也不建立 primitive non-flatness。
 
-**Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是已声明模型中 analytic `L_0 -> L_1` interface 上的 Fisher-capacity proxy；它给出可分辨方向上限，不把 `L_0` 读为预存状态仓库，也不自动给出 stake-coupled canonical `d`。只有满足 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling / consequence-writeback 条件时，才可作为 `d` 的近似读数。
+**Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是已声明模型中 analytic `L_0 -> L_1` interface 上的无量纲 Fisher-capacity proxy；它给出可分辨方向数上限，不把 `L_0` 读为预存状态仓库，也不直接给出或普遍压制效用缩放的梯度范数 canonical `d = ||∂U/∂S||`。只有在同时满足 `_SRT_D_VALUE_CANONICAL.md §1.1` 五项 proxy 准入条件及显式量纲校准映射时，才可作为该声明模型内的容量对比接口。
 
 **两个瓶颈的失效形态**：
 

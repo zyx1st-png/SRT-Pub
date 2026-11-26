@@ -2,7 +2,9 @@
 id: SRT-CONTEXT-ROUTER
 type: retrieval_index
 tags: [Context Router, Retrieval, Navigation, Deep Theory, AI Context]
-status: draft_v1
+status: active
+version: v1
+updated: 2026-11-26
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -727,7 +729,7 @@ Current owner / route checks:
 - hysteresis -> `Core/SRT_Core_12b_Ontology_L2.md Ax-L2-01`; discrimination status -> `Core/SRT_Core_24_Discriminating_Predictions.md P24-3` = NO-GO at discrimination-spec stage / calibration target;
 - 08-09 second-order Selection -> `Operations/Audits/SRT_ACTIVE_VS_SECOND_ORDER_SELECTION_RECONCILIATION_2026-09-11.md` + STATUS §9 + PH-IND03; `Core_Law/SRT_Individuation.md` uses a distinct stronger subject/self-consciousness “second-order” meaning and is not the owner of the 08-09 construct;
 - identity / lineage -> `Core_Law/SRT_One_Formation.md` continuity / lineage / identity guard; strict numerical and branch/merge identity remain OPEN;
-- Bearer guard -> `Core_Law/SRT_Generative_Ontology_Spine.md §8 / OPEN register`; C3+C4+C5 does not by itself establish same-Bearer identity;
+- Bearer guard -> `Core_Law/SRT_Generative_Ontology_Spine.md §6.2 / §9 (OPEN register)`; C3+C4+C5 does not by itself establish same-Bearer identity;
 - Concern / d -> `_SRT_D_VALUE_CANONICAL.md` + Spine's `Bearer <-> Concern` OPEN guard; preserve the 07-25 `d/q/o` embargo when reading the 07-31/08-09 source chain;
 - CIF-P09 friction side -> 09-22 capacity §M + reach §V; transition / lock-in side -> `Core_Law/SRT_Occlusion_Dynamics.md T-OCC-1`; the residual is the non-collapse guard between the two questions;
 - compensation / supported equivalence -> `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GRG_REACH_RECONSTRUCTIBILITY_GENERATIVE_DEBT_2026-09-22.md §§R/V/W`.
@@ -908,7 +910,7 @@ Do not reconstruct a second competing classification for that period.
 ### Primary (typed, not interchangeable)
 
 - `Core_Law/SRT_L0_Metaphysics.md` §O0 — **canonical** primitive anti-flattening of non-interchangeable generative role-asymmetry. **Must not be bypassed** when “压平” is ontological.
-- `Core_Law/SRT_Generative_Ontology_Spine.md` §§2–6, especially §6.3, and §8 — canonical actualization/background/history/formed position; later-selectability **≠** formed anticipation; separately gated P and E/Bearer.
+- `Core_Law/SRT_Generative_Ontology_Spine.md` §§3, 5–6 (especially §5.2 & §6.2) — canonical actualization/background/history/formed position; later-selectability **≠** formed anticipation; separately gated P and E/Bearer.
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GENERATIVE_EXPECTATION_TYPING_2026-09-20.md` — noncanonical author-adjudicated Expectation A statistical, B structural, C0 embodied, C1 model-mediated.
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_HPB_MINIMAL_PHENOMENAL_TOPOLOGY_EXPECTATION_GENERATIVITY_AI_BOUNDARY_2026-09-26.md` — author current-AI/expectation-shaped generation; later architecture/evidence scope narrowing.
 - `01_Source_Intuition/SRT_AUTHOR_SOURCE_SYMBOL_POSITION_BACKGROUND_PRESSURE_AI_FLATTENING_2026-10-15.md` — direct author 2026-10-15 quotes, **noncanonical source**; “缺失预期” meaning remains unadjudicated.
@@ -928,7 +930,7 @@ Do not reconstruct a second competing classification for that period.
 ### Boundary and paired review
 
 - A public sign can travel unchanged while situated use differs; **lossless carrier decoding ≠ guaranteed reconstruction of original position/background/meaning**. Do not assert that all coding is lossy.
-- Relative background is **not** a stored list of unselected objects. Distinguish **same-event constitutive non-neutrality** from **later-effective retained pressure** requiring Spine §4, then One/position, C0/C1 and E/Bearer at their own gates. Exact channel decoding may be lossless even if situated reconstruction is not original-event recovery.
+- Relative background is **not** a stored list of unselected objects. Distinguish **same-event constitutive non-neutrality** from **later-effective retained pressure** requiring Spine §3.2, then One/position, C0/C1 and E/Bearer at their own gates. Exact channel decoding may be lossless even if situated reconstruction is not original-event recovery.
 - **Term triage:** `AI 方法层压平` vs `L0 O0 本体反压平` = **OVERLOADED_SAME_NAME / candidate PARTIAL_OVERLAP**, not identical claims. One possible **M** bridge is loss of constitutive role asymmetry by symbol-first representation, not a theorem that formal systems or all AI cannot preserve it.
 - **“缺失预期” is AUTHOR-OPEN:** working **MX-1** = failure to anticipate task-relevant missing background; **MX-2** = prospective-structure lost through flattening; **MX-3** = not establishing the stronger expectation-shaped generative reconstitution in a specified AI architecture. These are **not** 2026-09-20 A/B/C0/C1 redefinitions; see typed table in the paired proposal.
 - Separate **SRT-source fidelity** from domain-independent structure-preservation tests; only independently established task-relevant role/background perturbations can score methodological flattening. Compare against **capability-matched human researchers** and strong dynamic/contextual rivals; historical public SRT-Pub correction replay is leakage-exposed and cannot prove an AI-only deficit.
