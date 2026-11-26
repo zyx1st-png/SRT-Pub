@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 6121da0a3
-source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
+source_commit: 31c23e20c
+source_branch: canon/r4-c2-physics-cross-scale-generation-2026-11-26
 source_dirty: false
-inputs_digest: faba05c8db27e0a8
+inputs_digest: 2de9734a3735ab21
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: faba05c8db27e0a8
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `6121da0a3` |
-| 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
+| 来源 commit | `31c23e20c` |
+| 来源分支 | `canon/r4-c2-physics-cross-scale-generation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -177,7 +177,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > | `NODE-GHOST-OPERATOR` | active_complete | untested | — | — |
 > | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
-> | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-LIFE-DISSIPATIVE` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
 > | `NODE-SOCIAL-L2` | active_complete | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
 > | `NODE-ENTROPY-REORG` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
@@ -187,8 +187,8 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：14 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 9 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：15 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 10 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
