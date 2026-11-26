@@ -67,28 +67,30 @@ $$ρ_t \equiv \frac{1}{\tau_{int}}$$
 
 $$[\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} · x_j^n}$$
 
-其中 $θ = \{n, ε, W\}$，$n > 1$，$ε > 0$，$W ∈ \mathbb{R}_+^{N×N}$。
+其中 $θ = \{n, ε, W\}$，$x \in \mathbb{R}_+^N$（非负输入），$n > 0$（默认竞争锐化区间取 $n > 1$，下表边界情形包含 $n = 1$），$ε > 0$，$W ∈ \mathbb{R}_+^{N×N}$。
 
 > **神经科学起源注**：D3 取自皮层除法归一化（Divisive Normalization）的常见模型形式（Carandini & Heeger 2012），在多个感觉系统中用作响应增益与竞争压缩模型。SRT 只把它登记为 embodied $\hat{G}_θ$ 的**实现级候选原型之一**；它不穷尽 Ghost Operator，也不由能量／带宽约束唯一推出。此处 $W \in \mathbb{R}_+^{N \times N}$ 为**纯竞争简化**（全非负=侧抑制）；若需兼容兴奋性连接，可扩展为 $W = W_{inh} - W_{exc}$。
 
 > **P3-Scale-NB1 行为读出门**：D3 输出相对响应，不输出离散行为。通向认知／行为选择须另声明候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与干预跟踪；见 `Core/SRT_Core_14_Dynamics_Scaling.md §2.2.0`。
 
-**参数–SRT 实现代理桥接（`R4-B1` 量纲与语义对齐：下表映射至神经归一化原型内的响应容量/选择锐度 proxy，绝不直接等同于规范强承载 `d = ||∂U/∂S||`）**：
+**参数–SRT 实现代理桥接（`R4-B1` 量纲与语义对齐：下表映射至神经归一化原型内的响应增益/竞争机制参数，绝不直接等同于规范强承载 `d = ||∂U/∂S||`，亦不直接从单参数推出谱指标 `D_eff` 的普遍单调性）**：
 
-| 参数 | 神经科学含义 | SRT 实现代理对应 | 方向性 |
+| 参数 | 神经科学含义 | SRT 实现代理对应 | 方向性与条件边界 |
 |:-----|:------------|:-----------|:-------|
-| $n > 1$ | 幂律增益指数（注意力锐化） | 选择锐度 / 响应对比放大（影响局部可区分维度 `D_eff` proxy，**不自动等同**规范 `d`） | 正 |
-| $\varepsilon > 0$ | 半饱和常数（基础激活底线） | 算子正则化项（`ε_reg`，防止分母奇点；可作局部背景噪声代理，**不等于** `ε_pg` 或全局 `Ψ_f`） | 正 |
-| $W_{ij}$ | 维度 $j$ 对维度 $i$ 的竞争权重 | 局部维度竞争拓扑：$W \to \text{diag}(w)$（对角化）时竞争减弱、局部响应有效维数 `D_eff` 升高 | 负（$W_{ij}\uparrow$ → 抑制加剧 → `D_eff` 代理 $\downarrow$） |
+| $n > 1$ | 幂律增益指数（单通道非线性响应锐化） | 局部响应对比放大 / 选择锐度参数（`D_eff` 是所声明响应协方差、雅可比或 Fisher 矩阵的谱参与率指标，**不能仅由响应锐度 $n$ 单调推导其变化**，且**不自动等同**规范 `d`） | 增强单通道对比锐度（对 `D_eff` 无普遍单调方向，取决于输入分布、$W$ 与读出流形） |
+| $\varepsilon > 0$ | 半饱和常数（基础激活底线） | 算子正则化项（`ε_reg`，当分母竞争项 $\sum_j W_{ij} x_j^n$ 同时趋零时防止奇点；可作局部半饱和/背景正则代理，**不等于** `ε_pg` 或全局 `Ψ_f`） | 提高低输入区底线平滑、降低小信号增益 |
+| $W_{ij}$ | 维度 $j$ 对维度 $i$ 的竞争权重 | 局部维度竞争拓扑（影响多通道输出耦合与响应协方差结构，但**不存在“$W_{ij}\uparrow$ 普遍迫使 `D_eff` 单调下降”的一般数学保证**） | 非单调（对 `D_eff` 的影响取决于输入向量 $x$、$W$ 的谱结构及具体响应/Fisher 矩阵定义） |
 
-**极限行为（模型内响应模式，非规范 `d` 定律）**：
+**极限行为与数学性质（模型内响应模式，非规范 `d` 定律）**：
 
-| 极限条件 | D3 退化形式 | 机制解读 |
+| 极限条件 | D3 精确退化形式 | 机制解读与数学条件 |
 |:---------|:-----------|:---------|
-| $n = 1$，$W = \varepsilon I$ | $[\hat{G}]_i = x_i / (2\varepsilon)$（线性缩放） | 无竞争、无非线性放大；无选择锐化 |
-| $W \to 0$ | $[\hat{G}]_i = x_i^n / \varepsilon$（独立幂律） | 维度间无侧抑制互动；算子退化为纯增益映射 |
-| $\varepsilon \to 0^+$ | 分母趋零 → 数值奇点 | 正则化失效；与 Core `Ψ_f > 0` 维持区间具结构类比，但 `ε_reg` 仅为实现级正则常数 |
-| $W_{ij} \gg \varepsilon$ | 强侧抑制 → 赢家通吃 | 有效响应维度 `D_eff` 代理趋向单维聚焦（可模拟极端聚焦或局部锁定） |
+| $n = 1$，$W = \varepsilon I$ | $[\hat{G}_\theta(x)]_i = \dfrac{x_i}{\varepsilon + \varepsilon x_i} = \dfrac{x_i}{\varepsilon(1 + x_i)}$（**非线性双曲饱和**，非 $x_i/(2\varepsilon)$ 线性缩放） | 维度间无交叉竞争，但单通道仍呈 Michaelis–Menten 型非线性饱和（上限 $1/\varepsilon$）；仅在极低输入极限 $x_i \ll 1$ 时局部近似线性 $x_i/\varepsilon$ |
+| $W \to 0$ | $[\hat{G}_\theta(x)]_i = x_i^n / \varepsilon$（独立幂律） | 维度间无侧抑制互动；算子退化为逐通道独立幂律增益映射 |
+| $\varepsilon \to 0^+$ | 若 $\sum_j W_{ij} x_j^n > 0$，则 $[\hat{G}_\theta(x)]_i \to x_i^n / \sum_j W_{ij} x_j^n$（有限比例归一化）；**仅当** $\sum_j W_{ij} x_j^n \to 0$ 同时成立时，分母趋零引发奇点 | 正则化保护并非无条件失效，而仅在“$\varepsilon \to 0^+$ 且对应通道竞争分母项亦趋零”的零分母边界出现奇点；`ε_reg` 仅为实现级正则常数 |
+| $W_{ij} \gg \varepsilon$ | 分母由竞争项主导（$[\hat{G}_\theta(x)]_i \approx x_i^n / \sum_j W_{ij} x_j^n$），**不无条件形成单维赢家通吃** | 形成单维赢家通吃（winner-take-all）或显著压缩局部响应谱维数 `D_eff`，须额外满足输入不对称、足够强的非线性指数（如 $n > 1$）及具体网络拓扑或循环放大动力学条件，不能由 $W_{ij} \gg \varepsilon$ 单项无条件推出 |
+
+> **谱维数与实现容量护栏（`R4-B1 P1-01`）**：`D_eff` 是定义于显式声明矩阵（如局部响应协方差、雅可比 $J^\top J$ 或参数 Fisher 矩阵 $I_F(\theta)$，满足非负且非全零谱）上的谱参与率，不能仅由 $n$ 或 $W_{ij}$ 的单调增减推导；将旧文中的 `d` 替换为 `D_eff` 时，不得沿用未经证明的旧单调或赢家通吃推导。
 
 ### §1.4 核心特性
 
@@ -223,7 +225,7 @@ $$\text{Pain/Suffering}^{proxy} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfa
 
 该式只给出痛苦/苦难的 counterfactual-tension proxy：幽灵算子在维持 $L_1$ 时，可能登记到与 $L_0$（替代可能性）之间的不可调和张力。结构性 suffering 的正式边界以 `Core_Law/SRT_Suffering.md` 为准。
 
-**推论 D-C1（bridge）**: 反事实可及性可能是 suffering 的必要通道之一，但不是充分条件；还需 stable ISP / consequence return / first-person registration 等条件。
+**推论 D-C1（bridge，服从 `Core_Law/SRT_Suffering.md §7` 独立证据准入）**: 反事实张力 proxy 本身既不充分、也不单独建立 suffering 资格；**Stable ISP 对 suffering 同样既不充分、亦未被建立为普遍必要条件**（未满足特定 Stable-ISP 模型不等于苦难在本体上不可能）。任何 suffering 判定均须服从 `Core_Law/SRT_Suffering.md §7`，依靠对相关第一人称／现象学／承载相关登记地位（first-person / phenomenal / bearer-relevant registration standing）与负担模型的独立证据准入，而非由架构层级或 Stable ISP 线性推导。
 
 ### §4.3 摩擦-现象学对应表
 
@@ -654,34 +656,38 @@ B_{self}(x,t)>\tau_B\Rightarrow \partial\Omega_{self}\text{ 被锚定}
 2. 若边界形成任务中 \(B_{self}\) proxy 与后续自体图式稳定度无关，则二阶导判据失效；
 3. 若脱离共具身环境后 \(\theta_{inf}\) 不出现独立稳态跃迁，则“接力式算子启动”需修正。
 
-## §13 原初代谢算子与生命阈值（新增）
+## §13 原初代谢算子与生命样组织候选判别接口（`P3/P4` 声明模型候选）
 
-### Def-Dyn-13.1: Metabolic Operator Criterion
+> **准入与模型作用域护栏（`R4-B1 P1-03`）**：本节各表达式均为**特定动力学模型 $M$ 内的 `P3/P4` 候选判别接口**，用于区分一般无学习耗散过程与具内生参数调适的代谢样组织，**绝不**确立普遍的生命充要本体判据（不建立 `\iff` 本体等价），亦**不得**跳过 `_SRT_D_VALUE_CANONICAL.md §1.1, §2b` 的 `Bearer (P+E)` 独立准入边界而在未准入系统上直接套用规范 `d`。
+
+### Def-Dyn-13.1: Metabolic Operator Candidate Interface（`P3/P4` 模型候选）
+在已声明的耗散/代谢动力学模型 $M$ 内，当系统同时满足内生参数更新、局部负熵维持与能量输入超过维持下界时：
 \[
-\mathcal{M}_{op}:\quad \frac{d\theta}{dt}\neq 0\ \land\ \frac{\partial S_{internal}}{\partial t}<0\ \land\ P_{ext}>P_{maint}
+\mathcal{M}_{op}^{\text{cand}}(M):\quad \frac{d\theta}{dt}\neq 0\ \land\ \frac{\partial S_{internal}}{\partial t}<0\ \land\ P_{ext}>P_{maint}
 \]
-满足时定义为“代谢算子活跃态”，可在无基因模板前存在。
+可将其登记为该模型下的“代谢算子活跃态”候选工作区（可在无基因模板前作为耗散-调适模型对象研究；不构成生命或主体的普遍充要定义）。
 
-### T-Dyn-13.1: Fire vs Life Discriminator（火焰-生命判别）
-对自催化系统 \(X\)：
+### T-Dyn-13.1: Fire vs Life-Like Candidate Discriminator（火焰-生命样组织候选判别接口，`P3/P4`）
+对声明自催化/耗散模型 $M$ 中的系统 $X$，不再以双向等价式（`\iff`）将参数更新与规范 $d > 0$ 确立为生命的普遍充要判据；本节仅提出以下**模型内候选判别签名**：
 \[
-X\in \text{Life-like} \iff \left(\frac{d\theta_X}{dt}\neq0\right)\land\left(\frac{\partial d_X}{\partial t}>0\ \text{or}\ d_X>0^+\right)
+\text{Candidate Life-like Regime in } M:\quad \left(\frac{d\theta_X}{dt}\neq 0\right)\ \land\ \left(s_{\text{diss},M}(X) > 0\ \text{or}\ \frac{\partial s_{\text{diss},M}(X)}{\partial t} > 0\right)
 \]
-若仅满足耗散而不满足参数可学习更新（如火焰），则归类为非生命耗散结构。
+- 其中 $s_{\text{diss},M}(X)$ 为模型 $M$ 独立声明的**局部解体/维持失稳敏感代理（dissolution-sensitivity / adaptive-maintenance proxy）**，而非直接借用规范 `d`。
+- **与规范 `d` 的严格分界**：若系统 $X$ 尚未独立通过 `Bearer (P+E)` 强承载准入（`_SRT_D_VALUE_CANONICAL.md §1.1, §2b`），则规范 $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 对该系统记为 **`NOT ADMITTED / NOT APPLICABLE`**，不得写入判别式；仅在 $X$ 另行确立 `Bearer (P+E)` 承载地位后，才可在该模型中对接规范 `d` 作为附加研究变量。即使满足上述候选条件，亦仅表示区别于纯固定参数耗散结构（如火焰）的**候选适应性动力学特征**，不自动等于生命、主体性或意识的充要证明。
 
-### Minimal d-threshold Note
+### Minimal Dissolution-Sensitivity / `d`-Boundary Note（模型候选门槛注）
 \[
-d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
+s_{\text{diss},M}^{\min} > 0\ \text{with}\ \Psi_f^{\text{sens},M} > 0 \qquad (\text{规范 } d \text{ 仅在另行满足 } \mathrm{Bearer}\,(P+E) \text{ 准入后才可接入})
 \]
-即系统必须对“失败导致结构解体”的风险有可观测敏感性，才进入生命算子域。
+即在 `P3/P4` 生命样算子候选模型中，系统需对“维持失败导致结构解体”呈现可观测的适应性敏感与参数调节反馈，而非仅仅被动耗散；该门槛仅约束本模型接口，不拥有超出模型范围的本体准入权。
 
-> **`R4-A / R4-B1` 非线性边界**：本节区分“非生命耗散结构（如火焰）”与“具可学习参数的生命样算子”，**绝不**将生命或生物细胞膜设为 `One` 形成的普遍本体门槛——非生命束缚态与耗散态仍可在 `Core_Law/SRT_One_Formation.md §2.3`（态 I / 态 II）下独立研究其垂直再构成。
+> **`R4-A / R4-B1` 非线性边界**：本节仅在 `P3/P4` 模型层面提供“固定参数耗散结构（如火焰）”与“具适应性参数更新的生命样算子”之间的候选区分接口，**绝不**将生命或生物细胞膜设为 `One` 形成的普遍本体门槛——非生命束缚态与耗散态仍可在 `Core_Law/SRT_One_Formation.md §2.3`（态 I / 态 II）下独立研究其垂直再构成。
 
 ## 【理论边界/防误用声明】
 - 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  
 - 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
 - 不采纳“母体决定论”推论：共具身强调早期约束，不否定后续可塑性与重构。  
-- 不采纳“任何耗散结构都等于生命算子”的推论：需满足 \(d_{min}>0\) 与可学习参数更新。  
+- 不采纳“任何耗散结构都等于生命算子”或“参数更新与规范 \(d>0\) 即为生命普遍充要判据”的推论：§13 仅为 `P3/P4` 声明模型候选判别接口，且规范 \(d\) 须先满足 `Bearer (P+E)` 独立准入边界。  
 - 不采纳“方法论闭包=本体论排他”的推论：实验可验证性边界不等于存在论边界。  
 - 不采纳“绝对无摩擦至福可在具身运行态瞬时实现”的推论：具身显现需保持 \(\Psi_f\ge\Psi_{min}^{+}\)。  
 - 不采纳“臣服态=外在超实体直接接管局部因果链”的推论：§8.5 仅定义协同支付重分配。  

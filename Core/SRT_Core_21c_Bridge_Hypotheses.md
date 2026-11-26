@@ -218,9 +218,9 @@ $$
 
 where `g_{ij}^{(i,j)}` is the joint Fisher information metric over the coupled parameter space.
 
-**Path Note**: If `\gamma` is a geodesic, `\Psi_f` gives a lower bound on possible friction; if it is the actual path, it gives actual paid friction.
+**Path Note**: Inside a declared statistical-manifold model, if `\gamma` is a geodesic, the Fisher-Rao arc length gives a conditional local geometric lower-bound proxy for transition cost. Along an actual trajectory `\gamma`, the Fisher path length is only a **conditional geometric trajectory proxy** and **does not automatically equal actual paid friction** without an independently specified calibration and payability mapping (accounting for dissipation, maintenance overhead, and paid vs. externalized burden under `_SRT_PSI_F_CANONICAL.md`).
 
-**Readout Note**: The same `\Psi_f` structure may be read as resistance, cost, or geometric length. Cross-scale invariance lies in payability, not unit identity.
+**Readout Note**: Fisher geometric length is a local information-geometric proxy (`\Psi_f \not\equiv g_F`), not an identity with paid friction. Cross-scale invariance lies in payability grammar, not unit or metric identity.
 
 **Implication**: Evolution, learning, cultural change, and immune response may be modeled as forms of inter-operator friction.
 
@@ -282,8 +282,9 @@ $$
 **Corrected Three-Way Separation (Falsified Old Bounds Retired)**:
 
 1. **Canonical `d`** (`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`): utility-scaled irreversible-risk sensitivity gradient norm $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ in a declared `Bearer (P+E)` model.
-2. **General geometric capacity proxy `D_eff`** (requires **no** strong-bearing admission for general capacity use):
-$$D_{\text{eff}}(M) = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2}, \qquad 1 \le D_{\text{eff}}(M) \le \operatorname{rank}(M).$$
+2. **General geometric capacity proxy `D_eff`** (requires **no** strong-bearing admission for general capacity use; defined for a declared matrix $M$ with **non-negative and non-all-zero spectrum**, i.e., $\lambda_i \ge 0$ for all $i$ and $\exists i,\ \lambda_i > 0$):
+$$D_{\text{eff}}(M) = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2}, \qquad 1 \le D_{\text{eff}}(M) \le \operatorname{rank}(M) \quad (\text{for } \lambda_i \ge 0,\; \exists i,\ \lambda_i > 0).$$
+When the spectrum is all-zero ($\forall i,\ \lambda_i = 0$), the ratio is $0/0$ undefined and must be routed to an explicit zero-spectrum branch (not bounded by $1 \le D_{\text{eff}}$).
 3. **Stake-gated spectral participation ratio `D_stake`** (general form in `_SRT_D_VALUE_CANONICAL.md §2b` with canonical weights $w_i = R_i A_i C_i$; threshold-gated model instance $D_{\text{stake}}^{\text{thresh}}$ with $g_i$ in `Core_22 Eq-Bridge-D-01`, no unproven equivalence):
 $$D_{\text{stake}}(\theta) = \frac{(\sum_i \lambda_i w_i)^2}{\sum_i (\lambda_i w_i)^2}\quad (\text{for } N_{\text{active}} \ge 1), \qquad 1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M),$$
 with an explicit **zero-effective-spectrum branch** (`0` when $\forall i, \lambda_i w_i = 0$, $0/0$ undefined), strictly separated from `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`.
@@ -403,9 +404,9 @@ Schematically, SRT investigates how coupling not only produces an outcome `C`, b
 - Links directly to `One_Formation §2.1` (**dependence reorganization generates higher-scale relative independence**) and `One_Formation §2.4` (**compression vs. generative normalization dual threshold**: internal coupling reconfiguration + cross-position conditioning efficacy).
 - Does **not** claim every physical or social interaction alters participating units' mode of existence; distinguishes four conditional coupling depths (transient interaction / effective relation / constitutive reorganization / whole-level reconstitution).
 
-### 3. Mathematical Non-Triviality Frontier (`R5` Anti-Reparameterization Discipline)
+### 3. Mathematical Non-Triviality Frontier (`R5` Anti-Reparameterization Comparative Discipline)
 
-**Critical mathematical challenge**: Any claimed change in update law $F_t$, state space $\mathcal{X}_t$, or comparison criterion $J_t$ can often be formally re-embedded as ordinary fixed-space evolution inside a larger lifted product space $\tilde{\mathcal{X}} = \bigsqcup_t (\mathcal{X}_t \times \mathcal{F}_t \times \mathcal{J}_t)$. Therefore, future `R5` formal models claiming genuine Level II/III generative rewriting must specify **why** the newly formed action interface, boundary, or comparison dimension carries non-absorbable explanatory, compressional, or interventional work (e.g., matched-present/matched-first-order contrast, out-of-sample transfer, or intervention-specific reachability separation against fixed-space rivals) rather than merely changing mathematical coordinates. This frontier is recorded as an open `R5` mathematical criterion, not prematurely solved here.
+**Critical mathematical challenge (`R4-B1 P1-04` unified with `Core_22 §0-A`)**: Any claimed change in update law $F_t$, state space $\mathcal{X}_t$, or comparison criterion $J_t$ can always be formally re-embedded as ordinary fixed-space evolution inside a larger lifted product state $z_t = (x_t, F_t, J_t) \in \tilde{\mathcal{X}} = \bigsqcup_t (\mathcal{X}_t \times \mathcal{F}_t \times \mathcal{J}_t)$. Accordingly, SRT's research objective is **not** to prove that no formal fixed-space re-embedding is mathematically possible. Instead, under **frozen candidate models and matched observation, information, complexity, and intervention conditions**, future `R5` formal models claiming genuine Level II/III generative rewriting must test whether explicitly representing generative-structure rewriting delivers **independent explanatory, predictive, compressional, or interventional gain** over fixed-space rivals (e.g., matched-present/matched-first-order contrast, out-of-sample transfer, or intervention-specific reachability separation). This frontier is recorded as an open `R5` comparative criterion, not prematurely solved here.
 
 **Cross-ref**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T03 / reserved P1-T08`; `Core_Law/SRT_One_Formation.md §2`; `Core/SRT_Core_22_Equations.md §0-A`; `03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md`.
 
