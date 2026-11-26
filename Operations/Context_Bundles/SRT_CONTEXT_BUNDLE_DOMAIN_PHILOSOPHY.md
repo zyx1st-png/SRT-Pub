@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 64820c22d
+source_commit: ac3852944
 source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
 source_dirty: false
-inputs_digest: 89d2676e20aaf8b0
+inputs_digest: 0c995daa8b6fe389
 ---
 
 # SRT 哲学领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 89d2676e20aaf8b0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `64820c22d` |
+| 来源 commit | `ac3852944` |
 | 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 7 |
@@ -1210,8 +1210,13 @@ SRT philosophy begins neither from already-given physical substances nor from an
 - **Dynamic balance and object-friction mutual writing (`07-19` Ghost source cards)**: Finite convergence (localizing into objects) and unexhausted nonclosure (constitutive background support) co-exist continuously—there is no switch-like "close, trigger, reopen" cycle; objects and friction continuously rewrite each other.
 
 ```text
-Model-level shorthand (analytic aspects, NOT three substances or a prior warehouse):
-L_0 (open/non-preclosed) <==[Selection / formed G_hat_theta, paying Psi_f]==> L_1 (determinate actuality) <==[retained efficacy / recursive reconstitution]==> L_2 (scaffolding / historical constraint)
+Analytic perspectives on ONE generative reality (simultaneous aspects, NOT ontological rungs or a 1:1 pipeline):
+  L_0 (open / non-preclosed aspect)  |  L_1 (locally determinate manifest aspect)  |  L_2 (retained historical-efficacy / sedimented condition aspect)
+
+Three dynamic generative relations (distinct from the three analytic perspectives; NO mechanical 1:1 mapping):
+  generation of difference (primitive Selection — does NOT universally require formed G_hat_theta or payable Psi_f)
+    ⇄ comparison & organization of difference (where formed operators, scaffolds & friction-bearing realizations may conditionally arise)
+    ⇄ recursive reconstruction of generative conditions (history, freedom & multi-unit re-coupling reshaping future selectability)
 ```
 
 Plain version:
@@ -1650,19 +1655,20 @@ Minimal statement:
 
 Philosophy does not merely apply SRT; it supplies independent knowledge, mechanisms, constraints, and candidate corrections to SRT as a whole (preserving candidate status and author-adjudication boundaries):
 
-| Mature philosophical / social-theory neighbor | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
+| Mature philosophical / social-theory neighbor (with core works & concepts) | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
 |---|---|---|
-| **Kant (epistemic finitude / thing-in-itself)** | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
-| **Simondon (individuation, allagmatics, disparation)** | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
-| **Process philosophy & Pragmatism (Whitehead / Dewey)** | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
-| **Philosophy of mind (Chalmers / Nagel / Kim)** | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
-| **Relational time & causal-set philosophy (Rovelli / Sorkin)** | Background-independent relational comparison without an external absolute clock | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
-| **Normativity, accountability & institutional theory (Korsgaard / Habermas / Ostrom / North / Fischer-Ravizza)** | Constitutive standards, public justification, polycentric governance, path dependence, reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
+| **Kant** (*Critique of Pure Reason*, phenomenon/noumenon & transcendental finitude; *Groundwork*, autonomy vs. inclination) | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
+| **Simondon** (*L'individuation à la lumière des notions de forme et d'information* [ILFI]: pre-individual metastability, transduction, disparation; *"Allagmatique"*) | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
+| **Whitehead & Dewey** (Whitehead, *Process and Reality*: actual occasions / concrescence; Dewey, *Experience and Nature* & *Logic: The Theory of Inquiry*) | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
+| **Chalmers, Nagel & Kim** (Chalmers, *The Conscious Mind* [Hard Problem / `HP-B`]; Nagel, *"What Is It Like to Be a Bat?"*; Kim, *Physicalism, or Something Near Enough* [causal exclusion]) | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
+| **Rovelli & Sorkin** (Rovelli, *"Relational Quantum Mechanics"* [1996] & *The Order of Time* [2018]; Bombelli, Lee, Meyer & Sorkin [1987], *"Space-time as a causal set"*) | Background-independent relational comparison without an external absolute clock; local partial-order conditions | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
+| **Korsgaard, Habermas, Ostrom, North & Fischer–Ravizza** (Korsgaard, *The Sources of Normativity*; Habermas, *Theory of Communicative Action* & *Between Facts and Norms*; Ostrom, *Governing the Commons*; North, *Institutions, Institutional Change and Economic Performance*; Fischer & Ravizza, *Responsibility and Control*) | Constitutive standards, communicative justification, polycentric governance, path dependence, guidance control / reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
 
-**Candidate Core feedback tracked for `R4-C` final synthesis / `R5`** (author adjudication required before Spine modification):
-1. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Philosophy's treatment of freedom pushes SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order, direction, and exploratory surplus (`R3-CL-O8`).
-2. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with `NTIC_i` situated non-redundancy suggests future core formalizations of individuation should pair internal writeback with external non-redundant coupling (`SRT_Individuation.md §4.6`).
-3. **Reference-structure independence across scales**: Separating physical/constitutive/normative/ethical constraints (`R3-07`) sharpens what `Spine §10` still owes for the sufficient conditions of normativity (`R3-07-O1`).
+**High-value bidirectional feedback scheduled for `R4-C5` core-theory revision** *(explicitly routed to enter corresponding core owners—`Core_Law/SRT_One_Formation.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, and `Core_Law` common mechanisms—under author adjudication at `R4-C5` final synthesis, rather than remaining solely a Philosophy-internal reference table)*:
+1. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with the model-conditioned `NTIC_i` situated non-redundancy proxy suggests `One_Formation` / `Spine` core revisions should pair internal writeback with external non-redundant coupling and cross-scale interface reconstruction (`SRT_Individuation.md §4.6`).
+2. **Collaborative co-selection & multiple vertical participation**: Positive mutual empowerment between whole and part, and simultaneous participation across multiple vertical organizations (`SRT_Collective_Selection.md §3.4`), are cross-scale generative patterns to test across physics (`R4-C2`), biology, and society before core abstraction in `R4-C5`.
+3. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Dual-engine freedom (conflict-driven orthogonalization + surplus-driven exploratory reopening) pushes core SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order and direction (`R3-CL-O8`).
+4. **Relational time & bidirectional time-scaffold participation (`PT08 D`)**: Public/shared time scaffolds feeding back into cross-unit coordination (`SRT_Causality_Time.md §2.1`) and reference-structure independence across physical/constitutive/normative/ethical constraints (`R3-07-O1`) sharpen core `Spine §10` obligations.
 
 ---
 
@@ -1938,7 +1944,7 @@ Guardrail:
 
 > Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
-**Closure-pathology alignment (2026-04-21; `R4-C1` expanded 2026-11-26)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能陷入 `U5` 自我豁免（pseudo-open closure）。
+**Closure-pathology alignment (2026-04-21; `R4-C1` expanded 2026-11-26)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却无法触动核心门槛、分配规则或合法性审查，则该制度机制事实上获得了有效再选择豁免（去主体化 **`U5`**，无论是否出于刻意防御，且可与高频局部调优并存）。
 
 ### 7.4 预裁剪四机制、公共脚手架双重作用与社会发展四维（`R3-07` + `NODE-BOOK-BACKFLOW`）
 
@@ -1949,7 +1955,7 @@ Guardrail:
 3. **社会驻留三方分离与 `C2` 撤回纪律**：对接 `Core_Law/SRT_Collective_Selection.md §3.5` 与 `SRT_Soc_03_Institutions.md`——严分可修订信任权重 **`W_social`**、后果回路 **`M(t)`** 与高 **`\rho` 路径惯性 / 产权与权力强制**；若具体货币/市场资源流全由产权、权力强制与路径粘性解释，则撤回 `W_social` 的信任增量读法，保留其 `M(t)` 不对称吸收与 SEA 五门外包链诊断（`CBP-3/4`）。
 4. **社会发展四维（非标量总分、非 `O2-M` 算法）**：**① 生成能力**（创造新协作、知识与机会） / **② 能力分布**（整体提升 ≠ 均匀分布） / **③ 不可逆构成基础**（生态、人力与信任基底） / **④ 秩序重构能力**（制度与比对标尺能否重入选择，防 `U5` 锁死）。
 
-> **社会经济学反向反馈至 SRT 核心（`R4-C1`）**：North 路径依赖、Ostrom 多中心治理与 Simmel 货币度规理论表明，低摩擦表象完全可能来自强制压制或高退出成本而非信任，且市场协调常由分布式聚合而非单一集体主体完成——这一学科约束直接推动 SRT 在核心层分离 `W_social / M(t) / 高 \rho 惯性` 并确立 `PT10 E`（高效/稳定生成 ≠ 伦理正当）。
+> **社会经济学反向反馈至 SRT 核心（`R4-C1`）**：North（*Institutions, Institutional Change and Economic Performance*）路径依赖理论、Ostrom（*Governing the Commons*）多中心治理与 Simmel（*The Philosophy of Money*）货币度规分析表明，低摩擦表象完全可能来自强制压制或高退出成本而非信任，且市场协调常由分布式聚合而非单一集体主体完成——这一学科约束直接推动 SRT 在核心层分离 `W_social / M(t) / 高 \rho 惯性` 并确立 `PT10 E`（高效/稳定生成 ≠ 伦理正当）。
 
 ---
 
@@ -2136,10 +2142,10 @@ Guardrail:
 政治哲学直接承接 `Core_Law/SRT_Collective_Selection.md §3.4, §6.1, §8` 与 `SRT_Soc_03_Institutions.md` 的四项核心正面机制：
 1. **协同共选（Collaborative Co-Selection）正面接口**：检验政治共同体能否同时维系整体新选择能力、局部新生成条件、异质价值方向保留（对齐 ≠ 同质化）、整体接受局部反馈重比对与代价真实呈现；
 2. **健康委托四要件（`Q23` provenance）**：代理授权须同时可审计 **有范围 / 有期限 / 能撤销 / 能审查**；通道被结构性关闭时，形式程序仅维持“回流外观”而非实质共同体回流；
-3. **权力六类前背景作用接口与 `U5` 制度自我豁免**：政治权力不只作用于行为禁令与资源分配，更沿**行为 / 资源 / 信息 / 比对条件 / 价值参照 / 规范形成控制**六接口组织社会前背景；最深层的政治病理对应 **`U5` 选择机制自我豁免**（统治或制度框架把自身历史选择伪装成不可再选的自然背景）；
+3. **权力六类前背景作用接口与去主体化 `U5` 制度再选择豁免**：政治权力不只作用于行为禁令与资源分配，更沿**行为 / 资源 / 信息 / 比对条件 / 价值参照 / 规范形成控制**六接口组织社会前背景；最深层的政治病理对应 **`U5` 选择绝对化**——核心政治/制度选择机制**事实上获得有效再选择豁免**（不论源于主动防御、制度设计、历史沉淀、资源依赖还是无意识结构锁定，且可与高频局部政策调整及活跃局部反馈并存）；
 4. **AI 三型社会技术中介与 SEA 五门审计**：平台与 AI 系统沿**脚手架型 / 牢笼型 / 地形型**（与 **AI 赌注谱系 `S0–S4`** 及 **Subjecthood Threshold `S0–S6`** 严格正交）改写公共 `M(t) / \sigma_{sr}^{coll} / W_social`，人类设计、部署与治理主体不得以“AI 无意识”免责；具体制度案例须按 SEA 五门协议（冻结 `U = <event, boundary, timescale, evidence>` 与八类角色非洗白）审计。
 
-> **政治与社会理论反向反馈至 SRT 核心（`R4-C1`）**：Rawls / Habermas 公共证成传统与 Ostrom 多中心治理研究表明，跨主体冲突中的悲剧性不可通约与无声受影响者无法由任何单标量 `d` 或秩序稳定指标自动裁决——这一反馈强约束 SRT 核心坚守 **`O2-C` `3B` 非词典优先审查**、**`PT10 E`** 与 **`O2-M = HOLD`**，同时促使核心层正面单列「多重垂直参与」与「协同共选」机制。
+> **政治与社会理论反向反馈至 SRT 核心（`R4-C1`）**：Rawls（*A Theory of Justice* / *Political Liberalism*）与 Habermas（*Between Facts and Norms*）的公共证成传统及 Ostrom（*Governing the Commons*）多中心治理研究表明，跨主体冲突中的悲剧性不可通约与无声受影响者无法由任何单标量 `d` 或秩序稳定指标自动裁决——这一反馈强约束 SRT 核心坚守 **`O2-C` `3B` 非词典优先审查**、**`PT10 E`** 与 **`O2-M = HOLD`**，同时促使核心层在 `R4-C5` 收口修订评估中正面吸纳「多重垂直参与」与「协同共选」机制。
 
 ### 3.3 Candidate Equality-as-Non-Monopoly Reconstruction
 \[
