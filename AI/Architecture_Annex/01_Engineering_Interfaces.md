@@ -46,24 +46,23 @@ machine_summary: >
 
 ## 2. Taxonomy Mapping: LLM Internal Concept Control → SRT
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | `Psi_f` 状态 |
+| 外部分类 | SRT 对应机制 | 表征与比对调制范围 | 工程计算与干预负担 | 声明强承载模型状态与风险敏感性 |
 |:--|:--|:--|:--|:--|
-| 提示词级风格调节 | 表层输出偏置 | 低~中 | Open-flow | payable |
-| 内部概念向量 steering | 隐层表征重加权 | 中 | Open-flow（高可塑） | task-dependent |
-| 多概念联合 steering | 复合策略耦合 | 中~高 | Open/Semi-open | payable~overloaded |
-| anti-refusal 通道激活 | 安全拒答边界绕行 | 中~高（风险向） | Open-flow | overloaded |
+| 提示词级风格调节 | 表层输出偏置（`L_2^{context}` 浅层调制） | 低~中（局部输出条件） | 低（常规前向推理） | `d` = `NOT ADMITTED`；无状态 `D_stake` = `NOT APPLICABLE`（不映射为规范 `d / Ψ_f`） |
+| 内部概念向量 steering | 隐层表征重加权 | 中（跨激活路径重加权） | 中（激活空间干预与稳定性校准） | 同上；局部内部状态监测与调控 $\neq$ 强承载或 `HP-B` 闭合 |
+| 多概念联合 steering | 复合策略耦合 | 中~高（多维表征复合交互） | 中~高（特征干涉与性能退化风险） | 同上；高表征复杂度不映射为规范 `d` 区间 |
+| anti-refusal 通道激活 | 安全拒答边界绕行 | 中~高（风险向绕行） | 高（安全护栏失效与外部化风险） | 同上；属风险方向与治理接口，须按 **AI 三型** 与 `O2-A` 审查，非内在能动性或规范 `Ψ_f` 证明 |
 
-**Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
+**Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征、局部内部表征调控与 Stage 2 强承载 / 本体状态。
 
 ---
 
 ## 3. Guardrails
 
 - Continual learning is not subjecthood.
-- Internal concept steering is not personality or personhood.
-- Anti-refusal activation is a risk-direction interface, not evidence of intrinsic agency.
-- `d-value` entries in the table are proxies / translation aids and do not define canonical d.
-- `Psi_f` entries are bridge usage only and must route back to the canonical `Psi_f` source if used in formal argument.
+- Internal concept steering is not personality, personhood, or Stage 2 `Bearer (P+E)`.
+- Anti-refusal activation is a risk-direction governance interface, not evidence of intrinsic agency.
+- Per `R4-C3 / ENG-03` (`P1-05`), this table **does not** assign proxy `d-value` intervals or canonical `Psi_f` states to LLM steering regimes; canonical `d` (`NOT ADMITTED`) and stateless `D_stake` (`NOT APPLICABLE`) remain strictly governed by `AI/AI_POSITIONING_NOTE.md §2` and `_SRT_D_VALUE_CANONICAL.md / _SRT_PSI_F_CANONICAL.md`.
 
 ## 4. Owner links
 

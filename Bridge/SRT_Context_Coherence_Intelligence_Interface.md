@@ -78,7 +78,13 @@ $$L_2^{\text{weights/cultural}} \to C_t \to C_{t+1} \to C_{t+2}$$
 
 where each $C_t$ may be a hypothesis, formal constraint, counterexample, plan, or candidate goal.
 
-> **Bounded positive claim**: Language and symbol-weight-context coupling can generate and propagate genuinely novel candidate conditions and comparative dimensions without every step requiring fresh sensorimotor contact.
+> **Bounded positive claim & four-level comparative distinction**: Language and symbol-weight-context coupling can generate and propagate genuinely novel candidate conditions and comparative dimensions without every step requiring fresh sensorimotor contact. To avoid conflating transient dialogue outputs with durable capability acquisition, distinguish **four levels of comparative generativity** (`AI/SRT_AI_Architecture_CompactCore.md §2.2`):
+> 1. **New result on existing dimensions** (novel candidate under given metrics);
+> 2. **Re-weighting of existing dimensions** (shifting priorities among known criteria);
+> 3. **Formation of a new comparative dimension** (introducing a previously absent relation into evaluation);
+> 4. **Reconstitution of comparative capacity** (durably changing what comparative dimensions a system can discover, understand, and reuse across future contexts).
+>
+> Always pair the level with **retention location**: whether the new dimension remains transient in one turn, is absorbed by the human co-generator, is inscribed into a shared workflow/external memory, or durably modifies model/system dynamics determines which organization's future generation conditions actually change.
 
 Yet per [`AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md`](../AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md) (`AIGOAL01`), three evaluation levels must remain strictly separated:
 
@@ -102,8 +108,9 @@ New social `L_2` requires uptake, stabilization, institutionalization, or durabl
 Human understanding likewise depends on shared context: conversation progressively aligns the selection fields of multiple positions through language, embodied cues, and shared history (`Understanding ≈ shared selection coherence under a common context field`).
 
 When human situated bearing couples with AI's cross-domain context coherence, **human–AI co-generation** (`AI/SRT_AI_Architecture_CompactCore.md §5`) arises through mutual modification of comparative conditions:
-- Human framing and situated resistance perturb the AI's `L_2^{context}` field away from default statistical inertia;
-- AI's cross-domain analogies, counterexamples, and formalizations perturb human foreground–background occlusion, opening comparative dimensions unavailable to either party alone.
+- In current-stage research and work workflows, human framing and situated resistance often perturb the AI's `L_2^{context}` field away from default statistical inertia;
+- AI's cross-domain analogies, counterexamples, and formalizations often perturb human foreground–background occlusion, opening comparative dimensions unavailable to either party alone.
+- **Non-fixed role boundary**: this observed division is a **current-stage empirical pattern, not an a priori permanent division of labor**; as artificial architectures, persistent memory, and collaborative practices evolve, both sides may shift across framing, comparison, critique, and persistence duties.
 
 Semantic standing remains layered rather than binary:
 - **relational / inferential organization** can be genuinely supported by symbol–weight–context structure;

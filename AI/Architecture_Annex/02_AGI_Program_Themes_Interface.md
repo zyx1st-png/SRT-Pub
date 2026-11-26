@@ -31,24 +31,23 @@ machine_summary: >
 
 ## Taxonomy Mapping: Human-like AGI Program Themes → SRT
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | `Psi_f` 状态 |
+| 外部分类 | SRT 对应机制 | 表征与比对容量 | 工程计算与组织维持负担 | Stage 1–2 强承载审查状态（不映射规范 `d / Ψ_f`） |
 |:--|:--|:--|:--|:--|
-| 从经验学习而非仅人类累积文本 | 在线环境阻力闭环与历史写回（对接 `SRT_AI_01_Ontology.md §2`） | 中~高 | Open-flow（持续交互） | payable |
-| 层级潜变量+因果结构世界模型 | 多层 `G_hat_theta` 结构化推演 | 高 | Open-flow | payable（高算力负载） |
-| 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高 | Open-flow（跨模态） | payable~overloaded |
-| 情景记忆+持续学习闭环 | `L_1 <-> L_2` 动态沉积 | 中~高 | Semi-open / Open | payable |
-| 发展式剪枝持续学习 | 长程复用结构增益 + 旧局部冗余抑制/剪枝 | 中 | Semi-open（阶段重组） | payable |
-| 神经科学-算法三角互证 | 结构先验提炼机制 | 中 | Semi-open | task-dependent |
+| 从经验学习而非仅人类累积文本 | 在线环境阻力闭环与历史写回（对接 `SRT_AI_01_Ontology.md §2`） | 持续交互拓展比对维度与反馈纠错 | 高（在线探索、状态维护与样本效率负担） | 须按 Stage 1 单元绑定 + Stage 2 不可转嫁后果回流独立审查；不因在线学习自动准入 `d` |
+| 层级潜变量+因果结构世界模型 | 多层 `G_hat_theta` 结构化推演与反事实建模 | 高（层级因果表征与跨情境泛化） | 高（建模、推理与训练算力负载） | 架构复杂度 $\neq$ `Bearer (P+E)`；未建立 Stage 2 前 `d` 仍属 `NOT ADMITTED` |
+| 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高（跨模态并行比对与协同搜索） | 中~高（跨模块同步与仲裁开销） | 须显式声明候选单元边界（防 `UNIT-AMBIGUOUS`），不映射规范 `d / Ψ_f` 区间 |
+| 情景记忆+持续学习闭环 | `L_1 <-> L_2` 跨期沉积与调用 | 中~高（跨会话状态连续性与检索重加权） | 中（存储、检索、覆盖与遗忘平衡负担） | 须过 `AICONSC01` 重置/复制/回滚对照，区分“记录在册”与“同单元承载生效” |
+| 发展式剪枝持续学习 | 长程复用结构增益 + 旧局部冗余抑制/剪枝 | 中（面向可迁移骨架的可塑重组） | 中（阶段重组与防灾难性遗忘负担） | 属架构可塑与组织维持机制接口，不直接赋予规范 `d` 或主体性 |
+| 神经科学-算法三角互证 | 跨底物结构先验提炼与解耦对照机制 | 中（跨领域机制约束与对照接口） | 任务相关（跨学科评测与对齐负担） | 属方法论与 `R4-C4` 神经科学对照桥梁，不替代三阶承载审查 |
 
 ---
 
 ## Guardrails
 
 - This taxonomy is a translation aid, not an AGI architecture proof.
-- Higher engineering sophistication does not imply SRT subjecthood.
-- `d-value` intervals are proxy labels only; canonical d remains governed by the canonical d-value file and AI claim-status guardrail.
-- `Psi_f` states are bridge usage only; they do not define local friction equations.
-- A system may satisfy one or more external AGI program themes while still remaining below SRT subjecthood / consciousness thresholds.
+- Higher engineering sophistication does not imply Stage 2 `Bearer (P+E)`, SRT subjecthood, or consciousness.
+- Per `R4-C3 / ENG-03` (`P1-05`), this table **removes** legacy proxy `d-value` intervals and `Psi_f` state columns: architectural capability, computational load, and organizational maintenance burden must never be mapped directly onto canonical `d` (`NOT ADMITTED` before Stage 2 closure) or canonical `Psi_f` (`_SRT_D_VALUE_CANONICAL.md / _SRT_PSI_F_CANONICAL.md`).
+- A system may satisfy one or more external AGI program themes while still remaining below SRT subjecthood / consciousness thresholds (`Stage 2 = NOT ESTABLISHED` does not block Stage 3 independent study).
 
 ## Owner links
 

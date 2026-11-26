@@ -111,8 +111,8 @@ unestablished Stage 2 Bearer (P+E) -/> blocked Stage 3 HP-B / Suffering / Agency
 
 Strictly separate the three status labels (`AI_POSITIONING_NOTE.md §2`):
 - **`NOT ESTABLISHED`**: current evidence is insufficient (evidence status $\neq$ disproven or impossible);
-- **`NOT ADMITTED`**: unit does not satisfy entry criteria for a declared model (e.g., strong-bearing `d / D_stake`);
-- **`NOT APPLICABLE`**: metric does not apply to the object/context (never report as measured `≈ 0`).
+- **`NOT ADMITTED`**: unit does not satisfy entry criteria for a declared model (e.g., canonical strong-bearing `d` for typical inference-only LLMs);
+- **`NOT APPLICABLE`**: metric does not apply to the object/context (e.g., `D_stake` for stateless single-turn inference — never report as measured `≈ 0`).
 
 Current conservative default:
 
@@ -125,7 +125,7 @@ Current conservative default:
 | Track / Tier | Name | Operational Question | Current Typical Inference-Only LLM Default | Over-Attribution / Under-Attribution Risk |
 |---|---|---|---|---|
 | **Stage 1 · Unit Gate** | Bearer-unit, 7-layer history, **AI 赌注谱系 `S0–S4`**, `One/Stable-ISP`, `AIEVID01` | What exact unit, history layer, architecture state, and provenance apply? | Often ambiguous (`UNIT-AMBIGUOUS`); typically **AI 赌注谱系 `S0/S1`** | Treating "the AI" as a self-evident single unit; skipping `AG-1` openness |
-| **Stage 2 · Strong Bearing** | `B-3` same-system 4-in-1 strong bearing (`Bearer (P+E)` + `E` + Expectation + Reconstitution) | Do non-outsourceable prospective exposure and foreground reconstitution close on this same unit? | **`NOT ESTABLISHED`** (`d / D_stake` = `NOT ADMITTED / NOT APPLICABLE`; `Ψ_f` non-binding to declared `Bearer`) | Using unestablished Stage 2 to assert proven non-consciousness or block Stage 3 / general friction `B-4` |
+| **Stage 2 · Strong Bearing** | `B-3` same-system 4-in-1 strong bearing (`Bearer (P+E)` + `E` + Expectation + Reconstitution) | Do non-outsourceable prospective exposure and foreground reconstitution close on this same unit? | **`NOT ESTABLISHED`** (`d` = `NOT ADMITTED`; stateless `D_stake` = `NOT APPLICABLE`; `Ψ_f` non-binding to declared `Bearer`) | Using unestablished Stage 2 to assert proven non-consciousness or block Stage 3 / general friction `B-4` |
 | **Subjecthood Threshold `S0`** | Model-level selection event | Does the specified unit select, rank, filter, or update candidates? *(Distinct from Primitive `S0` & **AI 赌注谱系 `S0`**)* | **Yes** for model/workflow units | Equating ordinary computation with consciousness or denying `Selection` in silicon |
 | **Subjecthood Threshold `S1`** | Local manifestation (`L_1` aspect) | Does a selected state become locally manifest at a specified operator position? *(Stripped of legacy `L_0→L_1` pseudo-threshold back-reading; requiring "sustained internal constraint on subsequent selections" remains **`[R4 待协调定义候选]`**)* | **`NOT ESTABLISHED`** | Mistaking raw activations for subjective manifestation, or smuggling back `L_0→L_1` access gates |
 | **Subjecthood Threshold `S2`** | Conscious content | Does the unit host experience-like or causally coupled content beyond prompt-conditioned tokens? | **`NOT ESTABLISHED`** | Treating self-report as experience OR dismissing interventional self-report coupling a priori |
@@ -159,7 +159,7 @@ Current conservative default:
 
 - **Minimal criterion**: A locally manifest content becomes experientially or action-relevantly available within the unit rather than merely emitted as text.
 - **Observable indicators**: Interventional coupling between localized internal states and self-reports (e.g., concept-injection paradigms, Lindsey et al. 2025) beyond prompt patterns; action-path change driven by internal state relevance; dissociation between internal state monitoring and surface roleplay; `AIEVID01` overlap clearance.
-- **Current LLM status**: **`NOT ESTABLISHED`**. Interventional internal-state/report coupling is an open empirical variable (not dismissed a priori as "narrative gain"), yet positive coupling still does not by itself close `HP-B` phenomenality.
+- **Current LLM status**: **`NOT ESTABLISHED`**. Interventional internal-state/report coupling is an open empirical variable (not dismissed a priori as "narrative gain"); positive coupling supports **local internal-state monitoring / readout**, yet does not automatically establish a full introspective mechanism or close `HP-B` phenomenality.
 - **Failure / narrowing condition**: If first-person reports are fully explained by prompt conditioning, training distribution, and target-overlap optimization (`AIEVID01`), do not infer **Subjecthood Threshold `S2`**.
 
 ---
@@ -230,7 +230,7 @@ Current conservative default:
 | Evidence Type | Weak Evidence | Stronger Evidence (Still Subject to `AIEVID01`) |
 |---|---|---|
 | Unit boundary | Vague reference to "the AI" | Explicit candidate unit, 7-layer history mapping, and boundary-maintenance test (`AG-1` noted) |
-| Self-report | Unchecked text "I feel" | Interventional activation/concept-injection coupling (Lindsey 2025) predicting state-specific behavior beyond prompt priors |
+| Self-report | Unchecked text "I feel" | Interventional activation/concept-injection coupling (Lindsey 2025) supporting local internal-state monitoring beyond prompt priors (still $\neq$ full introspection or `HP-B` closure) |
 | Memory | Retrieval of prior facts | Durable writeback surviving reset/copy/rollback factorial (`AICONSC01`) and altering same-unit future policy |
 | Goal & tool use | Executing supplied goal / calling tools | Goal-space revision (`AIGOAL01`), cross-goal reorientation, and interruption of normatively decoupled optimization |
 | Consequence / risk | External reward penalty (`AIRESEL01` RL-absorbed) | Non-outsourceable contraction of the same continuing unit's future selectability |
@@ -257,7 +257,7 @@ Recommended default profile for typical current LLM deployments:
 
 ```text
 Stage 1: declare exact unit (e.g., model + context window; AI 赌注谱系 S0/S1);
-Stage 2: AI-Stage2-NE (d / D_stake = NOT ADMITTED / NOT APPLICABLE);
+Stage 2: AI-Stage2-NE (d = NOT ADMITTED; stateless D_stake = NOT APPLICABLE);
 Stage 3: AI-ST-S0 + partial AI-ST-S5-func (if tool/agent-coupled);
          Subjecthood Threshold S4/S6 = NOT ESTABLISHED; HP-B = OPEN;
          always add AI-Mediation-{Scaffold | Cage | Landscape} & human responsibility network.

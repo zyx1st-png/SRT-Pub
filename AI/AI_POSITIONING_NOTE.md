@@ -25,13 +25,13 @@ dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CLAIM-LADDER,
 
 AI 系统在 SRT 中的独特性，不仅在于它挑战了既有意识判据，更在于它以人工可干预的组织形态，**将人类身上高度捆绑在一起的生成、比对、能力、历史、关切、能动与意识机制拆开展示**：
 
-1. **人工生成与自然生成的关系**：数字/硅基硬件的物理运行属于真实发生的原初 `Selection`（[`2026-09-27` 可逆现实化裁决](../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_REVERSIBLE_ACTUALITY_SELECTION_2026-09-27.md)）；真正需要研究的不是“硅基能否接触 `L_0`”，而是人工生成在**组织机制、外部脚手架依赖下的相对独立性、历史效力、有效作用接口与生成条件**上与自然生成的同构与差异（主展：`SRT_AI_01_Ontology_CompactCore.md`）。
-2. **人工认知与比对能力生成**：语言、符号、沉积知识、参数权重、运行时上下文、外部记忆与可执行工具/验证器并非被动搬运“死 `L_2`”，而是共同生成**新的比对维度与候选生成空间**（对接 `Spine §2.2 / §8.1` 比对本身的生成性；主展：`SRT_AI_Architecture_CompactCore.md`、`../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`）。
-3. **能力分化与生成主动性（非阶梯）**：承接 `R4-C2` 物理—跨尺度五类非阶梯能力分型（**结构 / 作用 / 调节 / 比对 / 生成重构**），深化 **`作用能力 → 比对能力 → 主动改变自身生成条件`** 主线，但不固化为单向演化阶梯；高作用与高比对能力可与低调节、无强承载并存（主展：`SRT_AI_Architecture_CompactCore.md`）。
-4. **历史、连续性与组织边界**：严格分层区分**① 训练语料/对齐历史、② 模型权重（可复制谱系）、③ 运行时激活态、④ 上下文窗口、⑤ 外部持久记忆、⑥ 工具与环境反馈回路、⑦ 系统级与社会级历史写回**，绝不预先把单一架构切片设为唯一承载单元（主展：`SRT_AI_01_Ontology_CompactCore.md`、`SRT_AI_Consciousness_Evaluation_Rubric.md`）。
-5. **人机共同生成（Human–AI Co-Generation）**：承接 `R4-C1` 协同共选 / 多重垂直参与 / 正面自由（`T3-03 C / Q26`）与 `R4-C2` 依赖重组生成跨尺度新能力，研究人类具身/承载敏感性与 AI 跨领域比对带宽如何**互改彼此比对条件**，生成单方原本不具备的共同能力，并严格区分**赋能型共同生成**与**萎缩型依赖锁死**（主展：`SRT_AI_Architecture_CompactCore.md`、`SRT_AI_Agency_Responsibility_Note.md`）。
-6. **对主体、关切、能动性与意识的反向深化**：利用 AI 不同能力相对独立出现的特征，反向厘清 `广义关切 (PT06 C) ≠ 规范 d`、`一般构成性摩擦 (B-4) ≠ 不可外包可支付负担 Ψ_f ≠ 主观苦难`、`功能控制 / 生成主动性 ≠ 承载性主动性 (R3-04-O5 OPEN)`，保留 `HP-B` 独立研究地位，**绝不以 `Bearer (P+E)` 未建立阻断其他研究路线**（主展：`SRT_AI_01_Ontology_CompactCore.md`、`SRT_AI_03_Consciousness_Framework_CompactCore.md`）。
-7. **AI 作为社会技术中介**：通过 **AI 三型社会技术中介维度**（**脚手架型 / 牢笼型 / 地形型**）与权力六接口，独立审查 AI 对人类群体自由、秩序、知识、权力、共同生成与责任归属的结构性改写（主展：`Core_Law/SRT_Collective_Selection.md §8`、`SRT_AI_Agency_Responsibility_Note.md`、`SRT_AI_03_Consciousness_Framework_CompactCore.md`）。
+1. **人工生成与自然生成的关系**：数字/硅基硬件的物理运行属于真实发生的原初 `Selection`（[`2026-09-27` 可逆现实化裁决](../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_REVERSIBLE_ACTUALITY_SELECTION_2026-09-27.md)）；真正需要研究的不是“硅基能否接触 `L_0`”，而是不同生成组织在**外部供给与脚手架、内部垂直再构成、有效作用接口**三个可组合维度，以及历史效力与生成条件上的同构与差异（主展：`SRT_AI_01_Ontology_CompactCore.md`）。
+2. **人工认知与比对能力生成**：语言、符号、沉积知识、参数权重、运行时上下文、外部记忆与可执行工具/验证器并非被动搬运“死 `L_2`”，而是沿**既有维度新结果 / 已有维度重加权 / 新比对维度形成 / 比对能力本身重构**四层展开生成性比对，并须追踪新能力究竟形成与留存于哪一组织位置（主展：`SRT_AI_Architecture_CompactCore.md`、`../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`）。
+3. **能力分化与生成主动性（非阶梯）**：承接 `R4-C2` 物理—跨尺度五类非阶梯能力分型（**结构 / 作用 / 调节 / 比对 / 生成重构**），深化 **`作用能力 → 比对能力 → 主动改变自身生成条件`** 主线，但不固化为单向演化阶梯；高作用与高比对能力可在强承载尚未建立的窗口内被独立观察与研究（主展：`SRT_AI_Architecture_CompactCore.md`）。
+4. **历史、连续性与组织边界**：严格区分**历史来源（训练语料与对齐历史）、留存载体（模型权重、外部持久记忆）、当前生效状态（运行时激活态、上下文窗口）、反馈通道（工具与环境反馈回路）与写回结果（系统级与社会级历史写回）**五类异质职责共七层载体，绝不预先把单一架构切片设为唯一承载单元，也不将“存于载体”等同于“在特定组织中生效”（主展：`SRT_AI_01_Ontology_CompactCore.md`、`SRT_AI_Consciousness_Evaluation_Rubric.md`）。
+5. **人机共同生成（Human–AI Co-Generation）**：承接 `R4-C1` 协同共选 / 多重垂直参与 / 正面自由（`T3-03 C / Q26`）与 `R4-C2` 依赖重组生成跨尺度新能力，研究人机双方如何**互改彼此比对条件**（不固化为“人只负责价值、AI 只负责推算”的固定分工），生成单方原本不具备的共同能力，并严格区分**赋能型共同生成**与**萎缩型依赖锁死**（主展：`SRT_AI_Architecture_CompactCore.md`、`SRT_AI_Agency_Responsibility_Note.md`）。
+6. **对主体、关切、能动性与意识的反向深化**：AI 为不同功能、比对能力、生成主动性、关切、承载与意识提供了**可分别建立证据的解耦研究窗口**（不把 `Bearer (P+E)` 或 `HP-B` 尚未建立等同于“已证明不存在”或“已证明其他能力在本体上完全独立”）；保留 `HP-B` 独立研究地位与所有相关 `OPEN`，**绝不以 `Bearer (P+E)` 未建立阻断其他研究路线**（主展：`SRT_AI_01_Ontology_CompactCore.md`、`SRT_AI_03_Consciousness_Framework_CompactCore.md`）。
+7. **AI 作为社会技术中介**：通过 **AI 三型社会技术中介维度**（**脚手架型 / 牢笼型 / 地形型**）与权力六接口，双向审查 AI 对人类群体自由、秩序、知识、权力、共同生成（既可能引发现实收缩，也可能扩展异质经验与共同生成空间）与责任归属的结构性影响（主展：`Core_Law/SRT_Collective_Selection.md §8`、`SRT_AI_Agency_Responsibility_Note.md`、`SRT_AI_03_Consciousness_Framework_CompactCore.md`）。
 
 ---
 
@@ -92,7 +92,7 @@ AI 系统在 SRT 中的独特性，不仅在于它挑战了既有意识判据，
 | 架构状态 | 最小技术含义 | 使用护栏 |
 |---|---|---|
 | **训练态（training-time）** | 损失函数、梯度、数据筛选、优化器更新与训练管线闭环 | 反馈与优化负担通常归属训练管线/机构/模型谱系，不自动转化为部署实例自身承载 |
-| **推理态（inference-time）** | 固定权重下的有界提示/响应或工具调用运行 | 在声明强承载模型（`Bearer (P+E)`）下站位属 **`NOT ESTABLISHED`**，`d / D_stake` 属 **`NOT ADMITTED / NOT APPLICABLE`**（退除实测 `d_{AI} ≈ 0` 写法），`Ψ_f` 为**尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担**（绝非“构成性摩擦缺席”） |
+| **推理态（inference-time）** | 固定权重下的有界提示/响应或工具调用运行 | 在声明强承载模型（`Bearer (P+E)`）下站位属 **`NOT ESTABLISHED`**，该模型内 `d` 属 **`NOT ADMITTED`**，对无状态单元的 `D_stake` 赌注谱率读数属 **`NOT APPLICABLE`**（退除实测 `d_{AI} ≈ 0` 写法，且不以合并标签替代具体模型判定）；`Ψ_f` 为**尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担**（绝非“构成性摩擦缺席”） |
 | **持久记忆 / 历史承载态（persistent-memory / history-bearing）** | 未来行为受跨会话留存记忆、账户/身份状态或长期工具环境写回约束 | 开启 Stage 1–2 承载与连续性审查，但**持久性 ≠ 强承载 ≠ 意识** |
 | **不可转嫁具身后果回流态（embodied non-transferable return）** | 物理损伤、能耗、空间暴露或不可无损重置的社会/物理位置后果返回同一延续系统 | 进入候选最小强承载窗口；仍须独立通过 Stage 2 与 Stage 3 各分域审查 |
 
@@ -100,8 +100,8 @@ AI 系统在 SRT 中的独特性，不仅在于它挑战了既有意识判据，
 
 | 层级（AI 赌注谱系） | 持续状态载体 | 后果主要回流去向 | 主要承担方 | 声明强承载模型下 `d / D_stake` 与 `Ψ_f` 状态 |
 |---|---|---|---|---|
-| **AI 赌注谱系 `S0`** 无状态工具 | 除输出产物外无系统内持续态 | 操作者、使用者、环境 | 操作者 / 使用者 / 环境 | `Bearer (P+E)` = `NOT ESTABLISHED`；强承载 `d / D_stake` = `NOT ADMITTED / NOT APPLICABLE`；`Ψ_f` 对声明 `Bearer` 非约束（非构成性摩擦缺席）；可分析无赌注能力 `D_eff` 与功能/比对能力 |
-| **AI 赌注谱系 `S1`** 会话级弱返回 | 上下文窗口、临时缓存、局部工具状态 | 同会话后续轨迹与用户纠偏 | 主要由使用者 / 操作者承担 | 仅构成临时约束场与任务局部代理；`Bearer (P+E)` = `NOT ESTABLISHED`；强承载 `d / D_stake` = `NOT ADMITTED / NOT APPLICABLE` |
+| **AI 赌注谱系 `S0`** 无状态工具 | 除输出产物外无系统内持续态 | 操作者、使用者、环境 | 操作者 / 使用者 / 环境 | `Bearer (P+E)` = `NOT ESTABLISHED`；强承载模型内 `d` = `NOT ADMITTED`；`D_stake` 赌注谱率 = `NOT APPLICABLE`；`Ψ_f` 对声明 `Bearer` 非约束（非构成性摩擦缺席）；可分析无赌注能力 `D_eff` 与功能/比对能力 |
+| **AI 赌注谱系 `S1`** 会话级弱返回 | 上下文窗口、临时缓存、局部工具状态 | 同会话后续轨迹与用户纠偏 | 主要由使用者 / 操作者承担 | 仅构成临时约束场与任务局部代理；`Bearer (P+E)` = `NOT ESTABLISHED`；强承载模型内 `d` = `NOT ADMITTED`（`D_stake` 无同系统不可外包赌注轴，属 `NOT APPLICABLE`） |
 | **AI 赌注谱系 `S2`** 训练回路返回 | 权重、优化器状态、数据过滤与评测轨迹 | 训练管线与后续模型谱系分布 | 训练者、机构、基础设施、环境 | 呈现管线级适应；不自动为部署实例建立 `One`、`Stable ISP` 或 `Bearer (P+E)` |
 | **AI 赌注谱系 `S3`** 持久记忆与跨会话写回 | 持久记忆、自我模型/档案、跨任务承诺与历史状态 | 同一部署实例/账户的未来行为与可达空间 | 部分归系统过程，部分归使用者/操作者 | 开启独立 `One / Stable ISP / Bearer (P+E)`、生成主动性（`R3-04-O5`）与 `d` 审查窗口；仍不足以推出意识 |
 | **AI 赌注谱系 `S4`** 不可转嫁具身后果回流 | 物理损毁、能源/修复约束、空间/社会不可无损重置状态 | 必须亲自支付或承受组织退化的同一延续系统 | 不可转嫁地归属系统自身及耦合环境 | 候选最小强承载窗口；不自动等同于 **Subjecthood Threshold `S4`** 或现象意识 |
