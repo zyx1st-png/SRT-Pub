@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: eff704179
-source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
+source_commit: e796552b0
+source_branch: canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26
 source_dirty: false
-inputs_digest: 80ecabcfa202ae95
+inputs_digest: d8ecb08de96b8a18
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 80ecabcfa202ae95
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `eff704179` |
-| 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
+| 来源 commit | `e796552b0` |
+| 来源分支 | `canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -50,9 +50,9 @@ inputs_digest: 80ecabcfa202ae95
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-11-26 |
 | 7 | `Core_Law/SRT_One_Formation.md` | 2026-11-26 |
-| 8 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
-| 9 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-23 |
-| 10 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
+| 8 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-11-26 |
+| 9 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-11-26 |
+| 10 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-11-26 |
 | 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-11-26 |
 | 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-11-26 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-11-26 |
@@ -445,78 +445,79 @@ For substantive SRT answers:
 
 | 编号 | 标题 | 所属章节 | 仓库定位 |
 |---|---|---|---|
-| `Def-Protocol-1` | Protocol Layer Π (协议层 Π) | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L52` |
-| `Def-Protocol-2` | Absolute-vs-Relative Constraint Split（新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L62` |
-| `Def-Protocol-3` | Methodological Closure Guard（方法论闭包护栏，新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L71` |
-| `Eq-Multi-01` | Collective Free Energy Landscape（集体自由能景观） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L84` |
-| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L90` |
-| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L95` |
-| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L111` |
-| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L125` |
-| `Eq-Bridge-D-01` | Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`) | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L141` |
-| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L161` |
-| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L177` |
-| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L193` |
-| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L221` |
-| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L253` |
-| `Eq-Rhythm-4a` | Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L289` |
-| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L334` |
-| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L361` |
-| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L390` |
-| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L398` |
-| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L405` |
-| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L425` |
-| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L432` |
-| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L439` |
-| `Eq-Evo-03c` | D-Value Forward Criterion (d 值前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L465` |
-| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L512` |
-| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L524` |
-| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L529` |
-| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L543` |
-| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L557` |
-| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L567` |
-| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L587` |
-| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L592` |
-| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L599` |
-| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L606` |
-| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
-| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L616` |
-| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
-| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L632` |
-| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L637` |
-| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L695` |
-| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L702` |
-| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L737` |
-| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L743` |
-| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L752` |
-| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L764` |
-| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L775` |
-| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L854` |
-| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L865` |
-| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L874` |
-| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L881` |
+| `Def-Protocol-1` | Protocol Layer Π (协议层 Π) | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L63` |
+| `Def-Protocol-2` | Absolute-vs-Relative Constraint Split（新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L73` |
+| `Def-Protocol-3` | Methodological Closure Guard（方法论闭包护栏，新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L82` |
+| `Eq-Multi-01` | Collective Free Energy Landscape（集体自由能景观） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L95` |
+| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L101` |
+| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L106` |
+| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L122` |
+| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L136` |
+| `Eq-Bridge-D-01` | Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`) | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L152` |
+| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L172` |
+| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L188` |
+| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L204` |
+| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L232` |
+| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L264` |
+| `Eq-Rhythm-4a` | Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L300` |
+| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L345` |
+| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L372` |
+| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L401` |
+| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L409` |
+| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L416` |
+| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L436` |
+| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L443` |
+| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L450` |
+| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L476` |
+| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L527` |
+| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L539` |
+| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L544` |
+| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L558` |
+| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L572` |
+| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L582` |
+| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L602` |
+| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L607` |
+| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L614` |
+| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L621` |
+| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L625` |
+| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L631` |
+| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L641` |
+| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L647` |
+| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L652` |
+| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L710` |
+| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L717` |
+| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L753` |
+| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L759` |
+| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L768` |
+| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L780` |
+| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L791` |
+| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L860` |
+| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L871` |
+| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L880` |
+| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L887` |
 
 ### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
 
-- **原文件**：`Core/SRT_Core_21c_Bridge_Hypotheses.md`（last_commit: `2026-09-11`；按需直接读仓库，不入默认 `SPINE`）
-- **条目数**：自动抽取 14 条 `P2/P3/P4-B*`（已纳入 `inputs_digest` 闭包）
+- **原文件**：`Core/SRT_Core_21c_Bridge_Hypotheses.md`（last_commit: `2026-11-26`；按需直接读仓库，不入默认 `SPINE`）
+- **条目数**：自动抽取 15 条 `P2/P3/P4-B*`（已纳入 `inputs_digest` 闭包）
 
 | 编号 | 标题 | 仓库定位 |
 |---|---|---|
-| `P2/P3-B01` | Information-Existence Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L50` |
-| `P3/P4-B02` | Fitness Beats Truth | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L66` |
-| `P4-B03` | Assembly Criterion | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L84` |
-| `P3/P4-B04` | Holographic Duality | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L106` |
-| `P2/P3-B05` | Topological Normativity | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L124` |
-| `P3-B06` | Scale Consistency | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L140` |
-| `P3-B07` | Ghost Operator Universality | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L156` |
-| `P2/P3-B08` | `\Psi_f` as Generative Principle | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L196` |
-| `P2/P3-B09` | Strong Selection-Information Creation Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L223` |
-| `P3/P4-B10` | Deep Time / Assembly Mass | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L252` |
-| `P3-B11` | `D_eff` as d-Value Capacity Proxy | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L268` |
-| `P2/P3-B12` | Information-Geometry / Complexity / Neural-Computational Hardening | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L291` |
-| `P2/P3-B13` | ST-A Structural Stabilisation and Generative Reselectability | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L320` |
-| `P2/P3-B14` | EX-A Anchoring-Persistence Readout | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L354` |
+| `P2/P3-B01` | Information-Existence Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L60` |
+| `P3/P4-B02` | Fitness Beats Truth | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L76` |
+| `P4-B03` | Assembly Criterion | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L94` |
+| `P3/P4-B04` | Holographic Duality | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L116` |
+| `P2/P3-B05` | Topological Normativity | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L134` |
+| `P3-B06` | Scale Consistency | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L150` |
+| `P3-B07` | Ghost Operator Universality | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L166` |
+| `P2/P3-B08` | `\Psi_f` as Generative Principle | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L206` |
+| `P2/P3-B09` | Strong Selection-Information Creation Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L233` |
+| `P3/P4-B10` | Deep Time / Assembly Mass | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L262` |
+| `P3-B11` | `D_eff` Capacity Proxy, `D_stake` Spectral Participation Ratio & `d` Separation | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L278` |
+| `P2/P3-B12` | Information-Geometry / Complexity / Neural-Computational Hardening | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L298` |
+| `P2/P3-B13` | ST-A Structural Stabilisation and Generative Reselectability | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L327` |
+| `P2/P3-B14` | EX-A Anchoring-Persistence Readout | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L361` |
+| `P2/P3-B15` | Five Change Scales, Generative Structural Rewriting & Non-Triviality Frontier (`R4-B1`) | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L385` |
 
 ### 0.5.3 动态运行状态、未闭合张力与当前作者裁决检索指针
 
@@ -2888,11 +2889,11 @@ Cite this file as the canonical L1 semantic owner for:
 | path | `Core/SRT_Core_21_Formal_Axioms.md` |
 | id | SRT-CORE-21 |
 | claim_mode | mixed_index |
-| status | active_v3 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2923,17 +2924,20 @@ Claim-level rules are now governed by:
 
 ## Current Core 21 Layers
 
-| Layer | File | Claim level | Role |
+| Layer | File | Claim level | Role (`R4-B1` unified formal architecture) |
 |---|---|---:|---|
-| Minimal axioms | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 | Primitive axioms only |
-| Constitutive theorems | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 | Theorems internal to SRT once P0 is granted |
-| Bridge hypotheses | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3/P4 | Canonical interpretations, cross-domain mappings, empirical thresholds |
+| Minimal axioms | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 | Primitive axioms only (`P0-01..P0-04`, kept razor-thin) |
+| Constitutive theorems & criteria | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 / P1-candidate | Constitutive relations & organizational criteria (`P1-T01..T04, T06`, recursive `P1-T03`, reserved `P1-T08` `One` constitutive-relation section) |
+| Bridge hypotheses & formal interfaces | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3/P4 | Canonical interpretations, cross-domain mappings, empirical thresholds, 5 change scales & structural-rewriting interfaces (`P2/P3-B15`) |
+| Sole core equations anchor | `Core/SRT_Core_22_Equations.md` | P2–P4 declared models | Core equations, conditions, mathematical properties & scopes (Level I / II / III modeling duties; domain models remain with their domain owners) |
+| Dynamical mechanism & embodiment interface | `Core_Law/SRT_Reference_Dynamics.md` | L1 mechanism / bridge | Dynamical mechanism explanations, embodied operator prototypes & cross-scale interfaces (not a rival master equation library) |
 
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, the bounded occurrence / retained-history remainder, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record, and do not treat historical P1-T02 naming as a universal time-arrow theorem;
-- cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
+- cite stable ISP continued selectability (`P1-T06`), bounded occurrence / retained-history remainder (`P1-T02`), recursive historical conditioning (`P1-T03`), minimal information distinction (`P1-T04`), absorption remainder (former `P1-T07`), and the `One` constitutive-relation candidate interface (reserved `P1-T08`, not yet a proved P1 theorem) from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
+- cite the ST-A conditional anti-closure candidate (`B13`), five change scales & generative structural-rewriting interfaces (`B15`), corrected `D_eff / D_stake / d` separation (`B11`), and fitness / assembly / holography / universality / Fisher-geometry `\Psi_f` / strong information-creation bridges from `Core/SRT_Core_21c_Bridge_Hypotheses.md`;
+- cite core equations from `Core/SRT_Core_22_Equations.md` as the sole core equations master anchor.
 
 ---
 
@@ -3017,7 +3021,7 @@ For claim governance, read:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3101,13 +3105,16 @@ A possibility / reachability structure can itself be partly generated by prior S
 
 SRT does not start with a stable inventory of objects or a warehouse of latent finished possibilities to which Selection is later applied.
 
-Current framing:
+Current framing (`R4-A / R4-B1` aligned):
 
 ```text
 Selection reality is open beyond any completed actuality;
 actualising Selection institutes determinate manifestation;
-retained effects of prior Selection may constrain later Selection.
+retained effects of prior Selection may participate in conditioning later Selection.
 ```
+
+- **Source-vs-extraction & global orientation (`T3-04 D`, `T3-01 C/E`)**: Primitive `Selection` is SRT's most fundamental theoretical extraction perspective into the inexhaustible real generative source (`神性·源义`), not an exhaustive definition or second substance. Whether cross-scale generation carries an objective global optimizing or extremal orientation (`T3-01 C/E`) remains an open non-moral inquiry (`Spine §1`)—neither written into P0 as an axiom nor foreclosed by P0.
+- **Opportunity-cost boundary**: Primitive non-flat differentiation is the ontological source condition enabling concrete opportunity-cost structures to emerge under formed comparative relations; concrete opportunity-cost spaces, value, concern, friction, and freedom belong downstream and never retroactively define P0 `Selection`.
 
 The same ontic generative mode can therefore appear under distinct structural burdens without becoming structurally flat.
 
@@ -3310,12 +3317,13 @@ But:
 finite positionality
 != formed One
 != formed Selection-position
-!= Bearer
+!= Stable ISP
+!= Bearer (P+E)
 != Agent
 != subject-position.
 ```
 
-Any stronger identity, perspective, bearing or agency claim must pay its own downstream burden.
+Any stronger identity, perspective, bearing or agency claim pays its own independent downstream burden (`One != Stable ISP != Bearer (P+E)`; no linear hardware ladder).
 
 ---
 
@@ -3388,7 +3396,7 @@ Use `Core_Law/SRT_L0_Metaphysics.md` for the metaphysical anchor and `Core_Law/S
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3461,16 +3469,17 @@ $$
 
 The equation is not an unconditional P1 identity and does not create a universal time scalar. Its metric, attribution, retention rule and horizon belong to the declared formalization.
 
-**Time distinctions**:
+**Time distinctions (`R3-05` three-layer time interface: relational order precedes metric measure)**:
 
 ```text
-parametric ordering
-!= occurrence non-equivalence
-!= retained historical record
-!= model-specific ontological-time measure.
+parametric ordering (t)
+!= occurrence non-equivalence (P0-03 / P1-T02 floor)
+!= ontic relational step-order candidate (tau_ontic, R3-05 OPEN)
+!= model-specific ontological-time measure (t_onto = ∫‖Ĝ_θ(s)‖ds inside a declared model)
+!= experiential duration (t_exp, downstream cognitive/phenomenological layer).
 ```
 
-The exact universal theory of time remains **OPEN**. Absence of durable trace or `L_2` retention does not imply that no Selection occurred or that occurrence asymmetry disappears.
+The exact universal theory of time—and the precise bridge connecting relational step-order, model-local `t_onto`, and physical clocks—remains **OPEN**. Absence of durable trace or `L_2` retention does not imply that no Selection occurred or that occurrence asymmetry disappears.
 
 **Time Layer Note**: This theorem concerns **ontological time**. Parametric time `t` in equations remains a mathematical ordering variable and does not by itself carry the ontological claim.
 
@@ -3480,21 +3489,34 @@ The exact universal theory of time remains **OPEN**. Absence of durable trace or
 
 ---
 
-## P1-T03: `L_2` Downward Constraint
+## P1-T03: Recursive Conditioning by Retained Historical Structure (`L_2` & Scaffolding)
 
-**Lineage**: former `Ax-F-10`.
+**Lineage**: upgraded from former `Ax-F-10` / `L_2 Downward Constraint` under `R4-B1` (`2A 修正版`, 2026-11-26).
 
-**Formal Definition**: `L_2` constraints modulate selection dynamics as a downward causal term.
+**Established P1 Constitutive Statement**:
+> **先前选择所生成并保留实际效力的结构，可以作为后续选择的生成条件，参与其方向、关系、组织及比对条件的形成与重构。**
+> *(Structures generated by prior Selection that retain actual material efficacy can serve as generative conditions for subsequent Selection, participating in forming and reconstructing its direction, relations, organization, and comparison conditions.)*
 
-$$
-\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] - \lambda \cdot \nabla C_{L_2}[\sigma]
-$$
+### Strict Separation of Claim Hardness (`2A 修正版` Hard Guard)
 
-**Implication**: Sedimented convergence structures are not inert records. They feed back as real constraints on future selection.
+This theorem strictly separates two levels of epistemic commitment and **must never** conflate them:
 
-**Retention Boundary**: `L_2` here means an admitted retained/sedimented structure whose material efficacy in later Selection conditions has been established. P1-T03 does not imply that every Selection automatically creates an `L_2` object, that every past event remains active, or that every event produces a persistent constraint.
+1. **Established Constitutive Relation (`P1`)**: Where prior Selection has produced retained historical structure with independently established material efficacy (`L_2` / scaffolding), that structure is not an inert archive—it actively conditions subsequent Selection.
+2. **Conditional / Open Generative Mechanisms (`P2–P4 / OPEN`, NOT yet derived from `P0`)**: *Under what specific structural, dynamical, or scale conditions* retained history merely biases trajectories versus actually rewrites transition laws, reachable/comparison spaces, organizational boundaries, or comparison criteria remains an active research program—**never** prematurely packaged as a theorem already proved from `P0`.
 
-**Boundary**: Domain-specific readings of `C_{L_2}` belong to bridge or lab files. This theorem only fixes the constitutive role of an admitted `L_2` constraint.
+### Three Coexisting Formal Modeling Duties (Schematic, Non-Sequential)
+
+When formalizing how retained historical efficacy $H_t$ (admitted `L_2` / scaffold structure) enters later Selection in a declared model, `R4-B` distinguishes three coexisting formal modeling duties (these are distinct research roles, not a compulsory evolutionary ladder):
+
+| Formal Duty | Schematic Form (Design Guide, Not a Universal Axiom) | What History Modifies | Relation to `Core_22` / `Core_21c` |
+|---|---|---|---|
+| **Level I · State & Direction Conditioning** | $x_{t+1} = F_t(x_t;\, H_t)$ | Modifies weights, costs, constraints, and local accessibility inside a fixed state space | The legacy fixed-space gradient term $\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] - \lambda\nabla C_{L_2}[\sigma]$ is **one Level-I fixed-space special case**, not the full scope of `P1-T03` (`Core_22 Eq-Evo-01`) |
+| **Level II · Generative-Relation / Rule Rewriting** | $F_{t+1} = \mathcal{R}(F_t,\, x_t,\, H_t)$ | Rewrites update laws, coupling rules, generators, or admissible composition structures | Connects to `Core_22` (`Def-Protocol-1`, `Eq-Bridge-L2-01`), `Core_12b` (`T-L2-Scaffold`), and `Core_21c P2/P3-B15` (`HCLR01 HEF-4` / `R3-08` 5 change scales) |
+| **Level III · Generative-Space & Comparison-Criterion Reconstruction** | $(\mathcal{X}_t, F_t, J_t) \longrightarrow (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})$ | Participates in forming new reachable spaces, effective action interfaces, boundaries, and comparison dimensions | Open formal research frontier (`Core_21c P2/P3-B15` & `R5`); must address non-triviality against equivalent re-embedding into a larger fixed state space |
+
+**Retention Boundary**: `L_2` / retained structure here means an independently admitted structure whose material efficacy in later Selection conditions has been established. `P1-T03` does **not** imply that every Selection creates an `L_2` object, that every past event remains active, or that retained structure always rewrites $\mathcal{X}_t$ or $J_t$.
+
+**Emergence Hygiene Boundary**: `P1-T03` posits no extra "configurational force" floating above part-level interactions. Any P3/P4 domain model claiming downward constraint or rule rewriting must specify the concrete channel (boundary conditions, coupling topology, accessible space, update costs, or scaffolding protocols; see `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12, B15`).
 
 ---
 
@@ -3584,7 +3606,7 @@ No P1 `Real Choice Moment` theorem remains after RC-A.
 
 **Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
-**Formation / standing boundary (R1, 2026-09-11)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer`, or subjecthood. P1-T06 therefore does not organize the ontology as `formed process -> Stable ISP -> subject-position`. The canonical semantic owner for the thinner upstream formation is `Core_Law/SRT_One_Formation.md`; P1-T06 still does not supply a necessary-and-sufficient theorem for One formation.
+**Formation / standing boundary (R1, 2026-09-11; `R4-A / R4-B1` non-linear sync 2026-11-26)**: recurrent historical reconstitution and writeback are relevant to continuity and Stable-ISP standing. They must not, by themselves, be used to derive active vertical organization, a formed position, `Bearer (P+E)`, or subjecthood. Under `Core_Law/SRT_Generative_Ontology_Spine.md §6.1`, the old linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) is retired: `One`, `Stable ISP`, and `Bearer (P+E)` are **independently gated** (`One != Stable ISP != Bearer (P+E)`). The canonical semantic owner for upstream `One` formation is `Core_Law/SRT_One_Formation.md`; see also the reserved `P1-T08` constitutive-relation interface below.
 
 **Implication**: Stability is not an arbitrary restriction imposed by the observer. P1-T06 identifies a **strong persistent-perspective standing** for a recurrent selection process. It does not claim to mark the first ontological appearance of perspective, and Stable-ISP standing does not by itself establish subject-position.
 
@@ -3616,6 +3638,37 @@ epsilon_pg -/> consciousness seed.
 ```
 
 **Audit trail**: `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`; `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`.
+
+---
+
+## `One` Constitutive Relation & Candidate Criterion (Reserved: `P1-T08` — Not Yet a Proved P1 Theorem)
+
+> **Status (`R4-B1`, `2A 修正版`, 2026-11-26)**: This section establishes the formal constitutive interface between `Core_Law/SRT_One_Formation.md` (`D4a` semantic owner) and SRT's core theorem layer. **`P1-T08` is RESERVED, NOT prematurely promoted to a proved P1 theorem.** Formal necessary-and-sufficient conditions for `One` remain explicitly `OPEN`; formal promotion requires an independent derivation rather than semantic restatement.
+
+### 1. Inherited `D4a` Constitutive Relation (from `Core_Law/SRT_One_Formation.md §2`)
+
+At current `D4a` strength, a relatively independent vertical generative organization (`One`) requires a **Selection-mediated vertical reconstitution path** with relative continuation separability:
+
+1. **Vertical reconstitution**: prior Selection-generated vertical organization materially conditions later Selection, and later Selection generates renewed vertical organization capable of carrying that conditioning role again (`generic persistence / repeated similarity / static background != One`).
+2. **Dependence reorganization (`R3-04`)**: relative independence does not arise by eliminating dependencies, but by reorganizing dispersed generative conditions through endogenous comparison and vertical organization into shared generative conditions—where deeper local interdependence can support new higher-scale relative independence.
+3. **Anti-pre-One circularity**: multi-unit spontaneous foreground–background collaboration forming a vertical structure does **not** presuppose that participating units are already `One`s.
+4. **Existence & Order dual perspectives**: `One` is analyzed through the Existence perspective (formation, maintenance, continuation) and Order perspective (maintenance constraint, directional bias, generative reconstruction, spanning multi-`One` relations and new higher-order organization), without coining a second ontic noun.
+
+### 2. Strict Independence of Existence-Side and Value-Side Tests (Anti-Circularity Guard)
+
+To prevent circular mutual definition between existence (`One`) and value (`_SRT_D_VALUE_CANONICAL.md`), two analytical tests are kept **strictly independent** and **must NEVER be merged into a joint admission threshold for `One`**:
+
+| Test Axis | Question Asked | Admission Role |
+|---|---|---|
+| **Existence-side test (Organizational Continuity)** | Does a relatively separable Selection-mediated vertical reconstitution path actually form, maintain, and continue through dependence reorganization? | Primary structural question for `One` formation (`D4a` / `One_Formation §2`) |
+| **Value-side test (Opportunity / Consequence Change)** | Does operating with/as this integrated organization genuinely alter generative opportunity costs, effective action interfaces, and downstream consequences at relevant comparison scales? | Independent value/effect inquiry (`_SRT_D_VALUE_CANONICAL.md §2`); **NOT a required joint gate for `One` admission** |
+
+An organization may genuinely form and possess relative independence (`One`) even before any value gain has been established at a particular comparison scale; conversely, external observer grouping or statistical compression (`compression normalization`) does not establish `One`.
+
+### 3. Open Derivation Burden & Downstream Routing
+
+- **What remains `OPEN` for any future formal `P1-T08` theorem**: (a) formal non-circular necessary-and-sufficient conditions separating `One` reconstitution from ordinary causal recurrence across physical bound-equilibrium, dissipative, and endogenous-mutual-maintenance regimes (`R3-04-O1`); (b) exact compression-vs-generative normalization dual threshold (`R3-CL-O2`); (c) unit-identification, strict numerical identity, and branch/merge identity under continuous change (`R3-CL-O5`).
+- **Downstream routing**: Bridge mappings and five-change-scale structural-rewriting interfaces live in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B15`; concrete conditional mathematical models live in `Core/SRT_Core_22_Equations.md`. Nothing in this reserved section entails `Stable ISP` (`P1-T06`), `Bearer (P+E)`, `Agency`, consciousness, or moral standing.
 
 ---
 
@@ -3710,7 +3763,7 @@ $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, 
 
 $$D_{\text{eff}}(M) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}, \qquad D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
 
-- **语义**：衡量算子或统计流形上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
+- **语义**：衡量非负且非全零谱矩阵（$\lambda_i \ge 0$ 且 $\exists i,\ \lambda_i > 0$；全零谱时 $0/0$ 未定义，不适用下界 $1$）上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
 - **硬边界**：`D_eff` 是容量 proxy，**不等于** `Def-d-canonical`，亦**不普遍构成 `D_stake` 的数学上界**（旧式 `D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 已正式退出）。
 
 ### 价值的五项完整职责、机会三态与广义关切四维（`R3-06` 核心正面结构）
@@ -3795,22 +3848,25 @@ $$w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$$
 
 ---
 
-## §5 常见误用与 `§5b` `d` 扩张的本体论意义（`C-A` 四义拆分）
+## §5 常见误用与 `§5b` 规范 `d` 强度、广义关切扩张与秩序增益（`C-A` 四义拆分）
 
 ### §5 常见误用
 
 1. **不得将 `d` 当作意识仪表或跨域主体性排名尺**（比较仅限同域同尺度或已声明归一化规则内）；
 2. **不得将“未准入 / `d ≈ 0`”等同于“不存在 / 无 `One` / 非主体”**；
-3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）。
+3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）；
+4. **不得将规范风险敏感强度上升（$d \uparrow$）直接等同于广义关切范围扩大、价值结构重构或秩序健康改善**（见下 `§5b`）。
 
-### §5b `d` 扩张的规范声明（`C-A` 与秩序增益四判据）
+### §5b 规范 `d` 强度变化与广义关切扩张的严格分离（`C-A` 与秩序增益四判据）
 
-**`d` 的健康变化不是单调扩张，而是关切范围的可重组、可承担、可恢复、可再选择能力。**
+**规范 `d` 强度（$d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$）与广义关切扩张必须严格分离：健康的价值与关切演化不是标量风险敏感强度 `d` 的单调上升，而是广义关切（范围 / 深度 / 强度 / 方向四维）的可重组、可承担、可恢复与可再选择能力。**
 
+$$d \uparrow \;\not\!\Rightarrow\; \text{广义关切范围扩大 / 价值结构重构 / 秩序健康改善}$$
 $$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum} \quad \land \quad d \uparrow \;\not\!\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
 
+- **强度 vs 范围的显式解耦（`R4-B1 P1-02`）**：对同一既有风险的过度敏感可使 $d\uparrow$ 而广义关切范围不变；焦虑收缩可使 $d\uparrow$ 而广义关切范围反而下降；新增探索方向但单方向敏感度降低可使 $d\downarrow$ 而广义关切范围扩大。因此，研究**广义关切扩张**必须独立声明**范围 / 深度 / 强度 / 方向**四维的测量或诊断模型，不能仅用标量梯度模 $d$ 或其方向导数（见 `Core/SRT_Core_22_Equations.md Eq-Evo-03c`）替代。
 - **秩序增益四判据**：**可延续**（不透支可支付预算）、**可协调**（纳入他者条件不致瘫痪）、**不外包**（代价不转嫁给无反馈位置，与谱层 $C_i$ 同源）、**可再选择**（不锁死为教条）。
-- **真 `d` 扩张 vs 假 `d` 扩张**：真扩张使选择者的实际权衡解发生结构性位移；假扩张（占有式 / 符号式 / 表演式 / 效率式）仅在符号层宣称关切扩大而不承担代价。
+- **真实关切与价值结构重构 vs 伪扩张（旧称“真/假 `d` 扩张”）**：旧文中的“真/假 `d` 扩张”按本规范读作**广义关切与价值结构的真实组织化重构**（使选择者的实际权衡解、可承担代价与关切四维配置发生结构性位移并通过上述四判据结算），vs **伪扩张**（占有式 / 符号式 / 表演式 / 效率式宣称关切扩大却不承担代价，或单风险焦虑过敏导致 $d\uparrow$ 而范围反缩）。
 - **`C-A` 四义拆分（严守 `Core/SRT_OPEN_TENSIONS.md §17`）**：
   1. **宇宙级语义/评价/道德最优**：不准入当前正面理论对象（`PT10 E`：生成趋优 ≠ 伦理正当；与 `T3-01 C/E` 非道德客观全局趋优开放研究严格界分）；
   2. **算子相对可达最优**（$x^*_{\theta,\tau,K,J} \in \arg\min_{x \in \mathcal{R}_{\theta,\tau,K}} J_{\theta,\tau,K}(x)$）：仅在完整声明有限位置、可达域、比较规则、时域与约束的模型内有条件有效；
