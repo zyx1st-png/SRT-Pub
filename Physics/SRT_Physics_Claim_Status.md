@@ -201,17 +201,17 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 
 ---
 
-### 2.6 Holography / entanglement / d-value
+### 2.6 Holography / entanglement / physical capacity proxy (`D_eff^{phys}`)
 
 **Allowed precise claim**:
 
-> Boundary entanglement / area laws can be used as candidate analogies for physical-domain d-value projection.
+> Boundary entanglement / area laws can be used as candidate analogies for a physical-domain structural-capacity proxy (`D_eff^{phys}` / `B_cap`) only; pure-physical entanglement does **not** instantiate canonical stake-coupled `d-value` (which remains `NOT ADMITTED / NOT APPLICABLE` at pure physical scale without independent `Bearer (P+E)` admission).
 
 **Status**: P3/P4 analogy / bridge.
 
 **Forbidden overclaim**:
 
-> d-value is identical to entanglement entropy in physics.
+> Canonical `d-value` is identical to entanglement entropy in physics, or boundary entanglement directly defines physical-domain `d-value`.
 
 ---
 
@@ -283,15 +283,15 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 
 **Allowed precise claim**:
 
-> Under `Core_Law/SRT_One_Formation.md §2.3`, physical self-maintenance spans a non-exhaustive three-regime spectrum—**态 I（束缚与平衡结构）**、**态 II（耗散与动态维持结构）**与**态 III（内生约束互维结构）**—explicitly barring biological cell membranes or life from serving as the universal threshold for `One`, while leaving the exact `One`-crossing structural thresholds **`OPEN` (`R3-04-O1`)**.
+> Under `Core_Law/SRT_One_Formation.md §2.3`, physical self-maintenance spans a **non-exhaustive three-regime typology**—**态 I（束缚与平衡结构）**、**态 II（耗散与动态维持结构）**与**态 III（内生约束互维结构）**—explicitly **not** a mandatory `I → II → III` evolutionary ladder, barring biological cell membranes or life from serving as the universal threshold for `One`, while leaving exact `One`-crossing structural thresholds **`OPEN` (`R3-04-O1`)**.
 >
-> Under `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` (`T-E §2`, author decision `G2`) and `03_Bridges/SRT_Selection_Event_CompactCore.md §4b` (`NODE-LIFE-DISSIPATIVE EA-4`), any claim connecting dissipation to selection must separate **物理底座依赖（substrate）** / **组织机制依赖（mechanism）** / **解释充分性（sufficiency）**; dissipative structures (external-boundary flux maintenance, e.g. Bénard cells, flames, vortices) are neither identical to selection structures nor a universal necessary precursor, and differ structurally from living endogenous mutual maintenance (self-generated boundary maintenance, functional differentiation, error repair, and cross-cycle/heritable writeback).
+> Under `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` (`T-E §2`, author decision `G2`) and `03_Bridges/SRT_Selection_Event_CompactCore.md §4b` (`NODE-LIFE-DISSIPATIVE EA-4`), any claim connecting dissipation to selection must separate **physical/thermodynamic constraint** (which equilibrium structures and idealized reversible dynamics also obey without requiring continuous flux or positive entropy production), **typical energy/resource exchange of open physical substrates**, **continuous non-equilibrium flux maintenance**, and **dissipative organizational mechanism dependence**—while rejecting **explanatory sufficiency** by default. `CG-0..CG-4` five-gate audit applies strictly to **bounded selection-event candidates and related organizational research within declared models**, never back-defining or restricting primitive `Selection` (`RC-A`).
 >
-> Across scales, physics separates all **five cross-scale mechanisms** (`Core_14_CompactCore §1`): **Assembly / Normalization (compression vs. generative dual threshold) / Effective Action Interface / `Proxy` (non-agentive physical/historical mediation) / `Delegation` (`NOT APPLICABLE` at pure physical scale without subjecthood and normative gates)**.
+> Across scales, physics separates all **five cross-scale mechanisms** (`Core_14_CompactCore §1`): **Assembly / Normalization** (strictly separating **cognitive/descriptive compression** including RG integrating-out as effective description, **actual physical coupling reorganization & dynamical scale decoupling**, and **organizational generative normalization** under the dual threshold `One_Formation §2.4`) **/ Effective Action Interface / `Proxy` (non-agentive physical/historical mediation) / `Delegation` (`NOT APPLICABLE` at pure physical scale without subjecthood and normative gates)**.
 
 **Forbidden overclaim**:
 
-> Every dissipative structure is a `One` or selection structure; life is the minimum threshold for `One`; physical forces literally execute normative `Delegation`; or thermodynamic irreversibility / entropy production (`Core_25`) equals `\Psi_f`, `d`, or consciousness.
+> Every physical implementation requires continuous energy/matter flux or positive entropy production; mathematical RG integrating-out alone proves physical suppression of microscopic degrees of freedom; every dissipative structure is a `One` or selection structure; `One` requires generative-health conditions such as reselectability; life is the minimum threshold for `One`; physical three states form a mandatory `I → II → III` ladder; physical forces literally execute normative `Delegation`; or thermodynamic irreversibility / entropy production (`Core_25`) equals `\Psi_f`, `d`, or consciousness.
 
 ---
 
@@ -299,10 +299,10 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 
 **Allowed precise claim**:
 
-> Physics provides concrete scientific pressure—not premature proof—on the relation between local and global generative optimization (`R4-C2` Reverse-Feedback Mainline 3, queued for `R4-C5`):
+> Physics provides concrete scientific constraints—not premature closure—on the relation between local and global generative optimization (`R4-C2` Reverse-Feedback Mainline 3, queued for `R4-C5`):
 > - **Continuing withdrawal (`OPEN_TENSIONS §17 C-A`, `PT10 E`)**: position-independent, universe-wide moral or evaluative global optima remain withdrawn; technical global optima are admissible only inside fully declared finite optimization problems.
-> - **Preserved open inquiry (`Spine §1`, `R3-CL-O4`)**: `T3-01` (**`C`** unified global optimizing principle with shared objective metric basis vs. **`E`** unified generalized free-energy / opportunity-cost / extremal principle) remains **explicitly OPEN and undecided**; neither settled by physics nor deflated into pure local adaptation.
-> - **Physics-native constraints on any candidate global principle**: variational stationarity (`\delta S = 0` includes saddle points / conjugate points, not guaranteed global minima), spin-glass / frustrated landscapes (exponential separation between local minima and global ground states), far-from-equilibrium limits (Prigogine's minimum entropy production holds only in the linear near-equilibrium regime; MEPP is boundary-dependent and non-universal), and evolving phase-space dimensionality under structural assembly.
+> - **Preserved open inquiry (`Spine §1`, `R3-CL-O4`)**: `T3-01` (**`C`** unified global optimizing principle with shared objective metric basis vs. **`E`** unified generalized free-energy / opportunity-cost / extremal principle) remains **explicitly OPEN and undecided**; neither settled by physics nor weakened into pure local adaptation, with focus on **how cross-scale generative directions achieve coordination, enter conflict, and how coordination conditions themselves are generated** without presupposing a single static global scalar.
+> - **Model-conditioned physics constraints on any candidate global principle**: variational stationarity (`\delta S = 0` includes saddle points / conjugate points, not guaranteed global minima), frustrated multi-body landscapes (e.g., mean-field spin-glass / Parisi RSB low-temperature regimes exhibiting barrier separation between local minima and global ground states), far-from-equilibrium limits (Prigogine's minimum entropy production requires **steady state, fixed time-independent boundary constraints, linear flux-force response, and Onsager reciprocal symmetry**; far from equilibrium, MEPP is boundary-dependent and non-universal), and evolving phase space (strictly distinguishing **effective descriptive state-space change** from **actual reachable organizational-relation change**).
 
 ---
 
@@ -343,7 +343,7 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 | "gravity is Psi_f" | Tensor-level overclaim | "gravity and physical `Psi_f` proxies may be weakly compatible as constraint structures." |
 | "Psi_f is Fisher metric" | Scalar/tensor identity overclaim | "Fisher–Rao geometry is a local information-geometric projection / proxy for `Psi_f` under stated model conditions." |
 | "D_eff is d-value" | Capacity/stake conflation | "`D_eff` is a capacity proxy / upper-bound candidate; canonical `d-value` requires stake-coupled irreversible-risk sensitivity." |
-| "d is entanglement entropy" | Identity overclaim | "entanglement entropy is a candidate physical projection / analogy for d-value." |
+| "d is entanglement entropy" | Identity overclaim | "entanglement entropy is at most a candidate physical structural-capacity proxy (`D_eff^{phys}`) analogy; pure-physical entanglement does not instantiate canonical `d-value`." |
 | "QBox confirms SRT" | External-interface overclaim | "QBox-style models pressure-test SRT's physics bridge language." |
 
 ---

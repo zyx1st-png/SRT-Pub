@@ -17,7 +17,7 @@ renamed_on: 2026-04-29
 # SRT Core 25: Thermodynamic Signatures of Selection
 
 > **Purpose**: This file hardens a thermodynamic bridge for SRT by mapping irreversibility, entropy production, arrow-of-time asymmetry, hierarchical information flow, and turbulence onto non-equilibrium physical and neural implementations of selection dynamics (`R4-C2` aligned with `Spine v5`, `One_Formation v2`, `T-E / NODE-LIFE-DISSIPATIVE`, and `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md`).  
-> **Boundary**: This file does **not** claim that thermodynamics is identical to consciousness, nor that irreversibility or dissipation alone is sufficient for `One`, selection structures, or subjectivity (`G2`, `PHR-A`, `HP-B OPEN`). Thermodynamic irreversibility is treated strictly as an empirical and modeling signature in declared non-equilibrium implementations. SRT still requires independent `Bearer (P+E)` admission, stake-coupled `d`, payability (`Ψ_f`), and independent phenomenality grounds (`HP-B OPEN`) for consciousness-relevant claims.
+> **Boundary**: This file does **not** claim that thermodynamics is identical to consciousness, nor that irreversibility or dissipation alone is sufficient for `One`, selection structures, or subjectivity (`G2`, `PHR-A`, `HP-B OPEN`). Thermodynamic irreversibility, information flow, and neural dynamics can serve as empirical and modeling candidate indicators in consciousness-relevant research **without universally requiring prior `Bearer (P+E)`, canonical `d`, or a specific payability model as admission prerequisites**. Independent `Bearer (P+E)` admission is required **only inside specific models that explicitly invoke canonical stake-coupled `d`**, while phenomenal consciousness remains an independent research axis (`HP-B OPEN`, consistent with non-linear three-tier evidence review in `R4-C3`).
 
 > **Source interface**: Kringelbach, M. L., Sanz Perl, Y., & Deco, G. (2024). *The Thermodynamics of Mind*. *Trends in Cognitive Sciences*, 28(6), 568–581. https://doi.org/10.1016/j.tics.2024.03.009
 
@@ -48,8 +48,8 @@ To prevent thermodynamic signatures from being conflated with selection structur
 | Surface | Exact Division of Labor | Non-Conflation Guard |
 |---|---|---|
 | **`Core_25` (this file)** | **Measurement-facing thermodynamic signatures**: `Δ_irr`, entropy production `H_P`, broken detailed balance `BDB`, hierarchical information flow, and cascade/turbulence proxies | Signatures are **not** identical to `Ψ_f`, canonical `d`, `One`, selection structures, or consciousness |
-| **`T-E` (`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` & `SRT_Selection_Event_CompactCore.md §4b`)** | **Mechanistic stratification (`NODE-LIFE-DISSIPATIVE EA-4`)**: separates *substrate* vs. *organizational mechanism* vs. *explanatory sufficiency*, four dissipative-to-selection tiers, `G2` non-universality, and *living scaffold* vs. *dead stability* vs. *cage order* | High `H_P` or stable non-equilibrium pattern (flame, Bénard cell, hurricane) does **not** pass `CG-0..CG-4` or establish generative health |
-| **`One_Formation §2.3` & `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2`** | **Physical three-state `One` spectrum**: Regime I (bound equilibrium) / Regime II (dissipative dynamic maintenance, external-boundary flux) / Regime III (endogenous mutual maintenance: self-generated boundary repair, functional differentiation, heritable/epigenetic writeback) | Biological membranes are **not** a universal `One` threshold; exact crossing criteria for all three regimes remain **`R3-04-O1` OPEN** |
+| **`T-E` (`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` & `SRT_Selection_Event_CompactCore.md §4b`)** | **Mechanistic stratification (`NODE-LIFE-DISSIPATIVE EA-4`)**: separates *physical/thermodynamic constraint* vs. *typical substrate energy exchange* vs. *non-equilibrium flux maintenance* vs. *dissipative organizational mechanism* vs. *explanatory sufficiency*, four dissipative-to-selection tiers, `G2` non-universality, and *living scaffold* vs. *dead stability* vs. *cage order* | High `H_P` or stable non-equilibrium pattern (flame, Bénard cell, hurricane) does **not** pass bounded-candidate `CG-0..CG-4` audit or establish generative health; `CG-0..CG-4` never back-defines primitive `Selection` |
+| **`One_Formation §2.3` & `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2`** | **Physical three-state `One` non-exhaustive typology** (NOT a mandatory `I → II → III` evolutionary ladder): Regime I (bound equilibrium, no universal continuous flux required) / Regime II (dissipative dynamic maintenance, external-boundary flux) / Regime III (endogenous mutual maintenance: self-generated boundary repair, functional differentiation, heritable/epigenetic writeback) | Biological membranes are **not** a universal `One` threshold; exact crossing criteria for all three regimes remain **`R3-04-O1` OPEN** |
 | **`Core/SRT_OPEN_TENSIONS.md §12`** | **Altitude tension**: `Core_25`'s measurement-facing signature reading vs. P13's de-selection statistical-portrait reading | Neither replaces the other; ontological-absence vs. theoretical-abstraction remains explicitly **OPEN**; SRT is **not** an anti-entropy theory |
 
 ---
@@ -105,14 +105,14 @@ Then, in neural or cognitive implementation:
 \text{stronger directional organization of } L_1 \text{ dynamics}
 \]
 
-But the stronger SRT condition is:
+Inside a specific stake-coupled neural model where canonical `d` and payability `Ψ_f` are explicitly invoked (not a universal prerequisite for all consciousness-relevant research):
 
 \[
 \Delta_{irr}^{neural} \uparrow
 + \Psi_f \text{ payable}
 + d \text{ stake-coupled}
 \Rightarrow
-\text{candidate consciousness-relevant selection}
+\text{stake-coupled selection-dynamics candidate (model-specific)}
 \]
 
 ---
@@ -142,23 +142,23 @@ Hard reading:
 
 ---
 
-## 4. Relation to `d-value` (`R4-A` `Bearer (P+E)` & `d ≠ D_eff ≠ D_stake` Guard)
+## 4. Relation to `d-value` & Consciousness-Research Interface (`R4-A` `Bearer (P+E)` & `HP-B OPEN`)
 
-Irreversibility alone is not enough for `One`, selection structures, `Bearer (P+E)`, or subjectivity. A hurricane, flame, or Bénard cell (Regime II dissipative maintenance) can exhibit high entropy production and broken detailed balance without satisfying `CG-0..CG-4`, `Bearer (P+E)`, or consciousness.
+Irreversibility alone is not enough for `One`, selection structures, `Bearer (P+E)`, or subjectivity. A hurricane, flame, or Bénard cell (Regime II dissipative maintenance) can exhibit high entropy production and broken detailed balance without satisfying bounded-candidate `CG-0..CG-4`, `Bearer (P+E)`, or consciousness.
 
-SRT therefore strictly separates:
-- **Physical/thermodynamic capacity & organization proxies** (`Δ_irr`, `H_P`, `D_eff`, hierarchy): require no `Bearer (P+E)` admission;
-- **Canonical stake-coupled risk sensitivity `d`** (`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`): admitted **only** when `Bearer (P+E)` (prospective self-indexing + same-One non-outsourcable exposure) is independently established:
+SRT therefore strictly separates—**without erecting `Bearer (P+E)` or canonical `d` as a universal gate over all consciousness-relevant research**:
+- **Empirical/dynamical indicators in consciousness-relevant research** (`Δ_irr`, `H_P`, `D_eff`, information flow, neural hierarchy): can be studied directly as candidate dynamical signatures **without first requiring `Bearer (P+E)` or canonical `d` admission**;
+- **Canonical stake-coupled risk sensitivity `d`** (`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`): requires independent `Bearer (P+E)` admission (prospective self-indexing + same-One non-outsourcable exposure) **strictly inside specific models that explicitly adopt canonical `d`**:
 
 \[
 d(x)=\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 
-- **Consciousness / phenomenality (`HP-B OPEN`)**: even the conjunction `Δ_irr ∧ d > 0 ∧ Payable(Ψ_f)` establishes only a **candidate concern-bearing non-equilibrium organization** in a declared biological/neural model—never an automatic sufficient condition for phenomenal consciousness (`Philosophy/SRT_HardProblem_Epistemology.md`, `Core_Law/SRT_Suffering.md §7`).
+- **Consciousness / phenomenality (`HP-B OPEN`)**: remains an independent research axis (aligned with non-linear three-tier evidence review in `R4-C3`). Even inside a specific biological/neural model combining `Δ_irr`, `d > 0`, and `Payable(Ψ_f)`, that conjunction is a model-specific readout—never a universal admission prerequisite nor an automatic sufficient proof of phenomenal consciousness (`Philosophy/SRT_HardProblem_Epistemology.md`, `Core_Law/SRT_Suffering.md §7`).
 
 Boundary:
 
-> High irreversibility may indicate strong non-equilibrium dynamics (or even rigid dead stability); canonical `d-value` indicates irreversible-risk sensitivity at an independently admitted `Bearer (P+E)` position, distinct from both geometric capacity `D_eff` and phenomenality.
+> High irreversibility may indicate strong non-equilibrium dynamics (or even rigid dead stability); canonical `d-value` applies strictly inside models that independently admit `Bearer (P+E)`, while empirical thermodynamic/neural indicators and phenomenality (`HP-B OPEN`) remain independent axes rather than gated behind a single prerequisite threshold.
 
 ---
 
@@ -233,9 +233,9 @@ Boundary:
 
 Non-equilibrium thermodynamics directly informs SRT's third cross-scale reverse-feedback mainline (**local vs. global generative optimization**, `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2`, queued for `R4-C5`):
 
-- **Near-equilibrium vs. far-from-equilibrium boundary**: Prigogine's minimum entropy production theorem (`H_P \to \min`) holds strictly in the **linear near-equilibrium regime** under fixed boundary forces; far from equilibrium, neither minimum nor maximum entropy production (MEPP) is a universal physical theorem, and constant-flux vs. constant-force boundaries yield opposite extremal directions.
-- **No automatic convergence from local thermodynamic optimization to global generative order**: High local entropy production or local free-energy descent can stabilize *dead stability*, multi-stable frustrated states, or pathological lock-in just as readily as adaptive living scaffolds (`T-E §6`).
-- **Scope separation (`OPEN_TENSIONS §17 C-A` vs. `Spine §1 T3-01 C/E`)**: Technical extremal quantities (`H_P`, variational free energy) remain strictly model- and boundary-indexed; they reinforce `C-A`'s withdrawal of universe-wide evaluative optima while providing concrete non-equilibrium pressure constraints—not premature closure—on the open non-moral `T3-01 C/E` inquiry (Divinity · global optimizing orientation).
+- **Explicit hypotheses of Prigogine's theorem vs. far-from-equilibrium boundary**: Prigogine's minimum entropy production theorem (`H_P \to \min`) requires **steady state, fixed time-independent boundary constraints, linear flux-force response, and Onsager reciprocal symmetry** (not merely vague "near-equilibrium" phrasing); far from equilibrium, neither minimum nor maximum entropy production (MEPP) is a universal physical theorem, and constant-flux vs. constant-force boundaries can yield opposite extremal directions.
+- **No automatic convergence from local thermodynamic optimization to global generative order**: High local entropy production or local free-energy descent can stabilize *dead stability*, multi-stable frustrated states, or pathological lock-in just as readily as adaptive living scaffolds (`T-E §6`); furthermore, discussions of evolving phase space must strictly distinguish **effective descriptive state-space change** from **actual reachable organizational-relation change** (`R3-CL-O4`).
+- **Scope separation (`OPEN_TENSIONS §17 C-A` vs. `Spine §1 T3-01 C/E`)**: Technical extremal quantities (`H_P`, variational free energy) remain strictly model- and boundary-indexed; they reinforce `C-A`'s withdrawal of universe-wide evaluative optima while leaving the open non-moral `T3-01 C/E` inquiry (Divinity · global optimizing orientation) fully open—focused on **how cross-scale generative directions achieve coordination, enter conflict, and how coordination conditions themselves are generated**, without presupposing a single static global scalar or weakening the author's global-optimization inquiry.
 
 ---
 
@@ -261,10 +261,10 @@ Depression treatments should not merely increase or decrease global irreversibil
 
 ### Prediction 4: Consciousness loss is not just low activity
 
-Loss of consciousness should correlate better with loss of stake-coupled directional organization than with raw activity level alone:
+In a declared stake-coupled biological/neural model (where canonical `d` is independently admitted; not a universal gate over all consciousness research), loss of consciousness should correlate better with loss of stake-coupled directional organization than with raw activity level alone:
 
 \[
-Consciousness\;candidate \sim \Delta_{irr}\times d \times \chi_{payable}\times \chi_{global\;availability}
+\text{Stake-coupled neural candidate} \sim \Delta_{irr}\times d \times \chi_{payable}\times \chi_{global\;availability}
 \]
 
 ---
@@ -287,16 +287,16 @@ where:
 - `𝓗_hier` = hierarchy / asymmetry of information flow;
 - `𝓒_cascade` = multi-scale cascade or turbulence proxy.
 
-SRT consciousness-relevant neural candidate index (strictly a P3/P4 modeling readout, **never** a universal consciousness admission criterion—`HP-B` remains `OPEN` and `d` requires independent `Bearer (P+E)` admission):
+Model-specific stake-coupled neural composite readout (strictly a P3/P4 readout inside models that explicitly adopt canonical `d`, **never** a universal prerequisite or admission gate for consciousness-relevant research—empirical indicators in `\mathcal{T}_{sel}(X)` can be used without prior `Bearer (P+E)` admission, while `HP-B` remains independently `OPEN`):
 
 \[
-\mathcal{SRT}_{conscious\text{-}candidate}(X)
+\mathcal{SRT}_{stake\text{-}thermo}(X)
 =
 \mathcal{T}_{sel}(X)
 \cdot d(X)\cdot \chi_{payable}(X)\cdot \chi_{anchor}(X)
 \]
 
-This is a bridge formula, not a canonical theorem or phenomenality gate.
+This is a model-specific bridge readout, not a canonical theorem, universal consciousness prerequisite, or phenomenality gate.
 
 ---
 
@@ -320,7 +320,7 @@ Correct claim level:
 
 ## 10. Short Reusable Paragraph (`R4-C2` Aligned)
 
-> Thermodynamic signatures give SRT an empirical bridge for measuring the directional organization of non-equilibrium physical and neural dynamics. Irreversibility, entropy production, broken detailed balance, arrow-of-time asymmetry, and turbulence are neither consciousness itself nor sufficient conditions for `One` or selection structures (`G2`, `T-E §2`); they are measurable dynamical traces in declared non-equilibrium implementations of `L_1`-side directional organization under a `Ψ_f` payability window and conditional `L_2` retention. Canonical `d-value` additionally requires independently established `Bearer (P+E)` stake-bearing exposure, while phenomenal consciousness remains independently gated (`HP-B OPEN`).
+> Thermodynamic signatures give SRT an empirical bridge for measuring the directional organization of non-equilibrium physical and neural dynamics. Irreversibility, entropy production, broken detailed balance, arrow-of-time asymmetry, and turbulence are neither consciousness itself nor sufficient conditions for `One` or selection structures (`G2`, `T-E §2`), yet they can serve directly as candidate empirical indicators in consciousness-relevant research without first requiring `Bearer (P+E)` or canonical `d` admission. Independent `Bearer (P+E)` admission is required only inside specific models that explicitly invoke canonical stake-coupled `d`, while phenomenal consciousness remains an independent research axis (`HP-B OPEN`).
 
 ---
 
