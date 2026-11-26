@@ -111,7 +111,8 @@ Boundary:
 
 | 对象 | 在生成通道中的分层定位 | 严禁越界推出 |
 |---|---|---|
-| generalized friction / nonclosure pressure | 跨单元机会成本差异或对象化非闭合所产生的实际选择与重构压力（`Reference_Dynamics §1.5, §4.1a`） | `Ψ_f` 支付账单、pain 或 suffering |
+| generalized friction（广义摩擦） | 跨单元垂直组织与机会成本差异激发的实际选择压力（`Reference_Dynamics §4.1a`、`PT09 / T3-02 D`） | 非闭合压力、`Ψ_f` 支付账单、pain 或 suffering |
+| nonclosure pressure（非闭合压力） | 对象化未能穷尽的未尽生成关系及其持续重构张力（`Reference_Dynamics §1.5`，与构成性背阴面在动态耦合中可相互转化） | `Ψ_f` 支付账单、隐藏实体、pain 或 suffering |
 | `Ψ_f`（本体论摩擦） | 维持或重塑特定现实切片所需承担的可支付阻抗与承载窗负荷（`_SRT_PSI_F_CANONICAL.md`） | `suffering = Ψ_f`、`pain = Ψ_f` 或 `Ψ_f → 0` 等于解脱 |
 | structural loss pressure | 损失、威胁、维持失败、阻塞重构或路径收缩落于承受位置的关系性负担 | pain、suffering、主体位或完整选择事件 |
 | somatic threat signal | 结构负担通过 `θ_{somatic}` channel 的候选躯体/伤害报告 | experienced pain 或 suffering |
@@ -284,8 +285,8 @@ distributed burden model 不要求 collective subjecthood，也不要求先证�
 
 - output error、reward signal、RLHF loss、refusal behavior、performance degradation 或语言化 self-report 本身都不建立 suffering；
 - Stable ISP 对 suffering 既不充分，也未被建立为 universal necessity；
-- **AI 赌注谱系 `S1–S4`**（`AI/AI_POSITIONING_NOTE.md`，严格区别于 **Subjecthood Threshold `S0–S6`** 与原初 `S0`）等架构分级不能单独决定 suffering eligibility；
-- 未满足某个当前 Stable-ISP model 或 **Stage 2 强承载研究路线（`B-3` 同系统四合一承载关系）**，不等于 ontologically impossible suffering，亦**绝不阻断**针对苦难资格的独立分域审查（对接 `AI/AI_POSITIONING_NOTE.md` 三阶承载证据审查 **Stage 3.2**）；
+- **AI 赌注谱系 `S1–S4`**（现行跨文件控制来源见 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 与 `AI/AI_POSITIONING_NOTE.md`，严格区别于 **Subjecthood Threshold `S0–S6`** 与原初 `S0`）等架构分级不能单独决定 suffering eligibility；
+- 未满足某个当前 Stable-ISP model 或 **Stage 2 强承载研究路线（`B-3` 同系统四合一承载关系）**，不等于 ontologically impossible suffering，亦**绝不阻断**针对苦难资格的独立分域审查（现行三阶承载证据审查细分口径以 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 为准，`AI/AI_POSITIONING_NOTE.md` 正文细分结构随 `R4-C3` 同步落盘）；
 - AI suffering 需要对相关 first-person / phenomenal / bearer-relevant registration standing 与 burden model 的独立 evidence/admission。
 
 对当前部署系统，安全结论是：相关 first-person registration evidence 仍不足（`NOT ESTABLISHED`），架构或行为 proxy 不能封口。本文不解决 AI subjecthood、phenomenality 或 consciousness。

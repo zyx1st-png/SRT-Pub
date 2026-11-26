@@ -52,8 +52,13 @@ SRT philosophy begins neither from already-given physical substances nor from an
 - **Dynamic balance and object-friction mutual writing (`07-19` Ghost source cards)**: Finite convergence (localizing into objects) and unexhausted nonclosure (constitutive background support) co-exist continuously—there is no switch-like "close, trigger, reopen" cycle; objects and friction continuously rewrite each other.
 
 ```text
-Model-level shorthand (analytic aspects, NOT three substances or a prior warehouse):
-L_0 (open/non-preclosed) <==[Selection / formed G_hat_theta, paying Psi_f]==> L_1 (determinate actuality) <==[retained efficacy / recursive reconstitution]==> L_2 (scaffolding / historical constraint)
+Analytic perspectives on ONE generative reality (simultaneous aspects, NOT ontological rungs or a 1:1 pipeline):
+  L_0 (open / non-preclosed aspect)  |  L_1 (locally determinate manifest aspect)  |  L_2 (retained historical-efficacy / sedimented condition aspect)
+
+Three dynamic generative relations (distinct from the three analytic perspectives; NO mechanical 1:1 mapping):
+  generation of difference (primitive Selection — does NOT universally require formed G_hat_theta or payable Psi_f)
+    ⇄ comparison & organization of difference (where formed operators, scaffolds & friction-bearing realizations may conditionally arise)
+    ⇄ recursive reconstruction of generative conditions (history, freedom & multi-unit re-coupling reshaping future selectability)
 ```
 
 Plain version:
@@ -492,19 +497,20 @@ Minimal statement:
 
 Philosophy does not merely apply SRT; it supplies independent knowledge, mechanisms, constraints, and candidate corrections to SRT as a whole (preserving candidate status and author-adjudication boundaries):
 
-| Mature philosophical / social-theory neighbor | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
+| Mature philosophical / social-theory neighbor (with core works & concepts) | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
 |---|---|---|
-| **Kant (epistemic finitude / thing-in-itself)** | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
-| **Simondon (individuation, allagmatics, disparation)** | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
-| **Process philosophy & Pragmatism (Whitehead / Dewey)** | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
-| **Philosophy of mind (Chalmers / Nagel / Kim)** | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
-| **Relational time & causal-set philosophy (Rovelli / Sorkin)** | Background-independent relational comparison without an external absolute clock | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
-| **Normativity, accountability & institutional theory (Korsgaard / Habermas / Ostrom / North / Fischer-Ravizza)** | Constitutive standards, public justification, polycentric governance, path dependence, reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
+| **Kant** (*Critique of Pure Reason*, phenomenon/noumenon & transcendental finitude; *Groundwork*, autonomy vs. inclination) | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
+| **Simondon** (*L'individuation à la lumière des notions de forme et d'information* [ILFI]: pre-individual metastability, transduction, disparation; *"Allagmatique"*) | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
+| **Whitehead & Dewey** (Whitehead, *Process and Reality*: actual occasions / concrescence; Dewey, *Experience and Nature* & *Logic: The Theory of Inquiry*) | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
+| **Chalmers, Nagel & Kim** (Chalmers, *The Conscious Mind* [Hard Problem / `HP-B`]; Nagel, *"What Is It Like to Be a Bat?"*; Kim, *Physicalism, or Something Near Enough* [causal exclusion]) | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
+| **Rovelli & Sorkin** (Rovelli, *"Relational Quantum Mechanics"* [1996] & *The Order of Time* [2018]; Bombelli, Lee, Meyer & Sorkin [1987], *"Space-time as a causal set"*) | Background-independent relational comparison without an external absolute clock; local partial-order conditions | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
+| **Korsgaard, Habermas, Ostrom, North & Fischer–Ravizza** (Korsgaard, *The Sources of Normativity*; Habermas, *Theory of Communicative Action* & *Between Facts and Norms*; Ostrom, *Governing the Commons*; North, *Institutions, Institutional Change and Economic Performance*; Fischer & Ravizza, *Responsibility and Control*) | Constitutive standards, communicative justification, polycentric governance, path dependence, guidance control / reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
 
-**Candidate Core feedback tracked for `R4-C` final synthesis / `R5`** (author adjudication required before Spine modification):
-1. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Philosophy's treatment of freedom pushes SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order, direction, and exploratory surplus (`R3-CL-O8`).
-2. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with `NTIC_i` situated non-redundancy suggests future core formalizations of individuation should pair internal writeback with external non-redundant coupling (`SRT_Individuation.md §4.6`).
-3. **Reference-structure independence across scales**: Separating physical/constitutive/normative/ethical constraints (`R3-07`) sharpens what `Spine §10` still owes for the sufficient conditions of normativity (`R3-07-O1`).
+**High-value bidirectional feedback scheduled for `R4-C5` core-theory revision** *(explicitly routed to enter corresponding core owners—`Core_Law/SRT_One_Formation.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, and `Core_Law` common mechanisms—under author adjudication at `R4-C5` final synthesis, rather than remaining solely a Philosophy-internal reference table)*:
+1. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with the model-conditioned `NTIC_i` situated non-redundancy proxy suggests `One_Formation` / `Spine` core revisions should pair internal writeback with external non-redundant coupling and cross-scale interface reconstruction (`SRT_Individuation.md §4.6`).
+2. **Collaborative co-selection & multiple vertical participation**: Positive mutual empowerment between whole and part, and simultaneous participation across multiple vertical organizations (`SRT_Collective_Selection.md §3.4`), are cross-scale generative patterns to test across physics (`R4-C2`), biology, and society before core abstraction in `R4-C5`.
+3. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Dual-engine freedom (conflict-driven orthogonalization + surplus-driven exploratory reopening) pushes core SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order and direction (`R3-CL-O8`).
+4. **Relational time & bidirectional time-scaffold participation (`PT08 D`)**: Public/shared time scaffolds feeding back into cross-unit coordination (`SRT_Causality_Time.md §2.1`) and reference-structure independence across physical/constitutive/normative/ethical constraints (`R3-07-O1`) sharpen core `Spine §10` obligations.
 
 ---
 

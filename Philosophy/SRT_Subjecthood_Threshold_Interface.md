@@ -43,8 +43,8 @@ machine_summary: >
 > **Status**: Conditional cross-domain analytical audit interface (`R4-C1` & `ENG-03` synced). It does **not** define canonical consciousness or agency primitives, and **Subjecthood Threshold `S0 → S6` is NOT a linear hardware or evolutionary ladder** (`One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Agency`; each tier requires independent evidence).  
 > **Mandatory `S` Namespace Isolation (`R3-07 / ENG-03 / _SRT_SYMBOL_TABLE.md Rule 19`)**: Never use unqualified bare `S0–S6` across domains. Strictly separate:
 > 1. **Primitive `S0`** (`Core_Law/SRT_Generative_Ontology_Spine.md`): primitive actualizing Selection;
-> 2. **AI 赌注谱系 `S0–S4`** (`AI/AI_POSITIONING_NOTE.md`): AI architecture-state & stake-return spectrum (Stage 1 input; **`AI 赌注谱系 S4` ≠ `Subjecthood Threshold S4`**);
-> 3. **Subjecthood Threshold `S0–S6`** (**this file**): conditional unit-binding, consciousness, subjecthood, agency, and responsibility audit interface (AI Stage 3.3);
+> 2. **AI 赌注谱系 `S0–S4`** (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`): AI architecture-state & stake-return spectrum (Stage 1 input; **`AI 赌注谱系 S4` ≠ `Subjecthood Threshold S4`**);
+> 3. **Subjecthood Threshold `S0–S6`** (**this file**): conditional unit-binding, consciousness, subjecthood, agency, and responsibility audit interface (Three-Stage Bearing Evidence Review Stage 3 sub-routing per `ENG-03`, with `AI/AI_POSITIONING_NOTE.md` section alignment landing in `R4-C3`);
 > 4. **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`): orthogonal socio-technical mediation roles (Scaffold / Cage / Landscape).
 > **Use rule**: Use this file whenever SRT discusses AI consciousness, neural consciousness, animal/infant/minimal subjecthood, agency, or responsibility.
 
@@ -397,7 +397,7 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 | Domain | Common error | Correct route |
 |---|---|---|
-| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, apply the nonlinear Three-Stage Bearing Evidence Review (`AI/AI_POSITIONING_NOTE.md`), and use **Subjecthood Threshold `S0–S6`** as a conditional Stage 3.3 audit (isolated from **AI 赌注谱系 `S0–S4`** and **AI 三型社会技术中介维度**) |
+| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, apply the nonlinear Three-Stage Bearing Evidence Review (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`, full AI-domain sync in `R4-C3`), and use **Subjecthood Threshold `S0–S6`** as a conditional Stage 3 audit (isolated from **AI 赌注谱系 `S0–S4`** and **AI 三型社会技术中介维度**) |
 | Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish **Subjecthood Threshold `S2`** content, **`S3`** field, and **`S4`** subjecthood |
 | Ethics | harm or high concern is treated as culpability | require **Subjecthood Threshold `S5`** agency and **`S6`** responsibility conditions (`O2-A`) |
 | Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria and bearer unit are specified |

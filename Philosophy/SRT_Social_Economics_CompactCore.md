@@ -253,7 +253,7 @@ Guardrail:
 
 > Do not infer inclusion or legitimacy from declared values or `d`. A declared framework may examine revision, exit, cost visibility and gate access as non-exhaustive candidate evidence.
 
-**Closure-pathology alignment (2026-04-21; `R4-C1` expanded 2026-11-26)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能陷入 `U5` 自我豁免（pseudo-open closure）。
+**Closure-pathology alignment (2026-04-21; `R4-C1` expanded 2026-11-26)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却无法触动核心门槛、分配规则或合法性审查，则该制度机制事实上获得了有效再选择豁免（去主体化 **`U5`**，无论是否出于刻意防御，且可与高频局部调优并存）。
 
 ### 7.4 预裁剪四机制、公共脚手架双重作用与社会发展四维（`R3-07` + `NODE-BOOK-BACKFLOW`）
 
@@ -264,7 +264,7 @@ Guardrail:
 3. **社会驻留三方分离与 `C2` 撤回纪律**：对接 `Core_Law/SRT_Collective_Selection.md §3.5` 与 `SRT_Soc_03_Institutions.md`——严分可修订信任权重 **`W_social`**、后果回路 **`M(t)`** 与高 **`\rho` 路径惯性 / 产权与权力强制**；若具体货币/市场资源流全由产权、权力强制与路径粘性解释，则撤回 `W_social` 的信任增量读法，保留其 `M(t)` 不对称吸收与 SEA 五门外包链诊断（`CBP-3/4`）。
 4. **社会发展四维（非标量总分、非 `O2-M` 算法）**：**① 生成能力**（创造新协作、知识与机会） / **② 能力分布**（整体提升 ≠ 均匀分布） / **③ 不可逆构成基础**（生态、人力与信任基底） / **④ 秩序重构能力**（制度与比对标尺能否重入选择，防 `U5` 锁死）。
 
-> **社会经济学反向反馈至 SRT 核心（`R4-C1`）**：North 路径依赖、Ostrom 多中心治理与 Simmel 货币度规理论表明，低摩擦表象完全可能来自强制压制或高退出成本而非信任，且市场协调常由分布式聚合而非单一集体主体完成——这一学科约束直接推动 SRT 在核心层分离 `W_social / M(t) / 高 \rho 惯性` 并确立 `PT10 E`（高效/稳定生成 ≠ 伦理正当）。
+> **社会经济学反向反馈至 SRT 核心（`R4-C1`）**：North（*Institutions, Institutional Change and Economic Performance*）路径依赖理论、Ostrom（*Governing the Commons*）多中心治理与 Simmel（*The Philosophy of Money*）货币度规分析表明，低摩擦表象完全可能来自强制压制或高退出成本而非信任，且市场协调常由分布式聚合而非单一集体主体完成——这一学科约束直接推动 SRT 在核心层分离 `W_social / M(t) / 高 \rho 惯性` 并确立 `PT10 E`（高效/稳定生成 ≠ 伦理正当）。
 
 ---
 
