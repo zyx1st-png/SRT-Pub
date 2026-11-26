@@ -2,7 +2,9 @@
 id: SRT-CORE-21
 type: index
 tags: [Formal logic, Axioms, Claim Ladder, Index]
-status: active_v3
+status: active
+version: v4
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: mixed_index
@@ -32,17 +34,20 @@ Claim-level rules are now governed by:
 
 ## Current Core 21 Layers
 
-| Layer | File | Claim level | Role |
+| Layer | File | Claim level | Role (`R4-B1` unified formal architecture) |
 |---|---|---:|---|
-| Minimal axioms | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 | Primitive axioms only |
-| Constitutive theorems | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 | Theorems internal to SRT once P0 is granted |
-| Bridge hypotheses | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3/P4 | Canonical interpretations, cross-domain mappings, empirical thresholds |
+| Minimal axioms | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 | Primitive axioms only (`P0-01..P0-04`, kept razor-thin) |
+| Constitutive theorems & criteria | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 / P1-candidate | Constitutive relations & organizational criteria (`P1-T01..T04, T06`, recursive `P1-T03`, reserved `P1-T08` `One` constitutive-relation section) |
+| Bridge hypotheses & formal interfaces | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | P2/P3/P4 | Canonical interpretations, cross-domain mappings, empirical thresholds, 5 change scales & structural-rewriting interfaces (`P2/P3-B15`) |
+| Sole core equations anchor | `Core/SRT_Core_22_Equations.md` | P2–P4 declared models | Core equations, conditions, mathematical properties & scopes (Level I / II / III modeling duties; domain models remain with their domain owners) |
+| Dynamical mechanism & embodiment interface | `Core_Law/SRT_Reference_Dynamics.md` | L1 mechanism / bridge | Dynamical mechanism explanations, embodied operator prototypes & cross-scale interfaces (not a rival master equation library) |
 
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, the bounded occurrence / retained-history remainder, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record, and do not treat historical P1-T02 naming as a universal time-arrow theorem;
-- cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
+- cite stable ISP continued selectability (`P1-T06`), bounded occurrence / retained-history remainder (`P1-T02`), recursive historical conditioning (`P1-T03`), minimal information distinction (`P1-T04`), absorption remainder (former `P1-T07`), and the `One` constitutive-relation candidate interface (reserved `P1-T08`, not yet a proved P1 theorem) from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
+- cite the ST-A conditional anti-closure candidate (`B13`), five change scales & generative structural-rewriting interfaces (`B15`), corrected `D_eff / D_stake / d` separation (`B11`), and fitness / assembly / holography / universality / Fisher-geometry `\Psi_f` / strong information-creation bridges from `Core/SRT_Core_21c_Bridge_Hypotheses.md`;
+- cite core equations from `Core/SRT_Core_22_Equations.md` as the sole core equations master anchor.
 
 ---
 

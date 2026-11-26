@@ -3,7 +3,9 @@ id: SRT-REF-DYNAMICS
 type: equation
 tags: [CoreLaw, Dynamics, Canonical]
 layer: L1
-status: axiomatic_hybrid_v1
+status: active
+version: v2
+updated: 2026-11-26
 epistemic_layer: os
 claim_mode: canonical
 dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL]
@@ -13,13 +15,11 @@ dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-PSIF-CANO
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Reference_Dynamics_Split/README.md`](Reference_Dynamics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **层级说明**：本文件属于 **L1（接口层）**。
-> 本文件将 L0 命题"选择总是有位置的"（Ĝ_θ 算子）与"选择有代价"（Ψ_f）形式化为动力学方程。
-> L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。
-
-> **Status**: Constitutional Reference | **Version**: 1.0
-> **依赖**: SRT_Reference_Axioms.md (符号规范)
-> **Selection-totality scope override（2026-09-14）**：本文件只描述 formed / embodied / domain-level Selection realizations。`Ĝ_θ != primitive Selection`；attention、intentional vector、survival gating、agency 与 embodied parameters 都是更强组织或模型性质，不得反向定义 subjectless primitive Selection。
+> **层级与职责（`R4-B1` `1A` 裁决，2026-11-26）**：本文件属于 **L1（动力学机制解释、具身算子实现原型与跨尺度接口层）**，**不再作为与 `Core/SRT_Core_22_Equations.md` 并行的完整方程库，亦不退化为文件索引**。
+> - **唯一核心方程主锚点**：`Core/SRT_Core_22_Equations.md`（Level I / II / III 形式方程与适用范围）；
+> - **核心定义唯一权威**：`Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_One_Formation.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`；
+> - **本文件核心职责**：保留具身算子实现原型（除法归一化、躯体同步、生存门控）、动力学机制解释（快-慢耦合、势垒脆性、模式切换、部分闭包与病理闭包破裂）及神经精神/发育/热力学-信息论跨尺度接口；已退出与 `B-A / C-A / R4-A` 冲突的旧方程（`∇F = 初心`、`+ Ghost(I_Abstract)`、`方程 E8`、复数 `d`、`初心吸引子 d→∞` 等）。
+> - **Selection-totality 护栏**：本文件只描述 formed / embodied / domain-level Selection realizations。**`\hat{G}_\theta != 幽灵（Ghost 历史源直觉）!= primitive Selection`**；attention、intentional vector、survival gating、agency 与 embodied parameters 均为更强组织或模型性质，不得反向定义无主体原初 `Selection`。
 
 ---
 
@@ -73,22 +73,22 @@ $$[\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} · x_j^n}$$
 
 > **P3-Scale-NB1 行为读出门**：D3 输出相对响应，不输出离散行为。通向认知／行为选择须另声明候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与干预跟踪；见 `Core/SRT_Core_14_Dynamics_Scaling.md §2.2.0`。
 
-**参数–SRT 量桥接**：
+**参数–SRT 实现代理桥接（`R4-B1` 量纲与语义对齐：下表映射至神经归一化原型内的响应容量/选择锐度 proxy，绝不直接等同于规范强承载 `d = ||∂U/∂S||`）**：
 
-| 参数 | 神经科学含义 | SRT 对应量 | 方向性 |
+| 参数 | 神经科学含义 | SRT 实现代理对应 | 方向性 |
 |:-----|:------------|:-----------|:-------|
-| $n > 1$ | 幂律增益指数（注意力锐化） | 选择锐度：$n \uparrow$ → $d(\theta) \uparrow$（高对比维度被放大） | 正 |
-| $\varepsilon > 0$ | 半饱和常数（基础激活底线） | $\Psi_f$ 基础噪声代理：$\varepsilon \propto \Psi_f^{baseline}$（防止零摩擦奇点） | 正 |
-| $W_{ij}$ | 维度 $j$ 对维度 $i$ 的竞争权重 | L₁ 维度竞争拓扑：$W \to \text{diag}(w)$（对角化）时维度独立，$d \to d_{max}$ | 负（$W_{ij}\uparrow$ → 抑制加剧 → $d\downarrow$） |
+| $n > 1$ | 幂律增益指数（注意力锐化） | 选择锐度 / 响应对比放大（影响局部可区分维度 `D_eff` proxy，**不自动等同**规范 `d`） | 正 |
+| $\varepsilon > 0$ | 半饱和常数（基础激活底线） | 算子正则化项（`ε_reg`，防止分母奇点；可作局部背景噪声代理，**不等于** `ε_pg` 或全局 `Ψ_f`） | 正 |
+| $W_{ij}$ | 维度 $j$ 对维度 $i$ 的竞争权重 | 局部维度竞争拓扑：$W \to \text{diag}(w)$（对角化）时竞争减弱、局部响应有效维数 `D_eff` 升高 | 负（$W_{ij}\uparrow$ → 抑制加剧 → `D_eff` 代理 $\downarrow$） |
 
-**极限行为**：
+**极限行为（模型内响应模式，非规范 `d` 定律）**：
 
-| 极限条件 | D3 退化形式 | SRT 解读 |
+| 极限条件 | D3 退化形式 | 机制解读 |
 |:---------|:-----------|:---------|
-| $n = 1$，$W = \varepsilon I$ | $[\hat{G}]_i = x_i / (2\varepsilon)$（线性缩放） | 无竞争、无非线性放大；$d = d_{max}$，但无选择锐化 |
-| $W \to 0$ | $[\hat{G}]_i = x_i^n / \varepsilon$（独立幂律） | 维度间无互动；算子退化为纯增益映射，$\Psi_f$ 仅由 $\varepsilon$ 决定 |
-| $\varepsilon \to 0^+$ | 分母趋零 → 奇点 | $\Psi_f^{baseline} \to 0$；物理意义：需 $\varepsilon > 0$ 保证算子正则性，对应 SRT 中"摩擦不可为零"的公理要求 |
-| $W_{ij} \gg \varepsilon$ | 强侧抑制 → 赢家通吃 | $d \to 1$（单维选择），对应极度注意力聚焦或强迫症式固化 |
+| $n = 1$，$W = \varepsilon I$ | $[\hat{G}]_i = x_i / (2\varepsilon)$（线性缩放） | 无竞争、无非线性放大；无选择锐化 |
+| $W \to 0$ | $[\hat{G}]_i = x_i^n / \varepsilon$（独立幂律） | 维度间无侧抑制互动；算子退化为纯增益映射 |
+| $\varepsilon \to 0^+$ | 分母趋零 → 数值奇点 | 正则化失效；与 Core `Ψ_f > 0` 维持区间具结构类比，但 `ε_reg` 仅为实现级正则常数 |
+| $W_{ij} \gg \varepsilon$ | 强侧抑制 → 赢家通吃 | 有效响应维度 `D_eff` 代理趋向单维聚焦（可模拟极端聚焦或局部锁定） |
 
 ### §1.4 核心特性
 
@@ -151,79 +151,32 @@ $$v_{selection}(t) = \begin{cases} -\nabla F_{survival} & \text{if } \|\theta_{s
 
 ---
 
-## §3 核心动力学方程 (Core Dynamical Equations)
+## §3 核心动力学机制解释与自由能桥接（主方程回链 `Core_22`）
 
-### §3.1 方程 E1 — 幽灵演化方程
+> **去重与主锚点声明（`1A`, 2026-11-26）**：核心动力学主方程统一由 **`Core/SRT_Core_22_Equations.md`** 持有（`Eq-Evo-01..03c`、`Eq-Multi-01..03`、`Def-Protocol-1..3`、`Eq-Bridge-Loop-01`），本节专职解释其快-慢耦合机制与自由能跨尺度桥接，不再并行抄写独立方程版本。
+> **已退出冲突旧式**：原 E1 中的“$\nabla F[\sigma]$ = 初心方向”（违背 `B-A`）、原 E1' 中的 `+ Ghost(I_{Abstract})`（违背 `\hat{G}_\theta != Ghost`）以及 `Def-E1'-F4C` 的“$L_0$ 质料因 $\to L_1$ 动力因 $\to L_2$ 形式/目的因”旧类比均已于 `R4-B1` 正式退出。
 
-$$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}]$$
+### §3.1 固定空间快-慢耦合机制（对应 `Core_22 Eq-Evo-01..03c`）
 
-| 项 | 物理意义 |
-|:---|:---------|
-| $\hat{G}_θ[σ]$ | 算子的主动选择 |
-| $∇F[σ]$ | 自由能梯度（初心方向）|
-| $A[σ, \mathcal{A}]$ | 注意力副本的调制 |
+在已声明固定状态空间的 **Level I** 模型中（见 `Core_21b P1-T03` 与 `Core_22 §0-A`）：
+- **快变量状态演化（`Eq-Evo-01 / Eq-Evo-03`）**：显现状态 $\sigma$ 在给定组织条件下受形成态算子角色载体 $\hat{G}_\theta[\sigma]$、声明目标泛函梯度 $-\nabla F[\sigma]$（非初心或宇宙道德最优）、注意调制 $A[\sigma,\mathcal{A}]$ 与已留存 `L_2` 约束 $-\lambda\nabla C_{L_2}[\sigma]$ 共同塑造。
+- **慢变量参数演化与选择内再入（`Eq-Evo-02 / Eq-Evo-03b`）**：具身参数 $\theta$ 在预测结果、摩擦梯度与稳态反冲间缓慢更新，并在主体选择候选窗口中允许自模型 $L_2^{self}$ 的滞后在线读出进行暂态调制。
+- **向上对接 Level II / III 递归重构**：快-慢固定空间演化只是 `P1-T03` 的一阶特例；当历史脚手架与多单元耦合进一步改写生成规则、耦合协议、可达空间或比对准则本身时，进入 `Core_22 §0-A` Level II/III 与 `Core_21c P2/P3-B15` 所界定的五类变化刻度。
 
-**方程 E1' — 扩展形式（含向下因果）**:
+### §3.2 方程 E3 — 自由能关切扩展桥接（热力学与变分双基线）
 
-$$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}] + \text{Ghost}(I_{Abstract}) - λ · ∇C_{L_2}[σ]$$
+**E3a（热力学基线）**：$F_{thermo} = E - TS$（量纲焦耳）  
+**E3b（变分/FEP基线）**：$F_{var} = \mathbb{E}_q[\ln q(x) - \ln p(x,o)]$（量纲 nat/bit）  
+**E3c（SRT 关切扩展桥接）**：
 
-**Def-E1'-F4C（四因映射补丁，新增）**：
-\[
-\underbrace{L_0}_{\text{质料因}}\xrightarrow{\ \hat G_\theta\ }\underbrace{L_1}_{\text{动力因的结果面}}\xrightarrow{\text{stabilize}}\underbrace{L_{2,\theta}}_{\text{形式因/目的因约束场}}
-\]
-其中 \(\nabla C_{L_2}\) 解释为宏观图景对微观轨迹的“拉力项”（formal/final pull）。
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \qquad F_{base} \in \{F_{thermo}, F_{var}\}$$
 
-### 分类映射表（Hart Ch.2 因果框架 → SRT）
+> **[R] / [H] 与量纲边界**：Helmholtz 自由能（1882）与 Friston 变分自由能（2010）单位不同，SRT 不强迫二者同量纲；$F_{SRT}$ 继承所选 $F_{base}$ 单位，仅在强承载声明模型中以标定后的 $d \cdot U_{others}$ 项表达“他者状态进入目标泛函”的桥接结构。具体实现须显式声明 $U_{others}$ 的量纲校准；$F$ 不自动等于初心或全局价值。
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 机械唯物闭包（仅质料/动力因） | 低~中 | Closed 倾向 | borderline |
-| 古典四因整合（含形式/目的因） | 中~高 | Open↔Semi-open | payable |
-| SRT 向下因果动力学 | 中高~高 | Open（多层耦合） | payable / overloaded（高负荷） |
+### §3.3 离散三域演化与多算子耦合接口（回链 `Core_22`）
 
-### §3.2 方程 E2 — 耦合动力学方程组（快-慢变量系统）
-
-**E2a（状态演化 — 快变量）**:
-
-$$\frac{dσ}{dt} = α(\hat{G}_θ[σ] - σ) - β∇F[σ] + ξ(t)$$
-
-**E2b（参数演化 — 慢变量）**:
-
-$$\frac{dθ}{dt} = γ · A[σ, \text{Target}] - δ · \frac{∂Φ(θ)}{∂θ}$$
-
-### §3.3 方程 E3 — 自由能桥接方程
-
-**E3a（热力学基线）**:
-
-$$F_{thermo} = E - TS$$
-
-**E3b（变分/FEP基线）**:
-
-$$F_{var} = E_q[\ln q(x) - \ln p(x,o)]$$
-
-**E3c（SRT 关切扩展）**:
-
-$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base} \in \{F_{thermo}, F_{var}\}$$
-
-| 项 | 含义 |
-|:---|:-----|
-| $F_{base}$ | 当前语境采用的基线自由能：热力学语境取 $F_{thermo}$，认知/FEP语境取 $F_{var}$ |
-| $d \cdot U_{others}$ | 利他项：关切带宽 $d$ 乘以他者效用 $U_{others}$；表示系统将他者状态纳入自身目标泛函 |
-| $F_{SRT}$ | 在选定基线之上加入关切项后的 SRT 目标泛函 |
-
-> **[R]** 自由能的双重来源：Helmholtz 1882 *Wissenschaftliche Abhandlungen*（热力学自由能 $F_{thermo}=E-TS$，量纲焦耳；系统在恒温过程中可做最大功，R物理基线）；Friston 2010 *Nature Reviews Neuroscience*（变分自由能/FEP：$F_{var}=E_q[\ln q(x)-\ln p(x,o)]$，量纲 nat/bit；感知行动的统一框架，R信息论基线）。**[H]** SRT 的新增量不在于把两者当成同一个量，而在于提出：无论基线目标取热力学还是变分形式，都可被同一“关切扩展”结构 $F_{SRT}=F_{base}-d\cdot U_{others}$ 修正。
->
-> **量纲与符号说明**：$F_{thermo}$ 的量纲为焦耳；$F_{var}$ 的量纲为 nat/bit；$F_{SRT}$ 继承所选 $F_{base}$ 的量纲。SRT 保持不变的是“基线目标 + 关切修正”这一结构，而不是要求所有语境共用同一单位。负号 $(-d \cdot U_{others})$ 的含义是：当 $d>0$ 时，系统将他者福祉提升视为目标函数的有利方向；$d=0$ 时，$F_{SRT}$ 退化为未扩展的 $F_{base}$。此利他项与 Ax-Selfish（自利公理）无矛盾：自利=他者不进 $L_0^{(d)}$；利他=他者进入 $L_0^{(d)}$ 后，$U_{others}$ 成为被最小化目标的一部分。
->
-> * **精度边界**：E3 是跨域桥接框架，不把 Helmholtz 与变分自由能强压成一条同量纲公式。具体实现层（神经/社会/经济）的权重与 $U_{others}$ 操作化需分别参数化。后续若未特别区分，$F$ 仅表示“当前语境被最小化的目标泛函”；在 canonical 写作中应优先明确是 $F_{thermo}$、$F_{var}$ 还是 $F_{SRT}$。
-
-### §3.4 方程 E4 — 三域离散演化
-
-$$L_1(t+1) = \hat{G}_{θ(t)}[L_0(t)]$$
-
-$$L_2(t+1) = \text{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$
-
-$$θ(t+1) = θ(t) + Δθ(L_2, L_1)$$
+- 形成态离散循环 $L_1(t+1) = \hat{G}_{\theta(t)}[L_0(t)]$ 及其历史写回与约束反馈统一见 **`Core_22 Eq-Bridge-Loop-01`**（分析面向记号，绝非从预存 `L_0` 仓库抽取产物）。
+- 多算子耦合景观与集体容量截面代理统一见 **`Core_22 §0-C`（`Eq-Multi-01 / Eq-Multi-02 / Eq-Multi-03`）**；须严守 `Eq-Multi-03` 中的 $D_{\text{eff}}^{\text{collective}}$ 仅为容量 proxy，不跳过强承载赌注门。
 
 ---
 
@@ -284,29 +237,9 @@ $$\text{Pain/Suffering}^{proxy} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfa
 
 $$\text{神经损伤} \propto \int_0^T h(t) \, dt \quad \text{当} \, h(t) > h_{threshold}$$
 
-### §4.6 多算子耦合方程（Multi-Operator Coupled Equations）
+### §4.6 多算子耦合接口
 
-（对应 `Core/SRT_Core_22_Equations.md §0-C`，以下为规范引用摘要）
-
-**Eq-Multi-01: 集体自由能景观 (Collective Free Energy Landscape)**
-
-$$F_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G}_i) + \sum_{i < j} \Psi_f(\hat{G}_i, \hat{G}_j)$$
-
-> 个体摩擦代价之和 + 算子间交互摩擦之和 = 集体景观总势能。
-
-**Eq-Multi-02: 个体算子为集体景观梯度 (Individual Operator as Landscape Gradient)**
-
-$$\hat{G}_i[\sigma_i] = -\frac{\partial F_{collective}}{\partial \theta_i}$$
-
-> 个体算子不是独立的自由能极小化者，而是集体景观在自身参数维度上的梯度下降方向。"个体与集体的矛盾"在本体论上是误表述——个体算子 IS 景观的局部导数。
-
-**Eq-Multi-03: 集体 `D_eff` / d-value proxy (Collective capacity proxy)**
-
-$$D_{eff}^{collective}(F_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
-
-其中 $\lambda_k$ 是 $F_{collective}$ 的 Hessian 特征值；$D_{eff}(F_{collective}|_{\theta_i})$ 是景观在子空间的截面投影。它最多是集体 d-value 的 capacity / geometry proxy，不直接定义 canonical `d-value`。
-
-**与 A16 的关系**: Eq-Multi-01 是 A16（摩擦即生成）的多体展开候选；Eq-Multi-02 是集体景观优先性定理的核心表达；Eq-Multi-03 解决此前 d_collective 聚合方案 A-E 的问题域时，只能提供集体关切结构的有效维度 proxy，不能跳过 stake-coupled gate。
+多算子集体自由能景观（`Eq-Multi-01`）、个体算子梯度投影（`Eq-Multi-02`）与集体有效维度容量 proxy（`Eq-Multi-03`）统一由 **`Core/SRT_Core_22_Equations.md §0-C`** 锚定，此处不再重复列式。
 
 ---
 
@@ -378,39 +311,19 @@ $$R(L_2) = \frac{\Delta B}{\Psi_f}$$
 
 ---
 
-## §6 势能景观与觉醒动力学 (Potential Landscape & Awakening)
+## §6 势能景观越障机制（渐进退火与鞍结分叉）
 
-### §6.1 双稳态势能景观
+> **边界校准（`B-A / C-A / R4-B1`）**：原 §6.1 中将势能吸引子标为“初心吸引子 / 万物一体 / $d \to \infty$”的表述已退出（违背 `B-A` 与 `_SRT_D_VALUE_CANONICAL.md §5`）。本节仅保留一般动力系统中的两类**亚稳态越障重排机制**作为条件性动力学解释：
 
-| 状态 | 特征 | $d$ 值 |
-|:-----|:-----|:-------|
-| 低 $d$ 陷阱 | 自我中心 | $d ≈ 1$ |
-| 初心吸引子 | 万物一体 | $d \to ∞$ |
+### §6.1 越障机制 I — 渐进式（参数漂移降低有效势垒）
 
-### §6.2 觉醒机制 I — 渐进式（摩擦驱动退火）
+有效势垒高度 $\Delta V_{eff}(\theta) = V_{saddle}(\theta) - V_{local}(\theta)$ 随慢变量 $\theta$ 演化逐渐降低至 $\Delta V_{eff} \to 0$，允许结构平滑过渡而避免剧烈断裂。
 
-有效势垒高度：
+### §6.2 越障机制 II — 突变式（鞍结分叉）
 
-$$ΔV_{eff}(θ) = V_{saddle}(θ) - V_{local}(θ)$$
+当控制参数 $\mu$ 跨越分叉点 $\det\!\left(\frac{\partial^2 V}{\partial x^2}\right)_{x(\mu)} = 0$ 时，旧局部极小态失稳消失并触发离散跃迁（伴有临界慢化 $\lambda \to 0$）。
 
-随着 $θ$ 演化，$ΔV_{eff} \to 0$
-
-### §6.3 觉醒机制 II — 顿悟（鞍结分叉）
-
-分叉条件：
-
-$$\det\left(\frac{∂^2 V}{∂x^2}\right)_{x(μ)} = 0$$
-
-### §6.4 核心推论
-
-| 推论 | 内容 |
-|:-----|:-----|
-| **M1 (痛苦的本体论地位)** | $Φ$ 是觉醒的燃料 |
-| **M2 (灵魂黑夜)** | 特征值 $λ \to 0$ 的临界慢化 |
-| **M3 (社会支持)** | Barrier Height $\propto$ Existential Risk / Social Support |
-| **M4 (反事实能力)** | 受苦能力 $\propto$ 访问 $L_0$ 的深度 $×$ $d$ 值范围 |
-
-### §6.5 势垒稳定性与系统崩溃 (Barrier Stability: Why Civilizations Shatter)
+### §6.3 势垒稳定性与系统崩溃 (Barrier Stability: Why Civilizations Shatter)
 
 我们倾向于认为文化制度、个人身份和科学范式要么是“稳定的”，要么是“不稳定的”。SRT 用一个更丰富的图景取代了这种二元对立：**势垒高度与摩擦的比率**。一个国家的法律系统不是“永久的”——它是一个亚稳态的 $L_2$ 结构，其持久性取决于比率 $R = \Delta B / \Psi_f$。当公民投入巨大能量维持系统（高 $\Psi_f$）时，结构变得僵化——能够抵抗轻微扰动。但这种僵化正意味着当势垒最终被突破（经济危机、入侵、打破范式的发现）时，转变不是渐进的，而是灾难性的：一种相变而不是侵蚀。
 
@@ -420,7 +333,9 @@ $$\det\left(\frac{∂^2 V}{∂x^2}\right)_{x(μ)} = 0$$
 
 ## §7 时间动力学 (Temporal Dynamics)
 
-### §7.1 方程 E7 — 双重时间公理
+### §7.1 方程 E7 — 双重时间类比（`P3/P4` 桥接，不覆盖 `P1-T02`）
+
+> **`R3-05 / R4-B1` 范围边界**：本节为 `P3/P4` 桥接类比，**不是**核心公理；核心时间序先于测度的构成边界以 `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T02`（区隔参数时间 `t`、发生非等价、关系步序候选 $\tau_{\text{ontic}}$、模型内 `t_onto` 与体验时间 $t_{\text{exp}}$）为准。
 
 [R→Penrose 1989（时间箭头与量子引力：不可逆性的起源）; Prigogine 1997（《时间、混沌与量子》：不可逆时间作为基本概念）; Barbour 1999（《时间的终结》：量子引力与无时间物理）; Rovelli 2018（《时间的秩序》：时间的方向性与热力学）] [H-高承诺→复数时间公式是SRT的强形式化宣称，非物理学主流；i的使用是结构类比而非广义相对论的Wick转动]
 
@@ -479,150 +394,33 @@ $$\mathcal{R}_{info}(t)\equiv \int_0^t \chi_{irr}(\tau)\,d\tau,\quad \chi_{irr}\
 
 ---
 
-## §8 d 值形式化 (d-Value Formalization)
+## §8 价值、关切与 `d` 值接口（统一回链 `_SRT_D_VALUE_CANONICAL.md`）
 
-### §8.1 有效维度 proxy
+> **去重与退出声明（`R4-A / R4-B1`）**：价值五职责、广义关切四维、规范 `d = ||∂U/∂S||`、`D_stake` 一般定义与 `D_eff` 容量代理统一由 **`_SRT_D_VALUE_CANONICAL.md`** 锚定（阈值模型实例 `D_stake^{thresh}` 见 `Core_22 Eq-Bridge-D-01`）。原 §8.2 “方程 E8 — `d` 值统一公式”（仅作为认知域三维近似 `d_bio` 保留于 `_SRT_D_VALUE_CANONICAL.md §3`）、原 §8.3 “复数 `d` 值扩展”（未校准隐喻）及原 §8.4 “Teleological Attractor（含 `∇B_{L_0}` 至福势）”均已正式退出核心方程层。
 
-**定义 D9（downgraded）**:
+### §8.1 Passive Alignment Transition（被动对齐相变，`C-A` 收窄模型）
 
-$$D_{eff}^{proxy}(\hat{G};M) = \frac{(\sum λ_i)^2}{\sum λ_i^2}$$
-
-其中 $λ_i$ 是神经响应协方差矩阵或任务流形的本征值。该式是 capacity / neural-complexity proxy，不定义 canonical `d-value`；canonical `d-value` 仍需 stake-coupled consequence sensitivity。
-
-### §8.2 方程 E8 — d 值统一公式
-
-$$d(σ) = α · A(σ) + β · \log(V_{concern}) + γ · τ_{temporal}$$
-
-| 分量 | 含义 |
-|:-----|:-----|
-| $A(σ)$ | 汇编指数 |
-| $V_{concern}$ | 空间关切范围 |
-| $τ_{temporal}$ | 时间规划跨度 |
-
-### §8.3 复数 d 值扩展
-
-$$d_{total} = d_{local} + i · d_{nonlocal}$$
-
-| 意识状态 | $d_{local}$ | $d_{nonlocal}$ | 向量相位 |
-|:---------|:------------|:---------------|:---------|
-| 清醒态 | 极高 | ≈ 0 | 0° |
-| 深睡 N3 | 极低 | 低 | ≈ 90° |
-| REM 梦境 | → 0 | 激增 | 90° |
-| 清明梦 | 恢复 | 保持高 | 45° |
-
-### §8.4 Teleological Attractor（历史候选，C-A 后停驻）
-
-> 下式把 $L_0^{abs}$ 的“最优几何”写成具内容的跨位置牵引项，C-A 后不再是当前动力学项。保留公式只为 provenance；未来只有具名有限模型声明比较泛函、可达域、时域、约束与失败条件时，才可改写为 P3/P4 局部候选。
-
-旧式“风险推力 + 价值牵引”双驱动：
+在完整声明有限主体范围、可达域、比较泛函 $J_{\theta,\tau,K}$、时域与约束的实践模型中，“顺应/低内耗对齐”可局部表示为局部意向向量与较低复合负担方向对齐：
 \[
-\frac{d\sigma}{dt}=\hat{G}_\theta[\sigma]-\nabla F[\sigma]-\lambda\nabla C_{L_2}[\sigma]+\mu\nabla B_{L_0}[\sigma]
+\cos\angle\!\left(\vec v_{self},-\nabla J_{\theta,\tau,K}\right)\to 1,\qquad \Psi_f^{total}=\Psi_f^{local}+\Psi_f^{coh}\quad (\Psi_f^{local}\downarrow,\ \Psi_f^{coh}\uparrow)
 \]
-其中旧 $B_{L_0}$ 曾表示与 $L_0^{abs}$ 最优几何一致性的“至福势”，现无准入定义；$\mu$ 亦不构成有效参数。
-
-### 分类映射表（Hart Ch.5 欲望结构 → SRT）
-
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 生存防御驱动（被推） | 低~中 | Semi-open / Closed 倾向 | borderline |
-| 价值牵引驱动（被拉） | 中~高 | Open（探索-整合） | payable |
-| 极限至福渐近（不可达） | 高 | Open→低耗稳态 | \(\Psi_f\to\Psi_{min}^{+}\) |
-
-### §8.5 Passive Alignment Transition（被动对齐相变，C-A 收窄）
-
-定义“臣服态”不是停止选择，而是局部意向向量与一个具名有限实践模型的较低复合负担方向对齐：
-\[
-\cos\angle\!\left(\vec v_{self},-\nabla J_{\theta,\tau,K}\right)\to 1
-\]
-其中 `J`、主体范围、可达域、时域与约束必须在应用中声明；这是 P3/P4 proxy，不是全局方向或初心定义。
-令局部努力项与全局协同项分离：
-\[
-\Psi_f^{total}=\Psi_f^{local}+\Psi_f^{coh},\quad
-\Psi_f^{local}\downarrow,\ \Psi_f^{coh}\uparrow
-\]
-其中 \(\Psi_f^{coh}\) 代表具名尺度间的协同支付；不得由 bare \(\Omega\) 推出跨尺度总体一致性。
-
-* **Implication**：可出现“主观上无强制抓取感、但显现清晰度提升”的状态；这不是 \(\hat G_\theta\) 停机，而是控制变量重参数化。
+这是 `P3/P4` 局部 proxy（不是全局方向、初心定义或 $\hat{G}_\theta$ 停机；$\Psi_f^{local}/\Psi_f^{coh}$ 仅为本节模型内局部读数别名，遵循 `A-9` 不新增 canonical 子符）。
 
 ---
 
-## §9 递归深度形式化 (Recursive Depth)
+## §9 历史接口清理与闭包机制回链
 
-### §9.1 Volterra 级数展开
+- **原 §9（Volterra 级数 `Wisdom = Σ w_n ||K_n||`）**：未校准隐喻式已退出核心动力学（历史溯源保留于 git 历史）。
+- **向下约束与闭包**：`L_2` 递归条件化构成关系由 `Core_21b P1-T03` 锚定，固定空间 $-\lambda\nabla C_{L_2}[\sigma]$ 仅为 Level I 特例；约束闭包与 `One` 垂直再构成由 `Core_Law/SRT_One_Formation.md` 与 `Core_21b` 预留 `P1-T08` 界定。
 
-$$\hat{G}_θ = \sum_{n=0}^{∞} K_n$$
+## 跨文件锚点索引（`R4-B1` 单主锚分工）
 
-| 阶数 | 核 | 对应 |
-|:-----|:---|:-----|
-| $K_0$ | 零阶核 | 浅层劳动 |
-| $K_1$ | 一阶核 | 工具使用 |
-| $K_n$ ($n ≥ 2$) | 高阶核 | 深层递归/创造力 |
-
-### §9.2 智慧定义
-
-$$\text{Wisdom} = \sum_{n≥2} w_n · \|K_n\|$$
-
----
-
-## §10 约束与闭包 (Constraints & Closure)
-
-### §10.1 约束闭包条件
-
-**定义 D10**: 只有形成约束闭包的 $L_1$ 结构，才能持续作为 $\hat{G}$ 的载体。
-
-$$\text{Closure}(θ) \iff \hat{G}_θ[\hat{G}_θ[...[\hat{G}_θ[L_0]]...]] = \text{Stable Structure}$$
-
-### §10.2 向下因果约束
-
-$$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
-
-| 项 | 含义 |
-|:---|:-----|
-| $∇C_{L_2}[σ]$ | $L_2$ 的"阻力场"（向下约束）|
-| $λ$ | 约束耦合强度 |
-
----
-
-## 方程索引 (Equation Index)
-
-| 编号 | 名称 | 位置 |
-|:-----|:-----|:-----|
-| E1 | 幽灵演化方程 | §3.1 |
-| E1' | 扩展幽灵演化方程 | §3.1 |
-| E2a/b | 耦合动力学方程组 | §3.2 |
-| E3 | 自由能方程 | §3.3 |
-| E4 | 三域离散演化 | §3.4 |
-| E5 | 痛苦本体论定义 | §4.2 |
-| E6 | 神经损伤积分 | §4.4 |
-| E7 | 双重时间公理 | §7.1 |
-| E8 | d 值统一公式 | §8.2 |
-| Eq-Multi-01 | 集体自由能景观 $F_{collective}$ | §4.6 |
-| Eq-Multi-02 | 个体算子为集体景观梯度 | §4.6 |
-| Eq-Multi-03 | 集体 `D_eff` / d-value proxy | §4.6 |
-| Eq-IT-A | `Ψ_f` 的 Landauer/Fisher proxy bridge | §15.1 |
-| Eq-IT-B | `D_eff(I_F)` as capacity proxy, not canonical `d` | §15.2 |
-| Eq-IT-B' | d × Ψ_f ≥ k_BT·𝒦（不确定性关系候选，Gap） | §15.2 |
-| Eq-IT-C | 复杂性棘轮方程（第二定律为生成压力） | §15.3 |
-| Eq-IT-D | Boltzmann 分布为 SRT d→0 退化极限 | §15.4 |
-| Eq-IT-E | I_created = I(L₀;Ĝ_θ)，选择创造信息 | §15.5 |
-
----
-
-## 符号索引 (Symbol Index)
-
-| 符号 | 名称 | 定义位置 |
-|:-----|:-----|:---------|
-| $\hat{G}_θ$ | 幽灵算子 | §1.1 |
-| $θ$ | 具身参数 | §2.1 |
-| $d$ | 选择维度 | §1.2, §8.1 |
-| $ρ$ | 精度 | §1.2 |
-| $\vec{v}$ | 向量 | §1.2 |
-| $F$ | 自由能 | §3.3 |
-| $Φ$ | 本体论摩擦势能 | §4.1 |
-| $h(t)$ | 哈扎德函数 | §4.1 |
-| $φ$ | 本体论相位 | §7.2 |
-| $ξ(t)$ | 噪声项 | §3.2 |
-| $K_n$ | 第 n 阶 Volterra 核 | §9.1 |
+| 类别 | 权威主锚点 | 本文件保留职责 |
+|:-----|:-----------|:---------------|
+| 核心演化 / 热力学 / 桥接 / 统计力学方程 | `Core/SRT_Core_22_Equations.md`（唯一核心方程主锚） | `§3` 快-慢机制与 `E3` 自由能桥接解释 |
+| 价值 / 关切 / `d` / `D_stake` / `D_eff` | `_SRT_D_VALUE_CANONICAL.md` | `§1.3` 神经归一化容量 proxy 映射、`§8.1` 被动对齐 |
+| 广义摩擦与 `Ψ_f` | `_SRT_PSI_F_CANONICAL.md` | `§4` 现象学对照与 Phase/Interrupt 切换 |
+| 具身算子原型与跨尺度实现接口 | 本文件（`§1–§2`, `§5–§7`, `§10.1a`, `§10.3`, `§11–§15`） | 除法归一化、躯体同步、生存门控、势垒脆性、部分闭包、疾病闭包破裂、神经精神/发育/代谢/梦境/IT 桥接 |
 
 ## §11 神经精神病学统一动力学补丁（Neuropsychiatry Bridge, 新增）
 
@@ -685,7 +483,7 @@ L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \the
 - **$\hat{G}_\theta$ 的动力学角色**: 选择算子以除法归一化 ($[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon + \sum_j W_{ij} x_j^n)$) 为操作化原型，其三分量 ($d$, $\rho$, $\vec{v}$) 分别控制选择范围、分辨率与方向。
 - **$\theta$ 的慢变量演化**: 具身参数 $\theta = \theta_{neural} + \theta_{somatic} + \gamma \vec{g}_{context}$ 在快态 $\sigma$ 稳定后缓慢更新，学习、创伤、衰老均通过 $\theta$ 漂移改变选择动力学。
 - **$\Psi_f$ 作为稳定性与苦的统一，同时作为生成性原理（A16/Ax-F-12）**: 本体论摩擦既是 $L_1$ 锚定的代价函数（微观视角），也可作为主观痛苦风险的动力学 proxy（$\text{PainRisk}^{proxy} \sim d\Psi_f^{proxy}/dt$）；同时，算子间摩擦 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 可作为宏观动力学来源的 bridge language——演化、学习、文化变迁、免疫应答可读作其不同 proxy 形态（见 §4.6，Eq-Multi-01）。两视角相容：微观上"支付摩擦才能锚定"，宏观上"摩擦是动力学来源"——进入摩擦流即进入动力学。
-- **$d$ 的缩放律**: $d$ 值跨尺度保持自相似性 (Scale Invariance)，但其操作化形式在不同尺度上由不同代理量测量（HRV、PCI、跨时间折扣率）。
+- **$d$ 与容量代理的跨尺度分工**：跨尺度可对比的是局部容量/选择锐度代理（如 `D_eff`、HRV、PCI）与各自模型内的可支付约束，而非无条件假定规范 `d = ||∂U/∂S||` 跨尺度同量纲自相似（详见 `_SRT_D_VALUE_CANONICAL.md`）。
 
 ## §15 热力学-信息论统一关系（IT Bridge）
 
@@ -718,15 +516,13 @@ $$P_{L_1}(\sigma) \xrightarrow{d \to 0} \frac{e^{-E(\sigma)/k_BT}}{Z}, \quad D_{
 
 统计力学可作为低 stake-coupling / near-null `d` proxy 极限的类比。生命/意识可被建模为 stake-coupled `d` 从近零状态出现时的结构性相变候选（$\kappa$ 穿越 $\kappa_{c1}$，T-L0-02）。Friston 主动推断可作为 SRT 框架下某些 `d>0` 算子的行为模式 proxy。
 
-### §15.5 关系 E（Eq-IT-E）：选择创造信息（Shannon 的上游问题）
+### §15.5 关系 E（Eq-IT-E）：声明模型内的信息生成代理（对齐 `Core_21b P1-T04` 与 `Core_21c P2/P3-B09`）
 
-选择算子从 $L_0$ 中提取并锚定的信息量（选择创造的信息）：
+在独立声明前置候选随机变量 $X$、输出记录 $Y$、划分与概率测度的域模型 $M$ 中，选择带来的条件信息增益可写为：
 
-$$I_{created} \equiv I(L_0\,;\,L_1) = H(L_0) - H(L_0\,|\,L_1) = H(L_1) - H(L_1\,|\,L_0)$$
+$$I_{created}^{(M)} \equiv I_M(X\,;\,Y) = H_M(X) - H_M(X\,|\,Y) = H_M(Y) - H_M(Y\,|\,X)$$
 
-即 $L_0$（潜在域）与 $L_1$（显现域）之间的互信息——算子选择将 $L_0$ 的哪些结构"投影"到了 $L_1$ 中。
-
-> **原公式勘误**：原式 $H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0\,;\,\hat{G}_\theta)$ 存在随机变量错配：$I(L_0;\hat{G}_\theta) = H(L_0) - H(L_0|\hat{G}_\theta)$（右侧分母应为 $L_0$，非 $L_1$）。正确表达有两种等价写法：(a) $I(L_0; L_1)$（源-输出互信息，强调选择的信息提取）；(b) $I(L_1; \hat{G}_\theta) = H(L_1) - H(L_1|\hat{G}_\theta)$（算子对 $L_1$ 的解释力，强调算子的贡献）。本节采用 (a)。
+> **边界与勘误（`PC-A / EX-A / P2/P3-B09`）**：原无条件式 $H(L_0) - H(L_1|\hat{G}_\theta) = I(L_0;\hat{G}_\theta)$ 与未声明测度的 $H(L_0)$ 均已撤回。`P1-T04` 仅承诺定性区分生成；模型内 $I_M(X;Y)$ 代理不定义 `L_0^{abs}` 或原初发生。
 
 **约束链的形式化**：
 
@@ -878,6 +674,8 @@ X\in \text{Life-like} \iff \left(\frac{d\theta_X}{dt}\neq0\right)\land\left(\fra
 d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
 \]
 即系统必须对“失败导致结构解体”的风险有可观测敏感性，才进入生命算子域。
+
+> **`R4-A / R4-B1` 非线性边界**：本节区分“非生命耗散结构（如火焰）”与“具可学习参数的生命样算子”，**绝不**将生命或生物细胞膜设为 `One` 形成的普遍本体门槛——非生命束缚态与耗散态仍可在 `Core_Law/SRT_One_Formation.md §2.3`（态 I / 态 II）下独立研究其垂直再构成。
 
 ## 【理论边界/防误用声明】
 - 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  

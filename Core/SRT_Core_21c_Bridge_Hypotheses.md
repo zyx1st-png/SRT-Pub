@@ -2,7 +2,9 @@
 id: SRT-CORE-21C-BRIDGE-HYPOTHESES
 type: bridge_hypothesis_set
 tags: [Formal logic, Bridge, Hypothesis, Claim Ladder]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
@@ -26,6 +28,13 @@ dependency: [SRT-CORE-21A-MINIMAL-AXIOMS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTI
 
 Claims in this file may be cited as SRT interpretations, bridges, or hypotheses. They must not be cited as primitive axioms or constitutive theorems unless a later hardening pass explicitly promotes them and records the reason.
 
+### Formalization Readiness Discipline (`R4-B1`, 2026-11-26)
+
+Not every valuable SRT construct should be immediately forced into an equation. Across `Core_21c` and `Core_22`, formal work respects three distinct maturity tiers:
+1. **Mature conditional formal models (`P2–P4`)**: mathematically well-posed models with explicit domains, dimensions, and rival divisions (e.g., divisive normalization, `Lemma-FFSI`, `T-L2-Scaffold`, `T-Scale-Rhythm`, local Fisher proxy, `D_eff / D_stake`).
+2. **Open formal research interfaces (`P2/P3` interfaces, `OPEN` math)**: structural problems where formalization requires new modeling and non-triviality proofs (`P2/P3-B15`: five change scales, `(A, B) -> (A', B', C)` rewriting, `(\mathcal X_t, F_t, J_t)` space/criterion reconstruction, `HCLR01 HEF-4`, `T3-01 C/E` global orientation)—**do not forge unverified universal formulas**.
+3. **Intentionally retained natural-language structures**: value's five duties, generalized concern's four dimensions, constitutive depth's four profiles (`q` deferred), `C1-c` fallibilist objectivity (`o` retired), six foreground/background mismatches, Ghost's five-duty triage, `HP-B`, and `O2-M`.
+
 ---
 
 ## Claim-Level Map
@@ -43,6 +52,7 @@ Claims in this file may be cited as SRT interpretations, bridges, or hypotheses.
 | `Ax-F-13` selection-information creation equivalence | P2/P3 | Minimal theorem in 21B; strong unification lives here |
 | former `P1-T07 / T-ε-Constitute` | P2/P3 conditional candidate | Absorption is P1; neutral-kernel anti-closure requires additional semantics and proof |
 | former `P0-02` entropy-ratio existence index | P2/P3 historical heuristic | EX-A keeps anchoring persistence at P0 but demotes the ungrounded quantitative readout to B14 |
+| `R3-08` 5 change scales, `(A,B)→(A',B',C)` & `HCLR01` | P2/P3 formal interface (`B15`) | Separates state/weight/composition/rule-rewriting/reflexive scales & registers `R5` anti-reparameterization frontier |
 | Part B assembly / deep-time notes | P3/P4 | Bridge / empirical-theoretical extrapolation |
 
 ---
@@ -185,7 +195,7 @@ Legacy scale table:
 
 **Implication**: These phenomena may be read as implementations of one selection grammar.
 
-**Boundary**: The phrase "same structure" is a high-ambition bridge, not a P0 identity statement. A valid use must declare the two state spaces, the scale map, preserved observables, comparison norm, approximation tolerance, and failure case. Cross-scale invariance lies at most in selection／constraint／payability grammar; it does not establish unit, entropy, mechanism, subjecthood, or consciousness identity.
+**Boundary**: The phrase "same structure" is a high-ambition bridge, not a P0 identity statement. Under `R3-08 / R4-A`, **`\hat{G}_\theta` (conditional formal role-carrier) `!=` historical Ghost intuition `!=` primitive Selection** (`Core_Law/SRT_Generative_Ontology_Spine.md §2.3`). A valid cross-scale use must declare the two state spaces, the scale map, preserved observables, comparison norm, approximation tolerance, and failure case. Cross-scale invariance lies at most in selection／constraint／payability grammar; it does not establish unit, entropy, mechanism, subjecthood, or consciousness identity.
 
 **One-way load note (2026-07-05, Q26 backflow)**: The failure of this bridge is one-directional. If cross-scale selection universality — including any pre-life / pre-consciousness "cosmic horizon" reading that pushes selection-condensation below the biological scale — cannot show explanatory gain over path dependence, attractors, dissipative structures, active inference, or ordinary causal history, then the retraction target is **this P3 bridge and its dependents**, not the P0/P1 core. The minimal axioms (`Core/SRT_Core_21_Minimal_Axioms.md`) and constitutive theorems (`Core/SRT_Core_21b_Constitutive_Theorems.md`) do not depend on this universality claim and survive its withdrawal. Provenance: book chapter `01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md §3` (the cosmic-horizon reading "必须自带死法，是最高读法不是地基"); the book is provenance, not authority.
 
@@ -197,7 +207,7 @@ Legacy scale table:
 
 **Lineage**: former `Ax-F-12`.
 
-**Status Note**: `\Psi_f` itself is canonical in `_SRT_PSI_F_CANONICAL.md`. The stronger claim that Fisher-form inter-operator friction is the generative source of all dynamics is kept here as P2/P3 mixed.
+**Status Note**: `\Psi_f` itself is canonical in `_SRT_PSI_F_CANONICAL.md` (which also integrates `T3-02 D / PT09` opportunity-cost selection pressure, `A1` pressure-vs-supply pairing, and `R3-08` 4-way friction separation). The stronger claim that Fisher-form inter-operator friction is the generative source of all dynamics is kept here as P2/P3 mixed and must not override `_SRT_PSI_F_CANONICAL.md`.
 
 **Formal Definition**: For two interacting operators:
 
@@ -265,26 +275,22 @@ $$
 
 ---
 
-## P3-B11: `D_eff` as d-Value Capacity Proxy
+## P3-B11: `D_eff` Capacity Proxy, `D_stake` Spectral Participation Ratio & `d` Separation
 
-**Lineage**: former Part B `2.1.7`; cross-checked against `_SRT_D_VALUE_CANONICAL.md`.
+**Lineage**: former Part B `2.1.7`; mathematically corrected under `R3-06 D1` / `R4-A` (`_SRT_D_VALUE_CANONICAL.md §1–§2b`).
 
-**Corrected Layer Relation**:
+**Corrected Three-Way Separation (Falsified Old Bounds Retired)**:
 
-$$
-d_{canonical} \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
-\leq
-D_{eff}(M) =
-\frac{(\sum \lambda_i)^2}{\sum \lambda_i^2}
-$$
+1. **Canonical `d`** (`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`): utility-scaled irreversible-risk sensitivity gradient norm $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ in a declared `Bearer (P+E)` model.
+2. **General geometric capacity proxy `D_eff`** (requires **no** strong-bearing admission for general capacity use):
+$$D_{\text{eff}}(M) = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2}, \qquad 1 \le D_{\text{eff}}(M) \le \operatorname{rank}(M).$$
+3. **Stake-gated spectral participation ratio `D_stake`** (general form in `_SRT_D_VALUE_CANONICAL.md §2b` with canonical weights $w_i = R_i A_i C_i$; threshold-gated model instance $D_{\text{stake}}^{\text{thresh}}$ with $g_i$ in `Core_22 Eq-Bridge-D-01`, no unproven equivalence):
+$$D_{\text{stake}}(\theta) = \frac{(\sum_i \lambda_i w_i)^2}{\sum_i (\lambda_i w_i)^2}\quad (\text{for } N_{\text{active}} \ge 1), \qquad 1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M),$$
+with an explicit **zero-effective-spectrum branch** (`0` when $\forall i, \lambda_i w_i = 0$, $0/0$ undefined), strictly separated from `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`.
 
-`D_eff` is a geometric capacity proxy, not the normative d-value definition. The unstaked bandwidth is:
+**Retired falsified expressions**: Former `d_canonical ≡ d_stakes`, `d_canonical ≤ D_eff`, `D_eff ≥ d_stakes`, and `Δd_free = D_eff - d_stakes ≥ 0` are **mathematically false and retired** (`D_stake` is scale-invariant and can exceed `D_eff` whenever high-eigenvalue unstaked directions are gated out).
 
-$$
-\Delta d_{free} = D_{eff} - d_{stakes}
-$$
-
-**Boundary**: Any text saying "`d` is the effective dimension `D_eff`" must be read through the corrected hierarchy in `_SRT_D_VALUE_CANONICAL.md`.
+**Boundary**: Any text saying "`d` is the effective dimension `D_eff`" or treating `rank_eff` as a universal upper bound on gradient norm `d` without dimensional calibration must be read through `_SRT_D_VALUE_CANONICAL.md §1.1, §2b, §11`.
 
 ---
 
@@ -375,12 +381,42 @@ is retained only as a **historical heuristic for comparative anchoring intensity
 
 ---
 
+## P2/P3-B15: Five Change Scales, Generative Structural Rewriting & Non-Triviality Frontier (`R4-B1`)
+
+**Lineage**: `R3-08` five change scales & `(A, B) -> (A', B', C)` coupling-depth analysis (`#1153`), `R3-04` dependence reorganization (`#1149`), `HCLR01` Lie-reachability bridge (`03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md`), and `R4-B1` (`2026-11-26`).
+
+**Role**: Open formal research interface connecting `P1-T03` (recursive historical conditioning) and reserved `P1-T08` (`One` constitutive relation) to conditional mathematical models in `Core_22` and `R5`—**without forging an unverified universal closed-form equation**.
+
+### 1. Five Distinct Change Scales (`R3-08`, Coexisting, Never Conflated)
+
+| Change Scale | Formal Research Object | Strict Non-Conflation Guard |
+|---|---|---|
+| **1. State change（状态变化）** | State trajectory update under fixed organizational conditions ($x_{t+1} = F_t(x_t)$) | General trajectory change; does not rewrite generative rules |
+| **2. Weight change（权重变化）** | Changes in directional bias, concern weighting, trust ($\Delta w_{\text{trust}}$), or payability/cost weights | Confirmatory tiny-MDP `HEF-3` matched-present history effect sits here—not every weight change is rule rewriting |
+| **3. Compositional reachability（组合可达性变化）** | Ordered compositions of existing generators open newly reachable directions (e.g., `HCLR01` Lie-bracket closure $\operatorname{Lie}\{X_1,\dots,X_k\}$) | Reaching a new state via novel composition does **not** prove the underlying generators or rules changed |
+| **4. Generative-structure rewriting（生成结构改写）** | Participating units, relational topology, generators, composition laws, reachable space $\mathcal{X}_t$, or comparison criteria $J_t$ change ($F_{t+1} = \mathcal{R}(F_t, x_t, H_t)$ or $(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})$) | `HCLR01 HEF-4` (matched-present generator rewriting) is an **untested P3/P4 hypothesis**; structural rewriting does **not** automatically entail reflexive re-selection |
+| **5. Reflexive reorganization of selection organization（组织方式的反身重构）** | The comparison rules, value criteria, or selection organization itself enters new comparison and revision | Distinct from `U5` absolutization (where organization exits re-selection) and stronger than generic structural rewriting; strong second-order historical conditions (`R3-08 P2-07`) remain candidate-scoped |
+
+### 2. Coupling-Induced Generative Rewriting: `(A, B) -> (A', B', C)` & Dependence Reorganization
+
+Schematically, SRT investigates how coupling not only produces an outcome `C`, but under specific organizational conditions reorganizes the participating units' own generative conditions (`(A, B) -> (A', B', C)`):
+- Links directly to `One_Formation §2.1` (**dependence reorganization generates higher-scale relative independence**) and `One_Formation §2.4` (**compression vs. generative normalization dual threshold**: internal coupling reconfiguration + cross-position conditioning efficacy).
+- Does **not** claim every physical or social interaction alters participating units' mode of existence; distinguishes four conditional coupling depths (transient interaction / effective relation / constitutive reorganization / whole-level reconstitution).
+
+### 3. Mathematical Non-Triviality Frontier (`R5` Anti-Reparameterization Discipline)
+
+**Critical mathematical challenge**: Any claimed change in update law $F_t$, state space $\mathcal{X}_t$, or comparison criterion $J_t$ can often be formally re-embedded as ordinary fixed-space evolution inside a larger lifted product space $\tilde{\mathcal{X}} = \bigsqcup_t (\mathcal{X}_t \times \mathcal{F}_t \times \mathcal{J}_t)$. Therefore, future `R5` formal models claiming genuine Level II/III generative rewriting must specify **why** the newly formed action interface, boundary, or comparison dimension carries non-absorbable explanatory, compressional, or interventional work (e.g., matched-present/matched-first-order contrast, out-of-sample transfer, or intervention-specific reachability separation against fixed-space rivals) rather than merely changing mathematical coordinates. This frontier is recorded as an open `R5` mathematical criterion, not prematurely solved here.
+
+**Cross-ref**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T03 / reserved P1-T08`; `Core_Law/SRT_One_Formation.md §2`; `Core/SRT_Core_22_Equations.md §0-A`; `03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md`.
+
+---
+
 ## Mechanism Summary After Demotion
 
-Former `Core_21` described SRT as a "selection-anchoring-constraint" loop. The loop remains useful, but its claims now have levels:
+Former `Core_21` described SRT as a "selection-anchoring-constraint" loop. Under `R4-A / R4-B1`, its formal claims are stratified by hardness and modeling duty:
 
-1. **Selection**: P0/P1 when referring to `\hat{G}_\theta` anchoring from `L_0` to `L_1`.
-2. **Anchoring**: P0 only as the EX-A persistence boundary; P2/P3 when proposing persistence readouts or using canonical `\Psi_f`, Fisher, or cross-domain implementations.
-3. **Constraint**: P1 when referring to `L_2` downward constraint; P3/P4 when mapped to domain-specific mechanisms.
+1. **Primitive Selection (`P0`)**: irreducible actualising non-neutral differentiation (`Core_21 P0-01..04`); `\hat{G}_\theta` is a formed/model role-carrier, never primitive Selection.
+2. **Constitutive Relations (`P1` / `P1-candidate`)**: horizontal causality projection (`P1-T01`), occurrence asymmetry & relational time order (`P1-T02`), recursive conditioning by retained historical structure (`P1-T03`), minimal distinction creation (`P1-T04`), Stable ISP standing (`P1-T06`), absorption remainder (former `P1-T07`), and `One` constitutive-relation candidate interface (reserved `P1-T08`).
+3. **Conditional Bridges & Formal Interfaces (`P2–P4`)**: cross-scale models (`B01–B14`) plus five-change-scale structural rewriting and non-triviality interfaces (`B15`), implemented in `Core_22` and domain owners without collapsing mature equations, open modeling interfaces, and natural-language theoretical structures.
 
 This summary is a reading guide, not an additional axiom.

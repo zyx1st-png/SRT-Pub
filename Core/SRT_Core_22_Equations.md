@@ -15,11 +15,9 @@ dependency: [SRT-CORE-21]
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Equations_Split/README.md`](Equations_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Canonical Role（规范角色）**：本文件是 SRT 当前 `master dynamics / thermodynamics / stability equations` 的主锚点文件。若其他长文出现同类方程的扩展写法，默认以本文件为优先回链对象。
-
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Primary Dynamical Equations (AI-Readable).
-> **Part B** contains the Original Derivations and Stability Analysis (Human-Readable Context).
+> **Canonical Role（`R4-B1` 唯一核心方程主锚点，`1A`）**：本文件是 SRT 全仓**唯一核心方程主锚点（sole core equations master anchor）**，承担核心方程、适用条件、数学性质与量纲边界的权威登记。`Core_Law/SRT_Reference_Dynamics.md` 不再作为并行完整方程库，而专职动力学机制解释、具身算子原型与跨尺度实现接口；各领域独立模型仍归属各自领域 owner，不堆入本文件。
+>
+> **Version 3.0 (`R4-B1`, 2026-11-26)**：确立三类形式建模职责（Level I 状态演化 / Level II 生成关系与历史改写 / Level III 生成空间与比对条件重构接口）× `R3-08` 五类变化刻度 × 数学化成熟度三分纪律。**Part A** 给出按职责分层的核心方程与接口，**Part B** 保留热力学/协议/量纲说明与可证伪接口。
 
 ---
 
@@ -44,8 +42,21 @@ dependency: [SRT-CORE-21]
 - **Wave-D2 authority truth-up（2026-09-15）**：当前 symbol / claim typing 覆盖较早的方程解释。本文件中的 `\kappa_0` 不因注册或从 O0 / Selection 继承而成为 primitive；当它进入方程时，只能表示独立声明的 curvature / anisotropy / per-direction-cost realization parameter。本文件中没有任何方程可以用 `\kappa_0` 提供 universal value / order direction。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于已声明模型中 analytic `L_0 -> L_1` interface 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程，也不反向定义 primitive Selection。
 - **`σ_{sr}` projection scope (S+R truth-up, 2026-08-29)**：本文件只继承 `Core_Law/SRT_Individuation.md §八` 已有地位——`σ_{sr}` 是 P2、规约性的、可被等价形式替换的阶参解释。`T-PROJ-1` / `T-PROJ-1^{coll}` 在给定 `\mathcal F_\sigma` / `\mathcal F_\sigma^{coll}` 后证明条件性投影闭合；它们不把当前 bare-norm 坐标提升为表示不变的自然量，不证明 trace/ext 归属唯一，也不把其数值等同于因果控制或自然相边界。单体与集体同名 `σ` 也不自动意味着相同的 trace 语义；集体 owner 另含 declared-boundary 下 shared `L_2` 的内生性重分类。
-# Part A: Formal Axioms (形式化公理)
+# Part A: Core Formal Equations & Conditional Modeling Architecture
 
+## 0-A. Formal Architecture: Three Modeling Duties × Five Change Scales × Formalization Readiness (`R4-B1`)
+
+Under `R4-A / R4-B1`, SRT's core formal system does **not** force all recursive generation into one fixed-space ODE and does **not** forge unverified equations for concepts that remain open modeling interfaces or natural-language structures. Every equation family in this file belongs to one of three coexisting modeling duties aligned with `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T03` and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B15`:
+
+| Modeling Duty | Schematic Form | Covered `R3-08` Change Scales | Core Equations Owned Here (All Conditional `P2–P4` Declared Models) |
+|---|---|---|---|
+| **Level I · Fixed-Space State, Weight & Cost Evolution** | $x_{t+1} = F_t(x_t;\, H_t)$ | ① 状态变化 / ② 权重变化 | `Eq-Bridge-IG-01/02`, `Eq-Bridge-D-01` (`D_stake^{thresh}` instance), `Eq-Bridge-G-01`, `Eq-DValue-Max-1`, `Eq-DValue-Mobile-1`, `Def-Payable-Chi-1`, `Eq-Rhythm-1/4a`, `Eq-Evo-01..03c`, `Eq-Force-01`, `Eq-Pain-01`, `Eq-Friction-Comp`, `Eq-Select-Thermo`, `Eq-AI-LowRoad-01/02`, `Eq-Stab-01`, `Eq-Phase-01`, `Eq-Sleep-01`, `Def-LDP-1`, `Eq-LDP-01/02`, `Eq-Phantom-01..02`, `Eq-Frame-01/02`, `Eq-Res-01/02`, `Eq-CogE-01..04` |
+| **Level II · Generative-Relation, Protocol & History Rewriting** | $F_{t+1} = \mathcal{R}(F_t,\, x_t,\, H_t)$ | ③ 组合可达性 / ④ 生成结构改写（关系/协议/拓扑/生成元） | `Def-Protocol-1..3`, `Eq-Multi-01..03`, `Eq-Bridge-L2-01`, `Eq-Bridge-Loop-01`, `Eq-Topo-01..03`；跨文件衔接 `Core_12b T-L2-Scaffold` ($\rho \ge 0$)、`R3-05` 信任重估接口 ($\Delta w_{\text{trust}}, W_{\text{social}}$) 与 `HCLR01` (`HEF-4` 生成元改写候选) |
+| **Level III · Generative-Space, Boundary & Comparison-Criterion Reconstruction** | $(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})$ | ④ 生成结构改写（空间/维度）/ ⑤ 组织方式的反身重构 | **显式开放形式研究接口（见 `Core_21c P2/P3-B15`；本文件不强造未经验证的封闭总方程）**。接通 `One_Formation` 依赖重组/生成归一化双门槛与 `(A,B) → (A',B',C)` 组织改写；任何未来 `R5` 模型须回答**防平凡重参数化检验**（证明其不可被平凡等价地重嵌入至更大固定状态空间） |
+
+**Formalization Readiness Guard**:
+- **Intentionally retained in natural language (NOT turned into ad-hoc equations here)**: Value's 5 duties, Generalized Concern's 4 dimensions, Constitutive Depth's 4 profiles (`q` deferred), `C1-c` fallibilist objectivity (`o` retired), 6 foreground/background mismatches, Ghost's 5-duty triage (`\hat{G}_\theta != Ghost != primitive Selection`), `HP-B`, and `O2-M`.
+- **Neighbor division of labor**: Fixed-space prediction/control overlaps strongly with Active Inference / FEP, information geometry, and divisive normalization; SRT's distinctive formal frontier sits at **Level II/III** (how Selection and retained scaffolding rewrite accessible spaces, generative relations, and comparison criteria under payability constraints).
 
 ## 0-B. Protocol and Foundation (协议与基础)
 
@@ -388,7 +399,7 @@ $$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\
 ## I. Evolution Dynamics (演化动力学)
 
 ### Eq-Evo-01: Ghost Evolution Equation
-> **Status**: formed / model dynamics equation for an admitted realized system. It does not define primitive Selection or the metaphysical production of actuality.
+> **Status (`R4-B1` Level-I Fixed-Space Model)**: formed / model dynamics equation for an admitted realized system inside a fixed state space (`x_{t+1} = F_t(x_t; H_t)`). Together with its `-\lambda\nabla C_{L_2}[\sigma]` extension (`P1-T03` Level-I special case), it represents state/direction evolution under given constraints—**not** primitive Selection, **not** the historical Ghost intuition (`\hat{G}_\theta != Ghost != primitive Selection`), and **not** the full Level-II/III scope of recursive condition rewriting (`P1-T03`, `Core_21c P2/P3-B15`).
 
 **Formal Definition**: Within that declared realization, the trajectory of a selected model state is represented by the sum of a formal Selection role-carrier, free-energy descent, and attention modulation.
 $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
@@ -464,7 +475,7 @@ $$\text{Subject-level selection}_{cand} \Rightarrow \mathcal{M}_{meta}\!\left(\m
 
 ### Eq-Evo-03c: D-Value Forward Criterion (d 值前向判据)
 
-**动机**：关切词条（`Core_Law/SRT_L0_Metaphysics.md`）中的四判据（可延续/可协调/不外包/可再选择；2026-07-05 由三判据升为四判据）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 Core_Law 四判据的**前向补充**，不是替代。
+**动机**：`_SRT_D_VALUE_CANONICAL.md §5b` 中的秩序增益四判据（可延续/可协调/不外包/可再选择）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 `_SRT_D_VALUE_CANONICAL.md §5b` 四判据的**前向补充**，不是替代。
 
 **三层架构**：真实 d 扩张须经历三个阶段，不可跳层：
 
@@ -505,7 +516,7 @@ $$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0
 - [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的四判据事后结算。
 - [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准；当前可候选地映射为冲突场景下的事件内偏好翻转、EEG/readiness-potential 时窗、以及跨试次的选择带宽变化。
 
-* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（只在已声明 reference trajectory / mismatch functional 的模型中使用的 $\Psi_f$ 代价签名 proxy）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
+* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（只在已声明 reference trajectory / mismatch functional 的模型中使用的 $\Psi_f$ 代价签名 proxy）；`_SRT_D_VALUE_CANONICAL.md §5b`（秩序增益四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 
@@ -580,7 +591,7 @@ $$\alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(\Delta t)+\gamma S_{noise}^X(\Del
 |:--|:--|:--|:--|
 | 预测误差最小化（标准叙述） | 低~中 | Semi-open | payable / borderline |
 | 选择代价最小化（SRT重写） | 中~高 | Open↔Semi-open | payable |
-| 泛计算主义误读（恒温器=意识） | 0~低 | Closed（语法同构） | \(\Psi_f\approx0\) |
+| 泛计算主义误读（恒温器=意识） | `NOT ADMITTED`（强承载模型未准入） | Closed（语法同构） | `non-binding`（非构成性摩擦缺席） |
 
 ## III. Stability & Phase Transition (稳定性与相变)
 
@@ -726,8 +737,9 @@ $$
 
 | 变量 | 通用量纲 | 神经科学实例化 | 物理实例化 | 社会实例化 |
 |:--|:--|:--|:--|:--|
-| $\Psi_f$ | $[\text{Energy} \cdot \text{Time}]$ 或 $[\text{bit} \cdot s]$ | 代理量：皮质醇积分、HRV 倒数 | 代理量：Uhlmann 变换复杂度 | 代理量：制度维持成本/GDP |
-| $d$ | 无量纲（关切维度数） | 代理量：跨时间折扣率斜率、PCI | — | 代理量：利他行为半径 |
+| $\Psi_f$ | $[\text{Energy} \cdot \text{Time}]$ 或 $[\text{bit} \cdot s]$（可支付负荷；跨尺度不变的是可支付判据而非单位） | 代理量：皮质醇积分、HRV 倒数 | 代理量：Uhlmann 变换复杂度 | 代理量：制度维持成本/GDP |
+| $d$（规范 `Def-d-canonical`） | 效用/维持势对不可逆风险坐标的梯度范数（随声明模型效用与风险单位缩放，**非**无量纲谱维数） | 代理量：跨时间折扣率斜率、任务风险敏感度 | 仅在声明强承载模型准入后定义 | 代理量：利他/风险承担敏感度 |
+| $D_{\text{eff}}$ / $D_{\text{stake}}$ | **无量纲**（有效谱方向容量 / 赌注门控谱参与率，与规范 `d` 严格分离） | Fisher 有效维数 / 神经协方差参与率 | 信道或参数流形有效维数 | 集体景观截面有效维数（`Eq-Multi-03`） |
 | $F_{base}$ | 依语境取 $[\text{bit}]$ 或 $[\text{J}]$ | 变分自由能或 Helmholtz 自由能 | 领域基线目标 | 社会层可用复杂度/成本代理 |
 | $F_{SRT}$ | 跟随所选 $F_{base}$ 的量纲 | $F_{base} - d \cdot U_{others}$ | SRT 关切扩展目标 | 不把 bit 与 J 直接混算 |
 | $\sigma$ | 态空间中的点（$\in L_1$） | 神经发放模式向量 | 量子态密度矩阵 | 社会状态向量 |
@@ -799,25 +811,15 @@ $$
 3. **摩擦-坍塌耦合** [H]：若 \(\Psi_f\) 生理 proxy 升高时 \(\lambda_c\)（拓扑坍塌率）不升反降且长期稳定，则”摩擦-坍塌耦合”假设需修正。
    - 实验框架：高压力/疲劳条件（Ψ_f proxy升高）下追踪神经拓扑坍塌率；预测Ψ_f升高→λ_c升高（稳态拓扑复杂度下降）
 
-### Formalization Summary (形式化概述)
+### Formalization Summary (形式化概述，`R4-B1` 三层形式职责)
 
-本文档的核心形式结构围绕三个主方程展开：
+作为 SRT 唯一核心方程主锚点，本文件不再把形式体系等同于固定状态空间内的四条静态公式，而是将核心方程按三类建模职责组织（均属条件性 `P2–P4` 声明模型）：
 
-1. **Ghost Evolution Equation (Eq-Evo-01)**:
-   $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
-   含义：在一个已准入的 formed / realization model 内，状态 $\sigma$ 的更新由 formal `\hat{G}_\theta` role-carrier、自由能梯度下降 $\nabla F$ 与注意调制 $A$ 合成表示。本式是 equation-layer 的 formed / model dynamics equation，不是 primitive Selection 的第一性本体定义；$\hat{G}_\theta$ 项不从 primitive `L_0` 制造 actuality。
+1. **Level I（固定空间状态、权重与可支付演化）**：以 `Eq-Evo-01..03c`（快-慢耦合与选择内再入）、`Eq-Bridge-IG-01/02`（Fisher 局部代价）、`Eq-Bridge-D-01`（`D_stake^{thresh}` 阈值模型实例）、`Eq-DValue-Max-1`（方向容量上限）与 `Eq-Select-Thermo`（选择热力学宪法不等式及可支付窗 `Eq-Select-Thermo-C2`）、`Eq-LDP-02`（宏观大偏差作用量泛函）为代表，描述给定组织条件下的轨迹、权重与代价演化。
+2. **Level II（生成关系、协议与历史条件改写）**：以 `Def-Protocol-1..3`、`Eq-Multi-01..03`（多算子耦合景观）、`Eq-Bridge-L2-01`（路径痕迹写回）、`Eq-Bridge-Loop-01` 与 `Eq-Topo-01..03` 为代表，并跨文件对接 `Core_12b T-L2-Scaffold`（$\rho \ge 0$）、`R3-05` 信任重估（$\Delta w_{\text{trust}} / W_{\text{social}}$）与 `HCLR01`（`HEF-4` 生成元改写候选）。
+3. **Level III（生成空间、边界与比对条件重构接口）**：对应 `Core_21b P1-T03` 递归升级与 `Core_21c P2/P3-B15`（五类变化刻度、`(A, B) -> (A', B', C)` 与防平凡重参数化前沿），当前保留为显式开放形式研究接口，**不强造未经验证的封闭总方程**。
 
-2. **Conditional Reference-Trajectory Friction Proxy (Eq-Force-01)**:
-   $$\Psi_f^{(ref,M)} \propto \int \mathcal{D}_M\!\bigl(L_1(t), r_M(t)\bigr) \, dt$$
-   含义：只有在模型 $M$ 已独立声明 reference trajectory $r_M$ 与 compatible mismatch functional $\mathcal D_M$ 时，本式才给出一个累积 mismatch / friction proxy；它不是 canonical `\Psi_f` 定义，也不建立 primitive `L_0` natural direction。无该声明时 Eq-Force-01 不准入。
-
-3. **Constitutional Inequality (Eq-Select-Thermo)**:
-   $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
-   含义：宏观秩序增长率受选择功率 $P_{sel}$ 预算上限约束，摩擦 $\Psi_f$ 与噪声 $S_{noise}$ 作为耗散项。此不等式将公理 A2/A11 从定性宣言升级为可检验界限。
-
-4. **SRT Action Functional (Eq-LDP-02)**:
-   $$I_{SRT}[\rho] = \int_0^T \left( K(\rho, \dot{\rho}; \Pi) + \Psi_f(\rho; \theta) - V(\rho; \theta) \right) dt$$
-   含义：大偏差变分原理下的最可能宏观路径最小化此泛函，统一动力学代价、摩擦维护与价值势能。
+（动力学机制解释与具身算子实现原型见 `Core_Law/SRT_Reference_Dynamics.md`。）
 
 ### Mechanism Explanation (机制解释)
 
