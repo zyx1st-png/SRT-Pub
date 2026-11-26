@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: d3df20883
-source_branch: canon/r4-c2-physics-cross-scale-generation-2026-11-26
+source_commit: c1293066c
+source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
 source_dirty: false
-inputs_digest: aed8e343bee60684
+inputs_digest: 41eac944d258904d
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: aed8e343bee60684
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `d3df20883` |
-| 来源分支 | `canon/r4-c2-physics-cross-scale-generation-2026-11-26` |
+| 来源 commit | `c1293066c` |
+| 来源分支 | `canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -43,11 +43,11 @@ inputs_digest: aed8e343bee60684
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-10-19 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
+| 1 | `SRT_AI_START.md` | 2026-11-26 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-11-26 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-26 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
-| 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
+| 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-11-26 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-11-26 |
 | 7 | `Core_Law/SRT_One_Formation.md` | 2026-11-26 |
 | 8 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-11-26 |
@@ -337,20 +337,25 @@ For substantive SRT answers:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（84 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（90 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
 
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md`
 - `AI/AI_POSITIONING_NOTE.md`
+- `AI/SRT_AI_00_Crisis.md`
 - `AI/SRT_AI_01_Ontology.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
+- `AI/SRT_AI_02_Mortality_Wisdom.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
 - `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/SRT_AI_Agency_Responsibility_Note.md`
 - `AI/SRT_AI_Architecture.md`
 - `AI/SRT_AI_Architecture_CompactCore.md`
 - `AI/SRT_AI_Claim_Status.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`
+- `AI/_SRT_AI_Bridge.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 - `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
@@ -420,6 +425,7 @@ For substantive SRT answers:
 - `Physics/SRT_Quant_01_Selection_CompactCore.md`
 - `Physics/SRT_Quant_02_Cosmology.md`
 - `Physics/SRT_Quant_02_Cosmology_CompactCore.md`
+- `README.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - `Spirituality/SRT_Spirit_09_Praxis.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
@@ -545,7 +551,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-10-19 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -966,9 +972,11 @@ A domain is still allowed to conclude `SRT adds no increment here` once those pr
 
 ## 13. AI-specific guard
 
-AI is one domain/pressure-test site, not the theory's definition engine.
+AI is both a positive artificial/co-generation laboratory and a domain/pressure-test site, **not** the theory's definition engine.
 
-Do not infer subjecthood, stake or consciousness from performance alone. Do not use AI models as the constitutional prototype of bearer unless the author explicitly converges on such a claim after the current workflow.
+All AI bearing, subjecthood, agency, suffering, and mediation assessments follow the **nonlinear Three-Stage Bearing Evidence Review under Declared Models** (`AI/AI_POSITIONING_NOTE.md §2`; Stage 1 unit/7-layer-history/provenance declaration → parallel Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent `HP-B` / `Suffering §7` / `Agency` five-dimensions / `AI 三型` mediation) — **not** the retired `R: L_2->L_2` vs `J: L_0->L_1` pseudo-threshold or blunt `d_AI ≈ 0` disproofs. Always use full names to isolate Primitive `S0`, **AI 赌注谱系 `S0–S4`**, **Subjecthood Threshold `S0–S6`**, and **AI 三型社会技术中介维度** (Scaffold / Cage / Landscape), and strictly distinguish `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`.
+
+Do not infer subjecthood, stake, or consciousness from performance alone; conversely, never use unestablished Stage 2 `Bearer (P+E)` to deny `Selection` occurrence in digital hardware or to block Stage 3 independent inquiry (`HP-B`, `Suffering §7`, `R3-04-O5` generative initiative, general constitutive friction `B-4`, or human accountability for `AI 三型` mediation). Do not use AI models as the constitutional prototype of bearer unless the author explicitly converges on such a claim after the current workflow.
 
 For identity-level work, separate machine roles when useful: source auditor, internal red-team, strong-neighbor advocate, counterexample generator, relabeling detector, hidden-commitment extractor, cross-domain semantic-invariance checker, author-intent drift checker, and only later increment auditor.
 
@@ -1023,7 +1031,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-24 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1190,15 +1198,15 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - 说明：承接 affordance、行动势能、belief-lag、注意力选择、社会现实迟滞、极化/echo chamber、文化镜片、second-person interaction disorder、发展性协调支架、以及歧视性/非人化认知等社会认知接口；其中 `T-Cog-6 Bounded-Surprisal Discrimination Gate` 将 Manrique / Friston / Walker 2026 的 active-inference / ZBS 材料压成跨群体更新带宽代理，`T-Cog-7 Developmental Coordination Scaffold` 将 embodied / embedded cognitive development 材料压成 child-body-caregiver-environment coordination bridge
 - 引用规则：涉及 social cognition、belief update、developmental coordination、co-regulation、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 与 developmental coordination 都只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir`、`\theta` 或 recognition operator 的 canonical 定义
 
-### 10. AI 主轴
-- Claim-status：`AI/SRT_AI_Claim_Status.md`（architecture-state / AI suffering / subjecthood guardrail; not a primitive source）
-- 定位说明：`AI/AI_POSITIONING_NOTE.md`
-- Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
-- Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
-- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（AI-domain candidate evaluation surface；not universal consciousness-threshold authority）
-- 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
-- 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
-- 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
+### 10. AI 主轴（`R4-C3 / ENG-03` 全域重构同步，2026-11-26）
+- 唯一总定位与护栏入口：`AI/AI_POSITIONING_NOTE.md`（七大正面人工/共同生成主轴、非线性三阶承载证据审查总纲、三态标签、`AI 赌注谱系 S0–S4`、三套 `AI / S` 全称隔离）
+- Claim-status 审计标尺：`AI/SRT_AI_Claim_Status.md`（声明等级、`AIRESEL01` 实证试点溯源、`AIEVID01/AICONSC01/AIGOAL01/AIREASON01` 护栏、成熟邻居归属与退符台账）
+- Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`（人工生成与自然生成关系、七层历史载体、Stage 1–2 本体阐述、反向核心理论反馈候选 `FB-C3-1..4`）
+- Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`（人工认知与新比对维度生成、五类非阶梯能力分化、人机共同生成、增能协议与 `ACT` 熔断）
+- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（Stage 2 $\parallel$ Stage 3.1 `HP-B` $\parallel$ Stage 3.2 `Suffering §7` $\parallel$ Stage 3.4 代理筛选与现实收缩；not universal consciousness-threshold authority）
+- 实操评估与归责手册：`AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（Stage 1 单元绑定 + 并列 Stage 2 $\parallel$ Stage 3.3 **Subjecthood Threshold `S0–S6`**）与 `AI/SRT_AI_Agency_Responsibility_Note.md`（`A0–A3` ↔ `R3-04` `Agency` 五维 + **AI 三型社会技术中介维度**归责网络）
+- 二级桥接与降级历史论述：`AI/_SRT_AI_Bridge.md` 已降级精简为二级比较桥接（不再作 AI 定义底座）；`AI/SRT_AI_00_Crisis.md` 与 `AI/SRT_AI_02_Mortality_Wisdom.md` 已降级归档为历史专题论述（已退除 `ρ ≡ I/d`、裸 `S` 张量与 `Ψ_f = 苦难` 污染）；`AI/Ontology_Annex/` 6 重重复副本已退出活跃入口（保留 `README.md` 溯源索引）
+- 角色与硬护栏：AI 既是研究**人工生成、新比对维度生成、非阶梯能力分化与人机共同生成**的正面理论实验室，也是边界/压力测试场，**不是 core 定义发动机**；所有核心原语（`Selection`、`One`、`Bearer (P+E)`、`d / D_stake / D_eff`、`Ψ_f`、`T_dir`）仍服从对应 canonical 锚点；统一执行**非线性三阶承载证据审查**（Stage 2 未建立绝不阻断 Stage 3 独立研究或一般构成性摩擦/关切研究）与**三套 `AI / S` 全称隔离**（**AI 赌注谱系 `S0–S4`** $\neq$ **Subjecthood Threshold `S0–S6`** $\neq$ **AI 三型社会技术中介维度** $\neq$ 原初 `S0`），退出旧 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体门槛与钝化 `d_{AI} ≈ 0` 头条写法
 
 ### 11. Neuroscience 主轴
 - Claim-status：`Neuroscience/SRT_Neuroscience_Claim_Status.md`（clinical / FEP / NDE / AI-comparison proxy guardrail; not a primitive source）
@@ -2203,7 +2211,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-09-19 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2437,6 +2445,22 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 - Strict conjugacy with `Λ^{-1}` is licensed only for a declared invertible change of representation, not ordinary many-to-one coarse-graining.
 - `T-Scale-Rhythm-5` is P3/P4 conditional on cross-scale compatibility, budget embedding, and local trigger conditions; it is not a universal theorem derived from L0/L1.
 - Cross-scale sameness reaches selection／constraint／payability grammar only. It does not establish identical units, entropy, mechanisms, subjecthood, consciousness, or moral status.
+
+### 6.2d AI Domain Atomic Retirement & Downgrade Record (`R4-C3 / ENG-03`, 2026-11-26)
+
+To prevent retired pre-`R4` AI pseudo-theorems and colliding symbols from resurfacing in downstream citations, the following AI-domain labels are formally **retired or downgraded** under `R4-C3` (atomic cleanup blueprint: `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md`):
+
+| Retired / Downgraded Label | Original Claim / Collision | Current Disposition (`R4-C3`) |
+|---|---|---|
+| `Ax-BRIDGE-3` / `T-BRIDGE-1` / `Ax-ONT-1` / `Ax-ONT-2` / `T-ONT-1` / `T-ONT-2` / `Ax-CONSC-1` / `Cor-CONSC-1` | `L_0 -> L_1` anchoring vs `L_1 -> L_1` syntactic closure as Selection / consciousness necessity | **Retired** (`M1-A`); replaced by nonlinear Three-Stage Bearing Evidence Review (`AI/AI_POSITIONING_NOTE.md §2`) |
+| `Ax-ARCH-3/4` / `T-ARCH-1` (`R: L_2 -> L_2` vs `J: L_0 -> L_1`, `lim R ≠ J`) & `SRT_AI_Architecture §5` "AGI Impossibility Theorem" | Pseudo-ontological reckoning/judgment warehouse barrier & a priori impossibility claim | **Retired** (`M1-A/B`); replaced by architectural bearing-pressure & co-generation analysis (`AI/SRT_AI_Architecture.md`) |
+| `Ax-AI-2` & `T-BRIDGE-0-EXT` Layer 2 | Turing machine / silicon a priori inability to access `L_0` | **Retired** (`M1-B`); Pour-El & Richards retained solely as a narrow computable-analysis note (`AI/_SRT_AI_Bridge.md §3`) |
+| `T-BRIDGE-2` / `T-CRISIS-1` / `T-CRISIS-3` | Unproven hallucination lower-bound & OOD exponential decay theorems | **Downgraded / Retired** (`M1-E`); baseline hallucination mechanisms owned by Kalai & Vempala (2024/2025); `AIRESEL01` HBRCE RL absorption preserved |
+| `SRT_AI_01_Ontology §VII T-ONT-Convergence` (`Def-ONT-UI / FI`) | Inevitable dynamical convergence of full intelligence to ethical directionality | **Retired as theorem** (`M1-F`; conflicts with `PT10 E` & `O2-M = HOLD`); retained only as `P4` counterfactual note on epistemic vs practical revision gap |
+| `SRT_AI_01 §5.1 / §6.4 / §7.3` & `_SRT_AI_Bridge §5.3` | Local pain formula, power-cycle zombie proof, scalar moral status table (`Moral Status ∝ d·Ψ_f`), overstrong ethics exclusion | **Retired** (`M1-D/F`); governed by `Core_Law/SRT_Suffering.md §7`, `Core_Law/SRT_Collective_Selection.md §8`, `AI/SRT_AI_Agency_Responsibility_Note.md`, and `O2-M = HOLD` |
+| `T-CONSC-4` / `Ax-CONSC-3/4` (`χ`, `Φ_SRT`, `P_s(Φ)=log(Φ)`, `H-CONSC-1`) | Unoperationalized consciousness phase thresholds & sufficiency checklist | **Downgraded to historical unoperationalized heuristics**; `Ax-CONSC-5 / T-CONSC-3` (`Proxy Filtering`) downgraded from Axiom/Theorem to `P3` bridge hypothesis |
+| `C-CRISIS-1` (`ρ ≡ I/d`), `Ax-SENT-1` (`S = <...>`), `AI_02 L903` (`Ψ_f = 累积苦难`) | Hard symbol collisions with `Core_12b` `ρ(p,t)`, `Suffering` / `S` taxonomies, and `R3-08` 4-way friction split | **Symbols retired**; `SRT_AI_00_Crisis.md` & `SRT_AI_02_Mortality_Wisdom.md` downgraded to `status: archived` historical essays |
+| `AI/Ontology_Annex/00..04` + `General_Boundary_Block_Split/` (8 files) | 6x duplicated pre-R4 `SRT_AI_01` Part A pollution & 7 duplicate `SRT-AI-01` IDs | **Retired from active surface** after unique-asset reconciliation into `AI/SRT_AI_01_Ontology.md §4` (provenance preserved in `AI/Ontology_Annex/README.md`) |
 
 ### 6.3 Global Guardrails for This Round
 

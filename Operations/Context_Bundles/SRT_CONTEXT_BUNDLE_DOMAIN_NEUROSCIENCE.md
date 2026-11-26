@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: d3df20883
-source_branch: canon/r4-c2-physics-cross-scale-generation-2026-11-26
+source_commit: c1293066c
+source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
 source_dirty: false
-inputs_digest: aed8e343bee60684
+inputs_digest: 41eac944d258904d
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: aed8e343bee60684
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `d3df20883` |
-| 来源分支 | `canon/r4-c2-physics-cross-scale-generation-2026-11-26` |
+| 来源 commit | `c1293066c` |
+| 来源分支 | `canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -332,20 +332,25 @@ For substantive SRT answers:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（94 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（100 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
 
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SPINE_MINIMAL_KERNEL_L0L1L2_REFLEXIVE_FACETS_2026-09-24.md`
 - `AI/AI_POSITIONING_NOTE.md`
+- `AI/SRT_AI_00_Crisis.md`
 - `AI/SRT_AI_01_Ontology.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
+- `AI/SRT_AI_02_Mortality_Wisdom.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
 - `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/SRT_AI_Agency_Responsibility_Note.md`
 - `AI/SRT_AI_Architecture.md`
 - `AI/SRT_AI_Architecture_CompactCore.md`
 - `AI/SRT_AI_Claim_Status.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`
+- `AI/_SRT_AI_Bridge.md`
 - `CANONICAL_REGISTRY.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 - `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
@@ -420,6 +425,7 @@ For substantive SRT answers:
 - `Physics/SRT_Quant_01_Selection_CompactCore.md`
 - `Physics/SRT_Quant_02_Cosmology.md`
 - `Physics/SRT_Quant_02_Cosmology_CompactCore.md`
+- `README.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - `Spirituality/SRT_Spirit_09_Praxis.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
