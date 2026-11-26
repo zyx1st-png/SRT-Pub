@@ -2,7 +2,9 @@
 id: SRT-CROSS-DOMAIN-MATRIX
 type: governance
 tags: [Canonical, CrossDomain, UsageMatrix, d-value, Psi_f, T_dir, epsilon]
-status: active_v0
+status: active
+version: v1
+updated: 2026-11-26
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -28,12 +30,12 @@ Historical labels and filenames do not override this table. If an older file sti
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | `d` = scalar summary of stake-coupled concern / irreversible-risk sensitivity | `D_eff`, `d_stakes`, `d_mobile` when explicitly marked | `D_eff ≡ d` without stake gate |
+| Core | `d` = scalar summary of stake-coupled concern / irreversible-risk sensitivity (`Def-d-canonical`; conceptual interface with generalized concern `PT06 C` is `P1-05` `OPEN`) | `D_eff` (capacity), `D_stake` (general spectral participation ratio in `_SRT_D_VALUE_CANONICAL.md §2b` with explicit zero-effective-spectrum branch `0`, true bound `1 ≤ D_stake ≤ N_active ≤ rank(M)`, and `Core_22 Eq-Bridge-D-01` `D_stake^{thresh}` as one concrete model instance), `d_mobile` when explicitly marked | `D_eff ≡ d`; treating `rank_eff` (`d_max`) as a universal mathematical upper bound on gradient norm `d` without dimensional calibration; falsified `d_canonical ≡ d_stakes`, `D_eff ≥ d_stakes`, or `Δd_free = D_eff - d_stakes ≥ 0`; conflating zero-effective-spectrum branch with `NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE` |
 | Physics | mathematical / capacity-like projection only | holographic or gravitational `d` as P3 bridge | cosmic `d` implies cosmic consciousness |
 | Neuroscience | biological stake and concern proxy, tied to subject closure | `d_bio`, task breadth, temporal horizon, TPJ / behavioral proxies | `Φ·d` threshold as proven phase law |
 | Philosophy / Political | concern range, reselection capacity, authorization tendency | `d_tendency`, `d_moral`, political access proxy | direct jump from high `d` to legitimacy |
 | Spirituality | direction of care expansion under payability constraints | gradual `d` expansion, subjectively reported but externally checked | `d↑` from experience report alone |
-| AI | use S0-S4 stake-bearing spectrum; inference-only / non-history-bearing systems normally read as `d \approx 0` | `D_eff` / unstaked capacity; S2 pipeline feedback; S3/S4 candidate stake only when explicitly marked | performance, self-report, persistence, or training loss directly implies `d>0` |
+| AI | use **AI 赌注谱系 `S0–S4`** (strictly isolated from primitive `S0` and Subjecthood `S0–S6`) + **`ENG-03 §4.1` Three-Stage Bearing Evidence Review** (Stage 1 unit/state/provenance declaration → Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent domain-specific route; unestablished Stage 2 never blocks Stage 3); for non-bearing deployments report exact status (`NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE`) rather than asserting `d ≈ 0` as a proven ontic zero | `D_eff` / unstaked capacity (no strong-bearing admission required); `S2` pipeline feedback (does not establish deployed-model stake); `S3/S4` candidate stake only when explicitly marked and evidenced | performance, self-report, persistence, or training loss directly implies `d>0`, `One`, `Stable ISP`, or `Bearer (P+E)` |
 
 ### 1.1 Explanatory-coordinate guard
 
@@ -50,18 +52,18 @@ local proxy explains a phenomenon != local proxy exhausts d's ontological role
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | information-theoretic payability burden for anchoring / maintaining reality | geometry or cost language with scope marked | one formula proves all dynamics |
+| Core | information-theoretic payability burden for stabilizing/maintaining a selection-cut against opportunity-cost pressure (`T3-02 D / PT09`), pairing `A1` pressure-side 4-way split with supply/payability windows and preserving `R3-08` 4-way friction distinction under `A-9` single friction family | geometry or cost language with scope marked (no new canonical `Ψ_f^{...}` sub-symbols) | one formula proves all dynamics; collapsing pressure side and supply side into one scalar |
 | Physics | weak gravity-friction compatibility candidate | weak-field gradient alignment; thermodynamic analogies | GR tensor reconstruction or exact constants explained |
 | Neuroscience | local burden / payability condition for neural anchoring | metabolic, prediction-error, stress proxies | prediction error is literally `Ψ_f` in all contexts |
 | Philosophy / Political | maintenance / coordination friction | institutional maintenance cost, asymmetry burden | suffering, injustice, or conflict directly equals `Ψ_f` |
 | Spirituality | paid burden of real practice / return | felt vs actual burden; practice capacity | lower felt friction means real liberation |
-| AI | usually non-binding to inference-only systems; training / memory / embodied deployments require architecture-state marking | compute cost as external proxy; consequence-return analysis for S2-S4 | compute cost alone gives stake |
+| AI | for inference-only deployments, usually `non-binding` to a declared `Bearer (P+E)` (**not** constitutive friction absent or global `Ψ_f = 0`, `ENG-03 M1-D`); training / memory / embodied deployments require architecture-state marking under **AI 赌注谱系 `S2–S4`** | compute cost as external proxy; consequence-return analysis for **AI 赌注谱系 `S2–S4`** | compute cost alone gives stake; reading `non-binding` as proof that constitutive friction is absent |
 
 ## 3. `T_dir`
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal | internal access / reorientation proxy after direction admission | intrinsic Selection direction; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
+| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal (`广义关切方向 != T_dir`) | internal access / reorientation proxy after direction admission | intrinsic Selection direction; equating generalized concern direction with `T_dir`; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
 | Physics | generally not a physics variable; physical directionality does not automatically supply the declared direction | observer-position readability only if direction and model are independently typed | physical directionality equals value direction or automatically admits `T_dir` |
 | Neuroscience | model-scoped access / reorientation relative to an independently typed direction | reportability, action revision or integration may proxy the functional under a declared model | confidence, valence, reward or reportability = `T_dir`; proxy supplies its own direction |
 | Philosophy / Political | readability of declared relational / normative criteria | deliberative correction or public-reason proxy after criterion admission | `T_dir` validates the criterion; order/readability directly proves political legitimacy |

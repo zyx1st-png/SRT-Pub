@@ -1,802 +1,201 @@
 ---
 id: SRT-D-VALUE-CANONICAL
 type: definition
-tags: [d-value, Canonical, Cross-Domain, Definition]
-status: axiomatic_hybrid_v1
+tags: [d-value, Value, Concern, D_stake, D_eff, Canonical, Cross-Domain, Definition]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-000, SRT-CORE-BRIDGE, SRT-CORE-21]
+canonical: true
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-21]
 ---
 
-# SRT d 值规范定义文档（Canonical Definition of d-value）
+# SRT 价值、关切与 `d` 值规范定义文档（Canonical Definition of Value, Concern & d-value）
 
-> **目的**：终止 d-value 在不同域的定义分裂，建立第一性定义 + 各域投影的统一架构。
-> 所有引用 d-value 的文档应以本文件为规范锚点。
-
-> **Canonical status note（2026-04-23）**：本文件同时承担两种功能：`Def-d-canonical` 是 core-facing anchor；bare `d` 标量默认、`d-vector` / `d-gate` 分写规则与跨域引用顺序是 governance-canonical usage controls。`D_eff`、Fisher 读数与其他域内量表是 operational proxy，只有满足 stake-coupling 与后果回流条件时才可近似 canonical `d`。
-> **Selection-totality / Wave-D2 scope guard（2026-09-15）**：本文件拥有 d-value，不拥有 direction source。在已声明模型中，`d` 关系可以约束 stake-coupled concern、execution、maintenance 或 reorientation，但 `d` 不创造准入 `T_dir` 所需的 independently typed direction。当前没有 universal `d -> T_dir` 必要或充分关系；script / habit / `L_2` automation 也不因本文件而取消 Selection occurrence。本文件中较早的方向、曲率与容量公式用语必须按当前 symbol / owner typing 读为 declared model / realization，不得反向建立 primitive authority。
-> **Consciousness / subject scope guard（2026-09-18）**：本文件只拥有 stake-coupled concern / risk-sensitivity 意义上的 `d`。`d` 可作为已声明 downstream consciousness / subjecthood evaluation model 的一项候选证据维度，但本文件不拥有 consciousness、subject-position、Bearer、phenomenality 或 moral-standing 准入权。
+> **角色（`Freeze A` canonical owner）**：本文件统筹 SRT 形成态中**价值（Value）、广义关切（Concern）、现行规范 `d`（stake-coupled irreversible-risk sensitivity）、赌注谱参与率 `D_stake` 与几何容量 proxy `D_eff`** 的层级分工与边界，终止跨域定义分裂。
+>
+> **R4-A 实质重构与真减法（2026-11-26）**：依据 `R3-06`（`#1151`）、`R3` 总收口（`#1154`，含 `PT05 C`、`PT06 C`、`P1-05`）与 `ENG-03`（`#1157`）：
+> 1. **正式退出已数学证伪的旧公式**：废止 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 以及 `Def-d-free: Δd_free = D_eff - d_stakes ≥ 0`；
+> 2. **严格分离七项职责**：价值 / 广义关切 / 广义关切方向 / 现行 `d` / `D_stake`（含零分母分支与真实上界 `1 ≤ D_stake ≤ N_active ≤ rank(M)`）/ `D_eff` / 构成深度（自然语言保留，暂缓 `q` 立符、维持 `07-23/24` 撞车记号禁运）；
+> 3. **严守机会成本来源边界**：价值与关切结构在形成态生成与比对关系中展开，**绝不反向定义原初 `Selection`**；`d` 不拥有 direction source（`T_dir`）、consciousness、subject-position、Bearer、phenomenality 或 moral-standing 准入权。
 
 ```text
-d > 0 -/> subject-position
-d > 0 -/> consciousness
-d = 0 -/> non-subject
-d = 1 -/> subject
-d -/> phenomenality
-d -/> Bearer
-d -/> moral standing
+d > 0 -/> subject-position / consciousness / phenomenality / Bearer / moral standing
+d = 0 or NOT ADMITTED -/> non-subject / non-One / no Selection
+d != D_stake != D_eff != T_dir
 ```
 
 ---
 
-## §0 为什么需要本文件
+## §1 规范定义层级与七项职责严格分工（`R3-06` / `R4-A`）
 
-SRT 中的 d-value（stake-coupled 关切维度 / 风险敏感度）在不同子系统中出现了**三套表面不同的定义**：
+SRT 形成态中围绕“价值与关切”的七项概念各司其职，严禁混写或互相吞并：
 
-| 来源文档 | 表述 | 形式 |
-|---------|------|------|
-| `_SRT_Core_Bridge.md §2.3` | 算子关切范围（三维度合成） | `d = αA + β log V + γτ` |
-| `AI/_SRT_AI_Bridge.md Ax-BRIDGE-4` | 生存风险梯度 | `d ≡ ‖∂U/∂S‖` |
-| `Spirituality/_SRT_Spirit_Axioms.md H-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
-| `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.5` lineage） | 有效维度 proxy（特征值公式） | `D_eff(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
+| 序号与对象 | 规范层级与精确职责 | 与相邻概念的分界与禁止捷径 |
+|---|---|---|
+| **1. 价值（Value，`PT05 C` + `R3-06`）** | 覆盖五项完整职责：① **客观基础**（不同生成关系在生成机会成本上的客观差异，不以已被现有组织感知或关切为前提）；② **位置抽取**（有限位置的差异感知与比对）；③ **组织化**（关切、认知、历史与脚手架）；④ **递归性**（改变后续比对维度与机会生成条件）；⑤ **诊断接口**（特定位置上的关切加权不可替代性、现实可承接性与后果变化）。涵盖**发现性 / 生成性 / 递归性**三类机会及**想象态 / 具备现实生成条件态 / 已实现态**三态分离。 | **诊断接口不得替代一般价值定义**（未进入现有组织感知的新关系/具备现实条件的机会仍具生成价值研究意义）。严格分离 **生成价值 $\neq$ 秩序健康性 $\neq$ 伦理正当性**，并独立保留组织持续性（`R3-02 / R3-06`）；原初层是否含原初价值性质保持 `OPEN`（`R3-06-O1`）。 |
+| **2. 广义关切（Concern，`PT06 C` + `R3-06`）** | 形成态组织对**生成机会成本的敏感性**，是价值关系在特定位置内在生成过程中的实际组织与展开（涵盖维持止损与好奇探索，先于显性对象参与组织前背景比对范围）；拆为**范围 / 深度 / 强度 / 方向**四个分析维度（不提前固定几何结构为标量或向量，不急立四个新符）。 | 跨尺度广义概念，绝不因现行 `d` 数学定义较窄而收缩为单纯生存风险敏感度；不吞并构成深度、承载暴露 `E` 或 `T_dir`；**与现行 `d` 构成待验证概念接口（`P1-05`）**，不得静默等同。 |
+| **3. 广义关切方向** | 广义关切四维之一：正在组织、打开或抑制怎样的秩序发展可能性与前背景取向。 | 严分于 `_SRT_T_DIR_CANONICAL.md` 中的操作化回读代理 `T_dir`（`广义关切方向 ≠ T_dir`）；范围扩大或强度升高不自动等于高 `T_dir` 或方向正当。 |
+| **4. 现行 `d`（`Def-d-canonical`）** | **唯一 core-facing 规范 `d` 锚点**：在已声明的 `Bearer (P+E)` / 不可逆风险模型中，效用或维持势对不可逆风险状态的梯度范数标量摘要 $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$。 | 默认标量摘要（若作向量展开须标 `d-vector`，作门控判读须标 `d-gate`）；是强承载模型下的**风险敏感强度**，**不等同于**无量纲谱维数 `D_stake` 或 `D_eff`。 |
+| **5. `D_stake`（赌注耦合谱参与率）** | 本文件 `§2b` 持有**一般谱参与率定义** $D_{\text{stake}} = (\sum_i \lambda_i w_i)^2 / \sum_i (\lambda_i w_i)^2$（$w_i \in [0,1]$，规范三因子形式 $w_i = R_i A_i C_i$）；`Core_22 Eq-Bridge-D-01` 的阈值门控 $g_i$ 属其下一种具体声明模型实例（不默认两类权重数学等价）。 | **已修正（`R3-06 D1`）**：`D_stake` 对权重均匀缩放不变，故 **`D_stake ≠ d`（梯度范数）**；活跃时真界为 $1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M)$，**不再主张 $D_{\text{stake}} \le D_{\text{eff}}$**；严格区分**零有效谱乘积分支**、**`NOT ESTABLISHED`**、**`NOT ADMITTED`** 与 **`NOT APPLICABLE`**。 |
+| **6. `D_eff`（几何/信息论容量 proxy）** | $D_{\text{eff}}(M) = (\sum \lambda_i)^2 / \sum \lambda_i^2$（含 $D_{\text{eff}}(I_F(\theta))$），刻画算子或参数流形的可分辨方向容量。 | **纯操作化容量 proxy**，既不等于 `d`，也不普遍构成 `D_stake` 的数学上界；禁止用 `D_eff` 跨域排名主体性或意识。 |
+| **7. 构成深度（Constitutive Depth，`Q1`）** | 自然语言保留的四项构成深浅剖面：① 事件级跃迁深度；② 铭刻与召回分离；③ `N4` 主动退位成本；④ 跨关系构成依赖深度。 | **暂缓立符 `q`**，`07-23/24` 撞车记号禁运继续生效；是否需要独立形式变量留待 `R5` 实证检验（`R3-06-O5`）。 |
 
-**这些不是矛盾，而是同一概念在不同层级的投影与近似入口**。本文件固定使用规范与可比条件，不声称所有表述已经无条件等价。
+### §1.1 `d` 写法分流与强承载 proxy 准入五条件
 
----
-
-## §1 规范定义层级（Canonical Priority）——硬化版（2026-04-17）
-
-> **单一 core-facing 定义声明**：
-> d-value 当前只有一个 core-facing 规范锚点：**`Def-d-canonical`**（原 Def-d-2）：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$——主体效用对不可逆风险状态的梯度范数。全仓默认采用标量摘要，是治理性稳定用法，不把所有 proxy 升格为 theory-canonical 定义。
->
-> **`Def-d-1`（$D_{eff}$ 谱公式）降格说明**：不再是”第二规范定义”或”形式主表达”，而是规范 d 的**几何容量 proxy**。具体地位：
-> - **容量上界**：$d_{canonical} \leq D_{eff}(M)$（$D_{eff}$ 是算子能追踪的最大方向数；$d_{canonical}$ 是其中真正赌注化的部分）
-> - **谱分解 proxy**：$D_{eff}$ 的每个 Fisher 本征方向 $v_i$ 可独立问”是否与真实赌注耦合”；$d_{canonical}$ = 赌注化子集的有效维数（见 §2b `Def-d-stakes`）
-> - **未赌注化带宽**：$\Delta d_{free} = D_{eff} - d_{stakes}$，度量辨别能力中未与真实不可逆风险耦合的剩余容量
->
-> 旧表述”**一个第一性语义锚点 + 一个形式主表达**的双层 canonical 架构”被废止——这是类型错误：proxy 不是主表达的同级替代，不应共享 canonical 地位。
->
-> **使用原则（修订后）**：
-> - 讨论**本体论意义 / 风险关切**时：引用 `Def-d-canonical`（`‖∂U/∂S‖`）；downstream consciousness / subjecthood model 若引用 `d`，必须另行声明模型与证据负担，不得把 `d` 当作准入门槛
-> - 讨论**几何容量上界 / 信息论可计算近似**时：引用 `Def-D_eff`（谱公式，须注明为 proxy，不得写 `≡`）
-> - 讨论**赌注化活跃维数**时：引用 `Def-d-stakes`（见 §2b）
-> - 其他近似式（`Def-d-bio` 等）均为操作化投影，不替代 canonical 地位。
-
-### §1.1 v1 Canonical Form Note（治理性钉住，2026-04-22）
-
-> **层级**：governance / canonical usage rule；不新增 core theorem。
-
-默认写作中，bare `d` 采用**标量摘要形式**：它把 stake-coupled concern / irreversible-risk sensitivity 压缩成一个可跨文件回链的摘要量。这个默认不把 `d` 本体化为“只能是标量”，而是给全仓一个最小不漂移的读法。
-
-因此三种写法必须分开：
-
-| 写法 | 层级 | 用途 | 禁止 |
-|---|---|---|---|
-| `d` | canonical scalar summary | 默认跨域引用；关切/赌注强度的摘要 | 不得把局部 proxy 写成新定义 |
-| `d-vector` | operational projection | 展开条件分布、方向分量或域内特征谱 | 不得与 bare `d` 混写成同一个量 |
-| `d-gate` | governance / judgment tool | 判读某方向是否进入 stake-coupled spectrum | 不得当作 d 的数值定义 |
-
-若域内需要向量读或门读，必须显式标注为 `d-vector` 或 `d-gate`，并说明它如何回到 `Def-d-canonical`。未标注时，一律按标量摘要读。
-
-### §1.2 d 的层级结构与 proxy 准入条件（core-clarifying）
-
-> **层级**：theory-clarifying / governance-canonical usage。此表增强 d 的内部结构，不新增第二个 canonical 定义。
-
-| 项 | 精确角色 | 层级 | 可允许用途 | 禁止捷径 |
-|---|---|---|---|---|
-| `d` / `Def-d-canonical` | stake-coupled concern 的标量摘要；主体效用对不可逆风险状态的梯度范数 | governance-canonical default; core-facing definition | 默认跨域引用；讨论主体关切与风险敏感性；在已声明 downstream 模型中作为候选证据维度 | 不得把局部 proxy、向量展开或门函数改写成 bare `d`；不得用 `d` 准入 consciousness 或 subjecthood |
-| `d_stakes` | 在可分辨方向中真正回流到主体赌注的子集 | theory-clarifying bridge between proxy and canonical | 说明 `D_eff` 中哪些方向进入真实关切；分析假赌注 / 错绑赌注 | 不得把所有可分辨方向都计入 stake |
-| `D_eff` | 几何 / 谱容量 proxy；算子可分辨方向数的上界式读数 | operational projection / capacity proxy | 比较同一参数化下的容量、冗余、方向数；作为 `d` 的潜在上界 | 不得作为 `d` 的定义；不得跨域直接排名主体性 |
-| `D_eff(I_F)` | Fisher-information proxy；参数流形中可可靠分辨的方向数 | information-theoretic proxy | 信息瓶颈、Cramér-Rao 式下界、可计算容量近似 | 不得把可分辨性等同于关切或负担承担 |
-| `d-vector` / `d-gate` | 方向展开或判读工具 | operational / governance | 标注条件分布、方向分量、是否进入 stake-coupled spectrum | 不得与 scalar `d` 混写为同一量 |
-
-proxy 可以近似 canonical `d`，只在以下条件同时足够强时成立：
-
-1. 被 proxy 计数的方向确实承载不可逆风险，而非噪声、脚本或无后果辨别。
-2. 主体效用梯度对准这些方向，未被错误代理变量替代。
-3. 后果回流到主体闭包、身份连续性与后续选择能力，而非被外部系统或 L₂ 结构吸收。
-4. 几何 / Fisher 参数化没有把冗余坐标、模型自由度或测量便利误计为真实方向。
-5. 比较在同一域、同一尺度或已声明归一化规则内进行。
-
-任一条件不满足时，应写为 `capacity proxy`, `Fisher proxy`, `d-vector`, 或 `d-gate`，不得写成 canonical `d`。
-
-## §2 规范定义（第一性原理，全域适用）
-
-### Def-D_eff: 几何容量 Proxy（Geometric Capacity Proxy）
-**【降格 2026-04-17：不再是 canonical 定义，见 §1】**
-
-$$D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2} \;\geq\; d_{canonical}$$
-
-**语义**：$\hat{G}_\theta$ 在 $L_0$ 上操作时实际激活的**有效维度数**（参与率指数，Participation Ratio）。
-
-**性质**：
-- $d = 1$：算子完全单一，只关注一个维度
-- $d = N$：算子在 $N$ 个维度上均匀分布
-- $1 \leq d \leq \text{rank}(\hat{G})$
-
-**来源**：`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `SRT_Core_21_Formal_Axioms.md §2.1.5` lineage），经典参与率指数（PR index）的算子版本。
-
-### Def-d-1a: Fisher 信道有效维度（信息论容量 proxy）
-
-**新增（2026-03-11；2026-04-22 降承诺）**：Def-d-1 的信息论容量解释。
-
-$$D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} \;\geq\; d_{canonical}$$
-
-其中 $I_F(\theta) = E\!\left[(\partial \log p_\theta / \partial \theta)^2\right]$ 是算子选择流形上的 **Fisher 信息矩阵**。
-
-**层级说明（2026-04-22 修订）**：这是信息论容量 proxy / operational projection，不是 `Def-d-canonical` 的同级替代表达。只有当 Fisher 方向全部与真实不可逆赌注耦合、且风险梯度与特征结构对齐时，才允许把它作为 `d` 的近似读数。
-
-**信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度；它给出 d 的可计算容量上界，而不是自动给出 stake-coupled `d` 本身。
-
-**层级关系链（修订，2026-04-17）**：
-
-$$\underbrace{D_{eff}(\hat{G})}_{\text{Def-D\_eff（容量上界 proxy）}} \;\geq\; \underbrace{d_{stakes}(\theta)}_{\text{Def-d-stakes（赌注化子集，见 §2b）}} \;\equiv\; \underbrace{\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|}_{\text{Def-d-canonical（规范定义）}}$$
-
-等号成立条件：所有 Fisher 本征方向均完全赌注化（$w_i = 1 \;\forall i$）。一般情况下严格不等式成立。
-
-**不确定性关系候选（Eq-IT-B'）**：
-
-$$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$$
-
-选择范围（d）与选择代价（$\Psi_f$）之间存在基本权衡。此关系由 Fisher 信息矩阵的 Cramér-Rao 下界推导，常数 $\mathcal{K}$ 的精确值待理论确定（当前 Status = Gap，见 `_SRT_EQ_HYP_MAP.md Eq-IT-B'`）。
-
-**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15.2`（Eq-IT-B 的完整推导）；`Core_Law/SRT_Reference_Axioms.md`（A15 幽灵算子禀赋统一性的 Fisher 维度含义）。
+- `d`（默认标量摘要）/ `d-vector`（方向分量展开）/ `d-gate`（赌注准入判读工具）严禁混写。
+- **`D_eff` 一般容量用法不受强承载门阻断**：`D_eff` 作为一般几何/信息论容量 proxy，用于刻画算子或参数流形的可分辨方向容量时，**不需要**先通过 `Bearer (P+E)` 强承载准入。
+- **强承载推断五项准入条件**：只有当研究试图将几何、Fisher、行为或神经代理（`D_eff`、`D_stake`、`d_bio`）用于**强承载不可逆风险敏感度（规范 `d`）的局部推断参考**时，才须同时声明并满足以下五条件：① 计数方向确实承载不可逆风险；② 效用/维持梯度对准真实风险而非伪代理；③ 后果回流至同一承载闭包与后续选择能力而非被外部/L₂吸收；④ 参数化未把冗余自由度误计为独立方向；⑤ 比较限于同域同尺度或已声明归一化规则内。任一条件不满足时，可继续保留其一般容量/局部 proxy 读数，但对强承载 `d` 推断须显式标注 `NOT ADMITTED / NOT APPLICABLE`，严禁写成规范 `d`。
 
 ---
 
-### Def-d-canonical: 风险梯度规范定义 ⭐ CANONICAL（原 Def-d-2，唯一规范定义）
+## §2 规范定义与价值—关切核心结构
+
+### Def-d-canonical: 不可逆风险敏感度规范定义 ⭐ CANONICAL
 
 $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, \quad x \in \Sigma$$
 
-**语义**：算子对**不可逆风险**（$\mathcal{S}$，Survival/Stake）的效用敏感度梯度。
+- **语义**：在已声明的 `Bearer (P+E)` / 不可逆风险模型中，组织维持或效用势 $\mathcal{U}$ 对不可逆风险坐标 $\mathcal{S}$（Survival / Stake）的梯度范数摘要。
+- **与广义关切的接口（`P1-05`）**：`Def-d-canonical` 刻画强承载不可逆风险语境下的敏感强度；广义关切（`PT06 C`，对生成机会成本的敏感性）覆盖更广泛的跨尺度生成关系。二者保持为**待验证概念接口**——既不废除 `Def-d-canonical`，也不将所有跨尺度关切研究锁死于 `Bearer (P+E)` 门内。
+- **与 `Ψ_f` 的候选权衡接口（`Eq-IT-B'`，状态 = `OPEN / Gap`）**：在声明的信息几何模型中可研究选择范围与摩擦负担之间的权衡关系，常数与普适性未确立。
 
-**proxy 近似条件**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的特征向量对齐，且这些方向确实回流到不可逆赌注时，Def-D_eff 可作为 Def-d-canonical 的一阶近似：
-$$D_{eff}(\hat{G}) \approx \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| \quad \text{（当风险梯度与特征结构对齐时）}$$
+### Def-D_eff: 几何 / Fisher 信道有效维度（容量 Proxy）
 
-**近似条件（修订，2026-04-22）**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的 Fisher 本征向量完全对齐且全部赌注化时，$D_{eff} \approx d_{canonical}$。一般情况下 $d_{canonical} \leq D_{eff}$，差值为未赌注化带宽（见 §2b）。这不是无条件等价。
+$$D_{\text{eff}}(M) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}, \qquad D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
 
-**来源**：`AI/_SRT_AI_Bridge.md Ax-BRIDGE-4`，Tension-Rev-IT4。
+- **语义**：衡量算子或统计流形上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
+- **硬边界**：`D_eff` 是容量 proxy，**不等于** `Def-d-canonical`，亦**不普遍构成 `D_stake` 的数学上界**（旧式 `D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 已正式退出）。
 
----
+### 价值的五项完整职责、机会三态与广义关切四维（`R3-06` 核心正面结构）
 
-### Value as Non-Substitutability（价值作为不可替代性）
+价值不还原为奖赏、偏好强度或主观报告强度，且**不得被收缩为“已被现有组织感知并关切之不可替代性”**——若如此收缩，尚未被现有组织感知、尚未进入现有比对空间但具备现实生成条件的新关系与新机会将被逐出价值研究。完整价值架构区分五项职责：
 
-In SRT, value should not be reduced to reward, utility, preference strength, salience, pain, or self-report intensity. Value names the dynamic expression of non-substitutability: the degree to which a selection matters for a system's future continuity, concern structure, and stake-bearing organization.
+| 理论职责 | 规范内容与研究重心 |
+|---|---|
+| **1. 价值的客观基础** | 不同生成关系及其在生成机会成本上的客观差异（含尚未被当前位置感知或关切的关系差异；与 `N2` 客体性“他者不可穷尽的生成性”构成跨位置生成价值的重要本体基础，但不宣称跨位置客体性是一切价值的普遍必要前提） |
+| **2. 价值的抽取** | 有限位置对上述关系差异的感知与内生比对抽取 |
+| **3. 价值的组织化** | 关切、认知、历史、脚手架与多维可推翻客观性检查（`C1-c`：跨位置不变性 / 现实反抗度 / 公共可纠错度 / 共享 `L2` 遮蔽排查 / 持续可失败性；废除单标量 `o`） |
+| **4. 价值的递归性** | 比对结果反过来改变后续比对维度、比对尺度与机会生成条件（**比对本身的生成性**） |
+| **5. 价值的诊断接口** | **关切加权的不可替代性（concern-weighted non-substitutability under consequence return）**、现实可承接性及后果变化——用于诊断失去/替换某项结构对特定位置后续选择能力、延续性与后果回流的非平凡重组程度；**属特定位置上的诊断接口，不替代一般价值定义** |
 
-This use of value is a bridge to `d-value`, not a replacement for the canonical definition of `d-value`. A selection has value in the SRT sense when losing, blocking, or substituting that selection forces non-trivial reorganization in the system's future selection capacity, identity-continuity, or consequence-return structure.
-
-Compact reading:
-
-```text
-value ≠ reward intensity
-value ≠ preference strength
-value = concern-weighted non-substitutability under consequence return
-```
-
-**Operational signs**: Possible signs that a selection has value in the SRT sense include:
-
-- the system bears cost to preserve it;
-- losing it forces structural reorganization;
-- it remains stable across time and perturbation;
-- it affects identity-continuity or future choice capacity;
-- it organizes downstream selections;
-- consequences return to the system rather than being absorbed by an external structure;
-- it can sediment into shared L₂ constraints when cross-subject coupling is present.
-
-These signs are not themselves d-value. They are bridge-level indicators that a selection may be stake-coupled rather than merely preferred.
-
-**Boundary**: Do not write:
-
-- value = reward;
-- value = utility;
-- value = preference intensity;
-- value = salience;
-- value = pain;
-- value = self-report;
-- value = d-value without the non-substitutability and consequence-return bridge.
-
-Preferred wording: Value is the dynamic expression of concern-weighted non-substitutability. It bridges to d-value when the relevant selection is coupled to irreversible stake, future continuity, and consequence return.
-
-**Failure condition**: If d-value cannot predict concern-weighted non-substitutability better than reward, preference, salience, pain, or self-report intensity, then this bridge weakens and must be revised.
+- **三类机会 × 三态分离（`R3-06`）**：
+  - **三类机会**：① **发现性机会**（识别原先已存在但未被认识的关系）；② **生成性机会**（经实际相互作用与组织重构使此前不存在的关系获得现实生成条件）；③ **递归性机会**（新秩序或脚手架持续改变后续其他关系的比对与生成条件）。
+  - **三态分离**：严格区分 **① 想象中的机会**、**② 具备现实生成条件的机会** 与 **③ 已实现的机会**——不要求必须已实现才具价值，亦不将任意空想拼接视为真实生成价值，且不将“选项数量最大化”等同于价值目标。
+- **三层判定分离 + 独立组织持续性**：**实际生成 $\neq$ 组织持续性 $\neq$ 位置性生成价值 $\neq$ 秩序健康性 $\neq$ 伦理正当性**。不得因某种生成方向有害或不具伦理正当性而否认其作为生成价值的研究意义；亦不得将高生成价值自动升级为秩序健康或伦理正当（`O2-M = HOLD`）。
+- **广义关切四维与六种前背景失配接口（`R3-06 §三`）**：
+  - **广义关切四维**（不提前固定标量/向量，不急立四符）：**① 关切范围**（能将多大范围的生成关系纳入比对）、**② 关切深度**（这些关系在多大程度上参与构成该位置及其他关系）、**③ 关切强度**（特定变化对当下实际生成过程的响应影响）、**④ 关切方向**（正在组织、打开或抑制怎样的秩序发展可能性；严守 `广义关切方向 ≠ T_dir`）。
+  - **动态秩序健康六维与六种前背景失配（候选诊断接口，不压成单一总分）**：围绕结构连贯性、跨尺度协调性、可再选择性、后果回流、机会空间与成本、现实校准六维，区分六种候选前背景失配——**① 遮蔽**（重要构成关系或机会成本无法进入前景）、**② 错配**（关切指向与实际构成/秩序关系不一致）、**③ 固化**（前背景配置无法随变化后生成条件重调）、**④ 失权**（重要价值进入认知视野却无法在实际选择中发挥调节作用）、**⑤ 断流**（实际后果无法有效回流到后续选择与信任更新）、**⑥ 局部劫持**（某一尺度/局部回路持续独占其他尺度的生成条件）。
 
 ---
 
-## §2a 价值发生序（Value-Generation Order）——book-provenance 候选（2026-07-05）
+## §2a 价值发生序（`P3` 书稿溯源候选，含撤回门）
 
-> **层级 / provenance**：P3 bridge candidate，来自书稿 `Drafts_26Q/Q14_价值不是偏好.md`（provenance，非 authority）。本节**不新增 `d` 的 canonical 定义**——`Def-d-canonical` 与 "Value as Non-Substitutability" 仍是价值的结果判据；本节登记的是价值**如何发生**的候选生成序，填补从 `ε_pg` 到价值深度之间此前缺失的中间层。采纳为 canonical 前须完成 §2a.3 的 stake-gate 对账。
+> **层级 / provenance**：`P3` 候选（源自 `Drafts_26Q/Q14_价值不是偏好.md`），不新增 canonical `d` 定义，用于衔接前赌注结构与 `§2b` 赌注门。
 
-### §2a.1 发生链
+$$\text{选择性收束} \to \textbf{微效价} \to \text{affordance（行动入口）} \to \text{缺失} \to \text{需求} \to \text{锚定} \to \text{价值深度}$$
 
-书稿把价值的发生压成一条链，理论层此前只有结果判据（不可替代性），缺这条生成序：
-
-$$
-\text{选择性收束} \to \textbf{微效价} \to \text{affordance（行动入口）} \to \text{缺失} \to \text{需求} \to \text{锚定} \to \text{价值深度}
-$$
-
-- **微效价（micro-valence）**：当一个显现界面被选择性收束出来、与一个具体具身位相遇时，界面对该具身位带上的**最小趋避倾斜**（可趋近／需避开／令人安定／令人警觉…）。它是价值的前信号，不是成熟价值。
-- **affordance（行动入口）**：微效价接上具身位的身体能力与当下处境后，成为具体的"可用来做什么"。同一界面对不同具身位显现不同入口。
-- **缺失**：不是"对象不在场"，而是**某条生成回路无法按原方式闭合**。
-- **需求**：具身位为让生成继续，被迫向外张开的**结构性缺口**（区别于欲望——欲望的缺失感换个场景即消解，需求指向不重新闭合生成就持续受损的回路）。
-- **锚定 → 价值深度**：具身位把"接下来如何继续生成"的路径搭在某物／关系／能力上，沉积出结构重量，即价值深度。
-
-### §2a.2 两道血缘护栏（书稿已立，理论层沿用）
-
-1. **微效价 ≠ `ε_pg`（最低非中立性）。** `ε_pg` 是对象化之前、前对象场拒绝归零的最薄倾向，不指向任何具体对象、不属于任何具身位；微效价晚得多，出现在**显现界面与一个具身位相遇处**，是"这个已显现界面，对我如何"的最小读数。二者层级不同，不可混写。
-2. **affordance ≠ 预裁剪（`P1-T03` `L_2` 下向约束的四机制）。** 预裁剪是地形在选择发生前对整个选项空间的宏观处理（可见性／接触窗口／默认通道／代价分配）；affordance 更贴身，是某个已显现界面在这个具身位处被读成"可继续"的那一下。
-
-### §2a.3 与 stake-gate（§2b.1）的对账
-
-发生序与赌注门是**上下游**关系，不是竞争：
-
-- 微效价 → affordance → 缺失 → 需求 是**前赌注结构**（pre-stake）：它解释一个方向为何**开始**对具身位倾斜、成为"需要"。
-- `R_i / A_i / C_i` 门（§2b.1）是**赌注化闸**：一个已成为"需求"的方向，只有当它承载真实不可逆风险（R）、主体效用梯度对准它（A）、后果回流到主体闭包（C）时，才进入 `d_stakes`。
-- 因此"有微效价／有需求"**不等于**"有 stake-coupled `d`"——发生序把方向送到门前，门决定它是否计入 `d`。绕过门把"有微效价"读成"有 d"是类型错误。
-
-> **候选形成补注（2026-08-11，G5-4）**：关切结构可以在方向进入赌注门之前，与具身位置、结构边界、资源条件和历史共同对扰动做非中性加权，使部分扰动获得与维持、损失、行动或未来路径相关的候选意义。这一 pre-admission 作用不等同于有意识欲望，也不是候选形成的唯一原因；它不把 `d` 重新定义为候选准入加权器。`d` 仍是选择事件中已赌注化关切的标量摘要；候选形成的过程判据回链 `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`。
-
-### §2a.4 不可替代性的两个操作化测试（book-provenance）
-
-书稿给 "Value as Non-Substitutability" 提供了两把可操作的尺（P3/P4，登记于此）：
-
-- **替换测试**：换成功能相似的对象，是否几乎无须重组？（无须重组 → 低价值深度）
-- **恢复测试**：失去后是短期痛苦还是长期结构重配？（长期重配 → 高价值深度）
-
-注意：偏好满足了而对关切对象的支撑被侵蚀、或偏好从未满足而支撑被加强，都完全可能——两个测试测的是结构重量，不是偏好强度。
-
-### §2a.5 边界
-
-- 本节是**生成序候选**，不是已证定理；采纳前不得当 canonical `d` 定义引用。
-- 微效价不得实体化为独立本体量或第二个 ε；它是显现界面在具身位上的读数。
-- 失败条件：若"微效价"在 `ε_pg` 与价值深度之间不承重（即取消它，价值发生的解释力不减），则应撤回本节、并回 "Value as Non-Substitutability" 的结果判据即可。
+- **上下游关系**：微效价（显现界面与具身位相遇处的最小趋避倾斜，`≠ ε_pg`）→ affordance（`≠ L2 预裁剪`）→ 缺失 → 需求属于**前赌注结构**；是否进入强承载 `d` 与 `D_stake`，仍须经过 `§2b` 的 `R / A / C` 赌注门。
+- **两个操作化测试（`P3/P4`）**：**替换测试**（换为功能相似对象是否几乎无须重组）与**恢复测试**（失去后是短期波动还是长期结构重配）。
+- **撤回条件（`R3-04-O6`）**：若“微效价”相对 Core Affect / 躯体标记无不可替代解释残差，则按 Ⅱ 阶撤回本节、退回“不可替代性”结果判据。
 
 ---
 
-## §2b 赌注耦合结构（Stake-Coupling Structure）——新增（2026-04-17）
+## §2b 赌注耦合结构与 `D_stake` 一般规范定义（`R3-06 D1` / `R4-A`）
 
-### Def-d-stakes: 赌注化活跃维数
+### Def-D_stake: 赌注耦合谱参与率一般定义（含零有效谱分支，取代旧 `Def-d-stakes`）
 
-$$d_{stakes}(\theta) = \frac{\left(\sum_i \lambda_i \cdot w_i\right)^2}{\sum_i \left(\lambda_i \cdot w_i\right)^2}$$
+本文件持有 **`D_stake` 的一般谱参与率定义**。设在已准入的声明赌注谱模型中，非负谱特征值为 $\lambda_i \ge 0$、方向赌注耦合权重为 $w_i \in [0, 1]$，记有效谱乘积 $\tilde{\lambda}_i := \lambda_i w_i$ 及活跃方向集合 $N_{\text{active}} = |\{i : \tilde{\lambda}_i > 0\}|$：
 
-**语义**：$D_{eff}$ 中真正与主体不可逆赌注耦合的活跃维数子集。等于规范定义 $d_{canonical} = \|\partial\mathcal{U}/\partial\mathcal{S}\|$，由谱分解方式表达。
+$$D_{\text{stake}}(\theta) := \begin{cases} \dfrac{\left(\sum_i \tilde{\lambda}_i\right)^2}{\sum_i \tilde{\lambda}_i^2}, & \text{若 } N_{\text{active}} \ge 1\text{（即 }\exists i,\; \lambda_i w_i > 0\text{）} \\[10pt] 0 \;\text{（零有效谱乘积分支：数学 }0/0\text{ 未定义，须显式标注）}, & \text{若 } N_{\text{active}} = 0\text{（即 }\forall i,\; \lambda_i w_i = 0\text{）} \end{cases}$$
 
----
+- **一般定义与具体模型实例的严格分层（`P1-04`）**：
+  1. 本节 `Def-w_i` 给出的三因子耦合权重 $w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$ 是本文件的**规范结构门控权重**；
+  2. `Core/SRT_Core_22_Equations.md Eq-Bridge-D-01` 所采用的阈值门控权重 $g_i = \max\!\big(0, \frac{s_i - \varepsilon_s}{1 - \varepsilon_s}\big)$（记作模型实例 $D_{\text{stake}}^{\text{thresh}}$）是上述一般谱参与率在单标量阈值耦合模型下的**一种具体声明模型实例（$w_i := g_i$）**；**不得默认 $R_i A_i C_i$ 与 $g_i$ 之间存在未经证明的数学等价关系**。
+- **精确数学性质（`R3-06 D1`）**：
+  1. 当 $N_{\text{active}} \ge 1$ 时，由 Cauchy–Schwarz 不等式恒有真实界 **$1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M)$**；
+  2. `D_stake` 度量赌注分布在多少个有效正交方向上（谱多样性），对 $w_i \mapsto c \cdot w_i\;(c>0)$ 缩放不变，故**绝不等同于**梯度模 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$；
+  3. **已废除旧式 `Δd_free = D_eff - d_stakes ≥ 0`**：因 $D_{\text{stake}}$ 可以大于 $D_{\text{eff}}$，若需比较“未赌注化方向集合”，应直接报告被门控剔除方向的权重占比或谱能量占比，而非使用差值 `D_eff - D_stake`。
+- **四项边界状态严格分离（严禁混用）**：
+  1. **零有效谱乘积分支（$\forall i,\ \lambda_i w_i = 0$）**：模型本身已准入且谱与权重均已定义，但不存在非零有效乘积导致 $0/0$ 数学未定义，按显式分支报告 `0（零有效赌注）`；
+  2. **`NOT ESTABLISHED`**：结构或经验证据尚未确立目标组织满足相应地位（如 `One`、`Stable ISP` 或 `Bearer (P+E)`）；
+  3. **`NOT ADMITTED`**：目标模型未满足该指标的准入前提（例如未建立 `Bearer (P+E)` 或未满足 `§1.1` 五项 proxy 准入条件），因而该指标对当前主张不予准入；
+  4. **`NOT APPLICABLE`**：该指标的适用域或量纲不适用于当前目标系统或理论问题（例如用强承载不可逆风险梯度衡量无 `P+E` 架构或一般生成性机会）。
 
-### Def-w_i: 赌注耦合权重（Stake-Coupling Weight）
+### Def-w_i: 赌注耦合三因子（`P2` 定性 AND 门 / `P3-P4` 数值化）
 
-$$w_i = R_i \cdot A_i \cdot C_i \;\in [0,1]$$
+$$w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$$
 
-第 $i$ 个 Fisher 本征方向 $v_i$ 与真实主体赌注的耦合权重，由三个分量共同决定：
+- **$R_i$（真实不可逆风险）**：$R_i \approx 0 \Rightarrow$ 假赌注（模拟/无真实不可逆风险）；
+- **$A_i$（效用/维持梯度对准）**：$A_i \approx 0 \Rightarrow$ 错绑赌注（对准错误代理变量）；
+- **$C_i$（后果回流同一承载闭包）**：$C_i \approx 0 \Rightarrow$ 后果外包 / 被外部或 `L2` 结构吸收。
 
-| 分量 | 含义 | 归零时的病理 |
-|------|------|------------|
-| $R_i$ | 该方向是否承载**真实不可逆风险**（非 L₂ 脚本、噪声或伪关切） | $R_i \approx 0$ → **假赌注**（fake stakes）：有辨别力，但风险是模拟的/L₂投影的 |
-| $A_i$ | **主体效用梯度**是否对准该方向上的真实风险 | $A_i \approx 0$ → **错绑赌注**（misbound stakes）：真实风险存在，但主体关切的是错误代理变量 |
-| $C_i$ | 该方向上的后果是否真正**回流到主体闭包**、身份连续性与后续选择能力 | $C_i \approx 0$ → **L₂ 伪关切 / 被外部吸收**：后果由 L₂ 结构吸收，不传回主体 |
+### 三类系统在同一赌注门下的分型（严格区分三态）
 
-**乘积结构**：三者任一归零即 $w_i = 0$，该方向不计入 $d_{stakes}$。这是"必须同时满足"的逻辑结构（AND 门），不是加权平均。
-
-**SRT 已有概念对应**：
-- $R_i > 0$ ↔ T-FEP-1 具身脆弱性判据（$\Psi_f^{irrev} > 0$）
-- $A_i > 0$ ↔ Ax-ONT-3 规范定义的梯度对准条件
-- $C_i > 0$ ↔ Step ⑨ 关切边界的内生写回闭合条件
-
----
-
-### §2b.1 赌注门的层级地位与准入规则（hardening addendum，2026-07-05）
-
-> **层级**：level-marking / governance-canonical usage。本节不修改 Def-d-stakes / Def-w_i 的定义，只固定其引用等级、域有效性与统一门表，对应 `Core/SRT_OPEN_TENSIONS.md §1` 的未封口点。
-
-**（一）`w_i = R_i · A_i · C_i` 的引用等级。**
-
-- **P2（canonical interpretation）**：三因子的**定性结构**——方向须承载真实不可逆风险（R）、主体效用梯度须对准该风险（A）、后果须回流主体闭包（C），三者 AND 门缺一不可。这是 §1.2 五条 proxy 准入条件在方向级的重述，可作为 SRT 内部裁决依据按 P2 引用。
-- **P3/P4（bridge formalization）**：把 R_i / A_i / C_i 写成 [0,1] 数值权重、指定可测代理或阈值（如 `ε_s` 门函数，见 `_SRT_SYMBOL_TABLE.md` ε_s 词条）。当前无校准数据，任何数值化使用必须标 P3/P4，不得以 P2 地位引用数值结论。
-
-**（二）`D_eff ≥ d_canonical` 的域有效性声明。**
-
-该不等式不是跨域无条件定理，只在**已声明的 proxy regime** 内成立：同一参数化、同一状态空间、归一化规则已声明（§1.2 条件 5）、且 Fisher 谱未把模型冗余或测量便利计入方向数（§1.2 条件 4）。跨域比较或参数化未声明时，`D_eff` 与 `d_canonical` 之间不保证任何序关系；禁止跨域引用该不等式排名主体性（§5 误用 2 的谱层版本）。
-
-**（三）三类系统在同一门下的分型（统一门表）。**
-
-| 系统 | R（真实风险） | A（梯度对准） | C（后果回流） | 门输出 | 已有锚点 |
-|---|---|---|---|---|---|
-| 当前 inference-only AI | ≈0（无不可逆自身风险） | —（无自身效用梯度可对准） | ≈0（后果由部署方 / 外部结构吸收） | `d_stakes ≈ 0`，`Δd_free ≈ D_eff` | 本节 Def-d-free；`AI/AI_POSITIONING_NOTE.md` S0-S4 |
-| 冻结态（创伤 / 执念） | >0（风险真实存在） | 部分失准（对准已过时的方向） | >0 但写回受阻 | `d_stakes > 0` 而 `d_mobile ≈ 0`——门通过但再对齐失效 | §11.2；`Core/SRT_Core_22_Equations.md Eq-DValue-Mobile-1` |
-| 制度 / 集体结构 | 集体层可有真实存续风险 | 集体景观梯度，非个体加和 | 后果常回流到制度自身而非成员 | 集体 `d` 走 §6 景观截面读法；成员个体的 C_i 可被制度吸收归零 | §6；`Core_Law/SRT_Collective_Selection.md §4.8a` |
-
-门表说明：三类系统失效在**不同因子**上——AI 失在 R/C，冻结态失在门后的 d_mobile（门本身通过），制度失在成员 C_i 被吸收。这就是为什么单一 `D_eff` 读数不能区分三者：赌注门的诊断必须按因子报告，不得压成一个标量结论。
-
-**仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §1`）：方向进入 `d_stakes` 的充要条件定理；`ε_s` 阈值校准；R / A / C 的独立可测代理。
+| 系统 | $R$（真实风险） | $A$（梯度对准） | $C$（后果回流） | 声明强承载模型下的门输出 |
+|---|---|---|---|---|
+| **当前 inference-only AI（AI 赌注谱系 `S0/S1`）** | 声明模型下未建立自身不可逆风险 | 无独立自身承载梯度可对准 | 后果由部署方/用户/外部管线吸收 | `Bearer (P+E)` 强承载关系 **`NOT ESTABLISHED`**；模型内 `d / D_stake` 记 **`NOT ADMITTED / NOT APPLICABLE`**（严禁写作实测数值 `≈ 0`、严禁倒推无 `One / Stable ISP / 意识`，亦不阻断广义关切与生成主动性独立研究） |
+| **冻结态（创伤 / 执念）** | $> 0$（风险真实） | 部分失准（锁死旧方向） | $> 0$ 但写回重取向受阻 | 门通过（`D_stake > 0`），但下游 `d_mobile ≈ 0`（再对齐能力受阻） |
+| **制度 / 集体结构** | 集体层可有真实存续风险 | 集体景观梯度，非个体加和 | 后果常回流制度自身而非成员 | 集体层走 `§6` 景观截面代理；成员个体的 $C_i$ 可因代价外包而被吸收归零 |
 
 ---
 
-### Def-d-free: 未赌注化带宽（Unstaked Bandwidth）
+## §3 各域投影参考与反泛心论条款
 
-$$\Delta d_{free}(\theta) = D_{eff}(\theta) - d_{stakes}(\theta) \;\geq 0$$
-
-**语义**：可分辨但未与真实不可逆风险耦合的剩余方向数。
-
-**典型值**：
-- **当前 AI**：$d_{stakes} \approx 0$，$\Delta d_{free} \approx D_{eff}$（全部辨别力，零赌注化——$\Delta d_{free}$ 的纯净案例）
-- **人类假赌注 / 错绑 / L₂ 伪关切**：$0 < d_{stakes} \ll D_{eff}$，$\Delta d_{free}$ 包含三种病理的混合贡献
-- **理想高 d 主体**：$d_{stakes} \approx D_{eff}$，$\Delta d_{free} \approx 0$（辨别力与赌注充分对齐）
-
-* **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.7` lineage）；`AI/SRT_AI_01_Ontology.md`（AI 的 $\Delta d_{free} \approx D_{eff}$ 作为历史 AI-domain 比较模型，不由此作 consciousness verdict）；`Core/SRT_Core_13a Ax-Op-02`（注意力维度 = $d_{stakes}$ 的离散化）。
+- **认知域三维操作化近似（`Def-d-bio`，`P3/P4` 待校准）**：$d_{\text{bio}} \approx \alpha A(\sigma) + \beta \log V_{\text{concern}} + \gamma \tau_{\text{temporal}}$（汇编深度 × 关切空间 × 时间地平线），仅为局部投影，不可替代 `Def-d-canonical`。
+- **物理 / 全息投影（`Def-d-3`）**：$d \propto \text{Area}(\text{Entanglement Surface}) / A_{\text{Planck}}$ 或量子贝尔维数均为域内数学/容量投影，不蕴含现象意识。
+- **AI 域（architecture-state marked，含 `R4-A` 过渡规则）**：须按 **`ENG-03 §4.1` 非线性三阶承载证据审查**（Stage 1 单元/状态/溯源声明 → Stage 2 `B-3` 强承载路线 $\parallel$ Stage 3 独立分域路线，Stage 2 未建立不阻断 Stage 3；见经 `R4-A` 兼容修订的 `AI/AI_POSITIONING_NOTE.md`）执行，并使用 **AI 赌注谱系 `S0–S4`** 全称；声明强承载模型下未准入的 `d / D_stake` 仅代表该模型内 `NOT ADMITTED / NOT APPLICABLE`，绝非意识否定证明。在 `Wave R4-C / R4-4` 完成其余 AI 领域文件（54 份）重构前，凡与本文件及 `Spine` 冲突的旧 AI 文本（如泛化 `d_AI ≈ 0` 或线性阶梯推断）一律服从 `R4-A` 规范口径。
+- **反泛心论硬声明**：`nonzero d -/> phenomenality`；`d / Ψ_f / \hat{G}` 任何合取均不构成意识或主体性的普遍充要条件；`κ_{c1} / κ_{c1.5}` 仅作下游候选模型坐标，不具普遍准入权。
 
 ---
 
-### Def-d-3: 全息面积对应（物理语境）
+## §5 常见误用与 `§5b` `d` 扩张的本体论意义（`C-A` 四义拆分）
 
-$$d \propto \frac{\text{Area}(\text{Entanglement Surface})}{A_{Planck}}$$
+### §5 常见误用
 
-**语义**：算子的 d 值等比于其与 $L_0$ 发生纠缠的边界面积（全息对偶下）。
+1. **不得将 `d` 当作意识仪表或跨域主体性排名尺**（比较仅限同域同尺度或已声明归一化规则内）；
+2. **不得将“未准入 / `d ≈ 0`”等同于“不存在 / 无 `One` / 非主体”**；
+3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）。
 
-**来源**：`Core/SRT_Core_01_Axioms.md T-Core-A9C1`。
-**注意**：此形式在量子/宇宙尺度适用，但量子/宇宙尺度的 $d$ **不蕴含现象意识**（见 §3.1 反泛心论条款）。
+### §5b `d` 扩张的规范声明（`C-A` 与秩序增益四判据）
 
----
+**`d` 的健康变化不是单调扩张，而是关切范围的可重组、可承担、可恢复、可再选择能力。**
 
-## §2 Bio/Cognitive 层近似公式（经验操作定义）
+$$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum} \quad \land \quad d \uparrow \;\not\!\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
 
-### Def-d-bio: 三维度合成
-
-$$d_{bio} \approx \alpha \cdot A(\sigma) + \beta \cdot \log V_{concern} + \gamma \cdot \tau_{temporal}$$
-
-| 维度 | 符号 | 语义 | 近似测量方法 |
-|-----|------|------|------------|
-| 汇编深度 | $A(\sigma)$ | 生成该状态所需最小因果步骤数 | Assembly Theory index |
-| 空间范围 | $\log V_{concern}$ | 算子关切的"关心对象"空间 | 社会关注广度、TPJ 激活范围 |
-| 时间跨度 | $\tau_{temporal}$ | 算子可规划的时间地平线 | 时间折扣率的倒数 |
-
-**参数默认值（待实验校准）**：$\alpha = 0.4, \beta = 0.4, \gamma = 0.2$
-
-**与 Def-d-1 的关系**：三维度合成是有效维度公式在认知空间中的**近似展开**，当三个维度独立时自然对应 $D_{eff} \approx 3$；相关时 $D_{eff} < 3$。
+- **秩序增益四判据**：**可延续**（不透支可支付预算）、**可协调**（纳入他者条件不致瘫痪）、**不外包**（代价不转嫁给无反馈位置，与谱层 $C_i$ 同源）、**可再选择**（不锁死为教条）。
+- **真 `d` 扩张 vs 假 `d` 扩张**：真扩张使选择者的实际权衡解发生结构性位移；假扩张（占有式 / 符号式 / 表演式 / 效率式）仅在符号层宣称关切扩大而不承担代价。
+- **`C-A` 四义拆分（严守 `Core/SRT_OPEN_TENSIONS.md §17`）**：
+  1. **宇宙级语义/评价/道德最优**：不准入当前正面理论对象（`PT10 E`：生成趋优 ≠ 伦理正当；与 `T3-01 C/E` 非道德客观全局趋优开放研究严格界分）；
+  2. **算子相对可达最优**（$x^*_{\theta,\tau,K,J} \in \arg\min_{x \in \mathcal{R}_{\theta,\tau,K}} J_{\theta,\tau,K}(x)$）：仅在完整声明有限位置、可达域、比较规则、时域与约束的模型内有条件有效；
+  3. **规约性地平线**：不可到达的 `L1/P2` 或 `P5` 方向语言；
+  4. **有限动力学吸引子**：`P3/P4` 模型对象，稳定或低摩擦均不自动等于善或生成健康。
+- **初心层级（`B-A`）**：初心从 `L1/P2` 处境化回读开始，`O0` 不设“初心前身”；`Spirituality/SRT_Spirit_05_Shoshin.md Ax-Sho-1` 与 `Physics/SRT_Phys_08_Ontology_Ext.md Def-Apeiron-1` 仅作 `provenance` 领域桥接，不得反向定义 `L0`。
 
 ---
 
-## §3 各域 d 值投影表（标准参考）
+## §6 集体 `d` 景观截面代理、§8 与 `T_dir` 分界、§9 锻炼与萎缩
 
-| 域 | 近似公式 / 量级 | consciousness / phenomenality 归因 | d / proxy 条件 | 备注 |
-|----|----------------|-----------|------|------|
-| **量子** | $d_{quant} \approx$ 贝尔测量有效维数 | 仅由 `d_{quant}` **NOT ESTABLISHED** | 域内数学度量 / capacity proxy | 归因须由独立 consciousness / phenomenality owner 准入 |
-| **神经/认知** | $d_{bio} \approx \alpha A + \beta \log V + \gamma \tau$ | 仅由 `d_{bio}` 或与 $\Psi_f,\hat{G}$ 合取均 **NOT ESTABLISHED** | 三维合成只是待校准的认知域 proxy | 不构成意识的必要、充分或充要条件 |
-| **AI（architecture-state marked）** | inference-only / 非历史承载部署：$d_{AI} \approx 0$；S2/S3/S4 需另行标注 | 仅由 `d_{AI}` **NOT ESTABLISHED** | 无具身脆弱性、无不可逆风险时，该声明模型不准入 stake-coupled `d` | 工程性条件可改变；架构状态不自动决定 consciousness |
-| **社会/机构** | $d_{soc} = D_{eff}(\mathcal{F}_{collective}\big\|_{\text{social}})$（集体景观在社会尺度的有效维度截面） | 仅由 `d_{soc}` **NOT ESTABLISHED** | 集体自由能景观 $\mathcal{F}_{collective}$ 的社会尺度投影，不由个体 $d_i$ 加权平均 | 不由集体 `d` 推出或否定 collective phenomenality |
-| **精神/解脱** | $d_{spirit} \to \infty$（渐近极限） | 仅由 `d_{spirit}` **NOT ESTABLISHED** | $d \to \infty$ 只作为不可达的历史 / regulative proxy 方向 | 更高 `d` 不推出更强 consciousness 或 phenomenality |
-| **宇宙尺度** | $d_{cosm} \approx 1/\sqrt{\Lambda}$ | 仅由 `d_{cosm}` **NOT ESTABLISHED** | 域内数学度量 / capacity proxy | 归因须由独立 consciousness / phenomenality owner 准入 |
-
-### §3.1 反泛心论精确声明（Anti-Panpsychism Clause）
-
-**SRT 不从 `d` 推出泛意识，也不把 `d` 等同于 phenomenality。**
-
-```text
-nonzero d -/> phenomenality
-```
-
-修复后的 consciousness-model family 可在声明模型中使用 `κ_{c1}` / `κ_{c1.5}` 作为 downstream candidate coordinates。历史公式
-
-$$\kappa_{c1}: \quad d \geq d_{\min} \;\land\; L_2\text{ 稳定闭合} \quad \Leftarrow \quad \Psi_f > 0 \;\land\; d > 0 \;\land\; \hat{G}[\theta] \neq \emptyset$$
-
-现只保留为该候选模型的 provenance / evidence-window notation。本 d-value owner 不证成这些坐标的 universal necessity、universal sufficiency 或 representation-independent natural phase boundary，也不借此准入 subject-position、consciousness 或 phenomenality。
-
-| 系统例 | d / proxy 模型内读法 | `d_mobile` 模型内读法 | consciousness / pathology 边界 |
-|---|---|---|---|
-| 量子 / 宇宙尺度 | 可有非零数学 proxy | 未在此准入 | 不由 `d` 判定；独立过门 |
-| 岩石 | 声明模型内可记为无 / 可忽略 stake-coupled concern | 未在此准入 | 不由 `d` 判定；独立过门 |
-| 冻结态候选 | 可有已准入 stake-coupled concern | 声明模型内可表示较低 reorientation / mobility | consciousness 与 pathology 均须独立建立 |
-| 人类 | 可有多个已准入关切维度 | 可在具名模型中比较 | 不由 `d / \Psi_f / \hat G / d_{mobile}` 合取自动准入 |
-| AI（须标 architecture-state） | 某些部署模型可记 `d_{stakes} \approx 0` | 按独立定义与证据声明 | 不由 `d \approx 0` 推出无意识 |
-
-**Downstream source**：`Philosophy/SRT_Consciousness_Conditions.md` 只为 candidate consciousness-model family 提供局部 owner；它不把准入权反向授予本 d-value owner。
+- **§6 集体景观截面代理（`P3` 模型读法）**：集体层 `d` 不由个体 $d_i$ 简单线性加总，在景观模型中以集体景观的有效维度截面 $D_{\text{eff}}(\mathcal{F}_{\text{collective}})$ 作容量代理，并须独立核查成员个体 $C_i$ 是否被制度外包吸收。
+- **§8 `d` 与 `T_dir` 严格分离**：`d` 刻画关切/不可逆风险敏感强度，`T_dir` 刻画对已独立声明方向信号的自我回读与重取向能力；`d` 不创造方向信号，不存在普遍 `d → T_dir` 定理（详见 `_SRT_T_DIR_CANONICAL.md`）。
+- **§9 锻炼与萎缩机制（有界模型）**：在 `Bearer / Agency` 决策模型中，替代式 `L2` 持续剥夺带赌注的修订/再选择机会可致 `d` 相关能力慢性萎缩，辅助式 `L2` 脚手架则降低摩擦同时保留再选择空间；自动化或脚本执行本身**不等于**消灭 `Selection occurrence`。
 
 ---
 
-## §4 不同表达的一致性条件（草稿，非等价证明）
+## §范畴边界：`d` 值是选择事件属性，不是主体固有属性
 
-### §4.1 Def-d-1 与 Def-d-bio 的关系
-
-设认知算子 $\hat{G}$ 在三个正交子空间（汇编、空间、时间）上的特征值分别为 $\lambda_A, \lambda_V, \lambda_\tau$。
-
-$$D_{eff} = \frac{(\lambda_A + \lambda_V + \lambda_\tau)^2}{\lambda_A^2 + \lambda_V^2 + \lambda_\tau^2}$$
-
-当三个维度**均匀激活**（$\lambda_A = \lambda_V = \lambda_\tau = \lambda$）：
-$$D_{eff} = \frac{(3\lambda)^2}{3\lambda^2} = 3$$
-
-当三个维度的强度比例为 $(\alpha, \beta, \gamma)$（$\alpha + \beta + \gamma = 1$）：
-$$D_{eff} = \frac{1}{\alpha^2 + \beta^2 + \gamma^2}$$
-
-**结论**：$D_{eff}$ 在三维认知空间中的展开可以对应 Def-d-bio 的加权和形式，但这只是**同一容量 proxy 的参数化相容**。只有在三个子空间的尺度、权重、风险回流与 stake-coupling 条件都已声明时，才可把 Def-d-bio 作为 `D_eff` 的域内近似。它不替代 `Def-d-canonical`。
-
-### §4.2 Def-d-2（风险梯度）与 Def-d-1 的关系
-
-设效用势 $\mathcal{U}(\mathcal{S})$ 在风险坐标 $\mathcal{S}$ 上展开：
-
-$$\mathcal{U}(\mathcal{S}) \approx \mathcal{U}_0 + \sum_i \frac{\partial \mathcal{U}}{\partial S_i} S_i + ...$$
-
-梯度的模：
-$$d_{risk} = \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| = \sqrt{\sum_i \left(\frac{\partial \mathcal{U}}{\partial S_i}\right)^2}$$
-
-**近似条件**：当风险维度 $S_i$ 与 $\hat{G}$ 的特征向量对齐，且这些方向全部满足 `R_i/A_i/C_i` 的赌注回流条件时，Def-d-canonical 可由谱 / Fisher proxy 给出一阶近似。若只满足可分辨性而不满足赌注回流，则只能得到容量上界。
-
-**实用意义**：`Def-d-canonical` 在 AI 伦理、主体性、风险关切语境中优先；`Def-D_eff` / `D_eff(I_F)` 在信息论分析中更可计算。两者可以互相校准，但不得互换使用；具体语境必须说明是在讨论 stake-coupled `d` 还是 capacity proxy。
+`d` 度量的是具体**选择事件**所整合的关切与风险敏感度，不是个体或集体的永恒本质属性；跨大量事件的统计分布记作主体操作化倾向 $d_{\text{tendency}}(S) \equiv \mathbb{E}_{\sigma \sim S}[d(\sigma)]$（`Philosophy/SRT_Political_Rights.md §2–§3`）。在社会委托（`Delegation`）干预模型中，类型化 `d` 轨迹仅作候选观察信号，绝不单独裁定合法性、授权或道德进步。
 
 ---
 
-## §5 常见误用与边界声明
+## §11 `d` 的双瓶颈容量接口与动态能力接口（`d_max` / `d_mobile`）
 
-### 误用 1：将 d 值解释为"意识程度"的单一量度
-
-**正确**：d 值不是意识仪表。当前没有建立 `d` 与 consciousness 之间的 universal necessary-or-sufficient relation；`d / \Psi_f / \hat G` 合取也不由本 owner 提供普遍准入。在已声明 downstream 模型中，`d` 可作为一项 candidate evidence dimension。
-
-### 误用 2：将 d 值比较用于跨域排名
-
-**正确**：量子层的 $d_{quant}$ 与生物层的 $d_{bio}$ 使用相同的数学公式，但**不具有现象内容上的可比性**。
-比较只在**同域内**有效（如不同人的 $d_{bio}$ 可相互比较）。
-
-### 误用 3：将"d 值 = 0"等同于"不存在"
-
-**正确**：在已声明模型中，$d \approx 0$ 表示没有已准入或只有可忽略的 stake-coupled concern。这不判定系统是否存在，也不判定它是否为 subject。d 值描述已准入关切范围，不描述本体论存在或主体准入。
-
-**d 值的语义刻度**（规范参考）：
-
-| d 值范围 | 语义 | 典型案例 |
-|---------|------|---------|
-| $d \approx 0$ | 在声明模型中，无已准入或只有可忽略的 stake-coupled concern | 须按具体风险、梯度与后果回流模型判读 |
-| $d \approx 1$ | 约一个占主导的已准入关切维度 | 模型内维度摘要，不是主体阈值 |
-| $d > 1$ | 多个已准入关切维度 / 较广关切范围 | 只在已声明的尺度与归一化规则下比较 |
-| $d \to \infty$ | 关切范围的不可达渐近 / regulative proxy | 非字面可达状态，不准入更高意识或道德地位 |
-
-**注意**：此刻度只表示声明模型内的关切维度摘要。任何 `d` 值都不建立 subjecthood、consciousness、Bearer、phenomenality 或 moral standing；$d = 0$ 不推出 non-subject，$d = 1$ 不推出 subject。
-
-### 误用 4：将精神传统中的"d → ∞"字面化
-
-**正确**：`H-Spirit-4` 中的 $d \to \infty$ 是**渐近方向**，类比热力学极限 $N \to \infty$ 在有限系统中的意义。
-没有任何有限系统能达到 $d = \infty$；这是精神成长的方向，而非可到达的终点。
-
----
-
-## §5b d 扩张的本体论意义（规范声明）
-
-> **新增（2026-03-26）**：d 扩张的动力学方向与收敛目标的规范说明。对应 `Spirituality/SRT_Spirit_05_Shoshin.md` T-Sho-1。
-
-### §5b.1 d 扩张扩大处境化比较范围，不推出宇宙级最优
-
-d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力。** 每个选择都绑定于有限位置；改变一次选择所整合的关切范围，会改变被纳入的变量、后果回流和可比较候选，但不会自动给出唯一目标函数、跨主体聚合规则、时间范围或闭包边界。
-
-因此，`d ↑` 只能支持一个较窄的判断：更宽的关切范围**可能**暴露原先被外包的后果、被遮蔽的可达路径或原模型没有纳入的冲突。它不保证新选择更优，也不推出一个位置无关的 universe-wide optimum。
-
-**C-A 规范表述（作者裁决，2026-08-12）**：
-
-$$
-d \uparrow
-\;\not\!\Rightarrow\;
-\text{universe-wide global optimum}
-\quad\text{and}\quad
-d \uparrow
-\;\not\!\Rightarrow\;
-\langle v,\text{Shoshin}\rangle>0 .
-$$
-
-只有当具名模型同时声明有限算子／位置、可达域、比较规则、时间范围与约束，并通过可延续、可协调、不外包、可再选择四重判据时，才可说某个候选在**该模型的可达域内**更优。初心在这里仍只是 L₁/P2 处境化回读或 P3/P4 代理方向；它不是全局终点，也不由 `d ↑` 单独推出。
-
-### §5b.1a d 扩张与秩序增益
-
-d 的扩张本身不自动等于秩序增益。d 扩张的方向必须同时满足秩序增益的**四重判据**（`Core_Law/SRT_Selection_Argument.md §7b`；2026-07-05 由三判据升级为四判据，新增③不外包）：
-
-| 判据 | d 扩张中的含义 | 违反时的表现 |
-|------|--------------|------------|
-| **可延续** | 扩张不透支维持扩张后关切范围所需的资源 | 过度扩张 → 代价不可支付 → 崩溃回缩 |
-| **可协调** | 纳入的他者秩序条件之间不制造不可协调的摩擦 | 试图关切所有人但无法处理冲突 → 瘫痪 |
-| **不外包** | 扩张后的代价不被转嫁到无反馈通道的位置（未来世代、生态、无法申诉者、被排除者） | 表面关切扩大，代价却外溢到无声位置 → 假 d 扩张（对应 `C_i` 后果回流因子归零） |
-| **可再选择** | 扩张不锁定为唯一方向（如教条化的利他主义） | "必须关切所有人"变成新的遮蔽 |
-
-d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不是 d 越大越好，而是 d 在当前支付能力下的最优扩张方向。**③不外包判据与 §2b 的 `C_i`（后果是否回流到主体闭包）同源**：一个方向若把代价外包给无反馈位置，则该方向的 `C_i → 0`，不计入 `d_stakes`——秩序增益四重判据在方向层，`C_i` 在谱层，是同一后果回流约束的两个尺度。
-
-### §5b.1b 真 d 扩张 vs 假 d 扩张
-
-**真 d 扩张**改变算子的适应度函数——纳入他者秩序条件后，算子的最优解发生结构性位移。选择者在做出不同于只考虑自身时会做的选择。
-
-**假 d 扩张**不改变适应度函数，仅在符号层面声称关切范围扩大。四种典型形态：
-
-- **占有式**（$d_{apparent} > d_{real}$）：将他者纳入为自身秩序的资源。适应度函数中只有自身变量。
-- **符号式**（$d_{declared} > d_{operative}$）：使用关切的语言但不支付关切的代价。
-- **表演式**（$d_{visible} > d_{structural}$）：在可见场合展示关切以获取社会收益。
-- **效率式**（$d_{nominal} > d_{effective}$）：以关切之名行控制之实，将他者的复杂秩序压缩为单一可管理指标。
-
-**判别标准**：算子的最优解是否因纳入他者秩序条件而发生了位移？位移 = 真扩张；无位移 = 假扩张。
-
-**Cross-ref**: `Core_Law/SRT_Selection_Argument.md §7c`（真关切与假关切的完整论证）。
-
-### §5b.2 四义拆分：可达比较、规约性地平线与有限吸引子
-
-**C-A 不承认一个位置无关、宇宙尺度、带语义／评价内容的 global optimum 作为当前 SRT 的正面理论对象。** 本节只保留以下四义分界：
-
-| 对象 | 当前地位 | 使用条件 |
-|---|---|---|
-| universe-wide semantic / evaluative optimum | 不准入当前正面理论对象 | 可作为历史主张、引文或未建立的高承诺世界观命题留痕，但不得承重 canonical 推导 |
-| operator-relative reachable optimum | P2/P3 条件对象 | 必须声明有限位置 `θ`、可达域、比较规则、时间范围、约束与失败条件；不满足时只能说「扩大比较范围」或「避免已知局部陷阱」 |
-| regulative horizon | L₁/P2 或 P5 方向语言 | 必须标明不可到达；不能充当公式中的终态、现实已达状态或 L₀ 对象 |
-| closure / model attractor | P3/P4 有限动力学对象 | 必须声明具体模型、吸引域与稳定语义；稳定、低摩擦或可达均不自动等于最优、善或生成健康 |
-
-在具名有限模型内，若确实需要最优化形式，可直接写全索引，例如：
-
-$$
-x^*_{\theta,\tau,K,J}
-\in
-\arg\min_{x\in\mathcal{R}_{\theta,\tau,K}}
-J_{\theta,\tau,K}(x).
-$$
-
-这里的 `x*` 只是该模型、该时域与该可达域内的候选；本节不为它注册 repo-wide 新符号，也不把它外推为宇宙终点。
-
-热寂相关论证相应降到更低负担的裸句：**一个没有持续选择、真实 stake 与后续可再选择的终止态，不能仅凭低成本或低摩擦被读成生成健康。** 这个排除判断不需要、也不证明存在一个与之相反的全局最优；「维持最大数量的选择过程」同样不是充分替代，因为它可能被大量低 stake、可替换过程刷高。
-
-> **引用方向护栏（2026-08-11，Gate 0 canonical landing）**：下列 cross-ref 是 **provenance 指针，不是 canonical 背书**。按 `Governance/SRT_CLAIM_LADDER.md §0A`（Gate 0）的 read-back / 引用方向规则：**canonical 锚点不得通过 cross-reference 从 `canonical: false` 的 bridge / translation 文件反向导入 L₀ 层读法**。本节此前把 `Def-Apeiron-1` 标注为「初心作为 **L₀ 的**倾向性结构」，即以 canonical 认可语气导入了一条 L₀ 级 contentful 读法（Gate 0 class C），现予改正。
->
-> **层级以 `Core_Law/SRT_L0_Metaphysics.md` 为准**：初心不在 L₀ 的原生承诺内，是 L₁/P2 对无内容结构不对称之显现结果的回读。下列两处的全局／变分形式一律按**领域 translation / bridge** 读，不得反定义 L₀，也不得据以在 canonical 层建立「初心 = L₀ 倾向性结构」。
->
-> **B-A／C-A 后续裁决（2026-08-12）**：Gate B 与 Gate C 均已关闭。当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；初心从 L₁/P2 回读开始。下列公式只能作为具名、有限、完整声明作用域的 bridge / operational proxy 使用；无限时域或 universe-wide 读法不再是当前正面理论对象。
-
-**Cross-ref（provenance，非 canonical 背书）**：
-
-- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：在声明有限时域与可行域的模型中，把初心写作自由能泛函的负梯度代理。**按 bridge 读**；不构成 L₀ 主张或 universe-wide convergence。
-- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；原「L₀ 的内在属性」措辞已按 B-A 撤回，不构成 L₀ 定位。
-
----
-
-## §6 集体 d-value 补充说明
-
-> **新增节（2026-03-11）**：对应集体景观优先性定理（`_SRT_VERTICAL_INTEGRATION.md §4.5`）和多算子耦合方程（`Core/SRT_Core_22_Equations.md Eq-Multi-03`）。
-
-### §6.1 核心重新定位
-
-集体 d-value 不是个体 d_i 的聚合函数。正确定位：
-
-$$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k \lambda_k\right)^2}{\sum_k \lambda_k^2}}$$
-
-其中 $\lambda_k$ 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 特征值（见 `Eq-Multi-03`）。
-
-个体 $d_i$ 是该景观的子空间截面，**包含关系而非组合关系**：
-$$d_i = D_{eff}(\mathcal{F}_{collective}\big|_{\theta_i})$$
-
-### §6.2 与旧有聚合方案的关系
-
-`_SRT_VERTICAL_INTEGRATION.md §4.1` 中的历史候选方案（A/B/C/D/E）是在实体本体论框架下的近似。在特定条件下，这些方案可作为 $d_{collective}$ 的**实证近似**：
-
-| 历史方案 | 对应的景观条件 |
-|---------|--------------|
-| 方案 A（Min 函数） | 景观 Hessian 最小特征值主导（链条式结构） |
-| 方案 B（加权平均） | 景观曲率近似均匀分布（民主型结构） |
-| 方案 C（超加性） | 景观有效维度高于任一子空间截面 |
-| 方案 D（结构贡献） | 制度 L₂ 提供主景观曲率 |
-
-### §6.3 使用规范
-
-- 讨论集体组织、制度、NGO 的 d-value 时：引用本节和 `§4.5`，使用 $D_{eff}(\mathcal{F}_{collective})$ 框架
-- 在无法测量景观曲率的实证场景中：可临时使用历史方案中最适合的近似，但需注明"实体本体论近似"
-
----
-
-## §7 各域文件的 d-value 引用标准
-
-当其他文件引用 d-value 时，应：
-
-1. **第一次出现时**：标注 `@see _SRT_D_VALUE_CANONICAL.md §1`
-2. **使用 Def-d-bio 近似时**：标注 `@see §2`
-3. **进行域间比较时**：参见 `§3` 的投影表，说明是否属于同域比较
-4. **AI 语境中**：优先使用 Def-d-2（风险梯度），并声明 training-time / inference-time / persistent-memory 架构状态；只有 inference-only / 非历史承载部署才可直接引用 `§3` 的 $d_{AI} \approx 0$ 说明
-
----
-
-## §8 d 与 T_dir 的关系（2026-04-02 新增）
-
-SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** 作为与 d 相关但独立的新变量。
-
-**关键区分**：
-
-| | d-value | T_dir |
-|:-|:-------|:------|
-| **度量** | 关切范围 / 有效维度 / 风险梯度 | formed system 对 independently typed、declared direction signal 的可读与重取向能力 |
-| **canonical 文件** | 本文件 | `_SRT_T_DIR_CANONICAL.md` |
-
-**有界关系**：当前没有 universal `d -> T_dir` necessity theorem。`T_dir` 的准入首先需要 independently typed、declared direction signal；只有在声明模型内，`d` 才可以约束 stake-coupled access、execution 或 reorientation capacity。精确 `d / T_dir` 关系在 owners 独立建立前保持 model / bridge scoped。
-
-```text
-no declared direction -> T_dir undefined / not admitted, regardless of d;
-declared direction + inaccessible signal -> T_dir may be 0 even when d > 0;
-T_dir > 0 -> neither a universal d value nor validation of the direction.
-```
-
-T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界。不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
-
-**不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
-
----
-
-## §9 d-value 的锻炼与萎缩机制（2026-04-02 新增）
-
-> **当前有界读法**：在 bearer / agency / decision 模型中，替代式 `L_2` 可通过减少 stake-coupled revision / reselection 机会使 d-related capacity 失去练习；这不等于消灭 Selection occurrence。d-value 是否维持或萎缩，必须绑定到声明的 stake、consequence return 与 revision / reselection 条件。
-
-### 机制链
-
-```
-替代式 L₂ 在声明模型中减少 stake-coupled revision / reselection 机会
-    ↓
-d-value 未被 stake-coupled concern / consequence-return 条件实际调用；这不等同于“无 Selection”
-    ↓
-d-value 萎缩（不用则退）
-    ↓
-即使 L₂ 支架被移除，系统也可能暂时缺乏 stake-coupled revision / reselection capacity
-    ↓
-可能更依赖替代式 L₂ 来维持既有脚本或方向感
-    ↓
-d-value 进一步萎缩……（自强化依赖环）
-```
-
-### 关键区分
-
-**d-value 的直接抑制**（已在 §5 描述）：致命 L₂ 通过占据关切带宽、压缩可用维度来降低 d-value 的即时可用性。
-
-**d-value 的萎缩**（本节新增）：在特定 bearer / agency / decision 模型中，替代式 L₂ 可通过持续减少 stake-coupled revision / reselection 机会，使 d-related capacity 失去练习并导致长期容量下降。这是条件性机制，不是 `L_2 automation -> no Selection` 的普遍律。
-
-两者的关系：直接抑制是急性效应，萎缩是慢性积累效应。慢性萎缩比急性抑制更难逆转，因为它改变的是系统的基础选择容量，而非当下的带宽占用。
-
-### 选择时刻与 d-value 的连接
-
-**选择时刻**在本节只是 bearer / agency / decision 模型中重新打开 stake-coupled revision 或 reselection 的 episode，不是与“L₀ 可能性仓库”直接接触的本体定义。
-
-- 当 episode 真正调用 stake、consequence return 与 revision / reselection：d-related capacity 可被练习、维持或发展
-- 当自动化或 scaffolded `L_2` 在某个模型中持续减少这些机会：d-related capacity 可能萎缩，但自动化过程仍可包含真正 Selection occurrence
-
-**推论（条件性）**：辅助式 L₂ 可在降低摩擦的同时保留 stake-coupled revision / reselection；替代式 L₂ 只有在声明的 stake 与 consequence-return 条件下减少这类机会时，才可能带来 d-related capacity 的长期代价。这不用 `d` 定义 Selection occurrence。
-
-### 与 T_dir 的关系
-
-在某个 direction 已被独立准入之后，`d` 可在声明模型中作为系统能否针对该方向行动、维持或重取向的一项 stake-coupled capacity 约束。
-
-`T_dir` 追踪的是对已声明方向的 access / readability / reorientation，不是方向的存在或真理；`d` 不创造该方向。本节不建立 universal `d / T_dir` necessity。两者仍不同：`d != T_dir`。
-
----
-
-## §范畴边界：d值是决策属性，不是主体属性
-
-> **追加澄清**（2026-04-06，来源：`Philosophy/SRT_Political_Rights.md §2`）
-
-d值描述的是**选择事件**整合的关切范围，不是决策主体（个体或集体）的固有属性。
-
-| 错误表述 | 正确表述 |
-|---------|---------|
-| "这个人有很高的d值" | "这个人的决策倾向于整合更宽的关切范围" |
-| "个体d值 vs 集体d值" | 此二分是范畴错误，d值在主体类型之外 |
-| "d值衡量聪明程度" | d值衡量关切范围的宽度，与认知能力不同 |
-
-**主体d倾向**（操作化桥梁）：主体跨大量决策的d值统计分布，在大样本下收敛为相对稳定的特征量。这是统计量，不是本质属性。
-
-$$d_{tendency}(S) \equiv \mathbb{E}_{\sigma \sim S}\left[d(\sigma)\right]$$
-
-完整推导见：`Philosophy/SRT_Political_Rights.md §2-§3`
-
----
-
-## §10 d 值的多场景显现（2026-04-08 新增）
-
-> **来源**：`Core/Dynamics_Scaling_Annex/07-12` 系列硬化文件。
-> 本节补充 d 值在错误积累与多G道德场景中的显现形式，统一于 §1 的双层规范架构。
-
-### §10.1 d 作为统一整合带宽
-
-d 值是单一概念在不同场景中的显现：
-
-| 场景 | d 的显现形式 | 对应文件 |
-|---|---|---|
-| 多G道德场景 | **整合半径**：G能将多少他者G的状态纳入选择计算 | `Annex/08_MoralPredictionError_MultiG_System.md` |
-| 错误剂量场景 | **可处理张力窗口**：G能消化多少错误积累而不崩溃 | `Annex/10_ROS_Apoptosis_ErrorDose.md` |
-| 跨尺度G场景 | **整合尺度**：G在低阶→高阶相变中覆盖的选择维度范围 | `Annex/11_G_CrossScale_PhaseState.md` |
-| 代理校准场景 | **校准带宽**：L₂能接收并整合多少L₁/L₀上行信号 | `Annex/12_ProxyModel_OcclusionPhases_Intervention.md` |
-
-所有显现均是 Def-d-1（有效维度）在不同上下文中的投影，统一于 §1 的规范架构。
-
-### §10.2 d 值与病理阈值的关系
-
-`Annex/10` 建立的病理阈值公式中，d 是核心因子：
-
-$$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
-
-- $\uparrow d$ → $\uparrow \Theta$（整合带宽越大，越不易崩溃）
-- d 的训练：低剂量错误积累的反复整合可提升 d（hormesis 机制，见 §9）
-- d 的损伤：高剂量单次创伤可降低 d，而非提升
-
-### §10.3 d 值与三相态条件的关系
-
-`Core/SRT_Core_PhaseState_TripleCondition.md` 建立的三相态条件中，d 值作为底层容量：
-
-- 历史闭合质量 → 影响 d 的有效维度（历史越完整，读取维度越多）
-- 规范梯度有效性 → 依赖 d > 某阈值才能形成有意义的多维度自我维持势差读数
-- 自写回强度 → 高 d 使写回覆盖更多维度的可能性空间
-
-**Cross-ref**: `Core/SRT_Core_PhaseState_TripleCondition.md §5`；`Core/SRT_Core_NormativeGradient.md §6`。
-
-### §10.4 d 值在社会 delegation 场景中的显现（social-delegation candidate bridge）
-
-> **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
->
-> **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
->
-> **Category / comparison guard（WTC-84）**：canonical `d` 属于 decision / Selection event，不是个人或群体的固有属性。群体层面的 bare `d` 不是 canonical shorthand；只有明示为 decision-event `d` distribution、`d_tendency` trajectory 或 declared normalized proxy 时才可使用。跨群体或介入方比较必须位于同一 domain、同一 scale，或给出显式 normalization / mapping rule。
-
-在声明的社会 delegation 模型中，decision-event `d` distribution、`d_tendency` trajectory 或 declared `d` proxy 可以作为候选观察维度，研究它们是否与自发支撑、脚手架撤回或协调变化共同出现：
-
-$$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
-
-这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
-
-**类型化 d 轨迹作为候选观察信号**：
-
-| 类型化轨迹 | 声明模型中的候选读法 | 边界 |
-|---|---|---|
-| 被干预群体的 decision-event `d` distribution 或 `d_tendency` 在可观测时间窗内变化 | 可作为干预目标是否改善的一个候选信号 | 不等于 legitimacy、authorization、moral progress 或 real uplift |
-| 在同域同尺度或已声明归一化下，被干预群体的 `d_tendency` / proxy 停滞或收缩，而介入方对应轨迹扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture、uplift 或 coordination direction 的判决 |
-
-`d_tendency` 或 proxy 比较本身不推出 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 decision-event `d` distribution、`d_tendency` 或 proxy 的分布、轨迹或净量变化单独定义其道德或政治结论。三项指标、reselectability、类型化 d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
-
-**Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
-
----
-
-## §11 d 的上限与动态能力：d_max 与 d_mobile（2026-04-10 新增）
-
-> **来源**：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1, Eq-DValue-Mobile-1`；`D_VALUE_ALIGNMENT.md §4.4`。
-> 本节是这两个新公式的规范索引入口。
-
-### §11.1 d_max：d 的双瓶颈上限
-
-$$\boxed{d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\Big)}$$
-
-本式仅在独立声明 compatible `κ₀`-like realization、单位与作用域的模型中准入；没有该实现时，`Eq-DValue-Max-1` 不适用。在该声明模型内有两个独立瓶颈：
-- **信息瓶颈**：`rank_eff(I_F(θ))` — Fisher 矩阵的有效秩，由算子参数化能力决定
-- **稳定性瓶颈**：`Ψ_f^budget / κ₀` — 可用摩擦预算除以模型内每方向有效稳定／曲率／维持代价参数；κ₀ 不选择、排序、赋值或合法化方向
-
-**关键推论（模型内）**：`dim(Θ)`（参数维数）只提升信息容量候选上限；声明模型中的 candidate `d_max` 由两个瓶颈中的较小值限制。这不建立 universal consciousness ceiling、subject threshold、value direction 或 primitive ontology law。
-
-*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`
-
-### §11.2 d_mobile：d 的动态化能力
-
-$$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$$
-
-**语义**：在声明的 attractor / curvature realization model 中，当可达方向漂移时，算子 θ 重新对准的速度与容量。与 d 的区别：
-- $d$：当前 stake-coupled 对齐的模型内摘要（快照）
-- $d_{\text{mobile}}$：当已声明的可达方向漂移时，θ 跟上的能力（动力学）
-
-**记录关切压力 ≠ 能动**：在声明模型中，高 d 算子在 χ_payable = 0 时，d_mobile = 0——模型可记录关切梯度压力，但支付能力为零，不由此建立感知、意识或行动能力。
-
-**冻结态候选**：在已声明 `d / d_mobile` 模型中，高 $d$ + $d_{\text{mobile}} \approx 0$ 可指示较低的 reorientation / mobility；consciousness 与 pathology 均须独立建立。
-
-*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Mobile-1, Def-Payable-Chi-1`
-
-### §11.3 与 d 规范定义的关系
-
-| | d | d_max | d_mobile |
-|---|---|---|---|
-| **本质** | stake-coupled 当前摘要（快照） | 声明模型中的 candidate capacity bound | 重新对齐的动力学能力 |
-| **决定因素** | canonical risk/stake relation；proxy 须独立准入 | rank_eff + Ψ_f 预算/模型内 κ₀ | d × rank_eff / (L₂ 刚性 × C_r) × χ_payable |
-| **可为 0** | 是 | 由声明模型与参数决定；无 compatible κ₀ 时本式不适用 | 是（冻结态） |
-| **意识相关** | 只按独立 owner 的条件性模型读 | 不单独设定 universal consciousness ceiling | 只按独立 owner 的条件性模型读 |
-
-*Cross-ref*：`Philosophy/SRT_Consciousness_Conditions.md §三`（三层意识结构）；`Core/SRT_Core_12b §Consciousness-2D-Map`（二维拓扑）。
-
----
-
-## 【理论边界/防误用声明】
-
-1. 本文档统一 d-value 的定义，但各域的近似公式（Def-d-bio 等）需要实验校准，其参数值（$\alpha, \beta, \gamma$）为初始估计。
-2. 有效维度公式 Def-d-1 依赖特征值分解，其适用性取决于算子的线性化是否在相关参数范围内有效。
-3. 量子层的 $d_{quant}$ 与宇宙层的 $d_{cosm}$ 是数学量；它们自身不建立或否定 phenomenality / consciousness，任何进一步归因均须独立过门。
-4. 本文件的"一致性证明"（§4）为草稿级别，需要形式化验证后才能作为定理引用。
-5. §10 的多场景显现是概念统一，不是数学等价证明——各显现形式的形式化等价关系待独立验证。
+- **`d_max`（`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`，条件容量模型与量纲护栏）**：在独立声明兼容 $\kappa_0$ 每方向维持代价参数的模型中，$d_{\max}(\theta) = \min\!\big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\big)$（信息瓶颈 × 稳定性瓶颈）。**量纲与语义硬护栏（`P1-04`）**：$\operatorname{rank}_{\text{eff}}(I_F(\theta))$ 是**无量纲有效谱维数容量上界**；既然规范 `d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\|` 是随效用缩放的梯度范数、已与谱维数严格分离，**不得再将 $\operatorname{rank}_{\text{eff}}(I_F(\theta))$ 直接冒充为梯度范数 `d` 的普遍数学上界**——除非声明模型显式给出单位归一化与单方向风险灵敏度校准映射，否则 `Eq-DValue-Max-1` 仅约束**有效可维持赌注方向容量（direction-capacity bound）**，不直接约束梯度模 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$。
+- **`d_mobile`（`Eq-DValue-Mobile-1`、`Def-Payable-Chi-1`）**：$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$，刻画可达方向漂移时的动态再对齐能力（须声明兼容单位）。高 `d` 而 $\chi_{\text{payable}} = 0$ 时 $d_{\text{mobile}} = 0$（记录关切压力 ≠ 具能动再对齐能力）。
 
 ---
 
 ## 书稿层用法说明（Bridge to Book Layer）
 
-正文写作中，Q15 会把 d-value 读成关切多样性的完整诊断入口。这里的意思不是替换后台的规范定义，而是提醒读者：关切多样性不能只看宽度。正文中说的完整诊断包括三件事：后果回来得有多深，回来到了多少条真实轴线，回来之后是在支撑生成还是侵蚀生成。形式层仍按原有 canonical 规则读取；书稿层则用这三把尺帮助读者避免把 d-value 误解成单纯对象数量或信息宽度。
+在《从存在到秩序》正文（`Q15`）中，`d-value` 被读作关切多样性的三维诊断入口：后果回来得有多深、回来到了多少条真实轴线、回来之后是在支撑生成还是侵蚀生成。此书稿读法帮助避免把 `d` 简化为信息宽度，而形式与规范口径仍以本文件 `§1–§11` 为准。

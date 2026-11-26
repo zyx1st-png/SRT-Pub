@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-25
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-26
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-25
-source_commit: 1b65bc842
-source_branch: eng/eng-02-assimilation-reconciliation-2026-11-25
+generated: 2026-11-26
+source_commit: eff704179
+source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: f0f765c04248cfe8
+inputs_digest: 80ecabcfa202ae95
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: f0f765c04248cfe8
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-25 |
-| 来源 commit | `1b65bc842` |
-| 来源分支 | `eng/eng-02-assimilation-reconciliation-2026-11-25` |
+| 生成日期 | 2026-11-26 |
+| 来源 commit | `eff704179` |
+| 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -45,19 +45,19 @@ inputs_digest: f0f765c04248cfe8
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-10-19 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-09-24 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-09-23 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-26 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-09-19 |
-| 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-09-23 |
-| 7 | `Core_Law/SRT_One_Formation.md` | 2026-09-24 |
+| 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-11-26 |
+| 7 | `Core_Law/SRT_One_Formation.md` | 2026-11-26 |
 | 8 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-09-19 |
 | 9 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-09-23 |
 | 10 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-09-15 |
-| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-09-19 |
-| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-09-19 |
-| 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-09-15 |
-| 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-09-15 |
-| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-09-18 |
+| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-11-26 |
+| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-11-26 |
+| 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-11-26 |
+| 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-11-26 |
+| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-11-26 |
 
 ## §0.2 状态护栏
 
@@ -439,62 +439,62 @@ For substantive SRT answers:
 
 ### 0.5.1 `Core/SRT_Core_22_Equations.md` 主方程索引（独立 `FORMAL` 路线）
 
-- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-09-20`）
+- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-11-26`）
 - **独立上下文包**：`Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`（单独装载，不叠加在 `SPINE` 上）
 - **条目数**：自动抽取 50 条 `Eq-* / Def-*`（已纳入 `inputs_digest` 闭包）
 
 | 编号 | 标题 | 所属章节 | 仓库定位 |
 |---|---|---|---|
-| `Def-Protocol-1` | Protocol Layer Π (协议层 Π) | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L50` |
-| `Def-Protocol-2` | Absolute-vs-Relative Constraint Split（新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L60` |
-| `Def-Protocol-3` | Methodological Closure Guard（方法论闭包护栏，新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L69` |
-| `Eq-Multi-01` | Collective Free Energy Landscape（集体自由能景观） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L82` |
-| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L88` |
-| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L93` |
-| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L109` |
-| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L123` |
-| `Eq-Bridge-D-01` | Stake-Gated d-Value Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L139` |
-| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L155` |
-| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L171` |
-| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L187` |
-| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L215` |
-| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L247` |
-| `Eq-Rhythm-4a` | Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L283` |
-| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L328` |
-| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L355` |
-| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L384` |
-| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L392` |
-| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L399` |
-| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L419` |
-| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L426` |
-| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L433` |
-| `Eq-Evo-03c` | D-Value Forward Criterion (d 值前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L459` |
-| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L506` |
-| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L518` |
-| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L523` |
-| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L537` |
-| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L551` |
-| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L561` |
-| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L581` |
-| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L586` |
-| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L593` |
-| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L600` |
-| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L604` |
-| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
-| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L620` |
-| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
-| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L631` |
-| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L689` |
-| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L696` |
-| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L731` |
-| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L737` |
-| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L746` |
-| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L758` |
-| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L769` |
-| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L848` |
-| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L857` |
-| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L866` |
-| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L873` |
+| `Def-Protocol-1` | Protocol Layer Π (协议层 Π) | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L52` |
+| `Def-Protocol-2` | Absolute-vs-Relative Constraint Split（新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L62` |
+| `Def-Protocol-3` | Methodological Closure Guard（方法论闭包护栏，新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L71` |
+| `Eq-Multi-01` | Collective Free Energy Landscape（集体自由能景观） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L84` |
+| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L90` |
+| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L95` |
+| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L111` |
+| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L125` |
+| `Eq-Bridge-D-01` | Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`) | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L141` |
+| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L161` |
+| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L177` |
+| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L193` |
+| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L221` |
+| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L253` |
+| `Eq-Rhythm-4a` | Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L289` |
+| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L334` |
+| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L361` |
+| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L390` |
+| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L398` |
+| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L405` |
+| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L425` |
+| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L432` |
+| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L439` |
+| `Eq-Evo-03c` | D-Value Forward Criterion (d 值前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L465` |
+| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L512` |
+| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L524` |
+| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L529` |
+| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L543` |
+| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L557` |
+| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L567` |
+| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L587` |
+| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L592` |
+| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L599` |
+| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L606` |
+| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
+| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L616` |
+| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
+| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L632` |
+| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L637` |
+| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L695` |
+| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L702` |
+| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L737` |
+| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L743` |
+| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L752` |
+| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L764` |
+| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L775` |
+| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L854` |
+| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L865` |
+| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L874` |
+| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L881` |
 
 ### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
 
@@ -1385,334 +1385,271 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：SRT-L0-METAPHYSICS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-CLAIM-LADDER
+**dependency**：SRT-L0-METAPHYSICS, SRT-ONE-FORMATION, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CLAIM-LADDER
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Generative Ontology Spine
-## One Selection reality, many typed structural modes
+## Selection does not merely occur within reality; it participates in generating the conditions under which reality continues to occur
 
-> **Role**: canonical cross-owner routing spine. It fixes cross-owner ontology routing, structural non-identities and OPEN gates. Local owners retain detailed admission criteria where compatible.
+> **Role**: Canonical cross-owner routing spine for Selective Reality Theory (SRT). It establishes the positive unified generative architecture across physics, life, cognition, subjectivity, AI, and social order, while fixing cross-owner structural non-identities and OPEN gates. Compatible local definitions remain owned by their respective canonical anchors.
 >
-> **2026-09-14 Selection-totality landing**: author-adjudicated direction is recorded in `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_TOTALITY_NONFLAT_MONISM_2026-09-14.md`. This v2 replaces the earlier master picture `modal condition -> primitive operation -> formed result` with a non-flat Selection-mode architecture. The change unifies ontic reading without collapsing downstream gates.
+> **R4-A Reconstruction Baseline (2026-11-26)**: Supersedes v4's ladder-like chapter progression with the author-adjudicated R3–R4 unified generative architecture (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`, `Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`, and the 2026-11-26 R4-A author decisions `1A / 2A / 3A`). This upgrade replaces the retired linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) with dynamic recursive generative relations, while preserving every independent admission gate and OPEN boundary.
 
 ---
 
-## 0. Authority and inference rule
+## 0. Authority, Positive Architecture, and Non-Jump Discipline
+
+SRT's central positive claim is **recursive generative monism**:
+
+> **Selection does not merely occur within an already finished reality; it is reality's generative mode, and formed Selection participates in generating, comparing, and recursively reconstructing the very conditions under which further reality occurs.**
 
 At cross-owner level:
 
 ```text
-Selection is reality's one generative mode;
-structural roles / organizations / relations of Selection are many;
-compatible local definitions survive;
-conflicting excess inference becomes cleanup / retyping debt;
-OPEN remains OPEN until separately landed.
+Selection is reality's one generative mode (non-flat, non-preclosed, finite-position-indexed);
+structural roles, organizations, and relations of Selection are many;
+same ontic generative mode != same structural role;
+structural non-identity != different ontic substance;
+compatible local definitions survive; conflicting excess inference enters cleanup/retyping;
+OPEN remains OPEN until separately established.
 ```
 
-Permanent anti-tautology rule:
+Permanent anti-tautology and anti-jump discipline:
 
 ```text
-Selection-totality = ontology routing;
-Selection-totality != sufficient proof premise.
+Selection-totality = ontology routing, NOT a sufficient proof premise;
+actual occurrence != retained history != One != Stable ISP != Bearer (P+E) != Agency != subject / consciousness;
+five evaluative layers remain strictly separate:
+  actual generation != organizational persistence != positional generative value != order health != ethical legitimacy.
 ```
 
-Therefore:
+Never infer merely from `X is Selection` or `X persists` that X is One, Stable ISP, Bearer, Agency, conscious, valuable, healthy, or legitimate. Each stronger standing pays its own typed burden.
 
-```text
-same ontic generative mode
-!= same structural role;
+### 0.1 `R4-A` Section Migration Crosswalk (`v4 → v5`) & Unreconstructed-Domain Transition Rule
 
-structural non-identity
-!= different ontic substance.
-```
+To preserve cross-repository reference integrity during wave-by-wave `R4` reconstruction:
 
-Never infer merely from `X is Selection` that X is One, Stable ISP, Bearer, Agency, subject, conscious, valuable or legitimate. Each stronger term must pay its own typed burden.
+| Topic | Legacy `v4` Section | Current `v5` Section |
+|---|---|---|
+| Selection occurrence & event-level verticality | `§§2–3` | `§1.1`, `§3.1` |
+| History / retained efficacy | `§4` | `§3.2` |
+| `One` formation & existence/order perspectives | `§5` | `§5.1` (`Core_Law/SRT_One_Formation.md §2`) |
+| `Selection-position` & anticipation boundary | `§6`, `§6.3` | `§5.2`, `§6.2` |
+| `Stable ISP` (`P1-T06`) | `§7` | `§6.1` |
+| `Bearer (P+E)` | `§8` | `§6.2` |
+| `Agency` | `§9` | `§6.3` |
+| Normativity (`O1 / O2-C / O2-A`, `O2-M = HOLD`) | `§10` | `§6.5` |
+| `L0 / L1 / L2` analytic aspects | `§11` | `§7` |
+| Facet-before-kind guard | `§12` | `§8.2` |
+| Cross-owner `OPEN` register | `§13` | `§9` |
 
-Retain these anti-jump rules:
-
-```text
-history / writeback -> source of primitive Selection: NO;
-finite positionality -> One / Bearer / subject: NO;
-One -> Stable ISP / Bearer / subject: NO;
-Stable ISP -> Bearer / subject: NO;
-Bearer -> Concern / Agency / subject: NO;
-actual occurrence -> value / legitimacy: NO.
-```
+- **Transition rule for unreconstructed downstream domains (`R4-B / R4-C`)**: Until a domain file (`Core/`, `AI/`, `Physics/`, `Neuroscience/`, `Philosophy/`, `Spirituality/`) completes its own `R4` wave, **any pre-`R4` clause that conflicts with this Spine or the `R4-A` canonical core owners (`One_Formation`, `L0`, `D_VALUE`, `PSI_F`, `T_DIR`, `SYMBOL_TABLE`) yields immediately to the `R4-A` owner** and must be read as legacy cleanup debt, never as a live co-equal definition.
 
 ---
 
-## 1. Master ontology reading — Selection-totality, not an ontic ladder
+## 1. Primitive Generation: Source, Extraction, and Global Orientation (`T3-04 D`, `T3-01 C/E`, `3A`)
 
-The canonical master reading is:
+SRT does not treat its own theoretical vocabulary as exhausting reality. It coordinates three distinct roles without positing a second substance or a fourth parallel selecting agent:
 
-```text
-Selection reality
-├─ open / non-preclosed / non-flat aspect
-├─ actualising event-cut / determinate manifestation
-├─ retained historical efficacy, where established
-├─ recurrent self-conditioning / One formation
-│  └─ formed operative locality / Selection-position
-├─ stronger recurrent standing / Stable ISP
-├─ prospective self-exposure / Bearer
-├─ reflexive condition-rewriting / Agency
-└─ Selection constraining Selection / normativity routing
-```
+| Role | Positive Theoretical Burden | Boundary & OPEN Status |
+|---|---|---|
+| **神性·源义（Generative Source）** | Points to the real generative source that cannot be exhausted by current human cognition, formalization, or objectifying description. | Not a second substance standing outside Selection; not an anthropomorphic chooser or external utility optimizer. |
+| **原初 `Selection`（Primitive Selection）** | SRT's most fundamental **theoretical extraction perspective** into that source (`T3-04 D`): finite-position-indexed, subjectless, genuine actualised non-neutral generative differentiation. | Current common ontological starting point, not an exhaustive final definition; retains an **inner generative process** (endogenous, position-participating; pre-phenomenal character remains `OPEN`, `R3-03-O4`). |
+| **神性·倾向义（Global Optimizing Orientation）** | Tracks the foundational open question of whether cross-scale generation carries an **objective intrinsic global optimizing orientation**. | **`T3-01` explicitly OPEN**: author retains strong inclination between `C` (unified global optimizing principle with shared objective metric basis) and `E` (unified generalized free-energy / opportunity-cost / extremal principle). Must **not** be deflated into purely local adaptation or mere epistemic humility; strictly separated from moral/evaluative global-optimum claims (`Core/SRT_OPEN_TENSIONS.md §17 C-A`, `PT10 E`). |
+| **整体共同生成视域（Holistic Co-Generative Perspective）** | Examines from cross-scale, cross-position relations how local selections participate in, constrain, and are co-shaped by wider generation. | Replaces the retired canonical term「神择」(which remains valid solely as historical source-intuition and *From Existence to Order* book vocabulary, never as a fourth parallel agent alongside physical/biological/human selection). Not reducible to simple cooperation among pre-formed units. |
 
-This is a **typed structural map**, not a claim that every Selection must pass through every branch or stage.
-
-The map asserts one generative mode with distinguishable organizations. It does not introduce a substance called `Selection-stuff`, and it does not erase differences among event, history, formation, standing, bearing, agency and normativity.
-
-### Formation-route boundary
-
-Within the universal formation problem handled by this spine, the first universal formed recurrent organization is **One**. Stronger standing, bearing and agency remain separately gated.
-
-So replace the older shorthand `the universal route stops at One` with:
-
-> **One is the first universal formed recurrent Selection-organization admitted by this formation route; reality does not stop at One, and downstream standing is not automatic.**
-
----
-
-## 2. Primitive Selection — one reality, two co-primitive analytic burdens
-
-Primitive Selection is subjectless and finite-position-indexed.
-
-At minimum:
+### 1.1 Co-Primitive Analytic Faces (`O0 / S0`) and Term-of-Art Guard
 
 ```text
 primitive Selection
-= reality under genuine actualised non-neutral generative differentiation.
+= reality under genuine actualised non-neutral generative differentiation
+= co-primitive analytic faces {
+    O0 (non-maximal indifference / openness):
+      reality is neither exhausted by completed determinate actuality
+      nor preclosed by a pre-given outcome structure;
+    S0 (actualising Selection):
+      a finite-position-indexed determinate difference becomes manifest / operative
+      together with Selection-relative backgrounding
+  }
 ```
 
-### 2.1 Selection term-of-art guard
-
-The word `Selection` here is an SRT primitive, not conventional option-choice language.
-
-```text
-Selection
-!= picking from a pre-given menu;
-Selection
-!= arbitrary descriptive / modelled change;
-Selection occurrence
-!= retained historical efficacy
-!= sedimentation
-!= generative inheritance.
-```
-
-A prior option space is not required. Positions, alternatives, relations and reachability can themselves become differentiated through Selection.
-
-Terminal Selection remains genuine: a Selection occurrence does not require a later process in which sediment can persist. Where prior Selection remains materially effective later, that stronger burden belongs to retained historical efficacy / L2-side history.
-
-The exact anti-tautology criterion separating genuine actualised Selection from merely descriptive / modelled change remains OPEN. Do not resolve that OPEN problem by reintroducing retained consequence as a primitive occurrence requirement.
-
-Two co-primitive analytic burdens are required:
-
-```text
-O0 — non-maximal indifference / openness
-= Selection reality is not exhausted by completed determinate actuality
-  and is not fully preclosed by an already-given outcome structure;
-
-S0 — actualising Selection
-= a finite-position-indexed determinate difference becomes manifest / operative
-  together with Selection-relative backgrounding.
-```
-
-Hard guard:
-
-```text
-O0 before S0: NO;
-S0 before O0: NO;
-O0 causes S0: NO;
-S0 produces O0: NO.
-```
-
-O0 and S0 are two co-primitive analytic faces / burdens of primitive Selection reality, not two primitive mechanisms or two substances. This records the current burden separation: `O0 -> S0` reduction and `S0 -> O0` reduction are both NOT ESTABLISHED, while mutual irreducibility is NOT PROVEN.
-
-`Oriented Openness` may continue as a routing label for the O0 face. It is not a prior field, container, option menu, probability distribution, vector toward an endpoint, semantic order, moral value or continuation preference.
-
-Exact inheritance of `kappa_0`, `epsilon_pg`, irreversibility and stronger formal realizations remains separately owned and OPEN where not already adjudicated.
+Hard boundaries:
+- `O0` and `S0` are co-primitive analytic faces, not sequential mechanisms (`O0 before S0: NO`; `O0 causes S0: NO`).
+- **Not menu-picking**: pre-given alternatives, state spaces, or prior choosers are not required; alternatives, positions, and reachability structures can themselves be Selection-generated.
+- **Terminal Selection remains genuine**: an actual Selection occurrence does not require durable sediment, retained history, or subsequent consequence (`actual occurrence != retained historical efficacy`). The exact anti-tautology boundary separating genuine actualised Selection from merely descriptive/modelled variation remains `OPEN` (`R3-01-O1`).
+- **Operator non-identity**: `primitive Selection != Ghost Operator (\hat{G}_\theta)`. Formal operators model formed/domain realizations and are never the prior ontic cause of Selection.
 
 ---
 
-## 3. Actualising Selection and existence
+## 2. Dynamic Three-Relation Architecture and Three Recursive Axes
 
-An actualising Selection event is:
-
-```text
-finite-position-indexed subjectless actual differentiation
-= determinate manifestation
-= relative backgrounding
-= event-level verticality as structural reading.
-```
-
-These are readings of the same event, not successive universal operations.
-
-Canonical existence reading:
+Rather than a linear ontic ladder, SRT organizes cross-scale generation through **three mutually generative dynamic relations** (neither three ontic substances nor a compulsory sequence that every Selection event must traverse):
 
 ```text
-manifest existence
-= Selection under determinate actuality.
+                  ┌─────────────────────────────────────────────────┐
+                  │  1. 差异的生成 (Generation of Difference)        │
+                  │  non-flat actualisation · fluctuation ·         │
+                  │  horizontal co-presence × vertical retention    │
+                  │  tilting & shiftability                         │
+                  └───────────────────────┬─────────────────────────┘
+                                          ▲
+                condition rewriting       │       endogenous comparison,
+                reshapes tilting,         │       differentiation × normalization,
+                comparison scales &       │       assembly & coupling
+                positions                 ▼
+  ┌──────────────────────────────────┐    ┌──────────────────────────────────┐
+  │ 3. 生成条件的递归重构              │◄──►│ 2. 差异的比对与组织                │
+  │ (Recursive Reconstitution of     │    │ (Comparison & Organization of    │
+  │  Generative Conditions)          │    │  Difference)                     │
+  │ retained history (L2) · scaffolds│    │ One (existence & order views) ·  │
+  │ trust & institutions · norms ·   │    │ identity · cross-scale 5 mechs · │
+  │ freedom · 2nd-order re-selection │    │ non-managerial alignment         │
+  └──────────────────────────────────┘    └──────────────────────────────────┘
+                      ▲  foreground ⇄ background sedimentation   ▲
+                      └─── & vertical generation hub (2 ⇄ 3) ────┘
 ```
 
-Pedagogical phrases such as `Selection produces existence` are allowed only if they do not imply a factory/product ontology in which Selection happens first and deposits an independently different ontic material called existence.
+### 2.1 The Three Dynamic Relations
 
-Guards:
+1. **差异的生成（Generation of Difference）**：非平坦实际化分化、无预设目的的涨落探索，以及横向共在约束 × 纵向留存约束形成的原始倾斜性与可偏移性。
+2. **差异的比对与组织（Comparison and Organization of Difference）**：在有限位置与耦合关系中涌现内生比对、差异化与归一化的跨尺度互促（局部归一化可催生更高尺度的新差异化）、装配与有效作用接口、相对独立垂直生成组织（`One`）与秩序结构、同一性以及高阶非管理者对齐（对齐 ≠ 同质化）。
+3. **生成条件的递归重构（Recursive Reconstitution of Generative Conditions）**：当先前选择的差异得以留存并持续生效时，历史（`L2`）、公共脚手架、信任分配、规范制度、自由调节与二阶/反身再选择反过来改写后续选择得以发生的边界、可达空间、位置结构与**比对尺度本身**。
+- **贯通枢纽（`② ⇄ ③`）**：**前背景转换与垂直生成**同时活跃于关系 ② 与 ③。前景对齐成果沉淀为背景能力、自动化路径或公共脚手架，释放生成盈余，并在新的价值比对或选择压力下重新进入前景。
 
-```text
-Selection != conscious choice;
-Selection != correct-option retrieval;
-manifestation != permanent existence;
-backgrounding != annihilation;
-finite position != formed One / Selection-position / subject-position;
-Selection occurrence != anchoring persistence.
-```
+### 2.2 Three Recursive Generative Axes & Three Unifying Generative Mechanisms
 
-### Primitive Selection vs formal operator
+Across scales, the three dynamic relations manifest three recurring generative loops (each carries a distinct theoretical burden and is not reducible to the others):
 
-```text
-primitive Selection != Ghost Operator / G-hat_theta.
-```
+1. **方向递归轴**：方向既是选择的结果，也是后续选择的条件。
+2. **价值递归轴**：价值既是比对的结果，也能反过来改变比对本身（包括改写比对的维度、尺度与哪些差异能够进入比对——即**比对本身的生成性**）。
+3. **存在递归轴**：存在（相对独立的生成组织）既是生成关系的组织结果，也能以相对独立的位置反向参与并改变后续生成（须由组织连续性检验与机会/后果变化检验双轨独立确立，防止存在与价值循环互定义）。
 
-A formal or embodied operator may model a formed or domain-specific Selection organization. It must not be back-read as the prior chooser or ontic cause required for primitive Selection to exist.
+Three unifying positive generative mechanisms bind these axes across physics, life, cognition, and social order:
+- **依赖重组生成相对独立性（Dependence Reorganization → Relative Independence）**：相对独立性不是通过减少依赖获得，而是通过局部生成条件经内生比对与垂直组织重组为共同生成条件而涌现（局部更深的相互依赖反而支撑更高尺度的相对独立与新有效接口）；由此存在研究从“对象是什么”转向“组织如何生成自身的相对独立性”。
+- **比对本身生成新机会（Comparison Generates New Opportunities）**：价值研究不仅考察既有路径的取舍，更考察跨位置/跨关系的比对如何改变可比对维度与关系结构，从而生成原先不存在的新价值空间与现实可承接机会。
+- **生成结果反过来重构生成条件（Generated Results Reconstruct Generative Conditions）**：历史（`L2`）、脚手架、认知框架、制度规范与自由调节使先前生成的结果参与改写后续选择的条件本身；由此自由研究从“有多少既定选项”转向“组织如何参与生成新的选择条件”。
+
+### 2.3 Unabsorbed Positive Burdens of Yin-Yang & Historical Ghost Intuition (`R3-08`, `07-19` / `07-27`)
+
+Replacing the old linear operator pipeline (`L0 -> Ĝ_θ -> L1 -> L2`) with recursive generative relations does **not** discard the positive theoretical burdens historically carried by **Yin-Yang (阴阳)** and **Ghost (幽灵)** source intuition; they are explicitly routed and preserved here:
+
+1. **阴阳（Yin-Yang）——非穷尽生成极性与构成性背阴面**：前背景分化不是静态开关，而是显现前景与**构成性背阴面（active constitutive background support）**的相互构成与持续转化（如山脊阳面赖背阴面支撑），二者在持续动态耦合中可相互转化而不设固定内外墙。
+2. **幽灵（Ghost）历史源直觉的五位职责分流（`R3-08 §四` + `07-19` / `07-27`，`T-GH-01..07` 保持 `OPEN`）**：严守 **`\hat{G}_\theta`（条件性形式参数载体）$\neq$ 原初 `Selection` $\neq$ 幽灵实体**，并禁止将 Ghost 压成单一神秘黑箱；须严格区分 ① **尚未被当前组织充分承接的未尽生成关系**、② **这些关系继续作用时形成的非闭合压力与张力**、③ **有限认知位置对之形成的对象化描述**，同时保留以下四项正面理论职责：
+   - **对象—摩擦持续互写（`07-19 X5` / 持续动态平衡）**：废除机械的“关闭 → 触发 → 重新开放”开关模型，转向相对稳定秩序在持续动态互写中维持并改写自身组织方式（同时兼容动力学层面的滞回、结构势垒与非线性重构窗口）；
+   - **构成性背阴面主动支撑**：背景条件不仅是被动痕迹，而是持续参与托举与约束前景生成的活跃条件；
+   - **非闭合压力**：当前组织无法充分承接的生成关系持续施加的重构压力；
+   - **`U5` 选择机制绝对化（严守 `U5 ≠ U6`，`2026-07-27` 校正）**：已形成的耦合组织方式退出有效再比对、获得事实上的自我豁免（即使系统仍高频局部调整策略）；反绝对化不写成必然定理，操作化判据保持 `OPEN`。
 
 ---
 
-## 4. History — prior Selection remaining effective
+## 3. Actualising Selection, Existence, and History (`L1 / L2` Entry)
 
-History / writeback is not a second ontic material and is not automatically produced as durable history by every Selection event.
+### 3.1 Determinate Actuality and Manifest Existence
 
-Canonical routing:
-
-```text
-prior Selection
--> may leave retained differences
--> where retention is established, those differences materially alter later Selection conditions
--> prior Selection is then historically effective in later Selection.
-```
-
-Therefore:
+At event level, finite-position-indexed subjectless actual differentiation, determinate manifestation, relative backgrounding, and event-level verticality are structural readings of one Selection event:
 
 ```text
-history
-= prior Selection remaining materially effective in later Selection conditions,
-  where such efficacy is established.
+manifest existence = Selection under determinate actuality.
 ```
 
-Keep distinct:
+Manifestation does not imply permanent existence; backgrounding is not annihilation; finite positionality is not formed `Selection-position`, `One`, `Bearer`, or subjecthood.
+
+### 3.2 History as Retained Generative Efficacy
+
+History is not a second ontic container and is not automatically produced by every Selection event:
 
 ```text
-actual occurrence
-!= durable / localized history;
-
-irreversible ontic non-equivalence
-!= anchoring
-!= recurrent historical efficacy.
+history = prior Selection remaining materially effective in later Selection conditions,
+          where such retention / efficacy is established.
 ```
 
-History can condition later Selection without becoming the source of primitive Selection itself.
+Keep distinct: `actual occurrence != durable/localized trace != recurrent historical efficacy != anchoring persistence`. In applicable models, historical efficacy separates non-negative path trace density (`ρ ≥ 0`) from revisable trust weighting (`w_trust` / social staying power, which also includes institutional constraints and coercive path-dependence beyond trust alone; detailed in `Core/SRT_Core_12b_Ontology_L2.md`). Time is routed as a relational ordering/measure dimension of generative order (horizontal transition and vertical reconstitution), not a pre-given physical container (`Philosophy/SRT_Causality_Time.md`, `P1-T02`).
 
 ---
 
-## 5. Recurrent Selection organization and One
+## 4. Opportunity-Cost Dynamic Quartet and Realization Constraints
 
-One-shot Selection is insufficient for One formation.
+### 4.1 Ontological Source Boundary (Anti-Optimization-Presupposition Guard)
 
-Cross-owner minimum remains:
+**Critical boundary**: The opportunity-cost quartet does **not** retroactively define primitive `Selection`. Primitive non-flat differentiation is the *ontological source condition* enabling concrete opportunity-cost structures to arise; concrete comparable opportunity-cost spaces themselves emerge only under formed organizational and comparative relations. SRT studies **how opportunity-cost structures and comparative criteria are generated**, rather than presupposing a pre-given, universally comparable optimization space at `O0`.
 
-```text
-Selection-generated organization_t
--> materially conditions later Selection_(t+1)
--> later Selection generates renewed organization_(t+1)
--> renewed organization can again carry the relevant conditioning role
--> recurrent non-equivalent reconstitution can support relative continuation separability
--> One.
-```
+### 4.2 The Four Dynamically Coupled Properties (No Fixed Linear Causality)
 
-Metaphysical reading:
+Once comparative and organizational relations are formed, four core generative properties dynamically co-determine one another across scales without a fixed one-way causal sequence:
 
-> **One is not a second ontic material added after Selection. One is Selection acquiring a relatively separable recurrent self-conditioning organization.**
+| Property | Positive Generative Role | Canonical / Local Owner & Key Boundary |
+|---|---|---|
+| **价值（Value）** | Objective difference in generative opportunity costs across generative relations, together with positional comparative extraction (`PT05 C`); spans discovered, generated, and recursively reconstructed opportunities. | `_SRT_D_VALUE_CANONICAL.md` (with `R3-06` three opportunity modes & three analytical faces). Strictly separate from order health and ethical legitimacy (`PT10 E`); primitive-level value status remains `OPEN` (`R3-06-O1`). |
+| **关切（Concern）** | Sensitivity of a formed organization to generative opportunity costs (`PT06 C`); organizes foreground–background orientation and comparative attention. | `_SRT_D_VALUE_CANONICAL.md`. **Distinct from canonical `d`**: current `d = ‖∂U/∂S‖` (irreversible-risk sensitivity at a stake-bearing position) stands in a **pending conceptual interface** with generalized concern (`P1-05`), and is strictly separated from `D_stake`, `D_eff`, `T_dir`, and constitutive depth (`Q1`). |
+| **摩擦（Friction）** | **Actual selection pressure** generated by opportunity-cost differences (`T3-02 D`): opportunity loss does not automatically constitute friction; it forms friction only when that loss materially impacts generative relations and subsequent selections. Multi-unit vertical suppression and lost alternatives (`PT09`) constitute a paradigmatic cross-scale mechanism. | `_SRT_PSI_F_CANONICAL.md`. Strictly preserves the 4-way friction distinction (`R3-08`: general friction / non-closure pressure / payability burden `Ψ_f` / subjective suffering) and pairs the **pressure side** (opportunity loss / structural pressure / predictive pressure / realization burden) with the **supply & payability-window side** (`Ψ_f` / `P_sel`). Does not overwrite `_SRT_PSI_F_CANONICAL.md` or equate `Ψ_f` with raw metabolic expenditure. |
+| **自由（Freedom）** | Active capacity to regulate and reorganize one's generative opportunity-cost structure on the basis of value and concern (`T3-03 C`)—reorganizing friction-generating relations and comparing across multiple units to generate new order and direction (`Q26`). | Cross-owner interface (`Philosophy/` & `One_Formation`). Not reducible to randomness, primitive openness (`O0`), generic coupling, or strong second-order selection (`R3-CL-O8`). Organizational freedom is ontologically neutral; ethical autonomy is separately constrained by `O2-A / O2-C`. |
 
-This compression does not replace `Core_Law/SRT_One_Formation.md`, which remains the detailed local owner.
+### 4.3 Realization Constraints, Irreversibility, and the Reef Principle
 
-Keep:
+All formed generation operates under endogenous realization constraints (distributed across the full generative relation, not supplied solely by an isolated unit), payability ceilings (`Ψ_f` payability window), ontic irreversibility (`Core_Law/SRT_Irreversibility.md`), and the symmetric underside of **overload dissolution and lineage termination** (`dissolution != lineage termination`; termination includes overload collapse, active ending, and structural transformation). Throughout, the **Reef Principle (暗礁原理)** holds: *objectification and normalization from any single finite position never exhaust other generative positions or their actual interactions*.
+
+---
+
+## 5. Existence & Order Unity (`One`), `Selection-position`, and Cross-Scale Mechanisms (`2A`)
+
+### 5.1 `One`: Existence Perspective and Order Perspective (No Extra Ontic Noun)
+
+Within the universal formation problem, the first universal formed recurrent organization is **`One`**:
+
+> **`One` is a relatively separable vertical generative organization carried by recurrent Selection-mediated self-conditioning / reconstitution.**
+
+**Existence** and **Order** are two analytical perspectives on dynamic generative organization, **not** two separate ontic materials and **not** a reason to coin a second noun alongside `One`:
+
+| Analytical Perspective | What It Examines | Scope |
+|---|---|---|
+| **存在视角（Existence Perspective）** | How a relatively independent vertical generative organization (`One`) forms, maintains itself, and continues across change. | Focuses on vertical reconstitution, relative continuation separability, and organizational continuity. |
+| **秩序视角（Order Perspective）** | How generative relations develop, bias direction, transform, and recursively reconstruct themselves across three dimensions: **maintenance constraints / directional bias / generative reconstruction**. | Applies both to the internal dynamics of a single `One` **and** to relations among **multiple `One`s** and the emergence of **new higher-order organizations** (order is not merely a subordinate attribute of one isolated `One`). |
+
+`Core_Law/SRT_One_Formation.md` is the detailed canonical owner of `One`, `Selection-position`, existence/order perspectives, generative normalization thresholds, and vertical reconstitution. Keep strictly:
 
 ```text
 Selection event != One;
-generic causal recurrence != One;
-ordinary path dependence != One;
-role recurrence != token identity;
-One != Stable ISP / Bearer / subject / consciousness / phenomenality.
+generic causal recurrence / ordinary path dependence != One;
+One != Stable ISP != Bearer (P+E) != Agency != subject / consciousness / phenomenality.
 ```
 
-Exact One boundary, unit identification, strict identity and branch / merge attribution remain OPEN.
+### 5.2 Formed `Selection-position`
+
+For an already formed `One`, `Selection-position_t` is the time-local operative `from-where` through which that organization participates in current Selection (`Selection-position != prior chooser object != perspective-bearing subject-position != Bearer automatically`). Keep separate: `Selection affecting later selectability != formed-position anticipation != prospective self-indexing P != Bearer without E`.
+
+### 5.3 Five Distinct Cross-Scale Mechanisms (Do Not Collapse into One)
+
+Cross-scale vertical generation is never collapsed into a single generic label ("normalization" or "coupling"). Five distinct structural mechanisms retain independent explanatory duties across relations ② and ③:
+
+1. **装配（Assembly）**：多单元组合产生新的整体组织与能力（形成新能力未必归一化，亦未必成 `One`）。
+2. **归一化（Normalization）**：区分为认知表征 / 实际耦合 / 组织生成三类，并以**压缩型归一化**与**生成型归一化**（内部耦合重构 + 跨位置条件化生效双门槛）严格分界。
+3. **有效作用接口（Effective Action Interface）**：形成后的整体以相对独立身份参与他处生成并产生新后果的接口。
+4. **代理转承（`Proxy`）**：生成关系中的中介转承机制（不以主体意识为前提）。
+5. **委托关系（`Delegation`）**：涉及主体性与规范约束条件的责任/行动委托关系（须独立满足下游主体与规范门槛）。
 
 ---
 
-## 6. Selection-position, perspective and anticipation
+## 6. Independent Downstream Gates (Non-Linear, Independently Paid)
 
-### 6.1 Finite positionality
+Abolishing the old linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) does **not** abolish the independent theoretical duties of stronger organizational standings. Each standing below is independently gated and **never** automatically entailed by upstream formation:
 
-Every primitive Selection is finite-position-indexed.
+### 6.1 `Stable ISP` — Stronger Recurrent Standing (`P1-T06`)
 
-```text
-finite positionality
-!= formed One
-!= formed Selection-position
-!= perspective
-!= Bearer
-!= subjecthood.
-```
-
-Finite positionality supplies event-local finitude / indexing, not formed locality or cross-time identity.
-
-### 6.2 Formed Selection-position
-
-For an already formed One, `Selection-position_t` is the time-local operative `from-where` through which that recurrent Selection organization participates in current Selection.
-
-Metaphysical reading:
-
-```text
-Selection-position
-= formed operative locality of recurrent Selection;
-!= an independently prior selector object.
-```
-
-### 6.3 Perspective and anticipation
-
-A stronger One-level perspective may be present when the formed organization is load-bearing in later manifestation, backgrounding or selectable-space organization. Universal sufficiency remains NOT ESTABLISHED.
-
-Keep separate:
-
-```text
-Selection affecting later selectability
-!= formed-position anticipation automatically;
-
-formed-position anticipation
-!= prospective self-indexing P automatically;
-
-P
-!= Bearer without E.
-```
-
----
-
-## 7. Stronger recurrent standing — Stable ISP
-
-Stable ISP is not a new ontic material and is not the cause of One formation.
-
-At routing strength:
+`Stable ISP` is not a new ontic material and is not the cause of `One` formation. At routing strength:
 
 ```text
 Stable ISP
 = stronger recurrent standing of a formed Selection organization,
-  including the conditions owned by P1-T06.
+  including the historical reconstitution, perspective/history-bearing,
+  and continued-selectability conditions owned by P1-T06.
 ```
 
-P1-T06 remains the detailed standing owner. This spine does not weaken its recurrent historical reconstitution, perspective/history-bearing and continued-selectability burdens.
+`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` remains the detailed standing owner. Strictly preserve:
 
 ```text
 One != Stable ISP;
@@ -1720,51 +1657,28 @@ Stable ISP != Bearer;
 Stable ISP != subjecthood automatically.
 ```
 
----
+### 6.2 `Bearer (P+E)` — Prospective Self-Exposure (`2A`)
 
-## 8. Bearer — prospective self-exposure remains separately gated
-
-The canonical Bearer route remains:
+`Bearer` retains its focused strong-bearing canonical route:
 
 ```text
 formed One / Selection-position + P + E -> Bearer.
 ```
 
 where:
+- **`P` (prospective self-indexing)**: future branches differ by what this continuing `One` itself may undergo, preserve, lose, enable, or become unable to continue;
+- **`E` (same-One prospective exposure)**: at least some such potential consequences genuinely expose that same `One` and cannot be completely outsourced while claiming the same `Bearer` relation.
+
+External normalization never erases internal non-outsourcable breakdown. Positive independently applicable establishment of `E` remains `OPEN` (`R3-04-O3`). Strictly preserve:
 
 ```text
-P prospective self-indexing
-= future branches differ by what this continuing One itself may
-  undergo / preserve / lose / enable / become unable to continue;
-
-E same-One prospective exposure
-= at least some such potential consequences genuinely expose the same One
-  and cannot be completely reassigned while claiming the same Bearer relation.
+P alone != Bearer;  E alone != Bearer;
+Bearer -/> Concern / Agency / subjecthood / cognition / phenomenality automatically.
 ```
 
-Metaphysical reading:
+### 6.3 `Agency` — Partially Orthogonal Condition-Rewriting Capacities
 
-> **Bearer is a formed Selection organization under independently gated prospective self-exposure, not a new material added to One.**
-
-Keep exactly:
-
-```text
-P alone != Bearer;
-E alone != Bearer;
-Bearer -/> Concern automatically;
-Bearer -/> Agency automatically;
-Bearer -/> subjecthood / cognition / phenomenality automatically.
-```
-
-The non-outsourcing counterfactual remains a consistency / exclusion test for E, not a complete positive admission procedure. Positive independently applicable E establishment remains OPEN.
-
----
-
-## 9. Agency and reflexive condition-rewriting
-
-Agency is downstream and separately gated.
-
-At cross-owner routing strength only:
+`Agency` is downstream and separately gated as a partially orthogonal multi-dimensional capability space (functional control / generative initiative / bearing initiative / reflexive initiative / accountability), not a single rung above `Bearer`:
 
 ```text
 Agency
@@ -1773,167 +1687,93 @@ Agency
   once the relevant agency burdens are independently paid.
 ```
 
-This does not make all Selection agentic.
+Whether functional control or generative initiative requires `Bearer (P+E)` remains `OPEN` (`R3-04-O5`). `Selection-totality -/> pan-agency; Selection-totality -/> pan-consciousness`.
+
+### 6.4 Feeling, Cognition, Consciousness, and `HP-B` Independent Boundary
+
+Feeling is the actual unfolding and participation of the inner generative process at a cognitive position; cognition and consciousness are vertical generative organizations, not external passive readouts (`R3-03`). Yet **organizational coordination does not automatically entail phenomenality**: `Philosophy/SRT_HardProblem_Epistemology.md` (`B_s != B_p`, `HP-B OPEN`) and `Core_Law/SRT_Suffering.md §7` (neither `Stable ISP` nor architecture tiers alone close suffering qualification) remain independent boundaries.
+
+### 6.5 Normativity Routing (`O1 / O2-C / O2-A` and `O2-M = HOLD`)
+
+Primitive Selection carries no primitive moral content (`actual occurrence != correctness != legitimacy`; `continuation != goodness`; `more options != better`; `generative optimization != ethical legitimacy`, `PT10 E`). Because formed and relational Selection can alter the conditions under which further Selection proceeds, normativity becomes possible along four strictly typed routes:
 
 ```text
-Selection-totality -/> pan-agency;
-Selection-totality -/> pan-consciousness.
+formed-position Selection          -> O1 indexed generative comparison;
+relation-transforming Selection    -> O2-C constitutive relation-integrity constraints;
+agency-qualified relation-rewriting -> O2-A answerability (independent of O2-M);
+all-things-considered cross-position moral conflict -> O2-M = OPEN / HOLD.
 ```
-
-Cognition, subject-position, phenomenality and experiencer status remain separately gated downstream questions.
 
 ---
 
-## 10. Selection reflexivity and normativity routing
+## 7. `L0 / L1 / L2` Analytic Aspect Routing
 
-Normativity is not primitive moral content attached to occurrence.
-
-Permanent guards:
+`L0`, `L1`, and `L2` are **three analytic / model-facing aspects of one Selection reality**, never three ontic substances or a compulsory three-stage warehouse pipeline:
 
 ```text
-primitive Selection != ought;
-actual occurrence != correctness;
-actual occurrence != legitimacy;
-continuation != goodness;
-more options != better;
-more Selection != better.
+L0-side = Selection in its open / non-preclosed generative aspect relative to determinate actuality;
+L1-side = Selection under determinate manifestation / actuality;
+L2-side = prior Selection remaining effective as retained constraint / sediment / history on later Selection.
 ```
 
-Current routing is:
-
-```text
-formed-position Selection
--> O1 indexed generative comparison may become possible;
-
-relation-transforming Selection
--> O2-C constitutive relation-integrity constraints may become possible;
-
-agency-qualified relation-transforming Selection
--> O2-A answerability may become possible;
-
-O2-M all-things-considered cross-position conflict
-= OPEN / HOLD.
-```
-
-Core source-condition claim:
-
-> **Selection is the ontological source-condition of normativity because formed and relational Selection can alter the conditions under which Selection itself proceeds; no primitive moral content is thereby placed at O0.**
-
-This spine routes the relation only. Detailed O1 / O2-C / O2-A semantics remain with their appropriate downstream owner / future landing.
+Scoped formal objects named `L0`, `L1`, and `L2` remain valid inside declared domain models (owned by their formal/reference anchors) and must not back-define this metaphysical routing.
 
 ---
 
-## 11. L0 / L1 / L2 aspect routing
+## 8. Positive Generative Frontiers & Facet-Before-Kind Discipline
 
-At cross-owner metaphysical strength:
+### 8.1 Open Positive Generative Candidates (R4/R5 Research Frontiers, Non-Axiomatic)
 
-```text
-L0-side
-= Selection in its open / non-preclosed generative aspect relative to determinate actuality;
+To prevent canonical hardening from closing live generative inquiry, three AI/author-synthesized candidate mechanisms are routed here strictly as **open positive research frontiers** (not axioms, not exhaustive classifications, not proven laws):
+1. **Dual-engine dimensional transition (non-exhaustive)**: (a) *orthogonalization under vertical suppression* (persistent friction drives mediation/compartmentalization/symbolic decoupling into a new low-interference dimension); (b) *surplus cross-domain discovery* (automation/backgrounding lowers maintenance opportunity cost, releasing surplus for free multi-unit comparison without crisis).
+2. **Quartet co-variation (non-necessarily synchronous)**: during condition reconstruction, value metric, concern scope, friction source, and generative position may vary independently or co-vary in specific transitions.
+3. **Generativity of comparison itself**: recursive condition reconstruction alters not only costs and reachable states, but the very **dimensions, scales, and objectifications** by which subsequent comparison operates (`R3-CL-O8`).
 
-L1-side
-= Selection under determinate manifestation / actuality;
+### 8.2 Facet-Before-Kind Governance Guard
 
-L2-side
-= prior Selection remaining effective as retained constraint / sediment / history on later Selection.
-```
-
-These are not three ontic substances or warehouses.
-
-Formal domain objects named `L0`, `L1` and `L2` may remain useful in scoped models. Their exact equations and realization semantics are owned by the relevant formal / reference owners and must not back-define this metaphysical routing.
+Before introducing a new repo-wide ontological noun: (1) state its distinct structural burden; (2) test whether it is a mode, perspective, organization, or relation of Selection; (3) add a new ontic kind only if that reading fails under explicit argument.
 
 ---
 
-## 12. Facet-before-kind governance guard
+## 9. OPEN Register (Cross-Owner)
 
-Before adding a new ontological noun, require:
+This spine preserves all 63 deduplicated R3 `OPEN` items (`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md` View ④) without closing any by rewording. Key cross-owner gates include:
 
 ```text
-1. state the distinct structural burden;
-2. test whether it is a mode / organization / relation / stage of Selection;
-3. create a new ontic kind only if that mode reading fails under explicit argument.
+T3-01 C (global optimizing principle) vs E (global extremal principle) & relation to C-A;
+anti-tautology boundary between genuine actualised Selection and merely descriptive/modelled change;
+whether primitive inner generative process includes any pre-phenomenal character (R3-03-O4);
+exact primitive Selection vs operator-carrier (\hat{G}_\theta) formalization;
+exact L0/L1/L2 aspect-vs-domain crosswalk & kappa_0 / epsilon_pg inheritance;
+formal N&S One theorem, exact boundary / unit identification, strict & branch/merge identity;
+non-circular independent criteria for existence continuity vs value opportunity-change & generative normalization;
+positive E establishment & Bearer <-> Concern / Agency / cognition / consciousness necessity directions;
+R3-CL-O8 five independent sub-questions (freedom conditions, freedom vs strong 2nd-order selection, dual-engine transitions, quartet co-variation, recursive generation of comparison scales);
+HP-B phenomenality / experiencer transition & PT07 bce undecided inclination;
+O2-A exact sufficiency & O2-M cross-position moral conflict (HOLD);
+cross-domain scientific distinctiveness, Level 2 / HOLD exit, and whole-architecture non-substitutability.
 ```
-
-This is an anti-objectification and anti-concept-inflation burden rule. It is not a proof that no further ontic distinction can ever be justified.
-
-If a proposed concept adds no independently stateable burden beyond `Selection occurred`, merge, demote or remove it rather than retaining a pseudo-layer.
 
 ---
 
-## 13. OPEN register
-
-This spine leaves open, among other existing gates:
-
-```text
-exact formalization of Selection-totality;
-exact L0/L1/L2 aspect-vs-domain crosswalk;
-exact primitive Selection vs operator-carrier formalization;
-formal N&S One theorem;
-exact One boundary / unit identification;
-strict and branch / merge identity;
-universal One-level perspective sufficiency;
-positive E establishment;
-formal cross-domain P+E Bearer theorem;
-Bearer <-> Concern / Agency / cognition / subject-position;
-positive subject-position gate;
-phenomenality / experiencer transition;
-collective subject sufficiency;
-exact normativity owner placement / O1-O2-C formal landing;
-O2-M cross-position moral conflict;
-epsilon_pg / kappa0 inheritance into stronger formed asymmetries;
-new Level 1;
-Level 2 / HOLD exit;
-scientific distinctiveness;
-whole-architecture non-substitutability.
-```
-
-Existing OPEN items not contradicted here remain OPEN even if omitted from this compact list.
-
----
-
-## 14. Citation rule
+## 10. Citation Rule
 
 Use this file first for:
+- unified recursive generative ontology routing (`差异生成 ⇄ 差异比对与组织 ⇄ 生成条件递归重构`);
+- source / theoretical extraction / global orientation coordination (`神性·源义 / 原初 Selection / 神性·倾向义 / 整体共同生成视域`);
+- three recursive axes, opportunity-cost dynamic quartet boundaries, and cross-scale five-mechanism separation;
+- existence vs order perspectives on `One` and cross-owner non-identities (`One != Stable ISP != Bearer (P+E) != Agency != subject/consciousness`);
+- five-layer evaluative separation, normativity routing (`O1 / O2-C / O2-A / O2-M=HOLD`), and `L0/L1/L2` aspect routing.
 
-- Selection-totality cross-owner ontology routing;
-- structural-mode non-identities;
-- primitive Selection vs actualising event-cut vs recurrent organization;
-- history as retained Selection efficacy;
-- One / Stable ISP / Bearer / Agency cross-owner routing;
-- Selection-reflexivity as the source-condition route to normativity;
-- L0/L1/L2 aspect-level routing;
-- facet-before-kind guard.
-
-Then follow local owners for detailed definitions and admission criteria.
-
-For One:
-
-```text
-Core_Law/SRT_One_Formation.md
-= detailed One / Selection-position owner.
-```
-
-For Stable ISP:
-
-```text
-P1-T06
-= stronger recurrent-standing owner.
-```
-
-For Bearer:
-
-```text
-formed One / Selection-position + P + E -> Bearer.
-```
-
-For ongoing landing:
-
-```text
-this Spine = current cross-owner canonical routing authority;
-compatible local detail = retained;
-conflicting excess inference = bounded cleanup / retyping debt;
-OPEN = open until separately adjudicated and landed.
-```
+Then follow the detailed local canonical owners:
+- Primitive metaphysical floor: `Core_Law/SRT_L0_Metaphysics.md`
+- `One`, existence/order perspectives, vertical reconstitution & `Selection-position`: `Core_Law/SRT_One_Formation.md`
+- `Stable ISP` stronger recurrent standing: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`
+- `Bearer`: `formed One / Selection-position + P + E -> Bearer.`
+- Value, generalized concern, `d`, `D_stake`, `D_eff`: `_SRT_D_VALUE_CANONICAL.md`
+- Opportunity-cost friction, pressure/supply split & `Ψ_f`: `_SRT_PSI_F_CANONICAL.md`
+- Direction transparency (`T_dir`): `_SRT_T_DIR_CANONICAL.md`
+- Symbols & cross-domain usage discipline: `_SRT_SYMBOL_TABLE.md`, `_SRT_CROSS_DOMAIN_MATRIX.md`
 
 
 
@@ -2639,485 +2479,147 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 | epistemic_layer | os |
 | layer | L0 |
 | canonical(字段) | true |
-| last_commit | 2026-09-23 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT L0：选择的形而上学
-## Selection-totality / non-flat monism
+## Selection-totality / Non-Flat Generative Monism
 
-> **性质声明**：本文件是 SRT 的最底层形而上学约束面。它不以物理学、神经科学、信息论或任何形式模型为证明来源；形式化 owner 只能实现或展开这里的负担，不能反向定义它。
+> **性质声明**：本文件是 SRT 的最底层形而上学约束面（`Freeze A`），与 [`Core_Law/SRT_Generative_Ontology_Spine.md`](SRT_Generative_Ontology_Spine.md) 协同界定原初生成层。物理学、神经科学、信息论与形式化模型只能实现或展开这里的负担，绝不反向定义本文件。
 >
-> **2026-09-14 Selection-totality 校准**：SRT 不再把 L0 读成一个先在于 Selection 的可能性仓库，也不把 Selection 读成在一个更早现实里执行的操作。当前 canonical 读法是：**Selection 是现实的原初生成方式；所谓开放、显现、历史、形成与后续更强结构，是 Selection 在不同关系与组织条件下的可区分分面。**
-
-> **2026-09-22 / 2026-09-23 Selection 术语校准**：`Selection` 是 SRT 的自定义本体术语，不得默认还原为“在预先给定选项中挑一个”。同日后续作者裁决已明确修正早先过强表述：**Selection occurrence 是真实发生的 non-neutral generative differentiation；它不要求后续 sediment、retained historical efficacy 或 generative inheritance。terminal Selection remains genuine。** 但任意描述性变化 / 模型状态转换也不因此自动成为 Selection；两者的精确 anti-tautology 分界保持 OPEN。
+> **R4-A 校准（2026-11-26）**：整合 `R3-01`（原初 `Selection` 与终端发生）、`R3-03`（原初内在生成过程与前现象性质 `OPEN`）、`T3-04 D`（神性·源义与理论抽取谦逊边界）、`T3-01 C/E`（客观全局趋优开放追问）及 `3A`（退出「神择」正典词表，保留思想内涵与书稿溯源），同时严守机会成本结构由生成过程形成、不反向定义原初 `Selection` 的硬界线。
 
 ---
 
 ## Quick Reference
 
-- **Role**: unique L0 metaphysical anchor.
-- **Core claim**: reality is Selection under a non-flat, non-preclosed generative mode; determinate actuality is the actualising aspect of Selection, not a product external to it.
-- **Primitive burden**: O0 non-maximal indifference and S0 actualising differentiation are co-primitive analytic faces of primitive Selection, not two mechanisms.
-- **Occurrence boundary**: genuine Selection occurrence is not anchoring persistence, durable history, One, Stable ISP, Bearer or Agency.
-- **Term-of-art boundary**: Selection is not pre-given-option choice or arbitrary descriptive change; it requires genuine actualised non-neutral differentiation. Selection occurrence does not require retained historical efficacy, sedimentation or inheritance; the exact anti-tautology distinction from merely descriptive / modelled change remains OPEN.
-- **Position boundary**: every primitive Selection is finite-position-indexed, but finite positionality is not formed Selection-position or subject-position.
-- **Normativity boundary**: primitive Selection carries no primitive moral content.
-- **Formal boundary**: `G-hat_theta`, `kappa0`, `epsilon_pg`, L0/L1/L2 equations and domain models must not back-define this owner.
+- **Role**: Unique L0 metaphysical floor aligned with `Core_Law/SRT_Generative_Ontology_Spine.md`.
+- **Source vs. Extraction (`T3-04 D`)**: **神性·源义** points to the inexhaustible real generative source; **原初 `Selection`** is SRT's most fundamental theoretical extraction perspective into that source, not an exhaustive definition or second substance.
+- **Primitive burden**: `O0` (non-maximal indifference / openness) and `S0` (actualising differentiation) are co-primitive analytic faces of primitive Selection, not sequential mechanisms.
+- **Inner generative process (`R3-03`)**: Primitive Selection is endogenous and position-participating; mature feeling/cognition unfold downstream at cognitive positions; whether primitive inner process contains any pre-phenomenal character remains `OPEN` (`R3-03-O4`).
+- **Global orientation (`T3-01 C/E`)**: Whether cross-scale generation carries an objective global optimizing principle (`C`) or global extremal principle (`E`) remains explicitly `OPEN`—neither foreclosed nor deflated to local adaptation, and strictly separated from moral optimum claims (`C-A / PT10 E`).
+- **Opportunity-cost boundary**: Primitive non-flat differentiation is the ontological source condition for opportunity-cost structures, **not** a pre-given comparable opportunity-cost space.
+- **Occurrence & terminal guard**: Genuine Selection occurrence requires no pre-given menu, prior chooser, durable history, or sediment (`terminal Selection remains genuine`).
 
 ---
 
-## 一、选择不是现实中的一件事；选择是现实的生成方式
+## 一、来源、理论抽取与现实的生成方式（`T3-04 D`）
 
-SRT 的第一性倒置不是：
+SRT 拒绝“先有一个已完成的客体世界，再由某个在场主体从中挑选”的实体本体论前提，而主张：
 
-```text
-先有一个已经存在的世界
--> 其中某个主体进行选择
--> 世界被选择改变。
-```
+> **任何确定现实之所以成为确定现实，本身就是 Selection 的实际化分面；而且形成后的选择参与生成现实继续发生的条件。**
 
-而是：
+同时，SRT 对自身的理论概念保持本体—认识论清醒（`T3-04 D`）：
+- **神性·源义**：指向无法被现有认知、形式系统与对象化描述完全穷尽的真实生成来源（不设为独立于 Selection 的第二实体或拟人造物主）；
+- **原初 `Selection`**：是 SRT 目前理解该真实来源的最基础**理论抽取视角**，而不是宣称已穷尽来源的终极完备定义；
+- **整体共同生成视域**：从跨尺度、跨位置的关系考察局部选择如何参与整体生成（规范词表退出「神择」，保留其作为历史思想溯源与《从存在到秩序》书稿表达）。
 
-> **任何确定现实之所以成为确定现实，本身就是 Selection 的实际化分面。**
-
-因此，“选择先于存在”仍可作为教学性表达，但严格的形而上学读法不是时间上的先后，也不是工厂与产品的关系。
+### 原初 `Selection` 的最小界定
 
 ```text
-manifest existence
-= Selection under determinate actuality.
+primitive Selection
+= finite-position-indexed, subjectless, genuine actualised non-neutral generative differentiation
 ```
 
-Selection 不是从一个已完成对象菜单里拿出一个对象，也不需要一个更早完成的选择者。primitive Selection 在最小意义上是：
-
-> **有限位置索引、无须预设主体的实际分化；一个确定差异成为显现 / operative reality，同时建立相对于该 Selection 的背景化关系。**
-
-因此：
-
-```text
-actual differentiation;
-manifestation / relative backgrounding;
-event-level verticality
-```
-
-是同一次 Selection 的不同结构读法，不是连续发生的三种本体机制。
-
-### Selection 也不需要预先给定的选项
-
-传统 `selection` 往往假定：
-
-~~~text
-已经有 A / B / C
--> 某个机制选择其中之一。
-~~~
-
-这不是 SRT 的 primitive reading。
-
-当前 canonical 语义护栏：
-
-> **Selection 是真实发生的实际化非中立分化；它的发生不以后续生成中留下 sediment 为条件。**
-
-因此：
-
-~~~text
-pre-given alternatives are required: NO;
-possibility / reachability structure may itself be Selection-generated;
-arbitrary descriptive / modelled variation: NOT Selection merely by being a change;
-retained historical efficacy / sediment / inheritance: NOT REQUIRED FOR OCCURRENCE.
-~~~
-
-当 prior Selection 的效力后来仍然 materially effective 时，才进入 retained historical efficacy / sedimentation / L2-side history。该更强关系不是 primitive Selection occurrence 的定义条件。
-
-永久区分：
-
-~~~text
-retained historical efficacy
-!= anchoring persistence
-!= durable objecthood
-!= localized L2 record.
-~~~
-
-`terminal Selection remains genuine` 源自 2026-09-14 作者裁决的硬护栏（O0 primitive generativity §G / §L；Selection-totality §L），2026-09-22 同日后续作者裁决再次确认，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
-
-### 选择不需要选择者
-
-选择者、One、Stable ISP、Bearer、主体和 Agent 都可能在后续 Selection 组织中形成，但都不是 primitive Selection 的前提。
-
-所以：
-
-```text
-primitive Selection != action of a prior chooser;
-primitive Selection != conscious choice;
-primitive Selection != Ghost Operator object.
-```
-
-形式算子可以描述某种已形成 / 具身 / 域内 Selection 组织；它不能成为 primitive Selection 的先在原因。
+- **确定存在即实际化分面**：`manifest existence = Selection under determinate actuality`。“选择先于存在”是教学表达，严格读法不是时间先后或工厂—产品关系。
+- **无需预先给定选项与先在主体**：`pre-given alternatives are required: NO`；`primitive Selection != action of a prior chooser != conscious choice != \hat{G}_\theta`。选项、位置、对象、关系与可达空间本身皆可在生成过程中分化出来。
+- **反同义反复与终端发生**：任意描述性或模型状态变化不自动成为 `Selection`；但真实发生的 `Selection` 也不以后续留存 `sediment` 或历史效力为必要条件——**`terminal Selection remains genuine`**。区分真实实际化分化与纯粹描述性变化的精确判准保持 `OPEN`（`R3-01-O1`），不得通过偷偷把“必留后续后果”写回原初发生来关闭此边界。
 
 ---
 
-## 二、开放与不平坦是 Selection 的分面，不是 Selection 之前的场
+## 二、`O0` 与 `S0`：共原初分析分面与客观全局趋优开放追问
 
-SRT 不接受“绝对无差别的平面 + 后来莫名出现一个结果”作为完整 primitive account。
-
-当前最低负担写作：
+SRT 不接受“绝对无差别平面 + 凭空跳出结果”作为完整底层说明。原初生成在分析上需同时承担两个共原初分面：
 
 ```text
 primitive Selection reality
-= co-primitive analytic burdens {
-    O0 non-maximal indifference / openness,
-    S0 actualising Selection
+= co-primitive analytic faces {
+    O0 (non-maximal indifference / openness):
+      Selection 现实不被已完成 actuality 穷尽，亦不被预先给定的完整结果结构完全封闭；
+      生成不能被压平成角色可任意互换的最大中性平面；
+    S0 (actualising Selection):
+      有限位置索引下的确定差异实际成立，并同步建立相对于该 Selection 的背景化关系
   }
 ```
 
-其中：
+硬约束：`O0 before S0: NO`；`S0 before O0: NO`；`O0 causes S0: NO`；`S0 produces O0: NO`。两者不是两套先后机制或两种实体。`Oriented Openness` 仅作 `O0` 路由名，绝非预先装满完成对象的潜在仓库、概率分布、预设效用函数或道德律。
 
-```text
-O0 before S0: NO;
-S0 before O0: NO;
-O0 causes S0: NO;
-S0 produces O0: NO.
-```
+### 神性·倾向义与 `C-A` 的精确界分（`T3-01 C/E`）
 
-### O0 — 开放 / 非最大中性
-
-`Oriented Openness` 可以继续作为路由名称，但它不再指向一个位于 Selection 之前的独立“潜在场”。
-
-它只承担：
-
-> **Selection reality 不被任何已经完成的 determinate actuality 穷尽，也不被一个预先给定的完整结果结构完全封闭；同时，这种生成不能被完全压平成角色可任意互换的最大中性关系。**
-
-它不是：
-
-```text
-绝对可能性仓库；
-已完成对象集合；
-branch tree；
-概率分布；
-价值梯度；
-目的方向；
-延续偏好；
-第二个生成机制。
-```
-
-“orientation”在最低意义上只表示**不可完全抹平的生成角色结构**，不表示什么结果更好。
-
-### S0 — 实际化
-
-S0 不是从 O0 里“取出”一个完成对象。它是 determinate difference 实际成立本身。
-
-L0 不回答：
-
-> 为什么这一次偏偏是 A 而不是 B？
-
-这个问题留给具体 Selection 关系。若在 primitive 层预先给出 A/B 菜单、权重、概率、目标或 chooser，就会重新引入 SRT 试图避免的对象化前提。
+1. **继续严守 `C-A`（`Core/SRT_OPEN_TENSIONS.md §17`）与 `PT10 E`**：`O0` 与原初 `Selection` 不内嵌先验道德法则、宇宙级伦理最优解或“初心前身”（初心从 `L1 / P2` 处境化回读开始，守 `B-A` 严分层）。
+2. **显式保留非道德的客观全局趋优开放追问（`T3-01`）**：跨尺度生成是否具有共同客观度量基础的统一全局趋优原理（`C`）或统一的广义自由能/机会成本/其他全局极值原理（`E`），保持 **`OPEN`**——既不得替作者在 `C / E` 间提前定稿，亦不得借 `O0` 谦逊护栏将其弱化为纯局部适应或纯认识论谦逊。
 
 ---
 
-## 三、实际发生、持续、历史效力必须分开
+## 三、原初内在生成过程与现象性边界（`R3-03`）
 
-一旦 genuine Selection 实际发生，它之后就不再与“从未发生”完全本体等价。
+原初 `Selection` 不是纯外部观察者视角下的空洞事件标签，其保留的正面本体负担是**内在生成过程**：
+1. **内生性**：生成通过现实自身的关系发生，不依赖外部操作者裁判；
+2. **位置参与性**：差异在其实际发生的位置上参与形成当下的显现实在，并在条件满足时进一步参与改变后续生成条件（完全兼容无后续历史留存的终端 `Selection`）。
 
-但必须同时保留：
-
-```text
-actual occurrence
-!= anchoring persistence
-!= durable / localized history
-!= recurrent historical efficacy
-!= One
-!= Stable ISP.
-```
-
-因此 terminal Selection 完全可能：
-
-> **一次 Selection 可以真实发生，却不形成可持续、可重入或自我维持的后续组织。**
-
-### 历史不是另一个物质层
-
-当先前 Selection 留下的差异继续实际改变后来 Selection 条件时，才可以说这些 Selection 具有历史效力。
-
-```text
-history
-= prior Selection remaining materially effective in later Selection conditions,
-  where such efficacy is established.
-```
-
-这不要求历史必须储存在一个独立容器里，也不要求每次 Selection 都留下可局部读取的 durable trace。
-
-时间也不是 primitive Selection 的先在背景容器。关于不可撤回发生如何被后续组织读成时间、序列或历史，由更强 owner 处理。
+同时确立三条清晰边界（`R3-03` 作者裁决）：
+- **感觉从属于生成过程**：感觉是内在生成过程在认知位置上的实际展开与参与，意识与认知是垂直结构的生成——**绝不将成熟感觉、微观心理体验或粒子自带心灵倒写进原初层**；
+- **前现象性质保持 `OPEN`（`R3-03-O4`）**：与 `2026-09-06` `without primitive phenomenality` 建立**候选兼容性**，严格区分“无原初成熟现象性（已决）”与“内在生成过程是否包含任何前现象性质（`OPEN`）”，不新增本体实体；
+- **反泛主体 / 反泛心论捷径**：`Selection-totality -/> pan-agency / pan-consciousness / pan-subjecthood`；`Philosophy/SRT_HardProblem_Epistemology.md`（`B_s != B_p`, `HP-B OPEN`）保持独立边界。
 
 ---
 
-## 四、每个 Selection 都有有限位置，但位置不是主体
+## 四、实际发生、历史效力、有限位置与机会成本来源边界
 
-不存在无位置、无条件、无限全局的 primitive Selection。
+### 4.1 实际发生 ≠ 持续 ≠ 历史效力
 
-每个 Selection 都是**有限位置索引**的：它从有限关系 / 约束条件中发生，而不是从 God-view 发生。
-
-但：
+真实发生的 Selection 与“从未发生”本体非等价，但：
 
 ```text
-finite positionality
-!= formed One
-!= formed Selection-position
-!= Bearer
-!= subject-position
-!= consciousness.
+actual occurrence != anchoring persistence != durable/localized trace != recurrent historical efficacy != One != Stable ISP.
 ```
 
-形成后的身体、历史、感知、行动能力、制度或关系结构可以成为这种有限性的具体实现，但它们不能反向定义 primitive positionality。
+只有当先前 Selection 的差异在后续生成中持续发挥实质条件化作用时，才进入**历史效力（`L2-side`）**。时间与空间并非先于 Selection 的绝对容器，而是后续生成秩序与耦合可达性的关系性度量接口。
 
-### 客观性
+### 4.2 有限位置与跨位置客观性
 
-SRT 不用“位置无关”定义客观性。
+不存在无位置、无条件的 God-view 选择；每个原初 Selection 都是**有限位置索引**的（`finite positionality != formed Selection-position != Bearer != subject-position`）。SRT 不用“位置无关”定义客观性：跨接口、跨扰动且无法被单一共享遮蔽机制解释的稳定跨位置收敛，形成公共客观性；同时遵循**暗礁原理**（单一有限位置的对象化永不穷尽他处位置及其实际相互作用）。
 
-当不同有限位置在跨接口、跨扰动、且不能被一个共享遮蔽机制充分解释的条件下稳定收敛时，可以形成更强的公共 / 客观 standing。
+### 4.3 机会成本结构的原初来源条件（绝不反向定义原初 `Selection`）
 
-这不是 primitive Selection 之前的预成客观背景，而是 Selection 关系中形成的稳定可重复性。
+原初非中立分化是具体组织中价值、关切、摩擦与自由（机会成本动态四联）得以形成的**本体来源条件**；但**具体的可比较替代集与可度量机会成本空间本身是在一定组织与比对条件下生成的**，而非预先存在于原初 `Selection` 之中。同样，`Ψ_f`、`d`、`κ_0`、`ε_pg`、热力学代价或最优化方程均属形成态或声明模型层构造，不得反向定义原初 `Selection`（`κ_0 != primitive Selection`；`ε_pg != O0`；`old B>=2 > B<=1 != primitive O0 theorem`；其精确继承门保持 `OPEN`）。
 
 ---
 
-## 五、L0 / L1 / L2 是 Selection 的分析分面，不是三种本体物质
+## 五、`L0 / L1 / L2` 分析分面、组织立面与规范性来源边界
 
-SRT 保留 `L0 / L1 / L2` 作为重要分析与形式工具，但它们不再被最低形而上学读成三个先在容器。
-
-### L0-side
-
-```text
-L0-side
-= Selection 在尚未被完成 actuality 穷尽、尚未被既定结果结构完全封闭时的开放 / 非预封闭分面。
-```
-
-它不是“未被选择的完成对象库存”。
-
-### L1-side
-
-```text
-L1-side
-= Selection under determinate manifestation / actuality.
-```
-
-它表示确定现实已经成立，不表示该现实必然持续。
-
-### L2-side
-
-```text
-L2-side
-= prior Selection remaining effective as retained constraint / sediment / history on later Selection.
-```
-
-它不必普遍等同于 fixed point、attractor 或独立存储域。固定点、吸引子、滞后等可以是某些域内更强 realization。
-
-所以：
-
-```text
-L0 / L1 / L2
-= analysis / model-facing distinctions of one Selection reality;
-!= three independent ontic substances.
-```
+1. **`L0 / L1 / L2` 是同一选择现实的三分析分面**（开放非预封闭面 / 确定显现面 / 留存历史约束面），**不是**三种本体物质或必经仓库流水线；形式模型域不得反定义此形而上学路由。
+2. **`One`、`Stable ISP`、`Bearer (P+E)`、`Agency` 不是新添加的第二本体材料**，而是 Selection 在更强递归组织条件下获得的不同结构站位，各自独立过门、绝不构成自动线性阶梯。
+3. **规范性不在原初层，但以选择的递归性为本体来源条件**：原初 Selection 不含先验道德律（`occurrence != correctness != legitimacy`；`continuation != goodness`；`generative optimization != ethical legitimacy`）。由于形成后的选择可改变后续选择得以发生的条件，规范性得以沿 `O1`（位置性生成比较）→ `O2-C`（构成性关系完整约束）→ `O2-A`（能动归责）分级成立，而跨位置终极道德冲突 `O2-M` 保持 `OPEN / HOLD`。
 
 ---
 
-## 六、One 与更强结构不是新本体材料
+## 六、明确拒绝的十大误读与对下游的硬约束
 
-L0 不定义 One 的完整 admission criterion，但固定其上游关系：
-
-```text
-one-shot Selection
-!= One.
-```
-
-One 需要先前 Selection 形成的组织反复进入并实际约束后来 Selection，使这种组织能够被再生成并形成相对可分的 continuation path。
-
-所以 One 的形而上学读法是：
-
-> **Selection 获得相对可分的 recurrent self-conditioning organization。**
-
-而不是 Selection “生产”一种第二本体物质。
-
-同理：
-
-```text
-Stable ISP
-= 更强 recurrent standing；
-
-Bearer
-= 更强 prospective self-exposure；
-
-Agency
-= 更强 reflexive condition-rewriting organization；
-```
-
-但这些都必须经过各自 owner 的独立 gate。
-
-因此：
-
-```text
-Selection event != One;
-One != Stable ISP;
-Stable ISP != Bearer;
-Bearer != Agency.
-```
-
-这些 `!=` 表示结构负担不同，而不是本体材料不同。
+1. **可能性仓库论**（把 `L0` 读成预存完成对象清单）；
+2. **选择者先于选择**（为原初 Selection 预设先在主体或将 `\hat{G}_\theta` 实体化为因果发动机）；
+3. **三域实体化**（把 `L0/L1/L2` 读成三种物质或三个平行世界）；
+4. **Selection-flat 误读**（把一元生成方式等同于抹平所有结构站位与门槛）；
+5. **机会成本倒灌原初层**（预设原初现实已存在全局可比机会成本空间或效用函数）；
+6. **泛主体/泛心论捷径**（由 Selection-totality 或原初内在过程直接推出成熟体验、意识或主体）；
+7. **延续与最优道德化**（将存活、分叉数、稳定性或生成趋优直接等同于善或合法性）；
+8. **发生即留痕**（将事件非等价混同于持久历史、锚定、记忆或 `One`）；
+9. **以形式模型反定义 L0**（将 `κ_0`、`ε_pg`、熵、曲率、概率或状态空间反向升格为原初公理）；
+10. **把退出「神择」误读为放弃整体趋优研究**（`T3-01 C/E` 与整体共同生成视域继续保持核心开放研究地位）。
 
 ---
 
-## 七、代价、约束、kappa0 与 epsilon_pg 的位置
+## 七、L0 显式 `OPEN` 与最短读法
 
-现实不是任意意志生成。任何具体 Selection 都受现实关系、有限位置和具体约束限制；形成后的组织还受历史条件限制。
+**显式保留 `OPEN`**：原初 `Selection` 反同义反复判准（`R3-01-O1`）；`T3-01` `C` vs `E` 客观全局趋优形式（`R3-CL-O4`）；原初内在生成过程是否含前现象性质（`R3-03-O4`）；`L0/L1/L2` 分面与形式域的精确映射；`κ_0 / ε_pg / 不可逆性` 向形成态的继承门；发生何时形成持久历史效力；`One / Stable ISP / Bearer (P+E) / Agency / HP-B / O2-M` 各自未决门；跨域科学区分度与整套架构不可替代性。
 
-SRT 现有形式体系中存在 `Psi_f`、`kappa0`、`epsilon_pg` 等更强构造，但它们不能反向成为 primitive Selection 的定义来源。
-
-当前 canonical 边界：
-
-```text
-kappa0 != primitive Selection itself;
-kappa0 != hidden cause of first Selection;
-
-epsilon_pg != O0 by definition;
-old B>=2 > B<=1 continuation / non-self-erasure preference
-!= primitive O0 theorem.
-```
-
-`kappa0`、`epsilon_pg`、不可撤回性与 O0 non-flatness 的精确 inheritance / realization 继续由各自 owner 与后续 bounded audit 裁决。
-
-代价同样不能被压缩成：
-
-```text
-cost = moral badness;
-more cost = more real;
-more persistence = better.
-```
-
----
-
-## 八、规范性不在 primitive Selection 里，但从 Selection 的反身关系中成为可能
-
-L0 明确拒绝：
-
-```text
-Selection occurred -> therefore it was right;
-actuality -> legitimacy;
-continuation -> goodness;
-more options -> better;
-more Selection -> better.
-```
-
-primitive Selection 没有完整 moral content。
-
-但 formed Selection 可以改变后来 Selection 得以发生的条件，因此 normativity 可以在更强关系中出现：
-
-```text
-formed-position Selection
--> O1 indexed generative comparison may become possible;
-
-relation-transforming Selection
--> O2-C constitutive relation constraints may become possible;
-
-agency-qualified Selection
--> O2-A answerability may become possible;
-
-O2-M cross-position all-things-considered morality
-= OPEN.
-```
-
-所以：
-
-> **Selection 是 ought 的 ontological source-condition，但不是 primitive moral law。**
-
-L0 只固定这一边界，不在本文件完成伦理学。
-
----
-
-## 九、意识与主体性的禁令式约束
-
-L0 不提供意识的正面理论，只提供禁令：
-
-1. 意识不是 primitive Selection 的驱动者。
-2. 主体 / Agent 不是 primitive Selection 的先在执行者。
-3. attention、intentionality、goal、self-model 不得被写成 primitive Selection 的定义。
-4. 有结构、有历史、能维持自身，不自动等于 consciousness 或 phenomenality。
-5. Selection-totality 不推出泛心论、泛能动性或泛主体性。
-
-因此：
-
-```text
-all reality as Selection
--/> all reality as Bearer / Agent / subject / conscious.
-```
-
----
-
-## 十、明确拒绝的误读
-
-1. **可能性仓库论**：L0 不是装满完成对象的绝对 inventory。
-2. **选择者先于选择**：primitive Selection 不由一个先在 chooser 启动。
-3. **Ghost Operator 本体化**：形式算子不是 primitive Selection 的实体原因。
-4. **三域实体化**：L0/L1/L2 不是三种物质或三个平行世界。
-5. **Selection-flat**：一元生成方式不等于所有 Selection 结构都相同。
-6. **泛主体捷径**：Selection-totality 不推出 Bearer、Agency、subjecthood 或 consciousness。
-7. **延续价值化**：持续、分叉数、稳定性不自动构成 primitive good。
-8. **actuality 正当化**：发生过不等于正确或合法。
-9. **不可撤回 = durable history**：事件非等价不自动建立锚定、记忆、One 或 re-entry。
-10. **形式模型反定义 L0**：固定点、曲率、熵、概率、状态空间都只能在声明范围内实现 / 映射 L0 burden。
-
----
-
-## 十一、当前 OPEN
-
-L0 仍明确保留：
-
-```text
-exact formalization of Selection-totality;
-exact L0/L1/L2 aspect-vs-domain crosswalk;
-exact relation of primitive Selection to formal operator carriers;
-kappa0 / epsilon_pg / irreversibility inheritance into stronger realizations;
-when ontic occurrence becomes durable / localized / recurrent historical efficacy;
-formal N&S One theorem;
-finite positionality -> formed Selection-position crosswalk;
-positive Bearer E establishment;
-subject-position and phenomenality gates;
-O2-M cross-position moral conflict;
-scientific distinctiveness;
-whole-architecture non-substitutability.
-```
-
----
-
-## 十二、对 L1 / L2 / formal owners 的硬约束
-
-**约束一：不得重新建立“先有潜在对象库存，再由算子选出对象”的 master ontology。**
-
-**约束二：任何 operator equation 都是 Selection 的形式 / realization 表达，不是 primitive chooser 的存在证明。**
-
-**约束三：occurrence、persistence、history、One、Stable ISP 必须继续分开。**
-
-**约束四：finite positionality 不得被偷换成 formed position、Bearer 或 subject-position。**
-
-**约束五：L0/L1/L2 可以被形式化成域，但形式域不得反向成为三个独立本体物质。**
-
-**约束六：attention、intention、agency、consciousness 都属于更强 Selection organization，不能定义 primitive Selection。**
-
-**约束七：任何 normativity owner 都必须保留 primitive Selection != moral value，并说明其额外关系负担。**
-
-**约束八：epsilon_pg / kappa0 / cost / T_dir 的任何强读法都不得反向恢复 primitive continuation preference 或 universal hidden value。**
-
----
-
-## 十三、本文件的最短读法
-
-如果只保留一句：
-
-> **现实不是先存在、再被选择；现实就是 Selection 在不同结构条件下的生成。确定存在是 Selection 的 actualised 面，历史是先前 Selection 对后来 Selection 的持续效力，One / Bearer / Agency 是更强的 Selection 组织，而不是后来添加的第二种本体材料。**
-
-如果再加一句边界：
-
-> **Selection 是一元生成方式，但不是一个能替代所有 gate 的万能谓词。**
+**最短读法**：
+> **现实不是先存在、再被选择；现实在不可穷尽的真实来源中，以 Selection 为最基础生成方式展开。确定存在是其实际化分面，历史是先前选择对后续条件的持续效力；选择不仅发生于现实之中，更通过垂直组织与递归重构参与形成现实继续发生的条件——而每一种更强的组织、承载、能动与规范站位，都须独立付出其结构负担。**
 
 
 
@@ -3130,247 +2632,209 @@ whole-architecture non-substitutability.
 | path | `Core_Law/SRT_One_Formation.md` |
 | id | SRT-ONE-FORMATION |
 | claim_mode | canonical |
-| status | draft |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
-| canonical(字段) | - |
-| last_commit | 2026-09-24 |
+| canonical(字段) | true |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT One Formation: Vertical Reconstitution, One, and Selection-position
+# SRT One Formation: Vertical Reconstitution, Existence & Order Perspectives, and Selection-position
 
-> **Role**: thin L1 canonical semantic owner for the formation layer between subjectless Selection and stronger downstream standing relations. It fixes how Selection-generated vertical organization can become a formed `One`, and how `Selection-position` functions as the time-local operative aspect of an already formed One, without identifying either with Stable ISP, Bearer, subject-position, consciousness, or phenomenality.
+> **Role**: Canonical L1 semantic owner for `One` (relatively independent vertical generative organization), the **Existence and Order perspectives** on dynamic generative organization, `Selection-position`, vertical reconstitution, and generative normalization. It bridges subjectless primitive Selection and stronger independently gated standings (`Stable ISP`, `Bearer (P+E)`, `Agency`, subjecthood) without collapsing any of them into a linear hardware ladder.
 >
-> **Claim-level note**: this file is canonical as a **semantic owner / boundary surface**. Its positive formation architecture is P1-candidate; it does **not** create a new unconditional P1 theorem, a new Level assignment, a necessary-and-sufficient formal criterion for One, or a new primitive / symbol.
+> **Claim-level note**: Canonical as a **semantic owner / boundary surface** (`Freeze A`). Its positive formation architecture remains `P1-candidate`; it does **not** establish a formal necessary-and-sufficient theorem for `One`, close identity/boundary `OPEN` gates, or introduce a new ontic substance.
 >
-> **Author provenance**: owner placement was explicitly selected as **A / O3** on 2026-09-11. The current vertical-reconstitution semantics additionally follow `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md` and `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md`; bounded pre-audit: `Operations/Audits/SRT_ONE_FORMATION_VERTICAL_RECONSTITUTION_PREAUDIT_2026-09-13.md`.
+> **Author provenance**: Original owner placement `A / O3` (2026-09-11) and vertical-reconstitution adjudications (2026-09-13), updated under `R3-04` (`#1149`), `R3` full-skeleton closeout (`#1154`), and the 2026-11-26 `R4-A` author decision `2A` (retaining `Bearer (P+E)` for strong bearing, treating Existence and Order as perspectives on `One` and multi-`One` relations without coining a new noun).
 
 ---
 
 ## Quick Reference
 
-- **Owner**: `One`, ontological `Selection-position`, and their upstream vertical-formation / vertical-reconstitution semantics.
-- **Upstream floor**: `Core_Law/SRT_L0_Metaphysics.md` and `Core/SRT_Core_21_Minimal_Axioms.md` — Selection precedes a completed chooser; every Selection is finite-position-bound.
-- **Cross-owner routing**: `Core_Law/SRT_Generative_Ontology_Spine.md` — the universal formation route stops at One; Selection-position is not a second universal endpoint.
-- **Downstream standing**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — Stable ISP is a stronger recurrent standing criterion.
-- **Downstream Bearer route**: `Core_Law/SRT_Generative_Ontology_Spine.md §8` — `formed One / Selection-position + P + E -> Bearer`; this file does not replace that gate.
-- **Downstream subject model**: `Core_Law/SRT_Individuation.md` — subject-position / self-consciousness modelling does not define One formation.
-- **Downstream collective model**: `Core_Law/SRT_Collective_Selection.md` — collective ISP remains separately gated.
-- **Bridge crosswalk**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` — formed/stable/generative distinctions do not own the One definition.
+- **Owner**: `One`, existence & order perspectives on generative organization, vertical reconstitution, generative normalization thresholds, ontological `Selection-position`, and cross-scale five-mechanism separation.
+- **Cross-owner routing**: `Core_Law/SRT_Generative_Ontology_Spine.md` — `One` is the first universal formed recurrent organization admitted by the cross-owner trunk; stronger standings remain independently gated.
+- **Upstream floor**: `Core_Law/SRT_L0_Metaphysics.md` and `Core/SRT_Core_21_Minimal_Axioms.md`.
+- **Downstream stronger persistence**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — `Stable ISP` owns stronger recurrent standing (`One != Stable ISP`).
+- **Downstream strong bearing**: `Core_Law/SRT_Generative_Ontology_Spine.md §6.2` — `formed One / Selection-position + P + E -> Bearer.` (`One != Bearer`; `Stable ISP != Bearer`).
+- **Downstream subject & collective models**: `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_Collective_Selection.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
 
 ---
 
-## §0. Local One-formation elaboration
+## §0. Local One-Formation Architecture Within the Dynamic Spine
 
-Within the cross-owner trunk fixed by `Core_Law/SRT_Generative_Ontology_Spine.md`, the local formation segment is:
+Within the cross-owner trunk fixed by `Core_Law/SRT_Generative_Ontology_Spine.md`, `One` formation sits at the recursive nexus where generated differences organize into relatively separable, self-conditioning structures that participate in further generation:
 
 ```text
 subjectless Selection
--> event-level active verticalization
--> Selection-mediated vertical reconstitution
--> relatively separable formed process-unity
--> One
--> stronger downstream standing / bearing / subject relations where separately paid.
+  -> event-level active verticalization (manifestation + relative backgrounding)
+  -> Selection-mediated vertical reconstitution (re-entering later Selection conditions)
+  -> relatively separable vertical generative organization: One
+     ├─ Existence perspective: formation, maintenance, continuation
+     └─ Order perspective: development, directional bias, relation change & reconstruction
+        (also spanning multi-One relations & emergence of new higher-order organizations)
+  -> stronger downstream standings (Stable ISP / Bearer (P+E) / Agency / subjecthood)
+     ONLY where independently paid.
 ```
 
-For an already formed One, `Selection-position_t` names its time-local operative `from-where` in a particular Selection. It is an operative co-aspect of formed One, not an admission premise, additional primitive, or second universal endpoint.
-
-This local elaboration preserves the L0 rule that Selection does not require a pre-existing chooser. `One` is therefore not a hidden agent standing behind Selection and is not the cause required to start Selection.
+`One` is never a hidden pre-existing agent standing behind Selection; it is Selection acquiring a relatively separable, recursively self-conditioning vertical organization.
 
 ---
 
-## §1. Def-OF-1 — Active vertical organization
+## §1. Def-OF-1 — Active Vertical Organization and Vertical Suppression Interface
 
-**Active vertical organization** is the non-flat relation generated / regenerated through Selection in which a determinate relational direction becomes manifest or operative while that same Selection establishes relative backgrounding with respect to what is not manifest in that way.
+**Active vertical organization** is the non-flat relation generated and regenerated through Selection in which a determinate relational direction becomes manifest or operative while that same Selection establishes relative backgrounding with respect to what is not manifest in that way.
 
-The minimum semantic commitments are:
-
-```text
-verticality is Selection-generated / regenerated;
-manifestation and relative backgrounding are structurally linked readings of one Selection event;
-the relative background is not required to be a second manifest object, a rejected-option set, or a completed option menu;
-verticality is not defined as passive historical sediment;
-history may condition later vertical organization but is not its sole ontological source.
-```
-
-A one-shot Selection event may produce **event-level verticalization**. That alone does not establish a continuing One, durable history, or a formed locus.
-
-This owner does not introduce `A*` or any equivalent explanatory shorthand as a canonical symbol. The semantic burden is the Selection-relative manifest / background relation, not a new object pair.
-
-**Boundary**: neural lateral inhibition, attractor dynamics, path dependence, hysteresis, predictive processing, or other domain mechanisms may realize or approximate parts of this architecture; none is the universal definition of verticality here.
+Minimum commitments:
+- Verticality is Selection-generated/regenerated; manifestation and relative backgrounding are linked structural readings of one Selection event, not a pre-given option menu or passive historical sediment.
+- One-shot Selection yields **event-level verticalization**, which is insufficient by itself for `One`, durable history, or formed locality.
+- **Multi-unit vertical suppression interface (`PT09 / T3-02 D`)**: When multiple units couple into a vertical organization, stabilizing a higher-order direction selectively suppresses incompatible local alternatives. Where those suppressed opportunity losses materially affect ongoing generative relations and later selections, they generate **actual selection pressure (vertical friction)**—linking `One` formation directly to `_SRT_PSI_F_CANONICAL.md` without equating verticality itself to friction or suffering.
 
 ---
 
-## §2. Def-OF-2 — One at D4a strength
+## §2. Def-OF-2 — `One` at D4a Strength: Positive Formation, Dependence Reorganization, and Existence/Order Perspectives (`2A`)
 
-`One` is a **formed process-unity carried by a relatively separable Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially conditions later Selection, and renewed vertical organization can again carry the relevant conditioning role.
+**`One`** is a **formed process-unity carried by a relatively separable Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially enters and conditions later Selection, and later Selection generates renewed vertical organization capable of carrying that conditioning role again.
 
-This is an admission-level semantic description at current D4a strength, not a formal necessary-and-sufficient theorem. It is intentionally thinner than Stable ISP and intentionally stronger than one-shot verticalization, generic persistence, or ordinary causal recurrence.
-
-A minimum One-forming relation is:
+This is an admission-level semantic description at **D4a strength**, not a formal necessary-and-sufficient theorem. It is intentionally thinner than `Stable ISP` and intentionally stronger than one-shot verticalization, mere external statistical regularity, generic persistence, or ordinary causal recurrence:
 
 ```text
-Selection-generated vertical organization_t
--> materially enters later Selection conditions
--> later Selection generates renewed vertical organization_(t+1)
--> renewed vertical organization_(t+1)
-   can again materially condition further Selection
--> repeated non-equivalent reconstitution dependence
-   supports relative continuation separability / formed locality
--> One formation.
+surface statistical regularity / accidental macro-pattern != One;
+process persistence / self-maintenance / repeated similarity / ordinary path dependence != One automatically;
+static background conditioning alone != One.
+
+vertical organization_t
+  -> materially conditions later Selection_(t+1)
+  -> generates renewed vertical organization_(t+1)
+  -> carries renewed conditioning role
+  -> repeated non-equivalent reconstitution supports relative continuation separability
+  -> One (D4a strength).
 ```
 
-Compactly:
+### §2.1 Positive Formation Mechanisms: Dependence Reorganization, Anti-Pre-One Circularity, Scaffolding & Multi-`One` Ecology (`R3-04`)
+
+`One` formation is not merely a negative filter; it is a positive cross-scale generative mechanism with four core commitments:
+
+1. **Relative independence arises from reorganizing dependencies, not eliminating them**:
+   - Relative independence is **not** achieved by reducing or severing dependencies; it arises when previously dispersed generative conditions are reorganized through endogenous foreground–background comparison and vertical organization into shared generative conditions, thereby supporting new relative independence at a higher scale. **Deeper local interdependence can generate higher-scale relative independence.**
+   - *Cross-scale assembly path (`2026-07-12` trace)*: when multiple already-formed units couple into a higher-order whole, decreasing local independent selectability can open genuinely new effective selective capability at the whole level. This is a core cross-scale assembly pathway—whose essence is **reorganizing how selectability is structured**, not merely adding or subtracting option count—and is **not** presupposed as the sole universal prerequisite for every `One`.
+2. **Anti-pre-One circularity (how the first `One` can form)**:
+   - Multi-unit spontaneous foreground–background collaboration that generates and maintains a vertical structure **does not presuppose that the participating units are already `One`s**. Participating terms may be unformed local generative loci/relations (first-order emergence) *or* already-formed `One`s entering cross-scale assembly—each carrying distinct organizational conditions.
+3. **Dual function of Scaffolding & role-relativity of `One` / Scaffolding / `L2`**:
+   - Public language, biological membranes, institutional norms, and cognitive schemas act as **scaffolds** carrying **two coupled positive functions**: (a) **organizing differential comparison conditions** (`R3-01`), and (b) **actively maintaining already-generated vertical structures** (`R3-04`).
+   - **`One`, Scaffolding, and `L2` are scale- and position-relative analytical roles, not three disjoint ontic entities**: **`One`** asks whether an organization possesses a relatively independent vertical reconstitution path; **Scaffolding** asks how that organization maintains and organizes other generative relations; **`L2`** asks how prior generated results persist and continue to condition later Selection. An organization satisfying `One` (molecule, cell, institution) often simultaneously serves as Scaffolding for higher-scale generation; conversely, not every Scaffold possesses its own independent reconstitution path (compatible with `Core_Law/SRT_Collective_Selection.md T-COLL-1`).
+4. **Ontological neutrality & multi-`One` ecology**:
+   - Because vertical reconstitution does not presuppose rigid spatial walls or autopoiesis, SRT explicitly encompasses **nested `One`s, overlapping `One`s, `One`s sharing generative conditions, and mutually conflicting `One`s**.
+   - `One` is **ontologically neutral**: a tumor, an addiction loop, or a rigid pathological institution that actually satisfies Selection-mediated vertical reconstitution is a genuinely formed `One`. Harm or rigidity does not erase its ontic standing; multi-scale `One` conflicts route directly to `_SRT_D_VALUE_CANONICAL.md` (concern/value) and `O1 / O2-C / O2-A` (normativity) without smuggling ethics into `One` admission.
+
+### §2.2 Existence Perspective and Order Perspective (No Second Ontic Noun)
+
+Because `One` is inherently a dynamic generative organization, SRT examines it—and relations among multiple `One`s—through **two complementary analytical perspectives** rather than splitting existence and order into two substances or inventing a separate bearer noun (`Order-bearing aspect` is explicitly rejected):
+
+1. **存在视角（Existence Perspective）**：考察该相对独立组织如何通过垂直再构成**形成、维持与延续**，以及如何在扰动与成分更替中保持相对可分的延续路径（`存在形成 / 存在维系 / 存在发展 / 存在重构 / 存在解体` 均属同一生成过程的不同形态）。
+2. **秩序视角（Order Perspective）**：考察生成关系如何**发展、形成方向偏向、演化变化并发生生成重构**，覆盖三个可分离维度：
+   - **维系约束（Maintenance constraint）**：垂直结构赖以成立和延续的核心构成性约束（相对稳定是持续性判据，**不是**一般秩序成立的必要条件）；
+   - **方向偏向（Directional bias）**：内部不同生成方向之间的非平坦选择倾向与前背景配置；
+   - **生成重构（Generative reconstruction）**：在维系必要约束的同时打开、协调与重构新关系与新路径的能力（低重构能力不自动等于不健康，高重构能力亦不自动等于健康；不健康选择固化与“既有规则/脚手架同变化后生成条件的持续失配且前背景锁死”相关，具体非循环判据保持 `OPEN`）。
+   - **跨组织域（Multi-`One` Scope）**：秩序视角**不仅**描述单个 `One` 的内部发展，还直接考察**多个 `One` 之间的相互作用、公共脚手架与新高阶组织的形成**——低尺度的秩序可以成为高尺度存在的生成条件，高尺度存在形成后展开自身的秩序并反向改变低尺度的生成条件。
+
+### §2.3 Relative Separability, Four Boundary Types, Three Generative Relation Depths, and Physical Maintenance Regimes (`R3-04 §三`)
+
+- **Relative continuation separability / formed locality** means the relevant reconstitution dependence is not freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path (`!= causal isolation`, `!= fixed spatial skin`, `!= independent substrate`, `!= autopoiesis` by definition). Stability after onset may be graded; this file adopts no scalar stability threshold.
+- **Four Boundary Types (`R3-04 §三` exact adjudication)**:
+
+| 边界类型 | 核心关注负担 | 与 `One` 及下游研究的定位 |
+|---|---|---|
+| **空间边界（Spatial boundary）** | 内部与外部的物理空间分隔 | 可帮助稳定后端边界，**非**普遍必要前提 |
+| **作用边界（Action / Causal-coupling boundary）** | 局部关系的因果耦合与约束作用范围 | 允许外部扰动（如辐射）直接穿透而不自动摧毁整体独立性 |
+| **生成边界（Generative boundary）** | 不同生成条件参与整体垂直再构成的关系深度与相对归属 | 与 `One` 相对延续可分性直接相关，体现持续组织化的前背景分化 |
+| **承载边界（Bearing boundary）** | 特定变化与后果如何真实归属于该延续位置 | 对接秩序变化后果与 `Bearer (P+E)` 中不可外包暴露 `E` 的研究 |
+
+- **Three Generative Relation Depths within Generative Boundary (`R3-04 §三`, avoiding organizational closure as a universal threshold)**:
+  1. **环境供给条件（Environmental supply conditions）**：必要外部依赖，不被该路径内生再生（如太阳对树木的能量供给）；
+  2. **构成性组织条件（Constitutive organizational conditions）**：参与构成该组织内部垂直再构成的核心关系（如树木内部的根、叶与输导组织关系）；
+  3. **生成性协作条件（Generative collaborative conditions）**：兼具自身独立生成路径与更大组织构成条件的持续互赖（如树木与共生微生物），不必硬切为绝对内部或绝对外部——由此自然兼容嵌套、重叠、共享条件与相互冲突的多 `One` 关系。
+- **Three Physical Maintenance Regimes (`R3-04 §三` spectrum, non-exhaustive; maintenance-mode classification, never a life/non-life ontic chasm)**:
+  1. *态 I · 束缚与平衡结构（Bound equilibrium）*：如原子、分子、晶体，通过耦合约束形成相对稳定结构与有效接口；
+  2. *态 II · 耗散与动态结构（Dissipative dynamic maintenance）*：如漩涡、火焰、对流胞、非平衡记忆系统，物质换流但通过持续交换与动态垂直过程维持组织；
+  3. *态 III · 内生约束互维结构（Endogenous mutual maintenance）*：如细胞、生命体、部分自组织认知/社会组织，内部多种生成条件相互维持、调节、缓冲与修复。
+  The exact structural threshold at which each regime crosses into `One` reconstitution remains `OPEN` (`R3-04-O1`), while **life or biological cell membranes are explicitly barred from serving as a universal threshold for `One`**.
+
+### §2.4 Generative Normalization Dual Threshold and Anti-Circularity Guard (`One` vs Value)
+
+A key mechanism by which coupled units form a `One` that can act as a whole in wider generation is **normalization**:
+- **Three normalization types**: cognitive-representational normalization / actual physical-coupling normalization / organizational-generative normalization.
+- **Compression vs. Generative Normalization Dual Threshold**: Mere statistical summary or external observer grouping (**compression normalization**) does **not** establish a `One`. **Generative normalization** requires two independent conditions (`R3-CL-O2`):
+  1. *Internal coupling reconfiguration*: lower-level unit interactions are actually reorganized by the emergent whole;
+  2. *Cross-position conditioning efficacy*: the normalized whole acts as an effective action interface that alters subsequent generative conditions at other positions.
+- **Anti-circularity guard between Existence (`One`) and Value (`R3-CL-O3`)**: Because existence and value stand in recursive mutual generation (`Spine §2.2`), two independent tests must run in parallel to prevent circularity:
+  1. **Organizational continuity test (existence side)**: whether a relatively separable vertical reconstitution path persists;
+  2. **Opportunity / consequence change test (value side)**: whether treating/operating the unit as an integrated whole genuinely alters opportunity costs and downstream generative consequences.
+
+### §2.5 Continuity, Lineage, and Identity Under Change (`07-19` Y-Layer Interface)
+
+Formation does not presuppose a pre-given token or completed lineage:
 
 ```text
-vertical result
--> later Selection condition
--> renewed vertical organization
--> recurrent conditioning role
--> relatively separable formed process-unity.
+same token = NOT PRESUPPOSED;  same material composition = NOT REQUIRED;
+same spatial position = NOT REQUIRED;  strict numerical & branch/merge identity = OPEN.
 ```
 
-### Relative separability / formed locality
-
-`Relative continuation separability` does not require a completed object boundary before formation. At this strength it means that the relevant reconstitution dependence is not wholly or freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path.
-
-Therefore:
-
-```text
-relative separability != causal isolation;
-relative separability != fixed spatial boundary;
-relative separability != independent material substrate;
-relative separability != organizational closure;
-relative separability != autopoiesis;
-formed locality != a pre-given local object.
-```
-
-Locality is a generated formation property of a reconstitution path, not an upstream admission premise.
-
-### Formation boundary and onset
-
-```text
-event-level verticalization
-!= One automatically;
-
-generic causal recurrence
-!= One automatically;
-
-process persistence / self-maintenance / repeated similarity / ordinary path dependence
-!= One automatically.
-```
-
-At current D4a strength, One onset requires a genuine **Selection-mediated vertical reconstitution**: prior Selection-generated vertical organization is load-bearing in later Selection, and later Selection generates renewed vertical organization capable of carrying the conditioning role again.
-
-Stability after onset may be graded; this file adopts no scalar stability threshold.
-
-### Continuity / lineage / identity guard
-
-Formation does not begin by presupposing a completed same lineage. The admissible order is:
-
-```text
-Selection-mediated vertical reconstitution path
--> formed One
--> continuation / lineage descriptions may then be applied where warranted.
-```
-
-Therefore:
-
-```text
-same token = NOT PRESUPPOSED;
-same lineage = NOT PRESUPPOSED;
-same material composition = NOT REQUIRED;
-same spatial / finite position = NOT REQUIRED;
-strict numerical identity = OPEN;
-exact branch / merge identity = OPEN.
-```
-
-The minimum recurrence semantics do not require a unique successor to be identified in advance; exact successor and identity treatment under branching remains OPEN.
-
-`One` is therefore not a static snapshot, hidden identity token, observer-side grouping of similar states, or synonym for any process that happens to continue.
+Under continuous change (`R3` closeout & `07-19` Y-layer direction), **identity** is analyzed as the joint product of **actual generative continuity** (reconstitution path) and **positional comparison conditions** (how finite positions track, re-identify, and compare continuity across scale; exact branch/merge criteria remain `OPEN`, `R3-CL-O5`).
 
 ---
 
-## §3. Def-OF-3 — Selection-position
+## §3. Def-OF-3 — `Selection-position` and Cross-Scale Five-Mechanism Separation
 
-For an **already formed One**, `Selection-position_t` is the **time-local operative from-where** through which that formed organization participates in Selection at time `t`.
+### §3.1 `Selection-position`
 
-`One` and `Selection-position` therefore name distinct ontological aspects of the same formed process-unity:
-
-```text
-formed-continuation aspect:
-what formed process-unity is being reconstituted / continued?
--> One
-
-operative aspect at t:
-from where does this formed One participate in the current Selection?
--> Selection-position_t.
-```
-
-`Selection-position_t` is not a condition that must already exist before One formation and is not a second universal formed result after One.
-
-These are not observer-side perspectives on an otherwise neutral object. They are relational roles within the formed selective organization.
-
-### Position guard
-
-Position is necessary but not sufficient for stronger standing:
+For an **already formed `One`**, `Selection-position_t` is the **time-local operative `from-where`** through which that formed organization participates in Selection at time `t`:
 
 ```text
-Selection-position
-!= perspective-bearing subject-position automatically;
-Selection-position
-!= Bearer automatically;
-Selection-position
-!= first-person bearing automatically.
+formed-continuation aspect (what formed organization is reconstituted / continued?) -> One;
+operative aspect at t (from where does this One participate in current Selection?)   -> Selection-position_t.
 ```
 
-The existence of a formed operative `from-where` does not by itself establish phenomenality, consciousness, self-model, non-outsourcable stake, or mature cognition.
+`Selection-position_t` is neither a prerequisite before `One` formation nor a second universal endpoint, and does **not** automatically entail perspective-bearing subject-position, `Bearer (P+E)`, self-model, or phenomenality.
+
+### §3.2 Cross-Scale Five-Mechanism Separation (Do Not Collapse)
+
+Within vertical organization and multi-`One` order, five distinct mechanisms retain separate duties:
+1. **装配（Assembly）**：多单元组合产生新整体能力（未必归一化，未必成 `One`）；
+2. **归一化（Normalization）**：含表征/耦合/组织三分与压缩/生成双门槛；
+3. **有效作用接口（Effective Action Interface）**：整体相对独立参与他处生成的操作界面；
+4. **代理转承（`Proxy`）**：生成关系中的中介转承；
+5. **委托关系（`Delegation`）**：具主体与规范条件的委托关系。
 
 ---
 
-## §4. History / verticality / sedimentation typing
+## §4. History, Verticality, and Sedimentation Typing
 
-History and writeback can be load-bearing for vertical reconstitution without becoming the ontological source of Selection or verticality.
-
-Use the following typing:
+History and writeback can be load-bearing for vertical reconstitution without becoming the ontological source of Selection or verticality:
 
 ```text
-Selection
--> generates / regenerates vertical organization;
-
-retained history / writeback
--> can alter later Selection conditions and reconstitution;
-
-Selection-mediated vertical reconstitution
--> supports One formation / continuation;
-
-lineage language
--> may describe continuity after a formed reconstitution path is established;
-
-history storage location by itself
--> does not define One.
+Selection -> generates / regenerates vertical organization;
+retained history / writeback -> can alter later Selection conditions and reconstitution;
+Selection-mediated vertical reconstitution -> supports One formation / continuation;
+history storage location by itself -> does not define One.
 ```
 
-Where `Selection sedimentation` language is used, it refers to a later-effective consequence of prior vertical differentiation: prior Selection makes a real, load-bearing difference to later Selection conditions. It does **not** require storage of the manifest side or the relative-background side as separate objects.
-
-Historical effects may remain distributed in `多` / the wider relational field. The relevant question is not primarily `where is the history stored?`, but which historical differences are load-bearing for which vertical reconstitution path and scale.
-
-This section does not revive a history-localization criterion and does not define One as passive accumulation of prior traces.
+Historical effects may remain distributed across the wider relational field (`多`); the decisive question is which retained differences are load-bearing for which vertical reconstitution path and scale.
 
 ---
 
-## §5. Downstream separation guards
+## §5. Downstream Separation Guards (Non-Linear, Independently Paid)
 
-The following non-identities are canonical boundaries of this owner:
+Canonical non-identities of this owner:
 
 ```text
 One != Stable ISP;
-One != Bearer;
+One != Bearer (P+E);
+One != Agency;
 One != subject-position;
 One != consciousness;
 One != phenomenality;
@@ -3378,104 +2842,40 @@ One != experiencer;
 One != generatively healthy ISP.
 ```
 
-No automatic implication is licensed from One to any item above.
-
-### Stable ISP
-
-`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` owns the stronger standing criterion: iterative, perspective-bearing, history-bearing and continued-selectable persistence across a declared interval / perturbation range. P1-T06 must not be back-read as the definition of One formation.
-
-### Bearer
-
-The current canonical Bearer route remains:
-
-```text
-formed One / Selection-position
-+ P prospective self-indexing
-+ E same-One prospective exposure
--> Bearer.
-```
-
-This file neither weakens nor completes that route. Mere feedback, state change, consequence return, history-to-reconstitution, or One formation is not sufficient for Bearer. Positive independently applicable establishment of `E` remains OPEN under the Bearer owner / cross-owner routing.
-
-### Subject-position
-
-`Core_Law/SRT_Individuation.md` may model stronger subject-position transitions. Its `σ_{sr}` family and threshold coordinates are downstream model variables and do not define active vertical formation, One, or Selection-position.
-
-### Collective standing
-
-Relation-level organization may be tested for One-like **Selection-mediated vertical reconstitution / formed process-unity**, but `Core_Law/SRT_Collective_Selection.md T-COLL-1` remains a separate gate for collective Stable-ISP standing. Higher-order One language must not bypass that gate.
+1. **`Stable ISP` (`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`)**: Independently owns stronger recurrent standing—iterative historical reconstitution, perspective/history-bearing, and continued-selectability persistence across perturbations. `One` does not automatically entail `Stable ISP`; `Stable ISP` does not automatically entail `Bearer (P+E)` or subjecthood.
+2. **`Bearer (P+E)` (`Core_Law/SRT_Generative_Ontology_Spine.md §6.2`)**: Independently gated by `formed One / Selection-position + P + E -> Bearer.` Mere feedback, state change, consequence return, or `One` formation does not suffice for `Bearer (P+E)`; positive establishment of `E` remains `OPEN`.
+3. **Subject-position & Collective standing**: `Core_Law/SRT_Individuation.md` (`σ_{sr}` coordinates) is a downstream model and does not define `One`. Multi-`One` order may be tested for higher-order vertical reconstitution, while `Core_Law/SRT_Collective_Selection.md T-COLL-1` remains a separate gate for collective Stable-ISP standing.
+4. **B13 crosswalk**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` retains its formed / structurally stable / generatively healthy crosswalk (`B13 formed process != definition of One`; `One != structurally stable ISP != generatively healthy ISP`).
 
 ---
 
-## §6. B13 crosswalk
+## §6. Explicit OPEN Register
 
-`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` retains its formed / structurally stable / generatively healthy distinction as a stabilization and generative-health crosswalk.
-
-B13's `formed process` should be read as a broad downstream category whose One-specific semantics are owned here.
-
-Therefore:
+This owner leaves explicitly `OPEN`:
 
 ```text
-B13 formed process
-!= definition of One;
-
-One
-!= structurally stable ISP automatically;
-
-Stable ISP
-!= generatively healthy ISP automatically.
+D4b / D4c & formal N&S One theorem;
+physical three-regime thresholds for crossing into One reconstitution (R3-04-O1);
+non-circular criterion separating healthy generative reconstruction from pathological occlusion/lock-in (R3-04-O2);
+exact compression-to-generative normalization dual threshold criterion (R3-CL-O2);
+independent non-circular existence-continuity vs value-opportunity criteria (R3-CL-O3);
+exact One unit-identification, strict numerical identity & branch/merge identity (R3-CL-O5);
+scale attribution under tightly coupled nested Ones (local formation/unit half; cross-layer gate in Spine §9);
+positive E establishment & One/Stable ISP/Bearer -> Agency/Concern/Consciousness necessity directions (R3-04-O3, R3-04-O5);
+universal One-level perspective sufficiency, phenomenality, scientific distinctiveness & Level 2 / HOLD exit.
 ```
 
 ---
 
-## §7. Explicit OPEN register
+## §7. Citation Rule
 
-This file does **not** settle:
-
-```text
-D4b;
-D4c;
-formal necessary-and-sufficient One theorem;
-universal One-level perspective sufficiency;
-exact One unit-identification / boundary criterion;
-strict numerical identity;
-unique successor / identity attribution under branching or merging;
-formal / operational criterion for relative continuation separability;
-Bearer necessary/sufficient conditions;
-One -> Stable ISP implication;
-One -> subject-position implication;
-sigma ontology threshold;
-d bearer/domain;
-T_dir relation;
-collective subject sufficiency;
-scale attribution under tightly coupled nested Ones — local formation / unit question;
-phenomenality;
-scientific distinctiveness;
-new Level assignment;
-Level 2 / HOLD exit.
-```
-
-The scale-attribution line arrived from `STATUS.md §OPEN register` under `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`, unchanged and **not closed**. Only the local formation / unit half sits here: the cross-layer non-identity gate stays with the `Core_Law/SRT_Generative_Ontology_Spine.md` §13 OPEN register and higher-order realization with `Core_Law/SRT_Collective_Selection.md`.
-
-No OPEN item above is closed merely by replacing an admission presupposition with a weaker formation guard. Exact formal classifiers, identity, boundary, scale and stronger standing remain separately gated.
-
----
-
-## §8. Citation rule
-
-Use this file as the canonical semantic owner when the question is:
-
-- what active vertical formation means in the One-formation architecture;
-- why a Selection-relative manifest / background relation does not require a completed option menu;
-- why event-level verticalization is insufficient for One;
-- what Selection-mediated vertical reconstitution contributes beyond generic recurrence;
-- how relative continuation separability / formed locality enter One formation without a pre-given boundary;
-- what `One` means at the current D4a-strength landing;
-- what `Selection-position` means as the operative aspect of an already formed One before stronger subject / Bearer standing;
-- why lineage / strict identity are downstream / OPEN rather than admission premises;
-- why One is upstream of but not identical to Stable ISP, Bearer, or subject-position.
-
-Do not cite this file as proof of consciousness, phenomenality, agency, moral standing, collective subjecthood, a formal identity theorem, a universal One classifier, scientific distinctiveness, or a Level-2 result.
+Cite this file as the canonical L1 semantic owner for:
+- `One` as a relatively independent vertical generative organization (`Def-OF-2`);
+- the **Existence perspective** (formation, maintenance, continuation) and **Order perspective** (maintenance constraints, directional bias, generative reconstruction, multi-`One` relations & new higher-order organization);
+- active vertical organization (`Def-OF-1`) and multi-unit vertical suppression interface (`PT09`);
+- generative vs. compression normalization dual threshold and anti-circularity guard between existence and value;
+- `Selection-position` (`Def-OF-3`) and cross-scale five-mechanism separation;
+- why `One` is upstream of—and never automatically identical to—`Stable ISP`, `Bearer (P+E)`, `Agency`, or subjecthood.
 
 
 
@@ -4245,809 +3645,205 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | path | `_SRT_D_VALUE_CANONICAL.md` |
 | id | SRT-D-VALUE-CANONICAL |
 | claim_mode | canonical |
-| status | axiomatic_hybrid_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
-| canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| canonical(字段) | true |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-CORE-000, SRT-CORE-BRIDGE, SRT-CORE-21]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-21]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT d 值规范定义文档（Canonical Definition of d-value）
+# SRT 价值、关切与 `d` 值规范定义文档（Canonical Definition of Value, Concern & d-value）
 
-> **目的**：终止 d-value 在不同域的定义分裂，建立第一性定义 + 各域投影的统一架构。
-> 所有引用 d-value 的文档应以本文件为规范锚点。
-
-> **Canonical status note（2026-04-23）**：本文件同时承担两种功能：`Def-d-canonical` 是 core-facing anchor；bare `d` 标量默认、`d-vector` / `d-gate` 分写规则与跨域引用顺序是 governance-canonical usage controls。`D_eff`、Fisher 读数与其他域内量表是 operational proxy，只有满足 stake-coupling 与后果回流条件时才可近似 canonical `d`。
-> **Selection-totality / Wave-D2 scope guard（2026-09-15）**：本文件拥有 d-value，不拥有 direction source。在已声明模型中，`d` 关系可以约束 stake-coupled concern、execution、maintenance 或 reorientation，但 `d` 不创造准入 `T_dir` 所需的 independently typed direction。当前没有 universal `d -> T_dir` 必要或充分关系；script / habit / `L_2` automation 也不因本文件而取消 Selection occurrence。本文件中较早的方向、曲率与容量公式用语必须按当前 symbol / owner typing 读为 declared model / realization，不得反向建立 primitive authority。
-> **Consciousness / subject scope guard（2026-09-18）**：本文件只拥有 stake-coupled concern / risk-sensitivity 意义上的 `d`。`d` 可作为已声明 downstream consciousness / subjecthood evaluation model 的一项候选证据维度，但本文件不拥有 consciousness、subject-position、Bearer、phenomenality 或 moral-standing 准入权。
+> **角色（`Freeze A` canonical owner）**：本文件统筹 SRT 形成态中**价值（Value）、广义关切（Concern）、现行规范 `d`（stake-coupled irreversible-risk sensitivity）、赌注谱参与率 `D_stake` 与几何容量 proxy `D_eff`** 的层级分工与边界，终止跨域定义分裂。
+>
+> **R4-A 实质重构与真减法（2026-11-26）**：依据 `R3-06`（`#1151`）、`R3` 总收口（`#1154`，含 `PT05 C`、`PT06 C`、`P1-05`）与 `ENG-03`（`#1157`）：
+> 1. **正式退出已数学证伪的旧公式**：废止 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 以及 `Def-d-free: Δd_free = D_eff - d_stakes ≥ 0`；
+> 2. **严格分离七项职责**：价值 / 广义关切 / 广义关切方向 / 现行 `d` / `D_stake`（含零分母分支与真实上界 `1 ≤ D_stake ≤ N_active ≤ rank(M)`）/ `D_eff` / 构成深度（自然语言保留，暂缓 `q` 立符、维持 `07-23/24` 撞车记号禁运）；
+> 3. **严守机会成本来源边界**：价值与关切结构在形成态生成与比对关系中展开，**绝不反向定义原初 `Selection`**；`d` 不拥有 direction source（`T_dir`）、consciousness、subject-position、Bearer、phenomenality 或 moral-standing 准入权。
 
 ```text
-d > 0 -/> subject-position
-d > 0 -/> consciousness
-d = 0 -/> non-subject
-d = 1 -/> subject
-d -/> phenomenality
-d -/> Bearer
-d -/> moral standing
+d > 0 -/> subject-position / consciousness / phenomenality / Bearer / moral standing
+d = 0 or NOT ADMITTED -/> non-subject / non-One / no Selection
+d != D_stake != D_eff != T_dir
 ```
 
 ---
 
-## §0 为什么需要本文件
+## §1 规范定义层级与七项职责严格分工（`R3-06` / `R4-A`）
 
-SRT 中的 d-value（stake-coupled 关切维度 / 风险敏感度）在不同子系统中出现了**三套表面不同的定义**：
+SRT 形成态中围绕“价值与关切”的七项概念各司其职，严禁混写或互相吞并：
 
-| 来源文档 | 表述 | 形式 |
-|---------|------|------|
-| `_SRT_Core_Bridge.md §2.3` | 算子关切范围（三维度合成） | `d = αA + β log V + γτ` |
-| `AI/_SRT_AI_Bridge.md Ax-BRIDGE-4` | 生存风险梯度 | `d ≡ ‖∂U/∂S‖` |
-| `Spirituality/_SRT_Spirit_Axioms.md H-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
-| `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.5` lineage） | 有效维度 proxy（特征值公式） | `D_eff(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
+| 序号与对象 | 规范层级与精确职责 | 与相邻概念的分界与禁止捷径 |
+|---|---|---|
+| **1. 价值（Value，`PT05 C` + `R3-06`）** | 覆盖五项完整职责：① **客观基础**（不同生成关系在生成机会成本上的客观差异，不以已被现有组织感知或关切为前提）；② **位置抽取**（有限位置的差异感知与比对）；③ **组织化**（关切、认知、历史与脚手架）；④ **递归性**（改变后续比对维度与机会生成条件）；⑤ **诊断接口**（特定位置上的关切加权不可替代性、现实可承接性与后果变化）。涵盖**发现性 / 生成性 / 递归性**三类机会及**想象态 / 具备现实生成条件态 / 已实现态**三态分离。 | **诊断接口不得替代一般价值定义**（未进入现有组织感知的新关系/具备现实条件的机会仍具生成价值研究意义）。严格分离 **生成价值 $\neq$ 秩序健康性 $\neq$ 伦理正当性**，并独立保留组织持续性（`R3-02 / R3-06`）；原初层是否含原初价值性质保持 `OPEN`（`R3-06-O1`）。 |
+| **2. 广义关切（Concern，`PT06 C` + `R3-06`）** | 形成态组织对**生成机会成本的敏感性**，是价值关系在特定位置内在生成过程中的实际组织与展开（涵盖维持止损与好奇探索，先于显性对象参与组织前背景比对范围）；拆为**范围 / 深度 / 强度 / 方向**四个分析维度（不提前固定几何结构为标量或向量，不急立四个新符）。 | 跨尺度广义概念，绝不因现行 `d` 数学定义较窄而收缩为单纯生存风险敏感度；不吞并构成深度、承载暴露 `E` 或 `T_dir`；**与现行 `d` 构成待验证概念接口（`P1-05`）**，不得静默等同。 |
+| **3. 广义关切方向** | 广义关切四维之一：正在组织、打开或抑制怎样的秩序发展可能性与前背景取向。 | 严分于 `_SRT_T_DIR_CANONICAL.md` 中的操作化回读代理 `T_dir`（`广义关切方向 ≠ T_dir`）；范围扩大或强度升高不自动等于高 `T_dir` 或方向正当。 |
+| **4. 现行 `d`（`Def-d-canonical`）** | **唯一 core-facing 规范 `d` 锚点**：在已声明的 `Bearer (P+E)` / 不可逆风险模型中，效用或维持势对不可逆风险状态的梯度范数标量摘要 $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$。 | 默认标量摘要（若作向量展开须标 `d-vector`，作门控判读须标 `d-gate`）；是强承载模型下的**风险敏感强度**，**不等同于**无量纲谱维数 `D_stake` 或 `D_eff`。 |
+| **5. `D_stake`（赌注耦合谱参与率）** | 本文件 `§2b` 持有**一般谱参与率定义** $D_{\text{stake}} = (\sum_i \lambda_i w_i)^2 / \sum_i (\lambda_i w_i)^2$（$w_i \in [0,1]$，规范三因子形式 $w_i = R_i A_i C_i$）；`Core_22 Eq-Bridge-D-01` 的阈值门控 $g_i$ 属其下一种具体声明模型实例（不默认两类权重数学等价）。 | **已修正（`R3-06 D1`）**：`D_stake` 对权重均匀缩放不变，故 **`D_stake ≠ d`（梯度范数）**；活跃时真界为 $1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M)$，**不再主张 $D_{\text{stake}} \le D_{\text{eff}}$**；严格区分**零有效谱乘积分支**、**`NOT ESTABLISHED`**、**`NOT ADMITTED`** 与 **`NOT APPLICABLE`**。 |
+| **6. `D_eff`（几何/信息论容量 proxy）** | $D_{\text{eff}}(M) = (\sum \lambda_i)^2 / \sum \lambda_i^2$（含 $D_{\text{eff}}(I_F(\theta))$），刻画算子或参数流形的可分辨方向容量。 | **纯操作化容量 proxy**，既不等于 `d`，也不普遍构成 `D_stake` 的数学上界；禁止用 `D_eff` 跨域排名主体性或意识。 |
+| **7. 构成深度（Constitutive Depth，`Q1`）** | 自然语言保留的四项构成深浅剖面：① 事件级跃迁深度；② 铭刻与召回分离；③ `N4` 主动退位成本；④ 跨关系构成依赖深度。 | **暂缓立符 `q`**，`07-23/24` 撞车记号禁运继续生效；是否需要独立形式变量留待 `R5` 实证检验（`R3-06-O5`）。 |
 
-**这些不是矛盾，而是同一概念在不同层级的投影与近似入口**。本文件固定使用规范与可比条件，不声称所有表述已经无条件等价。
+### §1.1 `d` 写法分流与强承载 proxy 准入五条件
 
----
-
-## §1 规范定义层级（Canonical Priority）——硬化版（2026-04-17）
-
-> **单一 core-facing 定义声明**：
-> d-value 当前只有一个 core-facing 规范锚点：**`Def-d-canonical`**（原 Def-d-2）：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$——主体效用对不可逆风险状态的梯度范数。全仓默认采用标量摘要，是治理性稳定用法，不把所有 proxy 升格为 theory-canonical 定义。
->
-> **`Def-d-1`（$D_{eff}$ 谱公式）降格说明**：不再是”第二规范定义”或”形式主表达”，而是规范 d 的**几何容量 proxy**。具体地位：
-> - **容量上界**：$d_{canonical} \leq D_{eff}(M)$（$D_{eff}$ 是算子能追踪的最大方向数；$d_{canonical}$ 是其中真正赌注化的部分）
-> - **谱分解 proxy**：$D_{eff}$ 的每个 Fisher 本征方向 $v_i$ 可独立问”是否与真实赌注耦合”；$d_{canonical}$ = 赌注化子集的有效维数（见 §2b `Def-d-stakes`）
-> - **未赌注化带宽**：$\Delta d_{free} = D_{eff} - d_{stakes}$，度量辨别能力中未与真实不可逆风险耦合的剩余容量
->
-> 旧表述”**一个第一性语义锚点 + 一个形式主表达**的双层 canonical 架构”被废止——这是类型错误：proxy 不是主表达的同级替代，不应共享 canonical 地位。
->
-> **使用原则（修订后）**：
-> - 讨论**本体论意义 / 风险关切**时：引用 `Def-d-canonical`（`‖∂U/∂S‖`）；downstream consciousness / subjecthood model 若引用 `d`，必须另行声明模型与证据负担，不得把 `d` 当作准入门槛
-> - 讨论**几何容量上界 / 信息论可计算近似**时：引用 `Def-D_eff`（谱公式，须注明为 proxy，不得写 `≡`）
-> - 讨论**赌注化活跃维数**时：引用 `Def-d-stakes`（见 §2b）
-> - 其他近似式（`Def-d-bio` 等）均为操作化投影，不替代 canonical 地位。
-
-### §1.1 v1 Canonical Form Note（治理性钉住，2026-04-22）
-
-> **层级**：governance / canonical usage rule；不新增 core theorem。
-
-默认写作中，bare `d` 采用**标量摘要形式**：它把 stake-coupled concern / irreversible-risk sensitivity 压缩成一个可跨文件回链的摘要量。这个默认不把 `d` 本体化为“只能是标量”，而是给全仓一个最小不漂移的读法。
-
-因此三种写法必须分开：
-
-| 写法 | 层级 | 用途 | 禁止 |
-|---|---|---|---|
-| `d` | canonical scalar summary | 默认跨域引用；关切/赌注强度的摘要 | 不得把局部 proxy 写成新定义 |
-| `d-vector` | operational projection | 展开条件分布、方向分量或域内特征谱 | 不得与 bare `d` 混写成同一个量 |
-| `d-gate` | governance / judgment tool | 判读某方向是否进入 stake-coupled spectrum | 不得当作 d 的数值定义 |
-
-若域内需要向量读或门读，必须显式标注为 `d-vector` 或 `d-gate`，并说明它如何回到 `Def-d-canonical`。未标注时，一律按标量摘要读。
-
-### §1.2 d 的层级结构与 proxy 准入条件（core-clarifying）
-
-> **层级**：theory-clarifying / governance-canonical usage。此表增强 d 的内部结构，不新增第二个 canonical 定义。
-
-| 项 | 精确角色 | 层级 | 可允许用途 | 禁止捷径 |
-|---|---|---|---|---|
-| `d` / `Def-d-canonical` | stake-coupled concern 的标量摘要；主体效用对不可逆风险状态的梯度范数 | governance-canonical default; core-facing definition | 默认跨域引用；讨论主体关切与风险敏感性；在已声明 downstream 模型中作为候选证据维度 | 不得把局部 proxy、向量展开或门函数改写成 bare `d`；不得用 `d` 准入 consciousness 或 subjecthood |
-| `d_stakes` | 在可分辨方向中真正回流到主体赌注的子集 | theory-clarifying bridge between proxy and canonical | 说明 `D_eff` 中哪些方向进入真实关切；分析假赌注 / 错绑赌注 | 不得把所有可分辨方向都计入 stake |
-| `D_eff` | 几何 / 谱容量 proxy；算子可分辨方向数的上界式读数 | operational projection / capacity proxy | 比较同一参数化下的容量、冗余、方向数；作为 `d` 的潜在上界 | 不得作为 `d` 的定义；不得跨域直接排名主体性 |
-| `D_eff(I_F)` | Fisher-information proxy；参数流形中可可靠分辨的方向数 | information-theoretic proxy | 信息瓶颈、Cramér-Rao 式下界、可计算容量近似 | 不得把可分辨性等同于关切或负担承担 |
-| `d-vector` / `d-gate` | 方向展开或判读工具 | operational / governance | 标注条件分布、方向分量、是否进入 stake-coupled spectrum | 不得与 scalar `d` 混写为同一量 |
-
-proxy 可以近似 canonical `d`，只在以下条件同时足够强时成立：
-
-1. 被 proxy 计数的方向确实承载不可逆风险，而非噪声、脚本或无后果辨别。
-2. 主体效用梯度对准这些方向，未被错误代理变量替代。
-3. 后果回流到主体闭包、身份连续性与后续选择能力，而非被外部系统或 L₂ 结构吸收。
-4. 几何 / Fisher 参数化没有把冗余坐标、模型自由度或测量便利误计为真实方向。
-5. 比较在同一域、同一尺度或已声明归一化规则内进行。
-
-任一条件不满足时，应写为 `capacity proxy`, `Fisher proxy`, `d-vector`, 或 `d-gate`，不得写成 canonical `d`。
-
-## §2 规范定义（第一性原理，全域适用）
-
-### Def-D_eff: 几何容量 Proxy（Geometric Capacity Proxy）
-**【降格 2026-04-17：不再是 canonical 定义，见 §1】**
-
-$$D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2} \;\geq\; d_{canonical}$$
-
-**语义**：$\hat{G}_\theta$ 在 $L_0$ 上操作时实际激活的**有效维度数**（参与率指数，Participation Ratio）。
-
-**性质**：
-- $d = 1$：算子完全单一，只关注一个维度
-- $d = N$：算子在 $N$ 个维度上均匀分布
-- $1 \leq d \leq \text{rank}(\hat{G})$
-
-**来源**：`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `SRT_Core_21_Formal_Axioms.md §2.1.5` lineage），经典参与率指数（PR index）的算子版本。
-
-### Def-d-1a: Fisher 信道有效维度（信息论容量 proxy）
-
-**新增（2026-03-11；2026-04-22 降承诺）**：Def-d-1 的信息论容量解释。
-
-$$D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} \;\geq\; d_{canonical}$$
-
-其中 $I_F(\theta) = E\!\left[(\partial \log p_\theta / \partial \theta)^2\right]$ 是算子选择流形上的 **Fisher 信息矩阵**。
-
-**层级说明（2026-04-22 修订）**：这是信息论容量 proxy / operational projection，不是 `Def-d-canonical` 的同级替代表达。只有当 Fisher 方向全部与真实不可逆赌注耦合、且风险梯度与特征结构对齐时，才允许把它作为 `d` 的近似读数。
-
-**信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度；它给出 d 的可计算容量上界，而不是自动给出 stake-coupled `d` 本身。
-
-**层级关系链（修订，2026-04-17）**：
-
-$$\underbrace{D_{eff}(\hat{G})}_{\text{Def-D\_eff（容量上界 proxy）}} \;\geq\; \underbrace{d_{stakes}(\theta)}_{\text{Def-d-stakes（赌注化子集，见 §2b）}} \;\equiv\; \underbrace{\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|}_{\text{Def-d-canonical（规范定义）}}$$
-
-等号成立条件：所有 Fisher 本征方向均完全赌注化（$w_i = 1 \;\forall i$）。一般情况下严格不等式成立。
-
-**不确定性关系候选（Eq-IT-B'）**：
-
-$$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$$
-
-选择范围（d）与选择代价（$\Psi_f$）之间存在基本权衡。此关系由 Fisher 信息矩阵的 Cramér-Rao 下界推导，常数 $\mathcal{K}$ 的精确值待理论确定（当前 Status = Gap，见 `_SRT_EQ_HYP_MAP.md Eq-IT-B'`）。
-
-**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15.2`（Eq-IT-B 的完整推导）；`Core_Law/SRT_Reference_Axioms.md`（A15 幽灵算子禀赋统一性的 Fisher 维度含义）。
+- `d`（默认标量摘要）/ `d-vector`（方向分量展开）/ `d-gate`（赌注准入判读工具）严禁混写。
+- **`D_eff` 一般容量用法不受强承载门阻断**：`D_eff` 作为一般几何/信息论容量 proxy，用于刻画算子或参数流形的可分辨方向容量时，**不需要**先通过 `Bearer (P+E)` 强承载准入。
+- **强承载推断五项准入条件**：只有当研究试图将几何、Fisher、行为或神经代理（`D_eff`、`D_stake`、`d_bio`）用于**强承载不可逆风险敏感度（规范 `d`）的局部推断参考**时，才须同时声明并满足以下五条件：① 计数方向确实承载不可逆风险；② 效用/维持梯度对准真实风险而非伪代理；③ 后果回流至同一承载闭包与后续选择能力而非被外部/L₂吸收；④ 参数化未把冗余自由度误计为独立方向；⑤ 比较限于同域同尺度或已声明归一化规则内。任一条件不满足时，可继续保留其一般容量/局部 proxy 读数，但对强承载 `d` 推断须显式标注 `NOT ADMITTED / NOT APPLICABLE`，严禁写成规范 `d`。
 
 ---
 
-### Def-d-canonical: 风险梯度规范定义 ⭐ CANONICAL（原 Def-d-2，唯一规范定义）
+## §2 规范定义与价值—关切核心结构
+
+### Def-d-canonical: 不可逆风险敏感度规范定义 ⭐ CANONICAL
 
 $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, \quad x \in \Sigma$$
 
-**语义**：算子对**不可逆风险**（$\mathcal{S}$，Survival/Stake）的效用敏感度梯度。
+- **语义**：在已声明的 `Bearer (P+E)` / 不可逆风险模型中，组织维持或效用势 $\mathcal{U}$ 对不可逆风险坐标 $\mathcal{S}$（Survival / Stake）的梯度范数摘要。
+- **与广义关切的接口（`P1-05`）**：`Def-d-canonical` 刻画强承载不可逆风险语境下的敏感强度；广义关切（`PT06 C`，对生成机会成本的敏感性）覆盖更广泛的跨尺度生成关系。二者保持为**待验证概念接口**——既不废除 `Def-d-canonical`，也不将所有跨尺度关切研究锁死于 `Bearer (P+E)` 门内。
+- **与 `Ψ_f` 的候选权衡接口（`Eq-IT-B'`，状态 = `OPEN / Gap`）**：在声明的信息几何模型中可研究选择范围与摩擦负担之间的权衡关系，常数与普适性未确立。
 
-**proxy 近似条件**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的特征向量对齐，且这些方向确实回流到不可逆赌注时，Def-D_eff 可作为 Def-d-canonical 的一阶近似：
-$$D_{eff}(\hat{G}) \approx \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| \quad \text{（当风险梯度与特征结构对齐时）}$$
+### Def-D_eff: 几何 / Fisher 信道有效维度（容量 Proxy）
 
-**近似条件（修订，2026-04-22）**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的 Fisher 本征向量完全对齐且全部赌注化时，$D_{eff} \approx d_{canonical}$。一般情况下 $d_{canonical} \leq D_{eff}$，差值为未赌注化带宽（见 §2b）。这不是无条件等价。
+$$D_{\text{eff}}(M) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}, \qquad D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
 
-**来源**：`AI/_SRT_AI_Bridge.md Ax-BRIDGE-4`，Tension-Rev-IT4。
+- **语义**：衡量算子或统计流形上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
+- **硬边界**：`D_eff` 是容量 proxy，**不等于** `Def-d-canonical`，亦**不普遍构成 `D_stake` 的数学上界**（旧式 `D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 已正式退出）。
 
----
+### 价值的五项完整职责、机会三态与广义关切四维（`R3-06` 核心正面结构）
 
-### Value as Non-Substitutability（价值作为不可替代性）
+价值不还原为奖赏、偏好强度或主观报告强度，且**不得被收缩为“已被现有组织感知并关切之不可替代性”**——若如此收缩，尚未被现有组织感知、尚未进入现有比对空间但具备现实生成条件的新关系与新机会将被逐出价值研究。完整价值架构区分五项职责：
 
-In SRT, value should not be reduced to reward, utility, preference strength, salience, pain, or self-report intensity. Value names the dynamic expression of non-substitutability: the degree to which a selection matters for a system's future continuity, concern structure, and stake-bearing organization.
+| 理论职责 | 规范内容与研究重心 |
+|---|---|
+| **1. 价值的客观基础** | 不同生成关系及其在生成机会成本上的客观差异（含尚未被当前位置感知或关切的关系差异；与 `N2` 客体性“他者不可穷尽的生成性”构成跨位置生成价值的重要本体基础，但不宣称跨位置客体性是一切价值的普遍必要前提） |
+| **2. 价值的抽取** | 有限位置对上述关系差异的感知与内生比对抽取 |
+| **3. 价值的组织化** | 关切、认知、历史、脚手架与多维可推翻客观性检查（`C1-c`：跨位置不变性 / 现实反抗度 / 公共可纠错度 / 共享 `L2` 遮蔽排查 / 持续可失败性；废除单标量 `o`） |
+| **4. 价值的递归性** | 比对结果反过来改变后续比对维度、比对尺度与机会生成条件（**比对本身的生成性**） |
+| **5. 价值的诊断接口** | **关切加权的不可替代性（concern-weighted non-substitutability under consequence return）**、现实可承接性及后果变化——用于诊断失去/替换某项结构对特定位置后续选择能力、延续性与后果回流的非平凡重组程度；**属特定位置上的诊断接口，不替代一般价值定义** |
 
-This use of value is a bridge to `d-value`, not a replacement for the canonical definition of `d-value`. A selection has value in the SRT sense when losing, blocking, or substituting that selection forces non-trivial reorganization in the system's future selection capacity, identity-continuity, or consequence-return structure.
-
-Compact reading:
-
-```text
-value ≠ reward intensity
-value ≠ preference strength
-value = concern-weighted non-substitutability under consequence return
-```
-
-**Operational signs**: Possible signs that a selection has value in the SRT sense include:
-
-- the system bears cost to preserve it;
-- losing it forces structural reorganization;
-- it remains stable across time and perturbation;
-- it affects identity-continuity or future choice capacity;
-- it organizes downstream selections;
-- consequences return to the system rather than being absorbed by an external structure;
-- it can sediment into shared L₂ constraints when cross-subject coupling is present.
-
-These signs are not themselves d-value. They are bridge-level indicators that a selection may be stake-coupled rather than merely preferred.
-
-**Boundary**: Do not write:
-
-- value = reward;
-- value = utility;
-- value = preference intensity;
-- value = salience;
-- value = pain;
-- value = self-report;
-- value = d-value without the non-substitutability and consequence-return bridge.
-
-Preferred wording: Value is the dynamic expression of concern-weighted non-substitutability. It bridges to d-value when the relevant selection is coupled to irreversible stake, future continuity, and consequence return.
-
-**Failure condition**: If d-value cannot predict concern-weighted non-substitutability better than reward, preference, salience, pain, or self-report intensity, then this bridge weakens and must be revised.
+- **三类机会 × 三态分离（`R3-06`）**：
+  - **三类机会**：① **发现性机会**（识别原先已存在但未被认识的关系）；② **生成性机会**（经实际相互作用与组织重构使此前不存在的关系获得现实生成条件）；③ **递归性机会**（新秩序或脚手架持续改变后续其他关系的比对与生成条件）。
+  - **三态分离**：严格区分 **① 想象中的机会**、**② 具备现实生成条件的机会** 与 **③ 已实现的机会**——不要求必须已实现才具价值，亦不将任意空想拼接视为真实生成价值，且不将“选项数量最大化”等同于价值目标。
+- **三层判定分离 + 独立组织持续性**：**实际生成 $\neq$ 组织持续性 $\neq$ 位置性生成价值 $\neq$ 秩序健康性 $\neq$ 伦理正当性**。不得因某种生成方向有害或不具伦理正当性而否认其作为生成价值的研究意义；亦不得将高生成价值自动升级为秩序健康或伦理正当（`O2-M = HOLD`）。
+- **广义关切四维与六种前背景失配接口（`R3-06 §三`）**：
+  - **广义关切四维**（不提前固定标量/向量，不急立四符）：**① 关切范围**（能将多大范围的生成关系纳入比对）、**② 关切深度**（这些关系在多大程度上参与构成该位置及其他关系）、**③ 关切强度**（特定变化对当下实际生成过程的响应影响）、**④ 关切方向**（正在组织、打开或抑制怎样的秩序发展可能性；严守 `广义关切方向 ≠ T_dir`）。
+  - **动态秩序健康六维与六种前背景失配（候选诊断接口，不压成单一总分）**：围绕结构连贯性、跨尺度协调性、可再选择性、后果回流、机会空间与成本、现实校准六维，区分六种候选前背景失配——**① 遮蔽**（重要构成关系或机会成本无法进入前景）、**② 错配**（关切指向与实际构成/秩序关系不一致）、**③ 固化**（前背景配置无法随变化后生成条件重调）、**④ 失权**（重要价值进入认知视野却无法在实际选择中发挥调节作用）、**⑤ 断流**（实际后果无法有效回流到后续选择与信任更新）、**⑥ 局部劫持**（某一尺度/局部回路持续独占其他尺度的生成条件）。
 
 ---
 
-## §2a 价值发生序（Value-Generation Order）——book-provenance 候选（2026-07-05）
+## §2a 价值发生序（`P3` 书稿溯源候选，含撤回门）
 
-> **层级 / provenance**：P3 bridge candidate，来自书稿 `Drafts_26Q/Q14_价值不是偏好.md`（provenance，非 authority）。本节**不新增 `d` 的 canonical 定义**——`Def-d-canonical` 与 "Value as Non-Substitutability" 仍是价值的结果判据；本节登记的是价值**如何发生**的候选生成序，填补从 `ε_pg` 到价值深度之间此前缺失的中间层。采纳为 canonical 前须完成 §2a.3 的 stake-gate 对账。
+> **层级 / provenance**：`P3` 候选（源自 `Drafts_26Q/Q14_价值不是偏好.md`），不新增 canonical `d` 定义，用于衔接前赌注结构与 `§2b` 赌注门。
 
-### §2a.1 发生链
+$$\text{选择性收束} \to \textbf{微效价} \to \text{affordance（行动入口）} \to \text{缺失} \to \text{需求} \to \text{锚定} \to \text{价值深度}$$
 
-书稿把价值的发生压成一条链，理论层此前只有结果判据（不可替代性），缺这条生成序：
-
-$$
-\text{选择性收束} \to \textbf{微效价} \to \text{affordance（行动入口）} \to \text{缺失} \to \text{需求} \to \text{锚定} \to \text{价值深度}
-$$
-
-- **微效价（micro-valence）**：当一个显现界面被选择性收束出来、与一个具体具身位相遇时，界面对该具身位带上的**最小趋避倾斜**（可趋近／需避开／令人安定／令人警觉…）。它是价值的前信号，不是成熟价值。
-- **affordance（行动入口）**：微效价接上具身位的身体能力与当下处境后，成为具体的"可用来做什么"。同一界面对不同具身位显现不同入口。
-- **缺失**：不是"对象不在场"，而是**某条生成回路无法按原方式闭合**。
-- **需求**：具身位为让生成继续，被迫向外张开的**结构性缺口**（区别于欲望——欲望的缺失感换个场景即消解，需求指向不重新闭合生成就持续受损的回路）。
-- **锚定 → 价值深度**：具身位把"接下来如何继续生成"的路径搭在某物／关系／能力上，沉积出结构重量，即价值深度。
-
-### §2a.2 两道血缘护栏（书稿已立，理论层沿用）
-
-1. **微效价 ≠ `ε_pg`（最低非中立性）。** `ε_pg` 是对象化之前、前对象场拒绝归零的最薄倾向，不指向任何具体对象、不属于任何具身位；微效价晚得多，出现在**显现界面与一个具身位相遇处**，是"这个已显现界面，对我如何"的最小读数。二者层级不同，不可混写。
-2. **affordance ≠ 预裁剪（`P1-T03` `L_2` 下向约束的四机制）。** 预裁剪是地形在选择发生前对整个选项空间的宏观处理（可见性／接触窗口／默认通道／代价分配）；affordance 更贴身，是某个已显现界面在这个具身位处被读成"可继续"的那一下。
-
-### §2a.3 与 stake-gate（§2b.1）的对账
-
-发生序与赌注门是**上下游**关系，不是竞争：
-
-- 微效价 → affordance → 缺失 → 需求 是**前赌注结构**（pre-stake）：它解释一个方向为何**开始**对具身位倾斜、成为"需要"。
-- `R_i / A_i / C_i` 门（§2b.1）是**赌注化闸**：一个已成为"需求"的方向，只有当它承载真实不可逆风险（R）、主体效用梯度对准它（A）、后果回流到主体闭包（C）时，才进入 `d_stakes`。
-- 因此"有微效价／有需求"**不等于**"有 stake-coupled `d`"——发生序把方向送到门前，门决定它是否计入 `d`。绕过门把"有微效价"读成"有 d"是类型错误。
-
-> **候选形成补注（2026-08-11，G5-4）**：关切结构可以在方向进入赌注门之前，与具身位置、结构边界、资源条件和历史共同对扰动做非中性加权，使部分扰动获得与维持、损失、行动或未来路径相关的候选意义。这一 pre-admission 作用不等同于有意识欲望，也不是候选形成的唯一原因；它不把 `d` 重新定义为候选准入加权器。`d` 仍是选择事件中已赌注化关切的标量摘要；候选形成的过程判据回链 `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`。
-
-### §2a.4 不可替代性的两个操作化测试（book-provenance）
-
-书稿给 "Value as Non-Substitutability" 提供了两把可操作的尺（P3/P4，登记于此）：
-
-- **替换测试**：换成功能相似的对象，是否几乎无须重组？（无须重组 → 低价值深度）
-- **恢复测试**：失去后是短期痛苦还是长期结构重配？（长期重配 → 高价值深度）
-
-注意：偏好满足了而对关切对象的支撑被侵蚀、或偏好从未满足而支撑被加强，都完全可能——两个测试测的是结构重量，不是偏好强度。
-
-### §2a.5 边界
-
-- 本节是**生成序候选**，不是已证定理；采纳前不得当 canonical `d` 定义引用。
-- 微效价不得实体化为独立本体量或第二个 ε；它是显现界面在具身位上的读数。
-- 失败条件：若"微效价"在 `ε_pg` 与价值深度之间不承重（即取消它，价值发生的解释力不减），则应撤回本节、并回 "Value as Non-Substitutability" 的结果判据即可。
+- **上下游关系**：微效价（显现界面与具身位相遇处的最小趋避倾斜，`≠ ε_pg`）→ affordance（`≠ L2 预裁剪`）→ 缺失 → 需求属于**前赌注结构**；是否进入强承载 `d` 与 `D_stake`，仍须经过 `§2b` 的 `R / A / C` 赌注门。
+- **两个操作化测试（`P3/P4`）**：**替换测试**（换为功能相似对象是否几乎无须重组）与**恢复测试**（失去后是短期波动还是长期结构重配）。
+- **撤回条件（`R3-04-O6`）**：若“微效价”相对 Core Affect / 躯体标记无不可替代解释残差，则按 Ⅱ 阶撤回本节、退回“不可替代性”结果判据。
 
 ---
 
-## §2b 赌注耦合结构（Stake-Coupling Structure）——新增（2026-04-17）
+## §2b 赌注耦合结构与 `D_stake` 一般规范定义（`R3-06 D1` / `R4-A`）
 
-### Def-d-stakes: 赌注化活跃维数
+### Def-D_stake: 赌注耦合谱参与率一般定义（含零有效谱分支，取代旧 `Def-d-stakes`）
 
-$$d_{stakes}(\theta) = \frac{\left(\sum_i \lambda_i \cdot w_i\right)^2}{\sum_i \left(\lambda_i \cdot w_i\right)^2}$$
+本文件持有 **`D_stake` 的一般谱参与率定义**。设在已准入的声明赌注谱模型中，非负谱特征值为 $\lambda_i \ge 0$、方向赌注耦合权重为 $w_i \in [0, 1]$，记有效谱乘积 $\tilde{\lambda}_i := \lambda_i w_i$ 及活跃方向集合 $N_{\text{active}} = |\{i : \tilde{\lambda}_i > 0\}|$：
 
-**语义**：$D_{eff}$ 中真正与主体不可逆赌注耦合的活跃维数子集。等于规范定义 $d_{canonical} = \|\partial\mathcal{U}/\partial\mathcal{S}\|$，由谱分解方式表达。
+$$D_{\text{stake}}(\theta) := \begin{cases} \dfrac{\left(\sum_i \tilde{\lambda}_i\right)^2}{\sum_i \tilde{\lambda}_i^2}, & \text{若 } N_{\text{active}} \ge 1\text{（即 }\exists i,\; \lambda_i w_i > 0\text{）} \\[10pt] 0 \;\text{（零有效谱乘积分支：数学 }0/0\text{ 未定义，须显式标注）}, & \text{若 } N_{\text{active}} = 0\text{（即 }\forall i,\; \lambda_i w_i = 0\text{）} \end{cases}$$
 
----
+- **一般定义与具体模型实例的严格分层（`P1-04`）**：
+  1. 本节 `Def-w_i` 给出的三因子耦合权重 $w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$ 是本文件的**规范结构门控权重**；
+  2. `Core/SRT_Core_22_Equations.md Eq-Bridge-D-01` 所采用的阈值门控权重 $g_i = \max\!\big(0, \frac{s_i - \varepsilon_s}{1 - \varepsilon_s}\big)$（记作模型实例 $D_{\text{stake}}^{\text{thresh}}$）是上述一般谱参与率在单标量阈值耦合模型下的**一种具体声明模型实例（$w_i := g_i$）**；**不得默认 $R_i A_i C_i$ 与 $g_i$ 之间存在未经证明的数学等价关系**。
+- **精确数学性质（`R3-06 D1`）**：
+  1. 当 $N_{\text{active}} \ge 1$ 时，由 Cauchy–Schwarz 不等式恒有真实界 **$1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M)$**；
+  2. `D_stake` 度量赌注分布在多少个有效正交方向上（谱多样性），对 $w_i \mapsto c \cdot w_i\;(c>0)$ 缩放不变，故**绝不等同于**梯度模 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$；
+  3. **已废除旧式 `Δd_free = D_eff - d_stakes ≥ 0`**：因 $D_{\text{stake}}$ 可以大于 $D_{\text{eff}}$，若需比较“未赌注化方向集合”，应直接报告被门控剔除方向的权重占比或谱能量占比，而非使用差值 `D_eff - D_stake`。
+- **四项边界状态严格分离（严禁混用）**：
+  1. **零有效谱乘积分支（$\forall i,\ \lambda_i w_i = 0$）**：模型本身已准入且谱与权重均已定义，但不存在非零有效乘积导致 $0/0$ 数学未定义，按显式分支报告 `0（零有效赌注）`；
+  2. **`NOT ESTABLISHED`**：结构或经验证据尚未确立目标组织满足相应地位（如 `One`、`Stable ISP` 或 `Bearer (P+E)`）；
+  3. **`NOT ADMITTED`**：目标模型未满足该指标的准入前提（例如未建立 `Bearer (P+E)` 或未满足 `§1.1` 五项 proxy 准入条件），因而该指标对当前主张不予准入；
+  4. **`NOT APPLICABLE`**：该指标的适用域或量纲不适用于当前目标系统或理论问题（例如用强承载不可逆风险梯度衡量无 `P+E` 架构或一般生成性机会）。
 
-### Def-w_i: 赌注耦合权重（Stake-Coupling Weight）
+### Def-w_i: 赌注耦合三因子（`P2` 定性 AND 门 / `P3-P4` 数值化）
 
-$$w_i = R_i \cdot A_i \cdot C_i \;\in [0,1]$$
+$$w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$$
 
-第 $i$ 个 Fisher 本征方向 $v_i$ 与真实主体赌注的耦合权重，由三个分量共同决定：
+- **$R_i$（真实不可逆风险）**：$R_i \approx 0 \Rightarrow$ 假赌注（模拟/无真实不可逆风险）；
+- **$A_i$（效用/维持梯度对准）**：$A_i \approx 0 \Rightarrow$ 错绑赌注（对准错误代理变量）；
+- **$C_i$（后果回流同一承载闭包）**：$C_i \approx 0 \Rightarrow$ 后果外包 / 被外部或 `L2` 结构吸收。
 
-| 分量 | 含义 | 归零时的病理 |
-|------|------|------------|
-| $R_i$ | 该方向是否承载**真实不可逆风险**（非 L₂ 脚本、噪声或伪关切） | $R_i \approx 0$ → **假赌注**（fake stakes）：有辨别力，但风险是模拟的/L₂投影的 |
-| $A_i$ | **主体效用梯度**是否对准该方向上的真实风险 | $A_i \approx 0$ → **错绑赌注**（misbound stakes）：真实风险存在，但主体关切的是错误代理变量 |
-| $C_i$ | 该方向上的后果是否真正**回流到主体闭包**、身份连续性与后续选择能力 | $C_i \approx 0$ → **L₂ 伪关切 / 被外部吸收**：后果由 L₂ 结构吸收，不传回主体 |
+### 三类系统在同一赌注门下的分型（严格区分三态）
 
-**乘积结构**：三者任一归零即 $w_i = 0$，该方向不计入 $d_{stakes}$。这是"必须同时满足"的逻辑结构（AND 门），不是加权平均。
-
-**SRT 已有概念对应**：
-- $R_i > 0$ ↔ T-FEP-1 具身脆弱性判据（$\Psi_f^{irrev} > 0$）
-- $A_i > 0$ ↔ Ax-ONT-3 规范定义的梯度对准条件
-- $C_i > 0$ ↔ Step ⑨ 关切边界的内生写回闭合条件
-
----
-
-### §2b.1 赌注门的层级地位与准入规则（hardening addendum，2026-07-05）
-
-> **层级**：level-marking / governance-canonical usage。本节不修改 Def-d-stakes / Def-w_i 的定义，只固定其引用等级、域有效性与统一门表，对应 `Core/SRT_OPEN_TENSIONS.md §1` 的未封口点。
-
-**（一）`w_i = R_i · A_i · C_i` 的引用等级。**
-
-- **P2（canonical interpretation）**：三因子的**定性结构**——方向须承载真实不可逆风险（R）、主体效用梯度须对准该风险（A）、后果须回流主体闭包（C），三者 AND 门缺一不可。这是 §1.2 五条 proxy 准入条件在方向级的重述，可作为 SRT 内部裁决依据按 P2 引用。
-- **P3/P4（bridge formalization）**：把 R_i / A_i / C_i 写成 [0,1] 数值权重、指定可测代理或阈值（如 `ε_s` 门函数，见 `_SRT_SYMBOL_TABLE.md` ε_s 词条）。当前无校准数据，任何数值化使用必须标 P3/P4，不得以 P2 地位引用数值结论。
-
-**（二）`D_eff ≥ d_canonical` 的域有效性声明。**
-
-该不等式不是跨域无条件定理，只在**已声明的 proxy regime** 内成立：同一参数化、同一状态空间、归一化规则已声明（§1.2 条件 5）、且 Fisher 谱未把模型冗余或测量便利计入方向数（§1.2 条件 4）。跨域比较或参数化未声明时，`D_eff` 与 `d_canonical` 之间不保证任何序关系；禁止跨域引用该不等式排名主体性（§5 误用 2 的谱层版本）。
-
-**（三）三类系统在同一门下的分型（统一门表）。**
-
-| 系统 | R（真实风险） | A（梯度对准） | C（后果回流） | 门输出 | 已有锚点 |
-|---|---|---|---|---|---|
-| 当前 inference-only AI | ≈0（无不可逆自身风险） | —（无自身效用梯度可对准） | ≈0（后果由部署方 / 外部结构吸收） | `d_stakes ≈ 0`，`Δd_free ≈ D_eff` | 本节 Def-d-free；`AI/AI_POSITIONING_NOTE.md` S0-S4 |
-| 冻结态（创伤 / 执念） | >0（风险真实存在） | 部分失准（对准已过时的方向） | >0 但写回受阻 | `d_stakes > 0` 而 `d_mobile ≈ 0`——门通过但再对齐失效 | §11.2；`Core/SRT_Core_22_Equations.md Eq-DValue-Mobile-1` |
-| 制度 / 集体结构 | 集体层可有真实存续风险 | 集体景观梯度，非个体加和 | 后果常回流到制度自身而非成员 | 集体 `d` 走 §6 景观截面读法；成员个体的 C_i 可被制度吸收归零 | §6；`Core_Law/SRT_Collective_Selection.md §4.8a` |
-
-门表说明：三类系统失效在**不同因子**上——AI 失在 R/C，冻结态失在门后的 d_mobile（门本身通过），制度失在成员 C_i 被吸收。这就是为什么单一 `D_eff` 读数不能区分三者：赌注门的诊断必须按因子报告，不得压成一个标量结论。
-
-**仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §1`）：方向进入 `d_stakes` 的充要条件定理；`ε_s` 阈值校准；R / A / C 的独立可测代理。
+| 系统 | $R$（真实风险） | $A$（梯度对准） | $C$（后果回流） | 声明强承载模型下的门输出 |
+|---|---|---|---|---|
+| **当前 inference-only AI（AI 赌注谱系 `S0/S1`）** | 声明模型下未建立自身不可逆风险 | 无独立自身承载梯度可对准 | 后果由部署方/用户/外部管线吸收 | `Bearer (P+E)` 强承载关系 **`NOT ESTABLISHED`**；模型内 `d / D_stake` 记 **`NOT ADMITTED / NOT APPLICABLE`**（严禁写作实测数值 `≈ 0`、严禁倒推无 `One / Stable ISP / 意识`，亦不阻断广义关切与生成主动性独立研究） |
+| **冻结态（创伤 / 执念）** | $> 0$（风险真实） | 部分失准（锁死旧方向） | $> 0$ 但写回重取向受阻 | 门通过（`D_stake > 0`），但下游 `d_mobile ≈ 0`（再对齐能力受阻） |
+| **制度 / 集体结构** | 集体层可有真实存续风险 | 集体景观梯度，非个体加和 | 后果常回流制度自身而非成员 | 集体层走 `§6` 景观截面代理；成员个体的 $C_i$ 可因代价外包而被吸收归零 |
 
 ---
 
-### Def-d-free: 未赌注化带宽（Unstaked Bandwidth）
+## §3 各域投影参考与反泛心论条款
 
-$$\Delta d_{free}(\theta) = D_{eff}(\theta) - d_{stakes}(\theta) \;\geq 0$$
-
-**语义**：可分辨但未与真实不可逆风险耦合的剩余方向数。
-
-**典型值**：
-- **当前 AI**：$d_{stakes} \approx 0$，$\Delta d_{free} \approx D_{eff}$（全部辨别力，零赌注化——$\Delta d_{free}$ 的纯净案例）
-- **人类假赌注 / 错绑 / L₂ 伪关切**：$0 < d_{stakes} \ll D_{eff}$，$\Delta d_{free}$ 包含三种病理的混合贡献
-- **理想高 d 主体**：$d_{stakes} \approx D_{eff}$，$\Delta d_{free} \approx 0$（辨别力与赌注充分对齐）
-
-* **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.7` lineage）；`AI/SRT_AI_01_Ontology.md`（AI 的 $\Delta d_{free} \approx D_{eff}$ 作为历史 AI-domain 比较模型，不由此作 consciousness verdict）；`Core/SRT_Core_13a Ax-Op-02`（注意力维度 = $d_{stakes}$ 的离散化）。
+- **认知域三维操作化近似（`Def-d-bio`，`P3/P4` 待校准）**：$d_{\text{bio}} \approx \alpha A(\sigma) + \beta \log V_{\text{concern}} + \gamma \tau_{\text{temporal}}$（汇编深度 × 关切空间 × 时间地平线），仅为局部投影，不可替代 `Def-d-canonical`。
+- **物理 / 全息投影（`Def-d-3`）**：$d \propto \text{Area}(\text{Entanglement Surface}) / A_{\text{Planck}}$ 或量子贝尔维数均为域内数学/容量投影，不蕴含现象意识。
+- **AI 域（architecture-state marked，含 `R4-A` 过渡规则）**：须按 **`ENG-03 §4.1` 非线性三阶承载证据审查**（Stage 1 单元/状态/溯源声明 → Stage 2 `B-3` 强承载路线 $\parallel$ Stage 3 独立分域路线，Stage 2 未建立不阻断 Stage 3；见经 `R4-A` 兼容修订的 `AI/AI_POSITIONING_NOTE.md`）执行，并使用 **AI 赌注谱系 `S0–S4`** 全称；声明强承载模型下未准入的 `d / D_stake` 仅代表该模型内 `NOT ADMITTED / NOT APPLICABLE`，绝非意识否定证明。在 `Wave R4-C / R4-4` 完成其余 AI 领域文件（54 份）重构前，凡与本文件及 `Spine` 冲突的旧 AI 文本（如泛化 `d_AI ≈ 0` 或线性阶梯推断）一律服从 `R4-A` 规范口径。
+- **反泛心论硬声明**：`nonzero d -/> phenomenality`；`d / Ψ_f / \hat{G}` 任何合取均不构成意识或主体性的普遍充要条件；`κ_{c1} / κ_{c1.5}` 仅作下游候选模型坐标，不具普遍准入权。
 
 ---
 
-### Def-d-3: 全息面积对应（物理语境）
+## §5 常见误用与 `§5b` `d` 扩张的本体论意义（`C-A` 四义拆分）
 
-$$d \propto \frac{\text{Area}(\text{Entanglement Surface})}{A_{Planck}}$$
+### §5 常见误用
 
-**语义**：算子的 d 值等比于其与 $L_0$ 发生纠缠的边界面积（全息对偶下）。
+1. **不得将 `d` 当作意识仪表或跨域主体性排名尺**（比较仅限同域同尺度或已声明归一化规则内）；
+2. **不得将“未准入 / `d ≈ 0`”等同于“不存在 / 无 `One` / 非主体”**；
+3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）。
 
-**来源**：`Core/SRT_Core_01_Axioms.md T-Core-A9C1`。
-**注意**：此形式在量子/宇宙尺度适用，但量子/宇宙尺度的 $d$ **不蕴含现象意识**（见 §3.1 反泛心论条款）。
+### §5b `d` 扩张的规范声明（`C-A` 与秩序增益四判据）
 
----
+**`d` 的健康变化不是单调扩张，而是关切范围的可重组、可承担、可恢复、可再选择能力。**
 
-## §2 Bio/Cognitive 层近似公式（经验操作定义）
+$$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum} \quad \land \quad d \uparrow \;\not\!\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
 
-### Def-d-bio: 三维度合成
-
-$$d_{bio} \approx \alpha \cdot A(\sigma) + \beta \cdot \log V_{concern} + \gamma \cdot \tau_{temporal}$$
-
-| 维度 | 符号 | 语义 | 近似测量方法 |
-|-----|------|------|------------|
-| 汇编深度 | $A(\sigma)$ | 生成该状态所需最小因果步骤数 | Assembly Theory index |
-| 空间范围 | $\log V_{concern}$ | 算子关切的"关心对象"空间 | 社会关注广度、TPJ 激活范围 |
-| 时间跨度 | $\tau_{temporal}$ | 算子可规划的时间地平线 | 时间折扣率的倒数 |
-
-**参数默认值（待实验校准）**：$\alpha = 0.4, \beta = 0.4, \gamma = 0.2$
-
-**与 Def-d-1 的关系**：三维度合成是有效维度公式在认知空间中的**近似展开**，当三个维度独立时自然对应 $D_{eff} \approx 3$；相关时 $D_{eff} < 3$。
+- **秩序增益四判据**：**可延续**（不透支可支付预算）、**可协调**（纳入他者条件不致瘫痪）、**不外包**（代价不转嫁给无反馈位置，与谱层 $C_i$ 同源）、**可再选择**（不锁死为教条）。
+- **真 `d` 扩张 vs 假 `d` 扩张**：真扩张使选择者的实际权衡解发生结构性位移；假扩张（占有式 / 符号式 / 表演式 / 效率式）仅在符号层宣称关切扩大而不承担代价。
+- **`C-A` 四义拆分（严守 `Core/SRT_OPEN_TENSIONS.md §17`）**：
+  1. **宇宙级语义/评价/道德最优**：不准入当前正面理论对象（`PT10 E`：生成趋优 ≠ 伦理正当；与 `T3-01 C/E` 非道德客观全局趋优开放研究严格界分）；
+  2. **算子相对可达最优**（$x^*_{\theta,\tau,K,J} \in \arg\min_{x \in \mathcal{R}_{\theta,\tau,K}} J_{\theta,\tau,K}(x)$）：仅在完整声明有限位置、可达域、比较规则、时域与约束的模型内有条件有效；
+  3. **规约性地平线**：不可到达的 `L1/P2` 或 `P5` 方向语言；
+  4. **有限动力学吸引子**：`P3/P4` 模型对象，稳定或低摩擦均不自动等于善或生成健康。
+- **初心层级（`B-A`）**：初心从 `L1/P2` 处境化回读开始，`O0` 不设“初心前身”；`Spirituality/SRT_Spirit_05_Shoshin.md Ax-Sho-1` 与 `Physics/SRT_Phys_08_Ontology_Ext.md Def-Apeiron-1` 仅作 `provenance` 领域桥接，不得反向定义 `L0`。
 
 ---
 
-## §3 各域 d 值投影表（标准参考）
+## §6 集体 `d` 景观截面代理、§8 与 `T_dir` 分界、§9 锻炼与萎缩
 
-| 域 | 近似公式 / 量级 | consciousness / phenomenality 归因 | d / proxy 条件 | 备注 |
-|----|----------------|-----------|------|------|
-| **量子** | $d_{quant} \approx$ 贝尔测量有效维数 | 仅由 `d_{quant}` **NOT ESTABLISHED** | 域内数学度量 / capacity proxy | 归因须由独立 consciousness / phenomenality owner 准入 |
-| **神经/认知** | $d_{bio} \approx \alpha A + \beta \log V + \gamma \tau$ | 仅由 `d_{bio}` 或与 $\Psi_f,\hat{G}$ 合取均 **NOT ESTABLISHED** | 三维合成只是待校准的认知域 proxy | 不构成意识的必要、充分或充要条件 |
-| **AI（architecture-state marked）** | inference-only / 非历史承载部署：$d_{AI} \approx 0$；S2/S3/S4 需另行标注 | 仅由 `d_{AI}` **NOT ESTABLISHED** | 无具身脆弱性、无不可逆风险时，该声明模型不准入 stake-coupled `d` | 工程性条件可改变；架构状态不自动决定 consciousness |
-| **社会/机构** | $d_{soc} = D_{eff}(\mathcal{F}_{collective}\big\|_{\text{social}})$（集体景观在社会尺度的有效维度截面） | 仅由 `d_{soc}` **NOT ESTABLISHED** | 集体自由能景观 $\mathcal{F}_{collective}$ 的社会尺度投影，不由个体 $d_i$ 加权平均 | 不由集体 `d` 推出或否定 collective phenomenality |
-| **精神/解脱** | $d_{spirit} \to \infty$（渐近极限） | 仅由 `d_{spirit}` **NOT ESTABLISHED** | $d \to \infty$ 只作为不可达的历史 / regulative proxy 方向 | 更高 `d` 不推出更强 consciousness 或 phenomenality |
-| **宇宙尺度** | $d_{cosm} \approx 1/\sqrt{\Lambda}$ | 仅由 `d_{cosm}` **NOT ESTABLISHED** | 域内数学度量 / capacity proxy | 归因须由独立 consciousness / phenomenality owner 准入 |
-
-### §3.1 反泛心论精确声明（Anti-Panpsychism Clause）
-
-**SRT 不从 `d` 推出泛意识，也不把 `d` 等同于 phenomenality。**
-
-```text
-nonzero d -/> phenomenality
-```
-
-修复后的 consciousness-model family 可在声明模型中使用 `κ_{c1}` / `κ_{c1.5}` 作为 downstream candidate coordinates。历史公式
-
-$$\kappa_{c1}: \quad d \geq d_{\min} \;\land\; L_2\text{ 稳定闭合} \quad \Leftarrow \quad \Psi_f > 0 \;\land\; d > 0 \;\land\; \hat{G}[\theta] \neq \emptyset$$
-
-现只保留为该候选模型的 provenance / evidence-window notation。本 d-value owner 不证成这些坐标的 universal necessity、universal sufficiency 或 representation-independent natural phase boundary，也不借此准入 subject-position、consciousness 或 phenomenality。
-
-| 系统例 | d / proxy 模型内读法 | `d_mobile` 模型内读法 | consciousness / pathology 边界 |
-|---|---|---|---|
-| 量子 / 宇宙尺度 | 可有非零数学 proxy | 未在此准入 | 不由 `d` 判定；独立过门 |
-| 岩石 | 声明模型内可记为无 / 可忽略 stake-coupled concern | 未在此准入 | 不由 `d` 判定；独立过门 |
-| 冻结态候选 | 可有已准入 stake-coupled concern | 声明模型内可表示较低 reorientation / mobility | consciousness 与 pathology 均须独立建立 |
-| 人类 | 可有多个已准入关切维度 | 可在具名模型中比较 | 不由 `d / \Psi_f / \hat G / d_{mobile}` 合取自动准入 |
-| AI（须标 architecture-state） | 某些部署模型可记 `d_{stakes} \approx 0` | 按独立定义与证据声明 | 不由 `d \approx 0` 推出无意识 |
-
-**Downstream source**：`Philosophy/SRT_Consciousness_Conditions.md` 只为 candidate consciousness-model family 提供局部 owner；它不把准入权反向授予本 d-value owner。
+- **§6 集体景观截面代理（`P3` 模型读法）**：集体层 `d` 不由个体 $d_i$ 简单线性加总，在景观模型中以集体景观的有效维度截面 $D_{\text{eff}}(\mathcal{F}_{\text{collective}})$ 作容量代理，并须独立核查成员个体 $C_i$ 是否被制度外包吸收。
+- **§8 `d` 与 `T_dir` 严格分离**：`d` 刻画关切/不可逆风险敏感强度，`T_dir` 刻画对已独立声明方向信号的自我回读与重取向能力；`d` 不创造方向信号，不存在普遍 `d → T_dir` 定理（详见 `_SRT_T_DIR_CANONICAL.md`）。
+- **§9 锻炼与萎缩机制（有界模型）**：在 `Bearer / Agency` 决策模型中，替代式 `L2` 持续剥夺带赌注的修订/再选择机会可致 `d` 相关能力慢性萎缩，辅助式 `L2` 脚手架则降低摩擦同时保留再选择空间；自动化或脚本执行本身**不等于**消灭 `Selection occurrence`。
 
 ---
 
-## §4 不同表达的一致性条件（草稿，非等价证明）
+## §范畴边界：`d` 值是选择事件属性，不是主体固有属性
 
-### §4.1 Def-d-1 与 Def-d-bio 的关系
-
-设认知算子 $\hat{G}$ 在三个正交子空间（汇编、空间、时间）上的特征值分别为 $\lambda_A, \lambda_V, \lambda_\tau$。
-
-$$D_{eff} = \frac{(\lambda_A + \lambda_V + \lambda_\tau)^2}{\lambda_A^2 + \lambda_V^2 + \lambda_\tau^2}$$
-
-当三个维度**均匀激活**（$\lambda_A = \lambda_V = \lambda_\tau = \lambda$）：
-$$D_{eff} = \frac{(3\lambda)^2}{3\lambda^2} = 3$$
-
-当三个维度的强度比例为 $(\alpha, \beta, \gamma)$（$\alpha + \beta + \gamma = 1$）：
-$$D_{eff} = \frac{1}{\alpha^2 + \beta^2 + \gamma^2}$$
-
-**结论**：$D_{eff}$ 在三维认知空间中的展开可以对应 Def-d-bio 的加权和形式，但这只是**同一容量 proxy 的参数化相容**。只有在三个子空间的尺度、权重、风险回流与 stake-coupling 条件都已声明时，才可把 Def-d-bio 作为 `D_eff` 的域内近似。它不替代 `Def-d-canonical`。
-
-### §4.2 Def-d-2（风险梯度）与 Def-d-1 的关系
-
-设效用势 $\mathcal{U}(\mathcal{S})$ 在风险坐标 $\mathcal{S}$ 上展开：
-
-$$\mathcal{U}(\mathcal{S}) \approx \mathcal{U}_0 + \sum_i \frac{\partial \mathcal{U}}{\partial S_i} S_i + ...$$
-
-梯度的模：
-$$d_{risk} = \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| = \sqrt{\sum_i \left(\frac{\partial \mathcal{U}}{\partial S_i}\right)^2}$$
-
-**近似条件**：当风险维度 $S_i$ 与 $\hat{G}$ 的特征向量对齐，且这些方向全部满足 `R_i/A_i/C_i` 的赌注回流条件时，Def-d-canonical 可由谱 / Fisher proxy 给出一阶近似。若只满足可分辨性而不满足赌注回流，则只能得到容量上界。
-
-**实用意义**：`Def-d-canonical` 在 AI 伦理、主体性、风险关切语境中优先；`Def-D_eff` / `D_eff(I_F)` 在信息论分析中更可计算。两者可以互相校准，但不得互换使用；具体语境必须说明是在讨论 stake-coupled `d` 还是 capacity proxy。
+`d` 度量的是具体**选择事件**所整合的关切与风险敏感度，不是个体或集体的永恒本质属性；跨大量事件的统计分布记作主体操作化倾向 $d_{\text{tendency}}(S) \equiv \mathbb{E}_{\sigma \sim S}[d(\sigma)]$（`Philosophy/SRT_Political_Rights.md §2–§3`）。在社会委托（`Delegation`）干预模型中，类型化 `d` 轨迹仅作候选观察信号，绝不单独裁定合法性、授权或道德进步。
 
 ---
 
-## §5 常见误用与边界声明
+## §11 `d` 的双瓶颈容量接口与动态能力接口（`d_max` / `d_mobile`）
 
-### 误用 1：将 d 值解释为"意识程度"的单一量度
-
-**正确**：d 值不是意识仪表。当前没有建立 `d` 与 consciousness 之间的 universal necessary-or-sufficient relation；`d / \Psi_f / \hat G` 合取也不由本 owner 提供普遍准入。在已声明 downstream 模型中，`d` 可作为一项 candidate evidence dimension。
-
-### 误用 2：将 d 值比较用于跨域排名
-
-**正确**：量子层的 $d_{quant}$ 与生物层的 $d_{bio}$ 使用相同的数学公式，但**不具有现象内容上的可比性**。
-比较只在**同域内**有效（如不同人的 $d_{bio}$ 可相互比较）。
-
-### 误用 3：将"d 值 = 0"等同于"不存在"
-
-**正确**：在已声明模型中，$d \approx 0$ 表示没有已准入或只有可忽略的 stake-coupled concern。这不判定系统是否存在，也不判定它是否为 subject。d 值描述已准入关切范围，不描述本体论存在或主体准入。
-
-**d 值的语义刻度**（规范参考）：
-
-| d 值范围 | 语义 | 典型案例 |
-|---------|------|---------|
-| $d \approx 0$ | 在声明模型中，无已准入或只有可忽略的 stake-coupled concern | 须按具体风险、梯度与后果回流模型判读 |
-| $d \approx 1$ | 约一个占主导的已准入关切维度 | 模型内维度摘要，不是主体阈值 |
-| $d > 1$ | 多个已准入关切维度 / 较广关切范围 | 只在已声明的尺度与归一化规则下比较 |
-| $d \to \infty$ | 关切范围的不可达渐近 / regulative proxy | 非字面可达状态，不准入更高意识或道德地位 |
-
-**注意**：此刻度只表示声明模型内的关切维度摘要。任何 `d` 值都不建立 subjecthood、consciousness、Bearer、phenomenality 或 moral standing；$d = 0$ 不推出 non-subject，$d = 1$ 不推出 subject。
-
-### 误用 4：将精神传统中的"d → ∞"字面化
-
-**正确**：`H-Spirit-4` 中的 $d \to \infty$ 是**渐近方向**，类比热力学极限 $N \to \infty$ 在有限系统中的意义。
-没有任何有限系统能达到 $d = \infty$；这是精神成长的方向，而非可到达的终点。
-
----
-
-## §5b d 扩张的本体论意义（规范声明）
-
-> **新增（2026-03-26）**：d 扩张的动力学方向与收敛目标的规范说明。对应 `Spirituality/SRT_Spirit_05_Shoshin.md` T-Sho-1。
-
-### §5b.1 d 扩张扩大处境化比较范围，不推出宇宙级最优
-
-d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力。** 每个选择都绑定于有限位置；改变一次选择所整合的关切范围，会改变被纳入的变量、后果回流和可比较候选，但不会自动给出唯一目标函数、跨主体聚合规则、时间范围或闭包边界。
-
-因此，`d ↑` 只能支持一个较窄的判断：更宽的关切范围**可能**暴露原先被外包的后果、被遮蔽的可达路径或原模型没有纳入的冲突。它不保证新选择更优，也不推出一个位置无关的 universe-wide optimum。
-
-**C-A 规范表述（作者裁决，2026-08-12）**：
-
-$$
-d \uparrow
-\;\not\!\Rightarrow\;
-\text{universe-wide global optimum}
-\quad\text{and}\quad
-d \uparrow
-\;\not\!\Rightarrow\;
-\langle v,\text{Shoshin}\rangle>0 .
-$$
-
-只有当具名模型同时声明有限算子／位置、可达域、比较规则、时间范围与约束，并通过可延续、可协调、不外包、可再选择四重判据时，才可说某个候选在**该模型的可达域内**更优。初心在这里仍只是 L₁/P2 处境化回读或 P3/P4 代理方向；它不是全局终点，也不由 `d ↑` 单独推出。
-
-### §5b.1a d 扩张与秩序增益
-
-d 的扩张本身不自动等于秩序增益。d 扩张的方向必须同时满足秩序增益的**四重判据**（`Core_Law/SRT_Selection_Argument.md §7b`；2026-07-05 由三判据升级为四判据，新增③不外包）：
-
-| 判据 | d 扩张中的含义 | 违反时的表现 |
-|------|--------------|------------|
-| **可延续** | 扩张不透支维持扩张后关切范围所需的资源 | 过度扩张 → 代价不可支付 → 崩溃回缩 |
-| **可协调** | 纳入的他者秩序条件之间不制造不可协调的摩擦 | 试图关切所有人但无法处理冲突 → 瘫痪 |
-| **不外包** | 扩张后的代价不被转嫁到无反馈通道的位置（未来世代、生态、无法申诉者、被排除者） | 表面关切扩大，代价却外溢到无声位置 → 假 d 扩张（对应 `C_i` 后果回流因子归零） |
-| **可再选择** | 扩张不锁定为唯一方向（如教条化的利他主义） | "必须关切所有人"变成新的遮蔽 |
-
-d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不是 d 越大越好，而是 d 在当前支付能力下的最优扩张方向。**③不外包判据与 §2b 的 `C_i`（后果是否回流到主体闭包）同源**：一个方向若把代价外包给无反馈位置，则该方向的 `C_i → 0`，不计入 `d_stakes`——秩序增益四重判据在方向层，`C_i` 在谱层，是同一后果回流约束的两个尺度。
-
-### §5b.1b 真 d 扩张 vs 假 d 扩张
-
-**真 d 扩张**改变算子的适应度函数——纳入他者秩序条件后，算子的最优解发生结构性位移。选择者在做出不同于只考虑自身时会做的选择。
-
-**假 d 扩张**不改变适应度函数，仅在符号层面声称关切范围扩大。四种典型形态：
-
-- **占有式**（$d_{apparent} > d_{real}$）：将他者纳入为自身秩序的资源。适应度函数中只有自身变量。
-- **符号式**（$d_{declared} > d_{operative}$）：使用关切的语言但不支付关切的代价。
-- **表演式**（$d_{visible} > d_{structural}$）：在可见场合展示关切以获取社会收益。
-- **效率式**（$d_{nominal} > d_{effective}$）：以关切之名行控制之实，将他者的复杂秩序压缩为单一可管理指标。
-
-**判别标准**：算子的最优解是否因纳入他者秩序条件而发生了位移？位移 = 真扩张；无位移 = 假扩张。
-
-**Cross-ref**: `Core_Law/SRT_Selection_Argument.md §7c`（真关切与假关切的完整论证）。
-
-### §5b.2 四义拆分：可达比较、规约性地平线与有限吸引子
-
-**C-A 不承认一个位置无关、宇宙尺度、带语义／评价内容的 global optimum 作为当前 SRT 的正面理论对象。** 本节只保留以下四义分界：
-
-| 对象 | 当前地位 | 使用条件 |
-|---|---|---|
-| universe-wide semantic / evaluative optimum | 不准入当前正面理论对象 | 可作为历史主张、引文或未建立的高承诺世界观命题留痕，但不得承重 canonical 推导 |
-| operator-relative reachable optimum | P2/P3 条件对象 | 必须声明有限位置 `θ`、可达域、比较规则、时间范围、约束与失败条件；不满足时只能说「扩大比较范围」或「避免已知局部陷阱」 |
-| regulative horizon | L₁/P2 或 P5 方向语言 | 必须标明不可到达；不能充当公式中的终态、现实已达状态或 L₀ 对象 |
-| closure / model attractor | P3/P4 有限动力学对象 | 必须声明具体模型、吸引域与稳定语义；稳定、低摩擦或可达均不自动等于最优、善或生成健康 |
-
-在具名有限模型内，若确实需要最优化形式，可直接写全索引，例如：
-
-$$
-x^*_{\theta,\tau,K,J}
-\in
-\arg\min_{x\in\mathcal{R}_{\theta,\tau,K}}
-J_{\theta,\tau,K}(x).
-$$
-
-这里的 `x*` 只是该模型、该时域与该可达域内的候选；本节不为它注册 repo-wide 新符号，也不把它外推为宇宙终点。
-
-热寂相关论证相应降到更低负担的裸句：**一个没有持续选择、真实 stake 与后续可再选择的终止态，不能仅凭低成本或低摩擦被读成生成健康。** 这个排除判断不需要、也不证明存在一个与之相反的全局最优；「维持最大数量的选择过程」同样不是充分替代，因为它可能被大量低 stake、可替换过程刷高。
-
-> **引用方向护栏（2026-08-11，Gate 0 canonical landing）**：下列 cross-ref 是 **provenance 指针，不是 canonical 背书**。按 `Governance/SRT_CLAIM_LADDER.md §0A`（Gate 0）的 read-back / 引用方向规则：**canonical 锚点不得通过 cross-reference 从 `canonical: false` 的 bridge / translation 文件反向导入 L₀ 层读法**。本节此前把 `Def-Apeiron-1` 标注为「初心作为 **L₀ 的**倾向性结构」，即以 canonical 认可语气导入了一条 L₀ 级 contentful 读法（Gate 0 class C），现予改正。
->
-> **层级以 `Core_Law/SRT_L0_Metaphysics.md` 为准**：初心不在 L₀ 的原生承诺内，是 L₁/P2 对无内容结构不对称之显现结果的回读。下列两处的全局／变分形式一律按**领域 translation / bridge** 读，不得反定义 L₀，也不得据以在 canonical 层建立「初心 = L₀ 倾向性结构」。
->
-> **B-A／C-A 后续裁决（2026-08-12）**：Gate B 与 Gate C 均已关闭。当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；初心从 L₁/P2 回读开始。下列公式只能作为具名、有限、完整声明作用域的 bridge / operational proxy 使用；无限时域或 universe-wide 读法不再是当前正面理论对象。
-
-**Cross-ref（provenance，非 canonical 背书）**：
-
-- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：在声明有限时域与可行域的模型中，把初心写作自由能泛函的负梯度代理。**按 bridge 读**；不构成 L₀ 主张或 universe-wide convergence。
-- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；原「L₀ 的内在属性」措辞已按 B-A 撤回，不构成 L₀ 定位。
-
----
-
-## §6 集体 d-value 补充说明
-
-> **新增节（2026-03-11）**：对应集体景观优先性定理（`_SRT_VERTICAL_INTEGRATION.md §4.5`）和多算子耦合方程（`Core/SRT_Core_22_Equations.md Eq-Multi-03`）。
-
-### §6.1 核心重新定位
-
-集体 d-value 不是个体 d_i 的聚合函数。正确定位：
-
-$$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k \lambda_k\right)^2}{\sum_k \lambda_k^2}}$$
-
-其中 $\lambda_k$ 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 特征值（见 `Eq-Multi-03`）。
-
-个体 $d_i$ 是该景观的子空间截面，**包含关系而非组合关系**：
-$$d_i = D_{eff}(\mathcal{F}_{collective}\big|_{\theta_i})$$
-
-### §6.2 与旧有聚合方案的关系
-
-`_SRT_VERTICAL_INTEGRATION.md §4.1` 中的历史候选方案（A/B/C/D/E）是在实体本体论框架下的近似。在特定条件下，这些方案可作为 $d_{collective}$ 的**实证近似**：
-
-| 历史方案 | 对应的景观条件 |
-|---------|--------------|
-| 方案 A（Min 函数） | 景观 Hessian 最小特征值主导（链条式结构） |
-| 方案 B（加权平均） | 景观曲率近似均匀分布（民主型结构） |
-| 方案 C（超加性） | 景观有效维度高于任一子空间截面 |
-| 方案 D（结构贡献） | 制度 L₂ 提供主景观曲率 |
-
-### §6.3 使用规范
-
-- 讨论集体组织、制度、NGO 的 d-value 时：引用本节和 `§4.5`，使用 $D_{eff}(\mathcal{F}_{collective})$ 框架
-- 在无法测量景观曲率的实证场景中：可临时使用历史方案中最适合的近似，但需注明"实体本体论近似"
-
----
-
-## §7 各域文件的 d-value 引用标准
-
-当其他文件引用 d-value 时，应：
-
-1. **第一次出现时**：标注 `@see _SRT_D_VALUE_CANONICAL.md §1`
-2. **使用 Def-d-bio 近似时**：标注 `@see §2`
-3. **进行域间比较时**：参见 `§3` 的投影表，说明是否属于同域比较
-4. **AI 语境中**：优先使用 Def-d-2（风险梯度），并声明 training-time / inference-time / persistent-memory 架构状态；只有 inference-only / 非历史承载部署才可直接引用 `§3` 的 $d_{AI} \approx 0$ 说明
-
----
-
-## §8 d 与 T_dir 的关系（2026-04-02 新增）
-
-SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** 作为与 d 相关但独立的新变量。
-
-**关键区分**：
-
-| | d-value | T_dir |
-|:-|:-------|:------|
-| **度量** | 关切范围 / 有效维度 / 风险梯度 | formed system 对 independently typed、declared direction signal 的可读与重取向能力 |
-| **canonical 文件** | 本文件 | `_SRT_T_DIR_CANONICAL.md` |
-
-**有界关系**：当前没有 universal `d -> T_dir` necessity theorem。`T_dir` 的准入首先需要 independently typed、declared direction signal；只有在声明模型内，`d` 才可以约束 stake-coupled access、execution 或 reorientation capacity。精确 `d / T_dir` 关系在 owners 独立建立前保持 model / bridge scoped。
-
-```text
-no declared direction -> T_dir undefined / not admitted, regardless of d;
-declared direction + inaccessible signal -> T_dir may be 0 even when d > 0;
-T_dir > 0 -> neither a universal d value nor validation of the direction.
-```
-
-T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界。不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
-
-**不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
-
----
-
-## §9 d-value 的锻炼与萎缩机制（2026-04-02 新增）
-
-> **当前有界读法**：在 bearer / agency / decision 模型中，替代式 `L_2` 可通过减少 stake-coupled revision / reselection 机会使 d-related capacity 失去练习；这不等于消灭 Selection occurrence。d-value 是否维持或萎缩，必须绑定到声明的 stake、consequence return 与 revision / reselection 条件。
-
-### 机制链
-
-```
-替代式 L₂ 在声明模型中减少 stake-coupled revision / reselection 机会
-    ↓
-d-value 未被 stake-coupled concern / consequence-return 条件实际调用；这不等同于“无 Selection”
-    ↓
-d-value 萎缩（不用则退）
-    ↓
-即使 L₂ 支架被移除，系统也可能暂时缺乏 stake-coupled revision / reselection capacity
-    ↓
-可能更依赖替代式 L₂ 来维持既有脚本或方向感
-    ↓
-d-value 进一步萎缩……（自强化依赖环）
-```
-
-### 关键区分
-
-**d-value 的直接抑制**（已在 §5 描述）：致命 L₂ 通过占据关切带宽、压缩可用维度来降低 d-value 的即时可用性。
-
-**d-value 的萎缩**（本节新增）：在特定 bearer / agency / decision 模型中，替代式 L₂ 可通过持续减少 stake-coupled revision / reselection 机会，使 d-related capacity 失去练习并导致长期容量下降。这是条件性机制，不是 `L_2 automation -> no Selection` 的普遍律。
-
-两者的关系：直接抑制是急性效应，萎缩是慢性积累效应。慢性萎缩比急性抑制更难逆转，因为它改变的是系统的基础选择容量，而非当下的带宽占用。
-
-### 选择时刻与 d-value 的连接
-
-**选择时刻**在本节只是 bearer / agency / decision 模型中重新打开 stake-coupled revision 或 reselection 的 episode，不是与“L₀ 可能性仓库”直接接触的本体定义。
-
-- 当 episode 真正调用 stake、consequence return 与 revision / reselection：d-related capacity 可被练习、维持或发展
-- 当自动化或 scaffolded `L_2` 在某个模型中持续减少这些机会：d-related capacity 可能萎缩，但自动化过程仍可包含真正 Selection occurrence
-
-**推论（条件性）**：辅助式 L₂ 可在降低摩擦的同时保留 stake-coupled revision / reselection；替代式 L₂ 只有在声明的 stake 与 consequence-return 条件下减少这类机会时，才可能带来 d-related capacity 的长期代价。这不用 `d` 定义 Selection occurrence。
-
-### 与 T_dir 的关系
-
-在某个 direction 已被独立准入之后，`d` 可在声明模型中作为系统能否针对该方向行动、维持或重取向的一项 stake-coupled capacity 约束。
-
-`T_dir` 追踪的是对已声明方向的 access / readability / reorientation，不是方向的存在或真理；`d` 不创造该方向。本节不建立 universal `d / T_dir` necessity。两者仍不同：`d != T_dir`。
-
----
-
-## §范畴边界：d值是决策属性，不是主体属性
-
-> **追加澄清**（2026-04-06，来源：`Philosophy/SRT_Political_Rights.md §2`）
-
-d值描述的是**选择事件**整合的关切范围，不是决策主体（个体或集体）的固有属性。
-
-| 错误表述 | 正确表述 |
-|---------|---------|
-| "这个人有很高的d值" | "这个人的决策倾向于整合更宽的关切范围" |
-| "个体d值 vs 集体d值" | 此二分是范畴错误，d值在主体类型之外 |
-| "d值衡量聪明程度" | d值衡量关切范围的宽度，与认知能力不同 |
-
-**主体d倾向**（操作化桥梁）：主体跨大量决策的d值统计分布，在大样本下收敛为相对稳定的特征量。这是统计量，不是本质属性。
-
-$$d_{tendency}(S) \equiv \mathbb{E}_{\sigma \sim S}\left[d(\sigma)\right]$$
-
-完整推导见：`Philosophy/SRT_Political_Rights.md §2-§3`
-
----
-
-## §10 d 值的多场景显现（2026-04-08 新增）
-
-> **来源**：`Core/Dynamics_Scaling_Annex/07-12` 系列硬化文件。
-> 本节补充 d 值在错误积累与多G道德场景中的显现形式，统一于 §1 的双层规范架构。
-
-### §10.1 d 作为统一整合带宽
-
-d 值是单一概念在不同场景中的显现：
-
-| 场景 | d 的显现形式 | 对应文件 |
-|---|---|---|
-| 多G道德场景 | **整合半径**：G能将多少他者G的状态纳入选择计算 | `Annex/08_MoralPredictionError_MultiG_System.md` |
-| 错误剂量场景 | **可处理张力窗口**：G能消化多少错误积累而不崩溃 | `Annex/10_ROS_Apoptosis_ErrorDose.md` |
-| 跨尺度G场景 | **整合尺度**：G在低阶→高阶相变中覆盖的选择维度范围 | `Annex/11_G_CrossScale_PhaseState.md` |
-| 代理校准场景 | **校准带宽**：L₂能接收并整合多少L₁/L₀上行信号 | `Annex/12_ProxyModel_OcclusionPhases_Intervention.md` |
-
-所有显现均是 Def-d-1（有效维度）在不同上下文中的投影，统一于 §1 的规范架构。
-
-### §10.2 d 值与病理阈值的关系
-
-`Annex/10` 建立的病理阈值公式中，d 是核心因子：
-
-$$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
-
-- $\uparrow d$ → $\uparrow \Theta$（整合带宽越大，越不易崩溃）
-- d 的训练：低剂量错误积累的反复整合可提升 d（hormesis 机制，见 §9）
-- d 的损伤：高剂量单次创伤可降低 d，而非提升
-
-### §10.3 d 值与三相态条件的关系
-
-`Core/SRT_Core_PhaseState_TripleCondition.md` 建立的三相态条件中，d 值作为底层容量：
-
-- 历史闭合质量 → 影响 d 的有效维度（历史越完整，读取维度越多）
-- 规范梯度有效性 → 依赖 d > 某阈值才能形成有意义的多维度自我维持势差读数
-- 自写回强度 → 高 d 使写回覆盖更多维度的可能性空间
-
-**Cross-ref**: `Core/SRT_Core_PhaseState_TripleCondition.md §5`；`Core/SRT_Core_NormativeGradient.md §6`。
-
-### §10.4 d 值在社会 delegation 场景中的显现（social-delegation candidate bridge）
-
-> **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
->
-> **Scope guard（WTC-78）**：本节只提供声明式社会干预模型中的候选桥接。`d` 是 stake / concern quantity，不是 legitimacy meter；d 轨迹不单独建立 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。
->
-> **Category / comparison guard（WTC-84）**：canonical `d` 属于 decision / Selection event，不是个人或群体的固有属性。群体层面的 bare `d` 不是 canonical shorthand；只有明示为 decision-event `d` distribution、`d_tendency` trajectory 或 declared normalized proxy 时才可使用。跨群体或介入方比较必须位于同一 domain、同一 scale，或给出显式 normalization / mapping rule。
-
-在声明的社会 delegation 模型中，decision-event `d` distribution、`d_tendency` trajectory 或 declared `d` proxy 可以作为候选观察维度，研究它们是否与自发支撑、脚手架撤回或协调变化共同出现：
-
-$$\text{d trajectory} \longrightarrow \text{candidate observable signal in a declared intervention model}$$
-
-这不是必然律，也不是“充分 d”推出外部 G 必然退出、底层支撑必然出现或高阶结构必然得到支持的定理。脚手架、退出与支撑关系需要独立声明目标、时间窗和操作化。
-
-**类型化 d 轨迹作为候选观察信号**：
-
-| 类型化轨迹 | 声明模型中的候选读法 | 边界 |
-|---|---|---|
-| 被干预群体的 decision-event `d` distribution 或 `d_tendency` 在可观测时间窗内变化 | 可作为干预目标是否改善的一个候选信号 | 不等于 legitimacy、authorization、moral progress 或 real uplift |
-| 在同域同尺度或已声明归一化下，被干预群体的 `d_tendency` / proxy 停滞或收缩，而介入方对应轨迹扩展 | 可作为方向截获 / 锁定风险的候选信号 | 不等于 capture、uplift 或 coordination direction 的判决 |
-
-`d_tendency` 或 proxy 比较本身不推出 legitimacy、authorization、moral progress、capture / uplift 或 coordination direction。历史上的殖民主义、威权主义和宗教征服可作为历史 / 候选模型案例讨论，但不得由 decision-event `d` distribution、`d_tendency` 或 proxy 的分布、轨迹或净量变化单独定义其道德或政治结论。三项指标、reselectability、类型化 d trajectory 与共享 L0/L1 / 残差张力机制均保持 P3/P4 candidate status。
-
-**Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
-
----
-
-## §11 d 的上限与动态能力：d_max 与 d_mobile（2026-04-10 新增）
-
-> **来源**：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1, Eq-DValue-Mobile-1`；`D_VALUE_ALIGNMENT.md §4.4`。
-> 本节是这两个新公式的规范索引入口。
-
-### §11.1 d_max：d 的双瓶颈上限
-
-$$\boxed{d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\Big)}$$
-
-本式仅在独立声明 compatible `κ₀`-like realization、单位与作用域的模型中准入；没有该实现时，`Eq-DValue-Max-1` 不适用。在该声明模型内有两个独立瓶颈：
-- **信息瓶颈**：`rank_eff(I_F(θ))` — Fisher 矩阵的有效秩，由算子参数化能力决定
-- **稳定性瓶颈**：`Ψ_f^budget / κ₀` — 可用摩擦预算除以模型内每方向有效稳定／曲率／维持代价参数；κ₀ 不选择、排序、赋值或合法化方向
-
-**关键推论（模型内）**：`dim(Θ)`（参数维数）只提升信息容量候选上限；声明模型中的 candidate `d_max` 由两个瓶颈中的较小值限制。这不建立 universal consciousness ceiling、subject threshold、value direction 或 primitive ontology law。
-
-*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`
-
-### §11.2 d_mobile：d 的动态化能力
-
-$$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$$
-
-**语义**：在声明的 attractor / curvature realization model 中，当可达方向漂移时，算子 θ 重新对准的速度与容量。与 d 的区别：
-- $d$：当前 stake-coupled 对齐的模型内摘要（快照）
-- $d_{\text{mobile}}$：当已声明的可达方向漂移时，θ 跟上的能力（动力学）
-
-**记录关切压力 ≠ 能动**：在声明模型中，高 d 算子在 χ_payable = 0 时，d_mobile = 0——模型可记录关切梯度压力，但支付能力为零，不由此建立感知、意识或行动能力。
-
-**冻结态候选**：在已声明 `d / d_mobile` 模型中，高 $d$ + $d_{\text{mobile}} \approx 0$ 可指示较低的 reorientation / mobility；consciousness 与 pathology 均须独立建立。
-
-*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Mobile-1, Def-Payable-Chi-1`
-
-### §11.3 与 d 规范定义的关系
-
-| | d | d_max | d_mobile |
-|---|---|---|---|
-| **本质** | stake-coupled 当前摘要（快照） | 声明模型中的 candidate capacity bound | 重新对齐的动力学能力 |
-| **决定因素** | canonical risk/stake relation；proxy 须独立准入 | rank_eff + Ψ_f 预算/模型内 κ₀ | d × rank_eff / (L₂ 刚性 × C_r) × χ_payable |
-| **可为 0** | 是 | 由声明模型与参数决定；无 compatible κ₀ 时本式不适用 | 是（冻结态） |
-| **意识相关** | 只按独立 owner 的条件性模型读 | 不单独设定 universal consciousness ceiling | 只按独立 owner 的条件性模型读 |
-
-*Cross-ref*：`Philosophy/SRT_Consciousness_Conditions.md §三`（三层意识结构）；`Core/SRT_Core_12b §Consciousness-2D-Map`（二维拓扑）。
-
----
-
-## 【理论边界/防误用声明】
-
-1. 本文档统一 d-value 的定义，但各域的近似公式（Def-d-bio 等）需要实验校准，其参数值（$\alpha, \beta, \gamma$）为初始估计。
-2. 有效维度公式 Def-d-1 依赖特征值分解，其适用性取决于算子的线性化是否在相关参数范围内有效。
-3. 量子层的 $d_{quant}$ 与宇宙层的 $d_{cosm}$ 是数学量；它们自身不建立或否定 phenomenality / consciousness，任何进一步归因均须独立过门。
-4. 本文件的"一致性证明"（§4）为草稿级别，需要形式化验证后才能作为定理引用。
-5. §10 的多场景显现是概念统一，不是数学等价证明——各显现形式的形式化等价关系待独立验证。
+- **`d_max`（`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`，条件容量模型与量纲护栏）**：在独立声明兼容 $\kappa_0$ 每方向维持代价参数的模型中，$d_{\max}(\theta) = \min\!\big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\big)$（信息瓶颈 × 稳定性瓶颈）。**量纲与语义硬护栏（`P1-04`）**：$\operatorname{rank}_{\text{eff}}(I_F(\theta))$ 是**无量纲有效谱维数容量上界**；既然规范 `d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\|` 是随效用缩放的梯度范数、已与谱维数严格分离，**不得再将 $\operatorname{rank}_{\text{eff}}(I_F(\theta))$ 直接冒充为梯度范数 `d` 的普遍数学上界**——除非声明模型显式给出单位归一化与单方向风险灵敏度校准映射，否则 `Eq-DValue-Max-1` 仅约束**有效可维持赌注方向容量（direction-capacity bound）**，不直接约束梯度模 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$。
+- **`d_mobile`（`Eq-DValue-Mobile-1`、`Def-Payable-Chi-1`）**：$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$，刻画可达方向漂移时的动态再对齐能力（须声明兼容单位）。高 `d` 而 $\chi_{\text{payable}} = 0$ 时 $d_{\text{mobile}} = 0$（记录关切压力 ≠ 具能动再对齐能力）。
 
 ---
 
 ## 书稿层用法说明（Bridge to Book Layer）
 
-正文写作中，Q15 会把 d-value 读成关切多样性的完整诊断入口。这里的意思不是替换后台的规范定义，而是提醒读者：关切多样性不能只看宽度。正文中说的完整诊断包括三件事：后果回来得有多深，回来到了多少条真实轴线，回来之后是在支撑生成还是侵蚀生成。形式层仍按原有 canonical 规则读取；书稿层则用这三把尺帮助读者避免把 d-value 误解成单纯对象数量或信息宽度。
+在《从存在到秩序》正文（`Q15`）中，`d-value` 被读作关切多样性的三维诊断入口：后果回来得有多深、回来到了多少条真实轴线、回来之后是在支撑生成还是侵蚀生成。此书稿读法帮助避免把 `d` 简化为信息宽度，而形式与规范口径仍以本文件 `§1–§11` 为准。
 
 
 
@@ -5060,67 +3856,59 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 | path | `_SRT_PSI_F_CANONICAL.md` |
 | id | SRT-PSIF-CANONICAL |
 | claim_mode | canonical |
-| status | axiomatic_hybrid_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
-| canonical(字段) | - |
-| last_commit | 2026-09-19 |
+| canonical(字段) | true |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-01]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT Ψ_f 规范定义文档（Canonical Definition of Ψ_f）
+# SRT `Ψ_f` 与广义摩擦规范定义文档（Canonical Definition of `Ψ_f` & Friction Interface）
 
-> **目的**：终止 `Ψ_f` 在不同域中的定义漂移，建立“第一性语义锚点 + 形式主表达 + 跨尺度不变量”的统一架构。  
-> 所有涉及本体论摩擦的文档，应优先回链本文件。
-
-> **Canonical status note（2026-04-24）**：本文件固定 `Ψ_f` 的 repo-wide 主读与投影边界。`Def-Ψ-1` 是 theory-facing semantic anchor；`Def-Ψ-2` / `Def-Ψ-3` 是治理性主形式与跨尺度判据，不构成最终唯一推导。几何、代谢、神经、物理读法都必须按 projection / proxy / bridge 标注，不得反向改写 `Ψ_f`。尤其是 `Ψ_f ≡ g_F` 不得按裸等号读取；它只能作为 “`Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出” 的速记。
+> **角色（`Freeze A` canonical owner）**：本文件固定 SRT 本体论摩擦 **`Ψ_f`** 的第一性语义锚点（`Def-Ψ-1`）、条件信息几何投影（`Def-Ψ-2`）与跨尺度可支付性不变量（`Def-Ψ-3`），并在 `R4-A`（2026-11-26）中将其正面接入 **`R3` 机会成本动态四联**（`T3-02 D / PT09`）、**`A1` 压力侧 × 供给承载侧双侧架构**与 **`R3-08` 摩擦四分**。
+>
+> **不覆盖与不扩符声明**：`Def-Ψ-1 / Def-Ψ-2 / Def-Ψ-3`、`§3.2` 边界与 Core 绝对 `Ψ_f → 0` 退化极限保持不变（`CΨ` 保持独立 `OPEN`）；遵循 `A-9` 单摩擦概念族纪律，不新增 `Ψ_f^{...}` 独立规范子符（模型级局部投影记号如 `Ψ_f^{geom}`、`Ψ_f^{maint}` 仅作声明语境别名或投影）。
 
 ---
 
-## §0 为什么需要本文件
+## §0 广义摩擦与 `Ψ_f` 的层级分工（`T3-02 D / PT09 / R3-08 / A1`）
 
-当前 SRT 文档中，`Ψ_f` 同时被写成：
+`R3` 确立了摩擦在共同生成骨架中的正面机制定位：**摩擦不是孤立的物理阻力或情绪标签，而是机会成本差异产生的实际选择压力（`T3-02 D`）**。
 
-| 来源类型 | 表述 | 典型含义 |
-|---------|------|---------|
-| Core / Core_Law | 锚定代价 | 把 `L_0` 压成 `L_1` 的支付项 |
-| Dynamics / Scaling | 生成性摩擦 | 学习、演化、文化变迁的动力学来源 |
-| Physics | 几何曲率 / 引力 | 物理尺度上的 P3/P4 弱相容接口，不是已完成张量级推导 |
-| AI / Consciousness | 痛苦与 stake 的必要条件 | 没有真实 `Ψ_f` 负担就没有真实关切 |
-| Experiment | 潜变量 | 通过 HRV / SCR / 语言情态比等 proxy 读取 |
+- **成立门槛**：机会损失本身不自动构成摩擦；**仅当该机会损失实际影响正在进行的生成关系与后续选择时，才形成摩擦**。
+- **核心跨尺度机制（`PT09`）**：多单元耦合形成垂直结构时，为维持高阶组织而被压制的局部替代方向与机会成本损失，构成跨尺度最具代表性的摩擦来源（与 `07-19` 构建前碰撞张力并列作为候选跨尺度机制，不宣称已穷尽所有摩擦机制）。
 
-这些不是矛盾，而是同一结构在不同描述层上的投影。  
-本文件的任务，是把它们固定为一个统一对象，而不是让每个领域各说各话。
+为防止概念混叠，本文件固定**双侧配对**与**四分界线**：
+
+### 0.1 `A1` 双侧配对（压力侧 × 供给承载侧）
+
+| 侧面 | 结构分项 | 规范分工 |
+|---|---|---|
+| **摩擦 / 压力侧** | ① 机会损失（背景未实现替代，未必已形成压力）<br>② 现实结构压力（由耦合/垂直压制实际作用于当下关系）<br>③ 预测性压力（形成态预期中的代价预判）<br>④ 实际实现负担（维持/重构切片时须实际支付的阻抗） | 刻画“为何选择关系承压并驱动重构/正交化”；机会损失本身不自动等于 `Ψ_f` |
+| **供给与承载边界侧** | **`Ψ_f` 可支付窗（`Def-Ψ-3`：`P_sel` vs `Ψ_f` + `S_noise`）**与分布式可支付性护栏（实现条件内生于完整生成关系，非单一孤立单元自给） | 刻画“系统能否在承担该实现负担的同时保持闭包、延续与后续选择能力”；越阈则进入解体或谱系终止背面（`Core_Law/SRT_Irreversibility.md`） |
+
+### 0.2 `R3-08` 摩擦四分（严禁互代）
+
+1. **广义摩擦（机会成本实际选择压力，`T3-02 D / PT09`）**：跨尺度动态四联中的关系性选择压力；
+2. **非闭合压力**：局部交互尚未收敛或难以协调时的结构失配张力；
+3. **可支付负担 `Ψ_f`（本文件核心 owner）**：将开放可能性压缩、维持或重构为可维持/可行动/可协调现实切片时必须承担的本体论阻抗与可支付负担；
+4. **主观痛苦 / 苦难（`Core_Law/SRT_Suffering.md`）**：须独立第一人称 registration 证据的体验层负担，**绝不等同于 `Ψ_f`**。
 
 ---
 
 ## §1 规范定义层级（Canonical Priority）
 
-> **规范优先级声明**：
-> 本文件对 `Ψ_f` 采用三层 canonical 架构：
->
-> 1. **第一性规范锚点（Primary Canonical Anchor）**：`Def-Ψ-1`，把 `Ψ_f` 固定为“选择压缩开放可能性时必须承担的本体论阻抗”。
-> 2. **形式工作主表达（Formal Working Form）**：`Def-Ψ-2`，把 Fisher–Rao metric 固定为 `Ψ_f` 在可微统计流形上的局部二阶信息几何投影 / 路径泛函诱导结构，并厘清 `Ψ_f` 与 `Φ` 的层级关系。
-> 3. **跨尺度工作不变量（Cross-Scale Working Invariant）**：`Def-Ψ-3`，把“可支付性条件”固定为跨尺度真正保持不变的判据。
->
-> 使用原则：
-> - 讨论 **本体论意义 / 现实化 / stake / AI 门槛** 时，优先引用 `Def-Ψ-1`。
-> - 讨论 **方程 / Fisher 几何 / 路径积分** 时，优先引用 `Def-Ψ-2`，并说明 Fisher 几何读法是 projection / lower-bound style formalization，不自动等同实际支付成本。
-> - 讨论 **跨尺度比较 / 量子-神经-社会统一 / 实验操作化** 时，优先引用 `Def-Ψ-3`。
->
-> **状态边界**：这里的 “Primary / Formal / Cross-Scale” 表示当前 repo 内部优先引用顺序，不表示三个层次已经被证明为无条件等价或最终完备。
+本文件对 `Ψ_f` 采用三层规范架构（表示引用优先级，不声称三层无条件等价）：
+1. **第一性规范锚点（Primary Canonical Anchor）**：`Def-Ψ-1`（本体论阻抗与可支付负担主读）；
+2. **条件形式工作表达（Formal Working Form）**：`Def-Ψ-2`（可微统计流形上由 Fisher–Rao metric 诱导的局部二阶几何代价与路径泛函；**禁止裸等号 `Ψ_f ≡ g_F`**）；
+3. **跨尺度工作不变量（Cross-Scale Working Invariant）**：`Def-Ψ-3`（可支付性条件）。
 
-### §1.1 v1 Canonical Main Reading（治理性钉住，2026-04-22）
-
-> **层级**：governance / canonical usage rule；不新增 core theorem。
-
-全仓默认主读暂取 **information-theoretic payability cost**：`Ψ_f` 首先表示把开放可能性压成可维持现实切片时，系统必须可支付的信息论/组织性负担。几何读法（路径长度、曲率）与代谢读法（能量、恢复、压力代理）是该主读在特定域内的 projection / allowed proxy。
-
-若同一域内的几何 projection、代谢 projection 与 payability 主读发生冲突，默认以 payability 主读为准；冲突的投影应标记为 projection failure，而不是反向改写 `Ψ_f` 的 canonical 含义。
+**v1 全仓默认主读**：`Ψ_f` 默认按 **information-theoretic / organizational payability burden** 读；几何投影与代谢/能耗投影均为条件代理，与主读冲突时标为 `projection failure`，不得反向改写 `Ψ_f`。
 
 ---
 
@@ -5128,430 +3916,104 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 
 ### Def-Ψ-1: 本体论阻抗定义 ⭐ PRIMARY CANONICAL ANCHOR
 
-\[
-\boxed{
-\Psi_f := \text{在已声明的 } \hat{G}_\theta \text{ 形成态／模型载体将开放可能性表示为可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}
-}
-\]
+$$\boxed{\Psi_f := \text{在已声明的 } \hat{G}_\theta \text{ 形成态／模型载体将开放可能性表示为可维持、可行动、可协调的 } L_1 \text{ 现实切片时，必须承担的本体论阻抗}}$$
 
-`\hat{G}_\theta` 在此只是已声明 Selection realization 的 formed / formal / model-level role-carrier，不是 primitive Selection 本身，也不是位于 actualisation 之前的本体发动机或 chooser。本定义固定 payability / friction 语义，不用模型载体反定义 primitive actualisation。
-
-**语义**：
-- `Ψ_f` 不是“想达到某个目的”的主观努力，而是选择发生时不可消除的结构性阻抗。
-- 它不只等于能耗，也不只等于痛苦，更不只等于自由能；它是这些读数背后的同一约束结构。
-- 更通俗地说：
-
-> `Ψ_f = 把可能性硬压成现实的代价。`
-
-**关键边界**：
-- 不要把 `Ψ_f` 写成纯目的论的“为了达成某目标而支付的成本”。
-- 不要把 `Ψ_f` 缩减成“粗粒化”一个动作；粗粒化只是它的一种实现形式。
-- 不要把 `Ψ_f` 等同于主观痛苦本身；痛苦更接近其报警读数或变化率。
-
----
+`\hat{G}_\theta` 在此仅为已声明 Selection realization 的形成态/形式角色载体，绝非原初 `Selection` 本身或先在 chooser。`Ψ_f` 既不是主观努力，也不单纯等于热力学能耗、自由能或主观痛苦，而是这些局部读数背后共同的可支付阻抗约束。
 
 ### Def-Ψ-2: Fisher 信息几何投影与记号分层 ⭐ FORMAL WORKING FORM
 
-#### Def-Ψ-2a: 局部二阶信息几何投影（禁止裸等号）
+- **Def-Ψ-2a（局部二阶信息几何投影，禁止裸等号）**：当选择域可表示为平滑统计流形 $\{p(x\mid\theta)\}$ 且局部二阶展开有效时，Fisher–Rao metric $g^F_{ij}(\theta) = \mathbb{E}_{p(x\mid\theta)}[\partial_i \log p\,\partial_j \log p]$ 诱导局部二阶几何代价与有限路径泛函：
 
-当某一选择域可被表示为平滑统计流形 \(\{p(x\mid\theta)\}\) 时，Fisher–Rao metric 给出相邻可选状态之间的局部可区分性：
+$$\boxed{\delta \Psi_f^{geom} := \frac{1}{2} d\theta^\top g_F(\theta) d\theta + O(\|d\theta\|^3)}, \qquad \boxed{\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g^F_{ij}(\theta)\,\dot{\theta}^i\dot{\theta}^j}\,dt}$$
 
-\[
-g^F_{ij}(\theta)
-=
-\mathbb{E}_{p(x\mid\theta)}
-\left[
-\partial_i \log p(x\mid\theta)\,\partial_j \log p(x\mid\theta)
-\right]
-\]
-
-KL 散度的局部二阶展开为：
-
-\[
-D_{KL}\!\left(p_\theta \parallel p_{\theta+d\theta}\right)
-=
-\frac{1}{2}d\theta^\top g_F(\theta)d\theta
-+O(\|d\theta\|^3)
-\]
-
-因此，`Ψ_f` 的 Fisher 几何读法应写成局部代价或路径泛函，而不是写成标量代价与度量张量的裸等同：
-
-\[
-\boxed{
-\delta \Psi_f^{geom}
-:=
-\frac{1}{2}d\theta^\top g_F(\theta)d\theta
-+O(\|d\theta\|^3)
-}
-\]
-
-在路径形式中，可使用：
-
-\[
-\boxed{
-\Psi_f^{geom}[\gamma]
-=
-\int_\gamma
-\sqrt{g^F_{ij}(\theta)\,\dot{\theta}^i\dot{\theta}^j}\,dt
-}
-\]
-
-若强调能量式或行动量式累计，可使用：
-
-\[
-\boxed{
-\mathcal{E}_{\Psi}^{geom}[\gamma]
-=
-\frac{1}{2}\int_\gamma
-\dot{\theta}^\top g_F(\theta)\dot{\theta}\,dt
-}
-\]
-
-**语义**：  
-`Ψ_f` 在形式化上不是任意成本函数；在可微统计流形投影中，它的局部二阶代价结构由 Fisher–Rao metric 诱导。Fisher metric 本身是张量；`Ψ_f` 是 payability burden / 局部标量代价 / 路径泛函。故 `Ψ_f ≡ g_F` 只能作为内部速记，完整读法必须是：
-
-> `Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出。
-
-#### Def-Ψ-2b: 适用条件与失效边界
-
-Fisher 投影只在以下条件下作为 formal working form 使用：
-
-1. 存在可解释的参数空间 \(\theta\) 或统计模型族 \(p(x\mid\theta)\)。
-2. 局部可微近似有效，KL 二阶展开未被奇异点、相变、模型冗余或强非线性破坏。
-3. Fisher 可区分方向确实回流到现实维持、闭包、身份连续性或后续选择能力。
-4. 跨尺度使用时，必须给出该尺度自己的状态空间、观测量、参数化方式与 proxy，而不能直接搬用同一单位。
-
-若这些条件不满足，应把 Fisher 读法降为失败投影或启发式类比，不得用它反向定义 `Ψ_f`。
-
-#### Def-Ψ-2c: `Ψ_f` 与 `Φ` 的分层
-
-\[
-\boxed{\Phi(\Delta t)=\int_{\Delta t}\Psi_f(t)\,dt}
-\]
-
-使用规范：
-- `Ψ_f(x,t)`：局部摩擦负荷 / 局部阻抗读数
-- `Φ(\Delta t)`：累积摩擦势 / 时间窗内总账
-- `Ψ_f^{geom}`：Fisher–Rao metric 诱导的局部几何投影 / 路径泛函
-- `Ψ_f(\hat{G}_i,\hat{G}_j)`：在文档里允许作为“路径积分后的耦合摩擦泛函”的简写
-
-这意味着：
-- `Ψ_f` 可以指局部场，也可以在作用域明确时指积分泛函
-- `Φ` 用于强调“时间累积后的总账”
-- 若不加说明，优先将 `Ψ_f` 理解为“局部负荷 / 可支付阻抗结构”，而非单纯总账或裸 Fisher 张量
-
----
+（能量式累计可写 $\mathcal{E}_{\Psi}^{geom}[\gamma] = \frac{1}{2}\int_\gamma \dot{\theta}^\top g_F(\theta)\dot{\theta}\,dt$。）
+- **Def-Ψ-2b（适用条件与失效边界）**：仅当参数空间可解释、二阶近似未被奇异点/相变/参数冗余破坏、Fisher 可分辨方向确实回流闭包与后续选择能力，且本尺度状态空间与 proxy 已声明时有效；否则必须标记为 `projection failure`，不得将几何距离冒充全局 `Ψ_f`。
+- **Def-Ψ-2c（`Ψ_f` 与 `Φ` 分层）**：$\boxed{\Phi(\Delta t) = \int_{\Delta t} \Psi_f(t)\,dt}$。`Ψ_f(x,t)` 表局部摩擦负荷，`Φ(\Delta t)` 表时间窗内累积总账，`Ψ_f^{geom}` 表信息几何投影；不得在未声明尺度与积分窗口时混写。
 
 ### Def-Ψ-3: 可支付性条件 ⭐ CROSS-SCALE CANONICAL INVARIANT
 
-\[
-\boxed{
-\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^{X}(\Delta t)\ge \beta \Psi_f^{X}(\Delta t)+\gamma S_{noise}^{X}(\Delta t)
-}
-\,,
-\]
+$$\boxed{\mathrm{Payable}(X,\Delta t) \iff \alpha P_{sel}^{X}(\Delta t) \ge \beta \Psi_f^{X}(\Delta t) + \gamma S_{noise}^{X}(\Delta t)}$$
 
-其中：
-- \(P_{sel}\)：系统在该时间窗内可动用的选择预算
-- \(\Psi_f\)：现实维持 / 重构所需承担的摩擦负荷
-- \(S_{noise}\)：环境噪声与无序抽头
-
-**“可支付”不表示什么**：
-- 不表示代价很小
-- 不表示没有痛苦
-- 不表示没有风险
-
-**“可支付”表示什么**：
-
-> 系统在承担这笔 `Ψ_f` 的同时，仍能维持自身闭包、身份连续性与后续选择能力。
-
-因此跨尺度真正不变的不是单位，而是这个判据：
-- 量子层：态不会立刻退回噪声
-- 神经层：学习/冲突负担不致使闭包崩溃
-- 社会层：制度/改革摩擦不致使系统解体
+- **跨尺度不变的是可支付性判据而非物理单位**：系统在承担 `Ψ_f` 与噪声抽头 $S_{noise}$ 的同时，仍能维持自身组织闭包、延续性与后续选择能力；实现预算 $P_{sel}$ 内生于完整生成关系（遵循分布式可支付性，不假设孤立单元自给）。
 
 ---
 
-## §3 三重读法（同一结构的三种表达）
+## §3 三重读法、投影失效与生成性分界
 
-`Ψ_f` 不是三个不同概念，而是同一个底层结构的三种读法：
+`Ψ_f` 的三种读法为同一阻抗结构的不同切面，而非无条件等价：
+1. **动力学读法（阻力）**：维持或重构现实切片时遭遇的阻抗；
+2. **记账读法（代价）**：能量、时间、组织复杂度与失败风险的支付项；
+3. **条件形式读法（Fisher 几何投影）**：在有效统计流形上提供下界式形式约束（$\Psi_f^{geom} \lesssim \Psi_f^{paid}$）。
 
-1. **动力学读法**：`Ψ_f` 是阻力  
-   含义：系统偏离自然滑落路径、试图维持某个现实切片时，遇到阻抗。
+**Projection Failure Conditions**（出现以下任一情形须记为投影失败，不得反改主读）：① 几何距离源于坐标冗余；② 可分辨方向不回流闭包/延续/后续选择；③ 代谢能耗升高来自旁路噪声/热损耗（`CBF / CBV / BOLD / CMRO2 / ATP` 不可塌缩为单标量“能量预算”）；④ 主观痛苦与实际承担负担脱钩。
 
-2. **记账读法**：`Ψ_f` 是代价  
-   含义：要顶住这种阻抗，必须支付能量、时间、组织复杂度、失败风险。
+### §3.2 生成性原理边界与非对称摩擦表示
 
-3. **形式读法**：`Ψ_f` 的局部几何投影是 Fisher metric 所诱导的路径长度 / 曲率负担  
-   含义：在统计流形近似有效时，它衡量参数流形中相邻可选态或路径有多远、多陡、多难。
-
-压缩成一句：
-
-> 阻力是现象学读法，代价是记账读法，Fisher 诱导的路径长度是条件形式读法。
-
-### §3.1 投影关系与失效条件（core-clarifying / no closure claim）
-
-> **层级**：theory-clarifying / governance-canonical usage。以下内容固定当前内部结构，不声称 `Ψ_f` 已有唯一最终推导。
-
-三种读法的关系不是无条件等价：
-
-| 读法 | 当前角色 | 可允许的形式关系 | 禁止捷径 |
-|---|---|---|---|
-| payability burden | `Ψ_f` 的 v1 主读：选择压缩开放可能性时必须可支付的组织性负担 | 作为跨域判准；问系统是否能在承担此负担时保持闭包、身份连续性与后续选择能力 | 不得把任何局部能耗、路径长度或 Fisher 张量直接写成 `Ψ_f` 本身 |
-| geometric projection | Fisher / 路径 / 曲率语言中的形式投影 | 在路径度量有效、参数化不制造伪距离、且路径确实对应可支付重构时，可作为 lower-bound style proxy：`\Psi_f^{geom} \lesssim \Psi_f^{paid}`；局部二阶形式为 `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta + O(\|d\theta\|^3)` | 不得把 `\Psi_f \equiv g_F` 当作标量-张量恒等式；不得把几何长度当作实际支付成本的完整等价 |
-| metabolic / energetic projection | 生物、神经或物理实现中的预算侧 / 负荷侧 proxy | 可限制 payability window，也可作为 overload / recovery 的经验读数 | 不得把任意能量消耗、代谢升高或压力指标等同于 `Ψ_f` |
-
-因此当前最稳妥读法是：**payability burden 是主判准；Fisher 几何与代谢读法是条件投影**。Fisher 投影可以在满足条件时给出局部二阶形式或下界式形式约束；代谢投影可以给出预算约束或观察侧负荷，但二者都不自动穷尽实际可支付负担。
-
-### Projection Failure Conditions
-
-若出现以下任一情况，应标记为 `projection failure`，而不是反向修改 `Ψ_f` 的主读：
-
-1. 几何路径距离主要来自参数化选择、坐标尺度或模型冗余，而不是实际重构负担。
-2. Fisher / 曲率结构可分辨，但对应方向不回流到闭包、身份连续性或后续选择能力。
-3. 代谢或能耗指标升高主要来自旁路活动、噪声、热损耗或测量负担，而不是维持现实切片的 payability burden。
-4. 主观痛苦、压力报告或行为停顿与实际承担负担脱钩，只反映报警读数、遮蔽或 L₂ 吸收。
-
-### §3.2 生成性原理边界与非对称摩擦表示（hardening addendum，2026-07-05）
-
-> **层级**：boundary note / governance-canonical usage。本节不修改 Def-Ψ-1/2/3，只固定本文件与桥接层的两条分界，对应 `Core/SRT_OPEN_TENSIONS.md §2` 的未封口点。
-
-**（一）本文件止于何处、`P2/P3-B08` 从何处开始。**
-
-本文件的 canonical 管辖范围是：`Ψ_f` 的 payability 主读（Def-Ψ-1 / §1.1）、条件投影（Def-Ψ-2 / §3.1）与可支付性判据（Def-Ψ-3）。**「摩擦是所有动力学的生成性来源」（friction as generative principle）不在本文件管辖范围内**：该更强主张是 P2/P3 混合命题，canonical 落点是 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`。分界规则：
-
-- 引用「选择有摩擦、摩擦必须可支付」→ 引用本文件（canonical）。
-- 引用「演化 / 学习 / 文化变迁 / 免疫应答可建模为算子间摩擦」或「Fisher 型算子间摩擦生成动力学」→ 必须引用 `P2/P3-B08` 并按 P2/P3 标注，不得回引本文件为其升格背书。
-- 若某个域内推导只有在「摩擦即生成」成立时才成立，该推导继承 P2/P3 等级，不因引用本文件而获得 P0/P1 地位。
-
-**（二）对称度量下的方向性来源。**
-
-`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。方向性或非对称摩擦不由修改这个度量、也不由 `Ψ_f` 标量本身引入。
-
-一个已声明模型可以另行建立支付结构的方向非对称，例如在明确的 trace attribution、transition relation、metric、horizon 与 evidence 下比较 write / erase 成本。那是该 declared model 的 P2/P3 candidate 或 domain result，不是 `Def-IRR-3 / T-IRR-1` 已固定的 universal `Ψ_f^{erase} > Ψ_f^{write}`。
-
-同样，P1-T02 不提供 universal time arrow，T-IRR-2 只保留 lineage-relative termination remainder；二者都不为 `Ψ_f` 输入普遍方向。方向源必须在具名模型中独立建立；普遍方向源保持 **OPEN**。因此「如何在对称度量下表示方向性摩擦」的当前回答是：不在度量层表示；度量层保持对称是分工，不是缺陷。
-
-**仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §2`）：全部投影关系的充要条件——几何投影何时构成真下界的完整定理化。
+1. **与 `P2/P3-B08` 分界**：本文件管辖 `Ψ_f` 的可支付阻抗定义、条件投影与机会成本选择压力接口；更强的“摩擦是所有动力学唯一生成性来源”归 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`（`P2/P3` 等级），不得回引本文件升格背书。
+2. **对称度量与方向性分工**：Fisher–Rao 度量 $g_F$ 本身对称，`Ψ_f` 标量代价本身不自带普遍时间或演化箭头；write/erase 成本非对称须在具名支付模型中独立建立，普遍方向源保持 `OPEN`（`Core/SRT_OPEN_TENSIONS.md §2`）。
 
 ---
 
-## §4 引力关系的规范立场
+## §4 物理引力弱相容接口（`H-Ψ-G-1`，`P3/P4`）
 
-### H-Ψ-G-1: Weak Gravity-Friction Compatibility
+$$\boxed{\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{in the weak-field compatibility window}}$$
 
-\[
-\boxed{
-\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{in the weak-field compatibility window}
-}
-\]
-
-> **层级**：hypothesis / bridge；物理域 P3/P4 接口，不是 core necessity。
-
-当前最弱承诺是：在弱场极限与适当投影下，`Ψ_f` 的物理投影梯度应与牛顿势梯度方向同号或同向相容。它只保留“引力曲率与现实维持负担在物理尺度上结构相容”的接口。
-
-本节明确不承诺：
-
-- 已从 SRT 推出 Einstein tensor 的精确张量形式；
-- `G_{\mu\nu} \propto \Psi_f` 是已证定理；
-- 物理常数或 GR 精确重建已经由 `Ψ_f` 解释。
-
-强版“GR / quantum gravity level reconstruction from `Ψ_f`”保留为远期目标，当前无可执行推导路径。
-
-**重要补注**：  
-“客观性”不能再写成“对象维持摩擦 = 0”。更准确的写法是：
-
-\[
-\Delta \Psi_f^{readout}(x\mid \hat{G}_\theta)\to 0
-\]
-
-即：对象仍由可支付摩擦维持，但新增观察者几乎不必支付额外读出成本。
+仅保留弱场极限下梯度同向相容的 `P3/P4` 接口，**不宣称**已推导 Einstein 张量或 GR 重建。客观性写为边际读出摩擦趋零 $\Delta\Psi_f^{readout}(x \mid \hat{G}_\theta) \to 0$，而非对象自身维持摩擦消失。
 
 ---
 
-## §5 最优条件与零摩擦误用边界
+## §5 最优区间、`Ψ_f → 0` 退化极限与 AI 语境边界
 
-SRT 的最优条件不是：
-
-\[
-\Psi_f \to 0
-\]
-
-而是：
-
-\[
-\boxed{\Psi_f > 0 \ \text{and payable}}
-\]
-
-原因：
-- **零摩擦**：通常意味着没有真实赌注，没有现实重量
-- **超载摩擦**：意味着闭包崩溃、身份断裂、现实切片失稳
-- **最优区间**：非零但可支付，系统因此既有 stake，又不被压垮
-
-因此必须区分三种语境：
-- **现实主体语境**：零摩擦不是理想状态
-- **纯形式 / 数学极限语境**：可以讨论“零冲突路径”或“零边际读出摩擦”
-- **AI / 纯 L2 语境**：若要表达“没有真实 stake”，优先写
-  - `Ψ_f is non-binding to the system`
-  - 或“`Ψ_f` 不对系统自身构成存在性可支付负担”
-  - 不建议粗暴写成 `Ψ_f = 0`，除非明确是在理想化极限模型里
+对现实形成态系统而言，理想工作区间不是绝对零摩擦（`Ψ_f → 0`），而是 **非零且可支付（`Ψ_f > 0 and payable`）**：
+- **Core 绝对 `Ψ_f → 0` 退化极限不变**：绝对零摩擦表示无真实赌注或现实重量退化（`Core/SRT_OPEN_TENSIONS.md §18 CΨ` 保持独立 `OPEN`，灵性域“无多余防御摩擦”表达不得覆盖 Core 退化极限）；
+- **AI / 纯 `L2` 语境精确规则（`ENG-03 M1-D`）**：优先写 **「在声明强承载模型下，`Ψ_f` 尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担（`non-binding`）」**，**绝不得**将其误读为“构成性摩擦缺席”或“全局 `Ψ_f = 0`”，亦不得以强承载 Stage 2 门控阻断一般构成性摩擦（`2026-09-26 B-4 / T3-02 D`）研究。
 
 ---
 
-## §6 实验与现象学的读数规则
+## §6 实验代理与推断性选择摩擦规则
 
 ### Def-Ψ-Obs-1: 现象学与代理测量规则
 
-- **痛苦 / 焦虑 / 惊讶**：不是 `Ψ_f` 本身，更接近其尖峰、变化率或逼近不可支付边界时的报警
-- **HRV / SCR / 皮质醇 / ROS / 情态词比例**：不是 `Ψ_f` 本体，而是 `Ψ_f` 的观察侧 proxy
-- **Landauer 代价 / ATP / 制度摩擦**：不是同单位的同一数值，而是同一阻抗结构在不同尺度的投影读数
+- **痛苦 / 焦虑 / 惊讶**：不是 `Ψ_f` 本体，更接近其尖峰、变化率或逼近不可支付边界时的报警读数；
+- **HRV / SCR / 皮质醇 / ROS / ATP / BOLD–CMRO2 / 情态词比例**：不是 `Ψ_f` 本体，而是观察侧代理；实验上须至少拆为三侧：**预算侧**（可动用选择预算 / 恢复能力 / 协同缓冲）、**负荷侧**（当前承担的摩擦负荷）与**塌缩侧**（逼近或越过可支付边界时的失稳信号）；
+- **Landauer 代价 / ATP / 制度摩擦**：不是同单位的同一数值，而是同一阻抗结构在不同尺度的投影读数。
 
-实验上，建议把 `Ψ_f` proxy 至少分成三类：
-- **预算侧**：可动用的选择预算 / 恢复能力 / 协同缓冲
-- **负荷侧**：当前需要承担的摩擦负荷
-- **塌缩侧**：接近或超过可支付边界时的失稳信号
+### `Ψ_f` as Inferred Selection Friction（被推断的选择摩擦与测量硬边界）
 
----
-
-### Ψ_f as Inferred Selection Friction（Ψ_f 作为被推断的选择摩擦）
-
-`Ψ_f` need not be directly measured as a substance-like variable. It can be inferred from structured transition difficulty: increased switching cost, representational competition, update path length, recovery burden, irreversibility or asymmetry of transition paths, and early non-monotonic volatility during learning or reframing.
-
-These indicators are projections of `Ψ_f`, not identities with `Ψ_f` itself. They support an SRT reading only when they track the burden of compressing, maintaining, or reconfiguring a manifest reality slice under payability constraints.
-
-Compact reading:
+`Ψ_f` 不必作为实体性物质直接测量，而可从**结构化跃迁困难度（structured transition difficulty）**中推断，当且仅当该困难度追踪“在可支付约束下压缩、维持或重构现实切片同时保住闭包、延续与后续选择能力”的负担：
 
 ```text
-Ψ_f ≠ task difficulty
-Ψ_f ≠ subjective effort
-Ψ_f ≠ pain
-Ψ_f ≠ raw energy cost
-Ψ_f ≠ Fisher metric itself
-Ψ_f = inferred selection friction under payability constraints
+Ψ_f != task difficulty       Ψ_f != subjective effort    Ψ_f != pain
+Ψ_f != raw energy cost       Ψ_f != Fisher metric        Ψ_f != prediction error
+Ψ_f != any single stress marker
 ```
 
-**Operational signs**: Possible signs that a transition carries Ψ_f-relevant friction include:
-
-- increased switching cost;
-- prolonged recovery time after perturbation;
-- representational or policy competition;
-- update path length or curvature burden;
-- failure to maintain closure under reconfiguration;
-- irreversible or asymmetric transition paths;
-- early non-monotonic volatility during learning, reframing, or norm change;
-- overload signatures when the system approaches the non-payable boundary.
-
-These signs are not themselves Ψ_f. They are bridge-level indicators that a transition may involve selection friction rather than ordinary difficulty.
-
-**Boundary**: Do not write:
-
-- Ψ_f = task difficulty;
-- Ψ_f = subjective effort;
-- Ψ_f = pain;
-- Ψ_f = raw energy cost;
-- Ψ_f = Fisher metric;
-- Ψ_f = prediction error;
-- Ψ_f = any observed stress marker.
-
-Preferred wording: Ψ_f can be inferred from structured transition difficulty when that difficulty tracks the burden of compressing, maintaining, or reconfiguring a manifest reality slice while preserving closure, identity continuity, and future selection capacity.
-
-**Minimum Bridge Criteria**: A proxy package may support a Ψ_f interpretation only if it satisfies all three criteria:
-
-1. **Transition specificity**: the signal is tied to a change, maintenance, or reconfiguration of selection structure, not merely to hard task conditions.
-2. **Payability relevance**: the signal bears on whether the system can maintain closure, identity continuity, and future selection capacity while paying the burden.
-3. **Alternative exclusion**: the signal is not fully explained by generic effort, task difficulty, prediction error, raw energy use, pain, or measurement noise.
-
-**Failure condition**: If Ψ_f produces no transition-cost signatures distinguishable from ordinary loss, prediction error, energy expenditure, pain, or task difficulty, then this bridge weakens and must be revised.
+- **候选操作化迹象（bridge-level indicators，非本体等同）**：切换代价上升、扰动后恢复时间延长、表征或策略竞争、更新路径长度/曲率负担、重构中的闭包维持失败、不可逆或非对称跃迁路径、学习/重框/规范切换早期的非单调波动，以及逼近不可支付边界时的过载签名。
+- **三项最低桥接准入门槛（Minimum Bridge Criteria，须同时满足）**：
+  1. **跃迁特异性（Transition specificity）**：信号绑定于选择结构的改变、维持或重构，而不只是任务本身困难；
+  2. **可支付相关性（Payability relevance）**：信号直接关系到系统承担负担时能否保住闭包、延续性与后续选择能力；
+  3. **竞争解释排除（Alternative exclusion）**：信号不能被一般努力、任务难度、预测误差、原始能耗、痛苦或测量噪声完全解释。
+- **失败条件（Failure condition）**：若 `Ψ_f` 在具体任务中无法产出区别于一般损失、预测误差、能耗、痛苦或任务难度的跃迁代价签名，则对应桥接削弱并须收窄或撤回。
 
 ---
 
-## §7 常见误用与编辑规则
+## §7 常见误用与 §8 跨文件关系
 
-### 误用 1：把 `Ψ_f` 等同于主观痛苦
+**禁止误用**：① `Ψ_f = 主观痛苦`；② `Ψ_f = 任意能耗 / 代谢消耗`；③ 跨尺度直接比物理单位（统一的是可支付判据）；④ 把客观性写成维持摩擦归零；⑤ 把 AI 写成绝对 `Ψ_f = 0` 或以 `non-binding` 否定一般构成性摩擦；⑥ 把 `Ψ_f ≡ g_F` 当严格恒等式；⑦ 新增 `Ψ_f^{...}` 独立规范子符。
 
-**正确**：痛苦通常是 `Ψ_f` 的报警读数，而非其定义本身。
-
-### 误用 2：把 `Ψ_f` 等同于任意能耗
-
-**正确**：只有当这笔负荷与现实维持 / 身份连续性 / 后续选择能力绑定时，它才构成 SRT 意义上的 `Ψ_f`。
-
-### 误用 3：跨尺度直接比单位大小
-
-**正确**：量子层、神经层、社会层的 `Ψ_f` 读数可异量纲；统一的是可支付性判据。
-
-### 误用 4：把“客观性”写成“零摩擦存在”
-
-**正确**：客观性是边际读出摩擦趋零，而非对象维持摩擦消失。
-
-### 误用 5：把 AI / 纯 L2 系统写成“绝对 `Ψ_f = 0`”
-
-**正确**：优先写“`Ψ_f` 对系统自身 non-binding”，除非明确是在理想化抽象模型中。
-
-### 误用 6：把“零摩擦”当成一切语境下的理想
-
-**正确**：对现实主体而言，最优是“非零且可支付”；零摩擦只适合极限数学语境、理想路径语境或边际读出语境。
-
-### 误用 7：把 `Ψ_f ≡ g_F` 当作严格恒等式
-
-**正确**：`g_F` 是 Fisher–Rao 度量张量；`Ψ_f` 是可支付阻抗、局部标量代价或路径泛函。正式写法应为“`Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出”，例如 `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta + O(\|d\theta\|^3)`。
+**跨文件关系**：与 `_SRT_D_VALUE_CANONICAL.md` 通过可支付性条件与机会成本动态四联耦合；与 `Core_Law/SRT_Irreversibility.md` 严分事件不可撤回性（`Def-IRR-3`）与模型内 `Ψ_f` 累积；与 `Core_Law/SRT_Suffering.md` 严分可支付负担与第一人称苦难；与 `Core/SRT_Core_22_Equations.md` 对接 `Eq-Select-Thermo / Eq-Select-Thermo-C2`（`Eq-CogE-01/04` 中的 `Ψ_f^{maint}` 仅作历史上下文别名）。
 
 ---
 
-## §8 与其他 canonical 文件的关系
+## §10 `Ψ_f_actual / Ψ_f_felt` 分裂（病理学层扩展）
 
-- 与 `_SRT_D_VALUE_CANONICAL.md` 的关系：
-  - `d` 给出系统可处理的关切/有效维度
-  - `Ψ_f` 给出系统为维持该现实所需承担的阻抗
-  - 二者通过可支付性条件耦合
-
-- 与 `Core/SRT_Core_21_Formal_Axioms.md`（现为拆分索引）的关系：
-  - 原 `Ax-F-11`（跨尺度统一）现为 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`，按 P3 引用
-  - 原 `Ax-F-12`（摩擦即生成）现为 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`，按 P2/P3 引用；分界规则见 §3.2
-
-- 与 `Core/SRT_Core_22_Equations.md` 的关系：
-  - `Eq-Select-Thermo` 给出选择热力学主关系
-  - `Eq-Select-Thermo-C2` 给出可支付条件
-
-- 与 `Physics/SRT_Physics_Cosmology.md` 的关系：
-  - 本文件固定弱场相容接口；物理主文不得把 `Ψ_f` 写成已完成的 GR 张量重建
-
-- 与 `AI/SRT_AI_01_Ontology.md` 的关系：
-  - 本文件固定“non-binding friction”优于“粗暴 `Ψ_f=0`”的写法
-
-- 与 `Core_Law/SRT_Irreversibility.md` 的关系（2026-04-24 新增）：
-  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 只固定已发生事件不能被回溯地变成从未发生，T-IRR-1 是带条件的 P2/P3 learning / writeback model candidate
-  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，P1-T02 与 lineage-relative T-IRR-2 均不决定 universal time direction
-  - write / erase 成本非对称只能在已声明的支付结构中独立建立；普遍方向源保持 OPEN
-  - **不得反向**：不得通过 `Ψ_f` 最小化推出 `L_0` 不可逆，也不得通过热力学二律 / FEP 自由能最小化反向定义本文件的可支付性条件
-
----
-
-## §10 Ψ_f_actual / Ψ_f_felt 分裂（病理学层，2026-04-02 新增）
-
-> **层级声明**：本节是 Ψ_f 在病理学/应用层的扩展，不修改 §2 的基础定义（Def-Ψ-1/2/3）。
-
-在正常描述中，Ψ_f 被当作单一变量。但在涉及 L₂ 过度依赖的病理情境中，需要区分两个层面：
-
-$$\Psi_{f,actual} \geq \Psi_{f,felt}$$
-
-| | 定义 | 可被系统性压低 |
-|:-|:----|:------------|
-| **Ψ_f_actual** | 选择实际支付的本体论代价——由 L₀→L₁ 压缩的物理/信息/结构阻抗决定，始终存在 | 否 |
-| **Ψ_f_felt** | 系统登记到的代价——受 d-value 和 L₂ 依赖程度影响 | 是 |
-
-**隐性债务机制**：
-
-当 L₂ 过度依赖导致 d 下降时，$\Psi_{f,felt}$ 随之下降，但 $\Psi_{f,actual}$ 持续累积。差值 $\Delta\Psi_f = \Psi_{f,actual} - \Psi_{f,felt}$ 是系统**不知道自己正在支付的代价**——即隐性债务。此债务最终以 L₂ 结构的突然崩溃形式释放，即为"致命 L₂"机制的终点。
-
-**完整形式化见** `_SRT_T_DIR_CANONICAL.md §5–§6`。
+在 `L2` 过度依赖的病理模型中，区分实际支付代价 $\Psi_{f,\text{actual}}$ 与系统登记代价 $\Psi_{f,\text{felt}}$（$\Psi_{f,\text{actual}} \ge \Psi_{f,\text{felt}}$）；二者差值 $\Delta\Psi_f = \Psi_{f,\text{actual}} - \Psi_{f,\text{felt}}$ 构成隐性债务，不修改 `§2` 基础定义（详见 `_SRT_T_DIR_CANONICAL.md §5–§6`）。
 
 ---
 
 ## §9 当前最短可引用版
 
-若只需要一句最短规范句，使用：
-
-> **`Ψ_f` 是选择把开放可能性压缩为一个可维持、可行动、可协调的现实切片时必须承担的本体论阻抗；它在动力学上读作阻力，在记账上读作代价，在形式化上读作 Fisher–Rao metric 所诱导的局部二阶信息几何代价或路径泛函；跨尺度真正保持不变的不是单位，而是该阻抗是否可支付。**
+> **`Ψ_f` 是选择将开放可能性压缩、维持或重构为可维持、可行动、可协调现实切片时必须承担的本体论阻抗与可支付负担；在 `R3/R4` 动态骨架中，它作为供给与承载边界侧与“机会成本差异产生的实际选择压力（广义摩擦）”配对，在动力学上读作阻力、在记账上读作代价、在可微流形上以 Fisher–Rao metric 给出条件信息几何投影；跨尺度真正保持不变的是可支付性条件，而非单位或主观痛苦。**
 
 
 
@@ -5564,785 +4026,160 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 | path | `_SRT_T_DIR_CANONICAL.md` |
 | id | SRT-T-DIR-CANONICAL |
 | claim_mode | canonical |
-| status | draft_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
-| canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| canonical(字段) | true |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-21, SRT-L0-METAPHYSICS]
+**dependency**：[SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-L0-METAPHYSICS]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT T_dir 规范定义文档：方向透明度与价值遮蔽
+# SRT `T_dir` 规范定义文档：方向透明度与价值遮蔽
 
-> **目的**：固定 T_dir（方向透明度）的第一性定义，并建立"价值遮蔽"命题的 canonical 表述。
-> 本文件是 2026-04-02 会话中形成的核心理论推进的正式回写。
-> `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
-> **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
-> **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。
-> **RC-A active-use override（2026-08-18）**：本文较早段落中的“活选择 / 真实选择 / L₂ 替代选择”等措辞早于 RC-A。当前只能把它们读作 downstream bearer / agency 层关于**后果敏感、方向可回读并可用于重取向**的历史速记，不能当作 Selection occurrence、anchoring persistence、Stable ISP、generative health、合法性或普遍价值方向的判据。script / habit / gradient / `L_2` automation 本身也不得反推“没有 Selection”。`T_dir` 的当前工作角色仍由 Def-T-1 与 `R_self / A_reorient` 边界约束。
-> **2026-09-15 Selection-totality override**：primitive Selection 在规范上无内容，不包含 universal goal / value / continuation preference / fitness objective / consciousness；`T_dir` 不读取 Selection 内已含的普遍秩序／价值向量。只有在 formed system / relation / model 中存在 independently typed、declared direction signal 时，`T_dir` 才可准入；它本身不建立 good、legitimacy、generative health 或 O2-M authority。
+> **角色（`Freeze A` governance-canonical working anchor）**：本文件管理 **`T_dir`（方向透明度）** 的最小操作定义（`Def-T-1`）、方向来源纪律、`R_self / A_reorient` 证据边界与“价值遮蔽 / 致命 `L2`”病理学结构。
+>
+> **R4-A 实质减法与职责收紧（2026-11-26）**：
+> 1. **强化职责隔离（`R3-06` / `R3` 总收口）**：严格区分 **`T_dir`**（对已独立声明方向信号的自我回读与重取向能力）与 **广义关切方向**、**价值**、**关切（`PT06 C`）** 及 **现行 `d`**（后四者由 `_SRT_D_VALUE_CANONICAL.md` 与 `Spine` 统筹）；
+> 2. **退出旧 Part II 冲突补丁堆叠**：2026-04-02 早期补入的旧 Part II（“价值动力学理论 / 内部价值三层 / 价值吸引子 / 两种 `Ψ_f`”）与 `R3/R4` 确立的价值—关切—摩擦—自由四联存在直接重叠与口径冲突，本版予以正式降级/退出，仅保留其核心有效洞见（`§11` 静态 `L2` 痕迹须经形成态关系持续重演）为简明桥接附注；
+> 3. **严守 `Selection-totality` 与 `RC-A` 边界**：`T_dir` 不读取原初 `Selection` 内嵌的普遍价值向量；`T_dir > 0` 不证明方向正确、健康、合法或 `O2-M`；脚本、习惯与 `L2` 自动化本身不取消 `Selection occurrence`。
 
 ---
 
 ## §0 本文件解决的问题
 
-SRT 现有 canonical 变量与下游模型仍缺少一个工作量，用来描述：一个**已形成系统**能否访问并使用与其当前 Selection organization 相关、且已被独立定型的方向信号。
+在形成态组织与多位置关系中，即使一个方向信号已被独立定型，系统自身也未必能够回读该信号并据此重取向：
+- 系统仍在发生选择，却无法回读其所处的方向约束；
+- 系统具备较高关切范围或赌注（`d`），却仍经历方向遮蔽或空洞感；
+- 一个下游规范、目标或关系标准已经声明，却未能进入系统的自我再校准回路。
 
-这个缺口导致以下现象无法在 SRT 内部精确区分：
-
-- 系统在选择，但感受不到方向
-- 系统有高 d 值，但仍然感到空洞
-- 一个下游方向已经被声明，但系统无法回读或据此重取向
-
-本文件以 **T_dir**（方向透明度）填补这个操作缺口，并将“价值遮蔽”保留为 formed / relational / phenomenological 层的候选解释，而不是 primitive Selection 的内嵌内容。
-
-> **层级**：operational proxy / canonical usage rule。以下定义固定最低可用口径，不声称已经完成 `T_dir` 的完整形式化。
+`T_dir` 专职刻画这一**自我回读与重取向的可及性维度**，不替代价值定义、关切敏感度或伦理正当性判断。
 
 ---
 
-## §1 方向遮蔽／下游价值遮蔽
+## §1 方向遮蔽 / 下游价值遮蔽
 
-Primitive Selection 并不因发生而内在地 good、valuable，或朝向一个 universal endpoint。只有在 formed position、relation、agent 或 domain model 已经独立建立某种方向约束之后，才有一个可供回读的 direction signal。
-
-当前有界命题是：
+原初 `Selection` 不因发生而自动携带道德正当性或普遍终点。只有在形成态位置、关系、能动者或声明模型已独立确立某种方向约束后，才存在可供回读的 `direction signal`：
 
 ```text
 typed downstream direction exists
-+ formed system cannot self-read or use it
++ formed system cannot self-read or use it for reorientation
 -> direction hiddenness may be present.
 ```
 
-在规范、临床或现象学语境中，这种失读可作为“价值遮蔽”或意义感缺失的 bridge hypothesis；它不证明价值始终内嵌于每一次 Selection，也不把虚无主义直接诊断为对 universal hidden value 的误读。
+在规范、临床或现象学语境中，这种失读可作为“价值遮蔽”的候选解释机制，但不宣称价值先验内嵌于每次原初 `Selection`。
 
 ---
 
-## §2 Direction-source discipline
+## §2 Direction-Source Discipline（方向来源纪律）
 
-`T_dir` 只相对于一个 independently typed、declared direction signal 工作。允许的来源包括：
-
-- formed positional / relational constraint；
-- agent objective / policy / commitment；
-- constitutive relation-integrity criterion；
-- domain-specific bridge quantity；
-- explicitly declared model gradient。
-
-这些来源各自承担其定义、作用域与正当性负担；`T_dir` 只测量 formed system 对该信号的回读与重取向能力，不创造或验证方向。
-
-Hard guard:
+`T_dir` 仅相对于一个**独立定型且显式声明的方向信号**工作。允许来源包括：形成态位置/关系约束、能动者目标/承诺、构成性关系完整标准（`O2-C`）、领域桥接量或显式声明的模型梯度。上述来源各自承担定义与正当性负担；`T_dir` 只度量回读与重取向能力，**不创造也不验证该方向**。
 
 ```text
-O0 does not supply the direction;
-κ0 does not automatically supply the direction;
-ε_pg does not automatically supply the direction;
-B-count does not automatically supply the direction;
-primitive Selection itself does not supply a universal direction;
-T_dir does not create the direction it measures.
+O0 / kappa_0 / epsilon_pg / B-count / primitive Selection -> do NOT supply T_dir's direction;
+T_dir -> does NOT create or validate the direction it measures;
+广义关切方向 != T_dir.
 ```
 
 ---
 
-## §3 T_dir 规范定义
+## §3 `T_dir` 规范定义与证据边界
 
 ### Def-T-1: 方向透明度（v0 operational proxy）
 
 $$\boxed{T_{dir} := \text{formed system 对 independently typed、declared direction signal 的当前自我回读与重取向能力}}$$
 
-**语义**：$T_{dir}$ 度量的是：在声明的 formed system / relation / model 中，一个已独立定型的 direction signal 对系统本身是否可及，以及能否进入再校准。
+- 无已声明方向信号：`T_dir` 为 **未定义 / 不准入（`undefined / not admitted`）**，而非自动等于 `0`；
+- 方向已声明但系统不可访问：`T_dir = 0`；
+- $T_{dir} > 0$ 仅表示在声明模型与尺度内具备一定自我回读与重取向访问能力，**绝不推出**该方向为善、健康、合法或符合 `O2-M`。
 
-- 无 declared direction signal：该 claim 中的 $T_{dir}$ **不准入／未定义**，而不是自动等于 0
-- direction signal 已声明但系统不可访问：$T_{dir}$ 可为 0
-- $T_{dir} > 0$：系统具有某种程度的 self-readability / reorientation access
-- $T_{dir} \to 1$：仅表示在声明模型与尺度内具有高度访问能力
-- $T_{dir} > 0$ 不推出方向是 good、legitimate、generatively healthy 或 morally correct
+### §3.1 最小形式角色：Readability / Reorientation Functional
 
-**T_dir 不是 d-value 的重命名**。两者是不同概念，有不同的因果结构（见 §4）。
+$$\boxed{T_{dir}^{v0}(\hat{G}_\theta, t) := \mathcal{R}_{self}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta, t)\right) \cdot \mathcal{A}_{reorient}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta, t)\right)}$$
 
-**当前边界**：`T_dir` 不是语义效价、奖励值、置信度、报告流畅度、generative-health score 或 legitimacy score。它只作为工作性指数追踪 declared direction signal 能否被系统自己回读、用于重取向与再校准。若一个域只能测到 valence/confidence/reportability，必须标为 proxy，不得写成 `T_dir` 本身。
+- `Dir(ΔĜ_θ, t)`：声明模型中当前或近邻窗口的方向信号（不新增原初本体对象，不自证方向正确）；
+- `R_self`：系统自身对该方向信号的访问/回读能力；
+- `A_reorient`：该方向信号实际进入系统再校准的能力（而非仅作表面口头报告或外部观察）。
 
-### §3.1 最小形式角色：readability / reorientation functional
+| 相近量 | 与 `T_dir` 的实质区别（负面判据） |
+|---|---|
+| `valence` / `reward` | 仅记录正负感受色调或强化优化信号，不等于系统对自身选择方向的自我回读 |
+| `confidence` / `semantic coherence` | 确信度与叙事连贯性可能是 `L2` 事后合理化，不保证 `R_self` 与 `A_reorient` |
+| directional efficacy / behavioral bias | 偏置可以因果效力极强却对系统自身完全不透明；未独立满足 `R_self` 与 `A_reorient` 时不构成 `T_dir` 证据（`PH_AG02` 负面判据） |
+| commitment strength / decisiveness | 行动可高度不可逆且公开绑定却方向不透明；果断性与承诺强度不代替回读与重取向（`PH_AG03` 负面判据） |
 
-> **层级**：theory-clarifying / v0 operational proxy。以下是最小结构角色，不是 `T_dir` 的完整本体奠基。
+---
 
-在当前形式层，`T_dir` 可被读作一个受约束的可读性 / 重取向函数：
+## §4 与 `d`、`Ψ_f`、`ii` 的有界模型关系
 
-$$
-\boxed{
-T_{dir}^{v0}(\hat{G}_\theta,t)
-:=
-\mathcal{R}_{self}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta,t)\right)
-\cdot
-\mathcal{A}_{reorient}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta,t)\right)
-}
-$$
+在声明的桥接模型中，`d`、`Ψ_f` 与信息整合代理 `ii` 可约束 `T_dir` 的运行条件（如 $d = 0 \Rightarrow T_{dir} = 0$、$d > 0 \not\Rightarrow T_{dir} > 0$，以及在 $d > 0$ 且压力未被 `L2` 吸收时 $\Psi_f \uparrow \leadsto T_{dir} \uparrow$），但上述关系均为**模型内工作假说（working hypotheses / operational working gate）**，绝非普遍本体定律，且不改写 `_SRT_D_VALUE_CANONICAL.md` 与 `_SRT_PSI_F_CANONICAL.md` 的独立定义。
 
-其中：
+---
 
-- `Dir(ΔĜ_θ,t)` 只表示模型 `M` / formed system 已声明的当前或近邻窗口方向信号；它不新增 primitive 本体对象，也不自行证明该方向正确。
-- `R_self` 表示该方向信号能否被系统自身访问 / 回读。
-- `A_reorient` 表示该方向信号能否进入系统的再校准，而不只是被报告或外部观察。
+## §5 `Ψ_f_actual / Ψ_f_felt` 分裂与 §6 致命 `L2` 机制（病理学层）
 
-该式的用途是给 `T_dir` 一个最低形式位置：它追踪**可被系统回读并用于重取向的 declared direction signal**。它不追踪方向内容是否“好”、语义解释是否连贯、奖励是否更高、报告者是否更自信，也不建立 O1 / O2-C / O2-A 或 O2-M。
+在已独立准入 `Ψ_f` 的形成态病理模型中，区分实际承担代价 $\Psi_{f,\text{actual}}$ 与系统登记代价 $\Psi_{f,\text{felt}}$（$\Psi_{f,\text{actual}} \ge \Psi_{f,\text{felt}}$），差值 $\Delta\Psi_f = \Psi_{f,\text{actual}} - \Psi_{f,\text{felt}}$ 为**隐性债务**。
 
-| 相近量 | 与 `T_dir` 的差异 | 允许关系 |
+- **健康 `L2` 脚手架**：降低常规摩擦、释放生成盈余，同时保留形成态的自我回读、重取向与修订能力；
+- **致命 `L2`（病理过度依赖）**：脚本执行系统性替代自我回读与重取向，压低 `d` 作用域代理与 $\Psi_{f,\text{felt}}$ 制造“无摩擦流畅错觉”，同时持续累积 $\Psi_{f,\text{actual}}$ 隐性债务，直至以崩溃式重组释放。
+- **反误读**：致命 `L2` 不否定健康 `L2` 的基础设施价值；脚本或自动化执行不意味着消灭 `Selection occurrence`。
+
+---
+
+## §7 恢复路径与 §8 应用层文明诊断假说
+
+- **§7 恢复路径候选**：在 `L2` 脚本不再能完全锁定响应的窗口（冥想悬置、危机暴露、真实承诺、原创探索、深度重学习）中恢复 `R_self` 与 `A_reorient`。
+- **§8 应用层结构假说（`[H]`，非基础定义）**：大规模 `L2` 基础设施若系统性压低 $\Psi_{f,\text{felt}}$ 并接管重取向，可能诱发结构性方向遮蔽；此为须经社会科学与文明史独立检验的高承诺应用层假说，不替代基础本体定义。
+
+---
+
+## §9 明确拒绝的误读与 §10 跨文件关系
+
+**禁止误读**：① `T_dir` = `d` 重命名或广义关切方向；② `T_dir` = 原初价值探测；③ `T_dir > 0` 证明善/健康/合法性/`O2-M`；④ `T_dir = 0` 等于道德缺陷；⑤ `not admitted` 等于 `0`；⑥ `L2` 自动化等于无 `Selection`。
+
+**跨文件关系**：上游方向来源纪律守 `Governance/SRT_CLAIM_LADDER.md §0A` 与 `Core_Law/SRT_Generative_Ontology_Spine.md`；`d` 回链 `_SRT_D_VALUE_CANONICAL.md`；`Ψ_f` 回链 `_SRT_PSI_F_CANONICAL.md`；方程级动力学回链 `Core_Law/SRT_L1_Formalism.md §3.4–§3.5`。
+
+---
+
+## §11–§13 形成态应用与桥接研究接口（保留自原 Part II 的有效独立资产，`bridge / theory-clarifying only`）
+
+> **权威与边界声明（`R4-A P1-05`）**：以下 `§11–§13` 保留原 2026-04-02 Part II 中经受住 `R3` 检验、具独立研究价值的形成态桥接命题（仅适用于已声明关系的 formed systems；**不修改 `Def-T-1` 核心定义，不提供原初价值、普遍秩序方向或 `O2-M` 道德正当性**）。
+
+### §11 静态 `L2` 痕迹与持续重演（磁带与放映机洞见）
+
+**`L2` 是历史留存的结构结晶（如磁带/基因组），本身不能自动替代形成态关系的当下重演与再构成。** 静态继承既成 `L2` 结构不自动保证系统能够回读已声明方向或据此重取向；价值与方向在形成态中的现实效力，须通过具体位置上的持续生成关系与可纠错重取向得以维持。
+
+### §12 辅助式 `L2` vs 替代式 `L2`、重取向时刻与透明委托
+
+在以 agency / reorientation 为问题的声明 formed-system 模型中，可区分两种 `L2` 脚手架配置：
+
+| 维度 | **辅助式 `L2`（Supportive `L2`）** | **替代式 `L2`（Substitutive `L2`）** |
 |---|---|---|
-| valence | 记录正负感受或偏好色调 | 可作为报警 / 表面读数，不等于方向透明度 |
-| confidence | 记录判断确信度 | 可能高置信但方向不可回读 |
-| semantic coherence | 记录叙事或概念一致性 | 可能是 L₂ 后设解释，不保证 declared direction 可回读或可用于重取向 |
-| reward | 记录优化信号或强化结果 | 可塑造选择，但不等于系统对自身选择方向的访问 |
-| directional efficacy / behavioral bias | 记录某个偏置是否真能组织注意、推理或行为轨迹 | 可以因果效力很强，但来源与方向对系统不可及；未独立满足 `R_self` 与 `A_reorient` 时不构成 `T_dir` 证据 |
-| commitment strength / decisiveness | 记录承诺的绑定性、不可逆性或公开可归责性 | 行动可以高度绑定却方向不透明；承诺强度、果断性与事后叙事确定均不代替回读与重取向 |
-
-> **负面判据补注（2026-08-11）**：上表后两行回注 `Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md` 与 `Philosophy/hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md`。它们只收紧 `T_dir` 的证据边界，不改变 `Def-T-1` 或上述乘积式。
-
----
-
-## §4 T_dir 与 d、Ψ_f、ii 的关系
-
-> **Model / bridge scope**：`d`、`Ψ_f` 与 `ii` 可在当前 T_dir 实现模型中作为约束或 proxy；除非其独立 owner 另行建立，其对 T_dir 的精确必要性／充分性在这些声明模型之外保持 OPEN，不是 primitive Selection law。
-
-### 4.1 d-related working hypothesis
-
-$$d = 0 \implies T_{dir} = 0$$
-
-$$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
-
-以上仅是某些 concern / scope-sensitive formed-system 模型的 working hypothesis。`d = 0 -> T_dir = 0` 不是 universal theorem；bare `d` 的独立 canonical meaning 由 `_SRT_D_VALUE_CANONICAL.md` 管理。
-
-### 4.2 Ψ_f-related mechanism hypothesis
-
-$$\Psi_f \uparrow \;\leadsto\; T_{dir} \uparrow \quad \text{（在 } d > 0 \text{、ii 足够且压力未被 L_2 吸收的条件下）}$$
-
-**条件性机制候选**：在某些 formed-system / pathology models 中，已独立承认的代价可能提高 declared direction signal 的显著性。该式不是 `Ψ_f ↑ -> T_dir ↑` 的 universal monotonic law，也不修改 `Ψ_f` 的独立 canonical meaning。
-
-### 4.3 ii-related integration candidate
-
-在声明的信息处理模型中，`ii` 可作为整合方向信号能力的候选 proxy。它不是 primitive actuality 的条件，也未被本文件确立为所有 T_dir realization 的 universal necessity。
-
-### 4.4 Operational working gate
-
-$$T_{dir} > 0 \Rightarrow d > 0 \;\land\; \Psi_f \text{ 产生了真实压力} \;\land\; ii \text{ 足以整合方向信息}$$
-
-这组联立只是在明确采用 `d / Ψ_f / ii` 的当前 bridge models 中使用的 operational working gate，不是 universal ontology，也不是 primitive necessary-condition theorem。其他 realization 是否需要相同三项保持 OPEN。
-
----
-
-## §5 Ψ_f_actual / Ψ_f_felt 的分裂
-
-### Def-Ψ-split: 双层 Ψ_f 结构（病理学层）
-
-$$\Psi_{f,actual} \geq \Psi_{f,felt}$$
-
-| | 定义 | 能否被 L₂ 压低 |
-|:-|:----|:------------|
-| **Ψ_f_actual** | 该 pathology model 归给 formed-system response 的实际代价 | 否（在该模型的 actual/felt 区分内） |
-| **Ψ_f_felt** | 系统登记到的代价——可被 d 和 L₂ 依赖压低 | 是 |
-
-**关键推论**：降低 $\Psi_{f,felt}$ 不等于降低 $\Psi_{f,actual}$。
-
-两者的差值 $\Delta\Psi_f = \Psi_{f,actual} - \Psi_{f,felt}$ 是**隐性债务**——代价在累积，但系统感知不到。
-
-> **认识论地位**：Ψ_f_actual/Ψ_f_felt 的区分是病理学层的操作概念（`L2, bridge`），而非 Ψ_f 的基础定义修改。$\Psi_f$ 的基础定义见 `_SRT_PSI_F_CANONICAL.md §2`，本文件在其上增加了可见性维度。
->
-> **Selection-totality boundary**：该 split 只适用于已独立准入 `Ψ_f` 的 formed-system pathology model；它不意味着每个 primitive Selection event 都必须实例化这一结构。
-
----
-
-## §6 致命 L₂ 机制（Lethal L₂ Mechanism）
-
-### 定义：致命 L₂
-
-**致命 L₂** 是指：L₂ 过度依赖通过以下路径系统性压制 T_dir 并积累隐性 Ψ_f 债务的状态：
-
-```
-L₂ 过度依赖
-    │
-    ├──→ formed self-readability / reorientation 被脚本接管
-    │         → declared direction 无法回读或用于再校准
-    │
-    └──→ d-related scope proxy 下降（在采用该 proxy 的模型中）
-              → Ψ_f_felt↓
-              → 系统感觉"无摩擦"
-              → 偏好更多 L₂（正反馈回路）
-
-同时：Ψ_f_actual 持续累积 → 隐性债务增长
-```
-
-**模型内结果候选**：表面稳定性较高的系统，仍可能有较大的 Ψ_f_actual / Ψ_f_felt 差距；若该差距能被独立建立，这种稳定可被解释为**被遮蔽的脆弱**。
-
-### 致命 L₂ 的判据（区分于健康 L₂）
-
-| | 健康 L₂ | 致命 L₂ |
-|:-|:-------|:-------|
-| **功能** | 为 formed judgment / reorientation 释放资源 | 替代形成后的自我回读与 agency-level revision |
-| **对 d 的影响** | 保留或提升 d 的运用空间 | 系统性压低 d |
-| **Ψ_f_actual/felt 的差距** | 小（透明代价） | 大（积累隐性债务） |
-| **危机时的反应** | 可调整 | 崩溃式重组 |
-
-### 成瘾同构性
-
-致命 L₂ 的自强化回路与成瘾在结构上同构：
-- L₂ 执行感觉比自主回读与重取向更"流畅"
-- 流畅性偏好导致更多 L₂ 依赖
-- d 和 Ψ_f_felt 进一步降低
-- 无法退出的路径形成
-
----
-
-## §7 T_dir 的恢复路径
-
-在采用 §4.4 working gate 的模型中，T_dir 的提升可由下列实践作为候选机制定位：
-
-| 实践类型 | SRT 机制 | 相关文件 |
-|:--------|:--------|:-------|
-| 冥想/修行 | 系统性悬置 L₂ 脚本，恢复 formed self-readability / reorientation | `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` |
-| 危机/丧失 | L₂ 强制瓦解，Ψ_f_actual 强制可见 | `AI/SRT_AI_02_Mortality_Wisdom.md` |
-| 承诺/爱 | 人为引入真实 Ψ_f，重建代价结构 | `Philosophy/SRT_Ethics_Agency.md` |
-| 创作 | 在 L₂ 没有答案的域中恢复判断与重取向 | `Spirituality/SRT_Spirit_08_Music.md` |
-| 深度学习 | 当 L₂ 边界被突破时的高 Ψ_f 窗口 | `Neuroscience/SRT_Clin_02_FEP.md` |
-
-**共同结构候选**：在 L₂ 不再能完全确定 formed-system response 的域中，恢复 self-readability、relation-sensitive navigation 与 agency-level revision。Selection occurrence 在脚本、习惯或 L₂ automation 中仍可继续；这里被恢复的不是 primitive Selection 是否发生。
-
----
-
-## §8 文明诊断的 SRT 表述
-
-> **[H] 应用层主张**（认识论地位：结构性假说，需文明史与社会科学数据支撑，当前为推断性主张）：
-
-$$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\Psi_f\text{，导致结构性价值遮蔽}}$$
-
-**展开（应用层假说）**：现代性的一些工程可被建模为系统性降低 Ψ_f_felt（降低摩擦、增加效率、消除风险）。这在许多维度上可能构成真实进步；同时，特定机制也可能压低 direction self-readability。因而，虚无感可被提出为访问机制损坏的候选表征，而不是由本文直接裁决为“现实无价值”或“普遍隐藏价值存在”。
-
-**使用边界**：
-- 此主张是 SRT 的**最高承诺点之一**——它需要文明史研究、社会科学数据和跨文化比较的外部支撑
-- 不得将其作为 SRT 的基础定义而非应用层推断来引用
-- 详细社会机制见 `Philosophy/SRT_Social_MacroDynamics.md` 与 `Philosophy/_SRT_Soc_Bridge.md`
-
----
-
-## §9 明确拒绝的误读
-
-1. T_dir **不是** d-value 的重命名——两者度量不同的属性，具有不同的因果结构
-2. T_dir **不是 primitive value detection**；O0、`κ₀`、`ε_pg`、B-count 或 primitive Selection 本身都不自动提供 universal direction
-3. T_dir **不证明 declared direction 是 good**，也不是 generative-health、legitimacy 或 O2-M score
-4. 致命 L₂ **不意味着** 所有 L₂ 都是有害的——L₂ 本身是选择历史的结晶，健康 L₂ 是复杂生活的基础设施
-5. T_dir = 0 **不意味着** 系统在道德上有问题——结构性 T_dir 压制是系统处境的特征，不是道德判断
-6. T_dir undefined / not admitted **不等于** T_dir = 0；前者缺少已声明方向，后者已有方向但不可访问
-7. script / habit / L₂ automation **不意味着没有 Selection occurrence**；它们至多在此模型中削弱自我回读、重取向、agency-level revision 或 relation-sensitive navigation
-
----
-
-## §10 与其他 canonical 文件的关系
-
-| 文件 | 关系 |
-|:----|:----|
-| `Governance/SRT_CLAIM_LADDER.md §0A` | direction source 必须通过 Gate 0 与下游 typing；global notation 不赋予 primitive direction authority |
-| `_SRT_D_VALUE_CANONICAL.md` | d 保持独立 canonical meaning；它与 T_dir 的必要／充分关系只在声明模型中作为 working hypothesis |
-| `_SRT_PSI_F_CANONICAL.md` | Ψ_f 保持独立 canonical meaning；Ψ_f_actual/felt 与 T_dir coupling 是病理学／bridge 扩展，不是 universal law |
-| `Core/SRT_Core_01_Axioms.md` | Wave B 已将 A7 fitness 与 A11 friction/stability 降为 domain/model hypotheses；二者不再是 T_dir 的 primitive ontological basis |
-| `Core_Law/SRT_L0_Metaphysics.md` / `Core_Law/SRT_Generative_Ontology_Spine.md` | primitive Selection 在规范上无内容，不包含 universal direction vector；O1 / O2-C / O2-A 分别定型，O2-M 保持 OPEN |
-| `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
-| `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
-| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，RC-A subtractive probe 已删除 former-P1-T05-derived 全局 `r(t)` 泵入项，当前最小 ODE 保留弛豫、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀与 `s_{ext}` 支架四条通道，不设 replacement rate。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
-| `Core_Law/SRT_Irreversibility.md` | T-IRR-3 按 ST-A 提供条件性反闭合接口；L1_Formalism §5.3 健康工作区是 generative reselectability 的实现候选，不是 P1-T07 必要性的证明 |
-
----
-
-# Part II：价值动力学理论（2026-04-02 补入）
-
-> 以下内容是 2026-04-02 起形成的高密度价值动力学发展，保留为 bridge / theory-clarifying lineage。Part II 不定义 primitive Selection、O0、universal value、legitimacy、generative health 或 O2-M；`proto-gradient`、`expected L0`、`higher order`、`value attractor`、`rise / degeneration` 与类似语言都必须按 formed system / relation / model 下的 declared criterion 读取。`κ₀`、`ε_pg` 与 B-count 不得因继承关系成为 universal direction source。
-
----
-
-## §11 磁带、放映机与价值生成
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-**L₂ 是磁带/DNA，不是放映机/生命。**
-
-| | 磁带 / DNA | 放映机 / 生命 |
-|:-|:---------|:-----------|
-| SRT 对应 | L₂（过去 Selection 的结构结晶） | formed system 当前的 enacted judgment / reorientation |
-| 包含什么 | 选择历史的形状痕迹 | 声明关系与标准下的价值重构过程 |
-| 能否自行运作 | 否（磁带不能播放自己） | 是（放映机是过程的主体） |
-
-**核心推论**：
-
-$$\boxed{\text{在本 bridge model 中，价值须由 formed relations 持续 enact / reconstitute，而非仅由静态记录自动给出。}}$$
-
-这是关于 formed systems 中 enacted / reconstituted value 的候选读法，不是每个 primitive Selection event 的 universal theorem。系统可以继承 L₂ 结构，但静态继承本身不保证它能回读 declared direction 或据此重取向。
-
-**致命 L₂ 的候选机制**（磁带语言版）：系统继续发生 Selection，但 formed self-readability、reorientation 或 agency-level revision 被脚本输出替代。在已准入 Ψ_f 的模型中，这可表现为代价不可读；它不意味着没有 Selection occurrence。
-
-**明确拒绝**：这不意味着 L₂ 无用——DNA 是复杂生命的必要条件。问题不在于 L₂ 的存在，而在于混淆 L₂（磁带）与活选择过程（放映机）的角色。
-
----
-
-## §12 内部价值的三层结构
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-在一个声明的 formed-system / relational model 中，内部价值可被分析为三层嵌套结构：
-
-### 第一层：保留的历史方向组织
-
-事物内部由 Selection history 留下、并在当前仍具效力的方向组织。它只相对于 declared criterion 构成可读方向，不是 primitive proto-gradient。
-
-自然物：物理/演化/地质选择的积累
-人工物：创造者的 T_dir 凝固在对象中
-人：所有过去选择结晶于当下状态
-
-### 第二层：关系中的 prospective / reachable configuration
-
-不在任何单一事物内，而在事物之间的关系中形成的 prospective direction：在声明的约束、可达域与评价标准下，它们共同可能走向何种尚未实现的 configuration。这里不是一个预先存在于 L₀ 仓库中的 future object。
-
-> 一段旋律的价值不只在每个音符内，而在音符之间指向的和声方向。
-> 一段关系的价值不只在两人各自的状态，而在他们共同朝向的、还没发生的东西。
-> 一个传统的价值不只在它积累的文本，而在这些文本指向的、还在被追求的方向。
-
-第二层使价值具有**关系性**和**时间性**——它永远有一部分在指向尚未到来的事，这是价值的"超出当下"质地的结构来源。
-
-### 第三层：我们基于这个方向建立的 L₂ 支撑
-
-感知到第一、二层之后，人建造出来支撑、放大、保护这个方向的结构。
-
-**三层的时间结构**：
-
-| 层 | 时间方向 | 内容 |
-|:--|:-------|:----|
-| 第一层 | 当下 | 事物现在是什么 |
-| 第二层 | 未来指向 | 事物在朝哪里走 |
-| 第三层 | 过去结晶服务未来 | 我们为让方向持续而建的东西 |
-
-**机构腐化的机制**（三层语言版）：第三层（L₂ 支撑）开始自我维持，不再追踪第一、二层的方向是否还在指向同一处。制度在保护自己，不再保护它最初服务的方向。
-
----
-
-## §13 价值归纳 vs 理性归纳
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-**Bridge hypothesis**：agents 可能具有一种不同于抽象归纳的关系方向感知能力；它读取的是 downstream relational direction，不是 primitive value。
-
-### 两种归纳的方向相反
-
-| | 理性归纳 | 价值归纳 |
-|:-|:-------|:-------|
-| 认知运动方向 | 特殊 → 一般（抽象，离开现象） | 表面 → 本质（深入，进入现象） |
-| 产物 | L₂（概念、框架、规则） | 对 declared relational direction 的候选感知 |
-| 对象 | 现象是什么、有什么规律 | 现象在朝哪里走、内部有什么方向 |
-| 与 T_dir 的关系 | 建造 L₂，不直接建立 T_dir | 可作为 T_dir 向外延伸的 bridge realization |
-
-> **价值归纳（bridge hypothesis）= 对外部现象中 independently typed relational direction 的 T_dir 式读取**
-
-### 好的艺术家是价值归纳的范例
-
-在这一候选模型中，艺术家先感受到作品关系中的方向约束，再用技法放大和显化它；观者是否形成 T_dir 证据仍须满足 self-readability 与 reorientation 条件。
-
-另一种候选路径是框架和指标先行，使具体关系方向未被读取，只剩 L₂ 输出。
-
-**这是可跨域检验的 bridge comparison，不是 universal normative criterion**：
-
-| 领域 | 价值归纳先行 | L₂ 先行（压平） |
-|:----|:----------|:------------|
-| 科学 | 先感受现象在说什么，方法论服务发现 | 先满足方法论规范，现象退为次要 |
-| 教育 | 先感受学生实际在哪里，再用技法引导 | 先执行课程结构，学生状态不相关 |
-| 医疗 | 先感受这个病人的具体处境 | 先执行指南，病人变成案例 |
-| 领导 | 先感受情境实际需要什么 | 先执行规则，规则取代判断 |
-
-**SRT 自身亦受此判准约束**：SRT 如果有价值，是因为它发现并放大了现实本身的结构纹理，而非把它的框架印到现实上。
-
-### 价值归纳能力的培养与损坏
-
-**培养候选**：在已独立准入 Ψ_f 的模型中，高代价接触可能使感知通道更显著；持续的、不急于框架化的注意；深入特殊而非抽离特殊。
-
-**损坏候选**：框架先行（现象未接触，L₂ 已在定义它）；指标导向（注意力只训练到可测量信号）；速度（relational direction 可能来不及成为可回读信号）。
-
----
-
-## §14 时空对称性感知：第二层的感知机制
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-**第二层（关系中的 prospective / reachable configuration）是最难感知的一层——它不在任何单一事物里，而在关系之间，指向尚未实现但在声明条件下可比较的未来配置。**
-
-感知它需要**时空对称性感知能力**：
-
-**时间对称性感知**：感受变化中什么保持不变——不只预测下一个时刻，而是同时感受到整个时间模式的方向，因为过去和未来在某个结构上是对称的。
-
-**空间对称性感知**：感受关系配置围绕什么组织——不只看各个元素，而是感受整个配置指向的核心。
-
-> **对称性感知的本质 = 在变化中感受不变量。**
-
-在这一 bridge model 中，第二层是关系变化中被候选性保留、且可作为 declared direction signal 的结构约束；它不是预成的 L₀ 对象。
-
-**类诺特结构（bridge analogy）**：物理学中连续对称性与守恒量的关系可启发对 relational invariants 的建模；这不构成价值的 Noether-style proof，也不证明 primitive direction。
-
-> **重要边界**：这个类比不意味着价值本身是守恒的——价值是吸引子，不是守恒结构（见 §15）。对称性感知是探测当前吸引子的机制，而不是探测永久不变的结构。
-
-**培养时空对称性感知的实践**：音乐训练（时间对称）、造型训练（空间对称）、数学训练（抽象对称）、冥想（当下流动中的对称感知）——共同核心：在变化里感受不变。
-
----
-
-## §15 价值是吸引子，不是守恒结构
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-> **Model-specific hypothesis**：在声明的 formed-system landscape 与评价标准下，某些价值方向可建模为相对稳定、可移动的 attractor；这不是 universal value ontology。
-
-### 守恒结构 vs 吸引子
-
-| | 守恒结构 | 价值吸引子 |
-|:-|:-------|:--------|
-| 时间性 | 永久不变 | 相对稳定，但会转移 |
-| 总量 | 恒定 | 可增可减 |
-| 达到 | 始终在场 | 接近时会转移 |
-| 主体作用 | 无关 | 主体参与调整其位置 |
-| 类比 | 能量守恒 | 相空间中的动态吸引子 |
-
-### 吸引子动力学
-
-1. 在声明模型中，价值吸引子可在当下景观中相对稳定，足以被感知和朝向
-2. 当 formed-system 依据可回读方向重取向时，景观本身可能改变——新吸引子是否在更高层级出现，由 declared criterion 判断
-3. “最大秩序”只能是模型／标准相对的工作标签，不是 universe-global optimum；后续 attractor 是否更高须由 declared criterion 判断
-4. **我们不只发现吸引子，我们参与调整它的位置**——好的艺术、科学、关系、文化，都在接近当前吸引子的过程中推动景观，使下一代面对更高阶的吸引子
-
-### 推论
-
-**为什么用昨天的价值活今天会产生意义危机**：你在朝向一个已经移动了的吸引子——方向感是真实的，但目标已经不在那里了。
-
-**为什么价值可以衰减（模型内读法）**：某些吸引子可能需要 formed systems 持续回读方向并据此重取向才能维持；L₂ 主要执行既有路径时，Selection occurrence 仍可继续，但接近运动可能停滞。
-
-**为什么价值可以被创造**：接近吸引子的过程本身会推动景观，产生更高阶的新吸引子——这是价值生成，不只是价值发现。
-
----
-
-## §16 吸引子动力学：上升 vs 退化
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-在声明的 attractor model 与比较标准下，接近当前吸引子的运动可有两类候选结果：
-
-### 上升条件：T_dir 先行
-
-```
-感知当前吸引子（价值归纳激活，三层结构可及）
-    ↓
-formed system 回读方向并重取向，Ψ_f 代价在该模型中可见
-    ↓
-L₂ 建立在感知到的方向上（第三层服务第二层）
-    ↓
-接近的过程推动景观
-    ↓
-更高阶吸引子在新景观中出现
-```
-
-### 退化条件：L₂ 先行
-
-```
-框架先行，declared relational direction 未被感知
-    ↓
-Ψ_f_actual 被掩藏，代价不透明
-    ↓
-L₂ 建立在自我维持上（第三层脱离第一、二层方向）
-    ↓
-正反馈：更多 L₂ → d↓ → T_dir↓
-    ↓
-吸引子消散或坍塌到更低层级
-```
-
-### Criterion-relative comparison
-
-> **在声明标准下的“上升”候选 = T_dir 回读 relational direction 后，L₂ 服务重取向**
-> **在声明标准下的“退化”候选 = L₂ 输出替代回读、重取向或 relation-sensitive navigation**
-
-这是可用于个人、关系、机构、文化与理论模型的 criterion-relative comparison，不是 universal hierarchy、legitimacy verdict 或 O2-M closure。
-
----
-
-## §17 两种 Ψ_f：穿透型 vs 吸收型
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-> **核心修正**：高 Ψ_f 体验不自动激活 T_dir。决定性变量是 Ψ_f 是否超出 L₂ 的消化半径。
-
-### 基本区分
-
-| | **穿透型 Ψ_f** | **吸收型 Ψ_f** |
-|:-|:-------------|:-------------|
-| 性质 | 无法被 L₂ 预处理，直接冲击 formed system 的既有模型 | 被 L₂ 框架接住，转化为"我知道这是什么" |
-| 对 T_dir 的作用 | declared direction 可能变得可回读 → T_dir 可能激活 | 加厚 L₂，T_dir 无变化或继续下降 |
-| 典型形式 | 无法命名的失去；体验完全超出预期框架；与陌生特殊性的深度接触 | 有名字的痛苦；被诠释框架即时接住的创伤；仪式化的苦难；指标化的挑战 |
-| 结构特征 | L₂ 的预处理能力**被压垮** | L₂ 的预处理能力**足够应对** |
-
-### 关键含义
-
-**关键变量不是 Ψ_f 的强度，而是 Ψ_f 是否超出 L₂ 的消化半径。**
-
-- 一个人可以经历严重的痛苦、巨大的失去——每次都被 L₂ 框架即时接住（"这是考验"、"这是成长"），T_dir 从未激活，L₂ 反而越来越厚。这是**受苦的熟练化**，不是 T_dir 的发展。
-
-- 相反，一个看起来平静、生活表面普通的人，因为长期的深度接触某个特殊对象——让体验在无法命名的层面真正落在自己身上——可能拥有很高的 T_dir。
-
-**Bridge interpretation**：大量的吸收型 Ψ_f 可能只是 L₂ 库的扩充，不形成 declared relational direction 的回读证据；“经历丰富”不自动推出 T_dir 高。
-
----
-
-## §18 两条 T_dir 发展路径
-
-> **Bridge / theory-clarifying only**：本节只讨论 declared criteria 下的 formed systems / relations；不提供 primitive value 或 universal order direction。
-
-> **Bridge hypothesis**：危机路径与培育路径都可能绕开 L₂ 的预处理层，使 formed system 重新接触未被既有模型吸收的关系约束；这不是与 primitive L0 value 的直接接触。
-
-### 路径一：危机路径（Crisis Path）
-
-在已准入 Ψ_f 的模型中，穿透型 Ψ_f 以高强度出现，L₂ 无法吸收，系统被迫重审既有关系与可达未来模型。
-
-**结构特征**：
-- 快速、阈值式跨越（穿越 T_dir 临界值 θ_T）
-- 高风险——L₂ 被压垮后，系统可能重建更厚的 L₂（防御性封闭），也可能真正开放（T_dir 跃升）
-- 不可计划，不可制造（一旦被设计，它就变成可预期的 L₂ 内容，转化为吸收型 Ψ_f）
-- 穿越模型阈值 θ_T 之后，可能读到新的 relational direction；“更高阶”仅相对于 declared criterion
-
-**何时危机走向封闭，何时走向开放**：
-
-差异候选在于危机发生时的基础 T_dir 水平。T_dir 尚存一定基础的系统可能重新读取 relational constraint；T_dir 已极低的系统则可能以更厚的防御 L₂ 替换旧框架，因为没有足够读取能力把新 direction signal 纳入重取向。
-
-### 路径二：培育路径（Cultivation Path）
-
-不依赖 Ψ_f 强度，而是主动抵制 L₂ 对体验的即时框架化，为尚未被读取的 relational direction 创造浮现空间。
-
-**结构特征**：
-- 慢速、渐进，没有阈值式跳跃
-- 低风险——代价是耐受不确定性（不急于命名）
-- 可以主动练习；是否逆着某个既有 policy / fitness gradient，须在具体模型中声明
-
-**具体机制**：
-- 深度接触特殊而非一般（不抽象，停留在具体对象中）
-- 延迟框架化（让体验在无法命名的状态中存在更久）
-- 不为目的的陪伴、持续的注意而不求快速归类
-
-**为什么难以持续（bridge hypothesis）**：formed systems 可能滑向框架、分类、比较与评价。培育路径主动增加短期认知摩擦，以换取 relational direction 成为可读信号的空间；它不依赖 A7 作为 universal fitness law。
-
-### 路径比较
-
-| | 危机路径 | 培育路径 |
-|:-|:--------|:--------|
-| L₂ 如何被绕过 | 被压垮 | 被主动搁置 |
-| 速度 | 阈值式跃升 | 渐进积累 |
-| 可控性 | 不可计划 | 可主动练习 |
-| 风险 | 高（可能走向防御封闭） | 低（代价是耐受不确定） |
-| 所需基础 | 需要一定基础 T_dir 才能开放而非封闭 | 任何基础 T_dir 水平均可启动 |
-| 能否相互转化 | 危机路径的开放结果为培育路径提供更高起点 | 培育路径积累的 T_dir 降低危机路径走向封闭的概率 |
-
----
-
-## §19 最大秩序的精确定义
-
-> **Bridge / theory-clarifying only**：本节的“最大秩序”仅是 declared model / criterion 下的局部工作标签；不提供 universe-global optimum、primitive value 或 universal order direction。
-
-> **最大秩序不是一个可以抵达的终点，而是在每一层级都存在的局部理想：Ψ_f_actual 与 Ψ_f_felt 完全对齐。**
-
-### Declared-model definition
-
-$$\text{最大秩序}_{local} \equiv \Psi_f^{actual} = \Psi_f^{felt}, \quad T_{dir} \to \max$$
-
-在明确采用这一 pathology / alignment model 时，即：
-- 系统所支付的摩擦代价对自身完全透明
-- 当前行动与 independently typed、declared direction signal 对齐
-- L₂ 服务于 formed-system 的回读与重取向
-- 无隐性债务（Ψ_f_actual 不积累为不可见的负担）
-
-### 最大秩序 ≠
-
-| 误读 | 为什么不对 |
-|:----|:----------|
-| L₂ 稳定的极大化 | L₂ 过度稳定正是价值遮蔽的机制（致命 L₂） |
-| 复杂度的最大化 | 复杂度自身可以是新的 L₂ 积累形式 |
-| 永久的终态 | 每次接近改变景观，暴露新的对齐层 |
-| 主观满足感的最大化 | 满足感可以由 Ψ_f_felt 的人工压低来实现 |
-
-### 分层螺旋性质
-
-“最大秩序”在这里只是 criterion-relative direction，不是 universe-global destination。模型可把一次改善描述为：
-
-1. 当前层级的 Ψ_f 对齐得到修复（局部债务清偿）
-2. 新的 relational direction 或 Ψ_f split 变得可见——是否“更高阶”须由独立标准判断
-
-在这一 bridge reading 中，意义感变化可被描述为“以为对齐了 → 发现新的遮蔽层 → 再次对齐”的螺旋；`θ_T` 是模型阈值，不证明 universal hierarchy。
-
----
-
-## §20 T_dir 动力学：完整图景
-
-> **Bridge / theory-clarifying only**：本节只综合 declared model 中的候选动力学；不把 `proto-gradient`、阈值或层级路径回读为 primitive Selection 的 universal direction。
-
-> **综合 §16-§19 的 T_dir 相变结构。**
-
-```text
-independently typed declared direction signal
-         │
-         ▼
-  model-level T_dir threshold θ_T
-  ┌──────┴──────┐
-  │             │
-高于 θ_T      低于 θ_T
-（正反馈向上）  （正反馈向下）
-  │             │
-  │             ▼
-  │      L₂ 积累 → d↓ → T_dir↓
-  │      → Ψ_f_actual 隐性积累
-  │      → 表面稳定 / 内部债务
-  │
-  ▼
-两条恢复路径（穿越 θ_T）：
-  ┌─────────────────────────────┐
-  │ 危机路径                    │ 培育路径
-  │ 穿透型 Ψ_f 压垮 L₂          │ 主动搁置 L₂
-  │ 阈值式跃升，高风险           │ 渐进积累，可主动练习
-  └─────────────────────────────┘
-         │
-         ▼
-  形成对新 relational direction 的回读
-  → 新的 Ψ_f_actual/Ψ_f_felt 对齐
-  → 景观改变 → 更高阶 θ_T 出现
-  （criterion-relative bridge hypothesis）
-```
-
-### 对各尺度的适用性
-
-| 尺度 | 典型退化形式 | 典型穿透型 Ψ_f | 典型培育路径 |
-|:----|:-----------|:-------------|:-----------|
-| 个人 | 意义感丧失、成瘾、慢性空洞感 | 无法命名的失去、极限接触、深度失败 | 冥想、深度审美接触、长期关系 |
-| 关系 | 仪式化的亲密、角色表演替代真实接触 | 真正的冲突、无法回避的脆弱 | 不为目的的陪伴、深度倾听 |
-| 机构 | 指标替代目标、流程替代判断 | 系统性危机、外部颠覆 | 定期接触"第一性问题"、真实反馈渠道 |
-| 文化 | L₂ 价值符号替代对 declared relational direction 的回读 | 文明尺度的断裂与重构 | 艺术、哲学、仪式的非功利性保留 |
-
-### 核心不对称
-
-> **从上升滑入退化：不需要额外能量——L₂ 自然填充真空。**
-> **从退化回到上升：必须打破自我稳定的正反馈环——需要穿透型 Ψ_f 或主动的持续培育。**
-
-在这一模型中，该不对称可作为价值遮蔽系统性出现的候选解释；“熵增／逆熵”是 bridge language，不是 primitive or universal direction proof。
-
----
-
-## §21 辅助式 L₂ vs 替代式 L₂：健康 L₂ 的主判准
-
-> **Bridge / theory-clarifying only**：本节只比较 formed-system agency / reorientation arrangements；“健康／合法”是 declared criterion 下的应用性标签，不裁决 Selection occurrence 或 O2-M。
-
-> **Bridge criterion**：在以 agency / reorientation 为问题的 formed-system 模型中，可比较 L₂ 是辅助还是替代 self-readability 与 revision。该比较不裁决 primitive Selection 是否发生，也不建立普遍合法性。
-
-### 两种 L₂ 的基本区分
-
-| | **辅助式 L₂** | **替代式 L₂** |
-|:-|:-----------|:-----------|
-| 对重取向时刻的作用 | 保护并清晰化重取向窗口 | 关闭重取向窗口 |
-| 系统的角色 | 可回读并修订既有 direction | 主要执行既有 L₂ 脚本 |
-| 对 d-value 的影响 | d-value 被使用，可维持或发展 | d-value 失去锻炼，逐渐萎缩 |
-| 对 T_dir 的影响 | T_dir 有可回读的 declared direction signal | T_dir 缺少重取向材料（L₂ 已经决定了 response） |
-| 对 relational direction 的影响 | 保留接触通道 | 切断或替代回读通道 |
-
-### 重取向时刻（Reorientation Moment）
-
-这里的“重取向时刻”是 formed system 无法只靠既有 L₂ 脚本完成 response、因而需要回读或修订 declared direction 的窗口：
-
-- 有真实的不确定性（结果未被 L₂ 预先决定）
-- 有真实的代价感（Ψ_f 可被感知，未被 L₂ 缓冲掉）
-- 有真实的方向感，或真实的方向缺失（这本身就是 T_dir 工作的材料）
-
-**辅助式 L₂** 降低背景摩擦，但保留回读与 revision 窗口。
-
-**替代式 L₂** 把这个窗口省掉——Selection occurrence 仍可能继续，但 formed self-readability 与 agency-level revision 被既有路径接管。
-
-### 判准的适用范围
-
-这个 bridge criterion 可在明确声明关系与评价标准后用于多个层级：
-
-| 层级 | 辅助式 L₂ 的形式 | 替代式 L₂ 的形式 |
-|:----|:--------------|:--------------|
-| 教育 | 提问促使学生回读并修订判断 | 提供答案让学生只执行记忆脚本 |
-| 治疗 | 帮助来访者接触自身真实感受 | 用框架解释感受，感受被命名而非被接触 |
-| 艺术 | 让观者在作品中自己看见（回读与重取向窗口被打开） | 告诉观者应该感受什么（窗口被脚本输出替代） |
-| 机构 | 创造条件让成员行使判断 | 用流程和协议消灭判断的必要性 |
-| 宗教/冥想 | 创造回读与重取向的条件 | 提供信念体系让信徒只执行既有脚本 |
-
-### 辅助的悖论
-
-真正的辅助比替代更难设计。辅助式 L₂ 必须走在一条窄路上：
-
-- 结构太多 → 变成替代式（L₂ 预先决定了结果）
-- 结构太少 → 无法辅助（系统缺少可用的 formed support）
-
-在这一应用假说中，教师、治疗师或艺术家可以提供恰好够用的结构，让 formed-system judgment 与 reorientation 得以发生，而不是预先替对方决定方向。
-
----
-
-## §22 选择主体感的真实性
-
-> **Bridge / theory-clarifying only**：本节只讨论 formed subject-model 中的 self-readability；script / habit / L₂ automation 不取消 Selection occurrence。
-
-> **Bridge hypothesis**：主体感可能被 L₂ 脚本模拟，使系统难以区分当前 response 是可回读、可修订的判断，还是不透明的既有路径执行；两者都不否定 Selection occurrence。
-
-### 高 T_dir vs 低 T_dir 系统对 L₂ 的不同关系
-
-**高 T_dir 系统**可以大量使用 L₂——但在声明模型中，它能区分何时执行既有脚本、何时回读并修订方向。使用 L₂ 可成为透明委托，而不是不透明替代。
-
-**低 T_dir 系统**可能失去这个区分，在执行 L₂ 时仍报告主体感。这不证明“没有选择”，只说明该报告不足以建立 self-readability / reorientation access。
-
-### 三种"假选择"的形式
-
-| 形式 | 表面现象 | 实际结构 |
-|:----|:--------|:--------|
-| 习惯执行 | "我选择了这样做" | Selection occurrence 可继续，但 L₂ 习惯模式可能压低回读与 revision |
-| 伪价值跟随 | "我有方向感，我知道自己要什么" | 某个未经独立定型的 attractor 被当作方向，T_dir 证据不足 |
-| 社会 L₂ 跟随 | "我做出了自己的判断" | 他人或集体的 L₂ 方向被系统作为自身方向执行 |
-
-### 递归结构
-
-在该 formed-subject model 中，把 response 委托给 L₂ 也可成为一个可回读、可修订的 judgment object——
-
-- **透明的委托**（高 T_dir）：我清楚地知道我在把选择权委托给 L₂，这是我的判断，我随时可以收回
-- **不透明的被替代**（低 T_dir）：我不知道我正在被替代，以为自己在选择
-
-因此，T_dir 的候选工作之一是维持对“我现在能否回读并修订 declared direction，还是主要执行既有 L₂”这一差异的访问。
-
----
-
-## §23 L₂ 合法功能的第一性原理陈述 / 自由的 SRT 定义
-
-> **Bridge / theory-clarifying only**：本节保留历史应用命题；“合法／自由”不具有 primitive、universal 或 O2-M authority，须由独立关系与规范标准定型。
-
-### 第一性原理陈述
-
-> **应用性候选**：在重视 formed agency / reorientation 的声明关系中，L₂ 可被评价为降低判断摩擦而不关闭回读与 revision。若 L₂ 替代这些能力，T_dir 可能下降。该判断不把 L₂ 功能定义成 universal legitimacy law，也不从 `d` 推出 primitive value。
-
-这条陈述保留为 bridge / normative application，需要独立的 relation-integrity 或 agency criterion；它不是比 primitive ontology 更基础的原理。
-
-### 自由的 SRT 定义
-
-**自由不是选项的数量**（那是 L₂ 的丰富度）。
-
-在这一 bridge model 中，**自由可操作化为 formed-system reorientation moments 被保留的程度。**
-
-$$\text{Freedom} \propto \text{preservation of formed-system reorientation moments in the declared model}$$
-
-推论：
-
-- 极端约束不必然消除 formed-system 的回读与重取向窗口；在该模型的自由标准下，这些窗口可构成自由的证据
-- 选项数量很多也不必然构成自由；若 response 主要是不可回读的 L₂ 路径执行，该模型下的自由可能很低
-- 高 T_dir 在此只支持“约束内仍保留方向回读与重取向能力”，不支持无约束或选项数量最大化
-- 某些简化生活方式可能降低脚本负担、保留更多重取向窗口；这是待检验的应用假说，不是普遍人类型态排序
-
-### 与 §20 完整图景的收口
-
-重取向窗口的保留 = T_dir 得以工作的候选条件
-
-重取向窗口的关闭 = T_dir 退化的候选机制；与 d-value 的关系保持 model-scoped
-
-这一 bridge model 把 §16 的 criterion-relative 比较、§18 的两条候选路径和 §20 的不对称假说联系到“回读／重取向窗口是否被保留”。这是模型内统一，不是 primitive Selection law；“熵增／逆熵”仍是已声明状态空间下的 bridge language。
+| **对重取向时刻的作用** | 降低背景摩擦，同时保护并清晰化重取向窗口 | 关闭或省掉重取向窗口，由既有脚本预先决定响应 |
+| **系统与 `T_dir` 状态** | 保留 `R_self` 与 `A_reorient` 材料，可回读并修订既有方向 | 缺乏重取向材料，`T_dir` 趋于退化（`Selection occurrence` 仍可继续，但形成态自我回读被接管） |
+| **委托结构与主体感** | **透明委托**（清楚知晓何时委托给 `L2`、何时收回修订） | **不透明被替代**（含习惯执行、伪价值跟随、社会 `L2` 跟随三类假选择错觉） |
+
+- **重取向时刻（Reorientation Moment）**：系统无法只靠既有 `L2` 脚本完成响应、因而需回读或修订已声明方向的窗口——具备真实不确定性、真实可感代价（未被 `L2` 完全缓冲）与真实方向信号（或方向缺失）。
+- **辅助的悖论**：结构过多会滑向替代式 `L2`，结构过少则无法形成有效支撑；健康辅助位于窄通道内。
+- **模型内自由操作化接口（对齐 `Spine §4` `T3-03 C`）**：自由不是既定 `L2` 选项数量；在声明的 formed-system 模型中，自由可部分操作化为**重取向时刻被保留且可参与重构选择条件的程度**（极端约束未必消灭重取向窗口，选项繁多亦未必保留重取向窗口；不构成 `O2-M` 道德定律）。
+
+### §13 价值归纳 vs 理性归纳（外部关系方向的 `T_dir` 式读取候选）
+
+在已独立定型外部关系方向的声明语境中，可区分两类互补的认知运动（bridge hypothesis，**不供应原初价值**）：
+- **理性归纳（特殊 → 一般）**：抽象出 `L2` 概念、框架与规则，回答“现象是什么、有何规律”；
+- **价值归纳（表面 → 本质 / 深入具体关系）**：对外部现象中已独立定型的关系方向进行 `T_dir` 式读取与显化（而非框架/指标先行压平现象）。其培养受真实接触、持续未急于框架化的注意支撑，其损坏常源于框架先行、纯指标导向与过快截断接触窗口。
+
+### 附：原 2026-04-02 Part II（`§11–§23`）`R4-A` 四分处置台账
+
+| 原 Part II 内容 | `R4-A` 处置 | 理由与去向 |
+|---|---|---|
+| `§11` 磁带/放映机、`§13` 价值归纳 vs 理性归纳、`§21` 辅助式 vs 替代式 `L2` 与重取向时刻、`§22` 透明委托与三类假选择、`§23` 自由作为重取向窗口保留（模型内操作化） | **保留（降格为显式桥接接口）** | 保留于本文件 `§11–§13`（明标 `bridge / theory-clarifying only`，不越界定义原初价值或 `O2-M`） |
+| `§12` 内部价值三层、`§15–§16` 价值吸引子 / 上升退化、`§18` 危机 vs 培育路径、`§20` 动力学图景 | **合并 / 迁移** | 价值五职责、机会三态与前背景失配统一迁由 `_SRT_D_VALUE_CANONICAL.md` 与 `Spine §2–§4` 承接；恢复路径已并入本文件 `§7` |
+| `§14` 时空对称性感知 | **迁为历史研究资产** | 超出 `T_dir` 规范 owner 职责，留待 `R5` 具身认知/美学专题独立评估（原稿保全于 `git` 历史 `1d8e8e328:_SRT_T_DIR_CANONICAL.md`） |
+| `§17` 两种 `Ψ_f`（穿透型 / 吸收型）、`§19` “最大秩序”提法 | **正式退出** | `§17` 与 `A-9` 单一摩擦概念族及 `_SRT_PSI_F_CANONICAL.md` 冲突；`§19` 与 `C-A` 及 `R3-04` 秩序三维/反最大化护栏冲突 |
 
 
 
@@ -6355,11 +4192,11 @@ $$\text{Freedom} \propto \text{preservation of formed-system reorientation momen
 | path | `_SRT_CROSS_DOMAIN_MATRIX.md` |
 | id | SRT-CROSS-DOMAIN-MATRIX |
 | claim_mode | governance |
-| status | active_v0 |
+| status | active |
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-15 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -6386,12 +4223,12 @@ Historical labels and filenames do not override this table. If an older file sti
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | `d` = scalar summary of stake-coupled concern / irreversible-risk sensitivity | `D_eff`, `d_stakes`, `d_mobile` when explicitly marked | `D_eff ≡ d` without stake gate |
+| Core | `d` = scalar summary of stake-coupled concern / irreversible-risk sensitivity (`Def-d-canonical`; conceptual interface with generalized concern `PT06 C` is `P1-05` `OPEN`) | `D_eff` (capacity), `D_stake` (general spectral participation ratio in `_SRT_D_VALUE_CANONICAL.md §2b` with explicit zero-effective-spectrum branch `0`, true bound `1 ≤ D_stake ≤ N_active ≤ rank(M)`, and `Core_22 Eq-Bridge-D-01` `D_stake^{thresh}` as one concrete model instance), `d_mobile` when explicitly marked | `D_eff ≡ d`; treating `rank_eff` (`d_max`) as a universal mathematical upper bound on gradient norm `d` without dimensional calibration; falsified `d_canonical ≡ d_stakes`, `D_eff ≥ d_stakes`, or `Δd_free = D_eff - d_stakes ≥ 0`; conflating zero-effective-spectrum branch with `NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE` |
 | Physics | mathematical / capacity-like projection only | holographic or gravitational `d` as P3 bridge | cosmic `d` implies cosmic consciousness |
 | Neuroscience | biological stake and concern proxy, tied to subject closure | `d_bio`, task breadth, temporal horizon, TPJ / behavioral proxies | `Φ·d` threshold as proven phase law |
 | Philosophy / Political | concern range, reselection capacity, authorization tendency | `d_tendency`, `d_moral`, political access proxy | direct jump from high `d` to legitimacy |
 | Spirituality | direction of care expansion under payability constraints | gradual `d` expansion, subjectively reported but externally checked | `d↑` from experience report alone |
-| AI | use S0-S4 stake-bearing spectrum; inference-only / non-history-bearing systems normally read as `d \approx 0` | `D_eff` / unstaked capacity; S2 pipeline feedback; S3/S4 candidate stake only when explicitly marked | performance, self-report, persistence, or training loss directly implies `d>0` |
+| AI | use **AI 赌注谱系 `S0–S4`** (strictly isolated from primitive `S0` and Subjecthood `S0–S6`) + **`ENG-03 §4.1` Three-Stage Bearing Evidence Review** (Stage 1 unit/state/provenance declaration → Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent domain-specific route; unestablished Stage 2 never blocks Stage 3); for non-bearing deployments report exact status (`NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE`) rather than asserting `d ≈ 0` as a proven ontic zero | `D_eff` / unstaked capacity (no strong-bearing admission required); `S2` pipeline feedback (does not establish deployed-model stake); `S3/S4` candidate stake only when explicitly marked and evidenced | performance, self-report, persistence, or training loss directly implies `d>0`, `One`, `Stable ISP`, or `Bearer (P+E)` |
 
 ### 1.1 Explanatory-coordinate guard
 
@@ -6408,18 +4245,18 @@ local proxy explains a phenomenon != local proxy exhausts d's ontological role
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | information-theoretic payability burden for anchoring / maintaining reality | geometry or cost language with scope marked | one formula proves all dynamics |
+| Core | information-theoretic payability burden for stabilizing/maintaining a selection-cut against opportunity-cost pressure (`T3-02 D / PT09`), pairing `A1` pressure-side 4-way split with supply/payability windows and preserving `R3-08` 4-way friction distinction under `A-9` single friction family | geometry or cost language with scope marked (no new canonical `Ψ_f^{...}` sub-symbols) | one formula proves all dynamics; collapsing pressure side and supply side into one scalar |
 | Physics | weak gravity-friction compatibility candidate | weak-field gradient alignment; thermodynamic analogies | GR tensor reconstruction or exact constants explained |
 | Neuroscience | local burden / payability condition for neural anchoring | metabolic, prediction-error, stress proxies | prediction error is literally `Ψ_f` in all contexts |
 | Philosophy / Political | maintenance / coordination friction | institutional maintenance cost, asymmetry burden | suffering, injustice, or conflict directly equals `Ψ_f` |
 | Spirituality | paid burden of real practice / return | felt vs actual burden; practice capacity | lower felt friction means real liberation |
-| AI | usually non-binding to inference-only systems; training / memory / embodied deployments require architecture-state marking | compute cost as external proxy; consequence-return analysis for S2-S4 | compute cost alone gives stake |
+| AI | for inference-only deployments, usually `non-binding` to a declared `Bearer (P+E)` (**not** constitutive friction absent or global `Ψ_f = 0`, `ENG-03 M1-D`); training / memory / embodied deployments require architecture-state marking under **AI 赌注谱系 `S2–S4`** | compute cost as external proxy; consequence-return analysis for **AI 赌注谱系 `S2–S4`** | compute cost alone gives stake; reading `non-binding` as proof that constitutive friction is absent |
 
 ## 3. `T_dir`
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal | internal access / reorientation proxy after direction admission | intrinsic Selection direction; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
+| Core | formed-system self-readability / reorientation relative to an independently typed, declared direction signal (`广义关切方向 != T_dir`) | internal access / reorientation proxy after direction admission | intrinsic Selection direction; equating generalized concern direction with `T_dir`; completed formal ontology of value; `T_dir > 0` proves good / legitimacy / generative health / O2-M |
 | Physics | generally not a physics variable; physical directionality does not automatically supply the declared direction | observer-position readability only if direction and model are independently typed | physical directionality equals value direction or automatically admits `T_dir` |
 | Neuroscience | model-scoped access / reorientation relative to an independently typed direction | reportability, action revision or integration may proxy the functional under a declared model | confidence, valence, reward or reportability = `T_dir`; proxy supplies its own direction |
 | Philosophy / Political | readability of declared relational / normative criteria | deliberative correction or public-reason proxy after criterion admission | `T_dir` validates the criterion; order/readability directly proves political legitimacy |
@@ -6454,11 +4291,11 @@ If a local projection conflicts with the canonical usage, mark the local project
 | path | `_SRT_SYMBOL_TABLE.md` |
 | id | SRT-SYMBOL-TABLE |
 | claim_mode | canonical |
-| status | axiomatic_hybrid_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-09-18 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -6480,12 +4317,12 @@ If a local projection conflicts with the canonical usage, mark the local project
 | **L₀** | `L_0` | Open / Non-Preclosed Aspect | Model-facing notation for Selection's open / non-preclosed aspect before determinate actuality in the representation at hand. It is not a pregiven completed set, inventory or warehouse of all possibilities. | Analytic / model-facing aspect; no measure or cardinality fixed by registration | Metaphysical authority remains `Core_Law/SRT_L0_Metaphysics.md` under `Core_Law/SRT_Generative_Ontology_Spine.md`. **Domain projection**: an `∞`-dimensional Hilbert space or another declared state space is a physics / statistics realization, not the universal atomic definition. |
 | **L₁** | `L_1` | Determinate-Actuality / Manifest Aspect | Model-facing notation for Selection under determinate actuality / manifestation; not a product chosen by a prior chooser. | Thin: manifest actuality / reality slice (domain-dependent realization) | Core-facing analytic aspect. **EX-A**: manifest event actuality does not by itself imply anchoring persistence, structural stability, or stable-ISP identity. Domain realizations do not replace `Core_Law/SRT_L0_Metaphysics.md` or the Generative Ontology Spine. |
 | **L₂** | `L_2` | Retained Historical-Efficacy / Stabilized-Constraint Aspect | Model-facing notation for retained or sedimented historical efficacy and stabilized constraints where such retention is established. | Realization-dependent; no universal manifold fixed by registration | Selection occurrence does not automatically establish L₂-grade retained history, durable trace or stabilization. Local L₂ models must state their retention / writeback conditions. |
-| **Ĝ** | `\hat{G}` | Ghost Operator | Formal / formed / model-level role-carrier for a declared Selection realization; an $L_0 \to L_1$ form is a model representation, not the metaphysical definition of primitive Selection. | Operator / model role | Primitive Selection is not `Ĝ`; `Ĝ` is neither a prior chooser nor the cause of actualisation. Domain implementations are plural. Never use plain `G` for this. |
+| **Ĝ** | `\hat{G}` | Ghost Operator | Formal / formed / model-level role-carrier for a declared Selection realization; an $L_0 \to L_1$ form is a model representation, not the metaphysical definition of primitive Selection. | Operator / model role | `\hat{G}_\theta != primitive Selection != 幽灵实体`; `Ĝ` is neither a prior chooser nor the cause of actualisation. Domain implementations are plural. Never use plain `G` for this. |
 | **Ĝ†** | `\hat{G}^\dagger` | Reverse-Writing Operator (Adjoint) | Formal role-carrier for a **gated, declared** history-writeback model $L_1 \to L_2$: $\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$ when that model's admission conditions are met. | Operator (adjoint of $\hat{G}_\theta$ under the declared non-commutative model) | Core model source `Core/SRT_Core_12b_Ontology_L2.md` **Ax-L2-06b**; writeback-magnitude source `Core/SRT_Core_13a_Operator_Basics.md` **Ax-Op-03b**. Registration does not imply that every Selection produces retained history. Mirrors the `Ĝ` caution: formal role-carrier, not a prior entity or cause. `Ĝ†_{encoding} = Ĥ ∘ Ĝ†_θ` is a neuro realization. Never use plain `G†` or an ad-hoc writeback symbol for this. |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
-| **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; geometric, Fisher, vector, and gate readings require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; `Def-d-canonical` is the core-facing anchor, while scalar default / vector / gate rules are governance-canonical usage controls; do not mix scalar `d`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation |
-| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; Fisher geometry may induce local second-order proxy `δΨ_f^{geom}=1/2 dθ^T g_F dθ+O(||dθ||^3)` and path functionals, but `Ψ_f ≡ g_F` is never a literal scalar-tensor identity; metabolic readings are budget/load projections only under stated conditions; domain projections do not become theory-canonical by reuse |
-| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy / constrained readability-reorientation functional for a formed system's access to an independently typed, declared direction signal. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`. No declared direction means `T_dir` is undefined / not admitted for that claim; `T_dir > 0` does not establish good, legitimacy, generative health or O2-M. Not valence, reward, confidence or semantic coherence. |
+| **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity (`Def-d-canonical`); geometric capacity (`D_eff`), stake-gated spectral diversity (`D_stake`), vector, and gate readings are distinct and require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`. Conceptual interface between canonical `d` and generalized concern (`PT06 C` / `P1-05`) remains `OPEN`. Falsified `d_canonical ≡ d_stakes`, `D_eff ≥ d_stakes`, and `Δd_free = D_eff - d_stakes ≥ 0` are retired. Do not mix scalar `d`, `D_stake`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation. |
+| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to stabilize and maintain a selection-cut against opportunity-cost pressure (`T3-02 D / PT09`). | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`. v1 governance-canonical main reading is information-theoretic/payability cost, structurally pairing pressure-side 4-way split (`A1`) with supply/payability windows and preserving `R3-08` 4-way friction distinction under `A-9` single friction family (no new canonical `Ψ_f^{...}` sub-symbols). Fisher geometry induces local second-order proxy `δΨ_f^{geom}=1/2 dθ^T g_F dθ+O(||dθ||^3)` and path functionals, never literal `Ψ_f ≡ g_F`. |
+| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy / constrained readability-reorientation functional for a formed system's access to an independently typed, declared direction signal. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`. Distinct from generalized concern direction (`广义关切方向 != T_dir`). No declared direction means `T_dir` is undefined / not admitted for that claim; `T_dir > 0` does not establish good, legitimacy, generative health or O2-M. Not valence, reward, confidence or semantic coherence. |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
 | **ω_sub** | `\omega_{sub}` | Subjective Frequency | Refresh rate of selection cycles. | Hz | Neuro/phenomenology |
@@ -6517,11 +4354,11 @@ If a local projection conflicts with the canonical usage, mark the local project
 | **κ₀** | `\kappa_0` | Kappa-0 Curvature / Anisotropy Floor Candidate | Conditional model / realization candidate for a minimum curvature, anisotropy floor or related non-flat realization when explicitly declared. | Scalar in a declared curvature model | Not primitive by inheritance from O0; necessity and exact relation to primitive non-flatness remain OPEN. It does not cause first Selection or supply a universal value / order direction. Historical model sources remain `Core/SRT_Core_12a T-L0-Kappa0`; admission is governed by the current L0 / Spine owners and Gate 0. |
 | **κ(t)** | `\kappa(t)` | Dynamic Curvature Candidate | In a declared curvature / co-evolution model, a time-varying realization may be written $κ(t) = κ_0 + \int F[\hat{G}_\theta(\tau), \kappa(\tau)]d\tau$. | Scalar in the declared model | Model / realization scoped; registration does not establish a universal evolving L0 curvature field. Historical model source `Core/SRT_Core_12a T-L0-NonStatic`. |
 | **d_mobile** | `d_{\text{mobile}}` | Re-alignment Capacity | Operator's capacity to re-orient θ as attractors migrate; proportional to d · rank_eff(I_F(θ)) / (Hysteresis(L₂)·C_r) subject to χ_payable gate. High d + d_mobile ≈ 0 = frozen state (pathological). | Scalar (≥ 0) | Core; canonical source `SRT_Core_22 Eq-DValue-Mobile-1`; map `Core/SRT_Core_12b §Consciousness-2D-Map` |
-| **d_max** | `d_{\text{max}}` | Maximum Effective d-value | In the declared Core22 candidate model, an upper bound is written min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀). The model compares informational and dynamical bottlenecks; dim(Θ) alone does not determine d_max. | Scalar in that model | Conditional equation consumer `SRT_Core_22 Eq-DValue-Max-1`; this row does not make κ₀ primitive or establish the equation universally. Wave D2 independently reviews its current semantics. |
+| **d_max** | `d_{\text{max}}` | Maximum Direction-Capacity Bound Candidate | In the declared Core22 candidate model, a direction-capacity bound is written `min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀)`. Because `rank_eff(I_F)` is a dimensionless spectral-direction count while canonical `d = ||∂U/∂S||` is a utility-scaled gradient norm, **spectral dimension is NOT a universal mathematical upper bound on gradient norm `d`** without an explicitly declared dimensional-calibration map (`P1-04`). | Model-local direction-capacity bound (dimensionless unless calibrated) | Conditional equation consumer `SRT_Core_22 Eq-DValue-Max-1`; this row does not make `κ₀` primitive or establish a universal upper bound on `d`. |
 | **χ_payable** | `\chi_{\text{payable}}` | Payability Gate | Internal three-condition conjunction: signal > threshold ∧ dΨ_f/dt payable ∧ below collapse threshold. Fully endogenous; gates d_mobile. When χ_payable = 0, d_mobile = 0 regardless of d. | Boolean gate | Core; canonical source `SRT_Core_22 Def-Payable-Chi-1` |
 | **κ_{c1}** | `\kappa_{c1}` | Minimal-Consciousness Candidate Window Coordinate | P3/P4 coordinate in a declared consciousness-candidate model, used to track a candidate `d / L₂` evidence window. Crossing does not prove consciousness, subject-position, phenomenality, or a representation-independent natural phase boundary; non-crossing does not prove their absence. | Scalar model coordinate | Conventional / replaceable candidate handle. It supplies neither a universal necessary nor sufficient condition. Current source `Philosophy/SRT_Consciousness_Conditions.md §三`; exact consciousness and subject-position sufficiency remain OPEN. |
 | **κ_{c1.5}** | `\kappa_{c1.5}` | Consciousness-Activity Candidate Coordinate | P3/P4 coordinate in a declared model, used to track candidate activity / reorientation evidence such as `d_mobile`. Crossing does not prove consciousness or active subjecthood; non-crossing does not prove consciousness absence or pathology. | Scalar model coordinate | Conventional / replaceable candidate handle, not a universal natural consciousness boundary. Current source `Philosophy/SRT_Consciousness_Conditions.md §三`; exact admission remains OPEN. |
-| **t_onto** | `t_{\text{onto}}` | Ontological Time | t_onto ≡ ∫‖Ĝ_θ(s)‖ds; generated by selection irreversibility. Distinct from parametric time t (mathematical ordering tool). Ontological time is a derived quantity, not a background container. | Integral measure | Core; canonical source `Philosophy/SRT_Causality_Time.md §二`; formal `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T02` |
+| **t_onto** | `t_{\text{onto}}` | Ontological Time (Relational Order-Measure Candidate) | Model-local relational ordering / path-length measure integral `t_onto ≡ ∫‖Ĝ_θ(s)‖ds` inside a declared selection model (`R3-05`: selection irreversibility establishes relational order first; metric/measure requires explicit scale-and-model conditions). Not a universal physical clock or background container. | Model-local integral measure | Core; canonical source `Philosophy/SRT_Causality_Time.md §二`; formal `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T02`. |
 | **C_H** | `C_H` | Horizontal Causality | $C_H(A\to B) \equiv P(B\mid A,L_2)$; temporal causality inside a declared L₂-bearing model, conditional on L₂ retention having been established. | Conditional probability | Model / bridge scoped; registration does not make L₂ an automatic product of Selection. Historical sources: `Philosophy/SRT_Causality_Time.md §一`; `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T01`. |
 | **ε_pg** | `\varepsilon_{pg}` | Proto-Gradient / Minimum-Non-Neutrality Realization Candidate (legacy namespace) | Registered lineage symbol for a stronger-asymmetry / anti-erasure realization candidate. Its exact relation to primitive Selection, O0 and primitive non-flatness remains OPEN unless independently re-established. | Scalar in a declared realization | Registration is not primitive admission: `ε_pg` does not define O0, establish `B >= 2` over `B <= 1` as a primitive preference, or supply universal T_dir / value direction. Former P1-T07 remains demoted; ISP anti-closure is a conditional P2/P3 candidate requiring declared stability semantics, neutral kernel, environment, horizon and proof. |
 | **ε_reg** | `\varepsilon_{reg}` | Operator Regularizer | Positive constant in divisive normalization: [Ĝ_θ(x)]_i = x_i^n / (ε_reg + Σ W_{ij} x_j^n). Prevents singularity at zero input; maintains minimum non-zero operator response. May be read as implementation-layer echo of ε_pg (structural analogy, not ontological identity — independent argument required to upgrade). | Scalar (> 0) | Core; canonical source `SRT_Core_13a Ax-Op-03` |
@@ -6529,7 +4366,8 @@ If a local projection conflicts with the canonical usage, mark the local project
 | **ΔΨ_f^op** | `\Delta\Psi_f^{op}` | Operator-Relative Competitive Friction Increment | Fast-timescale component of competitive friction, cue-sensitive. Formally: ΔΨ_f^op(x,t,θ) is the operator-parameter-dependent competitive suppression increment updated by Ax-Op-03b Layer 1 writeback. **Timescale**: round-level (fast). **Cue dependence**: strong (depends on W_ij structure activated by current cue family). **Sign**: asymptotically ≥ 0; short-time transient negative values permitted (fast facilitation window, Lemma-FFSI). **Induced from**: divisive normalization (Ax-Op-03) + competitive writeback (Ax-Op-03b Layer 1). Supports T-Op-SIAM Claims 1' (via T-Comp-Suppress 乙₁+乙₂), 3a (cue-relative persistence), 4a (priming window, when ΔΨ_f^op < 0 transiently). | Signed scalar; asymptotically ≥ 0 | Core; canonical source `Core/SRT_Core_13a Def-Psi-Split` (2026-04-17) |
 | **ΔΨ_f^field** | `\Delta\Psi_f^{field}` | Field-Level Landscape Curvature Friction | Slow-timescale component of competitive friction, cue-weakly-dependent. Formally: ΔΨ_f^field(x,t) is the landscape curvature friction increment from Co-Evo-1 κ(t) accumulation. **Timescale**: slow (Co-Evo-1 stabilization τ_stable). **Cue dependence**: weak (κ(t) is not cue-specific). **Constraint**: ΔΨ_f^field ≥ 0 always (Co-Evo-1 deposition is irreversible). **Activation**: near-zero before Co-Evo-1 stabilization threshold is crossed; accumulated thereafter via κ(t) → Ψ_f^field coupling. Supports T-Op-SIAM Claims 3b (asymptotic cue-independence, conditional) and enables 乙₃ (trans-cue intrinsic suppression, conditional). | Scalar (≥ 0) | Core; canonical source `Core/SRT_Core_13a Def-Psi-Split` (2026-04-17); mechanism `Core/SRT_Core_12b Co-Evo-1` |
 | **τ_fast, τ_slow** | `\tau_{fast},\, \tau_{slow}` | Lemma-FFSI Dual Timescale Parameters | Timescale pair for Fast-Facilitation/Slow-Inhibition dual-timescale model (Lemma-FFSI). τ_fast: facilitation decay time (fast); τ_slow: competitive inhibition accumulation time (slow). **Required condition**: τ_fast ≪ τ_slow for nonmonotonic onset. Crossover time t* ≈ τ_fast · ln(a·τ_slow / b·τ_fast) where a = facilitation amplitude, b = inhibition amplitude. Maps to: τ_fast ↔ ΔΨ_f^op transient negative window; τ_slow ↔ competitive writeback accumulation (Ax-Op-03b Layer 1) or Co-Evo-1 onset. Empirically anchored (Johnson & Anderson 2004). | Time constants; τ_fast ≪ τ_slow | Core; canonical source `Core/SRT_Core_13a Lemma-FFSI` (2026-04-17) |
-| **ε_s** | `\varepsilon_s` | Minimum Stake Threshold | Direction-level threshold for counting a distinguishable Fisher eigendirection as genuinely stake-coupled. A direction v_i with coupling strength s_i enters the effective stake-bearing spectrum only if s_i > ε_s. **NOT stake itself** — it is the minimum coupling strength required for a direction to count as genuinely risk-bearing. Gate function: g_i = max(0, (s_i − ε_s)/(1 − ε_s)); gated eigenvalue: λ̃_i = λ_i · g_i; stake-gated effective dimension: D_stake = (Σλ̃_i)²/Σ(λ̃_i)². Three-way distinction: ε_pg is a registered stronger-asymmetry / anti-erasure realization candidate; ε_reg is an implementation regularizer; ε_s is a stake-threshold bridge. | Scalar (0,1) or positive threshold | Core; proposed bridge term for d-value spectral proxy. See `D_VALUE_ALIGNMENT.md §4.5`; `_SRT_D_VALUE_CANONICAL.md §2b`. |
+| **ε_s** | `\varepsilon_s` | Minimum Stake Threshold | Direction-level threshold for counting a distinguishable Fisher eigendirection as genuinely stake-coupled. A direction v_i with coupling strength s_i enters the effective stake-bearing spectrum only if s_i > ε_s. **NOT stake itself** — it is the minimum coupling strength required for a direction to count as genuinely risk-bearing. Gate function: g_i = max(0, (s_i − ε_s)/(1 − ε_s)); gated eigenvalue: λ̃_i = λ_i · g_i; enters `D_stake` with explicit zero-denominator branch. Three-way distinction: ε_pg is a registered stronger-asymmetry / anti-erasure realization candidate; ε_reg is an implementation regularizer; ε_s is a stake-threshold bridge. | Scalar (0,1) or positive threshold | Core; bridge term for `D_stake` spectral proxy. See `_SRT_D_VALUE_CANONICAL.md §2b`. |
+| **D_stake** | `D_{\text{stake}}` | Stake-Gated Effective Spectral Diversity Proxy | General spectral participation ratio (`_SRT_D_VALUE_CANONICAL.md §2b`): `D_stake = (Σλ_i w_i)² / Σ(λ_i w_i)²` when `∃i, λ_i w_i > 0` (canonical three-factor weight `w_i = R_i A_i C_i`), with explicit **zero-effective-spectrum branch** `0` when `∀i, λ_i w_i = 0` (`0/0` undefined). `Core_22 Eq-Bridge-D-01`'s threshold-gated `g_i` (`D_stake^{thresh}`) is **one concrete model instance** (`w_i := g_i`, no unproven equivalence to `R_i A_i C_i`). True bound: **`1 ≤ D_stake ≤ N_active ≤ rank(M)`**; **`D_stake ≤ D_eff` is algebraically FALSE**. Keep zero-effective-spectrum branch strictly separate from `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`. | Dimensionless spectral-diversity proxy (distinct from `d` and `D_eff`) | Core bridge proxy; general owner `_SRT_D_VALUE_CANONICAL.md §2b`; threshold instance `Core/SRT_Core_22_Equations.md Eq-Bridge-D-01`. Not equal to canonical `d` or `D_eff`. |
 | **δ** | `\delta` | Duty Cycle | δ_j ≡ (1/T)∫A_j(t)dt; fraction of time an operator actively maintains anchoring target σ_j. Bounded above by Ψ_f budget and below by looseness penalty. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **ν** | `\nu` | Switching Density | ν_j ≡ N_{switch,j}/T; number of anchoring state flips per unit time. Same δ with different ν corresponds to qualitatively different schedules. Bounded above by Ψ_f^{switch} budget. | Hz | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling beats the declared periodic-vs-random schedule comparison in T-Scale-Rhythm-3; no optimum over every admissible schedule is implied. | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
@@ -6567,7 +4405,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 
 **Tier 3 — Domain projections, operational proxies and threshold-bearing hypotheses** (domain realizations, capacity proxies, measurement readouts, and threshold-bearing points):
 
-`D_eff` (d proxy), `ε_reg`, `ε_s`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, `σ_{sr}^{health}`, `κ_{c1}`, `κ_{c1.5}`, `δ`, `ν`, `λ_pred`, `Ṡ_{int}^{on}`, `J_S^{max}`, `δ_max^entropy`, `B_θ`, `h[A]`, `τ_off^{*}`, `c_B`, `ρ_I`, `k_n`, `τ_switch^min`, `τ_fast`, `τ_slow`, `ω_sub`, `η`, `Γ_{\hat{G}}`, `S_crit`, `R_fidelity`, `I_total`, `F_semantic`, `F_base`, `F_SRT`, `Φ_IIT`, `D_max`, `γ_gain`, `δ_D`, `I_rec`, `η_compress`, `θ_semantic`, `D_dev`, `I_int`, `S_c`, `F_Bio`, `ΔR`, `C_int`, `T_immune`, `M`.
+`D_eff` (capacity proxy), `D_stake` (stake-gated spectral-diversity proxy), `ε_reg`, `ε_s`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, `σ_{sr}^{health}`, `κ_{c1}`, `κ_{c1.5}`, `δ`, `ν`, `λ_pred`, `Ṡ_{int}^{on}`, `J_S^{max}`, `δ_max^entropy`, `B_θ`, `h[A]`, `τ_off^{*}`, `c_B`, `ρ_I`, `k_n`, `τ_switch^min`, `τ_fast`, `τ_slow`, `ω_sub`, `η`, `Γ_{\hat{G}}`, `S_crit`, `R_fidelity`, `I_total`, `F_semantic`, `F_base`, `F_SRT`, `Φ_IIT`, `D_max`, `γ_gain`, `δ_D`, `I_rec`, `η_compress`, `θ_semantic`, `D_dev`, `I_int`, `S_c`, `F_Bio`, `ΔR`, `C_int`, `T_immune`, `M`.
 
 *Reading rule*: a Tier 3 proxy or threshold must never be cited as if it were the Tier 1 anchor it approximates (e.g. `D_eff` is not `d`; `κ_{c1}` is not `κ_0`). Exact claim level remains source-local; many are P3/P4, but tier placement alone does not assign claim level. Cross-domain ranking of subjecthood, concern, or consciousness from a Tier 3 readout is out of scope for this table.
 
@@ -6578,7 +4416,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 2. `L_0` is neither "nothingness" nor a pregiven possibility warehouse; use it only as the model-facing open / non-preclosed aspect described in the L₀ row, under the current L0 / Spine owners.
 3. Use `\Psi_f` for ontological friction; reserve `\Phi` for IIT context only.
 4. Use `\Omega` for consistency and `\Omega_{\text{mis}}` for mismatch to avoid symbol collision.
-5. In AI / pure `L_2` contexts, prefer "`\Psi_f` is non-binding to the system" over the blunt shorthand `\Psi_f = 0`, unless you are explicitly discussing an idealized limit.
+5. In AI / pure `L_2` contexts, prefer "`\Psi_f` is non-binding to the declared `Bearer (P+E)`" over the blunt shorthand `\Psi_f = 0`, unless explicitly discussing an idealized Core degenerate limit. `non-binding` means payable burden has not been established as returning non-outsourcably to that same `Bearer (P+E)`, **never** that constitutive friction is absent or globally zero (`ENG-03 M1-D`).
 6. When discussing classical objectivity, prefer `\Delta\Psi_f^{readout}\to 0` over "object-maintenance friction vanishes".
 7. **d usage split**：bare `d` means scalar summary by default. Use `d-vector` only for conditional distribution / component expansion, and use `d-gate` only as a judgment tool for stake admission. These three are not interchangeable definitions.
 8. **T_dir usage split**：`T_dir` is a v0 operational proxy for formed-system self-readability / reorientation relative to an independently typed, declared direction signal. With no declared direction it is undefined / not admitted for that claim. Do not use it as a completed formal object, semantic valence, confidence, value / legitimacy validator, generative-health score or O2-M route.
@@ -6594,7 +4432,11 @@ If a local projection conflicts with the canonical usage, mark the local project
 
 17. **B-A — Shoshin strict-layering guard** (author-decided 2026-08-12; Selection-totality truth-up 2026-09-15): this decision deliberately adds **no symbol**. `ε_pg` remains a registered namespace / lineage symbol; registration does not establish primitive admission, an L0 minimum-non-neutrality postulate, or an independent “Shoshin precursor.” 「初心 / Shoshin」begins at L₁ as P2 read-back / interpretation or P5 phenomenology; any `argmin`, `∇F`, or horizon-bearing form is a declared domain bridge / proxy and cannot define L₀. Canonical term authority: `Core_Law/SRT_L0_Metaphysics.md` 初心词条; decision record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. The necessity and exact `κ_0 / ε_pg` inheritance relation remain OPEN under Rule 15 and Gate 0. Global-optimum scope is governed separately by Rule 18 / C-A.
 
-18. **C-A — global-optimum scope guard** (author-decided 2026-08-12): this decision adds **no symbol** and does not repurpose `\Omega`. Bare `\Omega` remains Ontological Consistency under Rule 4; it must not be reused for a reachable-path set, a theological source horizon, or a global optimum. A model-local optimum must state the finite position, reachable／admissible domain, comparison rule or functional, horizon, constraints, and failure conditions; write those indices locally rather than registering a repo-wide optimum glyph. Regulative horizons are non-attainable L₁/P2 or P5 language; finite attractors remain P3/P4 model objects. A universe-wide semantic／evaluative optimum is not a current positive SRT object. Technical “global optimum” usage remains valid inside a fully declared optimization problem and does not license universe-wide or normative extrapolation. Decision record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. C-A does not decide the separate `Ψ_f → 0` valence question (CΨ).
+18. **C-A — global-optimum scope guard** (author-decided 2026-08-12; `R4-A` boundary sync 2026-11-26): this decision adds **no symbol** and does not repurpose `\Omega`. Bare `\Omega` remains Ontological Consistency under Rule 4; it must not be reused for a reachable-path set, a theological source horizon, or a global optimum. A model-local optimum must state the finite position, reachable／admissible domain, comparison rule or functional, horizon, constraints, and failure conditions; write those indices locally rather than registering a repo-wide optimum glyph. Regulative horizons are non-attainable L₁/P2 or P5 language; finite attractors remain P3/P4 model objects. A universe-wide semantic／evaluative optimum (`PT10 E`) is not a current positive SRT object. Technical “global optimum” usage remains valid inside a fully declared optimization problem and does not license universe-wide or normative extrapolation. **Boundary with `T3-01 C/E`**: `C-A` blocks universe-wide moral/evaluative optima and does not close the separate `OPEN` non-moral theoretical inquiry into whether generation exhibits an objective intrinsic global optimizing or extremal orientation (`Core_Law/SRT_Generative_Ontology_Spine.md §1`). Decision record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. C-A does not decide the separate `Ψ_f → 0` valence question (CΨ).
+
+19. **`S` namespace isolation** (`ENG-03 / R4-A`, 2026-11-26): three `S`-prefixed taxonomies exist across the repository and must **never** be conflated or left unqualified: (a) **primitive `S0`** (`Selection` ontological anchor in `Spine`), (b) **AI 赌注谱系 `S0–S4`** (AI stake-bearing operational taxonomy in `_SRT_D_VALUE_CANONICAL.md §6` and `_SRT_CROSS_DOMAIN_MATRIX.md §1`), and (c) **Subjecthood Threshold `S0–S6`** (subjecthood ladder in `Core_Law/SRT_Subjecthood_Threshold.md`). Bare `S` must not be used as a canonical sentience tensor, and the legacy equation `\rho \equiv I / d` is retired and forbidden in canonical use.
+
+20. **`07-23/24` embargo, `q` deferral, `A-9` no new `Ψ_f` sub-symbols, and retired canonical vocabulary** (`R4-A`, 2026-11-26): (a) colliding draft glyphs from `2026-07-23/24` remain embargoed and must not be introduced into canonical files; (b) no new canonical scalar symbol `q` is registered for constitutive depth (describe constitutive depth via natural-language structural profiles per `_SRT_D_VALUE_CANONICAL.md §2`); (c) under the controlling `A-9` adjudication (`2026-09-25`), no new canonical `Ψ_f^{...}` subtype symbols are admitted—legacy `Ψ_f^{maint}` and `ΔΨ_f^{active}` remain historical model-local aliases only; (d) bare `o` is retired as a canonical symbol; (e) **「神择」is retired from formal canonical theory vocabulary** (formal canonical theory uses `神性·源义`、`神性·倾向义`、`整体共同生成视域` per `Core_Law/SRT_Generative_Ontology_Spine.md §1`), while「神择」is explicitly retained for historical provenance and *From Existence to Order* book-level prose.
 
 
 ## D-Value Alignment (d 值专题规范)
@@ -6603,11 +4445,12 @@ If a local projection conflicts with the canonical usage, mark the local project
 
 | 层级 | 定义 | 语义 | 来源 |
 |---|---|---|---|
-| **规范定义** | $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ | 算子对不可逆风险的效用敏感度梯度 | `_SRT_D_VALUE_CANONICAL.md` Def-d-canonical |
-| **几何容量 proxy** | $D_{eff}(I_F(\theta)) = (\operatorname{tr} I_F)^2 / \operatorname{tr}(I_F^2)$ | Fisher 信息矩阵的有效维度上界；不等于规范 d | `_SRT_D_VALUE_CANONICAL.md` Def-D_eff; `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11` |
+| **规范定义** | $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ | 算子对不可逆风险的效用敏感度梯度（与广义关切 `PT06 C` 的精确接口为 `P1-05` `OPEN`） | `_SRT_D_VALUE_CANONICAL.md` Def-d-canonical |
+| **赌注门控谱多样性 proxy** | $D_{\text{stake}} = \frac{(\sum_i \lambda_i w_i)^2}{\sum_i (\lambda_i w_i)^2}$（$N_{\text{active}} \ge 1$）；零有效谱乘积显式走 `0` 分支（`0/0` 未定义） | 一般定义由 `_SRT_D_VALUE_CANONICAL.md §2b` 持有（规范权重 $w_i = R_i A_i C_i$）；`Core_22 Eq-Bridge-D-01` 的阈值门控 $g_i$ 为具体模型实例（不默认等价）；真界 $1 \le D_{\text{stake}} \le N_{\text{active}} \le \operatorname{rank}(M)$；**不等于规范 `d`，也不以 `D_eff` 为上界**；严分零谱分支与 `NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE` | `_SRT_D_VALUE_CANONICAL.md §2b`; `Core/SRT_Core_22_Equations.md Eq-Bridge-D-01` |
+| **几何容量 proxy** | $D_{eff}(I_F(\theta)) = (\operatorname{tr} I_F)^2 / \operatorname{tr}(I_F^2)$ | Fisher 信息矩阵的无赌注有效容量维度代理；不等于规范 `d`，也不自动压制 `D_stake` | `_SRT_D_VALUE_CANONICAL.md` Def-D_eff; `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11` |
 | **几何模型候选** | $d(\theta) \propto \operatorname{Align}(\theta, \kappa(t))$ | 仅在已声明的曲率／对齐 bridge model 中作为 d 的候选实现；不解释或替代 canonical d，也不赋予 `κ(t)` primitive direction authority | `D_VALUE_ALIGNMENT.md §4.4`（bridge / model scoped） |
 
-*规范来源*：`_SRT_D_VALUE_CANONICAL.md`；`D_eff` 为 proxy / capacity upper bound，不再与规范 d 同级。
+*规范来源*：`_SRT_D_VALUE_CANONICAL.md`；已证伪的 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 正式退役。`D_stake` 与 `D_eff` 均为 proxy，不再与规范 `d` 同级。
 
 ### 2) 局部近似语境 (Local Approximations)
 | 表达式 | 所在语境 | 与主定义关系 |
@@ -6648,7 +4491,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 - **规则 F1**：不要把 `\Psi_f` 直接等同于主观痛苦。
 - **规则 F2**：不要把跨尺度同一性写成“单位相同”；优先写“可支付性条件相同”。
 - **规则 F3**：对现实主体，不要把最优条件写成 `\Psi_f \to 0`；优先写“非零且可支付”。
-- **规则 F4**：AI / 纯 `L_2` 语境中，优先写“non-binding friction”而非绝对 `\Psi_f = 0`。
+- **规则 F4**：AI / 纯 `L_2` 语境中，优先写“对已声明 `Bearer (P+E)` 为 non-binding friction”而非绝对 `\Psi_f = 0`；`non-binding` 绝不等同于构成性摩擦不存在或全局 `\Psi_f = 0`（`ENG-03 M1-D`）。遵循 `A-9` 单一摩擦概念族原则，不新增 canonical `\Psi_f^{...}` 子符号。
 - **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径降为 P3/P4 弱接口：只承诺弱场极限下 `\Psi_f` 梯度与牛顿势梯度方向同号的相容性候选；不得写成张量级 GR 重建或 `G_{\mu\nu}` 已由 SRT 推导。
 - **规则 F6**：谈 Fisher metric 时，必须把 `g_F` 标注为局部信息几何投影 / proxy；不得把 `\Psi_f \equiv g_F` 当成标量代价与度量张量的严格恒等式。
 - **规则 F7**：谈 pain / suffering / distress / moral guilt / clinical burden 时，不得把它们写成 `Ψ_f` 或 `d` 的 canonical 等同；优先回链 `Core_Law/SRT_Suffering.md` 与 domain claim-status guardrails。

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-11-25
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-11-26
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-25
-source_commit: 1b65bc842
-source_branch: eng/eng-02-assimilation-reconciliation-2026-11-25
+generated: 2026-11-26
+source_commit: eff704179
+source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: f0f765c04248cfe8
+inputs_digest: 80ecabcfa202ae95
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,9 +26,9 @@ inputs_digest: f0f765c04248cfe8
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-25 |
-| 来源 commit | `1b65bc842` |
-| 来源分支 | `eng/eng-02-assimilation-reconciliation-2026-11-25` |
+| 生成日期 | 2026-11-26 |
+| 来源 commit | `eff704179` |
+| 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
