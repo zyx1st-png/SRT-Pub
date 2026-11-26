@@ -505,16 +505,19 @@ $$\kappa_{tan} \downarrow \;\to\; \Psi_f \uparrow \;\to\; d\text{-value} \downar
 
 *注：本定义为 FEP 精度加权在 SRT 三域模型的形式化映射，身份降级自原 Ax-Op-08b，依赖 Ax-Core-A4 与 Eq-Evo-02 推导。*
 
-### Ax-Op-EH: Epistemic Horizon (认知视界公理)
-**P3 model definition（`R4-A / R4-B2` 数学与量纲修正：严分 `D_eff` 容量代理与规范 `d`）**: 在声明的统计/信道模型中，对非负且非全零谱的参数 Fisher 信息矩阵 $I_F(\theta)$（$\lambda_i \ge 0,\; \exists i,\ \lambda_i > 0$；全零谱 $0/0$ 未定义），算子可可靠分辨的独立方向容量由无赌注谱参与率代理 `D_eff` 给出：
-$$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \propto D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}, \qquad 1 \le D_{\text{eff}}(I_F(\theta)) \le \operatorname{rank}(I_F(\theta))$$
+### Ax-Op-EH: Epistemic Horizon (认知视界候选接口)
+**P3 conditional channel-model hypothesis（`R4-A / R4-B2 P1-03` 数学修正）**: 有限参数算子在单次观测或有限时间窗内可分辨的状态与信息存在结构性视界。需要严格区分两个不同的数学量：
+1. **无赌注几何方向容量代理 `D_eff`**（对非负且非全零谱的参数 Fisher 信息矩阵 $I_F(\theta)$，$\lambda_i \ge 0,\; \exists i,\ \lambda_i > 0$；全零谱走 $0/0$ 未定义显式零谱分支）：
+$$D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}, \qquad 1 \le D_{\text{eff}}(I_F(\theta)) \le \operatorname{rank}(I_F(\theta))$$
+2. **声明信道模型的信息容量 $C_{\Delta t}(\theta)$（窗口容量，单位：bits）或容量速率 $\dot{C}(\theta)$（单位：bits/s）**：
+   - **`P1-03` 数学边界**：**`D_eff` 谱参与率本身不决定信息传输速率或信道容量**（例如 $M_1 = \operatorname{diag}(1,1)$ 与 $M_2 = \operatorname{diag}(100,100)$ 同为 $D_{\text{eff}} = 2$，但局部统计辨识精度与信噪比显著不同）。若某具体模型进一步写成 $\dot{C}(\theta) \propto D_{\text{eff}}(I_F(\theta))$ 或 $C_{\Delta t}(\theta) = \Phi_{\text{ch}}(I_F(\theta), \Sigma_{\text{noise}}, \Delta t)$，该比例关系属于**独立声明的附加信道模型假设**（须给定各方向信噪比、噪声协方差、读出带宽与时间窗），而非由 `D_eff` 或量纲换算自动推导的数学定理。
+   - **已退出的旧等同**：旧版 `d(θ) = D_eff(I_F(θ))` 已在 `R3-06 D1 / R4-A` 正式证伪并退役（规范 `d = ||∂U/∂S||` 与 `D_eff` 量纲与职责均不同）。
 
-> **`R4-A / R4-B2` 强制勘误（废除旧式 `d(θ) = D_eff(I_F(θ))`）**：旧版直接写出 `d(θ) = D_eff(I_F(θ))` 并引用 `Eq-IT-B` 将规范 `d` 等同于 Fisher 有效维度，已在 `R3-06 D1 / R4-A` 中正式证伪并退役（`_SRT_D_VALUE_CANONICAL.md §1, §2b, §11`、`Core_21c P3-B11`）。`D_eff(I_F(θ))` 是无量纲、无赌注几何容量 proxy（不需要 `Bearer (P+E)` 准入）；规范 `d(x) = ||∂U/∂S||` 是声明 `Bearer (P+E)` 模型下的风险敏感梯度范数，二者量纲与职责均不同。速率 $\dot{I}$ 与无量纲 `D_eff` 之间亦须由具体信道模型声明单位换算系数（时间尺度与单方向比特容量）。
+**条件熵下界（精确 Shannon 形式）**：设声明信道模型中有限输入随机变量为 $X$、算子输出或读出为 $Y$，一般恒等式为 $H(X \mid Y) = H(X) - I(X; Y)$。当该信道在窗口 $\Delta t$ 内满足容量上界 $I(X; Y) \le C_{\Delta t}(\theta)$（若以速率 $\dot{C}(\theta)$ 表述，则须经时间窗积分或相容量纲转换 $C_{\Delta t}(\theta) = \int_0^{\Delta t} \dot{C}(\theta)\,dt$）时，有：
+$$H(X \mid Y) \;\ge\; H(X) - C_{\Delta t}(\theta)$$
+**输入分布限定**：仅当模型额外声明输入分布达到最大熵 $H(X) = H_{\max}$（例如有限支撑上的均匀分布）时，才可将上式写作 $H(X \mid Y) \ge H_{\max} - C_{\Delta t}(\theta)$；不得在未声明输入分布时直接以 $H_{\max}$ 替代实际输入熵 $H(X)$。
 
-在声明的离散/有限信道模型中，剩余不确定性受限于该信道容量上界 $\mathcal{C}(\theta)$（$H_{\max} \equiv \log_2 \dim(L_1)$）：
-$$H(L_0 | \hat{G}_\theta) \geq H_{\max} - \mathcal{C}(\theta)$$
-
-* **Implication**: 在该信道模型中，$D_{\text{eff}}(I_F(\theta))$ 与 $\mathcal{C}(\theta)$ 可作为信息分辨带宽上界候选，既不等于规范 `d`，也不定义 primitive Selection 或 consciousness 上限。**类比注记**：量子 Heisenberg 不确定性来自非对易算符，而此处来自有限参数统计流形的 Fisher 维度与信道容量上界——二者仅为结构类比，非机制等价。
+* **Implication**: 认知视界保留为有限具身系统信息分辨边界的 `P3` 研究方向：`D_eff` 刻画可分辨有效方向数，具体信道容量与条件熵下界须由声明噪声/输入/时间窗模型独立建立，二者均不等同于规范 `d`，也不定义 primitive Selection 或 consciousness 上限。量子 Heisenberg 不确定性来自非对易算符，此处来自有限信道容量边界——仅为结构类比，非机制等价。
 * **Cross-ref**: Ax-Op-02（注意力分解）；`_SRT_D_VALUE_CANONICAL.md Def-D_eff, §11`；`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`；`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`。
 
 ### T-Op-EH-1: Triadic Cognitive Sweet Spot（认知三元甜点区）
