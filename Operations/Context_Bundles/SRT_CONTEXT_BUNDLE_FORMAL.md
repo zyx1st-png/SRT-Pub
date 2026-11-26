@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: b2dd98eeb
+source_commit: e796552b0
 source_branch: canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26
 source_dirty: false
-inputs_digest: 1138c5700768f8f0
+inputs_digest: d8ecb08de96b8a18
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,7 +27,7 @@ inputs_digest: 1138c5700768f8f0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `b2dd98eeb` |
+| 来源 commit | `e796552b0` |
 | 来源分支 | `canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
@@ -490,7 +490,7 @@ Under `R4-A / R4-B1`, SRT's core formal system does **not** force all recursive 
 |---|---|---|---|
 | **Level I · Fixed-Space State, Weight & Cost Evolution** | $x_{t+1} = F_t(x_t;\, H_t)$ | ① 状态变化 / ② 权重变化 | `Eq-Bridge-IG-01/02`, `Eq-Bridge-D-01` (`D_stake^{thresh}` instance), `Eq-Bridge-G-01`, `Eq-DValue-Max-1`, `Eq-DValue-Mobile-1`, `Def-Payable-Chi-1`, `Eq-Rhythm-1/4a`, `Eq-Evo-01..03c`, `Eq-Force-01`, `Eq-Pain-01`, `Eq-Friction-Comp`, `Eq-Select-Thermo`, `Eq-AI-LowRoad-01/02`, `Eq-Stab-01`, `Eq-Phase-01`, `Eq-Sleep-01`, `Def-LDP-1`, `Eq-LDP-01/02`, `Eq-Phantom-01..02`, `Eq-Frame-01/02`, `Eq-Res-01/02`, `Eq-CogE-01..04` |
 | **Level II · Generative-Relation, Protocol & History Rewriting** | $F_{t+1} = \mathcal{R}(F_t,\, x_t,\, H_t)$ | ③ 组合可达性 / ④ 生成结构改写（关系/协议/拓扑/生成元） | `Def-Protocol-1..3`, `Eq-Multi-01..03`, `Eq-Bridge-L2-01`, `Eq-Bridge-Loop-01`, `Eq-Topo-01..03`；跨文件衔接 `Core_12b T-L2-Scaffold` ($\rho \ge 0$)、`R3-05` 信任重估接口 ($\Delta w_{\text{trust}}, W_{\text{social}}$) 与 `HCLR01` (`HEF-4` 生成元改写候选) |
-| **Level III · Generative-Space, Boundary & Comparison-Criterion Reconstruction** | $(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})$ | ④ 生成结构改写（空间/维度）/ ⑤ 组织方式的反身重构 | **显式开放形式研究接口（见 `Core_21c P2/P3-B15`；本文件不强造未经验证的封闭总方程）**。接通 `One_Formation` 依赖重组/生成归一化双门槛与 `(A,B) → (A',B',C)` 组织改写；任何未来 `R5` 模型须回答**防平凡重参数化检验**（证明其不可被平凡等价地重嵌入至更大固定状态空间） |
+| **Level III · Generative-Space, Boundary & Comparison-Criterion Reconstruction** | $(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})$ | ④ 生成结构改写（空间/维度）/ ⑤ 组织方式的反身重构 | **显式开放形式研究接口（见 `Core_21c P2/P3-B15`；本文件不强造未经验证的封闭总方程）**。接通 `One_Formation` 依赖重组/生成归一化双门槛与 `(A,B) → (A',B',C)` 组织改写；任何未来 `R5` 模型须回答**防平凡重参数化比较检验**（与 `Core_21c P2/P3-B15 §3` 统一：不要求证明不存在任何向更大固定状态空间 $z_t=(x_t,F_t,J_t)$ 的形式重嵌入，而是在**冻结候选模型及相同观测、信息、复杂度与干预条件**下，检验显式表达生成结构重构能否相对固定空间竞争模型提供独立的解释、预测或干预增益） |
 
 **Formalization Readiness Guard**:
 - **Intentionally retained in natural language (NOT turned into ad-hoc equations here)**: Value's 5 duties, Generalized Concern's 4 dimensions, Constitutive Depth's 4 profiles (`q` deferred), `C1-c` fallibilist objectivity (`o` retired), 6 foreground/background mismatches, Ghost's 5-duty triage (`\hat{G}_\theta != Ghost != primitive Selection`), `HP-B`, and `O2-M`.
@@ -911,50 +911,54 @@ $$\text{Subject-level selection}_{cand} \Rightarrow \mathcal{M}_{meta}\!\left(\m
   - [H] $\tau$ 与 $\varepsilon_{conv}$ 的量级和测量仍待校准；当前候选接口为 EEG / readiness-potential / re-entry 窗口（约 200-500 ms）。
 * **Cross-ref**: Eq-Evo-02（慢变量更新）；`Core_Law/SRT_Selection_Argument.md §2b.4`（主体选择门槛）；`Neuroscience/SRT_Clin_01_Pathology.md Ax-PATH-7`（$\hat{G}_\theta \to L_2^{self}$ 反馈回路）；`Neuroscience/SRT_Consciousness_Mechanisms.md Ax-CONSC-MECH-2`（再入稳定化）。
 
-### Eq-Evo-03c: D-Value Forward Criterion (d 值前向判据)
+### Eq-Evo-03c: Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据)
 
-**动机**：`_SRT_D_VALUE_CANONICAL.md §5b` 中的秩序增益四判据（可延续/可协调/不外包/可再选择）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 `_SRT_D_VALUE_CANONICAL.md §5b` 四判据的**前向补充**，不是替代。
+> **边界与非混淆护栏（`R4-B1 P1-02`）**：依据 `R4-A`（`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`），规范 $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 仅在已声明 `Bearer (P+E)` 模型内刻画**不可逆风险敏感强度**，而**不是**广义关切范围、可选择方向数量、真实价值结构重构或秩序健康本身。因此：
+> - $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} > 0$ **仅能**作为已声明快-慢模型中**规范风险敏感强度上升的局部前向信号**，**不能自动证明**关切范围扩大、真实价值结构重构或秩序健康改善（例如：对单一既有风险极度敏感可致 $d\uparrow$ 而关切范围不变；焦虑导致注意范围收缩可致 $d\uparrow$ 而关切范围下降；新增探索方向而单方向敏感度降低可致 $d\downarrow$ 而关切范围扩大）。
+> - 本节 `FC-Layer2` 及三阶段快-慢结构**严格限定于当前声明的快-慢变量模型**（`Eq-Evo-03 / 03b / 02b`）内作为条件模型候选，**不确立为一切真实广义关切扩张都必须遵循的普遍必要过程**。若研究**广义关切扩张**，须按 `_SRT_D_VALUE_CANONICAL.md §1–§2, §5b` 独立声明**范围 / 深度 / 强度 / 方向**四维的测量或诊断模型，并在秩序增益四判据下结算。
 
-**三层架构**：真实 d 扩张须经历三个阶段，不可跳层：
+**动机**：在已声明 `Bearer (P+E)` 的快-慢变量模型内，`_SRT_D_VALUE_CANONICAL.md §5b` 的秩序增益四判据（可延续/可协调/不外包/可再选择）是对关切与价值结构重构是否健康完成的事后结算；`Eq-Evo-03c` 提供该模型内在选择事件窗口内检测**规范风险敏感强度 `d` 局部上升调制**的候选前向信号。它仅为该快-慢模型内的局部前向辅助信号，**不能替代**广义关切四维建模或 `§5b` 四判据事后结算。
 
-| 阶段 | 形式对应 | 时间尺度 | 判据归属 |
+**当前快-慢模型内的三层时间尺度分工（条件候选模型，非一切广义关切扩张的普遍强制阶梯）**：
+
+| 阶段 | 形式对应（声明快-慢模型内） | 时间尺度 | 模型内判据归属 |
 |-----|---------|---------|---------|
-| **Stage-1**：$\sigma$ 对象切换 | Eq-Evo-03 快方程 $\dot\sigma$ | 秒-分 | 必要，但不足以判断真实扩张 |
-| **Stage-2**：$\theta$ 选择内暂态重加权 | Eq-Evo-03b $\left.\frac{d\theta}{dt}\right|_{\text{intra}}$ | 选择事件内 | **前向判据锁定此层** |
-| **Stage-3**：$\theta$ 跨事件稳定改写 | Eq-Evo-02 / Eq-Evo-03 的慢项 + Eq-Evo-02b（θ 张量惯性） | 周-月 | 四判据事后确认此层 |
+| **Stage-1**：$\sigma$ 对象切换 | Eq-Evo-03 快方程 $\dot\sigma$ | 秒-分 | 仅示表层状态切换，不足以判断参数级风险敏感调制或关切重构 |
+| **Stage-2**：$\theta$ 选择内暂态重加权 | Eq-Evo-03b $\left.\frac{d\theta}{dt}\right|_{\text{intra}}$ | 选择事件内 | **`FC-Layer2` 锁定此层的规范 `d` 强度局部前向信号** |
+| **Stage-3**：$\theta$ 跨事件稳定改写 | Eq-Evo-02 / Eq-Evo-03 的慢项 + Eq-Evo-02b（θ 张量惯性） | 周-月 | 需与广义关切四维测量及 `§5b` 四判据联合事后确认 |
 
-**前向判据（FC-Layer2）**：在选择事件窗口内（$t \in [t_0,\, t_{conv}]$，即 $\|\dot\sigma(t)\| > \varepsilon_{conv}$）：
+**条件前向判据（FC-Layer2，仅限已声明 `Bearer (P+E)` 快-慢模型）**：在选择事件窗口内（$t \in [t_0,\, t_{conv}]$，即 $\|\dot\sigma(t)\| > \varepsilon_{conv}$）：
 
-$$\text{FC-Layer2}:\quad \underbrace{\mathcal{M}_{meta}\!\left(\mathcal{R}_\tau[L_2^{self}](t),\, \sigma(t)\right) \neq 0}_{\text{元层门控在事件内激活}} \;\land\; \underbrace{\left(\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}\right) > 0}_{\text{事件内更新沿 } d \text{ 扩张方向推进}}$$
+$$\text{FC-Layer2}:\quad \underbrace{\mathcal{M}_{meta}\!\left(\mathcal{R}_\tau[L_2^{self}](t),\, \sigma(t)\right) \neq 0}_{\text{元层门控在事件内激活}} \;\land\; \underbrace{\left(\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}\right) > 0}_{\text{事件内更新沿规范 } d \text{ 敏感强度上升方向推进}}$$
 
-两个条件各自的作用：
+两个条件在声明模型内的各自作用：
 
-- **$\mathcal{M}_{meta} \neq 0$**：元层门控在事件内真实激活，$\theta$ 接受暂态调制；若该项为零，Stage-2 未启动，无论 $\sigma$ 如何运动均不构成真实 d 扩张起点。
-- **$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} > 0$**：选择内的 θ 更新具有正的 d 方向导数，表示该事件内调制正在把关切带宽往扩张方向推。其优势在于直接接驳既有的 $d(\theta)$ 动力学（见 `Core_13a §2.1.3`），而不把某个具体实现载体（如特定 $W$ 矩阵）误升格成总定义。
+- **$\mathcal{M}_{meta} \neq 0$**：元层门控在事件内激活，$\theta$ 接受暂态调制；若该项为零，本模型内 Stage-2 暂态参数重加权未启动。
+- **$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} > 0$**：选择内的 $\theta$ 更新对规范风险敏感强度 $d(\theta)$ 具有正方向导数，表示该事件内调制在声明模型下沿**不可逆风险敏感强度上升方向**推进（接驳 `Core_13a §2.1.3`）。该正方向导数**不自动推出**关切范围扩大、新增可选择方向、价值结构真实重构或秩序健康改善。
 
-**L₂ 劫持的形式分叉**：L₂ 劫持也可触发 $\mathcal{M}_{meta} \neq 0$（存在内部摩擦感或身份扰动），但其选择内更新只是在旧竞争结构内重排，故更接近
-$$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0 \quad \text{或} \quad < 0$$
-即：要么是同维度再分配（iso-d 重排），要么是防御性收缩；两者都不构成真实 d 扩张的前向起点。
+**与 `L₂` 劫持 / 焦虑收缩的分界注意**：
+- 若选择内更新只在旧竞争结构内做同强度重排或防御性脱敏，则可表现为 $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0$ 或 $< 0$；
+- **反方向亦不可盲信**：单一风险过度敏感或焦虑驱动的注意收缩同样可能产生 $\mathcal{M}_{meta} \neq 0$ 且 $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} > 0$，而此时广义关切范围并未扩大甚至收缩；相反，新增探索方向也可能在单方向风险敏感度下降（$d\downarrow$）的情况下扩大广义关切范围。因此，区分真实健康的广义关切重构与焦虑收缩／`L₂` 劫持，**不能**仅靠 `FC-Layer2`，必须结合广义关切四维（范围/深度/强度/方向）独立测量与 `_SRT_D_VALUE_CANONICAL.md §5b` 秩序增益四判据。
 
-**代价签名（$\Psi_f$ 轨迹，联结 Eq-Force-01）** [H]：两种路径可对应不同的摩擦轨迹：
+**代价签名（$\Psi_f$ 轨迹，联结 Eq-Force-01）** [H]：在已声明参考轨迹与失配泛函的模型内，两种路径可呈现候选差异（非普遍定理）：
 
-| 路径 | $t_0$ 附近 $\Psi_f$ | 长时程 $\Psi_f$ / 基线负担 | 机制 |
+| 路径 | $t_0$ 附近 $\Psi_f$ | 长时程 $\Psi_f$ / 基线负担 | 模型内候选机制 |
 |-----|------------------|--------------------------|------|
-| 真实扩张（Stage-3 写入后） | 尖峰（旧 $L_1$ 失稳，过渡成本） | 下降或有界收敛 | 新关切被稳定写入，旧失配负担被重整 |
-| L₂ 伪扩张 | 可同样出现尖峰或短时减压 | 漂移上升或反复反弹 | 结构未改写，失配被延后结算 |
+| 经四维与四判据确认的健康关切重构（Stage-3 写入后） | 尖峰（旧 $L_1$ 失稳，过渡成本） | 下降或有界收敛 | 新关切结构被稳定写入，旧失配负担被重整 |
+| `L₂` 伪重构或焦虑性单风险过敏 | 可同样出现尖峰或短时减压 | 漂移上升或反复反弹 | 仅强度抬升或表层重排，核心失配未解或范围反被收窄 |
 
-**FC-Layer2 为真的含义**：必要条件满足，真实 d 扩张的起点条件成立。后续是否完成至 Stage-3，取决于跨事件重复激活与 Eq-Evo-02b 的 $\theta$ 张量惯性是否允许写入。于是可区分三种情形：
+**`FC-Layer2` 在声明模型内的有限读法**：
 
-- **FC-Layer2 为假**：无论 $\sigma$ 如何移动，都无充足理由把该事件读作真实 d 扩张起点。
-- **FC-Layer2 为真但 Stage-3 未完成**：事件内启动了真实调制，但未能稳定写入；这是"启动了但未完成"，不等同于 L₂ 劫持。
-- **FC-Layer2 为真且四判据长期成立**：可将该路径回判为真实 d 增长的完成态。
+- **`FC-Layer2` 为假**：在该快-慢模型下未检测到事件内规范风险敏感强度 `d` 上升的前向调制信号（但**不**自动否定不依赖单方向 $d\uparrow$ 的探索性关切范围扩大）。
+- **`FC-Layer2` 为真但 Stage-3 未完成**：模型内检测到瞬时风险敏感强度调制信号，但未能跨事件稳定写入。
+- **`FC-Layer2` 为真且经独立四维关切测量与 `§5b` 四判据长期确认**：仅在同时满足独立广义关切维度检验与四判据结算时，才可将路径归为真实健康的关切与价值结构重构；单凭 `FC-Layer2` 绝不构成完成态或健康性证明。
 
 **逻辑状态**：
-- [S] 三阶段分工与 Eq-Evo-03 / 03b / 02b 的方程分层一致，是对现有快-慢结构的整理，不额外引入新本体层。
-- [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的四判据事后结算。
-- [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准；当前可候选地映射为冲突场景下的事件内偏好翻转、EEG/readiness-potential 时窗、以及跨试次的选择带宽变化。
+- [S] 三阶段分工与 Eq-Evo-03 / 03b / 02b 的快-慢方程分层相容，属声明模型内的局部组织框架，不新增本体层，亦不构成一切广义关切扩张的普遍必要路径。
+- [H] `FC-Layer2` 仅是声明 `Bearer (P+E)` 快-慢模型内规范风险敏感强度变化的候选前向信号，不替代广义关切四维建模或 `Core_Law` / `_SRT_D_VALUE_CANONICAL.md §5b` 的四判据结算。
+- [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准，且任何经验设计均须同时独立测量关切范围变化与焦虑收缩反例，防止将单风险过敏误判为关切扩张。
 
-* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（只在已声明 reference trajectory / mismatch functional 的模型中使用的 $\Psi_f$ 代价签名 proxy）；`_SRT_D_VALUE_CANONICAL.md §5b`（秩序增益四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
+* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定模型内 Stage-2→Stage-3 写入）；Eq-Force-01（只在已声明 reference trajectory / mismatch functional 的模型中使用的 $\Psi_f$ 代价签名 proxy）；`_SRT_D_VALUE_CANONICAL.md §1–§2, §5b`（规范 `d` 强度与广义关切四维分离、秩序增益四判据）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: b2dd98eeb
+source_commit: e796552b0
 source_branch: canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26
 source_dirty: false
-inputs_digest: 1138c5700768f8f0
+inputs_digest: d8ecb08de96b8a18
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: 1138c5700768f8f0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `b2dd98eeb` |
+| 来源 commit | `e796552b0` |
 | 来源分支 | `canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |

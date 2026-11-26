@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: b2dd98eeb
+source_commit: e796552b0
 source_branch: canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26
 source_dirty: false
-inputs_digest: 1138c5700768f8f0
+inputs_digest: d8ecb08de96b8a18
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 1138c5700768f8f0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `b2dd98eeb` |
+| 来源 commit | `e796552b0` |
 | 来源分支 | `canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
@@ -468,33 +468,33 @@ For substantive SRT answers:
 | `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L436` |
 | `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L443` |
 | `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L450` |
-| `Eq-Evo-03c` | D-Value Forward Criterion (d 值前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L476` |
-| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L523` |
-| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L535` |
-| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L540` |
-| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L554` |
-| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L568` |
-| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L578` |
-| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L598` |
-| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L603` |
-| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L610` |
-| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L617` |
-| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L621` |
-| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L627` |
-| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L637` |
-| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L643` |
-| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L648` |
-| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L706` |
-| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L713` |
-| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L749` |
-| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L755` |
-| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L764` |
-| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L776` |
-| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L787` |
-| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L856` |
-| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L867` |
-| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L876` |
-| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L883` |
+| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L476` |
+| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L527` |
+| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L539` |
+| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L544` |
+| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L558` |
+| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L572` |
+| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L582` |
+| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L602` |
+| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L607` |
+| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L614` |
+| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L621` |
+| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L625` |
+| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L631` |
+| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L641` |
+| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L647` |
+| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L652` |
+| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L710` |
+| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L717` |
+| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L753` |
+| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L759` |
+| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L768` |
+| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L780` |
+| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L791` |
+| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L860` |
+| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L871` |
+| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L880` |
+| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L887` |
 
 ### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
 
@@ -514,10 +514,10 @@ For substantive SRT answers:
 | `P2/P3-B09` | Strong Selection-Information Creation Equivalence | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L233` |
 | `P3/P4-B10` | Deep Time / Assembly Mass | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L262` |
 | `P3-B11` | `D_eff` Capacity Proxy, `D_stake` Spectral Participation Ratio & `d` Separation | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L278` |
-| `P2/P3-B12` | Information-Geometry / Complexity / Neural-Computational Hardening | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L297` |
-| `P2/P3-B13` | ST-A Structural Stabilisation and Generative Reselectability | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L326` |
-| `P2/P3-B14` | EX-A Anchoring-Persistence Readout | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L360` |
-| `P2/P3-B15` | Five Change Scales, Generative Structural Rewriting & Non-Triviality Frontier (`R4-B1`) | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L384` |
+| `P2/P3-B12` | Information-Geometry / Complexity / Neural-Computational Hardening | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L298` |
+| `P2/P3-B13` | ST-A Structural Stabilisation and Generative Reselectability | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L327` |
+| `P2/P3-B14` | EX-A Anchoring-Persistence Readout | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L361` |
+| `P2/P3-B15` | Five Change Scales, Generative Structural Rewriting & Non-Triviality Frontier (`R4-B1`) | `Core/SRT_Core_21c_Bridge_Hypotheses.md#L385` |
 
 ### 0.5.3 动态运行状态、未闭合张力与当前作者裁决检索指针
 
@@ -3763,7 +3763,7 @@ $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, 
 
 $$D_{\text{eff}}(M) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}, \qquad D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
 
-- **语义**：衡量算子或统计流形上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
+- **语义**：衡量非负且非全零谱矩阵（$\lambda_i \ge 0$ 且 $\exists i,\ \lambda_i > 0$；全零谱时 $0/0$ 未定义，不适用下界 $1$）上可可靠分辨方向数的参与率指数（`1 ≤ D_eff ≤ rank(M)`，`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`）。
 - **硬边界**：`D_eff` 是容量 proxy，**不等于** `Def-d-canonical`，亦**不普遍构成 `D_stake` 的数学上界**（旧式 `D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 已正式退出）。
 
 ### 价值的五项完整职责、机会三态与广义关切四维（`R3-06` 核心正面结构）
@@ -3848,22 +3848,25 @@ $$w_i = R_i \cdot A_i \cdot C_i \in [0, 1]$$
 
 ---
 
-## §5 常见误用与 `§5b` `d` 扩张的本体论意义（`C-A` 四义拆分）
+## §5 常见误用与 `§5b` 规范 `d` 强度、广义关切扩张与秩序增益（`C-A` 四义拆分）
 
 ### §5 常见误用
 
 1. **不得将 `d` 当作意识仪表或跨域主体性排名尺**（比较仅限同域同尺度或已声明归一化规则内）；
 2. **不得将“未准入 / `d ≈ 0`”等同于“不存在 / 无 `One` / 非主体”**；
-3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）。
+3. **不得将精神传统中的 `d → ∞` 字面化**（仅为不可达的渐近/规约方向）；
+4. **不得将规范风险敏感强度上升（$d \uparrow$）直接等同于广义关切范围扩大、价值结构重构或秩序健康改善**（见下 `§5b`）。
 
-### §5b `d` 扩张的规范声明（`C-A` 与秩序增益四判据）
+### §5b 规范 `d` 强度变化与广义关切扩张的严格分离（`C-A` 与秩序增益四判据）
 
-**`d` 的健康变化不是单调扩张，而是关切范围的可重组、可承担、可恢复、可再选择能力。**
+**规范 `d` 强度（$d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$）与广义关切扩张必须严格分离：健康的价值与关切演化不是标量风险敏感强度 `d` 的单调上升，而是广义关切（范围 / 深度 / 强度 / 方向四维）的可重组、可承担、可恢复与可再选择能力。**
 
+$$d \uparrow \;\not\!\Rightarrow\; \text{广义关切范围扩大 / 价值结构重构 / 秩序健康改善}$$
 $$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum} \quad \land \quad d \uparrow \;\not\!\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
 
+- **强度 vs 范围的显式解耦（`R4-B1 P1-02`）**：对同一既有风险的过度敏感可使 $d\uparrow$ 而广义关切范围不变；焦虑收缩可使 $d\uparrow$ 而广义关切范围反而下降；新增探索方向但单方向敏感度降低可使 $d\downarrow$ 而广义关切范围扩大。因此，研究**广义关切扩张**必须独立声明**范围 / 深度 / 强度 / 方向**四维的测量或诊断模型，不能仅用标量梯度模 $d$ 或其方向导数（见 `Core/SRT_Core_22_Equations.md Eq-Evo-03c`）替代。
 - **秩序增益四判据**：**可延续**（不透支可支付预算）、**可协调**（纳入他者条件不致瘫痪）、**不外包**（代价不转嫁给无反馈位置，与谱层 $C_i$ 同源）、**可再选择**（不锁死为教条）。
-- **真 `d` 扩张 vs 假 `d` 扩张**：真扩张使选择者的实际权衡解发生结构性位移；假扩张（占有式 / 符号式 / 表演式 / 效率式）仅在符号层宣称关切扩大而不承担代价。
+- **真实关切与价值结构重构 vs 伪扩张（旧称“真/假 `d` 扩张”）**：旧文中的“真/假 `d` 扩张”按本规范读作**广义关切与价值结构的真实组织化重构**（使选择者的实际权衡解、可承担代价与关切四维配置发生结构性位移并通过上述四判据结算），vs **伪扩张**（占有式 / 符号式 / 表演式 / 效率式宣称关切扩大却不承担代价，或单风险焦虑过敏导致 $d\uparrow$ 而范围反缩）。
 - **`C-A` 四义拆分（严守 `Core/SRT_OPEN_TENSIONS.md §17`）**：
   1. **宇宙级语义/评价/道德最优**：不准入当前正面理论对象（`PT10 E`：生成趋优 ≠ 伦理正当；与 `T3-01 C/E` 非道德客观全局趋优开放研究严格界分）；
   2. **算子相对可达最优**（$x^*_{\theta,\tau,K,J} \in \arg\min_{x \in \mathcal{R}_{\theta,\tau,K}} J_{\theta,\tau,K}(x)$）：仅在完整声明有限位置、可达域、比较规则、时域与约束的模型内有条件有效；
