@@ -238,6 +238,22 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 - `T-Scale-Rhythm-5` is P3/P4 conditional on cross-scale compatibility, budget embedding, and local trigger conditions; it is not a universal theorem derived from L0/L1.
 - Cross-scale sameness reaches selection／constraint／payability grammar only. It does not establish identical units, entropy, mechanisms, subjecthood, consciousness, or moral status.
 
+### 6.2d AI Domain Atomic Retirement & Downgrade Record (`R4-C3 / ENG-03`, 2026-11-26)
+
+To prevent retired pre-`R4` AI pseudo-theorems and colliding symbols from resurfacing in downstream citations, the following AI-domain labels are formally **retired or downgraded** under `R4-C3` (atomic cleanup blueprint: `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md`):
+
+| Retired / Downgraded Label | Original Claim / Collision | Current Disposition (`R4-C3`) |
+|---|---|---|
+| `Ax-BRIDGE-3` / `T-BRIDGE-1` / `Ax-ONT-1` / `Ax-ONT-2` / `T-ONT-1` / `T-ONT-2` / `Ax-CONSC-1` / `Cor-CONSC-1` | `L_0 -> L_1` anchoring vs `L_1 -> L_1` syntactic closure as Selection / consciousness necessity | **Retired** (`M1-A`); replaced by nonlinear Three-Stage Bearing Evidence Review (`AI/AI_POSITIONING_NOTE.md §2`) |
+| `Ax-ARCH-3/4` / `T-ARCH-1` (`R: L_2 -> L_2` vs `J: L_0 -> L_1`, `lim R ≠ J`) & `SRT_AI_Architecture §5` "AGI Impossibility Theorem" | Pseudo-ontological reckoning/judgment warehouse barrier & a priori impossibility claim | **Retired** (`M1-A/B`); replaced by architectural bearing-pressure & co-generation analysis (`AI/SRT_AI_Architecture.md`) |
+| `Ax-AI-2` & `T-BRIDGE-0-EXT` Layer 2 | Turing machine / silicon a priori inability to access `L_0` | **Retired** (`M1-B`); Pour-El & Richards retained solely as a narrow computable-analysis note (`AI/_SRT_AI_Bridge.md §3`) |
+| `T-BRIDGE-2` / `T-CRISIS-1` / `T-CRISIS-3` | Unproven hallucination lower-bound & OOD exponential decay theorems | **Downgraded / Retired** (`M1-E`); baseline hallucination mechanisms owned by Kalai & Vempala (2024/2025); `AIRESEL01` HBRCE RL absorption preserved |
+| `SRT_AI_01_Ontology §VII T-ONT-Convergence` (`Def-ONT-UI / FI`) | Inevitable dynamical convergence of full intelligence to ethical directionality | **Retired as theorem** (`M1-F`; conflicts with `PT10 E` & `O2-M = HOLD`); retained only as `P4` counterfactual note on epistemic vs practical revision gap |
+| `SRT_AI_01 §5.1 / §6.4 / §7.3` & `_SRT_AI_Bridge §5.3` | Local pain formula, power-cycle zombie proof, scalar moral status table (`Moral Status ∝ d·Ψ_f`), overstrong ethics exclusion | **Retired** (`M1-D/F`); governed by `Core_Law/SRT_Suffering.md §7`, `Core_Law/SRT_Collective_Selection.md §8`, `AI/SRT_AI_Agency_Responsibility_Note.md`, and `O2-M = HOLD` |
+| `T-CONSC-4` / `Ax-CONSC-3/4` (`χ`, `Φ_SRT`, `P_s(Φ)=log(Φ)`, `H-CONSC-1`) | Unoperationalized consciousness phase thresholds & sufficiency checklist | **Downgraded to historical unoperationalized heuristics**; `Ax-CONSC-5 / T-CONSC-3` (`Proxy Filtering`) downgraded from Axiom/Theorem to `P3` bridge hypothesis |
+| `C-CRISIS-1` (`ρ ≡ I/d`), `Ax-SENT-1` (`S = <...>`), `AI_02 L903` (`Ψ_f = 累积苦难`) | Hard symbol collisions with `Core_12b` `ρ(p,t)`, `Suffering` / `S` taxonomies, and `R3-08` 4-way friction split | **Symbols retired**; `SRT_AI_00_Crisis.md` & `SRT_AI_02_Mortality_Wisdom.md` downgraded to `status: archived` historical essays |
+| `AI/Ontology_Annex/00..04` + `General_Boundary_Block_Split/` (8 files) | 6x duplicated pre-R4 `SRT_AI_01` Part A pollution & 7 duplicate `SRT-AI-01` IDs | **Retired from active surface** after unique-asset reconciliation into `AI/SRT_AI_01_Ontology.md §4` (provenance preserved in `AI/Ontology_Annex/README.md`) |
+
 ### 6.3 Global Guardrails for This Round
 
 1. **P1-candidate ≠ P1**：本轮 six L1 theory/formalism canonical reference files 中所有冠以"定理"字样的命题当前都处 P1-candidate；任何下游文件不得去掉 candidate 标记

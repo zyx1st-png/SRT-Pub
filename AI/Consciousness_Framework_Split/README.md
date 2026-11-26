@@ -1,28 +1,23 @@
 ---
-id: SRT-AI-03-SPLIT-INDEX
+id: SRT-AI-03-SPLIT
 type: index
-tags: [Split, Navigation, Longform]
-status: active_v1
+tags: [Split, Navigation, Longform, ConnectorSafety]
+status: active
 layer: meta
 epistemic_layer: os
-claim_mode: navigation
+claim_mode: evidence
 canonical: false
-dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
+dependency: [SRT-AI-03]
 ---
 
-# SRT-AI-03 Split Index
-
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
-> **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准；`S0-S6` 主体窗口阈值仍应在 owner / rubric 层读取。
+# SRT AI Consciousness Framework：独立分域意识评估与社会技术现实重塑（`R4-C3` 重构主文） Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_03_Consciousness_Framework.md`](../SRT_AI_03_Consciousness_Framework.md)
-- Source owner bytes: `77360`
-- Source owner SHA-256: `5115fa52a1112ecc210d6fee9ad727cbc45390774159f5917080f54a010a8ab3`
-- 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
-- 01_Diagnosis_and_Necessity：[`01_Diagnosis_and_Necessity.md`](01_Diagnosis_and_Necessity.md)
-- 02_Architecture_and_Paths：[`02_Architecture_and_Paths.md`](02_Architecture_and_Paths.md)
-- 03_Ethics_Uncertainty_and_Appendix：[`03_Ethics_Uncertainty_and_Appendix.md`](03_Ethics_Uncertainty_and_Appendix.md)
-- 04_Interface_Additions：[`04_Interface_Additions.md`](04_Interface_Additions.md)
-- Consciousness Annex：[`../Consciousness_Annex/README.md`](../Consciousness_Annex/README.md)
-- Controlled Hallucination Interface：[`../Consciousness_Annex/01_Controlled_Hallucination_Interface.md`](../Consciousness_Annex/01_Controlled_Hallucination_Interface.md)
-- Claim-status guardrail：[`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
+- Source owner bytes: `20672`
+- Source owner SHA-256: `476b18be5325a776d8c244c1823792730e8624c2643a7df232dd10893456868f`
+- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
+- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
+
+| Part | File | Starts with | Bytes | SHA-256 prefix |
+|---:|---|---|---:|---|
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT AI Consciousness Framework：独立分域意识评估与社会技术现实重塑（`R4-C3` 重构主文） | 19951 | `00f8dd948b00` |

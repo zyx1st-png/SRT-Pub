@@ -8,17 +8,17 @@ claim_mode: evidence
 canonical: false
 domain: AI_goal_selection_self_directed_learning
 status: active
-integration_status: pending
+integration_status: partial
 landing_ledger:
   - target: "AI/SRT_AI_Architecture_CompactCore.md"
-    state: pending
-    blocked_by: "Await a future touch-based AI architecture synthesis pass; preserve the dormant-library rule and add only the completion/selection/generation ladder plus architecture-state boundary."
+    state: landed
+    anchor: "### 2.3 理由—轨迹分离与目标三阶分化（吸纳 `AIREASON01` & `AIGOAL01`）"
   - target: "AI/SRT_AI_Claim_Status.md"
-    state: pending
-    blocked_by: "Await the next AI claim-status repair; add capability-propensity and bounded-autotelicity guardrails without reopening positive subjecthood claims."
+    state: landed
+    anchor: "**目标完成 / 有限目标选择 / 目标空间生成三阶分离（`AIGOAL01`）**"
   - target: "Bridge/SRT_Context_Coherence_Intelligence_Interface.md"
-    state: pending
-    blocked_by: "Await a context-coherence synthesis pass; distinguish stronger within-path reasoning from cross-goal reorientation and keep visible reasoning separate from T_dir."
+    state: landed
+    anchor: "## 3. Autogenerative Condition Layer & Goal Three-Level Separation (Integrating `AIGOAL01`)"
   - target: "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
     state: pending
     blocked_by: "Await the next choice-generation bridge revision; use the study only as an AI boundary case for CG-0 through CG-4, not as a canonical definition or stake verdict."

@@ -8,14 +8,14 @@ claim_mode: evidence
 canonical: false
 domain: AI_affective_consciousness_active_inference_subjecthood
 status: active
-integration_status: pending
+integration_status: partial
 landing_ledger:
   - target: "AI/SRT_AI_Architecture_CompactCore.md"
-    state: pending
-    blocked_by: "Await a future AI architecture synthesis pass; add the affective candidate architecture and reset/copy/rollback audit without promoting consciousness or rewriting the architecture-state rule."
+    state: landed
+    anchor: "### 4.3 强承载与情感主动推理候选架构审计（`AICONSC01` + Triplex / 拒绝设计）"
   - target: "AI/SRT_AI_Claim_Status.md"
-    state: pending
-    blocked_by: "Await the next claim-status repair; add mechanism-over-behavior, uncertainty/consciousness separation, and same-bearer consequence conditions as P3/P4 guardrails only."
+    state: landed
+    anchor: "**情感主动推理六门与代理错绑（`AICONSC01`）**"
   - target: "papers/markov_blanket/paper_markov_blanket_d_value.md"
     state: pending
     blocked_by: "Await the next manuscript revision; use Solms et al. as the strongest affective high-road comparator and state precisely which triple-gate conditions remain unestablished."

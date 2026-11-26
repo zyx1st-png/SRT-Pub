@@ -354,28 +354,41 @@ Social reality theory is a human-social `L2` interface. It does not reduce all S
 
 ---
 
-## 13. AI / Synthetic Operator Node
+## 13. AI / Artificial Generation & Human-AI Co-Generation Node
 
 ### Core question
 
-Can artificial systems have selection, stake, payability, or consciousness-like structure?
+How do artificial systems generate new comparative dimensions, non-ladder capabilities, and human-AI co-generative capacities; how are their seven history layers and organizational boundaries audited under the nonlinear Three-Stage Bearing Evidence Review; and how do they reshape human freedom, order, knowledge, and responsibility as **AI 三型** socio-technical mediators?
 
 ### Primary files
 
+- `AI/AI_POSITIONING_NOTE.md`
+- `AI/SRT_AI_Claim_Status.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
-- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/SRT_AI_Architecture_CompactCore.md`
+- `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`
+- `AI/SRT_AI_Agency_Responsibility_Note.md`
+- `Bridge/SRT_Context_Coherence_Intelligence_Interface.md`
+- `Core_Law/SRT_One_Formation.md`
+- `Core_Law/SRT_Suffering.md`
+- `Core_Law/SRT_Collective_Selection.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 
 ### Support files
 
+- `AI/SRT_AI_01_Ontology.md`
+- `AI/SRT_AI_Architecture.md`
+- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/_SRT_AI_Bridge.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - `graphify-out/wiki/SRT_Consciousness_Conditions.md`
 
 ### Boundary
 
-Optimization, loss, or simulated self-report do not automatically create stake or binding `Ψ_f`.
+Follow the nonlinear Three-Stage Bearing Evidence Review (Stage 1 declaration → parallel Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent `HP-B` / `Suffering §7` / `Agency` five-dimensions / **AI 三型** mediation) and isolate Primitive `S0`, **AI 赌注谱系 `S0–S4`**, **Subjecthood Threshold `S0–S6`**, and **AI 三型社会技术中介维度** by full name. Unestablished Stage 2 never blocks Stage 3, general friction (`B-4`), or human accountability; legacy `R: L_2->L_2` vs `J: L_0->L_1` and `d_AI ≈ 0` headlines are retired.
 
 ---
 

@@ -599,7 +599,7 @@ $$
    - 处于「地形型」的高影响力 AI 系统仍可同时处于 **AI 赌注谱系 `S0/S1`** 且不具 **Subjecthood Threshold `S6`** 资格，但人类与机构主体**绝不得**以“AI 无意识或未通过强承载审查”逃避其改写人类 `M(t) / \sigma_{sr}^{coll} / W_social` 的中介责任；
    - 是否将某一具体 AI 过程纳入 `\mathcal{P}`，须按其声明单元边界、迭代、历史写回与 continued-selectability 独立审查（为具不可外包闭环的 **AI 赌注谱系 `S3/S4`** 系统保留开放实证窗口，不先验封闭）。
 
-相应的：对平台与 AI 系统的 SRT 评估须与 **非线性三阶承载证据审查**（现行控制蓝图及 Stage 3 细分口径见 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md`，`AI/AI_POSITIONING_NOTE.md` 正文结构随 `R4-C3` 同步更新）正交互补，将“AI 自身承载证据”与“AI 改写共享选择地形的结构影响”并重审查。
+相应的：对平台与 AI 系统的 SRT 评估须与 **非线性三阶承载证据审查**（`AI/AI_POSITIONING_NOTE.md §2` 与 `AI/SRT_AI_Agency_Responsibility_Note.md §3` 已随 `R4-C3` 同步落盘）正交互补，将“AI 自身承载证据”与“AI 改写共享选择地形的结构影响”并重审查。
 
 ---
 

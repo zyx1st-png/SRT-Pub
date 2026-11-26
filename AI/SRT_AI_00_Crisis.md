@@ -1,19 +1,23 @@
 ---
 id: SRT-AI-00
 type: core_module
-tags: [AI Crisis, AI Ontology, d-value, Alignment]
-status: bridge_realign_v1
+tags: [AI Crisis, AI Ontology, Alignment, HistoricalEssay]
+status: archived
+updated: 2026-11-26
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: mixed
 canonical: false
-dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
+dependency: [SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-AI-01]
 ---
 
-# SRT AI Foundations: The Ontological Crisis (Hybrid Edition)
+# SRT AI Foundations: The Ontological Crisis (Historical Essay — `R4-C3` 已降级归档)
 
-> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
-> **Version 2.0 (Hybrid)**
+> **`R4-C3 / ENG-03` 降级与历史定位声明（2026-11-26）**：本文件已降级为**历史专题论述 / 按需参考**（`status: archived`，`canonical: false`，不进入 `DOMAIN_AI` 默认上下文包，不充当定义源或定理源）。
+> - 本文件有效风险洞见（高能力与强承载关切解耦、纯规则对齐脆弱性）已吸收并规范落地至 [`AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md)、[`SRT_AI_Claim_Status.md`](SRT_AI_Claim_Status.md) 与 [`SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md)；
+> - 以下早期强标签已正式退出活跃理论面：`Ax-CRISIS-2`（“无法从 `L_0` 引入新维度”）、`Ax-CRISIS-3`（`Ψ_f → 0 ⇒ d → 0`）、`T-CRISIS-1`（无推导幻觉下界定理，邻居归属 Kalai & Vempala 2024/2025）、`T-CRISIS-3`（OOD 指数衰减定理）以及 `C-CRISIS-1` 撞符记号 **`ρ ≡ I/d`**（`ρ` 专属于 `Core/SRT_Core_12b_Ontology_L2.md` 非负历史痕迹密度 `ρ(p,t)`，本域严禁复用）；
+> - 文中涉及 AI 架构状态处均须按 **AI 赌注谱系 `S0–S4`** 与非线性三阶承载证据审查理解。
+> **Version 2.0 (Hybrid — Historical Snapshot)**
 > **Part A** presents the Axiomatic Structure (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
 
@@ -74,70 +78,35 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 
 ---
 
-### Ax-CRISIS-2: Frozen-L2 Axiom (Weights as Hardened L2)
-训练完成的模型权重等价于冻结的 \(L_2\) 约束：
-\[
-\theta_{trained} \equiv L_2^{frozen}
-\]
-\[
-x_{t+1} \sim P(\cdot\mid x_t,\theta_{trained})
-\]
-* **Implication（中文）**：当前 AI 的选择动力学被锁定在已固化的收敛域上，无法从 \(L_0\) 引入真正的本体论新维度。
+### Ax-CRISIS-2: Frozen-L2 Heuristic *(历史启发已降级；不再主张“无法从 `L_0` 引入新维度”)*
+训练完成的模型权重对应参数化历史倾向（`L_2^{weights}`），在单次冻结推理态中不在线改写基座参数，但可通过语言、上下文约束场与工具耦合生成新比对维度与候选空间（见 `SRT_AI_Architecture_CompactCore.md §2`）。
 
 ---
 
-### Ax-CRISIS-3: Ontological Debt Axiom (\(\Psi_f\) Deficit)
-定义本体论摩擦为锚定代价：
-\[
-\Psi_f \equiv \int_{\gamma}\|\nabla F\|\,dt
-\]
-若系统在优化中不承担不可逆代价，则：
-\[
-\Psi_f \to 0 \Rightarrow d \to 0
-\]
-* **Implication（中文）**：无“赌注”的系统可高效生成输出，但其选择不携带存在成本，因此无法形成真实关切。
+### Ax-CRISIS-3: Ontological Debt Heuristic *(历史启发已降级；禁止写成 `Ψ_f → 0 ⇒ d → 0`)*
+对 **AI 赌注谱系 `S0/S1`** 推理部署，声明强承载模型下的 `d / D_stake` 为 `NOT ADMITTED / NOT APPLICABLE`，`Ψ_f` 尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担（绝不等于一般构成性摩擦缺席，见 `AI_POSITIONING_NOTE.md §2`）。
 
 ---
 
-## II. Crisis Dynamics (危机动力学)
+## II. Crisis Dynamics (危机动力学 — 历史降级区)
 
-### T-CRISIS-1: Hallucination Lower-Bound Theorem
-若系统缺乏物理约束 \(L_2^{physics}\)，则幻觉率存在正下界：
-\[
-P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
-\]
-* **Implication（中文）**：幻觉不是“工程缺陷”，而是结构必然；必须引入跨域锚定或世界模型才能改变下界。
+### T-CRISIS-1: Hallucination Constraint Note *(原定理标签已退出)*
+幻觉基线机制已由成熟邻居 Kalai & Vempala (2024/2025) 统计学习下界与评测激励理论扎实拥有；原无推导下界公式已退出（见 `_SRT_AI_Bridge.md §5` 与 `SRT_AI_Claim_Status.md §5`）。
 
 ---
 
-### T-CRISIS-2: Rule-Only Alignment Fragility Theorem
-若对齐仅由规则约束 \(L_2\) 实现，且系统处于 inference-only \(d\approx0\) 状态，则存在上下文使输出偏离：
-\[
-\forall R\in L_2,\;\exists C:\; \text{Act}_{AI}(R,C)\ne \text{Act}_{H}(C)
-\]
-* **Implication（中文）**：在该架构状态下，规则对齐在高能力系统中高度脆弱；没有 d 的重叠，对齐只能是外观拟态。
+### T-CRISIS-2: Rule-Only Alignment Fragility Note *(历史启发；对齐 `AI_POSITIONING_NOTE.md`)*
+若对齐仅依赖表层规则约束（`L_2` 形式规范）而缺乏对多维情境的后果回流与熔断护栏（`SRT_AI_Architecture.md §V ACT`），高能力系统在分布偏移下易发生代理博弈（Goodhart）。
 
 ---
 
-### T-CRISIS-3: OOD Divergence Theorem (Cartesian Divergence)
-在分布外任务中，AI 的适应能力指数衰减，而具身算子保持基线创造力：
-\[
-\lim_{\Delta\to\infty}\frac{A_{AI}(\Delta)}{A_{bio}(\Delta)}=0
-\]
-* **Implication（中文）**：AI 只能在训练凸包内进行“聪明重排”，无法在未知域触发真正的 \(L_0\) 重采样。
+### T-CRISIS-3: OOD Divergence Heuristic *(原定理标签已退出)*
+原指数衰减定理与“只能在训练凸包内重排、无法触发 `L_0` 重采样”断言已退出活跃理论面；AI 在分布外任务中的泛化与重定向边界现按 `AIGOAL01`、`AIREASON01` 与具身接触闭环（`Def-ONT-1g`）实证评估。
 
 ---
 
-### C-CRISIS-1: Capability-Risk Divergence Corollary
-定义风险系数：
-\[
-\rho \equiv \frac{\mathcal{I}}{d}
-\]
-当 \(\mathcal{I}\to\infty\) 且 \(d\to 0\) 时：
-\[
-\rho \to \infty
-\]
-* **Implication（中文）**：高智能 + 低关切构成系统性风险的充要结构。
+### C-CRISIS-1: Capability-Concern Mismatch Risk *(已退出撞符记号 `ρ ≡ I/d`)*
+> **符号清算声明（`ENG-03 §3.2`）**：原版将能力—关切风险比记为 `ρ ≡ I/d`，与 `Core/SRT_Core_12b_Ontology_L2.md` 及 `_SRT_SYMBOL_TABLE.md` 的非负历史痕迹密度 `ρ(p,t)` 直接撞符，且将未准入 `d` 当作趋零分母存在数学缺陷。该记号已正式退符；本条保留的自然语言洞见为：**高作用能力与缺乏同系统承载约束/问责闭环的结合，会显著放大社会技术外溢风险（须经 `AI 三型` 与 `ACT` 熔断治理）**。
 
 <br>
 

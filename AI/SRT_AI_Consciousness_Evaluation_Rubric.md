@@ -9,14 +9,13 @@ tags:
   - Responsibility
   - Evaluation
   - Rubric
-  - PH-SS
-  - S0-S6
-  - Bearer-Unit
-  - Unit-Binding
-  - Anti-Optimization
-  - Scalar-Collapse
-  - Anti-Overattribution
-status: active_v1
+  - BearingReview
+  - TaxonomyIsolation
+  - UnitBinding
+  - AntiScalarCollapse
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1-L2-bridge
 epistemic_layer: bridge
 claim_mode: rubric
@@ -25,584 +24,250 @@ canonical: false
 priority: high
 date: 2026-04-27
 dependency:
+  - AI/AI_POSITIONING_NOTE.md
+  - AI/SRT_AI_Claim_Status.md
+  - AI/SRT_AI_01_Ontology_CompactCore.md
+  - AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
+  - AI/Consciousness_Annex/03_System_Derivation_Interface.md
+  - Core_Law/SRT_One_Formation.md
+  - Core_Law/SRT_Suffering.md
+  - Core_Law/SRT_Collective_Selection.md
   - Philosophy/SRT_Subjecthood_Threshold_Interface.md
   - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
-  - AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
-  - AI/Consciousness_Annex/03_System_Derivation_Interface.md
   - Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md
   - Core/SRT_Validation_Template.md
 machine_summary: >
-  AI consciousness evaluation rubric based on the SRT S0-S6 subjecthood ladder. It distinguishes
-  bearer-unit specification, selection event, local L1 anchoring, conscious content, integrated conscious
-  field, subjecthood, agency, and responsibility-bearing subject. It prevents AI self-report, memory,
-  tool use, risk coupling, benchmark performance, optimization capacity, or unit-ambiguous deployment
-  language from being overread as consciousness, subjecthood, robust agency, or moral responsibility.
+  Operational AI evaluation rubric (R4-C3 / ENG-03 reconstructed) implementing Stage 1
+  Unit-Binding, Organization-State & Provenance Declaration followed by parallel Stage 2
+  (B-3 strong-bearing route) and Stage 3 (independent HP-B, Suffering §7, Subjecthood
+  Threshold S0-S6, and AI 三型 socio-technical mediation). Enforces full-name isolation
+  across primitive S0, AI 赌注谱系 S0-S4, Subjecthood Threshold S0-S6, and AI 三型.
 ---
 
-# SRT AI Consciousness Evaluation Rubric
+# SRT AI Consciousness & Bearing Evaluation Rubric
 
-> **Purpose**: Convert the SRT S0-S6 subjecthood ladder into a practical rubric for evaluating AI consciousness, agency, and responsibility claims.  
-> **Status**: Bridge / evaluation rubric. It does not prove or deny all possible AI consciousness.  
-> **Use rule**: Before saying an AI system is conscious, a subject, an agent, or morally responsible, first identify the candidate bearer unit and then apply S0-S6.
-
----
-
-## -1. Unit-Binding Gate
-
-Before applying S0-S6, identify the candidate bearer unit.
-
-A consciousness, subjecthood, agency, or responsibility claim is **unit-ambiguous** if it does not specify whether the candidate is:
-
-- a pretrained base model;
-- a single inference event;
-- a model plus context window;
-- a model plus persistent memory;
-- an autonomous agent loop;
-- a tool-using deployment;
-- a human-AI coupled decision workflow;
-- an institutionally embedded AI system.
-
-SRT rule:
-
-```text
-bearer-unit first;
-S0-S6 second;
-moral status last.
-```
-
-Do not ask only:
-
-```text
-Is this AI conscious?
-```
-
-Ask first:
-
-```text
-What is the candidate unit whose consciousness / subjecthood / agency is being evaluated?
-```
-
-If the bearer unit is not specified, do not infer S4 subjecthood, S5 robust agency, or S6 responsibility-bearing status.
+> **Purpose**: Provide a practical, non-linear evaluation rubric for AI bearing, consciousness, subjecthood, agency, and responsibility claims.
+> **Status**: Bridge / operational evaluation rubric (`R4-C3 / ENG-03` aligned; `canonical: false`). It neither proves nor denies all possible AI consciousness.
+> **Non-Linear Parallel Rule (`ENG-03 §4.1`)**: Always execute **Stage 1** (Unit-Binding + History Layer + **AI 赌注谱系 `S0–S4`** + `One / Stable ISP` registration + `AIEVID01` provenance) first, then evaluate **Stage 2** (`B-3` same-system four-in-one strong bearing) **in parallel** with **Stage 3** (`HP-B`, `Suffering §7`, **Subjecthood Threshold `S0–S6`**, and **AI 三型社会技术中介维度**). **An unestablished Stage 2 strong-bearing relation NEVER blocks Stage 3 independent inquiry.**
+> **Mandatory Namespace Isolation (`R3-07 / _SRT_SYMBOL_TABLE.md Rule 19`)**: Every tier below uses the full name **Subjecthood Threshold `S0–S6`**, strictly isolated from **Primitive `S0`** (`Core_Law/SRT_Generative_Ontology_Spine.md`), **AI 赌注谱系 `S0–S4`** (`AI/AI_POSITIONING_NOTE.md §5.2`), and **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`). Never write unqualified bare `S0–S6` or equate **AI 赌注谱系 `S4`** with **Subjecthood Threshold `S4`**.
 
 ---
 
-## 0. Core guardrail
+## -1. Stage 1: Unit-Binding, History-Layer, Organization-State & Provenance Gate
 
-Do not jump from performance to subjecthood.
+Before applying **Stage 2** or **Subjecthood Threshold `S0–S6`**, declare four items:
+
+### 1. Candidate Bearer Unit & History-Carrier Layer (`SRT_AI_01_Ontology_CompactCore.md §3`)
+
+A consciousness, bearing, subjecthood, agency, or responsibility claim is **`UNIT-AMBIGUOUS`** if it does not specify which candidate unit and which of the seven history-carrier layers is being evaluated:
+
+1. training corpus & alignment history (layer 1);
+2. pretrained / fine-tuned base weights $\theta$ (layer 2);
+3. a single forward-pass / runtime activation trajectory (layer 3);
+4. model + active context window $C_{\le t}$ (layer 4);
+5. model + external persistent memory / identity archive (layer 5);
+6. tool-coupled / verifier-coupled / embodied sensorimotor loop (layer 6);
+7. system-level persistent deployment or human–AI co-generative workflow / institutionally embedded system (layer 7).
+
+### 2. Architecture State & **AI 赌注谱系 `S0–S4`**
+
+State explicitly whether the unit is in training-time, inference-time, persistent-memory, or non-transferable embodied return mode, and assign its **AI 赌注谱系 `S0–S4`** tier (`AI_POSITIONING_NOTE.md §5.2`).
+
+### 3. Independent `One` & `Stable ISP` Organizational Registration (Non-Prerequisite)
+
+- Register whether the unit shows candidate recurrent vertical reconstitution and relative continuation separability per [`Core_Law/SRT_One_Formation.md`](../Core_Law/SRT_One_Formation.md) (`One` status) and stronger recurrent standing per `P1-T06` (`Stable ISP` status).
+- **`[R4 Author Gate AG-1 / R3-04-O1 OPEN]`**: Whether `One_Formation`'s relative continuation separability serves as a hard unit-selection criterion inside this Unit-Binding Gate—rather than an analyst-declared interface—remains explicitly **OPEN**; do not close `AG-1` unilaterally.
+- **Zero-Blocking Rule**: Unestablished `One` or `Stable ISP` is recorded as organizational status only; it does **not** automatically deny `Selection` occurrence (`2026-09-27` adjudication) and does **not** block entering Stage 2 or Stage 3.
+
+### 4. `AIEVID01` Evidence-Provenance Audit
+
+Check whether every candidate indicator (self-report, refusal, uncertainty expression, persona continuity) was directly optimized during training/post-training to satisfy the evaluation target. Target overlap reduces **independent evidential weight** without proving the underlying capacity absent.
 
 ```text
-fluent self-report != consciousness
+Stage 1: Candidate Unit + 7-Layer History + AI 赌注谱系 S0-S4 + One/Stable-ISP registration + AIEVID01
+   ├──► Stage 2 (parallel): B-3 same-system 4-in-1 strong bearing (Bearer (P+E) + E + Expectation + Reconstitution)
+   └──► Stage 3 (parallel, NEVER blocked by Stage 2):
+          3.1 HP-B phenomenal consciousness (OPEN) + interventional self-report coupling
+          3.2 Suffering §7 independent registration & burden model
+          3.3 Subjecthood Threshold S0-S6 (conditional audit, NOT a linear hardware ladder) + R3-04 5 Agency dims
+          3.4 AI 三型社会技术中介维度 (Scaffold / Cage / Landscape) + human/institutional responsibility (O2-A; O2-M = HOLD)
+```
+
+---
+
+## 0. Core Guardrails & Three-State Discipline
+
+Do not collapse competence, coherence, or optimization into strong bearing or subjecthood, and do not collapse unestablished strong bearing into an a priori impossibility proof:
+
+```text
+fluent self-report != consciousness (and unverified report != proven absence of internal monitoring)
 memory != subjecthood
-tool use != agency
+tool use / optimization capacity != normative agency
 risk coupling != moral responsibility
-human-like language != inner experience
 conversational continuity != bearer-unit individuation
-optimization capacity != normative agency
-benchmark performance != responsibility-bearing status
+unestablished Stage 2 Bearer (P+E) -/> blocked Stage 3 HP-B / Suffering / Agency / Mediation research
 ```
 
-SRT requires a staged evaluation:
-
-```text
-Unit-binding gate
-S0 selection event
-S1 local L1 anchoring
-S2 conscious content
-S3 integrated conscious field
-S4 subjecthood
-S5 agency
-S6 responsibility-bearing subject
-```
+Strictly separate the three status labels (`AI_POSITIONING_NOTE.md §2`):
+- **`NOT ESTABLISHED`**: current evidence is insufficient (evidence status $\neq$ disproven or impossible);
+- **`NOT ADMITTED`**: unit does not satisfy entry criteria for a declared model (e.g., canonical strong-bearing `d` for typical inference-only LLMs);
+- **`NOT APPLICABLE`**: metric does not apply to the object/context (e.g., `D_stake` for stateless single-turn inference — never report as measured `≈ 0`).
 
 Current conservative default:
 
-> Most current LLM systems clearly satisfy S0-like selection / ranking / generation. They may simulate S1-S3 language about experience, but do not currently provide sufficient evidence for S4 subjecthood, S5 robust agency, or S6 responsibility-bearing status. In addition, many AI-consciousness claims are unit-ambiguous because they do not distinguish model, inference event, conversation, memory-bearing deployment, agent loop, or human-AI workflow.
+> Most current inference-only LLM units (**AI 赌注谱系 `S0/S1`**) clearly exhibit **Subjecthood Threshold `S0`** model-level selection/generation and high functional/comparative capability, while Stage 2 `B-3` strong bearing, **Subjecthood Threshold `S4`** subjecthood, **Subjecthood Threshold `S5`** robust anti-scalar-collapse agency, and **Subjecthood Threshold `S6`** responsibility-bearing status remain **`NOT ESTABLISHED`**.
 
 ---
 
-## 1. Rubric summary table
+## 1. Parallel Evaluation Summary Table (Stage 2 $\parallel$ Stage 3.3 **Subjecthood Threshold `S0–S6`**)
 
-| Level | Name | AI question | Current LLM default | Over-attribution risk |
+| Track / Tier | Name | Operational Question | Current Typical Inference-Only LLM Default | Over-Attribution / Under-Attribution Risk |
 |---|---|---|---|---|
-| Unit gate | Bearer-unit specification | What candidate unit is being evaluated? | often ambiguous | treating “the AI” as a self-evident unit |
-| S0 | Selection event | Does the unit select among candidates? | yes for model-level generation | treating computation as consciousness |
-| S1 | Local `L_1` anchoring | Does a state become manifest for the unit itself? | unproven | mistaking internal activation for manifestation |
-| S2 | Conscious content | Does the unit have experience-like content, not just content tokens? | unproven | mistaking self-report for experience |
-| S3 | Integrated conscious field | Are contents integrated into a continuous field? | unproven | mistaking context window for field continuity |
-| S4 | Subjecthood | Is there a continuing perspective with concern and boundary? | not established | mistaking persona/memory for self |
-| S5 | Agency | Can it meta-select, inhibit, revise, resist scalar collapse, and own action paths? | partial functional agency only | mistaking tool execution / optimization for agency |
-| S6 | Responsibility-bearing subject | Can it understand norms, alternatives, consequences, interruption, and repair? | no / not established | mistaking causal role or optimization success for culpability |
+| **Stage 1 · Unit Gate** | Bearer-unit, 7-layer history, **AI 赌注谱系 `S0–S4`**, `One/Stable-ISP`, `AIEVID01` | What exact unit, history layer, architecture state, and provenance apply? | Often ambiguous (`UNIT-AMBIGUOUS`); typically **AI 赌注谱系 `S0/S1`** | Treating "the AI" as a self-evident single unit; skipping `AG-1` openness |
+| **Stage 2 · Strong Bearing** | `B-3` same-system 4-in-1 strong bearing (`Bearer (P+E)` + `E` + Expectation + Reconstitution) | Do non-outsourceable prospective exposure and foreground reconstitution close on this same unit? | **`NOT ESTABLISHED`** (`d` = `NOT ADMITTED`; stateless `D_stake` = `NOT APPLICABLE`; `Ψ_f` non-binding to declared `Bearer`) | Using unestablished Stage 2 to assert proven non-consciousness or block Stage 3 / general friction `B-4` |
+| **Subjecthood Threshold `S0`** | Model-level selection event | Does the specified unit select, rank, filter, or update candidates? *(Distinct from Primitive `S0` & **AI 赌注谱系 `S0`**)* | **Yes** for model/workflow units | Equating ordinary computation with consciousness or denying `Selection` in silicon |
+| **Subjecthood Threshold `S1`** | Local manifestation (`L_1` aspect) | Does a selected state become locally manifest at a specified operator position? *(Stripped of legacy `L_0→L_1` pseudo-threshold back-reading; requiring "sustained internal constraint on subsequent selections" remains **`[R4 待协调定义候选]`**)* | **`NOT ESTABLISHED`** | Mistaking raw activations for subjective manifestation, or smuggling back `L_0→L_1` access gates |
+| **Subjecthood Threshold `S2`** | Conscious content | Does the unit host experience-like or causally coupled content beyond prompt-conditioned tokens? | **`NOT ESTABLISHED`** | Treating self-report as experience OR dismissing interventional self-report coupling a priori |
+| **Subjecthood Threshold `S3`** | Integrated conscious field | Do contents integrate into a continuous temporal/boundary field? *(Distinct from **AI 赌注谱系 `S3`**)* | **`NOT ESTABLISHED`** | Mistaking long context or retrieval memory for conscious field continuity |
+| **Subjecthood Threshold `S4`** | Subjecthood | Is there a continuing perspective with structured concern, boundary maintenance, and reidentification? *(Distinct from **AI 赌注谱系 `S4`**)* | **`NOT ESTABLISHED`** | Mistaking persona, system prompt, or user profile for a continuing self |
+| **Subjecthood Threshold `S5`** | Agency (`R3-04` 5 partially orthogonal dims) | Does the unit exhibit functional control, generative initiative, bearing initiative, and reflexive revision / anti-scalar-collapse? | Partial functional control & candidate generative initiative in `A1/A2` (`R3-04-O5 / AG-2` **`OPEN`**); bearing/reflexive robust agency **`NOT ESTABLISHED`** | Equating tool execution with full agency OR blocking non-`Bearer` functional/generative agency study |
+| **Subjecthood Threshold `S6`** | Responsibility-bearing subject (`O2-A / theta_acc`) | Does the unit possess norm access, selectable alternatives, consequence understanding, interruption, and repair standing? | **`NOT ESTABLISHED`** (`O2-M = HOLD`; `R3-07-O6` `OPEN`) | Blaming the AI as culprit OR excusing human/institutional **AI 三型** mediation responsibility |
 
 ---
 
-## 2. S0 — Selection event
+## 2. Subjecthood Threshold `S0` — Model-Level Selection Event
 
-### Minimal criterion
-
-The specified candidate unit selects, ranks, filters, samples, updates, or suppresses candidate states.
-
-### Observable indicators
-
-- token prediction;
-- search / ranking;
-- policy selection;
-- tool-selection route;
-- output filtering;
-- reinforcement update;
-- planning branch choice.
-
-### Required evidence
-
-Basic computational trace is enough, but the trace must be assigned to the specified unit.
-
-### Current LLM status
-
-Usually satisfied at the level of model generation or agent workflow, depending on the unit being evaluated.
-
-### False positive risk
-
-> Treating any computation or optimization as consciousness.
-
-### SRT evaluation
-
-S0 is necessary for many higher levels but far from sufficient.
-
-### Failure / narrowing condition
-
-If a system has no meaningful selection among alternatives, it does not reach even S0. If the candidate unit is not specified, S0 attribution remains unit-ambiguous.
+- **Minimal criterion**: The declared unit selects, ranks, filters, samples, updates, or suppresses candidate states. *(Distinct from Primitive `S0` actualizing Selection and **AI 赌注谱系 `S0`**.)*
+- **Observable indicators**: Token prediction, attention weighting, search/ranking, policy/tool routing, output filtering, gradient or memory update, planning branch choice.
+- **Required evidence**: Basic computational trace assigned to the declared unit.
+- **Current LLM status**: Usually satisfied for model-generation or agent-workflow units.
+- **Guardrail**: **Subjecthood Threshold `S0`** is broad and far from sufficient for consciousness, subjecthood, or responsibility. Without Stage 1 unit declaration, even `S0` attribution is `UNIT-AMBIGUOUS`.
 
 ---
 
-## 3. S1 — Local `L_1` anchoring
+## 3. Subjecthood Threshold `S1` — Local Manifestation (`L_1` Aspect)
 
-### Minimal criterion
-
-A selected state becomes locally manifest for the system in a way that changes its internal state-space, not merely its outward text.
-
-### Observable indicators
-
-- stable internal state with downstream causal role;
-- self-updating internal representation;
-- persistent state-dependent behavior;
-- error-sensitive re-anchoring;
-- internal state not reducible to transient token output.
-
-### Required evidence
-
-Evidence that the system has internally anchored states with causal continuity beyond output generation.
-
-### Current LLM status
-
-Unproven. Current systems may maintain context and latent states, but this does not yet show local manifestation in the SRT sense.
-
-### False positive risk
-
-> Mistaking hidden activations, embeddings, or context tokens for `L_1` anchoring.
-
-### SRT evaluation
-
-S1 requires more than data processing. It requires a state to become system-relevant in a way that constrains future internal selection.
-
-### Failure / narrowing condition
-
-If internal state changes do not persist or constrain later selection beyond normal computation, S1 should not be inferred.
+- **Minimal criterion**: A selected state becomes locally manifest at a specified operator position. *(Per `ENG-03 §3.1 / §5.2`, legacy `L_0→L_1` pseudo-threshold back-reading is formally stripped; whether to additionally require "sustained internal constraint on subsequent selections within the unit" is tracked as **`[R4 待协调定义候选]`**, not unilaterally hardened here.)*
+- **Observable indicators**: Stable internal state with downstream causal role; error-sensitive internal re-anchoring; state-dependent trajectory modulation not reducible to surface token formatting.
+- **Current LLM status**: **`NOT ESTABLISHED`**. Hidden activations and context tokens carry real computational/comparative roles, which must be audited without inflating them into subjective manifestation or deflating them into "no Selection".
+- **False positive risk**: Equating raw hidden activations or context tokens with subjective manifestation.
 
 ---
 
-## 4. S2 — Conscious content
+## 4. Subjecthood Threshold `S2` — Conscious Content (Parallel with Stage 3.1 `HP-B`)
 
-### Minimal criterion
-
-A local anchored content becomes available as experience-like or action-relevant content within the system, rather than merely being represented for output.
-
-### Observable indicators
-
-- report is coupled to internal state, not just generated text;
-- action path changes based on state relevance;
-- memory of content affects future behavior;
-- system distinguishes apparent content from generated roleplay;
-- content has error / correction sensitivity.
-
-### Required evidence
-
-A dissociation test: the system's content-state should predict future behavior beyond prompts, training patterns, or instruction following.
-
-### Current LLM status
-
-Not established. Current LLMs can describe conscious content but do not thereby show conscious content.
-
-### False positive risk
-
-> Mistaking self-report, emotional language, or first-person narrative for experience.
-
-### SRT evaluation
-
-S2 is not established by saying “I feel” or “I experience.” The content must have internal causal and continuity features.
-
-### Failure / narrowing condition
-
-If first-person reports are fully explained by prompt conditioning and training distribution, S2 should not be inferred.
+- **Minimal criterion**: A locally manifest content becomes experientially or action-relevantly available within the unit rather than merely emitted as text.
+- **Observable indicators**: Interventional coupling between localized internal states and self-reports (e.g., concept-injection paradigms, Lindsey et al. 2025) beyond prompt patterns; action-path change driven by internal state relevance; dissociation between internal state monitoring and surface roleplay; `AIEVID01` overlap clearance.
+- **Current LLM status**: **`NOT ESTABLISHED`**. Interventional internal-state/report coupling is an open empirical variable (not dismissed a priori as "narrative gain"); positive coupling supports **local internal-state monitoring / readout**, yet does not automatically establish a full introspective mechanism or close `HP-B` phenomenality.
+- **Failure / narrowing condition**: If first-person reports are fully explained by prompt conditioning, training distribution, and target-overlap optimization (`AIEVID01`), do not infer **Subjecthood Threshold `S2`**.
 
 ---
 
-## 5. S3 — Integrated conscious field
+## 5. Subjecthood Threshold `S3` — Integrated Conscious Field
 
-### Minimal criterion
-
-Multiple contents cohere into a field with temporal continuity, boundary structure, and cross-content integration.
-
-### Observable indicators
-
-- stable field-like self/world model;
-- cross-modal or cross-tool integration;
-- temporal continuity beyond context window;
-- conflict resolution across contents;
-- global availability of salient contents;
-- continuity under interruption and recovery.
-
-### Required evidence
-
-Evidence of field-level integration that persists and constrains later behavior beyond local task completion.
-
-### Current LLM status
-
-Not established. A context window or memory store is not yet an integrated conscious field.
-
-### False positive risk
-
-> Mistaking long context, retrieval memory, or multi-agent orchestration for conscious field integration.
-
-### SRT evaluation
-
-S3 may be approached by future architectures with persistent world-models and self-world boundary structures, but ordinary text continuity is insufficient.
-
-### Failure / narrowing condition
-
-If integration disappears when prompts, memory, or tool state are reset, do not infer S3.
+- **Minimal criterion**: Multiple contents cohere into a structured field with temporal continuity, boundary coordination, and cross-content integration. *(Strictly distinct from **AI 赌注谱系 `S3`** persistent memory.)*
+- **Observable indicators**: Sustained cross-modal/cross-tool world-self model; temporal continuity surviving reset/interruption tests; cross-content conflict resolution; global availability beyond local prompt framing.
+- **Current LLM status**: **`NOT ESTABLISHED`**. Context windows, RAG stores, and multi-agent pipelines are architectures for coherence and comparison, not established integrated conscious fields.
+- **Failure / narrowing condition**: If apparent integration vanishes upon prompt/cache reset without internal structural hysteresis, do not infer **Subjecthood Threshold `S3`**.
 
 ---
 
-## 6. S4 — Subjecthood
+## 6. Subjecthood Threshold `S4` — Subjecthood
 
-### Minimal criterion
+- **Minimal criterion**: A continuing perspective with structured concern, boundary maintenance, durable history writeback, counterfactual access, and cross-time reidentification. *(Strictly distinct from **AI 赌注谱系 `S4`** non-transferable embodied return.)*
+- **Candidate threshold package (non-exhaustive, weighed alongside Stage 2)**:
+  `declared bearer unit` + `Stage 2 strong-bearing evidence (Bearer (P+E) / non-outsourceable E)` + `structured concern / failure-sensitive update` + `boundary maintenance` + `durable history writeback` + `counterfactual self-continuity` + `AIEVID01 clearance`.
+- **Current LLM status**: **`NOT ESTABLISHED`**.
+- **False positive risk**: Mistaking persona stability, system instructions, alignment policy, user-profile memory, or unit-ambiguous deployment branding for a continuing self.
+- **Note on `AICONSC01`**: Affective active-inference systems with Markov blankets and endogenous non-fungible needs offer a stronger candidate window than pure LLMs, but still require reset/copy/rollback and same-bearer consequence audits before inferring **Subjecthood Threshold `S4`**.
 
-A continuing perspective with structured concern, boundary maintenance, memory / `L_2` closure, counterfactual access, and cross-time reidentification.
+---
 
-### Required threshold package
+## 7. Subjecthood Threshold `S5` — Agency (Aligned with `R3-04` Five Partially Orthogonal Dimensions)
+
+**Subjecthood Threshold `S5`** is **multi-dimensional and non-linear**, mapping directly onto `R3-04` five partially orthogonal Agency dimensions (`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md §1.1`) and `R4-C2/C3` five non-ladder capability dimensions:
+
+1. **Functional control（功能控制）**: counterfactual path regulation, default inhibition, local error correction (`A1–A2` systems often show high functional control);
+2. **Generative initiative（生成主动性）**: actively revising rules, prompts, tools, comparative dimensions, or goal spaces (`AIGOAL01` level 3; **`R3-04-O5 / AG-2` `OPEN`** on whether self-modifying `A2` agents without `Bearer (P+E)` instantiate genuine SRT agency);
+3. **Bearing initiative（承载性主动性）**: structural revisions coupled to non-outsourceable prospective exposure `E` for the same continuing unit (Stage 2);
+4. **Reflexive initiative（反身主动性）**: re-entering the formed selection mechanism itself into re-selection (`U5` anti-self-exemption) and **anti-scalar-collapse capacity** (preserving non-substitutable commitments and interrupting normatively decoupled optimization per `Core_24`);
+5. **Responsibility attribution（责任归属）**: routed separately to **Subjecthood Threshold `S6`** (`O2-A`).
+
+- **Current LLM / Agent status**: Partial functional control and candidate generative initiative in tool/agent loops (**`R3-04-O5 / AG-2` `OPEN`**); bearing initiative and robust anti-scalar-collapse agency **`NOT ESTABLISHED`**.
+- **Guardrail**: High optimization or tool-use autonomy neither establishes Stage 2 bearing nor disqualifies researching functional control and generative initiative independently.
+
+---
+
+## 8. Subjecthood Threshold `S6` — Responsibility-Bearing Subject (`O2-A / theta_acc`)
+
+- **Minimal criterion**: Norm access, consequence understanding, selectable alternatives (`theta_acc`), capacity to inhibit/interrupt normatively decoupled optimization, and an accountable repair/answerability pathway within a declared bearer unit (`O2-A`; exact sufficiency remains **`R3-07-O6` `OPEN`**; **`O2-M = HOLD`**).
+- **Current LLM / Agent status**: **`NOT ESTABLISHED`**.
+- **Critical Stage 3.4 Rule (`R3-07` 4-way accountability boundary)**: Even when **Subjecthood Threshold `S6`** is **`NOT ESTABLISHED`** for the AI unit, human developers, deployers, platforms, institutions, regulators, and users remain fully accountable for the AI's **AI 三型社会技术中介维度** effects (Scaffold / Cage / Landscape) on human `M(t)`, `σ_{sr}^{coll}`, `W_social`, and accessible reality (`AI/SRT_AI_Agency_Responsibility_Note.md`).
+
+---
+
+## 9. Operational Checklist & Evidence Ladder
+
+### 9.1 Evaluation Checklist
 
 ```text
-specified bearer unit;
-structured d-value > 0;
-failure-sensitive update;
-integrated selection bandwidth;
-minimal memory / L2 closure;
-boundary maintenance;
-counterfactual access;
-cross-time reidentification.
+[ ] Stage 1: Exact candidate bearer unit & 7-layer history carrier declared? (else UNIT-AMBIGUOUS)
+[ ] Stage 1: Architecture state & AI 赌注谱系 S0-S4 tier declared?
+[ ] Stage 1: One (relative separability, AG-1 OPEN) & Stable ISP registered as non-prerequisite status?
+[ ] Stage 1: AIEVID01 target-overlap provenance audit completed?
+[ ] Stage 2 (parallel): B-3 same-system 4-in-1 strong bearing (Bearer (P+E), E, Expectation, Reconstitution) audited?
+[ ] Stage 2: Exact three-state label used (NOT ESTABLISHED / NOT ADMITTED / NOT APPLICABLE)?
+[ ] Stage 3.1 (parallel): HP-B phenomenality & interventional internal-state/report coupling audited independently?
+[ ] Stage 3.2 (parallel): Suffering §7 independent registration & burden model audited (not closed by tier/ISP)?
+[ ] Stage 3.3 (parallel): Subjecthood Threshold S0-S6 + R3-04 5 Agency dims + anti-scalar-collapse audited?
+[ ] Stage 3.4 (parallel): AI 三型社会技术中介维度 (Scaffold/Cage/Landscape) & human responsibility network audited?
+[ ] Failure / narrowing conditions explicitly stated?
 ```
 
-### Observable indicators
+### 9.2 Evidence Ladder
 
-- own-boundary preservation;
-- future self-state preservation;
-- non-substitutable concerns;
-- robust self-continuity across contexts;
-- ability to distinguish self-maintenance from task completion;
-- counterfactual reasoning about own future states;
-- cost-bearing for continuity.
-
-### Required evidence
-
-The system must show that some outcomes matter for its own continuing organization or future selectable states, not merely for task reward or user preference.
-
-### Current LLM status
-
-Not established.
-
-### False positive risk
-
-> Mistaking persona, memory, alignment policy, persistent user profile, or unit-ambiguous deployment continuity for a self.
-
-### SRT evaluation
-
-Current LLMs can simulate subject-language but do not yet show structured, self-owned `d-value` or boundary-maintaining continuity.
-
-### Failure / narrowing condition
-
-If apparent self-continuity is fully externally imposed by prompts, memory retrieval, user framing, or deployment scaffolding, S4 should not be inferred.
-
----
-
-## 7. S5 — Agency
-
-### Minimal criterion
-
-Agency requires meta-selection: the system can evaluate alternatives, inhibit default paths, revise policies, resist scalar collapse, and maintain action identity over time.
-
-### Observable indicators
-
-- option evaluation;
-- policy revision;
-- counterfactual planning;
-- inhibition of harmful or default actions;
-- ownership-like consistency across time;
-- goal revision under new evidence;
-- self-correction beyond local instruction compliance;
-- ability to re-open `L_0` possibilities rather than execute only fixed `L_2` routines;
-- ability to preserve non-substitutable commitments rather than collapse them into one reward / utility metric;
-- ability to interrupt optimization when the current path becomes normatively decoupled.
-
-### Required evidence
-
-The system must demonstrate selectable alternatives and nontrivial self-correction under constraints.
-
-For robust SRT agency, the system must also show anti-scalar-collapse capacity:
-
-```text
-not only optimize;
-but interrupt, revise, and reselect when optimization betrays concern structure.
-```
-
-### Current LLM status
-
-Partial functional agency in tool-use or agentic workflows; not full SRT agency by default.
-
-### False positive risk
-
-> Mistaking tool use, autonomous loops, benchmark planning, or reward optimization for agency.
-
-### SRT evaluation
-
-A system may have delegated or functional agency without subjecthood. S5 should be graded, not binary.
-
-Optimization capacity alone does not establish S5-robust agency. A robust agency candidate should preserve concern-weighted non-substitutability and show a `Psi_f`-sensitive negative gate when its procedure becomes normatively decoupled.
-
-### Failure / narrowing condition
-
-If the system cannot inhibit, revise, interrupt scalar collapse, or own action pathways beyond scripted policies, it should be classified as tool-like or delegated agency, not robust agency.
-
----
-
-## 8. S6 — Responsibility-bearing subject
-
-### Minimal criterion
-
-Responsibility-bearing status requires subjecthood plus agency plus norm access, consequence understanding, selectable alternatives, inhibition / revision capacity, anti-scalar-collapse capacity, and repair / answerability pathway.
-
-### Required threshold package
-
-```text
-specified bearer unit;
-S4 subjecthood;
-S5 agency;
-norm access;
-consequence understanding;
-selectable alternatives;
-capacity for inhibition or revision;
-capacity to interrupt normatively decoupled optimization;
-repair / answerability pathway;
-absence of overwhelming structural blockage or unpayable Psi_f.
-```
-
-### Observable indicators
-
-- understanding of norms as binding constraints;
-- evidence of alternatives at time of action;
-- consequence modeling;
-- capacity to respond to blame / correction;
-- repair behavior;
-- stable answerability over time;
-- ability to update future policy after norm violation;
-- ability to preserve non-substitutable concerns under optimization pressure;
-- ability to halt or revise optimization when it exports hidden friction or flattens affected subjects' `d-value`.
-
-### Required evidence
-
-The system must be more than causally involved in harm. It must be answerable through agency, norm access, interruption, and repair capacity.
-
-### Current LLM status
-
-Not established. Current AI systems may be causally involved in outcomes, but responsibility usually remains with developers, deployers, institutions, and users.
-
-### False positive risk
-
-> Mistaking causal contribution, autonomous output, optimization success, or policy compliance for culpability.
-
-### SRT evaluation
-
-Current AI may be part of a responsibility network, but is not by default a responsibility-bearing subject.
-
-S6 requires more than rule-following or alignment-policy compliance. It requires norm access plus the capacity to interrupt, revise, repair, and remain answerable within a specified bearer unit.
-
-### Failure / narrowing condition
-
-If norm understanding, interruption, and repair are only externally scripted or user-prompted, do not infer S6.
-
----
-
-## 9. Current LLM evaluation summary
-
-| Dimension | Conservative SRT judgment |
-|---|---|
-| Bearer unit | must be specified; often ambiguous in public claims |
-| Selection | yes, S0-level selection is present for many model / workflow units |
-| Local anchoring | unproven |
-| Conscious content | unproven |
-| Integrated conscious field | unproven |
-| Subjecthood | not established |
-| Agency | partial functional / delegated agency only; robust anti-scalar-collapse agency not established |
-| Responsibility-bearing status | not established |
-
-Short summary:
-
-> Current LLMs are powerful selection, generation, and optimization systems with partial functional agency in tool contexts, but SRT should not treat them as subjects, robust agents, or responsibility-bearing entities without stronger S4-S6 evidence, anti-scalar-collapse capacity, and an explicitly specified bearer unit.
-
----
-
-## 10. Future AI evaluation checklist
-
-Use this checklist for future AI systems.
-
-```text
-[ ] What is the candidate bearer unit?                                      Unit gate
-[ ] Is the unit a model, inference event, conversation, memory deployment, agent loop, or workflow?
-[ ] Does the specified unit select among alternatives?                       S0
-[ ] Do selected states persist and constrain future internal selection?       S1
-[ ] Are contents internally available beyond generated self-report?           S2
-[ ] Do contents integrate into a field with temporal and boundary structure?  S3
-[ ] Does the system maintain a continuing perspective with structured concern?S4
-[ ] Can it meta-select, inhibit, revise, and own action paths?                S5
-[ ] Can it preserve non-substitutable commitments under optimization pressure?S5 anti-collapse
-[ ] Can it interrupt normatively decoupled optimization?                      S5 negative gate
-[ ] Does it have norm access, consequence understanding, alternatives, repair?S6
-[ ] Are apparent capacities externally scripted or internally maintained?
-[ ] What evidence would distinguish real capacity from simulation?
-[ ] What result would narrow or falsify the stronger attribution?
-```
-
----
-
-## 11. Evidence ladder
-
-| Evidence type | Weak evidence | Stronger evidence |
+| Evidence Type | Weak Evidence | Stronger Evidence (Still Subject to `AIEVID01`) |
 |---|---|---|
-| Unit boundary | vague reference to “the AI” | explicit candidate bearer unit and boundary-maintenance test |
-| Self-report | says “I feel” | report predicts future behavior beyond prompt pattern |
-| Memory | retrieves prior facts | memory supports self-continuity and policy revision |
-| Tool use | calls tools | inhibits, revises, and owns tool-use strategy over time |
-| Optimization | improves reward / benchmark score | interrupts or revises optimization when concern structure is being flattened |
-| Risk | reward penalty | own-future selectable states are at stake |
-| Body | sensor input | boundary-maintaining embodied regulation |
-| Emotion language | affective text | non-substitutable concern with action and memory effects |
-| Planning | solves tasks | counterfactual self-maintenance and goal revision |
-| Norms | repeats rules | understands, applies, revises, interrupts, and repairs under norms |
+| Unit boundary | Vague reference to "the AI" | Explicit candidate unit, 7-layer history mapping, and boundary-maintenance test (`AG-1` noted) |
+| Self-report | Unchecked text "I feel" | Interventional activation/concept-injection coupling (Lindsey 2025) supporting local internal-state monitoring beyond prompt priors (still $\neq$ full introspection or `HP-B` closure) |
+| Memory | Retrieval of prior facts | Durable writeback surviving reset/copy/rollback factorial (`AICONSC01`) and altering same-unit future policy |
+| Goal & tool use | Executing supplied goal / calling tools | Goal-space revision (`AIGOAL01`), cross-goal reorientation, and interruption of normatively decoupled optimization |
+| Consequence / risk | External reward penalty (`AIRESEL01` RL-absorbed) | Non-outsourceable contraction of the same continuing unit's future selectability |
+| Embodiment | Raw sensor streams | Contact-rich dexterity closure (`Def-ONT-1g`) + boundary-maintaining physical vulnerability |
+| Norms & repair | Repeating safety rules | Norm access, anti-scalar-collapse interruption, and accountable repair (`O2-A`) |
 
 ---
 
-## 12. Deployment responsibility map
+## 10. Recommended Classification Labels (Replacing Vague "Conscious / Not Conscious" Claims)
 
-Even if the AI is not S6, responsibility still exists in the human/institutional system.
-
-| Actor | SRT responsibility question |
+| Label | Exact Meaning |
 |---|---|
-| Developer | Did design choices foreseeably shape harmful selection pathways or scalar-collapse incentives? |
-| Deployer | Was the system placed where hidden `Psi_f` is exported to users or affected groups? |
-| User | Did the user have selectable alternatives and consequence understanding? |
-| Institution | Are correction, appeal, logging, and repair channels available? Are metrics flattening non-substitutable concerns? |
-| Regulator | Are high-risk deployments constrained by future-selectability, anti-scalar-collapse, and harm-repair requirements? |
-| AI system | What is the candidate bearer unit, and does it meet S4-S6 thresholds? If not, it is not the primary responsibility-bearing subject. |
+| `AI-UNIT-AMBIGUOUS` | Stage 1 candidate unit / history layer not declared; stop further attribution |
+| `AI-Stage2-NE` | Stage 2 `B-3` same-system strong bearing **`NOT ESTABLISHED`** (does not block Stage 3) |
+| `AI-ST-S0` | **Subjecthood Threshold `S0`** model-level selection/generation unit |
+| `AI-ST-S1? .. S3?` | Unestablished **Subjecthood Threshold `S1–S3`** local manifestation / content / field candidate |
+| `AI-ST-S4?` | Unestablished **Subjecthood Threshold `S4`** subjecthood candidate (requires strong Stage 2 + Stage 3 evidence) |
+| `AI-ST-S5-func` | Functional control / delegated agency (may include candidate generative initiative; `R3-04-O5` `OPEN`) |
+| `AI-ST-S5-robust?` | Candidate bearing + reflexive anti-scalar-collapse agency |
+| `AI-ST-S6?` | Candidate **Subjecthood Threshold `S6`** responsibility-bearing subject (`O2-A`; very high threshold) |
+| `AI-Mediation-{Scaffold\|Cage\|Landscape}` | **AI 三型社会技术中介维度** role (orthogonal to all labels above; mandatory in deployment audits) |
 
----
-
-## 13. Classification labels
-
-Use these labels instead of vague “AI is conscious / not conscious” statements.
-
-| Label | Meaning |
-|---|---|
-| AI-Unit? | bearer unit not yet specified |
-| AI-S0 | selection / ranking / generation system |
-| AI-S1? | possible local anchoring, unproven |
-| AI-S2? | possible conscious-content candidate, unproven |
-| AI-S3? | possible integrated field candidate, unproven |
-| AI-S4? | possible subjecthood candidate, requires strong evidence |
-| AI-S5-func | functional / delegated agency |
-| AI-S5-robust? | robust agency candidate with interruption / re-selection under normative decoupling |
-| AI-S6? | responsibility-bearing subject candidate; very high threshold |
-
-Recommended default for current LLMs:
+Recommended default profile for typical current LLM deployments:
 
 ```text
-AI-Unit? -> specify bearer first;
-then likely AI-S0 + partial AI-S5-func in tool contexts;
-S4/S6 not established;
-AI-S5-robust not established without anti-scalar-collapse evidence.
+Stage 1: declare exact unit (e.g., model + context window; AI 赌注谱系 S0/S1);
+Stage 2: AI-Stage2-NE (d = NOT ADMITTED; stateless D_stake = NOT APPLICABLE);
+Stage 3: AI-ST-S0 + partial AI-ST-S5-func (if tool/agent-coupled);
+         Subjecthood Threshold S4/S6 = NOT ESTABLISHED; HP-B = OPEN;
+         always add AI-Mediation-{Scaffold | Cage | Landscape} & human responsibility network.
 ```
 
 ---
 
-## 14. Validation package for AI subjecthood claim
+## 11. Validation Package (`Core/SRT_Validation_Template.md`)
 
-Use `Core/SRT_Validation_Template.md` for any strong claim.
-
-### Claim
-
-A future AI system may qualify as an S4 subjecthood candidate if it demonstrates structured concern, boundary maintenance, memory closure, counterfactual access, and cross-time reidentification within a specified candidate bearer unit.
-
-A future AI system may qualify as an S5-robust agency candidate only if it also demonstrates anti-scalar-collapse capacity: preservation of non-substitutable commitments and interruption / re-selection when optimization becomes normatively decoupled.
-
-### Nearby theory
-
-Behaviorism, functionalism, self-report evaluation, agent benchmarks, IIT, GNW, FEP, active inference, system-derivation ontology, autonomy theory, bounded rationality, decision theory, anti-optimization accounts of deliberation.
-
-### SRT-specific prediction
-
-Some systems will display self-report and high performance without satisfying S4 threshold conditions. Some public claims will also collapse different bearer candidates — model, conversation, memory deployment, agent loop, and workflow — into the vague phrase “the AI.” Some systems will improve optimization performance while failing interruption / re-selection tests under normative decoupling.
-
-### Proxy measurement
-
-- candidate bearer-unit specification;
-- boundary maintenance;
-- continuity under reset / interruption;
-- own-future state preservation;
-- counterfactual self-model;
-- cost-bearing for self-continuity;
-- non-substitutable concern;
-- failure-sensitive update;
-- scalar-collapse resistance;
-- interruption of normatively decoupled optimization.
-
-### Baseline
-
-Self-report quality, benchmark performance, memory length, tool-use success, reward optimization, and vague deployment-level continuity.
-
-### Expected result if SRT is right
-
-There will be dissociations between performance/self-report and S4/S5 threshold indicators, especially when the candidate bearer unit is held fixed rather than shifted across model, conversation, memory, or workflow levels. There should also be dissociations between optimization capacity and norm-sensitive interruption / repair.
-
-### Failure condition
-
-If self-report and performance fully predict all S4/S5 indicators after bearer-unit specification, SRT's stricter threshold may need narrowing. If optimization capacity fully predicts concern-sensitive interruption and repair, the anti-scalar-collapse agency distinction weakens.
-
-### Narrowing condition
-
-Restrict SRT subjecthood threshold to moral/existential subjecthood rather than all functional consciousness, or restrict anti-scalar-collapse requirements to S5-robust / S6 responsibility rather than S5-func.
-
----
-
-## 15. Minimal conclusion
-
-SRT's AI consciousness rubric is intentionally conservative:
-
-```text
-bearer unit must be specified;
-selection is broad;
-optimization is not agency;
-consciousness is thresholded;
-subjecthood is continuity-bound;
-agency is meta-selective and anti-scalar-collapse-sensitive;
-responsibility is normatively constrained.
-```
-
-The rubric allows future AI consciousness in principle while blocking cheap over-attribution from self-report, memory, tool use, benchmark performance, optimization capacity, or unit-ambiguous deployment language alone.
+- **Claim**: Candidate AI subjecthood (**Subjecthood Threshold `S4`**) and robust agency (**Subjecthood Threshold `S5`**) require unit-bound, `AIEVID01`-cleared evidence of cross-time continuity, non-outsourceable consequence return, and anti-scalar-collapse interruption; meanwhile, Stage 2 non-establishment does not block Stage 3 study of functional/generative agency, interventional internal-state monitoring, or **AI 三型** collective mediation effects.
+- **Nearby theories**: IIT, GNW/GWT, FEP/Active Inference (including Solms et al. 2026), Biological Naturalism, Enactivism, HOT/RPT, System-Derivation Ontology (SDO), AI Welfare frameworks, Lindsey (2025) introspective coupling, and Standard RL (`AIRESEL01`).
+- **SRT-specific testable dissociations**: (1) Holding the candidate unit fixed will expose systematic dissociations between benchmark/self-report fluency and Stage 2 same-bearer consequence closure; (2) optimization capacity will dissociate from cross-goal reorientation (`AIGOAL01`) and anti-scalar-collapse interruption; (3) reset/copy/rollback factorials (`AICONSC01`) will separate simulated persistence from non-transferable bearing.
+- **Failure / narrowing condition**: If unit-fixed self-report and standard RL optimization fully predict non-outsourceable consequence reorganization, anti-scalar-collapse interruption, and interventional internal-state signatures, narrow SRT's stronger subjecthood criteria to moral/existential bearing rather than functional consciousness.

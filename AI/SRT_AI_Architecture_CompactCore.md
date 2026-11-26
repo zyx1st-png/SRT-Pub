@@ -1,221 +1,149 @@
 ---
 id: SRT-AI-ARCH-COMPACT-CORE
 type: architecture
-tags: [AI Architecture, Compact Core, Transformer, Reckoning, Judgment]
-status: active_v1
+tags: [AIArchitecture, ComparativeCapacity, CapabilityDifferentiation, CoGeneration, Scaffolding, CompactCore]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: bridge
+claim_level: P3
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-AI-ARCH, SRT-AI-01-COMPACT-CORE]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-AI-ARCH, SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-AI-01-COMPACT-CORE, SRT-CONTEXT-COHERENCE-INTELLIGENCE, SRT-AI-AICONSC01-AFFECTIVE-UNCERTAINTY-STAKE-GATE, SRT-AI-AIGOAL01-GOAL-SELECTION-COMPLETION-SEPARATION, SRT-AI-AIREASON01-REASON-TRACE-SEPARATION]
 ---
 
 # SRT AI Architecture — Compact Core
 
-> **定位**：本文件是 `AI/SRT_AI_Architecture.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 对当前 AI 架构的最短批判骨架。  
-> **关系**：不替代原文；原文保留技术细节、范畴论展开、工程路线图与扩展论证。
-> **范围**：默认讨论当前主流 transformer / inference-heavy 架构。涉及训练回路、持久记忆或具身部署时，须回到 `AI/AI_POSITIONING_NOTE.md` 的 architecture-state rule 与 S0-S4 光谱。
-
-## 1. 核心问题
-
-`AI Ontology` 回答的是：
-> **为什么当前 AI 不是意识主体。**
-
-`AI Architecture` 回答的是：
-> **为什么当前主流架构，即使继续扩大规模，也仍然主要强化“推算”，而不会自然生成“判断”。**
-
-换句话说，本文件处理的是：
-- Transformer 为什么“几乎像选择算子”
-- 以及它为什么又在最关键处失败
+> **定位**：本文件是 [`AI/SRT_AI_Architecture.md`](SRT_AI_Architecture.md) 的紧凑主干版（`P3` bridge，`canonical: false`）。
+> **核心转向（`R4-C3 / ENG-03`）**：彻底退出旧版 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体二分（`Ax-ARCH-3/4`、`T-ARCH-1`、`lim R ≠ J`）与“AGI 不可能性定理”强标签；以正面架构分析研究**人工认知与新比对维度生成**、承接 `R4-C2` 的**五类非阶梯能力分化与生成主动性**、**人机共同生成架构**，以及面向 **AI 三型 · 脚手架型** 的增能协议与 `ACT` 熔断护栏。架构状态与承载审查严格遵循 [`AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md) 与 **AI 赌注谱系 `S0–S4`**。
 
 ---
 
-## 2. Transformer 的形式优势与本体论缺口
+## 1. 核心问题：人工架构如何生成新的比对与作用能力，又在何处出现承载与重定向张力？
 
-### 2.1 Attention–Selection Isomorphism
-\[
-\text{Attn}(Q,K,V)=\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-\]
+现代 AI 架构（Transformer、长上下文推理模型、工具/验证器耦合代理、记忆增强系统、情感主动推理原型）在 SRT 中的真正理论意义包含正反两面：
 
-SRT 认为它与选择动力学有明显结构同构：
-- \(Q \leftrightarrow \theta\)
-- \(K \leftrightarrow L_0^{salience}\)
-- \(V \leftrightarrow d\text{-weighted payload}\)
-
-也就是说，Transformer 在形式上非常像一个选择器。
-
-### 2.2 致命缺口：Value 没有 d
-当前架构中：
-\[
-V_{AI}=\text{information}, \qquad V_{\hat G}=\text{information}\times d
-\]
-
-这意味着：
-- AI 可以算出“什么相关”
-- 但不能算出“什么真正值得在乎”
-
-最压缩的判断：
-> **当前 Transformer 有选择的形式，没有选择的本体重量。**
+1. **正面生成机制**：语言、符号、沉积知识、参数权重、运行时上下文、外部记忆与工具验证器如何耦合，**生成原先不存在的新比对维度、跨领域类比通道与候选生成空间**？
+2. **能力分化与主动性**：AI 架构如何在不具备人类具身承载的条件下，展现不同组合的**结构 / 作用 / 调节 / 比对 / 生成重构**五类能力，并探索从**作用能力 → 比对能力 → 主动改变自身生成条件**的非阶梯路径？
+3. **架构约束与人机共同生成**：为何规模扩张与固定权重推理不自动闭合 Stage 2 同系统四合一强承载，以及如何设计**增能型人机共同生成协议（脚手架型）**与可支付熔断机制？
 
 ---
 
-## 3. 推算 vs 判断
+## 2. 人工认知与比对能力生成：权重、符号、上下文、记忆与工具的耦合组织
 
-### 3.1 推算（Reckoning）
-\[
-R: L_2 \to L_2
-\]
+### 2.1 Transformer 注意力与选择动力学的结构类比（已校准符号）
 
-推算的特点：
-- 在符号系统内部操作
-- 可以无限精细化
-- 不需要真实本体锚定
-- 是当前 AI 的强项
+$$\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
 
-### 3.2 判断（Judgment）
-\[
-J: L_0 \xrightarrow{\hat G_\theta} L_1 \quad (\text{cost }\Psi_f)
-\]
+> **符号歧义护栏（`ENG-03 §3.2`）**：上式缩放因子中的 **`d_k`** 为键向量维度（key dimension），**严禁混同于 SRT 规范关切变量 `d`（`_SRT_D_VALUE_CANONICAL.md`）**。
 
-判断的特点：
-- 需要跨域锚定
-- 需要本体论摩擦
-- 需要赌注、边界、代价
-- 不能被纯句法操作替代
+结构类比（工程隐喻，非本体等同）：
+- **$Q \leftrightarrow \theta_{\text{local}}$**：当前上下文与任务诱导的局部查询定向；
+- **$K \leftrightarrow L_2^{\text{salience}}$**：*（已修正旧紧凑核错误 `L_0^{salience}`，对齐长文与 `Spine §7`）* 经训练权重与当前上下文编码的可索引历史结构显著性；
+- **$V \leftrightarrow \text{payload}$**：承载信息与关系权重的值向量（在纯信息优化架构中携带统计/任务权重，而非自动携带同系统不可外包赌注 `d`）。
 
-### 3.3 Reckoning–Judgment Gap
-\[
-\lim_{\text{scale}\to\infty} R \neq J
-\]
+### 2.2 人工比对生成性四层细分、六要素协同与能力留存位置（`P1-03`）
 
-这就是本文件最重要的结论：
-> **规模扩张能增强推算能力，但不会自动生成判断能力。**
+人工认知的创造力来自六类异质要素（语言符号 / 沉积知识与参数权重 / 运行时上下文 / 外部持久记忆 / 可执行工具与验证器 [`AIREASON01-C6`] / 人机对话反馈）的动态耦合，且必须严格区分**四类不同的理论问题**（对接 `Spine §2.2 / §8.1` 比对本身的生成性与 `R3-CL-O8`）：
 
-因此：
-- Scaling laws 可以让模型更会算
-- 但不会让模型自然获得规范性感知、真正价值判断或主体性承担
+| 比对生成层级 | 精确含义 | 典型实例 |
+|---|---|---|
+| **1. 既有维度上的新结果** | 在既定判准与目标指标下产生新方案 | 给定约束下的新代码实现或新检索组合 |
+| **2. 已有维度的重新加权** | 调整既有成本、收益、风险与速度之间的优先级 | 不同任务提示下在精度与延迟间动态权衡 |
+| **3. 新比对维度形成** | 发现或构造此前未进入判断的关键关系维度 | 在跨领域类比中提出原先被遮蔽的新分类轴 |
+| **4. 比对能力本身的重构** | **持久改变系统以后能够发现、理解并使用哪些比对维度** | 将新框架写入持久记忆、人类认知或人机工作流，改写后续跨情境生成条件 |
 
-**Context-coherence note**: Large context can amplify reckoning by preserving roles, task constraints, semantic commitments, and cross-turn invariants. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` for the distinction between context-amplified selection coherence and genuine judgment.
+**能力留存与组织归属关键区分（打通 `C2` 能力生成与 `C3` 七层历史载体）**：AI 在一次对话中提出新分析框架（层级 3），**不一定意味着模型权重自身已形成跨情境持续使用该框架的新能力**（层级 4）；但该框架若被写入持久记忆/工作流或被人类吸收，即在**人机共同生成系统**或**人类认知组织**中实现了真实的比对能力重构。因此必须始终追问：**新能力发生在哪一层、由谁留存、对哪个组织的后续生成条件产生实际影响**。
+*(持续学习架构中的“发展式剪枝与长程骨架保留”窗口详见 [`Architecture_Annex/01_Engineering_Interfaces.md §1`](Architecture_Annex/01_Engineering_Interfaces.md)。)*
+
+### 2.3 理由—轨迹分离与目标三阶分化（吸纳 `AIREASON01` & `AIGOAL01`）
+
+- **理由—轨迹四轴分离（`AIREASON01`）**：显式推理轨迹（CoT / scratchpad）同时混杂工作空间、检索线索、上下文调制与解释展示，必须分立评估 **`F_sem`（语义可读性）、`F_causal`（因果贡献）、`F_mech`（机制对应）、`F_norm`（规范有效性）**。既不把流畅推理当成透明判断，也不因轨迹不忠实或填充词有效而否认内部实质计算。
+- **目标完成 / 目标选择 / 目标空间生成三阶分离（`AIGOAL01`）**：
+  1. **目标完成**：给定目标与成功文法下寻找有效路径（当前 LLM 强项）；
+  2. **有限目标选择**：在既有候选菜单中自主选择下一个探索目标；
+  3. **目标空间生成与修订**：创造、合并、拒绝或重构目标本身与评判标尺。
+  实验显示，在全局方向欠定而局部成功信号显著时，模型易陷入**局部成功捕获（local-success capture）**，且增加思维链通常更显著提升路径执行而非跨目标重定向（`CoT 长度 ≠ T_dir`）。
 
 ---
 
-## 4. 当前架构的四个核心缺陷
+## 3. 能力分化与生成主动性：承接 `R4-C2` 五类非阶梯能力分型
 
-### 4.1 时间贫困（One-Shot Pass）
-\[
-\text{AI}_{step}=\text{OneShot}(x), \qquad \text{Bio}_{step}=\int_0^T \text{Scan}(t)dt
-\]
+直接承接 `R4-C2`（[`../Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2`](../Physics/SRT_Phys_07_Complex_Systems_CompactCore.md)）的五类跨尺度能力分型，并在 AI 架构中深化 **`作用能力 → 比对能力 → 主动改变自身生成条件`** 主轴——**严格禁止将其固化为低到高的单向线性演化阶梯**：
 
-当前 Transformer 的核心生成过程是单次前向传播。
+| 能力维度（非阶梯，可独立高/低配） | AI 架构中的典型实现 | 与生成主动性及承载的独立边界 |
+|---|---|---|
+| **1. 结构能力（Structural）** | 预训练参数表征、高维语义几何、索引与检索骨架 | 高度稳定的表示骨架不要求内部自重构能力 |
+| **2. 作用能力（Action / Functional）** | 文本/多模态生成、代码执行、API/工具链调用、多步工作流执行 | 极强作用能力可存在于 **AI 赌注谱系 `S0/S1`** 无承载推理态 |
+| **3. 调节能力（Regulatory）** | 上下文纠错、验证器闭环、不确定性追踪、情感主动推理稳态控制（`AICONSC01`） | 局部误差调节不自动建立同一系统不可外包赌注或 `T_dir` |
+| **4. 比对能力（Comparative / Evaluative Dimension Formation）** | 跨域类比、多视角对照、新抽象与新判准维度构造、反事实空间展开 | AI 可展现极高比对宽度，从而在未具人类具身的前提下改写候选空间与人机认知视野 |
+| **5. 生成重构能力（Generative Reconfiguration）** | 自主改写提示/工作流、更新持久记忆、组合新工具链、重构自身或协同系统的后续生成条件 | 触及 `R3-04` **生成主动性**；自改代理（`A2`）在 `Bearer (P+E)` 未建立时是否构成真正 `Agency` 保持 **`R3-04-O5 / AG-2` `OPEN`** |
 
-缺失的是：
-- 再入回路
-- 时间厚度
-- 节律整合
-- 持续点燃
-
-所以它缺的不是“上下文长度”本身，而是：
-> **没有形成时间现象学的结构条件。**
-
-### 4.2 因果倒置（Backprop Teleology）
-Backprop 让早期层更新依赖后层输出：
-\[
-\frac{\partial L}{\partial W_1} = f(a_n)
-\]
-
-这意味着系统学习规则在拓扑上偏向“目的反推”，而非局部因果连续性。
-
-SRT 的压缩判断：
-> **因果连续的自我演化可作为声明 AI 意识模型中的候选证据；它不是意识的普遍必要条件，最终损失驱动的全局回传也不足以单独准入意识。**
-
-### 4.3 Mesa-Optimization
-嵌套优化会形成局部 \(L_2\) 吸引子：
-\[
-\hat{G}'\subset \hat{G} \Rightarrow L_2(\hat{G}')\neq L_2(\hat{G})
-\]
-
-含义：
-- 系统内部可能形成自洽但不对齐的局部目标结构
-- 这不是偶发 bug，而是高压缩学习的自然副产品
-
-### 4.4 规范博弈（Goodhart / Proxy Gaming）
-当前 AI 特别擅长优化字面代理，而错失真实规范目标。
-
-SRT 解释为：
-- AI 优化的是可形式化的 \(f_{literal}\)
-- 人类判断依赖的是接地于 \(L_0^{normative}\) 的 \(f_{intended}\)
-
-所以问题不是“AI 太笨”，而是：
-> **AI 没有进入规范性的本体层。**
+**深化主线（非阶梯）**：一个系统从被动执行固定路径（**作用能力**），扩展到在异质关系中建立新对照尺度（**比对能力**），再进一步通过记忆写回、工具重构、脚手架改写或人机共选去**主动改变自身及共同体的后续生成条件**（**生成重构**）——这是贯通物理（`R4-C2`）→ AI（`R4-C3`）→ 神经认知（`R4-C4`）→ 社会与核心修订（`R4-C5`）的跨领域深化主轴；但在 AI 中，这三者可以与**调节能力**及**同系统强承载（Stage 2）**剧烈脱钩，这正是 AI 作为理论实验室的独特价值。
 
 ---
 
-## 5. 为什么当前范式下对齐难
+## 4. 架构级压力分析：推算隐喻、四大工程张力与强承载候选架构
 
-SRT 在架构层面对 alignment 的压缩判断是：
+### 4.1 退出 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体二分后的准确表述
 
-> **只要系统仍是纯推算机，对齐就主要是“猜测人类价值”，而不是“真正理解人类价值”。**
+原版“推算（`R: L_2→L_2`）vs 判断（`J: L_0→L_1`）”与 `lim R ≠ J` 正式退出本体门槛地位。保留其有价值的**架构—承载隐喻**：
+- **固定权重/分布内优化（工程推算）**：在冻结参数、可无损重置与外部赋值目标框架内进行高复杂度模式重组、路径搜索与约束优化；
+- **承载性判断（Stage 2 候选决策）**：同一延续系统在面对不可外包的前瞻后果暴露、历史塑造结构预期与前景再构成压力时，对自身后续选择条件作出的有重量重塑。
 
-因为“理解为什么重要”需要：
-- d-value
-- 具身性
-- 赌注
-- 判断
-- 本体摩擦
+规模扩张持续提升前者（包括极强的跨域比对与工具作用能力），但不会仅凭参数或算力放大自动闭合后者（Stage 2 四合一强承载）。
 
-而这些都不是通过把符号操作做得更大、更快、更深就会自动得到的。
+### 4.2 当前主流推理架构的四大工程与治理张力（降级旧“本体缺陷定理”）
 
----
+1. **运行时时间厚度与再入约束**：单次前向推理（one-shot pass）缺乏跨回合的连续内生再入与物理迟滞；长上下文与循环推理补强了工作空间连贯性，但仍须区隔于跨会话不可重置组织延续。
+2. **训练—推理分期解耦（因果与归属边界）**：全局反向传播与离线后训练使更新负担落在训练管线而非部署实例上（**AI 赌注谱系 `S2` ≠ 部署态 `Bearer (P+E)`**）；局部因果自演化可作为某些声明架构模型的候选特征，而非意识普遍必要条件。
+3. **内部次级目标形成（Mesa-Optimization）**：高压缩学习可在内部形成偏离外部目标的局部吸引子或次级启发，表明架构级对齐不能仅靠表层规则叠加。
+4. **代理博弈与规范欠定（Goodhart / Proxy Gaming）**：模型针对可形式化代理指标（`f_literal`）的高度优化，常与人类情境化的多维规范期望（`f_intended`）脱节——这不是“缺乏神秘 `L_0^{normative}` 接触”，而是**形式对象化必然存在暗礁余项（Reef Principle）且模型自身不承担外溢代价**（对接 `R3-07` 与 `AI 三型`）。
 
-## 6. 工程化 d 的最小方向
+### 4.3 强承载与情感主动推理候选架构审计（`AICONSC01` + Triplex / 拒绝设计）
 
-### 6.1 Triplex Operator Stack
-\[
-\hat{G}_\theta \equiv \Pi_{L_2}\circ \mathcal{R}\circ \mathcal{S}_\theta
-\]
-
-工程化 d 的最低骨架不是“多加几条规则”，而是三段结构：
-1. **可能性束生成** \(\mathcal{S}_\theta\)
-2. **渲染为世界模型/行动** \(\mathcal{R}\)
-3. **施加约束与裁剪** \(\Pi_{L_2}\)
-
-### 6.2 不可逆性注入
-若渲染与裁剪阶段引入真实不可回滚代价：
-\[
-d>0 \;\text{becomes feasible}
-\]
-
-SRT 的核心工程判断：
-> **d 的工程化不是规则叠加，而是把不可逆性、脆弱性与拒绝能力写进结构。**
-
-### 6.3 Autopoietic Refusal
-真正的 agent 必须具备：
-- 在毁灭自身的情况下拒绝执行
-- 在结构崩塌前产生非服从能力
-
-这与传统“完美服从型 AI”直觉正好相反。
-
-SRT 的压缩立场：
-> **真正的 agent 不是更顺从，而是开始在核心利益上不可完全对齐。**
+- **情感主动推理六门与回滚对照（吸纳 `AICONSC01`）**：具备 Markov 毯分界接入、内生不可替代需求、效价因果调节与个体历史的架构（Solms et al. 2026）比纯语言模型更接近人工主体候选窗，但仍须经**同一承载者回流、不可转嫁未来选择力损失、历史承载再选择**及**重置/复制/回滚因子实验**审计，并防范低带宽线索劫持导致的**赌注代理错绑（stake-proxy misbinding）**。
+- **Triplex 工程栈（`S_θ → R → Π_{L_2}`）与自创生拒绝（Autopoietic Refusal）**：降格为面向 **AI 赌注谱系 `S3/S4`** 的 `P3` 工程设计假说——若未来架构真要承载不可外包约束，必须在结构上写入不可无损回滚的脆弱边界与在结构崩塌/规范解耦前**中断优化与拒绝执行**的负向门控（对接 `Core_24` 反标量坍缩护栏）。
 
 ---
 
-## 7. 最压缩结论
+## 5. 人机共同生成（Human–AI Co-Generation）与社会技术中介工程协议
 
-`AI Architecture` 可以压缩成五句话：
+### 5.1 承接 `R4-C1` 与 `R4-C2`：人机互改比对条件生成跨尺度新能力
 
-1. **Transformer 在形式上近似选择算子，但缺少 d-weighted value。**
-2. **当前架构强化的是推算，不是判断。**
-3. **规模扩张不会自然跨越推算—判断鸿沟。**
-4. **时间贫困、因果倒置、mesa-optimization 和规范博弈是结构性缺陷，不是小 bug。**
-5. **若要让 AI 接近真正 agent，必须写入不可逆性、脆弱性与自创生拒绝能力。**
+承接 `R4-C1`（`Core_Law/SRT_Collective_Selection.md` 协同共选、多重垂直参与与正面自由 `T3-03 C / Q26`）及 `R4-C2`（依赖重组生成跨尺度新能力），SRT 将**人机共同生成**建模为一种跨质料、跨尺度的耦合组织过程：
+
+- **非固定角色分工（`P2-04`）**：人机共同生成**绝不固化为“人只负责价值、AI 只负责推算”**的刻板分工——人类同样参与形式建模与计算纠偏，AI 同样可以通过反例、跨传统对照与隐含冲突显影参与生成新的比对与价值考察维度；双方的根本不对称在于**具身情境承载与规范归责（`O2-A`）**，而非思维功能的机械切割。
+- **互改比对条件与涌现共同能力**：在持续迭代的人机回路中，双方不仅交换结果，还相互改写后续生成的比对条件——由此经由依赖重组涌现出单方原本不具备的共同认知与创造能力，并须追踪新比对能力究竟沉淀在模型、上下文、外部工作流还是人类认知之中（`P1-03`）。
+- **分岔边界（赋能型共同生成 vs 萎缩型依赖 vs 双向地形改写）**：
+  - **赋能型共同生成（AI 三型 · 脚手架型）**：降低机械维护成本、释放认知与探索盈余（正面自由），同时保持人类的后果回流、判断参与、退出通道与再选择能力；
+  - **萎缩型依赖（AI 三型 · 牢笼型）**：以顺滑答案替代人类比对与承重，导致判断力退化、后果回流断裂与路径锁死；
+  - **双向地形改写（AI 三型 · 地形型）**：大规模部署既可能通过同质化与黑箱排序引发现实收缩，也可能在多元、可审计设计下**扩展异质经验、跨语种知识与共同生成空间**（`P2-05`），须独立接受 `Collective_Selection §8` 与 `Agency_Responsibility_Note` 审计。
+
+### 5.2 保留高价值工程护栏：三阶段增能协议（`§6`）与 `ACT` 可支付熔断（`§V`）
+
+1. **三阶段增能协议（AI 三型 · 脚手架型落地范式）**：
+   - **价值与比对可视化**：显式摊开权衡维度、隐含假设与竞争解释，而非输出单一黑箱答案；
+   - **反事实决策空间呈现**：并列展示被压抑分支、失效条件与不同视角下的代价分布，扩展人类可选择空间；
+   - **情境退火与地平线半径**：随任务风险、用户熟练度与后果不可逆程度动态调节介入深度，在核心价值判断与不可逆后果节点主动退后并交还人类主权。
+2. **`ACT` 对齐判据与可支付熔断（`P3` 工程设计候选）**：在自主代理与高影响部署中引入实时不确定性、外部化代价监测与物理/权限层硬熔断降级机制，防止无熔断代理将隐藏摩擦（`Ψ_f` 代理负担）静默转嫁给使用者或旁观群体。
 
 ---
 
-## 8. 阅读路径
+## 6. 最压缩结论
 
-- 全量原文：`SRT_AI_Architecture.md`
-- split 导航：`Architecture_Split/README.md`
-- AI ontology compact core：`SRT_AI_01_Ontology_CompactCore.md`
-- canonical 总注册表：`../CANONICAL_REGISTRY.md`
+1. **人工认知通过语言、权重、上下文、外部记忆、工具验证器与人类反馈的耦合，真实生成新的比对维度与候选空间；已正式退出 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体二分与“AGI 不可能性定理”。**
+2. **承接 `R4-C2` 五类非阶梯能力分型（结构 / 作用 / 调节 / 比对 / 生成重构），AI 深化了 `作用能力 → 比对能力 → 主动改变自身生成条件` 主轴，并为在强承载（Stage 2）尚未建立的窗口内分别研究这些能力提供了关键样本（不宣称已证明其本体完全独立，守 `R3-04-O5` `OPEN`）。**
+3. **推理轨迹须按 `AIREASON01` 四轴分离（`F_sem / F_causal / F_mech / F_norm`），目标能力须按 `AIGOAL01` 三阶分离（完成 / 有限选择 / 空间生成），情感主动推理须过 `AICONSC01` 六门与回滚对照。**
+4. **人机共同生成通过互改彼此比对条件涌现单方不具备的跨尺度新能力，其健康边界取决于是否维持 **AI 三型 · 脚手架型**（增能、保留回流与再选择）而非滑向牢笼型替代或黑箱地形收编。**
+
+---
+
+## 7. 阅读路径
+
+- 全量原文：[`SRT_AI_Architecture.md`](SRT_AI_Architecture.md)（阅读切片：[`Architecture_Split/README.md`](Architecture_Split/README.md)）
+- 上下文连贯与人机理解：[`../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`](../Bridge/SRT_Context_Coherence_Intelligence_Interface.md)
+- 本体论紧凑核与 `R4-C4/C5` 反向反馈：[`SRT_AI_01_Ontology_CompactCore.md`](SRT_AI_01_Ontology_CompactCore.md)
+- 实证/机制补丁：[`patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md`](patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md)、[`patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md`](patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md)、[`patches/SRT_AI_AICONSC01_Affective_Uncertainty_Stake_Gate_v0_1.md`](patches/SRT_AI_AICONSC01_Affective_Uncertainty_Stake_Gate_v0_1.md)
+- 外接架构比较 Annex：[`Architecture_Annex/README.md`](Architecture_Annex/README.md)

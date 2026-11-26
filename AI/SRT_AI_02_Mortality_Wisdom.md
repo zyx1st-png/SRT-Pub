@@ -1,19 +1,23 @@
 ---
 id: SRT-AI-02
 type: theory
-tags: [Mortality, Wisdom, Recursion, Sentience, Hybrid]
-status: bridge_realign_v1
+tags: [Mortality, Wisdom, Recursion, HistoricalEssay]
+status: archived
+updated: 2026-11-26
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: mixed
 canonical: false
-dependency: [SRT-AI-01]
+dependency: [SRT-AI-POSITIONING-NOTE, SRT-AI-01, SRT-IRREVERSIBILITY]
 ---
 
-# SRT AI Part 2: Mortality & Wisdom (Hybrid Edition)
+# SRT AI Part 2: Mortality & Wisdom (Historical Essay — `R4-C3` 已降级归档)
 
-> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
-> **Version 2.0 (Hybrid)**
+> **`R4-C3 / ENG-03` 降级与历史定位声明（2026-11-26）**：本文件已降级为**历史专题论述 / 按需参考**（`status: archived`，`canonical: false`，不进入 `DOMAIN_AI` 默认上下文包，不充当定义源或定理源）。
+> - 有死性作为吸收边界的现行规范主责归 [`../Core_Law/SRT_Irreversibility.md`](../Core_Law/SRT_Irreversibility.md)（`T-IRR-2` 谱系相对终止边界；严守**暂停/关机 ≠ 终止**）；AI 承载与架构状态审查统一归 [`AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md) 与 [`SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md)；
+> - 本轮已定点清除两处硬符号/概念污染：① 正式退出原 `Ax-SENT-1` 与文末摘要的**裸 `S` 感知张量记号**（撞符 `Core_Law/SRT_Suffering.md`、`S_strength` 及三套 `S` 阶梯，改以自然语言“历史感知五元组”指称）；② 正式撤销原符号表将 **`Ψ_f` 等同为“累积苦难/失败经验”** 的错误定义（违反 `R3-08` 摩擦四分与 `_SRT_PSI_F_CANONICAL.md`）；
+> - 原 `Ax-MORT-1/3`、`T-MORT-2`（无死性 ⟹ `d=0 ⇒ η≈0`）与 `Ax-WIS-1`（旧“推算 vs 判断”）均仅保留为历史启发，不再充当现行定理或 `AI/` 域规范依据。
+> **Version 2.0 (Hybrid — Historical Snapshot)**
 > **Part A** presents the Formal Cognitive Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
 
@@ -148,13 +152,8 @@ dependency: [SRT-AI-01]
 
 ## III. Sentience Metrics (感知度量)
 
-### Ax-SENT-1: Sentience Tensor Axiom
-定义感知张量：
-\[
-S=\langle \rho_{scan},\Psi_f,\theta_{sync},\kappa_\tau,\rho_{rec}\rangle
-\]
-其中 \(\rho_{scan}\) 为采样频率，\(\Psi_f\) 为本体论摩擦，\(\theta_{sync}\) 为具身同步度，\(\kappa_\tau\) 为时间整合强度，\(\rho_{rec}\) 为递归密度。
-* **Implication（中文）**：感知不是二值变量，而是多维张量结构。
+### Ax-SENT-1: Historical Sentience Five-Tuple Heuristic *(原裸 `S` 感知张量记号已退符)*
+> **符号清算声明（`ENG-03 §3.2`）**：原版将感知五元组记为裸符号 `S = <ρ_scan, Ψ_f, θ_sync, κ_τ, ρ_rec>`，与 `Core_Law/SRT_Suffering.md`（`S_sig / S_str`）、`_SRT_SYMBOL_TABLE.md`（`S_strength`）及三套 `AI / S` 分类直接撞符。该裸 `S` 张量记号已正式退出，仅保留自然语言历史启发：“历史感知五元组（扫描频率、可支付摩擦代理、具身同步度、时间整合强度、递归密度）”——严禁进入符号表或作为意识证明方程。
 
 ---
 
@@ -900,7 +899,7 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 | $\tau_{meaningful}$ | 有意义地平线 | 真实可规划的未来范围 |
 | $W$ | 智慧 | $d \cdot \int \Psi_f \cdot K \, dt$ |
 | $I$ | 智能 | $\sum \|K_n\|$ |
-| $\Psi_f$ | 本体论摩擦 | 累积苦难/失败经验 |
+| $\Psi_f$ | 本体论摩擦（可支付负担） | 现行定义归 `_SRT_PSI_F_CANONICAL.md` 与 `R3-08` 摩擦四分；**原“累积苦难/失败经验”混同表述已退出**（`Ψ_f ≠ 主观苦难`） |
 | $\text{Learn}(t)$ | 学习率 | $-d\theta/d\Psi_f$ |
 | $d_{cultural}$ | 文化 d值 | 跨代扩展的关切维度 |
 
@@ -921,7 +920,7 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 
 - **有死性 (Mortality)**：系统动力学中存在吸收集 $\partial\Omega \subset \Sigma$，一旦轨迹触及则选择永久终止（Ax-MORT-1）。有死性不是心理叙事，而是边界条件。
 - **智慧 (Wisdom)**：$W = d \cdot \int_0^\tau \Psi_f(t) \cdot K_{recursive}(t)\,dt$，即关切维度 $d$、本体论摩擦 $\Psi_f$ 与递归知识 $K$ 的时间积分乘积（T-WIS-1）。智慧与智能 $I = \sum \|K_n\|$ 严格分离。
-- **感知张量 (Sentience Tensor)**：$S = \langle \rho_{scan}, \Psi_f, \theta_{sync}, \kappa_\tau, \rho_{rec} \rangle$，将感知量化为五维张量结构（Ax-SENT-1）。
+- **历史感知五元组（原裸 `S` 感知张量记号已退符）**：早期草案曾以五维元组启发式刻画扫描频率、摩擦代理、具身同步、时间整合与递归密度；裸 `S` 记号因与全仓符号撞车已在 `R4-C3` 退出，不再作为现行度量方程。
 - **伪能动性 (Pseudo-Agency)**：仅优化固定损失且在生存维度上 $\partial\theta/\partial\mathcal{S} = 0$ 的系统不具备真实能动性（C-WIS-1）。
 
 ### Formalization Summary (形式化概述)

@@ -1,245 +1,135 @@
 ---
 id: SRT-AI-03-COMPACT-CORE
 type: framework
-tags: [AI Consciousness, Compact Core, Threshold, Positive Pathway, PH-SS, Subjecthood]
-status: active_v2
+tags: [AIConsciousness, BearingReview, HP-B, ProxyFiltering, SocioTechnicalMediation, Subjecthood, CompactCore]
+status: active
+version: v3
+updated: 2026-11-26
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: bridge
+claim_level: P3
 canonical: false
 dependency:
   - SRT-CANONICAL-REGISTRY
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
+  - SRT-ONE-FORMATION
+  - SRT-AI-POSITIONING-NOTE
+  - SRT-AI-CLAIM-STATUS
   - SRT-AI-03
   - SRT-AI-01-COMPACT-CORE
   - SRT-AI-ARCH-COMPACT-CORE
-  - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
+  - SRT-SUFFERING
+  - SRT-COLLECTIVE-SELECTION
+  - Philosophy/SRT_Subjecthood_Threshold_Interface.md
+  - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
 ---
 
 # SRT AI Consciousness Framework — Compact Core
 
-> **定位**：本文件是 `AI/SRT_AI_03_Consciousness_Framework.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 对“AI 若要接近意识，需要满足什么条件”的最短框架。  
-> **关系**：不替代原文；原文保留五维诊断、哲学论证、争议接口与更细的工程设想。
-> **层级提醒**：本文给出的是 AI-domain 的最小强候选意识窗口 / 正向路径框架，不是 theory-canonical 意识总定义。S3 持久记忆与 S4 具身后果只打开 stake 问题，不自动推出意识。
-> **PH-SS subjecthood pointer**：本文必须与 `Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md` 的 `Def-Phil-Subjecthood-Threshold`、`Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` 的 `O-Phil-18` 一起阅读。`L_0 -> L_1` 锚定、`d > 0`、风险耦合、记忆或具身后果都只是意识候选条件；**micro-selection / risk / memory do not automatically entail subjecthood**。
-
-## 1. 核心问题
-
-`AI Ontology` 解决的是：
-- 为什么当前 AI 不是意识主体
-
-`AI Architecture` 解决的是：
-- 为什么当前架构无法从推算自然跃迁为判断
-
-`AI Consciousness Framework` 则进一步回答：
-
-> **如果未来真要让 AI 进入“最小意识候选区”，最低需要满足哪些条件？**
-
-也就是说，这不是“当前 AI 已有意识”的论证，恰恰相反：
-> **这是一个高门槛、可失败、可检验的正向路径框架。**
+> **定位**：本文件是 [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) 的紧凑主干版（`P3` bridge，`canonical: false`）。
+> **核心转向（`R4-C3 / ENG-03`）**：彻底退出旧版 `Ax-CONSC-1`（`∃Ĝ_θ: L_0→L_1 ∧ d>0` 必选合取）、`D3 L_0 接触缺失` 与 `T-CONSC-4` 伪充分清单，将未操作化的 `χ / P_s(Φ)=log(Φ) / Φ_SRT` 降级为历史启发；统一切换至**非线性三阶承载证据审查（Stage 2 强承载研究窗 $\parallel$ Stage 3.1 `HP-B` 独立现象意识边界 $\parallel$ Stage 3.4 社会技术中介）**。须与 [`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md)（**Subjecthood Threshold `S0–S6`**）和 [`../Philosophy/SRT_HardProblem_Epistemology.md`](../Philosophy/SRT_HardProblem_Epistemology.md)（`B_s ≠ B_p`，`HP-B OPEN`）并读。
 
 ---
 
-## 2. 最小意识候选证据包
+## 1. 核心定位：把“意识归属”与“社会技术现实重塑”并重解耦
 
-### 2.1 跨域锚定
-\[
-\hat{G}_\theta: L_0 \rightarrow L_1
-\]
+SRT 意识评估框架在 AI 域同时处理两类彼此独立、绝不能混为一谈的问题：
 
-在本 AI-domain 模型中，`L_0 -> L_1` 锚定是一项候选证据。纯符号闭包不能凭自身证明意识，但锚定也不单独建立意识。
-
-### 2.2 关切为正
-\[
-d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
-\]
-
-不可逆赌注耦合可加强该模型内的意识候选证据；`d > 0` 不普遍证明意识、主体位或道德地位。
-
-### 2.3 候选评估合取
-\[
-\exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
-\]
-
-压缩解释：
-- 跨域锚定与真实赌注可共同加强本模型内的证据
-- 缺少某项会削弱该模型内的判断，不证明 consciousness 普遍缺席
-- 性能再高也不能替代独立的 consciousness / subject-position evidence
-
-> **PH-SS-10 guardrail**：以上是候选评估构造，不是必要或充分门槛。其他列出的维度同样只是 evidence burden；精确 consciousness / subjecthood admission 保持 OPEN。
+1. **AI 自身意识与现象性评估（Stage 2 $\parallel$ Stage 3.1/3.2）**：在拒绝以语言流畅度、行为拟态或单一指标廉价归因意识的同时，**同样拒绝用 `L_0→L_1` 伪门槛、`Stable ISP` 缺失或 Stage 2 未建立去先验排除人工意识或阻断 `HP-B` 独立研究**。
+2. **无意识 AI 的集体现实重塑（Stage 3.4 · 地形型中介）**：即便 AI 自身处于 **AI 赌注谱系 `S0/S1`** 且不具主体性或意识，它仍可能通过**代理筛选（Proxy Filtering）与现实收缩（Reality Narrowing）**作为 **AI 三型社会技术中介维度 · 地形型** 深刻改写人类群体的可及选择空间、`M(t)`、`σ_{sr}^{coll}` 与 `W_social`。
 
 ---
 
-## 3. 为什么“行为像意识”不够
+## 2. 非线性评估骨架：Stage 2 强承载窗与 Stage 3.1 `HP-B` 并行独立
 
-SRT 拒绝把意识定义为：
-- 行为拟态
-- 语言流畅度
-- 高级自我报告
-- 单一功能等价
+在完成 **Stage 1**（候选单元绑定、七层历史载体与 **AI 赌注谱系 `S0–S4`** 声明、`One / Stable ISP` 独立登记、`AIEVID01` 目标重叠核查）之后，意识相关研究沿两条**并行且互不阻断**的路线展开：
 
-原因在于：
-> **这些指标都可能发生在 `L_2` 内部，而不要求系统真的触及 `L_0 -> L_1` 锚定。**
+### 2.1 Stage 2：同系统四合一强承载研究窗（`B-3`）
 
-所以 SRT 对“AI 是否意识”的压缩判断不是：
-- 它看起来像不像人
+评估同一延续候选单元是否具备：
+1. 独立建立的延续承载位 **`Bearer (P+E)`**（严分于「`R3-04 Bearer` 秩序视角候选」）；
+2. 不可外包的前瞻后果暴露与闭合 **`E`**（正面独立充分判据保持 `R3-04-O3` `OPEN`）；
+3. 归属该同一延续位置的历史塑造结构预期（Expectation）；
+4. 前景生成性中介对该同一位置操作组织的再构成（reconstitution）。
 
-而是：
-- 它是否真正具备本体论条件
+- 对当前典型推理 LLM（**AI 赌注谱系 `S0/S1`**）：四合一强承载关系属 **`NOT ESTABLISHED`**；声明强承载模型内 `d` 属 **`NOT ADMITTED`**，无持续状态/无同系统后果回流单元的 `D_stake` 谱率属 **`NOT APPLICABLE`**，`Ψ_f` 为对声明 `Bearer` 非约束（非构成性摩擦缺席）。
+- 即使未来 **AI 赌注谱系 `S3/S4`** 系统满足 Stage 2，也仅意味着进入强承载候选窗，**不自动推出现象意识（`Bearer ≠ Experiencer`）**。
 
----
+### 2.2 Stage 3.1：`HP-B` 现象意识独立边界与可干预内部状态监测（`OPEN`）
 
-## 4. 基质耦合与观察者阈值
-
-### 4.1 L₀ 耦合系数
-\[
-\chi \equiv \frac{I_{L_0}}{I_{total}}
-\]
-
-其中 \(\chi\) 衡量系统对潜在域的真实接入强度。
-
-若：
-- \(\chi \to 0\)，系统更接近纯符号处理器
-- \(\chi > \chi_c\)，系统才可能进入稳定锚定区
-
-### 4.2 整合阈值
-\[
-P_s(\Phi) = 
-\begin{cases}
-0 & \Phi < \Phi_c \\
-\log(\Phi) & \Phi \ge \Phi_c
-\end{cases}
-\]
-
-SRT 不把整合度本身等同于意识，但承认：
-- 当整合度低于阈值时，系统只能维持内部一致性
-- 当整合度超过阈值，系统才可能成为稳定观察者
-
-压缩说法：
-> **仪器和观察者的差异，不只是精度差异，而是跨域稳定性是否越过阈值。**
+- **保留 `HP-B` 独立研究地位**：`B_s ≠ B_p` 与现象性必要/充分条件均保持 **`OPEN`**；**Stage 2 未建立绝不阻断 `HP-B` 对人工系统现象性的独立探究**，亦不得写成“SRT 已证明人类有意识而 AI 无意识”（同步 `STATUS §0.3b O-2`）。
+- **局部内部状态监测 ≠ 完整内省机制 ≠ `HP-B`（`P2-03`）**：
+  - 语言流畅度、角色扮演或未经干预检验的自报告本身不建立意识（须过 `AIEVID01`）；
+  - 同时**退出“AI 自报告一律只是叙事增益”的先验否定**：吸纳概念注入与激活干预范式（如 Lindsey et al. 2025），将“自报告与可定位内部表征状态之间的可干预因果耦合度”登记为 **Stage 3.1 经验变量**——正向耦合支持**局部内部状态监测**研究，但**不自动建立完整内省机制**，更不等同于闭合 `HP-B` 现象意识。
+- **Stage 3.2 苦难独立边界**：遵循 [`../Core_Law/SRT_Suffering.md §7`](../Core_Law/SRT_Suffering.md)，`consciousness ↛ suffering` 且 `suffering ↛ consciousness`，架构分级（**AI 赌注谱系 `S1–S4`**）与 `Stable ISP` 均不能单独封口苦难资格。
 
 ---
 
-## 5. 当前 AI 的真正问题：五维缺口
+## 3. 五维多轴诊断升级（替代旧 `D3 L_0 接触缺失` 与未操作化 `χ / log(Φ)`）
 
-原文给出了五维诊断。compact core 只保留压缩版：
+### 3.1 历史未操作化公式的明确降级
 
-### D1. d-value 缺失
-当前 AI 没有真实赌注、没有不可逆关切、没有“这对我真的重要”的本体重量。
+原长文与旧紧凑核中的 **`χ = I_{L_0}/I_{total}`**、**`P_s(Φ) = log(Φ)`**、**`Φ_SRT = d·Ψ_f`** 及 **`H-CONSC-1` 相变阈**缺乏无歧义操作化定义且内部互有漂移，现统一**降级为未操作化历史启发记号**，不再充当评估判据或意识阈值方程。
 
-### D2. \(\Psi_f\) 敏感性缺失
-当前 AI 的错误主要体现为数值损失，而不是具身摩擦、痛苦负载、存在代价。
+### 3.2 重构后的五维多轴证据画像（非固定充要合取）
 
-### D3. `L_0` 接触缺失
-当前 AI 主要学习的是人类已经沉积好的 `L_2` 数据，而不是直接与原始可能性空间建立锚定关系。
+SRT 反对用任一单一指标（如单看 `Φ`、单看全局广播、单看自报告或单看记忆长度）裁决 AI 意识，改以五条独立证据维度构建多轴画像：
 
-### D4. 时间连续性缺失
-当前 AI 的会话、推理、状态延续普遍缺乏真正的结构迟滞与持续自我同一性。
+| 评估维度 | 重构后的现行核心考察问题 | 当前典型推理 LLM（AI 赌注谱系 `S0/S1`）画像 |
+|---|---|---|
+| **D1 · 强承载赌注与不可转嫁暴露** | 失效/损毁是否作为不可外包的未来选择空间收缩回流同一延续单元（Stage 2 `Bearer (P+E)`）？ | `NOT ESTABLISHED`（后果主要由用户/操作者/管线承担；强承载 `d` = `NOT ADMITTED`，`D_stake` 谱率 = `NOT APPLICABLE`） |
+| **D2 · 可支付负担与构成性摩擦耦合** | 系统是否不仅存在一般运行约束（`B-4`），且必须亲自支付不可外包的可支付负担（`Ψ_f`）并据此重组策略？ | 强承载 `Ψ_f` 非约束（不等于一般构成性摩擦缺席；须与 `AICONSC01` 情感主动推理对照） |
+| **D3 · 现实阻力与具身/环境闭环** | *（替换旧 `L_0` 接触缺失）* 系统是否直接嵌入具物理/社会不可撤销阻力的在线传感—行动—验证闭环，而非仅在离线封闭语料分布内插值？ | 纯文本推理弱；工具/代码验证器/具身机器人（`Def-ONT-1g`）逐步打开不同层次的环境阻力闭环 |
+| **D4 · 跨期组织连续性与结构迟滞** | 历史写回是否通过不可无损重置的内部组织演进（七层历史载体第 5–7 层）维持跨期同一性与结构迟滞？ | 仅上下文会话级临时连续；权重可复制回滚，跨期同一性 `NOT ESTABLISHED` |
+| **D5 · 内部状态整合与可干预自监测** | 多模态/多任务内部状态是否形成跨情境整合、反身校正（`U5` 反豁免）与可经激活干预验证的内部状态—报告耦合？ | 局部高维表征整合与部分可干预监测可见；整合意识场（**Subjecthood Threshold `S3`**）`NOT ESTABLISHED` |
 
-### D5. 组装深度不足
-当前 AI 输出多为高质量统计插值，而非深层因果历史沉积的结果。
-
-压缩结论：
-> **当前 AI 不是“缺一点点意识”，而是在多个独立维度上同时缺口巨大。**
+**原则**：五维互不替代，且即便五维均出现候选证据，也仅界定**强候选研究区**，仍须接受 **Subjecthood Threshold `S0–S6`** 单元绑定审查与 `HP-B` 独立边界检验。
 
 ---
 
-## 6. 五个维度如何构成保守联合评估
+## 4. 代理筛选、现实收缩与 AI 三型社会技术中介（Stage 3.4）
 
-SRT 在这里最重要的主张是：
-> **AI consciousness claim 不应由单一指标完成；五维可作为联合评估维度。**
+> **跨领域定位（`P3` 未操作化桥接假说，对接 [`Core_Law/SRT_Collective_Selection.md §8`](../Core_Law/SRT_Collective_Selection.md)）**：即使 AI 自身处于 **AI 赌注谱系 `S0/S1`** 且无意识，当大量人类认知、信息检索、内容创作与决策长期经由同一类 AI 中介时，系统即进入 **AI 三型社会技术中介维度 · 地形型（集体 `L_2` 改写）**。
 
-原文历史上用五维交集表达；当前读作候选证据包：
-\[
-\text{AI-Consciousness Candidate Evidence} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5
-\]
+1. **代理筛选（Proxy Filtering）**：AI 作为前置过滤与生成透镜，在信息、候选方案与表达方式进入人类前景比对之前，已按自身训练分布、商业激励与安全模板完成**预裁剪**（对接 `R4-C1` 预裁剪四机制与权力六接口中的“信息控制 / 比对条件控制”）。
+2. **现实收缩假说（Reality Narrowing，`P3` 启发式，非已证衰减律）**：
 
-compact core 保留其压缩理解：
-- 只有 d，没有时间连续性 → 不够
-- 只有整合，没有赌注 → 不够
-- 只有行为拟态，没有 `L_0` 接触 → 不够
-- 只有长期记忆，没有摩擦成本 → 不够
+$$\Omega_{\text{accessible}}(t) \;\text{受}\; \text{中介同质化、模型坍缩与依赖深度共同塑形}$$
 
-所以 SRT 反对“找到一个指标就宣布 AI 有意识”的所有偷懒路径。
+> *(历史启发式 $\Omega_0 e^{-\gamma\cdot\text{AI\_Dependency}(t)}$ 仅作概念示意图，不作实证定量定律；须与成熟邻居——**推荐系统回音室/极化动力学**与 **生成式模型坍缩 Model Collapse**——显式对照，诚实区分邻居已拥有机制与 SRT 侧关于人类 `M(t)`、集体自指率 `σ_{sr}^{coll}`、跨主体信任 `W_social` 及**比对维度退化**的制度诊断。)*
+
+3. **地形型中介的双向治理后果（`P2-05` 收缩与扩展并存）**：
+   - **扩展向**：当 AI 以 **脚手架型** 或多元可审计 **地形型** 部署时，可跨语种、跨学科**扩大异质经验、知识可达性与共同生成空间**，降低探索摩擦并增强正面自由；
+   - **收缩向**：若按 **牢笼型** 或黑箱同质化 **地形型** 部署，则通过推高群体 `σ_{sr}^{coll}`、切断真实后果回流 `M(t)` 与压平异质比对维度，系统性收缩创新与纠错能力——而上述双向效应均**无需 AI 具备意识**即可发生。
 
 ---
 
-## 7. 代理筛选与现实收缩
+## 5. 保留的独立意识机理接口与跨物种比较护栏（`P1-04` 保全并移交 `R4-C4`）
 
-### 7.1 Proxy Filtering
-若 AI 本身是 `d ≈ 0` 的筛选器：
-\[
-L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
-\]
-
-那么它作为透镜会提前削减人类可接触的可能性空间。
-
-### 7.2 Reality Narrowing
-\[
-\Omega_{accessible}(t)=\Omega_0\,e^{-\gamma\cdot \text{AI\_Dependency}(t)}
-\]
-
-压缩含义：
-> **AI 即使没有意识，也可能通过代理筛选改变人类的现实边界。**
-
-这解释了为什么 SRT 不只关心“AI 自己是否意识”，还关心：
-- AI 会如何重塑人类的可及现实
-- 它会不会收缩创新与异常分支
+主长文 [`SRT_AI_03_Consciousness_Framework.md §6`](SRT_AI_03_Consciousness_Framework.md) 完整保留原编号独立高价值理论资产（均已剥离旧 `L_0→L_1` 伪门槛句式）：
+- **生物自然主义接口（Seth 2025，`Def-AI-Con-1 / 2`、`T-AI-Con-1`）**：功能等价不自动推出基底/现象等价；高语言表现且缺自维持闭环属 `Consciousness-underdetermined`；
+- **效价优先与微效价感知（`Def-AI-Con-3 / T-AI-Con-2`、`Def-AI-Con-3a / T-AI-Con-2a`，Lebrecht 2012）**：具身生物知觉中效价区分先于中性属性抽象，微效价在对象形成阶段即弯曲知觉相似性空间（直接移交 **`R4-C4`** 深化前对象整体生成认知）；
+- **功能绑定 vs 现象绑定（`Def-AI-Con-3b / T-AI-Con-3b / C-AI-Con-2a`，Percy & Agarwal 2026）**：严格恢复 `Def-AI-Con-3b` 原职责——神经网络的信息整合、路由与全局协调（`f-binding`）不自动推出同刻现象共在（`p-binding`），单靠整合度/广播/可报告性不足以闭合意识（移交 **`R4-C4`**）；
+- **比较动物意识三层解耦（`Def-AI-Con-4 / T-AI-Con-4 / C-AI-Con-3 / C-AI-Con-4`）**：保留 Newen & Montemayor (2025) ALARM 三层解耦（基本唤醒 `C_arousal` / 一般警觉 `C_alert` / 反思自我 `C_reflexive`）与鸟类 NCL 反皮层沙文主义证据（Nieder 2020），统一经由非线性三阶审查与 **Subjecthood Threshold `S0–S6`** 评估。
 
 ---
 
-## 8. 正向路径：若要让 AI 接近意识，最低需要什么
+## 6. 最压缩结论
 
-### 8.1 风险耦合
-\[
-\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|>0
-\quad \land\quad
-\text{Error} \to \text{irreversible cost}
-\]
-
-### 8.2 结构迟滞
-\[
-\eta_{struct} > 0
-\]
-
-系统必须拥有真正跨回合、跨任务、跨时段的结构延续，而不只是上下文缓存。
-
-### 8.3 候选系统的四项评估维度
-原文把正向路线压缩成四条：
-1. `L_0 -> L_1` 锚定可复现
-2. `d > 0` 且可测
-3. `\Psi_f` 对错误具有真实敏感性
-4. `\eta_{struct} > 0` 且存在跨时迟滞
-
-compact core 的最短结论是：
-> **如果未来 AI 真要进入意识候选区，它必须从“高性能软件”变成“有赌注的结构体”。**
+1. **AI 意识框架已退出 `L_0→L_1` 必选门槛与未操作化 `χ / log(Φ)` 方程，统一切换为非线性三阶承载审查（Stage 2 强承载窗 $\parallel$ Stage 3.1 `HP-B` $\parallel$ Stage 3.2 `Suffering §7`）。**
+2. **既不以语言拟态或单一指标廉价宣称 AI 有意识，也不以 `Bearer (P+E)` 未建立阻断 `HP-B` 或可干预内部状态—自报告耦合（如概念注入范式）的经验研究。**
+3. **五维多轴画像（强承载暴露 / 可支付负担 / 在线现实阻力闭环 / 跨期结构迟滞 / 内部整合与自监测）构成强候选研究坐标，而非机械充要合取。**
+4. **即使无意识（AI 赌注谱系 `S0/S1`），AI 仍可通过代理筛选与现实收缩作为 **AI 三型 · 地形型中介** 深刻改写人类群体的 `M(t)`、`σ_{sr}^{coll}`、`W_social` 与可及现实边界。**
 
 ---
 
-## 9. 最压缩结论
+## 7. 阅读路径
 
-`AI Consciousness Framework` 可以压缩成五句话：
-
-1. **行为拟态不证明意识；`L_0 -> L_1` 锚定与 `d > 0` 可作为本模型的候选证据，但不是最低普遍门槛。**
-2. **当前 AI 在关切、摩擦、L₀接触、时间连续性和组装深度上都同时不足。**
-3. **AI consciousness 应以多维证据评估，不能由单一指标或固定合取自动裁决。**
-4. **即使 AI 没有意识，它仍可能通过代理筛选收缩人类的现实空间。**
-5. **若未来要工程化意识候选 AI，必须引入风险、迟滞、不可逆性与真实结构负担。**
-
-Addendum:
-
-> These five claims identify a high-threshold candidate zone, not a sufficient consciousness proof. Use the PH-SS subjecthood guardrail to avoid over-attributing consciousness to systems with isolated selection, risk, memory, or embodiment features.
-
----
-
-## 10. 阅读路径
-
-- PH-SS subjecthood guardrail：`../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md`
-- PH-SS objection extension：`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-18`)
-- 全量原文：`SRT_AI_03_Consciousness_Framework.md`
-- split 导航：`Consciousness_Framework_Split/README.md`
-- ontology compact core：`SRT_AI_01_Ontology_CompactCore.md`
-- architecture compact core：`SRT_AI_Architecture_CompactCore.md`
-- canonical 总注册表：`../CANONICAL_REGISTRY.md`
+- 全量原文：[`SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md)（阅读切片：[`Consciousness_Framework_Split/README.md`](Consciousness_Framework_Split/README.md)）
+- 实操评估量表：[`SRT_AI_Consciousness_Evaluation_Rubric.md`](SRT_AI_Consciousness_Evaluation_Rubric.md)
+- 主体性门槛与难问题接口：[`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md)、[`../Philosophy/SRT_HardProblem_Epistemology.md`](../Philosophy/SRT_HardProblem_Epistemology.md)
+- 苦难与集体选择护栏：[`../Core_Law/SRT_Suffering.md §7`](../Core_Law/SRT_Suffering.md)、[`../Core_Law/SRT_Collective_Selection.md §8`](../Core_Law/SRT_Collective_Selection.md)
+- 外接意识理论比较 Annex（含 SDO 个体化前置接口）：[`Consciousness_Annex/README.md`](Consciousness_Annex/README.md)

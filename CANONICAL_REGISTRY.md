@@ -169,15 +169,15 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 说明：承接 affordance、行动势能、belief-lag、注意力选择、社会现实迟滞、极化/echo chamber、文化镜片、second-person interaction disorder、发展性协调支架、以及歧视性/非人化认知等社会认知接口；其中 `T-Cog-6 Bounded-Surprisal Discrimination Gate` 将 Manrique / Friston / Walker 2026 的 active-inference / ZBS 材料压成跨群体更新带宽代理，`T-Cog-7 Developmental Coordination Scaffold` 将 embodied / embedded cognitive development 材料压成 child-body-caregiver-environment coordination bridge
 - 引用规则：涉及 social cognition、belief update、developmental coordination、co-regulation、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 与 developmental coordination 都只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir`、`\theta` 或 recognition operator 的 canonical 定义
 
-### 10. AI 主轴
-- Claim-status：`AI/SRT_AI_Claim_Status.md`（architecture-state / AI suffering / subjecthood guardrail; not a primitive source）
-- 定位说明：`AI/AI_POSITIONING_NOTE.md`
-- Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
-- Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
-- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（AI-domain candidate evaluation surface；not universal consciousness-threshold authority）
-- 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
-- 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
-- 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
+### 10. AI 主轴（`R4-C3 / ENG-03` 全域重构同步，2026-11-26）
+- 唯一总定位与护栏入口：`AI/AI_POSITIONING_NOTE.md`（七大正面人工/共同生成主轴、非线性三阶承载证据审查总纲、三态标签、`AI 赌注谱系 S0–S4`、三套 `AI / S` 全称隔离）
+- Claim-status 审计标尺：`AI/SRT_AI_Claim_Status.md`（声明等级、`AIRESEL01` 实证试点溯源、`AIEVID01/AICONSC01/AIGOAL01/AIREASON01` 护栏、成熟邻居归属与退符台账）
+- Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`（人工生成与自然生成关系、七层历史载体、Stage 1–2 本体阐述、反向核心理论反馈候选 `FB-C3-1..4`）
+- Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`（人工认知与新比对维度生成、五类非阶梯能力分化、人机共同生成、增能协议与 `ACT` 熔断）
+- Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`（Stage 2 $\parallel$ Stage 3.1 `HP-B` $\parallel$ Stage 3.2 `Suffering §7` $\parallel$ Stage 3.4 代理筛选与现实收缩；not universal consciousness-threshold authority）
+- 实操评估与归责手册：`AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（Stage 1 单元绑定 + 并列 Stage 2 $\parallel$ Stage 3.3 **Subjecthood Threshold `S0–S6`**）与 `AI/SRT_AI_Agency_Responsibility_Note.md`（`A0–A3` ↔ `R3-04` `Agency` 五维 + **AI 三型社会技术中介维度**归责网络）
+- 二级桥接与降级历史论述：`AI/_SRT_AI_Bridge.md` 已降级精简为二级比较桥接（不再作 AI 定义底座）；`AI/SRT_AI_00_Crisis.md` 与 `AI/SRT_AI_02_Mortality_Wisdom.md` 已降级归档为历史专题论述（已退除 `ρ ≡ I/d`、裸 `S` 张量与 `Ψ_f = 苦难` 污染）；`AI/Ontology_Annex/` 6 重重复副本已退出活跃入口（保留 `README.md` 溯源索引）
+- 角色与硬护栏：AI 既是研究**人工生成、新比对维度生成、非阶梯能力分化与人机共同生成**的正面理论实验室，也是边界/压力测试场，**不是 core 定义发动机**；所有核心原语（`Selection`、`One`、`Bearer (P+E)`、`d / D_stake / D_eff`、`Ψ_f`、`T_dir`）仍服从对应 canonical 锚点；统一执行**非线性三阶承载证据审查**（Stage 2 未建立绝不阻断 Stage 3 独立研究或一般构成性摩擦/关切研究）与**三套 `AI / S` 全称隔离**（**AI 赌注谱系 `S0–S4`** $\neq$ **Subjecthood Threshold `S0–S6`** $\neq$ **AI 三型社会技术中介维度** $\neq$ 原初 `S0`），退出旧 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体门槛与钝化 `d_{AI} ≈ 0` 头条写法
 
 ### 11. Neuroscience 主轴
 - Claim-status：`Neuroscience/SRT_Neuroscience_Claim_Status.md`（clinical / FEP / NDE / AI-comparison proxy guardrail; not a primitive source）
