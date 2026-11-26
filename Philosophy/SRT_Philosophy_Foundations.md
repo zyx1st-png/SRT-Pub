@@ -17,7 +17,7 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CAN
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Foundations_Split/README.md`](Foundations_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Role**: Philosophy domain expansion / core-support text. It re-expresses SRT commitments in philosophical language and comparison problems, and feeds philosophical inheritance, constraints, and candidate revisions back into SRT's core (`R4-C1`).
-> **R4-C1 Alignment Note (2026-11-26)**: Read `SRT_Philosophy_Foundations_CompactCore.md` first for the current `R4-A/B/C1` unified generative philosophy picture (`L_0/L_1/L_2` as three analytic perspectives rather than three stacked substances; `T3-04 D` source vs. extraction; dynamic three-relation web of Existence/Order/Time/Value/Freedom/Subjecthood/Consciousness; `07-19` dynamic balance & object-friction mutual writing; `N2 / C1-c` fallible objectivity; `NODE-BOOK-BACKFLOW` theoretical reflexivity; and mature-philosophy bidirectional feedback). Legacy formulas below (such as `Ax-PhilF-1` linear `L_0 → L_1 → L_2`, `Ax-PhilF-1b` `e_{pg}` consciousness-seed gloss, or `Ax-PhilF-1c` `Thought/Extension` dual shorthand) are retained as historical argumentative layers and must be interpreted through the current Spine and CompactCore.
+> **R4-C1 Alignment Note (2026-11-26)**: Read `SRT_Philosophy_Foundations_CompactCore.md` first for the current `R4-A/B/C1` unified generative philosophy picture (`L_0/L_1/L_2` as three analytic perspectives on one reality rather than three stacked substances or a pregiven possibility warehouse; primitive `Selection` separated from formed-system `\hat{G}_\theta` and payable `\Psi_f`; actual occurrence / relatively independent existence `One` / persistence / fallible objectivity `C1-c` / cross-position verifiability separated rather than ranked as `E1–E4` ontological strength levels; `T3-04 D` source vs. extraction; dynamic three-relation web; `07-19` dynamic balance & object-friction mutual writing; `NODE-BOOK-BACKFLOW` theoretical reflexivity; and mature-philosophy bidirectional feedback). Historical formulas preserved below in Parts A–B (`Ax-PhilF-1` linear `L_0 → L_1 → L_2`, `Ax-PhilF-1b` `Existence ≡ Being Selected` and retired `2026-04-14` `e_{pg}` consciousness-seed gloss, `Ax-PhilF-1c` `Thought/Extension` shorthand, `Ax-PhilF-2` moduli-space latency, `Ax-PhilF-3` "never parameter-free", and `Ax-PhilF-4` fixed-point closure) are **historical / domain-model layers only** and must not be read as a second competing ontology overriding `Core_Law/SRT_Generative_Ontology_Spine.md`, `Core_Law/SRT_L0_Metaphysics.md`, and `SRT_Philosophy_Foundations_CompactCore.md`.
 > **Claim-level note**: Mainly P2/P3 interpretive and bridge claims, with P4 where operational predictions appear and P5 where exposition is pedagogical.
 > **Does not define**: primitive axioms, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or Selection occurrence (former `Real Choice Moment` is superseded by RC-A).
 > **Depends on**: Core/canonical sources including `Core/SRT_Core_21_Minimal_Axioms.md`, `Core/SRT_Core_21b_Constitutive_Theorems.md`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, and `Governance/SRT_CLAIM_LADDER.md`.
@@ -55,11 +55,12 @@ Read this file with:
 Core guardrails:
 
 ```text
-L0 is not a hidden object-world;
-selection-before-existence is manifestational, not temporal;
-theta is not subjective will;
-Psi_f is not a single cost;
-stabilization is not moral justification;
+L0 is the open / non-preclosed analytic aspect, NOT a pregiven possibility warehouse;
+primitive Selection does NOT universally require formed G_hat_theta or payable Psi_f;
+actual occurrence != formed One != persistence != objectivity != cross-position verifiability;
+theta is not subjective will (and applies to formed realizations, not primitive Selection);
+Psi_f is not a single cost (and does not equate to subjective pain);
+stabilization is not moral justification (PT10 E / O2-M = HOLD);
 selected reality is not relativism;
 not all selection is consciousness.
 ```
@@ -112,50 +113,33 @@ Do not read older sections in Parts C–E as overriding the current PH-SS guardr
 <!-- ORIGINAL-CONTENT-INSERTED -->
 ## I. Ontological Foundations
 
-### Ax-PhilF-1: Triadic Ontology
-现实由 $L_0/L_1/L_2$ 三域构成，并由选择动力学耦合。
-$$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$$
-*   **Implication**: 任何哲学问题都是三域投影的不同面向。
+> **`R4-C1` Re-Anchoring Notice（消除新旧双重理论体系）**：本节 `Ax-PhilF-1..4` 保留为**历史哲学映射与形成后领域模型表达**，不再作为与 `Core_Law/SRT_Generative_Ontology_Spine.md` / `SRT_Philosophy_Foundations_CompactCore.md §0–§6` 并列的第二套本体论。凡涉及 `L_0/L_1/L_2` 关系、原初 `Selection`、存在与发生之区分及 `e_{pg}` 推论者，一律按下列现代范围校准读解。
+
+### Ax-PhilF-1: Triadic Ontology（历史三域表达 → 当前改为同一现实的三分析视角）
+- **历史表述**：$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$（仅保留为**形成后参数化模型**的简化记法）。
+- **`R4-C1` 现行口径**：`L_0 / L_1 / L_2` 是同一生成现实的**三个分析视角**（开放非预封闭视角 / 局部确定显现视角 / 留存历史效力视角），**不是**三个叠加本体层或强制线性流水线；原初 `Selection` 不普遍绑定形成态算子 `\hat{G}_\theta`（见 `CompactCore §0, §3`）。
 
 ---
 
-### Ax-PhilF-1b: Pan-Selectionism (泛选择论)
-宇宙的基础不是物质，也不是意识（作为实体），而是"选择"这一动作本身：
-\[
-\text{Existence} \equiv \text{Being Selected} \quad (\hat{G}[L_0] \to L_1)
-\]
-
-> **PH-SS guardrail**: Selection-before-existence is manifestational priority, not chronological priority. `L_0` should be read as a modal field of selectability / condition of possible manifestation, not an object-like hidden world. Micro-selection does not entail subjecthood.
-
-* **Implication（中文）**：泛心论认为电子"拥有"微弱的意识，SRT 纠正为：电子的存在正是微观环境对其发生了一次 $\hat{G}$ 观测/选择的结果。意识不是属性，而是使现实得以跨越存在门槛的守门动作（The Cut）。
-* **补注（2026-04-14）**：若需要在 SRT 内部保留电子尺度的“内侧性”语言，最稳的写法不是“电子 already has weak consciousness”，而是：电子只携带一个电子尺度的方向种子 `e_{pg}`。大脑意识不是这些 `e_{pg}` 的简单相加，而是该方向种子在分子、细胞与神经层级中被持续写回、放大并最终跨过 `(\Psi_f>0,\ d>0,\ \text{minimal }L_2\text{ closure})` 门槛后的相变式展开。
+### Ax-PhilF-1b: Pan-Selectionism (泛选择论 — 历史口号校准)
+- **历史口号**：$\text{Existence} \equiv \text{Being Selected} \quad (\hat{G}[L_0] \to L_1)$（仅作反实体论历史口号溯源，**退出字面同一式**）。
+- **`R4-C1` 现行口径**：严格区分**实际发生（确定实际化）**、**相对独立存在（formed `One`）**、**组织持续性（`L_2` 留存）**、**可错客观性（`C1-c`）**与**跨位置可验证性**（见 `CompactCore §5–§6`），不再将 `Existence ≡ Being Selected` 或 `E1–E4` 读作单一本体存在强度阶梯。
+- **历史补注退场声明（取代原 2026-04-14 `e_{pg}` 意识种子注记）**：早期将 `e_{pg}` 写为“电子尺度方向种子并经 `(\Psi_f>0, d>0, \text{minimal }L_2\text{ closure})` 相变展开为大脑意识”的表述已被 `Gate 0 / B-A / R3-03` **正式废除**——`ε_pg` 不得充当原初方向源或泛心种子，`HP-B` 现象性准入独立保持 `OPEN`（详见 `SRT_HardProblem_Epistemology.md §1.5`）。
 
 ---
 
-### Ax-PhilF-1c: Dynamical Spinozism (动力学斯宾诺莎主义)
-斯宾诺莎的"实体"在 SRT 中被映射为 $L_0$（具有无限多属性），而"思维"与"广延"不再是平行的静态属性，而是由 $\Psi_f$ 的高低决定的动态谱系：
-\[
-\text{Thought} \iff \text{High Friction } (\Psi_f \gg 0) \text{ Exploration in } L_0
-\]
-\[
-\text{Extension} \iff \text{Low/Payable Friction } (\Psi_f>0\ \text{but manageable}) \text{ Execution in } L_2
-\]
-* **Implication（中文）**：心与物不是两种实体，而是同一个系统在处理预测误差时，由于本体论摩擦负荷不同而展现出的两种现象学状态。"物"是已经凝固、低摩擦且长期可支付的"心"；"心"是正在燃烧、高摩擦的"物"。差别不在于有无摩擦，而在于摩擦强度、可支付性与更新速率。
+### Ax-PhilF-1c: Dynamical Spinozism (动力学斯宾诺莎主义 — 历史类比)
+- **历史类比**：以 $\Psi_f$ 高低对比“思维（探索）”与“广延（稳定执行）”属于早期 `P5` 哲学类比，**退出作为心物关系本体定义**。当前统一按 **`Q01 / O-Phil-11` 并行选择抽取**理解物理外观与内在生成/评价抽取（见 `CompactCore §0, §1`），严守 `R3-08` 摩擦四分。
 
-### Ax-PhilF-2: Moduli-Space Latency
-潜在域是模空间，显现是沿路径的积分。
-$$L_0 = \mathcal{A}/\mathcal{G}, \quad L_1 = \oint_\gamma \omega_{L_0}$$
-*   **Implication**: “可能性”不是心理假设，而是几何结构。
+### Ax-PhilF-2: Moduli-Space Latency（仅限特定物理/几何领域投影）
+- **历史模型投影**：$L_0 = \mathcal{A}/\mathcal{G}, \quad L_1 = \oint_\gamma \omega_{L_0}$。
+- **`R4-C1` 范围收窄**：模空间商群仅属特定数学物理类比/领域投影（`Gate 0 Class B`），不得反推 `L_0` 为预先给定的完整可能性空间或集合（`CompactCore §4`）。
 
-### Ax-PhilF-3: Embodied Constraint
-算子必须具身，无法存在无参选择。
-$$\hat{G}\ \text{valid} \iff \theta \in \Theta_{finite}$$
-*   **Implication**: 绝对视角不成立，任何理论必须携带参数立场。
+### Ax-PhilF-3: Embodied Constraint（仅限形成后算子实现，不回投原初 `Selection`）
+- **形成后模型范围**：$\hat{G}_\theta\ \text{valid} \iff \theta \in \Theta_{finite}$ 适用于**形成后具身/认知算子**（不存在无立场“上帝视角”观察者）；**严禁**由此反向宣称一切原初 `Selection` 均须携带参数化算子 `\hat{G}_\theta` 或支付 `\Psi_f`（`Core_21 P0-04`）。
 
-### Ax-PhilF-4: Normative Closure
-$L_2$ 是选择历史的稳定不动点。
-$$L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma \}\;$$
-*   **Implication**: 规范不是外在强加，而是选择的自我闭包。
+### Ax-PhilF-4: Normative Closure（稳定化 ≠ 规范正当性）
+- **历史模型表述**：$L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma\}$ 仅作局部动力学不动点模型草图（实际 `L_2` 历史效力无需静态不动点，`Core_12b`）；稳定化的 `L_2` 约束**绝不自动获得伦理正当性**（`PT10 E / O2-M = HOLD`）。
 
 ## II. Formal Readings and Domain Corollaries
 
@@ -233,9 +217,11 @@ I_{in}(L_0 \to \hat{G}_\theta) > B_{max}(\theta)
 ---
 
 
-## I. Axiom Mapping (公理的一致性)
+## I. Axiom Mapping (公理的一致性 — 历史保真层)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-本模块的推导严格依赖于以下核心公理（详见 `_SRT_Phil_Axioms.md`）：
+> **`R4-C1` 历史层护栏**：本节及下文 `Def 2.1`（`Consciousness ≡ \hat{G}_\theta[L_0]`）与 `Map-Ph1` 保留为早期哲学映射论证层，**不覆盖**当前 `Spine`、`SRT_Philosophy_Foundations_CompactCore.md §0–§6` 及 `SRT_HardProblem_Epistemology.md §1.5`（现行口径不以 `Existence ≡ Being Selected` 或 `Consciousness ≡ \hat{G}_\theta[L_0]` 作字面定义，亦不将 `L_0` 视作迈农域式预给定对象仓库）。
+
+本模块的推导严格依赖于以下历史哲学映射条目（详见 `_SRT_Phil_Axioms.md`）：
 
 1.  **Ax-Ph1 (Esse est Eligi)**: 存在即被选择。$L_1$ 是 $\hat{G}$ 从 $L_0$ 中切割出的确定义。
 2.  **Ax-Ph2 (Reduction)**: 现象学还原是剥离 $L_2$ 滤镜直面 $L_0$ 的操作。
@@ -823,16 +809,16 @@ L_2(t)
 | 外部伪问题（去参数化） | 低~中 | Closed（伪全知姿态） | 不可定义 |
 | 语义逃避（仅词汇隔离） | 低~中 | Semi-open→Closed | 被低估/被遮蔽 |
 
-### Domain Definition Summary (领域定义概述)
-- **Domain reading**: 本文档在哲学域重述 SRT 的核心本体论。现实由 $L_0/L_1/L_2$ 三域构成，$L_1(t)=\hat{G}_\theta[L_0(t)]$ (Ax-PhilF-1)；存在等价于被选择 (Ax-PhilF-1b)；$L_0$ 是模空间 $\mathcal{A}/\mathcal{G}$，显现是沿路径的积分 (Ax-PhilF-2)；算子必须具身于有限参数空间 (Ax-PhilF-3)；$L_2$ 是选择历史的稳定不动点即规范闭包 (Ax-PhilF-4)。
+### Domain Definition Summary (领域定义概述 — `R4-C1` 统一校准)
+- **Domain reading**: 本文档在哲学域重述并扩展 SRT 统一关系生成论（以 `SRT_Philosophy_Foundations_CompactCore.md §0–§6` 与 `Core_Law/SRT_Generative_Ontology_Spine.md` 为准）：`L_0 / L_1 / L_2` 为同一现实的三个分析视角而非叠加三域；原初 `Selection` 不普遍绑定形成态算子 `\hat{G}_\theta` 或可支付 `\Psi_f`；实际发生、相对独立存在（`One`）、组织持续性、可错客观性（`C1-c`）与跨位置可验证性分属不同维度。旧 `Ax-PhilF-1..4` 仅保留为形成后局部模型与历史论证溯源。
 
-### Domain Formal Reading Summary (领域形式读法概述)
-- **Formal reading**: 哲学域常用方程包括：
-  - $L_1(t) = \hat{G}_\theta[L_0(t)],\; L_2(t+1)=\text{Stabilize}(L_1(t))$ — 三域耦合动力学。
-  - $\text{Existence} \equiv \text{Being Selected}\;(\hat{G}[L_0]\to L_1)$ — 泛选择论。
-  - $L_0 = \mathcal{A}/\mathcal{G}$ — 潜在域为模空间商群。
-  - $\mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0$ — 解释鸿沟为维度差。
-  - $\Delta\text{Frame} \iff \int\Psi_f\,dt>\Psi_{threshold}$ — 框架转变需跨越摩擦势垒。
+### Domain Formal Reading Summary (领域形式读法概述 — 仅限声明的形成后模型)
+- **Formal reading**（以下均为**形成后领域桥接模型/类比记法**，非核心公理或原初 `Selection` 普遍条件）：
+  - 形成后算子与历史写回局部记法：$L_1(t) = \hat{G}_\theta[L_0(t)],\; L_2(t+1)=\text{Stabilize}(L_1(t))$（仅作声明模型简写，不代表线性本体阶梯）。
+  - 历史反实体论口号溯源（已退场字面同一式）：`Existence ≡ Being Selected`（现按实际发生 / `One` / 持续性 / 可验证性四分拆解）。
+  - 特定数学物理类比投影：$L_0 = \mathcal{A}/\mathcal{G}$（`Gate 0 Class B`，不反推预给定可能性空间）。
+  - $\mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0$ — 解释鸿沟的接口维度压缩模型候选。
+  - $\Delta\text{Frame} \iff \int\Psi_f\,dt>\Psi_{threshold}$ — 框架转变势垒模型类比。
 
 ### 【理论边界/防误用声明】
 - 不采纳”外部问题无意义=现实无结构”的推论：SRT 否定的是去参数化问法，不是否定跨尺度结构。
