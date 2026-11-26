@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: ac3852944
+source_commit: 6121da0a3
 source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
 source_dirty: false
-inputs_digest: 0c995daa8b6fe389
+inputs_digest: faba05c8db27e0a8
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,7 +27,7 @@ inputs_digest: 0c995daa8b6fe389
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `ac3852944` |
+| 来源 commit | `6121da0a3` |
 | 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
