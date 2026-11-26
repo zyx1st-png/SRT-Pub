@@ -12,7 +12,12 @@ dependency: [SRT-SOC-02]
 
 # SRT Sociology III: Institutions & Macro-Dynamics (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
+> **Claim-status note（2026-05; `R4-C1` synced 2026-11-26）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives and feeds institutional-economics / sociology insights (North, Ostrom, Simmel, Acemoglu) back into SRT's core, but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md`, `Core_Law/SRT_Collective_Selection.md`, and relevant PH-SS guardrails.
+>
+> **R4-C1 Institutional-Theory Backbone (`NODE-SOCIAL-L2 EA-2` + `R3-07` + `NODE-BOOK-BACKFLOW`)**:
+> 1. **SEA Five-Gate Institutional Audit & Coding Interface（闭合 `NODE-SOCIAL-L2 EA-2`）**：承接 `Core_Law/SRT_Collective_Selection.md §6.1`、`Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` 与 `Operations/SRT_SEA_CASE_CODING_MANUAL_v0_1_2026-08-05.md`，制度选择与后果外包审计严禁给抽象机构贴静态标签，而须冻结编码单位 **`U = <event, boundary, timescale, evidence packet>`**，逐门检验不可加权补偿的五门（`DMF / NER / PEF / CBP / HEF`，外包链解析至 `CBP-3/4`），严格区分 `unresolved` 与 `failed`，坚持**领域机制优先**（法律、产权、预算、权限、清算与执行器）及**八类角色不得洗白**（差异生成者 / 登记者 / 授权者 / 执行者 / 受益者 / 承受者 / 修复者 / 历史写回位置）。
+> 2. **社会驻留三方分离与权力六接口**：制度持续性须区分可修订跨主体信任权重 **`W_social`**、后果回路矩阵 **`M(t)`** 与高 **`\rho` 路径惯性 / 产权强制约束**（若资源流全由产权、权力强制与路径粘性解释，则撤回 `W_social` 信任增量读法）；制度权力沿六类前背景接口作用（行为 / 资源 / 信息 / 比对条件 / 价值参照 / 规范形成控制）。
+> 3. **委托四要件与社会发展四维**：健康制度委托须可审计 **有范围 / 有期限 / 能撤销 / 能审查**（`NODE-BOOK-BACKFLOW`, `Q23`）；制度变迁评估采用非标量、非伦理排序算法的**社会发展四维**（生成能力 / 能力分布 / 不可逆构成基础 / 秩序重构能力，`R3-07`），并严守 `PT10 E` 与 `O2-M = HOLD`。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Institutional Axioms (AI-Readable).

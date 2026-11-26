@@ -65,18 +65,16 @@ Under object-first ontology, one tends to assume:
 
 SRT reverses this floor.
 
-It does not begin from already-completed objects. It begins from a latent field of possibilities (`L0`), a constrained selection operator (`Ĝθ`), the cost or friction of actualization (`Ψ_f`), manifest actualization (`L1`), and repeated stabilization or sedimentation (`L2`).
+It does not begin from already-completed objects or a pre-given warehouse of finished possibilities. Under the unified `R4-A/B/C1` generative ontology (`Core_Law/SRT_Generative_Ontology_Spine.md`), it begins from **primitive Selection** (genuine actualized non-neutral differentiation) unfolding through **three bidirectional generative relations**—**generation of difference ⇄ comparison and organization of difference ⇄ recursive reconstruction of generative conditions**—viewed through three analytic perspectives (`L_0` open/non-preclosed aspect, `L_1` determinate manifest aspect, `L_2` retained historical-efficacy aspect), without treating `L_0/L_1/L_2` as three stacked substances or `d`-maximization as an ethical solver (`PT10 E / O2-M = HOLD`).
 
-The core movement is therefore:
+The recursive movement is therefore:
 
 ```text
-L0 potentiality
-  -- constrained selection / Ĝθ, paying Ψ_f -->
-L1 manifestation
-  -- repetition, stabilization, sedimentation -->
-L2 constraint domain
-  -- downward constraint -->
-future Ĝθ
+Analytic perspective cycle (bidirectional, NOT a static linear warehouse pipeline):
+L_0 (open/non-preclosed) <==[Selection / formed G_hat_theta, paying Psi_f]==> L_1 (determinate actuality)
+        ^                                                                           |
+        |_________ recursive condition & comparison-scale reconstruction ___________v
+                               L_2 (retained historical scaffolding)
 ```
 
 This means that SRT's cross-scale explanatory power is **vertical**, not merely horizontal. It does not explain many fields by stretching a metaphor sideways. It explains why those fields can be connected at all: each domain involves latent possibilities being selected into manifest realities and then hardened into constraints.

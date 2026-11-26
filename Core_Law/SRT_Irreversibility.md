@@ -172,7 +172,7 @@ The equation models competition between writeback and decay under those declared
 
 Bounded claims:
 
-- forgetting is not literal reversal of historical occurrence;
+- forgetting is not literal reversal of historical occurrence (aligning with `Core/SRT_Core_12b_Ontology_L2.md §0` Pillar 4: natural decay of non-negative path traces $\rho$, foreground-background rearrangement, signed trust reweighting $\Delta w_{\text{trust}}$, and structural unfreezing are all *subsequent generative acts* that modify active efficacy without turning prior occurrence into never-occurrence);
 - retained learning traces can produce path dependence where retention is established;
 - rewriting, compensation or decay may alter or remove active downstream effects;
 - a domain model may test whether a trace remains causally effective in later behavior or Selection conditions.
@@ -226,6 +226,15 @@ all termination = globally absorbing forever.
 ```
 
 Biological death, AI instance identity, collective termination, shutdown, checkpoint restoration and reconstruction are domain realizations. Each requires its own account of unit, continuity, reset and evidence. A restored snapshot can begin later activity without thereby proving internal continuation of a lineage already declared terminated.
+
+### Dissolution vs. lineage termination (Symmetric Downside alignment, `R3` Closeout / `R4-C1`)
+
+In cross-scale generative dynamics, **structural dissolution is not identical to lineage termination (`解体 ≠ 谱系终止`)**. Termination or cessation of an organization's active form encompasses at least three distinct modes that must not be conflated:
+1. **Payability overload / involuntary collapse** (maintenance burden exceeds payable window `Ψ_f` capacity);
+2. **Active ending / deliberate boundary release** (an agentive or developmental process concluding a form without passive breakdown);
+3. **Structural transformation / lineage reorganization** (dissolution of an earlier configuration serving as the enabling condition for a reorganized or higher-order lineage—e.g., metamorphosis, paradigm dissolution, or institutional refounding).
+
+None of these erases `P0-03` occurrence non-equivalence, and none automatically implies pathology or moral failure.
 
 ---
 

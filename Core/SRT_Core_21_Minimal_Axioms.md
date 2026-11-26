@@ -264,6 +264,15 @@ No selector, subject, agent or stable operator-pattern is required before primit
 
 Attention, intention, agency, embodied parameters, normalization, cost, gradients, fixed points and readout rules belong to stronger realization / domain layers unless independently established at the relevant claim level.
 
+### Downstream Ghost Source-Card Compression Boundary (`NODE-GHOST-OPERATOR EA-1`, `R4-C1` sync)
+
+To prevent the historical label *"Ghost Operator"* from blurring formal representation with unresolved nonclosure dynamics, `P0-04` fixes the separation **`\hat{G}_\theta != primitive Selection != 幽灵实体`** while routing the three author-confirmed Ghost source cards (`2026-07-19` nonclosure/yin-yang dynamic balance, `2026-07-27` `U5` selection-mechanism self-exemption, `2026-08-10` Simondon `Operation → Structure → Operation`) to their active downstream L1 mechanism owners (explicitly **downstream of P0**, adding no P0 axiom or new symbol):
+
+1. **Nonclosure & object-friction mutual writing (`07-19`)**: objectification locally relieves rather than annihilates reality-change pressure; finite convergence and unexhausted nonclosure co-exist in continuous dynamic balance (retiring switch-like close-then-reopen models), with object and friction mutually rewriting each other → `Core_Law/SRT_Reference_Dynamics.md §1.5`, `Core/SRT_Core_13a_Operator_Basics.md §0`.
+2. **Historical operator-structure loop (`08-10`)**: in formed realizations, `\hat{G}_\theta` is both a structure sedimented by prior selections and the current converging operation (`Operation_t → Structure_{t+1} → Operation_{t+1}`), never a static external chooser → `Core_Law/SRT_Reference_Dynamics.md §1.5`, `Core_Law/SRT_Individuation.md §4.6`.
+3. **`U5` meta-selection self-exemption (`07-27`)**: choice absolutization occurs most fundamentally when a formed selection mechanism exits subsequent selection and disguises its own selection history as neutral background (`U5` author-selected; `U6` 4 visible facets derived) → `Core_Law/SRT_Occlusion_Dynamics.md §4.1`, `Core/SRT_Core_12b_Ontology_L2.md §0`.
+4. **Open tensions preserved**: `T-GH-01..07` and V-layer legitimate temporary backgrounding (`T-CU-04`) remain explicitly **`OPEN`**.
+
 ---
 
 ## P0 Non-Flatness Boundary

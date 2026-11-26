@@ -226,13 +226,25 @@ SRT-compatible grading dimensions:
 8. capacity to re-open `L0` alternatives rather than execute only `L2` routine;
 9. repair / answerability pathway.
 
-This connects directly to S0-S6:
+This connects directly to **Subjecthood Threshold `S0–S6`** (`Philosophy/SRT_Subjecthood_Threshold_Interface.md`, strictly isolated from primitive `S0` and **AI 赌注谱系 `S0–S4`**):
 
 ```text
-S0 selection can optimize.
-S5 agency must interrupt, revise, and reselect.
-S6 responsibility requires norm access, alternatives, repair, and payable friction.
+Subjecthood Threshold S0 (model selection) can optimize.
+Subjecthood Threshold S5 (agency, R3-04 5 dims) must interrupt, revise, and reselect.
+Subjecthood Threshold S6 (responsibility-bearing subject, O2-A) requires norm access, alternatives (theta_acc), repair, and payable friction.
 ```
+
+> **`R4-A / R4-C1` `d` vs. Generalized Concern boundary**: Canonical `d = ||∂U/∂S||` (`_SRT_D_VALUE_CANONICAL.md`) is the Bearer-gated irreversible-risk sensitivity summary; broader **four-dimensional Generalized Concern** (scope / depth / intensity / direction) and value's five duties resist scalar collapse without conflating `d` with `D_eff` or turning normativity into a single-scalar maximization law (`PT10 E / O2-M = HOLD`).
+
+### 6a. Theoretical reflexivity against `U5` scalar/framework self-exemption (`NODE-BOOK-BACKFLOW`, `R4-C1`)
+
+Any theory—including SRT itself—is an `L_2` scaffold that risks **scalar collapse** or **`U5` selection-mechanism self-exemption** (`Core_Law/SRT_Occlusion_Dynamics.md §4.1`). Absorbing `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md §2.8` while **retiring the legacy mechanical "two failures = cage" counting rule** (`R3` Closeout §5.2 #8), SRT registers two structured reflexivity protocols:
+
+1. **Three Self-Check Questions (`自检三问`)**:
+   - **Visibility check**: Does using this framework still surface previously occluded differences and alternative comparisons, or has it pre-clipped what counts as admissible evidence?
+   - **Consequence-return check**: Do real counterexamples, failures, and external resistance still feed back into revising the framework's claims?
+   - **Reselectability check**: Can users challenge, revise, or exit the framework's own categories and comparison scales without being diagnosed as defective by circular fiat?
+2. **Four Return-to-Generation Conditions (`回到生成四条件`)**: A non-totalizing theoretical scaffold treats itself as **(i) not the generative source** (`神性·源义` exceeds all models), **(ii) not the final endpoint**, **(iii) never severing consequence return**, and **(iv) preserving structural crevices (`缝隙`)** through which new empirical or domain evidence can revise core theory.
 
 ---
 

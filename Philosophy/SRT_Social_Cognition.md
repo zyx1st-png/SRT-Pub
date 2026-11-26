@@ -12,7 +12,13 @@ dependency: [SRT-PHIL-AXIOMS]
 
 # SRT Social Cognition: Affordance & Pathology (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
+> **Claim-status note（2026-05; `R4-C1` synced 2026-11-26）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives and feeds cognitive/social-science constraints back into SRT's core, but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md`, `Core_Law/SRT_Collective_Selection.md`, and relevant PH-SS guardrails.
+>
+> **R4-C1 Positive Social-Cognition Integration (`R3-05 / R3-07`)**:
+> 1. **Social residency 3-way split**: Do not collapse social durability into a single "belief" or "trust" variable; distinguish revisable cross-subject trust allocation (`W_social`), asymmetric consequence-return topology (`M(t)`), and high-`ρ` path inertia / coercive enforcement (`Core_Law/SRT_Collective_Selection.md §3.5`; retaining `C2` withdrawal when coercion/property/stickiness fully accounts for stability).
+> 2. **`2B` non-shame social co-regulation**: Social conflict signals can be structured as revisable consequence-comparison cues (`2B`, `SRT_Ethics_PH_SS_Guardrails.md §0a`) rather than global existential shame, without denying shame's real historical/evolutionary causality.
+> 3. **Public scaffolds' dual foreground-background role & multiple vertical participation**: Shared cognitive/social scaffolds (language, metrics, media, platforms, AI) simultaneously **enable cross-position comparison** (including lifting prior occlusions) and **risk pushing unencoded relations into background**; participating across multiple vertical structures can expand an agent's comparative freedom (`T3-03 C / Q26`) while also creating role-conflict stress (`R3-07`).
+> 4. **Proxy boundary on `T-Cog-2 (OEI)`**: Observer-Environment Integration (`OEI`) below is a `P3/P4` information-coupling proxy, **not** an identity equating FEP, mutual information, or `OEI` with canonical `d`, `Ψ_f`, or clinical health.
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Social_Cognition_Split/README.md`](Social_Cognition_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 

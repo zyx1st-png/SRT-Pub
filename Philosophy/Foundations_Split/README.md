@@ -1,24 +1,25 @@
 ---
 id: SRT-PHIL-FOUNDATIONS-SPLIT-INDEX
 type: index
-tags: [Split, Navigation, Longform]
-status: active_v1
+tags: [Split, Navigation, Longform, ConnectorSafety]
+status: active
 layer: meta
 epistemic_layer: os
-claim_mode: navigation
+claim_mode: evidence
 canonical: false
-dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, ]
+dependency: [SRT-PHIL-FOUNDATIONS]
 ---
 
 # SRT-PHIL-FOUNDATIONS Split Index
 
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文（保留，不删内容）：[`../SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md)
-- Source owner bytes: `84665`
-- Source owner SHA-256: `6df114fa9968b19584e5647266ed5697c4560c545ee92457001a397218c7b1c2`
-- 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
-- 01_Axiom_Bridge_and_Derivations：[`01_Axiom_Bridge_and_Derivations.md`](01_Axiom_Bridge_and_Derivations.md)
-- 02_Explanatory_Gap_and_Saturation：[`02_Explanatory_Gap_and_Saturation.md`](02_Explanatory_Gap_and_Saturation.md)
-- 03_Paradox_and_Metaphysics：[`03_Paradox_and_Metaphysics.md`](03_Paradox_and_Metaphysics.md)
-- 04_Mind_Philosophy_and_Predictions：[`04_Mind_Philosophy_and_Predictions.md`](04_Mind_Philosophy_and_Predictions.md)
-- 05_Interface_Batch_2026_03：[`05_Interface_Batch_2026_03.md`](05_Interface_Batch_2026_03.md)
+- Source owner bytes: `85672`
+- Source owner SHA-256: `99ec737d3c9e90430570a1e32c6965d59559d790ab455db1a303c6133171e5ce`
+- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
+- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
+
+| Part | File | Starts with | Bytes | SHA-256 prefix |
+|---:|---|---|---:|---|
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Philosophical Foundations (Hybrid Edition) | 32819 | `37150be80b46` |
+| 01 | [`01_Part02.md`](01_Part02.md) | 4.2 博弈与决策悖论 | 31206 | `62c09deb2503` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 分类映射表（Hyperpriors / Kant / PP → SRT） | 22839 | `4f3a166e7d4f` |

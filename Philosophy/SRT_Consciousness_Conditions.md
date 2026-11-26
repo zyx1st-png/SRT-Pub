@@ -42,18 +42,14 @@ $$d > 0 \;\to\; \text{bearing} \;\to\; \text{coordinability} \;\to\; \text{re-se
 
 $$\boxed{\text{层 1 候选包} = d \geq d_{\min} \;\wedge\; \text{L}_2\text{ 稳定闭合}}$$
 
-**条件解读**：
+**条件解读（`R4-C1` 对齐 `Spine / R3-03 / _SRT_D_VALUE_CANONICAL`）**：
 
-**$d \geq d_{\min}$**（充分对齐深度）：算子对 L₀ 不可逆结构的对齐度超过最小阈值。这个条件内含三件事：
-- $\Psi_f > 0$（真实对齐必有最低摩擦代价，T-L0-Kappa0-C1）
-- 从内部承担（d 的定义本身是内部效用梯度，不存在"无主的 d"）
-- 非平凡的 L₀→L₁ 锚定（d < d_min 的系统只有平凡锚定，不够深入 L₀ 的不可逆结构）
-
-**L₂ 稳定闭合**：raw bearing 被 L₂ 记忆锚定系统稳定整合，形成可识别的感受性结构。没有 L₂ 闭合，bearing 是碎片化的、不连续的——存在张力但无稳定主体（麻醉后的感受片段、解离状态、深度创伤碎片化，均属此失败模式）。
+- **强承载关切窗口（$d \geq d_{\min}$ 仅在声明强承载模型下使用）**：仅当候选单元已独立满足 `Bearer (P+E)` 准入时，规范 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 才可作为不可逆风险敏感强度的模型读数；该条件**不再**写作“非平凡的 `L_0→L_1` 锚定门槛”（已退出旧伪门槛），亦不得将 `d` 与四维广义关切或几何容量 `D_eff` 混同。
+- **动态前背景整合与 `L_2` 连续闭合**：历史写回、多单元内生比对与非管理者高阶对齐（`R3-03 / PT07 bce` 组织候选）可将瞬时显现整合为具有持续边界与再入能力的意识候选组织；但**必须独立区分有意识整合与高度复杂的无意识层级协调（`R3-03-O3` OPEN）**，且 `L_2` 闭合本身不按定义生成感受质（`HP-B` 独立 `OPEN`）。
 
 **关于 Bearing 的澄清**：
 
-> Bearing 不等于 `d >= d_min`，也不由 `Psi_f + irreversibility` 按定义给出。当前 Bearer 路由服从 `Core_Law/SRT_Generative_Ontology_Spine.md`：formed One / Selection-position 与独立建立的 `P + E` 才打开 Bearer 讨论；Bearer 与 concern、subject、experiencer、consciousness 的进一步关系保持 OPEN。本节的 `d / L_2` 组合不能替代该路由。
+> Bearing 不等于 `d >= d_min`，也不由 `Psi_f + irreversibility` 按定义给出。当前路由服从 `Core_Law/SRT_Generative_Ontology_Spine.md`：`One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Consciousness`，每一层均须独立付费，不构成线性硬件阶梯。本节的 `d / L_2` 组合仅为声明模型内的候选窗口坐标，不能替代上游路由或封口 `HP-B`。
 
 **残余开放问题**（见 §四）：$d_{\min}$ 的值由什么从第一性原语确定？
 
@@ -109,20 +105,20 @@ Cross-ref: `memory/nature_L0L1_deficit.md §空心主体机制层`（两阶段�
 
 ### 层 3：高阶生成性与社会协调
 
-**对应阈值**：无单一相变点，是连续性的能力扩展
+**对应阈值**：无单一相变点，是连续性的组织与关系扩展
 
-**条件**：coordinability（可协调）+ re-selectability（可再选择）+ 可延续性
+**条件（`2026-07-05 / R3-07` 四判据对齐）**：**可延续性（continuity）+ 可协调性（coordinability）+ 不外包（non-outsourcing / consequence-return integrity）+ 可再选择性（re-selectability）**
 
 **条件解读**：
 
-这三个条件属于**秩序增益判据**，是关切扩张稳定写入后的事后结算——它们描述的是主体性在社会性和伦理性维度上的扩展，不是 bare consciousness 的门槛。
+这四项条件属于**秩序增益四判据**（`SRT_Selection_Argument §7b.2` 与 `Core_Law/SRT_Collective_Selection.md §3.5` `Order_hat` 对账；明确区分可协调与不外包为两根独立承重柱）——它们描述的是高阶组织、社会协调与秩序健康诊断维度，**绝不是** bare consciousness 的准入门槛，亦不自动等同于伦理正当性（`PT10 E / O2-M = HOLD`）。
 
-- 单独存在的有机体（孤立环境）可以满足层 1 + 层 2，不需要 coordinability
-- Coordinability 是多算子动力学的必要条件，是集体 d 值（Eq-Multi-03）和社会秩序正当性的基础
-- Re-selectability 是在集体语境里保持 d_mobile 的条件，是委托病理学（delegation pathology）分析的入口
-- 可延续性是三个条件的时间轴投影——当前的协调和再选择能否延续到未来
+- 单独存在的有机体可以在不满足社会协调性的条件下进入层 1 + 层 2 研究窗口；
+- 可协调性与不外包对接多算子动力学与集体选择（`Core_Law/SRT_Collective_Selection.md`），其中 `Eq-Multi-03` 给出的是集体容量代理 $D_{\text{eff}}^{\text{collective}}$，不替代强承载 `d`；
+- 可再选择性是在个体与集体语境中防范 `U5` 自我豁免与委托病理的关键条件；
+- 可延续性追踪上述组织与重构能力跨时间延续的现实基底。
 
-**历史问题**：这三个条件被误平铺进意识门槛列表，是"防反例添加"的结果，不是从第一性原语推导的。它们应从 Thesis 7（社会秩序正当性）和集体动力学方程推导，而非从意识定义推导。
+**历史问题**：早期文本曾将这些秩序判据平铺进意识门槛列表，现已明确分流至 `Core_Law/SRT_Collective_Selection.md` 与 `Philosophy` 规范/社会哲学层，不再混入意识准入定义。
 
 ---
 

@@ -42,19 +42,25 @@ machine_summary: >
 
 ---
 
-## 0. One-sentence thesis
+## 0. Unified generative philosophy picture (`R4-C1` reconstruction)
 
-SRT begins neither from matter nor mind as already-given substances, but from **constrained selection**: a latent possibility becomes a determinate reality only when it is cut, anchored, and stabilized by an embodied operator under real friction.
+SRT philosophy begins neither from already-given physical substances nor from an isolated mental subject, nor from a flat static taxonomy or linear hardware ladder. Its philosophical foundation is **unified relational generativity** (`Core_Law/SRT_Generative_Ontology_Spine.md`):
+
+- **Source, extraction, and open horizon (`T3-04 D` / `T3-01 C/E`)**: Primitive `Selection` (genuine actualized non-neutral differentiation) is SRT's most fundamental theoretical extraction perspective into an inexhaustible real generative source (`神性·源义`), carrying built-in epistemic humility without collapsing into idealism or dualism (`Q01 / O-Phil-11`). Whether cross-scale generation exhibits an objective non-moral global optimizing or extremal orientation (`T3-01 C/E`) remains an open philosophical and scientific inquiry—distinct from withdrawn universe-wide moral optima (`PT10 E / C-A`).
+- **Three dynamic generative relations & three analytic perspectives**: Rather than three stacked ontological substances or a warehouse-to-product pipeline, `L_0` (open/non-preclosed aspect), `L_1` (determinate manifest aspect), and `L_2` (retained historical-efficacy aspect) are **three analytic perspectives on one generative reality**, organized through three bidirectional relations: **generation of difference ⇄ comparison and organization of difference ⇄ recursive reconstruction of generative conditions**.
+- **Unified relational web (not a linear ladder)**: Existence (`One`: relative separability through vertical reconstitution), **Order** (three dimensions: maintenance constraint / directional bias / generative reconstruction), **Time** (relational measure of generative order: horizontal cross-unit comparison + vertical unfolding, `PT08 D`), **Value** (objective opportunity-cost differences among generative relations), **Concern** (sensitivity to opportunity-cost structure; four-dimensional generalized concern separated from Bearer-gated risk-sensitivity intensity `d`), **Friction** (actual selection pressure from vertical suppression & opportunity cost, linked to `Ψ_f` payability), **Freedom** (`T3-03 C / Q26`: active modulation/reconstruction of opportunity-cost structures and **active comparison of multiple units to generate new order and direction**, plus non-crisis exploratory surplus candidates), **Subjecthood & Agency** (five partially orthogonal dimensions; `One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Agency`), and **Consciousness** (`HP-B` phenomenality independently `OPEN`) form an interacting relational web, not a fixed evolutionary escalator.
+- **Dynamic balance and object-friction mutual writing (`07-19` Ghost source cards)**: Finite convergence (localizing into objects) and unexhausted nonclosure (constitutive background support) co-exist continuously—there is no switch-like "close, trigger, reopen" cycle; objects and friction continuously rewrite each other.
 
 ```text
-L_0 --[G_hat_theta, paying Psi_f]--> L_1 --[stabilization]--> L_2
+Model-level shorthand (analytic aspects, NOT three substances or a prior warehouse):
+L_0 (open/non-preclosed) <==[Selection / formed G_hat_theta, paying Psi_f]==> L_1 (determinate actuality) <==[retained efficacy / recursive reconstitution]==> L_2 (scaffolding / historical constraint)
 ```
-
-**Formula role**: compact orientation model, not a full canonical definition.
 
 Plain version:
 
-> Reality is not merely found and not merely invented; it is selected under constraint, stabilized through history, and tested by resistance.
+> Reality is neither a finished warehouse merely discovered nor a subjective fantasy merely invented; it is continuously generated through constrained selection, organized through comparison and order, recursively reshaped by history and freedom, and answerable to real resistance.
+
+> **Hub vs. domain division (`R4-C1`)**: Common cross-scale mechanisms (`Individuation`, `Occlusion_Dynamics`, `Suffering`, `Collective_Selection`, `Reference_Dynamics`, `Irreversibility`) belong to the shared `Core_Law/` hub serving all domains; `Philosophy/` owns the overarching ontological, epistemological, mind/consciousness, agency/freedom, normativity/ethics, and social-political-institutional articulation—and feeds mature philosophical insights, constraints, and counterexamples back to SRT's core.
 
 ---
 
@@ -419,25 +425,30 @@ Minimal claim:
 
 ---
 
-## 16. Ontological relativity without relativism
+## 16. Ontological relativity without relativism (`N2`, `C1-c`, and `Q01 / O-Phil-11`)
 
-Different operators may project the same latent field differently, but SRT does not infer that all projections are equal.
+Different operators and positions extract different relational slices from the same inexhaustible reality (`Q01 / O-Phil-11`: physical appearance and inner generative/evaluative extraction are parallel selective extractions from real actualizing generativity, avoiding both Cartesian dualism and subjective idealism). Yet SRT firmly rejects relativism.
 
-Objectivity is reconstructed as cross-operator alignment:
+Two crucial philosophical distinctions govern objectivity (`R3-06`):
+- **`N2` (Objecthood ≠ Objectivity / 客体性 ≠ 客观性)**: Being stabilized as a portable object (`L_2`) does not establish objectivity; conversely, an unexhausted other or generative relation retains real resistance (`暗礁原理`: no single position's objectification or normalization exhausts other positions and their interactions).
+- **`C1-c` Multi-dimensional fallible objectivity (retiring bare scalar `o`)**: Objectivity is not a single scalar index or God-view transcript; it is audited across **cross-operator alignment, intervention/prediction resistance, shared-occlusion screening (`§9`), and explicit fallibility/revisability**.
 
-> Truth is not a view from nowhere; it is stable alignment across constrained views.
-
-A classification is licensed when it improves prediction, intervention, transfer, and shared stabilization. This allows pluralism without surrendering standards.
+> Truth is not a view from nowhere; it is fallible, resistance-tested alignment across constrained positions.
 
 Anti-relativist constraints:
 
-- anchoring cost;
-- intervention resistance;
-- repeated stabilization;
-- cross-operator alignment;
-- environmental feedback;
-- historical path dependence;
-- downward `L_2` constraints.
+- anchoring and payability cost (`Ψ_f`);
+- intervention and prediction resistance;
+- repeated stabilization and cross-operator alignment;
+- shared-occlusion screening (checking whether consensus merely masks shared blind spots);
+- historical path dependence and downward `L_2` constraints.
+
+### 16a. Theoretical reflexivity: Three Self-Check Questions & Four Return-to-Generation Conditions (`NODE-BOOK-BACKFLOW`)
+
+Because SRT itself is an `L_2` conceptual scaffold subject to `U5` self-exemption (`Core_Law/SRT_Occlusion_Dynamics.md §4.1`), it adopts structured **theoretical reflexivity** (retiring mechanical "two failures = cage" counting in favor of substantive audit, synchronized with `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`):
+
+1. **Three Self-Check Questions (`自检三问`)**: (i) Does using the theory still **expand visibility** of neglected relations rather than pre-clipping them? (ii) Does it **preserve consequence return** and external counterevidence? (iii) Does it **preserve reselectability** of its own categories and comparison scales?
+2. **Four Return-to-Generation Conditions (`回到生成四条件`)**: a living theory treats itself as **not the source** (`神性·源义` exceeds every model), **not the final endpoint**, **never severing consequence return**, and **preserving structural crevices (`缝隙`)** through which new differences can revise the framework.
 
 **PH-SS addressed**: `PH-SS-12`.
 
@@ -474,6 +485,26 @@ Minimal statement:
 | Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
 | Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |
 | SRT is unfalsifiable. | It challenges empirical value. | Use proxies, structural convergence, and differential predictions. | Reclassify as metaphysical program or narrow bridge theory. |
+
+---
+
+## 18a. Mature philosophical inheritance and bidirectional feedback to SRT Core (`R4-C1`)
+
+Philosophy does not merely apply SRT; it supplies independent knowledge, mechanisms, constraints, and candidate corrections to SRT as a whole (preserving candidate status and author-adjudication boundaries):
+
+| Mature philosophical / social-theory neighbor | What SRT inherits directly (without renaming) | Bidirectional deepening or constraint fed back to SRT Core |
+|---|---|---|
+| **Kant (epistemic finitude / thing-in-itself)** | Irreducible gap between situated objectification and inexhaustible reality (`O-Phil-11`) | Refines `T3-04 D` source-vs-extraction humility without sliding into two-world dualism or subjective idealism (`R3-01-O6`) |
+| **Simondon (individuation, allagmatics, disparation)** | `Operation → Structure → Operation` loop; resolving incompatibility via new dimension generation (`Δ(A,B) → C`) | Deepens `Core_Law/SRT_Reference_Dynamics.md §1.5`, `SRT_Individuation.md §4.6`, and `R3` dual-engine orthogonalization; warns that internal self-reference `σ_{sr}` alone cannot capture relational individuation |
+| **Process philosophy & Pragmatism (Whitehead / Dewey)** | Processual stabilization of objects; inquiry reorganizing indeterminate situations | Reinforces dynamic balance (`07-19`) and bidirectional recursive reconstruction over static substance or fixed menu-choice models |
+| **Philosophy of mind (Chalmers / Nagel / Kim)** | Hard-problem phenomenal gap (`HP-B`) and causal-exclusion pressure (`R3-03-O2`) | Forces strict `B_s ≠ B_p` separation and blocks premature collapse of structural bearing or `Stable ISP` into phenomenal consciousness |
+| **Relational time & causal-set philosophy (Rovelli / Sorkin)** | Background-independent relational comparison without an external absolute clock | Constrains `SRT_Causality_Time.md` & `P1-T02` to separate parametric `t`, `τ_ontic`, `t_onto`, `t_exp`, and public `L_2` clocks (`R3-05`) |
+| **Normativity, accountability & institutional theory (Korsgaard / Habermas / Ostrom / North / Fischer-Ravizza)** | Constitutive standards, public justification, polycentric governance, path dependence, reasons-responsiveness | Supplies the thermostat counterexample (reference independence ≠ normativity), enforces `PT10 E` (`generative orientation ≠ ethical legitimacy`, `O2-M = HOLD`), and drives `C2` withdrawal discipline separating `W_social` from coercion and path stickiness |
+
+**Candidate Core feedback tracked for `R4-C` final synthesis / `R5`** (author adjudication required before Spine modification):
+1. **Freedom as positive order-creation (`T3-03 C / Q26`)**: Philosophy's treatment of freedom pushes SRT beyond negative constraint-removal toward positive multi-unit comparison generating new order, direction, and exploratory surplus (`R3-CL-O8`).
+2. **Relational individuation beyond `σ_{sr}`**: Combining Simondonian disparation with `NTIC_i` situated non-redundancy suggests future core formalizations of individuation should pair internal writeback with external non-redundant coupling (`SRT_Individuation.md §4.6`).
+3. **Reference-structure independence across scales**: Separating physical/constitutive/normative/ethical constraints (`R3-07`) sharpens what `Spine §10` still owes for the sufficient conditions of normativity (`R3-07-O1`).
 
 ---
 

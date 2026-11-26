@@ -27,6 +27,8 @@ Strong closure assumptions do not promote the material to P1.
 > **Mathematical interpretation guard**：`P-univ`、`Q-univ`、family universality、`health/pathology` 等历史标签为 citation stability 保留时，只表示声明 model family 内的候选不变量、regime label 或充分条件。数学稳定 / 不稳定不等于 health / pathology、legitimacy、evil、domination 或文明结论；任何 generative-health bridge 另行回链 21C B13。
 
 > **RC-A active-use override (2026-08-18)**: former tower language that treated `真实重选率`, `r^{(n→n+1)}`, or T-COLL-4 `共选真实性` as a P1 health / Selection-authenticity gate is superseded. T-COLL-4 is downstream P2/P3 collective agency / consequence-sensitive revision audit only. No scalar reselection rate is a hard condition of collective/tower standing or health; spectral-stability mathematics below is a model-local dynamical analysis, not a Selection ontology, standing, or health test.
+>
+> **R4-C1 Non-Backflow Audit Guard（2026-11-26）**：经 `R4-C1` 核验，本附卷仅作嵌套塔条件数学硬化参考，**严禁旧机制借塔层形式化回流主干**：① 本文件多层嵌套模型绝不恢复线性硬件阶梯（`One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood` 在每一层均须独立付费）；② 文中涉及集体有效维度或 `Eq-Multi-03` 处一律按 `D_{\text{eff}}^{\text{collective}}` 容量代理读，绝不替代规范强承载 `d`；③ 塔层耦合分析须与 `Core_Law/SRT_Collective_Selection.md §3.4–§3.5, §8`（协同共选、多重垂直参与、社会驻留三方分离、`AI 三型` 社会技术中介）及 `Core/SRT_Core_14_Dynamics_Scaling.md §0`（跨尺度五机制）兼容，且严守 `PT10 E` 与 `O2-M = HOLD`。
 
 ---
 

@@ -17,6 +17,7 @@ dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDI
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP、subjecthood、suffering；它们的定义或准入仍以对应 owner 为准。
 > **Depends on**：同 2026-04-24 round six L1 theory/formalism canonical reference files，并受 post-D3 / E1 / E2 / E3-A truth-up 约束。
 > **Relation**: This file remains a routing/reference hardening surface. It does not replace unresolved Open Pressures in upstream owners and is not a universal theorem factory.
+> **R4-C1 Non-Backflow Audit Guard（2026-11-26）**：经 `R4-C1` 核验，本附卷保持为二级条件硬化材料，**严禁旧机制通过本文件回流主干**。具体硬护栏：① `d` 仅在独立满足 `Bearer (P+E)` 准入后作为强承载风险敏感强度使用，严禁借本文件恢复已退出错式 `d_canonical ≡ d_stakes ≤ D_eff` 或混淆四维广义关切；② 严禁将本文件 `§2` 残差模型或 `§4` FEP 桥接反读为 `L_0→L_1` 仓库提取、线性硬件阶梯或 `suffering = Ψ_f`；③ `§3` `M(t)` MOC 三判据与 `Core_Law/SRT_Collective_Selection.md §3.5, §6.1`（社会驻留三方分离与 SEA 五门编码）互补，不单独定义集体主体、合法性或 `O2-M`。
 
 ---
 
