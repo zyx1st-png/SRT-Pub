@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: c1293066c
+source_commit: bdaa85c22
 source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
 source_dirty: false
-inputs_digest: 41eac944d258904d
+inputs_digest: 5da8c8a81054268f
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: 41eac944d258904d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `c1293066c` |
+| 来源 commit | `bdaa85c22` |
 | 来源分支 | `canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
