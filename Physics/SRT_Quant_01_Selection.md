@@ -1,20 +1,22 @@
 ---
 id: SRT-QUANT-01
 type: core_module
-tags: [Quantum Selection, Measurement Theory, Probability Flow, Non-Locality, Hybrid]
-status: bridge_realign_v1
+tags: [Quantum Selection, Measurement Theory, RelativePosition, Probability Flow, Non-Locality, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-PHYS-BRIDGE, SRT-QUANT-00]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-PHYS-BRIDGE, SRT-QUANT-00]
 ---
 
 # SRT Quantum Mechanics: Selection & Measurement (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Quant_01_Selection_CompactCore.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, `patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`, and canonical symbol anchors. Probabilistic-bias formulas (`T-Sel-3 / T-Sel-5`) remain speculative `P4` hypotheses (SRT's physical-closure compatibility under `R3-03-O6` does not depend on Born-rule violation); finite relative position (`QRF / RQM`) does not establish `One`, subjecthood, or consciousness.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Selection_Split/README.md`](Selection_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
-> **PHR-A realisation guard（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 只承担 AM-A primitive actualisation 的形式角色，不是先在原因；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。collapse-family、Everett／branch-relative 与 operational／instrument 口径必须显式区分。
+> **PHR-A realisation guard（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 只承担形成态/模型级形式角色，不是先在原因或原初 `Selection`；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。collapse-family、Everett／branch-relative 与 operational／instrument 口径必须显式区分。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Selection Axioms and Theorems (AI-Readable).
@@ -23,14 +25,14 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 ---
 
 # Part A: Formal Selection Axioms
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 校准)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三分析/模型视角（`Spine §7`）；Hilbert 空间与配置空间均为受 `REP01` 约束之数学脚手架，不等同于 $L_0^{abs}$。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体，$\theta \in \Theta_{finite}$ 为有限相对位置/边界/交互参数（不构成先在主体或 `One`）。
+- $F$: 声明模型自由能泛函；$\Psi_f^{phys}$ 为物理投影/可支付性负担代理（规范定义见 `_SRT_PSI_F_CANONICAL.md`）。
+- `D_eff` / $B_{\text{cap}}$ vs. 规范 `d`：物理容量/相干带宽代理归 `D_eff` / $B_{\text{cap}}$，规范风险敏感强度 `d = ‖∂U/∂S‖` 在纯物理尺度为 `NOT ADMITTED / NOT APPLICABLE`（退出旧版 `$d$: 注意力范围`）。
+- $\pi_\lambda$: 粗粒化映射；$\approx$ 表示 `Core_14 P3-Scale-01` 近似交换（退出无条件严格同构 $\Lambda^{-1}$）。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定。
 
 ## 0.5 Numbering Scheme (编号体系)
 

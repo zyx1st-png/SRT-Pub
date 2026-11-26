@@ -1,21 +1,23 @@
 ---
 id: SRT-PHYS-COSMO-COMPACT-CORE
 type: theory
-tags: [Physics, Cosmology, Thermodynamics, Time, Gravity, Compact Core]
-status: active_v1
+tags: [Physics, Cosmology, Thermodynamics, Time, Gravity, NaturalLaw, Compact Core]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
+updated: 2026-11-26
+dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE, SRT-PHIL-CAUSALITY-01]
 ---
 
-# SRT Physics: Cosmology — Compact Core
+# SRT Physics: Thermodynamics, Spacetime, Natural Law & Cosmology — Compact Core
 
-> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+> **RC-A & `R4-C2` 权威对齐（2026-11-26）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门；`L_0/L_1/L_2` 为同一现实的三分析视角而非三实体容器；时空与因果口径全面对齐 `Philosophy/SRT_Causality_Time.md`（七项时间接口、四类距离与 `R3-03-O6` 物理闭合边界）；物理常数与自然律服从 `R3-02-O6` 自然律三分边界；宇宙尺度仅讨论容量/整合代理（`D_eff`），规范 `d` 为 `NOT ADMITTED / NOT APPLICABLE`。
 
 > **定位**：本文件是 `Physics/SRT_Physics_Cosmology.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 在热力学、时间、引力与宇宙学上的最短主轴。  
+> **用途**：用于快速把握 SRT 在信息热力学、时空因果、引力弱相容、自然律三分边界与宇宙学上的最短主轴。  
 > **关系**：不替代原文；原文保留详细机制、实验预测、接口批次与长篇推导。
 
 ## 1. 核心问题
@@ -51,13 +53,10 @@ E_{select} \ge k_B T \ln 2
 最压缩的物理含义是：
 > **RC-A 边界**：该 Landauer 式只能约束被具体实现为逻辑不可逆信息操作 / 物理重置的 bridge case，不能升级为“每一次 Selection occurrence 都至少支付 `k_B T ln 2`”的普遍定理。
 
-### 2.3 Landauer Gap 的 SRT 解读
-SRT 进一步强调：
-- 低 d 的重复复制过程可以逼近热力学下界
-- 高 d 的现实维持过程会显著偏离下界
-
-因此：
-> **高能耗不是失败，而是维持高 d 非默认现实的热力学签名。**
+### 2.3 Landauer Gap 的 SRT 解读（容量/复杂性维护代理与 `Core_25` 衔接）
+SRT 进一步强调（与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`、`03_Bridges/SRT_Selection_Event_CompactCore.md §4b` 衔接）：
+- 靠近热力学下界的机械复制与远离下界的高维持能耗生物过程具有不同的非平衡组织机制；
+- 在已独立建立 `Bearer (P+E)` 与边界维护的生物系统中，高于 Landauer 下界的能耗开销可作为非默认维持负荷的物理投影代理（`T-E §2` 组织机制依赖，非解释充分性，亦不将能耗或熵产生裸等同于 `\Psi_f` 或规范 `d`）。
 
 ---
 
@@ -98,88 +97,60 @@ SRT 把质量解释为：
 
 ---
 
-## 4. 时间本体论
+## 4. 时空与因果边界（对齐 `Philosophy/SRT_Causality_Time.md` & `R3-03-O6 / R3-05-O1 / R3-CL-O7`）
 
-### 4.1 Time as Retained-Order Metric Candidate
-\[
-t \propto \int \Psi_f(L_1)\,dn
-\]
+### 4.1 七项时间接口与物理时间模型的准确归位
+`primitive Selection` 不预设一个先在的普遍时间容器。对齐 `Philosophy/SRT_Causality_Time.md §2.2`，本板块的物理时间模型必须严格归位至**七项时间接口**之中，严禁混同：
+1. **实际化非等价**（`P0-03 / P1-T02`，无须时钟或留痕）；
+2. **局部非对称生成依赖候选**（不自动给全局偏序，因果集对接保持 `OPEN`）；
+3. **$\tau_{\text{ontic}}$**（条件性物择相对变化步比候选，非普遍物理时钟）；
+4. **模型内 $t_{\text{onto}}$**（在声明事件记录、留存映射与算子归属后的局部历史积分代理，如 $t_M \propto \int \Psi_f^{phys}\,dn$）；
+5. **$t_{\text{exp}}$**（具身体验/观测时间窗）；
+6. **数学参数 $t$**（动力学方程纯排序索引，无本体承诺）；
+7. **公共时间（`L_2` 脚手架）**（跨位置共享钟表/历法/物理同步协议）。
 
-primitive Selection 不要求一个先在的普遍时间容器。在声明了 event-record / retention structure 的物理模型中，时间可被候选性地读取为：
-> **被保留选择序列的度量与现实维持耗费的模型内台账。**
+**两条并行物理时间桥（均不宣称已关闭 `R3-05-O1`）**：
+- **`H-Phys-2`（离散保留次序假说）**：仅在声明记录保留模型内将 retained event-order 离散化；若进一步主张普朗克尺度真实离散时空，须给出洛伦兹行为与可检频散预测（受 FERMI/LAT GRB 约束）；
+- **`E04`（Page–Wootters 关系时间桥）**：以内部纠缠时钟—系统条件关联提供**非离散的关系时间替代读法**（与 Rovelli 关系时间、`P05` 量子光学时钟固有时相容）。
 
-**Boundary**：Selection-event counting 不是 primitive ontology；单个 Selection event 不自动生成持久时间单位。这首先是 interpretive retained-order reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
-
-### 4.2 Conditional Model Correspondence
-只有在事件单位、retention mapping、尺度与转换常数均已声明时，三种读法才可检验模型内对应：
-- 被保留的选择序列
-- retention map 准入的历史累积
-- 选择效率
-
-### 4.3 Time Arrow as Retained-Order Readout
-在 retained event-order 与持续历史效力已经建立的模型中，时间不对称性可作为记录结构的方向读数：
-- 过去 = 已固化的 `L_2`
-- 现在 = 发生中的 `L_1`
-- 未来 = 尚未切割的 `L_0`
-
-最压缩句子：
-> **时间之箭可作为被保留历史关系的宏观读数；bare occurrence 或 irreversibility 不足以建立普遍箭头。**
-
-### 4.4 Time Travel Impossibility
-SRT 对时间旅行的最压缩否定是：
-- 过去不是可任意回访的存档库
-- 而是已经固化的选择结果
-- 要“回到过去”就要逆转现实压缩本身
+### 4.2 空间、四类距离与物理闭合边界
+- **四类距离边界（`R3-CL-O7` OPEN）**：严格区分**物理距离**（相对论时空与相互作用传播约束）、**作用距离**（因果干预传递跨度）、**认知距离**（表征/框架转换成本）与**生成距离**（组织条件跃迁重构跨度）；不宣称替代广义相对论度规；
+- **因果分层与物理闭合（`R3-03-O6`）**：区分**水平时序因果**（物理动力学闭合有效、无超自然外力）、**垂直非时序构成约束**（宏观边界与守恒结构约束局部可达空间，`T-Phys-5`）与**局部非对称生成依赖**；
+- **时间箭头与时间旅行边界**：在已建立留存记录与持续历史效力的模型中，过去/现在/未来对应已留存约束（`L_2`）、发生中实际化（`L_1`）与未闭合开放面（`L_0`）的宏观读数；裸发生或局部不可逆性不足以自动导出宇宙学时间箭头（`R3-05-O1` OPEN），且依据 `P0-03` 实际化不可逆，SRT 不支持逆因果信号或宏观时间旅行。
 
 ---
 
-## 5. 引力、信息与共识的弱接口
+## 5. 引力弱接口与自然律三分边界（`R3-02-O6`）
 
-### 5.1 Entropic Gravity / Gravity as Consensus
+### 5.1 Entropic Gravity / Gravity as Consensus（弱场兼容边界）
 \[
 F_g = T\nabla S
 \]
+在 SRT 中，引力与物理 `\Psi_f^{phys}` 代理保持平行结构角色类比，当前**最高只承诺弱场梯度方向相容**（`\nabla \Psi_f^{phys} \parallel \nabla \Phi_N`），绝不宣称 `G_{\mu\nu}` 级别张量重建。
 
-与之对应的 SRT 压缩解释是：
-> **引力可作为维持宏观现实共识成本的候选物理投影。**
+### 5.2 自然律三分边界与物理常数定位（`R3-02-O6` 规范口径落盘）
+遵循 `SRT_Physics_Claim_Status.md §2.9`，物理规律与常数不再被一概压成“历史共识”，而是按三类边界分账（具体物理定律之实质归属保持 **`R3-02-O6` OPEN**）：
+1. **原初生成属性**：跨尺度底层生成关系候选；
+2. **条件性组织规律**：在特定对称性、耦合、能标与边界下稳定成立的有效规律（EFT/RG、守恒律、热力学定律）；
+3. **历史性硬化规则**：经宇宙学/路径历史锁定与观测协议固化形成的持续约束（如局部冻结参数与观测 `L_2` 协议）。
 
-这不是把引力简单还原成“主观意见”，而是说：
-- 宏观时空结构可被理解为稳定的 `L_2` 共识网络
-- 引力可能表现为该共识网络的几何与能量代价
-- 当前最弱承诺是弱场梯度方向相容，不是 `G_{\mu\nu}` 级别推导
-
-### 5.2 Constants as Stable-Parameter Placement
-
-物理常数在本轮只允许这样读：
-- 位于可维持稳定 `L_2` 结构的参数区域
-- 不是精确数值解释
-- 不是对人择、EFT、标准模型、弦景观或其他外部物理解释的替代
+物理常数（`\hbar, c, G, k_B, \alpha, \Lambda`）仅作为可维持持久结构与闭合记录的**稳定参数子空间放置约束**，不是精确数值推导，亦不替代标准模型、EFT、人择或其他外部物理解释。
 
 ### 5.3 Spacetime as Error-Correcting Code
-SRT 借用这一想法强调：
-- 时空不是被动背景
-- 它更像现实稳定化协议的一部分
+作为 P3/P4 信息几何类比提示时空兼具动态稳定化协议侧面，不替代广义相对论几何。
 
 ---
 
-## 6. 宇宙学主轴
+## 6. 宇宙学主轴与容量代理校准
 
-### 6.1 Big Bang as L0 Minimum / Selection Event
-大爆炸在 SRT 中不只是“初始爆炸”，更像：
-> **从潜能极值处开始的大尺度现实锚定。**
+### 6.1 Big Bang Horizon（旧 `argmin K(σ)` 式已暂停）
+按 `SRT_Physics_Claim_Status.md §2.0` 与 `OPEN_TENSIONS §15–§17`，旧式“大爆炸 = `\arg\min_{\sigma\in L_0} K(\sigma)`”因未在 `L_0^{abs}` 上定义复杂度测度、可行域与存在唯一性条件，**已正式暂停（parked）**，不作为现行宇宙学定义。
 
-### 6.2 Dark Matter / Dark Energy 重写
-SRT 试图把暗物质和暗能量重写为：
-- 宏观现实结构中的 `L_2` 残余、共识结构或本体论压力效应
-- 而不只是神秘新物质标签
+### 6.2 Dark Matter / Dark Energy 重写（`P4/P5` 探索类比）
+将暗物质/暗能量比附为大尺度 `L_2` 结构残余或本体论压力仅属 **P4/P5 探索性概念接口**，须独立接受天体物理观测检验。
 
-### 6.3 Gravitational d-value
-宇宙尺度上的 d 不是“宇宙有意识”，而是：
-- 时空共识维持能力
-- 大尺度拓扑整合带宽
-
-所以：
-> **宇宙尺度上的 d 是数学量，不自动携带现象意识含义。**
+### 6.3 Cosmic Coherence Capacity Proxy（退出“宇宙尺度规范 `d`”混写）
+历史术语 `Gravitational d-value`（`Def-Cosmo-1`）在 `R4-A / R4-C2` 下严格归位为**大尺度拓扑/宏观相干整合容量代理（`D_{\text{eff}}^{\text{cosmic}}` / $B_{\text{cap}}$）**；按 `Core_14_CompactCore §3.2`，规范不可逆风险敏感强度 `d = ‖∂U/∂S‖` 在宇宙尺度标记为 **`NOT ADMITTED / NOT APPLICABLE`**。
 
 ---
 

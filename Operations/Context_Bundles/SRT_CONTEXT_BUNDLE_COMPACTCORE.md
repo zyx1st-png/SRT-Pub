@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 6121da0a3
-source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
+source_commit: d3df20883
+source_branch: canon/r4-c2-physics-cross-scale-generation-2026-11-26
 source_dirty: false
-inputs_digest: faba05c8db27e0a8
+inputs_digest: aed8e343bee60684
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: faba05c8db27e0a8
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `6121da0a3` |
-| 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
+| 来源 commit | `d3df20883` |
+| 来源分支 | `canon/r4-c2-physics-cross-scale-generation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
@@ -46,14 +46,14 @@ inputs_digest: faba05c8db27e0a8
 | 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-09-19 |
 | 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-09-20 |
 | 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-09-18 |
-| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
-| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
-| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-09-20 |
-| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
-| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
-| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
-| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
+| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-11-26 |
+| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-11-26 |
+| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-11-26 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-11-26 |
+| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-11-26 |
+| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-11-26 |
+| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-11-26 |
+| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-11-26 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-11-26 |
 | 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-11-26 |
 | 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-11-26 |
@@ -190,7 +190,7 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > | `NODE-GHOST-OPERATOR` | active_complete | untested | — | — |
 > | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
-> | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-LIFE-DISSIPATIVE` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
 > | `NODE-SOCIAL-L2` | active_complete | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
 > | `NODE-ENTROPY-REORG` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
@@ -200,8 +200,8 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：14 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 9 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：15 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 10 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 
@@ -1250,50 +1250,50 @@ Addendum:
 | path | `Physics/SRT_Quant_00_Intro_CompactCore.md` |
 | id | SRT-QUANT-00-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-00, SRT-QUANT-01-COMPACT-CORE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-00, SRT-QUANT-01-COMPACT-CORE, SRT-GENERATIVE-ONTOLOGY-SPINE]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Quantum Mechanics: Selectionist Interpretation — Compact Core
 
-> **定位**：本文件是 `SRT_Quant_00_Intro.md` 的紧凑主干版。  
-> **用途**：作为 SRT 量子线的总入口，快速说明为什么量子力学需要 SRT 式“选择论诠释”。  
-> **关系**：不替代原文；原文保留双缝、延迟选择、薛定谔猫、量子橡皮擦与 Bell 实验的完整重写。
+> **定位**：本文件是 `SRT_Quant_00_Intro.md` 的紧凑主干版（已随 `R4-C2` 校准）。  
+> **用途**：作为 SRT 量子线的总入口，说明量子基础（QRF / RQM / 多诠释事件审计 / `REP01`）如何对接 SRT 的**原初分化与有限相对位置**，而非单向套用坍缩叙事。  
+> **关系**：不替代 `Core_Law/SRT_Generative_Ontology_Spine.md`、`Physics/SRT_Physics_Claim_Status.md` 或原文；原文保留双缝、延迟选择、薛定谔猫、量子橡皮擦与 Bell 实验的展开。
 >
-> **PHR-A（2026-08-11）**：量子层采用 interpretation-plural realisation audit。`\hat G_\theta` 是 AM-A 的形式角色载体；collapse-family、Everett／branch-relative 与 operational／instrument 读法必须分开。退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项都不充分。
+> **PHR-A & `R4-C2` 护栏（2026-11-26）**：量子层采用 interpretation-plural realisation audit；`\hat G_\theta` 仅是形成态/模型级形式角色载体，不是原初 `Selection` 或先在主体；`L_0/L_1/L_2` 是三分析视角而非三实体容器；量子参考系/相对位置（QRF / RQM）提供非拟人化有限位置接口，但**有限相对位置 $\neq$ 已成 `One` $\neq$ 意识观察者**；并遵守 `REP01` 表征协变护栏（不把复 Hilbert 空间等同于 `L_0^{abs}`）。
 
-## 1. 核心问题
+## 1. 核心问题与原初分化—相对位置接口
 
-这篇的任务是总起一句：
+这篇的任务从“重写坍缩故事”深化为双向量子基础追问：
 
-> **量子力学最难的问题，不是公式不够准，而是我们不知道“坍缩何时、为何、按什么定义发生”。**
+> **在不预设先在观察者意识或上帝视角空间容器的前提下，量子基础中的有限相对位置（参考系、耦合边界与交互通道）如何刻画实际分化与可审计物理事实的形成？**
 
 SRT 的压缩回答是：
-- 量子形式提供候选、概率与条件态结构
-- 物理 realization candidate 还需要 outcome-indexed record、路径效力与历史效力
-- collapse-family、Everett 与 operational 口径对“结果发生”承担不同本体承诺
+- 量子形式提供候选、概率、参考系变换（QRF, Giacomini–Castro-Ruiz–Brukner 2019）与关系性事实约束（RQM / Cross-Perspective Links, Rovelli 1996 / Adlam & Rovelli 2023）
+- 物理 realization candidate 还须在同一事件链与冻结边界上通过 outcome-indexed record、可干预路径效力与未来可达性改变审计（`PHR-A`）
+- collapse-family、Everett 与 operational 口径对“结果发生”承担不同本体承诺，不混为一谈
 
 ---
 
-## 2. 坍缩即选择
+## 2. 测量结果锚定与多诠释分工
 
-### 2.1 Collapse as Selection
+### 2.1 Interpretation-Indexed Selection Schema
 \[
-\text{Collapse} \equiv \hat G_\theta: |\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1}
+\text{Collapse-family reading: } \hat G_\theta: |\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1}
 \]
 
 最压缩句子：
-> **在 collapse-family 中，测量可被翻译为排他结果锚定；在 Everett 中是 branch-relative fact formation；operationally 则是 outcome registration。**
+> **在 collapse-family 中，测量可被翻译为排他结果锚定（`[collapse-dependent]`）；在 Everett 中是 branch-relative fact formation；在 RQM 中是位置/帧相对事实；operationally 则是 outcome registration。**
 
-三种读法共享事件审计，不共享一个已经证明的全局坍缩机制。`\hat G_\theta` 形式化转化角色，不解释具体结果为何发生。
+四种读法共享事件审计，不共享一个已经证明的全局坍缩机制；`\hat G_\theta` 仅形式化转化角色，不解释具体结果为何发生。
 
 ### 2.2 Path-Measure View
 \[
@@ -1301,29 +1301,27 @@ P(k) \propto \int_{\Gamma_k} e^{-\Phi[\gamma]}\,\mathcal D\gamma
 \]
 
 含义：
-- 公式可以表达候选路径的相对权重或条件取值
+- 公式仅在声明物理投影与路径测度后表达候选路径权重或条件取值（`Gate 0 Class B`）
 - 权重、积分或条件态本身不等于结果已经发生
 
 ---
 
-## 3. 不确定性不是扰动，而是带宽上限
+## 3. 不确定性不是扰动，而是有限位置容量边界
 
-### 3.1 Uncertainty as Bandwidth Limit
+### 3.1 Uncertainty as Finite-Interface Bandwidth Limit
 \[
 \Delta x\,\Delta p \ge \frac{\hbar}{2}
-\iff \text{Bandwidth}(\hat G_\theta) \le C_{max}
+\sim \text{Finite-interface resolution bound of } \hat G_\theta \text{ (P3 structural analogy)}
 \]
 
 SRT 的改写是：
-> **不确定性不只是测量打扰，而是有限算子处理 `L_0` 时的带宽上限。**
+> **不确定性不只是外部测量打扰，而是有限位置/接口在共轭表征间无法同时实现无限精度的结构约束（容量代理维度，不等于规范 `d`）。**
 
-这也解释了：
-- 粒子样态不是物自体属性
-- 而是强局域化取值后的结果
+这也提示：经典粒子局域样态不是先于关系的静态孤立物，而是特定交互边界与可重复闭合模式（`P07`）下的稳定显现。
 
 ---
 
-## 4. 什么才算“测量”
+## 4. 什么才算“物理实现事件候选”（`PHR-A`）
 
 ### 4.1 Bounded Physical Realisation Audit
 在预先声明模型、事件单元、系统边界与诠释后，realisation candidate 至少要在同一事件链上给出：
@@ -1333,90 +1331,73 @@ SRT 的改写是：
 - 结果改变未来可达性、概率、门槛或返回成本
 
 最压缩意义：
-> **事件审计不要求意识，但审计通过也不证明主体或意识。**
+> **事件审计不要求意识，但通过审计也不证明 `One`、主体或意识。**
 
 退相干、信息增加、耗散、固定点或稳定／冗余记录可以提供证据或稳定化，任何一项都不是充分条件。
 
 ---
 
-## 5. 纠缠与非定域性
+## 5. 纠缠、相对位置与非定域性
 
-### 5.1 L0 Topological Unity
+### 5.1 Pre-Factorized `L_0` Interface（非空间容器）
 \[
-\text{Distance}_{L_0}(A,B) \approx 0
+|\Psi_{AB}\rangle \in \pi_{\text{phys}}(L_0) \neq |A\rangle\otimes|B\rangle
 \]
 
 SRT 的最短重写是：
-> **纠缠不是远距离神秘连线，而是 `L_0` 原本就还没被切成彼此独立的对象。**
+> **纠缠不是远距离神秘超光速连线，而是被分析系统在当前物理投影下尚未分解为彼此独立局域子系统的整体关联结构（`REP01`：Hilbert 空间张量积只是数学脚手架而非 `L_0^{abs}` 本身）。**
 
-### 5.2 Entanglement = L0 Irreducibility
-\[
-|\Psi_{AB}\rangle \in L_0 \neq |A\rangle\otimes|B\rangle
-\]
-
-所以：
-- 非定域性不是违反理性
-- 而是 `L_1/L_2` 的局域直觉不适用于 `L_0`
+因此，Bell 不等式违背提醒我们不要把形成后的 `L_1/L_2` 局域对象直觉倒投进原初分化层，且严格遵守无超光速信号传输约束。
 
 ---
 
-## 6. 历史不是预存，而是回投
+## 6. 历史、时间接口与延迟选择边界（`R3-05` / `Causality_Time` 校准）
 
-### 6.1 Retroactive Participancy
+### 6.1 Record Stabilization vs. Retrospective Inference（撤回“逆因果改写过去”误读）
 \[
-\text{History}(t<t_{now})=\text{BackProject}(\hat G_\theta[t_{now}])
+\text{Retrospective Description}(t<t_{now}) = \text{ConditionedReadout}(\hat G_\theta[t_{now}], \text{Records})
 \]
 
-最压缩句子：
-> **历史不是一条预先放在那里的硬时间线，而是当前选择对过去路径的回投与定形。**
-
-### 6.2 History Plasticity
-\[
-P_{history} \propto D_p\cdot(\Delta t)^{-1}
-\]
-
-这意味着：
-- 越近的历史越可塑
-- 越深埋进 `L_2` 的结构越难被改写
+**`R4-C2` 校准（对齐 `Philosophy/SRT_Causality_Time.md §2.2` 与 `Physics/patches/SRT_Phys_P06`）**：
+- 严禁把延迟选择/量子橡皮擦读作“当前测量逆向发信号改写已实际化并记录的过去”（SRT 不主张逆因果信号，遵循 `P0-03` 实际化不可逆）；
+- 在最终记录闭合之前，早期尚未形成不可逆记录的量子路径并不具备经典确定轨迹；当前记录建立后，后续观察者依据该记录与历史条件对过去作出条件回溯重构；
+- 历史可塑度（`P_{history}`）仅指**尚未被深层 `L_2` 冗余记录锁定的表征与解释重构空间**，与物理上已固化的记录严格区分。
 
 ---
 
-## 7. 语义完备性
+## 7. 物理事件与语义落地分离
 
 ### 7.1 Physical Event vs Semantic Anchoring
 
 SRT 在这里区分：
-- 非语义物理过程可以形成 PHR-A 的 event candidate
-- 语义系统随后可以对该记录赋予不同的意义和 `L_2` 历史重量
-- 退相干本身既不等于物理 actualisation，也不等于语义落地
-
-最压缩解释：
-> **一个事件可以物理上已经发生，但在意义层面仍未完全“落地”。**
+- 非语义物理过程可以形成 `PHR-A` 的 event candidate；
+- 语义/认知系统随后可以对该物理记录赋予不同的解释权重与 `L_2` 历史重量；
+- 退相干本身既不等于物理 actualisation，也不等于语义落地。
 
 ---
 
-## 8. 为什么现有量子诠释都不够
+## 8. 多诠释并行与物理学反向启示
 
 这篇的总括立场是：
-- collapse-family 提供排他结果的实现候选
+- collapse-family 提供排他结果的实现候选（`[collapse-dependent]`）
 - Everett 提供 branch-relative fact formation
-- RQM / QBism 强调位置、关系或代理索引
+- RQM / QRF 提供**有限相对位置与跨视角一致性**的核心物理抽象来源
 - decoherence 解释相干抑制与稳定化的一部分，不独立裁决结果本体
 
-SRT 的压缩增量在于：
-> **让不同诠释共享一套有边界的事件审计语法，同时不抹平它们的本体差异。**
+SRT 的双向收获在于：
+> **一方面让不同诠释共享一套有边界的事件审计语法而不抹平本体差异；另一方面从 QRF/RQM 与 `REP01` 反向吸收“无先在观察者的有限相对位置”与“表征脚手架 vs. 不变量包分离”纪律，加固 SRT 原初分化与暗礁原理。**
 
 ---
 
 ## 9. 最压缩结论
 
-`Quant 00 Intro` 可以压缩成五句话：
+`Quant 00 Intro` 校准后可压缩成五句话：
 
-1. **量子形式中的概率、条件态与退相干，不自动等于一个结果已经发生。**
-2. **`\hat G` 只承载 AM-A 转化的形式角色；物理实现必须按诠释索引。**
-3. **不确定性、纠缠与非定域性都可被理解为有限算子面对未切分 `L_0` 时的结构后果。**
-4. **历史不是预存实体，而是当前锚定时对过去路径的回投。**
-5. **共同事件审计核是 outcome record、路径效力与未来可达性改变，不是某个单项物理代理。**
+1. **量子形式中的概率、条件态与退相干不自动等于结果已发生；`PHR-A` 共同审计核是 outcome record、路径效力与未来可达性改变。**
+2. **`\hat G_\theta` 仅承载形成态/模型级转化角色；物理实现必须按诠释索引，并遵守 `REP01` 表征协变护栏。**
+3. **QRF/RQM 展示有限相对位置与交互边界即可成立事实分化，但有限相对位置不等于 `One` 或意识主体。**
+4. **纠缠与 Bell 违背警示不得将 `L_1/L_2` 局域对象直觉倒投进 `L_0`；SRT 不主张逆因果信号。**
+5. **物理事件发生与语义/认知 `L_2` 落地必须严格分离。**
 
 ---
 
@@ -1425,6 +1406,8 @@ SRT 的压缩增量在于：
 - 全量原文：`SRT_Quant_00_Intro.md`
 - Quant Selection compact core：`SRT_Quant_01_Selection_CompactCore.md`
 - Quant Cosmology compact core：`SRT_Quant_02_Cosmology_CompactCore.md`
+- QRF / Instrument 扩展桥：`Extensions/SRT_Phys_E01_Quantum_Instrument_Bridge.md`、`Extensions/SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md`
+- 时空与七项时间接口：`../Philosophy/SRT_Causality_Time.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
@@ -1439,25 +1422,25 @@ SRT 的压缩增量在于：
 | path | `Physics/SRT_Quant_01_Selection_CompactCore.md` |
 | id | SRT-QUANT-01-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-01, SRT-PHYS-BRIDGE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-01, SRT-PHYS-BRIDGE, SRT-GENERATIVE-ONTOLOGY-SPINE]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Quantum Mechanics: Selection & Measurement — Compact Core
 
-> **定位**：本文件是 `SRT_Quant_01_Selection.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 对量子测量、选择、概率流与非定域性的最短论证骨架。  
-> **关系**：不替代原文；原文保留详细量子诠释整合、概率流机制与实验预测。
+> **定位**：本文件是 `SRT_Quant_01_Selection.md` 的紧凑主干版（已随 `R4-C2` 校准）。  
+> **用途**：用于快速把握 SRT 对量子测量、有限相对位置接口（`QRF / RQM / REP01`）、`PHR-A` 事件审计与非定域性的最短论证骨架。  
+> **关系**：不替代原文；原文保留详细量子诠释整合、概率流假说与实验讨论。
 >
-> **PHR-A（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 是 AM-A 的形式角色载体；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。
+> **PHR-A & `R4-C2` 护栏（2026-11-26）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 仅是形成态/模型级形式角色载体，不是原初 `Selection` 或先在主体；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分；遵守 `REP01` 表征协变护栏，且物理相对位置不等于 `One` 或意识。
 
 ## 1. 核心问题
 
@@ -1503,84 +1486,50 @@ PHR-A 使用四项有界审计：
 压缩含义：
 > **审计不需要意识，但通过审计也不证明主体或意识。**
 
-### 2.3 Physical Measurement Interface
-历史符号 `\hat{G}_{proxy}` 只允许表示把候选差异耦合到记录通道的 physical measurement interface。装置可以形成测量记录；这不把装置升级为 proxy subject、agent 或 conscious observer。
+### 2.3 Physical Measurement Interface & Relative Position（`QRF / RQM` 对接）
+历史符号 `\hat{G}_{proxy}` 只允许表示把候选差异耦合到记录通道的 physical measurement interface（对应跨尺度五机制中无主体物理中介，严分于具主体与规范条件的 `Delegation`）。装置、参考系（`E02 QRF`）与交互边界（`\theta_{basis}, \theta_{boundary}, \theta_{H_{int}}`）共同构成物理有限相对位置并可形成测量记录；这不把装置升级为 `One`、proxy subject、agent 或 conscious observer。
 
 ---
 
-## 3. 比特生成与现实含量
+## 3. 比特生成与发生/持续分离（`EX-A` 校准）
 
-### 3.1 Wheeler-SRT Bit Generation
+### 3.1 Wheeler-SRT Bit Generation（P3 类比，区分发生与累积）
 \[
-\text{Reality Content}(\Omega)=\int H(\hat{G}_\theta[\Psi])\,dt
+\text{Retained Content}_M(\Omega)=\int H_M(\hat{G}_\theta[\Psi])\,dt \quad \text{(declared model } M\text{)}
 \]
 
-SRT 在量子层面对 Wheeler 的重写是：
-> **It from Bit 还不够，Bit 本身来自 Selection。**
+SRT 对 Wheeler 的结构性补充：
+> **It from Bit 聚焦可编码比特，SRT 进一步追问比特差异如何经由有限位置实际化与记录留存而形成。**
 
-压缩说法：
-- 现实之所以显得“硬”，是因为其中压缩了大量历史选择
-- 物理实体的存在感，来自被不断锚定与沉积
+遵循 `EX-A`（`OPEN_TENSIONS §15`）：单次原初实际化不等于持久实体（`occurrence != persistence != One`）；宏观物理对象的“硬度”对应闭合记录的冗余稳定化（`P07`）与低边际读出摩擦。
 
 ---
 
-## 4. 概率流而非新力
+## 4. 概率流偏置假说与物理闭合边界（`P4` 探索假说 · `R3-03-O6` 护栏）
 
-### 4.1 Probabilistic Bias Theorem
+### 4.1 Probabilistic Bias Hypothesis（`P4` Speculative Bridge，非规范结论）
 \[
-P_{obs}(x)=P_{Born}(x)+\delta_\theta(x,d)
-\]
-并满足：
-\[
-\int \delta_\theta dx = 0
+P_{obs}(x)=P_{Born}(x)+\delta_\theta(x),\qquad \int \delta_\theta\,dx = 0
 \]
 
-SRT 在这里回应的核心质疑是：
-> **如果心灵影响物质，是否必须引入新粒子或新力？**
-
-SRT 的回答是否定的。
-
-它的压缩立场是：
-- 不通过创造新力推动物体
-- 而通过微弱偏置量子概率流影响结果分布
-
-### 4.2 为什么不能“弯勺子”
-宏观系统的影响随粒子数指数衰减：
-\[
-\text{Influence}_\theta \propto e^{-N/N_{coherence}}
-\]
-
-这意味着：
-- 微观量子窗口可能可偏置
-- 宏观物体几乎完全被退相干压死
-
-最压缩句子：
-> **SRT 允许微观概率偏置，不允许宏观超能力。**
+**`R4-C2` 严格边界**：
+- 上式是针对“若具身系统在微观窗口存在统计偏置而不引入新力”的 **P4 探索性可证伪假说**（具体实验证伪窗口见 `Extensions/SRT_Phys_E05_Falsifiability_Program.md`），**不是 SRT 规范理论前提，亦不宣称已观测到玻恩规则偏离**；
+- SRT 的物理因果兼容主张（`R3-03-O6`、`Philosophy/SRT_Causality_Time.md §1.4`）**不依赖**违反玻恩规则或引入宏观超自然效应——高层约束主要通过物理闭合内的边界条件与耦合拓扑（`T-Phys-5` $\mathcal{C}_{down}^{macro} \subseteq \Pi_{kernel}$）运作；
+- 宏观尺度下由于环境退相干与多体耦合，任何假定微观偏置项均指数衰减（`e^{-N/N_{coherence}}`），严格排除宏观“心物超能力”宣称。
 
 ---
 
-## 5. 纠缠与非定域性
+## 5. 纠缠、非定域性与表征协变（`REP01` 校准）
 
-### 5.1 Entanglement Unity Theorem
+### 5.1 Entanglement as Pre-Factorized Relational Structure
 \[
-\text{Entanglement}(A,B) \iff \hat{G}_\theta \text{ fails to factorize } L_0(A\cup B)
+\text{Entanglement}(A,B) \iff \text{non-factorizable joint state in } \pi_{\text{phys}}(L_0)
 \]
 
 纠缠在 SRT 中不是“超距神秘连接”，而是：
-> **L_0 在该处仍未被成功分解为独立局域对象。**
+> **在所声明的物理投影下，联合系统尚未被局域边界与交互记录分解为相互独立的局域子系统。**
 
-所以：
-- 非定域性是 `L_1` 视角下的惊讶
-- 在 `L_0` 层，这只是尚未完成切割的统一结构
-
-### 5.2 配置空间解释
-\[
-\hat{G}_\theta: \mathbb{R}^{3N} \to \mathbb{R}^3
-\]
-
-压缩含义：
-- 我们看到的是低维投影
-- 所谓“spookiness”常来自把投影误认成了独立实体本身
+同时遵守 **`REP01` 表征协变护栏**（`Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`）：实/复数域 Hilbert 空间与配置空间 $\mathbb{R}^{3N}$ 皆为可替换的形式脚手架，真正承重的是在等价表征变换下保持不变的操作、组合、概率与读出结构包；严禁把 $\mathcal{H}$ 或 $\mathbb{R}^{3N}$ 直接等同于 `L_0^{abs}`。
 
 ---
 
@@ -1590,61 +1539,52 @@ SRT 对退相干的最关键判断是：
 
 > **退相干可以支持相干抑制与记录稳定化，但单独不能裁决全局坍缩、branch-relative fact formation 与 operational update。**
 
-它能解释：
-- 为什么某些态被偏好
-- 为什么非对角项消失
-
-但它不能独自解释：
-- 为什么最后是特定结果被实现
-
 PHR-A 不再用 `\hat G_\theta` 填补一个“最终决定机制”。它要求实际审计 outcome record 是否获得路径效力与历史效力，并把本体读法交给已声明的诠释。
 
 ---
 
-## 7. 时间量子化与意识采样率
+## 7. 采样率与时间接口边界（对齐 `Causality_Time §2.2`）
 
-### 7.1 Planck Consciousness Time
+### 7.1 Operational Sampling Window（模型内体验/观测窗口代理）
 \[
 t_\Psi \approx \frac{1}{\nu_{neural}}
 \]
 
-原文的重要直觉是：
-- 意识与观测有采样率限制
-- 高于该采样率的变化会被时间平均
-
-压缩说法：
-> **宏观主体看不到量子叠加，不只是因为“它太小”，也因为采样率太低。**
+该关系仅刻画有限具身/仪器接口的积分与采样时间窗（对应七项时间接口中的体验/仪器观测窗口 `t_{exp}` / `t_{instrument}`），**不推出普朗克物理时间离散化定理**（`H-Phys-2` 保持独立假说，`E04` Page–Wootters 关系时间并行保留）。
 
 ---
 
-## 8. 诠释综合
+## 8. 诠释综合与双向反馈
 
-SRT 试图统一：
-- QBism 的主观参数面
-- RQM 的事实相对性
-- Wheeler 的信息现实论
-- 退相干理论的环境稳定化
+SRT 在量子测量层整合：
+- **RQM / QRF** 的位置与参考系相对性（为 SRT 原初分化与有限相对位置提供硬物理抽象来源）；
+- **QBism** 的有限代理更新视角（去主体化后仅在具主体层适用）；
+- **Wheeler** 的参与性信息记录；
+- **退相干 / 量子达尔文主义** 的环境稳定化机制。
 
 其最压缩兼容句是：
-> **物理测量描述必须固定位置、边界、interaction 与 record channel；这些条件定义审计位置，不构成一个先在主体。**
+> **物理测量描述必须固定位置、边界、interaction 与 record channel；这些条件定义审计位置，不构成一个先在主体，亦受 `REP01` 表征协变与 `PHR-A` 多诠释审计约束。**
 
 ---
 
 ## 9. 最压缩结论
 
-`Quant 01` 可以压缩成五句话：
+`Quant 01` 校准后可以压缩成五句话：
 
-1. **量子 instrument 的概率和条件态不自动等于结果已经发生。**
-2. **物理 realization candidate 需要 outcome record、路径效力与历史效力；不要求意识。**
-3. **现实内容来自历史选择的累积，而不是预先给定的实体清单。**
-4. **SRT 若允许心灵影响物质，也只是通过微观概率流偏置，而不是新力。**
-5. **纠缠与非定域性来自 `L_0` 未被彻底分解，而非宇宙违反理性。**
+1. **量子 instrument 的概率和条件态不自动等于结果已发生；`PHR-A` 需 outcome record、路径效力与历史效力，不要求意识。**
+2. **装置、参考系（QRF）与交互边界定义物理有限相对位置，不构成 `One`、主体或规范 `Delegation`。**
+3. **单次发生不等于持久实体（`EX-A`）；物理对象的稳定来自闭合记录累积与低边际读出摩擦。**
+4. **任何微观概率流偏置均属可证伪 P4 探索假说，SRT 物理闭合兼容（`R3-03-O6`）不依赖违反玻恩规则或引入新力。**
+5. **纠缠反映联合态未局域分解，且一切数学表征均遵守 `REP01` 协变护栏，不得等同于 `L_0^{abs}`。**
 
 ---
 
 ## 10. 阅读路径
 
 - 全量原文：`SRT_Quant_01_Selection.md`
+- split 导航：`Selection_Split/README.md`
+- REP01 协变护栏：`patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`
+- 量子仪器与 QRF 桥：`Extensions/SRT_Phys_E01_Quantum_Instrument_Bridge.md`、`Extensions/SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
 - Physics bridge：`_SRT_Phys_Bridge.md`
 - Cosmology compact core：`SRT_Physics_Cosmology_CompactCore.md`
@@ -1661,253 +1601,140 @@ SRT 试图统一：
 | path | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` |
 | id | SRT-QUANT-02-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-02, SRT-QUANT-01-COMPACT-CORE, SRT-PHYS-COSMO-COMPACT-CORE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-02, SRT-QUANT-01-COMPACT-CORE, SRT-PHYS-COSMO-COMPACT-CORE, SRT-CORE-14-COMPACT-CORE]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Physics: Cosmology & Quantum Interfaces — Compact Core
 
-> **定位**：本文件是 `SRT_Quant_02_Cosmology.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 如何把量子选择、热力学、宇宙尺度与生物量子接口连成一条主轴。  
-> **关系**：不替代原文；原文保留详细接口、实验预测、复算子扩展与量子—宇宙学整合论证。
+> **定位**：本文件是 `SRT_Quant_02_Cosmology.md` 的紧凑主干版（已随 `R4-B / R4-C2` 校准）。  
+> **用途**：保留量子选择、信息热力学代价代理、生物量子探索假说与跨尺度相容接口的桥接脉络，并清理旧版 `H(L_0)-H(L_1)` 熵式、`G_cosmic ≅ G_bio ≅ G_quantum` 严格同构与 `d_{bio}` 容量混写冲突。  
+> **关系**：不替代 `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`、`Physics/SRT_Physics_Claim_Status.md` 或原文。
 
 ## 1. 核心问题
 
-这篇的核心问题不是单纯“量子宇宙学”，而是：
+这篇的 `R4-C2` 核心问题已从“证明三尺度严格同构”收紧为可失败的跨尺度接口检验：
 
-> **如果量子选择、注意力热力学、生物量子接口与宇宙尺度结构都受同一 `\hat G` 语法支配，那么它们如何被放进同一框架？**
-
-它承担的是一条桥接线：
-- 从量子选择
-- 到注意力热力学
-- 到生物量子接口
-- 再到宇宙尺度不变性
+> **量子信息热力学代价、生物相干窗口假说与大尺度物理结构，如何在不预设严格算子同构或泛心论的前提下，接受跨尺度五机制与 `P3-Scale-01` 结构相容检验？**
 
 ---
 
-## 2. 注意力热力学
+## 2. 注意力与记录热力学（`EX-A / RC-A` 校准）
 
-### 2.1 Selection Work
+### 2.1 Logical-Reset & Record-Stabilization Work Bound
 \[
-W_{selection} \ge k_B T \cdot \Delta I_{L_0 \to L_1}
+W_{reset/record} \ge k_B T \cdot \Delta I_M \quad \text{(declared physical model } M \text{ implementing logically irreversible update)}
 \]
 
-含义：
-- 选择不是“纯心理”操作
-- 它具有最小功需求
-- 高精度锚定比低精度锚定更昂贵
+含义（对齐 `RC-A`、`Core_25`、`E03`）：
+- Landauer / Sagawa–Ueda 下界约束的是具体物理实现为逻辑不可逆擦除或记录稳定化的过程，**不升级为“每一次原初 Selection 都至少支付 `k_B T \ln 2`”的普遍本体定理**；
+- 在神经/认知实现层，高精度状态维持与切换伴随真实代谢与热力学负担代理（`\sigma_f^{phys} \in \mathcal{P}_{thermo}(\Psi_f)`，非 `\Psi_f` 等同式）。
 
-### 2.2 Willpower as Energetic Maintenance
+### 2.2 Attention Maintenance Cost Proxy（退出旧 `H(L_0) - H(L_1)` 违规式）
+**`R4-C2` 清理（`OPEN_TENSIONS §15 EX-A` / `Gate 0 Class B`）**：旧式 `E_{attention} \propto \frac{d}{dt}(H(L_0)-H(L_1))` 使用了未声明测度的 `H(L_0)`，现正式退出；在声明状态空间、先验参考分布与可观测通道的模型 `M` 中，改记为信息热力学代理：
 \[
-E_{attention} \propto \frac{d}{dt}\left(H(L_0)-H(L_1)\right)
+\dot{E}_{maint, M} \gtrsim k_B T \, \dot{I}_M(X_{env}; Y_{record}) + \dot{W}_{diss, M}
 \]
+最压缩解释：维持非默认注意/工作记忆构型需要持续的物理实现供给与可支付性窗口（`Core_25`），而不依赖对 `L_0^{abs}` 定义全局熵。
 
-最压缩解释：
-> **意志力不是神秘词，而是维持非默认现实所需持续支付的能量。**
-
-### 2.3 Selection Efficiency
+### 2.3 Selection Efficiency Proxy
 \[
-\eta_{selection}=\frac{\Delta I_{useful}}{\Delta I_{total}}
+\eta_{selection, M}=\frac{\Delta I_{useful, M}}{\Delta I_{total, M}}
 \]
-
-SRT 在这里做的事，是把：
-- 注意力
-- 意志
-- 专家直觉
-- 认知负担
-
-全部拉回选择效率与熵成本问题。
+在声明任务/认知模型中用于比较策略与脚手架降本效率，不充当本体或意识判据。
 
 ---
 
-## 3. 玻恩规则的 SRT 重写
+## 3. 玻恩规则接口（`P3/P4` 稳定性兼容性类比，非推导出玻恩律）
 
-### 3.1 Born Rule as Stability Constraint
+### 3.1 Born Rule as Stability Compatibility Analog
 \[
-P_{Born}=\arg\min_P \mathbb{E}[\text{Prediction Error}]
+P_{Born} \sim_{\text{P3}} \text{minimum-friction stability constraint in quantum readout models}
 \]
 
-SRT 的核心理解是：
-> **玻恩规则不仅是经验规律，也是维持稳定存在边界的最优策略。**
-
-### 3.2 Born Deviation Cost
-\[
-\Phi_{Born} \propto \|P_{subjective}-P_{Born}\|^2
-\]
-
-若偏离过大：
-\[
-\Phi_{Born} \ge \Phi_{critical}
-\Rightarrow L_1 \text{ stability collapses}
-\]
-
-压缩结论：
-- 玻恩规则不只是“世界碰巧如此”
-- 它也是算子若想稳定存在必须服从的概率秩序
+- 在 SRT 物理桥中，玻恩概率分布可被类比性地读作与稳定物理记录相容的基线概率秩序；偏离玻恩统计的高偏差模型假说（`\Phi_{Born}`）用于给出可证伪压力边界（`E05`），**不宣称 SRT 已独立数学推导出玻恩规则**。
 
 ---
 
-## 4. 引导随机性
+## 4. 引导随机性假说与规范自由的分界（`T3-03 C / Q26` 校准）
 
-### 4.1 Guided Stochasticity
+### 4.1 Guided Stochasticity（`P4` 探索假说，非自由本体定义）
 \[
-P_{outcome}=P_{Born}+\delta(\hat G_\theta)
+P_{outcome}=P_{Born}+\delta(\hat G_\theta),\qquad \|\delta\|^2 < \Phi_{critical}-\Phi_{baseline}
 \]
 
-SRT 的关键立场是：
-- 自由不是纯决定论
-- 也不是纯随机
-- 而是对 `L_0` 概率流进行有限偏置
-
-### 4.2 Bias Upper Bound
-偏置不是无限的，而受到稳定性与热力学限制：
-\[
-\|\delta\|^2 < \Phi_{critical}-\Phi_{baseline}
-\]
-
-### 4.3 Selection Window
-\[
-\Delta t_{window} \propto \tau_{decoherence}
-\]
-
-这意味着：
-- 在微观系统中，选择窗口较大
-- 在宏观系统中，窗口急剧缩小
-
-最压缩结论：
-> **SRT 允许有限自由，不允许无限神迹。**
+**`R4-C2` 关键校准**：
+- 上式仅保留为微观量子窗口中的 **P4 探索性概率偏置假说**（受退相干时间窗 `\tau_{decoherence}` 与物理闭合边界严格限制，宏观效应趋零）；
+- **SRT 的自由不等于“量子随机偏置”**——按 `Spine §4.2` 与 `T3-03 C / Q26`，自由是形成后组织基于价值与关切对**生成机会成本结构的主动调节、多单元比对与新秩序重构能力**，其成立完全不依赖微观量子偏置或违反玻恩规则。
 
 ---
 
-## 5. 生物量子接口
+## 5. 生物量子接口（`P4/P5` 探索假说，非意识必要条件）
 
-### 5.1 Microtubule as Interface
-SRT 将微管视为一个候选接口：
-> **生物系统可能通过它把量子相干窗口与高阶选择过程连接起来。**
-
-### 5.2 Quantum Coherence Threshold
-\[
-Q > T_c \Rightarrow \text{continuous selection remains possible}
-\]
-
-### 5.3 Anesthesia Mechanism
-若麻醉把相干压到阈值以下：
-- 选择连续性中断
-- 意识流断裂
-
-### 5.4 Penrose Collapse Time & d Bound
-\[
-\tau_{collapse} \approx \frac{\hbar}{E_G}
-\]
-\[
-d_{bio} \propto \frac{1}{\tau_{collapse}}
-\]
-
-压缩意义：
-- 引力自能为生物 d-value 提供硬上界
-- 量子相干窗口越短，选择带宽越受限
+### 5.1 Microtubule & Coherence Window Hypotheses（`P4/P5` Speculative）
+- 微管量子相干与麻醉阻断假说仅作为外部物理学/神经科学前沿探索接口保留（非 SRT 规范立场，亦非意识必要/充分条件，`HP-B OPEN`）；
+- **容量代理修复（`R4-A`）**：旧式 `d_{bio} \propto 1/\tau_{collapse}` 将引力自能退相干时间直接连向规范 `d-value`，现严格更正为探索性 P4 **相干带宽容量代理（`B_{\text{cap}}^{\text{coh}}`）**，**绝不等同于需 `Bearer (P+E)` 准入的规范风险敏感强度 `d`**。
 
 ---
 
-## 6. 复幽灵算子与时间相位
+## 6. 复算子相位与时间体验代理
 
-### 6.1 Complex Extension
+### 6.1 Complex Phase & Subjective-Rate Analog（模型内代理）
 \[
-\hat G_\theta^{\mathbb C}=|\hat G_\theta|e^{i\phi_\theta}
+\hat G_\theta^{\mathbb C}=|\hat G_\theta|e^{i\phi_\theta},\qquad v_{subjective, M}=\frac{d\phi_\theta}{dt}\cdot \frac{1}{\omega_0}
 \]
-
-SRT 在这里试图统一两个现象：
-- 量子相位
-- 主观时间流速
-
-### 6.2 Time-Phase Correspondence
-\[
-v_{subjective}=\frac{d\phi_\theta}{dt}\cdot \frac{1}{\omega_0}
-\]
-
-最压缩句子：
-> **时间体验速度可被理解为选择相位梯度的表现。**
-
-### 6.3 Zeno as Phase Reset
-芝诺效应在这里被重读为：
-- 不是简单“频繁看导致冻结”
-- 而是相位不断被重置，阻止自然演化展开
+遵守 `REP01` 表征协变护栏（复相位是具体模型脚手架，非 `L_0^{abs}` 唯一实存形式）与 `Philosophy/SRT_Causality_Time.md §2.2`（`v_{subjective}` 仅属七项时间接口中的模型局部代理；芝诺相位重置仅作动力学类比）。
 
 ---
 
-## 7. 宇宙尺度不变性
+## 7. 跨尺度相容接口（退出严格同构，对齐 `Core_14 P3-Scale-01`）
 
-### 7.1 Scale Isomorphism
+### 7.1 Approximate Cross-Scale Compatibility（取代旧 `G_cosmic ≅ G_bio ≅ G_quantum`）
+**`R4-B2 / R4-C2` 关键撤回（`OPEN_TENSIONS §15`）**：正式撤回旧版严格同构式 `\hat G_{cosmic} \cong \hat G_{bio} \cong \hat G_{quantum}`。跨尺度通用接口改为可失败的 **`Core_14 P3-Scale-01` 近似交换候选**与**跨尺度五机制分工**：
 \[
-\hat G_{cosmic} \cong \hat G_{bio} \cong \hat G_{quantum}
+\pi_\lambda \circ \hat G_\theta \approx \hat G_{\theta,\lambda} \circ \pi_\lambda \quad \text{(declared state spaces, scale map, preserved observables, norm & tolerance)}
 \]
+跨尺度共享的是**待检验的生成—约束—可支付性语法与五机制分析框架**，而非同一物理算子、同一时间速率或跨尺度泛心论。
 
-最重要的意思不是“宇宙像人脑”，而是：
-> **同一类选择语法可在不同尺度投影出不同现象层。**
-
-### 7.2 Relative Subjective Frequency
-不同系统因选择频率不同，会有不同“主观时间速度”。
-
-### 7.3 Dark Matter as L2 Structure
-\[
-\text{Dark Matter} \equiv L_2^{structural} \cap L_1^{gravitational}
-\]
-
-压缩结论：
-- 暗物质可被视为结构性残余的引力显化
-- 而不必只被理解成“不可见粒子”的唯一叙事
+### 7.2 Dark Matter Structural Analogy（`P4/P5` Speculative）
+暗物质与 `L_2` 结构残余的类比仅保留为 **P4/P5 探索性宇宙学隐喻**，不与粒子暗物质/修改引力等成熟天体物理方案竞争实证地位。
 
 ---
 
-## 8. 本体论几何
+## 8. 本体论几何与有限投影（`Core_14 §6` 兼容）
 
-### 8.1 Ontological Parallax
-不同算子基底的夹角，决定现实互见程度。
-
-### 8.2 Homomorphic Perception
-\[
-\hat G: L_0 \to L_1 \text{ is Homomorphic, not Isomorphic}
-\]
-
-这意味着：
-- 感知不是保真复制
-- 而是结构保持但细节扭曲的投影
-
-### 8.3 Non-Fidelity Theorem
-\[
-P(L_1 \cong L_0 \mid \text{Survival}) \to 0
-\]
-
-最压缩句子：
-> **只要系统的目标是生存，它就不会保真地再现 `L_0`。**
+- **Ontological Parallax**：不同有限位置与具身参数 `\theta` 的夹角制约互见与可译性（对接 `_SRT_Phys_Bridge §VI` 正交现实交互模式与暗礁原理）；
+- **Homomorphic Projection & Non-Fidelity**：有限系统在可支付性预算下维持的是结构保持而非无损复刻的有效界面（P3/P4 桥接，非 P0 公理；见 `SRT_AI_START.md §15` `fitness beats truth is not P0`）。
 
 ---
 
 ## 9. 最压缩结论
 
-`Quant 02` 可以压缩成五句话：
+`Quant 02` 校准后可压缩成五句话：
 
-1. **选择具有热力学成本，因此意志与注意力可被物理化。**
-2. **玻恩规则不仅是经验规律，也是存在稳定性的概率约束。**
-3. **自由不是无限任意，而是受热力学与退相干窗口约束的引导随机性。**
-4. **生物量子接口提供了把量子窗口与意识连续性连接起来的候选桥梁。**
-5. **量子—生物—宇宙三层可以共享同一选择语法，但不因此坠入泛心论。**
+1. **逻辑不可逆信息操作与记录维持具有物理热力学代价代理，但退出未声明测度的 `H(L_0)-H(L_1)` 旧式，亦不将 Landauer 下界升格为原初 `Selection` 普遍定理。**
+2. **玻恩规则与量子概率流偏置均属可证伪 P3/P4 桥接假说；SRT 规范意义上的自由（`T3-03 C / Q26`）不依赖微观量子偏置。**
+3. **微管相干与 Penrose 坍缩时间仅作 P4/P5 探索接口；其带宽项归属容量代理（`B_{\text{cap}}`），严分于规范 `d`。**
+4. **正式退出 `\hat G_{cosmic} \cong \hat G_{bio} \cong \hat G_{quantum}` 严格同构，改为 `Core_14 P3-Scale-01` 近似结构相容与跨尺度五机制分工。**
+5. **有限界面投影、复相位代理与暗物质类比均受 `REP01`、`PHR-A` 与反泛心论硬边界约束。**
 
 ---
 
 ## 10. 阅读路径
 
 - 全量原文：`SRT_Quant_02_Cosmology.md`
+- split 导航：`Quant_02_Cosmology_Split/README.md`
+- 跨尺度五机制与近似相容：`../Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
+- 信息热力学与证伪程序：`Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md`、`Extensions/SRT_Phys_E05_Falsifiability_Program.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
-- Quant 01 compact core：`SRT_Quant_01_Selection_CompactCore.md`
 - Physics Cosmology compact core：`SRT_Physics_Cosmology_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
@@ -1922,24 +1749,24 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | path | `Physics/SRT_Physics_Cosmology_CompactCore.md` |
 | id | SRT-PHYS-COSMO-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-09-20 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
+**dependency**：[SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE, SRT-PHIL-CAUSALITY-01]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT Physics: Cosmology — Compact Core
+# SRT Physics: Thermodynamics, Spacetime, Natural Law & Cosmology — Compact Core
 
-> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+> **RC-A & `R4-C2` 权威对齐（2026-11-26）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门；`L_0/L_1/L_2` 为同一现实的三分析视角而非三实体容器；时空与因果口径全面对齐 `Philosophy/SRT_Causality_Time.md`（七项时间接口、四类距离与 `R3-03-O6` 物理闭合边界）；物理常数与自然律服从 `R3-02-O6` 自然律三分边界；宇宙尺度仅讨论容量/整合代理（`D_eff`），规范 `d` 为 `NOT ADMITTED / NOT APPLICABLE`。
 
 > **定位**：本文件是 `Physics/SRT_Physics_Cosmology.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 在热力学、时间、引力与宇宙学上的最短主轴。  
+> **用途**：用于快速把握 SRT 在信息热力学、时空因果、引力弱相容、自然律三分边界与宇宙学上的最短主轴。  
 > **关系**：不替代原文；原文保留详细机制、实验预测、接口批次与长篇推导。
 
 ## 1. 核心问题
@@ -1975,13 +1802,10 @@ E_{select} \ge k_B T \ln 2
 最压缩的物理含义是：
 > **RC-A 边界**：该 Landauer 式只能约束被具体实现为逻辑不可逆信息操作 / 物理重置的 bridge case，不能升级为“每一次 Selection occurrence 都至少支付 `k_B T ln 2`”的普遍定理。
 
-### 2.3 Landauer Gap 的 SRT 解读
-SRT 进一步强调：
-- 低 d 的重复复制过程可以逼近热力学下界
-- 高 d 的现实维持过程会显著偏离下界
-
-因此：
-> **高能耗不是失败，而是维持高 d 非默认现实的热力学签名。**
+### 2.3 Landauer Gap 的 SRT 解读（容量/复杂性维护代理与 `Core_25` 衔接）
+SRT 进一步强调（与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`、`03_Bridges/SRT_Selection_Event_CompactCore.md §4b` 衔接）：
+- 靠近热力学下界的机械复制与远离下界的高维持能耗生物过程具有不同的非平衡组织机制；
+- 在已独立建立 `Bearer (P+E)` 与边界维护的生物系统中，高于 Landauer 下界的能耗开销可作为非默认维持负荷的物理投影代理（`T-E §2` 组织机制依赖，非解释充分性，亦不将能耗或熵产生裸等同于 `\Psi_f` 或规范 `d`）。
 
 ---
 
@@ -2022,88 +1846,60 @@ SRT 把质量解释为：
 
 ---
 
-## 4. 时间本体论
+## 4. 时空与因果边界（对齐 `Philosophy/SRT_Causality_Time.md` & `R3-03-O6 / R3-05-O1 / R3-CL-O7`）
 
-### 4.1 Time as Retained-Order Metric Candidate
-\[
-t \propto \int \Psi_f(L_1)\,dn
-\]
+### 4.1 七项时间接口与物理时间模型的准确归位
+`primitive Selection` 不预设一个先在的普遍时间容器。对齐 `Philosophy/SRT_Causality_Time.md §2.2`，本板块的物理时间模型必须严格归位至**七项时间接口**之中，严禁混同：
+1. **实际化非等价**（`P0-03 / P1-T02`，无须时钟或留痕）；
+2. **局部非对称生成依赖候选**（不自动给全局偏序，因果集对接保持 `OPEN`）；
+3. **$\tau_{\text{ontic}}$**（条件性物择相对变化步比候选，非普遍物理时钟）；
+4. **模型内 $t_{\text{onto}}$**（在声明事件记录、留存映射与算子归属后的局部历史积分代理，如 $t_M \propto \int \Psi_f^{phys}\,dn$）；
+5. **$t_{\text{exp}}$**（具身体验/观测时间窗）；
+6. **数学参数 $t$**（动力学方程纯排序索引，无本体承诺）；
+7. **公共时间（`L_2` 脚手架）**（跨位置共享钟表/历法/物理同步协议）。
 
-primitive Selection 不要求一个先在的普遍时间容器。在声明了 event-record / retention structure 的物理模型中，时间可被候选性地读取为：
-> **被保留选择序列的度量与现实维持耗费的模型内台账。**
+**两条并行物理时间桥（均不宣称已关闭 `R3-05-O1`）**：
+- **`H-Phys-2`（离散保留次序假说）**：仅在声明记录保留模型内将 retained event-order 离散化；若进一步主张普朗克尺度真实离散时空，须给出洛伦兹行为与可检频散预测（受 FERMI/LAT GRB 约束）；
+- **`E04`（Page–Wootters 关系时间桥）**：以内部纠缠时钟—系统条件关联提供**非离散的关系时间替代读法**（与 Rovelli 关系时间、`P05` 量子光学时钟固有时相容）。
 
-**Boundary**：Selection-event counting 不是 primitive ontology；单个 Selection event 不自动生成持久时间单位。这首先是 interpretive retained-order reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
-
-### 4.2 Conditional Model Correspondence
-只有在事件单位、retention mapping、尺度与转换常数均已声明时，三种读法才可检验模型内对应：
-- 被保留的选择序列
-- retention map 准入的历史累积
-- 选择效率
-
-### 4.3 Time Arrow as Retained-Order Readout
-在 retained event-order 与持续历史效力已经建立的模型中，时间不对称性可作为记录结构的方向读数：
-- 过去 = 已固化的 `L_2`
-- 现在 = 发生中的 `L_1`
-- 未来 = 尚未切割的 `L_0`
-
-最压缩句子：
-> **时间之箭可作为被保留历史关系的宏观读数；bare occurrence 或 irreversibility 不足以建立普遍箭头。**
-
-### 4.4 Time Travel Impossibility
-SRT 对时间旅行的最压缩否定是：
-- 过去不是可任意回访的存档库
-- 而是已经固化的选择结果
-- 要“回到过去”就要逆转现实压缩本身
+### 4.2 空间、四类距离与物理闭合边界
+- **四类距离边界（`R3-CL-O7` OPEN）**：严格区分**物理距离**（相对论时空与相互作用传播约束）、**作用距离**（因果干预传递跨度）、**认知距离**（表征/框架转换成本）与**生成距离**（组织条件跃迁重构跨度）；不宣称替代广义相对论度规；
+- **因果分层与物理闭合（`R3-03-O6`）**：区分**水平时序因果**（物理动力学闭合有效、无超自然外力）、**垂直非时序构成约束**（宏观边界与守恒结构约束局部可达空间，`T-Phys-5`）与**局部非对称生成依赖**；
+- **时间箭头与时间旅行边界**：在已建立留存记录与持续历史效力的模型中，过去/现在/未来对应已留存约束（`L_2`）、发生中实际化（`L_1`）与未闭合开放面（`L_0`）的宏观读数；裸发生或局部不可逆性不足以自动导出宇宙学时间箭头（`R3-05-O1` OPEN），且依据 `P0-03` 实际化不可逆，SRT 不支持逆因果信号或宏观时间旅行。
 
 ---
 
-## 5. 引力、信息与共识的弱接口
+## 5. 引力弱接口与自然律三分边界（`R3-02-O6`）
 
-### 5.1 Entropic Gravity / Gravity as Consensus
+### 5.1 Entropic Gravity / Gravity as Consensus（弱场兼容边界）
 \[
 F_g = T\nabla S
 \]
+在 SRT 中，引力与物理 `\Psi_f^{phys}` 代理保持平行结构角色类比，当前**最高只承诺弱场梯度方向相容**（`\nabla \Psi_f^{phys} \parallel \nabla \Phi_N`），绝不宣称 `G_{\mu\nu}` 级别张量重建。
 
-与之对应的 SRT 压缩解释是：
-> **引力可作为维持宏观现实共识成本的候选物理投影。**
+### 5.2 自然律三分边界与物理常数定位（`R3-02-O6` 规范口径落盘）
+遵循 `SRT_Physics_Claim_Status.md §2.9`，物理规律与常数不再被一概压成“历史共识”，而是按三类边界分账（具体物理定律之实质归属保持 **`R3-02-O6` OPEN**）：
+1. **原初生成属性**：跨尺度底层生成关系候选；
+2. **条件性组织规律**：在特定对称性、耦合、能标与边界下稳定成立的有效规律（EFT/RG、守恒律、热力学定律）；
+3. **历史性硬化规则**：经宇宙学/路径历史锁定与观测协议固化形成的持续约束（如局部冻结参数与观测 `L_2` 协议）。
 
-这不是把引力简单还原成“主观意见”，而是说：
-- 宏观时空结构可被理解为稳定的 `L_2` 共识网络
-- 引力可能表现为该共识网络的几何与能量代价
-- 当前最弱承诺是弱场梯度方向相容，不是 `G_{\mu\nu}` 级别推导
-
-### 5.2 Constants as Stable-Parameter Placement
-
-物理常数在本轮只允许这样读：
-- 位于可维持稳定 `L_2` 结构的参数区域
-- 不是精确数值解释
-- 不是对人择、EFT、标准模型、弦景观或其他外部物理解释的替代
+物理常数（`\hbar, c, G, k_B, \alpha, \Lambda`）仅作为可维持持久结构与闭合记录的**稳定参数子空间放置约束**，不是精确数值推导，亦不替代标准模型、EFT、人择或其他外部物理解释。
 
 ### 5.3 Spacetime as Error-Correcting Code
-SRT 借用这一想法强调：
-- 时空不是被动背景
-- 它更像现实稳定化协议的一部分
+作为 P3/P4 信息几何类比提示时空兼具动态稳定化协议侧面，不替代广义相对论几何。
 
 ---
 
-## 6. 宇宙学主轴
+## 6. 宇宙学主轴与容量代理校准
 
-### 6.1 Big Bang as L0 Minimum / Selection Event
-大爆炸在 SRT 中不只是“初始爆炸”，更像：
-> **从潜能极值处开始的大尺度现实锚定。**
+### 6.1 Big Bang Horizon（旧 `argmin K(σ)` 式已暂停）
+按 `SRT_Physics_Claim_Status.md §2.0` 与 `OPEN_TENSIONS §15–§17`，旧式“大爆炸 = `\arg\min_{\sigma\in L_0} K(\sigma)`”因未在 `L_0^{abs}` 上定义复杂度测度、可行域与存在唯一性条件，**已正式暂停（parked）**，不作为现行宇宙学定义。
 
-### 6.2 Dark Matter / Dark Energy 重写
-SRT 试图把暗物质和暗能量重写为：
-- 宏观现实结构中的 `L_2` 残余、共识结构或本体论压力效应
-- 而不只是神秘新物质标签
+### 6.2 Dark Matter / Dark Energy 重写（`P4/P5` 探索类比）
+将暗物质/暗能量比附为大尺度 `L_2` 结构残余或本体论压力仅属 **P4/P5 探索性概念接口**，须独立接受天体物理观测检验。
 
-### 6.3 Gravitational d-value
-宇宙尺度上的 d 不是“宇宙有意识”，而是：
-- 时空共识维持能力
-- 大尺度拓扑整合带宽
-
-所以：
-> **宇宙尺度上的 d 是数学量，不自动携带现象意识含义。**
+### 6.3 Cosmic Coherence Capacity Proxy（退出“宇宙尺度规范 `d`”混写）
+历史术语 `Gravitational d-value`（`Def-Cosmo-1`）在 `R4-A / R4-C2` 下严格归位为**大尺度拓扑/宏观相干整合容量代理（`D_{\text{eff}}^{\text{cosmic}}` / $B_{\text{cap}}$）**；按 `Core_14_CompactCore §3.2`，规范不可逆风险敏感强度 `d = ‖∂U/∂S‖` 在宇宙尺度标记为 **`NOT ADMITTED / NOT APPLICABLE`**。
 
 ---
 
@@ -2182,33 +1978,36 @@ d / Psi_f / G-hat conjunction -/> universal consciousness admission.
 | path | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` |
 | id | SRT-PHYS-07-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-07, SRT-PHYS-10-COMPACT-CORE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-07, SRT-PHYS-10-COMPACT-CORE, SRT-ONE-FORMATION, SRT-CORE-14-COMPACT-CORE]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT Physics: Complexity & Emergence — Compact Core
+# SRT Physics: Complexity & Cross-Scale Generation — Compact Core
 
-> **定位**：本文件是 `SRT_Phys_07_Complex_Systems.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 如何重写复杂性、涌现、临界性、控制论与介观机制。  
-> **关系**：不替代原文；原文保留协同学、乔姆斯基层级、形态发生与病态振荡等展开层。
+> **定位**：本文件是 `SRT_Phys_07_Complex_Systems.md` 的紧凑主干版（已随 **`R4-C2` 物理与跨尺度生成** 双向重构升级为物理域跨尺度主枢纽）。  
+> **用途**：快速把握复杂性、跨尺度五机制、物理三态 `One`、耗散结构与生命组织差异（`NODE-LIFE-DISSIPATIVE EA-4` 物理快速层），以及面向 **`R4-C5`** 核心修订评估的三项物理—生命—社会反向完善主线。  
+> **关系**：不替代 `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_One_Formation.md`、`Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` 或原文；原文保留协同学、乔姆斯基层级、形态发生与病态振荡等展开层。
 
-## 1. 核心问题
+## 1. 核心问题与跨尺度五机制分工（`R4-C2` 重构）
 
-这篇真正要处理的问题是：
+这篇处理的核心问题已从“把复杂系统换词成选择动力学”升级为双向跨尺度追问：
 
-> **复杂系统中的“秩序、涌现、协调、病态”到底是什么？它们能否统一被理解为选择动力学的不同相位？**
+> **不同尺度的物理、生命与社会组织如何通过耦合重组生成相对独立性、原本不存在的新能力与跨尺度约束？复杂系统与非平衡物理又如何反向修正、深化和抽象 SRT 的核心本体理论？**
 
-SRT 的压缩答案是：
-- 复杂性不是对选择理论的例外
-- 恰恰是选择在多尺度系统中的最典型表现
+对接 `Spine §5.3` 与 `Core_14_CompactCore §1`，本枢纽严格维持**跨尺度五机制独立分工**（严禁压平成单义“涌现”或“归一化”）：
+1. **装配（Assembly）**：多单元组合产生新整体组织与能力（对接 Cronin–Walker 装配理论与物理束缚态；未必归一化，未必成 `One`）；
+2. **归一化（Normalization）**：严格三分——① **认知/表征归一化（描述压缩）**（研究者的粗粒化、统计平均、热力学态方程，以及重整化群 RG 中积分消去高能/紫外自由度以建立特定尺度有效描述的操作——数学上积分消去高能自由度本身**不证明**物理系统真的删除或压制了这些微观自由度）；② **实际物理耦合归一化与动力学尺度解耦**（物理系统内部组织关系发生真实变化，如强耦合束缚态形成、真实快慢时间尺度分离下的绝热解耦与稳健宏观接口形成）；③ **组织生成型归一化**（在真实耦合重组之上进一步同时满足 `One_Formation §2.4` **内部耦合重构 + 跨位置条件化生效**双门槛，`R3-CL-O2` OPEN）；
+3. **有效作用接口（Effective Action Interface）**：整体以相对独立身份参与他处生成并改写下游可达空间（如 EFT 低能有效自由度、准粒子、分子官能团接口）；
+4. **代理转承（`Proxy`）**：无主体条件下的物理结构转承与非平衡历史中介（铁磁返回点记忆 RPM、周期剪切悬浮液多重记忆、催化路径、河道演化）；
+5. **委托关系（`Delegation`）**：具主体性与规范约束条件的责任委托（**纯物理尺度 `NOT APPLICABLE`**，须独立满足下游主体与 `O2-A` 门槛）。
 
 ---
 
@@ -2220,208 +2019,215 @@ SRT 的压缩答案是：
 \]
 
 最压缩解释：
-> **宏观秩序不是凭空冒出来的，而是从高维可能性里压出少数可维持的序参量。**
+> **宏观秩序不是凭空冒出来的，而是通过耦合与时间尺度分离（绝热消去）从高维微观涨落中组织出少数低维有效序参量。**
 
-SRT 对应关系：
-- 快模式 = `L_0` 涨落
-- 序参量 = `L_1` 涌现结构
-- 控制参数 = `\theta`
-- 循环因果 = `L_1 ↔ L_2` 反馈
+SRT 对应关系（作为 P3 桥接类比，不以协同学替代 SRT 本体）：
+- 快模式 = 模型内可接入涨落（`L_0` 分析面投影）
+- 序参量 = `L_1` 显现有效自由度
+- 控制参数 = 边界/耦合条件 `\theta`
+- 循环因果 = `L_1 ↔ L_2` 双向构成与历史反馈
 
 ---
 
-## 3. 涌现：不是魔法，也不是还原失败
+## 3. 涌现：不是魔法，也不是解释原语（`Core_21c B12 / B15` 对齐）
 
-### 3.1 Emergence as Selection
+### 3.1 Emergence as Cross-Scale Constraint Reconfiguration
 \[
 \text{Emergence} \iff \exists \hat G_{macro}: P(\text{Path}|\hat G_{macro}) \neq P(\text{Path}|\Sigma \hat G_{micro})
 \]
 
-这句话的压缩含义是：
-- 高层结构不是对低层的神秘叠加
-- 而是在更高尺度上形成了新的选择约束
+遵循 `Core_21c B12` 涌现卫生护栏：**“涌现”绝不是解释原语**，而是必须补齐底层单元、耦合拓扑、相变/序参量条件、宏观约束实现通道与下游路径改写的机制占位词：
+- 高层结构不是叠加在低层之上的神秘新力
+- 而是通过边界条件、对称破缺、可达空间重组与有效作用接口形成新的跨尺度选择约束
 
-### 3.2 Downward Causation as Constraint
+### 3.2 Downward Constraint & Physical Closure Boundary（`R3-03-O6 / R3-03-O2` 校准）
 \[
 \frac{d\sigma}{dt}=\hat G_\theta[\sigma]-\nabla F[\sigma]-\lambda\nabla C_{L_2}[\sigma]
 \]
 
-SRT 对“向下因果”的重写非常关键：
-> **高层不直接推动低层，而是约束低层可走的路径。**
+SRT 对“向下因果”的精确口径（对齐 `Philosophy/SRT_Causality_Time.md §1.2, §1.4` 与 `_SRT_Phys_Bridge.md T-Phys-5`）：
+> **高层不对低层施加违背物理守恒的额外力学外力，而是通过非时序垂直构成约束与历史 `L_2` 边界条件重塑低层在转移核协议 `\Pi_{kernel}` 内的可达路径空间。**
 
-这就是它解决 Kim 排斥问题的方式。
+**边界声明**：这兼容合法的物理域内因果闭合（不引超自然外力），同时拒绝“物理描述穷尽一切本体层次”（`R3-03-O6`）；但关于第一人称现象体验本身是否具有非冗余因果效力的 **Kim 因果排除最后硬刺（`R3-03-O2`）与 `HP-B` 仍保持 `OPEN`**，不在此宣布终局解决。
 
 ---
 
-## 4. 现实为何可协调：L2 作为关联装置
+## 4. 现实协调与自然律三分边界（`R3-02-O6` 校准）
 
-### 4.1 L2 as Universal Correlator
+### 4.1 L2 as Coordination Analog (Non-Exhaustive of Physical Law)
 \[
-L_2 \cong \text{Correlator}(\hat G_{\theta_1},\hat G_{\theta_2},...,\hat G_{\theta_N})
+L_2 \mathrel{\xrightarrow{\text{struct}}} \text{Correlator}(\hat G_{\theta_1},\hat G_{\theta_2},...,\hat G_{\theta_N})
 \]
 
-最短意思：
-> **物理定律之所以像“共同现实”，不是因为外部有执法者，而是因为 `L_2` 形成了所有选择者最优遵从的关联均衡。**
+**`R4-C2` 校准（`R3-02-O6`）**：关联均衡仅作为宏观多单元稳定协调的 **P3 结构类比**，**严禁将全部基础物理定律压平为“理性主体历史共识”**。须按自然律三分边界严格区分：
+- **原初生成属性**：跨尺度底层生成关系候选；
+- **条件性组织规律**：对称性、耦合、尺度与能量边界下的稳定物理规律（如守恒律、EFT/RG、热力学约束）；
+- **历史性硬化规则**：经历史路径沉积与观测协议固化形成的 `L_2` 约束。
 
-### 4.2 Rational Compliance
-每个 `\hat G` 偏离 `L_2` 都会支付更高 `\Psi_f`。
-
-所以：
-- 现实的稳定共享性
-- 不是绝对命令
-- 而是低摩擦协调结果
+### 4.2 Compliance Cost Boundary
+在已形成的宏观组织/社会协议中，偏离稳定 `L_2` 结构常带来额外结构摩擦与切换代价（`\Psi_f`）；但具体物理定律在三分中的确切归属保持 **`R3-02-O6` OPEN**。
 
 ---
 
-## 5. 临界性：最优选择发生在混沌边缘
+## 5. 临界性：近临界缓冲与容量代理校准
 
-### 5.1 Optimal G at Criticality
+### 5.1 Near-Critical Buffering
 \[
 K \approx 2 \Rightarrow \text{Flexibility}(L_0)+\text{Stability}(L_1)=\max
 \]
 
-### 5.2 Optimal d-value Scaling
+### 5.2 Capacity-Scaling Proxy（`R4-A` 校准：容量代理 ≠ 规范 `d`）
 \[
-d_{optimal} \propto \log(N)
+D_{\text{eff}}^{\text{optimal}} \propto \log(N) \quad \text{(legacy } d_{optimal} \text{ scoped strictly to capacity/bandwidth proxy)}
 \]
 
-SRT 在这里保留了 Kauffman 的关键洞见：
-- 太有序 → 选择贫乏
-- 太混沌 → 吸引子不稳
-- 临界附近 → 最适合形成高效选择
-
-经验口径收紧：2026 年 *PRL* 显示，whole-brain fMRI 中不少 PCA / PRG“临界性”特征会被时间自相关与有限采样伪造。更稳的说法不是“脑正好站在临界点上”，而是它在通过 time-shift randomization 与 pooled-data 反伪影控制后，表现为**近临界但略亚临界**的健康缓冲带。
+SRT 吸收 Kauffman 与复杂网络洞见，同时遵循 `R4-A` 严格分离无赌注容量代理（`D_eff`）与需 `Bearer (P+E)` 准入的规范风险敏感强度 `d`：
+- 太有序 → 探索与重构余度萎缩（趋近死稳定）
+- 太混沌 → 吸引盆与边界无法维系
+- 经验口径收紧：2026 年 *PRL*（Calvo et al.）显示，whole-brain fMRI 中不少 PCA / PRG“临界性”特征会被时间自相关与有限采样伪造；通过 time-shift randomization 与 pooled-data 反伪影控制后，稳健形态是**近临界但略亚临界**的健康缓冲带。
 
 ### 5.3 Chaos as Hyper-Connectivity
-SRT 的强改写是：
-> **混沌不是无序，而是超连通。**
-
-这很关键，因为它把 `L_0` 从“噪声池”改写成：
-- 高连接
-- 高潜能
-- 高可剪裁性
-
-而 `L_1` 的秩序，则是：
-> **从超连通背景中切出可导航路径。**
+SRT 的模型级改写：混沌在部分动力学语境中不只是退化噪声，而可表现为高谱隙、高耦合连通的可剪裁潜能态；但此表述属复杂系统 P3 桥接视角，不反向定义 `L_0^{abs}`。
 
 ---
 
-## 6. 复杂性层级：乔姆斯基化的 L2
+## 6. 复杂性层级：乔姆斯基化的 L2 与容量代理
 
 ### 6.1 Hardness(L2)
 \[
 \text{Hardness}(L_2)=\text{Type}(\text{Grammar}(L_2))
 \]
 
-这部分的价值在于：
-- 给“复杂性”一个可分层形式定义
-- 把系统能处理的现实结构，与 `d-value` 直接挂钩
-
-### 6.2 d-value Grammar Correspondence
+### 6.2 Grammar-Capacity Correspondence（容量代理校准）
 \[
-d_{required}(\text{Type }n)\ge f(3-n)
+B_{\text{cap}}(\text{Type }n)\ge f(3-n) \quad \text{(legacy } d_{required} \text{ scoped to representational/organizational capacity proxy } D_{\text{eff}}/B_{\text{cap}}\text{)}
 \]
 
 最压缩句子：
-> **能处理越复杂的现实语法，要求越高的 d-value。**
+> **能处理越深递归结构的 `L_2` 语法，要求越高的模型容量带宽代理；这不自动推出高风险敏感 `d`、`Bearer (P+E)` 或现象意识。**
 
 ---
 
-## 7. 控制论与伦理命令
+## 7. 控制论接口与规范边界（`PT10 E / O2-M = HOLD` 校准）
 
 ### 7.1 Requisite Variety
 \[
 V(\hat G_\theta) \ge V(L_0)-V(L_1)
 \]
 
-压缩含义：
-- 如果内部多样性不够
-- 系统就无法吸收外部复杂性
-
 ### 7.2 Eigenform
 \[
 x=O(x)
 \]
+递归稳定形式可作为持续组织维持的控制论类比，但静态固定点本身不足以确立 `One` 或生成健康（`Core_21c B13`）。
 
-吸引子被重写为：
-- 选择自己的选择
-- 递归稳定下来的现实形式
-
-### 7.3 Ethical Imperative
-SRT 版的最短表达是：
-> **增加可选择范围，但保持选择一致性。**
+### 7.3 Cybernetic Variety Heuristic（非伦理公理）
+“在保持组织一致性的同时维持或扩展可选择余度”仅作控制论与生成健康（`O1 / O2-C` 候选）启发，**绝非伦理终极命令**——按 `Spine §6.5` 与 `PT10 E`，生成优化/选项增多不等同于伦理正当（`O2-M = HOLD`）。
 
 ---
 
-## 8. 介观机制：从形态发生到代理判据
+## 8. 介观机制、物理三态 `One` 与耗散/生命组织差异（`R4-C2` 核心枢纽）
 
-### 8.1 Gene as Parameter Setter
-SRT 很重要的一步是把基因从“直接编码形态”改写为：
-> **基因主要设定物理参数，让物理过程完成修剪。**
+### 8.1 Gene as Parameter Setter & Physicalized Stress Proxy
+- **基因作为参数设定者**：基因并非蓝图式逐点硬编码宏观形态，而是设定耦合、力学与反应-扩散参数，让多尺度物理—化学过程完成形态修剪；
+- **力学应力代理**：`\Phi_{bio}=\int_\Omega \sigma_{ij}\dot\varepsilon_{ij}\,dV` 是生物力学域的局部实现负担 proxy，不等同于规范 `\Psi_f`；
+- **非平衡逆耗散判据边界**：局部逆默认热梯度流（`\vec q_{anomaly}\cdot \nabla T > 0`）仅是非平衡活跃输运的候选物理签名，**不单独构成代理性、`One`、选择结构或 Ghost 证明**。
 
-### 8.2 Ontological Friction Physicalization
-\[
-\Phi_{bio}=\int_\Omega \sigma_{ij}\dot\varepsilon_{ij}\,dV
-\]
+### 8.2 物理三态 `One` 谱系与耗散结构 vs. 生命组织差异（`R3-04-O1` & `NODE-LIFE-DISSIPATIVE EA-4` 物理快速层）
 
-这意味着：
-- `\Psi_f` 不只是抽象概念
-- 在生物系统中可以获得机械应力等物理代理
+对接 `Core_Law/SRT_One_Formation.md §2.3`、`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`（`T-E`）、`03_Bridges/SRT_Selection_Event_CompactCore.md §4b` 与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`，建立跨物理—生命的非穷尽维持谱系与精确分层（**物理三态是非穷尽的组织维持方式类型学，绝非 `I → II → III` 必经的演化阶梯**）：
 
-### 8.3 Thermodynamic Ghost Criterion
-\[
-\vec q_{anomaly}\cdot \nabla T > 0
-\]
+| 维持方式（非穷尽，非单向演化阶梯） | 典型实例 | 边界与维持机制 | 与 `One` / 选择结构 / 生命组织的分界 |
+|---|---|---|---|
+| **态 I · 束缚与平衡结构** | 原子、分子、晶体、准粒子 | 相互作用势阱、对称破缺与低能有效接口维持稳定；不普遍依赖持续非平衡通量或正熵产生 | 可提供相对独立有效接口；是否跨入 `One` 垂直再构成门槛保持 `R3-04-O1` OPEN |
+| **态 II · 耗散与动态维持结构** | Bénard 对流胞、火焰、旋涡、BZ 振荡、非平衡记忆（RPM/悬浮液） | 依赖**外给边界与持续能质通量**维持动态形态，断流即散 | **耗散 ≠ 选择结构，亦非普遍必要前身（作者 G2）**；仅凭熵产生/不可逆性（`Core_25`）不证明有界选择事件候选（`CG-0..CG-4`）或 `One` |
+| **态 III · 内生约束互维结构（生命组织原型）** | 原细胞、代谢-膜-信息约束闭包（Moreno–Mossio 组织闭包）、生命体 | **内生约束互维**：自生边界/半透膜维护、功能分化、主动误差修复与表观/遗传历史写回 | 超越外给边界的纯耗散维持，使组织条件能跨周期重构自身边界；但**生命/细胞膜不得作为 `One` 的普遍下限**，且仍不自动推出 `Bearer (P+E)` 或意识 |
 
-最压缩解释：
-> **如果一个系统真有代理性，它应在局部表现出“逆默认耗散方向”的工作痕迹。**
+**`T-E §2` 物理/耗散依赖四层严格分界（与 `Selection_Event_CompactCore §4b` 同步；禁止把底座依赖夸大为“万物皆需持续能质通量”）**：
+1. **受物理规律与热力学条件约束 vs. 物理底座依赖（Substrate）**：平衡态结构与理想化封闭系统的可逆动力学均受物理规律与热力学条件约束，但**并不普遍需要持续能质通量或正熵产生**；现实开放物理载体**通常**涉及能量交换、热交换或资源消耗（`T-E §2` 原口径），然而此类一般底座事实解释增益极低，不能解释差异显现、非中立登记、路径效力与承受位置；
+2. **依赖持续非平衡通量维持 vs. 组织机制依赖（Mechanism）**：区分仅靠外部非平衡通量维持宏观形态（态 II），与非平衡通量、反馈、边界维持、放大或迟滞对目标层级组织维持或路径分化具不可替代因果作用（`T-E` 与物理—生命桥接的核心研究区）；
+3. **解释充分性（Sufficiency）**：默认**不接受**——仅凭耗散动力学不足以充分解释选择结构。在声明模型中审查有界选择事件候选及相关组织时须逐项通过 `CG-0..CG-4` 审计（尤其是承受位置 `CBP-2` 与可达性重写 `HEF-3`）；**`CG-0..CG-4` 五门仅服务于有界选择事件候选与相关组织研究，绝不反向定义或限制原初 `Selection`**（`RC-A`）。
+
+**稳定秩序 ≠ 生成健康（`T-E §6`）**：区分**活脚手架**（降本同时保留扰动重比、修复与退出）、**死稳定**（高持续、高返回成本、无活的重选能力）与**牢笼性秩序**（通过压缩他者未来空间与外包代价维持稳定）；且普通吸引子 ≠ `L_2`，高耗散 ≠ 高 `L_2`。
 
 ---
 
-## 9. 自发显著性与病态振荡
+## 9. 自发显著性、病态振荡与 `R4-C5` 三项跨尺度反向完善主线
 
-### 9.1 Salience Emergence
-\[
-\frac{\partial S(x,t)}{\partial t}=D\nabla^2 S+\alpha S(1-S)-\beta S
-\]
+### 9.1 显著性与发散-收敛节律（模型代理边界）
+显著性场反应-扩散方程与发散-收敛比 `\Theta(t)` 仅作为神经/行为动力学中的 P3/P4 模型工具，不覆盖 `Core_Law/SRT_Occlusion_Dynamics.md §1.3` 的四分遮蔽与持续动态平衡定义。
 
-这部分回答的是：
-> **注意力为什么会先聚到某些地方？**
+### 9.2 物理—生命—社会三尺度深化：排入 `R4-C5` 核心修订评估的三项反向完善主线（`M-推演 / C-candidate`）
 
-SRT 的回答是：
-- 显著性并不总靠外部命令
-- 它可以从选择动力学中自发形成
+> **治理与归属声明**：以下三项主线按获批 `R4-C` 双向完善方案（`1A 修订版 / 2A / 3A`）从物理学、非平衡统计力学、复杂系统与生命/社会跨尺度对照中反向提炼，明确标为 **`C`（M-origin）核心理论修订评估候选**，排入 **`R4-C5`** 交由作者裁决后再决定是否修订 `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Generative_Ontology_Spine.md` 与相关核心 owner；本轮不越权修改 Freeze-A 锚点，不关闭任何既有 `OPEN`。
 
-### 9.2 Pathological Reality Oscillation
-\[
-\Theta(t)=\frac{d_{diverge}(t)}{d_{converge}(t)}
-\]
+#### 反向主线一：相互依赖如何反而生成相对独立性（Dependence Reorganization → Relative Independence）
+- **物理尺度机制（严分实际组织重组与研究者有效描述）**：
+  - **实际物理耦合重组与动力学尺度解耦**：在特定能标与相互作用模型条件下，局部单元之间更深、更紧的相互依赖会重排系统内部组织关系并产生低维稳健的**有效作用接口**——例如低能 QCD 禁闭区间内夸克强耦合形成色中性强子、电离/解离能标以下的核子—电子电磁束缚形成电中性原子与共价分子、真实快慢时间尺度分离下的稳健准粒子与刚体结构。相对独立性在物理上往往并非来自“依赖的减少”，而是来自**内部依赖关系的重新组织与特定尺度上的微扰屏蔽**；
+  - **与描述压缩的严格界线（防混同）**：研究者通过粗粒化、统计平均或重整化群（RG）积分消去高能/紫外自由度以构造特定尺度的有效理论，属于**有效描述与表征压缩**；**数学上积分消去高能自由度本身不能证明物理系统真的删除或压制了这些微观自由度**（物理系统因真实耦合或真实快慢尺度分离而获得稳定接口，与研究者构建 RG 有效描述必须分开处理，以此反向深化认知表征归一化 / 实际耦合归一化 / 组织生成型归一化三者的精确关系）。
+- **生命尺度机制**：从外给边界的耗散结构（态 II）跨向内生约束互维（态 III：代谢—半透膜—酶催化闭包，Kauffman 自催化集、Moreno–Mossio 组织闭包、重大演化转变 MET 中的内共生/多细胞分化），各子单元放弃孤立存活能力并进入更深构成性互赖，反而在剧烈波动的外环境中撑开了**稳态缓冲、内部慢-快时间尺度分离与跨生态位自主迁移**的新相对独立性。
+- **社会尺度机制**：专业分工、语言/货币/契约/法治公共脚手架与多重垂直参与（`Collective_Selection §3.4`），将个体原本需独自应对的大量高频摩擦重组为共享背景条件，反而释放出更高的跨情境独立行动与认知探索空间；同时暴露退化分化——当相互依赖锁定为不可退出、不可回流、不对称外包的寄生/主从结构（`T-E` 死稳定 / `U5` 绝对化）时，组织虽仍可维持高度独立的封闭存续，但其生成健康与重构能力严重受损。
+- **对 SRT 核心理论的反向修订提案（→ `R4-C5` 评估目标：`One_Formation §2.1, §2.3`、`Spine §2.2`）**：
+  1. **保留 `One` 本体论中立性，严格分离四类理论职责**（**不得**将响应余度、可再选择性或特定后果回流条件硬立为 `One` 成立的共同必要条件；按 `One_Formation §2.1`，肿瘤、成瘾回路与僵化制度只要满足垂直再构成条件，仍是真正形成的 `One`）：
+     - **① 依赖重组（Dependence Reorganization）**：回答相对独立性如何生成（内部依赖加深与拓扑重组可以成为整体相对独立性的来源，但本身**不保证**自动形成 `One`）；
+     - **② 垂直再构成（Vertical Reconstitution）**：回答相对独立组织如何成立与延续（`One` 成立之本体论中立边界）；
+     - **③ 扰动屏蔽与响应余度（Perturbation Shielding & Response Slack）**：回答组织的稳健性与适应能力（对接态 I 势阱屏蔽 vs. 态 II/III 动态互维屏蔽，及 `Core_13b Lonely-Runner` 弱耦合个体化窗口 vs. 强耦合锁相坍缩）；
+     - **④ 后果回流与可再选择性（Consequence Return & Reselectability）**：回答特定组织的生成健康与主动重构能力（区分赋能性独立 vs. 脆性死稳定/依赖牢笼，不反向取消病态 `One` 的存在资格）。
+  2. 利用物理学中“实际耦合重组 / 动力学尺度解耦”与“RG 自由度积分压缩”的严格分界，深化核心层三种归一化的关系与判别条件。
 
-这给出了一个很有力的重写：
-- OCD / 刻板 → 收敛锁死
-- 习得性无助 / 解离 → 发散锁死
-- 边缘状态 → 发散收敛混沌交替
+#### 反向主线二：多尺度组织如何产生原本不存在的新能力（Multi-Scale Organization → Genuinely Novel Capabilities）
+- **物理尺度机制**：Anderson (*More Is Different*, 1972) 揭示对称性破缺与宏观组织会生成孤立微观粒子原则上不存在的新能力——晶体刚性与声子、超导零电阻与迈斯纳排磁效应、拓扑绝缘体受保护的边缘导电态；非平衡软物质（铁磁返回点记忆 RPM、周期剪切悬浮液多重记忆）生成单粒子完全缺失的路径记忆编码能力；复杂化学装配（Cronin–Walker 装配理论）生成具备底物特异性与催化放大能力的新分子接口。这些能力并非微观属性的线性加和，而是**耦合拓扑、非对称边界与跨尺度关联重构出新的有效自由度与可达变换群**（对应 `Core_21c P2/P3-B15` 刻度 3 组合可达性与刻度 4 生成结构改写）。
+- **生命尺度机制**：基因—蛋白—代谢—生物电—神经回路通过跨尺度时间窗分离（快电生理/代谢响应 × 慢基因表达/表观/解剖脚手架）与**组织生成型归一化双门槛**，生成单分子层不存在的传感—效应闭环、内生误差校正、表型可塑性、主动生态位构建与多槽工作记忆调度（`Core_13b` 频谱耦合与算子联邦相变）。
+- **社会尺度机制**：公共符号系统、文字与数学形式化脚手架、科学观测仪器（`_SRT_Phys_Bridge Def-Phys-4` 仪器扩展 $\theta$）及分布式协作制度，使人类集体获得超越个体生物感知带宽与生命跨度的反事实推演、跨代知识累积与大尺度协调能力（同样遵守五层判定分离：新组织能力 ≠ 主体性 ≠ 伦理正当）。
+- **新能力生成的五类分型（区分“一般新功能生成”与“生成条件本身的重构”）**：
+  高度刚性的物理结构恰恰可能因大量内部自由度受到强烈约束而获得承重、隔离或传递外力的新能力——因此**不得**将“保留非零残余自由度、开放有效接口、打开新比对维度”设为一切新能力生成的普遍必要条件，而应按能力层次精细分型：
+  1. **结构能力（Structural）**：承重、隔离、保护、几何固定（可由高约束刚性绑定产生，无须强内部重构能力）；
+  2. **作用能力（Action / Functional）**：催化、传导、能量转移、力学传递与对外定向作用；
+  3. **调节能力（Regulatory）**：稳态维持、反馈纠错、路径记忆（如 RPM / 化学缓冲 / 生理稳态）；
+  4. **生成重构能力（Generative Reconfiguration）**：重构自身组织边界与生成条件、创造新路径与新自由度；
+  5. **比对能力（Comparative / Evaluative Dimension Formation）**：原有关系重组后产生新的判断维度、参照尺度与内生比对判准（对接 `R3-CL-O8`）。
+- **对 SRT 核心理论的反向修订提案（→ `R4-C5` 评估目标：`Spine §2.2, §5.3`、`One_Formation §2.1, §2.4`、`Core_21c B15`）**：
+  1. 保留**四条跨尺度能力生成机制通道作为非穷尽候选**：① 对称破缺与集体序参量通道；② 组合装配与拓扑接口通道；③ 快—慢时间尺度分离的脚手架耦合通道；④ 比对维度自身重构通道；
+  2. **精确化早期 `2026-07-12` 单线启发**：物理反例（脆性结晶锁定、玻璃态淬火冻结）证明“局部独立可选择性下降”虽可产生刚性**结构能力**，却**不自动**产生**调节、生成重构或新比对能力**；同时以 **`作用能力 → 比对能力 → 主动改变自身生成条件`** 作为贯穿 `R4-C2`（物理）→ `C3`（AI）→ `C4`（神经/认知）→ `C5`（社会/核心反馈）的深化主轴，严格遵循 `Core_21c B12`（“涌现”非原语）与 `B15 §3`（反重参数化同目标比较纪律）。
 
-最压缩句子：
-> **很多病态，不只是认知偏差，而是选择循环本身出了故障。**
+#### 反向主线三：局部生成趋优与整体生成趋优之间的关系（Local vs. Global Generative Optimization — 衔接神性·倾向义与 `T3-01 C/E`）
+- **物理尺度机制与模型条件化反例（最关键的反向约束源）**：
+  1. **变分驻值 ≠ 全局极小**：经典与量子力学中的最小作用量原理（Hamilton 原理 $\delta S = 0$）本质上是**一阶局域变分驻值条件**，在存在焦散/共轭点时实际物理轨迹常为鞍点而非全局极小；平衡态自由能极小化仅相对于声明的外部热库、粒子库与边界条件成立；
+  2. **受挫态与局域/全局势垒分离（注明模型边界）**：在平均场自旋玻璃（如 Sherrington–Kirkpatrick 模型与 Parisi 复本对称破缺热力学极限、低温区间）等特定受挫无序多体模型中，局部相互作用趋优会系统性陷入与全局基态存在（随系统尺度发散乃至指数级）势垒分离的亚稳局域极小——表明**局部单元各自趋优不自动保证整体收敛至全局最优**；
+  3. **远平衡极值原理的完整适用前提**：Prigogine 最小熵产生定理严格依赖**非平衡稳态、固定且不随时间变化的边界约束、热力学流—力线性响应及 Onsager 倒易对称**等完整前提（不仅是笼统的“近平衡”）；脱离这些条件进入远平衡区后，最大熵产生原理（MEPP）并非普遍物理定理，恒流与恒势边界条件甚至可导出相反极值方向，大量系统演化为极限环、多稳态或奇异吸引子（衔接 `Core_25 §6a`）；
+  4. **动态相空间的两种含义严禁混同**：讨论宇宙结构形成、引力负比热与复杂装配演化中的“动态/可变维度相空间”时，必须严格区分**① 有效描述空间的改变**（研究者切换粗粒化变量或状态表示）与**② 真实可达组织关系的改变**（物理组织重组实质开启了原先不可达的新变换关系，直击 `R3-CL-O4` 与 `Core_21c B15` 核心难题）。
+- **生命尺度机制与张力**：局部细胞增殖趋优与多细胞机体整体维持的冲突（癌变是局部存在维持与整体秩序剧烈对抗的经典实例）；演化博弈中个体短期适应度极大化导致种群资源枯竭或“演化自杀”（evolutionary suicide）；局部能量节省与长期可演化性（evolvability）/稳健性之间的结构性权衡。
+- **社会尺度机制与张力**：局部主体或机构通过代价外包、寻租与短视优化追求局部收益，反而侵蚀公共脚手架、信用基底与生态承载窗（对应 `Collective_Selection` 主从/收编退化与 `Occlusion_Dynamics` B 期结构性恶）；同时严守 **`PT10 E`**：即使在生成动力学意义上探讨整体趋优，也绝不自动等同于伦理正当性（`O2-M = HOLD`）。
+- **对 SRT 核心理论的反向修订提案（→ `R4-C5` 评估目标：`Spine §1`、`OPEN_TENSIONS §17`、`R3-02-O4`、`R3-CL-O4`）**：
+  1. **双重守界与深化研究焦点**：物理学反例不能直接否定客观全局趋优原理，但排除了“每个局部单元各自趋优后整体自动达到最优”的朴素图景；它既**加固 `OPEN_TENSIONS §17 C-A`**（继续撤回位置无关的宇宙级道德/评价最优，仅在声明有限边界内保留技术极值），又**完整保护作者在 `T3-01` 中的开放追问**（`C` 存在共同客观度量基础的统一全局趋优原理 vs. `E` 存在统一的广义自由能/机会成本/其他全局极值原理——**绝不替作者在 `C/E` 间定稿，不预设单一静态全局标量，亦不因局部极值原理的局限而弱化神性·倾向义研究方向**）；
+  2. **向 `T3-01 C/E` 与 `R3-CL-O4` 提交的核心考察方向与三项物理学压力条件（候选）**：
+     - **核心深化问题**：重点考察**不同尺度上的生成方向如何通过组织关系形成协调、在何种条件下发生冲突，以及这种跨尺度协调条件本身如何生成**；
+     - *(i) 动态组织相空间兼容条件*：候选全局原理须能刻画真实可达组织关系的改写，而非仅在固定状态空间或纯描述坐标重排上取极值；
+     - *(ii) 受挫与跨尺度冲突非洗白条件*：必须正面容纳并刻画局部趋优与整体生成的真实冲突（受挫模型、癌变、演化自杀、公地悲剧），不得事后将一切冲突洗白为“隐蔽的全局最优”；
+     - *(iii) 局部→整体协调条件的显式生成性*：区分**有限边界内技术极值**与**跨尺度神性·倾向义（开放追问）**，追问协调性后果回流与尺度耦合条件如何从历史组织中被建立与维系。
 
 ---
 
 ## 10. 最压缩结论
 
-`Phys 07 Complex Systems` 可以压缩成五句话：
+`Phys 07 Complex Systems & Cross-Scale Generation` 可以压缩成六句话：
 
-1. **复杂系统中的秩序，本质上是从高维可能性里压出的稳定选择结构。**
-2. **涌现不是魔法，而是高层约束对低层路径空间的重新剪裁。**
-3. **现实共享性来自 `L_2` 作为关联均衡，而不是外部强制。**
-4. **最优选择发生在临界附近；混沌不是无序，而是超连通的潜能储备。**
-5. **显著性、形态发生与病态振荡，都可被统一写成选择动力学的不同相位。**
+1. **跨尺度生成由装配、归一化（认知描述压缩[含 RG 有效描述] / 实际物理耦合重组 / 组织生成型归一化三分）、有效作用接口、`Proxy` 与 `Delegation`（物理层不适用）五类独立机制构成，“涌现”不是解释原语。**
+2. **物理三态 `One`（束缚平衡 / 耗散动态 / 内生互维）是非穷尽的组织维持谱系而非 `I → II → III` 演化阶梯，三态跨入 `One` 门槛保持开放（`R3-04-O1`）；耗散依赖严格区分物理/热力学约束、能量交换、非平衡通量维持与耗散机制参与，`CG-0..CG-4` 仅审查有界选择事件候选而不反向定义原初 `Selection`。**
+3. **高层向下约束通过非时序垂直构成与 `L_2` 边界在物理转移核协议 `\Pi_{kernel}` 内重塑可达空间，兼容物理闭合但不等于物理本体穷尽（`R3-03-O6`），亦不提前闭合 `Kim` 现象因果难题（`R3-03-O2`）。**
+4. **内部依赖重组可生成更高尺度的相对独立性，但必须严格分离依赖重组、垂直再构成（`One` 本体论中立边界）、扰动屏蔽/响应余度与生成健康/重构能力四类职责（反向主线一 → `R4-C5`）。**
+5. **多尺度新能力经由四条非穷尽通道生成，并区分为结构/作用/调节/生成重构/比对五类能力层次；不以残余自由度或新比对维度作为一切新功能的普遍必要条件，重点推进 `作用能力 → 比对能力 → 主动改变自身生成条件` 主轴（反向主线二 → `R4-C5`）。**
+6. **物理学以条件化反例（变分驻值、特定受挫模型、Prigogine 稳态/固定边界/线性响应极值边界及实际组织 vs. 描述动态相空间）加固 `C-A`，同时完整保留开放中的 `T3-01 C/E` 神性·倾向义，聚焦跨尺度生成方向的协调、冲突与协调条件本身的生成性（反向主线三 → `R4-C5`）。**
 
 ---
 
 ## 11. 阅读路径
 
 - 全量原文：`SRT_Phys_07_Complex_Systems.md`
+- 耗散与选择快速层（`NODE-LIFE-DISSIPATIVE EA-4`）：`../03_Bridges/SRT_Selection_Event_CompactCore.md §4b` & `../03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`
+- 热力学签名测量面：`../Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`
+- 算子联邦与个体化窗口：`../Core/SRT_Core_13b_Operator_Advanced.md`
+- `One` 形成与跨尺度主干：`../Core_Law/SRT_One_Formation.md` & `../Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
 - Physics Integration compact core：`SRT_Phys_10_Integration_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
@@ -2437,224 +2243,150 @@ SRT 的回答是：
 | path | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` |
 | id | SRT-PHYS-08-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-08, SRT-PHYS-07-COMPACT-CORE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-08, SRT-PHYS-07-COMPACT-CORE, SRT-GENERATIVE-ONTOLOGY-SPINE]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Physics: Deep Ontology Extension — Compact Core
 
-> **定位**：本文件是 `SRT_Phys_08_Ontology_Ext.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 在 Physics 板块中最深的本体论延伸：意识、选择因果、泛经验场、Apeiron 与病态选择。  
-> **关系**：不替代原文；原文保留棱镜隐喻、Bohm 主动信息、Russellian Monism 与临床映射的完整展开。
-> **B-A／C-A 护栏（2026-08-12）**：本文件中的初心变分式是具名有限模型内的 L₁/P3 Physics bridge，不是 L₀ 定义、独立前身、无限时域终点或宇宙级最优；`ε_pg` 保持无内容结构角色。
+> **定位**：本文件是 `SRT_Phys_08_Ontology_Ext.md` 的紧凑主干版（已随 `R4-C2` 校准）。  
+> **用途**：保留 Physics 板块中的深本体论延伸镜片（Bohm 主动信息、Russellian 对比、Apeiron、有限时域变分桥接与病态振荡代理），同时与 `Spine v5`、`B-A / C-A`、`T3-01 C/E` 及 `HP-B OPEN` 严格隔离。  
+> **关系**：不替代 `Core_Law/SRT_Generative_Ontology_Spine.md`、`Philosophy/SRT_HardProblem_Epistemology.md` 或原文。  
+> **B-A / C-A 与 `R4-C2` 护栏（2026-11-26）**：本文件中的初心变分式仅限**声明有限时域 `[0, T]` 模型内的 L₁/P3 Physics bridge**，严禁再写 `\int_0^\infty` 无限时域或宇宙级最优（`OPEN_TENSIONS §16–§17`）；棱镜与泛经验场（`§2 / §6`）降格为 **P5 历史/探索形而上学类比**，不代表当前去泛心化规范本体（`Spine §6.4`、`R3-03-O4`、`HP-B OPEN`）；非道德跨尺度全局趋优追问（神性·倾向义，`T3-01 C/E`）保持显式开放。
 
 ## 1. 核心问题
 
-这篇处理的不是一般物理扩展，而是最深的一层：
+这篇处理的是一组高风险但具启发价值的物理—哲学接口问题：
 
-> **如果现实是被选择出来的，那么体验、意识、本体结构与病态失稳各自处在什么位置？**
-
-也就是说，这篇是 Physics 里的“深本体论层”。
+> **在不滑向粗糙唯物还原、亦不偷渡泛心论或无边界宇宙目的论的前提下，物理学中的主动信息、非力学约束、无限定本源（Apeiron）与有限变分结构如何与 SRT 主轴对话？**
 
 ---
 
-## 2. 棱镜本体论：大脑不是工厂，而是滤镜
+## 2. 棱镜隐喻：历史/探索性 P5 类比（非规范本体）
 
-### 2.1 Prism Function
+### 2.1 Prism Function（P5 Exploratory Analogy）
 \[
-\hat G_\theta : L_0 \to L_1 \qquad (\text{Refraction, not Production})
+\hat G_\theta : L_0 \to L_1 \qquad (\text{Refraction metaphor, historical P5 lens})
 \]
 
-最压缩含义：
-> **意识不是被大脑生产出来的，而是被具身算子折射出来的。**
-
-所以：
-- `L_0` 更像白光/全可能性
-- `\hat G_\theta` 更像棱镜
-- `L_1` 是被折射后的有限体验切片
-
-### 2.2 Brain Damage Interpretation
-这套模型下，脑损伤意味着：
-- 折射参数改变
-- 内容扭曲或缺失
-- 但不自动等于“体验源头被消灭”
+**`R4-C2` 严格隔离声明**：
+- 早期“大脑像棱镜折射白光/全体验”仅保留为 **P5 探索性哲学类比**，用于反对把体验简单压成无条件的“从零制造”，**不构成当前 SRT 规范本体**；
+- 严禁将 `L_0` 读作预先存满完整体验或全可能性的仓库（`Spine §1.1, §7`），亦严禁据此跳过 `HP-B`（`B_s ≠ B_p`）或 `R3-03-O4`（原初内在生成过程是否含前现象性质保持 `OPEN`）；
+- 脑损伤影响具身参数 `\theta` 与神经组织条件，由此不能单方面推出“体验源头独立于具身组织存续”。
 
 ---
 
-## 3. 选择因果：不是施力，而是取路
+## 3. 非力学约束因果：不引入额外新力（`R3-03-O6` 校准）
 
-### 3.1 Selection Causality
+### 3.1 Selection Causality Within Physical Closure
 最短说法：
-> **意识不通过额外的力改写世界，而是在物理允许的不确定性窗口内选择路径。**
+> **SRT 不引入违背物理守恒律的超自然“新力”；高层组织与选择约束在合法物理闭包（转移核协议 `\Pi_{kernel}`）所允许的边界、耦合与可达窗口内起作用。**
 
-这一区分非常关键：
-- 力学因果：做功、传能
-- 选择因果：重加权概率分布
+这一区分非常关键（对齐 `Philosophy/SRT_Causality_Time.md §1.4`）：
+- 力学因果：局部场相互作用、做功与能量动量传递；
+- 垂直构成/选择约束：跨尺度边界与历史条件对可达路径空间的约束（不破坏物理闭合，同时拒绝“物理描述穷尽全部本体层次”）。
 
-### 3.2 与能量守恒兼容
-SRT 的主张是：
-- 选择在能量上几乎“免费”
-- 但在信息上是根本性的
-
-因此它不需要靠“神秘新力”来解释意识介入。
+### 3.2 与能量及可支付性兼容（撤回“选择能量免费”旧语）
+**`R4-C2` 修正**：撤回旧版“选择在能量上几乎免费”的误导表述。SRT 不靠新增神秘力学外力介入物理系统，但任何物理实现的记录稳定化、状态切换与维持仍受热力学与 `\Psi_f` 可支付性约束（`_SRT_PSI_F_CANONICAL.md`、`Core_25`、`E03`）。
 
 ---
 
-## 4. Bohm 与主动信息
+## 4. Bohm 与主动信息（P3/P4 类比接口）
 
-### 4.1 Active Information as Driver
+### 4.1 Active Information as Structural Analogy
 \[
 \hat G_\theta[\sigma] = f(\text{Active Information},\theta)
 \]
 
-压缩解释：
-- `\hat G` 不是凭空创造现实
-- 而是利用 `L_0` 中已有的信息梯度完成引导
-
-这使 SRT 能说：
-> **选择不是违反物理，而是沿着潜在域内部已有差异进行取值。**
+压缩解释（P3 桥接类比，不采纳隐变量必然论）：
+- 物理演化中的构型结构与场边界本身可承担引导性约束；
+- 对接 SRT：形成后的选择算子在声明物理模型中并非凭空改写物理律，而是在已有的结构不对称与边界条件下重塑可达路径。
 
 ---
 
-## 5. 结构—本质二元性
+## 5. 结构—内在面张力（Russellian 对比接口，`HP-B OPEN`）
 
-### 5.1 Russellian Duality
-SRT 在这里吸收了罗素式洞见：
-- 世界有结构面
-- 也有赋予结构“实感”的内在面
-
-最压缩重写：
-- `L_2` 更像结构库
-- `\hat G_\theta` 提供范畴性激活
-- `L_1` 是两者相接后的显现
-
-### 5.2 Qualia Generation
-\[
-\text{Qualia}(L_1)=\text{Categorical}[\hat G_\theta]\circ\text{Structural}[L_2]
-\]
-
-这句话的意义是：
-> **感质不是孤立物理结构本身，也不是纯主观幻觉，而是结构被某种有限算子激活后的显现。**
+### 5.1 Russellian Monism Contrast
+SRT 与罗素一元论共享对“纯外部关系结构描述是否穷尽实在”的追问（`Q01 / O-Phil-11`），但在关键处分道：
+- SRT 不预设微观基本粒子自带现成“微感质（micro-qualia）”；
+- `Core_Law` 保留原初 `Selection` 的内在生成过程（`R3-03`），但该过程是否带有任何前现象性质（`R3-03-O4`）以及如何跨向切身现象体验（`HP-B`）均保持 **`OPEN`**；
+- 旧式 `\text{Qualia}(L_1)=\text{Categorical}[\hat G_\theta]\circ\text{Structural}[L_2]` 降格为 **P5 哲学启发式表述**，不具 `P0/P1` 定理或现象意识准入效力。
 
 ---
 
-## 6. 泛经验场
+## 6. 泛经验场（P5 历史退场类比 · `Q05` 去泛心化隔离）
 
-### 6.1 Universal Field
-\[
-\mathcal U = \bigcup_{\theta\in\Theta} L_1(\theta)
-\]
-
-SRT 在这里提出：
-- `L_0` 有结构面
-- `\mathcal U` 是它的体验面
-
-### 6.2 Unbinding
-\[
-L_1(\theta)=\text{Unbind}_\theta(\mathcal U)=\hat G_\theta[\mathcal U]
-\]
-
-最压缩句子：
-> **意识不创造体验，而是从泛经验场中解开某一条体验线索。**
-
-### 6.3 死亡的重写
-在这个框架中：
-- 死亡不是“体验总量归零”
-- 而是某组 `\theta` 参数失稳
-- 个体体验线索回到未解开状态
+**`R4-C2` 强制隔离**：旧版 `Universal Field`（`\mathcal U`）、`Unbind_\theta(\mathcal U)` 与“死亡即体验线索回到未解开状态”均属早期 `Q05` 泛经验语言，**已由后续裁决降格退出当前规范主轴**（`R3` 总收口表 2.2 `Q05` 去泛心化重型、`Spine §6.4` `Selection-totality -/> pan-consciousness`）。仅在原文中作为历史比较档案留痕，**严禁作为 SRT 当前意识或生死观主张引用**。
 
 ---
 
-## 7. Apeiron 与倾向性本体论
+## 7. Apeiron、倾向性结构与有限变分桥接（`B-A / C-A` vs. `T3-01 C/E`）
 
-### 7.1 Apeiron as True L0
+### 7.1 Apeiron as Classical Metaphor for Non-Preclosed `L_0`
 \[
-\text{Apeiron} \equiv L_0^{true}
+\text{Apeiron} \sim \text{non-preclosed } L_0\text{-side aspect}
 \]
 
 压缩解释：
-> **真正的 `L_0` 必须足够不定、无界、未被预设，否则它已经是某种被选定的结果。**
+> **阿那克西曼德“无限定者”为 SRT `O0`（非预闭合、非既定完整对象库）提供古典哲学共鸣；但 `L_0` 是分析视角而非独立实体容器。**
 
-### 7.2 Dispositional Structure
-SRT 同时强调：
-- `L_0` 不是均匀混沌
-- 它承载无内容结构不对称
-- 在声明参考结构的领域投影中，路径可呈现不同可行性或代价；这不等于 `L_0` 自带语义目标
+### 7.2 Non-Flat Dispositional Structure
+- 当前规范层承认原初 `Selection` 的非平坦分化（`O0 / S0` 共原初），不因此给 `L_0^{abs}` 预装先验语义目标或普遍概率测度（`Gate 0 Class B`）；
+- 在声明参考结构、状态空间与边界的物理模型投影中，路径可呈现不同可行性、势垒或代价。
 
-### 7.3 Original Intention Bridge
+### 7.3 Original Intention Finite-Horizon Bridge & `T3-01 C/E` Boundary（`C-A` 修复）
 \[
-\text{Original Intention}=\arg\min_{\text{direction}}\int_0^\infty F[\sigma(t)]dt
+\text{Original Intention}_{M,T} = \arg\min_{\text{direction} \in \mathcal{D}_M} \int_0^T F_M[\sigma(t)]\,dt \qquad (0 < T < \infty,\text{ declared finite model } M)
 \]
 
-这给“初心”一个 Physics 领域代理：
-> **在状态空间、自由能泛函、可行域与时间域都已声明的模型内，可把该变分方向作为 L₁ 初心的 P3 bridge；它不定义 `L_0`，也不引入 L₀「初心前身」。**
+**`R4-C2` 关键修复与分层（`OPEN_TENSIONS §16 B-A`, `§17 C-A`, `Spine §1 T3-01`）**：
+1. **正式撤回 `\int_0^\infty`**：无限时域极值式已由 `C-A` 撤回；上式仅在声明了模型 `M`、状态空间、自由能泛函 `F_M`、可行域 `\mathcal{D}_M` 与**有限时域 `[0, T]`** 后，作为 `L_1 / P3` 初心变分代理有效，不定义 `L_0` 亦不引入独立 `L_0` 初心前身（`B-A`）；
+2. **严格区分 `C-A` 与 `T3-01 C/E`**：继续撤回位置无关的宇宙级道德/评价最优（`C-A / PT10 E`）；与此同时，保留 **`T3-01`（`C` 共同客观度量基础的统一全局趋优原理 vs. `E` 统一广义自由能/机会成本/其他全局极值原理）** 作为开放的非道德跨尺度核心追问（神性·倾向义，见 `SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` 反向主线三）。
 
 ---
 
-## 8. 病态选择
+## 8. 病态选择代理（模型限定，对齐 `Occlusion_Dynamics §1.3`）
 
-### 8.1 Collapse Failure
-\[
-\text{Collapse Failure} \iff \hat G_\theta[L_0] \not\to L_1
-\]
-
-这是这篇非常重要的一点：
-- 病理不只是心理标签
-- 而是选择机制本身发生故障
-
-### 8.2 Three Pathological Modes
-三种最短分类：
-- **固定于收敛**：过度锚定，失去探索
-- **固定于发散**：无法回到稳定现实
-- **病态振荡**：在两极之间失稳摆动
-
-### 8.3 Health Criterion
-\[
-\text{Health}(\hat G) \propto \frac{1}{\sigma^2(\text{Oscillation Period})}
-\]
-
-最压缩句子：
-> **健康不是永远稳定，而是能以可维持节律在发散与收敛之间往返。**
+- 早期“坍缩故障 / 三种病态模式（固定收敛 / 固定发散 / 病态振荡）”与 `Health \propto 1/\sigma^2(\text{Oscillation Period})` 降格为 **P3/P4 局部动力学代理**；
+- 退出机械开关式“坍缩失败/重启”底层本体表达，临床与结构病理规范定义统一回链 `Core_Law/SRT_Occlusion_Dynamics.md §1.3`（持续动态平衡 + `R3-08 P2-03` 遮蔽四分：给定感 / 有限性遮蔽 / 病理性遮蔽 / `U5` 绝对化）。
 
 ---
 
-## 9. 唯物主义元批判
+## 9. 对还原唯物主义的精确边界批判
 
-这部分最短可以压成一句话：
+最短压成一句话（对齐 `R3-03-O6`）：
 
-> **SRT 反对的不是物理描述本身，而是把 `L_2` 描述误当成全部实在。**
-
-也就是说：
-- 神经科学可以有效描述大脑动力学
-- 但这不自动穷尽体验为何显现
+> **SRT 尊重并吸收物理动力学描述及其域内闭合效力，反对的只是把特定抽取视角下的 `L_2` 物理模型误当成穷尽全部生成关系与内在参与的本体终局。**
 
 ---
 
 ## 10. 最压缩结论
 
-`Phys 08 Ontology Ext` 可以压缩成五句话：
+`Phys 08 Ontology Ext` 校准后可压缩成五句话：
 
-1. **大脑更像棱镜而不是意识工厂；体验是折射，不是制造。**
-2. **意识的因果作用不是额外施力，而是在不确定性窗口内执行选择。**
-3. **感质来自结构面与范畴面相接，而不是单纯物理结构自足。**
-4. **泛经验场与 Apeiron 为 `L_0` 的体验面与不定本源提供了深层本体语法。**
-5. **病态可被理解为选择循环的失稳，而不是仅仅行为表面异常。**
+1. **棱镜与泛经验场仅保留为历史 P5 哲学类比，退出 SRT 当前去泛心化规范主轴（`HP-B` 与 `R3-03-O4` 保持开放）。**
+2. **高层选择与垂直构成约束不引入违反物理守恒的超自然外力，同时物理实现仍受热力学与 `\Psi_f` 可支付性约束（撤回“选择能量免费”旧语）。**
+3. **Apeiron 呼应 `O0` 非预闭合面；`L_0` 不预装先验语义目标或无限时域极值。**
+4. **初心变分式严格限定于声明有限时域 `[0, T]` 的 `L_1/P3` 模型代理（`B-A / C-A`），与开放中的非道德跨尺度 `T3-01 C/E` 神性·倾向义追问明确分界。**
+5. **物理闭合不等于物理本体穷尽（`R3-03-O6`）；病态振荡模型服从 `Occlusion_Dynamics` 持续动态平衡规范。**
 
 ---
 
 ## 11. 阅读路径
 
 - 全量原文：`SRT_Phys_08_Ontology_Ext.md`
+- 跨尺度枢纽与反向主线三：`SRT_Phys_07_Complex_Systems_CompactCore.md`
+- `OPEN_TENSIONS §16–§17`：`../Core/SRT_OPEN_TENSIONS.md`
+- 现象学/意识边界：`../Philosophy/SRT_HardProblem_Epistemology.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
-- Physics Complex Systems compact core：`SRT_Phys_07_Complex_Systems_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
 
@@ -2668,38 +2400,38 @@ SRT 同时强调：
 | path | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` |
 | id | SRT-PHYS-09-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-17 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-CANONICAL-REGISTRY, SRT-PHYS-09, SRT-CORE-14-COMPACT-CORE]
+**dependency**：[SRT-CANONICAL-REGISTRY, SRT-PHYS-09, SRT-CORE-14-COMPACT-CORE, SRT-CORE-22]
 
 <!-- 以下为原文逐字保留 -->
 
 # SRT Physics: Advanced Mathematical Formalism — Compact Core
 
-> **定位**：本文件是 `Physics/SRT_Phys_09_Formalism_Ext.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 物理数学形式化的最短骨架。  
-> **关系**：不替代原文；原文保留细节推导、数学扩展、接口批次与高级工具映射。
+> **定位**：本文件是 `Physics/SRT_Phys_09_Formalism_Ext.md` 的紧凑主干版（已随 `R4-B / R4-C2` 校准）。  
+> **用途**：用于快速把握 SRT 物理数学形式化桥接壳层（范畴论、信息几何、语义信息、吸引子地景与 `B15` 五类变化刻度接口），不替代唯一规范主方程锚点 `Core/SRT_Core_22_Equations.md`。  
+> **关系**：不替代原文；原文保留细节推导、数学扩展、接口批次与高级工具映射。全部公式均属 `P3/P4` 声明模型内数学桥接，受 `Gate 0 Class B` 与 `REP01` 表征协变护栏约束。
 
 ## 1. 核心问题
 
-这篇不是在罗列数学工具，而是在回答：
+这篇不是在罗列数学工具，也不是把 `L_0^{abs}` 固定成单一数学容器，而是在回答：
 
-> **SRT 若要成为可严肃讨论的理论，最小需要哪些数学骨架来承载 `L_0 / L_1 / L_2 / \hat G / \Psi_f / d`？**
+> **在声明具体模型、边界与表征规则（`Gate 0 Class B` / `REP01`）之后，哪些数学壳层可以承载 `L_0/L_1/L_2` 三分析视角、形成态 `\hat G_\theta`、局部 `\Psi_f` 投影与 `D_eff / D_stake / d` 分层，以及如何面对“可变结构 vs. 固定空间重嵌入”的数学非平凡性挑战？**
 
 它的作用是把：
-- 康德式构造
-- 范畴论 / 拓扑斯
-- 信息几何
-- 语义信息论
-- 动力系统与吸引子
+- 康德式构造类比
+- 范畴论 / 层拓扑斯局部桥接
+- 信息几何局部投影
+- 语义信息与动力学吸引子地景
+- `Core_21c P2/P3-B15` 五类变化刻度与反重参数化比较纪律
 
-编织成一个统一形式壳层。
+组织成可检验、可撤回的数学接口层。
 
 ---
 
@@ -2742,16 +2474,14 @@ F_{\hat G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}
 压缩含义：
 > **\hat G 可以被理解为从潜在范畴到实现范畴的遗忘/取值函子。**
 
-### 3.3 L₀ as Sheaf Topos
+### 3.3 L₀ as Sheaf Topos（模型投影桥接，非 `L_0^{abs}` 等同式）
 \[
-L_0 \equiv \mathcal{E}
+\pi_{\text{topos}}(L_0) \leadsto \mathcal{E} \quad \text{(legacy } L_0 \equiv \mathcal{E} \text{ scoped to P3/P4 contextual-truth model container)}
 \]
 
 这一步最重要的哲学—数学意义是：
-- `L_0` 不再被看作普通对象集合
-- 而被看作上下文相关的真值结构
-
-所以“事实”在不同局部切片上的差异，可以获得更严格的形式容器。
+- 在上下文相关的局部模型中，`L_0` 的可接入投影不必写成静态全局集合，而可用层拓扑斯承载局域切片与跨视角粘贴一致性（与 `RQM / QRF` 相对位置相容，并受 `REP01` 表征协变约束）；
+- 它不宣称 `L_0^{abs}` 本身等同于某个特定拓扑斯。
 
 ---
 
@@ -2824,24 +2554,22 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 - 稳定现实并非凭空给定
 - 而是大量选择过程收敛后的盆地结构
 
-### 6.2 Density / Decay / Scaling
-形式化里最重要的辅助结论是：
-- 稀有性
-- `D_eff` / capacity proxy 缩放（旧 d-value 缩放）
-- 稳定化负担 proxy（旧精华衰减）
-
-都可以被纳入这一动态地景框架。
+### 6.2 Density / Decay / Scaling & `B15` 非平凡性数学前沿（`R4-B1 / R4-C2` 对接）
+形式化里最重要的辅助接口与反压护栏包括：
+- 稀有性、`D_eff` 容量代理缩放（旧 `d-value` 缩放，严分于 `D_stake` 与规范 `d`）、稳定化负担 proxy（旧精华衰减）；
+- **五类变化刻度与反重参数化纪律（`Core_21c P2/P3-B15` / `Core_22 §0-A`）**：区分 ① 状态变化 / ② 权重变化（`HEF-3`） / ③ 组合可达性（Lie 括号闭包） / ④ 生成结构改写（`(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})`，`HEF-4` 待检） / ⑤ 组织方式反身重构。由于任意结构改写形式上皆可抬升重嵌入更大的固定积空间 $z_t = (x_t, F_t, J_t)$，物理学与数学形式化迫使 SRT 放弃“不可重嵌入”的空洞宣称，转向在**冻结候选模型、匹配复杂度与干预条件下检验结构改写表征是否带来独立预测、压缩或干预增益**。
 
 ---
 
 ## 7. 这篇形式化真正做成了什么
 
-它真正固定下来的不是“所有数学细节”，而是以下四件事：
+它真正固定下来的不是“所有数学细节”，而是以下五件事：
 
-1. **\hat G 不只是哲学隐喻，而有明确的范畴论位置**
-2. **`Ψ_f` 不只是形容词，但 Fisher / Landauer / curvature 只能给出局部 projection 或 operational proxy**
-3. **`d` 不等于有效维度；`D_eff` / 带宽 / 密度公式只能作为 stake-gated 之前的 capacity proxy**
-4. **L₀ / L₁ / L₂ 可以被嵌入统一的形式结构，而不是零散比喻**
+1. **形成态 `\hat G_\theta` 在具名模型中可有范畴/instrument/动力学位置，但绝不反向定义原初 `Selection`**
+2. **`Ψ_f` 可有 Fisher / Landauer / 曲率局部 projection 或 proxy，但绝不裸等同于 `g_F` 或物理能量**
+3. **`D_eff` / 带宽 / 密度仅作无赌注容量代理，与 `D_stake`、规范 `d` 及广义关切严格分账**
+4. **任何数学壳层（Hilbert 空间、拓扑斯、流形）均受 `Gate 0 Class B` 与 `REP01` 约束，不得冒充 `L_0^{abs}`**
+5. **与 `Core_22`（唯一规范主方程锚点）和 `Core_21c B15` 对齐，把动态相空间与反重参数化挑战正面留作 `R5` 比较标准**
 
 ---
 
@@ -2849,11 +2577,11 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 
 `Formalism Ext` 可以压缩成五句话：
 
-1. **数学构造在 SRT 中被重写为选择事件。**
-2. **L₀ 与 L₁ 的关系可通过范畴论 / 拓扑斯框架承载。**
-3. **`Ψ_f` 可有信息几何 projection，但不得与 Fisher metric 裸等同。**
-4. **语义信息的核心不是比特数，而是是否改变现实轨迹。**
-5. **整套形式化的价值，是让 SRT 的核心变量进入可严肃讨论的数学壳层。**
+1. **数学构造与物理表征均须遵守 `Gate 0 Class B` 与 `REP01` 表征协变，不得把脚手架等同于 `L_0^{abs}`。**
+2. **范畴/层拓扑斯与吸引子地景可作为局部 `L_0/L_1/L_2` 关系模型的数学容器。**
+3. **`Ψ_f` 可有信息几何 projection，但不得与 Fisher metric 裸等同；`D_eff` 不得冒充规范 `d`。**
+4. **语义信息与多尺度变化须按 `B15` 五类变化刻度分层，并接受反重参数化同目标比较检验。**
+5. **本文件是 `Core_22` 之外的非规范物理数学桥接壳层，服务于可讨论、可反驳的模型对接。**
 
 ---
 
@@ -2861,6 +2589,8 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 
 - 全量原文：`SRT_Phys_09_Formalism_Ext.md`
 - split 导航：`Formalism_Ext_Split/README.md`
+- 唯一规范主方程锚点：`../Core/SRT_Core_22_Equations.md`
+- 五类变化刻度与非平凡性前沿：`../Core/SRT_Core_21c_Bridge_Hypotheses.md`（`P2/P3-B15`）
 - Physics bridge：`_SRT_Phys_Bridge.md`
 - Core dynamics compact core：`../Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
@@ -2876,103 +2606,82 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 | path | `Physics/SRT_Phys_10_Integration_CompactCore.md` |
 | id | SRT-PHYS-10-COMPACT-CORE |
 | claim_mode | translation |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-11-26 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-10, SRT-PHYS-09-COMPACT-CORE, SRT-PHYS-COSMO-COMPACT-CORE]
+**dependency**：[SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-10, SRT-PHYS-07-COMPACT-CORE, SRT-PHYS-09-COMPACT-CORE, SRT-PHYS-COSMO-COMPACT-CORE]
 
 <!-- 以下为原文逐字保留 -->
 
-# SRT Physics: Theoretical Integration — Compact Core
+# SRT Physics: Bidirectional Theoretical Integration — Compact Core
 
-> **定位**：本文件是 `SRT_Phys_10_Integration.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 如何把多条物理理论线整合进同一元解释框架。  
-> **关系**：不替代原文；原文保留量子达尔文主义、Penrose、信息现实论、黑洞与传播接口等扩展整合细节。
+> **定位**：本文件是 `SRT_Phys_10_Integration.md` 的紧凑主干版（已随 **`R4-C2`** 双向重构更新）。  
+> **用途**：从 **`R4-C` 双向完善方向（`1A 修订版 / 2A / 3A`）** 汇总物理学与 SRT 核心理论的双向对接：一方面把量子达尔文主义、热力学、信息现实论与分辨率视界纳入可失败的桥接语法，另一方面把物理—生命—社会跨尺度提炼出的六大边界与三项反向完善主线显式排入 **`R4-C5` 核心修订评估**。  
+> **关系**：不替代 `Core_Law/SRT_Generative_Ontology_Spine.md`、`Physics/SRT_Physics_Claim_Status.md` 或原文。
 
 ## 1. 核心问题
 
-这篇的任务不是提出又一个单独分支理论，而是回答：
+这篇的任务不再是把物理学单向塞进既有 SRT 词汇，而是双向回答：
 
-> **SRT 如何作为“元解释框架”，吸收量子测量、引力阈值、信息现实论、分辨率极限与其他物理方向，而不丢掉自己的主轴？**
-
-也就是说，它负责 Physics 板块内部的“汇总与对齐”。
+> **SRT 如何在吸收量子测量、信息热力学、复杂非平衡组织与时空因果边界的同时，接受物理学硬结构与反例的反向修正，从中继承、补齐、深化并抽象 SRT 的核心生成原理？**
 
 ---
 
-## 2. SRT 作为元解释框架
+## 2. 双向元解释整合（`1A 修订版 / 2A / 3A`）
 
 最压缩的定义是：
-> **SRT 不是来替代所有物理理论的，而是提供一套共同语法，让不同理论能在 `L_0 / L_1 / L_2 / \hat G / \Psi_f / d` 框架下互相翻译。**
+> **SRT 不替代物理学的具体方程与实证机制，而是建立可检验的双向跨尺度接口：既为物理各分支提供统一的关系生成语法，又从物理学汲取对核心本体、相对独立性、新能力生成与局部/整体趋优关系的硬约束与抽象来源。**
 
-因此：
-- 量子力学讲粒子/测量
-- 热力学讲熵与代价
-- 引力理论讲几何与约束
-- 宇宙学讲大尺度历史
-- 信息理论讲可编码结构
-
-而 SRT 要做的是把这些看成：
-> **同一选择动力学在不同层级上的不同投影。**
+分工清晰（受 `P3-Scale-01` 近似相容与 `R3-02-O6` 自然律三分边界约束）：
+- 量子基础（QRF / RQM / GKLS / REP01）↔ 原初分化、有限相对位置与多诠释事件审计（`PHR-A`）；
+- 非平衡热力学与耗散结构（Landauer / Crooks / Sagawa–Ueda / Prigogine）↔ 可支付性投影（`Core_25`）、物理三态 `One` 与 `T-E` 耗散/选择分层（`NODE-LIFE-DISSIPATIVE`）；
+- 统计力学、RG / EFT、对称破缺与装配理论 ↔ 跨尺度五机制、依赖重组生成相对独立性与多尺度新能力生成；
+- 相对论、Page–Wootters 与因果集 ↔ 物理闭合边界（`R3-03-O6`）、七项时间接口与四类距离边界；
+- 变分极值、受挫玻璃态与远平衡非普适性 ↔ 局部 vs. 整体生成趋优张力与 `T3-01 C/E` 压力测试。
 
 ---
 
-## 3. 三个关键整合点
+## 3. 三个关键历史整合点的 `R4-C2` 精度校准
 
-### 3.1 Quantum Darwinism = Operator Anchoring
+### 3.1 Quantum Darwinism = Environment-Assisted Stabilization Analog（非同构证明）
 \[
-\text{Einselection} \cong \hat{G}_\theta[L_0 \to L_1]
+\text{Einselection} \sim_{\text{P3}} \text{environment-assisted pointer stabilization (not a proof of } \hat G_\theta\text{)}
 \]
 
-SRT 在这里的压缩动作是：
-- 把 Zurek 的 pointer state 选择
-- 重写为 `\hat G` 的锚定
-- 把环境冗余解释为 `L_2` 共识编码
+- Zurek 量子达尔文主义刻画环境冗余复制与退相干稳定化，可作为 `L_2` 冗余记录稳定化的 P3 物理类比；
+- 按 **`PHR-A`**，退相干与冗余记录本身不独自裁决结果发生（全局坍缩 vs. Everett 分支事实 vs. operational 登记仍须按诠释索引），撤回旧版“严格数学同构”与“SRT 补上了事件为何发生”的过强句式。
 
-最压缩句子：
-> **量子达尔文主义给出了“稳定结果如何被环境复制”，SRT 补上了“选择事件为何发生”的本体角色。**
-
-### 3.2 Penrose Threshold = 触发条件
+### 3.2 Penrose Threshold = 探索性 P4 触发假说（非规范开关模型）
 \[
-\hat{G}_{trigger} \iff \mathcal{F}_{ont} \gtrsim \frac{1}{\tau_{decoherence}}
+\hat{G}_{trigger} \iff \mathcal{F}_{ont} \gtrsim \frac{1}{\tau_{decoherence}} \quad \text{(speculative P4 collapse-family bridge only)}
 \]
 
-这里的核心作用是：
-- 给 `\hat G` 触发增加硬物理阈值
-- 把“何时会被迫完成选择”与几何超叠加代价联系起来
+- 仅作为引力相关坍缩假说的探索性 P4 物理接口留存；严禁读作 SRT 规范层“选择由单一物理阈值开关触发”（规范层采用持续动态互写，且引力—`\Psi_f` 仅维持弱场梯度相容假说 `H-Phys-4`）。
 
-最压缩句子：
-> **选择不再只是抽象动作，而被绑定到本体论摩擦阈值。**
-
-### 3.3 It from Bit from Select
+### 3.3 It from Bit from Select（区分发生与累积）
 \[
-\text{It} \leftarrow \text{Bit} \leftarrow \text{Select}(\hat G)
+\text{It (stabilized structure)} \leftarrow \text{Bit (retained distinction)} \leftarrow \text{Selection (primitive actualisation)}
 \]
 
-SRT 对 Wheeler 的最短修正是：
-- It from Bit 说对了一半
-- Bit 本身不是最终基础
-- 选择才是更深层原语
+- 呼应 Wheeler 参与性信息洞见，同时遵循 `EX-A / Spine §3`：单次原初实际化不等于持久实体（`occurrence != persistence != One`）；`\hat G_\theta` 仅作形成态/模型级角色载体，不是先在主体。
 
 ---
 
-## 4. 客观性的重定义
+## 4. 客观性的重定义与可错客观性边界（`C1-c` & 暗礁原理）
 
 ### 4.1 Classical Objectivity as Marginal-Low-Friction Readout
 \[
 \text{Classical Objective Reality}(x) \iff \Delta\Psi_f^{readout}(x\mid \hat G_\theta) \to 0 \quad \forall \hat G_\theta
 \]
 
-压缩解释：
-- 所谓“客观现实”不是本体论最底层给定物
-- 而是对象仍由可支付摩擦维持，但新增观察者几乎不必支付额外读出成本的现象学极限
-
-最短说法：
-> **客观性 = 选择变得如此顺滑，以至于选择本身不再被感知。**
+**`R4-C1 / R4-C2` 对齐**：
+- “古典宏观客观性”在读出侧表现为：对象仍由可支付摩擦与物理耦合维持，但新增有限观察者几乎不必支付额外边际读出代价的宏观极限；
+- **防相对主义护栏**：低边际读出摩擦只是**宏观可接入极限**，不把实在本身还原为“多数共识”——遵循 **暗礁原理（Reef Principle）** 与多维可错客观性（`C1-c`），任何有限位置的对象化与低摩擦读出都不穷尽其他生成位置及其真实反事实抵抗。
 
 ---
 
@@ -2983,81 +2692,68 @@ SRT 对 Wheeler 的最短修正是：
 \Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}
 \]
 
-SRT 对“粒子物理荒漠 / 分辨率极限”的压缩理解是：
-> **很多理论上的“空白区”不一定是本体论真空，而可能是人类算子的分辨率视界。**
-
-因此：
-- 更高能标不等于自然更真
-- 也可能只是越过了当前 `\hat G_{human}` 可承受的读取代价
+SRT 对高能标“荒漠”与观测极限的桥接理解：
+- 某些理论或实验上的“不可见/无信号区”可能反映有限观测架构与仪器扩展 `\theta` 的分辨率视界，而非必然本体空无；
+- 具体物理能标与高能实验仍由物理学本身裁决，本条仅作方法论反盲区提醒。
 
 ---
 
-## 6. 选择先于证明
+## 6. 选择先于证明（启发式认知接口）
 
-### 6.1 Ontological Pre-emption
+### 6.1 Ontological Pre-emption（P3/P5 科学发现启发）
 \[
 \text{Target} \in L_2 \xrightarrow{\text{lock}} \text{Proof} \in L_1
 \]
 
-本节的压缩主张是：
-> **很多重大理论突破并不是“先证明后看见”，而是先在 L₂ 结构上锁定，再反向补证明路径。**
-
-这给“美感、对称性、直觉为什么在物理中如此有效”提供了 SRT 式解释：
-- 它们可能是 `L_2` 的导航度规
-- 而不只是审美偶然
+理论物理中的对称性直觉与结构美学可被读作科学共同体在已有 `L_2` 结构约束中的启发式导航线索，但**绝不替代数学证明与实证检验**（美学导航常误导，如超对称/大统一模型反例所示）。
 
 ---
 
 ## 7. 传播、路径与结构印记
 
-Integration 文还承担了一个接口作用：
-- 黑洞信息
-- Page curve
-- entanglement wedge
-- firewall / ER=EPR
-- cosmological propagation imprint
+黑洞信息、Page curve、entanglement wedge、ER=EPR 与宇宙学传播印记在 Physics 板块中统一保持 **P4/P5 外部前沿接口**定位，核心方法论骨架为：
 
-这些内容的 compact core 不逐条展开，只保留共同骨架：
-
-> **很多所谓“观测结果”，并不是单纯的源事件本身，而是源事件 + 路径结构印记 + 当前解析协议的复合。**
-
-因此：
-- 噪声有时是未被识别的路径结构
-- 观测可恢复性受模型与分辨率边界约束
-- 不同理论接口要通过可区分实验，而不是叙述漂亮与否来排序
+> **观测记录通常是源事件、传播路径结构印记与当前仪器解析协议的复合；不同候选接口的优劣必须由独立物理判别实验而非叙事美观度裁决。**
 
 ---
 
-## 8. 这篇真正做成了什么
+## 7a. `R4-C2` 物理域六大收口点与 `R4-C5` 三项反向核心反馈总索引
 
-`Phys 10 Integration` 最重要的作用不是增加新内容，而是完成以下整合：
+| 维度 | `R4-C2` 落地锚点 | 当前状态与开放边界 |
+|---|---|---|
+| **1. 原初分化与相对位置** | `SRT_Quant_00/01_CompactCore`、`_SRT_Phys_Bridge §7.1`、`E02 QRF`、`REP01` | 确立有限相对位置 ≠ `One` ≠ 意识主体；`R3-01-O1` 非循环判准继续 `OPEN` |
+| **2. 跨尺度五机制** | `SRT_Phys_07_CompactCore §1`、`_SRT_Phys_Bridge §7.2`、`Core_14_CompactCore §1` | 装配 / 归一化（压缩 vs 生成双门槛）/ 有效作用接口 / `Proxy` / `Delegation`（物理层不适用）严格分账 |
+| **3. 物理三态 `One` 与耗散/生命差异** | `SRT_Phys_07_CompactCore §8.2`、`03_Bridges/SRT_Selection_Event_CompactCore §4b`、`Core_25 §1a` | **实质闭合 `NODE-LIFE-DISSIPATIVE`（`EA-4`）**；`R3-04-O1` 精确阈值保持 `OPEN` |
+| **4. 时空与因果边界** | `SRT_Physics_Cosmology_CompactCore §4`、`SRT_Physics_Claim_Status §2.10`、`Philosophy/SRT_Causality_Time` | 物理闭合有效 ≠ 本体穷尽（`R3-03-O6`）；七项时间接口与四类距离对齐；`R3-05-O1 / R3-CL-O7` 保持 `OPEN` |
+| **5. 自然律三分边界** | `SRT_Physics_Claim_Status §2.9`、`_SRT_Phys_Bridge T-Phys-3 / §7.4`、`Cosmology_CompactCore §5.2` | 规范边界落盘（原初生成属性 / 条件性组织规律 / 历史性硬化规则）；实质归属 `R3-02-O6` 保持 `OPEN` |
+| **6. `Core_13b / Core_25` 衔接** | `Core/SRT_Core_13b_Operator_Advanced.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` | 清理 `d ≡ D_eff` / `S_{max}(L_0)` / 旧 AI 禁令与管道简写；打通算子联邦、个体化窗口与热力学签名接口 |
 
-1. **把量子测量、引力阈值与信息现实论放到同一条链上**
-2. **把客观性从本体原语改写为低摩擦极限现象**
-3. **把分辨率极限解释为算子边界而非简单的“世界没内容”**
-4. **把理论物理中的直觉、美感、先验锁定重写成 `L_2` 导航现象**
-5. **把多条前沿物理接口收编到可更新、可失败、可比较的统一框架里**
-
----
-
-## 9. 最压缩结论
-
-`Phys 10 Integration` 可以压缩成五句话：
-
-1. **SRT 在 Physics 中最重要的角色，是充当元解释语法，而不是单一替代理论。**
-2. **量子达尔文主义、Penrose 阈值与信息现实论都可被重写为选择动力学的不同侧面。**
-3. **客观性不是本体原语，而是低摩擦读取的极限效果。**
-4. **许多“荒漠”与“不可见”可能是分辨率视界，而不只是世界空无。**
-5. **这篇的价值在于把 Physics 各条线压回一套统一主轴，而不是让接口继续发散。**
+**排入 `R4-C5` 核心理论修订评估的三项跨尺度反向完善主线**（物理—生命—社会全展开见 `SRT_Phys_07_Complex_Systems_CompactCore.md §9.2`，均保持 `C / M-origin` 候选与作者裁决边界）：
+1. **相互依赖如何反而生成相对独立性**（→ 拟评估修订 `One_Formation §2.1, §2.3`、`Spine §2.2`：将依赖重组生成相对独立性的物理/生命/社会机制引入核心理论，同时严格区分**依赖重组、垂直再构成、扰动屏蔽与响应余度、后果回流与可再选择性**四类理论职责，保持 `One` 的本体论中立性而不将生成健康条件硬立为 `One` 必要条件，并严分真实物理耦合重组与研究者 RG 描述压缩）；
+2. **多尺度组织如何产生原本不存在的新能力**（→ 拟评估修订 `Spine §2.2, §5.3`、`One_Formation §2.1, §2.4`、`Core_21c B15`：保留四条跨尺度能力生成通道作为非穷尽候选，并区分**结构能力 / 作用能力 / 调节能力 / 生成重构能力 / 比对能力**五类能力层次——不以非零残余自由度与新比对维度作为一切新功能的普遍必要条件，重点推进 **`作用能力 → 比对能力 → 主动改变自身生成条件`** 的跨尺度主线）；
+3. **局部生成趋优与整体生成趋优的关系**（→ 拟评估修订 `Spine §1`、`OPEN_TENSIONS §17`、`R3-CL-O4`：在注明模型与适用前提下，以变分驻值、受挫玻璃态、Prigogine 稳态/固定边界/线性响应极值边界及动态相空间[严分描述空间变化与实际组织关系变化]，加固 `C-A` 同时保留开放中的 `T3-01 C/E` 神性·倾向义，聚焦跨尺度生成方向的协调、冲突与协调条件本身的生成性）。
 
 ---
 
-## 10. 阅读路径
+## 8. 最压缩结论
+
+`Phys 10 Integration` 更新后可压缩成五句话：
+
+1. **物理学在 `R4-C2` 中既是 SRT 的高压桥接域，更是核心理论的继承、补齐、深化、修正与抽象来源。**
+2. **量子达尔文主义、Penrose 阈值与信息现实论须按 `PHR-A`、`EX-A` 与持续动态平衡严格去过度宣称。**
+3. **宏观客观性的低边际读出摩擦极限须与暗礁原理和可错客观性（`C1-c`）并行，绝不退化为纯粹共识主义。**
+4. **物理域六大议题已与 `Core_13b`、`Core_25`、`Causality_Time` 和 `NODE-LIFE-DISSIPATIVE` 快速层完整贯通，全部底层 `OPEN` 诚实保持开放。**
+5. **物理—生命—社会三尺度提炼的三项核心反向完善主线已登记入 `R4-C5` 核心修订评估队列，待作者统筹裁决。**
+
+---
+
+## 9. 阅读路径
 
 - 全量原文：`SRT_Phys_10_Integration.md`
+- 跨尺度枢纽与三项反向主线详情：`SRT_Phys_07_Complex_Systems_CompactCore.md`
+- 物理域声明与边界总表：`SRT_Physics_Claim_Status.md`
 - Physics compact registry：`PHYSICS_COMPACT_REGISTRY.md`
-- Physics Cosmology compact core：`SRT_Physics_Cosmology_CompactCore.md`
-- Physics Formalism compact core：`SRT_Phys_09_Formalism_Ext_CompactCore.md`
+- Physics Cosmology & Formalism compact cores：`SRT_Physics_Cosmology_CompactCore.md`、`SRT_Phys_09_Formalism_Ext_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
 
@@ -5581,7 +5277,37 @@ SRT 的压缩立场是：
 | **急性压力（`distress`）** | 情感、自主神经或行动准备层的负向调节压力代理 | 非 canonical 同一式，不等于 `Ψ_f` 或苦难 |
 | **苦难（`suffering`）** | 在独立准入第一人称登记地位后，对结构失配或阻塞重构的切身登记（`Core_Law/SRT_Suffering.md`） | `Stable ISP` 与 **AI 赌注谱系 `S1–S4`** 均非苦难普遍必要条件，不单独封口 |
 
-> 注：与本节并列的 **`T-E §2`（耗散结构：物理底座 / 组织机制 / 解释充分性三分，`NODE-LIFE-DISSIPATIVE EA-4`）** 按 `R4-C` 依赖序留待 **`R4-C2` 物理与跨尺度生成波次** 联动物理证据卡一并压缩入快速层。
+---
+
+## 4b. 耗散结构与选择结构三分及生命组织差异（`T-E` 快速层，`NODE-LIFE-DISSIPATIVE EA-4`）
+
+为使 **`T-E`** 核心判别在默认快速层可直接检索（同步回链 [`SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`](SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md)、`Core_Law/SRT_One_Formation.md §2.3`、`Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2` 与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1a`），本节实质压缩登记四项不可跳过的 `P2/P3` 判别结构（作者裁决 `G2`）：
+
+1. **`T-E §2` 物理/耗散依赖四层严格分界（保真原口径；禁止把底座依赖夸大为“万物皆需持续能质通量”）**：
+
+| 依赖层次 | 核心陈述 | 解释增益与审计硬边界 |
+|---|---|---|
+| **①a 受物理与热力学规律约束** | 平衡态结构与理想化封闭系统的可逆动力学同样受物理规律与热力学条件约束 | **不普遍需要持续能质通量或正熵产生**；禁止将热力学约束偷换为普遍非平衡耗散 |
+| **①b 物理底座依赖（Substrate）** | 现实开放物理载体**通常**涉及能量交换、热交换或资源消耗（`T-E §2` 原口径） | 往往正确但解释增益极低；不能回答差异为何成为候选、响应为何非中立、路径为何被排除、后果落到哪个承受位置 |
+| **②a 持续非平衡通量维持 vs. ②b 组织机制依赖（Mechanism）** | 区分“仅靠外给非平衡通量维持形态（态 II）”，与“非平衡通量、反馈、边界维持、差异放大或迟滞对目标层级的路径稳定与历史效力具有不可替代因果作用” | **`T-E` 与物理—生命桥接的主研究区**；审查声明模型内的有界选择事件候选时须逐项对接 `CG-0..CG-4`，且不得由硬件耗散尺度偷换至符号/制度/AI 层 |
+| **③ 解释充分性（Sufficiency）** | 仅凭耗散动力学即可充分解释非等价登记、活的路径效力、承受位置归属与历史写回 | **默认不接受**；未经有界候选模型内的 `CG-0..CG-4` 独立审计（尤其是内部非等价 `NER-2`、边界内路径特异后果 `CBP-2`、可达空间重写 `HEF-3`），耗散结构最多是实现基础、生成条件或机制原型 |
+
+> **CG 五门适用边界（`RC-A`）**：`CG-0..CG-4` 五门严格限定于声明模型中的**有界选择事件候选及其相关组织研究**，**绝不反向定义或限制原初 `Selection`**。
+
+2. **`T-E §4–§5` 四层关系与非普遍必要前身（作者裁决 `G2`）**：
+   - **四层关系**：① **耗散但未见选择候选**（火焰、Bénard 对流胞、风暴等具耗散、不可逆与吸引子，却未满足有界 `CG-0..CG-4` 审计；不反推 `no Selection`）；② **耗散作为选择生成条件**（非平衡通量维持边界、可塑性窗口与记忆回流通道）；③ **耗散作为机制原型**（失稳、对称破缺、反馈放大、迟滞的建模启发，非对象同一）；④ **耗散实现的选择结构候选**（仅当同一冻结边界内独立通过非等价登记、路径效力、后果承载与历史回流审计时成立，仍不推出主体或意识）。
+   - **非普遍必要前身**：不能由“物理载体通常耗能”推出“目标层级由经典耗散机制解释”，更不能推出“所有选择结构（含符号、制度、社会规范或 AI）均以经典耗散结构为必要前身”。
+
+3. **物理三态 `One` 非穷尽类型学与耗散结构 vs. 生命组织差异（`One_Formation §2.3` & `R3-04-O1`）**：
+   - **非穷尽、非演化阶梯声明**：以下物理三态是非穷尽的组织维持方式类型学，**不是 `I → II → III` 必经的演化阶梯**；
+   - **态 I（束缚与平衡结构）**：原子/分子/晶体通过相互作用势阱与有效接口稳定，不普遍需要持续非平衡通量或正熵产生；
+   - **态 II（耗散与动态维持结构）**：对流胞/火焰/旋涡/非平衡记忆依赖**外给边界与持续通量**维持动态形态，断流即散；
+   - **态 III（内生约束互维结构 / 生命组织原型）**：原细胞与生命体在耗散通量之上进一步形成**内生约束互维、自生半透膜边界维护与修复、功能分化、误差校正及跨周期/表观/遗传历史写回**；
+   - **硬边界**：生命/细胞膜**不得**作为 `One` 的普遍下限（`R3-04-O1` 三态跨入 `One` 门槛保持 `OPEN`）；反过来，生命自维持与稳态适应亦**不自动等同**于有意识选择、`Bearer (P+E)` 或生成健康。
+
+4. **稳定秩序 ≠ 生成健康、与 `L_2` 及 `Core_25` 分工（`T-E §6–§8`）**：
+   - 严格区分**活脚手架**（降本同时保留扰动重比、修复、更新与退出）、**死稳定**（高持续、局部低耗但全局返回成本极高、丧失活的重选能力）与**牢笼性秩序**（主体/制度层靠外包代价与压缩他者未来空间维持稳定）；
+   - **防偷换**：普通吸引子 ≠ `L_2`（须具可继承、可重入之约束写回），高耗散 ≠ 高 `L_2`；`Core/SRT_Core_25` 负责不可逆性、熵产生 $H_P$ 与详细平衡破缺等**可测热力学签名**，绝不等同于 `\Psi_f`、`d` 或选择结构本身。
 
 ---
 
@@ -5603,7 +5329,7 @@ SRT 的压缩立场是：
 - **生成条件** 说明本审计如何寻找选择候选；**事件判据** 说明此刻是否建立有界事件候选；**生成健康** 说明后续健康度。三者不可互换。
 - **脚手架**（可进入的选项、信息、时间、反馈、退出、可逆窗口）说明选择如何更可进入、更可承担——**不是**一切 Selection occurrence 的必要条件。一次性、不可逆、资源贫乏的情境不能仅因此被排除出 Selection。
 - 因此：一个已建立的实践层事件候选仍可以是**错误的、压迫性的、导致自我封闭的**。可再选择性是生成健康度的重要判据，**不是**一次 Selection occurrence 的必要定义（作者裁决 G1，2026-08-04；RC-A 后按现行层级转读）。
-- 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2）。
+- 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2；完整物理底座/组织机制/解释充分性三分、死稳定 vs. 活脚手架与物理三态 `One` 差异见上文 `§4b`）。
 
 ---
 

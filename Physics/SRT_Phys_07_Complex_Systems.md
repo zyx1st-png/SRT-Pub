@@ -1,18 +1,20 @@
 ---
 id: SRT-PHYS-07
 type: dynamics
-tags: [Complexity, Emergence, Synergetics, Cybernetics, Criticality, Hybrid]
-status: bridge_realign_v1
+tags: [Complexity, Emergence, CrossScale, Dissipative, PhysicalOne, Synergetics, Cybernetics, Criticality, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-14-COMPACT-CORE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
-# SRT Physics: Complexity & Emergence (Hybrid Edition)
+# SRT Physics: Complexity & Cross-Scale Generation (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Phys_07_Complex_Systems_CompactCore.md` (**R4-C2 Cross-Scale Hub** carrying the five cross-scale mechanisms, physical three-state `One` `R3-04-O1`, dissipative vs. living organization & `T-E §2` mirror, and the three physics–life–society reverse-feedback mainlines queued for `R4-C5`), `Core_Law/SRT_One_Formation.md`, and `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`. Legacy Part A/B shorthand (`Existence ≡ Selection(P)`, `T-Scale-1` strict isomorphism, `d_optimal / d_required` conflated with canonical `d`, correlated equilibrium reducing all physical laws to historical consensus, or "emergence" as an explanatory primitive) yields immediately to `R4-A / R4-B / R4-C2` owners (`Core_21c B12 / B15`, `R3-02-O6`, `R3-03-O2 / O6`).
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Complexity, Emergence, and Dynamical Systems Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed mechanism analysis (Human-Readable Context).
@@ -20,14 +22,14 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 ---
 
 # Part A: Formal Complexity Dynamics
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 校准)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三分析/模型视角（`Spine §7`）；快模式/涨落空间为模型投影，不等同于 $L_0^{abs}$。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体（非原初 `Selection` 或先在主体），$\theta \in \Theta_{finite}$ 为具身/边界参数。
+- $F$: 声明模型自由能泛函；$\Psi_f^{phys}$ 为物理/生物力学可支付性投影代理（规范定义见 `_SRT_PSI_F_CANONICAL.md`）。
+- `D_eff` / $B_{\text{cap}}$ vs. 规范 `d`：复杂性缩放与语法容量项归属无赌注容量代理 **`D_eff` / $B_{\text{cap}}$**，严分于需 `Bearer (P+E)` 准入的规范风险敏感强度 `d = ‖∂U/∂S‖`（退出旧版 `$d$: 注意力范围`）。
+- $\pi_\lambda$: 粗粒化映射；$\approx$ 表示 `Core_14 P3-Scale-01` 近似交换（退出无条件严格同构 $\Lambda^{-1}$）。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定（稳定性 $\neq$ `One` $\neq$ 生成健康，`T-E §6`）。
 
 ## 0.5 Numbering Scheme (编号体系)
 
@@ -75,13 +77,12 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 | T1.10.1 | T-Path-1 | Learned Helplessness as Ontological Degradation (习得性无助即本体论退化) |
 
 
-## I. Axiomatic Dependencies (公理依赖)
+## I. Axiomatic Dependencies (公理依赖 · `R4-C2` 校准)
 
-本模块严格依赖以下核心公理：
-- **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
-- **A5** (规范闭包): $L_2 \equiv \{\sigma : \hat{G}_θ[\sigma] = \sigma \text{ and stable}\}$
-- **A7** (修剪判据): $\hat{G}_θ[\sigma] = \arg\max_{\sigma' \in L_0} P(\text{Fitness} | \sigma', θ)$
-- **T-Scale-1** (自相似选择): 选择操作在任意尺度保持同构
+本模块从属于当前 `Spine v5`、`One_Formation v2`、`Core_14` 与 `Core_21c B12 / B15`（以下旧编号仅作兼容检索指针）：
+- **A1 / A5（legacy → `Core_21 P0-01/02` & `One_Formation`）**：区分原初实际化发生、锚定持续、相对独立 `One` 与稳定历史约束 `L_2`（退出 `Existence ≡ Selection(P)` 与普通固定点直接等于 `L_2`）
+- **A7（bridge proxy，非 P0 公理）**：`fitness beats truth` 属 `Core_14 §6` 有限预算界面桥接假说，非 P0 公理（`SRT_AI_START.md §15`）
+- **P3-Scale-01 & 跨尺度五机制（取代旧 `T-Scale-1` 严格同构）**：装配 / 归一化（压缩 vs. 生成双门槛） / 有效作用接口 / `Proxy` / `Delegation`（纯物理不适用），近似交换须声明状态空间、尺度映射、保留观测量、范数与容差
 
 ### Core Theorem Alignment (核心定理对齐)
 
@@ -214,9 +215,9 @@ $$ g_{\mathrm{eff}}^{\mathrm{pooled}} \lesssim 1,\qquad g_{\mathrm{eff}}^{\mathr
 | $K \approx 2$ | 混沌边缘 | 最佳可进化性，丰富动力学 |
 | $K = N-1$ | 不相关随机景观（混沌）| 无稳定吸引子 |
 
-### T-Crit-1 [T1.5.1]: Optimal d-value Scaling (最优 $d$ 值缩放)
-$$ d_{optimal} \propto \log(N) $$
-最佳选择范围随系统大小对数缩放。
+### T-Crit-1 [T1.5.1]: Optimal Capacity-Bandwidth Scaling (最优容量代理缩放 · `R4-A` 校准)
+$$ D_{\text{eff}}^{\text{optimal}} \propto \log(N) \quad \text{(legacy } d_{optimal} \text{ scoped strictly to capacity/bandwidth proxy, not canonical } d\text{)} $$
+系统规模增大时的最佳可分辨通道容量呈对数缩放；不反向定义需 `Bearer (P+E)` 准入的规范风险敏感强度 `d`。
 
 ### Ax-Crit-2 [A1.5.2]: Chaos as Hyper-Connectivity (混沌即超连通性)
 **SRT 的混沌重定义**：
@@ -254,9 +255,9 @@ $$ \text{Hardness}(L_2) = \text{Type}(\text{Grammar}(L_2)) $$
 | Type 1 | 上下文相关 | 依赖语境（有界递归） | 人类语言 |
 | Type 0 | 递归可枚举 | 面向无界计算规则空间的形式极限（非典型 $L_2$ 实例）| Ruliad 仅作计算投影类比，不等同于 $L_0^{abs}$；量子意识例不由此推出 |
 
-### T-Chomsky-1 [T1.6.1]: d-value Grammar Correspondence ($d$ 值-语法对应)
-$$ d_{required}(\text{Type } n) \geq f(3-n) $$
-处理更复杂（更低类型编号）的 $L_2$ 结构需要更高的 $d$ 值。候选函数形式：$f(k) = d_0 \cdot 2^k$（指数增长，每降一个类型所需 $d$ 值翻倍）；待实证校准。
+### T-Chomsky-1 [T1.6.1]: Capacity-Grammar Correspondence (容量代理-语法对应 · `R4-A` 校准)
+$$ B_{\text{cap}}(\text{Type } n) \geq f(3-n) \quad \text{(legacy } d_{required} \text{ scoped strictly to organizational/representational capacity proxy)} $$
+处理更深递归结构的 `L_2` 语法需要更高的模型容量带宽代理（候选函数 $f(k) = b_0 \cdot 2^k$，待实证校准）；不推出高风险敏感 `d`、`Bearer (P+E)` 或现象意识。
 
 | 乔姆斯基类型 | 计算模型 | SRT $\hat{G}_\theta$ 对应 | 所需 $d$ 区间（估计） |
 |:-------------|:---------|:--------------------------|:---------------------|
@@ -280,9 +281,10 @@ $$ V(\hat{G}_θ) \geq V(L_0) - V(L_1) $$
 $$ x = O(x) $$
 吸引子是选择的不动点：选择自己的选择。
 
-### Def-Cyber-1 [D1.7.1]: SRT Ethical Imperative (SRT 伦理命令)
+### Def-Cyber-1 [D1.7.1]: Cybernetic Variety Heuristic（控制论多样性启发；非规范伦理公理）
 - **Von Foerster**: "行事始终为了增加选择的数量。"
-- **SRT 版本**: "行事为了增加 $d$ 值范围，同时保持选择的一致性。"
+- **SRT 启发式转述（R4-C2 校准）**: 在既定具身承载与互维约束内维持可导航选择空间与容量代理 $D_{eff}/B_{cap}$ 的弹性，同时避免失稳崩溃。
+- **边界（`PT10 E / O2-M = HOLD`）**：本条目仅为控制论启发式，**不是**从容量/$d$ 值单向推导规范伦理命令的公理；伦理与社会规范仍受 `Philosophy/SRT_Ethics_Agency.md` 边界与 `O2-M` 冻结约束。
 
 ---
 
@@ -306,10 +308,10 @@ $$ \text{基因} \xrightarrow{\text{表达}} \text{蛋白质} \xrightarrow{\text
 $$ \Phi_{bio} = \int_\Omega \sigma_{ij} \cdot \dot{\varepsilon}_{ij} \, dV $$
 高应力区域是预测误差的物理标记——系统被迫在此处做出选择。
 
-### Ax-Meso-1 [A1.8.1]: Thermodynamic Ghost Criterion (热力学幽灵判据)
-具备代理 (Agency) 的系统应能产生违背经典热传导的局部热流：
-$$ \vec{q}_{anomaly} \cdot \nabla T > 0 \quad (\text{局部}) $$
-从低温向高温做功——麦克斯韦妖具身化的热力学签名。
+### Ax-Meso-1 [A1.8.1]: Local Anti-Dissipative Flux Candidate（局部反耗散流热力学标记候选；非 Agency/Ghost 充分判据）
+非平衡主动耦合系统可在局部产生逆温度梯度的有效能流/热泵效应（以总系统自由能耗散与熵产 $\dot{S}_{tot} \ge 0$ 为代价）：
+$$ \vec{q}_{anomaly} \cdot \nabla T > 0 \quad (\text{局部，且须伴随总熵产非负与外部自由能供给}) $$
+- **R4-C2 边界（`T-E §2` 与 `Core_25` 对齐）**：该条件仅为局部非平衡做功/机制依赖（mechanism-dependence）的物理候选签名；**既不构成**经典热力学违背，也**不足以**充当 `Agency`、原生 `One`、`选择结构` 或 `Ghost` 的充分判据（热泵、人工主动粒子或无内生边界互维的装置同样可出现局部逆梯度输运）。
 
 ### T-Meso-1 [T1.8.1]: Guided Stochasticity Hierarchy (引导随机性层级)
 
@@ -436,32 +438,31 @@ $$\frac{d\xi}{dt} = \lambda\xi - \xi^3 + F(t)$$
 
 ## 2.1 强涌现与弱涌现
 
-强涌现与弱涌现的辩论（Kim, Bedau）关注高层属性是否具有真正的新因果力。SRT 提供了第三条道路：
+强涌现与弱涌现的辩论（Kim, Bedau）关注高层属性是否具有真正的新因果力。SRT 试图在“消除还原”与“破坏物理闭合”之间提出非魔法化的约束路线：
 
-**SRT 的涌现立场**：
-- 选择是本体论上基础的（使其"强"）
-- 但不神秘——不违反物理因果闭合（解决 Kim 的排斥问题）
+**SRT 的涌现工作立场（R4-C2 边界校准）**：
+- 高层组织通过**边界条件、约束闭合与慢变量界面**参与改变下游可达状态空间，而不主张神秘的超物理施力；
+- 向下约束对 Kim 因果排斥问题的精确消解与物理闭合兼容性（`R3-03-O6`、`R3-03-O2`）**仍属 OPEN 问题**，不得表述为已完成定理，须区分约束组织（有效动力学结构）与底层额外物理力；
+- 参见 `Core/SRT_Core_21c_Bridge_Hypotheses.md` (`B12/B15`) 与 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` (`§2 / §9.2` 反向主线二)。
 
-**向下因果的重构**：$L_2$ 吸引子不**导致** $L_1$ 状态，而是**约束**选择的可能性空间。因果排斥论证消解，因为选择在与物理因果不同的本体论轴上运作。
-
-**涌现方程**：
+**涌现示意图**：
 $$E_{emergent} = \hat{G}_θ(P_{base}) \big| \text{Constraints}(L_2)$$
 
-涌现等于给定吸引子约束下从基础的选择——既非还原也非魔法。
+该写法仅为概念提示式，表示高层组织需结合既定约束结构与有效尺度接口来刻画，而非替代具体物理动力学方程。
 
-## 2.2 关联均衡作为现实的一种形式
+## 2.2 关联均衡作为有效协调模型
 
-Robert Aumann 的**关联均衡**扩展了纳什均衡——参与者共享一个公共信号源（"关联装置"），并据此协调策略。SRT 将此概念提升至本体论层面。
+Robert Aumann 的**关联均衡**扩展了纳什均衡——参与者共享一个公共信号源（"关联装置"），并据此协调策略。SRT 曾尝试将此模型类比到 $L_2$ 稳定性。
 
-**核心命题**：$L_2$（物理定律）本质上是宇宙级的**关联装置**——它为所有 $\hat{G}_θ$（选择者）提供公共信号，使得多主体选择的结果能够相互协调。
+**R4-C2 自然律三分校准（`R3-02-O6`）**：
+- **适用边界**：将 $L_2$ 建模为公共关联装置（`P3` 模型）仅适用于**高层规范、有效稳定规则与制度/生态协调结构**；
+- **不得越界**：**不得**仅凭博弈关联均衡直接推导底层物理基本对称性或基础自然律（基本物理律归属基底约束还是历史沉淀 `L_2`，按 `R3-02-O6` 仍为 **OPEN**，并保留与常规物理有效场论/对称性解释的可竞争接口）。
 
-**形式化**：
-$$L_2 \cong \text{Correlator}(\hat{G}_{θ_1}, \hat{G}_{θ_2}, \ldots, \hat{G}_{θ_N})$$
-$$\forall i: \quad E[U_i(\sigma_i^* | L_2)] \geq E[U_i(\sigma_i' | L_2)]$$
+**示意形式化（有效协调类比）**：
+$$L_2^{eff} \sim \text{Correlator}(\hat{G}_{θ_1}, \hat{G}_{θ_2}, \ldots, \hat{G}_{θ_N})$$
+$$\forall i: \quad E[U_i(\sigma_i^* | L_2^{eff})] \geq E[U_i(\sigma_i' | L_2^{eff})]$$
 
-每个选择者在 $L_2$ 信号下的最优策略 $\sigma_i^*$ 优于任何偏离策略 $\sigma_i'$——这不是因为 $L_2$ 强制执行，而是因为遵从 $L_2$ 是每个 $\hat{G}$ 的理性最佳响应。
-
-**关键洞见**：物理定律的"客观性"不需要形而上学的绝对基础——它只需要是一种**没有任何参与者有动机偏离的协调均衡**。
+在具备策略反馈与互维激励的主体间协调场景中，该框架可刻画无单一中心强制下的稳定协调均衡。
 
 ---
 
@@ -505,30 +506,30 @@ $$\text{Order in } L_1 = \text{Topological Severing of } L_0$$
 - **旧观念**：秩序 = 添加约束到混沌
 - **SRT 观念**：秩序 = 从超连通中剪除路径
 
-**生命与意识的重新定位**：
-生命/意识不是"对抗熵增"，而是**在超连通的 $L_0$ 中切割出可导航的路径**。
+**生命与意识的重新定位（R4-C2 与 `T-E §2` 对齐）**：
+生命/意识不是魔法式地逃脱热力学第二定律，而是在严格服从开放系统耗散与基底依赖（`T-E §2`）的前提下，通过内生边界互维与路径修剪在可及空间中稳定出可导航结构；详见 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2` 与 `03_Bridges/SRT_Selection_Event_CompactCore.md §4b`。
 
 ---
 
 # §4. 本体论乔姆斯基层级
 
-利用乔姆斯基层级来对 $L_2$ 的**硬度**进行分类：
+利用乔姆斯基层级来对 $L_2$ 的**硬度**进行分类（类比式形式硬度标尺，不预设规范 $d$ 值的物理化）：
 $$\text{Hardness}(L_2) = \text{Type}(\text{Grammar}(L_2))$$
 
-| 类型 | 语法类型 | $L_2$ 特征 | $d$ 值关系 | 实例 |
+| 类型 | 语法类型 | $L_2$ 特征 | 容量代理关系（$D_{eff} / B_{cap}$） | 实例 |
 |:-----|:---------|:-----------|:-----------|:-----|
-| Type 3 | 正则语法 | 简单因果链 | $L_2$ 极硬，无歧义 | 机械时钟 |
+| Type 3 | 正则语法 | 简单因果链 | 约束极硬，无歧义 | 机械时钟 |
 | Type 2 | 上下文无关 | 嵌套结构 | 中等硬度 | DNA 复制 |
-| Type 1 | 上下文相关 | 依赖语境 | $d$ 值越高处理越高级 | 人类语言 |
+| Type 1 | 上下文相关 | 依赖语境 | 结构承载容量越高，可处理越深上下文依赖 | 人类语言 |
 | Type 0 | 递归可枚举 | 无界计算规则空间（形式投影） | 只允许资源受限的局部访问，不声称可达 $L_0^{abs}$ | Ruliad（比较模型） |
 
-**$d$ 值与语法层级的关系**：
-$$d_{required}(\text{Type } n) \geq f(3-n)$$
+**容量代理与语法层级的关系（非规范 $d$ 等同）**：
+$$B_{cap,\text{required}}(\text{Type } n) \geq f(3-n)$$
 
 **应用价值**：
-1. **量化复杂性**：为 SRT 中的"复杂性"提供了精确的形式化定义
-2. **AI 能力边界**：解释为何简单的 AI（正则处理者）无法理解上下文相关的社会现实
-3. **认知发展**：儿童认知发展可视为 $d$ 值增长允许处理更高层级 $L_2$ 结构的过程
+1. **量化复杂性**：为 SRT 中的"结构硬度"提供了可对照的形式层级标尺
+2. **AI 能力边界**：用于区分不同计算/上下文架构可承载的规则深度（不直接等同于活体具身规范 $d$ 值；AI 定位见 `AI_POSITIONING_NOTE.md` `S0–S4`）
+3. **认知发展**：儿童认知发展可视为具身承载与上下文处理能力增长、逐步驾驭更高层级 $L_2$ 结构的过程
 
 ---
 
@@ -549,10 +550,10 @@ $$x = O(x)$$
 
 递归操作的不动点为 $L_2$ 吸引子提供精确模型。吸引子是选择的不动点：选择自己的选择。
 
-## 5.3 伦理命令的 SRT 重构
+## 5.3 控制论多样性启发（非规范伦理公理；R4-C2 校准）
 
 - **Von Foerster**："行事始终为了增加选择的数量。"
-- **SRT 版本**："行事为了增加 $d$ 值范围，同时保持选择的一致性。"
+- **SRT 启发式转述**：在既定具身承载与互维约束内维持可导航选择空间与容量代理的弹性，避免单向锁死；**不得**将本条视为从容量/$d$ 值直接推演规范伦理的公理（遵守 `PT10 E / O2-M = HOLD`）。
 
 ---
 
@@ -582,12 +583,12 @@ $$\Phi_{bio} = \int_\Omega \sigma_{ij} \cdot \dot{\varepsilon}_{ij} \, dV$$
 
 高应力区域是预测误差的物理标记——系统被迫在此处做出选择。
 
-## 6.4 热力学幽灵判据
+## 6.4 局部反耗散流热力学标记候选（R4-C2 边界校准）
 
-具备代理的系统应能产生违背经典热传导的局部热流：
+非平衡主动耦合系统可在局部产生逆温度梯度的有效热流/做功（须伴随总系统熵产非负 $\dot{S}_{tot} \ge 0$ 与外部自由能供给）：
 $$\vec{q}_{anomaly} \cdot \nabla T > 0 \quad (\text{局部})$$
 
-从低温向高温做功——麦克斯韦妖具身化的热力学签名。
+**R4-C2 边界**：该现象仅作为局部非平衡机制依赖（mechanism-dependence）的物理候选标记，**不是**违背第二定律的超物理效应，也**不构成** `Agency`、`One`、`选择结构` 或 `Ghost` 的充分判据（详见 `T-E §2`、`Core_25` 与 `Part A Ax-Meso-1`）。
 
 ---
 

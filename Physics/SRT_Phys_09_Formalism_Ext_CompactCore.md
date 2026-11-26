@@ -1,35 +1,37 @@
 ---
 id: SRT-PHYS-09-COMPACT-CORE
 type: equation
-tags: [Physics, Formalism, Compact Core, Category Theory, Information Geometry]
-status: active_v1
+tags: [Physics, Formalism, Compact Core, Category Theory, Information Geometry, CrossScale]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-09, SRT-CORE-14-COMPACT-CORE]
+updated: 2026-11-26
+dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-09, SRT-CORE-14-COMPACT-CORE, SRT-CORE-22]
 ---
 
 # SRT Physics: Advanced Mathematical Formalism — Compact Core
 
-> **定位**：本文件是 `Physics/SRT_Phys_09_Formalism_Ext.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 物理数学形式化的最短骨架。  
-> **关系**：不替代原文；原文保留细节推导、数学扩展、接口批次与高级工具映射。
+> **定位**：本文件是 `Physics/SRT_Phys_09_Formalism_Ext.md` 的紧凑主干版（已随 `R4-B / R4-C2` 校准）。  
+> **用途**：用于快速把握 SRT 物理数学形式化桥接壳层（范畴论、信息几何、语义信息、吸引子地景与 `B15` 五类变化刻度接口），不替代唯一规范主方程锚点 `Core/SRT_Core_22_Equations.md`。  
+> **关系**：不替代原文；原文保留细节推导、数学扩展、接口批次与高级工具映射。全部公式均属 `P3/P4` 声明模型内数学桥接，受 `Gate 0 Class B` 与 `REP01` 表征协变护栏约束。
 
 ## 1. 核心问题
 
-这篇不是在罗列数学工具，而是在回答：
+这篇不是在罗列数学工具，也不是把 `L_0^{abs}` 固定成单一数学容器，而是在回答：
 
-> **SRT 若要成为可严肃讨论的理论，最小需要哪些数学骨架来承载 `L_0 / L_1 / L_2 / \hat G / \Psi_f / d`？**
+> **在声明具体模型、边界与表征规则（`Gate 0 Class B` / `REP01`）之后，哪些数学壳层可以承载 `L_0/L_1/L_2` 三分析视角、形成态 `\hat G_\theta`、局部 `\Psi_f` 投影与 `D_eff / D_stake / d` 分层，以及如何面对“可变结构 vs. 固定空间重嵌入”的数学非平凡性挑战？**
 
 它的作用是把：
-- 康德式构造
-- 范畴论 / 拓扑斯
-- 信息几何
-- 语义信息论
-- 动力系统与吸引子
+- 康德式构造类比
+- 范畴论 / 层拓扑斯局部桥接
+- 信息几何局部投影
+- 语义信息与动力学吸引子地景
+- `Core_21c P2/P3-B15` 五类变化刻度与反重参数化比较纪律
 
-编织成一个统一形式壳层。
+组织成可检验、可撤回的数学接口层。
 
 ---
 
@@ -72,16 +74,14 @@ F_{\hat G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}
 压缩含义：
 > **\hat G 可以被理解为从潜在范畴到实现范畴的遗忘/取值函子。**
 
-### 3.3 L₀ as Sheaf Topos
+### 3.3 L₀ as Sheaf Topos（模型投影桥接，非 `L_0^{abs}` 等同式）
 \[
-L_0 \equiv \mathcal{E}
+\pi_{\text{topos}}(L_0) \leadsto \mathcal{E} \quad \text{(legacy } L_0 \equiv \mathcal{E} \text{ scoped to P3/P4 contextual-truth model container)}
 \]
 
 这一步最重要的哲学—数学意义是：
-- `L_0` 不再被看作普通对象集合
-- 而被看作上下文相关的真值结构
-
-所以“事实”在不同局部切片上的差异，可以获得更严格的形式容器。
+- 在上下文相关的局部模型中，`L_0` 的可接入投影不必写成静态全局集合，而可用层拓扑斯承载局域切片与跨视角粘贴一致性（与 `RQM / QRF` 相对位置相容，并受 `REP01` 表征协变约束）；
+- 它不宣称 `L_0^{abs}` 本身等同于某个特定拓扑斯。
 
 ---
 
@@ -154,24 +154,22 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 - 稳定现实并非凭空给定
 - 而是大量选择过程收敛后的盆地结构
 
-### 6.2 Density / Decay / Scaling
-形式化里最重要的辅助结论是：
-- 稀有性
-- `D_eff` / capacity proxy 缩放（旧 d-value 缩放）
-- 稳定化负担 proxy（旧精华衰减）
-
-都可以被纳入这一动态地景框架。
+### 6.2 Density / Decay / Scaling & `B15` 非平凡性数学前沿（`R4-B1 / R4-C2` 对接）
+形式化里最重要的辅助接口与反压护栏包括：
+- 稀有性、`D_eff` 容量代理缩放（旧 `d-value` 缩放，严分于 `D_stake` 与规范 `d`）、稳定化负担 proxy（旧精华衰减）；
+- **五类变化刻度与反重参数化纪律（`Core_21c P2/P3-B15` / `Core_22 §0-A`）**：区分 ① 状态变化 / ② 权重变化（`HEF-3`） / ③ 组合可达性（Lie 括号闭包） / ④ 生成结构改写（`(\mathcal{X}_t, F_t, J_t) \to (\mathcal{X}_{t+1}, F_{t+1}, J_{t+1})`，`HEF-4` 待检） / ⑤ 组织方式反身重构。由于任意结构改写形式上皆可抬升重嵌入更大的固定积空间 $z_t = (x_t, F_t, J_t)$，物理学与数学形式化迫使 SRT 放弃“不可重嵌入”的空洞宣称，转向在**冻结候选模型、匹配复杂度与干预条件下检验结构改写表征是否带来独立预测、压缩或干预增益**。
 
 ---
 
 ## 7. 这篇形式化真正做成了什么
 
-它真正固定下来的不是“所有数学细节”，而是以下四件事：
+它真正固定下来的不是“所有数学细节”，而是以下五件事：
 
-1. **\hat G 不只是哲学隐喻，而有明确的范畴论位置**
-2. **`Ψ_f` 不只是形容词，但 Fisher / Landauer / curvature 只能给出局部 projection 或 operational proxy**
-3. **`d` 不等于有效维度；`D_eff` / 带宽 / 密度公式只能作为 stake-gated 之前的 capacity proxy**
-4. **L₀ / L₁ / L₂ 可以被嵌入统一的形式结构，而不是零散比喻**
+1. **形成态 `\hat G_\theta` 在具名模型中可有范畴/instrument/动力学位置，但绝不反向定义原初 `Selection`**
+2. **`Ψ_f` 可有 Fisher / Landauer / 曲率局部 projection 或 proxy，但绝不裸等同于 `g_F` 或物理能量**
+3. **`D_eff` / 带宽 / 密度仅作无赌注容量代理，与 `D_stake`、规范 `d` 及广义关切严格分账**
+4. **任何数学壳层（Hilbert 空间、拓扑斯、流形）均受 `Gate 0 Class B` 与 `REP01` 约束，不得冒充 `L_0^{abs}`**
+5. **与 `Core_22`（唯一规范主方程锚点）和 `Core_21c B15` 对齐，把动态相空间与反重参数化挑战正面留作 `R5` 比较标准**
 
 ---
 
@@ -179,11 +177,11 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 
 `Formalism Ext` 可以压缩成五句话：
 
-1. **数学构造在 SRT 中被重写为选择事件。**
-2. **L₀ 与 L₁ 的关系可通过范畴论 / 拓扑斯框架承载。**
-3. **`Ψ_f` 可有信息几何 projection，但不得与 Fisher metric 裸等同。**
-4. **语义信息的核心不是比特数，而是是否改变现实轨迹。**
-5. **整套形式化的价值，是让 SRT 的核心变量进入可严肃讨论的数学壳层。**
+1. **数学构造与物理表征均须遵守 `Gate 0 Class B` 与 `REP01` 表征协变，不得把脚手架等同于 `L_0^{abs}`。**
+2. **范畴/层拓扑斯与吸引子地景可作为局部 `L_0/L_1/L_2` 关系模型的数学容器。**
+3. **`Ψ_f` 可有信息几何 projection，但不得与 Fisher metric 裸等同；`D_eff` 不得冒充规范 `d`。**
+4. **语义信息与多尺度变化须按 `B15` 五类变化刻度分层，并接受反重参数化同目标比较检验。**
+5. **本文件是 `Core_22` 之外的非规范物理数学桥接壳层，服务于可讨论、可反驳的模型对接。**
 
 ---
 
@@ -191,6 +189,8 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 
 - 全量原文：`SRT_Phys_09_Formalism_Ext.md`
 - split 导航：`Formalism_Ext_Split/README.md`
+- 唯一规范主方程锚点：`../Core/SRT_Core_22_Equations.md`
+- 五类变化刻度与非平凡性前沿：`../Core/SRT_Core_21c_Bridge_Hypotheses.md`（`P2/P3-B15`）
 - Physics bridge：`_SRT_Phys_Bridge.md`
 - Core dynamics compact core：`../Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`

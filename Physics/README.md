@@ -1,47 +1,51 @@
 ---
 id: SRT-PHYSICS-README
 type: directory_entry
-tags: [Physics, Quantum, Cosmology, Bridge, Claim-Status, Extensions, Navigation]
-status: active_v1
+tags: [Physics, Quantum, Cosmology, Bridge, Claim-Status, Extensions, CrossScale, Navigation]
+status: active
+version: v2
 layer: meta
 epistemic_layer: bridge
 claim_mode: navigation
 canonical_status: non_canonical
 canonical: false
 date: 2026-04-30
+updated: 2026-11-26
 dependency:
   - SRT-PHYS-BRIDGE
   - SRT-PHYSICS-COMPACT-REGISTRY
   - SRT-PHYSICS-CLAIM-STATUS
   - SRT-CLAIM-LADDER
+  - SRT-GENERATIVE-ONTOLOGY-SPINE
+  - SRT-ONE-FORMATION
   - SRT-L0-METAPHYSICS
   - SRT-PSIF-CANONICAL
   - SRT-D-VALUE-CANONICAL
   - SRT-T-DIR-CANONICAL
   - SRT-SYMBOL-TABLE
 machine_summary: >
-  Directory entry for SRT Physics materials. Separates bridge foundations,
-  claim-status guardrails, compact registry, longform files, interface
-  annexes, hardening / patch layers, and the non-canonical v0.1 Extensions
-  batch. Navigation only; does not define quantum collapse, gravity, time,
-  d-value, Psi_f, G_hat_theta, L0/L1/L2, T_dir, or any physical law.
+  Directory entry for SRT Physics materials, updated under R4-C2 bidirectional
+  reconstruction (2026-11-26). Positions physics both as a high-risk bridge/pressure-test
+  domain and as a cross-scale source of inheritance, gap-filling, deepening, correction,
+  and abstraction for SRT core theory (with core-revision feedback queued for R4-C5).
+  Navigation only; does not define quantum collapse, gravity, time, d-value, Psi_f,
+  G_hat_theta, L0/L1/L2, T_dir, or any physical law.
 ---
 
 # Physics
 
-> **[休眠层声明 · 2026-07-20]** 本层（`Physics/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+> **[`R4-C2` 双向重构对齐声明 · 2026-11-26]** 本目录（`Physics/`）已按获批 `R4-C` 五波双向完善方案（`1A 修订版 / 2A / 3A`）完成 **`R4-C2`（物理与跨尺度生成）** 主轴重构（取代 2026-07-20 休眠层戳记）：物理学不仅是 `R4-A/B` 统一生成骨架的应用延伸，更是 SRT 核心理论的**继承、补齐、深化、修正与抽象来源**。本层文件仍保持 `canonical: false`（`bridge / translation / pressure-test` 角色），不替代 `CANONICAL_REGISTRY.md`、`Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_One_Formation.md`、`_SRT_SYMBOL_TABLE.md` 与各 canonical 锚点；物理学提炼出的三项跨尺度反向完善主线（相互依赖生成相对独立性 / 多尺度组织产生原本不存在的新能力 / 局部生成趋优与整体生成趋优的关系）保留候选性质与作者裁决边界，排入 **`R4-C5` 核心理论修订评估**。
+>
+> **Metadata & Claim-status note**：This README is a Physics section guide, not a definition source. Historical file names and theorem/axiom labels in Physics must be read through `SRT_Physics_Claim_Status.md`; Fisher, Landauer, `D_eff`, gravity, quantum measurement, cosmology, and `Psi_f` language are bridge/proxy unless explicitly supported elsewhere.
 
-
-> **Metadata cleanup note（2026-05）**：This README is a Physics section guide, not a definition source. Historical file names and theorem/axiom labels in Physics must be read through `SRT_Physics_Claim_Status.md`; Fisher, Landauer, D_eff, gravity, quantum measurement, cosmology, and Psi_f language are bridge/proxy unless explicitly supported elsewhere.
 This directory contains SRT's physics-facing bridge, quantum, cosmology,
-formalism, complexity / ontology, interface-annex, hardening, and extension
+formalism, complexity / cross-scale generation, ontology, interface-annex, hardening, and extension
 materials.
 
-Physics is a **high-risk bridge / pressure-test domain** for SRT. Physics-domain
-files may translate SRT primitives into quantum, cosmological, and
-information-theoretic language, but they must not be read as experimentally
-established physics unless separately supported. They must not redefine
-`L_0/L_1/L_2`, `d-value`, `Psi_f`, `T_dir`, or `G_hat_theta`; those terms route
+Physics is both a **high-risk bridge / pressure-test domain** and a **bidirectional cross-scale abstraction source** for SRT. Physics-domain
+files may translate SRT primitives into quantum, statistical-mechanical, complex-systems, and cosmological language, and extract physical constraints that pressure and refine SRT's core ontology, but they must not be read as experimentally
+established physics unless separately supported, nor redefine
+`L_0/L_1/L_2`, `One`, `d-value`, `Psi_f`, `T_dir`, or `G_hat_theta`; those terms route
 back to canonical anchors.
 
 ## Read order
