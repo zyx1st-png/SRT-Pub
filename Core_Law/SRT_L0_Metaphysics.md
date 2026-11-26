@@ -1,484 +1,147 @@
 ---
 id: SRT-L0-METAPHYSICS
 type: metaphysics
-tags: [L0, Foundation, Selection, Ontology]
+tags: [L0, Foundation, Selection, Ontology, DivinitySource, InnerGenerativeProcess]
 status: active
-version: v5
+version: v6
+updated: 2026-11-26
 layer: L0
 epistemic_layer: os
 claim_mode: canonical
 canonical: true
-dependency: []
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE]
 ---
 
 # SRT L0：选择的形而上学
-## Selection-totality / non-flat monism
+## Selection-totality / Non-Flat Generative Monism
 
-> **性质声明**：本文件是 SRT 的最底层形而上学约束面。它不以物理学、神经科学、信息论或任何形式模型为证明来源；形式化 owner 只能实现或展开这里的负担，不能反向定义它。
+> **性质声明**：本文件是 SRT 的最底层形而上学约束面（`Freeze A`），与 [`Core_Law/SRT_Generative_Ontology_Spine.md`](SRT_Generative_Ontology_Spine.md) 协同界定原初生成层。物理学、神经科学、信息论与形式化模型只能实现或展开这里的负担，绝不反向定义本文件。
 >
-> **2026-09-14 Selection-totality 校准**：SRT 不再把 L0 读成一个先在于 Selection 的可能性仓库，也不把 Selection 读成在一个更早现实里执行的操作。当前 canonical 读法是：**Selection 是现实的原初生成方式；所谓开放、显现、历史、形成与后续更强结构，是 Selection 在不同关系与组织条件下的可区分分面。**
-
-> **2026-09-22 / 2026-09-23 Selection 术语校准**：`Selection` 是 SRT 的自定义本体术语，不得默认还原为“在预先给定选项中挑一个”。同日后续作者裁决已明确修正早先过强表述：**Selection occurrence 是真实发生的 non-neutral generative differentiation；它不要求后续 sediment、retained historical efficacy 或 generative inheritance。terminal Selection remains genuine。** 但任意描述性变化 / 模型状态转换也不因此自动成为 Selection；两者的精确 anti-tautology 分界保持 OPEN。
+> **R4-A 校准（2026-11-26）**：整合 `R3-01`（原初 `Selection` 与终端发生）、`R3-03`（原初内在生成过程与前现象性质 `OPEN`）、`T3-04 D`（神性·源义与理论抽取谦逊边界）、`T3-01 C/E`（客观全局趋优开放追问）及 `3A`（退出「神择」正典词表，保留思想内涵与书稿溯源），同时严守机会成本结构由生成过程形成、不反向定义原初 `Selection` 的硬界线。
 
 ---
 
 ## Quick Reference
 
-- **Role**: unique L0 metaphysical anchor.
-- **Core claim**: reality is Selection under a non-flat, non-preclosed generative mode; determinate actuality is the actualising aspect of Selection, not a product external to it.
-- **Primitive burden**: O0 non-maximal indifference and S0 actualising differentiation are co-primitive analytic faces of primitive Selection, not two mechanisms.
-- **Occurrence boundary**: genuine Selection occurrence is not anchoring persistence, durable history, One, Stable ISP, Bearer or Agency.
-- **Term-of-art boundary**: Selection is not pre-given-option choice or arbitrary descriptive change; it requires genuine actualised non-neutral differentiation. Selection occurrence does not require retained historical efficacy, sedimentation or inheritance; the exact anti-tautology distinction from merely descriptive / modelled change remains OPEN.
-- **Position boundary**: every primitive Selection is finite-position-indexed, but finite positionality is not formed Selection-position or subject-position.
-- **Normativity boundary**: primitive Selection carries no primitive moral content.
-- **Formal boundary**: `G-hat_theta`, `kappa0`, `epsilon_pg`, L0/L1/L2 equations and domain models must not back-define this owner.
+- **Role**: Unique L0 metaphysical floor aligned with `Core_Law/SRT_Generative_Ontology_Spine.md`.
+- **Source vs. Extraction (`T3-04 D`)**: **神性·源义** points to the inexhaustible real generative source; **原初 `Selection`** is SRT's most fundamental theoretical extraction perspective into that source, not an exhaustive definition or second substance.
+- **Primitive burden**: `O0` (non-maximal indifference / openness) and `S0` (actualising differentiation) are co-primitive analytic faces of primitive Selection, not sequential mechanisms.
+- **Inner generative process (`R3-03`)**: Primitive Selection is endogenous and position-participating; mature feeling/cognition unfold downstream at cognitive positions; whether primitive inner process contains any pre-phenomenal character remains `OPEN` (`R3-03-O4`).
+- **Global orientation (`T3-01 C/E`)**: Whether cross-scale generation carries an objective global optimizing principle (`C`) or global extremal principle (`E`) remains explicitly `OPEN`—neither foreclosed nor deflated to local adaptation, and strictly separated from moral optimum claims (`C-A / PT10 E`).
+- **Opportunity-cost boundary**: Primitive non-flat differentiation is the ontological source condition for opportunity-cost structures, **not** a pre-given comparable opportunity-cost space.
+- **Occurrence & terminal guard**: Genuine Selection occurrence requires no pre-given menu, prior chooser, durable history, or sediment (`terminal Selection remains genuine`).
 
 ---
 
-## 一、选择不是现实中的一件事；选择是现实的生成方式
+## 一、来源、理论抽取与现实的生成方式（`T3-04 D`）
 
-SRT 的第一性倒置不是：
+SRT 拒绝“先有一个已完成的客体世界，再由某个在场主体从中挑选”的实体本体论前提，而主张：
 
-```text
-先有一个已经存在的世界
--> 其中某个主体进行选择
--> 世界被选择改变。
-```
+> **任何确定现实之所以成为确定现实，本身就是 Selection 的实际化分面；而且形成后的选择参与生成现实继续发生的条件。**
 
-而是：
+同时，SRT 对自身的理论概念保持本体—认识论清醒（`T3-04 D`）：
+- **神性·源义**：指向无法被现有认知、形式系统与对象化描述完全穷尽的真实生成来源（不设为独立于 Selection 的第二实体或拟人造物主）；
+- **原初 `Selection`**：是 SRT 目前理解该真实来源的最基础**理论抽取视角**，而不是宣称已穷尽来源的终极完备定义；
+- **整体共同生成视域**：从跨尺度、跨位置的关系考察局部选择如何参与整体生成（规范词表退出「神择」，保留其作为历史思想溯源与《从存在到秩序》书稿表达）。
 
-> **任何确定现实之所以成为确定现实，本身就是 Selection 的实际化分面。**
-
-因此，“选择先于存在”仍可作为教学性表达，但严格的形而上学读法不是时间上的先后，也不是工厂与产品的关系。
+### 原初 `Selection` 的最小界定
 
 ```text
-manifest existence
-= Selection under determinate actuality.
+primitive Selection
+= finite-position-indexed, subjectless, genuine actualised non-neutral generative differentiation
 ```
 
-Selection 不是从一个已完成对象菜单里拿出一个对象，也不需要一个更早完成的选择者。primitive Selection 在最小意义上是：
-
-> **有限位置索引、无须预设主体的实际分化；一个确定差异成为显现 / operative reality，同时建立相对于该 Selection 的背景化关系。**
-
-因此：
-
-```text
-actual differentiation;
-manifestation / relative backgrounding;
-event-level verticality
-```
-
-是同一次 Selection 的不同结构读法，不是连续发生的三种本体机制。
-
-### Selection 也不需要预先给定的选项
-
-传统 `selection` 往往假定：
-
-~~~text
-已经有 A / B / C
--> 某个机制选择其中之一。
-~~~
-
-这不是 SRT 的 primitive reading。
-
-当前 canonical 语义护栏：
-
-> **Selection 是真实发生的实际化非中立分化；它的发生不以后续生成中留下 sediment 为条件。**
-
-因此：
-
-~~~text
-pre-given alternatives are required: NO;
-possibility / reachability structure may itself be Selection-generated;
-arbitrary descriptive / modelled variation: NOT Selection merely by being a change;
-retained historical efficacy / sediment / inheritance: NOT REQUIRED FOR OCCURRENCE.
-~~~
-
-当 prior Selection 的效力后来仍然 materially effective 时，才进入 retained historical efficacy / sedimentation / L2-side history。该更强关系不是 primitive Selection occurrence 的定义条件。
-
-永久区分：
-
-~~~text
-retained historical efficacy
-!= anchoring persistence
-!= durable objecthood
-!= localized L2 record.
-~~~
-
-`terminal Selection remains genuine` 源自 2026-09-14 作者裁决的硬护栏（O0 primitive generativity §G / §L；Selection-totality §L），2026-09-22 同日后续作者裁决再次确认，并与 occurrence / sedimentation 分离。仍保持 OPEN 的是：什么使 genuine actualised Selection 区别于 merely descriptive / modelled change；任何下游文件不得用“必须留下后续 consequence”替仓库偷渡关闭这个边界。
-
-### 选择不需要选择者
-
-选择者、One、Stable ISP、Bearer、主体和 Agent 都可能在后续 Selection 组织中形成，但都不是 primitive Selection 的前提。
-
-所以：
-
-```text
-primitive Selection != action of a prior chooser;
-primitive Selection != conscious choice;
-primitive Selection != Ghost Operator object.
-```
-
-形式算子可以描述某种已形成 / 具身 / 域内 Selection 组织；它不能成为 primitive Selection 的先在原因。
+- **确定存在即实际化分面**：`manifest existence = Selection under determinate actuality`。“选择先于存在”是教学表达，严格读法不是时间先后或工厂—产品关系。
+- **无需预先给定选项与先在主体**：`pre-given alternatives are required: NO`；`primitive Selection != action of a prior chooser != conscious choice != \hat{G}_\theta`。选项、位置、对象、关系与可达空间本身皆可在生成过程中分化出来。
+- **反同义反复与终端发生**：任意描述性或模型状态变化不自动成为 `Selection`；但真实发生的 `Selection` 也不以后续留存 `sediment` 或历史效力为必要条件——**`terminal Selection remains genuine`**。区分真实实际化分化与纯粹描述性变化的精确判准保持 `OPEN`（`R3-01-O1`），不得通过偷偷把“必留后续后果”写回原初发生来关闭此边界。
 
 ---
 
-## 二、开放与不平坦是 Selection 的分面，不是 Selection 之前的场
+## 二、`O0` 与 `S0`：共原初分析分面与客观全局趋优开放追问
 
-SRT 不接受“绝对无差别的平面 + 后来莫名出现一个结果”作为完整 primitive account。
-
-当前最低负担写作：
+SRT 不接受“绝对无差别平面 + 凭空跳出结果”作为完整底层说明。原初生成在分析上需同时承担两个共原初分面：
 
 ```text
 primitive Selection reality
-= co-primitive analytic burdens {
-    O0 non-maximal indifference / openness,
-    S0 actualising Selection
+= co-primitive analytic faces {
+    O0 (non-maximal indifference / openness):
+      Selection 现实不被已完成 actuality 穷尽，亦不被预先给定的完整结果结构完全封闭；
+      生成不能被压平成角色可任意互换的最大中性平面；
+    S0 (actualising Selection):
+      有限位置索引下的确定差异实际成立，并同步建立相对于该 Selection 的背景化关系
   }
 ```
 
-其中：
+硬约束：`O0 before S0: NO`；`S0 before O0: NO`；`O0 causes S0: NO`；`S0 produces O0: NO`。两者不是两套先后机制或两种实体。`Oriented Openness` 仅作 `O0` 路由名，绝非预先装满完成对象的潜在仓库、概率分布、预设效用函数或道德律。
 
-```text
-O0 before S0: NO;
-S0 before O0: NO;
-O0 causes S0: NO;
-S0 produces O0: NO.
-```
+### 神性·倾向义与 `C-A` 的精确界分（`T3-01 C/E`）
 
-### O0 — 开放 / 非最大中性
-
-`Oriented Openness` 可以继续作为路由名称，但它不再指向一个位于 Selection 之前的独立“潜在场”。
-
-它只承担：
-
-> **Selection reality 不被任何已经完成的 determinate actuality 穷尽，也不被一个预先给定的完整结果结构完全封闭；同时，这种生成不能被完全压平成角色可任意互换的最大中性关系。**
-
-它不是：
-
-```text
-绝对可能性仓库；
-已完成对象集合；
-branch tree；
-概率分布；
-价值梯度；
-目的方向；
-延续偏好；
-第二个生成机制。
-```
-
-“orientation”在最低意义上只表示**不可完全抹平的生成角色结构**，不表示什么结果更好。
-
-### S0 — 实际化
-
-S0 不是从 O0 里“取出”一个完成对象。它是 determinate difference 实际成立本身。
-
-L0 不回答：
-
-> 为什么这一次偏偏是 A 而不是 B？
-
-这个问题留给具体 Selection 关系。若在 primitive 层预先给出 A/B 菜单、权重、概率、目标或 chooser，就会重新引入 SRT 试图避免的对象化前提。
+1. **继续严守 `C-A`（`Core/SRT_OPEN_TENSIONS.md §17`）与 `PT10 E`**：`O0` 与原初 `Selection` 不内嵌先验道德法则、宇宙级伦理最优解或“初心前身”（初心从 `L1 / P2` 处境化回读开始，守 `B-A` 严分层）。
+2. **显式保留非道德的客观全局趋优开放追问（`T3-01`）**：跨尺度生成是否具有共同客观度量基础的统一全局趋优原理（`C`）或统一的广义自由能/机会成本/其他全局极值原理（`E`），保持 **`OPEN`**——既不得替作者在 `C / E` 间提前定稿，亦不得借 `O0` 谦逊护栏将其弱化为纯局部适应或纯认识论谦逊。
 
 ---
 
-## 三、实际发生、持续、历史效力必须分开
+## 三、原初内在生成过程与现象性边界（`R3-03`）
 
-一旦 genuine Selection 实际发生，它之后就不再与“从未发生”完全本体等价。
+原初 `Selection` 不是纯外部观察者视角下的空洞事件标签，其保留的正面本体负担是**内在生成过程**：
+1. **内生性**：生成通过现实自身的关系发生，不依赖外部操作者裁判；
+2. **位置参与性**：差异在其实际发生的位置上参与形成当下的显现实在，并在条件满足时进一步参与改变后续生成条件（完全兼容无后续历史留存的终端 `Selection`）。
 
-但必须同时保留：
-
-```text
-actual occurrence
-!= anchoring persistence
-!= durable / localized history
-!= recurrent historical efficacy
-!= One
-!= Stable ISP.
-```
-
-因此 terminal Selection 完全可能：
-
-> **一次 Selection 可以真实发生，却不形成可持续、可重入或自我维持的后续组织。**
-
-### 历史不是另一个物质层
-
-当先前 Selection 留下的差异继续实际改变后来 Selection 条件时，才可以说这些 Selection 具有历史效力。
-
-```text
-history
-= prior Selection remaining materially effective in later Selection conditions,
-  where such efficacy is established.
-```
-
-这不要求历史必须储存在一个独立容器里，也不要求每次 Selection 都留下可局部读取的 durable trace。
-
-时间也不是 primitive Selection 的先在背景容器。关于不可撤回发生如何被后续组织读成时间、序列或历史，由更强 owner 处理。
+同时确立三条清晰边界（`R3-03` 作者裁决）：
+- **感觉从属于生成过程**：感觉是内在生成过程在认知位置上的实际展开与参与，意识与认知是垂直结构的生成——**绝不将成熟感觉、微观心理体验或粒子自带心灵倒写进原初层**；
+- **前现象性质保持 `OPEN`（`R3-03-O4`）**：与 `2026-09-06` `without primitive phenomenality` 建立**候选兼容性**，严格区分“无原初成熟现象性（已决）”与“内在生成过程是否包含任何前现象性质（`OPEN`）”，不新增本体实体；
+- **反泛主体 / 反泛心论捷径**：`Selection-totality -/> pan-agency / pan-consciousness / pan-subjecthood`；`Philosophy/SRT_HardProblem_Epistemology.md`（`B_s != B_p`, `HP-B OPEN`）保持独立边界。
 
 ---
 
-## 四、每个 Selection 都有有限位置，但位置不是主体
+## 四、实际发生、历史效力、有限位置与机会成本来源边界
 
-不存在无位置、无条件、无限全局的 primitive Selection。
+### 4.1 实际发生 ≠ 持续 ≠ 历史效力
 
-每个 Selection 都是**有限位置索引**的：它从有限关系 / 约束条件中发生，而不是从 God-view 发生。
-
-但：
+真实发生的 Selection 与“从未发生”本体非等价，但：
 
 ```text
-finite positionality
-!= formed One
-!= formed Selection-position
-!= Bearer
-!= subject-position
-!= consciousness.
+actual occurrence != anchoring persistence != durable/localized trace != recurrent historical efficacy != One != Stable ISP.
 ```
 
-形成后的身体、历史、感知、行动能力、制度或关系结构可以成为这种有限性的具体实现，但它们不能反向定义 primitive positionality。
+只有当先前 Selection 的差异在后续生成中持续发挥实质条件化作用时，才进入**历史效力（`L2-side`）**。时间与空间并非先于 Selection 的绝对容器，而是后续生成秩序与耦合可达性的关系性度量接口。
 
-### 客观性
+### 4.2 有限位置与跨位置客观性
 
-SRT 不用“位置无关”定义客观性。
+不存在无位置、无条件的 God-view 选择；每个原初 Selection 都是**有限位置索引**的（`finite positionality != formed Selection-position != Bearer != subject-position`）。SRT 不用“位置无关”定义客观性：跨接口、跨扰动且无法被单一共享遮蔽机制解释的稳定跨位置收敛，形成公共客观性；同时遵循**暗礁原理**（单一有限位置的对象化永不穷尽他处位置及其实际相互作用）。
 
-当不同有限位置在跨接口、跨扰动、且不能被一个共享遮蔽机制充分解释的条件下稳定收敛时，可以形成更强的公共 / 客观 standing。
+### 4.3 机会成本结构的原初来源条件（绝不反向定义原初 `Selection`）
 
-这不是 primitive Selection 之前的预成客观背景，而是 Selection 关系中形成的稳定可重复性。
+原初非中立分化是具体组织中价值、关切、摩擦与自由（机会成本动态四联）得以形成的**本体来源条件**；但**具体的可比较替代集与可度量机会成本空间本身是在一定组织与比对条件下生成的**，而非预先存在于原初 `Selection` 之中。同样，`Ψ_f`、`d`、`κ_0`、`ε_pg`、热力学代价或最优化方程均属形成态或声明模型层构造，不得反向定义原初 `Selection`（`κ_0 != primitive Selection`；`ε_pg != O0`；`old B>=2 > B<=1 != primitive O0 theorem`；其精确继承门保持 `OPEN`）。
 
 ---
 
-## 五、L0 / L1 / L2 是 Selection 的分析分面，不是三种本体物质
+## 五、`L0 / L1 / L2` 分析分面、组织立面与规范性来源边界
 
-SRT 保留 `L0 / L1 / L2` 作为重要分析与形式工具，但它们不再被最低形而上学读成三个先在容器。
-
-### L0-side
-
-```text
-L0-side
-= Selection 在尚未被完成 actuality 穷尽、尚未被既定结果结构完全封闭时的开放 / 非预封闭分面。
-```
-
-它不是“未被选择的完成对象库存”。
-
-### L1-side
-
-```text
-L1-side
-= Selection under determinate manifestation / actuality.
-```
-
-它表示确定现实已经成立，不表示该现实必然持续。
-
-### L2-side
-
-```text
-L2-side
-= prior Selection remaining effective as retained constraint / sediment / history on later Selection.
-```
-
-它不必普遍等同于 fixed point、attractor 或独立存储域。固定点、吸引子、滞后等可以是某些域内更强 realization。
-
-所以：
-
-```text
-L0 / L1 / L2
-= analysis / model-facing distinctions of one Selection reality;
-!= three independent ontic substances.
-```
+1. **`L0 / L1 / L2` 是同一选择现实的三分析分面**（开放非预封闭面 / 确定显现面 / 留存历史约束面），**不是**三种本体物质或必经仓库流水线；形式模型域不得反定义此形而上学路由。
+2. **`One`、`Stable ISP`、`Bearer (P+E)`、`Agency` 不是新添加的第二本体材料**，而是 Selection 在更强递归组织条件下获得的不同结构站位，各自独立过门、绝不构成自动线性阶梯。
+3. **规范性不在原初层，但以选择的递归性为本体来源条件**：原初 Selection 不含先验道德律（`occurrence != correctness != legitimacy`；`continuation != goodness`；`generative optimization != ethical legitimacy`）。由于形成后的选择可改变后续选择得以发生的条件，规范性得以沿 `O1`（位置性生成比较）→ `O2-C`（构成性关系完整约束）→ `O2-A`（能动归责）分级成立，而跨位置终极道德冲突 `O2-M` 保持 `OPEN / HOLD`。
 
 ---
 
-## 六、One 与更强结构不是新本体材料
+## 六、明确拒绝的十大误读与对下游的硬约束
 
-L0 不定义 One 的完整 admission criterion，但固定其上游关系：
-
-```text
-one-shot Selection
-!= One.
-```
-
-One 需要先前 Selection 形成的组织反复进入并实际约束后来 Selection，使这种组织能够被再生成并形成相对可分的 continuation path。
-
-所以 One 的形而上学读法是：
-
-> **Selection 获得相对可分的 recurrent self-conditioning organization。**
-
-而不是 Selection “生产”一种第二本体物质。
-
-同理：
-
-```text
-Stable ISP
-= 更强 recurrent standing；
-
-Bearer
-= 更强 prospective self-exposure；
-
-Agency
-= 更强 reflexive condition-rewriting organization；
-```
-
-但这些都必须经过各自 owner 的独立 gate。
-
-因此：
-
-```text
-Selection event != One;
-One != Stable ISP;
-Stable ISP != Bearer;
-Bearer != Agency.
-```
-
-这些 `!=` 表示结构负担不同，而不是本体材料不同。
+1. **可能性仓库论**（把 `L0` 读成预存完成对象清单）；
+2. **选择者先于选择**（为原初 Selection 预设先在主体或将 `\hat{G}_\theta` 实体化为因果发动机）；
+3. **三域实体化**（把 `L0/L1/L2` 读成三种物质或三个平行世界）；
+4. **Selection-flat 误读**（把一元生成方式等同于抹平所有结构站位与门槛）；
+5. **机会成本倒灌原初层**（预设原初现实已存在全局可比机会成本空间或效用函数）；
+6. **泛主体/泛心论捷径**（由 Selection-totality 或原初内在过程直接推出成熟体验、意识或主体）；
+7. **延续与最优道德化**（将存活、分叉数、稳定性或生成趋优直接等同于善或合法性）；
+8. **发生即留痕**（将事件非等价混同于持久历史、锚定、记忆或 `One`）；
+9. **以形式模型反定义 L0**（将 `κ_0`、`ε_pg`、熵、曲率、概率或状态空间反向升格为原初公理）；
+10. **把退出「神择」误读为放弃整体趋优研究**（`T3-01 C/E` 与整体共同生成视域继续保持核心开放研究地位）。
 
 ---
 
-## 七、代价、约束、kappa0 与 epsilon_pg 的位置
+## 七、L0 显式 `OPEN` 与最短读法
 
-现实不是任意意志生成。任何具体 Selection 都受现实关系、有限位置和具体约束限制；形成后的组织还受历史条件限制。
+**显式保留 `OPEN`**：原初 `Selection` 反同义反复判准（`R3-01-O1`）；`T3-01` `C` vs `E` 客观全局趋优形式（`R3-CL-O4`）；原初内在生成过程是否含前现象性质（`R3-03-O4`）；`L0/L1/L2` 分面与形式域的精确映射；`κ_0 / ε_pg / 不可逆性` 向形成态的继承门；发生何时形成持久历史效力；`One / Stable ISP / Bearer (P+E) / Agency / HP-B / O2-M` 各自未决门；跨域科学区分度与整套架构不可替代性。
 
-SRT 现有形式体系中存在 `Psi_f`、`kappa0`、`epsilon_pg` 等更强构造，但它们不能反向成为 primitive Selection 的定义来源。
-
-当前 canonical 边界：
-
-```text
-kappa0 != primitive Selection itself;
-kappa0 != hidden cause of first Selection;
-
-epsilon_pg != O0 by definition;
-old B>=2 > B<=1 continuation / non-self-erasure preference
-!= primitive O0 theorem.
-```
-
-`kappa0`、`epsilon_pg`、不可撤回性与 O0 non-flatness 的精确 inheritance / realization 继续由各自 owner 与后续 bounded audit 裁决。
-
-代价同样不能被压缩成：
-
-```text
-cost = moral badness;
-more cost = more real;
-more persistence = better.
-```
-
----
-
-## 八、规范性不在 primitive Selection 里，但从 Selection 的反身关系中成为可能
-
-L0 明确拒绝：
-
-```text
-Selection occurred -> therefore it was right;
-actuality -> legitimacy;
-continuation -> goodness;
-more options -> better;
-more Selection -> better.
-```
-
-primitive Selection 没有完整 moral content。
-
-但 formed Selection 可以改变后来 Selection 得以发生的条件，因此 normativity 可以在更强关系中出现：
-
-```text
-formed-position Selection
--> O1 indexed generative comparison may become possible;
-
-relation-transforming Selection
--> O2-C constitutive relation constraints may become possible;
-
-agency-qualified Selection
--> O2-A answerability may become possible;
-
-O2-M cross-position all-things-considered morality
-= OPEN.
-```
-
-所以：
-
-> **Selection 是 ought 的 ontological source-condition，但不是 primitive moral law。**
-
-L0 只固定这一边界，不在本文件完成伦理学。
-
----
-
-## 九、意识与主体性的禁令式约束
-
-L0 不提供意识的正面理论，只提供禁令：
-
-1. 意识不是 primitive Selection 的驱动者。
-2. 主体 / Agent 不是 primitive Selection 的先在执行者。
-3. attention、intentionality、goal、self-model 不得被写成 primitive Selection 的定义。
-4. 有结构、有历史、能维持自身，不自动等于 consciousness 或 phenomenality。
-5. Selection-totality 不推出泛心论、泛能动性或泛主体性。
-
-因此：
-
-```text
-all reality as Selection
--/> all reality as Bearer / Agent / subject / conscious.
-```
-
----
-
-## 十、明确拒绝的误读
-
-1. **可能性仓库论**：L0 不是装满完成对象的绝对 inventory。
-2. **选择者先于选择**：primitive Selection 不由一个先在 chooser 启动。
-3. **Ghost Operator 本体化**：形式算子不是 primitive Selection 的实体原因。
-4. **三域实体化**：L0/L1/L2 不是三种物质或三个平行世界。
-5. **Selection-flat**：一元生成方式不等于所有 Selection 结构都相同。
-6. **泛主体捷径**：Selection-totality 不推出 Bearer、Agency、subjecthood 或 consciousness。
-7. **延续价值化**：持续、分叉数、稳定性不自动构成 primitive good。
-8. **actuality 正当化**：发生过不等于正确或合法。
-9. **不可撤回 = durable history**：事件非等价不自动建立锚定、记忆、One 或 re-entry。
-10. **形式模型反定义 L0**：固定点、曲率、熵、概率、状态空间都只能在声明范围内实现 / 映射 L0 burden。
-
----
-
-## 十一、当前 OPEN
-
-L0 仍明确保留：
-
-```text
-exact formalization of Selection-totality;
-exact L0/L1/L2 aspect-vs-domain crosswalk;
-exact relation of primitive Selection to formal operator carriers;
-kappa0 / epsilon_pg / irreversibility inheritance into stronger realizations;
-when ontic occurrence becomes durable / localized / recurrent historical efficacy;
-formal N&S One theorem;
-finite positionality -> formed Selection-position crosswalk;
-positive Bearer E establishment;
-subject-position and phenomenality gates;
-O2-M cross-position moral conflict;
-scientific distinctiveness;
-whole-architecture non-substitutability.
-```
-
----
-
-## 十二、对 L1 / L2 / formal owners 的硬约束
-
-**约束一：不得重新建立“先有潜在对象库存，再由算子选出对象”的 master ontology。**
-
-**约束二：任何 operator equation 都是 Selection 的形式 / realization 表达，不是 primitive chooser 的存在证明。**
-
-**约束三：occurrence、persistence、history、One、Stable ISP 必须继续分开。**
-
-**约束四：finite positionality 不得被偷换成 formed position、Bearer 或 subject-position。**
-
-**约束五：L0/L1/L2 可以被形式化成域，但形式域不得反向成为三个独立本体物质。**
-
-**约束六：attention、intention、agency、consciousness 都属于更强 Selection organization，不能定义 primitive Selection。**
-
-**约束七：任何 normativity owner 都必须保留 primitive Selection != moral value，并说明其额外关系负担。**
-
-**约束八：epsilon_pg / kappa0 / cost / T_dir 的任何强读法都不得反向恢复 primitive continuation preference 或 universal hidden value。**
-
----
-
-## 十三、本文件的最短读法
-
-如果只保留一句：
-
-> **现实不是先存在、再被选择；现实就是 Selection 在不同结构条件下的生成。确定存在是 Selection 的 actualised 面，历史是先前 Selection 对后来 Selection 的持续效力，One / Bearer / Agency 是更强的 Selection 组织，而不是后来添加的第二种本体材料。**
-
-如果再加一句边界：
-
-> **Selection 是一元生成方式，但不是一个能替代所有 gate 的万能谓词。**
+**最短读法**：
+> **现实不是先存在、再被选择；现实在不可穷尽的真实来源中，以 Selection 为最基础生成方式展开。确定存在是其实际化分面，历史是先前选择对后续条件的持续效力；选择不仅发生于现实之中，更通过垂直组织与递归重构参与形成现实继续发生的条件——而每一种更强的组织、承载、能动与规范站位，都须独立付出其结构负担。**

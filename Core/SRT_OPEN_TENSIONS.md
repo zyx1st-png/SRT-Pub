@@ -2,7 +2,9 @@
 id: SRT-OPEN-TENSIONS
 type: open_tensions
 tags: [Core, Open Questions, Hardening, Claim Ladder]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: open
@@ -849,6 +851,7 @@ The live authorities are `Governance/SRT_CLAIM_LADDER.md §0A`, `_SRT_SYMBOL_TAB
 - **Resolved**: four-sense terminology and scope; §5b's quotability defect; strong universe-wide readings in live core/domain mirrors; bare `Ω` cannot be reused for a source horizon or reachable optimum.
 - **Allowed conditionally**: indexed finite-model optimum, regulative horizon and finite-dynamics attractor, each under its own claim level and conditions.
 - **Forbidden**: `d↑ ⇒` one universe-wide optimum; global-optimum language as an unindexed moral completeness claim; “attractor = good／healthy”; using heat death's failure as proof of an opposite optimum.
+- **`R4-A` boundary sync (2026-11-26)**: `C-A`'s continuing prohibition on a universe-wide moral/evaluative optimum (`PT10 E`) is strictly distinguished from **`T3-01 C/E`** (`Core_Law/SRT_Generative_Ontology_Spine.md §1`), which leaves **OPEN** the non-moral theoretical inquiry into whether generation across scales exhibits an objective intrinsic global optimizing or extremal orientation. Neither closes the other.
 
 ---
 
@@ -856,8 +859,8 @@ The live authorities are `Governance/SRT_CLAIM_LADDER.md §0A`, `_SRT_SYMBOL_TAB
 
 ### Current State
 
-Core treats absolute `\Psi_f \to 0` as a degenerate／non-stake limit, while several Spirituality passages map the same limit to perfection, liberation or pure awareness. `Spirit_04` already notes the tension locally, but no repo-wide author verdict has fixed whether the devotional language means absolute zero, excess／defensive friction approaching zero, or something else.
+Core treats absolute `\Psi_f \to 0` as a degenerate／non-stake limit (`_SRT_PSI_F_CANONICAL.md §5`), while several Spirituality passages map the same limit to perfection, liberation or pure awareness. `Spirit_04` already notes the tension locally, but no repo-wide author verdict has fixed whether the devotional language means absolute zero, excess／defensive friction approaching zero, or something else.
 
 ### Status
 
-**OPEN — separate CΨ author gate.** C-A deliberately did not adopt the proposed `\Psi_f - \Psi_f^{min} \to 0` reformulation and did not change `_SRT_PSI_F_CANONICAL.md`. Until adjudicated, Spirituality uses must remain marked domain mapping／high-commitment language and may not override the Core definition or imply that real stake disappears at an optimum.
+**OPEN — separate CΨ author gate.** C-A deliberately did not adopt the proposed `\Psi_f - \Psi_f^{min} \to 0` reformulation and did not change Core's degenerate limit in `_SRT_PSI_F_CANONICAL.md §5`. Under `R4-A` (`2026-11-26`), Core's absolute `\Psi_f \to 0` degenerate limit remains intact while Spirituality `R3-08 P2-06` four-way friction alignment is scheduled for `Wave R4-4`; `CΨ` remains a separate `OPEN` gate. Until adjudicated, Spirituality uses must remain marked domain mapping／high-commitment language and may not override the Core definition or imply that real stake disappears at an optimum.

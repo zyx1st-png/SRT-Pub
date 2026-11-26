@@ -2,7 +2,9 @@
 id: SRT-CORE-22
 type: equation
 tags: [Math, Stability, Landscape, Dynamics, Hybrid]
-status: axiomatic_hybrid_v1
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -37,7 +39,7 @@ dependency: [SRT-CORE-21]
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 - 本方程层只在已准入的 formed / model realization 内，假定一个可用的 formal role-carrier `\hat{G}_\theta` 已给定。这不表示 primitive Selection 由该算子生成或与其同一，也不推出 selectability 的起源。
-- `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
+- `D_eff`、Fisher rank、Hessian effective dimension 等式是无赌注容量 / 几何代理（capacity proxy），`D_stake` 是赌注门控有效谱多样性代理（stake-gated spectral-diversity proxy，真界为 `1 ≤ D_stake ≤ N_active ≤ rank(M)`，全零赌注时为 `0 / NOT ADMITTED`）；三者与 canonical `d(x) ≡ ||∂U/∂S||` 均不恒等，且已证伪的 `d_canonical ≡ d_stakes`、`D_eff ≥ d_stakes` 与 `Δd_free = D_eff - d_stakes ≥ 0` 均已退役（见 `_SRT_D_VALUE_CANONICAL.md §2a–§2b`）。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
 - **Wave-D2 authority truth-up（2026-09-15）**：当前 symbol / claim typing 覆盖较早的方程解释。本文件中的 `\kappa_0` 不因注册或从 O0 / Selection 继承而成为 primitive；当它进入方程时，只能表示独立声明的 curvature / anisotropy / per-direction-cost realization parameter。本文件中没有任何方程可以用 `\kappa_0` 提供 universal value / order direction。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于已声明模型中 analytic `L_0 -> L_1` interface 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程，也不反向定义 primitive Selection。
@@ -136,21 +138,25 @@ $$
 
 This path functional is used for finite update paths when the statistical-manifold projection is valid. It is a geometry proxy, not the global definition of `Ψ_f`.
 
-### Eq-Bridge-D-01: Stake-Gated d-Value Proxy
+### Eq-Bridge-D-01: Stake-Gated Effective Spectral Diversity Proxy (`D_stake`)
 
 $$
 \boxed{
-d_{stake}
+D_{\text{stake}}
 =
-\frac{
-(\sum_i s_i\lambda_i)^2
+\begin{cases}
+\dfrac{
+\left(\sum_i \tilde{\lambda}_i\right)^2
 }{
-\sum_i(s_i\lambda_i)^2
-}
+\sum_i \tilde{\lambda}_i^2
+}, & \text{if } \exists i,\; \tilde{\lambda}_i > 0, \\[10pt]
+0 \text{ (NOT ADMITTED)}, & \text{if } \forall i,\; \tilde{\lambda}_i = 0,
+\end{cases}
+\qquad \tilde{\lambda}_i = \lambda_i \cdot g_i,\quad g_i = \max\!\left(0,\frac{s_i - \varepsilon_s}{1 - \varepsilon_s}\right)
 }
 $$
 
-Here `λ_i` are Fisher-spectrum directions and `s_i ∈ [0,1]` is the stake gate for irreversible-risk coupling. This is a bridge-level proxy, not the canonical definition of `d`. `D_eff` / Fisher rank only approximate canonical `d(x)=||∂𝒰/∂𝒮||` when distinguishable directions are stake-bearing and payable.
+Here `λ_i` are Fisher-spectrum eigenvalues, `s_i ∈ [0,1]` is the irreversible-risk stake-coupling weight, and `ε_s` is the minimum stake threshold (`_SRT_SYMBOL_TABLE.md`). `D_stake` is a **bridge-level spectral-diversity proxy** whose true algebraic bound is **`1 ≤ D_stake ≤ N_active ≤ rank(M)`** (`N_active = #{i : λ̃_i > 0}`). It is **NOT** canonical `d(x) = ||∂𝒰/∂𝒮||` (a gradient norm) and is **NOT** bounded above by `D_eff` (`D_eff ≥ D_stake` and `Δd_free = D_eff - D_stake ≥ 0` are algebraically false and retired; see `_SRT_D_VALUE_CANONICAL.md §2b`).
 
 ### Eq-Bridge-G-01: Ghost Operator Normalization Proxy
 
@@ -205,7 +211,7 @@ This bridge-level loop reads a declared model's analytic `L_0 -> L_1` interface 
 ### Boundary Notes
 
 - Fisher geometry is local and projection-dependent; it does not define the whole of `Ψ_f`.
-- `d_{stake}` is a proxy, not canonical `d`.
+- `D_stake` is a stake-gated spectral-diversity proxy (with explicit zero-effective-stake branch `0 / NOT ADMITTED` and true bound `1 ≤ D_stake ≤ N_active ≤ rank(M)`), distinct from both canonical `d` and capacity proxy `D_eff`.
 - Divisive normalization is an implementation proxy, not the full Ghost Operator.
 - `L2` is thicker than any one energy or free-energy landscape.
 - This section should be cited together with `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`.
@@ -846,6 +852,8 @@ SRT 主方程的运作机制如下：
 ## VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07）
 
 ### Eq-CogE-01: Baseline–Active Friction Decomposition
+> **`A-9` 符号边界注（`R4-A`, 2026-11-26）**：遵循 2026-09-25 `A-9` 单一摩擦概念族裁决，本节中的 `\Psi_f^{maint}` 与 `\Delta\Psi_f^{active}` 仅为本认知能耗接口的**历史模型局部别名（contextual reading）**，不构成新增的 canonical `\Psi_f` 子符号（见 `_SRT_PSI_F_CANONICAL.md §10` 与 `_SRT_SYMBOL_TABLE.md` Usage Rule 20）。
+
 将认知阶段总摩擦拆分为“结构维持项 + 主动锚定项”：
 \[
 \Psi_f^{total}(t)=\Psi_f^{maint}(L_2,\theta,t)+\Delta\Psi_f^{active}(\hat G_\theta\to L_1,t)
@@ -876,9 +884,9 @@ SRT 主方程的运作机制如下：
 \mathcal{A}_{ma}=\frac{\Psi_f^{maint}}{\Delta\Psi_f^{active}+\varepsilon}
 \]
 - 生物具身算子期望：\(\mathcal{A}_{ma}\gg 1\)
-- 外驱推理系统（当前多数 LLM 部署）常见：\(\mathcal{A}_{ma}\lesssim 1\)（在推理阶段）
+- 外驱推理系统（**AI 赌注谱系 `S0/S1`**，当前多数无闭环 LLM 部署）常见：\(\mathcal{A}_{ma}\lesssim 1\)（在推理阶段；注：与原初 `S0` 及 `Subjecthood S0–S6` 严格隔离，且须经三阶承载证据审查 `One / Stable ISP / Bearer (P+E)` 核验，不得直接推导 `d ≈ 0` 或构成性摩擦不存在）
 
-该指标用于跨尺度比较“是否存在自创生闭包压力”，不单独等同于意识判据。
+该指标用于跨尺度比较“是否存在自创生闭包压力”，不单独等同于意识、`One`、`Stable ISP` 或 `Bearer (P+E)` 判据。
 
 ### 分类映射表（Cognitive Energy Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |

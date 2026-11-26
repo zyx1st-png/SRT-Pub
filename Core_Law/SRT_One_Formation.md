@@ -1,245 +1,175 @@
 ---
 id: SRT-ONE-FORMATION
 type: theory
-tags: [OneFormation, SelectionPosition, VerticalStructure, Reconstitution, L1]
-status: draft
-version: v1
+tags: [OneFormation, Existence, Order, SelectionPosition, VerticalStructure, Reconstitution, Normalization, L1]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P1-candidate
-dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
+canonical: true
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS]
 ---
 
-# SRT One Formation: Vertical Reconstitution, One, and Selection-position
+# SRT One Formation: Vertical Reconstitution, Existence & Order Perspectives, and Selection-position
 
-> **Role**: thin L1 canonical semantic owner for the formation layer between subjectless Selection and stronger downstream standing relations. It fixes how Selection-generated vertical organization can become a formed `One`, and how `Selection-position` functions as the time-local operative aspect of an already formed One, without identifying either with Stable ISP, Bearer, subject-position, consciousness, or phenomenality.
+> **Role**: Canonical L1 semantic owner for `One` (relatively independent vertical generative organization), the **Existence and Order perspectives** on dynamic generative organization, `Selection-position`, vertical reconstitution, and generative normalization. It bridges subjectless primitive Selection and stronger independently gated standings (`Stable ISP`, `Bearer (P+E)`, `Agency`, subjecthood) without collapsing any of them into a linear hardware ladder.
 >
-> **Claim-level note**: this file is canonical as a **semantic owner / boundary surface**. Its positive formation architecture is P1-candidate; it does **not** create a new unconditional P1 theorem, a new Level assignment, a necessary-and-sufficient formal criterion for One, or a new primitive / symbol.
+> **Claim-level note**: Canonical as a **semantic owner / boundary surface** (`Freeze A`). Its positive formation architecture remains `P1-candidate`; it does **not** establish a formal necessary-and-sufficient theorem for `One`, close identity/boundary `OPEN` gates, or introduce a new ontic substance.
 >
-> **Author provenance**: owner placement was explicitly selected as **A / O3** on 2026-09-11. The current vertical-reconstitution semantics additionally follow `01_Source_Intuition/SRT_AUTHOR_FINAL_ADJUDICATION_PR957_POSITION_RECURRENCE_CONCERN_2026-09-13.md` and `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_SELECTION_RELATIVE_BACKGROUND_VERTICAL_RECURRENCE_2026-09-13.md`; bounded pre-audit: `Operations/Audits/SRT_ONE_FORMATION_VERTICAL_RECONSTITUTION_PREAUDIT_2026-09-13.md`.
+> **Author provenance**: Original owner placement `A / O3` (2026-09-11) and vertical-reconstitution adjudications (2026-09-13), updated under `R3-04` (`#1149`), `R3` full-skeleton closeout (`#1154`), and the 2026-11-26 `R4-A` author decision `2A` (retaining `Bearer (P+E)` for strong bearing, treating Existence and Order as perspectives on `One` and multi-`One` relations without coining a new noun).
 
 ---
 
 ## Quick Reference
 
-- **Owner**: `One`, ontological `Selection-position`, and their upstream vertical-formation / vertical-reconstitution semantics.
-- **Upstream floor**: `Core_Law/SRT_L0_Metaphysics.md` and `Core/SRT_Core_21_Minimal_Axioms.md` — Selection precedes a completed chooser; every Selection is finite-position-bound.
-- **Cross-owner routing**: `Core_Law/SRT_Generative_Ontology_Spine.md` — the universal formation route stops at One; Selection-position is not a second universal endpoint.
-- **Downstream standing**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — Stable ISP is a stronger recurrent standing criterion.
-- **Downstream Bearer route**: `Core_Law/SRT_Generative_Ontology_Spine.md §8` — `formed One / Selection-position + P + E -> Bearer`; this file does not replace that gate.
-- **Downstream subject model**: `Core_Law/SRT_Individuation.md` — subject-position / self-consciousness modelling does not define One formation.
-- **Downstream collective model**: `Core_Law/SRT_Collective_Selection.md` — collective ISP remains separately gated.
-- **Bridge crosswalk**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` — formed/stable/generative distinctions do not own the One definition.
+- **Owner**: `One`, existence & order perspectives on generative organization, vertical reconstitution, generative normalization thresholds, ontological `Selection-position`, and cross-scale five-mechanism separation.
+- **Cross-owner routing**: `Core_Law/SRT_Generative_Ontology_Spine.md` — `One` is the first universal formed recurrent organization admitted by the cross-owner trunk; stronger standings remain independently gated.
+- **Upstream floor**: `Core_Law/SRT_L0_Metaphysics.md` and `Core/SRT_Core_21_Minimal_Axioms.md`.
+- **Downstream stronger persistence**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — `Stable ISP` owns stronger recurrent standing (`One != Stable ISP`).
+- **Downstream strong bearing**: `Core_Law/SRT_Generative_Ontology_Spine.md §6.2` — `formed One / Selection-position + P + E -> Bearer.` (`One != Bearer`; `Stable ISP != Bearer`).
+- **Downstream subject & collective models**: `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_Collective_Selection.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
 
 ---
 
-## §0. Local One-formation elaboration
+## §0. Local One-Formation Architecture Within the Dynamic Spine
 
-Within the cross-owner trunk fixed by `Core_Law/SRT_Generative_Ontology_Spine.md`, the local formation segment is:
+Within the cross-owner trunk fixed by `Core_Law/SRT_Generative_Ontology_Spine.md`, `One` formation sits at the recursive nexus where generated differences organize into relatively separable, self-conditioning structures that participate in further generation:
 
 ```text
 subjectless Selection
--> event-level active verticalization
--> Selection-mediated vertical reconstitution
--> relatively separable formed process-unity
--> One
--> stronger downstream standing / bearing / subject relations where separately paid.
+  -> event-level active verticalization (manifestation + relative backgrounding)
+  -> Selection-mediated vertical reconstitution (re-entering later Selection conditions)
+  -> relatively separable vertical generative organization: One
+     ├─ Existence perspective: formation, maintenance, continuation
+     └─ Order perspective: development, directional bias, relation change & reconstruction
+        (also spanning multi-One relations & emergence of new higher-order organizations)
+  -> stronger downstream standings (Stable ISP / Bearer (P+E) / Agency / subjecthood)
+     ONLY where independently paid.
 ```
 
-For an already formed One, `Selection-position_t` names its time-local operative `from-where` in a particular Selection. It is an operative co-aspect of formed One, not an admission premise, additional primitive, or second universal endpoint.
-
-This local elaboration preserves the L0 rule that Selection does not require a pre-existing chooser. `One` is therefore not a hidden agent standing behind Selection and is not the cause required to start Selection.
+`One` is never a hidden pre-existing agent standing behind Selection; it is Selection acquiring a relatively separable, recursively self-conditioning vertical organization.
 
 ---
 
-## §1. Def-OF-1 — Active vertical organization
+## §1. Def-OF-1 — Active Vertical Organization and Vertical Suppression Interface
 
-**Active vertical organization** is the non-flat relation generated / regenerated through Selection in which a determinate relational direction becomes manifest or operative while that same Selection establishes relative backgrounding with respect to what is not manifest in that way.
+**Active vertical organization** is the non-flat relation generated and regenerated through Selection in which a determinate relational direction becomes manifest or operative while that same Selection establishes relative backgrounding with respect to what is not manifest in that way.
 
-The minimum semantic commitments are:
-
-```text
-verticality is Selection-generated / regenerated;
-manifestation and relative backgrounding are structurally linked readings of one Selection event;
-the relative background is not required to be a second manifest object, a rejected-option set, or a completed option menu;
-verticality is not defined as passive historical sediment;
-history may condition later vertical organization but is not its sole ontological source.
-```
-
-A one-shot Selection event may produce **event-level verticalization**. That alone does not establish a continuing One, durable history, or a formed locus.
-
-This owner does not introduce `A*` or any equivalent explanatory shorthand as a canonical symbol. The semantic burden is the Selection-relative manifest / background relation, not a new object pair.
-
-**Boundary**: neural lateral inhibition, attractor dynamics, path dependence, hysteresis, predictive processing, or other domain mechanisms may realize or approximate parts of this architecture; none is the universal definition of verticality here.
+Minimum commitments:
+- Verticality is Selection-generated/regenerated; manifestation and relative backgrounding are linked structural readings of one Selection event, not a pre-given option menu or passive historical sediment.
+- One-shot Selection yields **event-level verticalization**, which is insufficient by itself for `One`, durable history, or formed locality.
+- **Multi-unit vertical suppression interface (`PT09 / T3-02 D`)**: When multiple units couple into a vertical organization, stabilizing a higher-order direction selectively suppresses incompatible local alternatives. Where those suppressed opportunity losses materially affect ongoing generative relations and later selections, they generate **actual selection pressure (vertical friction)**—linking `One` formation directly to `_SRT_PSI_F_CANONICAL.md` without equating verticality itself to friction or suffering.
 
 ---
 
-## §2. Def-OF-2 — One at D4a strength
+## §2. Def-OF-2 — `One` at D4a Strength: Existence and Order Perspectives (`2A`)
 
-`One` is a **formed process-unity carried by a relatively separable Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially conditions later Selection, and renewed vertical organization can again carry the relevant conditioning role.
-
-This is an admission-level semantic description at current D4a strength, not a formal necessary-and-sufficient theorem. It is intentionally thinner than Stable ISP and intentionally stronger than one-shot verticalization, generic persistence, or ordinary causal recurrence.
-
-A minimum One-forming relation is:
+**`One`** is a **relatively independent vertical generative organization carried by a Selection-mediated vertical reconstitution path**: prior Selection-generated vertical organization materially enters and conditions later Selection, and later Selection generates renewed vertical organization capable of carrying that conditioning role again.
 
 ```text
-Selection-generated vertical organization_t
--> materially enters later Selection conditions
--> later Selection generates renewed vertical organization_(t+1)
--> renewed vertical organization_(t+1)
-   can again materially condition further Selection
--> repeated non-equivalent reconstitution dependence
-   supports relative continuation separability / formed locality
--> One formation.
+vertical organization_t
+  -> materially conditions later Selection_(t+1)
+  -> generates renewed vertical organization_(t+1)
+  -> carries renewed conditioning role
+  -> repeated non-equivalent reconstitution supports relative continuation separability
+  -> One.
 ```
 
-Compactly:
+### §2.1 Existence Perspective and Order Perspective (No Second Ontic Noun)
+
+Because `One` is inherently a dynamic generative organization, SRT examines it—and relations among multiple `One`s—through **two complementary analytical perspectives** rather than splitting existence and order into two substances or inventing a separate bearer noun:
+
+1. **存在视角（Existence Perspective）**：考察该相对独立组织如何通过垂直再构成**形成、维持与延续**，以及如何在扰动与成分更替中保持相对可分的延续路径。
+2. **秩序视角（Order Perspective）**：考察生成关系如何**发展、形成方向偏向、演化变化并发生生成重构**，覆盖三个维度：
+   - **维系约束（Maintenance constraint）**：稳定与延续所需的关系边界（稳定性是持续条件，但**不是**所有秩序成立的必要条件；僵化锁定亦属秩序，即不健康固化）；
+   - **方向偏向（Directional bias）**：先前选择与结构关系对后续可达方向的倾斜塑造；
+   - **生成重构（Generative reconstruction）**：在耦合、摩擦或盈余条件下打开新接口、新维度与新组织方式。
+   - **跨组织域（Multi-`One` Scope）**：秩序视角**不仅**描述单个 `One` 的内部发展，还直接考察**多个 `One` 之间的相互作用、公共脚手架与新高阶组织的形成**。
+
+### §2.2 Relative Separability, Physical Maintenance Regimes, and Four Boundary Types
+
+- **Relative continuation separability / formed locality** means the relevant reconstitution dependence is not freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path (`!= causal isolation`, `!= fixed spatial wall`, `!= independent substrate`, `!= autopoiesis` by definition).
+- **Three physical maintenance regimes (R3-04 spectrum, non-exhaustive)**:
+  1. *Bound equilibrium* (束缚平衡态，如原子/晶体束缚结构)；
+  2. *Dissipative dynamic maintenance* (耗散动态维持态，如稳态对流、化学振荡)；
+  3. *Endogenous mutual maintenance* (内生互维态，如代谢—膜—调控自维持网络)。
+  The exact structural threshold at which each regime crosses into `One` reconstitution remains `OPEN` (`R3-04-O1`).
+- **Four boundary types & three relation depths**: Boundaries may be spatial/physical, functional/interface, historical/lineage, or normative/institutional; relational participation varies from transient contact to persistent coupling to constitutive mutual dependence.
+
+### §2.3 Generative Normalization Dual Threshold and Anti-Circularity Guard (`One` vs Value)
+
+A key mechanism by which coupled units form a `One` that can act as a whole in wider generation is **normalization**:
+- **Three normalization types**: cognitive-representational normalization / actual physical-coupling normalization / organizational-generative normalization.
+- **Compression vs. Generative Normalization Dual Threshold**: Mere statistical summary or external observer grouping (**compression normalization**) does **not** establish a `One`. **Generative normalization** requires two independent conditions (`R3-CL-O2`):
+  1. *Internal coupling reconfiguration*: lower-level unit interactions are actually reorganized by the emergent whole;
+  2. *Cross-position conditioning efficacy*: the normalized whole acts as an effective action interface that alters subsequent generative conditions at other positions.
+- **Anti-circularity guard between Existence (`One`) and Value (`R3-CL-O3`)**: Because existence and value stand in recursive mutual generation (`Spine §2.2`), two independent tests must run in parallel to prevent circularity:
+  1. **Organizational continuity test (existence side)**: whether a relatively separable vertical reconstitution path persists;
+  2. **Opportunity / consequence change test (value side)**: whether treating/operating the unit as an integrated whole genuinely alters opportunity costs and downstream generative consequences.
+
+### §2.4 Continuity, Lineage, and Identity Under Change (`07-19` Y-Layer Interface)
+
+Formation does not presuppose a pre-given token or completed lineage:
 
 ```text
-vertical result
--> later Selection condition
--> renewed vertical organization
--> recurrent conditioning role
--> relatively separable formed process-unity.
+same token = NOT PRESUPPOSED;  same material composition = NOT REQUIRED;
+same spatial position = NOT REQUIRED;  strict numerical & branch/merge identity = OPEN.
 ```
 
-### Relative separability / formed locality
-
-`Relative continuation separability` does not require a completed object boundary before formation. At this strength it means that the relevant reconstitution dependence is not wholly or freely replaceable by arbitrary surrounding-field history while preserving the same claimed formation path.
-
-Therefore:
-
-```text
-relative separability != causal isolation;
-relative separability != fixed spatial boundary;
-relative separability != independent material substrate;
-relative separability != organizational closure;
-relative separability != autopoiesis;
-formed locality != a pre-given local object.
-```
-
-Locality is a generated formation property of a reconstitution path, not an upstream admission premise.
-
-### Formation boundary and onset
-
-```text
-event-level verticalization
-!= One automatically;
-
-generic causal recurrence
-!= One automatically;
-
-process persistence / self-maintenance / repeated similarity / ordinary path dependence
-!= One automatically.
-```
-
-At current D4a strength, One onset requires a genuine **Selection-mediated vertical reconstitution**: prior Selection-generated vertical organization is load-bearing in later Selection, and later Selection generates renewed vertical organization capable of carrying the conditioning role again.
-
-Stability after onset may be graded; this file adopts no scalar stability threshold.
-
-### Continuity / lineage / identity guard
-
-Formation does not begin by presupposing a completed same lineage. The admissible order is:
-
-```text
-Selection-mediated vertical reconstitution path
--> formed One
--> continuation / lineage descriptions may then be applied where warranted.
-```
-
-Therefore:
-
-```text
-same token = NOT PRESUPPOSED;
-same lineage = NOT PRESUPPOSED;
-same material composition = NOT REQUIRED;
-same spatial / finite position = NOT REQUIRED;
-strict numerical identity = OPEN;
-exact branch / merge identity = OPEN.
-```
-
-The minimum recurrence semantics do not require a unique successor to be identified in advance; exact successor and identity treatment under branching remains OPEN.
-
-`One` is therefore not a static snapshot, hidden identity token, observer-side grouping of similar states, or synonym for any process that happens to continue.
+Under continuous change (`R3` closeout & `07-19` Y-layer direction), **identity** is analyzed as the joint product of **actual generative continuity** (reconstitution path) and **positional comparison conditions** (how finite positions track, re-identify, and compare continuity across scale; exact branch/merge criteria remain `OPEN`, `R3-CL-O5`).
 
 ---
 
-## §3. Def-OF-3 — Selection-position
+## §3. Def-OF-3 — `Selection-position` and Cross-Scale Five-Mechanism Separation
 
-For an **already formed One**, `Selection-position_t` is the **time-local operative from-where** through which that formed organization participates in Selection at time `t`.
+### §3.1 `Selection-position`
 
-`One` and `Selection-position` therefore name distinct ontological aspects of the same formed process-unity:
-
-```text
-formed-continuation aspect:
-what formed process-unity is being reconstituted / continued?
--> One
-
-operative aspect at t:
-from where does this formed One participate in the current Selection?
--> Selection-position_t.
-```
-
-`Selection-position_t` is not a condition that must already exist before One formation and is not a second universal formed result after One.
-
-These are not observer-side perspectives on an otherwise neutral object. They are relational roles within the formed selective organization.
-
-### Position guard
-
-Position is necessary but not sufficient for stronger standing:
+For an **already formed `One`**, `Selection-position_t` is the **time-local operative `from-where`** through which that formed organization participates in Selection at time `t`:
 
 ```text
-Selection-position
-!= perspective-bearing subject-position automatically;
-Selection-position
-!= Bearer automatically;
-Selection-position
-!= first-person bearing automatically.
+formed-continuation aspect (what formed organization is reconstituted / continued?) -> One;
+operative aspect at t (from where does this One participate in current Selection?)   -> Selection-position_t.
 ```
 
-The existence of a formed operative `from-where` does not by itself establish phenomenality, consciousness, self-model, non-outsourcable stake, or mature cognition.
+`Selection-position_t` is neither a prerequisite before `One` formation nor a second universal endpoint, and does **not** automatically entail perspective-bearing subject-position, `Bearer (P+E)`, self-model, or phenomenality.
+
+### §3.2 Cross-Scale Five-Mechanism Separation (Do Not Collapse)
+
+Within vertical organization and multi-`One` order, five distinct mechanisms retain separate duties:
+1. **装配（Assembly）**：多单元组合产生新整体能力（未必归一化，未必成 `One`）；
+2. **归一化（Normalization）**：含表征/耦合/组织三分与压缩/生成双门槛；
+3. **有效作用接口（Effective Action Interface）**：整体相对独立参与他处生成的操作界面；
+4. **代理转承（`Proxy`）**：生成关系中的中介转承；
+5. **委托关系（`Delegation`）**：具主体与规范条件的委托关系。
 
 ---
 
-## §4. History / verticality / sedimentation typing
+## §4. History, Verticality, and Sedimentation Typing
 
-History and writeback can be load-bearing for vertical reconstitution without becoming the ontological source of Selection or verticality.
-
-Use the following typing:
+History and writeback can be load-bearing for vertical reconstitution without becoming the ontological source of Selection or verticality:
 
 ```text
-Selection
--> generates / regenerates vertical organization;
-
-retained history / writeback
--> can alter later Selection conditions and reconstitution;
-
-Selection-mediated vertical reconstitution
--> supports One formation / continuation;
-
-lineage language
--> may describe continuity after a formed reconstitution path is established;
-
-history storage location by itself
--> does not define One.
+Selection -> generates / regenerates vertical organization;
+retained history / writeback -> can alter later Selection conditions and reconstitution;
+Selection-mediated vertical reconstitution -> supports One formation / continuation;
+history storage location by itself -> does not define One.
 ```
 
-Where `Selection sedimentation` language is used, it refers to a later-effective consequence of prior vertical differentiation: prior Selection makes a real, load-bearing difference to later Selection conditions. It does **not** require storage of the manifest side or the relative-background side as separate objects.
-
-Historical effects may remain distributed in `多` / the wider relational field. The relevant question is not primarily `where is the history stored?`, but which historical differences are load-bearing for which vertical reconstitution path and scale.
-
-This section does not revive a history-localization criterion and does not define One as passive accumulation of prior traces.
+Historical effects may remain distributed across the wider relational field (`多`); the decisive question is which retained differences are load-bearing for which vertical reconstitution path and scale.
 
 ---
 
-## §5. Downstream separation guards
+## §5. Downstream Separation Guards (Non-Linear, Independently Paid)
 
-The following non-identities are canonical boundaries of this owner:
+Canonical non-identities of this owner:
 
 ```text
 One != Stable ISP;
-One != Bearer;
+One != Bearer (P+E);
+One != Agency;
 One != subject-position;
 One != consciousness;
 One != phenomenality;
@@ -247,101 +177,37 @@ One != experiencer;
 One != generatively healthy ISP.
 ```
 
-No automatic implication is licensed from One to any item above.
-
-### Stable ISP
-
-`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` owns the stronger standing criterion: iterative, perspective-bearing, history-bearing and continued-selectable persistence across a declared interval / perturbation range. P1-T06 must not be back-read as the definition of One formation.
-
-### Bearer
-
-The current canonical Bearer route remains:
-
-```text
-formed One / Selection-position
-+ P prospective self-indexing
-+ E same-One prospective exposure
--> Bearer.
-```
-
-This file neither weakens nor completes that route. Mere feedback, state change, consequence return, history-to-reconstitution, or One formation is not sufficient for Bearer. Positive independently applicable establishment of `E` remains OPEN under the Bearer owner / cross-owner routing.
-
-### Subject-position
-
-`Core_Law/SRT_Individuation.md` may model stronger subject-position transitions. Its `σ_{sr}` family and threshold coordinates are downstream model variables and do not define active vertical formation, One, or Selection-position.
-
-### Collective standing
-
-Relation-level organization may be tested for One-like **Selection-mediated vertical reconstitution / formed process-unity**, but `Core_Law/SRT_Collective_Selection.md T-COLL-1` remains a separate gate for collective Stable-ISP standing. Higher-order One language must not bypass that gate.
+1. **`Stable ISP` (`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`)**: Independently owns stronger recurrent standing—iterative historical reconstitution, perspective/history-bearing, and continued-selectability persistence across perturbations. `One` does not automatically entail `Stable ISP`; `Stable ISP` does not automatically entail `Bearer (P+E)` or subjecthood.
+2. **`Bearer (P+E)` (`Core_Law/SRT_Generative_Ontology_Spine.md §6.2`)**: Independently gated by `formed One / Selection-position + P + E -> Bearer.` Mere feedback, state change, consequence return, or `One` formation does not suffice for `Bearer (P+E)`; positive establishment of `E` remains `OPEN`.
+3. **Subject-position & Collective standing**: `Core_Law/SRT_Individuation.md` (`σ_{sr}` coordinates) is a downstream model and does not define `One`. Multi-`One` order may be tested for higher-order vertical reconstitution, while `Core_Law/SRT_Collective_Selection.md T-COLL-1` remains a separate gate for collective Stable-ISP standing.
+4. **B13 crosswalk**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` retains its formed / structurally stable / generatively healthy crosswalk (`B13 formed process != definition of One`; `One != structurally stable ISP != generatively healthy ISP`).
 
 ---
 
-## §6. B13 crosswalk
+## §6. Explicit OPEN Register
 
-`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` retains its formed / structurally stable / generatively healthy distinction as a stabilization and generative-health crosswalk.
-
-B13's `formed process` should be read as a broad downstream category whose One-specific semantics are owned here.
-
-Therefore:
+This owner leaves explicitly `OPEN`:
 
 ```text
-B13 formed process
-!= definition of One;
-
-One
-!= structurally stable ISP automatically;
-
-Stable ISP
-!= generatively healthy ISP automatically.
+D4b / D4c & formal N&S One theorem;
+physical three-regime thresholds for crossing into One reconstitution (R3-04-O1);
+non-circular criterion separating healthy generative reconstruction from pathological occlusion/lock-in (R3-04-O2);
+exact compression-to-generative normalization dual threshold criterion (R3-CL-O2);
+independent non-circular existence-continuity vs value-opportunity criteria (R3-CL-O3);
+exact One unit-identification, strict numerical identity & branch/merge identity (R3-CL-O5);
+scale attribution under tightly coupled nested Ones (local formation/unit half; cross-layer gate in Spine §9);
+positive E establishment & One/Stable ISP/Bearer -> Agency/Concern/Consciousness necessity directions (R3-04-O3, R3-04-O5);
+universal One-level perspective sufficiency, phenomenality, scientific distinctiveness & Level 2 / HOLD exit.
 ```
 
 ---
 
-## §7. Explicit OPEN register
+## §7. Citation Rule
 
-This file does **not** settle:
-
-```text
-D4b;
-D4c;
-formal necessary-and-sufficient One theorem;
-universal One-level perspective sufficiency;
-exact One unit-identification / boundary criterion;
-strict numerical identity;
-unique successor / identity attribution under branching or merging;
-formal / operational criterion for relative continuation separability;
-Bearer necessary/sufficient conditions;
-One -> Stable ISP implication;
-One -> subject-position implication;
-sigma ontology threshold;
-d bearer/domain;
-T_dir relation;
-collective subject sufficiency;
-scale attribution under tightly coupled nested Ones — local formation / unit question;
-phenomenality;
-scientific distinctiveness;
-new Level assignment;
-Level 2 / HOLD exit.
-```
-
-The scale-attribution line arrived from `STATUS.md §OPEN register` under `Operations/Audits/SRT_OPEN_REGISTER_OWNERSHIP_ADJUDICATION_2026-09-13.md`, unchanged and **not closed**. Only the local formation / unit half sits here: the cross-layer non-identity gate stays with the `Core_Law/SRT_Generative_Ontology_Spine.md` §13 OPEN register and higher-order realization with `Core_Law/SRT_Collective_Selection.md`.
-
-No OPEN item above is closed merely by replacing an admission presupposition with a weaker formation guard. Exact formal classifiers, identity, boundary, scale and stronger standing remain separately gated.
-
----
-
-## §8. Citation rule
-
-Use this file as the canonical semantic owner when the question is:
-
-- what active vertical formation means in the One-formation architecture;
-- why a Selection-relative manifest / background relation does not require a completed option menu;
-- why event-level verticalization is insufficient for One;
-- what Selection-mediated vertical reconstitution contributes beyond generic recurrence;
-- how relative continuation separability / formed locality enter One formation without a pre-given boundary;
-- what `One` means at the current D4a-strength landing;
-- what `Selection-position` means as the operative aspect of an already formed One before stronger subject / Bearer standing;
-- why lineage / strict identity are downstream / OPEN rather than admission premises;
-- why One is upstream of but not identical to Stable ISP, Bearer, or subject-position.
-
-Do not cite this file as proof of consciousness, phenomenality, agency, moral standing, collective subjecthood, a formal identity theorem, a universal One classifier, scientific distinctiveness, or a Level-2 result.
+Cite this file as the canonical L1 semantic owner for:
+- `One` as a relatively independent vertical generative organization (`Def-OF-2`);
+- the **Existence perspective** (formation, maintenance, continuation) and **Order perspective** (maintenance constraints, directional bias, generative reconstruction, multi-`One` relations & new higher-order organization);
+- active vertical organization (`Def-OF-1`) and multi-unit vertical suppression interface (`PT09`);
+- generative vs. compression normalization dual threshold and anti-circularity guard between existence and value;
+- `Selection-position` (`Def-OF-3`) and cross-scale five-mechanism separation;
+- why `One` is upstream of—and never automatically identical to—`Stable ISP`, `Bearer (P+E)`, `Agency`, or subjecthood.
