@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 71b2f2ed1
+source_commit: 3e77e7da9
 source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
 source_dirty: false
 inputs_digest: 77586fffca697e9c

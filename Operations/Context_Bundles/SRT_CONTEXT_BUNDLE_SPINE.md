@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 71b2f2ed1
+source_commit: 3e77e7da9
 source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
 source_dirty: false
 inputs_digest: 77586fffca697e9c
@@ -27,7 +27,7 @@ inputs_digest: 77586fffca697e9c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `71b2f2ed1` |
+| 来源 commit | `3e77e7da9` |
 | 来源分支 | `canon/r4-c4-neuroscience-generative-cognition-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
