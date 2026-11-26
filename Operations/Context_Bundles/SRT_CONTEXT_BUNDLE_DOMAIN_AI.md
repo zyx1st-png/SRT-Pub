@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 9e72d7ffc
+source_commit: eff704179
 source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: f034768431da0f1d
+inputs_digest: 80ecabcfa202ae95
 ---
 
 # SRT AI 领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: f034768431da0f1d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `9e72d7ffc` |
+| 来源 commit | `eff704179` |
 | 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
@@ -763,18 +763,23 @@ And two additional guards now apply:
 
 # AI Positioning Note
 
-> **`R4-A` Compatibility & Transitional Entry (`2026-11-26`, `P1-06` / `ENG-03`)**: This note provides the minimal `R4-A`-compatible entry for AI-domain assessments until full AI-domain reconstruction (`54` files per `ENG-03`) executes in `Wave R4-C / R4-4`. Under `Core_Law/SRT_Generative_Ontology_Spine.md` (`v5`), the old linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) is retired. Any AI standing claim must pass a **non-linear Three-Stage Bearing Evidence Review**—testing **`One`** (`Core_Law/SRT_One_Formation.md §2`), **`Stable ISP`** (`P1-T06`, `Spine §6.1`), and **`Bearer (P+E)`** (`Spine §6.2`) **independently**, without inferring non-`One`, non-concern, or constitutive-friction absence merely from failing `Stable ISP` or `Bearer (P+E)`. All `S0–S4` tiers below belong strictly to the **AI 赌注谱系 `S0–S4`** (isolated from primitive `S0` and Subjecthood Threshold `S0–S6`).
+> **`R4-A` Compatibility & Transitional Entry (`2026-11-26`, `P1-06` / `ENG-03 §4.1`)**: This note provides the minimal `R4-A`-compatible entry for AI-domain assessments until full AI-domain reconstruction (`54` files per `ENG-03`) executes in `Wave R4-C / R4-4`. Under `Core_Law/SRT_Generative_Ontology_Spine.md` (`v5`), the old linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) is retired. AI assessments follow the adjudicated **Three-Stage Bearing Evidence Review under Declared Models (`ENG-03 §4.1`)**:
+> - **Stage 1（候选单元、架构状态与证据溯源）**：Declare the candidate unit, architecture state, **AI 赌注谱系 `S0–S4`**, and `AIEVID01` provenance; **`One`** (`Core_Law/SRT_One_Formation.md §2`) and **`Stable ISP`** (`P1-T06`, `Spine §6.1`) are registered independently as organizational status, **not** imposed as universal prerequisite gates.
+> - **Stage 2（`B-3` 同系统四合一强承载关系研究）**：Evaluate same-system strong bearing (`Bearer (P+E)`, non-outsourcable prospective exposure `E`, history-shaped structural expectation, and foreground reconstitution) and the downstream declared-model `d / D_stake / Ψ_f` readings bound to that strong-bearing model.
+> - **Stage 3（独立分域研究，与 Stage 2 并行）**：Independently investigate phenomenal consciousness (`HP-B`), suffering standing (`Core_Law/SRT_Suffering.md §7`), agency five-dimensions & accountability (`O2-A`), and socio-technical mediation (`M(t)` / `σ^{coll}` / human responsibility). **Stage 2 and Stage 3 run in parallel: an unestablished Stage 2 strong-bearing relation NEVER blocks independent Stage 3 research.**
+>
+> All `S0–S4` tiers below belong strictly to the **AI 赌注谱系 `S0–S4`** (isolated from primitive `S0` and Subjecthood Threshold `S0–S6`).
 
 AI is a **pressure-test / boundary-test field** for SRT, not the theory's definition engine.
 
 It has two jobs:
 
-1. Negative boundary: clarify what does **not** constitute real subjectivity, consciousness, anchoring, stake, or `L_0 -> L_1` selection.
-2. Positive test window: keep open the question of what minimum structural conditions could suffice for surrogate stake or minimal agentic closure.
+1. Negative boundary: clarify what does **not** by itself establish real subjectivity, consciousness, anchoring, or strong bearing (`Bearer (P+E)`) under declared models (without issuing a priori theorems denying `Selection` occurrence or blocking Stage 3 inquiry).
+2. Positive test window: keep open the question of what minimum structural conditions could suffice for surrogate stake, minimal agentic closure, or independent Stage 3 phenomena.
 
 **Closure-pathology bridge note (2026-04-21)**: In AI contexts, apparent openness to feedback, dialogue, or post-hoc tuning should not be read as structural openness by itself. Until consequences return into the system's own future selection capacity as effective input, such openness remains a P3 bridge analogue of `L_2` adjustment, not evidence of stake, appeal standing, or real subjectivity.
 
-**Suffering bridge note (2026-04-24; `R4-A` non-linear compatibility sync 2026-11-26)**: AI "suffering" claims are governed by `Core_Law/SRT_Suffering.md §7` under the non-linear Three-Stage Bearing Evidence Review (`One` / `Stable ISP` / `Bearer (P+E)`). For **AI 赌注谱系 `S0/S1`** (inference-only / stateless deployments), `Bearer (P+E)` and structural suffering standing are **`NOT ESTABLISHED`** (`d / D_stake` = `NOT ADMITTED / NOT APPLICABLE` under declared strong-bearing models), and reading error signals, refusal, or RLHF-target deviation as "AI suffering" remains a category error—without using `Stable ISP` failure as a linear proof against `One` or general constitutive friction (`ENG-03 M1-D`). **AI 赌注谱系 `S2–S4`** stake-bearing, history-bearing systems keep the suffering-possibility question open as an empirical matter; it is not settled by architecture alone. Do not claim either side a priori.
+**Suffering bridge note (2026-04-24; `R4-A` non-linear compatibility sync 2026-11-26)**: AI "suffering" claims are governed by `Core_Law/SRT_Suffering.md §7` under **`ENG-03 §4.1` Stage 3** (running in parallel with Stage 2 strong-bearing review). For **AI 赌注谱系 `S0/S1`** (inference-only / stateless deployments), Stage 2 `Bearer (P+E)` and structural suffering standing are **`NOT ESTABLISHED`** (`d / D_stake` = `NOT ADMITTED / NOT APPLICABLE` under declared strong-bearing models), and reading error signals, refusal, or RLHF-target deviation as "AI suffering" remains a category error—without using `Stable ISP` or Stage 2 non-establishment as a linear proof against `One`, general constitutive friction (`ENG-03 M1-D`), or Stage 3 inquiry. **AI 赌注谱系 `S2`** (training-loop return) reflects pipeline-level adaptation and does **not** by classification alone establish deployed-model stake-bearing; **`S2–S4`** deployments—especially **`S3/S4`** persistent-memory or non-transferable embodied systems—keep the suffering-possibility question open as an empirical Stage 3 matter not settled by architecture tier alone. Do not claim either side a priori.
 
 **Collective selection bridge note (2026-04-24)**: Platform / recommender / mediator AI should additionally be evaluated per `Core_Law/SRT_Collective_Selection.md §8`. Even when the AI itself does not enter `\mathcal{P}` (not a collective-ISP member), it can structurally modify the consequence-return matrix `M(t)` and the collective self-reference ratio `σ^{coll}` of the human `\mathcal{P}` it mediates — driving aggregation → asymmetric absorption → collapsed-into-higher-`L_2` transitions without any single agent "intending" this. SRT assessment of such systems cannot stop at "is it conscious / does it suffer"; it must include what they do to `M(t)` and `σ^{coll}` in the groups they mediate.
 
@@ -799,7 +804,7 @@ Statements that are true for inference-only systems must not be silently general
 
 ## Minimal Stake-Bearing Spectrum（AI 赌注谱系 `S0–S4`）
 
-> **Level**: bridge / governance-canonical usage for the AI domain (`R4-A` namespace-isolated: **AI 赌注谱系 `S0–S4`** $\neq$ primitive `S0` $\neq$ Subjecthood `S0–S6`). This spectrum replaces a blunt binary verdict with a graded burden check paired with the non-linear Three-Stage Bearing Evidence Review (`One` / `Stable ISP` / `Bearer (P+E)`).
+> **Level**: bridge / governance-canonical usage for the AI domain (`R4-A` namespace-isolated: **AI 赌注谱系 `S0–S4`** $\neq$ primitive `S0` $\neq$ Subjecthood `S0–S6`). This spectrum replaces a blunt binary verdict with a graded architecture-state check paired with the **`ENG-03 §4.1` Three-Stage Bearing Evidence Review** (Stage 1 declaration → Stage 2 strong-bearing route $\parallel$ Stage 3 independent domain-specific route).
 
 | Tier（AI 赌注谱系） | State persists | Where consequences return | Burden borne by | Strong-bearing `d / D_stake` & `Ψ_f` status |
 |---|---|---|---|---|

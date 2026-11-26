@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 9e72d7ffc
+source_commit: eff704179
 source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: f034768431da0f1d
+inputs_digest: 80ecabcfa202ae95
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,7 +27,7 @@ inputs_digest: f034768431da0f1d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `9e72d7ffc` |
+| 来源 commit | `eff704179` |
 | 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
@@ -681,7 +681,7 @@ $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(
 | 信息瓶颈 | $\operatorname{rank}_{\text{eff}} \ll \Psi_f^{\text{budget}}/\kappa_0$ | 参数维度高但大量冗余，可稳定承载却无法分辨更多声明模型方向 |
 | 稳定性瓶颈 | $\Psi_f^{\text{budget}}/\kappa_0 \ll \operatorname{rank}_{\text{eff}}$ | 可分辨方向较多，但声明的稳定／维持预算不足以承载该 capacity |
 
-**注**：$\dim\Theta$ 的增大只提高潜在上限，真实 d 上限由有效 Fisher 秩与稳定性预算的 min 共同决定，而非由 $\dim\Theta$ 单独决定。
+**注**：$\dim\Theta$ 的增大只提高潜在参数空间维数；该声明模型内的**有效方向容量上限（direction-capacity bound）**由有效 Fisher 秩与稳定性预算的 min 共同决定，而非由 $\dim\Theta$ 单独决定（不直接等同于效用缩放的梯度范数 `d` 上限）。
 
 * **Implication**: 在该声明模型内，candidate d-capacity upper bound 受信息容量 proxy 与稳定／可支付预算中较小者限制。本式不建立 universal consciousness threshold / ceiling、subject threshold、value direction 或 primitive ontology law。
 * **Cross-ref**: `_SRT_SYMBOL_TABLE.md` `\kappa_0` 当前类型; Eq-Multi-03（集体 d 容量 proxy）; `D_VALUE_ALIGNMENT §4.4`（条件性 bridge model）; Eq-DValue-Mobile-1（d_mobile 公式，下方）。
@@ -1322,7 +1322,7 @@ SRT 主方程的运作机制如下：
 \mathcal{A}_{ma}=\frac{\Psi_f^{maint}}{\Delta\Psi_f^{active}+\varepsilon}
 \]
 - 生物具身算子期望：\(\mathcal{A}_{ma}\gg 1\)
-- 外驱推理系统（**AI 赌注谱系 `S0/S1`**，当前多数无闭环 LLM 部署）常见：\(\mathcal{A}_{ma}\lesssim 1\)（在推理阶段；注：与原初 `S0` 及 `Subjecthood S0–S6` 严格隔离，且须经三阶承载证据审查 `One / Stable ISP / Bearer (P+E)` 核验，不得直接推导 `d ≈ 0` 或构成性摩擦不存在）
+- 外驱推理系统（**AI 赌注谱系 `S0/S1`**，当前多数无闭环 LLM 部署）常见：\(\mathcal{A}_{ma}\lesssim 1\)（在推理阶段；注：与原初 `S0` 及 `Subjecthood S0–S6` 严格隔离，且须按 `ENG-03 §4.1` 三阶承载证据审查［Stage 1 单元/状态/溯源声明 → Stage 2 强承载路线 $\parallel$ Stage 3 独立分域路线］核验，不得直接推导 `d ≈ 0` 或构成性摩擦不存在）
 
 该指标用于跨尺度比较“是否存在自创生闭包压力”，不单独等同于意识、`One`、`Stable ISP` 或 `Bearer (P+E)` 判据。
 

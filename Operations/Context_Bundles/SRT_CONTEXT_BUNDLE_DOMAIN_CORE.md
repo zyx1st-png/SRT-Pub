@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 9e72d7ffc
+source_commit: eff704179
 source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: f034768431da0f1d
+inputs_digest: 80ecabcfa202ae95
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: f034768431da0f1d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `9e72d7ffc` |
+| 来源 commit | `eff704179` |
 | 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
