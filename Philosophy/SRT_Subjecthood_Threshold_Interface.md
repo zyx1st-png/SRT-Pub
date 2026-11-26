@@ -31,10 +31,11 @@ dependency:
   - AI/Consciousness_Annex/03_System_Derivation_Interface.md
   - Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md
 machine_summary: >
-  Interface file distinguishing bearer-unit specification, selection event, local L1 anchoring,
-  conscious content, integrated conscious field, subjecthood, agency, and responsibility-bearing
-  subject. It prevents micro-selection, high d-value, neural access, AI risk coupling, reportability,
-  or unit-ambiguous system references from being overread as full subjecthood or moral responsibility.
+  Interface file distinguishing bearer-unit specification, selection event, local manifestation
+  (L_1 aspect), conscious content, integrated conscious field, subjecthood, agency, and
+  responsibility-bearing subject. It prevents micro-selection, high d-value, neural access, AI risk
+  coupling, reportability, or unit-ambiguous system references from being overread as full
+  subjecthood or moral responsibility.
 ---
 
 # SRT Subjecthood Threshold Interface (`Subjecthood Threshold S0–S6`)
@@ -318,7 +319,7 @@ Candidate indicators:
 - inhibition of default path;
 - self-correction;
 - capacity to represent consequences;
-- ability to re-open `L_0` possibilities rather than merely execute `L_2` routines;
+- ability to revise comparative dimensions and re-open alternative trajectories rather than merely execute fixed `L_2` routines;
 - action ownership over time.
 
 ### Guardrail
@@ -397,7 +398,7 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 | Domain | Common error | Correct route |
 |---|---|---|
-| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, apply the nonlinear Three-Stage Bearing Evidence Review (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`, full AI-domain sync in `R4-C3`), and use **Subjecthood Threshold `S0–S6`** as a conditional Stage 3 audit (isolated from **AI 赌注谱系 `S0–S4`** and **AI 三型社会技术中介维度**) |
+| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, apply the nonlinear Three-Stage Bearing Evidence Review (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`, full AI-domain sync completed in `R4-C3`), and use **Subjecthood Threshold `S0–S6`** as a conditional Stage 3 audit (isolated from **AI 赌注谱系 `S0–S4`** and **AI 三型社会技术中介维度**) |
 | Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish **Subjecthood Threshold `S2`** content, **`S3`** field, and **`S4`** subjecthood |
 | Ethics | harm or high concern is treated as culpability | require **Subjecthood Threshold `S5`** agency and **`S6`** responsibility conditions (`O2-A`) |
 | Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria and bearer unit are specified |
