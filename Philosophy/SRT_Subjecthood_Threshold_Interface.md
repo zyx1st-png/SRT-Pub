@@ -43,8 +43,8 @@ machine_summary: >
 > **Status**: Conditional cross-domain analytical audit interface (`R4-C1` & `ENG-03` synced). It does **not** define canonical consciousness or agency primitives, and **Subjecthood Threshold `S0 → S6` is NOT a linear hardware or evolutionary ladder** (`One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Agency`; each tier requires independent evidence).  
 > **Mandatory `S` Namespace Isolation (`R3-07 / ENG-03 / _SRT_SYMBOL_TABLE.md Rule 19`)**: Never use unqualified bare `S0–S6` across domains. Strictly separate:
 > 1. **Primitive `S0`** (`Core_Law/SRT_Generative_Ontology_Spine.md`): primitive actualizing Selection;
-> 2. **AI 赌注谱系 `S0–S4`** (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`): AI architecture-state & stake-return spectrum (Stage 1 input; **`AI 赌注谱系 S4` ≠ `Subjecthood Threshold S4`**);
-> 3. **Subjecthood Threshold `S0–S6`** (**this file**): conditional unit-binding, consciousness, subjecthood, agency, and responsibility audit interface (Three-Stage Bearing Evidence Review Stage 3 sub-routing per `ENG-03`, with `AI/AI_POSITIONING_NOTE.md` section alignment landing in `R4-C3`);
+> 2. **AI 赌注谱系 `S0–S4`** (`AI/AI_POSITIONING_NOTE.md §5.2`): AI architecture-state & stake-return spectrum (Stage 1 input; **`AI 赌注谱系 S4` ≠ `Subjecthood Threshold S4`**);
+> 3. **Subjecthood Threshold `S0–S6`** (**this file**): conditional unit-binding, consciousness, subjecthood, agency, and responsibility audit interface (Three-Stage Bearing Evidence Review Stage 3.3 sub-routing, synced with `AI/AI_POSITIONING_NOTE.md §2–§3` and `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`);
 > 4. **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`): orthogonal socio-technical mediation roles (Scaffold / Cage / Landscape).
 > **Use rule**: Use this file whenever SRT discusses AI consciousness, neural consciousness, animal/infant/minimal subjecthood, agency, or responsibility.
 

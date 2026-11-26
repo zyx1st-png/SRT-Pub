@@ -28,6 +28,8 @@ tags: [reason-trace-separation, chain-of-thought, causal-faithfulness, mechanism
 
 # AIREASON01 — Reason–Trace Separation
 
+> **`R4-C3 / ENG-03` 兼容注记（2026-11-26）**：本补丁保留原历史实证与来源记录不动；文中早于 `R4-C3` 的 `L_1 -> L_1` vs `L_0 -> L_1 anchoring` 与 `Real Choice Moment` 前提现已退出，核心结论——**可见推理轨迹的语义可读性（`F_sem`）、因果贡献（`F_causal`）、机制对应（`F_mech`）与规范有效性（`F_norm`）四轴独立，推理轨迹不等于 Stage 2 承载性判断，不忠实轨迹亦不等于无实质计算**——完整保留并已吸纳至 `AI/SRT_AI_Architecture_CompactCore.md`、`AI/SRT_AI_Claim_Status.md` 与 `Bridge/SRT_Context_Coherence_Intelligence_Interface.md`。
+
 ## 1. Source anchor
 
 Primary SourceCard:

@@ -178,19 +178,19 @@ Important retrieval note: "not final definition authority" is not the same as "l
 
 ### AI
 
-- `AI/README.md`（directory entry; separates positioning, bridge, compact summaries, operational rubrics, split reading aids, and annex/interface material）
-- `AI/SRT_AI_Claim_Status.md`（claim-status audit for AI-domain claims; prevents `d_AI`, AI suffering, subjecthood, and architecture-state claims from being over-read）
-- `AI/AI_POSITIONING_NOTE.md`
-- `AI/_SRT_AI_Bridge.md`
+- `AI/README.md`（directory entry; `R4-C3 / ENG-03` reconstructed AI navigation separating positioning, claim-status, compact cores, operational rubrics, reconstructed longforms, downgraded essays, deterministic splits, and external annexes）
+- `AI/SRT_AI_Claim_Status.md`（claim-status audit for AI-domain claims; enforces nonlinear Three-Stage Bearing Evidence Review, three-state isolation, `AIRESEL01` empirical pilot provenance, and mature neighbor ownership）
+- `AI/AI_POSITIONING_NOTE.md`（sole AI positioning & guardrail entry: 7 positive artificial/co-generation axes, Three-Stage Bearing Evidence Review, full-name `AI / S` isolation, and AI 赌注谱系 `S0–S4`）
+- `AI/_SRT_AI_Bridge.md`（downgraded secondary historical/comparative bridge; not a definition base）
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
+- `AI/SRT_AI_Architecture_CompactCore.md`
 - `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
-- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（operational rubric; not a canonical consciousness definition source）
-- `AI/SRT_AI_Agency_Responsibility_Note.md`（operational agency / responsibility note）
-- `AI/Ontology_Annex/README.md`（historical AI ontology interface batches; claim status governed by AI claim-status + positioning note）
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（operational rubric; Stage 1 unit-binding + parallel Stage 2 / Subjecthood Threshold `S0–S6`）
+- `AI/SRT_AI_Agency_Responsibility_Note.md`（operational agency, human-AI co-generation & **AI 三型** socio-technical responsibility handbook）
+- `AI/Ontology_Annex/README.md`（historical migration & provenance index for retired duplicate copies; provenance preserved at `main@f53581592`）
 - `AI/Architecture_Annex/README.md`（AI architecture interface/comparison annex; claim_mode: translation; canonical: false）
 - `AI/Consciousness_Annex/README.md`（AI consciousness interface/comparison annex; claim_mode: translation; canonical: false）
-- `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（longform split reading aids; not independent authority layers）
-- `AI/Ontology_Annex/General_Boundary_Block_Split/README.md`（annex longform split reading aid; not an independent authority layer）
+- `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（deterministically rebuilt longform split reading aids; not independent authority layers）
 
 ### Neuroscience
 

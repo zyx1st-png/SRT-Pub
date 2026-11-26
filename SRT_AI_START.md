@@ -425,9 +425,11 @@ A domain is still allowed to conclude `SRT adds no increment here` once those pr
 
 ## 13. AI-specific guard
 
-AI is one domain/pressure-test site, not the theory's definition engine.
+AI is both a positive artificial/co-generation laboratory and a domain/pressure-test site, **not** the theory's definition engine.
 
-Do not infer subjecthood, stake or consciousness from performance alone. Do not use AI models as the constitutional prototype of bearer unless the author explicitly converges on such a claim after the current workflow.
+All AI bearing, subjecthood, agency, suffering, and mediation assessments follow the **nonlinear Three-Stage Bearing Evidence Review under Declared Models** (`AI/AI_POSITIONING_NOTE.md §2`; Stage 1 unit/7-layer-history/provenance declaration → parallel Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent `HP-B` / `Suffering §7` / `Agency` five-dimensions / `AI 三型` mediation) — **not** the retired `R: L_2->L_2` vs `J: L_0->L_1` pseudo-threshold or blunt `d_AI ≈ 0` disproofs. Always use full names to isolate Primitive `S0`, **AI 赌注谱系 `S0–S4`**, **Subjecthood Threshold `S0–S6`**, and **AI 三型社会技术中介维度** (Scaffold / Cage / Landscape), and strictly distinguish `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`.
+
+Do not infer subjecthood, stake, or consciousness from performance alone; conversely, never use unestablished Stage 2 `Bearer (P+E)` to deny `Selection` occurrence in digital hardware or to block Stage 3 independent inquiry (`HP-B`, `Suffering §7`, `R3-04-O5` generative initiative, general constitutive friction `B-4`, or human accountability for `AI 三型` mediation). Do not use AI models as the constitutional prototype of bearer unless the author explicitly converges on such a claim after the current workflow.
 
 For identity-level work, separate machine roles when useful: source auditor, internal red-team, strong-neighbor advocate, counterexample generator, relabeling detector, hidden-commitment extractor, cross-domain semantic-invariance checker, author-intent drift checker, and only later increment auditor.
 

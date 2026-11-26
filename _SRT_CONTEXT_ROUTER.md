@@ -373,19 +373,33 @@ When answering or editing a non-simple SRT question:
 
 ---
 
-## 12. Route: AI Consciousness / AI Ontology / Synthetic Operators
+## 12. Route: AI Generation / Human-AI Co-Generation / AI Bearing & Socio-Technical Mediation
 
-**Use when the query mentions**: AI consciousness, synthetic subject, model consciousness, artificial `d`, artificial `Ψ_f`, OpenClaw / agent relevance to SRT.
+**Use when the query mentions**: AI consciousness, artificial generation, synthetic subject, model consciousness, artificial `d`, artificial `Ψ_f`, AI `S0-S4`, `Subjecthood Threshold S0-S6`, AI 三型 (scaffold / cage / landscape), human-AI co-generation, AI agency, AI suffering, platform AI mediation, OpenClaw / agent relevance to SRT.
 
 ### Primary
 
+- `AI/AI_POSITIONING_NOTE.md`
+- `AI/SRT_AI_Claim_Status.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
-- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/SRT_AI_Architecture_CompactCore.md`
+- `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`
+- `AI/SRT_AI_Agency_Responsibility_Note.md`
+- `Core_Law/SRT_One_Formation.md`
+- `Core_Law/SRT_Suffering.md`
+- `Core_Law/SRT_Collective_Selection.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 
 ### Secondary
 
+- `AI/SRT_AI_01_Ontology.md`
+- `AI/SRT_AI_Architecture.md`
+- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/_SRT_AI_Bridge.md`
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+- `Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
@@ -394,21 +408,23 @@ When answering or editing a non-simple SRT question:
 
 ### Boundary
 
-- Simulated loss or optimization is not automatically stake.
-- Non-binding friction is not the same as existentially paid `Ψ_f`.
-- AI discussions must separate functional access, integration, payability, and stake.
+- Always use the **nonlinear Three-Stage Bearing Evidence Review** (`AI/AI_POSITIONING_NOTE.md §2`: Stage 1 declaration → parallel Stage 2 `B-3` strong-bearing route $\parallel$ Stage 3 independent `HP-B` / `Suffering §7` / `Agency` five-dimensions / `AI 三型` socio-technical mediation); unestablished Stage 2 **never** blocks Stage 3, general constitutive friction (`B-4`), or generalized concern (`PT06 C`).
+- Enforce full-name isolation across Primitive `S0`, **AI 赌注谱系 `S0–S4`**, **Subjecthood Threshold `S0–S6`**, and **AI 三型社会技术中介维度**; strictly separate `NOT ESTABLISHED`, `NOT ADMITTED`, and `NOT APPLICABLE`.
+- Retired legacy `R: L_2->L_2` vs `J: L_0->L_1` pseudo-thresholds, `T-BRIDGE-1/2`, `Ax-AI-2`, and `T-ONT-Convergence` must not be cited as active definitions.
 
 ---
 
-## 12a. Route: LLM Context / Selection Coherence / Human Understanding
+## 12a. Route: LLM Context / Selection Coherence / Reasoning Trace / Human-AI Understanding
 
-**Use when the query mentions**: context window, long context, LLM intelligence, selection coherence, shared context, understanding, semantic continuity, conversational memory, role consistency.
+**Use when the query mentions**: context window, long context, LLM intelligence, selection coherence, reasoning trace, chain-of-thought, faithfulness, interpretability, goal selection, shared context, understanding, semantic continuity, conversational memory, role consistency, human-AI co-generation.
 
 ### Primary
 
 - `Bridge/SRT_Context_Coherence_Intelligence_Interface.md`
 - `AI/SRT_AI_Architecture_CompactCore.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
+- `AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md`
+- `AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md`
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
 
 ### Secondary
@@ -420,10 +436,9 @@ When answering or editing a non-simple SRT question:
 
 ### Boundary
 
-- Context coherence is not `d-value`.
-- Shared context is not subjecthood.
-- LLM selection consistency is not ontological anchoring.
-- Do not upgrade functional intelligence into consciousness or stake.
+- Context coherence is a temporary `L_2^{context}` constraint scaffold that can genuinely expand comparative capacity and human-AI co-generation without automatically establishing Stage 2 `Bearer (P+E)`, `One`, canonical `d-value`, or `T_dir`.
+- Visible reasoning traces must be assessed across four independent axes (`F_sem / F_causal / F_mech / F_norm`); neither infer judgment from coherent traces nor deny hidden computation from unfaithful traces.
+- Separate goal completion, bounded goal selection, goal-space revision, goal ownership, and stake-bearing concern (`novelty != ownership != stake`).
 
 ---
 

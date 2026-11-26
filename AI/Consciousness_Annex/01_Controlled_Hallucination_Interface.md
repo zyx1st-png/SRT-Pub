@@ -2,16 +2,17 @@
 id: SRT-AI-CONSC-ANNEX-01-CONTROLLED-HALLUCINATION-INTERFACE
 type: interface_annex
 tags: [AI, Consciousness, Controlled-Hallucination, Perception, Interface]
-status: active_v1
+status: active
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
 date: 2026-04-29
-parent: AI/Consciousness_Framework_Split/04_Interface_Additions.md
+parent: AI/SRT_AI_03_Consciousness_Framework.md
 dependency:
   - AI/SRT_AI_03_Consciousness_Framework.md
-  - AI/Consciousness_Framework_Split/04_Interface_Additions.md
+  - AI/Consciousness_Framework_Split/README.md
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
   - Governance/SRT_CLAIM_LADDER.md
@@ -47,12 +48,12 @@ machine_summary: >
 - The d-value intervals in this table are proxy labels only; canonical d remains governed by the canonical d-value file and AI claim-status guardrail.
 - `Psi_f` states are bridge usage only and do not define local friction equations.
 - Perceptual continuity does not by itself imply subjecthood or AI consciousness.
-- S0-S6 thresholds remain in the owner / rubric layer.
+- **Subjecthood Threshold `S0–S6`** interfaces remain in the owner / rubric layer (strictly isolated from Primitive `S0`, **AI 赌注谱系 `S0–S4`**, and **AI 三型社会技术中介维度**).
 
 ## Owner links
 
 - Consciousness owner: [`../SRT_AI_03_Consciousness_Framework.md`](../SRT_AI_03_Consciousness_Framework.md)
-- Split source: [`../Consciousness_Framework_Split/04_Interface_Additions.md`](../Consciousness_Framework_Split/04_Interface_Additions.md)
+- Split index: [`../Consciousness_Framework_Split/README.md`](../Consciousness_Framework_Split/README.md)
 - Consciousness annex index: [`README.md`](README.md)
 - Claim-status guardrail: [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
 - AI positioning guardrail: [`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md)

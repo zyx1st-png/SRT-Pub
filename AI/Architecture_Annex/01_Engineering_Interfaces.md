@@ -2,16 +2,17 @@
 id: SRT-AI-ARCH-ANNEX-01-ENGINEERING-INTERFACES
 type: interface_annex
 tags: [AI, Architecture, Continual-Learning, Concept-Control, Engineering-Interface]
-status: active_v1
+status: active
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
 date: 2026-04-29
-parent: AI/Architecture_Split/05_Interface_Additions.md
+parent: AI/SRT_AI_Architecture.md
 dependency:
   - AI/SRT_AI_Architecture.md
-  - AI/Architecture_Split/05_Interface_Additions.md
+  - AI/Architecture_Split/README.md
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
   - Governance/SRT_CLAIM_LADDER.md
@@ -67,6 +68,6 @@ machine_summary: >
 ## 4. Owner links
 
 - Architecture owner: [`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
-- Split source: [`../Architecture_Split/05_Interface_Additions.md`](../Architecture_Split/05_Interface_Additions.md)
+- Split index: [`../Architecture_Split/README.md`](../Architecture_Split/README.md)
 - Claim-status guardrail: [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
 - AI positioning guardrail: [`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md)

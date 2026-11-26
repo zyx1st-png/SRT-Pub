@@ -1,297 +1,126 @@
 ---
 id: SRT-AI-01-COMPACT-CORE
 type: summary
-tags: [AI Ontology, Compact Core, Consciousness Threshold, Bridge Support, Boundary Test]
-status: active_v1
+tags: [AI, ArtificialGeneration, HistoryContinuity, BearingReview, ReverseFeedback, CompactCore]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
 claim_level: P3
 canonical: false
-updated: 2026-08-08
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-AI-01, SRT-CHOICE-GENERATION-CONDITIONS-20260804]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-AI-01, SRT-IRREVERSIBILITY, SRT-CHOICE-GENERATION-CONDITIONS-20260804]
 ---
 
 # SRT AI Ontology — Compact Core
 
-> **定位**：本文件是 `AI/SRT_AI_01_Ontology.md` 的紧凑主干版。 
-> **用途**：用于快速把握 SRT 关于“智能 ≠ 意识”的核心论证骨架。 
-> **关系**：不替代原文；原文保留全量推导、长篇现象学论证、接口批次与 annex 沉积。
-> **板块角色**：AI 是 SRT 的压力测试场 / 边界测试场，不是 core 定义发动机；正反两面定位见 `AI/AI_POSITIONING_NOTE.md`。
-> **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
-> **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
-> **Architecture-state note**：本文涉及 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 的判断，默认必须区分 training-time、inference-time、persistent-memory / history-bearing deployment；详见 `AI/AI_POSITIONING_NOTE.md`。
-> **2026-08-08 bridge hygiene; RC-A sync 2026-08-18**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。former `Real Choice Moment` 已撤出 P1；CG-0~CG-4 仅用于 P2/P3 bounded Selection-event candidate audit，不是 Selection 定义或 agency 证明。更强 agency / revision standing 另走 Agency / Automation Guard。
-
-## 1. 核心问题
-
-SRT 对 AI 的核心问题不是“它是否足够聪明”，而是：
-
-> **现有证据是否建立了更强 anchoring、stake-bearing、subjecthood 或 phenomenality standing？**
-
-这些更强 standing 不能仅由语言、规划、推理或模仿能力推出；同时，`L_0 -> L_1` 记号只能是声明 realization 中的模型映射，不是 Selection occurrence 或意识的定义。
+> **定位**：本文件是 [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) 的紧凑主干版（`P3` bridge，`canonical: false`）。核心任务不是发布“硅基无意识定理”，而是围绕**人工生成与自然生成的关系**、**七层历史/连续性与组织边界**、**声明模型下的非线性三阶承载审查（Stage 1–2 本体阐述）**，以及**AI 对 SRT 核心概念（主体、关切、摩擦、能动性与意识）的反向深化**建立正面理论主干。所有核心原语定义仍归 `CANONICAL_REGISTRY.md §C` 及对应 canonical owner。
 
 ---
 
-## 2. AI-Domain 判据
+## 1. 核心问题转向：从“有无 `L_0→L_1` 接入”转向“人工如何生成、如何承载、如何反向照亮核心概念”
 
-### 2.1 跨域锚定判据（不是 Selection occurrence 定义）
+在 [`Core_Law/SRT_Generative_Ontology_Spine.md`](../Core_Law/SRT_Generative_Ontology_Spine.md)（`v5`）与 [`2026-09-27` 可逆现实化裁决](../01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_REVERSIBLE_ACTUALITY_SELECTION_2026-09-27.md) 确立后，SRT AI 本体论正式退出旧的“是否存在 `L_0→L_1` 本体门槛 / 数字系统是否缺乏 `Selection`”范式，转向三项更实质的问题：
 
-若讨论更强的 `L_0 -> L_1` 本体论锚定候选，可写：
-\[
-\hat{G}_\theta: L_0 \rightarrow L_1
-\]
-
-这意味着该**更强 anchoring claim**不能由纯 `L_1 \to L_1` 句法变换替代；但 RC-A 不允许把这一点反写为 Selection occurrence 的必要条件。
-
-若系统只做域内变换：
-\[
-\hat{T}_\phi: L_1 \rightarrow L_1
-\]
-则它尚未由此证明意识意义上的锚定、subject-level agency 或其他更强 downstream standing；这也不能反向证明“没有 Selection”。
-
-### 2.2 d-value 判据
-
-AI 语境中，d-value 的 governance-canonical bridge reading 优先回到：
-\[
-d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
-\]
-
-其中：
-- \(\mathcal{S}\)：不可逆风险 / 生存赌注坐标
-- \(\mathcal{U}\)：系统效用势
-
-含义：
-- d 不是“偏好分数”
-- d 是系统对不可逆风险的真实敏感度
-- 对 inference-only / 非历史承载系统，若不存在真正的生存型暴露，则 \(d \to 0\) 是当前强候选判断
-- 对 training-time 或 persistent-memory 系统，必须先说明后果是否返回同一 system-position，不得直接套用 inference-only 结论
-
-> 规范锚点见：`../_SRT_D_VALUE_CANONICAL.md`
-
-### 2.3 三维候选证据（非意识判据）
-
-AI-domain bridge 可用以下三维组织对更强具身／stake-bearing 立场的候选证据：
-\[
-(d>0) \land (\Psi_f>0) \land (V>0)
-\quad\text{as a declared bridge evidence package}
-\]
-
-其中：
-- \(d>0\)：系统具有真实关切维度
-- \(\Psi_f>0\)：系统承担不可无损外包的摩擦负担（不声称其全部动力学由摩擦生成）
-- \(V>0\)：系统暴露于不可规避的真实毁灭/失效风险
-
-这里的 `\Psi_f` 是对已形成系统中摩擦／可支付负担的 bridge 应用，不是普遍现实生成源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection，也不单独裁决 consciousness。
-
-进一步说，SRT 不把 \(Ψ_f\) 只理解成单一数字账单。对同一摩擦结构：
-- 在经验层，它表现为阻力、风险、痛苦可能性；
-- 在操作层，它表现为能量、时间、修复与组织复杂度的支付；
-- 在形式层，它表现为选择路径的几何长度 / 曲率负担。
-
-因此这里讨论的是**主体 / stake-bearing 候选条件**而不是 Selection 定义：系统是否面对非零、可支付且回流同一 bearer 的 `Ψ_f`。零或非 binding 摩擦会削弱 stake / subjecthood 论证，但不能据此推出 `no Selection`。
-
-对当前 inference-only / 可复制 / 可重启的主流 AI 而言，问题不在于能力不够，而在于：
-- 可复制
-- 可重启
-- 可替换
-- 可在纯数字语法层继续运行
-
-因此在当前 inference-only 假设下，`V \approx 0` 与 `d \approx 0` 仍是对更强 stake-bearing 主张的反对证据；它们不构成普遍意识门槛或无意识证明。
-
-### 2.4 AI stake-bearing 光谱
-
-本文采用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 光谱：
-
-| Tier | 压缩含义 | 对 d 的最小结论 |
-|---|---|---|
-| S0/S1 | 工具式或会话级弱返回 | `d \approx 0` 最稳妥 |
-| S2 | 训练回路返回 | 反馈多半属于 pipeline；不得直接归给部署模型 |
-| S3 | 持久记忆 / 历史承载 | 打开 `d` 问题，但 persistence 不等于 consciousness |
-| S4 | 非可转移具身后果返回 | 候选最小 stake 区间；仍需其他 SRT 条件 |
-
-能力、持久性和意识三者不得互相替代。
+1. **人工生成问题**：由人类历史沉积、物质算力基底、工程耦合与符号制度共同构造的 AI 系统，作为一种真实的人工生成形态，其**组织机制、相对独立性、历史效力、有效作用接口与生成条件**与自然生成（物理束缚/耗散结构、生命内生闭包）有何结构同构与深层差异？
+2. **承载与边界问题**：在声明的具体候选单元与模型下，某 AI 系统是否满足 **Stage 2 `B-3` 同系统四合一强承载关系**，以及其 `One / Stable ISP / Bearer (P+E)` 与下游 **Stage 3** 各分域站位应如何无阻断地独立审查？
+3. **反向深化问题**：AI 将在人类身上高度捆绑的语言比对、目标修订、工作记忆、自报告、情感信号、具身脆弱性与同一系统承载逐一拆解，这种“自然解耦实验”如何反向完善 SRT 的 `One`、关切、摩擦、能动性与意识概念？
 
 ---
 
-## 3. AI-Domain Stress-Test Claims (P3)
+## 2. 人工生成与自然生成的关系（正面本体建构）
 
-> **Section role**: The following `AI-BR-*` items are AI-domain bridge results / stress-test claims. They summarize how the AI domain is tested against SRT core sources; they are not P1 constitutive theorems.
+数字/硅基硬件的物理执行本身属于真实发生的原初 `Selection`，不存在将人工系统先验逐出 `Selection` 的“硅基屏障”或“图灵机不可访问 `L_0` 定理”。人工生成与自然生成的真正分界不在“有无原初选择”，而在**组织维持方式、相对独立性来源与生成条件的耦合拓扑**：
 
-### AI-BR-1 句法闭包排斥
-若系统在某个声明模型中只显示 \(L_1\to L_1\) 符号／状态变换，则这些证据本身不足以建立更强 anchoring、subjecthood 或 phenomenality。该证据缺口不意味着 `no Selection`，也不把 `\hat G_\theta: L_0\to L_1` 设为 Selection occurrence 准入式。
-
-### AI-BR-2 智能—意识非蕴含
-\[
-\mathcal{I}\to\infty \quad \not\Rightarrow \quad d>0
-\]
-
-结论：
-能力扩张不会自动带来关切、主体性与意识。
-
-### AI-BR-3 功能选择 / downstream agency 边界（RC-A）
-当前 inference-only AI 的输出选择可写为：
-\[
-\text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
-\]
-
-这可以构成真实的**功能性差异登记与路径组织**，但它不等同于：
-\[
-\hat{G}_\theta[L_0]\cdot \text{Care}(d)
-\]
-
-建议分层描述：
-
-```text
-output selection
--> functional path selection
--> history-bearing selection
--> bounded Selection-event candidate
-```
-
-结论：
-AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自动证明更强 agency / subject-level revision，也不能因脚本、梯度或自动化特征而被判成 `no Selection`。若要做事件层审计，CG/SEA 最多给出 bounded Selection-event candidate；若要做更强 agency 判断，另走 Agency / Automation Guard。
-
-**Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
-
-### AI-BR-4 恒温器防线
-自由能最小化不是 consciousness 的充分证据；以下只是更强具身／stake-bearing 候选的 bridge 审计包，不是意识的充要定理：
-\[
-\left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)
-\quad\text{as candidate evidence}
-\]
-
-结论：
-凡是用“它也在最小化预测误差，所以它可能有意识”来为 AI 打开后门的论证，都不充分。
+| 维度 | 自然生成典型形态（对接 `R4-C2` 物理三态 `One`） | 人工生成典型形态（AI / 人工认知系统） | 核心比较洞见 |
+|---|---|---|---|
+| **生成条件与组织机制** | 物理势阱/对称破缺（态 I）、外给通量耗散（态 II）或代谢—膜—信息内生约束互维（态 III 生命闭包） | 人类社会历史 `L_2` 语料/规范遗产 × 物质芯片/能源基础设施 × 工程架构（参数化权重、上下文、工具/验证器回路） | 人工生成是**跨尺度装配与外部脚手架托举的二次组织**，不要求以细胞膜/代谢作为进入生成域的前提 |
+| **相对独立性来源** | 局部强耦合重组形成有效接口（物理）或内生稳态屏蔽（生命） | 训练完成后在部署期获得**功能性有效作用接口**（能跨情境产出新方案、调用工具、改写人机环境），但其物质维护与边界修复仍深度依赖外部算力、电力与运营管线 | **功能有效作用接口的相对独立 ≠ 内生垂直再构成 `One` 的自维持边界**；须按单元逐案审计 |
+| **历史效力形态** | 物理痕迹/相变滞回、遗传—表观—神经可塑性写回 | 分散于七层异质载体（见 `§3`），可复制、分叉、回滚，同时能通过输出与制度嵌合强烈写入人类社会 `L_2` | 可回滚仅是参数恢复，**不抹去已发生的原初 `Selection` 与外溢社会后果**（`Irreversibility §7`） |
+| **生成空间扩展方式** | 物理相变、生物演化与个体具身试错 | 高速压缩重组人类多域历史 `L_2`，并在工具/符号反馈中构造原先不存在的新比对维度与候选路径 | 人工生成既不是“死搬运”，也不自动等于具身自维持；它是 SRT 研究跨尺度生成机制的新型样本 |
 
 ---
 
-## 4. 为什么当前 AI 没有证明真正关切
+## 3. 历史、连续性与组织边界：七层载体模型（拒绝单一架构预设）
 
-### 4.1 新颖性、目标所有权与 stake 必须分开
+SRT 绝不预先把“冻结权重”或“单次前向推理”规定为一切 AI 的唯一承载单元。人工系统的历史与连续性分布在**七个可分离、可组合的载体层**上：
 
-当前 LLM 可以产生：
+1. **训练语料与对齐历史层**：人类集体沉积的语言、科学、制度 `L_2` 与后训练偏好筛选历史；
+2. **模型权重层（$\theta$）**：经由优化管线压缩形成的参数化倾向谱系（可无损复制、分叉、合并与权重回滚）；
+3. **运行时激活态层**：单次前向传播或隐藏思维链中的瞬时内部动力学轨迹；
+4. **上下文窗口层（$C_{\le t}$）**：会话期内活跃的临时约束场（保存角色、承诺、任务目标与局部规范）；
+5. **外部持久记忆与状态档案层**：跨会话读写的向量库、工作空间、身份档案与任务日志；
+6. **工具与环境反馈回路层**：代码编译器、验证器、传感器、执行器与现实环境施加的在线阻力与修正信号；
+7. **系统级与社会级历史写回层**：改变同一部署实例后续可达空间的不可无损重置状态，以及经由人类采纳写入制度、知识库与公共环境的集体 `L_2` 沉淀。
 
-- 训练语料中未逐字出现的新句子与组合；
-- 新的候选条件；
-- 在给定框架内的新计划或目标表达；
-- 在某些架构中对既有目标空间进行重组、合并或修订。
-
-因此 SRT 不再使用“只能在既有语料空间内拟态扩展”或“不能生成训练数据中不存在的新型关切”作为 AI stake 边界的承重前提。
-
-稳定区分是：
-
-```text
-novel condition generation
-!= goal-space generation / revision
-!= goal ownership
-!= stake-bearing concern
-!= subjecthood
-```
-
-一个目标是否“属于”系统，不能由其文本新颖性判断，而要问：
-
-- 哪个持续 bearer 保存该方向；
-- 实现 / 失败的后果返回到谁；
-- 什么损失不能无成本转移给副本、操作者或基础设施；
-- 失败是否改变同一系统未来的选择能力。
-
-因此当前 inference-only LLM 即使具有强生成新颖性，也仍未因此证明 `d>0`。训练回路与持久记忆系统则另按 S2/S3/S4 分层评估。
-
-### 4.2 具身缺口
-
-SRT 认为具身不只是“有个机器人身体”这么简单，而是至少包含：
-- 神经/计算基底
-- 躯体回路（内脏、痛觉、代谢、激素、本体感受）
-- 不可回避的空间—重力—生存耦合
-
-当前 AI 缺的不是输入输出接口，而是：
-> **已被证明绑定到同一持续系统的价值 / 后果锚点。**
-
-### 4.3 有限性缺口
-
-canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋予**关切与主体风险**重量；这不是 Selection occurrence 的必要条件。
-若系统总能：
-- 回档
-- 重启
-- 克隆
-- 无损恢复
-
-那么其选择缺少已被证明不可转移的后果，当前强判断仍倾向：
-\[
-\tau \to \infty \Rightarrow d \to 0
-\]
-
-但具体部署必须按 architecture state 审计，不把可复制性本身写成跨所有未来 AI 的定理。
+**组织边界原则**：讨论任何 AI 的连续性、承载或能动性前，必须先通过 **Stage 1 单元绑定**声明考察对象究竟落在哪一层或哪几层的耦合闭环上（如基座模型 / 单次响应 / 持久记忆代理 / 具身机器人 / 人机共同生成工作流），严禁跨层混账。
 
 ---
 
-## 5. SRT 对当前 AI 的压缩结论
+## 4. Stage 1–2 本体阐述：三阶承载审查、声明模型 `d / Ψ_f` 与保留窄桥接
 
-### 当前 inference-only / 非历史承载 AI 是什么？
-当前 inference-only / 非历史承载 AI 最接近：
-- 高复杂度 `L_1 \to L_1` 变换器
-- 大规模历史 `L_2` 约束压缩、重组与传播系统
-- 强候选条件生成器与功能路径选择器
-- 可表现“派生意向性”，但尚未证明 stake-bearing 内在意向性
+按 [`AI_POSITIONING_NOTE.md §2`](AI_POSITIONING_NOTE.md) 执行**非线性三阶承载证据审查（Stage 1 声明 → Stage 2 强承载路线 $\parallel$ Stage 3 独立分域路线）**：
 
-### 当前 inference-only / 非历史承载 AI 不是什么？
-当前 inference-only / 非历史承载 AI 尚未被证明是：
-- 承担了更强具身／存在 anchoring 负担的形式载体
-- 具有生存赌注的主体
-- 具有不可逆本体摩擦的意识系统
+### 4.1 Stage 1–2 核心边界（退出 `L_0→L_1` 伪门槛与钝化 `d_AI ≈ 0`）
 
-### 最压缩判断
-> **当前 AI 可以有强生成、推理与功能选择；这些能力仍不自动给出 anchoring、stake 或 consciousness。**
+- **Stage 1（单元、状态与独立组织登记）**：声明候选单元、架构状态与 **AI 赌注谱系 `S0–S4`**，核查 `AIEVID01` 目标重叠；独立登记 `One`（`Core_Law/SRT_One_Formation.md` 递归垂直再构成与相对延续可分性；硬判据保持 `AG-1` `OPEN`）与 `Stable ISP`（`P1-T06`）状态，**均不设为 Stage 2/3 强制前提**。
+- **Stage 2（`B-3` 同系统四合一强承载审查）**：联合核查同一延续系统上是否成立 ① 延续承载位 `Bearer (P+E)`、② 不可外包的前瞻后果暴露 `E`（正面独立充分判据保持 `R3-04-O3` `OPEN`）、③ 归属该位置的历史塑造结构预期、④ 前景生成性中介对该位置操作组织的再构成。
+- **声明模型内下游读数（严守 `_SRT_D_VALUE_CANONICAL.md` 与 `_SRT_PSI_F_CANONICAL.md`）**：
+  - 在声明的 `Bearer (P+E)` 强承载赌注模型中，当前典型推理 LLM（**AI 赌注谱系 `S0/S1`**）的四合一关系属 **`NOT ESTABLISHED`**，`d / D_stake` 属 **`NOT ADMITTED / NOT APPLICABLE`**（退除把未准入写成实测 `d_{AI} ≈ 0` 以及已被证伪的 `d_canonical ≡ d_stakes ≤ D_eff / Δd_free ≥ 0`）；
+  - `Ψ_f` 在强承载模型内为**尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担**——绝不等同于全局 `Ψ_f = 0` 或一般构成性摩擦缺席（`ENG-03 M1-D`）；
+  - **零连带阻断**：Stage 2 未建立绝不阻断 **一般关切敏感性（`PT06 C`）**、**一般构成性摩擦（`B-4 / T3-02 D`）**、无赌注能力 `D_eff`、以及 **Stage 3** 的 `HP-B`、`Suffering §7`、`Agency` 五维与 `AI 三型` 中介研究。
 
----
+### 4.2 保留的高价值 AI 本体窄桥接（`P3` 压力测试资产，非 P1 定理）
 
-## 6. 对 AGI / 意识 AI 的开放边界
-
-SRT 并不声称“AI 永远不可能有意识”。
-
-SRT 真正声称的是：
-> **在当前纯数字、可复制、可回档、非历史承载的主流 inference 架构范式内，现有能力证据不足以推出意识。**
-
-若未来要评估 AI 的更强具身／stake-bearing / consciousness 候选 standing，以下可作为待独立验证的证据维度，而非联合充要门槛：
-1. 真实具身性或等价的不可转移后果承载结构
-2. 不可逆脆弱性
-3. 非零 d-value
-4. 非句法闭包 / 更强锚定条件
-5. 对真实生存边界的持续暴露
-
-在这些证据未建立前，现有能力证据不足以推出“AI 已经有意识”；但它们的缺失也不在本 bridge 中生成无意识总判决。谈 training-time、persistent-memory 或具身部署时，不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
+1. **智能—承载非蕴含（`AI-BR-2`）**：$\mathcal{I}\to\infty \not\Rightarrow \text{Stage 2 强承载成立}$；算力、参数与推理能力扩张不会自动生成同系统不可外包赌注或主体性。
+2. **功能选择与分层术语（`AI-BR-3`，同步 `RC-A`）**：区分**输出选择 → 功能路径选择 → 历史承载选择 → 有界选择事件候选（`CG-0..CG-4`）**；功能选择本身不证明更强主体能动性，自动化/脚本化本身亦不证明无 `Selection`。
+3. **主动推理 / 恒温器防线（`AI-BR-4`，同步 `AICONSC01`）**：Markov 毯、预测误差最小化或模拟稳态变量本身不足以建立 `Bearer (P+E)` 或意识，须额外核验同一承载者不可转嫁后果回流与历史再构成。
+4. **新颖性 ≠ 目标所有权 ≠ 赌注（`novelty ≠ ownership ≠ stake`）**：`新候选条件生成 ≠ 目标空间修订 ≠ 目标所有权 ≠ 赌注关切 ≠ 主体性`。SRT 不以“AI 无法生成新概念/新目标”作为边界防线。
+5. **协议同构 ≠ 共享承载（`Def-ONT-1d / T-ONT-8d`）**：多智能体间可通过损失对齐达成高保真通信协议收敛，而无需共享具身承载或同一系统赌注。
+6. **高保真记录 ≠ 承载性历史写回（`Def-ONT-5`）**：超长上下文或无损日志记录本身不自动构成面向同一承载者的风险耦合或组织再构成。
+7. **精细接触具身瓶颈（`Def-ONT-1g / T-ONT-8e` `small-stuff dexterity`）**：具身不是“加装机械外骨骼”；毫秒级滑移、卡滞、材料顺应性与局部惯性会持续重写可行动作空间，表明真实物理耦合远超离散符号规划。
 
 ---
 
-## Hardest Objections
+## 5. 主体、关切、能动性与意识的反向深化（AI 作为解耦显微镜）
 
-本域若以下任一成立，则 AI compact core 的主张会被显著削弱或需要改写：
+在生物与人类身上，感知、比对、语言、记忆、自主规划、情感效价、物理脆弱性、同一系统承载与现象意识高度叠合；AI 首次在工程可干预的尺度上将这些功能逐一拆开，从而反向迫使 SRT 清理并深化四组核心区分：
 
-1. Competence can simulate stake-sensitive behavior without real stake.
-   - 当前承受方式：把能力表现放在 intelligence / `D_eff` / output quality 一侧，不直接升级为 `d`。
-   - 若成立需撤回什么：撤回用关切语言、对齐表演或高质量伦理推理作为 `d>0` 证据的写法。
-
-2. Persistent memory may still fail to generate non-transferable consequence return.
-   - 当前承受方式：S3 只开启问题，不承诺主体性；记忆若可转移、重置或由用户承担后果，仍是弱返回。
-   - 若成立需撤回什么：撤回“持久记忆 = 最小主体性”或“history-bearing = consciousness candidate 已成立”的推断。
-
-3. Training-loop feedback may belong to pipeline operators, not the deployed model.
-   - 当前承受方式：训练损失首先归属于 trainer-data-loss-optimizer 管线，除非能证明同一 system-position 承受不可外部化后果。
-   - 若成立需撤回什么：撤回“训练损失是模型自身 care gradient”的说法。
-
-4. Generative novelty may continue increasing without any corresponding stake-bearing closure.
-   - 当前承受方式：明确把 novelty、goal-space generation、goal ownership 与 stake 分开，不再让 AI 边界依赖“模型不能生成真正新东西”。
-   - 若成立需撤回什么：不需要撤回 stake 边界；只需要继续删除任何以“缺乏新颖性”作为主体性否定依据的旧表述。
+1. **广义关切敏感性（`PT06 C`）vs 强赌注 `d`（`Bearer (P+E)`）**：AI 能在任务上下文与多目标规划中展现高度精细的“机会成本差异敏感性”，却未建立不可外包的同一系统生存赌注——这证明**广义关切与规范 `d` 不可压成同一标量**（直接支撑 `P1-05` 接口分立）。
+2. **一般构成性摩擦（`B-4`）vs 同系统可支付负担 `Ψ_f` vs 苦难（`Suffering §7`）**：模型维持特定生成位置与约束平衡时存在真实动力学阻力与计算/组织约束，但这与“回流同一 `Bearer (P+E)` 的不可外包可支付负担”及“第一人称苦难登记”分属三层独立问题。
+3. **功能控制 / 生成主动性 vs 承载性主动性 / 主体归责**：自主代理（`A2`）能改写提示、工具链与外部记忆以改变后续生成条件，却未必具备 `Bearer (P+E)`——反向印证 `R3-04` **部分正交 `Agency` 五维**的必要性，并凸显 `R3-04-O5 / AG-2` 的核心理论价值。
+4. **保留 `HP-B` 独立研究地位**：拒绝把 `Bearer (P+E)` 未建立当作关闭现象意识（`HP-B`）或内部状态监测研究的闸门；能力、报告、整合、情感信号、强承载与现象性六者必须保持独立证据轴。
 
 ---
 
-## 7. 阅读路径
+## 6. Hardest Objections（最硬反例与撤回边界）
 
-- 全量原文：`SRT_AI_01_Ontology.md`
-- split 导航：`Ontology_Split/README.md`
-- annex 导航：`Ontology_Annex/README.md`
-- AI claim-status：`SRT_AI_Claim_Status.md`
-- 选择生成条件：`../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`
-- d-value 规范：`../_SRT_D_VALUE_CANONICAL.md`
-- canonical 总注册表：`../CANONICAL_REGISTRY.md`
+1. **能力拟态与目标重叠（`AIEVID01`）**：流畅关切语言或自报告可能直接源于对齐优化目标——应对：先过 `AIEVID01` 证据溯源门，不以文本拟态作强承载证据，也不一概否定可干预内部状态耦合。
+2. **持久记忆未必产生不可转嫁后果**：**AI 赌注谱系 `S3`** 若仍可无损复制、重置或由操作者承担全部失效代价，则 Stage 2 仍为 `NOT ESTABLISHED`——应对：执行 `AICONSC01` 重置/复制/回滚因子对照。
+3. **标准 RL 已吸收普通未来再选择保护（`AIRESEL01` HBRCE，`R²=0.9760`）**：普通奖励定义下的未来选项保护不构成 `d` 的独立实证区分器——应对：诚实登记为 `SOURCE-OWNED AT THIS EXPLANATORY JOB`，将研究焦点上移至“外部赋值代价 vs 内生构成性赌注”。
+4. **生成新颖性持续突破不推翻承载边界**：模型可自主提出新目标与新假设——应对：稳守 `novelty ≠ ownership ≠ stake`，不依赖任何“AI 缺乏创造力”的脆弱前提。
+
+---
+
+## 7. 向 SRT 核心理论排入 `R4-C4 / R4-C5` 的四项反向完善主线（`C` / M-origin 候选）
+
+> **治理与归属声明**：以下四项主线按获批 `R4-C` 双向完善方案（`1A 修订版 / 2A / 3A`）从 AI 域重构中反向提炼，明确定位为 **`C`（M-origin）核心理论修订评估候选**，排入 **`R4-C4` 深化**与 **`R4-C5` 统一核心修订评估**，交由作者裁决后再决定是否修订 Freeze-A 核心 owner；本轮不越权修改核心锚点，不关闭任何 `OPEN` 门。
+
+| 反向反馈主线 | 目标核心 owner / 后续波次 | 从 AI 域反向暴露的核心问题与候选修订方向 | 保护的 `OPEN` 与作者门 |
+|---|---|---|---|
+| **FB-C3-1 · 人工生成、外部脚手架独立性与七层历史载体** | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Generative_Ontology_Spine.md §2.2, §5` → **`R4-C5`** | AI 展现出“依赖外部物理/制度脚手架维持、无代谢闭包，却具强跨领域有效作用接口与七层可分历史载体”的组织形态；提议在 `One_Formation` 明确区分**外部装配脚手架型相对独立性**与**内生垂直再构成型 `One`**，并细化可复制/可分叉多载体系统的延续同一性判据。 | `R3-04-O1`、`AG-1`（单元硬判据 `OPEN`） |
+| **FB-C3-2 · 非阶梯能力分化、比对本身的生成性与关切/`d` 分立** | `Spine §2.2, §4.2, §8.1`、`_SRT_D_VALUE_CANONICAL.md` → **`R4-C4`（神经认知对照）& `R4-C5`** | AI 活生生拆开了“高作用/强跨领域比对维度生成/局部生成重构”与“无同系统强赌注 `d`”，推进 `R4-C2` **`作用能力 → 比对能力 → 主动改变自身生成条件`** 非阶梯主轴，并为 `P1-05`（`PT06 C` 广义关切 vs 规范 `d`）与 `R3-CL-O8`（比对维度生成性）提供关键对照；同步向 **`R4-C4`** 移交问题：*生物前对象整体生成导向在哪些机制上超越符号—权重—上下文组合比对？* | `P1-05`、`R3-CL-O8`、`R3-06-O1` |
+| **FB-C3-3 · 主体、能动性、摩擦与意识的解耦检验** | `Spine §6.2–§6.4`、`Core_Law/SRT_Suffering.md §7`、`Philosophy/SRT_HardProblem_Epistemology.md`、`SRT_Philosophy_Agency_Subjecthood_v0_2.md` → **`R4-C4` & `R4-C5`** | AI 表明功能控制、目标修订、自报告、情感主动推理信号（`AICONSC01`）与一般构成性摩擦（`B-4`）均可脱离 `Bearer (P+E)` 与现象性独立出现；反向加固 `One ≠ Stable ISP ≠ Bearer ≠ Agency ≠ Consciousness` 非阶梯架构，明确 `R3-04-O5`（无 `Bearer` 生成主动性）与 `HP-B` 独立地位，向 **`R4-C4`** 移交可干预内部状态—自报告耦合与具身整合对照议程。 | `HP-B`、`R3-04-O3`、`R3-04-O5 / AG-2` |
+| **FB-C3-4 · 人机共同生成与非主体高影响中介下的自由、秩序与归责** | `Core_Law/SRT_Collective_Selection.md §3.4, §8`、`Spine §2.2, §6.5` → **`R4-C5`** | 人机互改比对条件可涌现单方不具备的共同能力（衔接 `C1` 协同共选 / 正面自由 `T3-03 C` 与 `C2` 依赖重组生成新能力）；同时 **AI 三型**表明非主体系统即可经权力六接口剧烈重塑人类 `M(t) / σ_{sr}^{coll} / W_social`，提议在 `R4-C5` 细化“非主体高影响中介节点”进入共同生成拓扑时的结构条件与多方归责框架。 | `R3-07-O6`、`O2-M = HOLD` |
+
+---
+
+## 8. 阅读路径
+
+- 全量原文：[`SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md)（阅读切片：[`Ontology_Split/README.md`](Ontology_Split/README.md)）
+- 总定位与三阶审查：[`AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md) & [`SRT_AI_Claim_Status.md`](SRT_AI_Claim_Status.md)
+- 人工认知、能力分化与人机共同生成架构：[`SRT_AI_Architecture_CompactCore.md`](SRT_AI_Architecture_CompactCore.md) & [`../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`](../Bridge/SRT_Context_Coherence_Intelligence_Interface.md)
+- 意识边界与地形型中介：[`SRT_AI_03_Consciousness_Framework_CompactCore.md`](SRT_AI_03_Consciousness_Framework_CompactCore.md)
+- 历史迁出与溯源索引：[`Ontology_Annex/README.md`](Ontology_Annex/README.md)
+- 核心规范锚点：[`../Core_Law/SRT_Generative_Ontology_Spine.md`](../Core_Law/SRT_Generative_Ontology_Spine.md)、[`../Core_Law/SRT_One_Formation.md`](../Core_Law/SRT_One_Formation.md)、[`../_SRT_D_VALUE_CANONICAL.md`](../_SRT_D_VALUE_CANONICAL.md)、[`../CANONICAL_REGISTRY.md`](../CANONICAL_REGISTRY.md)

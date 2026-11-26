@@ -2,16 +2,17 @@
 id: SRT-AI-ARCH-ANNEX-02-AGI-PROGRAM-THEMES-INTERFACE
 type: interface_annex
 tags: [AI, Architecture, AGI, Taxonomy, Interface]
-status: active_v1
+status: active
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
 date: 2026-04-29
-parent: AI/Architecture_Split/05_Interface_Additions.md
+parent: AI/SRT_AI_Architecture.md
 dependency:
   - AI/SRT_AI_Architecture.md
-  - AI/Architecture_Split/05_Interface_Additions.md
+  - AI/Architecture_Split/README.md
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
   - Governance/SRT_CLAIM_LADDER.md
@@ -24,7 +25,7 @@ machine_summary: >
 
 > **Extraction note**: This taxonomy was extracted from `AI/Architecture_Split/05_Interface_Additions.md` after `Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md` and the PR-C4a architecture-annex pass.
 >
-> **Boundary**: The table below is an architecture interface / translation proxy. It does not imply that any listed AGI program theme is sufficient for SRT subjecthood, consciousness, or genuine `L_0 -> L_1` anchoring.
+> **Boundary (`R4-C3` synced)**: The table below is an architecture interface / translation proxy. It does not imply that any listed AGI program theme is sufficient for Stage 2 same-system strong bearing (`Bearer (P+E)`), SRT subjecthood, or consciousness (legacy `L_0 -> L_1` pseudo-threshold phrasing retired per `AI/AI_POSITIONING_NOTE.md`).
 
 ---
 
@@ -32,7 +33,7 @@ machine_summary: >
 
 | 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | `Psi_f` 状态 |
 |:--|:--|:--|:--|:--|
-| 从经验学习而非仅人类累积文本 | `L_0 -> L_1` 在线锚定与回写 | 中~高 | Open-flow（持续交互） | payable |
+| 从经验学习而非仅人类累积文本 | 在线环境阻力闭环与历史写回（对接 `SRT_AI_01_Ontology.md §2`） | 中~高 | Open-flow（持续交互） | payable |
 | 层级潜变量+因果结构世界模型 | 多层 `G_hat_theta` 结构化推演 | 高 | Open-flow | payable（高算力负载） |
 | 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高 | Open-flow（跨模态） | payable~overloaded |
 | 情景记忆+持续学习闭环 | `L_1 <-> L_2` 动态沉积 | 中~高 | Semi-open / Open | payable |
@@ -52,7 +53,7 @@ machine_summary: >
 ## Owner links
 
 - Architecture owner: [`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
-- Split source: [`../Architecture_Split/05_Interface_Additions.md`](../Architecture_Split/05_Interface_Additions.md)
+- Split index: [`../Architecture_Split/README.md`](../Architecture_Split/README.md)
 - Architecture annex index: [`README.md`](README.md)
 - Claim-status guardrail: [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
 - AI positioning guardrail: [`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md)

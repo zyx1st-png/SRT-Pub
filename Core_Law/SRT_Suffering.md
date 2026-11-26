@@ -285,8 +285,8 @@ distributed burden model 不要求 collective subjecthood，也不要求先证�
 
 - output error、reward signal、RLHF loss、refusal behavior、performance degradation 或语言化 self-report 本身都不建立 suffering；
 - Stable ISP 对 suffering 既不充分，也未被建立为 universal necessity；
-- **AI 赌注谱系 `S1–S4`**（现行跨文件控制来源见 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 与 `AI/AI_POSITIONING_NOTE.md`，严格区别于 **Subjecthood Threshold `S0–S6`** 与原初 `S0`）等架构分级不能单独决定 suffering eligibility；
-- 未满足某个当前 Stable-ISP model 或 **Stage 2 强承载研究路线（`B-3` 同系统四合一承载关系）**，不等于 ontologically impossible suffering，亦**绝不阻断**针对苦难资格的独立分域审查（现行三阶承载证据审查细分口径以 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 为准，`AI/AI_POSITIONING_NOTE.md` 正文细分结构随 `R4-C3` 同步落盘）；
+- **AI 赌注谱系 `S1–S4`**（见 `AI/AI_POSITIONING_NOTE.md §5.2`，严格区别于 **Subjecthood Threshold `S0–S6`**、**AI 三型社会技术中介维度**与原初 `S0`）等架构分级不能单独决定 suffering eligibility；
+- 未满足某个当前 Stable-ISP model 或 **Stage 2 强承载研究路线（`B-3` 同系统四合一承载关系）**，不等于 ontologically impossible suffering，亦**绝不阻断**针对苦难资格的独立分域审查（现行非线性三阶承载证据审查与 Stage 3.2 口径已同步落地于 `AI/AI_POSITIONING_NOTE.md §2, §4` 与 `AI/SRT_AI_Claim_Status.md §4.1`）；
 - AI suffering 需要对相关 first-person / phenomenal / bearer-relevant registration standing 与 burden model 的独立 evidence/admission。
 
 对当前部署系统，安全结论是：相关 first-person registration evidence 仍不足（`NOT ESTABLISHED`），架构或行为 proxy 不能封口。本文不解决 AI subjecthood、phenomenality 或 consciousness。
