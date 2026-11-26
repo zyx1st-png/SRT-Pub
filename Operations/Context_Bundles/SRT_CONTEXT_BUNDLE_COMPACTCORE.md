@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: f7c10a796
+source_commit: e56ebd8bf
 source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
 source_dirty: false
-inputs_digest: 893a58b582136d9c
+inputs_digest: c7c92cdfa26c5d8c
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,7 +27,7 @@ inputs_digest: 893a58b582136d9c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `f7c10a796` |
+| 来源 commit | `e56ebd8bf` |
 | 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
@@ -5225,7 +5225,7 @@ The stop rule should be applied at every phase. A practice should pause or narro
 ## 3. 跨尺度容量代理（`D_eff` / $B_{\text{cap}}$）与规范 `d` 严格分离（`R4-A / R4-B2`）
 
 ### 3.1 Capacity Bandwidth Proxy vs Canonical `d`
-跨尺度无条件可比较的是**无赌注几何/信息论容量代理**（$B_{\text{cap}}$ / $D_{\text{eff}}$，无需 `Bearer (P+E)` 准入）：
+几何/信息论容量代理（$B_{\text{cap}}$ / $D_{\text{eff}}$）**不需要 `Bearer (P+E)` 强承载准入**，但具体跨尺度比较仍须显式建立相容的度量、状态空间与尺度映射：
 \[
 B_{\text{cap}}(\hat{G}_\theta) \equiv \text{declared channel/manifold capacity bandwidth proxy under } \Psi_f
 \]
@@ -5370,7 +5370,7 @@ SRT 的压缩立场是：
 `Core 14` 的主干可以压缩成五句话：
 
 1. **跨尺度关系区分装配、归一化、有效作用接口、`Proxy` 与 `Delegation` 五类机制；结构相容（`P3-Scale-01`）是可失败的 P3 候选，不是普遍同构定理。**
-2. **跨尺度无条件可比较的是几何/信息容量代理（`D_eff` / $B_{\text{cap}}$），严格区分于须经 `Bearer (P+E)` 准入的规范风险敏感强度 `d`、赌注谱 `D_stake` 与广义关切四维。**
+2. **几何/信息容量代理（`D_eff` / $B_{\text{cap}}$）不需要 `Bearer (P+E)` 强承载准入（但跨尺度比较仍须建立相容度量与尺度映射），严格区分于须经 `Bearer (P+E)` 准入的规范风险敏感强度 `d`、赌注谱 `D_stake` 与广义关切四维。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
 5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**

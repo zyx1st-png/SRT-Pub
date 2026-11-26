@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: f7c10a796
+source_commit: e56ebd8bf
 source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
 source_dirty: false
-inputs_digest: 893a58b582136d9c
+inputs_digest: c7c92cdfa26c5d8c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: 893a58b582136d9c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `f7c10a796` |
+| 来源 commit | `e56ebd8bf` |
 | 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
@@ -459,42 +459,42 @@ For substantive SRT answers:
 | `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L204` |
 | `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L232` |
 | `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L264` |
-| `Eq-Rhythm-4a` | Conditional Passband–Duty Upper-Bound Tradeoff（频谱通带容量—占空比上界条件权衡，`R4-B2 P1-04` 修正） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L300` |
-| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L330` |
-| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L357` |
-| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L386` |
-| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L394` |
-| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L401` |
-| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L421` |
-| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L428` |
-| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L435` |
-| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L461` |
-| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L512` |
-| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L524` |
-| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L529` |
-| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L543` |
-| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L557` |
-| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L567` |
-| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L587` |
-| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L592` |
-| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L599` |
-| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L606` |
-| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
-| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L616` |
-| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
-| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L632` |
-| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L637` |
-| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L695` |
-| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L702` |
-| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L738` |
-| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L744` |
-| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L753` |
-| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L765` |
-| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L776` |
-| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L845` |
-| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L856` |
-| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L865` |
-| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L872` |
+| `Eq-Rhythm-4a` | Conditional Passband–Duty Landauer Envelope Tradeoff（频谱通带容量—占空比 Landauer 条件包络权衡，`R4-B2` 修正） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L300` |
+| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L324` |
+| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L351` |
+| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L380` |
+| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L388` |
+| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L395` |
+| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L415` |
+| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L422` |
+| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L429` |
+| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L455` |
+| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L506` |
+| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L518` |
+| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L523` |
+| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L537` |
+| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L551` |
+| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L561` |
+| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L581` |
+| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L586` |
+| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L593` |
+| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L600` |
+| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L604` |
+| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
+| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L620` |
+| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
+| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L631` |
+| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L689` |
+| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L696` |
+| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L732` |
+| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L738` |
+| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L747` |
+| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L759` |
+| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L770` |
+| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L839` |
+| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L850` |
+| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L859` |
+| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L866` |
 
 ### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
 
@@ -4427,14 +4427,14 @@ If a local projection conflicts with the canonical usage, mark the local project
 | **δ** | `\delta` | Duty Cycle | δ_j ≡ (1/T)∫A_j(t)dt; fraction of time an operator actively maintains anchoring target σ_j. Bounded above by Ψ_f budget and below by looseness penalty. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **ν** | `\nu` | Switching Density | ν_j ≡ N_{switch,j}/T; number of anchoring state flips per unit time. Same δ with different ν corresponds to qualitatively different schedules. Bounded above by Ψ_f^{switch} budget. | Hz | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling beats the declared periodic-vs-random schedule comparison in T-Scale-Rhythm-3; no optimum over every admissible schedule is implied. | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
-| **Ṡ_int^on** | `\dot{S}_{int}^{on}` | On-Phase Entropy Production Rate | Internal entropy production rate during active selection (units: Entropy/time, matched with `J_S^max`). In a declared logical-erasure physical model at bath temperature `T`, Landauer lower-bounds **bath entropy flux** by `Ṡ_bath,min = k_B ln 2 · Ṅ_erase` (and **heat power** by `Q̇_min = k_B T ln 2 · Ṅ_erase`, units Energy/time; do not mix power with entropy flux). Does not directly bind arbitrary information creation or primitive Selection without a declared erasure mapping. | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
-| **J_S^max** | `J_S^{max}` | Maximum Entropy Export Flux | Upper bound on the rate at which a system can export entropy to its environment (units: Entropy/time; equivalent thermal power limit `P_diss^max = T · J_S^max`). | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
-| **δ_max^entropy** | `\delta_{max}^{entropy}` | Thermodynamic-Dissipation Duty-Cycle Upper Bound | `δ_max^entropy ≡ J_S^max/(Ṡ_int^on + J_S^max) = P_diss^max/(Q̇_int^on + P_diss^max)`. Independent of `Ψ_f` budget; a tightening upper bound does not by itself prove the actual realized duty cycle `δ` decreases monotonically. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
-| **B_θ** | `B_\theta` | Operator Effective Passband Bandwidth (Capacity Proxy) | `B_θ ≡ Bandwidth(H_θ)`; frequency-domain extent of operator `H_θ`'s selective response (`Ax-Spec-01`). In a declared capacity model may be linked via conditional assumption `B_θ = c_B · D_eff` (`c_B > 0`), **strictly separated from canonical risk-sensitivity gradient norm `d = ||∂U/∂S||`**. Together with an explicitly declared passband-to-erasure mapping `Ṅ_erase = f_erase(B_θ)`, yields a conditional thermodynamic upper-bound tradeoff on `δ_max^entropy` (`Cor-Scale-Rhythm-4a`). | Hz | Core; canonical source `SRT_Core_14 Ax-Spec-01, Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
+| **Ṡ_int^on / Ṡ_load^on** | `\dot{S}_{\text{int}}^{\text{on}},\ \dot{S}_{\text{load}}^{\text{on}}` | On-Phase Internal Entropy Production vs Exportable Load Rate | Strictly distinguish (i) system internal irreversible entropy production `Ṡ_int^on`, (ii) thermal-bath entropy flux lower bound `Ṡ_bath,min = k_B ln 2 · Ṅ_erase` (corresponding heat power `Q̇_bath,min = k_B T ln 2 · Ṅ_erase`), and (iii) exportable on-phase thermal/entropy load rate `Ṡ_load^on` under an explicitly declared system boundary, buffering, and off-phase concentrated-export (`J_S^on ≈ 0`) bookkeeping model (`Ṡ_load^on ≥ Ṡ_bath,min`). Landauer's bath bound does not automatically become an internal entropy production bound without that bookkeeping model, nor does it directly bind primitive Selection. | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **J_S^max** | `J_S^{max}` | Maximum Entropy Export Flux | Upper bound on the rate at which a system can export thermal/entropy load during the off-phase (units: Entropy/time; equivalent thermal power limit `P_diss^max = T · J_S^max`). | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **δ_max^entropy** | `\delta_{max}^{entropy}` | Actual Dissipation-Limited Duty-Cycle Ceiling (vs Landauer Envelope `U`) | Under the declared off-phase concentrated-export (`J_S^on ≈ 0`) model, strictly separate actual duty cycle `δ`, actual dissipation ceiling `δ_max^entropy ≡ J_S^max/(Ṡ_load^on + J_S^max) = P_diss^max/(Q̇_load^on + P_diss^max)`, and the Landauer conditional envelope upper bound `U(B_θ) ≡ J_S^max/(k_B ln 2 · f_erase(B_θ) + J_S^max)` (`δ ≤ δ_max^entropy ≤ U(B_θ)`). Under fixed `J_S^max` and non-decreasing `f_erase`, only `U(B_θ)` is directly non-increasing; neither `δ_max^entropy` (implementation-efficiency dependent) nor actual `δ` is automatically monotonic. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4, Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
+| **B_θ** | `B_\theta` | Operator Effective Passband Bandwidth (Capacity Proxy) | `B_θ ≡ Bandwidth(H_θ)`; frequency-domain extent of operator `H_θ`'s selective response (`Core_13b Ax-Spec-01`). In a declared capacity model may be linked via conditional assumption `B_θ = c_B · D_eff` (`c_B > 0`), **strictly separated from canonical risk-sensitivity gradient norm `d = ||∂U/∂S||`**. Together with declared thermal-load bookkeeping, off-phase concentrated export, and non-decreasing erasure mapping `Ṅ_erase = f_erase(B_θ)`, yields the non-increasing Landauer conditional envelope upper bound `U(B_θ)` (`Cor-Scale-Rhythm-4a`). | Hz | Core; canonical source `Core_13b Ax-Spec-01`, `SRT_Core_14 Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
 | **h[A]** | `h[A]` | Temporal Entropy Rate of Schedule | h[A] ≡ lim_{T→∞} H(A(0), A(Δt), …, A(T))/(T/Δt); Shannon entropy rate of an anchoring schedule A(t). Periodic schedules: h_per ≈ 0; random intermittency: h_rand > 0. Drives the coupling-induced periodization transition at λ_pred^c (T-Scale-Rhythm-3). | Bits/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
-| **τ_off^*** | `\tau_{off}^{*}` | Optimal Off-Phase Duration | Optimal off-phase length balancing entropy-export benefit against noise-erosion cost (three-way tradeoff in T-Scale-Rhythm-4). Not a free parameter; emerges from minimization of entropy-accumulation/export ratio plus γ·S_noise·τ_off. | Time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
-| **c_B** | `c_B` | Passband-to-Capacity Proportionality Constant | Positive model-local constant (`c_B > 0`) in conditional capacity assumption `B_θ = c_B · D_eff` (`Ax-Spec-01`); converts dimensionless spectral capacity proxy `D_eff` into effective passband bandwidth in Hz. Does not equate passband width to canonical `d = ||∂U/∂S||`. System-specific; not universal. | Hz (per unit `D_eff`) | Core; canonical source `SRT_Core_14 Ax-Spec-01, Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
-| **ρ_I / ρ_erase** | `\rho_{\text{erase}}` | Conditional Erasure-Density Lower Bound (legacy `ρ_I`) | Positive model-local constant (`ρ_erase > 0`) in conditional strengthening of `Cor-Scale-Rhythm-4a` / `Eq-Rhythm-4a`: `Ṅ_erase^on ≥ ρ_erase · B_θ`. When this declared erasure lower bound holds, yields conditional product cap `δ·B_θ ≤ J_S^max/(k_B ln 2 · ρ_erase) = P_diss^max/(k_B T ln 2 · ρ_erase)` (and under `B_θ = c_B D_eff`, `δ·D_eff ≤ J_S^max/(k_B ln 2 · ρ_erase · c_B)`). Not unconditional and not a universal cap on canonical `d`. | Bits/(Hz·time) | Core; canonical source `SRT_Core_14 Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
+| **τ_off^*** | `\tau_{off}^{*}` | Optimal Off-Phase Duration | Optimal off-phase length balancing load-export benefit against noise-erosion cost (three-way tradeoff in T-Scale-Rhythm-4). Not a free parameter; emerges from minimization of exportable-load/export-capacity ratio plus γ·S_noise·τ_off. | Time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **c_B** | `c_B` | Passband-to-Capacity Proportionality Constant | Positive model-local constant (`c_B > 0`) in conditional capacity assumption `B_θ = c_B · D_eff` (`Core_13b Ax-Spec-01`); converts dimensionless spectral capacity proxy `D_eff` into effective passband bandwidth in Hz. Does not equate passband width to canonical `d = ||∂U/∂S||`. System-specific; not universal. | Hz (per unit `D_eff`) | Core; canonical source `Core_13b Ax-Spec-01`, `SRT_Core_14 Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
+| **ρ_I / ρ_erase** | `\rho_{\text{erase}}` | Conditional Erasure-Density Lower Bound (legacy `ρ_I`) | Positive model-local constant (`ρ_erase > 0`) in conditional strengthening of `Cor-Scale-Rhythm-4a` / `Eq-Rhythm-4a`: `Ṅ_erase^on ≥ ρ_erase · B_θ`. Under declared load bookkeeping and off-phase concentrated export, yields conditional product envelope cap `δ·B_θ ≤ U(B_θ)·B_θ ≤ J_S^max/(k_B ln 2 · ρ_erase) = P_diss^max/(k_B T ln 2 · ρ_erase)` (and under `B_θ = c_B D_eff`, `δ·D_eff ≤ J_S^max/(k_B ln 2 · ρ_erase · c_B)`). Not unconditional and not a universal cap on canonical `d`. | Bits/(Hz·time) | Core; canonical source `SRT_Core_14 Cor-Scale-Rhythm-4a`; `Core_22 Eq-Rhythm-4a` |
 | **k_n** | `k_n` | Sub-Targets per Layer | Model-local number of anchoring sub-targets {σ_{n,1},…,σ_{n,k_n}} that $\hat{G}_\theta^{(n)}$ is posited to maintain within one on-phase. Its use in T-Scale-Rhythm-5 is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not a global cross-scale invariant. | Integer (≥ 1) | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
 | **τ_switch^min** | `\tau_{switch}^{min}` | Minimum Feasible Switch Time | Model-local lower bound on per-switch duration imposed by a named physical substrate. Its role in Rhythm-5 recursion and any nesting-depth ceiling is P3/P4 conditional on an explicit scale map, budget embedding and recurrence trigger; it is not universal across substrates. | Time | Core; conditional source `SRT_Core_14 T-Scale-Rhythm-5` |
 | **σ_{sr}** | `\sigma_{sr}` | Self-Reference Ratio | `σ_{sr} := ‖θ^{trace}‖ / (‖θ^{trace}‖ + ‖θ^{ext}‖) ∈ [0, 1]`. **P2 canonical interpretation:** `SRT_Individuation.md §八` states that the order-parameter choice is conventional and replaceable by an equivalent form. In the current bare-norm realization it is a model-local historical/writeback-balance proxy under a declared trace/ext attribution rule, parameter representation, and norm/metric. | Scalar [0,1] | L1; canonical source `Core_Law/SRT_L1_Hardening_Notes.md §1`, `Core_Law/SRT_Individuation.md`, `Core_Law/SRT_L1_Formalism.md §2`. Not by itself a representation-invariant natural quantity, unique history-attribution theorem, causal-control share, bearer/selector criterion, or proof of a natural phase boundary. Distinct from main-equation state field `σ` and anchoring sub-target `σ_j`. |
