@@ -192,19 +192,20 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `AI/Consciousness_Annex/README.md`（AI consciousness interface/comparison annex; claim_mode: translation; canonical: false）
 - `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（deterministically rebuilt longform split reading aids; not independent authority layers）
 
-### Neuroscience
+### Neuroscience (`R4-C4` 双向重构同步)
 
-- `Neuroscience/README.md`（directory entry; separates canonical-facing material from bridge/lab hardening drafts）
-- `Neuroscience/SRT_Neuroscience_Claim_Status.md`（folder-level proxy/clinical guardrail for FEP, NDE, AI-comparison, clinical, `Psi_f`, and `d-value` proxy language）
-- `Neuroscience/_SRT_Neuro_Axioms.md`
-- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
-- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
+- `Neuroscience/README.md`（`R4-C4` directory entry; routes holistic generative cognition backbone, guardrails & preserved deep-well boundaries）
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md`（`v2` folder-level guardrail: holism–differentiability, energy-gradient candidate boundary, 5-layer concern/value/friction/metabolic/experience separation, `AI/S` full-name isolation, clinical/FEP/NDE/BioQuantum boundaries）
+- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`（`v2` `R4-C4` core theory backbone: 8 positive axes, `C3` handoffs, bio–AI comparison & `FB-C4-1..5`）
+- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`（`v3` `R4-C4` consciousness backbone: foreground generative mediation, functional vs phenomenal binding, ALARM 3-layer comparative consciousness, multilevel gating & `HP-B` frozen boundary）
+- `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md`（`v0_2` Architecture-v2 Layer-2 problem map `N1–N7`, preserved Phase 8A/9/9.5 adverse record & `§14 R4-C4` index）
+- `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`（`v3` domain registry & `FB-C4-1..5` map）
+- `Neuroscience/_SRT_Neuro_Axioms.md`（`v2`）& `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（`v2` claim-status audit; overdue downgrades executed）
 - 神经归一化 → 行为选择的有界入口：`Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`；P4 工作线：`Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`；相对响应、选择倾向与实际行为事件必须分层，formal lock 与经验执行尚未完成
-- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`（domain index for hardening drafts and Pipeline 1 neuroscience material patches; not a canonical source）
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
 - `Neuroscience_Annex/README.md`（bridge/interface annex index for extracted neuroscience comparison material; `canonical: false`, not a Core definition source）
-- `Neuroscience/Neural_Mechanisms_Split/README.md`、`Neuroscience/Immune_Dist_Split/README.md`（longform split reading aids; not independent authority layers）
+- `Neuroscience/Neural_Mechanisms_Split/README.md`（deterministically rebuilt `R4-C4` split）、`Neuroscience/Immune_Dist_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Physics
 

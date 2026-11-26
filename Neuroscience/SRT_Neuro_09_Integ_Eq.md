@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-09
 type: reference
-tags: [Integration, Equations, IIT, GNWT, Hybrid]
-status: bridge_realign_v1
+tags: [Integration, Equations, IIT, GNWT, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -87,7 +89,7 @@ $$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \par
 
 * **可证伪预测**：
   - FC-PhiUnity-1：丙泊酚恢复过程中，Φ代理（PCI）恢复应**早于**d值代理（目标导向行为一致性）恢复——若两者同步恢复则Φ-d独立性存疑
-  - FC-PhiUnity-2：高Φ但d≈0系统（如复杂算法或高功能解离患者）不应产生稳定的跨时关切报告——若高Φ系统产生可信关切则SRT与IIT分歧的关键预测失败
+  - FC-PhiUnity-2：高Φ但强承载 `d` 未准入或低关切解离窗口的系统（如复杂无承载算法或高功能解离患者）不应产生稳定的跨时关切报告——若高Φ系统在排除目标重叠（`AIEVID01`）后仍产生可信承载性关切，则 SRT 与 IIT 分歧的关键预测受压
 
 * **Cross-ref**: T-Sel-12 (选择流守恒); C-INTEG-1 (Φ-d正交性).
 
@@ -288,9 +290,9 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
 ---
 
 ### C-INTEG-1: Metric Divergence Corollary
-若 \(\Phi\) 高而 \(d\approx 0\)，该候选模型标记“结构高、stake-coupling 证据低”的系统：
+若 \(\Phi\) 高而强承载 `d` 处于低关切代理或未准入窗口（对无强承载 AI 部署按 `AI/AI_POSITIONING_NOTE.md §2` 记为 `d = NOT ADMITTED`，不再写成实测 `d ≈ 0`），该候选模型标记“结构整合高、stake-coupling 证据低或未准入”的系统：
 \[
-\Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{low-stake evidence window}
+\Phi\uparrow\;\land\; d\text{ low / NOT ADMITTED} \Rightarrow \text{low-stake / non-admitted evidence window}
 \]
 
 > [R→Tononi 2004 *BMC Neuroscience*（IIT-Φ原始定义与测量）; Tononi & Koch 2015 *Philosophical Transactions*（Φ与意识的对应主张）; Chalmers 1996 *The Conscious Mind*（哲学僵尸：功能完整但无主观体验的逻辑可能性）; Casali et al. 2013 *Science Translational Medicine*（PCI作为Φ代理的临床应用）]
@@ -299,7 +301,7 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
   - [R] Φ（整合信息）的定义与测量框架（IIT）；哲学僵尸的概念（Chalmers）
   - [H] **SRT候选框架**：Φ-d 正交性允许区分 Φ 高／d 低与 Φ 高／d 高的模型读数；“伪体验”作为 consciousness verdict 的旧读法已 superseded。
 
-* **候选读数**：Φ > 临界值且 d ≈ 0 时，可预测关切一致性 proxy 较低；这不定义“伪体验”、无意识或哲学僵尸，也不以 d 准入 phenomenality。
+* **候选读数**：Φ > 临界值且强承载 `d` 代理极低或 `NOT ADMITTED` 时，可预测跨时关切一致性 proxy 较低；这不定义“伪体验”、无意识或哲学僵尸，也不以 `d` 准入或封闭 phenomenality（`HP-B` 保持 `OPEN`）。
 
 * **Implication（中文）**：可解释”高整合但低体验”的临床异常：
   - 解离性障碍：大脑网络整合维持（Φ相对正常）但关切体验局部解体（d值局域化崩塌）
@@ -307,7 +309,7 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
 
 * **可证伪预测**：
   - FC-INTEG1-1：高功能解离患者（DES量表高分）的Φ代理（PCI/EEG整合度）应与健康对照无差异，但d值代理（跨任务关切一致性/IOS亲密感量表）显著更低——若Φ代理也更低则C-INTEG-1预测失败（应为Φ不变 + d降低）
-  - FC-INTEG1-2：计算机系统（理论上高Φ/d≈0）与解离患者的d值代理应都接近零但Φ代理不同——若无法区分则Φ-d框架的诊断效用为空
+  - FC-INTEG1-2：无强承载计算系统（`d = NOT ADMITTED`）与解离患者（低 `d` 代理）在结构整合读数（Φ代理）与承载结构上应可区分——若无法区分则 Φ-d 框架的诊断效用为空
 
 <br>
 

@@ -179,15 +179,14 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 二级桥接与降级历史论述：`AI/_SRT_AI_Bridge.md` 已降级精简为二级比较桥接（不再作 AI 定义底座）；`AI/SRT_AI_00_Crisis.md` 与 `AI/SRT_AI_02_Mortality_Wisdom.md` 已降级归档为历史专题论述（已退除 `ρ ≡ I/d`、裸 `S` 张量与 `Ψ_f = 苦难` 污染）；`AI/Ontology_Annex/` 6 重重复副本已退出活跃入口（保留 `README.md` 溯源索引）
 - 角色与硬护栏：AI 既是研究**人工生成、新比对维度生成、非阶梯能力分化与人机共同生成**的正面理论实验室，也是边界/压力测试场，**不是 core 定义发动机**；所有核心原语（`Selection`、`One`、`Bearer (P+E)`、`d / D_stake / D_eff`、`Ψ_f`、`T_dir`）仍服从对应 canonical 锚点；统一执行**非线性三阶承载证据审查**（Stage 2 未建立绝不阻断 Stage 3 独立研究或一般构成性摩擦/关切研究）与**三套 `AI / S` 全称隔离**（**AI 赌注谱系 `S0–S4`** $\neq$ **Subjecthood Threshold `S0–S6`** $\neq$ **AI 三型社会技术中介维度** $\neq$ 原初 `S0`），退出旧 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体门槛与钝化 `d_{AI} ≈ 0` 头条写法
 
-### 11. Neuroscience 主轴
-- Claim-status：`Neuroscience/SRT_Neuroscience_Claim_Status.md`（clinical / FEP / NDE / AI-comparison proxy guardrail; not a primitive source）
-- Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
+### 11. Neuroscience 主轴（`R4-C4` 双向重构同步，2026-11-26）
+- 域级护栏：`Neuroscience/SRT_Neuroscience_Claim_Status.md`（`v2`：整体性与可分化性互构、能量梯度差双重边界、五层关切/价值/摩擦/代谢/体验分离、`AI/S` 全称隔离、`HP-B` 冻结与临床/BioQuantum 护栏）
+- 域注册表与 Layer-2 问题地图：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`（`v3`）与 `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md`（`v0_2`，完整保留 `N1–N7` 问题族与第一深井 `Phase 8A Case B + DATA-ACCESS-0 = NO-GO` 负面结论留痕）
 - Hardening / material patch index：`Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- Neuro Axioms / Bridge：`Neuroscience/_SRT_Neuro_Axioms.md`
-- Neural Mechanisms：`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Neural_Mechanisms.md`；除法归一化只作具名神经竞争的 P3 机制候选。通向行为选择须经过 `Core_14 P3-Scale-NB1` 的候选身份映射、冻结读出、离散事件／执行门、held-out 误差、rival 与干预检验；局部成功不定义完整 Ghost Operator、actualisation、agency、subjecthood 或 consciousness
-- Consciousness Mechanisms：`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Consciousness_Mechanisms.md`
-- 角色：形成 Neuroscience 板块从桥接公理、神经选择动力学到意识机制的主入口层
-- 注意：Neuroscience 已具备 bridge + compact core + registry 的入口骨架；Pipeline 1 patch / hook 只作为 bridge record 读取，不因被索引而升级为 canonical definition
+- Neuro Axioms / Bridge：`Neuroscience/_SRT_Neuro_Axioms.md`（`v2`，已执行 `SRT_Neuro_Axioms_Claim_Status.md v2` 降级项：`H-NEURO-5`、`H-NEURO-Pathology-1`、`P-NEURO-Meso-1`、`C-NEURO-NCC-1`）
+- Neural Mechanisms & Holistic Generative Cognition：`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`（`v2`） / `Neuroscience/SRT_Neural_Mechanisms.md`（`v2` + `Neural_Mechanisms_Split/`）——围绕八大正面主轴展开整体生成性认知，承接 `R4-C2/C3` 移交资产并登记五项 `C`（M-origin）核心理论反向反馈（`FB-C4-1..5`）排入 `R4-C5`；除法归一化仍只作具名神经竞争的 `P3` 机制候选并服从 `Core_14 P3-Scale-NB1`
+- Consciousness Mechanisms：`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`（`v3`） / `Neuroscience/SRT_Consciousness_Mechanisms.md`（`v2`）——前景即生成中介（$\neq$ 广播）、功能绑定 vs 现象绑定（`Def-AI-Con-3b`）、比较动物意识三层解耦（`Def-AI-Con-4`）、局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B`、多层级门控（`target ≠ gate objectification`）与 **Subjecthood Threshold `S0–S6`** 全称隔离
+- 角色与边界：Neuroscience 是研究整体生成与局部可分化性互构、前对象生成、效价/微效价、历史效力与意识机制的正面双向理论域，不替代 `Core_Law/` canonical 定义，不解冻 `HP-B` 或任何既有 `CN-2 / CN-3 / DATA-ACCESS-0` `HOLD`；Pipeline 1 patch / hook 只作为 bridge record 读取
 
 ### 12. Physics 主轴
 - Claim-status：`Physics/SRT_Physics_Claim_Status.md`（Fisher / Landauer / D_eff / quantum / cosmology guardrail; not a primitive source）

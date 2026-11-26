@@ -1,11 +1,14 @@
 ---
 id: SRT-NEURO-AXIOMS-CLAIM-STATUS
 type: audit
-tags: [Neuroscience, Claim Mode, Canonical Audit, Bridge]
-status: active_v1
+tags: [Neuroscience, Claim Mode, Canonical Audit, Bridge, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
+canonical: false
 dependency: [SRT-NEURO-AXIOMS-001, Governance/SRT_CLAIM_LADDER]
 ---
 
@@ -177,23 +180,19 @@ Mapping:
 | N8 experimental roadmap | compact core §10; `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` for the first bounded P4 workline |
 | N9 mainstream-theory distinction | compact core §10 and PR staging draft |
 
-## 8. Recommended next edits to `_SRT_Neuro_Axioms.md`
+## 8. Executed Edits in `_SRT_Neuro_Axioms.md` (`R4-C4` Completed, 2026-11-26)
 
-When full-file editing is safe, perform these minimal edits:
+All five overdue claim-status cleanups originally queued here have now been executed in `_SRT_Neuro_Axioms.md` (`v2`, `status: active`, `claim_mode: bridge`, `canonical: false`):
 
-1. Change or qualify frontmatter `claim_mode: canonical`.
-2. Add a top warning:
-
-```text
-This file is canonical-facing, but not every claim inside is canonical. See `SRT_Neuro_Axioms_Claim_Status.md`.
-```
-
-3. Rename or annotate theorem labels:
-   - `T-NEURO-2` -> `P-NEURO-Pathology-1` or `H-NEURO-Pathology-1`;
-   - `T-NEURO-3` -> `P-NEURO-Meso-1`;
-   - `T-NEURO-4` -> `C-NEURO-NCC-1` unless formal premises are supplied.
-4. Mark Part B as contextual discourse, not canonical axiom source.
-5. Link the N1-N9 compact-core integrations.
+1. Qualified frontmatter to `claim_mode: bridge` and `canonical: false`.
+2. Added top canonical-facing hybrid bridge warning plus `R4-C4` holism–differentiability, `L_0/L_1/L_2` analytic-aspect, and energy-gradient candidate guardrails.
+3. Downgraded over-promoted theorem/axiom labels:
+   - `Ax-NEURO-5` (`\Psi_f \equiv \int`) → `H-NEURO-5` (metabolic friction bridge proxy + energy-gradient deeper physical generative mechanism candidate boundary);
+   - `T-NEURO-2` (`Pathology \iff \Delta\theta`) → `H-NEURO-Pathology-1` (non-biconditional modeling lens);
+   - `T-NEURO-3` → `P-NEURO-Meso-1` (candidate slow-timescale meso-selection & developmental pruning mechanism);
+   - `T-NEURO-4` → `C-NEURO-NCC-1` (conceptual bridge constraint aligned with `HP-B` freeze).
+4. Marked Part B explicitly as historical/contextual discourse, not canonical axiom source.
+5. Synchronized with `SRT_Neural_Mechanisms_CompactCore.md v2` and `SRT_Consciousness_Mechanisms_CompactCore.md v3`.
 
 ## 9. Current usage rule
 

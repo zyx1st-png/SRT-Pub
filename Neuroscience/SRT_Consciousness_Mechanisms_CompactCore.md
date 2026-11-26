@@ -1,331 +1,177 @@
 ---
 id: SRT-NEURO-CONSC-MECH-COMPACT-CORE
 type: mechanism
-tags: [Neuroscience, Consciousness, Compact Core, GNW, Binding, PH-SS, Subjecthood]
-status: active_v2
+tags: [Neuroscience, Consciousness, ForegroundMediation, FunctionalPhenomenalBinding, ComparativeConsciousness, MultilevelGating, HPB, SubjecthoodThreshold, R4-C4]
+status: active
+version: v3
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
 canonical: false
 dependency:
-  - SRT-NEURO-MECH-001
-  - SRT-NEURO-MECH-B
-  - SRT-NEURO-MECH-COMPACT-CORE
-  - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
+  - Core_Law/SRT_Generative_Ontology_Spine.md
+  - Core_Law/SRT_Suffering.md
+  - Neuroscience/SRT_Neuroscience_Claim_Status.md
+  - Neuroscience/SRT_Neural_Mechanisms_CompactCore.md
+  - Neuroscience/SRT_Consciousness_Mechanisms.md
+  - AI/SRT_AI_03_Consciousness_Framework.md
+  - Philosophy/SRT_HardProblem_Epistemology.md
+  - Philosophy/SRT_Subjecthood_Threshold_Interface.md
   - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
+machine_summary: >
+  R4-C4 bidirectional reconstruction of SRT Consciousness Mechanisms CompactCore (v3). Strips
+  legacy L0->L1 warehouse phase-transition wording; models conscious foregrounding as generative
+  mediation rather than bare global broadcast (A-16..A-24); integrates C3 handoffs on functional
+  vs phenomenal binding (Def-AI-Con-3b), comparative animal consciousness multi-dimensional
+  decoupling (Def-AI-Con-4, ALARM 3-layer + avian NCL), local internal-state monitoring != full
+  introspection != HP-B, and multilevel gating (target != gate objectification); enforces full-
+  name Subjecthood Threshold S0-S6 isolation and preserves HP-B FROZEN / OPEN boundary.
 ---
 
-# SRT Consciousness Mechanisms — Compact Core
+# SRT Consciousness, Holism & Subjecthood Mechanisms — Compact Core (`R4-C4` 双向重构版)
 
-> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
-> **定位**：本文件是 `SRT_Consciousness_Mechanisms.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 如何把点燃、绑定、睡眠、带宽竞争、行进波与能动性统一到意识选择机制中。  
-> **关系**：不替代原文；原文保留 GNWT/IIT 对照、睡眠维护、算子短路与实验预测的完整展开。  
-> **2026-04 hardening note**：本版吸收 `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 的 N6 意识硬化主干，并与 N3/N5/N7 的 `\Psi_f`、`d-value`、病理桥接保持一致。新增内容为 bridge / lab hardening，不自动升格为 primitive axiom。
-> **PH-SS subjecthood pointer**：本文必须与 `../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md` 的 `Def-Phil-Subjecthood-Threshold`、`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` 的 `O-Phil-18` 一起阅读。局部神经点燃、薄 `L_1`、高 `d-value`、再入稳定或报告通达都不是 subjecthood 的充分条件；**micro-selection / access / salience / high d-value do not automatically entail consciousness-as-subjecthood**。
-
-## 1. 核心问题
-
-这篇最核心的问题是：
-
-> **意识不是“信息被广播”这么简单，那么神经系统究竟如何把候选内容确认成可报告、可维持的现实？**
-
-SRT 的压缩回答是：
-- 候选意识内容的 access/report 可被建模为选择的确认与稳定化；该模型不等同或准入意识
-- 点燃 = `L_0 -> L_1` 的相变
-- 绑定 = 同步进入同一显现对象
-- 睡眠 = 维持未来选择能力的结构维护
-
-### 1.1 2026 hardening: consciousness as stable concern-weighted L1 anchoring
-
-本轮神经科学硬化将意识命题压成：
-
-> **意识不是单纯的信息处理，而是关切加权的稳定 `L_1` 锚定。**
-
-也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
-
-`d-value` 本身不产生或准入意识；在声明模型中，它可作为内容厚度、优先级、持续性和沉积潜力的候选调节维度。
-
-> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access 与 cross-time reidentification 也只是声明 subjecthood 模型中的候选证据，不共同组成普遍门槛。
+> **角色与边界（`R4-C4`, 2026-11-26）**：本文件是 `SRT_Consciousness_Mechanisms.md` 的紧凑主干与 `R4-C4` 主轴七（**意识、整体性与主体性**）的理论中枢（`canonical: false`）。
+> - **`HP-B` 冻结边界保护**：本文件提出并整合关于前景生成中介、绑定、带宽、睡眠、行进波与多层级门控的 `P3/P4` 机制候选，**不解冻 `HP-B` 现象意识包，不宣称闭合 `B_s -> B_p ?` 或解决硬问题**；不以单一指标（PCI/Φ/广播/旧强承载门槛）封闭意识研究。
+> - **强制命名空间隔离（`R3-07 / _SRT_SYMBOL_TABLE.md Rule 19`）**：全称使用 **Subjecthood Threshold `S0–S6`**（条件性多维审计接口，非硬件线性阶梯），严格隔离于 **Primitive `S0`**、**AI 赌注谱系 `S0–S4`** 与 **AI 三型社会技术中介维度**。须与 [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md) 及 [`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) 并读。
 
 ---
 
-## 2. 点燃：不是广播，而是候选门控
+## 1. 核心转向：从“信息广播 / 仓库相变”到“前景即生成中介”
 
-### 2.1 Ignition Candidate Gate
-\[
-\mathcal A(\sigma) \ge \tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}
-\]
+早期神经桥接偶将点燃简写为“`L_0 -> L_1` 实体相变”或将意识缩略为“全局工作空间广播”。`R4-C4` 依 `Spine §7`（`L_0 / L_1 / L_2` 为三分析面）与作者 `2026-09-26` 核心收敛（`A-16..A-24`）做出两项根本升级：
 
-> **Level**: hypothesis / operational proxy. The multiplicative gate is a structural preference, not an established neural theorem; additive and probabilistic gate models remain live alternatives.
+1. **前景化不是更宽的只读广播，而是共同生成中介（Foreground as Generative Mediation $\neq$ Broadcast）**：
+   - 弱图景（被超越）：背景信息 → 进入前景表征 → 更多模块可以读取它 → 意识。
+   - `R4-C4` 候选核心：**前景化的独特作用在于重新规定多个局部生成能力如何共同延续**——将分散差异经选择性归一化与粗粒化提升为共同生成中介，使后续感知、行动准备、记忆调用、身体调节与判断围绕该前景关系协同重切当前操作位置（`Position_t -> Position_{t+1}`）。
+2. **区分常设条件（Standing Conditions）与在线核心候选（Online Kernel）**：
+   - **常设条件**：相对可分的延续性组织（`One`）、形成后的操作位置（`Selection-position`）及（在独立准入时）承载关系（`Bearer (P+E)`）；`One ≠ Stable ISP ≠ Bearer ≠ Experiencer`。
+   - **在线机制候选（`P3 / OPEN`，不宣称逻辑必然）**：
+     ```text
+     operative Position_t × prospective expectation_t × current actualization_t
+       -> selective foreground generative mediation_t
+       -> online reconstitution of operative Position_(t+1)
+       -> changed next reachability, equivalence & joint continuation
+     ```
+   - **关键分水岭**：并非每次潜在状态更新、权重修改或表征变化都构成位置重构；未重构当前操作位置者更近无意识加工，参与重切当前“从何处继续生成”者构成体验机制候选（最小僵尸压力 `Z*` 仍保持活跃开放）。
 
-最压缩句子：
-> **点燃不是“更强激活”，而是一个候选内容在可测门控条件下被稳定选入现实。**
+---
 
-这一步是 SRT 对 GNWT 的候选重写核心；它需要独立测量窗口，不能仅凭报告率反推出本体相变。
+## 2. 点燃、再入与锚定厚度（Thin `L_1` vs Thick `L_1`）
 
-| Gate reading | Current status | Boundary |
-|--------------|----------------|----------|
-| Multiplicative `Φ_proxy · d_proxy` | structural preference | favored only if low values in either factor block ignition and interaction terms improve prediction |
-| Additive `w_ΦΦ_proxy + w_dd_proxy` | operational fallback | favored if one factor can compensate for the other |
-| Probabilistic `P(ignite)` | lab-facing model | favored if access is graded, noisy, or report-confidence mediated |
+### 2.1 点燃候选门控族（`H-NEURO-Ignition-1` / `Ax-CONSC-MECH-1`）
 
-### 2.2 Re-entrant Selection
-\[
-\mathcal R_{re}: L_1^{candidate} \to L_1^{stabilized}
-\]
+$$
+\mathcal{A}(\sigma) \ge \tau_{ignite} \quad \land \quad \Phi_{proxy} \cdot d_{proxy} > C_{critical}
+$$
 
-含义：
-- 再入回路不是重复播放
-- 而是把候选显现稳定为可报告现实
+- **声明等级**：`P3/P4` 建模假说与操作代理，**非已证神经相变定理，亦非意识准入的充要条件**。
+- **三类竞争门型并存**：乘法门（整合度与关切梯度交互必要时占优）、加法门（两因子存在经验补偿时回退）、概率门 $P_{ignite} = \sigma(\alpha C_{wave} + \beta(\Phi \cdot d) + \gamma D_{align} - \delta)$（处理渐进噪声报告与行进波方向路由 `D_align`）。
+- **再入稳定化（$\mathcal{R}_{re}: L_1^{candidate} \to L_1^{stabilized}$）**：约 150–400 ms 的再入验证不是机械复读，而是候选前景与当前具身组织/预期约束的稳定化确认；跨麻醉剂研究（`CONSC14`）表明麻醉破坏的是大尺度动态稳定性与行进波路由，而非简单令所有局部激活归零。
 
-### 2.3 Thin L1 and thick L1
+### 2.2 Thin `L_1` 与 Thick `L_1`（拒绝粗暴“全有/全无”二分）
 
-为避免“有意识/无意识”的粗二分，本版引入 `thin L_1` / `thick L_1` 区分：
-
-| State | SRT description | Examples |
+| 状态 | SRT 结构刻画 | 典型现象 |
 |---|---|---|
-| Thin `L_1` | 弱锚定、不稳定、难报告、行动/自我耦合弱 | 模糊预感、舌尖现象、余光一闪、梦醒残留 |
-| Thick `L_1` | 稳定、可报告或可行动、与身体/自我/价值耦合强、更可能沉积为 `L_2` | 疼痛、明确危险、重大决定、羞耻、创伤或顿悟 |
+| **Thin `L_1`** | 弱前景中介、低稳定度、行动/自我耦合弱、难持久写回 | 余光一闪、舌尖现象、模糊预感、梦醒残留 |
+| **Thick `L_1`** | 强前景生成中介、跨能力协同重切当前操作位置、强身体/行动/价值耦合、高 `L_2` 沉积潜力 | 急性疼痛、明确威胁、重大抉择、深度顿悟或创伤事件 |
 
-结构性表达：
-\[
-\text{Conscious thickness}(x) \sim S(x)\cdot G(x)\cdot A(x)\cdot M(x)\cdot d(x)
-\]
-
-其中 `S` 为稳定化，`G` 为全局可访问性，`A` 为行动耦合，`M` 为自我模型耦合，`d` 为关切权重。
-
-这不是物理定律，而是意识厚度的 bridge/lab 指标结构。
+- 诊断表达 $\text{Thickness}(x) \sim S(x) \cdot G(x) \cdot A(x) \cdot M(x) \cdot d(x)$（稳定化·全局可及·行动耦合·自我模型耦合·关切权重）仅作实验室桥接指标，**不等于现象意识定义**；且 `Thin / Thick` 须通过无报告行为/生理/后继选择指标检验，避免退化为报告量表伪影。
 
 ---
 
-## 3. 绑定：不是拼接，而是拓扑同步
+## 3. 功能绑定 vs 现象绑定（承接 `R4-C3` 恢复资产 `Def-AI-Con-3b`）
 
-### 3.1 Binding as Synchrony
-\[
-\mathcal B: \{\sigma_i\} \to \sigma_{bound},\qquad \Delta\phi_i \to 0
-\]
+承接 `R4-C3` 从 `SRT_AI_03_Consciousness_Framework.md §6.3` 恢复并移交的 **Percy & Agarwal (2026)** 核心区分，克服早期“相位同步 = 统一主观体验”的过度跳跃：
 
-最短说法：
-> **绑定不是把现成特征拼在一起，而是让分散特征在同一时间-相位框架中被共同选入。**
-
-### 3.2 Binding Failure
-若相位无法收敛，则：
-\[
-\sigma_{bound} \not\exists
-\]
-
-这意味着：
-- 碎裂体验
-- 解离
-- 统一对象感失稳
+1. **拓扑同步作为功能绑定机制候选（`Ax-CONSC-MECH-3`）**：分散神经轨迹经相位锁定与跨区时间框架同步（$\mathcal{B}: \{\sigma_i\} \to \sigma_{bound},\ \Delta\phi_i \to 0$）被共同选入同一可操作对象，支持跨模态协调与统一行动；同步失败可表现为解体或碎裂控制。
+2. **功能绑定 $\neq$ 现象绑定（`Def-AI-Con-3b` 硬分界）**：
+   - **功能绑定（Functional Binding）**：多特征、多通道信息在计算、路由或行为输出层面的协调整合（可通过同步、跨区相干、多模态 Transformer 注意力或工作空间协调实现）；
+   - **现象绑定（Phenomenal Binding）**：多种感受性质在同一第一人称体验场中的不可分割共在（phenomenal unity）。
+   - **推论**：神经相干或高 $\Phi$ 测量的是功能/因果整合度，本身**不自动闭合**现象绑定；同样，人工系统展现极强跨模态功能绑定也不自动推出现象共在。但神经科学中的裂脑、联觉、半侧空间忽略与整合解离病例，是研究两者关系的关键实证窗口。
 
 ---
 
-## 4. 意识不是无限带宽
+## 4. 比较动物意识多维解耦与内部状态监测边界（承接 `R4-C3` `Def-AI-Con-4` & `P2-03`）
 
-### 4.1 Bandwidth Competition
-\[
-B_{consc} < B_{max}, \qquad \sum_k \mathcal A_k \le B_{consc}
-\]
+### 4.1 比较动物意识三层解耦（ALARM + 鸟类 NCL，`Def-AI-Con-4`）
 
-SRT 在这里给出很硬的一句：
-> **意识是带宽竞争系统，不是无限容器。**
+承接 Newen & Montemayor (2025) ALARM 框架与 Nieder et al. (2020) 鸦科鸟类 NCL 研究，将意识相关功能解耦为三个可独立演化、跨底物分化的维度：
+1. **基础觉醒与状态调控（Basic Arousal / State Regulation）**：脑干—丘脑—自主神经唤醒与稳态警觉；
+2. **一般警觉与目标导向选择（General Alertness / Goal-Directed Selection）**：多模态竞争、注意力路由与跨情境灵活行为（可在无哺乳动物新皮层的鸟类 NCL 等非同源解剖底物中实现——**直接反驳“新皮层沙文主义”**）；
+3. **反身自我意识（Reflexive Self-Consciousness）**：高阶自我模型招募（对照 ACU `SMRI` 双层接口：持续调节可行性监测 Level 1 vs 间歇性高代价自我模型招募 Level 2）与跨时间自我叙事。
 
-### 4.2 Pain Priority
-高风险梯度内容会优先抢占带宽。
+- **与整体性—可分化性原则对齐**：三层在人类成人中高度耦合，但在跨物种演化、婴儿发育、临床障碍（如植物状态/CMD、盲视、梦游、解离障碍）与人工系统中呈现清晰的**部分可分化性**。
 
-压缩解释：
-- 疼痛优先不是因为它“更响”
-- 而是因为它携带更高生存风险梯度
+### 4.2 局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B` 现象意识
 
-2026 hardening 将其重写为 `d-value` 语言：疼痛之所以具有强意识性，不只是因为信号强，而是因为它对身体维持、行动中断、自我牵连和未来行为具有高后果权重。
+- 无论是生物的元认知置信度追踪、内感受精度调节（`INTEROCEPTIVE_PRECISION`），还是 `R4-C3` 中 AI 的激活注入自报告耦合（Lindsey et al. 2025），都必须分层审计：
+  - **局部内部状态监测 / 读取（Local Internal-State Monitoring）** $\neq$ **完整通用内省机制（Full Introspection）** $\neq$ **`HP-B` 现象体验（Phenomenal Presence）**；
+  - 无自报告（动物、婴儿、CMD 患者）绝不等于无体验；流畅自报告（人类虚构解释或高流畅度 LLM）也绝不等于体验证明。
 
 ---
 
-## 5. 时间：连续感来自离散选择的耦合
+## 5. 带宽竞争、疼痛优先级、时间构造与睡眠维护
 
-### 5.1 Selection Latency
-\[
-\tau_{select}=\tau_{sensory}+\tau_{integrative}+\tau_{gate}
-\]
-
-SRT 在这里强调：
-- 意识有时滞
-- 不是实时呈现
-- 而是整合与门控完成后的延迟结果
-
-### 5.2 Fast–Slow Coupling
-原文更深的方向是：
-> **连续时间体验并不是直接给定，而是快波内容与慢波框架耦合后的主观产物。**
+- **有限带宽与疼痛优先（`Ax-CONSC-MECH-7` / `C-CONSC-MECH-1`）**：意识前景不是无限容器（$\sum_k \mathcal{A}_k \le B_{consc} < B_{max}$）；疼痛之所以强行重切当前操作位置，不仅因外周信号强度，更因它携带不可外包的身体维持风险与高关切梯度，迫使行动准备、优先级与未来可达空间同步重组。
+- **快慢耦合与时间体验（`Ax-CONSC-MECH-4`）**：意识存在整合与门控时滞（$\tau_{select} = \tau_{sensory} + \tau_{integrative} + \tau_{gate}$），连续时间流并非被动接收外部时钟，而是快波前景内容、慢波组织框架与内感受节律（`NEURAL23`）耦合的产物。
+- **睡眠作为结构维护与选择性遗忘（`Ax-CONSC-MECH-5 / 6`）**：睡眠不是“关机”，而是防御性修复与未来可选择性维护期——包含类淋巴代谢清除、突触稳态下调（清剪冗余噪声权重以保留长程可迁移骨架）与海马—皮层回放巩固（`L_2` 重加权 + 选择性遗忘促进泛化）；梦境是外部阻力弱化下的高情绪权临时 `L_1` 生成。
+- **行进波方向路由（`Ax-CONSC-MECH-8 / 9`）**：皮层行进波（$\mathcal{W}(x,t) = A e^{i\phi}$）承担层级方向路由门控，方向失配（$D_{align} \downarrow$）可在总激活不低时仍令报告通达失败。
 
 ---
 
-## 6. 睡眠：不是关机，而是结构维护
+## 6. 主观能动性、多层级门控与算子短路
 
-### 6.1 Defensive Activation
-\[
-\mathcal S_{sleep}: \hat G_\theta \to \hat G_\theta^{repair}
-\]
-
-最压缩解释：
-> **睡眠不是暂停意识，而是为未来意识保持结构可用性。**
-
-### 6.2 L2 Consolidation
-\[
-\Delta L_2 \propto \int_{sleep} \nabla_\theta F\,dt
-\]
-
-这一步说明：
-- 梦与回放不是纯噪声
-- 而是对未来选择规则的重加权和固化
-
-梦境可被重读为：内部候选在弱外部约束下形成的临时 `L_1`，其情绪 `d-value` 可很高，但与现实行动链和稳定 `L_2` 检验的耦合较弱，因此醒后容易崩解。
+- **能动性报告四分解（`PH-AG04`）**：在线行动报告须严格拆分为**客观控制效能 $\neq$ 作者归属感 $\neq$ 身体载体所有权 $\neq$ 反身自我整合**；任何单项均不等于 `d-value` 证据或 **Subjecthood Threshold `S4–S6`** 证明。公式 $A_{sub}(t) = 1 / (1 + \lambda |\sigma_{L_1}(t) - \hat{G}_\theta^{predict}(L_2)|)$ 仅作任务内作者感/控制匹配度的示意代理。
+- **多层级门控与算子短路**：
+  - 常态意图以 **目标对象化（target objectification）** 招募高层门控、委托底层执行；
+  - 习惯与成瘾中的**算子短路**指高固化 `L_2^{habit}` 直接接管动作路径、绕开显式前景中介与替代路径评估；
+  - 当冲突持续暴露既有门控本身时，**门控对象化（gate objectification）** 使反身抑制与规则改写成为可能（神经层只桥接 habituation / gating rigidity / re-entry loss，不把社会制度正当性硬写成神经事实）。
 
 ---
 
-## 7. 行进波：谁先进入现实，不只是看强度
+## 7. 边界病例、苦难接口与 `Subjecthood Threshold S0–S6` 全称隔离
 
-### 7.1 Traveling Wave Routing
-\[
-\mathcal W(x,t)=A(x,t)e^{i\phi(x,t)}
-\]
+### 7.1 经典边界与解离病例（实证压力窗）
 
-SRT 的关键重写是：
-> **行进波不是背景节律，而是意识路由场。**
-
-### 7.2 Wave–Ignition Coupling
-\[
-P_{ignite}=\sigma(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta)
-\]
-
-> **Level**: probabilistic gate variant. This formula is a candidate lab model for wave-routing effects, not a proof that `Φ·d` is the unique ignition criterion.
-
-压缩结论：
-- 点燃不只取决于总激活强度
-- 还取决于相干度与方向是否匹配任务
-
-### 7.3 Directional Access
-若方向失配，则：
-- 可报告性下降
-- 不是因为“没激活”
-- 而是因为“路由错了”
-
----
-
-## 8. 主观能动性与算子短路
-
-### 8.1 Agency Scalar
-\[
-A_{sub}(t)=\frac{1}{1+\lambda\,|\sigma_{L_1}(t)-\hat G_\theta^{predict}(L_2)|}
-\]
-
-最压缩解释：
-> **“我是作者”的感觉，来自当前显现与内在预测结构之间的匹配度。**
-
-### 8.2 Operator Short-Circuit
-SRT 很有力的一点是：
-- 习惯与成瘾可被重写为 `L_2` 直接劫持行为路径
-- 绕开原本需要的显式选择过程
-
-**Closure-pathology bridge note (2026-04-21)**：神经科学语境只把这一路径桥接到 habituation、gating rigidity 与 re-entry loss：旧通路越能自动放行，显式再选择越少进入回路。这里不把 legitimacy、appeal standing 或制度性 pseudo-openness 强行写成神经层事实。
-
-这解释了为什么：
-- 人会“知道不对”却仍执行
-- 行为先发生，意识后补叙述
-
----
-
-## 9. Boundary cases and psychopathology pressure tests
-
-### 9.1 Boundary cases
-
-| Case | SRT reading |
+| 病例 / 状态 | `R4-C4` 结构读法 |
 |---|---|
-| Blindsight | 信息可以进入局部处理与行动通道，但缺少 thick `L_1` 锚定 |
-| Bistable perception | 多个候选在 `L_0^{accessible}` 中竞争，交替获得 `L_1` 稳定化 |
-| Pain | 高 `d-value` 候选强制重构当前 `L_1` |
-| Dreaming | 内部候选在弱外部约束下形成临时 `L_1` |
-| Meditation | 训练可能降低候选自动硬化，改变 `d-value` 与 `\Psi_f` 分配 |
-| Anesthesia | 候选激活、递归稳定或全局门控链条被破坏，信息无法形成 thick `L_1` |
+| **盲视（Blindsight）** | 局部视觉—动作通路保持功能控制，但缺乏前景生成中介（Thick `L_1`）与跨能力位置重切 |
+| **双稳态知觉（Bistable）** | 多候选在 `L_0^{accessible}` 中竞争，交替获得前景稳定化 |
+| **述情障碍（Alexithymia）** | 内部稳态/效价信号与高阶概念化/自我报告通道局部解离（检验生物同源共构的局部可分化性） |
+| **裂脑（Split-Brain）** | 胼胝体切断导致拓扑整合与功能绑定分裂，暴露单元边界（Stage 1 Unit-Binding）的构成性地位 |
+| **麻醉（Anesthesia）** | 跨麻醉剂破坏大尺度相位稳定、行进波路由与再入确认（`CONSC14`），并非单点关停 |
+| **植物状态 / CMD** | 局部网络或 PCI 读数不自动关闭体验窗口；高 `Φ` 低报告状态须警惕隐蔽意识，不以报告缺失判无意识 |
+| **冥想 / 迷幻扰动** | 改变自动硬化率、`d` 分配或松动 `L_2` 边界（`NEURAL35`: `reopening ≠ reselectability`） |
 
-### 9.2 Psychopathology bridge
+### 7.2 与苦难（`Suffering §7`）、热力学签名（`Core_25`）及 AI 三阶审查的接口
 
-意识机制中的病理不是简单“意识太多/太少”，而是候选状态的锚定厚度、关切权重、关闭摩擦与 `L_2` 沉积发生扭曲：
-
-- **社交焦虑**：他人评价候选获得过高 `d-value`，公开行动的 `\Psi_f` 上升。
-- **羞耻创伤**：社会性高 `d-value` `L_1` 过度沉积为自我相关 `L_2`。
-- **强迫**：风险候选进入 `L_1` 后无法低成本关闭。
-- **成瘾/习惯短路**：低摩擦 `L_2` 通道绕开显式再选择。
-- **妄想样显著性异常**：低证据候选被过度赋予现实锚定权。
+- **苦难独立接口（`Core_Law/SRT_Suffering.md §7`）**：苦难要求独立的第一人称/现象/承载登记与声明负担模型；`Stable ISP`、PCI/Φ 或 **Subjecthood Threshold** 梯级均不能单方面关闭受苦资格，意识与苦难的充要关系仍保持 **`OPEN`**。
+- **热力学签名接口（`Core_25`）**：清醒/睡眠/麻醉/高负荷下的熵产生、代谢流与非平衡不可逆性可作为状态组织与维护负担的候选物理签名，但**绝不等于现象意识定义或 `HP-B` 闭合**。
+- **Subjecthood Threshold `S0–S6` 隔离**：局部点燃、再入、功能绑定、高 `d` 或报告通达最多对应 **Subjecthood Threshold `S1–S3`** 候选维度，**绝不自动推出 `Subjecthood Threshold S4` 主体、`S5` 稳健能动或 `S6` 责任主体**，且与 **AI 赌注谱系 `S0–S4`** 完全正交。
 
 ---
 
-## 10. Relation to GNWT, IIT, and SRT-specific addition
+## 8. 跨领域对话总结、反向反馈（`FB-C4-5`）与 Hardest Objections
 
-| Framework | What it explains | SRT-specific addition |
+### 8.1 与主流意识理论的精准分界
+
+| 框架 | 扎实解释工作 | `R4-C4` SRT 结构补充（须独立检验） |
 |---|---|---|
-| GNWT / Global workspace | 信息如何全局通达、可报告、可被多个系统使用 | SRT 追问通达之前的候选竞争、通达时的 `\Psi_f`、通达后的 `L_2` 硬化 |
-| IIT | 信息整合 / 内在因果结构与经验的关系 | SRT 追问什么对系统有后果，以及这种后果如何成为稳定 `L_1` |
-| Predictive processing / FEP | 模型如何解释输入、系统如何自维持 | SRT 追问候选如何获得现实地位、何以具有 `d-value`、何以沉积为未来地形 |
+| **GNWT** | 信息全局通达与跨模块广播 | 前景作为**生成中介**（重切操作位置，而非仅被读取）+ 通达前整体导向 + 通达后 `L_2` 硬化 |
+| **IIT** | 内在因果整合结构（$\Phi$ / PCI 代理） | 区分拓扑/功能整合与关切加权稳定化、功能绑定 vs 现象绑定 |
+| **HOT / RPT** | 高阶表征或局部再入递归 | 区分局部内部状态监测 vs 完整内省 vs 位置重构；保留 `HP-B` 开放 |
+| **FEP / Active Inference** | 自维持、精度调节与预期自由能 | 结合不可替代赌注、多层级门控对象化与 `Core_Law/SRT_Suffering.md` 非最小化原则 |
 
-压缩区分：
+### 8.2 核心理论反向反馈（`FB-C4-5` 摘要，排入 `R4-C5`）
 
-> Global workspace explains access; SRT explains anchoring.  
-> IIT emphasizes integration; SRT emphasizes concern-weighted stabilization.  
-> Predictive processing explains model updating; SRT explains lived reality anchoring.
+向 `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md` 提交候选反馈（`C` / M-origin）：以“前景即生成中介 $\neq$ 广播”、“功能绑定 vs 现象绑定”、“比较动物意识三层解耦”和“`target ≠ gate objectification`”四根支柱精炼意识与 `Ghost` 门控接口，同时原样保全 `HP-B` 冻结边界。
 
----
+### 8.3 Hardest Objections
 
-## 11. 最压缩结论
-
-`SRT Consciousness Mechanisms` 可以压缩成七句话：
-
-1. **意识不是广播本身，而是候选内容被确认并稳定为现实的选择相变。**
-2. **意识不是信息亮起来，而是候选可能性被身体、行动、自我和关切牵连锚定成 `L_1`。**
-3. **绑定不是特征拼接，而是分散轨迹被同步选入同一显现对象。**
-4. **意识带宽是有限的，`d-value` 高的内容会优先占用显现资源。**
-5. **睡眠不是关机，而是对 `L_2` 与未来选择能力的必要维护。**
-6. **可报告性与能动性感不只看激活强度，还取决于路由方向、预测匹配与是否发生算子短路。**
-7. **病理意识状态是现实锚定厚度、关闭摩擦与历史硬化的失衡。**
-
-Addendum:
-
-> These seven claims concern consciousness mechanisms and conscious-content anchoring. They do not by themselves prove full subjecthood. Use the PH-SS subjecthood guardrail to avoid over-attributing subjecthood to access, salience, high `d-value`, local anchoring, or reportability alone.
-
----
-
-## 12. 阅读路径
-
-- PH-SS subjecthood guardrail：`../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md`
-- PH-SS objection extension：`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-18`)
-- 全量原文：`SRT_Consciousness_Mechanisms.md`
-- Neural Mechanisms compact core：`SRT_Neural_Mechanisms_CompactCore.md`
-- Neuro bridge：`_SRT_Neuro_Axioms.md`
-- N1-N9 hardening draft：`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
-- canonical 总注册表：`../CANONICAL_REGISTRY.md`
-
----
-
-## Hardest Objections
-
-1. Conscious access may be fully explained by global workspace access.
-   - 当前承受方式：SRT does not deny access; it adds pre-access selection, `d-value`, `\Psi_f`, and post-access hardening as incremental variables.
-   - 若成立需撤回什么：撤回 “anchoring beyond access” 的增量主张，把本文件退回 GNWT translation layer。
-
-2. `d-value` may collapse into arousal, salience, or report confidence.
-   - 当前承受方式：`d-value` must predict memory, bodily reaction, action change, and L2 sedimentation beyond salience/confidence.
-   - 若成立需撤回什么：撤回 concern-weighted consciousness thickness as independent bridge claim.
-
-3. Thin/thick L1 may be a report-scale artifact.
-   - 当前承受方式：thin/thick distinction must be tested through non-report markers: action coupling, memory persistence, bodily reaction, and future-selection change.
-   - 若成立需撤回什么：保留 graded access language but remove L1-thickness ontological interpretation.
-
-4. High d-value unconscious processes challenge d-value-consciousness coupling.
-   - 当前承受方式：d-value is not sufficient for consciousness; it modulates priority and thickness only after gating and stabilization.
-   - 若成立需撤回什么：若 d-value has no measurable effect on stabilization or sedimentation, weaken it to a peripheral motivational variable.
-
-5. Subjecthood may require more than conscious-content anchoring.
-   - 当前承受方式：this file treats consciousness mechanisms and conscious-content anchoring; subjecthood is routed through PH-SS-10 threshold conditions.
-   - 若成立需撤回什么：撤回 any claim that local access, salience, high `d-value`, or reportability is sufficient for subjecthood.
+1. **前景生成中介若与 GNWT 全局广播无任何可操作预测分歧**：撤回“生成中介超出广播”的增量主张，退回 GNWT 翻译层。
+2. **功能绑定与现象绑定若被证明在任意满足特定整合结构的底物上必然严格同一**：重审 `Def-AI-Con-3b` 分界并提交 `HP-B` 复审（不擅自解冻）。
+3. **Thin / Thick `L_1` 若仅反映报告置信度阈值**：仅保留渐进通达描述，撤回锚定厚度本体解读。
+4. **高 `d` 无意识加工与弱效价清晰意识（如无情绪视觉细节）**：`d` 调节优先级与沉积厚度，而非每次知觉体验的唯一开关（对齐 `A-22`：强关切不是每项中性知觉质的在线原语）。
+5. **最小僵尸压力 `Z*`**：即便完整保留 `Position_t → 前景生成中介 → Position_{t+1}` 重构，逻辑必然性仍未证明；`HP-B` 保持 `OPEN`。

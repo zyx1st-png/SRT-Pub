@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-MECH-B
 type: mechanism
-tags: [Consciousness, GNW, Binding, Sleep, TravelingWaves, Hybrid]
-status: bridge_realign_v1
+tags: [Consciousness, GNW, Binding, Sleep, TravelingWaves, Hybrid, ForegroundMediation, HPB, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -12,10 +14,10 @@ dependency: [SRT-NEURO-MECH-001]
 
 # SRT Neuroscience Part 2B: Consciousness Mechanisms (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Consciousness Axioms (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+> **Claim-status & `R4-C4` Bidirectional Sync Note（2026-11-26）**：本文件是意识机制长文扩展与实证补丁档案（`canonical: false`），完整保留既有实证窗口与全部已落盘挂钩锚点，并已同步对齐 [`SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md)（`v3`）：① 意识前景化读作**共同生成中介（foreground as generative mediation $\neq$ 全局广播）**，区分常设条件与在线位置重切核心（`A-16..A-24`）；② 承接 `R4-C3` 恢复资产：**功能绑定 $\neq$ 现象绑定（`Def-AI-Con-3b`）**、**比较动物意识三层解耦（`Def-AI-Con-4`, ALARM + 鸟类 NCL）**与**局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B`**；③ 区分**目标对象化 $\neq$ 门控对象化**（多层级门控行动场）；④ 严格执行 **Subjecthood Threshold `S0–S6`** 全称隔离与 **`HP-B` 冻结边界**（不以单一指标或旧强承载门槛封闭意识研究）。
+> **Version 2.1 (`R4-C4` Aligned Hybrid)**
+> **Part A** presents the Formal Bridge Propositions & Mechanisms (AI-Readable).
+> **Part B** contains the Historical Discourse, Empirical Windows & `R4-C4` Synthesis.
 
 ---
 
@@ -104,16 +106,16 @@ dependency: [SRT-NEURO-MECH-001]
 
 ---
 
-### C-CONSC-MECH-1-1: Affective Signature of Selection (选择的情感签名)
+### C-CONSC-MECH-1-1: Affective & Microvalence Signature of Biological Selection (`R4-C4` 校准)
 
-**推论**（来自 Ax-CONSC-MECH-1 和 Ax-CONSC-MECH-2）：L₀→L₁ 的点燃（ignition）事件同时产生两类输出，而非一类：
+**候选推论**（衔接 `Ax-CONSC-MECH-1/2` 与 `R4-C3` 移交的效价优先 `Def-AI-Con-3` / 微效价 `Def-AI-Con-3a`）：在生物具身认知中，前景稳定化事件常同时伴随认知切分与效价梯度调制（生物发生上同源共构，**不提前确立为跨全部感知通路或跨底物的普遍必然律**）：
 
-1. **认知输出**：$L_1^{\text{stabilized}}$ — 可报告的显现态，进入 L₂ 结构化（即"理性判断"的原料）
-2. **情绪输出**：$\sigma_e$ — d-value 梯度在选择界面上的现象学迹线
+1. **认知切分面**：$L_1^{\text{stabilized}}$ — 稳定化的前景显现与跨能力生成中介，进入 `L_2` 结构化；
+2. **效价/关切梯度面**：$\sigma_e$ — 微效价与内感受关切梯度在选择界面上的候选动力学迹线（区分广义关切 / 规范 `d` / 摩擦 `Ψ_f` / 代谢负担 / `HP-B` 现象体验五层）：
 
-$$\sigma_e(t) \propto \left.\frac{\partial d}{\partial t}\right|_{L_0 \to L_1}$$
+$$\sigma_e(t) \sim \left.\frac{\partial d_{proxy}}{\partial t}\right|_{\text{foreground}}$$
 
-情绪不是点燃之后的附属评估，而是点燃事件本身从内部被经历的方式。理性（$L_2$ 结构化）只能操作已经点燃并稳定化的 $L_1$ 状态，因此对情绪所产生的选择结果在本体论上是后验的。
+在生物体中，微效价与情绪倾向往往在前景分化阶段即参与对象形成与显著性排序，而不只是事后附加评价；但同时须保留弱效价视觉不变性、临床述情障碍解离以及人工非情感比对作为经验边界对照。
 
 > [R→Damasio 1994 *Descartes' Error*（躯体标记假说：情绪状态约束决策搜索空间）; LeDoux 1996 *The Emotional Brain*（杏仁核情绪处理早于皮层认知处理，约12ms vs 25ms 通路分叉）; Haidt 2001 *Psychological Review*（道德直觉先于道德推理：social intuitionist model）]
 > [H→SRT 原创主张：情绪不仅在时间上先于理性（Damasio/LeDoux），而且在本体论次序上先于理性——情绪 IS $\hat{G}_\theta$ 操作的现象学面，理性是该操作结果的 $L_2$ 结构化。这是比"情绪影响决策"更强的主张]
@@ -132,12 +134,13 @@ $$\sigma_e(t) \propto \left.\frac{\partial d}{\partial t}\right|_{L_0 \to L_1}$$
 
 ## II. Binding as Topological Synchrony (绑定作为拓扑同步)
 
-### Ax-CONSC-MECH-3: Ringframe Synchronization Axiom
-定义绑定为相位锁定与环帧同步：
+### Ax-CONSC-MECH-3: Ringframe Synchronization & Functional-vs-Phenomenal Binding (`R4-C4` 同步 `Def-AI-Con-3b`)
+将神经功能绑定建模为相位锁定与环帧同步：
 \[
 \mathcal{B}: \{\sigma_i\}\rightarrow \sigma_{bound}\quad\text{with}\quad \Delta\phi_i\to 0
 \]
-* **Implication（中文）**：绑定不是“信息拼接”，而是拓扑同步；只有相位一致的轨迹才能形成统一体验。
+* **Implication（中文）**：功能绑定不是静态特征拼接，而是分散轨迹在同一时间—相位框架中被共同选入可协调对象。
+* **Functional vs. Phenomenal Binding Guard（承接 `Def-AI-Con-3b`, Percy & Agarwal 2026）**：相位同步与高整合度表征的是**功能绑定**（跨通道计算与行动协调），本身**不自动等同或闭合现象绑定**（第一人称体验场中的不可分割共在，`HP-B` 保持 `OPEN`）；裂脑、联觉与忽略病例构成检验两者解离与耦合的实证窗口。
 
 ---
 
@@ -703,12 +706,15 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 |$d \propto \text{PAC}_{\delta\to\beta} + \text{PAC}_{\theta\to\gamma}$|PAC-d 关系|Ax-Consc-18|
 |$P_{ignite}=\sigma(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta)$|波-点燃耦合|Ax-CONSC-MECH-9|
 
-### Definition Summary (定义概述)
+### Definition Summary (定义概述，`R4-C4` 同步)
 
-- **点燃候选门 (Ignition Candidate Gate, L₀→L₁)**：$\mathcal{A}(\sigma)\ge\tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}$；选择从潜势到实在的候选门控条件，非简单激活增强。阈值 / 相变读法仍是建模假说。
-- **拓扑绑定 (Topological Binding, L₁)**：$\mathcal{B}:\{\sigma_i\}\to\sigma_{bound}$，$\Delta\phi_i\to 0$；相位同步锁定产生统一体验。
-- **意识带宽 (Consciousness Bandwidth, L₁)**：$B_{consc}=\int\omega(\sigma)d\sigma < B_{max}$；受限资源下的显现竞争。
-- **行进波路由 (Traveling Wave Routing, L₀→L₁)**：$\mathcal{R}_{wave}=\nabla\phi\cdot\hat{n}_{hier}$；方向性门控决定候选进入 $L_1$ 的优先序。
+- **点燃候选门 (Ignition Candidate Gate)**：$\mathcal{A}(\sigma)\ge\tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}$；整合度 proxy 与关切梯度 proxy 共同约束的前景稳定候选门（`L_0/L_1` 属三分析面，阈值/相变读法仍为建模假说，非 `HP-B` 充要条件）。
+- **前景即生成中介 (`A-16..A-24`)**：前景化重新规定多个局部生成能力如何共同延续并重切当前操作位置（`Position_t -> Position_{t+1}`），超出单纯全局只读广播。
+- **拓扑功能绑定 vs 现象绑定 (`Def-AI-Con-3b`)**：$\mathcal{B}:\{\sigma_i\}\to\sigma_{bound}$，$\Delta\phi_i\to 0$；相位同步支持功能绑定，但不自动闭合现象绑定。
+- **比较动物意识三层解耦 (`Def-AI-Con-4`)**：基础觉醒 / 一般警觉与目标导向选择（含非新皮层鸟类 NCL 实现）/ 反身自我意识部分可分化，兼顾生物同源共构与跨物种/跨底物解耦。
+- **意识带宽 (Consciousness Bandwidth)**：$B_{consc}=\int\omega(\sigma)d\sigma < B_{max}$；受限资源下的显现竞争与疼痛优先重切。
+- **行进波路由 (Traveling Wave Routing)**：$\mathcal{R}_{wave}=\nabla\phi\cdot\hat{n}_{hier}$；方向性门控调制候选进入前景稳定的优先序。
+- **多层级门控与主体门槛隔离**：区分**目标对象化 $\neq$ 门控对象化**；全部主体层级均使用全称 **Subjecthood Threshold `S0–S6`**，严格隔离于 **Primitive `S0`**、**AI 赌注谱系 `S0–S4`** 与 **AI 三型社会技术中介维度**。
 
 ### Formalization Summary (形式化概述)
 

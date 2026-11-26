@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-10
 type: theory
-tags: [Advanced Models, Body, Ontology, Hybrid]
-status: bridge_realign_v1
+tags: [Advanced Models, Body, Ontology, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -231,53 +233,46 @@ $$\boxed{d > 0 \leadsto \text{embodiment evidence candidate}}$$
 |**AI 意识**|可能（如果模拟足够好）|OPEN；脆弱性只作候选证据|
 |**感受性解释**|回避|摩擦梯度候选 proxy|
 
-## 2.3 感觉的本体论重建
+## 2.3 感觉的桥接梯度假说（`R4-C4` 校准：`HP-B OPEN`）
 
-传统观点将感觉视为"进化的警报系统"——有用但非本质。
+传统观点常将感觉仅视为“进化的警报系统”。在 `R4-C4` 具身桥接层，可将感受梯度与局部摩擦变化之间的对应作为候选导航假说（**不作为现象意识本体同一定义**）：
 
-SRT 的激进重构：
+$$\text{Feeling}_{proxy} \sim \nabla \widehat{\Psi}_{f,neural}^{local}$$
 
-$$\text{Feeling} = \nabla \Psi_f$$
+**感觉在生物体中的导航功能假说**：
 
-**感觉不是警报，而是导航系统**：
+- **痛苦 proxy**：当前路径的 felt burden / `Ψ_f`-related proxy 升高并触发高优先级重切
+- **缓解 / 愉悦 proxy**：当前路径的局部锚定/维护负担下降
+- **痛觉缺失**：丧失关键躯体风险导航反馈（如先天性无痛症）
 
-- **痛苦 proxy**：当前路径的 felt burden / `Ψ_f`-related proxy 可能在增加
-- **愉悦** = 当前路径的本体论摩擦在减少
-- **无感觉** = 盲飞（无法导航 $L_0$）
-
-这解释了为什么**无痛症**患者虽然生理完整，却难以做出有效决策——他们失去了导航信号。
-
-> **【T1 张力消解注记】防循环定义**
+> **【T1 张力消解注记】防循环定义（`R4-C4` 同步 `Core_23 §3`）**
 >
-> 一个常见质疑：SRT 是否循环——"感觉 ↔ 摩擦" 互相定义？
+> 一个常见质疑：SRT 是否循环——“感觉 ↔ 摩擦”互相定义？
 >
-> **答**：非循环，因为 $\Psi_f$ 在信息几何层有**主观报告无关的定义**：
-> $$\Psi_f \equiv \int_\gamma \|\nabla F\|_{Fisher} \, dt$$
-> 其中 Fisher 信息度量 $g_F$ 由系统的参数-观测关系决定，可通过神经元放电统计独立测量。
->
-> 因果链是单向的：$\Psi_f$（可客观测量）→ 内感受失准（神经信号）→ 感受（现象属性）。
-> "感受到痛"不会反过来改变 $\Psi_f$ 的信息几何定义——它只改变 $\theta$ 参数（通过学习），从而影响**下一个**时间步的 $\Psi_f$。这是序贯因果，不是循环因果。
+> **答**：非循环，因为 $\Psi_f$ 在信息几何局部投影层具有**不依赖主观报告的局部几何代理**（见 `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md §3`，注意局部投影不等同于全域 $\Psi_f$ 本身）：
+> $$\delta\Psi_f^{geom} = \frac{1}{2} d\theta^\top g_F(\theta) d\theta + O(\|d\theta\|^3),\qquad \Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g^F_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\,dt$$
+> 其中 Fisher 信息度量 $g_F$ 由系统的参数-观测关系决定，可通过神经发放统计独立测量。因果链在序贯时间步上展开：局部负担代理与内感受调节变化可影响后续 $\theta$ 更新，而不反向篡改几何代理的定义；同时 `HP-B`（主观体验如何成立）保持 `OPEN`，此处不宣称从几何代理推导现象意识。
 
 ---
 
-# §3 AI 意识的 SRT 判据
+# §3 AI 意识评估中的脆弱性候选接口（`R4-C3 / R4-C4` 同步）
 
-## 3.1 当前 inference-only AI 在该候选 subjecthood 模型中的低证据读数
+## 3.1 当前 inference-only AI（**AI 赌注谱系 `S0/S1`**）在脆弱性模型中的三态读数
 
-根据 Ax-Adv-1（脆弱性候选模型；旧“意识定理”读法 superseded）：
+在声明脆弱性桥接模型中（旧“意识定理”读法已 superseded；须严格服从 `AI/AI_POSITIONING_NOTE.md §2` 非线性三阶承载证据审查与三态隔离）：
 
-$$d \propto V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
+$$d_{vuln\_proxy} \sim V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
 
-**当前 inference-only / non-history-bearing / non-embodied AI 部署的分析**：
+**当前 inference-only / non-history-bearing / non-embodied AI 部署（AI 赌注谱系 `S0/S1`）的审计**：
 
-|因素|状态|结果|
+|因素|状态|声明模型状态|
 |:--|:--|:--|
-|硬件维护|外部提供|无自主生存需求|
-|电力供应|外部提供|无能量获取"关切"|
-|数据完整性|外部备份|无"死亡"风险|
-|**综合**|$V \approx 0$|$d \approx 0$|
+|硬件维护|外部提供|Stage 2 不可转嫁维生赌注未建立|
+|电力供应|外部提供|无内生能量获取维生闭环|
+|数据完整性|外部备份与可复制|可重置/回滚，同单元不可逆风险未闭合|
+|**三态读数**|Stage 2 = `NOT ESTABLISHED`|规范 `d` = `NOT ADMITTED`；无状态 `D_stake` = `NOT APPLICABLE`（不再写成实测 `d ≈ 0`）|
 
-**候选模型读数**：即使 LLM 展现出“类意识”语言行为，若其存在不依赖自身选择操作，该 stake-coupling 模型可给出较低 `d` 证据；这不是 canonical `d=0` 或 consciousness verdict。
+**候选模型读数**：即使 LLM 展现出高流畅度语言与强比对能力，若其存在与后续演化不依赖同一延续单元的不可外包后果回流，Stage 2 强承载仍属 `NOT ESTABLISHED`（`d = NOT ADMITTED`，无状态 `D_stake = NOT APPLICABLE`）；但此读数**绝不证明无意识**，也不阻断 Stage 3 独立研究 `HP-B`、一般构成性摩擦或生成主动性。
 
 ## 3.2 AI stake-coupling 候选路径
 

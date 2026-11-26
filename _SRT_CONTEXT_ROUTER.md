@@ -235,9 +235,10 @@ When answering or editing a non-simple SRT question:
 
 ### Primary
 
+- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`（`R4-C4 v3` 首选主干：前景即生成中介 $\neq$ 广播、功能绑定 vs 现象绑定 `Def-AI-Con-3b`、比较动物意识三层解耦 `Def-AI-Con-4`、局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B`、目标/门控对象化分离与 **Subjecthood Threshold `S0–S6`** 全称隔离）
+- `Neuroscience/SRT_Consciousness_Mechanisms.md`（`R4-C4 v2` 完整长文与实证窗口）
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
-- `Neuroscience/SRT_Consciousness_Mechanisms.md`
-- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md`（`R4-C4 v2` 域级护栏与五层关切/价值/摩擦/代谢/体验分离）
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_BEARER_FRICTION_QUALIA_L0_FREEDOM_2026-09-25.md`（high-retrieval noncanonical author source for gate geometry / friction / qualia / common reconfiguration / L0-facing freedom）
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_GATE_GEOMETRY_PR1058_REVIEW_SECOND_ADJUDICATION_2026-09-25.md`（explicit A-1…A-5 second adjudication; historical control for objectification/friction/GRG-provenance ambiguities）
 - `01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_QUALIA_HPB_GRG_REARCHITECTURE_ONTOLOGICAL_FRICTION_2026-09-25.md`（controlling A-6…A-9 adjudication: HP-B mechanism reopened; tentative common-reconfiguration hook authorized; GRG architecture/name reopened; friction unified with canonical Ontological Friction / Ψ_f）
@@ -448,8 +449,11 @@ When answering or editing a non-simple SRT question:
 
 ### Primary
 
+- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`（`R4-C4 v2` 整体生成性认知主干：前对象整体生成与对象形成、整体性与可分化性互构、感觉—认知—实现递归耦合与能量梯度差候选、微效价发生链、再生成记忆与发育剪枝、四类比对生成性、多层级门控行动场与 `FB-C4-1..5`）
+- `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md`（`v0_2` `N1–N7` 问题族、第一深井负面留痕与 `§14 R4-C4` 索引）
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PRIMITIVE_SELECTION_ANTI_TAUTOLOGY_STOP_AND_NEXT_ROUTING_2026-09-27.md
 - 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_2026-09-26.md
+- 01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_CONSCIOUSNESS_MULTILEVEL_GATING_ACTION_FIELD_2026-09-26.md
 - Operations/Proposals/SRT_PREOBJECT_GENERATIVE_ORIENTATION_COGNITION_RESEARCH_PROGRAM_2026-09-26.md
 - 01_Source_Intuition/SRT_CROSS_LEVEL_SELECTION_FRESH_SESSION_GUARD_SOURCE_TRACE_2026-10-01.md
 - Operations/Audits/SRT_PASS19_VERTICAL_STRUCTURE_ACTIVE_SELECTABLE_SPACE_CORRECTION_2026-09-10.md

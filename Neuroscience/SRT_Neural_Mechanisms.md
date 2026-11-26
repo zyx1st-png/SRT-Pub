@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-MECH-001
 type: theory
-tags: [Neuroscience, Mechanisms, Ghost-Operator, Hybrid]
-status: bridge_realign_v1
+tags: [Neuroscience, Mechanisms, Ghost-Operator, Hybrid, GenerativeCognition, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -12,12 +14,12 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 # SRT Neural Mechanisms: Axiomatic Derivations & Dynamics
 
-> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
+> **Claim-status & `R4-C4` Bidirectional Sync Note（2026-11-26）**：本文件是 `Neuroscience` 长文主干与实证补丁档案库（`canonical: false`），完整保留全部既有 Pipeline 1 实证补丁与已落盘挂钩锚点，并已同步对接 [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)（`v2`）的 **`R4-C4` 八大正面理论主轴**（整体性与可分化性互构、前对象整体生成与对象形成、感觉—认知—实现递归耦合与能量梯度差更底层物理生成机制候选、效价优先与微效价、再生成记忆与五类异质历史职责及发育式剪枝、四类比对生成性与三位置分离、多层级门控行动场 `target ≠ gate objectification`、跨尺度生物—人工认知对照）及五项反向核心反馈（`FB-C4-1..5`）。须与 [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md) 并读；所有 `L_0 / L_1 / L_2` 表述按 `Spine §7` 读作三分析面而非实体仓库。
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Neural_Mechanisms_Split/README.md`](Neural_Mechanisms_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Axioms (AI-Readable).
-> **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
+> **Version 2.1 (`R4-C4` Aligned Hybrid)**
+> **Part A** presents the Formal Bridge Propositions & Empirical Windows (AI-Readable).
+> **Part B** contains the Expanded Theoretical Discourse & `R4-C4` Synthesis (`§9`).
 
 ---
 
@@ -85,12 +87,12 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ---
 
-### Ax-NEURO-MECH-2: Selection Flow Axiom (L0→L1 Projection)
-定义神经选择为从 \(L_0^{neural}\) 到 \(L_1^{neural}\) 的投影：
+### Ax-NEURO-MECH-2: Selection Flow Bridge (Candidate Foreground Stabilization)
+在神经动力学分析面中，将神经选择投影建模为从当前可达候选流形 \(L_0^{neural}\) 进入局部前景稳定子集 \(L_1^{neural}\) 的候选投影（`L_0/L_1` 属三分析面读法，非实体仓库跨越）：
 \[
 \Pi_{ignite}: \mathcal{M}\rightarrow \mathcal{M}_*,\quad \mathcal{M}_*\equiv\{\sigma: \mathcal{A}(\sigma)\ge \tau_{ignite}\}
 \]
-* **Implication（中文）**：点燃不是“活动增强”，而是跨域投影的可计算阈值。
+* **Implication（中文）**：点燃不是“活动增强”，而是嵌于大尺度相位骨架与多层级门控场中的候选稳定化与前景生成中介窗口（阈值/相变读法仍为建模假说）。
 
 ---
 
@@ -750,12 +752,12 @@ $$\kappa_{adapt} \begin{cases} \to 0 & \Rightarrow \text{持续活动模式，�
 
 ## V. Pathology as Parameter Drift (病理作为参数漂移)
 
-### Ax-NEURO-MECH-8: Parameter-Drift Axiom
-定义病理为 \(\theta\) 的拓扑偏移：
+### Ax-NEURO-MECH-8: Parameter-Drift Modeling Lens（`R4-C4` 校准：非排他性双条件）
+在声明动力学建模透镜下，许多神经精神病理状态可刻画为 \(\theta\) 参数与锚定/门控拓扑的偏离（非诊断等同或双条件还原，见 `H-NEURO-Pathology-1`）：
 \[
 \theta=\theta_{healthy}+\Delta\theta
 \]
-* **Implication（中文）**：精神病理不是”症状集合”，而是算子参数的系统性偏离。
+* **Implication（中文）**：精神病理不仅是表面症状清单，也可从算子参数、锚定厚度、`L_2` 硬化/失锚与身体-环境耦合的系统性偏移加以建模。
 
 **θ_healthy定义**：功能参照基线——θ_healthy不是统计均值，而是”满足以下条件的参数状态”：①可支付Ψ_f（能维持L₁稳定）；②d值处于适应性范围（不过宽/过窄）；③L₂交互可持续（社会功能正常）。Δθ为偏离此功能参照的向量距离，可多维（精度/抑制增益/价值梯度各分量独立漂移，cf. C-NEURO-MECH-1）。
 
@@ -1317,3 +1319,22 @@ WM_{eff}(X) \approx \frac{WM_{raw}(X)}{1+\beta L_2^{depth}}
 
 ### [Lineage/Source]
 - Ramanujan 与数学直觉讨论语境（2026）
+
+---
+
+## 9. `R4-C4` 双向重构综合：整体性与可分化性、八大正面主轴及核心理论反向反馈（2026-11-26）
+
+本节将本长文既有全部神经动力学机制、实证补丁（大尺度相位主导、皮层层级流、连接组吸引子几何、VTC 共享想象码、BOLD-CMRO₂ 门、HGA/Spike 解离、创造性脑时钟、星形胶质门控、海马统计结构、PH-AG04 感觉运动控制等）与 **`R4-C4` 整体生成性认知框架**统一收口，详细浓缩版见 [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)（`v2`）。
+
+### 9.1 核心理论校准（整体性与可分化性互构 + 能量梯度差边界）
+1. **整体性与可分化性互构**：神经认知既非彼此独立的原初模块事后拼装，也不把生物发生上的同源共构升格为跨底物普遍不可分定律；须结合功能解离（盲视、述情障碍、裂脑、习惯/策略解离）、发育分化（发育式剪枝保留长程可迁移骨架）、损伤后功能重组及跨生物/人工底物对照，刻画“整体生成分化出局部能力 ↔ 局部能力交互反向重构整体”的递归关系。
+2. **前对象整体生成与感觉—认知—实现递归耦合**：承接 `2026-09-26` 前对象生成导向与 `2026-11-11`（按 `R3-03` 校准）感觉—认知—实现三功能递归环，强调显性对象是整体导向中经显著性粗粒化与门控形成的局部稳定切面，并反过来改写后续整体导向（不提前确立其普遍必然性）。
+3. **能量梯度差双重边界**：保留**能量梯度差**作为物理—生命—神经更底层物理生成机制候选的研究价值，而不预先压扁为仅作测量代理；但未经独立理论推导，严禁直接等价于 `Selection`、规范 `d` 或规范 `Ψ_f`。
+4. **历史五职责与四类比对生成性**：承接 `R4-C3` 七层历史与五类异质职责（记录 / 转化剪枝 / 资格调用 / 活跃生效 / 后果归属——“存储 $\neq$ 活跃参与后续生成”）和四类比对生成性（已有维度新结果 / 已有维度重加权 / 新比对维度形成 / 比对能力本身重构），并追踪**生成位置 / 留存位置 / 生效位置**三分离；承接 `2026-09-26` 多层级门控行动场（`target objectification ≠ gate objectification`）与 `R4-C1` 正面自由。
+
+### 9.2 排入 `R4-C5` 统一评估的五项反向核心理论反馈（`FB-C4-1..5`，`C` / M-origin 候选）
+- **`FB-C4-1`** → `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_L0_Metaphysics.md`：整体性与可分化性互构及前对象整体导向与对象形成的双向重构。
+- **`FB-C4-2`** → `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`：感觉—认知—实现非线性递归模型（对齐 `R3-03`）与能量梯度差更底层物理生成机制候选边界。
+- **`FB-C4-3`** → `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`：微效价—可供性—缺失—需求—赌注发生链与五层关切/价值/摩擦/代谢/体验分离。
+- **`FB-C4-4`** → `Core/SRT_Core_12b_L2_Dynamics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core/SRT_Core_14_Dynamics_Scaling.md`：再生成记忆、发育式冗余剪枝、五类异质历史职责与三位置分离深化 `L_2` 双刃剑机制。
+- **`FB-C4-5`** → `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md`、`Core_Law/SRT_Selection_Argument.md`：多层级门控行动场（`target ≠ gate objectification`）、前景生成中介与功能/现象绑定精炼 `Ghost` / 正面自由 / `HP-B` 接口（不解冻 `HP-B`）。

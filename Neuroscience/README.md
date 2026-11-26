@@ -1,74 +1,46 @@
-# Neuroscience
+# Neuroscience & Generative Cognition (`R4-C4` 双向重构入口)
 
-> **Architecture v2 routing · 2026-09-04**: `SRT_Neuroscience_Reconstruction_Framework.md` is the active Layer-2 problem map for new/backfilled neuroscience research. It does not replace claim-status owners or promote legacy mechanisms. The pre-Architecture mechanism / axiom / compact-core layer remains a historically governed library unless a current framework problem family or active task explicitly routes into it.
+> **`R4-C4` 双向重构声明（2026-11-26）**：神经科学与整体生成性认知不仅是 SRT 核心框架的应用延伸，更是深化与反哺 SRT 核心理论（`Selection`、`One`、`L_2`、`Order`、价值/关切、意愿/自由、归一化、`Ghost`、遮蔽与跨尺度生成）的重要知识来源。本域围绕核心研究问题展开：**认知能力如何从整体性生成组织中产生、分化出相对独立的局部能力，并反过来通过相互作用重构整体与外部现实？**
 >
-> **Legacy-layer dormancy note**: the older `Neuroscience/` mechanism corpus was placed under a dormancy/library policy after the 2026-05 cycle. Its symbols and definitions may lag later canonical changes; exact definitions still follow `CANONICAL_REGISTRY.md`, `_SRT_SYMBOL_TABLE.md` and named canonical owners. The new Layer-2 Framework is an active routing surface, not a blanket reactivation of every old neuroscience file.
+> **已有治理边界完全保留**：
+> - `SRT_Neuroscience_Reconstruction_Framework.md` 继续作为 Architecture v2 Layer-2 问题地图与 Phase 8A / 9 / 9.5 负面试点留痕的完整承载者；第一神经深井的 `Case B + DATA-ACCESS-0 = NO-GO + translation-only / scope-limited` 结论完整保留、**未解冻**。
+> - `HP-B` 现象意识包保持 **FROZEN / OPEN**；`CN-2 E2`、`CN-3 toy`、`1B sim`、`O2-M`、`§10.1`、`§10.2` 等全部既有 `HOLD` 不变；本域提出的五项核心理论反向反馈（`FB-C4-1..5`）保持 `C`（M-origin 候选）性质，排入 `R4-C5` 统一评估与作者裁决。
 
-This directory contains SRT's neuroscience-facing reconstruction, bridge and lab materials.
+---
 
-## Read order
+## Read Order (`R4-C4` 主干)
 
-1. [`SRT_Neuroscience_Reconstruction_Framework.md`](SRT_Neuroscience_Reconstruction_Framework.md)
-   Active Architecture-v2 Layer-2 problem map. Read this before opening a new neuroscience theory synthesis or deep well. It routes Given Ones, objectification choices, bearer roles, high-value materials, inherited assets and the deep-well queue.
+1. [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md)
+   域级护栏与 `R4-C4` 四项校准（整体性与可分化性互构、能量梯度差双重边界、五层关切/价值/摩擦/体验分离、`AI/S` 全称隔离、`HP-B` 与临床/BioQuantum 护栏）。
+2. [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)
+   **`R4-C4` 核心理论主干（神经与整体生成性认知）**：系统展开八大正面主轴（前对象整体生成 / 感觉—认知—实现递归耦合与能量梯度差候选 / 效价优先与微效价 / 历史效力、再生成记忆与发育式剪枝 / 比对能力本身的生成与重构 / 多层级门控行动场与正面自由 / 跨尺度与人机认知对照 / `FB-C4-1..5` 反向反馈）。
+3. [`SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md)
+   **`R4-C4` 意识、整体性与主体性主干**：前景即生成中介（$\neq$ 广播）、功能绑定 vs 现象绑定（`Def-AI-Con-3b`）、比较动物意识多维解耦（`Def-AI-Con-4`）、局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B`、目标对象化 $\neq$ 门控对象化、睡眠维护与行进波路由。
+4. [`SRT_Neuroscience_Reconstruction_Framework.md`](SRT_Neuroscience_Reconstruction_Framework.md)
+   Architecture v2 Layer-2 问题地图（`N1–N7` 问题族、35 份 SourceCard 处置矩阵、`NEURAL15–35` 补丁路由、第一深井 `Phase 8A/9/9.5` 负面结论留痕与 `§14 R4-C4` 对接索引）。
+5. [`NEUROSCIENCE_COMPACT_REGISTRY.md`](NEUROSCIENCE_COMPACT_REGISTRY.md)
+   域内全文件分层目录、八大主轴索引、`FB-C4-1..5` 反向反馈指针与长文阅读路由。
+6. [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md) & [`SRT_Neuro_Axioms_Claim_Status.md`](SRT_Neuro_Axioms_Claim_Status.md)
+   神经域形式化桥接与声明等级审计（`v2` 已执行原 `§8` 待清项：退除 `Ψ_f ≡ ∫` 与 `Pathology ⇔ Δθ` 强等价，同步 `P3-NEURO-3` 与 `R4-C4` 校准）。
+7. 长文展开与专题接口：
+   - [`SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md)（分片入口：[`Neural_Mechanisms_Split/README.md`](Neural_Mechanisms_Split/README.md)）
+   - [`SRT_Consciousness_Mechanisms.md`](SRT_Consciousness_Mechanisms.md)
+   - [`SRT_Clin_00_IIT_PCI.md`](SRT_Clin_00_IIT_PCI.md) / [`SRT_Clin_01_Pathology.md`](SRT_Clin_01_Pathology.md) / [`SRT_Clin_02_FEP.md`](SRT_Clin_02_FEP.md) / [`SRT_Clin_03_DMN_Networks.md`](SRT_Clin_03_DMN_Networks.md)
+   - [`SRT_Neuro_06_Field_Effects.md`](SRT_Neuro_06_Field_Effects.md) / [`SRT_Neuro_07_Evo_Devo.md`](SRT_Neuro_07_Evo_Devo.md) / [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)（[`Immune_Dist_Split/README.md`](Immune_Dist_Split/README.md)）/ [`SRT_Neuro_09_Integ_Eq.md`](SRT_Neuro_09_Integ_Eq.md) / [`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`](SRT_Neuro_09_BioQuantum_CISS_Amendment.md) / [`SRT_Neuro_10_Advanced_Models.md`](SRT_Neuro_10_Advanced_Models.md)
+   - [`_SRT_Neuroscience_Hardening_Index.md`](_SRT_Neuroscience_Hardening_Index.md)、`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`、`SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（card-defined only；W0 访问记录见 `SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md`）与 [`../Neuroscience_Annex/`](../Neuroscience_Annex/)。
 
-2. [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md)
-   Folder-level guardrail for neuroscience, clinical, FEP, NDE, AI-comparison, `Psi_f` proxy, and `d-value` proxy language.
+---
 
-3. [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
-   Historical canonical-facing / axiomatic hybrid neuroscience bridge. Use with its claim-status audit; do not treat it as the architecture for the whole domain or as all-canonical by default.
+## Preserved Deep-Well & Recent Material Boundaries
 
-4. [`SRT_Neuro_Axioms_Claim_Status.md`](SRT_Neuro_Axioms_Claim_Status.md)
-   Claim-status audit for `_SRT_Neuro_Axioms.md`. Use this to distinguish bridge axioms, operational proxies, theorem candidates, contextual discourse, and claims needing downgrade/guardrails.
+- **First Neuroscience deep well (preserved adverse record)**: matched present neural state / different relational history → Phase 8A **Case B** strongest baseline + **`DATA-ACCESS-0 = NO-GO`**; Phase 9 **translation-only + scope-limited**. Conditionally reopenable only under N-R1 / N-R2 / N-R3 in `Operations/SRT_CONSTITUTION_DOMAIN_SEQUENCE_AUTHOR_DECISION_2026-09-03.md`. No Neuroscience deep well is currently active.
+- **NEURAL35 (psychedelic reopening / re-anchoring)**: [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md) & [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md) (`reopening ≠ reselectability`; `under-anchoring` as disposable `P3/P4` label; read with `SRT_Neuroscience_Claim_Status.md`).
 
-5. [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)
-   Formal Layer-3 compact core for inherited neural mechanisms. It is a candidate mechanism package under the reconstruction framework, not the framework itself.
+---
 
-6. [`SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md)
-   Formal compact core for consciousness mechanisms. Consciousness-specific burdens remain routed to the future Consciousness Reconstruction Framework.
+## Cross-Domain Links
 
-7. [`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`](SRT_Neuroscience_Hardening_N1_N9_v0_1.md)
-   Bridge / lab working draft that records the older N1-N9 hardening cycle. Architecture v2 reroutes surviving pieces by problem family rather than treating this draft as a domain skeleton.
-
-8. [`SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`](SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md)
-   Local P4 execution card for the bounded `P3-Scale-NB1` neural divisive-normalization → frozen readout → task-choice workline. Card-defined only; not formally locked, preregistered, or executed. W0 access record: [`SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md`](SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md).
-
-## Architecture-v2 deep-well status
-
-- First Neuroscience deep well: matched present neural state / different relational history.
-- Phase 8A: **Case B** strongest baseline + `DATA-ACCESS-0 = NO-GO` for the exact charter.
-- Phase 9: **translation-only + scope-limited**.
-- The adverse result is preserved; Neuroscience is conditionally reopenable under the named N-R1 / N-R2 / N-R3 rules in `Operations/SRT_CONSTITUTION_DOMAIN_SEQUENCE_AUTHOR_DECISION_2026-09-03.md`.
-- No Neuroscience deep well is currently active; Epistemology remains the selected second main workline.
-
-## Recent material bridge
-
-- **NEURAL35 — psychedelic reopening / re-anchoring:** [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md), with [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md). P3/P4 only: its surviving increment is `reopening != reselectability`, plus `under-anchoring` as a positively testable but disposable mirror-failure label and `Opening × Reanchoring` as a complexity-controlled differential-test form. It does not redefine ST-A / Core 21C B13, and it inherits NEURAL16's BOLD proxy gate and NEURAL26's capacity/accessibility/control/write-back distinctions. **Any clinical, therapeutic, safety, or public-facing use must also retrieve [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md).**
-
-## Status distinction
-
-- `SRT_Neuroscience_Reconstruction_Framework.md`: active Layer-2 domain problem map; question routing, material re-entry and Phase-9.5 writeback only; not canonical and not a neural mechanism owner.
-- `SRT_Neuroscience_Claim_Status.md`: folder-level proxy/clinical guardrail. Read before public, clinical, AI-consciousness, FEP, NDE, or treatment-facing use.
-- `_SRT_Neuro_Axioms.md`: canonical-facing hybrid bridge. Changes here require canonical caution; internal claims must be read through the claim-status audit.
-- `SRT_Neuro_Axioms_Claim_Status.md`: audit / status guardrail. It does not replace the axiom file, but prevents file-level canonical over-reading.
-- `SRT_Neural_Mechanisms_CompactCore.md`: inherited Layer-3 formal mechanism compact core; it does not define the domain problem architecture.
-- `SRT_Consciousness_Mechanisms_CompactCore.md`: formal consciousness compact core; now treated as an adjacent Layer-3 package for future Consciousness routing.
-- `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`: non-canonical staging draft for theory hardening, experimental design, and future citation work.
-- `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`: non-canonical local P4 protocol candidate. It may adjudicate one task-level bridge but cannot define Core terms or establish agency, subjecthood, or consciousness.
-- [`../Neuroscience_Annex/`](../Neuroscience_Annex/) contains bridge/interface Annex files extracted from Neuroscience owner files. Annex files are `canonical: false` and do not define Core primitives or replace owner-file formal anchors.
-
-## Current research path
-
-Architecture v2 replaces the old assumption that the next step is automatically a larger N1–N13 mechanism synthesis. Current order is:
-
-1. use `SRT_Neuroscience_Reconstruction_Framework.md` to locate the problem family;
-2. recover relevant high-value SourceCards / PatchNotes / Hooks and existing owner status;
-3. choose a bounded question only if the main programme sequence authorizes it;
-4. run a strongest-baseline Case A/B/C gate before any SRT increment claim;
-5. after a completed or legitimately blocked well, write the result back into the Framework;
-6. only then decide whether any inherited mechanism synthesis actually needs revision.
-
-The old N1-N9 / N10-N12 / NEURAL patch corpus remains available as inherited Layer-3 / evidence material, but folder location or historical “integration candidate” status does not automatically authorize synthesis.
-
-## Cross-domain links
-
-- PH-SS subjecthood guardrail: [`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — S0-S6 ladder distinguishing selection, anchoring, conscious content, subjecthood, agency, and responsibility; use when making consciousness attribution claims.
+- **Subjecthood & Agency Guardrail**: [`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — **Subjecthood Threshold `S0–S6`** conditional audit interface (NOT a linear ladder; strictly isolated from **Primitive `S0`**, **AI 赌注谱系 `S0–S4`**, and **AI 三型社会技术中介维度**).
+- **Cross-Substrate AI Comparison**: [`../AI/AI_POSITIONING_NOTE.md`](../AI/AI_POSITIONING_NOTE.md)、[`../AI/SRT_AI_Architecture_CompactCore.md`](../AI/SRT_AI_Architecture_CompactCore.md)、[`../AI/SRT_AI_03_Consciousness_Framework.md`](../AI/SRT_AI_03_Consciousness_Framework.md).
+- **Information Geometry & Thermodynamic Substrates**: [`../Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`](../Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md)、[`../Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`](../Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md).
+- **Suffering & HP-B**: [`../Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md)、[`../Philosophy/SRT_HardProblem_Epistemology.md`](../Philosophy/SRT_HardProblem_Epistemology.md).

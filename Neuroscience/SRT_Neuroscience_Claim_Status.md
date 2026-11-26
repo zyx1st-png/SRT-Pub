@@ -1,129 +1,121 @@
 ---
 id: SRT-NEUROSCIENCE-CLAIM-STATUS
 type: claim_status_audit
-tags: [Neuroscience, Clinical, ClaimStatus, ProxyGuardrail]
-status: active_v1
+tags: [Neuroscience, Clinical, ClaimStatus, ProxyGuardrail, HolismDifferentiability, EnergyGradient, HPB]
+status: active
+version: v2
 layer: meta
 epistemic_layer: governance
 claim_mode: audit
 canonical: false
 claim_level: P2-P5
-dependency: [SRT-NEURO-AXIOMS-CLAIM-STATUS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-CLAIM-STATUS, SRT-PHILOSOPHY-CLAIM-STATUS]
-updated: 2026-08-12
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-NEURO-AXIOMS-CLAIM-STATUS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-SUFFERING, SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-PHILOSOPHY-CLAIM-STATUS]
+updated: 2026-11-26
+machine_summary: >
+  Folder-level claim-status guardrail for Neuroscience & Generative Cognition (R4-C4 synced).
+  Enforces holism-and-differentiability without universal cross-substrate inseparability,
+  retains energy-gradient difference as a deeper physical generative mechanism candidate without
+  equating it to Selection/d/Psi_f, separates 5 concern/value/friction/experience layers,
+  syncs R4-C3 three-state AI labels and full-name Subjecthood Threshold S0-S6 isolation, and
+  protects HP-B freeze plus CN-2/CN-3/DATA-ACCESS-0 HOLD gates.
 ---
 
-# SRT Neuroscience / Clinical Claim Status
+# SRT Neuroscience & Generative Cognition Claim Status (`R4-C4` 同步版)
 
-> **Role**: folder-level guardrail for neuroscience, clinical, FEP, PCI/IIT, pathology, NDE, neuroimmune, advanced-model, and BioQuantum language.
-> **Canonical status**: not canonical. Neuroscience files are bridge / lab / interface materials unless separately promoted through the claim ladder.
-
----
-
-## 1. Default claim levels
-
-- neural mechanism mapping: P2/P3 bridge if tied to evidence;
-- measurement proxy: P4 unless validated;
-- clinical interpretation / treatment implication: P4/P5 and never medical advice;
-- NDE / psychedelic / self-dissolution interpretation: P4/P5 phenomenological bridge;
-- AI consciousness comparison: P3 bridge only when architecture-state is explicit;
-- BioQuantum mechanism mapping: P3/P4 hypothesis unless independently replicated and causally bridged from molecular to neural scale.
-
-**C-A scope guard（2026-08-12）**: broader neural integration, field coherence, global availability, higher PCI／Φ, or more accessible paths do not imply canonical `d↑` or approach to a universe-wide optimum. Any neural optimization claim must name its task, candidate set, readout, horizon, constraints and rival models; “global” in global workspace／whole-brain state is a system-scope term, not C-A's prohibited universe-global optimum.
+> **Role**: folder-level guardrail for neuroscience, generative cognition, clinical, FEP, PCI/IIT, pathology, NDE, neuroimmune, BioQuantum, and bio–AI comparison language.
+> **Canonical status**: `canonical: false`. Neuroscience files are bidirectional domain-theory, bridge, and lab/interface materials; reverse feedback to core SRT owners (`FB-C4-1..5`) remains **`C`（M-origin 候选）** pending `R4-C5` review and author adjudication.
+> **Preserved HOLD / Freeze Boundaries**: `HP-B` remains **FROZEN / OPEN** (`B_s -> B_p ?` unclosed); `CN-2 E2`, `CN-3 toy`, `1B sim`, `DATA-ACCESS-0 = NO-GO`, `O2-M`, `§10.1`, and `§10.2` remain unchanged.
 
 ---
 
-## 2. High-risk claim classes
+## 1. Default Claim Levels & `R4-C4` Theoretical Calibrations
 
-### 2.1 `Ψ_f` as free energy, prediction error, pain, metabolism, or clinical burden
+- **Holistic generative cognition & neural mechanism mapping**: `P2/P3` domain theory / bridge when grounded in neuroscientific evidence and declared boundaries;
+- **Measurement proxy** (BOLD/CMRO₂, HGA, PCI, Φ, Fisher, metabolic/thermodynamic readouts): `P4` unless independently validated inside a declared measurement window;
+- **Clinical interpretation / pathology bridge**: `P4/P5` modeling lens, never medical advice or diagnostic identity;
+- **NDE / psychedelic / self-dissolution / contemplative bridge**: `P4/P5` phenomenological & state-reconfiguration bridge;
+- **Bio–AI cognitive comparison**: `P3` cross-substrate bridge bound by `AI/AI_POSITIONING_NOTE.md` and `AI/SRT_AI_Claim_Status.md` (three-state discipline + full-name `AI / S` namespace isolation);
+- **BioQuantum mechanism mapping**: `P3/P4` hypothesis under mechanism-specific survival and transduction gates (`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`).
 
-Allowed:
+### 1.1 Four Controlling `R4-C4` Calibrations (2026-11-26 Author-Confirmed)
 
-> FEP quantities, prediction error, metabolic cost, pain, stress, clinical distress, and recovery cost may be used as local `Ψ_f`-related proxies under a stated measurement window.
-
-Forbidden:
-
-> `Ψ_f = free energy`; `Ψ_f = pain`; `Ψ_f = prediction error`; `Ψ_f = metabolism`; `Ψ_f -> 0` means no experience; `Ψ_f -> infinity` as literal clinical divergence.
-
-Guardrail: canonical `Ψ_f` is not any single neural, metabolic, subjective, or clinical variable. Use `Ψ_f^{proxy}`, `selection-friction proxy`, `felt burden`, `prediction-error proxy`, or `metabolic/recovery-cost proxy`.
-
-### 2.2 `d-value` as PCI/Φ/salience/reward/arousal/integration/attention
-
-Allowed:
-
-> PCI, Φ, integration, salience, arousal, precision, threat relevance, and reportability may constrain or proxy aspects of consciousness-state assessment.
-
-Forbidden:
-
-> `d = Φ`; `d = PCI`; `d = salience`; `d = attention`; `d = reward`; `d = integration`; `d = arousal`.
-
-Guardrail: `d-value` requires stake-coupled consequence sensitivity. High neural complexity or high subjective intensity is not sufficient.
-
-### 2.3 NDE / psychedelic / self-dissolution / terminal lucidity
-
-Allowed:
-
-> These states may be modeled as boundary loosening, `L2` destabilization, altered anchoring, increased subjective openness, or state-dependent `d` proxies.
-
-Forbidden:
-
-> NDE proves post-brain consciousness; NDE is not hallucination as a settled fact; psychedelic state means actual `d -> infinity`; terminal lucidity proves brain irrelevance.
-
-Guardrail: use `d^{subjective/provisional}` or `d^{state-proxy}`. Do not write actual infinite `d` for finite neurophysiological states.
-
-### 2.4 Clinical / pathology / treatment language
-
-Allowed:
-
-> Pathology may be modeled as altered anchoring, parameter drift, rigid `L2`, disrupted gating, or cross-system desynchronization.
-
-Forbidden:
-
-> pathology is only θ deviation; treatment = parameter correction; therapy = topology reset; immune/neural intervention treats everything; SRT gives direct clinical diagnosis.
-
-Guardrail: all clinical claims require differential diagnosis, standard-of-care boundaries, and functional impairment / suffering / risk checks. SRT files are theory interfaces, not medical advice.
-
-### 2.5 AI / blindsight / high-Φ low-d comparisons
-
-Allowed:
-
-> Blindsight, high-Φ systems, Chinese-room cases, and current LLMs may be compared as dissociation cases between processing/integration and stake-coupled anchoring.
-
-Forbidden:
-
-> current AI has globally `d=0`; pure symbol manipulation necessarily has no `Ψ_f` in all possible architectures; blindsight proves SRT.
-
-Guardrail: AI claims must follow `AI/AI_POSITIONING_NOTE.md` and `AI/SRT_AI_Claim_Status.md`: inference-only / non-history-bearing / non-embodied deployment unless stated otherwise.
-
-### 2.6 BioQuantum / microtubule / CISS / nuclear-spin language
-
-Allowed:
-
-> A phase-coherent, spin-sensitive, CISS, radical-pair, tunnelling, vibrational, or microtubule process may be treated as a mechanism-specific physical interface when its own survival condition and molecular-to-neural transduction chain are stated.
-
-Forbidden:
-
-> short `T_2` or `τ_coh` falsifies every quantum-sensitive biological mechanism; CISS or nuclear-spin dependence proves consciousness is quantum; a microtubule effect establishes Orch-OR; quantum-sensitive anaesthesia explains subjectivity; spin filtering directly derives `L_0`, `d-value`, `Ψ_f`, or value.
-
-Guardrail: do not use a universal decoherence threshold for the whole BioQuantum family. Separate phase-coherence gates (`T_2`) from spin/CISS gates (`T_1`, chirality, orientation, permeability/binding), radical-pair gates, tunnelling gates, and substrate-specific confounds. The 2018 xenon-isotope result remains a single-study empirical anchor pending independent replication; the 2026 CISS account is a perspective plus kinetic model, not direct molecular confirmation. Follow [`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`](SRT_Neuro_09_BioQuantum_CISS_Amendment.md).
+1. **整体性与可分化性并不矛盾（Holism & Differentiability Are Mutually Constitutive）**：
+   - 神经科学重构不把感觉、认知、价值、意愿与意识预设为彼此独立的原初模块再拼装；同时，**也不把生物发生上的同源共构（developmental co-constitution）升格为跨底物的普遍不可分定律**。
+   - 必须正面吸收功能解离（盲视、述情障碍、裂脑、习惯/策略解离、麻醉期局部加工保留）、发育分化、损伤后功能重组及跨底物（生物 vs 人工）对照，研究整体生成如何分化出相对独立的局部能力，以及局部能力如何通过相互作用反向重构整体。
+2. **能量梯度差的双重边界（Energy-Gradient Difference Guard）**：
+   - 保留“能量梯度差”作为**更底层物理生成机制候选**的正面研究价值，不预先将其压扁为仅充当测量代理；
+   - **硬禁令**：在未完成独立理论推导与论证前，**严禁将能量梯度差、代谢耗散或变分自由能直接等价于 `Selection`、规范 `d` 或规范 `Ψ_f`**。
+3. **正面深化但暂不确立普遍必然性的四大方向**：
+   - 效价优先、前对象整体生成、显著性粗粒化与具身骨架均为 `R4-C4` 正面深化的核心理论主线，但当前**不提前确立其跨全部认知过程或跨全部底物的普遍必然性**（例如须正视生物视觉背侧通路等弱效价感知不变性与人工非情感比对的经验边界）。
+4. **`C-A` Scope Guard & `Spine §7` Analytic-Aspect Guard**：
+   - 更高的神经整合度、场相干、全局通达、PCI/Φ 或更多可达路径不自动推出规范 `d↑` 或宇宙全局最优；
+   - `L_0 / L_1 / L_2` 在神经域中同样是同一选择现实的**三分析面**，不得将神经点燃写成“跨越 `L_0→L_1` 实体仓库门槛”。
 
 ---
 
-## 3. Preferred replacements
+## 2. High-Risk Claim Classes & Five-Layer Value/Friction Separation
 
-| Risk phrase | Safer replacement |
+### 2.1 Five-Layer Separation: Concern, Canonical `d`, Friction, Metabolic Burden, and Phenomenal Experience
+
+In all `R4-C4` neuroscience prose, keep five layers strictly distinct even where they co-evolve in biological organisms:
+
+| Layer | Exact Scope | Forbidden Collapse |
+|---|---|---|
+| **1. 广义关切 / 趋避倾斜（`PT06 C` / 微效价）** | Embodied minimal approach–avoidance / viability bias shaping salience & affordance | Do not equate directly with canonical stake-coupled `d` or conscious emotion |
+| **2. 规范强承载 `d-value`** | Non-substitutable stake-coupled consequence sensitivity (`_SRT_D_VALUE_CANONICAL.md`) | `d ≠ Φ`, `d ≠ PCI`, `d ≠ salience`, `d ≠ reward`, `d ≠ arousal`, `d ≠ attention` |
+| **3. 一般构成性摩擦（`B-4` / `Ψ_f`）** | Selection & reconfiguration payability burden (`_SRT_PSI_F_CANONICAL.md`) | `Ψ_f ≠ free energy`, `Ψ_f ≠ prediction error`, `Ψ_f ≠ pain`, `Ψ_f ≠ metabolism` |
+| **4. 代谢与热力学可支付负担** | Energy-gradient / ATP / CMRO₂ / recovery cost supporting maintenance & plasticity (`Core_25`) | Candidate substrate / mechanism & local proxy only; never bare identity with `Ψ_f` or `Selection` |
+| **5. 主观情感与现象体验（`HP-B`）** | First-person felt quality / phenomenal presence (`Philosophy/SRT_HardProblem_Epistemology.md`) | Remains **`OPEN / FROZEN`**; functional binding, valence bias, or internal monitoring do not close `HP-B` |
+
+### 2.2 `Ψ_f` as Free Energy, Prediction Error, Pain, Metabolism, or Clinical Burden
+
+- **Allowed**: FEP quantities, prediction error, metabolic cost, pain, stress, clinical distress, and recovery cost may serve as local `Ψ_f`-related proxies under a declared measurement window (`H-NEURO-4b`), and energy-gradient dynamics may be studied as a deeper physical generative mechanism candidate.
+- **Forbidden**: `Ψ_f = free energy`; `Ψ_f ≡ ∫ ||∇F|| dt`; `Ψ_f = pain`; `Feeling = ∇Ψ_f` as literal identity; `Ψ_f = prediction error`; `Ψ_f = metabolism`; `Ψ_f -> 0` implies no experience; `Ψ_f -> ∞` as literal clinical divergence.
+
+### 2.3 `d-value` as PCI / Φ / Salience / Reward / Arousal / Integration / Attention
+
+- **Allowed**: PCI, Φ, integration, microvalence, salience, arousal, precision, threat relevance, and reportability may constrain or proxy specific dimensions inside a declared model.
+- **Forbidden**: `d = Φ`; `d = PCI`; `d = salience`; `d = attention`; `d = reward`; `d = integration`; `d = arousal`.
+
+### 2.4 NDE / Psychedelic / Self-Dissolution / Terminal Lucidity
+
+- **Allowed**: Modeled as boundary loosening, `L_2` destabilization, altered gating/re-anchoring (`reopening ≠ reselectability`, `NEURAL35`), or state-dependent `d^{state-proxy}` shifts.
+- **Forbidden**: NDE proves post-brain consciousness; psychedelic state means actual `d -> ∞`; terminal lucidity proves brain irrelevance.
+
+### 2.5 Clinical / Pathology / Treatment Language
+
+- **Allowed**: Pathology may be modeled as altered anchoring dynamics, parameter drift (`Δθ` lens), rigid `L_2` locking, disrupted multilevel gating, under-anchoring, or cross-system desynchronization.
+- **Forbidden**: `Pathology iff θ deviation` (biconditional); `treatment = parameter correction`; `therapy = topology reset`; `SRT gives direct clinical diagnosis`. All clinical language remains a non-diagnostic theory interface subject to standard-of-care and differential diagnosis.
+
+### 2.6 Bio–AI Comparison, Blindsight, and Full-Name `S` Namespace Isolation (`R4-C3` Synced)
+
+- **Allowed**: Blindsight, alexithymia, split-brain, anesthesia, high-Φ low-stake systems, and current LLMs (**AI 赌注谱系 `S0/S1`**) provide crucial **dissociation windows** comparing functional integration, comparative generativity, valence, bearing, and reportability across substrates.
+- **Forbidden**: `current AI has globally d = 0` or `d_AI ≈ 0` (use strict three-state labels: canonical `d` = `NOT ADMITTED`, stateless `D_stake` = `NOT APPLICABLE`, Stage 2 strong bearing & `HP-B` = `NOT ESTABLISHED`); `pure symbol manipulation necessarily has no Ψ_f in all architectures`; `blindsight proves SRT`; equating **AI 赌注谱系 `S0–S4`** with **Subjecthood Threshold `S0–S6`** or **Primitive `S0`**.
+- **Suffering Guard (`Core_Law/SRT_Suffering.md §7`)**: Neither `Stable ISP` nor `Subjecthood Threshold` tier unilaterally closes suffering eligibility; suffering requires independent registration standing + declared burden model.
+
+### 2.7 BioQuantum / Microtubule / CISS / Nuclear-Spin Language
+
+- **Allowed**: Phase-coherent, spin-sensitive, CISS, radical-pair, tunnelling, vibrational, or microtubule processes may be studied as mechanism-specific physical interfaces with declared survival conditions and molecular-to-neural transduction chains.
+- **Forbidden**: Short `T_2` / `τ_coh` falsifies every quantum-sensitive biological mechanism; CISS or xenon-isotope dependence proves quantum consciousness; spin filtering derives `L_0`, `d`, or `Ψ_f`. Follow [`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`](SRT_Neuro_09_BioQuantum_CISS_Amendment.md).
+
+---
+
+## 3. Preferred Replacements
+
+| Risk Phrase | Safer `R4-C4` Replacement |
 |---|---|
-| `Ψ_f = free energy` | `free energy may serve as a local Ψ_f-related proxy under a stated FEP window` |
-| `Ψ_f = pain` | `pain / distress may index Ψ_f-related felt burden under specified conditions` |
-| `d -> infinity` in NDE/psychedelic states | `d^{subjective/provisional}` or `d^{state-proxy}` increases / boundary loosening |
-| `d = 0` for AI or blindsight | `stake-coupled d proxy is near-null in this specified dissociation case` |
-| `treatment = parameter correction` | `treatment may target parameter, context, body, relation, and stabilization layers` |
-| `pathology iff θ deviation` | `many pathologies can be modeled as θ-space deviations; not a biconditional` |
-| `immune/neural intervention treats X` | `candidate interface; clinical use requires standard evidence and differential diagnosis` |
-| `τ_coh < τ_min, therefore no quantum contribution` | `this weakens the specified coherence-dependent mechanism; test other mechanisms with their own survival and transduction gates` |
-| `CISS proves quantum consciousness` | `CISS is a candidate molecular transduction mechanism for a reported isotope-sensitive anaesthetic effect` |
+| `Ψ_f = free energy` / `Ψ_f ≡ ∫ \|\|∇F\|\| dt` | `free energy / local Fisher projection may serve as a local Ψ_f-related proxy under a stated window` |
+| `Feeling = ∇Ψ_f` / `Ψ_f = pain` | `affective/pain dynamics may index felt burden or valence-related gradients under specified conditions (HP-B OPEN)` |
+| `能量梯度差 = Selection / d / Ψ_f` | `能量梯度差是更底层物理生成机制与代谢底物候选，不等同于规范 Selection / d / Ψ_f` |
+| `d -> ∞` in NDE/psychedelic states | `d^{subjective/provisional}` or `d^{state-proxy}` / boundary loosening (`reopening ≠ reselectability`) |
+| `d = 0` / `d ≈ 0` for AI | `canonical d = NOT ADMITTED; stateless D_stake = NOT APPLICABLE; Stage 2 bearing = NOT ESTABLISHED` |
+| `Pathology iff θ deviation` | `many neuropsychiatric states can be modeled through Δθ / anchoring-gating dynamics (non-biconditional lens)` |
+| `生物同源共构 ⇒ 跨底物普遍不可分` | `生物发生上同源共构，同时在神经解离与跨底物对照中呈现局部可分化性` |
+| `点燃 = L_0 → L_1 实体相变` | `点燃是整合度、路由与关切梯度约束下的局部前景化稳定候选门（L_0/L_1 为分析面，非实体仓库）` |
+| `S0–S6`（未加全称） | **Subjecthood Threshold `S0–S6`**（与 Primitive `S0`、**AI 赌注谱系 `S0–S4`**、**AI 三型**严格隔离） |
 
 ---
 
-## 4. Reading rule
+## 4. Reading Rule
 
-Read this file before using neuroscience or clinical material in canonical, public, medical, AI-consciousness, spirituality-facing, or quantum-consciousness claims. If a neuroscience sentence contains equation-like language about `Ψ_f`, `d`, consciousness, pathology, NDE, treatment, AI, microtubules, CISS, nuclear spin, or quantum mechanisms, assume it is bridge/proxy/hypothesis until proven otherwise. For BioQuantum material, the mechanism-family boundary in [`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`](SRT_Neuro_09_BioQuantum_CISS_Amendment.md) overrides the universal-decoherence wording in `SRT_Neuro_09_Integ_Eq.md` §IV until direct owner-file integration.
+Read this file before using neuroscience, cognitive, clinical, bio–AI comparison, or consciousness material in canonical, public, or cross-domain claims. Any equation-like statement about `Ψ_f`, `d`, `Selection`, energy gradients, consciousness, pathology, NDE, or BioQuantum mechanisms is bridge/proxy/hypothesis unless explicitly backed by its canonical owner. For BioQuantum material, [`SRT_Neuro_09_BioQuantum_CISS_Amendment.md`](SRT_Neuro_09_BioQuantum_CISS_Amendment.md) remains controlling over legacy universal-decoherence text in `SRT_Neuro_09_Integ_Eq.md`.
