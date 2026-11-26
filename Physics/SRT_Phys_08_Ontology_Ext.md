@@ -1,18 +1,20 @@
 ---
 id: SRT-PHYS-08
 type: theory
-tags: [Ontology, Apeiron, Pan-Experiential Field, Russellian Monism, Pathological Selection, Hybrid]
-status: bridge_realign_v1
+tags: [Ontology, Apeiron, VariationalBridge, Russellian Monism, Pathological Selection, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
 # SRT Physics: Deep Ontology Extension (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Phys_08_Ontology_Ext_CompactCore.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, `Core/SRT_OPEN_TENSIONS.md §16–§17`, and `Philosophy/SRT_HardProblem_Epistemology.md`. Under `R4-A / R4-C2`: (1) Prism and Pan-Experiential Field (`Ax-Prism-1 / Ax-PEF-1 / Unbinding`) are isolated strictly as **historical P5 exploratory philosophical analogies**, never canonical SRT ontology (`Q05` de-panpsychism, `HP-B OPEN`, `R3-03-O4 OPEN`); (2) "energy-free selection" wording is retired in favor of physical-closure compatibility (`R3-03-O6`) + physical implementation payability (`_SRT_PSI_F_CANONICAL.md`); (3) the Original Intention variational formula is restricted to a **declared finite horizon `[0, T]`** (`B-A / C-A`), strictly distinct from the open non-moral `T3-01 C/E` global optimizing orientation inquiry (`Spine §1`).
 > **B-A／C-A layer-and-scope guard（2026-08-12）**：本文件中的 Original Intention／初心公式只是在声明状态空间、自由能泛函、可行域、有限时域与约束之后的 L₁/P3 Physics translation。它不定义 L₀，不引入独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；无限时域与宇宙级极值形式已由 C-A 撤回。
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Ontological Axioms (AI-Readable).
@@ -21,14 +23,14 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 ---
 
 # Part A: Formal Ontological Axioms
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 校准)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三分析/模型视角（`Spine §7`），非预设完整体验或对象仓库。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体，$\theta \in \Theta_{finite}$ 为有限具身参数。
+- $F$: 声明模型自由能泛函；$\Psi_f^{phys}$ 为物理投影代理（规范定义见 `_SRT_PSI_F_CANONICAL.md`）。
+- `D_eff` / 规范 `d`：物理/模型容量带宽归 `D_eff`，规范 `d = ‖∂U/∂S‖` 需独立 `Bearer (P+E)` 准入（退出旧版 `$d$: 注意力范围`）。
+- $\pi_\lambda$: 粗粒化映射；$\approx$ 表示 `Core_14 P3-Scale-01` 近似交换。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定。
 
 ## 0.5 Numbering Scheme (编号体系)
 
@@ -572,11 +574,11 @@ $$\nabla F : L_0 \to \mathbb{R}^n$$
 
 此历史记法只有在可形式化投影域、状态坐标、$F$ 与边界条件均已给定时才有内容；不得把定义在领域表示上的梯度反写成 $L_0^{abs}$ 的内在坐标或「选择的自然流向」。
 
-## 4.3 初心的形式化
+## 4.3 初心的有限时域模型桥接（`B-A / C-A` 修复与 `T3-01 C/E` 分界）
 
-$$\text{Original Intention} = \arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)] dt$$
+$$\text{Original Intention}_{M,T} = \arg\min_{\text{direction} \in \mathcal{D}_M} \int_0^T F_M[\sigma(t)]\, dt \qquad (0 < T < \infty,\text{ declared finite model } M)$$
 
-在声明了 $\sigma$、$F$、可行方向、时间域与比较规则的 Physics bridge 中，此式可作为 L₁ 初心的变分代理；它不赋予 $L_0$ 语义方向，也不创建 L₀ 前身。
+> **`R4-C2` 校准（`OPEN_TENSIONS §16–§17`）**：旧式中的无限时域积分 `\int_0^\infty` 已由 `C-A` 正式撤回，现修正为声明有限时域 `[0, T]` 内的 `L_1/P3` Physics bridge 代理；它不赋予 `L_0` 语义方向，不创建 `L_0` 初心前身（`B-A`），亦不替代或提前关闭开放中的非道德跨尺度全局趋优追问（神性·倾向义，`T3-01 C/E`，详见 `SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` 反向主线三）。
 
 **边界结论（B-A）**：Apeiron／潜在域的无内容结构不对称与 L₁ 初心可以发生解释性对应，但前者不分析地推出后者。该对应是领域翻译，不是「初心来源」的 L₀ 证明；阿那克西曼德接口保留为哲学桥，不构成严格数学派生。
 

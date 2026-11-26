@@ -1,32 +1,34 @@
 ---
 id: SRT-PHYS-10
 type: reference
-tags: [Integration, Quantum Darwinism, Penrose, String Theory, Hybrid]
-status: bridge_realign_v1
+tags: [Integration, CrossScale, Bidirectional, Quantum Darwinism, Penrose, String Theory, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [SRT-PHYS-09]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-PHYS-07-COMPACT-CORE, SRT-PHYS-09]
 ---
 
-# SRT Physics Extension III: Theoretical Integration (Hybrid Edition)
+# SRT Physics Extension III: Bidirectional Theoretical Integration (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Bidirectional Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Phys_10_Integration_CompactCore.md`, and `SRT_Phys_07_Complex_Systems_CompactCore.md`. Under `R4-C` (`1A 修订版 / 2A / 3A`), physics serves as both a pressure-test bridge and an active source of core theoretical inheritance, deepening, correction, and cross-scale abstraction (with three physics–life–society reverse-feedback mainlines queued for **`R4-C5`**). Legacy phrases asserting strict mathematical isomorphism with Zurek's Einselection, switch-like Penrose threshold triggering of Selection, or consensus-only objectivity yield immediately to `PHR-A`, `EX-A`, `C1-c` fallible objectivity, and the Reef Principle.
 > **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Integration Theorems (AI-Readable).
+> **Part A** presents the Formal Integration Handles (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
 
 ---
 
-# Part A: Formal Integration Theorems
+# Part A: Formal Integration Handles
 
-## I. Quantum Integration (量子整合)
+## I. Quantum Integration (量子整合 · `PHR-A` 校准)
 
-### Ax-Int-1: Quantum Darwinism Equivalence (量子达尔文主义等价)
-Zurek's Einselection is mathematically isomorphic to the Operator Anchoring $\hat{G}_\theta$.
-$$ \text{Einselection} \cong \hat{G}_\theta[L_0 \to L_1] $$
-*   **Mechanism**: Pointer states are stable $L_1$ fixed points; Environment redundancy is $L_2$ consensus coding.
+### Ax-Int-1: Quantum Darwinism Stabilization Analog (量子达尔文主义稳定化类比 · 非同构证明)
+Zurek's Einselection provides a **P3 physical bridge analogue** for environment-assisted pointer stabilization and redundant `L_2` record encoding (retiring the overly strong legacy claim of "mathematical isomorphism"):
+$$ \text{Einselection} \sim_{\text{P3}} \text{environment-assisted pointer stabilization (PHR-A compatible; does not alone decide outcome occurrence)} $$
+*   **Mechanism**: Pointer states map to decoherence-resistant `L_1` records; environment redundancy maps to `L_2` multi-access encoding. Per `PHR-A`, decoherence and redundancy alone remain insufficient without interpretation-indexed outcome registration and downstream path/history efficacy.
 
 ### Def-ObjectiveReality: Redefinition of Classical Objectivity (客观现实重定义)
 **Formal Definition**: “客观物理现实”是**边际读出摩擦**趋于零、而非对象维持摩擦本身消失的状态：

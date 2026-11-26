@@ -1,41 +1,56 @@
 ---
 id: SRT-CORE-25-THERMODYNAMIC-SIGNATURES-OF-SELECTION
 type: bridge_hardening
-tags: [Core, Thermodynamics, Irreversibility, Arrow of Time, Entropy Production, Brain Hierarchy, Turbulence, Psi_f, d-value, Ghost Operator, Consciousness, Neuroscience]
-status: draft_v1
+tags: [Core, Thermodynamics, Irreversibility, Arrow of Time, Entropy Production, Dissipative, Brain Hierarchy, Turbulence, Psi_f, d-value, Ghost Operator, Consciousness, Neuroscience]
+status: active
+version: v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
 canonical: false
-dependency: [SRT-CORE-23-IG-COMPLEXITY-NEURO-HARDENING, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-22, SRT-CONSCIOUSNESS-MECHANISMS]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-23-IG-COMPLEXITY-NEURO-HARDENING, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-22, SRT-CONSCIOUSNESS-MECHANISMS]
 renamed_from: Core/SRT_Core_24_Thermodynamic_Signatures_of_Selection.md
 renamed_on: 2026-04-29
 ---
 
 # SRT Core 25: Thermodynamic Signatures of Selection
 
-> **Purpose**: This file hardens a thermodynamic bridge for SRT by mapping irreversibility, entropy production, arrow-of-time asymmetry, hierarchical information flow, and turbulence onto the SRT selection loop.  
-> **Boundary**: This file does **not** claim that thermodynamics is identical to consciousness, nor that irreversibility alone is sufficient for subjectivity. Thermodynamic irreversibility is treated as an empirical and modeling signature of selection in dynamical systems. SRT still requires `d-value`, payability, anchoring, and loop closure for consciousness-relevant claims.
+> **Purpose**: This file hardens a thermodynamic bridge for SRT by mapping irreversibility, entropy production, arrow-of-time asymmetry, hierarchical information flow, and turbulence onto non-equilibrium physical and neural implementations of selection dynamics (`R4-C2` aligned with `Spine v5`, `One_Formation v2`, `T-E / NODE-LIFE-DISSIPATIVE`, and `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md`).  
+> **Boundary**: This file does **not** claim that thermodynamics is identical to consciousness, nor that irreversibility or dissipation alone is sufficient for `One`, selection structures, or subjectivity (`G2`, `PHR-A`, `HP-B OPEN`). Thermodynamic irreversibility is treated strictly as an empirical and modeling signature in declared non-equilibrium implementations. SRT still requires independent `Bearer (P+E)` admission, stake-coupled `d`, payability (`Ψ_f`), and independent phenomenality grounds (`HP-B OPEN`) for consciousness-relevant claims.
 
 > **Source interface**: Kringelbach, M. L., Sanz Perl, Y., & Deco, G. (2024). *The Thermodynamics of Mind*. *Trends in Cognitive Sciences*, 28(6), 568–581. https://doi.org/10.1016/j.tics.2024.03.009
 
 ---
 
-## 0. Core Bridge Claim
+## 0. Core Bridge Claim (`R4-C2` Aligned)
 
 The Thermodynamics of Mind framework proposes that brain hierarchy can be quantified by asymmetry of information flow, irreversibility, and arrow-of-time structure.
 
 SRT translation:
 
-> **Irreversibility is not consciousness itself. It is the dynamical trace left when a system has made a selection that cannot be costlessly undone.**
+> **Irreversibility is not consciousness itself, nor is classical dissipation a universal necessary condition for primitive `Selection`. Rather, in declared non-equilibrium physical and biological implementations, thermodynamic irreversibility is an empirical dynamical signature left when directional selection-like organization cannot be costlessly undone.**
 
-In SRT terms, a selection event is a directional compression from `L0` into an anchored `L1`, paid through `Ψ_f`, and optionally written back into `L2`:
+Under `Core_Law/SRT_Generative_Ontology_Spine.md §7`, `L_0 / L_1 / L_2` are **three analytic aspects** of one reality rather than a mandatory three-stage linear pipeline, and `primitive Selection != formed \hat{G}_\theta` (terminal Selection requires neither classical dissipation nor `L_2` writeback). Inside declared non-equilibrium implementations where a formed operator `\hat{G}_\theta` maintains directional `L_1` dynamics under a payability window (`Ψ_f`) and conditionally retains historical constraints (`L_2`):
 
 \[
-L_0 \xrightarrow{\hat{G}_\theta,\; \Psi_f} L_1 \xrightarrow{writeback} L_2
+(\text{declared non-equilibrium model } M):\quad L_0\text{-side openness} \;\xleftrightarrow{\;\text{formed }\hat{G}_\theta,\; \Psi_f\text{-window}\;}\; L_1\text{-side manifest dynamics} \;\xleftrightarrow{\;\text{conditional retention}\;}\; L_2\text{-side constraint}
 \]
 
-This loop should generally leave some form of temporal asymmetry in the domain where it is implemented.
+Such non-equilibrium implementations generally leave measurable temporal asymmetry (`Δ_irr`, `H_P`, broken detailed balance) in the domain where they operate.
+
+---
+
+## 1a. Cross-Link to Physical Three-State `One`, `T-E` Dissipative Stratification (`NODE-LIFE-DISSIPATIVE`), and `OPEN_TENSIONS §12`
+
+To prevent thermodynamic signatures from being conflated with selection structures, life, or ontology:
+
+| Surface | Exact Division of Labor | Non-Conflation Guard |
+|---|---|---|
+| **`Core_25` (this file)** | **Measurement-facing thermodynamic signatures**: `Δ_irr`, entropy production `H_P`, broken detailed balance `BDB`, hierarchical information flow, and cascade/turbulence proxies | Signatures are **not** identical to `Ψ_f`, canonical `d`, `One`, selection structures, or consciousness |
+| **`T-E` (`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` & `SRT_Selection_Event_CompactCore.md §4b`)** | **Mechanistic stratification (`NODE-LIFE-DISSIPATIVE EA-4`)**: separates *substrate* vs. *organizational mechanism* vs. *explanatory sufficiency*, four dissipative-to-selection tiers, `G2` non-universality, and *living scaffold* vs. *dead stability* vs. *cage order* | High `H_P` or stable non-equilibrium pattern (flame, Bénard cell, hurricane) does **not** pass `CG-0..CG-4` or establish generative health |
+| **`One_Formation §2.3` & `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2`** | **Physical three-state `One` spectrum**: Regime I (bound equilibrium) / Regime II (dissipative dynamic maintenance, external-boundary flux) / Regime III (endogenous mutual maintenance: self-generated boundary repair, functional differentiation, heritable/epigenetic writeback) | Biological membranes are **not** a universal `One` threshold; exact crossing criteria for all three regimes remain **`R3-04-O1` OPEN** |
+| **`Core/SRT_OPEN_TENSIONS.md §12`** | **Altitude tension**: `Core_25`'s measurement-facing signature reading vs. P13's de-selection statistical-portrait reading | Neither replaces the other; ontological-absence vs. theoretical-abstraction remains explicitly **OPEN**; SRT is **not** an anti-entropy theory |
 
 ---
 
@@ -102,9 +117,9 @@ But the stronger SRT condition is:
 
 ---
 
-## 3. Relation to `Ψ_f`
+## 3. Relation to `Ψ_f` (`R4-A / R3-08` Aligned)
 
-`Ψ_f` is the payability burden of selecting, maintaining, and coordinating an actualization. Thermodynamic variables such as irreversibility, entropy production, dissipation, or broken detailed balance can serve as domain-specific projections of this burden.
+Under `_SRT_PSI_F_CANONICAL.md` (`R4-A`), SRT pairs the **pressure side** (opportunity-cost differences producing actual selection pressure, `T3-02 D / PT09` vertical suppression, structural/predictive pressure) with the **supply and payability-window side** (`Ψ_f / P_sel`), while preserving the four-way friction separation (`R3-08`: general friction / non-closure pressure / payability burden `Ψ_f` / subjective suffering). Thermodynamic variables such as irreversibility (`Δ_irr`), entropy production (`H_P`), dissipation, or broken detailed balance serve strictly as **domain-specific physical projections on the payability/realization-burden side** (never identical to `Ψ_f` or raw metabolic expenditure):
 
 Correct bridge:
 
@@ -116,44 +131,34 @@ Correct bridge:
 Incorrect bridge:
 
 \[
-\Psi_f \equiv H_P
-\]
-
-or:
-
-\[
-\Psi_f \equiv \Delta_{irr}
+\Psi_f \equiv H_P \qquad \text{or} \qquad \Psi_f \equiv \Delta_{irr}
 \]
 
 if read as literal identity.
 
 Hard reading:
 
-> `Ψ_f` asks whether the system can pay for a selection. Thermodynamic irreversibility estimates whether the system's dynamics reveal directional, non-equilibrium organization after such selections have been made.
+> `Ψ_f` asks whether the coupled generative relation can pay for maintaining and reorganizing an actualization within its payability window (distributed payability guardrail). Thermodynamic irreversibility estimates whether a non-equilibrium physical implementation reveals directional, non-equilibrium organization—which may correspond either to a *living scaffold* or to *dead stability* (`T-E §6`).
 
 ---
 
-## 4. Relation to `d-value`
+## 4. Relation to `d-value` (`R4-A` `Bearer (P+E)` & `d ≠ D_eff ≠ D_stake` Guard)
 
-Irreversibility alone is not enough for subjectivity. A hurricane, flame, or chemical reaction can be irreversible without being conscious in the SRT sense.
+Irreversibility alone is not enough for `One`, selection structures, `Bearer (P+E)`, or subjectivity. A hurricane, flame, or Bénard cell (Regime II dissipative maintenance) can exhibit high entropy production and broken detailed balance without satisfying `CG-0..CG-4`, `Bearer (P+E)`, or consciousness.
 
-SRT therefore adds the stake condition:
+SRT therefore strictly separates:
+- **Physical/thermodynamic capacity & organization proxies** (`Δ_irr`, `H_P`, `D_eff`, hierarchy): require no `Bearer (P+E)` admission;
+- **Canonical stake-coupled risk sensitivity `d`** (`_SRT_D_VALUE_CANONICAL.md Def-d-canonical`): admitted **only** when `Bearer (P+E)` (prospective self-indexing + same-One non-outsourcable exposure) is independently established:
 
 \[
 d(x)=\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 
-Thermodynamic asymmetry becomes consciousness-relevant only when stake-coupled:
-
-\[
-\Delta_{irr} \land d>0 \land \mathrm{Payable}(\Psi_f)
-\Rightarrow
-\text{selection with concern-bearing structure}
-\]
+- **Consciousness / phenomenality (`HP-B OPEN`)**: even the conjunction `Δ_irr ∧ d > 0 ∧ Payable(Ψ_f)` establishes only a **candidate concern-bearing non-equilibrium organization** in a declared biological/neural model—never an automatic sufficient condition for phenomenal consciousness (`Philosophy/SRT_HardProblem_Epistemology.md`, `Core_Law/SRT_Suffering.md §7`).
 
 Boundary:
 
-> High irreversibility may indicate strong dynamics; high `d-value` indicates that some directions of those dynamics matter for the system's future selection capacity.
+> High irreversibility may indicate strong non-equilibrium dynamics (or even rigid dead stability); canonical `d-value` indicates irreversible-risk sensitivity at an independently admitted `Bearer (P+E)` position, distinct from both geometric capacity `D_eff` and phenomenality.
 
 ---
 
@@ -224,6 +229,16 @@ Boundary:
 
 ---
 
+## 6a. Non-Equilibrium Extremal Principles & Local-vs-Global Tension (`R4-C2` Mainline 3 & `T3-01 C/E`)
+
+Non-equilibrium thermodynamics directly informs SRT's third cross-scale reverse-feedback mainline (**local vs. global generative optimization**, `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2`, queued for `R4-C5`):
+
+- **Near-equilibrium vs. far-from-equilibrium boundary**: Prigogine's minimum entropy production theorem (`H_P \to \min`) holds strictly in the **linear near-equilibrium regime** under fixed boundary forces; far from equilibrium, neither minimum nor maximum entropy production (MEPP) is a universal physical theorem, and constant-flux vs. constant-force boundaries yield opposite extremal directions.
+- **No automatic convergence from local thermodynamic optimization to global generative order**: High local entropy production or local free-energy descent can stabilize *dead stability*, multi-stable frustrated states, or pathological lock-in just as readily as adaptive living scaffolds (`T-E §6`).
+- **Scope separation (`OPEN_TENSIONS §17 C-A` vs. `Spine §1 T3-01 C/E`)**: Technical extremal quantities (`H_P`, variational free energy) remain strictly model- and boundary-indexed; they reinforce `C-A`'s withdrawal of universe-wide evaluative optima while providing concrete non-equilibrium pressure constraints—not premature closure—on the open non-moral `T3-01 C/E` inquiry (Divinity · global optimizing orientation).
+
+---
+
 ## 7. Experimental Interfaces
 
 ### Prediction 1: Stake-gated irreversibility
@@ -272,7 +287,7 @@ where:
 - `𝓗_hier` = hierarchy / asymmetry of information flow;
 - `𝓒_cascade` = multi-scale cascade or turbulence proxy.
 
-SRT consciousness-relevant selection is not `𝒯_sel` alone, but:
+SRT consciousness-relevant neural candidate index (strictly a P3/P4 modeling readout, **never** a universal consciousness admission criterion—`HP-B` remains `OPEN` and `d` requires independent `Bearer (P+E)` admission):
 
 \[
 \mathcal{SRT}_{conscious\text{-}candidate}(X)
@@ -281,7 +296,7 @@ SRT consciousness-relevant selection is not `𝒯_sel` alone, but:
 \cdot d(X)\cdot \chi_{payable}(X)\cdot \chi_{anchor}(X)
 \]
 
-This is a bridge formula, not a canonical theorem.
+This is a bridge formula, not a canonical theorem or phenomenality gate.
 
 ---
 
@@ -303,9 +318,9 @@ Correct claim level:
 
 ---
 
-## 10. Short Reusable Paragraph
+## 10. Short Reusable Paragraph (`R4-C2` Aligned)
 
-> Thermodynamic signatures give SRT an empirical bridge for measuring the directional organization of neural selection. Irreversibility, entropy production, broken detailed balance, arrow-of-time asymmetry, and turbulence are not consciousness itself; they are thermodynamic signatures that a dynamical system is organizing information flow in a non-equilibrium, hierarchical, and temporally asymmetric way. In SRT, these signatures are read as `L1`-level traces of `Ĝθ`-mediated selection from `L0`, paid through `Ψ_f`, and potentially written back into `L2`. The missing condition is `d-value`: irreversible information flow becomes consciousness-relevant only when it is coupled to stake, closure, and future selection capacity.
+> Thermodynamic signatures give SRT an empirical bridge for measuring the directional organization of non-equilibrium physical and neural dynamics. Irreversibility, entropy production, broken detailed balance, arrow-of-time asymmetry, and turbulence are neither consciousness itself nor sufficient conditions for `One` or selection structures (`G2`, `T-E §2`); they are measurable dynamical traces in declared non-equilibrium implementations of `L_1`-side directional organization under a `Ψ_f` payability window and conditional `L_2` retention. Canonical `d-value` additionally requires independently established `Bearer (P+E)` stake-bearing exposure, while phenomenal consciousness remains independently gated (`HP-B OPEN`).
 
 ---
 
@@ -318,6 +333,7 @@ Use this file when a question mentions:
 - irreversibility;
 - entropy production;
 - broken detailed balance;
+- dissipative structures vs. selection structures (`T-E` / `NODE-LIFE-DISSIPATIVE`);
 - neural hierarchy;
 - turbulence in brain dynamics;
 - movie watching and hierarchy flattening;
@@ -326,6 +342,11 @@ Use this file when a question mentions:
 
 Primary companion files:
 
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` (`§4b`, `NODE-LIFE-DISSIPATIVE EA-4`)
+- `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`
+- `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` (`§8.2`, `§9.2`)
+- `Core_Law/SRT_One_Formation.md` (`§2.3`)
+- `Core/SRT_Core_13b_Operator_Advanced.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`

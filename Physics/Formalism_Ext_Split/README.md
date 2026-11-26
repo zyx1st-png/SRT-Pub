@@ -1,23 +1,25 @@
 ---
 id: SRT-PHYS-09-SPLIT-INDEX
 type: index
-tags: [Split, Navigation, Longform]
-status: active_v1
+tags: [Split, Navigation, Longform, ConnectorSafety]
+status: active
 layer: meta
 epistemic_layer: os
-claim_mode: navigation
-dependency: [SRT-PHYSICS-CLAIM-STATUS, ]
+claim_mode: evidence
 canonical: false
+dependency: [SRT-PHYS-09]
 ---
 
-# SRT-PHYS-09 Split Index
+# SRT Physics: Advanced Mathematical Formalism (Hybrid Edition) Split Index
 
-> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Phys_09_Formalism_Ext.md`](../SRT_Phys_09_Formalism_Ext.md)
-- Source owner bytes: `66040`
-- Source owner SHA-256: `567b04ecb997b4bbb5ba2f87267ef6ed0162702481d87752eeb4b693366a6e7a`
-- 00_Foundational_Formalism：[`00_Foundational_Formalism.md`](00_Foundational_Formalism.md)
-- 01_Math_and_Category_Stack：[`01_Math_and_Category_Stack.md`](01_Math_and_Category_Stack.md)
-- 02_Information_Geometry_and_Dynamics：[`02_Information_Geometry_and_Dynamics.md`](02_Information_Geometry_and_Dynamics.md)
-- 03_Quantum_and_Advanced_Extensions：[`03_Quantum_and_Advanced_Extensions.md`](03_Quantum_and_Advanced_Extensions.md)
-- 04_Symbols_and_Interfaces：[`04_Symbols_and_Interfaces.md`](04_Symbols_and_Interfaces.md)
+- Source owner bytes: `67061`
+- Source owner SHA-256: `d23113f509a4e0db518c7f56c4f5528e183f2bf84122250f5bb0f9638d2ab7e5`
+- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
+- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
+
+| Part | File | Starts with | Bytes | SHA-256 prefix |
+|---:|---|---|---:|---|
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Physics: Advanced Mathematical Formalism (Hybrid Edition) | 33250 | `90fa30706303` |
+| 01 | [`01_Part02.md`](01_Part02.md) | 1.3 空间作为 θ 的投影属性 | 32301 | `d6bc9b656218` |
+| 02 | [`02_Part03.md`](02_Part03.md) | [Lineage/Source] | 2641 | `5e05082e32cd` |

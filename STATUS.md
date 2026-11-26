@@ -18,29 +18,29 @@ updated: 2026-11-26
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-26 `R4-A`（`#1159`）、`R4-B1`（`#1160`）、`R4-B2`（`#1161`）与 **`R4-C1` 公共生成机制中枢及哲学核心重构**已落盘，下一步按获批 `1A 修订版 / 2A / 3A` 方案推进 **`R4-C2` 物理与跨尺度生成波次**（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-26 `R4-A`（`#1159`）、`R4-B1`（`#1160`）、`R4-B2`（`#1161`）、`R4-C1`（`#1162`）与 **`R4-C2` 物理与跨尺度生成双向重构**已落盘，下一步按获批 `1A 修订版 / 2A / 3A` 方案推进 **`R4-C3` AI 全域重构（`ENG-03` 单一原子 PR）**（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2`、`R3-01..R3-08`、`R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A`（`#1159`, `d907de18d`）**、**`R4-B1`（`#1160`, `e4ba0a555`）**、**`R4-B2`（`#1161`, `dc0e89055`）** 全部合并；作者于 2026-11-26 审定 **`R4-C` 五波双向完善总体方案（`1A 修订版 / 2A / 3A`：各领域不仅是应用延伸，更是 SRT 整体理论的继承、补齐、深化、修正与抽象来源）**并授权启动。**`R4-C1` 公共生成机制中枢与哲学核心重构**已区分 `Core_Law` 公共机制中枢（`Reference_Dynamics §1.5` 实质转化幽灵三卡与 `§4.1a` 垂直压制摩擦、`Individuation §4.6–4.8`、`Occlusion_Dynamics §1.3/4.1/6.3`、`Suffering §1.1/7`、`Collective_Selection §3.4–3.5/6.1/8`、`Irreversibility` 及两份 `Hardening_Notes` 防回流核验）与 `Philosophy` 本体/时间/意识/能动/自由/规范/独立社会政治经济问题群（`Foundations`、`Causality_Time`、`HardProblem_Epistemology`、`Consciousness_Conditions`、`Subjecthood_Threshold_Interface` 全称隔离、`Agency_Subjecthood_v0_2`、`Ethics_PH_SS_Guardrails`、`Social_Cognition`、`Soc_03_Institutions`、`Social_Economics/Political_Philosophy CompactCore`、`Political_Rights`、`Core_24`），同步闭合 `NODE-GHOST-OPERATOR`、`NODE-SOCIAL-L2`、`NODE-ENTROPY-REORG` 与 `NODE-BOOK-BACKFLOW` 四项结构同化债（`NODE-LIFE-DISSIPATIVE` 留 `R4-C2`，`NODE-D-VALUE` / `RQ-2026-08-A02` 保持诚实开放），并确定性重建受影响阅读 split 与 `Operations/Context_Bundles/*`。本轮不启动 `R5`、不关闭去重后 `63` 项 `OPEN`、不触碰 `25` 个封存 `validation_holdout`、不解冻任何既有 `HOLD`。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2`、`R3-01..R3-08`、`R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A`（`#1159`, `d907de18d`）**、**`R4-B1`（`#1160`, `e4ba0a555`）**、**`R4-B2`（`#1161`, `dc0e89055`）**、**`R4-C1`（`#1162`, `1beacba72`）**全部合并；作者于 2026-11-26 审定 **`R4-C` 五波双向完善总体方案（`1A 修订版 / 2A / 3A`：各领域不仅是应用延伸，更是 SRT 整体理论的继承、补齐、深化、修正与抽象来源）**并授权启动。**`R4-C2` 物理与跨尺度生成双向理论重构**已完成 `Physics` 全域护栏/主桥接/索引/全部八份 CompactCore 与对应长文主轴重构（`SRT_Physics_Claim_Status`、`_SRT_Phys_Bridge §VII`、`SRT_Phys_07_Complex_Systems_CompactCore` 跨尺度主枢纽、`SRT_Phys_08/09/10`、`SRT_Quant_00/01/02`、`SRT_Physics_Cosmology`），覆盖原初分化与相对位置（QRF/RQM/`REP01`）、跨尺度五机制（装配/归一化双门槛/有效作用接口/`Proxy`/`Delegation` 分账）、物理三态 `One`（`R3-04-O1` OPEN）、耗散结构与生命组织差异、时空因果闭合边界（`R3-03-O6`/`Causality_Time` 七项时间接口与四类距离）及自然律三分边界（`R3-02-O6` 规范落盘、实质归属 OPEN），实质闭合 **`NODE-LIFE-DISSIPATIVE`（`EA-4`）**（`03_Bridges/SRT_Selection_Event_CompactCore.md §4b` 与 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2` 双快速层压缩 `T-E §2/§4/§6`），同步衔接 **`Core_13b`**（退出 `d ≡ D_eff`、`S_{max}(L_0)` 与旧 AI 笼统排除，联通算子联邦与弱耦合个体化窗口）与 **`Core_25`**（对齐 `Spine v5`、物理三态 `One`、`T-E` 及非平衡极值张力），并沿物理—生命—社会三尺度深化登记三项核心反向完善主线排入 **`R4-C5`** 核心修订评估（相互依赖生成相对独立性 / 多尺度组织产生原本不存在的新能力 / 局部生成趋优与整体生成趋优的关系，衔接神性·倾向义与 `T3-01 C/E` 开放问题），确定性重建四组受影响物理阅读 split 与 `Operations/Context_Bundles/*`。本轮不启动 `R5`、不关闭去重后 `63` 项 `OPEN`、不触碰 `25` 个封存 `validation_holdout`、不解冻任何既有 `HOLD`。
 >
 > **冲突优先级**：本节是截至 2026-11-26 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= 按获批 R4-C 双向完善五波方案（1A 修订版 / 2A / 3A）依次推进：R4-C1（公共生成机制中枢 + 哲学与社会政治核心）已落盘 -> 下一步推进 R4-C2（物理与跨尺度生成）-> R4-C3（AI 全域重构 ENG-03 单一原子 PR）-> R4-C4（神经科学与认知生成）-> R4-C5（灵性实践 + §18 CΨ 独立作者门 + 全仓收口与双向理论反馈回流）；不启 R5、不解冻 HOLD
-= Execute approved R4-C five-wave bidirectional domain reconstruction (1A-revised / 2A / 3A): R4-C1 landed -> next R4-C2 Physics & Cross-Scale Generation (NO R5, NO HOLD release);
+= 按获批 R4-C 双向完善五波方案（1A 修订版 / 2A / 3A）依次推进：R4-C1（公共生成机制中枢 + 哲学与社会政治核心，#1162 已合并）与 R4-C2（物理与跨尺度生成）已落盘 -> 下一步推进 R4-C3（AI 全域重构 ENG-03 单一原子 PR）-> R4-C4（神经科学与认知生成）-> R4-C5（灵性实践 + §18 CΨ 独立作者门 + 全仓收口与双向理论反馈回流）；不启 R5、不解冻 HOLD
+= Execute approved R4-C five-wave bidirectional domain reconstruction (1A-revised / 2A / 3A): R4-C1 (#1162) & R4-C2 landed -> next R4-C3 AI Domain Atomic Cleanup (ENG-03) (NO R5, NO HOLD release);
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145]
   -> R3 骨架与前置工程清障 [R3 总收口 #1154 + ENG-01..04 #1155..#1158 全部合并；旧草案 #1129/#1140 已关闭]
-  -> R4 canonical：分波次重构 [R4-A #1159 已合并 d907de18d -> R4-B1 #1160 已合并 e4ba0a555 -> R4-B2 #1161 已合并 dc0e89055 -> R4-C1 公共生成机制与哲学核心已落盘 -> 下一步 R4-C2 物理与跨尺度生成]
+  -> R4 canonical：分波次重构 [R4-A #1159 已合并 d907de18d -> R4-B1 #1160 已合并 e4ba0a555 -> R4-B2 #1161 已合并 dc0e89055 -> R4-C1 #1162 已合并 1beacba72 -> R4-C2 物理与跨尺度生成已落盘 -> 下一步 R4-C3 AI 全域重构]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= 唯一下一步执行任务：推进 R4-C2 物理与跨尺度生成波次（原初分化与相对位置、跨尺度五机制、物理三态 One、耗散与生命组织差异、时空因果、自然律三分边界，并闭合 NODE-LIFE-DISSIPATIVE EA-4 与 Core_13b/Core_25 衔接；同步沿物理—生命—社会三尺度检验个体化、相对独立性、归一化、多重垂直参与与新组织能力生成的一般共同关系）；
-  -> 在 R4-C 后续波次完成前，未重构下游域继续遵循 Spine §0.1 过渡规则；各域产生的高价值核心理论双向反馈（含 R4-C1 的关系性个体化、协同共选与多重垂直参与、正面自由与关系性时间）保留来源、候选性质与作者裁决边界，排入 R4-C5 最终核心理论修订评估（拟反馈至 One_Formation / Spine / Core_Law 相应核心 owner）；
+= 唯一下一步执行任务：推进 R4-C3 AI、人工生成与人机共同生成全域重构（承接 ENG-03 54 文件与 18 处跨领域消费者对照表，单一原子 PR 退出 L0->L1 伪本体门槛、统一三套 AI / S 全称隔离并落实三阶承载证据审查与反向核心理论反馈）；
+  -> 在 R4-C 后续波次完成前，未重构下游域继续遵循 Spine §0.1 过渡规则；各域产生的高价值核心理论双向反馈（含 R4-C1 的关系性个体化、协同共选与多重垂直参与、正面自由与关系性时间；以及 R4-C2 沿物理—生命—社会三尺度深化的三项主线：相互依赖生成相对独立性、多尺度组织产生原本不存在的新能力、局部生成趋优与整体生成趋优的关系并衔接神性·倾向义与 T3-01 C/E）保留来源、候选性质与作者裁决边界，排入 R4-C5 最终核心理论修订评估（拟反馈至 One_Formation / Spine / Core_Law 相应核心 owner）；
 
-ACTIVE NOW = R4-C 领域层分波次双向重构执行期（R4-C1 已落盘，下一步 R4-C2 物理与跨尺度生成；不启 R5、不解冻 HOLD）;
+ACTIVE NOW = R4-C 领域层分波次双向重构执行期（R4-C1/R4-C2 已落盘，下一步 R4-C3 AI 全域重构；不启 R5、不解冻 HOLD）;
 R4-C 各波次合并 / R5 = 须各自完成独立评审与门控后依次推进;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
@@ -48,7 +48,7 @@ PR MERGE / canonical writes / experiment / preregistration / publication
 = UNCHANGED; no blanket release;
 ```
 
-**当前 `R4-C` 双向完善总体执行口径（`1A 修订版 / 2A / 3A`，2026-11-26）**：各领域不仅是 `R4-A/B` 骨架的应用延伸，更是 SRT 整体理论的**继承、补齐、深化、修正与抽象来源**。五波依赖序为：`R4-C1`（公共生成机制中枢与哲学/社会政治核心，已落盘）→ `R4-C2`（物理与跨尺度生成）→ `R4-C3`（AI、人工生成与人机共同生成，承接 `ENG-03` 54 文件单一原子 PR）→ `R4-C4`（神经科学与整体生成性认知）→ `R4-C5`（灵性、实践与共同生成 + `§18 CΨ` 保持独立作者门开放 + 全仓收口与双向反馈统筹）；不启动 `R5`，不解冻任何既有 `HOLD`。
+**当前 `R4-C` 双向完善总体执行口径（`1A 修订版 / 2A / 3A`，2026-11-26）**：各领域不仅是 `R4-A/B` 骨架的应用延伸，更是 SRT 整体理论的**继承、补齐、深化、修正与抽象来源**。五波依赖序为：`R4-C1`（公共生成机制中枢与哲学/社会政治核心，`#1162` 已合并）→ `R4-C2`（物理与跨尺度生成，已落盘）→ `R4-C3`（AI、人工生成与人机共同生成，承接 `ENG-03` 54 文件单一原子 PR）→ `R4-C4`（神经科学与整体生成性认知）→ `R4-C5`（灵性、实践与共同生成 + `§18 CΨ` 保持独立作者门开放 + 全仓收口与双向反馈统筹）；不启动 `R5`，不解冻任何既有 `HOLD`。
 
 ---
 
@@ -137,7 +137,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1160 role = R4-B1 CANONICAL LANDING COMPLETE (25 files, SPINE=120,156 tokens, P1-01..P1-04 & B11/B08 closed)
 #1161 R4-B2 legacy formal longform reconstruction (Core_12a / Core_12b / Core_13a / Core_14 + CompactCore / L1_Formalism / _SRT_SYMBOL_TABLE) = MERGED / dc0e89055
 #1161 role = R4-B2 CANONICAL LANDING COMPLETE (45 files, SPINE=120,730 tokens, P1-01..P1-05 closed; R4-B formal core closed)
-R4-C1 CANONICAL LANDING (2026-11-26) = COMMON GENERATIVE MECHANISMS HUB & PHILOSOPHY CORE RECONSTRUCTION COMPLETE (Core_Law Reference_Dynamics §1.5 Ghost 3-card absorption + §4.1a / Individuation / Occlusion_Dynamics / Suffering / Collective_Selection SEA + AI 三型 / Irreversibility / Hardening Notes non-backflow + Philosophy Foundations/Time/Epistemology/Consciousness/Subjecthood S0-S6 isolation/Agency+Freedom/Ethics/Social-Political-Institutional cluster + 4 EA nodes active_complete) -> NEXT: R4-C2 PHYSICS & CROSS-SCALE GENERATION
+#1162 R4-C1 common generative mechanisms hub & Philosophy/social-political core reconstruction = MERGED / 1beacba72
+#1162 role = R4-C1 CANONICAL LANDING COMPLETE (58 files, Core_Law hub + Philosophy/social-political cluster + 4 EA nodes active_complete)
+R4-C2 CANONICAL LANDING (2026-11-26) = PHYSICS & CROSS-SCALE GENERATION BIDIRECTIONAL RECONSTRUCTION COMPLETE (Physics Claim_Status / _SRT_Phys_Bridge §VII / README / Compact Registry + all 8 CompactCores & longforms synced + primitive differentiation & relative position QRF/RQM/REP01 + cross-scale 5 mechanisms + physical 3-state One R3-04-O1 + dissipative vs living organization + NODE-LIFE-DISSIPATIVE EA-4 active_complete via Selection_Event_CompactCore §4b & Phys_07 §8.2 + Core_13b & Core_25 reconciliation + spacetime/causality closure R3-03-O6 & 7 temporal interfaces + natural law tripartite boundary R3-02-O6 + 3 cross-scale reverse-feedback mainlines queued for R4-C5) -> NEXT: R4-C3 AI DOMAIN ATOMIC CLEANUP (ENG-03)
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md

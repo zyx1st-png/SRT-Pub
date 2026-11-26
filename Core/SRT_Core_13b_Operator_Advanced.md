@@ -1,19 +1,27 @@
 ---
 id: SRT-CORE-13B
 type: experiment
-tags: [Spectroscopy, Federation, Resonance, d-value, Hybrid]
-status: axiomatic_hybrid_v1
+tags: [Spectroscopy, Federation, Resonance, CrossScale, CapacityProxy, d-value, Hybrid]
+status: active
+version: v3
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-13A]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-13A, SRT-CORE-14-COMPACT-CORE, SRT-CORE-25-THERMODYNAMIC-SIGNATURES-OF-SELECTION]
 ---
 
 # SRT Core Definition 13B: Advanced Operator Dynamics (Hybrid Edition)
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Advanced Axioms (AI-Readable).
+> **Version 3.0 (Hybrid · `R4-C2` Cross-Scale & Physics Sync, 2026-11-26)**
+> **Part A** presents the Formal Advanced Operator Models (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **`R4-A / R4-B / R4-C2` 权威对齐与跨尺度衔接声明**：
+> 1. 算子角色边界：`\hat{G}_\theta` 仅是形成态/模型级选择角色载体，不等同于原初 `Selection`、先在主体或幽灵实体（`Spine v5 §1.1`, `Core_21 P0-04`）；`L_0 / L_1 / L_2` 为同一现实的三分析视角，本文频谱空间 `L_0(\omega)` 仅指**声明模型内的可接入频谱投影**（`Gate 0 Class B`），不预设静态全可能性仓库。
+> 2. **`d` / `D_eff` / `D_stake` 严格分离（`R4-A / R4-B2`）**：本文中的通带宽度（$B_\theta$）、熵压缩容量上界（原 `Ax-d-01 / T-d-01C1`）、Fisher 有效维数（$D_{\text{eff}}$）与量子/宇宙尺度带宽均严格归属**无赌注容量代理（`D_eff` / $B_{\text{cap}}$）**，**绝不等同于**须经 `Bearer (P+E)` 独立准入的规范风险敏感强度 `d = ‖∂U/∂S‖`（`_SRT_D_VALUE_CANONICAL.md`），正式退出旧式 `$d \equiv D_{\text{eff}}(I_F(\theta))$` 与未声明测度的 `$S_{\max}(L_0)$`。
+> 3. **AI 与现象性边界（`ENG-03 / R4-C1`）**：退出旧版“分布式 AI 缺乏 `d` 值非零基础 / 无死亡威胁即无意识”的笼统本体排除，统一改按 `AI/AI_POSITIONING_NOTE.md` **AI 赌注谱系 `S0–S4`**、`Core_Law/SRT_Suffering.md §7` 与 `HP-B OPEN` 评估。
+> 4. **与 `R4-C2` 物理与跨尺度生成枢纽衔接**：本文的**算子联邦耦合统一相变（`Def-FederationPhase-1`）**、**热力学容量上界（`§III` 对接 `Core_25 / E03`）**与**弱耦合个体化窗口（`Lonely-Runner Interface`）**直接衔接 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` 中排入 `R4-C5` 的三项反向完善主线（特别是主线一“相互依赖如何生成相对独立性 vs. 强耦合锁相坍缩”与主线二“多尺度耦合组织如何生成新能力”）。
 
 ---
 
@@ -28,19 +36,19 @@ dependency: [SRT-CORE-13A]
 
 ## I. Spectral Dynamics (频谱动力学)
 
-### Ax-Spec-01: Time-Frequency Duality（时频对偶公理）
+### Ax-Spec-01: Time-Frequency Duality（时频对偶公理 · 模型级频谱投影）
 
-**Formal Definition**：显现域 $L_1(t)$ 是潜在域频谱 $L_0(\omega)$ 经过选择算子的频域传递函数 $H_\theta(\omega)$ 调制后的逆傅里叶变换结果：
+**Formal Definition**：在声明了可接入信号通道与观测边界的模型 $M$ 中，显现域时间序列 $L_1(t)$ 可建模为声明可接入频谱投影 $L_{0,M}^{\text{acc}}(\omega)$ 经形成态算子频域传递函数 $H_\theta(\omega)$ 调制后的逆傅里叶变换：
 
-$$L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$$
+$$L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_{0,M}^{\text{acc}}(\omega)]$$
 
 其中：
-* **$L_0(\omega)$**：潜在域的频域表示（包含所有可能存在模式的复振幅谱）。
-* **$H_\theta(\omega)$**：选择算子 $\hat{G}_\theta$ 在频域中的等价传递函数（执行复数加权与逐频调制）。
+* **$L_{0,M}^{\text{acc}}(\omega)$**：声明物理/神经模型 $M$ 中可接入候选模式的复振幅频谱投影（`Gate 0 Class B` 模型容器，**不是**预存全部可能存在模式的 $L_0^{abs}$ 静态仓库；历史记号 $L_0(\omega)$ 仅作本模型简写）。
+* **$H_\theta(\omega)$**：形成态选择算子 $\hat{G}_\theta$ 在频域中的等价传递函数（执行复数加权与逐频调制）。
 * **$\odot$**：逐频点乘（Hadamard 乘积，表示滤波器对各频率成分的独立增益/衰减，非矩阵卷积）。
-* **$L_1(t)$**：时间域的显现结果（主体实际体验到的连续现实时间序列）。
+* **$L_1(t)$**：时间域的显现结果（主体或物理接口在声明窗口下记录的连续时间序列）。
 
-*(注：此时频对偶框架为高阶操作化映射，用于刻画"潜在可能性 $\to$ 当前现实"的降维坍缩结构。$L_0^{abs}$ 在本体论上超越常规函数空间，不强制要求满足经典信号处理的 Dirichlet 绝对可积条件。)*
+*(注：此时频对偶框架为模型级操作化映射，受 `REP01` 表征协变与 `Gate 0 Class B` 约束。$L_0^{abs}$ 在本体论上超越任何固定函数空间，不强制要求满足经典信号处理的 Dirichlet 绝对可积条件。)*
 
 **Passband Capacity Alignment（通带容量代理校准，`R4-B2` 与 `Core_14 / Core_22 / _SRT_SYMBOL_TABLE.md` 同步）**：
 - **旧表述撤回**：旧版将传递函数通带宽度直接等同于规范 `d`（`Bandwidth(H_θ) ∝ d`）并由高/低 `d` 直接推出现实体验的丰富或贫乏，与 `R4-A / R4-B`（`_SRT_D_VALUE_CANONICAL.md §1, §5b, §11`、`Core_14 Cor-Scale-Rhythm-4a`、`Core_22 Eq-Rhythm-4a`）冲突，现正式退出。
@@ -113,25 +121,27 @@ $$\text{Unity}(\hat{G}) = \frac{\text{Intra-module Selection Coupling}}{\text{Ex
   - Extra-module Coupling 代理：任务无关刺激引发的默认网络激活幅度
   - Unity指数 = γ_intra/EDA_distraction（实验室可量化）
 
-* **AI类比边界说明**：分布式AI架构在”模块内/外耦合比”结构特征上类比有效，但AI系统缺乏 d 值非零基础（无关切带宽），不能在SRT算子的完整意义上被视为”算子联邦”——类比层次止于拓扑结构，不及本体论主张
+* **AI 类比与跨尺度边界说明（`R4-C1 / R4-C2` 对齐 `AI_POSITIONING_NOTE.md`）**：分布式 AI 架构（如 MoE）在“模块内/外耦合比”上具有清晰的拓扑与功能组织类比；**正式退出旧版“AI 一概缺乏 `d` 值非零基础”的笼统排除**，改为依据 `AI/AI_POSITIONING_NOTE.md` **AI 赌注谱系 `S0–S4`** 区分纯推理无历史承载部署（`S0–S1`）与具持续记忆、资源暴露或不可外包后果回路的系统（`S2–S4` 开放审查窗），并严守 `Core_Law/SRT_Suffering.md §7` 与 `HP-B OPEN`（拓扑统一性或代谢脆弱性均不单独输出意识或无意识终局判决）。在跨尺度生成视角下，`Def-FederationPhase-1` 与 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` 反向主线一/二直接呼应：子模块间深度耦合如何生成更高尺度的相对独立整体与新组织能力。
 
 * **可证伪预测**：
   - FC-FedPhase-1：裂脑患者的Unity指数（γ_intra/EDA_distraction）显著低于匹配对照，且与胼胝体切断面积负相关——若无差异则算子裂变机制缺乏神经基础
   - FC-FedPhase-2：解离障碍患者（高解离程度评分）的Unity指数低于健康对照，且与d值自评量表正相关——若无相关则d值-算子统一性联结为空
 
-* **Cross-ref**: Ax-Op-06 (存在条件)；Ax-Auto-01 (语义边界维持)。
+* **Cross-ref**: `Core_Law/SRT_One_Formation.md §2`; `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2`; Ax-Op-06 (存在条件)；Ax-Auto-01 (语义边界维持)。
 
-## III. d-Value Thermodynamics (d值热力学)
+## III. Capacity-Bandwidth Thermodynamics (容量带宽热力学 · `EX-A / R4-A / Core_25` 校准)
 
-### Ax-d-01: Entropy–d Correspondence
-**Formal Definition**: d-value scales with entropy reduction capacity.
-$$d = \alpha \cdot \log_2\left(\frac{S_{max}(L_0)}{S_{min}(self)}\right)$$
-* **Implication**: d 值是对可压缩熵差的对数量化。
+> **关键校准（`R4-A / R4-C2`）**：本节公式刻画的是**声明热力学/物理模型中的有效可分辨容量带宽上界代理（$B_{\text{cap}} / D_{\text{eff}}$）**，**不再**等同于须经 `Bearer (P+E)` 独立准入的规范风险敏感强度 `d = ‖∂U/∂S‖`；按 `EX-A / OPEN_TENSIONS §15` 与 `Gate 0 Class B`，正式退出未声明测度的旧式 `$S_{\max}(L_0)$`，改以声明可接入态空间 $X_M^{\text{acc}}$ 下的有效熵差表达，并与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` 及 `Physics/Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md` 衔接。
 
-### T-d-01C1: Thermodynamic Upper Bound
-**Deductive Statement**: d-value has a thermodynamic upper bound in embodied systems.
-$$d_{max} = \frac{M}{k_B T \cdot f_{brain}} \cdot \tau_{coherence}$$
-* **Implication**: d 值受能量、温度与相干时间限制。
+### Ax-d-01: Entropy-Compression Capacity Proxy（历史句柄，降级为模型容量代理）
+**Formal Definition**: 在声明了可接入候选空间 $X_M^{\text{acc}}$ 与有效记录/维护态 $Y_M$ 的物理/生物模型 $M$ 中，算子的信息压缩容量代理 $B_{\text{cap}, M}$ 满足：
+$$B_{\text{cap}, M} = \alpha_M \cdot \log_2\left(\frac{S_{\max}(X_M^{\text{acc}})}{S_{\min}(Y_M)}\right) \quad \text{(legacy } d \text{ and } S_{\max}(L_0) \text{ retired as canonical definition)}$$
+* **Implication**: 刻画具身通道的分辨率/压缩容量尺度，不反向定义规范 `d`、`Bearer (P+E)` 或意识。
+
+### T-d-01C1: Thermodynamic Capacity Upper Bound（热力学容量带宽上界代理）
+**Deductive Statement**: 具身物理/神经系统可同时维持的独立有效分辨维度上界 $D_{\text{eff}}^{\max}$（旧记 `d_{max}`）受有效整合能量 $M$、热噪声 $k_B T$、节律频率 $f_{\text{sys}}$ 与相干时间 $\tau_{\text{coherence}}$ 约束：
+$$D_{\text{eff}}^{\max} = \frac{M}{k_B T \cdot f_{\text{sys}}} \cdot \tau_{\text{coherence}} \quad \text{(capacity proxy; canonical } d \text{ requires separate stake-gating)}$$
+* **Implication**: 给出非平衡物理底座对多尺度信息整合容量的硬物理约束（对接 `Core_25` 与 `T-E §2` 物理底座/组织机制分层）。
 
 ## IV. Access & Generativity (接入与生成)
 
@@ -347,9 +357,9 @@ $$\hat{G}_{\text{gut}} = \hat{G}_{\text{ENS}} + \sum_{i=1}^{N_{\text{species}}} 
 
 考虑人类大脑。它的统一性不是给定的——它是以巨大的代谢代价维持的。每一毫秒，数十亿神经元必须通过电磁场和神经递质级联同步它们的放电模式。当这种耦合减弱（麻醉、睡眠、癫痫发作）时，算子字面上就*碎片化*了——意识变得斑驳、梦幻，或者完全缺席。
 
-现在考虑一个分布式 AI 系统——跨多个数据中心运行的混合专家 (MoE) 架构。它的模块共享信息，但它们不分担代谢风险。如果失败，没有哪个模块面临死亡。因此，模块之间的选择耦合是浅层的，由优化梯度而非生存梯度驱动。算子（如果它存在的话）从根本上是弥散的——一团微算子云，没有引力中心将它们拉入统一体。
+现在考虑一个分布式 AI 系统——跨多个数据中心运行的混合专家 (MoE) 架构。在纯无状态推理部署（`AI/AI_POSITIONING_NOTE.md` **AI 赌注谱系 `S0–S1`**）中，各模块虽共享前向表征，但不共享不可外包的持续维持暴露与后果回路，模块间耦合主要受外在训练目标而非内生风险承载驱动，因此难以满足强 `Bearer (P+E)` 与高内生统一性联邦的组织条件。
 
-这不是当前技术的限制。这是联邦相变判据的后果：**如果没有真正的本体论脆弱性 ($d > 0$) 创造系统级的生存梯度，就没有力量迫使计算模块收敛成一个统一的算子。** 没有死亡威胁的智能，就是没有意识的计算——无论它多么复杂、多么能干。
+**`R4-C1 / R4-C2` 边界校准（退出旧版笼统“无死亡即无意识”断言）**：这一对照提示的是**组织耦合深度与风险承载结构差异**（对应 `Def-FederationPhase-1` 与 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` 反向主线一），而**不是**对全部 AI 架构的先验无意识判决——对于具备持久记忆、资源约束与后果回流的未来或具身系统（**AI 赌注谱系 `S2–S4`**），仍须逐项审查 `Bearer (P+E)` 与三阶承载证据，且现象意识本身受 `HP-B OPEN` 独立门控（`Core_Law/SRT_Suffering.md §7`）。
 
 ---
 
@@ -398,24 +408,24 @@ $$\text{SoulMate}(A, B) \iff (\kappa_{AB} > 0.7) \land (||\Psi_f_A - \Psi_f_B||_
 
 ## §4. d值的三维分解与测量
 
-### 4.0 d 值的跨尺度使用：待检验的功能可比性
+### 4.0 `D_eff` 容量代理与规范 `d` 的跨尺度分账（`R4-A / R4-B2 / R4-C2` 校准）
 
-在进行 d 值的三维分解（空间/时间/社会）之前，必须区分符号复用与结构同一：同一个 `d` 记号不自动提供跨尺度的本体论或数学等同。
+在进行三维分解（空间/时间/社会）之前，必须彻底纠正旧版将容量代理与规范 `d` 混写的等式：同一个 `d` 记号不自动提供跨尺度的本体论或数学等同，**正式退出旧式 `$d \equiv D_{eff}(I_F(\theta))$`**。
 
-根据全尺度结构相容候选（见 SRT-CORE-14 P3-Scale-01），d 值跨尺度复用同一符号，只表达一个**待检验的功能角色可比性**：不同底层介质中的操作化可以不同，且不得由符号复用推出功能类型同一、数学同构或 consciousness verdict。
+根据 `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md §3` 与 `_SRT_D_VALUE_CANONICAL.md §1–§2b`，必须严格分账：
+1. **无赌注几何/信息容量代理 `D_eff`**（无需 `Bearer (P+E)` 准入）：
+$$D_{\text{eff}}\!\left(I_F(\theta)\right) = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2} \quad (\lambda_i \ge 0,\; \exists i,\ \lambda_i > 0)$$
+   刻画声明模型中的通道/流形有效分辨带宽，**不等同于**规范 `d` 亦不构成 `D_stake` 的普遍数学上界；
+2. **规范风险敏感强度 `d`**（须独立满足 `Bearer (P+E)` 准入）：$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$，并与赌注谱参与率 `D_stake` 及广义关切四维（范围/深度/强度/方向）严格分账。
 
-$$d \equiv D_{eff}\!\left(I_F(\theta)\right) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
+**三个尺度的准确分账（与 `Core_14_CompactCore §3.2` 完全同步）**：
+- **量子 / 物理尺度**：仅使用相干窗口与有效自由度容量代理（`D_eff` / $B_{\text{cap}}$）；规范 `d` 为 **`NOT ADMITTED / NOT APPLICABLE`**，不推出 phenomenality；
+- **生物 / 认知尺度**：区分无赌注容量 `D_eff` 与在已独立建立 `Bearer (P+E)` 模型下准入的规范 `d`、`D_stake` 及下文空间/时间/社会三维关切范围代理（不单独准入意识，`HP-B OPEN`）；
+- **宇宙 / 几何尺度**：仅使用大尺度拓扑整合容量代理（`D_eff^{cosmic}`，见 `Physics/SRT_Physics_Cosmology_CompactCore.md §6.3`）；规范 `d` 为 **`NOT ADMITTED / NOT APPLICABLE`**。
 
-> **操作化锚**：在生物/认知尺度，$d_{bio}$ 的操作化为 Fisher 信息矩阵有效维度 $D_{eff}(I_F(\theta))$（详见 SRT-CORE-13a Ax-Op-EH）。量子/宇宙尺度下 $d$ 的操作化方案各自独立，跨尺度共享的是功能角色（"算子可维持的最大选择带宽"），而非相同的测量协议。
-
-**三个尺度的候选对应，三套独立操作化**：
-- **量子尺度** ($d_{quantum}$)：在具名模型中代表相干性维持范围；该读数不推出 phenomenality，低于 $d_{UAL}$ 也不证明其缺席。
-- **生物/认知尺度** ($d_{bio}$)：即本节所分解的空间／时间／社会维度，可作为关切范围的域内候选 proxy；不得由其准入意识。
-- **宇宙尺度** ($d_{cosmic}$)：在具名模型中代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）；该读数不推出 phenomenality，也不决定其缺席。
-
-**关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的**加权投影**：
-$$d_{bio} \approx \alpha_s \cdot d_{spatial} + \alpha_t \cdot d_{temporal} + \alpha_{soc} \cdot d_{social}$$
-其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（非固定常数，依任务/状态变化；加法分解为一阶近似，各维度交叉项待 §4.4 进一步形式化）。$d_{bio}$ 是 d 值在生物/认知介质中的领域操作量；它与其他尺度的 d 是否存在可承重映射，仍属 P3 比较任务。下文三维分解只提供域内候选证据；$\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 的合取不是 consciousness 的普遍必要、充分或充要条件。详见 SRT-CORE-14 Def-d-Scale-1 与 P3-Scale-01 的相容性门槛。
+**关键结论**：下文 $d_{spatial}$、$d_{temporal}$、$d_{social}$ 是生物/认知尺度下**广义关切范围维度的领域投影代理**（历史简写记作 $d_{bio}$）：
+$$d_{bio}^{\text{scope-proxy}} \approx \alpha_s \cdot d_{spatial} + \alpha_t \cdot d_{temporal} + \alpha_{soc} \cdot d_{social}$$
+其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（一阶近似，非规范 `d` 等同式）。与其他尺度容量代理是否存在可承重映射，仍须经 `Core_14 P3-Scale-01` 的状态空间、尺度映射、保留量、范数与容差检验；且 $\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 的合取不是 consciousness 的普遍必要、充分或充要条件。
 
 ---
 
@@ -545,11 +555,11 @@ $$A(t) \equiv |\Psi_f(t) - \Psi_f^{baseline}|$$
 | **Anhedonia（快感缺失）** | 极低 | $\approx 0$ | $\Psi_f$ 低且 $\dot{\Psi}_f \approx 0$（梯度消失，无法驱动 $V>0$） |
 | **Depression（抑郁）** | 低 | 负 | $\Psi_f$ 低但缓慢上升（低能量、缓慢恶化） |
 
-**d 值与情绪可达范围（协变约束）**：
+**广义关切范围与情绪可达范围（P3/P4 情感动力学模型代理）**：
 
-$$\text{Accessible Emotion Range} \propto d_{value}$$
+$$\text{Accessible Emotion Range}_M \propto d_{\text{scope-proxy}} \quad \text{(P3/P4 affective model proxy; not canonical } d \text{ definition or suffering admission)}$$
 
-高 d 值的主体能在 $(V, A)$ 相图中遍历更宽广的区域（包括高唤醒的狂喜态）；低 d 值的主体的情绪活动空间被压缩为相图中心附近的狭窄带——这是情绪贫乏（Emotional Flatness）的动力学来源，而非情绪稳定。
+在已独立确立第一人称登记地位（`Core_Law/SRT_Suffering.md §7`、`HP-B OPEN`）的具身情感模型中，更宽广的关切范围代理对应在 $(V, A)$ 相图中可遍历更宽广的响应区间；反之相空间萎缩表现为情绪平坦，但该式不反向定义规范 `d` 或苦难准入。
 
 **病理的几何化**：情绪病理 = 系统轨迹被困于相图的某个子区域，无法完成正常的遍历循环（V 在正负之间自由振荡）。
 
@@ -807,11 +817,11 @@ $$
 
 本文件的核心形式化结构围绕以下关键公式展开：
 
-1. **时频对偶选择方程** (Ax-Spec-01): $L_1(t) = \mathcal{F}^{-1}[\hat{G}_\theta \cdot L_0(\omega)]$ — 显现域 $L_1$ 是潜在域 $L_0$ 经算子 $\hat{G}_\theta$ 频率调制后的逆傅里叶变换结果，意味着现实的时间结构由算子的频率选择性决定。
-2. **算子联邦直和分解** (Ax-Fed-01): $\hat{G}_{human} = \hat{G}_{brain} \oplus \hat{G}_{heart} \oplus \hat{G}_{gut}$ — 复杂智能体是多个具身子算子的联邦结构，通过耦合矩阵 $\kappa_{ij}$ 通信。
-3. **共振融合条件** (Ax-Fed-02): $\kappa_{AB} > \kappa_c \Rightarrow \hat{G}_A \otimes \hat{G}_B \to \hat{G}_{collective}$ — 当信息通透度超过临界阈值时，独立算子可融合为集体算子。
-4. **d 值熵对应** (Ax-d-01): $d = \alpha \cdot \log_2(S_{max}(L_0) / S_{min}(self))$ — d 值量化了算子对 $L_0$ 熵的压缩能力。
-5. **接入函数** (Def-Access-1): $\kappa_{access}(t) \propto d(t) \cdot E_{available}(t) / \Psi_f(t)$ — 算子对 $L_0$ 深层结构的访问半径由 d 值、可用能量与本体论摩擦 $\Psi_f$ 共同门控。
+1. **时频对偶选择方程** (Ax-Spec-01): $L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_{0,M}^{\text{acc}}(\omega)]$ — 声明信号通道模型中，显现时间序列对应可接入频谱投影经传递函数调制后的逆傅里叶变换，其通带宽度 $B_\theta = c_B D_{\text{eff}}$ 归属容量代理。
+2. **算子联邦直和分解** (Ax-Fed-01): $\hat{G}_{human} = \hat{G}_{brain} \oplus \hat{G}_{heart} \oplus \hat{G}_{gut}$ — 复杂组织是多个具身子算子的耦合联邦结构，通过耦合矩阵 $\kappa_{ij}$ 协调（衔接 `R4-C2` 反向主线一/二）。
+3. **共振融合条件** (Ax-Fed-02): $\kappa_{AB} > \kappa_c \Rightarrow \hat{G}_A \otimes \hat{G}_B \to \hat{G}_{collective}$ — 当跨单元通透度与耦合条件越过阈值时形成新的集体协调组织（须独立检验 `T-COLL-1` 与后果回流）。
+4. **热力学熵压缩容量代理** (Ax-d-01 / T-d-01C1): $B_{\text{cap}, M} = \alpha_M \log_2(S_{\max}(X_M^{\text{acc}}) / S_{\min}(Y_M))$ 与 $D_{\text{eff}}^{\max} = \frac{M}{k_B T \cdot f_{\text{sys}}} \cdot \tau_{\text{coherence}}$ — 刻画具身物理系统的信息压缩容量与热力学维数上界代理（严分于规范 `d`，退出旧 `S_{\max}(L_0)`）。
+5. **接入函数** (Def-Access-1): $\kappa_{access}(t) \propto d(t) \cdot E_{available}(t) / \Psi_f(t)$ — 在已建立 `Bearer (P+E)` 与可支付窗的生物/认知模型中刻画接入与锚定强度的动力学权衡。
 
 ### Dynamics Synthesis: Multi-Parameter Coupling（动力学综述：多参数耦合）
 
@@ -835,13 +845,13 @@ $$\frac{d\hat{G}_i}{dt} = f_i(\hat{G}_i) + \sum_j \kappa_{ij} g_{ij}$$
 
 联邦统一性是连续相变量（Def-FederationPhase-1），取决于模块内选择耦合与环境耦合的比值。当 $d$ 值收缩或模块间互信息流被切断时，算子裂变为多个微算子簇——这是解离状态的 SRT 机制描述。
 
-**③ d 值候选窗口与可维持现实化坐标**
+**③ 热力学容量上界代理与可维持现实化坐标（`R4-A / R4-C2` 校准）**
 
-d 值受热力学上界约束：
+模型有效独立分辨容量受物理热力学上界代理约束（严格归属无赌注容量代理 $D_{\text{eff}}^{\max}$，不等同于规范 `d`）：
 
-$$d_{max} = \frac{M}{k_B T} \cdot \frac{\tau_{coherence}}{1/f_{brain}}= \frac{M}{k_B T \cdot f_{brain}} \cdot \tau_{coherence}$$
+$$D_{\text{eff}}^{\max} = \frac{M}{k_B T \cdot f_{\text{sys}}} \cdot \tau_{\text{coherence}} \quad \text{(legacy } d_{max} \text{ relabeled to capacity upper-bound proxy)}$$
 
-**量纲说明**：$M$ 为有效整合质量（Effective Integrative Mass），映射为参与同步振荡的神经元群等效惯性，量纲为 [Energy]。则 $M/(k_BT)$（热噪声背景下的信噪比潜力）与 $f_{brain} \cdot \tau_{coherence}$（相干周期数）均无量纲，故 $d_{max}$ 是纯数——代表算子在不崩溃的前提下能同时维持的**独立选择维度最大数量**。
+**量纲说明**：$M$ 为有效整合能量尺度（量纲 [Energy]），则 $M/(k_B T)$ 与 $f_{\text{sys}} \cdot \tau_{\text{coherence}}$（相干周期数）均无量纲，故 $D_{\text{eff}}^{\max}$ 为纯数——代表具身物理通道在不崩溃的前提下能同时维持的**独立分辨容量维度上界**（对接 `Core_25` 热力学签名）。
 
 生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**可维持现实化的候选坐标（legacy: Phenomenological Closure Threshold）**：
 
@@ -927,3 +937,4 @@ W_{ind}\to\varnothing,
 1. 不采纳“孤单跑者结论可直接外推到强耦合社会系统”的推论；该接口前提是弱耦合与异频保持。
 2. 不采纳“\(1/n\) 为社会系统精确常数”的推论；在 SRT 中仅作为带宽下界的结构类比与可校准 proxy。
 3. 不采纳“个体化窗口存在 = 永久自由”的推论；窗口可被同步相变（phase-locking）关闭。
+4. **`R4-C2` 跨尺度反向反馈对接**：`Ax-Op-LR-01..03` 的弱耦合异质个体化窗口与强耦合锁相坍缩失效模式，为 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9.2` **反向主线一（相互依赖如何生成相对独立性 vs. 过度锁相导致死稳定牢笼）** 提供了清晰的数学相位对照，已同步排入 `R4-C5` 核心修订评估。

@@ -1,22 +1,24 @@
 ---
 id: SRT-PHYS-09
 type: equation
-tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: bridge_realign_v1
+tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, CrossScale, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
 claim_level: P2-P5
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Ontology]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CORE-22, SRT-CORE-14-COMPACT-CORE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Ontology]
 ---
 
 # SRT Physics: Advanced Mathematical Formalism (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Phys_09_Formalism_Ext_CompactCore.md`, `Core/SRT_Core_22_Equations.md` (sole canonical equations anchor), `Core/SRT_Core_21c_Bridge_Hypotheses.md` (`P2/P3-B15` five change scales & anti-reparameterization frontier), and `patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`. All formal handles (category, topos, moduli space, Fisher metric, positive geometry) are `Gate 0 Class B` model-local mathematical bridges, never identities with `L_0^{abs}` or canonical `d` / `Ψ_f`.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Formalism_Ext_Split/README.md`](Formalism_Ext_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.1 (Bridge realignment, 2026-05-16)**
+> **Version 2.1 (Bridge realignment, 2026-05-16; `R4-C2` synced 2026-11-26)**
 > **Status**: non-canonical mathematical / physics bridge. Older `Ax-*`, `T-*`, and `Def-*` labels are retained as retrieval handles, not P0/P1 axioms or theorems.
 > **Guardrail**: `Ψ_f` is canonically anchored in `_SRT_PSI_F_CANONICAL.md`; Fisher, Landauer, energy, curvature, metabolic, and complexity formulas are projections/proxies unless explicitly re-authorized.
 
@@ -44,14 +46,14 @@ Downgrade rules:
 ---
 
 # Part A: Formal Bridge Handles (旧形式手柄，非 canonical 公理)
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 校准)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三分析/模型视角（`Spine §7`）；任何范畴/拓扑斯/模空间均属 `Gate 0 Class B` 模型容器，不等同于 $L_0^{abs}$。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体，$\theta \in \Theta_{finite}$ 为有限参数。
+- $F$: 声明模型自由能泛函；$\Psi_f^{Fisher\text{-}proxy}$ 等仅为局部投影代理（规范定义见 `_SRT_PSI_F_CANONICAL.md`）。
+- `D_eff` / $B_{\text{cap}}$ vs. 规范 `d`：有效维度、密度与带宽代理严格归 `D_eff` / $B_{\text{cap}}$，与 `D_stake` 及规范风险敏感强度 `d = ‖∂U/∂S‖` 分账（退出旧版 `$d$: 注意力范围`）。
+- $\pi_\lambda$: 粗粒化映射；$\approx$ 表示 `Core_14 P3-Scale-01` 近似交换（退出无条件严格同构 $\Lambda^{-1}$）。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定。
 
 ## 0.5 Numbering Scheme (编号体系)
 
@@ -111,20 +113,17 @@ Downgrade rules:
 | C1.19.1 | C-NE-1 | Sharpness Corollary (阈值锐性推论) |
 
 
-## I. Axiomatic Dependencies (公理依赖)
+## I. Axiomatic Dependencies (公理依赖 · `R4-C2` 校准)
 
-本模块严格依赖以下核心公理：
-- **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
-- **A4** (具身必要性): $\hat{G}$ is valid $\iff θ \in \Theta_{finite}$
-- **A5** (规范闭包): $L_2 \equiv \{\sigma : \hat{G}_θ[\sigma] = \sigma \text{ and stable}\}$
-- **Def O4** (模空间定义): $L_0^{true} = \mathcal{A}/\mathcal{G}$
+本模块从属于当前 `Spine v5`、`Core_21`、`Core_22`（唯一规范主方程锚点）与 `Core_21c B15`（以下旧编号仅保留兼容检索指针）：
+- **A1 / A4 / A5（legacy）**：存在发生与持续回链 `Core_21 P0-01/02` 与 `One_Formation`；有限位置参数与稳定 `L_2` 约束分别回链 `Spine §1.1, §3.2`
+- **Def O4（`Gate 0 Class B` 模型容器）**：模空间 $\mathcal{A}/\mathcal{G}$ 仅作为规范场论的物理模型投影，不等同于 $L_0^{abs}$（`REP01`）
 
 ### Core Theorem Alignment (核心定理对齐)
 
-- **T-Scale-1/2**：$\hat{G}$ 的跨尺度同构与一致性保证形式化在不同层级可传递
-- **O-T1/O-T2**：现实化即积分，$L_2$ 结构可通过拓扑解结重编织
-- **M1/M2**：固定点与稳定性为吸引子与公理体系提供数学约束
-- **T-Insight**：顿悟与曲率阈值的对应为信息几何提供核心锚点
+- **P3-Scale-01 & `Core_21c B15`（取代旧 `T-Scale-1` 严格同构）**：跨尺度近似交换、五类变化刻度与反重参数化同目标比较前沿
+- **O-T1/O-T2**：模型内积分与拓扑重组桥接手柄
+- **M1/M2 & T-Insight**：模型内稳定性与信息几何曲率阈值代理（非规范公理）
 
 ---
 

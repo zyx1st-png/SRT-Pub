@@ -2,7 +2,7 @@
 id: SRT-SELECTION-EVENT-COMPACTCORE
 type: compact_core
 status: active
-record_stage: compact_v1
+record_stage: compact_v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
@@ -11,9 +11,12 @@ canonical: false
 ai_do_not_use_for_definition: true
 node_id: NODE-CHOICE-GENERATION
 created: 2026-08-06
+updated: 2026-11-26
 owner_files:
   - 03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md
   - Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md
+  - 03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md
+  - 03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md
 canonical_anchor: Core/SRT_Core_21b_Constitutive_Theorems.md
 regression_tests: Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md
 ---
@@ -137,7 +140,33 @@ regression_tests: Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2
 | **急性压力（`distress`）** | 情感、自主神经或行动准备层的负向调节压力代理 | 非 canonical 同一式，不等于 `Ψ_f` 或苦难 |
 | **苦难（`suffering`）** | 在独立准入第一人称登记地位后，对结构失配或阻塞重构的切身登记（`Core_Law/SRT_Suffering.md`） | `Stable ISP` 与 **AI 赌注谱系 `S1–S4`** 均非苦难普遍必要条件，不单独封口 |
 
-> 注：与本节并列的 **`T-E §2`（耗散结构：物理底座 / 组织机制 / 解释充分性三分，`NODE-LIFE-DISSIPATIVE EA-4`）** 按 `R4-C` 依赖序留待 **`R4-C2` 物理与跨尺度生成波次** 联动物理证据卡一并压缩入快速层。
+---
+
+## 4b. 耗散结构与选择结构三分及生命组织差异（`T-E` 快速层，`NODE-LIFE-DISSIPATIVE EA-4`）
+
+为使 **`T-E`** 核心判别在默认快速层可直接检索（同步回链 [`SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`](SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md)、`Core_Law/SRT_One_Formation.md §2.3`、`Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2` 与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1a`），本节实质压缩登记四项不可跳过的 `P2/P3` 判别结构（作者裁决 `G2`）：
+
+1. **`T-E §2` 三种“依赖耗散”严格分界（禁止混用）**：
+
+| 依赖强度 | 核心陈述 | 解释增益与审计硬边界 |
+|---|---|---|
+| **① 物理底座依赖（Substrate）** | 任何现实物理实现均涉及能量/物质通量与热力学代价 | 往往正确但解释增益极低；退化为“万物皆耗能”，**不能回答**差异为何成为候选、响应为何非中立、路径为何被排除、后果落到哪个承受位置 |
+| **② 组织机制依赖（Mechanism）** | 非平衡通量、反馈、边界维持、差异放大或迟滞对目标层级的路径稳定与历史效力具有不可替代因果作用 | **`T-E` 与物理—生命桥接的主研究区**；仍须逐项对接 `CG-0..CG-4`，且不得由硬件耗散尺度偷换至符号/制度/AI 层 |
+| **③ 解释充分性（Sufficiency）** | 仅凭耗散动力学即可充分解释非等价登记、活的路径效力、承受位置归属与历史写回 | **默认不接受**；未经 `CG-0..CG-4` 独立审计（尤其是内部非等价 `NER-2`、边界内路径特异后果 `CBP-2`、可达空间重写 `HEF-3`），耗散结构最多是实现基础、生成条件或机制原型 |
+
+2. **`T-E §4–§5` 四层关系与非普遍必要前身（作者裁决 `G2`）**：
+   - **四层关系**：① **耗散但未见选择**（火焰、Bénard 对流胞、风暴等具耗散、不可逆与吸引子，却未满足 `CG-0..CG-4` 审计；不反推 `no Selection`）；② **耗散作为选择生成条件**（非平衡通量维持边界、可塑性窗口与记忆回流通道）；③ **耗散作为机制原型**（失稳、对称破缺、反馈放大、迟滞的建模启发，非对象同一）；④ **耗散实现的选择结构候选**（仅当同一冻结边界内独立通过非等价登记、路径效力、后果承载与历史回流审计时成立，仍不推出主体或意识）。
+   - **非普遍必要前身**：不能由“物理底座耗能”推出“目标层级由经典耗散机制解释”，更不能推出“所有选择结构（含符号、制度、社会规范或 AI）均以经典耗散结构为必要前身”。
+
+3. **物理三态 `One` 与耗散结构 vs. 生命组织差异（`One_Formation §2.3` & `R3-04-O1`）**：
+   - **态 I（束缚与平衡结构）**：原子/分子/晶体通过相互作用势阱与有效接口稳定；
+   - **态 II（耗散与动态维持结构）**：对流胞/火焰/旋涡/非平衡记忆依赖**外给边界与持续通量**维持动态形态，断流即散；
+   - **态 III（内生约束互维结构 / 生命组织原型）**：原细胞与生命体在耗散通量之上进一步形成**内生约束互维、自生半透膜边界维护与修复、功能分化、误差校正及跨周期/表观/遗传历史写回**；
+   - **硬边界**：生命/细胞膜**不得**作为 `One` 的普遍下限（`R3-04-O1` 三态跨入 `One` 门槛保持 `OPEN`）；反过来，生命自维持与稳态适应亦**不自动等同**于有意识选择、`Bearer (P+E)` 或生成健康。
+
+4. **稳定秩序 ≠ 生成健康、与 `L_2` 及 `Core_25` 分工（`T-E §6–§8`）**：
+   - 严格区分**活脚手架**（降本同时保留扰动重比、修复、更新与退出）、**死稳定**（高持续、局部低耗但全局返回成本极高、丧失活的重选能力）与**牢笼性秩序**（主体/制度层靠外包代价与压缩他者未来空间维持稳定）；
+   - **防偷换**：普通吸引子 ≠ `L_2`（须具可继承、可重入之约束写回），高耗散 ≠ 高 `L_2`；`Core/SRT_Core_25` 负责不可逆性、熵产生 $H_P$ 与详细平衡破缺等**可测热力学签名**，绝不等同于 `\Psi_f`、`d` 或选择结构本身。
 
 ---
 
@@ -159,7 +188,7 @@ regression_tests: Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2
 - **生成条件** 说明本审计如何寻找选择候选；**事件判据** 说明此刻是否建立有界事件候选；**生成健康** 说明后续健康度。三者不可互换。
 - **脚手架**（可进入的选项、信息、时间、反馈、退出、可逆窗口）说明选择如何更可进入、更可承担——**不是**一切 Selection occurrence 的必要条件。一次性、不可逆、资源贫乏的情境不能仅因此被排除出 Selection。
 - 因此：一个已建立的实践层事件候选仍可以是**错误的、压迫性的、导致自我封闭的**。可再选择性是生成健康度的重要判据，**不是**一次 Selection occurrence 的必要定义（作者裁决 G1，2026-08-04；RC-A 后按现行层级转读）。
-- 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2）。
+- 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2；完整物理底座/组织机制/解释充分性三分、死稳定 vs. 活脚手架与物理三态 `One` 差异见上文 `§4b`）。
 
 ---
 

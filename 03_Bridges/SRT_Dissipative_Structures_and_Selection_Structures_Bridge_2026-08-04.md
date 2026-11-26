@@ -25,6 +25,8 @@ dependency: [Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, Operati
 > **核心任务**：区分“由通量维持的局部秩序”与“具有非中立比较、路径效力、后果承载和历史写回的选择结构”，并说明前者何时只能作为物理底座，何时可能成为后者的实现机制或机制原型。
 >
 > **作者裁决边界**：耗散结构可以在部分物理与生命域中构成选择结构的实现基础、生成前提或早期机制原型，但它既不是选择的充分条件，也暂不确认为所有选择结构的必要前身。
+>
+> **`R4-C2` 快速层与跨尺度同步注记（2026-11-26）**：本桥的核心三分（`§2` 物理底座 / 组织机制 / 解释充分性）、四层关系（`§4`）、稳定 ≠ 健康（`§6` 活脚手架 / 死稳定 / 牢笼性秩序）与生命内生约束互维差异，已于 `R4-C2` 实质压缩落地至 `03_Bridges/SRT_Selection_Event_CompactCore.md §4b`（`COMPACTCORE` 快速层）及 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2`（`DOMAIN_PHYSICS` 快速层），并对接 `Core_Law/SRT_One_Formation.md §2.3`（物理三态 `One`，`R3-04-O1` OPEN）与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1a`（闭合 `NODE-LIFE-DISSIPATIVE` 结构同化债 `EA-4`；`Axis B` 行为检验仍待新会话实测）。
 
 ---
 

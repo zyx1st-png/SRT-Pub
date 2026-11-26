@@ -1,18 +1,20 @@
 ---
 id: SRT-QUANT-02
 type: theory
-tags: [Cosmology, Scale Invariance, Quantum Interfaces, Attention Thermodynamics, Hybrid]
-status: bridge_realign_v1
+tags: [Cosmology, Scale Compatibility, Quantum Interfaces, Attention Thermodynamics, Hybrid]
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: translation
 canonical: false
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-QUANT-01]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CORE-14-COMPACT-CORE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-QUANT-01]
 ---
 
 # SRT Physics: Cosmology & Quantum Interfaces (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Alignment Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Read with `SRT_Physics_Claim_Status.md`, `SRT_Quant_02_Cosmology_CompactCore.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, and `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`. Under `R4-A / R4-B2 / R4-C2`, legacy `H(L_0) - H(L_1)` expressions without a declared measure (`EX-A / OPEN_TENSIONS §15`), unqualified strict cross-scale isomorphism `G_cosmic ≅ G_bio ≅ G_quantum` (`Core_14 P3-Scale-01`), canonical-`d` conflations with Penrose collapse bandwidth (`Def-BQ-2`), and quantum-bias definitions of freedom (`T3-03 C / Q26`) are formally retired or scoped strictly to model-local P3/P4 proxies/hypotheses.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Quant_02_Cosmology_Split/README.md`](Quant_02_Cosmology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Version 2.0 (Hybrid)**
@@ -22,14 +24,14 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-
 ---
 
 # Part A: Formal Cosmology & Interface Axioms
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 校准)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三分析/模型视角（`Spine §7`），非预设完整测度空间（`Gate 0 Class B`）。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体（非原初 `Selection` 或先在主体），$\theta \in \Theta_{finite}$ 为有限具身/边界参数。
+- $F$: 声明模型自由能泛函；$\Psi_f^{phys}$ 为物理可支付性投影代理（规范定义见 `_SRT_PSI_F_CANONICAL.md`）。
+- `D_eff` / $B_{\text{cap}}$ vs. 规范 `d`：物理/相干带宽项严格归属无赌注容量代理 `D_eff` / $B_{\text{cap}}$，严分于需 `Bearer (P+E)` 准入之规范风险敏感强度 `d = ‖∂U/∂S‖`（退出旧版 `$d$: 注意力范围`）。
+- $\pi_\lambda$: 粗粒化映射；$\approx$ 表示 `Core_14 P3-Scale-01` 声明条件下的近似交换（退出普通粗粒化下的无条件严格同构 $\Lambda^{-1}$）。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定。
 
 ## 0.5 Numbering Scheme (编号体系)
 
@@ -76,36 +78,34 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-
 | D1.10.2 | Def-Dyn-2 | Causal Decoupling Criterion ($L_2$ 形成判据) |
 
 
-## I. Axiomatic Dependencies (公理依赖)
+## I. Axiomatic Dependencies (公理依赖 · `R4-C2` 校准)
 
-本模块严格依赖以下核心公理：
-- **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
-- **A2** (存在即锚定): $\text{Existence}(σ) \iff \hat{G}_θ[L_0] \to σ_{L_1}$ with $ΔF < 0$
-- **A9** (全息对偶): $L_{1,bulk} \cong L_{0,boundary}$
-- **T-Scale-1** (自相似选择): $\hat{G}_{S_2} = Λ ∘ \hat{G}_{S_1} ∘ Λ^{-1}$
+本模块从属于当前 `Spine v5`、`Core_14`、`Core_21` 与 `OPEN_TENSIONS §15 (EX-A)`（以下旧编号仅保留兼容检索指针，不再作无条件公理推导）：
+- **A1 / A2（legacy）**：存在与持续性已分层回链 `Core_21 P0-01/P0-02` 与 `One_Formation`（退出旧 `Existence ≡ Selection(P)` 与 `ΔF < 0` 普遍充分式）
+- **A9（P3/P4 类比）**：全息边界纠缠面积仅作物理容量代理 `D_eff^{phys}` 类比，非规范 `d`
+- **P3-Scale-01 / T-Scale-02C1（取代旧 `T-Scale-1` 严格同构）**：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda}\circ\pi_\lambda$（仅在声明状态空间、尺度映射、保留观测量、范数与容差下检验）
 
 ### Core Theorem Alignment (核心定理对齐)
 
-- **T-Scale-1/2**：跨尺度同构与一致性（$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda}\circ\pi_\lambda$）
-- **O-T1**：$L_1 = \oint_{\gamma}\omega_{L_0}$，宇宙学实在化是路径积分的取值
-- **M1/M2 + T-DMP-2**：稳定性条件与扰动回归决定宇宙常数的固定点性质
-- **T-Phase-1**：$v_{sub}=\dot{\phi}/\phi_0$ 作为选择相位的时间刻度
+- **P3-Scale-01 / 跨尺度五机制**：跨尺度近似相容候选与五机制分工（见 `Core_14_CompactCore §1–§2`）
+- **O-T1**：$L_1 = \oint_{\gamma}\omega_{L_0}$ 仅作声明模型内路径求值类比
+- **M1/M2 + T-DMP-2**：模型内稳定性与扰动回归条件（不自动导出宇宙常数或生成健康）
+- **T-Phase-1**：$v_{sub}=\dot{\phi}/\phi_0$ 仅作七项时间接口中的模型局部代理
 
 ---
 
-## II. Attention Thermodynamics (注意力热力学)
+## II. Attention Thermodynamics (注意力与记录热力学 · `EX-A / RC-A` 校准)
 
-### Ax-Thermo-1 [A1.2.1]: Selection Work Theorem (选择功定理)
-执行一次选择所需的最小功：
-$$ W_{selection} \geq k_B T \cdot \Delta I_{L_0 \to L_1} $$
-*   **Source**: Landauer 原理——擦除 1 bit 信息需 $k_B T \ln 2$ 的功。
-*   **Implication**: 高精度选择（小 $L_1$ 体积）比低精度选择更耗能。
-*   **Variational Form**: 与 $δ\int \Phi\,dt=0$ 一致，选择功在尺度同构下取最小路径。
+### Ax-Thermo-1 [A1.2.1]: Selection Work Bound (声明物理实现下的记录/擦除功下界)
+在将过程具体实现为逻辑不可逆信息操作或记录稳定化的声明物理模型 $M$ 中（`RC-A` 边界：不升级为一切原初 `Selection` 普遍定理）：
+$$ W_{reset/record, M} \geq k_B T \cdot \Delta I_M $$
+*   **Source**: Landauer / Sagawa–Ueda 信息热力学下界（见 `Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md` 与 `Core_25`）。
+*   **Boundary**: 退出旧版“在尺度同构下普遍满足 $\delta\int\Phi\,dt=0$”之过度证明句式（`OPEN_TENSIONS §15`）。
 
-### Ax-Thermo-2 [A1.2.2]: Willpower Energy (意志力能量方程)
-维持注意力所需能量：
-$$ E_{attention} \propto \frac{d}{dt}\left(H(L_0) - H(L_1)\right) $$
-*   **Mechanism**: 维持非默认（低概率）的 $L_1$ 状态需持续对抗 $L_0$ 的熵增压力。
+### Ax-Thermo-2 [A1.2.2]: Willpower / Maintenance Energy Proxy (维持能耗代理 · 退出旧 `H(L_0) - H(L_1)`)
+按 `EX-A / OPEN_TENSIONS §15` 与 `Gate 0 Class B`，**正式撤回未声明测度的旧式 `$E_{attention} \propto \frac{d}{dt}(H(L_0) - H(L_1))$`**；在声明环境与记录变量 $(X_{env}, Y_{record})$ 的具名模型 $M$ 中改记为：
+$$ \dot{E}_{maint, M} \gtrsim k_B T \, \dot{I}_M(X_{env}; Y_{record}) + \dot{W}_{diss, M} $$
+*   **Mechanism**: 维持非默认认知/注意状态需要持续的物理供给与可支付性窗口，不依赖对 $L_0^{abs}$ 定义全局熵。
 
 ### Def-Thermo-1 [D1.2.1]: Selection Efficiency (选择效率)
 $$ \eta_{selection} = \frac{\Delta I_{useful}}{\Delta I_{total}} = \frac{\text{任务相关信息增益}}{\text{总信息增益}} $$
@@ -230,14 +230,13 @@ $$ Q < T_c \leadsto \text{Orch-OR 模型中的低相干读数} $$
 ### T-BQ-1 [T1.5.1]: Anesthesia Mechanism (麻醉机制定理)
 麻醉通过破坏微管相干性使 $Q < T_c$，导致选择机制断裂。
 
-### Def-BQ-2 [D1.5.2]: Penrose Collapse Time & d-Value Bound (彭罗斯坍缩时间与 d 值上界)
-引力自能 $E_G$ 设定叠加态的客观坍缩时间，从而为生物 d 值提供物理上界：
+### Def-BQ-2 [D1.5.2]: Penrose Collapse Time & Coherence-Bandwidth Proxy (彭罗斯坍缩时间与相干带宽代理 · `P4/P5` 校准)
+在探索性 Orch-OR / 引力退相干假说语境中，引力自能 $E_G$ 设定叠加态退相干时间尺度：
 $$ \tau_{collapse} \approx \frac{\hbar}{E_G} $$
-任何生物系统的 d 值受此坍缩时间的反比约束：
-$$ d_{bio} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar} $$
-* **Implication**: 引力是生物 d 值的硬性物理天花板。能够延长 $\tau_{collapse}$（如微管保护量子相干性）的结构，直接扩大了算子可用的选择带宽。
-* **Anti-Panpsychism Note**: 此处 $d_{bio}$ 是相干性整合带宽（$d_{quantum}$）；它不推出主观体验。复杂生物系统中的 concern / consciousness 必须独立评估，不能由 `d` 或旧“意识涌现条件”准入。
-* **Cross-ref**: Def-Cosmo-1 [D1.7.1] in SRT-PHYS-COSMO（宏观引力 d 值）; Ax-BQ-1 [A1.5.1]; SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
+**`R4-A / R4-C2` 容量代理校准**：旧式 `$d_{bio} \propto 1/\tau_{collapse}$` 将量子相干时间直接混写为规范 `d-value`，现严格限定为探索性 P4 **相干带宽容量代理（$B_{\text{cap}}^{\text{coh}}$）**，绝不等同于需独立 `Bearer (P+E)` 准入的规范风险敏感强度 `d = ‖∂U/∂S‖`：
+$$ B_{\text{cap}}^{\text{coh}} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar} \quad \text{(speculative P4 capacity proxy; canonical } d \text{ NOT defined here)} $$
+* **Anti-Panpsychism & `HP-B` Note**: 该容量代理不推出主观体验、关切或意识（`HP-B OPEN`）；亦不构成微管相干为意识必要条件的规范承诺。
+* **Cross-ref**: `SRT_Physics_Cosmology_CompactCore.md §6.3`; `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md §3`。
 
 ---
 
@@ -289,18 +288,17 @@ $$ |\alpha|^2 + |\beta|^2 = 1 $$
 
 ---
 
-## VIII. Cosmological Scale Invariance (宇宙学尺度不变性)
+## VIII. Cross-Scale Structural Compatibility (跨尺度结构相容接口 · 取代旧严格同构)
 
-### Ax-Scale-1 [A1.8.1]: Scale Isomorphism ($\hat{G}$ 尺度同构)
-$\hat{G}$ 在不同尺度上保持同构结构：
-$$ \hat{G}_{cosmic} \cong \hat{G}_{bio} \cong \hat{G}_{quantum} $$
-$$ \hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1} \quad (\text{T-Scale-1}) $$
+### Ax-Scale-1 [A1.8.1]: Approximate Cross-Scale Compatibility (`Core_14 P3-Scale-01`)
+**`R4-B2 / R4-C2` 校准（`OPEN_TENSIONS §15`）**：正式撤回无条件严格同构式 `$\hat{G}_{cosmic} \cong \hat{G}_{bio} \cong \hat{G}_{quantum}$` 与普通粗粒化下的 `$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$`（严格共轭仅限显式可逆表征变换）。跨尺度通用接口改写为声明状态空间、尺度映射、保留观测量、比较范数与容差后的可失败近似交换候选，并严格区分**跨尺度五机制**（装配 / 归一化 / 有效作用接口 / `Proxy` / `Delegation`）：
+$$ \pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda \quad (\text{P3-Scale-01 / T-Scale-02C1}) $$
 
-| 尺度 | $L_0$ | $\hat{G}$ | $L_1$ |
+| 尺度 | 模型投影（`L_0`-side） | 形成态角色接口（`\hat{G}`） | 显现读出（`L_1`-side） |
 |:-----|:------|:----------|:------|
-| 量子 | 希尔伯特空间 | 测量算子 | 经典结果 |
-| 生物 | 神经可能性空间 | 认知选择 | 意识体验 |
-| 宇宙 | 量子真空 | 宇宙演化 | 可观测宇宙 |
+| 量子 | 声明物理态空间（`REP01` 脚手架） | 量子 instrument 角色载体（`PHR-A`） | 经典记录结果 |
+| 生物 | 声明神经/行为可达空间 | 具身耦合组织与调控算子 | 行为/认知组织显现（`HP-B OPEN`） |
+| 宇宙 | 声明宇宙学有效场模型空间 | 宏观演化与约束接口（非主体） | 可观测大尺度结构 |
 
 ### Ax-Scale-2 [A1.8.2]: Relative Subjective Frequency (相对主观频率)
 $$ \omega_{sub}(\hat{G}_i) = \frac{f_{selection}(\hat{G}_i)}{f_{selection}(\hat{G}_{reference})} $$
@@ -435,17 +433,17 @@ $$\text{测量} = \hat{G}_θ[L_0 \to L_1] \neq \text{揭示隐藏的预存状态
 
 # §2. 注意力的热力学成本
 
-## 2.1 意志的能量法则
+## 2.1 意志与维持的能量代理（`EX-A` 校准）
 
-William James (1890) 强调"注意力的努力"(effort of attention) 是意志的核心。SRT 将其热力学化：
+William James (1890) 强调"注意力的努力"(effort of attention) 是意志的核心。按 `EX-A / OPEN_TENSIONS §15` 撤回未声明测度的旧式 `$H(L_0) - H(L_1)$` 后，在声明模型 $M$ 中记作信息热力学维持代理：
 
-$$E_{attention} \propto \frac{d}{dt}\left(H(L_0) - H(L_1)\right)$$
+$$\dot{E}_{maint, M} \gtrsim k_B T \, \dot{I}_M(X_{env}; Y_{record}) + \dot{W}_{diss, M}$$
 
 | 符号 | 含义 |
 |:-----|:-----|
-| $E_{attention}$ | 维持注意力所需能量 |
-| $H(L_0)$ | $L_0$ 的熵（可能性场的无序度）|
-| $H(L_1)$ | $L_1$ 的熵（当前现实的有序度）|
+| $\dot{E}_{maint, M}$ | 维持非默认注意/工作记忆构型的物理能耗代理 |
+| $\dot{I}_M(X_{env}; Y_{record})$ | 声明模型中环境状态与稳定记录间的信息率 |
+| $\dot{W}_{diss, M}$ | 非平衡维持耗散项（不等同于规范 $\Psi_f$）|
 
 ## 2.2 意志力消耗机制
 
@@ -643,19 +641,17 @@ $$Q < T_c \implies \text{选择机制断裂，意识中断}$$
 
 **推论**：意识的二元性（清醒/昏迷）及其过渡区的物理本质可用相变模型描述。
 
-## 6.3 彭罗斯坍缩时间与生物 d 值的物理上界
+## 6.3 彭罗斯坍缩时间与相干带宽代理（`P4/P5` 校准，与规范 `d` 严格分离）
 
-在彭罗斯的客观坍缩（Orch OR）理论中，时空曲率叠加达到阈值时会自发触发波函数坍缩，坍缩时间由引力自能 $E_G$ 决定：
+在彭罗斯的客观坍缩（Orch OR）理论假说中，时空曲率叠加达到阈值时会自发触发波函数坍缩，坍缩时间由引力自能 $E_G$ 决定：
 
 $$\tau_{collapse} \approx \frac{\hbar}{E_G}$$
 
-SRT 将此与 d 值直接联系：个体或系统能够维持叠加态（抵抗坍缩）的时间越长，其算子 $\hat{G}_\theta$ 可用的选择带宽就越大：
+在 `R4-A / R4-C2` 校准下，该探索性接口仅作**相干带宽容量代理（$B_{\text{cap}}^{\text{coh}}$）**讨论，严禁与需独立 `Bearer (P+E)` 准入的规范风险敏感强度 `d` 或生物关切四维混为一谈：
 
-$$d_{bio} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar}$$
+$$B_{\text{cap}}^{\text{coh}} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar} \quad \text{(legacy } d_{bio} \text{ notation retired here)}$$
 
-**物理推论**：微管结构通过保护量子相干性来延迟 $\tau_{collapse}$，从而在热力学层面扩大了生物 d 值的可用范围。这将"引力可作为本体论摩擦的候选几何读数"（见 SRT-PHYS-COSMO §4.3）与生物选择算子的具体物理约束对接。该对接仍为 hypothesis / bridge：它不证明引力是 `Ψ_f` 的规范实现，也不重建 GR。
-
-**术语辨析**：此处 d 值是"相干性整合带宽"（$d_{quantum}$），不是生物层面的"关切范围"（$d_{bio}$）。两者的同构关系参见 SRT-CORE-14 §2 的跨尺度同构表述及 Def-d-Scale-1（本体论带宽定义）。
+**物理与跨尺度边界**：该对接仍为 `P4/P5` 探索桥接：它不证明引力是 `Ψ_f` 的规范实现、不重建 GR、不将微管相干立为意识必要条件（`HP-B OPEN`），且跨尺度接口服从 `SRT-CORE-14 P3-Scale-01` 近似结构相容与 `D_eff / d` 严格分离（不再使用旧严格同构表述）。
 
 ---
 

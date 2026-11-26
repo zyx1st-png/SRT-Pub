@@ -3,7 +3,7 @@
   "manifest_id": "SRT-ACTIVE-THEORY-NODES",
   "generated_for": "Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md",
   "reconciled_by": "Operations/Audits/SRT_ENG02_ACTIVE_THEORY_ASSIMILATION_RECONCILIATION_2026-11-25.md",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "canonical": false,
   "role": "Hand-maintained list of SRT theory nodes and where each one actually lives on the AI-active retrieval surface. Read by scripts/check_active_theory_assimilation.py and scripts/build_srt_context_bundles.py. This file routes and records; it never defines.",
   "nodes": [
@@ -331,7 +331,9 @@
       "core_question": "Is a dissipative structure a selection structure, and what does biological self-maintenance add?",
       "active_owners": [
         "03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md",
-        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md",
+        "Physics/SRT_Phys_07_Complex_Systems_CompactCore.md",
+        "Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md"
       ],
       "compact_layer": "03_Bridges/SRT_Selection_Event_CompactCore.md",
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
@@ -342,13 +344,11 @@
         "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
       ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
-      "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
+      "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor), T-E §2 substrate/mechanism/sufficiency three-way distinction, §4 four-tier stratification, §6 living-scaffold vs dead-stability vs cage-order separation, One_Formation §2.3 physical three-state One spectrum (bound equilibrium / dissipative dynamic / endogenous mutual maintenance; R3-04-O1 OPEN), and Core_25 measurement-signature division of labor are now substantively landed in both default fast layers: 03_Bridges/SRT_Selection_Event_CompactCore.md §4b (COMPACTCORE) and Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2 (DOMAIN_PHYSICS), synced with Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1a.",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still carries only G2 stratification (0 matches for T-E §2 substrate/mechanism/sufficiency three-way distinction). Kept honestly at partially_active; fast-layer compression is explicitly assigned to R4-C2 (Physics & Cross-Scale Generation) alongside T-E physics evidence cards.",
-      "active_complete_blockers": [
-        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches); assigned to R4-C2 (Physics & Cross-Scale Generation)"
-      ],
-      "structural_assimilation": "partially_active",
+      "next_step": "R4-C2 (2026-11-26) closed EA-4 structural assimilation by landing T-E §2 substrate/mechanism/sufficiency 3-way split, §4/§6 dead-stability vs living-scaffold stratification, physical three-state One vs living endogenous mutual maintenance, and Core_25 measurement-signature separation into 03_Bridges/SRT_Selection_Event_CompactCore.md §4b and Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2. Axis B bounded behavioral verification remains untested and scheduled for R4-C5/R5.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []

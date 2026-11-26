@@ -1,18 +1,20 @@
 ---
 id: SRT-PHYS-BRIDGE
 type: constitutional_bridge
-tags: [Physics, Axiom Mapping, Operator Bridge, Hybrid]
+tags: [Physics, Axiom Mapping, Operator Bridge, CrossScale, NaturalLaw, Hybrid]
 layer: L1
-status: bridge_realign_v1
+status: active
+version: v2
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
-dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
+updated: 2026-11-26
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 ---
 
 # SRT Physics Bridge & Foundational Axioms (Hybrid Edition)
 
-> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **Claim-status & `R4-C2` Bidirectional Note（2026-11-26）**：This Physics file is bridge / translation material (`canonical: false`). Under the approved `R4-C` bidirectional mandate (`1A 修订版 / 2A / 3A`), physics serves not merely as a downstream application of SRT primitives, but as an active **source of inheritance, gap-filling, deepening, correction, and cross-scale abstraction** for SRT core theory (with core-revision candidates queued for **`R4-C5`** under author adjudication). It does not define `d-value`, `Ψ_f`, `T_dir`, `One`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md`, `Core_Law/SRT_Generative_Ontology_Spine.md`, `Core_Law/SRT_One_Formation.md`, and canonical symbol anchors.
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 >
@@ -36,14 +38,14 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 ---
 
 # Part A: Formal Physical Axioms
-## 0. Notation & Conventions (符号与约定)
+## 0. Notation & Conventions (符号与约定 · `R4-C2` 对齐)
 
-- $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
-- $\hat{G}_\theta$: 选择算子，$\theta \in \Theta_{finite}$ 为具身参数。
-- $F$: 自由能；$\Phi$ 为本体论摩擦势能，$\Psi_f$ 为其局部密度（可取 $\Phi=\int \Psi_f \, dt$）。
-- $d$: 注意力范围（Scope）；$\rho$: 分辨率；$\vec{v}$: 选择方向。
-- $\Lambda$: 跨尺度同构；$\pi_\lambda$: 粗粒化映射；$\approx$ 表示尺度等价。
-- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为稳定。
+- $L_0,L_1,L_2$: 同一现实的三项分析/模型视角（`Spine §7`：开放非预闭合生成面 / 确定实际显现面 / 留存约束与历史效力面），**非**三种本体实体或必经线性管道；物理模型内的 Hilbert 空间、相空间或构型空间均属可接入投影，不等同于 $L_0^{abs}$。
+- $\hat{G}_\theta$: 形成态/模型级选择角色载体（`Core_21 P0-04`），$\theta \in \Theta_{finite}$ 为有限位置/边界/交互参数；$\hat{G}_\theta \neq$ 原初 `Selection` $\neq$ 先在主体或幽灵实体。
+- $F$: 声明模型内的自由能泛函；$\Psi_f^{phys}$ 为物理投影/可支付性负担代理（规范定义回 `_SRT_PSI_F_CANONICAL.md`，绝不等同于裸能量、熵产生或 Fisher 度规）。
+- `D_eff` / $B_{\text{cap}}$ vs. 规范 `d`（`R4-A / Core_14` 严格分离）：物理域中的有效自由度、相干带宽与纠缠面积代理归入无赌注容量代理 **`D_eff` / $B_{\text{cap}}$**；规范不可逆风险敏感强度 `d = ‖∂U/∂S‖` 需独立满足 `Bearer (P+E)` 准入，在纯物理尺度默认标记为 `NOT ADMITTED / NOT APPLICABLE`（退出旧版 `$d$: 注意力范围` 混写）。$\rho$: 分辨率或非负痕迹密度（按上下文区分，不与自指率 $\sigma_{sr}$ 混用）；$\vec{v}$: 选择方向。
+- $\pi_\lambda$: 粗粒化/尺度映射；$\approx$ 表示在声明状态空间、保留观测量、比较范数与容差下的**近似交换**（`Core_14 P3-Scale-01`）。旧式严格共轭 $\Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$ 仅限可逆表征变换，普通多对一粗粒化不得预设 $\Lambda^{-1}$。
+- **稳定性约定**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 视为模型内局部稳定（稳定性不自动推出 `One`、选择结构或生成健康）。
 
 ## 0.5 Numbering Scheme (编号体系)
 
@@ -51,16 +53,15 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 - part=1 为 Part A，part=2 为 Part B；sec 为章节编号（I/II…或 §n）。
 - 序号按出现顺序递增，同类编号在每个章节内独立递增。
 
-## 0. Core Theorem Alignment (核心定理对齐)
+## 0. Core Theorem Alignment (核心定理对齐 · `R4-C2` 校准)
 
-本文件以 Core_Law 的核心定理作为形式骨架：
+本文件以当前 `Spine v5`、`One_Formation v2` 与 `Core_14 / Core_21 / Core_22` 作为兼容骨架（旧编号仅作检索手柄）：
 
-- **T-Scale-1 (自相似选择)**：$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$
-- **T-Scale-2 (尺度一致性)**：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$
-- **O-T1 (现实化即积分)**：$L_1 = \oint_{\gamma} \omega_{L_0}$（选择为路径积分的“求值”）
-- **M1/M2 (固定点与稳定性)**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 给出 $L_1$ 稳定性
-- **T-DMP-2 (本体论恢复力)**：扰动 $ΔL_1(t)\to 0$ 于稳定 $L_2$
-- **T-Phase-1 (主观时间速率)**：$v_{sub} = \dot{\phi}/\phi_0$
+- **P3-Scale-01 / T-Scale-02C1（跨尺度结构相容候选，取代旧无条件 `T-Scale-1` 严格同构）**：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$（仅在声明状态空间、尺度映射、保留观测量、范数与容差下检验；可逆表征变换下才退化为严格共轭 $\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$）。
+- **跨尺度五机制分工（`Spine §5.3 / Core_14 §1`）**：严格区分装配（Assembly）、归一化（压缩型 vs. 生成型双门槛）、有效作用接口（Effective Action Interface）、无主体中介转承（`Proxy`）与具主体规范条件的委托（`Delegation`，纯物理层 `NOT APPLICABLE`）。
+- **O-T1（路径求值桥接候选）**：$L_1 = \oint_{\gamma} \omega_{L_0}$（模型内路径积分取值类比，非 `P0` 定义）。
+- **M1/M2 & T-DMP-2（模型内稳定性与恢复力）**：$x^*$ 为固定点且 $\text{Re}(\lambda_J)<0$ 给出局部稳定性；不自动推出 `One` 或生成健康。
+- **T-Phase-1（模型内相位速率代理）**：$v_{sub} = \dot{\phi}/\phi_0$（仅属七项时间接口中的模型局部代理，见 `Philosophy/SRT_Causality_Time.md §2.2`）。
 
 ## 0.6 Cross-Reference Index (交叉引用索引)
 
@@ -144,10 +145,10 @@ Physical entities (It) emerge from the cumulative binary selections (Bit) of $\h
 $$ \text{Mass-Energy} \propto \int_{\text{history}} H[\hat{G}_\theta] \, dt = \sum_n \text{Bits}_n $$
 *   **Correction to Wheeler**: "It from Bit" is incomplete—the Agent of Selection ($\hat{G}$) is ontologically prior to the Bit itself.
 
-### Ax-P3 [A1.3.3]: Holographic Duality (全息对偶公理)
-The information content of $L_1$ (bulk) is entirely encoded in the entanglement structure of $L_0$ (boundary). The $d$-value corresponds to boundary entanglement area.
-$$ d \propto S_{entanglement} \propto \frac{\text{Area}(\partial\Sigma)}{l_P^2} $$
-*   **Source**: Aligns with Core Axiom A9 (Holographic Duality).
+### Ax-P3 [A1.3.3]: Holographic Duality (全息对偶类比 · 容量代理校准)
+In this P3/P4 physical analogy, the accessible information content of $L_1$ (bulk) is compared with the entanglement structure of a declared boundary representation. Under `R4-A / R4-C2`, boundary entanglement area maps strictly to a **physical capacity / coherence bandwidth proxy** ($D_{\text{eff}}^{\text{phys}}$ / $B_{\text{cap}}$), **not** to canonical stake-coupled `d = ‖∂U/∂S‖` (which is `NOT ADMITTED / NOT APPLICABLE` without independent `Bearer (P+E)`):
+$$ D_{\text{eff}}^{\text{phys}} \sim S_{entanglement} \propto \frac{\text{Area}(\partial\Sigma)}{l_P^2} \quad \text{(legacy shorthand } d \propto S_{entanglement} \text{ retired as canonical identity)} $$
+*   **Boundary**: Candidate structural analogy only; not a derivation of holography or canonical `d-value`.
 
 ---
 
@@ -173,10 +174,10 @@ $$ t_n \equiv n \cdot \tau_{Planck} \quad \text{where } \tau_{Planck} = \sqrt{\f
 *   **Phase Link (T-Phase-1)**: in the strong declared model, $v_{sub} = \dot{\phi}/\phi_0$ may relate its retained-order ticks to a candidate subjective-time rate; this is not a primitive event/time identity.
 *   **Empirical boundary**: FERMI / LIV constraints bear on specified dispersion-producing discrete-spacetime models. H-Phys-2 has not specified such a dispersion model, so those constraints pressure strong physical discretization but do not directly test the declared retained-order bridge.
 
-### T-Phys-3 [T1.4.3]: Conservation from Symmetry (Noether-SRT 守恒定理)
-Physical conservation laws are direct consequences of the symmetries of the $L_2$ structure—invariants under $\hat{G}$ operations.
+### T-Phys-3 [T1.4.3]: Conservation from Symmetry (Noether-SRT 守恒桥接 · `R3-02-O6` 自然律三分校准)
+Within declared physical models, conservation laws correspond to invariants under admissible symmetry transformations of the effective constraint grammar:
 $$ \text{Conserved Quantity } Q \iff \delta_{\hat{G}} Q = 0 $$
-*   **Interpretation**: What we call "laws of physics" are the stable fixed points of collective selection.
+*   **`R4-C2` Natural-Law Boundary (`R3-02-O6`)**: Retire the overly broad legacy gloss that *all* "laws of physics are merely stable fixed points of collective selection." Under SRT's **Natural Law Tripartite Classification Boundary**, physical regularities must be separated into (1) **原初生成属性** (cross-scale primitive generative relations), (2) **条件性组织规律** (coupling-, symmetry-, scale-, and energy-conditioned laws such as Noether conservation, EFT/RG effective laws, and thermodynamic constraints), and (3) **历史性硬化规则** (historically sedimented path-locked constraints and `L_2` measurement/modeling protocols). Conservation laws and fundamental symmetries sit primarily as pressure-test cases between categories (1) and (2) rather than being deflated into historical consensus; exact assignment remains **`R3-02-O6` OPEN**.
 
 ### H-Phys-4 [H1.4.4]: Weightless Potentia (潜能无重假说)
 > **Level**: hypothesis / bridge. This is a weak physical compatibility claim, not a tensor-level derivation.
@@ -274,7 +275,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 |:----|:--------|:------------|
 | Ax-P1：测量即选择 | 共同审计核适用于已声明模型、边界与解释的 P3/P4 realization candidate；collapse-family 可作排他锚定读法 | Everett 只能作 branch-relative fact formation，operational 只能作 instrument registration；任一路线都不得反向定义 P0 或把单项代理写成充分条件 |
 | Ax-P2：比特源于选择（Wheeler 修正） | 若 Wheeler 意图中确实缺乏算子概念 | Wheeler 后期的"参与性观察者"框架已接近 $\hat{G}_\theta$ 的角色；"修正"可能过于强硬——更准确的说法是"补充形式化"而非纠错 |
-| Ax-P3：全息对偶（$d \propto S_{entanglement}$） | 全息原理本身（Bekenstein-Hawking）的有效范围内 | 全息对偶的 $d \propto S_{entangle}$ 是候选类比，不是推导。边界纠缠面积对应 d-value 需要独立论证 |
+| Ax-P3：全息对偶（$D_{\text{eff}}^{\text{phys}} \sim S_{entanglement}$） | 全息原理本身（Bekenstein-Hawking）的有效范围内 | 全息对偶的边界纠缠面积仅作物理容量代理（$D_{\text{eff}}^{\text{phys}}$）候选类比，不是推导，亦不等同于需独立 `Bearer (P+E)` 准入的规范 `d-value` |
 | H-Phys-2：时间离散化（普朗克尺度） | 若 QG 发展出离散时间的完整形式化 | 2009 年 FERMI/LAT 对 GRB 090510 的观测将洛伦兹不变性破坏限制到普朗克尺度以下（Abdo et al., *Nature*, 2009）。H-Phys-2 当前是桥接层的候选读法，不是已有经验支持的定理 |
 | H-Phys-4：引力-摩擦弱相容 | 作为结构类比，揭示两个框架中"维持现实的代价"的平行角色 | 当前只承诺弱场极限下 `\Psi_f^{phys}` 梯度与牛顿势梯度方向同号的候选相容性；$G_{\mu\nu} \propto \Psi_f(L_1)$ 不得读作已证结论 |
 | 物理常数稳定参数子空间 | 作为结构放置约束：常数若进入 SRT 物理桥，应被读作 `L_2` 稳定参数子空间中的量 | 这不是精确值解释、不是推导，也不排除外部物理或人择解释 |
@@ -434,7 +435,7 @@ The Vergence Domain $L_2$ manifests as:
 - **Physical Constants**: $\hbar$, $c$, $G$, $\alpha$
 - **Spacetime Geometry**: The Lorentzian manifold structure
 
-**Profound Implication**: Physical laws are not imposed from outside—they are the **accumulated consensus of selection operations** (T-Phys-3 [T1.4.3]). They are stable because violating them would require overcoming enormous ontological friction.
+**Boundary Clarification (`R4-C2` / `R3-02-O6`)**: Under SRT's Natural Law Tripartite Classification Boundary (`§7.4`), physical regularities are **not** uniformly collapsed into "accumulated historical consensus": conservation laws and gauge symmetries must be evaluated across **primitive generative attributes**, **conditional organizational laws** (symmetry-, coupling-, and scale-conditioned effective laws), and **historically hardened rules** (`L_2` protocols and frozen cosmological/environmental parameters), with exact physical assignment remaining `R3-02-O6 OPEN`.
 
 ---
 
@@ -523,6 +524,43 @@ I(L_1^A;L_1^B)\to 0
 - 不采纳“不可通约=绝对不可交流”的推论：低维桥接仍可能通过共享任务约束实现。  
 - 不采纳“人类物理学=宇宙唯一语法”的推论：SRT 明确区分 \(L_{2,\theta_{human}}\) 与 \(L_0^{abs}\)。  
 - 不采纳“多现实并存=任意相对主义”的推论：协议层 \(\Pi\) 仍提供硬约束。
+
+---
+
+## VII. `R4-C2` 物理与跨尺度生成双向重构接口（2026-11-26）
+
+> **双向重构定位（`1A 修订版 / 2A / 3A`）**：本节将物理学作为 SRT 核心理论的**继承、补齐、深化、修正与抽象来源**，将物理域六大议题与跨尺度五机制、物理三态 `One`、耗散与生命组织差异、时空因果及自然律三分边界收束为统一接口，并将三项跨物理—生命—社会反向完善主线登记至 **`R4-C5` 核心修订评估队列**（保持候选性质与作者裁决边界，不在此直接修改 Freeze-A 规范定义）。
+
+### 7.1 原初分化与有限相对位置（无先在观察者与无上帝视角容器）
+现代基础物理学（量子参考系 QRF, Giacomini–Castro-Ruiz–Brukner 2019；关系量子力学 RQM / Cross-Perspective Links, Rovelli 1996 / Adlam & Rovelli 2023；规范对称与观测代数）为 SRT 的**有限位置索引原初分化**提供非拟人化物理接口：
+- 物理事实、叠加/纠缠分解与局域指针态均依赖于所选参考系、交互哈密顿量与边界划分（$\theta_{\text{basis}}, \theta_{\text{boundary}}, \theta_{H_{\text{int}}}$），不需要假定外部“无视角上帝容器”，亦不需要先在意识主体；
+- **硬边界**：物理有限相对位置（relative position / QRF frame）$\neq$ 已形成的 `One`（`One_Formation §2`）$\neq$ 视角承载主体位或意识体验；且须通过 `REP01` 表征协变护栏（区分复/实数域数学脚手架与不变量组合/概率/操作包）。
+
+### 7.2 跨尺度五机制在物理—生命—社会中的精确分工（严禁压平为单义“涌现”）
+对接 `Core_Law/SRT_Generative_Ontology_Spine.md §5.3` 与 `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md §1`，物理学要求将跨尺度生成严格拆为五项不可互换机制：
+
+| 机制 | 物理学与非平衡原型 | 生命/社会延续与硬分界 |
+|---|---|---|
+| **1. 装配（Assembly）** | 夸克→核子→原子→分子→复杂化学/超分子网络（强/电磁束缚态、Cronin–Walker 装配深度） | 多单元组合产生原本不存在的新整体能力；**未必归一化，未必构成 `One`** |
+| **2. 归一化（Normalization）** | 区分① 认知表征压缩（统计平均/热力学态方程）、② 实际物理耦合归一化（RG 重整化流、绝热消去、序参量役使）、③ 组织生成型归一化 | 仅当同时满足**内部耦合重构 + 跨位置条件化生效**双门槛（`One_Formation §2.4`，`R3-CL-O2` OPEN）才跨入生成型归一化 |
+| **3. 有效作用接口（Effective Action Interface）** | EFT 低能有效自由度、重整化准粒子、分子官能团界面、宏观测度边界 | 已形成整体以相对独立身份参与他处生成并改写下游可达空间（EFT/RG 屏蔽紫外细节而不消灭底层动力学） |
+| **4. 代理转承（`Proxy`）** | 无主体条件下的物理结构转承与非平衡历史中介（铁磁返回点记忆 RPM、周期剪切非布朗悬浮液多重记忆、催化通道、河道冲刷地貌） | 须与静态平衡束缚态区分，亦严禁拟人化为具主体意图之代理；跨尺度探索物理结构转承是否为高尺度委托之远源原型（`R3-02` OPEN） |
+| **5. 委托关系（`Delegation`）** | **纯物理尺度 `NOT APPLICABLE`**（物理作用力无主体与规范约束条件） | 仅在具主体性、授权边界、可撤回与责任归属（`O2-A`）的社会/制度/人机层独立准入 |
+
+### 7.3 物理三态 `One`、耗散结构与生命组织差异（对接 `NODE-LIFE-DISSIPATIVE` 与 `Core_25`）
+- **物理三态 `One` 维持谱系（`One_Formation §2.3`）**：态 I **束缚与平衡结构**（原子/分子/晶体）→ 态 II **耗散与动态维持结构**（Bénard 对流胞、火焰、旋涡、BZ 振荡、非平衡记忆介质）→ 态 III **内生约束互维结构**（原细胞、代谢—膜—信息约束闭包、生命体）。生物细胞膜不得充当 `One` 普遍下限，三态跨过 `One` 垂直再构成门槛之精确条件保持 **`R3-04-O1` OPEN**。
+- **耗散结构 vs. 生命组织与 `T-E §2` 三分**：耗散结构依赖外给边界与持续通量维持形态（断流即散），生命组织进一步展现**内生约束互维、自生边界维持与修复、功能分化、误差校正及跨周期/表观/遗传历史写回**；须严格分离 **物理底座依赖 / 组织机制依赖 / 解释充分性** 三强度与 **活脚手架 vs. 死稳定 vs. 牢笼性秩序**（详细快速层落地于 `03_Bridges/SRT_Selection_Event_CompactCore.md §4b` 与 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8a`，测量签名面衔接 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`）。
+
+### 7.4 时空、因果与自然律三分边界
+- **因果与物理闭合（`R3-03-O6`）**：物理模型内部守恒律与物理动力学闭合完全有效（不引入打断物理因果链的超自然外力；宏观下行约束服从 `T-Phys-5` $\mathcal{C}_{down}^{macro} \subseteq \Pi_{kernel}$），但物理闭合不等于物理本体穷尽性；严格区分**水平时序因果**、**垂直非时序构成约束**与**局部非对称生成依赖**（对齐 `Philosophy/SRT_Causality_Time.md`）。
+- **七项时间接口与四类距离（`R3-05-O1`, `R3-CL-O7`）**：物理时间模型（`H-Phys-2` 保留次序离散桥接、`E04` Page–Wootters 关系时间、`P05` 量子固有时时钟）各属声明模型内时间接口，不替代相对论时空或宣布导出普遍物理时钟与宇宙学时间箭头；空间与四类距离（物理/作用/认知/生成）保持独立边界。
+- **自然律三分边界（`R3-02-O6`）**：区分**原初生成属性 / 条件性组织规律 / 历史性硬化规则**，撤回“一切物理定律皆历史共识”之过强口径，具体自然律归属保持 `R3-02-O6` OPEN。
+
+### 7.5 排入 `R4-C5` 核心修订评估的三项跨尺度反向完善主线（物理—生命—社会）
+详细跨尺度展开与反例清单见 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §9a` 与 `Physics/SRT_Phys_10_Integration_CompactCore.md §7a`，此处登记三条面向 `One_Formation / Spine / Core_Law` 的候选核心修订主线（`M-推演 / C-candidate`，待 `R4-C5` 统筹与作者裁决）：
+1. **主线一 · 相互依赖如何反而生成相对独立性**：以物理强耦合束缚态/RG 紫外屏蔽/绝热消去、生命内生约束互维（MET/组织闭包）与社会分工脚手架共同反推 `One_Formation`——将“相对独立性”从静态边界隔离深化为**依赖拓扑重组与微扰屏蔽深度 × 可变响应余度与后果回流通道保留（防死稳定锁定）**之双条件结构，并区分态 I 势阱屏蔽与态 II/III 动态互维屏蔽。
+2. **主线二 · 多尺度组织如何产生原本不存在的新能力**：以 Anderson 对称性破缺（刚性/超导/拓扑边缘态）、非平衡多重记忆、组合装配深度、生命快—慢脚手架耦合与社会符号/仪器扩展反推 `Spine §2.2 / §5.3`——提炼**四条新能力生成通道**（对称破缺序参量 / 组合装配与拓扑接口 / 跨时间尺度快慢脚手架 / 比对维度自身重构），修正早期“局部可选性下降自动产生宏观新能力”之单线启发（补充反例：脆性锁定与热力学淬火），对接 `Core_21c P2/P3-B15` 刻度 3–4 与反重参数化比较纪律。
+3. **主线三 · 局部生成趋优与整体生成趋优的关系（衔接神性·倾向义与 `T3-01 C/E`）**：以物理学变分驻值非全局极小（$\delta S = 0$ 含鞍点/共轭点）、自旋玻璃受挫态（局域极小与全局基态指数分离）、远平衡极值非普适性（Prigogine 最小熵产生限线性近平衡、MEPP 依赖边界条件）、可变维度相空间演化，联动生命（癌变/演化自杀）与社会（外部化/死稳定）反例，既加固 `OPEN_TENSIONS §17 C-A`（继续撤回宇宙级评价/道德最优，`PT10 E`）又保留 `T3-01 C/E` 客观全局趋优开放追问（绝不替作者定稿、绝不贬低为纯局部适应），向 `Spine §1 / R3-CL-O4` 提交**非静态相空间、受挫/跨尺度冲突兼容与局部→整体非自动收敛**三项可反驳压力条件。
 
 ## Symbol Index (符号索引)
 
