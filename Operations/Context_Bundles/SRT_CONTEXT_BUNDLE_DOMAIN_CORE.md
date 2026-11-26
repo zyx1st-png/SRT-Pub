@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 31c23e20c
+source_commit: d3df20883
 source_branch: canon/r4-c2-physics-cross-scale-generation-2026-11-26
 source_dirty: false
-inputs_digest: 2de9734a3735ab21
+inputs_digest: aed8e343bee60684
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: 2de9734a3735ab21
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `31c23e20c` |
+| 来源 commit | `d3df20883` |
 | 来源分支 | `canon/r4-c2-physics-cross-scale-generation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
