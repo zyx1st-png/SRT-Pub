@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 69ad878b0
+source_commit: f7c10a796
 source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
 source_dirty: false
-inputs_digest: 8e5f086e9fb4352d
+inputs_digest: 893a58b582136d9c
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,7 +27,7 @@ inputs_digest: 8e5f086e9fb4352d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `69ad878b0` |
+| 来源 commit | `f7c10a796` |
 | 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
@@ -735,48 +735,33 @@ S_A(\omega)\equiv \sum_{j=1}^{k}\left|\widehat{A_j}(\omega)\right|^2
 
 ---
 
-### Eq-Rhythm-4a: Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡）
+### Eq-Rhythm-4a: Conditional Passband–Duty Upper-Bound Tradeoff（频谱通带容量—占空比上界条件权衡，`R4-B2 P1-04` 修正）
 
-**新增（2026-04-14）**：将 Ax-Spec-01 与 T-Scale-Rhythm-4 的联结压成公式锚点。
+**新增（2026-04-14；`R4-B2 P1-04` 量纲与作用域同步 2026-11-26）**：对齐 `Core/SRT_Core_14_Dynamics_Scaling.md T-Scale-Rhythm-4 / Cor-Scale-Rhythm-4a`。本式作用于声明频域模型的**无赌注通带容量代理 $B_\theta$**（在附加容量假设 $B_\theta = c_B \, D_{\text{eff}}$ 下与无赌注谱容量 $D_{\text{eff}}$ 对应，**不再**未经量纲校准与 `Bearer (P+E)` 准入直接写作 $B_\theta = c_B \, d$）。
 
-令
+在声明了热浴温度 $T$ 与逻辑不可逆擦除映射 $\dot{N}_{\text{erase}}^{\text{on}} = f_{\text{erase}}(B_\theta)$（$f_{\text{erase}}'(B_\theta) \ge 0$，**附加条件桥接假设**）的物理模型中，严格区分**熵流率**（J/(K·s)）与**耗散热功率**（J/s）：
 \[
-B_\theta \equiv \operatorname{Bandwidth}(H_\theta)=c_B\,d,\qquad c_B>0
+\dot{S}_{\text{int}}^{\text{on}} \;\ge\; k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}},
+\qquad
+\dot{Q}_{\text{int}}^{\text{on}} = T\,\dot{S}_{\text{int}}^{\text{on}} \;\ge\; k_B T \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}
 \]
-并把 Rhythm-4 中“高 \(d\) 导致更高 \(\dot I_{created}\)”写成单调函数：
+代入稳态导出上界 $J_S^{\max}$（等价最大散热功率 $P_{\text{diss}}^{\max} = T J_S^{\max}$），得条件热力学占空比上界：
 \[
-\dot{I}_{created}^{on}=f_I(B_\theta),\qquad f_I'(B_\theta)\ge 0
+\boxed{\delta_{\max}^{\text{entropy}}(B_\theta) \;\le\;
+\frac{J_S^{\max}}{k_B \ln 2 \cdot f_{\text{erase}}(B_\theta) + J_S^{\max}}
+\;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \cdot f_{\text{erase}}(B_\theta) + P_{\text{diss}}^{\max}}}
 \]
-则由
-\[
-\dot{S}_{int}^{on}\ge k_B T\ln 2 \cdot \dot{I}_{created}^{on}
-\]
-可得弱 tradeoff：
-\[
-\boxed{\delta_{max}^{entropy}(B_\theta)\le
-\frac{J_S^{max}}{k_B T\ln 2 \cdot f_I(B_\theta)+J_S^{max}}}
-\]
-故
-\[
-\boxed{B_\theta\uparrow \Rightarrow \delta_{max}^{entropy}\downarrow}
-\]
+故在该声明模型中，通带增大时热力学上界非增（$B_\theta \uparrow \Rightarrow \delta_{\max}^{\text{entropy}}(B_\theta)$ 上界收紧）。
 
-若进一步满足信息密度下界
+若进一步声明擦除密度下界 $\dot{N}_{\text{erase}}^{\text{on}} \ge \rho_{\text{erase}} \, B_\theta$（$\rho_{\text{erase}} > 0$，单位 $\text{bits}/(\text{Hz}\cdot\text{s})$），则得条件乘积上界：
 \[
-\dot{I}_{created}^{on}\ge \rho_I\,B_\theta,\qquad \rho_I>0
+\boxed{\delta \, B_\theta \;\le\; \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}}} \;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \, \rho_{\text{erase}}}}
 \]
-则可强化为乘积上界：
-\[
-\boxed{\delta\,B_\theta \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I}}
-\]
-以及
-\[
-\boxed{\delta\,d \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I\,c_B}}
-\]
+在额外声明 $B_\theta = c_B D_{\text{eff}}$（$c_B > 0$）时，等价写为 $\delta \, D_{\text{eff}} \le \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}} \, c_B}$。
 
-* **Implication**: 通带越宽，选择可处理的频谱越丰富，但在熵耗散约束下可持续 on-time 越短；谱丰富度与时间占有率之间存在硬对冲。
-* **Boundary**: 无条件硬结论只有单调 tradeoff。乘积上界依赖 \(\rho_I\) 下界，应读作条件强化版，而非无条件定理。
-* **Cross-ref**: Ax-Spec-01（`Core/SRT_Core_13b_Operator_Advanced.md`）；T-Scale-Rhythm-4（`Dynamics Scaling`）；Ax-F-13（选择-信息创造等价）。
+* **Implication**: 在满足逻辑擦除桥接前提的具身物理模型中，更宽有效通带 $B_\theta$ 可收紧稳态耗散允许的占空比上界。
+* **Boundary（`P1-04`）**: ① Landauer 下界针对逻辑不可逆擦除 $\dot{N}_{\text{erase}}$，不直接约束任意信息创造或原初 `Selection`；② 上界 $\delta_{\max}^{\text{entropy}}$ 递减**不自动证明**实际运行占空比 $\delta$ 单调递减；③ 仅约束 $B_\theta / D_{\text{eff}}$，不直接约束规范风险敏感梯度范数 `d = ||∂U/∂S||`。
+* **Cross-ref**: `Ax-Spec-01`（`Core/SRT_Core_13b_Operator_Advanced.md`）；`T-Scale-Rhythm-4 / Cor-Scale-Rhythm-4a`（`Core/SRT_Core_14_Dynamics_Scaling.md`）；`_SRT_SYMBOL_TABLE.md`。
 
 ---
 

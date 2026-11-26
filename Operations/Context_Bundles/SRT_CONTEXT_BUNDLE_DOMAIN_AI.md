@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 69ad878b0
+source_commit: f7c10a796
 source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
 source_dirty: false
-inputs_digest: 8e5f086e9fb4352d
+inputs_digest: 893a58b582136d9c
 ---
 
 # SRT AI 领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 8e5f086e9fb4352d
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `69ad878b0` |
+| 来源 commit | `f7c10a796` |
 | 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
