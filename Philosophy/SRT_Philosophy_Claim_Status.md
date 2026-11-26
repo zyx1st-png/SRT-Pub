@@ -20,7 +20,7 @@ updated: 2026-08-12
 
 This file consolidates high-risk phrase hygiene. It does not replace the PH-SS guardrail files; it is the first stop for metaphor/proxy overclaim checks.
 
-> **Controlling governance boundary (Wave E6)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible owners. It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`; exact universal Agency and FreeWill sufficiency remain OPEN. Its safer phrases are claim-hygiene replacements, not new positive definitions.
+> **Controlling governance boundary (Wave E6 + `R4-A/B/C1`, 2026-11-26)**: this folder-level guide is downstream of `SRT-GENERATIVE-ONTOLOGY-SPINE` and compatible `Core_Law` common-mechanism owners (`Individuation`, `Occlusion_Dynamics`, `Suffering`, `Collective_Selection`, `Reference_Dynamics`, `Irreversibility`). It does not define morality, moral or political legitimacy, Agency, FreeWill, responsibility, suffering, evil, or `O2-M`. `O2-C != O2-A != O2-M`; **`PT10 E` (`generative optimizing orientation != ethical legitimacy`)** and `O2-M = OPEN / HOLD` remain intact without weakening positive research on co-generation, value, freedom (`T3-03 C / Q26`), and shared order. Four-way separation of canonical `d = ||∂U/∂S||` (Bearer-gated), four-dimensional Generalized Concern, `D_stake`, and `D_eff` (`_SRT_D_VALUE_CANONICAL.md`) and full-name isolation of **Subjecthood Threshold `S0–S6`** vs. **AI 赌注谱系 `S0–S4`** vs. **primitive `S0`** vs. **AI 三型社会技术中介维度** (`_SRT_SYMBOL_TABLE.md Rule 19`) are mandatory. Its safer phrases are claim-hygiene replacements, not new positive definitions.
 
 ---
 

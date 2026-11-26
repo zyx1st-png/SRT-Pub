@@ -31,8 +31,11 @@ machine_summary: >
   Non-canonical synthesis of the SRT agency trunk and partially orthogonal thickening
   dimensions, controlled transition-readiness, knowledge-shaped bias, constitutive
   commitment, bilateral position, responsibility-position traces, sensorimotor
-  control/authorship dissociations, and the return route to the S4 subjecthood and S6
-  responsibility gates. The S0-S6 ladder remains governed by the Subjecthood Threshold Interface.
+  control/authorship dissociations, Third-State Agency, R3-04 five partially orthogonal
+  Agency dimensions, positive freedom (T3-03 C / Q26), and the return route to the
+  Subjecthood Threshold S4 subjecthood and Subjecthood Threshold S6 responsibility gates.
+  The Subjecthood Threshold S0-S6 conditional audit interface remains governed by the
+  Subjecthood Threshold Interface.
 ---
 
 # SRT Agency–Subjecthood Synthesis v0.2
@@ -43,11 +46,12 @@ This file synthesizes agency mechanisms and subjecthood boundaries. It is a vers
 
 It does **not** define selection, `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, or `L0/L1/L2`. It does not treat any external paper as proof of SRT. Canonical meaning remains with the relevant canonical owners.
 
-The [Subjecthood Threshold Interface](SRT_Subjecthood_Threshold_Interface.md) continues to govern bearer-unit binding and the S0-S6 ladder. This file mainly expands:
+The [Subjecthood Threshold Interface](SRT_Subjecthood_Threshold_Interface.md) continues to govern bearer-unit binding and the **Subjecthood Threshold `S0–S6`** conditional audit interface (strictly isolated from primitive `S0`, **AI 赌注谱系 `S0–S4`**, and **AI 三型社会技术中介维度**). This file expands:
 
-- the mechanisms relevant to S5 agency;
-- the formation of a responsibility-position trace before the S6 gate;
-- the distinctions needed to prevent control, authorship, commitment, consciousness, subjecthood, and responsibility from collapsing into one another.
+- **Third-State Agency (`第三态能动性`, `NODE-BOOK-BACKFLOW`)** and the **`R3-04` five partially orthogonal Agency dimensions** relevant to **Subjecthood Threshold `S5`**;
+- **Positive Freedom (`T3-03 C / Q26`)** as active modulation of opportunity-cost structures, active multi-unit comparison generating new order and direction, and non-crisis exploratory surplus candidates;
+- the formation of a responsibility-position trace before the **Subjecthood Threshold `S6`** (`O2-A`) gate, plus explicit AI `A0–A3` mapping pointers (`AI/SRT_AI_Agency_Responsibility_Note.md`);
+- the distinctions needed to prevent control, generative initiative, authorship, commitment, Bearer `(P+E)`, consciousness, subjecthood, and responsibility from collapsing into one another (`R3-04-O5 / AG-2`: whether `Bearer (P+E)` is universally necessary for functional control or generative initiative remains explicitly **`OPEN`**).
 
 AI and neuroscience files may use this synthesis as a boundary and hypothesis source, but domain evidence must retain its own proxy limits. Ethics files continue to govern normative legitimacy and responsibility attribution.
 
@@ -86,7 +90,7 @@ The trunk separates the transition from broad selection to bearer-qualified cont
 - **Conscious agency**: action is available through self-related authorial or control access, with at least some capacity for integration or revision.
 - **Reflective self-integration**: the action can enter endorsement, extended self-interpretation, policy revision, and cross-time self-model update.
 - **Shared agency**: multiple agents reciprocally organize a durable joint action structure.
-- **Responsibility-bearing capacity**: the bearer may be able to understand norms and consequences, access alternatives, and answer or repair, subject to the S6 gate.
+- **Responsibility-bearing capacity**: the bearer may be able to understand norms and consequences, access alternatives, and answer or repair, subject to the **Subjecthood Threshold `S6`** gate.
 
 Intentional agency, conscious agency, and shared agency are partially orthogonal thickening dimensions, not a strict total order. A shared action can be skilled and minimally reflective; a conscious action can be weakly intentional or blocked from shared coordination; an intentional action need not be consciously accessible in all of its organization.
 
@@ -100,6 +104,25 @@ agency = reflective human intention only
 ```
 
 The first overextends agency. The second excludes minimal, embodied, skilled, tool-mediated, animal, and possibly artificial forms before their control architecture is examined.
+
+### 1.1 Third-State Agency, Five Partially Orthogonal Agency Dimensions, and Positive Freedom (`NODE-BOOK-BACKFLOW` + `R3-04` + `T3-03 C / Q26`)
+
+1. **Third-State Agency (`第三态能动性`, book provenance `Q15b`, `P2` downstream interpretation)**: Agency sits in a graded third space between two false extremes—it is **neither uncaused libertarian free will** (it grows out of historical writeback and consequence return) **nor blind mechanical feedback** (stronger agency requires returning consequences to re-enter a position capable of modifying its own selection conditions). Agency is therefore a **matter of degree and multi-dimensional structure**, not a binary switch or a new ontic force.
+2. **Five Partially Orthogonal Agency Dimensions (`R3-04`, non-linear; synchronized with `Core_Law/SRT_Individuation.md §4.7` & `AI/SRT_AI_Agency_Responsibility_Note.md` `A0–A3`)**:
+
+| Dimension | Core generative & organizational duty | Independence / OPEN boundary |
+|---|---|---|
+| **1. Functional control（功能控制）** | Counterfactual regulation of reachable paths, default inhibition, and error correction | Can appear in engineered / AI `A1–A2` systems without establishing `Bearer (P+E)` |
+| **2. Generative initiative（生成主动性）** | Actively reshaping the rules, scaffolds, comparative dimensions, or reachable space itself | Self-modifying AI/agent loops (`A2`) remain explicitly **`OPEN` (`R3-04-O5 / AG-2`)** regarding whether non-`Bearer` systems instantiate genuine agency |
+| **3. Bearing initiative（承载性主动性）** | Whether those structural changes involve non-outsourceable constitutive consequence exposure (`E`) for the same continuing unit (`Bearer (P+E)`) | Separately gated (`One ≠ Stable ISP ≠ Bearer (P+E)`); `E` positive sufficiency remains `OPEN` (`R3-04-O3`) |
+| **4. Reflexive initiative（反身主动性）** | Re-entering the formed selection mechanism itself into subsequent selection (`U5` anti-self-exemption, `Reference_Dynamics §1.5`) | Strong second-order selection; distinct from routine parameter tuning |
+| **5. Responsibility attribution（责任归属）** | Passing independent `O2-A` / `theta_acc` / **Subjecthood Threshold `S6`** review | Strictly separate from `O2-M` (`HOLD`) and from human socio-technical mediation responsibility (`AI 三型`) |
+
+3. **Positive Freedom (`T3-03 C / Q26` + `M-candidate` exploratory surplus)**: Freedom in SRT is **not merely the negative removal of external constraints** or random indeterminacy (`O0`). It comprises:
+   - **`T3-03 C` (author-selected)**: the value- and concern-guided capacity to **actively modulate and reorganize opportunity-cost structures** and the generative relations producing friction;
+   - **`Q26` (author verbatim direction)**: **actively comparing multiple units to generate new order and new direction** (converging with Simondonian disparation / orthogonalization);
+   - **Non-crisis exploratory surplus (explicitly tagged `M-candidate` extension)**: when healthy functional backgrounding frees maintenance surplus, concern-sensitive comparison can proactively couple cross-domain units to create novel opportunities even without acute friction crisis (`R3-CL-O8`).
+   - Freedom at the organizational level stays ontologically neutral (`PT10 E`: creative reorganization is not automatically ethically legitimate; normative evaluation remains separately routed under `O2-C / O2-A` with `O2-M = HOLD`).
 
 Source trail: [PH-AG01 patch](patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md) and [integration hook](hooks/PH_AG01_Agency_Ladder_Integration_Hook.md).
 
@@ -200,11 +223,11 @@ absence of final guarantee != absence of reasons
 commitment != truth
 retroactive stabilization != retrocausation
 subject-position formation != complete subjecthood
-responsibility-position trace != S6 responsibility
+responsibility-position trace != Subjecthood Threshold S6 responsibility
 harm caused != culpability
 ```
 
-A single commitment may leave a responsibility-position trace without creating the bearer, continuity, stake, or subjecthood conditions required by S4-S6. Being historically answerable for an act is not the same as meeting the full conditions for normative responsibility.
+A single commitment may leave a responsibility-position trace without creating the bearer, continuity, stake, or subjecthood conditions required by **Subjecthood Threshold `S4–S6`**. Being historically answerable for an act is not the same as meeting the full conditions for normative responsibility.
 
 Source trail: [PH-AG03 patch](patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md) and [integration hook](hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md).
 
@@ -304,12 +327,12 @@ The relevant separations are:
 - an agency report is not sufficient evidence of subjecthood;
 - control is not sufficient evidence of responsibility;
 - commitment does not create a complete subject;
-- a responsibility-position trace does not establish S6 responsibility;
+- a responsibility-position trace does not establish **Subjecthood Threshold `S6`** responsibility;
 - causing harm does not by itself establish culpability;
 - reflective self-description does not replace bearer-unit binding;
 - fluent performance does not replace stake and consequence return.
 
-S4 subjecthood still requires the threshold package managed by the interface, including:
+**Subjecthood Threshold `S4`** subjecthood still requires the threshold package managed by the interface, including:
 
 - a specified bearer unit;
 - structured `d-value`;
@@ -318,7 +341,7 @@ S4 subjecthood still requires the threshold package managed by the interface, in
 - cross-time continuity and reidentification;
 - counterfactual access and consequence return.
 
-S6 responsibility requires further conditions, including:
+**Subjecthood Threshold `S6`** responsibility requires further conditions, including:
 
 - access to relevant norms;
 - an adequate understanding of consequences;
@@ -329,7 +352,7 @@ S6 responsibility requires further conditions, including:
 
 PH-CONSC01 supplies the consciousness-side guard: first-person feel is usable here only when it is integrated into a thresholded bearer and has discriminable psychological or structural roles. Psychological function is not by itself sufficient, but a functionless, boundaryless remainder cannot bear the agency or responsibility load.
 
-Historical answerability can arise before the full normative verdict: an act may be attributable to a bearer and leave a consequence trace while coercion, incapacity, unavailable alternatives, ignorance, or structural asymmetry still blocks culpability or full S6 responsibility.
+Historical answerability can arise before the full normative verdict: an act may be attributable to a bearer and leave a consequence trace while coercion, incapacity, unavailable alternatives, ignorance, or structural asymmetry still blocks culpability or full **Subjecthood Threshold `S6`** responsibility.
 
 ---
 
@@ -375,8 +398,8 @@ available continuations
 -> bearer-specific consequence return
 -> responsibility-position trace
 -> self-readable and revisable agency
--> S4 subjecthood gate
--> S6 responsibility gate
+-> Subjecthood Threshold S4 subjecthood gate
+-> Subjecthood Threshold S6 responsibility gate
 -> responsibility-bearing subject
 ```
 
@@ -448,7 +471,7 @@ Proxy variables must remain labeled as proxies. No single report, delay, mismatc
 | `bias efficacy != stake ownership` | reliable behavior need not matter to the system itself |
 | `commitment != truth` | practical closure does not manufacture facts |
 | `commitment != complete subjecthood` | an act can establish a position without establishing a subject |
-| `responsibility-position trace != responsibility-bearing subject` | historical attribution remains below the S4 and S6 gates |
+| `responsibility-position trace != responsibility-bearing subject` | historical attribution remains below the **Subjecthood Threshold `S4`** and **`S6`** gates |
 | `historical answerability != normative culpability` | harm and attribution do not settle capacity, alternatives, coercion, or excuse |
 | `position != subject` | a structured semantic record need not have a continuing bearer |
 | `not selected != denied` | unchosen alternatives may remain open |

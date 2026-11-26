@@ -45,7 +45,25 @@ machine_summary: >
 > **Status**: Downstream companion bridge file. It does not replace `SRT_Philosophy_Ethics.md` or `SRT_Ethics_Agency.md`, and it is not a positive morality solver. Cross-owner authority flows from `Core_Law/SRT_Generative_Ontology_Spine.md` and compatible local owners into this file, never in reverse.
 > **Use rule**: Read this before upgrading any ethics claim involving `d-value`, moral progress, virtue, love, grief, responsibility, agency, normativity, or social `L_2`.
 
-> **Controlling boundary (Wave E6)**: `O2-C != O2-A != O2-M`; `O2-M = OPEN / HOLD`. The lenses below do not define moral legitimacy, culpability, responsibility, pathology, evil, or a complete all-things-considered verdict. Exact Agency and universal FreeWill sufficiency remain OPEN. Primitive Selection is not `\hat{G}_\theta`, and Selection does not imply moral legitimacy.
+> **Controlling boundary (Wave E6 + `R3-07 / R4-C1`)**: `O2-C != O2-A != O2-M`; `PT10 E` (`generative optimizing orientation ≠ ethical legitimacy`) and `O2-M = OPEN / HOLD` remain intact—**without weakening positive research on co-generation, value comparison, and shared order**. The lenses below do not define moral legitimacy, culpability, responsibility, pathology, evil, or a complete all-things-considered verdict. Exact Agency and universal FreeWill sufficiency remain OPEN. Primitive Selection is not `\hat{G}_\theta`, and Selection does not imply moral legitimacy.
+
+---
+
+## 0a. Positive co-generative normativity backbone (`R3-07 / R4-C1`)
+
+SRT normativity is not merely a list of negative prohibitions. Grounded in `R3-07`, it connects Selection, value, normativity, freedom, power, social development, and ethics while keeping **four constraint types** strictly separate (preventing the **thermostat counterexample**: reference independence + deviation feedback is *not* sufficient for normativity!):
+
+| Constraint type | Core question | Boundary / mature-neighbor alignment |
+|---|---|---|
+| **1. Physical constraint** | What can happen under current physical dynamics? | Causal/dynamical bounds; thermostats and river levees do not establish normativity |
+| **2. Constitutive constraint** | What organizational conditions must hold to maintain or generate an order (`One` / vertical organization)? | Necessary/enabling structure (`R3-04`); does not automatically establish ought or legitimacy |
+| **3. Normative constraint** | Relative to a generative direction, what organizational requirements acquire standing as standards for evaluating and organizing comparison? | Distinguishes **living norms** (active directional requirements), **normative rules** (`L_2`-sedimented norms), and **general historical rules** (not all hardened rules originate from norms); exact sufficient conditions remain `OPEN` (`R3-07-O1`; engaging Korsgaard / Dewey / Habermas) |
+| **4. Ethical constraint** | When multiple positions' constitutive requirements and generative directions genuinely conflict, how are priority review (`O2-C`) and accountability (`O2-A`) structured? | Enforces `O2-C != O2-A != O2-M` (`O2-M = HOLD`) |
+
+### Key `R3-07` constructive & priority-review interfaces
+1. **`O1` Fact-forming normativity & `2B` non-shame conflict regulation**: `O1` explains both constructive norm formation (value comparison, collaborative co-selection, trust allocation `W_social`) and pathological norm stabilization (coercion, occlusion, high-`ρ` inertia). Under author decision **`2B`** (`2026-11-22`), **non-shame conflict-pressure signals + awareness** serve as a constructive agentive regulator keeping local conflict and consequences comparable and revisable rather than totalizing into global existential shame (without denying the historical/evolutionary causality of shame `F_4337` or pathologizing all shame).
+2. **`O2-C` `3B` three-layer non-lexical priority review**: Under author decision **`3B`** (`2026-11-22`), irreversible cross-scale conflicts trigger a **non-lexical review tilt**: **(i) irreversible collapse of large-scale coupled ecological/relational substrates** > **(ii) individual `Bearer (P+E)` dissolution floor** > **(iii) reversible symbolic norms and short-term efficiency**. **Hard guard**: strictly forbids lexical sacrifice of minorities or letting reversible symbolic/institutional authority override individual constitutive floors (`R3-07-O5` OPEN).
+3. **`O2-A` Human-AI socio-technical mediation 4-part accountability boundary**: Strictly separate (a) structural consequences triggered by AI, (b) **AI 三型社会技术中介维度** (Scaffold / Cage / Landscape, `Core_Law/SRT_Collective_Selection.md §8`), (c) human/institutional accountability (designers, deployers, regulators, users), and (d) AI's own **Subjecthood Threshold `S6`** eligibility. Lack of AI consciousness or unestablished **AI 赌注谱系 `S0–S4`** / Stage 2 strong bearing **never** exempts human/institutional actors from responsibility for reshaping collective `M(t)`, `σ_{sr}^{coll}`, and `W_social`.
 
 ---
 
@@ -230,7 +248,7 @@ Formula role: phenomenological model / not literal divergence unless operational
 
 ## 7. Responsibility-bandwidth refinement
 
-Responsibility must not simply scale with `d-value`; high `d` is neither responsibility nor blame. Selectable agency, knowledge, control, consequence return, payability and reselectability may be candidate evidence, while exact `O2-A` sufficiency remains open.
+Responsibility must not simply scale with `d-value`; high `d` is neither responsibility nor blame. Selectable agency, knowledge, control, consequence return, payability and reselectability may be candidate evidence toward **Subjecthood Threshold `S6`** (`Philosophy/SRT_Subjecthood_Threshold_Interface.md`), while exact `O2-A` sufficiency remains open (`R3-07-O6`). Under `R3-07`, this accountability review explicitly covers human and institutional deployment of **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`) regardless of AI's own **Subjecthood Threshold `S6`** status.
 
 Heuristic prompts only (the `~` marks do not define arithmetic or a universal verdict rule):
 

@@ -17,7 +17,7 @@ created: 2026-04-06
 > **当前目的**：保留并检验一套历史／候选的 SRT-informed 权利与委托模型，而非从 SRT 第一性原理推出权利或授权合法性。
 > 本文件是2026-04-06会话中形成的核心理论推进的正式回写。
 > 与 `Philosophy/SRT_Social_Economics.md` 为兄弟关系：后者处理市场与经济不平等，本文件处理政治权利与制度授权。
-> **Wave E7 authority guard**：Generative Ontology Spine 和当前 `d / Psi_f / T_dir` owners 向下游约束本 bridge。High `d` 不赋予合法性、授权、公职、代表权或优越政治 standing；`d`-tendency 只是候选统计构造。
+> **Wave E7 + `R4-C1` authority guard**：Generative Ontology Spine 和当前 `_SRT_D_VALUE_CANONICAL.md`（区分规范强承载 `d = ||∂U/∂S||`、四维广义关切、`D_stake` 与容量代理 `D_eff`）、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 及 `R3-07` 规范边界向下游约束本 bridge。High `d` 不赋予合法性、授权、公职、代表权或优越政治 standing；`d`-tendency 只是候选统计构造；严守 `PT10 E`（生成趋优 ≠ 伦理正当）与 `O2-M = HOLD`。健康代理委托须同步接受 **`Q23` 委托四要件（有范围 / 有期限 / 能撤销 / 能审查）**、**权力六接口**及 **`Core_Law/SRT_Collective_Selection.md §6.1` SEA 五门外包链审计**。
 > **Canonical Collective Selection Layer (2026-04-24; RC-A sync 2026-08-18)**：本文把投票读为 d 倾向后验验证、把制度读为三层（公检法 / 监督 / 授权）结构——这些在结构层回链 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）。投票本身不证明 collective agency；T-COLL-4 仅可作为 downstream consequence-sensitive revision / agency audit input，`A_{\mathcal{P}}`、`M(t)` 返回与非脚本化等信号不得反向定义 Selection 或追加为 T-COLL-1 的硬条件。制度是集体 ISP 的**器官**不是主体。本文件保留权利与授权的规范性 P2/P3/P4 论述，但集体 ISP standing 与三类退化判据不在本文件重复定义。
 
 ---

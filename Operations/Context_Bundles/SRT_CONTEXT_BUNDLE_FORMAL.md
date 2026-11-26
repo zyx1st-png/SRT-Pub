@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: e56ebd8bf
-source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
+source_commit: 6121da0a3
+source_branch: canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26
 source_dirty: false
-inputs_digest: c7c92cdfa26c5d8c
+inputs_digest: faba05c8db27e0a8
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,8 +27,8 @@ inputs_digest: c7c92cdfa26c5d8c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `e56ebd8bf` |
-| 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
+| 来源 commit | `6121da0a3` |
+| 来源分支 | `canon/r4-c1-common-mechanisms-and-philosophy-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
@@ -166,24 +166,24 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 > |---|---|---|---|---|
 > | `NODE-SELECTION-ONTOLOGY` | active_complete | untested | — | — |
 > | `NODE-L0-L1-L2` | active_complete | untested | — | — |
-> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile (q symbol deferred pending R5 residual tests; colliding 2026-07-23/24 draft glyphs remain embargoed; bare scalar o retired in R4-A) |
 > | `NODE-PSI-F` | active_complete | untested | — | — |
 > | `NODE-T-DIR` | active_complete | untested | — | — |
-> | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
+> | `NODE-GHOST-OPERATOR` | active_complete | untested | — | — |
 > | `NODE-SUBJECTHOOD` | active_complete | untested | — | — |
 > | `NODE-NEURAL-DECODABILITY` | active_complete | observed (bounded) | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
 > | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
 > | `NODE-PHYSICS-MEASUREMENT` | active_complete | observed (bounded) | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` | partially_active | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` | engineered_not_active | untested | — | — |
+> | `NODE-SOCIAL-L2` | active_complete | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` | active_complete | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` | active_complete | untested | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | — |
 
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：10 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
-- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 5 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：14 个达到 `active_complete`——仅表示既有登记增量在当前运行结构中已进入 owner、有检索路径、默认路径读得到，**不表示 `R3` 新裁决已完成 `R4` canonical 回写**。
+- **Axis B（行为）**：**3 个**达到 `robustly_observed (bounded)`（满足 `effectively_assimilated`），2 个为 `observed`（尚缺重复有界运行），其余 9 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 

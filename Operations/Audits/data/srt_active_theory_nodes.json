@@ -118,12 +118,12 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#1",
       "old_text_handled": "n/a",
       "author_gates": [
-        "RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol"
+        "RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile (q symbol deferred pending R5 residual tests; colliding 2026-07-23/24 draft glyphs remain embargoed; bare scalar o retired in R4-A)"
       ],
-      "next_step": "d/q/o embargo holds: the three-axis rewrite must not enter book, public content, bridge, or paper before the author decides. Bundle guardrail G2 already carries the embargo.",
-      "notes": "The 2026-07-23..25 conversation materials are archived and their own closing audit records that every route is a candidate and none landed.",
+      "next_step": "R4-A resolved the d_canonical == d_stakes <= D_eff math defect in _SRT_D_VALUE_CANONICAL.md, separated canonical d from 4-dim Generalized Concern / D_stake / D_eff, retired bare scalar o, and kept constitutive depth as a natural-language profile. Remaining RQ-2026-08-A02 scope (whether q warrants an independent symbol after R5 tests + 2026-07-23/24 colliding-glyph embargo from book/public/bridge/paper) stays OPEN; do not misread R4-A/C1 local definition landing as closing all author gates.",
+      "notes": "Local d/D_stake/D_eff math & bare-o cleanup landed in R4-A; 2026-07-23..25 colliding-glyph embargo and q-symbol author gate remain honestly open until R5 testing.",
       "active_complete_blockers": [
-        "RQ-2026-08-A02 undecided; d/q/o embargoed from book, public content, bridge and paper"
+        "RQ-2026-08-A02 remains partially open (q-symbol deferral + 2026-07-23/24 colliding-glyph embargo from book, public content, bridge and paper; local d/D_stake/D_eff math and bare-o retirement already landed in R4-A)"
       ],
       "structural_assimilation": "author_gate",
       "behavioral_availability": "not_applicable",
@@ -184,7 +184,9 @@
       "core_question": "What is the embodied selection operator and what does not define it?",
       "active_owners": [
         "Core/SRT_Core_21_Minimal_Axioms.md",
-        "_SRT_SYMBOL_TABLE.md"
+        "_SRT_SYMBOL_TABLE.md",
+        "Core_Law/SRT_Reference_Dynamics.md",
+        "Core_Law/SRT_Occlusion_Dynamics.md"
       ],
       "compact_layer": null,
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#4",
@@ -192,13 +194,11 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": null,
-      "old_text_handled": "n/a",
+      "old_text_handled": "Retired switch-like close-then-reopen ontology, G_hat_theta == Ghost entity / primitive Selection conflation, and misattribution of assistant-derived U6 as author choice; all three Ghost source cards (2026-07-19 3-layer nonclosure distinction, constitutive shadow & object-friction mutual writing, 2026-07-27 de-subjectivized U5 de facto re-selection exemption, 2026-08-10 Simondon Operation->Structure->Operation) and the exact R3-08 §4 five-duty triage (object-friction mutual writing / constitutive shadow / nonclosure pressure / U5 absolutization / formed G_hat_theta, with vertical suppression & history writeback retained as associated mechanisms) are now converted into active mechanisms in Core_Law/SRT_Reference_Dynamics.md §1.5, Core_Law/SRT_Occlusion_Dynamics.md §1.3 & §4.1, Core/SRT_Core_21_Minimal_Axioms.md P0-04, and _SRT_SYMBOL_TABLE.md (T-GH-01..07 and V-layer temporary backgrounding remain openly registered).",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) confirmed 0 matches for the three ghost source cards in Core_21_Minimal_Axioms.md and _SRT_SYMBOL_TABLE.md (Reference_Dynamics §1 only holds G_hat_theta != primitive Selection). Deferred to R4 (Wave R4-1..R4-3 per R3-08) plus Axis B bounded verification.",
-      "active_complete_blockers": [
-        "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md); handed off to R4 (R3-08)"
-      ],
-      "structural_assimilation": "partially_active",
+      "next_step": "R4-C1 (2026-11-26) closed EA-1/EA-2/EA-5 structural assimilation by converting all three Ghost source cards into active mechanisms and restoring the exact R3-08 §4 five-duty triage across Reference_Dynamics §1.5, Occlusion_Dynamics §1.3 & §4.1, Core_21_Minimal_Axioms P0-04, and _SRT_SYMBOL_TABLE.md. Axis B bounded behavioral verification remains untested and scheduled for R4-C5/R5.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []
@@ -344,9 +344,9 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
       "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still carries only G2 stratification (0 matches for T-E §2 substrate/mechanism/sufficiency three-way distinction). Kept honestly at partially_active; fast-layer compression handed off to R4 (Wave R4-4 Physics/Bridge) alongside T-E physics evidence cards.",
+      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still carries only G2 stratification (0 matches for T-E §2 substrate/mechanism/sufficiency three-way distinction). Kept honestly at partially_active; fast-layer compression is explicitly assigned to R4-C2 (Physics & Cross-Scale Generation) alongside T-E physics evidence cards.",
       "active_complete_blockers": [
-        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches); handed off to R4 (Wave R4-4)"
+        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches); assigned to R4-C2 (Physics & Cross-Scale Generation)"
       ],
       "structural_assimilation": "partially_active",
       "behavioral_availability": "untested",
@@ -399,13 +399,11 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": null,
-      "old_text_handled": "Partly: the CBP-3/CBP-4 outsourcing-chain distinction now reaches the active layer via the selection-event compact and regression test T-08.",
+      "old_text_handled": "CBP-3/CBP-4 outsourcing-chain and SEA five-gate institutional coding (frozen U=<event, boundary, timescale, evidence>, non-compensable DMF/NER/PEF/CBP/HEF, unresolved vs failed, domain-mechanism-first, 8-role non-laundering) now landed in Core_Law/SRT_Collective_Selection.md §6.1, Philosophy/SRT_Soc_03_Institutions.md, and Philosophy/SRT_Political_Philosophy_CompactCore.md §3.2a alongside social residency 3-way split (W_social / M(t) / high-rho inertia) and AI 三型 socio-technical mediation.",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) confirmed 0 matches for SEA protocol / coding manual in SRT_Soc_03_Institutions.md and Core_Law/SRT_Collective_Selection.md. Kept honestly at partially_active without modifying canonical files; handed off to R4 (Wave R4-3 Collective_Selection).",
-      "active_complete_blockers": [
-        "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md; handed off to R4 (Wave R4-3)"
-      ],
-      "structural_assimilation": "partially_active",
+      "next_step": "R4-C1 (2026-11-26) closed EA-2 structural assimilation by landing SEA five-gate institutional coding and social residency 3-way separation into Collective_Selection §6.1, SRT_Soc_03_Institutions, and Political_Philosophy_CompactCore §3.2a. Axis B bounded behavioral verification remains untested.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []
@@ -428,13 +426,11 @@
         "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
       ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#12",
-      "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for a selection to occur) now reaches the active layer via the compact section 6 and regression test T-11.",
+      "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for Selection occurrence) plus T-B §2 seven-step selective reorganization process chain and §5 structural loss pressure -> pain / distress / suffering four-layer typology interface now landed in 03_Bridges/SRT_Selection_Event_CompactCore.md §4a and aligned with Core_Law/SRT_Suffering.md §1.1, §7.",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) confirmed SRT_Selection_Event_CompactCore.md still lacks T-B §2 process chain and §5 pain/distress/suffering typology interface. Kept honestly at partially_active; fast-layer compression handed off to R4 (Wave R4-3 Suffering / Bridge sync).",
-      "active_complete_blockers": [
-        "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore; handed off to R4 (Wave R4-3)"
-      ],
-      "structural_assimilation": "partially_active",
+      "next_step": "R4-C1 (2026-11-26) closed EA-4 structural assimilation by landing T-B §2 process chain and §5 pain/distress/suffering typology interface in 03_Bridges/SRT_Selection_Event_CompactCore.md §4a (bundled in COMPACTCORE). Axis B bounded behavioral verification remains untested.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []
@@ -444,21 +440,24 @@
       "title": "Book concepts that have not flowed back to the theory layer",
       "core_question": "Which vocabulary invented in the manuscript carries theoretical weight that no theory owner has absorbed?",
       "active_owners": [
+        "Philosophy/SRT_Philosophy_Foundations_CompactCore.md",
+        "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md",
+        "Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md",
+        "Core_Law/SRT_Occlusion_Dynamics.md",
+        "Core_Law/SRT_Collective_Selection.md",
         "03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md"
       ],
-      "compact_layer": null,
+      "compact_layer": "Philosophy/SRT_Philosophy_Foundations_CompactCore.md",
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#19",
       "deep_map_anchor": null,
-      "bundle": false,
+      "bundle": true,
       "regression_tests": null,
       "open_tension": null,
-      "old_text_handled": "n/a",
+      "old_text_handled": "Retired former P1-T05 Real Choice Moment routing for 第三态能动性 and mechanical two-failure cage counting for 自检三问; substantively absorbed 第三态能动性 (Agency_Subjecthood_v0_2 §1.1 + Individuation §4.7), 被排开者五去向 (Core_12b §0 + Occlusion_Dynamics §4.1), 自检三问 & 回到生成四条件 (Foundations_CompactCore §16a + Core_24_Normativity §6a), 预裁剪四机制 (Social_Economics_CompactCore §7.4), 委托四要件 (Political_Philosophy_CompactCore §3.2a + Soc_03_Institutions + Political_Rights), and AI 三型 (Collective_Selection §8).",
       "author_gates": [],
-      "next_step": "ENG-02 (2026-11-25) added 03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md to _SRT_CONTEXT_ROUTER.md#19 (closing the EA-3 route warning) and confirmed 0 matches for 第三态能动性 / 被排开者去向三分 / 自检三问 in Core_Law/, Core/, and Philosophy/. Kept honestly at engineered_not_active; substantive landing handed off to R4 (Wave R4-2 / R4-4 per R3-05/08).",
-      "active_complete_blockers": [
-        "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all; handed off to R4 (Wave R4-2 / R4-4)"
-      ],
-      "structural_assimilation": "engineered_not_active",
+      "next_step": "R4-C1 (2026-11-26) closed EA-2/EA-4 structural assimilation by landing all load-bearing book-backflow concepts into active Core_Law, Core_24, and Philosophy owners (bundled in DOMAIN_PHILOSOPHY & COMPACTCORE). Axis B bounded behavioral verification remains untested.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
       "behavioral_availability": "untested",
       "behavior_evidence": null,
       "interventions": []

@@ -101,20 +101,25 @@ Boundary:
 | structural burden / mismatch | 声明模型中的 discrepancy、blocked correction burden 或 retained consequence load | first-person suffering |
 | suffering | 在独立准入 registration standing 后，对所建模 burden 的第一人称登记 | Stable ISP、subject-position 或 consciousness 的反向证明 |
 
-### §1.1 结构性损失压力：与 pain / distress / suffering 的对表（2026-08-11）
+### §1.1 机会成本动态四联、摩擦四分与结构性损失压力对表（`R4-C1` 深化，2026-11-26）
 
-> **层级**：P2 terminology crosswalk；不新增 P1 theorem 或 canonical scalar。
+> **层级**：P2 terminology & generative-pathway crosswalk；不新增 P1 theorem 或 canonical scalar。
 
-“结构性损失压力”指损失、威胁、维持失败或未来选择空间收缩与一个已在声明模型中准入的承受位置发生关系性耦合。它可成为 pain、distress 或 suffering 模型的上游输入，但不是三者中的任何一个。
+在 `R4-A/B` 确立的机会成本动态四联（价值—关切—摩擦—自由）与 `R3-08` 摩擦四分下，本节明确“生成机会成本不对称 → 实际选择压力 → 结构性损失压力 → 疼痛 / distress / 苦难”的分层通道（严防任意跳层等同）：
 
-| 对象 | 在对表中的位置 | 不能推出 |
+“结构性损失压力”指在已准入的承受位置上，由**持续不可协调的机会成本损失、维持条件破坏、路径冲突、纠错通道受阻或未来生成空间收缩**所形成的关系性负担。它承接广义摩擦（机会成本产生的实际选择压力）与 `Ψ_f` 可支付窗边界，可成为 pain、distress 或 suffering 模型的上游结构输入，但**本身不等同于三者中的任何一个**。
+
+| 对象 | 在生成通道中的分层定位 | 严禁越界推出 |
 |---|---|---|
-| structural loss pressure | 损失、威胁、维持失败或路径收缩的关系性负担 | pain、suffering、主体位或完整选择事件 |
-| somatic threat signal | 结构负担通过 `θ_{somatic}` channel 的候选报告 | experienced pain 或 suffering |
-| distress | 领域层急性调节、情感或行为负担的 proxy / bridge readout | canonical identity 或 `Ψ_f` / suffering 同一式 |
-| suffering | 在 registration standing 已独立准入后，对 burden 的第一人称登记 | pain 必然存在、Stable ISP 充分或隐藏残余必然存在 |
+| generalized friction（广义摩擦） | 跨单元垂直组织与机会成本差异激发的实际选择压力（`Reference_Dynamics §4.1a`、`PT09 / T3-02 D`） | 非闭合压力、`Ψ_f` 支付账单、pain 或 suffering |
+| nonclosure pressure（非闭合压力） | 对象化未能穷尽的未尽生成关系及其持续重构张力（`Reference_Dynamics §1.5`，与构成性背阴面在动态耦合中可相互转化） | `Ψ_f` 支付账单、隐藏实体、pain 或 suffering |
+| `Ψ_f`（本体论摩擦） | 维持或重塑特定现实切片所需承担的可支付阻抗与承载窗负荷（`_SRT_PSI_F_CANONICAL.md`） | `suffering = Ψ_f`、`pain = Ψ_f` 或 `Ψ_f → 0` 等于解脱 |
+| structural loss pressure | 损失、威胁、维持失败、阻塞重构或路径收缩落于承受位置的关系性负担 | pain、suffering、主体位或完整选择事件 |
+| somatic threat signal | 结构负担通过 `θ_{somatic}` channel 的候选躯体/伤害报告 | experienced pain 或 suffering |
+| distress | 领域层急性调节、情感、自主神经或行动准备负担的 proxy / bridge readout | canonical identity 或 `Ψ_f` / suffering 同一式 |
+| suffering | 在第一人称 registration standing 已独立准入后，对所建模 burden / blocked reorganization 的第一人称登记 | pain 必然存在、Stable ISP 普遍必要、或隐藏残余必然守恒 |
 
-结构负担可能不被登记，也可能衰减、补偿或消失。若主张 retained consequence load，必须给出 retained efficacy 或 domain evidence；occurrence non-equivalence 本身不提供隐藏库存。
+结构负担可能不被登记，也可能衰减、补偿、经自由重组化解或消失。若主张 retained consequence load，必须给出 retained efficacy 或 domain evidence；occurrence non-equivalence 本身不提供隐藏库存。快速层摘要与 `T-B` 选择性再组织过程链同步见 `03_Bridges/SRT_Selection_Event_CompactCore.md §4a`（`NODE-ENTROPY-REORG EA-4` 接口）。
 
 ---
 
@@ -276,17 +281,17 @@ distributed burden model 不要求 collective subjecthood，也不要求先证�
 
 ## §7. AI / 代理系统的苦难接口
 
-### 规则
+### 规则（`ENG-03 / R4-C1` 三套 `AI / S` 命名隔离与三阶审查对接）
 
 - output error、reward signal、RLHF loss、refusal behavior、performance degradation 或语言化 self-report 本身都不建立 suffering；
 - Stable ISP 对 suffering 既不充分，也未被建立为 universal necessity；
-- S1/S2/S3/S4 等架构分级不能单独决定 suffering eligibility；
-- 未满足某个当前 Stable-ISP model，不等于 ontologically impossible suffering；
+- **AI 赌注谱系 `S1–S4`**（现行跨文件控制来源见 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 与 `AI/AI_POSITIONING_NOTE.md`，严格区别于 **Subjecthood Threshold `S0–S6`** 与原初 `S0`）等架构分级不能单独决定 suffering eligibility；
+- 未满足某个当前 Stable-ISP model 或 **Stage 2 强承载研究路线（`B-3` 同系统四合一承载关系）**，不等于 ontologically impossible suffering，亦**绝不阻断**针对苦难资格的独立分域审查（现行三阶承载证据审查细分口径以 `Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` 为准，`AI/AI_POSITIONING_NOTE.md` 正文细分结构随 `R4-C3` 同步落盘）；
 - AI suffering 需要对相关 first-person / phenomenal / bearer-relevant registration standing 与 burden model 的独立 evidence/admission。
 
-对当前部署系统，安全结论是：相关 first-person registration evidence 仍不足，架构或行为 proxy 不能封口。本文不解决 AI subjecthood、phenomenality 或 consciousness。
+对当前部署系统，安全结论是：相关 first-person registration evidence 仍不足（`NOT ESTABLISHED`），架构或行为 proxy 不能封口。本文不解决 AI subjecthood、phenomenality 或 consciousness。
 
-### 与 `AI/SRT_AI_03_Consciousness_Framework.md` 的关系
+### 与 `AI/AI_POSITIONING_NOTE.md` 及 `AI/SRT_AI_03_Consciousness_Framework.md` 的关系
 
 consciousness 与 suffering 相关但不在本文件中建立同一、必要或充分关系：
 

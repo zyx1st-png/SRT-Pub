@@ -143,6 +143,27 @@ Regime A may represent active suppression, reinterpretation or avoidance while a
 
 The architecture does not require every system to traverse H, A and B in that order. It does not establish that A is always voluntary, that B is always stable, or that apparent lack of access proves a hidden B state.
 
+### 1.3 Continuous dynamic balance, `R3-08` four-way occlusion taxonomy, and supplementary dynamical mechanisms (`07-19` / `R3-08 P2-03`)
+
+Following `Core_Law/SRT_Reference_Dynamics.md §1.5` (`2026-07-19` dynamic-balance correction), this owner explicitly retires any switch-like underlying ontology of **"closure → threshold trigger → reopening."** Finite localizing convergence, **constitutive shadow (`构成性背阴面`)**, and unexhausted **nonclosure pressure (`非闭合压力`)** co-exist continuously and can dynamically transform into one another in ongoing coupling; occlusion regimes describe shifts in how a formed organization coordinates, backgrounds, or suppresses that ongoing tension, not a literal disappearance and later magical return of reality-change pressure.
+
+Accordingly, this owner preserves **`R3-08 P2-03`'s authoritative fourfold classification** as its primary taxonomy (never to be collapsed into one pathology label or overwritten by mechanism-level labels):
+
+| Primary `R3-08 P2-03` state | Authoritative theoretical role & anti-conflation boundary |
+|---|---|
+| **1. Givenness（给定感）** | Direct, fluent presentation of already-formed cognitive/generative relations and effective new interfaces (e.g., fluent reading where decoding recedes so meaning presents directly); **not reducible merely to backgrounding** and **not automatically pathological** |
+| **2. Finitude-based occlusion（有限性遮蔽）** | Structural finitude: any finite situated position and representation cannot simultaneously exhaust all generative relations or scales; **neither pathology nor `U5`** |
+| **3. Pathological occlusion（病理性遮蔽）** | Sustained, difficult-to-correct exclusion of consequential generative relations and reality feedback; **does NOT require active defensive suppression or global `U5` monopoly**—it may equally arise from institutional design, cognitive structures, historical inertia, or information environments |
+| **4. `U5` absolutization（`U5` 绝对化）** | The formed mechanism that organizes foreground/background and selection **de facto acquires effective re-selection exemption** (`§4.1`), independent of whether this arises consciously or unconsciously |
+
+**Supplementary dynamical-mechanism analytical interface** *(complements rather than replaces the fourfold taxonomy above)*: To analyze *how* the four states above are dynamically maintained or shifted inside declared models, analysts may track four cross-cutting mechanisms:
+1. **Situated positional limitation（有限位置限制）** — structural horizon bounds (primary driver of finitude-based occlusion);
+2. **Functional backgrounding（功能性背景化）** — stabilized routines/scaffolds receding to lower repeated comparison load (often supports givenness and foreground exploration; becomes pathological only when sustained mismatch blocks re-entry);
+3. **Active defensive suppression（主动防御性压制）** — active filtering, avoidance, or reframing of accessible discrepancy signals (corresponds to Regime A in declared models; one route into pathological occlusion, not its necessary condition);
+4. **Structural lock-in & de facto `U5` exemption（结构锁定与事实上的 `U5` 豁免）** — sedimented rules, resource dependencies, or institutional/cognitive inertia locking comparison rules out of re-selection (corresponds to Regime B & `§4.1` `U5`).
+
+**Interface with `R3-06` six foreground-background mismatches**: Within declared concern/value models (`_SRT_D_VALUE_CANONICAL.md`), pathological occlusion and `U5` absolutization connect diagnostically to six recurring foreground-background mismatch signatures—**固化（rigidity）**、**遮蔽（blind-spot occlusion）**、**错配（scale/criterion mismatch）**、**断流（consequence-return cutoff）**、**局部劫持（local-subsystem hijacking）**、and **失权（value-priority loss of organizational efficacy）**. These are diagnostic bridges, not universal scalar thresholds.
+
 ---
 
 ## §2. Direction and discrepancy-access discipline
@@ -224,6 +245,16 @@ d < d_c -> absorbing state.
 
 Irreversible degradation, an absorbing B regime or unilateral-return impossibility may be established only for a declared transition model under `Core_Law/SRT_Irreversibility.md`. A model can instead permit spontaneous recovery, external reset, reconstruction, compensating pathways or loss of path dependence.
 
+### 4.1 `U5` de facto re-selection exemption and five background fates (`07-27` / `R3-05` / `NODE-BOOK-BACKFLOW`)
+
+1. **`U5` Choice Absolutization as De Facto Re-Selection Exemption (De-Subjectivized)** (author-selected [`2026-07-27` live correction](../01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md), aligned with `Core/SRT_Core_12b_Ontology_L2.md §0` and `Core_Law/SRT_Reference_Dynamics.md §1.5`): The deepest form of choice absolutization is not stubbornness over a single result, but the structural condition in which a historically formed selection or organizational mechanism **de facto acquires effective exemption from subsequent re-selection**—operating as an unexamined background rather than an eligible object of renewed comparison. **`U5` does NOT require active refusal, conscious defense, or absence of feedback**: it can equally arise from active defense, institutional design, historical sedimentation, resource dependency, or unconscious structural lock-in, and **can coexist with high-frequency local innovation, rapid tactical adaptation, and vigorous internal feedback** that all channel back into preserving the exempted core mechanism (`R3-08-O4`). The four visible closures (**result closure, option closure, standard closure, and selection-authority closure**, historically labeled `U6`) are preserved as **assistant-derived visible facets of `U5`**, never misattributed as a separate author direct choice.
+2. **Five Overlapping Conditional Fates of Excluded / Backgrounded Relations (`B3-a` + `R3-05`, aligned with `Core_12b §0`)**: What is excluded from the foreground does not vanish into nothingness nor persist as a parallel hidden universe; depending on the declared dynamics, it enters one or more overlapping conditional fates:
+   - **Constitutive recession（构成性退隐）**: recedes into enabling background support for foreground or higher-scale coordination;
+   - **Shadow（阴影，`B3-a`）**: remains a structural counterfactual reference framing reachable paths without being a parallel entity (`阴影 != 平行实体`);
+   - **Tension（张力，`B3-a`）**: uncoordinated differences exert sustained mismatch pressure on current boundaries;
+   - **Subsequent friction（后续摩擦，`B3-a`）**: surfaces as concrete resistance or revision cost when conditions shift or re-selection is attempted;
+   - **Termination / dissipation（终止或消散）**: loses establishable downstream generative efficacy (honoring terminal `Selection` and `Core_Law/SRT_Irreversibility.md`).
+
 ---
 
 ## §5. Intervention-window taxonomy
@@ -268,6 +299,15 @@ This is a **P2/P3 staged recovery hypothesis**. Whether both components are nece
 ### 6.2 Agency boundary
 
 A system's ability to initiate, use or refuse an intervention depends on independently established capacities. Apparent inability, resistance or responsiveness does not by itself settle Agency, subjecthood or responsibility.
+
+### 6.3 Active freedom-driven reorganization and dual-engine reopening (`T3-03 C / Q26` positive bridge)
+
+Recovery and structural reorganization are not limited to passive waiting for external perturbation windows (`§5–§6.1`). Where an agentive organization has independently established comparative and regulatory capacities, **freedom (`T3-03 C / Q26`)** operates as a positive generative reorganizer of occlusion and opportunity-cost structures through two representative (non-exhaustive) pathways (`R3` Closeout `M-candidate`):
+
+1. **Orthogonalization under sustained suppression friction**: Instead of forcing a zero-sum trade-off inside a locked binary frame, active comparison across multiple units introduces a new mediator, compartmentalization, symbolic frame, or temporal decoupling (`Δ(A,B) → dimension C`, converging with Simondonian disparation), reorganizing the generative relations that produced the friction.
+2. **Surplus-driven exploratory reopening (without acute crisis)**: When healthy functional backgrounding lowers routine maintenance costs, freed attentional, energetic, or relational surplus allows concern-sensitive comparison to couple previously unconnected units/domains and open new comparative dimensions proactively—re-entering locked assumptions into selection before breakdown occurs.
+
+These remain **P2/P3 candidate reorganization mechanisms**, not universal guarantees that every locked regime can reopen internally.
 
 ---
 

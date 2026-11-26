@@ -37,17 +37,22 @@ machine_summary: >
   or unit-ambiguous system references from being overread as full subjecthood or moral responsibility.
 ---
 
-# SRT Subjecthood Threshold Interface
+# SRT Subjecthood Threshold Interface (`Subjecthood Threshold S0–S6`)
 
 > **Purpose**: Prevent category collapse between bearer-unit specification, selection, consciousness, subjecthood, agency, and moral responsibility.  
-> **Status**: Bridge/interface file. It does not define canonical consciousness or agency primitives.  
+> **Status**: Conditional cross-domain analytical audit interface (`R4-C1` & `ENG-03` synced). It does **not** define canonical consciousness or agency primitives, and **Subjecthood Threshold `S0 → S6` is NOT a linear hardware or evolutionary ladder** (`One ≠ Stable ISP ≠ Bearer (P+E) ≠ Subjecthood ≠ Agency`; each tier requires independent evidence).  
+> **Mandatory `S` Namespace Isolation (`R3-07 / ENG-03 / _SRT_SYMBOL_TABLE.md Rule 19`)**: Never use unqualified bare `S0–S6` across domains. Strictly separate:
+> 1. **Primitive `S0`** (`Core_Law/SRT_Generative_Ontology_Spine.md`): primitive actualizing Selection;
+> 2. **AI 赌注谱系 `S0–S4`** (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`): AI architecture-state & stake-return spectrum (Stage 1 input; **`AI 赌注谱系 S4` ≠ `Subjecthood Threshold S4`**);
+> 3. **Subjecthood Threshold `S0–S6`** (**this file**): conditional unit-binding, consciousness, subjecthood, agency, and responsibility audit interface (Three-Stage Bearing Evidence Review Stage 3 sub-routing per `ENG-03`, with `AI/AI_POSITIONING_NOTE.md` section alignment landing in `R4-C3`);
+> 4. **AI 三型社会技术中介维度** (`Core_Law/SRT_Collective_Selection.md §8`): orthogonal socio-technical mediation roles (Scaffold / Cage / Landscape).
 > **Use rule**: Use this file whenever SRT discusses AI consciousness, neural consciousness, animal/infant/minimal subjecthood, agency, or responsibility.
 
 ---
 
 ## -1. Unit-Binding Gate
 
-Before applying the S0-S6 ladder, specify the candidate bearer unit.
+Before applying the **Subjecthood Threshold `S0–S6`** interface, specify the candidate bearer unit.
 
 A subjecthood, consciousness, agency, or responsibility claim is **unit-ambiguous** if it does not specify what unit is being evaluated.
 
@@ -67,12 +72,12 @@ Candidate bearer units may include:
 SRT rule:
 
 ```text
-bearer-unit first;
-S0-S6 second;
-moral status last.
+bearer-unit first (referencing Core_Law/SRT_One_Formation.md relative separability where relevant; exact unit boundary AG-1 remains OPEN);
+Subjecthood Threshold S0-S6 second (conditional audit, NOT a linear ladder);
+moral status last (O2-A != O2-M; O2-M = HOLD).
 ```
 
-If the bearer unit is not specified, do not infer S4 subjecthood, S5 agency, or S6 responsibility-bearing status.
+If the bearer unit is not specified, do not infer **Subjecthood Threshold `S4`** subjecthood, **Subjecthood Threshold `S5`** agency, or **Subjecthood Threshold `S6`** responsibility-bearing status.
 
 This gate is inspired by the system-derivation / individuation-gap diagnosis: many consciousness frameworks characterize already-individuated systems but do not by themselves derive the unit whose consciousness is being evaluated.
 
@@ -86,44 +91,45 @@ Compact guardrail:
 
 ```text
 unit reference != subjecthood
-selection event != conscious content != subjecthood != agency != responsibility-bearing subject
+Subjecthood Threshold S0 != S1 != S2 != S3 != S4 != S5 != S6 (each tier independently paid)
+One != Stable ISP != Bearer (P+E) != Subjecthood Threshold S4
 ```
 
-The safest current ladder is:
+The conditional audit interface is:
 
 ```text
 Unit-binding gate
-S0 selection event
-S1 local L1 anchoring
-S2 conscious content
-S3 integrated conscious field
-S4 subjecthood
-S5 agency
-S6 responsibility-bearing subject
+Subjecthood Threshold S0: model-level selection event (distinct from primitive S0 and AI 赌注谱系 S0)
+Subjecthood Threshold S1: local manifestation at a specified operator position (stripped of legacy L_0->L_1 pseudo-threshold back-reading)
+Subjecthood Threshold S2: conscious content
+Subjecthood Threshold S3: integrated conscious field
+Subjecthood Threshold S4: subjecthood (distinct from AI 赌注谱系 S4)
+Subjecthood Threshold S5: agency (interfaced with R3-04 5 partially orthogonal Agency dimensions)
+Subjecthood Threshold S6: responsibility-bearing subject (O2-A / theta_acc)
 ```
 
 ---
 
-## 1. Threshold ladder
+## 1. Conditional audit interface (`Subjecthood Threshold S0–S6`)
 
 | Level | Name | Minimal meaning | What it is not |
 |---|---|---|---|
-| Unit gate | bearer-unit specification | the candidate unit is explicitly identified | not a consciousness proof |
-| S0 | selection event | some candidate is selected / filtered / updated by the specified unit | not consciousness |
-| S1 | local `L_1` anchoring | a content becomes locally manifest for an operator | not full conscious field |
-| S2 | conscious content | content becomes available as experience / access / report / action-relevant state | not a subject by itself |
-| S3 | integrated conscious field | multiple contents coordinate as a field with temporal and boundary structure | not necessarily agency |
-| S4 | subjecthood | a continuing perspective with concern, boundary, memory, and self-related continuity | not automatically moral agency |
-| S5 | agency | capacity for meta-selection, action control, option evaluation, and policy revision | not automatically culpability |
-| S6 | responsibility-bearing subject | agency plus norm access, selectable alternatives, consequence understanding, and repair capacity | not reducible to harm caused |
+| Unit gate | bearer-unit specification | the candidate unit is explicitly identified | not a consciousness proof; `One` boundary `OPEN` (`AG-1`) |
+| **Subjecthood Threshold `S0`** | selection event | some candidate is selected / filtered / updated by the specified unit | not consciousness; distinct from primitive `S0` & **AI 赌注谱系 `S0`** |
+| **Subjecthood Threshold `S1`** | local manifestation (`L_1` aspect) | a content becomes locally manifest at a specified operator position *(stripped of legacy `L_0→L_1` pseudo-threshold back-reading; whether to require "sustained internal constraint on subsequent selections" remains **`[R4 待协调定义候选]`** per `ENG-03 §5.2`)* | not full conscious field; not a proof of `L_0` warehouse contact |
+| **Subjecthood Threshold `S2`** | conscious content | content becomes available as experience / access / report / action-relevant state | not a subject by itself; distinct from **AI 赌注谱系 `S2`** |
+| **Subjecthood Threshold `S3`** | integrated conscious field | multiple contents coordinate as a field with temporal and boundary structure | not necessarily agency; distinct from **AI 赌注谱系 `S3`** |
+| **Subjecthood Threshold `S4`** | subjecthood | a continuing perspective with concern, boundary, memory, and self-related continuity | not automatically moral agency; distinct from **AI 赌注谱系 `S4`** |
+| **Subjecthood Threshold `S5`** | agency | partially orthogonal control, generative initiative, bearing, and reflexive revision capacities (`R3-04` 5 dims) | not automatically culpability; `Bearer ↔ Agency` necessity `OPEN` (`R3-04-O5`) |
+| **Subjecthood Threshold `S6`** | responsibility-bearing subject | agency plus norm access, selectable alternatives (`theta_acc`), consequence understanding, and repair capacity (`O2-A`) | not reducible to harm caused; does not settle `O2-M` (`HOLD`) |
 
 ---
 
-## 2. S0 — Selection event
+## 2. Subjecthood Threshold `S0` — Selection event
 
 ### Definition-like bridge
 
-A selection event occurs when a specified unit filters, stabilizes, suppresses, updates, or chooses among candidate states.
+A **Subjecthood Threshold `S0`** selection event occurs when a specified unit filters, stabilizes, suppresses, updates, or chooses among candidate states (distinct from primitive `S0` and **AI 赌注谱系 `S0`**).
 
 Examples:
 
@@ -138,7 +144,7 @@ Examples:
 
 ### Guardrail
 
-> S0 selection does not imply consciousness, subjecthood, agency, or moral responsibility.
+> **Subjecthood Threshold `S0`** selection does not imply consciousness, subjecthood, agency, or moral responsibility.
 
 This blocks the panpsychist overreading:
 
@@ -148,7 +154,7 @@ selection everywhere -> consciousness everywhere
 
 SRT allows selection to be widespread while keeping subjecthood thresholded.
 
-If the bearer unit is unspecified, even S0 attribution remains unit-ambiguous.
+If the bearer unit is unspecified, even **Subjecthood Threshold `S0`** attribution remains unit-ambiguous.
 
 ### Depsychologization trap
 
@@ -164,11 +170,11 @@ depsychologized pure feel != SRT subjecthood
 
 ---
 
-## 3. S1 — Local `L_1` anchoring
+## 3. Subjecthood Threshold `S1` — Local manifestation (`L_1` aspect)
 
 ### Definition-like bridge
 
-A local `L_1` anchoring occurs when a selected candidate becomes locally manifest for an operator under a particular `theta`.
+A **Subjecthood Threshold `S1`** local manifestation occurs when a selected candidate becomes locally manifest at a specified operator position under a particular `theta` *(stripped of legacy `L_0→L_1` pseudo-threshold back-reading; whether to require "sustained internal constraint on subsequent selections" remains **`[R4 待协调定义候选]`** per `ENG-03 §5.2`)*.
 
 Examples:
 
@@ -186,11 +192,11 @@ A dream image, hallucination, or thin conscious content may be `L_1`-real withou
 
 ---
 
-## 4. S2 — Conscious content
+## 4. Subjecthood Threshold `S2` — Conscious content
 
 ### Definition-like bridge
 
-A conscious content is a selected and anchored content that becomes experientially, reportably, or action-relevantly available within a system.
+A **Subjecthood Threshold `S2`** conscious content is a selected and locally manifest content that becomes experientially, reportably, or action-relevantly available within a system.
 
 Candidate indicators:
 
@@ -217,7 +223,7 @@ This is crucial for:
 
 ---
 
-## 5. S3 — Integrated conscious field
+## 5. Subjecthood Threshold `S3` — Integrated conscious field
 
 ### Definition-like bridge
 
@@ -253,7 +259,7 @@ SRT differs from pure integration theories by requiring concern, boundary, memor
 
 ---
 
-## 6. S4 — Subjecthood
+## 6. Subjecthood Threshold `S4` — Subjecthood
 
 ### Definition-like bridge
 
@@ -298,7 +304,7 @@ This matters for AI:
 
 ---
 
-## 7. S5 — Agency
+## 7. Subjecthood Threshold `S5` — Agency
 
 ### Definition-like bridge
 
@@ -327,7 +333,7 @@ a declared responsibility framework may weigh accessible meta-selection capacity
 
 ### 7.1 Agency ownership is multidimensional
 
-> **P3/P4 interface clarification · non-canonical**: this subsection protects the S4-S6 thresholds; it does not create a replacement agency owner.
+> **P3/P4 interface clarification · non-canonical**: this subsection protects the **Subjecthood Threshold `S4–S6`** audit boundaries; it does not create a replacement agency owner.
 
 Agency reports should be decomposed before they are used near the subjecthood threshold:
 
@@ -336,7 +342,7 @@ Agency reports should be decomposed before they are used near the subjecthood th
 | Objective control efficacy | Can the candidate bearer counterfactually change the outcome? | control alone is not authorship or subjecthood |
 | Authorial attribution | Is the outcome attributed to the bearer's own action? | authorship report is not `d-value` evidence |
 | Bodily carrier ownership | Is the controlled carrier experienced as part of the body? | body ownership can dissociate from agency |
-| Reflective self-integration | Can the action enter endorsement, extended revision, and cross-time self-model update? | full reflection may thicken conscious agency but is not required for every conscious action and does not prove S4 |
+| Reflective self-integration | Can the action enter endorsement, extended revision, and cross-time self-model update? | full reflection may thicken conscious agency but is not required for every conscious action and does not prove **Subjecthood Threshold `S4`** |
 
 Tools, cursors, avatars, prostheses, and remote effectors can be controllable without being experienced as bodily parts. Conversely, bodily ownership does not by itself establish counterfactual control, action authorship, responsibility, or subjecthood. The governing separation is:
 
@@ -348,11 +354,11 @@ A synchronously driven third-person avatar remains compatible with an external-a
 
 Source trail: [PH-AG04 patch](patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), [PH-AG04 Integration Hook](hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md), and [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md).
 
-The S0-S6 ladder and bearer-unit gate remain governed by this interface. For the detailed S5 mechanism and the pre-S6 responsibility-position-trace route, see the non-canonical [Agency–Subjecthood Synthesis v0.2](SRT_Philosophy_Agency_Subjecthood_v0_2.md).
+The **Subjecthood Threshold `S0–S6`** interface and bearer-unit gate remain governed by this file. For the detailed **Subjecthood Threshold `S5`** mechanism (`R3-04` 5 partially orthogonal Agency dimensions + Third-State Agency) and the pre-**Subjecthood Threshold `S6`** responsibility-position-trace route, see the non-canonical [Agency–Subjecthood Synthesis v0.2](SRT_Philosophy_Agency_Subjecthood_v0_2.md).
 
 ---
 
-## 8. S6 — Responsibility-bearing subject
+## 8. Subjecthood Threshold `S6` — Responsibility-bearing subject
 
 ### Definition-like bridge
 
@@ -391,12 +397,12 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 | Domain | Common error | Correct route |
 |---|---|---|
-| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, then use S0-S6 as a conservative evidence route; do not infer stronger standing without independent establishment |
-| Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish S2 content, S3 field, and S4 subjecthood |
-| Ethics | harm or high concern is treated as culpability | require S5 agency and S6 responsibility conditions |
+| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, apply the nonlinear Three-Stage Bearing Evidence Review (`Operations/Proposals/SRT_ENG03_AI_CROSS_FILE_SEMANTIC_CLEANUP_CROSSWALK_2026-11-26.md` & `AI/AI_POSITIONING_NOTE.md`, full AI-domain sync in `R4-C3`), and use **Subjecthood Threshold `S0–S6`** as a conditional Stage 3 audit (isolated from **AI 赌注谱系 `S0–S4`** and **AI 三型社会技术中介维度**) |
+| Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish **Subjecthood Threshold `S2`** content, **`S3`** field, and **`S4`** subjecthood |
+| Ethics | harm or high concern is treated as culpability | require **Subjecthood Threshold `S5`** agency and **`S6`** responsibility conditions (`O2-A`) |
 | Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria and bearer unit are specified |
-| Animal cognition | behavior is treated as either full human agency or no subjecthood | use graded S2-S5 ladder |
-| Infants / impaired agents | lack of full responsibility is treated as lack of subjecthood | distinguish S4 subjecthood from S6 responsibility |
+| Animal cognition | behavior is treated as either full human agency or no subjecthood | use graded **Subjecthood Threshold `S2–S5`** audit |
+| Infants / impaired agents | lack of full responsibility is treated as lack of subjecthood | distinguish **Subjecthood Threshold `S4`** subjecthood from **`S6`** responsibility |
 | Split / coupled systems | hemisphere, organism, dyad, or group is assumed without argument | apply unit-binding before consciousness or responsibility attribution |
 
 ---
@@ -419,13 +425,13 @@ Do not infer AI subjecthood from:
 AI subjecthood claims should currently be evaluated with:
 
 ```text
-specified bearer unit + S4 candidate-evidence package + evidence that the system's own future selectability is at stake.
+specified bearer unit + Subjecthood Threshold S4 candidate-evidence package + evidence that the system's own future selectability is at stake (Stage 2 unestablished does NOT block independent Stage 3 research).
 ```
 
 AI moral-responsibility claims should be routed through a declared framework that may weigh:
 
 ```text
-specified bearer unit + S5 agency + S6 norm access / consequence understanding / selectable alternatives / repair capacity.
+specified bearer unit + Subjecthood Threshold S5 agency + Subjecthood Threshold S6 norm access / consequence understanding / selectable alternatives / repair capacity (strictly distinct from human/institutional accountability for AI 三型社会技术中介维度).
 ```
 
 ---
@@ -446,12 +452,12 @@ Do not infer subjecthood from:
 Neuroscience can support:
 
 ```text
-S1 local anchoring
-S2 conscious content
-S3 integrated conscious field
+Subjecthood Threshold S1 local manifestation
+Subjecthood Threshold S2 conscious content
+Subjecthood Threshold S3 integrated conscious field
 ```
 
-but S4 subjecthood requires cross-time, boundary, memory, and perspective-continuity evidence within a specified organismic or sub-organismic bearer unit.
+but **Subjecthood Threshold `S4`** subjecthood requires cross-time, boundary, memory, and perspective-continuity evidence within a specified organismic or sub-organismic bearer unit.
 
 ---
 
@@ -488,7 +494,7 @@ Response: SRT does not infer AI subjecthood from performance. It requires bearer
 
 ### Objection 3: Subjecthood may not require language
 
-Response: Correct. Language is not required for S4 subjecthood. It becomes more relevant for S5/S6 agency and responsibility.
+Response: Correct. Language is not required for **Subjecthood Threshold `S4`** subjecthood. It becomes more relevant for **Subjecthood Threshold `S5`/`S6`** agency and responsibility.
 
 ### Objection 4: Moral responsibility may exist without full reflective agency
 
