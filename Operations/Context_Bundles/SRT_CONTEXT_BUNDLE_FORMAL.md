@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: e796552b0
-source_branch: canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26
+source_commit: e56ebd8bf
+source_branch: canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26
 source_dirty: false
-inputs_digest: d8ecb08de96b8a18
+inputs_digest: c7c92cdfa26c5d8c
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,8 +27,8 @@ inputs_digest: d8ecb08de96b8a18
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `e796552b0` |
-| 来源分支 | `canon/r4-b1-core-formalism-and-constitutive-theorems-2026-11-26` |
+| 来源 commit | `e56ebd8bf` |
+| 来源分支 | `canon/r4-b2-history-and-dynamics-reconstruction-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
@@ -735,48 +735,27 @@ S_A(\omega)\equiv \sum_{j=1}^{k}\left|\widehat{A_j}(\omega)\right|^2
 
 ---
 
-### Eq-Rhythm-4a: Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡）
+### Eq-Rhythm-4a: Conditional Passband–Duty Landauer Envelope Tradeoff（频谱通带容量—占空比 Landauer 条件包络权衡，`R4-B2` 修正）
 
-**新增（2026-04-14）**：将 Ax-Spec-01 与 T-Scale-Rhythm-4 的联结压成公式锚点。
+**新增（2026-04-14；`R4-B2` 物理精度同步 2026-11-26）**：对齐 `Core/SRT_Core_14_Dynamics_Scaling.md T-Scale-Rhythm-4 / Cor-Scale-Rhythm-4a` 与 `Core/SRT_Core_13b_Operator_Advanced.md Ax-Spec-01`。本式作用于声明频域模型的**无赌注通带容量代理 $B_\theta \equiv \operatorname{Bandwidth}(H_\theta)$**（在附加假设 $B_\theta = c_B \, D_{\text{eff}}$ 下与 `D_eff` 对应，**严分于**规范风险敏感梯度范数 `d = ||∂U/∂S||`）。
 
-令
+**模型前件与三量分离**：在声明了系统边界、热浴温度 $T$、逻辑不可逆擦除映射 $\dot{N}_{\text{erase}}^{\text{on}} = f_{\text{erase}}(B_\theta)$（$f_{\text{erase}}'(B_\theta) \ge 0$）、热负荷储存–导出记账（实际待导出等效熵负荷率 $\dot{S}_{\text{load}}^{\text{on}} \ge \dot{S}_{\text{bath},\min}^{\text{on}} = k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}$，对应热功率 $\dot{Q}_{\text{load}}^{\text{on}} \ge k_B T \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}$；严格区分于系统内部不可逆熵产生率 $\dot{S}_{\text{int}}^{\text{on}}$）以及 **off 阶段集中导出、on 阶段导出可忽略（$J_S^{\text{on}} \approx 0$）** 的物理模型中，三层量满足：
 \[
-B_\theta \equiv \operatorname{Bandwidth}(H_\theta)=c_B\,d,\qquad c_B>0
+\boxed{\delta \;\le\; \delta_{\max}^{\text{entropy}} \;\equiv\; \frac{J_S^{\max}}{\dot{S}_{\text{load}}^{\text{on}} + J_S^{\max}} \;\le\; U(B_\theta) \;\equiv\;
+\frac{J_S^{\max}}{k_B \ln 2 \cdot f_{\text{erase}}(B_\theta) + J_S^{\max}}
+\;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \cdot f_{\text{erase}}(B_\theta) + P_{\text{diss}}^{\max}}}
 \]
-并把 Rhythm-4 中“高 \(d\) 导致更高 \(\dot I_{created}\)”写成单调函数：
-\[
-\dot{I}_{created}^{on}=f_I(B_\theta),\qquad f_I'(B_\theta)\ge 0
-\]
-则由
-\[
-\dot{S}_{int}^{on}\ge k_B T\ln 2 \cdot \dot{I}_{created}^{on}
-\]
-可得弱 tradeoff：
-\[
-\boxed{\delta_{max}^{entropy}(B_\theta)\le
-\frac{J_S^{max}}{k_B T\ln 2 \cdot f_I(B_\theta)+J_S^{max}}}
-\]
-故
-\[
-\boxed{B_\theta\uparrow \Rightarrow \delta_{max}^{entropy}\downarrow}
-\]
+在**固定导出容量 $J_S^{\max}$** 与**非减擦除映射 $f_{\text{erase}}$** 下，直接非增的是 **Landauer 条件包络上界函数 $U(B_\theta)$**（而非直接保证实际耗散上界 $\delta_{\max}^{\text{entropy}}$ 或实际占空比 $\delta$ 单调下降）。
 
-若进一步满足信息密度下界
+若进一步声明擦除密度下界 $\dot{N}_{\text{erase}}^{\text{on}} \ge \rho_{\text{erase}} \, B_\theta$（$\rho_{\text{erase}} > 0$，单位 $\text{bits}/(\text{Hz}\cdot\text{s})$），则得条件乘积包络上界：
 \[
-\dot{I}_{created}^{on}\ge \rho_I\,B_\theta,\qquad \rho_I>0
+\boxed{\delta \, B_\theta \;\le\; U(B_\theta)\,B_\theta \;\le\; \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}}} \;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \, \rho_{\text{erase}}}}
 \]
-则可强化为乘积上界：
-\[
-\boxed{\delta\,B_\theta \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I}}
-\]
-以及
-\[
-\boxed{\delta\,d \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I\,c_B}}
-\]
+在额外声明 $B_\theta = c_B D_{\text{eff}}$（$c_B > 0$）时，等价写为 $\delta \, D_{\text{eff}} \le \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}} \, c_B}$。
 
-* **Implication**: 通带越宽，选择可处理的频谱越丰富，但在熵耗散约束下可持续 on-time 越短；谱丰富度与时间占有率之间存在硬对冲。
-* **Boundary**: 无条件硬结论只有单调 tradeoff。乘积上界依赖 \(\rho_I\) 下界，应读作条件强化版，而非无条件定理。
-* **Cross-ref**: Ax-Spec-01（`Core/SRT_Core_13b_Operator_Advanced.md`）；T-Scale-Rhythm-4（`Dynamics Scaling`）；Ax-F-13（选择-信息创造等价）。
+* **Implication**: 在满足热负荷记账、off 阶段集中导出与逻辑擦除桥接前提的物理模型中，更宽有效通带 $B_\theta$ 收紧 Landauer 条件包络上界 $U(B_\theta)$。
+* **Boundary**: ① 严格区分热浴熵流、系统内部熵产生与待导出热负荷；② 严格区分实际 $\delta$、实际耗散上界 $\delta_{\max}^{\text{entropy}}$ 与 Landauer 包络 $U(B_\theta)$，仅 $U(B_\theta)$ 的非增性由固定 $J_S^{\max}$ 与非减 $f_{\text{erase}}$ 直接推出；③ 仅约束 $B_\theta / D_{\text{eff}}$，不直接约束规范 `d = ||∂U/∂S||`。
+* **Cross-ref**: `Core/SRT_Core_13b_Operator_Advanced.md Ax-Spec-01`；`T-Scale-Rhythm-4 / Cor-Scale-Rhythm-4a`（`Core/SRT_Core_14_Dynamics_Scaling.md`）；`_SRT_SYMBOL_TABLE.md`。
 
 ---
 

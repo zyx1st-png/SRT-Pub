@@ -42,12 +42,14 @@ $$L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$$
 
 *(注：此时频对偶框架为高阶操作化映射，用于刻画"潜在可能性 $\to$ 当前现实"的降维坍缩结构。$L_0^{abs}$ 在本体论上超越常规函数空间，不强制要求满足经典信号处理的 Dirichlet 绝对可积条件。)*
 
-**d-value Alignment（d 值的频域映射）**：算子的关切带宽（$d$ 值）在此处精确等价于传递函数的物理通带宽度（Passband Bandwidth）：
+**Passband Capacity Alignment（通带容量代理校准，`R4-B2` 与 `Core_14 / Core_22 / _SRT_SYMBOL_TABLE.md` 同步）**：
+- **旧表述撤回**：旧版将传递函数通带宽度直接等同于规范 `d`（`Bandwidth(H_θ) ∝ d`）并由高/低 `d` 直接推出现实体验的丰富或贫乏，与 `R4-A / R4-B`（`_SRT_D_VALUE_CANONICAL.md §1, §5b, §11`、`Core_14 Cor-Scale-Rhythm-4a`、`Core_22 Eq-Rhythm-4a`）冲突，现正式退出。
+- **规范口径**：定义有效通带宽度代理 $B_\theta \equiv \operatorname{Bandwidth}(H_\theta)$（单位：Hz）。在声明的频域容量模型中，可将其与无赌注有效谱维数容量代理 `D_eff` 联立为**条件性容量模型假设**：
 
-$$\text{Bandwidth}(H_\theta) \propto d$$
+$$B_\theta \equiv \operatorname{Bandwidth}(H_\theta) = c_B \, D_{\text{eff}} \quad (c_B > 0,\text{ 声明模型常数，不直接等同规范 } d = \|\partial\mathcal{U}/\partial\mathcal{S}\|)$$
 
-* **高 $d$ 值** $\leftrightarrow$ **宽带传递函数**：允许大量 $L_0$ 的高频/低频成分通过，合成的 $L_1$ 现实高度丰富、多维且充满动态细节。
-* **低 $d$ 值** $\leftrightarrow$ **窄带传递函数**：强力滤除大部分模式，仅保留与基础生存相关的少数频率，合成的 $L_1$ 现实贫乏、机械且高度重复。
+* **宽带传递函数（高 $B_\theta$）**：在所声明信号通道模型中保留更宽频段成分，反映更高的频域通道分辨率/带宽容量；**不自动等同**于高风险敏感强度 `d`、更健康的广义关切四维配置或更高意识等级。
+* **窄带传递函数（低 $B_\theta$）**：在所声明信号通道模型中滤除更多频段以降低局部处理负载；特定任务下的选择性窄带滤波可构成有效聚焦，不自动等于病理或“机械贫乏”。
 
 **Mechanism & Implication（机制与三层推论）**：
 

@@ -3,29 +3,32 @@ id: SRT-CORE-14-COMPACT-CORE
 type: dynamics
 tags: [Core, Dynamics, Scaling, Compact Core, Cross-Scale]
 status: active
-version: v2
+version: v3
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-CORE-22]
-updated: 2026-08-12
+updated: 2026-11-26
 ---
 
 # SRT Core 14 — Dynamics & Scaling Compact Core
 
-> **定位**：本文件是 `Core/SRT_Core_14_Dynamics_Scaling.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 跨尺度动力学的最短核心骨架。  
+> **定位**：本文件是 `Core/SRT_Core_14_Dynamics_Scaling.md` 的紧凑主干版（已随 `R4-B2` 同步）。  
+> **用途**：用于快速把握 SRT 跨尺度五机制、容量代理与动力学接口的最短核心骨架。  
 > **关系**：不替代原文；原文保留长篇机制推演、接口批次、案例扩展与 annex 沉积。
 
-## 1. 核心问题
+## 1. 核心问题与跨尺度五机制分工（`R3-08 / R4-B2`）
 
-`Core 14` 解决的是 SRT 中最关键的统一问题：
+`Core 14` 解决的是 SRT 中的跨尺度接口问题：
 
-> **不同尺度上的选择动力学，在什么条件下可以保持结构相容？**
+> **不同尺度上的选择动力学与组织结构，通过哪些不同机制彼此相容与转承？**
 
-它的核心主张不是“万物都一样”，而是：
-
-> **不同尺度上的现实形成，服从同一类选择—摩擦—边界代价语法。**
+严格区分五项独立跨尺度机制，**严禁将所有跨尺度接口泛称 `Proxy`**：
+1. **装配（Assembly）**：依赖重组形成新整体有效组织（不单独等于 `One`）；
+2. **归一化（Normalization）**：条件性调整相对作用与资源分配（非所有装配必要条件）；
+3. **有效作用接口（Effective Action Interface）**：已形成整体在声明映射下参与粗粒化比较（`P3-Scale-01 / T-Scale-02C1`）；
+4. **`Proxy`（中介转承）**：满足对应条件时中介转承生成关系；
+5. **`Delegation`（委托）**：具主体与规范条件时的选择域委托与责任转承（须核查成员 $C_i$ 非外包与可再选择性，`O2-M = HOLD`）。
 
 ---
 
@@ -54,39 +57,26 @@ updated: 2026-08-12
 
 ---
 
-## 3. d-value 的跨尺度角色
+## 3. 跨尺度容量代理（`D_eff` / $B_{\text{cap}}$）与规范 `d` 严格分离（`R4-A / R4-B2`）
 
-### 3.1 Ontological Bandwidth
+### 3.1 Capacity Bandwidth Proxy vs Canonical `d`
+几何/信息论容量代理（$B_{\text{cap}}$ / $D_{\text{eff}}$）**不需要 `Bearer (P+E)` 强承载准入**，但具体跨尺度比较仍须显式建立相容的度量、状态空间与尺度映射：
 \[
-d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ against } \Psi_f)
+B_{\text{cap}}(\hat{G}_\theta) \equiv \text{declared channel/manifold capacity bandwidth proxy under } \Psi_f
 \]
 
-这里的 d 不作为最终规范锚点，而作为：
-> **d-value 在跨尺度动力学中的功能性展开。**
+规范 **$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$**（`_SRT_D_VALUE_CANONICAL.md`）则严格限定于已独立建立 `Bearer (P+E)` 不可逆风险承载的模型，刻画**风险敏感强度**，**严分于**无赌注容量 `D_eff`、赌注谱参与率 `D_stake` 与广义关切四维（范围/深度/强度/方向），退出旧式单标量 `d` 最大化叙事。
 
-它与规范定义
-\[
-d \equiv \left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\|
-\]
-保持一致：
-- 风险梯度越大，算子需要的带宽越高
-- 可承受风险梯度的范围越大，说明带宽越高
+### 3.2 三尺度分工
 
-因此：
-\[
-d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\| : \hat{G}_\theta \text{ remains stable}\right\}
-\]
-
-### 3.2 三尺度投影
-
-- **量子域**：相干窗口 / 海森堡切口范围
-- **生物认知域**：关切范围 / 注意力与自由能最小化带宽
-- **宇宙域**：时空共识与拓扑紧致度
+- **量子 / 物理域**：相干窗口与可分辨态空间有效维数（`D_eff` 容量代理；规范 `d` 为 `NOT ADMITTED / NOT APPLICABLE`）
+- **生物 / 认知域**：感官/通道容量 `D_eff` 与在已建立 `Bearer (P+E)` 模型下准入的规范 `d`、`D_stake` 及广义关切四维
+- **宇宙 / 几何域**：宏观相干与拓扑自由度代理（物理投影类比；规范 `d` 为 `NOT ADMITTED / NOT APPLICABLE`）
 
 最重要的边界是：
-> d 是跨尺度数学标尺，不等于跨尺度意识赋值。
+> 跨尺度可比的是具名容量/结构代理，不是把规范风险梯度 `d` 或意识赋值外推至量子与宇宙域。
 
-在声明的生物/认知模型中，d、`\Psi_f` 与 formed `\hat G` 可作意识相关关切的候选证据维度；它们的合取不是普遍必要、充分或充要条件。
+在声明的生物/认知模型中，`d`、`\Psi_f` 与 formed `\hat G` 均不单独或合取构成意识的普遍必要或充分条件。
 
 ---
 
@@ -214,8 +204,8 @@ SRT 的压缩立场是：
 
 `Core 14` 的主干可以压缩成五句话：
 
-1. **选择动力学可在具名尺度映射下检验结构相容性；这是 P3 候选，不是普遍同构定理。**
-2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
+1. **跨尺度关系区分装配、归一化、有效作用接口、`Proxy` 与 `Delegation` 五类机制；结构相容（`P3-Scale-01`）是可失败的 P3 候选，不是普遍同构定理。**
+2. **几何/信息容量代理（`D_eff` / $B_{\text{cap}}$）不需要 `Bearer (P+E)` 强承载准入（但跨尺度比较仍须建立相容度量与尺度映射），严格区分于须经 `Bearer (P+E)` 准入的规范风险敏感强度 `d`、赌注谱 `D_stake` 与广义关切四维。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
 5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识的精确充分性保持 OPEN，额外维度仅可作候选证据。**

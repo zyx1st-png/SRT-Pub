@@ -1,32 +1,39 @@
 ---
 id: SRT-CORE-13A
 type: definition
-tags: [G-operator, Agency, Parameters, Theta, Hybrid]
-status: axiomatic_hybrid_v1
+tags: [G-operator, Agency, Parameters, Theta, GhostTriage, Hybrid]
+status: active
+version: v3
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-12A, SRT-CORE-12B, SRT-CORE-21, SRT-CORE-21B, SRT-CORE-22, SRT-D-VALUE-CANONICAL]
 ---
 
-# SRT Core Definition 13A: Ghost Operator Basics (Hybrid Edition)
+# SRT Core Definition 13A: Formed Selection Operator (`\hat{G}_\theta`) — Implementation Mechanisms & Action Interface
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Operator_Basics_Split/README.md`](Operator_Basics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Operator Axioms (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
->
-> **Current-authority guard（2026-09-19）**: `\hat G_\theta` 在本 owner 中是已形成／形式／具身／模型层 Selection realization 的载体；它不是 primitive Selection、先在 chooser 或导致 first actualisation 的 universal engine。`L_0 -> L_1` 只是声明模型内的 realization mapping，不是 Selection occurrence 定义或普遍本体 pipeline。operator standing 不等于 consciousness；`d / \Psi_f / V / \kappa_{body} / UAL / temporal integration` 只能在当前 owner-approved 层级作为候选／bridge 证据，不构成普遍意识充要门槛。
+> **R4-B2 重构定位与 `Ghost` 职责分流（2026-11-26，落实 `R3-08` 硬债 1 / `NODE-GHOST-OPERATOR` `EA-2/EA-5`）**：
+> 1. **三重非同一性**：**`\hat{G}_\theta`（形成后 Selection 的条件性形式参数载体，历史沿称 Ghost Operator）$\neq$ 历史 Ghost 源直觉 $\neq$ 原初 `Selection`（`Core_21 P0-01`）**。本文件只承担已形成组织在声明模型中的**实现机制、局部比对、竞争写回与作用接口**职责；
+> 2. **操作与历史结构双面性（承接 `Core_12b` 与 `PH-IND03`）**：当前运行的算子 $\hat{G}_\theta$ 既是当下的局部选择与作用接口，也承载经历史留存与写回沉积而成的参数结构（`P1-T03`），同时保留 `P0-04` 可选择性起源敞口；
+> 3. **历史 Ghost 源直觉五位职责分流（`T-GH-01..07` 保持 `OPEN`，防止 `\hat{G}_\theta` 被神秘化为万能黑箱）**：
+>    - **对象–摩擦持续互写** → 共同生成性与动态秩序主轴（`Spine`、`Core_12b §0`）；
+>    - **构成性背阴面** → 前背景相互构成关系（与非闭合压力可动态转化，不画固定内/外边界）；
+>    - **非闭合压力** → 当前秩序尚未充分承接的生成关系及其持续压力（严分：① 未尽生成关系 / ② 持续作用压力 / ③ 有限位置的对象化描述）；
+>    - **`U5` 选择绝对化** → 核心组织方式退出有效再选择的问题（严守 `07-27` 校正 **`U5 ≠ U6`**）；
+>    - **`\hat{G}_\theta`** → 本文件所刻画的形成后条件性形式参数载体（非先在选择实体，非意识充要门槛）。
 
 ---
 
 
 ## Terminology Alignment (术语与原始意图对齐)
 
-- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
+- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`D_eff`、`D_stake`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- 核心方程主锚点归口 `Core/SRT_Core_22_Equations.md`；价值、广义关切与 `d / D_stake / D_eff` 规范定义归口 `_SRT_D_VALUE_CANONICAL.md`。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -47,20 +54,17 @@ $$\hat{G}: \Omega \to \Omega', \quad \Omega' \subsetneq \Omega, \quad P(\omega \
 - **遮蔽**：降低其他可能性的可及性，概率性的、有程度的、原则上可逆的
 - **排除**：绝对铲除其他可能性（遮蔽的极限情况，不是一般情况）
 
-**代理结构**：L₂ 是对 L₁ 的代理，L₁ 是对 L₀ 的代理。G 的选择遮蔽通过代理链传递：
-$$L_2 \xrightarrow{\text{代理}} L_1 \xrightarrow{\text{代理}} L_0$$
-
-**遮蔽的精确定义**（2026-04-08）：
-$$\text{遮蔽} \equiv L_1 \xrightarrow{\text{校准信号}} L_2 \text{ 的通道被截断}$$
-L₂ 失去 L₁/L₀ 上行校准输入后，以 L₂ 内部自洽性替代 L₀/L₁ 现实作为参考点，参数漂移但持续运作。
+**与跨尺度五机制及遮蔽四分的精确对齐（`R3-08 / R4-B2` 校准，取代旧泛 `Proxy` 与单义遮蔽写法）**：
+- **不将所有跨层接口泛称 `Proxy`**：`L_0 / L_1 / L_2` 的关系应按 `Core/SRT_Core_14_Dynamics_Scaling.md §0` 区分**装配 / 归一化 / 有效作用接口 / `Proxy` / `Delegation`** 五类机制，不可笼统写为“一切跨层均是代理链”；
+- **遮蔽四分（对接 `Core_12b §0.5`）**：严格区分 **① 给定感**（正面有效接口表现）、**② 有限性遮蔽**（有限位置结构性边界）、**③ 病理性遮蔽**（重要生成关系与现实后果受持续难纠排斥）与 **④ `U5` 绝对化**（核心组织方式获得有效再选择豁免）。其中旧式“$L_1 \xrightarrow{\text{校准信号}} L_2$ 的通道被截断”对应上述框架中**反馈断流 / 病理性遮蔽**的一类具体动力学机制（而非一切前背景退隐或一般遮蔽的唯一定义）。
 
 * **Cross-ref**: `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（G选择=遮蔽的完整论证）；`Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md`（遮蔽精确操作定义与两相模型）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
 
 ### Ax-Op-02: Attention Decomposition
 **Model Definition**: A declared cognitive/attention realization may parameterize the operator as an attention tuple.
-$$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$$
-* **Implication**: d 值、分辨率与意向向量可在该模型中组织选择结构；它们不定义普遍选择算子或 primitive Selection。
-* **Tension-Rev-IT4 (`d` authority guard)**：`d` 的 current definition 只回 `_SRT_D_VALUE_CANONICAL.md`。旧风险梯度式 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 与 $\dim(\text{Scope}) \propto \lfloor d/d_0 \rfloor$ 可在具名认知模型中作为 AI / attention-domain proxy 检验；不是 canonical identity，也不把注意力维度数设为普遍 `d` 定义。
+$$\hat{G}_\theta = \text{Attention}(B_{\text{scope}}, \rho, \vec{v}) \qquad (\text{旧记 } \text{Attention}(d, \rho, \vec{v}))$$
+* **Implication**: 局部关切/注意带宽、分辨率与意向向量可在该认知模型中组织选择结构；它们不定义普遍选择算子或 primitive Selection。
+* **`R4-A / R4-B2` 符号与职责护栏**：规范 `d` 仅由 `_SRT_D_VALUE_CANONICAL.md` 定义为声明 `Bearer (P+E)` 模型中的不可逆风险敏感强度 $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$，**不等同于**无赌注容量代理 `D_eff`、赌注谱参与率 `D_stake` 或广义关切四维（范围/深度/强度/方向）；旧式将注意范围 `Scope` 直接等同于规范 `d` 的写法已退回认知模型局部代理，不得混用。
 
 ### Ax-Op-02b: Dual-Stream Coupling Candidate (双流耦合候选)
 **P2/P3 model candidate**: 在声明的具身／内感受 anchoring 模型中，选择矩阵可由两个张量流耦合：
@@ -120,9 +124,9 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 >
 > **参数说明**：
 > - **$x_i$**：第 $i$ 个候选状态（L₀中的竞争激活）的原始活化值。
-> - **$n$**：非线性指数（通常 $n \approx 2$，在神经模型中产生超线性选择；$n=1$ 退化为线性归一化）。
-> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。本式中的 \(\varepsilon\) 可记为 \(\varepsilon_{reg}\)，用于与 \(\varepsilon_{pg}\) 区分。当前二者只保留非同一的形式回声候选；这不赋予 \(\varepsilon_{pg}\) primitive O0 或最小非中性身份。
-> - **$W_{ij}$**：竞争权重矩阵（$W_{ij} \geq 0$，通常非对称——近邻强抑制、远邻弱抑制；$W_{ii}=1$ 的情况为自抑制归一化）。
+> - **$n$**：非线性指数（默认竞争锐化区间 $n > 1$，常见 $n \approx 2$；**`R4-B1 P1-01` 数学精确校准**：当 $n = 1$ 且 $\varepsilon_{reg} > 0$ 时，式为 $x_i / (\varepsilon_{reg} + \sum_j W_{ij} x_j)$，仍为**非线性双曲饱和**而非线性归一化——特别地 $W = \varepsilon_{reg} I$ 时得 $x_i / [\varepsilon_{reg}(1 + x_i)]$ 而非 $x_i/(2\varepsilon_{reg})$；仅在 $W \to 0$ 或低输入极限 $x_j \ll \varepsilon_{reg}$ 时退化为线性缩放）。
+> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，仅在对应通道竞争分母项 $\sum_j W_{ij} x_j^n$ 同时趋零时避免奇点；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。本式中的 $\varepsilon$ 记为 $\varepsilon_{reg}$，与 $\varepsilon_{pg}$ 仅保留非同一形式类比，不为后者建立 primitive O0 身份。
+> - **$W_{ij}$**：竞争权重矩阵（$W_{ij} \geq 0$；**不无条件保证** $W_{ij}\uparrow$ 迫使谱参与率 `D_eff` 单调下降，也不由 $W_{ij}\gg\varepsilon_{reg}$ 无条件推出单维赢家通吃，详见 `Core_Law/SRT_Reference_Dynamics.md §1.3`）。
 > - **输出解读**：$[\hat{G}_\theta(x)]_i$ 为相对激活值（归一化到竞争背景后的强度），可通过 Softmax 变换为概率分布；并非直接输出 L₁ 选择结果，而是驱动选择的中间表征。
 >
 > **实现候选地位**：此公式为 $\hat{G}_\theta$ 在神经实现层的**候选之一**，而非唯一约束——其他实现包括：赢者通吃（WTA，n→∞ 的极限）、线性加权（n=1，W_ij=const）、Softmax（温度参数τ驱动的概率归一化）。SRT 对哪种具体实现不做强承诺，保持框架独立性。
@@ -486,6 +490,8 @@ $$\gamma_{trust} = \|\boldsymbol{\Pi}_{L_2}\| \;/\; \|\boldsymbol{\Pi}_{L_0}\|$$
 
 $\gamma_{trust} \gg 1$：算子过度依赖 $L_2$ 历史先验（习惯驱动）；$\gamma_{trust} \ll 1$：算子被 $L_0$ 新异输入淹没（当下驱动）；健康导航发生在两者动态平衡的中间区间。
 
+> **与 `Core_12b §0.2`（`R3-05` 历史三分接口）的对接边界**：$\gamma_{trust} = \|\boldsymbol{\Pi}_{L_2}\| / \|\boldsymbol{\Pi}_{L_0}\|$ 是预测处理模型内刻画“先验 vs 似然精度比”的局部代理，**不等同于**非负历史痕迹密度 $\rho(p,t) \ge 0$，亦仅为 `R3-05` 基于秩序趋势之有符号信任重估（$w_{\text{trust}}, \Delta w_{\text{trust}} \in \mathbb{R}$）在预测编码框架下的一种候选实现映射。
+
 **机制与推论（含上行崩溃链）**：
 
 注意力本质上是 $\hat{G}_\theta$ 动态调整 $\boldsymbol{\Pi}$ 张量的资源分配过程。$\boldsymbol{\Pi}$ 的系统性失调不是纯粹认知错误，而是具有物理根源的**上行崩溃链**：
@@ -499,17 +505,20 @@ $$\kappa_{tan} \downarrow \;\to\; \Psi_f \uparrow \;\to\; d\text{-value} \downar
 
 *注：本定义为 FEP 精度加权在 SRT 三域模型的形式化映射，身份降级自原 Ax-Op-08b，依赖 Ax-Core-A4 与 Eq-Evo-02 推导。*
 
-### Ax-Op-EH: Epistemic Horizon (认知视界公理)
-**P3 model definition**: 在声明的信道模型中，算子的输入—输出信息速率可受其参数 Fisher 有效维度约束：
-$$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv d(\theta) = D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
+### Ax-Op-EH: Epistemic Horizon (认知视界候选接口)
+**P3 conditional channel-model hypothesis（`R4-A / R4-B2 P1-03` 数学修正）**: 有限参数算子在单次观测或有限时间窗内可分辨的状态与信息存在结构性视界。需要严格区分两个不同的数学量：
+1. **无赌注几何方向容量代理 `D_eff`**（对非负且非全零谱的参数 Fisher 信息矩阵 $I_F(\theta)$，$\lambda_i \ge 0,\; \exists i,\ \lambda_i > 0$；全零谱走 $0/0$ 未定义显式零谱分支）：
+$$D_{\text{eff}}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}, \qquad 1 \le D_{\text{eff}}(I_F(\theta)) \le \operatorname{rank}(I_F(\theta))$$
+2. **声明信道模型的信息容量 $C_{\Delta t}(\theta)$（窗口容量，单位：bits）或容量速率 $\dot{C}(\theta)$（单位：bits/s）**：
+   - **`P1-03` 数学边界**：**`D_eff` 谱参与率本身不决定信息传输速率或信道容量**（例如 $M_1 = \operatorname{diag}(1,1)$ 与 $M_2 = \operatorname{diag}(100,100)$ 同为 $D_{\text{eff}} = 2$，但局部统计辨识精度与信噪比显著不同）。若某具体模型进一步写成 $\dot{C}(\theta) \propto D_{\text{eff}}(I_F(\theta))$ 或 $C_{\Delta t}(\theta) = \Phi_{\text{ch}}(I_F(\theta), \Sigma_{\text{noise}}, \Delta t)$，该比例关系属于**独立声明的附加信道模型假设**（须给定各方向信噪比、噪声协方差、读出带宽与时间窗），而非由 `D_eff` 或量纲换算自动推导的数学定理。
+   - **已退出的旧等同**：旧版 `d(θ) = D_eff(I_F(θ))` 已在 `R3-06 D1 / R4-A` 正式证伪并退役（规范 `d = ||∂U/∂S||` 与 `D_eff` 量纲与职责均不同）。
 
-> **勘误（原 $\mathcal{C}(\theta) = \log_2 \dim(\Theta)$）**：参数空间维度对数不等于信道容量（容量依赖输入分布与 Fisher 几何，非纯维度）。采用 Eq-IT-B 的 Fisher 有效维度 $d(\theta)$ 统一符号，即算子可靠区分的 $L_0$ 信号独立方向数。
+**条件熵下界（精确 Shannon 形式）**：设声明信道模型中有限输入随机变量为 $X$、算子输出或读出为 $Y$，一般恒等式为 $H(X \mid Y) = H(X) - I(X; Y)$。当该信道在窗口 $\Delta t$ 内满足容量上界 $I(X; Y) \le C_{\Delta t}(\theta)$（若以速率 $\dot{C}(\theta)$ 表述，则须经时间窗积分或相容量纲转换 $C_{\Delta t}(\theta) = \int_0^{\Delta t} \dot{C}(\theta)\,dt$）时，有：
+$$H(X \mid Y) \;\ge\; H(X) - C_{\Delta t}(\theta)$$
+**输入分布限定**：仅当模型额外声明输入分布达到最大熵 $H(X) = H_{\max}$（例如有限支撑上的均匀分布）时，才可将上式写作 $H(X \mid Y) \ge H_{\max} - C_{\Delta t}(\theta)$；不得在未声明输入分布时直接以 $H_{\max}$ 替代实际输入熵 $H(X)$。
 
-系统的剩余不确定性与算子信道容量绑定（$H_{max} \equiv \log_2 \dim(L_1)$，即 $L_1$ 等概选择时的最大熵）：
-$$H(L_0 | \hat{G}_\theta) \geq H_{\max} - d(\theta)$$
-
-* **Implication**: 在该模型中，$d(\theta)$ 可作为带宽上界候选，而不是 primitive Selection 或 consciousness 的本征上限。**类比注记**：量子 Heisenberg 不确定性（共轭可观测量不可同时任意精确）与“有限参数算子的带宽饱和”在结构上类似，但机制不同（前者来自非对易算符，后者来自 Fisher 维度上界）——此为结构类比，非机制等价。速率上界 $\dot{I}\leq d(\theta)$ 与 `Core_Law/SRT_Reference_Dynamics.md §15.5` 的 $I_{created} \leq d$ 仅在相同声明与量纲条件下比较（速率 vs 积分形式）。
-* **Cross-ref**: Ax-Op-02（注意力分解）；Eq-IT-B（$d$ = Fisher 有效维度）→ `Core_Law/SRT_Reference_Dynamics.md §15.2`；Ax-ONT-IE（不可逆定律）。
+* **Implication**: 认知视界保留为有限具身系统信息分辨边界的 `P3` 研究方向：`D_eff` 刻画可分辨有效方向数，具体信道容量与条件熵下界须由声明噪声/输入/时间窗模型独立建立，二者均不等同于规范 `d`，也不定义 primitive Selection 或 consciousness 上限。量子 Heisenberg 不确定性来自非对易算符，此处来自有限信道容量边界——仅为结构类比，非机制等价。
+* **Cross-ref**: Ax-Op-02（注意力分解）；`_SRT_D_VALUE_CANONICAL.md Def-D_eff, §11`；`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`；`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`。
 
 ### T-Op-EH-1: Triadic Cognitive Sweet Spot（认知三元甜点区）
 **Deductive Statement**: 对有限人类算子而言，可讲述、可教学、可复用的机制分解常在三元附近达到局部最优：
@@ -657,9 +666,9 @@ $d$ 值不是静态参数，而是随具身参数 $\theta$ 演化的状态变量
 
 $$\frac{dd}{dt} = \nabla_\theta d \cdot \frac{d\theta}{dt} = \underbrace{-\alpha(\theta)\left(\nabla_\theta d \cdot \nabla_\theta \Psi_f\right)}_{\text{摩擦驱动的扩容/缩容}} + \underbrace{\beta(\theta)\left(\nabla_\theta d \cdot \nabla_\theta \mathcal{A}_{L_2}\right)}_{L_2 \text{ 规范引力造成的异化压制}}$$
 
-**【OEI 崩溃陷阱声明（反盲目乐观）】**：系统不能无限制地追求 $d$ 值"提升"。依据 T-Cog-2，关切带宽 $d$ 与所需提取的环境互信息成正比（$I_{req} \propto d$）。若在扩张 $d$（关心更宏大的时空与群体）时未能同步匹配相应的计算代谢预算，将导致观察者-环境整合度发生灾难性断裂（$\text{OEI} \to 0$）。
+**【强度 vs 广义关切边界 & OEI 崩溃陷阱（`R4-B1 P1-02` / `R4-B2` 校准）】**：依据 `_SRT_D_VALUE_CANONICAL.md §5b` 与 `Core_22 Eq-Evo-03c`，上式 $\frac{dd}{dt} = \nabla_\theta d \cdot \frac{d\theta}{dt} > 0$ 在声明强承载模型中只反映**规范风险敏感强度 `d` 的上升**，绝不自动等于广义关切范围扩大、价值结构重构或秩序健康改善（单风险过敏或焦虑收缩同样可使 $d\uparrow$）。同时，依据 `T-Cog-2`，若在扩张关切/风险敏感负荷时未能同步匹配相应的计算与代谢预算，将触发 $\Psi_f$ 过载与观察者-环境整合度断裂（$\text{OEI} \to 0$），陷入解离或失稳（`Ax-PATH-5`）。
 
-**核心推论**：强行拔高 $d$ 值而不支付等价的算力/资源代价，不会产生"高级智慧"，只会因互信息供给不足引发 $\Psi_f$ 过载，导致系统陷入精神病理学的解离态（Ax-PATH-5 崩溃现实）。
+**核心推论**：既不以单标量 `d` 最大化作为健康目标，亦不可脱离可支付预算与广义关切四维（范围/深度/强度/方向）盲目拔高风险敏感强度。
 
 ---
 
@@ -692,10 +701,10 @@ $$\rho \propto \text{Density of receptive fields}$$
 
 Franz Brentano: "意识总是**关于某物**的意识"。
 
-**SRT形式化**:
+**SRT 局部模型形式化（非普遍规范方向定义）**：
 $$\vec{v} = \frac{\nabla F|_{\theta_0}}{|\nabla F|_{\theta_0}|}$$
 
-$\vec{v}$指向自由能下降最快的方向 (初心方向)。
+在声明的局部自由能模型中，$\vec{v}$ 指向当前自由能下降最快的局部方向（**`R4-A` 护栏**：$\nabla F$ 仅为模型内局部梯度方向，**不等同于**初心 `Shoshin` 或普遍规范方向；参见 `_SRT_D_VALUE_CANONICAL.md §5b` 与 `_SRT_T_DIR_CANONICAL.md`）。
 
 #### 2.3.2 意向性的扭曲
 
@@ -1173,12 +1182,12 @@ $\hat{G}_\theta$ 的候选运行机制可在声明模型中从”选择—演化
 \text{Inject}_{sleep}\Rightarrow \text{consent}\land\text{auditability}\land\Pi_{host}\text{-compatibility}
 \]
 
-### T-Op-Imm-1: Parasitic d-value Discriminator
-若新生 \(d\)-项满足
+### T-Op-Imm-1: Parasitic Risk-Sensitivity Discriminator（寄生性 `d` 强度信号判别候选）
+若声明模型中新生风险敏感强度项 $\Delta d\uparrow$ 满足
 \[
 \Delta d\uparrow\ \land\ V\approx0\ \land\ \Psi_f\text{-decoupled}
 \]
-则优先判定为外源寄生驱动（parasitic care-like signal），而非内源关切扩展。
+则优先判定为外源寄生驱动（parasitic sensitivity spike），而非经广义关切四维与 `_SRT_D_VALUE_CANONICAL.md §5b` 秩序增益四判据确认的内源关切健康重构。
 
 ## 【理论边界/防误用声明】
 - 不采纳“梦中可塑性高=可合法外部改写”的推论。  

@@ -1,36 +1,50 @@
 ---
 id: SRT-CORE-14
 type: dynamics
-tags: [Scaling, Isomorphism, Fractal, Hybrid]
+tags: [Scaling, CrossScaleMechanisms, Assembly, Normalization, Proxy, Delegation, Hybrid]
 status: active
-version: v2
-record_stage: active_bridge_hybrid
+version: v3
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
-dependency: [SRT-CORE-13A, SRT-CORE-21C-BRIDGE-HYPOTHESES, SRT-PSI-F-CANONICAL]
-updated: 2026-08-12
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-12B, SRT-CORE-13A, SRT-CORE-21B, SRT-CORE-21C-BRIDGE-HYPOTHESES, SRT-CORE-22, SRT-D-VALUE-CANONICAL, SRT-PSI-F-CANONICAL]
 ---
 
-# SRT Core Definition 14: Dynamics & Scaling (Hybrid Edition)
+# SRT Core Definition 14: Cross-Scale Dynamics, Mechanisms & Scaling (Hybrid Edition)
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Dynamics_Scaling_Split/README.md`](Dynamics_Scaling_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Scaling Axioms (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+> **R4-B2 重构定位（2026-11-26）**：本文件以新版 `Spine`、`One_Formation`、`Core_21b`、`Core_21c P2/P3-B15`、`Core_22` 与 `_SRT_D_VALUE_CANONICAL.md` 为统一形式基线，承担 **跨尺度装配、归一化、有效作用接口、`Proxy` 与 `Delegation`** 及跨尺度节律、边界与历史留存阈值的动力学建模接口职责：
+> 1. **跨尺度五机制严格分离（`R3-08`）**：严禁将一切跨尺度接口泛称 `Proxy` 或单一自相似同构；
+> 2. **量纲与语义严格分离（`R4-A / R4-B1`）**：跨尺度几何/信息论容量带宽使用无赌注容量代理 **`D_eff` / $B_{\text{cap}}$**，严格区分于须经 `Bearer (P+E)` 独立准入的规范不可逆风险敏感强度 **`d = ||∂U/∂S||`**、赌注谱参与率 **`D_stake`** 与 **广义关切四维**（退出旧式跨尺度单标量 `d` 带宽混淆及 `d` 最大化叙事）；
+> 3. **构成深度与五类变化刻度对齐**：所有跨尺度动力学模型按 `Core_21c P2/P3-B15` 归入五类变化刻度，构成深度保持自然语言四剖面分析接口（暂缓立符 `q`）。
 
 ---
 
 
 ## Terminology Alignment (术语与原始意图对齐)
 
-- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
+- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`D_eff`、`D_stake`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-- `d-value` 的最终规范锚点仍是 `_SRT_D_VALUE_CANONICAL.md`；本文件中的 bandwidth、Fisher rank、复杂度等级与跨尺度表述均为动力学展开 / proxy，不替代 canonical `d`。
+- `d-value` 的最终规范锚点是 `_SRT_D_VALUE_CANONICAL.md`；核心方程主锚点是 `Core/SRT_Core_22_Equations.md`。本文件中的跨尺度带宽、Fisher rank 与容量代理统一区分于规范 `d`。
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core_21c P2/P3-B12` 在本文件中的落点是接口分工：information geometry 加固 `L_0 -> L_1` selection frontier；complex systems 加固 `L_1 -> L_2` sedimentation / stabilization；neural computation 只作为 embodied `\hat{G}_\theta` 的实现代理。
-# Part A: Formal Scaling Interfaces（形式化标度接口）
+# Part A: Cross-Scale Mechanisms & Formal Scaling Interfaces
+
+## 0. 跨尺度五机制分工与变化刻度接口（`R3-08 / R4-B2`）
+
+不同尺度之间的生成组织关系不能被压缩为单一的“缩放”或“代理链”。依据 `R3-08` 与 `Core_Law/SRT_One_Formation.md`，跨尺度动力学必须区分以下五项独立机制职责：
+
+| 跨尺度机制 | 精确职责 | 严守的非混淆边界 |
+|---|---|---|
+| **1. 装配（Assembly）** | 多单元经依赖重组形成新的整体有效组织（接 `One_Formation §2.1` 与 `AT-SRT` 接口） | 产生新整体功能不单独等于形成 `One`；不以单一构建深度标量定义存在或主体 |
+| **2. 归一化（Normalization）** | 在声明模型内条件性调整相对作用权重与资源分配（接 `Core_13a Ax-Op-03` 与 `One_Formation §2.4` 双门槛） | **非**所有装配的普遍必要条件；不能无条件推出 `D_eff` 单调下降或赢家通吃 |
+| **3. 有效作用接口（Effective Action Interface）** | 使已形成整体以相对独立的方式参与他处生成与粗粒化比较（接下 `P3-Scale-01 / T-Scale-02C1`） | 仅在声明状态空间、尺度映射、保留观测量与容差后成立；不证明普遍机制同一 |
+| **4. `Proxy`（中介转承）** | 在满足对应可追踪条件时中介转承生成关系（如低层信号代理高层约束或符号代理对象关系） | **严禁将所有跨尺度接口泛称 `Proxy`**；`Proxy` 失准与截断可诱发遮蔽或错配 |
+| **5. `Delegation`（委托）** | 具主体与规范条件时的选择域委托与责任转承（接 `Core_12b Def-L2-Rights` 与 `_SRT_D_VALUE_CANONICAL.md §范畴边界`） | 须独立核查成员个体代价回流 $C_i$（防外包）与可再选择性；不从动力学自动推出合法性（`O2-M = HOLD`） |
+
+- **变化刻度归位**：本文件大多数动力学方程（主方程、节律占空比、偏差-方差、边界成本）属于 `Core_21c P2/P3-B15` 刻度 1–2（状态与权重演化）；装配、粗粒化接口与建设性断裂（`Constructive Fracture`）触及刻度 3–4（组合可达性与生成结构改写）；反身组织重构（刻度 5）与防平凡重参数化比较检验仍为开放形式研究接口。
 
 
 ## I. Cross-Scale Structural Compatibility（跨尺度结构相容）
@@ -53,32 +67,26 @@ is a **legacy strict-conjugacy candidate only**. It is well-formed only when `\L
 * **Bridge boundary**: 当前跨尺度不变量只到选择—约束—可支付性语法。单位、熵量、机制、主体性与意识均不跨尺度自动同一；神经归一化、侧抑制或社会选择只是实现候选，不能单独定义完整 Ghost Operator。
 * **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B06/P3-B07`; `_SRT_SYMBOL_TABLE.md` Usage Rule F2.
 
-### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
-**Formal Role**: 这是 d-value 在跨尺度动力学中的**展开性定义**（expansion-level definition），不是最终规范锚点。最终规范锚点见 `_SRT_D_VALUE_CANONICAL.md`。
+### Def-d-Scale-1: Cross-Scale Capacity Bandwidth (`D_eff` / $B_{\text{cap}}$) vs Canonical `d`（跨尺度容量带宽与规范 `d` 严格分离；旧称 Ontological Bandwidth）
 
-**Bridge boundary**: 若用 Fisher rank、`D_eff` 或频谱带宽近似本节的 `d`，必须标注为 capacity proxy；只有可分辨方向同时满足 stake-coupling、payability 与后果回流条件时，才可近似 canonical `d`。
+> **R4-A / R4-B2 规范校准（废除跨尺度 `d` 混淆）**：最终规范锚点归口 `_SRT_D_VALUE_CANONICAL.md`。在 `R4-A` 后，跨尺度讨论**不需要 `Bearer (P+E)` 强承载准入**的几何/信息论容量带宽代理（$B_{\text{cap}}$ / $D_{\text{eff}}$）时，仍须在具体跨尺度比较中**显式建立相容的度量、状态空间与尺度映射**；而规范 **$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$** 则严格限定于已独立建立 `Bearer (P+E)` 不可逆风险承载的模型（如生物/认知/集体承载域），**绝不**将量子退相干窗口或宇宙时空相干度写成 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$ 的投影，亦不把跨尺度容量代理与广义关切四维混为一谈。
 
-**Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
-$$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, and sustaining } L_0 \to L_1 \text{ against } \Psi_f) $$
+**Declared-Model Capacity Bandwidth Interface**:
+$$B_{\text{cap}}(\hat{G}_\theta) \equiv \text{declared channel/manifold capacity bandwidth proxy (e.g., } D_{\text{eff}}\text{) sustaining } L_0^{rel} \to L_1 \text{ under } \Psi_f$$
 
-> **Tension-Rev-IT4 (与规范定义的统一)**：本定义描述的是 $d$ 在跨尺度语境中的**功能性表征**。$d$ 的第一性原理定义为风险梯度范数 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（Ax-ONT-3, SRT-AI-01）。二者的统一关系如下：
->
-> "最大处理带宽"的物理内容**就是**算子能够承受的风险梯度范围——$\hat{G}_\theta$ 能处理越大的 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$ 而不崩溃，其"带宽"就越高。因此：
->
-> $$d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\| : \hat{G}_\theta \text{ remains stable}\right\}$$
->
-> 三尺度表中每种 $d_{scale}$ 都是此最大风险梯度在特定物理背景下的投影实现：$d_{quantum}$ 对应量子退相干阈值、$d_{bio}$ 对应生物代谢约束下的风险评估带宽、$d_{cosmic}$ 对应时空共识维持的拓扑相干范围。
+仅当系统另外通过 `Bearer (P+E)` 强承载准入（`_SRT_D_VALUE_CANONICAL.md §1.1, §2b`）并声明兼容量纲映射时，才可在强承载模型中考察风险敏感强度 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 与稳定可承受上限之间的关系：
+$$d_{\text{stable-sup}} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\| : \hat{G}_\theta \text{ remains payable and stable in declared } \mathrm{Bearer}\,(P+E) \text{ model}\right\}$$
 
-**Three-Scale Phenomenological Instantiation**:
+**Three-Scale Capacity Proxy vs Canonical `d` Separation Table**:
 
-| Scale | Symbol | Physical Manifestation | Canonical Derivation |
-|:------|:-------|:----------------------|:---------------------|
-| Quantum | $d_{quantum}$ | Heisenberg cut position; superposition scope | $\Pi_{quantum}(\|\partial\mathcal{U}/\partial\mathcal{S}\|)$ |
-| Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | $\approx \alpha A + \beta\log V + \gamma\tau$ (§2.1.1 近似) |
-| Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | $\propto 1/\sqrt{\Lambda}$ (Def-Cosmo-1) |
+| Scale | Cross-Scale Capacity Proxy ($B_{\text{cap}}$ / `D_eff`) | Canonical `d = \|\|∂U/∂S\|\|` Standing |
+|:------|:----------------------|:---------------------|
+| **Quantum / Physical** | 相干窗口 / 可分辨态空间有效维数（`D_eff` proxy；旧称 $d_{\text{quantum}}$ 仅为无赌注容量类比） | **`NOT ADMITTED / NOT APPLICABLE`**（无独立建立的 `Bearer (P+E)` 效用-生存梯度） |
+| **Bio / Cognitive** | 神经/感官通道有效维数与信息带宽（`D_eff` / `Def-d-bio` 三维操作化近似） | **在已建立 `Bearer (P+E)` 的声明模型中准入**（严格分离规范 `d` 强度、赌注谱 `D_stake` 与广义关切四维） |
+| **Cosmic / Geometric** | 宏观相干或拓扑有效自由度代理（旧称 $d_{\text{cosmic}} \propto 1/\sqrt{\Lambda}$ 仅为物理域投影类比） | **`NOT ADMITTED / NOT APPLICABLE`**（不建立宇宙级生存效用梯度或现象意识） |
 
-* **Anti-Panpsychism Guard**: $d_{quantum}$ 和 $d_{cosmic}$ 不推出任何现象性内容（Qualia）；这是一条非推论约束，不是由低读数证明 phenomenality 缺席。$\Psi_f > 0$、$d > 0$ 与 $\hat{G}[\theta] \neq \varnothing$ 在已声明生物／认知模型中只可作为候选证据，既不是普遍必要条件，也不是充分条件。详见 `Philosophy/SRT_Consciousness_Conditions.md`。
-* **Cross-ref**: P3-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
+* **Anti-Panpsychism Guard**: 跨尺度容量代理 $B_{\text{cap}} / D_{\text{eff}}$ 绝不推出任何现象性内容（Qualia），也不自动赋予量子或宇宙系统以规范 `d` 或主体地位。$\Psi_f > 0$、$d > 0$ 与 $\hat{G}_\theta \neq \varnothing$ 的单项或合取均不构成意识的普遍必要或充分条件。详见 `_SRT_D_VALUE_CANONICAL.md §3` 与 `Philosophy/SRT_Consciousness_Conditions.md`。
+* **Cross-ref**: P3-Scale-01; `_SRT_D_VALUE_CANONICAL.md §1, §2b, §3, §11`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`。
 
 ### Ax-Scale-02: Coupling Strength
 **Formal Definition**: Inter-scale influence is governed by coupling dynamics.
@@ -181,16 +189,12 @@ H(L_0\mid\theta)\gg H(L_1\mid\theta)\Rightarrow \Psi_f^{Truth}\gg \Psi_f^{Fitnes
 
 **Interface boundary（2026-04-24 sync）**：FEP 在此处是组织化系统于 `L_1` 中、受 `L_2` 约束时的局部更新规则；free-energy / energy landscape 是 `L_2` 约束域的有效投影，不是完整 `L_2`。若需要 Fisher 几何，应把它放在 `L_0 -> L_1` 的局部可区分性与 `\delta\Psi_f^{geom}` 投影上，而不是把 Fisher space 写成 `L_1` 本身。
 
-### T-Scale-04: Life–Mind Continuity via Closure Minimization（新增）
-若系统满足约束闭包与马尔可夫毯维持条件：
+### T-Scale-04: Conditional Life–Mind Closure-Minimization Interface（条件性闭包最小化接口，`P3`）
+在**已独立声明并满足**近似稳定马尔可夫毯（$\partial_t B_{MB}\approx 0$）、有效闭包（$\text{Closure}(\hat G_\theta)=1$）以及目标泛函量纲相容的特定 `P3` 模型中，可将自由能最小化与局部维持摩擦最小化写作条件对应：
 \[
-\text{Closure}(\hat G_\theta)=1,\quad \partial_t B_{MB}\approx 0
+\text{In declared stable-blanket model } M:\quad \arg\min \mathcal{F}_{SRT}\ \sim_M\ \arg\min \Psi_f^{maint}
 \]
-则其稳定存在要求：
-\[
-\arg\min \mathcal{F}_{SRT}\ \Longleftrightarrow\ \arg\min \Psi_f^{maint}
-\]
-生命维持与认知预测在同一最优化结构上连续。
+* **Boundary（`R4-B2` / `PH-IND06` 校准）**：本式为条件模型接口，**不是**普遍“生命–心智连续性充要定理”；真实生命组织常处于动态远平衡与边界持续重组中（`One_Formation` / `Bearer` 不还原为静态近似稳态马尔可夫毯），`Nave` 等哲学与生物学压力对稳态毯前提的适用范围保持开放审查。
 
 ### T-Scale-05: Bias–Variance Thermodynamics（偏差-方差热力学，新增）
 定义分组/预测的总维持成本：
@@ -221,16 +225,12 @@ SRT 对应表述：若 \(\theta\) 不含先验偏置（超先验层），则 \(\
 \]
 对象边界 \(\mathcal{B}_{obj}\) 与类别属性 \(\mathcal{C}_{attr}\) 同步生成，是同一坍缩过程的双视角。
 
-### T-Scale-07: Temporal Coarse-Grained Persistence（对象持续性，新增）
-给定时间窗 \([t,t+\Delta t]\)，对象同一性由拓扑粘合条件定义：
+### T-Scale-07: Temporal Coarse-Grained Persistence（声明域对象持续性候选，`P3`）
+在拓扑邻近性确实具有同一性相关意义的**已声明域模型 $M$** 中，给定时间窗 \([t,t+\Delta t]\) 与可支付约束，对象局部持续性可采用拓扑粘合代理判别：
 \[
-\mathcal{I}_{\Delta t}(X)=\mathbb{I}\big[D_{topo}(X_t,\pi_{\Delta t}(X_{t+\Delta t}))<\epsilon_{\theta}\big]
+\mathcal{I}_{\Delta t}^{(M)}(X)=\mathbb{I}\big[D_{topo}(X_t,\pi_{\Delta t}(X_{t+\Delta t}))<\epsilon_{\theta}\big], \qquad \sum_{\tau=t}^{t+\Delta t}\Psi_f^{maint}(X_\tau)\le E_{avail}
 \]
-并满足可支付约束：
-\[
-\sum_{\tau=t}^{t+\Delta t}\Psi_f^{maint}(X_\tau)\le E_{avail}
-\]
-若散度持续超阈，则对象“死亡/破裂”而非保持同一。
+若模型内拓扑散度持续超阈或无法支付维持成本，则判定该模型下的局部形态破裂。**范围护栏（`R4-B2` / `PH-IND04`）**：本式仅作拓扑敏感域的 `P3` 局部持续性判据，**不构成**跨域一般对象同一性或 `One` 存在的普遍定义（一般 `One` 的垂直再构成与跨态延续归口 `Core_Law/SRT_One_Formation.md`）。
 
 ### 分类映射表（Individuation by Prediction → SRT）
 
@@ -378,102 +378,79 @@ J[A_i] = C_{maint}[A_i] + C_{switch}[A_i] + \lambda_{pred}\, h[A_i]
 
 * **Cross-ref**: T-Scale-Rhythm-2（可行窗口框架）；T-Scale-Rhythm-1（振子存在性，Kuramoto 的前置）；Ax-F-12（$\Psi_f$ 作为生成原理，算子间摩擦）；T-L2-RIT-1/2（仪式节律性作为实例化）；Ax-Spec-02 推论 2（theta-replay 作为神经层实例化）；Kuramoto 1975（物理同构参考，非承重依赖）。
 
-### T-Scale-Rhythm-4: Entropy Dissipation Bound on Duty Cycle（熵耗散对占空比的独立约束，新增）
+### T-Scale-Rhythm-4: Thermodynamic Dissipation Bound on Duty Cycle（热力学耗散对占空比的条件包络上界，`R4-B2` 物理精度修正）
 
-T-Scale-Rhythm-2 从 $\Psi_f$ 预算给出了 $\delta$ 的上下界。本推论从**热力学第二定律**给出一个**独立的 $\delta$ 上界**——即使 $\Psi_f$ 预算无穷充裕，熵耗散容量仍限制系统能持续选择多久。
+T-Scale-Rhythm-2 从 $\Psi_f$ 预算给出了 $\delta$ 的上下界。本节在**声明了系统边界、热浴温度 $T$、逻辑不可逆擦除映射以及“on 阶段暂存负荷 / off 阶段集中导出”热负荷记账模型**的物理实现内，给出独立于能量预算上限的**热力学耗散占空比条件约束**（`P3/P4` 条件桥接模型，非对一切原初 `Selection` 的普遍定律）。
 
-**物理基础**：每次 $L_0 \to L_1$ 的选择事件创造互信息 $I_{created}$（Ax-F-13），且该过程不可逆。不可逆过程必然产生热力学熵。由 Landauer 原理的推广，每比特信息创造的最低熵产生为 $k_B T \ln 2$。因此主动选择阶段的内部熵产生率有下界：
-
+**物理基础、三量分离与热负荷记账前件**：
+- **Landauer 原理的作用域**：Landauer 原理直接约束的是与温度 $T$ 热浴耦合下的**最低耗散热功率**与**最低热浴熵流率**，作用对象为逻辑不可逆擦除速率 $\dot{N}_{\text{erase}}^{\text{on}}$（单位：$\text{bits}/\text{s}$），而不直接约束任意信息创造速率 $\dot{I}_{\text{created}}$ 或原初 `Selection`：
 \[
-\dot{S}_{int}^{on} \ge k_B T \cdot \dot{I}_{created} \cdot \ln 2
+\dot{Q}_{\text{bath},\min}^{\text{on}} = k_B T \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}} \quad (\text{功率：J/s}),
+\qquad
+\dot{S}_{\text{bath},\min}^{\text{on}} = \frac{\dot{Q}_{\text{bath},\min}^{\text{on}}}{T} = k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}} \quad (\text{热浴熵流：J/(K}\cdot\text{s)})
+\]
+- **严格区分热浴熵流、系统内部不可逆熵产生与待导出热/熵负荷**：热浴熵流下界 $\dot{S}_{\text{bath},\min}^{\text{on}}$ **不**自动等于系统内部不可逆熵产生率 $\dot{S}_{\text{int}}^{\text{on}}$；只有在显式声明**系统边界、热负荷记账模型及主动阶段负荷暂存（buffering）—休息阶段集中导出机制**后，才记主动阶段须由后续清除通道排出的**实际待导出等效熵负荷率**为 $\dot{S}_{\text{load}}^{\text{on}}$（对应实际待导出热负荷功率 $\dot{Q}_{\text{load}}^{\text{on}} = T\,\dot{S}_{\text{load}}^{\text{on}}$），且仅在该循环稳态记账模型下满足 Landauer 下界：
+\[
+\dot{S}_{\text{load}}^{\text{on}} \;\ge\; \dot{S}_{\text{bath},\min}^{\text{on}} = k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}
+\qquad\Longleftrightarrow\qquad
+\dot{Q}_{\text{load}}^{\text{on}} \;\ge\; k_B T \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}
+\]
+（其中超出 Landauer 理想下界的部分取决于具体实现效率与额外不可逆内部耗散 $\dot{S}_{\text{int}}^{\text{on}}$）。
+
+**稳态耗散容量约束（显式前件：off 阶段集中导出、on 阶段导出可忽略 $J_S^{\text{on}} \approx 0$）**：设系统在 off 阶段向环境导出热/熵负荷的速率上限为 $J_S^{\max}$（单位：熵/时间；等价最大散热功率 $P_{\text{diss}}^{\max} = T J_S^{\max}$）。一般循环稳态条件为 $\delta \cdot \dot{S}_{\text{load}}^{\text{on}} \le (1-\delta) \cdot J_S^{\max} + \delta \cdot J_S^{\text{on}}$；在**off 阶段集中导出、on 阶段并行导出可忽略（$J_S^{\text{on}} \approx 0$）**的声明模型前件下，严格区分以下三层量：
+\[
+\delta \;\le\; \delta_{\max}^{\text{entropy}} \;\equiv\; \frac{J_S^{\max}}{\dot{S}_{\text{load}}^{\text{on}} + J_S^{\max}} \;=\; \frac{P_{\text{diss}}^{\max}}{\dot{Q}_{\text{load}}^{\text{on}} + P_{\text{diss}}^{\max}}
+\;\le\; U_{\text{Landauer}}(\dot{N}_{\text{erase}}^{\text{on}}) \;\equiv\; \frac{J_S^{\max}}{k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}} + J_S^{\max}}
+\]
+- **$\delta$**：系统实际运行占空比；
+- **$\delta_{\max}^{\text{entropy}}$**：由该系统**实际待导出耗散率 $\dot{S}_{\text{load}}^{\text{on}}$** 决定的实际热力学占空比上界（依赖具体实现效率）；
+- **$U_{\text{Landauer}}$**：由 Landauer 热浴下界导出的**Landauer 条件包络上界**（仅给出绝对热力学包络，不替代实际实现效率分析）。
+
+**与 Rhythm-2 的关系**：Rhythm-2 给出 $\delta_{\max}^{\text{budget}}$（来自 $\Psi_f$ 预算），Rhythm-4 给出实际耗散上界 $\delta_{\max}^{\text{entropy}}$。有效上界取二者较紧者：
+\[
+\delta_{\max}^{\text{eff}} = \min\!\left(\delta_{\max}^{\text{budget}},\; \delta_{\max}^{\text{entropy}}\right) \;\le\; U_{\text{Landauer}}
 \]
 
-其中 $\dot{I}_{created} = I_{created} \cdot \Gamma_{\hat{G}}$（单次选择创造的信息量 × 算子刷新率）。
-
-**耗散容量约束**：系统向环境导出熵的速率有上限 $J_S^{max}$，由热耦合通道的物理带宽决定（热传导率、代谢废物排出率、辐射散热等）。在稳态下，内部熵不能无限积累：
-
+**三方博弈（条件恢复时间模型）**：结合 `Eq-Select-Thermo` 的 $S_{\text{noise}}$ 项，“off”阶段同时承担负荷导出与面对噪声侵蚀的折中，对应候选最优关闭时长：
 \[
-\text{稳态条件}:\quad \delta \cdot \dot{S}_{int}^{on} \le (1-\delta) \cdot J_S^{max} + \delta \cdot J_S^{on}
+\tau_{\text{off}}^* = \arg\min_{\tau_{\text{off}}} \left[\underbrace{\frac{\dot{S}_{\text{load}}^{\text{on}} \cdot \tau_{\text{on}}}{J_S^{\max} \cdot \tau_{\text{off}}}}_{\text{待导出负荷/导出容量比}} + \underbrace{\gamma \cdot S_{\text{noise}} \cdot \tau_{\text{off}}}_{\text{噪声侵蚀}}\right]
 \]
 
-其中 $J_S^{on}$ 为"on"阶段的并行熵导出率（通常 $J_S^{on} < J_S^{max}$，因为选择占用了部分通道容量）。简化为纯"off"阶段导出的极端情形（$J_S^{on} \approx 0$）：
+**条件推论（严分包络函数、实际耗散上界与实际占空比）**：
+1. **Landauer 条件包络收紧假说（`P3/P4`）**：在固定导出容量 $J_S^{\max}$、满足 off 阶段集中导出前件且擦除映射非减的模型中，有效擦除率 $\dot{N}_{\text{erase}}^{\text{on}}$ 上升使 **Landauer 条件包络上界 $U_{\text{Landauer}}$** 非增；但**既不自动推出实际耗散上界 $\delta_{\max}^{\text{entropy}}$ 必然单调下降（实际耗散还受实现效率调制），也不自动推出实际占空比 $\delta$ 必然单调下降**。该假说可用于经验比较恢复/睡眠时间与代谢负载，不定义或准入意识。
+2. **高 $J_S^{\max}$ / $P_{\text{diss}}^{\max}$ 系统具有更高耗散包络**：更强散热与代谢清除通道可抬高 $U_{\text{Landauer}}$ 与 $\delta_{\max}^{\text{entropy}}$。
+3. **主导约束随尺度切换**：毫秒级神经窗口常由局部预算主导，宏观小时级睡眠-觉醒循环更易触及代谢与清除通道上限。
 
+* **Implication**：节律与恢复周期除预算约束（Rhythm-2）外，在具身热力学模型中还受稳态负荷储存—导出模型与清除通道约束。
+* **Boundary**：本节严格区分热浴熵流（$k_B \ln 2 \cdot \dot{N}_{\text{erase}}$）、热功率（$k_B T \ln 2 \cdot \dot{N}_{\text{erase}}$）、系统内部不可逆熵产生（$\dot{S}_{\text{int}}^{\text{on}}$）与循环待导出负荷（$\dot{S}_{\text{load}}^{\text{on}}$）；显式依赖系统边界、热负荷记账与 off 阶段集中导出（$J_S^{\text{on}} \approx 0$）模型前件；Landauer 下界不直接约束任意信息创造或原初 `Selection`。
+* **Cross-ref**: `Eq-Select-Thermo`；`T-Scale-Rhythm-2`；`Core/SRT_Core_22_Equations.md Eq-Rhythm-4a`；`_SRT_SYMBOL_TABLE.md`。
+
+### Cor-Scale-Rhythm-4a: Conditional Passband–Duty Landauer Envelope Tradeoff（频谱通带容量—占空比 Landauer 条件包络权衡，`R4-B2` 修正）
+
+> **量纲与三量分离护栏**：本推论作用于算子的**频谱通带容量代理 $B_\theta \equiv \operatorname{Bandwidth}(H_\theta)$**（在声明频域模型中可与无赌注有效谱维数代理 $D_{\text{eff}}$ 联立为条件假设 $B_\theta = c_B \, D_{\text{eff}}$，**严分于**规范风险敏感梯度范数 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$），沿用 `T-Scale-Rhythm-4` 的**系统边界、热负荷储存–导出记账与 off 阶段集中导出（$J_S^{\text{on}} \approx 0$）**模型前件。
+
+在声明频域滤波模型（`Ax-Spec-01`）与逻辑擦除桥接模型中，独立声明非减条件擦除映射 $\dot{N}_{\text{erase}}^{\text{on}} = f_{\text{erase}}(B_\theta)$（$f_{\text{erase}}'(B_\theta) \ge 0$，**附加模型假设**），结合 `T-Scale-Rhythm-4` 的稳态热负荷记账（$\dot{S}_{\text{load}}^{\text{on}} \ge k_B \ln 2 \cdot f_{\text{erase}}(B_\theta)$），得到三层不等式链：
 \[
-\delta \le \frac{J_S^{max}}{\dot{S}_{int}^{on} + J_S^{max}} \equiv \delta_{max}^{entropy}
+\delta \;\le\; \delta_{\max}^{\text{entropy}} \;\le\; U(B_\theta) \;\equiv\;
+\frac{J_S^{\max}}{k_B \ln 2 \cdot f_{\text{erase}}(B_\theta) + J_S^{\max}}
+\;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \cdot f_{\text{erase}}(B_\theta) + P_{\text{diss}}^{\max}}
 \]
+在**固定导出容量 $J_S^{\max}$** 与**非减擦除映射 $f_{\text{erase}}$** 条件下，直接成立的是 **Landauer 条件包络上界函数 $U(B_\theta)$ 关于 $B_\theta$ 非增**；它**不**自动保证实际耗散上界 $\delta_{\max}^{\text{entropy}}$（受实现效率影响）或实际占空比 $\delta$ 自身单调递减。
 
-**与 Rhythm-2 的关系**：Rhythm-2 给出 $\delta_{max}^{budget}$（来自 $\Psi_f$ 预算），Rhythm-4 给出 $\delta_{max}^{entropy}$（来自熵耗散）。实际上界是二者中更严格的那个：
-
+若模型进一步声明**擦除密度下界条件** $\dot{N}_{\text{erase}}^{\text{on}} \ge \rho_{\text{erase}} \, B_\theta$（$\rho_{\text{erase}} > 0$，单位：$\text{bits}/(\text{Hz}\cdot\text{s})$），则得条件乘积包络上界：
 \[
-\delta_{max}^{eff} = \min\!\left(\delta_{max}^{budget},\; \delta_{max}^{entropy}\right)
+\delta \, B_\theta \;\le\; U(B_\theta)\, B_\theta \;\le\;
+\frac{J_S^{\max} \, B_\theta}{k_B \ln 2 \, \rho_{\text{erase}} \, B_\theta + J_S^{\max}}
+\;\le\; \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}}}
+\;=\; \frac{P_{\text{diss}}^{\max}}{k_B T \ln 2 \, \rho_{\text{erase}}}
 \]
+在额外声明 $B_\theta = c_B D_{\text{eff}}$（$c_B > 0$）时，等价写为 $\delta \, D_{\text{eff}} \le \frac{J_S^{\max}}{k_B \ln 2 \, \rho_{\text{erase}} \, c_B}$。
 
-两个约束**逻辑独立**：即使 $E_{avail} \to \infty$（无限能量预算），$\delta_{max}^{entropy}$ 仍有限——你不能无限期地选择而不导出废热。
-
-**三方博弈**：结合 Eq-Select-Thermo 的 $S_{noise}$ 项，"off"阶段同时是：
-1. 熵导出窗口（有益：排出选择产生的废热）
-2. 噪声侵蚀窗口（有害：$S_{noise}$ 降解已锚定的 $L_1$ 态）
-
-因此存在最优"off"持续时间 $\tau_{off}^*$，平衡熵导出收益与噪声侵蚀损失：
-
-\[
-\tau_{off}^* = \arg\min_{\tau_{off}} \left[\underbrace{\frac{\dot{S}_{int}^{on} \cdot \tau_{on}}{J_S^{max} \cdot \tau_{off}}}_{\text{熵积累/导出比}} + \underbrace{\gamma \cdot S_{noise} \cdot \tau_{off}}_{\text{噪声侵蚀}}\right]
-\]
-
-这不是自由参数，而是物理系统在两个不可消除的力之间的折中。
-
-**推论**：
-1. **高候选 $d$ 读数与更多 "off" 时间的 P3/P4 假说**：在本节声明的热力学模型中，$d \uparrow \implies \dot{I}_{created} \uparrow \implies \dot{S}_{int}^{on} \uparrow \implies \delta_{max}^{entropy} \downarrow$。该链把候选 d proxy 与恢复/耗散时间关联，可与有机体复杂度、睡眠时长及深度认知后疲劳进行经验比较；它不将复杂度或 d 读数等同于意识，也不由睡眠需求反推意识准入。
-2. **高 $J_S^{max}$ 系统能维持更高占空比**：恒温动物（高代谢散热能力 → 高 $J_S^{max}$）能维持更长时间的连续清醒意识，相比变温动物（低 $J_S^{max}$）。
-3. **$\delta_{max}^{entropy}$ 与 $\delta_{max}^{budget}$ 的哪一个更紧取决于尺度**：在神经毫秒尺度（单次 gamma 周期），$\Psi_f$ 预算通常更紧；在宏观小时尺度（睡眠-觉醒），熵耗散通常更紧。
-
-* **Implication**：节律不仅来自有限预算（Rhythm-2），更来自热力学不可逆性的硬约束。选择必然产生废热；废热必须被排出；排出需要时间和通道。这把 SRT 的 Rhythm 链直接嵌入热力学第二定律，使其不再是纯粹的"资源分配优化"，而成为物理规律的后果。宪法不等式（Eq-Select-Thermo）中的三项（$P_{sel}$、$\Psi_f$、$S_{noise}$）在节律的"on/off"调度中各自扮演明确角色：$P_{sel}$ 在"on"时注入选择功率，$\Psi_f$ 在"on"时消耗预算，$S_{noise}$ 在"off"时侵蚀锚定。
-* **Boundary**：$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$ 是下界，实际熵产生可能远高于 Landauer 极限（大多数生物系统远离可逆极限）。$J_S^{max}$ 的具体值依赖于物理系统的散热架构，本推论不给出通用数值。Rhythm-4 不替代 Rhythm-2——两个约束逻辑独立，各自承重。
-* **Cross-ref**: Eq-Select-Thermo（宪法不等式，$S_{noise}$ 项）；Ax-F-13（$I_{created}$，选择-信息创造等价）；T-Scale-Rhythm-2（$\Psi_f$ 预算约束，$\delta_{max}^{budget}$）；T-L0-NonStatic（$H(L_0^{(t)}) = H(L_0^{(0)}) - \sum I_{created}$）；Eq-DValue-Max-1（$d_{max}$ 受 $\Psi_f$ 预算与 Fisher rank 双重约束）。
-
-### Cor-Scale-Rhythm-4a: Spectral-Rhythmic Tradeoff（频谱丰富度—占空比权衡，新增）
-
-Ax-Spec-01 给出算子的有效通带宽度：
-\[
-B_\theta \equiv \operatorname{Bandwidth}(H_\theta) = c_B \, d,\qquad c_B>0
-\]
-Rhythm-4 已经给出方向性事实：高 \(d\) 系统创造更高的信息速率，因此其熵耗散上界更紧。把这一点写成单调响应函数：
-\[
-\dot{I}_{created}^{on} = f_I(B_\theta),\qquad f_I'(B_\theta)\ge 0
-\]
-代入 Rhythm-4 的 Landauer 下界
-\[
-\dot{S}_{int}^{on} \ge k_B T \ln 2 \cdot \dot{I}_{created}^{on}
-\]
-得到占空比的弱上界：
-\[
-\delta_{max}^{entropy}(B_\theta)\le
-\frac{J_S^{max}}{k_B T \ln 2 \cdot f_I(B_\theta)+J_S^{max}}
-\]
-因此：
-\[
-B_\theta\uparrow \ \Rightarrow\ \delta_{max}^{entropy}\downarrow
-\]
-
-若进一步满足**信息密度下界条件**：
-\[
-\dot{I}_{created}^{on} \ge \rho_I \, B_\theta,\qquad \rho_I>0
-\]
-则可强化为乘积上界：
-\[
-\delta \, B_\theta \le
-\frac{J_S^{max}\,B_\theta}{k_B T \ln 2 \,\rho_I\, B_\theta + J_S^{max}}
-\le
-\frac{J_S^{max}}{k_B T \ln 2 \,\rho_I}
-\]
-等价地，在 \(d\) 记号下：
-\[
-\delta \, d \le \frac{J_S^{max}}{k_B T \ln 2 \,\rho_I\, c_B}
-\]
-
-* **Implication**：高 \(d\) 算子不仅“能看更多”，还必须为此支付更高的熵导出代价；因此宽通带带来的频谱丰富度，会压缩可持续的占空比上界。能力上界与时间上界不是两套独立约束，而是一组谱-热耦合约束。
-* **Boundary**：硬结论只到弱式 tradeoff：\(B_\theta\uparrow \Rightarrow \delta_{max}^{entropy}\downarrow\)。乘积上界需要额外的 \(\rho_I\) 下界条件，当前应视为条件强化版，而非无条件定理。该推论不推出具体优选频率，只推出“可持续频谱丰富度”与“可持续 on-time”之间存在对冲。
-* **Cross-ref**: Ax-Spec-01（\(d \leftrightarrow\) 通带宽度）；T-Scale-Rhythm-4（熵耗散占空比上界）；Ax-F-13（选择-信息创造等价）。
+* **Implication & 边界**：
+  1. **严格三量区分**：区分实际占空比 $\delta$、由实际待导出耗散率 $\dot{S}_{\text{load}}^{\text{on}}$ 决定的 $\delta_{\max}^{\text{entropy}}$，以及 Landauer 条件包络上界 $U(B_\theta)$；仅 $U(B_\theta)$ 的非增性由固定 $J_S^{\max}$ 与非减 $f_{\text{erase}}$ 直接推出；
+  2. **不自动映射至规范 `d`**：上述容量–耗散包络约束 $B_\theta / D_{\text{eff}}$，不直接约束规范风险敏感梯度范数 `d = ||∂U/∂S||`，除非另行声明 `Bearer (P+E)` 准入与量纲换算映射；
+  3. **非普遍定理**：$f_{\text{erase}}(B_\theta)$、$\rho_{\text{erase}}$ 与 off 阶段集中导出记账均为声明模型内的条件假设，不构成普遍热力学定理。
+* **Cross-ref**: `Core/SRT_Core_13b_Operator_Advanced.md Ax-Spec-01`（通带容量）；`T-Scale-Rhythm-4`；`Core/SRT_Core_22_Equations.md Eq-Rhythm-4a`；`_SRT_D_VALUE_CANONICAL.md §11`；`_SRT_SYMBOL_TABLE.md`。
 
 ### T-Scale-Rhythm-5: Nested Hierarchical Rhythms（嵌套层级节律，新增）
 
@@ -536,43 +513,41 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 **推论**：
 1. **频率比由占空比决定**：嵌套层间的频率比 $\omega_{n-1}/\omega_n \ge 1/\delta_n$ 不是任意的，而是由该层的可行占空比决定。theta-gamma 耦合中观察到的约 4–8:1 频率比对应 $\delta \approx 0.12$–$0.25$，与神经元的有效占空比相容。
 2. **Phase-amplitude coupling (PAC) 是本条件模型的自然后果**：若子节律依定义只能在父节律的 on-phase 内运行，其振幅在 on-phase 内非零、off-phase 内（近似）为零——这构成一种 PAC。该结论依赖前述嵌入与门控前件，不证明经验系统中的 PAC 都由此产生。
-3. **嵌套深度反映系统复杂度**：高 d 系统因 $k_n$ 更大（更多子目标）、$E_{avail}^{(n-1)}$ 更紧张（Cor-4a），更容易在每层触发递归，因而倾向于更深的嵌套层级。这预测：意识复杂度与可观测的嵌套节律层数正相关。
+3. **嵌套深度反映多尺度调度复杂度（`R4-B2` 校准）**：高容量带宽（$B_\theta / D_{\text{eff}}$ 更大）、子目标 $k_n$ 更多且 $E_{avail}^{(n-1)}$ 更紧张（`Cor-4a`）的系统，更易在各层触发间歇递归，因而呈现更深的多尺度节律嵌套；这是多尺度信息调度复杂度的 `P3/P4` 经验假说，**不**将嵌套层数或容量代理直接等同于意识或规范 `d`。
 4. **嵌套坍缩 = 功能降级**：若某层的预算突然减少（如麻醉、缺氧），使 $E_{avail}^{(n-1)}$ 低于单目标维持成本，则该层及其所有子层的嵌套节律同时消失——对应临床上观察到的意识丧失时多层级节律同步坍缩（PCI 骤降）。
 
 * **Implication**：在相邻尺度相容、预算嵌入、子目标多重性与切换条件全部成立的具名模型内，Rhythm-1 的递归应用可以产生分层嵌套节律。自然界所有嵌套节律是否都由此机制产生仍是 P4 问题；嵌套层数、频率比与相位—振幅耦合也不由 $\delta_n$、$k_n$、$E_{avail}^{(n)}$ 三组参数无条件穷尽。
 * **Boundary**：本定理推出嵌套的存在性与频率分离的方向，但不推出各层的具体频率值（这取决于物理系统的具体 $\Psi_f$ 参数化）。频率比的下界 $1/\delta_n$ 是必要条件而非充分条件——实际频率比可能远大于此下界。递归终止条件 3（物理切换速率饱和）的 $\tau_{switch}^{min}$ 依赖于物质基底（离子通道翻转时间、化学反应速率等），本定理不给出通用数值。不主张所有嵌套节律都是"自上而下"生成的——自下而上的涌现节律同样存在，但本定理表明自上而下的预算分配机制足以产生嵌套结构。
-* **Cross-ref**: P3-Scale-01／T-Scale-02C1（条件性跨尺度相容）；T-Scale-Rhythm-1（非零时间带宽前提）；T-Scale-Rhythm-2（占空比可行窗口，$\delta_n$ 来源）；Cor-Scale-Rhythm-4a（高 d 压缩占空比，加速递归触发）；**T-Scale-Rhythm-3**（次级参照：解释嵌套层在耦合条件下为何趋于准周期／周期调度，**非承重前提**）；SRT_Clin_00_IIT_PCI（PCI 与嵌套节律坍缩）；Glossary Phase-Amplitude Coupling 条目。
+* **Cross-ref**: P3-Scale-01／T-Scale-02C1（条件性跨尺度相容）；T-Scale-Rhythm-1（非零时间带宽前提）；T-Scale-Rhythm-2（占空比可行窗口，$\delta_n$ 来源）；Cor-Scale-Rhythm-4a（高通带容量 $B_\theta / D_{\text{eff}}$ 在条件擦除映射下收紧热力学占空比上界）；**T-Scale-Rhythm-3**（次级参照：解释嵌套层在耦合条件下为何趋于准周期／周期调度，**非承重前提**）；SRT_Clin_00_IIT_PCI（PCI 与嵌套节律坍缩）；Glossary Phase-Amplitude Coupling 条目。
 
-### Formalization Summary (形式化概述)
+### Formalization Summary (形式化概述，`R4-B2 P1-05` 同步)
 
-本文件的核心形式化结构围绕以下关键公式展开：
+本文件的核心形式化结构围绕 `§0` **跨尺度五机制分工**（装配 / 归一化 / 有效作用接口 / `Proxy` / `Delegation`）与以下条件模型接口展开：
 
-1. **跨尺度结构相容候选** (P3-Scale-01): $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$ — 只有在声明状态空间、尺度映射、保留观测量、比较范数与容差后，才检验局部跨尺度可比性；严格共轭只适用于可逆表征变换，不适用于一般粗粒化。
-2. **本体论带宽定义** (Def-d-Scale-1): $d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ against } \Psi_f)$ — d 值是算子在面对本体论摩擦时，能将开放可能性压缩、锚定并维持为一个**可维持、可行动、可协调**的 $L_1$ 现实切片的最大处理带宽，与规范定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 统一。
-3. **主动力学方程** (Ax-Master-01): $d\rho_{L_1}/dt = -(i/\hbar)[\hat{H}, \rho] - \hat{G}_\theta[\rho - \rho_{target}] + \mathcal{D}[\rho]$ — 现实密度矩阵的演化由自由展开（酉流）、选择锚定（$\hat{G}_\theta$ 项）与退相干三项共同驱动。
-4. **语义边界维持** (Ax-Auto-01): $d\theta/dt = -\alpha \nabla_\theta \Psi_f + \text{Learning}$ — 自我参数 $\theta$ 的演化是摩擦梯度下降与学习更新的持续平衡。
-5. **边界划定成本** (T-Scale-08): $F_{boundary}(\tau) = \mathcal{L}_{class}(\tau) + \lambda_1 \Psi_f^{maint}(\tau) + \lambda_2 \Psi_f^{switch}(\tau)$ — 在连续梯度上强制离散边界的总代价由分类误差、维持摩擦和切换代价三项组成。
-6. **非零时间带宽** (T-Scale-Rhythm-1): 当连续密集锚定超过可用预算时，有限算子的有效锚定调度必含非零频率成分，分时/脉冲化成为通用可行解。
-7. **占空比可行窗口** (T-Scale-Rhythm-2): 有限算子的时间调度由占空比 $\delta$（锚定时间比例）与切换密度 $\nu$（翻转频率）二维参数刻画；维持成本给出 $\delta$ 上界，松散惩罚给出 $\delta$ 下界，切换成本给出 $\nu$ 上界，三力合围形成可行窗口。
-8. **耦合驱动的周期化** (T-Scale-Rhythm-3): 当下游预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c$ 时，随机间歇被周期性调度取代——周期性是多算子协调成本最小化的相变结果，非有限性的直接推论。
-9. **熵耗散占空比约束** (T-Scale-Rhythm-4): $\delta \le J_S^{max}/(\dot{S}_{int}^{on} + J_S^{max})$ — 独立于 $\Psi_f$ 预算的第二上界，来自热力学第二定律：选择产生的内部熵必须在"off"阶段排出，排出速率有限。实际 $\delta_{max} = \min(\delta_{max}^{budget}, \delta_{max}^{entropy})$。高 d → 高 $\dot{I}_{created}$ → 高 $\dot{S}_{int}^{on}$ → 更低 $\delta_{max}^{entropy}$，预测高 d 系统需要更多恢复时间。
-10. **频谱—占空比权衡** (Cor-Scale-Rhythm-4a): Ax-Spec-01 的通带宽度与 Rhythm-4 的熵耗散上界联合推出：高 d / 宽通带提升调度的频谱丰富度上限，同时压低可持续占空比；在信息密度下界成立时，\(\delta \cdot \operatorname{Bandwidth}(H_\theta)\) 与 \(\delta\cdot d\) 都被 \(J_S^{max}\) 封顶。
-11. **嵌套层级节律候选** (T-Scale-Rhythm-5, P3/P4 conditional): 在 P3-Scale-01／T-Scale-02C1 相容映射、Lemma-Scale-Budget-Embed-1 与各层触发条件均成立时，Rhythm-1 可递归产生子节律；频率界与嵌套深度界只在该具名模型内成立，不能由跨尺度“同一语法”直接提升为自然界普遍定理。
+1. **跨尺度结构相容候选** (`P3-Scale-01`): $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$ — 只有在声明状态空间、尺度映射、保留观测量、比较范数与容差后，才检验局部跨尺度可比性；严格共轭只适用于可逆表征变换，不适用于一般粗粒化。
+2. **跨尺度容量带宽代理与规范 `d` 分离** (`Def-d-Scale-1`): 几何/信息容量代理 $B_{\text{cap}} / D_{\text{eff}}$ **不需要 `Bearer (P+E)` 强承载准入**，但跨尺度比较仍须显式建立相容的度量、状态空间与尺度映射；规范不可逆风险敏感强度 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 仅在已独立建立 `Bearer (P+E)` 承载的模型中准入，**不**将量子或宇宙尺度的容量/相干度写作规范 `d` 的投影，亦**不**等同于广义关切四维。
+3. **主动力学方程** (`Ax-Master-01`): $d\rho_{L_1}/dt = -(i/\hbar)[\hat{H}, \rho] - \hat{G}_\theta[\rho - \rho_{target}] + \mathcal{D}[\rho]$ — 在声明量子/开放系统模型中刻画自由展开、选择锚定与退相干三项竞争。
+4. **语义边界维持** (`Ax-Auto-01`): $d\theta/dt = -\alpha \nabla_\theta \Psi_f + \text{Learning}$ — 声明具身模型中自我参数 $\theta$ 的摩擦梯度与学习更新平衡。
+5. **边界划定成本** (`T-Scale-08`): $F_{boundary}(\tau) = \mathcal{L}_{class}(\tau) + \lambda_1 \Psi_f^{maint}(\tau) + \lambda_2 \Psi_f^{switch}(\tau)$ — 在连续梯度上强制离散边界的分类误差、维持摩擦与切换代价折中。
+6. **非零时间带宽** (`T-Scale-Rhythm-1`): 当连续密集锚定超过可用预算时，有限算子的有效锚定调度必含非零频率成分，分时/脉冲化成为可行解。
+7. **占空比可行窗口** (`T-Scale-Rhythm-2`): 有限算子的时间调度由占空比 $\delta$ 与切换密度 $\nu$ 二维参数刻画；维持成本给出 $\delta$ 上界，松散惩罚给出 $\delta$ 下界，切换成本限制 $\nu$，三力合围形成可行窗口。
+8. **耦合驱动的周期化** (`T-Scale-Rhythm-3`): 当下游预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c$ 时，周期性调度在所声明的周期/随机两族比较中胜出。
+9. **热力学耗散占空比条件包络** (`T-Scale-Rhythm-4`): 严格区分热浴熵流（$k_B \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}$）、热功率（$k_B T \ln 2 \cdot \dot{N}_{\text{erase}}^{\text{on}}$）、系统内部不可逆熵产生（$\dot{S}_{\text{int}}^{\text{on}}$）与待导出等效负荷（$\dot{S}_{\text{load}}^{\text{on}}$）；在声明系统边界、负荷记账与 off 阶段集中导出（$J_S^{\text{on}} \approx 0$）前件下，满足 $\delta \le \delta_{\max}^{\text{entropy}} \le U_{\text{Landauer}}$。
+10. **频谱通带容量—占空比 Landauer 条件包络权衡** (`Cor-Scale-Rhythm-4a`): 在独立声明非减通带–逻辑擦除映射 $\dot{N}_{\text{erase}}^{\text{on}} = f_{\text{erase}}(B_\theta)$ 与固定导出容量 $J_S^{\max}$ 时，直接非增的是 Landauer 条件包络上界 $U(B_\theta)$（不直接保证实际耗散上界 $\delta_{\max}^{\text{entropy}}$ 或实际 $\delta$ 单调下降）；在擦除密度下界 $\rho_{\text{erase}}$ 成立时，$\delta \cdot B_\theta \le U(B_\theta) B_\theta \le J_S^{\max}/(k_B \ln 2 \cdot \rho_{\text{erase}})$（不直接约束规范 `d`）。
+11. **嵌套层级节律候选** (`T-Scale-Rhythm-5`, P3/P4 conditional): 在 `P3-Scale-01 / T-Scale-02C1` 相容映射、`Lemma-Scale-Budget-Embed-1` 与各层触发条件均成立时，Rhythm-1 可递归产生子节律；频率界与嵌套深度界仅在该具名模型内成立。
 
-### Mechanism Explanation (机制解释)
+### Mechanism Explanation (机制解释，`R4-B2 P1-05` 同步)
 
-本文件描述的动力学与标度机制通过以下方式运作：
+本文件描述的跨尺度机制按以下职责分工运作：
 
-- **跨尺度结构相容候选**: 不同尺度的 $\hat{G}_\theta$ 只有在具名尺度映射下满足 P3-Scale-01／T-Scale-02C1 的近似交换条件时，才获得局部可比性。旧 `\Delta S=H(L_0)-H(L_1)` 与“所有尺度共同满足最小作用”不再承担证明；跨尺度保持的是选择—约束—可支付性语法，不是熵值、单位或机制同一。尺度间耦合方程仍是具名模型接口，其 $\kappa_{ij}$、状态空间与可比较性必须逐域定义。
-- **三项竞争动力学**: 主方程中的酉流项代表 $L_0$ 的自由展开趋势，$\hat{G}_\theta$ 锚定项代表算子的主动选择压力（将 $\rho$ 拉向 $\rho_{target}$），退相干项 $\mathcal{D}[\rho]$ 代表环境引起的信息丢失。三者的竞争平衡决定了 $L_1$ 的稳定性与可预测性。在被动选择退化形式（Cor-Master-01a）中，当约束梯度远大于算子锚定力时，系统进入约束主导的滑行模式。
-- **摩擦驱动的适应度优先机制**: 由于有限算子无法无损编码 $L_0$（$\Psi_f^{Truth} \gg \Psi_f^{Fitness}$），系统在演化上优先选择低摩擦可维持界面（适应度追踪），而非高保真真相重建。偏差-方差热力学（T-Scale-05）进一步表明，总维持成本中方差的边际代价远高于偏差，导致系统倾向”高偏差-低方差”的稳定对象表征。
-- **$\Psi_f$ 作为统一约束与生成性原理**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。更进一步，$\Psi_f$ 不只是维持现实的代价，而是动力学本身的生成来源：没有摩擦就没有演化、学习、文化变迁等跨尺度动力学；没有动力学就没有现实的生成。对同一 $Ψ_f$，可作三种受限读法：动力学上读作阻力，记账上读作代价，形式上读作 Fisher–Rao metric 诱导的局部二阶几何投影 / 路径泛函。跨尺度真正保持不变的不是各层的单位制，也不是 `\Psi_f \equiv g_F` 的裸等号，而是**可支付性条件**：系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 canonical d 经尺度约束后的动力学投影 / proxy，不能替代 `_SRT_D_VALUE_CANONICAL.md` 的风险梯度锚点。
-- **预算超载下的时分复用**: 当 \(\mathcal{C}_{dense}(T,k)>E_{avail}\) 时，系统不能以纯直流方式并行维持全部目标，必须通过间歇、分时或重放来重新分配锚定窗口；theta-replay、注意切换与宏观睡眠-觉醒循环都可读作这一机制在不同尺度上的实例化。
-- **占空比-切换密度可行窗口**: 间歇调度不由单一参数（占空比 $\delta$）刻画——同一 $\delta$ 可对应极不同的切换密度 $\nu$。维持成本与松散惩罚夹出 $\delta$ 的上下界，切换成本限制 $\nu$，三力合围产生 $(\delta, \nu)$ 二维可行区域。窗口坍缩时系统必须放弃锚定目标或降低切换频率。
-- **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度在本节声明的周期／随机两族比较中胜出——这是从间歇到节律的条件性相变。该比较没有证明它优于所有可行调度。
-- **熵耗散作为独立候选约束**: 在本节条件模型中，选择的不可逆性产生内部熵（$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$），并在 "off" 阶段通过有限带宽的热耦合通道排出。该模型给出 $\delta$ 的局部上界 $\delta_{max}^{entropy}$；"off" 阶段的熵导出与噪声侵蚀折中决定候选 $\tau_{off}^*$。高 d proxy—高 $\dot{I}_{created}$—更长恢复时间只是 P3/P4 可检验桥；它不解释或准入意识。
-- **谱-热对冲**: Ax-Spec-01 赋予高 d 算子更宽的频谱通带，但 Rhythm-4 同时规定更宽的有效通带会抬高信息创造率与熵产生率，从而压低可持续占空比。结果不是“高 d = 永远更强”，而是“高 d = 更丰富但更难持续”。
-- **嵌套层级节律候选**: 在相邻尺度通过 T-Scale-02C1、子层物理嵌入父层 on-phase、且各层预算超载条件成立时，Rhythm-1 可递归产生子节律。频率分离、PAC 与嵌套深度界是该条件模型的输出，不是“同一选择语法”单独保证的数学必然；意识与麻醉解释仍需独立 P4 证据。
+- **跨尺度五机制与结构相容候选**: 跨尺度组织区分装配、归一化、有效作用接口、`Proxy` 与 `Delegation` 五类独立机制（`§0`）；不同尺度的 $\hat{G}_\theta$ 只有在具名尺度映射下满足 `P3-Scale-01 / T-Scale-02C1` 近似交换条件时才获得局部可比性，不证明机制、单位、主体性或意识同一。
+- **三项竞争动力学**: 主方程中的酉流项代表自由展开，$\hat{G}_\theta$ 锚定项代表算子选择压力，退相干项 $\mathcal{D}[\rho]$ 代表环境耗散；在被动选择极限（`Cor-Master-01a`）中，约束梯度主导轨迹滑行。
+- **摩擦驱动的适应度优先机制**: 在有限预算与通道容量下（$\Psi_f^{Truth} \gg \Psi_f^{Fitness}$），演化系统常优先维持低摩擦可用界面（适应度追踪），并呈“高偏差–低方差”对象压缩倾向（`T-Scale-05`）。
+- **$\Psi_f$ 可支付性与四分摩擦边界（撤回旧“无摩擦即无现实生成”论断）**: 在形成态动力学模型中，$\Psi_f$ 刻画维持与重构现实切片的可支付负担，按 `_SRT_PSI_F_CANONICAL.md` 严格与广义生成摩擦/张力、非闭合压力和主观痛苦四分（**不**宣称“没有 $\Psi_f$ 就没有原初 `Selection` 或现实发生”，守住终端 `Selection` 边界）。Fisher 几何长度仅为条件局部代理（`\Psi_f \not\equiv g_F`），跨尺度共同语法落在**可支付性条件**而非单位同一；量子、生物、宇宙三尺度的容量代理（`D_eff` / $B_{\text{cap}}$）严分于须经 `Bearer (P+E)` 准入的规范 `d`。
+- **预算超载下的时分复用与可行窗口**: 当 $\mathcal{C}_{dense}(T,k) > E_{avail}$ 时，有限算子通过间歇、分时或重放分配锚定窗口（`T-Scale-Rhythm-1/2`），受维持成本、松散惩罚与切换成本合围于 $(\delta, \nu)$ 二维可行窗口。
+- **耦合驱动的周期化**: 多算子耦合时，当下游预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c$，周期性调度在所声明的周期/随机两族比较中胜出（`T-Scale-Rhythm-3`）。
+- **热力学耗散与谱–热条件包络**: 在声明系统边界、热浴温度 $T$、逻辑擦除映射、热负荷暂存记账及 off 阶段集中导出（$J_S^{\text{on}} \approx 0$）的物理模型中，严格区分热浴熵流（$k_B \ln 2 \cdot \dot{N}_{\text{erase}}$）、热功率（$k_B T \ln 2 \cdot \dot{N}_{\text{erase}}$）、内部不可逆熵产生（$\dot{S}_{\text{int}}^{\text{on}}$）与待导出负荷（$\dot{S}_{\text{load}}^{\text{on}}$），以及实际占空比 $\delta$、实际耗散上界 $\delta_{\max}^{\text{entropy}}$ 与 Landauer 条件包络上界 $U(B_\theta)$（`T-Scale-Rhythm-4 / Cor-Scale-Rhythm-4a`）；在固定 $J_S^{\max}$ 与非减擦除映射下仅直接推出 $U(B_\theta)$ 非增，不自动证明实际耗散上界或实际 $\delta$ 单调下降，亦不准入意识。
+- **嵌套层级节律候选**: 在相邻尺度通过 `T-Scale-02C1`、子层物理嵌入父层 on-phase、且各层预算超载条件成立时，Rhythm-1 可递归产生子节律，其频率分离与 PAC 属条件模型输出，不直接等同于意识复杂度。
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
@@ -1579,24 +1554,24 @@ $$\mathcal{R}_{break} \to \mathcal{R}_{reseal} \quad \text{with} \quad \Delta \m
 ### [Lineage/Source]
 - Axonal theta oscillations evoke bursting in target hippocampal subregions（preprint, 2026）
 
-## Type→Individual 相变阈值补注（2026-03-06，轻中量）
+## Type→Individual 候选过渡接口补注（2026-03-06；`R4-B2` 准入边界校准）
 
-### Def-Scale-Indiv-1: Individuation Critical Point \(d_{indiv}\)
-定义个体化临界点：
+### Def-Scale-Indiv-1: Individuation Candidate Threshold $d_{\text{indiv}}$（声明强承载模型候选）
+在已独立满足 `Bearer (P+E)` 准入的声明群体-个体过渡模型中，可定义候选临界坐标：
 \[
-d_{indiv} := \inf\{d: \mathcal{M}_{self}(t\to t+\Delta t)\ \text{stable and counterfactual-risk-coupled}\}
+d_{\text{indiv}} := \inf\{d: \mathcal{M}_{\text{self}}(t\to t+\Delta t)\ \text{stable and counterfactual-risk-coupled}\}
 \]
-- 当 \(d < d_{indiv}\)：系统主要表现为 Type-level 动力学（群体/谱系承压）
-- 当 \(d \ge d_{indiv}\)：系统进入 Individual-level 动力学（个体承压与连续自我边界）
+- 当模型内 $d < d_{\text{indiv}}$：风险负载主要在群体/谱系拓扑层面上分布（Type-level 动力学候选）；
+- 当模型内 $d \ge d_{\text{indiv}}$：风险负载显著集中到连续个体承载边界（Individual-level 动力学候选）。
 
-### T-Scale-Indiv-1: Suffering Internalization Transition
+### T-Scale-Indiv-1: Burden Internalization Candidate Transition（负载内化候选过渡，`P3/P4`）
 \[
-d < d_{indiv}\Rightarrow \Psi_f \text{ mainly distributed over population topology}
+d < d_{\text{indiv}} \;\leadsto\; \Psi_f \text{ mainly distributed over population topology}
 \]
 \[
-d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering load}
+d \ge d_{\text{indiv}} \;\leadsto\; \Psi_f \text{ concentrates on individual bearer load (not automatic suffering proof)}
 \]
-* **Implication（中文）**：该阈值为“类型存在”到“个体痛苦可积累存在”的跨尺度相变界线。
+* **Implication & 独立准入护栏（服从 `Core_Law/SRT_Suffering.md §7` 与 `R4-B1 P1-03`）**：本式为 `P3/P4` 群体–个体负担分布过渡模型候选，**不构成**苦难资格的普遍标量门槛——无论是 `d ≥ d_indiv` 还是 `Stable ISP` 均不单独推出或否定第一人称苦难；苦难判定须依靠独立的第一人称／现象学／承载相关登记证据。
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
