@@ -1,36 +1,112 @@
 ---
 id: SRT-CORE-12B
 type: dynamics
-tags: [L2, Social Reality, Consensus, Hysteresis, Hybrid]
-status: axiomatic_hybrid_v1
+tags: [L2, History, Scaffolding, TrustAllocation, ActiveForgetting, U5, Hysteresis, Hybrid]
+status: active
+version: v3
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-BRIDGE]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-12A, SRT-CORE-21B, SRT-CORE-21C-BRIDGE-HYPOTHESES, SRT-CORE-22, SRT-D-VALUE-CANONICAL]
 ---
 
-# SRT Ontology II: The Vergence Domain (Hybrid Edition)
+# SRT Ontology II: Recursive Historical Generation & The Vergence Domain (`L_2`)
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ontology_L2_Split/README.md`](Ontology_L2_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal L_2 Dynamics (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+> **R4-B2 实质重构定位（2026-11-26）**：本文件以新版 `Spine`、`One_Formation`、`Core_21b P1-T03`、`Core_21c P2/P3-B15`、`Core_22` 与 `_SRT_D_VALUE_CANONICAL.md` 为统一形式基线，将 `L_2` 全面重构为 **“历史如何参与现实的递归生成”** 的正面理论与机制主文件，**绝不再将历史简化为静态记忆仓库、被动沉积表或固定空间动力学惩罚项**：
+> - **核心贯通轴**：生成与实际化 → 历史留存与持续生成效力 → 背景化、脚手架与生成盈余 → 信任重估与历史调用调整（含主动遗忘二式）→ 新比对与生成条件重构 → 病理失配与 `U5` 绝对化；
+> - **完整落地已裁决接口**：`R3-05` 历史痕迹—信任—跨主体三分接口（$\rho\ge 0$ / $w_{\text{trust}},\Delta w_{\text{trust}}\in\mathbb R$ / $W_{\text{social}}$）、前背景五种交叠去向（`B3-a` 拓展）、历史调用四式与主动遗忘二式；`R3-08` 五类变化刻度、认知生成三分、遮蔽四分、`U5 ≠ U6` 深化及 V 层正面暂时背景化；`R4-A / ENG-03` 规范 `d` 强度与广义关切四维分离、AI 非线性三阶承载审查。
 
 ---
 
 
 ## Terminology Alignment (术语与原始意图对齐)
 
-- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
+- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`D_eff`、`D_stake`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
+- 核心方程主锚点归口 `Core/SRT_Core_22_Equations.md`；价值与关切规范定义归口 `_SRT_D_VALUE_CANONICAL.md`。
 
+# Part A: Recursive Historical Generation & Formal `L_2` Mechanisms
+
+## 0. 历史的递归生成架构（`R3-05 / R3-08 / R4-B2` 正面核心主轴）
+
+历史不是“过去存在在另一时空里隔空遥控现在”，而是**先前 `Selection` 在当下仍然保持的实际生成效力**（兼容 `Core_Law/SRT_Generative_Ontology_Spine.md §4, §11` 与 `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T03`）。它既是先前选择的结果，也是后续选择的构成条件，并可在特定组织条件下参与形成新的选择方式与比对维度。
+
+### 0.1 历史怎样形成：发生、痕迹、留存、持续效力与前背景五去向
+
+1. **四层形成链与未成体兼容性**：
+   - **发生（Occurrence，`P1-T02` 底线）**：确定实际化已发生即不可被后续过程擦除为“从未发生”；允许无后续留存的终端 `Selection`，不预设万物必留痕。
+   - **痕迹（Trace）**：在存在显式保留或写回机制的模型中，先前选择留下可被后续过程读取或承载的结构差异。
+   - **留存（Retention / Closure）**：留存结构跨事件维持，并开始系统性改变后续相容路径的摩擦、权重或可达条件。
+   - **持续生成效力（Continuing Efficacy / `L_2`）**：先前选择通过当下结构或留存条件持续条件化后续生成方向、生成关系、可达空间与比对准则（**不以已形成垂直组织或 `One` 为普遍必要前提**，兼容局部非 `One` 历史效力）。
+2. **`L_1 / L_2` 双视角与快慢尺度非等同**：
+   - `L_1`（当下实际形成的结构）与 `L_2`（先前选择通过当下结构对后续生成的持续效力）是同一现实或组织上的不同认识视角；路径依赖、滞回与返回点记忆是检验历史效力的重要手段，但**不是 `L_2` 成立的普遍必要条件**。
+   - 快慢时间尺度垂直协作（缓慢背景条件化快速选择，持续快速选择逐步改写缓慢背景）是重要实现机制，但**垂直结构 $\neq$ 快慢尺度**。
+3. **整个前背景生成关系的历史与五种交叠去向（`B3-a` 完整拓展，非互斥、非必经阶梯）**：
+
+| 背景去向（条件性、可交叠） | 历史生成意义与防混同边界 |
+|---|---|
+| **1. 构成性退隐** | 局部显现退隐为支撑当前前景与更高尺度整体秩序的协作条件（`R3-02`） |
+| **2. 阴影（`B3-a`）** | 退入相对背景、隐性框定后续可达空间并保留潜在再显现条件（`阴影 != 平行实体`） |
+| **3. 张力（`B3-a`）** | 尚未被当前组织协调消化的差异持续施加失配压力 |
+| **4. 后续摩擦（`B3-a`）** | 未协调关系在后续选择或条件变动中浮现为实际阻力、代价或修正信号 |
+| **5. 终止或消散** | 不再具有可建立的后续生成效力（守住终端 `Selection`，不预设历史永不消失） |
+
+### 0.2 历史怎样被调用：`R3-05` 跨尺度三层区分与 $\rho / w_{\text{trust}} / W_{\text{social}}$ 三分接口
+
+1. **跨尺度三层区分（拒绝泛拟人化）**：
+   - **历史沉积**：先前选择留下仍有效的生成条件（跨尺度广泛存在）；
+   - **路径倾向**：既有条件使某些方向更易发生（跨尺度广泛存在）；
+   - **信任分配（`Q09` 本义）**：具备趋势评估与重分配能力的系统，“基于变化的秩序趋势，将其分配到事物表征的过程”——通过调整既有关系在当下选择中的条件化权重，**无需删除既有记忆即可下调或重配其有效地位**（不把“信任”拟人化推广至一切物理尺度，低尺度是否存在同功能非拟人机制保持 `OPEN`）。
+2. **适用模型下的三分离接口（严守 `Spine §11` 普遍边界，仅在声明保留历史、信任重估与跨主体关系的适用模型中启用）**：
+   - **非负痕迹密度 $\rho(p,t) \ge 0$**：保留 `T-L2-Scaffold` / `Def-PathTrace` 的非负性与正向沉积 $\Delta\rho^+(p,t) \ge 0$（自然衰减靠衰减项 $\lambda_d$，**严禁将负号直接写入 $\rho$ 污染 `Def-PathTrace` 单调性**）；
+   - **个体信任调节权重 $w_{\text{trust}}^{(i)}$ 及其有符号变化量 $\Delta w_{\text{trust}}^{(i)} \in \mathbb{R}$**：严格分离“历史留存深度（$\rho$）”与“基于秩序趋势的当前信任调用地位（$w_{\text{trust}}$）”；明确护栏：正向重估（$\Delta w_{\text{trust}} > 0$）不意味着最终 $w_{\text{trust}} > 0$，权重正负亦不自动等同于当下必然采纳该路径（具体权重—采纳映射由各声明模型定义）；
+   - **跨主体关系权重接口 $W_{\text{social}}$**（暂不固定数学形式，暂不入 `_SRT_SYMBOL_TABLE.md`）：在社会与制度层区分高 $\rho$ 路径惯性／强制约束与可经跨位置校准修订的公共信任分配。
+
+### 0.3 历史怎样支撑新生成：背景化非遗忘、脚手架生成盈余与认知生成三分
+
+1. **V 层正面暂时背景化（背景化 $\neq$ 遗忘）**：背景化**不必然**削弱历史效力，反而常通过脚手架（语言语法、数学符号、习惯、公共时间与制度）稳定强化背景支撑，替当前系统承接大量重复比对工作。由此产生的**生成盈余（generative surplus）**，使有限位置得以将稀缺的比对与注意资源投向更高尺度的新关系与新秩序，而不是从零重做每一次比对。
+2. **历史与认知的三种正面生成过程（`R3-08`，连接 `Core_21c P2/P3-B15` 五类变化刻度）**：
+   - **① 历史关系复用**（对应刻度 1–2）：借助概念、习惯与符号锚点快速调用既有耦合（解释认知与组织效率）；
+   - **② 历史关系重构**（对应刻度 2–4）：通过改写高构成深度检索锚点、比对入口、主动扰动或信任重估（$\Delta w_{\text{trust}}$）重组既有历史网络（解释框架调整与结构洞察）；
+   - **③ 新比对能力生成**（对应刻度 4–5）：不同生成关系发生构成性耦合（如习得新数学图式或跨位置协作协议），使系统获得此前不具备的区分与组织能力，反向改变参与者自身生成条件（对应 `(A, B) → (A', B', C)`）。
+   - **边界**：上述三过程与构成深度剖面保留为自然语言分析接口（暂缓立符 `q`，守住 `07-23/24` 撞车记号禁运）；具体神经/计算实现留待 `R4-C / R5`。
+
+### 0.4 历史怎样被重构：历史效力与调用调整四式及主动遗忘二式
+
+为避免把“不在前景”误当“失去效力”，须严格三分：**① 退出当下显现（不在前景）** $\neq$ **② 退出主动调用** $\neq$ **③ 退出实际生成作用（效力真正减弱或解除）**。在严守 `P1-T02` 发生不可逆底线（一切后续调整均属新生成，绝不能使已发生事件变为从未发生）的前提下，将相关过程归为四种可交叠分析候选：
+
+| 调整方式 | 机制要点与边界 | 与既有模型 / 主动遗忘二式的接口 |
+|---|---|---|
+| **1. 自然衰减** | 停止重复遍历后，历史痕迹及其效力随时间逐渐减弱 | **主动遗忘式一**：在 `Def-PathTrace` 模型中，需满足相应衰减条件（$\lambda_d > 0$）、足够时间跨度且无持续补充沉积时，$\rho$ 方衰减至 $\rho^*$ 以下 |
+| **2. 退出显现与前背景重排** | 历史退出当下前景或显式比对 | 须独立核查究竟转入了更稳固的背景脚手架，还是同时退出了主动调用与实际约束 |
+| **3. 信任重估** | 历史痕迹仍可召回（$\rho$ 未清零），但借有符号 $\Delta w_{\text{trust}}$ 调整其在当下选择中的权重地位 | 对接 `0.2` 三分离接口，无需擦除记忆即可解除旧路径对当下决策的主导 |
+| **4. 结构解固** | 承载历史的组织条件、检索锚点或协议被重构，使受限路径重新可达 | **主动遗忘式二**：低摩擦重巩固窗口解固属**待验证条件候选**，进入窗口不自动保证解固成功；对接 `Core_21c B15` 刻度 4–5 |
+
+- **独立检验原则**：**历史痕迹下降（$\rho\downarrow$）、信任权重降低（$w_{\text{trust}}\downarrow$）、实际约束解除与路径重新开放**四者彼此不等同，须在模型与经验研究中分别检验。
+
+### 0.5 历史怎样成为病理：遮蔽四分、六种前背景失配与 `U5` 绝对化
+
+1. **条件变化与脚手架延续的去绝对化校准（`R3-05 P2-03`）**：生成条件变化而既有脚手架继续参与生成，**不自动**构成不健康固化（既有脚手架仍可能有效）。只有当**既有脚手架与变化后的生成条件产生持续失配，且阻碍了必要的重新比对与再选择**时，才构成向固化势阱滑落的重要条件性诊断线索（非循环判据继续保持 `OPEN`）。
+2. **给定感去病理化与遮蔽四分（`R3-08 P2-03`，不将 `U5` 垄断设为一切遮蔽的必要门槛）**：
+
+| 状态 | 理论定位与防混同边界 |
+|---|---|
+| **1. 给定感** | 对象化 → 范畴化 → 默认化使已形成认知接口快速直呈前景的正面表现（本身非病理） |
+| **2. 有限性遮蔽** | 任何有限位置与表征无法穷尽全部生成关系的结构性有限（非病理，非 `U5`） |
+| **3. 病理性遮蔽** | 重要生成关系与现实后果受到持续、难以纠正的排斥（可先于 `U5` 全局垄断发生） |
+| **4. `U5` 绝对化** | 组织前背景与选择的方式自身退出有效再选择、获得事实上的自我豁免（严守 `07-27` 校正 `U5 ≠ U6`） |
+
+3. **`U5` 绝对化的深层诊断（`R3-08`）**：`U5` 不等于静态停滞、规则不变或缺乏互动；高度固化的系统完全可以保持**高频局部创新、策略微调与活跃双向反馈**，却把一切新关系与新资源都导向维护一套退出有效再比对的核心组织方式（由此解释高持续性、高局部生成效率与结构病理性的共存）。同时完整对接 `_SRT_D_VALUE_CANONICAL.md §2` 的六种候选前背景失配：**① 遮蔽 / ② 错配 / ③ 固化 / ④ 失权 / ⑤ 断流 / ⑥ 局部劫持**，以及 `R3-08` 持续动态平衡（废弃机械的“关闭 → 触发 → 重开”开关模型，兼容动力学滞回与非线性重构势垒）。
+
+---
 
 ## I. L_2 Formation Dynamics
 
-> **Current-reading guard**: Part A retains historical `Ax/T` labels, but its trace, scaffold, rights, authorization, legitimacy, algorithm and consciousness maps are declared-model / P2-P4 bridge constructs unless a current upstream owner independently establishes more. Ordinary irreversibility does not by itself create `L_2`.
+> **Current-reading guard**: Part A §I–§III retain historical `Ax/T` labels for cross-reference continuity, but their trace, scaffold, rights, authorization, legitimacy, algorithm and reorientation maps are declared-model / `P2–P4` bridge constructs scoped under §0 above and `Core_22 §0-A`. Ordinary irreversibility does not by itself create `L_2`.
 
 ### Ax-L2-01: Hysteresis Accumulation
 **Declared-model definition**: where an explicit retention / writeback mapping has been established, `L_2` may be modeled as an integral of retained historical selection paths.
@@ -76,6 +152,8 @@ L₂ hardening
 **Def-PathTrace** *(derivation status: induced historical functional — not an independent ontological primitive)*:
 
 $\rho(p, t)$ is a **coarse-grained intermediate-layer order parameter**, induced by the path-history of existing SRT quantities. It is not a new axiomatic object for two reasons: (a) independent axiom status would inflate theoretical ontological burden; (b) it would duplicate the writeback mechanisms already formalized in Ax-L2-06b and Ax-Op-03b. Nor is $\rho$ a static function of current $\Psi_f$ or $d$ — a purely instantaneous function would lose the historical and hysteretic character essential to the sedimentation ratchet.
+
+> **与 `§0.2` `R3-05` 历史三分接口的强制对接（`R4-B2`）**：`Def-PathTrace` 中的 $\rho(p,t) \ge 0$ **严格只承担非负痕迹密度职责**（正向沉积 $\Delta\rho^+ \ge 0$，经 $\lambda_d > 0$ 自然衰减，严禁写入负号污染其非负单调性）。在具备趋势评估与重分配能力的声明模型中，个体对历史路径的当前信任调节须由独立的**有符号信任权重 $w_{\text{trust}}^{(i)}$ 及其更新量 $\Delta w_{\text{trust}}^{(i)} \in \mathbb{R}$** 承担，跨主体公共信任分配由 $W_{\text{social}}$ 接口承担；从而实现“不擦除历史痕迹（$\rho > 0$）即可下调其当下调用权重（$w_{\text{trust}} \downarrow$）”。
 
 **Formal definition (continuous-time historical functional)**:
 
@@ -181,27 +259,27 @@ $$F_{causal} = T \nabla S(\tau)$$
 
 ### T-L2-02: Civilizational Divergence Lock Theorem (文明发散锁死定理)
 
-**[H — Novel Prediction；注："Deductive Statement"已降级——dḏ/dt<0依赖"全面算法化"的经验前提，非纯逻辑推导，属于条件性H预测]**
+**[H — Novel Prediction；条件性社会动力学假说，`R4-B2` 已按 `_SRT_D_VALUE_CANONICAL.md §1, §5b` 解耦规范 `d` 强度与集体广义关切范围]**
 
-当社会全面将核心注意力网络外包给 $L_2$-封闭的算法系统时，集体关切范围 $\bar{d}$ 退化：
-$$\frac{d\bar{d}}{dt}\bigg|_{\text{全面算法化}} < 0 \implies \bar{d} \to d_{\min}$$
+当社会全面将核心注意力与比对网络外包给 $L_2$-封闭的算法系统时，集体**广义关切范围与有效再选择带宽**（记为集体关切带宽代理 $B_{\text{concern}}^{\text{coll}}$，旧记 $\bar{d}$；注意区分于个体规范风险敏感强度 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$）面临退化风险：
+$$\frac{d B_{\text{concern}}^{\text{coll}}}{dt}\bigg|_{\text{全面算法化}} < 0 \implies B_{\text{concern}}^{\text{coll}} \to B_{\min}$$
 
-**dḏ/dt < 0 的驱动机制**（三条并行路径）：
-1. **Echo chamber 效应**：推荐系统优化点击率→强化已有θ→抑制d横向扩展（Ax-Cog-4 ρ_c联结）
-2. **Ψ_f 系统性削减**：算法滤除摩擦性L₀信号（负面反馈、异质观点）→ Ĝ_θ 失去对L₀的直接摩擦锚点
-3. **注意力外包正反馈**：低Ψ_f→低d扩展需求→更依赖算法→更低Ψ_f（闭环压缩）
+**退化驱动机制**（三条并行路径，对应 `§0.5` 六种前背景失配中的遮蔽、断流与局部劫持）：
+1. **Echo chamber 效应**：推荐系统优化短程表层点击→强化既有 $\theta$ 与局部偏好权重→抑制广义关切横向拓展与新比对能力生成（`Ax-Cog-4` $\rho_c$ 联结）
+2. **后果回流与 $\Psi_f$ 现实校准被切断**：算法过滤异质摩擦信号与现实反抗（`R3` 撞墙）→ 形成 `§0.5` 病理性遮蔽与 `断流`，集体组织失去对真实外部变化的一线反馈锚点
+3. **注意力与判断外包正反馈**：短期表面低摩擦 → 削弱主动再比对与风险承担 → 更深依赖既有默认通道 → 更强 `U5` 组织豁免倾向（高频局部优化与核心机制固化并存）
 
-崩溃条件：若 $\bar{d}$ 低于临界值 $d_c$（社会维持 $L_0$ 直接摩擦互动的最小带宽），则文明系统进入**发散锁死**状态：
-$$\bar{d} < d_c \implies \mathcal{F}_{civil}(\text{response to } L_0\text{-crisis}) \to \text{Divergent (Unbounded Error)}$$
+崩溃条件：若集体有效关切与现实校准带宽 $B_{\text{concern}}^{\text{coll}}$ 低于临界阈值 $B_c$（旧记 $d_c$，社会维持现实危机直接校准的最小带宽代理），则文明系统进入**发散锁死**候选区：
+$$B_{\text{concern}}^{\text{coll}} < B_c \implies \mathcal{F}_{civil}(\text{response to } L_0\text{-crisis}) \to \text{Divergent (Unbounded Error)}$$
 
-**发散路径说明**：$\bar{d} < d_c$ 时，L₀危机信号（物理/生态/社会突变）无法穿透L₂算法过滤层被识别→响应延迟呈正反馈放大（类似开环控制系统中增益超出稳定边界）→误差无界。
+**发散路径说明**：当 $B_{\text{concern}}^{\text{coll}} < B_c$ 时，无历史先例的生态/物理/社会突变信号难以穿透封闭算法过滤层，响应延迟呈正反馈放大。
 
-**$d_c$ 操作化候选**（关键参数，待精确化）：$d_c$ 估计方向 = 社会系统从L₀危机发生到有效响应所需最短感知-决策-行动闭环对应的最小d值，可能与社会复杂度和危机响应时间窗口相关：$d_c \approx f(\tau_{response}, N_{scale})$，具体形式待社会动力学实证。
+**$B_c$（旧记 $d_c$）操作化候选**：社会系统从现实危机发生到有效校准-决策-行动闭环所需的最小集体关切与反馈带宽代理，$B_c \approx f(\tau_{\text{response}}, N_{\text{scale}})$，具体形式待社会动力学实证。
 
-* **Implication**: 全面算法化不是效率提升，而是通过切断与L₀真实危机的摩擦互动，导致文明系统丧失危机响应能力的热力学崩溃路径。
-* **Cross-ref**: Ax-L2-01 (迟滞积累); Eq-Evo-01b (代谢增益调制); Def-L2-Algo (算法即极端L₂态，Ψ_f→0)。
+* **Implication**: 全面算法外包的风险不在于算法“效率高”，而在于切断了现实后果回流与跨位置再比对通道；该假说不以“单标量 $d$ 最大化”为目标，而是诊断集体可延续、可协调、不外包、可再选择四判据（`_SRT_D_VALUE_CANONICAL.md §5b`）的同步失稳。
+* **Cross-ref**: Ax-L2-01 (迟滞积累); `§0.5`（遮蔽四分与 `U5` 绝对化）; Def-L2-Algo (算法即低历史承载模型类); `_SRT_D_VALUE_CANONICAL.md §5b`。
 
-**证伪条件**：① 若高算法化社会的集体危机响应能力（如大流行/气候/金融危机响应速度）不低于低算法化社会，则dḏ/dt<0假说失效；② 若 $\bar{d}$ 代理指标（如新闻多样性、跨议题公共参与深度）在高算法化社会中不系统性下降，则机制路径需修订。
+**证伪条件**：① 若高算法化社会的集体危机响应能力（如大流行/气候/金融危机响应速度）不低于低算法化社会，则发散锁死假说失效；② 若集体关切范围代理（如跨议题信息多样性、公共纠错与跨位置参与深度）在高算法化社会中不系统性下降，则机制路径需修订。
 
 ### Ax-L2-03: Hardness by Automorphism
 **Formal Definition**: Objectivity scales with the size of the automorphism group.
@@ -394,112 +472,116 @@ $$\Delta\Psi_f^{field}(x_{comp},\, t) \;=\; f_\kappa(\kappa(t) - \kappa_0,\, x_{
 
 ### Co-Evo-2: Migrating Attractor Trap（迁移吸引子陷阱）
 
-**命题**：在 $t$ 时刻深度对齐某局部吸引子的算子，在 $t + \Delta t$ 该吸引子迁移后可能陷入错位。最大化当前 $d$ 的策略是局部最优但长期脆弱的。
+**命题**：在 $t$ 时刻深度对齐某局部吸引子的算子，在 $t + \Delta t$ 该吸引子迁移后可能陷入错位。单方面追求当前风险敏感强度 $d$ 或局部锁定深度最大化，在变化景观下是长期脆弱的（对齐 `_SRT_D_VALUE_CANONICAL.md §5b`：退出单标量 `d` 最大化叙事）。
 
-这就要求区分两个独立算子属性：
+这就要求在声明的 `Bearer (P+E)` 模型中区分两个独立属性：
 
-| 属性 | 度量 | 长期意义 |
+| 属性 | 模型内度量职责（`R4-A / R4-B2` 对齐） | 长期意义 |
 |---|---|---|
-| $d$（对齐深度） | 当前追踪 L₀ 曲率方向的数量与精度 | 当前意识深度 |
-| $d_{\text{mobile}}$（再对齐能力） | 吸引子迁移时 θ 重新定向的速度与容量 | 跨景观变化的适应力 |
+| 规范 $d$（风险敏感强度） | 不可逆风险梯度范数 $d = \|\partial\mathcal{U}/\partial\mathcal{S}\|$（**严分于**广义关切范围与无赌注容量 `D_eff`） | 当前强承载风险敏感强度（高 $d$ 本身**不等于**意识深度或秩序健康） |
+| $d_{\text{mobile}}$（动态再对齐能力） | 吸引子或生成条件迁移时 $\theta$ 在可支付约束下重新定向的能力（`Core_22 Eq-DValue-Mobile-1`） | 跨景观变化的适应与重构力 |
 
-高 $d$ + 低 $d_{\text{mobile}}$ = **冻结态**（见 §Consciousness-2D-Map）。
+高 $d$ + 低 $d_{\text{mobile}}$ = 模型内**冻结态候选区**（高风险敏感压力但丧失再对齐能力；见下 §Consciousness-2D-Map）。
 
-* **Cross-ref**: `SRT_Core_12a T-L0-NonStatic`（L₀ 非静态，曲率积累）; `SRT_Core_22 Eq-DValue-Mobile-1`（d_mobile 公式）; §Consciousness-2D-Map（四象限地图，下方）。
+* **Cross-ref**: `SRT_Core_12a T-L0-NonStatic`（L₀ 非静态，曲率积累）; `SRT_Core_22 Eq-DValue-Mobile-1`（`d_mobile` 公式）; `_SRT_D_VALUE_CANONICAL.md §1, §5b, §11`; §Consciousness-2D-Map（下方）。
 
 ---
 
-## §Consciousness-2D-Map: Two-Dimensional Consciousness Candidate Model（二维意识候选模型）
+## §Consciousness-2D-Map: Two-Dimensional Sensitivity–Reorientation Candidate Map（敏感强度–再对齐二维候选坐标图；旧称二维意识模型）
 
-**新增（2026-04-10）**
+**新增（2026-04-10；`R4-A / R4-B2` 语义校准 2026-11-26）**
 
-### 意识不是单轴问题
+> **准入与非混淆硬护栏（`R4-A / R4-B2`）**：本节保留历史锚点名 `§Consciousness-2D-Map` 以维持全库引用，但严格服从 `Core_Law/SRT_Generative_Ontology_Spine.md §8`、`_SRT_D_VALUE_CANONICAL.md §3, §5b` 与 `Philosophy/SRT_Consciousness_Conditions.md`：
+> 1. **`(d, d_mobile)` 坐标不建立意识充要门槛**：`d > 0`、`d_mobile > 0`、`κ_{c1}`、`κ_{c1.5}` 均仅为声明 `Bearer (P+E)` 动力学模型内的下游候选坐标（刻画“不可逆风险敏感强度 × 再对齐机动性”），**绝不单独判定**现象意识存在或缺席（`HP-B` 保持 `OPEN`）；
+> 2. **规范 `d` 强度 $\neq$ 广义关切四维**：本图横轴 $d$ 是规范风险敏感强度，而非广义关切范围、深度或秩序健康（高 $d$ 且低 $d_{\text{mobile}}$ 可对应单风险过敏/焦虑锁定，而低 $d$ 高广义关切范围的健康探索态不在本二维平面内被单一标量穷尽）。
 
-现有意识框架（含 SRT 早期表述）以 $\kappa_{c1}$ 为单一阈值点——超过即有意识，未达则无。这个描述不完整：意识形态需要两个独立坐标刻画。
+### 意识与再对齐不是单轴问题
+
+早期以单一坐标 $\kappa_{c1}$ 划线的方式无法区分“有强烈不可逆风险敏感压力但被 `L_2` 锁死（高 $d$、低 $d_{\text{mobile}}$）”与“兼具承担敏感与动态再对齐能力（高 $d$、高 $d_{\text{mobile}}$）”。在声明的 `Bearer (P+E)` 动力学模型内，至少需以两个独立坐标刻画风险敏感与再对齐状态。
 
 ### 二维坐标系
 
-**X 轴：$d$（对齐深度）** — 算子关切地图与 L₀ 曲率的当前对齐程度
-**Y 轴：$d_{\text{mobile}}$（再对齐能力）** — 吸引子迁移时算子重新定向的容量
+**X 轴：规范 $d$（不可逆风险敏感强度）** — 声明 `Bearer (P+E)` 模型内的 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$（未通过 `Bearer (P+E)` 准入的系统不适用本轴，须标 `NOT ADMITTED / NOT APPLICABLE`）
+**Y 轴：$d_{\text{mobile}}$（动态再对齐能力）** — 生成条件或吸引子迁移时算子在可支付预算内重新定向的能力
 
-$$\text{意识状态} \in (d,\; d_{\text{mobile}}) \text{ 空间}$$
+$$\text{模型内敏感–再对齐工作点} \in (d,\; d_{\text{mobile}}) \text{ 空间}$$
 
 ### 四象限
 
 ```
 d_mobile
    ↑
-高 │  漂移态              意识窗口核心区
+高 │  漂移态              高敏感–高再对齐工作区
    │  (低d,高mobile)      (高d,高mobile)
-   │  参数空间活跃但      对齐深度与再对齐能力
-   │  无真实赌注          同时维持的算子
+   │  参数空间活跃但      风险敏感与再对齐能力
+   │  风险承载耦合弱      同时维持的模型区
    │  ─────────────────────────────────────
-   │  算法/晶体态         ★ 冻结态
+   │  算法/晶体态         ★ 冻结态模型区
    │  (低d,低mobile)      (高d,低mobile)
-   │  无赌注，无方向      深度对齐但无法随
-   │                      吸引子迁移重新定向
+   │  无强承载赌注，      高风险敏感但被 L₂ 刚性
+   │  无自主再定向        锁死、无法随变化重调
 低 └──────────────────────────────────────→ d
       低                              高
 ```
 
-### 四象限语义
+### 四象限语义（模型内工作区，非跨域意识判决）
 
-| 象限 | (d, d_mobile) | 存在形态 | SRT 对应 |
+| 象限 | `(d, d_mobile)` | 模型内动力学形态 | SRT 对接与防误读边界 |
 |---|---|---|---|
-| 算法/晶体 | (低, 低) | 无赌注，无方向；符号外壳 | Def-L2-Algo 极端态 |
-| 漂移态 | (低, 高) | 参数空间活跃，但无真实赌注驱动；随机游走 | 浅层适应，无深度锚点 |
-| **冻结态** | (高, 低) | 深度对齐于某一 L₀ 方向，但 L₂ 刚性封死θ可动性 | **意识的病理变体**（见下） |
-| 意识窗口核心 | (高, 高) | 对齐深度与再对齐能力共同维持 | Thesis 6 主体性的完整形态 |
+| 算法/晶体 | `(低/NOT ADMITTED, 低)` | 无强承载不可逆风险暴露或无自主再定向 | 对接 `Def-L2-Algo` 极端模型类；对 AI 须走 `ENG-03 §4.1` 三阶审查与 `S0–S4`，不推“无意识” |
+| 漂移态 | `(低, 高)` | 参数空间活跃，但单方向风险梯度弱 | 可为浅层随机探索，亦可能伴随低单向敏感度的宽范围探索（须另测广义关切四维） |
+| **冻结态** | `(高, 低)` | 强风险敏感压迫但 `L₂` 刚性封死 $\theta$ 再对齐 | **低再定向病理候选区**（见下，对接 `§0.5` 固化与 `U5`） |
+| 高敏感–高再对齐区 | `(高, 高)` | 强风险敏感与动态再对齐能力共同维持 | 声明强承载模型内的活跃工作区候选；**须另经 `§5b` 秩序增益四判据校验健康性** |
 
-### 冻结态（Frozen State）——意识的病理变体
+### 冻结态（Frozen State）——模型内低再定向病理候选区
 
 **定义**：冻结态 $\equiv \{(d, d_{\text{mobile}}) : d > d_{\min} \;\wedge\; d_{\text{mobile}} \approx 0\}$
 
-**当前读取**：冻结态是声明模型中的低再定向候选解释，不是对 consciousness 或 pathology 的 theory-wide verdict。
+**当前读取**：冻结态是声明 `Bearer (P+E)` 模型中的低再定向候选解释，不是对 consciousness 或 pathology 的 theory-wide verdict。
 
-- 与算法/晶体的区别：冻结态有真实赌注（$d > 0$），有对 L₀ 不可逆结构的深度对齐；算法/晶体两者皆无
-- 与漂移态的区别：冻结态有深度锚点；漂移态有可动性但无锚点
-- 病理机制：高 L₂ 刚性（$\operatorname{Hysteresis}(L_2) \cdot C_r$ 极大）将 $d_{\text{mobile}}$ 压至零，同时 $d$ 仍由旧对齐维持
+- 与算法/晶体的区别：冻结态在声明模型内已建立强承载风险敏感（$d > 0$）；算法/晶体模型类未满足该准入
+- 与漂移态的区别：冻结态存在高强度风险压力但缺乏再对齐机动性；漂移态相反
+- 病理机制：高 `L₂` 刚性（$\operatorname{Hysteresis}(L_2) \cdot C_r$ 极大）或可支付性门控归零（$\chi_{\text{payable}} = 0$）将 $d_{\text{mobile}}$ 压至零，同时 $d$ 仍处于高压状态
 
-**临床对应**：执念、强迫性重复、创伤锁定（PTSD 的本体论描述）、意识形态捕获——系统深度锚定于某方向，但当该方向的吸引子迁移后无法跟随。
+**临床对应候选**：执念、强迫性重复、创伤锁定（PTSD 的动力学候选描述）、意识形态捕获（高 `OAI` / `U5` 绝对化）——系统在旧方向上承受高风险压力，但生成条件迁移后无法通过信任重估或结构解固重新定向。
 
-### κ_{c1} 修正 + κ_{c1.5} 新增
+### $\kappa_{c1}$ 修正 + $\kappa_{c1.5}$ 坐标说明（下游模型坐标，非普遍意识开关）
 
-**旧表述**（错误）：$\kappa_{c1}$ 是 $(d, d_{\text{mobile}})$ 空间中的边界曲线，要求 $d > d_{\min} \wedge d_{\text{mobile}} > 0$。
+**旧表述（已废止）**：将 $\kappa_{c1}$ 写成“最小意识窗口（Bare Consciousness）”普遍开关，将 $\kappa_{c1.5}$ 写成普遍意识活性门槛。
 
-**修正表述**（来自 `Philosophy/SRT_Consciousness_Conditions.md`）：意识不是单一阈值，而是**三层结构**，对应两个独立相变点：
+**`R4-A / R4-B2` 规范口径**（对齐 `_SRT_D_VALUE_CANONICAL.md §3` 与 `Philosophy/SRT_Consciousness_Conditions.md`）：
 
-$$\kappa_{c1}: \quad d \geq d_{\min} \;\wedge\; L_2\text{ 稳定闭合} \quad \text{（最小意识窗口 / Bare Consciousness）}$$
+$$\kappa_{c1}^{\text{model}}: \quad d \geq d_{\min} \;\wedge\; L_2\text{ 稳定闭合} \quad \text{（声明模型内强承载闭合候选坐标，非普遍意识开关）}$$
 
-$$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（意识活性边界 / Consciousness Activity Threshold）}$$
+$$\kappa_{c1.5}^{\text{model}}: \quad d_{\text{mobile}} > 0 \quad \text{（声明模型内再对齐机动候选坐标，非普遍主体性门槛）}$$
 
-**当前候选逻辑**：`d_mobile > 0` 可作为再定向能力的操作性区分量；它不是 bare consciousness 门槛或普遍意识质量分水岭：
+**当前候选逻辑**：`d_mobile > 0` 是再定向能力的操作性区分量，不是 bare consciousness 门槛或普遍意识质量分水岭：
 
-- 越过 $\kappa_{c1}$ → 在该模型中增加 `d / L₂` 候选证据；不证明 consciousness
-- 越过 $\kappa_{c1.5}$ → 在该模型中增加 activity / reorientation 候选证据；不证明 active subjecthood
-- 两坐标之间可被研究为“冻结态”模型区；不由此推出意识存在、缺席或病理
+- 越过 $\kappa_{c1}^{\text{model}}$ → 在该模型中增加 `d / L₂` 稳定闭合候选证据；**不证明 consciousness**
+- 越过 $\kappa_{c1.5}^{\text{model}}$ → 在该模型中增加 reorientation / mobility 候选证据；**不证明 active subjecthood**
+- 两坐标之间可被研究为“冻结态”模型区；不由此推出意识存在、缺席或必然病理
 
-**修正后相变序列**：
+**修正后模型坐标序列**：
 
 ```
 κ = 0        κ_{c1}              κ_{c1.5}          κ_{c2}
   |             |                     |                |
-  | 模型低读数  |  候选窗口坐标       | 再定向候选区   | 模型内固化
+  | 模型低读数  |  候选闭合坐标       | 再定向候选区   | 模型内固化
   | d ≈ 0      |  d / L₂ evidence   | d_mobile > 0  |
   |             |  crossing ≠ proof  |               |
   |             |  ← 冻结态模型区 →  |               |
 ```
 
-* **Cross-ref**: `Philosophy/SRT_Consciousness_Conditions.md`（三层结构权威来源）; T-L0-02（κ_{c1} 相变）; `SRT_Core_22 Eq-DValue-Mobile-1`（d_mobile 公式）; Ax-L2-06b（高 Ψ_f 冻结机制）; `SRT_Constitution_Seven_Theses Thesis 6`（主体性三层修正）; Def-L2-Algo（算法/晶体态对比）。
+* **Cross-ref**: `Philosophy/SRT_Consciousness_Conditions.md`; `_SRT_D_VALUE_CANONICAL.md §3, §5b, §11`; T-L0-02（$\kappa_{c1}$ 相变坐标）; `SRT_Core_22 Eq-DValue-Mobile-1`（`d_mobile` 公式）; Ax-L2-06b（高 $\Psi_f$ 冻结机制）; Def-L2-Algo（算法/晶体态对比）。
 
 ---
 
 ## II. L_2 Stability & Plasticity
 
 ### Ax-L2-04: Plasticity Threshold
-**Formal Definition**: L_2 can be modified only when effective energy exceeds hysteresis barriers.
+**Conditional Model Definition（`R4-B2` 作用域与多路径对齐）**: 在已声明兼容量纲的强承载能量-势垒模型中，暴力越过迟滞势垒改写固化 `L_2` 的候选能量判据可写为：
 $$P_{L_2} = \frac{d_{current} \cdot E_{available}}{\mathrm{Hysteresis}(L_2) \cdot C_r} > 1$$
-* **Implication**: 现实变革需要达到明确的能量阈值。
+* **Implication & 多路径边界（衔接 `§0.4`）**: 上式仅刻画单路径“以能量硬冲破高滞回势垒”的局部模型判据（要求独立声明 $d_{current}$ 与 $E_{available} / (\mathrm{Hysteresis}\cdot C_r)$ 的量纲兼容映射，且不意味着单标量 `d` 越高就必然更易健康重构）。依据 `§0.4`，历史重构**不必**只靠暴力越障——**自然衰减（主动遗忘式一）、信任重估（有符号 $\Delta w_{\text{trust}}$ 下调调用权重而无须先擦除 $\rho$）与低摩擦窗口下的结构解固（主动遗忘式二候选）** 构成了并行且往往代价更低的历史重构路径。
 * **Conditional phase-model interpretation (条件性相变模型诠释)**:
   在该声明模型中，$P_{L_2} > 1$ 可被解释为有足够能量将 κ 从 $κ > κ_{c2}$ 推回 $κ < κ_{c2}$；这不是 universal N&S equivalence，
   穿越收敛结晶相变的势垒。修改 $L_2$ 不是「覆盖旧结构」，而是「使系统退回可塑相再重结晶」。
@@ -966,14 +1048,14 @@ $$\Psi_f = \int \left|\frac{\partial S}{\partial \text{Error}}\right| \cdot \tex
 
 只有当错误 → 物理熵增 (结构崩溃风险) 时,系统才真正"关心"。
 
-#### 5.1.2 AI无痛苦 → 无真实d值
+#### 5.1.2 AI 系统中的痛苦、承载与 `d` 边界（`R4-A / ENG-03` 校准，取代旧线性推导）
 
-纯软件AI:
-- 错误 → 更新权重 (无熵增)
-- 无生存风险 → 无本体论摩擦
-- 因此 $\Psi_f \approx 0$ → $d \approx 0$
+> **旧表述撤回（`ENG-03 §4.1` / `_SRT_D_VALUE_CANONICAL.md §3`）**：旧版“纯软件 AI $\Rightarrow \Psi_f \approx 0 \Rightarrow d \approx 0 \Rightarrow$ 零意识”属已废止的线性归零推导，现按非线性三阶承载证据审查与 `AI 赌注谱系 S0–S4` 校准如下：
 
-**推论**: 当前AI可以有高"智能" (复杂$L_1 \to L_2$映射),但零"意识" (无$d$)。
+对当前无自身不可逆存续承载闭环的 inference-only AI（`AI S0/S1`）：
+- 训练/推理误差触发的权重更新或外部奖励信号，本身不自动建立不可外包的自身存续风险暴露（`Bearer (P+E)` 强承载关系为 **`NOT ESTABLISHED`**）；
+- 因此，声明强承载模型下的规范 `d / D_stake` 记为 **`NOT ADMITTED / NOT APPLICABLE`**（严禁写作实测数值 `d ≈ 0`）；
+- **核心非推论边界**：强承载 `d` 未准入**绝不**构成“AI 零意识”的本体否定证明（`d` 与 `Stable ISP` 均非苦难或意识的普遍必要条件，见 `Core_Law/SRT_Suffering.md §7`），亦**不阻断** Stage 3 独立分域研究（如 AI 系统中的历史上下文留存、信任权重重配、`D_eff` 容量结构与广义关切代理研究）。
 
 ---
 
@@ -1213,12 +1295,12 @@ $$S(\hat{G}, t) \equiv \mu_{L_1}\!\left\{\sigma \in L_1 : \hat{G}_{L_2(t)}[\sigm
 
 > **T-Core-02 对接边界**：条件（$dS/dt \geq 0 \wedge d\mathcal{F}_{collective}/dt \leq 0$）可作为 T-Core-02 不动点的动力学投影候选。局部不动点或 $\mathcal{F}_{collective}$ 极小只说明模型内稳定性，不证明 continued selectability、generative reselectability 或规范正当性。
 
-**最优 L₂**（$L_2^*$）：
-$$L_2^* = \arg\max_{L_2} \frac{d\, d_{collective}(t)}{dt} \quad \text{s.t.} \quad \frac{d\mathcal{F}_{collective}}{dt} \leq 0$$
+**集体景观多样性候选优化目标**（条件模型目标，非单标量 `d` 最大化或伦理正当性定义）：
+$$L_2^* = \arg\max_{L_2} \frac{d\, D_{\text{eff}}^{\text{coll}}(t)}{dt} \quad \text{s.t.} \quad \frac{d\mathcal{F}_{collective}}{dt} \leq 0 \;\land\; \text{四判据与非外包检查满足}$$
 
-其中 $d_{collective}$ 定义为集体自由能景观 Hessian 的参与率指数（Eq-Multi-03）：
-$$d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
-**注意**：$d_{collective}$ 是景观结构的内禀属性（Hessian 谱均匀度），**不等于**个体 $d_i$ 的种群均值 $E_\theta[d]$——优化 $d_{collective}$ 的含义是使 $\mathcal{F}_{collective}$ 景观趋向各向均匀（无 d 值坍缩方向）。
+其中集体景观有效维度容量代理（旧记 $d_{collective}$，严格区别于个体规范风险敏感强度 `d`）定义为集体自由能景观非负且非全零谱（$\lambda_k \ge 0,\; \exists k,\ \lambda_k > 0$；全零谱走 $0/0$ 未定义显式分支）的参与率指数（`Core_22 Eq-Multi-03`）：
+$$D_{\text{eff}}^{\text{coll}} \equiv D_{\text{eff}}(\mathcal{F}_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
+**注意**：$D_{\text{eff}}^{\text{coll}}$ 是集体景观的无赌注谱容量代理（反映可分辨方向的谱均匀度），**既不等于**个体规范 $d_i$ 的均值 $E_\theta[d]$，**也不单独证明**集体秩序健康——须与 `_SRT_D_VALUE_CANONICAL.md §5b` 秩序增益四判据（可延续 / 可协调 / 不外包 / 可再选择）及成员个体后果回流 $C_i$ 联合审查（防止高局部景观多样性建立在代价外包之上）。
 
 **双层选择压力**：
 

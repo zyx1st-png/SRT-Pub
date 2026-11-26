@@ -18,37 +18,37 @@ updated: 2026-11-26
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-26 `R4-A`（`#1159`）与 `R4-B1` 核心形式体系重构已落盘，下一步推进 **`R4-B2` 旧形式长文实质重构**（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-26 `R4-A`（`#1159`）、`R4-B1`（`#1160`）与 `R4-B2` 全部核心本体与形式体系重构已落盘，下一步推进 **`R4-C` 领域层分波次重构方案准备与作者授权**（唯一当前执行入口）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 与 `R3-01..R3-08` 及 `R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A` 统一生成本体与核心定义重构**已于 `#1159`（`d907de18d`）正式合并落地。随后作者于 2026-11-26 针对 `R4-B` 正式裁决 **`1A / 2A 修正版 / 3A`**，授权先执行 **`R4-B1` 核心形式体系重构**（确立 `Core/SRT_Core_22_Equations.md` 为唯一核心方程主锚点，重定位 `Core_Law/SRT_Reference_Dynamics.md` 为 L1 动力学机制解释、具身实现与跨尺度接口，保持 `Core_21` P0 精简，在 `Core_21b` 深化递归 `P1-T03` 并增设 `One` 构成关系专节及预留 `P1-T08` 编号，在 `Core_21c` 修正 `P3-B11` 并增设 `P2/P3-B15` 承接五类变化刻度与防平凡重参数化边界，同步重建 `Core/Equations_Split/*`、`Core_Law/Reference_Dynamics_Split/*` 与 `Operations/Context_Bundles/*`）。本轮不启动 `R5`、不关闭去重后 `63` 项 `OPEN`、不触碰 `25` 个封存 `validation_holdout`、不解冻任何既有 `HOLD`。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2` 与 `R3-01..R3-08` 及 `R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A` 统一生成本体与核心定义重构**已于 `#1159`（`d907de18d`）合并落地；**`R4-B1` 核心形式体系重构**已于 `#1160`（`e4ba0a555`）合并落地；**`R4-B2` 旧形式长文实质重构**已完成 `Core_12a / Core_12b / Core_13a / Core_14 (+ CompactCore) / Core_Law/SRT_L1_Formalism` 重构（以历史递归生成机制为主轴，完整落地 `R3-05` 历史三分与调用四式、`R3-08` 五类变化刻度/跨尺度五机制/Ghost 五位分流/遮蔽四分与 `U5` 深化，严格分离 `d` 强度、`D_eff` 容量、`D_stake` 赌注谱与广义关切四维），并同步确定性重建五套阅读 split 与 `Operations/Context_Bundles/*`。本轮不启动 `R5`、不关闭去重后 `63` 项 `OPEN`、不触碰 `25` 个封存 `validation_holdout`、不解冻任何既有 `HOLD`。
 >
 > **冲突优先级**：本节是截至 2026-11-26 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= 推进 R4-B2 旧形式长文实质重构（Core_12a / Core_12b / Core_13a / Core_14 / L1_Formalism；R4-A 与 R4-B1 已完成落盘；不启 R5、不解冻 HOLD）
-= Execute R4-B2 substantive reconstruction of legacy formal longform files (Core_12a / 12b / 13a / 14 / L1_Formalism) after R4-B1 merge (NO R5, NO HOLD release);
+= 推进 R4-C 领域层分波次重构方案编制与作者授权（AI / Physics / Neuroscience / Philosophy / Spirituality；R4-A #1159 + R4-B1 #1160 + R4-B2 核心与形式体系已全部落盘；不启 R5、不解冻 HOLD）
+= Prepare R4-C domain-wave reconstruction blueprint & obtain explicit author authorization after R4-A/B1/B2 completion (NO R5, NO HOLD release);
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145]
   -> R3 骨架与前置工程清障 [R3 总收口 #1154 + ENG-01..04 #1155..#1158 全部合并；旧草案 #1129/#1140 已关闭]
-  -> R4 canonical：分波次重构 [R4-A #1159 已合并 d907de18d -> R4-B1 核心形式体系重构已落盘 -> 下一步 R4-B2 旧形式长文重构 -> 后续 R4-C 领域层分波次重构]
+  -> R4 canonical：分波次重构 [R4-A #1159 已合并 d907de18d -> R4-B1 #1160 已合并 e4ba0a555 -> R4-B2 旧形式长文实质重构已落盘 -> 下一步 R4-C 领域层分波次重构方案与授权]
   -> R5 各领域延伸、形式化/实证检验与出版 [PENDING];
 
 CURRENT IMMEDIATE TASK
-= 唯一下一步执行任务：推进 R4-B2 旧形式长文实质重构（Core_12a / Core_12b / Core_13a / Core_14 / Core_Law/SRT_L1_Formalism），清理旧冲突模型、纳入 R3-05 历史三分接口与 R3-08 五类变化刻度并统一算子/历史/动力学接口；
-  -> 未重构下游域（AI 54 份文件及 Physics / Neuroscience / Philosophy / Spirituality）继续遵循 Spine §0.1 过渡规则，系统重构留待 R4-C；
+= 唯一下一步执行任务：编制 R4-C 领域层分波次重构方案（统筹 ENG-03 AI 54 份文件清理蓝图及 Physics / Neuroscience / Philosophy / Spirituality 分波次边界与优先序），提交作者决策授权后依次推进；
+  -> 在 R4-C 获准并完成各域重构前，未重构下游域继续遵循 Spine §0.1 过渡规则；
 
-ACTIVE NOW = 推进 R4-B2 旧形式长文实质重构（R4-A 与 R4-B1 核心形式体系重构已完成；不启 R5、不解冻 HOLD）;
-R4-C / R5 = 后续波次，须获作者单独授权后依次推进;
+ACTIVE NOW = R4-C 领域层分波次重构方案准备与作者授权（R4-A / R4-B1 / R4-B2 全部核心本体与形式体系重构已完成；不启 R5、不解冻 HOLD）;
+R4-C 正式执行 / R5 = 须获作者单独授权后依次推进;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
 §10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / CN-2 E2 / 1B sim / DATA-ACCESS-0 = NO-GO / other HOLD
 = UNCHANGED; no blanket release;
 ```
 
-**当前 `R4-B` 执行口径**：遵循作者 2026-11-26 `R4-B` 三项裁决（`1A / 2A 修正版 / 3A`）——保持 `P0` 精简、深化 `P1` 构成关系（不提前将开放机制升格为已证定理）、`Core_22` 为唯一核心方程主锚点、`Reference_Dynamics` 保留动力学机制解释与具身实现、完整承接三类形式职责与 `R3-08` 五类变化刻度、严分成熟数学模型/开放形式接口/自然语言理论，不强造未经验证的统一公式；不启动 `R5`，不解冻任何既有 `HOLD`。
+**当前 `R4-C` 预备口径**：`R4-A`（统一生成本体与核心定义）与 `R4-B1 / R4-B2`（核心形式体系与五份旧形式长文）已形成完整统一上游基线；下游 `R4-C` 将按域分包推进（优先统筹 `ENG-03` 已批准的 AI 域清理蓝图与其余四域的兼容减法及正面生成机制对齐），严格分批提交作者决策与独立审查；不启动 `R5`，不解冻任何既有 `HOLD`。
 
 ---
 
@@ -133,7 +133,9 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1158 role = PRE-R4 ENGINEERING CLEARANCE ENG-04 & OVERALL CLOSEOUT (NON-SEMANTIC); LEGACY DRAFT PRS #1129 & #1140 CLOSED ON GITHUB (ASSETS PRESERVED IN d053eb958 & main@1d8e8e328)
 #1159 R4-A unified generative ontology & core definitions canonical reconstruction = MERGED / d907de18d
 #1159 role = R4-A CANONICAL LANDING COMPLETE (29 files, SPINE=116,684 tokens, 6/6 P1s & AI 3-stage closed)
-R4-B1 CANONICAL LANDING (2026-11-26) = AUTHOR APPROVED 1A / 2A (REVISED) / 3A FOR R4-B; R4-B1 CORE FORMALISM RECONSTRUCTION COMPLETE (Core_21 / 21b / 21c / 22 sole equations anchor / Reference_Dynamics mechanism & embodiment interface) -> NEXT: R4-B2 LEGACY FORMAL LONGFORM RECONSTRUCTION
+#1160 R4-B1 core formalism & constitutive theorems reconstruction (Core_21/21b/21c/22 sole equations anchor / Reference_Dynamics / D_VALUE §5b) = MERGED / e4ba0a555
+#1160 role = R4-B1 CANONICAL LANDING COMPLETE (25 files, SPINE=120,156 tokens, P1-01..P1-04 & B11/B08 closed)
+R4-B2 CANONICAL LANDING (2026-11-26) = LEGACY FORMAL LONGFORM RECONSTRUCTION COMPLETE (Core_12a / Core_12b recursive history spine / Core_13a Ghost 5-duty triage / Core_14 + CompactCore 5 cross-scale mechanisms / L1_Formalism Level-I separation) -> NEXT: R4-C DOMAIN-WAVE BLUEPRINT & AUTHORIZATION
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md

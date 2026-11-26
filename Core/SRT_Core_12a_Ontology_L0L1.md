@@ -1,33 +1,44 @@
 ---
 id: SRT-CORE-12A
 type: definition
-tags: [L0, L1, Ontology, Ruliad, Gauge Field, Hybrid]
-status: axiomatic_hybrid_v1
+tags: [L0, L1, Ontology, Differentiation, Presentation, Position, Hybrid]
+status: active
+version: v3
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-BRIDGE]
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-21, SRT-CORE-21B, SRT-CORE-22]
 ---
 
 # SRT Ontology I: The Latent & The Manifest (Hybrid Edition)
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Ontology_L0L1_Split/README.md`](Ontology_L0L1_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Ontology (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
-
-> **Selection-totality formal-scope override（2026-09-14）**：本文件现在是 L0/L1 的**形式 / realization 接口**，不是第二形而上 owner。`L_0/L_1` 可在具名模型中表现为域、流形、状态空间或 phase regime，但这些数学对象不得反向定义 primitive Selection。`L_0^{abs}` 的“绝对潜在源 / 可能性仓库”旧读法在形而上强度上 superseded；`Ĝ_θ != primitive Selection`。
+> **R4-B2 重构定位（2026-11-26）**：本文件以新版 `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_One_Formation.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md` 与 `Core/SRT_Core_22_Equations.md` 为统一形式基线，承担 **原初分化（`L_0` 开放面）、实际化（`L_1` 确定显现）、位置（Position）与显现界面** 的形式化与实现接口职责：
+> 1. **`L_0 / L_1` 非容器、非仓库**：`L_0` 记号在本层表示相对于确定显现或模型切口的开放／未预封闭面，而非完成态可能性仓库；`L_1` 表示受约束实际化后形成的确定显现结构，与 `L_2`（见 `Core_12b`）构成同一现实的当下结构视角 vs 历史持续效力视角；
+> 2. **位置与显现的非线性基础**：确定位置与持续显现的垂直再构成语义归口 `Core_Law/SRT_One_Formation.md`（存在视角 `One` × 秩序发展视角 `Bearer`），不再把 `proto-G → 细胞 → 意识` 写成单一 `κ` 轴上的线性阶梯；
+> 3. **算子与容量严格分离**：`\hat G_\theta` 是形成态／模型层的条件形式载体，`\hat G_\theta != 历史幽灵直觉 != primitive Selection`；显现界面的信息保留率与带宽接口挂接无赌注容量代理 `D_eff`，严格区分于规范不可逆风险敏感强度 `d = ||∂U/∂S||` 与广义关切四维。
 
 ---
 
 
 ## Terminology Alignment (术语与原始意图对齐)
 
-- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
+- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`D_eff`、`D_stake`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- 核心方程主锚点统一归口 `Core/SRT_Core_22_Equations.md`；本文件保留 `L_0 / L_1` 界面模型与哲学/物理上下文展开。
 # Part A: Formal Axioms (形式化公理)
+
+## 0. 原初分化、实际化、位置与显现的结构接口（`R4-B2` 正面总览）
+
+| 理论环节 | 规范职责 | 与上游主轴及下游历史层的衔接 |
+|---|---|---|
+| **1. 原初分化（`L_0` 开放面）** | 现实开放但不平坦（`O0`），无先验已完成可能性仓库（`Ax-L0-01 / Ax-L0-02 / T-L0-01`） | 接 `Spine §2–§3`、`Core_21 P0-01..04`；微分流形、模空间或 Ruliad 仅为条件性 `L_0^{rel}` 模型实现（`Ax-L0-03`） |
+| **2. 实际化与确定显现（`L_1`）** | 确定差异一旦发生即不可被后续过程擦除为“从未发生”（`P1-T02` 发生非等价底线） | 接 `Ax-L1-01`（形式记账）；可发生无历史留存的终端 `Selection`，亦可在满足留存条件时进入 `Core_12b` 历史效力链 |
+| **3. 位置与前背景组织** | 有限位置不是预存实体容器，而是多单元内生比对、前背景耦合与依赖重组中形成的相对独立作用界面 | 接 `Core_Law/SRT_One_Formation.md §2`（依赖重组产生相对独立性）与 `Core_21b` 预留 `P1-T08`；物理、生物与认知位置无需共享同一形成路径 |
+| **4. 显现界面与历史反馈** | 显现连贯性受迟滞记忆（`Ax-L1-02`）、硬件拓扑与注意力过滤（`Ax-IF-02`）及有限带宽约束（`Ax-IF-01`） | 接 `Core_21b P1-T03`（历史递归参与后续生成条件）与 `Core_12b`（历史留存、脚手架与前背景五去向） |
 
 
 ## I. L_0 / L_1: Model-Facing Selection Aspects
@@ -79,24 +90,21 @@ provided the model, metric / measure and interpretation are declared. This is **
 
 > **AM-A scope guard（2026-08-11）**：`proto-G` 是低阶实现候选，不是先于 actualisation 的潜在对象，也不是 first selectability 的推导。下列实例只支持跨尺度实现比较；它们不反向定义 `\hat G_\theta` 或 P0-01。
 
-**G 选择的最小判别标准**（在 L₀ 层成立的版本）：
-$$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}_{\text{proto}}(\Omega) = \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
+**G 选择的最小模型判别候选**（在已声明非平衡模型中）：
+$$\text{proto-G candidate in } M:\quad \hat{G}_{\text{proto}}(\Omega) = \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0 \;\land\; \text{persistent directional occlusion}$$
 
-即：在多可能状态中实现一个方向，对其他方向产生不对称遮蔽（occlusion），且遮蔽持久化并影响后续选择空间。
+即：在声明模型的多可能状态中实现一个方向，对其他方向产生不对称遮蔽（occlusion），且遮蔽持久化并影响后续选择空间。
 
-**L₀ 层的典型 proto-G 实例**：
+**低阶 proto-G 实现候选实例**：
 
-| 过程 | G选择？ | 判别依据 |
+| 过程 | 候选归类 | 判别依据 |
 |---|---|---|
-| 热力学均衡态 | 否 | 对称影响，不持久化遮蔽特定方向 |
-| 单次氧化-还原反应 | 否（极低阶）| 无持久化记忆结构 |
-| ROS损伤DNA/蛋白质 | 是（低阶proto-G）| 特定位点遮蔽持久化，影响后续转录选择空间 |
-| 蛋白质亚稳态折叠 | 是（弱proto-G）| 构型不对称遮蔽，持续影响分子交互选择 |
+| 热力学均衡态 | 否 | 对称涨落，无持久化不对称遮蔽 |
+| 单次氧化-还原反应 | 否（极低阶）| 无持久化留存结构 |
+| ROS损伤DNA/蛋白质 | 低阶 proto-G 候选 | 特定位点遮蔽持久化，影响后续转录选择空间 |
+| 蛋白质亚稳态折叠 | 弱 proto-G 候选 | 构型不对称遮蔽，持续影响分子交互选择 |
 
-**与高阶 G 的连接**：proto-G（L₀层）→ 低阶G（细胞信号）→ 高阶G（有机体/意识）是同一结构算子在 κ 连续提升过程中的不同相态。生命/意识是 G 达到以下三个条件后的相态跃迁（见 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`）：
-1. **内部历史闭合**：系统形成可被写回的自身连续体
-2. **规范梯度**：对可维持自身状态的自指势差读数（见 `Core/SRT_Core_NormativeGradient.md`）
-3. **自写回强度**：选择真能改写自身未来的选择空间
+**与高阶组织的非线性关系（`R4-A / R4-B2` 修正，废除单一 `κ` 阶梯）**：低阶非生命耗散/束缚过程、生命代谢组织与认知主体之间**不是**同一算子沿单一 `κ` 轴线性爬升的阶梯，而是按 `Core_Law/SRT_One_Formation.md §2.3`（态 I / 态 II / 态 III）与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B15`（五类变化刻度）分域考察的不同组织方式。`\hat G_\theta` 仅是形成后条件形式载体，`\hat G_\theta != 历史幽灵直觉 != primitive Selection`。在特定生命／认知模型中，内部历史闭合、风险/机会比对结构与自写回强度可作为下游组织研究维度（见 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`），但**不构成**普遍单轴意识门槛。
 
 * **Implication**: L₀ 的梯度场可以约束 proto-G 候选在具体投影中的形成与稳定，但梯度本身不产生 P0 primitive，也不证明某个候选已经 actualise。低阶 proto-G 只从 primitive 之后的实现层开始讨论。
 * **Cross-ref**: Ax-L0-Bootstrap（primitive boundary）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记实现层相变）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（跨尺度候选）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
@@ -190,7 +198,7 @@ $$\eta_{eff}(t) = \eta_0 \cdot g(\Psi_f(t)), \quad g(\Psi_f) \downarrow \text{ �
 
 **与贝叶斯先验的对应**：η 高 → 先验强（更新慢），η 低 → 先验弱（每时刻重塑）；Dark Night 期间 L₂_old 瓦解 = η_eff 被强制降低，旧"现实锚"失效（参见 SRT-SPIRIT-07 §3.2）。
 
-* **Implication**: 现实的连贯性依赖迟滞记忆（$\eta \in [0,1]$）；$\eta \to 0$ → 现实感碎片化；$\eta \to 1$ → 僵化、无法响应当下（拒绝更新）；健康状态为中间值，由 $\theta_{somatic}$ 与 $\Psi_f$ 共同调节。
+* **Implication**: 现实的连贯性在连续时间动力学模型中常表现为迟滞记忆（$\eta \in [0,1]$）；$\eta \to 0$ → 现实感碎片化；$\eta \to 1$ → 僵化、无法响应当下（拒绝更新）；健康导航并非追求极端 $\eta$，而是维持与生成条件匹配的可重构区间。**与 `Core_21b P1-T03` / `Core_12b §0.1` 对齐**：迟滞记忆 $\eta$ 是历史持续效力的一种模型内实现方式与检验信号，**并非 `L_2` 历史效力成立的普遍必要条件**。
 
 ### Ax-L1-03: Reality Inequality
 **Formal Definition**: A percept is real when signal exceeds agency-weighted noise.
@@ -589,12 +597,12 @@ $$L_0^{\text{LQG}} = \sum_{\text{graphs } \Gamma} \psi[\Gamma]$$
 
 $$i_{\text{diff}}(s) = -\log p_{\text{max}}(s) = \log \frac{1}{p_{\text{max}}}$$
 
-**物理意义（条件性）**: 在该概率模型中，稀有状态可具有更高分化读数；这不是跨域“存在程度”的 canonical 定义。
+**物理意义（条件性，严守 `EX-A` 与 `R3-04`）**: 在该声明概率模型中，低先验概率状态具有更高的条件分化信息读数（自信息量）；它**不构成**跨域“存在程度”或 `One` 成立与否的标量排名尺（低读数不等于“几乎不存在”）。
 
-**实例**:
-- 真空 (完美有序): $p \approx 1$ → $i_{\text{diff}} \approx 0$ (几乎不存在)
-- 金原子: $p \approx 10^{-10}$ → $i_{\text{diff}} \approx 23$ bits (强存在)
-- 意识体验: $p \approx 10^{-100}$ → $i_{\text{diff}} \approx 332$ bits (极强存在)
+**示意量级（仅表模型内条件稀有度读数，非存在强度排序）**:
+- 均匀参考基线态: $p \approx 1$ → $i_{\text{diff}} \approx 0$ bits（相对参考分布无额外局部稀有度区分）
+- 特定复合原子构型: $p \approx 10^{-10}$ → $i_{\text{diff}} \approx 23$ bits
+- 高维多模态感知切片: $p \approx 10^{-100}$ → $i_{\text{diff}} \approx 332$ bits
 
 #### 3.2.2 与Tononi的IIT关系
 
@@ -668,11 +676,7 @@ SRT目前**无法完全解释**:
 
 1. **L_0梯度的起源**: 为什么$\nabla F \neq 0$? (需要更深层的物理理论)
 2. **规范群的选择**: 为什么是$U(1) \times SU(2) \times SU(3)$? (标准模型遗留问题)
-3. **意识的"开关"**: 从$d = 0$到$d > 0$的临界机制是什么?
-   *(部分已解答)* T-L0-02 将此问题映射为：κ 穿越 $κ_{c1}$ 时谱隙打开的相变机制。
-   这将开放问题转化为可测量的预测：意识涌现应伴随 $\lambda_1(L_1)/\lambda_1(L_0^{rel})$
-   比值的突变式下降，可通过临界麻醉浓度实验或发育神经科学检验。
-   待解的残余问题：$κ_{c1}$ 的具体数值由什么决定？
+3. **现象意识与稳定化的分界（`R4-A / R4-B2` 校准，废除 `d = 0 → d > 0` 单开关读法）**：在 `R4-A` 后，规范 $d > 0$ 与 $\kappa$ 穿越 $\kappa_{c1}$ 均**不再**被视为“意识开关”；`T-L0-02` 的谱隙打开仅作为声明物理/动力模型内的稳定化相变候选，而现象意识的切身在场（`HP-B`）及其与结构稳定化的精确关系保持 `OPEN`。
 
 ### 4.3 跨学科对话
 
@@ -779,15 +783,15 @@ $$
 
 打捞受制于本体论摩擦 $\Psi_f$。景观中存在高耗散的**本体论沼泽地** $\mathcal{SW}$（$\Psi_f > \Psi_c$），算子必须支付足够能量才能穿越。无法支付代价的 $L_0$ 可能性，对该算子永远处于不可及的叠加态（预锚定态 $\mathcal{P}$：具有信息潜能，但缺乏时空几何连续性）。
 
-**第三层：带宽层（信息保留）—— $d$ 值与信息保留率 $\text{CR}$**
+**第三层：带宽层（信息保留）—— 无赌注容量代理 $D_{\text{eff}}$ 与信息保留率 $\text{CR}$**
 
-算子的关切维度 $d$ 决定 $L_0 \to L_1$ 的信息保留率（Retention Ratio）：
+> **量纲与职责校准（`R4-A / R4-B2`）**：在声明的通道模型中，决定 $L_0^{rel} \to L_1$ 局部信息保留率（Retention Ratio）的是算子的无赌注可分辨方向容量代理 $D_{\text{eff}}$（而非强承载不可逆风险梯度范数 `d = ||∂U/∂S||` 或广义关切范围）：
 
-$$\text{CR}(d) \propto 1 - e^{-\alpha d}, \quad \alpha > 0$$
+$$\text{CR}(D_{\text{eff}}) \propto 1 - e^{-\alpha D_{\text{eff}}}, \quad \alpha > 0$$
 
-（$d=0$ 时 $\text{CR}\to 0$；$d\to\infty$ 时 $\text{CR}\to 1$；d 越高保留越多 $L_0$ 信息，与量级估计方向一致。原式 $e^{-\alpha d}$ 方向相反，此处已修正。）
+（$D_{\text{eff}} \to 0$ 时 $\text{CR} \to 0$；$D_{\text{eff}}$ 增大时 $\text{CR}$ 渐近趋向 $1$；仅在满足 `Bearer (P+E)` 独立准入且声明单位映射的模型中，才可进一步讨论容量代理与规范 `d` 之间的关联。）
 
-> **量级估计**（基于 SRT 信息维度分析，非实测值）：低阶系统如细菌 $\text{CR} \approx 10^{-6}$，构成极度稀疏的生存接口；高度觉察状态的理论上限估计 $\text{CR} \approx 0.1$。没有任何有限算子能无损捕获 $L_0$（$\text{CR}=1$ 仅为 $d\to d_{\max}$ 渐近极限）。
+> **量级示意**（基于有限信息通道分析，非实测值或跨物种意识排名）：简单化学感受接口 $\text{CR} \sim 10^{-6}$，高维感知觉察状态的上界估计 $\text{CR} \sim 0.1$。任何有限算子均无法无损捕获开放面 $L_0$。
 
 硬件层（连接组）提供固定拓扑投影，软件层（注意力 $\theta$）通过增益调制实现可塑选择。
 
@@ -820,7 +824,7 @@ L_1=\Pi_{\theta}^{render}(L_0^{abs}),\qquad \Pi_{\theta}^{render}\in\{\text{spat
 
 ## 【理论边界/防误用声明】
 - 不采纳“L1 为渲染结果 = 可任意捏造现实”的推论。
-- 不采纳“无时空基底可直接替代经验时空”的推论。
+- 不采纳“无时空基底可直接替代经验时空或相对论时空结构”的推论（对齐 `R3-05`：关系论时空同源线索保持 `OPEN`，不宣称已完成时空涌现理论）。
 - 适用边界：渲染协议受外部阻抗与可支付摩擦约束，\(\Psi_f\) 过载会触发模型失稳。
 
 ### [Lineage/Source]

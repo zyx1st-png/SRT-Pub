@@ -7,6 +7,7 @@ layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P2
+updated: 2026-11-26
 dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 ---
 
@@ -23,6 +24,12 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 > **RC-A r(t) decision (2026-08-18)**：former P1-T05 不再提供 `r(t)` 的上游。局部 subtractive probe 显示原 `+\kappa_r r(t)` 与 `-\mu_r r(t)` 只是附加 pump / relief 通道，删除后候选 ODE 仍定义良好，criterion-relative T_dir / suffering-proxy / pathology-model branches 仍可被检验。因此本文件**删除**该全局 `r(t)` 变量及两项，不把它改挂到 Selection simpliciter 或 `\varepsilon_{pg}`，也不为其选择新的 downstream 定义。§3.1 的 `r(d,P,t)` 仅是 local operational capacity function，不等同于已删除的全局 `r(t)`，不定义 Selection occurrence。
 > **Depends on**：`Core_Law/SRT_Individuation.md`（σ 定义）、`Core_Law/SRT_Occlusion_Dynamics.md`（d_c 定义与 A/B 分期）、`Core_Law/SRT_Suffering.md`（S 定义与两型分类）、`Core/SRT_Core_22_Equations.md`（主动力学方程）。
 > **Relation**: This file is a **conditional formal coupling layer** for independently admitted L1 objects and model coordinates. It introduces no ontology and supplies no admission test; it makes selected dynamics jointly testable without upgrading their upstream standing.
+>
+> **R4-A / R4-B1 / R4-B2 形式职责与变量分离校准（2026-11-26）**：
+> 1. **Level-I 固定空间耦合定位（对接 `Core_22 §0-A` 与 `Core_21c P2/P3-B15`）**：本文件 `§2–§5` 的耦合 ODE 与 `§6 T-PROJ-1` 均位于 **Level I（冻结状态空间与冻结投影算子 $\mathcal{F}_X$ 下的状态/权重连续演化，对应变化刻度 1–2）**；当生成空间、投影关系、比较准则或组织方式自身被改写（Level II/III，刻度 4–5）时，超出本文件 `C1–C4` 固定投影闭包范围。
+> 2. **模型坐标 `d`、规范风险敏感强度 `d = ||∂U/∂S||` 与广义关切四维严格分离（对接 `_SRT_D_VALUE_CANONICAL.md §1, §5b, §11` 与 `R4-B1 P1-02`）**：本文件 `§3–§5` 出现在阈值比较 `d > d_c` 中的标量坐标 `d` 是**声明遮蔽/接入模型中的局部有效接入或风险-关切代理坐标**（须与 `d_c, d_{narrow}` 具备相容单位与操作定义），**不得**未经量纲校准直接将其等同于无量纲谱容量 `D_eff / rank_eff`、规范风险敏感梯度范数 `d = ||∂U/∂S||` 或广义关切四维（范围/深度/强度/方向）；单标量 `d` 上升不自动证明广义关切范围扩大或秩序健康改善。
+> 3. **历史变量职责分离（对接 `Core_12b §0.2, §0.4`）**：`§2` 的 `w(t)` 表示声明模型的写回率，`§3.2` 的 `ρ_{local} ≥ 0` 严格对应 `Core_12b Def-PathTrace` 的**非负痕迹密度**（禁止负号污染）；`R3-05` 的**有符号信任重估 $\Delta w_{\text{trust}} \in \mathbb{R}$** 与主动遗忘/结构解固并不改写 $\rho$ 的非负性，在本 Level-I 框架中仅可通过声明的 `I_{window}(t)` / `D_{trigger}(t)` 干预项或 Level-II 扩展模型接入。
+> 4. **苦难与 `U5` 对齐（对接 `Core_Law/SRT_Suffering.md §7` 与 `Core_12b §0.5`）**：`Stable ISP` 既不充分亦未被建立为苦难的普遍必要条件（`§4.1` / `§6.2` 苦难分支须独立准入）；`§3.5.3` 的 criterion-relative `lethal L_2` 模型签名（高 `T_dir^{alg}` 与持续累积 `\Delta\Psi_f^{gap}` 共存）兼容 `R3-08 U5` 诊断——局部高效运行可与核心组织方式退出有效再选择并存。
 
 ---
 
@@ -57,10 +64,10 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 | 符号 | 含义 | 范围 | 来源 |
 |---|---|---|---|
 | `σ_{sr}(P,t)` | model-local self-reference coordinate / proxy（本文件 §2-§5 中的 bare σ 为此物） | 声明模型中为 `[0, 1]` | `SRT_Individuation.md`, `_SRT_SYMBOL_TABLE.md Usage Rule 12` |
-| `d(P,t)` | d-value 标量摘要（关切半径） | `[0, d_max]` | `_SRT_D_VALUE_CANONICAL.md` |
-| `d_c(P,t)` | 指定 access/correction criterion、尺度与时域下的声明模型阈值 / 坐标 | 声明模型中为 `[0, d_max]` | `SRT_Occlusion_Dynamics.md` |
-| `d_{narrow}(P,t)` | 声明模型中用于比较运行区间的坐标 | 声明模型中为 `[d_c, d_max]` | 同上 |
-| `ρ(p,t)` | 路径层痕迹密度 | `≥ 0` | `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold` |
+| `d(P,t)` | 声明遮蔽/接入模型中与 `d_c, d_{narrow}` 同量纲的局部接入或风险-关切代理坐标（**严分于**无量纲谱容量 `D_eff`、规范风险敏感强度 `d = \|\|∂U/∂S\|\|` 与广义关切四维；见上方 `R4-B2` 校准与 `_SRT_D_VALUE_CANONICAL.md §1, §5b, §11`） | 声明模型兼容区间 `[0, d_{cap}]`（不默认由无量纲 `rank_eff` 封顶） | 声明遮蔽模型 / `_SRT_D_VALUE_CANONICAL.md` |
+| `d_c(P,t)` | 指定 access/correction criterion、尺度与时域下的声明模型阈值 / 坐标 | 与 `d(P,t)` 同量纲 | `SRT_Occlusion_Dynamics.md` |
+| `d_{narrow}(P,t)` | 声明模型中用于比较运行区间的坐标 | 与 `d(P,t)` 同量纲 | 同上 |
+| `ρ(p,t)` | 非负路径层痕迹密度（严分于 `Core_12b §0.2` 有符号信任重估 `Δw_trust ∈ ℝ` 与 `W_social`） | `≥ 0` | `Core/SRT_Core_12b_Ontology_L2.md §0.2, T-L2-Scaffold` |
 | `Ψ_f(P,t)` | 本体论摩擦 / 可支付性代价 | `≥ 0` | `_SRT_PSI_F_CANONICAL.md` |
 | `T_dir(P,t)` | 对已声明方向的 access / readability / reorientation | direction 准入后为 `[0, 1]`；否则 undefined / not admitted | `_SRT_T_DIR_CANONICAL.md` |
 | `S(P,t)` | 在第一人称苦难已独立准入后的 P2 suffering proxy / model coordinate | 声明模型中为 `≥ 0` | `SRT_Suffering.md` |
@@ -355,7 +362,7 @@ direction 已准入时，T_dir 可被尝试写成主方程的**条件性模型�
 
 ### §4.1 两型分解
 
-只有在第一人称 suffering registration 已由 `SRT_Suffering.md` 的上游条件独立准入后，才可选择 P2/P3 taxonomy coordinates 并在声明模型中写成：
+只有在第一人称 suffering registration 已由 `SRT_Suffering.md §7` 的上游条件独立准入后，才可选择 P2/P3 taxonomy coordinates 并在声明模型中写成（注：`Stable ISP` 与 `σ_{sr}` 坐标对苦难既不充分、亦未被建立为普遍必要条件）：
 
 $$
 S \;=\; S_{sig} + S_{str}
@@ -710,6 +717,7 @@ former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不
 7. **不**证明 `d_c/d_{narrow}` 是 natural thresholds，也不由 A/B regime 建立 suffering、agency、responsibility 或 Selection occurrence
 8. **不**准入 suffering，不把 residual norm、channel weights 或 `\dot{\Delta}_{avail}` 变成 first-person registration 的证明
 9. **不**生成 primitive direction，也不从高 `T_dir` / `T_dir^{alg}` 推出 health、goodness、value 或 legitimacy
+10. **不**覆盖 Level II/III 生成结构改写（`Core_22 §0-A` / `Core_21c P2/P3-B15` 刻度 4–5）：`T-PROJ-1` 以固定状态空间与固定投影族 `\mathcal{F}_X` 为前提；当生成元、边界、信任重估规则或比较准则本身改写时，需退出本 Level-I 闭包。
 
 ### §6.7 T-PROJ-1 的结构性意义
 
