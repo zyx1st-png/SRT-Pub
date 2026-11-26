@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-26
-source_commit: 6abbf5b19
+source_commit: 9e72d7ffc
 source_branch: canon/r4-a-unified-generative-ontology-foundation-2026-11-26
 source_dirty: false
-inputs_digest: 4e628d34e58a03a0
+inputs_digest: f034768431da0f1d
 ---
 
 # SRT 灵性领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 4e628d34e58a03a0
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-26 |
-| 来源 commit | `6abbf5b19` |
+| 来源 commit | `9e72d7ffc` |
 | 来源分支 | `canon/r4-a-unified-generative-ontology-foundation-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
