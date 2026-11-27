@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 695e64cb2
-source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
+source_commit: c142ed30e
+source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
 source_dirty: false
-inputs_digest: 1c4c7d901a1932a7
+inputs_digest: 3fe6cb3d6defd0a4
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 1c4c7d901a1932a7
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `695e64cb2` |
-| 来源分支 | `canon/r4-c4-neuroscience-generative-cognition-2026-11-26` |
+| 来源 commit | `c142ed30e` |
+| 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -44,7 +44,7 @@ inputs_digest: 1c4c7d901a1932a7
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-11-26 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-11-26 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-11-27 |
 | 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-26 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-11-26 |
@@ -331,13 +331,16 @@ For substantive SRT answers:
 - `AI/SRT_AI_01_Ontology.md`
 - `Core/SRT_OPEN_TENSIONS.md`
 
-**⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
+**⚠ 高严重度：registry 提及但文件不存在（4 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
 | 失效路径 | 说明 |
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
+| `Praxis_Split/README.md` | registry 指向的文件在仓库中不存在 |
+| `SRT_Spirituality_Community_and_Sangha.md` | registry 指向的文件在仓库中不存在 |
+| `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` | registry 指向的文件在仓库中不存在 |
 
-**registry 提及、文件存在、但本包未收（91 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（90 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
@@ -428,7 +431,6 @@ For substantive SRT answers:
 - `Physics/SRT_Quant_02_Cosmology_CompactCore.md`
 - `README.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
-- `Spirituality/SRT_Spirit_09_Praxis.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 - `Spirituality/SRT_Spirituality_Claim_Status.md`
 - `Spirituality/_SRT_Spirit_Axioms.md`
@@ -1032,7 +1034,7 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1314,13 +1316,13 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3.5/4 为各自注明的 P1-candidate；T-IRR-3 anti-closure 为 P2/P3 conditional candidate；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
 - 引用规则：涉及学习不可逆性、终止作为吸收边界、ST-A 条件性反闭合、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；P1 absorption 回链 21B，条件性 anti-closure 回链 21C B13
 
-### 13. Spirituality 主轴
-- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（God/Omega, d-infinity, suffering/Psi_f, practice metaphor guardrail; not a primitive source）
-- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
-- Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`
-- Praxis：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` / `Spirituality/SRT_Spirit_09_Praxis.md`
-- 角色：形成 Spirituality 板块从桥接公理到实践演化主线的最小 compact core 入口层
-- 注意：Spirituality 现已具备 bridge + compact core + registry 的入口骨架，但覆盖深度仍少于 Physics
+### 13. Spirituality 主轴（`R4-C5-A` 双向重构，2026-11-27）
+- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、`R3-02` 生成性神性“从存在到秩序”与退隐四层切分、`R3-08` 灵性参与转向/`F_3223` 三义/五层摩擦分立/分布式可支付性反伪装、`§18 CΨ` 独立作者门 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
+- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`：退出旧休眠层声明，登记 `R4-C5-A` 七大正面主轴与 `FB-C5-1..4` 反向核心反馈）
+- Compact core 主干：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`（`v2`：七大正面理论主轴、最小实践节律、伪成长诊断、`Sangha` 与人机共同生成辨析、`FB-C5-1..4`）
+- Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`（`v3`）与双线主体位/共同体文件（`SRT_Spirituality_Selection_Pathology_and_Return.md v2`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`、`SRT_Spirituality_Community_and_Sangha.md`）
+- 兼容清理长文与分片：`SRT_Spirit_01/03/04/05/06/08/09`（`v2`）与 `Praxis_Split/README.md`（`v2`）
+- 角色：研究有限主体如何理解并重构自己参与共同生成的方式，并向核心理论回流四项 `C`（M-origin 候选）修订建议（`FB-C5-1..4`），不单边改写 `Core_Law/` / `Core/` canonical 定义，保持 `§18 CΨ` 独立作者门 OPEN
 
 ## C. 当前 canonical 引用优先级
 
