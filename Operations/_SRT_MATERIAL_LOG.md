@@ -63,7 +63,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 8 |
 | 2026-09_Part01 | [Material_Log/2026-09_Part01.md](Material_Log/2026-09_Part01.md) | 10 |
 | 2026-10_Part01 | [Material_Log/2026-10_Part01.md](Material_Log/2026-10_Part01.md) | 9 |
-| 2026-11_Part01 | [Material_Log/2026-11_Part01.md](Material_Log/2026-11_Part01.md) | 1 |
+| 2026-11_Part01 | [Material_Log/2026-11_Part01.md](Material_Log/2026-11_Part01.md) | 2 |
 
 ---
 
@@ -99,11 +99,11 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：260 条
+- 总提交：261 条
 - A（融入）：167 条
-- B（观察）：43 条
+- B（观察）：44 条
 - C（拒绝）：50 条
-- 融入率：64.2%
+- 融入率：64.0%
 
 ## Current note
 
