@@ -5,11 +5,11 @@ type: material_source_card
 title: "Multi-bubble isoperimetry, topological rearrangement and active interface remodeling"
 source_type: mixed_primary_mathematics_and_biophysics_corpus
 domain: mathematical_physics
-url: "https://www.quantamagazine.org/monumental-math-proof-solves-triple-bubble-problem-and-more-20221006/"
+url: "https://doi.org/10.4310/ACTA.2025.v234.n1.a2"
 doi: "10.4310/ACTA.2025.v234.n1.a2"
 authors: "Emanuel Milman, Joe Neeman et al.; intake trigger Erica Klarreich"
 publication: "Acta Mathematica and related sources; Quanta Magazine trigger"
-date_published: "2022-10-06"
+date_published: "2025"
 date_added: "2026-11-27"
 evidence_level: peer_reviewed_theorem_abstracts_preprint_abstracts_and_biophysics_model_reports
 reliability_level: high_for_verified_source_native_theorem_scopes_pending_proof_and_model_close_read
@@ -37,22 +37,24 @@ source_log: Operations/Material_Log/2026-11_Part01.md
 
 ## 2. Source anchors and source-derived claims (Layer A)
 
+Top-level URL, DOI and publication year identify the Acta primary anchor; corpus spans 2017–2026, with the Quanta trigger dated 2022-10-06.
+
 ### 2.1 Isoperimetric mathematics
 
 | Source / evidence class | Source-owned minimum / anchor |
 | --- | --- |
 | Erica Klarreich, [Quanta 2022-10-06](https://www.quantamagazine.org/monumental-math-proof-solves-triple-bubble-problem-and-more-20221006/), secondary report | 报道 Sullivan 猜想的三、四气泡突破。用于历史入口及直观图解，不代替数学定理。 |
 | Milman & Neeman, [The Gaussian Double-Bubble and Multi-Bubble Conjectures](https://doi.org/10.4007/annals.2022.195.1.2), Annals of Mathematics 195 (2022), 89–206 | Abstract: Gaussian 加权测度及加权周界；预定正测度的 q 个区域，2 ≤ q ≤ n+1，单纯形 Voronoi 簇是唯一极小（忽略零测集）。不得当成欧氏无权气泡定理。 |
-| Milman & Neeman, [The Structure of Isoperimetric Bubbles on R^n and S^n](https://arxiv.org/abs/2205.09102), v4; [Acta Mathematica 234 (2025), 71–188](https://doi.org/10.4310/ACTA.2025.v234.n1.a2) | Abstract: q 计入外部区域，实际气泡数 q−1；R^n 与 S^n 中 2 ≤ q ≤ min(5,n+1) 的标准气泡唯一极小，故三气泡 n≥3、四气泡 n≥4。另有 q≤n+1 的极小簇结构结果：球面界面（含平面情形）、经立体投影后的仿射 Voronoi 区域、连通性和对称面。结构定理不等于全范围最优性定理。 |
+| Milman & Neeman, [The Structure of Isoperimetric Bubbles on R^n and S^n](https://arxiv.org/abs/2205.09102), v4; [Acta Mathematica 234 (2025), 71–188](https://doi.org/10.4310/ACTA.2025.v234.n1.a2) | Abstract: q 计入外部区域，实际气泡数 q−1；Sullivan 猜想范围 q≤n+2，与本文已证明范围不同；R^n 与 S^n 中 2 ≤ q ≤ min(5,n+1) 的标准气泡唯一极小，故三气泡 n≥3、四气泡 n≥4。另有 q≤n+1 的极小簇结构结果：球面界面（含平面情形）、经立体投影后的仿射 Voronoi 区域、连通性和对称面。结构定理不等于全范围最优性定理。 |
 | Milman & Neeman, [Plateau Bubbles and the Quintuple Bubble Theorem on S^n](https://arxiv.org/abs/2307.08164), v3 (2024-12-28; first 2023) | Abstract: S^n 中 n≥5 的五气泡猜想；R^n 相应极小性由近似推出，未证明唯一性。更广 q≤n+1 结果有高维 Plateau 奇异性假设等条件，不能写为所有情形已解决。 |
-| Milman & Xu, [Standard bubbles (and other Möbius-flat partitions) on model spaces are stable](https://arxiv.org/abs/2504.11185), v1 (2025) | Abstract: n≥3、2≤k≤n+1 的标准 k-bubble 簇具有保体积正则无穷小扰动下的非负约束二阶变分；不推出全局极小、唯一性、非线性动力学吸引或有限扰动稳定。 |
+| Milman & Xu, [Standard bubbles (and other Möbius-flat partitions) on model spaces are stable](https://arxiv.org/abs/2504.11185), v1 (2025) | Abstract: R^n、S^n、H^n 中 n≥3、2≤k≤n+1 的标准 k-bubble 簇在一阶保体积正则无穷小扰动下约束二阶变分非负；k 仅计气泡数（通常含一个外部区域时对应前述 q=k+1）。还覆盖多无穷体积胞的标准分割、G^n 中 n≥2 满足 Plateau 律且界面平坦的 Gaussian 分割，以及由球面正则平坦 Voronoi 分割经 Möbius 变换/立体投影得到的非标准分割。稳定性不推出全局极小、唯一性、非线性动力学吸引或有限扰动稳定。 |
 | Milman, [Multi-bubble Isoperimetric Problems](https://doi.org/10.1137/25M1804224), ICM 2026, pp. 678–697 | Abstract / survey entry: 综述多气泡极小结构、稳定性与开放问题。正文证明及最新开放范围尚待专门复核。 |
 
 ### 2.2 From passive topology to active interfaces
 
 | Source / evidence class | Source-owned minimum / anchor |
 | --- | --- |
-| [Vertex stability and topological transitions in vertex models of foams and epithelia](https://doi.org/10.1140/epje/i2017-11489-4), EPJE (2017), [arXiv](https://arxiv.org/abs/1609.08696) | Abstract: 顶点模型中的顶点稳定性和 T1 邻接转换动力学；是固定或既定界面作用下拓扑变化的先行基线。 |
+| Spencer, Jabeen & Lubensky, [Vertex stability and topological transitions in vertex models of foams and epithelia](https://doi.org/10.1140/epje/i2017-11489-4), EPJE (2017), [arXiv](https://arxiv.org/abs/1609.08696) | Abstract: 在该顶点模型中，等边张力的静态四重顶点必分裂；允许张力静态依赖边取向时，四重顶点可以稳定。此结果不要求动态张力重塑或机械记忆，构成 Q-C 的中间负对照；高阶顶点稳定本身不足以识别回写。 |
 | Sknepnek et al., [Generating active T1 transitions through mechanochemical feedback](https://doi.org/10.7554/eLife.79862), eLife 12:e79862 (2023) | Abstract and single-junction model / Fig. 6 discussion: 机械张力增强收缩的反馈模型可促成主动 T1，局部主动重排产生应力并激活邻近重排；与鸡胚原肠形成观察定性一致。不是已逐项验证的分子机制，也不意味着主动 T1 自动生成新比对维度。 |
 | Pérez-Verdugo & Banerjee, [Tension Remodeling Regulates Topological Transitions in Epithelial Tissues](https://doi.org/10.1103/PRXLife.1.023006), PRX Life 1, 023006 (2023-11-27; PMC archived 2024) | Abstract: 动态顶点模型中应变引起张力重塑及机械记忆消散；改变相应速率可调节拓扑转换与组织性质，并预测稳定高阶顶点等。模型与生物组织现象相容不等于生物因果机制已全面验证。 |
 
@@ -87,6 +89,9 @@ source_log: Operations/Material_Log/2026-11_Part01.md
 - [One Formation](../../Core_Law/SRT_One_Formation.md) §2.1–2.3：共同协议、整体性与可分化性、四边界、退隐结构问题。Already owned / reverse constraint：不以连通、稳定或共享空间边界充当 One 充分条件；气泡与外部区域的角色需指定。
 - [D-value owner](../../_SRT_D_VALUE_CANONICAL.md) 形成态价值与递归机会：已拥有关系重构产生新机会成本和比对维度的研究职责。Already owned：局部条件最优迁移只是实现候选，几何维数不等于 d。
 - [Physics complex systems](../../Physics/SRT_Phys_07_Complex_Systems.md) Def-Meso-1 / §D1.8.1 与相关形态生成段：已有表面张力梯度、Marangoni 流与形态生成材料。Partly owned：本卡增添共享边界、体积约束下多区域变分与 T1 反馈的具名外部基准；不把 Marangoni 流与均匀张力下等周极值当同一动力学。
+- [Physics Claim Status v2](../../Physics/SRT_Physics_Claim_Status.md) 物理三态 One（束缚平衡 / 耗散动态 / 内生互维，R3-04-O1 OPEN）及 §2.12：局部极值、受挫和非平衡约束 T3-01 C/E 而不封闭它。Already owned / reverse constraint：被动簇、主动界面与内生互维不得按复杂程度自动升阶，也不新增物理 One 类型。
+- [T-E dissipative/selection structures bridge](../../03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md) §2、§4、§6：物理底座依赖、组织机制依赖、解释充分性三分及稳定不等于健康。Already owned：从被动等周到主动组织是候选机制序列，不能用耗散或反馈本身证明内生互维。
+- [HCLR01 history-conditioned Lie reachability](../../03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md) §HEF 对照与 N5：HEF-3 概率/代价/可达权重改写与候选 HEF-4 更新规则/跨情境生成元组合改写分离。Partly owned：连续张力调节可作为 HEF-3 型对照，T1 只有在独立检验其改变后续生成元/可达拓扑而非仅当前邻接或代价时才可能承担 HEF-4 候选职责；不自动成立，不重开冻结实验。
 - [STATUS live R5-01A](../../STATUS.md) Q-A/B/C：组织—比对共同生成及其分层反例是当前 owner 的研究职责。Already owned；本卡仅供该主线选用，不建立第二个 CURRENT NEXT。
 - [Zhou BBB card](SRC_2026_11_11_Neuroscience_Zhou_BBB_Selective_Protein_Transport.md)：互补的正向输入及承接案例；本卡聚焦界面形成与改变，前卡聚焦已形成组织的维系。不是两篇论文已联合验证共同机制。
 
@@ -98,28 +103,32 @@ Residual after subtraction: 具名数学和生物物理基线、区分固定规�
 
 | Target | Candidate intervention and measurement | Failure or negative control |
 | --- | --- | --- |
-| Q-A | 比较隔离区域与允许共享界面的区域；控制外部耦合、体积/压力及张力；测量干预 A 对 B 或界面形变的响应。 | 若新效力可由原有通道解释，不宣称新通路；外部强制接边只证明接边有效，不证明组织自发形成。 |
+| Q-A | 比较隔离区域与允许共享界面的区域；控制外部耦合、体积/压力及张力；测量干预 A 对 B 的已有可定义响应；共享界面曲率仅在界面成立后定义，另检验关系对象/接口的闭合。 | 若新效力可由原有通道解释，不宣称新通路；外部强制接边只证明接边有效，不证明组织自发形成。 |
 | Q-B | 保持平均压力、分别改变压力差符号/大小，考察独立差异输入的可区分响应及其后续作用；比较仅有固定响应的系统。 | 单调差压—曲率关系可被普通毛细力学完整解释；是差异响应基线，不足以判定内生区分能力生成。 |
-| Q-C | 在顶点模型中分别冻结邻接与张力更新、开放 T1、开放张力反馈；对齐当前几何和可观测输入，比较未来有效响应与邻接。 | 固定门控、预设参数自适应和已知应力记忆模型可能解释全部结果；只有确证新的区分关系反向改变原组织的机制才支持进一步问题。 |
+| Q-C | 在顶点模型中分别冻结邻接与张力更新、开放 T1、开放张力反馈；对齐当前几何和可观测输入，比较未来有效响应与邻接；按纲领 D vs D₀ 等参数、等更新预算、等通信带宽切断组织重构与比对条件间的双向改写。 | 固定门控、预设参数自适应和已知应力记忆模型可能解释全部结果；只有确证新的区分关系反向改变原组织的机制才支持进一步问题。 |
+
+对齐 [R5 programme proposal](../../Operations/Proposals/SRT_R5_RESEARCH_PROGRAM_PROPOSAL_2026-11-27.md) §2.1 与机制/因果及双向回写裁决表：已有变量 z 才适用 E_G0(z1,z2)=0 → E_G1(z1,z2)≠0；无共壁时共壁曲率未定义，不得赋零。两类主张分别做差异干预、撤除新组织、阻断内部路由、历史生成检查与双向切断（按适用层级）。D₀ 是等参数、等更新预算、等通信带宽而切断双向改写的对照，不是简单减自由度；D 与 D₀ 无实质差异只撤回对应双向回写贡献，不自动否定新效力、新接口或新比对维度。
+
+负对照梯队：等张力静态顶点 → Spencer 等静态取向依赖张力（无记忆亦可稳定四重顶点） → Sknepnek / Pérez-Verdugo 与 Banerjee 动态反馈、应变张力重塑及记忆 → 待检验的内生区分与双向回写。各级不是必然发展顺序，须独立消融；不得以高阶顶点稳定性作为 Q-C 特异信号。
 
 至少两个硬反例：固定张力多气泡有非平凡组织但无已证新比对尺度；具有外置固定阈值或预设机械化学反馈的顶点模型可产生 T1 和历史依赖但不自动具有新内生比对。三个 Q 可各自失败，不以 Q-A 成立推出 Q-B/C。
 
-### 5.2 Optional minimal illustrations (M-origin, unexecuted)
+### 5.2 Optional geometry model (M-origin, unexecuted) and degenerate negative control
 
 二维固定面积近似：E = Σ_{i<j} σ_ij ℓ_ij，A_i = a_i；外部区域也纳入界面计数，每条界面只计一次。M0 独立区域，M1 可共享界面/改变邻接，M2 具有可重塑张力的候选动力学。比较保持体积/面积和初始材料参数等适用约束；改变邻接允许空间本身是一种干预，不能偷换成自发产生规则的证据。
 
-另一最小分析用 E = (x_A²+x_B²)/2 + k(x_A−x_B)²/2。固定 x_B 时，x_A* = k x_B/(1+k)。若允许 k 随状态演化，则需将普通 adaptive network 作为同目标对照；仅移动极小点或调节 k 尚不足以生成新比对尺度。该模型不是多气泡论文原式，未运行，不给 SRT 新符号或算子。
+**反例 / 退化下界（非主攻模型）**：标量耦合权重变化不等于新比对维度。用 E = (x_A²+x_B²)/2 + k(x_A−x_B)²/2。固定 x_B 时，x_A* = k x_B/(1+k)。若允许 k 随状态演化，则需将普通 adaptive network 作为同目标对照；仅移动极小点或调节 k 尚不足以生成新比对尺度。该模型无几何与拓扑重排，只是线性标量跟随及其自适应权重基线；不是多气泡论文原式，未运行，不给 SRT 新符号或算子，不作为与二维多区域模型并列的 R5 主攻候选。
 
 ## 6. Suggested patch target and external comparison (Layer C)
 
-research_mode = U; root_question = R5-01A 中新组织关系如何使差异获得因果效力、形成真实区分并可能反向改写作用条件; comparative_claim = none; named_comparator = constrained isoperimetry / classical capillarity / 2017 vertex stability / Sknepnek 2023 mechanochemical feedback / Pérez-Verdugo & Banerjee 2023 tension remodeling; n_mode_triggered = no.
+research_mode = U; root_question = R5-01A 中新组织关系如何使差异获得因果效力、形成真实区分并可能反向改写作用条件; comparative_claim = none; named_comparator = constrained isoperimetry / classical capillarity / Spencer, Jabeen & Lubensky (2017) static anisotropic vertex stability / Sknepnek 2023 mechanochemical feedback / Pérez-Verdugo & Banerjee 2023 tension remodeling; n_mode_triggered = no.
 
 D-track = none / not claimed. 优先候选载体是被动多气泡作为透明基线、动态顶点模型作为强邻居与后续研究窗口。未选定 R5 实验或批准执行。先核验数学定理及模型全文、再冻结干预、指标与同预算对照；不以邻居覆盖固定动力学就宣告整个上游本体论被减除。
 
 ### 6.1 外部对照三项
 
 1. **事实冲突**：无（已核摘要与元数据范围内未发现对候选方向的直接冲突）；若宣称所有气泡必然达到全局最优、五气泡欧氏唯一性已证、所有维度已解决，则越过已核定理范围。证明细节与实验数据未核。
-2. **内部张力**：[Spine](../../Core_Law/SRT_Generative_Ontology_Spine.md) 统一趋优及统一极值为 OPEN，而 [D-value owner](../../_SRT_D_VALUE_CANONICAL.md) 明确保留新比对维度与机会成本的递归生成。若把预设不变的全局目标函数写成所有生成的必要定义，会与后者的开放研究产生张力；不是已发现作者两条成立命题相互矛盾。不得借局部数学定理关闭 T3-01 C/E。
+2. **内部张力**：[Spine](../../Core_Law/SRT_Generative_Ontology_Spine.md) 统一趋优及统一极值为 OPEN，而 [D-value owner](../../_SRT_D_VALUE_CANONICAL.md) 明确保留新比对维度与机会成本的递归生成。若把预设不变的全局目标函数写成所有生成的必要定义，会与后者的开放研究产生张力；不是已发现作者两条成立命题相互矛盾。不得借局部数学定理关闭 T3-01 C/E。另有语料内部方法断层：§2.1 为静态固定体积的全局周界变分（Gaussian 为加权情形）；§2.2 为二维离散顶点模型的局部动力学、耗散与拓扑翻边。两者构成阶梯对照，而非同一个已证明动力学；前者的全局极小定理不能作为后者主动组织动力学的证明。
 3. **已有说法（部分重合）**：Young–Laplace 与 Plateau 平衡解释局部界面作用；Milman/Neeman 2022/2025 及 2023 预印本解释有条件全局几何极值；2017 顶点模型与两篇 2023 主动组织模型解释邻接转换、张力反馈及记忆。出处见 §2。不声称 SRT 首次提出这些机制，也不以固定反馈模型的存在否定更广研究问题。
 
 ## 7. Pipeline 1 review / disposition
