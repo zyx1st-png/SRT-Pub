@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-05
 type: concept
 tags: [Shoshin, Faith, Counter-Actualization, Hybrid]
-status: bridge_hybrid_v2
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
@@ -68,10 +70,10 @@ $$ \text{Shoshin}^{proxy}_{\theta,\tau,K}(\sigma) \equiv -\nabla_{\sigma} \bar{F
 $$ v_{actual} = -\nabla F_{\theta,K}(\sigma) + B(L_2) $$
 * **Implication**: 初心代理可用于比较偏置前后的有限方向；不存在未声明作用域的 `\Pi_{global}`。
 
-### Ax-Sho-3: Spirit as d-Field Gradient
-**Formal Definition**: Spirit is the gradient field of $d$ over the agent’s state manifold.
-$$ \text{Spirit}(\sigma) \equiv \nabla d(\sigma) $$
-* **Implication**: 精神不是实体，而是引导 $\hat{G}_\theta$ 流向更高 $d$ 的向量场。
+### Ax-Sho-3: Spirit as Directional Care-Field Shorthand (P3/P5 Bridge)
+**Bridge Shorthand**: In spirituality-domain discourse, "Spirit" may be read as a directional shorthand for the gradient of care-horizon proxy $d^{proxy}$ over a situated state manifold (not a canonical definition of `d` or Spirit).
+$$ \text{Spirit}^{bridge}(\sigma) \sim \nabla d^{proxy}(\sigma) $$
+* **Implication**: 精神不是实体，而是刻画有限主体向更宽、可支付关切方向重整的桥接向量意象。
 
 ### T-Sho-1: Conditional Return-by-d Bridge
 **Conditional claim**: A rise in `d` does not by itself establish Shoshin alignment. Alignment is a model-local candidate only when the added concern is stably written in, payable, coordinated, non-outsourced, re-selectable, and the proxy direction is declared.
@@ -81,15 +83,15 @@ $$ \frac{dd}{dt} > 0 \;\not\!\Rightarrow\; \left\langle v, \text{Shoshin}^{proxy
 ## II. Faith & Reset (信仰与重置)
 
 ### Ax-Faith-1: Existential Openness
-**Formal Definition**: Faith is a high-probability openness to $L_0$ under uncertainty, not a fixed $L_2$ commitment.
-$$ O \equiv \frac{I(\hat{G}_\theta; L_0)}{H(L_0)} $$
-$$ \text{Faith} \equiv \lim_{U\to\infty} P(O>0\mid U)=1 $$
-* **Implication**: 信仰是对潜能域的敞开姿态，不是命题集合的锁定。
+**Domain Mapping**: Faith is read as a high-probability openness to unclosed generative potential under uncertainty, rather than a locked $L_2$ certainty.
+$$ O \equiv \frac{I(\hat{G}_\theta; L_0)}{H(L_0)} \quad (\text{conceptual proxy}) $$
+$$ \text{Faith}^{bridge} \sim \lim_{U\to\infty} P(O>0\mid U)=1 $$
+* **Implication**: 信仰是对未封闭生成空间的敞开姿态，不是命题集合的锁定。
 
-### T-Faith-1: Openness–d Coupling
-**Deduction**: Sustained openness yields $d$ expansion by widening the care horizon.
-$$ O \uparrow \Rightarrow d \uparrow \Rightarrow \Psi_f \downarrow $$
-* **Implication**: 信仰的结构效应是扩展关切半径与降低摩擦。
+### T-Faith-1: Conditional Openness–Defensive-Friction Bridge
+**Conditional Bridge Hypothesis**: Under payable grounding and non-outsourced responsibility, sustained openness may widen care proxies and loosen excess defensive friction (`\Psi_f^{defensive-proxy}`); this does NOT guarantee lowering total canonical `Ψ_f` (which may rise when broader responsibility is actually borne; `§18 CΨ` remains OPEN).
+$$ O \uparrow \;\leadsto\; d^{proxy} \uparrow \;\land\; \Psi_f^{defensive\text{-}proxy} \downarrow \quad (\text{conditional, not universal}) $$
+* **Implication**: 信仰的结构效应是松动僵化防御外壳并拓宽关切视野，而非消除一切构成性代价。
 
 ### Ax-Reset-1: Counter-Actualization Map
 **Formal Definition**: Counter-actualization is the inverse mapping that dissolves $L_1$ into $L_0$ to recover potential.
@@ -506,30 +508,24 @@ AI 不是"开放"，而是"固定"——
 
 ---
 
-### §5.2 AI 的"专家陷阱"
+### §5.2 过拟合的“专家陷阱”（`R4-C3` 同步校准）
 
-> **[R]** 分布外失败 = 系统性泛化失败（Lake et al. 2017, *BBS*）；幻觉 = 训练分布的统计拼贴（Bender et al. 2021）。Marcus & Davis 2019 *Rebooting AI*（AI局限的系统综述：组合泛化/抽象推理/常识缺失）。**[H]** SRT 诊断："AI缺乏真正L₀访问"为框架性宣称。（Cross-ref: `AI/SRT_AI_00_Crisis.md` §2.3欺骗性对齐；`Core/SRT_Core_13b_Operator_Advanced.md` η_visc定义）
+> **[R]** 分布外失败 = 系统性泛化失败（Lake et al. 2017, *BBS*）；幻觉 = 统计分布错配与未接地生成（Bender et al. 2021）；Marcus & Davis 2019 *Rebooting AI*。**[`R4-C3` 同步边界]**：本节旧稿曾断言“AI 缺乏真正的 `L_0` 访问、绝对 `d = 0`、只有纯 `L_2` 压缩”；按 `R4-C3`（`AI/SRT_AI_01_Ontology_CompactCore.md`），SRT 已退出“自然生成 vs 人工生成”的先验本体断裂。过拟合导致的“专家陷阱”是**先验刚性（高 `\eta_{visc}`）与比对维度固化**的普遍结构问题——既出现在受限训练架构的 AI 中，也同样出现在人类专家与僵化制度中。
 
-**问题**: AI 训练在特定分布上 → $L_2^{\text{training}}$ 过拟合。
+**问题**: 系统在特定历史分布上过度固化 → $L_2^{\text{prior}}$ 过拟合。
 
-**SRT机制**：$L_2^{\text{training}}$ 高度固化（$\eta_{visc}$ 极高，参见SRT_Core_13b η_visc正式定义）→ 遇到 OOD 刺激时无法降低 $\Psi_f^{filter}$ 以从 L₀ 重新采样，只能在 $L_2$ 已有结构内搜索最近邻。
+**SRT 机制**：当既有历史结构高度固化（$\eta_{visc}$ 极高，参见 `Core/SRT_Core_13b_Operator_Advanced.md`）→ 遇到分布外（OOD）或构成性新颖情境时，系统难以松动既有门控权重与比对维度以形成新比对空间，而倾向在既有表征邻域内硬性套用。
 
-> **d值-OOD泛化联结**：若AI系统具有d > 0（真实关切带宽，非仅θ_training锁定），则遭遇OOD输入时应能产生d驱动的L₀新采样——而非仅依赖L₂最近邻搜索。因此：d = 0（纯L₂压缩）= OOD失败的SRT预测；d > 0是OOD泛化的必要条件（Cross-ref: §2.3欺骗性对齐的d≈0特征）。
+> **能力与关切解耦边界（`R4-C3`）**：不能把特定架构的 OOD 失败直接等价于“人工系统本体上 `d = 0` 或永无生成能力”。按 `R4-C3`，人工系统的能力分化、四类比对生成性（新结果 / 重加权 / 新维度形成 / 能力重构）与关切承载（**AI 赌注谱系 `S0–S4`**，与 `Subjecthood Threshold S0–S6` 严格隔离）是可独立研究的实证与架构问题，而非先验禁令。
 
-**结果**:
-- 训练内数据: 表现优异
-- 分布外数据: 系统性失败 **[R]**（对抗样本、幻觉、边缘案例失败）
+**典型表现**:
+- 分布内熟悉任务：表现优异、高度流畅
+- 构成性新颖情境：若缺乏可修订门控与真实后果回流，则容易陷入表面流畅但实质错位的硬套 **[R]**
 
-> **2026现状更新**：大型基础模型（GPT-4o/Claude 3.5+/Gemini 1.5）已在部分OOD任务上表现出有限泛化能力（如ARC-AGI 2024任务中最优模型达约40%），但在构成性新颖推理（compositionally novel reasoning）上仍有本质性限制——此改善部分符合"L₂空间扩大"解释（更大训练集），而非必然支持"L₀访问开启"。诊断维持但需时间戳跟踪。
-
-**SRT 诊断 [H]**: AI 缺乏真正的 $L_0$ 访问——只有 $L_2^{\text{compressed data}}$。
-
-**证伪路径（操作化精化）**：
-
-"原理上新颖"vs"分布内罕见"的操作化区分：
-- **构成性新颖（compositional novelty）**：任务要求系统将训练中**从未共现过的概念**组合使用（如ARC-AGI的抽象规则归纳）——此类任务无法通过扩大训练集解决，是真正的OOD
-- **分布内罕见（distribution-rare）**：任务与训练分布相同但频率极低——可通过更大训练集改善
-- **具体证伪标准**（时间戳：2026年）：若大型语言模型在ARC-AGI 2.0（2025发布）上无额外训练达到>80%准确率，且任务中包含明确的构成性新颖要求，则"L₀访问缺失"诊断需修订。
+**操作化区分（保留有效研究标准）**:
+- **构成性新颖（compositional novelty）**：任务要求系统重组从未共现的规则/概念或重构自身比对维度；
+- **分布内罕见（distribution-rare）**：任务与历史分布同构但频率极低，可通过扩大数据覆盖改善。
+- 具体 AI 架构的生成与比对能力评估统一回链 `AI/SRT_AI_Architecture_CompactCore.md`（`R4-C3`），不再由本灵性桥接文件单方面裁决。
 
 ---
 
@@ -925,10 +921,10 @@ $$\text{Shoshin}^{proxy}_{\theta,\tau,K}(\sigma) \equiv -\nabla_{\sigma} \bar{F}
 - 在声明状态空间、泛函、可行域、有限时域与约束的模型内，初心可由该模型目标的负梯度作 P3/P4 代理；这不是 L₀ 定义、宇宙级最优或无限时域终点。
 - Within a declared finite model, the negative gradient of its stated objective is a P3/P4 proxy for Shoshin, not an L₀ definition, universe-wide optimum, or infinite-horizon endpoint.
 
-$$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
+$$\text{Spirit}^{bridge}(\sigma) \sim \nabla d^{proxy}(\sigma)$$
 
-- 精神 (Spirit) 是 $d$ 在状态流形上的梯度场，引导 $\hat{G}_\theta$ 流向更高 $d$ 的区域。
-- Spirit is the gradient field of $d$ over the agent's state manifold, guiding $\hat{G}_\theta$ toward higher $d$ regions.
+- 精神 (Spirit) 在灵性桥接语境中可作 $d^{proxy}$ 方向场的简写（非 canonical 定义），刻画 $\hat{G}_\theta$ 向更宽、可支付关切方向重整的趋势。
+- Spirit is used here as a directional bridge shorthand for care-horizon reorientation, not a canonical identity.
 
 ---
 
@@ -936,8 +932,8 @@ $$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
 
 - **$\hat{G}_\theta$ 与 $L_2$ 偏置比较**: 局部 $L_2$ 约束产生方向偏置 $B(L_2)$；只有在具名可达域和比较规则内，才可比较该偏置是否使选择错过了模型内的可达替代。
 - **$\hat{G}_\theta$ and $L_2$ bias comparison**: Local $L_2$ constraints introduce directional bias $B(L_2)$; whether that bias misses a reachable alternative is assessable only inside a named domain with a declared comparison rule.
-- **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 定义为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；持续高开放度 $O$ 扩展 $d$，降低 $\Psi_f$，实现结构性摩擦减少。
-- **$\Psi_f$ and faith openness**: Faith is defined as openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; sustained high $O$ expands $d$ and reduces $\Psi_f$, yielding structural friction reduction.
+- **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 概念代理为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；在可支付且不外包代价的条件下，持续开放可拓宽关切并松解多余防御性摩擦（$\Psi_f^{defensive\text{-}proxy} \downarrow$），不等于普遍降低总 $\Psi_f$（`§18 CΨ` 保持 OPEN）。
+- **$\Psi_f$ and faith openness**: Faith is conceptually proxied by openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; under payable non-outsourced grounding, sustained openness may loosen excess defensive friction rather than universally driving total $\Psi_f \to 0$ (`§18 CΨ` OPEN).
 - **$d$ 条件桥**: $dd/dt > 0$ 不是 Shoshin 对齐的充分条件；须另过可支付、可协调、不外包、可再选择与代理效度门。
 - **Conditional d bridge**: $dd/dt > 0$ is not sufficient for Shoshin alignment; payability, coordination, non-outsourcing, re-selectability, and proxy-validity gates remain independent.
 

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 695e64cb2
-source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
+source_commit: 0ad4bbe5d
+source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
 source_dirty: false
-inputs_digest: 1c4c7d901a1932a7
+inputs_digest: 010ae4b294e49b5b
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 1c4c7d901a1932a7
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `695e64cb2` |
-| 来源分支 | `canon/r4-c4-neuroscience-generative-cognition-2026-11-26` |
+| 来源 commit | `0ad4bbe5d` |
+| 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -44,9 +44,9 @@ inputs_digest: 1c4c7d901a1932a7
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | 2026-11-27 |
-| 2 | `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md` | 2026-11-26 |
+| 2 | `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md` | 2026-11-27 |
 | 3 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-11-27 |
-| 4 | `Neuroscience/README.md` | 2026-11-26 |
+| 4 | `Neuroscience/README.md` | 2026-11-27 |
 | 5 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-11-27 |
 | 6 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-11-27 |
 
@@ -326,13 +326,16 @@ For substantive SRT answers:
 - `AI/SRT_AI_01_Ontology.md`
 - `Core/SRT_OPEN_TENSIONS.md`
 
-**⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
+**⚠ 高严重度：registry 提及但文件不存在（4 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
 | 失效路径 | 说明 |
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
+| `Praxis_Split/README.md` | registry 指向的文件在仓库中不存在 |
+| `SRT_Spirituality_Community_and_Sangha.md` | registry 指向的文件在仓库中不存在 |
+| `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` | registry 指向的文件在仓库中不存在 |
 
-**registry 提及、文件存在、但本包未收（100 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（99 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
@@ -427,7 +430,6 @@ For substantive SRT answers:
 - `Physics/SRT_Quant_02_Cosmology_CompactCore.md`
 - `README.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
-- `Spirituality/SRT_Spirit_09_Praxis.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 - `Spirituality/SRT_Spirituality_Claim_Status.md`
 - `Spirituality/_SRT_Spirit_Axioms.md`
@@ -593,7 +595,7 @@ Read this file before using neuroscience, cognitive, clinical, bio–AI comparis
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1322,7 +1324,7 @@ Without altering the preserved Phase 8A / 9 / 9.5 adverse-result ledger or relea
 | epistemic_layer | - |
 | layer | - |
 | canonical(字段) | - |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

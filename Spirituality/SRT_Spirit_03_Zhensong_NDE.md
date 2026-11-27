@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-03
 type: phenomenon
 tags: [Taoism, Zhensong, NDE, Awe, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
@@ -32,10 +34,10 @@ $$ \text{Tao}^{mapping} \sim \lim_{\|\theta\|\to\infty}\hat{G}_\theta \quad \tex
 $$ \forall x \in L_2,\; x \neq \text{Tao} $$
 * **Implication**: “道不可言”在本文件中是 $L_2$ 有限表征不可穷尽本源的 P3/P5 映射；不定义 `Ω` 或宇宙级最优。
 
-### Ax-Tao-2: Wu Wei (无为)
-**Formal Definition**: Wu Wei is friction-minimized selection aligned with the natural gradient of $L_0$.
-$$ \text{WuWei} \iff \nabla_\theta \Phi \to 0 \;\land\; \nabla_\theta F \parallel \nabla_{L_0} P $$
-* **Implication**: 无为不是“什么都不做”，而是最小摩擦的最优选择路径。
+### Ax-Tao-2: Wu Wei (无为 — P3/P5 Bridge)
+**Domain Mapping**: Wu Wei is read as reorganizing participation so excess defensive friction and forced explicit over-control decrease while remaining responsive to real constraints (`R3-08 F_3223` senses ①②; wuwei $\neq$ losing agency/initiative; `§18 CΨ` remains OPEN).
+$$ \text{WuWei}^{bridge} \sim \nabla_\theta \Psi_f^{defensive\text{-}proxy} \to 0 \;\land\; \nabla_\theta F_{\theta,\tau,K} \parallel \text{Situated Generative Flow} $$
+* **Implication**: 无为不是“什么都不做”或“取消原初选择”，而是减少逆着条件的强行控制与多余防御摩擦（此处不用 bare `Φ` 代替摩擦，不预设总 `Ψ_f = 0`）。
 
 ### T-Tao-1: Mutual Arising Theorem (有无相生)
 **Deduction**: Manifestation and potential co-define each other through selection.
@@ -483,11 +485,11 @@ $$\text{Review} = \text{Random Access}(L_2^{\text{episodic memory}}) \Big|_{w_{L
 | 灵性开放 | 显著增加 | d = 1.5 |
 | 离婚率 | 增加！ | OR = 2.1 |
 
-**SRT 解释**: NDE 导致 $d$ 值永久扩展——
+**SRT 解释（`R4-C5-A` 精度注：上表中的 `Cohen's d` 为统计学效应量，非 SRT 规范 `d-value`；本节仅分析 NDE 的现象学与后效，不背书离体本体同一性或 `L_0` 信息存储，`R3-08 P2-06`）**: NDE 可能触发关切半径代理（$d^{proxy}$）的持久重塑——
 
-$$d_{\text{post-NDE}} > d_{\text{pre-NDE}}$$
+$$d^{proxy}_{\text{post-NDE}} > d^{proxy}_{\text{pre-NDE}}$$
 
-但这可能与伴侣不兼容（如果伴侣 $d$ 值未变），导致关系破裂。
+但这可能与伴侣既有关切结构不兼容（如果伴侣未经历同等重排），导致关系张力升高甚至破裂。
 
 ---
 

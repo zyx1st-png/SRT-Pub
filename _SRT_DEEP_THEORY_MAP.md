@@ -423,28 +423,32 @@ Political SRT is an application and philosophical expansion. It must not silentl
 
 ---
 
-## 15. Spirituality / Subject-Position Node
+## 15. Spirituality / Generative Participation & Praxis Node (`R4-C5-A`)
 
 ### Core question
 
-How does SRT interpret loss of subject-position, return, practice, and community?
+How does a finite subject understand its relation to the unified generative matrix (preserving both divinity source & orientation / "from existence to order"), avoid both wellness-reduction and premature anthropomorphic/teleological inflation, reorganize its participation in co-generation (withdrawal as shift of mode/interface/position/role, non-attachment, wuwei, positive freedom, `R3-06` 4D concern reconfiguration), navigate `R3-08` 4-way friction/suffering plus defensive-friction amplification, and sustain return through practice, `Sangha`, and human–AI discernment?
 
 ### Primary files
 
-- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+- `Spirituality/SRT_Spirituality_Claim_Status.md` (`v2`)
+- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, 7 positive directions + `FB-C5-1..4`)
+- `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md` (`v2`)
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` (`v2`)
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
-- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 
 ### Support files
 
+- `Spirituality/_SRT_Spirit_Axioms.md` (`v3`)
 - `_SRT_T_DIR_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
+- `Core_Law/SRT_Suffering.md`
 
 ### Boundary
 
-Spirituality files provide existential / praxis interpretation. They do not own the canonical definitions of `Ψ_f`, `d`, or `T_dir`.
+Spirituality files provide constructive domain bridges and existential / praxis interpretation. They do not unilaterally redefine `Ψ_f`, `d`, `T_dir`, or canonical core owners; `§18 CΨ` (`RQ-2026-08-A05`) remains an OPEN independent author gate, and `FB-C5-1..4` remain `C` (M-origin candidates) pending `R4-C5-B` author adjudication.
 
 ---
 

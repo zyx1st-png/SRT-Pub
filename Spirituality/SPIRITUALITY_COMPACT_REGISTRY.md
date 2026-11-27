@@ -1,90 +1,106 @@
 ---
 id: SRT-SPIRITUALITY-COMPACT-REGISTRY
 type: index
-tags: [Spirituality, Compact Core, Registry]
-status: active_v1
+tags: [Spirituality, Compact Core, Registry, R4-C5]
+status: active
+version: v2
+updated: 2026-11-27
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SPIRITUALITY-CLAIM-STATUS]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SPIRITUALITY-CLAIM-STATUS, SRT-GENERATIVE-ONTOLOGY-SPINE]
 ---
 
 # SRT Spirituality Compact Registry
 
-> **[休眠层声明 · 2026-07-20]** 本层（`Spirituality/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
-
-
-> **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。Spirituality 文件可作为 bridge、praxis、companion、domain exposition，但不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
+> **`R4-C5-A` 双向重构更新（2026-11-27，取代 2026-07-20 旧休眠层声明）**：本域已完成 `R4-C5-A` 灵性、实践与共同生成双向重构，与 `R3-02`（跨尺度生成母体与生成性退隐）、`R3-08`（灵性参与转向、`F_3223` 三义切分、Ghost 五分法与 `§18 CΨ` 独立作者门）、`R4-C1`（正面自由/关系性个体化）、`R4-C2`（非阶梯能力）、`R4-C3`（AI 三型与人机共同生成）及 `R4-C4`（前对象整体生成与多层级门控四阶重构）全面对齐。
+> **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。本域不新增或单边改写 `Core_Law/` / `Core/` canonical 原始定义；所有向核心理论提出的双向修订建议（`FB-C5-1..4`）均保持 `C`（M-origin 候选）性质，排入 `R4-C5-B` 跨域综合与作者集中裁决。**`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门开放。**
 > **P-level**：本板块主文主要为 P3/P5；实践、现象学与生活化解释默认 P5；阈值、路径或可测代理默认 P4，除非回链到 core/canonical 文件。
 
-本页汇总 Spirituality 板块当前的 bridge、compact core、双线扩展文档、共同体支线与拆分导航入口，并给出最短阅读路径。
+---
 
-## Spirituality Entry Coverage
+## 1. `R4-C5-A` 七大正面理论主轴索引
+
+| # | 理论主轴 | 核心问题与推进内容 | 主入口锚点 | 边界与开放门 |
+|---|---|---|---|---|
+| **1** | **神性与生成根源** | 完整保留 `Spine §1` **神性·源义**（`T3-04 D`：原初 `Selection` 是最基础抽取而非穷尽定义；规约性地平线/反偶像护栏只是有限实践职责，不穷尽本体论研究价值）与 **神性·倾向义**（`R3-02` / `T3-01 C/E`） | `SRT_Spirit_09_Praxis_CompactCore §2`、`SRT_Spirituality_Claim_Status §2.1`、`_SRT_Spirit_Axioms` | `R3-02-O4`、`T3-01 C/E` `OPEN`；不用 bare `Ω`、不预设 `\hat{G}_\infty` 实体、不借 `C-A` 封闭非道德全局趋优 |
+| **2** | **从存在到秩序** | 维持（个体侧）与生成（整体侧）作为统一生成倾向在不同层级的显现；展开维持、展开、重构的动态互构 | `SRT_Spirit_09_Praxis_CompactCore §2.2`、`SRT_Spirit_04_Synthesis` | 保留开放张力；区分局部极值 / 跨尺度非道德趋优 / 宇宙道德最优 |
+| **3** | **局部与全局** | 有限主体在具身相对位置中参与整体生成；无上帝视角豁免；警惕把局部 `L_2` 绝对化为宇宙总体（`U5` 病理），区分 `U5` 与关系性未封闭导向（`U6`） | `SRT_Spirit_09_Praxis_CompactCore §3.1`、`SRT_Spirit_01_Religion_Ontology`、`SRT_Spirit_05_Shoshin` | 不赋予任何有限个体/传统/共同体总体占有权 |
+| **4** | **自我、历史与遮蔽** | 承接 `C3/C4` 历史效力与再生成记忆（历史既能压缩遮蔽也能创造新生成空间）；承接 `R3-06` 广义关切四维（范围/深度/强度/方向），退出“灵性成熟 = 单轴 `d` 增长”与旧 `Tier 1 d≈0` | `SRT_Spirit_09_Praxis_CompactCore §3.2–3.3`、`SRT_Spirituality_Selection_Pathology_and_Return`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return` | 回链 `Core_Law/SRT_Occlusion_Dynamics.md`；规范 `d` 独立准入 |
+| **5** | **退隐、去执、无为与正面自由** | 生成性退隐作为**存在方式、作用接口、关系位置与生成职责转换**（四结构问 + 同级前背景 vs 跨尺度共同成体）；严守三非同一性与四层切分（含锁定/寄生警觉）；`F_3223` 保留①②退场③，转向参与方式与四类能力重构 | `SRT_Spirit_09_Praxis_CompactCore §4`、`SRT_Spirit_03_Zhensong_NDE`、`SRT_Spirit_05_Shoshin` | `O2-M = HOLD`；不重建新的线性能力阶梯 |
+| **6** | **摩擦、苦难与生成性** | 保留 `R3-08` 摩擦四分 + 多余防御性摩擦作为跨维度形成/放大机制；实践兼顾松解防御与创造新能力/关系/方向；**分布式可支付性**作为反伪装追问（明示四项未决技术缺口） | `SRT_Spirit_09_Praxis_CompactCore §5`、`SRT_Spirituality_Claim_Status §2.4`、`_SRT_Spirit_Axioms` | **`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门 OPEN**；回链 `Core_Law/SRT_Suffering.md` |
+| **7** | **灵性实践与共同生成** | 个人实践回路（诊断→同步→强化、初心 `B-A`、十牛图四阶段、黑箱化机制、最小实践节律与伪成长诊断）+ 共同体 `Sangha` 不接管托举 + 人机时代 **AI 三型**（脚手架/牢笼/选择地形）灵性辨析 | `SRT_Spirit_09_Praxis_CompactCore §6`、`SRT_Spirit_09_Praxis`、`SRT_Spirituality_Community_and_Sangha`、`SRT_Spirituality_Selection_Pathology_and_Return §10` | `Subjecthood S0–S6` 与 Primitive `S0` / **AI 赌注谱系 `S0–S4`** 严格隔离；`HP-B` FROZEN |
+
+---
+
+## 2. 反向核心理论反馈台账（`FB-C5-1..4`，`C` / M-origin 候选，进入 `R4-C5-B` 统一评估）
+
+| 编号 | 反向反馈主题 | 拟评估核心 owner | 当前状态 |
+|---|---|---|---|
+| **`FB-C5-1`** | 神性·源义（`T3-04 D`）与倾向义（`R3-02 / T3-01 C/E`）并保 + 维持（个体侧）与生成（整体侧）统一倾向（“从存在到秩序”），严分局部极值 / 跨尺度非道德趋优 / 宇宙道德最优 | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §2`、`Core/SRT_OPEN_TENSIONS.md §17` | `C` 候选；排入 `R4-C5-B` |
+| **`FB-C5-2`** | 生成性退隐作为存在方式、作用接口、关系位置与生成职责转换（四结构问 + 四层切分，含锁定/寄生反例）并汇入 `R3-02` 共同协议与跨尺度相对独立性生成 | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Collective_Selection.md`、`Core_Law/SRT_Occlusion_Dynamics.md` | `C` 候选；排入 `R4-C5-B` |
+| **`FB-C5-3`** | 摩擦四分 + 多余防御性摩擦（跨维度形成/放大机制）+ 分布式可支付性反伪装追问（明示四项未决技术缺口），直连 `§18 CΨ` 独立作者门裁决 | `_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | `C` 候选；`§18 CΨ` 独立作者门 `OPEN` |
+| **`FB-C5-4`** | 有限主体参与方式重构（`F_3223` 正面候选 + 关切结构四维/参与/比对/生成能力非阶梯重构）作为正面自由与共同生成的实践落地 | `Core/SRT_Core_13a_Operator_Basics.md`、`Core/SRT_Core_12b_Ontology_L2.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | `C` 候选；排入 `R4-C5-B` |
+
+---
+
+## 3. Spirituality Entry Coverage
+
 ### Z. Claim-status / Guardrail
-- `SRT_Spirituality_Claim_Status.md`
-  - Spirituality / praxis / companion writing guardrail for God / source-horizon / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language; C-A reserves bare Ω for Ontological Consistency
+- `SRT_Spirituality_Claim_Status.md` (`v2`, `R4-C5-A`)
+  - 双向重构总边界：反两极原则、`R3-02` 生成性神性与退隐四层切分、`R3-08` 参与转向 / `F_3223` 三义 / 五层摩擦分立 / 分布式可支付性反伪装 / **`§18 CΨ` 开放门**、`R4-C3` AI 三型同步与旧形而上学清理护栏。
 
-### A. Bridge / Axiomatic Layer
-- `_SRT_Spirit_Axioms.md`
+### A. Compact Core Layer (Primary `R4-C5-A` Hub)
+- `SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, `R4-C5-A`)
+  - 灵性、实践与共同生成紧凑主干：完整展开七大正面主轴、保留全部实践节律/十牛图/伪成长诊断资产，并登记 `FB-C5-1..4`。
 
-### B. Compact Core Layer
-- `SRT_Spirit_09_Praxis_CompactCore.md`
+### B. Bridge / Axiomatic Layer
+- `_SRT_Spirit_Axioms.md` (`v3`, `R4-C5-A` 兼容清理)
+  - 灵性领域 P3/P4 桥接映射与 P5 传统神学语境；已清理 `\hat{G}_\infty` 实体收缩、`Φ` 与 `Ψ_f` 混号、裸 `S2`/`iff`、`L_0` 信息存储等旧冲突。
 
-### C. Metric / Direction Detail
-- `SRT_Spirit_05_Shoshin.md`
-  - B-A: Shoshin / 初心 starts at L₁ as P2 read-back or P5 phenomenology; direction-field formulas are P3/P4 proxies, not an L₀ definition or precursor
-
-### D. Longform Counterparts
-- `SRT_Spirit_09_Praxis.md`
-
-### E. Dual-Track Expansion (2026-04-20)
-- `SRT_Spirituality_Selection_Pathology_and_Return.md`
-  - canonical spirituality framework on ready-made floors, subject-position loss, crisis phenomenology, true/false lightness, support, micro-selection, directional return, faith as openness to `L_0`, and frozen-`L_2` technology critique
+### C. Dual-Track Subject-Position & Community Line
+- `SRT_Spirituality_Selection_Pathology_and_Return.md` (`v2`, `R4-C5-A` 兼容同步)
+  - 现成地板、主体位丢失、危机现象学、真假轻盈、支持、微小选择、方向性回返、作为敞开的信仰，以及与 `R4-C3` 对齐的 AI 三型技术诊断。
 - `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-  - companion exposition with modern-life reflection, lived phenomenology, awakening vs pathological hollowness, beginner-mind recovery, technical-care critique, and gentle practical guidance
-
-### F. Companion Community Branch
+  - P5 生活化伴读：现代生活反思、空心感、初心恢复与温和引导。
 - `SRT_Spirituality_Community_and_Sangha.md`
-  - companion theory / praxis interface on what kind of community can hold return without becoming another ready-made floor
+  - 伴读共同体支线：共同体（`Sangha`）如何托住回返而不变成新地板（回链 `Core_Law/SRT_Collective_Selection.md` 收编型/主从型退化）。
 
-### G. Archived Merge Bridges
+### D. Topical Bridges & Longform Counterparts (`R4-C5-A` Compatibility-Cleaned)
+- `SRT_Spirit_09_Praxis.md` (`v2`) & `Praxis_Split/README.md` (`v2`) — 综合实践长文（30 天起步至 1–3 年整合）与同步分片。
+- `SRT_Spirit_05_Shoshin.md` (`v2`) — `B-A` 初心方向代理、体验报告边界、暂定几何接口与去除旧 AI `d=0` 禁令后的专家陷阱分析。
+- `SRT_Spirit_01_Religion_Ontology.md` (`v2`) — 比较宗教本体映射（已退场 `\hat{G}_\infty` 实体与 `L_0` 信息留存旧承诺）。
+- `SRT_Spirit_02_Traditions.md` — 传统灵性路径对照。
+- `SRT_Spirit_03_Zhensong_NDE.md` (`v2`) — 道家无为、震悚与 NDE 现象学（已严分 `Cohen's d` 与规范 `d`，不背书离体本体同一性）。
+- `SRT_Spirit_04_Synthesis.md` (`v2`) — 神义论、有界亚稳态恶类比与 `C-A` 非全局极值边界。
+- `SRT_Spirit_06_Love_Ontology.md` (`v2`) — 爱、边界透明度与暗夜过载双向模型。
+- `SRT_Spirit_07_Meditation_Neuro.md` — 冥想神经机制与暗夜风险提示。
+- `SRT_Spirit_08_Music.md` (`v2`) — 音乐与前语言整体情绪调制。
+
+### E. Archived Merge Bridges
 - `SRT_Spirituality_Return_Expansion_Bridge.md`
 - `SRT_Spirituality_Second_Expansion_Bridge.md`
 
-### H. Split Navigation
-- `Praxis_Split/README.md`
+---
 
-## Recommended Reading Order
+## 4. Recommended Reading Order
+
 ### 最短主线（第一次进入 Spirituality）
-1. `SRT_Spirituality_Claim_Status.md`
-2. `_SRT_Spirit_Axioms.md`
-3. `SRT_Spirit_09_Praxis_CompactCore.md`
+1. `SRT_Spirituality_Claim_Status.md`（先确立反两极护栏与 `§18 CΨ` 开放边界）
+2. `SRT_Spirit_09_Praxis_CompactCore.md`（七大正面理论主轴、实践节律与 `FB-C5-1..4`）
+3. `_SRT_Spirit_Axioms.md`（域内桥接公式与历史神学对照）
 
 ### 第二层展开
-4. `SRT_Spirit_09_Praxis.md`
-5. `SRT_Spirit_05_Shoshin.md`
-6. `SRT_Spirituality_Selection_Pathology_and_Return.md`
-7. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-8. `SRT_Spirituality_Community_and_Sangha.md`
-9. `Praxis_Split/README.md`
+4. `SRT_Spirituality_Selection_Pathology_and_Return.md`（主体位丢失、空心化、AI 现成地板与回返）
+5. `SRT_Spirituality_Community_and_Sangha.md`（共同体如何托举而不接管）
+6. `SRT_Spirit_05_Shoshin.md`（初心方向代理与暂定几何边界）
+7. `SRT_Spirit_09_Praxis.md` / `Praxis_Split/README.md`（长期实践操作全本）
+8. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`（生活化伴读）
+9. `SRT_Spirit_01` / `03` / `04` / `06` / `08`（按比较宗教、震悚/无为、恶与亚稳态、爱、音乐专题按需读取）
 
-## Role Split
-- bridge / axioms：固定 Spirituality 板块与 SRT 公理层的连接方式
-- compact core：固定实践与进化主线的最短稳定入口
-- metric / direction detail：固定 Shoshin 的方向指标读法、体验报告边界与暂定几何接口
-- long-form：保留修行阶段、日常整合、暗夜、闭关与长期演化细节
-- canonical spirituality expansion：把“主体位丢失—危机—分辨—支持—回返—方向性回返”组织成独立 spiritual 主轴
-- companion exposition：把 canonical spirituality line 翻译成现代生活、可识别经验与生活化引导
-- companion community branch：处理 sangha / community 作为不接管主体的支持场
-- archived merge bridges：保留第二轮与第一轮回写的 provenance / merge map，不再承担独立 doctrinal authority
-- split：提供非删减式导航，不替代主干
+---
 
-## Minimal navigation note
+## 5. Minimal Navigation Note
 
-- **任何涉及 God / 本源地平线 / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文；不得用 bare `Ω` 表示本源。
-
-若目标是：
-- **理解 Spirituality 板块的旧主轴** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`
-- **理解现代生活中的选择病理、空心感、主体位回返** → 补读 `SRT_Spirituality_Selection_Pathology_and_Return.md`
-- **希望以更生活化方式进入同一问题** → 再读 `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-- **希望理解共同体如何托住回返而不变成新地板** → 读 `SRT_Spirituality_Community_and_Sangha.md`
+- **任何涉及神性 / 本源地平线 / `d->infinity` / 解脱 / 退隐 / 苦难 / 修行 / `Ψ_f` / `§18 CΨ` 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `SRT_Spirit_09_Praxis_CompactCore.md`；不得用 bare `Ω` 表示本源，不得把 `Ψ_f → 0` 写成灵性目标。
+- **涉及向核心理论提议的反向修订（`FB-C5-1..4`）与 `§18 CΨ` 裁决** → 保持 `C`（M-origin 候选）标记，统一进入 `R4-C5-B` 跨域核心理论综合与作者集中裁决，不在本域自行改写核心 owner。

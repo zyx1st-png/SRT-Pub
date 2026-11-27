@@ -284,13 +284,13 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3.5/4 为各自注明的 P1-candidate；T-IRR-3 anti-closure 为 P2/P3 conditional candidate；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
 - 引用规则：涉及学习不可逆性、终止作为吸收边界、ST-A 条件性反闭合、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；P1 absorption 回链 21B，条件性 anti-closure 回链 21C B13
 
-### 13. Spirituality 主轴
-- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（God/Omega, d-infinity, suffering/Psi_f, practice metaphor guardrail; not a primitive source）
-- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
-- Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`
-- Praxis：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` / `Spirituality/SRT_Spirit_09_Praxis.md`
-- 角色：形成 Spirituality 板块从桥接公理到实践演化主线的最小 compact core 入口层
-- 注意：Spirituality 现已具备 bridge + compact core + registry 的入口骨架，但覆盖深度仍少于 Physics
+### 13. Spirituality 主轴（`R4-C5-A` 双向重构，2026-11-27）
+- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、完整保留神性·源义与倾向义、`R3-06` 广义关切四维与独立 `d` 准入、`R3-02` 退隐存在方式/作用接口/关系位置/生成职责转换与四层切分、`R3-08` 参与转向/`F_3223` 三义/摩擦四分+多余防御性摩擦形成放大机制+分布式可支付性追问[四缺口 OPEN]、`§18 CΨ` 独立作者门 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
+- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`：退出旧休眠层声明，登记 `R4-C5-A` 七大正面主轴与 `FB-C5-1..4` 反向核心反馈）
+- Compact core 主干：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`（`v2`：七大正面理论主轴、最小实践节律、伪成长诊断、`Sangha` 与人机共同生成辨析、`FB-C5-1..4`）
+- Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`（`v3`）与双线主体位/共同体文件（`SRT_Spirituality_Selection_Pathology_and_Return.md v2`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`、`SRT_Spirituality_Community_and_Sangha.md`）
+- 兼容清理长文与分片：`SRT_Spirit_01/03/04/05/06/08/09`（`v2`）与 `Praxis_Split/README.md`（`v2`）
+- 角色：研究有限主体如何理解并重构自己参与共同生成的方式，并向核心理论回流四项 `C`（M-origin 候选）修订建议（`FB-C5-1..4`），不单边改写 `Core_Law/` / `Core/` canonical 定义，保持 `§18 CΨ` 独立作者门 OPEN
 
 ## C. 当前 canonical 引用优先级
 

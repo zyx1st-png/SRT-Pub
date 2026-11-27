@@ -553,28 +553,33 @@ When answering or editing a non-simple SRT question:
 
 ---
 
-## 15. Route: Spirituality / Subject-Position / Return Path
+## 15. Route: Spirituality / Generative Participation / Return Path (`R4-C5-A`)
 
-**Use when the query mentions**: spirituality, subject-position, loss of self, return path, sangha, community, practice, existential orientation.
+**Use when the query mentions**: spirituality, generative divinity, from existence to order, withdrawal, wuwei, non-attachment, subject-position, loss of self, return path, sangha, community, practice, friction/suffering, `§18 CΨ`, existential orientation.
 
 ### Primary
 
-- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+- `Spirituality/SRT_Spirituality_Claim_Status.md` (`v2`, dual anti-extreme guardrail & `§18 CΨ` OPEN gate)
+- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, 7 positive directions, divinity source + orientation, `R3-06` 4D concern reconfiguration, withdrawal 4-question & 4-layer cut, `R3-08` 4-way friction + defensive friction amplifying mechanism, praxis rhythm, AI 三型 discernment, `FB-C5-1..4`)
+- `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md` (`v2`, full domain index & reverse-feedback ledger)
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` (`v2`)
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
-- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 
 ### Secondary
 
+- `Spirituality/_SRT_Spirit_Axioms.md` (`v3`)
 - `_SRT_T_DIR_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
+- `Core_Law/SRT_Suffering.md`
+- `Core_Law/SRT_Occlusion_Dynamics.md`
 
 ### Boundary
 
-- Spirituality files are praxis / existential interpretation layers.
-- They should not override core definitions of `d`, `Ψ_f`, `T_dir`, or `L0-L1-L2`.
-- 2026-10-04 unfinished/sacred route does not replace Spirit_01/02/03/04 or NEURAL35; read it as INHERIT / RETYPE / CONFLICT bookkeeping, with CΨ / RQ-2026-08-A05 still unresolved.
+- Spirituality files are constructive domain bridges and praxis / existential interpretation layers; they do not unilaterally rewrite canonical `Core_Law/` or `Core/` definitions before `R4-C5-B` author adjudication.
+- Keep `§18 CΨ` (`RQ-2026-08-A05`) explicitly OPEN as an independent author gate; do not collapse `R3-08` 4-way friction roles (plus excess defensive friction as an amplifying mechanism) or assert `Ψ_f → 0` as a universal spiritual goal.
+- Enforce `R3-02` 4-layer withdrawal cut (incl. locking/parasitic co-dependence) and `R3-08` `F_3223` 3-sense split (retain ①②, retire ③) + `R3-08 P2-06` retirement of literal `\hat{G}_\infty` and `L_0` information storage.
 
 ---
 

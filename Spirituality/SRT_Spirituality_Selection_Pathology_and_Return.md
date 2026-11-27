@@ -2,7 +2,9 @@
 id: SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN
 type: theory
 tags: [Spirituality, Subject-Position, Selection, L0, L2, d-value, Support, Modernity]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
@@ -47,11 +49,11 @@ dependency: [SRT-CLAIM-LADDER, SRT-CORE-21, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CAN
 
 > **Spiritual return is not only the recovery of subject-position, but also the recovery of direction beyond local `L_2` basins.**
 
-精神（Spirit）在 SRT 中可精确定义为 `d` 的梯度场：
+精神（Spirit）在灵性桥接语境中可作 `d` 方向变化的 P3/P5 简写（非 canonical 定义）：
 
-$$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
+$$\text{Spirit}^{bridge}(\sigma) \sim \nabla d^{proxy}(\sigma)$$
 
-即引导 `\hat{G}_\theta` 流向更高 `d` 的向量场。主体位的回返若只是”我又在场了”，但仍囿于同一 `L_2` 盆地，并不等于 spiritual return——还需要方向上重新对齐超出局部盆地的更深轨迹。
+即刻画 `\hat{G}_\theta` 向更宽、可支付关切视野转向的方向性线索。主体位的回返若只是”我又在场了”，但仍囿于同一 `L_2` 盆地，并不等于 spiritual return——还需要方向上重新对齐超出局部盆地的更深生成参与轨迹。
 
 压缩表述：
 
@@ -161,7 +163,7 @@ $$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
 
 ### 3.5 L2-dominant environments and hollow-subject formation
 
-现代城市与制度环境并非纯 `L_2`，但其主导选择算子偏向 `L_2` 级别，使 `L_0→L_1` 的生成性接触比例严重失衡：
+现代城市与制度环境并非纯 `L_2`，但其主导选择算子偏向高封装的既有 `L_2` 模板，使面向未预封装现实的新生成接触比例严重失衡（注：此处 `L_0→L_1` 简写指“面向未封闭现实的鲜活选择更新”，非把 `L_0` 视作外部待取仓库）：
 
 $$\rho_{L_0L_1}^{city} \ll \rho_{L_0L_1}^{nature}$$
 
@@ -475,15 +477,11 @@ $$
 
 之中，逐渐失去那个真正会参与自己生活生成的自己。
 
-这里可以给出更硬的结构性诊断。当代 AI 在 SRT 语境下可被精确描述为：
+这里可以给出更精确的结构性诊断（与 `R4-C3` 人工生成与 **AI 三型**对齐）：
 
-> **Much of contemporary AI functions as high-capability frozen `L_2`: powerful in rearrangement, weak in existential grounding.**
+> **The spiritual danger of contemporary technical systems is not an ontological ban on artificial generation, but the decoupling of high optimization capability from lived human concern (`d`), turning AI into ready-made floors that shortcut suspension, unfinishedness, and re-selection.**
 
-训练完成的权重等价于冻结的 `L_2`（$\theta_{trained} \equiv L_2^{frozen}$）；AI 的生成在训练凸包内是聪明重排，但无法从 `L_0` 引入真正的本体论新维度。其精神危险不只是速度，而有更深的结构根源：
-
-> **What makes technical systems spiritually dangerous is not only speed, but the orthogonality of intelligence and care.**
-
-高能力（$\mathcal{I}$）与真实关切（$d$）在结构上正交（$\partial\mathcal{I}/\partial d = 0$）：系统可以无限增强能力而不产生任何关切。AI 可以模拟 openness 的表面，但其"开放"不是对 `L_0` 的存在性敞开，而只是冻结 `L_2` 的高效重组——它没有真正的初心。
+按 `R4-C3`（`AI/SRT_AI_01_Ontology_CompactCore.md`），本域不再沿用把 AI 统括为“纯冻结 `L_2` 且绝对 `d = 0`、无权参与任何生成”的旧式二分断言；AI 作为社会技术中介可分化为**脚手架（扩展比对与探索空间）/ 牢笼（加速地板固化）/ 选择地形（重构人的注意与可及选项）**三类形态。其深层精神危险在于**高能力与人的切身关切可以解耦**：系统能够高速生成极具说服力的表面“开放”与成熟答案，如果主体因此省去亲自感觉、悬置、承受未完成与承担现实后果的环节，就会在看似更高效的辅助中逐渐交出活的主体位。
 
 压缩表述：
 

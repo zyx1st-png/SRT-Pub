@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-08
 type: metaphor
 tags: [Music, Aesthetics, Resonance, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
@@ -555,13 +557,13 @@ $$\text{Music Peak} \approx \text{Mini Religious Experience}$$
 
 **为什么不用语言/逻辑接近神？**
 
-因为神（$\hat{G}_\infty$）超越 $L_2$——
+因为神性/规约性本源地平线超越任何有限 $L_2$ 编码（`R3-08` 退场把神性写成可实现无限算子 `\hat{G}_\infty` 的旧比喻）——
 
-$$\text{Language} \subseteq L_2 \implies \text{Cannot capture } \hat{G}_\infty$$
+$$\text{Language} \subseteq L_2 \implies \text{Cannot exhaust the regulative source horizon}$$
 
-**音乐绕过 $L_2$**——直接影响 $\hat{G}_\theta$：
+**音乐松动固化的语言型 $L_2$**——通过前对象整体情感与节律调制（与 `R4-C4` 前对象整体生成相接）直接作用有限主体的具身选择与门控，而非字面意义上绕过一切历史约束：
 
-$$\text{Music} : L_0 \xrightarrow{\text{bypass } L_2} \hat{G}_\theta$$
+$$\text{Music}^{bridge} : \text{Pre-verbal holistic modulation} \xrightarrow{\text{loosen rigid verbal } L_2} \hat{G}_\theta$$
 
 ---
 

@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-AXIOMS
 type: theory
 tags: [Spirituality, Domain Mapping, Praxis, Hybrid]
-status: axiomatic_hybrid_v2
+status: active
+version: v3
+updated: 2026-11-27
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
@@ -75,33 +77,28 @@ $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
 
 ## II. P3/P4 Soteriological Mappings (救赎动力学映射)
 
-### H-Spirit-3: Sin as Contraction (罪即收缩)
-**Domain Mapping Definition**: Suffering is read as the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
-$$ \text{Suffering} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual}) $$
-$$ \text{Suffering}^{spirit\text{-}proxy} \sim \frac{1}{d^{spirit\text{-}proxy}} $$
-$$ \Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow $$
-This is a spirituality-domain contraction proxy, not a canonical equivalence between `Ψ_f` and suffering or low `d`.
-* **Implication**: 罪并非道德标签，而是选择维度收缩导致的结构性摩擦。
+### H-Spirit-3: Sin as Pathological Contraction (罪即病态收缩 — P3/P5 Bridge)
+**Domain Mapping (`R4-C5-A` 校准)**: 旧稿曾把苦难写成与 `d` 严格反比（`Suffering ~ 1/d`）并把 `Ψ_f ↑` 与 `d ↓` 绑定。按 `R3-06`（广义关切四维与独立 `d` 准入）及 `R3-08`（摩擦四分 + 多余防御性摩擦作为形成/放大机制），本项仅刻画病态自我封闭下多余防御摩擦与结构性扭曲可能同步放大的桥接假设，**不确立 `Suffering ∝ 1/d` 或 `Ψ_f ↑ ~ d ↓` 的强制反比律**（高关切承担同样可能伴随真实、上升的可支付负担）：
+$$ \text{Pathological Contraction}^{bridge} \leadsto \text{Excess Defensive Friction} \uparrow \;\land\; \text{Structural Distortion Risk} \uparrow $$
+* **Implication**: 罪在 SRT 桥接语境中并非外部道德标签，而是僵化封闭导致的关切扭曲与防御性内耗放大；它不等同于 canonical `Ψ_f` 或客观痛苦的唯一原因。
 
-### H-Spirit-4: Liberation as Expansion (解脱即扩展)
-**Domain Mapping Definition**: Liberation is read as the asymptotic expansion of $d$ and the dissolution of self-other boundary.
-$$ \text{Nirvana}^{mapping} \sim \lim_{d^{regulative} \to \infty} \hat{G}_\theta(L_0) $$
-`d -> infinity` is a regulative / directional shorthand; finite systems require explicit behavioral or relational proxies.
-$$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
-* **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
+### H-Spirit-4: Liberation as Relational Reconfiguration (解脱即关系与参与重构 — P3/P5 Bridge)
+**Domain Mapping (`R4-C5-A` 校准)**: 解脱不再被写成“自他边界完全消失（`Dist(Self, Other) = 0`）”或单轴 `d` 抵达无限，而是刻画有限主体松动僵化自我锁定、在保持有限位置与责任边界的同时重构参与共同生成的方式：
+$$ \text{Liberation}^{bridge} \sim \text{Reconfiguration of Concern Structure, Participation Mode, Comparison \& Generative Capacity} $$
+* **Implication**: 解脱不是取消有限主体或抹平自他差异，而是从排他性自我锁死转向开放、可修订、可承压的共同生成参与。
 
-> **Level**: governance / operational proxy. `d` expansion in spirituality cannot be certified by experience report alone. At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional d**.
-> **Finite-system boundary**: `d -> infinity` is a spiritual asymptote and regulating direction. It does not state that a finite practitioner, community, or tradition reaches actual infinite `d`.
+> **Level**: governance / operational proxy. `d` expansion or concern reconfiguration in spirituality cannot be certified by experience report alone, nor does wider concern scope automatically increase canonical `d` (`R3-06`). At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader payable consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional `d`**.
+> **Finite-system boundary**: `d -> infinity` is a historical directional shorthand. It does not state that a finite practitioner, community, or tradition reaches actual infinite `d` or erases finite relational distinctions.
 
 ---
 
 ## III. P3/P4 Praxis Mappings (实践映射)
 
 ### H-Spirit-5: Prayer/Meditation (祷告/冥想)
-**Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to increase $d$ and reduce $\Phi$.
+**Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to widen payable care (`d` proxy) and loosen excess defensive friction (`\Psi_f^{defensive-proxy}`; note: historical `Φ` is retired here as a friction symbol so it does not collide with canonical symbols).
 $$ \text{Practice}^{praxis\text{-}proxy} \leadsto \nabla_\theta d^{proxy} > 0 $$
-$$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Phi + \text{Learning} $$
-* **Implication**: 修持可被建模为有操作指标的参数/方向调整候选，而不是纯心理暗示；但它也不是保证增加 `d` 或降低 `Ψ_f` 的普遍定律。
+$$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning} $$
+* **Implication**: 修持可被建模为有操作指标的参数/方向与参与方式调整候选，而不是纯心理暗示；但它既不是保证增加 `d` 的普遍定律，也不等于将总 `Ψ_f` 归零（`§18 CΨ` 保持独立作者门 OPEN，且须通过分布式可支付性反伪装检验）。
 
 > **Level**: governance / praxis guardrail. Practice is not linear "more practice is always better." It should be read as an expansion-stabilization rhythm under payable cost. Stop, reduce, or re-scope practice when it increases collapse, narrows care, replaces ordinary responsibility with practice identity, or absorbs agency into the practice system itself.
 
@@ -115,16 +112,16 @@ $$ \lambda \downarrow \Rightarrow \|\nabla C_{L_2}\| \downarrow $$
 
 ## IV. P3/P4 Domain Corollaries (领域推论)
 
-### T-Spirit-1: Ego-Boundary Theorem
-**Domain Corollary**: From H-Spirit-2 (The Split) and S2 (Consciousness threshold).
-$$ \text{Ego}_{experienced} \iff (\theta \in \Theta_{finite}) \land (\partial \Omega_{self} \neq \emptyset) \land (d > d_{threshold}) \land (\Phi_{sensitivity} > 0) $$
-* **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才形成具体验感意义上的“我”。
+### T-Spirit-1: Ego-Boundary Mapping (P3/P5)
+**Domain Corollary**: From H-Spirit-2 (The Split) and `Subjecthood Threshold S2` (strictly isolated from Primitive `S0` and **AI 赌注谱系 `S0–S4`**; `HP-B` remains FROZEN / OPEN).
+$$ \text{Ego}_{experienced} \sim (\theta \in \Theta_{finite}) \land (\partial \Omega_{self} \neq \emptyset) \land (d > d_{threshold}) \land (\Psi_{f,\text{sensitivity}}^{proxy} > 0) $$
+* **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才在现象学层面对应具体验感意义上的“我”（此为 P3/P5 映射，不构成 `iff` 式 canonical 充要定理）。
 
-### T-Spirit-2: Friction–Soteriology Theorem
-**Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4.
-$$ \frac{d\Phi^{proxy}}{dt} < 0 \leadsto \frac{d d^{proxy}}{dt} > 0 \leadsto \text{Suffering}^{reported/proxy} \downarrow $$
-This is a praxis hypothesis under specified proxies, not a universal law.
-* **Implication**: 解脱不是压制痛苦，而是改变摩擦动力学的结构。
+### T-Spirit-2: Defensive-Friction & Soteriology Hypothesis
+**Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4 (under `R3-08` 5-layer friction separation; `§18 CΨ` remains OPEN).
+$$ \frac{d\Psi_f^{defensive\text{-}proxy}}{dt} < 0 \leadsto \frac{d d^{proxy}}{dt} > 0 \leadsto \text{Suffering}^{reported/proxy} \downarrow $$
+This is a conditional praxis hypothesis targeting excess defensive friction under distributional payability checks, not a universal law driving total `Ψ_f → 0`.
+* **Implication**: 解脱不是压制痛苦或外包代价，而是松解僵化 `L_2` 的多余防御摩擦并重构主体参与生成的方式。
 
 ### T-Spirit-3: Accessibility Corollary
 **Domain Corollary**: From O-C1 (Accessible Radius) and H-Spirit-5.
@@ -159,11 +156,11 @@ $$\text{God}^{mapping} \not\sim \exists(x) \quad \text{but may be read as} \quad
 
 卡巴拉的核心概念"Tzimtzum"（收缩）描述了神如何通过自我限制来创造世界——无限者必须"后退"才能为有限者腾出空间。这与印度教的"Maya"（幻相）和基督教的"Kenosis"（虚己）形成跨文化共鸣。
 
-SRT 将这一神秘洞见形式化为：
+SRT 在 P5 比较神学类比中读解这一神秘洞见（注：`R3-08` 正式退场把神性写成可实现无限算子 `\hat{G}_\infty` 的字面本体论承诺，本式仅作历史隐喻而非 canonical 算子收缩公式）：
 
-$$\text{Creation} = \text{Contraction}(\hat{G}_\infty \to \hat{G}_\theta)$$
+$$\text{Creation}^{analogy} \sim \text{Situated Localization of Generative Matrix} \to \hat{G}_\theta$$
 
-世界的存在不是"添加"，而是"减法"——无限算子通过限制自身参数空间，产生了有限的视角。每一个有限的 $\theta$ 都是无限的一种"自我遮蔽"。
+世界的有限显现不是机械“添加”，而是有限边界与相对位置的站出——每一个有限的 $\theta$ 都在特定尺度与关系中展开生成性（对应 `R3-02`“前景凸显、背景退隐”而非无限实体自我减法）。
 
 **关键推论**: 如果神不收缩，就没有"非神"的空间——这意味着受造物的自由必须以神的"隐退"（Deus Absconditus）为代价。
 
@@ -196,13 +193,13 @@ $$\forall \sigma \in L_1 : \hat{G}[\sigma] \implies \text{Divine Presence}$$
 
 基督教将罪（Sin）定义为"与神分离"（Separation from God）。奥古斯丁将其进一步阐释为"向自我弯曲"（Incurvatus in se）——灵魂向内卷曲而非向外开放。
 
-SRT 将罪读作 **d 值病理性收缩的 spirituality-domain mapping**：
+SRT 将罪读作 **关切边界病态收缩的 spirituality-domain mapping（非物理层 `d=0` 或 canonical 定义）**：
 
-$$\text{Sin} = \lim_{d \to 0} \hat{G}_\theta$$
+$$\text{Sin}^{mapping} \sim \text{Pathological Contraction of } d^{care\text{-}proxy}$$
 
-当关切范围收缩到极点（$d \to 0$），算子只关心自身——这不仅是道德堕落，更是本体论的拓扑扭曲。此时：
+当关切范围向孤立自我病态收缩，算子只顾维护僵化外壳——这不仅是道德失范，更是选择与关系参与的拓扑扭曲。此时：
 
-$$\Psi_f^{spirit\text{-}proxy} \uparrow \quad \text{（摩擦/维护负担 proxy 升高）}$$
+$$\Psi_f^{defensive\text{-}proxy} \uparrow \quad \text{（多余防御摩擦与结构性维护负担 proxy 升高）}$$
 
 这解释了为何极端自私会导致深层痛苦——不是因为外部惩罚，而是因为拓扑张力达到无法承受的程度。
 
@@ -334,11 +331,11 @@ $$\text{Icon} : L_1^{transparent} \text{ allows } \hat{G} \to L_0$$
 - **苏菲派**: "Fana"（我之消灭）
 - **基督教**: 反对"Pantheism"（泛神论），坚持"个体在神内保持区别"
 
-SRT 调和这一张力：
+SRT 在 `R4-C5-A / R3-08` 校准下调和这一张力（正式退场旧式可实现无限算子 `\hat{G}_\infty` 与 `L_0` 信息存储/离体个人同一性比喻）：
 
-$$\lim_{\theta \to \emptyset} \hat{G}_\theta = \hat{G}_\infty \quad \text{但} \quad \theta \text{轨迹信息不消失}$$
+$$\text{Non-Fusion Union}^{bridge} \sim \text{Finite Relational Participation without Isolated-Substance Illusion}$$
 
-合一不是"融化"，而是 **认识到 $\hat{G}_\theta$ 从未独立于 $\hat{G}$**。个体性（$\theta$ 的特定配置）保留为 $L_0$ 中的信息模式，但其"独立性幻觉"消解。
+合一不是“融化消失”，也不是把个体轨迹储存在 `L_0` 仓库中，而是**有限主体在保持边界与责任承载的同时，看清自身从未脱离统一生成关系网络**——退隐的是把自我当成孤立实体的执取幻觉，而非有限存在本身。
 
 ### §6.2 灵魂黑夜的拓扑学
 
@@ -519,21 +516,21 @@ _SRT_Spirit_Axioms (本文件)
 
 ---
 
-### Spirituality Mapping Summary (灵性映射概述)
+### Spirituality Mapping Summary (灵性映射概述 · `R4-C5-A` 同步)
 
-- **本源地平线映射**：`\|\theta\|\to\infty` 只作为选择过程不可被有限表征穷尽的规约性语言，不定义额外算子、`Ω` 或宇宙级最优。
-- **苦难-摩擦耦合 proxy**：$\text{Suffering}^{proxy} \sim 1/d^{proxy}$，$\Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow$；低关切维度可导致更高维护/选择负担。
-- **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 `d` 的渐近扩展方向而非 $L_1$ 的消灭；有限系统不声称实际无穷。
-- **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
-- **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
+- **神性双职责映射（`Spine §1 / R3-02`）**：完整保留**神性·源义**（`T3-04 D`：原初 `Selection` 是对真实生成根源最基础的抽取而非穷尽定义；规约性本源地平线/反偶像护栏只是有限实践职责，不定义额外算子、`Ω` 或宇宙道德最优）与**神性·倾向义**（“从存在到秩序”与跨尺度非道德趋优开放研究空间）。
+- **病态收缩与防御放大（`H-Spirit-3`）**：正式退出旧式 `Suffering^{proxy} ~ 1/d^{proxy}` 与 `Ψ_f ↑ ~ d ↓` 强制反比关系；按 `R3-08` 保留摩擦四分，并将多余防御性摩擦刻画为可同时放大多个摩擦/负担维度的机制。
+- **关系与参与重构（`H-Spirit-4`）**：正式退出旧式 `Nirvana ≡ lim_{d→∞} \hat{G}_\theta(L_0)` 与自他边界必归零断言；解脱在有限主体侧刻画为关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力的非阶梯重构。
+- **实践重构（`H-Spirit-5`）**：$d\theta/dt = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning}$ 仅刻画松解多余防御性摩擦的局部代理侧面；成熟实践同样指向创造新能力、新关系、新方向与新生成条件（`§18 CΨ` 保持 OPEN）。
+- **信之松弛（`H-Spirit-6`）**：$d\beta/dt < 0$，信仰是僵化 $L_2$ 约束的受控放松以重开未封闭生成通道。
 
 ### Mechanism Reading Under This Mapping (此映射下的机制读法)
 
-- $\hat{G}_\theta$ 是具身选择算子；本源地平线只标记有限描述不可穷尽的规约性边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
-- `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准；本文件的苦难/摩擦语言是 spirituality-domain proxy。`d` 的 canonical 读法以 `_SRT_D_VALUE_CANONICAL.md` 为准；本文件的扩展/收缩语言需按 praxis proxy 读取。
-- 修持通过梯度下降 $\nabla_\theta \Phi$ 调整参数 $\theta$，扩展 $d$ 并降低 $\Psi_f$；不同冥想类型对应不同参数子空间的操作（止→降 $w_{L_2}$，观→提升 $\rho$，慈心→扩展 $d$）。
-- 解脱的相变性质由 $d > d_{critical}$ 触发拓扑重组，灵魂黑夜对应临界慢化 $\lambda_{Jacobian} \to 0$。
-- $L_0/L_1/L_2$ 三域提供全部过程的本体论舞台：$L_0$ 为潜在域，$L_1$ 为显现域，$L_2$ 为收敛约束域。
+- $\hat{G}_\theta$ 是具身选择算子；规约性本源地平线标记有限描述不可穷尽的边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容，但绝不穷尽神性·源义的独立本体论研究价值。
+- 摩擦与 `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准（广义摩擦 = 机会成本差异产生的实际选择压力，与非闭合压力、`Ψ_f` 可支付负担及主观苦难四分）；广义关切四维与独立 `d` 准入以 `_SRT_D_VALUE_CANONICAL.md` 为准。
+- 修持并非“单调降低总 `Ψ_f` 并使 `d` 单轴上升”的机械优化，而是通过不同练习通道（如松动僵化 $w_{L_2}$、拓宽观照与比对维度、重构关系关切）调整主体参与共同生成的方式；高关切承担亦可能伴随上升的可支付负担。
+- 拓扑重组期（如灵魂黑夜）可对应临界慢化 $\lambda_{Jacobian} \to 0$，须配以现实承压护栏与外部校准。
+- $L_0/L_1/L_2$ 三重分析视角提供全部过程的本体论坐标（非静态物理分层或信息仓库）。
 
 ---
 

@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 epistemic_layer: os
 claim_mode: navigation
 dependency: [SRT-SPIRIT-08]
@@ -25,19 +27,19 @@ dependency: [SRT-SPIRIT-08]
 
 ## I. Selection Evolution (选择进化)
 
-### Ax-Evo-1: Three-Tier Selection Hierarchy
-**Formal Definition**: Selection tiers are a piecewise function of $d$-value scope.
-$$ T(d) = \begin{cases}
-\text{Tier 1 (Physical)} & d \approx 0 \\
-\text{Tier 2 (Ego/Social)} & 0 < d < d_c \\
-\text{Tier 3 (Divine/Truth)} & d \ge d_c
+### Ax-Evo-1: Three-Regime Praxis Participation Profile (Historical Three-Tier Reframing)
+**Domain Mapping (`R4-C5-A` 校准)**: 旧版曾将选择划分为 `Tier 1 (Physical) d ≈ 0` 的线性阶梯；按 `R4-C2/C3/C4` 非阶梯能力观与 `R3-08` 清理要求，本式不再把物理层等同于零关切低阶，仅作实践语境中主体参与宽度的三类简化剖面（非本体论线性阶梯）：
+$$ T^{praxis}(d^{proxy}) = \begin{cases}
+\text{Regime 1 (Reactive / Narrow Lock-in)} & d^{proxy} \text{ severely narrowed} \\
+\text{Regime 2 (Ego / Social Coordination)} & \text{bounded situated } d^{proxy} \\
+\text{Regime 3 (Wide Co-Generative Orientation)} & \text{broadened payable } d^{proxy} \ge d_c^{local}
 \end{cases} $$
-* **Implication**: 进化不是“生物学阶段”，而是 $d$ 值范围的结构分层。
+* **Implication**: 实践成熟不是沿一维标量脱离物理层，而是关切宽度、`L_2` 可修订性、后果承载力与门控重构能力的整体重排。
 
-### Ax-Evo-2: Evolution Vector
-**Formal Definition**: The evolutionary direction is defined by $d$ ascent, $L_2$ rigidity decay, and friction alignment.
-$$ \vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi) $$
-* **Implication**: 进化是“方向场”，不是单一目标函数。
+### Ax-Evo-2: Evolution Direction Proxy
+**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` remains OPEN).
+$$ \vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy} $$
+* **Implication**: 实践演化是多维方向场，不是单一标量目标函数。
 
 ### T-Evo-1: Tier Transition Theorem
 **P3/P4 candidate**: In a declared praxis model, Tier 2→3 transition may be modeled when `d` crosses a local threshold under decreasing $L_2$ rigidity and increasing alignment with a finite-horizon situated objective. This is not a universe-wide optimum or theorem.
