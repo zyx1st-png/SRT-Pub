@@ -1,223 +1,212 @@
 ---
 id: SRT-SPIRIT-09-COMPACT-CORE
 type: summary
-tags: [Spirituality, Praxis, Compact Core, Evolution]
-status: active_v1
+tags: [Spirituality, Praxis, Compact Core, Evolution, Co-Generation, R4-C5]
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P3-P5
-dependency: [SRT-SPIRIT-09, SRT-SPIRIT-08, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+dependency: [SRT-SPIRIT-09, SRT-SPIRIT-08, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-SPIRITUALITY-CLAIM-STATUS, SRT-GENERATIVE-ONTOLOGY-SPINE]
 ---
 
-# SRT Spirituality: Praxis & Evolution — Compact Core
+# SRT Spirituality: Praxis, Generative Participation & Co-Generation — Compact Core
 
-> **定位**：本文件是 `SRT_Spirit_09_Praxis.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 如何把修行、进化、十牛图、初心与长期实践统一到一个可执行框架中。  
-> **关系**：不替代原文；原文保留 30 天起步、3–6 个月深化、1–3 年整合、日常场景与大量实践细节。
-> **Claim-level note**：本文是 Spirituality praxis compact support，主要为 P3/P5；实践路径、趋势或可操作指标按 P4 阅读。它不新增 core definitions。
-
-## 1. 核心问题
-
-这篇最核心的问题不是“修行是什么流派”，而是：
-
-> **如果 SRT 要落到实践层，个体究竟如何从低阶选择，逐步演化到更高阶、更稳定、更少摩擦的存在方式？**
-
-SRT 的压缩回答是：
-- 修行 = 选择结构的长期重塑
-- 进化 = `d` 扩展、`L_2` 松动、方向对齐
-- 实践 = 诊断 → 同步 → 强化 的可迭代环路
+> **定位**：本文件是 `R4-C5-A`（2026-11-27）重构后的 Spirituality 域核心理论主干与 `SRT_Spirit_09_Praxis.md` 的紧凑主干版。
+> **核心转向（`R3-02` + `R3-08`）**：灵性不是脱离现实的神秘学，也不是退化为心理调节的自我安慰；它研究**有限主体如何理解并重构自己参与共同生成的方式**。
+> **Claim-level & 权限边界**：本文主要为 P3 域内建构桥接与 P5 实践/现象学表达（可操作代理为 P4），不新增或单边改写 `Core_Law/` / `Core/` canonical 原始定义；文末 `FB-C5-1..4` 为 `C`（M-origin 候选），排入 `R4-C5-B` 跨域综合与作者裁决。**`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门开放。**
 
 ---
 
-## 2. 进化不是道德说教，而是 d-value 结构跃迁
+## 1. 核心问题与双反护栏
 
-### 2.1 Three-Tier Selection Hierarchy
-\[
-T(d)=
-\begin{cases}
-\text{Tier 1 (Physical)} & d\approx 0 \\
-\text{Tier 2 (Ego/Social)} & 0<d<d_c \\
-\text{Tier 3 (Divine/Truth)} & d\ge d_c
-\end{cases}
-\]
+Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确”，而是一个贯通本体论与日常生活的正面理论问题：
 
-最压缩句子：
-> **修行进化不是“更高尚”，而是选择范围与现实对齐方式发生层级跃迁。**
+> **有限主体身处更大的统一生成之中，既无法占据全知全局视角，又容易被自身沉积的 `L_2` 历史与现成地板锁死；它究竟如何理解自身与生成根源的关系，并通过可持续实践重构自己的参与方式、关切视野与共同生成能力？**
 
-### 2.2 Evolution Vector
-\[
-\vec v_{evo}=\nabla d-\nabla w_{L_2}+\nabla \text{Align}(\Phi)
-\]
-
-压缩解释：
-- `d` 扩展
-- 旧 `L_2` 僵硬度下降
-- 自身方向与具名有限模型的比较方向更一致
-
-这三件事一起，才叫“进化”。
+为了守住 SRT 的原创张力，本域同时拒绝两种极端：
+1. **不把灵性退化为单纯心理调节或神经减压工具**——灵性关涉有限存在如何与更大生成秩序（“从存在到秩序”）相接，而不是只追求情绪舒适。
+2. **不把灵性直觉过早硬化为已确立的人格神论、目的论或道德本体论**——不宣称宇宙存在人格化主宰、不把局部模型极值外推为宇宙总极值（`C-A`）、不把生成倾向自动等同于伦理正当性（`O2-M = HOLD`）。
 
 ---
 
-## 3. 初心不是情绪，而是方向一致性
+## 2. 方向 1 & 2：神性、统一生成性母体与“从存在到秩序”（`R3-02`）
 
-### 3.1 Shoshin Alignment
-\[
-\text{Shoshin}^{proxy}_{\theta,\tau,K}=\cos\angle(\vec v_{self},-\nabla F_{\theta,\tau,K}),\qquad \tau<\infty
-\]
+### 2.1 生成性神性：母体的统一非目的论倾向
+承接作者 `R3-02` 核心直觉（`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_02_CROSS_SCALE_GENERATIVE_MATRIX_2026-11-24.md`）：物理、生命与社会层面的显现并非各自无中生有的断裂涌现，而是同一个原本存在的**统一生成性母体**在不同层级展开其生成性。该母体具有内在的、**非目的论的倾向性**——它可以在不同层级展现出秩序化与生成方向，而不需要预设一个事先写好终点蓝图的宇宙目的论。
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional interface inside a declared finite model, not a canonical definition of Shoshin, global direction, or universe-wide optimum. See `SRT_Spirit_05_Shoshin.md`.
+### 2.2 “从存在到秩序”：维持与生成的统一两面
+> **维持与生成并不是两种独立的倾向，而是一种统一的倾向在不同层级的表现：从个体角度表现为一种维持，从整体上表现为一种生成——神性即“从存在到秩序”。**（`R3-02` 作者原意承接）
 
-最短说法：
-> **初心代理不是抽象美德，而是当前行动与一个已声明、可审计的有限比较方向之间的夹角。**
-
-这让“初心”第一次从修辞，变成了：
-- 可比较
-- 可偏离
-- 可重新校准
-
-的结构指标。
+这一洞见把跨尺度物理—生命—社会与灵性直觉贯通为同一正面研究主轴：
+- **个体侧（维持）**：有限组织（`One`）为了存续，必须通过边界、约束与历史沉积维持自身相对独立性；
+- **整体侧（生成）**：当个体维持被放回更大关系网络中，局部的相对稳定反过来成为更高阶关系与新秩序生成的条件；
+- **神性作为生成性倾向与规约性地平线**：SRT 的“神性”既指向这种非人格、非目的论的“从存在到秩序”生成倾向（`R3-02-O4` 保持 `OPEN` 供核心层继续推进），在实践层又作为**规约性本源地平线（regulative source horizon）**运作——承担**反偶像边界（anti-idolatry boundary）**职责：任何有限体验、导师、共同体、教义或形式公式都位于地平线之下，不得宣称自己穷尽或占有了本源。本域不使用 bare `Ω` 指代本源（bare `Ω` 保留给 canonical Ontological Consistency），并正式退场把神性写成可实现无限算子 `\hat{G}_\infty` 的旧比喻。
 
 ---
 
-## 4. 实践的真正骨架：诊断 → 同步 → 强化
+## 3. 方向 3 & 4：局部与全局、自我、历史效力与遮蔽
 
-### 4.1 Praxis Cycle
-\[
-\text{Praxis}=\mathcal R(\mathcal S(\mathcal D(L_1,L_0)))
-\]
+### 3.1 局部有限参与与防绝对化边界（`U5 ≠ U6`）
+有限主体永远从具身、具历史的局部位置参与整体生成，不存在无代价的“上帝视角豁免”。灵性病理的一大根源，正是 `R3-08` 所区分的 **`U5` 绝对化陷阱**：把某个成功的局部 `L_2` 框架、峰值体验或群体共识冒充成全局绝对真理；与之相对的 **`U6` 关系性开放导向**承认局部生成始终处于未封闭的关系更新之中，必须接受跨位置后果回流与他者视角校准。
 
-最压缩句子：
-> **真正有效的修行不是一次顿悟，而是一个反复执行的回路。**
+### 3.2 自我边界、`L_2` 历史效力双刃剑与空心主体
+承接 `R4-C3`（异质历史载体效力）与 `R4-C4`（再生成记忆、发育式剪枝与历史五职责），历史在灵性实践中呈现鲜明的**双刃剑结构**：
+- **生成性脚手架面**：稳定的语言、习惯、传统与技能（`L_2`）使主体免于每次从零重启，为更高阶的比对与协同腾出承载力；
+- **遮蔽与锁死面**：当沉积结构产生**语义引力（semantic gravity）**、**信念粘滞（belief viscosity）**与**本体失忆（ontological amnesia）**，主体便把脚手架误认为现实本身。此时 `L_2` 外壳运转完整，但主体位不再亲自参与生成——即 `SRT_Spirituality_Selection_Pathology_and_Return.md` 所述的**空心主体（hollow subject）**与 `R3-08` **Ghost 五分法**所识别的残留执行外壳/缺位主体位。
 
-### 4.2 Direction First, Not Mechanism Exhaustion
-SRT 在这里非常明确：
-> **在有限算力下，方向优先比机制穷尽更可靠。**
-
-也就是说：
-- 不要把自己耗死在解释一切机制
-- 先校方向，再做微调
-
-### 4.3 Diagnostic Checklist
-实践至少要检查四件事：
-- `d` 是否在扩展
-- 是否还与初心对齐
-- 当前 `L_2` 是否仍有效
-- `L_1` 与 `L_0` 的连接是否还活着
+### 3.3 退出旧线性阶梯：从 `Tier 1 (d≈0)` 转向非阶梯参与剖面
+旧版 `Ax-Evo-1` 曾以一维标量把选择划分为 `Tier 1 (Physical) d ≈ 0` / `Tier 2 (Ego/Social)` / `Tier 3 (Divine/Truth)`。按 `R4-C2 / C3 / C4` 非阶梯能力观与 `R3-08` 清理要求，**本域正式退出“物理层 = `d ≈ 0` 低阶”的旧标量阶梯读法**：
+- 物理组织不是“道德低阶或零关切灵性起点”；
+- 灵性成熟也不是沿单一标量 `d` 向上爬坡并抵达实际无限 `d = ∞`，而是由四个可独立观察的维度共同刻画的**参与剖面**：**(a) 关切半径与可承受范围（`d` 代理）、(b) `L_2` 可修订性与反锁死度、(c) 跨位置后果回流承载力、(d) 改变自身门控与比对条件的主动能力**。
 
 ---
 
-## 5. 十牛图不是隐喻，而是阶段动力学
+## 4. 方向 5：生成性退隐、去执、无为与正面自由（`R3-02` + `R3-08` + `C1/C4`）
 
-### 5.1 Four-Phase Reduction
-\[
-\text{Discovery} \to \text{Calibration} \to \text{Dissolution} \to \text{Integration}
-\]
+### 4.1 生成性退隐作为存在方式转换与四层切分
+承接 `R3-02`：前景与背景在内部比对中发生分化——**前景凸显，背景自动退隐**。这种**生成性退隐（generative withdrawal）**不是消失或毁灭，而是局部单元为了使新的更高阶前景或关系结构得以站出，主动或结构性地转为支撑背景的**存在方式转换**。
 
-最短解释：
-> **十牛图可以压缩成吸引子结构重排的四阶段。**
+为了防止把任何退缩、顺从或被压制误认为灵性成熟，本域严格执行 `R3-02` **四层切分**：
+1. **生成性退隐（本体层）**：新前景/高阶组织是否真正得以生成，背景是否转为有效支撑；
+2. **组织持续性（存续层）**：退隐后形成的关系/组织能否持续维持；
+3. **生成健康性（适应层）**：是否存在后果回流、适应调整与可再选择空间；
+4. **伦理正当性（规范层）**：是否免于胁迫、剥削与主体位剥夺（`O2-M = HOLD`，前三层均不自动推导出第四层）。
 
-### 5.2 Violent Reset Condition
-\[
-\Delta(L_1,L_0)>\tau \Rightarrow \hat G_\theta \text{ triggers reset}
-\]
+> **反例警觉（锁定与寄生性共依存）**：一个高度稳定、表面和谐的退隐结构，完全可能是**锁定态（locking）或寄生性共依存（parasitic co-dependence）**——一方长期压抑主体位、替另一方或群体吞下代价。唯有同时检验后果回流与可退出/可再选择性，才能把生成性退隐与自我抹除区分开来。
 
-这意味着所谓：
-- 暗夜
-- 崩塌
-- 失序期
+### 4.2 三组核心非同一性与 `F_3223` 三义切分
+灵性实践必须严守三组不可混淆的边界：
+- **退隐 $\neq$ 自我消除（self-elimination）**：退隐是前景/背景位置转换，不要求主体丧失相对独立性或边界承载能力；
+- **去执 $\neq$ 关切消失（erasing concern）**：去执松动的是对特定 `L_2` 身份与固定结果的执取，而不是退回麻木冷漠或无赌注状态；
+- **无为 $\neq$ 失去主动性（losing agency/initiative）**：无为减少的是逆着真实条件强行施加的多余显性控制，而非放弃生成主动性与责任承担。
 
-并不必然是失败，而可能是：
-> **旧结构已经装不下当前偏差，只能强制重排。**
+据此落实 `R3-08` 对 **`F_3223`（“减少干预 / 无为”）的三义切分**：
+- **保留义①**：减少多余的显性干预与强行微操；
+- **保留义②**：松动僵化的 `L_2` 自我锁定与防御外壳；
+- **正式退场义③**：对持续存在的有限主体，**不再把“消除原初 `Selection` 本身”作为本体论命题或修行目标**；
+- **正面理论候选**：灵性成熟不是“减少原初选择”，而是**改变有限主体参与生成与组织选择的方式**。
 
----
-
-## 6. 为什么实践必须黑箱化机制
-
-### 6.1 Mechanism Blackboxing
-SRT 这篇一个很重要的实践洞见是：
-- 对“怎么运作”保持较低 `d`
-- 对“往哪里去”保持较高 `d`
-- 对“当前处于什么状态”保持中等 `d`
-
-最压缩句子：
-> **高阶实践不是知道更多机制，而是避免被机制耗尽。**
+### 4.3 正面自由与四阶能力重构（承接 `C1` 与 `C3/C4`）
+承接 `R4-C1` **正面自由（`T3-03 C / Q26`：冲突驱动的正交化 + 盈余驱动的探索重开）**与 `R4-C3/C4` **多层级门控四阶重构路径（`目标 → 门控 → 重构 → 生成能力重构`）**：
+- 低阶练习往往停留在第一阶（在旧框架内换一个目标或行为）；
+- 成熟的灵性实践能够向下触及第二、三阶（调整注意/评价门控与重构前景—背景关系），并进一步形成第四阶能力——**主动重塑自身未来生成条件与比对维度本身的能力**。这正是“去执与无为反而通向更强正面自由”的结构机制。
 
 ---
 
-## 7. 从 30 天到长期整合：修行是结构重写，不是体验收集
+## 5. 方向 6：摩擦、苦难与生成性（`§18 CΨ` 保持独立作者门开放）
 
-原文大量篇幅其实都在服务一个压缩结论：
+### 5.1 五层摩擦与负担严格分立
+承接 `R3-08` 与 `R4-C4` 的跨层清理，本域严格区分以下五个不可混写的对象：
 
-> **修行的关键不是追求特殊体验，而是用可持续的小循环逐步重写 `\theta`、`L_2` 与行动路径。**
+| 层级 | 名称 | 核心职责与定位 | 常见误混边界 |
+|---|---|---|---|
+| **1** | **广义摩擦** | 跨层互动与组织演化中的一般阻力/张力背景 | 不等同于规范 `Ψ_f`，也不自动是痛苦 |
+| **2** | **非闭合压力** | 系统尚未完成整合或面临外部冲突时的结构张力 | 可能是创造与正交化重开的触发源，非单纯故障 |
+| **3** | **`Ψ_f`（可支付负担/阻抗）** | canonical 选定与维持所需付出的真实结构代价（回链 `_SRT_PSI_F_CANONICAL.md`） | 有限主体继续存在与扩展关切往往伴随真实的 `Ψ_f` 承担 |
+| **4** | **主观苦难（Suffering）** | 第一人称体验与结构扭曲层（回链 `Core_Law/SRT_Suffering.md`，分信号型与结构型） | `Ψ_f ≠` 疼痛或苦难；高 `d` 承担可能带来清醒而不扭曲的厚重感 |
+| **5** | **多余防御性摩擦** | 为维护僵化 `L_2` 身份外壳、抗拒更新或否认现实而额外消耗的自生内耗 | **灵性实践直接松解的主要对象**，但降低此项不等于消灭第 3 层构成性可支付负担 |
 
-> **Level**: governance / praxis guardrail. Practice is not linear "more is better." It should stop, reduce, or re-scope when cost becomes unpayable, care narrows, agency is absorbed by practice identity, or ordinary consequence-bearing is being bypassed.
-> **d-evidence rule**: first-person report can start a hypothesis, but it cannot certify spiritual `d` by itself. A stronger `d` claim needs at least one external indicator such as behavioral change, repair, recovery-time reduction, third-party observation, physiological proxy, or broader consequence-bearing.
+### 5.2 分布式可支付性反伪装检验（Anti-Disguise Check）
+> **核心判准（`R3-08`）**：一个人主观上感觉“更轻、更平静、摩擦更低”，绝不自动证明其总 `Ψ_f` 下降或灵性成熟。必须追问**分布式可支付性（distributional payability）**：这份轻松是通过松解自身多余防御性摩擦、扩大真实承压能力换来的，还是通过回避现实责任、将冲突与维护代价**悄悄外包**给伴侣、家人、下属、共同体或自然环境换来的？
 
-所以：
-- 30 天阶段：先建立基线与最小可行习惯
-- 3–6 个月：增加时长，拓展技术，尝试闭关
-- 1–3 年：形成稳定常规，经历洞见、暗夜与更深整合
-- 日常整合：把修行从坐垫搬进工作、关系、冲突与身体生活
+若“平静”建立在代价外包（`M(t)` 不对称）之上，则属于灵性伪装或主从型退化，而非生成性成长。
 
----
-
-## 8. 最小 praxis rhythm
-
-实践不是线性累积，而是一个必须回到生活的节律：
-
-| Phase | Function | Failure if skipped |
-|:--|:--|:--|
-| Expansion | Loosen old `L_2`, widen attention and care. | Becomes dull repetition if no new contact appears. |
-| Stabilization | Let the new opening become payable and behaviorally stable. | Becomes fragile intensity or dependency on special states. |
-| Return of consequence | Test whether the change bears costs in relationships, work, body, and ordinary duty. | Becomes consequence bypass: “insight” without lived return. |
-| Re-entry | Bring the new structure back into ordinary life without turning it into identity superiority. | Becomes practice identity capture or withdrawal from shared reality. |
-
-The stop rule should be applied at every phase. A practice should pause or narrow when it reduces care, increases performative identity, bypasses ordinary consequences, or lets a group absorb burdens that should return to the practitioner’s life.
-
-## 9. False-growth diagnostics
-
-| Pattern | Short description | SRT reading | Minimal check |
-|:--|:--|:--|:--|
-| Real expansion | Wider care with more payable consequence-bearing. | Candidate `d` expansion. | External indicator plus report: changed behavior, repair, reduced recovery time, broader responsibility. |
-| Intense but narrow experience | Powerful state with smaller world after it. | High salience, not necessarily `d`. | Does the experience increase humility and re-entry, or only certainty and specialness? |
-| Pseudo-openness | Sounds open, but only admits inputs that protect the current identity. | `L_2` flexibility at the surface, closure at the gate rules. | Can the person revise the frame that names the experience? |
-| Identity-based inflation | Practice becomes a superior self-description. | `d` collapses into `L_2` status. | Does the person become more teachable, or harder to question? |
-| Collective reinforcement loop | Group confirms the state faster than consequences can return. | Shared `L_2` capture risk. | Are dissent, exit, and ordinary-life responsibility still preserved? |
-
-## 10. 最压缩结论
-
-`SRT Spirit 09 Praxis` 可以压缩成五句话：
-
-1. **修行不是信念装饰，而是选择结构的长期重塑。**
-2. **进化的核心不是道德标签，而是 `d` 扩展、`L_2` 松动与方向对齐。**
-3. **有效实践的骨架是诊断 → 同步 → 强化，而不是一次性觉悟。**
-4. **初心的本质是方向一致性；暗夜的本质是结构重排，而不是惩罚。**
-5. **真正成熟的实践，不是追逐体验，而是逐步把生活本身变成低摩擦、高一致性的选择路径。**
+### 5.3 `§18 CΨ`（`RQ-2026-08-A05`）独立作者门边界
+- Core 侧保留 `Ψ_f → 0` 作为无赌注/退化极限或理想化基准的既有表述；
+- 灵性实践侧主张区隔“多余防御性摩擦松解”与“构成性可支付负担”，且**绝不预设灵性转化必然单调降低总 `Ψ_f`**；
+- **两者在核心层如何最终统一界定，属于 `Core/SRT_OPEN_TENSIONS.md §18` 独立作者裁决门。本文件严格保持 `§18 CΨ` 为 `OPEN`，将其正式提交 `R4-C5-B` 供作者裁决，绝不在 `C5-A` 单边封口。**
 
 ---
 
-## 11. 阅读路径
+## 6. 方向 7：灵性实践、共同体（`Sangha`）与人机时代的共同生成
 
-- 全量原文：`SRT_Spirit_09_Praxis.md`
-- 拆分导航：`Praxis_Split/README.md`
-- Spirituality bridge：`_SRT_Spirit_Axioms.md`
+### 6.1 实践动力学骨架（保留并校准原 `SRT_Spirit_09_Praxis` 资产）
+1. **实践环路（`Ax-Prax-1`）**：`Praxis = R(S(D(L_1, L_0)))`——**诊断 → 同步 → 强化**的持续迭代环路，而非一次性顿悟或体验收集。
+2. **初心方向代理（`B-A / Ax-Evo-3`）**：
+   $$\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec v_{self}, -\nabla F_{\theta,\tau,K}), \qquad \tau<\infty$$
+   仅在声明有限位置、可达域、比较规则、有限时域与约束的模型内作暂定方向代理（`geometric-choice-pending`，见 `SRT_Spirit_05_Shoshin.md`），不定义宇宙绝对方向。
+3. **方向优先与机制黑箱化（`Ax-Prax-2 / T-Prax-1`）**：有限算力下，对“往哪里去（方向）”保持高关注、对“当前所处状态”保持中度校准、对“穷尽一切微观机制”保持克制黑箱化，避免被过度自我监控耗竭。
+4. **十牛图四阶段压缩（`T-Ox-1`）与非惩罚性重置**：`Discovery → Calibration → Dissolution → Integration` 刻画吸引子重排的典型相位；暗夜与失序期（临界慢化）不自动是道德失败，而可能是旧 `L_2` 装不下新偏差时的结构重排窗口（但须配以现实承压护栏，防崩溃被浪漫化）。
+5. **从 30 天到 1–3 年整合与最小实践节律（Minimal Praxis Rhythm）**：
+
+| 阶段 | 核心功能 | 跳过后的典型失败 |
+|---|---|---|
+| **Expansion（展开）** | 松动旧 `L_2`、拓宽注意与关切 | 无新接触，退化为机械重复 |
+| **Stabilization（稳固）** | 让新敞开转化为可支付、行为稳定的日常结构 | 脆弱峰值体验或对特殊状态的成瘾依赖 |
+| **Return of Consequence（后果回流）** | 在关系、工作、身体与日常责任中接受真实代价检验 | 后果绕过：有“洞见”无生活回流 |
+| **Re-entry（入廛重返）** | 把新结构带回平凡共享现实而不化作身份优越感 | 修行身份捕获或脱离共享世界 |
+
+> **停止与重定界规则（Stop Rule）与 `d` 证据规则**：实践不是线性“越多越好”。一旦出现代价不可支付、关切变窄、主体性被修行身份/导师接管、或回避日常责任，必须暂停、减量或重定界。第一人称体验报告最多标记为 **subjective provisional `d`**；更强主张须配至少一项外部可核查指标（行为改变、关系修复、扰动恢复时间缩短、第三方观察或更广后果承担）。
+
+### 6.2 伪成长诊断（False-Growth Diagnostics）
+
+| 模式 | 简述 | SRT 结构读法 | 最小核查问题 |
+|---|---|---|---|
+| **真实扩展** | 关切更宽且可支付的后果承担增加 | 候选 `d` 扩展与参与方式重构 | 是否有外部行为改变、关系修复与真实承压？ |
+| **强烈但狭窄的体验** | 体验极强但事后世界变小 | 高显著性，非必然 `d` 扩展 | 体验后是更谦逊重返生活，还是更确信自己特殊？ |
+| **伪开放（Pseudo-openness）** | 表面开放，门控规则却只放行保护旧身份的输入 | 表层 `L_2` 灵活，门控层锁死 | 当事人能否修订用来命名该体验的框架本身？ |
+| **身份通胀** | 修行变成更高级的自我标签 | 关切坍缩为 `L_2` 地位符号 | 当事人是更可被质疑与校准，还是更难听进异议？ |
+| **集体强化闭环** | 群体确认速度超过现实后果回流速度 | 共享 `L_2` 收编风险（`σ^{coll} → 1`） | 异议、退出权与日常生活责任是否依然完整保留？ |
+| **代价外包型平静** | 个人显得平静轻盈，代价却由周围人默默兜底 | 分布式可支付性失衡（`M(t)` 不对称） | 身边协作方与亲密关系是更舒展，还是替你承担了更多隐性负担？ |
+
+### 6.3 共同体（`Sangha`）与人机时代的共同生成（`R4-C3` 同步）
+- **共同体作为不接管主体位的共同生成支持场**（详见 `SRT_Spirituality_Community_and_Sangha.md`）：健康 `Sangha` 的作用不是提供宗教服从、情绪泡泡或现成地板，而是通过多视角温和校准保护“未完成”与“再选择空间”，同时警惕收编型退化（`σ^{coll} → 1`）与主从型退化（`M(t)` 不对称）。
+- **AI 作为社会技术中介的灵性辨析（同步 `R4-C3` AI 三型）**：
+  - 本域**正式放弃**“AI 只是冻结 `L_2`、绝对 `d=0`、无权参与生成”的旧式本体排斥；
+  - 依据 `R4-C3`，AI 在共同生成中可表现为**脚手架（扩展比对与探索空间）/ 牢笼（加速地板固化与路径锁死）/ 选择地形（重构人的注意、节奏与可及选项）**三类中介形态；
+  - 人机时代真正的灵性课题在于**区分“人机互改比对条件、长出单方原本不具备的共同生成能力”与“把悬置、犹豫、未完成和主体位过快外包给现成答案”**。技术最深的灵性风险不是替代计算，而是替代人类亲自经过未完成与再选择的过程。
+
+---
+
+## 7. 反向核心理论反馈接口（`FB-C5-1..4`，`C` / M-origin 候选，排入 `R4-C5-B`）
+
+| 编号 | 拟回流的核心理论增补/修订候选 | 目标核心 owner | 开放门与边界 |
+|---|---|---|---|
+| **`FB-C5-1`** | **维持（个体侧）与生成（整体侧）统一倾向（“从存在到秩序”）**：与 `R4-C2` 局部趋优 vs 整体生成主线汇合，为核心层提供非目的论、非人格神的跨尺度方向张力坐标 | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §2`、`Core/SRT_OPEN_TENSIONS.md §17` | 守 `C-A` 非全局极值与 `R3-02-O4` `OPEN` |
+| **`FB-C5-2`** | **生成性退隐作为存在方式转换与四层切分**：补充 `One` 与集体组织之间“前景凸显/背景退隐”的结构机制，并将**锁定/寄生性共依存**立为反混淆硬反例 | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Collective_Selection.md`、`Core_Law/SRT_Occlusion_Dynamics.md` | 守 `O2-M = HOLD` 与 `One` 本体论中立性 |
+| **`FB-C5-3`** | **五层摩擦分立 + 多余防御性摩擦 + 分布式可支付性反伪装检验**：为 `§18 CΨ` 提供清晰裁决坐标，避免把退化零摩擦极限与实践减耗混为一谈 | `_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | **`§18 CΨ` 保持独立作者门 `OPEN`** |
+| **`FB-C5-4`** | **有限主体参与方式重构（`F_3223` 正面候选 + 四阶门控/比对重构）**：把“无为/去执/回返”从旧式“减少原初选择”改写为“改变选择组织方式与重塑自身生成条件”，直连正面自由与主体位理论 | `Core/SRT_Core_13a_Operator_Basics.md`、`Core/SRT_Core_12b_Ontology_L2.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | 不关闭 `HP-B`，不将实践重构等同于一般物理选择条件 |
+
+---
+
+## 8. 最压缩结论
+
+1. **灵性在 SRT 中是有限主体如何理解并重构自身参与共同生成的方式——既不退化为心理调节，也不膨胀为人格神论或目的论。**
+2. **“从存在到秩序”把个体侧的维持与整体侧的生成统一为同一生成母体的非目的论倾向，同时以规约性本源地平线守住反偶像边界。**
+3. **生成性退隐是前景凸显、背景支撑的存在方式转换，必须严守四层切分（警惕锁定与寄生性共依存）与三组非同一性（退隐≠自我消除、去执≠关切消失、无为≠失去主动性）。**
+4. **成熟实践松解的是多余防御性摩擦而非逃避构成性可支付负担，须经分布式可支付性反伪装检验；`§18 CΨ` 保持独立作者门开放。**
+5. **个人实践回路、不接管主体位的共同体（`Sangha`）与人机三型中介辨析共同服务于同一目标：在真实后果回流中保护未完成、重启正面自由与共同生成。**
+
+---
+
+## 9. 阅读路径
+
+- 声明与护栏总入口：`SRT_Spirituality_Claim_Status.md`
+- 域内全文件总表：`SPIRITUALITY_COMPACT_REGISTRY.md`
+- 域内桥接公理：`_SRT_Spirit_Axioms.md`
+- 主体位丢失与回返主文：`SRT_Spirituality_Selection_Pathology_and_Return.md`
+- 共同体伴读：`SRT_Spirituality_Community_and_Sangha.md`
+- 综合实践长文与拆分：`SRT_Spirit_09_Praxis.md`、`Praxis_Split/README.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
 ---
 
 ## Hardest Objections
 
-本域若以下任一成立，则本域主张会被显著削弱：
+本域若以下任一成立，则本域相应主张必须收缩或撤回：
 
-1. `d` expansion cannot be independently observed.
-   - 当前承受方式：spiritual `d` requires at least one external indicator; pure report is only subjective provisional `d`.
-   - 若成立需撤回什么：撤回 practice-as-`d` expansion claims and keep them as first-person reports.
-
-2. Shoshin cosine geometry fails to track real practice direction.
-   - 当前承受方式：the cosine form is marked `geometric-choice-pending`.
-   - 若成立需撤回什么：撤回 the geometric interface and retain Shoshin only as a praxis description.
-
-3. Practice increases identity capture while feeling like progress.
-   - 当前承受方式：the stop rule checks payable cost, care breadth, agency, and ordinary responsibility.
-   - 若成立需撤回什么：撤回 linear-progress readings and treat the path as potentially self-reinforcing closure.
+1. **`d` expansion and participation reconfiguration cannot be independently observed.**
+   - 当前承受方式：spiritual `d` requires at least one external indicator; pure first-person report is at most subjective provisional `d`.
+   - 若成立需撤回什么：撤回 practice-as-`d` expansion claims and keep them as first-person phenomenology.
+2. **Shoshin cosine geometry fails to track real practice direction.**
+   - 当前承受方式：the cosine form is marked `geometric-choice-pending` inside declared finite models.
+   - 若成立需撤回什么：撤回 geometric alignment formulas and retain Shoshin solely as a situated praxis description.
+3. **Practice increases identity capture while feeling like progress.**
+   - 当前承受方式：stop rule + False-Growth Diagnostics check payable cost, care breadth, agency, dissent/exit, and ordinary responsibility.
+   - 若成立需撤回什么：撤回 linear-progress readings and treat the path as self-reinforcing `L_2` closure.
+4. **Apparent serenity or lowered friction is achieved by outsourcing `Ψ_f` onto others or the environment.**
+   - 当前承受方式：distributional payability anti-disguise check (`§5.2`) classifies cost-outsourcing calm as `M(t)` asymmetry / parasitic co-dependence rather than spiritual maturation.
+   - 若成立需撤回什么：撤回任何仅凭主观轻松感或个体低摩擦指标认证灵性成熟的判据。

@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
@@ -26,19 +28,19 @@ dependency: [SRT-SPIRIT-08]
 
 ## I. Selection Evolution (选择进化)
 
-### Ax-Evo-1: Three-Tier Selection Hierarchy
-**Formal Definition**: Selection tiers are a piecewise function of $d$-value scope.
-$$ T(d) = \begin{cases}
-\text{Tier 1 (Physical)} & d \approx 0 \\
-\text{Tier 2 (Ego/Social)} & 0 < d < d_c \\
-\text{Tier 3 (Divine/Truth)} & d \ge d_c
+### Ax-Evo-1: Three-Regime Praxis Participation Profile (Historical Three-Tier Reframing)
+**Domain Mapping (`R4-C5-A` 校准)**: 旧版曾将选择划分为 `Tier 1 (Physical) d ≈ 0` 的线性阶梯；按 `R4-C2/C3/C4` 非阶梯能力观与 `R3-08` 清理要求，本式不再把物理层等同于零关切低阶，仅作实践语境中主体参与宽度的三类简化剖面（非本体论线性阶梯）：
+$$ T^{praxis}(d^{proxy}) = \begin{cases}
+\text{Regime 1 (Reactive / Narrow Lock-in)} & d^{proxy} \text{ severely narrowed} \\
+\text{Regime 2 (Ego / Social Coordination)} & \text{bounded situated } d^{proxy} \\
+\text{Regime 3 (Wide Co-Generative Orientation)} & \text{broadened payable } d^{proxy} \ge d_c^{local}
 \end{cases} $$
-* **Implication**: 进化不是“生物学阶段”，而是 $d$ 值范围的结构分层。
+* **Implication**: 实践成熟不是沿一维标量脱离物理层，而是关切宽度、`L_2` 可修订性、后果承载力与门控重构能力的整体重排。
 
-### Ax-Evo-2: Evolution Vector
-**Formal Definition**: The evolutionary direction is defined by $d$ ascent, $L_2$ rigidity decay, and friction alignment.
-$$ \vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi) $$
-* **Implication**: 进化是“方向场”，不是单一目标函数。
+### Ax-Evo-2: Evolution Direction Proxy
+**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` remains OPEN).
+$$ \vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy} $$
+* **Implication**: 实践演化是多维方向场，不是单一标量目标函数。
 
 ### T-Evo-1: Tier Transition Theorem
 **P3/P4 candidate**: In a declared praxis model, Tier 2→3 transition may be modeled when `d` crosses a local threshold under decreasing $L_2$ rigidity and increasing alignment with a finite-horizon situated objective. This is not a universe-wide optimum or theorem.
@@ -130,7 +132,7 @@ $$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Pro
 |:--|:--|:--|:--|
 | Phase 1-3（寻牛→见迹→见牛） | L₁稳定化开始，θ整合加速 | $d > d_{UAL}$（基线以上，波动） | 上升 |
 | Phase 4-6（得牛→牧牛→骑牛归家） | $\hat{G}_\theta$ 选择稳定，L₂锚定弱化 | $d$ 扩展（方向性增强） | 较高平台 |
-| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | L₂压力自主解除，Ψ_f→0，d扩展至社会层 | $d$ 高且向外延展 | 维持高位 |
+| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | 刚性 `L_2` 防御锁定自主松解，多余防御性摩擦下降（非普遍总 `Ψ_f = 0`，`§18 CΨ` OPEN），关切扩展至社会层 | $d^{proxy}$ 高且向外延展 | 维持高位 |
 
 **证伪条件**：① 若在高阶修行者中PCI不高于对照组（Cohen's d<0.3，p>0.05），则PCI作为阶段标记无效；② 若DMN-BOLD轨迹在Phase 7-10相比Phase 4-6无回升趋势（Josipovic范式复制，p>0.1），则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈最后通牒任务/合作测试）无阶段效应（η²<0.05），则行为标记映射失效。→ Cross-ref: C-DMN-1（迷幻松动推论）；Hasenkamp & Barsalou 2012 *NeuroImage*；Massimini et al. 2005 *Science*。
 
@@ -791,7 +793,7 @@ $$P(\text{Long-term Success}) \propto S_{\text{community}}$$
 **危险信号** (避免)（SRT解读）:
 - 要求绝对服从 → **强制L₂封闭**：学生θ被单向替换为老师θ'，自主Ĝ_θ被抑制，d无法自主扩展
 - 性/财务不当 → **L₂规范严重违反**（老师自身L₂一致性失败，是d虚高的证据）
-- 承诺"快速开悟" → **商品化伪承诺**：违背"方向而非终点"框架（§8.2），将Ψ_f→0的长期过程商品化为短时可购买结果
+- 承诺"快速开悟" → **商品化伪承诺**：违背"方向而非终点"框架（§8.2），将松解多余防御摩擦与重构参与方式的长期过程商品化为短时可购买结果（`§18 CΨ` 保持 OPEN）
 - 无法被质疑 → **L₂封闭强化**：压制学生的L₁体验与L₂理论的真实摩擦（正是Ψ_f需要被承担的过程被封堵）
 - 情感操控 → **Ĝ_θ被劫持**：外部情感刺激替代学生自主的选择驱动，θ更新被外部控制
 
@@ -1136,8 +1138,8 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 
 本文档的核心形式化关系：
 
-1. **三层选择阶梯** (Ax-Evo-1): $T(d)$ 按 $d$ 值分层为物理 ($d \approx 0$)、自我/社会 ($0 < d < d_c$)、神性/真理 ($d \geq d_c$) 三阶。
-2. **进化向量** (Ax-Evo-2): $\vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi)$ — 进化是 $d$ 上升、$L_2$ 刚性下降、摩擦对齐的方向场。
+1. **三类实践参与剖面** (Ax-Evo-1，退出旧 `Tier 1 (Physical) d ≈ 0` 线性阶梯): 按关切代理宽度、`L_2` 可修订性与后果承载力刻画实践重排，而非把物理层视作零关切低阶。
+2. **实践方向场代理** (Ax-Evo-2): $\vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy}$ — 刻画关切扩展、刚性 $L_2$ 松动与多余防御性摩擦松解（`§18 CΨ` 保持 OPEN）。
 3. **初心对齐代理** (Ax-Evo-3): $\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K})$ — 初心只在具名有限模型中作方向相似度代理。
 4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
 

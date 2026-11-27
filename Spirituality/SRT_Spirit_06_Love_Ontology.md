@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-06
 type: theory
 tags: [Love, Fear, Karma, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
@@ -171,7 +173,7 @@ d \text{ stable and high} & \text{(稳定)} \\
 
 | 阶段 | 主导化学物质 | 特征 | SRT |
 |:-----|:------------|:-----|:----|
-| **欲望** | 睾酮、雌激素 | 性驱动 | $d \approx 0$（自我中心）|
+| **欲望** | 睾酮、雌激素 | 性驱动 | 狭隘/短时域关切代理（自我中心倾向，非物理 `d=0`）|
 | **迷恋** | 多巴胺、去甲肾上腺素 | 痴迷、失眠、食欲降低 | $d$ 暂时飙升到2-3 |
 | **依恋** | 催产素、血管加压素 | 平静、安全感 | $d$ 稳定在3-5 |
 
@@ -831,7 +833,7 @@ $$\lim_{d \to \infty} \text{"I"} = ?$$
 
 也许你**不再是**你——"你"消失于万物之中。
 
-也许你**终于是**你——你的真实本性（$\hat{G}_\infty$）显现。
+也许你**终于是**你——在彻底松解孤立自我幻觉后，你与更大生成根源的关系性本来面目显现（注：旧稿此处曾写 `\hat{G}_\infty`，按 `R3-08` 已退场作为实指无限算子）。
 
 两个答案都对。或者都不对。
 
@@ -894,8 +896,8 @@ $$\text{Karma} \equiv \oint_{L_2} \nabla V \cdot d\sigma \neq 0$$
 
 - **$\hat{G}_\theta$ 与爱的共振** [H]: 爱降低算子间摩擦 $\Phi_{ij}$（注：$\Phi_{ij}$为算子i-j之间的界面摩擦，区别于个体内Ψ_f），使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
 - **$\hat{G}_\theta$ and love resonance** [H]: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
-- **$\Psi_f$ 与恐惧/爱的对称 proxy** [H/P5]: 恐惧可被建模为 $S(\hat{G}_{self}) / d^{proxy}$ 的 phenomenological proxy；`d -> infinity` 与 `Ψ_f -> 0` 均为 love-language 的 regulative shorthand，不定义 canonical `Ψ_f` 或恐惧。
-- **$\Psi_f$ and fear-love symmetry proxy** [H/P5]: Fear may be modeled as a phenomenological proxy involving $S(\hat{G}_{self}) / d^{proxy}$; `d -> infinity` and `Ψ_f -> 0` are regulative love-language shorthand, not canonical definitions.
+- **$\Psi_f$ 与恐惧/爱的对称 proxy** [H/P5]: 恐惧可被建模为 $S(\hat{G}_{self}) / d^{proxy}$ 的 phenomenological proxy；`d -> infinity` 与 `Ψ_f -> 0` 均为历史 love-language 的 regulative shorthand，不定义 canonical `Ψ_f` 或恐惧（`§18 CΨ` 保持独立作者门 OPEN，且须通过分布式可支付性反伪装检验）。
+- **$\Psi_f$ and fear-love symmetry proxy** [H/P5]: Fear may be modeled as a phenomenological proxy involving $S(\hat{G}_{self}) / d^{proxy}$; `d -> infinity` and `Ψ_f -> 0` are historical regulative shorthand, not canonical definitions (`§18 CΨ` remains OPEN).
 - **$d$ 的双向负载** [H]: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）[R→John of the Cross 暗夜的SRT重解读]——结构过载，而非道德失败。
 - **Bidirectional $d$ load** [H]: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
 

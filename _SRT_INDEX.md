@@ -295,7 +295,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md` 是 Neuroscience 文件夹级 proxy/clinical guardrail；它不替代 canonical anchors，但必须在 public / clinical / FEP / NDE / AI-comparison 使用前读取
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
-- Spirituality 板块现采用”旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板；涉及 God / Ω / d-infinity / suffering / Ψ_f / practice 的语言先读 `Spirituality/SRT_Spirituality_Claim_Status.md`
+- Spirituality 板块已完成 `R4-C5-A` 双向重构（退出 2026-07-20 旧休眠层声明）：以 `SRT_Spirituality_Claim_Status.md`（`v2`）、`SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`）与 `SRT_Spirit_09_Praxis_CompactCore.md`（`v2`）为最小主干，围绕七大正面主轴（神性与生成根源 / 从存在到秩序 / 局部与全局 / 自我历史与遮蔽 / 退隐去执无为与正面自由 / 摩擦苦难与生成性 / 灵性实践与共同生成）和双线主体位回返 + `Sangha` 共同体展开，登记 `FB-C5-1..4` 反向核心反馈并严格保持 `§18 CΨ` 独立作者门 OPEN
 - `ANNEX_REGISTRY.md` 是各 annex 批次的注册总表，不定义 canonical 术语，不提升 annex 内容权限
 - `SRT_Glossary_Structural_Governance_Terms.md` 是治理/结构操作层术语补充词汇表；`canonical: false`，不替代 `SRT_Glossary.md` 主体
 - `Operations/Archive_Records/Closure_Index_2026-04-29.md` 是 2026-04-29 各 annex / Physics / AI 批次的 closure 汇总索引；`canonical: false`，仅运行层留痕
