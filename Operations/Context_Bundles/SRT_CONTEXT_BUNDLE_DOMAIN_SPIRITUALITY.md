@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 5bc7782b6
+source_commit: 0ad4bbe5d
 source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
 source_dirty: false
-inputs_digest: d12f4e9564fdfb16
+inputs_digest: 010ae4b294e49b5b
 ---
 
 # SRT 灵性领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: d12f4e9564fdfb16
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `5bc7782b6` |
+| 来源 commit | `0ad4bbe5d` |
 | 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
@@ -851,7 +851,7 @@ Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确�
 
 | 序号 | 名称 | 核心职责与定位 | 常见误混边界 |
 |---|---|---|---|
-| **1** | **广义摩擦** | 跨层互动与组织演化中的一般阻力/张力背景 | 不等同于规范 `Ψ_f`，也不自动是痛苦 |
+| **1** | **广义摩擦** | **机会成本差异产生的实际选择压力**（跨尺度动态四联中的关系性选择压力，`T3-02 D / PT09`，回链 `_SRT_PSI_F_CANONICAL.md §0`） | 不等同于承载边界侧的规范 `Ψ_f`，也不自动是痛苦或单纯被动阻力 |
 | **2** | **非闭合压力** | 系统尚未完成整合或面临外部冲突时的结构张力 | 可能是创造与正交化重开的触发源，非单纯故障 |
 | **3** | **`Ψ_f`（可支付负担/阻抗）** | canonical 选定与维持所需付出的真实结构代价（回链 `_SRT_PSI_F_CANONICAL.md`） | 有限主体继续存在与扩展关切往往伴随真实、甚至上升的 `Ψ_f` 承担 |
 | **4** | **主观苦难（Suffering）** | 第一人称体验与结构扭曲层（回链 `Core_Law/SRT_Suffering.md`，分信号型与结构型） | `Ψ_f ≠` 疼痛或苦难；高承压可伴随清醒而不扭曲的厚重感 |

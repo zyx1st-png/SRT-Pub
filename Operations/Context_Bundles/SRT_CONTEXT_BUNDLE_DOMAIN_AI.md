@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 5bc7782b6
+source_commit: 0ad4bbe5d
 source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
 source_dirty: false
-inputs_digest: d12f4e9564fdfb16
+inputs_digest: 010ae4b294e49b5b
 ---
 
 # SRT AI 领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: d12f4e9564fdfb16
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `5bc7782b6` |
+| 来源 commit | `0ad4bbe5d` |
 | 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
