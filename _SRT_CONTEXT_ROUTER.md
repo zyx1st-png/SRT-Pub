@@ -577,8 +577,8 @@ When answering or editing a non-simple SRT question:
 
 ### Boundary
 
-- Spirituality files are constructive domain bridges and praxis / existential interpretation layers; they do not unilaterally rewrite canonical `Core_Law/` or `Core/` definitions before `R4-C5-B` author adjudication.
-- Keep `§18 CΨ` (`RQ-2026-08-A05`) explicitly OPEN as an independent author gate; do not collapse `R3-08` 4-way friction roles (plus excess defensive friction as an amplifying mechanism) or assert `Ψ_f → 0` as a universal spiritual goal.
+- Spirituality files are constructive domain bridges and praxis / existential interpretation layers; their `FB-C5-1..4` core feedback has been integrated into canonical owners under the 2026-11-27 `D1–D6` author adjudication (`R4-C5-C/D`).
+- Under 2026-11-27 Author Option 1, `§18 CΨ` (`RQ-2026-08-A05`) conceptual conflict is RESOLVED via semantic bifurcation (`Core/SRT_OPEN_TENSIONS.md §18`), while five independent mechanistic & technical gaps (excess defensive friction formation/amplification + 4 distributional payability gaps) remain OPEN; do not assert `Ψ_f → 0` as a universal spiritual goal.
 - Enforce `R3-02` 4-layer withdrawal cut (incl. locking/parasitic co-dependence) and `R3-08` `F_3223` 3-sense split (retain ①②, retire ③) + `R3-08 P2-06` retirement of literal `\hat{G}_\infty` and `L_0` information storage.
 
 ---

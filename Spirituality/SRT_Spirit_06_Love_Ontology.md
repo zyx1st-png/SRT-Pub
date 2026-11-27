@@ -612,7 +612,7 @@ $$\text{Effective Altruism} : \max_{a} \frac{\Delta(\text{Well-being})}{\text{Co
 ## §8 爱的张力、协作正外部性与负担重组（`R4-C5-A` 校准）
 
 ### §8.1 爱的二元张力：关怀扩展为何不等于“消除一切代价”
-> **`R4-C5-A / R3-08` 校准**：旧稿曾以“痛苦来自 `Ψ_f > 0`”和“完美的爱要求被爱者 `Ψ_f → 0`”构造悖论。按 `R3-08`（摩擦四分：`Ψ_f ≠` 主观痛苦，`§18 CΨ` 保持 OPEN），有限存在与真实关系本来就包含构成性可支付负担（`Ψ_f > 0` 并非痛苦本身）。爱面对的真实张力不是“如何消灭 `Ψ_f`”，而是：**扩展对彼此的关切意味着更深地进入彼此的风险、历史与后果回流——既可能带来支持与共担，也可能增加责任、维护负担与脆弱性**。
+> **`R4-C5-A / R3-08` 校准**：旧稿曾以“痛苦来自 `Ψ_f > 0`”和“完美的爱要求被爱者 `Ψ_f → 0`”构造悖论。按 `R3-08`（摩擦四分：`Ψ_f ≠` 主观痛苦，`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN），有限存在与真实关系本来就包含构成性可支付负担（`Ψ_f > 0` 并非痛苦本身）。爱面对的真实张力不是“如何消灭 `Ψ_f`”，而是：**扩展对彼此的关切意味着更深地进入彼此的风险、历史与后果回流——既可能带来支持与共担，也可能增加责任、维护负担与脆弱性**。
 
 1. 爱 = 在尊重彼此相对独立性与主体位的前提下，参与彼此的共同生成；
 2. 真实承压（`Ψ_f`）不等于扭曲性苦难（`Core_Law/SRT_Suffering.md`）；
@@ -844,8 +844,8 @@ $$\text{Karma} \equiv \oint_{L_2} \nabla V \cdot d\sigma \neq 0$$
 
 - **$\hat{G}_\theta$ 与爱的共振** [H]: 爱降低算子间摩擦 $\Phi_{ij}$（注：$\Phi_{ij}$为算子i-j之间的界面摩擦，区别于个体内Ψ_f），使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
 - **$\hat{G}_\theta$ and love resonance** [H]: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
-- **$\Psi_f$ 与恐惧/爱的对称 proxy** [H/P5]: 恐惧可被建模为 $S(\hat{G}_{self}) / d^{proxy}$ 的 phenomenological proxy；`d -> infinity` 与 `Ψ_f -> 0` 均为历史 love-language 的 regulative shorthand，不定义 canonical `Ψ_f` 或恐惧（`§18 CΨ` 保持独立作者门 OPEN，且须通过分布式可支付性反伪装检验）。
-- **$\Psi_f$ and fear-love symmetry proxy** [H/P5]: Fear may be modeled as a phenomenological proxy involving $S(\hat{G}_{self}) / d^{proxy}$; `d -> infinity` and `Ψ_f -> 0` are historical regulative shorthand, not canonical definitions (`§18 CΨ` remains OPEN).
+- **$\Psi_f$ 与恐惧/爱的对称 proxy** [H/P5]: 恐惧可被建模为 $S(\hat{G}_{self}) / d^{proxy}$ 的 phenomenological proxy；`d -> infinity` 与 `Ψ_f -> 0` 均为历史 love-language 的 regulative shorthand，不定义 canonical `Ψ_f` 或恐惧（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN，且须通过分布式可支付性反伪装检验）。
+- **$\Psi_f$ and fear-love symmetry proxy** [H/P5]: Fear may be modeled as a phenomenological proxy involving $S(\hat{G}_{self}) / d^{proxy}$; `d -> infinity` and `Ψ_f -> 0` are historical regulative shorthand, not canonical definitions (`§18 CΨ` Option 1 conceptual conflict resolved; 5 gaps OPEN).
 - **$d$ 的双向负载** [H]: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）[R→John of the Cross 暗夜的SRT重解读]——结构过载，而非道德失败。
 - **Bidirectional $d$ load** [H]: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
 

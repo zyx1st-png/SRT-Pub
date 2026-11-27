@@ -3,12 +3,12 @@ id: SRT-CORE-25-THERMODYNAMIC-SIGNATURES-OF-SELECTION
 type: bridge_hardening
 tags: [Core, Thermodynamics, Irreversibility, Arrow of Time, Entropy Production, Dissipative, Brain Hierarchy, Turbulence, Psi_f, d-value, Ghost Operator, Consciousness, Neuroscience]
 status: active
-version: v2
+version: v3
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
 canonical: false
-updated: 2026-11-26
+updated: 2026-11-27
 dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CORE-23-IG-COMPLEXITY-NEURO-HARDENING, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-22, SRT-CONSCIOUSNESS-MECHANISMS]
 renamed_from: Core/SRT_Core_24_Thermodynamic_Signatures_of_Selection.md
 renamed_on: 2026-04-29
@@ -51,6 +51,22 @@ To prevent thermodynamic signatures from being conflated with selection structur
 | **`T-E` (`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` & `SRT_Selection_Event_CompactCore.md §4b`)** | **Mechanistic stratification (`NODE-LIFE-DISSIPATIVE EA-4`)**: separates *physical/thermodynamic constraint* vs. *typical substrate energy exchange* vs. *non-equilibrium flux maintenance* vs. *dissipative organizational mechanism* vs. *explanatory sufficiency*, four dissipative-to-selection tiers, `G2` non-universality, and *living scaffold* vs. *dead stability* vs. *cage order* | High `H_P` or stable non-equilibrium pattern (flame, Bénard cell, hurricane) does **not** pass bounded-candidate `CG-0..CG-4` audit or establish generative health; `CG-0..CG-4` never back-defines primitive `Selection` |
 | **`One_Formation §2.3` & `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §8.2`** | **Physical three-state `One` non-exhaustive typology** (NOT a mandatory `I → II → III` evolutionary ladder): Regime I (bound equilibrium, no universal continuous flux required) / Regime II (dissipative dynamic maintenance, external-boundary flux) / Regime III (endogenous mutual maintenance: self-generated boundary repair, functional differentiation, heritable/epigenetic writeback) | Biological membranes are **not** a universal `One` threshold; exact crossing criteria for all three regimes remain **`R3-04-O1` OPEN** |
 | **`Core/SRT_OPEN_TENSIONS.md §12`** | **Altitude tension**: `Core_25`'s measurement-facing signature reading vs. P13's de-selection statistical-portrait reading | Neither replaces the other; ontological-absence vs. theoretical-abstraction remains explicitly **OPEN**; SRT is **not** an anti-entropy theory |
+
+## 1b. Energy-Gradient Differences as a Deeper Physical Generative Mechanism Candidate (`R4-C5-C / D5`)
+
+Beyond measurement-facing thermodynamic signatures (`§1a`), `R4-C4 / R4-C5-C` (`D5`) retains **energy-gradient differences** as an active positive research line toward a **deeper physical–biological–cognitive generative mechanism**—not merely a measurement proxy, yet strictly barred from premature identity with `Selection`, canonical `d`, or canonical `Ψ_f`.
+
+1. **Five Strictly Distinguished Physical and Model Quantities** (never collapse into a single scalar "energy"):
+   - **① 物理驱动力 / 势能与电化学梯度（Physical driving forces & transmembrane electrochemical gradients）**：substrate physical conditions for directed flux and ion transport;
+   - **② 代谢资源与能量通量（Metabolic resources & flux: ATP / CMRO₂ / glucose）**：organizational maintenance resource conditions;
+   - **③ 物理自由能（Non-equilibrium physical free energy）**：thermodynamic potential difference in a specified physical model;
+   - **④ 变分自由能（Variational free energy）**：information-theoretic functional in a probabilistic inference model;
+   - **⑤ 有效动力学能量地形（Effective dynamical energy landscape）**：macroscopic attractor/stability geometry of a declared dynamical system.
+2. **Core Constructive Research Question (Bridging Physics, Life & Cognition)**:
+   > *How do physical energy-gradient differences—operating through real coupling, boundary maintenance, differential sensitivity, feedback regulation, and generative normalization—progressively form organizational constraints that govern subsequent generation, comparison, and capability formation?*
+3. **Dual Discipline (Open Derivation, No Premature Identity)**:
+   - SRT does **not** presuppose that current canonical definitions must remain permanently unrevised if a deeper unified physical generative mechanism is independently derived;
+   - Conversely, until independent theoretical derivation and explicit dimensional/measurement bridges are established (including unproved dimensional bridge coefficients such as `κ_dim` in `Neuroscience/_SRT_Neuro_Axioms.md H-NEURO-5`), **none of the five quantities above may be directly equated to primitive `Selection`, canonical `d`, or canonical `Ψ_f`**.
 
 ---
 

@@ -89,7 +89,7 @@ $$ \text{Faith}^{bridge} \sim \lim_{U\to\infty} P(O>0\mid U)=1 $$
 * **Implication**: 信仰是对未封闭生成空间的敞开姿态，不是命题集合的锁定。
 
 ### T-Faith-1: Conditional Openness–Defensive-Friction Bridge
-**Conditional Bridge Hypothesis**: Under payable grounding and non-outsourced responsibility, sustained openness may widen care proxies and loosen excess defensive friction (`\Psi_f^{defensive-proxy}`); this does NOT guarantee lowering total canonical `Ψ_f` (which may rise when broader responsibility is actually borne; `§18 CΨ` remains OPEN).
+**Conditional Bridge Hypothesis**: Under payable grounding and non-outsourced responsibility, sustained openness may widen care proxies and loosen excess defensive friction (`\Psi_f^{defensive-proxy}`); this does NOT guarantee lowering total canonical `Ψ_f` (which may rise when broader responsibility is actually borne; `§18 CΨ` Option 1 conceptual conflict resolved; 5 gaps OPEN).
 $$ O \uparrow \;\leadsto\; d^{proxy} \uparrow \;\land\; \Psi_f^{defensive\text{-}proxy} \downarrow \quad (\text{conditional, not universal}) $$
 * **Implication**: 信仰的结构效应是松动僵化防御外壳并拓宽关切视野，而非消除一切构成性代价。
 
@@ -932,8 +932,8 @@ $$\text{Spirit}^{bridge}(\sigma) \sim \nabla d^{proxy}(\sigma)$$
 
 - **$\hat{G}_\theta$ 与 $L_2$ 偏置比较**: 局部 $L_2$ 约束产生方向偏置 $B(L_2)$；只有在具名可达域和比较规则内，才可比较该偏置是否使选择错过了模型内的可达替代。
 - **$\hat{G}_\theta$ and $L_2$ bias comparison**: Local $L_2$ constraints introduce directional bias $B(L_2)$; whether that bias misses a reachable alternative is assessable only inside a named domain with a declared comparison rule.
-- **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 概念代理为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；在可支付且不外包代价的条件下，持续开放可拓宽关切并松解多余防御性摩擦（$\Psi_f^{defensive\text{-}proxy} \downarrow$），不等于普遍降低总 $\Psi_f$（`§18 CΨ` 保持 OPEN）。
-- **$\Psi_f$ and faith openness**: Faith is conceptually proxied by openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; under payable non-outsourced grounding, sustained openness may loosen excess defensive friction rather than universally driving total $\Psi_f \to 0$ (`§18 CΨ` OPEN).
+- **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 概念代理为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；在可支付且不外包代价的条件下，持续开放可拓宽关切并松解多余防御性摩擦（$\Psi_f^{defensive\text{-}proxy} \downarrow$），不等于普遍降低总 $\Psi_f$（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）。
+- **$\Psi_f$ and faith openness**: Faith is conceptually proxied by openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; under payable non-outsourced grounding, sustained openness may loosen excess defensive friction rather than universally driving total $\Psi_f \to 0$ (`§18 CΨ` 选项 1 语义分流、五项缺口 OPEN).
 - **$d$ 条件桥**: $dd/dt > 0$ 不是 Shoshin 对齐的充分条件；须另过可支付、可协调、不外包、可再选择与代理效度门。
 - **Conditional d bridge**: $dd/dt > 0$ is not sufficient for Shoshin alignment; payability, coordination, non-outsourcing, re-selectability, and proxy-validity gates remain independent.
 

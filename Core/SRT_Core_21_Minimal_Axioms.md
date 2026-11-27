@@ -3,8 +3,8 @@ id: SRT-CORE-21A-MINIMAL-AXIOMS
 type: axiom_set
 tags: [Formal logic, Axioms, Minimal Core, Selection]
 status: active
-version: v5
-updated: 2026-11-26
+version: v6
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -96,8 +96,8 @@ actualising Selection institutes determinate manifestation;
 retained effects of prior Selection may participate in conditioning later Selection.
 ```
 
-- **Source-vs-extraction & global orientation (`T3-04 D`, `T3-01 C/E`)**: Primitive `Selection` is SRT's most fundamental theoretical extraction perspective into the inexhaustible real generative source (`神性·源义`), not an exhaustive definition or second substance. Whether cross-scale generation carries an objective global optimizing or extremal orientation (`T3-01 C/E`) remains an open non-moral inquiry (`Spine §1`)—neither written into P0 as an axiom nor foreclosed by P0.
-- **Opportunity-cost boundary**: Primitive non-flat differentiation is the ontological source condition enabling concrete opportunity-cost structures to emerge under formed comparative relations; concrete opportunity-cost spaces, value, concern, friction, and freedom belong downstream and never retroactively define P0 `Selection`.
+- **Source-vs-extraction & global orientation (`T3-04 D`, `T3-01 C/E`, `D6`)**: Primitive `Selection` is SRT's most fundamental theoretical extraction perspective into the inexhaustible real generative source (`神性·源义`), not an exhaustive definition or second substance. Whether cross-scale generation carries a non-moral objective global optimizing or extremal orientation (`T3-01 C/E`, `R3-02-O4`) remains an open positive inquiry (`Spine §1, §1.2`)—neither written into P0 as an axiom nor foreclosed by P0 or `C-A`.
+- **Opportunity-cost, cross-scale law & physical-bridge pointers (`R3-02` + `D5`)**: Primitive non-flat differentiation is the ontological source condition enabling concrete opportunity-cost structures, recursive value generation (`_SRT_D_VALUE_CANONICAL.md §2.1`), and cross-scale laws (`Spine §2.4`: primitive generative properties / conditional organizational laws / historically hardened rules) to emerge downstream without retroactively defining P0 `Selection`. Deeper physical generative mechanism inquiry via energy-gradient differences routes to `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1b` without prematurely equating physical/model quantities to P0 `Selection`, `d`, or `Ψ_f`.
 
 The same ontic generative mode can therefore appear under distinct structural burdens without becoming structurally flat.
 

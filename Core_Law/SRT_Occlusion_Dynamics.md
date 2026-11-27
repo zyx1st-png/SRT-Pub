@@ -3,6 +3,8 @@ id: SRT-OCCLUSION-DYNAMICS
 type: theory
 tags: [Occlusion, Narrowing, LockIn, GapPerception, InterventionWindow, Recovery, L1]
 status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -99,6 +101,13 @@ d_narrow -/> universal health or moral boundary.
 ```
 
 `d_c` and `d_narrow` may be retained as **P3/P4 declared model coordinates**. Their existence, ordering, values and relation to observed transitions must be independently specified and tested. A particular model may use them to summarize regime changes; ontology does not guarantee natural thresholds of those names.
+
+### 0.4 Three-Position Historical Efficacy, Dual Generative Space & Withdrawal Counterexample (`R4-C5-C / D2 & D4`)
+
+Aligned with `Core/SRT_Core_12b_Ontology_L2.md §0.3a` and `Core_Law/SRT_One_Formation.md §2.1b`:
+1. **History is not solely an occlusion engine**: Retained history (`L_2`) carries a **dual generative role**—it can narrow, lock, and occlude access (the A/B regimes modeled in this file), *and* it can create previously nonexistent generative spaces through new organizational scaffolds, comparative dimensions, developmental pruning, and capability formation. Occlusion models diagnose the mismatch/lock-in face without treating all sedimentation, default givenness, or backgrounding as pathological.
+2. **Three-position separation (`generation / retention / effective enactment`)**: Storing a trace in a carrier (neural memory, institutional archive, AI persistent memory) does not by itself determine whether it locks or opens a specific organization's subsequent selection; occlusion and recovery must be evaluated at the **effective enactment organization**.
+3. **Withdrawal vs. locking / parasitic co-dependence & `reopening != reselectability`**: Lowered local salience or stable backgrounding may reflect healthy **generative withdrawal** (transforming mode of existence, interface, position, and role while preserving consequence return and local capacity) *or* **locking / parasitic co-dependence / `U5` absolutization**. Likewise, temporary disruption or perturbation (**reopening**) does not by itself establish durable **re-selectability** (`NEURAL35` / `P2/P3-B13`).
 
 ---
 

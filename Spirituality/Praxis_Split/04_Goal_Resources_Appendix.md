@@ -232,7 +232,7 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 本文档的核心形式化关系：
 
 1. **三类实践参与剖面** (Ax-Evo-1，退出旧 `Tier 1 (Physical) d ≈ 0` 线性阶梯): 按关切代理宽度、`L_2` 可修订性与后果承载力刻画实践重排，而非把物理层视作零关切低阶。
-2. **实践方向场代理** (Ax-Evo-2): $\vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy}$ — 刻画关切扩展、刚性 $L_2$ 松动与多余防御性摩擦松解（`§18 CΨ` 保持 OPEN）。
+2. **实践方向场代理** (Ax-Evo-2): $\vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy}$ — 刻画关切扩展、刚性 $L_2$ 松动与多余防御性摩擦松解（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）。
 3. **初心对齐代理** (Ax-Evo-3): $\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K})$ — 初心只在具名有限模型中作方向相似度代理。
 4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
 

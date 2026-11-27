@@ -3,8 +3,8 @@ id: SRT-ONE-FORMATION
 type: theory
 tags: [OneFormation, Existence, Order, SelectionPosition, VerticalStructure, Reconstitution, Normalization, L1]
 status: active
-version: v2
-updated: 2026-11-26
+version: v3
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -99,6 +99,36 @@ vertical organization_t
 4. **Ontological neutrality & multi-`One` ecology**:
    - Because vertical reconstitution does not presuppose rigid spatial walls or autopoiesis, SRT explicitly encompasses **nested `One`s, overlapping `One`s, `One`s sharing generative conditions, and mutually conflicting `One`s**.
    - `One` is **ontologically neutral**: a tumor, an addiction loop, or a rigid pathological institution that actually satisfies Selection-mediated vertical reconstitution is a genuinely formed `One`. Harm or rigidity does not erase its ontic standing; multi-scale `One` conflicts route directly to `_SRT_D_VALUE_CANONICAL.md` (concern/value) and `O1 / O2-C / O2-A` (normativity) without smuggling ethics into `One` admission.
+
+### §2.1a How Relative Independence Is Generated: Shared Protocol, Endogenous Comparison Scales, 3D Composable Organization & Holism–Differentiability (`R4-C5-C / D2`)
+
+To explain not only *what* `One` is but **how relative independence itself is generated across scales without an external orchestrator**, four cross-domain mechanisms enter this owner directly:
+
+1. **Shared Protocol, Endogenous Comparison Scales & Spontaneous Figure–Ground Differentiation (`R3-02`)**:
+   - Why can distinct finite positions compare endogenously and assemble compatible foreground–background structures without a pre-existing external coordinator? Because distinct positions are localized unfoldings of the **same underlying generative matrix**—carrying shared primitive generative properties (**common protocol**) that make cross-position coupling, endogenous comparative scaling, and spontaneous figure–ground differentiation possible wherever local constraints intersect.
+   - **Structural distinction**: Keep strictly separate **(a) 同级非对称前背景分化（same-level asymmetric figure–ground differentiation）**, where coupled elements at one level spontaneously split into active foreground and supporting background, and **(b) 跨尺度共同成体（cross-scale co-constitution）**, where multi-unit coupling reorganizes selectability into a higher-order relatively separable `One` with its own effective action interface.
+2. **Holism–Differentiability Mutual Constitution (`R4-C4`)**:
+   - Wholeness and local differentiability are **not** antagonistic. A holistic generative organization (`One` or pre-object generative field) actively **generates relatively independent local capacities** (differentiation, functional specialization, developmental pruning), and those differentiated local capacities recursively interact to **reconstitute both the whole and its external relations**.
+3. **Three-Dimensional Composable Organizational Morphology (`R4-C3`)**:
+   - Break the false dichotomy between "externally scaffolded systems" and "endogenous `One`" by profiling any formed organization along **three composable dimensions**: **(i) 外部供给与脚手架（External supply & scaffolding）**, **(ii) 内部垂直再构成（Internal vertical reconstitution）**, and **(iii) 有效作用接口（Effective action interface）**. External dependence does not automatically negate `One`, nor does endogenous vertical reconstitution float free of external supply.
+4. **Four Separated Duties in Dependence Reorganization (`R4-C2`)**:
+   - When cross-scale coupling generates relative independence, keep four theoretical duties strictly distinct so `One` stays **ontologically neutral**: **(i) 依赖重组（dependence reorganization）**, **(ii) 垂直再构成（vertical reconstitution）**, **(iii) 扰动屏蔽与响应余度（perturbation buffering & response headroom）**, and **(iv) 后果回流与可再选择性（consequence return & re-selectability）**. Generative health and ethical legitimacy (`O2-M = HOLD`) never become admission prerequisites for `One`.
+
+### §2.1b Generative Withdrawal: Transformation of Mode of Existence, Action Interface, Relational Position & Generative Role (`R3-02` + `R4-C5-C / D2`)
+
+When local units participate in a wider or higher-order organization, **生成性退隐（Generative Withdrawal）** is not mere lowered salience or passive disappearance; it is a structural transformation of **存在方式（mode of existence）、有效作用接口（effective action interface）、关系位置（relational position）与生成职责（generative role）**. Any cross-scale analysis of withdrawal must answer **four structural questions**:
+1. **局部独立显现压缩**：局部单元的哪些直接前台输出被约束或退隐？
+2. **局部能力保留与增强**：局部单元的哪些能力在分工、屏蔽或低内耗中得以保留甚至增强？
+3. **新整体能力生成**：哪些原本不存在的新整体能力与新前景结构由此得以站出？
+4. **整体反向改写局部条件**：新形成的整体又如何反向改写局部单元的输入分布、比对尺度与可达生成空间？
+
+To block conflating withdrawal with submission or self-erasure, enforce the **`R3-02` four-layer separation**:
+1. **本体退隐（Ontic withdrawal）**：新前景或高阶组织及其职责转换是否实际发生；
+2. **组织持续性（Organizational persistence）**：该退隐配置能否跨时维持；
+3. **生成健康性（Generative health）**：是否存在后果回流、适应调整与可再选择空间；
+4. **伦理正当性（Ethical legitimacy）**：是否免于胁迫、剥削与主体位剥夺（`O2-M = HOLD`）。
+
+**Hard counterexample**: **锁定态与寄生性共依存（locking / parasitic co-dependence）** can satisfy layers 1–2 (high persistence and apparent stability) while failing layers 3–4 through asymmetric cost absorption and suppressed local re-selectability.
 
 ### §2.2 Existence Perspective and Order Perspective (No Second Ontic Noun)
 

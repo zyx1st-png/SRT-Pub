@@ -37,7 +37,7 @@ $$ T^{praxis}(d^{proxy}) = \begin{cases}
 * **Implication**: 实践成熟不是沿一维标量脱离物理层，而是关切宽度、`L_2` 可修订性、后果承载力与门控重构能力的整体重排。
 
 ### Ax-Evo-2: Evolution Direction Proxy
-**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` remains OPEN).
+**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` Option 1 conceptual conflict resolved; 5 gaps OPEN).
 $$ \vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy} $$
 * **Implication**: 实践演化是多维方向场，不是单一标量目标函数。
 
