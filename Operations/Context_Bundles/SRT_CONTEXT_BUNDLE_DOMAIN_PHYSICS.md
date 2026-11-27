@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 8b597619b
+source_commit: 9fa040d5e
 source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
 source_dirty: false
-inputs_digest: e642182dd7afbc29
+inputs_digest: 05952875e7383d9a
 ---
 
 # SRT 物理领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: e642182dd7afbc29
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `8b597619b` |
+| 来源 commit | `9fa040d5e` |
 | 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
