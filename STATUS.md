@@ -18,7 +18,7 @@ updated: 2026-11-27
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-27 **`R4` 全阶段重构已完整落盘**（`R4-A` `#1159`、`R4-B1` `#1160`、`R4-B2` `#1161`、`R4-C1` `#1162`、`R4-C2` `#1163`、`R4-C3` `#1164`、`R4-C4` `#1165`、`R4-C5-A` `#1166` 均已合并，**`R4-C5-C/D` 获批核心 owner 实写回流与全仓一致性收口已落盘**），待最终理论综合评审并合并后正式关闭 `R4`；`R5` 保持 `PENDING`（待单独启动授权），全部既有 `HOLD` 维持不变（唯一当前执行入口）
+### CURRENT NEXT — 2026-11-27 **`R4 COMPLETE`（`R4` 全阶段重构正式收口：`R4-A` `#1159` 至 `R4-C5-A` `#1166` 全部合并 + `R4-C5-C/D` 获批 `D1–D6` 核心实写、`§18 CΨ` 选项 1 结项与全仓一致性收口已全部完成）；`R5 PENDING AUTHOR AUTHORIZATION`**（保持核心理论基线稳定，待作者脱离重构惯性独立审视理论全景后再单独决定下一阶段研究战略；全部既有 `HOLD` 维持不变）
 
 > **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2`、`R3-01..R3-08`、`R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A`（`#1159`, `d907de18d`）**、**`R4-B1`（`#1160`, `e4ba0a555`）**、**`R4-B2`（`#1161`, `dc0e89055`）**、**`R4-C1`（`#1162`, `1beacba72`）**、**`R4-C2`（`#1163`, `f53581592`）**、**`R4-C3`（`#1164`, `2ec7f76aa`）**、**`R4-C4`（`#1165`, `7010cc5df`）**与 **`R4-C5-A`（`#1166`, `8f7d9098d`）**全部合并。依据 2026-11-27 作者正式批准的 **`D1–D6` 修订版 + `§18 CΨ` 选项 1 + `R3-02` 三类规律跨域统一抽象原则**，**`R4-C5-C/D` 核心 owner 实写回流与全仓一致性收口**已完成全部 11 份核心 owner 实质增补（`Core_Law/SRT_Generative_Ontology_Spine v6`、`Core_Law/SRT_One_Formation v3`、`Core_Law/SRT_Collective_Selection v2`、`Core_Law/SRT_Occlusion_Dynamics v2`、`Core_Law/SRT_Selection_Argument v2`、`Core/SRT_Core_13a v4` 及重建 `Operator_Basics_Split/`、`Core/SRT_Core_12b v4` 及重建 `Ontology_L2_Split/`、`_SRT_D_VALUE_CANONICAL v3`、`_SRT_PSI_F_CANONICAL v3`、`Core_Law/SRT_Suffering v2`、`Core/SRT_Core_25 v3`、`Core/SRT_Core_21_Minimal_Axioms v6`、`Core/SRT_OPEN_TENSIONS v3 §17–§18`）与全仓一致性收口（落实 `R4-C3` 2 处措辞精修、`R4-C4` 4 处残余、`Spirituality/` 与全域 `§18 CΨ` 选项 1 状态同步及 `Operations/Context_Bundles/*` 干净工作树确定性重建）。本轮不启动 `R5`、不关闭未经独立裁决的 `OPEN` 门、不触碰 `25` 个封存 `validation_holdout`、不解冻 `HP-B` / `CN-2` / `CN-3` / `DATA-ACCESS-0` / `O2-M` / `§10.1` / `§10.2` 等任何既有 `HOLD`。
 >
@@ -26,18 +26,18 @@ updated: 2026-11-27
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R4 五波双向领域重构与核心理论综合回流（R4-A #1159 / R4-B1 #1160 / R4-B2 #1161 / R4-C1 #1162 / R4-C2 #1163 / R4-C3 #1164 / R4-C4 #1165 / R4-C5-A #1166 全部合并 + R4-C5-C/D 获批 D1–D6 核心 owner 实写回流、§18 CΨ 选项 1 收口与全仓一致性收口已落盘）-> 待最终理论综合评审并合并后正式完成 R4 封口；R5 保持 PENDING（须单独授权启动）；全部 HOLD 维持不变
-= R4 full reconstruction & bidirectional core writeback landed (R4-A #1159 through R4-C5-A #1166 merged + R4-C5-C/D approved D1–D6 core writebacks, §18 CΨ Option 1 resolution, & full-repo consistency closeout landed) -> awaiting final theoretical synthesis review & merge to close R4; R5 PENDING; ALL HOLDs unchanged;
+= R4 COMPLETE（R4-A #1159 / R4-B1 #1160 / R4-B2 #1161 / R4-C1 #1162 / R4-C2 #1163 / R4-C3 #1164 / R4-C4 #1165 / R4-C5-A #1166 全部合并 + R4-C5-C/D 获批 D1–D6 核心 owner 实写回流、§18 CΨ 选项 1 结项与全仓一致性收口全部完成）-> R5 PENDING AUTHOR AUTHORIZATION（保持核心理论基线稳定，待作者脱离重构惯性独立评估理论全景后再定下一阶段战略；全部 HOLD 维持不变）
+= R4 COMPLETE (all waves R4-A #1159 through R4-C5-C/D core writebacks, §18 CΨ Option 1 resolution, & full-repo consistency closeout complete) -> R5 PENDING AUTHOR AUTHORIZATION; ALL HOLDs unchanged;
 
 CURRENT AUTHOR DIRECTION
 = R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145]
   -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145]
   -> R3 骨架与前置工程清障 [R3 总收口 #1154 + ENG-01..04 #1155..#1158 全部合并；旧草案 #1129/#1140 已关闭]
-  -> R4 canonical：分波次重构与跨域核心回流 [R4-A #1159 -> R4-B1 #1160 -> R4-B2 #1161 -> R4-C1 #1162 -> R4-C2 #1163 -> R4-C3 #1164 -> R4-C4 #1165 -> R4-C5-A #1166 全部合并 -> R4-C5-C/D 核心实写与全仓收口已落盘]
-  -> R5 各领域延伸、形式化/实证检验与出版 [PENDING — 未启动];
+  -> R4 canonical：分波次重构与跨域核心回流 [COMPLETE: R4-A #1159 -> R4-B1 #1160 -> R4-B2 #1161 -> R4-C1 #1162 -> R4-C2 #1163 -> R4-C3 #1164 -> R4-C4 #1165 -> R4-C5-A #1166 -> R4-C5-C/D 全部完成]
+  -> R5 各领域延伸、形式化/实证检验与出版 [PENDING AUTHOR AUTHORIZATION — 未启动];
 
 CURRENT IMMEDIATE TASK
-= 等待 R4-C5-C/D 最终理论综合评审（围绕原初生成 / 组织生成 / 能力生成 / 生成条件重构 / 跨尺度秩序五方面评估实质解释增量）与合并；合并后即完成 R4 理论重构阶段收口（标志理论架构重构完成，而非全部机制已获数学证明或实证确认），等待作者后续独立阅读评估及关于 R5 的单独启动决策：
+= R4 COMPLETE（标志理论架构重构阶段正式完成，而非全部理论机制已获数学证明或实证确认）；保持核心理论基线稳定，等待作者脱离重构惯性进行全新理论全景评估后再单独决定 R5 研究优先级与启动授权：
   -> D1（修订版 A，§18 CΨ 选项 1）：概念冲突已通过语义分流关闭（同步结项 Operations/_SRT_REVIEW_QUEUE.md RQ-2026-08-A05），多余防御性摩擦定位于跨维度形成/放大机制，五项独立机制与技术缺口（多余防御摩擦形成放大 + Ψ_f 跨位置可分解性 / 反事实基线 / D-3 检测 / 支撑转嫁因果归属）保持 OPEN；
   -> D2（深化版 A + P1-01）：One_Formation v3 / Spine v6 / Collective_Selection v2 将 R3-02 共同协议确立为跨尺度母体属性核心研究对象（防循环解释，保留 R3-02 六项基础属性候选验证义务），实写内生比对尺度、自发前背景分化（严分同级前背景 vs 跨尺度共同成体）、整体性与可分化性互构、三维可组合组织形态、依赖重组四职责与生成性退隐四结构问+四层切分（含锁定/寄生反例）；
   -> D3（修订版 A + P1-02）：Spine v6 / Core_13a v4 / Selection_Argument v2 实写五类非阶梯能力、四项独立研究对象（作用/比对/生成条件重构/生成能力重构，不重建线性阶梯）、四类比对生成性、多层级门控与 F_3223 参与方式重构，以及“跨尺度共同生成中介”独立分析视角（与既有五机制交叠而不硬立为第六互斥机制，区分短暂与持续中介，具体神经认知前景中介保持 P3 候选与 HP-B FROZEN）；
@@ -47,8 +47,8 @@ CURRENT IMMEDIATE TASK
   -> 跨域统一抽象原则（P1-01）：Spine v6 §2.4 严分已建立核心本体论立场 / R3-02 六项原初生成属性候选 / 条件性组织规律 / 历史性硬化规则四层主张等级与领域↔核心双向抽象检验原则；
   -> C5-D 全仓一致性收口：落实 R4-C3 两项措辞精修（“强承载尚未建立的推理态”、“写入持久记忆不自动等于形成新能力”）、R4-C4 四项残余（Core_23 唯一 core-facing canonical d 口径、SRT_Clin_00_IIT_PCI L568 清理、H-NEURO-5 κ_dim 未证明占位说明、L_1 已实现的确定性显现非决定论）及全域 §18 CΨ 选项 1（含 Operations/_SRT_REVIEW_QUEUE.md RQ-2026-08-A05）同步；
 
-ACTIVE NOW = R4-C5-C/D 终审与 R4 封口准备期（不启 R5、不解冻 HOLD）;
-R4-C5-C/D 合并 / R5 启动 = 须完成最终理论综合评审与作者授权;
+ACTIVE NOW = R4 COMPLETE / R5 PENDING AUTHOR AUTHORIZATION（保持核心理论基线稳定，不启 R5、不解冻 HOLD）;
+R5 启动 = 须待作者完成脱离重构惯性的独立全景评估并单独授权;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
 §10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / CN-2 E2 / 1B sim / DATA-ACCESS-0 = NO-GO / other HOLD
