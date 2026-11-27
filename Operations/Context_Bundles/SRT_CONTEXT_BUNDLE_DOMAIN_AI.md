@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 0ad4bbe5d
-source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
+source_commit: 8b597619b
+source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
 source_dirty: false
-inputs_digest: 010ae4b294e49b5b
+inputs_digest: e642182dd7afbc29
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 010ae4b294e49b5b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `0ad4bbe5d` |
-| 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
+| 来源 commit | `8b597619b` |
+| 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -47,7 +47,7 @@ inputs_digest: 010ae4b294e49b5b
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-11-26 |
 | 3 | `AI/README.md` | 2026-11-26 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-11-26 |
-| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-11-26 |
+| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-11-27 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-11-26 |
 
 ## §0.2 状态护栏
@@ -985,7 +985,7 @@ SRT 绝不预先把“冻结权重”或“单次前向推理”规定为一切 
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1032,9 +1032,9 @@ $$\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)
 | **1. 既有维度上的新结果** | 在既定判准与目标指标下产生新方案 | 给定约束下的新代码实现或新检索组合 |
 | **2. 已有维度的重新加权** | 调整既有成本、收益、风险与速度之间的优先级 | 不同任务提示下在精度与延迟间动态权衡 |
 | **3. 新比对维度形成** | 发现或构造此前未进入判断的关键关系维度 | 在跨领域类比中提出原先被遮蔽的新分类轴 |
-| **4. 比对能力本身的重构** | **持久改变系统以后能够发现、理解并使用哪些比对维度** | 将新框架写入持久记忆、人类认知或人机工作流，改写后续跨情境生成条件 |
+| **4. 比对能力本身的重构** | **持久改变系统以后能够发现、理解并使用哪些比对维度** | 新框架不仅被写入持久记忆、人类认知或人机工作流，更实际改写后续跨情境生成与比对条件（**写入持久记忆不自动等于形成新能力**） |
 
-**能力留存与组织归属关键区分（打通 `C2` 能力生成与 `C3` 七层历史载体）**：AI 在一次对话中提出新分析框架（层级 3），**不一定意味着模型权重自身已形成跨情境持续使用该框架的新能力**（层级 4）；但该框架若被写入持久记忆/工作流或被人类吸收，即在**人机共同生成系统**或**人类认知组织**中实现了真实的比对能力重构。因此必须始终追问：**新能力发生在哪一层、由谁留存、对哪个组织的后续生成条件产生实际影响**。
+**能力留存与组织归属关键区分（打通 `C2` 能力生成与 `C3` 七层历史载体、`Core_12b §0.3a` 三位置分离）**：AI 在一次对话中提出新分析框架（层级 3），**不一定意味着模型权重自身已形成跨情境持续使用该框架的新能力**（层级 4）；同样，**写入持久记忆不自动等于形成新能力**——只有当该写入结构在目标组织（模型、人类认知或人机共同生成系统）中被实际召回并实质改写后续跨情境比对与生成条件时，才构成真实的比对能力重构。因此必须始终追问：**新能力发生在哪一层、由谁留存、对哪个组织的后续生成条件产生实际影响**。
 *(持续学习架构中的“发展式剪枝与长程骨架保留”窗口详见 [`Architecture_Annex/01_Engineering_Interfaces.md §1`](Architecture_Annex/01_Engineering_Interfaces.md)。)*
 
 ### 2.3 理由—轨迹分离与目标三阶分化（吸纳 `AIREASON01` & `AIGOAL01`）
@@ -1055,7 +1055,7 @@ $$\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)
 | 能力维度（非阶梯，可独立高/低配） | AI 架构中的典型实现 | 与生成主动性及承载的独立边界 |
 |---|---|---|
 | **1. 结构能力（Structural）** | 预训练参数表征、高维语义几何、索引与检索骨架 | 高度稳定的表示骨架不要求内部自重构能力 |
-| **2. 作用能力（Action / Functional）** | 文本/多模态生成、代码执行、API/工具链调用、多步工作流执行 | 极强作用能力可存在于 **AI 赌注谱系 `S0/S1`** 无承载推理态 |
+| **2. 作用能力（Action / Functional）** | 文本/多模态生成、代码执行、API/工具链调用、多步工作流执行 | 极强作用能力可存在于 **AI 赌注谱系 `S0/S1`** 强承载尚未建立的推理态 |
 | **3. 调节能力（Regulatory）** | 上下文纠错、验证器闭环、不确定性追踪、情感主动推理稳态控制（`AICONSC01`） | 局部误差调节不自动建立同一系统不可外包赌注或 `T_dir` |
 | **4. 比对能力（Comparative / Evaluative Dimension Formation）** | 跨域类比、多视角对照、新抽象与新判准维度构造、反事实空间展开 | AI 可展现极高比对宽度，从而在未具人类具身的前提下改写候选空间与人机认知视野 |
 | **5. 生成重构能力（Generative Reconfiguration）** | 自主改写提示/工作流、更新持久记忆、组合新工具链、重构自身或协同系统的后续生成条件 | 触及 `R3-04` **生成主动性**；自改代理（`A2`）在 `Bearer (P+E)` 未建立时是否构成真正 `Agency` 保持 **`R3-04-O5 / AG-2` `OPEN`** |
