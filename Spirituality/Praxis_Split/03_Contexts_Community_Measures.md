@@ -2,7 +2,9 @@
 id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 epistemic_layer: os
 claim_mode: navigation
 dependency: [SRT-SPIRIT-08]
@@ -281,17 +283,15 @@ $$\lim_{t \to \infty} \text{Separation}(\text{Practice}, \text{Life}) \to 0$$
 
 **错误期待**: "我会'完成'修行"
 
-**真相**: 修行无终点——
+**真相**: 修行没有一劳永逸的“终结完成态”——
 
-$$\frac{d\theta}{dt} \neq 0 \quad \forall t$$
+$$\text{Ongoing Praxis} : \text{Evolving Generative Conditions} \;\land\; \text{Finite Historical } L_2 \;\land\; \text{Future Re-Selectability}$$
 
-$\theta$ 永远在演化。
+（`R4-C5-A` 校准：退场 `Life iff dθ/dt ≠ 0` 旧生命定义；实践之所以无终点，是因为生成条件持续变化、任何有限主体的历史组织 `L_2` 无法穷尽未来新情境，须持续维护未来可再选择性、关切结构与生成能力重构。）
 
 **类比**: 
-- 你不会"完成"锻炼身体
-- 你不会"完成"吃饭
-- 你不会"完成"呼吸
+- 身体维持、呼吸、进食与关系经营都不是“做完一次即可永久封存”的静态成就，而是在变化环境中不断重新校准的活过程。
 
-**修行是生活本身的一部分**——直到死亡。
+**修行是生活本身的一部分**——只要有限主体仍在变化着的共同生成关系中行动与承担后果，实践就始终处于展开、稳固、后果回流与再校准的节律之中。
 
 ---

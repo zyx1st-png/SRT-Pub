@@ -516,21 +516,21 @@ _SRT_Spirit_Axioms (本文件)
 
 ---
 
-### Spirituality Mapping Summary (灵性映射概述)
+### Spirituality Mapping Summary (灵性映射概述 · `R4-C5-A` 同步)
 
-- **本源地平线映射**：`\|\theta\|\to\infty` 只作为选择过程不可被有限表征穷尽的规约性语言，不定义额外算子、`Ω` 或宇宙级最优。
-- **苦难-摩擦耦合 proxy**：$\text{Suffering}^{proxy} \sim 1/d^{proxy}$，$\Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow$；低关切维度可导致更高维护/选择负担。
-- **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 `d` 的渐近扩展方向而非 $L_1$ 的消灭；有限系统不声称实际无穷。
-- **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
-- **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
+- **神性双职责映射（`Spine §1 / R3-02`）**：完整保留**神性·源义**（`T3-04 D`：原初 `Selection` 是对真实生成根源最基础的抽取而非穷尽定义；规约性本源地平线/反偶像护栏只是有限实践职责，不定义额外算子、`Ω` 或宇宙道德最优）与**神性·倾向义**（“从存在到秩序”与跨尺度非道德趋优开放研究空间）。
+- **病态收缩与防御放大（`H-Spirit-3`）**：正式退出旧式 `Suffering^{proxy} ~ 1/d^{proxy}` 与 `Ψ_f ↑ ~ d ↓` 强制反比关系；按 `R3-08` 保留摩擦四分，并将多余防御性摩擦刻画为可同时放大多个摩擦/负担维度的机制。
+- **关系与参与重构（`H-Spirit-4`）**：正式退出旧式 `Nirvana ≡ lim_{d→∞} \hat{G}_\theta(L_0)` 与自他边界必归零断言；解脱在有限主体侧刻画为关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力的非阶梯重构。
+- **实践重构（`H-Spirit-5`）**：$d\theta/dt = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning}$ 仅刻画松解多余防御性摩擦的局部代理侧面；成熟实践同样指向创造新能力、新关系、新方向与新生成条件（`§18 CΨ` 保持 OPEN）。
+- **信之松弛（`H-Spirit-6`）**：$d\beta/dt < 0$，信仰是僵化 $L_2$ 约束的受控放松以重开未封闭生成通道。
 
 ### Mechanism Reading Under This Mapping (此映射下的机制读法)
 
-- $\hat{G}_\theta$ 是具身选择算子；本源地平线只标记有限描述不可穷尽的规约性边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
-- `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准；本文件的苦难/摩擦语言是 spirituality-domain proxy。`d` 的 canonical 读法以 `_SRT_D_VALUE_CANONICAL.md` 为准；本文件的扩展/收缩语言需按 praxis proxy 读取。
-- 修持通过梯度下降 $\nabla_\theta \Phi$ 调整参数 $\theta$，扩展 $d$ 并降低 $\Psi_f$；不同冥想类型对应不同参数子空间的操作（止→降 $w_{L_2}$，观→提升 $\rho$，慈心→扩展 $d$）。
-- 解脱的相变性质由 $d > d_{critical}$ 触发拓扑重组，灵魂黑夜对应临界慢化 $\lambda_{Jacobian} \to 0$。
-- $L_0/L_1/L_2$ 三域提供全部过程的本体论舞台：$L_0$ 为潜在域，$L_1$ 为显现域，$L_2$ 为收敛约束域。
+- $\hat{G}_\theta$ 是具身选择算子；规约性本源地平线标记有限描述不可穷尽的边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容，但绝不穷尽神性·源义的独立本体论研究价值。
+- 摩擦与 `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准（广义摩擦 = 机会成本差异产生的实际选择压力，与非闭合压力、`Ψ_f` 可支付负担及主观苦难四分）；广义关切四维与独立 `d` 准入以 `_SRT_D_VALUE_CANONICAL.md` 为准。
+- 修持并非“单调降低总 `Ψ_f` 并使 `d` 单轴上升”的机械优化，而是通过不同练习通道（如松动僵化 $w_{L_2}$、拓宽观照与比对维度、重构关系关切）调整主体参与共同生成的方式；高关切承担亦可能伴随上升的可支付负担。
+- 拓扑重组期（如灵魂黑夜）可对应临界慢化 $\lambda_{Jacobian} \to 0$，须配以现实承压护栏与外部校准。
+- $L_0/L_1/L_2$ 三重分析视角提供全部过程的本体论坐标（非静态物理分层或信息仓库）。
 
 ---
 
