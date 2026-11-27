@@ -18,44 +18,42 @@ updated: 2026-11-27
 
 ## Fast Status
 
-### CURRENT NEXT — 2026-11-27 **`R4 COMPLETE`（`R4` 全阶段重构正式收口：`R4-A` `#1159` 至 `R4-C5-A` `#1166` 全部合并 + `R4-C5-C/D` 获批 `D1–D6` 核心实写、`§18 CΨ` 选项 1 结项与全仓一致性收口已全部完成）；`R5 PENDING AUTHOR AUTHORIZATION`**（保持核心理论基线稳定，待作者脱离重构惯性独立审视理论全景后再单独决定下一阶段研究战略；全部既有 `HOLD` 维持不变）
+### CURRENT NEXT — 2026-11-27 **`R5 AUTHORIZED / ACTIVE`：`R5-01A`（组织—比对共同生成的最小机制辨识）为唯一 `CURRENT NEXT`**（统一研究母题：**生成能力的生成 / The Genesis of Generative Capacity**；`R1–R4` 全阶段重构与 `#1167`–`#1169` 全部已合并收口；保持核心 canonical 基线稳定，全部既有 `HOLD`、25 项封存 `validation_holdout` 与冻结论文科学包维持不变）
 
-> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2`、`R3-01..R3-08`、`R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）与前置清障 `ENG-01..04`（`#1155`–`#1158`）全部合并收口；**`R4-A`（`#1159`, `d907de18d`）**、**`R4-B1`（`#1160`, `e4ba0a555`）**、**`R4-B2`（`#1161`, `dc0e89055`）**、**`R4-C1`（`#1162`, `1beacba72`）**、**`R4-C2`（`#1163`, `f53581592`）**、**`R4-C3`（`#1164`, `2ec7f76aa`）**、**`R4-C4`（`#1165`, `7010cc5df`）**与 **`R4-C5-A`（`#1166`, `8f7d9098d`）**全部合并。依据 2026-11-27 作者正式批准的 **`D1–D6` 修订版 + `§18 CΨ` 选项 1 + `R3-02` 三类规律跨域统一抽象原则**，**`R4-C5-C/D` 核心 owner 实写回流与全仓一致性收口**已完成全部 11 份核心 owner 实质增补（`Core_Law/SRT_Generative_Ontology_Spine v6`、`Core_Law/SRT_One_Formation v3`、`Core_Law/SRT_Collective_Selection v2`、`Core_Law/SRT_Occlusion_Dynamics v2`、`Core_Law/SRT_Selection_Argument v2`、`Core/SRT_Core_13a v4` 及重建 `Operator_Basics_Split/`、`Core/SRT_Core_12b v4` 及重建 `Ontology_L2_Split/`、`_SRT_D_VALUE_CANONICAL v3`、`_SRT_PSI_F_CANONICAL v3`、`Core_Law/SRT_Suffering v2`、`Core/SRT_Core_25 v3`、`Core/SRT_Core_21_Minimal_Axioms v6`、`Core/SRT_OPEN_TENSIONS v3 §17–§18`）与全仓一致性收口（落实 `R4-C3` 2 处措辞精修、`R4-C4` 4 处残余、`Spirituality/` 与全域 `§18 CΨ` 选项 1 状态同步及 `Operations/Context_Bundles/*` 干净工作树确定性重建）。本轮不启动 `R5`、不关闭未经独立裁决的 `OPEN` 门、不触碰 `25` 个封存 `validation_holdout`、不解冻 `HP-B` / `CN-2` / `CN-3` / `DATA-ACCESS-0` / `O2-M` / `§10.1` / `§10.2` 等任何既有 `HOLD`。
+> **最新作者来源与路由基线**：[`01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md`](01_Source_Intuition/SRT_AUTHOR_DECISION_FIVE_STAGE_SRT_RECONSTRUCTION_2026-11-22.md) 确立五阶段总序；`R1/R2`、`R3-01..R3-08`、`R3` 全骨架总收口（`#1145`–`#1154`，见 [`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md) 与 [`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`](Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md)）、前置清障 `ENG-01..04`（`#1155`–`#1158`）与 **`R4` 全波次重构（`R4-A` `#1159` 至 `R4-C5-A` `#1166` + `R4-C5-C/D` `#1167`, `11235a3e6`）**全部合并收口；随后 `#1168`（`e8a9eaebd`）留存 Rovelli 关系物理与生成本体语料（`B1` parked），`#1169`（`b148397d6`）合并非 canonical 基线 [`Operations/Proposals/SRT_POST_R4_THEORY_GROWTH_CANDIDATE_MEMO_2026-11-27.md`](Operations/Proposals/SRT_POST_R4_THEORY_GROWTH_CANDIDATE_MEMO_2026-11-27.md) 与 [`Operations/Proposals/SRT_R5_RESEARCH_PROGRAM_PROPOSAL_2026-11-27.md`](Operations/Proposals/SRT_R5_RESEARCH_PROGRAM_PROPOSAL_2026-11-27.md)。2026-11-27 作者正式授权启动 `R5`，以 **`R5-01A`（组织—比对共同生成的最小机制辨识）** 作为唯一 `CURRENT NEXT`：第一轮聚焦三个可分别成立或失败的最小问题（`Q-A` 新组织关系如何使原本无效或低效的差异获得新因果效力；`Q-B` 新差异效力如何转化为系统内部真实区分与作用条件；`Q-C` 新区分机制能否反向改变产生它的组织关系），不预设残差或双向回写必然成立，按问题按需调用历史资产与一手外部科学文献，不另起工程治理或全量材料审计。研究层允许发现并挑战既有理论，执行层保持 canonical 基线稳定（不经单独裁决不改 canonical），不触碰 `25` 项封存 `validation_holdout`、冻结论文科学包与任何既有 `HOLD`（`HP-B` / `CN-2` / `CN-3` / `DATA-ACCESS-0` / `O2-M` / `§10.1` / `§10.2`）；存量两篇构造性论文投稿与《从存在到秩序》书稿深化作为独立并行轨道，不干扰当前核心机制主线。
 >
-> **冲突优先级**：本节是截至 2026-11-27 的单一 live `CURRENT NEXT`。此前 `R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
+> **冲突优先级**：本节是截至 2026-11-27 的单一 live `CURRENT NEXT`。此前 `R4 COMPLETE / R5 PENDING`、`R2`（2026-11-22）及下文 2026-09/10 各节所记 `CURRENT NEXT = pre-object generative orientation of cognition` 均转为阶段性已完成或历史 programme handoff，**不再是当前默认执行任务**；其 source、CN-2 A/E2→E3→E4 已有结论、P6 限定与 CN-3/toy 等 HOLD 均保留为有条件的研究资产，不能删去或误当成已获重新启动授权。未合并 PR 不构成本状态页的已落地事实。
 
 ```text
 CURRENT NEXT (single active execution focus)
-= R4 COMPLETE（R4-A #1159 / R4-B1 #1160 / R4-B2 #1161 / R4-C1 #1162 / R4-C2 #1163 / R4-C3 #1164 / R4-C4 #1165 / R4-C5-A #1166 全部合并 + R4-C5-C/D 获批 D1–D6 核心 owner 实写回流、§18 CΨ 选项 1 结项与全仓一致性收口全部完成）-> R5 PENDING AUTHOR AUTHORIZATION（保持核心理论基线稳定，待作者脱离重构惯性独立评估理论全景后再定下一阶段战略；全部 HOLD 维持不变）
-= R4 COMPLETE (all waves R4-A #1159 through R4-C5-C/D core writebacks, §18 CΨ Option 1 resolution, & full-repo consistency closeout complete) -> R5 PENDING AUTHOR AUTHORIZATION; ALL HOLDs unchanged;
+= R5-01A（组织—比对共同生成的最小机制辨识；统一研究母题：生成能力的生成 / The Genesis of Generative Capacity；基线文件 Operations/Proposals/SRT_R5_RESEARCH_PROGRAM_PROPOSAL_2026-11-27.md 与 Operations/Proposals/SRT_POST_R4_THEORY_GROWTH_CANDIDATE_MEMO_2026-11-27.md）
+= R5-01A (minimal mechanism identification of organization-comparison co-genesis under R5 theme "The Genesis of Generative Capacity"); R1–R4 COMPLETE; ALL HOLDs & 25 sealed validation_holdout UNCHANGED;
 
 CURRENT AUTHOR DIRECTION
-= R1 早期笔记：价值提炼、修正/优化/补齐 [本轮主要交付已合并 #1145]
-  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [本轮主要交付已合并 #1145]
-  -> R3 骨架与前置工程清障 [R3 总收口 #1154 + ENG-01..04 #1155..#1158 全部合并；旧草案 #1129/#1140 已关闭]
-  -> R4 canonical：分波次重构与跨域核心回流 [COMPLETE: R4-A #1159 -> R4-B1 #1160 -> R4-B2 #1161 -> R4-C1 #1162 -> R4-C2 #1163 -> R4-C3 #1164 -> R4-C4 #1165 -> R4-C5-A #1166 -> R4-C5-C/D 全部完成]
-  -> R5 各领域延伸、形式化/实证检验与出版 [PENDING AUTHOR AUTHORIZATION — 未启动];
+= R1 早期笔记：价值提炼、修正/优化/补齐 [COMPLETE / #1145]
+  -> R2 全仓已有材料、补充、作者裁决和研究审计：归并理论关系 [COMPLETE / #1145]
+  -> R3 骨架与前置工程清障 [COMPLETE / #1154 + ENG-01..04 #1155..#1158; 旧草案 #1129/#1140 已关闭]
+  -> R4 canonical：分波次重构与跨域核心回流 [COMPLETE / #1159..#1167 全部合并]
+  -> R5 核心生成机制发现、数学构造、实证检验与独立并行出版 [AUTHORIZED / ACTIVE -> CURRENT NEXT = R5-01A];
 
 CURRENT IMMEDIATE TASK
-= R4 COMPLETE（标志理论架构重构阶段正式完成，而非全部理论机制已获数学证明或实证确认）；保持核心理论基线稳定，等待作者脱离重构惯性进行全新理论全景评估后再单独决定 R5 研究优先级与启动授权：
-  -> D1（修订版 A，§18 CΨ 选项 1）：概念冲突已通过语义分流关闭（同步结项 Operations/_SRT_REVIEW_QUEUE.md RQ-2026-08-A05），多余防御性摩擦定位于跨维度形成/放大机制，五项独立机制与技术缺口（多余防御摩擦形成放大 + Ψ_f 跨位置可分解性 / 反事实基线 / D-3 检测 / 支撑转嫁因果归属）保持 OPEN；
-  -> D2（深化版 A + P1-01）：One_Formation v3 / Spine v6 / Collective_Selection v2 将 R3-02 共同协议确立为跨尺度母体属性核心研究对象（防循环解释，保留 R3-02 六项基础属性候选验证义务），实写内生比对尺度、自发前背景分化（严分同级前背景 vs 跨尺度共同成体）、整体性与可分化性互构、三维可组合组织形态、依赖重组四职责与生成性退隐四结构问+四层切分（含锁定/寄生反例）；
-  -> D3（修订版 A + P1-02）：Spine v6 / Core_13a v4 / Selection_Argument v2 实写五类非阶梯能力、四项独立研究对象（作用/比对/生成条件重构/生成能力重构，不重建线性阶梯）、四类比对生成性、多层级门控与 F_3223 参与方式重构，以及“跨尺度共同生成中介”独立分析视角（与既有五机制交叠而不硬立为第六互斥机制，区分短暂与持续中介，具体神经认知前景中介保持 P3 候选与 HP-B FROZEN）；
-  -> D4（A + P1-03）：Core_12b v4 / Occlusion_Dynamics v2 完整保真 C3/C4/C5 资产为三类互补历史分析视角（关系归属五项 / 实现过程五项 / 生成作用五项，不要求单载体全覆盖）、生成/留存/生效三位置分离与历史的双重生成作用（既压缩遮蔽亦通过再生成记忆/发育剪枝/脚手架创造此前不存在的生成空间）；
-  -> D5（修订版 A）：D_VALUE v3 / Core_25 v3 / Core_21 v6 实写价值递归生成机制与跨底物职责分立（生物同源共构 ≠ 跨底物普遍不可分），保留能量梯度差五类量区分与更底层物理生成机制候选研究空间；
-  -> D6（修订版 A + P1-04）：Spine v6 §1.2 / OPEN_TENSIONS §17 完整保真神性·源义与倾向义及从存在到秩序，严分四层理论地位（作者本体论立场 / 承接 R3-04 & R3-06 机会成本、秩序方向与广义关切方向的结构性递归互构 / 待验证非道德统一趋优机制[T3-01 C/E, R3-02-O4 OPEN，不借 C-A 封闭] / 待推导统一极值形式化问题）；
-  -> 跨域统一抽象原则（P1-01）：Spine v6 §2.4 严分已建立核心本体论立场 / R3-02 六项原初生成属性候选 / 条件性组织规律 / 历史性硬化规则四层主张等级与领域↔核心双向抽象检验原则；
-  -> C5-D 全仓一致性收口：落实 R4-C3 两项措辞精修（“强承载尚未建立的推理态”、“写入持久记忆不自动等于形成新能力”）、R4-C4 四项残余（Core_23 唯一 core-facing canonical d 口径、SRT_Clin_00_IIT_PCI L568 清理、H-NEURO-5 κ_dim 未证明占位说明、L_1 已实现的确定性显现非决定论）及全域 §18 CΨ 选项 1（含 Operations/_SRT_REVIEW_QUEUE.md RQ-2026-08-A05）同步；
+= R5-01A 第一轮独立机制研究（不预设残差必然存在，不预设双向回写必然成立，不塞进单一万能模型，不启前置治理）：
+  -> Q-A：新组织关系如何使原本无效或低效的差异获得新的因果效力？
+  -> Q-B：这种新的差异效力如何转化为系统内部真实的区分与作用条件？
+  -> Q-C：新形成的区分机制能否反过来改变产生它的组织关系？
+  -> 研究路径：聚焦 2–3 个具体、机制透明、可干预的研究载体（含共同锚定载体 + 自选载体），区分固定门控 / 既有结构激活 / 组织重构 / 内生比对形成 / 双向条件回写，提出 1–2 个最小数学系统候选与至少 2 个硬反例，按问题调用仓库历史资产（材料卡/GRG/作者早期笔记/Bridge/历史实验）与一手外部文献；
+  -> 协作方式：Gemini（SRT 内部资产正向构造）与 ChatGPT（外部成熟科学与数学独立构造/挑战）针对本轮产出相对独立开展第一轮研究，再按机制结果直接交叉检验；
+  -> 独立并行工作线（不抢占当前研究会话）：存量两篇构造性论文收官投稿（CSC v19.1 核查旧投稿冲突后投 Artificial Life；History-Dependent Reachability 选刊、审阅与封装）+ 《从存在到秩序》（Drafts_26Q/）定向思想深化；
 
-ACTIVE NOW = R4 COMPLETE / R5 PENDING AUTHOR AUTHORIZATION（保持核心理论基线稳定，不启 R5、不解冻 HOLD）;
-R5 启动 = 须待作者完成脱离重构惯性的独立全景评估并单独授权;
+ACTIVE NOW = R5-01A（R5 第一主攻研究方向；研究层允许反向修正假设，执行层保持 R4 canonical 基线稳定）;
+R5 入口路由 = Operations/Proposals/SRT_R5_RESEARCH_PROGRAM_PROPOSAL_2026-11-27.md + Operations/Proposals/SRT_POST_R4_THEORY_GROWTH_CANDIDATE_MEMO_2026-11-27.md;
 PR MERGE / canonical writes / experiment / preregistration / publication
 = require their own existing reviews, gates and relevant authorization;
-§10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / CN-2 E2 / 1B sim / DATA-ACCESS-0 = NO-GO / other HOLD
+§10.1 third deep well / §10.2 broad synthesis / O2-M / CN-3 toy / CN-2 E2 / 1B sim / DATA-ACCESS-0 = NO-GO / 25 sealed validation_holdout / other HOLD
 = UNCHANGED; no blanket release;
 ```
 
-**当前 `R4` 双向重构总体状态（2026-11-27）**：`R4-A`（`#1159`）→ `R4-B1/B2`（`#1160/#1161`）→ `R4-C1..C4`（`#1162–#1165`）→ `R4-C5-A`（`#1166`）已全部合并，获批 `D1–D6` + `§18 CΨ` 选项 1 + `R3-02` 三类规律跨域综合的 **`R4-C5-C/D`** 核心 owner 实写回流与全仓一致性收口已落盘待终审；不启动 `R5`，不解冻任何既有 `HOLD`。
+**当前 `R5` 启动与 `R4` 收口总体状态（2026-11-27）**：`R4` 全波次重构（`#1159`–`#1167`，含 11 份核心 owner 实写回流、`§18 CΨ` 选项 1 概念收口与 Context Bundles 确定性重建）以及 `#1168`（Rovelli `B1` 语料）与 `#1169`（Post-R4 理论生长候选纪要与 R5 研究纲领提案）已全部合并至 `main`；作者已正式授权启动 `R5`，当前唯一 `CURRENT NEXT` 切换为 **`R5-01A`（组织—比对共同生成的最小机制辨识）**；canonical 文件、冻结论文科学包、25 项封存 `validation_holdout` 及全部既有 `HOLD` 维持不变。
 
 ---
 
@@ -154,7 +152,12 @@ Facing v0.3 post-review corrective source = 01_Source_Intuition/SRT_AUTHOR_ADJUD
 #1165 role = R4-C4 CANONICAL LANDING COMPLETE (41 files, 8 positive axes + holism-differentiability & energy-gradient boundary + C3 handoffs + FB-C4-1..5 queued; 4 minor items queued for R4-C5-D; HP-B & CN-2/CN-3/DATA-ACCESS-0 HOLD unchanged)
 #1166 R4-C5-A Spirituality, praxis & co-generation bidirectional reconstruction = MERGED / 8f7d9098d
 #1166 role = R4-C5-A CANONICAL LANDING COMPLETE (31 files, 7 positive axes + R3-02/R3-06/R3-08/C3/C4 alignment + FB-C5-1..4 queued; §18 CΨ preserved OPEN pending C5-B author adjudication)
-R4-C5-C/D CANONICAL LANDING (2026-11-27) = APPROVED D1–D6 CORE OWNER WRITEBACK + §18 CΨ OPTION 1 RESOLUTION + R3-02 THREE-LAW CROSS-DOMAIN SYNTHESIS + FULL-REPO CONSISTENCY CLOSEOUT COMPLETE (Spine v6 / One_Formation v3 / Collective_Selection v2 / Occlusion_Dynamics v2 / Selection_Argument v2 / Core_13a v4 + rebuilt Operator_Basics_Split / Core_12b v4 + rebuilt Ontology_L2_Split / D_VALUE v3 / PSI_F v3 / Suffering v2 / Core_25 v3 / Core_21_Minimal_Axioms v6 / OPEN_TENSIONS v3 §17–§18 + C3 2 items & C4 4 items & Spirituality/routing §18 CΨ Option 1 sync + Context_Bundles deterministically rebuilt; R5 PENDING; all HOLDs unchanged) -> AWAITING FINAL THEORETICAL SYNTHESIS REVIEW & MERGE TO CLOSE R4
+#1167 R4-C5-C/D approved D1–D6 core owner writebacks, §18 CΨ Option 1 resolution, R3-02 three-law synthesis & full-repo consistency closeout = MERGED / 11235a3e6
+#1167 role = R4 CANONICAL LANDING COMPLETE (57 files: Spine v6 / One_Formation v3 / Collective_Selection v2 / Occlusion_Dynamics v2 / Selection_Argument v2 / Core_13a v4 + rebuilt Operator_Basics_Split / Core_12b v4 + rebuilt Ontology_L2_Split / D_VALUE v3 / PSI_F v3 / Suffering v2 / Core_25 v3 / Core_21_Minimal_Axioms v6 / OPEN_TENSIONS v3 §17–§18 + C3 2 items & C4 4 items & Spirituality/routing §18 CΨ Option 1 sync + Context_Bundles deterministically rebuilt; closes R4)
+#1168 Rovelli relational physics & generative ontology corpus (B1 parked) = MERGED / e8a9eaebd
+#1168 role = NONCANONICAL MATERIAL INTAKE (B1 PARKED / MATERIAL LOG SYNCED)
+#1169 Post-R4 theory growth candidate memo & R5 research program proposal = MERGED / b148397d6
+#1169 role = NONCANONICAL POST-R4 MEMO & R5 PROGRAM PROPOSAL BASELINE (R5-01A LAUNCH BASIS)
 2026-09-24 AUTHOR SEMANTIC / DRAFTING SEQUENCING = SPINE OPTIMIZATION FIRST -> THEN OTHER CANONICAL OWNERS; MERGE MUST KEEP MAIN MUTUALLY CONSISTENT; EXECUTION START NOT YET INSTRUCTED
 REPOSITORY SELF-RECONSTRUCTION PHASE 2 / 3 = COMPLETE
 CURRENT GRG FOUNDATION OWNER = Operations/Proposals/SRT_GRG_FOUNDATIONAL_PROTO_GRAMMAR_V0_3_2026-09-21.md
