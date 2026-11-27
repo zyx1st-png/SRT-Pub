@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-FORMAL-2026-11-26
+id: SRT-CONTEXT-BUNDLE-FORMAL-2026-11-27
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-26
-source_commit: 3e77e7da9
+generated: 2026-11-27
+source_commit: 695e64cb2
 source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
 source_dirty: false
-inputs_digest: 77586fffca697e9c
+inputs_digest: 1c4c7d901a1932a7
 ---
 
 # SRT Formal 主方程上下文包
@@ -26,8 +26,8 @@ inputs_digest: 77586fffca697e9c
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-26 |
-| 来源 commit | `3e77e7da9` |
+| 生成日期 | 2026-11-27 |
+| 来源 commit | `695e64cb2` |
 | 来源分支 | `canon/r4-c4-neuroscience-generative-cognition-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
