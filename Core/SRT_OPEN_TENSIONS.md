@@ -3,8 +3,8 @@ id: SRT-OPEN-TENSIONS
 type: open_tensions
 tags: [Core, Open Questions, Hardening, Claim Ladder]
 status: active
-version: v2
-updated: 2026-11-26
+version: v3
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: open
@@ -46,14 +46,14 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | Selection primitive fruitfulness / derivational indispensability (§13) | PD-A separates P0 primitive admission from downstream D2; Pass 1/1.5 establish literal dependence plus substantial reconstructability, but their historical residue verdict remains `UNASSIGNED` | no non-circular middle-level consequence has yet both survived deletion/replacement and earned D2 downstream; no post-PD-A full GOV-SUB01 re-adjudication has reassigned residue | do not treat P0 as empirical proof, D2 null as automatic P0 falsification, or retirement of the old extra §13 exhibit gate as a retroactive residue upgrade |
 | EX-A existence boundary / former `H(L_0)` formula debt (§15) | EX-A separates manifest actuality, anchoring persistence, and stable ISP identity; old `E` is demoted to B14; 2026-08-12 audit withdrew `Core_14`'s entropy proof and limited strict conjugacy to invertible maps | a B14 persistence readout remains parked; P3-B07 cross-scale universality still needs model-level mappings, error bounds, failure cases, and discriminating gain | do not cite old `E`, unqualified `ΔS`, strict conjugacy under ordinary coarse-graining, or a universal minimum-action principle as canonical readouts／proofs |
 | B-A strict layer assignment of 初心 (§16) | author selected B-A: no independent L₀ Shoshin precursor; Shoshin begins as L₁/P2 read-back or P5 phenomenology | no residual Gate B question; `κ_0 / ε_pg` necessity and inheritance remain a separate deferred audit | do not rename `ε_pg` as O0, minimum non-neutrality or a Shoshin precursor; gradient, `argmin` and horizon forms are domain bridges／proxies, not L₀ definitions or universe endpoints |
-| C-A global-optimum scope discipline (§17) | universe-wide semantic/evaluative optimum withdrawn as a current positive object; finite reachable optimum, regulative horizon and model attractor separated | no residual Gate C scope question; CΨ's `Ψ_f→0` valence conflict is separately open | do not infer an optimum from `d↑`; do not call an attractor optimal／good／healthy; model-global does not imply universe-global |
-| CΨ `Ψ_f→0` valence conflict (§18) | Core marks absolute zero friction as degenerate; Spirituality still contains perfection／liberation mappings | whether to retain, reformulate or withdraw those spirituality mappings without collapsing real stake | C-A did not authorize excess-friction reformulation or any change to `Ψ_f` canonical meaning |
+| C-A global-optimum scope discipline (§17) | universe-wide semantic/evaluative optimum withdrawn as a current positive object; `D6` (2026-11-27) explicitly fixes three tiers: named local optima / cross-scale non-moral objective global optimizing orientation (`T3-01 C/E`, `R3-02-O4` OPEN) / cosmic moral-evaluative complete optimum (not established) | `T3-01 C/E` and `R3-02-O4` remain open positive research problems; `C-A` never forecloses non-moral global optimizing inquiry | do not infer an optimum from `d↑`; do not call an attractor morally good/healthy; do not use `C-A` to foreclose `T3-01 C/E` |
+| CΨ `Ψ_f→0` valence conflict (§18) | **RESOLVED CONCEPTUALLY (Author Option 1, 2026-11-27)**: Core retains `Ψ_f→0` as degenerate non-stake limit (without claiming universal finality); Spirituality targets loosening excess defensive friction (cross-dimensional forming/amplifying mechanism) + generating new capacities/relations/conditions without assuming total `Ψ_f` falls | **FIVE INDEPENDENT GAPS RETAINED OPEN**: excess defensive friction formation/amplification mechanism + `Ψ_f` cross-position decomposability, counterfactual baseline, `D-3` detection, and support/shifting causal attribution | semantic closure is NOT a mathematical proof; distributional payability remains a non-canonical inquiry/seed, not an established criterion |
 
-These are pressure points, not new axioms. They route later work and block overclaiming. §15 records a closed author gate, a completed proof-load repair, and parked P3 model work; §16 records B-A; §17 records the closed C-A scope gate; §18 keeps the separate CΨ author question open. Their option history lives in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`; C-A's author/floor record is `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
+These are pressure points, not new axioms. They route later work and block overclaiming. §15 records a closed author gate, a completed proof-load repair, and parked P3 model work; §16 records B-A; §17 records the closed C-A scope gate (with `D6` preserving non-moral `T3-01 C/E` OPEN); §18 records the 2026-11-27 Author Option 1 resolution closing CΨ's semantic conflict while retaining five mechanistic and technical gaps OPEN. Their option history lives in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`; C-A's author/floor record is `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
 
 > **Gate 0 — adopted and landed (2026-08-11; current owner sync 2026-09-19).** The upstream type/boundary question shared by §15-§17 is registered as a **governance-canonical type rule** in `Governance/SRT_CLAIM_LADDER.md §0A` (single primary authority; `_SRT_SYMBOL_TABLE.md` Usage Rule 16 is a cross-reference only). At current strength, class A contains only owner-licensed contentless structural burdens such as non-maximal indifference / non-preclosure and finite positional indexing. `κ_0`, `ε_pg`, B-count orderings and model gradients are class-B reference/model/realization candidates with an admission gap; their necessity and exact inheritance remain OPEN. Class C semantic/evaluative content is inadmissible as a bare `L_0` primitive. Gate 0 carries **no P-level** and does not promote a registered symbol into O0.
 >
-> **Gate 0 itself did not close §15, §16 or §17.** It bounded their option spaces. Subsequent author decisions closed §15 through EX-A, §16 through B-A, and §17 through C-A. §18／CΨ remains open.
+> **Gate 0 itself did not close §15, §16 or §17.** It bounded their option spaces. Subsequent author decisions closed §15 through EX-A, §16 through B-A, §17 through C-A (bounded by `D6`), and §18's conceptual conflict through 2026-11-27 Author Option 1 (retaining its five independent mechanistic/technical gaps OPEN).
 
 ---
 
@@ -851,16 +851,27 @@ The live authorities are `Governance/SRT_CLAIM_LADDER.md §0A`, `_SRT_SYMBOL_TAB
 - **Resolved**: four-sense terminology and scope; §5b's quotability defect; strong universe-wide readings in live core/domain mirrors; bare `Ω` cannot be reused for a source horizon or reachable optimum.
 - **Allowed conditionally**: indexed finite-model optimum, regulative horizon and finite-dynamics attractor, each under its own claim level and conditions.
 - **Forbidden**: `d↑ ⇒` one universe-wide optimum; global-optimum language as an unindexed moral completeness claim; “attractor = good／healthy”; using heat death's failure as proof of an opposite optimum.
-- **`R4-A` boundary sync (2026-11-26)**: `C-A`'s continuing prohibition on a universe-wide moral/evaluative optimum (`PT10 E`) is strictly distinguished from **`T3-01 C/E`** (`Core_Law/SRT_Generative_Ontology_Spine.md §1`), which leaves **OPEN** the non-moral theoretical inquiry into whether generation across scales exhibits an objective intrinsic global optimizing or extremal orientation. Neither closes the other.
+- **`R4-A / R4-C5-C` (`D6 / P1-04`) four-tier boundary sync (2026-11-27)**: Aligned with `Spine §1.2`, strictly separate four epistemic tiers without allowing `C-A` to foreclose non-moral global inquiry or conflating author posture with proved optimization theorems: **(1) author's positive ontological stance** (shared generative matrix & unified non-teleological maintenance–generation tendency: "from existence to order"); **(2) establishable core structural relations** (recursive mutual constitution of maintenance, unfolding, and reconstruction dynamically coupled with `R3-04 / R3-06` opportunity costs, order direction, and generalized concern direction); **(3) open theoretical problem (`T3-01 C/E`, `R3-02-O4` = OPEN)** of whether cross-scale generation obeys a single non-moral objective unifying optimization mechanism; and **(4) open formalization problem** of whether such a mechanism admits an explicit generalized extremal principle—strictly distinct from both *named local-model extrema* (distinguishing descriptive state-space change from actual organizational-relation change) and a *universe-wide moral or evaluatively complete optimum* (`C-A / PT10 E / O2-M = HOLD`, not established). `C-A` forbids universe-wide moral completeness and never forecloses `T3-01 C/E`.
 
 ---
 
-## 18. CΨ — Absolute `\Psi_f \to 0` Valence Conflict (open, separated 2026-08-12)
+## 18. CΨ — Absolute `\Psi_f \to 0` Valence Conflict (conceptual conflict resolved via Author Option 1, 2026-11-27; five mechanistic & technical gaps OPEN)
 
 ### Current State
 
-Core treats absolute `\Psi_f \to 0` as a degenerate／non-stake limit (`_SRT_PSI_F_CANONICAL.md §5`), while several Spirituality passages map the same limit to perfection, liberation or pure awareness. `Spirit_04` already notes the tension locally, but no repo-wide author verdict has fixed whether the devotional language means absolute zero, excess／defensive friction approaching zero, or something else.
+Core treats absolute `\Psi_f \to 0` as a degenerate／non-stake limit (`_SRT_PSI_F_CANONICAL.md §5`), whereas historical Spirituality passages mapped the same limit to perfection, liberation, or pure awareness. Following `R3-08` four-way friction separation, `R4-C5-A` (`#1166`) domain cleanup, and the **2026-11-27 author adjudication (`D1` revised Option 1)**, the apparent contradiction has been traced to conflating distinct theoretical objects rather than an irreconcilable ontological binary.
 
 ### Status
 
-**OPEN — separate CΨ author gate.** C-A deliberately did not adopt the proposed `\Psi_f - \Psi_f^{min} \to 0` reformulation and did not change Core's degenerate limit in `_SRT_PSI_F_CANONICAL.md §5`. Under `R4-A` (`2026-11-26`), Core's absolute `\Psi_f \to 0` degenerate limit remains intact while Spirituality `R3-08 P2-06` four-way friction alignment is scheduled for `Wave R4-4`; `CΨ` remains a separate `OPEN` gate. Until adjudicated, Spirituality uses must remain marked domain mapping／high-commitment language and may not override the Core definition or imply that real stake disappears at an optimum.
+**CONCEPTUAL CONFLICT RESOLVED (Author Option 1, 2026-11-27) — FIVE INDEPENDENT MECHANISTIC & TECHNICAL GAPS RETAINED OPEN:**
+
+1. **Semantic bifurcation (closed conceptually)**:
+   - Core preserves absolute `\Psi_f \to 0` as the degenerate / non-stake limit in `_SRT_PSI_F_CANONICAL.md §5` (**without** claiming that its universal finality is mathematically proved or permanently unmodifiable);
+   - Spirituality praxis targets loosening **excess defensive friction** (defined as a cross-dimensional friction-forming and friction-amplifying mechanism acting across opportunity cost, structural conflict, maintenance load, and suffering—NOT a 5th independent additive scalar) alongside **creating new capacities, relations, directions, and generative conditions**, without presupposing that total `\Psi_f` monotonically decreases.
+2. **Five independent open gaps (explicitly `OPEN`, never closed by semantic resolution)**:
+   - **Excess defensive friction formation & amplification mechanism** (`OPEN`);
+   - **`\Psi_f` cross-position decomposability** (`OPEN`, see `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §4.1`);
+   - **Counterfactual baseline for sub-position thresholds** (`OPEN`, seed `§4.2`);
+   - **`D-3` detection problem under degraded beneficiary `T_dir`** (`OPEN`, seed `§4.3`);
+   - **Causal attribution of support / cost-shifting relations** (`OPEN`, seed `§2`).
+   Distributional payability remains a valuable praxis anti-disguise inquiry and non-canonical research seed, **not** an already-proved mathematical criterion.

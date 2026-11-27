@@ -2,7 +2,9 @@
 id: SRT-SUFFERING
 type: theory
 tags: [Suffering, Phenomenology, Selection, Occlusion, Individuation, L1]
-status: draft
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
@@ -17,7 +19,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 > **Does not define**：`d-value`、`Ψ_f`、`T_dir`、`θ_{somatic}`、real choice moment、Stable ISP、subject-position、phenomenality 或 consciousness；它们的准入与定义仍归各自 owner。
 > **Depends on**：`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Individuation.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`。
 > **Relation**: 本文件不替代 `Spirituality/` 的 pathology-and-return praxis、`Philosophy/` 的规范判断或 `Neuroscience/` 的临床实现；它只提供进入这些 bridge 前的有界 suffering 模型。
-> **Proxy guardrail**：pain、distress、clinical symptoms、spiritual suffering、moral guilt、prediction error、free energy、metabolic burden 与 `Ψ_f` / `d` 的关系一律先读作 proxy / bridge。不得把 `suffering = Ψ_f`、`pain = Ψ_f`、`suffering ∝ 1/d` 或其他单一量身份式写成 canonical definition。
+> **Proxy guardrail & `R4-C5-C / D1` Sync (2026-11-27)**：pain、distress、clinical symptoms、spiritual suffering、moral guilt、prediction error、free energy、metabolic burden 与 `Ψ_f` / `d` 的关系一律先读作 proxy / bridge。不得把 `suffering = Ψ_f`、`pain = Ψ_f`、`suffering ∝ 1/d` 或其他单一量身份式写成 canonical definition。依据 2026-11-27 作者 `D1` / `§18 CΨ` 选项 1 裁决：保留 `R3-08` 摩擦四分，将**多余防御性摩擦**定位为可同时放大结构冲突、维持负担与主观苦难的跨维度形成/放大机制（机制保持 `OPEN`）；涉及集体/关系性苦难外部化与**分布式可支付性**反伪装追问时（回链 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`），显式保留 **`Ψ_f` 跨位置可分解性、反事实基线、`D-3` 检测与支撑/转嫁因果归属**四项未决技术缺口（`OPEN`），不得冒充已证明数学判据。
 > **Formal-model debt (Wave E2)**：`S = S_{sig} + S_{str}`、`d_c`、`σ_{sr}`、`T_dir`、`Δ` 及其耦合只可作为声明了准入、方向来源、criterion 与 domain assumptions 的 P2/P3 formal candidates。`Core_Law/SRT_L1_Formalism.md` 与 `Core_Law/SRT_L1_Hardening_Notes.md` 留待 Wave E3 独立审查；本文不用它们反向证成第一人称登记。
 
 ---

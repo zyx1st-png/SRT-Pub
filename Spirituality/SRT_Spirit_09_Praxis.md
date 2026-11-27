@@ -38,7 +38,7 @@ $$ T^{praxis}(d^{proxy}) = \begin{cases}
 * **Implication**: 实践成熟不是沿一维标量脱离物理层，而是关切宽度、`L_2` 可修订性、后果承载力与门控重构能力的整体重排。
 
 ### Ax-Evo-2: Evolution Direction Proxy
-**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` remains OPEN).
+**Domain Mapping**: The praxis reorientation vector tracks care broadening, rigid $L_2$ loosening, and loosening of excess defensive friction (`\Psi_f^{defensive-proxy}`, replacing bare `Φ`; `§18 CΨ` Option 1 conceptual conflict resolved; 5 gaps OPEN).
 $$ \vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy} $$
 * **Implication**: 实践演化是多维方向场，不是单一标量目标函数。
 
@@ -132,7 +132,7 @@ $$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Pro
 |:--|:--|:--|:--|
 | Phase 1-3（寻牛→见迹→见牛） | L₁稳定化开始，θ整合加速 | $d > d_{UAL}$（基线以上，波动） | 上升 |
 | Phase 4-6（得牛→牧牛→骑牛归家） | $\hat{G}_\theta$ 选择稳定，L₂锚定弱化 | $d$ 扩展（方向性增强） | 较高平台 |
-| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | 刚性 `L_2` 防御锁定自主松解，多余防御性摩擦下降（非普遍总 `Ψ_f = 0`，`§18 CΨ` OPEN），关切扩展至社会层 | $d^{proxy}$ 高且向外延展 | 维持高位 |
+| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | 刚性 `L_2` 防御锁定自主松解，多余防御性摩擦下降（非普遍总 `Ψ_f = 0`，`§18 CΨ` 选项 1 语义分流、五项缺口 OPEN），关切扩展至社会层 | $d^{proxy}$ 高且向外延展 | 维持高位 |
 
 **证伪条件**：① 若在高阶修行者中PCI不高于对照组（Cohen's d<0.3，p>0.05），则PCI作为阶段标记无效；② 若DMN-BOLD轨迹在Phase 7-10相比Phase 4-6无回升趋势（Josipovic范式复制，p>0.1），则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈最后通牒任务/合作测试）无阶段效应（η²<0.05），则行为标记映射失效。→ Cross-ref: C-DMN-1（迷幻松动推论）；Hasenkamp & Barsalou 2012 *NeuroImage*；Massimini et al. 2005 *Science*。
 
@@ -793,7 +793,7 @@ $$P(\text{Long-term Success}) \propto S_{\text{community}}$$
 **危险信号** (避免)（SRT解读）:
 - 要求绝对服从 → **强制L₂封闭**：学生θ被单向替换为老师θ'，自主Ĝ_θ被抑制，d无法自主扩展
 - 性/财务不当 → **L₂规范严重违反**（老师自身L₂一致性失败，是d虚高的证据）
-- 承诺"快速开悟" → **商品化伪承诺**：违背"方向而非终点"框架（§8.2），将松解多余防御摩擦与重构参与方式的长期过程商品化为短时可购买结果（`§18 CΨ` 保持 OPEN）
+- 承诺"快速开悟" → **商品化伪承诺**：违背"方向而非终点"框架（§8.2），将松解多余防御摩擦与重构参与方式的长期过程商品化为短时可购买结果（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）
 - 无法被质疑 → **L₂封闭强化**：压制学生的L₁体验与L₂理论的真实摩擦（正是Ψ_f需要被承担的过程被封堵）
 - 情感操控 → **Ĝ_θ被劫持**：外部情感刺激替代学生自主的选择驱动，θ更新被外部控制
 
@@ -889,7 +889,7 @@ $$\lim_{t \to \infty} \text{Separation}(\text{Practice}, \text{Life}) \to 0$$
 
 | 特征 | 表现 | SRT 操作化 |
 |:-----|:-----|:-----------|
-| **自然觉察** | 不需强行紧绷去觉察 | 觉察与注意门控稳定化，多余防御性内耗降低（不预设总 `Ψ_f → 0`，`§18 CΨ` OPEN） |
+| **自然觉察** | 不需强行紧绷去觉察 | 觉察与注意门控稳定化，多余防御性内耗降低（不预设总 `Ψ_f → 0`，`§18 CΨ` 选项 1 语义分流、五项缺口 OPEN） |
 | **平等心** | 面对顺逆境相对平衡 | $\theta$ 对扰动的鲁棒性（$\|\Delta\theta\|/\|\Delta L_1^{stim}\|$ 较低，高承压稳定器） |
 | **自发慈悲** | 不"应该"，而自然流露 | 关切结构（范围/深度/强度/方向，`R3-06`）重构，关系对抗性摩擦与代价外包减少 |
 | **幽默感** | 不严肃，轻松对待 | $L_2$ 粘滞度 $\eta_{viscosity}$ 低（不过度锚定L₂自我叙事，能灵活切换框架） |
@@ -914,7 +914,7 @@ $$\lim_{t \to \infty} \text{Separation}(\text{Practice}, \text{Life}) \to 0$$
 
 $$\text{Ongoing Praxis} : \text{Evolving Generative Conditions} \;\land\; \text{Finite Historical } L_2 \;\land\; \text{Future Re-Selectability}$$
 
-*结构依据（`R4-C5-A` 校准，正式退场 `Life iff dθ/dt ≠ 0`）*：参数每一瞬间持续非零变化（`dθ/dt ≠ 0`）既不是生命的充分条件（退化、噪声、损伤也满足 `dθ/dt ≠ 0`），也不是每一时刻必须成立的必要条件（健康系统同样需要稳态维持与相对静态锚定）。实践之所以没有“一次毕业的终点”，是因为：**① 外部与关系性生成条件本身在持续变化；② 任何具身主体的历史组织（`L_2`）都是有限的，无法预先穷尽未来新情境；③ 实践的核心是持续守护并更新面向未来的可再选择性、关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力**（而非追求总 `Ψ_f` 单调归零，`§18 CΨ` 保持 OPEN）。
+*结构依据（`R4-C5-A` 校准，正式退场 `Life iff dθ/dt ≠ 0`）*：参数每一瞬间持续非零变化（`dθ/dt ≠ 0`）既不是生命的充分条件（退化、噪声、损伤也满足 `dθ/dt ≠ 0`），也不是每一时刻必须成立的必要条件（健康系统同样需要稳态维持与相对静态锚定）。实践之所以没有“一次毕业的终点”，是因为：**① 外部与关系性生成条件本身在持续变化；② 任何具身主体的历史组织（`L_2`）都是有限的，无法预先穷尽未来新情境；③ 实践的核心是持续守护并更新面向未来的可再选择性、关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力**（而非追求总 `Ψ_f` 单调归零，`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）。
 
 **类比**:
 - 身体维持、呼吸、进食与关系经营都不是“做完一次即可永久封存”的静态成就，而是在变化环境中不断重新校准的活过程。
@@ -1133,7 +1133,7 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 本文档的核心形式化关系：
 
 1. **三类实践参与剖面** (Ax-Evo-1，退出旧 `Tier 1 (Physical) d ≈ 0` 线性阶梯): 按关切代理宽度、`L_2` 可修订性与后果承载力刻画实践重排，而非把物理层视作零关切低阶。
-2. **实践方向场代理** (Ax-Evo-2): $\vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy}$ — 刻画关切扩展、刚性 $L_2$ 松动与多余防御性摩擦松解（`§18 CΨ` 保持 OPEN）。
+2. **实践方向场代理** (Ax-Evo-2): $\vec{v}_{evo}^{proxy} = \nabla d^{proxy} - \nabla w_{L_2}^{rigid} - \nabla \Psi_f^{defensive\text{-}proxy}$ — 刻画关切扩展、刚性 $L_2$ 松动与多余防御性摩擦松解（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）。
 3. **初心对齐代理** (Ax-Evo-3): $\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K})$ — 初心只在具名有限模型中作方向相似度代理。
 4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
 

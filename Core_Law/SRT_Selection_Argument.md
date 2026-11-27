@@ -4,7 +4,9 @@ type: argument
 tags: [L1, Philosophy, Selection, Existence, Consciousness, Foundation, Defense]
 layer: L1
 epistemic_layer: os
-status: active_v1
+status: active
+version: v2
+updated: 2026-11-27
 claim_mode: companion_exposition
 canonical: false
 dependency: [SRT-L0-METAPHYSICS]
@@ -521,9 +523,14 @@ primitive Selection 不自带秩序、延续、生存或 fitness 方向。只有
 
 这一追问不意味着没有 Selection-priority 的框架在原则上无法处理分歧、客观性或共识形成。它只定义一项 strongest-rival 比较任务：具名 rival 如何支付位置、历史、对象化与收敛的负担，SRT 是否尚有非替代性增量。当前答案为 **NOT ESTABLISHED**。
 
-### 8.4 已形成关系中的局部方向
+### 8.4 已形成关系中的局部方向、跨尺度共同生成中介与条件重构（`R4-C5-C / D3` 补强）
 
 在已形成位置、关系、历史保留机制与声明目标的模型中，先前 Selection 可以通过后果回流、代价支付与条件改写对后续路径产生局部方向性。该方向性来自已建立的历史效力与比较目标，不来自 primitive Selection 本身。一次 Selection 的发生不自动建立耐久历史、持续景观改写或时间单位；只有当该结果仍实质改变后续 Selection 条件时，才可说它进入了 retained history。
+
+跨领域综合进一步澄清了“选择结果如何反过来改变选择条件”的三项一般结构机制（均在形成态展开，不反向定义 primitive Selection，亦不预设现象意识）：
+1. **历史的双重生成性**：保留下来的历史（经生物记忆、语言符号、社会制度、技术与人工载体）不仅收缩和锁定既有空间，更通过脚手架、剪枝与新比对条件**创造此前不存在的生成空间**；
+2. **跨尺度共同生成中介（Cross-Scale Co-Generative Mediator，`P1-02`）**：无论是持续中介（蛋白质复合体、代谢枢纽、共享概念、社会制度）还是短暂中介（临时共同目标、局部耦合事件、瞬时前景），都可作为使多个生成关系借共同条件相互协调并改写彼此生成条件的分析视角（与脚手架/`Proxy`/有效作用接口交叠，不预设为第六个互斥机制）；其中“认知前景生成中介”只是神经/认知尺度的 `P3` 候选特例，不能据此将意识或现象经验泛化到所有共同生成中介（`HP-B` 保持开放）；
+3. **非阶梯能力分化与参与方式重构**：系统在**作用能力、比对能力、生成条件重构与生成能力重构**四个维度上可互助亦可解耦（不构成单一线性阶梯）；自由与成熟实践的实质不是消除原初选择，而是重塑有限主体参与共同生成、组织比对维度与创造新生成条件的方式。
 
 ---
 

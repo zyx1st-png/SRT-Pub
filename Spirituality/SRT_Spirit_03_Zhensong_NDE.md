@@ -35,7 +35,7 @@ $$ \forall x \in L_2,\; x \neq \text{Tao} $$
 * **Implication**: “道不可言”在本文件中是 $L_2$ 有限表征不可穷尽本源的 P3/P5 映射；不定义 `Ω` 或宇宙级最优。
 
 ### Ax-Tao-2: Wu Wei (无为 — P3/P5 Bridge)
-**Domain Mapping**: Wu Wei is read as reorganizing participation so excess defensive friction and forced explicit over-control decrease while remaining responsive to real constraints (`R3-08 F_3223` senses ①②; wuwei $\neq$ losing agency/initiative; `§18 CΨ` remains OPEN).
+**Domain Mapping**: Wu Wei is read as reorganizing participation so excess defensive friction and forced explicit over-control decrease while remaining responsive to real constraints (`R3-08 F_3223` senses ①②; wuwei $\neq$ losing agency/initiative; `§18 CΨ` Option 1 conceptual conflict resolved; 5 gaps OPEN).
 $$ \text{WuWei}^{bridge} \sim \nabla_\theta \Psi_f^{defensive\text{-}proxy} \to 0 \;\land\; \nabla_\theta F_{\theta,\tau,K} \parallel \text{Situated Generative Flow} $$
 * **Implication**: 无为不是“什么都不做”或“取消原初选择”，而是减少逆着条件的强行控制与多余防御摩擦（此处不用 bare `Φ` 代替摩擦，不预设总 `Ψ_f = 0`）。
 

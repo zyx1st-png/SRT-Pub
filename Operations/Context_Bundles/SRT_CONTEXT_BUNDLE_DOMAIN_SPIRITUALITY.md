@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 0ad4bbe5d
-source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
+source_commit: 32545cdcd
+source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
 source_dirty: false
-inputs_digest: 010ae4b294e49b5b
+inputs_digest: 3337b101fb25ec29
 ---
 
 # SRT 灵性领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 010ae4b294e49b5b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `0ad4bbe5d` |
-| 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
+| 来源 commit | `32545cdcd` |
+| 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
@@ -491,7 +491,7 @@ This domain must simultaneously reject **two opposite distortions**:
 
 **B-A／C-A guard（2026-08-12，沿用至 R4-C5）**：初心（Shoshin）从 `L_1` 开始，作为 P2 处境化解释回读或 P5 现象学命名；当前 canonical 不承认独立的 `L_0`「初心前身」，也不把 `ε_pg` 改名为该前身。Spirituality 中的 `∇F` 形式仅在声明有限位置、可达域、比较规则、时域与约束的模型内作为 P3/P4 bridge／proxy；不定义 `L_0`、无限时域终点或 universe-wide optimum。
 
-**`§18 CΨ` 独立作者门（OPEN，R4-C5-A 严禁单边关闭）**：Core 中 `Ψ_f → 0` 的退化/无赌注极限与灵性实践中“多余防御性摩擦松解”的边界划分仍属 `Core/SRT_OPEN_TENSIONS.md §18`（`RQ-2026-08-A05`）独立作者裁决门。本域不得将 `Ψ_f → 0` 宣称为灵性普遍目标，也不得在作者正式裁决前越权关闭 `§18 CΨ`。
+**`§18 CΨ` 作者选项 1 裁决同步（2026-11-27，`R4-C5-C/D`）**：依据 2026-11-27 作者裁决，Core 绝对 `Ψ_f → 0` 退化极限与灵性实践“松解多余防御性摩擦 + 创造新能力/关系/方向”之间的**概念冲突已通过语义分流关闭**（详见 `Core/SRT_OPEN_TENSIONS.md §18` 与 `_SRT_PSI_F_CANONICAL.md §5`）；同时以下**五项独立机制与技术缺口保持 `OPEN`**：多余防御性摩擦的形成与放大机制、`Ψ_f` 跨位置可分解性、反事实基线、`D-3` 检测难题及支撑/转嫁因果归属。关闭语义冲突不视为数学证明，也不排除未来对 Core 退化极限普适性的修正。
 
 Allowed:
 
@@ -559,7 +559,7 @@ Forbidden:
 
 > Spiritual analysis preserves the `R3-08` **four-way friction/burden separation**—**(1) 广义摩擦 (generalized friction)**, **(2) 非闭合压力 (non-closure pressure)**, **(3) `Ψ_f` 可支付阻抗/负担 (canonical payable friction)**, and **(4) 主观苦难 (subjective suffering, routed to `Core_Law/SRT_Suffering.md`)**—and treats **多余防御性摩擦 (excess defensive friction)** as a **cross-dimensional friction-forming and friction-amplifying mechanism** (affecting opportunity cost, structural conflict, maintenance load, and suffering) rather than an unproven 5th independent additive quantity. Practice aims not merely at reducing defensive friction, but also at generating new capacities, relations, directions, and generative conditions; widening care or love can yield collaborative gains while also increasing responsibility, maintenance burden, and real risk.
 
-**Status**: P3/P5 mapping; P4 when measurement or intervention is proposed; **`§18 CΨ` (`RQ-2026-08-A05`) = OPEN independent author gate**.
+**Status**: P3/P5 mapping; P4 when measurement or intervention is proposed; **`§18 CΨ` (`RQ-2026-08-A05`) = conceptual conflict RESOLVED via 2026-11-27 Author Option 1; five independent mechanistic & technical gaps (excess defensive friction formation/amplification + 4 distributional payability gaps) remain OPEN**.
 
 **Forbidden overclaims**:
 
@@ -643,7 +643,7 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 # SRT Spirituality Compact Registry
 
 > **`R4-C5-A` 双向重构更新（2026-11-27，取代 2026-07-20 旧休眠层声明）**：本域已完成 `R4-C5-A` 灵性、实践与共同生成双向重构，与 `R3-02`（跨尺度生成母体与生成性退隐）、`R3-08`（灵性参与转向、`F_3223` 三义切分、Ghost 五分法与 `§18 CΨ` 独立作者门）、`R4-C1`（正面自由/关系性个体化）、`R4-C2`（非阶梯能力）、`R4-C3`（AI 三型与人机共同生成）及 `R4-C4`（前对象整体生成与多层级门控四阶重构）全面对齐。
-> **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。本域不新增或单边改写 `Core_Law/` / `Core/` canonical 原始定义；所有向核心理论提出的双向修订建议（`FB-C5-1..4`）均保持 `C`（M-origin 候选）性质，排入 `R4-C5-B` 跨域综合与作者集中裁决。**`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门开放。**
+> **`R4-C5-C/D` 同步更新（2026-11-27）**：本域 `R4-C5-A`（`#1166` 已合并）的 `FB-C5-1..4` 已随 2026-11-27 作者 `D1–D6` 裁决正式写回核心 owner（`Spine v6`、`One_Formation v3`、`Collective_Selection v2`、`Core_13a v4`、`Core_12b v4`、`Occlusion_Dynamics v2`、`D_VALUE v3`、`PSI_F v3`、`Suffering v2`、`Core_25 v3`、`OPEN_TENSIONS §17–§18`）。**`§18 CΨ` 已按作者选项 1 关闭概念冲突，同时保留多余防御性摩擦形成放大机制及分布式可支付性四项技术缺口为 `OPEN`**。本页继续作为 Spirituality 导航与领域注册表，不替代核心 canonical owner。
 > **P-level**：本板块主文主要为 P3/P5；实践、现象学与生活化解释默认 P5；阈值、路径或可测代理默认 P4，除非回链到 core/canonical 文件。
 
 ---
@@ -657,19 +657,19 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 | **3** | **局部与全局** | 有限主体在具身相对位置中参与整体生成；无上帝视角豁免；警惕把局部 `L_2` 绝对化为宇宙总体（`U5` 病理），区分 `U5` 与关系性未封闭导向（`U6`） | `SRT_Spirit_09_Praxis_CompactCore §3.1`、`SRT_Spirit_01_Religion_Ontology`、`SRT_Spirit_05_Shoshin` | 不赋予任何有限个体/传统/共同体总体占有权 |
 | **4** | **自我、历史与遮蔽** | 承接 `C3/C4` 历史效力与再生成记忆（历史既能压缩遮蔽也能创造新生成空间）；承接 `R3-06` 广义关切四维（范围/深度/强度/方向），退出“灵性成熟 = 单轴 `d` 增长”与旧 `Tier 1 d≈0` | `SRT_Spirit_09_Praxis_CompactCore §3.2–3.3`、`SRT_Spirituality_Selection_Pathology_and_Return`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return` | 回链 `Core_Law/SRT_Occlusion_Dynamics.md`；规范 `d` 独立准入 |
 | **5** | **退隐、去执、无为与正面自由** | 生成性退隐作为**存在方式、作用接口、关系位置与生成职责转换**（四结构问 + 同级前背景 vs 跨尺度共同成体）；严守三非同一性与四层切分（含锁定/寄生警觉）；`F_3223` 保留①②退场③，转向参与方式与四类能力重构 | `SRT_Spirit_09_Praxis_CompactCore §4`、`SRT_Spirit_03_Zhensong_NDE`、`SRT_Spirit_05_Shoshin` | `O2-M = HOLD`；不重建新的线性能力阶梯 |
-| **6** | **摩擦、苦难与生成性** | 保留 `R3-08` 摩擦四分 + 多余防御性摩擦作为跨维度形成/放大机制；实践兼顾松解防御与创造新能力/关系/方向；**分布式可支付性**作为反伪装追问（明示四项未决技术缺口） | `SRT_Spirit_09_Praxis_CompactCore §5`、`SRT_Spirituality_Claim_Status §2.4`、`_SRT_Spirit_Axioms` | **`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门 OPEN**；回链 `Core_Law/SRT_Suffering.md` |
+| **6** | **摩擦、苦难与生成性** | 保留 `R3-08` 摩擦四分 + 多余防御性摩擦作为跨维度形成/放大机制；实践兼顾松解防御与创造新能力/关系/方向；**分布式可支付性**作为反伪装追问（明示四项未决技术缺口） | `SRT_Spirit_09_Praxis_CompactCore §5`、`SRT_Spirituality_Claim_Status §2.4`、`_SRT_Spirit_Axioms` | **`§18 CΨ` 概念冲突已按选项 1 关闭**；五项机制与技术缺口 `OPEN`；回链 `Core_Law/SRT_Suffering.md` |
 | **7** | **灵性实践与共同生成** | 个人实践回路（诊断→同步→强化、初心 `B-A`、十牛图四阶段、黑箱化机制、最小实践节律与伪成长诊断）+ 共同体 `Sangha` 不接管托举 + 人机时代 **AI 三型**（脚手架/牢笼/选择地形）灵性辨析 | `SRT_Spirit_09_Praxis_CompactCore §6`、`SRT_Spirit_09_Praxis`、`SRT_Spirituality_Community_and_Sangha`、`SRT_Spirituality_Selection_Pathology_and_Return §10` | `Subjecthood S0–S6` 与 Primitive `S0` / **AI 赌注谱系 `S0–S4`** 严格隔离；`HP-B` FROZEN |
 
 ---
 
-## 2. 反向核心理论反馈台账（`FB-C5-1..4`，`C` / M-origin 候选，进入 `R4-C5-B` 统一评估）
+## 2. 反向核心理论反馈台账（`FB-C5-1..4` — 已按 2026-11-27 `D1–D6` 裁决实写回流核心 owner）
 
-| 编号 | 反向反馈主题 | 拟评估核心 owner | 当前状态 |
+| 编号 | 反向反馈主题 | 已实写的核心 owner | 当前状态 |
 |---|---|---|---|
-| **`FB-C5-1`** | 神性·源义（`T3-04 D`）与倾向义（`R3-02 / T3-01 C/E`）并保 + 维持（个体侧）与生成（整体侧）统一倾向（“从存在到秩序”），严分局部极值 / 跨尺度非道德趋优 / 宇宙道德最优 | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §2`、`Core/SRT_OPEN_TENSIONS.md §17` | `C` 候选；排入 `R4-C5-B` |
-| **`FB-C5-2`** | 生成性退隐作为存在方式、作用接口、关系位置与生成职责转换（四结构问 + 四层切分，含锁定/寄生反例）并汇入 `R3-02` 共同协议与跨尺度相对独立性生成 | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Collective_Selection.md`、`Core_Law/SRT_Occlusion_Dynamics.md` | `C` 候选；排入 `R4-C5-B` |
-| **`FB-C5-3`** | 摩擦四分 + 多余防御性摩擦（跨维度形成/放大机制）+ 分布式可支付性反伪装追问（明示四项未决技术缺口），直连 `§18 CΨ` 独立作者门裁决 | `_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | `C` 候选；`§18 CΨ` 独立作者门 `OPEN` |
-| **`FB-C5-4`** | 有限主体参与方式重构（`F_3223` 正面候选 + 关切结构四维/参与/比对/生成能力非阶梯重构）作为正面自由与共同生成的实践落地 | `Core/SRT_Core_13a_Operator_Basics.md`、`Core/SRT_Core_12b_Ontology_L2.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | `C` 候选；排入 `R4-C5-B` |
+| **`FB-C5-1`** | 神性·源义（`T3-04 D`）与倾向义（`R3-02 / T3-01 C/E`）并保 + 维持（个体侧）与生成（整体侧）统一倾向（“从存在到秩序”），严分局部极值 / 跨尺度非道德趋优 / 宇宙道德最优（`D6`） | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §1.2`、`Core/SRT_OPEN_TENSIONS.md §17` | **已写回核心（`R4-C5-C`）**；`R3-02-O4 / T3-01 C/E` `OPEN` |
+| **`FB-C5-2`** | 生成性退隐作为存在方式、作用接口、关系位置与生成职责转换（四结构问 + 四层切分，含锁定/寄生反例）并汇入 `R3-02` 共同协议与跨尺度相对独立性生成（`D2`） | `Core_Law/SRT_One_Formation.md §2.1a–2.1b`、`Core_Law/SRT_Collective_Selection.md §3.4`、`Core_Law/SRT_Occlusion_Dynamics.md §0.4` | **已写回核心（`R4-C5-C`）**；`O2-M = HOLD` |
+| **`FB-C5-3`** | 摩擦四分 + 多余防御性摩擦（跨维度形成/放大机制）+ 分布式可支付性反伪装追问（明示四项未决技术缺口）（`D1` 选项 1） | `_SRT_PSI_F_CANONICAL.md §0.2, §5`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | **概念冲突已关闭（选项 1）**；五项机制与技术缺口 `OPEN` |
+| **`FB-C5-4`** | 有限主体参与方式重构（`F_3223` 正面候选 + 关切结构四维/参与/比对/生成能力非阶梯重构）作为正面自由与共同生成的实践落地（`D3 / D4`） | `Core/SRT_Core_13a_Operator_Basics.md §0.1`、`Core/SRT_Core_12b_Ontology_L2.md §0.3a`、`Core_Law/SRT_Selection_Argument.md §8.4` | **已写回核心（`R4-C5-C`）**；`HP-B` FROZEN |
 
 ---
 
@@ -677,7 +677,7 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 
 ### Z. Claim-status / Guardrail
 - `SRT_Spirituality_Claim_Status.md` (`v2`, `R4-C5-A`)
-  - 双向重构总边界：反两极原则、`R3-02` 生成性神性与退隐四层切分、`R3-08` 参与转向 / `F_3223` 三义 / 五层摩擦分立 / 分布式可支付性反伪装 / **`§18 CΨ` 开放门**、`R4-C3` AI 三型同步与旧形而上学清理护栏。
+  - 双向重构总边界：反两极原则、`R3-02` 生成性神性与退隐四层切分、`R3-08` 参与转向 / `F_3223` 三义 / 摩擦四分+多余防御性摩擦形成放大机制 / 分布式可支付性反伪装追问 / **`§18 CΨ` 选项 1 语义冲突关闭而五项缺口 OPEN**、`R4-C3` AI 三型同步与旧形而上学清理护栏。
 
 ### A. Compact Core Layer (Primary `R4-C5-A` Hub)
 - `SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, `R4-C5-A`)
@@ -715,7 +715,7 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 ## 4. Recommended Reading Order
 
 ### 最短主线（第一次进入 Spirituality）
-1. `SRT_Spirituality_Claim_Status.md`（先确立反两极护栏与 `§18 CΨ` 开放边界）
+1. `SRT_Spirituality_Claim_Status.md`（先确立反两极护栏与 `§18 CΨ` 选项 1 边界）
 2. `SRT_Spirit_09_Praxis_CompactCore.md`（七大正面理论主轴、实践节律与 `FB-C5-1..4`）
 3. `_SRT_Spirit_Axioms.md`（域内桥接公式与历史神学对照）
 
@@ -731,8 +731,8 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 
 ## 5. Minimal Navigation Note
 
-- **任何涉及神性 / 本源地平线 / `d->infinity` / 解脱 / 退隐 / 苦难 / 修行 / `Ψ_f` / `§18 CΨ` 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `SRT_Spirit_09_Praxis_CompactCore.md`；不得用 bare `Ω` 表示本源，不得把 `Ψ_f → 0` 写成灵性目标。
-- **涉及向核心理论提议的反向修订（`FB-C5-1..4`）与 `§18 CΨ` 裁决** → 保持 `C`（M-origin 候选）标记，统一进入 `R4-C5-B` 跨域核心理论综合与作者集中裁决，不在本域自行改写核心 owner。
+- **任何涉及神性 / 本源地平线 / `d->infinity` / 解脱 / 退隐 / 苦难 / 修行 / `Ψ_f` / `§18 CΨ` 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `SRT_Spirit_09_Praxis_CompactCore.md`；不得用 bare `Ω` 表示本源，不得把 `Ψ_f → 0` 写成灵性目标；`§18 CΨ` 概念冲突已于 2026-11-27 按作者选项 1 关闭，五项机制与技术缺口保持 `OPEN`。
+- **原 `FB-C5-1..4` 反向反馈** → 已随 2026-11-27 作者 `D1–D6` 裁决实写回流核心 owner（见上表 §2），后续跨尺度检验进入 `R5`（当前 `PENDING`）。
 
 
 
@@ -761,7 +761,7 @@ Files in `Spirituality/` may preserve historical handles such as `Axioms`, `Theo
 
 > **定位**：本文件是 `R4-C5-A`（2026-11-27）重构后的 Spirituality 域核心理论主干与 `SRT_Spirit_09_Praxis.md` 的紧凑主干版。
 > **核心转向（`R3-02` + `R3-08`）**：灵性不是脱离现实的神秘学，也不是退化为心理调节的自我安慰；它研究**有限主体如何理解并重构自己参与共同生成的方式**。
-> **Claim-level & 权限边界**：本文主要为 P3 域内建构桥接与 P5 实践/现象学表达（可操作代理为 P4），不新增或单边改写 `Core_Law/` / `Core/` canonical 原始定义；文末 `FB-C5-1..4` 为 `C`（M-origin 候选），排入 `R4-C5-B` 跨域综合与作者裁决。**`§18 CΨ`（`RQ-2026-08-A05`）保持独立作者门开放。**
+> **Claim-level & 权限边界（`R4-C5-C/D` 同步，2026-11-27）**：本文主要为 P3 域内建构桥接与 P5 实践/现象学表达（可操作代理为 P4），不替代 `Core_Law/` / `Core/` canonical 原始定义；原 `FB-C5-1..4` 已按 2026-11-27 作者 `D1–D6` 裁决实写回流核心 owner，**`§18 CΨ`（`RQ-2026-08-A05`）概念冲突已按作者选项 1 关闭，同时保留五项独立机制与技术缺口为 `OPEN`**。
 
 ---
 
@@ -844,7 +844,7 @@ Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确�
 
 ---
 
-## 5. 方向 6：摩擦、苦难与生成性（`§18 CΨ` 保持独立作者门开放）
+## 5. 方向 6：摩擦、苦难与生成性（`§18 CΨ` 选项 1 语义分流已收口，五项技术/机制缺口保持 OPEN）
 
 ### 5.1 保留 `R3-08` 摩擦四分 + 多余防御性摩擦作为跨维度形成/放大机制
 承接 `R3-08` 与 `R4-C4` 的跨层清理，本域严格保留**四类不可混写的摩擦与负担职责**：
@@ -863,10 +863,9 @@ Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确�
 
 **诚实边界（不把研究种子冒充为已证定理）**：分布式可支付性目前是极具价值的**实践诊断追问与非 canonical 研究种子**，尚存在四项未决技术缺口——**① `Ψ_f` 的跨位置可分解性、② 子位置独立阈值的反事实基线、③ 受益位置 `T_dir` 退化下的 `D-3` 检测难题、④ 局部压缩与整体稳定之间“支撑/转嫁”关系的因果归属形式化**。在缺口解决前，不将其宣称为已经证明的数学判据。
 
-### 5.3 `§18 CΨ`（`RQ-2026-08-A05`）独立作者门边界
-- Core 侧保留 `Ψ_f → 0` 作为退化/无赌注极限的既有表述；
-- 灵性实践侧区分“松解多余防御放大机制”与“消除构成性可支付负担”，且**绝不预设灵性转化必然单调降低总 `Ψ_f`**；
-- **两者在核心层如何统一收口（包括是否关闭概念冲突而保留上述四项技术缺口开放），属于 `Core/SRT_OPEN_TENSIONS.md §18` 独立作者裁决门。本文件在 `C5-A` 阶段严格保持 `§18 CΨ` 为 `OPEN`，等待 `C5-B` 作者正式裁决。**
+### 5.3 `§18 CΨ`（`RQ-2026-08-A05`）作者选项 1 裁决边界（2026-11-27 `R4-C5-C/D` 同步）
+- **概念冲突已通过语义分流关闭**：Core 侧保留绝对 `Ψ_f → 0` 作为退化/无赌注极限（不宣称已证明其绝对普适性，亦不封闭未来修正空间）；灵性实践侧指向松解多余防御性摩擦（跨维度形成/放大机制）并创造新能力、新关系、新方向与新生成条件，**绝不预设总 `Ψ_f` 必然单调下降**（详见 `Core/SRT_OPEN_TENSIONS.md §18` 与 `_SRT_PSI_F_CANONICAL.md §5`）；
+- **五项独立机制与技术缺口保持 `OPEN`**：① 多余防御性摩擦的形成与放大机制；② `Ψ_f` 的跨位置可分解性；③ 子位置独立阈值的反事实基线；④ `D-3` 检测难题；⑤ 支撑与代价转嫁的因果归属形式化。语义裁决不等于数学证明。
 
 ---
 
@@ -910,14 +909,14 @@ Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确�
 
 ---
 
-## 7. 反向核心理论反馈接口（`FB-C5-1..4`，`C` / M-origin 候选，排入 `R4-C5-B`）
+## 7. 反向核心理论反馈接口（`FB-C5-1..4` — 已按 2026-11-27 `D1–D6` 裁决实写回流核心 owner）
 
-| 编号 | 拟回流的核心理论增补/修订候选 | 目标核心 owner | 开放门与边界 |
+| 编号 | 已回流的核心理论增补/修订内容 | 已实写的核心 owner | 开放门与边界 |
 |---|---|---|---|
-| **`FB-C5-1`** | **神性双职责（源义 `T3-04 D` + 倾向义 `R3-02 / T3-01 C/E`）与维持—生成统一倾向（“从存在到秩序”）**：与 `R4-C2` 局部趋优 vs 整体生成主线汇合，区分具名局部极值 / 跨尺度非道德客观统一趋优（OPEN）/ 宇宙道德最优（不成立），不借 `C-A` 封闭 `T3-01 C/E` | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §2`、`Core/SRT_OPEN_TENSIONS.md §17` | 守 `R3-02-O4`、`T3-01 C/E` `OPEN` |
-| **`FB-C5-2`** | **生成性退隐作为存在方式、作用接口、关系位置与生成职责转换（四结构问 + 四层切分）**：连同 `R3-02` 共同协议、内生比对尺度与自发前背景分化，深化 `One` 与集体组织中相对独立性如何被生成，并保留**锁定/寄生性共依存**反例 | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Collective_Selection.md`、`Core_Law/SRT_Occlusion_Dynamics.md` | 守 `O2-M = HOLD` 与 `One` 本体论中立性 |
-| **`FB-C5-3`** | **摩擦四分 + 多余防御性摩擦（跨维度形成/放大机制）+ 分布式可支付性反伪装追问**：为 `§18 CΨ` 提供语义分流坐标，并显式保留 `Ψ_f` 可分解性、反事实基线、`D-3` 检测与支撑/转嫁因果归属四项技术缺口 | `_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | **`§18 CΨ` 保持独立作者门 `OPEN`** |
-| **`FB-C5-4`** | **有限主体参与方式重构（`F_3223` 正面候选 + 四维关切/参与/比对/生成能力非阶梯重构）**：把“无为/去执/回返”改写为改变选择组织方式、创造新能力/新关系与重塑自身生成条件 | `Core/SRT_Core_13a_Operator_Basics.md`、`Core/SRT_Core_12b_Ontology_L2.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md` | 不关闭 `HP-B`，不重建新的线性阶梯 |
+| **`FB-C5-1`** | **神性双职责（源义 `T3-04 D` + 倾向义 `R3-02 / T3-01 C/E`）与维持—生成统一倾向（“从存在到秩序”）**（`D6`） | `Core_Law/SRT_Generative_Ontology_Spine.md §1, §1.2`、`Core/SRT_OPEN_TENSIONS.md §17` | 守 `R3-02-O4`、`T3-01 C/E` `OPEN`；不借 `C-A` 封闭非道德全局趋优 |
+| **`FB-C5-2`** | **生成性退隐作为存在方式、作用接口、关系位置与生成职责转换（四结构问 + 四层切分）**并汇入 `R3-02` 共同协议与跨尺度相对独立性生成（`D2`） | `Core_Law/SRT_One_Formation.md §2.1a–2.1b`、`Core_Law/SRT_Collective_Selection.md §3.4`、`Core_Law/SRT_Occlusion_Dynamics.md §0.4` | 守 `O2-M = HOLD` 与 `One` 本体论中立性 |
+| **`FB-C5-3`** | **摩擦四分 + 多余防御性摩擦（跨维度形成/放大机制）+ 分布式可支付性反伪装追问**（`D1` 选项 1） | `_SRT_PSI_F_CANONICAL.md §0.2, §5`、`Core_Law/SRT_Suffering.md`、`Core/SRT_OPEN_TENSIONS.md §18` | **`§18 CΨ` 概念冲突已关闭；五项机制与技术缺口保持 `OPEN`** |
+| **`FB-C5-4`** | **有限主体参与方式重构（`F_3223` 正面候选 + 四维关切/参与/比对/生成能力非阶梯重构）**（`D3 / D4`） | `Core/SRT_Core_13a_Operator_Basics.md §0.1`、`Core/SRT_Core_12b_Ontology_L2.md §0.3a`、`Core_Law/SRT_Selection_Argument.md §8.4` | 不关闭 `HP-B`，不重建新的线性阶梯 |
 
 ---
 
@@ -926,7 +925,7 @@ Spirituality 在 SRT 中面对的不是“哪种宗教或冥想流派更正确�
 1. **灵性在 SRT 中是有限主体如何理解并重构自身参与共同生成的方式——既不退化为心理调节，也不膨胀为人格神论或目的论。**
 2. **完整保留神性·源义（`T3-04 D`：原初 `Selection` 是最基础抽取而非穷尽定义；规约性地平线不穷尽本体论研究价值）与神性·倾向义（“从存在到秩序”及跨尺度非道德趋优的开放空间）。**
 3. **生成性退隐是存在方式、作用接口、关系位置与生成职责的转换，必须回答四项结构问题并严守四层切分（警惕锁定与寄生性共依存）及三组非同一性。**
-4. **保留 `R3-08` 摩擦四分并把多余防御性摩擦刻画为跨维度形成/放大机制；成熟实践既松解僵化防御也创造新能力、新关系与新方向，分布式可支付性反伪装追问保留四项技术缺口，`§18 CΨ` 保持独立作者门开放。**
+4. **保留 `R3-08` 摩擦四分并把多余防御性摩擦刻画为跨维度形成/放大机制；成熟实践既松解僵化防御也创造新能力、新关系与新方向，`§18 CΨ` 概念冲突已按 2026-11-27 作者选项 1 关闭，五项独立机制与技术缺口保持开放。**
 5. **退出“灵性成熟 = 单轴 `d` 增长”的旧压缩，转向关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力的非阶梯重构，并通过 `Sangha` 与人机三型中介辨析在真实后果回流中重启共同生成。**
 
 ---

@@ -98,7 +98,7 @@ $$ \text{Liberation}^{bridge} \sim \text{Reconfiguration of Concern Structure, P
 **Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to widen payable care (`d` proxy) and loosen excess defensive friction (`\Psi_f^{defensive-proxy}`; note: historical `Φ` is retired here as a friction symbol so it does not collide with canonical symbols).
 $$ \text{Practice}^{praxis\text{-}proxy} \leadsto \nabla_\theta d^{proxy} > 0 $$
 $$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning} $$
-* **Implication**: 修持可被建模为有操作指标的参数/方向与参与方式调整候选，而不是纯心理暗示；但它既不是保证增加 `d` 的普遍定律，也不等于将总 `Ψ_f` 归零（`§18 CΨ` 保持独立作者门 OPEN，且须通过分布式可支付性反伪装检验）。
+* **Implication**: 修持可被建模为有操作指标的参数/方向与参与方式调整候选，而不是纯心理暗示；但它既不是保证增加 `d` 的普遍定律，也不等于将总 `Ψ_f` 归零（`§18 CΨ` 概念冲突已按 2026-11-27 选项 1 关闭，五项机制/技术缺口保持 OPEN，且须接受分布式可支付性反伪装追问）。
 
 > **Level**: governance / praxis guardrail. Practice is not linear "more practice is always better." It should be read as an expansion-stabilization rhythm under payable cost. Stop, reduce, or re-scope practice when it increases collapse, narrows care, replaces ordinary responsibility with practice identity, or absorbs agency into the practice system itself.
 
@@ -118,7 +118,7 @@ $$ \text{Ego}_{experienced} \sim (\theta \in \Theta_{finite}) \land (\partial \O
 * **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才在现象学层面对应具体验感意义上的“我”（此为 P3/P5 映射，不构成 `iff` 式 canonical 充要定理）。
 
 ### T-Spirit-2: Defensive-Friction & Soteriology Hypothesis
-**Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4 (under `R3-08` 5-layer friction separation; `§18 CΨ` remains OPEN).
+**Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4 (under `R3-08` 4-way friction + excess defensive friction mechanism; `§18 CΨ` conceptual conflict resolved via Option 1, 5 gaps OPEN).
 $$ \frac{d\Psi_f^{defensive\text{-}proxy}}{dt} < 0 \leadsto \frac{d d^{proxy}}{dt} > 0 \leadsto \text{Suffering}^{reported/proxy} \downarrow $$
 This is a conditional praxis hypothesis targeting excess defensive friction under distributional payability checks, not a universal law driving total `Ψ_f → 0`.
 * **Implication**: 解脱不是压制痛苦或外包代价，而是松解僵化 `L_2` 的多余防御摩擦并重构主体参与生成的方式。
@@ -521,7 +521,7 @@ _SRT_Spirit_Axioms (本文件)
 - **神性双职责映射（`Spine §1 / R3-02`）**：完整保留**神性·源义**（`T3-04 D`：原初 `Selection` 是对真实生成根源最基础的抽取而非穷尽定义；规约性本源地平线/反偶像护栏只是有限实践职责，不定义额外算子、`Ω` 或宇宙道德最优）与**神性·倾向义**（“从存在到秩序”与跨尺度非道德趋优开放研究空间）。
 - **病态收缩与防御放大（`H-Spirit-3`）**：正式退出旧式 `Suffering^{proxy} ~ 1/d^{proxy}` 与 `Ψ_f ↑ ~ d ↓` 强制反比关系；按 `R3-08` 保留摩擦四分，并将多余防御性摩擦刻画为可同时放大多个摩擦/负担维度的机制。
 - **关系与参与重构（`H-Spirit-4`）**：正式退出旧式 `Nirvana ≡ lim_{d→∞} \hat{G}_\theta(L_0)` 与自他边界必归零断言；解脱在有限主体侧刻画为关切结构（`R3-06` 四维）、参与方式、比对能力与生成能力的非阶梯重构。
-- **实践重构（`H-Spirit-5`）**：$d\theta/dt = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning}$ 仅刻画松解多余防御性摩擦的局部代理侧面；成熟实践同样指向创造新能力、新关系、新方向与新生成条件（`§18 CΨ` 保持 OPEN）。
+- **实践重构（`H-Spirit-5`）**：$d\theta/dt = -\alpha \nabla_\theta \Psi_f^{defensive\text{-}proxy} + \text{Learning}$ 仅刻画松解多余防御性摩擦的局部代理侧面；成熟实践同样指向创造新能力、新关系、新方向与新生成条件（`§18 CΨ` 选项 1 已关概念冲突、五项缺口 OPEN）。
 - **信之松弛（`H-Spirit-6`）**：$d\beta/dt < 0$，信仰是僵化 $L_2$ 约束的受控放松以重开未封闭生成通道。
 
 ### Mechanism Reading Under This Mapping (此映射下的机制读法)

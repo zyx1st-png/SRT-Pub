@@ -565,7 +565,7 @@ F_{avail}(t) < \int_{t_0}^{t} \Psi_f\big(\hat G_\theta(\tau)\big)\,d\tau
 \[
 \text{Imaging hotspot} \neq \text{generator location of consciousness}
 \]
-SRT 立场：意识是跨域选择事件（\(L_0\to L_1\)），脑区为参数与瓶颈节点，而非单点发生源。
+SRT 立场（`R4-C4 / R4-C5-D` 校准）：意识相关活动在神经层涉及跨尺度选择组织与前景生成中介，脑区为参数与瓶颈节点而非单点“分泌源”；`L_0 / L_1 / L_2` 为同一选择现实的三重分析视角，不以旧式 `L_0 → L_1` 管道定义意识（`HP-B` 保持 FROZEN / OPEN）。
 
 ### 分类对照表（Consciousness States in pDOC Context → SRT，`P1-03 / P2-03` 同步）
 

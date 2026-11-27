@@ -448,7 +448,7 @@ How does a finite subject understand its relation to the unified generative matr
 
 ### Boundary
 
-Spirituality files provide constructive domain bridges and existential / praxis interpretation. They do not unilaterally redefine `Ψ_f`, `d`, `T_dir`, or canonical core owners; `§18 CΨ` (`RQ-2026-08-A05`) remains an OPEN independent author gate, and `FB-C5-1..4` remain `C` (M-origin candidates) pending `R4-C5-B` author adjudication.
+Spirituality files provide constructive domain bridges and existential / praxis interpretation. Their `FB-C5-1..4` core feedback has been integrated into canonical owners under the 2026-11-27 `D1–D6` author adjudication (`R4-C5-C/D`), and `§18 CΨ` (`RQ-2026-08-A05`) conceptual conflict is resolved via Author Option 1 while five independent mechanistic & technical gaps remain OPEN (`Core/SRT_OPEN_TENSIONS.md §18`).
 
 ---
 

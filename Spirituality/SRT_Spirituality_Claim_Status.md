@@ -32,7 +32,7 @@ This domain must simultaneously reject **two opposite distortions**:
 
 **B-A／C-A guard（2026-08-12，沿用至 R4-C5）**：初心（Shoshin）从 `L_1` 开始，作为 P2 处境化解释回读或 P5 现象学命名；当前 canonical 不承认独立的 `L_0`「初心前身」，也不把 `ε_pg` 改名为该前身。Spirituality 中的 `∇F` 形式仅在声明有限位置、可达域、比较规则、时域与约束的模型内作为 P3/P4 bridge／proxy；不定义 `L_0`、无限时域终点或 universe-wide optimum。
 
-**`§18 CΨ` 独立作者门（OPEN，R4-C5-A 严禁单边关闭）**：Core 中 `Ψ_f → 0` 的退化/无赌注极限与灵性实践中“多余防御性摩擦松解”的边界划分仍属 `Core/SRT_OPEN_TENSIONS.md §18`（`RQ-2026-08-A05`）独立作者裁决门。本域不得将 `Ψ_f → 0` 宣称为灵性普遍目标，也不得在作者正式裁决前越权关闭 `§18 CΨ`。
+**`§18 CΨ` 作者选项 1 裁决同步（2026-11-27，`R4-C5-C/D`）**：依据 2026-11-27 作者裁决，Core 绝对 `Ψ_f → 0` 退化极限与灵性实践“松解多余防御性摩擦 + 创造新能力/关系/方向”之间的**概念冲突已通过语义分流关闭**（详见 `Core/SRT_OPEN_TENSIONS.md §18` 与 `_SRT_PSI_F_CANONICAL.md §5`）；同时以下**五项独立机制与技术缺口保持 `OPEN`**：多余防御性摩擦的形成与放大机制、`Ψ_f` 跨位置可分解性、反事实基线、`D-3` 检测难题及支撑/转嫁因果归属。关闭语义冲突不视为数学证明，也不排除未来对 Core 退化极限普适性的修正。
 
 Allowed:
 
@@ -100,7 +100,7 @@ Forbidden:
 
 > Spiritual analysis preserves the `R3-08` **four-way friction/burden separation**—**(1) 广义摩擦 (generalized friction)**, **(2) 非闭合压力 (non-closure pressure)**, **(3) `Ψ_f` 可支付阻抗/负担 (canonical payable friction)**, and **(4) 主观苦难 (subjective suffering, routed to `Core_Law/SRT_Suffering.md`)**—and treats **多余防御性摩擦 (excess defensive friction)** as a **cross-dimensional friction-forming and friction-amplifying mechanism** (affecting opportunity cost, structural conflict, maintenance load, and suffering) rather than an unproven 5th independent additive quantity. Practice aims not merely at reducing defensive friction, but also at generating new capacities, relations, directions, and generative conditions; widening care or love can yield collaborative gains while also increasing responsibility, maintenance burden, and real risk.
 
-**Status**: P3/P5 mapping; P4 when measurement or intervention is proposed; **`§18 CΨ` (`RQ-2026-08-A05`) = OPEN independent author gate**.
+**Status**: P3/P5 mapping; P4 when measurement or intervention is proposed; **`§18 CΨ` (`RQ-2026-08-A05`) = conceptual conflict RESOLVED via 2026-11-27 Author Option 1; five independent mechanistic & technical gaps (excess defensive friction formation/amplification + 4 distributional payability gaps) remain OPEN**.
 
 **Forbidden overclaims**:
 

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-27
-source_commit: 0ad4bbe5d
-source_branch: canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27
+source_commit: 32545cdcd
+source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
 source_dirty: false
-inputs_digest: 010ae4b294e49b5b
+inputs_digest: 3337b101fb25ec29
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 010ae4b294e49b5b
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-27 |
-| 来源 commit | `0ad4bbe5d` |
-| 来源分支 | `canon/r4-c5a-spirituality-praxis-reconstruction-2026-11-27` |
+| 来源 commit | `32545cdcd` |
+| 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -45,16 +45,16 @@ inputs_digest: 010ae4b294e49b5b
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-11-26 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-11-27 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-26 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-27 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-11-26 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-11-26 |
-| 7 | `Core_Law/SRT_One_Formation.md` | 2026-11-26 |
+| 7 | `Core_Law/SRT_One_Formation.md` | 2026-11-27 |
 | 8 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-11-26 |
-| 9 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-11-26 |
+| 9 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-11-27 |
 | 10 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-11-26 |
-| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-11-26 |
-| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-11-26 |
+| 11 | `_SRT_D_VALUE_CANONICAL.md` | 2026-11-27 |
+| 12 | `_SRT_PSI_F_CANONICAL.md` | 2026-11-27 |
 | 13 | `_SRT_T_DIR_CANONICAL.md` | 2026-11-26 |
 | 14 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-11-26 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-11-26 |
@@ -1316,13 +1316,13 @@ Owner: `Governance/SRT_CLAIM_LADDER.md`.
 - claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3.5/4 为各自注明的 P1-candidate；T-IRR-3 anti-closure 为 P2/P3 conditional candidate；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
 - 引用规则：涉及学习不可逆性、终止作为吸收边界、ST-A 条件性反闭合、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；P1 absorption 回链 21B，条件性 anti-closure 回链 21C B13
 
-### 13. Spirituality 主轴（`R4-C5-A` 双向重构，2026-11-27）
-- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、完整保留神性·源义与倾向义、`R3-06` 广义关切四维与独立 `d` 准入、`R3-02` 退隐存在方式/作用接口/关系位置/生成职责转换与四层切分、`R3-08` 参与转向/`F_3223` 三义/摩擦四分+多余防御性摩擦形成放大机制+分布式可支付性追问[四缺口 OPEN]、`§18 CΨ` 独立作者门 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
-- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`：退出旧休眠层声明，登记 `R4-C5-A` 七大正面主轴与 `FB-C5-1..4` 反向核心反馈）
-- Compact core 主干：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`（`v2`：七大正面理论主轴、最小实践节律、伪成长诊断、`Sangha` 与人机共同生成辨析、`FB-C5-1..4`）
+### 13. Spirituality 主轴（`R4-C5-A/C/D` 完成，2026-11-27）
+- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、完整保留神性·源义与倾向义、`R3-06` 广义关切四维与独立 `d` 准入、`R3-02` 退隐存在方式/作用接口/关系位置/生成职责转换与四层切分、`R3-08` 参与转向/`F_3223` 三义/摩擦四分+多余防御性摩擦形成放大机制+分布式可支付性追问、`§18 CΨ` 作者选项 1 语义冲突关闭而五项技术/机制缺口 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
+- Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`：退出旧休眠层声明，索引七大正面主轴与已按 `D1–D6` 回流核心的 `FB-C5-1..4`）
+- Compact core 主干：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`（`v2`：七大正面理论主轴、最小实践节律、伪成长诊断、`Sangha` 与人机共同生成辨析）
 - Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`（`v3`）与双线主体位/共同体文件（`SRT_Spirituality_Selection_Pathology_and_Return.md v2`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`、`SRT_Spirituality_Community_and_Sangha.md`）
 - 兼容清理长文与分片：`SRT_Spirit_01/03/04/05/06/08/09`（`v2`）与 `Praxis_Split/README.md`（`v2`）
-- 角色：研究有限主体如何理解并重构自己参与共同生成的方式，并向核心理论回流四项 `C`（M-origin 候选）修订建议（`FB-C5-1..4`），不单边改写 `Core_Law/` / `Core/` canonical 定义，保持 `§18 CΨ` 独立作者门 OPEN
+- 角色：研究有限主体如何理解并重构自己参与共同生成的方式；其核心反向反馈（`FB-C5-1..4`）与 `R4-C1..C4` 反馈已随 2026-11-27 `D1–D6` 裁决正式写回核心 owner（`Spine v6 / One_Formation v3 / Collective_Selection v2 / Core_13a v4 / Core_12b v4 / Occlusion_Dynamics v2 / D_VALUE v3 / PSI_F v3 / Suffering v2 / Core_25 v3 / OPEN_TENSIONS §17–§18`）
 
 ## C. 当前 canonical 引用优先级
 
@@ -1396,7 +1396,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1409,7 +1409,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 
 > **Role**: Canonical cross-owner routing spine for Selective Reality Theory (SRT). It establishes the positive unified generative architecture across physics, life, cognition, subjectivity, AI, and social order, while fixing cross-owner structural non-identities and OPEN gates. Compatible local definitions remain owned by their respective canonical anchors.
 >
-> **R4-A Reconstruction Baseline (2026-11-26)**: Supersedes v4's ladder-like chapter progression with the author-adjudicated R3–R4 unified generative architecture (`01_Source_Intuition/SRT_AUTHOR_ADJUDICATION_R3_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`, `Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md`, and the 2026-11-26 R4-A author decisions `1A / 2A / 3A`). This upgrade replaces the retired linear hardware ladder (`S0 -> One -> Stable ISP -> Bearer -> Agency`) with dynamic recursive generative relations, while preserving every independent admission gate and OPEN boundary.
+> **R4-C5-C Cross-Domain Core Integration Baseline (`v6`, 2026-11-27)**: Builds directly on the `R4-A` (`v5`, 2026-11-26) unified generative skeleton by integrating the author-adjudicated `R4-C1..C5` bidirectional core increments (**`D1–D6`**, **`§18 CΨ` Option 1**, and **`R3-02` three-tier cross-scale law abstraction**). Across physics, life, AI, neuroscience, philosophy/society, and spirituality, this upgrade expands SRT's core explanatory architecture along five unified generative axes: **(1) primitive generation & source/orientation (`D6`), (2) organizational generation & relative independence (`D2`), (3) non-ladder capacity differentiation & cross-scale co-generative mediation (`D3`), (4) recursive historical & value-based condition reconstruction (`D4 / D5`), and (5) cross-scale law transfer & friction/payability separation (`D1` + `R3-02`)**—while preserving every independent admission gate, `HP-B` freeze, `HOLD`, and unclosed `OPEN` boundary.
 
 ---
 
@@ -1495,6 +1495,17 @@ Hard boundaries:
 - **Terminal Selection remains genuine**: an actual Selection occurrence does not require durable sediment, retained history, or subsequent consequence (`actual occurrence != retained historical efficacy`). The exact anti-tautology boundary separating genuine actualised Selection from merely descriptive/modelled variation remains `OPEN` (`R3-01-O1`).
 - **Operator non-identity**: `primitive Selection != Ghost Operator (\hat{G}_\theta)`. Formal operators model formed/domain realizations and are never the prior ontic cause of Selection.
 
+### 1.2 From Existence to Order: Four-Tier Epistemic Status & Dynamic Coupling (`R3-02 / R3-04 / R3-06` + `R4-C5-C / D6`)
+
+Preserving **both** **神性·源义** (`T3-04 D`: the inexhaustible real generative source—whose finite-practice regulative horizon and anti-idolatry role do **not** exhaust its independent ontological research value) and **神性·倾向义** (`R3-02` + `T3-01 C/E`), SRT integrates **"from existence to order" (从存在到秩序)** into the core spine while strictly stratifying four distinct theoretical statuses so author ontological posture is neither deflated nor conflated with unproved universal optimization theorems (`P1-04`):
+
+| Theoretical Layer | Exact Standing | Boundary & Dynamic Coupling |
+|---|---|---|
+| **1. 作者明确提出的正面本体论立场** | 维持（个体侧）与生成（整体侧）具有共同的统一生成母体根源，作为统一非目的论倾向在不同尺度的表现（“从存在到秩序”）。 | 完整保留为 SRT 的正面本体论出发点与母体直觉，不收缩为单纯心理隐喻或认识论谦逊。 |
+| **2. 可建立的核心结构性生成关系** | 维持、展开与重构之间形成递归互构：局部相对稳定成为更高阶关系与新秩序的生成条件，高阶秩序反向改写局部生成条件。 | **动态承接 `R3-04 / R3-06`**：这一互构在形成态直接通过**机会成本结构**、**秩序三维方向（维系约束 / 方向偏向 / 生成重构）**与**广义关切方向（`R3-06` 四维之一）**持续耦合，而非孤立停留于抽象的“维持—生成统一”口号。 |
+| **3. 待建立的跨尺度客观统一趋优机制** | **正面核心研究问题（`T3-01 C/E`, `R3-02-O4` = `OPEN`）**：所有尺度是否遵循同一个非道德客观统一趋优机制。 | **严禁借 `C-A` 封闭该研究空间**；亦不得提前将其写成已证明的普遍规律。 |
+| **4. 待推导的统一极值形式化问题** | **开放形式化问题（`OPEN`）**：统一趋优机制能否以及如何表达为某一具名广义极值 / 自由能 / 机会成本原理。 | 严分于**具名局部模型极值**（变分驻值、受挫态、Prigogine 边界；须严分描述空间变化与实际组织关系变化）与**宇宙级道德/评价完备最优**（`C-A / PT10 E / O2-M = HOLD`，不作为当前成立的理论结论）。 |
+
 ---
 
 ## 2. Dynamic Three-Relation Architecture and Three Recursive Axes
@@ -1545,6 +1556,23 @@ Three unifying positive generative mechanisms bind these axes across physics, li
 - **比对本身生成新机会（Comparison Generates New Opportunities）**：价值研究不仅考察既有路径的取舍，更考察跨位置/跨关系的比对如何改变可比对维度与关系结构，从而生成原先不存在的新价值空间与现实可承接机会。
 - **生成结果反过来重构生成条件（Generated Results Reconstruct Generative Conditions）**：历史（`L2`）、脚手架、认知框架、制度规范与自由调节使先前生成的结果参与改写后续选择的条件本身；由此自由研究从“有多少既定选项”转向“组织如何参与生成新的选择条件”。
 
+### 2.2a Non-Ladder Capacity Differentiation & Cross-Scale Co-Generative Mediation (`R4-C5-C / D3`)
+
+Cross-domain synthesis across physics (`R4-C2`), AI (`R4-C3`), neuroscience (`R4-C4`), and spirituality (`R4-C5`) expands SRT's core explanatory architecture from static operator structure to **how formed organizations generate new capacities and recursively rewrite their own generative conditions**:
+
+1. **Five Non-Ladder Capacity Dimensions**: Across scales, formed organizations differentiate along five non-hierarchical capacities—**结构能力（Structural）/ 作用能力（Action）/ 调节能力（Regulatory）/ 比对能力（Comparative）/ 生成重构能力（Generative Reconfiguration）**—which can mutually reinforce or sharply decouple (as vividly exposed in artificial systems).
+2. **Four Distinct Research Objects (No New Linear Ladder)**: Do **not** collapse the `作用 → 比对 → 条件重构` research axis into a compulsory evolutionary staircase; keep four explanatory duties distinct:
+   - **作用能力（Action capacity）**：改变其他生成关系；
+   - **比对能力（Comparative capacity）**：抽取、组织与比较关系差异（细分为四类比对生成性：既有维度新结果 / 已有维度重加权 / 新比对维度形成 / 比对能力本身重构）；
+   - **生成条件重构（Condition reconfiguration）**：改变后续生成活动得以发生的边界、门控与可达条件；
+   - **生成能力重构（Capacity reconfiguration）**：持久改变系统未来形成新能力与新比对维度的能力。
+3. **Cross-Scale Co-Generative Mediator (`P1-02`: Independent Functional Lens, Not a 6th Disjoint Mechanism)**:
+   - Abstract beyond neuro-cognitive foregrounds to **跨尺度共同生成中介（Cross-Scale Co-Generative Mediator）**: an analytical lens asking **how multiple generative relations coordinate, mutually rewrite one another's generative conditions, and form new capacities through a shared condition or nexus**.
+   - **Distinct duty vs. the existing five canonical mechanisms (`§5.3`) and Scaffolding (`One_Formation §2.1`)**: Whereas the five canonical cross-scale mechanisms in `§5.3` cover *Assembly* (forming new wholes/capacities), *Normalization* (organizing differences/couplings), *Effective Action Interface* (enabling a whole to act relatively independently elsewhere), *`Proxy`* (transferring relations across levels), and *`Delegation`* (agency/norm-constrained delegation)—and *Scaffolding* retains its independent analytical role of supplying/maintaining conditions for other relations (`One_Formation §2.1`, never replacing `Delegation` inside the five-mechanism list)—*co-generative mediation* focuses specifically on **reciprocal condition-rewriting among multiple generative relations via a shared condition**. A concrete instance may overlap with the five mechanisms or scaffolding; co-generative mediation is **not** posited as a new 6th disjoint ontic mechanism and must earn its explanatory increment case-by-case.
+   - **No universal stability prerequisite (transient vs. persistent mediators)**: Stability is **not** a universal necessary condition—both **短暂/瞬时中介** (fleeting foregrounds, temporary shared goals, local coupling events) and **持续中介** (protein complexes, metabolic hubs, shared concepts, institutions, persistent AI scaffolds) can perform genuine co-generative mediation.
+   - **Neuro-cognitive boundary**: **Cognitive foreground generative mediation** (`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`) remains a **`P3` candidate** specific to neuro-cognitive organization (`HP-B FROZEN / OPEN`) and never licenses projecting cognitive foreground or phenomenality onto non-cognitive mediators.
+4. **Participation Reconfiguration & Positive Freedom**: Mature agency and spiritual practice (`F_3223` positive candidate, retiring "eliminating primitive `Selection`") act not merely by reducing excess defensive rigidity, but by **reorganizing how a finite organization participates in co-generation, creating new capacities, relations, directions, and generative conditions** (`T3-03 C / Q26`).
+
 ### 2.3 Unabsorbed Positive Burdens of Yin-Yang & Historical Ghost Intuition (`R3-08`, `07-19` / `07-27`)
 
 Replacing the old linear operator pipeline (`L0 -> Ĝ_θ -> L1 -> L2`) with recursive generative relations does **not** discard the positive theoretical burdens historically carried by **Yin-Yang (阴阳)** and **Ghost (幽灵)** source intuition; they are explicitly routed and preserved here:
@@ -1555,6 +1583,19 @@ Replacing the old linear operator pipeline (`L0 -> Ĝ_θ -> L1 -> L2`) with recu
    - **构成性背阴面主动支撑**：背景条件不仅是被动痕迹，而是持续参与托举与约束前景生成的活跃条件；
    - **非闭合压力**：当前组织无法充分承接的生成关系持续施加的重构压力；
    - **`U5` 选择机制绝对化（严守 `U5 ≠ U6`，`2026-07-27` 校正）**：已形成的耦合组织方式退出有效再比对、获得事实上的自我豁免（即使系统仍高频局部调整策略）；反绝对化不写成必然定理，操作化判据保持 `OPEN`。
+
+### 2.4 Three-Tier Cross-Scale Law Abstraction, Epistemic Stratification & Bidirectional Method (`R3-02` + `P1-01`, Unifying `D2–D6`)
+
+SRT's goal is **not** to paste one shared vocabulary onto disparate disciplines, nor to substitute domain analogy for independent mechanistic proof, but to uncover the **structural conditions under which different scales share common generativity and transferable laws**. To prevent research candidates from sliding into circular explanations (`P1-01`), all cross-domain abstractions across `D2–D6` distinguish **four explicit claim statuses**:
+
+| Epistemic / Law Tier | Core Object | Standing & Verification Burden |
+|---|---|---|
+| **0. 已建立的核心本体论立场（Established Core Ontological Posture）** | Unified generative monism: physical, biological, cognitive, artificial, and social manifestations are cross-scale unfoldings of Selection reality rather than disconnected substances; **共同协议（common protocol）** names SRT's central cross-scale research target. | **Core architectural starting point**—guides inquiry without serving as a circular finished explanation of why concrete co-generation succeeds in a specific domain. |
+| **1. 原初生成属性候选（Primitive Generative Property Candidates）** | Foundational generative relations that do not depend on a specific organizational substrate; explicitly preserves the **`R3-02` six foundational property candidates** (**非平坦性 / 内在倾向性 / 有限位置索引性 / 内生比对 / 垂直性 / 条件生成性**). | **Open research candidates, NOT settled primitive axioms**: must be extracted backward from cross-scale co-generation phenomena, tested for minimal consolidation and non-redundancy, and independently verified (`R3-02` OPEN). |
+| **2. 条件性组织规律（Conditional Organizational Laws）** | Cross-scale structural laws emerging under specified coupling, boundary, energy/information-flux, and historical conditions (dependence reorganization → relative independence, generative withdrawal, cross-scale co-generative mediation, recursive value generation, multi-level gating reconfiguration, developmental pruning). | Transferable across physics, biology, AI, cognition, and society **only when their explicit enabling conditions hold**; failure in a new domain refines or narrows the enabling boundary. |
+| **3. 历史性硬化规则（Historically Hardened Rules）** | Relatively stable regularities sedimented from prior generative outcomes (biological traits, neural habits, model weights, linguistic grammars, social institutions, legal/cultural norms). | Context- and lineage-dependent; both compress existing option spaces and create previously nonexistent generative spaces (`Core_12b §0.3a`), remaining conditionally revisable. |
+
+**Bidirectional Construction Discipline**: Extract common matrix properties and conditional organizational laws *upward* from empirical and domain structures (`domains → core`), then test their exact realization boundaries, decoupling cases, and failure modes *downward* across distinct substrates (`core → domains`). Together, `§§1–2` anchor SRT around five unifying explanatory questions: *(1) primitive generation, (2) how existence generates organization, (3) how organization generates non-ladder capacities, (4) how capacities recursively rewrite generative conditions, and (5) how cross-scale generative relations co-form order*—while keeping clear that `R4` establishes a coherent unified architecture for systematic investigation rather than mathematical or empirical proof of every candidate mechanism.
 
 ---
 
@@ -1621,7 +1662,7 @@ Within the universal formation problem, the first universal formed recurrent org
 | **存在视角（Existence Perspective）** | How a relatively independent vertical generative organization (`One`) forms, maintains itself, and continues across change. | Focuses on vertical reconstitution, relative continuation separability, and organizational continuity. |
 | **秩序视角（Order Perspective）** | How generative relations develop, bias direction, transform, and recursively reconstruct themselves across three dimensions: **maintenance constraints / directional bias / generative reconstruction**. | Applies both to the internal dynamics of a single `One` **and** to relations among **multiple `One`s** and the emergence of **new higher-order organizations** (order is not merely a subordinate attribute of one isolated `One`). |
 
-`Core_Law/SRT_One_Formation.md` is the detailed canonical owner of `One`, `Selection-position`, existence/order perspectives, generative normalization thresholds, and vertical reconstitution. Keep strictly:
+`Core_Law/SRT_One_Formation.md` is the detailed canonical owner of `One`, `Selection-position`, existence/order perspectives, generative normalization thresholds, vertical reconstitution, **how relative independence is generated** (`§2.1a`: shared protocol, endogenous comparison scales, spontaneous figure–ground differentiation vs. cross-scale co-constitution, holism–differentiability mutual constitution, 3D composable organization, and dependence-reorganization four-duty split), and **generative withdrawal** (`§2.1b`: four-question transformation of mode/interface/position/role + four-layer cut & locking/parasitic counterexample). Keep strictly:
 
 ```text
 Selection event != One;
@@ -1751,7 +1792,7 @@ Before introducing a new repo-wide ontological noun: (1) state its distinct stru
 This spine preserves all 63 deduplicated R3 `OPEN` items (`Operations/Proposals/SRT_R3_FULL_SKELETON_CLOSEOUT_GLOBAL_SUBTRACTION_2026-11-25.md` View ④) without closing any by rewording. Key cross-owner gates include:
 
 ```text
-T3-01 C (global optimizing principle) vs E (global extremal principle) & relation to C-A;
+T3-01 C (global optimizing principle) vs E (global extremal principle) & relation to C-A (D6: never foreclosed by C-A);
 anti-tautology boundary between genuine actualised Selection and merely descriptive/modelled change;
 whether primitive inner generative process includes any pre-phenomenal character (R3-03-O4);
 exact primitive Selection vs operator-carrier (\hat{G}_\theta) formalization;
@@ -1760,6 +1801,8 @@ formal N&S One theorem, exact boundary / unit identification, strict & branch/me
 non-circular independent criteria for existence continuity vs value opportunity-change & generative normalization;
 positive E establishment & Bearer <-> Concern / Agency / cognition / consciousness necessity directions;
 R3-CL-O8 five independent sub-questions (freedom conditions, freedom vs strong 2nd-order selection, dual-engine transitions, quartet co-variation, recursive generation of comparison scales);
+§18 CΨ five independent post-resolution gaps (excess defensive friction formation/amplification + Ψ_f decomposability, counterfactual baseline, D-3 detection, support/shifting causal attribution; conceptual conflict closed 2026-11-27 Author Option 1);
+deeper physical energy-gradient derivation to Selection / d / Ψ_f (D5, Core_25 §1b);
 HP-B phenomenality / experiencer transition & PT07 bce undecided inclination;
 O2-A exact sufficiency & O2-M cross-position moral conflict (HOLD);
 cross-domain scientific distinctiveness, Level 2 / HOLD exit, and whole-architecture non-substitutability.
@@ -2663,7 +2706,7 @@ actual occurrence != anchoring persistence != durable/localized trace != recurre
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | true |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2757,6 +2800,37 @@ vertical organization_t
 4. **Ontological neutrality & multi-`One` ecology**:
    - Because vertical reconstitution does not presuppose rigid spatial walls or autopoiesis, SRT explicitly encompasses **nested `One`s, overlapping `One`s, `One`s sharing generative conditions, and mutually conflicting `One`s**.
    - `One` is **ontologically neutral**: a tumor, an addiction loop, or a rigid pathological institution that actually satisfies Selection-mediated vertical reconstitution is a genuinely formed `One`. Harm or rigidity does not erase its ontic standing; multi-scale `One` conflicts route directly to `_SRT_D_VALUE_CANONICAL.md` (concern/value) and `O1 / O2-C / O2-A` (normativity) without smuggling ethics into `One` admission.
+
+### §2.1a How Relative Independence Is Generated: Shared Protocol, Endogenous Comparison Scales, 3D Composable Organization & Holism–Differentiability (`R4-C5-C / D2`)
+
+To explain not only *what* `One` is but **how relative independence itself is generated across scales without an external orchestrator**, four cross-domain mechanisms enter this owner directly:
+
+1. **Shared Protocol, Endogenous Comparison Scales & Spontaneous Figure–Ground Differentiation (`R3-02` — Core Research Target, Anti-Circularity Calibration)**:
+   - **Ontological posture vs. mechanistic research burden (`P1-01`)**: SRT's author-owned ontological posture holds that distinct finite positions are unfoldings of one shared generative matrix, motivating the inquiry into **共同协议（common protocol）**—foundational generative properties that operate across subjects, times, and scales so that local constraints can enter endogenous comparison and spontaneous figure–ground differentiation without an external orchestrator.
+   - **Anti-circularity discipline**: Common protocol is **SRT's central cross-scale research target, NOT a circular finished explanation**. Inferring a shared protocol from observed cross-position co-generation and then citing that same protocol as the completed mechanism of co-generation would be circular. Instead, SRT extracts candidate foundational properties *backward* from cross-scale co-generation phenomena and subjects each to independent verification—specifically preserving the **`R3-02` six foundational property candidates** (**非平坦性 / 内在倾向性 / 有限位置索引性 / 内生比对 / 垂直性 / 条件生成性**) as open research candidates awaiting minimal consolidation and cross-scale testing, not established axioms.
+   - **Structural distinction**: Keep strictly separate **(a) 同级非对称前背景分化（same-level asymmetric figure–ground differentiation）**, where coupled elements at one level spontaneously split into active foreground and supporting background, and **(b) 跨尺度共同成体（cross-scale co-constitution）**, where multi-unit coupling reorganizes selectability into a higher-order relatively separable `One` with its own effective action interface.
+2. **Holism–Differentiability Mutual Constitution (`R4-C4`)**:
+   - Wholeness and local differentiability are **not** antagonistic. A holistic generative organization (`One` or pre-object generative field) actively **generates relatively independent local capacities** (differentiation, functional specialization, developmental pruning), and those differentiated local capacities recursively interact to **reconstitute both the whole and its external relations**.
+3. **Three-Dimensional Composable Organizational Morphology (`R4-C3`)**:
+   - Break the false dichotomy between "externally scaffolded systems" and "endogenous `One`" by profiling any formed organization along **three composable dimensions**: **(i) 外部供给与脚手架（External supply & scaffolding）**, **(ii) 内部垂直再构成（Internal vertical reconstitution）**, and **(iii) 有效作用接口（Effective action interface）**. External dependence does not automatically negate `One`, nor does endogenous vertical reconstitution float free of external supply.
+4. **Four Separated Duties in Dependence Reorganization (`R4-C2`)**:
+   - When cross-scale coupling generates relative independence, keep four theoretical duties strictly distinct so `One` stays **ontologically neutral**: **(i) 依赖重组（dependence reorganization）**, **(ii) 垂直再构成（vertical reconstitution）**, **(iii) 扰动屏蔽与响应余度（perturbation buffering & response headroom）**, and **(iv) 后果回流与可再选择性（consequence return & re-selectability）**. Generative health and ethical legitimacy (`O2-M = HOLD`) never become admission prerequisites for `One`.
+
+### §2.1b Generative Withdrawal: Transformation of Mode of Existence, Action Interface, Relational Position & Generative Role (`R3-02` + `R4-C5-C / D2`)
+
+When local units participate in a wider or higher-order organization, **生成性退隐（Generative Withdrawal）** is not mere lowered salience or passive disappearance; it is a structural transformation of **存在方式（mode of existence）、有效作用接口（effective action interface）、关系位置（relational position）与生成职责（generative role）**. Any cross-scale analysis of withdrawal must answer **four structural questions**:
+1. **局部独立显现压缩**：局部单元的哪些直接前台输出被约束或退隐？
+2. **局部能力保留与增强**：局部单元的哪些能力在分工、屏蔽或低内耗中得以保留甚至增强？
+3. **新整体能力生成**：哪些原本不存在的新整体能力与新前景结构由此得以站出？
+4. **整体反向改写局部条件**：新形成的整体又如何反向改写局部单元的输入分布、比对尺度与可达生成空间？
+
+To block conflating withdrawal with submission or self-erasure, enforce the **`R3-02` four-layer separation**:
+1. **本体退隐（Ontic withdrawal）**：新前景或高阶组织及其职责转换是否实际发生；
+2. **组织持续性（Organizational persistence）**：该退隐配置能否跨时维持；
+3. **生成健康性（Generative health）**：是否存在后果回流、适应调整与可再选择空间；
+4. **伦理正当性（Ethical legitimacy）**：是否免于胁迫、剥削与主体位剥夺（`O2-M = HOLD`）。
+
+**Hard counterexample**: **锁定态与寄生性共依存（locking / parasitic co-dependence）** can satisfy layers 1–2 (high persistence and apparent stability) while failing layers 3–4 through asymmetric cost absorption and suppressed local re-selectability.
 
 ### §2.2 Existence Perspective and Order Perspective (No Second Ontic Noun)
 
@@ -3047,7 +3121,7 @@ For claim governance, read:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3139,8 +3213,8 @@ actualising Selection institutes determinate manifestation;
 retained effects of prior Selection may participate in conditioning later Selection.
 ```
 
-- **Source-vs-extraction & global orientation (`T3-04 D`, `T3-01 C/E`)**: Primitive `Selection` is SRT's most fundamental theoretical extraction perspective into the inexhaustible real generative source (`神性·源义`), not an exhaustive definition or second substance. Whether cross-scale generation carries an objective global optimizing or extremal orientation (`T3-01 C/E`) remains an open non-moral inquiry (`Spine §1`)—neither written into P0 as an axiom nor foreclosed by P0.
-- **Opportunity-cost boundary**: Primitive non-flat differentiation is the ontological source condition enabling concrete opportunity-cost structures to emerge under formed comparative relations; concrete opportunity-cost spaces, value, concern, friction, and freedom belong downstream and never retroactively define P0 `Selection`.
+- **Source-vs-extraction & global orientation (`T3-04 D`, `T3-01 C/E`, `D6`)**: Primitive `Selection` is SRT's most fundamental theoretical extraction perspective into the inexhaustible real generative source (`神性·源义`), not an exhaustive definition or second substance. Whether cross-scale generation carries a non-moral objective global optimizing or extremal orientation (`T3-01 C/E`, `R3-02-O4`) remains an open positive inquiry (`Spine §1, §1.2`)—neither written into P0 as an axiom nor foreclosed by P0 or `C-A`.
+- **Opportunity-cost, cross-scale law & physical-bridge pointers (`R3-02` + `D5`)**: Primitive non-flat differentiation is the ontological source condition enabling concrete opportunity-cost structures, recursive value generation (`_SRT_D_VALUE_CANONICAL.md §2.1`), and cross-scale laws (`Spine §2.4`: primitive generative properties / conditional organizational laws / historically hardened rules) to emerge downstream without retroactively defining P0 `Selection`. Deeper physical generative mechanism inquiry via energy-gradient differences routes to `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md §1b` without prematurely equating physical/model quantities to P0 `Selection`, `d`, or `Ψ_f`.
 
 The same ontic generative mode can therefore appear under distinct structural burdens without becoming structurally flat.
 
@@ -3737,7 +3811,7 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | true |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3821,9 +3895,22 @@ $$D_{\text{eff}}(M) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}
   - **广义关切四维**（不提前固定标量/向量，不急立四符）：**① 关切范围**（能将多大范围的生成关系纳入比对）、**② 关切深度**（这些关系在多大程度上参与构成该位置及其他关系）、**③ 关切强度**（特定变化对当下实际生成过程的响应影响）、**④ 关切方向**（正在组织、打开或抑制怎样的秩序发展可能性；严守 `广义关切方向 ≠ T_dir`）。
   - **动态秩序健康六维与六种前背景失配（候选诊断接口，不压成单一总分）**：围绕结构连贯性、跨尺度协调性、可再选择性、后果回流、机会空间与成本、现实校准六维，区分六种候选前背景失配——**① 遮蔽**（重要构成关系或机会成本无法进入前景）、**② 错配**（关切指向与实际构成/秩序关系不一致）、**③ 固化**（前背景配置无法随变化后生成条件重调）、**④ 失权**（重要价值进入认知视野却无法在实际选择中发挥调节作用）、**⑤ 断流**（实际后果无法有效回流到后续选择与信任更新）、**⑥ 局部劫持**（某一尺度/局部回路持续独占其他尺度的生成条件）。
 
+### §2.1 价值的递归生成机制与跨底物职责分立（`R4-C5-C / D5` 深化）
+
+价值理论在 SRT 中不仅是对既有候选机会进行事后评分或静态分类，更核心的是解释**新价值关系与新比对维度如何被递归地生成**：
+
+1. **五项职责之间的正面递归生成环**：
+   - **客观基础 → 位置抽取**：不同生成关系在生成机会成本上的客观差异（含尚未被感知的关系），经有限位置的差异感应与耦合进入内生比对；
+   - **组织化 → 比对维度形成**：广义关切、历史脚手架与跨位置互动将零散差异组织为稳定可比较的维度与参照系；
+   - **递归生成新价值关系**：当新的比对维度、共同生成中介或组织结构一旦成立，它本身就会改写后续的可达空间与机会成本分布，从而**创造出此前既不存在、也无法被旧框架评估的新价值关系与生成性机会**（打通“发现性 / 生成性 / 递归性”三类机会）。
+2. **价值发生与跨底物职责分立（2026-11-26 作者校准落实）**：
+   - 严守五类对象的职责分工：**广义关切（`R3-06` 四维：范围/深度/强度/方向）/ 微效价（显现界面与具身位相遇处的最小趋避倾斜）/ 现行规范 `d`（强承载不可逆风险敏感强度）/ 代谢与物理维持负担 / 主观体验（现象效价，`HP-B` 独立边界）**；
+   - **生物发生同源共构 $\neq$ 跨底物普遍不可分定律**：在生物演化与神经发育中，代谢维持、微效价、具身感觉与关切常呈现深层同源共构；但这不作为先验普遍律禁止其他底物（如人工与社会技术系统）出现能力、比对维度与强承载关切之间的功能解耦。
+   - 下文 `§2a` 价值发生链刻画的是**价值发生与生成关系之间的递归联系**，**不预设为一切系统、一切底物必经的单向时间序列**。
+
 ---
 
-## §2a 价值发生序（`P3` 书稿溯源候选，含撤回门）
+## §2a 价值发生序（`P3` 书稿溯源与递归关系候选，含撤回门）
 
 > **层级 / provenance**：`P3` 候选（源自 `Drafts_26Q/Q14_价值不是偏好.md`），不新增 canonical `d` 定义，用于衔接前赌注结构与 `§2b` 赌注门。
 
@@ -3951,7 +4038,7 @@ $$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum}
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | true |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3963,7 +4050,7 @@ $$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum}
 
 > **角色（`Freeze A` canonical owner）**：本文件固定 SRT 本体论摩擦 **`Ψ_f`** 的第一性语义锚点（`Def-Ψ-1`）、条件信息几何投影（`Def-Ψ-2`）与跨尺度可支付性不变量（`Def-Ψ-3`），并在 `R4-A`（2026-11-26）中将其正面接入 **`R3` 机会成本动态四联**（`T3-02 D / PT09`）、**`A1` 压力侧 × 供给承载侧双侧架构**与 **`R3-08` 摩擦四分**。
 >
-> **不覆盖与不扩符声明**：`Def-Ψ-1 / Def-Ψ-2 / Def-Ψ-3`、`§3.2` 边界与 Core 绝对 `Ψ_f → 0` 退化极限保持不变（`CΨ` 保持独立 `OPEN`）；遵循 `A-9` 单摩擦概念族纪律，不新增 `Ψ_f^{...}` 独立规范子符（模型级局部投影记号如 `Ψ_f^{geom}`、`Ψ_f^{maint}` 仅作声明语境别名或投影）。
+> **不覆盖与不扩符声明（`R4-C5-C / D1` 选项 1 同步，2026-11-27）**：`Def-Ψ-1 / Def-Ψ-2 / Def-Ψ-3` 与 `§3.2` 边界保持不变；依据 2026-11-27 作者 `D1 / §18 CΨ` 选项 1 裁决，Core 绝对 `Ψ_f → 0` 退化极限与灵性实践“松解多余防御性摩擦 + 生成新能力/关系/方向”之间的**概念冲突已通过语义分流关闭**，同时显式保留多余防御性摩擦形成/放大机制及分布式可支付性四项技术缺口为 `OPEN`（不将语义裁决视为数学证明，也不排除未来对退化极限普适性的修正）；遵循 `A-9` 单摩擦概念族纪律，不新增 `Ψ_f^{...}` 独立规范子符（模型级局部投影记号如 `Ψ_f^{geom}`、`Ψ_f^{maint}` 仅作声明语境别名或投影）。
 
 ---
 
@@ -3983,12 +4070,14 @@ $$d \uparrow \;\not\!\Rightarrow\; \text{universe-wide moral/evaluative optimum}
 | **摩擦 / 压力侧** | ① 机会损失（背景未实现替代，未必已形成压力）<br>② 现实结构压力（由耦合/垂直压制实际作用于当下关系）<br>③ 预测性压力（形成态预期中的代价预判）<br>④ 实际实现负担（维持/重构切片时须实际支付的阻抗） | 刻画“为何选择关系承压并驱动重构/正交化”；机会损失本身不自动等于 `Ψ_f` |
 | **供给与承载边界侧** | **`Ψ_f` 可支付窗（`Def-Ψ-3`：`P_sel` vs `Ψ_f` + `S_noise`）**与分布式可支付性护栏（实现条件内生于完整生成关系，非单一孤立单元自给） | 刻画“系统能否在承担该实现负担的同时保持闭包、延续与后续选择能力”；越阈则进入解体或谱系终止背面（`Core_Law/SRT_Irreversibility.md`） |
 
-### 0.2 `R3-08` 摩擦四分（严禁互代）
+### 0.2 `R3-08` 摩擦四分与多余防御性摩擦形成/放大机制（`R4-C5-C / D1` 修订版）
 
 1. **广义摩擦（机会成本实际选择压力，`T3-02 D / PT09`）**：跨尺度动态四联中的关系性选择压力；
 2. **非闭合压力**：局部交互尚未收敛或难以协调时的结构失配张力；
 3. **可支付负担 `Ψ_f`（本文件核心 owner）**：将开放可能性压缩、维持或重构为可维持/可行动/可协调现实切片时必须承担的本体论阻抗与可支付负担；
 4. **主观痛苦 / 苦难（`Core_Law/SRT_Suffering.md`）**：须独立第一人称 registration 证据的体验层负担，**绝不等同于 `Ψ_f`**。
+
+- **多余防御性摩擦（跨维度形成与放大机制，而非第五个独立可加负担）**：对僵化 `L_2` 身份外壳的过度防御、抗拒更新或否认现实，并非与上述四项并列且可线性加总的“第五种独立物理量”，而是一种**跨维度的摩擦形成与放大机制**——它可同时放大机会成本损失、结构冲突（广义摩擦/非闭合压力）、额外维持负担（`Ψ_f` 侧）与主观苦难。其具体形成、耦合与放大动力学继续保持为开放研究问题（`OPEN`）。
 
 ---
 
@@ -4053,10 +4142,15 @@ $$\boxed{\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{in the weak-fi
 
 ---
 
-## §5 最优区间、`Ψ_f → 0` 退化极限与 AI 语境边界
+## §5 最优区间、`Ψ_f → 0` 退化极限、`§18 CΨ` 裁决与 AI 语境边界
 
 对现实形成态系统而言，理想工作区间不是绝对零摩擦（`Ψ_f → 0`），而是 **非零且可支付（`Ψ_f > 0 and payable`）**：
-- **Core 绝对 `Ψ_f → 0` 退化极限不变**：绝对零摩擦表示无真实赌注或现实重量退化（`Core/SRT_OPEN_TENSIONS.md §18 CΨ` 保持独立 `OPEN`，灵性域“无多余防御摩擦”表达不得覆盖 Core 退化极限）；
+- **Core 绝对 `Ψ_f → 0` 退化极限与 `§18 CΨ` 选项 1 裁决（2026-11-27）**：Core 保留绝对 `Ψ_f → 0` 作为无真实赌注或现实重量退化极限（不宣称已证明其绝对普适性，亦不封闭未来理论修正空间）；灵性实践指向松解**多余防御性摩擦**（跨维度形成/放大机制）并创造新能力、新关系、新方向与新生成条件，而不预设总 `Ψ_f` 必然单调归零。二者之间的**语义概念冲突已于 2026-11-27 随全域清理关闭**（详见 `Core/SRT_OPEN_TENSIONS.md §18`），同时以下**五项独立机制与技术缺口保持 `OPEN`**（回链 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`，不得把分布式可支付性反伪装追问宣称为已证数学判据）：
+  1. **多余防御性摩擦的具体形成与放大机制**（`OPEN`）；
+  2. **`Ψ_f` 的跨位置可分解性**（`OPEN`）；
+  3. **子位置独立阈值的反事实基线**（`OPEN`）；
+  4. **受益位置 `T_dir` 退化下的 `D-3` 检测难题**（`OPEN`）；
+  5. **局部压缩与整体稳定之间“支撑/代价转嫁”关系的因果归属形式化**（`OPEN`）。
 - **AI / 纯 `L2` 语境精确规则（`ENG-03 M1-D`）**：优先写 **「在声明强承载模型下，`Ψ_f` 尚未建立为回流同一 `Bearer (P+E)` 的不可外包可支付负担（`non-binding`）」**，**绝不得**将其误读为“构成性摩擦缺席”或“全局 `Ψ_f = 0`”，亦不得以强承载 Stage 2 门控阻断一般构成性摩擦（`2026-09-26 B-4 / T3-02 D`）研究。
 
 ---
