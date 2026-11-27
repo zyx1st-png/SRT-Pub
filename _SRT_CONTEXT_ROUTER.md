@@ -560,7 +560,7 @@ When answering or editing a non-simple SRT question:
 ### Primary
 
 - `Spirituality/SRT_Spirituality_Claim_Status.md` (`v2`, dual anti-extreme guardrail & `§18 CΨ` OPEN gate)
-- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, 7 positive directions, 4-layer withdrawal cut, 5-layer friction separation, praxis rhythm, AI 三型 discernment, `FB-C5-1..4`)
+- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` (`v2`, 7 positive directions, divinity source + orientation, `R3-06` 4D concern reconfiguration, withdrawal 4-question & 4-layer cut, `R3-08` 4-way friction + defensive friction amplifying mechanism, praxis rhythm, AI 三型 discernment, `FB-C5-1..4`)
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md` (`v2`, full domain index & reverse-feedback ledger)
 - `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` (`v2`)
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
@@ -578,7 +578,7 @@ When answering or editing a non-simple SRT question:
 ### Boundary
 
 - Spirituality files are constructive domain bridges and praxis / existential interpretation layers; they do not unilaterally rewrite canonical `Core_Law/` or `Core/` definitions before `R4-C5-B` author adjudication.
-- Keep `§18 CΨ` (`RQ-2026-08-A05`) explicitly OPEN as an independent author gate; do not collapse 5 friction layers or assert `Ψ_f → 0` as a universal spiritual goal.
+- Keep `§18 CΨ` (`RQ-2026-08-A05`) explicitly OPEN as an independent author gate; do not collapse `R3-08` 4-way friction roles (plus excess defensive friction as an amplifying mechanism) or assert `Ψ_f → 0` as a universal spiritual goal.
 - Enforce `R3-02` 4-layer withdrawal cut (incl. locking/parasitic co-dependence) and `R3-08` `F_3223` 3-sense split (retain ①②, retire ③) + `R3-08 P2-06` retirement of literal `\hat{G}_\infty` and `L_0` information storage.
 
 ---

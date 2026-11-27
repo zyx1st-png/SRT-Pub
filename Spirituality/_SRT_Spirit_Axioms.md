@@ -77,23 +77,18 @@ $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
 
 ## II. P3/P4 Soteriological Mappings (救赎动力学映射)
 
-### H-Spirit-3: Sin as Contraction (罪即收缩)
-**Domain Mapping Definition**: Suffering is read as the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
-$$ \text{Suffering} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual}) $$
-$$ \text{Suffering}^{spirit\text{-}proxy} \sim \frac{1}{d^{spirit\text{-}proxy}} $$
-$$ \Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow $$
-This is a spirituality-domain contraction proxy, not a canonical equivalence between `Ψ_f` and suffering or low `d`.
-* **Implication**: 罪并非道德标签，而是选择维度收缩导致的结构性摩擦。
+### H-Spirit-3: Sin as Pathological Contraction (罪即病态收缩 — P3/P5 Bridge)
+**Domain Mapping (`R4-C5-A` 校准)**: 旧稿曾把苦难写成与 `d` 严格反比（`Suffering ~ 1/d`）并把 `Ψ_f ↑` 与 `d ↓` 绑定。按 `R3-06`（广义关切四维与独立 `d` 准入）及 `R3-08`（摩擦四分 + 多余防御性摩擦作为形成/放大机制），本项仅刻画病态自我封闭下多余防御摩擦与结构性扭曲可能同步放大的桥接假设，**不确立 `Suffering ∝ 1/d` 或 `Ψ_f ↑ ~ d ↓` 的强制反比律**（高关切承担同样可能伴随真实、上升的可支付负担）：
+$$ \text{Pathological Contraction}^{bridge} \leadsto \text{Excess Defensive Friction} \uparrow \;\land\; \text{Structural Distortion Risk} \uparrow $$
+* **Implication**: 罪在 SRT 桥接语境中并非外部道德标签，而是僵化封闭导致的关切扭曲与防御性内耗放大；它不等同于 canonical `Ψ_f` 或客观痛苦的唯一原因。
 
-### H-Spirit-4: Liberation as Expansion (解脱即扩展)
-**Domain Mapping Definition**: Liberation is read as the asymptotic expansion of $d$ and the dissolution of self-other boundary.
-$$ \text{Nirvana}^{mapping} \sim \lim_{d^{regulative} \to \infty} \hat{G}_\theta(L_0) $$
-`d -> infinity` is a regulative / directional shorthand; finite systems require explicit behavioral or relational proxies.
-$$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
-* **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
+### H-Spirit-4: Liberation as Relational Reconfiguration (解脱即关系与参与重构 — P3/P5 Bridge)
+**Domain Mapping (`R4-C5-A` 校准)**: 解脱不再被写成“自他边界完全消失（`Dist(Self, Other) = 0`）”或单轴 `d` 抵达无限，而是刻画有限主体松动僵化自我锁定、在保持有限位置与责任边界的同时重构参与共同生成的方式：
+$$ \text{Liberation}^{bridge} \sim \text{Reconfiguration of Concern Structure, Participation Mode, Comparison \& Generative Capacity} $$
+* **Implication**: 解脱不是取消有限主体或抹平自他差异，而是从排他性自我锁死转向开放、可修订、可承压的共同生成参与。
 
-> **Level**: governance / operational proxy. `d` expansion in spirituality cannot be certified by experience report alone. At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional d**.
-> **Finite-system boundary**: `d -> infinity` is a spiritual asymptote and regulating direction. It does not state that a finite practitioner, community, or tradition reaches actual infinite `d`.
+> **Level**: governance / operational proxy. `d` expansion or concern reconfiguration in spirituality cannot be certified by experience report alone, nor does wider concern scope automatically increase canonical `d` (`R3-06`). At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader payable consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional `d`**.
+> **Finite-system boundary**: `d -> infinity` is a historical directional shorthand. It does not state that a finite practitioner, community, or tradition reaches actual infinite `d` or erases finite relational distinctions.
 
 ---
 

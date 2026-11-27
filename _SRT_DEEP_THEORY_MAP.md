@@ -427,7 +427,7 @@ Political SRT is an application and philosophical expansion. It must not silentl
 
 ### Core question
 
-How does a finite subject understand its relation to the unified generative matrix ("from existence to order"), avoid both wellness-reduction and premature anthropomorphic/teleological inflation, reorganize its participation in co-generation (withdrawal, non-attachment, wuwei, positive freedom), navigate five separated friction/suffering layers, and sustain return through practice, `Sangha`, and human–AI discernment?
+How does a finite subject understand its relation to the unified generative matrix (preserving both divinity source & orientation / "from existence to order"), avoid both wellness-reduction and premature anthropomorphic/teleological inflation, reorganize its participation in co-generation (withdrawal as shift of mode/interface/position/role, non-attachment, wuwei, positive freedom, `R3-06` 4D concern reconfiguration), navigate `R3-08` 4-way friction/suffering plus defensive-friction amplification, and sustain return through practice, `Sangha`, and human–AI discernment?
 
 ### Primary files
 

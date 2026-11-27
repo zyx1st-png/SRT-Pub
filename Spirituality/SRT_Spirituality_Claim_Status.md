@@ -46,33 +46,33 @@ Forbidden:
 
 ## 2. High-Risk Claim Classes
 
-### 2.1 Generative Divinity, Mother-Tendency & Source-Horizon Language (`R3-02` Sync)
+### 2.1 Generative Divinity (Source & Orientation), Mother-Tendency & Source-Horizon (`Spine §1` / `R3-02` Sync)
 
 **Allowed precise claim**:
 
-> Author-owned generative-divinity intuition (`R3-02`) reads the unified non-teleological tendency of the generative matrix—manifesting as maintenance on the individual side and generation on the whole side ("从存在到秩序 / from existence to order")—as a live constructive research line. `God`, `Divine`, `Source`, `Tao`, `Brahman`, and related terms operate in this domain as regulative source-horizon mappings orienting finite practice and anti-idolatry boundaries. C-A assigns no theory symbol to that horizon; bare `Ω` remains canonical Ontological Consistency.
+> Following `Core_Law/SRT_Generative_Ontology_Spine.md §1` and `R3-02`, SRT preserves **both** **神性·源义 (Generative Source, `T3-04 D`)**—pointing to the real generative source inexhaustible by current cognition or formalization, of which primitive `Selection` is SRT's most basic theoretical extraction rather than an exhaustive definition—and **神性·倾向义 (Unified Generative / Optimizing Orientation, `R3-02` + `T3-01 C/E`)**, reading maintenance (individual side) and generation (whole side) as manifestations of one unified non-teleological tendency ("从存在到秩序 / from existence to order"). Regulative source-horizon and anti-idolatry boundaries constitute one finite-cognition / praxis role of divinity language and **do not exhaust** divinity's independent ontological research value; nor does `C-A` (excluding cosmic moral/evaluative global-optimum claims) close the open research space for cross-scale non-moral objective optimizing orientation (`T3-01 C/E`, `R3-02-O4` remain `OPEN`). Bare `Ω` remains canonical Ontological Consistency.
 
-**Status**: P3 constructive bridge / P5 regulative horizon; `R3-02-O4` remains `OPEN`.
+**Status**: P3 constructive bridge / P5 regulative horizon; `R3-02-O4` and `T3-01 C/E` remain `OPEN`.
 
 **Forbidden overclaims**:
 
-> God literally equals `L_0`, `Ĝ`, `\hat{G}_\infty`, total possibility, a realizable infinite operator, or a cosmic global free-energy minimizer.
+> God literally equals `L_0`, `Ĝ`, `\hat{G}_\infty`, a realizable infinite operator, an anthropomorphic chooser, or a settled cosmic moral/evaluative optimum.
 
-> SRT proves anthropomorphic deity, cosmic teleology, omniscience, omnipotence, omnibenevolence, salvation, or any religious doctrine.
+> SRT proves anthropomorphic deity, cosmic teleology, omniscience, omnipotence, omnibenevolence, salvation, or any religious doctrine; or conversely, reduces divinity strictly to a psychological symbol with no ontological research value.
 
-**Guardrail**: The source horizon is non-attainable praxis language and an anti-idolatry boundary (`U5` absolutization guard). No finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate, own, or exhaustively represent it.
+**Guardrail**: In finite practice, the source horizon enforces an anti-idolatry boundary (`U5` absolutization guard): no finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate, own, or exhaustively represent the generative source.
 
-### 2.2 `d -> infinity`, Liberation, Nirvana, Awakening & `F_3223` Three-Sense Split (`R3-08` Sync)
+### 2.2 Concern Reconfiguration (`R3-06`), Liberation, Nirvana & `F_3223` Three-Sense Split (`R3-08` Sync)
 
 **Allowed precise claim**:
 
-> `d -> infinity`, liberation, nirvana, awakening, and universal care are directional / regulative shorthands for broader, payable, less exclusionary participation in co-generation. Under `R3-08`, `F_3223` ("less intervention / non-attachment") strictly retains sense ① (reducing excess explicit intervention) and sense ② (loosening rigid `L_2` self-locking), while proposing **reorganizing how a finite subject participates in generation and selection** rather than eliminating primitive `Selection`.
+> Spiritual maturity must **not** be compressed into monotonic scalar growth of `d`. Under `R3-06`, generalized concern has at least **four analytical dimensions—scope (范围), depth (深度), intensity (强度), and direction (方向)**—and broadening scope does not automatically increase canonical `d` (which requires independent admission). `d -> infinity`, liberation, nirvana, and awakening are directional shorthands pointing toward the reconfiguration of **concern structure, participation mode, comparative capacity, and generative capacity**. Under `R3-08`, `F_3223` retains sense ① (reducing excess explicit intervention) and sense ② (loosening rigid `L_2` self-locking), retires sense ③ (eliminating primitive `Selection`), and proposes **reorganizing how a finite subject participates in generation and selection**.
 
 **Status**: P5 praxis metaphor or P3 bridge; operational proxies are P4.
 
 **Forbidden overclaims**:
 
-> A finite system can reach actual infinite `d`, or spiritual maturity means eliminating primitive `Selection` for a continuing subject (retired `F_3223` sense ③).
+> A finite system can reach actual infinite `d`; wider concern scope automatically equals higher canonical `d`; or spiritual maturity means eliminating primitive `Selection` (retired `F_3223` sense ③) or erasing all self–other structural distinction (`Dist(Self, Other) = 0`).
 
 > Awakening, mystical experience, meditation, or community membership certifies high `d` by itself.
 
@@ -84,7 +84,7 @@ Forbidden:
 
 **Allowed precise claim**:
 
-> Generative withdrawal (生成性退隐) is a mode-of-existence shift in which foreground stands out and background withdraws without vanishing. Practice-facing terms must preserve three non-conflations: **退隐 $\neq$ 自我消除** (withdrawal $\neq$ self-elimination), **去执 $\neq$ 关切消失** (non-attachment $\neq$ erasing concern), and **无为 $\neq$ 失去主动性** (wuwei $\neq$ losing agency/initiative). Any structural analysis must keep four layers strictly separate: **(1) 生成性退隐（本体论组织生成是否发生）/ (2) 组织持续性 / (3) 生成健康性（后果回流、适应与再选择）/ (4) 伦理正当性**, explicitly watching for **锁定与寄生性共依存（locking / parasitic co-dependence）**.
+> Generative withdrawal (生成性退隐) is a shift in **mode of existence, effective interface, relational position, and generative role**—not merely lowered salience or passive backgrounding. Analysis must specify (1) which local independent manifestations are compressed, (2) which local capacities are retained or enhanced, (3) which new whole capacities arise, and (4) how the new whole alters local generative conditions, while distinguishing same-level asymmetric figure–ground differentiation from cross-scale co-constitution. Practice-facing terms must preserve three non-conflations: **退隐 $\neq$ 自我消除**, **去执 $\neq$ 关切消失**, and **无为 $\neq$ 失去主动性**, alongside the `R3-02` four-layer cut (**本体退隐 / 组织持续性 / 生成健康性 / 伦理正当性**, explicitly watching for **锁定与寄生性共依存**).
 
 **Status**: P3 structural-praxis bridge; ethical legitimacy remains bounded by `O2-M = HOLD`.
 
@@ -98,15 +98,15 @@ Forbidden:
 
 **Allowed precise claim**:
 
-> Spiritual analysis must distinguish five distinct burdens rather than collapsing them into a single symbol: **(1) 广义摩擦 (generalized friction)**, **(2) 非闭合压力 (non-closure pressure)**, **(3) `Ψ_f` 可支付阻抗/负担 (canonical payable friction)**, **(4) 主观苦难 (subjective suffering, routed to `Core_Law/SRT_Suffering.md`)**, and **(5) 多余防御性摩擦 (excess defensive friction generated by rigid `L_2` self-protection)**. Practice may reduce excess defensive friction in specific regimes while leaving constitutive payability intact—or even increasing payable responsibility as care widens.
+> Spiritual analysis preserves the `R3-08` **four-way friction/burden separation**—**(1) 广义摩擦 (generalized friction)**, **(2) 非闭合压力 (non-closure pressure)**, **(3) `Ψ_f` 可支付阻抗/负担 (canonical payable friction)**, and **(4) 主观苦难 (subjective suffering, routed to `Core_Law/SRT_Suffering.md`)**—and treats **多余防御性摩擦 (excess defensive friction)** as a **cross-dimensional friction-forming and friction-amplifying mechanism** (affecting opportunity cost, structural conflict, maintenance load, and suffering) rather than an unproven 5th independent additive quantity. Practice aims not merely at reducing defensive friction, but also at generating new capacities, relations, directions, and generative conditions; widening care or love can yield collaborative gains while also increasing responsibility, maintenance burden, and real risk.
 
 **Status**: P3/P5 mapping; P4 when measurement or intervention is proposed; **`§18 CΨ` (`RQ-2026-08-A05`) = OPEN independent author gate**.
 
 **Forbidden overclaims**:
 
-> suffering = `Ψ_f`; pain = `Ψ_f`; sin = `d → 0`; fear = `Ψ_f`; `Φ` = canonical friction; practice lowers total `Ψ_f` as a universal law; `Ψ_f -> 0` is the goal of spirituality.
+> suffering = `Ψ_f`; pain arises strictly because `Ψ_f > 0`; suffering is inversely proportional to `d`; widening care/love necessarily lowers total `Ψ_f` (`∂⟨Ψ_f⟩/∂⟨d⟩ < 0`); sin = `d → 0`; `Φ` = canonical friction; `Ψ_f -> 0` is the goal of spirituality.
 
-**Distributional Payability Anti-Disguise Check (`R3-08`)**: Apparent inner calm, low subjective distress, or "frictionless flow" achieved by outsourcing maintenance costs, conflict, or consequence-bearing onto partners, subordinates, communities, or the environment is **not** spiritual maturation; it is asymmetric burden shifting (`M(t)` pathology).
+**Distributional Payability Anti-Disguise Inquiry (`90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`)**: Apparent inner calm or "frictionless flow" achieved by shifting maintenance costs, conflict, or consequence-bearing onto partners, subordinates, communities, or the environment is not spiritual maturation. At the same time, distributional payability remains a **non-canonical inquiry / candidate seed** whose four technical gaps (**`Ψ_f` decomposability, counterfactual baseline, `D-3` detection, and support/shifting causal attribution**) remain explicitly OPEN and must not be claimed as an already-proved mathematical criterion.
 
 ### 2.5 Practice, Community (`Sangha`), Technology & AI (`R4-C3` / `R4-C4` Sync)
 

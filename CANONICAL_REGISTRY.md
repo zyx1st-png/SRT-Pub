@@ -285,7 +285,7 @@ dependency: [SRT-INDEX, SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-CLAIM-LADDER, SRT-D-V
 - 引用规则：涉及学习不可逆性、终止作为吸收边界、ST-A 条件性反闭合、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；P1 absorption 回链 21B，条件性 anti-closure 回链 21C B13
 
 ### 13. Spirituality 主轴（`R4-C5-A` 双向重构，2026-11-27）
-- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、`R3-02` 生成性神性“从存在到秩序”与退隐四层切分、`R3-08` 灵性参与转向/`F_3223` 三义/五层摩擦分立/分布式可支付性反伪装、`§18 CΨ` 独立作者门 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
+- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（`v2`：双反护栏、完整保留神性·源义与倾向义、`R3-06` 广义关切四维与独立 `d` 准入、`R3-02` 退隐存在方式/作用接口/关系位置/生成职责转换与四层切分、`R3-08` 参与转向/`F_3223` 三义/摩擦四分+多余防御性摩擦形成放大机制+分布式可支付性追问[四缺口 OPEN]、`§18 CΨ` 独立作者门 OPEN、`R4-C3` AI 三型同步与旧形而上学清理护栏）
 - Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`（`v2`：退出旧休眠层声明，登记 `R4-C5-A` 七大正面主轴与 `FB-C5-1..4` 反向核心反馈）
 - Compact core 主干：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`（`v2`：七大正面理论主轴、最小实践节律、伪成长诊断、`Sangha` 与人机共同生成辨析、`FB-C5-1..4`）
 - Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`（`v3`）与双线主体位/共同体文件（`SRT_Spirituality_Selection_Pathology_and_Return.md v2`、`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`、`SRT_Spirituality_Community_and_Sangha.md`）
