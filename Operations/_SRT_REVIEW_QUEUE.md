@@ -3,8 +3,8 @@ id: SRT-REVIEW-QUEUE
 type: framework
 status: active
 claim_mode: governance
-updated: 2026-08-12
-version: v2
+updated: 2026-11-27
+version: v3
 layer: meta
 epistemic_layer: os
 dependency: [SRT-DAILY-REVIEW-PIPELINE, SRT-EQ-HYP-MAP]
@@ -30,7 +30,6 @@ dependency: [SRT-DAILY-REVIEW-PIPELINE, SRT-EQ-HYP-MAP]
 | RQ-2026-08-A02 | `01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md` | `q` 是 stake gate 后的构成深度剖面还是独立轴；`o` 是否操作化、是否设符号 | 形式选择完成前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文 | High | Awaiting author |
 | RQ-2026-08-A03 | `Core/SRT_Core_01_Axioms.md` / `Governance/SRT_POSITIONING.md` | `Ax-Core-A10/A11` 的 Part B 实验钩缺口是否仍存在；若存在，是在 Core_01 补、在当前 P2–P4 架构落地并 cross-reference，还是已被现有接口覆盖 | Core_01 仍是 canonical owner；未正式裁决前不得宣布 superseded 或禁止回写 | High | Awaiting re-adjudication |
 | RQ-2026-08-A04 | Physics P03/P04/P05 hooks；`Operations/Audits/Hook_Closure_Audit_2026-07-25.md §3.3` | 三张 patch 统一落到新建 `Physics/SRT_Physics_Bridge_v0_2.md`，还是并入现有 `Physics/_SRT_Phys_Bridge.md` | 只裁决 landing；不升级 Physics claim level | High | Awaiting author |
-| RQ-2026-08-A05 | `Core/SRT_OPEN_TENSIONS.md §18` / `_SRT_PSI_F_CANONICAL.md` / Spirituality `Spirit_01/04/09` | CΨ：Spirituality 的绝对 `Ψ_f→0` 完美／解脱映射是保留为高承诺语言、改为超额／防御性摩擦趋零，还是撤回 | C-A 不裁决价态；未获作者决定前不得改变 `Ψ_f` canonical 定义，也不得把绝对零摩擦写成已证明的生成健康 | High | Awaiting author |
 
 统一裁决包：
 
@@ -77,6 +76,7 @@ Pipeline 6 只能把原始发现追加到本区，不得直接写入 A/B，也�
 
 | 原发现日期 | 处理日期 | 来源 | 原问题 | 处理方式 | 状态 |
 |---|---|---|---|---|---|
+| 2026-08-12 | 2026-11-27 | `RQ-2026-08-A05` / `Core/SRT_OPEN_TENSIONS.md §18` / `_SRT_PSI_F_CANONICAL.md §5` / `Spirituality/*` | CΨ：Core 绝对 `Ψ_f→0` 退化极限与 Spirituality 绝对零摩擦映射之间的价态冲突 | 作者 2026-11-27 批准 `D1` 修订版与选项 1：Core 保留绝对 `Ψ_f→0` 作为退化/无赌注极限（不宣称已证其普适不可修），灵性域完成全域清理并定位为松解**多余防御性摩擦（跨维度形成/放大机制）**及创造新能力/关系/方向；**概念冲突已关闭**，同时显式保留五项独立机制与技术缺口（多余防御性摩擦形成放大机制、`Ψ_f` 跨位置可分解性、反事实基线、`D-3` 检测、支撑/转嫁因果归属）为 `OPEN` | Resolved conceptually (Option 1); 5 gaps OPEN |
 | 2026-08-11 | 2026-08-12 | `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md §3` / `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md` | Gate C：universe-wide optimum、有限 reachable optimum、规约性地平线与模型吸引子共用“全局最优”，并由 `d↑` 强箭头串联 | 作者选择 C-A；宇宙级语义／评价最优不再是正面对象，后三义拆分并加完整作用域；技术性 model-global 用法保留；CΨ 独立入 A05 | Resolved by author; landed |
 | 2026-08-11 | 2026-08-12 | `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md §2` / `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md` | Gate B：初心在 canonical 中定位为 L₁ 回读，但 Core／Physics／Spirituality 仍有 L₀ 梯度、内在属性或独立前身读法 | 作者选择 B-A；不准入独立 L₀ 前身、不改名 `ε_pg`；former `T-L0-Heart` 撤销，领域公式降为 L₁/P3/P4 bridge／proxy；Gate C 后由 C-A 独立关闭 | Resolved by author; landed |
 | 2026-08-11 | 2026-08-12 | `Operations/SRT_CROSS_SCALE_ENTROPY_FLOOR_AUDIT_2026-08-12.md` | `Core_14` 以未定义 `H(L_0)`、无条件粗粒化熵式、普遍最小作用与通常不可逆的 `Λ^{-1}` 支撑跨尺度共轭 | 旧证明撤回；P3-Scale-01／B07 降回条件性桥，通用接口采用 B06／T-Scale-02C1 近似交换；T-Scale-Rhythm-5 标为 P3/P4 条件模型 | Resolved at claim-mode / proof-load level |
