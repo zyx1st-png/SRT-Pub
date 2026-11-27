@@ -1,18 +1,21 @@
 ---
 id: SRT-CORE-23-IG-COMPLEXITY-NEURO-HARDENING
 type: framework
-tags: [Information Geometry, Complexity, Neural Computation, Psi_f, d-value, Ghost Operator, L0, L1, L2]
-status: draft_v1
+tags: [Information Geometry, Complexity, Neural Computation, Psi_f, d-value, Ghost Operator, L0, L1, L2, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
-dependency: [SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-21, SRT-CORE-22, SRT-FISHER-FEP-LANDSCAPE-INTERFACE]
+canonical: false
+dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-21, SRT-CORE-22, SRT-CORE-14, SRT-FISHER-FEP-LANDSCAPE-INTERFACE]
 ---
 
 # SRT Core 23: Information Geometry / Complexity / Neural-Computational Hardening
 
 > **Purpose**: This file hardens the conceptual core of SRT by mapping `Ψ_f`, `d-value`, `Ĝ`, and `L0-L1-L2` onto three scientific interface languages: information geometry, complex systems, and neural computation.  
-> **Boundary**: This is a bridge / hardening document. It does **not** add a new P0/P1 theorem. All uses of `Ψ_f` and `d-value` remain subordinate to `_SRT_PSI_F_CANONICAL.md` and `_SRT_D_VALUE_CANONICAL.md`.
+> **Boundary (`R4-C4` synced, 2026-11-26)**: This is a bridge / hardening document (`canonical: false`). It does **not** add a new P0/P1 theorem. All uses of `Ψ_f`, `d-value`, and `L_0 / L_1 / L_2` remain subordinate to `Core_Law/SRT_Generative_Ontology_Spine.md §7` (three analytic aspects of one Selection reality, not three ontic warehouses; actualized unconscious neural activity still belongs to the `L_1` aspect), `_SRT_PSI_F_CANONICAL.md`, and `_SRT_D_VALUE_CANONICAL.md`. Specifically: (1) `d(x) = ||∂𝒰/∂𝒮||` in §4.1 is a risk-gradient operational representation, not the sole definition of canonical `d`, and general capacity / neural bandwidth / `D_stake` cannot be equated to canonical `d` without independent admission; (2) neural divisive normalization (§6.1) is a local response-compression / actual-coupling `P3` candidate governed by `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`, distinct from organizational-generative normalization (`R4-C2`); (3) neither global availability (§6.2) nor `R4-C4` foreground generative mediation (`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`) defines consciousness — foreground generative mediation serves as a candidate mechanistic research hypothesis (`P3 / OPEN`), while `HP-B` remains frozen/OPEN; (4) plasticity (§6.3) spans regenerative memory, developmental pruning, and five heterogeneous history duties (`stored ≠ active`), while energy-gradient differences (distinguishing electrochemical, metabolic, physical free-energy, variational free-energy, and effective landscape quantities) remain a deeper physical generative mechanism candidate not equated to `Selection / d / Ψ_f`.
 
 ---
 

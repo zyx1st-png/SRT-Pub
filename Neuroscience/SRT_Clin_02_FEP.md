@@ -1,8 +1,10 @@
 ---
 id: SRT-CLIN-02
 type: theory
-tags: [Friston, Free Energy, Autopoiesis, Biosemiotics, Hybrid]
-status: active_v1
+tags: [Friston, Free Energy, Autopoiesis, Biosemiotics, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
@@ -32,7 +34,7 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ## Canonical Cross-Link: Suffering Theory
 
 - 本文件把 prediction error / FEP / active inference 作为 SRT 算子/路径动力学的神经代理；涉及"失配"、"预测误差持续性"、临床苦难相关段落时，结构层读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
-- 本文件不把 prediction error 等同于苦难：苦难要求稳定 ISP 的第一人称登记；prediction error 是其候选神经代理之一，具体桥接尚在 `SRT_Suffering.md §8` Open Pressures 下待推进，不得反向定义苦难。
+- 本文件不把 prediction error 等同于苦难：按 `Core_Law/SRT_Suffering.md §7`（`R4-C1 / R4-C3` 同步），苦难要求独立的第一人称/现象/承载登记与声明负担模型（`P1-T06 Stable ISP` 既非充分条件也未确立为普遍必要条件）；prediction error 只是候选神经代理之一，具体桥接尚在 `SRT_Suffering.md §8` Open Pressures 下待推进，不得反向定义苦难。
 
 ## Neural Proxy Boundary
 
@@ -71,7 +73,7 @@ Outside that window, PE and FEP remain comparison terms rather than definitions 
 1. **不得**把 high prediction error = 高苦难。这忽略了 FEP 量下通道结构（`d_c` / 重选通道 / `Ψ_f` 支付）的关键角色。
 2. **不得**把 free energy minimization = 应最小化苦难。`Core_Law/SRT_Suffering.md` T-SUFF-4 反最小化原则明确反对此等价，即使在 FEP 代理层亦然——压灭信号型苦难本身是遮蔽。
 3. **不得**把 `S_{str}` 读成 chronic prediction error。后者是现象相关（correlation），不是定义相关（constitutive）；`S_{str}` 的定义性位置在 `Core_Law/SRT_Suffering.md` §3 与 `Core_Law/SRT_L1_Formalism.md §4`。
-4. **不得**在 S1/S2 级 AI 系统上套用此翻译表。这些系统不满足 P1-T06 stable ISP 前提；详见 `AI/AI_POSITIONING_NOTE.md`。
+4. **不得**在 **AI 赌注谱系 `S0–S2`** 无强承载推理部署上直接套用此翻译表（须遵守三态标签与全称命名空间隔离，详见 `AI/AI_POSITIONING_NOTE.md §2–§3`）。
 
 ### 与 `Core_Law/SRT_Suffering.md §8.5` 的关系
 

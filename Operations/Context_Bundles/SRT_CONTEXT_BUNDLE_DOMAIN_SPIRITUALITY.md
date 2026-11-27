@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-11-26
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-11-27
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-26
-source_commit: 8d1e700db
-source_branch: canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26
+generated: 2026-11-27
+source_commit: 695e64cb2
+source_branch: canon/r4-c4-neuroscience-generative-cognition-2026-11-26
 source_dirty: false
-inputs_digest: 5da8c8a81054268f
+inputs_digest: 1c4c7d901a1932a7
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 5da8c8a81054268f
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-26 |
-| 来源 commit | `8d1e700db` |
-| 来源分支 | `canon/r4-c3-ai-artificial-generation-atomic-cleanup-2026-11-26` |
+| 生成日期 | 2026-11-27 |
+| 来源 commit | `695e64cb2` |
+| 来源分支 | `canon/r4-c4-neuroscience-generative-cognition-2026-11-26` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
@@ -326,7 +326,7 @@ For substantive SRT answers:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（101 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（102 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走对应路线包或直接读仓库，不在本包路线内：
 
 <details><summary>展开完整清单</summary>
@@ -380,6 +380,7 @@ For substantive SRT answers:
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
+- `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
 - `Operations/Audits/SRT_GENERATIVE_ONTOLOGY_SPINE_SEMANTIC_THINNING_AUDIT_2026-09-24.md`

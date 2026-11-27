@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-07
 type: theory
-tags: [Evolution, Development, Bioelectricity, Cancer, Hybrid]
-status: bridge_realign_v1
+tags: [Evolution, Development, Bioelectricity, Cancer, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -374,7 +376,7 @@ P(\text{contract}\mid \text{weak tap},\ \text{unpaired history})
 
 **边界必须收紧：**
 - 当前主证据是 *bioRxiv* 预印本加二手报道，还不是同行评审定论。
-- 现有范式主要展示的是约 `1` 秒量级、每 `45` 秒重复一次的短时配对窗口，不等于任意长间隔的 trace conditioning，更不等于已达到 `d \ge d_{UAL}`。
+- 现有范式主要展示的是约 `1` 秒量级、每 `45` 秒重复一次的短时配对窗口，不等于任意长间隔的 trace conditioning，更不等于已建立高阶强承载 `d` 或主体性（`P1-03`：退除旧 `d \ge d_{UAL}` 标量门槛）。
 - 报道中的 readout 主要来自固定在培养皿底部的 `Stentor` 群体响应；“单个细胞内部如何存储联结痕迹”仍未锁定。
 - 这条材料支持的是 **non-neural associative-learning window**，不是“单细胞已经被证明具有现象意识”。
 

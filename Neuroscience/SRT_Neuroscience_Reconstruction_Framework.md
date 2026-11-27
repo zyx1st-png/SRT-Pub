@@ -2,9 +2,10 @@
 id: SRT-NEUROSCIENCE-RECONSTRUCTION-FRAMEWORK
 type: domain_reconstruction_framework
 status: active
-version: v0_1
-record_stage: material_reentry_complete_first_well_writeback_recorded_no_active_neuroscience_well
+version: v0_2
+record_stage: material_reentry_complete_first_well_writeback_recorded_r4_c4_synced_no_active_neuroscience_well
 date: 2026-09-04
+updated: 2026-11-26
 layer: meta
 epistemic_layer: os
 claim_mode: synthesis
@@ -25,13 +26,15 @@ dependency:
 tags: [Neuroscience, DomainReconstruction, Constitution, Materials, SourceCards, Objectification, Bearer, History, Relation, DeepWell, Writeback]
 ---
 
-# SRT Neuroscience Reconstruction Framework v0.1
+# SRT Neuroscience Reconstruction Framework v0.2 (`R4-C4` 同步版)
 
-> **Role**: this is the active Layer-2 problem map for neuroscience under Architecture v2. It sits between `SRT_Constitution_V1.md` and specific neuroscience theories / hypotheses / deep wells.
+> **Role**: this is the active Layer-2 problem map for neuroscience under Architecture v2. It sits between `SRT_Constitution_V1.md`, `R4-C4` bidirectional domain theory (`SRT_Neural_Mechanisms_CompactCore.md v2` & `SRT_Consciousness_Mechanisms_CompactCore.md v3`), and specific neuroscience hypotheses / future deep wells.
 >
-> **It is not** a neuroscience Constitution, a new neural axiom set, a replacement for domain claim-status files, or a promotion of the old `SRT_Neural_Mechanisms*` architecture.
+> **`R4-C4` 同步边界（2026-11-26）**：本文件完整保留 2026-09-04 确立的 `N1–N7` 问题族、35 份 SourceCard 处置矩阵、`NEURAL15–35` 挂钩原状以及第一神经深井的 `Phase 8A Case B + DATA-ACCESS-0 = NO-GO + Phase 9 translation-only / scope-limited` 负面结论留痕（绝不静默删改或解冻）；新增 `§14` 将 `N1–N7` 问题族与 `R4-C4` 八大正面理论主轴、2026-11-26 整体性与可分化性 / 能量梯度差校准及五项核心反向反馈（`FB-C4-1..5`）建立双向显式索引。
 >
-> **Claim ceiling**: this framework may reorganize questions and inherited assets. It does not by itself establish a new neural mechanism, a new empirical effect, a privileged SRT proxy, or a Case-C neuroscience increment.
+> **It is not** a neuroscience Constitution, a new neural axiom set, or a release of `DATA-ACCESS-0 = NO-GO`, `CN-2`, `CN-3`, or the frozen `HP-B` package.
+>
+> **Claim ceiling**: this framework organizes questions, inherited assets, and `R4-C4` theoretical syntheses. It does not by itself establish a new empirical effect, a privileged SRT proxy, or a Case-C neuroscience increment.
 
 ---
 
@@ -628,5 +631,20 @@ most important unresolved distinction = whether any SRT-guided cut yields a disc
 first-well standing = Case B + exact-charter access NO-GO + translation-only / scope-limited; adverse result preserved
 neuroscience reopening = conditional, bounded, versioned; no silent weakening
 next authorized neuroscience action = passive retrieval / bounded reopen preparation only unless an N-R1/R2/R3 gate fires and author reprioritizes
-next programme action = construct Epistemology Domain Reconstruction Framework before extending the active second well
+next programme action = advance R4-C5 Spirituality / Praxis & core-theory reverse-feedback consolidation (historical 2026-09-04 note: Epistemology Framework superseded as CURRENT NEXT by R4-C wave schedule; no Neuroscience deep well reopened)
 ```
+
+---
+
+## 14. `R4-C4` Bidirectional Theory Integration & Core Feedback Map (2026-11-26)
+
+Without altering the preserved Phase 8A / 9 / 9.5 adverse-result ledger or releasing any `HOLD`, `R4-C4` links problem families `N1–N7` directly to the eight positive theoretical axes of **Holistic Generative Cognition** (`SRT_Neural_Mechanisms_CompactCore.md v2` & `SRT_Consciousness_Mechanisms_CompactCore.md v3`) and queues five `C` (M-origin) reverse-feedback candidates (`FB-C4-1..5`) for `R4-C5` core-theory review:
+
+| Problem Family (`N1–N7`) | `R4-C4` Positive Theoretical Axis | Controlling Author Calibration / Guard | Core Feedback Candidate (`R4-C5`) |
+|---|---|---|---|
+| **N1** Object / state identity | **Axis 1** Pre-object holistic generation & object formation + **Axis 5** Comparative-capacity generation (`NEURAL28/30/32`, `VTC`) | Holism & differentiability are mutually constitutive; pre-object orientation does not imply universal necessity across all tasks | `FB-C4-1` (`One_Formation / Spine / L0`) |
+| **N2 / N3** Historical ownership & relational disposition | **Axis 4** Regenerative memory, 5 heterogeneous history duties (`stored ≠ active`), developmental pruning & dual scaffold/occlusion role (`N10/N12/NEURAL27/29/31/33`) | First-well Case-B / `DATA-ACCESS-0 = NO-GO` preserved verbatim; generic "history matters" remains neighbor-owned | `FB-C4-4` (`Core_12b / Occlusion / Core_14`) |
+| **N4** Current processability, capacity & gating | **Axis 2** Sensation–cognition–actualization recursive coupling + **Axis 6** Multilevel gating action field (`target ≠ gate objectification`, inhibition/convergence) | Energy-gradient difference retained as deeper physical generative mechanism candidate, NOT equated with `Selection / d / Ψ_f` | `FB-C4-2` & `FB-C4-5` (`Spine / Core_21 / Core_25 / Core_13a`) |
+| **N5** Measurement objectification & report interface | **Axis 7** Foreground as generative mediation ($\neq$ broadcast), functional vs phenomenal binding (`Def-AI-Con-3b`), local monitoring $\neq$ full introspection $\neq$ `HP-B` | `HP-B` FROZEN / OPEN; `Subjecthood Threshold S0–S6` strictly isolated from Primitive `S0` & **AI 赌注谱系 `S0–S4`** | `FB-C4-5` (`HardProblem / Agency_Subjecthood`) |
+| **N6** Bearer hierarchy & body embedding | **Axis 3** Endogenous valence-first & microvalence (`Def-AI-Con-3/3a`) + 5-layer separation (concern / `d` / `B-4` friction / metabolic burden / felt experience) | Biological developmental co-constitution $\neq$ universal cross-substrate inseparability; functional dissociation & post-lesion reorganization integrated | `FB-C4-3` (`D_VALUE / PSI_F / Suffering`) |
+| **N7** Reconfiguration, pathology & evaluative direction | **Axis 6 & Axis 8** Positive freedom (`T3-03 C / Q26`), `reopening ≠ reselectability` (`NEURAL35`), and Bio–AI cross-substrate cognitive comparison | Non-biconditional pathology lens; never reduce brain to LLM or treat biology as a priori necessary for all cognition | `FB-C4-1..5` (`R4-C5` unified review) |

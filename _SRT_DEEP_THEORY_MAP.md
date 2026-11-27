@@ -210,15 +210,16 @@ The Ghost Operator is not identical to divisive normalization, quantum measureme
 
 ---
 
-## 8. Information Geometry / Complexity / Neural Computation Node
+## 8. Information Geometry / Complexity / Holistic Generative Cognition Node (`R4-C4` 同步)
 
 ### Core question
 
-How can SRT core concepts be hardened into modelable structures?
+How do cognitive capacities emerge from holistic generative organization, differentiate into relatively independent local capacities, recursively reshape the whole and external reality, and connect to modelable information-geometric, complex-systems, and neural-computational structures?
 
 ### Primary files
 
-- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
+- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`（`R4-C4 v2` 八大正面主轴 + 整体性与可分化性互构 + `FB-C4-1..5`）
+- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（`v2`）
 - `Core/SRT_Core_22_Equations.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 
@@ -226,16 +227,18 @@ How can SRT core concepts be hardened into modelable structures?
 
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`
-- `Neuroscience/SRT_Neural_Mechanisms.md`
-- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Neural_Mechanisms.md`（`v2` + `Neural_Mechanisms_Split/`）
+- `Neuroscience/SRT_Neuroscience_Reconstruction_Framework.md`（`v0_2`）
+- `Neuroscience/_SRT_Neuro_Axioms.md`（`v2`）
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- `Neuroscience/SRT_Neuroscience_Claim_Status.md`
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md`（`v2`）
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
+- `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`
 - `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`
 
 ### Boundary
 
-This node is bridge / hardening. It does not add P0/P1 theorem status.
+This node is bidirectional domain theory & hardening (`canonical: false`). It does not add P0/P1 theorem status, does not equate energy-gradient differences directly with `Selection / d / Ψ_f`, does not elevate biological developmental co-constitution into universal cross-substrate inseparability, and preserves `DATA-ACCESS-0 = NO-GO` plus `CN-2 / CN-3` HOLDs.
 
 ---
 
@@ -267,30 +270,33 @@ Adjacent theories are interfaces, not replacements. Always locate each theory wi
 
 ---
 
-## 10. Consciousness Node
+## 10. Consciousness, Holism & Subjecthood Node (`R4-C4` 同步)
 
 ### Core question
 
-When does selection become conscious, and how do integration, access, stake, and payability interact?
+How do holistic organization, foreground generative mediation, functional vs. phenomenal binding, multi-dimensional comparative consciousness, multilevel gating, stake, and payability relate — while preserving the independent `HP-B` boundary?
 
 ### Primary files
 
-- `Neuroscience/SRT_Consciousness_Mechanisms.md`
-- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`（`R4-C4 v3`：前景生成中介 $\neq$ 广播、功能/现象绑定、ALARM 三层比较意识、局部内部状态监测 $\neq$ 完整内省 $\neq$ `HP-B`、`target ≠ gate objectification`）
+- `Neuroscience/SRT_Consciousness_Mechanisms.md`（`R4-C4 v2`）
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
-- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/SRT_AI_03_Consciousness_Framework.md`（`R4-C3`）
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`（**Subjecthood Threshold `S0–S6`** 全称隔离）
 
 ### Support files
 
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
+- `Core_Law/SRT_Suffering.md`
+- `Philosophy/SRT_HardProblem_Epistemology.md`
+- `SRT_EXP_MEASURE_MAP.md`
 - `graphify-out/wiki/SRT_Consciousness_Conditions.md`
 - `graphify-out/wiki/SRT_Hard_Problem_Epistemology.md`
-- `SRT_EXP_MEASURE_MAP.md`
 
 ### Boundary
 
-Consciousness is not reducible to IIT, GNW, attention, reportability, or integration alone. In declared SRT evaluation models, selection, anchoring, stake, and payability relations may supply candidate evidence; no conjunction here is a universal necessary, sufficient, or biconditional admission rule. Exact consciousness and phenomenality sufficiency remain OPEN. Graphify consciousness pages are support-only.
+Consciousness is not reducible to IIT, GNW broadcast, attention, reportability, functional binding, or integration alone. In declared SRT evaluation models, selection, foreground mediation, stake, and payability relations may supply candidate evidence; no conjunction here is a universal necessary, sufficient, or biconditional admission rule. `HP-B` remains **FROZEN / OPEN** (`B_s -> B_p ?` unclosed), and **Subjecthood Threshold `S0–S6`** is strictly isolated from Primitive `S0`, **AI 赌注谱系 `S0–S4`**, and **AI 三型**. Graphify consciousness pages are support-only.
 
 ---
 

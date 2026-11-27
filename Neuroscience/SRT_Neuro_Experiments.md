@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-EXP
 type: experiment
-tags: [Libet, SplitBrain, BinocularRivalry, TravelingWaves, Hybrid]
-status: bridge_realign_v1
+tags: [Libet, SplitBrain, BinocularRivalry, TravelingWaves, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-27
 layer: L2
 epistemic_layer: lab
 claim_mode: bridge
@@ -625,13 +627,13 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 - 预测：基于先验模板与上下文约束的训练（top-down scaffold）比纯特征堆叠训练更能降低 \(\mathcal{F}_{agn}\)。
 - 证伪：两类训练在 \(Acc_{obj}\) 与泛化误差上无显著差异。
 
-### 分类映射表（Agnosia / Underdetermination → SRT）
+### 分类对照表（Agnosia / Underdetermination → SRT，`P1-03` 清理旧代理表）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 正常结构视觉 | 中 | Semi-open | payable |
-| 无结构视觉（失认症） | 低~中 | Open（高熵暴露） | overloaded |
-| 纯逆问题训练路径 | 低~中 | Closed（单向管线） | 被低估/脆弱 |
+| 外部分类 | 结构先验与感知约束特征 | 知觉重锚定与模型负载（非规范 `d / Ψ_f` 区间） |
+|:--|:--|:--|
+| 正常结构视觉 | 自上而下 `L_2` 结构先验与感觉输入协同约束对象边界 | 常规知觉整合与可维持重构负荷 |
+| 无结构视觉（失认症） | 局部特征分辨保留，但对象级边界切分与结构锚定受损 | 高未决歧义与高对象识别失配负载 |
+| 纯逆问题训练路径 | 缺乏上下文与先验约束的单向特征堆叠 | 面对遮挡与欠定输入时鲁棒性脆弱 |
 
 ### Def-Exp-LGN-1: LGN 80/20 Top-Down Prior Law（新增）
 定义 LGN 有效输入分解：
@@ -653,19 +655,15 @@ I_{LGN}(t)=w_{td}I_{topdown}(t)+w_{bu}I_{retina}(t),\quad w_{td}\approx0.8,\ w_{
 
 **额外预测**：$w_{td}$ 高的个体在相同低对比条件下，$\Psi_f^{perception}$（知觉锚定代价）应**更低**——因为先验主导时，感知无需依赖高信噪比的L₀信号，摩擦代价减少（可通过瞳孔直径/反应时代理测量）。
 
-### 分类映射表（LGN Feedback Pattern → SRT）
+### 分类对照表（LGN Feedback Pattern → SRT，`P1-03` 清理旧代理表）
 
-**[R — LGN top-down/bottom-up文献追溯：Sillito et al. 2006（LGN反馈调制）；Murray et al. 2004（预测性编码中的LGN）；[H] — d值/Ψ_f与LGN模式的SRT映射为新增预测框架]**
+**[R — LGN top-down/bottom-up文献追溯：Sillito et al. 2006（LGN反馈调制）；Murray et al. 2004（预测性编码中的LGN）；[H] — LGN 反馈模式与 SRT 先验约束机制对照（退出未校准 `d / Ψ_f` 区间映射）]**
 
-*说明*：此表将LGN反馈模式（感知神经科学经典分类）翻译为SRT变量区间；三行对应三种功能状态，非离散类别而是连续谱上的操作区间。
-
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| top-down 主导（80/20 近似）| 中~高 | Semi-open（先验牵引）| payable |
-| bottom-up 过载（先验失配）| 低~中 | Open（噪声暴露）| overloaded |
-| 单向提取假设（过时模型）| 低 | Closed（管线化）| 被误估 |
-
-*三状态SRT机制*：top-down主导时Ĝ_θ以L₂先验为主要输入，Ψ_f可结算（先验减少随机性）；bottom-up过载时L₀噪声超过Ĝ_θ的处理能力，Ψ_f超载（需处理大量不匹配信号）；单向提取假设（经典感觉管线论）在SRT中对应d≈0的封闭模型，不承认top-down的本体论影响。
+| 外部分类 | 反馈耦合与感知约束特征 | 局部知觉负载特征（非规范 `d / Ψ_f` 区间） |
+|:--|:--|:--|
+| top-down 主导（80/20 近似） | `L_2` 结构先验强力调制丘脑中继，降低欠定输入歧义 | 先验牵引下局部知觉匹配负荷可控 |
+| bottom-up 过载（先验失配） | 强感觉残差超出既有先验模板解释范围 | 高预测违背与在线重锚定负荷 |
+| 单向提取假设（过时管线模型） | 忽略下行反馈对感觉窗口的前置重塑 | 低估递归耦合与背景门控的真实作用（退除旧“对应 `d ≈ 0`”写法） |
 
 ## 【理论边界/防误用声明】
 - 不采纳“失认症=整体意识缺失”的推论：该条仅指对象结构化子功能异常。

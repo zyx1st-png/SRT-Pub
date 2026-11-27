@@ -1,8 +1,10 @@
 ---
 id: SRT-NEURO-AXIOMS-001
 type: theory
-tags: [Neuroscience, Bridge, Axioms, Hybrid]
-status: bridge_realign_v1
+tags: [Neuroscience, Bridge, Axioms, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-26
 layer: L1
 epistemic_layer: os
 claim_mode: bridge
@@ -12,10 +14,10 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 # SRT Neuroscience Axioms & Bridge
 
-> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Axioms (AI-Readable).
-> **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
+> **Claim-status note（`R4-C4` 同步，2026-11-26）**：This file is a **canonical-facing hybrid neuroscience bridge** (`canonical: false`), **not** an all-canonical definition source. Read with [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md) and [`SRT_Neuro_Axioms_Claim_Status.md`](SRT_Neuro_Axioms_Claim_Status.md). Per `R4-C4` calibrations: (1) `L_0 / L_1 / L_2` are three analytic aspects of one Selection reality (`Core_Law/SRT_Generative_Ontology_Spine.md §7`), not three ontic warehouses; (2) holism and local differentiability are mutually constitutive (biological developmental co-constitution $\neq$ universal cross-substrate inseparability); (3) energy-gradient difference is retained as a deeper physical generative mechanism candidate without being equated to `Selection`, canonical `d`, or `Ψ_f`.
+> **Version 2.1 (`R4-C4` Aligned Hybrid)**
+> **Part A** presents the Formal Bridge Propositions (AI-Readable; overdue `§8` claim-status downgrades applied).
+> **Part B** contains the Expanded Historical/Contextual Discourse (Human-Readable Context; not a canonical axiom source).
 
 ---
 
@@ -78,18 +80,19 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 ---
 
-### Ax-NEURO-2: Neural Domain Mapping Axiom (Manifold–Ignition–Priors)
-定义三域映射：
+### Ax-NEURO-2: Neural Domain Mapping Bridge (`P1-01` 校准：退除 `L_1 = 全局点燃子集`)
+在神经动力学分析面中建立三域映射（`L_0 / L_1 / L_2` 为同一选择现实的三分析面，`Spine §7`）：
 \[
-L_0^{neural}=\mathcal{M}\subset\mathbb{R}^N\quad (\text{所有可达发放模式流形})
+L_0^{neural}=\mathcal{M}\subset\mathbb{R}^N\quad (\text{当前可达候选发放模式流形})
 \]
 \[
-L_1^{neural}=\{s\in\mathcal{M}:\; \mathcal{A}(s)\ge \tau_{ignite}\}\quad (\text{全局点燃子集})
+L_1^{neural}=\{\text{实际发生的确定性神经/生理生成切片}\}\subset\mathcal{M},\qquad
+\mathcal{M}_{ignite}=\{s\in L_1^{neural}:\; \mathcal{A}(s)\ge \tau_{ignite}\}\subsetneq L_1^{neural}\quad (\text{全局点燃候选子集})
 \]
 \[
 L_2^{neural}=\text{Fix}(\hat{G}_\theta)\;\approx\;\text{Priors}(W,\vec{M})
 \]
-* **Implication（中文）**：意识不是“所有神经活动”，而是 \(L_0\) 流形上的选择锚定；结构化先验构成 \(L_2\) 收敛域。
+* **Implication（中文，`P1-01`）**：未进入意识前景的神经活动只要实际发生，依然属于 `L_1^{neural}` 现实显现面，严禁再把 `L_1` 普遍定义为全局点燃子集；须严格区分 `L_1` 实际显现 / 局部神经稳定化 / 认知前景化 / 全局点燃机制候选（`\mathcal{M}_{ignite}`）/ 前景生成中介 / `HP-B` 现象体验。结构化先验与可塑性沉积构成 `L_2` 约束域。
 
 ---
 
@@ -157,14 +160,20 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 ---
 
-### Ax-NEURO-5: Metabolic Friction Axiom (\(\Psi_f\) Coupling)
+### H-NEURO-5: Metabolic Friction Bridge & Energy-Gradient Candidate (legacy `Ax-NEURO-5`, `P1-05` 深化)
 
-**[R — 神经能量代谢研究追溯：Attwell & Laughlin 2001（突触传递能量代价）；Raichle & Gusnard 2002（脑默认网络代谢）；[H] — Ψ_f ∝ E_metabolic的SRT比例联结为新增预测]**
+**[R — 神经能量代谢研究追溯：Attwell & Laughlin 2001（突触传递能量代价）；Raichle & Gusnard 2002（脑默认网络代谢）；[H] — 代谢消耗与能量梯度不对称作为局部 `\Psi_f` 桥接代理及更底层物理生成机制候选（`R4-C4` 校准：退除旧版 `\Psi_f \equiv \int \|\nabla F\| dt` 严格等同号）]**
 
-定义本体论摩擦为代谢约束：
+在声明神经测量窗口与显式量纲桥接条件下，可将局部维护/重构负担与自由能梯度路径积分 / 实际代谢消耗建立候选桥接关系：
 \[
-\Psi_f \equiv \int_\gamma \|\nabla F\| \, dt \propto E_{metabolic}
+\widehat{\Psi}_{f,neural}^{metab} \sim \kappa_{dim}\int_\gamma \|\nabla F\| \, dt \;\longleftrightarrow\; E_{metabolic}
 \]
+其中 $\kappa_{dim}$ 为声明实验窗口内连接信息论无量纲变分自由能（nats）与物理能量消耗（Joules / ATP / CMRO₂）的**量纲与测量桥接系数**（依赖具名代谢通路、热力学温度及任务窗标定，非普适常数）。
+
+*`R4-C4` 五类物理/模型量区分与核心机制问题（`P1-05`）*：
+- **严格区分五类不同性质的量**：① 跨膜电化学梯度（离子输运物理条件）；② ATP 供应与代谢通量（组织维持资源条件）；③ 非平衡物理自由能差（特定热力学模型物理量）；④ 变分自由能（概率模型信息论目标）；⑤ 神经吸引子能量地形（特定宏观动力学有效描述）——不可混为同类变量；
+- **正面机制问题（排入 `R4-C5` `FB-C4-2`）**：*物理梯度差如何通过真实耦合、边界维持、差异感应、反馈调节与归一化，逐步形成对后续生成具有实际约束作用的组织关系？*
+- **硬推导边界**：在未完成独立理论推导与量纲/测量桥接论证前，**严禁将上述任一量直接等价于原初 `Selection`、规范 `d` 或规范 `\Psi_f`**（另受 `NEURAL16` BOLD–CMRO₂ 不确定性门与 `NEURAL21` REM 代谢支付解离约束）。
 
 *符号说明*：
 - $F$：自由能（对应Friston FEP中的变分自由能，或更一般的锚定代价势函数）
@@ -227,22 +236,22 @@ The threshold / phase-transition reading remains a modeling hypothesis; downstre
 
 ---
 
-### T-NEURO-2: Pathology Deviation Theorem (\(\Delta\theta\) Mapping)
-所有神经病理状态可视为参数空间偏离：
+### H-NEURO-Pathology-1: Pathology Parameter-Drift Modeling Lens (legacy `T-NEURO-2`)
+许多神经精神病理状态可在声明动力学模型中刻画为参数空间与锚定/门控结构的偏离（非双向充要定理）：
 \[
-\text{Pathology}\iff \theta=\theta_{healthy}+\Delta\theta
+\text{Pathology (modeled lens)} \sim \theta=\theta_{healthy}+\Delta\theta
 \]
-* **Implication（中文）**：病理不是“症状集合”，而是算子参数的拓扑偏移。
+* **Implication（中文）**：参数漂移与 `L_2` 硬化/失锚构成有价值的几何建模透镜，但**不构成**“病理当且仅当单一参数偏移”的排他性双条件还原（须结合身体、环境、关系与临床鉴别诊断）。
 
 ---
 
-### T-NEURO-3: Meso-Operator Theorem (Glia as \(\hat{G}_{meso}\))
-定义介观算子：
+### P-NEURO-Meso-1: Meso-Selection & Developmental Pruning Candidate (legacy `T-NEURO-3`)
+定义慢时标介观选择与发育式剪枝候选算子：
 \[
 \hat{G}_{meso}:\; L_2^{micro}\rightarrow L_2^{pruned}
 \]
-并以补体-胶质剪枝作为其物理实现。
-* **Implication（中文）**：神经选择不止发生在神经元级别；胶质系统构成慢时标的选择层。
+并以补体—胶质剪枝与发育式局部冗余清理（保留长程可迁移骨架，衔接 `AI/Architecture_Annex/01 §1`）作为其生物实现候选。
+* **Implication（中文）**：神经选择不止发生在快速神经元放电级别；星形胶质与小胶质系统构成慢时标的结构维持、历史资格（`NEURAL31`）与剪枝选择层。
 
 ---
 
@@ -253,21 +262,22 @@ The threshold / phase-transition reading remains a modeling hypothesis; downstre
 \]
 * **Implication（中文）**：深层回路不是“激活现象”，而是选择带宽的再分配机制。
 
-### T-NEURO-4: NCC Non-Equivalence Theorem（神经关联非等价定理，新增）
+### C-NEURO-NCC-1: NCC Non-Equivalence Conceptual Constraint (legacy `T-NEURO-4`)
 设 \(\mathcal{N}(t)\) 为神经轨迹记录，\(\mathcal{E}(t)\) 为体验显现：
 \[
 \mathcal{N}(t)\sim \mathcal{E}(t)\ \not\Rightarrow\ \mathcal{N}(t)=\mathcal{E}(t)
 \]
+* **Boundary（`R4-C4`）**：本条是概念性桥接约束（相关或可诱发不推出本体同一），与 `HP-B` 冻结边界及功能绑定 $\neq$ 现象绑定（`Def-AI-Con-3b`）一致。
 等价地，神经关联物是 \(\hat G_\theta\) 作用后的“轨迹尾迹”，而非选择动作本身。
 * **Implication（中文）**：可诱发某体验的刺激协议不等于已还原体验本体。
 
-### 分类映射表（Hart Ch.6 神经还原争议 → SRT）
+### 分类对照表（Hart Ch.6 神经还原争议 → SRT，`P1-03` 清理旧代理表）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 神经关联描述（NCC） | 低~中（观测侧） | Semi-open（测量回路） | payable |
-| 体验本体显现（L1 qualia） | 中~高（算子侧） | Open（跨域锚定） | payable / overloaded |
-| 还原论等同误用（NCC=体验） | 低 | Closed 倾向（单层化） | 被低估/遮蔽 |
+| 外部分类 | 分析层级与对象化位置 | 组织与测量边界（非规范 `d / Ψ_f` 等级映射） |
+|:--|:--|:--|
+| 神经关联描述（NCC） | 第三人称观测与测量回路侧 | 记录局部稳定化/路由足迹；相关或可诱发不推出现象同一（`C-NEURO-NCC-1`） |
+| 体验与前景中介窗口 | 操作位置重构与 `HP-B` 独立问题侧 | 区分功能绑定、前景生成中介与 `HP-B` 现象体验（不映射为固定 `d / Ψ_f` 区间） |
+| 还原论等同误用（NCC = 体验） | 忽略对象化与观察者位置切分 | 把测量足迹混同于体验本身，掩盖 `HP-B` 开放负担 |
 
 <br>
 
