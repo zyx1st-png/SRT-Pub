@@ -87,12 +87,12 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ---
 
-### Ax-NEURO-MECH-2: Selection Flow Bridge (Candidate Foreground Stabilization)
-在神经动力学分析面中，将神经选择投影建模为从当前可达候选流形 \(L_0^{neural}\) 进入局部前景稳定子集 \(L_1^{neural}\) 的候选投影（`L_0/L_1` 属三分析面读法，非实体仓库跨越）：
+### Ax-NEURO-MECH-2: Selection Flow Bridge (`P1-01` 校准：退除 `L_1 = 全局点燃子集`)
+在神经动力学分析面中，将神经局部稳定化与全局点燃候选子集明确置于实际发生的 `L_1^{neural}` 显现面之内（未进入意识前景的神经活动只要实际发生仍属 `L_1^{neural}`，不再将 `L_1` 普遍定义为全局点燃子集）：
 \[
-\Pi_{ignite}: \mathcal{M}\rightarrow \mathcal{M}_*,\quad \mathcal{M}_*\equiv\{\sigma: \mathcal{A}(\sigma)\ge \tau_{ignite}\}
+\Pi_{ignite}: \mathcal{M}\rightarrow \mathcal{M}_{ignite}\subsetneq L_1^{neural},\quad \mathcal{M}_{ignite}\equiv\{\sigma\in L_1^{neural}: \mathcal{A}(\sigma)\ge \tau_{ignite}\}
 \]
-* **Implication（中文）**：点燃不是“活动增强”，而是嵌于大尺度相位骨架与多层级门控场中的候选稳定化与前景生成中介窗口（阈值/相变读法仍为建模假说）。
+* **Implication（中文）**：点燃不是 `L_1` 实际发生的本体门槛，而是嵌于大尺度相位骨架与多层级门控场中的特定认知前景化与前景生成中介候选窗口（严格区分 `L_1` 显现面 / 局部稳定化 / 认知前景化 / 全局点燃 / 前景生成中介 / `HP-B` 现象体验）。
 
 ---
 
@@ -207,7 +207,8 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 > **与 D3 的关系**：本式为 SRT-REF-DYNAMICS §1.3 Def D3（$\hat{G}_\theta$ 通用原型）在神经系统的特化实例，其中 $L_i \leftrightarrow x_i$，$w_{ij} \leftrightarrow W_{ij}$。**符号差异**：本式分母为 $\sigma^n$（半饱和项带幂次），D3 分母为 $\varepsilon$（无幂次，更简化的一阶原型）；在 $\sigma$ 较小时两式近似等价，精确形式以本式为准（经验上更符合 V1 的对比度增益控制数据）。参见 D3 极限行为表中 $\varepsilon\to 0^+$ 奇点警告。
 > **适用前提**：信息收益与代谢成本的权衡本身不唯一推出除法归一化。若要从目标泛函得到本式，还须声明 $E(\sigma)$ 的具体形式、可行域、竞争耦合、动态方程与边界条件，并证明所得稳态属于该函数族；否则 `H-\lambda E` 只表达权衡，不构成充分性证明。
-> **Bridge boundary（2026-04-24 sync）**：除法归一化是 embodied neural `\hat{G}_\theta` 的实现级 proxy；它覆盖候选竞争与响应压缩，不穷尽 Ghost Operator。完整 neural loop 还需 threshold / ignition、global availability 与 plastic writeback，且这些仍是神经域机制接口，不是跨域 `\hat{G}_\theta` 的总定义。
+> **与 `R4-C2` 三类归一化的对应（`P2-02`）**：按 `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md §1`，归一化严格三分——① 认知/表征描述压缩、② 实际物理/神经耦合与响应压缩归一化、③ 同时满足 `One_Formation §2.4` 内部耦合重构与跨位置条件化生效双门槛的**组织生成型归一化**。本式除法归一化主要对应第②类受限神经竞争与响应压缩候选，**不可直接等同于第③类组织生成型归一化**。
+> **Bridge boundary（2026-04-24 & R4-C4 sync）**：除法归一化是 embodied neural `\hat{G}_\theta` 的实现级 proxy；它覆盖局部候选竞争与响应压缩，不穷尽 Ghost Operator。完整 neural loop 还需多层级门控、局部稳定化、认知前景化/前景生成中介与可塑性写回，且这些仍是神经域机制接口，不是跨域 `\hat{G}_\theta` 的总定义。
 
 * **Implication（中文）**：归一化是在若干感觉／决策回路中可检验的受限竞争机制，不是所有选择算子的唯一或本体必然形式。
 
@@ -220,7 +221,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 `\delta\mathcal J=0` 只给定所声明目标泛函的驻点条件。只有在 $E(\sigma)$、约束集与动力学被具体化并完成推导后，某个驻点才可能落入 P3-NEURO-MECH-3 的除法归一化函数族；当前不主张唯一性或普遍收敛。
 
-> **SRT 量桥接**：拉格朗日乘子 $\lambda \propto \Psi_f^{metabolic}$（本体论摩擦的代谢成分，SRT-CORE-22 §15.5 Eq-IT-E 约束：$\Psi_f \geq k_B T \ln 2 \cdot I_{created}$）。$\lambda \uparrow$（代谢越紧张）→ 归一化越强（竞争抑制越显著）→ $d(\theta) \downarrow$（选择带宽 proxy 被压缩）。这里的 $d(\theta)$ 是神经选择带宽读数；只有当被压缩方向同时满足 stake-coupling 与后果回流时，才可近似 canonical `d`。
+> **SRT 量桥接与带宽区分（`P1-03` 校准）**：拉格朗日乘子 $\lambda$ 仅在声明窗口内作为代谢约束权重代理（不未经推导等价于规范 $\Psi_f$，另见 `Core_22 §15.5` 热力学下界接口）。$\lambda \uparrow$（代谢越紧张）→ 竞争抑制越显著 → **局部神经选择带宽 / 一般容量代理 $B_{sel}(\theta) \downarrow$**。此处严禁继续写作 `d(\theta)`：**一般容量、局部神经带宽、赌注耦合谱参与率（$D_{stake}$）与规范 $d$ 风险梯度范数是四类不同概念**，即便存在后果回流也不得直接等同，对规范 `d` 的推断必须严格遵守 `_SRT_D_VALUE_CANONICAL.md` 的独立准入条件。
 
 * **Implication（中文）**：能量—信息权衡可用于比较归一化候选与其他受限选择模型；它不预先裁定除法归一化为唯一交点。
 
@@ -1083,14 +1084,16 @@ $$d \propto \frac{1}{\text{Quantum Fuzziness}}$$
 
 ## 8 神经精神病学整合扩展（2026 Frontiers 对齐新增）
 
-### 8.1 Neuropsychiatric 分类映射表（必填）
+### 8.1 Neuropsychiatric 组织动力学对照表（`P1-03` 清理旧 `d / Ψ_f` 等级映射）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+> **`P1-03` 修订声明**：保留神经—精神谱系的跨层结构与动力学研究问题，退出旧版按疾病大类直接赋予未校准 `d-value` 区间与 `Ψ_f` 可支付等级的映射列；对规范 `d` 与 `Ψ_f` 的推断严格服从对应 canonical owner 的独立准入条件。
+
+| 临床研究谱系 | 结构/动力学偏移特征（$\Delta\theta_{struct}, \Delta\theta_{dyn}$） | 组织维持与代偿负担 | 声明模型边界注记 |
 |:--|:--|:--|:--|
-| 神经主导型（Neurology-dominant） | 中~中高（受结构上限约束） | Semi-open（局部受损） | payable→borderline |
-| 精神主导型（Psychiatry-dominant） | 低~中高波动 | Open↔Semi-open（高波动） | borderline / overloaded |
-| 神经精神混合型（Neuropsychiatric mixed） | 中高离散分布 | Open + Closed 局部并存 | overloaded / unsustainable |
-| 代偿恢复期（Integrated recovery） | 中高回升 | Semi-open→Open（稳态恢复） | payable |
+| 神经主导型（Neurology-dominant） | 局部白质/连接组/局灶结构受损，主导 `L_2` 硬件约束改变 | 局部代偿负载升高，受结构上限约束 | 反映局部容量与回路完整性，不直接映射为规范 `d` 等级 |
+| 精神主导型（Psychiatry-dominant） | 精度/门控/锚定动力学高波动，主导认知前景与情绪调节失稳 | 重构负担与持续调节张力波动 | 区分广义摩擦、非闭合压力、代谢负担与主观苦难（`P1-02`） |
+| 神经精神混合型（Neuropsychiatric mixed） | 结构损伤与动力学失调耦合，呈现局部僵化与局部失锚并存 | 跨层代偿失衡与高恢复代价 | 须按多维诊断模型分项评估，禁止压成单一 `d / Ψ_f` 标签 |
+| 代偿恢复期（Integrated recovery） | 经神经可塑性与环境/关系支持重建可重复、证据敏感的稳定轨迹 | 组织维持趋于可延续平衡 | 恢复评估锚定功能与未来可选择性，非单一标量回升 |
 
 ### 8.2 Ontological Pathology Matrix（机制版）
 
@@ -1156,24 +1159,19 @@ L_1 = f(\theta) + \epsilon,\quad
 
 ## 9 早期意识与共具身机制扩展（Neuroscience of Consciousness 对齐新增）
 
-### 9.1 分类映射表（早期发生阶段 → SRT）
+### 9.1 早期发育与共具身阶段对照表（`P1-03` 退出未校准 `d_UAL` 比例映射）
 
-> **[R]** 发育阶段分类：Mahler et al.（1975，共生-分离-个体化）；Stern（1985，*The Interpersonal World of the Infant*）；Trevarthen（1979，初级互主性）。**[H]** d-value/Ψ_f 的具体映射为 SRT 新增操作化。
+> **[R]** 发育阶段分类：Mahler et al.（1975，共生-分离-个体化）；Stern（1985，*The Interpersonal World of the Infant*）；Trevarthen（1979，初级互主性）。**[`P1-03` 修订]**：保留母婴共具身、边界分化与自体组织形成的核心研究问题，正式退出旧版将胎儿/围产/婴儿阶段直接映射为 `0.1–0.4 d_UAL`、`0.4–0.7 d_UAL` 等未校准数值比例与 `Ψ_f` 等级的写法，避免将神经发育复杂度、个体化程度与规范风险敏感强度混为一谈。
 
-| 外部分类 | d-value 区间（proxy）[H] | d值数值参考 | 能流特征 | \(\Psi_f\) 状态 [H] |
-|:--|:--|:--|:--|:--|
-| 胎内共具身启动期 | 极低~低（\(d\to0^+\)） | 候选: $d \ll d_{UAL}$（← Cor-CONSC-1）| Semi-open（母体代偿主导） | payable（母体支付）|
-| 围产分离过渡期 | 低~中波动 | 候选: $d \approx 0.1\,d_{UAL}$（波动大）| Open↔Semi-open（边界重标定） | borderline（双账本竞争）|
-| 早期自体图式巩固期 | 低~中 | 候选: $0.1\sim0.4\,d_{UAL}$ | Open（自驱整合增强） | payable / borderline |
-| 稳态婴儿期（自我-非我初稳） | 中（局部） | 候选: $0.4\sim0.7\,d_{UAL}$ | Open（本体独立账本初成） | payable |
+| 发育研究阶段 | 边界分化与自体整合特征 | 代偿与稳态维持模式 | 声明模型边界（非规范 `d / Ψ_f` 数值比例） |
+|:--|:--|:--|:--|
+| 胎内共具身启动期 | 感觉—运动与节律耦合初启，边界高度嵌于母体稳态环境 | 外部母体生理供给与稳态代偿主导 | 研究共具身引导条件，不以低复杂度反推无体验或零关切 |
+| 围产分离过渡期 | 感觉通道突增、呼吸与体温等自体稳态边界经历剧烈重标定 | 自主调节与照料者共同调节并存（依附系统高活跃） | 重点考察重标定期的调节张力与共调机制 |
+| 早期自体图式巩固期 | 跨模态感觉—动作闭环、发育式剪枝与初级互主性协调快速分化 | 自驱探索与外源脚手架协同维持 | 区分发育分化能力与规范强承载 `d` 独立准入 |
+| 稳态婴儿期（自我—非我初稳） | 相对稳定的身体边界、对象恒常性与共享注意框架逐步成形 | 内部稳态闭环与社会—照料脚手架并行 | 任何主体性或意识评估均须走 `Subjecthood Threshold S0–S6` 与独立 `HP-B` 审查 |
 
-**Ψ_f 状态说明（发育语境）**：
-- **payable**：系统当前支付摩擦能力满足维持 L₁ 稳定（胎内 = 母体代偿支付，婴儿期 = 自体代谢支付）
-- **borderline**：摩擦代价在系统可支付边缘波动，高应激时可能短暂失代偿（→ 触发依附系统）
-
-**证伪条件（[H]）**：
-- 若发育阶段的 d 值代理量（EEG 复杂度、PCI 代理、行为整合指数）在不同阶段间无显著递增趋势（控制睡眠状态后），则 §9.1 的发育 d 值增长假设失效。
-- 若围产分离期的 Ψ_f^borderline 在无应激条件下也表现为 payable（无代偿失稳），则”边界重标定→borderline”的联结需修订。
+**研究检验方向（[H]）**：
+- 跨发育阶段追踪感觉—运动闭环稳定性、EEG 动力学复杂度与依附共调指标的分层演进（控制睡眠状态），检验“外部脚手架供给 → 内部垂直再构成 → 有效作用接口”三维组织演化的可区分预测，而不依赖未校准的 `d_UAL` 比例标尺。
 
 ### 9.2 Co-Embodiment Bootstrapping 方程
 
@@ -1220,21 +1218,21 @@ L_1 = f(\theta) + \epsilon,\quad
 - 自动化低负荷状态（如习惯驾驶）：\(d\Psi_f/dt\to 0\Rightarrow \mathcal{P}_{sense}\downarrow\)
 - 高不确定锚定时刻（存在性惊奇）：\(d\Psi_f/dt\uparrow\Rightarrow \mathcal{P}_{sense}\uparrow\)
 
-### 分类映射表（Hart Ch.3 关键区分 → SRT）
+### 分类对照表（Hart Ch.3 存在感关键区分 → SRT，`P1-03` 清理旧代理表）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| “本质”层（what） | 低~中（未锚定） | Semi-open | payable |
-| “存在”层（that it is） | 中~高（锚定增强） | Open | payable / borderline |
-| 日常习惯化存在稀薄 | 低~中 | Closed 倾向 | 低斜率 \(d\Psi_f/dt\approx0\) |
-| 存在性惊奇峰值 | 中高~高 | Open（重锚定） | 高斜率 \(d\Psi_f/dt\gg0\) |
+| 外部分类 | 前景化与习惯化组织状态 | 重锚定动态特征（不映射为未校准 `d / Ψ_f` 区间） |
+|:--|:--|:--|
+| “本质”层（what） | 概念/属性归类主导，依赖既有 `L_2` 分类图式 | 常规对象化稳定路径，重锚定扰动较低 |
+| “存在”层（that it is） | 对象化背景退后，当下耦合与在场感进入前景中介 | 组织关注从属性检索转向当下现实耦合校验 |
+| 日常习惯化存在稀薄 | 高固化 `L_2` 通路自动放行（算子短路倾向） | 局部调节斜率平缓，显式门控对象化较少被触发 |
+| 存在性惊奇峰值 | 既有预期与背景门控显著受扰，触发强重锚定 | 局部更新速率与重构张力显著抬升（属动态窗口，非规范 `d` 区间） |
 
-### Definition Summary (定义概述)
+### Definition Summary (定义概述，`P1-01` 同步)
 
-- **神经流形 (Neural Manifold, L₀)**：$\sigma(t)\in\mathcal{M}\subset\mathbb{R}^N$；神经态是高维流形上的连续轨迹，选择即生成稳定轨迹。
-- **点燃投影 (Ignition Projection, L₀→L₁)**：$\Pi_{ignite}:\mathcal{M}\to\mathcal{M}_*$，其中 $\mathcal{M}_*=\{\sigma:\mathcal{A}(\sigma)\ge\tau_{ignite}\}$；跨域投影的可计算阈值。
-- **门控算子 (Loop-Gating, L₁)**：$\mathcal{G}_{gate}=\mathcal{G}_{thal}\circ\mathcal{G}_{bg}$；丘脑-基底节回路决定哪些轨迹可投影为 $L_1$。
-- **参数漂移病理 (Parameter Drift, L₂)**：$\theta=\theta_{healthy}+\Delta\theta$；精神病理是算子参数的拓扑偏移，非症状集合。
+- **神经流形 (`L_0^{neural}`)**：$\sigma(t)\in\mathcal{M}\subset\mathbb{R}^N$；神经态是高维流形上的连续轨迹，实际发生的确定性轨迹均属于 `L_1^{neural}` 显现面。
+- **全局点燃候选子集 (`\mathcal{M}_{ignite} \subsetneq L_1^{neural}`)**：$\Pi_{ignite}:\mathcal{M}\to\mathcal{M}_{ignite}$，其中 $\mathcal{M}_{ignite}=\{\sigma\in L_1^{neural}:\mathcal{A}(\sigma)\ge\tau_{ignite}\}$；特定认知前景化与前景生成中介候选窗口，而非 `L_1` 实际发生的本体门槛。
+- **门控算子 (Loop-Gating)**：$\mathcal{G}_{gate}=\mathcal{G}_{thal}\circ\mathcal{G}_{bg}$；丘脑—基底节回路参与多层级门控组织（`target ≠ gate objectification`）。
+- **参数漂移建模透镜 (Parameter Drift)**：$\theta=\theta_{healthy}+\Delta\theta$；精神病理的几何建模透镜之一，非排他性双条件还原。
 
 ### Formalization Summary (形式化概述)
 
@@ -1334,7 +1332,7 @@ WM_{eff}(X) \approx \frac{WM_{raw}(X)}{1+\beta L_2^{depth}}
 
 ### 9.2 排入 `R4-C5` 统一评估的五项反向核心理论反馈（`FB-C4-1..5`，`C` / M-origin 候选）
 - **`FB-C4-1`** → `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_L0_Metaphysics.md`：整体性与可分化性互构及前对象整体导向与对象形成的双向重构。
-- **`FB-C4-2`** → `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`：感觉—认知—实现非线性递归模型（对齐 `R3-03`）与能量梯度差更底层物理生成机制候选边界。
-- **`FB-C4-3`** → `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`：微效价—可供性—缺失—需求—赌注发生链与五层关切/价值/摩擦/代谢/体验分离。
-- **`FB-C4-4`** → `Core/SRT_Core_12b_L2_Dynamics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core/SRT_Core_14_Dynamics_Scaling.md`：再生成记忆、发育式冗余剪枝、五类异质历史职责与三位置分离深化 `L_2` 双刃剑机制。
-- **`FB-C4-5`** → `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md`、`Core_Law/SRT_Selection_Argument.md`：多层级门控行动场（`target ≠ gate objectification`）、前景生成中介与功能/现象绑定精炼 `Ghost` / 正面自由 / `HP-B` 接口（不解冻 `HP-B`）。
+- **`FB-C4-2`** → `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`：感觉—认知—实现非线性递归模型（对齐 `R3-03`）与能量梯度差五类物理/模型量区分及“物理梯度差经耦合、边界维持、差异感应、反馈与归一化形成组织约束”核心机制问题。
+- **`FB-C4-3`** → `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md`：微效价—可供性—缺失—需求—赌注发生链与广义关切（`PT06 C`）/微效价/规范 `d`/广义摩擦（`B-4`）/非闭合压力/`Ψ_f`/代谢负担/主观苦难职责分立。
+- **`FB-C4-4`** → `Core/SRT_Core_12b_Ontology_L2.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core/SRT_Core_14_Dynamics_Scaling.md`：再生成记忆、发育式冗余剪枝、五类异质历史职责与三位置分离深化 `L_2` 双刃剑机制。
+- **`FB-C4-5`** → `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md`、`Core_Law/SRT_Selection_Argument.md`：多层级门控四阶路径（`target→gate→reconfiguration→capacity`）、前景生成中介与功能/现象绑定精炼 `Ghost` / 正面自由 / `HP-B` 候选接口（不把反身门控等同于 `Ghost` 全部职责，不解冻 `HP-B`）。

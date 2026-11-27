@@ -76,7 +76,7 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Def-Phi-Unity: Φ as Topological Unity Metric ($\Phi$ 作为拓扑统一性度量)
 
-> [R→Tononi 2004 *BMC Neuroscience*（IIT原始Φ定义）; Tononi 2016 *Neuroscience of Consciousness*（IIT-3.0）; Casali et al. 2013 *Science TM*（PCI=Φ代理，麻醉下下降）; Sarasso et al. 2015 *Current Biology*（无梦睡眠Φ代理下降）; Gazzaniga & LeDoux 1978（裂脑神经解剖）]
+> [R→Tononi 2004 *BMC Neuroscience*（IIT原始Φ定义）; Tononi 2016 *Neuroscience of Consciousness*（IIT-3.0）; Casali et al. 2013 *Science TM*（PCI 作为 TMS–EEG 扰动复杂度经验指标，在麻醉下下降；**`P2-03` 校准：区分 PCI 扰动复杂度与 IIT 模型量 $\Phi$，不默认 PCI 是 $\Phi$ 的直接测量代理**）; Sarasso et al. 2015 *Current Biology*（无梦睡眠 PCI 下降）; Gazzaniga & LeDoux 1978（裂脑神经解剖）]
 
 **Formal Definition**: 在 SRT 中，整合信息 ($\Phi$) 不是意识本身，而是衡量 $\hat{G}_\theta$ 如何稳健地将其组成子算子绑定为一个统一拓扑折叠的代数拓扑测度。
 $$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \parallel \prod_{i \in P} P_i(L_1^{(i)} \mid L_0^{(i)}) \right)$$

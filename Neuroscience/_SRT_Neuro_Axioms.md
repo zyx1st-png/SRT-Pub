@@ -80,18 +80,19 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 ---
 
-### Ax-NEURO-2: Neural Domain Mapping Axiom (Manifold–Ignition–Priors)
-定义三域映射：
+### Ax-NEURO-2: Neural Domain Mapping Bridge (`P1-01` 校准：退除 `L_1 = 全局点燃子集`)
+在神经动力学分析面中建立三域映射（`L_0 / L_1 / L_2` 为同一选择现实的三分析面，`Spine §7`）：
 \[
-L_0^{neural}=\mathcal{M}\subset\mathbb{R}^N\quad (\text{所有可达发放模式流形})
+L_0^{neural}=\mathcal{M}\subset\mathbb{R}^N\quad (\text{当前可达候选发放模式流形})
 \]
 \[
-L_1^{neural}=\{s\in\mathcal{M}:\; \mathcal{A}(s)\ge \tau_{ignite}\}\quad (\text{全局点燃子集})
+L_1^{neural}=\{\text{实际发生的确定性神经/生理生成切片}\}\subset\mathcal{M},\qquad
+\mathcal{M}_{ignite}=\{s\in L_1^{neural}:\; \mathcal{A}(s)\ge \tau_{ignite}\}\subsetneq L_1^{neural}\quad (\text{全局点燃候选子集})
 \]
 \[
 L_2^{neural}=\text{Fix}(\hat{G}_\theta)\;\approx\;\text{Priors}(W,\vec{M})
 \]
-* **Implication（中文）**：意识不是“所有神经活动”，而是 \(L_0\) 流形上的选择锚定；结构化先验构成 \(L_2\) 收敛域。
+* **Implication（中文，`P1-01`）**：未进入意识前景的神经活动只要实际发生，依然属于 `L_1^{neural}` 现实显现面，严禁再把 `L_1` 普遍定义为全局点燃子集；须严格区分 `L_1` 实际显现 / 局部神经稳定化 / 认知前景化 / 全局点燃机制候选（`\mathcal{M}_{ignite}`）/ 前景生成中介 / `HP-B` 现象体验。结构化先验与可塑性沉积构成 `L_2` 约束域。
 
 ---
 
@@ -159,18 +160,20 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 ---
 
-### H-NEURO-5: Metabolic Friction Bridge & Energy-Gradient Candidate (legacy `Ax-NEURO-5`)
+### H-NEURO-5: Metabolic Friction Bridge & Energy-Gradient Candidate (legacy `Ax-NEURO-5`, `P1-05` 深化)
 
 **[R — 神经能量代谢研究追溯：Attwell & Laughlin 2001（突触传递能量代价）；Raichle & Gusnard 2002（脑默认网络代谢）；[H] — 代谢消耗与能量梯度不对称作为局部 `\Psi_f` 桥接代理及更底层物理生成机制候选（`R4-C4` 校准：退除旧版 `\Psi_f \equiv \int \|\nabla F\| dt` 严格等同号）]**
 
-在声明神经测量窗口内，可将局部锚定维护负担与自由能梯度路径积分 / 代谢消耗建立桥接代理关系：
+在声明神经测量窗口与显式量纲桥接条件下，可将局部维护/重构负担与自由能梯度路径积分 / 实际代谢消耗建立候选桥接关系：
 \[
-\widehat{\Psi}_{f,neural}^{metab} \sim \int_\gamma \|\nabla F\| \, dt \propto E_{metabolic}
+\widehat{\Psi}_{f,neural}^{metab} \sim \kappa_{dim}\int_\gamma \|\nabla F\| \, dt \;\longleftrightarrow\; E_{metabolic}
 \]
+其中 $\kappa_{dim}$ 为声明实验窗口内连接信息论无量纲变分自由能（nats）与物理能量消耗（Joules / ATP / CMRO₂）的**量纲与测量桥接系数**（依赖具名代谢通路、热力学温度及任务窗标定，非普适常数）。
 
-*`R4-C4` 双重边界（2026-11-26）*：
-- **正面研究价值**：保留**能量梯度差**（跨膜电化学梯度、ATP/CMRO₂ 代谢流不对称、非平衡自由能差）作为跨物理—生命—神经的**更底层物理生成机制候选**，不预先压扁为仅充当测量代理；
-- **硬推导边界**：在未完成独立理论推导与论证前，**严禁将能量梯度差、变分自由能 $F$ 或代谢消耗 $E_{metabolic}$ 直接等价于原初 `Selection`、规范 `d` 或规范 `\Psi_f`**（另受 `NEURAL16` BOLD–CMRO₂ 不确定性门与 `NEURAL21` REM 代谢支付解离约束）。
+*`R4-C4` 五类物理/模型量区分与核心机制问题（`P1-05`）*：
+- **严格区分五类不同性质的量**：① 跨膜电化学梯度（离子输运物理条件）；② ATP 供应与代谢通量（组织维持资源条件）；③ 非平衡物理自由能差（特定热力学模型物理量）；④ 变分自由能（概率模型信息论目标）；⑤ 神经吸引子能量地形（特定宏观动力学有效描述）——不可混为同类变量；
+- **正面机制问题（排入 `R4-C5` `FB-C4-2`）**：*物理梯度差如何通过真实耦合、边界维持、差异感应、反馈调节与归一化，逐步形成对后续生成具有实际约束作用的组织关系？*
+- **硬推导边界**：在未完成独立理论推导与量纲/测量桥接论证前，**严禁将上述任一量直接等价于原初 `Selection`、规范 `d` 或规范 `\Psi_f`**（另受 `NEURAL16` BOLD–CMRO₂ 不确定性门与 `NEURAL21` REM 代谢支付解离约束）。
 
 *符号说明*：
 - $F$：自由能（对应Friston FEP中的变分自由能，或更一般的锚定代价势函数）
@@ -268,13 +271,13 @@ The threshold / phase-transition reading remains a modeling hypothesis; downstre
 等价地，神经关联物是 \(\hat G_\theta\) 作用后的“轨迹尾迹”，而非选择动作本身。
 * **Implication（中文）**：可诱发某体验的刺激协议不等于已还原体验本体。
 
-### 分类映射表（Hart Ch.6 神经还原争议 → SRT）
+### 分类对照表（Hart Ch.6 神经还原争议 → SRT，`P1-03` 清理旧代理表）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 神经关联描述（NCC） | 低~中（观测侧） | Semi-open（测量回路） | payable |
-| 体验本体显现（L1 qualia） | 中~高（算子侧） | Open（跨域锚定） | payable / overloaded |
-| 还原论等同误用（NCC=体验） | 低 | Closed 倾向（单层化） | 被低估/遮蔽 |
+| 外部分类 | 分析层级与对象化位置 | 组织与测量边界（非规范 `d / Ψ_f` 等级映射） |
+|:--|:--|:--|
+| 神经关联描述（NCC） | 第三人称观测与测量回路侧 | 记录局部稳定化/路由足迹；相关或可诱发不推出现象同一（`C-NEURO-NCC-1`） |
+| 体验与前景中介窗口 | 操作位置重构与 `HP-B` 独立问题侧 | 区分功能绑定、前景生成中介与 `HP-B` 现象体验（不映射为固定 `d / Ψ_f` 区间） |
+| 还原论等同误用（NCC = 体验） | 忽略对象化与观察者位置切分 | 把测量足迹混同于体验本身，掩盖 `HP-B` 开放负担 |
 
 <br>
 

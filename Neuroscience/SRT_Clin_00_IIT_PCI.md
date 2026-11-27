@@ -1,8 +1,10 @@
 ---
 id: SRT-CLIN-00
 type: theory
-tags: [IIT, PCI, Blindsight, Metrics, Hybrid]
-status: active_v1
+tags: [IIT, PCI, Blindsight, Metrics, Hybrid, R4-C4]
+status: active
+version: v2
+updated: 2026-11-27
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
@@ -565,13 +567,16 @@ F_{avail}(t) < \int_{t_0}^{t} \Psi_f\big(\hat G_\theta(\tau)\big)\,d\tau
 \]
 SRT 立场：意识是跨域选择事件（\(L_0\to L_1\)），脑区为参数与瓶颈节点，而非单点发生源。
 
-### 分类映射表（Consciousness States in pDOC Context → SRT）
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|---|---|---|---|
-| 健康清醒（高代谢高连接） | 中~高 | Open / Semi-open（协同稳态） | payable |
-| 轻度受损/亚临床波动 | 中回落 | Semi-open→Closed 倾向 | borderline |
-| pDOC（低代谢+低连接+低振幅） | 低 | Closed（碎片化活动） | overloaded（破产风险） |
-| 麻醉/深抑制状态（可逆） | 低（暂态） | Closed（外源抑制） | 受控低支付 |
+### 分类对照表（Consciousness States in pDOC Context → SRT，`P1-03 / P2-03` 同步）
+
+> **`P1-03 / P2-03` 修订声明**：严格区分 IIT 整合信息量（`Φ`，特定模型内内在因果整合度量）与 **PCI**（TMS–EEG 扰动时空复杂度，**不默认 PCI 是 `Φ` 的直接测量代理**），并退出旧版对 pDOC 状态直接赋予未校准 `d-value` 区间与 `Ψ_f` 可支付标签的写法。
+
+| 外部分类 | 网络整合与代谢动态特征 | 扰动响应（PCI）与可恢复性窗口（非规范 `d / Ψ_f` 区间） |
+|---|---|---|
+| 健康清醒（高代谢高连接） | 跨区协同稳态与宽带动力学整合保持 | 高扰动响应复杂度与稳健前景中介窗口 |
+| 轻度受损 / 亚临床波动 | 连接与代谢稳态波动、局部稳定化易受扰 | 扰动复杂度波动，须追踪恢复弹性而非单一标量 |
+| pDOC（低代谢+低连接+低振幅） | 大尺度网络碎片化与低代谢驱动 | 低扰动响应（仍须防 CMD 隐蔽意识，不以单次读数关闭 `HP-B`） |
+| 麻醉 / 深抑制状态（可逆） | 外源药理抑制引起大尺度动态失稳与行进波重组 | 可逆性低扰动复杂度（属药理可逆动力学状态，非零 `d` 证明） |
 
 ### [Lineage/Source]
 - Popular Mechanics（2026）: *Scientists Are Tracking Down the Exact Location of Human Consciousness*（基于 Frontiers in Neuroscience 探索性研究报道）。

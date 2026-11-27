@@ -42,7 +42,8 @@ CURRENT IMMEDIATE TASK
      (1) R4-C1：关系性个体化、协同共选与多重垂直参与、正面自由与关系性时间；
      (2) R4-C2：物理—生命—社会三项跨尺度主线（依赖重组/归一化/非阶梯五类能力）；
      (3) R4-C3（FB-C3-1..4）：可组合三维度组织形态与七层异质历史载体、四层级比对生成+留存位置、AI 能力解耦研究窗口、非固定分工的人机共同生成与双向 AI 三型中介；
-     (4) R4-C4（FB-C4-1..5）：整体性与可分化性互构及前对象整体生成（→ One_Formation/Spine/L0）、感觉—认知—实现递归耦合与能量梯度差更底层物理生成机制候选（→ Spine/Core_21/Core_25）、微效价发生链与五层关切/价值/摩擦/代谢/体验分离（→ D_VALUE/PSI_F/Suffering）、再生成记忆/发育剪枝/历史五职责与三位置深化 L2 双刃剑机制（→ Core_12b/Occlusion/Core_14）、多层级门控行动场[target≠gate objectification]/前景生成中介与功能vs现象绑定精炼 Ghost/自由/HP-B 接口（→ Core_13a/Agency_Subjecthood/HardProblem/Selection_Argument）；
+     (4) R4-C4（FB-C4-1..5）：整体性与可分化性互构及前对象整体生成（→ One_Formation/Spine/L0）、感觉—认知—实现递归耦合与能量梯度差五类量区分及经耦合/边界/反馈形成组织约束机制（→ Spine/Core_21/Core_25）、微效价发生链与广义关切/微效价/广义摩擦/非闭合压力/Ψ_f/代谢/苦难职责分立（→ D_VALUE/PSI_F/Suffering）、再生成记忆/发育剪枝/历史五职责与三位置深化 L2 双刃剑机制（→ Core_12b_Ontology_L2/Occlusion/Core_14）、多层级门控四阶路径[target→gate→reconfiguration→capacity]/前景生成中介与功能vs现象绑定精炼 Ghost/自由/HP-B 候选接口（→ Core_13a/Agency_Subjecthood/HardProblem/Selection_Argument）；
+  -> R4-C5 跨域核心理论综合三大总主线：① 整体如何生成局部相对独立性，局部能力又如何反向组织整体；② 前景如何成为多个生成关系的共同生成中介（而非仅为信息通达）；③ 生成结果如何成为新的生成条件，并进一步形成改变生成条件的能力；
 
 ACTIVE NOW = R4-C 领域层分波次双向重构执行期（R4-C1/R4-C2/R4-C3/R4-C4 已落盘，下一步 R4-C5 灵性实践与全仓收口；不启 R5、不解冻 HOLD）;
 R4-C 各波次合并 / R5 = 须各自完成独立评审与门控后依次推进;

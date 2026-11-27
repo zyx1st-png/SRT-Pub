@@ -42,30 +42,34 @@ machine_summary: >
 1. **整体性与可分化性并不矛盾（Holism & Differentiability Are Mutually Constitutive）**：
    - 神经科学重构不把感觉、认知、价值、意愿与意识预设为彼此独立的原初模块再拼装；同时，**也不把生物发生上的同源共构（developmental co-constitution）升格为跨底物的普遍不可分定律**。
    - 必须正面吸收功能解离（盲视、述情障碍、裂脑、习惯/策略解离、麻醉期局部加工保留）、发育分化、损伤后功能重组及跨底物（生物 vs 人工）对照，研究整体生成如何分化出相对独立的局部能力，以及局部能力如何通过相互作用反向重构整体。
-2. **能量梯度差的双重边界（Energy-Gradient Difference Guard）**：
-   - 保留“能量梯度差”作为**更底层物理生成机制候选**的正面研究价值，不预先将其压扁为仅充当测量代理；
-   - **硬禁令**：在未完成独立理论推导与论证前，**严禁将能量梯度差、代谢耗散或变分自由能直接等价于 `Selection`、规范 `d` 或规范 `Ψ_f`**。
+2. **能量梯度差的双重边界与五类物理/模型量区分（Energy-Gradient Difference Guard, `P1-05`）**：
+   - 保留“能量梯度差”作为**更底层物理生成机制候选**的正面研究价值（核心研究问题：*物理梯度差如何通过真实耦合、边界维持、差异感应、反馈调节与归一化，逐步形成对后续生成具有实际约束作用的组织关系？*），不预先将其压扁为仅充当测量代理；
+   - **严格区分五类不同性质的量**：跨膜电化学梯度（驱动离子输运的物理条件）、ATP 供应与代谢通量（组织维持与活动的资源条件）、非平衡物理自由能差（热力学模型下的物理量）、变分自由能（概率模型下的信息论目标）、神经吸引子能量地形（特定动力学模型中的有效描述），禁止混为一谈；
+   - **硬禁令**：在未完成独立理论推导与量纲/测量桥接论证前，**严禁将上述任一量直接等价于 `Selection`、规范 `d` 或规范 `Ψ_f`**。
 3. **正面深化但暂不确立普遍必然性的四大方向**：
-   - 效价优先、前对象整体生成、显著性粗粒化与具身骨架均为 `R4-C4` 正面深化的核心理论主线，但当前**不提前确立其跨全部认知过程或跨全部底物的普遍必然性**（例如须正视生物视觉背侧通路等弱效价感知不变性与人工非情感比对的经验边界）。
-4. **`C-A` Scope Guard & `Spine §7` Analytic-Aspect Guard**：
-   - 更高的神经整合度、场相干、全局通达、PCI/Φ 或更多可达路径不自动推出规范 `d↑` 或宇宙全局最优；
-   - `L_0 / L_1 / L_2` 在神经域中同样是同一选择现实的**三分析面**，不得将神经点燃写成“跨越 `L_0→L_1` 实体仓库门槛”。
+   - 效价优先、前对象整体生成、显著性粗粒化与具身骨架均为 `R4-C4` 正面深化的核心理论主线，但当前**不提前确立其跨全部认知过程或跨全部底物的普遍必然性**（其中效价研究严格区分发育先后、在线对象形成参与、对特定认知的构成性作用与 `HP-B` 主观体验四个问题）。
+4. **`C-A` Scope Guard 与显现/前景化/意识六分护栏（`Spine §7`, `P1-01`）**：
+   - 更高的神经整合度、场相干、全局通达、PCI/Φ 或更多可达路径不自动推出规范 `d↑` 或宇宙全局最优；且 **IIT `Φ`（内在因果整合模型量）$\neq$ PCI（TMS–EEG 扰动复杂度）**，不默认 PCI 是 `Φ` 的直接测量代理；
+   - `L_0 / L_1 / L_2` 是同一选择现实的三分析面；未进入意识前景的神经活动只要实际发生即属于 `L_1` 显现面，严禁再将 `L_1` 普遍定义为全局点燃子集（严格区分 `L_1` 实际显现 / 局部神经稳定化 / 认知前景化 / 全局点燃机制候选 / 前景生成中介 / `HP-B` 现象体验）。
 
 ---
 
-## 2. High-Risk Claim Classes & Five-Layer Value/Friction Separation
+## 2. High-Risk Claim Classes & Conceptual Responsibility Separation (`P1-02`)
 
-### 2.1 Five-Layer Separation: Concern, Canonical `d`, Friction, Metabolic Burden, and Phenomenal Experience
+### 2.1 Preserving Distinct Responsibilities: Concern, Microvalence, Canonical `d`, Friction, Payability, Metabolism, and Suffering
 
-In all `R4-C4` neuroscience prose, keep five layers strictly distinct even where they co-evolve in biological organisms:
+In all `R4-C4` neuroscience prose, preserve each concept's distinct theoretical duty (never re-merging `PT06 C` generalized concern with microvalence, and never re-merging `R3-08 / B-4` generalized friction with `Ψ_f` payable impedance):
 
-| Layer | Exact Scope | Forbidden Collapse |
+| Concept | Exact Theoretical Duty | Forbidden Collapse |
 |---|---|---|
-| **1. 广义关切 / 趋避倾斜（`PT06 C` / 微效价）** | Embodied minimal approach–avoidance / viability bias shaping salience & affordance | Do not equate directly with canonical stake-coupled `d` or conscious emotion |
-| **2. 规范强承载 `d-value`** | Non-substitutable stake-coupled consequence sensitivity (`_SRT_D_VALUE_CANONICAL.md`) | `d ≠ Φ`, `d ≠ PCI`, `d ≠ salience`, `d ≠ reward`, `d ≠ arousal`, `d ≠ attention` |
-| **3. 一般构成性摩擦（`B-4` / `Ψ_f`）** | Selection & reconfiguration payability burden (`_SRT_PSI_F_CANONICAL.md`) | `Ψ_f ≠ free energy`, `Ψ_f ≠ prediction error`, `Ψ_f ≠ pain`, `Ψ_f ≠ metabolism` |
-| **4. 代谢与热力学可支付负担** | Energy-gradient / ATP / CMRO₂ / recovery cost supporting maintenance & plasticity (`Core_25`) | Candidate substrate / mechanism & local proxy only; never bare identity with `Ψ_f` or `Selection` |
-| **5. 主观情感与现象体验（`HP-B`）** | First-person felt quality / phenomenal presence (`Philosophy/SRT_HardProblem_Epistemology.md`) | Remains **`OPEN / FROZEN`**; functional binding, valence bias, or internal monitoring do not close `HP-B` |
+| **广义关切（`PT06 C`）** | Sensitivity to generative opportunity cost, exploration, new opportunity formation, and future generative conditions | Not exhausted by biological survival bias or microvalence |
+| **微效价（Microvalence）** | Local approach–avoidance affective slant participating in specific biological perception/cognition windows | One biological realization window; does **not** substitute for generalized concern or entail `HP-B` |
+| **规范 `d-value`** | Risk-sensitivity strength inside a declared strong-bearing model (`_SRT_D_VALUE_CANONICAL.md` independent admission) | `d ≠ Φ`, `d ≠ PCI`, `d ≠ salience`, `d ≠ reward`, `d ≠ bandwidth`, `d ≠ D_stake` without admission |
+| **广义摩擦（`R3-08 / B-4`）** | Actual selection pressure arising from opportunity-cost differentials | Do **not** merge with `Ψ_f` payable impedance or generic PE |
+| **非闭合压力** | Structural tension among generative relations not yet coordinated | Distinct from both `B-4` selection pressure and `Ψ_f` impedance |
+| **`Ψ_f` 可支付阻抗** | Payable organizational impedance required for maintenance and reconstitution (`_SRT_PSI_F_CANONICAL.md`) | `Ψ_f ≠ free energy`, `Ψ_f ≠ PE`, `Ψ_f ≠ pain`, `Ψ_f ≠ metabolism`, `Ψ_f ≠ B-4` |
+| **代谢负担** | Physical-implementation resource/energy/ATP/CMRO₂/recovery cost | Candidate physical substrate / local proxy only; never bare identity with `Ψ_f` or `Selection` |
+| **主观苦难与现象体验** | Independent first-person registration (`Core_Law/SRT_Suffering.md §7` & `HP-B` FROZEN / OPEN) | Functional binding, valence bias, or internal monitoring never close `HP-B` or `Suffering §7` |
 
 ### 2.2 `Ψ_f` as Free Energy, Prediction Error, Pain, Metabolism, or Clinical Burden
 

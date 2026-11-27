@@ -58,10 +58,10 @@ machine_summary: >
 | 编号 | 神经科学/认知生成反向反馈内容 | 拟反馈核心 Owner | 当前状态 |
 |---|---|---|---|
 | **`FB-C4-1`** | 整体性与可分化性互构 + 前对象整体生成导向如何分化出局部能力并被对象形成反向重构 | `Core_Law/SRT_One_Formation.md`、`Core_Law/SRT_Generative_Ontology_Spine.md`、`Core_Law/SRT_L0_Metaphysics.md` | `C` 候选；排入 `R4-C5` |
-| **`FB-C4-2`** | 感觉—认知—实现非线性三功能递归模型（对齐 `R3-03`）+ 能量梯度差更底层物理生成机制候选边界 | `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` | `C` 候选；排入 `R4-C5` |
-| **`FB-C4-3`** | 微效价→可供性→缺失→需求→赌注的生物发生学分层与五层关切/价值/摩擦/体验边界 | `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md` | `C` 候选；排入 `R4-C5` |
-| **`FB-C4-4`** | 再生成记忆、发育式冗余剪枝、五类异质历史职责与生成/留存/生效三位置深化 `L_2` 双刃剑机制 | `Core/SRT_Core_12b_L2_Dynamics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core/SRT_Core_14_Dynamics_Scaling.md` | `C` 候选；排入 `R4-C5` |
-| **`FB-C4-5`** | 多层级门控行动场（`target ≠ gate objectification`）、前景生成中介与功能/现象绑定精炼 `Ghost` / 自由 / `HP-B` 接口 | `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md`、`Core_Law/SRT_Selection_Argument.md` | `C` 候选；排入 `R4-C5` |
+| **`FB-C4-2`** | 感觉—认知—实现非线性递归模型（对齐 `R3-03`）+ 能量梯度差五类量区分及物理梯度差经耦合/边界/反馈形成组织约束机制 | `Core_Law/SRT_Generative_Ontology_Spine.md`、`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` | `C` 候选；排入 `R4-C5` |
+| **`FB-C4-3`** | 微效价→可供性→缺失→需求→赌注发生链与广义关切/微效价/广义摩擦/非闭合压力/`Ψ_f`/代谢/苦难职责分立 | `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md` | `C` 候选；排入 `R4-C5` |
+| **`FB-C4-4`** | 再生成记忆、发育式冗余剪枝、五类异质历史职责与生成/留存/生效三位置深化 `L_2` 双刃剑机制 | `Core/SRT_Core_12b_Ontology_L2.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core/SRT_Core_14_Dynamics_Scaling.md` | `C` 候选；排入 `R4-C5` |
+| **`FB-C4-5`** | 多层级门控四阶路径（`target→gate→reconfiguration→capacity`）、前景生成中介与功能/现象绑定精炼 `Ghost` / 自由 / `HP-B` 候选接口 | `Core/SRT_Core_13a_Operator_Basics.md`、`Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md`、`Philosophy/SRT_HardProblem_Epistemology.md`、`Core_Law/SRT_Selection_Argument.md` | `C` 候选；排入 `R4-C5` |
 
 ---
 
