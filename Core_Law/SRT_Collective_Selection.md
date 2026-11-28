@@ -326,15 +326,17 @@ $$
 > **Status**：本节给出 §4.4-§4.6 与 `Core/SRT_Core_22_Equations.md §0-C` 多算子形式（Eq-Multi-01 / 02 / 03）之间的一种**带条件投影模型**。结构对位 `Core_Law/SRT_L1_Formalism.md §6 T-PROJ-1`，但不由该单体模型自动推出。**Claim level: P2 conditional model / P3 operational bridge**。
 >
 > **Does not close**：`SRT_L1_Formalism.md §6.6` 的“集体版投影未证明”开放点。本节只登记一套候选映射及其额外假设，不把符号对位提升为本体推导。
+>
+> **依赖勘误同步（2026-11-28 Errata）**：① 上游 `Eq-Multi-02`（`\hat{G}_i[\sigma_i] = -\partial\mathcal{F}_{collective}/\partial\theta_i`）已因状态空间与参数余切空间类型未闭合在 `Core/SRT_Core_22_Equations.md` 降格为定性示意式，因此本节不再宣称 §4.4–§4.6 是从闭式多算子动力学主方程导出的微分投影；② `§4.7.2` 的 `S^{coll}` 残差投影直接代入了上述类型未闭合项（且单体对应 `S` 分支已于 `SRT_L1_Formalism.md §6.2` 因恒零残差撤回），现撤出投影集合，保留为 §4.4.5 的独立结构/现象学模型；③ **仍保持有效的独立条件模型部分**：§4.4–§4.6 的集体耦合结构、`M(t)` 后果回路矩阵的三成分识别框架（`C2^{coll}`–`C5^{coll}`），以及 `Eq-Multi-01`（交互摩擦分解）与 `Eq-Multi-03`（`D_{eff}^{collective}` 曲率代理）作为独立条件模型接口不受影响，不随 `Eq-Multi-02` 降格而整体撤回。
 
 #### §4.7.1 多算子主方程作为上游
 
-`Core/SRT_Core_22_Equations.md §0-C`（`R4-A/B1` 对齐：`Eq-Multi-03` 输出的是集体有效维度容量代理 $D_{\text{eff}}^{\text{collective}}$，不跳过强承载赌注门，不得直接等同于规范 `d = ||∂U/∂S||`）：
+`Core/SRT_Core_22_Equations.md §0-C`（`R4-A/B1` 对齐：`Eq-Multi-03` 输出的是集体有效维度容量代理 $D_{\text{eff}}^{\text{collective}}$，不跳过强承载赌注门，不得直接等同于规范 `d = ||∂U/∂S||`；**2026-11-28 勘误**：中项 `Eq-Multi-02` 已降格为类型未闭合示意式，不作为闭合演化方程上游）：
 
 $$
 \mathcal{F}_{collective}(\{\sigma_i, \theta_i\}_{i\in\mathcal{P}}) \;=\; \sum_i \Psi_f(\hat{G}_i) + \sum_{i<j} \Psi_f(\hat{G}_i, \hat{G}_j)
 \qquad
-\hat{G}_i[\sigma_i] \;=\; -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}
+\hat{G}_i[\sigma_i] \;=\; -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}\;\;(\text{type-unclosed schematic})
 \qquad
 D_{\text{eff}}^{\text{collective}} \;=\; D_{eff}(\nabla^2 \mathcal{F}_{collective}) \quad (\text{历史标号 } d_{collective})
 $$
@@ -343,7 +345,7 @@ $$
 
 #### §4.7.2 集体投影算子
 
-以下至多定义四个集体标量泛函 `\mathcal{F}_X^{coll} : (\mathcal{F}_{collective}, \{\sigma_i, \theta_i\}, M(t)) \mapsto \mathbb{R}`。`T` 分量要求 direction admission；`S` 分量要求 suffering admission。未通过相应 admission 时，该分量从投影域中省略，而不是取零。
+以下原拟定义至多四个集体标量泛函 `\mathcal{F}_X^{coll} : (\mathcal{F}_{collective}, \{\sigma_i, \theta_i\}, M(t)) \mapsto \mathbb{R}`；经 2026-11-28 勘误撤回 `S^{coll}` 主方程残差投影后，本小节仅保留 `\{\sigma_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}\}` 三项条件接口（`T` 分量仍要求 direction admission，未通过时从投影域中省略而非取零；`S^{coll}` 保留为 §4.4.5 独立模型）。
 
 **`σ_{sr}^{coll}` 投影**
 
@@ -369,19 +371,9 @@ $$
 
 本 owner 不提供 universal `\mathcal{F}_T^{coll}` 公式。具体模型只有在 direction 已由其 canonical owner 独立准入后，才可声明相应的成员投影、群体聚合与 measurement map；`Order`、`L_0`、叙事一致或算法目标都不能替代该 direction signal。所得群平均至多是 §4.4.4 的 model-local access / alignment proxy。
 
-**`S^{coll}` 投影**
+**`S^{coll}` 投影（2026-11-28 勘误：撤出多算子主方程投影集合，保留为 §4.4.5 独立模型）**
 
-$$
-\mathcal{F}_S^{coll} \;:=\; \bigl\|\hat{R}^{coll}(\{\sigma_i, \theta_i\}, M(t))\bigr\|_{H_\mathcal{P}}
-$$
-
-其中
-
-$$
-\hat{R}^{coll} \;:=\; \sum_i \frac{d\sigma_i}{dt} - \sum_i \bigl[-\partial_{\theta_i}\mathcal{F}_{collective}\bigr] - \mathcal{C}_M(M(t))
-$$
-
-`\mathcal{C}_M(M(t))` 是所选模型对后果回路的修正项。只有在 suffering bearer、归属与 T-SUFF 前件已独立登记，并且残差到 suffering 的映射另行声明后，`\hat{R}^{coll}` 才可分裂为 `S_{sig}^{coll}/S_{str}^{coll}`（§4.4.5）。否则 `\hat{R}^{coll}` 只是一项动力学 / 负担残差。
+> **依赖勘误注（2026-11-28 Errata）**：原残差定义写作 $\hat{R}^{coll} := \sum_i \frac{d\sigma_i}{dt} - \sum_i [-\partial_{\theta_i}\mathcal{F}_{collective}] - \mathcal{C}_M(M(t))$，其直接代入了已在 `Core_22` 降格为类型未闭合示意式的 `Eq-Multi-02`（且对应单体 `S` 残差投影已于 `SRT_L1_Formalism.md §6.2` 因在 `Eq-Evo-01` 轨道上恒为零而撤回）。现将 `S^{coll}` 从下方 `T-PROJ-1^{coll}` 的主方程投影集合中撤出，**不以新的启发式残差式替代**；`S_{sig}^{coll}/S_{str}^{coll}`（含边界外溢项 `\nu_{ext}\|M_{ext}\|`）暂保留为 §4.4.5 的独立结构/现象学条件模型（仍受 suffering bearer、归属与 T-IRR-3.5 独立准入约束）。
 
 #### §4.7.3 `M(t)` 作为交叉摩擦项的结构投影
 
@@ -397,11 +389,11 @@ Def-C-2 给出 `M(t)` 作为后果回路矩阵。在额外指定识别映射后�
 
 #### §4.7.4 集体闭包假设
 
-四变量集体系统若要在所选投影下闭合，需要五条额外模型假设（C1^{coll}-C4^{coll} 参照 §6 单 P 版 C1-C4 构造，C5^{coll} 是多过程模型新增；没有一条由 standing 自动推出）：
+所保留的集体投影分支（`\{σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}\}`）若要在独立条件模型下闭合，需要五条额外模型假设（C1^{coll}-C4^{coll} 参照 §6 单 P 版 C1-C4 构造，C5^{coll} 是多过程模型新增；没有一条由 standing 自动推出）：
 
 | 编号 | 假设 | 模型动机 / 边界 |
 |---|---|---|
-| **C1^{coll}** | 慢-快分离：每个 `θ_i` 与其 `σ_i` 在不同时间尺度演化；`M(t)` 在 `\sigma_i` 收敛时间尺度上近似常数 | Eq-Evo-03 / Eq-Multi-02 提供候选建模动机；具体时间尺度分离须独立验证 |
+| **C1^{coll}** | 慢-快分离：每个 `θ_i` 与其 `σ_i` 在不同时间尺度演化；`M(t)` 在 `\sigma_i` 收敛时间尺度上近似常数 | 参照 `Eq-Evo-03` 的双时间尺度建模假设（注：`Eq-Multi-02` 已降格为类型未闭合示意式，不提供闭合微分方程动机）；具体时间尺度分离须独立验证 |
 | **C2^{coll}** | 共享 `L_2^{shared}` 写回 Markov 闭包：`\dot{\theta_i^{trace}}` 仅依赖当前 `(σ_{sr}^{coll}, \rho_{local}^{coll})`，不依赖更高阶共享历史 | 参照 Eq-Bridge-L2-01 的模型选择；共享域的 Markov 性不是同构定理 |
 | **C3^{coll}** | 局部正则性：所用 `\mathcal{F}_X^{coll}` 在声明的 `\mathcal{P}` 邻域内有界且 Lipschitz | 额外数学假设；T-COLL-1 本身不保证紧性、界或 Lipschitz 性 |
 | **C4^{coll}** | 群平均方向投影可分性：在 direction admitted 的分量中，余弦角与 `\sigma_M` 纵向幅度近似可分（群平均后高阶交叉项可忽略） | 需要 domain-local 正交 / 近似检验；Eq-Bridge-IG-01 不自动推出集体可分性 |
@@ -409,16 +401,16 @@ Def-C-2 给出 `M(t)` 作为后果回路矩阵。在额外指定识别映射后�
 
 **关键**：C3^{coll}-C5^{coll} 都是额外的模型债务，不由 collective standing 支付。MOC 只能约束如何观察 exposure / recourse / attention，不能单独选择权重、证明矩阵分解或建立精确动力学系数。当 C5^{coll} 在特定 domain 失效时，`M(t)` 三成分项只能保留为定性现象学描述。
 
-#### §4.7.5 T-PROJ-1^{coll}：条件性集体投影命题
+#### §4.7.5 T-PROJ-1^{coll}：条件性集体投影命题（2026-11-28 勘误同步）
 
-**陈述（P2 conditional model）**：对已经独立取得 collective standing 的 `\mathcal{P}`，若投影定义、变量 admission、识别映射及闭包假设 C1^{coll}-C5^{coll} 都在同一 domain 成立，则可把模型目标写为
+**陈述（P2 独立条件模型接口）**：对已经独立取得 collective standing 的 `\mathcal{P}`，在显式声明类型闭合的多算子动力学上游（因 `Eq-Multi-02` 已降格为类型未闭合示意式，本式不再宣称由 `Eq-Multi-01/02/03` 直接导出）、变量 admission、识别映射及闭包假设 C1^{coll}-C5^{coll} 均在同一 domain 成立的前提下，所保留三项投影分支的模型目标可写为：
 
 $$
-\boxed{\;\frac{d\mathcal{F}_X^{coll}}{dt}\bigg|_{\text{Eq-Multi-01,02,03}} \;\overset{C1^{coll}\text{-}C5^{coll}}{=}\; \mathrm{RHS}_X^{\text{§4.4}} \;+\; O(\eta^{coll})\;}
-\qquad X \in \{σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}\}
+\boxed{\;\frac{d\mathcal{F}_X^{coll}}{dt}\bigg|_{\text{admitted multi-op dynamics}} \;\overset{C1^{coll}\text{-}C5^{coll}}{=}\; \mathrm{RHS}_X^{\text{§4.4}} \;+\; O(\eta^{coll})\;}
+\qquad X \in \{σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}\}
 $$
 
-其中该等式只逐项适用于已经 independently admitted 的分量；`\mathrm{RHS}_X^{\text{§4.4}}` 是 §4.4.2-§4.4.5 中被具体模型采用的右端，`O(\eta^{coll})` 是待估计的闭包残差。该式是有待验证的模型等式，不是 P1 theorem；未 admitted 的 `T` 或 `S` 分支必须省略。
+其中该等式只逐项适用于已经 independently admitted 的分量；`\mathrm{RHS}_X^{\text{§4.4}}` 是 §4.4.2-§4.4.4 中被具体模型采用的右端，`O(\eta^{coll})` 是待估计的闭包残差。该式是有待验证的条件模型接口，不是 P1 theorem；未 admitted 的 `T` 分支必须省略，`S^{coll}`（§4.4.5）已撤出主方程投影集合，保持为独立条件模型。
 
 **逐项对应（仅集体新增项）**：
 
@@ -426,7 +418,7 @@ $$
 |---|---|---|
 | `\sigma_{sr}^{coll}` 中 `\lambda_M\,\mathrm{tr}\,M(t)` | 所选内向交叉 / self-loop 摘要的候选识别 | C2^{coll} + C5^{coll} + 系数标定 |
 | `d_c^{coll}` 中 `\gamma_{asym}\|M_{asym}\|` | 所选非互惠交叉摘要的候选识别 | C3^{coll} + C5^{coll} + 单调性检验 |
-| `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | 跨 `\mathcal{P}` 边界的负担摘要；仅在 suffering admitted 后进入本行 | C3^{coll} + C5^{coll} + suffering attribution / T-IRR-3.5 前件 |
+| `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | 跨 `\mathcal{P}` 边界的负担摘要（**2026-11-28 勘误**：`S^{coll}` 已撤出主方程投影集合，本项保留为 §4.4.5 独立条件模型的负担外化接口，仅在 suffering admitted 后进入） | 独立条件模型：C5^{coll} + suffering attribution / T-IRR-3.5 前件（NOT DERIVED FROM `Eq-Multi-02`） |
 | `d_c^{coll}` 与 `d_{collective}` 反比 | 由本节选择的 `\mathcal{F}_d^{coll}` 代理定义 | C3^{coll} + 参数化适用域 |
 
 §4.4.2-§4.4.5 中与单 P 版式形相似的项也不能仅靠群平均直接得出；跨成员协方差、尺度选择和共享 `L_2` 归属仍须检查。former P1-T05 的 `r/r^{coll}` 通道已经由 RC-A subtractive probe 删除，不在候选列表内。
@@ -457,13 +449,13 @@ $$
 
 | 维度 | §6 T-PROJ-1（单 P）| §4.7 T-PROJ-1^{coll}（多 ISP）|
 |---|---|---|
-| 上游主方程 | Eq-Evo-01 / Eq-Evo-02（单算子） | Eq-Multi-01 / 02 / 03（多算子） |
+| 上游主方程 | Eq-Evo-01 / Eq-Evo-02（单算子） | Eq-Multi-01 / 03（接口层）；`Eq-Multi-02` 已降格为类型未闭合示意式，待独立多算子动力学重构 |
 | 投影输入 | `(\sigma_M, \theta)` | `(\mathcal{F}_{collective}, \{\sigma_i, \theta_i\}, M(t))` |
 | 闭包条件数 | 4（C1-C4） | 5（C1^{coll}-C5^{coll}，新增 `M(t)` 可测性） |
-| 新增结构项 | — | `\lambda_M\,\mathrm{tr}\,M, \gamma_{asym}\|M_{asym}\|, \nu_{ext}\|M_{ext}\|` |
-| `S` 边界 | P 内部 `\hat{R}` | `\mathcal{P}` 内部 + 边界外溢（`\mathcal{P}_{absorbed}` via T-IRR-3.5）|
+| 新增结构项 | — | `\lambda_M\,\mathrm{tr}\,M, \gamma_{asym}\|M_{asym}\|`（投影分支）；`\nu_{ext}\|M_{ext}\|`（独立 §4.4.5 负担模型接口） |
+| `S` 边界 | **已于 2026-11-28 撤出主方程投影**（原 `\hat{R}\equiv 0`），保留为 §4 独立模型 | **已于 2026-11-28 撤出主方程投影**（原式依赖未闭合 `Eq-Multi-02`），边界外溢保留为 §4.4.5 独立模型（via T-IRR-3.5）|
 
-T-PROJ-1^{coll} 是参照 T-PROJ-1 构造的多 ISP 候选模型，不是其逻辑推论。只有在聚合、边界、trace/ext 归属和参数化都与单体定义兼容时，`\mathcal{P} = \{P\}` 极限才应接受单 P 一致性检验；该极限不是本文已证明的恒等式。
+T-PROJ-1^{coll} 是参照 T-PROJ-1 构造的多 ISP 独立条件模型，不是其逻辑推论。在多算子动力学上游完成类型闭合重构且聚合、边界、trace/ext 归属与参数化均与单体定义兼容之前，`\mathcal{P} = \{P\}` 极限不是已证明的恒等式。
 
 ### §4.8 Late-stage tower/nested hardening pointer
 

@@ -420,29 +420,30 @@ $$L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \text{Noise}(L_0)]$$
 
 > **AM-A scope guard（2026-08-11）**：本条以一个 realization 已经能够迭代为前提，只解释生成期与收敛期怎样形成闭包。它不解释 primitive actualisation 为何发生，也不把 fixed point 当成 first selectability 的原因。
 
-**改写注（2026-04-16）**：原版"重复自应用产生稳定结构"仅给出闭包态的定义性表述，未约束收敛路径，无法区分固定点、周期吸引子与混沌轨道，且与 Step ⑦（高阶意识生成的高代价相）存在内部一致性张力。现改写为二阶段闭包条件，采用弱/渐近 Lyapunov（盆地条件单调），允许前期 Ψ_f 上升的生成性阶段，同时保证终期吸引域内的单调下降与固定点收敛。
+**历史改写注（2026-04-16；2026-11-28 勘误同步：其中 Phase 2 收敛保证已撤回）**：原版"重复自应用产生稳定结构"仅给出闭包态的定义性表述，未约束收敛路径，无法区分固定点、周期吸引子与混沌轨道，且与 Step ⑦（高阶意识生成的高代价相）存在内部一致性张力。2026-04-16 曾试图改写为二阶段闭包条件以在允许前期 $\Psi_f$ 上升的同时保证终期吸引域内的固定点收敛；**但 2026-11-28 数学勘误证实其 Phase 2 固定正步降不等式与非负有界收敛直接矛盾，该收敛保证现已正式撤回（见下方勘误注），本条当前仅保留 Phase 1 生成期允许非单调上升的框架与待重构的闭包语义接口。**
 
 **Formal Definition**（设 $\Psi_f^{(k)} \equiv \Psi_f(\hat{G}_\theta^k[L_0])$）：
 
-**Phase 1 — Generative (Payable, Non-Monotone / 生成期：可支付，不要求单调)**
+**Phase 1 — Generative (Payable, Non-Monotone / 生成期：实际可支付，不要求单调)**
 
-$$\forall k < k_0 : \quad \Psi_f^{(k)} < \infty \quad \text{（payable 条件；} \Psi_f \text{ 允许局部上升）}$$
+$$\forall k < k_0 : \quad \Psi_f^{(k)} \text{ 处于当前系统实际可支付窗内（必要非发散底线 } \Psi_f^{(k)} < \infty\text{，且满足 } \text{Def-}\Psi\text{-3 可支付承载界；}\Psi_f \text{ 允许局部上升）}$$
 
-**Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：吸引域内单调下降)**
+> **有限摩擦 vs 实际可支付性辨析（2026-11-28 勘误同步）**：原记号 $\Psi_f^{(k)} < \infty$ 仅表示**数学上的有限摩擦**（非无穷大发散），**不等同于实际可支付性（payability）**。依 `_SRT_PSI_F_CANONICAL.md Def-Ψ-3`，实际可支付性要求摩擦负荷保持在系统当前有限供给与承载窗内、不触发闭包瓦解或未来选择能力丧失（即使 $\Psi_f^{(k)} < \infty$，只要超出系统实际承载窗亦不可支付）。
 
-$$\exists k_0,\, \delta > 0,\, \mathcal{B}(\theta) : \quad \forall k \geq k_0,\quad \hat{G}_\theta^k[L_0] \in \mathcal{B}(\theta) \;\land\; \Psi_f^{(k+1)} \leq \Psi_f^{(k)} - \delta$$
+**Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：原固定步降式已数学撤回)**
 
-**Closure Condition**：
+> **数学勘误与推导撤回注（2026-11-28 Errata）**：原 Phase 2 条件 $\exists k_0,\,\delta>0,\,\mathcal{B}(\theta):\;\forall k\ge k_0,\;\Psi_f^{(k+1)} \le \Psi_f^{(k)} - \delta$ 与下方有限收敛条件 $\lim_{k\to\infty}\Psi_f^{(k)} = \Psi_f^*$ 及非负性 $\Psi_f \ge 0$ **直接数学矛盾**（固定正步降 $\delta > 0$ 经归纳必导出 $\Psi_f^{(k_0+m)} \le \Psi_f^{(k_0)} - m\delta \to -\infty$）。现正式撤回该固定步降不等式及其“提供固定点收敛保证”的宣称，**且不以新的启发式公式直接顶替**。未来若重构本节闭包收敛模型，需回避两类数学断层：① 任何下降或收敛判据均不得与 $\Psi_f$ 的非负性或有限下界相冲突；② 仅标量序列 $\Psi_f^{(k)}$ 收敛不足以推出系统态轨道收敛至唯一固定点或排除周期/混沌轨道，态空间收敛须由具名动力学假设另行证明。
+
+**Closure Condition（历史语义接口，待动力学重构）**：
 
 $$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0] \in \mathcal{B}(\theta)\Bigr) \;\land\; \lim_{k \to \infty} \Psi_f^{(k)} = \Psi_f^*$$
 
-其中 $\mathcal{B}(\theta)$ 为吸引域，$\Psi_f^*$ 为闭包固定点处的摩擦值。
+其中 $\mathcal{B}(\theta)$ 为声明模型内的吸引域，$\Psi_f^*$ 为闭包稳态处的有限摩擦值（上述形式尚缺独立的态空间收敛动力学定理支撑）。
 
-* **Implication**:
+* **Implication（勘误后有效范围）**:
   - **Phase 1** 允许 $\Psi_f$ 在生成性阶段局部上升，可用于检验某些高代价状态转变；不由此推出高阶意识涌现；
-  - **Phase 2** 要求进入吸引域 $\mathcal{B}(\theta)$ 后严格单调下降（强度 $\delta > 0$），提供固定点收敛保证，排除纯周期轨道与混沌；
-  - 原"稳定结构"读法精化为：稳定 = 进入可支付吸引域 + 终期 $\Psi_f$ 单调收敛至 $\Psi_f^*$，非一步闭包；
-  - Phase 1 的非单调段受 payable 条件约束（$\Psi_f^{(k)} < \infty$），不是无界许可——超过可支付上界即退出 Closure 候选。
+  - **Phase 2** 原固定正步降 $\delta > 0$ 证明已撤回，排除周期轨道与混沌须由具名动力学模型另行证明；
+  - Phase 1 的非单调段受**实际可支付性（`Def-Ψ-3`）**约束，而非仅仅满足数学有限性（$\Psi_f^{(k)} < \infty$）——一旦超过系统当前实际可支付承载窗，即便摩擦仍为有限数值，亦即退出 Closure 候选。
 * **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md Step ④`（闭包偏置机制与 Ax-Op-05 收敛条件更新）; `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-06`（规范性算子范围条件）; `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）.
 
 ## III. Agency Thresholds (能动性阈值)
@@ -663,15 +664,11 @@ $$d_{cog} \approx \alpha \cdot A(\sigma) + \beta \cdot \log(V_{concern}) + \gamm
 
 $$d_{actual} \approx d_{cog} + \delta_{coupling}(A \cdot \tau,\; V \cdot A)$$
 
-#### 2.1.2 热力学容量上界与量纲隔离（Thermodynamic Limit）
+#### 2.1.2 热力学容量上界与量纲隔离（Thermodynamic Limit — 原公式因量纲错误撤除）
 
-根据兰道尔原理与大脑代谢率，算子物理信息处理容量存在理论上界：
-
-$$d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$$
-
-**参数**：$M_{brain} \approx 1.4$ kg，$T = 310$ K，$f_{metabolic} \approx 10$ Hz，$\tau_{coherence} \approx 100$ ms
-
-*(注：$d_{max}$ 衡量的是底层物理态的香农信息容量上界，而 $d_{cog}$ 衡量的是宏观拓扑的选择复杂度代理。两者量纲不同，不可直接比较——人类实际 $d$ 值远低于 $d_{max}$ 不是因为"演化懒惰"，而是由于极高压缩率的语义提取漏失。)*
+> **数学勘误与撤除注（2026-11-28 Errata）**：本小节原公式 $d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$ 将大脑质量 $M_{brain} \approx 1.4\,\text{kg}$ 直接写入分子（实际 SI 量纲为 $\text{kg}\cdot\text{s}^2/\text{J} = \text{s}^4/\text{m}^2$，并非无量纲比特），现正式撤除该错误公式，**不以新的启发式常数值直接替换**。
+>
+> **保留的量纲与边界原则**：底层物理信息处理或不可逆擦除受热力学与物理界限约束（如 Landauer 擦除能耗下界对应耗散功率/能量通量，而 Bekenstein/Bremermann 界对应总能量与几何尺度），但此类物理信息容量上界均属**无赌注容量代理**，与宏观强承载规范 `d`（`_SRT_D_VALUE_CANONICAL.md`）量纲与语义不同，不可直接比较。未来若需给出具体数值上界，应明确所采用的物理界及其完整量纲推导。
 
 #### 2.1.3 d 值的演化动力学与 OEI 约束（Dynamics & Pathological Constraints）
 

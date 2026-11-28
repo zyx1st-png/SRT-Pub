@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-11-27
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-11-28
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-27
-source_commit: 32545cdcd
-source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
+generated: 2026-11-28
+source_commit: 4308fe99a
+source_branch: errata/math-hard-errors-20261128
 source_dirty: false
-inputs_digest: 3337b101fb25ec29
+inputs_digest: 8634979bfd7f12e6
 ---
 
 # SRT 哲学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 3337b101fb25ec29
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-27 |
-| 来源 commit | `32545cdcd` |
-| 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
+| 生成日期 | 2026-11-28 |
+| 来源 commit | `4308fe99a` |
+| 来源分支 | `errata/math-hard-errors-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 7 |
 

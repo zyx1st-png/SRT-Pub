@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-27
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-11-28
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-11-27
-source_commit: 32545cdcd
-source_branch: canon/r4-c5cd-core-writeback-full-closeout-2026-11-27
+generated: 2026-11-28
+source_commit: 4308fe99a
+source_branch: errata/math-hard-errors-20261128
 source_dirty: false
-inputs_digest: 3337b101fb25ec29
+inputs_digest: 8634979bfd7f12e6
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 3337b101fb25ec29
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-11-27 |
-| 来源 commit | `32545cdcd` |
-| 来源分支 | `canon/r4-c5cd-core-writeback-full-closeout-2026-11-27` |
+| 生成日期 | 2026-11-28 |
+| 来源 commit | `4308fe99a` |
+| 来源分支 | `errata/math-hard-errors-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -448,7 +448,7 @@ For substantive SRT answers:
 
 ### 0.5.1 `Core/SRT_Core_22_Equations.md` 主方程索引（独立 `FORMAL` 路线）
 
-- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-11-26`）
+- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-11-28`）
 - **独立上下文包**：`Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`（单独装载，不叠加在 `SPINE` 上）
 - **条目数**：自动抽取 50 条 `Eq-* / Def-*`（已纳入 `inputs_digest` 闭包）
 
@@ -458,52 +458,52 @@ For substantive SRT answers:
 | `Def-Protocol-2` | Absolute-vs-Relative Constraint Split（新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L73` |
 | `Def-Protocol-3` | Methodological Closure Guard（方法论闭包护栏，新增） | 0-B. Protocol and Foundation (协议与基础) | `Core/SRT_Core_22_Equations.md#L82` |
 | `Eq-Multi-01` | Collective Free Energy Landscape（集体自由能景观） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L95` |
-| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L101` |
-| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L106` |
-| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L122` |
-| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L136` |
-| `Eq-Bridge-D-01` | Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`) | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L152` |
-| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L172` |
-| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L188` |
-| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L204` |
-| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L232` |
-| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L264` |
-| `Eq-Rhythm-4a` | Conditional Passband–Duty Landauer Envelope Tradeoff（频谱通带容量—占空比 Landauer 条件包络权衡，`R4-B2` 修正） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L300` |
-| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L324` |
-| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L351` |
-| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L380` |
-| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L388` |
-| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L395` |
-| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L415` |
-| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L422` |
-| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L429` |
-| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L455` |
-| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L506` |
-| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L518` |
-| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L523` |
-| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L537` |
-| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L551` |
-| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L561` |
-| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L581` |
-| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L586` |
-| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L593` |
-| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L600` |
-| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L604` |
-| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L610` |
-| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L620` |
-| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L626` |
-| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L631` |
-| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L689` |
-| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L696` |
-| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L732` |
-| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L738` |
-| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L747` |
-| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L759` |
-| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L770` |
-| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L839` |
-| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L850` |
-| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L859` |
-| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L866` |
+| `Eq-Multi-02` | Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达 — 类型未闭合勘误） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L101` |
+| `Eq-Multi-03` | d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度） | 0-C. Multi-Operator Coupled Equations（多算子耦合方程） | `Core/SRT_Core_22_Equations.md#L108` |
+| `Eq-Bridge-IG-01` | Fisher-Induced Local Ψ_f Cost | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L124` |
+| `Eq-Bridge-IG-02` | Fisher Path Functional | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L138` |
+| `Eq-Bridge-D-01` | Threshold-Gated Model Instance of `D_stake` (`D_stake^{thresh}`) | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L154` |
+| `Eq-Bridge-G-01` | Ghost Operator Normalization Proxy | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L174` |
+| `Eq-Bridge-L2-01` | L2 Path-Trace Writeback | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L190` |
+| `Eq-Bridge-Loop-01` | Minimal L0-L1-L2 Loop | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L206` |
+| `Eq-DValue-Max-1` | Maximum Achievable d-Value（d 值可达上限） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L234` |
+| `Eq-Rhythm-1` | Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L266` |
+| `Eq-Rhythm-4a` | Conditional Passband–Duty Landauer Envelope Tradeoff（频谱通带容量—占空比 Landauer 条件包络权衡，`R4-B2` 修正） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L302` |
+| `Eq-DValue-Mobile-1` | Operator Re-alignment Capacity（算子再对齐能力 d_mobile） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L326` |
+| `Def-Payable-Chi-1` | Payability Gate for Ψ_f Change（摩擦变化可支付门函数） | 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation | `Core/SRT_Core_22_Equations.md#L353` |
+| `Eq-Evo-01` | Ghost Evolution Equation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L382` |
+| `Eq-Evo-01b` | Metabolic Gain Modulation | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L390` |
+| `Eq-Evo-02` | Parameter Update (Slow Variable) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L397` |
+| `Eq-Evo-02b` | Theta Tensor Inertia (θ张量惯性 — 定义域失效与奇点勘误) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L417` |
+| `Eq-Evo-03` | Coupled Fast–Slow System | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L423` |
+| `Eq-Evo-03b` | Intra-Selection Re-entry (选择内再入通道) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L430` |
+| `Eq-Evo-03c` | Canonical Risk-Sensitivity Forward Criterion (规范 `d` 强度条件前向判据) | I. Evolution Dynamics (演化动力学) | `Core/SRT_Core_22_Equations.md#L456` |
+| `Eq-Force-01` | Conditional Reference-Trajectory Friction Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L507` |
+| `Eq-Pain-01` | Hazard / Pain-Risk Proxy | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L519` |
+| `Eq-Friction-Comp` | 计算摩擦桥接候选 (Computational Friction Bridge Candidate) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L524` |
+| `Eq-Select-Thermo` | 选择热力学宪法不等式 (Constitutional Inequality of Selection Thermodynamics) | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L538` |
+| `Eq-AI-LowRoad-01` | Selection Cost Minimization Form（低阶主动推断映射，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L552` |
+| `Eq-AI-LowRoad-02` | Expected Selection Cost（对应 EFE，新增） | II. Thermodynamics of Agency (能动性热力学) | `Core/SRT_Core_22_Equations.md#L562` |
+| `Eq-Stab-01` | Fixed Point Condition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L582` |
+| `Eq-Phase-01` | Ontological Phase Transition | III. Stability & Phase Transition (稳定性与相变) | `Core/SRT_Core_22_Equations.md#L587` |
+| `Eq-Sleep-01` | L2 Optimization | IV. Sleep & Maintenance (睡眠与维护) | `Core/SRT_Core_22_Equations.md#L594` |
+| `Def-LDP-1` | Empirical Measure (经验测度) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L601` |
+| `Eq-LDP-01` | Hydrodynamic Limit (水动力极限) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L605` |
+| `Eq-LDP-02` | SRT Action Functional (SRT 作用量泛函) | V. Statistical Mechanics of Selection (选择的统计力学) | `Core/SRT_Core_22_Equations.md#L611` |
+| `Eq-Phantom-01` | Phantom Operator Effect (幽灵算子残响) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L621` |
+| `Eq-Phantom-01b` | Collective Phantom Resonance (集体幻肢共振) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L627` |
+| `Eq-Phantom-02` | Homeostatic Rebuild Time Constant (稳态重建时间常数) | VI. Social-Ontological Dynamics (社会本体论动力学) | `Core/SRT_Core_22_Equations.md#L632` |
+| `Eq-Frame-01` | Frame-First Normalization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L690` |
+| `Eq-Frame-02` | Observable Reparameterization | §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学) | `Core/SRT_Core_22_Equations.md#L697` |
+| `Eq-Res-01` | Delay-Constrained Resonance Selection | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L733` |
+| `Eq-Res-02` | Cross-Scale Coordination Energy | 参数注册表（Parameter Registry, v2） | `Core/SRT_Core_22_Equations.md#L739` |
+| `Eq-Topo-01` | Simplicial Assembly–Collapse Dynamics | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L748` |
+| `Eq-Topo-02` | Dual-Layer Selection over Deterministic Envelope | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L760` |
+| `Eq-Topo-03` | Persistence-Weighted Order Parameter | VII. Topological Selection Dynamics（拓扑选择动力学，新增） | `Core/SRT_Core_22_Equations.md#L771` |
+| `Eq-CogE-01` | Baseline–Active Friction Decomposition | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L840` |
+| `Eq-CogE-02` | 95/5 Selection Ratio (Embodied Constraint) | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L851` |
+| `Eq-CogE-03` | Subjective Effort as Friction Gradient | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L860` |
+| `Eq-CogE-04` | AI–Human Energetic Asymmetry Index | VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07） | `Core/SRT_Core_22_Equations.md#L867` |
 
 ### 0.5.2 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 按需桥接假说索引
 
