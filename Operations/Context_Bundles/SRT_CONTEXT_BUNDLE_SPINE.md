@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 4308fe99a
-source_branch: errata/math-hard-errors-20261128
+source_commit: 9bedc564b
+source_branch: docs/original-mission-direction-calibration-20261128
 source_dirty: false
-inputs_digest: 8634979bfd7f12e6
+inputs_digest: affaa6050433b8c8
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 8634979bfd7f12e6
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-28 |
-| 来源 commit | `4308fe99a` |
-| 来源分支 | `errata/math-hard-errors-20261128` |
+| 来源 commit | `9bedc564b` |
+| 来源分支 | `docs/original-mission-direction-calibration-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -43,9 +43,9 @@ inputs_digest: 8634979bfd7f12e6
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-11-26 |
+| 1 | `SRT_AI_START.md` | 2026-11-28 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-11-27 |
-| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-27 |
+| 3 | `Core_Law/SRT_Generative_Ontology_Spine.md` | 2026-11-28 |
 | 4 | `Governance/SRT_CLAIM_LADDER.md` | 2026-10-19 |
 | 5 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-11-26 |
 | 6 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-11-26 |
@@ -554,7 +554,7 @@ For substantive SRT answers:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-28 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -569,9 +569,9 @@ For substantive SRT answers:
 
 ## 1. Current one-sentence orientation
 
-**SRT is currently in an author-led ontology re-entry phase. Constitution v1 remains the active natural-language reader-interface prototype, but it does not exhaust SRT ontology; bearer/position is one important structural problem among a wider open field involving multiplicity/unity, Selection/determination, manifestation/One-formation, persistence, history/write-back, relation/constraint, future selectability, order/convergence and objectification. Research starts from SRT questions, absorbs source-native theories into candidate relational organizations, and develops new questions and conclusions under author direction and critical checks. Named-neighbor increment pressure is conditional on the actual comparative claim; new deep wells retain their separate HOLD gates.**
+**SRT's original mission is to break inherited ontological floors—static objects, physicalism-as-sole-ground, horizontal causal monopoly, pre-existing formal rules, container time, subject-before-selection, and functionalist survivalism—and reconstruct understanding from unified generative reality to science, AI, education, social order, and human praxis. Having completed R1–R4 canonical reconstruction, active research is now in `R5` ("The Genesis of Generative Capacity", single `CURRENT NEXT = R5-01A`), focusing on concrete mechanism discovery, mathematical construction, empirical/computational verification, and direct primordial ontology inquiry (`D-C`) rather than repetitive defensive caveats or paradigm-compatibility contraction. Named-neighbor increment pressure is conditional on the actual comparative claim; existing `HOLD` gates and claim-level boundaries stay intact.**
 
-This is a programme orientation, not a new canonical definition or a replacement final ontology label.
+This is a programme orientation (calibrated 2026-11-28), not a new canonical definition or a replacement final ontology label.
 
 Current status and author decisions are resolved through `STATUS.md §Fast Status` controlling pointers. `AGENTS.md §Session Start` owns conditional reads; do not start a second bootstrap from this page. Historical programme documents are interpreted under the 2026-09-05 governance amendment and subsequent scoped author adjudications.
 
@@ -1396,7 +1396,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | L0-L2 |
 | canonical(字段) | true |
-| last_commit | 2026-11-27 |
+| last_commit | 2026-11-28 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1408,6 +1408,8 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 ## Selection does not merely occur within reality; it participates in generating the conditions under which reality continues to occur
 
 > **Role**: Canonical cross-owner routing spine for Selective Reality Theory (SRT). It establishes the positive unified generative architecture across physics, life, cognition, subjectivity, AI, and social order, while fixing cross-owner structural non-identities and OPEN gates. Compatible local definitions remain owned by their respective canonical anchors.
+>
+> **Original Mission & Floor-Breaking Orientation (2026-11-28 Author Calibration)**: SRT is not merely a compatibility grammar for existing complex-systems or organizational theories. Its foundational research mission is to challenge seven inherited floors—**static objects, physicalism-as-sole-ground, horizontal causal monopoly, pre-existing formal rules, container time, subject-before-selection, and functionalist survivalism**—by investigating the unified generative matrix, physical–psychological dual-parallel extraction, vertical foreground–background generation, conditional law generation, from-existence-to-order, and ontology-to-society reconstruction. This mission directs positive mechanism discovery, mathematical construction, and domain breakthroughs; it is a research horizon rather than an already-proved scientific conclusion, and this Spine remains open to substantive revision driven by verified mechanism findings.
 >
 > **R4-C5-C Cross-Domain Core Integration Baseline (`v6`, 2026-11-27)**: Builds directly on the `R4-A` (`v5`, 2026-11-26) unified generative skeleton by integrating the author-adjudicated `R4-C1..C5` bidirectional core increments (**`D1–D6`**, **`§18 CΨ` Option 1**, and **`R3-02` three-tier cross-scale law abstraction**). Across physics, life, AI, neuroscience, philosophy/society, and spirituality, this upgrade expands SRT's core explanatory architecture along five unified generative axes: **(1) primitive generation & source/orientation (`D6`), (2) organizational generation & relative independence (`D2`), (3) non-ladder capacity differentiation & cross-scale co-generative mediation (`D3`), (4) recursive historical & value-based condition reconstruction (`D4 / D5`), and (5) cross-scale law transfer & friction/payability separation (`D1` + `R3-02`)**—while preserving every independent admission gate, `HP-B` freeze, `HOLD`, and unclosed `OPEN` boundary.
 
