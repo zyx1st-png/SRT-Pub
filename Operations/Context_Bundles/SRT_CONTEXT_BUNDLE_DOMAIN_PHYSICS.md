@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 4308fe99a
-source_branch: errata/math-hard-errors-20261128
+source_commit: 9bedc564b
+source_branch: docs/original-mission-direction-calibration-20261128
 source_dirty: false
-inputs_digest: 8634979bfd7f12e6
+inputs_digest: affaa6050433b8c8
 ---
 
 # SRT 物理领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 8634979bfd7f12e6
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-28 |
-| 来源 commit | `4308fe99a` |
-| 来源分支 | `errata/math-hard-errors-20261128` |
+| 来源 commit | `9bedc564b` |
+| 来源分支 | `docs/original-mission-direction-calibration-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
@@ -45,7 +45,7 @@ inputs_digest: 8634979bfd7f12e6
 |---|---|---|
 | 1 | `Physics/SRT_Physics_Claim_Status.md` | 2026-11-26 |
 | 2 | `Physics/PHYSICS_COMPACT_REGISTRY.md` | 2026-11-26 |
-| 3 | `Physics/README.md` | 2026-11-26 |
+| 3 | `Physics/README.md` | 2026-11-28 |
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-11-26 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-11-26 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-11-26 |
@@ -911,7 +911,7 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-28 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -934,6 +934,13 @@ files may translate SRT primitives into quantum, statistical-mechanical, complex
 established physics unless separately supported, nor redefine
 `L_0/L_1/L_2`, `One`, `d-value`, `Psi_f`, `T_dir`, or `G_hat_theta`; those terms route
 back to canonical anchors.
+
+## 本域基础性突破问题（2026-11-28 原初使命校准）
+
+物理域不止于把现有物理理论翻译为 SRT 术语，而是正面挑战**静态客体先在、容器时间与永恒先在物理定律**三块旧地板（尊重现行物理定律的实证有效性，但不预设它们已是永恒不可追问的最终本体依据），聚焦三项基础突破问题：
+1. **关系性实际化与物理对象生成**：稳定经典客体、局域边界与确定测量结果如何在无先在完备经典属性的关系耦合中形成；
+2. **规律生成与演化相空间**：物理对称性、条件性组织规律与有效相空间如何在跨尺度耦合与不可逆筛选中稳定成形（而不把相空间与规则预设为永恒容器）；
+3. **关系时间与前闭合动力学**：时间序与有效物理时间度量如何从不可逆实际化与生成关系比对中生发，而非预设外部绝对容器时间。
 
 ## Read order
 

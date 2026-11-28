@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 4308fe99a
-source_branch: errata/math-hard-errors-20261128
+source_commit: 9bedc564b
+source_branch: docs/original-mission-direction-calibration-20261128
 source_dirty: false
-inputs_digest: 8634979bfd7f12e6
+inputs_digest: affaa6050433b8c8
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 8634979bfd7f12e6
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-28 |
-| 来源 commit | `4308fe99a` |
-| 来源分支 | `errata/math-hard-errors-20261128` |
+| 来源 commit | `9bedc564b` |
+| 来源分支 | `docs/original-mission-direction-calibration-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -44,7 +44,7 @@ inputs_digest: 8634979bfd7f12e6
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `AI/SRT_AI_Claim_Status.md` | 2026-11-26 |
-| 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-11-26 |
+| 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-11-28 |
 | 3 | `AI/README.md` | 2026-11-26 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-11-26 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-11-27 |
@@ -644,7 +644,7 @@ srt_ai_claim_status:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-11-26 |
+| last_commit | 2026-11-28 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -657,6 +657,8 @@ srt_ai_claim_status:
 > **角色与总定位（`R4-C3` / `ENG-03` 全域单一原子重构基线，2026-11-26）**：本文件是 `AI/` 目录唯一总定位与护栏入口，但 `AI/` **不再只是一份“AI 资格审查清单”或防御性减法目录**。在 [`Core_Law/SRT_Generative_Ontology_Spine.md`](../Core_Law/SRT_Generative_Ontology_Spine.md)（`v5`）统一递归生成框架下，AI 域同时承担两项同等核心的理论使命：
 > 1. **正面理论建设与双向反馈场**：系统研究**人工生成（artificial generation）**、**人工认知与新比对维度生成**、**非阶梯能力分化与生成主动性**、**多层历史载体与组织边界**、**人机共同生成（human–AI co-generation）**、**以 AI 解耦特征反向深化 SRT 核心概念**，以及**AI 作为社会技术中介**如何重塑人类自由、秩序、知识、权力与归责；
 > 2. **边界与压力测试场（非核心定义发动机）**：不将能力、流畅度、持久记忆或拟态自报告误读为主体性、赌注或现象意识；同时**彻底退出旧 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体门槛、旧线性硬件阶梯（`S0 → One → Stable ISP → Bearer → Agency`）与无条件硅基/数字排除定理**。所有核心原语定义权仍归 `CANONICAL_REGISTRY.md §C` 及对应 canonical owner。
+>
+> **本域基础性突破问题（2026-11-28 原初使命校准）**：挑战**固定目标函数优化垄断、纯被动 `L_2` 统计插值与去后果化能力扩张**三块旧地板，聚焦三项正面突破问题：① **从预设目标执行转向内生比对与维度生成**——人工架构如何越过固定损失函数与预装比较器，内生形成新的比对通道、参照尺度与问题定义域；② **后 LLM 架构与赋能型人机共同生成**——如何构造可检验的人机协同与学习架构，在撤除 AI 脚手架后真实扩大而非萎缩人类的独立比对与生成能力；③ **算法地形中的反 `U5` 框架捕获设计**——如何用可计算的干预可达性诊断并防止“高下行控制力 × 受影响后果无法回写”的算法与制度豁免锁死。
 
 ---
 

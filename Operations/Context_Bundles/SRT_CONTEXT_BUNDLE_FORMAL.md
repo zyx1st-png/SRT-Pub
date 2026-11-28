@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 4308fe99a
-source_branch: errata/math-hard-errors-20261128
+source_commit: 9bedc564b
+source_branch: docs/original-mission-direction-calibration-20261128
 source_dirty: false
-inputs_digest: 8634979bfd7f12e6
+inputs_digest: affaa6050433b8c8
 ---
 
 # SRT Formal 主方程上下文包
@@ -27,8 +27,8 @@ inputs_digest: 8634979bfd7f12e6
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-28 |
-| 来源 commit | `4308fe99a` |
-| 来源分支 | `errata/math-hard-errors-20261128` |
+| 来源 commit | `9bedc564b` |
+| 来源分支 | `docs/original-mission-direction-calibration-20261128` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 

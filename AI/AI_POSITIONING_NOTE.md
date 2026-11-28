@@ -4,7 +4,7 @@ type: positioning_note
 tags: [AI, ArtificialGeneration, CoGeneration, BoundaryTest, BearingReview, TaxonomyIsolation, ClaimLadder]
 status: active
 version: v3
-updated: 2026-11-26
+updated: 2026-11-28
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
@@ -18,6 +18,8 @@ dependency: [SRT-GENERATIVE-ONTOLOGY-SPINE, SRT-ONE-FORMATION, SRT-CLAIM-LADDER,
 > **角色与总定位（`R4-C3` / `ENG-03` 全域单一原子重构基线，2026-11-26）**：本文件是 `AI/` 目录唯一总定位与护栏入口，但 `AI/` **不再只是一份“AI 资格审查清单”或防御性减法目录**。在 [`Core_Law/SRT_Generative_Ontology_Spine.md`](../Core_Law/SRT_Generative_Ontology_Spine.md)（`v5`）统一递归生成框架下，AI 域同时承担两项同等核心的理论使命：
 > 1. **正面理论建设与双向反馈场**：系统研究**人工生成（artificial generation）**、**人工认知与新比对维度生成**、**非阶梯能力分化与生成主动性**、**多层历史载体与组织边界**、**人机共同生成（human–AI co-generation）**、**以 AI 解耦特征反向深化 SRT 核心概念**，以及**AI 作为社会技术中介**如何重塑人类自由、秩序、知识、权力与归责；
 > 2. **边界与压力测试场（非核心定义发动机）**：不将能力、流畅度、持久记忆或拟态自报告误读为主体性、赌注或现象意识；同时**彻底退出旧 `R: L_2→L_2` vs `J: L_0→L_1` 伪本体门槛、旧线性硬件阶梯（`S0 → One → Stable ISP → Bearer → Agency`）与无条件硅基/数字排除定理**。所有核心原语定义权仍归 `CANONICAL_REGISTRY.md §C` 及对应 canonical owner。
+>
+> **本域基础性突破问题（2026-11-28 原初使命校准）**：挑战**固定目标函数优化垄断、纯被动 `L_2` 统计插值与去后果化能力扩张**三块旧地板，聚焦三项正面突破问题：① **从预设目标执行转向内生比对与维度生成**——人工架构如何越过固定损失函数与预装比较器，内生形成新的比对通道、参照尺度与问题定义域；② **后 LLM 架构与赋能型人机共同生成**——如何构造可检验的人机协同与学习架构，在撤除 AI 脚手架后真实扩大而非萎缩人类的独立比对与生成能力；③ **算法地形中的反 `U5` 框架捕获设计**——如何用可计算的干预可达性诊断并防止“高下行控制力 × 受影响后果无法回写”的算法与制度豁免锁死。
 
 ---
 
