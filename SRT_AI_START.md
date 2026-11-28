@@ -19,9 +19,9 @@ ai_do_not_use_for_definition: true
 
 ## 1. Current one-sentence orientation
 
-**SRT is currently in an author-led ontology re-entry phase. Constitution v1 remains the active natural-language reader-interface prototype, but it does not exhaust SRT ontology; bearer/position is one important structural problem among a wider open field involving multiplicity/unity, Selection/determination, manifestation/One-formation, persistence, history/write-back, relation/constraint, future selectability, order/convergence and objectification. Research starts from SRT questions, absorbs source-native theories into candidate relational organizations, and develops new questions and conclusions under author direction and critical checks. Named-neighbor increment pressure is conditional on the actual comparative claim; new deep wells retain their separate HOLD gates.**
+**SRT's original mission is to break inherited ontological floors—static objects, physicalism-as-sole-ground, horizontal causal monopoly, pre-existing formal rules, container time, subject-before-selection, and functionalist survivalism—and reconstruct understanding from unified generative reality to science, AI, education, social order, and human praxis. Having completed R1–R4 canonical reconstruction, active research is now in `R5` ("The Genesis of Generative Capacity", single `CURRENT NEXT = R5-01A`), focusing on concrete mechanism discovery, mathematical construction, empirical/computational verification, and direct primordial ontology inquiry (`D-C`) rather than repetitive defensive caveats or paradigm-compatibility contraction. Named-neighbor increment pressure is conditional on the actual comparative claim; existing `HOLD` gates and claim-level boundaries stay intact.**
 
-This is a programme orientation, not a new canonical definition or a replacement final ontology label.
+This is a programme orientation (calibrated 2026-11-28), not a new canonical definition or a replacement final ontology label.
 
 Current status and author decisions are resolved through `STATUS.md §Fast Status` controlling pointers. `AGENTS.md §Session Start` owns conditional reads; do not start a second bootstrap from this page. Historical programme documents are interpreted under the 2026-09-05 governance amendment and subsequent scoped author adjudications.
 

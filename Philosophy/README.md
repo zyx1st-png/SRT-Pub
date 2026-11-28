@@ -27,6 +27,13 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STAT
 
 ## 1. What this section is for
 
+### 本域基础性突破问题（2026-11-28 原初使命校准）
+
+哲学、伦理与社会秩序域不止于将经典哲学问题翻译为 SRT 术语，而是正面挑战**静态实体先在、主体先于选择、物理主义唯一基础、功能主义/生存主义与制度性 `U5` 规则豁免**，承担三项从本体到社会的基础突破问题：
+1. **前主客与前心物分化的生成本体论**：在静态客体与孤立主体之前，刻画有限位置下的非中立实际化、垂直前背景生成与整体位置诞生的结构条件；
+2. **后果承载型价值、正面自由与规范基础（`O1 / O2-C / O2-A`）**：超越“纯生存适应”或“任意主观偏好”，阐明新价值、新方向与正面自由如何从不可外包的后果承受与新可能性生成中产生（同时维持 `O2-M = HOLD`）；
+3. **从本体到社会的制度与文明重构**：围绕“决策权与后果回流绑定、反寄生性代价外包、保留秩序可修订性与反 `U5` 规则豁免、保护他者再选择条件”，重构教育、知识生产、算法委托与公共秩序设计。
+
 The Philosophy section should help readers answer four questions:
 
 1. **Ontology** — What does SRT mean by existence, manifestation, and stabilization?

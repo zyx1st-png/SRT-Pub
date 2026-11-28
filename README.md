@@ -28,6 +28,12 @@ Minimal notation:
 
 SRT is not "mind creates reality," not relativism, and not panpsychism. It is a selection-first theory of constrained reality formation.
 
+### 原初研究使命与打破的旧地板（Original Research Mission）
+
+SRT 的最终追求不只是提供一套兼容既有范式的复杂系统分析或组织诊断语言，而是从更原初的生成关系出发，打破七块习以为常的认知与本体论地板：**静态客体先在、物理主义唯一基础、水平因果垄断、形式规则先在、容器时间、主体先于选择，以及纯功能主义与生存主义**。
+
+基于这一出发点，SRT 围绕**统一生成母体与母体倾向性**、**物理与心理的双平行抽取**、**前背景垂直生成**、**规律生成**及**从存在到秩序**（维持与生成同源）展开跨尺度基础研究，并致力于探索从本体论到科学第零问、人工智能、教育、社会秩序与人类实践的重构路径。上述使命是公开的正面研究方向与待检验问题，而非已经成立的科学结论——科学严谨性、数学构造与实证检验是实现这一使命的工具。
+
 ```mermaid
 flowchart LR
   S["primitive Selection reality"] --> L1["L1 确定显现"]

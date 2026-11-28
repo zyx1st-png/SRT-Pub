@@ -4,7 +4,7 @@ type: theory
 tags: [Ontology, GenerativeSpine, Selection, Existence, Order, OpportunityCost, One, StableISP, Bearer, Normativity]
 status: active
 version: v6
-updated: 2026-11-27
+updated: 2026-11-28
 layer: L0-L2
 epistemic_layer: os
 claim_mode: canonical
@@ -24,6 +24,8 @@ dependency:
 ## Selection does not merely occur within reality; it participates in generating the conditions under which reality continues to occur
 
 > **Role**: Canonical cross-owner routing spine for Selective Reality Theory (SRT). It establishes the positive unified generative architecture across physics, life, cognition, subjectivity, AI, and social order, while fixing cross-owner structural non-identities and OPEN gates. Compatible local definitions remain owned by their respective canonical anchors.
+>
+> **Original Mission & Floor-Breaking Orientation (2026-11-28 Author Calibration)**: SRT is not merely a compatibility grammar for existing complex-systems or organizational theories. Its foundational research mission is to challenge seven inherited floors—**static objects, physicalism-as-sole-ground, horizontal causal monopoly, pre-existing formal rules, container time, subject-before-selection, and functionalist survivalism**—by investigating the unified generative matrix, physical–psychological dual-parallel extraction, vertical foreground–background generation, conditional law generation, from-existence-to-order, and ontology-to-society reconstruction. This mission directs positive mechanism discovery, mathematical construction, and domain breakthroughs; it is a research horizon rather than an already-proved scientific conclusion, and this Spine remains open to substantive revision driven by verified mechanism findings.
 >
 > **R4-C5-C Cross-Domain Core Integration Baseline (`v6`, 2026-11-27)**: Builds directly on the `R4-A` (`v5`, 2026-11-26) unified generative skeleton by integrating the author-adjudicated `R4-C1..C5` bidirectional core increments (**`D1–D6`**, **`§18 CΨ` Option 1**, and **`R3-02` three-tier cross-scale law abstraction**). Across physics, life, AI, neuroscience, philosophy/society, and spirituality, this upgrade expands SRT's core explanatory architecture along five unified generative axes: **(1) primitive generation & source/orientation (`D6`), (2) organizational generation & relative independence (`D2`), (3) non-ladder capacity differentiation & cross-scale co-generative mediation (`D3`), (4) recursive historical & value-based condition reconstruction (`D4 / D5`), and (5) cross-scale law transfer & friction/payability separation (`D1` + `R3-02`)**—while preserving every independent admission gate, `HP-B` freeze, `HOLD`, and unclosed `OPEN` boundary.
 
