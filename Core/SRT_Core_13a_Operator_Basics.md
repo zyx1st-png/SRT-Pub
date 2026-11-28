@@ -428,20 +428,19 @@ $$L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \text{Noise}(L_0)]$$
 
 $$\forall k < k_0 : \quad \Psi_f^{(k)} < \infty \quad \text{（payable 条件；} \Psi_f \text{ 允许局部上升）}$$
 
-**Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：吸引域内单调下降)**
+**Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：原固定步降式已数学撤回)**
 
-$$\exists k_0,\, \delta > 0,\, \mathcal{B}(\theta) : \quad \forall k \geq k_0,\quad \hat{G}_\theta^k[L_0] \in \mathcal{B}(\theta) \;\land\; \Psi_f^{(k+1)} \leq \Psi_f^{(k)} - \delta$$
+> **数学勘误与推导撤回注（2026-11-28 Errata）**：原 Phase 2 条件 $\exists k_0,\,\delta>0,\,\mathcal{B}(\theta):\;\forall k\ge k_0,\;\Psi_f^{(k+1)} \le \Psi_f^{(k)} - \delta$ 与下方有限收敛条件 $\lim_{k\to\infty}\Psi_f^{(k)} = \Psi_f^*$ 及非负性 $\Psi_f \ge 0$ **直接数学矛盾**（固定正步降 $\delta > 0$ 经归纳必导出 $\Psi_f^{(k_0+m)} \le \Psi_f^{(k_0)} - m\delta \to -\infty$）。现正式撤回该固定步降不等式及其“提供固定点收敛保证”的宣称，**且不以新的启发式公式直接顶替**。未来若重构本节闭包收敛模型，须同时满足两项独立条件：① 标量序列须改用有下界单调递减或压缩型 Lyapunov 条件；② 标量 $\Psi_f^{(k)}$ 收敛本身不足以推出系统态轨道收敛至唯一固定点，必须另行声明状态空间上的紧性、收缩映射或 LaSalle 不变集条件。
 
-**Closure Condition**：
+**Closure Condition（历史语义接口，待动力学重构）**：
 
 $$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0] \in \mathcal{B}(\theta)\Bigr) \;\land\; \lim_{k \to \infty} \Psi_f^{(k)} = \Psi_f^*$$
 
-其中 $\mathcal{B}(\theta)$ 为吸引域，$\Psi_f^*$ 为闭包固定点处的摩擦值。
+其中 $\mathcal{B}(\theta)$ 为声明模型内的吸引域，$\Psi_f^*$ 为闭包稳态处的有限摩擦值（上述形式尚缺独立的态空间收敛动力学定理支撑）。
 
-* **Implication**:
+* **Implication（勘误后有效范围）**:
   - **Phase 1** 允许 $\Psi_f$ 在生成性阶段局部上升，可用于检验某些高代价状态转变；不由此推出高阶意识涌现；
-  - **Phase 2** 要求进入吸引域 $\mathcal{B}(\theta)$ 后严格单调下降（强度 $\delta > 0$），提供固定点收敛保证，排除纯周期轨道与混沌；
-  - 原"稳定结构"读法精化为：稳定 = 进入可支付吸引域 + 终期 $\Psi_f$ 单调收敛至 $\Psi_f^*$，非一步闭包；
+  - **Phase 2** 原固定正步降 $\delta > 0$ 证明已撤回，排除周期轨道与混沌须由具名动力学模型另行证明；
   - Phase 1 的非单调段受 payable 条件约束（$\Psi_f^{(k)} < \infty$），不是无界许可——超过可支付上界即退出 Closure 候选。
 * **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md Step ④`（闭包偏置机制与 Ax-Op-05 收敛条件更新）; `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-06`（规范性算子范围条件）; `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）.
 
@@ -663,15 +662,11 @@ $$d_{cog} \approx \alpha \cdot A(\sigma) + \beta \cdot \log(V_{concern}) + \gamm
 
 $$d_{actual} \approx d_{cog} + \delta_{coupling}(A \cdot \tau,\; V \cdot A)$$
 
-#### 2.1.2 热力学容量上界与量纲隔离（Thermodynamic Limit）
+#### 2.1.2 热力学容量上界与量纲隔离（Thermodynamic Limit — 原公式因量纲错误撤除）
 
-根据兰道尔原理与大脑代谢率，算子物理信息处理容量存在理论上界：
-
-$$d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$$
-
-**参数**：$M_{brain} \approx 1.4$ kg，$T = 310$ K，$f_{metabolic} \approx 10$ Hz，$\tau_{coherence} \approx 100$ ms
-
-*(注：$d_{max}$ 衡量的是底层物理态的香农信息容量上界，而 $d_{cog}$ 衡量的是宏观拓扑的选择复杂度代理。两者量纲不同，不可直接比较——人类实际 $d$ 值远低于 $d_{max}$ 不是因为"演化懒惰"，而是由于极高压缩率的语义提取漏失。)*
+> **数学勘误与撤除注（2026-11-28 Errata）**：本小节原公式 $d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$ 将大脑质量 $M_{brain} \approx 1.4\,\text{kg}$ 直接写入分子（实际 SI 量纲为 $\text{kg}\cdot\text{s}^2/\text{J} = \text{s}^4/\text{m}^2$，并非无量纲比特），现正式撤除该错误公式，**不以新的启发式常数值直接替换**。
+>
+> **保留的正确物理原则**：任何具身算子的底层物理信息处理容量均受 Landauer 原理与代谢功率（能量通量，而非静止质量）约束，其量纲与物理意义均属于**无赌注物理信息容量上界**，与宏观强承载规范 `d`（`_SRT_D_VALUE_CANONICAL.md`）不可直接比较。未来若需引入具体数值上界，须按能量/功率正确量纲独立推导并声明所选物理界（如 Landauer 功率界或 Bremermann/Bekenstein 界）。
 
 #### 2.1.3 d 值的演化动力学与 OEI 约束（Dynamics & Pathological Constraints）
 

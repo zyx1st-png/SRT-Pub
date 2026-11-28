@@ -61,15 +61,15 @@ These are pressure points, not new axioms. They route later work and block overc
 
 ### Current State
 
-`_SRT_D_VALUE_CANONICAL.md` now distinguishes the unique canonical d-value definition from the geometric capacity proxy:
+`_SRT_D_VALUE_CANONICAL.md` (v3, `R4-A`) strictly separates canonical `d` (a utility-scaled irreversible-risk gradient norm), the dimensionless spectral stake participation ratio `D_stake`, and the dimensionless geometric capacity proxy `D_eff`:
 
 $$
-d_{canonical} \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
-\leq
-D_{eff}(M)
+d_{\text{canonical}}(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, \qquad D_{\text{eff}}(M) = \frac{(\sum_i \lambda_i)^2}{\sum_i \lambda_i^2}
 $$
 
-`D_eff` is a capacity upper bound / proxy; `d_{stakes}` is the subset of effective directions genuinely coupled to irreversible stake.
+> **数学勘误同步（2026-11-28 Errata）**：原此处残留的旧不等式 $d_{\text{canonical}} \le D_{\text{eff}}(M)$ 已由 `R4-A`（`_SRT_D_VALUE_CANONICAL.md §1, §2b`）作为量纲与代数错式正式退役；`D_eff` 不普遍构成 `d_canonical` 或 `D_stake` 的数学上界。
+
+`D_eff` is a dimensionless capacity proxy; `D_stake` is the spectral participation ratio over directions genuinely coupled to irreversible stake (`1 ≤ D_stake ≤ N_active ≤ rank(M)` when active).
 
 ### Problem Point
 

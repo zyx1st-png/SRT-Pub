@@ -98,10 +98,12 @@ $$\boxed{\mathcal{F}_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G
 其中 $\Psi_f(\hat{G}_i)$ 是第 $i$ 个算子的个体本体论摩擦（锚定代价），$\Psi_f(\hat{G}_i, \hat{G}_j)$ 是算子 $i$ 与算子 $j$ 的交互摩擦（见 Ax-F-12）。
 * **Implication**: 集体景观不是个体自由能的简单加和，算子间交互摩擦项 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 是集体动力学的主要来源。
 
-### Eq-Multi-02: Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达）
-**Formal Definition**: 每个个体选择算子的运动方向是集体自由能景观关于自身参数的负梯度：
-$$\boxed{\hat{G}_i[\sigma_i] = -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}}$$
-* **Implication**: 个体算子不是"为自身最小化自由能"的独立实体，而是集体景观在局部参数子空间 $\theta_i$ 的梯度下降方向。"个体与集体的目标张力"是景观局部曲率与全局曲率差的表达，而非两个对立实体的博弈。
+### Eq-Multi-02: Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达 — 类型未闭合勘误）
+> **数学勘误与类型未闭合注（2026-11-28 Errata）**：下式左端 $\hat{G}_i[\sigma_i]$ 位于状态空间 $S_i$，右端 $-\partial\mathcal{F}_{\text{collective}}/\partial\theta_i$ 位于参数余切空间 $T^*_{\theta_i}\Theta_i$，在未声明态—参耦合映射或改写为参数演化方程前**存在明确类型失配**（且与 `Eq-Evo-03` 快—慢分离相冲突）。本勘误将其降格为**类型未闭合的定性示意式，不以新的启发式公式直接替换**，待未来多算子耦合动力学独立重构并声明映射结构。
+
+**Historical Schematic Form (Type-Unclosed)**:
+$$\hat{G}_i[\sigma_i] = -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}$$
+* **Implication（保留的定性直觉，非已完成形式定理）**: 个体算子不是脱离集体耦合的孤立实体；"个体与集体的目标张力"可在多算子模型中探索为局部约束与跨算子交互摩擦之间的结构差，而非两个先在对立实体的外部博弈。
 
 ### Eq-Multi-03: d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度）
 **Formal Definition**: 集体 d-capacity proxy 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 矩阵的有效维度（参与率指数）：
@@ -412,11 +414,10 @@ $$\frac{d\theta}{dt} = \underbrace{\gamma \cdot A[\sigma, \text{Target}]}_{\text
 
 **证伪条件**：① 若具有明显θ迟滞（如长期用药后突然停药）的个体戒断症状强度与 $|\theta^-|$ 无相关，则戒断机制推论失效；② 若第二项（摩擦梯度）在实验中被操纵（改变L₂势能景观刚性）不影响 $d\theta/dt$ 的漂移约束，则Φ(θ)的有效性需重新评估。
 
-### Eq-Evo-02b: Theta Tensor Inertia (θ张量惯性)
-**Formal Definition**: 具身参数θ的更新阻力与其在L2网络中的度中心性成正比：
-$$\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij} \cdot \theta_j}$$
-其中 $w_{ij}$ 为信念/创伤网络的连接权重。
-* **Implication**: 核心信念（Core Beliefs）或创伤印记难以改变，这是物理现象。它们在θ张量网络中拥有最多的连接，其更新面临巨大的"拓扑惯性"（Topological Inertia）。心理治疗的本质不是讲道理，而是改变权重 $w_{ij}$ 以绕过局部更新阻力。
+### Eq-Evo-02b: Theta Tensor Inertia (θ张量惯性 — 定义域失效与奇点勘误)
+> **数学勘误与撤回注（2026-11-28 Errata）**：原示意式 $\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij}\cdot\theta_j}$ 在 $\sum_j w_{ij}\theta_j = 0$ 处存在发散奇点、在 $\sum_j w_{ij}\theta_j < 0$ 时反转更新方向，且未声明参数域与正定性约束。现将其从有效形式方程撤回为**待重构的定性网络惯性直觉，不以新的启发式公式直接顶替**；未来若形式化，须独立构建严格正定的有效质量/度规张量与参数域条件。
+
+* **Retained Qualitative Intuition**: 在具身信念或历史耦合网络中，高连接度核心配置通常表现出更强的更新阻力（拓扑惯性），因此改变深层锁定往往需要重组连接权重与耦合路径，而非仅靠局域表层说服。
 * **Cross-ref**: Ax-L2-2 (Hysteresis), Ax-Op-02b (Dual-Stream)。
 
 ### Eq-Evo-03: Coupled Fast–Slow System
