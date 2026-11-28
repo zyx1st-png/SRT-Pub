@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 1863ea167
+source_commit: 4308fe99a
 source_branch: errata/math-hard-errors-20261128
-source_dirty: true
-inputs_digest: 64b0c8ae2db12e65
+source_dirty: false
+inputs_digest: 8634979bfd7f12e6
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: 64b0c8ae2db12e65
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-11-28 |
-| 来源 commit | `1863ea167` |
+| 来源 commit | `4308fe99a` |
 | 来源分支 | `errata/math-hard-errors-20261128` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -448,7 +448,7 @@ For substantive SRT answers:
 
 ### 0.5.1 `Core/SRT_Core_22_Equations.md` 主方程索引（独立 `FORMAL` 路线）
 
-- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-11-26`）
+- **原文件**：`Core/SRT_Core_22_Equations.md`（last_commit: `2026-11-28`）
 - **独立上下文包**：`Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_FORMAL.md`（单独装载，不叠加在 `SPINE` 上）
 - **条目数**：自动抽取 50 条 `Eq-* / Def-*`（已纳入 `inputs_digest` 闭包）
 

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-11-28
-source_commit: 1863ea167
+source_commit: 4308fe99a
 source_branch: errata/math-hard-errors-20261128
-source_dirty: true
-inputs_digest: 64b0c8ae2db12e65
+source_dirty: false
+inputs_digest: 8634979bfd7f12e6
 ---
 
 # SRT 上下文包
@@ -23,15 +23,15 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 352,034 | ~131,077 |
-| `SRT_CONTEXT_BUNDLE_FORMAL.md` | 形式方程 FORMAL | 1 | 77,925 | ~36,184 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 222,210 | ~117,816 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 77,438 | ~42,817 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 117,826 | ~54,730 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 7 | 146,443 | ~51,977 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 129,460 | ~51,409 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 55,709 | ~25,635 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 24,975 | ~11,192 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 352,035 | ~131,077 |
+| `SRT_CONTEXT_BUNDLE_FORMAL.md` | 形式方程 FORMAL | 1 | 77,981 | ~36,247 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 222,211 | ~117,816 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 77,439 | ~42,817 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 117,827 | ~54,731 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 7 | 146,444 | ~51,978 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 6 | 129,461 | ~51,410 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 55,710 | ~25,635 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 24,976 | ~11,192 |
 
 ## 上下文预算
 
@@ -51,9 +51,9 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 | 路线 | 装载 | 合计 ≈token | 余量 | 用途 |
 |---|---|---:|---:|---|
 | 骨架路线（裁定定义时用） | `SPINE` | 131,077 | 68,923 | 需要确定 SRT 术语、生成主轴、One Formation、P0/P1 核心公理与符号含义时，只装这一个；Core_22 方程索引与按需桥接指针见 §0.5。 |
-| 形式方程路线（查阅主方程时用） | `FORMAL` | 36,184 | 163,816 | 需要查阅 Core_22 主动力学/热力学/桥接方程正文时使用；不含完整定义骨架，定义裁定须切回 SPINE。 |
+| 形式方程路线（查阅主方程时用） | `FORMAL` | 36,247 | 163,753 | 需要查阅 Core_22 主动力学/热力学/桥接方程正文时使用；不含完整定义骨架，定义裁定须切回 SPINE。 |
 | 轻量跨域 | `COMPACTCORE` | 117,816 | 82,184 | 只需领域主线、不需裁定定义时用。 |
-| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 51,977 | 148,023 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
+| 单域（体量最大者：Philosophy） | `DOMAIN_PHILOSOPHY` | 51,978 | 148,022 | 单领域问答；领域包自带 claim-status 护栏与导航。 |
 | 单域（体量最小者：Core 动力学） | `DOMAIN_CORE` | 11,192 | 188,808 | 最省的一种装法。 |
 
 ### 禁止的组合
@@ -66,11 +66,11 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 组合 | 合计 ≈token | 是否在预算内 |
 |---|---:|:---:|
-| `SPINE` + `FORMAL` | 167,261 | **超预算** |
+| `SPINE` + `FORMAL` | 167,324 | **超预算** |
 | `SPINE` + `DOMAIN_AI` | 173,894 | **超预算** |
-| `SPINE` + `DOMAIN_PHYSICS` | 185,807 | **超预算** |
-| `SPINE` + `DOMAIN_PHILOSOPHY` | 183,054 | **超预算** |
-| `SPINE` + `DOMAIN_NEUROSCIENCE` | 182,486 | **超预算** |
+| `SPINE` + `DOMAIN_PHYSICS` | 185,808 | **超预算** |
+| `SPINE` + `DOMAIN_PHILOSOPHY` | 183,055 | **超预算** |
+| `SPINE` + `DOMAIN_NEUROSCIENCE` | 182,487 | **超预算** |
 | `SPINE` + `DOMAIN_SPIRITUALITY` | 156,712 | **超预算** |
 | `SPINE` + `DOMAIN_CORE` | 142,269 | 在预算内（但仍不推荐，见下） |
 
