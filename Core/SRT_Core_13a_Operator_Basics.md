@@ -430,7 +430,7 @@ $$\forall k < k_0 : \quad \Psi_f^{(k)} < \infty \quad \text{（payable 条件；
 
 **Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：原固定步降式已数学撤回)**
 
-> **数学勘误与推导撤回注（2026-11-28 Errata）**：原 Phase 2 条件 $\exists k_0,\,\delta>0,\,\mathcal{B}(\theta):\;\forall k\ge k_0,\;\Psi_f^{(k+1)} \le \Psi_f^{(k)} - \delta$ 与下方有限收敛条件 $\lim_{k\to\infty}\Psi_f^{(k)} = \Psi_f^*$ 及非负性 $\Psi_f \ge 0$ **直接数学矛盾**（固定正步降 $\delta > 0$ 经归纳必导出 $\Psi_f^{(k_0+m)} \le \Psi_f^{(k_0)} - m\delta \to -\infty$）。现正式撤回该固定步降不等式及其“提供固定点收敛保证”的宣称，**且不以新的启发式公式直接顶替**。未来若重构本节闭包收敛模型，须同时满足两项独立条件：① 标量序列须改用有下界单调递减或压缩型 Lyapunov 条件；② 标量 $\Psi_f^{(k)}$ 收敛本身不足以推出系统态轨道收敛至唯一固定点，必须另行声明状态空间上的紧性、收缩映射或 LaSalle 不变集条件。
+> **数学勘误与推导撤回注（2026-11-28 Errata）**：原 Phase 2 条件 $\exists k_0,\,\delta>0,\,\mathcal{B}(\theta):\;\forall k\ge k_0,\;\Psi_f^{(k+1)} \le \Psi_f^{(k)} - \delta$ 与下方有限收敛条件 $\lim_{k\to\infty}\Psi_f^{(k)} = \Psi_f^*$ 及非负性 $\Psi_f \ge 0$ **直接数学矛盾**（固定正步降 $\delta > 0$ 经归纳必导出 $\Psi_f^{(k_0+m)} \le \Psi_f^{(k_0)} - m\delta \to -\infty$）。现正式撤回该固定步降不等式及其“提供固定点收敛保证”的宣称，**且不以新的启发式公式直接顶替**。未来若重构本节闭包收敛模型，需回避两类数学断层：① 任何下降或收敛判据均不得与 $\Psi_f$ 的非负性或有限下界相冲突；② 仅标量序列 $\Psi_f^{(k)}$ 收敛不足以推出系统态轨道收敛至唯一固定点或排除周期/混沌轨道，态空间收敛须由具名动力学假设另行证明。
 
 **Closure Condition（历史语义接口，待动力学重构）**：
 
@@ -666,7 +666,7 @@ $$d_{actual} \approx d_{cog} + \delta_{coupling}(A \cdot \tau,\; V \cdot A)$$
 
 > **数学勘误与撤除注（2026-11-28 Errata）**：本小节原公式 $d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$ 将大脑质量 $M_{brain} \approx 1.4\,\text{kg}$ 直接写入分子（实际 SI 量纲为 $\text{kg}\cdot\text{s}^2/\text{J} = \text{s}^4/\text{m}^2$，并非无量纲比特），现正式撤除该错误公式，**不以新的启发式常数值直接替换**。
 >
-> **保留的正确物理原则**：任何具身算子的底层物理信息处理容量均受 Landauer 原理与代谢功率（能量通量，而非静止质量）约束，其量纲与物理意义均属于**无赌注物理信息容量上界**，与宏观强承载规范 `d`（`_SRT_D_VALUE_CANONICAL.md`）不可直接比较。未来若需引入具体数值上界，须按能量/功率正确量纲独立推导并声明所选物理界（如 Landauer 功率界或 Bremermann/Bekenstein 界）。
+> **保留的量纲与边界原则**：底层物理信息处理或不可逆擦除受热力学与物理界限约束（如 Landauer 擦除能耗下界对应耗散功率/能量通量，而 Bekenstein/Bremermann 界对应总能量与几何尺度），但此类物理信息容量上界均属**无赌注容量代理**，与宏观强承载规范 `d`（`_SRT_D_VALUE_CANONICAL.md`）量纲与语义不同，不可直接比较。未来若需给出具体数值上界，应明确所采用的物理界及其完整量纲推导。
 
 #### 2.1.3 d 值的演化动力学与 OEI 约束（Dynamics & Pathological Constraints）
 

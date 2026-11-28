@@ -75,10 +75,10 @@ $$
 
 The boundary between capacity and stake is clearer than before, but not fully sealed. The current structure still needs sharper necessary and sufficient conditions for when a Fisher / spectral direction counts as genuinely stake-coupled rather than merely distinguishable.
 
-The weak point is not the inequality itself. The weak point is the gate:
+With the former `d_canonical ≤ D_eff(M)` inequality formally retired by `R4-A` (it was dimensionally and algebraically invalid, not merely unhardened), the genuine remaining weak point is the stake gate:
 
 $$
-D_{eff} \to d_{stakes}
+D_{eff} \to D_{stake} / d
 $$
 
 The three proposed coupling factors `R_i`, `A_i`, and `C_i` are structurally plausible, but their exact status is still between canonical interpretation and bridge formalization.
@@ -87,16 +87,16 @@ The three proposed coupling factors `R_i`, `A_i`, and `C_i` are structurally pla
 
 Harden the stake gate by specifying:
 
-1. minimal conditions under which a direction enters `d_{stakes}`;
+1. minimal conditions under which a direction enters stake-coupled `D_stake` / `d`;
 2. explicit failure cases: fake stake, misbound stake, absorbed / non-returning consequence;
-3. whether `D_eff >= d_{canonical}` holds across all intended domains or only under a stated proxy regime;
+3. ~~whether `D_eff >= d_{canonical}` holds across all intended domains or only under a stated proxy regime;~~ **[Superseded by `R4-A` & 2026-11-28 Errata]**: retired as a dimensional/algebraic error; `D_eff` is neither a cross-domain nor a universal proxy-regime upper bound on `d_canonical` or `D_stake`;
 4. how AI, frozen trauma states, and institutions differ under the same gate.
 
 Until this is done, domain files should say "`D_eff` proxy" and should not call it the definition of `d`.
 
-### Status Update (2026-07-05)
+### Status Update (2026-07-05; Historical Record — Clause (b) Superseded by `R4-A` / 2026-11-28 Errata)
 
-`_SRT_D_VALUE_CANONICAL.md §2b.1` now fixes three of the open points: (a) the citation level of the `w_i = R_i·A_i·C_i` gate — the qualitative AND-gate structure is P2 canonical interpretation; any numerical weighting, proxy, or `ε_s` thresholding is P3/P4 and must be marked as such; (b) the domain validity of `D_eff ≥ d_canonical` — it holds only inside a declared proxy regime (same parameterization, declared normalization, no redundancy-inflated spectrum), never as a cross-domain theorem; (c) a unified gate table separating AI (fails on R/C), frozen trauma (passes the gate, fails on `d_mobile`), and institutions (member `C_i` absorbed by the structure) under the same three factors, with the rule that gate diagnostics must be reported per-factor, not as one scalar. Still open here: a necessary-and-sufficient stake-coupling theorem; `ε_s` calibration; independent measurable proxies for R / A / C.
+`_SRT_D_VALUE_CANONICAL.md §2b.1` fixed two still-active points and one now-superseded historical judgment: (a) **[Still active]** the citation level of the `w_i = R_i·A_i·C_i` gate — the qualitative AND-gate structure is P2 canonical interpretation; any numerical weighting, proxy, or `ε_s` thresholding is P3/P4 and must be marked as such; (b) **[Superseded historical record — no longer active]** ~~the domain validity of `D_eff ≥ d_canonical` inside a declared proxy regime~~ — superseded by `R4-A` (`_SRT_D_VALUE_CANONICAL.md` v3, §1 & §2b), which formally retired `d_canonical ≤ D_eff` as dimensionally/algebraically invalid rather than retaining it as a conditional proxy truth; (c) **[Still active]** a unified gate table separating AI (fails on R/C), frozen trauma (passes the gate, fails on `d_mobile`), and institutions (member `C_i` absorbed by the structure) under the same three factors, with the rule that gate diagnostics must be reported per-factor, not as one scalar. Still open here: a necessary-and-sufficient stake-coupling theorem; `ε_s` calibration; independent measurable proxies for R / A / C.
 
 ---
 

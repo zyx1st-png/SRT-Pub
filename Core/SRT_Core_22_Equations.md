@@ -99,7 +99,7 @@ $$\boxed{\mathcal{F}_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G
 * **Implication**: 集体景观不是个体自由能的简单加和，算子间交互摩擦项 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 是集体动力学的主要来源。
 
 ### Eq-Multi-02: Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达 — 类型未闭合勘误）
-> **数学勘误与类型未闭合注（2026-11-28 Errata）**：下式左端 $\hat{G}_i[\sigma_i]$ 位于状态空间 $S_i$，右端 $-\partial\mathcal{F}_{\text{collective}}/\partial\theta_i$ 位于参数余切空间 $T^*_{\theta_i}\Theta_i$，在未声明态—参耦合映射或改写为参数演化方程前**存在明确类型失配**（且与 `Eq-Evo-03` 快—慢分离相冲突）。本勘误将其降格为**类型未闭合的定性示意式，不以新的启发式公式直接替换**，待未来多算子耦合动力学独立重构并声明映射结构。
+> **数学勘误与类型未闭合注（2026-11-28 Errata）**：下式左端 $\hat{G}_i[\sigma_i]$ 位于状态空间 $S_i$，右端 $-\partial\mathcal{F}_{\text{collective}}/\partial\theta_i$ 位于参数余切空间 $T^*_{\theta_i}\Theta_i$，在未声明态—参耦合映射或改写为参数演化方程前**存在明确类型失配**（且未厘清与 `Eq-Evo-03` 快—慢双时间尺度分解的兼容关系）。本勘误将其降格为**类型未闭合的定性示意式，不以新的启发式公式直接替换**，待未来多算子耦合动力学独立重构并声明映射结构。
 
 **Historical Schematic Form (Type-Unclosed)**:
 $$\hat{G}_i[\sigma_i] = -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}$$
@@ -415,7 +415,7 @@ $$\frac{d\theta}{dt} = \underbrace{\gamma \cdot A[\sigma, \text{Target}]}_{\text
 **证伪条件**：① 若具有明显θ迟滞（如长期用药后突然停药）的个体戒断症状强度与 $|\theta^-|$ 无相关，则戒断机制推论失效；② 若第二项（摩擦梯度）在实验中被操纵（改变L₂势能景观刚性）不影响 $d\theta/dt$ 的漂移约束，则Φ(θ)的有效性需重新评估。
 
 ### Eq-Evo-02b: Theta Tensor Inertia (θ张量惯性 — 定义域失效与奇点勘误)
-> **数学勘误与撤回注（2026-11-28 Errata）**：原示意式 $\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij}\cdot\theta_j}$ 在 $\sum_j w_{ij}\theta_j = 0$ 处存在发散奇点、在 $\sum_j w_{ij}\theta_j < 0$ 时反转更新方向，且未声明参数域与正定性约束。现将其从有效形式方程撤回为**待重构的定性网络惯性直觉，不以新的启发式公式直接顶替**；未来若形式化，须独立构建严格正定的有效质量/度规张量与参数域条件。
+> **数学勘误与撤回注（2026-11-28 Errata）**：原示意式 $\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij}\cdot\theta_j}$ 在 $\sum_j w_{ij}\theta_j = 0$ 处存在发散奇点、在 $\sum_j w_{ij}\theta_j < 0$ 时反转更新方向，且未声明参数域与保符号约束。现将其从有效形式方程撤回为**待重构的定性网络惯性直觉，不以新的启发式公式直接顶替**；未来若形式化网络惯性，应明确声明参数定义域并采用无奇点、保符号的更新阻力结构（例如正阻尼系数、势垒或正定度规等具名模型），而非直接取未加约束的线性加权倒数。
 
 * **Retained Qualitative Intuition**: 在具身信念或历史耦合网络中，高连接度核心配置通常表现出更强的更新阻力（拓扑惯性），因此改变深层锁定往往需要重组连接权重与耦合路径，而非仅靠局域表层说服。
 * **Cross-ref**: Ax-L2-2 (Hysteresis), Ax-Op-02b (Dual-Stream)。
