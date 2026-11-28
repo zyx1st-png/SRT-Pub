@@ -427,6 +427,93 @@ def verify_s2_full_5d_and_calibrations() -> dict:
     assert counterexamples["A1b_true_negative_slope_chi165"]["stable_full_5d"] is True
     assert counterexamples["A2_constant_C0_backgrounding_chi200"]["stable_full_5d"] is True
 
+    # 3.6 P1-02: Explicit Two-Switch Phase-Perturbation Control at chi=1.65 (Case 4)
+    # Separates (a) saddle-escape waiting time from the exact antipodal invariant subspace
+    # (sin(pi)=0) vs (b) post-alignment saddle-node ghost extinction time after dual alignment.
+    def run_s2_two_switch_control(mode: str, pert_rad: float = 0.0, T_tot: float = 400.0) -> dict:
+        dt = 0.01
+        lam_s, chi = 0.5, 1.65
+        w1, w2, p = 0.9, 0.05, 0.01
+        th1, th2 = 0.0, 0.0
+        snaps = {}
+        t_align_dual = None
+        t_extinct = None
+        for step in range(int(T_tot / dt)):
+            t = step * dt
+            if t < 40.0:
+                dphi1, dphi2 = 0.0, np.pi
+            elif t < 75.0:
+                dphi1, dphi2 = np.pi, 1.2
+            else:
+                dphi1, dphi2 = np.pi, -1.3
+
+            # Explicit small phase perturbation off exact antipodal saddle at Switch 1 (t=40)
+            if mode == "explicit_perturbation" and step == 4000:
+                th1 += pert_rad
+
+            Phi1 = 0.5 * (1.0 + np.cos(dphi1 - th1))
+            Phi2 = 0.5 * (1.0 + np.cos(dphi2 - th2))
+            A, B = w1 * Phi1, w2 * Phi2
+            u1 = A / (P["eps"] + P["alpha"] * A + P["beta"] * B)
+            u2 = B / (P["eps"] + P["alpha"] * B + P["beta"] * A)
+            C_tot = P["C0"] + lam_s * (A + B) / (P["K_s"] + A + B)
+            h = P["h_max"] * p / (p + P["K_h"]) if p > 0 else 0.0
+
+            # In strict_antipodal_clamp, enforce exact mathematical sin(pi) = 0 on ch1 once at antipodal
+            if mode == "strict_antipodal_clamp" and t >= 40.0 and abs(abs(np.angle(np.exp(1j * (dphi1 - th1)))) - np.pi) < 1e-12:
+                b1 = 0.0
+            else:
+                b1 = -np.sin(dphi1 - th1) * np.sin(h)
+            b2 = -np.sin(dphi2 - th2) * np.sin(h)
+
+            I_ext = 0.40 if (45.0 <= t <= 52.0) else 0.0
+            gamma_eff = P["mu_p"] + chi * (w1 + w2) / C_tot
+            m_sig = P["m0"] + P["kappa_b"] * (abs(b1) + abs(b2))
+
+            dw1 = P["nu_w"] + P["eta_w"] * u1 * Phi1 - P["mu_w"] * w1 - P["gamma_cap"] * w1 * (w1 + w2 + p) / C_tot
+            dw2 = P["nu_w"] + P["eta_w"] * u2 * Phi2 - P["mu_w"] * w2 - P["gamma_cap"] * w2 * (w1 + w2 + p) / C_tot
+            dp = P["nu_p"] + P["a_p"] * m_sig * (p ** 2) / (P["K_p"] ** 2 + p ** 2) + I_ext - gamma_eff * p
+
+            w1 = max(0.0, w1 + dt * dw1)
+            w2 = max(0.0, w2 + dt * dw2)
+            p = max(0.0, p + dt * dp)
+            th1 += dt * P["eta_th"] * (-b1)
+            th2 += dt * P["eta_th"] * (-b2)
+
+            err1 = abs(np.angle(np.exp(1j * (dphi1 - th1))))
+            err2 = abs(np.angle(np.exp(1j * (dphi2 - th2))))
+            if t >= 75.0 and t_align_dual is None and err1 < 0.2 and err2 < 0.2:
+                t_align_dual = round(t, 2)
+            if t >= 52.0 and t_extinct is None and p < 0.10:
+                t_extinct = round(t, 2)
+
+            if step == 7450:
+                snaps["t74_5"] = {"w1": round(w1, 5), "w2": round(w2, 5), "p": round(p, 5), "err1": round(err1, 4), "err2": round(err2, 4)}
+            if step == 12000:
+                snaps["t120"] = {"w1": round(w1, 5), "w2": round(w2, 5), "p": round(p, 5), "err1": round(err1, 4), "err2": round(err2, 4)}
+        snaps["t400"] = {"w1": round(w1, 5), "w2": round(w2, 5), "p": round(p, 5), "err1": round(err1, 4), "err2": round(err2, 4)}
+        snaps["t_dual_aligned"] = t_align_dual
+        snaps["t_extinct_p_below_0_10"] = t_extinct
+        return snaps
+
+    two_switch_perturbation_control = {
+        "chi": 1.65,
+        "lam_surplus": 0.5,
+        "scaffold_pulse": {"I_ext": 0.40, "window": [45.0, 52.0]},
+        "strict_antipodal_clamp": run_s2_two_switch_control("strict_antipodal_clamp"),
+        "standard_float_roundoff": run_s2_two_switch_control("standard_float_roundoff"),
+        "explicit_perturbation_1e-3_rad": run_s2_two_switch_control("explicit_perturbation", pert_rad=1e-3),
+    }
+    # Assert exact structural separation:
+    # 1. Strict antipodal clamp stays permanently on single-aligned 3D saddle (p ~ 0.4516 at t=400)
+    assert two_switch_perturbation_control["strict_antipodal_clamp"]["t400"]["p"] > 0.40
+    # 2. Standard float roundoff escapes late -> still high at t=120, extinct by t=400
+    assert two_switch_perturbation_control["standard_float_roundoff"]["t120"]["p"] > 0.40
+    assert two_switch_perturbation_control["standard_float_roundoff"]["t400"]["p"] < 0.02
+    # 3. Explicit 1e-3 rad perturbation escapes promptly -> already extinct by t=120 & t=400
+    assert two_switch_perturbation_control["explicit_perturbation_1e-3_rad"]["t120"]["p"] < 0.02
+    assert two_switch_perturbation_control["explicit_perturbation_1e-3_rad"]["t400"]["p"] < 0.02
+
     return {
         "scalar_reduction": scalar_summary,
         "single_aligned_5d": single_5d,
@@ -434,6 +521,7 @@ def verify_s2_full_5d_and_calibrations() -> dict:
         "coupled_fold_certificate": fold_cert,
         "ghost_lifetime_trend": ghost_trend,
         "success_reproduction_counterexamples": counterexamples,
+        "two_switch_phase_perturbation_control": two_switch_perturbation_control,
     }
 
 
@@ -534,12 +622,15 @@ def verify_c2_cross_org() -> dict:
         delta_env, bias_B = 1.1, 0.0
         a_active, b_active = True, True
         rng = np.random.default_rng(123)
+        # Note (P2-01): Theoretical local unidentifiability assumes stationary Uniform(S^1)
+        # background phase independent of delta_env; the simulation initializes phi_bg=0.0
+        # for deterministic comparability because phi_bg cancels identically in psi_AB.
         phi_bg = 0.0
         snaps = {}
 
         for step in range(int(T_tot / dt)):
             t = step * dt
-            # Uniformly drifting background phase (gauge obstruction under declared model)
+            # Drifting common background phase (cancels identically in shared interface psi_AB)
             phi_bg = float((phi_bg + dt * 3.1 + np.sqrt(dt) * 1.2 * rng.standard_normal()) % (2.0 * np.pi))
             phiA = phi_bg + 0.5 * delta_env
             phiB = phi_bg - 0.5 * delta_env + bias_B
@@ -589,17 +680,19 @@ def verify_c2_cross_org() -> dict:
                 pB = max(0.0, pB + dt * (nu_p + a_p * (0.85 + 2.5 * abs(gB)) * (pB ** 2) / (K_p ** 2 + pB ** 2) - gamB * pB))
 
             psi_err = float(abs(np.angle(np.exp(1j * ((phiA - thA) - (phiB - thB))))))
-            if step == 5950:
-                snaps["pre_t59_5"] = {
-                    "err": round(psi_err, 4), "U": round(U_now, 4),
-                    "wA": round(wA, 4), "wB": round(wB, 4),
-                    "pA": round(pA, 4), "pB": round(pB, 4),
-                    "gamA": round(gamA, 4), "gamB": round(gamB, 4),
-                }
-        # Analytical maximum achievable gradient signal ceiling at end state
+            for ck_step, ck_name in [(5950, "pre_t59_5"), (16000, "t160"), (20000, "t200"), (40000, "t400")]:
+                if step == ck_step:
+                    snaps[ck_name] = {
+                        "err": round(psi_err, 4), "U": round(U_now, 4),
+                        "wA": round(wA, 4), "wB": round(wB, 4),
+                        "pA": round(pA, 4), "pB": round(pB, 4),
+                        "gamA": round(gamA, 4), "gamB": round(gamB, 4),
+                    }
+        # Analytical maximum achievable gradient signal ceiling at end state (state-conditional, P2-02)
         K_AB = g_AB * wA * wB
         S_max = 0.5 * K_AB * abs(np.sin(psi_err)) * np.sin(h_max)
-        snaps["end_t160"] = {
+        end_key = f"end_t{int(T_tot)}"
+        snaps[end_key] = {
             "err": round(psi_err, 4), "U": round(U_now, 4),
             "wA": round(wA, 4), "wB": round(wB, 4),
             "pA": round(pA, 4), "pB": round(pB, 4),
@@ -616,9 +709,12 @@ def verify_c2_cross_org() -> dict:
     same_init_asym_T3a = run_c2(init_p=(0.50, 0.50), init_w=(0.60, 0.60), early_shock_A=(5.0, 12.0, 1.5), pert_type="T3_swap_B", swap_psi=1.40)
     same_init_asym_T3b = run_c2(init_p=(0.50, 0.50), init_w=(0.60, 0.60), early_shock_A=(5.0, 12.0, 1.5), pert_type="T3_swap_B", swap_psi=2.55)
     same_init_asym_T3d = run_c2(init_p=(0.50, 0.50), init_w=(0.60, 0.60), early_shock_A=(5.0, 12.0, 1.5), pert_type="T3_swap_B", swap_psi=2.95)
-    # Calibration 3c: Parameter viscosity sensitivity (explicitly separated from same-rule history!)
-    param_sticky_T3c = run_c2(init_p=(0.01, 0.70), init_w=(0.65, 0.65), early_shock_A=None,
-                              pert_type="T3_swap_B", swap_psi=2.55, mu_r=0.05, eta_r=0.11)
+    # P1-01 Calibration: Extend sticky parameter-viscosity control (T3c) to T=1000!
+    # Reveals historical viscosity causes RECONFIGURATION DELAY (recovers after t~180), NOT permanent failure!
+    param_sticky_T3c_T1000 = run_c2(
+        init_p=(0.01, 0.70), init_w=(0.65, 0.65), early_shock_A=None,
+        pert_type="T3_swap_B", swap_psi=2.55, mu_r=0.05, eta_r=0.11, T_tot=1000.0,
+    )
 
     # Assert identical-initial-state history bifurcation actually worked!
     assert same_init_sym["pre_t59_5"]["pA"] > 0.60 and same_init_sym["pre_t59_5"]["pB"] > 0.60
@@ -632,6 +728,10 @@ def verify_c2_cross_org() -> dict:
     assert same_init_asym_T3b["end_t160"]["err"] < 0.12 and same_init_asym_T3b["end_t160"]["pA"] > 0.50
     assert same_init_asym_T3d["end_t160"]["err"] > 2.90 and same_init_asym_T3d["end_t160"]["pA"] > 1.50
     assert same_init_asym_T3d["end_t160"]["below_sensor_floor"] is True
+    # Assert P1-01: sticky T3c still unrecovered at t=160, recovers by t=400 and stays recovered at t=1000!
+    assert param_sticky_T3c_T1000["t160"]["err"] > 2.40 and param_sticky_T3c_T1000["t160"]["pA"] < 0.05
+    assert param_sticky_T3c_T1000["t400"]["err"] < 0.12 and param_sticky_T3c_T1000["t400"]["pA"] > 0.50
+    assert param_sticky_T3c_T1000["end_t1000"]["err"] < 0.12 and param_sticky_T3c_T1000["end_t1000"]["pA"] > 0.50
 
     return {
         "parameters": {
@@ -645,7 +745,7 @@ def verify_c2_cross_org() -> dict:
         "same_initial_state_H_asym_T3a_moderate_lockin": same_init_asym_T3a,
         "same_initial_state_H_asym_T3b_dediff_rescue": same_init_asym_T3b,
         "same_initial_state_H_asym_T3d_void_awakening": same_init_asym_T3d,
-        "parameter_viscosity_sensitivity_T3c_sticky": param_sticky_T3c,
+        "parameter_viscosity_delay_T3c_T1000": param_sticky_T3c_T1000,
     }
 
 
@@ -676,6 +776,11 @@ def main() -> None:
     print("C2 T3a moderate lock-in:", c2["same_initial_state_H_asym_T3a_moderate_lockin"]["end_t160"])
     print("C2 T3b dediff rescue   :", c2["same_initial_state_H_asym_T3b_dediff_rescue"]["end_t160"])
     print("C2 T3d void awakening  :", c2["same_initial_state_H_asym_T3d_void_awakening"]["end_t160"])
+    print("C2 T3c sticky delay    :", {k: c2["parameter_viscosity_delay_T3c_T1000"][k] for k in ["t160", "t200", "t400", "end_t1000"]})
+    p102 = s2["two_switch_phase_perturbation_control"]
+    print("S2 P1-02 antipodal     :", p102["strict_antipodal_clamp"]["t120"]["p"], "->", p102["strict_antipodal_clamp"]["t400"]["p"])
+    print("S2 P1-02 float roundoff:", p102["standard_float_roundoff"]["t120"]["p"], "->", p102["standard_float_roundoff"]["t400"]["p"], "t_ext=", p102["standard_float_roundoff"]["t_extinct_p_below_0_10"])
+    print("S2 P1-02 explicit 1e-3 :", p102["explicit_perturbation_1e-3_rad"]["t120"]["p"], "->", p102["explicit_perturbation_1e-3_rad"]["t400"]["p"], "t_ext=", p102["explicit_perturbation_1e-3_rad"]["t_extinct_p_below_0_10"])
 
 
 if __name__ == "__main__":
