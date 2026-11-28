@@ -666,13 +666,13 @@ $$
 **陈述（条件性形式 / 模型结果，默认按 P2 读）**：在 stable ISP P、各 component model 与相应投影都已独立准入后，若 direction 分支满足 admission，且闭包假设 C1-C4 成立，则所选投影可在误差项内重现声明 subsystem（**注：依 §6.2 2026-11-28 数学勘误，`S` 分支因原残差定义在 `Eq-Evo-01` 轨道上恒零而撤出本定理，不再宣称由 `Eq-Evo-01,02` 导出**）：
 
 $$
-\boxed{\;\frac{d\mathcal{F}_X}{dt}\bigg|_{\text{Eq-Evo-01,02}} \;\overset{C1\text{-}C4}{=}\; \mathrm{RHS}_X^{\text{§2-§3.5}} \;+\; O(\eta)\;}
+\boxed{\;\frac{d\mathcal{F}_X}{dt}\bigg|_{\text{Eq-Evo-01,02}} \;\overset{C1\text{-}C4}{=}\; \mathrm{RHS}_X^{\text{§2-§3.5 (proj)}} \;+\; O(\eta)\;}
 \qquad X \in \{σ_{sr}, d_c, T_{dir}\}
 $$
 
-其中 `\mathrm{RHS}_X^{\text{§2-§3.5}}` 是本文件 §2.2 / §3.2 / §3.5 的 ODE 右端，`O(\eta)` 是闭包高阶残差（C1-C4 失效时的修正项；当 C1-C4 严格成立时 `\eta = 0`）。
+其中 `\mathrm{RHS}_X^{\text{§2-§3.5 (proj)}}` 是本文件 §2.2 / §3.2 以及 **§3.5 中由 `Eq-Evo-01,02` 投影出的三项 ODE 右端**（弛豫项、实—感接入扣除项、声明模型 `L_2` 支架项），`O(\eta)` 是闭包高阶残差（C1-C4 失效时的修正项；当 C1-C4 严格成立时 `\eta = 0`）。
 
-若无 direction 准入，从 `X` 与 `\mathrm{RHS}_X` 中省略 `T_{dir}`；`S`（§4）当前保持为独立现象学/结构模型，不作为 `Eq-Evo-01,02` 的已导出投影。
+**适用范围同步（2026-11-28 勘误）**：若无 direction 准入，从 `X` 与 `\mathrm{RHS}_X` 中省略 `T_{dir}`；`S`（§4）当前保持为独立现象学/结构模型，不作为 `Eq-Evo-01,02` 的已导出投影；**§3.5 `T_{dir}` ODE 中的结构型苦难调制项（`S_{str}` 耦合项）亦不包含于上述 `Eq-Evo-01,02` 投影总公式之中，仅在另行独立供给 `S_{str}` 变量的扩展耦合模型内适用**。
 
 **逐项对应**：
 
@@ -685,6 +685,7 @@ $$
 | `d_c` 漂移项 `\gamma_\sigma \max(0, σ_{sr}-σ_{sr}^{sub})` | `\nabla^2 C_{L_2}` 在 `\theta^{trace}` 占优区的局部刚化 | C2 + C3 |
 | `T_{dir}` 弛豫项 `-\kappa_{\mathrm{relax}}(T_{dir} - T_{dir}^{\mathrm{alg}})` | 相对于已声明 direction 的 `\mathrm{Dir}(\Delta\hat{G}_\theta,t) R_{self} A_{reorient}` 的条件性接入动力学；`(d,d_c,σ_{sr})` 只调制接入 | C4 + direction admission |
 | `T_{dir}` 扣除项 `-\kappa_{\mathrm{mask}}\Delta\Psi_f^{\mathrm{gap}}` | `\nabla F[\sigma_M]` 中实-感分裂部分（不可读分量） | C4 |
+| `T_{dir}` 中结构型苦难调制项（§3.5 `S_{str}` 耦合） | **不属 `Eq-Evo-01,02` 导出投影项**；仅在独立供给 `S_{str}` 变量的扩展耦合模型中适用 | 扩展耦合输入（NOT DERIVED FROM `Eq-Evo-01,02`） |
 | `S_{sig}` / `S_{str}` | **已于 2026-11-28 勘误撤出主方程投影对应**（原 `\hat{R} \equiv 0` 恒零缺陷；须独立重构模型，不得由主方程恒等残差导出） | NOT DERIVED FROM `Eq-Evo-01,02` |
 
 former P1-T05 的 `+\kappa_r r(t)` / `-\mu_r r(t)` 不再属于 `RHS_X`，也不再声称存在主方程投影来源。
