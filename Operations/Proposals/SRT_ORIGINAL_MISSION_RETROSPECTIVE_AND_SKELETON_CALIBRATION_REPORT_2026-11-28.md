@@ -30,7 +30,9 @@ tags: [Proposal, OriginalMission, SkeletonCalibration, MathAudit, R5Audit, Gener
 
 # SRT 原初理论使命回溯与核心骨架校准研究报告（2026-11-28）
 
-> **文档性质与范围边界**：本报告为面向作者原初理论使命的独立深度研究（`canonical: false`、`status: draft`），与配套方案 [`SRT_ORIGINAL_MISSION_CALIBRATION_CANDIDATE_PROPOSALS_AND_DECISION_PACKET_2026-11-28.md`](SRT_ORIGINAL_MISSION_CALIBRATION_CANDIDATE_PROPOSALS_AND_DECISION_PACKET_2026-11-28.md) 通过独立 Draft PR 提交，供作者审阅裁决。本研究保持 `main` 全部 canonical 文件、`STATUS.md`、`CURRENT NEXT = R5-01A`、既有 `HOLD`、冻结论文科学包与 25 项封存 `validation_holdout` 原样不动，不启动全面 R4 重构，不新增治理机构，不中断 `R5-01A` 机制研究。早期私密归档引用严守脱敏与封存边界，仅使用 `family_id`（`F_*`）与公开仓路径。
+> **文档性质与范围边界**：本报告为面向作者原初理论使命的第一轮独立深度研究基线（`canonical: false`、`status: draft`），与第二轮实质深化报告 [`SRT_ROUND2_PRECLOSURE_GENERATION_U5_FORMALIZATION_AND_MIND_MATTER_2026-11-28.md`](SRT_ROUND2_PRECLOSURE_GENERATION_U5_FORMALIZATION_AND_MIND_MATTER_2026-11-28.md) 及重构后的配套方案 [`SRT_ORIGINAL_MISSION_CALIBRATION_CANDIDATE_PROPOSALS_AND_DECISION_PACKET_2026-11-28.md`](SRT_ORIGINAL_MISSION_CALIBRATION_CANDIDATE_PROPOSALS_AND_DECISION_PACKET_2026-11-28.md) 一并归属独立 Draft PR `#1175`。
+>
+> **第二轮独立评审校正指针（2026-11-28）**：经独立交叉评审，本报告以下五处判断已在第二轮深化报告与重构后的方案包中完成实质修正，阅读时请以第二轮为准：① 拆解 §四 GICK 自身隐含的“组织闭合地板”，撤回律 I 同步必然性与律 II 差异效力自动等于内生比对的跳跃，提出前闭合条件化生成架构与双通道差分路由；② 将 `U5` 从“图入度为零”升级为预算受限的有效干预可达性 $\mathrm{Reach}_{\text{eff}}$、分层捕获深度 $k^*$ 与三合取判据；③ 校正三处事实陈述——现行 `Spine` 将前现象性保持 `OPEN`（`R3-03-O4`，并未滑向涌现物理主义）、`O1 / O2-C / O2-A` 已开放（`O2-M = HOLD` 并未冻结全部规范研究）、`R5 §2.1` 在理论设计上已区分“已有变量新效力”与“未成立新关系对象定义域”；④ 明确“尚未建立独立原创数学定理”不等于“证明不存在原创应用构造”，且采用成熟范畴论/重写工具不自动构成 SRT 原创贡献；⑤ 确认的数学硬错已剥离为独立 Errata Draft PR，且对需重建模型处绝不以新启发式公式顶替。
 
 ---
 
